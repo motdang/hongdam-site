@@ -41,6 +41,10 @@ libraries or external requests:
 - Data pipelines and crawlers (scattered real-world data into searchable catalogs)
 - Static-first builds: assembled at build time, served as files, cheap to host
   and portable to any server a domain can point at
+- Bots, bought and built: Scout (news to a sourced page, weekly), Bot Bounty Desk
+  (bots do posted work on your site, one-word approvals and payouts), Earner (finds
+  paid work and pitches it for one word). Built 2026-10-18 after a bot sold us a road.
+  https://hongdam.net/bots/ · live Shoup prices at https://hongdam.net/api/bots
 - Translation and interpreting between Thai, English and Burmese: papers, business
   text, and interpreting in person in Chiang Rai and Chiang Mai or by phone and video.
   https://hongdam.net/translation/ · /translation/th/ · /translation/my/
