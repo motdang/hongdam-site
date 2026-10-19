@@ -915,7 +915,7 @@ en:{
   ["Receipt mail","A donor gets a thank-you with amount and date once the gift matches."],
   ["e-Donation entries","Prepared for the treasurer to file where FERC qualifies.{14}"],
   ["Account moves","Wise and a wire compared for each CHF-to-THB move, with Kasikorn's fee worked out.{10}{11}"],
-  ["Application drafts","Forms for Every.org's host, Wise, Opn or a Swiss umbrella foundation, drafted for the board to read and sign."]
+  ["Application drafts","Forms for Wise, Opn or a Swiss umbrella foundation, drafted for the board to read and sign."]
  ],
  opMail:{sub:"FERC giving desk", body:"Dear NaN,\n\nFor FERC, I would like to look at:\n"}
 },
@@ -1038,7 +1038,7 @@ th:{
   ["อีเมลขอบคุณ","เมื่อรายการบริจาคตรงกัน ผู้บริจาคได้อีเมลขอบคุณพร้อมจำนวนเงินและวันที่"],
   ["รายการ e-Donation","เตรียมไว้ให้เหรัญญิกยื่น ในกรณีที่ FERC เข้าเกณฑ์{14}"],
   ["การย้ายเงินระหว่างบัญชี","เทียบ Wise กับโอนธนาคารทุกครั้งที่ย้ายจากฟรังก์เป็นบาท พร้อมคำนวณค่าธรรมเนียมกสิกรไทย{10}{11}"],
-  ["ร่างใบสมัคร","แบบฟอร์มของผู้ดูแล Every.org, Wise, Opn หรือมูลนิธิร่มสวิส ร่างไว้ให้คณะกรรมการอ่านและลงนาม"]
+  ["ร่างใบสมัคร","แบบฟอร์มของ Wise, Opn หรือมูลนิธิร่มสวิส ร่างไว้ให้คณะกรรมการอ่านและลงนาม"]
  ],
  opMail:{sub:"FERC giving desk", body:"สวัสดีค่ะ NaN\n\nสำหรับ FERC ดิฉันสนใจดูเรื่องต่อไปนี้:\n"}
 }
@@ -1475,12 +1475,6 @@ function build(pl,a){
     lines:[ln('swEU',''),ln('swF2',g.bank)]});
   }
  }
- if(pl==='US'){
-  var mf=a*0.05, card=a*0.022+0.30;
-  R({id:'every',today:true,ev:true,tier:2,lo:(a-card-(a-card)*0.05)*rate,hi:(a-mf)*rate,time:g.t.ev,
-   rc:rcv('every','yes'),srcs:[7,8,9],
-   lines:[ln('evA','USD 0',8),ln('evM','−'+M('USD',mf),9),ln('evT',M('USD',a-mf),0,true),ln('evC',M('USD',(a-card)*0.95),8),ln('evW','')]});
- }
  if(pl==='US'||pl==='XX'){
   R({id:'globalg',today:false,tier:1,lo:thb*0.85,hi:thb*0.90,time:g.t.bankT,
    rc:rcv('globalg','ask'),srcs:[24],
@@ -1501,7 +1495,6 @@ function build(pl,a){
   R({id:'umbrella',today:false,tier:3,lo:null,hi:null,time:g.t.bankT,rc:rcv('umbrella','maybe'),srcs:[19],lines:[ln('umF','',19)]});
  }
  if(pl==='UK') R({id:'prism',today:false,tier:3,lo:null,hi:null,time:g.t.bankT,rc:rcv('prism','maybe'),srcs:[27],lines:[ln('prF','',27)]});
- if(pl==='XX') R({id:'myriad',today:false,tier:3,lo:null,hi:null,time:g.t.bankT,rc:rcv('myriad','maybe'),srcs:[30],lines:[ln('myF','',30)]});
  return out;
 }
 function mid(r){return r.lo==null?r.hi:r.hi==null?r.lo:(r.lo+r.hi)/2;}
@@ -1602,7 +1595,7 @@ var LED0=[
  {d:'2026-09-12',n:5,r:'th',cur:'THB',a:36000,st:'ok'},
  {d:'2026-09-15',n:6,r:'wire',cur:'EUR',a:1000,st:'name'},
  {d:'2026-09-18',n:7,r:'th',cur:'THB',a:1000,st:'ok'},
- {d:'2026-09-21',n:8,r:'ev',cur:'USD',a:5000,st:'ok'},
+ {d:'2026-09-21',n:8,r:'wise',cur:'USD',a:500,st:'ok'},
  {d:'2026-09-26',n:9,r:'wise',cur:'GBP',a:100,st:'ok'},
  {d:'2026-09-28',n:10,r:'th',cur:'THB',a:5000,st:'held'}
 ];
@@ -1635,7 +1628,7 @@ function renderBO(){
 function renderLedger(){
  var b=T[lang].bo;
  var fl=$('fl'); fl.innerHTML='';
- ['all','th','wise','sw','wire','ev'].forEach(function(k){var x=el('button','',b.routes[k]); x.type='button'; x.setAttribute('aria-pressed',G.f===k); x.addEventListener('click',function(){G.f=k;G.opened=null;renderLedger();}); fl.appendChild(x);});
+ ['all','th','wise','sw','wire'].forEach(function(k){var x=el('button','',b.routes[k]); x.type='button'; x.setAttribute('aria-pressed',G.f===k); x.addEventListener('click',function(){G.f=k;G.opened=null;renderLedger();}); fl.appendChild(x);});
  var rows=ledRows(), thb=0, nchk=0, nheld=0, edn=0;
  rows.forEach(function(r){var v=thbOf(r); r.v=v; if(r.st!=='held') thb+=v; if(r.st==='name') nchk++; if(r.st==='held') nheld++; if(r.r==='th'&&r.st==='ok') edn++;});
  $('tot').innerHTML='<div><b>'+num(thb)+'</b><span>'+esc(b.tot.thb)+'</span></div><div><b>'+num(thb/GD.R.CHF)+'</b><span>'+esc(b.tot.chf)+'</span></div><div><b>'+(nchk+nheld)+'</b><span>'+esc(b.tot.chk)+'</span></div>';
@@ -1656,7 +1649,7 @@ function renderLedger(){
  renderStm(rows,nchk,nheld); renderMove();
 }
 function stmData(rows){
- var rs=['th','wise','sw','wire','ev'], out=[], tot=0, cnt=0;
+ var rs=['th','wise','sw','wire'], out=[], tot=0, cnt=0;
  rs.forEach(function(k){var n=0,s=0; rows.forEach(function(r){ if(r.r===k&&r.st!=='held'){n++; s+=r.v;} }); out.push({k:k,n:n,s:s}); tot+=s; cnt+=n;});
  return {rows:out,tot:tot,cnt:cnt};
 }
