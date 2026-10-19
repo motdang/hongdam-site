@@ -239,12 +239,197 @@ body.th .walk label{letter-spacing:0;text-transform:none;font-size:13px}
 @media (min-width:760px){.dates{grid-template-columns:1fr 1fr}.date{grid-template-columns:128px 1fr}.dnum b{font-size:64px}}
 
 /* give */
-.routes{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
-.route{border:1px solid var(--line);border-top:3px solid var(--green);background:var(--bg);padding:16px}
-.route h3{font-size:19px;font-weight:800}
-.route p{margin:6px 0 0;font-size:15px;color:var(--muted)}
 .proof{margin:18px 0 18px;max-width:42em}
-@media (min-width:760px){.routes{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- giving desk ---------- */
+.desk{padding-top:clamp(52px,8vw,100px);padding-bottom:clamp(36px,5vw,64px)}
+.desk h2{margin:14px 0 0;font-size:clamp(40px,7.4vw,80px);line-height:1}
+.gd{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;margin-top:26px}
+.gd-ctl{border:1px solid var(--line);border-top:3px solid var(--navy);background:var(--bg);padding:16px;box-shadow:var(--shadow);align-self:start}
+.gd-lab{margin:0 0 8px;font:600 12px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+body.th .gd-lab{letter-spacing:0;text-transform:none;font-size:13px}
+.gd-lab:not(:first-child){margin-top:14px}
+.gd-places{display:flex;flex-wrap:wrap;gap:8px}
+.gd-places button,.gd-chips button{min-height:42px;padding:0 14px;border-radius:999px;border:1.5px solid var(--navy);background:var(--bg);color:var(--ink);font:600 14px/1 var(--body);cursor:pointer;transition:transform .15s,background .15s}
+.gd-places button:active,.gd-chips button:active{transform:scale(.96)}
+.gd-places button[aria-pressed=true],.gd-chips button[aria-pressed=true]{background:var(--navy);color:var(--navy-ink)}
+@media (prefers-color-scheme:dark){.gd-places button,.gd-chips button{border-color:var(--boundary)}}
+.gd-amt{display:flex;align-items:stretch;border:1.5px solid var(--navy);border-radius:12px;overflow:hidden;background:var(--bg)}
+@media (prefers-color-scheme:dark){.gd-amt{border-color:var(--boundary)}}
+.gd-amt span{display:flex;align-items:center;padding:0 14px;background:var(--paper);font:800 18px/1 var(--display);border-right:1px solid var(--line);min-width:64px;justify-content:center}
+.gd-amt input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:800 24px/1 var(--display);font-variant-numeric:tabular-nums;padding:10px 14px;min-height:50px;outline:0}
+.gd-amt:focus-within{outline:3px solid var(--gold);outline-offset:2px}
+.gd-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.gd-chips button{font-weight:500;padding:0 14px;border-color:var(--line)}
+.gd-chips button.yr{border-color:var(--navy);font-weight:600}
+.gd-eq{margin:10px 0 0;font-size:13px;color:var(--muted);min-height:1.5em}
+.gd-need{display:flex;gap:10px;align-items:center;margin-top:8px;min-height:44px;font:600 14px/1.3 var(--body);cursor:pointer}
+.gd-need input{width:22px;height:22px;accent-color:var(--green);flex:none}
+.gd-sum{border-left:6px solid var(--gold);padding:4px 0 4px 14px;margin-bottom:16px}
+.gd-sum b{display:block;font:800 clamp(24px,3.4vw,34px)/1.1 var(--display);letter-spacing:-.02em;text-wrap:balance}
+.gd-sum span{display:block;margin-top:4px;color:var(--muted);font-size:14px}
+.gd-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.rc{position:relative;border:1px solid var(--line);border-top:3px solid var(--green);background:var(--bg);transition:box-shadow .2s}
+.rc-b{display:block;width:100%;text-align:left;padding:14px 14px 12px;background:transparent;border:0;font:inherit;color:inherit;cursor:pointer;transition:transform .15s}
+.rc-b:active{transform:scale(.995)}
+.rc-b:focus-visible{outline-offset:-3px}
+.rc.add{border-top-color:var(--gold)}
+.rc.best{box-shadow:var(--shadow);border-left:6px solid var(--gold)}
+.rc:hover{box-shadow:var(--shadow)}
+.rc .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.tag{display:inline-block;font:600 11.5px/1 var(--body);padding:5px 8px;border-radius:999px;background:var(--green-soft);color:var(--green-ink)}
+.tag.add{background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--navy)}
+@media (prefers-color-scheme:dark){.tag.add{box-shadow:inset 0 0 0 1.5px var(--boundary)}}
+.tag.best{background:var(--gold);color:var(--gold-ink)}
+.rc h3{font-size:19px;line-height:1.2;font-weight:800;padding-right:2px}
+.rc .n{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:8px 0 2px}
+.rc .n b{font:800 28px/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.rc .n small{font-size:13px;color:var(--muted)}
+.rc .meta{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;margin:8px 0 0;font-size:13.5px;color:var(--muted)}
+.rc .meta b{color:var(--ink);font-weight:600}
+.rc .meta .r2{display:flex;align-items:center;gap:6px}
+.chip2{display:inline-block;font:600 12px/1 var(--body);padding:4px 8px;border-radius:6px;margin-right:6px;vertical-align:1px}
+.chip2.yes{background:var(--green-soft);color:var(--green-ink)}
+.chip2.maybe{background:color-mix(in srgb,var(--gold) 38%,var(--bg));color:var(--ink)}
+.chip2.no,.chip2.ask{background:var(--paper);color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+.rc .more{display:none;margin:0 14px;padding:12px 0 14px;border-top:1px dashed var(--line)}
+.rc.open .more{display:block}
+.rc ol{margin:0 0 10px;padding-left:20px;font-size:14px}
+.rc li{margin:2px 0}
+.ar{margin:0}
+.ar .l{display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 14px;font-size:13.5px;padding:3px 0}
+.ar dt{color:var(--muted);flex:1 1 55%}
+.ar dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600;flex:0 1 auto;margin-left:auto}
+.ar .l.t{border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.ar .l.t dt,.ar .l.t dd{color:var(--ink);font-weight:800}
+.rc .hint{display:block;margin-top:8px;font-size:12px;color:var(--muted)}
+.rc-b .hint::after{content:" +"}
+.rc.open .rc-b .hint::after{content:" −"}
+.gd-note{margin:14px 0 0;font-size:13px;color:var(--muted);max-width:46em}
+.gd-none{border:1px dashed var(--line);padding:16px;color:var(--muted)}
+@media (min-width:1024px){
+  .gd{grid-template-columns:minmax(300px,360px) minmax(0,1fr);gap:48px}
+  .gd-ctl{position:sticky;top:16px}
+  .gd-cards{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+  .rc.best{grid-column:1/-1}
+}
+
+/* the two systems */
+.two{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;margin-top:clamp(36px,5vw,60px)}
+.two h3{font-size:22px;font-weight:800;border-bottom:3px solid var(--navy);padding-bottom:6px;margin-bottom:12px}
+@media (prefers-color-scheme:dark){.two h3{border-color:var(--boundary)}}
+.two ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.two li{border:1px solid var(--line);background:var(--bg);padding:12px 12px 10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.two li b{font:800 clamp(22px,6vw,30px)/1 var(--display);letter-spacing:-.02em;color:var(--green-ink);overflow-wrap:anywhere}
+.two li span{font-size:13px;line-height:1.4;color:var(--muted)}
+@media (prefers-color-scheme:dark){.two li b{color:var(--green)}}
+@media (min-width:700px){.two ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1100px){.two{grid-template-columns:1fr 1fr;gap:48px}}
+
+/* back office */
+.bo{background:var(--navy);color:var(--navy-ink);padding:clamp(48px,7vw,92px) 0}
+.bo .kick{color:#c9d7ec}
+.bo h2{color:var(--navy-ink);margin:14px 0 0}
+.bo .lede{color:#dfe8f5}
+.bo a{color:#fff}
+.bo sup a{color:#fff}
+.samp{display:inline-block;font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;padding:4px 7px;border-radius:4px;background:var(--gold);color:var(--gold-ink);vertical-align:2px;margin-left:8px}
+body.th .samp{letter-spacing:0;text-transform:none}
+.bo-top{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:26px}
+.bx{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);padding:16px}
+.bx h3{font-size:16px;font-weight:700;letter-spacing:0;margin-bottom:10px;color:#fff}
+.inbox{list-style:none;margin:0;padding:0;font-size:14px}
+.inbox li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.14)}
+.inbox li:first-child{border-top:0}
+.inbox small{color:#b9c8e0;font-size:12px}
+.inbox em{font-style:normal;font-size:12px;color:var(--gold);align-self:center}
+.flow{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px;padding:0;list-style:none;counter-reset:f}
+.flow li{counter-increment:f;font:600 12px/1 var(--body);padding:7px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.3);color:#c9d7ec;transition:background .25s,color .25s,border-color .25s}
+.flow li::before{content:counter(f) " "}
+.flow li.on{background:var(--gold);color:#000;border-color:var(--gold)}
+.slip{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;border:1px dashed rgba(255,255,255,.4);padding:12px;font-size:14px;margin-bottom:10px;background:rgba(0,0,0,.18)}
+.slip span{color:#b9c8e0}
+.slip b{text-align:right;font-variant-numeric:tabular-nums}
+.slip .hd{grid-column:1/-1;font:700 12px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:#b9c8e0;margin-bottom:6px}
+body.th .slip .hd{letter-spacing:0;text-transform:none}
+.chk{list-style:none;margin:0 0 12px;padding:0;font-size:14px}
+.chk li{display:flex;gap:8px;align-items:baseline;padding:3px 0;opacity:.35;transition:opacity .25s}
+.chk li.on{opacity:1}
+.chk li i{font-style:normal;font-weight:800;width:1.2em;flex:none}
+.chk li.ok i{color:#7fe0a0}
+.chk li.bad i{color:#ff9a8f}
+.btn.sm{min-height:44px;padding:10px 18px;font-size:15px}
+.res{margin:10px 0 14px;font:700 15px/1.3 var(--body);min-height:1.3em}
+.res.ok{color:#7fe0a0}.res.bad{color:#ff9a8f}
+.led{margin-top:clamp(26px,4vw,40px)}
+.led-h{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.led-h h3{font-size:clamp(22px,3vw,30px);font-weight:800;color:#fff}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.fl button{min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.4);background:transparent;color:#fff;font:600 14px/1 var(--body);cursor:pointer}
+.fl button[aria-pressed=true]{background:#fff;color:#0b1a38;border-color:#fff}
+.tot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.18);margin-bottom:12px}
+.tot div{background:var(--navy);padding:12px}
+.tot b{display:block;font:800 clamp(20px,5vw,30px)/1.05 var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.tot span{display:block;font-size:12px;color:#b9c8e0;margin-top:3px}
+.rows{border-top:1px solid rgba(255,255,255,.18)}
+.row{border-bottom:1px solid rgba(255,255,255,.14)}
+.rh{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:11px 4px;width:100%;text-align:left;background:transparent;border:0;color:inherit;font:inherit;cursor:pointer;min-height:56px}
+.rh:hover{background:rgba(255,255,255,.05)}
+.rh:focus-visible{outline-offset:-3px}
+.row.new .rh{animation:rnew .9s}
+@keyframes rnew{0%{background:rgba(242,183,5,.45)}100%{background:transparent}}
+.rh .a{font-size:13.5px;color:#dfe8f5;order:0}
+.rh .b{order:1}.rh .p{order:2}.rh .c{order:3}
+.rh .a span+span::before{content:" · ";color:#8aa0c4}
+.rh .p{font-size:13px;color:#b9c8e0}
+.rh .b{font:800 17px/1.2 var(--display);text-align:right;font-variant-numeric:tabular-nums}
+.rh .c{font-size:13px;text-align:right;color:#b9c8e0}
+.rh .c.ok{color:#7fe0a0}.rh .c.name{color:var(--gold)}.rh .c.held{color:#ff9a8f}
+.row .dt{display:none;margin:0 4px 12px;padding:10px;background:rgba(0,0,0,.2);font-size:13px;color:#dfe8f5}
+.row.open .dt{display:block}
+.dt dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 12px;margin:0}
+.dt dt{color:#b9c8e0}.dt dd{margin:0}
+.sw{display:flex;gap:10px;align-items:center;min-height:44px;font:600 14px/1.3 var(--body);cursor:pointer}
+.sw input{width:22px;height:22px;accent-color:var(--gold);flex:none}
+.stm{margin-top:clamp(26px,4vw,40px);display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.stm table{width:100%;border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums}
+.stm th,.stm td{padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.16);text-align:right}
+.stm th:first-child,.stm td:first-child{text-align:left}
+.stm th{font:600 12px/1.2 var(--body);color:#b9c8e0}
+.stm tfoot td{font-weight:800;border-bottom:0;border-top:2px solid rgba(255,255,255,.5)}
+.stm .fx{font-size:12.5px;color:#b9c8e0;margin:8px 0 0}
+.stm .mv{margin-top:0}
+.mv input[type=range]{width:100%;accent-color:var(--gold);height:36px}
+.mv .ar dt{color:#b9c8e0}.mv .ar .l.t{border-color:rgba(255,255,255,.4)}.mv .ar .l.t dt,.mv .ar .l.t dd{color:#fff}
+.mv .ar dd{color:#fff}
+.mv .big{font:800 20px/1.1 var(--display)}
+.zr{margin:22px 0 0;font-size:14px;color:#dfe8f5;max-width:46em}
+@media (min-width:900px){
+  .bo-top{grid-template-columns:1fr 1.25fr;gap:22px}
+  .stm{grid-template-columns:1fr 1fr;gap:22px}
+  .rh{grid-template-columns:5em minmax(0,1.2fr) minmax(0,1fr) 8.5em 9.5em 7em;align-items:center;gap:4px 14px}
+  .rh .a{display:contents}
+  .rh .a span+span::before{content:none}
+  .rh .p{text-align:right;order:1}
+  .rh .b{order:2}.rh .c{order:3}
+}
+
+/* options */
+.opts{padding:clamp(44px,7vw,92px) 0 clamp(30px,4vw,50px)}
+.opts h2{font-size:clamp(28px,4.6vw,46px)}
+.ol{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:24px 0 22px;padding:0;list-style:none}
+.opt{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;border:1.5px solid var(--line);background:var(--bg);padding:14px;cursor:pointer;min-height:56px;transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--navy)}
+.opt input{width:22px;height:22px;accent-color:var(--green);margin-top:2px}
+.opt b{display:block;font:800 17px/1.2 var(--display)}
+.opt span{display:block;font-size:14.5px;color:var(--muted);margin-top:2px}
+.opt:has(input:checked){border-color:var(--green);background:var(--green-soft)}
+@media (min-width:760px){.ol{grid-template-columns:1fr 1fr;gap:12px}}
+@media (min-width:1100px){.ol{grid-template-columns:1fr 1fr 1fr}}
+.opts .acts{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.opts .btn.line{background:transparent;border:2px solid var(--navy);color:var(--ink)}
+@media (prefers-color-scheme:dark){.opts .btn.line{border-color:var(--boundary)}}
+.opts .proof{color:var(--muted)}
 
 /* lunch */
 .lunch{background:var(--navy);color:var(--navy-ink);padding:clamp(52px,8vw,100px) 0}
@@ -373,12 +558,94 @@ footer a{color:var(--muted)}
   <div class="cred"><span data-i="daoCap"></span> · Takeaway · <a href="https://commons.wikimedia.org/wiki/File:Doi_Chiang_Dao_in_the_clouds.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a></div>
 </section>
 
-<section class="sec" id="give" aria-labelledby="wh">
+<section class="sec desk" id="give" aria-labelledby="wh">
   <div class="wrap">
-    <h3 id="wh" data-i="wH" style="font-size:clamp(26px,4vw,40px);font-weight:800"></h3>
-    <div class="routes" id="routes"></div>
-    <p class="proof"><span data-i="proof"></span><sup><a href="#s3">3</a></sup></p>
-    <a class="btn" href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener" data-i="giveBtn"></a>
+    <span class="kick" data-i="gdKick"></span>
+    <h2 id="wh" data-i="wH"></h2>
+    <p class="lede" data-i="gdLede"></p>
+    <div class="gd">
+      <div class="gd-ctl">
+        <p class="gd-lab" id="gd-l1" data-i="gdPlace"></p>
+        <div class="gd-places" id="gd-places" role="group" aria-labelledby="gd-l1"></div>
+        <p class="gd-lab" data-i="gdAmt"></p>
+        <div class="gd-amt"><span id="gd-cur"></span><input id="gd-in" type="number" inputmode="decimal" min="1" step="any" aria-label="Amount"></div>
+        <div class="gd-chips" id="gd-chips"></div>
+        <p class="gd-eq" id="gd-eq"></p>
+        <label class="gd-need"><input type="checkbox" id="gd-need"><span data-i="gdNeed"></span></label>
+      </div>
+      <div class="gd-out">
+        <div class="gd-sum" id="gd-sum" aria-live="polite"></div>
+        <div class="gd-cards" id="gd-cards"></div>
+        <p class="gd-note" id="gd-note"></p>
+      </div>
+    </div>
+    <div class="two">
+      <div><h3 data-i="gdTwoT"></h3><ul id="two-th"></ul></div>
+      <div><h3 data-i="gdTwoS"></h3><ul id="two-ch"></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="bo" id="office" aria-labelledby="boh">
+  <div class="wrap">
+    <span class="kick" data-i="boKick"></span>
+    <h2 id="boh" data-i="boH"></h2>
+    <p class="lede" id="bo-lede"></p>
+    <div class="bo-top">
+      <div class="bx">
+        <h3 data-i="boToday"></h3>
+        <ul class="inbox" id="inbox"></ul>
+        <p class="zr" style="margin:14px 0 0"><span data-i="proof"></span><sup><a href="#s3">3</a></sup></p>
+      </div>
+      <div class="bx">
+        <h3><span data-i="boAuto"></span><span class="samp" data-i="samp"></span></h3>
+        <button class="btn sm" type="button" id="runslip" data-i="boRun"></button>
+        <p class="res" id="res" aria-live="polite"></p>
+        <ol class="flow" id="flow"></ol>
+        <div class="slip" id="slip"></div>
+        <ul class="chk" id="chk"></ul>
+        <p class="zr" id="slipnote" style="margin:0"></p>
+      </div>
+    </div>
+    <div class="led">
+      <div class="led-h">
+        <h3><span data-i="boLed"></span><span class="samp" data-i="samp"></span></h3>
+        <label class="sw"><input type="checkbox" id="edon"><span data-i="boEd"></span><sup><a href="#s14">14</a></sup></label>
+      </div>
+      <div class="fl" id="fl" role="group"></div>
+      <div class="tot" id="tot" aria-live="polite"></div>
+      <div class="rows" id="rows"></div>
+      <p class="zr" id="edn" style="margin-top:10px"></p>
+      <p class="zr" id="zr"></p>
+    </div>
+    <div class="stm">
+      <div class="bx">
+        <h3><span id="stmh"></span><span class="samp" data-i="samp"></span></h3>
+        <div class="fl" id="stmb" role="group"></div>
+        <table id="stmt"></table>
+        <p class="fx" id="stmfx"></p>
+        <button class="btn sm" type="button" id="stmcopy" style="margin-top:12px"></button>
+      </div>
+      <div class="bx mv">
+        <h3><span data-i="mvHx"></span></h3>
+        <p style="margin:0 0 4px;font-weight:600" id="mvl"></p>
+        <input type="range" id="mvr" min="500" max="10000" step="500" value="5000" aria-label="CHF">
+        <dl class="ar" id="mvo"></dl>
+        <p class="zr" id="mvn" style="margin-top:12px;font-size:13px"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec opts" id="options" aria-labelledby="oh">
+  <div class="wrap">
+    <h2 id="oh" data-i="opH"></h2>
+    <p class="lede" data-i="opLede"></p>
+    <ul class="ol" id="ol"></ul>
+    <div class="acts">
+      <a class="btn" id="opmail" href="#" data-i="opBtn"></a>
+      <a class="btn line" href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener" data-i="giveBtn"></a>
+    </div>
   </div>
 </section>
 
@@ -405,6 +672,31 @@ footer a{color:var(--muted)}
       <li id="s3">FERC Thailand, <a href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener">How to donate</a>.</li>
       <li id="s4"><span data-i="s4a"></span> <a href="https://project-osrm.org" target="_blank" rel="noopener">OSRM</a> <span data-i="s4b"></span> <a href="https://en.wikipedia.org/wiki/Chiang_Mai" target="_blank" rel="noopener">Wikipedia, Chiang Mai</a>.</li>
       <li id="s5"><span data-i="s5a"></span> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>, <a href="https://maplibre.org" target="_blank" rel="noopener">MapLibre</a>.</li>
+      <li id="s6">FERC Thailand, <a href="https://fercthailand.org/wp-content/uploads/2026/10/FERC-leaflet-English-rev05-web-version-rev05.pdf" target="_blank" rel="noopener">Sponsored Student Program leaflet</a> (tax deduction answer; payment routes), <span data-i="got"></span>.</li>
+      <li id="s7">Every.org, <a href="https://www.every.org/ferc" target="_blank" rel="noopener">Foundation for the Education of Rural Children (FERC)</a>: US tax deduction; “hosted at Myriad USA”, <span data-i="got"></span>.</li>
+      <li id="s8">Every.org, <a href="https://www.every.org/pricing" target="_blank" rel="noopener">Pricing</a>: ACH free; card 2.2% + USD 0.30; PayPal/Venmo 1.99%, <span data-i="got"></span>.</li>
+      <li id="s9">Myriad USA, <a href="https://myriadusa.org/services/american-friends-funds/" target="_blank" rel="noopener">American Friends Funds</a>: management fee 5% on the first USD 100,000 a year; grants from USD 5,000, 3–4 weeks; acknowledgement to donors, <span data-i="got"></span>.</li>
+      <li id="s10">Wise, <a href="https://wise.com/ch/send-money/send-money-to-thailand" target="_blank" rel="noopener">Send money to Thailand</a> and its public comparison data (api.wise.com/v4/comparisons; CHF, EUR, GBP, USD to THB at 100–10,000; mid-market rates; bank rows are fee plus rate margin), 19 Oct 2026. Wise pays out THB from its local bank account.</li>
+      <li id="s11">Kasikornbank, <a href="https://www.kasikornbank.com/en/rate/fee/chargesdoc/feesforinternationaltradeproducts_en.pdf" target="_blank" rel="noopener">Announcement 029/2569, fees for international trade products</a> (announced 23 Sep 2026, effective 1 Oct 2026): Global Inward 0.25%, min THB 200, max THB 500; and <a href="https://www.kasikornbank.com/en/rate/fee/ChargesDoc/ServicingFees_en.pdf" target="_blank" rel="noopener">Table 3, service fees</a> (effective 22 Sep 2026), <span data-i="got"></span>.</li>
+      <li id="s12">Bank of Thailand, <a href="https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html" target="_blank" rel="noopener">PromptPay</a>: standard fee table, <span data-i="got"></span>.</li>
+      <li id="s13">Kasikornbank, <a href="https://www.kasikornbank.com/en/business/sme/financial-services/promptpay/Pages/promptpay-for-business.aspx" target="_blank" rel="noopener">PromptPay for Business</a>: documents; one tax ID to one account, <span data-i="got"></span>. The page does not name foundations.</li>
+      <li id="s14">Revenue Department, <a href="https://epayapp.rd.go.th/rd-edonation/portal/for-donation-unit" target="_blank" rel="noopener">e-Donation portal for donation units</a>; <a href="https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf" target="_blank" rel="noopener">Q&amp;A, 4 Jan 2022</a> (who recipients are; bank QR covers individuals only; registration documents); <a href="https://epayapp.rd.go.th/rd-edonation/check-donation/whitelist" target="_blank" rel="noopener">register of donation units</a>, searched 19 Oct 2026 for “FERC”, “Rural”, “Education” and, in Chiang Mai, “ชนบท”: no FERC entry.</li>
+      <li id="s15">Forvis Mazars, <a href="https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/thailand-extends-e-tax-and-e-donation-incentives" target="_blank" rel="noopener">Thailand extends electronic tax systems and e-Donation incentives through 2027</a>, 23 Jul 2026.</li>
+      <li id="s16">THE STANDARD, <a href="https://thestandard.co/donation-tax-deduction-e-donation-2026/" target="_blank" rel="noopener">Donations to temples or foundations must go through e-Donation from 1 Jan 2026</a>, 18 Aug 2025.</li>
+      <li id="s17">Fedlex, <a href="https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de" target="_blank" rel="noopener">DBG, Art. 33a and Art. 56 g</a> (status 1 Jan 2026).</li>
+      <li id="s18">Canton Zurich, <a href="https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-61-1.html" target="_blank" rel="noopener">Steuerbuch ZStB 61.1</a> (1 Feb 2024), foreign activities, <span data-i="got"></span>.</li>
+      <li id="s19">Swiss Philanthropy Foundation, <a href="https://www.swissphilanthropy.ch/en/philanthropic-funds/european-cross-border-donations-fund" target="_blank" rel="noopener">Cross-border Donations Fund</a>, <span data-i="got"></span>.</li>
+      <li id="s20">RaiseNow, <a href="https://www.raisenow.com/en-ch/products/twint/charities" target="_blank" rel="noopener">TWINT for charities</a>, <span data-i="got"></span>.</li>
+      <li id="s21">Omise (Opn Payments), <a href="https://www.omise.co/pricing/thailand" target="_blank" rel="noopener">Pricing, Thailand</a> and <a href="https://www.omise.co/en/restricted-businesses-omise" target="_blank" rel="noopener">restricted businesses</a> (“Charitable organization: fund-raising activities” is restricted on some channels; “Donations” appears in the prohibited financial services), <span data-i="got"></span>.</li>
+      <li id="s22">Stripe, <a href="https://support.stripe.com/questions/businesses-stripe-cant-support-via-connect-in-thailand" target="_blank" rel="noopener">Businesses Stripe can't support via Connect in Thailand</a>, <span data-i="got"></span>.</li>
+      <li id="s23">PayPal, <a href="https://www.paypal.com/th/business/paypal-business-fees" target="_blank" rel="noopener">Fees for sellers, Thailand</a>: 4.40% + fixed fee from senders outside Thailand, <span data-i="got"></span>.</li>
+      <li id="s24">GlobalGiving, <a href="https://www.globalgiving.org/aboutus/fee/" target="_blank" rel="noopener">Our fees</a>, <span data-i="got"></span>.</li>
+      <li id="s25">Bank of Thailand, <a href="https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html" target="_blank" rel="noopener">Exchange control regulation</a>, <span data-i="got"></span>.</li>
+      <li id="s26">SlipOK, <a href="https://slipok.com/" target="_blank" rel="noopener">slipok.com</a>; Hongdam's own pay box, <a href="https://hongdam.net/translation/" target="_blank" rel="noopener">hongdam.net/translation</a>.</li>
+      <li id="s27">Prism the Gift Fund, <a href="https://prismthegiftfund.co.uk/collective-funds-series-british-friends-of-structure/" target="_blank" rel="noopener">British Friends Of structure</a> (page text as shown in search results; the site blocked direct reading).</li>
+      <li id="s28">swissinfo, <a href="https://www.swissinfo.ch/eng/swiss-diaspora/trump-policies-amplify-banking-headaches-of-swiss-abroad/89147593" target="_blank" rel="noopener">Trump policies amplify banking headaches of Swiss Abroad</a>, 14 Apr 2025.</li>
+      <li id="s29">LALIVE, <a href="https://www.lalive.law/?p=18725" target="_blank" rel="noopener">De-banking and Re-banking in Switzerland</a>, 3 Jul 2026.</li>
+      <li id="s30">Myriad, <a href="https://myriad.org/" target="_blank" rel="noopener">Alliance for borderless giving: members</a>, <span data-i="got"></span>.</li>
     </ol>
   </section>
   <footer>
@@ -447,7 +739,6 @@ var T = {
   b2p:"A sponsorship helps one student stay in school through M4 – M6.",
   daoCap:"Doi Chiang Dao in the clouds",
   wH:"Ways to give",
-  routes:[["From Thailand","Kasikorn Bank transfer or QR code · an ATM or bank-to-bank transfer · a fundraising event"],["From Europe","The Swiss bank account · an international transfer · Wise"],["From other countries","An international transfer · Wise"]],
   proof:"Transfers from Thai banks do not show who gave. FERC asks donors to send proof of payment to the treasurer.",
   giveBtn:"fercthailand.org/how-to-donate",
   lk:"An invitation", lunchH:"Lunch?", lunchP:"A note from NaN in Chiang Rai.", lunchBtn:"Lunch at The Algonquin?",
@@ -490,7 +781,6 @@ var T = {
   b2p:"ทุนหนึ่งทุนช่วยให้นักเรียนหนึ่งคนเรียนต่อจนจบ ม.4 – ม.6",
   daoCap:"ดอยเชียงดาวท่ามกลางเมฆ",
   wH:"ช่องทางบริจาค",
-  routes:[["จากในประเทศไทย","โอนผ่านธนาคารกสิกรไทยหรือสแกน QR · ตู้ ATM หรือโอนระหว่างธนาคาร · งานระดมทุน"],["จากยุโรป","บัญชีธนาคารสวิส · โอนเงินระหว่างประเทศ · Wise"],["จากประเทศอื่น","โอนเงินระหว่างประเทศ · Wise"]],
   proof:"การโอนจากธนาคารไทยไม่แสดงชื่อผู้โอน FERC ขอให้ผู้บริจาคส่งหลักฐานการโอนถึงเหรัญญิก",
   giveBtn:"fercthailand.org/how-to-donate",
   lk:"คำเชิญ", lunchH:"มื้อกลางวัน?", lunchP:"ข้อความจาก NaN ที่เชียงราย", lunchBtn:"ทานมื้อกลางวันที่ The Algonquin ไหมคะ",
@@ -504,6 +794,257 @@ var T = {
   title:"34 โรงเรียน หนึ่งจังหวัด"
  }
 };
+/* ---------- giving desk: words ---------- */
+var GDT={
+en:{
+ wH:"Giving desk", gdKick:"Gifts from anywhere",
+ gdLede:"Pick where the donor lives and an amount. The routes line up by what reaches FERC.",
+ gdPlace:"Donor lives in", gdAmt:"Amount", gdNeed:"Needs a tax receipt",
+ gdTwoT:"Thai side", gdTwoS:"Swiss side",
+ boKick:"Back office", boH:"The treasurer's side", boToday:"Today", boAuto:"Automatic", boRun:"Read a sample slip",
+ boLed:"Ledger", boEd:"FERC qualifies for e-Donation", samp:"Sample",
+ opH:"What Hongdam can set up", opLede:"Tick any. The picks go into an email to NaN.", opBtn:"Email NaN the picks",
+ got:"read 19 Oct 2026", mvHx:"Between the two accounts",
+ gd:{
+  places:{TH:"Thailand",CH:"Switzerland",EU:"EU",UK:"UK",US:"US",XX:"Elsewhere"},
+  yr:"1 sponsored year ≈ {x}", unit:"per", rateTxt:"{a} at {r} THB per {c}, mid-market", rateSrc:"Wise comparison data, 19 Oct 2026",
+  sum:"{a} from {p}", bestIs:"Best: {r}.", reachAbout:"About {x} reaches FERC.", forRcpt:"With a tax receipt: {r}, {x}.", reachUp:"Up to {x} reaches FERC.", noNum:"The fee is not on a public page.",
+  rcptOnly:"Routes that give a receipt, or may.", none:"No route here names a receipt. Untick the box to see all.",
+  today:"FERC has this today", add:"Could add", best:"Best", todayEv:"FERC's Every.org page, not its donate page",
+  reach:"Reaches FERC", cost:"Cost", time:"Time", rcpt:"Tax receipt", how:"Steps and arithmetic", tap:"Tap for steps",
+  bank:"bank's own fee", noFee:"fee not on a public page",
+  rc:{yes:"Yes",maybe:"Maybe",no:"No",ask:"Not stated"},
+  u:{bank:"bank's own fee and rate",conv:"any currency conversion"}, stay:"{x} stays in CHF", before:"before {w}", upto:"up to {x}", range:"{a} – {b}",
+  t:{bankT:"bank's schedule", wH:"about 1 hour (Wise's estimate)", wM:"about 2 minutes (Wise's estimate)", wS:"seconds (Wise's estimate)", wU:"seconds; about 7 hours from USD 2,500 (Wise's estimate)", ev:"grant 3–4 weeks after request (Myriad USA)", tw:"payout 3–9 days (RaiseNow)"},
+  r:{
+   thbank:{t:"Thai bank transfer or QR", s:["Open your banking app and scan FERC's QR, or pick the Kasikorn account","Send the amount","Email the slip to the treasurer"]},
+   thqr:{t:"QR with tax data (e-Donation)", s:["FERC holds a 13-digit donation-unit number from the Revenue Department","A donations-only account at a participating bank gets a QR","The donor scans; the bank passes the donor's data to the Revenue Department"]},
+   thcard:{t:"Opn page: PromptPay QR, banking app or card", s:["The donor pays on a FERC page","Opn takes its fee on each payment","Opn transfers the total to FERC's Thai bank"]},
+   card:{t:"Card page (Opn Payments)", s:["The donor pays by card on a FERC page","Opn takes its fee on each payment","Opn transfers the total to FERC's Thai bank"]},
+   paypal:{t:"PayPal (Thai business account)", s:["The donor pays on a PayPal button","PayPal takes 4.40% plus a fixed fee","The balance goes to FERC's Thai bank"]},
+   wise:{t:"Wise to the Kasikorn account", s:["On wise.com, send the amount; choose Business or Charity","Reason: Charitable donations. FERC's Kasikorn details are on its donate page","Pay, then email the proof to the treasurer"]},
+   wire:{t:"International bank transfer (SWIFT)", s:["At your bank, start an international payment to Kasikorn with FERC's details","Your bank takes its fee and a margin on the rate","Kasikorn credits FERC after its incoming-transfer fee"]},
+   swiss:{t:"Swiss bank account", s:["Use FERC's Swiss IBAN from its donate page","Pay in CHF; other currencies are converted by a bank","Email the proof to the treasurer"]},
+   every:{t:"Every.org, hosted at Myriad USA", s:["Donate on FERC's Every.org page by bank (ACH), card or PayPal","Myriad USA, a US charity, receives the gift and sends an acknowledgement","Myriad pays a grant to FERC by wire, from USD 5,000"]},
+   globalg:{t:"GlobalGiving", s:["FERC applies and passes GlobalGiving's due diligence","The donor gives on a FERC project page","GlobalGiving keeps its fees and sends the rest"]},
+   twint:{t:"TWINT page (RaiseNow)", s:["FERC signs up with its statutes or a register extract","The donor scans a QR in the TWINT app","RaiseNow pays out each Wednesday to the Swiss account"]},
+   umbrella:{t:"Swiss umbrella foundation", s:["The donor gives to Swiss Philanthropy Foundation's general donation fund","The foundation, a Swiss public-utility body, receives the gift","It grants to FERC"]},
+   prism:{t:"UK friends fund (Prism the Gift Fund)", s:["A UK charity hosts a fund for FERC","UK donors give to the fund and claim Gift Aid","The fund grants to FERC"]},
+   myriad:{t:"Friends fund through a Myriad member", s:["The Myriad alliance lists members in Australia, Belgium, Canada, Hong Kong, New Zealand, Singapore, the UK and the US","A member hosts a fund for FERC","Donors in that country give to the fund"]}
+  },
+  rn:{
+   thbank:{maybe:"FERC's leaflet: a Thai tax ID holder's gift “may be tax deductible”. The e-Donation register has no FERC entry (19 Oct 2026)."},
+   thqr:{maybe:"Automatic for individuals once FERC holds a donation-unit number. The register has no FERC entry."},
+   thcard:{maybe:"Needs the same e-Donation entry by FERC."},
+   swissCH:{yes:"FERC's leaflet: deductible for Swiss taxpayers. Federal law: gift of CHF 100 or more to a tax-exempt entity seated in Switzerland, up to 20% of net income."},
+   swissEU:{maybe:"FERC's leaflet: “The same may apply to some European countries.”"},
+   noThai:{no:"The gift lands in Thailand. No deduction route is named by FERC or a source."},
+   noSwiss:{no:"The gift lands in Thailand. FERC's leaflet ties the Swiss deduction to the Swiss account."},
+   every:{yes:"FERC's Every.org page: tax-deductible for US taxpayers. Myriad USA sends the donor an acknowledgement."},
+   globalg:{ask:"GlobalGiving's fee page does not say."},
+   paypal:{no:"No charity rate is on PayPal's Thai fee page."},
+   twint:{maybe:"RaiseNow's forms offer donation tax receipts. The deduction needs a Swiss tax-exempt holder."},
+   umbrella:{maybe:"The foundation says gifts to its funds follow Art. 56 g conditions: disinterested and irrevocable."},
+   prism:{maybe:"Prism says its British Friends Of structures offer tax benefits for UK donors."},
+   myriad:{maybe:"Depends on the member's country."},
+   card:{no:"No receipt route is named."}
+  },
+  l:{
+   sendC:"Sender's bank fee, Bank of Thailand ceiling", sendF:"Sender's bank fee up to THB 5,000", sendK:"KBank to KBank", total:"Reaches FERC", totalMin:"At least reaches FERC", totalUp:"Up to, before the costs not stated",
+   qrInd:"The bank QR service passes individuals' data only, not companies'",
+   opnP:"PromptPay QR 1.65% of {a}", opnV:"7% VAT on that fee", opnC:"Card instead: 3.65% + VAT", opnC2:"Card fee 3.65% + 7% VAT on the fee", opnPay:"Payout to FERC's bank: THB 20 + VAT per transfer, not per gift", opnR:"Opn's restricted-business list names charitable fund-raising (not through TrueMoney, Alipay, WeChat Pay) and donations; Opn decides each case",
+   wF:"Wise fee on {a}, paid from a bank account", wN:"Sent after the fee", wT:"× {r} THB per {c}", wL:"Wise pays out as a Thai transfer: no Kasikorn incoming fee",
+   wB:"Banks in Wise's table, all-in (fee + rate margin)", wB1:"{a} in Wise's table, all-in (fee + rate margin)", wBn:"lowest {a}, highest {b}", wR:"Received before Kasikorn", wK:"Kasikorn incoming fee, 0.25%, THB 200–500", wBX:"Your bank's fee and rate margin: not on a public page",
+   swNo:"No currency conversion", swF:"Fee for a CHF transfer inside Switzerland", swF2:"Fee for sending to a Swiss account", swIn:"In the Swiss account", swMw:"Moved to Thailand later by wire", swMi:"Moved by Wise",
+   swEU:"Conversion to CHF at a bank's rate: not on a public page",
+   evA:"Bank (ACH): Every.org covers the fee", evM:"Myriad USA management fee, American Friends Fund schedule: 5% of the first USD 100,000 a year", evT:"In the fund after the fee, paying by ACH", evC:"Paying by card instead: 2.2% + USD 0.30, then the 5%", evW:"Grant wire and Kasikorn's incoming fee on the payout: not stated",
+   ggF:"Support fee: 12% on the first USD 5,000 FERC raises, 7% after", ggP:"Processing fee 3%",
+   ppF:"4.40% + {f} fixed", ppC:"A currency-conversion margin applies if PayPal converts",
+   twF:"RaiseNow fee on each successful payment: rate on RaiseNow's price list", twP:"Payout every Wednesday, 3–9 days",
+   umF:"Foundation's fee: not on a public page (international@swissphilanthropy.ch)", prF:"Prism's fees: not on the page read", myF:"Fees: set by each member",
+   oneoff:"Rate and fee figures are the providers' own, read 19 Oct 2026."
+  },
+  note:"Amounts convert at Wise's mid-market rate of 19 Oct 2026. Fees are the providers' published figures; “bank's own fee” means no source gives one. Wise's bank figures are from its comparison table for personal transfers.",
+  noteXX:" For “Elsewhere” the Wise figures are the USD corridor."
+ },
+ two:{
+  th:[["0.25%","Kasikorn's fee on an incoming international transfer, THB 200 minimum, THB 500 maximum.{11}"],
+      ["THB 0","PromptPay transfers up to THB 5,000; under THB 2 up to THB 30,000; under THB 5 up to THB 100,000.{12}"],
+      ["1 : 1","PromptPay for Business links one tax ID to one account. KBank asks for a registration certificate under three months old and the signatories' IDs; its page does not name foundations.{13}"],
+      ["USD 200k","Foreign currency credited to a Thai account is notified to the bank; supporting documents are asked from USD 200,000.{25}"],
+      ["1 Jan 2026","A Thai donor's deduction for a gift to a foundation goes through e-Donation.{16}"],
+      ["Not found","e-Donation register search for “FERC”, 19 Oct 2026; FERC's Thai name was not available. Recipients need a 13-digit donation-unit number.{14}"],
+      ["2×","The 2025–27 doubled deduction for education gifts names schools, universities and sports bodies; the decree awaited enactment on 23 Jul 2026.{15}"],
+      ["Not open","Stripe lists charities and non-profits among industries it cannot support through Connect in Thailand.{22}"]],
+  ch:[["CHF 100","A gift of CHF 100 or more to a tax-exempt entity seated in Switzerland is deductible, up to 20% of net income.{17}"],
+      ["Yes","FERC's leaflet: a Swiss taxpayer who pays the Swiss account can deduct the gift.{6}"],
+      ["Gapless","Canton Zurich asks a Swiss exempt body that works abroad for a record of money flows down to the recipient abroad.{18}"],
+      ["More often","Swiss banks end or refuse accounts (law-firm note, 3 Jul 2026).{29} Swiss citizens abroad pay higher fees.{28}"],
+      ["2 routes","FERC could add: an umbrella foundation{19} and a TWINT page.{20}"],
+      ["Europe","Giving Europe serves European beneficiaries; the Swiss foundation's general fund covers gifts outside Europe.{19}"]]
+ },
+ bo:{
+  lede:"Today a donor emails the treasurer a slip, a screenshot or other proof. Here a Thai slip is read when it arrives, each gift becomes a ledger row in THB and CHF, and each board gets a statement. All rows are sample data.",
+  inbox:[["Slip photo","no name on the bank line"],["Screenshot","amount in the message body"],["PDF from a Swiss bank","CHF, needs converting"]],
+  hand:"match by hand",
+  flow:["Slip in","Read","Checked","Ledger","Receipt"],
+  slipH:"Thai bank slip · sample", sAmt:"Amount", sFrom:"Sender", sTo:"Receiver", sRef:"Reference", sTime:"Time",
+  toFERC:"FERC",
+  chk:["Amount matches the choice","Receiver is FERC's account","Not used before","Not too old"],
+  res:{ok:"Matched. Row added to the ledger.", used:"Held: this slip paid already.", amount:"Held: the slip shows a different amount.", receiver:"Held: the slip shows a different receiver."},
+  readBy:"Hongdam's pay boxes send a slip photo to SlipOK, which reads it and checks amount, receiver and repeats.{26}",
+  routes:{all:"All",th:"Thai bank / QR",wise:"Wise",sw:"Swiss account",wire:"SWIFT",ev:"Every.org grant"},
+  st:{ok:"Matched",name:"Needs a name",held:"Held"},
+  tot:{thb:"Matched, THB",chf:"Matched, CHF",chk:"To check"},
+  ed:"e-Donation entries ready: {n}",
+  dt:{date:"Date",donor:"Donor",route:"Route",paid:"Paid",thb:"In THB",chf:"In CHF",by:"Read from",st:"Status",ed:"e-Donation"},
+  by:{th:"Slip photo, read automatically",wise:"Wise confirmation",sw:"Swiss bank statement line",wire:"Kasikorn credit advice",ev:"Myriad USA grant letter"},
+  stT:{ok:"Matched to a gift",name:"Amount in, no donor name on the credit",held:"Slip used before; waiting for the treasurer"},
+  edT:{ready:"Entry ready; the donor's 13-digit ID is needed",qr:"Entry ready through the bank QR",na:"Foreign donor: not applicable",off:"Switch on above"},
+  zr:"Canton Zurich asks a Swiss exempt body that works abroad for a gapless record of money flows down to the recipient abroad.{18} A list like this is that kind of record.",
+  stmH:"Monthly statement · September 2026", boards:{THB:"Thai board · THB",CHF:"Swiss board · CHF"}, stmCol:["Route","Gifts","Total"], stmTot:"Total", stmChk:"{a} to check · {b} held", stmFx:"Converted at {r} THB per CHF, Wise mid-market, 19 Oct 2026.", copy:"Copy as text", copied:"Copied",
+  mvH:"Between the two accounts", mvL:"Move CHF {x} from the Swiss account to Kasikorn",
+  mvW:"Wise fee", mvWr:"Reaches Kasikorn by Wise", mvB:"Swiss bank wire, all-in cost", mvK:"Kasikorn incoming fee on the wire", mvBr:"Reaches Kasikorn by wire",
+  mvN:"Wise's figures are for personal transfers. Business tariffs differ. Whether Wise Business takes a Thai foundation or a Swiss association is not stated on the pages read."
+ },
+ op:[
+  ["Slip reader","A donor's slip photo is read and checked for amount, receiver and repeats.{26}"],
+  ["Ledger","Each gift is a row in one list, in THB and CHF, with its route."],
+  ["Monthly statement","One page for the Thai board in THB, one for the Swiss board in CHF."],
+  ["Donor page","A page on fercthailand.org with this desk's routes for the donor's country and a PromptPay QR drawn with the exact amount."],
+  ["Receipt mail","A donor gets a thank-you with amount and date once the gift matches."],
+  ["e-Donation entries","Prepared for the treasurer to file where FERC qualifies.{14}"],
+  ["Account moves","Wise and a wire compared for each CHF-to-THB move, with Kasikorn's fee worked out.{10}{11}"],
+  ["Application drafts","Forms for Every.org's host, Wise, Opn or a Swiss umbrella foundation, drafted for the board to read and sign."]
+ ],
+ opMail:{sub:"FERC giving desk", body:"Dear NaN,\n\nFor FERC, I would like to look at:\n"}
+},
+th:{
+ wH:"โต๊ะรับบริจาค", gdKick:"รับเงินบริจาคจากทุกที่",
+ gdLede:"เลือกประเทศที่ผู้บริจาคอาศัยอยู่และจำนวนเงิน ช่องทางจะเรียงตามเงินที่ถึง FERC",
+ gdPlace:"ผู้บริจาคอยู่ที่", gdAmt:"จำนวนเงิน", gdNeed:"ต้องการใบลดหย่อนภาษี",
+ gdTwoT:"ฝั่งไทย", gdTwoS:"ฝั่งสวิส",
+ boKick:"หลังบ้าน", boH:"ฝั่งเหรัญญิก", boToday:"วันนี้", boAuto:"อัตโนมัติ", boRun:"อ่านสลิปตัวอย่าง",
+ boLed:"สมุดบัญชี", boEd:"FERC เข้าเกณฑ์ e-Donation", samp:"ตัวอย่าง",
+ opH:"สิ่งที่หงส์ดำตั้งให้ได้", opLede:"ติ๊กได้หลายข้อ รายการที่เลือกจะไปอยู่ในอีเมลถึง NaN", opBtn:"ส่งอีเมลรายการที่เลือกถึง NaN",
+ got:"อ่านเมื่อ 19 ต.ค. 2569", mvHx:"ระหว่างสองบัญชี",
+ gd:{
+  places:{TH:"ไทย",CH:"สวิตเซอร์แลนด์",EU:"สหภาพยุโรป",UK:"สหราชอาณาจักร",US:"สหรัฐฯ",XX:"ประเทศอื่น"},
+  yr:"ทุน 1 ปี ≈ {x}", unit:"ต่อ", rateTxt:"{a} ที่ {r} บาทต่อ {c} อัตรากลางตลาด", rateSrc:"ข้อมูลเปรียบเทียบของ Wise 19 ต.ค. 2569",
+  sum:"{a} จาก{p}", bestIs:"ดีที่สุด: {r}", reachAbout:"เงินถึง FERC ประมาณ {x}", forRcpt:"ถ้าต้องการใบลดหย่อน: {r} {x}", reachUp:"เงินถึง FERC สูงสุด {x}", noNum:"ค่าธรรมเนียมไม่ได้เผยแพร่",
+  rcptOnly:"ช่องทางที่ออกใบลดหย่อนได้ หรืออาจได้", none:"ไม่มีช่องทางที่ระบุใบลดหย่อน เอาเครื่องหมายออกเพื่อดูทั้งหมด",
+  today:"FERC มีช่องทางนี้แล้ว", add:"เพิ่มได้", best:"ดีที่สุด", todayEv:"อยู่ในหน้า Every.org ของ FERC ไม่อยู่ในหน้าบริจาค",
+  reach:"เงินที่ถึง FERC", cost:"ค่าใช้จ่าย", time:"เวลา", rcpt:"ใบลดหย่อนภาษี", how:"ขั้นตอนและการคำนวณ", tap:"แตะเพื่อดูขั้นตอน",
+  bank:"ค่าธรรมเนียมของธนาคาร", noFee:"ไม่เผยแพร่ค่าธรรมเนียม",
+  rc:{yes:"ได้",maybe:"อาจได้",no:"ไม่ได้",ask:"ไม่ระบุ"},
+  u:{bank:"ค่าธรรมเนียมและอัตราของธนาคาร",conv:"การแปลงสกุลเงิน"}, stay:"{x} อยู่เป็นฟรังก์", before:"ก่อน{w}", upto:"สูงสุด {x}", range:"{a} – {b}",
+  t:{bankT:"ตามรอบของธนาคาร", wH:"ประมาณ 1 ชั่วโมง (ประมาณการของ Wise)", wM:"ประมาณ 2 นาที (ประมาณการของ Wise)", wS:"ไม่กี่วินาที (ประมาณการของ Wise)", wU:"ไม่กี่วินาที ตั้งแต่ 2,500 ดอลลาร์ ประมาณ 7 ชั่วโมง (ประมาณการของ Wise)", ev:"ได้รับทุน 3–4 สัปดาห์หลังขอ (Myriad USA)", tw:"โอนเข้า 3–9 วัน (RaiseNow)"},
+  r:{
+   thbank:{t:"โอนผ่านธนาคารไทยหรือสแกน QR", s:["เปิดแอปธนาคาร สแกน QR ของ FERC หรือเลือกบัญชีกสิกรไทย","โอนจำนวนที่ต้องการ","ส่งสลิปทางอีเมลถึงเหรัญญิก"]},
+   thqr:{t:"QR ที่ส่งข้อมูลภาษี (e-Donation)", s:["FERC มีเลขประจำตัวหน่วยรับบริจาค 13 หลักจากกรมสรรพากร","บัญชีที่ใช้รับบริจาคอย่างเดียวที่ธนาคารร่วมโครงการ ได้ QR","ผู้บริจาคสแกน ธนาคารส่งข้อมูลผู้บริจาคให้กรมสรรพากร"]},
+   thcard:{t:"หน้า Opn: พร้อมเพย์ QR แอปธนาคาร หรือบัตร", s:["ผู้บริจาคจ่ายในหน้าของ FERC","Opn หักค่าธรรมเนียมทุกรายการ","Opn โอนยอดรวมเข้าบัญชีธนาคารไทยของ FERC"]},
+   card:{t:"หน้าชำระด้วยบัตร (Opn Payments)", s:["ผู้บริจาคจ่ายด้วยบัตรในหน้าของ FERC","Opn หักค่าธรรมเนียมทุกรายการ","Opn โอนยอดรวมเข้าบัญชีธนาคารไทยของ FERC"]},
+   paypal:{t:"PayPal (บัญชีธุรกิจในไทย)", s:["ผู้บริจาคจ่ายที่ปุ่ม PayPal","PayPal หัก 4.40% บวกค่าคงที่","ยอดคงเหลือโอนเข้าบัญชีธนาคารไทยของ FERC"]},
+   wise:{t:"Wise ไปบัญชีกสิกรไทย", s:["ที่ wise.com ส่งเงิน เลือก Business or Charity","เหตุผล: Charitable donations ข้อมูลบัญชีกสิกรไทยของ FERC อยู่ในหน้าบริจาค","จ่ายเงิน แล้วอีเมลหลักฐานถึงเหรัญญิก"]},
+   wire:{t:"โอนเงินระหว่างประเทศ (SWIFT)", s:["ที่ธนาคารของท่าน ทำรายการโอนระหว่างประเทศไปกสิกรไทยตามข้อมูลของ FERC","ธนาคารหักค่าธรรมเนียมและบวกส่วนต่างอัตราแลกเปลี่ยน","กสิกรไทยหักค่าธรรมเนียมรับโอน แล้วเครดิตเข้าบัญชี FERC"]},
+   swiss:{t:"บัญชีธนาคารสวิส", s:["ใช้ IBAN สวิสของ FERC จากหน้าบริจาค","จ่ายเป็นฟรังก์ ถ้าเป็นสกุลอื่นธนาคารจะแปลงให้","อีเมลหลักฐานถึงเหรัญญิก"]},
+   every:{t:"Every.org ที่ Myriad USA ดูแล", s:["บริจาคในหน้า Every.org ของ FERC ด้วยบัญชีธนาคาร (ACH) บัตร หรือ PayPal","Myriad USA องค์กรการกุศลในสหรัฐฯ รับเงินและส่งหนังสือรับทราบ","Myriad จ่ายทุนให้ FERC ทางโอนเงิน ตั้งแต่ 5,000 ดอลลาร์"]},
+   globalg:{t:"GlobalGiving", s:["FERC สมัครและผ่านการตรวจสอบของ GlobalGiving","ผู้บริจาคให้ในหน้าโครงการของ FERC","GlobalGiving หักค่าธรรมเนียมแล้วส่งส่วนที่เหลือ"]},
+   twint:{t:"หน้า TWINT (RaiseNow)", s:["FERC สมัครด้วยข้อบังคับหรือใบสำเนาทะเบียน","ผู้บริจาคสแกน QR ในแอป TWINT","RaiseNow โอนเข้าบัญชีสวิสทุกวันพุธ"]},
+   umbrella:{t:"มูลนิธิร่มสวิส", s:["ผู้บริจาคให้กองทุนบริจาคทั่วไปของ Swiss Philanthropy Foundation","มูลนิธิซึ่งเป็นองค์กรสาธารณประโยชน์ของสวิสรับเงิน","แล้วให้ทุนต่อ FERC"]},
+   prism:{t:"กองทุน Friends ในอังกฤษ (Prism the Gift Fund)", s:["องค์กรการกุศลในอังกฤษดูแลกองทุนให้ FERC","ผู้บริจาคชาวอังกฤษให้กองทุนและขอ Gift Aid","กองทุนให้ทุนต่อ FERC"]},
+   myriad:{t:"กองทุน Friends ผ่านสมาชิก Myriad", s:["เครือข่าย Myriad มีสมาชิกในออสเตรเลีย เบลเยียม แคนาดา ฮ่องกง นิวซีแลนด์ สิงคโปร์ อังกฤษ และสหรัฐฯ","สมาชิกดูแลกองทุนให้ FERC","ผู้บริจาคในประเทศนั้นให้กองทุน"]}
+  },
+  rn:{
+   thbank:{maybe:"แผ่นพับของ FERC: ผู้มีเลขผู้เสียภาษีไทย “อาจลดหย่อนภาษีได้” ทะเบียน e-Donation ไม่พบ FERC (19 ต.ค. 2569)"},
+   thqr:{maybe:"ส่งข้อมูลอัตโนมัติสำหรับบุคคลธรรมดา เมื่อ FERC มีเลขหน่วยรับบริจาค ทะเบียนไม่พบ FERC"},
+   thcard:{maybe:"ต้องให้ FERC บันทึก e-Donation เช่นเดียวกัน"},
+   swissCH:{yes:"แผ่นพับของ FERC: ผู้เสียภาษีในสวิสลดหย่อนได้ กฎหมายกลาง: เงินบริจาค 100 ฟรังก์ขึ้นไปแก่นิติบุคคลที่ตั้งในสวิสและได้รับยกเว้นภาษี ไม่เกิน 20% ของรายได้สุทธิ"},
+   swissEU:{maybe:"แผ่นพับของ FERC: “ประเทศในยุโรปบางประเทศอาจทำได้เช่นกัน”"},
+   noThai:{no:"เงินเข้าบัญชีในไทย FERC และแหล่งข้อมูลไม่ระบุช่องทางลดหย่อน"},
+   noSwiss:{no:"เงินเข้าบัญชีในไทย แผ่นพับของ FERC ผูกการลดหย่อนในสวิสกับบัญชีสวิส"},
+   every:{yes:"หน้า Every.org ของ FERC: ผู้เสียภาษีสหรัฐฯ ลดหย่อนได้ Myriad USA ส่งหนังสือรับทราบให้ผู้บริจาค"},
+   globalg:{ask:"หน้าค่าธรรมเนียมของ GlobalGiving ไม่ระบุ"},
+   paypal:{no:"หน้าค่าธรรมเนียมของ PayPal ไทยไม่มีอัตราสำหรับองค์กรการกุศล"},
+   twint:{maybe:"แบบฟอร์มของ RaiseNow ออกใบลดหย่อนได้ การลดหย่อนต้องมีผู้รับที่ได้รับยกเว้นภาษีในสวิส"},
+   umbrella:{maybe:"มูลนิธิระบุว่าเงินที่ให้กองทุนของตนเป็นไปตามเงื่อนไขมาตรา 56 g คือไม่มีผลประโยชน์ตอบแทนและเพิกถอนไม่ได้"},
+   prism:{maybe:"Prism ระบุว่าโครงสร้าง British Friends Of ให้สิทธิประโยชน์ทางภาษีแก่ผู้บริจาคชาวอังกฤษ"},
+   myriad:{maybe:"ขึ้นกับประเทศของสมาชิก"},
+   card:{no:"ไม่มีช่องทางใบลดหย่อนที่ระบุ"}
+  },
+  l:{
+   sendC:"ค่าธรรมเนียมธนาคารผู้โอน เพดานของธนาคารแห่งประเทศไทย", sendF:"ค่าธรรมเนียมธนาคารผู้โอน ไม่เกิน 5,000 บาท", sendK:"กสิกรไทยไปกสิกรไทย", total:"เงินที่ถึง FERC", totalMin:"เงินที่ถึง FERC อย่างน้อย", totalUp:"สูงสุด ก่อนหักค่าใช้จ่ายที่ไม่ระบุ",
+   qrInd:"บริการ QR ของธนาคารส่งข้อมูลเฉพาะบุคคลธรรมดา ไม่รวมนิติบุคคล",
+   opnP:"พร้อมเพย์ QR 1.65% ของ {a}", opnV:"VAT 7% ของค่าธรรมเนียมนั้น", opnC:"ถ้าใช้บัตร: 3.65% + VAT", opnC2:"ค่าบัตร 3.65% + VAT 7% ของค่าธรรมเนียม", opnPay:"โอนเข้าบัญชี FERC: 20 บาท + VAT ต่อครั้ง ไม่ใช่ต่อรายการบริจาค", opnR:"รายการธุรกิจที่จำกัดของ Opn ระบุการระดมทุนขององค์กรการกุศล (ไม่ผ่าน TrueMoney, Alipay, WeChat Pay) และการรับบริจาค Opn พิจารณาเป็นรายกรณี",
+   wF:"ค่าธรรมเนียม Wise สำหรับ {a} จ่ายจากบัญชีธนาคาร", wN:"ยอดที่ส่งหลังหักค่าธรรมเนียม", wT:"× {r} บาทต่อ {c}", wL:"Wise โอนเข้าเป็นรายการในประเทศไทย: ไม่มีค่ารับโอนของกสิกรไทย",
+   wB:"ธนาคารในตารางของ Wise รวมค่าธรรมเนียมและส่วนต่างอัตรา", wB1:"{a} ในตารางของ Wise รวมค่าธรรมเนียมและส่วนต่างอัตรา", wBn:"ต่ำสุด {a} สูงสุด {b}", wR:"ยอดที่ได้รับก่อนหักกสิกรไทย", wK:"ค่ารับโอนของกสิกรไทย 0.25% ขั้นต่ำ 200 สูงสุด 500 บาท", wBX:"ค่าธรรมเนียมและส่วนต่างอัตราของธนาคารท่าน: ไม่เผยแพร่",
+   swNo:"ไม่มีการแปลงสกุลเงิน", swF:"ค่าโอนเป็นฟรังก์ภายในสวิส", swF2:"ค่าโอนเข้าบัญชีสวิส", swIn:"ในบัญชีสวิส", swMw:"ถ้าโอนไปไทยภายหลังทางธนาคาร", swMi:"ถ้าโอนด้วย Wise",
+   swEU:"การแปลงเป็นฟรังก์ตามอัตราของธนาคาร: ไม่เผยแพร่",
+   evA:"บัญชีธนาคาร (ACH): Every.org รับค่าธรรมเนียมเอง", evM:"ค่าบริหารของ Myriad USA ตามตาราง American Friends Fund: 5% ของ 100,000 ดอลลาร์แรกต่อปี", evT:"ยอดในกองทุนหลังหักค่าธรรมเนียม เมื่อจ่ายด้วย ACH", evC:"ถ้าใช้บัตร: 2.2% + 0.30 ดอลลาร์ แล้วหัก 5%", evW:"ค่าโอนทุนและค่ารับโอนของกสิกรไทย: ไม่ระบุ",
+   ggF:"ค่าสนับสนุน: 12% ของ 5,000 ดอลลาร์แรกที่ FERC ระดมได้ 7% หลังจากนั้น", ggP:"ค่าประมวลผล 3%",
+   ppF:"4.40% + ค่าคงที่ {f}", ppC:"มีส่วนต่างอัตราแลกเปลี่ยนถ้า PayPal แปลงสกุลเงิน",
+   twF:"ค่าธรรมเนียมของ RaiseNow ต่อการชำระสำเร็จ: อัตราอยู่ในตารางราคาของ RaiseNow", twP:"โอนเข้าทุกวันพุธ ใช้เวลา 3–9 วัน",
+   umF:"ค่าธรรมเนียมมูลนิธิ: ไม่เผยแพร่ (international@swissphilanthropy.ch)", prF:"ค่าธรรมเนียม Prism: ไม่อยู่ในหน้าที่อ่าน", myF:"ค่าธรรมเนียม: สมาชิกแต่ละแห่งกำหนด",
+   oneoff:"อัตราและค่าธรรมเนียมเป็นตัวเลขของผู้ให้บริการเอง อ่านเมื่อ 19 ต.ค. 2569"
+  },
+  note:"แปลงสกุลเงินด้วยอัตรากลางตลาดของ Wise วันที่ 19 ต.ค. 2569 ค่าธรรมเนียมเป็นตัวเลขที่ผู้ให้บริการเผยแพร่ ส่วน “ค่าธรรมเนียมของธนาคาร” หมายถึงไม่มีแหล่งข้อมูลระบุตัวเลข ตัวเลขธนาคารของ Wise มาจากตารางเปรียบเทียบการโอนส่วนบุคคล",
+  noteXX:" สำหรับ “ประเทศอื่น” ตัวเลข Wise เป็นเส้นทางดอลลาร์สหรัฐ"
+ },
+ two:{
+  th:[["0.25%","ค่ารับโอนเงินจากต่างประเทศของกสิกรไทย ขั้นต่ำ 200 บาท สูงสุด 500 บาท{11}"],
+      ["0 บาท","พร้อมเพย์ไม่เกิน 5,000 บาทฟรี ไม่เกิน 30,000 บาทต่ำกว่า 2 บาท ไม่เกิน 100,000 บาทต่ำกว่า 5 บาท{12}"],
+      ["1 : 1","พร้อมเพย์สำหรับธุรกิจผูกเลขผู้เสียภาษีกับบัญชีเดียว กสิกรไทยขอหนังสือรับรองการจดทะเบียนอายุไม่เกินสามเดือนและบัตรของผู้มีอำนาจลงนาม หน้าของธนาคารไม่ระบุมูลนิธิ{13}"],
+      ["2 แสนดอลลาร์","เงินตราต่างประเทศที่เข้าบัญชีไทยต้องแจ้งธนาคาร ธนาคารขอเอกสารประกอบตั้งแต่ 200,000 ดอลลาร์สหรัฐ{25}"],
+      ["1 ม.ค. 2569","การลดหย่อนภาษีของผู้บริจาคชาวไทยที่ให้มูลนิธิต้องผ่านระบบ e-Donation{16}"],
+      ["ไม่พบ","ค้นทะเบียน e-Donation ด้วยคำว่า “FERC” เมื่อ 19 ต.ค. 2569 ชื่อภาษาไทยของ FERC ไม่มีให้ค้น ผู้รับต้องมีเลขประจำตัวหน่วยรับบริจาค 13 หลัก{14}"],
+      ["2 เท่า","การลดหย่อน 2 เท่าสำหรับเงินบริจาคเพื่อการศึกษา ปี 2568–2570 ระบุผู้รับเป็นสถานศึกษา มหาวิทยาลัย และหน่วยงานกีฬา ร่างพระราชกฤษฎีกายังรอประกาศใช้ ณ 23 ก.ค. 2569{15}"],
+      ["ยังเปิดไม่ได้","Stripe ระบุว่าองค์กรการกุศลและไม่แสวงหากำไรอยู่ในธุรกิจที่รองรับผ่าน Connect ในประเทศไทยไม่ได้{22}"]],
+  ch:[["100 ฟรังก์","เงินบริจาค 100 ฟรังก์ขึ้นไปแก่นิติบุคคลที่ตั้งในสวิสและได้รับยกเว้นภาษี ลดหย่อนได้ ไม่เกิน 20% ของรายได้สุทธิ{17}"],
+      ["ได้","แผ่นพับของ FERC: ผู้เสียภาษีในสวิสที่โอนเข้าบัญชีสวิสลดหย่อนได้{6}"],
+      ["ไม่ขาดตอน","รัฐซูริกขอบันทึกการเดินของเงินจนถึงผู้รับในต่างประเทศ จากองค์กรสวิสที่ได้รับยกเว้นภาษีและทำงานในต่างประเทศ{18}"],
+      ["บ่อยขึ้น","ธนาคารสวิสยุติหรือปฏิเสธบัญชี (บันทึกสำนักงานกฎหมาย 3 ก.ค. 2569){29} ชาวสวิสในต่างประเทศเสียค่าธรรมเนียมสูงกว่า{28}"],
+      ["2 ช่องทาง","ที่ FERC เพิ่มได้: มูลนิธิร่ม{19} และหน้า TWINT{20}"],
+      ["ยุโรป","Giving Europe รองรับผู้รับในยุโรป ส่วนกองทุนทั่วไปของมูลนิธิสวิสรองรับเงินบริจาคนอกยุโรป{19}"]]
+ },
+ bo:{
+  lede:"วันนี้ผู้บริจาคส่งสลิป ภาพหน้าจอ หรือหลักฐานอื่นทางอีเมลถึงเหรัญญิก ด้านล่างคือสลิปไทยที่ถูกอ่านและตรวจทันทีที่เข้ามา แต่ละรายการบริจาคกลายเป็นหนึ่งแถวในสมุดบัญชีเป็นบาทและฟรังก์ และคณะกรรมการสองฝั่งได้รับรายงาน ทุกแถวเป็นข้อมูลตัวอย่าง",
+  inbox:[["ภาพสลิป","ไม่มีชื่อในรายการธนาคาร"],["ภาพหน้าจอ","ยอดอยู่ในข้อความ"],["PDF จากธนาคารสวิส","เป็นฟรังก์ ต้องแปลง"]],
+  hand:"จับคู่ด้วยมือ",
+  flow:["สลิปเข้า","อ่าน","ตรวจ","สมุดบัญชี","ใบเสร็จ"],
+  slipH:"สลิปธนาคารไทย · ตัวอย่าง", sAmt:"จำนวนเงิน", sFrom:"ผู้โอน", sTo:"ผู้รับ", sRef:"เลขอ้างอิง", sTime:"เวลา",
+  toFERC:"FERC",
+  chk:["จำนวนเงินตรงกับที่เลือก","ผู้รับคือบัญชีของ FERC","ยังไม่เคยใช้","ไม่เก่าเกินไป"],
+  res:{ok:"ตรงกัน เพิ่มแถวในสมุดบัญชีแล้ว", used:"พักไว้: สลิปนี้เคยใช้จ่ายแล้ว", amount:"พักไว้: จำนวนเงินในสลิปไม่ตรง", receiver:"พักไว้: ผู้รับในสลิปไม่ตรง"},
+  readBy:"ช่องชำระเงินของหงส์ดำส่งภาพสลิปให้ SlipOK อ่านและตรวจจำนวนเงิน ผู้รับ และสลิปซ้ำ{26}",
+  routes:{all:"ทั้งหมด",th:"ธนาคารไทย / QR",wise:"Wise",sw:"บัญชีสวิส",wire:"SWIFT",ev:"ทุนจาก Every.org"},
+  st:{ok:"ตรงกัน",name:"ต้องหาชื่อ",held:"พักไว้"},
+  tot:{thb:"ตรงกัน บาท",chf:"ตรงกัน ฟรังก์",chk:"ต้องตรวจ"},
+  ed:"รายการ e-Donation ที่พร้อม: {n}",
+  dt:{date:"วันที่",donor:"ผู้บริจาค",route:"ช่องทาง",paid:"จ่าย",thb:"เป็นบาท",chf:"เป็นฟรังก์",by:"อ่านจาก",st:"สถานะ",ed:"e-Donation"},
+  by:{th:"ภาพสลิป อ่านอัตโนมัติ",wise:"ใบยืนยันจาก Wise",sw:"รายการในใบแจ้งยอดธนาคารสวิส",wire:"ใบแจ้งเครดิตของกสิกรไทย",ev:"หนังสือแจ้งทุนจาก Myriad USA"},
+  stT:{ok:"จับคู่กับรายการบริจาคแล้ว",name:"เงินเข้าแล้ว แต่รายการไม่มีชื่อผู้บริจาค",held:"สลิปเคยใช้แล้ว รอเหรัญญิก"},
+  edT:{ready:"พร้อมบันทึก ต้องมีเลขประจำตัว 13 หลักของผู้บริจาค",qr:"พร้อมแล้ว ส่งผ่าน QR ของธนาคาร",na:"ผู้บริจาคต่างประเทศ: ไม่เกี่ยวข้อง",off:"เปิดสวิตช์ด้านบน"},
+  zr:"รัฐซูริกขอบันทึกการเดินของเงินที่ไม่ขาดตอนจนถึงผู้รับในต่างประเทศ จากองค์กรสวิสที่ได้รับยกเว้นภาษีและทำงานในต่างประเทศ{18} รายการแบบนี้คือบันทึกประเภทนั้น",
+  stmH:"รายงานประจำเดือน · กันยายน 2569", boards:{THB:"กรรมการฝั่งไทย · บาท",CHF:"กรรมการฝั่งสวิส · ฟรังก์"}, stmCol:["ช่องทาง","รายการ","รวม"], stmTot:"รวม", stmChk:"ต้องตรวจ {a} · พักไว้ {b}", stmFx:"แปลงที่ {r} บาทต่อฟรังก์ อัตรากลางตลาดของ Wise 19 ต.ค. 2569", copy:"คัดลอกเป็นข้อความ", copied:"คัดลอกแล้ว",
+  mvH:"ระหว่างสองบัญชี", mvL:"ย้าย {x} ฟรังก์จากบัญชีสวิสไปกสิกรไทย",
+  mvW:"ค่าธรรมเนียม Wise", mvWr:"เงินถึงกสิกรไทยทาง Wise", mvB:"โอนผ่านธนาคารสวิส รวมค่าใช้จ่าย", mvK:"ค่ารับโอนของกสิกรไทยสำหรับการโอนธนาคาร", mvBr:"เงินถึงกสิกรไทยทางธนาคาร",
+  mvN:"ตัวเลขของ Wise เป็นของการโอนส่วนบุคคล อัตราธุรกิจต่างออกไป หน้าที่อ่านไม่ระบุว่า Wise Business รับมูลนิธิไทยหรือสมาคมสวิสหรือไม่"
+ },
+ op:[
+  ["ตัวอ่านสลิป","ภาพสลิปของผู้บริจาคถูกอ่านและตรวจจำนวนเงิน ผู้รับ และสลิปซ้ำ{26}"],
+  ["สมุดบัญชี","แต่ละรายการบริจาคเป็นหนึ่งแถวในรายการเดียว เป็นบาทและฟรังก์ พร้อมช่องทาง"],
+  ["รายงานประจำเดือน","หนึ่งหน้าสำหรับกรรมการฝั่งไทยเป็นบาท หนึ่งหน้าสำหรับกรรมการฝั่งสวิสเป็นฟรังก์"],
+  ["หน้าสำหรับผู้บริจาค","หน้าบน fercthailand.org แสดงช่องทางของโต๊ะนี้ตามประเทศของผู้บริจาค พร้อม QR พร้อมเพย์ที่ใส่จำนวนเงินตรงตัว"],
+  ["อีเมลขอบคุณ","เมื่อรายการบริจาคตรงกัน ผู้บริจาคได้อีเมลขอบคุณพร้อมจำนวนเงินและวันที่"],
+  ["รายการ e-Donation","เตรียมไว้ให้เหรัญญิกยื่น ในกรณีที่ FERC เข้าเกณฑ์{14}"],
+  ["การย้ายเงินระหว่างบัญชี","เทียบ Wise กับโอนธนาคารทุกครั้งที่ย้ายจากฟรังก์เป็นบาท พร้อมคำนวณค่าธรรมเนียมกสิกรไทย{10}{11}"],
+  ["ร่างใบสมัคร","แบบฟอร์มของผู้ดูแล Every.org, Wise, Opn หรือมูลนิธิร่มสวิส ร่างไว้ให้คณะกรรมการอ่านและลงนาม"]
+ ],
+ opMail:{sub:"FERC giving desk", body:"สวัสดีค่ะ NaN\n\nสำหรับ FERC ดิฉันสนใจดูเรื่องต่อไปนี้:\n"}
+}
+};
+
+(function(){['en','th'].forEach(function(l){Object.keys(GDT[l]).forEach(function(k){T[l][k]=GDT[l][k];});});})();
 var lang=(navigator.language||'en').toLowerCase().indexOf('th')===0?'th':'en';
 var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 var S=DATA.schools; S.forEach(function(s,i){s.i=i;});
@@ -539,13 +1080,13 @@ function applyLang(){
   var m='mailto:nan@motdang.net?subject='+encodeURIComponent(t('mailSubject'))+'&body='+encodeURIComponent(t('mailBody'));
   $('lunch').setAttribute('href',m);
   $('gl').textContent=t(mode==='n'?'gLn':'gLr');
-  var rt=$('routes'); rt.innerHTML=''; t('routes').forEach(function(r){var d=el('div','route'); d.appendChild(el('h3','',r[0])); d.appendChild(el('p','',r[1])); rt.appendChild(d);});
   document.querySelectorAll('.date').forEach(function(d){
     var day=d.getAttribute('data-d'), w=new Date(Date.UTC(2026,10,+day.slice(6),12)).getUTCDay();
     d.querySelector('.mo').textContent=t('mo')[11]+' 2026'.replace('2026',lang==='th'?'2569':'2026');
     d.querySelector('.wd').textContent=t('wd')[w];
   });
   buildRadar(); renderRead(false); buildChartLabels(); renderDD(); renderCard(); updateChip(); tickAll();
+  renderAllDesk();
 }
 
 /* ---------- pins: map + silhouette ---------- */
@@ -834,6 +1375,388 @@ function icsFor(d,title){
   return 'data:text/calendar;charset=utf-8,'+encodeURIComponent(s);
 }
 
+/* ---------- giving desk: numbers and screens ---------- */
+/* Rates and fee samples: Wise comparison data (api.wise.com/v4/comparisons), read 19 Oct 2026.
+   THB per unit, mid-market. W: Wise fee at sample amounts (bank-transfer pay-in).
+   B: all-in cost (fee + rate margin) of banks in Wise's table, in the donor's currency. */
+var GD={
+ R:{THB:1,CHF:40.738,EUR:37.661,GBP:44.7304,USD:33.56},
+ A:[100,250,500,1000,2500,5000,10000],
+ W:{CHF:[2.93,3.72,5.04,7.68,15.59,28.77,55.13],EUR:[2.85,3.95,5.79,9.46,20.48,38.85,75.57],GBP:[2.13,3.07,4.63,7.77,17.16,32.8,64.11],USD:[2.87,4,5.88,9.65,22.86,37.52,66.85]},
+ B:{
+  CHF:{"Migros Bank":[26.53,29.6,34.7,44.92,75.55,126.62,228.75],"Zürcher Kantonalbank":[32.05,47.94,74.42,127.37,286.25,551.04,1080.62]},
+  EUR:{"ING Germany":[23.35,25.95,30.28,48.78],"Deutsche Bank":[37.86,40.95,46.11,56.43,87.38,138.96,247.02],"Sparkasse":[44.06,48.13,62.21,75.78],"Commerzbank":[15.05,31.57,29.16,43.75,87.54,160.52,308.91]},
+  GBP:{"Lloyds":[12.85,18.4,27.64,46.14,99.95,190.75,372.35],"RBS":[2.22,5.56,11.11,22.22,55.56,111.12,222.25],"Barclays":[2.69,6.72,13.44,26.88,67.21,134.42,268.84],"Nationwide":[16.6,19.41,24.1,33.49,61.65,108.58,202.44],"HSBC":[1.59,3.53,7.06,14.13,35.33,70.65,141.3],"Santander UK":[27.45,32.36,40.55,56.91],"NatWest":[2.22,5.56,11.11,22.22,55.56,111.12,222.25]},
+  USD:{"Wells Fargo":[3.15,7.85,15.71,31.41,78.54,157.07,314.14]}
+ },
+ CUR:{TH:"THB",CH:"CHF",EU:"EUR",UK:"GBP",US:"USD",XX:"USD"},
+ PRE:{TH:[1000,5000,36000],CH:[100,300,1000,3000],EU:[100,300,1000,3000],UK:[100,250,1000,3000],US:[100,360,1000,5000],XX:[100,360,1000,5000]},
+ PPF:{CHF:0.55,EUR:0.35,GBP:0.20,USD:0.30}
+};
+var G={pl:'CH',amt:{TH:12000,CH:300,EU:320,UK:270,US:360,XX:360},need:false,open:{},
+ f:'all',stm:'THB',ed:false,slip:0,extra:[],nrow:0,mv:5000,opened:null,picks:{}};
+
+function interp(arr,a){
+ var A=GD.A,n=arr.length,i;
+ if(a<=A[0]) return arr[0];
+ if(a>=A[n-1]) return arr[n-1]*a/A[n-1];
+ for(i=0;i<n-1;i++){ if(a<=A[i+1]){ var f=(a-A[i])/(A[i+1]-A[i]); return arr[i]+(arr[i+1]-arr[i])*f; } }
+ return arr[n-1];
+}
+function kin(thb){return Math.min(500,Math.max(200,thb*0.0025));}
+function ceilFee(a){return a<=5000?0:a<=30000?2:a<=100000?5:10;}
+function gdT(){return T[lang].gd;}
+function num(x){return Math.round(x).toLocaleString('en-US');}
+function M(c,x){var s=(Math.abs(x)<100&&Math.abs(x%1)>0.004)?x.toFixed(2):num(x); return c+' '+s;}
+function rg(c,a,b){return Math.abs(a-b)<0.5?M(c,a):M(c,a)+' – '+num(b);}
+function sp(n){return '<sup><a href="#s'+n+'">'+n+'</a></sup>';}
+function srcs(s){return s.replace(/\{(\d+)\}/g,function(m,n){return sp(n);});}
+function fill(s,p){for(var k in p) s=s.split('{'+k+'}').join(p[k]); return s;}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+/* ----- the routes for one donor ----- */
+function bankRange(cur,a){
+ var tb=GD.B[cur]; if(!tb) return null;
+ var lo=1e18,hi=-1,nl='',nh='';
+ Object.keys(tb).forEach(function(n){var c=interp(tb[n],a); if(c<lo){lo=c;nl=n;} if(c>hi){hi=c;nh=n;}});
+ return {lo:lo,hi:hi,nl:nl,nh:nh};
+}
+function wireOut(cur,a,rate){ /* THB reaching FERC by SWIFT, best and worst listed bank */
+ var br=bankRange(cur,a); if(!br) return null;
+ var rh=(a-br.lo)*rate, rl=(a-br.hi)*rate;
+ return {hi:rh-kin(rh),lo:rl-kin(rl),rh:rh,rl:rl,kh:kin(rh),kl:kin(rl),br:br};
+}
+function build(pl,a){
+ var g=gdT(),L=g.l,cur=GD.CUR[pl],wcur=cur,rate=GD.R[cur],thb=a*rate,out=[];
+ function ln(k,v,s,tot,p){return {k:fill(L[k],p||{}),v:v,s:s,t:tot};}
+ function R(o){o.rn=o.rn||{};out.push(o);return o;}
+ function rcv(key,st){var o=g.rn[key]; return {s:st,x:o[st]};}
+ var rt=g.r;
+ if(pl==='TH'){
+  var c=ceilFee(a);
+  R({id:'thbank',today:true,tier:1,lo:a-c,hi:a,time:g.t.bankT,
+   rc:rcv('thbank','maybe'),srcs:[3,6,12,14],
+   lines:[ln(c?'sendC':'sendF',c?M('THB',c)+' or less':'THB 0',12),ln('sendK','THB 0',11),ln('totalMin',M('THB',a-c),0,true)]});
+  R({id:'thqr',today:false,tier:1,lo:a-c,hi:a,time:g.t.bankT,
+   rc:rcv('thqr','maybe'),srcs:[14,13,12],
+   lines:[ln(c?'sendC':'sendF',c?M('THB',c)+' or less':'THB 0',12),ln('qrInd','',14),ln('totalMin',M('THB',a-c),0,true)]});
+  var f1=a*0.0165,v1=f1*0.07;
+  R({id:'thcard',today:false,tier:1,lo:a-f1-v1,hi:a-f1-v1,time:g.t.bankT,
+   rc:rcv('thcard','maybe'),srcs:[21],
+   lines:[ln('opnP',M('THB',f1),21,false,{a:M('THB',a)}),ln('opnV',M('THB',v1),21),ln('opnC',M('THB',a*0.0365*1.07),21),ln('opnPay','',21),ln('opnR','',21),ln('total',M('THB',a-f1-v1),0,true)]});
+  return out;
+ }
+ /* donors outside Thailand */
+ var wf=interp(GD.W[wcur],a), wthb=(a-wf)*rate;
+ var wtime=wcur==='CHF'?g.t.wH:wcur==='EUR'?g.t.wM:(wcur==='USD'&&a>=2500)?g.t.wU:g.t.wS;
+ var wo=pl==='XX'?null:wireOut(wcur,a,rate);
+ var rWise=R({id:'wise',today:true,tier:1,lo:wthb,hi:wthb,time:wtime,
+   rc:rcv(pl==='CH'?'noSwiss':'noThai','no'),srcs:[3,10],
+   lines:[ln('wF',M(cur,wf),10,false,{a:M(cur,a)}),ln('wN',M(cur,a-wf)),ln('wT',M('THB',wthb),10,false,{r:GD.R[cur].toFixed(2),c:cur}),ln('wL','',10),ln('total',M('THB',wthb),0,true)]});
+ if(wo){
+  R({id:'wire',today:true,tier:1,lo:wo.lo,hi:wo.hi,time:g.t.bankT,
+   rc:rcv(pl==='CH'?'noSwiss':'noThai','no'),srcs:[3,10,11,25],
+   lines:[wo.br.nl===wo.br.nh?ln('wB1',M(cur,wo.br.lo),10,false,{a:wo.br.nl}):ln('wB',M(cur,wo.br.lo)+' – '+num(wo.br.hi),10),wo.br.nl===wo.br.nh?null:ln('wBn','',0,false,{a:wo.br.nl,b:wo.br.nh}),
+          ln('wR',rg('THB',wo.rl,wo.rh)),ln('wK','−'+(Math.abs(wo.kl-wo.kh)<0.5?M('THB',wo.kh):M('THB',wo.kl)+' to −'+M('THB',wo.kh)),11),ln('total',rg('THB',wo.lo,wo.hi),0,true)].filter(Boolean)});
+ }else{
+  R({id:'wire',today:true,tier:2,unk:'bank',lo:null,hi:thb-200,time:g.t.bankT,
+   rc:rcv('noThai','no'),srcs:[3,11],
+   lines:[ln('wBX',''),ln('wK','−THB 200 to −THB 500',11),ln('totalUp','< '+M('THB',thb-200),0,true)]});
+ }
+ if(pl==='CH'||pl==='EU'||pl==='UK'){
+  if(pl==='CH'){
+   var mv=moveOut(a);
+   R({id:'swiss',today:true,tier:1,lo:thb,hi:thb,native:{c:'CHF',x:a},time:g.t.bankT,
+    rc:rcv('swissCH','yes'),srcs:[3,6,17,18],
+    lines:[ln('swNo',''),ln('swF',g.bank),ln('swIn',M('CHF',a),0,true),ln('swMw',M('THB',mv.wl)+' – '+M('THB',mv.wh),10),ln('swMi',M('THB',mv.wise),10)]});
+  }else{
+   R({id:'swiss',today:true,tier:2,unk:'conv',lo:null,hi:thb,time:g.t.bankT,
+    rc:rcv('swissEU','maybe'),srcs:[3,6],
+    lines:[ln('swEU',''),ln('swF2',g.bank)]});
+  }
+ }
+ if(pl==='US'){
+  var mf=a*0.05, card=a*0.022+0.30;
+  R({id:'every',today:true,ev:true,tier:2,lo:(a-card-(a-card)*0.05)*rate,hi:(a-mf)*rate,time:g.t.ev,
+   rc:rcv('every','yes'),srcs:[7,8,9],
+   lines:[ln('evA','USD 0',8),ln('evM','−'+M('USD',mf),9),ln('evT',M('USD',a-mf),0,true),ln('evC',M('USD',(a-card)*0.95),8),ln('evW','')]});
+ }
+ if(pl==='US'||pl==='XX'){
+  R({id:'globalg',today:false,tier:1,lo:thb*0.85,hi:thb*0.90,time:g.t.bankT,
+   rc:rcv('globalg','ask'),srcs:[24],
+   lines:[ln('ggF','−12% … −7%',24),ln('ggP','−3%',24),ln('total',rg('THB',thb*0.85,thb*0.90),0,true)]});
+ }
+ /* PayPal and card pages */
+ var pf=a*0.044+(GD.PPF[wcur]||0.30);
+ R({id:'paypal',today:false,tier:2,unk:'conv',lo:null,hi:(a-pf)*rate,time:g.t.bankT,
+   rc:rcv('paypal','no'),srcs:[23],
+   lines:[ln('ppF',M(cur,pf),23,false,{f:M(cur,GD.PPF[wcur]||0.30)}),ln('ppC','',23),ln('totalUp','< '+M('THB',(a-pf)*rate),0,true)]});
+ var cf=thb*0.0365,cv=cf*0.07;
+ R({id:'card',today:false,tier:2,unk:'conv',lo:null,hi:thb-cf-cv,time:g.t.bankT,
+   rc:rcv('card','no'),srcs:[21],
+   lines:[ln('opnC2',M('THB',cf+cv),21),ln('opnPay','',21),ln('opnR','',21),ln('totalUp','< '+M('THB',thb-cf-cv),0,true)]});
+ /* routes with no public fee */
+ if(pl==='CH'){
+  R({id:'twint',today:false,tier:3,lo:null,hi:null,time:g.t.tw,rc:rcv('twint','maybe'),srcs:[20],lines:[ln('twF','',20),ln('twP','',20)]});
+  R({id:'umbrella',today:false,tier:3,lo:null,hi:null,time:g.t.bankT,rc:rcv('umbrella','maybe'),srcs:[19],lines:[ln('umF','',19)]});
+ }
+ if(pl==='UK') R({id:'prism',today:false,tier:3,lo:null,hi:null,time:g.t.bankT,rc:rcv('prism','maybe'),srcs:[27],lines:[ln('prF','',27)]});
+ if(pl==='XX') R({id:'myriad',today:false,tier:3,lo:null,hi:null,time:g.t.bankT,rc:rcv('myriad','maybe'),srcs:[30],lines:[ln('myF','',30)]});
+ return out;
+}
+function mid(r){return r.lo==null?r.hi:r.hi==null?r.lo:(r.lo+r.hi)/2;}
+function moveOut(chf){ /* Swiss account to Kasikorn */
+ var rate=GD.R.CHF, wf=interp(GD.W.CHF,chf), wise=(chf-wf)*rate, wo=wireOut('CHF',chf,rate);
+ return {wf:wf,wise:wise,wl:wo.lo,wh:wo.hi,wo:wo};
+}
+function rank(list){
+ return list.map(function(r,i){r.i=i;return r;}).sort(function(x,y){
+  if(x.tier!==y.tier) return x.tier-y.tier;
+  if(x.tier===3) return x.i-y.i;
+  var d=mid(y)-mid(x); if(Math.abs(d)>0.5) return d;
+  return (y.today?1:0)-(x.today?1:0)||x.i-y.i;
+ });
+}
+
+/* ----- donor toy ----- */
+function reachTxt(r){
+ var g=gdT();
+ if(r.tier===3) return {big:'—',small:g.noFee};
+ if(r.lo==null) return {big:g.upto.replace('{x}',M('THB',r.hi)),small:''};
+ if(Math.abs(r.hi-r.lo)<1) return {big:M('THB',r.hi),small:''};
+ return {big:g.range.replace('{a}',M('THB',r.lo)).replace('{b}',num(r.hi)),small:''};
+}
+function renderDesk(){
+ var g=gdT(),pl=G.pl,cur=GD.CUR[pl],a=G.amt[pl];
+ /* places */
+ var pe=$('gd-places'); pe.innerHTML='';
+ Object.keys(g.places).forEach(function(k){var b=el('button','',g.places[k]); b.type='button'; b.setAttribute('aria-pressed',k===pl); b.addEventListener('click',function(){G.pl=k; G.open={}; renderDesk();}); pe.appendChild(b);});
+ $('gd-cur').textContent=cur;
+ var inp=$('gd-in'); if(document.activeElement!==inp) inp.value=a;
+ /* chips */
+ var ce=$('gd-chips'); ce.innerHTML='';
+ GD.PRE[pl].forEach(function(v){var b=el('button','',num(v)); b.type='button'; b.setAttribute('aria-pressed',v===a); b.addEventListener('click',function(){G.amt[pl]=v; renderDesk();}); ce.appendChild(b);});
+ var yrv=pl==='TH'?12000:Math.round(12000/GD.R[cur]/5)*5;
+ var yb=el('button','yr',g.yr.replace('{x}',M(cur,yrv))); yb.type='button'; yb.setAttribute('aria-pressed',yrv===a); yb.addEventListener('click',function(){G.amt[pl]=yrv; renderDesk();}); ce.appendChild(yb);
+ /* conversion line */
+ $('gd-eq').innerHTML= pl==='TH'?'':'= '+M('THB',a*GD.R[cur])+' · '+g.rateTxt.replace('{a}',M(cur,a)).replace('{r}',GD.R[cur].toFixed(2)).replace('{c}',cur)+sp(10);
+ /* routes */
+ var list=rank(build(pl,a)), all=list;
+ if(G.need) list=list.filter(function(r){return r.rc.s==='yes'||r.rc.s==='maybe';});
+ var best=list.filter(function(r){return r.tier<3;})[0]||null;
+ var sum=$('gd-sum');
+ var bs='<b>'+esc(g.sum.replace('{a}',M(cur,a)).replace('{p}',g.places[pl]))+'</b>';
+ if(best){
+  var bn=g.r[best.id].t, sec=g.bestIs.replace('{r}',bn)+' ';
+  if(best.lo==null) sec+=g.reachUp.replace('{x}',M('THB',best.hi));
+  else if(Math.abs(best.hi-best.lo)<1) sec+=g.reachAbout.replace('{x}',M('THB',best.hi));
+  else sec+=g.reachAbout.replace('{x}',g.range.replace('{a}',M('THB',best.lo)).replace('{b}',num(best.hi)));
+  var fr=null; if(!G.need&&best.rc.s!=='yes') fr=list.filter(function(r){return r.rc.s==='yes'&&r.tier<3;})[0]||null;
+  if(fr){ sec+=' '+g.forRcpt.replace('{r}',g.r[fr.id].t).replace('{x}',fr.lo==null?M('THB',fr.hi):Math.abs(fr.hi-fr.lo)<1?M('THB',fr.hi):g.range.replace('{a}',M('THB',fr.lo)).replace('{b}',num(fr.hi))); }
+  bs+='<span>'+esc(sec)+(G.need?' '+esc(g.rcptOnly):'')+'</span>';
+ }else bs+='<span>'+esc(g.none)+'</span>';
+ sum.innerHTML=bs;
+ var cards=$('gd-cards'); cards.innerHTML='';
+ list.forEach(function(r){ cards.appendChild(card(r,g,cur,r===best)); });
+ if(!list.length){ var d=el('p','gd-none',g.none); cards.appendChild(d); }
+ $('gd-note').innerHTML=esc(g.note+(pl==='XX'?g.noteXX:''))+sp(10);
+}
+function card(r,g,cur,isBest){
+ var info=g.r[r.id], rt=reachTxt(r), open=(G.open[r.id]!==undefined)?G.open[r.id]:isBest;
+ var a=el('article','rc'+(r.today?'':' add')+(isBest?' best':'')+(open?' open':''));
+ var tags='<span class="tags">';
+ if(isBest) tags+='<span class="tag best">'+esc(g.best)+'</span>';
+ tags+='<span class="tag'+(r.today?'':' add')+'">'+esc(r.today?g.today:g.add)+'</span>';
+ if(r.ev) tags+='<span class="tag add">'+esc(g.todayEv)+'</span>';
+ tags+='</span>';
+ var small=rt.small;
+ if(r.native) small=g.stay.replace('{x}',M(r.native.c,r.native.x));
+ else if(r.tier===2) small=r.lo==null?g.before.replace('{w}',g.u[r.unk||'bank']):small;
+ var rcs=r.rc.s, rcx=r.rc.x;
+ var b=el('button','rc-b'); b.type='button'; b.setAttribute('aria-expanded',open);
+ b.innerHTML=tags+'<h3>'+esc(info.t)+'</h3><div class="n"><b>'+esc(rt.big)+'</b><small>'+esc(small||g.reach)+'</small></div>'+
+  '<div class="meta"><span><b>'+esc(g.time)+':</b> '+esc(r.time)+'</span><span><b>'+esc(g.rcpt)+':</b> <span class="chip2 '+rcs+'">'+esc(g.rc[rcs])+'</span></span></div><span class="hint">'+esc(g.how)+'</span>';
+ b.addEventListener('click',function(){ var o=!a.classList.contains('open'); G.open[r.id]=o; a.classList.toggle('open',o); b.setAttribute('aria-expanded',o); });
+ a.appendChild(b);
+ var m=el('div','more');
+ var h='<ol>'+info.s.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol>';
+ h+='<dl class="ar">'+r.lines.map(function(l){return '<div class="l'+(l.t?' t':'')+'"><dt>'+esc(l.k)+(l.s?sp(l.s):'')+'</dt><dd>'+esc(l.v||'')+'</dd></div>';}).join('')+'</dl>';
+ h+='<p class="hint" style="margin-top:10px"><span class="chip2 '+rcs+'">'+esc(g.rc[rcs])+'</span>'+esc(rcx)+r.srcs.map(sp).join('')+'</p>';
+ m.innerHTML=h; a.appendChild(m);
+ return a;
+}
+
+/* ----- the two systems ----- */
+function renderTwo(){
+ var g=T[lang].two;
+ function tiles(a){return a.map(function(x){return '<li><b>'+esc(x[0])+'</b><span>'+srcs(esc(x[1]))+'</span></li>';}).join('');}
+ $('two-th').innerHTML=tiles(g.th); $('two-ch').innerHTML=tiles(g.ch);
+}
+
+/* ----- back office ----- */
+var LED0=[
+ {d:'2026-09-02',n:1,r:'th',cur:'THB',a:12000,st:'ok'},
+ {d:'2026-09-04',n:2,r:'th',cur:'THB',a:2000,st:'ok'},
+ {d:'2026-09-07',n:3,r:'wise',cur:'CHF',a:300,st:'ok'},
+ {d:'2026-09-09',n:4,r:'sw',cur:'CHF',a:500,st:'ok'},
+ {d:'2026-09-12',n:5,r:'th',cur:'THB',a:36000,st:'ok'},
+ {d:'2026-09-15',n:6,r:'wire',cur:'EUR',a:1000,st:'name'},
+ {d:'2026-09-18',n:7,r:'th',cur:'THB',a:1000,st:'ok'},
+ {d:'2026-09-21',n:8,r:'ev',cur:'USD',a:5000,st:'ok'},
+ {d:'2026-09-26',n:9,r:'wise',cur:'GBP',a:100,st:'ok'},
+ {d:'2026-09-28',n:10,r:'th',cur:'THB',a:5000,st:'held'}
+];
+function ledRows(){return LED0.concat(G.extra);}
+function thbOf(r){
+ var rate=GD.R[r.cur];
+ if(r.r==='th') return r.a;
+ if(r.r==='wise') return (r.a-interp(GD.W[r.cur],r.a))*rate;
+ if(r.r==='sw') return r.a*rate;
+ if(r.r==='wire'){var got=(r.a-interp(GD.B[r.cur]['Deutsche Bank'],r.a))*rate; return got-kin(got);}
+ if(r.r==='ev'){var gr=r.a*rate; return gr-kin(gr);}
+ return 0;
+}
+function dfmt(d){var p=d.split('-'), m=lang==='th'?['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return (+p[2])+' '+m[+p[1]-1];}
+function edState(r){var b=T[lang].bo;
+ if(!G.ed) return b.edT.off;
+ if(r.r==='th') return b.edT.qr;
+ return b.edT.na;
+}
+function renderBO(){
+ var b=T[lang].bo;
+ $('bo-lede').innerHTML=srcs(esc(b.lede));
+ $('inbox').innerHTML=b.inbox.map(function(x){return '<li><span>'+esc(x[0])+'<br><small>'+esc(x[1])+'</small></span><em>'+esc(b.hand)+'</em></li>';}).join('');
+ $('flow').innerHTML=b.flow.map(function(s,i){return '<li data-s="'+i+'">'+esc(s)+'</li>';}).join('');
+ renderSlip(false);
+ $('slipnote').innerHTML=srcs(esc(b.readBy));
+ $('zr').innerHTML=srcs(esc(b.zr));
+ renderLedger();
+}
+function renderLedger(){
+ var b=T[lang].bo;
+ var fl=$('fl'); fl.innerHTML='';
+ ['all','th','wise','sw','wire','ev'].forEach(function(k){var x=el('button','',b.routes[k]); x.type='button'; x.setAttribute('aria-pressed',G.f===k); x.addEventListener('click',function(){G.f=k;G.opened=null;renderLedger();}); fl.appendChild(x);});
+ var rows=ledRows(), thb=0, nchk=0, nheld=0, edn=0;
+ rows.forEach(function(r){var v=thbOf(r); r.v=v; if(r.st!=='held') thb+=v; if(r.st==='name') nchk++; if(r.st==='held') nheld++; if(r.r==='th'&&r.st==='ok') edn++;});
+ $('tot').innerHTML='<div><b>'+num(thb)+'</b><span>'+esc(b.tot.thb)+'</span></div><div><b>'+num(thb/GD.R.CHF)+'</b><span>'+esc(b.tot.chf)+'</span></div><div><b>'+(nchk+nheld)+'</b><span>'+esc(b.tot.chk)+'</span></div>';
+ var host=$('rows'); host.innerHTML='';
+ rows.filter(function(r){return G.f==='all'||r.r===G.f;}).forEach(function(r){
+  var row=el('div','row'+(r.isNew?' new':'')+(G.opened===r.n?' open':''));
+  var donor='Sample donor '+(r.dn||r.n);
+  var h=el('button','rh'); h.type='button'; h.setAttribute('aria-expanded',G.opened===r.n);
+  h.innerHTML='<span class="a"><span>'+esc(dfmt(r.d))+'</span><span>'+esc(donor)+'</span><span>'+esc(b.routes[r.r])+'</span></span><span class="b">THB '+num(r.v)+'</span><span class="p">'+esc(M(r.cur,r.a))+'</span><span class="c '+r.st+'">'+esc(b.st[r.st])+'</span>';
+  h.addEventListener('click',function(){G.opened=(G.opened===r.n?null:r.n); renderLedger();});
+  row.appendChild(h);
+  var d=el('div','dt'); var D=b.dt;
+  d.innerHTML='<dl><dt>'+D.date+'</dt><dd>'+esc(dfmt(r.d))+(lang==='th'?' 2569':' 2026')+'</dd><dt>'+D.donor+'</dt><dd>'+esc(donor)+'</dd><dt>'+D.route+'</dt><dd>'+esc(b.routes[r.r])+'</dd><dt>'+D.paid+'</dt><dd>'+esc(M(r.cur,r.a))+'</dd><dt>'+D.thb+'</dt><dd>'+esc(M('THB',r.v))+'</dd><dt>'+D.chf+'</dt><dd>'+esc(M('CHF',r.v/GD.R.CHF))+'</dd><dt>'+D.by+'</dt><dd>'+esc(b.by[r.r])+'</dd><dt>'+D.st+'</dt><dd>'+esc(b.stT[r.st])+'</dd><dt>'+D.ed+'</dt><dd>'+esc(edState(r))+'</dd></dl>';
+  row.appendChild(d); host.appendChild(row);
+  r.isNew=false;
+ });
+ $('edn').textContent=G.ed?b.ed.replace('{n}',edn):'';
+ renderStm(rows,nchk,nheld); renderMove();
+}
+function stmData(rows){
+ var rs=['th','wise','sw','wire','ev'], out=[], tot=0, cnt=0;
+ rs.forEach(function(k){var n=0,s=0; rows.forEach(function(r){ if(r.r===k&&r.st!=='held'){n++; s+=r.v;} }); out.push({k:k,n:n,s:s}); tot+=s; cnt+=n;});
+ return {rows:out,tot:tot,cnt:cnt};
+}
+function renderStm(rows,nchk,nheld){
+ var b=T[lang].bo, cur=G.stm, div=cur==='CHF'?GD.R.CHF:1, d=stmData(rows);
+ var bb=$('stmb'); bb.innerHTML='';
+ ['THB','CHF'].forEach(function(k){var x=el('button','',b.boards[k]); x.type='button'; x.setAttribute('aria-pressed',G.stm===k); x.addEventListener('click',function(){G.stm=k; renderBO();}); bb.appendChild(x);});
+ $('stmh').textContent=b.stmH;
+ var h='<thead><tr><th>'+esc(b.stmCol[0])+'</th><th>'+esc(b.stmCol[1])+'</th><th>'+cur+'</th></tr></thead><tbody>';
+ d.rows.forEach(function(r){h+='<tr><td>'+esc(b.routes[r.k])+'</td><td>'+r.n+'</td><td>'+num(r.s/div)+'</td></tr>';});
+ h+='</tbody><tfoot><tr><td>'+esc(b.stmTot)+'</td><td>'+d.cnt+'</td><td>'+num(d.tot/div)+'</td></tr></tfoot>';
+ $('stmt').innerHTML=h;
+ $('stmfx').textContent=b.stmChk.replace('{a}',nchk).replace('{b}',nheld)+(cur==='CHF'?' · '+b.stmFx.replace('{r}',GD.R.CHF.toFixed(2)):'');
+ $('stmcopy').textContent=b.copy;
+ G.stmText=b.stmH+' · '+cur+'\n'+d.rows.map(function(r){return b.routes[r.k]+': '+r.n+' · '+cur+' '+num(r.s/div);}).join('\n')+'\n'+b.stmTot+': '+d.cnt+' · '+cur+' '+num(d.tot/div);
+}
+function renderMove(){
+ var b=T[lang].bo, x=G.mv, m=moveOut(x);
+ $('mvl').textContent=b.mvL.replace('{x}',num(x));
+ $('mvr').value=x;
+ function row(t,k,v){return '<div class="l'+(t?' t':'')+'"><dt>'+k+'</dt><dd>'+v+'</dd></div>';}
+ $('mvo').innerHTML=row(0,esc(b.mvW)+sp(10),'CHF '+m.wf.toFixed(2))+row(1,esc(b.mvWr),'THB '+num(m.wise))+
+  row(0,esc(b.mvB)+sp(10),'CHF '+num(m.wo.br.lo)+' – '+num(m.wo.br.hi))+row(0,esc(b.mvK)+sp(11),'THB '+num(m.wo.kl)+' – '+num(m.wo.kh))+row(1,esc(b.mvBr),'THB '+num(m.wl)+' – '+num(m.wh));
+ $('mvn').textContent=b.mvN;
+}
+/* slip reader */
+var SL=[
+ {k:'ok',a:3000,exp:3000,n:11,ref:'7305'},
+ {k:'used',a:3000,exp:3000,n:11,ref:'7305'},
+ {k:'amount',a:1200,exp:12000,n:12,ref:'7388'}
+];
+function renderSlip(run){
+ var b=T[lang].bo, s=SL[G.slip%SL.length];
+ $('slip').innerHTML='<span class="hd">'+esc(b.slipH)+'</span><span>'+b.sAmt+'</span><b>THB '+num(s.a)+'</b><span>'+b.sFrom+'</span><b>Sample donor '+s.n+'</b><span>'+b.sTo+'</span><b>'+b.toFERC+'</b><span>'+b.sRef+'</span><b>····'+s.ref+'</b><span>'+b.sTime+'</span><b>29 Sep 2026 10:'+(10+(G.slip%3)*7)+'</b>';
+ $('chk').innerHTML=b.chk.map(function(c,i){return '<li data-c="'+i+'"><i>·</i><span>'+esc(c)+'</span></li>';}).join('');
+ $('res').textContent=''; $('res').className='res';
+ document.querySelectorAll('#flow li').forEach(function(li){li.classList.remove('on');});
+}
+function runSlip(){
+ var b=T[lang].bo, s=SL[G.slip%SL.length];
+ renderSlip(false);
+ var flow=document.querySelectorAll('#flow li'), chk=document.querySelectorAll('#chk li');
+ var fails={ok:-1,used:2,amount:0};  /* which check fails */
+ var bad=fails[s.k], step=RM?0:170, t0=0;
+ function at(ms,fn){ if(RM) fn(); else setTimeout(fn,ms); }
+ at(t0,function(){flow[0].classList.add('on');});
+ at(t0+step,function(){flow[1].classList.add('on');});
+ for(var i=0;i<4;i++){ (function(i){ at(t0+step*(2+i*0.5),function(){ var li=chk[i]; li.classList.add('on'); var ok=(bad!==i); li.classList.add(ok?'ok':'bad'); li.firstChild.textContent=ok?'✓':'✕'; }); })(i); }
+ at(t0+step*4.5,function(){
+  flow[2].classList.add('on');
+  var res=$('res');
+  if(s.k==='ok'){
+   flow[3].classList.add('on'); flow[4].classList.add('on');
+   G.extra.push({d:'2026-09-29',n:100+G.extra.length,dn:s.n,r:'th',cur:'THB',a:s.a,st:'ok',isNew:true});
+   res.textContent=b.res.ok; res.className='res ok';
+  }else{
+   G.extra.push({d:'2026-09-29',n:100+G.extra.length,dn:s.n,r:'th',cur:'THB',a:s.a,st:'held',isNew:true});
+   res.textContent=b.res[s.k]; res.className='res bad';
+  }
+  G.opened=null; G.f='all'; G.slip++;
+  renderLedger();
+ });
+}
+
+/* ----- options ----- */
+function renderOpts(){
+ var o=T[lang].op, ol=$('ol'); ol.innerHTML='';
+ o.forEach(function(x,i){
+  var li=el('li'); var lb=el('label','opt'); var cb=document.createElement('input'); cb.type='checkbox'; cb.checked=!!G.picks[i];
+  cb.addEventListener('change',function(){G.picks[i]=cb.checked; mailOpts();});
+  var d=el('div'); d.innerHTML='<b>'+esc(x[0])+'</b><span>'+srcs(esc(x[1]))+'</span>';
+  lb.appendChild(cb); lb.appendChild(d); li.appendChild(lb); ol.appendChild(li);
+ });
+ mailOpts();
+}
+function mailOpts(){
+ var m=T[lang].opMail, o=T[lang].op, list=[];
+ o.forEach(function(x,i){ if(G.picks[i]) list.push('- '+x[0]); });
+ var body=m.body+(list.length?list.join('\n'):'-')+'\n\nFERC Thailand\n';
+ $('opmail').setAttribute('href','mailto:nan@motdang.net?subject='+encodeURIComponent(m.sub)+'&body='+encodeURIComponent(body));
+}
+
+function deskInit(){
+ $('gd-in').addEventListener('input',function(){ var v=parseFloat(this.value); if(v>0){G.amt[G.pl]=v; renderDeskSoft();} });
+ $('gd-need').addEventListener('change',function(){G.need=this.checked; renderDesk();});
+ $('runslip').addEventListener('click',runSlip);
+ $('edon').addEventListener('change',function(){G.ed=this.checked; renderBO();});
+ $('mvr').addEventListener('input',function(){G.mv=+this.value; renderMove();});
+ $('stmcopy').addEventListener('click',function(){
+  var btn=this, txt=G.stmText||'', done=function(){var o=btn.textContent; btn.textContent=T[lang].bo.copied; setTimeout(function(){btn.textContent=T[lang].bo.copy;},1400);};
+  try{ navigator.clipboard.writeText(txt).then(done,function(){}); }catch(e){
+   try{ var ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done(); }catch(e2){}
+  }
+ });
+}
+function renderDeskSoft(){ /* typing: redraw results, keep the focus in the box */
+ var f=document.activeElement===$('gd-in'); var v=$('gd-in').value; renderDesk(); if(f){ $('gd-in').value=v; }
+}
+function renderAllDesk(){ renderDesk(); renderTwo(); renderBO(); renderOpts(); }
+
 /* ---------- boot ---------- */
 document.addEventListener('DOMContentLoaded',function(){
   silBuild(); buildChart();
@@ -853,6 +1776,7 @@ document.addEventListener('DOMContentLoaded',function(){
     d.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); d.classList.toggle('wk'); tickAll(); } });
     d.querySelector('.ics').addEventListener('click',function(e){ this.href=icsFor(d,d.querySelector('h3').textContent+' '+d.querySelector('p').textContent); this.download='ferc-'+d.getAttribute('data-d')+'.ics'; });
   });
+  deskInit();
   applyLang();
   var s0=BYK[Math.floor(BYK.length/2)]; sel=s0.i; markRadar(false); renderRead(false);
   counters();
