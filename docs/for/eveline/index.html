@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>34 schools, one province</title>
+<meta name="description" content="Chiang Mai province's upper-secondary schools on a map, for Eveline Willi and FERC.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="34 schools, one province">
+<meta property="og:description" content="Chiang Mai province's upper-secondary schools on a map. FERC sponsors one student in each of 34.">
+<meta property="og:url" content="https://hongdam.net/for/eveline/">
+<meta property="og:image" content="https://hongdam.net/for/eveline/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+:root{
+  --bg:#faf7f2; --surface:#ffffff; --ink:#1d1a17; --muted:#5e574f; --line:#e3dcd0;
+  --accent:#b3261e; --accent-ink:#ffffff; --gold:#f2b705; --gold-ink:#000000;
+  --pin:#b3261e; --pin-ring:#ffffff; --sel:#f2b705; --boundary:#1d1a17;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 6px 20px rgba(0,0,0,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#16130f; --surface:#1f1b16; --ink:#f4efe7; --muted:#b4aa9c; --line:#352f27;
+    --accent:#ff7a6e; --accent-ink:#000000; --pin:#ff7a6e; --pin-ring:#16130f; --boundary:#f4efe7;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Iowan Old Style","Times New Roman","Noto Serif Thai",serif;overflow-x:hidden}
+[lang=th] body, body.th{font-family:"Noto Serif Thai","Sarabun",Georgia,serif;line-height:1.7}
+body.th h1{line-height:1.25}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:14px 0 0;font:600 13px/1 system-ui,-apple-system,"Sarabun",sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.lang button{font:600 14px/1 system-ui,"Sarabun",sans-serif;border:0;background:transparent;color:var(--muted);padding:10px 14px;min-height:40px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+h1{font-size:clamp(40px,11vw,76px);line-height:1.02;margin:28px 0 14px;letter-spacing:-.02em;font-weight:700}
+.lead{font-size:20px;color:var(--ink);margin:0 0 6px;max-width:34em}
+.for{color:var(--muted);margin:0 0 22px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:22px 0 8px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center;cursor:pointer;font:inherit;color:inherit;box-shadow:var(--shadow)}
+.stat b{display:block;font:700 34px/1.1 Georgia,serif;font-variant-numeric:tabular-nums}
+.stat span{display:block;font:500 13px/1.3 system-ui,"Sarabun",sans-serif;color:var(--muted);margin-top:4px}
+.stat .w{font:700 22px/1.5 Georgia,"Noto Serif Thai",serif}
+.src{font:13px/1.45 system-ui,-apple-system,"Sarabun",sans-serif;color:var(--muted);margin:6px 0}
+.src a{color:var(--muted)}
+section{margin:38px 0}
+h2{font-size:26px;line-height:1.2;margin:0 0 10px;letter-spacing:-.01em}
+.mapbox{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);margin:0 -16px}
+@media(min-width:792px){.mapbox{margin:0}}
+#map{height:min(50vh,440px);min-height:320px;background:#e9e4da}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #map canvas{filter:brightness(.85) contrast(1.05)}}
+.nomap{display:none;padding:18px;color:var(--muted);font:15px/1.5 system-ui,sans-serif}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 16px;margin-top:12px;box-shadow:var(--shadow);min-height:150px}
+.card .k{font:600 12px/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.card h3{margin:0 0 2px;font-size:22px;line-height:1.3}
+.card .sub{color:var(--muted);margin:0 0 10px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0 0 12px;font:15px/1.45 system-ui,"Sarabun",sans-serif}
+.card dt{color:var(--muted)}.card dd{margin:0}
+.card .one{margin:0 0 14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:999px;background:var(--gold);color:var(--gold-ink);font:700 16px/1.2 system-ui,"Sarabun",sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn:focus-visible,.lang button:focus-visible,.stat:focus-visible,.row:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.note{font:14px/1.5 system-ui,"Sarabun",sans-serif;color:var(--muted);margin:10px 0 0}
+.filter{display:flex;gap:8px;margin:14px 0 8px}
+.filter select{flex:1;min-height:44px;font:16px system-ui,"Sarabun",sans-serif;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);padding:0 10px}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.row{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:12px 2px;color:inherit;font:inherit;cursor:pointer;min-height:48px}
+.row small{display:block;font:13px/1.4 system-ui,"Sarabun",sans-serif;color:var(--muted)}
+.row[aria-current=true]{background:color-mix(in srgb,var(--gold) 22%,transparent)}
+.clock{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+@media(min-width:620px){.clock{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ev{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+.ev h3{margin:0 0 2px;font-size:18px;line-height:1.3}
+.ev .d{font:14px/1.4 system-ui,"Sarabun",sans-serif;color:var(--muted);margin-bottom:10px}
+.t{display:flex;flex-wrap:wrap;gap:10px;font-variant-numeric:tabular-nums}
+.t div{text-align:center;min-width:44px}
+.t b{display:block;font:700 30px/1.1 Georgia,serif}
+.t span{font:12px/1.2 system-ui,"Sarabun",sans-serif;color:var(--muted)}
+.routes{margin:8px 0 14px;padding-left:20px}
+.routes li{margin:4px 0}
+.slot{border:1.5px dashed var(--line);border-radius:16px;min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font:13px system-ui,sans-serif;margin:0}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;font:14px/1.6 system-ui,-apple-system,"Sarabun",sans-serif;color:var(--muted)}
+footer a{color:var(--muted)}
+.maplibregl-popup-content{font-family:system-ui,sans-serif}
+.maplibregl-ctrl-attrib{font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar"><span id="for-bar" data-i="forbar"></span>
+    <span class="lang" role="group" aria-label="Language"><button id="b-th" type="button" aria-pressed="false">ไทย</button><button id="b-en" type="button" aria-pressed="true">EN</button></span>
+  </div>
+
+  <header>
+    <h1 data-i="h1"></h1>
+    <p class="lead" data-i="lead"></p>
+    <p class="for" data-i="for"></p>
+    <!-- MARCUS: a wide photograph of upper-secondary students in northern Thai school uniform, or a hand-drawn Chiang Mai province outline poster; 16:9 slot below -->
+    <div class="stats" aria-label="FERC in numbers">
+      <button class="stat" type="button" data-c="34"><b>0</b><span data-i="st1"></span></button>
+      <button class="stat" type="button" data-c="100" data-p="~"><b>0</b><span data-i="st2"></span></button>
+      <button class="stat" type="button" data-c="w"><b class="w" data-i="st3a"></b><span data-i="st3"></span></button>
+    </div>
+    <p class="src"><span data-i="srcLabel"></span> <a href="https://chiangmaicitylife.com/clg/living/keeping-rural-kids-in-school-the-woman-behind-ferc-2-0/" target="_blank" rel="noopener">Chiang Mai Citylife, 3 Sep 2026</a></p>
+  </header>
+
+  <section aria-labelledby="mh">
+    <h2 id="mh" data-i="mapH"></h2>
+    <p data-i="mapP" style="margin:0 0 12px"></p>
+    <div class="mapbox"><div id="map" role="application" aria-label="Map"></div><div class="nomap" id="nomap" data-i="nomap"></div></div>
+    <div class="card" id="card" aria-live="polite"></div>
+    <p class="note" data-i="mapNote"></p>
+    <div class="filter">
+      <select id="dist" aria-label="District"></select>
+    </div>
+    <ul class="list" id="list"></ul>
+    <p class="src" style="margin-top:12px"><span data-i="srcLabel"></span> <a href="https://gdcatalog.go.th/dataset/gdpublish-obec-school-007" target="_blank" rel="noopener" data-i="srcObec"></a> · <span data-i="srcBase"></span> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>. <span data-i="srcEn"></span></p>
+  </section>
+
+  <section aria-labelledby="ch">
+    <h2 id="ch" data-i="cdH"></h2>
+    <div class="clock">
+      <div class="ev"><h3 data-i="ev1"></h3><div class="d" data-i="ev1d"></div>
+        <div class="t" data-cd="2026-11-28T00:00:00+07:00"><div><b>0</b><span data-i="u_d"></span></div><div><b>0</b><span data-i="u_h"></span></div><div><b>0</b><span data-i="u_m"></span></div><div><b>0</b><span data-i="u_s"></span></div></div></div>
+      <div class="ev"><h3 data-i="ev2"></h3><div class="d" data-i="ev2d"></div>
+        <div class="t" data-cd="2026-11-29T00:00:00+07:00"><div><b>0</b><span data-i="u_d"></span></div><div><b>0</b><span data-i="u_h"></span></div><div><b>0</b><span data-i="u_m"></span></div><div><b>0</b><span data-i="u_s"></span></div></div></div>
+    </div>
+    <p class="src"><span data-i="srcLabel"></span> <a href="https://chiangmaicitylife.com/clg/living/keeping-rural-kids-in-school-the-woman-behind-ferc-2-0/" target="_blank" rel="noopener">Chiang Mai Citylife, 3 Sep 2026</a>. <span data-i="cdNote"></span></p>
+    <p data-i="md"></p>
+    <p><a class="btn" href="https://motdang.net" target="_blank" rel="noopener">motdang.net</a></p>
+  </section>
+
+  <section aria-labelledby="gh">
+    <h2 id="gh" data-i="giveH"></h2>
+    <p data-i="giveP"></p>
+    <ul class="routes" id="routes"></ul>
+    <p data-i="giveProof"></p>
+    <p><a class="btn" href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener" data-i="giveBtn"></a></p>
+    <p class="src"><span data-i="srcLabel"></span> <a href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener">fercthailand.org/how-to-donate</a></p>
+  </section>
+
+  <section aria-labelledby="lh">
+    <h2 id="lh" data-i="lunchH"></h2>
+    <p data-i="lunchP"></p>
+    <p><a class="btn" id="lunch" href="#" data-i="lunchBtn"></a></p>
+  </section>
+
+  <footer>
+    <div data-i="foot"></div>
+    <div><a href="https://motdang.net">motdang.net</a> · <a href="https://hongdam.net">hongdam.net</a></div>
+  </footer>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+var DATA = {"boundary":[[[98.5328,17.619],[98.5219,17.6808],[98.5254,17.7069],[98.5035,17.7606],[98.5099,17.788],[98.4928,17.8029],[98.4954,17.816],[98.5087,17.8125],[98.522,17.8244],[98.5605,17.7954],[98.5715,17.8089],[98.5815,17.8012],[98.5963,17.8037],[98.6137,17.7804],[98.6238,17.7771],[98.6333,17.7853],[98.6315,17.801],[98.639,17.8148],[98.6691,17.8345],[98.6854,17.791],[98.7127,17.7988],[98.727,17.7936],[98.7428,17.8057],[98.7628,17.8018],[98.7775,17.831],[98.7846,17.8326],[98.7943,17.8238],[98.7973,17.8142],[98.7921,17.8125],[98.8018,17.796],[98.8271,17.7992],[98.8571,17.8146],[98.8518,17.822],[98.852,17.846],[98.8597,17.8557],[98.8704,17.8492],[98.8407,17.9638],[98.83,17.9755],[98.8328,17.9883],[98.8075,18.0086],[98.7868,17.9988],[98.7769,18.0006],[98.7791,18.014],[98.7942,18.0301],[98.7968,18.057],[98.8081,18.0646],[98.8065,18.0728],[98.8136,18.0787],[98.797,18.0861],[98.8092,18.1127],[98.8053,18.1556],[98.7931,18.1597],[98.7827,18.1793],[98.7852,18.221],[98.7724,18.2296],[98.7754,18.2497],[98.7364,18.2667],[98.7202,18.286],[98.7022,18.2914],[98.6838,18.3099],[98.6725,18.3101],[98.6719,18.3268],[98.6883,18.3345],[98.7036,18.3322],[98.6815,18.369],[98.6899,18.391],[98.7095,18.4138],[98.6983,18.4104],[98.6933,18.415],[98.7074,18.4407],[98.7166,18.433],[98.7253,18.4453],[98.7428,18.4313],[98.7647,18.4347],[98.7766,18.4491],[98.798,18.4526],[98.805,18.4629],[98.8143,18.4616],[98.8158,18.472],[98.8378,18.4851],[98.846,18.4994],[98.8593,18.5006],[98.8677,18.5153],[98.8794,18.5105],[98.9147,18.5362],[98.9341,18.542],[98.9325,18.5544],[98.9694,18.6026],[98.9654,18.6152],[98.9783,18.6355],[99.0045,18.6431],[99.0099,18.6733],[99.0652,18.6597],[99.0739,18.667],[99.0762,18.6818],[99.127,18.6834],[99.1357,18.7005],[99.1514,18.7081],[99.1899,18.7051],[99.1887,18.6789],[99.2058,18.6678],[99.2063,18.6601],[99.2339,18.6511],[99.2307,18.6241],[99.2353,18.6169],[99.2229,18.607],[99.2175,18.592],[99.2637,18.5716],[99.2963,18.537],[99.3173,18.5322],[99.3284,18.5456],[99.3321,18.576],[99.3535,18.5794],[99.3487,18.594],[99.3583,18.6077],[99.3484,18.6178],[99.3269,18.6195],[99.3325,18.6501],[99.3491,18.6554],[99.3332,18.6686],[99.3271,18.6848],[99.3368,18.6937],[99.334,18.7021],[99.343,18.7075],[99.3482,18.7353],[99.3715,18.7534],[99.3662,18.7694],[99.371,18.7822],[99.359,18.8014],[99.3504,18.8362],[99.3526,18.8475],[99.377,18.8607],[99.3914,18.8843],[99.3776,18.9217],[99.3867,18.9439],[99.375,18.9597],[99.3761,18.9734],[99.3813,18.9897],[99.4018,19.0001],[99.3813,19.0419],[99.3838,19.0631],[99.3655,19.0692],[99.3603,19.0831],[99.3444,19.0864],[99.3211,19.1236],[99.3194,19.1652],[99.3046,19.1825],[99.3036,19.1936],[99.3145,19.2091],[99.3108,19.2241],[99.343,19.2678],[99.3365,19.284],[99.3393,19.2983],[99.3272,19.3193],[99.3341,19.3305],[99.3343,19.3523],[99.332,19.3781],[99.3231,19.3965],[99.3306,19.3984],[99.3081,19.431],[99.3187,19.4548],[99.3054,19.4746],[99.3078,19.4888],[99.2987,19.487],[99.2945,19.4952],[99.3059,19.5266],[99.3262,19.5391],[99.3168,19.5546],[99.297,19.5612],[99.289,19.581],[99.2928,19.5925],[99.2842,19.6036],[99.267,19.6108],[99.2666,19.6253],[99.2586,19.6291],[99.258,19.6496],[99.2655,19.6648],[99.2968,19.6821],[99.3134,19.7076],[99.3468,19.7123],[99.3489,19.7246],[99.3598,19.7263],[99.3662,19.7682],[99.3615,19.7773],[99.377,19.7792],[99.3804,19.8102],[99.4199,19.814],[99.4206,19.8232],[99.408,19.8318],[99.415,19.8453],[99.3876,19.8653],[99.3814,19.8895],[99.403,19.9147],[99.4204,19.9176],[99.4146,19.9315],[99.4186,19.953],[99.4414,19.9632],[99.4655,20.0054],[99.4783,20.0132],[99.4657,20.0259],[99.4675,20.0341],[99.5052,20.0537],[99.4915,20.0655],[99.4912,20.079],[99.5501,20.1039],[99.5592,20.0981],[99.5708,20.1078],[99.57,20.1226],[99.5206,20.1381],[99.5133,20.1475],[99.4946,20.1333],[99.4982,20.1162],[99.4445,20.0983],[99.4382,20.0906],[99.4172,20.0937],[99.4006,20.086],[99.3784,20.0893],[99.365,20.0993],[99.3511,20.0965],[99.3322,20.1112],[99.2782,20.1166],[99.2464,20.1128],[99.2321,20.125],[99.2233,20.1208],[99.2105,20.1325],[99.192,20.1283],[99.1589,20.133],[99.1261,20.1194],[99.1286,20.1073],[99.1193,20.1011],[99.1005,20.0977],[99.0936,20.1072],[99.0908,20.0975],[99.0778,20.102],[99.0673,20.0878],[99.067,20.0684],[99.0568,20.0629],[99.0444,20.0383],[99.0435,20.0171],[99.0544,20.0034],[99.037,19.9902],[99.032,19.9738],[99.0453,19.9492],[99.0426,19.9313],[99.0218,19.9272],[99.0276,19.909],[99.022,19.9074],[99.0277,19.8809],[99.0229,19.8666],[99.034,19.8555],[99.0147,19.7937],[99.0058,19.788],[98.9964,19.7911],[98.9544,19.7694],[98.9291,19.7735],[98.9114,19.7617],[98.8984,19.7658],[98.8391,19.8136],[98.8325,19.8112],[98.8227,19.7882],[98.7959,19.776],[98.7789,19.7528],[98.7512,19.7604],[98.7377,19.7544],[98.7114,19.7688],[98.7037,19.7579],[98.6662,19.7497],[98.6592,19.7355],[98.6535,19.74],[98.6254,19.7284],[98.6262,19.715],[98.6161,19.7173],[98.6081,19.7091],[98.59,19.7158],[98.5717,19.7041],[98.566,19.6721],[98.5381,19.6893],[98.5288,19.7057],[98.5103,19.7175],[98.5062,19.7101],[98.4677,19.6949],[98.4721,19.6563],[98.4814,19.6547],[98.5043,19.6312],[98.5215,19.6262],[98.5266,19.6137],[98.5402,19.6111],[98.5357,19.6018],[98.5423,19.5585],[98.5659,19.5469],[98.5616,19.5307],[98.5682,19.5076],[98.577,19.5118],[98.5952,19.4897],[98.5925,19.4837],[98.6001,19.4701],[98.5913,19.4629],[98.5845,19.4264],[98.5856,19.4152],[98.5963,19.4073],[98.5879,19.3982],[98.5773,19.3987],[98.573,19.3873],[98.5815,19.3662],[98.5965,19.3625],[98.5901,19.3533],[98.594,19.3397],[98.5891,19.3324],[98.6023,19.3103],[98.5943,19.2892],[98.6049,19.2798],[98.5873,19.2554],[98.5989,19.229],[98.568,19.2099],[98.5856,19.1861],[98.6056,19.1809],[98.6075,19.173],[98.6228,19.1681],[98.6229,19.1577],[98.6383,19.1547],[98.6441,19.1052],[98.6522,19.0943],[98.649,19.0811],[98.6388,19.0664],[98.621,19.0679],[98.595,19.0433],[98.5692,19.0462],[98.5419,19.0262],[98.4396,19.0486],[98.4202,19.0272],[98.4008,19.0364],[98.393,19.0553],[98.3727,19.0666],[98.3718,19.0846],[98.3527,19.0912],[98.3429,19.1225],[98.3497,19.1319],[98.3392,19.1431],[98.3418,19.1516],[98.3204,19.1559],[98.2654,19.152],[98.252,19.1609],[98.2431,19.1535],[98.2405,19.1397],[98.2506,19.1083],[98.2382,19.1023],[98.2086,19.0627],[98.2052,19.0488],[98.1844,19.0318],[98.1859,19.0147],[98.1692,18.9988],[98.1636,18.981],[98.1726,18.9513],[98.1664,18.9395],[98.1566,18.937],[98.1573,18.9202],[98.1436,18.9116],[98.1298,18.9118],[98.0921,18.8702],[98.0784,18.8214],[98.0883,18.8044],[98.0861,18.793],[98.0932,18.7766],[98.1076,18.7802],[98.1219,18.7755],[98.1207,18.7591],[98.0937,18.7383],[98.1022,18.7355],[98.1077,18.7133],[98.1002,18.7039],[98.1073,18.6882],[98.1048,18.677],[98.1127,18.6703],[98.1054,18.6486],[98.1181,18.6345],[98.1437,18.6394],[98.1611,18.6264],[98.1828,18.6252],[98.1824,18.6097],[98.2107,18.6072],[98.2129,18.5909],[98.2274,18.5867],[98.2372,18.5693],[98.232,18.5572],[98.2093,18.538],[98.1752,18.5472],[98.1703,18.5251],[98.1629,18.5248],[98.1543,18.5124],[98.1224,18.5026],[98.1056,18.4583],[98.0827,18.4459],[98.074,18.4294],[98.0826,18.4178],[98.0937,18.4214],[98.1258,18.4064],[98.1228,18.3945],[98.1356,18.3857],[98.1454,18.363],[98.1976,18.3333],[98.2082,18.3076],[98.1933,18.2851],[98.1528,18.2864],[98.1384,18.2812],[98.1356,18.2681],[98.1429,18.2522],[98.139,18.2404],[98.1504,18.2245],[98.169,18.2227],[98.1662,18.2046],[98.1761,18.1921],[98.1666,18.1822],[98.167,18.1682],[98.1558,18.1637],[98.168,18.1412],[98.1629,18.1338],[98.1654,18.1194],[98.1907,18.114],[98.2062,18.0883],[98.2235,18.0902],[98.2303,18.0987],[98.2335,18.0919],[98.2285,18.0885],[98.2427,18.088],[98.2411,18.0791],[98.2473,18.0759],[98.2565,18.0877],[98.2868,18.085],[98.2895,18.0782],[98.2767,18.0525],[98.2638,18.0497],[98.254,18.0266],[98.2431,18.0193],[98.2462,17.9896],[98.1837,17.9812],[98.1799,17.9719],[98.1616,17.9705],[98.1436,17.9354],[98.1334,17.946],[98.1222,17.946],[98.09,17.9633],[98.0346,17.9426],[98.0228,17.9362],[98.0168,17.9201],[98.0119,17.9273],[98.008,17.9219],[98.0104,17.8958],[98.027,17.8886],[98.0324,17.8762],[98.0541,17.8704],[98.0595,17.8577],[98.0696,17.8533],[98.0733,17.8292],[98.0879,17.8084],[98.1087,17.7935],[98.1147,17.7984],[98.1325,17.7967],[98.1472,17.7766],[98.1353,17.7597],[98.1398,17.749],[98.1491,17.7458],[98.1534,17.7297],[98.1453,17.6832],[98.1233,17.6577],[98.0892,17.6372],[98.1015,17.6227],[98.0995,17.6145],[98.1071,17.6112],[98.103,17.6004],[98.1105,17.5927],[98.1061,17.5876],[98.1276,17.5679],[98.1252,17.5589],[98.136,17.5417],[98.1674,17.5477],[98.1785,17.5373],[98.2383,17.5497],[98.2648,17.5786],[98.298,17.5754],[98.3025,17.5669],[98.2982,17.5541],[98.3078,17.5426],[98.3058,17.5326],[98.3143,17.5273],[98.3152,17.5051],[98.3266,17.4897],[98.3297,17.4696],[98.3195,17.445],[98.3263,17.4292],[98.3223,17.4167],[98.2917,17.4074],[98.3192,17.3799],[98.3174,17.3674],[98.3341,17.3479],[98.3322,17.3297],[98.3174,17.3221],[98.3217,17.3107],[98.3398,17.2958],[98.3626,17.2884],[98.358,17.2736],[98.3918,17.2423],[98.3983,17.2521],[98.4299,17.2566],[98.4417,17.271],[98.4537,17.269],[98.4607,17.2759],[98.4787,17.2775],[98.4898,17.2703],[98.5023,17.2801],[98.5179,17.2815],[98.532,17.2745],[98.545,17.283],[98.5744,17.2845],[98.5789,17.2944],[98.5751,17.2999],[98.557,17.2938],[98.5558,17.3143],[98.5611,17.3221],[98.5552,17.3382],[98.5619,17.3518],[98.5374,17.3622],[98.5561,17.3971],[98.5576,17.4266],[98.5462,17.4337],[98.5465,17.4458],[98.5283,17.4536],[98.518,17.48],[98.5244,17.4959],[98.5188,17.5114],[98.5263,17.519],[98.5276,17.5368],[98.5496,17.5593],[98.5635,17.5622],[98.5781,17.5754],[98.567,17.5959],[98.5328,17.619]]],"schools":[{"id":"1050131065","th":"โรงเรียนมัธยมกัลยาณิวัฒนาเฉลิมพระเกียรติ","en":"Matthayom Galyani Vadhana Chaloem Phra Kiat School","amphoe":"กัลยาณิวัฒนา","amphoeEn":"Galyani Vadhana","levels":"ม.1–ม.6","students":232,"area":"สพม.เชียงใหม่","rom":true,"lat":19.060631,"lng":98.264568},{"id":"1050130991","th":"โรงเรียนจอมทอง","en":"Chom Thong School","amphoe":"จอมทอง","amphoeEn":"Chom Thong","levels":"ม.1–ม.6","students":2077,"area":"สพม.เชียงใหม่","rom":true,"lat":18.435573,"lng":98.676942},{"id":"1050130997","th":"โรงเรียนดอยสะเก็ดวิทยาคม","en":"Doi Saket Wittayakhom School","amphoe":"ดอยสะเก็ด","amphoeEn":"Doi Saket","levels":"ม.1–ม.6","students":636,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8841523,"lng":99.1607311},{"id":"1050131023","th":"โรงเรียนสองแคววิทยาคม","en":"Song Khwae Witthayakhom School","amphoe":"ดอยหล่อ","amphoeEn":"Doi Lo","levels":"ม.1–ม.6","students":558,"area":"สพม.เชียงใหม่","rom":false,"lat":18.462316,"lng":98.77686},{"id":"1050131024","th":"โรงเรียนสันติสุข","en":"Santisuk School","amphoe":"ดอยหล่อ","amphoeEn":"Doi Lo","levels":"ม.1–ม.6","students":295,"area":"สพม.เชียงใหม่","rom":false,"lat":18.5399404,"lng":98.7973796},{"id":"1050131015","th":"โรงเรียนดอยเต่าวิทยาคม","en":"Doi Tao Witthayakhom School","amphoe":"ดอยเต่า","amphoeEn":"Doi Tao","levels":"ม.1–ม.6","students":813,"area":"สพม.เชียงใหม่","rom":true,"lat":17.948322,"lng":98.695898},{"id":"1050131005","th":"โรงเรียนฝางชนูปถัมภ์","en":"Fang Chanupatham School","amphoe":"ฝาง","amphoeEn":"Fang","levels":"ม.1–ม.6","students":1682,"area":"สพม.เชียงใหม่","rom":true,"lat":19.910383,"lng":99.20639},{"id":"1050130198","th":"โรงเรียนเทพศิรินทร์ ๙ โครงการหลวงในพระบรมราชูปถัมภ์","en":"Thepsirin 9 Royal Project School","amphoe":"ฝาง","amphoeEn":"Fang","levels":"อ.2–ม.6","students":249,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.899315,"lng":99.04034},{"id":"1050131008","th":"โรงเรียนพร้าววิทยาคม","en":"Phraowittayakom School","amphoe":"พร้าว","amphoeEn":"Phrao","levels":"ม.1–ปวช.3","students":1296,"area":"สพม.เชียงใหม่","rom":false,"lat":19.3407432,"lng":99.1942042},{"id":"1050130531","th":"โรงเรียนบ้านบ่อแก้ว","en":"Ban Bo Kaeo School","amphoe":"สะเมิง","amphoeEn":"Samoeng","levels":"อ.2–ม.6","students":434,"area":"สพป.เชียงใหม่ เขต 2","rom":true,"lat":18.828257,"lng":98.571296},{"id":"1050131004","th":"โรงเรียนสะเมิงพิทยาคม","en":"Samoeng Phitthayakhom School","amphoe":"สะเมิง","amphoeEn":"Samoeng","levels":"ม.1–ม.6","students":589,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8465519,"lng":98.7340772},{"id":"1050131011","th":"โรงเรียนสันกำแพง","en":"San Kamphaeng School","amphoe":"สันกำแพง","amphoeEn":"San Kamphaeng","levels":"ม.1–ม.6","students":2460,"area":"สพม.เชียงใหม่","rom":false,"lat":18.74803,"lng":99.047737},{"id":"1050131025","th":"โรงเรียนศรีสังวาลย์เชียงใหม่","en":"Si Sang Wan Chiang Mai School","amphoe":"สันทราย","amphoeEn":"San Sai","levels":"อ.2–ปวช.3","students":285,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":false,"lat":18.9175667,"lng":98.9991125},{"id":"1050131012","th":"โรงเรียนสันทรายวิทยาคม","en":"San Sai Witthayakhom School","amphoe":"สันทราย","amphoeEn":"San Sai","levels":"ม.1–ม.6","students":1505,"area":"สพม.เชียงใหม่","rom":false,"lat":18.920174,"lng":98.997848},{"id":"1050131009","th":"โรงเรียนสันป่าตองวิทยาคม","en":"San Pa Tong Witthayakhom School","amphoe":"สันป่าตอง","amphoeEn":"San Pa Tong","levels":"ม.1–ม.6","students":2376,"area":"สพม.เชียงใหม่","rom":true,"lat":18.595682,"lng":98.876643},{"id":"1050131010","th":"โรงเรียนเทพศิรินทร์ เชียงใหม่","en":"Thepsirin Chiang Mai School","amphoe":"สันป่าตอง","amphoeEn":"San Pa Tong","levels":"ม.1–ม.6","students":515,"area":"สพม.เชียงใหม่","rom":true,"lat":18.647976,"lng":98.849802},{"id":"1050131018","th":"โรงเรียนสารภีพิทยาคม","en":"Saraphi Phitthayakhom School","amphoe":"สารภี","amphoeEn":"Saraphi","levels":"ม.1–ม.6","students":864,"area":"สพม.เชียงใหม่","rom":true,"lat":18.712828,"lng":99.034374},{"id":"1050131013","th":"โรงเรียนหางดงรัฐราษฎร์อุปถัมภ์","en":"Hang Dong Ratratsadon Upatham School","amphoe":"หางดง","amphoeEn":"Hang Dong","levels":"ม.1–ม.6","students":1184,"area":"สพม.เชียงใหม่","rom":true,"lat":18.679935,"lng":98.919435},{"id":"1050131016","th":"โรงเรียนอมก๋อยวิทยาคม","en":"Omkoi Witthayakhom School","amphoe":"อมก๋อย","amphoeEn":"Omkoi","levels":"ม.1–ม.6","students":1085,"area":"สพม.เชียงใหม่","rom":false,"lat":17.800759,"lng":98.3566339},{"id":"1050131017","th":"โรงเรียนแม่ตื่นวิทยาคม","en":"Mae Tuen Witthayakhom School","amphoe":"อมก๋อย","amphoeEn":"Omkoi","levels":"ม.1–ม.6","students":628,"area":"สพม.เชียงใหม่","rom":true,"lat":17.40463,"lng":98.455215},{"id":"1050131014","th":"โรงเรียนฮอดพิทยาคม","en":"Hot Phitthayakhom School","amphoe":"ฮอด","amphoeEn":"Hot","levels":"ม.1–ม.6","students":1073,"area":"สพม.เชียงใหม่","rom":true,"lat":18.173879,"lng":98.605769},{"id":"1050130797","th":"โรงเรียนแม่โถวิทยาคม","en":"Mae Tho Witthayakhom School","amphoe":"ฮอด","amphoeEn":"Hot","levels":"อ.2–ม.6","students":655,"area":"สพป.เชียงใหม่ เขต 5","rom":true,"lat":18.25,"lng":98.1955},{"id":"1050130996","th":"โรงเรียนศึกษาสงเคราะห์เชียงดาว","en":"Suksa Songkhro Chiang Dao School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ป.1–ม.6","students":487,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":19.4208,"lng":98.9904},{"id":"1050130995","th":"โรงเรียนอรุโณทัยวิทยาคม","en":"Arunothaiwittayakom School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ม.1–ม.6","students":974,"area":"สพม.เชียงใหม่","rom":false,"lat":19.7451413,"lng":98.9653239},{"id":"1050130994","th":"โรงเรียนเชียงดาววิทยาคม","en":"Chiang Dao Witthayakhom School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ม.1–ม.6","students":1082,"area":"สพม.เชียงใหม่","rom":true,"lat":19.407487,"lng":98.973059},{"id":"1050130129","th":"โรงเรียนแกน้อยศึกษา","en":"Kae Noi Suksa School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"อ.2–ม.6","students":704,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.6769063,"lng":98.7863601},{"id":"1050130987","th":"โรงเรียน กาวิละวิทยาลัย","en":"Kawila Wittayalai School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":1083,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7674606,"lng":99.0234519},{"id":"1050130990","th":"โรงเรียนกาวิละอนุกูล","en":"Kawila Anukun School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":383,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.7816,"lng":99.0137},{"id":"1050130984","th":"โรงเรียนยุพราชวิทยาลัย","en":"Yupparaj Wittayalai School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":3684,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7920016,"lng":98.9889052},{"id":"1050130985","th":"โรงเรียนวัฒโนทัยพายัพ","en":"Wattanothai Payap School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":2868,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7849283,"lng":98.9762673},{"id":"1050130989","th":"โรงเรียนสอนคนตาบอดภาคเหนือ","en":"The Northern School for the Blind","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":140,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":false,"lat":18.7875122,"lng":98.978741},{"id":"1050130986","th":"โรงเรียนหอพระ","en":"Hopra School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":560,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7917976,"lng":98.9808079},{"id":"1050130988","th":"โรงเรียนโสตศึกษาอนุสารสุนทร","en":"Sotsuksa Anusan Sunthon School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":225,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.8037,"lng":98.98},{"id":"1050131019","th":"โรงเรียนเวียงแหงวิทยาคม","en":"Wiang Haeng Witthayakhom School","amphoe":"เวียงแหง","amphoeEn":"Wiang Haeng","levels":"ม.1–ม.6","students":838,"area":"สพม.เชียงใหม่","rom":true,"lat":19.576253,"lng":98.625087},{"id":"1050131002","th":"โรงเรียนนวมินทราชูทิศ พายัพ","en":"Navamindarajudis Phayap School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ม.1–ม.6","students":1763,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8435702,"lng":98.9603006},{"id":"1050131003","th":"โรงเรียนศึกษาสงเคราะห์เชียงใหม่","en":"Suksa Songkhro Chiang Mai School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ป.1–ม.6","students":797,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.8542,"lng":98.9656},{"id":"1050131001","th":"โรงเรียนแม่ริมวิทยาคม","en":"Mae Rim Witayakom School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ม.1–ม.6","students":1569,"area":"สพม.เชียงใหม่","rom":false,"lat":18.9157202,"lng":98.9367129},{"id":"1050131021","th":"โรงเรียนบ้านกาดวิทยาคม","en":"Ban Kat Witthayakhom School","amphoe":"แม่วาง","amphoeEn":"Mae Wang","levels":"ม.1–ม.6","students":654,"area":"สพม.เชียงใหม่","rom":true,"lat":18.606739,"lng":98.815807},{"id":"1050130925","th":"โรงเรียนแม่วินสามัคคี","en":"Mae Win Samakkhi School","amphoe":"แม่วาง","amphoeEn":"Mae Wang","levels":"อ.2–ม.6","students":602,"area":"สพป.เชียงใหม่ เขต 4","rom":false,"lat":18.657457,"lng":98.673258},{"id":"1050131022","th":"โรงเรียนแม่ออนวิทยาลัย","en":"Mae On Witthayalai School","amphoe":"แม่ออน","amphoeEn":"Mae On","levels":"ม.1–ม.6","students":308,"area":"สพม.เชียงใหม่","rom":true,"lat":18.749392,"lng":99.230221},{"id":"1050130493","th":"โรงเรียนบ้านสันต้นหมื้อ","en":"Ban San Ton Mue School","amphoe":"แม่อาย","amphoeEn":"Mae Ai","levels":"อ.1–ม.6","students":572,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.955274,"lng":99.260415},{"id":"1050131007","th":"โรงเรียนราชประชานุเคราะห์ 30","en":"Ratchaprachanukro 30 School","amphoe":"แม่อาย","amphoeEn":"Mae Ai","levels":"อ.2–ม.6","students":903,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":20.0326,"lng":99.2692},{"id":"1050130325","th":"โรงเรียนบ้านปางอุ๋ง","en":"Ban Pang Ung School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"อ.2–ม.6","students":493,"area":"สพป.เชียงใหม่ เขต 6","rom":true,"lat":18.79831,"lng":98.112087},{"id":"1050130345","th":"โรงเรียนบ้านแม่แฮเหนือ","en":"Ban Mae Hae Nuea School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"อ.2–ม.6","students":739,"area":"สพป.เชียงใหม่ เขต 6","rom":true,"lat":18.791181,"lng":98.531078},{"id":"1050130993","th":"โรงเรียนราชประชานุเคราะห์ 31","en":"Ratchaprachanukro 31 School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"ป.1–ม.6","students":830,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.524,"lng":98.3939},{"id":"1050130992","th":"โรงเรียนแม่แจ่ม","en":"Mae Chaem School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"ม.1–ม.6","students":1283,"area":"สพม.เชียงใหม่","rom":true,"lat":18.504116,"lng":98.369024},{"id":"1050131000","th":"โรงเรียนสันป่ายางวิทยาคม","en":"San Pa Yang Witthayakhom School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":182,"area":"สพม.เชียงใหม่","rom":true,"lat":19.049671,"lng":98.87178},{"id":"1050130999","th":"โรงเรียนแม่หอพระวิทยาคม","en":"Mae Ho Phra School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":200,"area":"สพม.เชียงใหม่","rom":false,"lat":19.1110669,"lng":99.0281021},{"id":"1050130998","th":"โรงเรียนแม่แตง","en":"Mae Taeng School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":784,"area":"สพม.เชียงใหม่","rom":true,"lat":19.109989,"lng":98.93021},{"id":"1050131020","th":"โรงเรียนไชยปราการ","en":"Chai Prakan School","amphoe":"ไชยปราการ","amphoeEn":"Chai Prakan","levels":"ม.1–ม.6","students":508,"area":"สพม.เชียงใหม่","rom":true,"lat":19.72485,"lng":99.138639}]};
+var T = {
+ en:{
+  forbar:"For Eveline Willi",
+  h1:"34 schools, one province",
+  lead:"This year FERC sponsors one student in each of 34 upper-secondary schools in Chiang Mai province. Below, the province's upper-secondary schools on a map.",
+  for:"For Eveline Willi, President of FERC, with thanks for the work.",
+  st1:"upper-secondary schools", st2:"students", st3a:"All", st3:"volunteers",
+  srcLabel:"Source:",
+  mapH:"The map",
+  mapP:"Tap a pin. Each pin is a government school whose classes run to M.6 or to vocational year 3.",
+  nomap:"The map needs WebGL. The list below shows the same schools.",
+  mapNote:"The map shows %N% schools from the government school register. FERC's 34 comes from the article above. The two lists are not matched school by school.",
+  srcObec:"OBEC school register (Open Data Common), fetched 18 Aug 2026",
+  srcBase:"Map:",
+  srcEn:"English names: OpenStreetMap or the register where given; the others are romanised by NaN.",
+  tap:"Tap a pin or a name in the list.",
+  cardKick:"School",
+  romanised:"romanised",
+  district:"District", classes:"Classes", students:"Students on register",
+  one:"A student here could be one of FERC's.",
+  give:"Give to FERC",
+  dAll:"All districts",
+  unitStu:"students",
+  cdH:"Two dates",
+  ev1:"Talk by Eveline Willi", ev1d:"Chiang Mai Expat Club · 28 November 2026",
+  ev2:"FERC annual fundraiser", ev2d:"29 November 2026",
+  cdNote:"The article gives the dates; it names no venue or price for the fundraiser.",
+  u_d:"days", u_h:"hours", u_m:"min", u_s:"sec",
+  passed:"Today or past",
+  md:"Mot Dang (motdang.net) puts both on its calendar in Thai and English.",
+  giveH:"Give",
+  giveP:"FERC's donation page names these routes:",
+  routes:["From Thailand: Kasikorn Bank transfer or QR code, an ATM or bank-to-bank transfer","From Europe: the Swiss bank account, an international transfer, or Wise","From other countries: an international transfer or Wise"],
+  giveProof:"The page asks donors to send proof of payment to the treasurer, because transfers from Thai banks do not show who gave. Account details are on the page.",
+  giveBtn:"fercthailand.org/how-to-donate",
+  lunchH:"Lunch",
+  lunchP:"A note from NaN in Chiang Rai.",
+  lunchBtn:"Lunch at The Algonquin?",
+  mailSubject:"Lunch at The Algonquin?",
+  mailBody:"Dear NaN,\n\n",
+  foot:"Made for Eveline Willi by NaN · Hongdam, Chiang Rai · nan@motdang.net"
+ },
+ th:{
+  forbar:"สำหรับคุณ Eveline Willi",
+  h1:"34 โรงเรียน หนึ่งจังหวัด",
+  lead:"ปีนี้ FERC อุปถัมภ์นักเรียนโรงเรียนละหนึ่งคน ในโรงเรียนมัธยมปลาย 34 แห่งของจังหวัดเชียงใหม่ ด้านล่างคือแผนที่โรงเรียนมัธยมปลายของจังหวัด",
+  for:"สำหรับคุณ Eveline Willi ประธาน FERC ขอบคุณสำหรับงานที่ทำมา",
+  st1:"โรงเรียนมัธยมปลาย", st2:"นักเรียน", st3a:"ล้วน", st3:"อาสาสมัคร",
+  srcLabel:"ที่มา:",
+  mapH:"แผนที่",
+  mapP:"แตะที่หมุด แต่ละหมุดคือโรงเรียนรัฐที่เปิดสอนถึง ม.6 หรือ ปวช.3",
+  nomap:"แผนที่ต้องใช้ WebGL รายการด้านล่างแสดงโรงเรียนชุดเดียวกัน",
+  mapNote:"แผนที่แสดง %N% โรงเรียนจากทะเบียนโรงเรียนของรัฐ ตัวเลข 34 ของ FERC มาจากบทความข้างต้น ทั้งสองรายการยังไม่ได้จับคู่ทีละโรงเรียน",
+  srcObec:"ทะเบียนโรงเรียน สพฐ. (Open Data Common) ดึงข้อมูล 18 ส.ค. 2569",
+  srcBase:"แผนที่:",
+  srcEn:"ชื่ออังกฤษมาจาก OpenStreetMap หรือทะเบียนเมื่อมี ที่เหลือ NaN ถอดเป็นอักษรโรมันเอง",
+  tap:"แตะหมุดบนแผนที่ หรือชื่อโรงเรียนในรายการ",
+  cardKick:"โรงเรียน",
+  romanised:"ถอดอักษรโรมัน",
+  district:"อำเภอ", classes:"ระดับชั้น", students:"จำนวนนักเรียนในทะเบียน",
+  one:"นักเรียนที่นี่อาจเป็นหนึ่งในนักเรียนของ FERC",
+  give:"บริจาคให้ FERC",
+  dAll:"ทุกอำเภอ",
+  unitStu:"คน",
+  cdH:"สองวัน",
+  ev1:"การบรรยายโดยคุณ Eveline Willi", ev1d:"Chiang Mai Expat Club · 28 พฤศจิกายน 2569",
+  ev2:"งานระดมทุนประจำปีของ FERC", ev2d:"29 พฤศจิกายน 2569",
+  cdNote:"บทความระบุวันที่ แต่ไม่ได้ระบุสถานที่หรือราคาของงานระดมทุน",
+  u_d:"วัน", u_h:"ชม.", u_m:"นาที", u_s:"วินาที",
+  passed:"วันนี้หรือผ่านมาแล้ว",
+  md:"หมดแดง (motdang.net) ใส่ทั้งสองวันลงปฏิทินเป็นภาษาไทยและอังกฤษ",
+  giveH:"ร่วมบริจาค",
+  giveP:"หน้าบริจาคของ FERC ระบุช่องทางเหล่านี้",
+  routes:["จากในประเทศไทย: โอนผ่านธนาคารกสิกรไทย หรือสแกน QR ผ่านตู้ ATM หรือโอนระหว่างธนาคาร","จากยุโรป: บัญชีธนาคารสวิส โอนเงินระหว่างประเทศ หรือ Wise","จากประเทศอื่น: โอนเงินระหว่างประเทศ หรือ Wise"],
+  giveProof:"หน้าเว็บขอให้ผู้บริจาคส่งหลักฐานการโอนถึงเหรัญญิก เพราะการโอนจากธนาคารไทยไม่แสดงชื่อผู้โอน รายละเอียดบัญชีอยู่ในหน้านั้น",
+  giveBtn:"fercthailand.org/how-to-donate",
+  lunchH:"มื้อกลางวัน",
+  lunchP:"ข้อความจาก NaN ที่เชียงราย",
+  lunchBtn:"ทานมื้อกลางวันที่ The Algonquin ไหมคะ",
+  mailSubject:"Lunch at The Algonquin?",
+  mailBody:"สวัสดีค่ะ NaN\n\n",
+  foot:"ทำให้ Eveline Willi โดย NaN · หงส์ดำ เชียงราย · nan@motdang.net"
+ }
+};
+var lang = (navigator.language||'en').toLowerCase().indexOf('th')===0 ? 'th' : 'en';
+var map=null, selected=null, mapReady=false;
+var S = DATA.schools;
+S.forEach(function(s,i){s.i=i;});
+
+function $(id){return document.getElementById(id);}
+function lvl(l){
+  var en=lang==='en';
+  return l.replace(/ปวช\./g,en?'Voc.':'ปวช.').replace(/อ\./g,en?'K':'อ.').replace(/ป\./g,en?'P':'ป.').replace(/ม\./g,en?'M':'ม.');
+}
+function t(k){return T[lang][k];}
+function applyLang(){
+  document.documentElement.lang=lang;
+  document.body.classList.toggle('th',lang==='th');
+  $('b-th').setAttribute('aria-pressed',lang==='th');
+  $('b-en').setAttribute('aria-pressed',lang==='en');
+  document.querySelectorAll('[data-i]').forEach(function(e){
+    var v=t(e.getAttribute('data-i')); if(v==null) return;
+    e.textContent=v.replace('%N%',S.length);
+  });
+  document.title = lang==='th' ? '34 โรงเรียน หนึ่งจังหวัด' : '34 schools, one province';
+  $('routes').innerHTML=''; t('routes').forEach(function(r){var li=document.createElement('li');li.textContent=r;$('routes').appendChild(li);});
+  var m='mailto:nan@motdang.net?subject='+encodeURIComponent(t('mailSubject'))+'&body='+encodeURIComponent(t('mailBody'));
+  $('lunch').setAttribute('href',m);
+  buildDistricts(); buildList(); showCard(selected); tickAll(); counters(false);
+}
+function buildDistricts(){
+  var sel=$('dist'), cur=sel.value||'';
+  var seen={}, opts=[];
+  S.forEach(function(s){ if(!seen[s.amphoe]){seen[s.amphoe]=1; opts.push(s);} });
+  opts.sort(function(a,b){return (lang==='th'?a.amphoe.localeCompare(b.amphoe,'th'):a.amphoeEn.localeCompare(b.amphoeEn));});
+  sel.innerHTML='';
+  var o=document.createElement('option');o.value='';o.textContent=t('dAll');sel.appendChild(o);
+  opts.forEach(function(s){var o=document.createElement('option');o.value=s.amphoe;o.textContent=lang==='th'?s.amphoe:s.amphoeEn;sel.appendChild(o);});
+  sel.value=cur;
+}
+function nm(s){ return lang==='th' ? s.th : (s.en||s.th); }
+function buildList(){
+  var ul=$('list'), f=$('dist').value; ul.innerHTML='';
+  S.filter(function(s){return !f||s.amphoe===f;}).sort(function(a,b){return a.amphoe.localeCompare(b.amphoe,'th')||a.th.localeCompare(b.th,'th');}).forEach(function(s){
+    var li=document.createElement('li'), b=document.createElement('button');
+    b.type='button'; b.className='row'; b.dataset.i=s.i;
+    if(selected===s.i) b.setAttribute('aria-current','true');
+    b.innerHTML='';
+    b.appendChild(document.createTextNode(nm(s)));
+    var sm=document.createElement('small'); sm.textContent=(lang==='th'?s.amphoe:s.amphoeEn)+(lang==='en'&&s.en?' · '+s.th:''); b.appendChild(sm);
+    b.addEventListener('click',function(){pick(s.i,true);});
+    li.appendChild(b); ul.appendChild(li);
+  });
+  if(mapReady) filterMap(f);
+}
+function showCard(i){
+  var c=$('card');
+  if(i==null){ c.innerHTML=''; var p=document.createElement('p'); p.style.margin='0'; p.className='sub'; p.textContent=t('tap'); c.appendChild(p); return; }
+  var s=S[i]; c.innerHTML='';
+  function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e;}
+  c.appendChild(el('div','k',t('cardKick')));
+  c.appendChild(el('h3','',s.th));
+  var sub=lang==='en'?(s.en? s.en+(s.rom?' ('+t('romanised')+')':'') : ''):(s.en? s.en+(s.rom?' ('+t('romanised')+')':''):'');
+  if(sub) c.appendChild(el('p','sub',sub));
+  var dl=el('dl');
+  function row(k,v){dl.appendChild(el('dt','',k));dl.appendChild(el('dd','',v));}
+  row(t('district'), lang==='th'?s.amphoe:s.amphoeEn+' · '+s.amphoe);
+  row(t('classes'), lvl(s.levels));
+  if(s.students!=null) row(t('students'), s.students.toLocaleString(lang==='th'?'th-TH':'en-US'));
+  c.appendChild(dl);
+  c.appendChild(el('p','one',t('one')));
+  var a=el('a','btn',t('give')); a.href='https://fercthailand.org/how-to-donate/'; a.target='_blank'; a.rel='noopener'; c.appendChild(a);
+}
+function pick(i,fly){
+  selected=i;
+  showCard(i);
+  document.querySelectorAll('.row').forEach(function(r){ if(+r.dataset.i===i) r.setAttribute('aria-current','true'); else r.removeAttribute('aria-current'); });
+  if(mapReady){
+    map.setFilter('sel',['==',['get','i'],i]);
+    if(fly){ var s=S[i]; map.flyTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),11),duration:700}); document.getElementById('map').scrollIntoView({behavior:'smooth',block:'start'}); }
+    else { $('card').scrollIntoView({behavior:'smooth',block:'nearest'}); }
+  }
+}
+function filterMap(f){
+  if(!mapReady) return;
+  map.setFilter('pins', f?['==',['get','amphoe'],f]:null);
+  var list=S.filter(function(s){return !f||s.amphoe===f;});
+  fit(list);
+}
+function fit(list){
+  var b=new maplibregl.LngLatBounds();
+  list.forEach(function(s){b.extend([s.lng,s.lat]);});
+  if(list.length===1) map.flyTo({center:[list[0].lng,list[0].lat],zoom:11});
+  else map.fitBounds(b,{padding:{top:40,bottom:40,left:30,right:30},duration:600,maxZoom:12});
+}
+function initMap(){
+  try{
+    map=new maplibregl.Map({container:'map',attributionControl:{compact:true},style:'https://tiles.openfreemap.org/styles/liberty',center:[98.98,18.79],zoom:8,attributionControl:{compact:true},cooperativeGestures:false});
+  }catch(e){ $('map').style.display='none'; $('nomap').style.display='block'; return; }
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+  map.on('load',function(){
+    var feats=S.map(function(s){return {type:'Feature',properties:{i:s.i,amphoe:s.amphoe},geometry:{type:'Point',coordinates:[s.lng,s.lat]}};});
+    map.addSource('prov',{type:'geojson',data:{type:'Feature',geometry:{type:'Polygon',coordinates:DATA.boundary}}});
+    map.addLayer({id:'prov-line',type:'line',source:'prov',paint:{'line-color':cssv('--boundary'),'line-width':1.6,'line-opacity':.7,'line-dasharray':[3,2]}});
+    map.addSource('sch',{type:'geojson',data:{type:'FeatureCollection',features:feats}});
+    map.addLayer({id:'pins',type:'circle',source:'sch',paint:{'circle-radius':['interpolate',['linear'],['zoom'],7,6,12,10],'circle-color':cssv('--pin'),'circle-stroke-color':cssv('--pin-ring'),'circle-stroke-width':2}});
+    map.addLayer({id:'sel',type:'circle',source:'sch',filter:['==',['get','i'],-1],paint:{'circle-radius':['interpolate',['linear'],['zoom'],7,10,12,15],'circle-color':cssv('--sel'),'circle-stroke-color':'#000000','circle-stroke-width':2.5}});
+    mapReady=true;
+    fit(S);
+    map.on('click',function(e){
+      var p=e.point, bb=[[p.x-16,p.y-16],[p.x+16,p.y+16]];
+      var f=map.queryRenderedFeatures(bb,{layers:['pins']});
+      if(f.length){
+        var best=null,bd=1e9;
+        f.forEach(function(x){var q=map.project(x.geometry.coordinates),d=Math.hypot(q.x-p.x,q.y-p.y); if(d<bd){bd=d;best=x;}});
+        pick(best.properties.i,false);
+      }
+    });
+    map.on('mousemove',function(e){var p=e.point;var f=map.queryRenderedFeatures([[p.x-8,p.y-8],[p.x+8,p.y+8]],{layers:['pins']});map.getCanvas().style.cursor=f.length?'pointer':'';});
+    if(selected!=null) map.setFilter('sel',['==',['get','i'],selected]);
+    window.__mapLoaded=true;
+  });
+  map.on('error',function(e){ window.__mapErr=(e&&e.error&&e.error.message)||'err'; });
+}
+function cssv(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+
+/* counters */
+function counters(animate){
+  document.querySelectorAll('.stat').forEach(function(b){
+    var c=b.getAttribute('data-c'); if(c==='w') return;
+    var n=+c, out=b.querySelector('b');
+    var pf=b.getAttribute('data-p')||'';
+    if(!animate){ out.textContent=pf+n; return; }
+    var t0=null;
+    (function step(ts){ if(!t0) t0=ts; var p=Math.min(1,(ts-t0)/900); out.textContent=pf+Math.round(n*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(step); })(performance.now?performance.now():0);
+  });
+}
+/* countdowns */
+function tickAll(){
+  document.querySelectorAll('[data-cd]').forEach(function(el){
+    var ms=new Date(el.getAttribute('data-cd')).getTime()-Date.now();
+    var bs=el.querySelectorAll('b');
+    if(ms<=0){ bs.forEach(function(b){b.textContent='0';}); return; }
+    var s=Math.floor(ms/1000);
+    var v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
+    bs.forEach(function(b,i){b.textContent=i===0?v[i]:String(v[i]).padStart(2,'0');});
+  });
+}
+document.addEventListener('DOMContentLoaded',function(){
+  $('b-th').addEventListener('click',function(){lang='th';applyLang();});
+  $('b-en').addEventListener('click',function(){lang='en';applyLang();});
+  $('dist').addEventListener('change',function(){buildList();});
+  document.querySelectorAll('.stat').forEach(function(b){b.addEventListener('click',function(){counters(true);});});
+  applyLang();
+  counters(true);
+  setInterval(tickAll,1000);
+  if(window.maplibregl) initMap(); else { $('map').style.display='none'; $('nomap').style.display='block'; }
+});
+</script>
+</body>
+</html>
