@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Stuck on the road, in any language</title>
+<meta name="description" content="A live map, the road you are on, the distance by road from Thai Road Assist, and a help card in Thai, English and Hindi to show the mechanic. Made for Sanya.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stuck on the road, in any language">
+<meta property="og:description" content="A live map, a help card in Thai, English and Hindi, and how Mot Dang, TRA and Hongdam fit together. Made for Sanya.">
+<meta property="og:url" content="https://hongdam.net/for/sanya/">
+<meta property="og:image" content="https://hongdam.net/for/sanya/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=Prompt:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Myanmar:wght@500;700&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+:root{
+  --bg:#fffbe6; --bg2:#fff0a0; --ink:#15171a; --mute:#555a60; --card:#ffffff;
+  --hv:#ffd500; --hv-ink:#000000; --or:#ff5a00; --ortext:#c23d00;
+  --as:#1e2126; --as2:#2b3037; --on-as:#f7f4e6; --mute-as:#b9bcc2;
+  --rule:#15171a; --strip:52px;
+  --display:"Barlow Condensed","Prompt",Impact,"Arial Narrow",sans-serif;
+  --ui:"Barlow","Prompt",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --haz:repeating-linear-gradient(-45deg,#ffd500 0 12px,#111 12px 24px);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#121417; --bg2:#1c1f24; --ink:#f6f3e4; --mute:#b6b9bd; --card:#1d2025;
+    --as:#0b0c0e; --as2:#181b1f; --rule:#f6f3e4; --ortext:#ff8a4a}
+}
+html[lang=th]{--display:"Prompt","Barlow Condensed",sans-serif;--ui:"Prompt","Barlow",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--ui);overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+[hidden]{display:none!important}
+sup a{font:600 .7em var(--ui);text-decoration:none;color:var(--ortext);padding:0 .1em}
+
+/* running head: a road sign */
+.strip{position:fixed;z-index:60;left:0;right:0;top:0;height:var(--strip);display:flex;align-items:center;justify-content:space-between;
+  padding:0 16px;background:var(--hv);color:#000;border-bottom:3px solid #000}
+.logo{font:800 24px/1 var(--display);letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:baseline;gap:9px;text-decoration:none;color:#000}
+.logo small{font:600 11px var(--ui);letter-spacing:.12em;opacity:.8;display:none}
+.lang{font:600 14px var(--ui);border:0;background:#000;color:var(--hv);border-radius:999px;padding:0 15px;min-height:38px}
+.lang span{opacity:.6}.lang span.on{opacity:1;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
+
+/* 1 · hero: the map is the first screen */
+.hero{position:relative;height:100vh;height:100svh;min-height:640px;padding-top:var(--strip);background:var(--as)}
+#map{position:absolute;left:0;right:0;top:var(--strip);bottom:0;background:#e9e4d2}
+.hero-ui{position:absolute;left:0;right:0;top:var(--strip);bottom:0;z-index:3;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+.title{pointer-events:auto;margin:10px 12px 0;background:var(--hv);color:#000;border:3px solid #000;box-shadow:5px 5px 0 #000;padding:9px 13px 11px}
+.kick{font:700 11px var(--ui);letter-spacing:.16em;text-transform:uppercase;margin:0 0 3px}
+h1{font:800 clamp(33px,10.2vw,48px)/.96 var(--display);text-transform:uppercase;margin:0;letter-spacing:.005em;text-wrap:balance}
+h1 mark{background:#000;color:var(--hv);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+html[lang=th] h1{font-weight:700;font-size:clamp(23px,6.9vw,34px);line-height:1.2;text-transform:none}
+.panel{pointer-events:auto;background:var(--as);color:var(--on-as);padding:0 14px 12px;border-top:0;position:relative}
+.panel::before{content:"";display:block;height:9px;margin:0 -14px 11px;background:var(--haz)}
+.where{display:grid;gap:1px}
+.chip{display:inline-block;justify-self:start;font:700 11px var(--ui);letter-spacing:.1em;text-transform:uppercase;background:var(--hv);color:#000;padding:2px 8px;border-radius:3px;margin-bottom:4px}
+.where b{font:800 26px/1.05 var(--display);text-transform:uppercase;letter-spacing:.01em}
+html[lang=th] .where b{font:700 21px/1.25 var(--display);text-transform:none}
+.where small{color:var(--mute-as);font-size:13px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:9px 0 3px}
+.tile{background:var(--as2);border:2px solid #444a52;border-radius:6px;padding:5px 10px 4px;display:flex;align-items:baseline;gap:7px}
+.tile b{font:800 36px/1 var(--display);color:var(--hv);font-variant-numeric:tabular-nums}
+.tile span{font:600 15px var(--ui);color:var(--on-as)}
+.est{font-size:12px;color:var(--mute-as);margin:0 0 9px}
+.help{display:block;width:100%;min-height:58px;background:var(--hv);color:#000;border:3px solid #000;border-radius:8px;
+  font:800 31px/1 var(--display);text-transform:uppercase;letter-spacing:.04em;box-shadow:0 0 0 3px var(--hv);animation:pulse 2.4s ease-out infinite}
+html[lang=th] .help{font:700 25px/1 var(--display);text-transform:none}
+.help:active{transform:translateY(2px)}
+@keyframes pulse{0%{box-shadow:0 0 0 3px var(--hv),0 0 0 3px rgba(255,213,0,.7)}70%{box-shadow:0 0 0 3px var(--hv),0 0 0 16px rgba(255,213,0,0)}100%{box-shadow:0 0 0 3px var(--hv),0 0 0 3px rgba(255,213,0,0)}}
+.mini{display:flex;align-items:center;gap:10px;margin-top:9px;font-size:13px;color:var(--mute-as)}
+.pill{font:600 13px var(--ui);background:transparent;color:var(--on-as);border:2px solid #5a6068;border-radius:999px;padding:4px 12px;min-height:32px;white-space:nowrap}
+.pill:hover{border-color:var(--hv)}
+
+/* map markers */
+.me{width:24px;height:24px;border-radius:50%;background:var(--or);border:4px solid #fff;box-shadow:0 0 0 2px #000;position:relative;cursor:pointer}
+.me::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:3px solid var(--or);animation:ring 1.8s ease-out infinite}
+@keyframes ring{0%{transform:scale(.4);opacity:.9}100%{transform:scale(1.25);opacity:0}}
+.tra{font:800 15px/1 var(--display);background:var(--hv);color:#000;border:3px solid #000;padding:4px 7px 3px;letter-spacing:.06em;cursor:pointer;box-shadow:3px 3px 0 #000}
+.mech{width:18px;height:18px;background:#000;border:3px solid var(--hv);border-radius:4px;cursor:pointer;transform:rotate(45deg)}
+.maplibregl-popup-content{font:500 14px/1.35 var(--ui);color:#15171a;border:3px solid #000;border-radius:6px;padding:9px 12px;box-shadow:4px 4px 0 #000}
+.maplibregl-popup-content b{font-weight:700}
+.maplibregl-ctrl-attrib{font-size:10px}
+
+/* 2 · what is wrong */
+.sec{padding:46px 16px 50px;max-width:1240px;margin:0 auto}
+.k{font:700 12px var(--ui);letter-spacing:.2em;text-transform:uppercase;color:var(--ortext);margin:0 0 8px}
+h2{font:800 clamp(34px,9.6vw,60px)/.98 var(--display);text-transform:uppercase;margin:0 0 20px;text-wrap:balance;letter-spacing:.005em}
+html[lang=th] h2{font-weight:700;text-transform:none;line-height:1.18;font-size:clamp(28px,7.6vw,50px)}
+.probs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.prob{position:relative;text-align:left;background:var(--hv);color:#000;border:3px solid #000;border-radius:6px;min-height:84px;padding:10px 12px;box-shadow:4px 4px 0 #000;
+  font:800 26px/1.02 var(--display);text-transform:uppercase;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .12s,box-shadow .12s}
+html[lang=th] .prob{font:700 21px/1.2 var(--display);text-transform:none}
+.prob small{font:500 13px var(--ui);text-transform:none;opacity:.8;margin-top:2px}
+.prob i{position:absolute;top:7px;right:10px;font:800 14px var(--display);font-style:normal;opacity:.55}
+.prob:active,.prob.press{transform:translate(3px,3px);box-shadow:1px 1px 0 #000}
+.prob.dark{background:var(--as);color:var(--hv);border-color:var(--as)}
+.prob.dark small{color:var(--on-as)}
+
+/* full-bleed bands: the photograph holds still, the page moves over it */
+.band{position:relative;isolation:isolate;min-height:clamp(340px,64vh,620px);display:grid;align-items:center;
+  background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;background-color:#15171a;
+  border-top:4px solid #000;border-bottom:4px solid #000;color:#fff}
+.band::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(8,8,6,.66) 0%,rgba(8,8,6,.30) 45%,rgba(8,8,6,.80) 100%)}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;mix-blend-mode:multiply;background:radial-gradient(110% 80% at 20% 30%,rgba(255,90,0,.30),transparent 62%)}
+.band .in{max-width:1240px;margin:0 auto;padding:44px 16px 66px;width:100%}
+.band .k{color:var(--hv)}
+.band h2{color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.6);max-width:18ch}
+.cred{position:absolute;right:0;bottom:0;font-size:11px;color:#d9d3c2;background:rgba(8,8,6,.74);padding:3px 8px;max-width:86%}
+.cred a{color:#f0e8d4}
+@media (hover:none) and (pointer:coarse){.band{background-attachment:scroll}}
+@supports (-webkit-touch-callout:none){.band{background-attachment:scroll}}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px;align-items:start}
+.stat{text-align:left;background:rgba(10,10,8,.62);border:3px solid var(--hv);border-radius:6px;padding:10px 12px 11px;color:#fff;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);transition:background .15s}
+.stat b{display:block;font:800 clamp(40px,12vw,70px)/.95 var(--display);color:var(--hv);font-variant-numeric:tabular-nums}
+.stat b em{font-style:normal;font-size:.42em;margin-left:.2em;color:#fff;letter-spacing:.04em}
+.stat span{display:block;font:600 14px/1.3 var(--ui);margin-top:3px}
+.stat p{display:none;margin:7px 0 0;font:400 13px/1.4 var(--ui);color:#e8e2d0}
+.stat.open{background:rgba(255,213,0,.94);color:#000}
+.stat.open b,.stat.open b em{color:#000}
+.stat.open p{display:block;color:#000}
+.stat.open sup a{color:#000}
+
+/* 3 · flow: a road with km posts */
+.flow{background:var(--as);color:var(--on-as)}
+.flow .k{color:var(--hv)}
+.flow h2{color:#fff}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;font:600 13px var(--ui)}
+.tag{display:inline-block;font:700 11px var(--ui);letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:2px solid currentColor}
+.tag.today{background:var(--hv);color:#000;border-color:var(--hv)}
+.tag.demo{background:var(--or);color:#000;border-color:var(--or)}
+.tag.idea{background:transparent;color:var(--on-as);border-color:#8a9099}
+.road{position:relative;list-style:none;margin:0;padding:0 0 0 54px}
+.road::before{content:"";position:absolute;left:21px;top:8px;bottom:8px;width:14px;background:#3a3f47;border-radius:7px}
+.road::after{content:"";position:absolute;left:27px;top:14px;bottom:14px;width:2px;background:repeating-linear-gradient(180deg,#e9e5d2 0 10px,transparent 10px 20px)}
+.fill{position:absolute;left:21px;top:8px;width:14px;height:0;background:var(--hv);border-radius:7px;z-index:1;transition:height .6s ease}
+.dot{position:absolute;left:14px;top:0;width:28px;height:28px;z-index:3;background:var(--or);border:4px solid #fff;border-radius:50%;box-shadow:0 0 0 2px #000;transition:top .6s ease,left .6s ease;margin-top:-6px}
+.road li{position:relative;margin:0 0 6px}
+.node{display:block;width:100%;text-align:left;background:transparent;border:0;color:inherit;padding:8px 0 6px}
+.post{display:inline-block;font:800 12px/1 var(--display);letter-spacing:.08em;color:#000;background:var(--hv);border-radius:3px;padding:3px 6px 2px;font-style:normal;margin-bottom:3px}
+.node b{display:block;font:800 25px/1.05 var(--display);text-transform:uppercase;letter-spacing:.01em}
+html[lang=th] .node b{font:700 20px/1.3 var(--display);text-transform:none}
+.node .tag{margin-top:4px}
+.d{display:none;margin:2px 0 12px;padding:10px 12px;background:var(--as2);border-left:5px solid var(--hv);border-radius:0 6px 6px 0;font-size:16px;color:var(--on-as)}
+.d .go{margin-top:8px}
+.road li.on .d{display:block}
+.road li.on .node b{color:var(--hv)}
+.btn{display:inline-block;background:var(--hv);color:#000;border:3px solid #000;border-radius:6px;font:800 19px/1 var(--display);text-transform:uppercase;letter-spacing:.05em;padding:11px 16px 10px;text-decoration:none;box-shadow:3px 3px 0 #000;min-height:44px}
+html[lang=th] .btn{font:700 17px/1.2 var(--display);text-transform:none}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #000}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor;box-shadow:none}
+.flowbar{margin:20px 0 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.flowbar .btn{box-shadow:none;border-color:var(--hv)}
+
+/* 4 · note */
+.note{background:var(--bg2)}
+.cols{display:grid;gap:14px;margin-top:20px}
+.col{background:var(--card);border:3px solid var(--rule);border-radius:6px;padding:14px 15px 16px;box-shadow:5px 5px 0 var(--rule)}
+.col h3{margin:0 0 8px;font:800 24px/1 var(--display);text-transform:uppercase;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+html[lang=th] .col h3{font:700 20px/1.3 var(--display);text-transform:none}
+.col h3 span{font:600 12px var(--ui);color:var(--ortext);letter-spacing:.05em;text-transform:none}
+.col ul{margin:0;padding:0 0 0 18px;font-size:16px}
+.col li{margin:0 0 6px}
+.letter{font-size:clamp(19px,4.8vw,28px);line-height:1.42;max-width:36ch;margin:0}
+@media (min-width:1024px){.letter{max-width:52ch}}
+.letter strong{background:var(--hv);color:#000;padding:0 .1em;font-weight:600;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* sources + footer */
+.src{max-width:1240px;margin:0 auto;padding:34px 16px 6px;font-size:13px;color:var(--mute)}
+.src h4{font:700 12px var(--ui);letter-spacing:.2em;text-transform:uppercase;margin:0 0 8px;color:var(--ink)}
+.src ol{margin:0;padding-left:22px}
+.src li{margin:0 0 4px}
+.src a{color:var(--ink)}
+footer{max-width:1240px;margin:0 auto;padding:16px 16px 48px;font:500 14px/1.5 var(--ui);color:var(--mute)}
+footer a{color:var(--mute)}
+
+/* help card sheet */
+.sheet{position:fixed;inset:0;z-index:80;background:var(--bg);overflow:auto;-webkit-overflow-scrolling:touch}
+.sheet-in{max-width:880px;margin:0 auto;padding:0 16px 40px}
+.sh-h{position:sticky;top:0;z-index:2;background:var(--hv);color:#000;margin:0 -16px 14px;padding:0 16px;height:var(--strip);display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #000}
+.sh-h h2{margin:0;font:800 24px/1 var(--display);text-transform:uppercase}
+html[lang=th] .sh-h h2{font:700 20px/1.2 var(--display);text-transform:none}
+.x{width:42px;height:42px;border-radius:50%;border:0;background:#000;color:var(--hv);font:700 28px/1 var(--ui)}
+.lab{font:700 12px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:16px 0 7px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.cc{border:3px solid var(--rule);background:var(--card);color:var(--ink);border-radius:999px;font:600 17px/1 var(--ui);padding:10px 16px;min-height:46px}
+.cc[aria-pressed=true],.cc[aria-checked=true]{background:var(--hv);color:#000;border-color:#000;box-shadow:3px 3px 0 #000}
+.row2{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.phone{border:3px solid var(--rule);background:var(--card);color:var(--ink);border-radius:6px;font:500 18px var(--ui);padding:9px 12px;min-height:46px;width:min(100%,280px)}
+.hc{margin-top:18px;background:#fff;color:#111;border:4px solid #000;border-radius:8px;box-shadow:6px 6px 0 #000;overflow:hidden}
+.hc-h{background:var(--haz);color:#000;padding:0}
+.hc-h div{background:var(--hv);margin:9px 0;padding:7px 14px;font:800 24px/1.1 var(--display);text-transform:uppercase;letter-spacing:.04em;display:flex;gap:12px;flex-wrap:wrap}
+.hc-h .l-th,.hc-h .l-hi{font-weight:700;text-transform:none}
+.blk{padding:12px 16px 12px;border-bottom:2px dashed #bbb}
+.blk .ln{font:700 11px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:#666;margin:0 0 2px}
+.blk .big{font-size:clamp(23px,6.2vw,32px);line-height:1.25;font-weight:700;margin:0 0 4px}
+.blk .mid{font-size:18px;line-height:1.4;margin:3px 0 0;font-weight:600}
+.blk .sm{font-size:16px;line-height:1.4;margin:3px 0 0;color:#333}
+.l-en{font-family:var(--ui)}
+.l-th{font-family:"Prompt","Noto Sans Thai",sans-serif}
+.l-hi{font-family:"Noto Sans Devanagari","Prompt",sans-serif}
+.l-my{font-family:"Noto Sans Myanmar","Prompt",sans-serif;line-height:1.55}
+.l-zh{font-family:"Noto Sans SC","PingFang SC",sans-serif}
+.loc{padding:12px 16px 14px;background:#f4f1e0}
+.loc b{font:800 22px/1.1 var(--display);text-transform:uppercase}
+.loc p{margin:2px 0 0;font-size:16px;color:#222;word-break:break-word}
+.loc a{color:#0a4fd0}
+.acts{margin-top:18px;display:grid;gap:10px}
+.btn.big{width:100%;font-size:26px;padding:15px 16px 14px}
+html[lang=th] .btn.big{font-size:21px}
+.acts3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.acts3 .btn{box-shadow:none;background:var(--card);color:var(--ink);border-color:var(--rule);font-size:16px;padding:10px 6px;text-align:center}
+.sendnote{font-size:13px;color:var(--mute);margin:4px 0 0}
+.send{background:var(--as);color:var(--hv);border-color:#000;box-shadow:none;text-align:center}
+
+/* full-screen show card */
+.show{position:fixed;inset:0;z-index:100;background:var(--hv);color:#000;display:flex;flex-direction:column;padding:12px 16px 16px;overflow:auto}
+.show-t{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.show-t .cc{background:transparent;color:#000;border-color:#000;min-height:42px;padding:8px 14px}
+.show-t .cc[aria-pressed=true]{background:#000;color:var(--hv);box-shadow:none}
+.show-t .x{margin-left:auto}
+.show-b{flex:1;display:flex;flex-direction:column;justify-content:center;padding:14px 0}
+.show-b .h{font-size:clamp(26px,7vw,52px);font-weight:700;margin:0 0 6px}
+.show-b .p{font-size:clamp(34px,9.4vw,92px);font-weight:700;line-height:1.22;margin:0;text-wrap:balance}
+.show-b .x2{font-size:clamp(22px,5vw,40px);font-weight:600;margin:12px 0 0}
+.show-b .w{font-size:clamp(22px,5vw,40px);font-weight:600;margin:12px 0 0;line-height:1.35}
+.show-f{border-top:4px solid #000;padding-top:10px;font:600 clamp(17px,3.6vw,26px)/1.35 var(--ui)}
+.show-f a{color:#000}
+.show-f .btn{background:#000;color:var(--hv);margin-top:10px}
+
+.toast{position:fixed;z-index:120;left:50%;top:calc(var(--strip) + 12px);transform:translateX(-50%);background:#000;color:var(--hv);font:600 15px var(--ui);padding:9px 16px;border-radius:999px;border:2px solid var(--hv);max-width:90vw}
+
+/* desktop: the width is used */
+@media (min-width:760px){
+  .logo small{display:inline}
+  .probs{grid-template-columns:repeat(4,1fr)}
+  .prob{min-height:116px;font-size:32px}
+  html[lang=th] .prob{font-size:24px}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .cols{grid-template-columns:repeat(3,1fr)}
+  .acts{grid-template-columns:1fr 1fr}
+  .acts .full{grid-column:1/-1}
+  .sheet-in{padding:0 28px 50px}
+  .sh-h{margin:0 -28px 14px;padding:0 28px}
+}
+@media (min-width:1024px){
+  .strip{padding:0 28px}
+  .hero{padding-top:var(--strip);display:grid;grid-template-columns:minmax(460px,35%) 1fr}
+  #map{left:min(35%,100%);left:max(460px,35%)}
+  .hero-ui{right:auto;width:max(460px,35%);background:var(--as);justify-content:center;gap:26px;padding:30px 34px;pointer-events:auto}
+  .title{margin:0;background:transparent;border:0;box-shadow:none;color:#fff;padding:0}
+  .kick{color:var(--hv);font-size:12px}
+  h1{font-size:clamp(58px,5.6vw,92px);line-height:.93}
+  html[lang=th] h1{font-size:clamp(40px,3.9vw,64px)}
+  h1 mark{background:var(--hv);color:#000}
+  .panel{padding:0;background:transparent}
+  .panel::before{margin:0 0 16px;height:10px}
+  .where b{font-size:34px}
+  html[lang=th] .where b{font-size:26px}
+  .tile b{font-size:46px}
+  .help{min-height:68px;font-size:38px}
+  html[lang=th] .help{font-size:30px}
+  .sec{padding:76px 28px 82px}
+  .band .in{padding:70px 28px 80px}
+  .src,footer{padding-left:28px;padding-right:28px}
+  .road{padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding-top:62px}
+  .road::before{left:0;right:0;top:20px;bottom:auto;width:auto;height:14px}
+  .road::after{left:0;right:0;top:26px;bottom:auto;width:auto;height:2px;background:repeating-linear-gradient(90deg,#e9e5d2 0 10px,transparent 10px 20px)}
+  .fill{left:0;top:20px;height:14px;width:0;transition:width .6s ease}
+  .dot{margin-top:0;top:13px;transition:left .6s ease}
+  .road li{margin:0}
+  .node b{font-size:30px}
+  html[lang=th] .node b{font-size:22px}
+  .d{display:block;opacity:.55;font-size:16px;transition:opacity .2s}
+  .road li.on .d{opacity:1}
+  .show-f{display:flex;gap:24px;align-items:center;justify-content:space-between}
+  .show-f .btn{margin-top:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<!-- MARCUS: optional art later, e.g. a hand-lettered "HELP" sign for the card header; none needed for the page to work -->
+
+<header class="strip">
+  <a class="logo" href="#top">Road Help <small data-i="tagline"></small></a>
+  <button class="lang" id="lang" type="button" aria-label="ไทย | EN"><span id="lt">ไทย</span> | <span id="le">EN</span></button>
+</header>
+
+<main id="top">
+<!-- 1 -->
+<section class="hero" aria-label="Map">
+  <div id="map"></div>
+  <div class="hero-ui">
+    <div class="title">
+      <p class="kick" data-i="kick"></p>
+      <h1><span data-i="h1a"></span> <mark data-i="h1b"></mark></h1>
+    </div>
+    <div class="panel">
+      <div class="where">
+        <span class="chip" id="src"></span>
+        <b id="road">&nbsp;</b>
+        <small id="place">&nbsp;</small>
+      </div>
+      <div class="tiles">
+        <div class="tile"><b id="km">10.2</b><span id="kmu"></span></div>
+        <div class="tile"><b id="mn">12</b><span id="mnu"></span></div>
+      </div>
+      <p class="est" id="est"></p>
+      <button class="help" id="help" type="button" data-i="help"></button>
+      <div class="mini"><button class="pill" id="locate" type="button" data-i="locate"></button><span id="hint" data-i="tapmap"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="sec" id="what">
+  <p class="k" data-i="k2"></p>
+  <h2 data-i="h2a"></h2>
+  <div class="probs" id="probs"></div>
+</section>
+
+<!-- TRA band: tow truck -->
+<section class="band" id="b1" style="background-image:url(img/tow.jpg)" aria-label="TRA">
+  <div class="in">
+    <p class="k" data-i="kb1"></p>
+    <h2 data-i="hb1"></h2>
+    <div class="stats" id="stats-tra"></div>
+  </div>
+  <p class="cred">Photo: <a href="https://commons.wikimedia.org/wiki/File:ISUZU,_FTR_240,_Thailand_Traffic_Police,_Tow_truck,.jpg">Mj-bird</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, Wikimedia Commons. A Thailand Traffic Police tow truck.</p>
+</section>
+
+<!-- 3 -->
+<section class="flow">
+  <div class="sec" id="flow">
+    <p class="k" data-i="k3"></p>
+    <h2 data-i="h3"></h2>
+    <div class="legend"><span class="tag today" data-i="t_today"></span><span class="tag demo" data-i="t_demo"></span><span class="tag idea" data-i="t_idea"></span></div>
+    <ol class="road" id="road-flow"><span class="fill" id="fill"></span><span class="dot" id="dot"></span></ol>
+    <div class="flowbar"><button class="btn" id="ping" type="button" data-i="ping"></button></div>
+  </div>
+</section>
+
+<!-- Mot Dang band: Doi Suthep road -->
+<section class="band" id="b2" style="background-image:url(img/suthep.jpg)" aria-label="Mot Dang">
+  <div class="in">
+    <p class="k" data-i="kb2"></p>
+    <h2 data-i="hb2"></h2>
+    <div class="stats" id="stats-md"></div>
+  </div>
+  <p class="cred">Photo: <a href="https://commons.wikimedia.org/wiki/File:20171106_Road_below_Wat_Phrathat_Doi_Suthep_monastery_0058_DxO.jpg">Jakub Hałun</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, Wikimedia Commons. The road below Wat Phra That Doi Suthep.</p>
+</section>
+
+<!-- 4 -->
+<section class="note">
+  <div class="sec" id="note">
+    <p class="k" data-i="k4"></p>
+    <h2 data-i="h4"></h2>
+    <p class="letter" id="letter"></p>
+    <div class="cols" id="cols"></div>
+    <div class="cta"><a class="btn" id="coffee1" href="#"></a></div>
+  </div>
+</section>
+
+<!-- closing band: Mae Chaem -->
+<section class="band" id="b3" style="background-image:url(img/mae.jpg)" aria-label="Coffee">
+  <div class="in">
+    <p class="k" data-i="kb3"></p>
+    <h2 data-i="hb3"></h2>
+    <p><a class="btn" id="coffee2" href="#"></a></p>
+  </div>
+  <p class="cred">Photo: <a href="https://commons.wikimedia.org/wiki/File:Chiang_mai_province_road_1263.jpg">Takeaway</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, Wikimedia Commons. Terraces along Route 1263, Mae Chaem district.</p>
+</section>
+</main>
+
+<div class="src" id="srcs"></div>
+<footer id="foot"></footer>
+
+<!-- help card sheet -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" hidden>
+  <div class="sheet-in">
+    <div class="sh-h"><h2 id="sh-t" data-i="sh_t"></h2><button class="x" id="sh-x" type="button" aria-label="Close">&times;</button></div>
+    <p class="lab" data-i="lab1"></p>
+    <div class="chips" id="c-prob" role="radiogroup"></div>
+    <p class="lab" data-i="lab2"></p>
+    <div class="chips" id="c-lang"></div>
+    <div class="row2" style="margin-top:12px">
+      <span class="lab" style="margin:0" data-i="lab3"></span>
+      <div class="chips" id="c-part"></div>
+    </div>
+    <p class="lab" data-i="lab4"></p>
+    <input class="phone" id="phone" type="tel" inputmode="tel" autocomplete="off" placeholder="08x xxx xxxx">
+    <article class="hc" id="hc"></article>
+    <div class="acts">
+      <button class="btn big full" id="show-btn" type="button" data-i="showfs"></button>
+      <div class="acts3 full">
+        <button class="btn" id="copy" type="button" data-i="copy"></button>
+        <a class="btn" id="line" target="_blank" rel="noopener">LINE</a>
+        <a class="btn" id="wa" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="full">
+        <a class="btn send" id="send" href="#" style="display:block" data-i="send"></a>
+        <p class="sendnote" data-i="sendnote"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- full-screen show card -->
+<div class="show" id="show" hidden role="dialog" aria-modal="true">
+  <div class="show-t" id="show-t"></div>
+  <div class="show-b" id="show-b"></div>
+  <div class="show-f" id="show-f"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+let L=(new URLSearchParams(location.search).get('lang')||navigator.language||'en').toLowerCase().startsWith('th')?'th':'en';
+let li=L==='th'?1:0;
+
+/* ---------- page text, [EN, TH] ---------- */
+const T={
+ tagline:['Thai Road Assist × Mot Dang × Hongdam','Thai Road Assist × มดแดง × หงส์ดำ'],
+ kick:['A demo for Sanya','เดโมสำหรับ Sanya'],
+ h1a:['Stuck on the road,','รถเสียกลางทาง'],
+ h1b:['in any language.','ขอความช่วยเหลือได้ทุกภาษา'],
+ src_demo:['Demo point · Superhighway','จุดตัวอย่าง · ซุปเปอร์ไฮเวย์'],
+ src_gps:['Your location','ตำแหน่งของคุณ'],
+ src_tap:['Pin you dropped','หมุดที่คุณปัก'],
+ src_find:['Looking for you…','กำลังหาตำแหน่งของคุณ…'],
+ km:['km','กม.'], mnu:['min','นาที'], hr:['h','ชม.'],
+ est:['By road from TRA, San Kamphaeng. OSRM estimate, no live traffic.','ทางรถจาก TRA สันกำแพง ประมาณการโดย OSRM ไม่รวมจราจรจริง'],
+ help:['I need help','ขอความช่วยเหลือ'],
+ locate:['Use my location','ใช้ตำแหน่งของฉัน'],
+ tapmap:['Tap the map to move the pin.','แตะแผนที่เพื่อย้ายหมุด'],
+ denied:['Location is off. The demo point stays.','ไม่ได้เปิดตำแหน่ง ใช้จุดตัวอย่างต่อไป'],
+ route:['Route','ทางหลวง'],
+ near:['Near','ใกล้'],
+ noroad:['No road name in the map here','ไม่มีชื่อถนนในแผนที่ตรงนี้'],
+ noname:['Road name not loaded','ยังโหลดชื่อถนนไม่ได้'],
+ pop_you:['You are here','คุณอยู่ที่นี่'],
+ pop_tra:['TRA, San Kamphaeng','TRA สันกำแพง'],
+ pop_tra2:['Map point: Serene Park, Ton Pao. The office sits inside the estate; the pin is approximate.','จุดบนแผนที่: ซีรีนพาร์ค ต้นเปา สำนักงานอยู่ในหมู่บ้าน หมุดเป็นตำแหน่งโดยประมาณ'],
+ pop_mech:['If a mechanic left TRA now: about','ถ้าช่างออกจาก TRA ตอนนี้ ประมาณ'],
+ moved:['Pin moved.','ย้ายหมุดแล้ว'],
+ k2:['2 · Tap what is wrong','2 · แตะที่เกิดปัญหา'],
+ h2a:['One tap. A card the mechanic can read.','แตะครั้งเดียว ได้การ์ดที่ช่างอ่านได้'],
+ kb1:['Thai Road Assist, from its site','Thai Road Assist จากเว็บไซต์ของบริษัท'],
+ hb1:['What TRA covers','TRA ดูแลอะไรบ้าง'],
+ kb2:['Mot Dang, on the same roads','มดแดง บนถนนเส้นเดียวกัน'],
+ hb2:['What the map already holds','สิ่งที่แผนที่มีอยู่แล้ว'],
+ k3:['3 · How it fits together','3 · ทุกส่วนต่อกันอย่างไร'],
+ h3:['From a reader to a mechanic','จากผู้อ่านถึงช่างซ่อม'],
+ t_today:['Exists today','มีแล้ว'], t_demo:['This page','หน้านี้'], t_idea:['To build together','สร้างด้วยกัน'],
+ ping:['Send a test ping','ส่งสัญญาณทดสอบ'],
+ playing:['Playing…','กำลังเล่น…'],
+ opencard:['Open the card','เปิดการ์ด'],
+ k4:['4 · A note for Sanya','4 · ถึงคุณ Sanya'],
+ h4:['Three teams, one roadside','สามทีม หนึ่งข้างถนน'],
+ kb3:['Next','ต่อไป'],
+ hb3:['Coffee with Sallo and me?','กาแฟกับ Sallo และฉันไหม'],
+ coffee:['Coffee with Sallo and me?','กาแฟกับ Sallo และฉันไหม'],
+ coffee2:['Say yes by email','ตอบรับทางอีเมล'],
+ sh_t:['Help card','การ์ดขอความช่วยเหลือ'],
+ lab1:['What is wrong?','เกิดอะไรขึ้น'],
+ lab2:['Show it in','แสดงเป็นภาษา'],
+ lab3:['Thai ending','คำลงท้ายภาษาไทย'],
+ lab4:['Your number (optional)','เบอร์โทรของคุณ (ไม่บังคับ)'],
+ showfs:['Show full-screen','แสดงเต็มจอ'],
+ copy:['Copy','คัดลอก'], copied:['Copied. Paste it into LINE or WhatsApp.','คัดลอกแล้ว วางใน LINE หรือ WhatsApp ได้เลย'],
+ send:['Send this card','ส่งการ์ดนี้'],
+ sendnote:['Demo: in the live version this goes to TRA\'s dispatch.','เดโม: ในเวอร์ชันจริงจะส่งไปยังศูนย์สั่งงานของ TRA'],
+ next:['Next language','ภาษาถัดไป'],
+ openmap:['Open the map','เปิดแผนที่'],
+ loc:['Location','ตำแหน่ง'],
+ srch:['Sources','แหล่งที่มา'],
+ close:['Close','ปิด'],
+ mapat:['Map point','จุดบนแผนที่']
+};
+const t=k=>T[k][li];
+
+const PROBS=[
+ ['flat','Flat tyre','ยางแบน'],['battery','Dead battery','แบตหมด'],['start','Won\'t start','สตาร์ทไม่ติด'],
+ ['accident','Accident','อุบัติเหตุ'],['fuel','Out of fuel','น้ำมันหมด'],['locked','Locked out','ล็อกกุญแจในรถ'],['tow','Need a tow','ต้องการรถยก']
+];
+const LN=[['th','ไทย'],['en','English'],['hi','हिन्दी'],['my','မြန်မာ'],['zh','中文']];
+
+/* ---------- the card text ---------- */
+const HELLO={th:p=>'ช่วยด้วย'+p,en:()=>'Please help.',hi:()=>'कृपया मदद कीजिए।',my:()=>'ကူညီပေးပါ။',zh:()=>'请帮帮我。'};
+const PR={
+ flat:{
+  th:p=>'ยางรถแบน ขอช่างมาเปลี่ยนยางให้หน่อย'+p,
+  en:()=>'I have a flat tyre. I need a tyre change.',
+  hi:()=>'गाड़ी का टायर पंक्चर है। टायर बदलने के लिए मैकेनिक चाहिए।',
+  my:()=>'ကားတာယာ ပေါက်နေပါသည်။ တာယာလဲပေးရန် အကူအညီလိုပါသည်။',
+  zh:()=>'我的车爆胎了，需要换轮胎。'},
+ battery:{
+  th:p=>'แบตเตอรี่หมด สตาร์ทรถไม่ติด ขอช่วยพ่วงแบตหรือเปลี่ยนแบตเตอรี่'+p,
+  en:()=>'My battery is dead. I need a jump start or a new battery.',
+  hi:()=>'गाड़ी की बैटरी खत्म हो गई है। जंप-स्टार्ट या नई बैटरी चाहिए।',
+  my:()=>'ကားဘက်ထရီ ကုန်နေပါသည်။ ဘက်ထရီ ဆက်ပေးရန် သို့မဟုတ် ဘက်ထရီအသစ် လိုပါသည်။',
+  zh:()=>'车子电瓶没电了，需要搭电或换新电瓶。'},
+ start:{
+  th:p=>'รถสตาร์ทไม่ติด ไม่ทราบสาเหตุ ขอช่างมาตรวจดู'+p,
+  en:()=>'My vehicle will not start. I need a mechanic to check it.',
+  hi:()=>'गाड़ी स्टार्ट नहीं हो रही है। कृपया मैकेनिक भेजिए।',
+  my:()=>'ကား စက်နှိုးမရပါ။ ကားပြင်ဆရာ လာကြည့်ပေးပါ။',
+  zh:()=>'车子无法启动，请派技师来检查。'},
+ accident:{
+  th:p=>'รถเกิดอุบัติเหตุ ขอความช่วยเหลือด่วน'+p,
+  en:()=>'I have had an accident. I need help now.',
+  hi:()=>'गाड़ी का एक्सीडेंट हो गया है। तुरंत मदद चाहिए।',
+  my:()=>'ကားမတော်တဆမှု ဖြစ်ပါသည်။ အရေးပေါ် အကူအညီလိုပါသည်။',
+  zh:()=>'我出了交通事故，需要紧急帮助。'},
+ fuel:{
+  th:p=>'รถน้ำมันหมด ขอให้นำน้ำมันมาส่ง'+p,
+  en:()=>'I have run out of fuel. I need fuel brought to me.',
+  hi:()=>'गाड़ी का ईंधन खत्म हो गया है। ईंधन पहुँचाने में मदद चाहिए।',
+  my:()=>'ကားဆီကုန်နေပါသည်။ ဆီလာပို့ပေးရန် အကူအညီလိုပါသည်။',
+  zh:()=>'车子没油了，需要送油。'},
+ locked:{
+  th:p=>'ลืมกุญแจไว้ในรถ ประตูล็อก เปิดไม่ได้ ขอช่างมาช่วยเปิดประตู'+p,
+  en:()=>'My keys are inside and the vehicle is locked. I need someone to open the door.',
+  hi:()=>'चाबी गाड़ी के अंदर रह गई है और दरवाज़ा लॉक है। दरवाज़ा खोलने में मदद चाहिए।',
+  my:()=>'ကားသော့ကို ကားအတွင်းမှာ ကျန်ခဲ့ပြီး တံခါးဖွင့်မရပါ။ တံခါးဖွင့်ပေးရန် အကူအညီလိုပါသည်။',
+  zh:()=>'钥匙锁在车里，车门打不开，需要开锁。'},
+ tow:{
+  th:p=>'รถวิ่งต่อไม่ได้ ขอรถยกมายกรถไปอู่'+p,
+  en:()=>'My vehicle cannot be driven. I need a tow truck to take it to a garage.',
+  hi:()=>'गाड़ी चल नहीं सकती। गाड़ी को गैराज तक ले जाने के लिए टो ट्रक चाहिए।',
+  my:()=>'ကားမောင်းလို့မရပါ။ ကားကို ကားပြင်ဆိုင်သို့ ဆွဲပေးရန် tow truck လိုပါသည်။',
+  zh:()=>'车子无法行驶，需要拖车把车拖到修理厂。'}
+};
+const EXTRA={accident:{
+ th:()=>'ถ้ามีผู้บาดเจ็บ ขอให้โทร 1669 (แพทย์ฉุกเฉิน) และ 191 (ตำรวจ)',
+ en:()=>'If anyone is hurt: 1669 (medical), 191 (police).',
+ hi:()=>'अगर कोई घायल है: 1669 (मेडिकल), 191 (पुलिस)।',
+ my:()=>'ဒဏ်ရာရသူရှိလျှင် 1669 (ဆေးဘက်ဆိုင်ရာ)၊ 191 (ရဲ) သို့ ဖုန်းဆက်ပါ။',
+ zh:()=>'如有人受伤：1669（急救）、191（警察）。'}};
+const WHERE={
+ th:p=>'ตำแหน่งอยู่ตามลิงก์แผนที่ด้านล่าง กรุณามาที่นี่หรือโทรกลับ'+p,
+ en:()=>'My location is in the map link below. Please come here or call me back.',
+ hi:()=>'मेरी लोकेशन नीचे मैप लिंक में है। कृपया यहाँ आइए या मुझे वापस फ़ोन कीजिए।',
+ my:()=>'ကျွန်ုပ်၏တည်နေရာသည် အောက်ပါမြေပုံလင့်ခ်တွင် ရှိပါသည်။ ဤနေရာသို့ လာပေးပါ သို့မဟုတ် ဖုန်းပြန်ခေါ်ပေးပါ။',
+ zh:()=>'我的位置在下方地图链接里。请过来，或给我回电话。'};
+const LOCW={th:'ตำแหน่ง',en:'Location',hi:'लोकेशन',my:'တည်နေရာ',zh:'位置'};
+const NUMW={th:'เบอร์โทรกลับ',en:'Call me on',hi:'मेरा फ़ोन नंबर',my:'ဖုန်းနံပါတ်',zh:'我的电话'};
+const HEAD={th:'ช่วยด้วย',en:'Help',hi:'मदद',my:'ကူညီပါ',zh:'求助'};
+
+/* ---------- state ---------- */
+const TRA=[99.07418,18.74732];
+const FB={pos:[99.01713,18.80595],d:10163,t:711,
+ c:[[99.01713,18.80595],[99.01732,18.80569],[99.0176,18.80528],[99.01798,18.80462],[99.01823,18.80411],[99.01842,18.8037],[99.01843,18.80368],[99.01845,18.80363],[99.01945,18.80131],[99.02044,18.79898],[99.02154,18.7963],[99.02231,18.79449],[99.02271,18.79364],[99.02278,18.7935],[99.02315,18.79277],[99.02491,18.78973],[99.02541,18.78883],[99.02568,18.78822],[99.0259,18.78767],[99.02616,18.787],[99.02629,18.78656],[99.02644,18.78597],[99.02657,18.78545],[99.02669,18.78486],[99.02679,18.78418],[99.02685,18.78374],[99.02692,18.78321],[99.02698,18.78277],[99.02705,18.78216],[99.02713,18.78146],[99.02732,18.78028],[99.02758,18.77945],[99.0276,18.77927],[99.02764,18.77902],[99.02766,18.77887],[99.02828,18.77443],[99.02832,18.77417],[99.02837,18.7738],[99.02844,18.77332],[99.0288,18.77089],[99.02896,18.76983],[99.029,18.76946],[99.02904,18.76921],[99.02907,18.76894],[99.0291,18.76875],[99.02911,18.76865],[99.02919,18.76857],[99.02924,18.76844],[99.0293,18.76804],[99.02932,18.76783],[99.02936,18.76767],[99.02945,18.76756],[99.02953,18.76748],[99.03,18.76707],[99.03007,18.76702],[99.03014,18.76698],[99.03022,18.76695],[99.03031,18.76693],[99.03071,18.76686],[99.03088,18.76682],[99.031,18.76677],[99.03114,18.76671],[99.03125,18.76664],[99.03139,18.76654],[99.03151,18.76643],[99.03175,18.76619],[99.03191,18.76603],[99.032,18.76595],[99.03201,18.76594],[99.03209,18.76587],[99.03226,18.76578],[99.03244,18.76571],[99.03269,18.76568],[99.03304,18.76566],[99.03375,18.76566],[99.03424,18.76565],[99.03431,18.76565],[99.03449,18.76554],[99.03474,18.76552],[99.03505,18.76547],[99.03529,18.76542],[99.03554,18.76536],[99.03573,18.7653],[99.03592,18.76524],[99.03615,18.76515],[99.03634,18.76506],[99.03652,18.76496],[99.0367,18.76486],[99.03693,18.76471],[99.03742,18.76437],[99.03863,18.76349],[99.03872,18.76343],[99.039,18.76322],[99.03938,18.76295],[99.03974,18.76266],[99.03987,18.76257],[99.04042,18.7622],[99.04067,18.76204],[99.04119,18.76171],[99.04129,18.76166],[99.04146,18.76157],[99.04178,18.76139],[99.04308,18.76072],[99.04369,18.76041],[99.04448,18.76002],[99.04625,18.75916],[99.0477,18.75842],[99.04897,18.75776],[99.04945,18.75752],[99.04978,18.75735],[99.05001,18.75723],[99.05022,18.75712],[99.052,18.75619],[99.05256,18.75589],[99.05296,18.75569],[99.05304,18.75566],[99.05341,18.75543],[99.05349,18.75538],[99.05454,18.75484],[99.05549,18.75435],[99.05629,18.75395],[99.05963,18.75228],[99.06093,18.7516],[99.06189,18.75112],[99.0622,18.75097],[99.06303,18.75055],[99.06353,18.75031],[99.06534,18.74944],[99.06644,18.74888],[99.06669,18.74875],[99.06716,18.74851],[99.06807,18.74805],[99.06824,18.74796],[99.06835,18.7479],[99.06916,18.74749],[99.06957,18.74729],[99.06964,18.74725],[99.07028,18.74693],[99.07078,18.74668],[99.07135,18.74639],[99.07198,18.74607],[99.07248,18.74582],[99.07408,18.745],[99.07425,18.74528],[99.07432,18.7456],[99.07435,18.74568],[99.07435,18.74577],[99.07434,18.74582],[99.07432,18.74591],[99.07427,18.74605],[99.07425,18.74604],[99.07424,18.74604],[99.07422,18.74604],[99.0742,18.74605],[99.07418,18.74606],[99.07417,18.74607],[99.07416,18.74609],[99.07416,18.74611],[99.07416,18.74612],[99.07416,18.74614],[99.07417,18.74616],[99.07419,18.74617],[99.07421,18.74618],[99.07422,18.74618],[99.07421,18.74621],[99.0742,18.74625],[99.0742,18.74629],[99.07421,18.74636],[99.07423,18.74644],[99.07437,18.74676],[99.07447,18.7471],[99.07416,18.74728]],
+ road:{en:'Super Highway',th:'ถนนซุปเปอร์ไฮเวย์',ref:'11'},
+ place:{en:'Kawila · Mueang Chiang Mai',th:'กาวิละ · เมืองเชียงใหม่'}};
+const S={pos:FB.pos,src:'demo',acc:0,route:{d:FB.d,t:FB.t,c:FB.c,est:false},road:{name:FB.road[L],ref:FB.road.ref,place:FB.place[L],none:false,fail:false},
+ prob:'flat',langs:{th:1,en:1,hi:1,my:0,zh:0},part:'ค่ะ',phone:''};
+
+/* ---------- map ---------- */
+let map,meM,traM,mechM,popup;
+const isDesk=()=>window.innerWidth>=1024;
+const pad=()=>isDesk()?{top:80,bottom:80,left:80,right:80}:{top:170,bottom:330,left:34,right:34};
+function mk(cls,txt){const e=document.createElement('div');e.className=cls;if(txt)e.textContent=txt;return e}
+function pop(ll,html){if(popup)popup.remove();popup=new maplibregl.Popup({offset:18,closeButton:false,maxWidth:'260px'}).setLngLat(ll).setHTML(html).addTo(map)}
+function initMap(){
+  try{
+    map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/liberty',center:[(S.pos[0]+TRA[0])/2,(S.pos[1]+TRA[1])/2],zoom:11,attributionControl:{compact:true}});
+  }catch(e){return}
+  const el=mk('me');el.addEventListener('click',e=>{e.stopPropagation();pop(S.pos,'<b>'+esc(t('pop_you'))+'</b><br>'+esc(roadLine())+'<br>'+S.pos[1].toFixed(5)+', '+S.pos[0].toFixed(5))});
+  meM=new maplibregl.Marker({element:el}).setLngLat(S.pos).addTo(map);
+  const te=mk('tra','TRA');te.addEventListener('click',e=>{e.stopPropagation();pop(TRA,'<b>'+esc(t('pop_tra'))+'</b><br>'+esc(t('pop_tra2')))});
+  traM=new maplibregl.Marker({element:te,anchor:'bottom-left'}).setLngLat(TRA).addTo(map);
+  const me2=mk('mech');me2.addEventListener('click',e=>{e.stopPropagation();pop(mechM.getLngLat(),'<b>'+esc(t('pop_mech'))+' '+esc(fmtTime(S.route.t))+'</b><br>OSRM')});
+  mechM=new maplibregl.Marker({element:me2}).setLngLat(TRA).addTo(map);
+  if(reduce)mechM.getElement().style.display='none';
+  map.on('load',()=>{
+    map.addSource('route',{type:'geojson',data:line(S.route.c)});
+    map.addLayer({id:'rc',type:'line',source:'route',layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#000','line-width':11}});
+    map.addLayer({id:'rl',type:'line',source:'route',layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#ffd500','line-width':6}});
+    map.addLayer({id:'rd',type:'line',source:'route',layout:{'line-cap':'butt'},paint:{'line-color':'#000','line-width':2,'line-dasharray':[1.5,2]}});
+    fit(true);drawRoute();
+  });
+  map.on('click',e=>{if(popup){popup.remove();popup=null}setPos([e.lngLat.lng,e.lngLat.lat],'tap')});
+}
+const line=c=>({type:'Feature',geometry:{type:'LineString',coordinates:c}});
+function fit(first){
+  if(!map)return;
+  const b=new maplibregl.LngLatBounds(TRA,TRA);b.extend(S.pos);
+  map.fitBounds(b,{padding:pad(),maxZoom:15,duration:first||reduce?0:900});
+}
+/* route draw + the moving mechanic */
+let anim=0,cum=[];
+function cumul(c){const a=[0];for(let i=1;i<c.length;i++){a.push(a[i-1]+Math.hypot((c[i][0]-c[i-1][0])*Math.cos(c[i][1]*Math.PI/180),c[i][1]-c[i-1][1]))}return a}
+function atFrac(c,f){const a=cum,tot=a[a.length-1];if(!tot)return c[0];const x=f*tot;let i=1;while(i<a.length-1&&a[i]<x)i++;const r=(x-a[i-1])/((a[i]-a[i-1])||1);return[c[i-1][0]+(c[i][0]-c[i-1][0])*r,c[i-1][1]+(c[i][1]-c[i-1][1])*r]}
+function drawRoute(){
+  cancelAnimationFrame(anim);
+  const c=S.route.c;cum=cumul(c);
+  const src=map&&map.getSource&&map.getSource('route');if(!src)return;
+  if(reduce){src.setData(S.route.est?line([TRA,S.pos]):line(c));return}
+  const t0=performance.now(),D=950,LOOP=6200,HOLD=1300;let looping=false,t1=0;
+  const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+  const step=now=>{
+    if(!looping){
+      const f=Math.min(1,(now-t0)/D),e=ease(f);
+      src.setData(line(S.route.est?[TRA,S.pos]:sliceTo(c,e)));
+      if(f<1){anim=requestAnimationFrame(step);return}
+      looping=true;t1=now;
+    }
+    const u=((now-t1)%(LOOP+HOLD));
+    const f=Math.min(1,u/LOOP);
+    if(mechM)mechM.setLngLat(S.route.est?[TRA[0]+(S.pos[0]-TRA[0])*ease(f),TRA[1]+(S.pos[1]-TRA[1])*ease(f)]:atFrac(c,ease(f)));
+    if(!document.hidden&&sheetOpen!==true)anim=requestAnimationFrame(step);else anim=0;
+  };
+  anim=requestAnimationFrame(step);
+}
+function sliceTo(c,f){if(f>=1)return c;const a=cum,x=f*a[a.length-1];const out=[c[0]];let i=1;while(i<a.length&&a[i]<=x){out.push(c[i]);i++}if(i<c.length){const r=(x-a[i-1])/((a[i]-a[i-1])||1);out.push([c[i-1][0]+(c[i][0]-c[i-1][0])*r,c[i-1][1]+(c[i][1]-c[i-1][1])*r])}return out.length<2?[c[0],c[0]]:out}
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!anim&&map&&map.getSource&&map.getSource('route')&&sheetOpen!==true)drawRoute()});
+
+/* ---------- numbers ---------- */
+function fmtKm(m){const k=m/1000;return k>=100?String(Math.round(k)):k.toFixed(1)}
+function fmtTime(s){const m=Math.max(1,Math.round(s/60));if(m<60)return m+' '+t('mnu');const h=Math.floor(m/60),r=m%60;return h+' '+t('hr')+' '+String(r).padStart(2,'0')+' '+t('mnu')}
+let shown={km:FB.d/1000,mn:Math.round(FB.t/60)};
+function count(el,from,to,dec,dur){
+  if(reduce||from===to){el.textContent=dec?to.toFixed(dec):Math.round(to);return}
+  const t0=performance.now();
+  (function f(n){const p=Math.min(1,(n-t0)/dur),e=1-Math.pow(1-p,3),v=from+(to-from)*e;el.textContent=dec?v.toFixed(dec):Math.round(v);if(p<1)requestAnimationFrame(f)})(t0);
+}
+function paintRoute(){
+  const km=S.route.d/1000,mn=Math.round(S.route.t/60);
+  const mnEl=$('mn'),mnU=$('mnu');
+  count($('km'),shown.km,km,km>=100?0:1,700);$('kmu').textContent=t('km');
+  if(S.route.est||!S.route.t){mnEl.textContent='—';mnU.textContent=''}
+  else if(mn>=60){mnEl.textContent=Math.floor(mn/60)+':'+String(mn%60).padStart(2,'0');mnU.textContent=t('hr')}
+  else{count(mnEl,shown.mn,mn,0,700);mnU.textContent=t('mnu')}
+  shown={km,mn:Math.min(mn,59)};
+}
+function roadLine(){const r=S.road;if(r.fail)return t('noname');if(r.none)return r.near?t('near')+' '+r.near:t('noroad');return r.name+(r.ref?' · '+t('route')+' '+r.ref:'')}
+function paintWhere(){
+  $('road').textContent=roadLine();
+  $('place').textContent=(S.road.place?S.road.place+' · ':'')+S.pos[1].toFixed(5)+', '+S.pos[0].toFixed(5);
+  $('src').textContent=S.src==='demo'?t('src_demo'):S.src==='gps'?t('src_gps')+(S.acc?' · ±'+Math.round(S.acc)+' m':''):S.src==='find'?t('src_find'):t('src_tap');
+  $('est').textContent=t('est');
+}
+
+/* ---------- fetch route + road ---------- */
+const cache={};let abortR=null;
+async function jget(url,ms){const c=new AbortController();const to=setTimeout(()=>c.abort(),ms||9000);try{const r=await fetch(url,{signal:c.signal});if(!r.ok)throw new Error(r.status);return await r.json()}finally{clearTimeout(to)}}
+const hav=(a,b)=>{const R=6371000,r=x=>x*Math.PI/180,dl=r(b[1]-a[1]),dn=r(b[0]-a[0]);const h=Math.sin(dl/2)**2+Math.cos(r(a[1]))*Math.cos(r(b[1]))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
+function thin(c,n){if(c.length<=n)return c;const s=Math.ceil(c.length/n);const o=c.filter((_,i)=>i%s===0);if(o[o.length-1]!==c[c.length-1])o.push(c[c.length-1]);return o}
+async function getRoute(p){
+  try{
+    const j=await jget('https://router.project-osrm.org/route/v1/driving/'+TRA[0]+','+TRA[1]+';'+p[0]+','+p[1]+'?overview=full&geometries=geojson',9000);
+    const r=j.routes[0];return{d:r.distance,t:r.duration,c:thin(r.geometry.coordinates,320),est:false};
+  }catch(e){return{d:hav(TRA,p)*1.3,t:0,c:[TRA,p],est:true}}
+}
+async function getRoad(p){
+  const key='r'+p[1].toFixed(4)+','+p[0].toFixed(4)+L;if(cache[key])return cache[key];
+  try{
+    const j=await jget('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=17&addressdetails=1&extratags=1&namedetails=1&accept-language='+L+'&lat='+p[1]+'&lon='+p[0],9000);
+    const a=j.address||{},nd=j.namedetails||{},ex=j.extratags||{};
+    const name=nd['name:'+L]||nd.name||a.road||'';
+    const place=[a.suburb||a.village||a.hamlet||a.neighbourhood||a.quarter,a.city_district||a.county||a.city||a.town].filter(Boolean).join(' · ');
+    const near=a.hamlet||a.village||a.neighbourhood||a.suburb||a.quarter||a.town||a.city_district||'';const out={name,ref:nd.ref||ex.ref||'',place,near,none:!name,fail:false};cache[key]=out;return out;
+  }catch(e){return{name:'',ref:'',place:'',none:false,fail:true}}
+}
+let seq=0,firstSet=true;
+async function setPos(p,src,acc){
+  const my=++seq;S.pos=p;S.src=src;S.acc=acc||0;
+  if(meM)meM.setLngLat(p);
+  if(src==='tap')toast(t('moved'));
+  const isFB=Math.abs(p[0]-FB.pos[0])<1e-6&&Math.abs(p[1]-FB.pos[1])<1e-6;
+  if(isFB){S.road={name:FB.road[L],ref:FB.road.ref,place:FB.place[L],none:false,fail:false};S.route={d:FB.d,t:FB.t,c:FB.c,est:false}}
+  else{S.road={name:'',ref:'',place:'',none:false,fail:false};S.road.fail=false}
+  paintWhere();if(!isFB){$('road').textContent='…'}
+  fit(firstSet);firstSet=false;
+  const [rt,rd]=await Promise.all([isFB?Promise.resolve(S.route):getRoute(p),isFB?Promise.resolve(S.road):getRoad(p)]);
+  if(my!==seq)return;
+  S.route=rt;S.road=rd;paintRoute();paintWhere();
+  if(map&&map.getSource&&map.getSource('route'))drawRoute();
+  if(sheetOpen)renderCard();
+}
+
+/* ---------- help card ---------- */
+let sheetOpen=false;
+function mapLink(){return 'https://maps.google.com/?q='+S.pos[1].toFixed(5)+','+S.pos[0].toFixed(5)}
+function osmLink(){return 'https://www.openstreetmap.org/?mlat='+S.pos[1].toFixed(5)+'&mlon='+S.pos[0].toFixed(5)+'#map=17/'+S.pos[1].toFixed(5)+'/'+S.pos[0].toFixed(5)}
+const active=()=>LN.filter(l=>S.langs[l[0]]).map(l=>l[0]);
+function parts(l){
+  const p=S.part;
+  const o={h:HELLO[l](p),p:PR[S.prob][l](p),x:EXTRA[S.prob]?EXTRA[S.prob][l]():'',w:WHERE[l](p)};
+  o.n=S.phone.trim()?NUMW[l]+': '+S.phone.trim():'';return o;
+}
+function locName(){return roadLine()+' · '+S.pos[1].toFixed(5)+', '+S.pos[0].toFixed(5)}
+function plain(){
+  const ls=active();const out=ls.map(l=>{const o=parts(l);return [o.h+' '+o.p,o.x,o.w,o.n].filter(Boolean).join('\n')});
+  out.push(ls.map(l=>LOCW[l]).filter((v,i,a)=>a.indexOf(v)===i).join(' / ')+': '+locName()+'\n'+mapLink()+'\n'+osmLink());
+  return out.join('\n\n');
+}
+function renderCard(){
+  const ls=active();
+  $('hc').innerHTML='<div class="hc-h"><div>'+LN.filter(l=>S.langs[l[0]]).map(l=>'<span class="l-'+l[0]+'">'+esc(HEAD[l[0]])+'</span>').join('')+'</div></div>'
+   +ls.map(l=>{const o=parts(l);return '<div class="blk l-'+l+'" lang="'+l+'"><p class="ln">'+esc(LN.find(x=>x[0]===l)[1])+'</p><p class="big">'+esc(o.h)+' '+esc(o.p)+'</p>'
+     +(o.x?'<p class="mid">'+esc(o.x)+'</p>':'')+'<p class="sm">'+esc(o.w)+'</p>'+(o.n?'<p class="mid">'+esc(o.n)+'</p>':'')+'</div>'}).join('')
+   +'<div class="loc"><b>'+esc(t('loc'))+'</b><p>'+esc(locName())+'</p><p><a href="'+mapLink()+'" target="_blank" rel="noopener">'+esc(mapLink().replace('https://',''))+'</a></p></div>';
+  const txt=plain();
+  $('line').href='https://line.me/R/msg/text/?'+encodeURIComponent(txt);
+  $('wa').href='https://wa.me/?text='+encodeURIComponent(txt);
+  $('send').href='mailto:nan@motdang.net?subject='+encodeURIComponent('Demo: help card from the roadside page')+'&body='+encodeURIComponent(txt);
+  $('show-btn').disabled=!ls.length;
+}
+function renderChips(){
+  $('c-prob').innerHTML=PROBS.map(p=>'<button class="cc" type="button" role="radio" aria-pressed="'+(S.prob===p[0])+'" data-p="'+p[0]+'">'+esc(p[1+li])+'</button>').join('');
+  $('c-lang').innerHTML=LN.map(l=>'<button class="cc l-'+l[0]+'" type="button" role="checkbox" aria-checked="'+(!!S.langs[l[0]])+'" data-l="'+l[0]+'">'+esc(l[1])+'</button>').join('');
+  $('c-part').innerHTML=['ค่ะ','ครับ'].map(p=>'<button class="cc l-th" type="button" aria-pressed="'+(S.part===p)+'" data-pt="'+p+'">'+p+'</button>').join('');
+}
+function openSheet(prob){
+  if(prob)S.prob=prob;sheetOpen=true;cancelAnimationFrame(anim);anim=0;
+  $('sheet').hidden=false;document.body.classList.add('lock');$('sheet').scrollTop=0;
+  renderChips();renderCard();$('sh-x').focus({preventScroll:true});
+}
+function closeSheet(){sheetOpen=false;$('sheet').hidden=true;closeShow();document.body.classList.remove('lock');if(map&&map.getSource&&map.getSource('route'))drawRoute();$('help').focus({preventScroll:true})}
+$('c-prob').addEventListener('click',e=>{const b=e.target.closest('[data-p]');if(!b)return;S.prob=b.dataset.p;renderChips();renderCard()});
+$('c-lang').addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(!b)return;const k=b.dataset.l;if(S.langs[k]&&active().length===1)return;S.langs[k]=S.langs[k]?0:1;renderChips();renderCard()});
+$('c-part').addEventListener('click',e=>{const b=e.target.closest('[data-pt]');if(!b)return;S.part=b.dataset.pt;renderChips();renderCard()});
+$('phone').addEventListener('input',e=>{S.phone=e.target.value;renderCard()});
+$('sh-x').onclick=closeSheet;$('help').onclick=()=>openSheet();
+$('copy').onclick=async()=>{
+  const txt=plain();
+  try{await navigator.clipboard.writeText(txt)}catch(e){const a=document.createElement('textarea');a.value=txt;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()}
+  toast(t('copied'));
+};
+
+/* full-screen show card */
+let showL=null;
+function openShow(){const ls=active();if(!ls.length)return;if(!ls.includes(showL))showL=ls[0];$('show').hidden=false;renderShow()}
+function closeShow(){$('show').hidden=true}
+function renderShow(){
+  const ls=active(),l=showL,o=parts(l);
+  $('show-t').innerHTML=ls.map(k=>'<button class="cc l-'+k+'" type="button" aria-pressed="'+(k===l)+'" data-s="'+k+'">'+esc(LN.find(x=>x[0]===k)[1])+'</button>').join('')+'<button class="x" type="button" id="show-x" aria-label="'+esc(t('close'))+'">&times;</button>';
+  $('show-b').className='show-b l-'+l;$('show-b').lang=l;
+  $('show-b').innerHTML='<p class="h">'+esc(o.h)+'</p><p class="p">'+esc(o.p)+'</p>'+(o.x?'<p class="x2">'+esc(o.x)+'</p>':'')+'<p class="w">'+esc(o.w)+'</p>'+(o.n?'<p class="w">'+esc(o.n)+'</p>':'');
+  $('show-f').innerHTML='<div>'+esc(LOCW[l])+': '+esc(locName())+'<br>'+esc(mapLink().replace('https://',''))+'</div><button class="btn" type="button" id="show-n">'+esc(t('next'))+'</button>';
+}
+$('show-t').addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b){showL=b.dataset.s;renderShow()}if(e.target.closest('#show-x'))closeShow()});
+$('show-f').addEventListener('click',e=>{if(e.target.closest('#show-n')){const ls=active();showL=ls[(ls.indexOf(showL)+1)%ls.length];renderShow()}});
+$('show-btn').onclick=openShow;
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('show').hidden)closeShow();else if(sheetOpen)closeSheet()}});
+
+/* ---------- tiles, bands, flow ---------- */
+function renderProbs(){
+  $('probs').innerHTML=PROBS.map((p,i)=>'<button class="prob" type="button" data-p="'+p[0]+'"><i>'+(i+1)+'</i>'+esc(p[1+li])+'<small>'+esc(p[2-li])+'</small></button>').join('')
+   +'<button class="prob dark" type="button" data-p=""><i>8</i>ไทย · EN · हिन्दी<small>မြန်မာ · 中文</small></button>';
+}
+$('probs').addEventListener('click',e=>{const b=e.target.closest('.prob');if(!b)return;b.classList.add('press');setTimeout(()=>{b.classList.remove('press');openSheet(b.dataset.p||null)},reduce?0:160)});
+
+const SRC=[
+ ['TRA, thairoadassist.com: services, packages, coverage radius, contacts. Read 19 October 2026.','https://thairoadassist.com/'],
+ ['TRA address as given to NaN: 200/106 Moo Baan Serene Park, Ton Pao, San Kamphaeng, Chiang Mai 50130. Map point: OpenStreetMap place "Serene Park" (ซีรีนพาร์ค), Ton Pao.','https://nominatim.openstreetmap.org/ui/search.html?q=Serene+Park+San+Kamphaeng'],
+ ['Road distance and drive time: OSRM public demo server, an estimate with no live traffic.','https://project-osrm.org/'],
+ ['Road names at the pin: Nominatim reverse geocoding, data © OpenStreetMap contributors (ODbL).','https://nominatim.org/'],
+ ['Map: OpenFreeMap tiles, OpenStreetMap contributors; MapLibre GL JS 4.7.1.','https://openfreemap.org/'],
+ ['Mot Dang: 5,024 parking places (Chiang Mai, Chiang Rai, Pathum Thani), parking memory; Send, Guide me and road distance on motdang.net place pages.','https://motdang.net/parking/'],
+ ['Mot Dang Safety First: five emergency numbers (1669, 1784, 199, 191, 1155) and 45 rescue units listed by district.','https://motdang.net/sites/safety/'],
+ ['Hongdam: translation pages in Thai, English and Burmese; interpreting quoted in writing. Chiang Mai Visa Desk serves migrant workers from Myanmar, Laos, Cambodia and Vietnam. Hongdam Desk, a client desk on Discord, as NaN describes it; it has no public page.','https://hongdam.net/translation'],
+ ['Card wording in Thai, Hindi, Burmese and Chinese: first drafts, not yet read by native speakers. Sanya, the Hindi is yours to correct.','mailto:nan@motdang.net?subject='+encodeURIComponent('Corrections to the Hindi on the help card')],
+ ['Photographs: Wikimedia Commons, credited under each picture.','https://commons.wikimedia.org/']
+];
+const sup=n=>'<sup><a href="#s'+n+'">['+n+']</a></sup>';
+const STRA=[
+ {n:'24/7',u:'',l:['customer service','บริการลูกค้า'],m:['For questions or emergencies, on Standard, Elite and Prestige.','สำหรับคำถามหรือเหตุฉุกเฉิน ในแพ็กเกจ Standard, Elite และ Prestige'],s:1},
+ {n:15,u:'km +15',l:['coverage radius','รัศมีให้บริการ'],m:['Within 15 km of the city centre, plus a further 15 km. Further out: not found on the site.','ภายใน 15 กม. จากกลางเมือง และอีก 15 กม. ถัดออกไป ไกลกว่านั้น: ไม่พบในเว็บไซต์'],s:1},
+ {n:100,u:'km',l:['tow, once a year','ลากรถ ปีละครั้ง'],m:['One tow a year up to 100 km, on Standard, Elite and Prestige.','ลากรถปีละ 1 ครั้ง ไม่เกิน 100 กม. ในแพ็กเกจ Standard, Elite และ Prestige'],s:1},
+ {n:4,u:'',l:['packages, Basic free','แพ็กเกจ Basic ฟรี'],m:['Basic is free to join. Standard, Elite and Prestige are for cars 0–3, 4–9 and 10+ years old.','Basic สมัครฟรี Standard, Elite, Prestige สำหรับรถอายุ 0–3, 4–9 และ 10 ปีขึ้นไป'],s:1}
+];
+const SMD=[
+ {n:5024,u:'',l:['parking places','ที่จอดรถ'],m:['In Chiang Mai, Chiang Rai and Pathum Thani, for cars and bikes. The parking page remembers where you parked.','ในเชียงใหม่ เชียงราย และปทุมธานี สำหรับรถยนต์และมอเตอร์ไซค์ หน้าที่จอดรถจำที่คุณจอดไว้'],s:6},
+ {n:45,u:'',l:['rescue units','หน่วยกู้ภัย'],m:['Listed by district, with phone numbers.','จัดตามอำเภอ พร้อมเบอร์โทร'],s:7},
+ {n:5,u:'',l:['emergency numbers','เบอร์ฉุกเฉิน'],m:['1669 · 1784 · 199 · 191 · 1155','1669 · 1784 · 199 · 191 · 1155'],s:7},
+ {n:1,u:'h',l:['live location share','แชร์ตำแหน่งสด'],m:['The Send button shares where you are now, or follows you for one hour.','ปุ่มส่งแชร์ตำแหน่งตอนนี้ หรือตามคุณไปนาน 1 ชั่วโมง'],s:6}
+];
+function renderStats(id,arr){
+  $(id).innerHTML=arr.map(x=>'<button class="stat" type="button" aria-expanded="false"><b data-to="'+(typeof x.n==='number'?x.n:'')+'">'+(typeof x.n==='number'?x.n.toLocaleString('en-US'):x.n)+(x.u?'<em>'+esc(x.u)+'</em>':'')+'</b><span>'+esc(x.l[li])+'</span><p>'+esc(x.m[li])+' '+sup(x.s)+'</p></button>').join('');
+}
+document.addEventListener('click',e=>{const s=e.target.closest('.stat');if(!s||e.target.closest('a'))return;const o=s.classList.toggle('open');s.setAttribute('aria-expanded',o)});
+function tick(b){const to=+b.dataset.to;if(!to||reduce)return;const node=b.firstChild;const f=Math.round(to*.55);const t0=performance.now();
+  (function s(n){const p=Math.min(1,(n-t0)/800),v=Math.round(f+(to-f)*(1-Math.pow(1-p,3)));node.nodeValue=v.toLocaleString('en-US');if(p<1)requestAnimationFrame(s)})(t0)}
+const io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;io.unobserve(en.target);en.target.querySelectorAll('b[data-to]').forEach(tick)})},{threshold:.35}):null;
+
+/* flow */
+const FLOW=[
+ {k:'KM 1',tag:'today',t:['Mot Dang reader','ผู้อ่านมดแดง'],d:['Reading a place page, a route or the pin of a parked scooter. The Send button shares the position, now or live for an hour.','อ่านหน้าสถานที่ เส้นทาง หรือหมุดรถมอเตอร์ไซค์ที่จอดไว้ ปุ่มส่งแชร์ตำแหน่ง ตอนนี้หรือสดนาน 1 ชั่วโมง'],s:6},
+ {k:'KM 2',tag:'demo',t:['Help button','ปุ่มขอความช่วยเหลือ'],d:['Position, road and problem go onto one card, in the driver\'s languages.','ตำแหน่ง ถนน และปัญหา อยู่บนการ์ดใบเดียว ในภาษาของผู้ขับ'],card:1},
+ {k:'KM 3',tag:'today',t:['TRA dispatch','ศูนย์ TRA'],d:['TRA sends the mechanic or the tow truck. Its customer service runs 24/7 on the paid packages.','TRA ส่งช่างหรือรถยก ฝ่ายบริการลูกค้าเปิด 24 ชม. ในแพ็กเกจแบบชำระเงิน'],s:1},
+ {k:'KM 4',tag:'idea',t:['Hongdam desk relays','โต๊ะหงส์ดำส่งต่อ'],d:['Today a client post on the Hongdam desk reaches the team and the reply comes back signed "Desk · first name". Here it writes to the driver in their language.','ปัจจุบันโพสต์ของลูกค้าบนโต๊ะหงส์ดำถึงทีม และคำตอบกลับมาลงชื่อ "Desk · ชื่อเล่น" ที่นี่โต๊ะเขียนถึงผู้ขับด้วยภาษาของเขา'],s:8},
+ {k:'KM 5',tag:'today',t:['Done','เสร็จ'],d:['The ticket moves Open, Doing, Done.','ตั๋วเลื่อนจาก Open, Doing เป็น Done'],s:8}
+];
+let cur=0,playing=false;
+function renderFlow(){
+  const ol=$('road-flow');
+  const keep=[$('fill'),$('dot')];
+  ol.innerHTML='';keep.forEach(k=>ol.appendChild(k));
+  FLOW.forEach((f,i)=>{
+    const li2=document.createElement('li');li2.dataset.i=i;if(i===cur)li2.className='on';
+    li2.innerHTML='<button class="node" type="button"><i class="post">'+f.k+'</i><b>'+esc(f.t[li])+'</b><span class="tag '+f.tag+'">'+esc(t('t_'+f.tag))+'</span></button><div class="d"><p style="margin:0">'+esc(f.d[li])+(f.s?' '+sup(f.s):'')+'</p>'+(f.card?'<p class="go"><button class="btn" type="button" data-open="1">'+esc(t('opencard'))+'</button></p>':'')+'</div>';
+    ol.appendChild(li2);
+  });
+  place();
+}
+function place(){
+  const ol=$('road-flow'),items=ol.querySelectorAll('li');if(!items[cur])return;
+  items.forEach((e,i)=>e.classList.toggle('on',i===cur));
+  const dot=$('dot'),fill=$('fill');
+  if(isDesk()){
+    const x=items[cur].offsetLeft+14;dot.style.left=x+'px';dot.style.top='13px';fill.style.width=(x+14)+'px';fill.style.height='14px';
+  }else{
+    const y=items[cur].offsetTop+22;dot.style.top=y+'px';dot.style.left='14px';fill.style.height=(y-6)+'px';fill.style.width='14px';
+  }
+}
+$('road-flow').addEventListener('click',e=>{
+  if(e.target.closest('[data-open]')){openSheet();return}
+  const n=e.target.closest('.node');if(!n)return;cur=+n.parentElement.dataset.i;place();
+});
+$('ping').onclick=()=>{
+  if(playing)return;playing=true;const b=$('ping');b.textContent=t('playing');let i=0;cur=0;place();
+  const iv=setInterval(()=>{i++;if(i>=FLOW.length){clearInterval(iv);playing=false;b.textContent=t('ping');return}cur=i;place()},reduce?300:1050);
+};
+window.addEventListener('resize',()=>{place();if(map)map.resize()});
+
+/* note */
+function renderNote(){
+  $('letter').innerHTML=L==='th'
+   ?'Sanya เราพบกันผ่านวง 137 Pillars of Hope ความถนัดของคุณคือการข้ามวัฒนธรรม หน้านี้พาความถนัดนั้นไปไว้ข้างถนน <strong>มดแดงรู้ถนน สถานที่ และเบอร์ฉุกเฉินของภาคเหนือ หงส์ดำมีโต๊ะที่ส่งต่อข้อความ TRA ขับออกไปช่วย</strong> สามส่วนนี้ต่อกันได้ไหม'
+   :'Sanya, we met through the 137 Pillars of Hope circle. Your strength is crossing cultures. This page puts it on a roadside. <strong>Mot Dang knows the roads, places and emergency numbers of the north. Hongdam keeps a desk that relays messages. TRA drives out.</strong> Could the three fit together?';
+  const C=[
+   ['Mot Dang','motdang.net',[
+     ['Place pages, routes and a parking memory for cars and bikes.','หน้าสถานที่ เส้นทาง และความจำเรื่องที่จอดรถ สำหรับรถยนต์และมอเตอร์ไซค์',6],
+     ['Send: your position now, or live for an hour.','ส่ง: ตำแหน่งตอนนี้ หรือสดนาน 1 ชั่วโมง',6],
+     ['Guide me: turn-by-turn on screen and by voice, with a reroute when you leave the line.','นำทาง: บอกเลี้ยวบนจอและด้วยเสียง คำนวณใหม่เมื่อออกนอกเส้นทาง',6],
+     ['Emergency numbers and 45 rescue units by district.','เบอร์ฉุกเฉิน และหน่วยกู้ภัย 45 หน่วยตามอำเภอ',7]]],
+   ['Hongdam','hongdam.net',[
+     ['A client desk on Discord: a post reaches the team, the reply comes back as "Desk · first name".','โต๊ะลูกค้าบน Discord: โพสต์ถึงทีม คำตอบกลับมาเป็น "Desk · ชื่อเล่น"',8],
+     ['Tickets that move Open, Doing, Done.','ตั๋วที่เลื่อน Open, Doing, Done',8],
+     ['Translation pages in Thai, English and Burmese; interpreting quoted in writing.','หน้าแปลภาษาไทย อังกฤษ พม่า ล่ามเสนอราคาเป็นลายลักษณ์อักษร',8],
+     ['Chiang Mai Visa Desk serves migrant workers from Myanmar, Laos, Cambodia and Vietnam.','Chiang Mai Visa Desk ดูแลแรงงานข้ามชาติจากเมียนมา ลาว กัมพูชา เวียดนาม',8]]],
+   ['TRA','thairoadassist.com',[
+     ['Roadside help, towing, battery help, emergency fuel or EV support.','ช่วยบนถนน ลากรถ แบตเตอรี่ น้ำมันฉุกเฉิน หรือชาร์จ EV',1],
+     ['24/7 customer service on Standard, Elite and Prestige.','บริการลูกค้า 24 ชม. ในแพ็กเกจ Standard, Elite, Prestige',1],
+     ['Basic is free to join; the other three go by car age.','Basic สมัครฟรี อีกสามแพ็กเกจแบ่งตามอายุรถ',1],
+     ['Separate contacts for garages and suppliers, affiliate partners and insurance brokers.','ช่องทางติดต่อแยกสำหรับอู่และซัพพลายเออร์ พันธมิตร และนายหน้าประกัน',1]]]
+  ];
+  $('cols').innerHTML=C.map(c=>'<div class="col"><h3>'+c[0]+'<span>'+c[1]+'</span></h3><ul>'+c[2].map(r=>'<li>'+esc(r[li])+' '+sup(r[2])+'</li>').join('')+'</ul></div>').join('');
+  const sub=encodeURIComponent(L==='th'?'กาแฟกับ Sallo และ NaN ไหม':'Coffee with Sallo and NaN?');
+  const body=encodeURIComponent(L==='th'?'สวัสดี NaN\n\nสนใจนัดกาแฟค่ะ\n':'Hi NaN,\n\nYes to coffee. \n');
+  ['coffee1','coffee2'].forEach(id=>{const a=$(id);a.textContent=t(id==='coffee1'?'coffee':'coffee2');a.href='mailto:nan@motdang.net?subject='+sub+'&body='+body});
+}
+function renderSrc(){
+  $('srcs').innerHTML='<h4>'+esc(t('srch'))+'</h4><ol>'+SRC.map((s,i)=>'<li id="s'+(i+1)+'">'+esc(s[0])+' <a href="'+s[1]+'" target="_blank" rel="noopener">'+esc(s[1].indexOf('mailto:')===0?'nan@motdang.net':s[1].replace(/^https?:\/\//,'').split('?')[0])+'</a></li>').join('')+'</ol>';
+  $('foot').innerHTML=L==='th'
+   ?'ทำให้ Sanya โดย NaN · หงส์ดำ เชียงราย · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://motdang.net/">motdang.net</a> · <a href="https://hongdam.net/">hongdam.net</a>'
+   :'Made for Sanya by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://motdang.net/">motdang.net</a> · <a href="https://hongdam.net/">hongdam.net</a>';
+}
+
+/* ---------- language ---------- */
+function applyLang(){
+  document.documentElement.lang=L;document.documentElement.setAttribute('data-l',L);
+  $('lt').classList.toggle('on',L==='th');$('le').classList.toggle('on',L==='en');
+  document.querySelectorAll('[data-i]').forEach(e=>{const k=e.dataset.i;if(T[k])e.textContent=T[k][li]});
+  document.title=L==='th'?'รถเสียกลางทาง ขอความช่วยเหลือได้ทุกภาษา':'Stuck on the road, in any language';
+  renderProbs();renderStats('stats-tra',STRA);renderStats('stats-md',SMD);renderFlow();renderNote();renderSrc();
+  document.querySelectorAll('.stats').forEach(s=>io&&io.observe(s));
+  if(!S.road.fail&&S.src==='demo'){S.road={name:FB.road[L],ref:FB.road.ref,place:FB.place[L],none:false,fail:false}}
+  paintWhere();paintRoute();
+  if(sheetOpen){renderChips();renderCard()}
+  if(!$('show').hidden)renderShow();
+}
+$('lang').onclick=()=>{L=L==='th'?'en':'th';li=L==='th'?1:0;applyLang();if(S.src!=='demo'){const my=++seq;getRoad(S.pos).then(r=>{if(my===seq){S.road=r;paintWhere()}})}};
+
+/* ---------- toast ---------- */
+let tt;function toast(m){const e=$('toast');e.textContent=m;e.hidden=false;clearTimeout(tt);tt=setTimeout(()=>{e.hidden=true},2600)}
+
+/* ---------- start ---------- */
+applyLang();
+initMap();
+function locate(auto){
+  if(!navigator.geolocation){if(!auto)toast(t('denied'));return}
+  const prev=S.src;S.src='find';paintWhere();
+  navigator.geolocation.getCurrentPosition(
+    p=>setPos([p.coords.longitude,p.coords.latitude],'gps',p.coords.accuracy),
+    ()=>{S.src=prev;paintWhere();if(!auto)toast(t('denied'))},
+    {enableHighAccuracy:true,timeout:12000,maximumAge:60000});
+}
+$('locate').onclick=()=>locate(false);
+setPos(FB.pos,'demo');
+setTimeout(()=>locate(true),900);
+})();
+</script>
+</body>
+</html>
