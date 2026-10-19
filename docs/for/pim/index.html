@@ -418,7 +418,7 @@ let rank = N, cat = null, fresh = 0, sel = -1, raf = 0, playing = false, mapRead
 const yIdx = c => { for (let i=0;i<YEARS.length;i++) if (c<=cum[i]) return i; return YEARS.length-1; };
 
 function render(){
-  const c = Math.floor(rank + 1e-6);
+  const c = Math.max(0, Math.floor(rank + 1e-6));
   const shown = cat ? gpre[cat][c] : c;
   $('count').textContent = shown;
   const yi = yIdx(Math.max(c,1));
