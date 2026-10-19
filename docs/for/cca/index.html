@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>A draft giving page for CCA</title>
+<meta name="description" content="Draft for the board, 19 Oct 2026. Ways to give, grant deadlines counting down, a giving pyramid, the exhibit now, and five readiness questions for Cultural Crossroads Asia.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A draft giving page for CCA">
+<meta property="og:description" content="Draft for the board, 19 Oct 2026. Ways to give, grant deadlines, a giving pyramid and five readiness questions for Cultural Crossroads Asia.">
+<meta property="og:url" content="https://hongdam.net/for/cca/">
+<meta property="og:image" content="https://hongdam.net/for/cca/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#faf6ee; --card:#fffdf8; --ink:#1d1a16; --muted:#675e51; --line:#dfd5c1;
+  --indigo:#26356b; --indigo-soft:#e6e9f5; --red:#a82d1c; --red-soft:#f8e4df;
+  --gold:#f2b705; --gold-ink:#000; --ph:#8a7f6c; --ph-bg:#f4eee0;
+  --bar1:#a82d1c; --bar2:#26356b; --bar3:#6f7fb8; --bar-ink:#fff;
+  --focus:#26356b;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14110d; --card:#1e1a14; --ink:#f1ebdf; --muted:#b5ab99; --line:#3b3326;
+    --indigo:#a9b8ff; --indigo-soft:#222a4a; --red:#ff9b88; --red-soft:#3a1f1a;
+    --ph:#9c917b; --ph-bg:#1a1610;
+    --bar1:#c9442f; --bar2:#4a5fb3; --bar3:#6f7fb8; --bar-ink:#fff;
+    --focus:#a9b8ff;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 system-ui,-apple-system,"Segoe UI","Sukhumvit Set","Thonburi","Noto Sans Thai",sans-serif;
+  overflow-x:hidden}
+html[lang="th"] body{line-height:1.8}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 48px}
+h1,h2,h3{font-family:Georgia,"Noto Serif Thai","Thonburi",serif;line-height:1.25;margin:0}
+h1{font-size:30px}
+h2{font-size:23px;margin:0 0 6px}
+h3{font-size:18px}
+html[lang="th"] h1,html[lang="th"] h2,html[lang="th"] h3{line-height:1.45}
+p{margin:0 0 10px}
+a{color:var(--indigo)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.en,.th{display:block}
+span.en,span.th,a.en,a.th{display:inline}
+html[lang="en"] .th{display:none!important}
+html[lang="th"] .en{display:none!important}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0 6px}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;letter-spacing:.02em;padding:4px 10px;border-radius:4px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .badge{background:#c9442f}}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card);flex:none}
+.lang button{border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;font-weight:600;padding:7px 12px;min-height:40px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink)}
+.hero{padding:14px 0 6px}
+.hero p.lead{color:var(--muted);font-size:17px;margin-top:10px}
+.slot{height:130px;border-radius:8px;margin:14px 0 4px;border:1px solid var(--line);
+  background:linear-gradient(135deg,var(--indigo-soft),var(--red-soft))}
+.note{font-size:14px;color:var(--muted)}
+
+section{padding-top:30px}
+.src{font-size:13px;color:var(--muted);margin-top:10px}
+.src a{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:15px;
+  padding:8px 12px;min-height:44px;border-radius:8px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tabs button[aria-selected="true"]{color:#10142a}}
+.panel[hidden]{display:none}
+.btn{display:inline-block;background:var(--gold);color:var(--gold-ink);font-weight:700;text-decoration:none;
+  padding:12px 18px;border-radius:8px;min-height:44px;margin:4px 0 10px;border:0;font-size:16px}
+.btn:hover{filter:brightness(.95)}
+.facts{margin:0 0 10px;padding-left:20px}
+.facts li{margin-bottom:6px}
+
+.ph-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:12px 0}
+@media (min-width:560px){.ph-grid{grid-template-columns:1fr 1fr}}
+.ph{border:2px dashed var(--ph);background:var(--ph-bg);border-radius:10px;padding:12px 14px;min-height:92px}
+.ph .tag{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ph)}
+html[lang="th"] .ph .tag{letter-spacing:0;text-transform:none}
+.ph b{display:block;font-size:16px;margin:2px 0}
+.ph span.d{display:block;font-size:14px;color:var(--muted)}
+.sample{position:relative;border:2px dashed var(--ph);border-radius:10px;padding:34px 14px 14px;margin:12px 0;background:var(--card);
+  font-family:Georgia,"Noto Serif Thai",serif}
+.sample .stamp{position:absolute;top:8px;right:10px;font:700 12px system-ui,sans-serif;letter-spacing:.08em;color:var(--red);
+  border:2px solid var(--red);border-radius:4px;padding:1px 8px;transform:rotate(-3deg)}
+.sample em{font-style:normal;background:var(--gold);color:#000;padding:0 3px;border-radius:3px}
+
+/* grants */
+.grant{border:1px solid var(--line);border-radius:10px;background:var(--card);margin-bottom:10px;overflow:hidden}
+.grant>button{width:100%;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;text-align:left;
+  background:transparent;color:var(--ink);border:0;font:inherit;padding:14px;min-height:64px;cursor:pointer}
+.grant .gname{font-weight:700;font-size:17px}
+.grant .gdate{grid-column:1;color:var(--muted);font-size:14px}
+.grant .cd{grid-row:1 / span 2;grid-column:2;text-align:right;font-variant-numeric:tabular-nums;line-height:1.1}
+.cd .dd{font:700 34px Georgia,serif;color:var(--red)}
+.cd .dl{font-size:12px;color:var(--muted)}
+.cd .hms{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.grant .more{padding:0 14px 14px;border-top:1px dashed var(--line)}
+.grant .more[hidden]{display:none}
+.grant dl{margin:12px 0 0}
+.grant dt{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+html[lang="th"] .grant dt{letter-spacing:0;text-transform:none}
+.grant dd{margin:0}
+.chev{display:inline-block;transition:transform .15s;margin-left:6px}
+.grant>button[aria-expanded="true"] .chev{transform:rotate(90deg)}
+
+/* pyramid */
+.pyr{margin:14px 0}
+.tier{display:block;width:100%;background:transparent;border:0;padding:6px 0;font:inherit;color:var(--ink);cursor:pointer;text-align:center}
+.tier .bar{margin:0 auto;height:54px;border-radius:6px;display:flex;align-items:center;justify-content:center;
+  color:var(--bar-ink);font-weight:700;font-size:17px;border:3px solid transparent;transition:width .2s}
+.tier .amt{display:block;font-size:14px;margin-top:3px;color:var(--ink)}
+.tier[aria-pressed="true"] .bar{border-color:var(--gold);box-shadow:0 0 0 2px var(--ink)}
+.t1 .bar{width:34%;background:var(--bar1)} .t2 .bar{width:67%;background:var(--bar2)} .t3 .bar{width:100%;background:var(--bar3)}
+.tierinfo{min-height:120px}
+.stamp-line{display:inline-block;border:2px solid var(--red);color:var(--red);font-weight:700;font-size:14px;padding:3px 10px;border-radius:4px;margin:8px 0}
+
+/* exhibit */
+.ex .big{font:700 44px Georgia,serif;color:var(--indigo);line-height:1}
+.ex .hms{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.prog{height:12px;background:var(--line);border-radius:6px;overflow:hidden;margin:12px 0 4px}
+.prog i{display:block;height:100%;background:var(--red);width:0}
+.ex .row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+
+/* checklist */
+.chk{list-style:none;margin:12px 0;padding:0}
+.chk li{margin-bottom:8px}
+.chk label{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);
+  border-radius:10px;padding:12px 14px;cursor:pointer;min-height:56px}
+.chk input{width:24px;height:24px;margin:2px 0 0;accent-color:var(--indigo)}
+.chk input:checked + .q{color:var(--muted)}
+.chk .q b{display:block}
+.chk .q span{display:block;font-size:14px;color:var(--muted)}
+.count{font:700 20px Georgia,serif;color:var(--indigo)}
+
+.cta{margin-top:34px;background:var(--indigo);color:#fff;border-radius:12px;padding:20px 16px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .cta{background:var(--indigo-soft);color:var(--ink);border:1px solid var(--line)}}
+.cta h2{color:inherit}
+.cta p{color:inherit}
+.cta .btn{margin-bottom:0}
+
+.srclist{font-size:14px;color:var(--muted)}
+.srclist li{margin-bottom:4px;overflow-wrap:anywhere}
+footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer a{color:var(--muted)}
+.alt{overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+  <span class="badge"><span class="en">Draft for the board, 19 Oct 2026</span><span class="th" lang="th">ร่างสำหรับคณะกรรมการ · 19 ต.ค. 2569</span></span>
+  <div class="lang" role="group" aria-label="Language / ภาษา">
+    <button type="button" data-set="th" aria-pressed="false">ไทย</button>
+    <button type="button" data-set="en" aria-pressed="true">EN</button>
+  </div>
+</div>
+
+<header class="hero">
+  <h1><span class="en">A draft giving page for CCA</span><span class="th" lang="th">ร่างหน้ารับบริจาคของ CCA</span></h1>
+  <p class="lead en">Cultural Crossroads Asia Foundation, Chiang Mai. A working sketch of the first month's build: tabs to open, dates counting down, boxes the board fills.</p>
+  <p class="lead th" lang="th">มูลนิธิ Cultural Crossroads Asia เชียงใหม่ ภาพร่างที่ใช้งานได้ของงานเดือนแรก มีแท็บให้เปิดดู วันที่นับถอยหลัง และกล่องที่รอให้คณะกรรมการเติมข้อมูล</p>
+  <!-- MARCUS: wide photograph from the CCA collection or the Akha Oral Tradition School (textile, instrument or students), used with CCA's permission -->
+  <div class="slot" aria-hidden="true"></div>
+  <p class="note en">Dashed boxes mark what the board supplies.</p>
+  <p class="note th" lang="th">กรอบเส้นประคือส่วนที่คณะกรรมการเป็นผู้ให้ข้อมูล</p>
+</header>
+
+<!-- 1. WAYS TO GIVE -->
+<section id="give">
+  <h2><span class="en">Ways to give</span><span class="th" lang="th">ช่องทางการให้</span></h2>
+  <div class="tabs" role="tablist" aria-label="Ways to give">
+    <button role="tab" id="tab-us" aria-controls="p-us" aria-selected="true"><span class="en">United States</span><span class="th" lang="th">สหรัฐอเมริกา</span></button>
+    <button role="tab" id="tab-th" aria-controls="p-th" aria-selected="false"><span class="en">Thailand</span><span class="th" lang="th">ประเทศไทย</span></button>
+    <button role="tab" id="tab-uk" aria-controls="p-uk" aria-selected="false"><span class="en">UK &amp; Europe</span><span class="th" lang="th">สหราชอาณาจักรและยุโรป</span></button>
+    <button role="tab" id="tab-be" aria-controls="p-be" aria-selected="false"><span class="en">Bequests</span><span class="th" lang="th">พินัยกรรม</span></button>
+    <button role="tab" id="tab-ar" aria-controls="p-ar" aria-selected="false"><span class="en">Art &amp; objects</span><span class="th" lang="th">งานศิลป์และวัตถุ</span></button>
+  </div>
+
+  <!-- US -->
+  <div class="panel card" role="tabpanel" id="p-us" aria-labelledby="tab-us">
+    <div class="en">
+      <p>CCA's donate page sends American donors to Fractured Atlas, its fiscal agent (the New York non-profit that receives gifts for a project), and says gifts there carry 501(c)(3) tax benefits.</p>
+      <a class="btn" href="https://culturalcrossroadsasia.org/donate/" target="_blank" rel="noopener">Open CCA's donate page</a>
+      <ul class="facts">
+        <li>Fractured Atlas lists an 8% fee and a US$20,000 online cap.</li>
+        <li>IRS index on ProPublica, 17 Oct 2026: no listing under "Cultural Crossroads Asia".</li>
+      </ul>
+    </div>
+    <div class="th" lang="th">
+      <p>หน้าบริจาคของ CCA พาผู้บริจาคชาวอเมริกันไปที่ Fractured Atlas ซึ่งเป็น fiscal agent (องค์กรไม่แสวงหากำไรในนิวยอร์กที่รับเงินบริจาคแทนโครงการ) และระบุว่าเงินบริจาคที่นั่นได้สิทธิประโยชน์ทางภาษีแบบ 501(c)(3)</p>
+      <a class="btn" href="https://culturalcrossroadsasia.org/donate/" target="_blank" rel="noopener">เปิดหน้าบริจาคของ CCA</a>
+      <ul class="facts">
+        <li>Fractured Atlas ระบุค่าธรรมเนียม 8% และเพดานการบริจาคออนไลน์ 20,000 ดอลลาร์สหรัฐ</li>
+        <li>ดัชนี IRS บน ProPublica ณ วันที่ 17 ต.ค. 2569: ไม่พบรายชื่อ "Cultural Crossroads Asia"</li>
+      </ul>
+    </div>
+    <div class="ph-grid">
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">501(c)(3) details</span><span class="th" lang="th">รายละเอียด 501(c)(3)</span></b>
+        <span class="d"><span class="en">Legal name, EIN (US tax number), mailing address.</span><span class="th" lang="th">ชื่อตามกฎหมาย หมายเลข EIN (เลขประจำตัวผู้เสียภาษีสหรัฐ) ที่อยู่ทางไปรษณีย์</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Gifts outside Fractured Atlas</span><span class="th" lang="th">การบริจาคนอก Fractured Atlas</span></b>
+        <span class="d"><span class="en">Cheque or wire instructions for gifts above the online cap.</span><span class="th" lang="th">วิธีโอนหรือส่งเช็คสำหรับเงินบริจาคที่เกินเพดานออนไลน์</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Donor-advised funds</span><span class="th" lang="th">กองทุนที่ผู้บริจาคแนะนำ (DAF)</span></b>
+        <span class="d"><span class="en">Grant instructions for donors who give through a fund.</span><span class="th" lang="th">ขั้นตอนสำหรับผู้บริจาคที่ให้ผ่านกองทุน</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Stock gifts</span><span class="th" lang="th">การบริจาคเป็นหุ้น</span></b>
+        <span class="d"><span class="en">Broker transfer instructions.</span><span class="th" lang="th">ขั้นตอนการโอนหุ้นผ่านโบรกเกอร์</span></span></div>
+    </div>
+    <p class="src"><span class="en">Source: <a href="https://culturalcrossroadsasia.org/donate/" target="_blank" rel="noopener">culturalcrossroadsasia.org/donate</a> · <a href="https://www.fiscalsponsordirectory.org/fractured-atlas" target="_blank" rel="noopener">fiscalsponsordirectory.org/fractured-atlas</a> · <a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofit Explorer</a>, search run 17 Oct 2026.</span><span class="th" lang="th">ที่มา: <a href="https://culturalcrossroadsasia.org/donate/" target="_blank" rel="noopener">culturalcrossroadsasia.org/donate</a> · <a href="https://www.fiscalsponsordirectory.org/fractured-atlas" target="_blank" rel="noopener">fiscalsponsordirectory.org/fractured-atlas</a> · <a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofit Explorer</a> ค้นเมื่อ 17 ต.ค. 2569</span></p>
+  </div>
+
+  <!-- TH -->
+  <div class="panel card" role="tabpanel" id="p-th" aria-labelledby="tab-th" hidden>
+    <div class="en">
+      <p>From 2026, Thai donors deduct gifts from tax only through e-Donation, the Revenue Department's electronic receipt system. A foundation joins it once registered.</p>
+      <ul class="facts"><li>A search on 17 Oct 2026 found no Thai registered name and no Revenue Department charity listing for CCA.</li></ul>
+    </div>
+    <div class="th" lang="th">
+      <p>ตั้งแต่ปี 2569 ผู้บริจาคในไทยหักลดหย่อนภาษีจากเงินบริจาคได้ผ่านระบบ e-Donation ของกรมสรรพากรเท่านั้น มูลนิธิเข้าร่วมระบบได้เมื่อจดทะเบียนแล้ว</p>
+      <ul class="facts"><li>การค้นเมื่อ 17 ต.ค. 2569 ไม่พบชื่อที่จดทะเบียนในประเทศไทย และไม่พบรายชื่อองค์กรการกุศลของกรมสรรพากรสำหรับ CCA</li></ul>
+    </div>
+    <div class="ph-grid">
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Thai registered name and tax status</span><span class="th" lang="th">ชื่อที่จดทะเบียนและสถานะทางภาษี</span></b>
+        <span class="d"><span class="en">Name, registration number, tax ID.</span><span class="th" lang="th">ชื่อ เลขทะเบียน เลขประจำตัวผู้เสียภาษี</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board · once registered</span><span class="th" lang="th">จากคณะกรรมการ · เมื่อจดทะเบียนแล้ว</span></span>
+        <b><span class="en">e-Donation link</span><span class="th" lang="th">ลิงก์ e-Donation</span></b>
+        <span class="d"><span class="en">The donor's receipt flows to the Revenue Department.</span><span class="th" lang="th">ใบอนุโมทนาของผู้บริจาคส่งต่อถึงกรมสรรพากร</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Thai account for gifts</span><span class="th" lang="th">บัญชีไทยสำหรับรับบริจาค</span></b>
+        <span class="d"><span class="en">Bank account name and number, or QR.</span><span class="th" lang="th">ชื่อและเลขที่บัญชีธนาคาร หรือ QR</span></span></div>
+    </div>
+    <p class="src"><span class="en">Source: <a href="https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/payroll/forvis-mazars-payroll-flash-news-august-2026" target="_blank" rel="noopener">Forvis Mazars Thailand, Aug 2026</a> · Hongdam brief for the board, 17 Oct 2026.</span><span class="th" lang="th">ที่มา: <a href="https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/payroll/forvis-mazars-payroll-flash-news-august-2026" target="_blank" rel="noopener">Forvis Mazars Thailand ส.ค. 2569</a> · เอกสารสรุปของ Hongdam สำหรับคณะกรรมการ 17 ต.ค. 2569</span></p>
+  </div>
+
+  <!-- UK -->
+  <div class="panel card" role="tabpanel" id="p-uk" aria-labelledby="tab-uk" hidden>
+    <p class="en">UK and European donors have no giving route today.</p>
+    <p class="th" lang="th">ขณะนี้ผู้บริจาคในสหราชอาณาจักรและยุโรปยังไม่มีช่องทางการให้</p>
+    <div class="ph-grid">
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">A route for UK and EU donors</span><span class="th" lang="th">ช่องทางสำหรับผู้บริจาคในสหราชอาณาจักรและสหภาพยุโรป</span></b>
+        <span class="d"><span class="en">A partner organisation or platform that can receive and receipt the gift.</span><span class="th" lang="th">องค์กรหรือแพลตฟอร์มพันธมิตรที่รับเงินและออกใบรับรองได้</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Partner's name and registration number</span><span class="th" lang="th">ชื่อและเลขทะเบียนของพันธมิตร</span></b>
+        <span class="d"><span class="en">Shown here once the board names one.</span><span class="th" lang="th">แสดงที่นี่เมื่อคณะกรรมการระบุแล้ว</span></span></div>
+    </div>
+    <p class="src"><span class="en">Source: Hongdam brief for the board, 17 Oct 2026.</span><span class="th" lang="th">ที่มา: เอกสารสรุปของ Hongdam สำหรับคณะกรรมการ 17 ต.ค. 2569</span></p>
+  </div>
+
+  <!-- BEQUESTS -->
+  <div class="panel card" role="tabpanel" id="p-be" aria-labelledby="tab-be" hidden>
+    <div class="en">
+      <p>"Be a Good Ancestor" is the heading of CCA's support page. A bequest can be any size, pays years later, and counts as a pledge in a campaign today.</p>
+    </div>
+    <div class="th" lang="th">
+      <p>"Be a Good Ancestor" (จงเป็นบรรพบุรุษที่ดี) คือหัวข้อของหน้า Support บนเว็บไซต์ CCA ของฝากในพินัยกรรมมีมูลค่าเท่าใดก็ได้ ส่งมอบอีกหลายปีข้างหน้า และนับเป็นคำมั่นในแคมเปญได้ตั้งแต่วันนี้</p>
+    </div>
+    <div class="sample">
+      <span class="stamp"><span class="en">SAMPLE</span><span class="th" lang="th">ตัวอย่าง</span></span>
+      <p class="en">I give to <em>[full legal name of the foundation, as registered]</em>, of <em>[address]</em>, <em>[the sum of ___]</em> / <em>[___ % of my residuary estate]</em> / <em>[the following object: ___]</em>, for its general purposes / for the Heritage Center / for the Akha Oral Tradition School.</p>
+      <p class="th" lang="th">ข้าพเจ้าขอยกให้ <em>[ชื่อมูลนิธิตามที่จดทะเบียน]</em> ที่อยู่ <em>[ที่อยู่]</em> เป็น <em>[เงินจำนวน ___ บาท]</em> / <em>[ร้อยละ ___ ของทรัพย์สินส่วนที่เหลือ]</em> / <em>[ทรัพย์สินดังนี้ ___]</em> เพื่อใช้ในกิจการของมูลนิธิ / เพื่อศูนย์มรดกวัฒนธรรม / เพื่อโรงเรียนประเพณีปากเปล่าอาข่า</p>
+    </div>
+    <p class="note en">Sample wording for discussion. A lawyer in the donor's country writes the final text.</p>
+    <p class="note th" lang="th">ถ้อยคำตัวอย่างสำหรับพิจารณา ทนายความในประเทศของผู้บริจาคเป็นผู้ร่างข้อความฉบับจริง</p>
+    <div class="ph-grid">
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Tax treatment by country</span><span class="th" lang="th">การปฏิบัติทางภาษีรายประเทศ</span></b>
+        <span class="d"><span class="en">US, Thailand, UK and EU notes from the board's adviser.</span><span class="th" lang="th">หมายเหตุสำหรับสหรัฐ ไทย สหราชอาณาจักร และสหภาพยุโรป จากที่ปรึกษาของคณะกรรมการ</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Who to tell</span><span class="th" lang="th">ผู้ที่ต้องแจ้ง</span></b>
+        <span class="d"><span class="en">A name and email for donors who have written CCA into a will.</span><span class="th" lang="th">ชื่อและอีเมลสำหรับผู้บริจาคที่ระบุ CCA ไว้ในพินัยกรรม</span></span></div>
+    </div>
+    <p class="src"><span class="en">Source: <a href="https://culturalcrossroadsasia.org/support/" target="_blank" rel="noopener">culturalcrossroadsasia.org/support</a> · Hongdam brief for the board, 17 Oct 2026. Sample text is Hongdam's draft.</span><span class="th" lang="th">ที่มา: <a href="https://culturalcrossroadsasia.org/support/" target="_blank" rel="noopener">culturalcrossroadsasia.org/support</a> · เอกสารสรุปของ Hongdam 17 ต.ค. 2569 ข้อความตัวอย่างเป็นร่างของ Hongdam</span></p>
+  </div>
+
+  <!-- ART -->
+  <div class="panel card" role="tabpanel" id="p-ar" aria-labelledby="tab-ar" hidden>
+    <div class="en">
+      <p>CCA holds hundreds of textiles, jewelry, instruments and sacred objects of the Akha, Lahu, Lisu, Hmong, Iu Mien and Karen. Digitizing began in spring 2026.</p>
+      <p>A donor of objects, or of a collection, asks for a deed of gift (the signed paper that transfers ownership) before anything else.</p>
+    </div>
+    <div class="th" lang="th">
+      <p>CCA มีผ้าทอ เครื่องประดับ เครื่องดนตรี และวัตถุศักดิ์สิทธิ์ของชาวอาข่า ลาหู่ ลีซู ม้ง เมี่ยน และกะเหรี่ยง หลายร้อยชิ้น เริ่มแปลงเป็นข้อมูลดิจิทัลในฤดูใบไม้ผลิปี 2569</p>
+      <p>ผู้บริจาคที่ให้วัตถุหรือชุดสะสมจะขอหนังสือยกให้ (deed of gift เอกสารที่ลงนามโอนความเป็นเจ้าของ) ก่อนเรื่องอื่น</p>
+    </div>
+    <div class="ph-grid">
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">What the foundation accepts</span><span class="th" lang="th">สิ่งที่มูลนิธิรับ</span></b>
+        <span class="d"><span class="en">Acceptance policy: kinds of object, condition, provenance.</span><span class="th" lang="th">นโยบายการรับ: ประเภทวัตถุ สภาพ และที่มา</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Deed of gift form</span><span class="th" lang="th">แบบหนังสือยกให้</span></b>
+        <span class="d"><span class="en">English and Thai form, signed by donor and foundation.</span><span class="th" lang="th">แบบฟอร์มสองภาษา ลงนามโดยผู้บริจาคและมูลนิธิ</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Appraisal</span><span class="th" lang="th">การประเมินมูลค่า</span></b>
+        <span class="d"><span class="en">Who values a gift, and how the receipt states it.</span><span class="th" lang="th">ผู้ประเมินมูลค่า และวิธีระบุในใบรับ</span></span></div>
+      <div class="ph"><span class="tag"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
+        <b><span class="en">Who receives gifts</span><span class="th" lang="th">ผู้รับมอบ</span></b>
+        <span class="d"><span class="en">A name, email and place to deliver.</span><span class="th" lang="th">ชื่อ อีเมล และสถานที่ส่งมอบ</span></span></div>
+    </div>
+    <p class="src"><span class="en">Source: <a href="https://culturalcrossroadsasia.org/cultural-crossroads-asia-heritage-center/" target="_blank" rel="noopener">CCA Heritage Center page</a> · Hongdam brief for the board, 17 Oct 2026.</span><span class="th" lang="th">ที่มา: <a href="https://culturalcrossroadsasia.org/cultural-crossroads-asia-heritage-center/" target="_blank" rel="noopener">หน้า CCA Heritage Center</a> · เอกสารสรุปของ Hongdam 17 ต.ค. 2569</span></p>
+  </div>
+</section>
+
+<!-- 2. GRANTS -->
+<section id="grants">
+  <h2><span class="en">Grant deadlines</span><span class="th" lang="th">กำหนดส่งใบสมัครขอทุน</span></h2>
+  <p class="en">Tap a grant for what it funds and how it fits.</p>
+  <p class="th" lang="th">แตะทุนแต่ละรายการเพื่อดูว่าทุนสนับสนุนอะไรและเหมาะกับ CCA อย่างไร</p>
+  <div id="grantlist"></div>
+  <p class="note en">Each clock counts to 23:59 Bangkok time on its date; EMKP closes 12:00 GMT. Grants fund the school, the archive and the collection, not a building: the large funders that fit CCA exclude construction. Hongdam estimate: four or five grants bring US$300,000–800,000 over three years.</p>
+  <p class="note th" lang="th">นาฬิกาแต่ละเรือนนับถึง 23:59 น. เวลากรุงเทพฯ ของวันที่กำหนด ยกเว้น EMKP ที่ปิดรับเวลา 12:00 น. GMT ทุนสนับสนุนโรงเรียน คลังเอกสาร และชุดสะสม ไม่ใช่อาคาร: ผู้ให้ทุนรายใหญ่ที่เหมาะกับ CCA ไม่ให้ทุนก่อสร้าง ประมาณการของ Hongdam: ทุนสี่ถึงห้าทุนอาจได้ 300,000–800,000 ดอลลาร์สหรัฐ ในสามปี</p>
+  <p class="src"><span class="en">Source: <a href="https://www.sumitomo.or.jp/e/kaigai/outside.htm" target="_blank" rel="noopener">Sumitomo Foundation</a> · <a href="https://www.emkp.org/grants" target="_blank" rel="noopener">EMKP grants</a> · <a href="https://firebirdresearchgrants.org" target="_blank" rel="noopener">Firebird Foundation</a> · Hongdam brief for the board, 17 Oct 2026 (Firebird date, fit and estimate).</span><span class="th" lang="th">ที่มา: <a href="https://www.sumitomo.or.jp/e/kaigai/outside.htm" target="_blank" rel="noopener">Sumitomo Foundation</a> · <a href="https://www.emkp.org/grants" target="_blank" rel="noopener">EMKP</a> · <a href="https://firebirdresearchgrants.org" target="_blank" rel="noopener">Firebird Foundation</a> · เอกสารสรุปของ Hongdam 17 ต.ค. 2569 (วันที่ของ Firebird ความเหมาะสม และประมาณการ)</span></p>
+</section>
+
+<!-- 3. PYRAMID -->
+<section id="pyramid">
+  <h2><span class="en">Giving pyramid, US$3M campaign</span><span class="th" lang="th">พีระมิดการให้ แคมเปญ 3 ล้านดอลลาร์สหรัฐ</span></h2>
+  <span class="stamp-line"><span class="en">Illustration from campaign norms, not a CCA plan</span><span class="th" lang="th">ภาพประกอบจากแบบแผนของแคมเปญระดมทุน ไม่ใช่แผนของ CCA</span></span>
+  <p class="en">In capital campaigns (fundraising drives for a building or an endowment), 6–8 donors carry 40–60% of the goal. Tap a tier.</p>
+  <p class="th" lang="th">ในแคมเปญระดมทุนใหญ่ (เพื่อสร้างอาคารหรือกองทุนถาวร) ผู้บริจาค 6–8 รายให้ถึง 40–60% ของเป้า แตะแต่ละชั้นเพื่อดูคำอธิบาย</p>
+  <div class="pyr" id="pyr" role="group" aria-label="Giving pyramid"></div>
+  <div class="card tierinfo" id="tierinfo" aria-live="polite"></div>
+  <p class="src"><span class="en">Source: <a href="https://www.nonprofitquarterly.org/the-phases-of-a-capital-campaign-part-ii/" target="_blank" rel="noopener">Nonprofit Quarterly</a> · <a href="https://www.nonprofitpro.com/post/4-tips-to-make-the-most-of-your-capital-campaign-gift-range-chart/" target="_blank" rel="noopener">NonProfit PRO</a> · Hongdam brief for the board, 17 Oct 2026. Bar widths show order, not scale.</span><span class="th" lang="th">ที่มา: <a href="https://www.nonprofitquarterly.org/the-phases-of-a-capital-campaign-part-ii/" target="_blank" rel="noopener">Nonprofit Quarterly</a> · <a href="https://www.nonprofitpro.com/post/4-tips-to-make-the-most-of-your-capital-campaign-gift-range-chart/" target="_blank" rel="noopener">NonProfit PRO</a> · เอกสารสรุปของ Hongdam 17 ต.ค. 2569 ความกว้างแท่งแสดงลำดับ ไม่ใช่สัดส่วน</span></p>
+</section>
+
+<!-- 4. EXHIBIT -->
+<section id="exhibit">
+  <h2><span class="en">The exhibit now</span><span class="th" lang="th">นิทรรศการที่เปิดอยู่</span></h2>
+  <div class="card ex">
+    <h3>Melodies and Motifs in the Mountains <span class="th" lang="th"><br>ทำนองและลวดลายบนดอย</span></h3>
+    <p class="en">Chiang Mai City Craft Space, 280 Tha Phae Road · 3 Oct 2026 – 10 Jan 2027 · open from 10:00, closed Mondays (86 open days).</p>
+    <p class="th" lang="th">City Craft Space เชียงใหม่ 280 ถนนท่าแพ · 3 ต.ค. 2569 – 10 ม.ค. 2570 · เปิด 10:00 น. ปิดวันจันทร์ (เปิดทำการ 86 วัน)</p>
+    <div id="exleft"><span class="big" id="exdays">–</span> <span class="en">days left</span><span class="th" lang="th">วันที่เหลือ</span></div>
+    <div class="hms" id="exhms"></div>
+    <div class="prog" aria-hidden="true"><i id="exbar"></i></div>
+    <div class="row"><span class="en">3 Oct</span><span class="th" lang="th">3 ต.ค.</span><span id="expct"></span><span class="en">10 Jan</span><span class="th" lang="th">10 ม.ค.</span></div>
+    <p style="margin-top:12px"><a class="btn" href="https://motdang.net/sites/melodies-and-motifs" target="_blank" rel="noopener"><span class="en">Open the exhibit page on Mot Dang</span><span class="th" lang="th">เปิดหน้านิทรรศการบน Mot Dang</span></a></p>
+  </div>
+  <p class="src"><span class="en">Source: <a href="https://motdang.net/sites/melodies-and-motifs" target="_blank" rel="noopener">motdang.net/sites/melodies-and-motifs</a>.</span><span class="th" lang="th">ที่มา: <a href="https://motdang.net/sites/melodies-and-motifs" target="_blank" rel="noopener">motdang.net/sites/melodies-and-motifs</a></span></p>
+</section>
+
+<!-- 5. CHECKLIST -->
+<section id="ready">
+  <h2><span class="en">Five readiness questions</span><span class="th" lang="th">คำถามความพร้อมห้าข้อ</span></h2>
+  <p class="en">A large donor asks these first. Tick what is ready. <span class="count" id="cnt">0 of 5</span></p>
+  <p class="th" lang="th">ผู้บริจาครายใหญ่จะถามเรื่องเหล่านี้ก่อน ติ๊กข้อที่พร้อมแล้ว <span class="count" id="cnt2">0 จาก 5</span></p>
+  <ul class="chk" id="chk"></ul>
+  <p class="src"><span class="en">Source: Hongdam brief and offer to the board, 17 and 19 Oct 2026; <a href="https://culturalcrossroadsasia.org/cultural-crossroads-asia-heritage-center/" target="_blank" rel="noopener">CCA Heritage Center page</a>.</span><span class="th" lang="th">ที่มา: เอกสารสรุปและข้อเสนอของ Hongdam ถึงคณะกรรมการ 17 และ 19 ต.ค. 2569 · <a href="https://culturalcrossroadsasia.org/cultural-crossroads-asia-heritage-center/" target="_blank" rel="noopener">หน้า CCA Heritage Center</a></span></p>
+</section>
+
+<!-- CTA -->
+<div class="cta" id="meet">
+  <h2><span class="en">Meet at The Algonquin this week</span><span class="th" lang="th">นัดพบที่ The Algonquin สัปดาห์นี้</span></h2>
+  <p class="en">Wed 21 Oct, 14:00 · Fri 23 Oct, 14:00 · Sat 24 Oct, 12:00. Lunch: NaN.</p>
+  <p class="th" lang="th">พุธ 21 ต.ค. 14:00 น. · ศุกร์ 23 ต.ค. 14:00 น. · เสาร์ 24 ต.ค. 12:00 น. ค่าอาหารกลางวัน: NaN</p>
+  <a class="btn" id="mail" href="mailto:nan@motdang.net"><span class="en">Meet at The Algonquin this week</span><span class="th" lang="th">นัดพบที่ The Algonquin สัปดาห์นี้</span></a>
+</div>
+
+<footer>
+  <p class="en">Made for the board of Cultural Crossroads Asia by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://motdang.net">motdang.net</a> · <a href="https://hongdam.net">hongdam.net</a></p>
+  <p class="th" lang="th">ทำให้คณะกรรมการ Cultural Crossroads Asia โดย NaN · หงส์ดำ เชียงราย · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://motdang.net">motdang.net</a> · <a href="https://hongdam.net">hongdam.net</a></p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var LANG=(navigator.language||'en').toLowerCase().indexOf('th')===0?'th':'en';
+  var BKK=7*3600*1000;
+  function T(o){return o[LANG]}
+
+  var grants=[
+    {id:'sum',end:'2026-11-30T23:59:59+07:00',
+     name:{en:'Sumitomo Foundation',th:'มูลนิธิซูมิโตโม (Sumitomo Foundation)'},
+     date:{en:'30 Nov 2026',th:'30 พ.ย. 2569'},
+     funds:{en:'Cultural property outside Japan. ¥35 million in total for about 15 projects; one-year grants, March 2027 to March 2028.',
+            th:'ทรัพย์สินทางวัฒนธรรมนอกประเทศญี่ปุ่น งบรวม 35 ล้านเยน สำหรับประมาณ 15 โครงการ ทุนระยะหนึ่งปี มีนาคม 2570 ถึงมีนาคม 2571'},
+     fit:{en:'Conservation of the old textiles, instruments and sacred objects.',
+          th:'การอนุรักษ์ผ้าทอเก่า เครื่องดนตรี และวัตถุศักดิ์สิทธิ์'},
+     url:'https://www.sumitomo.or.jp/e/kaigai/outside.htm'},
+    {id:'emkp',end:'2026-12-01T12:00:00Z',
+     name:{en:'British Museum EMKP',th:'บริติชมิวเซียม EMKP'},
+     date:{en:'1 Dec 2026, 12:00 GMT',th:'1 ธ.ค. 2569 เวลา 12:00 น. GMT'},
+     funds:{en:'The Endangered Material Knowledge Programme, funded by Arcadia: up to £100,000 over 24 months.',
+            th:'โครงการ Endangered Material Knowledge Programme ได้รับทุนจาก Arcadia สูงสุด 100,000 ปอนด์ ในเวลา 24 เดือน'},
+     fit:{en:'Instrument-making and textile knowledge.',
+          th:'ความรู้เรื่องการทำเครื่องดนตรีและการทอผ้า'},
+     url:'https://www.emkp.org/grants'},
+    {id:'fire',end:'2027-01-15T23:59:59+07:00',
+     name:{en:'Firebird Foundation',th:'มูลนิธิไฟร์เบิร์ด (Firebird Foundation)'},
+     date:{en:'15 Jan 2027',th:'15 ม.ค. 2570'},
+     funds:{en:'Research grants for the documentation of oral literature and traditional ecological knowledge.',
+            th:'ทุนวิจัยเพื่อบันทึกวรรณกรรมมุขปาฐะและความรู้นิเวศวิทยาดั้งเดิม'},
+     fit:{en:'Community oral-literature programs. The best match for the Akha Oral Tradition School.',
+          th:'โครงการวรรณกรรมมุขปาฐะของชุมชน เหมาะที่สุดกับโรงเรียนประเพณีปากเปล่าอาข่า'},
+     url:'https://firebirdresearchgrants.org'}
+  ];
+  var L={funds:{en:'Funds',th:'ทุนสนับสนุน'},fit:{en:'Fit',th:'ความเหมาะสม'},open:{en:'Funder page',th:'หน้าของผู้ให้ทุน'},
+         dl:{en:'days',th:'วัน'},closed:{en:'Closed',th:'ปิดรับแล้ว'}};
+  var openGrant='sum';
+
+  function renderGrants(){
+    var h='';
+    grants.forEach(function(g){
+      var o=openGrant===g.id;
+      h+='<div class="grant"><button type="button" aria-expanded="'+o+'" data-g="'+g.id+'">'+
+         '<span class="gname">'+T(g.name)+'<span class="chev" aria-hidden="true">›</span></span>'+
+         '<span class="gdate">'+T(g.date)+'</span>'+
+         '<span class="cd" data-end="'+g.end+'"><span class="dd">–</span> <span class="dl">'+T(L.dl)+'</span><span class="hms"></span></span></button>'+
+         '<div class="more"'+(o?'':' hidden')+'><dl><dt>'+T(L.funds)+'</dt><dd>'+T(g.funds)+'</dd><dt>'+T(L.fit)+'</dt><dd>'+T(g.fit)+'</dd></dl>'+
+         '<p class="src"><a href="'+g.url+'" target="_blank" rel="noopener">'+T(L.open)+'</a></p></div></div>';
+    });
+    document.getElementById('grantlist').innerHTML=h;
+    tick();
+  }
+  document.getElementById('grantlist').addEventListener('click',function(e){
+    var b=e.target.closest('button[data-g]'); if(!b) return;
+    openGrant=(openGrant===b.getAttribute('data-g'))?null:b.getAttribute('data-g');
+    renderGrants();
+  });
+
+  function p2(n){return (n<10?'0':'')+n}
+  function parts(ms){
+    var s=Math.floor(ms/1000);
+    return {d:Math.floor(s/86400),h:Math.floor(s%86400/3600),m:Math.floor(s%3600/60),s:s%60};
+  }
+  function tick(){
+    var now=Date.now();
+    document.querySelectorAll('.cd[data-end]').forEach(function(el){
+      var ms=Date.parse(el.getAttribute('data-end'))-now;
+      if(ms<=0){el.innerHTML='<span class="dd" style="font-size:22px">'+T(L.closed)+'</span>';return;}
+      var p=parts(ms);
+      el.querySelector('.dd').textContent=p.d;
+      el.querySelector('.hms').textContent=p2(p.h)+':'+p2(p.m)+':'+p2(p.s);
+    });
+    // exhibit
+    var st=Date.parse('2026-10-03T00:00:00+07:00'), en=Date.parse('2027-01-10T23:59:59+07:00');
+    var left=en-now, d=document.getElementById('exdays');
+    if(left<=0){d.textContent='0';document.getElementById('exhms').textContent='';document.getElementById('exbar').style.width='100%';document.getElementById('expct').textContent='100%';}
+    else{
+      var q=parts(left);d.textContent=q.d;
+      document.getElementById('exhms').textContent=p2(q.h)+':'+p2(q.m)+':'+p2(q.s);
+      var pct=Math.max(0,Math.min(100,(now-st)/(en-st)*100));
+      document.getElementById('exbar').style.width=pct.toFixed(1)+'%';
+      document.getElementById('expct').textContent=Math.round(pct)+'%';
+    }
+  }
+
+  // pyramid
+  var tiers=[
+    {cls:'t1',bar:{en:'1 gift',th:'1 ราย'},amt:{en:'US$300k–900k',th:'300,000–900,000 ดอลลาร์สหรัฐ'},
+     title:{en:'Lead gift',th:'ของขวัญชั้นนำ'},
+     body:{en:'The top gift runs 10–20% of the goal in capital campaigns, and 30% or more when the donor base is small. At US$3M that is US$300k–900k. For CCA this is the Heritage Center naming gift: US$300k–1M, over 12–24 months, from a Chiang Mai family or a long-time friend from abroad.',
+           th:'ในแคมเปญระดมทุนใหญ่ ของขวัญก้อนสูงสุดอยู่ที่ 10–20% ของเป้า และ 30% ขึ้นไปเมื่อฐานผู้บริจาคเล็ก ที่เป้า 3 ล้านดอลลาร์สหรัฐ คือ 300,000–900,000 ดอลลาร์ สำหรับ CCA นี่คือของขวัญตั้งชื่อศูนย์มรดกวัฒนธรรม (Heritage Center) 300,000–1,000,000 ดอลลาร์ ในเวลา 12–24 เดือน จากครอบครัวชาวเชียงใหม่หรือเพื่อนต่างชาติที่ผูกพันกับงานมานาน'}},
+    {cls:'t2',bar:{en:'about 12 gifts',th:'ราว 12 ราย'},amt:{en:'US$50k–250k each',th:'รายละ 50,000–250,000 ดอลลาร์สหรัฐ'},
+     title:{en:'Major gifts',th:'ของขวัญระดับสูง'},
+     body:{en:'About a dozen gifts of US$50k–250k. For CCA: named galleries, the library, and an endowment for the Akha school, in the same campaign. Prospects are the repeat givers and their circles, and the Jim Thompson Foundation, already a sponsor.',
+           th:'ราวหนึ่งโหลของขวัญ ขนาด 50,000–250,000 ดอลลาร์สหรัฐ สำหรับ CCA คือห้องจัดแสดงที่ตั้งชื่อ ห้องสมุด และกองทุนถาวรของโรงเรียนอาข่า ในแคมเปญเดียวกัน กลุ่มเป้าหมายคือผู้บริจาคประจำและวงเพื่อนของพวกเขา รวมถึงมูลนิธิ จิม ทอมป์สัน (Jim Thompson Foundation) ซึ่งเป็นผู้สนับสนุนอยู่แล้ว'}},
+    {cls:'t3',bar:{en:'the rest',th:'ที่เหลือ'},amt:{en:'smaller gifts and bequests',th:'ของขวัญขนาดเล็กและพินัยกรรม'},
+     title:{en:'Everyone else',th:'ผู้บริจาคทั่วไป'},
+     body:{en:'Gifts below US$50k, and bequests: any size, paid years later, counted as pledges now. CCA\'s support page lists its donors in six semesters, July 2023 to August 2026. Several give in semester after semester.',
+           th:'ของขวัญต่ำกว่า 50,000 ดอลลาร์สหรัฐ และพินัยกรรม ซึ่งมีขนาดเท่าใดก็ได้ ส่งมอบอีกหลายปีข้างหน้า และนับเป็นคำมั่นได้ตั้งแต่ตอนนี้ หน้า Support ของ CCA แสดงรายชื่อผู้บริจาคเป็นหกภาคการศึกษา ตั้งแต่กรกฎาคม 2566 ถึงสิงหาคม 2569 หลายท่านให้ต่อเนื่องภาคแล้วภาคเล่า'}}
+  ];
+  var selTier=0;
+  function renderPyr(){
+    var h='';
+    tiers.forEach(function(t,i){
+      h+='<button type="button" class="tier '+t.cls+'" aria-pressed="'+(i===selTier)+'" data-t="'+i+'"><span class="bar">'+T(t.bar)+'</span><span class="amt">'+T(t.amt)+'</span></button>';
+    });
+    document.getElementById('pyr').innerHTML=h;
+    var t=tiers[selTier];
+    document.getElementById('tierinfo').innerHTML='<h3>'+T(t.title)+'</h3><p style="margin-top:6px">'+T(t.body)+'</p>';
+  }
+  document.getElementById('pyr').addEventListener('click',function(e){
+    var b=e.target.closest('button[data-t]'); if(!b) return;
+    selTier=+b.getAttribute('data-t'); renderPyr();
+  });
+
+  // checklist (state lives in the page only)
+  var qs=[
+    {q:{en:'Who owns the collection and archive today?',th:'ปัจจุบันใครเป็นเจ้าของชุดสะสมและคลังเอกสาร?'},
+     w:{en:'A deed of gift or a signed bequest answers it. A naming donor asks first.',th:'หนังสือยกให้หรือพินัยกรรมที่ลงนามตอบเรื่องนี้ได้ ผู้บริจาคที่ขอตั้งชื่อจะถามข้อนี้ก่อน'}},
+    {q:{en:'Thai registered name and tax status; the US EIN.',th:'ชื่อที่จดทะเบียนในไทยและสถานะทางภาษี รวมถึงหมายเลข EIN ของสหรัฐ'},
+     w:{en:'The giving routes above need them.',th:'ช่องทางการให้ด้านบนต้องใช้ข้อมูลเหล่านี้'}},
+    {q:{en:'Income and spending for the last three years; the largest single gift so far.',th:'รายรับและรายจ่ายสามปีล่าสุด และเงินบริจาคก้อนเดียวที่ใหญ่ที่สุดจนถึงตอนนี้'},
+     w:{en:'Foundations and six-figure donors ask for budget and accounts.',th:'มูลนิธิผู้ให้ทุนและผู้บริจาคระดับหกหลักขอดูงบประมาณและบัญชี'}},
+    {q:{en:'The Heritage Center: a site in mind, its size, its cost.',th:'ศูนย์มรดกวัฒนธรรม (Heritage Center): ที่ตั้งที่คิดไว้ ขนาด และงบประมาณ'},
+     w:{en:'A naming gift funds a defined building.',th:'ของขวัญตั้งชื่อสนับสนุนอาคารที่กำหนดแน่ชัด'}},
+    {q:{en:'Who carries the work forward beyond the founder.',th:'ใครสานงานต่อนอกเหนือจากผู้ก่อตั้ง'},
+     w:{en:'The board, a paid director, an endowment line.',th:'คณะกรรมการ ผู้อำนวยการที่มีเงินเดือน และกองทุนถาวร'}}
+  ];
+  var done=[false,false,false,false,false];
+  function renderChk(){
+    var h='';
+    qs.forEach(function(x,i){
+      h+='<li><label><input type="checkbox" data-i="'+i+'"'+(done[i]?' checked':'')+'><span class="q"><b>'+T(x.q)+'</b><span>'+T(x.w)+'</span></span></label></li>';
+    });
+    document.getElementById('chk').innerHTML=h;
+    count();
+  }
+  function count(){
+    var n=done.filter(Boolean).length;
+    document.getElementById('cnt').textContent=n+' of 5';
+    document.getElementById('cnt2').textContent=n+' จาก 5';
+    mail();
+  }
+  document.getElementById('chk').addEventListener('change',function(e){
+    var i=e.target.getAttribute('data-i'); if(i===null) return;
+    done[+i]=e.target.checked; count();
+  });
+
+  function mail(){
+    var n=done.filter(Boolean).length, sub, body;
+    if(LANG==='th'){
+      sub='CCA: นัดพบที่ The Algonquin สัปดาห์นี้';
+      body='สวัสดีครับ/ค่ะ NaN\n\nเวลาที่สะดวก (เลือกหนึ่ง): พุธ 21 ต.ค. 14:00 / ศุกร์ 23 ต.ค. 14:00 / เสาร์ 24 ต.ค. 12:00\nคำตอบความพร้อมที่มีแล้ว: '+n+' จาก 5\n';
+    }else{
+      sub='CCA: meet at The Algonquin this week';
+      body='Hello NaN,\n\nA time that suits (pick one): Wed 21 Oct 14:00 / Fri 23 Oct 14:00 / Sat 24 Oct 12:00\nReadiness answers in hand: '+n+' of 5\n';
+    }
+    document.getElementById('mail').href='mailto:nan@motdang.net?subject='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body);
+  }
+
+  // tabs
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function showTab(t){
+    tabs.forEach(function(b){
+      var on=b===t; b.setAttribute('aria-selected',on);
+      b.tabIndex=on?0:-1;
+      document.getElementById(b.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){showTab(b)});
+    b.addEventListener('keydown',function(e){
+      var j=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null;
+      if(j===null) return; j=(j+tabs.length)%tabs.length; tabs[j].focus(); showTab(tabs[j]); e.preventDefault();
+    });
+  });
+  showTab(tabs[0]);
+
+  // language
+  function setLang(l){
+    LANG=l;
+    document.documentElement.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l)});
+    document.title=l==='th'?'ร่างหน้ารับบริจาคของ CCA':'A draft giving page for CCA';
+    renderGrants(); renderPyr(); renderChk(); tick();
+  }
+  document.querySelector('.lang').addEventListener('click',function(e){
+    var b=e.target.closest('button[data-set]'); if(b) setLang(b.getAttribute('data-set'));
+  });
+  setLang(LANG);
+  setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>

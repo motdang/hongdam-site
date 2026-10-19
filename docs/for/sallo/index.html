@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>PCF's projects, on one map</title>
+<meta name="description" content="Philanthropy Connections Foundation's partner projects in Thailand, Cambodia and Myanmar on one map. Tap a pin for the project, PCF's page and its give link.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PCF's projects, on one map">
+<meta property="og:description" content="Partner projects of Philanthropy Connections Foundation in Thailand, Cambodia and Myanmar, pinned from PCF's own pages. Made for Sallo Polak by NaN.">
+<meta property="og:url" content="https://hongdam.net/for/sallo/">
+<meta property="og:image" content="https://hongdam.net/for/sallo/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+:root{
+  --bg:#fbf8f2; --fg:#1b1a17; --muted:#5f5b52; --card:#ffffff; --line:#e2dccd;
+  --gold:#f5b800; --gold-fg:#000000; --band:#f5b800; --band-fg:#000000;
+  --th:#1f5fae; --kh:#b3261e; --mm:#2a7a3b; --pin-ring:#ffffff;
+  --link:#0b57a4; --soft:#f1ecdf;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15140f; --fg:#f3efe4; --muted:#b4ae9f; --card:#211f18; --line:#3a362a;
+    --th:#6aa8ff; --kh:#ff8a80; --mm:#6fd08a; --pin-ring:#15140f;
+    --link:#8ec3ff; --soft:#2a271d;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15140f; --fg:#f3efe4; --muted:#b4ae9f; --card:#211f18; --line:#3a362a;
+  --th:#6aa8ff; --kh:#ff8a80; --mm:#6fd08a; --pin-ring:#15140f;
+  --link:#8ec3ff; --soft:#2a271d;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI","Noto Sans Thai","Sukhumvit Set",Thonburi,sans-serif;
+  overflow-x:hidden}
+a{color:var(--link)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
+.top .brand{font-size:13px;color:var(--muted);min-width:0}
+.lang{flex-shrink:0;display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.lang button{border:0;background:transparent;color:var(--fg);padding:8px 14px;font:inherit;font-size:14px;cursor:pointer;min-height:40px}
+.lang button[aria-pressed="true"]{background:var(--gold);color:var(--gold-fg);font-weight:600}
+
+/* band */
+.band{background:var(--band);color:var(--band-fg)}
+.band .wrap{display:grid;gap:12px;padding-top:16px;padding-bottom:16px}
+.band h2{margin:0;font-size:17px;line-height:1.3;font-weight:700}
+.band .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.counter{border:2px solid #000;background:#000;color:var(--gold);border-radius:14px;padding:6px 18px 8px;cursor:pointer;
+  font:700 44px/1 ui-monospace,"SF Mono",Menlo,monospace;min-width:150px;text-align:center;touch-action:manipulation}
+.counter small{display:block;font:500 12px/1.2 system-ui,"Noto Sans Thai",sans-serif;color:#fff;margin-top:4px;letter-spacing:.02em}
+.counter:active{transform:scale(.97)}
+.band .meta{font-size:14px;max-width:46ch}
+.band .meta a{color:#000;font-weight:600}
+.band .src{font-size:12px;opacity:.85}
+.band .src a{color:#000}
+
+h1{font-size:30px;line-height:1.15;margin:28px 0 6px;letter-spacing:-.01em}
+.sub{margin:0 0 14px;color:var(--muted)}
+
+/* map */
+.mapbox{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--soft)}
+#map{height:min(56vh,560px);min-height:340px;width:100%}
+@media (min-width:760px){#map{height:min(70vh,600px)}}
+.legend{position:absolute;left:8px;top:8px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}
+.legend span{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:12px;display:inline-flex;align-items:center;gap:5px}
+.legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.pin{width:34px;height:34px;border-radius:50%;border:3px solid var(--pin-ring);color:#fff;font:700 14px/1 system-ui,sans-serif;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;box-shadow:0 1px 5px rgba(0,0,0,.45)}
+.pin.th{background:#1f5fae}.pin.kh{background:#b3261e}.pin.mm{background:#2a7a3b}
+.pin.on{outline:3px solid var(--gold);outline-offset:2px}
+.pin:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.sheet{position:relative;background:var(--card);color:var(--fg);border-top:1px solid var(--line);padding:14px 14px 12px}
+.sheet[hidden]{display:none}
+@media (min-width:760px){ .sheet{position:absolute;left:8px;width:400px;max-height:calc(100% - 16px);top:8px;overflow:auto;border:1px solid var(--line);border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.35);z-index:3} .legend{left:auto;right:8px} }
+.sheet .x{position:absolute;right:6px;top:6px;border:0;background:var(--soft);color:var(--fg);width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer}
+.sheet h3{margin:0 40px 2px 0;font-size:17px;line-height:1.25}
+.sheet .where{margin:0 0 10px;font-size:13px;color:var(--muted)}
+.proj{border-top:1px solid var(--line);padding:10px 0}
+.proj:first-of-type{border-top:0;padding-top:4px}
+.proj h4{margin:0 0 2px;font-size:15px;line-height:1.3}
+.proj p{margin:0 0 6px;font-size:14px}
+.proj .fact{color:var(--muted);font-size:12.5px}
+.acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 16px;border-radius:10px;font:600 15px/1.2 inherit;text-decoration:none;border:1px solid transparent}
+.btn.give{background:var(--gold);color:var(--gold-fg)}
+.btn.line{border-color:var(--line);color:var(--link);background:transparent}
+.srcline{font-size:12px;color:var(--muted);margin:8px 0 0}
+
+/* list under map */
+.places{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.places button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:8px 13px;font:inherit;font-size:14px;cursor:pointer;min-height:40px;display:inline-flex;gap:7px;align-items:center}
+.places i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.places b{font-weight:600;color:var(--muted);font-size:12px}
+
+section{margin:34px 0}
+h2.s{font-size:22px;margin:0 0 8px;line-height:1.2}
+.more{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.more li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.more span{color:var(--muted);display:block;font-size:13px}
+.note{font-size:13px;color:var(--muted)}
+
+.slot{aspect-ratio:16/9;border:2px dashed var(--line);border-radius:14px;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:16px;margin-top:12px}
+.cta{margin:36px 0 0;padding:22px 0 8px;border-top:1px solid var(--line)}
+.cta .btn{font-size:18px;padding:14px 22px;min-height:52px}
+footer{margin:34px 0 0;padding:18px 0 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer a{color:var(--link)}
+.th-only{display:none}
+html[lang="th"] .en-only{display:none}
+html[lang="th"] .th-only{display:revert}
+</style>
+</head>
+<body>
+
+<div class="wrap top">
+  <span class="brand" id="brand">Philanthropy Connections Foundation · Made for Sallo</span>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-l="th" aria-pressed="false">ไทย</button>
+    <button type="button" data-l="en" aria-pressed="true">EN</button>
+  </div>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <h2 id="bandTitle">137 Pillars of Hope · 18 Oct 2026 · for the 137 children of Baan Unrak</h2>
+    <div class="row">
+      <button class="counter" id="counter" type="button" aria-live="polite"><span id="num">0</span><small id="tap">tap</small></button>
+      <div class="meta">
+        <div id="bandMeta">PCF and 137 Pillars House Chiang Mai, 137 Pillars House, 18 Oct 2026.</div>
+        <div><a id="bandGive" href="https://philanthropyconnections.org/Join-Sallo-Become-a-lifeline-for-137-children-in-need#DonateNow-SalloHalfMarathonCampaign" rel="noopener">PCF's page for the 137 children</a></div>
+        <div class="src"><span id="srcLbl">Source:</span> <a href="https://donorbox.org/events/960105" rel="noopener">donorbox.org/events/960105</a>; <a href="https://philanthropyconnections.org/Join-Sallo-Become-a-lifeline-for-137-children-in-need" rel="noopener">PCF</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <h1 id="h1">PCF's projects, on one map</h1>
+  <p class="sub" id="sub"></p>
+
+  <div class="mapbox">
+    <div class="legend" aria-hidden="true">
+      <span><i style="background:#1f5fae"></i><b id="lgTh">Thailand</b></span>
+      <span><i style="background:#b3261e"></i><b id="lgKh">Cambodia</b></span>
+      <span><i style="background:#2a7a3b"></i><b id="lgMm">Myanmar</b></span>
+    </div>
+    <div id="map" role="application" aria-label="Map of PCF projects"></div>
+    <div class="sheet" id="sheet" hidden></div>
+  </div>
+  <ul class="places" id="places"></ul>
+  <p class="note" id="approx"></p>
+
+  <section>
+    <h2 class="s" id="moreH">Not yet pinned</h2>
+    <p class="note" id="moreP"></p>
+    <ul class="more" id="more"></ul>
+    <p class="note"><a id="allLink" href="https://philanthropyconnections.org/what-we-do" rel="noopener">philanthropyconnections.org/what-we-do</a></p>
+  </section>
+
+  <section>
+    <h2 class="s" id="mdH">Mot Dang</h2>
+    <p id="mdP"></p>
+    <p class="note"><span class="srcLbl">Source:</span> <a href="https://motdang.net" rel="noopener">motdang.net</a></p>
+  </section>
+
+  <section>
+    <h2 class="s" id="ftH">Your footage</h2>
+    <p id="ftP"></p>
+    <!-- MARCUS: poster frame or still from a PCF partner project film, 16:9, for this slot -->
+    <div class="slot" id="slot"></div>
+  </section>
+
+  <div class="cta">
+    <a class="btn give" id="coffee" href="mailto:nan@motdang.net?subject=Coffee%20this%20week%3F&body=Hi%20NaN%2C%20coffee%20this%20week%3F">Coffee this week?</a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div id="made">Made for Sallo by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a></div>
+    <div><a href="https://motdang.net" rel="noopener">motdang.net</a> · <a href="https://hongdam.net" rel="noopener">hongdam.net</a></div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+(function(){
+"use strict";
+var GIVE = "https://philanthropyconnections.org/donate";
+var P = "https://philanthropyconnections.org";
+
+/* Pins: one per town or village that PCF names on a project page. Coordinates are approximate (town level). */
+var PINS = [
+ {id:"sangkhlaburi", c:"th", ll:[98.452,15.155],
+  place:{en:"Sangkhlaburi, Kanchanaburi", th:"สังขละบุรี กาญจนบุรี"},
+  src:{en:"Location: Sangkhlaburi, named on PCF's relief page; Baan Unrak Children's Home is in Sangkhlaburi per Baan Unrak.", th:"ที่ตั้ง: สังขละบุรี ตามหน้างานบรรเทาทุกข์ของ PCF และเว็บไซต์บ้านอุ่นรัก",
+      url:"https://www.baanunrak.org/about_us", label:"baanunrak.org"},
+  projects:[
+   {u:"/boarding-house-running-costs",
+    n:{en:"Humanitarian Relief & Community Support", th:"ความช่วยเหลือด้านมนุษยธรรมและชุมชน"},
+    d:{en:"Monthly food, hygiene and medical support to 32 households, 137 people, in communities around Sangkhlaburi on the Thai-Myanmar border. Partner: Baan Unrak Foundation.", th:"อาหาร ของใช้ และการดูแลสุขภาพเบื้องต้นรายเดือนให้ 32 ครัวเรือน รวม 137 คน ในชุมชนรอบสังขละบุรีริมชายแดนไทย-เมียนมา พันธมิตร: มูลนิธิบ้านอุ่นรัก"},
+    f:{en:"€14,692 a year (฿562,335)", th:"€14,692 ต่อปี (฿562,335)"}},
+   {u:"/educational-support-for-underserved-and-diverse-children-from-baan-unrak",
+    n:{en:"Educational Support for Underserved and Diverse Children", th:"สนับสนุนการศึกษาเด็กที่บ้านอุ่นรัก"},
+    d:{en:"School fees, lunches and learning materials for 73 children who live at the Baan Unrak Children's Home and attend Tonrak Ananda Marga School.", th:"ค่าเล่าเรียน อาหารกลางวัน และอุปกรณ์การเรียนให้เด็ก 73 คนที่อาศัยในบ้านเด็กอุ่นรักและเรียนที่โรงเรียน Tonrak Ananda Marga"},
+    f:{en:"€53,891 a year (฿2,062,672)", th:"€53,891 ต่อปี (฿2,062,672)"}},
+   {u:"/teacher-supplement-for-bur-nursery-school",
+    n:{en:"Teacher Supplement for BUR Nursery School", th:"เงินเสริมครูโรงเรียนอนุบาลบ้านอุ่นรัก"},
+    d:{en:"Monthly stipends for three nursery teachers who care for 24 children aged 2 to 5.", th:"เงินค่าตอบแทนรายเดือนให้ครูอนุบาลสามคน ดูแลเด็กอายุ 2 ถึง 5 ปี จำนวน 24 คน"},
+    f:{en:"€9,354 a year (฿358,020)", th:"€9,354 ต่อปี (฿358,020)"}}
+  ]},
+ {id:"pianglung", c:"th", ll:[98.62,19.69],
+  place:{en:"Piang Luang, Chiang Mai Province", th:"เพียงหลวง เชียงใหม่"},
+  src:{en:"Location: Piang Luang, from the project pages; province from the map. Approximate.", th:"ที่ตั้ง: เพียงหลวง ตามหน้าโครงการ จังหวัดจากแผนที่ ตำแหน่งโดยประมาณ", url:P+"/boarding-house-shan-youth", label:"PCF"},
+  projects:[
+   {u:"/boarding-house-shan-youth",
+    n:{en:"Boarding House for Shan Youth", th:"บ้านพักเด็กเยาวชนไทใหญ่"},
+    d:{en:"A home at Koung Jor Shan Refugee Camp for displaced Shan children aged 4 to 18: help with local Thai schools, emotional support, evening lessons in English, Shan, Burmese and computers. 23 children.", th:"บ้านพักในค่ายผู้ลี้ภัยไทใหญ่ Koung Jor สำหรับเด็กไทใหญ่อายุ 4 ถึง 18 ปี ช่วยเรื่องเรียนโรงเรียนไทย ดูแลจิตใจ และสอนภาคค่ำ อังกฤษ ไทใหญ่ พม่า คอมพิวเตอร์ เด็ก 23 คน"},
+    f:{en:"Since 2012 · €16,280", th:"ตั้งแต่ 2012 · €16,280"}},
+   {u:"/project/roof-renovation-for-koung-jor-nursery-school",
+    n:{en:"Roof Renovation for Koung Jor Nursery School", th:"ซ่อมหลังคาโรงเรียนอนุบาล Koung Jor"},
+    d:{en:"New roof for the camp nursery school, which serves 120 children from the camp and nearby villages. The old roof leaked in the rainy season.", th:"หลังคาใหม่ของโรงเรียนอนุบาลในค่าย ที่ดูแลเด็ก 120 คนจากค่ายและหมู่บ้านใกล้เคียง หลังคาเดิมรั่วในหน้าฝน"},
+    f:{en:"€580", th:"€580"}},
+   {u:"/project/stipend-for-english-teachers",
+    n:{en:"Stipend for English Teachers", th:"เงินค่าตอบแทนครูสอนภาษาอังกฤษ"},
+    d:{en:"A small stipend for the teachers of the camp's evening English classes, which reach over 110 children and teenagers.", th:"เงินค่าตอบแทนเล็กน้อยให้ครูที่สอนภาษาอังกฤษภาคค่ำในค่าย ซึ่งสอนเด็กและวัยรุ่นกว่า 110 คน"},
+    f:{en:"Since 2016 · €5,170", th:"ตั้งแต่ 2016 · €5,170"}}
+  ]},
+ {id:"fang", c:"th", ll:[99.2155,19.92],
+  place:{en:"Fang, Chiang Mai Province", th:"ฝาง เชียงใหม่"},
+  src:{en:"Location: Fang District; the food project also covers Mae Ai and Chai Prakan. Approximate.", th:"ที่ตั้ง: อำเภอฝาง โครงการอาหารครอบคลุมแม่อายและไชยปราการด้วย ตำแหน่งโดยประมาณ", url:P+"/migrant-healthcare-in-fang", label:"PCF"},
+  projects:[
+   {u:"/migrant-healthcare-in-fang",
+    n:{en:"Migrant Healthcare in Fang", th:"สุขภาพแรงงานข้ามชาติที่ฝาง"},
+    d:{en:"Screenings for diabetes, blood pressure, breast and cervical cancer for migrant workers in Fang District, with referrals, interpretation, transport and home follow-up. Run by Fortune Community Health Group.", th:"ตรวจคัดกรองเบาหวาน ความดัน มะเร็งเต้านม และมะเร็งปากมดลูกให้แรงงานข้ามชาติในอำเภอฝาง พร้อมส่งต่อ ล่าม รถรับส่ง และเยี่ยมบ้าน ดำเนินการโดย Fortune Community Health Group"},
+    f:{en:"Since Dec 2024 · €11,540", th:"ตั้งแต่ ธ.ค. 2024 · €11,540"}},
+   {u:"/emergency-food-support-for-1-000-families",
+    n:{en:"Emergency Food Support for 1,000+ Families", th:"อาหารฉุกเฉินให้กว่า 1,000 ครอบครัว"},
+    d:{en:"Rice, cooking oil and dried beans for 1,020 migrant worker families in Fang, Mae Ai and Chai Prakan districts during Covid-19 lockdowns, 19 July to 2 August 2021.", th:"ข้าวสาร น้ำมันพืช และถั่วแห้งให้ครอบครัวแรงงานข้ามชาติ 1,020 ครอบครัวในอำเภอฝาง แม่อาย และไชยปราการ ช่วงล็อกดาวน์โควิด 19 กรกฎาคม ถึง 2 สิงหาคม 2021"},
+    f:{en:"€15,097", th:"€15,097"}}
+  ]},
+ {id:"maesot", c:"th", ll:[98.5696,16.715],
+  place:{en:"Mae Sot, Tak Province", th:"แม่สอด ตาก"},
+  src:{en:"Location: Mae Sot, from the project page. Approximate.", th:"ที่ตั้ง: แม่สอด ตามหน้าโครงการ ตำแหน่งโดยประมาณ", url:P+"/project/scholarships-for-3-change-makers", label:"PCF"},
+  projects:[
+   {u:"/project/scholarships-for-3-change-makers",
+    n:{en:"Scholarships for 3 Change Makers", th:"ทุนการศึกษาสำหรับผู้สร้างการเปลี่ยนแปลงสามคน"},
+    d:{en:"Full support for three university students from ethnic groups along the border in Tak Province, studying at Bodhivijjalaya College, Srinakharinwirot University in Mae Sot.", th:"ทุนเต็มจำนวนให้นักศึกษามหาวิทยาลัยสามคนจากกลุ่มชาติพันธุ์ตามแนวชายแดนจังหวัดตาก เรียนที่วิทยาลัยโพธิวิชชาลัย มหาวิทยาลัยศรีนครินทรวิโรฒ แม่สอด"},
+    f:{en:"Since 2018 · €6,300", th:"ตั้งแต่ 2018 · €6,300"}}
+  ]},
+ {id:"bannaisoi", c:"th", ll:[97.8755,19.3814],
+  place:{en:"Ban Nai Soi, Mae Hong Son Province", th:"บ้านในสอย แม่ฮ่องสอน"},
+  src:{en:"Location: Mae Hong Son Province on the project page; the learning centre's name places it at Ban Nai Soi. Approximate.", th:"ที่ตั้ง: จังหวัดแม่ฮ่องสอนตามหน้าโครงการ ชื่อศูนย์การเรียนชี้ไปที่บ้านในสอย ตำแหน่งโดยประมาณ", url:P+"/project/supplement-to-teachers-salary", label:"PCF"},
+  projects:[
+   {u:"/project/supplement-to-teachers-salary",
+    n:{en:"Supplement to Teacher's Salary", th:"เงินเสริมเงินเดือนครู"},
+    d:{en:"Supports Ban Nai Soi Community Learning Centre, which gives secondary education and vocational training to migrant and minority youth near the border. 10 teachers and staff, 38 onsite and 28 online students.", th:"สนับสนุนศูนย์การเรียนชุมชนบ้านในสอย ซึ่งสอนระดับมัธยมและอาชีพให้เยาวชนข้ามชาติและชนกลุ่มน้อยใกล้ชายแดน ครูและเจ้าหน้าที่ 10 คน นักเรียนในศูนย์ 38 คน ออนไลน์ 28 คน"},
+    f:{en:"Since 2023 · €8,854", th:"ตั้งแต่ 2023 · €8,854"}}
+  ]},
+ {id:"siemreap", c:"kh", ll:[103.859,13.362],
+  place:{en:"Siem Reap Province", th:"จังหวัดเสียมเรียบ"},
+  src:{en:"Location: Siem Reap Province, partner KAKO. Pin sits at Siem Reap town; villages, including Takam in Puok District, are not pinned separately. Approximate.", th:"ที่ตั้ง: จังหวัดเสียมเรียบ พันธมิตร KAKO หมุดอยู่ที่ตัวเมืองเสียมเรียบ ไม่ได้ปักแยกตามหมู่บ้าน รวมถึง Takam ในอำเภอ Puok ตำแหน่งโดยประมาณ", url:P+"/project/preschools-in-cambodia", label:"PCF"},
+  projects:[
+   {u:"/project/preschools-in-cambodia",
+    n:{en:"Preschools in Cambodia", th:"โรงเรียนอนุบาลในกัมพูชา"},
+    d:{en:"Four preschools in remote villages (Lvea, Snor, Kouk Srama, Kouk Thmei) that prepare children of 4 to 5 for primary school. 90 children, 4 teachers. Partner: KAKO.", th:"โรงเรียนอนุบาลสี่แห่งในหมู่บ้านห่างไกล (Lvea, Snor, Kouk Srama, Kouk Thmei) เตรียมเด็กอายุ 4 ถึง 5 ปีเข้าประถม เด็ก 90 คน ครู 4 คน พันธมิตร: KAKO"},
+    f:{en:"Since 2013 · €19,395", th:"ตั้งแต่ 2013 · €19,395"}},
+   {u:"/project/seven-libraries-in-remote-villages",
+    n:{en:"Seven Libraries in Remote Villages", th:"ห้องสมุดเจ็ดแห่งในหมู่บ้านห่างไกล"},
+    d:{en:"Seven village libraries restored by KAKO, with rotating books, newspapers, English classes and health workshops. 6,750 children and adults.", th:"ห้องสมุดหมู่บ้านเจ็ดแห่งที่ KAKO ฟื้นฟู มีหนังสือหมุนเวียน หนังสือพิมพ์ ชั้นเรียนภาษาอังกฤษ และเวิร์กช็อปสุขภาพ เด็กและผู้ใหญ่ 6,750 คน"},
+    f:{en:"Since 2013 · €13,500", th:"ตั้งแต่ 2013 · €13,500"}},
+   {u:"/project/stung-preah-srok-preschool",
+    n:{en:"Stung Preah Srok Preschool", th:"โรงเรียนอนุบาล Stung Preah Srok"},
+    d:{en:"Support for a KAKO preschool now run by the Cambodian government: manageable class sizes, teacher training, salaries, materials, fruit and soymilk. 59 students.", th:"สนับสนุนโรงเรียนอนุบาลที่ KAKO ตั้งและรัฐบาลกัมพูชารับช่วงต่อ คุมขนาดห้อง อบรมครู เงินเดือน สื่อการสอน ผลไม้และนมถั่วเหลือง นักเรียน 59 คน"},
+    f:{en:"Since 2015 · €5,060", th:"ตั้งแต่ 2015 · €5,060"}},
+   {u:"/project/60-scholarships",
+    n:{en:"60 Scholarships", th:"ทุนการศึกษา 60 ทุน"},
+    d:{en:"Scholarships for 60 students aged 12 to 20 from poor families in KAKO's scholarship programme, so they can finish school.", th:"ทุนให้นักเรียนอายุ 12 ถึง 20 ปี 60 คนจากครอบครัวยากจนในโครงการทุนของ KAKO เพื่อเรียนจนจบ"},
+    f:{en:"Since 2017 · €21,889", th:"ตั้งแต่ 2017 · €21,889"}},
+   {u:"/project/scholarships-for-cambodian-girls",
+    n:{en:"Scholarships for Cambodian Girls", th:"ทุนการศึกษาเด็กหญิงกัมพูชา"},
+    d:{en:"Sponsors for students in KAKO's scholarship programme, which began with 8 students in 2012 and now supports 53.", th:"ผู้สนับสนุนนักเรียนในโครงการทุนของ KAKO เริ่มที่ 8 คนในปี 2012 ปัจจุบันสนับสนุน 53 คน"},
+    f:{en:"Since 2012", th:"ตั้งแต่ 2012"}},
+   {u:"/project/takam-classroom-renovation",
+    n:{en:"Takam Classroom Renovation", th:"ปรับปรุงห้องเรียน Takam"},
+    d:{en:"Takam village, Puok District. Villagers painted, wired and extended a classroom for a new community preschool, 7 January to 27 February 2023. 29 students. Partner: KAKO.", th:"หมู่บ้าน Takam อำเภอ Puok ชาวบ้านทาสี ต่อไฟ และต่อเติมห้องเรียนสำหรับอนุบาลชุมชนแห่งใหม่ ตั้งแต่ 7 มกราคม ถึง 27 กุมภาพันธ์ 2023 นักเรียน 29 คน พันธมิตร: KAKO"},
+    f:{en:"2022–23 · €447", th:"2022–23 · €447"}}
+  ]},
+ {id:"mawlamyine", c:"mm", ll:[97.628,16.491],
+  place:{en:"Mawlamyine, Mon State", th:"เมาะลำเลิง รัฐมอญ"},
+  src:{en:"Location: Mawlamyine, Mon State, from the project pages. Approximate.", th:"ที่ตั้ง: เมาะลำเลิง รัฐมอญ ตามหน้าโครงการ ตำแหน่งโดยประมาณ", url:P+"/project/intensive-english-career-bridging-program", label:"PCF"},
+  projects:[
+   {u:"/project/intensive-english-career-bridging-program",
+    n:{en:"Intensive English Career Bridging Program", th:"หลักสูตรภาษาอังกฤษเข้มข้นเชื่อมสู่อาชีพ"},
+    d:{en:"A one-year programme with a three-month internship for young adults from Mon and Karen states: English, leadership, project management, community development. 16 students. Partner: Mehm Kan Kyi Education Network.", th:"หลักสูตรหนึ่งปีพร้อมฝึกงานสามเดือนสำหรับคนหนุ่มสาวจากรัฐมอญและรัฐกะเหรี่ยง เรียนภาษาอังกฤษ ภาวะผู้นำ การจัดการโครงการ และการพัฒนาชุมชน นักเรียน 16 คน พันธมิตร: Mehm Kan Kyi Education Network"},
+    f:{en:"Since 2015 · €15,823", th:"ตั้งแต่ 2015 · €15,823"}},
+   {u:"/project/education-and-emergency-support-for-myanmar-youth",
+    n:{en:"Education and Emergency Support for Myanmar Youth", th:"สนับสนุนการศึกษาและช่วยเหลือฉุกเฉินเยาวชนเมียนมา"},
+    d:{en:"Living costs and emergency funds for motivated students from Myanmar studying in schools in and around the Thai-Myanmar area. 11 students. Partner: Wide Horizon.", th:"ค่าครองชีพและเงินฉุกเฉินให้นักเรียนจากเมียนมาที่ตั้งใจเรียนในโรงเรียนบริเวณไทย-เมียนมา นักเรียน 11 คน พันธมิตร: Wide Horizon"},
+    f:{en:"Since 2020 · €3,542", th:"ตั้งแต่ 2020 · €3,542"}}
+  ]},
+ {id:"lashio", c:"mm", ll:[97.745,22.942],
+  place:{en:"Lashio, Northern Shan State", th:"ล่าเสี้ยว รัฐฉานเหนือ"},
+  src:{en:"Location: Lashio, from the project title and text. Approximate.", th:"ที่ตั้ง: ล่าเสี้ยว ตามชื่อและเนื้อหาโครงการ ตำแหน่งโดยประมาณ", url:P+"/rice-support-for-lahu-displaced-persons-in-lashio", label:"PCF"},
+  projects:[
+   {u:"/rice-support-for-lahu-displaced-persons-in-lashio",
+    n:{en:"Rice Support to Lahu IDPs in Lashio", th:"ข้าวสารให้ชาวลาหู่ที่พลัดถิ่นในล่าเสี้ยว"},
+    d:{en:"In December 2023, 70 sacks of rice (50 kg each) fed 960 displaced people in the Lahu camp for two months. Partner: Lahu Women's Organisation.", th:"เดือนธันวาคม 2023 ข้าวสาร 70 กระสอบ (กระสอบละ 50 กก.) เลี้ยงผู้พลัดถิ่น 960 คนในค่ายลาหู่นาน 2 เดือน พันธมิตร: องค์กรสตรีลาหู่"},
+    f:{en:"€2,855", th:"€2,855"}}
+  ]},
+ {id:"demoso", c:"mm", ll:[97.159,19.538],
+  place:{en:"Demoso Township, Karenni State", th:"เขต Demoso รัฐคาเรนนี"},
+  src:{en:"Location: Eastern Demoso Township, from the project page. Pin sits at Demoso town. Approximate.", th:"ที่ตั้ง: เขต Demoso ตะวันออก ตามหน้าโครงการ หมุดอยู่ที่เมือง Demoso ตำแหน่งโดยประมาณ", url:P+"/project/support-karenni-idp-schools-humanitarian-assistance", label:"PCF"},
+  projects:[
+   {u:"/project/support-karenni-idp-schools-humanitarian-assistance",
+    n:{en:"Support Karenni IDP Schools & Humanitarian Assistance", th:"สนับสนุนโรงเรียนผู้พลัดถิ่นคาเรนนีและความช่วยเหลือด้านมนุษยธรรม"},
+    d:{en:"Care for teachers, school materials and food for students and teachers in Karenni IDP schools, with Friends Without Borders. 723 students, 41 teachers.", th:"ดูแลครู สื่อการสอน และอาหารให้นักเรียนและครูในโรงเรียนผู้พลัดถิ่นคาเรนนี ร่วมกับ Friends Without Borders นักเรียน 723 คน ครู 41 คน"},
+    f:{en:"Since 2021 · €33,444", th:"ตั้งแต่ 2021 · €33,444"}}
+  ]}
+];
+
+/* PCF pages that name a place the map has not pinned. */
+var MORE = [
+ {u:"/project/loi-sam-sip-school", n:{en:"Loi Sam Sip School", th:"โรงเรียน Loi Sam Sip"}, w:{en:"Loi Sam Sip IDP Camp, Myanmar", th:"ค่ายผู้พลัดถิ่น Loi Sam Sip เมียนมา"}},
+ {u:"/baan-huay-hin-lad-nok-community-school", n:{en:"Baan Huay Hin Lad Nok Community School", th:"โรงเรียนชุมชน Baan Huay Hin Lad Nok"}, w:{en:"A village in Chiang Rai Province (the page's location field says Chiang Mai)", th:"หมู่บ้านในจังหวัดเชียงราย (ช่องที่ตั้งในหน้าเขียนเชียงใหม่)"}},
+ {u:"/dilip-kumar-dasgupta-school-for-displaced-children-dkds", n:{en:"Dilip Kumar Dasgupta School (DKDS)", th:"โรงเรียน Dilip Kumar Dasgupta (DKDS)"}, w:{en:"Myine Tha Yar Village, Myanmar · Baan Unrak Foundation", th:"หมู่บ้าน Myine Tha Yar เมียนมา · มูลนิธิบ้านอุ่นรัก"}},
+ {u:"/project/new-school-building-in-pying-mong-village", n:{en:"New School Building in Pying Mong Village", th:"อาคารเรียนใหม่หมู่บ้าน Pying Mong"}, w:{en:"Pying Mong Village, Myanmar", th:"หมู่บ้าน Pying Mong เมียนมา"}},
+ {u:"/project/school-reconstruction-after-fire-damage", n:{en:"School Reconstruction After Fire Damage", th:"สร้างโรงเรียนใหม่หลังไฟไหม้"}, w:{en:"Mae Kae Khee, Trakuk District, Karen State", th:"Mae Kae Khee เขต Trakuk รัฐกะเหรี่ยง"}},
+ {u:"/project/strengthening-capacity-of-border-karen-schools-and-teachers-in-karen-state", n:{en:"Strengthening Border Karen Schools and Teachers", th:"เสริมความเข้มแข็งโรงเรียนและครูกะเหรี่ยงชายแดน"}, w:{en:"Ta Graeh, Karen State", th:"Ta Graeh รัฐกะเหรี่ยง"}},
+ {u:"/project/school-rebuild-and-emergency-repair", n:{en:"School Rebuild and Emergency Repair", th:"สร้างและซ่อมโรงเรียนฉุกเฉิน"}, w:{en:"Moei River, Karen State", th:"แม่น้ำเมย รัฐกะเหรี่ยง"}},
+ {u:"/project/medicines-for-internally-displaced-people", n:{en:"Medicines for Internally Displaced People", th:"ยาสำหรับผู้พลัดถิ่นภายในประเทศ"}, w:{en:"Myanmar, no town named", th:"เมียนมา ไม่ระบุเมือง"}}
+];
+
+var T = {
+ en:{
+  brand:"Philanthropy Connections Foundation · Made for Sallo",
+  band:"137 Pillars of Hope · 18 Oct 2026 · for the 137 children of Baan Unrak",
+  bandMeta:"Organised by PCF and 137 Pillars House Chiang Mai, at 137 Pillars House.",
+  bandGive:"PCF's page for the 137 children (half-marathon campaign, 20 Dec 2026)",
+  tap:"tap to count", src:"Source:",
+  h1:"PCF's projects, on one map",
+  sub:function(n,m){return n+" projects in "+m+" places, pinned from the town or village on each PCF project page. Tap a pin.";},
+  approx:"Pins are approximate, placed at town level.",
+  lgTh:"Thailand", lgKh:"Cambodia", lgMm:"Myanmar",
+  proj:function(n){return n===1?"1 project":n+" projects";},
+  pcfPage:"PCF's page", give:"Give", giveNote:"Give opens PCF's donate page.",
+  moreH:"Not yet pinned",
+  moreP:"These PCF pages name a place the map has not pinned.",
+  allLink:"All projects on philanthropyconnections.org",
+  mdH:"Mot Dang",
+  mdP:"Mot Dang already maps northern Thailand and Phnom Penh.",
+  ftH:"Your footage",
+  ftP:"NaN's team cuts short films. Footage from a PCF partner project lands in this slot.",
+  slot:"Short film slot",
+  coffee:"Coffee this week?",
+  made:"Made for Sallo by NaN · Hongdam, Chiang Rai · ",
+  close:"Close", country:{th:"Thailand",kh:"Cambodia",mm:"Myanmar"}, ttl:"PCF's projects, on one map"
+ },
+ th:{
+  brand:"มูลนิธิ Philanthropy Connections · ทำให้ Sallo",
+  band:"137 Pillars of Hope · 18 ต.ค. 2026 · เพื่อเด็ก 137 คนของบ้านอุ่นรัก (Baan Unrak)",
+  bandMeta:"จัดโดย PCF และ 137 Pillars House เชียงใหม่ ที่ 137 Pillars House",
+  bandGive:"หน้าของ PCF เพื่อเด็ก 137 คน (แคมเปญวิ่งฮาล์ฟมาราธอน 20 ธ.ค. 2026)",
+  tap:"แตะเพื่อนับ", src:"แหล่งที่มา:",
+  h1:"โครงการของ PCF บนแผนที่เดียว",
+  sub:function(n,m){return n+" โครงการใน "+m+" แห่ง ปักตามเมืองหรือหมู่บ้านที่หน้าโครงการของ PCF ระบุ แตะหมุดเพื่อดู";},
+  approx:"ตำแหน่งหมุดโดยประมาณ ระดับเมือง",
+  lgTh:"ไทย", lgKh:"กัมพูชา", lgMm:"เมียนมา",
+  proj:function(n){return n+" โครงการ";},
+  pcfPage:"หน้าของ PCF", give:"ร่วมให้", giveNote:"ปุ่มร่วมให้เปิดหน้าบริจาคของ PCF",
+  moreH:"ยังไม่ได้ปักหมุด",
+  moreP:"หน้าเหล่านี้ของ PCF ระบุสถานที่ที่แผนที่ยังปักไม่ได้",
+  allLink:"โครงการทั้งหมดที่ philanthropyconnections.org",
+  mdH:"หมดแดง (Mot Dang)",
+  mdP:"หมดแดงทำแผนที่ภาคเหนือของไทยและพนมเปญไว้แล้ว",
+  ftH:"ภาพของคุณ",
+  ftP:"ทีมของ NaN ตัดหนังสั้น ภาพจากโครงการพันธมิตรของ PCF วางในช่องนี้",
+  slot:"ช่องหนังสั้น",
+  coffee:"กาแฟสัปดาห์นี้ไหม",
+  made:"ทำให้ Sallo โดย NaN · หงส์ดำ เชียงราย · ",
+  close:"ปิด", country:{th:"ไทย",kh:"กัมพูชา",mm:"เมียนมา"}, ttl:"โครงการของ PCF บนแผนที่เดียว"
+ }
+};
+
+var lang = ((navigator.language||"en").toLowerCase().indexOf("th")===0) ? "th" : "en";
+var qs = location.search.match(/[?&]lang=(th|en)/); if(qs) lang = qs[1];
+var current = null, map = null, markers = {}, opened = false;
+var $ = function(id){return document.getElementById(id);};
+var nProj = PINS.reduce(function(a,p){return a+p.projects.length;},0);
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+function renderCard(){
+  var s = $("sheet");
+  if(!current){ s.hidden = true; return; }
+  var pin = PINS.filter(function(p){return p.id===current;})[0], t = T[lang];
+  var html = '<button class="x" type="button" aria-label="'+esc(t.close)+'">×</button>'+
+    '<h3>'+esc(pin.place[lang])+'</h3>'+
+    '<p class="where">'+esc(t.country[pin.c])+' · '+esc(t.proj(pin.projects.length))+'</p>';
+  pin.projects.forEach(function(pr){
+    html += '<div class="proj"><h4>'+esc(pr.n[lang])+'</h4><p>'+esc(pr.d[lang])+'</p>'+
+      '<p class="fact">'+esc(pr.f[lang])+'</p>'+
+      '<div class="acts"><a class="btn give" href="'+GIVE+'" rel="noopener">'+esc(t.give)+'</a>'+
+      '<a class="btn line" href="'+P+pr.u+'" rel="noopener">'+esc(t.pcfPage)+'</a></div></div>';
+  });
+  html += '<p class="srcline">'+esc(t.giveNote)+' '+esc(t.src)+' '+esc(pin.src[lang])+' <a href="'+pin.src.url+'" rel="noopener">'+esc(pin.src.label)+'</a></p>';
+  s.innerHTML = html; s.hidden = false; s.scrollTop = 0;
+  if(window.innerWidth<760 && opened){ setTimeout(function(){ s.scrollIntoView({behavior:'smooth',block:'nearest'}); },50); }
+  s.querySelector(".x").addEventListener("click", function(){ select(null); });
+}
+
+function select(id, fly){
+  current = id; opened = !!id;
+  Object.keys(markers).forEach(function(k){ markers[k].getElement().classList.toggle("on", k===id); });
+  renderCard();
+  if(id && map && fly){
+    var pin = PINS.filter(function(p){return p.id===id;})[0];
+    map.easeTo({center:pin.ll, zoom:Math.max(map.getZoom(),7), duration:600});
+  }
+}
+
+function renderText(){
+  var t = T[lang];
+  document.documentElement.lang = lang;
+  document.title = t.ttl;
+  $("brand").textContent = t.brand;
+  $("bandTitle").textContent = t.band;
+  $("bandMeta").textContent = t.bandMeta;
+  $("bandGive").textContent = t.bandGive;
+  $("tap").textContent = t.tap;
+  $("srcLbl").textContent = t.src;
+  $("h1").textContent = t.h1;
+  $("sub").textContent = t.sub(nProj, PINS.length);
+  $("approx").textContent = t.approx;
+  $("lgTh").textContent = t.lgTh; $("lgKh").textContent = t.lgKh; $("lgMm").textContent = t.lgMm;
+  $("moreH").textContent = t.moreH; $("moreP").textContent = t.moreP;
+  $("allLink").textContent = t.allLink;
+  $("mdH").textContent = t.mdH; $("mdP").textContent = t.mdP;
+  Array.prototype.forEach.call(document.querySelectorAll(".srcLbl"), function(e){ e.textContent = t.src; });
+  $("ftH").textContent = t.ftH; $("ftP").textContent = t.ftP; $("slot").textContent = t.slot;
+  $("coffee").textContent = t.coffee;
+  $("made").innerHTML = esc(t.made)+'<a href="mailto:nan@motdang.net">nan@motdang.net</a>';
+  Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===lang ? "true":"false"); });
+  var col = {th:"#1f5fae",kh:"#b3261e",mm:"#2a7a3b"};
+  $("places").innerHTML = PINS.map(function(p){
+    return '<li><button type="button" data-id="'+p.id+'"><i style="background:'+col[p.c]+'"></i>'+esc(p.place[lang])+' <b>'+p.projects.length+'</b></button></li>';
+  }).join("");
+  Array.prototype.forEach.call($("places").querySelectorAll("button"), function(b){
+    b.addEventListener("click", function(){ select(b.getAttribute("data-id"), true); $("map").scrollIntoView({block:"nearest", behavior:"smooth"}); });
+  });
+  $("more").innerHTML = MORE.map(function(m){
+    return '<li><a href="'+P+m.u+'" rel="noopener">'+esc(m.n[lang])+'</a><span>'+esc(m.w[lang])+'</span></li>';
+  }).join("");
+  Object.keys(markers).forEach(function(k){
+    var p = PINS.filter(function(x){return x.id===k;})[0];
+    markers[k].getElement().setAttribute("aria-label", p.place[lang]+", "+t.proj(p.projects.length));
+  });
+  renderCard();
+}
+
+/* counter */
+var counting = false;
+$("counter").addEventListener("click", function(){
+  if(counting) return; counting = true;
+  var start = null, dur = 1500, el = $("num");
+  function step(ts){
+    if(start===null) start = ts;
+    var k = Math.min(1,(ts-start)/dur), e = 1-Math.pow(1-k,3);
+    el.textContent = Math.round(e*137);
+    if(k<1) requestAnimationFrame(step); else { el.textContent = "137"; counting = false; }
+  }
+  el.textContent = "0";
+  requestAnimationFrame(step);
+});
+
+/* language */
+Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function(b){
+  b.addEventListener("click", function(){ lang = b.getAttribute("data-l"); renderText(); });
+});
+
+/* map */
+function initMap(){
+  if(typeof maplibregl === "undefined"){ $("map").textContent = ""; return; }
+  map = new maplibregl.Map({container:"map", attributionControl:{compact:true}, style:"https://tiles.openfreemap.org/styles/liberty", center:[100,17], zoom:4.5, attributionControl:true});
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}), "bottom-right");
+  PINS.forEach(function(p){
+    var el = document.createElement("button");
+    el.type = "button"; el.className = "pin "+p.c; el.textContent = p.projects.length;
+    el.addEventListener("click", function(ev){ ev.stopPropagation(); select(p.id, false); });
+    markers[p.id] = new maplibregl.Marker({element:el}).setLngLat(p.ll).addTo(map);
+  });
+  map.on("click", function(){ select(null); });
+  var b = new maplibregl.LngLatBounds();
+  PINS.forEach(function(p){ b.extend(p.ll); });
+  function fit(){ map.fitBounds(b, {padding:{top:70,bottom:96,left:44,right:56}, duration:0, maxZoom:8}); }
+  map.on("load", fit);
+  window.addEventListener("resize", function(){ if(!current) fit(); });
+  renderText();
+}
+
+renderText();
+initMap();
+})();
+</script>
+</body>
+</html>
