@@ -688,7 +688,7 @@ function makeDot(alt,which,cls){
   return wrap;
 }
 function initMap(){
-  if(typeof maplibregl==='undefined'){ $('map').innerHTML='<p style="padding:16px">'+T[lang].mapFail+'</p>'; return; }
+  if(typeof maplibregl==='undefined'){ $('map').innerHTML='<p style="padding:16px">'+T[lang].mapFail+'</p>'; $('chip').hidden=true; return; }
   try{
     map=new maplibregl.Map({
       container:'map',
@@ -709,7 +709,7 @@ function initMap(){
     });
     map.on('error',function(ev){ if(window.console) console.log('map',ev&&ev.error&&ev.error.message); });
     window.__map=map;
-  }catch(err){ $('map').innerHTML='<p style="padding:16px">'+T[lang].mapFail+'</p>'; }
+  }catch(err){ $('map').innerHTML='<p style="padding:16px">'+T[lang].mapFail+'</p>'; $('chip').hidden=true; }
 }
 
 /* ---------- wiring ---------- */

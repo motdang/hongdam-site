@@ -368,7 +368,6 @@ html[lang=th] .btn.big{font-size:21px}
     <h2 data-i="h4"></h2>
     <p class="letter" id="letter"></p>
     <div class="cols" id="cols"></div>
-    <div class="cta"><a class="btn" id="coffee1" href="#"></a></div>
   </div>
 </section>
 
@@ -867,7 +866,7 @@ function renderNote(){
   $('cols').innerHTML=C.map(c=>'<div class="col"><h3>'+c[0]+'<span>'+c[1]+'</span></h3><ul>'+c[2].map(r=>'<li>'+esc(r[li])+' '+sup(r[2])+'</li>').join('')+'</ul></div>').join('');
   const sub=encodeURIComponent(L==='th'?'กาแฟกับ Sallo และ NaN ไหม':'Coffee with Sallo and NaN?');
   const body=encodeURIComponent(L==='th'?'สวัสดี NaN\n\nสนใจนัดกาแฟค่ะ\n':'Hi NaN,\n\nYes to coffee. \n');
-  ['coffee1','coffee2'].forEach(id=>{const a=$(id);a.textContent=t(id==='coffee1'?'coffee':'coffee2');a.href='mailto:nan@motdang.net?subject='+sub+'&body='+body});
+  ['coffee2'].forEach(id=>{const a=$(id);a.textContent=t('coffee2');a.href='mailto:nan@motdang.net?subject='+sub+'&body='+body});
 }
 function renderSrc(){
   $('srcs').innerHTML='<h4>'+esc(t('srch'))+'</h4><ol>'+SRC.map((s,i)=>'<li id="s'+(i+1)+'">'+esc(s[0])+' <a href="'+s[1]+'" target="_blank" rel="noopener">'+esc(s[1].indexOf('mailto:')===0?'nan@motdang.net':s[1].replace(/^https?:\/\//,'').split('?')[0])+'</a></li>').join('')+'</ol>';
