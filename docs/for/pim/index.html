@@ -5,169 +5,312 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Your Chiang Mai, on Mot Dang</title>
-<meta name="description" content="196 Citylife write-ups on a map of Chiang Mai, with the Mot Dang page for each. Drag the year and watch the city fill in.">
+<meta name="description" content="196 Citylife pieces fill a map of Chiang Mai, year by year, each with its Mot Dang page. Four videos to play. Made for Pim.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Your Chiang Mai, on Mot Dang">
-<meta property="og:description" content="196 Citylife write-ups on a map of Chiang Mai, with the Mot Dang page for each. Made for Pim.">
+<meta property="og:description" content="196 Citylife pieces fill a map of Chiang Mai, year by year. Made for Pim.">
 <meta property="og:url" content="https://hongdam.net/for/pim/">
 <meta property="og:image" content="https://hongdam.net/for/pim/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Noto+Serif+Thai:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <style>
 :root{
-  --bg:#fbf7ef; --panel:#ffffff; --ink:#1d1a16; --muted:#675d51; --line:#e4dccd;
-  --brick:#b4412c; --gold:#f2b705; --gold-ink:#000000; --link:#8a2e1c; --bar:#d9cdb8; --bar-on:#b4412c;
-  --shadow:0 6px 24px rgba(40,25,10,.14);
+  --paper:#fffbf1; --paper2:#f3ecdb; --ink:#17130f; --mute:#5f564a;
+  --red:#d8261c; --on-red:#ffffff; --gold:#ffc61a; --gold-ink:#000000;
+  --rule:#17130f;
+  --display:"Anton","Prompt",Impact,"Arial Narrow",sans-serif;
+  --ui:"Prompt",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4","Noto Serif Thai",Georgia,"Times New Roman",serif;
+  --strip:48px;
+  --num:"Anton",Impact,"Arial Narrow",sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#16130f; --panel:#221d17; --ink:#f4ede0; --muted:#bdb2a1; --line:#3a3226; --link:#f0a58f; --bar:#4a4032; --bar-on:#e0654a; --shadow:0 6px 24px rgba(0,0,0,.5);}
+  :root{--paper:#14110e; --paper2:#201b16; --ink:#f7f0e4; --mute:#bdb3a3; --red:#ff5a4c; --on-red:#14110e; --rule:#f7f0e4;}
 }
+html[lang=th]{--display:"Prompt","Anton",sans-serif}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI","Noto Sans Thai",Thonburi,sans-serif}
-a{color:var(--link)}
-.wrap{max-width:880px;margin:0 auto;padding:0 16px}
-.top{display:flex;justify-content:space-between;align-items:center;padding:14px 0 0}
-.mark{font-size:14px;color:var(--muted);letter-spacing:.02em}
-.lang{font:inherit;font-size:15px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;min-height:40px}
-.eyebrow{margin:34px 0 4px;font-size:14px;color:var(--brick);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-@media (prefers-color-scheme:dark){.eyebrow{color:#e8826a}}
-h1{font:700 clamp(32px,8.4vw,54px)/1.08 Georgia,"Times New Roman","Noto Serif Thai",serif;margin:0 0 14px;letter-spacing:-.01em}
-.lead{font-size:18px;color:var(--ink);margin:0 0 18px;max-width:34em}
-.slot{height:64px;border-radius:14px;margin:6px 0 18px;background:linear-gradient(120deg,var(--line),transparent 70%);border:1px dashed var(--line)}
-.counter{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:8px 0 10px}
-.big{font:700 clamp(76px,24vw,150px)/.9 Georgia,serif;color:var(--brick);font-variant-numeric:tabular-nums;letter-spacing:-.03em}
-@media (prefers-color-scheme:dark){.big{color:#e8826a}}
-.big-l{font-size:19px;max-width:11em;line-height:1.25}
-.sub{color:var(--muted);font-size:15px;margin:0 0 6px}
-.mapbox{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#e9e4d8}
-#map{height:min(56vh,520px);min-height:340px;width:100%}
-.card{position:relative;margin-top:10px;background:var(--panel);color:var(--ink);border-radius:14px;padding:14px 14px 14px;border:1px solid var(--line);min-height:138px}
-.card .empty{margin:0;color:var(--muted);font-size:16px;padding-top:6px}
-.card .full{display:none}
-.card.on .full{display:block}
-.card.on .empty{display:none}
-.card h3{margin:0 28px 2px 0;font-size:19px;line-height:1.25}
-.card .meta{margin:0 0 10px;font-size:14px;color:var(--muted)}
-.card .x{position:absolute;right:6px;top:6px;width:40px;height:40px;border:0;background:none;color:var(--muted);font-size:24px;cursor:pointer}
-.btns{display:flex;gap:8px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;border-radius:999px;font:600 15px/1.2 inherit;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.55 var(--serif);overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* running head */
+.strip{position:fixed;z-index:50;left:0;right:0;top:0;height:var(--strip);display:flex;align-items:center;justify-content:space-between;
+  padding:0 16px;background:var(--paper);border-bottom:3px solid var(--rule)}
+.logo{font:400 23px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;display:flex;align-items:center;gap:8px;text-decoration:none}
+.logo i{display:block;width:12px;height:12px;background:var(--red);border-radius:50%}
+.logo small{font:600 11px var(--ui);letter-spacing:.14em;color:var(--mute);margin-left:4px}
+.lang{font:600 14px var(--ui);border:2px solid var(--rule);background:transparent;border-radius:999px;padding:0 14px;min-height:36px;cursor:pointer}
+.lang span{opacity:.55}.lang span.on{opacity:1;text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:4px}
+
+/* hero: the map is the first screen */
+.hero{height:100vh;height:100svh;min-height:600px;padding-top:var(--strip);display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;position:relative}
+#map{grid-area:1/1;min-height:0;background:#ebe4d3}
+.title{grid-area:1/1;z-index:3;align-self:start;pointer-events:none;
+  background:color-mix(in srgb,var(--paper) 93%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border-bottom:3px solid var(--rule);padding:12px 16px 14px}
+.kick{font:600 12px var(--ui);letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+h1{font:400 clamp(40px,11.4vw,56px)/1.02 var(--display);text-transform:uppercase;margin:0;letter-spacing:.005em;text-wrap:balance}
+html[lang=th] h1{font-weight:700;font-size:clamp(32px,9.4vw,50px);line-height:1.12;text-transform:none}
+h1 mark{display:inline-block;background:var(--red);color:var(--on-red);padding:.04em .14em .02em;margin:.06em -.04em 0;line-height:.92}
+html[lang=th] h1 mark{line-height:1.1;padding:0 .14em}
+.yearbig{grid-area:1/1;z-index:2;align-self:start;justify-self:end;margin:calc(var(--th,100px) + 8px) 10px 0 0;pointer-events:none;
+  font:400 clamp(56px,16vw,104px)/.9 var(--num);color:var(--red);-webkit-text-stroke:3px var(--paper);paint-order:stroke fill;
+  letter-spacing:.01em;font-variant-numeric:tabular-nums;transition:opacity .25s}
+.hero.hascard .yearbig{opacity:0}
+.dock{grid-area:2/1;min-width:0;z-index:4;position:relative;background:var(--paper);border-top:3px solid var(--rule);padding:10px 16px 14px}
+.cnt{display:flex;align-items:center;gap:12px}
+.count{font:400 clamp(62px,19vw,84px)/.9 var(--num);color:var(--red);background:none;border:0;padding:0;cursor:pointer;
+  font-variant-numeric:tabular-nums;min-width:2.1ch;text-align:left;letter-spacing:.01em}
+.count:active{transform:scale(.96)}
+.clab{flex:1;min-width:0;font:600 15px/1.25 var(--ui)}
+.clab small{display:block;font:500 13px/1.3 var(--ui);color:var(--mute);margin-top:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 18px;border-radius:999px;font:600 15px/1.2 var(--ui);
+  text-decoration:none;border:2px solid var(--rule);background:transparent;cursor:pointer;color:var(--ink)}
 .btn.gold{background:var(--gold);border-color:var(--gold);color:var(--gold-ink)}
-.ctl{margin:16px 0 4px}
-.years{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;align-items:end}
-.yb{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-end;height:96px;min-width:0}
-.yb .bar{background:var(--bar);border-radius:5px 5px 0 0;transition:background .3s,height .3s;min-height:4px}
-.yb.on .bar{background:var(--bar-on)}
-.yb.cur .bar{background:var(--gold);outline:2px solid var(--ink);outline-offset:-2px}
-.yb .n{font-size:12px;text-align:center;margin-bottom:2px;color:var(--ink)}
-.yb .y{text-align:center;padding:4px 0 2px;font-size:13px;color:var(--ink)}
-.yb.cur .y{font-weight:700}
-.row{display:flex;gap:10px;align-items:center;margin-top:6px}
-input[type=range]{flex:1;min-width:0;height:44px;accent-color:#b4412c}
-.play{flex:none;min-width:92px}
-.yl{font-size:16px;margin:10px 0 0}
-.yl b{font-variant-numeric:tabular-nums}
-.new{margin:12px 0 0}
-.new summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
-.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:190px;overflow:auto;padding:4px 2px 6px}
-.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;font:inherit;font-size:14px;padding:6px 12px;min-height:36px;cursor:pointer;text-align:left}
-section{margin-top:52px}
-h2{font:700 clamp(26px,6.4vw,38px)/1.15 Georgia,"Noto Serif Thai",serif;margin:0 0 12px}
-.vids{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0 0;padding:0;list-style:none}
-@media (min-width:640px){.vids{grid-template-columns:1fr 1fr}}
-.v{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.v .th{display:block;aspect-ratio:16/9;background:var(--line);position:relative}
-.v .th img{width:100%;height:100%;object-fit:cover;display:block}
-.v .tx{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.v .tt{font-weight:600;line-height:1.3;color:var(--ink);text-decoration:none}
-.v .ag{font-size:13px;color:var(--muted)}
-.v .sits{font-size:14px;margin-top:auto}
-.cta{margin-top:56px;padding:26px 18px;border-radius:18px;background:var(--panel);border:1px solid var(--line);text-align:center}
-.cta p{margin:0 auto 16px;max-width:30em}
-.cta .btn{font-size:18px;min-height:52px;padding:10px 26px}
-.sig{margin-top:14px;color:var(--muted);font-size:15px}
-.src{font-size:13.5px;color:var(--muted);margin-top:46px;border-top:1px solid var(--line);padding-top:16px}
-.src h3{font-size:14px;margin:0 0 6px;color:var(--ink)}
-.src ul{margin:0;padding-left:18px}
-.src li{margin:3px 0}
-.srcl{font-size:13px;color:var(--muted);margin:10px 0 0}
-footer{padding:22px 0 40px;font-size:14px;color:var(--muted)}
-footer a{color:var(--muted)}
+.btn.red{background:var(--red);border-color:var(--red);color:var(--on-red)}
+.play{flex:none;min-width:96px}
+.years{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;align-items:end;margin:8px 0 8px}
+.yb{border:0;background:none;padding:0;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;height:56px;min-width:0}
+.yb .bar{background:color-mix(in srgb,var(--ink) 16%,transparent);border-radius:4px 4px 0 0;min-height:6px;transition:background .25s}
+.yb.on .bar{background:var(--red)}
+.yb.cur .bar{background:var(--gold);box-shadow:inset 0 0 0 2px var(--rule)}
+.yb .y{font:600 12px/1 var(--ui);padding:5px 0 0;text-align:center;color:var(--mute)}
+.yb.cur .y{color:var(--ink);font-weight:700}
+.chips{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:2px 0;margin:0 -16px;padding-inline:16px;scroll-snap-type:x proximity}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:2px solid var(--rule);background:transparent;border-radius:999px;font:600 14px var(--ui);padding:0 14px;min-height:40px;cursor:pointer;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.chip b{font:400 15px var(--num);letter-spacing:.03em;color:var(--red)}
+.chip.on{background:var(--ink);color:var(--paper)}
+.chip.on b{color:var(--gold)}
+.card{display:none;position:absolute;left:12px;right:12px;bottom:calc(100% + 10px);background:var(--paper);border:3px solid var(--rule);border-radius:14px;padding:12px 14px 14px;box-shadow:6px 6px 0 var(--red)}
+.hero.hascard .card{display:block;animation:pop .28s ease-out}
+@keyframes pop{from{transform:translateY(8px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.card h3{font:700 19px/1.25 var(--ui);margin:0 40px 2px 0}
+.card .meta{margin:0 0 10px;font:500 13.5px/1.4 var(--ui);color:var(--mute)}
+.card .x{position:absolute;right:4px;top:4px;width:44px;height:44px;border:0;background:none;font-size:26px;cursor:pointer;line-height:1}
+.card .btns{display:flex;gap:8px;flex-wrap:wrap}
+.card .btn{min-height:42px;padding:6px 14px;font-size:14px}
+
+/* sections */
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+section{padding:56px 0 0}
+.sh{font:400 clamp(44px,12.5vw,88px)/.95 var(--display);text-transform:uppercase;margin:0 0 10px;letter-spacing:.005em;text-wrap:balance}
+html[lang=th] .sh{font-weight:700;font-size:clamp(34px,9.5vw,64px);line-height:1.12;text-transform:none}
+.sk{font:600 12px var(--ui);letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin:0 0 8px}
+.sd{font:400 clamp(18px,2.2vw,21px)/1.5 var(--serif);max-width:34em;margin:0 0 22px;color:var(--ink)}
+.vids{list-style:none;margin:0;padding:0;display:grid;gap:26px 18px;grid-template-columns:1fr}
+.media{position:relative;aspect-ratio:16/9;background:#000;border:3px solid var(--rule);border-radius:6px;overflow:hidden;box-shadow:6px 6px 0 var(--red)}
+.vbtn{position:absolute;inset:0;border:0;padding:0;background:#000;cursor:pointer;display:block;width:100%}
+.vbtn img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s,filter .3s}
+.vbtn:hover img,.vbtn:focus-visible img{transform:scale(1.04)}
+.vbtn::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.72));}
+.pl{position:absolute;left:50%;top:46%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--red);z-index:2;
+  box-shadow:0 0 0 5px rgba(255,255,255,.9),0 8px 24px rgba(0,0,0,.5);transition:transform .2s}
+.pl::before{content:"";position:absolute;left:30px;top:22px;border-left:26px solid var(--on-red);border-top:16px solid transparent;border-bottom:16px solid transparent}
+html[data-dark] .pl::before{border-left-color:#fff}
+.vbtn:hover .pl{transform:scale(1.1)}
+.vbtn:active .pl{transform:scale(.92)}
+.vcap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:12px 14px;text-align:left;color:#fff;font:700 clamp(15px,2vw,18px)/1.25 var(--ui);text-shadow:0 1px 10px rgba(0,0,0,.8)}
+.media iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vm{display:flex;flex-wrap:wrap;gap:4px 14px;margin:12px 0 0;font:500 14px/1.4 var(--ui);color:var(--mute)}
+.vm a{color:var(--ink);font-weight:600}
+.note{font:italic 400 17px/1.5 var(--serif);color:var(--mute);margin:26px 0 0;max-width:36em}
+
+/* kinds */
+.kinds{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.kind{position:relative;text-align:left;border:3px solid var(--rule);background:var(--paper2);border-radius:10px;padding:12px 14px 16px;cursor:pointer;overflow:hidden;min-height:112px;transition:transform .15s,box-shadow .15s}
+.kind:hover{box-shadow:5px 5px 0 var(--red);transform:translate(-2px,-2px)}
+.kind:active{transform:scale(.97)}
+.kind b{display:block;font:400 clamp(52px,12vw,76px)/.95 var(--num);color:var(--red);letter-spacing:.01em}
+.kind span{font:600 15px var(--ui)}
+.kind i{position:absolute;left:0;bottom:0;height:7px;background:var(--red);width:0;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.kinds.in .kind i{width:var(--w)}
+.kind.on{background:var(--ink);color:var(--paper)}
+.kind.on b{color:var(--gold)}
+
+/* photo bands: the picture holds still while the page moves over it */
+.band{position:relative;isolation:isolate;margin:60px calc(50% - 50vw) 0;width:100vw;min-height:clamp(320px,64vh,620px);display:grid;align-items:center;
+  background:#0b0906 center/cover no-repeat fixed;border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);color:#fff}
+.band::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(8,6,4,.74),rgba(8,6,4,.16) 38%,rgba(8,6,4,.3) 62%,rgba(8,6,4,.86))}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;mix-blend-mode:multiply;background:radial-gradient(120% 90% at 20% 30%,color-mix(in srgb,var(--red) 28%,transparent),transparent 62%),linear-gradient(90deg,rgba(11,9,6,.5),transparent 60%)}
+.band .in{max-width:1180px;margin:0 auto;padding:44px 16px 56px;width:100%}
+.band .bk{font:600 12px var(--ui);letter-spacing:.3em;text-transform:uppercase;color:#ffb3aa;margin:0 0 10px}
+.band .bg{font:400 clamp(60px,17vw,190px)/.88 var(--display);text-transform:uppercase;margin:0;letter-spacing:-.005em;text-shadow:0 3px 30px rgba(0,0,0,.55)}
+html[lang=th] .band .bg{font-weight:700;font-size:clamp(46px,13vw,130px);line-height:1.1;text-transform:none}
+.band .bg em{font-style:normal;color:var(--gold);font-family:var(--num);font-weight:400}
+.band .bp{font:400 clamp(18px,2.3vw,24px)/1.4 var(--serif);max-width:26em;margin:14px 0 0;text-shadow:0 1px 14px rgba(0,0,0,.7)}
+.cred{position:absolute;right:0;bottom:0;z-index:1;font:500 11px/1.35 var(--ui);color:#d8cfc0;background:rgba(8,6,4,.74);padding:4px 10px;max-width:86%}
+.cred a{color:#f0e6d6}
+@media (pointer:coarse),(prefers-reduced-motion:reduce){.band{background-attachment:scroll}}
+
+/* the line on Mot Dang */
+.md{display:grid;gap:26px;align-items:center}
+.md blockquote{margin:0;font:400 clamp(26px,5.2vw,44px)/1.22 var(--serif);letter-spacing:-.01em}
+.md blockquote em{font-style:normal;background:linear-gradient(transparent 62%,color-mix(in srgb,var(--gold) 70%,transparent) 62%)}
+.mline{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin:20px 0 0;padding:12px 14px;border:3px solid var(--rule);border-left:10px solid var(--red);border-radius:6px;background:var(--paper2);font:600 15px/1.35 var(--ui)}
+.mline a{color:var(--red);text-underline-offset:3px}
+.photo{margin:0}
+.photo .ph{aspect-ratio:4/3;background:#222 center/cover no-repeat;border:3px solid var(--rule);border-radius:6px;box-shadow:8px 8px 0 var(--gold)}
+.photo figcaption{font:500 11.5px/1.4 var(--ui);color:var(--mute);margin-top:8px}
+.photo figcaption a{color:var(--mute)}
+.mdb{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+
+/* coffee */
+.band.cta{margin-top:70px}
+.band.cta .bg{font-size:clamp(46px,12vw,128px);max-width:11em}
+html[lang=th] .band.cta .bg{font-size:clamp(36px,9vw,84px)}
+.band.cta .btn{margin-top:26px;font-size:19px;min-height:56px;padding:10px 30px}
+.sig{font:600 16px var(--ui);margin-top:16px;color:#f0e6d6}
+
+.src{max-width:1180px;margin:0 auto;padding:44px 16px 0;font:400 13px/1.5 var(--ui);color:var(--mute)}
+.src h2{font:700 13px var(--ui);letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px;color:var(--ink)}
+.src ol{margin:0;padding-left:20px}.src li{margin:4px 0}
+.src a{color:var(--mute)}
+footer{max-width:1180px;margin:0 auto;padding:22px 16px 44px;font:500 14px/1.5 var(--ui);color:var(--mute)}
+footer a{color:var(--mute)}
+
+.maplibregl-ctrl-top-right{display:none}
 .maplibregl-ctrl-attrib{font-size:11px}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (prefers-color-scheme:dark){#map canvas{filter:brightness(.88)}}
+
+@media (min-width:640px){
+  .vids{grid-template-columns:1fr 1fr}
+  .kinds{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:900px){
+  .kinds{grid-template-columns:repeat(6,1fr)}
+  .md{grid-template-columns:1.15fr .85fr;gap:56px}
+  section{padding-top:84px}
+}
+@media (min-width:1024px){
+  :root{--strip:56px}
+  body{font-size:19px}
+  .strip{padding:0 28px}
+  .hero{--pw:clamp(440px,36vw,560px);grid-template-columns:var(--pw) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);height:100vh;min-height:640px;max-height:1080px}
+  #map{grid-area:1/2/3/3}
+  .title{grid-area:1/1;align-self:stretch;pointer-events:auto;background:var(--paper);backdrop-filter:none;border-bottom:0;border-right:3px solid var(--rule);padding:34px 28px 8px}
+  h1{font-size:clamp(54px,5.2vw,86px);line-height:.96}
+  html[lang=th] h1{font-size:clamp(46px,4.6vw,72px)}
+  .dock{grid-area:2/1;border-top:0;border-right:3px solid var(--rule);padding:10px 28px 28px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px}
+  .yearbig{grid-area:1/2/3/3;align-self:end;justify-self:start;margin:0 0 30px 22px;font-size:clamp(100px,10vw,170px)}
+  .card{position:static;margin:0 0 18px;box-shadow:5px 5px 0 var(--red)}
+  .chips{flex-wrap:wrap;overflow:visible;margin:0;padding:2px 0}
+  .years{margin:10px 0 14px}
+  .yb{height:72px}
+  .maplibregl-ctrl-top-right{display:block}
+  .band .in,.wrap{padding-left:28px;padding-right:28px}
+  .src,footer{padding-left:28px;padding-right:28px}
+}
+@media (max-height:700px) and (max-width:1023px){
+  h1{font-size:36px}.title{padding:8px 16px 10px}.kick{margin-bottom:3px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="top">
-    <span class="mark">Mot Dang · มดแดง</span>
-    <button class="lang" id="lang" type="button" aria-label="Language / ภาษา"><span id="lt">ไทย</span> | <span id="le">EN</span></button>
+
+<header class="strip">
+  <a class="logo" href="https://motdang.net/"><i></i>Mot Dang<small>มดแดง</small></a>
+  <button class="lang" id="lang" type="button" aria-label="Language / ภาษา"><span id="lt">ไทย</span> | <span id="le" class="on">EN</span></button>
+</header>
+
+<main>
+<div class="hero" id="hero">
+  <div id="map" role="img" aria-label="Map of Chiang Mai with the Citylife pieces"></div>
+  <div class="title" id="title">
+    <p class="kick" data-i="kick">For Pim</p>
+    <h1 data-i="h1">Your Chiang Mai, on <mark>Mot Dang</mark></h1>
   </div>
-
-  <p class="eyebrow" data-i="eyebrow">For Pim</p>
-  <h1 data-i="h1">Your Chiang Mai, on Mot Dang</h1>
-  <p class="lead" data-i="lead"></p>
-  <!-- MARCUS: a warm wide photo of Chiang Mai street life or a Citylife issue on a café table, 16:5 crop, no text on the picture -->
-  <div class="slot" aria-hidden="true"></div>
-
-  <div class="counter" role="status" aria-live="polite">
-    <span class="big" id="count">0</span>
-    <span class="big-l" data-i="bigl">Citylife write-ups, each linked from its place page</span>
-  </div>
-  <p class="sub" id="sub"></p>
-
-  <div class="mapbox"><div id="map" aria-label="Map of Chiang Mai"></div></div>
-  <div class="card" id="card" aria-live="polite">
-    <p class="empty" id="hint" data-i="hint">Tap a pin</p>
-    <div class="full">
+  <div class="yearbig" id="yearbig" aria-hidden="true">2014</div>
+  <div class="dock">
+    <div class="card" id="card" aria-live="polite">
       <button class="x" id="cardx" type="button" aria-label="Close">×</button>
       <h3 id="cn"></h3>
       <p class="meta" id="cm"></p>
-      <div class="btns"><a class="btn" id="cl" target="_blank" rel="noopener"></a><a class="btn gold" id="md" target="_blank" rel="noopener"></a></div>
+      <div class="btns"><a class="btn red" id="cl" target="_blank" rel="noopener"></a><a class="btn" id="md" target="_blank" rel="noopener"></a></div>
     </div>
-  </div>
-
-  <div class="ctl">
+    <div class="cnt">
+      <button class="count" id="count" type="button">196</button>
+      <div class="clab"><span id="clab"></span><small id="chint"></small></div>
+      <button class="btn gold play" id="play" type="button">Replay</button>
+    </div>
     <div class="years" id="years"></div>
-    <div class="row">
-      <button class="btn gold play" id="play" type="button"></button>
-      <input type="range" id="yr" min="0" max="6" step="1" value="6" aria-label="Year written">
-    </div>
-    <p class="yl" id="yl"></p>
-    <details class="new" id="newd" open>
-      <summary id="newsum"></summary>
-      <div class="chips" id="chips"></div>
-    </details>
+    <div class="chips" id="chips" role="group"></div>
   </div>
+</div>
 
+<div class="wrap">
   <section id="videos">
-    <h2 data-i="vh">Your videos here next</h2>
-    <p data-i="vp1"></p>
-    <p data-i="vp2"></p>
-    <!-- MARCUS: a picture of Pim at work with a camera or phone filming, warm and natural, 16:9 -->
-    <div class="slot" aria-hidden="true"></div>
+    <p class="sk" data-i="vk">From the Citylife channel</p>
+    <h2 class="sh" data-i="vh">Your videos</h2>
+    <p class="sd" data-i="vp">Tap a tile. It plays here.</p>
     <ul class="vids" id="vids"></ul>
-    <p class="srcl" id="vsrc"></p>
+    <p class="note" data-i="vnote"></p>
   </section>
 
-  <div class="cta">
-    <p data-i="cta"></p>
-    <a class="btn gold" id="coffee" href="#" data-i="coffee">Coffee this week?</a>
-    <div class="sig" data-i="sig">NaN</div>
-  </div>
-
-  <div class="src">
-    <h3 data-i="srch">Sources</h3>
-    <ul id="srclist"></ul>
-  </div>
-
-  <footer id="foot"></footer>
+  <section id="kinds">
+    <p class="sk" data-i="kk">The map, by kind</p>
+    <h2 class="sh" data-i="kh">Pick a kind</h2>
+    <p class="sd" data-i="kp">Tap one. The pins light up on the map.</p>
+    <div class="kinds" id="kinds-grid"></div>
+  </section>
 </div>
+
+<!-- MARCUS: a Citylife cover or a street-life photograph by Pim could replace the lantern band -->
+<div class="band" id="band1" style="background-image:url(img/lanterns.jpg)">
+  <div class="in">
+    <p class="bk" data-i="bk">Chiang Mai</p>
+    <p class="bg" data-i="bg"><em>196</em> pieces.<br>One city.</p>
+  </div>
+  <div class="cred" id="cred1"></div>
+</div>
+
+<div class="wrap">
+  <section class="md">
+    <div>
+      <p class="sk" data-i="mk">On Mot Dang</p>
+      <blockquote data-i="mq"></blockquote>
+      <div class="mline" id="mline"></div>
+      <div class="mdb"><a class="btn gold" id="mseen" target="_blank" rel="noopener"></a></div>
+    </div>
+    <figure class="photo">
+      <div class="ph" id="ph" role="img" style="background-image:url(img/rotdaeng.jpg)"></div>
+      <figcaption id="cred2"></figcaption>
+    </figure>
+  </section>
+</div>
+
+<div class="band cta" id="band2" style="background-image:url(img/gate.jpg)">
+  <div class="in">
+    <p class="bk" data-i="ck">Chiang Mai</p>
+    <p class="bg" data-i="ch">The rest is easier over a table.</p>
+    <a class="btn gold" id="coffee" href="#" data-i="coffee">Coffee this week?</a>
+    <div class="sig">NaN</div>
+  </div>
+  <div class="cred" id="cred3"></div>
+</div>
+</main>
+
+<div class="src">
+  <h2 data-i="srch">Sources</h2>
+  <ol id="srclist"></ol>
+</div>
+<footer id="foot"></footer>
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <script>
 const DATA = [{"n":"Akha Ama","y":2014,"a":18.80323,"o":98.98002,"c":"food","s":"akha-ama","m":"cm/p/akha-ama-2527662833.html"},{"n":"Anantara Resort & Spa","y":2014,"a":18.78161,"o":99.00361,"c":"hotel","s":"anantara-chiang-mai-resort-spa","m":"cm/p/anantara-chiang-mai-resort-6378634287599312389.html"},{"n":"Aroon Rai","y":2014,"a":18.78625,"o":98.99355,"c":"food","s":"aroon-rai","m":"cm/p/aroon-rai-1041280756.html"},{"n":"Baan Jangapor","y":2014,"a":18.78451,"o":99.00325,"c":"food","s":"baan-jangapor","m":"cm/p/baan-jangarpor-3417161533.html"},{"n":"Baan Orapin","y":2014,"a":18.79302,"o":99.00222,"c":"hotel","s":"baan-orapin","m":"cm/p/baan-orapin-3440864913.html"},{"n":"Bagel House Cafe","y":2014,"a":18.78452,"o":98.98863,"c":"food","s":"bagel-house-cafe","m":"cm/p/bagel-house-cafe-07139284788084361743.html"},{"n":"Bake & Bite","y":2014,"a":18.79349,"o":99.00756,"c":"food","s":"bake-and-bite","m":"cm/p/bake-bite-2468510964.html"},{"n":"Beer Republic","y":2014,"a":18.79677,"o":98.96861,"c":"food","s":"beer-republic","m":"cm/p/beer-republic-481787797.html"},{"n":"Boy Blues Bar","y":2014,"a":18.78516,"o":99.00113,"c":"food","s":"boy-blues-bar","m":"cm/p/boy-blues-bar-6909510786.html"},{"n":"Bus Bar","y":2014,"a":18.78412,"o":99.00397,"c":"food","s":"bus-bar","m":"cm/p/bus-bar-3222795502.html"},{"n":"Cafe de Nimman","y":2014,"a":18.79337,"o":98.97205,"c":"food","s":"cafe-de-nimman","m":"cm/p/caf-de-nimman-418044600.html"},{"n":"Cafe’ De Museum","y":2014,"a":18.78992,"o":98.9883,"c":"food","s":"cafe-de-museum","m":"cm/p/caf-de-museum-3287033149.html"},{"n":"Casa Diverso","y":2014,"a":18.78579,"o":98.9788,"c":"food","s":"casa-diverso","m":"cm/p/casa-diverso-2631133180.html"},{"n":"Cat House","y":2014,"a":18.79247,"o":98.99462,"c":"food","s":"cat-house","m":"cm/p/cat-house-4430796190.html"},{"n":"Chez Marco","y":2014,"a":18.78501,"o":98.99421,"c":"food","s":"chez-marco","m":"cm/p/chez-marco-kenji-gyoza-2113309885.html"},{"n":"Chiang Mai Breakfast World","y":2014,"a":18.784,"o":98.99159,"c":"food","s":"chiang-mai-breakfast-world","m":"cm/p/breakfast-world-6388824985.html"},{"n":"Chiang Mai Rock Climbing Adventures","y":2014,"a":18.78352,"o":98.99032,"c":"shopping","s":"chiang-mai-rock-climbing-adventures","m":"cm/p/chiangmai-rock-climbing-adventures-337525523.html"},{"n":"Cloud 9 Massage & Spa","y":2014,"a":18.7844,"o":98.99503,"c":"massage","s":"cloud-9-massage-spa","m":"cm/p/cloud-9-3415499422.html"},{"n":"Coffee Villa","y":2014,"a":18.74234,"o":98.9602,"c":"food","s":"coffee-villa","m":"cm/p/coffee-villa-3751356191.html"},{"n":"Cooking @ Home","y":2014,"a":18.75056,"o":99.12247,"c":"cooking","s":"cooking-home","m":"cm/p/cooking-home-3440864916.html"},{"n":"Crossroads Asia","y":2014,"a":18.68852,"o":98.92934,"c":"shopping","s":"crossroads-asia","m":"cm/p/crossroads-asia-5173470347191960970179.html"},{"n":"Cuisine De Garden","y":2014,"a":18.71705,"o":98.93605,"c":"food","s":"cuisine-de-garden","m":"cm/p/cuisine-de-garden-2362979747.html"},{"n":"Dailycious","y":2014,"a":18.78413,"o":98.99348,"c":"food","s":"dailycious","m":"cm/p/dailycious-2211037641.html"},{"n":"DC Dental Clinic","y":2014,"a":18.79453,"o":98.97191,"c":"medical","s":"dc-dental-clinic","m":"cm/p/dc-dental-clinic-3421207454.html"},{"n":"De Lanna Hotel","y":2014,"a":18.7898,"o":98.9831,"c":"hotel","s":"de-lanna-hotel","m":"cm/p/de-lanna-hotel-408595881.html"},{"n":"Dhara Dhevi","y":2014,"a":18.77825,"o":99.03831,"c":"hotel","s":"dhara-dhevi","m":"cm/p/the-dhara-dhevi-chiang-mai-127736836.html"},{"n":"Dollar Coffee","y":2014,"a":18.79446,"o":98.99349,"c":"food","s":"dollar-coffee","m":"cm/p/dollar-coffee-11927308169.html"},{"n":"Dude Cafe","y":2014,"a":18.79626,"o":98.96576,"c":"food","s":"dude-cafe","m":"cm/p/dude-cafe-2660438583.html"},{"n":"El Diablo’s Burritos","y":2014,"a":18.79028,"o":98.99423,"c":"food","s":"el-diablos-burritos","m":"cm/p/el-diablo-s-burrito-4563204089.html"},{"n":"Food 4 Thought","y":2014,"a":18.80604,"o":98.9616,"c":"food","s":"food4thought","m":"cm/p/food-4-thought-10836941005.html"},{"n":"Good Morning Chiang Mai","y":2014,"a":18.7834,"o":98.9853,"c":"food","s":"good-morning-chiang-mai","m":"cm/p/good-morning-chiangmai-1618868154.html"},{"n":"Green O’ Clock","y":2014,"a":18.79406,"o":99.00459,"c":"food","s":"green-o-clock","m":"cm/p/green-o-clock-047034674147153949614763.html"},{"n":"Greenhouse Nails","y":2014,"a":18.82377,"o":98.98014,"c":"beauty","s":"greenhouse-nails","m":"cm/p/greenhouse-nails-561286848793996591.html"},{"n":"Hansa Mini Golf","y":2014,"a":18.88319,"o":99.07983,"c":"sights","s":"hansa-mini-golf","m":"cm/p/hansa-minigolf-11411206869.html"},{"n":"Hollanda Montri Guesthouse","y":2014,"a":18.8006,"o":99.00448,"c":"hotel","s":"hollanda-montri-guesthouse","m":"cm/p/hollanda-montri-guesthouse-2468510967.html"},{"n":"I Like Ice Cream","y":2014,"a":18.79284,"o":98.95435,"c":"food","s":"i-like-ice-cream","m":"cm/p/i-like-ice-cream-3400272248.html"},{"n":"Into the Woods Cafe","y":2014,"a":18.79484,"o":98.98679,"c":"food","s":"woods-cafe","m":"cm/p/into-the-woods-4476187491.html"},{"n":"Kandara Spa","y":2014,"a":18.79608,"o":98.96344,"c":"massage","s":"kandara-spa","m":"cm/p/kandara-spa-3419493593.html"},{"n":"Kiree Thara Boutique Hotel","y":2014,"a":18.82705,"o":98.95435,"c":"food","s":"kiree-thara-boutique-hotel","m":"cm/p/kiree-thara-boutique-resort-1090529197.html"},{"n":"Kitchen Hush","y":2014,"a":18.79289,"o":99.00469,"c":"food","s":"kitchen-hush","m":"cm/p/kitchen-hush-3328333693.html"},{"n":"La Fontana","y":2014,"a":18.78524,"o":98.99107,"c":"food","s":"la-fontana","m":"cm/p/la-fontana-1416857573.html"},{"n":"Lanna House","y":2014,"a":18.78782,"o":98.99442,"c":"hotel","s":"lanna-house","m":"cm/p/lanna-house-3414106790.html"},{"n":"Le Coq d’Or","y":2014,"a":18.76083,"o":99.00315,"c":"food","s":"le-coq-dor","m":"cm/p/le-coq-d-or-530971019.html"},{"n":"Le Crystal","y":2014,"a":18.81659,"o":98.99977,"c":"food","s":"le-crystal","m":"cm/p/le-crystal-restaurant-256273906.html"},{"n":"Lemongrass","y":2014,"a":18.78396,"o":99.00116,"c":"food","s":"lemongrass","m":"cm/p/lemongrass-2136065482.html"},{"n":"Librarista","y":2014,"a":18.79846,"o":98.96882,"c":"food","s":"librarista","m":"cm/p/yellow-3168260766.html"},{"n":"Loco Elvis","y":2014,"a":18.79028,"o":98.99318,"c":"food","s":"loco-elvis","m":"cm/p/loco-elvis-481723939.html"},{"n":"Lovin’ Sweets in Green Garden","y":2014,"a":18.79887,"o":98.98047,"c":"food","s":"lovin-sweets-in-green-garden","m":"cm/p/lovin-sweets-320142380.html"},{"n":"Lum Lum Korean Restaurant","y":2014,"a":18.82422,"o":99.01155,"c":"food","s":"lum-lum-korean-restaurant","m":"cm/p/lum-lum-3541512049.html"},{"n":"Maison de Cafe (Baan Kafae)","y":2014,"a":18.87475,"o":99.00799,"c":"food","s":"maison-de-cafe","m":"cm/p/maison-de-caf-3905979257.html"},{"n":"Mamory Delicious","y":2014,"a":18.78509,"o":98.99246,"c":"food","s":"mamory-delicious","m":"cm/p/mamory-delicious-4358675894.html"},{"n":"Marble Arch","y":2014,"a":18.79739,"o":98.96837,"c":"food","s":"marble-arch","m":"cm/p/marble-arch-1797002637.html"},{"n":"Miguel’s Cafe","y":2014,"a":18.7934,"o":98.99398,"c":"food","s":"miguels-cafe","m":"cm/p/miguel-s-1617076520.html"},{"n":"Mix","y":2014,"a":18.79941,"o":98.96909,"c":"food","s":"mix","m":"cm/p/mix-3426415666.html"},{"n":"My Secret Cafe","y":2014,"a":18.7881,"o":98.98323,"c":"food","s":"my-secret-cafe","m":"cm/p/my-secret-cafe-3907871477.html"},{"n":"Nakara Jardin","y":2014,"a":18.77936,"o":99.0057,"c":"food","s":"nakara-jardin","m":"cm/p/nakara-garden-4109610297.html"},{"n":"Neighborhood","y":2014,"a":18.79547,"o":98.96646,"c":"food","s":"neighborhood","m":"cm/p/neighborhood-2523241186.html"},{"n":"Nic’s Restaurant","y":2014,"a":18.73351,"o":98.93836,"c":"food","s":"nics-restaurant","m":"cm/p/nic-s-restaurant-playground-4449635313.html"},{"n":"Nori","y":2014,"a":18.79872,"o":98.96863,"c":"food","s":"nori","m":"cm/p/nori-3426415667.html"},{"n":"Our House","y":2014,"a":18.79455,"o":98.99341,"c":"food","s":"our-house","m":"cm/p/our-house-coffee-shop-1129280654.html"},{"n":"Paak Dang","y":2014,"a":18.80318,"o":99.00314,"c":"food","s":"paak-dang","m":"cm/p/paak-dang-3318093958.html"},{"n":"Palette","y":2014,"a":18.79196,"o":99.0043,"c":"food","s":"palette","m":"cm/p/palette-3558101149386074023.html"},{"n":"Paper Spoon","y":2014,"a":18.78089,"o":98.95293,"c":"food","s":"paper-spoon","m":"cm/p/paper-spoon-2085487654.html"},{"n":"Pern’s Restaurant","y":2014,"a":18.79817,"o":98.9741,"c":"food","s":"perns-restaurant","m":"cm/p/pern-s-restaurant-3304475325.html"},{"n":"Pun Pun Wat Suan Dok","y":2014,"a":18.78703,"o":98.96798,"c":"food","s":"pun-pun-wat-suan-dok","m":"cm/p/pun-pun-wat-suandok-2085462290.html"},{"n":"Rajdarbar","y":2014,"a":18.78417,"o":98.99885,"c":"food","s":"rajdarbar","m":"cm/p/rajdarbar-2132019005.html"},{"n":"Rimping Village","y":2014,"a":18.78519,"o":99.0067,"c":"hotel","s":"rimping-village","m":"cm/p/rimping-village-chiang-mai-hotel-9997006344738071589609.html"},{"n":"S Condo","y":2014,"a":18.79667,"o":98.9725,"c":"sights","s":"s-condo","m":"cm/p/s-condo-70017122141232142575470.html"},{"n":"Samyan Seafood","y":2014,"a":18.80769,"o":99.0045,"c":"food","s":"samyan-seafood","m":"cm/p/samyan-seafood-2371283718.html"},{"n":"Sausage King Garden Restaurant","y":2014,"a":18.83281,"o":99.01953,"c":"food","s":"sausage-king-garden-restaurant","m":"cm/p/sausage-king-383916114.html"},{"n":"Slee Banyan","y":2014,"a":18.77381,"o":99.01533,"c":"food","s":"slee-banyan","m":"cm/p/slee-banyan-4664717328.html"},{"n":"Steak of the Day","y":2014,"a":18.91565,"o":98.94218,"c":"food","s":"steak-of-the-day","m":"cm/p/steak-of-the-day-3274160917.html"},{"n":"Tea Tales","y":2014,"a":18.79743,"o":98.96835,"c":"food","s":"tea-tales","m":"cm/p/tea-tales-1797000726.html"},{"n":"Tengoku de Cuisine","y":2014,"a":18.77825,"o":99.03961,"c":"food","s":"tengoku-de-cuisine","m":"cm/p/tengoku-de-cuisine-1417087929.html"},{"n":"The Balcony Village","y":2014,"a":18.81772,"o":99.01177,"c":"hotel","s":"the-balcony-village","m":"cm/p/the-balcony-chiang-mai-village-319547084516097728.html"},{"n":"The Canal Restaurant","y":2014,"a":18.78678,"o":98.97827,"c":"food","s":"the-canal-restaurant","m":"cm/p/the-canal-restaurant-and-bar-952313645696824144159.html"},{"n":"The Coffee Bar Nimman","y":2014,"a":18.79797,"o":98.96944,"c":"food","s":"the-coffee-bar-nimman","m":"cm/p/the-coffee-bar-nimman-3287785561.html"},{"n":"The Drunken Flower","y":2014,"a":18.79473,"o":98.96932,"c":"food","s":"the-drunken-flower","m":"cm/p/the-drunken-flower-bar-restaurant-5672713821.html"},{"n":"The Grand Village Sansai","y":2014,"a":18.83719,"o":99.06299,"c":"realestate","s":"the-grand-village-sansai","m":"cm/p/the-grand-village-7167742794922041681859.html"},{"n":"The Mexican Grill","y":2014,"a":18.7849,"o":98.95832,"c":"food","s":"the-mexican-grill","m":"cm/p/the-mexican-grill-6574652544915414308.html"},{"n":"The Nimman Bar and Grill","y":2014,"a":18.7959,"o":98.96429,"c":"food","s":"the-nimman-bar-and-grill","m":"cm/p/nimman-bar-grill-53744834502109.html"},{"n":"The Olive Tree","y":2014,"a":18.78567,"o":98.99292,"c":"food","s":"the-olive-tree","m":"cm/p/the-olive-tree-1643026281.html"},{"n":"The Salad Concept","y":2014,"a":18.7968,"o":98.96631,"c":"food","s":"the-salad-concept","m":"cm/p/the-salad-concept-1797053421.html"},{"n":"Three Little Pigs","y":2014,"a":18.79588,"o":98.98453,"c":"food","s":"three-little-pigs","m":"cm/p/three-little-pigs-2041535372.html"},{"n":"UN Irish Pub","y":2014,"a":18.7906,"o":98.99151,"c":"food","s":"un-irish-pub","m":"cm/p/un-irish-pub-324137063.html"},{"n":"Vdara Resort and Spa","y":2014,"a":18.74313,"o":98.94978,"c":"hotel","s":"vdara-resort-and-spa","m":"cm/p/vdara-resort-and-spa-98730904724175281143.html"},{"n":"Why Not?","y":2014,"a":18.79681,"o":98.9679,"c":"food","s":"why-not","m":"cm/p/why-not-1797043367.html"},{"n":"Yummy Pizza","y":2014,"a":18.7414,"o":98.9381,"c":"food","s":"yummy-pizza","m":"cm/p/yummy-pizza-562707358.html"},{"n":"Zoe in Yellow","y":2014,"a":18.79092,"o":98.99046,"c":"food","s":"zoe-in-yellow","m":"cm/p/zoe-in-yellow-garden-1157479254.html"},{"n":"137 Pillars House","y":2015,"a":18.79189,"o":99.00405,"c":"hotel","s":"137-pillars-house-platinum","m":"cm/p/137-pillars-house-528019091.html"},{"n":"9th Street Cafe","y":2015,"a":18.79743,"o":98.96823,"c":"food","s":"9th-street-cafe","m":"cm/p/9th-street-1797000716.html"},{"n":"Airport Home Condominium","y":2015,"a":18.75112,"o":98.95558,"c":"realestate","s":"airport-home-condominium","m":"cm/p/airport-home-condominium-3491191763.html"},{"n":"B(e)arista","y":2015,"a":18.80355,"o":98.97447,"c":"food","s":"bearista","m":"cm/p/caff-b-e-arista-3996636060.html"},{"n":"Bangkok Hospital Chiang Mai","y":2015,"a":18.78873,"o":99.02654,"c":"medical","s":"bangkok-hospital-chiang-mai","m":"cm/p/bangkok-hospital-294031574.html"},{"n":"Beast Burger","y":2015,"a":18.79507,"o":98.96766,"c":"food","s":"beast-burger","m":"cm/p/beast-burger-4818374822.html"},{"n":"Big Daddy’s","y":2015,"a":18.78448,"o":98.99283,"c":"food","s":"big-daddys","m":"cm/p/big-daddy-s-diner-3385473039.html"},{"n":"Blackdoor","y":2015,"a":18.80241,"o":98.97901,"c":"food","s":"blackdoor","m":"cm/p/black-door-2783276222.html"},{"n":"Burgers and Springrolls","y":2015,"a":18.79034,"o":98.99308,"c":"food","s":"burgers-and-springrolls","m":"cm/p/burgers-springrolls-3624377794.html"},{"n":"Cafe Mouthfeel","y":2015,"a":18.80511,"o":98.97329,"c":"food","s":"cafe-mouthfeel","m":"cm/p/cafe-mouthfeel-3897763597.html"},{"n":"Chiang Mai International Exhibition and Convention Centre","y":2015,"a":18.82691,"o":98.96015,"c":"business","s":"chiang-mai-international-exhibition-and-convention-centre","m":"cm/p/chiang-mai-international-exhibition-and-convention-centre-290524085147718929471760.html"},{"n":"Chiang Mai Zoo","y":2015,"a":18.80944,"o":98.94811,"c":"transport","s":"chiang-mai-zoo","m":"cm/p/chiang-mai-zoo-479708459.html"},{"n":"Dr. Alex Aesthetic Clinic","y":2015,"a":18.7877,"o":99.00216,"c":"medical","s":"dr-alex-aesthetic-clinic","m":"cm/p/dr-alex-aesthetic-clinic-9892374448981830818157.html"},{"n":"Duangtawan Hotel","y":2015,"a":18.78363,"o":98.99904,"c":"hotel","s":"duangtawan-hotel","m":"cm/p/duangtawan-hotel-3619455600.html"},{"n":"Fah Lanna Spa","y":2015,"a":18.79297,"o":98.98604,"c":"massage","s":"fah-lanna-spa","m":"cm/p/fah-lanna-spa-2822385704369461697.html"},{"n":"Four Heavens Cafe & Bistro","y":2015,"a":18.8288,"o":99.01343,"c":"food","s":"four-heavens-cafe-bistro","m":"cm/p/four-heavens-cafe-bistro-4352243455.html"},{"n":"Hillkoff","y":2015,"a":18.80054,"o":98.99296,"c":"food","s":"hillkoff","m":"cm/p/hillkoff-0474389329950612693.html"},{"n":"Holiday Inn","y":2015,"a":18.76614,"o":99.00425,"c":"hotel","s":"holiday-inn","m":"cm/p/holiday-inn-2373561216413846767082960.html"},{"n":"Hong Kong Lucky","y":2015,"a":18.79843,"o":98.96696,"c":"food","s":"hong-kong-lucky","m":"cm/p/hong-kong-lucky-cafe-8367289284153941810102.html"},{"n":"Hotel Des Artists’s Ping Silhouette","y":2015,"a":18.793,"o":99.00163,"c":"food","s":"hotel-des-artistss-ping-silhouette","m":"cm/p/cafe-des-artists-ping-silhouette-314205557849638777958241.html"},{"n":"Kao Hotel","y":2015,"a":18.81026,"o":98.98425,"c":"hotel","s":"kao-hotel","m":"cm/p/kao-hotel-331367693.html"},{"n":"Kaysorn Residence","y":2015,"a":18.8084,"o":98.98258,"c":"hotel","s":"kaysorn-residence","m":"cm/p/kaysorn-residence-668371809.html"},{"n":"Kiriya Spa Vana","y":2015,"a":18.78536,"o":98.98212,"c":"massage","s":"kiriya-spa-vana","m":"cm/p/kiriy-spa-vana-3384119223.html"},{"n":"Le Meridien Chiang Rai Resort","y":2015,"a":19.92267,"o":99.85427,"c":"hotel","s":"le-meridien-chiang-rai-resort","m":"cr/p/le-m-ridien-chiang-rai-resort-751053203.html"},{"n":"Le Méridien Chiang Mai","y":2015,"a":18.78451,"o":98.99992,"c":"hotel","s":"le-meridien-chiang-mai","m":"cm/p/meridien-475897562.html"},{"n":"Limoncello","y":2015,"a":18.79819,"o":98.96916,"c":"food","s":"limoncello","m":"cm/p/limoncello-3287776262.html"},{"n":"L’Elephant","y":2015,"a":18.79378,"o":98.97271,"c":"food","s":"lelephant","m":"cm/p/l-l-phant-6734963385.html"},{"n":"Maeping Garden Market","y":2015,"a":18.71673,"o":98.98783,"c":"market","s":"maeping-garden-market","m":"cm/p/maeping-garden-market-saraphi-90592895443399341108897.html"},{"n":"Mai Saigon Restaurant and Bar","y":2015,"a":18.91238,"o":98.95133,"c":"food","s":"mai-saigon-restaurant-and-bar","m":"cm/p/mai-saigon-5230589921.html"},{"n":"Meena Rice Based Cuisine","y":2015,"a":18.78459,"o":99.04596,"c":"food","s":"meena-rice-based-cuisine","m":"cm/p/meena-rice-based-cuisine-4686351107.html"},{"n":"Mixology","y":2015,"a":18.78622,"o":98.97824,"c":"food","s":"mixology","m":"cm/p/mixology-3388710162.html"},{"n":"Natwat Home Cafe","y":2015,"a":18.79951,"o":99.0043,"c":"food","s":"natwat-home-cafe","m":"cm/p/nat-wat-home-cafe-5023530126.html"},{"n":"Norden","y":2015,"a":18.77393,"o":99.02859,"c":"food","s":"norden","m":"cm/p/norden-3316799962.html"},{"n":"Peppermint Coffee House","y":2015,"a":18.78846,"o":98.99089,"c":"food","s":"peppermint-coffee-house","m":"cm/p/peppermint-coffee-house-2055855118.html"},{"n":"Pruksa","y":2015,"a":18.7863,"o":98.97709,"c":"food","s":"pruksa","m":"cm/p/phrueksa-320183137.html"},{"n":"Pun Pun Market","y":2015,"a":18.76541,"o":98.97583,"c":"food","s":"pun-pun-market","m":"cm/p/pun-pun-market-food-3088780286.html"},{"n":"Rice Life","y":2015,"a":18.79623,"o":99.04759,"c":"food","s":"rice-life","m":"cm/p/rice-life-3461566102.html"},{"n":"Rise Bar","y":2015,"a":18.79737,"o":98.96948,"c":"food","s":"rise-bar","m":"cm/p/italics-restaurant-rise-bar-4866191746.html"},{"n":"Rock Me Burger","y":2015,"a":18.78494,"o":98.99446,"c":"food","s":"rock-me-burger","m":"cm/p/rock-me-burgers-bar-6482127085.html"},{"n":"Sala Cafe","y":2015,"a":18.90439,"o":98.92153,"c":"food","s":"sala-cafe","m":"cm/p/sala-cafe-390559033.html"},{"n":"Salad Terrace","y":2015,"a":18.80333,"o":98.98792,"c":"food","s":"salad-terrace","m":"cm/p/salad-terrace-2580626436.html"},{"n":"Sense Massage Spa","y":2015,"a":18.79245,"o":98.97852,"c":"massage","s":"sense-massage-spa","m":"cm/p/sense-massage-spa-6007376185.html"},{"n":"Siripanna Villa Resort & Spa","y":2015,"a":18.77381,"o":99.01502,"c":"hotel","s":"siripanna-villa-resort-spa","m":"cm/p/siripanna-villa-resort-spa-249676814.html"},{"n":"Srimantra Spa","y":2015,"a":18.78374,"o":99.00299,"c":"massage","s":"srimantra-spa","m":"cm/p/srimantra-spa-335870494309335348695.html"},{"n":"Tao Garden","y":2015,"a":18.90954,"o":99.12797,"c":"hotel","s":"tao-garden","m":"cm/p/tao-garden-1837083756.html"},{"n":"Tengoku San Kamphaeng","y":2015,"a":18.73275,"o":99.23319,"c":"food","s":"tengoku-san-kamphaeng","m":"cm/p/tengoku-san-kamphaeng-4785336744676456612.html"},{"n":"The Duke’s Maya","y":2015,"a":18.80228,"o":98.96681,"c":"food","s":"the-dukes-maya","m":"cm/p/the-duke-s-maya-3673955770.html"},{"n":"The Pavana Resort and Spa","y":2015,"a":18.97078,"o":98.89523,"c":"hotel","s":"pavana-resort-spa","m":"cm/p/the-pavana-chiang-mai-resort-69755936243583683531546.html"},{"n":"The Volcano II","y":2015,"a":18.77228,"o":98.97829,"c":"food","s":"the-volcano-2","m":"cm/p/the-volcano-3401322096.html"},{"n":"Try Umm Cafe","y":2015,"a":18.79918,"o":98.9669,"c":"food","s":"try-umm-cafe","m":"cm/p/try-umm-3276155581.html"},{"n":"Vava Frozen Yogurt","y":2015,"a":18.78792,"o":98.9925,"c":"food","s":"vava-frozen-yogurt","m":"cm/p/vava-frozen-yogurt-3619858705.html"},{"n":"zzziesta","y":2015,"a":18.79965,"o":98.9773,"c":"hotel","s":"zzziesta","m":"cm/p/zzziesta-3285298574.html"},{"n":"Chu Hotel","y":2016,"a":18.78796,"o":99.00627,"c":"hotel","s":"chu-hotel","m":"cm/p/chu-hotel-chiang-mai-0882074422718230630.html"},{"n":"Coco Corner Coconut","y":2016,"a":18.79656,"o":98.96855,"c":"food","s":"coco-corner-coconut","m":"cm/p/coco-corner-coconut-6734839585.html"},{"n":"Crazy Noodle","y":2016,"a":18.79342,"o":98.9714,"c":"food","s":"crazy-noodle","m":"cm/p/crazy-noodle-3421249042.html"},{"n":"Gekko Books","y":2016,"a":18.78833,"o":98.99396,"c":"shopping","s":"gekko-books","m":"cm/p/gecko-books-53775585348475804260365.html"},{"n":"Golden Latex","y":2016,"a":18.79389,"o":98.97067,"c":"shopping","s":"golden-latex","m":"cm/p/golden-latex-mattresses-pillows-shop-chiang-mai-987210327475866092206139.html"},{"n":"Jardin d’été","y":2016,"a":18.77059,"o":98.97421,"c":"food","s":"jardin-dete","m":"cm/p/jardin-d-t-gelato-and-dessert-cafe-7599272060.html"},{"n":"London Tearoom and Guesthouse","y":2016,"a":18.79603,"o":98.97245,"c":"hotel","s":"london-tearoom-and-guesthouse","m":"cm/p/the-london-tearoom-9812742185745763775.html"},{"n":"Rabieng Na Maerim","y":2016,"a":18.9229,"o":98.93361,"c":"hotel","s":"rabieng-na-maerim","m":"cm/p/rabieng-na-maerim-551650301.html"},{"n":"Slope Motion","y":2016,"a":18.79093,"o":98.95322,"c":"food","s":"slope-motion","m":"cm/p/slope-motion-7131241185.html"},{"n":"Tawan Bedclub","y":2016,"a":18.78099,"o":99.00029,"c":"hotel","s":"tawan-bedclub","m":"cm/p/tawan-bed-club-4872451730.html"},{"n":"Thamel Coffee","y":2016,"a":18.7894,"o":99.00036,"c":"food","s":"thamel-coffee","m":"cm/p/thamel-coffee-3888608226.html"},{"n":"Toey Dimsum","y":2016,"a":18.77808,"o":98.99625,"c":"food","s":"toey-dimsum","m":"cm/p/toey-dim-som-4466258889.html"},{"n":"Away Chiang Mai Thapae Resort – Moreganic Restaurant","y":2017,"a":18.78632,"o":98.99503,"c":"food","s":"away-chiang-mai-thapae-resort-vegetarian-retreat","m":"cm/p/moreganic-restaurant-308274039484920929845444.html"},{"n":"B Samcook Home 16","y":2017,"a":18.77654,"o":98.99393,"c":"food","s":"b-samcook-home-16","m":"cm/p/b-samcook-home16-761859524.html"},{"n":"Babylonian Iraqi Restaurant","y":2017,"a":18.8022,"o":98.96762,"c":"food","s":"babylonian-iraqi-restaurant","m":"cm/p/babylonian-iraqi-3287356487.html"},{"n":"Bear Hug Café","y":2017,"a":18.78289,"o":98.99332,"c":"food","s":"bear-hug-cafe","m":"cm/p/bear-hug-cafe-5208044724.html"},{"n":"Chez Nous","y":2017,"a":18.77521,"o":99.05999,"c":"food","s":"chez-nous","m":"cm/p/chez-nous-5230148372.html"},{"n":"De’ Richy Restaurant","y":2017,"a":18.72659,"o":98.95983,"c":"hotel","s":"de-richy-restaurant","m":"cm/p/de-richy-chiang-mai-39463874458225921569.html"},{"n":"Di Bosco Coffee","y":2017,"a":18.88784,"o":98.8286,"c":"food","s":"di-bosco-coffee","m":"cm/p/di-bosco-644697906.html"},{"n":"Drinksmith","y":2017,"a":18.77459,"o":98.97721,"c":"food","s":"drinksmit","m":"cm/p/drinksmith-6992303886.html"},{"n":"Eat on Earth","y":2017,"a":18.82945,"o":99.01986,"c":"food","s":"eat-on-earth","m":"cm/p/eat-on-earth-2686878857.html"},{"n":"Hidden Village","y":2017,"a":18.83274,"o":98.99851,"c":"transport","s":"hidden-village","m":"cm/p/hidden-village-chiangmai-152272249182836116373.html"},{"n":"Jack Bain’s Bar","y":2017,"a":18.79208,"o":99.00408,"c":"food","s":"jack-bains-bar","m":"cm/p/jack-bain-s-bar-288700740487384679401.html"},{"n":"Kamrai in the Garden","y":2017,"a":18.81846,"o":98.97398,"c":"food","s":"kamrai-in-the-garden","m":"cm/p/kam-rai-in-the-garden-9379317921.html"},{"n":"Le Bistrot de Chiang Mai","y":2017,"a":18.78526,"o":98.99846,"c":"food","s":"le-bistrot-de-chiang-mai","m":"cm/p/le-bistrot-de-chiang-mai-1041391290.html"},{"n":"Mastermind Brain Spa and Total Wellness Center","y":2017,"a":18.79677,"o":98.97665,"c":"medical","s":"mastermind-brain-spa-and-total-wellness-center","m":"cm/p/mastermind-brain-spa-and-spiritual-wellness-center-748744721456816043969786.html"},{"n":"Mcouture Studio 81 (MS81)","y":2017,"a":18.88119,"o":99.0371,"c":"beauty","s":"mcouture-studio-81-ms81","m":"cm/p/mcouture-studio-81-675373564861842018284.html"},{"n":"Meena Rice Base Cuisine","y":2017,"a":18.7848,"o":99.04611,"c":"food","s":"meena-rice-base-cuisine","m":"cm/p/meena-rice-based-cuisine-537308760.html"},{"n":"Monoceros Resort","y":2017,"a":18.92595,"o":98.90944,"c":"hotel","s":"monoceros-resort","m":"cm/p/monoceros-resort-3751056345.html"},{"n":"Monsoon Tea","y":2017,"a":18.79915,"o":99.00413,"c":"food","s":"monsoon-tea-2","m":"cm/p/monsoon-tea-5093665394.html"},{"n":"Rimm Phi Romm","y":2017,"a":18.91552,"o":98.94192,"c":"food","s":"rimm-phi-romm","m":"cm/p/rimm-phi-romm-3274160916.html"},{"n":"The Yellow Pug","y":2017,"a":18.74555,"o":98.95496,"c":"food","s":"the-yellow-pug","m":"cm/p/the-yellow-pug-bar-and-bottle-shop-5933234770.html"},{"n":"Winstons Pool and Sports Club","y":2017,"a":18.79781,"o":98.97649,"c":"sport","s":"winstons-pool-sports-club","m":"cm/p/winstons-pool-and-sports-club-7516130489943484763.html"},{"n":"Bloodline Tattoo","y":2018,"a":18.78488,"o":98.99468,"c":"tattoo","s":"bloodline-tattoo","m":"cm/p/bloodline-tattoo-820826924.html"},{"n":"Daddy’s Antique","y":2018,"a":18.7454,"o":98.95529,"c":"food","s":"daddys-antique","m":"cm/p/daddy-s-antique-6481719572.html"},{"n":"Lamour Cafe","y":2018,"a":18.77644,"o":98.9492,"c":"food","s":"lamour-cafe","m":"cm/p/l-amour-caf-3153996395.html"},{"n":"Nimman Social Cafe and Bar at ALEXA Hostel","y":2018,"a":18.79912,"o":98.96769,"c":"hotel","s":"nimman-social-cafe-bar-alexa-hostel","m":"cm/p/alexa-hostel-992881449007518.html"},{"n":"Nivas Chiang Mai","y":2018,"a":18.80865,"o":98.95831,"c":"hotel","s":"nivas-chiang-mai","m":"cm/p/nivas-chiangmai-7203484514708317527240684.html"},{"n":"Peak Nimman Prestige Hotel","y":2018,"a":18.79844,"o":98.96705,"c":"hotel","s":"peak-nimman-prestige-hotel","m":"cm/p/peak-nimman-prestige-hotel-653533229.html"},{"n":"Praew Factory","y":2018,"a":18.81154,"o":99.04107,"c":"food","s":"praew-factory","m":"cm/p/praew-factory-9061221744834650567.html"},{"n":"Raya Heritage","y":2018,"a":18.84828,"o":98.98512,"c":"hotel","s":"raya-heritage","m":"cm/p/raya-heritage-572687514343442959185.html"},{"n":"Redbox","y":2018,"a":18.80159,"o":98.96984,"c":"food","s":"redbox","m":"cm/p/redbox-chiang-mai-35118711461096631974.html"},{"n":"SHABUGU","y":2018,"a":18.79888,"o":99.02389,"c":"food","s":"shabugu","m":"cm/p/shabugu-3180206961.html"},{"n":"Somtam Udon at Pordoi Café","y":2018,"a":18.92549,"o":98.98863,"c":"food","s":"somtam-udon-pordoi-cafe","m":"cm/p/pordoi-caf-7406680474080900569.html"},{"n":"Veranda Chiang Mai The High Resort","y":2018,"a":18.75401,"o":98.88887,"c":"hotel","s":"veranda-chiang-mai-high-resort-2","m":"cm/p/veranda-resort-883139441384304669.html"},{"n":"Virgin Active","y":2018,"a":18.80636,"o":99.01809,"c":"sport","s":"virgin-active","m":"cm/p/virgin-active-chiang-mai-88583974748930445517531.html"},{"n":"Yak Hostel","y":2018,"a":18.7768,"o":98.99334,"c":"hotel","s":"yak-hostel","m":"cm/p/yak-hostel-748943193168869619.html"},{"n":"Early Owl","y":2019,"a":18.80573,"o":98.98891,"c":"food","s":"early-owl","m":"cm/p/early-owls-11499304969.html"},{"n":"Little Kitchen","y":2019,"a":18.78687,"o":99.00903,"c":"food","s":"little-kitchen","m":"cm/p/little-kitchen-28038249270017790.html"},{"n":"Makkha Health & Spa, Night Bazaar branch","y":2019,"a":18.78478,"o":99.00044,"c":"market","s":"makkha-health-spa-night-bazaar-branch","m":"cm/p/chiang-mai-night-bazaar-22981272.html"},{"n":"Mira Restaurant","y":2019,"a":18.76229,"o":99.00227,"c":"food","s":"mira-restaurant","m":"cm/p/mira-restaurant-170337494497286975055507.html"},{"n":"Oasis Spa Nimman Branch","y":2019,"a":18.79821,"o":98.96822,"c":"massage","s":"oasis-spa-nimman-branch","m":"cm/p/oasis-spa-77691474270339415361.html"},{"n":"Spice Garden","y":2019,"a":18.78964,"o":98.99242,"c":"hotel","s":"spice-garden","m":"cm/p/spice-garden-1005881892.html"},{"n":"The Core hotel","y":2019,"a":18.80751,"o":98.9571,"c":"hotel","s":"the-core-hotel","m":"cm/p/the-core-hotel-389552873.html"},{"n":"Pawtel","y":2020,"a":18.95345,"o":98.92399,"c":"hotel","s":"pawtel","m":"cm/p/pawtel-chiang-mai-8182681452869737404444.html"}];
-const VIDS = [{"id": "assRGnHgTfY", "t": "CityNews: Giant branch of 200 year old yang tree crashes down at Wat Chedi Luang", "md": "cm/p/wat-chedi-luang-243018795.html", "mdn": "Wat Chedi Luang"}, {"id": "YBNfAcHtjS4", "t": "Creative expression brings a classic poem into Gen Alpha era at Pathfinders International School"}, {"id": "bP6ugEZxesE", "t": "Akha Heritage museum by Akhas and for everyone in Chiang Rai"}, {"id": "2L4L4NpGVH0", "t": "We made pasta! Limeleaf Kitchen’s Cooking Workshops are fun for all", "md": "cm/p/limeleaf-kitchen-11749674742.html", "mdn": "Limeleaf Kitchen"}];
+const VIDS = [
+  {id:'assRGnHgTfY', t:'CityNews: Giant branch of 200 year old yang tree crashes down at Wat Chedi Luang', md:'cm/p/wat-chedi-luang-243018795.html', mdn:'Wat Chedi Luang'},
+  {id:'YBNfAcHtjS4', t:'Creative expression brings a classic poem into Gen Alpha era at Pathfinders International School'},
+  {id:'bP6ugEZxesE', t:'Akha Heritage museum by Akhas and for everyone in Chiang Rai'},
+  {id:'2L4L4NpGVH0', t:'We made pasta! Limeleaf Kitchen’s Cooking Workshops are fun for all', md:'cm/p/limeleaf-kitchen-11749674742.html', mdn:'Limeleaf Kitchen'}
+];
 const YEARS = [2014,2015,2016,2017,2018,2019,2020];
 const CL_BASE = 'https://www.chiangmaicitylife.com/citylife-places/';
 const MD_BASE = 'https://motdang.net/';
@@ -178,277 +321,324 @@ const CAT = {
   transport:['Transport','การเดินทาง'], tattoo:['Tattoo','สัก'], sport:['Sport','กีฬา'],
   cooking:['Cooking','ทำอาหาร'], business:['Business','ธุรกิจ'], school:['School','โรงเรียน']
 };
+const GROUPS = ['food','stay','spa','shops','health','more'];
+const GMAP = {food:'food', hotel:'stay', massage:'spa', shopping:'shops', medical:'health'};
+const GNAME = {
+  food:['Food','อาหาร'], stay:['Stay','ที่พัก'], spa:['Spa','สปา'], shops:['Shops','ร้านค้า'], health:['Health','สุขภาพ'], more:['More','อื่น ๆ']
+};
+const PHOTOS = {
+  lanterns:{en:'Hanging lanterns at Tha Phae Gate, Chiang Mai, 2008', th:'โคมแขวนที่ประตูท่าแพ เชียงใหม่ ปี 2008', by:'Random username 083794703875938', lic:'CC0', licurl:'https://creativecommons.org/publicdomain/zero/1.0/', src:'https://commons.wikimedia.org/wiki/File:%E0%B9%82%E0%B8%84%E0%B8%A1%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9E_%E0%B9%91_-_Hanging_lanterns_(khom_khwaen)_at_Tha_Phae_Gate_1.jpg'},
+  rotdaeng:{en:'Red songthaews in downtown Chiang Mai, 2008', th:'รถแดงในตัวเมืองเชียงใหม่ ปี 2008', by:'Manop', lic:'CC BY 3.0', licurl:'https://creativecommons.org/licenses/by/3.0/', src:'https://commons.wikimedia.org/wiki/File:Rot_Daeng_in_downtown_Chiang_Mai.jpg'},
+  gate:{en:'The eastern gate of the old city, Chiang Mai, 2015', th:'ประตูทิศตะวันออกของเมืองเก่าเชียงใหม่ ปี 2015', by:'Douglas Perkins', lic:'CC BY 4.0', licurl:'https://creativecommons.org/licenses/by/4.0/', src:'https://commons.wikimedia.org/wiki/File:Eastern_Gate_of_Chiang_Mai.jpg'}
+};
 const T = {
   en:{
-    eyebrow:'For Pim',
-    h1:'Your Chiang Mai, on Mot Dang',
-    lead:'Citylife has written up places across Chiang Mai for years. Mot Dang, a directory of Chiang Mai and Chiang Rai, now links {n} of them to the Citylife piece. Drag the year and watch the city fill in.',
-    bigl:'Citylife write-ups, each linked from its place page',
-    hint:'Tap a pin to see its Citylife piece and Mot Dang page.',
+    kick:'For Pim',
+    h1:'Your Chiang Mai, on <mark>Mot Dang</mark>',
+    clab:'Citylife pieces on the map', clab_cat:'{c} on the map',
+    chint:'Tap any pin',
     play:'Play', replay:'Replay', pause:'Pause',
-    sub_all:'All {n} write-ups, 2014 to 2020.',
-    sub_y:'{c} of {n} written by {y}.',
-    yl:'Written by <b>{y}</b> · <b>{k}</b> new that year',
-    newsum:'New in {y} ({k})',
+    all:'All',
     from:'Citylife · written up {y}',
-    cl:'Read the Citylife piece',
-    md:'Open the Mot Dang page',
-    close:'Close',
-    vh:'Your videos here next',
-    vp1:'Each pin above has a Mot Dang page: hours, phone, map, and one line that says “This place in Chiang Mai Citylife”, with the year and a link to your piece.',
-    vp2:'Your videos could sit on the same pages: a title, a picture, a link to the video on YouTube. The video plays on YouTube. Here are four from Citylife’s channel, each next to the Mot Dang page for the place it names.',
+    cl:'Read the piece', md:'Mot Dang page', close:'Close',
+    vk:'From the Citylife channel', vh:'Your videos', vp:'Tap a tile. It plays here.',
     ago:['6 months ago','11 months ago','1 year ago','3 years ago'],
-    sits:'Could sit on',
-    vsrc:'Source: <a href="https://www.youtube.com/channel/UC1fxOv5EWWndgfqOstH_tcA/videos" target="_blank" rel="noopener">Citylife - We are Chiang Mai on YouTube</a>, videos tab, read 19 Oct 2026. Ages as YouTube lists them. Pairing of video and Mot Dang page is by place name.',
-    cta:'I would like to show you the rest over coffee: the pages, the map, and where a video fits.',
-    coffee:'Coffee this week?',
-    sig:'NaN',
+    onmd:'On Mot Dang', yt:'YouTube',
+    vnote:'On Mot Dang, a video could sit on its place page, under the Citylife piece.',
+    kk:'The map, by kind', kh:'Pick a kind', kp:'Tap one. The pins light up on the map.',
+    bk:'Chiang Mai', bg:'<em>{n}</em> pieces.<br>One city.',
+    mk:'On Mot Dang',
+    mq:'A place page carries a line: <em>“This place in Chiang Mai Citylife”</em>, with the year and a link to your piece.',
+    mline:'This place in Chiang Mai Citylife — written up in {y}', mread:'Read the piece',
+    mseen:'See that page',
+    ck:'Chiang Mai', ch:'The rest is easier over a table.', coffee:'Coffee this week?',
     srch:'Sources',
-    s1:'Links between Mot Dang places and Citylife pages: Mot Dang place data, matched by name and position against <a href="https://www.chiangmaicitylife.com/citylife-places/" target="_blank" rel="noopener">Citylife’s place pages</a> on 21 Sep 2026. That file holds {all} matches; {n} are confirmed on the live Mot Dang place pages, read on 19 Oct 2026.',
-    s2:'Year: the year Citylife published the place page, from the same pages.',
-    s3:'Pin positions and categories: Mot Dang place records, built from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> and <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a>. One pin is in Chiang Rai.',
-    s4:'Map: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a>, © OpenMapTiles, data © OpenStreetMap contributors.',
-    s5:'Videos: Citylife’s YouTube channel, linked in the section above.',
+    s1:'Pieces and years: Mot Dang place data, matched by name and position against <a href="https://www.chiangmaicitylife.com/citylife-places/" target="_blank" rel="noopener">Citylife’s place pages</a> on 21 Sep 2026; the year is the year Citylife published the page. The file holds 208 matches; {n} are confirmed on the live Mot Dang place pages, read on 19 Oct 2026.',
+    s2:'Pin positions and kinds: Mot Dang place records, built from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> and <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a>. Three pins lie outside Chiang Mai city, one of them in Chiang Rai.',
+    s3:'Map: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a>, © OpenMapTiles, data © OpenStreetMap contributors.',
+    s4:'Videos: <a href="https://www.youtube.com/channel/UC1fxOv5EWWndgfqOstH_tcA/videos" target="_blank" rel="noopener">Citylife - We are Chiang Mai on YouTube</a>, videos tab, read 19 Oct 2026; ages as YouTube lists them; pictures from YouTube. Video and Mot Dang page are paired by place name.',
+    s5:'Mot Dang line: the place page for <a href="https://motdang.net/cm/p/akha-ama-2527662833.html" target="_blank" rel="noopener">Akha Ama</a>, read 19 Oct 2026.',
+    s6:'Photographs, from Wikimedia Commons: {p}.',
     foot:'Made for Pim by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://motdang.net/">motdang.net</a> · <a href="https://hongdam.net/">hongdam.net</a>',
-    gest:'Use two fingers to move the map',
-    mailsub:'Coffee this week?',
-    mailbody:'Hi NaN,\n\nCoffee this week?\n\nPim'
+    mailsub:'Coffee this week?', mailbody:'Hi NaN,\n\nCoffee this week?\n\nPim',
+    title:'Your Chiang Mai, on Mot Dang', mapl:'Map of Chiang Mai with the Citylife pieces'
   },
   th:{
-    eyebrow:'สำหรับพิม',
-    h1:'เชียงใหม่ของพิม บนมดแดง',
-    lead:'Citylife เขียนถึงร้านและสถานที่ในเชียงใหม่มาหลายปี ตอนนี้มดแดง (ไดเรกทอรีเชียงใหม่และเชียงราย) ลิงก์ {n} แห่งไปยังบทความของ Citylife ลองลากปีดู แล้วเมืองจะค่อยๆ เต็มขึ้น',
-    bigl:'บทความของ Citylife ที่ลิงก์จากหน้าสถานที่',
-    hint:'แตะหมุดบนแผนที่ เพื่อดูบทความและหน้ามดแดง',
+    kick:'สำหรับพิม',
+    h1:'เชียงใหม่ของพิม บน<mark>มดแดง</mark>',
+    clab:'บทความ Citylife บนแผนที่', clab_cat:'{c} บนแผนที่',
+    chint:'แตะหมุดได้เลย',
     play:'เล่น', replay:'เล่นอีกครั้ง', pause:'หยุด',
-    sub_all:'ครบทั้ง {n} บทความ ตั้งแต่ปี 2014 ถึง 2020',
-    sub_y:'เขียนแล้ว {c} จาก {n} บทความ ภายในปี {y}',
-    yl:'เขียนภายในปี <b>{y}</b> · ใหม่ในปีนั้น <b>{k}</b>',
-    newsum:'ใหม่ในปี {y} ({k})',
+    all:'ทั้งหมด',
     from:'Citylife · เขียนถึงเมื่อปี {y}',
-    cl:'อ่านบทความใน Citylife',
-    md:'เปิดหน้าในมดแดง',
-    close:'ปิด',
-    vh:'ขั้นต่อไป: วิดีโอของพิมบนหน้าเหล่านี้',
-    vp1:'หมุดแต่ละอันมีหน้าในมดแดง ซึ่งบอกเวลาเปิด เบอร์โทร แผนที่ และมีบรรทัดหนึ่งว่า “ที่นี่ในนิตยสาร Chiang Mai Citylife” พร้อมปีและลิงก์ไปบทความของพิม',
-    vp2:'วิดีโอของพิมวางในหน้าเดียวกันได้ ใช้ชื่อเรื่อง ภาพปก และลิงก์ไปยังวิดีโอบน YouTube วิดีโอเล่นบน YouTube นี่คือสี่คลิปจากช่อง Citylife แต่ละคลิปวางคู่กับหน้าของสถานที่ที่คลิปพูดถึงในมดแดง',
+    cl:'อ่านบทความ', md:'หน้ามดแดง', close:'ปิด',
+    vk:'จากช่อง Citylife', vh:'วิดีโอของพิม', vp:'แตะที่ภาพ แล้วเล่นตรงนี้ได้เลย',
     ago:['6 เดือนที่แล้ว','11 เดือนที่แล้ว','1 ปีที่แล้ว','3 ปีที่แล้ว'],
-    sits:'วางได้ที่',
-    vsrc:'ที่มา: <a href="https://www.youtube.com/channel/UC1fxOv5EWWndgfqOstH_tcA/videos" target="_blank" rel="noopener">ช่อง Citylife - We are Chiang Mai บน YouTube</a> แท็บวิดีโอ อ่านเมื่อ 19 ต.ค. 2026 อายุคลิปตามที่ YouTube แสดง การจับคู่คลิปกับหน้ามดแดงใช้ชื่อสถานที่',
-    cta:'อยากเอาส่วนที่เหลือมาให้ดูตอนนั่งจิบกาแฟด้วยกัน ทั้งหน้าสถานที่ แผนที่ และที่ที่วิดีโอวางได้',
-    coffee:'กาแฟสัปดาห์นี้ไหม?',
-    sig:'NaN',
+    onmd:'ในมดแดง', yt:'YouTube',
+    vnote:'ในมดแดง วิดีโอวางไว้ในหน้าสถานที่ ใต้บทความของ Citylife ได้',
+    kk:'แผนที่แยกตามหมวด', kh:'เลือกหมวด', kp:'แตะหมวดหนึ่ง หมุดจะสว่างขึ้นบนแผนที่',
+    bk:'เชียงใหม่', bg:'<em>{n}</em> บทความ<br>หนึ่งเมือง',
+    mk:'ในมดแดง',
+    mq:'หน้าสถานที่มีบรรทัดหนึ่งว่า <em>“ที่นี่ในนิตยสาร Chiang Mai Citylife”</em> พร้อมปีและลิงก์ไปบทความของพิม',
+    mline:'ที่นี่ในนิตยสาร Chiang Mai Citylife — บทความปี {y}', mread:'อ่านบทความ',
+    mseen:'ดูหน้านั้น',
+    ck:'เชียงใหม่', ch:'ที่เหลือ เล่าให้ฟังข้างโต๊ะดีกว่า', coffee:'กาแฟสัปดาห์นี้ไหม?',
     srch:'ที่มา',
-    s1:'ลิงก์ระหว่างสถานที่ในมดแดงกับหน้าใน Citylife: ข้อมูลสถานที่ของมดแดง จับคู่ด้วยชื่อและตำแหน่งกับ<a href="https://www.chiangmaicitylife.com/citylife-places/" target="_blank" rel="noopener">หน้าสถานที่ของ Citylife</a> เมื่อ 21 ก.ย. 2026 ไฟล์นั้นมี {all} คู่ที่จับได้ ยืนยันแล้ว {n} แห่งบนหน้าสถานที่ของมดแดงที่เผยแพร่อยู่ อ่านเมื่อ 19 ต.ค. 2026',
-    s2:'ปี: ปีที่ Citylife เผยแพร่หน้าสถานที่ จากหน้าเดียวกัน',
-    s3:'ตำแหน่งหมุดและหมวด: ข้อมูลสถานที่ของมดแดง สร้างจาก <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> และ <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a> มีหนึ่งหมุดอยู่ที่เชียงราย',
-    s4:'แผนที่: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> © OpenMapTiles ข้อมูล © ผู้ร่วมสร้าง OpenStreetMap',
-    s5:'วิดีโอ: ช่อง YouTube ของ Citylife ตามลิงก์ในส่วนด้านบน',
+    s1:'บทความและปี: ข้อมูลสถานที่ของมดแดง จับคู่ด้วยชื่อและตำแหน่งกับ<a href="https://www.chiangmaicitylife.com/citylife-places/" target="_blank" rel="noopener">หน้าสถานที่ของ Citylife</a> เมื่อ 21 ก.ย. 2026 ปีคือปีที่ Citylife เผยแพร่หน้านั้น ไฟล์มี 208 คู่ ยืนยันบนหน้าสถานที่ของมดแดงจริง {n} แห่ง อ่านเมื่อ 19 ต.ค. 2026',
+    s2:'ตำแหน่งหมุดและหมวด: ข้อมูลสถานที่ของมดแดง สร้างจาก <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> และ <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a> มีสามหมุดอยู่นอกตัวเมืองเชียงใหม่ หนึ่งในนั้นอยู่ที่เชียงราย',
+    s3:'แผนที่: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> © OpenMapTiles ข้อมูล © ผู้ร่วมสร้าง OpenStreetMap',
+    s4:'วิดีโอ: <a href="https://www.youtube.com/channel/UC1fxOv5EWWndgfqOstH_tcA/videos" target="_blank" rel="noopener">ช่อง Citylife - We are Chiang Mai บน YouTube</a> แท็บวิดีโอ อ่านเมื่อ 19 ต.ค. 2026 อายุคลิปตามที่ YouTube แสดง ภาพปกจาก YouTube การจับคู่คลิปกับหน้าในมดแดงใช้ชื่อสถานที่',
+    s5:'บรรทัดในมดแดง: หน้าสถานที่ <a href="https://motdang.net/cm/p/akha-ama-2527662833.html" target="_blank" rel="noopener">Akha Ama</a> อ่านเมื่อ 19 ต.ค. 2026',
+    s6:'ภาพถ่ายจาก Wikimedia Commons: {p}',
     foot:'ทำให้ พิม โดย NaN · หงส์ดำ เชียงราย · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://motdang.net/">motdang.net</a> · <a href="https://hongdam.net/">hongdam.net</a>',
-    gest:'ใช้สองนิ้วเลื่อนแผนที่',
-    mailsub:'กาแฟสัปดาห์นี้ไหม?',
-    mailbody:'สวัสดี NaN\n\nกาแฟสัปดาห์นี้ไหม?\n\nพิม'
+    mailsub:'กาแฟสัปดาห์นี้ไหม?', mailbody:'สวัสดี NaN\n\nกาแฟสัปดาห์นี้ไหม?\n\nพิม',
+    title:'เชียงใหม่ของพิม บนมดแดง', mapl:'แผนที่เชียงใหม่ พร้อมบทความของ Citylife'
   }
 };
-const VIDTXT = [
-  {en:'CityNews: Giant branch of 200 year old yang tree crashes down at Wat Chedi Luang', th:null},
-  {en:'Creative expression brings a classic poem into Gen Alpha era at Pathfinders International School', th:null},
-  {en:'Akha Heritage museum by Akhas and for everyone in Chiang Rai', th:null},
-  {en:'We made pasta! Limeleaf Kitchen’s Cooking Workshops are fun for all', th:null}
-];
 
 let lang = (navigator.language||'en').toLowerCase().startsWith('th') ? 'th' : 'en';
-let Y = 6;                       // index into YEARS
-let sel = -1;
-let timer = null;
-let mapReady = false;
-const N = DATA.length;
-const byYear = YEARS.map(y => DATA.filter(d => d.y === y).length);
-const cum = []; byYear.reduce((a,c,i)=>{cum[i]=a+c;return a+c},0);
-
+const reduced = matchMedia('(prefers-reduced-motion:reduce)').matches;
 const $ = id => document.getElementById(id);
-const t = (k, o) => { let s = (T[lang][k] ?? T.en[k] ?? ''); if (o) for (const p in o) s = s.split('{'+p+'}').join(o[p]); return s.split('{n}').join(N); };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const N = DATA.length;
+const t = (k, o) => { let s = (T[lang][k] ?? T.en[k] ?? ''); if (o) for (const p in o) s = s.split('{'+p+'}').join(o[p]); return s.split('{n}').join(N); };
 
-/* counter */
-let shown = 0, tween = null;
-function setCount(to){
-  clearInterval(tween);
-  const from = shown, t0 = Date.now(), dur = 650;
-  if (matchMedia('(prefers-reduced-motion:reduce)').matches){ shown = to; $('count').textContent = to; return; }
-  tween = setInterval(()=>{
-    const p = Math.min(1,(Date.now()-t0)/dur), e = 1-Math.pow(1-p,3);
-    shown = Math.round(from + (to-from)*e);
-    $('count').textContent = shown;
-    if (p>=1){ clearInterval(tween); shown = to; $('count').textContent = to; }
-  }, 30);
+/* order: year by year, and inside a year from the old city outward, so the city fills from its middle */
+const CEN = [98.9931, 18.7883];
+DATA.forEach(d => { d.g = GMAP[d.c] || 'more'; d.dist = Math.hypot(d.a-CEN[1], (d.o-CEN[0])*0.95); });
+DATA.sort((x,y) => x.y-y.y || x.dist-y.dist);
+DATA.forEach((d,i) => d.r = i);
+const byYear = YEARS.map(y => DATA.filter(d => d.y===y).length);
+const cum = []; byYear.reduce((a,c,i)=>{cum[i]=a+c;return a+c},0);
+const gcount = {}; GROUPS.forEach(g => gcount[g] = DATA.filter(d=>d.g===g).length);
+const gpre = {}; GROUPS.forEach(g => { let a=0; gpre[g]=[0].concat(DATA.map(d=>a+=(d.g===g?1:0))); });
+
+/* state */
+let rank = N, cat = null, fresh = 0, sel = -1, raf = 0, playing = false, mapReady = false;
+const yIdx = c => { for (let i=0;i<YEARS.length;i++) if (c<=cum[i]) return i; return YEARS.length-1; };
+
+function render(){
+  const c = Math.floor(rank + 1e-6);
+  const shown = cat ? gpre[cat][c] : c;
+  $('count').textContent = shown;
+  const yi = yIdx(Math.max(c,1));
+  $('yearbig').textContent = YEARS[yi];
+  document.querySelectorAll('.yb').forEach((b,i)=>{ b.classList.toggle('on', c>0 && i<=yi); b.classList.toggle('cur', i===yi && c<N); });
+  $('clab').textContent = cat ? t('clab_cat',{c:GNAME[cat][lang==='th'?1:0]}) : t('clab');
+  $('chint').textContent = playing ? '' : t('chint');
+  $('play').textContent = t(playing ? 'pause' : (c>=N ? 'replay' : 'play'));
+  if (mapReady) setFilters(c);
 }
+function setFilters(c){
+  const shown = ['<',['get','r'],c];
+  const match = cat ? ['==',['get','g'],cat] : ['has','r'];
+  map.setFilter('base', ['all',shown,match]);
+  map.setFilter('dim', cat ? ['all',shown,['!=',['get','g'],cat]] : ['==',['get','r'],-1]);
+  const f = fresh ? ['all',shown,['>=',['get','r'],c-fresh],match] : ['==',['get','r'],-1];
+  map.setFilter('fresh', f); map.setFilter('halo', f);
+}
+function stopAnim(){ cancelAnimationFrame(raf); raf = 0; playing = false; fresh = 0; }
 
-/* year controls */
+/* the run: one year at a time, a short hold at the end of each */
+const SEG = byYear.map(n => Math.max(560, n*24));
+const TOTAL = SEG.reduce((a,b)=>a+b,0);
+function play(){
+  stopAnim(); closeCard(); if (cat) setCat(null, true);
+  playing = true; fresh = 12; rank = 1;
+  const t0 = performance.now();
+  (function f(now){
+    const el = now - t0;
+    if (el >= TOTAL){ rank = N; stopAnim(); render(); return; }
+    let i = 0, acc = 0; while (i < SEG.length-1 && el >= acc+SEG[i]){ acc += SEG[i]; i++; }
+    const q = Math.min(1, (el-acc)/(SEG[i]*0.82));
+    rank = (cum[i]-byYear[i]) + byYear[i]*q;
+    render();
+    raf = requestAnimationFrame(f);
+  })(t0);
+}
+function tweenTo(target, ms, then){
+  stopAnim();
+  const from = rank, t0 = performance.now();
+  if (reduced || from === target){ rank = target; render(); if (then) then(); return; }
+  (function f(now){
+    const p = Math.min(1,(now-t0)/ms), e = 1-Math.pow(1-p,3);
+    rank = from + (target-from)*e; render();
+    if (p < 1) raf = requestAnimationFrame(f); else { raf = 0; if (then) then(); }
+  })(t0);
+}
+$('play').onclick = () => { if (playing){ stopAnim(); render(); } else play(); };
+$('count').onclick = () => { if (!playing) play(); };
+
+/* year bars */
 function buildYears(){
   const max = Math.max(...byYear);
-  $('years').innerHTML = YEARS.map((y,i)=>
-    `<button class="yb" type="button" data-i="${i}" aria-label="${y}: ${byYear[i]}">
-       <span class="n">${byYear[i]}</span><span class="bar" style="height:${Math.max(4,Math.round(byYear[i]/max*60))}px"></span><span class="y">${y}</span>
-     </button>`).join('');
-  $('years').onclick = e => { const b = e.target.closest('.yb'); if (b){ stop(); setYear(+b.dataset.i); } };
+  $('years').innerHTML = YEARS.map((y,i)=>`<button class="yb" type="button" data-i="${i}" aria-label="${y}: ${byYear[i]}"><span class="bar" style="height:${Math.round(8+34*Math.sqrt(byYear[i]/max))}px"></span><span class="y">${y}</span></button>`).join('');
+  $('years').onclick = e => { const b = e.target.closest('.yb'); if (!b) return; if (cat) setCat(null,true); closeCard(); tweenTo(cum[+b.dataset.i], 600); };
 }
-function renderControls(){
-  document.querySelectorAll('.yb').forEach((b,i)=>{ b.classList.toggle('on', i<=Y); b.classList.toggle('cur', i===Y); });
-  $('yr').value = Y;
-  $('count').setAttribute('data-n', cum[Y]);
-  $('sub').textContent = Y===6 ? t('sub_all') : t('sub_y',{c:cum[Y],y:YEARS[Y]});
-  $('yl').innerHTML = t('yl',{y:YEARS[Y],k:byYear[Y]});
-  $('newsum').textContent = t('newsum',{y:YEARS[Y],k:byYear[Y]});
-  const ids = DATA.map((d,i)=>i).filter(i=>DATA[i].y===YEARS[Y]);
-  $('chips').innerHTML = ids.map(i=>`<button class="chip" type="button" data-p="${i}">${esc(DATA[i].n)}</button>`).join('');
-}
-$('chips').onclick = e => { const b = e.target.closest('.chip'); if (b) select(+b.dataset.p, true); };
-function setYear(i, animate){
-  Y = i;
-  setCount(cum[Y]);
-  renderControls();
-  if (sel>=0 && DATA[sel].y > YEARS[Y]) closeCard();
-  if (mapReady) applyFilters(animate !== false);
-}
-$('yr').addEventListener('input', e => { stop(); setYear(+e.target.value); });
 
-function stop(){ if (timer){ clearInterval(timer); timer=null; } $('play').textContent = t(Y===6 ? 'replay':'play'); }
-function play(){
-  if (timer){ stop(); return; }
-  setYear(0);
-  $('play').textContent = t('pause');
-  timer = setInterval(()=>{
-    if (Y>=6){ stop(); return; }
-    setYear(Y+1);
-    if (Y>=6){ clearInterval(timer); timer=null; $('play').textContent = t('replay'); }
-  }, 1100);
+/* kinds */
+function buildChips(){
+  const items = [[null,t('all'),N]].concat(GROUPS.map(g=>[g,GNAME[g][lang==='th'?1:0],gcount[g]]));
+  $('chips').innerHTML = items.map(([g,l,n])=>`<button class="chip${cat===g?' on':''}" type="button" data-g="${g||''}" aria-pressed="${cat===g}">${esc(l)} <b>${n}</b></button>`).join('');
 }
-$('play').onclick = play;
+$('chips').onclick = e => { const b = e.target.closest('.chip'); if (!b) return; setCat(b.dataset.g || null); };
+function buildKinds(){
+  const max = Math.max(...GROUPS.map(g=>gcount[g]));
+  $('kinds-grid').innerHTML = GROUPS.map(g=>`<button class="kind${cat===g?' on':''}" type="button" data-g="${g}" style="--w:${Math.max(6,Math.round(gcount[g]/max*100))}%"><b>${gcount[g]}</b><span>${esc(GNAME[g][lang==='th'?1:0])}</span><i></i></button>`).join('');
+}
+$('kinds-grid').onclick = e => { const b = e.target.closest('.kind'); if (!b) return; setCat(b.dataset.g); window.scrollTo({top:0,behavior:'smooth'}); };
+
+function setCat(g, quiet){
+  if (g === cat) g = null;
+  cat = g; closeCard();
+  buildChips(); buildKinds();
+  if (quiet) { render(); return; }
+  const go = () => { render(); fitTo(g ? DATA.filter(d=>d.g===g) : DATA); };
+  if (rank < N) tweenTo(N, 450, go); else { stopAnim(); go(); }
+}
 
 /* card */
-function mdUrl(d){ return d.m ? MD_BASE + d.m : null; }
 function renderCard(){
-  if (sel<0) return;
+  if (sel < 0) return;
   const d = DATA[sel];
   $('cn').textContent = d.n;
-  const cat = (CAT[d.c]||[null,null])[lang==='th'?1:0];
-  $('cm').textContent = t('from',{y:d.y}) + (cat ? ' · '+cat : '');
+  const cat2 = (CAT[d.c]||[null,null])[lang==='th'?1:0];
+  $('cm').textContent = t('from',{y:d.y}) + (cat2 ? ' · '+cat2 : '');
   $('cl').href = CL_BASE + d.s + '/'; $('cl').textContent = t('cl');
-  const m = mdUrl(d);
-  $('md').style.display = m ? '' : 'none';
-  if (m){ $('md').href = m; $('md').textContent = t('md'); }
+  $('md').href = MD_BASE + d.m; $('md').textContent = t('md');
   $('cardx').setAttribute('aria-label', t('close'));
 }
-function select(i, fly){
-  sel = i;
-  const d = DATA[i];
-  if (d.y > YEARS[Y]){ stop(); setYear(YEARS.indexOf(d.y)); }
-  renderCard();
-  $('card').classList.add('on');
+function select(i){
+  stopAnim(); sel = i; render(); renderCard();
+  $('hero').classList.add('hascard');
   if (mapReady){
-    map.setFilter('sel', ['==',['get','i'],i]);
-    map.easeTo({center:[d.o,d.a], zoom: Math.max(map.getZoom(), 14), duration: 700});
+    map.setFilter('sel', ['==',['get','r'],i]);
+    const d = DATA[i], desk = innerWidth >= 1024;
+    map.easeTo({center:[d.o,d.a], zoom:Math.max(map.getZoom(),14), duration:reduced?0:700, padding:desk?{}:{bottom:Math.round(innerHeight*0.2)}});
+    pulse();
   }
-  if (fly) $('map').scrollIntoView({block:'center',behavior:'smooth'});
 }
-function closeCard(){ sel=-1; $('card').classList.remove('on'); if (mapReady) map.setFilter('sel',['==',['get','i'],-1]); }
+function closeCard(){ sel = -1; $('hero').classList.remove('hascard'); if (mapReady) map.setFilter('sel',['==',['get','r'],-1]); }
 $('cardx').onclick = closeCard;
+function pulse(){
+  if (reduced) return;
+  const t0 = performance.now();
+  (function f(now){
+    const p = Math.min(1,(now-t0)/800);
+    map.setPaintProperty('sel','circle-radius',12+30*p);
+    map.setPaintProperty('sel','circle-stroke-opacity',1-p*0.8);
+    if (p<1) requestAnimationFrame(f); else { map.setPaintProperty('sel','circle-radius',['interpolate',['linear'],['zoom'],10,12,15,18]); map.setPaintProperty('sel','circle-stroke-opacity',1); }
+  })(t0);
+}
 
 /* map */
-const q = (arr,p) => { const a = arr.slice().sort((x,y)=>x-y); return a[Math.round((a.length-1)*p)]; };
-const bounds = new maplibregl.LngLatBounds(
-  [q(DATA.map(d=>d.o),0.04), q(DATA.map(d=>d.a),0.04)],
-  [q(DATA.map(d=>d.o),0.96), q(DATA.map(d=>d.a),0.96)]);
-const map = new maplibregl.Map({
-  container:'map',
-  style:'https://tiles.openfreemap.org/styles/liberty',
-  bounds, fitBoundsOptions:{padding:28},
-  cooperativeGestures:true,
-  locale:{
-    'CooperativeGesturesHandler.WindowsHelpText':'Ctrl + scroll to zoom the map · กด Ctrl แล้วเลื่อนเพื่อซูม',
-    'CooperativeGesturesHandler.MacHelpText':'⌘ + scroll to zoom the map · กด ⌘ แล้วเลื่อนเพื่อซูม',
-    'CooperativeGesturesHandler.MobileHelpText':'Use two fingers to move the map · ใช้สองนิ้วเลื่อนแผนที่'
-  },
-  attributionControl:{compact:true}
-});
-map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
-
-function applyFilters(animate){
-  const y = YEARS[Y];
-  map.setFilter('old', ['<',['get','y'],y]);
-  map.setFilter('new', ['==',['get','y'],y]);
-  map.setFilter('halo', ['==',['get','y'],y]);
-  if (animate && !matchMedia('(prefers-reduced-motion:reduce)').matches){
-    const t0 = performance.now();
-    (function f(now){
-      const p = Math.min(1,(now-t0)/900);
-      map.setPaintProperty('halo','circle-radius', 8 + 26*p);
-      map.setPaintProperty('halo','circle-opacity', 0.55*(1-p));
-      if (p<1) requestAnimationFrame(f);
-    })(t0);
-  }
+function setTh(){ document.documentElement.style.setProperty('--th', ($('title').offsetHeight||100)+'px'); }
+addEventListener('resize', setTh);
+function pad(){
+  const desk = innerWidth >= 1024;
+  return desk ? {top:50,bottom:50,left:50,right:50} : {top:($('title').offsetHeight||150)+22,bottom:46,left:26,right:26};
 }
-map.on('load', () => {
-  map.addSource('pins',{type:'geojson',data:{type:'FeatureCollection',features:DATA.map((d,i)=>({type:'Feature',properties:{i,y:d.y},geometry:{type:'Point',coordinates:[d.o,d.a]}}))}});
-  map.addLayer({id:'halo',type:'circle',source:'pins',filter:['==',['get','y'],2020],paint:{'circle-color':'#f2b705','circle-radius':8,'circle-opacity':0}});
-  map.addLayer({id:'old',type:'circle',source:'pins',filter:['<',['get','y'],2020],paint:{'circle-color':'#b4412c','circle-radius':['interpolate',['linear'],['zoom'],10,4,15,8],'circle-stroke-color':'#ffffff','circle-stroke-width':1.5,'circle-opacity':0.92}});
-  map.addLayer({id:'new',type:'circle',source:'pins',filter:['==',['get','y'],2020],paint:{'circle-color':'#f2b705','circle-radius':['interpolate',['linear'],['zoom'],10,6,15,11],'circle-stroke-color':'#000000','circle-stroke-width':2}});
-  map.addLayer({id:'sel',type:'circle',source:'pins',filter:['==',['get','i'],-1],paint:{'circle-color':'rgba(0,0,0,0)','circle-radius':['interpolate',['linear'],['zoom'],10,12,15,18],'circle-stroke-color':'#000000','circle-stroke-width':3}});
-  mapReady = true;
-  applyFilters(false);
-  map.on('click', e => {
-    const r = 14, box = [[e.point.x-r,e.point.y-r],[e.point.x+r,e.point.y+r]];
-    const f = map.queryRenderedFeatures(box,{layers:['old','new']});
-    if (f.length){
-      // nearest to the tap
-      let best=f[0], bd=1e9;
-      f.forEach(x=>{ const p=map.project(x.geometry.coordinates); const dd=(p.x-e.point.x)**2+(p.y-e.point.y)**2; if(dd<bd){bd=dd;best=x;} });
-      stop(); select(best.properties.i, false);
+function boundsOf(list){
+  const q = (arr,p) => { const a = arr.slice().sort((x,y)=>x-y); return a[Math.round((a.length-1)*p)]; };
+  const near = list.filter(d => Math.hypot(d.a-CEN[1], d.o-CEN[0]) < 0.25);
+  const use = near.length ? near : list;
+  const lo = use.length > 30 ? 0.08 : 0, hi = 1 - lo;
+  return new maplibregl.LngLatBounds([q(use.map(d=>d.o),lo), q(use.map(d=>d.a),lo)], [q(use.map(d=>d.o),hi), q(use.map(d=>d.a),hi)]);
+}
+function fitTo(list){ if (!mapReady) return; map.fitBounds(boundsOf(list), {padding:pad(), maxZoom:15.5, duration:reduced?0:900}); }
+
+let map;
+function startMap(){
+  map = new maplibregl.Map({
+    container:'map', style:'https://tiles.openfreemap.org/styles/liberty',
+    bounds:boundsOf(DATA), fitBoundsOptions:{padding:pad()},
+    cooperativeGestures:true, attributionControl:{compact:true},
+    locale:{
+      'CooperativeGesturesHandler.WindowsHelpText':'Ctrl + scroll to zoom the map · กด Ctrl แล้วเลื่อนเพื่อซูม',
+      'CooperativeGesturesHandler.MacHelpText':'⌘ + scroll to zoom the map · กด ⌘ แล้วเลื่อนเพื่อซูม',
+      'CooperativeGesturesHandler.MobileHelpText':'Use two fingers to move the map · ใช้สองนิ้วเลื่อนแผนที่'
     }
   });
-  ['old','new'].forEach(l=>{
-    map.on('mouseenter',l,()=>map.getCanvas().style.cursor='pointer');
-    map.on('mouseleave',l,()=>map.getCanvas().style.cursor='');
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+  map.on('load', () => {
+    map.addSource('pins',{type:'geojson',data:{type:'FeatureCollection',features:DATA.map(d=>({type:'Feature',properties:{r:d.r,g:d.g,y:d.y},geometry:{type:'Point',coordinates:[d.o,d.a]}}))}});
+    const rad = [['interpolate',['linear'],['zoom'],10,4.5,15,9]];
+    map.addLayer({id:'dim',type:'circle',source:'pins',filter:['==',['get','r'],-1],paint:{'circle-color':'#7d776c','circle-radius':['interpolate',['linear'],['zoom'],10,3,15,6],'circle-opacity':0.45,'circle-stroke-color':'#ffffff','circle-stroke-width':1}});
+    map.addLayer({id:'base',type:'circle',source:'pins',filter:['==',['get','r'],-1],paint:{'circle-color':'#d8261c','circle-radius':['interpolate',['linear'],['zoom'],10,5,15,10],'circle-stroke-color':'#ffffff','circle-stroke-width':1.6,'circle-opacity':0.95}});
+    map.addLayer({id:'halo',type:'circle',source:'pins',filter:['==',['get','r'],-1],paint:{'circle-color':'#ffc61a','circle-radius':['interpolate',['linear'],['zoom'],10,12,15,22],'circle-opacity':0.4,'circle-blur':0.6}});
+    map.addLayer({id:'fresh',type:'circle',source:'pins',filter:['==',['get','r'],-1],paint:{'circle-color':'#ffc61a','circle-radius':['interpolate',['linear'],['zoom'],10,6.5,15,12],'circle-stroke-color':'#000000','circle-stroke-width':2}});
+    map.addLayer({id:'sel',type:'circle',source:'pins',filter:['==',['get','r'],-1],paint:{'circle-color':'rgba(0,0,0,0)','circle-radius':['interpolate',['linear'],['zoom'],10,12,15,18],'circle-stroke-color':'#000000','circle-stroke-width':3}});
+    mapReady = true;
+    const at = document.querySelector('.maplibregl-ctrl-attrib'); if (at) at.classList.remove('maplibregl-compact-show');
+    map.on('click', e => {
+      const r = 16, f = map.queryRenderedFeatures([[e.point.x-r,e.point.y-r],[e.point.x+r,e.point.y+r]],{layers:['base','fresh']});
+      if (!f.length) return;
+      let best = f[0], bd = 1e9;
+      f.forEach(x => { const p = map.project(x.geometry.coordinates); const dd = (p.x-e.point.x)**2+(p.y-e.point.y)**2; if (dd<bd){ bd=dd; best=x; } });
+      select(best.properties.r);
+    });
+    ['base','fresh'].forEach(l => {
+      map.on('mouseenter',l,()=>map.getCanvas().style.cursor='pointer');
+      map.on('mouseleave',l,()=>map.getCanvas().style.cursor='');
+    });
+    if (reduced){ rank = N; render(); } else play();
   });
-  // one slow first pass unless the visitor prefers calm
-  if (!matchMedia('(prefers-reduced-motion:reduce)').matches && 'IntersectionObserver' in window){
-    const io = new IntersectionObserver(es => { if (es[0].isIntersecting){ io.disconnect(); setTimeout(()=>{ if (!timer && sel<0 && Y===6) play(); }, 600); } }, {threshold:0.6});
-    io.observe($('map'));
-  }
-});
-map.on('error', e => { try{ console.log('map', e.error && e.error.message); }catch(_){} });
+  map.on('error', e => { try{ console.log('map', e.error && e.error.message); }catch(_){} });
+}
 
-/* videos */
+/* videos: a tile becomes the player */
 function renderVids(){
   $('vids').innerHTML = VIDS.map((v,i)=>{
-    const ago = T[lang].ago[i];
-    const sits = v.md ? `<div class="sits">${t('sits')}: <a href="${esc(MD_BASE+v.md)}" target="_blank" rel="noopener">${esc(v.mdn)}</a></div>` : '';
-    return `<li class="v"><a class="th" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" aria-label="${esc(v.t)}"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg" onerror="this.remove()"></a>
-      <div class="tx"><a class="tt" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">${esc(v.t)}</a><div class="ag">${ago}</div>${sits}</div></li>`;
+    const md = v.md ? `<a href="${esc(MD_BASE+v.md)}" target="_blank" rel="noopener">${t('onmd')}: ${esc(v.mdn)}</a>` : '';
+    return `<li data-i="${i}"><div class="media"><button class="vbtn" type="button" aria-label="${esc(v.t)}"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg"><span class="pl"></span><span class="vcap">${esc(v.t)}</span></button></div>
+      <div class="vm"><span>${T[lang].ago[i]}</span><a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">${t('yt')} ↗</a>${md}</div></li>`;
   }).join('');
+}
+let playingVid = -1;
+$('vids').onclick = e => {
+  const b = e.target.closest('.vbtn'); if (!b) return;
+  const li = b.closest('li'), i = +li.dataset.i;
+  if (playingVid >= 0 && playingVid !== i){ const m = document.querySelector(`#vids li[data-i="${playingVid}"] .media`); if (m) m.innerHTML = ''; renderVidsOne(playingVid); }
+  playingVid = i;
+  const m = li.querySelector('.media');
+  m.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${VIDS[i].id}?autoplay=1&rel=0&playsinline=1" title="${esc(VIDS[i].t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+};
+function renderVidsOne(i){
+  const v = VIDS[i];
+  document.querySelector(`#vids li[data-i="${i}"] .media`).innerHTML = `<button class="vbtn" type="button" aria-label="${esc(v.t)}"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg"><span class="pl"></span><span class="vcap">${esc(v.t)}</span></button>`;
 }
 
 /* language */
+function credit(p, lng){
+  const P = PHOTOS[p];
+  return `${esc(P[lng==='th'?'th':'en'])} · ${esc(P.by)} · <a href="${P.licurl}" target="_blank" rel="noopener">${P.lic}</a> · <a href="${P.src}" target="_blank" rel="noopener">Commons</a>`;
+}
 function applyLang(){
-  document.documentElement.lang = lang; $('lt').style.fontWeight = lang==='th'?'700':'400'; $('le').style.fontWeight = lang==='en'?'700':'400';
+  document.documentElement.lang = lang;
+  $('lt').classList.toggle('on', lang==='th'); $('le').classList.toggle('on', lang==='en');
   document.querySelectorAll('[data-i]').forEach(el => { const s = t(el.dataset.i); if (s) el.innerHTML = s; });
-  document.title = lang==='th' ? 'เชียงใหม่ของพิม บนมดแดง' : 'Your Chiang Mai, on Mot Dang';
-  $('play').textContent = t(timer ? 'pause' : (Y===6 ? 'replay':'play'));
-  $('hint').textContent = t('hint');
-  $('vsrc').innerHTML = t('vsrc');
+  document.title = t('title'); $('map').setAttribute('aria-label', t('mapl'));
+  const ex = DATA.find(d => d.s === 'akha-ama');
+  $('mline').innerHTML = `<span>${t('mline',{y:ex.y})}</span> <a href="${CL_BASE+ex.s}/" target="_blank" rel="noopener">${t('mread')} →</a>`;
+  $('mseen').href = MD_BASE + ex.m; $('mseen').textContent = t('mseen') + ' →';
+  $('cred1').innerHTML = credit('lanterns', lang); $('cred2').innerHTML = credit('rotdaeng', lang); $('cred3').innerHTML = credit('gate', lang);
+  $('ph').setAttribute('aria-label', PHOTOS.rotdaeng[lang]);
+  const pl = ['lanterns','rotdaeng','gate'].map(p => credit(p, lang)).join('; ');
+  $('srclist').innerHTML = ['s1','s2','s3','s4','s5','s6'].map(k=>`<li>${t(k,{p:pl})}</li>`).join('');
   $('foot').innerHTML = t('foot');
-  $('srclist').innerHTML = ['s1','s2','s3','s4','s5'].map(k=>`<li>${t(k,{n:N,all:208})}</li>`).join('');
   $('coffee').href = 'mailto:nan@motdang.net?subject=' + encodeURIComponent(t('mailsub')) + '&body=' + encodeURIComponent(t('mailbody'));
-  renderControls(); renderCard(); renderVids();
+  buildChips(); buildKinds(); renderCard(); renderVids(); playingVid = -1; render();
 }
 $('lang').onclick = () => { lang = lang==='th' ? 'en' : 'th'; applyLang(); };
 
 buildYears();
-$('count').textContent = 0;
 applyLang();
-setCount(cum[Y]);
-$('play').textContent = t('play');
+setTh();
+if (window.maplibregl) startMap();
+if ('IntersectionObserver' in window){
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }), {threshold:0.25});
+  io.observe($('kinds-grid'));
+} else $('kinds-grid').classList.add('in');
 </script>
 </body>
 </html>

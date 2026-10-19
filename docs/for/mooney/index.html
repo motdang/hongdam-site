@@ -5,283 +5,460 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>137 Pillars House, then and now</title>
-<meta name="description" content="A timeline and a map of the 137 Pillars House grounds in Chiang Mai, from the Borneo Company lease to the hotel, with every year traced to its source.">
+<meta name="description" content="A filmstrip of 137 Pillars House in Chiang Mai, 1883 to 2026, and a map of its grounds. Made for Amber and Jake Mooney.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="137 Pillars House, then and now">
-<meta property="og:description" content="A timeline and a map of the 137 Pillars House grounds in Chiang Mai, each year traced to its source. Made for Amber and Jake Mooney.">
+<meta property="og:description" content="A filmstrip of 137 Pillars House in Chiang Mai, 1883 to 2026, and a map of its grounds. Made for Amber and Jake Mooney.">
 <meta property="og:url" content="https://hongdam.net/for/mooney/">
 <meta property="og:image" content="https://hongdam.net/for/mooney/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,700&family=Sarabun:wght@400;600;700&family=Noto+Serif+Thai:wght@500;700&display=swap">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <style>
 :root{
-  --bg:#f5efe2; --ink:#1f1a12; --muted:#675d4c; --card:#fffaf0; --line:#dccfb4;
-  --teak:#7a3f1d; --teak-soft:#ecd9c4; --gold:#f2b705; --gold-ink:#000;
-  --green:#2f6b3a; --note:#8a5a00; --note-bg:#fbefcf; --link:#7a3f1d;
-  --shadow:0 1px 2px rgba(60,40,10,.10), 0 6px 20px rgba(60,40,10,.08);
+  --paper:#f7eedc; --paper2:#efe1c4; --card:#fffaf0; --ink:#2a1a0d; --muted:#6a5740;
+  --teak:#8b4a1d; --rail:#3a2211; --gold:#f2b705; --gold-ink:#000;
+  --moss:#41603a; --line:#d8c398; --link:#8b4a1d; --note-bg:#fbefcf; --note:#7a5200;
+  --serif:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,"Noto Serif Thai","Thonburi",serif;
+  --sans:"Sarabun","Segoe UI",system-ui,-apple-system,"Noto Sans Thai","Thonburi",sans-serif;
+  --shadow:0 1px 2px rgba(60,35,10,.12),0 10px 28px rgba(60,35,10,.12);
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --bg:#14110b; --ink:#f2e9d6; --muted:#b5a98f; --card:#1e1911; --line:#3a3223;
-    --teak:#e0a373; --teak-soft:#3a2819; --gold:#f2b705; --gold-ink:#000;
-    --green:#7fcf8e; --note:#f2c76b; --note-bg:#2f2610; --link:#e8b184;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.35);
+    --paper:#1a120a; --paper2:#231910; --card:#2b1f13; --ink:#f3e8d2; --muted:#bba98a;
+    --teak:#e3a56f; --rail:#120b05; --line:#4a3a25; --moss:#8fc27f; --link:#eab582;
+    --note-bg:#33280f; --note:#f0c670;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 28px rgba(0,0,0,.4);
   }
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:16px/1.55 system-ui,-apple-system,"Segoe UI","Noto Sans Thai","Thonburi",sans-serif;
-  overflow-x:hidden}
-.wrap{max-width:760px;margin:0 auto;padding:0 16px}
-h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Georgia,"Noto Serif Thai","Thonburi",serif;line-height:1.15;margin:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--sans);overflow-x:hidden}
+h1,h2,h3{font-family:var(--serif);line-height:1.08;margin:0;font-weight:700}
 a{color:var(--link)}
 button{font:inherit;color:inherit;cursor:pointer}
 :focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+html[lang="th"] *{letter-spacing:0!important}
+html[lang="th"] body{line-height:1.65}
+html[lang="th"] h1,html[lang="th"] h2,html[lang="th"] h3{line-height:1.25}
 
-/* top bar */
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0 6px}
-.kicker{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.lang{display:inline-flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden}
-.lang button{border:0;background:transparent;padding:6px 14px;min-height:36px;font-weight:600}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+/* ---------- hero ---------- */
+.hero{position:relative;isolation:isolate;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;color:#fff6e6;
+  background:#2a1a0e url(img/hero.jpg) 46% 62%/cover no-repeat fixed}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(22,11,4,.66) 0%,rgba(22,11,4,.22) 34%,rgba(22,11,4,.12) 52%,rgba(22,11,4,.90) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;mix-blend-mode:multiply;
+  background:radial-gradient(110% 80% at 18% 28%,rgba(139,74,29,.28),transparent 62%)}
+.hw{width:100%;max-width:1240px;margin:0 auto;padding:0 16px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:6px}
+.kicker{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#f7d98a}
+.kicker{min-width:0}
+.lang{flex:none;display:inline-flex;border:1.5px solid rgba(255,246,230,.8);border-radius:999px;overflow:hidden;background:rgba(22,11,4,.35)}
+.lang button{border:0;background:transparent;color:#fff6e6;padding:6px 14px;min-height:38px;font-weight:700}
+.lang button[aria-pressed="true"]{background:#fff6e6;color:#2a1a0d}
+.titleblock{padding-top:clamp(8px,3vh,32px)}
+.eyebrow{margin:0 0 10px;font-size:.8rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#f7d98a}
+h1{font-size:clamp(2.3rem,9.4vw,5.2rem);letter-spacing:-.015em;font-weight:700;text-shadow:0 2px 28px rgba(0,0,0,.5)}
+h1 span{display:block}
+h1 em{display:block;font-style:italic;font-weight:500;color:#f6c85f}
+.reel{margin-top:auto;padding:22px 0 8px}
+.cred{font-size:.68rem;color:#d9c9ac;margin:8px 0 0;max-width:62ch}
+.cred a{color:#ecdcbc}
 
-/* hero */
-.hero{padding:18px 0 8px}
-.hero h1{font-size:clamp(2rem,9vw,3.4rem);letter-spacing:-.01em}
-.hero h1 em{font-style:normal;color:var(--teak)}
-.lede{font-size:1.08rem;color:var(--muted);margin:12px 0 0;max-width:34em}
-.slot{margin:18px 0 0;height:120px;border-radius:14px;border:1px solid var(--line);
-  background:linear-gradient(135deg,var(--teak-soft),var(--card))}
+/* year dots */
+.years{position:relative;display:flex;margin-bottom:10px}
+.years::before,.years::after{content:"";position:absolute;top:6px;height:3px;border-radius:2px;left:5%}
+.years::before{right:5%;background:rgba(255,246,230,.3)}
+.years::after{width:calc(90% * var(--p,0));background:var(--gold);transition:width .45s cubic-bezier(.3,.8,.3,1)}
+.years button{position:relative;flex:1 1 0;min-width:0;background:none;border:0;padding:20px 0 4px;color:#e8d9bb;font-size:.72rem;font-weight:700;font-variant-numeric:tabular-nums;text-align:center;min-height:44px}
+.years button::before{content:"";position:absolute;top:2px;left:50%;width:11px;height:11px;margin-left:-5.5px;border-radius:50%;background:#6b4a2c;border:2px solid #f3e4c6;transition:transform .3s,background .3s}
+.years button[aria-current="true"]{color:var(--gold)}
+.years button[aria-current="true"]::before{background:var(--gold);transform:scale(1.5);border-color:#000}
+.years button.past::before{background:var(--gold);border-color:#f3e4c6}
 
-section{padding:34px 0 8px}
-section h2{font-size:1.6rem;margin-bottom:6px}
-.hint{color:var(--muted);margin:0 0 14px;font-size:.95rem}
+/* rail */
+.railbox{position:relative}
+.rail{position:relative;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px;padding:30px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain;
+  background:rgba(20,11,5,.56);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);border-block:2px solid rgba(0,0,0,.85)}
+.rail::-webkit-scrollbar{display:none}
+.strip{position:relative;display:flex;gap:14px;padding:0 16px;width:max-content;min-width:100%}
+.hole{position:absolute;left:0;right:0;height:9px;pointer-events:none;
+  background:repeating-linear-gradient(90deg,transparent 0 9px,#efe1c4 9px 21px,transparent 21px 30px);opacity:.85}
+.hole.t{top:-20px}.hole.b{bottom:-20px}
+.frame{position:relative;z-index:2;flex:0 0 min(80vw,300px);scroll-snap-align:start;background:#fbf4e4;color:#2a1a0d;
+  padding:8px 8px 10px;border-radius:3px;box-shadow:0 6px 18px rgba(0,0,0,.45);display:flex;flex-direction:column;
+  transition:transform .4s cubic-bezier(.3,.8,.3,1);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.frame:active{transform:scale(.985)}
+.frame.on{transform:translateY(-4px)}
+.ph{height:128px;background-color:#d8c8a6;background-repeat:no-repeat;background-size:cover;filter:sepia(.55) saturate(.8) brightness(.94) blur(.6px);
+  transition:filter .9s ease;border:1px solid rgba(0,0,0,.18)}
+.frame.on .ph{filter:none}
+.fcap{font-size:.66rem;line-height:1.3;color:#6a5740;margin:4px 0 0;min-height:2.6em}
+.fcap a{color:#6a5740}
+.frow{display:flex;align-items:center;gap:8px;margin-top:6px}
+.fy{font-family:var(--serif);font-weight:700;font-size:1.7rem;line-height:1;color:#8b4a1d}
+.tag{font-size:.64rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#000;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.frame h3{font-size:1.02rem;margin-top:4px;color:#2a1a0d}
+.fline{font-size:.88rem;line-height:1.38;margin:4px 0 2px;color:#3b2a18}
+.fline sup{font-size:.68rem;line-height:0}
+.fline sup a{color:#8b4a1d;font-weight:700;padding:4px 2px;text-decoration:none}
+.more{margin-left:auto;border:1.5px solid #2a1a0d;border-radius:999px;background:transparent;color:#2a1a0d;padding:4px 12px;min-height:36px;font-weight:700;font-size:.8rem}
+.more:hover{background:#2a1a0d;color:#fbf4e4}
+.arrow{display:none;position:absolute;top:50%;z-index:3;width:48px;height:48px;margin-top:-24px;border-radius:50%;border:2px solid #000;background:var(--gold);color:#000;font-size:1.6rem;line-height:1;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.4);align-items:center;justify-content:center;padding:0 0 3px}
+.arrow.l{left:10px}.arrow.r{right:10px}
+.arrow:active{transform:scale(.94)}
+.arrow[disabled]{visibility:hidden}
 
-/* timeline */
-.axis{position:relative;height:34px;margin:18px 4px 12px}
-.axis .bar{position:absolute;left:0;right:0;top:15px;height:4px;border-radius:2px;background:var(--line)}
-.axis .tick{position:absolute;top:11px;width:2px;height:12px;background:var(--muted);transform:translateX(-1px);opacity:.55}
-.axis .mark{position:absolute;top:6px;width:22px;height:22px;margin-left:-11px;border-radius:50%;
-  background:var(--gold);border:3px solid var(--ink);transition:left .35s cubic-bezier(.2,.8,.2,1)}
-.axis .end{position:absolute;top:-14px;font-size:.72rem;color:var(--muted)}
-.axis .end.l{left:0}.axis .end.r{right:0}
-.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:8px;margin:0 0 14px}
-.chip{border:1.5px solid var(--line);background:var(--card);border-radius:12px;padding:8px 4px;min-height:44px;
-  font-weight:700;font-variant-numeric:tabular-nums;text-align:center;line-height:1.15}
-.chip small{display:block;font-weight:500;font-size:.68rem;color:var(--muted)}
-.chip[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink);border-color:var(--ink)}
-.chip[aria-pressed="true"] small{color:var(--gold-ink)}
-.chip.diff:not([aria-pressed="true"]){border-style:dashed;border-color:var(--note)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px;box-shadow:var(--shadow)}
-.card .yr{font-family:"Iowan Old Style",Georgia,serif;font-size:2.6rem;line-height:1;color:var(--teak);font-variant-numeric:tabular-nums}
-.card h3{font-size:1.25rem;margin:6px 0 8px}
-.card p{margin:0 0 10px}
-.diffbox{background:var(--note-bg);border-radius:12px;padding:10px 12px;margin:12px 0;font-size:.93rem}
-.diffbox b{color:var(--note);display:block;margin-bottom:4px}
-.diffbox ul{margin:0;padding-left:18px}
-.diffbox li{margin:3px 0}
-.src{font-size:.82rem;color:var(--muted);margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
-.nav{display:flex;gap:8px;margin-top:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:999px;
-  border:1.5px solid var(--ink);background:transparent;font-weight:600;text-decoration:none;color:var(--ink)}
-.btn.gold{background:var(--gold);color:var(--gold-ink);border-color:var(--gold-ink)}
-.btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
-.btn.small{min-height:40px;padding:6px 14px;font-size:.92rem}
+/* ---------- sections ---------- */
+.sec{padding:clamp(40px,7vw,84px) 0}
+.sw{width:100%;max-width:1240px;margin:0 auto;padding:0 16px}
+.sec h2{font-size:clamp(1.9rem,6.5vw,3.2rem);letter-spacing:-.01em}
+.sub{margin:8px 0 0;color:var(--muted);max-width:44ch}
 
-/* map */
-.place{font-size:.95rem;color:var(--muted);margin:0 0 10px}
-#map{width:100%;height:min(62vh,460px);min-height:340px;border-radius:16px;border:1px solid var(--line);overflow:hidden;background:var(--teak-soft)}
-.maplibregl-ctrl-attrib{font-size:11px}
-.dot{width:26px;height:26px;border-radius:50%;border:3px solid #000;background:var(--gold);padding:0;box-shadow:0 2px 6px rgba(0,0,0,.35)}
-.dot.alt{background:#fff}
-.tree{width:30px;height:30px;border-radius:50%;border:3px solid #fff;background:#1d5a2c;color:#fff;font-weight:700;font-size:.85rem;
-  display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.45);cursor:grab}
-.layerbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
-.layer{border:1.5px solid var(--ink);border-radius:999px;background:var(--card);padding:6px 14px;min-height:40px;font-weight:600}
-.layer[aria-pressed="true"]{background:var(--green);color:#fff;border-color:var(--green)}
+/* grounds */
+.grounds{background:var(--paper)}
+.gg{display:grid;gap:16px;grid-template-areas:"head" "map" "card"}
+.ghead{grid-area:head}
+.mapcol{grid-area:map;position:relative}
+#map{height:min(64vh,520px);min-height:380px;border-radius:14px;overflow:hidden;background:var(--paper2);border:1px solid var(--line);box-shadow:var(--shadow)}
+.chip{position:absolute;left:12px;top:12px;z-index:2;background:var(--gold);color:#000;font-weight:700;font-size:.82rem;border-radius:999px;padding:6px 12px;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .4s,transform .4s}
+.chip.gone{opacity:0;transform:translateY(-6px)}
+.gcard{grid-area:card;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.gcard h3{font-size:1.3rem}
+.hint{color:var(--muted);margin:6px 0 0;font-size:.95rem}
+.layerbar{margin:0 0 10px}
+.layer{border:1.5px solid var(--ink);border-radius:999px;background:var(--card);padding:6px 14px;min-height:40px;font-weight:700}
+.layer[aria-pressed="true"]{background:var(--moss);color:#fff;border-color:var(--moss)}
 @media (prefers-color-scheme:dark){.layer[aria-pressed="true"]{color:#000}}
 .layer b{font-variant-numeric:tabular-nums}
-.prompt{margin-top:12px}
-.prompt h3{font-size:1.3rem}
 .pins{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:6px}
-.pins li{display:flex;justify-content:space-between;gap:8px;font-size:.9rem;font-variant-numeric:tabular-nums;
-  background:var(--bg);border-radius:10px;padding:6px 10px}
+.pins li{display:flex;justify-content:space-between;gap:8px;font-size:.9rem;font-variant-numeric:tabular-nums;background:var(--paper);border-radius:10px;padding:6px 10px}
 .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.place-card{margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--ink);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-weight:700;padding:9px 18px;min-height:44px}
+.btn.gold{background:var(--gold);color:var(--gold-ink);border-color:#000}
+.btn.small{padding:6px 14px;min-height:40px;font-size:.9rem}
+.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
+.place-card{position:absolute;left:10px;right:10px;bottom:10px;z-index:3;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);animation:rise .3s ease both}
 .place-card[hidden]{display:none}
 .place-card h3{font-size:1.1rem;margin-bottom:4px}
+.place-card p{margin:0 0 6px;font-size:.93rem;line-height:1.4}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.mk{display:flex;align-items:center;gap:6px}
+.mk.rev{flex-direction:row-reverse}
+.mk .lab{background:rgba(255,250,240,.95);color:#2a1a0d;font-size:.74rem;font-weight:700;border-radius:6px;padding:2px 7px;box-shadow:0 1px 4px rgba(0,0,0,.3);pointer-events:none;white-space:nowrap}
+.dot{width:28px;height:28px;border-radius:50%;border:3px solid #000;background:var(--gold);padding:0;box-shadow:0 2px 6px rgba(0,0,0,.35);animation:ring 1.2s ease-out 1}
+.dot.alt{background:#fff;animation:none}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(242,183,5,.8)}100%{box-shadow:0 0 0 22px rgba(242,183,5,0)}}
+.tree{position:relative;width:30px;height:30px;border-radius:50%;border:3px solid #fff;background:#1d5a2c;color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.45);cursor:grab;animation:pop .45s cubic-bezier(.3,1.6,.5,1) both}
+.tree::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:2px solid #2f8a45;animation:ripple .8s ease-out 1 both}
+@keyframes pop{from{transform:scale(.2);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes ripple{from{transform:scale(1);opacity:.9}to{transform:scale(2.6);opacity:0}}
+.maplibregl-ctrl-attrib{font-size:11px}
 
-/* Jake */
-.studio p{margin:0 0 12px}
-.links{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
-.links a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow)}
-.links a strong{display:block;color:var(--teak);font-size:1.02rem}
-.links a span{display:block;font-size:.9rem;color:var(--muted);margin-top:2px}
-.links a:active{transform:translateY(1px)}
+/* studio */
+.studio{background:var(--paper2)}
+.tiles{display:grid;gap:16px;margin-top:22px}
+.tile{position:relative;display:block;border-radius:16px;overflow:hidden;text-decoration:none;color:#fff;box-shadow:var(--shadow);aspect-ratio:3/2;background:#111;
+  transition:transform .35s cubic-bezier(.3,.8,.3,1),box-shadow .35s}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.3,.8,.3,1)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,5,3,.88) 100%)}
+.tile:hover{transform:translateY(-4px)}
+.tile:hover img{transform:scale(1.045)}
+.tile:active{transform:scale(.985)}
+.tt{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.tt strong{font-family:var(--serif);font-size:clamp(1.5rem,5vw,2.2rem);line-height:1;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.tt span{font-weight:700;font-size:.82rem;background:var(--gold);color:#000;border-radius:999px;padding:6px 12px;white-space:nowrap;transition:transform .3s}
+.tile:hover .tt span{transform:translateX(4px)}
+.tnote{margin:12px 0 0;font-size:.82rem;color:var(--muted)}
 
-.lunch{padding:30px 0 10px;text-align:center}
-.lunch .btn{font-size:1.1rem;padding:12px 22px}
+/* close band */
+.band{position:relative;isolation:isolate;min-height:clamp(380px,70vh,640px);display:grid;align-items:center;color:#fff6e6;text-align:center;
+  background:#1b130b url(img/teak.jpg) 50% 40%/cover no-repeat fixed}
+.band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(22,11,4,.72),rgba(22,11,4,.42) 45%,rgba(22,11,4,.78))}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;mix-blend-mode:multiply;background:radial-gradient(100% 90% at 50% 40%,rgba(139,74,29,.3),transparent 70%)}
+.band .in{padding:56px 16px}
+.band .kicker{display:block;margin-bottom:10px}
+.band h2{font-size:clamp(2.2rem,8vw,5rem);letter-spacing:-.015em;text-shadow:0 2px 26px rgba(0,0,0,.6)}
+.band .btn{margin-top:26px;font-size:1.12rem;padding:12px 28px;min-height:52px}
+.band .bcred{position:absolute;right:0;bottom:0;font-size:.64rem;background:rgba(22,11,4,.72);color:#d9c9ac;padding:3px 8px;max-width:80%}
+.band .bcred a{color:#ecdcbc}
 
-footer{margin-top:28px;padding:20px 0 40px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+/* sources */
+.sources{background:var(--paper)}
+.sources h2{font-size:1.5rem}
+.sources ol{margin:12px 0 0;padding-left:1.6em;font-size:.88rem;color:var(--muted);columns:1;column-gap:32px}
+.sources li{margin:0 0 6px;break-inside:avoid;scroll-margin-top:20px;padding:2px 4px;border-radius:6px}
+.sources li:target{background:var(--note-bg);color:var(--ink)}
+footer{padding:22px 0 44px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted);background:var(--paper)}
 footer p{margin:0 0 6px}
 .cc{font-size:.8rem}
-@media (min-width:720px){
-  .hero{padding-top:36px}
-  .chips{grid-template-columns:repeat(auto-fill,minmax(84px,1fr))}
+
+/* sheet */
+#veil{position:fixed;inset:0;z-index:50;background:rgba(15,8,3,.6);opacity:0;pointer-events:none;transition:opacity .25s}
+#veil.on{opacity:1;pointer-events:auto}
+#sheet{position:fixed;z-index:51;left:0;right:0;bottom:0;max-height:86vh;overflow:auto;background:var(--card);color:var(--ink);border-radius:20px 20px 0 0;padding:16px 16px 28px;
+  transform:translateY(105%);transition:transform .32s cubic-bezier(.3,.8,.3,1);box-shadow:0 -10px 40px rgba(0,0,0,.4);visibility:hidden}
+#sheet.on{transform:none;visibility:visible}
+#sheet .shph{height:200px;border-radius:10px;background-size:cover;background-repeat:no-repeat;background-color:#d8c8a6}
+#sheet .shcap{font-size:.72rem;color:var(--muted);margin:4px 0 12px}
+#sheet .shy{font-family:var(--serif);font-weight:700;font-size:2rem;color:var(--teak);line-height:1}
+#sheet h3{font-size:1.5rem;margin:4px 0 8px}
+#sheet p{margin:0 0 10px}
+#sheet .x{float:right;margin:0 0 8px 8px}
+.diffbox{background:var(--note-bg);border-left:4px solid var(--gold);border-radius:8px;padding:10px 12px;margin:10px 0;font-size:.92rem}
+.diffbox b{display:block;margin-bottom:4px}
+.diffbox ul{margin:0;padding-left:1.1em}
+.diffbox li{margin:2px 0}
+.note{font-size:.93rem;color:var(--muted)}
+.shsrc{font-size:.86rem;color:var(--muted);margin:12px 0 0}
+.shsrc a{margin-right:4px}
+
+@media (max-width:719px){
+  .hero{background-size:auto 150%;background-position:44% 54%}
 }
-@media (prefers-reduced-motion:reduce){.axis .mark{transition:none}}
+@media (min-width:720px){
+  .frame{flex-basis:340px;padding:10px 10px 12px}
+  .ph{height:185px}
+  .arrow{display:flex}
+  .rail{scroll-padding-inline:24px}
+  .strip{padding:0 24px}
+  .tiles{grid-template-columns:1fr 1fr;gap:24px}
+  .sources ol{columns:2}
+  #sheet{left:50%;right:auto;bottom:5vh;width:min(680px,92vw);border-radius:20px;transform:translate(-50%,120%)}
+  #sheet.on{transform:translate(-50%,0)}
+}
+@media (min-width:1024px){
+  .gg{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);grid-template-areas:"map head" "map card";grid-template-rows:auto 1fr;gap:20px 40px}
+  #map{height:clamp(560px,72vh,720px)}
+  .gcard{align-self:start}
+  .frame{flex-basis:360px}
+  .ph{height:150px}
+  .years button{font-size:.8rem}
+}
+@media (max-height:700px) and (max-width:719px){
+  .ph{height:120px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+@media (pointer:coarse),(prefers-reduced-motion:reduce){
+  .hero,.band{background-attachment:scroll}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
 
-<div class="top">
-  <span class="kicker" data-i="kicker">Made for Amber and Jake Mooney</span>
-  <div class="lang" role="group" aria-label="Language">
-    <button type="button" data-lang="th" aria-pressed="false">ไทย</button>
-    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+<header class="hero" id="top">
+  <div class="hw top">
+    <span class="kicker" data-i="kicker">Made for Amber and Jake Mooney</span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="th" aria-pressed="false">ไทย</button>
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    </div>
   </div>
-</div>
 
-<header class="hero">
-  <h1><span data-i="h1a">137 Pillars House,</span> <em data-i="h1b">then and now</em></h1>
-  <p class="lede" data-i="lede">A teak house on the Ping River in Chiang Mai, told in the years its sources give. Where the sources disagree, the card says so.</p>
-  <!-- MARCUS: ink-and-wash drawing of the teak house seen across the lawn, 3:2, no people, warm teak and green -->
-  <div class="slot" aria-hidden="true"></div>
+  <div class="hw titleblock">
+    <p class="eyebrow" data-i="eyebrow">Chiang Mai · 1883 to 2026</p>
+    <h1><span data-i="h1a">137 Pillars House</span><em data-i="h1b">then and now</em></h1>
+  </div>
+
+  <div class="reel">
+    <div class="hw"><div class="years" id="years" role="group" aria-label="Years"></div></div>
+    <div class="railbox">
+      <div class="rail" id="rail" tabindex="0" aria-label="Filmstrip"></div>
+      <button type="button" class="arrow l" id="prev" aria-label="Earlier">&#8249;</button>
+      <button type="button" class="arrow r" id="next" aria-label="Later">&#8250;</button>
+    </div>
+    <div class="hw"><!-- MARCUS: optional hand-lettered title card for the hero, warm teak and paper --><p class="cred" id="heroCred"></p></div>
+  </div>
 </header>
 
-<section id="timeline" aria-labelledby="t-h">
-  <h2 id="t-h" data-i="tH">Timeline</h2>
-  <p class="hint" data-i="tHint">Tap a year. All years are CE.</p>
-  <div class="axis" aria-hidden="true">
-    <div class="bar"></div><div id="ticks"></div><div class="mark" id="mark"></div>
-    <span class="end l">1880</span><span class="end r">2026</span>
-  </div>
-  <div class="chips" id="chips" role="group" aria-label="Years"></div>
-  <article class="card" id="evt" aria-live="polite"></article>
-  <div class="nav">
-    <button type="button" class="btn small" id="prev" data-i="prev">Earlier</button>
-    <button type="button" class="btn small" id="next" data-i="next">Later</button>
-  </div>
-</section>
-
-<section id="grounds" aria-labelledby="m-h">
-  <h2 id="m-h" data-i="mH">The grounds</h2>
-  <p class="place" data-i="place">137 Pillars House, Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai. Map: OpenStreetMap contributors.</p>
-  <div class="layerbar">
-    <button type="button" class="layer" id="layerBtn" aria-pressed="true"><span data-i="layer">Amber's trees</span> <b id="count">0</b></button>
-  </div>
-  <div id="map" role="application" aria-label="Map of the 137 Pillars House grounds"></div>
-
-  <div class="card place-card" id="placeCard" hidden></div>
-
-  <div class="card prompt" id="prompt">
-    <h3 data-i="pH">Which trees? Tap where they stand and send it to us</h3>
-    <p class="hint" data-i="pHint" style="margin:6px 0 0">The sources on this page say little about the trees. Amber, if a tree stands out in your memory, tap the map where it stands. Drag a pin to move it.</p>
-    <ol class="pins" id="pins"></ol>
-    <div class="row">
-      <a class="btn gold" id="send" href="#" aria-disabled="true" data-i="send">Send the pins to NaN</a>
-      <button type="button" class="btn small" id="undo" data-i="undo">Undo</button>
-      <button type="button" class="btn small" id="clear" data-i="clear">Clear</button>
+<main>
+<section id="grounds" class="sec grounds" aria-labelledby="m-h">
+  <div class="sw">
+    <div class="gg">
+      <div class="ghead">
+        <h2 id="m-h" data-i="mH">The grounds</h2>
+        <p class="sub" data-i="place">137 Pillars House, Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai.</p>
+      </div>
+      <div class="mapcol">
+        <div id="map" role="application" aria-label="Map of the 137 Pillars House grounds"></div>
+        <div class="chip" id="chip" data-i="chip">Tap the map to drop a pin</div>
+        <div class="place-card" id="placeCard" hidden></div>
+      </div>
+      <div class="gcard" id="prompt">
+        <div class="layerbar">
+          <button type="button" class="layer" id="layerBtn" aria-pressed="true"><span data-i="layer">Trees</span> <b id="count" hidden>0</b></button>
+        </div>
+        <h3 data-i="pH">Drop a pin where a tree stands</h3>
+        <p class="hint" data-i="pHint">Amber, if a tree stands out in your memory, tap the map where it stands. Drag a pin to move it.</p>
+        <ol class="pins" id="pins"></ol>
+        <div class="row">
+          <a class="btn gold" id="send" href="#" aria-disabled="true" data-i="send">Send the pins to NaN</a>
+          <button type="button" class="btn small" id="undo" data-i="undo">Undo</button>
+          <button type="button" class="btn small" id="clear" data-i="clear">Clear</button>
+        </div>
+      </div>
     </div>
-    <p class="src" data-i="mapSrc">Source: coordinates from OpenStreetMap, building way 528019091 (137 Pillars House), openstreetmap.org/way/528019091. Museum position: OpenStreetMap way 255987532.</p>
   </div>
 </section>
 
-<section id="studio" class="studio" aria-labelledby="s-h">
-  <h2 id="s-h" data-i="sH">What a drawn explainer does</h2>
-  <p data-i="s1">Jake, a note from one studio to another. A drawn explainer puts a subject on the screen and lets the reader move it: pull a cable, run a tide, weave a thread. A buyer with a long sales cycle can open it on a phone and tap through a technical idea.</p>
-  <p data-i="s2">Two we built, and the studio we built them in.</p>
-  <ul class="links">
-    <li><a href="https://nanobotco.github.io/golden-gate/" target="_blank" rel="noopener"><strong>Golden Gate</strong><span data-i="l1">The bridge drawn by arithmetic. Hang the cable, run the tide wheels, hear the railing sing.</span></a></li>
-    <li><a href="https://nanobotco.github.io/warp-and-weft/" target="_blank" rel="noopener"><strong>Warp and Weft</strong><span data-i="l2">Silk and the arithmetic inside cloth. A loom, ikat, a silkworm's cocoon, in English, Thai and Khmer.</span></a></li>
-    <li><a href="https://hongdam.net/" target="_blank" rel="noopener"><strong>Hongdam</strong><span data-i="l3">Our web studio in Chiang Rai. Bilingual, data-driven platforms.</span></a></li>
-  </ul>
-  <p class="src" data-i="sSrc">Source: the three pages linked above; Green Light Studio's description of its work at greenlightstudio.co.</p>
+<section id="studio" class="sec studio" aria-labelledby="s-h">
+  <div class="sw">
+    <h2 id="s-h" data-i="sH">For Jake</h2>
+    <p class="sub" data-i="s1">Drawn explainers put a technical subject on the screen and let the reader move it. Two of ours.</p>
+    <div class="tiles">
+      <a class="tile" href="https://nanobotco.github.io/golden-gate/" target="_blank" rel="noopener" id="t1">
+        <img src="img/golden-gate.jpg" width="1000" height="667" alt="">
+        <span class="tt"><strong>Golden Gate</strong><span data-i="open">Open</span></span>
+      </a>
+      <a class="tile" href="https://nanobotco.github.io/warp-and-weft/" target="_blank" rel="noopener" id="t2">
+        <img src="img/warp-and-weft.jpg" width="1000" height="667" alt="">
+        <span class="tt"><strong>Warp and Weft</strong><span data-i="open">Open</span></span>
+      </a>
+    </div>
+    <p class="tnote" data-i="tnote">Screenshots of nanobotco.github.io/golden-gate and /warp-and-weft, NaN’s own pages.</p>
+  </div>
 </section>
 
-<div class="lunch">
-  <a class="btn gold" id="lunch" href="mailto:nan@motdang.net?subject=Lunch%20at%20The%20Algonquin%20this%20week%3F" data-i="lunch">Lunch at The Algonquin this week?</a>
-</div>
+<section class="band" id="lunchband">
+  <div class="in">
+    <span class="kicker" data-i="lk">Amber and Jake</span>
+    <h2 data-i="lh">Lunch at The Algonquin</h2>
+    <a class="btn gold" id="lunch" href="mailto:nan@motdang.net?subject=Lunch%20at%20The%20Algonquin%20this%20week%3F" data-i="lunch">This week?</a>
+  </div>
+  <!-- MARCUS: optional drawn menu card or table setting for the lunch band -->
+  <p class="bcred" id="bandCred"></p>
+</section>
+
+<section id="sources" class="sec sources" aria-labelledby="src-h">
+  <div class="sw">
+    <h2 id="src-h" data-i="srcH">Sources</h2>
+    <ol id="srclist"></ol>
+  </div>
+</section>
+</main>
 
 <footer>
-  <p data-i="foot">Made for Amber and Jake Mooney by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a></p>
-  <p><a href="https://motdang.net">motdang.net</a> · <a href="https://hongdam.net">hongdam.net</a></p>
-  <p class="cc" data-i="cc">Map data © OpenStreetMap contributors. Tiles: OpenFreeMap.</p>
+  <div class="sw">
+    <p data-i="foot">Made for Amber and Jake Mooney by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a></p>
+    <p><a href="https://motdang.net">motdang.net</a> · <a href="https://hongdam.net">hongdam.net</a></p>
+    <p class="cc" data-i="cc">Map data © OpenStreetMap contributors. Tiles: OpenFreeMap.</p>
+  </div>
 </footer>
-</div>
+
+<div id="veil"></div>
+<aside id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" tabindex="-1"><div id="shbody"></div></aside>
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <script>
 (function(){
 'use strict';
 
-/* ---------- sources ---------- */
-var S={
- ccl:{n:'Chiang Mai CityLife, 4 Sep 2019',u:'https://chiangmaicitylife.com/citynews/business/teak-wallahs-tour-for-history-buffs/'},
- lux:{n:'The Luxury Editor',u:'https://theluxuryeditor.com/review/137-pillars-house-a-luxurious-oasis-of-heritage-and-hospitality-in-chiang-mai'},
- jdp:{n:'Journal des Palaces, 18 Nov 2011',u:'https://www.journaldespalaces.com/en/pressrelease-36144-137-pillars-house-chiang-mai-from-historic-colonial-residence-to-stunning-30-suite-hotel-opening-january-1st-2012.html'},
- hot:{n:'137 Pillars Hotels, The History of 137 Pillars House, 1 Nov 2021',u:'https://137pillarshotels.com/en/media/press-releases/the-colonial-heritage-of-137-pillars-house'},
- brand:{n:'137 Pillars Hotels, brand story',u:'https://137pillarshotels.com/en/media/press-releases/137-pillars-hotels-resorts-brand-story-the-art-of-refined-luxury-living'},
- phyl:{n:'Phyl On The Go, Jan 2025',u:'https://phylonthego.com/2025/01/137-pillars-house-a-dramatic-revitalization/'},
- att:{n:'Asia Travel Tips',u:'https://www.asiatraveltips.com/news11/2411-PillarsHouse.shtml'},
- don:{n:'Donorbox, 137 Pillars of Hope Chiang Mai',u:'https://donorbox.org/events/960105/steps/choose_tickets'}
+/* ---------- photographs (Wikimedia Commons) ---------- */
+var P={"hero": {"n": "Rijksmuseum", "l": "CC0", "u": "https://commons.wikimedia.org/wiki/File:Werkende_olifanten_in_een_timmerwerkplaats,_Rangoon,_unie_van_Myanmar_(vroeger_Birma),_RP-F-00-6672-3.jpg"}, "raft": {"n": "Internet Archive Book Images", "l": "no known restrictions", "u": "https://commons.wikimedia.org/wiki/File:Afoot_and_afloat_in_Burma_(1922)_(14595393499).jpg"}, "map": {"n": "James McCarthy", "l": "public domain", "u": "https://commons.wikimedia.org/wiki/File:Chiang_Mai_City_Map_(Chiengmai)_1890.png"}, "louis": {"n": "Roderick Eime", "l": "CC BY 2.0", "u": "https://commons.wikimedia.org/wiki/File:Louis_Leonowens.jpg"}, "thaphae": {"n": "Uthai and Phunsap Sonthi", "l": "public domain", "u": "https://commons.wikimedia.org/wiki/File:%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9E%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD_%E0%B9%95%E0%B9%90_%E0%B8%9B%E0%B8%B5%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99_(2497)_%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9E%E0%B8%B9%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C_%E0%B8%AA%E0%B8%99%E0%B8%98%E0%B8%B4.jpg"}, "teak": {"n": "Adam Jones", "l": "CC BY-SA 2.0", "u": "https://commons.wikimedia.org/wiki/File:Teak_Facade_with_Prayer_Flags_-_Wat_Phan_Tao_-_Chiang_Mai_-_Thailand_(34365273743).jpg"}, "japan": {"n": "Pi@k~commonswiki", "l": "CC BY-SA 3.0", "u": "https://commons.wikimedia.org/wiki/File:Japanese_Invasion_of_Thailand_8_Dec_1941.png"}, "museum": {"n": "Christophe95", "l": "CC BY-SA 4.0", "u": "https://commons.wikimedia.org/wiki/File:Wat_Ket_Karam_Museum_1.jpg"}, "garden": {"n": "Christophe95", "l": "CC BY-SA 4.0", "u": "https://commons.wikimedia.org/wiki/File:Garden_of_Wat_Ket_Karam.jpg"}, "ping": {"n": "Christophe95", "l": "CC BY-SA 4.0", "u": "https://commons.wikimedia.org/wiki/File:Ping_River_in_Chiang_Mai_3.jpg"}, "viharn": {"n": "Christophe95", "l": "CC BY-SA 4.0", "u": "https://commons.wikimedia.org/wiki/File:Viharn_of_Wat_Ket_Karam_2.jpg"}, "fog": {"n": "Vyacheslav Argenberg", "l": "CC BY 4.0", "u": "https://commons.wikimedia.org/wiki/File:Ping_River_fog_north_of_Chiang_Mai,_Thailand.jpg"}};
+var PC={
+ en:{hero:'Elephants working in a timber yard, Rangoon, about 1870 to 1900',raft:'Log raft on the Salwin River, Burma, 1922',map:'Chiengmai, from James McCarthy’s survey, 1900',louis:'Louis Leonowens, later in life',thaphae:'Tha Phae Road, Chiang Mai, about 1904',teak:'A teak wall in Chiang Mai, Wat Phan Tao',japan:'Japanese landings in Thailand, 8 December 1941',museum:'Wat Ket Karam museum',garden:'Garden of Wat Ket Karam',ping:'The Ping River, Chiang Mai',viharn:'Viharn of Wat Ket Karam',fog:'The Ping River north of Chiang Mai'},
+ th:{hero:'ช้างลากไม้ในลานไม้ ย่างกุ้ง ราวปี 1870 ถึง 1900',raft:'แพซุงบนแม่น้ำสาละวิน พม่า ปี 1922',map:'แผนที่เชียงใหม่ จากการสำรวจของ James McCarthy ปี 1900',louis:'หลุยส์ ลีโอโนเวนส์ ในวัยหลัง',thaphae:'ถนนท่าแพ เชียงใหม่ ราวปี 1904',teak:'ผนังไม้สักในเชียงใหม่ วัดพันเตา',japan:'ญี่ปุ่นยกพลขึ้นบกในไทย 8 ธันวาคม 1941',museum:'พิพิธภัณฑ์วัดเกตการาม',garden:'สวนวัดเกตการาม',ping:'แม่น้ำปิง เชียงใหม่',viharn:'วิหารวัดเกตการาม',fog:'แม่น้ำปิงเหนือเมืองเชียงใหม่'}
 };
+function pcred(k,lang,withCap){
+  var p=P[k];
+  return (withCap?esc(PC[lang][k])+' · ':'')+'<a href="'+p.u+'" target="_blank" rel="noopener">'+esc(p.n)+', '+esc(p.l)+'</a>';
+}
 
-/* ---------- timeline data (axis = year used for the marker) ---------- */
+/* ---------- sources (numbered) ---------- */
+var S=[
+ {k:'hot',n:'137 Pillars Hotels, The History of 137 Pillars House, 1 Nov 2021',u:'https://137pillarshotels.com/en/media/press-releases/the-colonial-heritage-of-137-pillars-house'},
+ {k:'phyl',n:'Phyl On The Go, Jan 2025',u:'https://phylonthego.com/2025/01/137-pillars-house-a-dramatic-revitalization/'},
+ {k:'ccl',n:'Chiang Mai CityLife, 4 Sep 2019',u:'https://chiangmaicitylife.com/citynews/business/teak-wallahs-tour-for-history-buffs/'},
+ {k:'jdp',n:'Journal des Palaces, 18 Nov 2011',u:'https://www.journaldespalaces.com/en/pressrelease-36144-137-pillars-house-chiang-mai-from-historic-colonial-residence-to-stunning-30-suite-hotel-opening-january-1st-2012.html'},
+ {k:'lux',n:'The Luxury Editor',u:'https://theluxuryeditor.com/review/137-pillars-house-a-luxurious-oasis-of-heritage-and-hospitality-in-chiang-mai'},
+ {k:'brand',n:'137 Pillars Hotels, brand story',u:'https://137pillarshotels.com/en/media/press-releases/137-pillars-hotels-resorts-brand-story-the-art-of-refined-luxury-living'},
+ {k:'att',n:'Asia Travel Tips',u:'https://www.asiatraveltips.com/news11/2411-PillarsHouse.shtml'},
+ {k:'don',n:'Donorbox, 137 Pillars of Hope Chiang Mai',u:'https://donorbox.org/events/960105/steps/choose_tickets'},
+ {k:'osm',n:'OpenStreetMap: building way 528019091 (137 Pillars House), openstreetmap.org/way/528019091; way 255987532 (Wat Ket Karam museum), openstreetmap.org/way/255987532',u:'https://www.openstreetmap.org/way/528019091'}
+];
+var SN={}; S.forEach(function(s,i){SN[s.k]=i+1});
+
+/* ---------- frames ---------- */
+/* ph = photo key; pos/size = crop */
 var E=[
-{id:'1883',ax:1883,y:'1883',diff:false,
- en:{t:'Treaty of Chiang Mai',b:'King Chulalongkorn signs the Treaty of Chiang Mai. Foreign firms, the British Borneo Company among them, may cut teak in northern Thailand.',
+{id:'1883',y:'1883',diff:false,ph:'raft',pos:'50% 62%',
+ en:{t:'Treaty of Chiang Mai',line:'Foreign firms, the Borneo Company among them, may cut teak in northern Thailand.',
+     b:'King Chulalongkorn signs the Treaty of Chiang Mai. Foreign firms, the British Borneo Company among them, may cut teak in northern Thailand.',
      note:'Chiang Mai CityLife dates the company’s arrival in northern Thailand to the late 1870s.'},
- th:{t:'สนธิสัญญาเชียงใหม่',b:'พระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัวทรงลงนามสนธิสัญญาเชียงใหม่ ให้บริษัทต่างชาติ รวมทั้งบริษัทบอร์เนียวของอังกฤษ ทำไม้สักในภาคเหนือของไทยได้',
+ th:{t:'สนธิสัญญาเชียงใหม่',line:'บริษัทต่างชาติ รวมทั้งบริษัทบอร์เนียว ทำไม้สักในภาคเหนือของไทยได้',
+     b:'พระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัวทรงลงนามสนธิสัญญาเชียงใหม่ ให้บริษัทต่างชาติ รวมทั้งบริษัทบอร์เนียวของอังกฤษ ทำไม้สักในภาคเหนือของไทยได้',
      note:'Chiang Mai CityLife ระบุว่าบริษัทเข้ามาภาคเหนือตั้งแต่ปลายทศวรรษ 1870'},
  src:['hot','phyl','ccl']},
-{id:'1886',ax:1886,y:'1886',diff:true,
- en:{t:'Borneo Company office on the Ping',b:'The Borneo Company opens its Chiang Mai office along the Ping River. Louis Leonowens, Anna Leonowens’ son, is its Superintendent.'},
- th:{t:'สำนักงานบริษัทบอร์เนียวริมแม่น้ำปิง',b:'บริษัทบอร์เนียวเปิดสำนักงานเชียงใหม่ริมแม่น้ำปิง หลุยส์ ลีโอโนเวนส์ บุตรชายของแอนนา ลีโอโนเวนส์ เป็นผู้กำกับดูแลสำนักงาน'},
+{id:'1886',y:'1886',diff:true,ph:'map',pos:'95% 26%',size:'300%',
+ en:{t:'Borneo Company office on the Ping',line:'The office opens beside the river. Louis Leonowens is its Superintendent.',
+     b:'The Borneo Company opens its Chiang Mai office along the Ping River. Louis Leonowens, Anna Leonowens’ son, is its Superintendent.'},
+ th:{t:'สำนักงานบริษัทบอร์เนียวริมแม่น้ำปิง',line:'สำนักงานเปิดริมแม่น้ำ หลุยส์ ลีโอโนเวนส์เป็นผู้กำกับดูแล',
+     b:'บริษัทบอร์เนียวเปิดสำนักงานเชียงใหม่ริมแม่น้ำปิง หลุยส์ ลีโอโนเวนส์ บุตรชายของแอนนา ลีโอโนเวนส์ เป็นผู้กำกับดูแลสำนักงาน'},
  src:['hot']},
-{id:'1887',ax:1887,y:'1887',diff:true,
- en:{t:'First company manager',b:'Louis Leonowens is appointed the Borneo Company’s first company manager in Chiang Mai, and the first person to occupy the teak house.'},
- th:{t:'ผู้จัดการบริษัทคนแรก',b:'หลุยส์ ลีโอโนเวนส์ ได้รับแต่งตั้งเป็นผู้จัดการบริษัทบอร์เนียวคนแรกในเชียงใหม่ และเป็นคนแรกที่อยู่ในบ้านไม้สัก'},
+{id:'1887',y:'1887',diff:true,ph:'louis',pos:'50% 24%',
+ en:{t:'First company manager',line:'Louis Leonowens is the first to live in the teak house.',
+     b:'Louis Leonowens is appointed the Borneo Company’s first company manager in Chiang Mai, and the first person to occupy the teak house.'},
+ th:{t:'ผู้จัดการบริษัทคนแรก',line:'หลุยส์ ลีโอโนเวนส์เป็นคนแรกที่อยู่ในบ้านไม้สัก',
+     b:'หลุยส์ ลีโอโนเวนส์ ได้รับแต่งตั้งเป็นผู้จัดการบริษัทบอร์เนียวคนแรกในเชียงใหม่ และเป็นคนแรกที่อยู่ในบ้านไม้สัก'},
  src:['phyl']},
-{id:'1888',ax:1888,y:'1888',diff:true,
- en:{t:'A 100-year lease near Wat Ket',b:'The company obtains a 100-year lease on a large plot near Wat Ket, on the east bank of the Ping River, and sends Louis Leonowens to set up a branch. He builds four teak houses. One becomes the company headquarters.'},
- th:{t:'สัญญาเช่า 100 ปีใกล้วัดเกต',b:'บริษัทได้สัญญาเช่า 100 ปีสำหรับที่ดินผืนใหญ่ใกล้วัดเกต ฝั่งตะวันออกของแม่น้ำปิง และส่งหลุยส์ ลีโอโนเวนส์มาตั้งสาขา เขาสร้างบ้านไม้สักสี่หลัง หลังหนึ่งเป็นที่ทำการใหญ่ของบริษัท'},
+{id:'1888',y:'1888',diff:true,ph:'thaphae',pos:'50% 50%',
+ en:{t:'A 100-year lease near Wat Ket',line:'Four teak houses go up on the east bank. One becomes the headquarters.',
+     b:'The company obtains a 100-year lease on a large plot near Wat Ket, on the east bank of the Ping River, and sends Louis Leonowens to set up a branch. He builds four teak houses. One becomes the company headquarters.'},
+ th:{t:'สัญญาเช่า 100 ปีใกล้วัดเกต',line:'บ้านไม้สักสี่หลังขึ้นที่ฝั่งตะวันออก หลังหนึ่งเป็นที่ทำการใหญ่',
+     b:'บริษัทได้สัญญาเช่า 100 ปีสำหรับที่ดินผืนใหญ่ใกล้วัดเกต ฝั่งตะวันออกของแม่น้ำปิง และส่งหลุยส์ ลีโอโนเวนส์มาตั้งสาขา เขาสร้างบ้านไม้สักสี่หลัง หลังหนึ่งเป็นที่ทำการใหญ่ของบริษัท'},
  src:['ccl']},
-{id:'1889',ax:1889,y:'1889',diff:true,
- en:{t:'The “original 1889 structure”',b:'The hotel’s 2011 announcement calls the house the “original 1889 structure” and says it was the homestead of the manager of the British East Borneo Company.',
+{id:'1889',y:'1889',diff:true,ph:'fog',pos:'50% 55%',
+ en:{t:'The “original 1889 structure”',line:'The hotel’s 2011 announcement dates the house to 1889.',
+     b:'The hotel’s 2011 announcement calls the house the “original 1889 structure” and says it was the homestead of the manager of the British East Borneo Company.',
      note:'The hotel’s history page says the house was moved from the west bank of the Ping River to the company compound. It gives no year.'},
- th:{t:'“โครงสร้างดั้งเดิมปี 1889”',b:'ประกาศข่าวของโรงแรมเมื่อปี 2011 เรียกบ้านว่า “โครงสร้างดั้งเดิมปี 1889” และบอกว่าเป็นบ้านพักของผู้จัดการบริษัท British East Borneo',
+ th:{t:'“โครงสร้างดั้งเดิมปี 1889”',line:'ประกาศของโรงแรมปี 2011 ลงปีบ้านเป็น 1889',
+     b:'ประกาศข่าวของโรงแรมเมื่อปี 2011 เรียกบ้านว่า “โครงสร้างดั้งเดิมปี 1889” และบอกว่าเป็นบ้านพักของผู้จัดการบริษัท British East Borneo',
      note:'หน้าประวัติของโรงแรมบอกว่าบ้านถูกย้ายจากฝั่งตะวันตกของแม่น้ำปิงมาอยู่ในพื้นที่ของบริษัท โดยไม่ระบุปี'},
  src:['jdp','lux','att','hot']},
-{id:'1941',ax:1941,y:'1941',diff:false,
- en:{t:'The war reaches the house',b:'In December, Japan seizes the Borneo Company’s Chiang Mai assets, this house among them. William Bain and David Fleming McFie are arrested and held in Bangkok until the war ends.'},
- th:{t:'สงครามมาถึงบ้านหลังนี้',b:'เดือนธันวาคม ญี่ปุ่นยึดทรัพย์สินของบริษัทบอร์เนียวในเชียงใหม่ รวมทั้งบ้านหลังนี้ วิลเลียม เบน และเดวิด เฟลมมิง แมกฟี ถูกจับและคุมขังที่กรุงเทพฯ จนสงครามสิ้นสุด'},
+{id:'1941',y:'1941',diff:false,ph:'japan',pos:'50% 69%',
+ en:{t:'The war reaches the house',line:'In December Japan seizes the company’s Chiang Mai assets.',
+     b:'In December, Japan seizes the Borneo Company’s Chiang Mai assets, this house among them. William Bain and David Fleming McFie are arrested and held in Bangkok until the war ends.'},
+ th:{t:'สงครามมาถึงบ้านหลังนี้',line:'เดือนธันวาคม ญี่ปุ่นยึดทรัพย์สินของบริษัทในเชียงใหม่',
+     b:'เดือนธันวาคม ญี่ปุ่นยึดทรัพย์สินของบริษัทบอร์เนียวในเชียงใหม่ รวมทั้งบ้านหลังนี้ วิลเลียม เบน และเดวิด เฟลมมิง แมกฟี ถูกจับและคุมขังที่กรุงเทพฯ จนสงครามสิ้นสุด'},
  src:['hot']},
-{id:'bain',ax:1946,y:'After WWII',ys:'after 1945',diff:false,
- en:{t:'The Bain family',b:'The company sells its Chiang Mai headquarters to William Bain, a Scot who rose to Managing Director. His son Jack joins the company and raises his family on the grounds. Jack counts the pillars: 137. He also founds the Wat Ket museum.',
+{id:'bain',y:'1945+',ys:true,diff:false,ph:'museum',pos:'50% 38%',
+ en:{t:'The Bain family',line:'William Bain buys the headquarters. His son Jack counts the pillars: 137.',
+     b:'The company sells its Chiang Mai headquarters to William Bain, a Scot who rose to Managing Director. His son Jack joins the company and raises his family on the grounds. Jack counts the pillars: 137. He also founds the Wat Ket museum.',
      note:'No source gives the year of the sale. Locals call the house Baan Dam, the “Black House”. The hotel’s brand story calls it Baan Borneo.'},
- th:{t:'ครอบครัวเบน',b:'บริษัทขายที่ทำการใหญ่ในเชียงใหม่ให้วิลเลียม เบน ชาวสกอตที่เติบโตขึ้นเป็นกรรมการผู้จัดการ แจ็ก เบน บุตรชายเข้าทำงานในบริษัทและเลี้ยงครอบครัวในบริเวณบ้าน แจ็กนับเสาได้ 137 ต้น และก่อตั้งพิพิธภัณฑ์วัดเกต',
+ th:{t:'ครอบครัวเบน',line:'วิลเลียม เบน ซื้อที่ทำการใหญ่ แจ็กบุตรชายนับเสาได้ 137 ต้น',
+     b:'บริษัทขายที่ทำการใหญ่ในเชียงใหม่ให้วิลเลียม เบน ชาวสกอตที่เติบโตขึ้นเป็นกรรมการผู้จัดการ แจ็ก เบน บุตรชายเข้าทำงานในบริษัทและเลี้ยงครอบครัวในบริเวณบ้าน แจ็กนับเสาได้ 137 ต้น และก่อตั้งพิพิธภัณฑ์วัดเกต',
      note:'ไม่มีแหล่งข้อมูลใดระบุปีที่ขาย คนท้องถิ่นเรียกบ้านว่า “บ้านดำ” (Baan Dam) ส่วนหน้าแบรนด์ของโรงแรมเรียกว่า Baan Borneo'},
  src:['hot','lux','ccl','jdp','brand']},
-{id:'2002',ax:2002,y:'2002',diff:false,
- en:{t:'The Wongphanlert family',b:'Panida Wongphanlert, born in Bangkok, visits Chiang Mai and finds the house. Phyl On The Go reports that she buys it that year with her siblings, from Jack Bain and his older sister. The family turns it into a hotel.'},
- th:{t:'ครอบครัว Wongphanlert',b:'Panida Wongphanlert ผู้เกิดที่กรุงเทพฯ มาเที่ยวเชียงใหม่และพบบ้านหลังนี้ Phyl On The Go รายงานว่าเธอซื้อบ้านในปีนั้นร่วมกับพี่น้อง จาก Jack Bain และพี่สาวของเขา ครอบครัวจึงทำให้เป็นโรงแรม',
+{id:'2002',y:'2002',diff:false,ph:'garden',pos:'50% 55%',
+ en:{t:'The Wongphanlert family',line:'The family finds the house, buys it and makes it a hotel.',
+     b:'Panida Wongphanlert, born in Bangkok, visits Chiang Mai and finds the house. Phyl On The Go reports that she buys it that year with her siblings, from Jack Bain and his older sister. The family turns it into a hotel.',
+     note:'Chiang Mai CityLife says the Bain heirs sold the house to the Wongphanlert family. It gives no year.'},
+ th:{t:'ครอบครัว Wongphanlert',line:'ครอบครัวพบบ้านหลังนี้ ซื้อไว้ และทำเป็นโรงแรม',
+     b:'Panida Wongphanlert ผู้เกิดที่กรุงเทพฯ มาเที่ยวเชียงใหม่และพบบ้านหลังนี้ Phyl On The Go รายงานว่าเธอซื้อบ้านในปีนั้นร่วมกับพี่น้อง จาก Jack Bain และพี่สาวของเขา ครอบครัวจึงทำให้เป็นโรงแรม',
      note:'Chiang Mai CityLife บอกว่าทายาทของเบนขายบ้านให้ครอบครัว Wongphanlert โดยไม่ระบุปี'},
  src:['hot','phyl','ccl']},
-{id:'2012',ax:2012,y:'2012',diff:true,
- en:{t:'The hotel opens: 30 suites',b:'137 Pillars House opens as a 30-suite hotel after a restoration. The opening date differs by source.',
+{id:'2012',y:'2012',diff:true,ph:'ping',pos:'50% 58%',
+ en:{t:'The hotel opens: 30 suites',line:'Opening date, by source: December 2011, January or March 2012.',
+     b:'137 Pillars House opens as a 30-suite hotel after a restoration. The opening date differs by source.',
      list:['Journal des Palaces, 18 Nov 2011: “will open on January 1st, 2012”.','Hotel brand story: opened December 23, 2011.','Phyl On The Go: opened March 2012, after a four-year restoration.']},
- th:{t:'โรงแรม 30 สวีทเปิดให้บริการ',b:'137 Pillars House เปิดเป็นโรงแรม 30 สวีทหลังการบูรณะ แหล่งข้อมูลระบุวันเปิดไม่ตรงกัน',
+ th:{t:'โรงแรม 30 สวีทเปิดให้บริการ',line:'วันเปิดต่างกันตามแหล่งข้อมูล ธันวาคม 2011 มกราคมหรือมีนาคม 2012',
+     b:'137 Pillars House เปิดเป็นโรงแรม 30 สวีทหลังการบูรณะ แหล่งข้อมูลระบุวันเปิดไม่ตรงกัน',
      list:['Journal des Palaces 18 พ.ย. 2011: “จะเปิด 1 มกราคม 2012”','หน้าแบรนด์ของโรงแรม: เปิด 23 ธันวาคม 2011','Phyl On The Go: เปิดมีนาคม 2012 หลังบูรณะสี่ปี']},
  src:['jdp','brand','phyl','att']},
-{id:'2026',ax:2026,y:'2026',diff:false,
- en:{t:'137 Pillars of Hope',b:'18 October, 5 to 10 pm. Philanthropy Connections Foundation and the hotel hold a charity dinner for the 137 children at Baan Unrak. An art exhibition, live and silent auctions, live music and a buffet fill the evening.'},
- th:{t:'137 Pillars of Hope',b:'18 ตุลาคม 17.00 ถึง 22.00 น. Philanthropy Connections Foundation และโรงแรมจัดงานเลี้ยงการกุศลเพื่อเด็ก 137 คนที่ Baan Unrak มีนิทรรศการศิลปะ การประมูลทั้งแบบเปิดและแบบเงียบ ดนตรีสด และบุฟเฟต์'},
+{id:'2026',y:'2026',diff:false,ph:'viharn',pos:'50% 55%',
+ en:{t:'137 Pillars of Hope',line:'18 October, 5 to 10 pm: a charity dinner for the 137 children at Baan Unrak.',
+     b:'18 October, 5 to 10 pm. Philanthropy Connections Foundation and the hotel hold a charity dinner for the 137 children at Baan Unrak. An art exhibition, live and silent auctions, live music and a buffet fill the evening.'},
+ th:{t:'137 Pillars of Hope',line:'18 ตุลาคม 17.00 ถึง 22.00 น. งานเลี้ยงการกุศลเพื่อเด็ก 137 คนที่ Baan Unrak',
+     b:'18 ตุลาคม 17.00 ถึง 22.00 น. Philanthropy Connections Foundation และโรงแรมจัดงานเลี้ยงการกุศลเพื่อเด็ก 137 คนที่ Baan Unrak มีนิทรรศการศิลปะ การประมูลทั้งแบบเปิดและแบบเงียบ ดนตรีสด และบุฟเฟต์'},
  src:['don']}
 ];
-/* disagreement table for the 1886-1889 cluster */
 var CLUSTER=['1886','1887','1888','1889'];
 var TABLE={
  en:{h:'Sources differ on the first years',rows:[
@@ -298,117 +475,165 @@ var TABLE={
 
 /* ---------- ui strings ---------- */
 var T={
-en:{kicker:'Made for Amber and Jake Mooney',h1a:'137 Pillars House,',h1b:'then and now',
- lede:'A teak house on the Ping River in Chiang Mai, told in the years its sources give. Where the sources disagree, the card says so.',
- tH:'Timeline',tHint:'Tap a year. All years are CE.',prev:'Earlier',next:'Later',
- mH:'The grounds',place:'137 Pillars House, Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai. Map: OpenStreetMap contributors.',
- layer:'Amber’s trees',pH:'Which trees? Tap where they stand and send it to us',
- pHint:'The sources on this page say little about the trees. Amber, if a tree stands out in your memory, tap the map where it stands. Drag a pin to move it.',
+en:{kicker:'Made for Amber and Jake Mooney',eyebrow:'Chiang Mai · 1883 to 2026',h1a:'137 Pillars House',h1b:'then and now',
+ mH:'The grounds',place:'137 Pillars House, Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai.',
+ chip:'Tap the map to drop a pin',layer:'Trees',pH:'Drop a pin where a tree stands',
+ pHint:'Amber, if a tree stands out in your memory, tap the map where it stands. Drag a pin to move it.',
  send:'Send the pins to NaN',undo:'Undo',clear:'Clear',
- mapSrc:'Source: coordinates from OpenStreetMap, building way 528019091 (137 Pillars House), openstreetmap.org/way/528019091. Museum position: OpenStreetMap way 255987532.',
- sH:'What a drawn explainer does',
- s1:'Jake, a note from one studio to another. A drawn explainer puts a subject on the screen and lets the reader move it: pull a cable, run a tide, weave a thread. A buyer with a long sales cycle can open it on a phone and tap through a technical idea.',
- s2:'Two we built, and the studio we built them in.',
- l1:'The bridge drawn by arithmetic. Hang the cable, run the tide wheels, hear the railing sing.',
- l2:'Silk and the arithmetic inside cloth. A loom, ikat, a silkworm’s cocoon, in English, Thai and Khmer.',
- l3:'Our web studio in Chiang Rai. Bilingual, data-driven platforms.',
- sSrc:'Source: the three pages linked above; Green Light Studio’s description of its work at greenlightstudio.co.',
- lunch:'Lunch at The Algonquin this week?',
+ sH:'For Jake',s1:'Drawn explainers put a technical subject on the screen and let the reader move it. Two of ours.',
+ open:'Open',tnote:'Screenshots of nanobotco.github.io/golden-gate and /warp-and-weft, NaN’s own pages.',
+ lk:'Amber and Jake',lh:'Lunch at The Algonquin',lunch:'This week?',
+ srcH:'Sources',
  foot:'Made for Amber and Jake Mooney by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a>',
  cc:'Map data © OpenStreetMap contributors. Tiles: OpenFreeMap.',
- source:'Source',sources:'Sources',diffLabel:'Sources differ',
- hotelT:'137 Pillars House',hotelB:'The building OpenStreetMap tags as the hotel. Address: Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai. 30 suites.',hotelS:'Source: OpenStreetMap way 528019091; 137pillarshotels.com; Journal des Palaces.',
- musT:'Wat Ket Karam museum',musB:'A short walk from the hotel. Jack Bain founded it, according to Journal des Palaces and Chiang Mai CityLife.',musS:'Source: OpenStreetMap way 255987532; Journal des Palaces, 18 Nov 2011.',
- close:'Close',pin:'Pin',subj:'Amber’s trees at 137 Pillars House',
- mapFail:'The map did not load. The timeline above works without it.'},
-th:{kicker:'ทำให้ แอมเบอร์และเจค มูนีย์',h1a:'137 Pillars House',h1b:'อดีตและปัจจุบัน',
- lede:'บ้านไม้สักริมแม่น้ำปิง เชียงใหม่ เล่าตามปีที่แหล่งข้อมูลระบุ ปีไหนที่แหล่งข้อมูลไม่ตรงกัน การ์ดจะบอกไว้',
- tH:'ไทม์ไลน์',tHint:'แตะปีเพื่อดูการ์ด ปีทั้งหมดเป็น ค.ศ.',prev:'ก่อนหน้า',next:'ถัดไป',
- mH:'บริเวณบ้าน',place:'137 Pillars House ซอยหน้าวัดเกตุ 1 ตำบลวัดเกต เชียงใหม่ แผนที่: OpenStreetMap contributors',
- layer:'ต้นไม้ของแอมเบอร์',pH:'ต้นไหนบ้าง แตะตรงที่ต้นไม้ยืนอยู่ แล้วส่งมาให้เรา',
- pHint:'แหล่งข้อมูลในหน้านี้พูดถึงต้นไม้น้อยมาก แอมเบอร์คะ ถ้ามีต้นไม้ต้นไหนที่ยังจำได้ แตะบนแผนที่ตรงที่มันยืนอยู่ ลากหมุดเพื่อย้ายได้',
+ source:'Source',sources:'Sources',diffLabel:'Sources differ',detail:'Detail',close:'Close',
+ hotelT:'137 Pillars House',hotelB:'The building OpenStreetMap tags as the hotel. Address: Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai. 30 suites.',hotelS:'Sources 1, 4, 9',
+ musT:'Wat Ket Karam museum',musB:'A short walk from the hotel. Jack Bain founded it, according to Journal des Palaces and Chiang Mai CityLife.',musS:'Sources 3, 4, 9',
+ pin:'Pin',lab1:'137 Pillars House',lab2:'Wat Ket Karam museum',
+ mapFail:'The map did not load. The filmstrip above works without it.',earlier:'Earlier',later:'Later'},
+th:{kicker:'ทำให้ แอมเบอร์และเจค มูนีย์',eyebrow:'เชียงใหม่ · 1883 ถึง 2026',h1a:'137 Pillars House',h1b:'อดีตและปัจจุบัน',
+ mH:'บริเวณบ้าน',place:'137 Pillars House ซอยหน้าวัดเกตุ 1 ตำบลวัดเกต เชียงใหม่',
+ chip:'แตะแผนที่เพื่อปักหมุด',layer:'ต้นไม้',pH:'ปักหมุดตรงที่ต้นไม้ยืนอยู่',
+ pHint:'แอมเบอร์คะ ถ้ามีต้นไม้ต้นไหนที่ยังจำได้ แตะบนแผนที่ตรงที่มันยืนอยู่ ลากหมุดเพื่อย้ายได้',
  send:'ส่งหมุดให้ NaN',undo:'ย้อนกลับ',clear:'ล้าง',
- mapSrc:'ที่มา: พิกัดจาก OpenStreetMap อาคาร way 528019091 (137 Pillars House) openstreetmap.org/way/528019091 ตำแหน่งพิพิธภัณฑ์: OpenStreetMap way 255987532',
- sH:'ภาพวาดอธิบายทำอะไรได้',
- s1:'เจค ข้อความจากสตูดิโอหนึ่งถึงอีกสตูดิโอหนึ่ง ภาพวาดอธิบายวางเรื่องหนึ่งไว้บนหน้าจอ แล้วให้ผู้อ่านขยับเอง ดึงสายเคเบิล หมุนน้ำขึ้นน้ำลง ทอเส้นด้าย ผู้ซื้อที่มีวงจรการขายยาวเปิดดูบนมือถือและแตะไล่ดูแนวคิดทางเทคนิคได้',
- s2:'สองชิ้นที่เราสร้าง และสตูดิโอที่สร้างมัน',
- l1:'สะพานที่วาดด้วยตัวเลข แขวนสายเคเบิล หมุนล้อคำนวณน้ำขึ้นน้ำลง ฟังราวสะพานร้องเพลง',
- l2:'ผ้าไหมกับตัวเลขในเนื้อผ้า กี่ทอ ผ้ามัดหมี่ รังไหมของหนอนไหม มีภาษาอังกฤษ ไทย และเขมร',
- l3:'สตูดิโอเว็บของเราที่เชียงราย แพลตฟอร์มสองภาษาที่ขับเคลื่อนด้วยข้อมูล',
- sSrc:'ที่มา: สามหน้าที่ลิงก์ไว้ข้างบน และคำอธิบายงานของ Green Light Studio ที่ greenlightstudio.co',
- lunch:'มื้อกลางวันที่ The Algonquin สัปดาห์นี้ไหม',
+ sH:'สำหรับเจค',s1:'ภาพวาดอธิบายวางเรื่องเทคนิคไว้บนหน้าจอ แล้วให้ผู้อ่านขยับเอง สองชิ้นของเรา',
+ open:'เปิด',tnote:'ภาพหน้าจอของ nanobotco.github.io/golden-gate และ /warp-and-weft หน้าเว็บของ NaN เอง',
+ lk:'แอมเบอร์และเจค',lh:'มื้อกลางวันที่ The Algonquin',lunch:'สัปดาห์นี้ไหม',
+ srcH:'ที่มา',
  foot:'ทำให้ แอมเบอร์และเจค มูนีย์ โดย NaN · หงส์ดำ เชียงราย · <a href="mailto:nan@motdang.net">nan@motdang.net</a>',
  cc:'ข้อมูลแผนที่ © OpenStreetMap contributors ชุดแผนที่: OpenFreeMap',
- source:'ที่มา',sources:'ที่มา',diffLabel:'แหล่งข้อมูลไม่ตรงกัน',
- hotelT:'137 Pillars House',hotelB:'อาคารที่ OpenStreetMap ระบุว่าเป็นโรงแรม ที่อยู่ ซอยหน้าวัดเกตุ 1 ตำบลวัดเกต เชียงใหม่ 30 สวีท',hotelS:'ที่มา: OpenStreetMap way 528019091; 137pillarshotels.com; Journal des Palaces',
- musT:'พิพิธภัณฑ์วัดเกตการาม',musB:'เดินจากโรงแรมไม่ไกล Jack Bain เป็นผู้ก่อตั้ง ตาม Journal des Palaces และ Chiang Mai CityLife',musS:'ที่มา: OpenStreetMap way 255987532; Journal des Palaces 18 พ.ย. 2011',
- close:'ปิด',pin:'หมุด',subj:'ต้นไม้ของแอมเบอร์ที่ 137 Pillars House',
- mapFail:'แผนที่โหลดไม่ขึ้น ไทม์ไลน์ด้านบนใช้ได้ตามปกติ'}
+ source:'ที่มา',sources:'ที่มา',diffLabel:'แหล่งข้อมูลไม่ตรงกัน',detail:'รายละเอียด',close:'ปิด',
+ hotelT:'137 Pillars House',hotelB:'อาคารที่ OpenStreetMap ระบุว่าเป็นโรงแรม ที่อยู่ ซอยหน้าวัดเกตุ 1 ตำบลวัดเกต เชียงใหม่ 30 สวีท',hotelS:'ที่มา 1, 4, 9',
+ musT:'พิพิธภัณฑ์วัดเกตการาม',musB:'เดินจากโรงแรมไม่ไกล Jack Bain เป็นผู้ก่อตั้ง ตาม Journal des Palaces และ Chiang Mai CityLife',musS:'ที่มา 3, 4, 9',
+ pin:'หมุด',lab1:'137 Pillars House',lab2:'พิพิธภัณฑ์วัดเกตการาม',
+ mapFail:'แผนที่โหลดไม่ขึ้น แถบฟิล์มด้านบนใช้ได้ตามปกติ',earlier:'ก่อนหน้า',later:'ถัดไป'}
 };
 
 var lang=(navigator.language||'en').toLowerCase().indexOf('th')===0?'th':'en';
-var cur=0, map=null, pinsData=[], pinMarkers=[], treesOn=true;
+var cur=0, map=null, pinsData=[], pinMarkers=[], treesOn=true, lastPlace=null, userMoved=false;
 var HOTEL=[99.0040470,18.7918933], MUSEUM=[99.0026516,18.7927416];
+var RM=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function $(id){return document.getElementById(id)}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function each(l,f){Array.prototype.forEach.call(l,f)}
 
-/* ---------- timeline ---------- */
-var AXMIN=1880, AXMAX=2026;
-function pos(y){return ((y-AXMIN)/(AXMAX-AXMIN)*100)}
-function buildTicks(){
-  var h='';E.forEach(function(e){h+='<span class="tick" style="left:'+pos(e.ax)+'%"></span>'});
-  $('ticks').innerHTML=h;
+/* ---------- filmstrip ---------- */
+function bg(e){
+  var s='background-image:url(img/'+e.ph+'.jpg);background-position:'+e.pos;
+  if(e.size) s+=';background-size:'+e.size;
+  return s;
 }
-function buildChips(){
-  var h='';
+function buildRail(){
+  var h='<div class="strip" id="strip"><span class="hole t"></span><span class="hole b"></span>';
   E.forEach(function(e,i){
-    var label=e.ys? (lang==='th'?'หลังสงคราม':'After WWII') : e.y;
-    var small=e.ys? (lang==='th'?'ไม่ระบุปี':'year not given') : '';
-    h+='<button type="button" class="chip'+(e.diff?' diff':'')+'" data-k="'+i+'" aria-pressed="'+(i===cur)+'">'+label+(small?'<small>'+small+'</small>':'')+'</button>';
+    var L=e[lang], yr=e.ys?(lang==='th'?'หลังปี 1945':'After 1945'):e.y;
+    var tag=e.diff?'<span class="tag">'+T[lang].diffLabel+'</span>':'';
+    var srcs=e.src.slice().sort(function(a,b){return SN[a]-SN[b]}).map(function(k){return '<a href="#s'+SN[k]+'" aria-label="'+T[lang].source+' '+SN[k]+'">'+SN[k]+'</a>'}).join(',');
+    h+='<article class="frame" data-k="'+i+'" aria-label="'+esc(yr+' '+L.t)+'">'+
+      '<div class="ph" role="img" aria-label="'+esc(PC[lang][e.ph])+'" style="'+bg(e)+'"></div>'+
+      '<p class="fcap">'+pcred(e.ph,lang,true)+'</p>'+
+      '<div class="frow"><span class="fy">'+esc(yr)+'</span>'+tag+'<button type="button" class="more" data-k="'+i+'">'+T[lang].detail+'</button></div>'+
+      '<h3>'+esc(L.t)+'</h3><p class="fline">'+esc(L.line)+'<sup>'+srcs+'</sup></p>'+
+    '</article>';
   });
-  $('chips').innerHTML=h;
+  $('rail').innerHTML=h+'</div>';
 }
-function showEvent(i,fromTap){
+function buildYears(){
+  var h='';
+  E.forEach(function(e,i){h+='<button type="button" data-k="'+i+'" aria-label="'+esc(e.ys?(lang==='th'?'หลังปี 1945':'After 1945'):e.y)+'">'+e.y+'</button>'});
+  $('years').innerHTML=h;
+}
+function setActive(i){
   cur=Math.max(0,Math.min(E.length-1,i));
-  var e=E[cur], L=e[lang];
-  $('mark').style.left=pos(e.ax)+'%';
-  Array.prototype.forEach.call($('chips').children,function(c,k){c.setAttribute('aria-pressed',String(k===cur))});
-  var yr=e.ys? (lang==='th'?'หลังสงครามโลกครั้งที่ 2':'After WWII') : e.y;
-  var h='<div class="yr">'+esc(yr)+'</div><h3>'+esc(L.t)+'</h3><p>'+esc(L.b)+'</p>';
-  if(L.list){h+='<div class="diffbox"><b>'+T[lang].diffLabel+'</b><ul>'+L.list.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>'}
-  if(CLUSTER.indexOf(e.id)>-1){
-    var t=TABLE[lang];
-    h+='<div class="diffbox"><b>'+esc(t.h)+'</b><ul>'+t.rows.map(function(r){return '<li><strong>'+r[0]+'</strong> '+esc(r[1])+'</li>'}).join('')+'</ul></div>';
-  }
-  if(L.note){h+='<p style="font-size:.93rem;color:var(--muted)">'+esc(L.note)+'</p>'}
-  h+='<div class="src">'+(e.src.length>1?T[lang].sources:T[lang].source)+': '+e.src.map(function(k){return '<a href="'+S[k].u+'" target="_blank" rel="noopener">'+esc(S[k].n)+'</a>'}).join('; ')+'</div>';
-  $('evt').innerHTML=h;
+  each($('rail').querySelectorAll('.frame'),function(f,k){f.classList.toggle('on',k===cur)});
+  each($('years').children,function(b,k){
+    b.setAttribute('aria-current',String(k===cur)); b.classList.toggle('past',k<cur);
+  });
+  $('years').style.setProperty('--p',(cur/(E.length-1)).toFixed(3));
   $('prev').disabled=cur===0; $('next').disabled=cur===E.length-1;
-  $('prev').style.opacity=cur===0?.45:1; $('next').style.opacity=cur===E.length-1?.45:1;
+}
+function padOf(){var st=$('strip');return st?(parseFloat(getComputedStyle(st).paddingLeft)||16):16}
+function frameEl(i){return $('rail').querySelectorAll('.frame')[i]}
+function goTo(i,instant){
+  i=Math.max(0,Math.min(E.length-1,i));
+  var f=frameEl(i), r=$('rail');
+  var pad=padOf();
+  r.scrollTo({left:f.offsetLeft-pad,behavior:(RM||instant)?'auto':'smooth'});
+  setActive(i);
+}
+function onScroll(){
+  var r=$('rail'), fr=r.querySelectorAll('.frame'), pad=padOf();
+  var best=0,bd=1e9;
+  if(r.scrollLeft>=r.scrollWidth-r.clientWidth-3){best=fr.length-1}
+  else{ each(fr,function(f,k){var d=Math.abs(f.offsetLeft-pad-r.scrollLeft); if(d<bd){bd=d;best=k}}); }
+  if(best!==cur) setActive(best);
+}
+
+/* ---------- detail sheet ---------- */
+var lastFocus=null;
+function openSheet(i){
+  var e=E[i], L=e[lang], t=T[lang];
+  var yr=e.ys?(lang==='th'?'หลังปี 1945':'After 1945'):e.y;
+  var h='<button type="button" class="btn small x" id="shx">'+t.close+'</button>'+
+    '<div class="shph" role="img" aria-label="'+esc(PC[lang][e.ph])+'" style="'+bg(e)+'"></div>'+
+    '<p class="shcap">'+pcred(e.ph,lang,true)+'</p>'+
+    '<div class="shy">'+esc(yr)+'</div><h3 id="sh-t">'+esc(L.t)+'</h3><p>'+esc(L.b)+'</p>';
+  if(L.list){h+='<div class="diffbox"><b>'+t.diffLabel+'</b><ul>'+L.list.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>'}
+  if(CLUSTER.indexOf(e.id)>-1){
+    var tb=TABLE[lang];
+    h+='<div class="diffbox"><b>'+esc(tb.h)+'</b><ul>'+tb.rows.map(function(r){return '<li><strong>'+r[0]+'</strong> '+esc(r[1])+'</li>'}).join('')+'</ul></div>';
+  }
+  if(L.note) h+='<p class="note">'+esc(L.note)+'</p>';
+  h+='<p class="shsrc">'+(e.src.length>1?t.sources:t.source)+': '+e.src.map(function(k){var s=S[SN[k]-1];return '<a href="'+s.u+'" target="_blank" rel="noopener">'+SN[k]+'. '+esc(s.n)+'</a>'}).join('; ')+'</p>';
+  $('shbody').innerHTML=h;
+  lastFocus=document.activeElement;
+  $('veil').classList.add('on'); $('sheet').classList.add('on');
+  $('sheet').scrollTop=0;
+  $('shx').onclick=closeSheet;
+  setTimeout(function(){$('shx').focus()},60);
+}
+function closeSheet(){
+  $('veil').classList.remove('on'); $('sheet').classList.remove('on');
+  if(lastFocus&&lastFocus.focus) lastFocus.focus();
+}
+
+/* ---------- sources + credits ---------- */
+function buildSources(){
+  var h='';
+  S.forEach(function(s,i){h+='<li id="s'+(i+1)+'"><a href="'+s.u+'" target="_blank" rel="noopener">'+esc(s.n)+'</a></li>'});
+  $('srclist').innerHTML=h;
+  $('heroCred').innerHTML=pcred('hero',lang,true);
+  $('bandCred').innerHTML=pcred('teak',lang,true);
 }
 
 /* ---------- strings ---------- */
 function applyLang(){
   document.documentElement.lang=lang;
   var t=T[lang];
-  Array.prototype.forEach.call(document.querySelectorAll('[data-i]'),function(el){
+  each(document.querySelectorAll('[data-i]'),function(el){
     var k=el.getAttribute('data-i'); if(t[k]!==undefined){ if(k==='foot') el.innerHTML=t[k]; else el.textContent=t[k]; }
   });
-  Array.prototype.forEach.call(document.querySelectorAll('.lang button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===lang))});
-  buildChips(); showEvent(cur);
+  each(document.querySelectorAll('.lang button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===lang))});
+  $('prev').setAttribute('aria-label',t.earlier); $('next').setAttribute('aria-label',t.later);
+  var keep=cur;
+  buildRail(); buildYears(); buildSources(); setActive(keep);
+  var r=$('rail'); var f=frameEl(keep); if(f) r.scrollLeft=f.offsetLeft-padOf();
   renderPins();
   if(lastPlace) showPlace(lastPlace);
+  $('t1').setAttribute('aria-label','Golden Gate, nanobotco.github.io/golden-gate');
+  $('t2').setAttribute('aria-label','Warp and Weft, nanobotco.github.io/warp-and-weft');
+  each(document.querySelectorAll('.mk .lab.a'),function(l){l.textContent=t.lab1});
+  each(document.querySelectorAll('.mk .lab.b'),function(l){l.textContent=t.lab2});
 }
 
 /* ---------- map ---------- */
-var lastPlace=null;
 function showPlace(which){
   lastPlace=which; var t=T[lang];
   var card=$('placeCard');
   var ti=which==='hotel'?t.hotelT:t.musT, b=which==='hotel'?t.hotelB:t.musB, s=which==='hotel'?t.hotelS:t.musS;
   card.hidden=false;
-  card.innerHTML='<h3>'+esc(ti)+'</h3><p style="margin:0 0 6px">'+esc(b)+'</p><div class="src" style="margin-top:6px">'+esc(s)+'</div><div class="row"><button type="button" class="btn small" id="pcClose">'+t.close+'</button></div>';
+  card.innerHTML='<h3>'+esc(ti)+'</h3><p>'+esc(b)+'</p><p class="note" style="font-size:.8rem;margin:0">'+esc(s)+'</p><div class="row" style="margin-top:8px"><button type="button" class="btn small" id="pcClose">'+t.close+'</button></div>';
   $('pcClose').onclick=function(){lastPlace=null;card.hidden=true};
 }
 function fmt(n){return n.toFixed(5)}
@@ -416,7 +641,7 @@ function renderPins(){
   var ol=$('pins'), h='';
   pinsData.forEach(function(p,i){h+='<li><span>'+T[lang].pin+' '+(i+1)+'</span><span>'+fmt(p.lat)+', '+fmt(p.lng)+'</span></li>'});
   ol.innerHTML=h;
-  $('count').textContent=pinsData.length;
+  $('count').textContent=pinsData.length; $('count').hidden=!pinsData.length;
   var send=$('send');
   if(pinsData.length){
     var body='Amber’s trees at 137 Pillars House, Chiang Mai\n\n';
@@ -434,13 +659,15 @@ function renderPins(){
 function addPin(lng,lat){
   if(pinsData.length>=12) return;
   var p={lng:lng,lat:lat};
-  var el=document.createElement('div'); el.className='tree'; el.textContent=String(pinsData.length+1);
+  var el=document.createElement('div'); el.className='mk';
+  var inner=document.createElement('div'); inner.className='tree'; inner.textContent=String(pinsData.length+1); el.appendChild(inner);
   var m=new maplibregl.Marker({element:el,draggable:true}).setLngLat([lng,lat]);
   if(map){ m.addTo(map); }
   m.on('dragend',function(){var ll=m.getLngLat(); p.lng=ll.lng; p.lat=ll.lat; renderPins();});
   el.addEventListener('click',function(ev){ev.stopPropagation()});
   pinsData.push(p); pinMarkers.push(m);
   if(!treesOn) setTrees(true);
+  $('chip').classList.add('gone');
   renderPins();
 }
 function removeLast(){
@@ -451,10 +678,14 @@ function setTrees(on){
   treesOn=on; $('layerBtn').setAttribute('aria-pressed',String(on));
   pinMarkers.forEach(function(m){m.getElement().style.display=on?'':'none'});
 }
-function makeDot(alt,label,which){
-  var b=document.createElement('button'); b.type='button'; b.className='dot'+(alt?' alt':''); b.setAttribute('aria-label',label);
+function makeDot(alt,which,cls){
+  var wrap=document.createElement('div'); wrap.className='mk'+(which==='hotel'?' rev':'');
+  var b=document.createElement('button'); b.type='button'; b.className='dot'+(alt?' alt':'');
+  b.setAttribute('aria-label',which==='hotel'?'137 Pillars House':'Wat Ket Karam museum');
+  var lab=document.createElement('span'); lab.className='lab '+cls; lab.textContent=which==='hotel'?T[lang].lab1:T[lang].lab2;
+  wrap.appendChild(b); wrap.appendChild(lab);
   b.addEventListener('click',function(ev){ev.stopPropagation(); showPlace(which)});
-  return b;
+  return wrap;
 }
 function initMap(){
   if(typeof maplibregl==='undefined'){ $('map').innerHTML='<p style="padding:16px">'+T[lang].mapFail+'</p>'; return; }
@@ -462,17 +693,18 @@ function initMap(){
     map=new maplibregl.Map({
       container:'map',
       style:'https://tiles.openfreemap.org/styles/liberty',
-      bounds:[[99.00250,18.79165],[99.00440,18.79285]],
-      fitBoundsOptions:{padding:36,maxZoom:18.5},
+      bounds:[[99.00235,18.79160],[99.00455,18.79290]],
+      fitBoundsOptions:{padding:{top:56,bottom:56,left:56,right:56},maxZoom:18.3},
       attributionControl:{compact:true},
-      cooperativeGestures:false
+      scrollZoom:false,
+      fadeDuration:150
     });
     map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
-    new maplibregl.Marker({element:makeDot(false,'137 Pillars House','hotel')}).setLngLat(HOTEL).addTo(map);
-    new maplibregl.Marker({element:makeDot(true,'Wat Ket Karam museum','museum')}).setLngLat(MUSEUM).addTo(map);
+    new maplibregl.Marker({element:makeDot(false,'hotel','a'),anchor:'right',offset:[14,0]}).setLngLat(HOTEL).addTo(map);
+    new maplibregl.Marker({element:makeDot(true,'museum','b'),anchor:'left',offset:[-14,0]}).setLngLat(MUSEUM).addTo(map);
     map.on('click',function(e){
       var tg=e.originalEvent&&e.originalEvent.target;
-      if(tg&&tg.closest&&(tg.closest('.dot')||tg.closest('.tree'))) return;
+      if(tg&&tg.closest&&(tg.closest('.dot')||tg.closest('.tree')||tg.closest('.place-card'))) return;
       addPin(e.lngLat.lng,e.lngLat.lat);
     });
     map.on('error',function(ev){ if(window.console) console.log('map',ev&&ev.error&&ev.error.message); });
@@ -481,12 +713,29 @@ function initMap(){
 }
 
 /* ---------- wiring ---------- */
-$('chips').addEventListener('click',function(ev){
-  var b=ev.target.closest('.chip'); if(b) showEvent(parseInt(b.getAttribute('data-k'),10));
+var rail=$('rail'), tick=false;
+rail.addEventListener('scroll',function(){
+  if(tick) return; tick=true;
+  requestAnimationFrame(function(){tick=false; onScroll()});
+},{passive:true});
+['touchstart','wheel','keydown','pointerdown'].forEach(function(n){rail.addEventListener(n,function(){userMoved=true},{passive:true})});
+rail.addEventListener('click',function(ev){
+  if(ev.target.closest('a')) return;
+  var f=ev.target.closest('.frame'); if(!f) return;
+  openSheet(parseInt(f.getAttribute('data-k'),10));
 });
-$('prev').onclick=function(){showEvent(cur-1)};
-$('next').onclick=function(){showEvent(cur+1)};
-Array.prototype.forEach.call(document.querySelectorAll('.lang button'),function(b){
+rail.addEventListener('keydown',function(ev){
+  if(ev.key==='ArrowRight'){ev.preventDefault();goTo(cur+1)}
+  else if(ev.key==='ArrowLeft'){ev.preventDefault();goTo(cur-1)}
+});
+$('years').addEventListener('click',function(ev){
+  var b=ev.target.closest('button'); if(!b) return; userMoved=true; goTo(parseInt(b.getAttribute('data-k'),10));
+});
+$('prev').onclick=function(){userMoved=true;goTo(cur-1)};
+$('next').onclick=function(){userMoved=true;goTo(cur+1)};
+$('veil').addEventListener('click',closeSheet);
+document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') closeSheet(); });
+each(document.querySelectorAll('.lang button'),function(b){
   b.onclick=function(){lang=b.getAttribute('data-lang'); applyLang()};
 });
 $('layerBtn').onclick=function(){setTrees(!treesOn)};
@@ -494,11 +743,22 @@ $('undo').onclick=removeLast;
 $('clear').onclick=function(){while(pinsData.length) removeLast()};
 $('send').addEventListener('click',function(ev){ if(this.getAttribute('aria-disabled')==='true') ev.preventDefault(); });
 
-buildTicks();
-cur=E.length-1; /* open on the newest card, then settle on the first */
 applyLang();
-showEvent(0);
+setActive(0);
 initMap();
+
+/* a short nudge so the strip reads as swipeable */
+if(!RM){
+  setTimeout(function(){
+    if(userMoved||rail.scrollLeft>4) return;
+    rail.style.scrollSnapType='none';
+    rail.scrollTo({left:90,behavior:'smooth'});
+    setTimeout(function(){
+      if(!userMoved){ rail.scrollTo({left:0,behavior:'smooth'}); }
+      setTimeout(function(){rail.style.scrollSnapType=''},500);
+    },750);
+  },1300);
+}
 })();
 </script>
 </body>
