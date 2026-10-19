@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#12274a">
+<link rel="icon" href="data:,">
 <title>34 schools, one province</title>
 <meta name="description" content="Chiang Mai province's upper-secondary schools on a map, for Eveline Willi and FERC.">
 <meta property="og:type" content="website">
@@ -12,143 +14,399 @@
 <meta property="og:url" content="https://hongdam.net/for/eveline/">
 <meta property="og:image" content="https://hongdam.net/for/eveline/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;800&family=Inter:wght@400;500;600&family=Noto+Sans+Thai:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <style>
 :root{
-  --bg:#faf7f2; --surface:#ffffff; --ink:#1d1a17; --muted:#5e574f; --line:#e3dcd0;
-  --accent:#b3261e; --accent-ink:#ffffff; --gold:#f2b705; --gold-ink:#000000;
-  --pin:#b3261e; --pin-ring:#ffffff; --sel:#f2b705; --boundary:#1d1a17;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 6px 20px rgba(0,0,0,.07);
+  --bg:#ffffff; --paper:#f3f8f2; --ink:#10244a; --muted:#4a5a74; --line:#d9e2ec;
+  --navy:#12274a; --navy-ink:#ffffff; --green:#2e7d4f; --green-soft:#dcefe2; --green-ink:#17492c;
+  --gold:#f2b705; --gold-ink:#000000; --red:#d52b1e;
+  --unlit:#a9b9cf; --pin:#2e7d4f; --pin-ring:#ffffff; --sel:#f2b705; --sel-ring:#12274a; --boundary:#12274a;
+  --shadow:0 1px 2px rgba(16,36,74,.08),0 8px 28px rgba(16,36,74,.10);
+  --display:"Inter Tight","Inter",system-ui,-apple-system,"Noto Sans Thai",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Noto Sans Thai",sans-serif;
+  --panelW:clamp(430px,34vw,560px); --strip:92px;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#16130f; --surface:#1f1b16; --ink:#f4efe7; --muted:#b4aa9c; --line:#352f27;
-    --accent:#ff7a6e; --accent-ink:#000000; --pin:#ff7a6e; --pin-ring:#16130f; --boundary:#f4efe7;
-    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.35);
+  :root{
+    --bg:#0a1630; --paper:#0f1f3f; --ink:#edf2fa; --muted:#a8b6cc; --line:#233659;
+    --navy:#050d1c; --navy-ink:#edf2fa; --green:#6fd08c; --green-soft:#17352f; --green-ink:#bfeccc;
+    --red:#ff6a5c; --unlit:#4b5f84; --pin:#6fd08c; --pin-ring:#0a1630; --sel-ring:#ffffff; --boundary:#bcd0ee;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 28px rgba(0,0,0,.4);
   }
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Iowan Old Style","Times New Roman","Noto Serif Thai",serif;overflow-x:hidden}
-[lang=th] body, body.th{font-family:"Noto Serif Thai","Sarabun",Georgia,serif;line-height:1.7}
-body.th h1{line-height:1.25}
-a{color:var(--accent)}
-.wrap{max-width:760px;margin:0 auto;padding:0 16px}
-.bar{display:flex;justify-content:space-between;align-items:center;padding:14px 0 0;font:600 13px/1 system-ui,-apple-system,"Sarabun",sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
-.lang button{font:600 14px/1 system-ui,"Sarabun",sans-serif;border:0;background:transparent;color:var(--muted);padding:10px 14px;min-height:40px;cursor:pointer}
-.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
-h1{font-size:clamp(40px,11vw,76px);line-height:1.02;margin:28px 0 14px;letter-spacing:-.02em;font-weight:700}
-.lead{font-size:20px;color:var(--ink);margin:0 0 6px;max-width:34em}
-.for{color:var(--muted);margin:0 0 22px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:22px 0 8px}
-.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center;cursor:pointer;font:inherit;color:inherit;box-shadow:var(--shadow)}
-.stat b{display:block;font:700 34px/1.1 Georgia,serif;font-variant-numeric:tabular-nums}
-.stat span{display:block;font:500 13px/1.3 system-ui,"Sarabun",sans-serif;color:var(--muted);margin-top:4px}
-.stat .w{font:700 22px/1.5 Georgia,"Noto Serif Thai",serif}
-.src{font:13px/1.45 system-ui,-apple-system,"Sarabun",sans-serif;color:var(--muted);margin:6px 0}
-.src a{color:var(--muted)}
-section{margin:38px 0}
-h2{font-size:26px;line-height:1.2;margin:0 0 10px;letter-spacing:-.01em}
-.mapbox{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);margin:0 -16px}
-@media(min-width:792px){.mapbox{margin:0}}
-#map{height:min(50vh,440px);min-height:320px;background:#e9e4da}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #map canvas{filter:brightness(.85) contrast(1.05)}}
-.nomap{display:none;padding:18px;color:var(--muted);font:15px/1.5 system-ui,sans-serif}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 16px;margin-top:12px;box-shadow:var(--shadow);min-height:150px}
-.card .k{font:600 12px/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.card h3{margin:0 0 2px;font-size:22px;line-height:1.3}
-.card .sub{color:var(--muted);margin:0 0 10px}
-.card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0 0 12px;font:15px/1.45 system-ui,"Sarabun",sans-serif}
-.card dt{color:var(--muted)}.card dd{margin:0}
-.card .one{margin:0 0 14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:999px;background:var(--gold);color:var(--gold-ink);font:700 16px/1.2 system-ui,"Sarabun",sans-serif;text-decoration:none;border:0;cursor:pointer}
-.btn:focus-visible,.lang button:focus-visible,.stat:focus-visible,.row:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.note{font:14px/1.5 system-ui,"Sarabun",sans-serif;color:var(--muted);margin:10px 0 0}
-.filter{display:flex;gap:8px;margin:14px 0 8px}
-.filter select{flex:1;min-height:44px;font:16px system-ui,"Sarabun",sans-serif;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);padding:0 10px}
-.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.row{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:12px 2px;color:inherit;font:inherit;cursor:pointer;min-height:48px}
-.row small{display:block;font:13px/1.4 system-ui,"Sarabun",sans-serif;color:var(--muted)}
-.row[aria-current=true]{background:color-mix(in srgb,var(--gold) 22%,transparent)}
-.clock{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
-@media(min-width:620px){.clock{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.ev{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-.ev h3{margin:0 0 2px;font-size:18px;line-height:1.3}
-.ev .d{font:14px/1.4 system-ui,"Sarabun",sans-serif;color:var(--muted);margin-bottom:10px}
-.t{display:flex;flex-wrap:wrap;gap:10px;font-variant-numeric:tabular-nums}
-.t div{text-align:center;min-width:44px}
-.t b{display:block;font:700 30px/1.1 Georgia,serif}
-.t span{font:12px/1.2 system-ui,"Sarabun",sans-serif;color:var(--muted)}
-.routes{margin:8px 0 14px;padding-left:20px}
-.routes li{margin:4px 0}
-.slot{border:1.5px dashed var(--line);border-radius:16px;min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font:13px system-ui,sans-serif;margin:0}
-footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;font:14px/1.6 system-ui,-apple-system,"Sarabun",sans-serif;color:var(--muted)}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--body);overflow-x:hidden}
+body.th{line-height:1.7;word-break:auto-phrase}
+[hidden]{display:none!important}
+a{color:var(--green-ink)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.kick{display:flex;align-items:center;gap:8px;font:600 12px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.kick::before{content:"";width:8px;height:8px;background:var(--red);flex:none}
+body.th .kick{letter-spacing:.02em;text-transform:none;font-size:13px}
+h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(30px,5.2vw,52px);line-height:1.04;font-weight:800}
+body.th h1,body.th h2,body.th h3{letter-spacing:0;line-height:1.25}
+sup{font-size:.65em;line-height:0}
+sup a{color:inherit;text-decoration:none;font-weight:600;padding:0 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:999px;background:var(--gold);color:var(--gold-ink);font:600 16px/1.2 var(--body);text-decoration:none;border:0;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:scale(.97)}
+
+/* ---------- hero: the province, lighting up ---------- */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto auto;height:100vh;height:100svh;min-height:600px;max-height:1000px;background:var(--paper);overflow:hidden}
+#map,.sil{position:absolute;left:0;right:0;top:0;bottom:var(--strip);z-index:0}
+.sil{display:block;transition:opacity .6s}
+.sil svg{display:block;width:100%;height:100%}
+.sil.off{opacity:0;pointer-events:none}
+.sil path{fill:var(--green-soft);stroke:var(--boundary);stroke-width:.5;stroke-linejoin:round}
+.sil circle{fill:var(--unlit);stroke:var(--pin-ring);stroke-width:.4;cursor:pointer;transition:r .3s,fill .3s}
+.sil circle.on{fill:var(--pin)}
+.sil circle.sel{fill:var(--sel);stroke:var(--sel-ring);stroke-width:.7}
+#map{opacity:0;transition:opacity .6s}
+#map.ready{opacity:1}
+@media (prefers-color-scheme:dark){#map canvas{filter:brightness(.78) saturate(.85) contrast(1.05)}}
+.top{grid-row:1;position:relative;z-index:3;padding:12px 16px 46px;background:linear-gradient(180deg,var(--bg) 0,var(--bg) 78%,transparent 100%);pointer-events:none}
+.top>*{pointer-events:auto}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--bg)}
+.lang button{font:600 14px/1 var(--body);border:0;background:transparent;color:var(--muted);padding:10px 14px;min-height:40px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--navy);color:var(--navy-ink)}
+.top h1{font-size:clamp(38px,11.4vw,50px);line-height:1;font-weight:800;margin:14px 0 8px;color:var(--ink)}
+.strap{margin:0;font-size:16px;color:var(--muted);max-width:30em}
+.stats{grid-row:4;position:relative;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);background:var(--navy);color:var(--navy-ink);height:var(--strip)}
+.stat{appearance:none;border:0;background:transparent;color:inherit;text-align:center;padding:12px 6px 10px;cursor:pointer;border-right:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;justify-content:center;align-items:center}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:800 clamp(28px,9vw,34px)/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat span{display:block;font:500 11px/1.25 var(--body);margin-top:6px;opacity:.86;max-width:11em}
+.stat:active b{transform:scale(1.08)}
+.stat b{transition:transform .15s}
+.chip{position:absolute;z-index:3;left:12px;bottom:calc(var(--strip) + 38px);max-width:calc(100% - 24px);background:color-mix(in srgb,var(--bg) 92%,transparent);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font:600 13px/1.3 var(--body);color:var(--ink);box-shadow:var(--shadow);pointer-events:none;display:flex;gap:8px;align-items:center}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--pin);flex:none;box-shadow:0 0 0 0 var(--pin)}
+.chip.run i{animation:blip .5s infinite}
+@keyframes blip{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--pin) 60%,transparent)}100%{box-shadow:0 0 0 9px transparent}}
+.card{grid-row:3;position:relative;z-index:4;margin:0 12px 38px;background:var(--bg);border-radius:16px;box-shadow:var(--shadow);padding:14px 14px 14px;border:1px solid var(--line)}
+.card .k{padding-right:44px}
+.card h3{font-size:22px;line-height:1.15;font-weight:800;margin:6px 0 2px;padding-right:40px}
+.card .alt{display:none;color:var(--muted);font-size:14px;margin:0 0 2px}
+.card .sub{margin:0 0 10px;color:var(--muted);font-size:14px;line-height:1.35}
+.card .x{position:absolute;top:6px;right:6px;width:44px;height:44px;border:0;background:transparent;font:400 30px/1 var(--body);color:var(--muted);cursor:pointer;border-radius:50%}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:flex-end}
+.facts .btn{margin-left:auto}
+.facts .cls{display:none}
+.facts div b{display:block;font:800 18px/1.1 var(--display);font-variant-numeric:tabular-nums;white-space:nowrap}
+.facts div span{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.facts .btn{min-height:44px;padding:10px 16px;font-size:14px;white-space:nowrap}
+.panel-hint{display:none}
+
+@media (min-width:1024px){
+  .facts .cls{display:block}
+  .hero{grid-template-columns:var(--panelW) 1fr;grid-template-rows:auto auto 1fr;height:min(100vh,920px);min-height:640px}
+  .hero::before{content:"";grid-column:1;grid-row:1/-1;background:var(--bg);z-index:2;border-right:1px solid var(--line)}
+  #map,.sil{left:var(--panelW);bottom:0}
+  .top{grid-column:1;grid-row:1;background:none;padding:28px 32px 8px}
+  .top h1{font-size:clamp(48px,4.4vw,70px);margin:34px 0 14px}
+  .strap{font-size:19px}
+  .stats{grid-column:1;grid-row:2;background:transparent;color:var(--ink);height:auto;margin:20px 32px 0;border-top:3px solid var(--navy);border-bottom:1px solid var(--line)}
+  .stat{border-right:1px solid var(--line);padding:16px 6px 14px;align-items:flex-start;justify-content:flex-start;text-align:left}
+  .stat:not(:first-child){padding-left:16px}
+  .stat b{font-size:clamp(36px,3.4vw,50px)}
+  .stat span{font-size:12px;opacity:1;color:var(--muted)}
+  .card{grid-column:1;grid-row:3;align-self:end;margin:22px 32px 34px;box-shadow:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:18px 0 0;background:transparent}
+  .card .alt{display:block}
+  .card h3{font-size:28px;padding-right:44px}
+  .facts div b{font-size:24px}
+  .panel-hint{display:block;grid-column:1;grid-row:3;align-self:end;position:relative;z-index:3;margin:22px 32px 34px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted)}
+  .chip{left:calc(var(--panelW) + 16px);bottom:30px}
+}
+@media (min-width:1500px){.hero{height:min(100vh,960px)}}
+
+/* ---------- fixed photo bands ---------- */
+.band{position:relative;isolation:isolate;min-height:clamp(340px,62vh,600px);display:grid;align-items:end;color:#fff;background-color:#10244a;background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed}
+.band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(9,24,54,.9) 0%,rgba(9,24,54,.58) 38%,rgba(9,24,54,.10) 100%)}
+.band .in{max-width:1120px;margin:0 auto;padding:44px 16px 52px;width:100%}
+.band .kick{color:#d8e4f4}
+.band h2{color:#fff;margin:14px 0 10px;max-width:15em;text-shadow:0 2px 24px rgba(0,0,0,.4)}
+.band p{margin:0;font-size:clamp(17px,2.4vw,21px);max-width:28em;color:#f1f5fb}
+.band sup a{color:#fff}
+.cred{position:absolute;right:0;bottom:0;font-size:11px;line-height:1.3;color:#e3ebf6;background:rgba(9,24,54,.78);padding:4px 10px;max-width:90%}
+.cred a{color:#fff}
+@media (pointer:coarse),(prefers-reduced-motion:reduce){.band{background-attachment:scroll}}
+
+/* ---------- sections ---------- */
+.sec{padding:clamp(44px,7vw,92px) 0}
+.sec.alt{background:var(--paper)}
+.lede{margin:10px 0 0;color:var(--muted);max-width:34em}
+
+/* distance dial */
+.dist{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;margin-top:18px}
+.radar{width:100%;max-width:min(560px,100%);margin:0 auto;aspect-ratio:1}
+@media (max-width:899px){.radar{max-width:292px}.sec#distance{padding-top:26px}#distance .lede{font-size:15px;line-height:1.45}.dist{gap:14px;margin-top:10px}.read{padding:12px 14px 10px}.levers{margin-top:10px}.walk{margin-top:8px}}
+.radar svg{width:100%;height:100%;display:block;overflow:visible}
+.radar .ring{fill:none;stroke:var(--line);stroke-width:1}
+.radar .lab{font:500 8.5px var(--body);fill:var(--muted);paint-order:stroke;stroke:var(--bg);stroke-width:3px}
+.radar .cp{font:700 10px var(--body);fill:var(--muted)}
+.radar .city{fill:var(--red)}
+.radar .cl{fill:var(--ink);font-size:9.5px;paint-order:stroke;stroke:var(--bg);stroke-width:3.5px}
+.radar .dot{fill:var(--pin);stroke:var(--pin-ring);stroke-width:1.5;transition:fill .2s}
+.radar .hit{fill:transparent;cursor:pointer}
+.radar g[data-s]:focus-visible .dot{stroke:var(--gold);stroke-width:3}
+.radar g[data-s].on .dot{fill:var(--sel);stroke:var(--sel-ring);stroke-width:2.2}
+.radar g[data-s].pop .dot{animation:pop .5s}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(2.4)}100%{transform:scale(1)}}
+.radar .dot{transform-box:fill-box;transform-origin:center}
+.radar .spoke{stroke:var(--navy);stroke-width:1.6;stroke-linecap:round;fill:none}
+@media (prefers-color-scheme:dark){.radar .spoke{stroke:var(--sel)}}
+.read{background:var(--bg);border:1px solid var(--line);border-top:3px solid var(--navy);padding:16px 16px 14px;box-shadow:var(--shadow)}
+.read h3{font-size:24px;line-height:1.15;font-weight:800}
+.read .alt{margin:2px 0 0;color:var(--muted);font-size:14px}
+.read .sub{margin:2px 0 12px;color:var(--muted);font-size:14px}
+.brow{display:grid;grid-template-columns:96px 1fr auto;gap:10px;align-items:center;margin:6px 0;font-size:14px}
+.brow .trk{height:16px;background:var(--green-soft);border-radius:3px;overflow:hidden}
+.brow .trk i{display:block;height:100%;width:0;background:var(--green);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.brow.road .trk i{background:var(--navy)}
+@media (prefers-color-scheme:dark){.brow.road .trk i{background:var(--sel)}}
+.brow b{font:800 20px/1 var(--display);font-variant-numeric:tabular-nums;min-width:4.4em;text-align:right}
+.read .car{margin:8px 0 0;font-size:14px;color:var(--muted)}
+.levers{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+.pill{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--navy);background:var(--bg);color:var(--ink);font:600 14px/1 var(--body);cursor:pointer}
+.pill:active{transform:scale(.96)}
+@media (prefers-color-scheme:dark){.pill{border-color:var(--boundary)}}
+.walk{display:block;width:100%;margin-top:14px}
+.walk label{display:block;font:600 12px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+body.th .walk label{letter-spacing:0;text-transform:none;font-size:13px}
+.walk input{width:100%;accent-color:var(--green);height:36px}
+.legend{font-size:12.5px;color:var(--muted);margin:8px 0 0;text-align:center}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);margin-right:6px;vertical-align:0}
+@media (min-width:900px){
+  .dist{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:center}
+  .dist .radar{order:0}
+  .dist .side{order:1}
+}
+
+/* districts */
+.dsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:20px}
+.seg{display:inline-flex;border:1.5px solid var(--navy);border-radius:999px;overflow:hidden;margin:16px 0 4px}
+@media (prefers-color-scheme:dark){.seg{border-color:var(--boundary)}}
+.seg button{border:0;background:transparent;min-height:44px;padding:0 18px;font:600 14px/1 var(--body);cursor:pointer;color:var(--ink)}
+.seg button[aria-pressed=true]{background:var(--navy);color:var(--navy-ink)}
+.chart{position:relative;margin-top:10px}
+.crow{position:absolute;left:0;right:0;height:36px;display:grid;grid-template-columns:minmax(118px,36%) 1fr 34px;gap:10px;align-items:center;width:100%;border:0;background:transparent;text-align:left;padding:0;cursor:pointer;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.crow .nm{font-size:13.5px;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.crow .trk{height:18px;background:var(--green-soft);border-radius:3px;overflow:hidden}
+.crow .trk i{display:block;height:100%;width:0;background:var(--green);transition:width .6s cubic-bezier(.2,.8,.2,1),background .2s}
+.crow .v{font:800 15px/1 var(--display);text-align:right;font-variant-numeric:tabular-nums}
+.crow[aria-pressed=true] .trk i{background:var(--gold)}
+.crow[aria-pressed=true] .nm{font-weight:700}
+.crow:active .trk{transform:scaleY(1.25)}
+.dd{margin-top:14px;padding:14px 14px 12px;border:1px solid var(--line);border-left:4px solid var(--gold);background:var(--bg);min-height:64px}
+.dd b{font:800 18px/1.2 var(--display)}
+.dd p{margin:4px 0 10px;color:var(--muted);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{min-height:44px;padding:8px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);font:500 13.5px/1.25 var(--body);text-align:left;cursor:pointer}
+.chips button small{display:block;color:var(--muted);font-size:12px}
+.fig{margin:0}
+.fig img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.fig figcaption{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.4}
+.fig figcaption a{color:var(--muted)}
+@media (min-width:900px){
+  .dsplit{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:start}
+}
+
+/* dates */
+.dates{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:24px}
+.date{display:grid;grid-template-columns:104px 1fr;background:var(--bg);border:1px solid var(--line);box-shadow:var(--shadow);cursor:pointer}
+.dnum{background:var(--navy);color:var(--navy-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 6px;text-align:center}
+.dnum b{font:800 52px/1 var(--display);letter-spacing:-.03em}
+.dnum span{font:700 13px/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+.dnum em{font:500 12px/1.2 var(--body);font-style:normal;opacity:.8;margin-top:3px}
+.dbody{padding:14px 16px 14px}
+.dbody h3{font-size:20px;line-height:1.2;font-weight:800}
+.dbody p{margin:2px 0 10px;color:var(--muted);font-size:14px}
+.t{display:flex;gap:14px;font-variant-numeric:tabular-nums}
+.t div{min-width:40px}
+.t b{display:block;font:800 28px/1.05 var(--display);transition:transform .2s}
+.t span{font-size:11px;color:var(--muted)}
+.date.wk .t div:nth-child(n+3){display:none}
+.ics{display:inline-block;margin-top:10px;font-size:13px;color:var(--green-ink);font-weight:600}
+.dnote{font-size:13px;color:var(--muted);margin:12px 0 0}
+@media (min-width:760px){.dates{grid-template-columns:1fr 1fr}.date{grid-template-columns:128px 1fr}.dnum b{font-size:64px}}
+
+/* give */
+.routes{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
+.route{border:1px solid var(--line);border-top:3px solid var(--green);background:var(--bg);padding:16px}
+.route h3{font-size:19px;font-weight:800}
+.route p{margin:6px 0 0;font-size:15px;color:var(--muted)}
+.proof{margin:18px 0 18px;max-width:42em}
+@media (min-width:760px){.routes{grid-template-columns:repeat(3,1fr)}}
+
+/* lunch */
+.lunch{background:var(--navy);color:var(--navy-ink);padding:clamp(52px,8vw,100px) 0}
+.lunch h2{color:var(--navy-ink);font-size:clamp(44px,9vw,104px);font-weight:800;line-height:.95}
+.lunch p{font-size:clamp(18px,2.6vw,24px);margin:12px 0 26px;color:#dfe8f5}
+.lunch .kick{color:#c9d7ec}
+
+/* ribbon + sources + footer */
+.ribbon{margin:0}
+.ribbon img{display:block;width:100%;height:clamp(110px,22vw,260px);object-fit:cover}
+.ribbon figcaption{max-width:1120px;margin:6px auto 0;padding:0 16px;font-size:12px;color:var(--muted)}
+.ribbon figcaption a{color:var(--muted)}
+.sources{padding:34px 0 8px}
+.sources h2{font-size:22px;font-weight:800;letter-spacing:0}
+.sources ol{margin:10px 0 0;padding-left:22px;font-size:13.5px;line-height:1.5;color:var(--muted);column-gap:40px}
+.sources li{margin:0 0 6px;break-inside:avoid}
+.sources a{color:var(--muted)}
+.sources li:target{background:color-mix(in srgb,var(--gold) 30%,transparent)}
+@media (min-width:900px){.sources ol{columns:2}}
+footer{border-top:1px solid var(--line);margin-top:26px;padding:20px 0 40px;font-size:14px;color:var(--muted)}
 footer a{color:var(--muted)}
-.maplibregl-popup-content{font-family:system-ui,sans-serif}
 .maplibregl-ctrl-attrib{font-size:11px}
+.maplibregl-ctrl-group button{width:40px;height:40px}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="bar"><span id="for-bar" data-i="forbar"></span>
-    <span class="lang" role="group" aria-label="Language"><button id="b-th" type="button" aria-pressed="false">ไทย</button><button id="b-en" type="button" aria-pressed="true">EN</button></span>
+
+<header class="hero" id="top">
+  <div class="sil" id="silw" aria-hidden="true"><svg id="sil"></svg></div>
+  <div id="map" role="application" aria-label="Map of Chiang Mai province with school pins"></div>
+  <div class="top">
+    <div class="bar"><span class="kick" data-i="forbar"></span>
+      <span class="lang" role="group" aria-label="Language"><button id="b-th" type="button" aria-pressed="false">ไทย</button><button id="b-en" type="button" aria-pressed="true">EN</button></span>
+    </div>
+    <h1 data-i="h1">34 schools, one province</h1>
+    <p class="strap"><span data-i="strap"></span><sup><a href="#s1">1</a></sup></p>
   </div>
+  <div class="chip run" id="chip" aria-live="polite"><i></i><span id="chip-t"></span></div>
+  <div class="panel-hint" id="phint" data-i="phint"></div>
+  <div class="card" id="card" hidden aria-live="polite"></div>
+  <div class="stats" aria-label="FERC in numbers">
+    <button class="stat" type="button" data-c="34" data-from="22"><b>34</b><span data-i="st1"></span></button>
+    <button class="stat" type="button" data-c="100" data-from="64" data-p="~"><b>~100</b><span data-i="st2"></span></button>
+    <button class="stat" type="button" data-c="days"><b id="days">40</b><span data-i="st3"></span></button>
+  </div>
+</header>
 
-  <header>
-    <h1 data-i="h1"></h1>
-    <p class="lead" data-i="lead"></p>
-    <p class="for" data-i="for"></p>
-    <!-- MARCUS: a wide photograph of upper-secondary students in northern Thai school uniform, or a hand-drawn Chiang Mai province outline poster; 16:9 slot below -->
-    <div class="stats" aria-label="FERC in numbers">
-      <button class="stat" type="button" data-c="34"><b>0</b><span data-i="st1"></span></button>
-      <button class="stat" type="button" data-c="100" data-p="~"><b>0</b><span data-i="st2"></span></button>
-      <button class="stat" type="button" data-c="w"><b class="w" data-i="st3a"></b><span data-i="st3"></span></button>
+<!-- MARCUS: a hand-drawn Chiang Mai province outline or a student portrait series could sit beside the title on desktop -->
+
+<section class="band" style="background-image:url(img/road.jpg)" aria-labelledby="bh1">
+  <div class="in">
+    <span class="kick" data-i="b1k"></span>
+    <h2 id="bh1" data-i="b1h"></h2>
+    <p><span data-i="b1p"></span><sup><a href="#s1">1</a></sup></p>
+  </div>
+  <div class="cred"><span data-i="roadCap"></span> · Takeaway · <a href="https://commons.wikimedia.org/wiki/File:Chiang_mai_province_road_1263.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener">CC BY 3.0</a></div>
+</section>
+
+<section class="sec" id="distance" aria-labelledby="dh">
+  <div class="wrap">
+    <h3 id="dh" data-i="dH" style="font-size:clamp(26px,4vw,40px);font-weight:800"></h3>
+    <p class="lede" data-i="dP"></p>
+    <div class="dist">
+      <div class="radar">
+        <svg id="radar" viewBox="-205 -205 410 410" role="group" aria-label="Distance dial"></svg>
+      </div>
+      <div class="side">
+        <div class="read" id="read" aria-live="polite"></div>
+        <div class="levers">
+          <button class="pill" type="button" id="l-near" data-i="near"></button>
+          <button class="pill" type="button" id="l-far" data-i="far"></button>
+          <button class="pill" type="button" id="l-any" data-i="any"></button>
+        </div>
+        <div class="walk"><label for="walk" data-i="walk"></label><input type="range" id="walk" min="0" max="49" step="1" value="0"></div>
+      </div>
     </div>
-    <p class="src"><span data-i="srcLabel"></span> <a href="https://chiangmaicitylife.com/clg/living/keeping-rural-kids-in-school-the-woman-behind-ferc-2-0/" target="_blank" rel="noopener">Chiang Mai Citylife, 3 Sep 2026</a></p>
-  </header>
+  </div>
+</section>
 
-  <section aria-labelledby="mh">
-    <h2 id="mh" data-i="mapH"></h2>
-    <p data-i="mapP" style="margin:0 0 12px"></p>
-    <div class="mapbox"><div id="map" role="application" aria-label="Map"></div><div class="nomap" id="nomap" data-i="nomap"></div></div>
-    <div class="card" id="card" aria-live="polite"></div>
-    <p class="note" data-i="mapNote"></p>
-    <div class="filter">
-      <select id="dist" aria-label="District"></select>
+<section class="sec alt" id="districts" aria-labelledby="gh">
+  <div class="wrap">
+    <h2 id="gh" data-i="gH"></h2>
+    <div class="seg" role="group" aria-label="Sort"><button type="button" id="m-n" aria-pressed="true" data-i="mN"></button><button type="button" id="m-r" aria-pressed="false" data-i="mR"></button></div>
+    <p class="lede" id="gl" style="margin-top:6px"></p>
+    <div class="dsplit">
+      <div>
+        <div class="chart" id="chart"></div>
+        <div class="dd" id="dd" aria-live="polite"></div>
+      </div>
+      <figure class="fig">
+        <img src="img/school.jpg" width="1600" height="1200" alt="A school building with a tiered northern Thai roof, flags and a sign at the gate" loading="lazy">
+        <figcaption><span data-i="schoolCap"></span> · Christophe95 · <a href="https://commons.wikimedia.org/wiki/File:School_in_Mae_Hong_Son_1.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+        <!-- MARCUS: student-made art from a FERC school could replace or sit beside this photo -->
+      </figure>
     </div>
-    <ul class="list" id="list"></ul>
-    <p class="src" style="margin-top:12px"><span data-i="srcLabel"></span> <a href="https://gdcatalog.go.th/dataset/gdpublish-obec-school-007" target="_blank" rel="noopener" data-i="srcObec"></a> · <span data-i="srcBase"></span> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>. <span data-i="srcEn"></span></p>
-  </section>
+  </div>
+</section>
 
-  <section aria-labelledby="ch">
-    <h2 id="ch" data-i="cdH"></h2>
-    <div class="clock">
-      <div class="ev"><h3 data-i="ev1"></h3><div class="d" data-i="ev1d"></div>
-        <div class="t" data-cd="2026-11-28T00:00:00+07:00"><div><b>0</b><span data-i="u_d"></span></div><div><b>0</b><span data-i="u_h"></span></div><div><b>0</b><span data-i="u_m"></span></div><div><b>0</b><span data-i="u_s"></span></div></div></div>
-      <div class="ev"><h3 data-i="ev2"></h3><div class="d" data-i="ev2d"></div>
-        <div class="t" data-cd="2026-11-29T00:00:00+07:00"><div><b>0</b><span data-i="u_d"></span></div><div><b>0</b><span data-i="u_h"></span></div><div><b>0</b><span data-i="u_m"></span></div><div><b>0</b><span data-i="u_s"></span></div></div></div>
+<section class="sec" id="dates" aria-labelledby="th2">
+  <div class="wrap">
+    <h2 id="th2" data-i="cdH"></h2>
+    <div class="dates">
+      <article class="date" data-cd="2026-11-28T00:00:00+07:00" data-d="20261128" data-n="1" tabindex="0">
+        <div class="dnum"><b>28</b><span class="mo"></span><em class="wd"></em></div>
+        <div class="dbody"><h3 data-i="ev1"></h3><p data-i="ev1d"></p>
+          <div class="t"><div><b>0</b><span data-i="u_d"></span></div><div><b>00</b><span data-i="u_h"></span></div><div><b>00</b><span data-i="u_m"></span></div><div><b>00</b><span data-i="u_s"></span></div></div>
+          <a class="ics" href="#" data-i="ics"></a></div>
+      </article>
+      <article class="date" data-cd="2026-11-29T00:00:00+07:00" data-d="20261129" data-n="2" tabindex="0">
+        <div class="dnum"><b>29</b><span class="mo"></span><em class="wd"></em></div>
+        <div class="dbody"><h3 data-i="ev2"></h3><p data-i="ev2d"></p>
+          <div class="t"><div><b>0</b><span data-i="u_d"></span></div><div><b>00</b><span data-i="u_h"></span></div><div><b>00</b><span data-i="u_m"></span></div><div><b>00</b><span data-i="u_s"></span></div></div>
+          <a class="ics" href="#" data-i="ics"></a></div>
+      </article>
     </div>
-    <p class="src"><span data-i="srcLabel"></span> <a href="https://chiangmaicitylife.com/clg/living/keeping-rural-kids-in-school-the-woman-behind-ferc-2-0/" target="_blank" rel="noopener">Chiang Mai Citylife, 3 Sep 2026</a>. <span data-i="cdNote"></span></p>
-    <p data-i="md"></p>
-    <p><a class="btn" href="https://motdang.net" target="_blank" rel="noopener">motdang.net</a></p>
-  </section>
+    <p class="dnote"><span data-i="cdNote"></span><sup><a href="#s1">1</a></sup></p>
+  </div>
+</section>
 
-  <section aria-labelledby="gh">
-    <h2 id="gh" data-i="giveH"></h2>
-    <p data-i="giveP"></p>
-    <ul class="routes" id="routes"></ul>
-    <p data-i="giveProof"></p>
-    <p><a class="btn" href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener" data-i="giveBtn"></a></p>
-    <p class="src"><span data-i="srcLabel"></span> <a href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener">fercthailand.org/how-to-donate</a></p>
-  </section>
+<section class="band" style="background-image:url(img/dao.jpg);background-position:center 40%" aria-labelledby="bh2">
+  <div class="in">
+    <span class="kick" data-i="b2k"></span>
+    <h2 id="bh2" data-i="b2h"></h2>
+    <p><span data-i="b2p"></span><sup><a href="#s1">1</a></sup></p>
+  </div>
+  <div class="cred"><span data-i="daoCap"></span> · Takeaway · <a href="https://commons.wikimedia.org/wiki/File:Doi_Chiang_Dao_in_the_clouds.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a></div>
+</section>
 
-  <section aria-labelledby="lh">
-    <h2 id="lh" data-i="lunchH"></h2>
+<section class="sec" id="give" aria-labelledby="wh">
+  <div class="wrap">
+    <h3 id="wh" data-i="wH" style="font-size:clamp(26px,4vw,40px);font-weight:800"></h3>
+    <div class="routes" id="routes"></div>
+    <p class="proof"><span data-i="proof"></span><sup><a href="#s3">3</a></sup></p>
+    <a class="btn" href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener" data-i="giveBtn"></a>
+  </div>
+</section>
+
+<section class="lunch" id="lunch-s" aria-labelledby="lh">
+  <div class="wrap">
+    <span class="kick" data-i="lk"></span>
+    <h2 id="lh" data-i="lunchH" style="margin-top:14px"></h2>
     <p data-i="lunchP"></p>
-    <p><a class="btn" id="lunch" href="#" data-i="lunchBtn"></a></p>
-  </section>
+    <a class="btn" id="lunch" href="#" data-i="lunchBtn"></a>
+  </div>
+</section>
 
+<figure class="ribbon">
+  <img src="img/pano.jpg" width="1600" height="425" alt="Wide view of forested hills and cleared slopes in Mae Chaem District" loading="lazy">
+  <figcaption><span data-i="panoCap"></span> · Takeaway · <a href="https://commons.wikimedia.org/wiki/File:2013_Pano_Mae_Chaem_District_2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a></figcaption>
+</figure>
+
+<div class="wrap">
+  <section class="sources" aria-labelledby="sh">
+    <h2 id="sh" data-i="srcH"></h2>
+    <ol>
+      <li id="s1">Chiang Mai Citylife, <a href="https://chiangmaicitylife.com/clg/living/keeping-rural-kids-in-school-the-woman-behind-ferc-2-0/" target="_blank" rel="noopener">Keeping rural kids in school: the woman behind FERC 2.0</a>, 3 Sep 2026.</li>
+      <li id="s2"><span data-i="s2a"></span> <a href="https://gdcatalog.go.th/dataset/gdpublish-obec-school-007" target="_blank" rel="noopener">OBEC school register, Open Data Common</a>, <span data-i="s2b"></span></li>
+      <li id="s3">FERC Thailand, <a href="https://fercthailand.org/how-to-donate/" target="_blank" rel="noopener">How to donate</a>.</li>
+      <li id="s4"><span data-i="s4a"></span> <a href="https://project-osrm.org" target="_blank" rel="noopener">OSRM</a> <span data-i="s4b"></span> <a href="https://en.wikipedia.org/wiki/Chiang_Mai" target="_blank" rel="noopener">Wikipedia, Chiang Mai</a>.</li>
+      <li id="s5"><span data-i="s5a"></span> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>, <a href="https://maplibre.org" target="_blank" rel="noopener">MapLibre</a>.</li>
+    </ol>
+  </section>
   <footer>
     <div data-i="foot"></div>
     <div><a href="https://motdang.net">motdang.net</a> · <a href="https://hongdam.net">hongdam.net</a></div>
@@ -157,244 +415,450 @@ footer a{color:var(--muted)}
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <script>
-var DATA = {"boundary":[[[98.5328,17.619],[98.5219,17.6808],[98.5254,17.7069],[98.5035,17.7606],[98.5099,17.788],[98.4928,17.8029],[98.4954,17.816],[98.5087,17.8125],[98.522,17.8244],[98.5605,17.7954],[98.5715,17.8089],[98.5815,17.8012],[98.5963,17.8037],[98.6137,17.7804],[98.6238,17.7771],[98.6333,17.7853],[98.6315,17.801],[98.639,17.8148],[98.6691,17.8345],[98.6854,17.791],[98.7127,17.7988],[98.727,17.7936],[98.7428,17.8057],[98.7628,17.8018],[98.7775,17.831],[98.7846,17.8326],[98.7943,17.8238],[98.7973,17.8142],[98.7921,17.8125],[98.8018,17.796],[98.8271,17.7992],[98.8571,17.8146],[98.8518,17.822],[98.852,17.846],[98.8597,17.8557],[98.8704,17.8492],[98.8407,17.9638],[98.83,17.9755],[98.8328,17.9883],[98.8075,18.0086],[98.7868,17.9988],[98.7769,18.0006],[98.7791,18.014],[98.7942,18.0301],[98.7968,18.057],[98.8081,18.0646],[98.8065,18.0728],[98.8136,18.0787],[98.797,18.0861],[98.8092,18.1127],[98.8053,18.1556],[98.7931,18.1597],[98.7827,18.1793],[98.7852,18.221],[98.7724,18.2296],[98.7754,18.2497],[98.7364,18.2667],[98.7202,18.286],[98.7022,18.2914],[98.6838,18.3099],[98.6725,18.3101],[98.6719,18.3268],[98.6883,18.3345],[98.7036,18.3322],[98.6815,18.369],[98.6899,18.391],[98.7095,18.4138],[98.6983,18.4104],[98.6933,18.415],[98.7074,18.4407],[98.7166,18.433],[98.7253,18.4453],[98.7428,18.4313],[98.7647,18.4347],[98.7766,18.4491],[98.798,18.4526],[98.805,18.4629],[98.8143,18.4616],[98.8158,18.472],[98.8378,18.4851],[98.846,18.4994],[98.8593,18.5006],[98.8677,18.5153],[98.8794,18.5105],[98.9147,18.5362],[98.9341,18.542],[98.9325,18.5544],[98.9694,18.6026],[98.9654,18.6152],[98.9783,18.6355],[99.0045,18.6431],[99.0099,18.6733],[99.0652,18.6597],[99.0739,18.667],[99.0762,18.6818],[99.127,18.6834],[99.1357,18.7005],[99.1514,18.7081],[99.1899,18.7051],[99.1887,18.6789],[99.2058,18.6678],[99.2063,18.6601],[99.2339,18.6511],[99.2307,18.6241],[99.2353,18.6169],[99.2229,18.607],[99.2175,18.592],[99.2637,18.5716],[99.2963,18.537],[99.3173,18.5322],[99.3284,18.5456],[99.3321,18.576],[99.3535,18.5794],[99.3487,18.594],[99.3583,18.6077],[99.3484,18.6178],[99.3269,18.6195],[99.3325,18.6501],[99.3491,18.6554],[99.3332,18.6686],[99.3271,18.6848],[99.3368,18.6937],[99.334,18.7021],[99.343,18.7075],[99.3482,18.7353],[99.3715,18.7534],[99.3662,18.7694],[99.371,18.7822],[99.359,18.8014],[99.3504,18.8362],[99.3526,18.8475],[99.377,18.8607],[99.3914,18.8843],[99.3776,18.9217],[99.3867,18.9439],[99.375,18.9597],[99.3761,18.9734],[99.3813,18.9897],[99.4018,19.0001],[99.3813,19.0419],[99.3838,19.0631],[99.3655,19.0692],[99.3603,19.0831],[99.3444,19.0864],[99.3211,19.1236],[99.3194,19.1652],[99.3046,19.1825],[99.3036,19.1936],[99.3145,19.2091],[99.3108,19.2241],[99.343,19.2678],[99.3365,19.284],[99.3393,19.2983],[99.3272,19.3193],[99.3341,19.3305],[99.3343,19.3523],[99.332,19.3781],[99.3231,19.3965],[99.3306,19.3984],[99.3081,19.431],[99.3187,19.4548],[99.3054,19.4746],[99.3078,19.4888],[99.2987,19.487],[99.2945,19.4952],[99.3059,19.5266],[99.3262,19.5391],[99.3168,19.5546],[99.297,19.5612],[99.289,19.581],[99.2928,19.5925],[99.2842,19.6036],[99.267,19.6108],[99.2666,19.6253],[99.2586,19.6291],[99.258,19.6496],[99.2655,19.6648],[99.2968,19.6821],[99.3134,19.7076],[99.3468,19.7123],[99.3489,19.7246],[99.3598,19.7263],[99.3662,19.7682],[99.3615,19.7773],[99.377,19.7792],[99.3804,19.8102],[99.4199,19.814],[99.4206,19.8232],[99.408,19.8318],[99.415,19.8453],[99.3876,19.8653],[99.3814,19.8895],[99.403,19.9147],[99.4204,19.9176],[99.4146,19.9315],[99.4186,19.953],[99.4414,19.9632],[99.4655,20.0054],[99.4783,20.0132],[99.4657,20.0259],[99.4675,20.0341],[99.5052,20.0537],[99.4915,20.0655],[99.4912,20.079],[99.5501,20.1039],[99.5592,20.0981],[99.5708,20.1078],[99.57,20.1226],[99.5206,20.1381],[99.5133,20.1475],[99.4946,20.1333],[99.4982,20.1162],[99.4445,20.0983],[99.4382,20.0906],[99.4172,20.0937],[99.4006,20.086],[99.3784,20.0893],[99.365,20.0993],[99.3511,20.0965],[99.3322,20.1112],[99.2782,20.1166],[99.2464,20.1128],[99.2321,20.125],[99.2233,20.1208],[99.2105,20.1325],[99.192,20.1283],[99.1589,20.133],[99.1261,20.1194],[99.1286,20.1073],[99.1193,20.1011],[99.1005,20.0977],[99.0936,20.1072],[99.0908,20.0975],[99.0778,20.102],[99.0673,20.0878],[99.067,20.0684],[99.0568,20.0629],[99.0444,20.0383],[99.0435,20.0171],[99.0544,20.0034],[99.037,19.9902],[99.032,19.9738],[99.0453,19.9492],[99.0426,19.9313],[99.0218,19.9272],[99.0276,19.909],[99.022,19.9074],[99.0277,19.8809],[99.0229,19.8666],[99.034,19.8555],[99.0147,19.7937],[99.0058,19.788],[98.9964,19.7911],[98.9544,19.7694],[98.9291,19.7735],[98.9114,19.7617],[98.8984,19.7658],[98.8391,19.8136],[98.8325,19.8112],[98.8227,19.7882],[98.7959,19.776],[98.7789,19.7528],[98.7512,19.7604],[98.7377,19.7544],[98.7114,19.7688],[98.7037,19.7579],[98.6662,19.7497],[98.6592,19.7355],[98.6535,19.74],[98.6254,19.7284],[98.6262,19.715],[98.6161,19.7173],[98.6081,19.7091],[98.59,19.7158],[98.5717,19.7041],[98.566,19.6721],[98.5381,19.6893],[98.5288,19.7057],[98.5103,19.7175],[98.5062,19.7101],[98.4677,19.6949],[98.4721,19.6563],[98.4814,19.6547],[98.5043,19.6312],[98.5215,19.6262],[98.5266,19.6137],[98.5402,19.6111],[98.5357,19.6018],[98.5423,19.5585],[98.5659,19.5469],[98.5616,19.5307],[98.5682,19.5076],[98.577,19.5118],[98.5952,19.4897],[98.5925,19.4837],[98.6001,19.4701],[98.5913,19.4629],[98.5845,19.4264],[98.5856,19.4152],[98.5963,19.4073],[98.5879,19.3982],[98.5773,19.3987],[98.573,19.3873],[98.5815,19.3662],[98.5965,19.3625],[98.5901,19.3533],[98.594,19.3397],[98.5891,19.3324],[98.6023,19.3103],[98.5943,19.2892],[98.6049,19.2798],[98.5873,19.2554],[98.5989,19.229],[98.568,19.2099],[98.5856,19.1861],[98.6056,19.1809],[98.6075,19.173],[98.6228,19.1681],[98.6229,19.1577],[98.6383,19.1547],[98.6441,19.1052],[98.6522,19.0943],[98.649,19.0811],[98.6388,19.0664],[98.621,19.0679],[98.595,19.0433],[98.5692,19.0462],[98.5419,19.0262],[98.4396,19.0486],[98.4202,19.0272],[98.4008,19.0364],[98.393,19.0553],[98.3727,19.0666],[98.3718,19.0846],[98.3527,19.0912],[98.3429,19.1225],[98.3497,19.1319],[98.3392,19.1431],[98.3418,19.1516],[98.3204,19.1559],[98.2654,19.152],[98.252,19.1609],[98.2431,19.1535],[98.2405,19.1397],[98.2506,19.1083],[98.2382,19.1023],[98.2086,19.0627],[98.2052,19.0488],[98.1844,19.0318],[98.1859,19.0147],[98.1692,18.9988],[98.1636,18.981],[98.1726,18.9513],[98.1664,18.9395],[98.1566,18.937],[98.1573,18.9202],[98.1436,18.9116],[98.1298,18.9118],[98.0921,18.8702],[98.0784,18.8214],[98.0883,18.8044],[98.0861,18.793],[98.0932,18.7766],[98.1076,18.7802],[98.1219,18.7755],[98.1207,18.7591],[98.0937,18.7383],[98.1022,18.7355],[98.1077,18.7133],[98.1002,18.7039],[98.1073,18.6882],[98.1048,18.677],[98.1127,18.6703],[98.1054,18.6486],[98.1181,18.6345],[98.1437,18.6394],[98.1611,18.6264],[98.1828,18.6252],[98.1824,18.6097],[98.2107,18.6072],[98.2129,18.5909],[98.2274,18.5867],[98.2372,18.5693],[98.232,18.5572],[98.2093,18.538],[98.1752,18.5472],[98.1703,18.5251],[98.1629,18.5248],[98.1543,18.5124],[98.1224,18.5026],[98.1056,18.4583],[98.0827,18.4459],[98.074,18.4294],[98.0826,18.4178],[98.0937,18.4214],[98.1258,18.4064],[98.1228,18.3945],[98.1356,18.3857],[98.1454,18.363],[98.1976,18.3333],[98.2082,18.3076],[98.1933,18.2851],[98.1528,18.2864],[98.1384,18.2812],[98.1356,18.2681],[98.1429,18.2522],[98.139,18.2404],[98.1504,18.2245],[98.169,18.2227],[98.1662,18.2046],[98.1761,18.1921],[98.1666,18.1822],[98.167,18.1682],[98.1558,18.1637],[98.168,18.1412],[98.1629,18.1338],[98.1654,18.1194],[98.1907,18.114],[98.2062,18.0883],[98.2235,18.0902],[98.2303,18.0987],[98.2335,18.0919],[98.2285,18.0885],[98.2427,18.088],[98.2411,18.0791],[98.2473,18.0759],[98.2565,18.0877],[98.2868,18.085],[98.2895,18.0782],[98.2767,18.0525],[98.2638,18.0497],[98.254,18.0266],[98.2431,18.0193],[98.2462,17.9896],[98.1837,17.9812],[98.1799,17.9719],[98.1616,17.9705],[98.1436,17.9354],[98.1334,17.946],[98.1222,17.946],[98.09,17.9633],[98.0346,17.9426],[98.0228,17.9362],[98.0168,17.9201],[98.0119,17.9273],[98.008,17.9219],[98.0104,17.8958],[98.027,17.8886],[98.0324,17.8762],[98.0541,17.8704],[98.0595,17.8577],[98.0696,17.8533],[98.0733,17.8292],[98.0879,17.8084],[98.1087,17.7935],[98.1147,17.7984],[98.1325,17.7967],[98.1472,17.7766],[98.1353,17.7597],[98.1398,17.749],[98.1491,17.7458],[98.1534,17.7297],[98.1453,17.6832],[98.1233,17.6577],[98.0892,17.6372],[98.1015,17.6227],[98.0995,17.6145],[98.1071,17.6112],[98.103,17.6004],[98.1105,17.5927],[98.1061,17.5876],[98.1276,17.5679],[98.1252,17.5589],[98.136,17.5417],[98.1674,17.5477],[98.1785,17.5373],[98.2383,17.5497],[98.2648,17.5786],[98.298,17.5754],[98.3025,17.5669],[98.2982,17.5541],[98.3078,17.5426],[98.3058,17.5326],[98.3143,17.5273],[98.3152,17.5051],[98.3266,17.4897],[98.3297,17.4696],[98.3195,17.445],[98.3263,17.4292],[98.3223,17.4167],[98.2917,17.4074],[98.3192,17.3799],[98.3174,17.3674],[98.3341,17.3479],[98.3322,17.3297],[98.3174,17.3221],[98.3217,17.3107],[98.3398,17.2958],[98.3626,17.2884],[98.358,17.2736],[98.3918,17.2423],[98.3983,17.2521],[98.4299,17.2566],[98.4417,17.271],[98.4537,17.269],[98.4607,17.2759],[98.4787,17.2775],[98.4898,17.2703],[98.5023,17.2801],[98.5179,17.2815],[98.532,17.2745],[98.545,17.283],[98.5744,17.2845],[98.5789,17.2944],[98.5751,17.2999],[98.557,17.2938],[98.5558,17.3143],[98.5611,17.3221],[98.5552,17.3382],[98.5619,17.3518],[98.5374,17.3622],[98.5561,17.3971],[98.5576,17.4266],[98.5462,17.4337],[98.5465,17.4458],[98.5283,17.4536],[98.518,17.48],[98.5244,17.4959],[98.5188,17.5114],[98.5263,17.519],[98.5276,17.5368],[98.5496,17.5593],[98.5635,17.5622],[98.5781,17.5754],[98.567,17.5959],[98.5328,17.619]]],"schools":[{"id":"1050131065","th":"โรงเรียนมัธยมกัลยาณิวัฒนาเฉลิมพระเกียรติ","en":"Matthayom Galyani Vadhana Chaloem Phra Kiat School","amphoe":"กัลยาณิวัฒนา","amphoeEn":"Galyani Vadhana","levels":"ม.1–ม.6","students":232,"area":"สพม.เชียงใหม่","rom":true,"lat":19.060631,"lng":98.264568},{"id":"1050130991","th":"โรงเรียนจอมทอง","en":"Chom Thong School","amphoe":"จอมทอง","amphoeEn":"Chom Thong","levels":"ม.1–ม.6","students":2077,"area":"สพม.เชียงใหม่","rom":true,"lat":18.435573,"lng":98.676942},{"id":"1050130997","th":"โรงเรียนดอยสะเก็ดวิทยาคม","en":"Doi Saket Wittayakhom School","amphoe":"ดอยสะเก็ด","amphoeEn":"Doi Saket","levels":"ม.1–ม.6","students":636,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8841523,"lng":99.1607311},{"id":"1050131023","th":"โรงเรียนสองแคววิทยาคม","en":"Song Khwae Witthayakhom School","amphoe":"ดอยหล่อ","amphoeEn":"Doi Lo","levels":"ม.1–ม.6","students":558,"area":"สพม.เชียงใหม่","rom":false,"lat":18.462316,"lng":98.77686},{"id":"1050131024","th":"โรงเรียนสันติสุข","en":"Santisuk School","amphoe":"ดอยหล่อ","amphoeEn":"Doi Lo","levels":"ม.1–ม.6","students":295,"area":"สพม.เชียงใหม่","rom":false,"lat":18.5399404,"lng":98.7973796},{"id":"1050131015","th":"โรงเรียนดอยเต่าวิทยาคม","en":"Doi Tao Witthayakhom School","amphoe":"ดอยเต่า","amphoeEn":"Doi Tao","levels":"ม.1–ม.6","students":813,"area":"สพม.เชียงใหม่","rom":true,"lat":17.948322,"lng":98.695898},{"id":"1050131005","th":"โรงเรียนฝางชนูปถัมภ์","en":"Fang Chanupatham School","amphoe":"ฝาง","amphoeEn":"Fang","levels":"ม.1–ม.6","students":1682,"area":"สพม.เชียงใหม่","rom":true,"lat":19.910383,"lng":99.20639},{"id":"1050130198","th":"โรงเรียนเทพศิรินทร์ ๙ โครงการหลวงในพระบรมราชูปถัมภ์","en":"Thepsirin 9 Royal Project School","amphoe":"ฝาง","amphoeEn":"Fang","levels":"อ.2–ม.6","students":249,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.899315,"lng":99.04034},{"id":"1050131008","th":"โรงเรียนพร้าววิทยาคม","en":"Phraowittayakom School","amphoe":"พร้าว","amphoeEn":"Phrao","levels":"ม.1–ปวช.3","students":1296,"area":"สพม.เชียงใหม่","rom":false,"lat":19.3407432,"lng":99.1942042},{"id":"1050130531","th":"โรงเรียนบ้านบ่อแก้ว","en":"Ban Bo Kaeo School","amphoe":"สะเมิง","amphoeEn":"Samoeng","levels":"อ.2–ม.6","students":434,"area":"สพป.เชียงใหม่ เขต 2","rom":true,"lat":18.828257,"lng":98.571296},{"id":"1050131004","th":"โรงเรียนสะเมิงพิทยาคม","en":"Samoeng Phitthayakhom School","amphoe":"สะเมิง","amphoeEn":"Samoeng","levels":"ม.1–ม.6","students":589,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8465519,"lng":98.7340772},{"id":"1050131011","th":"โรงเรียนสันกำแพง","en":"San Kamphaeng School","amphoe":"สันกำแพง","amphoeEn":"San Kamphaeng","levels":"ม.1–ม.6","students":2460,"area":"สพม.เชียงใหม่","rom":false,"lat":18.74803,"lng":99.047737},{"id":"1050131025","th":"โรงเรียนศรีสังวาลย์เชียงใหม่","en":"Si Sang Wan Chiang Mai School","amphoe":"สันทราย","amphoeEn":"San Sai","levels":"อ.2–ปวช.3","students":285,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":false,"lat":18.9175667,"lng":98.9991125},{"id":"1050131012","th":"โรงเรียนสันทรายวิทยาคม","en":"San Sai Witthayakhom School","amphoe":"สันทราย","amphoeEn":"San Sai","levels":"ม.1–ม.6","students":1505,"area":"สพม.เชียงใหม่","rom":false,"lat":18.920174,"lng":98.997848},{"id":"1050131009","th":"โรงเรียนสันป่าตองวิทยาคม","en":"San Pa Tong Witthayakhom School","amphoe":"สันป่าตอง","amphoeEn":"San Pa Tong","levels":"ม.1–ม.6","students":2376,"area":"สพม.เชียงใหม่","rom":true,"lat":18.595682,"lng":98.876643},{"id":"1050131010","th":"โรงเรียนเทพศิรินทร์ เชียงใหม่","en":"Thepsirin Chiang Mai School","amphoe":"สันป่าตอง","amphoeEn":"San Pa Tong","levels":"ม.1–ม.6","students":515,"area":"สพม.เชียงใหม่","rom":true,"lat":18.647976,"lng":98.849802},{"id":"1050131018","th":"โรงเรียนสารภีพิทยาคม","en":"Saraphi Phitthayakhom School","amphoe":"สารภี","amphoeEn":"Saraphi","levels":"ม.1–ม.6","students":864,"area":"สพม.เชียงใหม่","rom":true,"lat":18.712828,"lng":99.034374},{"id":"1050131013","th":"โรงเรียนหางดงรัฐราษฎร์อุปถัมภ์","en":"Hang Dong Ratratsadon Upatham School","amphoe":"หางดง","amphoeEn":"Hang Dong","levels":"ม.1–ม.6","students":1184,"area":"สพม.เชียงใหม่","rom":true,"lat":18.679935,"lng":98.919435},{"id":"1050131016","th":"โรงเรียนอมก๋อยวิทยาคม","en":"Omkoi Witthayakhom School","amphoe":"อมก๋อย","amphoeEn":"Omkoi","levels":"ม.1–ม.6","students":1085,"area":"สพม.เชียงใหม่","rom":false,"lat":17.800759,"lng":98.3566339},{"id":"1050131017","th":"โรงเรียนแม่ตื่นวิทยาคม","en":"Mae Tuen Witthayakhom School","amphoe":"อมก๋อย","amphoeEn":"Omkoi","levels":"ม.1–ม.6","students":628,"area":"สพม.เชียงใหม่","rom":true,"lat":17.40463,"lng":98.455215},{"id":"1050131014","th":"โรงเรียนฮอดพิทยาคม","en":"Hot Phitthayakhom School","amphoe":"ฮอด","amphoeEn":"Hot","levels":"ม.1–ม.6","students":1073,"area":"สพม.เชียงใหม่","rom":true,"lat":18.173879,"lng":98.605769},{"id":"1050130797","th":"โรงเรียนแม่โถวิทยาคม","en":"Mae Tho Witthayakhom School","amphoe":"ฮอด","amphoeEn":"Hot","levels":"อ.2–ม.6","students":655,"area":"สพป.เชียงใหม่ เขต 5","rom":true,"lat":18.25,"lng":98.1955},{"id":"1050130996","th":"โรงเรียนศึกษาสงเคราะห์เชียงดาว","en":"Suksa Songkhro Chiang Dao School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ป.1–ม.6","students":487,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":19.4208,"lng":98.9904},{"id":"1050130995","th":"โรงเรียนอรุโณทัยวิทยาคม","en":"Arunothaiwittayakom School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ม.1–ม.6","students":974,"area":"สพม.เชียงใหม่","rom":false,"lat":19.7451413,"lng":98.9653239},{"id":"1050130994","th":"โรงเรียนเชียงดาววิทยาคม","en":"Chiang Dao Witthayakhom School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ม.1–ม.6","students":1082,"area":"สพม.เชียงใหม่","rom":true,"lat":19.407487,"lng":98.973059},{"id":"1050130129","th":"โรงเรียนแกน้อยศึกษา","en":"Kae Noi Suksa School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"อ.2–ม.6","students":704,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.6769063,"lng":98.7863601},{"id":"1050130987","th":"โรงเรียน กาวิละวิทยาลัย","en":"Kawila Wittayalai School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":1083,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7674606,"lng":99.0234519},{"id":"1050130990","th":"โรงเรียนกาวิละอนุกูล","en":"Kawila Anukun School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":383,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.7816,"lng":99.0137},{"id":"1050130984","th":"โรงเรียนยุพราชวิทยาลัย","en":"Yupparaj Wittayalai School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":3684,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7920016,"lng":98.9889052},{"id":"1050130985","th":"โรงเรียนวัฒโนทัยพายัพ","en":"Wattanothai Payap School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":2868,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7849283,"lng":98.9762673},{"id":"1050130989","th":"โรงเรียนสอนคนตาบอดภาคเหนือ","en":"The Northern School for the Blind","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":140,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":false,"lat":18.7875122,"lng":98.978741},{"id":"1050130986","th":"โรงเรียนหอพระ","en":"Hopra School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":560,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7917976,"lng":98.9808079},{"id":"1050130988","th":"โรงเรียนโสตศึกษาอนุสารสุนทร","en":"Sotsuksa Anusan Sunthon School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":225,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.8037,"lng":98.98},{"id":"1050131019","th":"โรงเรียนเวียงแหงวิทยาคม","en":"Wiang Haeng Witthayakhom School","amphoe":"เวียงแหง","amphoeEn":"Wiang Haeng","levels":"ม.1–ม.6","students":838,"area":"สพม.เชียงใหม่","rom":true,"lat":19.576253,"lng":98.625087},{"id":"1050131002","th":"โรงเรียนนวมินทราชูทิศ พายัพ","en":"Navamindarajudis Phayap School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ม.1–ม.6","students":1763,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8435702,"lng":98.9603006},{"id":"1050131003","th":"โรงเรียนศึกษาสงเคราะห์เชียงใหม่","en":"Suksa Songkhro Chiang Mai School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ป.1–ม.6","students":797,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.8542,"lng":98.9656},{"id":"1050131001","th":"โรงเรียนแม่ริมวิทยาคม","en":"Mae Rim Witayakom School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ม.1–ม.6","students":1569,"area":"สพม.เชียงใหม่","rom":false,"lat":18.9157202,"lng":98.9367129},{"id":"1050131021","th":"โรงเรียนบ้านกาดวิทยาคม","en":"Ban Kat Witthayakhom School","amphoe":"แม่วาง","amphoeEn":"Mae Wang","levels":"ม.1–ม.6","students":654,"area":"สพม.เชียงใหม่","rom":true,"lat":18.606739,"lng":98.815807},{"id":"1050130925","th":"โรงเรียนแม่วินสามัคคี","en":"Mae Win Samakkhi School","amphoe":"แม่วาง","amphoeEn":"Mae Wang","levels":"อ.2–ม.6","students":602,"area":"สพป.เชียงใหม่ เขต 4","rom":false,"lat":18.657457,"lng":98.673258},{"id":"1050131022","th":"โรงเรียนแม่ออนวิทยาลัย","en":"Mae On Witthayalai School","amphoe":"แม่ออน","amphoeEn":"Mae On","levels":"ม.1–ม.6","students":308,"area":"สพม.เชียงใหม่","rom":true,"lat":18.749392,"lng":99.230221},{"id":"1050130493","th":"โรงเรียนบ้านสันต้นหมื้อ","en":"Ban San Ton Mue School","amphoe":"แม่อาย","amphoeEn":"Mae Ai","levels":"อ.1–ม.6","students":572,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.955274,"lng":99.260415},{"id":"1050131007","th":"โรงเรียนราชประชานุเคราะห์ 30","en":"Ratchaprachanukro 30 School","amphoe":"แม่อาย","amphoeEn":"Mae Ai","levels":"อ.2–ม.6","students":903,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":20.0326,"lng":99.2692},{"id":"1050130325","th":"โรงเรียนบ้านปางอุ๋ง","en":"Ban Pang Ung School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"อ.2–ม.6","students":493,"area":"สพป.เชียงใหม่ เขต 6","rom":true,"lat":18.79831,"lng":98.112087},{"id":"1050130345","th":"โรงเรียนบ้านแม่แฮเหนือ","en":"Ban Mae Hae Nuea School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"อ.2–ม.6","students":739,"area":"สพป.เชียงใหม่ เขต 6","rom":true,"lat":18.791181,"lng":98.531078},{"id":"1050130993","th":"โรงเรียนราชประชานุเคราะห์ 31","en":"Ratchaprachanukro 31 School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"ป.1–ม.6","students":830,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.524,"lng":98.3939},{"id":"1050130992","th":"โรงเรียนแม่แจ่ม","en":"Mae Chaem School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"ม.1–ม.6","students":1283,"area":"สพม.เชียงใหม่","rom":true,"lat":18.504116,"lng":98.369024},{"id":"1050131000","th":"โรงเรียนสันป่ายางวิทยาคม","en":"San Pa Yang Witthayakhom School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":182,"area":"สพม.เชียงใหม่","rom":true,"lat":19.049671,"lng":98.87178},{"id":"1050130999","th":"โรงเรียนแม่หอพระวิทยาคม","en":"Mae Ho Phra School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":200,"area":"สพม.เชียงใหม่","rom":false,"lat":19.1110669,"lng":99.0281021},{"id":"1050130998","th":"โรงเรียนแม่แตง","en":"Mae Taeng School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":784,"area":"สพม.เชียงใหม่","rom":true,"lat":19.109989,"lng":98.93021},{"id":"1050131020","th":"โรงเรียนไชยปราการ","en":"Chai Prakan School","amphoe":"ไชยปราการ","amphoeEn":"Chai Prakan","levels":"ม.1–ม.6","students":508,"area":"สพม.เชียงใหม่","rom":true,"lat":19.72485,"lng":99.138639}]};
+var DATA = {"boundary":[[[98.5328,17.619],[98.5219,17.6808],[98.5254,17.7069],[98.5035,17.7606],[98.5099,17.788],[98.4928,17.8029],[98.4954,17.816],[98.5087,17.8125],[98.522,17.8244],[98.5605,17.7954],[98.5715,17.8089],[98.5815,17.8012],[98.5963,17.8037],[98.6137,17.7804],[98.6238,17.7771],[98.6333,17.7853],[98.6315,17.801],[98.639,17.8148],[98.6691,17.8345],[98.6854,17.791],[98.7127,17.7988],[98.727,17.7936],[98.7428,17.8057],[98.7628,17.8018],[98.7775,17.831],[98.7846,17.8326],[98.7943,17.8238],[98.7973,17.8142],[98.7921,17.8125],[98.8018,17.796],[98.8271,17.7992],[98.8571,17.8146],[98.8518,17.822],[98.852,17.846],[98.8597,17.8557],[98.8704,17.8492],[98.8407,17.9638],[98.83,17.9755],[98.8328,17.9883],[98.8075,18.0086],[98.7868,17.9988],[98.7769,18.0006],[98.7791,18.014],[98.7942,18.0301],[98.7968,18.057],[98.8081,18.0646],[98.8065,18.0728],[98.8136,18.0787],[98.797,18.0861],[98.8092,18.1127],[98.8053,18.1556],[98.7931,18.1597],[98.7827,18.1793],[98.7852,18.221],[98.7724,18.2296],[98.7754,18.2497],[98.7364,18.2667],[98.7202,18.286],[98.7022,18.2914],[98.6838,18.3099],[98.6725,18.3101],[98.6719,18.3268],[98.6883,18.3345],[98.7036,18.3322],[98.6815,18.369],[98.6899,18.391],[98.7095,18.4138],[98.6983,18.4104],[98.6933,18.415],[98.7074,18.4407],[98.7166,18.433],[98.7253,18.4453],[98.7428,18.4313],[98.7647,18.4347],[98.7766,18.4491],[98.798,18.4526],[98.805,18.4629],[98.8143,18.4616],[98.8158,18.472],[98.8378,18.4851],[98.846,18.4994],[98.8593,18.5006],[98.8677,18.5153],[98.8794,18.5105],[98.9147,18.5362],[98.9341,18.542],[98.9325,18.5544],[98.9694,18.6026],[98.9654,18.6152],[98.9783,18.6355],[99.0045,18.6431],[99.0099,18.6733],[99.0652,18.6597],[99.0739,18.667],[99.0762,18.6818],[99.127,18.6834],[99.1357,18.7005],[99.1514,18.7081],[99.1899,18.7051],[99.1887,18.6789],[99.2058,18.6678],[99.2063,18.6601],[99.2339,18.6511],[99.2307,18.6241],[99.2353,18.6169],[99.2229,18.607],[99.2175,18.592],[99.2637,18.5716],[99.2963,18.537],[99.3173,18.5322],[99.3284,18.5456],[99.3321,18.576],[99.3535,18.5794],[99.3487,18.594],[99.3583,18.6077],[99.3484,18.6178],[99.3269,18.6195],[99.3325,18.6501],[99.3491,18.6554],[99.3332,18.6686],[99.3271,18.6848],[99.3368,18.6937],[99.334,18.7021],[99.343,18.7075],[99.3482,18.7353],[99.3715,18.7534],[99.3662,18.7694],[99.371,18.7822],[99.359,18.8014],[99.3504,18.8362],[99.3526,18.8475],[99.377,18.8607],[99.3914,18.8843],[99.3776,18.9217],[99.3867,18.9439],[99.375,18.9597],[99.3761,18.9734],[99.3813,18.9897],[99.4018,19.0001],[99.3813,19.0419],[99.3838,19.0631],[99.3655,19.0692],[99.3603,19.0831],[99.3444,19.0864],[99.3211,19.1236],[99.3194,19.1652],[99.3046,19.1825],[99.3036,19.1936],[99.3145,19.2091],[99.3108,19.2241],[99.343,19.2678],[99.3365,19.284],[99.3393,19.2983],[99.3272,19.3193],[99.3341,19.3305],[99.3343,19.3523],[99.332,19.3781],[99.3231,19.3965],[99.3306,19.3984],[99.3081,19.431],[99.3187,19.4548],[99.3054,19.4746],[99.3078,19.4888],[99.2987,19.487],[99.2945,19.4952],[99.3059,19.5266],[99.3262,19.5391],[99.3168,19.5546],[99.297,19.5612],[99.289,19.581],[99.2928,19.5925],[99.2842,19.6036],[99.267,19.6108],[99.2666,19.6253],[99.2586,19.6291],[99.258,19.6496],[99.2655,19.6648],[99.2968,19.6821],[99.3134,19.7076],[99.3468,19.7123],[99.3489,19.7246],[99.3598,19.7263],[99.3662,19.7682],[99.3615,19.7773],[99.377,19.7792],[99.3804,19.8102],[99.4199,19.814],[99.4206,19.8232],[99.408,19.8318],[99.415,19.8453],[99.3876,19.8653],[99.3814,19.8895],[99.403,19.9147],[99.4204,19.9176],[99.4146,19.9315],[99.4186,19.953],[99.4414,19.9632],[99.4655,20.0054],[99.4783,20.0132],[99.4657,20.0259],[99.4675,20.0341],[99.5052,20.0537],[99.4915,20.0655],[99.4912,20.079],[99.5501,20.1039],[99.5592,20.0981],[99.5708,20.1078],[99.57,20.1226],[99.5206,20.1381],[99.5133,20.1475],[99.4946,20.1333],[99.4982,20.1162],[99.4445,20.0983],[99.4382,20.0906],[99.4172,20.0937],[99.4006,20.086],[99.3784,20.0893],[99.365,20.0993],[99.3511,20.0965],[99.3322,20.1112],[99.2782,20.1166],[99.2464,20.1128],[99.2321,20.125],[99.2233,20.1208],[99.2105,20.1325],[99.192,20.1283],[99.1589,20.133],[99.1261,20.1194],[99.1286,20.1073],[99.1193,20.1011],[99.1005,20.0977],[99.0936,20.1072],[99.0908,20.0975],[99.0778,20.102],[99.0673,20.0878],[99.067,20.0684],[99.0568,20.0629],[99.0444,20.0383],[99.0435,20.0171],[99.0544,20.0034],[99.037,19.9902],[99.032,19.9738],[99.0453,19.9492],[99.0426,19.9313],[99.0218,19.9272],[99.0276,19.909],[99.022,19.9074],[99.0277,19.8809],[99.0229,19.8666],[99.034,19.8555],[99.0147,19.7937],[99.0058,19.788],[98.9964,19.7911],[98.9544,19.7694],[98.9291,19.7735],[98.9114,19.7617],[98.8984,19.7658],[98.8391,19.8136],[98.8325,19.8112],[98.8227,19.7882],[98.7959,19.776],[98.7789,19.7528],[98.7512,19.7604],[98.7377,19.7544],[98.7114,19.7688],[98.7037,19.7579],[98.6662,19.7497],[98.6592,19.7355],[98.6535,19.74],[98.6254,19.7284],[98.6262,19.715],[98.6161,19.7173],[98.6081,19.7091],[98.59,19.7158],[98.5717,19.7041],[98.566,19.6721],[98.5381,19.6893],[98.5288,19.7057],[98.5103,19.7175],[98.5062,19.7101],[98.4677,19.6949],[98.4721,19.6563],[98.4814,19.6547],[98.5043,19.6312],[98.5215,19.6262],[98.5266,19.6137],[98.5402,19.6111],[98.5357,19.6018],[98.5423,19.5585],[98.5659,19.5469],[98.5616,19.5307],[98.5682,19.5076],[98.577,19.5118],[98.5952,19.4897],[98.5925,19.4837],[98.6001,19.4701],[98.5913,19.4629],[98.5845,19.4264],[98.5856,19.4152],[98.5963,19.4073],[98.5879,19.3982],[98.5773,19.3987],[98.573,19.3873],[98.5815,19.3662],[98.5965,19.3625],[98.5901,19.3533],[98.594,19.3397],[98.5891,19.3324],[98.6023,19.3103],[98.5943,19.2892],[98.6049,19.2798],[98.5873,19.2554],[98.5989,19.229],[98.568,19.2099],[98.5856,19.1861],[98.6056,19.1809],[98.6075,19.173],[98.6228,19.1681],[98.6229,19.1577],[98.6383,19.1547],[98.6441,19.1052],[98.6522,19.0943],[98.649,19.0811],[98.6388,19.0664],[98.621,19.0679],[98.595,19.0433],[98.5692,19.0462],[98.5419,19.0262],[98.4396,19.0486],[98.4202,19.0272],[98.4008,19.0364],[98.393,19.0553],[98.3727,19.0666],[98.3718,19.0846],[98.3527,19.0912],[98.3429,19.1225],[98.3497,19.1319],[98.3392,19.1431],[98.3418,19.1516],[98.3204,19.1559],[98.2654,19.152],[98.252,19.1609],[98.2431,19.1535],[98.2405,19.1397],[98.2506,19.1083],[98.2382,19.1023],[98.2086,19.0627],[98.2052,19.0488],[98.1844,19.0318],[98.1859,19.0147],[98.1692,18.9988],[98.1636,18.981],[98.1726,18.9513],[98.1664,18.9395],[98.1566,18.937],[98.1573,18.9202],[98.1436,18.9116],[98.1298,18.9118],[98.0921,18.8702],[98.0784,18.8214],[98.0883,18.8044],[98.0861,18.793],[98.0932,18.7766],[98.1076,18.7802],[98.1219,18.7755],[98.1207,18.7591],[98.0937,18.7383],[98.1022,18.7355],[98.1077,18.7133],[98.1002,18.7039],[98.1073,18.6882],[98.1048,18.677],[98.1127,18.6703],[98.1054,18.6486],[98.1181,18.6345],[98.1437,18.6394],[98.1611,18.6264],[98.1828,18.6252],[98.1824,18.6097],[98.2107,18.6072],[98.2129,18.5909],[98.2274,18.5867],[98.2372,18.5693],[98.232,18.5572],[98.2093,18.538],[98.1752,18.5472],[98.1703,18.5251],[98.1629,18.5248],[98.1543,18.5124],[98.1224,18.5026],[98.1056,18.4583],[98.0827,18.4459],[98.074,18.4294],[98.0826,18.4178],[98.0937,18.4214],[98.1258,18.4064],[98.1228,18.3945],[98.1356,18.3857],[98.1454,18.363],[98.1976,18.3333],[98.2082,18.3076],[98.1933,18.2851],[98.1528,18.2864],[98.1384,18.2812],[98.1356,18.2681],[98.1429,18.2522],[98.139,18.2404],[98.1504,18.2245],[98.169,18.2227],[98.1662,18.2046],[98.1761,18.1921],[98.1666,18.1822],[98.167,18.1682],[98.1558,18.1637],[98.168,18.1412],[98.1629,18.1338],[98.1654,18.1194],[98.1907,18.114],[98.2062,18.0883],[98.2235,18.0902],[98.2303,18.0987],[98.2335,18.0919],[98.2285,18.0885],[98.2427,18.088],[98.2411,18.0791],[98.2473,18.0759],[98.2565,18.0877],[98.2868,18.085],[98.2895,18.0782],[98.2767,18.0525],[98.2638,18.0497],[98.254,18.0266],[98.2431,18.0193],[98.2462,17.9896],[98.1837,17.9812],[98.1799,17.9719],[98.1616,17.9705],[98.1436,17.9354],[98.1334,17.946],[98.1222,17.946],[98.09,17.9633],[98.0346,17.9426],[98.0228,17.9362],[98.0168,17.9201],[98.0119,17.9273],[98.008,17.9219],[98.0104,17.8958],[98.027,17.8886],[98.0324,17.8762],[98.0541,17.8704],[98.0595,17.8577],[98.0696,17.8533],[98.0733,17.8292],[98.0879,17.8084],[98.1087,17.7935],[98.1147,17.7984],[98.1325,17.7967],[98.1472,17.7766],[98.1353,17.7597],[98.1398,17.749],[98.1491,17.7458],[98.1534,17.7297],[98.1453,17.6832],[98.1233,17.6577],[98.0892,17.6372],[98.1015,17.6227],[98.0995,17.6145],[98.1071,17.6112],[98.103,17.6004],[98.1105,17.5927],[98.1061,17.5876],[98.1276,17.5679],[98.1252,17.5589],[98.136,17.5417],[98.1674,17.5477],[98.1785,17.5373],[98.2383,17.5497],[98.2648,17.5786],[98.298,17.5754],[98.3025,17.5669],[98.2982,17.5541],[98.3078,17.5426],[98.3058,17.5326],[98.3143,17.5273],[98.3152,17.5051],[98.3266,17.4897],[98.3297,17.4696],[98.3195,17.445],[98.3263,17.4292],[98.3223,17.4167],[98.2917,17.4074],[98.3192,17.3799],[98.3174,17.3674],[98.3341,17.3479],[98.3322,17.3297],[98.3174,17.3221],[98.3217,17.3107],[98.3398,17.2958],[98.3626,17.2884],[98.358,17.2736],[98.3918,17.2423],[98.3983,17.2521],[98.4299,17.2566],[98.4417,17.271],[98.4537,17.269],[98.4607,17.2759],[98.4787,17.2775],[98.4898,17.2703],[98.5023,17.2801],[98.5179,17.2815],[98.532,17.2745],[98.545,17.283],[98.5744,17.2845],[98.5789,17.2944],[98.5751,17.2999],[98.557,17.2938],[98.5558,17.3143],[98.5611,17.3221],[98.5552,17.3382],[98.5619,17.3518],[98.5374,17.3622],[98.5561,17.3971],[98.5576,17.4266],[98.5462,17.4337],[98.5465,17.4458],[98.5283,17.4536],[98.518,17.48],[98.5244,17.4959],[98.5188,17.5114],[98.5263,17.519],[98.5276,17.5368],[98.5496,17.5593],[98.5635,17.5622],[98.5781,17.5754],[98.567,17.5959],[98.5328,17.619]]],"schools":[{"id":"1050131065","th":"โรงเรียนมัธยมกัลยาณิวัฒนาเฉลิมพระเกียรติ","en":"Matthayom Galyani Vadhana Chaloem Phra Kiat School","amphoe":"กัลยาณิวัฒนา","amphoeEn":"Galyani Vadhana","levels":"ม.1–ม.6","students":232,"area":"สพม.เชียงใหม่","rom":true,"lat":19.060631,"lng":98.264568,"k":82.7,"r":145.4,"m":165,"b":291},{"id":"1050130991","th":"โรงเรียนจอมทอง","en":"Chom Thong School","amphoe":"จอมทอง","amphoeEn":"Chom Thong","levels":"ม.1–ม.6","students":2077,"area":"สพม.เชียงใหม่","rom":true,"lat":18.435573,"lng":98.676942,"k":52.4,"r":58.8,"m":69,"b":220},{"id":"1050130997","th":"โรงเรียนดอยสะเก็ดวิทยาคม","en":"Doi Saket Wittayakhom School","amphoe":"ดอยสะเก็ด","amphoeEn":"Doi Saket","levels":"ม.1–ม.6","students":636,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8841523,"lng":99.1607311,"k":19.7,"r":20.9,"m":20,"b":60},{"id":"1050131023","th":"โรงเรียนสองแคววิทยาคม","en":"Song Khwae Witthayakhom School","amphoe":"ดอยหล่อ","amphoeEn":"Doi Lo","levels":"ม.1–ม.6","students":558,"area":"สพม.เชียงใหม่","rom":false,"lat":18.462316,"lng":98.77686,"k":43.8,"r":49.8,"m":59,"b":212},{"id":"1050131024","th":"โรงเรียนสันติสุข","en":"Santisuk School","amphoe":"ดอยหล่อ","amphoeEn":"Doi Lo","levels":"ม.1–ม.6","students":295,"area":"สพม.เชียงใหม่","rom":false,"lat":18.5399404,"lng":98.7973796,"k":35.4,"r":41.8,"m":50,"b":217},{"id":"1050131015","th":"โรงเรียนดอยเต่าวิทยาคม","en":"Doi Tao Witthayakhom School","amphoe":"ดอยเต่า","amphoeEn":"Doi Tao","levels":"ม.1–ม.6","students":813,"area":"สพม.เชียงใหม่","rom":true,"lat":17.948322,"lng":98.695898,"k":99.4,"r":125.7,"m":137,"b":199},{"id":"1050131005","th":"โรงเรียนฝางชนูปถัมภ์","en":"Fang Chanupatham School","amphoe":"ฝาง","amphoeEn":"Fang","levels":"ม.1–ม.6","students":1682,"area":"สพม.เชียงใหม่","rom":true,"lat":19.910383,"lng":99.20639,"k":125.9,"r":150.4,"m":144,"b":10},{"id":"1050130198","th":"โรงเรียนเทพศิรินทร์ ๙ โครงการหลวงในพระบรมราชูปถัมภ์","en":"Thepsirin 9 Royal Project School","amphoe":"ฝาง","amphoeEn":"Fang","levels":"อ.2–ม.6","students":249,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.899315,"lng":99.04034,"k":122.8,"r":161.5,"m":157,"b":2},{"id":"1050131008","th":"โรงเรียนพร้าววิทยาคม","en":"Phraowittayakom School","amphoe":"พร้าว","amphoeEn":"Phrao","levels":"ม.1–ปวช.3","students":1296,"area":"สพม.เชียงใหม่","rom":false,"lat":19.3407432,"lng":99.1942042,"k":64.0,"r":97.0,"m":103,"b":19},{"id":"1050130531","th":"โรงเรียนบ้านบ่อแก้ว","en":"Ban Bo Kaeo School","amphoe":"สะเมิง","amphoeEn":"Samoeng","levels":"อ.2–ม.6","students":434,"area":"สพป.เชียงใหม่ เขต 2","rom":true,"lat":18.828257,"lng":98.571296,"k":45.1,"r":76.3,"m":87,"b":275},{"id":"1050131004","th":"โรงเรียนสะเมิงพิทยาคม","en":"Samoeng Phitthayakhom School","amphoe":"สะเมิง","amphoeEn":"Samoeng","levels":"ม.1–ม.6","students":589,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8465519,"lng":98.7340772,"k":28.4,"r":48.5,"m":55,"b":282},{"id":"1050131011","th":"โรงเรียนสันกำแพง","en":"San Kamphaeng School","amphoe":"สันกำแพง","amphoeEn":"San Kamphaeng","levels":"ม.1–ม.6","students":2460,"area":"สพม.เชียงใหม่","rom":false,"lat":18.74803,"lng":99.047737,"k":7.4,"r":9.1,"m":13,"b":135},{"id":"1050131025","th":"โรงเรียนศรีสังวาลย์เชียงใหม่","en":"Si Sang Wan Chiang Mai School","amphoe":"สันทราย","amphoeEn":"San Sai","levels":"อ.2–ปวช.3","students":285,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":false,"lat":18.9175667,"lng":98.9991125,"k":13.6,"r":16.3,"m":20,"b":0},{"id":"1050131012","th":"โรงเรียนสันทรายวิทยาคม","en":"San Sai Witthayakhom School","amphoe":"สันทราย","amphoeEn":"San Sai","levels":"ม.1–ม.6","students":1505,"area":"สพม.เชียงใหม่","rom":false,"lat":18.920174,"lng":98.997848,"k":13.9,"r":16.8,"m":21,"b":360},{"id":"1050131009","th":"โรงเรียนสันป่าตองวิทยาคม","en":"San Pa Tong Witthayakhom School","amphoe":"สันป่าตอง","amphoeEn":"San Pa Tong","levels":"ม.1–ม.6","students":2376,"area":"สพม.เชียงใหม่","rom":true,"lat":18.595682,"lng":98.876643,"k":25.6,"r":28.3,"m":33,"b":210},{"id":"1050131010","th":"โรงเรียนเทพศิรินทร์ เชียงใหม่","en":"Thepsirin Chiang Mai School","amphoe":"สันป่าตอง","amphoeEn":"San Pa Tong","levels":"ม.1–ม.6","students":515,"area":"สพม.เชียงใหม่","rom":true,"lat":18.647976,"lng":98.849802,"k":22.7,"r":26.5,"m":30,"b":224},{"id":"1050131018","th":"โรงเรียนสารภีพิทยาคม","en":"Saraphi Phitthayakhom School","amphoe":"สารภี","amphoeEn":"Saraphi","levels":"ม.1–ม.6","students":864,"area":"สพม.เชียงใหม่","rom":true,"lat":18.712828,"lng":99.034374,"k":9.9,"r":10.9,"m":13,"b":158},{"id":"1050131013","th":"โรงเรียนหางดงรัฐราษฎร์อุปถัมภ์","en":"Hang Dong Ratratsadon Upatham School","amphoe":"หางดง","amphoeEn":"Hang Dong","levels":"ม.1–ม.6","students":1184,"area":"สพม.เชียงใหม่","rom":true,"lat":18.679935,"lng":98.919435,"k":15.3,"r":16.8,"m":20,"b":213},{"id":"1050131016","th":"โรงเรียนอมก๋อยวิทยาคม","en":"Omkoi Witthayakhom School","amphoe":"อมก๋อย","amphoeEn":"Omkoi","levels":"ม.1–ม.6","students":1085,"area":"สพม.เชียงใหม่","rom":false,"lat":17.800759,"lng":98.3566339,"k":129.7,"r":177.7,"m":188,"b":212},{"id":"1050131017","th":"โรงเรียนแม่ตื่นวิทยาคม","en":"Mae Tuen Witthayakhom School","amphoe":"อมก๋อย","amphoeEn":"Omkoi","levels":"ม.1–ม.6","students":628,"area":"สพม.เชียงใหม่","rom":true,"lat":17.40463,"lng":98.455215,"k":165.0,"r":250.3,"m":268,"b":200},{"id":"1050131014","th":"โรงเรียนฮอดพิทยาคม","en":"Hot Phitthayakhom School","amphoe":"ฮอด","amphoeEn":"Hot","levels":"ม.1–ม.6","students":1073,"area":"สพม.เชียงใหม่","rom":true,"lat":18.173879,"lng":98.605769,"k":80.6,"r":91.9,"m":101,"b":211},{"id":"1050130797","th":"โรงเรียนแม่โถวิทยาคม","en":"Mae Tho Witthayakhom School","amphoe":"ฮอด","amphoeEn":"Hot","levels":"อ.2–ม.6","students":655,"area":"สพป.เชียงใหม่ เขต 5","rom":true,"lat":18.25,"lng":98.1955,"k":104.1,"r":160.3,"m":175,"b":235},{"id":"1050130996","th":"โรงเรียนศึกษาสงเคราะห์เชียงดาว","en":"Suksa Songkhro Chiang Dao School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ป.1–ม.6","students":487,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":19.4208,"lng":98.9904,"k":69.6,"r":80.6,"m":80,"b":359},{"id":"1050130995","th":"โรงเรียนอรุโณทัยวิทยาคม","en":"Arunothaiwittayakom School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ม.1–ม.6","students":974,"area":"สพม.เชียงใหม่","rom":false,"lat":19.7451413,"lng":98.9653239,"k":105.7,"r":117.6,"m":120,"b":358},{"id":"1050130994","th":"โรงเรียนเชียงดาววิทยาคม","en":"Chiang Dao Witthayakhom School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"ม.1–ม.6","students":1082,"area":"สพม.เชียงใหม่","rom":true,"lat":19.407487,"lng":98.973059,"k":68.1,"r":75.7,"m":75,"b":358},{"id":"1050130129","th":"โรงเรียนแกน้อยศึกษา","en":"Kae Noi Suksa School","amphoe":"เชียงดาว","amphoeEn":"Chiang Dao","levels":"อ.2–ม.6","students":704,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.6769063,"lng":98.7863601,"k":100.5,"r":147.6,"m":161,"b":347},{"id":"1050130987","th":"โรงเรียน กาวิละวิทยาลัย","en":"Kawila Wittayalai School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":1083,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7674606,"lng":99.0234519,"k":4.1,"r":4.9,"m":9,"b":140},{"id":"1050130990","th":"โรงเรียนกาวิละอนุกูล","en":"Kawila Anukun School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":383,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.7816,"lng":99.0137,"k":2.2,"r":2.7,"m":5,"b":134},{"id":"1050130984","th":"โรงเรียนยุพราชวิทยาลัย","en":"Yupparaj Wittayalai School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":3684,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7920016,"lng":98.9889052,"k":1.1,"r":1.9,"m":4,"b":250},{"id":"1050130985","th":"โรงเรียนวัฒโนทัยพายัพ","en":"Wattanothai Payap School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":2868,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7849283,"lng":98.9762673,"k":2.6,"r":5.0,"m":9,"b":244},{"id":"1050130989","th":"โรงเรียนสอนคนตาบอดภาคเหนือ","en":"The Northern School for the Blind","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":140,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":false,"lat":18.7875122,"lng":98.978741,"k":2.3,"r":3.8,"m":7,"b":248},{"id":"1050130986","th":"โรงเรียนหอพระ","en":"Hopra School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"ม.1–ม.6","students":560,"area":"สพม.เชียงใหม่","rom":false,"lat":18.7917976,"lng":98.9808079,"k":1.9,"r":3.0,"m":6,"b":258},{"id":"1050130988","th":"โรงเรียนโสตศึกษาอนุสารสุนทร","en":"Sotsuksa Anusan Sunthon School","amphoe":"เมืองเชียงใหม่","amphoeEn":"Mueang Chiang Mai","levels":"อ.2–ม.6","students":225,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.8037,"lng":98.98,"k":2.2,"r":3.3,"m":6,"b":296},{"id":"1050131019","th":"โรงเรียนเวียงแหงวิทยาคม","en":"Wiang Haeng Witthayakhom School","amphoe":"เวียงแหง","amphoeEn":"Wiang Haeng","levels":"ม.1–ม.6","students":838,"area":"สพม.เชียงใหม่","rom":true,"lat":19.576253,"lng":98.625087,"k":95.3,"r":145.9,"m":149,"b":336},{"id":"1050131002","th":"โรงเรียนนวมินทราชูทิศ พายัพ","en":"Navamindarajudis Phayap School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ม.1–ม.6","students":1763,"area":"สพม.เชียงใหม่","rom":false,"lat":18.8435702,"lng":98.9603006,"k":6.7,"r":8.9,"m":12,"b":323},{"id":"1050131003","th":"โรงเรียนศึกษาสงเคราะห์เชียงใหม่","en":"Suksa Songkhro Chiang Mai School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ป.1–ม.6","students":797,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.8542,"lng":98.9656,"k":7.4,"r":8.9,"m":11,"b":332},{"id":"1050131001","th":"โรงเรียนแม่ริมวิทยาคม","en":"Mae Rim Witayakom School","amphoe":"แม่ริม","amphoeEn":"Mae Rim","levels":"ม.1–ม.6","students":1569,"area":"สพม.เชียงใหม่","rom":false,"lat":18.9157202,"lng":98.9367129,"k":14.9,"r":17.0,"m":20,"b":334},{"id":"1050131021","th":"โรงเรียนบ้านกาดวิทยาคม","en":"Ban Kat Witthayakhom School","amphoe":"แม่วาง","amphoeEn":"Mae Wang","levels":"ม.1–ม.6","students":654,"area":"สพม.เชียงใหม่","rom":true,"lat":18.606739,"lng":98.815807,"k":28.5,"r":33.2,"m":38,"b":223},{"id":"1050130925","th":"โรงเรียนแม่วินสามัคคี","en":"Mae Win Samakkhi School","amphoe":"แม่วาง","amphoeEn":"Mae Wang","levels":"อ.2–ม.6","students":602,"area":"สพป.เชียงใหม่ เขต 4","rom":false,"lat":18.657457,"lng":98.673258,"k":37.5,"r":51.4,"m":64,"b":246},{"id":"1050131022","th":"โรงเรียนแม่ออนวิทยาลัย","en":"Mae On Witthayalai School","amphoe":"แม่ออน","amphoeEn":"Mae On","levels":"ม.1–ม.6","students":308,"area":"สพม.เชียงใหม่","rom":true,"lat":18.749392,"lng":99.230221,"k":24.9,"r":27.4,"m":33,"b":102},{"id":"1050130493","th":"โรงเรียนบ้านสันต้นหมื้อ","en":"Ban San Ton Mue School","amphoe":"แม่อาย","amphoeEn":"Mae Ai","levels":"อ.1–ม.6","students":572,"area":"สพป.เชียงใหม่ เขต 3","rom":true,"lat":19.955274,"lng":99.260415,"k":131.9,"r":161.2,"m":168,"b":12},{"id":"1050131007","th":"โรงเรียนราชประชานุเคราะห์ 30","en":"Ratchaprachanukro 30 School","amphoe":"แม่อาย","amphoeEn":"Mae Ai","levels":"อ.2–ม.6","students":903,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":20.0326,"lng":99.2692,"k":140.5,"r":168.2,"m":160,"b":12},{"id":"1050130325","th":"โรงเรียนบ้านปางอุ๋ง","en":"Ban Pang Ung School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"อ.2–ม.6","students":493,"area":"สพป.เชียงใหม่ เขต 6","rom":true,"lat":18.79831,"lng":98.112087,"k":93.3,"r":192.2,"m":219,"b":270},{"id":"1050130345","th":"โรงเรียนบ้านแม่แฮเหนือ","en":"Ban Mae Hae Nuea School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"อ.2–ม.6","students":739,"area":"สพป.เชียงใหม่ เขต 6","rom":true,"lat":18.791181,"lng":98.531078,"k":49.2,"r":84.2,"m":99,"b":270},{"id":"1050130993","th":"โรงเรียนราชประชานุเคราะห์ 31","en":"Ratchaprachanukro 31 School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"ป.1–ม.6","students":830,"area":"สำนักบริหารงานการศึกษาพิเศษ","rom":true,"lat":18.524,"lng":98.3939,"k":70.5,"r":114.3,"m":138,"b":245},{"id":"1050130992","th":"โรงเรียนแม่แจ่ม","en":"Mae Chaem School","amphoe":"แม่แจ่ม","amphoeEn":"Mae Chaem","levels":"ม.1–ม.6","students":1283,"area":"สพม.เชียงใหม่","rom":true,"lat":18.504116,"lng":98.369024,"k":73.8,"r":118.3,"m":139,"b":244},{"id":"1050131000","th":"โรงเรียนสันป่ายางวิทยาคม","en":"San Pa Yang Witthayakhom School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":182,"area":"สพม.เชียงใหม่","rom":true,"lat":19.049671,"lng":98.87178,"k":31.3,"r":35.6,"m":42,"b":335},{"id":"1050130999","th":"โรงเรียนแม่หอพระวิทยาคม","en":"Mae Ho Phra School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":200,"area":"สพม.เชียงใหม่","rom":false,"lat":19.1110669,"lng":99.0281021,"k":35.3,"r":48.1,"m":50,"b":5},{"id":"1050130998","th":"โรงเรียนแม่แตง","en":"Mae Taeng School","amphoe":"แม่แตง","amphoeEn":"Mae Taeng","levels":"ม.1–ม.6","students":784,"area":"สพม.เชียงใหม่","rom":true,"lat":19.109989,"lng":98.93021,"k":35.7,"r":38.6,"m":39,"b":348},{"id":"1050131020","th":"โรงเรียนไชยปราการ","en":"Chai Prakan School","amphoe":"ไชยปราการ","amphoeEn":"Chai Prakan","levels":"ม.1–ม.6","students":508,"area":"สพม.เชียงใหม่","rom":true,"lat":19.72485,"lng":99.138639,"k":104.4,"r":127.1,"m":121,"b":8}]};
 var T = {
  en:{
-  forbar:"For Eveline Willi",
+  forbar:"For Eveline Willi · FERC",
   h1:"34 schools, one province",
-  lead:"This year FERC sponsors one student in each of 34 upper-secondary schools in Chiang Mai province. Below, the province's upper-secondary schools on a map.",
-  for:"For Eveline Willi, President of FERC, with thanks for the work.",
-  st1:"upper-secondary schools", st2:"students", st3a:"All", st3:"volunteers",
-  srcLabel:"Source:",
-  mapH:"The map",
-  mapP:"Tap a pin. Each pin is a government school whose classes run to M.6 or to vocational year 3.",
-  nomap:"The map needs WebGL. The list below shows the same schools.",
-  mapNote:"The map shows %N% schools from the government school register. FERC's 34 comes from the article above. The two lists are not matched school by school.",
-  srcObec:"OBEC school register (Open Data Common), fetched 18 Aug 2026",
-  srcBase:"Map:",
-  srcEn:"English names: OpenStreetMap or the register where given; the others are romanised by NaN.",
-  tap:"Tap a pin or a name in the list.",
-  cardKick:"School",
-  romanised:"romanised",
-  district:"District", classes:"Classes", students:"Students on register",
-  one:"A student here could be one of FERC's.",
-  give:"Give to FERC",
-  dAll:"All districts",
-  unitStu:"students",
-  cdH:"Two dates",
-  ev1:"Talk by Eveline Willi", ev1d:"Chiang Mai Expat Club · 28 November 2026",
-  ev2:"FERC annual fundraiser", ev2d:"29 November 2026",
-  cdNote:"The article gives the dates; it names no venue or price for the fundraiser.",
-  u_d:"days", u_h:"hours", u_m:"min", u_s:"sec",
-  passed:"Today or past",
-  md:"Mot Dang (motdang.net) puts both on its calendar in Thai and English.",
-  giveH:"Give",
-  giveP:"FERC's donation page names these routes:",
-  routes:["From Thailand: Kasikorn Bank transfer or QR code, an ATM or bank-to-bank transfer","From Europe: the Swiss bank account, an international transfer, or Wise","From other countries: an international transfer or Wise"],
-  giveProof:"The page asks donors to send proof of payment to the treasurer, because transfers from Thai banks do not show who gave. Account details are on the page.",
+  strap:"One sponsored student in each. All volunteers.",
+  st1:"schools, one student each", st2:"students supported", st3:"days to the talk",
+  phint:"Tap a pin to see a school and how far it is from the city.",
+  chipWait:"District by district", chipRun:"{n} of {t} districts", chipEnd:"{s} register schools · tap a pin",
+  district:"District", byRoad:"by road", straight:"straight line", classes:"classes", unitStu:"students", distBtn:"Distance",
+  b1k:"M4 – M6", b1h:"Upper-secondary schools are usually far away",
+  b1p:"From grade 10, travel, dormitory and food cost extra.",
+  roadCap:"A hill road in Chiang Mai province",
+  dH:"Tap a school",
+  dP:"Each dot is a school, placed by compass direction and straight-line distance from Chiang Mai city.",
+  legend:"Chiang Mai city, the centre", n:"N", e:"E", s:"S", w:"W",
+  near:"Nearest", far:"Farthest", any:"Any school", walk:"Walk outward from the city",
+  car:"about {t} by car", hr:"h", mn:"min",
+  gH:"Districts", mN:"Schools", mR:"Road km",
+  gLn:"Schools on the map, by district.", gLr:"Average road distance from the city, by district.",
+  ddHint:"Tap a bar to see its schools.", ddOne:"school", ddMany:"schools",
+  schoolCap:"A school in Mae Hong Son",
+  cdH:"Two dates in November",
+  ev1:"Talk by Eveline Willi", ev1d:"Chiang Mai Expat Club",
+  ev2:"FERC annual fundraiser", ev2d:"A Christmas event follows",
+  cdNote:"The article gives the dates, not the venue or the time.",
+  u_d:"days", u_h:"hours", u_m:"min", u_s:"sec", passed:"Today or past", ics:"Add to calendar", wk:"{w} weeks {d} days",
+  mo:{11:"Nov"}, wd:{6:"Saturday",0:"Sunday"},
+  b2k:"Give", b2h:"Three years, one student",
+  b2p:"A sponsorship helps one student stay in school through M4 – M6.",
+  daoCap:"Doi Chiang Dao in the clouds",
+  wH:"Ways to give",
+  routes:[["From Thailand","Kasikorn Bank transfer or QR code · an ATM or bank-to-bank transfer · a fundraising event"],["From Europe","The Swiss bank account · an international transfer · Wise"],["From other countries","An international transfer · Wise"]],
+  proof:"Transfers from Thai banks do not show who gave. FERC asks donors to send proof of payment to the treasurer.",
   giveBtn:"fercthailand.org/how-to-donate",
-  lunchH:"Lunch",
-  lunchP:"A note from NaN in Chiang Rai.",
-  lunchBtn:"Lunch at The Algonquin?",
-  mailSubject:"Lunch at The Algonquin?",
-  mailBody:"Dear NaN,\n\n",
-  foot:"Made for Eveline Willi by NaN · Hongdam, Chiang Rai · nan@motdang.net"
+  lk:"An invitation", lunchH:"Lunch?", lunchP:"A note from NaN in Chiang Rai.", lunchBtn:"Lunch at The Algonquin?",
+  mailSubject:"Lunch at The Algonquin?", mailBody:"Dear NaN,\n\n",
+  panoCap:"Mae Chaem District",
+  srcH:"Sources",
+  s2a:"Pins: government schools whose classes run to M.6 or Voc. 3.", s2b:"fetched 18 Aug 2026. FERC's 34 are not matched to these by name. English names from OpenStreetMap or the register; the rest romanised by NaN.",
+  s4a:"Road distance and drive time: routing on OpenStreetMap data by", s4b:", 19 Oct 2026. Straight line: great-circle distance. City point 18.795 N, 98.999 E from",
+  s5a:"Map:",
+  foot:"Made for Eveline Willi by NaN · Hongdam, Chiang Rai · nan@motdang.net",
+  title:"34 schools, one province"
  },
  th:{
-  forbar:"สำหรับคุณ Eveline Willi",
+  forbar:"สำหรับคุณ Eveline Willi · FERC",
   h1:"34 โรงเรียน หนึ่งจังหวัด",
-  lead:"ปีนี้ FERC อุปถัมภ์นักเรียนโรงเรียนละหนึ่งคน ในโรงเรียนมัธยมปลาย 34 แห่งของจังหวัดเชียงใหม่ ด้านล่างคือแผนที่โรงเรียนมัธยมปลายของจังหวัด",
-  for:"สำหรับคุณ Eveline Willi ประธาน FERC ขอบคุณสำหรับงานที่ทำมา",
-  st1:"โรงเรียนมัธยมปลาย", st2:"นักเรียน", st3a:"ล้วน", st3:"อาสาสมัคร",
-  srcLabel:"ที่มา:",
-  mapH:"แผนที่",
-  mapP:"แตะที่หมุด แต่ละหมุดคือโรงเรียนรัฐที่เปิดสอนถึง ม.6 หรือ ปวช.3",
-  nomap:"แผนที่ต้องใช้ WebGL รายการด้านล่างแสดงโรงเรียนชุดเดียวกัน",
-  mapNote:"แผนที่แสดง %N% โรงเรียนจากทะเบียนโรงเรียนของรัฐ ตัวเลข 34 ของ FERC มาจากบทความข้างต้น ทั้งสองรายการยังไม่ได้จับคู่ทีละโรงเรียน",
-  srcObec:"ทะเบียนโรงเรียน สพฐ. (Open Data Common) ดึงข้อมูล 18 ส.ค. 2569",
-  srcBase:"แผนที่:",
-  srcEn:"ชื่ออังกฤษมาจาก OpenStreetMap หรือทะเบียนเมื่อมี ที่เหลือ NaN ถอดเป็นอักษรโรมันเอง",
-  tap:"แตะหมุดบนแผนที่ หรือชื่อโรงเรียนในรายการ",
-  cardKick:"โรงเรียน",
-  romanised:"ถอดอักษรโรมัน",
-  district:"อำเภอ", classes:"ระดับชั้น", students:"จำนวนนักเรียนในทะเบียน",
-  one:"นักเรียนที่นี่อาจเป็นหนึ่งในนักเรียนของ FERC",
-  give:"บริจาคให้ FERC",
-  dAll:"ทุกอำเภอ",
-  unitStu:"คน",
-  cdH:"สองวัน",
-  ev1:"การบรรยายโดยคุณ Eveline Willi", ev1d:"Chiang Mai Expat Club · 28 พฤศจิกายน 2569",
-  ev2:"งานระดมทุนประจำปีของ FERC", ev2d:"29 พฤศจิกายน 2569",
-  cdNote:"บทความระบุวันที่ แต่ไม่ได้ระบุสถานที่หรือราคาของงานระดมทุน",
-  u_d:"วัน", u_h:"ชม.", u_m:"นาที", u_s:"วินาที",
-  passed:"วันนี้หรือผ่านมาแล้ว",
-  md:"หมดแดง (motdang.net) ใส่ทั้งสองวันลงปฏิทินเป็นภาษาไทยและอังกฤษ",
-  giveH:"ร่วมบริจาค",
-  giveP:"หน้าบริจาคของ FERC ระบุช่องทางเหล่านี้",
-  routes:["จากในประเทศไทย: โอนผ่านธนาคารกสิกรไทย หรือสแกน QR ผ่านตู้ ATM หรือโอนระหว่างธนาคาร","จากยุโรป: บัญชีธนาคารสวิส โอนเงินระหว่างประเทศ หรือ Wise","จากประเทศอื่น: โอนเงินระหว่างประเทศ หรือ Wise"],
-  giveProof:"หน้าเว็บขอให้ผู้บริจาคส่งหลักฐานการโอนถึงเหรัญญิก เพราะการโอนจากธนาคารไทยไม่แสดงชื่อผู้โอน รายละเอียดบัญชีอยู่ในหน้านั้น",
+  strap:"นักเรียนทุนโรงเรียนละหนึ่งคน ทำงานด้วยอาสาสมัครทั้งหมด",
+  st1:"โรงเรียน แห่งละหนึ่งทุน", st2:"นักเรียนที่ได้รับการสนับสนุน", st3:"วันถึงงานบรรยาย",
+  phint:"แตะหมุดเพื่อดูโรงเรียนและระยะทางจากตัวเมือง",
+  chipWait:"ทีละอำเภอ", chipRun:"{n} จาก {t} อำเภอ", chipEnd:"{s} โรงเรียนจากทะเบียน · แตะที่หมุด",
+  district:"อำเภอ", byRoad:"ทางถนน", straight:"เส้นตรง", classes:"ระดับชั้น", unitStu:"คน", distBtn:"ระยะทาง",
+  b1k:"ม.4 – ม.6", b1h:"โรงเรียนมัธยมปลายมักอยู่ไกล",
+  b1p:"ตั้งแต่ ม.4 ค่าเดินทาง ที่พัก และอาหารเป็นภาระเพิ่ม",
+  roadCap:"ถนนบนเขาในจังหวัดเชียงใหม่",
+  dH:"แตะโรงเรียน",
+  dP:"แต่ละจุดคือหนึ่งโรงเรียน วางตามทิศและระยะเส้นตรงจากตัวเมืองเชียงใหม่",
+  legend:"ตัวเมืองเชียงใหม่ ศูนย์กลาง", n:"เหนือ", e:"ออก", s:"ใต้", w:"ตก",
+  near:"ใกล้สุด", far:"ไกลสุด", any:"สุ่มโรงเรียน", walk:"เดินออกจากตัวเมือง",
+  car:"ขับรถประมาณ {t}", hr:"ชม.", mn:"นาที",
+  gH:"อำเภอ", mN:"โรงเรียน", mR:"กม. ทางถนน",
+  gLn:"จำนวนโรงเรียนบนแผนที่ แยกตามอำเภอ", gLr:"ระยะทางถนนเฉลี่ยจากตัวเมือง แยกตามอำเภอ",
+  ddHint:"แตะแท่งเพื่อดูโรงเรียนในอำเภอ", ddOne:"โรงเรียน", ddMany:"โรงเรียน",
+  schoolCap:"โรงเรียนแห่งหนึ่งในแม่ฮ่องสอน",
+  cdH:"สองวันในเดือนพฤศจิกายน",
+  ev1:"การบรรยายโดยคุณ Eveline Willi", ev1d:"Chiang Mai Expat Club",
+  ev2:"งานระดมทุนประจำปีของ FERC", ev2d:"ตามด้วยงานคริสต์มาส",
+  cdNote:"บทความระบุวันที่ แต่ไม่ระบุสถานที่และเวลา",
+  u_d:"วัน", u_h:"ชม.", u_m:"นาที", u_s:"วินาที", passed:"วันนี้หรือผ่านมาแล้ว", ics:"เพิ่มลงปฏิทิน", wk:"{w} สัปดาห์ {d} วัน",
+  mo:{11:"พ.ย."}, wd:{6:"เสาร์",0:"อาทิตย์"},
+  b2k:"ร่วมบริจาค", b2h:"สามปี หนึ่งนักเรียน",
+  b2p:"ทุนหนึ่งทุนช่วยให้นักเรียนหนึ่งคนเรียนต่อจนจบ ม.4 – ม.6",
+  daoCap:"ดอยเชียงดาวท่ามกลางเมฆ",
+  wH:"ช่องทางบริจาค",
+  routes:[["จากในประเทศไทย","โอนผ่านธนาคารกสิกรไทยหรือสแกน QR · ตู้ ATM หรือโอนระหว่างธนาคาร · งานระดมทุน"],["จากยุโรป","บัญชีธนาคารสวิส · โอนเงินระหว่างประเทศ · Wise"],["จากประเทศอื่น","โอนเงินระหว่างประเทศ · Wise"]],
+  proof:"การโอนจากธนาคารไทยไม่แสดงชื่อผู้โอน FERC ขอให้ผู้บริจาคส่งหลักฐานการโอนถึงเหรัญญิก",
   giveBtn:"fercthailand.org/how-to-donate",
-  lunchH:"มื้อกลางวัน",
-  lunchP:"ข้อความจาก NaN ที่เชียงราย",
-  lunchBtn:"ทานมื้อกลางวันที่ The Algonquin ไหมคะ",
-  mailSubject:"Lunch at The Algonquin?",
-  mailBody:"สวัสดีค่ะ NaN\n\n",
-  foot:"ทำให้ Eveline Willi โดย NaN · หงส์ดำ เชียงราย · nan@motdang.net"
+  lk:"คำเชิญ", lunchH:"มื้อกลางวัน?", lunchP:"ข้อความจาก NaN ที่เชียงราย", lunchBtn:"ทานมื้อกลางวันที่ The Algonquin ไหมคะ",
+  mailSubject:"Lunch at The Algonquin?", mailBody:"สวัสดีค่ะ NaN\n\n",
+  panoCap:"อำเภอแม่แจ่ม",
+  srcH:"แหล่งที่มา",
+  s2a:"หมุด: โรงเรียนรัฐที่เปิดสอนถึง ม.6 หรือ ปวช.3", s2b:"ดึงข้อมูล 18 ส.ค. 2569 ตัวเลข 34 ของ FERC ยังไม่ได้จับคู่รายชื่อกับหมุดเหล่านี้ ชื่ออังกฤษมาจาก OpenStreetMap หรือทะเบียนเมื่อมี ที่เหลือ NaN ถอดเป็นอักษรโรมัน",
+  s4a:"ระยะทางถนนและเวลาขับรถ: คำนวณจากข้อมูล OpenStreetMap ด้วย", s4b:" เมื่อ 19 ต.ค. 2569 ระยะเส้นตรง: ระยะทางบนผิวโลก จุดตัวเมือง 18.795 N, 98.999 E จาก",
+  s5a:"แผนที่:",
+  foot:"ทำให้ Eveline Willi โดย NaN · หงส์ดำ เชียงราย · nan@motdang.net",
+  title:"34 โรงเรียน หนึ่งจังหวัด"
  }
 };
-var lang = (navigator.language||'en').toLowerCase().indexOf('th')===0 ? 'th' : 'en';
-var map=null, selected=null, mapReady=false;
-var S = DATA.schools;
-S.forEach(function(s,i){s.i=i;});
+var lang=(navigator.language||'en').toLowerCase().indexOf('th')===0?'th':'en';
+var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+var S=DATA.schools; S.forEach(function(s,i){s.i=i;});
+var D={}; S.forEach(function(s){var d=D[s.amphoe]||(D[s.amphoe]={th:s.amphoe,en:s.amphoeEn,idx:[],min:1e9,sum:0}); d.idx.push(s.i); d.min=Math.min(d.min,s.r); d.sum+=s.r;});
+var DL=Object.keys(D).map(function(k){var d=D[k]; d.avg=d.sum/d.idx.length; return d;});
+var ORDER=DL.slice().sort(function(a,b){return a.min-b.min;});
+var BYK=S.slice().sort(function(a,b){return a.k-b.k;});   /* nearest first, straight line */
+var sel=null, cardOpen=false, map=null, mapReady=false, mode='n', openD=null, litN=0, seqDone=false, seqStarted=false;
+var DAYS_END=new Date('2026-11-28T00:00:00+07:00').getTime();
 
 function $(id){return document.getElementById(id);}
-function lvl(l){
-  var en=lang==='en';
-  return l.replace(/ปวช\./g,en?'Voc.':'ปวช.').replace(/อ\./g,en?'K':'อ.').replace(/ป\./g,en?'P':'ป.').replace(/ม\./g,en?'M':'ม.');
-}
 function t(k){return T[lang][k];}
-function applyLang(){
-  document.documentElement.lang=lang;
-  document.body.classList.toggle('th',lang==='th');
-  $('b-th').setAttribute('aria-pressed',lang==='th');
-  $('b-en').setAttribute('aria-pressed',lang==='en');
-  document.querySelectorAll('[data-i]').forEach(function(e){
-    var v=t(e.getAttribute('data-i')); if(v==null) return;
-    e.textContent=v.replace('%N%',S.length);
-  });
-  document.title = lang==='th' ? '34 โรงเรียน หนึ่งจังหวัด' : '34 schools, one province';
-  $('routes').innerHTML=''; t('routes').forEach(function(r){var li=document.createElement('li');li.textContent=r;$('routes').appendChild(li);});
-  var m='mailto:nan@motdang.net?subject='+encodeURIComponent(t('mailSubject'))+'&body='+encodeURIComponent(t('mailBody'));
-  $('lunch').setAttribute('href',m);
-  buildDistricts(); buildList(); showCard(selected); tickAll(); counters(false);
-}
-function buildDistricts(){
-  var sel=$('dist'), cur=sel.value||'';
-  var seen={}, opts=[];
-  S.forEach(function(s){ if(!seen[s.amphoe]){seen[s.amphoe]=1; opts.push(s);} });
-  opts.sort(function(a,b){return (lang==='th'?a.amphoe.localeCompare(b.amphoe,'th'):a.amphoeEn.localeCompare(b.amphoeEn));});
-  sel.innerHTML='';
-  var o=document.createElement('option');o.value='';o.textContent=t('dAll');sel.appendChild(o);
-  opts.forEach(function(s){var o=document.createElement('option');o.value=s.amphoe;o.textContent=lang==='th'?s.amphoe:s.amphoeEn;sel.appendChild(o);});
-  sel.value=cur;
-}
-function nm(s){ return lang==='th' ? s.th : (s.en||s.th); }
-function buildList(){
-  var ul=$('list'), f=$('dist').value; ul.innerHTML='';
-  S.filter(function(s){return !f||s.amphoe===f;}).sort(function(a,b){return a.amphoe.localeCompare(b.amphoe,'th')||a.th.localeCompare(b.th,'th');}).forEach(function(s){
-    var li=document.createElement('li'), b=document.createElement('button');
-    b.type='button'; b.className='row'; b.dataset.i=s.i;
-    if(selected===s.i) b.setAttribute('aria-current','true');
-    b.innerHTML='';
-    b.appendChild(document.createTextNode(nm(s)));
-    var sm=document.createElement('small'); sm.textContent=(lang==='th'?s.amphoe:s.amphoeEn)+(lang==='en'&&s.en?' · '+s.th:''); b.appendChild(sm);
-    b.addEventListener('click',function(){pick(s.i,true);});
-    li.appendChild(b); ul.appendChild(li);
-  });
-  if(mapReady) filterMap(f);
-}
-function showCard(i){
-  var c=$('card');
-  if(i==null){ c.innerHTML=''; var p=document.createElement('p'); p.style.margin='0'; p.className='sub'; p.textContent=t('tap'); c.appendChild(p); return; }
-  var s=S[i]; c.innerHTML='';
-  function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e;}
-  c.appendChild(el('div','k',t('cardKick')));
-  c.appendChild(el('h3','',s.th));
-  var sub=lang==='en'?(s.en? s.en+(s.rom?' ('+t('romanised')+')':'') : ''):(s.en? s.en+(s.rom?' ('+t('romanised')+')':''):'');
-  if(sub) c.appendChild(el('p','sub',sub));
-  var dl=el('dl');
-  function row(k,v){dl.appendChild(el('dt','',k));dl.appendChild(el('dd','',v));}
-  row(t('district'), lang==='th'?s.amphoe:s.amphoeEn+' · '+s.amphoe);
-  row(t('classes'), lvl(s.levels));
-  if(s.students!=null) row(t('students'), s.students.toLocaleString(lang==='th'?'th-TH':'en-US'));
-  c.appendChild(dl);
-  c.appendChild(el('p','one',t('one')));
-  var a=el('a','btn',t('give')); a.href='https://fercthailand.org/how-to-donate/'; a.target='_blank'; a.rel='noopener'; c.appendChild(a);
-}
-function pick(i,fly){
-  selected=i;
-  showCard(i);
-  document.querySelectorAll('.row').forEach(function(r){ if(+r.dataset.i===i) r.setAttribute('aria-current','true'); else r.removeAttribute('aria-current'); });
-  if(mapReady){
-    map.setFilter('sel',['==',['get','i'],i]);
-    if(fly){ var s=S[i]; map.flyTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),11),duration:700}); document.getElementById('map').scrollIntoView({behavior:'smooth',block:'start'}); }
-    else { $('card').scrollIntoView({behavior:'smooth',block:'nearest'}); }
-  }
-}
-function filterMap(f){
-  if(!mapReady) return;
-  map.setFilter('pins', f?['==',['get','amphoe'],f]:null);
-  var list=S.filter(function(s){return !f||s.amphoe===f;});
-  fit(list);
-}
-function fit(list){
-  var b=new maplibregl.LngLatBounds();
-  list.forEach(function(s){b.extend([s.lng,s.lat]);});
-  if(list.length===1) map.flyTo({center:[list[0].lng,list[0].lat],zoom:11});
-  else map.fitBounds(b,{padding:{top:40,bottom:40,left:30,right:30},duration:600,maxZoom:12});
-}
-function initMap(){
-  try{
-    map=new maplibregl.Map({container:'map',attributionControl:{compact:true},style:'https://tiles.openfreemap.org/styles/liberty',center:[98.98,18.79],zoom:8,attributionControl:{compact:true},cooperativeGestures:false});
-  }catch(e){ $('map').style.display='none'; $('nomap').style.display='block'; return; }
-  map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
-  map.on('load',function(){
-    var feats=S.map(function(s){return {type:'Feature',properties:{i:s.i,amphoe:s.amphoe},geometry:{type:'Point',coordinates:[s.lng,s.lat]}};});
-    map.addSource('prov',{type:'geojson',data:{type:'Feature',geometry:{type:'Polygon',coordinates:DATA.boundary}}});
-    map.addLayer({id:'prov-line',type:'line',source:'prov',paint:{'line-color':cssv('--boundary'),'line-width':1.6,'line-opacity':.7,'line-dasharray':[3,2]}});
-    map.addSource('sch',{type:'geojson',data:{type:'FeatureCollection',features:feats}});
-    map.addLayer({id:'pins',type:'circle',source:'sch',paint:{'circle-radius':['interpolate',['linear'],['zoom'],7,6,12,10],'circle-color':cssv('--pin'),'circle-stroke-color':cssv('--pin-ring'),'circle-stroke-width':2}});
-    map.addLayer({id:'sel',type:'circle',source:'sch',filter:['==',['get','i'],-1],paint:{'circle-radius':['interpolate',['linear'],['zoom'],7,10,12,15],'circle-color':cssv('--sel'),'circle-stroke-color':'#000000','circle-stroke-width':2.5}});
-    mapReady=true;
-    fit(S);
-    map.on('click',function(e){
-      var p=e.point, bb=[[p.x-16,p.y-16],[p.x+16,p.y+16]];
-      var f=map.queryRenderedFeatures(bb,{layers:['pins']});
-      if(f.length){
-        var best=null,bd=1e9;
-        f.forEach(function(x){var q=map.project(x.geometry.coordinates),d=Math.hypot(q.x-p.x,q.y-p.y); if(d<bd){bd=d;best=x;}});
-        pick(best.properties.i,false);
-      }
-    });
-    map.on('mousemove',function(e){var p=e.point;var f=map.queryRenderedFeatures([[p.x-8,p.y-8],[p.x+8,p.y+8]],{layers:['pins']});map.getCanvas().style.cursor=f.length?'pointer':'';});
-    if(selected!=null) map.setFilter('sel',['==',['get','i'],selected]);
-    window.__mapLoaded=true;
-  });
-  map.on('error',function(e){ window.__mapErr=(e&&e.error&&e.error.message)||'err'; });
+function el(tag,cls,txt){var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e;}
+function nm(s){return lang==='th'?s.th:(s.en||s.th);}
+function alt(s){return lang==='th'?(s.en||''):(s.en?s.th:'');}
+function dn(d){return lang==='th'?d.th:d.en;}
+function km(x){return (x<10?x.toFixed(1):String(Math.round(x)))+(lang==='th'?' กม.':' km');}
+function lvl(l){var en=lang==='en';return l.replace(/ปวช\./g,en?'Voc.':'ปวช.').replace(/อ\./g,en?'K':'อ.').replace(/ป\./g,en?'P':'ป.').replace(/ม\./g,en?'M':'ม.');}
+function durTxt(m){
+  var r=Math.max(5,Math.round(m/5)*5), h=Math.floor(r/60), mm=r%60, s;
+  if(h===0) s=mm+' '+t('mn'); else s=h+' '+t('hr')+(mm?' '+mm+' '+t('mn'):'');
+  return t('car').replace('{t}',s);
 }
 function cssv(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+function isDesk(){return window.matchMedia('(min-width:1024px)').matches;}
 
-/* counters */
-function counters(animate){
-  document.querySelectorAll('.stat').forEach(function(b){
-    var c=b.getAttribute('data-c'); if(c==='w') return;
-    var n=+c, out=b.querySelector('b');
-    var pf=b.getAttribute('data-p')||'';
-    if(!animate){ out.textContent=pf+n; return; }
-    var t0=null;
-    (function step(ts){ if(!t0) t0=ts; var p=Math.min(1,(ts-t0)/900); out.textContent=pf+Math.round(n*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(step); })(performance.now?performance.now():0);
+/* ---------- language ---------- */
+function applyLang(){
+  document.documentElement.lang=lang; document.body.classList.toggle('th',lang==='th');
+  $('b-th').setAttribute('aria-pressed',lang==='th'); $('b-en').setAttribute('aria-pressed',lang==='en');
+  document.querySelectorAll('[data-i]').forEach(function(e){var v=t(e.getAttribute('data-i')); if(typeof v==='string') e.textContent=v;});
+  document.title=t('title');
+  var m='mailto:nan@motdang.net?subject='+encodeURIComponent(t('mailSubject'))+'&body='+encodeURIComponent(t('mailBody'));
+  $('lunch').setAttribute('href',m);
+  $('gl').textContent=t(mode==='n'?'gLn':'gLr');
+  var rt=$('routes'); rt.innerHTML=''; t('routes').forEach(function(r){var d=el('div','route'); d.appendChild(el('h3','',r[0])); d.appendChild(el('p','',r[1])); rt.appendChild(d);});
+  document.querySelectorAll('.date').forEach(function(d){
+    var day=d.getAttribute('data-d'), w=new Date(Date.UTC(2026,10,+day.slice(6),12)).getUTCDay();
+    d.querySelector('.mo').textContent=t('mo')[11]+' 2026'.replace('2026',lang==='th'?'2569':'2026');
+    d.querySelector('.wd').textContent=t('wd')[w];
+  });
+  buildRadar(); renderRead(false); buildChartLabels(); renderDD(); renderCard(); updateChip(); tickAll();
+}
+
+/* ---------- pins: map + silhouette ---------- */
+var BR=DATA.boundary[0], silPins=[];
+function silBuild(){
+  var svg=$('sil'), lat0=1e9,lat1=-1e9,lng0=1e9,lng1=-1e9, c=Math.cos(19*Math.PI/180);
+  BR.forEach(function(p){lng0=Math.min(lng0,p[0]);lng1=Math.max(lng1,p[0]);lat0=Math.min(lat0,p[1]);lat1=Math.max(lat1,p[1]);});
+  var sc=100, w=(lng1-lng0)*c*sc, h=(lat1-lat0)*sc;
+  function X(lng){return (lng-lng0)*c*sc;} function Y(lat){return (lat1-lat)*sc;}
+  svg.setAttribute('viewBox','-4 -4 '+(w+8)+' '+(h+8)); svg.setAttribute('preserveAspectRatio','xMidYMid meet');
+  $('silw').style.padding=silPad();
+  var d='M'+BR.map(function(p){return X(p[0]).toFixed(2)+' '+Y(p[1]).toFixed(2);}).join('L')+'Z';
+  var NS='http://www.w3.org/2000/svg', path=document.createElementNS(NS,'path'); path.setAttribute('d',d); svg.appendChild(path);
+  S.forEach(function(s){var c2=document.createElementNS(NS,'circle'); c2.setAttribute('cx',X(s.lng).toFixed(2)); c2.setAttribute('cy',Y(s.lat).toFixed(2)); c2.setAttribute('r','1.7'); c2.dataset.s=s.i; svg.appendChild(c2); silPins[s.i]=c2;});
+  svg.addEventListener('click',function(e){var c3=e.target.closest&&e.target.closest('circle[data-s]'); if(c3) choose(+c3.dataset.s,{fly:true});});
+}
+function silPad(){return isDesk()?'40px':(($('card').hidden?(document.querySelector('.top').offsetHeight-18):(document.querySelector('.top').offsetHeight-18))+'px 20px 56px');}
+function setPin(i,p,q){
+  if(mapReady) map.setFeatureState({source:'sch',id:i},{p:p,q:q});
+  var c=silPins[i]; if(c){ c.classList.toggle('on',p>0.5); c.setAttribute('r',(1.7+1.2*p).toFixed(2)); }
+}
+var anim={}, pulses={}, rafOn=false;
+function frame(now){
+  var any=false, k;
+  for(k in anim){ var u=(now-anim[k])/520; if(u<0){any=true;continue;} if(u>=1){setPin(+k,1,1); delete anim[k]; continue;} var e=1-Math.pow(1-u,3); setPin(+k,e,u); any=true; }
+  for(k in pulses){ var v=(now-pulses[k])/650; if(v>=1){ if(mapReady) map.setFeatureState({source:'sch',id:+k},{q:1}); delete pulses[k]; continue;} if(mapReady) map.setFeatureState({source:'sch',id:+k},{q:Math.max(0,v)}); any=true; }
+  if(any||!seqDone) requestAnimationFrame(frame); else rafOn=false;
+}
+function kick(){ if(!rafOn){rafOn=true; requestAnimationFrame(frame);} }
+function updateChip(){
+  var c=$('chip'), tx=$('chip-t');
+  if(seqDone){ c.classList.remove('run'); tx.textContent=t('chipEnd').replace('{s}',S.length); }
+  else if(!seqStarted){ c.classList.add('run'); tx.textContent=t('chipWait'); }
+  else { c.classList.add('run'); tx.textContent=t('chipRun').replace('{n}',litN).replace('{t}',DL.length); }
+  c.hidden = !(!cardOpen || isDesk());
+}
+function startSeq(){
+  if(seqStarted) return; seqStarted=true;
+  if(RM){ S.forEach(function(s){setPin(s.i,1,1);}); litN=DL.length; seqDone=true; updateChip(); return; }
+  var now=performance.now();
+  ORDER.forEach(function(d,j){
+    setTimeout(function(){
+      var t0=performance.now(); d.idx.forEach(function(i){anim[i]=t0;}); litN=j+1;
+      var tx=$('chip-t'); tx.textContent=dn(d)+' · '+t('chipRun').replace('{n}',litN).replace('{t}',DL.length);
+      kick();
+      if(j===ORDER.length-1) setTimeout(function(){seqDone=true; updateChip();},560);
+    },200+j*78);
+  });
+  kick();
+}
+function padFor(open){
+  if(isDesk()) return {top:50,bottom:50,left:50,right:50};
+  var top=document.querySelector('.top').offsetHeight-14, bot=open?($('card').offsetHeight+50):84;
+  return {top:top,bottom:bot,left:24,right:24};
+}
+function provBounds(){var b=new maplibregl.LngLatBounds(); BR.forEach(function(p){b.extend(p);}); return b;}
+function paintColors(){
+  if(!mapReady) return;
+  var p=['coalesce',['feature-state','p'],0];
+  map.setPaintProperty('pins','circle-color',['interpolate',['linear'],p,0,cssv('--unlit'),1,cssv('--pin')]);
+  map.setPaintProperty('pins','circle-stroke-color',cssv('--pin-ring'));
+  map.setPaintProperty('pulse','circle-color',cssv('--pin'));
+  map.setPaintProperty('sel','circle-color',cssv('--sel'));
+  map.setPaintProperty('sel','circle-stroke-color',cssv('--sel-ring'));
+  map.setPaintProperty('prov-line','line-color',cssv('--boundary'));
+  map.setPaintProperty('mask','fill-color',cssv('--bg'));
+}
+function initMap(){
+  if(!window.maplibregl){ silOnly(); return; }
+  try{
+    map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/liberty',bounds:provBounds(),fitBoundsOptions:{padding:padFor(false)},attributionControl:false,dragRotate:false,pitchWithRotate:false,touchPitch:false,
+      cooperativeGestures:true,locale:lang==='th'?{'CooperativeGesturesHandler.WindowsHelpText':'กด Ctrl แล้วเลื่อนเพื่อซูมแผนที่','CooperativeGesturesHandler.MacHelpText':'กด ⌘ แล้วเลื่อนเพื่อซูมแผนที่','CooperativeGesturesHandler.MobileHelpText':'ใช้สองนิ้วเพื่อเลื่อนแผนที่'}:undefined});
+  }catch(e){ silOnly(); return; }
+  map.addControl(new maplibregl.AttributionControl({compact:true}),'bottom-right');
+  if(isDesk()) map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+  map.on('error',function(e){ window.__mapErr=(e&&e.error&&e.error.message)||'err'; });
+  map.on('load',function(){
+    var world=[[-180,-85],[180,-85],[180,85],[-180,85],[-180,-85]];
+    map.addSource('prov',{type:'geojson',data:{type:'Feature',geometry:{type:'Polygon',coordinates:[world,BR]}}});
+    map.addSource('provline',{type:'geojson',data:{type:'Feature',geometry:{type:'Polygon',coordinates:[BR]}}});
+    map.addLayer({id:'mask',type:'fill',source:'prov',paint:{'fill-color':cssv('--bg'),'fill-opacity':.62}});
+    map.addLayer({id:'prov-line',type:'line',source:'provline',paint:{'line-color':cssv('--boundary'),'line-width':2.2,'line-opacity':.85}});
+    var feats=S.map(function(s){return {type:'Feature',properties:{i:s.i},geometry:{type:'Point',coordinates:[s.lng,s.lat]}};});
+    map.addSource('sch',{type:'geojson',promoteId:'i',data:{type:'FeatureCollection',features:feats}});
+    var p=['coalesce',['feature-state','p'],0], q=['coalesce',['feature-state','q'],1];
+    map.addLayer({id:'pulse',type:'circle',source:'sch',paint:{
+      'circle-radius':['interpolate',['linear'],['zoom'],7,['+',5,['*',24,q]],12,['+',8,['*',34,q]]],
+      'circle-color':cssv('--pin'),'circle-opacity':['*',.5,['-',1,q]]}});
+    map.addLayer({id:'pins',type:'circle',source:'sch',paint:{
+      'circle-radius':['interpolate',['linear'],['zoom'],7,['+',3.5,['*',3.5,p]],12,['+',6,['*',5,p]]],
+      'circle-color':['interpolate',['linear'],p,0,cssv('--unlit'),1,cssv('--pin')],
+      'circle-stroke-color':cssv('--pin-ring'),
+      'circle-stroke-width':['interpolate',['linear'],p,0,0,1,2]}});
+    map.addLayer({id:'sel',type:'circle',source:'sch',filter:['==',['get','i'],-1],paint:{
+      'circle-radius':['interpolate',['linear'],['zoom'],7,11,12,16],'circle-color':cssv('--sel'),'circle-stroke-color':cssv('--sel-ring'),'circle-stroke-width':3}});
+    mapReady=true;
+    S.forEach(function(s){ if(!seqStarted) map.setFeatureState({source:'sch',id:s.i},{p:0,q:1}); });
+    if(sel!=null&&cardOpen) map.setFilter('sel',['==',['get','i'],sel]);
+    map.on('click',function(e){
+      var pt=e.point, f=map.queryRenderedFeatures([[pt.x-18,pt.y-18],[pt.x+18,pt.y+18]],{layers:['pins']});
+      if(!f.length) return;
+      var best=null,bd=1e9;
+      f.forEach(function(x){var s=S[x.properties.i], pp=map.project([s.lng,s.lat]), dd=Math.hypot(pp.x-pt.x,pp.y-pt.y); if(dd<bd){bd=dd;best=s;}});
+      choose(best.i,{fly:true});
+    });
+    map.on('mousemove',function(e){var pt=e.point; map.getCanvas().style.cursor=map.queryRenderedFeatures([[pt.x-10,pt.y-10],[pt.x+10,pt.y+10]],{layers:['pins']}).length?'pointer':'';});
+    map.once('idle',function(){ $('map').classList.add('ready'); $('silw').classList.add('off'); window.__mapLoaded=true;
+      if(seqStarted){ S.forEach(function(s){ var c=silPins[s.i]; if(c&&c.classList.contains('on')) setPin(s.i,1,1); }); } else setTimeout(startSeq,350); });
+  });
+  setTimeout(function(){ if(!seqStarted) startSeq(); },7000);
+}
+function silOnly(){ $('map').style.display='none'; setTimeout(startSeq,400); }
+window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').addEventListener&&window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(){setTimeout(paintColors,50);});
+
+/* ---------- selection ---------- */
+function choose(i,o){
+  o=o||{}; sel=i; var s=S[i];
+  if(o.fly!==false||o.card) cardOpen=true;
+  renderCard(); renderRead(true); markRadar(true); markChart(); updateChip();
+  S.forEach(function(x){ if(silPins[x.i]) silPins[x.i].classList.toggle('sel',x.i===i&&cardOpen); });
+  if(mapReady){
+    map.setFilter('sel',cardOpen?['==',['get','i'],i]:['==',['get','i'],-1]);
+    pulses[i]=performance.now(); kick();
+    if(o.fly) map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),9.4),padding:padFor(true),duration:RM?0:700});
+  }
+  if(o.scroll){ var d=$('distance'); d.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'}); }
+}
+function closeCard(){
+  cardOpen=false; $('card').hidden=true; updateChip();
+  S.forEach(function(x){ if(silPins[x.i]) silPins[x.i].classList.remove('sel'); });
+  if(mapReady){ map.setFilter('sel',['==',['get','i'],-1]); map.fitBounds(provBounds(),{padding:padFor(false),duration:RM?0:600}); }
+}
+function renderCard(){
+  var c=$('card'); $('phint').hidden=cardOpen&&isDesk();
+  if(!cardOpen||sel==null){ c.hidden=true; $('phint').hidden=false; return; }
+  c.hidden=false; $('phint').hidden=true;
+  var s=S[sel]; c.innerHTML='';
+  c.appendChild(el('div','kick',dn(D[s.amphoe])));
+  c.appendChild(el('h3','',nm(s)));
+  var a=alt(s); if(a) c.appendChild(el('p','alt',a));
+  var sub=(s.students!=null?s.students.toLocaleString(lang==='th'?'th-TH':'en-US')+' '+t('unitStu'):'');
+  if(sub) c.appendChild(el('p','sub',sub));
+  var f=el('div','facts');
+  function fact(b,sp){var d=el('div'); d.appendChild(el('b','',b)); d.appendChild(el('span','',sp)); f.appendChild(d); return d;}
+  fact(km(s.r),t('byRoad')); fact(km(s.k),t('straight')); fact(lvl(s.levels),t('classes')).className='cls';
+  var bt=el('button','btn',t('distBtn')+' ↓'); bt.type='button'; bt.addEventListener('click',function(){choose(sel,{scroll:true,fly:false});}); f.appendChild(bt);
+  c.appendChild(f);
+  var x=el('button','x','×'); x.type='button'; x.setAttribute('aria-label','Close'); x.addEventListener('click',closeCard); c.appendChild(x);
+}
+
+/* ---------- distance dial ---------- */
+var RM_MAX=170, RR=186, NSVG='http://www.w3.org/2000/svg';
+function rr(k){return RR*Math.sqrt(Math.min(k,RM_MAX)/RM_MAX);}
+function sv(tag,attrs,txt){var e=document.createElementNS(NSVG,tag); for(var k in attrs) e.setAttribute(k,attrs[k]); if(txt!=null) e.textContent=txt; return e;}
+function buildRadar(){
+  var svg=$('radar'); svg.innerHTML='';
+  [25,50,100,150].forEach(function(k){
+    svg.appendChild(sv('circle',{cx:0,cy:0,r:rr(k).toFixed(1),'class':'ring'}));
+    var a=150*Math.PI/180, r=rr(k);
+    svg.appendChild(sv('text',{x:(r*Math.sin(a)).toFixed(1),y:(-r*Math.cos(a)+3).toFixed(1),'class':'lab','text-anchor':'middle'},k+(lang==='th'?' กม.':' km')));
+  });
+  [['n',0,-198],['e',198,4],['s',0,206],['w',-198,4]].forEach(function(c){svg.appendChild(sv('text',{x:c[1],y:c[2],'class':'cp','text-anchor':'middle'},t(c[0])));});
+  svg.appendChild(sv('line',{id:'spoke','class':'spoke',x1:0,y1:0,x2:0,y2:0}));
+  S.forEach(function(s){
+    var r=rr(s.k), a=s.b*Math.PI/180, x=(r*Math.sin(a)).toFixed(1), y=(-r*Math.cos(a)).toFixed(1);
+    var g=sv('g',{'data-s':s.i,tabindex:0,role:'button','aria-label':nm(s)+', '+km(s.k)});
+    g.appendChild(sv('circle',{cx:x,cy:y,r:13,'class':'hit'}));
+    g.appendChild(sv('circle',{cx:x,cy:y,r:5,'class':'dot'}));
+    svg.appendChild(g);
+  });
+  svg.appendChild(sv('text',{x:0,y:-12,'class':'cp cl','text-anchor':'middle'},lang==='th'?'เชียงใหม่':'Chiang Mai'));
+  svg.appendChild(sv('circle',{cx:0,cy:0,r:5,'class':'city'}));
+  markRadar(false);
+}
+function markRadar(animate){
+  var svg=$('radar'), sp=$('spoke'); if(!svg||!sp) return;
+  svg.querySelectorAll('g[data-s]').forEach(function(g){
+    var on=sel!=null&&+g.getAttribute('data-s')===sel; g.classList.toggle('on',on);
+    if(on){ svg.appendChild(g); if(animate&&!RM){g.classList.remove('pop'); void g.getBoundingClientRect(); g.classList.add('pop');} }
+  });
+  if(sel==null){ sp.setAttribute('x2',0); sp.setAttribute('y2',0); return; }
+  var s=S[sel], r=rr(s.k), a=s.b*Math.PI/180, x=r*Math.sin(a), y=-r*Math.cos(a);
+  sp.setAttribute('x2',x.toFixed(1)); sp.setAttribute('y2',y.toFixed(1));
+  if(animate&&!RM){ var len=r; sp.style.transition='none'; sp.setAttribute('stroke-dasharray',len); sp.style.strokeDashoffset=len; void sp.getBoundingClientRect(); sp.style.transition='stroke-dashoffset .6s ease-out'; sp.style.strokeDashoffset=0; }
+  else { sp.removeAttribute('stroke-dasharray'); sp.style.strokeDashoffset=0; }
+  $('walk').value=BYK.indexOf(s);
+}
+function renderRead(animate){
+  var c=$('read'); c.innerHTML='';
+  var s=sel==null?null:S[sel];
+  if(!s){ c.appendChild(el('p','sub',t('phint'))); return; }
+  c.appendChild(el('div','kick',dn(D[s.amphoe])));
+  var h=el('h3','',nm(s)); h.style.marginTop='8px'; c.appendChild(h);
+  var a=alt(s); if(a) c.appendChild(el('p','alt',a));
+  c.appendChild(el('p','sub',lvl(s.levels)+(s.students!=null?' · '+s.students.toLocaleString(lang==='th'?'th-TH':'en-US')+' '+t('unitStu'):'')));
+  function row(cls,lab,val,max){
+    var r=el('div','brow '+cls); r.appendChild(el('span','',lab));
+    var tr=el('div','trk'), i=el('i'); tr.appendChild(i); r.appendChild(tr);
+    var b=el('b','',km(val)); r.appendChild(b); c.appendChild(r);
+    var w=Math.max(2,val/max*100)+'%';
+    if(animate&&!RM){ setTimeout(function(){i.style.width=w;},30); countUp(b,val); } else i.style.width=w;
+  }
+  row('road',t('byRoad'),s.r,260); row('line',t('straight'),s.k,260);
+  c.appendChild(el('p','car',durTxt(s.m)+' · '+(lang==='th'?'ประมาณการ':'estimate')));
+}
+function countUp(node,to){
+  var t0=performance.now(), d=520;
+  (function st(now){var u=Math.min(1,(now-t0)/d), e=1-Math.pow(1-u,3); node.textContent=km(to*e); if(u<1) requestAnimationFrame(st); else node.textContent=km(to);})(t0);
+}
+function pickBy(k){
+  var i=k==='near'?BYK[0].i:k==='far'?BYK[BYK.length-1].i:Math.floor(Math.random()*S.length);
+  choose(i,{fly:false,card:false});
+}
+
+/* ---------- districts chart ---------- */
+var ROWH=36, rowEls={}, chartShown=false;
+function buildChart(){
+  var ch=$('chart'); ch.style.height=(DL.length*ROWH)+'px';
+  DL.forEach(function(d){
+    var b=el('button','crow'); b.type='button'; b.dataset.a=d.th; b.setAttribute('aria-pressed','false');
+    b.appendChild(el('span','nm')); var tr=el('span','trk'); tr.appendChild(el('i')); b.appendChild(tr); b.appendChild(el('span','v'));
+    b.addEventListener('click',function(){ openD=(openD===d.th?null:d.th); markChart(); renderDD(); });
+    ch.appendChild(b); rowEls[d.th]=b;
+  });
+  sortChart(false);
+  if('IntersectionObserver' in window){ var io=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ io.disconnect(); sortChart(true); } },{threshold:.25}); io.observe(ch); }
+  else sortChart(true);
+}
+function buildChartLabels(){ DL.forEach(function(d){ rowEls[d.th].querySelector('.nm').textContent=dn(d); }); sortChart(false); }
+function cmpName(a,b){return lang==='th'?a.th.localeCompare(b.th,'th'):a.en.localeCompare(b.en);}
+function sortChart(animate){
+  var rows=DL.slice().sort(mode==='n'?function(a,b){return b.idx.length-a.idx.length||cmpName(a,b);}:function(a,b){return b.avg-a.avg;});
+  var max=mode==='n'?Math.max.apply(null,DL.map(function(d){return d.idx.length;})):Math.max.apply(null,DL.map(function(d){return d.avg;}));
+  rows.forEach(function(d,pos){
+    var b=rowEls[d.th]; b.style.transform='translateY('+(pos*ROWH)+'px)';
+    var v=mode==='n'?d.idx.length:d.avg; b.querySelector('.v').textContent=mode==='n'?v:Math.round(v);
+    var w=(v/max*100)+'%'; var i=b.querySelector('i'); if(animate) chartShown=true; if(!chartShown) i.style.width='0'; else if(animate) setTimeout(function(){i.style.width=w;},30); else i.style.width=w;
   });
 }
-/* countdowns */
+function markChart(){
+  DL.forEach(function(d){ rowEls[d.th].setAttribute('aria-pressed',String(openD===d.th)); });
+}
+function renderDD(){
+  var c=$('dd'); c.innerHTML='';
+  if(openD==null){ c.appendChild(el('p','',t('ddHint'))); return; }
+  var d=D[openD];
+  c.appendChild(el('b','',dn(d)));
+  c.appendChild(el('p','',d.idx.length+' '+t(d.idx.length===1?'ddOne':'ddMany')+' · '+t('byRoad')+' '+km(d.avg)+' ('+(lang==='th'?'เฉลี่ย':'average')+')'));
+  var ch=el('div','chips');
+  d.idx.slice().sort(function(a,b){return S[a].r-S[b].r;}).forEach(function(i){
+    var b=el('button'); b.type='button'; b.appendChild(document.createTextNode(nm(S[i]))); b.appendChild(el('small','',km(S[i].r)+' '+t('byRoad')));
+    b.addEventListener('click',function(){choose(i,{scroll:true,fly:false});}); ch.appendChild(b);
+  });
+  c.appendChild(ch);
+}
+
+/* ---------- counters + dates ---------- */
+function daysLeft(){return Math.max(0,Math.floor((DAYS_END-Date.now())/86400000));}
+function roll(node,from,to,pre,ms){
+  var t0=performance.now();
+  (function st(now){var u=Math.min(1,(now-t0)/ms), e=1-Math.pow(1-u,3); node.textContent=(pre||'')+Math.round(from+(to-from)*e); if(u<1) requestAnimationFrame(st);})(t0);
+}
+function counters(){
+  document.querySelectorAll('.stat').forEach(function(b){
+    var c=b.getAttribute('data-c'), out=b.querySelector('b'), pre=b.getAttribute('data-p')||'';
+    if(c==='days'){ var d=daysLeft(); if(RM) out.textContent=d; else roll(out,d+12,d,'',900); return; }
+    var n=+c; if(RM) out.textContent=pre+n; else roll(out,+b.getAttribute('data-from'),n,pre,800);
+  });
+}
 function tickAll(){
-  document.querySelectorAll('[data-cd]').forEach(function(el){
-    var ms=new Date(el.getAttribute('data-cd')).getTime()-Date.now();
-    var bs=el.querySelectorAll('b');
+  document.querySelectorAll('[data-cd]').forEach(function(d){
+    var ms=new Date(d.getAttribute('data-cd')).getTime()-Date.now(), bs=d.querySelectorAll('.t b'), sp=d.querySelectorAll('.t span');
+    if(d.classList.contains('wk')){
+      var dd=Math.max(0,Math.floor(ms/86400000)); bs[0].textContent=Math.floor(dd/7); bs[1].textContent=dd%7; bs[2].textContent=''; bs[3].textContent='';
+      sp[0].textContent=lang==='th'?'สัปดาห์':'weeks'; sp[1].textContent=t('u_d'); sp[2].textContent=''; sp[3].textContent=''; return;
+    }
+    sp[0].textContent=t('u_d'); sp[1].textContent=t('u_h'); sp[2].textContent=t('u_m'); sp[3].textContent=t('u_s');
     if(ms<=0){ bs.forEach(function(b){b.textContent='0';}); return; }
-    var s=Math.floor(ms/1000);
-    var v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
+    var s=Math.floor(ms/1000), v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
     bs.forEach(function(b,i){b.textContent=i===0?v[i]:String(v[i]).padStart(2,'0');});
   });
 }
+function icsFor(d,title){
+  var day=d.getAttribute('data-d'), nx=new Date(Date.UTC(+day.slice(0,4),+day.slice(4,6)-1,+day.slice(6)+1)), n2=nx.getUTCFullYear()+String(nx.getUTCMonth()+1).padStart(2,'0')+String(nx.getUTCDate()).padStart(2,'0');
+  var s='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//NaN//Eveline//EN\r\nBEGIN:VEVENT\r\nUID:'+day+'-ferc@hongdam.net\r\nDTSTAMP:20261019T000000Z\r\nDTSTART;VALUE=DATE:'+day+'\r\nDTEND;VALUE=DATE:'+n2+'\r\nSUMMARY:'+title.replace(/[,;]/g,' ')+'\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n';
+  return 'data:text/calendar;charset=utf-8,'+encodeURIComponent(s);
+}
+
+/* ---------- boot ---------- */
 document.addEventListener('DOMContentLoaded',function(){
+  silBuild(); buildChart();
   $('b-th').addEventListener('click',function(){lang='th';applyLang();});
   $('b-en').addEventListener('click',function(){lang='en';applyLang();});
-  $('dist').addEventListener('change',function(){buildList();});
-  document.querySelectorAll('.stat').forEach(function(b){b.addEventListener('click',function(){counters(true);});});
+  document.querySelectorAll('.stat').forEach(function(b){b.addEventListener('click',counters);});
+  $('radar').addEventListener('click',function(e){var g=e.target.closest&&e.target.closest('g[data-s]'); if(g) choose(+g.getAttribute('data-s'),{fly:false,card:false});});
+  $('radar').addEventListener('keydown',function(e){ if(e.key!=='Enter'&&e.key!==' ') return; var g=e.target.closest&&e.target.closest('g[data-s]'); if(g){e.preventDefault(); choose(+g.getAttribute('data-s'),{fly:false,card:false});} });
+  $('l-near').addEventListener('click',function(){pickBy('near');});
+  $('l-far').addEventListener('click',function(){pickBy('far');});
+  $('l-any').addEventListener('click',function(){pickBy('any');});
+  $('walk').addEventListener('input',function(){choose(BYK[+this.value].i,{fly:false,card:false});});
+  $('m-n').addEventListener('click',function(){mode='n';$('m-n').setAttribute('aria-pressed','true');$('m-r').setAttribute('aria-pressed','false');$('gl').textContent=t('gLn');sortChart(true);});
+  $('m-r').addEventListener('click',function(){mode='r';$('m-r').setAttribute('aria-pressed','true');$('m-n').setAttribute('aria-pressed','false');$('gl').textContent=t('gLr');sortChart(true);});
+  document.querySelectorAll('.date').forEach(function(d){
+    d.addEventListener('click',function(e){ if(e.target.closest('.ics')) return; d.classList.toggle('wk'); tickAll(); });
+    d.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); d.classList.toggle('wk'); tickAll(); } });
+    d.querySelector('.ics').addEventListener('click',function(e){ this.href=icsFor(d,d.querySelector('h3').textContent+' '+d.querySelector('p').textContent); this.download='ferc-'+d.getAttribute('data-d')+'.ics'; });
+  });
   applyLang();
-  counters(true);
+  var s0=BYK[Math.floor(BYK.length/2)]; sel=s0.i; markRadar(false); renderRead(false);
+  counters();
   setInterval(tickAll,1000);
-  if(window.maplibregl) initMap(); else { $('map').style.display='none'; $('nomap').style.display='block'; }
+  window.addEventListener('resize',function(){ if(mapReady) map.resize(); $('silw').style.padding=silPad(); });
+  initMap();
 });
 </script>
 </body>
