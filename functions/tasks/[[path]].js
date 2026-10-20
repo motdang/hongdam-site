@@ -88,7 +88,7 @@ function page({ title, desc, path, body, noindex }) {
 <link rel="alternate" type="application/json" href="/api/tasks">
 <link rel="stylesheet" href="/assets/rt.css"><style>${CSS}</style></head><body>
 <header class="top"><a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-<nav><a href="/tasks"${path === '/tasks' ? ' aria-current="page"' : ''}>Tasks</a><a href="/tasks/graph/">Graph</a><a href="/translation/">Translation</a><a href="/own">Own</a></nav></header>
+<nav><a href="/events">Events</a><a href="/tasks"${path === '/tasks' ? ' aria-current="page"' : ''}>Tasks</a><a href="/tasks/graph/">Graph</a><a href="/translation/">Translation</a><a href="/own">Own</a></nav></header>
 <main>${body}</main>
 <footer><span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai · tasks answered by <a href="https://motdang.net/">Mot Dang</a>, <a href="/">Hongdam</a> and <a href="https://chiangmaivisadesk.com/">Chiang Mai Visa Desk</a> · <a href="/api/tasks">API</a> · <a href="/tasks/graph.json">graph.json</a></footer>
 <script>
