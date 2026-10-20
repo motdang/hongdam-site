@@ -70,7 +70,7 @@ export async function onRequestGet() {
 <p class="lede">Meetups, talks and workshops on AI, code and startups in Chiang Mai and Chiang Rai. The list comes from <a href="https://motdang.net/tech/">motdang.net/tech</a>, read from Luma, Meetup and Mot Dang's calendars every 30 minutes.</p>
 <div class="go"><a class="btn" href="webcal://motdang.net/tech/events.ics">Follow in your calendar</a><a class="btn alt" href="https://motdang.net/tech/">motdang.net/tech</a><a class="btn alt" href="/tasks">Bring a problem · Tasks</a><a class="btn alt" href="https://sites.motdang.net/make">List your event</a></div>
 ${list.length ? weeks(list) : `<p class="none">${ok ? 'Nothing listed for now.' : 'The list did not load just now. <a href="https://motdang.net/tech/">motdang.net/tech</a> has it.'}</p>`}
-<p class="src">Check with the host before you go. Run a group or meetup? Make it a free page on <a href="https://sites.motdang.net/make">sites.motdang.net</a> with your Luma or Meetup link and its events show here.</p>`
+<p class="src">Check with the host before you go. Run a group or meetup? Make it a free page on <a href="https://sites.motdang.net/make">sites.motdang.net</a> with your Luma or Meetup link and its events show here. Flying in for one? <a href="https://motdang.net/flights.html#board">Every flight into Chiang Mai and Chiang Rai</a>, with fares seen today on the Bangkok runs.</p>`
   return new Response(`<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${e(title)}</title><meta name="description" content="${e(desc)}">
