@@ -20,6 +20,8 @@ SWITCH = [("en", "English"), ("th", "ไทย"), ("my", "မြန်မာ")]
 
 W = {
     "en": {
+        "card": "translation",
+        "card_alt": "Card: Translation between Thai, English and Burmese, Hongdam.",
         "title": "Translation — Thai, English, Burmese · Hongdam",
         "desc": "Hongdam translates papers, business text and conversations between Thai, English and Burmese. Chiang Rai and Chiang Mai in person; by phone or video anywhere.",
         "h1": "Translation",
@@ -74,6 +76,8 @@ W = {
         "or_mail": "Or email", "home": "hongdam.net",
     },
     "th": {
+        "card": "translation-th",
+        "card_alt": "การ์ด: แปลเอกสาร ไทย อังกฤษ พม่า, หงส์ดำ",
         "title": "แปลเอกสาร ไทย อังกฤษ พม่า · หงส์ดำ",
         "desc": "หงส์ดำแปลเอกสาร ข้อความธุรกิจ และล่ามสนทนา ระหว่างภาษาไทย อังกฤษ และพม่า ล่ามตัวจริงที่เชียงรายและเชียงใหม่ ทางโทรศัพท์หรือวิดีโอได้ทุกที่",
         "h1": "แปลภาษา",
@@ -128,6 +132,8 @@ W = {
         "or_mail": "หรืออีเมล", "home": "hongdam.net",
     },
     "my": {
+        "card": "translation-my",
+        "card_alt": "ကတ်: ဘာသာပြန် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ၊ Hongdam",
         "title": "ဘာသာပြန် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ · Hongdam",
         "desc": "Hongdam သည် ထိုင်း၊ အင်္ဂလိပ်နှင့် မြန်မာဘာသာများကြား စာရွက်စာတမ်း၊ လုပ်ငန်းသုံးစာနှင့် စကားပြန် လုပ်ပေးပါသည်။ ချင်းရိုင်နှင့် ချင်းမိုင်တွင် လူကိုယ်တိုင်၊ ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့် မည်သည့်နေရာမဆို။",
         "h1": "ဘာသာပြန်",
@@ -288,8 +294,7 @@ def page(lang):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{e(t["title"])}">
 <meta property="og:description" content="{e(t["desc"])}">
-<meta property="og:image" content="https://hongdam.net/assets/card.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://hongdam.net/og/{t["card"]}.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="{e(t["card_alt"])}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/{t["card"]}.jpg"><meta name="twitter:image:alt" content="{e(t["card_alt"])}">
 <link rel="stylesheet" href="/assets/rt.css">
 <style>{CSS}</style>
 <meta name="google" content="notranslate">
