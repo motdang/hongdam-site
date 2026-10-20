@@ -6,6 +6,9 @@
  */
 const ORIGIN = 'https://hongdam.net'
 const FEED = 'https://motdang.net/tech/events.json?kind=tech&n=80&days=90'
+const safe = (u) => { try { const x = new URL(String(u || '')); return /^https?:$/.test(x.protocol) ? x.href : '' } catch { return '' } }
+// Monday 00:00 in Bangkok, `n` weeks on from this one, as UTC ms
+const weekStart = (ms, n) => { const b = new Date(ms + 7 * 3600e3); return Date.UTC(b.getUTCFullYear(), b.getUTCMonth(), b.getUTCDate()) - ((b.getUTCDay() + 6) % 7) * 864e5 + n * 7 * 864e5 - 7 * 3600e3 }
 const e = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
 
 const CSS = `
@@ -26,7 +29,7 @@ h2.wk{margin:30px 0 12px;font-size:20px;border-bottom:1px solid var(--line);padd
 @media (max-width:420px){.ev{grid-template-columns:50px 1fr;gap:10px}.d{font-size:18px}}`
 
 function weeks(list) {
-  const now = Date.now(), wk = (n) => now + n * 7 * 864e5
+  const wk = (n) => weekStart(Date.now(), n)
   const used = new Set()
   return [['This week · สัปดาห์นี้', (s) => s < wk(1)], ['Next week · สัปดาห์หน้า', (s) => s < wk(2)], ['Later · หลังจากนั้น', () => true]].map(([h, f]) => {
     const mine = list.filter((x) => !used.has(x.id) && f(Date.parse(x.start)))
@@ -35,7 +38,8 @@ function weeks(list) {
   }).join('')
 }
 
-function card(x) {
+function card(raw) {
+  const x = { ...raw, url: safe(raw.url), hostUrl: safe(raw.hostUrl), ics: safe(raw.ics), place: raw.place && safe(raw.place.url) ? { name: raw.place.name, url: safe(raw.place.url) } : null }
   const dd = new Date(Date.parse(x.start) + 7 * 3600e3)
   const where = x.place ? `<a href="${e(x.place.url)}">${e(x.place.name)}</a>` : e(x.venue || x.area || '')
   const tags = [
@@ -47,7 +51,7 @@ function card(x) {
 <p class="m">${e(x.when.en)}${x.when.time ? ' · ' + e(x.when.time) : ''}${where ? ' · ' + where : ''}</p>
 ${x.host ? `<p class="m">Host: ${x.hostUrl ? `<a href="${e(x.hostUrl)}" rel="noopener">${e(x.host)}</a>` : e(x.host)}</p>` : ''}
 ${tags ? `<div class="tags">${tags}</div>` : ''}
-<p class="acts">${x.url ? `<a href="${e(x.url)}" rel="noopener">Register / details ↗</a>` : ''}<a href="${e(x.ics)}">Add to calendar</a></p></div></article>`
+<p class="acts">${x.url ? `<a href="${e(x.url)}" rel="noopener">Register / details ↗</a>` : ''}${x.ics ? `<a href="${e(x.ics)}">Add to calendar</a>` : ''}</p></div></article>`
 }
 
 export async function onRequestGet() {
@@ -58,7 +62,7 @@ export async function onRequestGet() {
     ok = r.ok
   } catch { ok = false }
   const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'Tech & AI events in Chiang Mai and Chiang Rai', itemListElement: list.slice(0, 40).map((x, i) => ({
-    '@type': 'ListItem', position: i + 1, item: { '@type': 'Event', name: x.title, startDate: x.start, ...(x.end ? { endDate: x.end } : {}), url: x.url || 'https://motdang.net/tech/',
+    '@type': 'ListItem', position: i + 1, item: { '@type': 'Event', name: x.title, startDate: x.start, ...(x.end ? { endDate: x.end } : {}), url: safe(x.url) || 'https://motdang.net/tech/',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', location: { '@type': 'Place', name: (x.place && x.place.name) || x.venue || x.area || 'Chiang Mai' } } })) }
   const title = 'Tech & AI events · Chiang Mai and Chiang Rai · Hongdam'
   const desc = 'Meetups, talks and workshops on AI, code and startups in northern Thailand, read from motdang.net every 30 minutes.'
