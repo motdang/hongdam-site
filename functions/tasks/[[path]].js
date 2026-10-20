@@ -79,7 +79,7 @@ footer{max-width:980px;margin:0 auto;padding:24px 16px 48px;color:var(--cream-di
 `
 
 // /tasks has its own card; the pages under it keep the shared one.
-function card(path) {
+function socialCard(path) {
   const own = path === '/tasks'
   const img = `${ORIGIN}${own ? '/og/tasks.jpg' : '/assets/card.jpg'}`
   const alt = own ? 'Card: Tasks, งาน, post work for people or bots, Hongdam.' : 'Hongdam หงส์ดำ, Chiang Rai'
@@ -91,7 +91,7 @@ function page({ title, desc, path, body, noindex }) {
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${e(title)}</title><meta name="description" content="${e(desc)}">
 <meta property="og:type" content="website"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(desc)}">
-<meta property="og:url" content="${ORIGIN}${e(path)}">${card(path)}
+<meta property="og:url" content="${ORIGIN}${e(path)}">${socialCard(path)}
 <link rel="icon" href="/assets/favicon.svg"><link rel="canonical" href="${ORIGIN}${e(path)}">${noindex ? '<meta name="robots" content="noindex">' : ''}
 <link rel="alternate" type="application/json" href="/api/tasks">
 <link rel="stylesheet" href="/assets/rt.css"><style>${CSS}</style></head><body>
