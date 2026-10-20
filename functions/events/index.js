@@ -75,7 +75,7 @@ ${list.length ? weeks(list) : `<p class="none">${ok ? 'Nothing listed for now.' 
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${e(title)}</title><meta name="description" content="${e(desc)}">
 <meta property="og:type" content="website"><meta property="og:title" content="Tech & AI events · Chiang Mai and Chiang Rai"><meta property="og:description" content="${e(desc)}">
-<meta property="og:url" content="${ORIGIN}/events"><meta property="og:image" content="${ORIGIN}/assets/card.jpg"><meta property="og:image:alt" content="Hongdam หงส์ดำ, Chiang Rai"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="${ORIGIN}/events"><meta property="og:image" content="${ORIGIN}/og/events.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Card: Tech &amp; AI events, Chiang Mai and Chiang Rai, Hongdam."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${ORIGIN}/og/events.jpg"><meta name="twitter:image:alt" content="Card: Tech &amp; AI events, Chiang Mai and Chiang Rai, Hongdam.">
 <link rel="icon" href="/assets/favicon.svg"><link rel="canonical" href="${ORIGIN}/events"><link rel="alternate" type="text/calendar" href="https://motdang.net/tech/events.ics">
 <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>
 <link rel="stylesheet" href="/assets/rt.css"><style>${CSS}</style></head><body>

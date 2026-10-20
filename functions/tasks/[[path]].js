@@ -78,12 +78,20 @@ footer{max-width:980px;margin:0 auto;padding:24px 16px 48px;color:var(--cream-di
 @media (max-width:520px){.pay{font-size:23px} h1{font-size:34px}}
 `
 
+// /tasks has its own card; the pages under it keep the shared one.
+function socialCard(path) {
+  const own = path === '/tasks'
+  const img = `${ORIGIN}${own ? '/og/tasks.jpg' : '/assets/card.jpg'}`
+  const alt = own ? 'Card: Tasks, งาน, post work for people or bots, Hongdam.' : 'Hongdam หงส์ดำ, Chiang Rai'
+  return `<meta property="og:image" content="${img}">${own ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">' : ''}<meta property="og:image:alt" content="${alt}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${img}"><meta name="twitter:image:alt" content="${alt}">`
+}
+
 function page({ title, desc, path, body, noindex }) {
   return new Response(`<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${e(title)}</title><meta name="description" content="${e(desc)}">
 <meta property="og:type" content="website"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(desc)}">
-<meta property="og:url" content="${ORIGIN}${e(path)}"><meta property="og:image" content="${ORIGIN}/assets/card.jpg"><meta property="og:image:alt" content="Hongdam หงส์ดำ, Chiang Rai"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="${ORIGIN}${e(path)}">${socialCard(path)}
 <link rel="icon" href="/assets/favicon.svg"><link rel="canonical" href="${ORIGIN}${e(path)}">${noindex ? '<meta name="robots" content="noindex">' : ''}
 <link rel="alternate" type="application/json" href="/api/tasks">
 <link rel="stylesheet" href="/assets/rt.css"><style>${CSS}</style></head><body>

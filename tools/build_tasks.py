@@ -159,8 +159,8 @@ def write_page(g):
 <title>Task graph · Hongdam</title>
 <meta name="description" content="{len(roots)} groups and {n_cat} kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer, as a graph that grows when posters name new work.">
 <meta property="og:title" content="Task graph · กราฟงาน · Hongdam"><meta property="og:description" content="{len(roots)} groups and {n_cat} kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer.">
-<meta property="og:type" content="website"><meta property="og:image" content="https://hongdam.net/assets/card.jpg"><meta property="og:image:alt" content="Hongdam หงส์ดำ, Chiang Rai">
-<meta property="og:url" content="https://hongdam.net/tasks/graph/"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://hongdam.net/og/tasks-graph.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Card: Task graph, the kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/tasks-graph.jpg"><meta name="twitter:image:alt" content="Card: Task graph, the kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://hongdam.net/tasks/graph/">
 <link rel="icon" href="/assets/favicon.svg"><link rel="canonical" href="https://hongdam.net/tasks/graph/">
 <link rel="alternate" type="application/json" href="/tasks/graph.json">
 <link rel="stylesheet" href="/assets/rt.css">
