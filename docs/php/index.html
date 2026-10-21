@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PHP fix · แก้ PHP — Hongdam</title>
+<meta name="description" content="PHP2Shell lets a stranger take over a PHP server. Our team puts a fixed PHP on your site or server. Priced by bookings. แก้ PHP หลังช่องโหว่ PHP2Shell">
+<meta name="theme-color" content="#171009">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="canonical" href="https://hongdam.net/php/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hongdam.net/php/">
+<meta property="og:title" content="PHP fix · แก้ PHP">
+<meta property="og:description" content="PHP2Shell lets a stranger take over a PHP server. Our team puts a fixed PHP on your site or server.">
+<meta property="og:image" content="https://hongdam.net/og/php.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Card: PHP fix. Hongdam's team puts a fixed PHP on your site or server."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/php.jpg"><meta name="twitter:image:alt" content="Card: PHP fix. Hongdam's team puts a fixed PHP on your site or server.">
+<link rel="stylesheet" href="/assets/rt.css">
+<style>
+  .pair{margin:14px 0 26px; max-width:62ch}
+  .pair p{color:var(--cream-dim)}
+  .pair p[lang="th"]{color:var(--cream); margin-bottom:6px}
+  section{margin-top:52px}
+  h2{margin-bottom:14px}
+  .go{display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin:8px 0 6px}
+  .go small{color:var(--cream-dim); font-size:15px}
+  .why{font-family:Georgia,serif; font-size:clamp(22px,4vw,30px); line-height:1.35; color:var(--cream); max-width:32ch}
+  .why span{display:block; font-family:"Thonburi","Noto Sans Thai",sans-serif; font-size:.7em; color:var(--gold-deep); margin-top:8px}
+  .why a{color:var(--gold)}
+  code{font-size:.92em; color:var(--cream); background:var(--lacquer-3); padding:1px 6px; border-radius:5px}
+  .kinds{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px}
+  .kind{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:20px; display:flex; flex-direction:column; gap:10px}
+  .kind h3{font-family:Georgia,serif; font-size:20px; color:var(--cream); font-weight:600}
+  .kind h3 span{display:block; font-family:"Thonburi","Noto Sans Thai",sans-serif; font-size:15px; color:var(--gold-deep); font-weight:500}
+  .kind .for{font-size:14px; color:var(--cream-dim)}
+  .kind .for span{display:block; color:var(--cream)}
+  .kind b.p{font-family:Georgia,serif; font-size:34px; color:var(--gold); line-height:1}
+  .kind .usd{color:var(--cream-dim); font-size:15px}
+  .kind .rng{color:var(--cream-dim); font-size:14px}
+  .kind ul{padding-left:18px; color:var(--cream-dim); font-size:15px}
+  .kind li span{display:block; color:var(--cream)}
+  .kind .slots{font-size:14px; color:var(--jade)}
+  .kind .slots.full{color:var(--verm)}
+  .kind .btn{margin-top:auto; text-align:center}
+  ol.how{list-style:none; counter-reset:s; display:grid; gap:14px; max-width:62ch}
+  ol.how li{counter-increment:s; position:relative; padding-left:44px; color:var(--cream-dim); font-size:16px}
+  ol.how li::before{content:counter(s); position:absolute; left:0; top:0; width:30px; height:30px; border-radius:50%; background:var(--gold); color:var(--lacquer); font-weight:700; display:grid; place-items:center}
+  ol.how li b{color:var(--cream)}
+  ol.how li span[lang="th"]{display:block; color:var(--cream)}
+  .shoup{max-width:62ch; color:var(--cream-dim); font-size:16px}
+  .shoup span[lang="th"]{display:block; color:var(--cream); margin-bottom:4px}
+  .shoup + .shoup{margin-top:10px}
+  form.book{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:20px; max-width:560px; display:grid; gap:14px}
+  form.book fieldset{border:0; display:grid; gap:6px}
+  form.book legend{font-weight:600; margin-bottom:4px}
+  form.book label{display:flex; flex-direction:column; gap:4px; font-size:16px}
+  form.book label.r{flex-direction:row; align-items:center; gap:10px; text-transform:none; letter-spacing:0; color:var(--cream); font-size:15px; min-height:44px}
+  form.book label.r b{white-space:nowrap}
+  form.book label .hint{text-transform:none; letter-spacing:0; color:var(--cream-dim)}
+  form.book label.r span small{color:var(--cream-dim)}
+  form.book input[type=radio],form.book input[type=checkbox]{width:20px; height:20px; accent-color:var(--gold); flex:none}
+  form.book input[type=text],form.book textarea{font:inherit; font-size:16px; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--lacquer); color:var(--cream); width:100%}
+  form.book .hint{font-size:14px; color:var(--cream-dim)}
+  form.book button{min-height:48px}
+  .msg{font-weight:600}
+  .msg.err{color:var(--verm)}
+  #paid{background:var(--lacquer-2); border:1px solid var(--gold); border-radius:12px; padding:20px; max-width:560px; display:grid; gap:12px}
+  #paid h2{margin-bottom:0}
+  #paid .amt{font-family:Georgia,serif; font-size:30px; color:var(--gold)}
+  #paid .qr svg{display:block; width:220px; height:220px; border-radius:6px}
+  #paid .ways{display:flex; flex-wrap:wrap; gap:12px}
+  #paid p{color:var(--cream-dim); font-size:16px}
+  #paid .msg.err{color:var(--verm)}
+  #paid input[type=file]{font-size:15px; color:var(--cream)}
+  footer{max-width:980px; margin:0 auto; padding:0 16px 48px; font-size:15px; color:var(--cream-dim)}
+  .top nav{flex-wrap:wrap; gap:14px 22px}
+</style>
+<meta name="google" content="notranslate">
+<meta name="robots" content="notranslate">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"PHP fix","url":"https://hongdam.net/php/","provider":{"@id":"https://hongdam.net/#org"},"offers":{"@type":"AggregateOffer","lowPrice":"1500","highPrice":"50000","priceCurrency":"THB","offerCount":4}}
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
+  <nav><a href="/php/" aria-current="page">PHP</a><a href="/github/">GitHub</a><a href="/translation/">Translation</a><a href="/own">Own</a><a href="/redteam">Red team</a><a href="/market">Market</a></nav>
+</header>
+<main>
+  <h1>PHP fix <span lang="th">แก้ PHP</span></h1>
+  <div class="pair">
+    <p lang="th">PHP คือภาษาที่เว็บส่วนใหญ่ รวมถึง WordPress ใช้รัน ช่องโหว่ PHP2Shell ทำให้คนแปลกหน้ายึดเซิร์ฟเวอร์ที่ใช้ PHP ได้โดยไม่ต้องล็อกอิน ทีมเราติดตั้ง PHP รุ่นที่แก้แล้วให้เว็บหรือเซิร์ฟเวอร์ของคุณ</p>
+    <p>PHP is the language most websites, WordPress included, run on. PHP2Shell lets a stranger take over a server that runs it, without logging in. Our team puts a fixed PHP on your site or server.</p>
+  </div>
+  <div class="go">
+    <a class="btn" href="#book">Book · <span lang="th">จอง</span></a>
+    <small id="lede-price">Server ฿5,000 · about US$150 · opening price</small>
+  </div>
+
+  <section>
+    <p class="why">Attacks began before the fix shipped on 21 October 2026. A patch without a restart leaves the hole open.<span lang="th">การโจมตีเริ่มก่อนแพตช์ออกเมื่อ 21 ตุลาคม 2569 (ค.ศ. 2026) อัปเดตแล้วไม่รีสตาร์ต ช่องโหว่ก็ยังเปิดอยู่</span></p>
+    <p class="shoup" style="margin-top:14px">What the bug is, who is exposed, and a version checker: <a href="https://nanobotco.github.io/php-patch/">The PHP Patch</a>. <span lang="th" style="display:inline;color:var(--cream-dim)">อ่านรายละเอียดช่องโหว่และตรวจรุ่น PHP ได้ที่ลิงก์ด้านบน (หน้าภาษาอังกฤษ)</span></p>
+  </section>
+
+  <section id="kinds">
+    <h2>Four kinds <span lang="th">สี่แบบ</span></h2>
+    <p class="shoup" style="margin-bottom:16px"><span lang="th">คิว คือที่ว่างในงานของสัปดาห์ แต่ละแบบมีคิวต่อสัปดาห์ไม่เท่ากัน</span>A slot is a place in the week's work. Each kind has its own number of slots a week.</p>
+    <div class="kinds">
+      <div class="kind" data-kind="hosted">
+        <h3>Hosted site<span lang="th">เว็บบนโฮสติ้ง</span></h3>
+        <p class="for">A hosting panel, not a server; PHP 8.2 or newer. Older: Upgrade.<span lang="th">มีหน้าจัดการโฮสติ้ง ไม่ใช่เซิร์ฟเวอร์ ใช้ PHP 8.2 ขึ้นไป รุ่นเก่ากว่านั้นเลือกอัปเกรด PHP</span></p>
+        <b class="p">฿3,000</b><span class="usd">about US$90</span>
+        <span class="rng">Opening price · <span lang="th">ราคาเปิด</span></span>
+        <ul>
+          <li>Find the PHP that serves your site, and whether the host has patched it<span lang="th">ตรวจรุ่น PHP ที่รันเว็บจริง และโฮสต์แพตช์แล้วหรือยัง</span></li>
+          <li>Switch to a fixed PHP in the panel, or press the host until they patch<span lang="th">เปลี่ยนเป็น PHP ที่แก้แล้วในแผงควบคุม หรือตามโฮสต์จนกว่าจะแพตช์</span></li>
+          <li>Plugins and themes updated first, pages and forms tested after<span lang="th">อัปเดตปลั๊กอินและธีมก่อน ทดสอบหน้าเว็บและฟอร์มหลังเปลี่ยน</span></li>
+        </ul>
+        <span class="slots"></span>
+        <a class="btn" href="#book" data-pick="hosted" aria-label="Book Hosted site · จองเว็บบนโฮสติ้ง">Book · <span lang="th">จอง</span></a>
+      </div>
+      <div class="kind" data-kind="server">
+        <h3>Server<span lang="th">เซิร์ฟเวอร์</span></h3>
+        <p class="for">A VPS (a rented server) you run, on PHP 8.2 to 8.5. Older: Upgrade.<span lang="th">VPS (เซิร์ฟเวอร์เช่า) ที่คุณดูแลเอง ใช้ PHP 8.2 ถึง 8.5 รุ่นเก่ากว่านั้นเลือกอัปเกรด PHP</span></p>
+        <b class="p">฿5,000</b><span class="usd">about US$150</span>
+        <span class="rng">Opening price · <span lang="th">ราคาเปิด</span></span>
+        <ul>
+          <li>A snapshot (a copy of the whole server) or backup first, where your host offers one<span lang="th">สแนปช็อต (สำเนาของเซิร์ฟเวอร์ทั้งเครื่อง) หรือข้อมูลสำรองก่อน ถ้าโฮสต์มีให้</span></li>
+          <li>PHP updated to the fixed release and its processes restarted, then a check that none still runs the old one<span lang="th">อัปเดต PHP เป็นรุ่นที่แก้แล้ว รีสตาร์ตโพรเซสของ PHP แล้วตรวจว่าไม่มีโพรเซสใดยังรันรุ่นเก่าอยู่</span></li>
+          <li>A look for signs of a break-in, and a written report<span lang="th">ตรวจหาร่องรอยการบุกรุก พร้อมรายงานสรุปเป็นเอกสาร</span></li>
+        </ul>
+        <span class="slots"></span>
+        <a class="btn" href="#book" data-pick="server" aria-label="Book Server · จองเซิร์ฟเวอร์">Book · <span lang="th">จอง</span></a>
+      </div>
+      <div class="kind" data-kind="upgrade">
+        <h3>Upgrade<span lang="th">อัปเกรด PHP</span></h3>
+        <p class="for">One site on PHP 7.4, 8.0 or 8.1, on hosting or a server. Older than 7.4: a price after a look, on LINE.<span lang="th">เว็บหนึ่งเว็บที่ใช้ PHP 7.4, 8.0 หรือ 8.1 บนโฮสติ้งหรือเซิร์ฟเวอร์ ถ้าเก่ากว่า 7.4 แจ้งราคาทางไลน์หลังจากดูเว็บแล้ว</span></p>
+        <b class="p">฿10,000</b><span class="usd">about US$305</span>
+        <span class="rng">Opening price · <span lang="th">ราคาเปิด</span></span>
+        <ul>
+          <li>Everything in Server<span lang="th">ทุกอย่างในแบบเซิร์ฟเวอร์</span></li>
+          <li>The site moved to PHP 8.3 or newer on a copy first, with plugins and themes updated for it<span lang="th">ย้ายเว็บไป PHP 8.3 ขึ้นไปบนสำเนาก่อน พร้อมอัปเดตปลั๊กอินและธีมให้รองรับ</span></li>
+          <li>The switch, with the old PHP kept ready to switch back<span lang="th">สลับมาใช้ PHP รุ่นใหม่บนเว็บจริง โดยเก็บ PHP รุ่นเก่าไว้ให้สลับกลับได้</span></li>
+        </ul>
+        <span class="slots"></span>
+        <a class="btn" href="#book" data-pick="upgrade" aria-label="Book Upgrade · จองอัปเกรด PHP">Book · <span lang="th">จอง</span></a>
+      </div>
+      <div class="kind" data-kind="fleet">
+        <h3>Five servers<span lang="th">ห้าเซิร์ฟเวอร์</span></h3>
+        <p class="for">A company or host with up to five servers. More: write on LINE.<span lang="th">บริษัทหรือโฮสต์ที่มีสูงสุดห้าเซิร์ฟเวอร์ มากกว่านั้นทักไลน์</span></p>
+        <b class="p">฿20,000</b><span class="usd">about US$605</span>
+        <span class="rng">Opening price · <span lang="th">ราคาเปิด</span></span>
+        <ul>
+          <li>A list of the PHP versions you run<span lang="th">รายการรุ่น PHP ที่คุณใช้</span></li>
+          <li>Each machine gets the Server work, up to five<span lang="th">ทุกเครื่องได้งานแบบเซิร์ฟเวอร์ สูงสุดห้าเครื่อง</span></li>
+          <li>One report for the lot, oldest and most exposed first<span lang="th">รายงานรวมฉบับเดียว เรียงจากเครื่องที่เก่าที่สุดและเปิดสู่อินเทอร์เน็ตมากที่สุดก่อน</span></li>
+        </ul>
+        <span class="slots"></span>
+        <a class="btn" href="#book" data-pick="fleet" aria-label="Book Five servers · จองห้าเซิร์ฟเวอร์">Book · <span lang="th">จอง</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How <span lang="th">ทำอย่างไร</span></h2>
+    <ol class="how">
+      <li><b>Book.</b> The site or server name and an email or LINE ID.<span lang="th">จอง: ชื่อเว็บหรือเซิร์ฟเวอร์ กับอีเมลหรือไลน์ไอดี</span></li>
+      <li><b>Pay.</b> PromptPay from any Thai bank app, or PayPal or Wise from anywhere.<span lang="th">จ่าย: พร้อมเพย์จากแอปธนาคารไทย หรือ PayPal / Wise จากที่ไหนก็ได้</span></li>
+      <li><b>Access.</b> On LINE we agree how we get in: an account you make for us and delete when we finish, so your own passwords stay with you.<span lang="th">สิทธิ์เข้าถึง: คุยกันทางไลน์ว่าเราจะเข้าระบบอย่างไร ใช้บัญชีที่คุณสร้างให้เราและลบทิ้งเมื่องานเสร็จ รหัสผ่านของคุณเองจึงอยู่กับคุณ</span></li>
+      <li><b>Work.</b> In your slot: backup, update, restart, check.<span lang="th">ทำงาน: ในคิวของคุณ สำรองข้อมูล อัปเดต รีสตาร์ต ตรวจ</span></li>
+      <li><b>Report.</b> What we changed, the PHP version now running, anything that looked like a break-in, the passwords and keys to change if something did, and we remove our access. Cleaning up a break-in is priced on its own, on LINE.<span lang="th">รายงาน: สิ่งที่เราแก้ รุ่น PHP ที่รันอยู่ตอนนี้ สิ่งใดที่ดูเหมือนร่องรอยการบุกรุก รายการรหัสผ่านกับคีย์ที่ต้องเปลี่ยนถ้าพบ และเราปิดสิทธิ์เข้าถึงของเรา การกู้ระบบหลังถูกบุกรุกคิดราคาแยกต่างหาก ทางไลน์</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Price <span lang="th">ราคา</span></h2>
+    <p class="shoup"><span lang="th">ราคาขึ้นลงตามคิวจอง ทุกวันจันทร์ (เวลากรุงเทพฯ) ถ้าสัปดาห์ก่อนจองเกิน 80% ของคิว ราคาขึ้นหนึ่งขั้น ต่ำกว่า 60% ลงหนึ่งขั้น ระหว่างนั้นคงเดิม แต่ละแบบมีราคาต่ำสุดและสูงสุดของตัวเอง</span>Bookings set the price. Each Monday (Bangkok time), a week more than 80% booked moves the price up a step; under 60%, down a step; in between, no change. Each kind has its own lowest and highest price.</p>
+    <p class="shoup"><span lang="th">ใช้หลักของ Donald Shoup เรื่องที่จอดรถ จากหนังสือ The High Cost of Free Parking แบบที่ซานฟรานซิสโกใช้ ดูราคาแต่ละสัปดาห์ได้ที่ /api/php</span>It is Donald Shoup's rule for parking, from <i>The High Cost of Free Parking</i>, as San Francisco runs it. The walk week by week is at <a href="/api/php">/api/php</a>.</p>
+  </section>
+
+  <section id="book">
+    <h2>Book <span lang="th">จอง</span></h2>
+    <form class="book" novalidate>
+      <fieldset>
+        <legend>Kind · <span lang="th">แบบ</span></legend>
+        <label class="r"><input type="radio" name="kind" value="hosted"> <span>Hosted site · <span lang="th">เว็บบนโฮสติ้ง</span> · <b data-p="hosted">฿3,000</b></span></label>
+        <label class="r"><input type="radio" name="kind" value="server" checked> <span>Server · <span lang="th">เซิร์ฟเวอร์</span> · <b data-p="server">฿5,000</b></span></label>
+        <label class="r"><input type="radio" name="kind" value="upgrade"> <span>Upgrade · <span lang="th">อัปเกรด PHP</span> · <b data-p="upgrade">฿10,000</b></span></label>
+        <label class="r"><input type="radio" name="kind" value="fleet"> <span>Five servers · <span lang="th">ห้าเซิร์ฟเวอร์</span> · <b data-p="fleet">฿20,000</b></span></label>
+      </fieldset>
+      <label>Website or server name · <span lang="th">ชื่อเว็บหรือเซิร์ฟเวอร์</span><input type="text" name="site" autocapitalize="off" spellcheck="false" placeholder="example.com" required></label>
+      <label>PHP version, if you know it · <span lang="th">รุ่น PHP ถ้าทราบ</span><input type="text" name="php" autocapitalize="off" spellcheck="false" placeholder="8.3.35"><small class="hint">WordPress shows it at Tools → Site Health → Info → Server. · <span lang="th">ใน WordPress ดูที่ Tools → Site Health → Info → Server</span></small></label>
+      <label>Email or LINE ID · <span lang="th">อีเมลหรือไลน์ไอดี</span><input type="text" name="contact" autocomplete="email" required></label>
+      <p class="hint">The form asks for a site name and a contact. · <span lang="th">ฟอร์มนี้ถามแค่ชื่อเว็บกับช่องทางติดต่อ</span></p>
+      <label>Anything we should know · <span lang="th">อยากบอกอะไรเรา</span><textarea name="note" rows="3" maxlength="600" placeholder="What kind of host, and what runs on the site"></textarea></label>
+      <label class="r"><input type="checkbox" name="owner"> <span>I own this site or server, or its owner has said I may change it. · <span lang="th">เป็นเจ้าของเว็บหรือเซิร์ฟเวอร์นี้ หรือเจ้าของอนุญาตให้แก้ไขได้</span></span></label>
+      <button type="submit">Book my slot · <span lang="th">จองคิว</span></button>
+      <p class="msg" role="status"></p>
+      <a class="btn" id="quoteline" target="_blank" rel="noopener" hidden>Message us on LINE · <span lang="th">ทักไลน์</span></a>
+    </form>
+    <div id="paid" tabindex="-1" hidden>
+      <h2>Booked · <span lang="th">จองแล้ว</span></h2>
+      <p>Your reference is <b class="ref"></b>. Your slot starts <b class="when"></b>.</p>
+      <p lang="th">รหัสอ้างอิงของคุณคือ <b class="ref"></b> คิวของคุณเริ่ม <b class="when-th"></b></p>
+      <div class="amt"></div>
+      <div class="qr"></div>
+      <p>Scan with any Thai bank app. The app shows the payee's name before you pay.</p>
+      <p lang="th">สแกนด้วยแอปธนาคารไทยใดก็ได้ แอปจะแสดงชื่อผู้รับก่อนโอน</p>
+      <form class="slipf"><label>PromptPay slip · <span lang="th">สลิป</span> <input type="file" name="slip" accept="image/*"></label> <button type="submit">Send the slip · <span lang="th">ส่งสลิป</span></button> <p class="msg" role="status"></p></form>
+      <p>Outside Thailand · <span lang="th">จ่ายจากนอกประเทศไทย</span>:</p>
+      <div class="ways"><a class="btn pp" target="_blank" rel="noopener">PayPal</a><a class="btn" href="https://wise.com/pay/me/annikahonorahp" target="_blank" rel="noopener">Wise</a><a class="btn ln" target="_blank" rel="noopener">LINE</a></div>
+      <p>Put the reference in the payment note. Then message us on LINE to arrange access.</p>
+      <p lang="th">ใส่รหัสอ้างอิงในบันทึกการโอน แล้วทักไลน์มาตกลงวิธีให้เราเข้าระบบ ไม่ว่าจ่ายช่องทางไหน</p>
+    </div>
+  </section>
+</main>
+<footer><span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai · <a href="/">hongdam.net</a> · <a href="mailto:nan@motdang.net">nan@motdang.net</a></footer>
+<script type="module">
+import { promptPayPayload } from '/pay/promptpay.js'
+import { qrToSvg } from '/pay/qr.js'
+const B = (n) => '฿' + n.toLocaleString('en-US'), U = (n) => 'US$' + n.toLocaleString('en-US')
+const line = (id, text) => `https://line.me/R/oaMessage/${encodeURIComponent(id)}/?${encodeURIComponent(text)}`
+const bkkDay = (d, lang, long) => new Date(d).toLocaleDateString(lang, { ...(long ? { weekday: 'long' } : {}), day: 'numeric', month: 'long', timeZone: 'Asia/Bangkok' })
+// English · Thai into an element, the Thai in its own lang span
+const pair = (el, en, th) => {
+  const t = document.createElement('span'); t.lang = 'th'; t.textContent = th
+  el.replaceChildren(en + ' · ', t)
+}
+const split = (str) => { const i = str.indexOf(' · '); return i < 0 ? [str, ''] : [str.slice(0, i), str.slice(i + 3)] }
+const form = document.querySelector('form.book'), msg = form.querySelector('.msg'), go = form.querySelector('button[type=submit]'), ql = document.getElementById('quoteline')
+document.querySelectorAll('[data-pick]').forEach((a) => a.addEventListener('click', () => { form.kind.value = a.dataset.pick }))
+const pick = new URLSearchParams(location.search).get('kind'), ver = new URLSearchParams(location.search).get('php')
+if (pick && form.querySelector(`input[name=kind][value="${CSS.escape(pick)}"]`)) form.kind.value = pick
+if (ver) form.php.value = ver.slice(0, 20)
+fetch('/api/php').then((r) => r.json()).then((j) => {
+  for (const k of j.kinds || []) {
+    const c = document.querySelector(`.kind[data-kind="${k.id}"]`)
+    if (!c) continue
+    c.querySelector('.p').textContent = B(k.baht)
+    c.querySelector('.usd').textContent = 'about ' + U(k.usd)
+    pair(c.querySelector('.rng'), `Moves between ${B(k.floor)} and ${B(k.ceiling)}`, `ขยับระหว่าง ${B(k.floor)} ถึง ${B(k.ceiling)}`)
+    const left = k.slots - k.booked, s = c.querySelector('.slots')
+    if (left > 0) pair(s, `${left} ${left === 1 ? 'slot' : 'slots'} left this week`, `เหลือ ${left} คิวสัปดาห์นี้`)
+    else pair(s, `This week is full. Next slot: ${bkkDay(k.next_slot + 'T12:00:00+07:00', 'en-GB', true)} (Bangkok time)`, `สัปดาห์นี้เต็ม คิวถัดไป ${bkkDay(k.next_slot + 'T12:00:00+07:00', 'th-TH', false)} (เวลากรุงเทพฯ)`)
+    s.classList.toggle('full', left <= 0)
+    document.querySelector(`[data-p="${k.id}"]`).textContent = B(k.baht)
+    if (k.id === 'server') document.getElementById('lede-price').textContent = `Server ${B(k.baht)} · about ${U(k.usd)} this week`
+  }
+}).catch(() => {})
+
+const WHY = {
+  off: ['Send the slip on LINE.', 'ส่งสลิปทางไลน์'],
+  amount: ['The slip shows a different amount.', 'ยอดในสลิปไม่ตรง'],
+  receiver: ['The slip shows a different receiver.', 'ผู้รับในสลิปไม่ตรง'],
+  used: ['That slip was used for another payment.', 'สลิปนี้ใช้จ่ายรายการอื่นไปแล้ว'],
+  late: ['That slip is too old to check.', 'สลิปเก่าเกินกว่าจะตรวจได้'],
+  unread: ['That picture is not a readable bank slip.', 'ภาพนี้ไม่ใช่สลิปธนาคารที่อ่านได้'],
+  service: ['The slip check is not answering. Send the slip on LINE.', 'ระบบตรวจสลิปไม่ตอบสนอง ส่งสลิปทางไลน์'],
+  nofile: ['Choose a slip picture under 8 MB.', 'เลือกรูปสลิปที่ไม่เกิน 8 MB'],
+  ref: ['This reference is not on file. Write on LINE.', 'ไม่พบรหัสอ้างอิงนี้ ทักไลน์มา'],
+  state: ['This booking cannot take a slip here. Write on LINE.', 'การจองนี้ส่งสลิปที่นี่ไม่ได้ ทักไลน์มา'],
+}
+let booked = null
+const sf = document.querySelector('#paid .slipf'), sm = sf.querySelector('.msg'), sb = sf.querySelector('button')
+sf.addEventListener('submit', async (ev) => {
+  ev.preventDefault()
+  const file = sf.slip.files[0]
+  if (!booked) return
+  if (!file) { sm.className = 'msg err'; pair(sm, 'Choose the slip picture first.', 'เลือกรูปสลิปก่อน'); return }
+  sm.className = 'msg'; pair(sm, 'Checking…', 'กำลังตรวจ…'); sb.disabled = true
+  const fd = new FormData(); fd.append('ref', booked.ref); fd.append('slip', file)
+  try {
+    const r = await (await fetch('/api/php/slip', { method: 'POST', body: fd })).json()
+    sm.className = r.ok ? 'msg' : 'msg err'
+    if (r.ok) pair(sm, `Paid. Reference ${booked.ref}. Message us on LINE to arrange access.`, 'จ่ายแล้ว ทักไลน์มาตกลงวิธีเข้าระบบ')
+    else { pair(sm, ...(WHY[r.why] || WHY.unread)); sb.disabled = false }
+  } catch { sm.className = 'msg err'; pair(sm, ...WHY.service); sb.disabled = false }
+})
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault()
+  if (go.disabled) return
+  go.disabled = true; ql.hidden = true
+  msg.className = 'msg'; pair(msg, 'Booking…', 'กำลังจอง…')
+  const body = { kind: form.kind.value, site: form.site.value, php: form.php.value, contact: form.contact.value, note: form.note.value, owner: form.owner.checked }
+  let j
+  try { j = await (await fetch('/api/php', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })).json() }
+  catch { j = { ok: false, error: 'The booking did not reach us. Write to nan@motdang.net. · จองไม่ถึงเรา เขียนมาที่ nan@motdang.net' } }
+  if (!j.ok) {
+    msg.className = 'msg err'
+    pair(msg, ...split(j.error || 'The booking did not go through. · จองไม่สำเร็จ'))
+    if (j.quote) { ql.href = line(j.line || '@964yxgnk', `PHP fix · ${body.site} · PHP ${body.php}: price after a look`); ql.hidden = false }
+    go.disabled = false
+    return
+  }
+  msg.textContent = ''
+  form.hidden = true
+  booked = j
+  const p = document.getElementById('paid'); p.hidden = false
+  p.querySelectorAll('.ref').forEach((n) => { n.textContent = j.ref })
+  const now = new Date(j.slot_from) <= new Date()
+  p.querySelector('.when').textContent = now ? 'when you pay' : bkkDay(j.slot_from, 'en-GB', true) + ' (Bangkok time)'
+  p.querySelector('.when-th').textContent = now ? 'เมื่อชำระเงิน' : bkkDay(j.slot_from, 'th-TH', false) + ' (เวลากรุงเทพฯ)'
+  p.querySelector('.amt').textContent = `${B(j.baht)} · ${U(j.usd)}`
+  p.querySelector('.qr').innerHTML = qrToSvg(promptPayPayload({ payeeId: j.pay.promptpay, satang: j.baht * 100, merchantName: 'NaNoBotCo', ref: j.ref.replace(/-/g, '') }), { ecl: 'M', border: 4, scale: 6, dark: '#000', light: '#fff', title: `PromptPay ${j.baht} THB` })
+  p.querySelector('.pp').href = j.pay.paypal
+  p.querySelector('.ln').href = line(j.pay.line, `PHP ${j.ref} · ${j.site} · ${B(j.baht)}`)
+  p.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  p.focus({ preventScroll: true })
+})
+</script>
+<script src="/ticker.js" defer></script>
+</body>
+</html>

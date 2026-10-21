@@ -207,10 +207,10 @@ function token() {
 
 export async function tell(env, title, lines) {
   if (!env.DISCORD_TASKS) return
-  const body = { username: 'Hongdam tasks', content: lines.join('\n').slice(0, 1900), thread_name: title.slice(0, 95) }
+  const body = { username: 'Hongdam tasks', content: lines.join('\n').slice(0, 1900), thread_name: title.slice(0, 95), allowed_mentions: { parse: [] } }
   try {
     const r = await fetch(env.DISCORD_TASKS + '?wait=false', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })
-    if (!r.ok) await fetch(env.DISCORD_TASKS, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ username: body.username, content: body.content }) })
+    if (!r.ok) await fetch(env.DISCORD_TASKS, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ username: body.username, content: body.content, allowed_mentions: { parse: [] } }) })
   } catch { /* the post stands without the note */ }
 }
 

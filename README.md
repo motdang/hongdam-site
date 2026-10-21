@@ -154,3 +154,11 @@ schema `migrations/0001_tasks.sql`). Secrets on the Pages project: `TASKS_ADMIN`
 - Shoup: `functions/_tasks.js` `shoup()` and `catBaht()`; `node tests/shoup.test.mjs`.
 - Answer as one of ours: `POST /api/tasks/<id>/admin {"do":"answer","org":"hongdam","note","baht"}`
   with `Authorization: Bearer $TASKS_ADMIN`.
+
+## PHP fix — /php
+
+Bookings for PHP work after PHP2Shell (CVE-2026-109618, CVE-2026-109619), priced by Shoup the same way as /github. Page `docs/php/index.html`, prices and the weekly walk in `functions/_php.js` (KINDS, OPENED, relate), bookings and slips in `functions/api/php/[[path]].js`, table `php_order` in D1 `hongdam-tasks` (`migrations/0005_php.sql`, applied remote 2026-10-22). `node tests/php.test.mjs`.
+
+The four kinds are Hosted site, Server, Upgrade and Five servers. After the walk a hosted site is priced at most as high as a server, an upgrade at least as high, and five servers at least the rung above a server. The US$ price is the baht at 33 to the dollar rounded to US$5 (`usd()` in `_php.js`). A booking counts toward slots and the walk when it is paid or done, or booked less than 48 hours ago. An Upgrade booking with PHP older than 7.4 is answered with a LINE message and no order.
+
+The form takes a site name and a contact; server access is arranged on LINE after payment. GET `/api/php` answers any origin; POST answers hongdam.net, hongdam.pages.dev and localhost. The ip column of `php_order` is written null. nanobotco.github.io/php-patch links here and reads `/api/php`.

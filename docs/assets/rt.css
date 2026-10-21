@@ -6,6 +6,7 @@
   --line:rgba(231,190,106,.2);
 }
 *{margin:0;padding:0;box-sizing:border-box}
+[hidden]{display:none !important}
 body{
   background:var(--lacquer); color:var(--cream);
   font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,"Thonburi","Noto Sans Thai",sans-serif;
