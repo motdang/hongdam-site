@@ -452,6 +452,57 @@ footer{border-top:1px solid var(--line);margin-top:26px;padding:20px 0 40px;font
 footer a{color:var(--muted)}
 .maplibregl-ctrl-attrib{font-size:11px}
 .maplibregl-ctrl-group button{width:40px;height:40px}
+
+/* ---------- tools: languages + large print ---------- */
+.tools{display:inline-flex;gap:8px;align-items:center;flex:none}
+.bigbtn{display:inline-flex;align-items:baseline;justify-content:center;gap:1px;min-width:48px;min-height:40px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);font-family:var(--display);font-weight:800;cursor:pointer}
+.bigbtn span:first-child{font-size:13px}
+.bigbtn span:last-child{font-size:20px}
+.bigbtn[aria-pressed=true]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+@media (max-width:420px){.lang button{padding:10px 11px}}
+
+/* ---------- large print ---------- */
+html.big{--muted:var(--ink);--line:#56657d;--strip:150px}
+@media (prefers-color-scheme:dark){html.big{--line:#9fb0cc}}
+html.big body{font-size:21px;line-height:1.6}
+html.big :is(p,li,dd,dt,td,th,label,figcaption,span,a,button,input,em,small,div,b):not(svg *){font-size:max(19px,1em)!important}
+html.big .lede,html.big .strap,html.big .band p{font-size:max(22px,1em)!important;max-width:none}
+html.big *{transition:none!important;animation:none!important}
+html.big :focus-visible{outline:4px solid var(--gold);outline-offset:3px}
+html.big a{text-decoration-thickness:2px;text-underline-offset:3px}
+html.big .kick{letter-spacing:0;text-transform:none;font-weight:700}
+html.big .lang,html.big .bigbtn{border-width:2px}
+html.big .lang button{min-height:48px;padding:10px 14px}
+html.big .bigbtn{min-height:52px;min-width:60px}
+html.big .bigbtn span:first-child{font-size:16px!important}
+html.big .bigbtn span:last-child{font-size:26px!important}
+html.big .bar{flex-wrap:wrap}
+html.big .top h1{font-size:clamp(40px,11vw,60px)}
+html.big .hero{height:auto;max-height:none;min-height:0;grid-template-rows:auto minmax(52vh,1fr) auto auto}
+html.big .stats{height:auto;min-height:var(--strip)}
+html.big .stat{padding:16px 6px}
+html.big .stat b{font-size:40px!important}
+html.big .stat span{opacity:1;max-width:none}
+html.big .band{min-height:0;align-items:stretch}
+html.big .band::before{display:none}
+html.big .band .in{background:var(--bg);color:var(--ink);margin:0 auto;padding:28px 16px 64px}
+html.big .band .kick,html.big .band h2,html.big .band p,html.big .band sup a{color:var(--ink);text-shadow:none}
+html.big .band{padding-top:38vh;background-attachment:scroll}
+html.big .cred,html.big .cred *{position:static;max-width:none;font-size:19px!important;background:var(--bg);color:var(--ink)}
+html.big .cred{padding:8px 16px 20px}
+html.big .cred a{color:var(--green-ink)}
+html.big #radar text{font-size:17px!important;font-weight:700}
+html.big .pill,html.big .seg button,html.big .gd-places button,html.big .gd-chips button,html.big .fl button,html.big .btn{min-height:56px}
+html.big .chips button,html.big .opt,html.big .rh{min-height:60px}
+html.big .crow{height:56px}
+html.big .crow .nm{white-space:normal;line-height:1.2}
+html.big .crow .trk{height:24px}
+html.big .gd-amt input{font-size:32px!important;min-height:64px}
+html.big .gd-need input,html.big .sw input,html.big .opt input{width:30px;height:30px}
+html.big .card .x{width:56px;height:56px}
+html.big .facts .btn{white-space:normal}
+html.big .facts div b{white-space:normal}
+
 </style>
 </head>
 <body>
@@ -461,7 +512,7 @@ footer a{color:var(--muted)}
   <div id="map" role="application" aria-label="Map of Chiang Mai province with school pins"></div>
   <div class="top">
     <div class="bar"><span class="kick" data-i="forbar"></span>
-      <span class="lang" role="group" aria-label="Language"><button id="b-th" type="button" aria-pressed="false">ไทย</button><button id="b-en" type="button" aria-pressed="true">EN</button></span>
+      <span class="tools"><span class="lang" role="group" aria-label="Language"><button id="b-th" type="button" aria-pressed="false">ไทย</button><button id="b-en" type="button" aria-pressed="true">EN</button><button id="b-de" type="button" aria-pressed="false">DE</button></span><button class="bigbtn" id="b-big" type="button" aria-pressed="false" aria-label="Large print" title="Large print"><span aria-hidden="true">A</span><span aria-hidden="true">A</span></button></span>
     </div>
     <h1 data-i="h1">34 schools, one province</h1>
     <p class="strap"><span data-i="strap"></span><sup><a href="#s1">1</a></sup></p>
@@ -1043,8 +1094,15 @@ th:{
 }
 };
 
-(function(){['en','th'].forEach(function(l){Object.keys(GDT[l]).forEach(function(k){T[l][k]=GDT[l][k];});});})();
-var lang=(navigator.language||'en').toLowerCase().indexOf('th')===0?'th':'en';
+T.de={"forbar": "Für Eveline Willi · FERC", "h1": "34 Schulen, eine Provinz", "strap": "In jeder Schule ein Patenkind. Alle ehrenamtlich.", "st1": "Schulen, je eine Patenschaft", "st2": "geförderte Kinder", "st3": "Tage bis zum Vortrag", "phint": "Tippen Sie auf eine Nadel: Sie sehen die Schule und wie weit sie von der Stadt entfernt ist.", "chipWait": "Bezirk für Bezirk", "chipRun": "{n} von {t} Bezirken", "chipEnd": "{s} Schulen aus dem Register · Nadel antippen", "district": "Bezirk", "byRoad": "auf der Strasse", "straight": "Luftlinie", "classes": "Klassen", "unitStu": "Schüler", "distBtn": "Distanz", "b1k": "M4 – M6", "b1h": "Schulen der Oberstufe liegen meist weit weg", "b1p": "Ab der 10. Klasse kosten Fahrt, Internat und Essen zusätzlich.", "roadCap": "Eine Bergstrasse in der Provinz Chiang Mai", "dH": "Tippen Sie auf eine Schule", "dP": "Jeder Punkt ist eine Schule, eingetragen nach Himmelsrichtung und Luftlinie ab der Stadt Chiang Mai.", "legend": "Stadt Chiang Mai, die Mitte", "n": "N", "e": "O", "s": "S", "w": "W", "near": "Die nächste", "far": "Die fernste", "any": "Irgendeine Schule", "walk": "Von der Stadt nach aussen", "car": "etwa {t} mit dem Auto", "hr": "Std.", "mn": "Min.", "gH": "Bezirke", "mN": "Schulen", "mR": "Strassen-km", "gLn": "Schulen auf der Karte, nach Bezirk.", "gLr": "Mittlere Strassendistanz ab der Stadt, nach Bezirk.", "ddHint": "Tippen Sie auf einen Balken, um seine Schulen zu sehen.", "ddOne": "Schule", "ddMany": "Schulen", "schoolCap": "Eine Schule in Mae Hong Son", "cdH": "Zwei Daten im November", "ev1": "Vortrag von Eveline Willi", "ev1d": "Chiang Mai Expat Club", "ev2": "Jährliche Spendenveranstaltung der FERC", "ev2d": "Danach ein Weihnachtsanlass", "cdNote": "Der Artikel nennt die Daten, nicht Ort und Uhrzeit.", "u_d": "Tage", "u_h": "Std.", "u_m": "Min.", "u_s": "Sek.", "passed": "Heute oder vorbei", "ics": "In den Kalender", "wk": "{w} Wochen {d} Tage", "mo": {"11": "Nov."}, "wd": {"0": "Sonntag", "6": "Samstag"}, "b2k": "Spenden", "b2h": "Drei Jahre, ein Kind", "b2p": "Eine Patenschaft hilft einem Kind, von M4 bis M6 in der Schule zu bleiben.", "daoCap": "Doi Chiang Dao in den Wolken", "wH": "Wege zu spenden", "proof": "Überweisungen von Thai-Banken zeigen nicht, wer gespendet hat. Die FERC bittet Spender, den Zahlungsbeleg an die Kassierin oder den Kassier zu senden.", "giveBtn": "fercthailand.org/how-to-donate", "lk": "Eine Einladung", "lunchH": "Mittagessen?", "lunchP": "Eine Nachricht von NaN in Chiang Rai.", "lunchBtn": "Mittagessen im The Algonquin?", "mailSubject": "Mittagessen im The Algonquin?", "mailBody": "Liebe NaN\n\n", "panoCap": "Bezirk Mae Chaem", "srcH": "Quellen", "s2a": "Nadeln: staatliche Schulen mit Klassen bis M.6 oder Berufsschule 3.", "s2b": "abgerufen am 18. Aug. 2026. Die 34 Schulen der FERC sind diesen nicht namentlich zugeordnet. Englische Namen aus OpenStreetMap oder dem Register; die übrigen von NaN umschrieben.", "s4a": "Strassendistanz und Fahrzeit: Routen auf OpenStreetMap-Daten von", "s4b": ", 19. Okt. 2026. Luftlinie: Grosskreisdistanz. Stadtpunkt 18,795 N, 98,999 O aus", "s5a": "Karte:", "foot": "Für Eveline Willi gemacht von NaN · Hongdam, Chiang Rai · nan@motdang.net", "title": "34 Schulen, eine Provinz", "est": "Schätzung", "avg": "Mittel", "wks": "Wochen", "big": "Grosse Schrift", "bigOff": "Normale Schrift"};
+GDT.de={"wH": "Spendenschalter", "gdKick": "Spenden von überall", "gdLede": "Wählen Sie, wo die spendende Person wohnt, und einen Betrag. Die Wege stehen in der Reihenfolge dessen, was bei der FERC ankommt.", "gdPlace": "Wohnort der spendenden Person", "gdAmt": "Betrag", "gdNeed": "Braucht eine Spendenbescheinigung", "gdTwoT": "Thailändische Seite", "gdTwoS": "Schweizer Seite", "boKick": "Backoffice", "boH": "Die Seite der Kasse", "boToday": "Heute", "boAuto": "Automatisch", "boRun": "Einen Musterbeleg lesen", "boLed": "Kassenbuch", "boEd": "FERC ist für e-Donation zugelassen", "samp": "Muster", "opH": "Was Hongdam einrichten kann", "opLede": "Kreuzen Sie an, was Sie interessiert. Die Auswahl kommt in eine E-Mail an NaN.", "opBtn": "Auswahl an NaN mailen", "got": "gelesen am 19. Okt. 2026", "mvHx": "Zwischen den beiden Konten", "gd": {"places": {"TH": "Thailand", "CH": "Schweiz", "EU": "EU", "UK": "Grossbritannien", "US": "USA", "XX": "Anderswo"}, "yr": "1 Patenschaftsjahr ≈ {x}", "unit": "pro", "rateTxt": "{a} zu {r} THB pro {c}, Mittelkurs", "rateSrc": "Vergleichsdaten von Wise, 19. Okt. 2026", "sum": "{a}, Wohnort {p}", "bestIs": "Am besten: {r}.", "reachAbout": "Etwa {x} kommt bei der FERC an.", "forRcpt": "Mit Spendenbescheinigung: {r}, {x}.", "reachUp": "Bis zu {x} kommt bei der FERC an.", "noNum": "Die Gebühr steht auf keiner öffentlichen Seite.", "rcptOnly": "Wege mit Spendenbescheinigung, sicher oder vielleicht.", "none": "Hier nennt kein Weg eine Bescheinigung. Entfernen Sie das Häkchen, um alle zu sehen.", "today": "Hat die FERC heute", "add": "Möglich", "best": "Am besten", "todayEv": "Die Every.org-Seite der FERC, nicht ihre Spendenseite", "reach": "Kommt bei der FERC an", "cost": "Kosten", "time": "Dauer", "rcpt": "Spendenbescheinigung", "how": "Schritte und Rechnung", "tap": "Für die Schritte antippen", "bank": "eigene Gebühr der Bank", "noFee": "Gebühr auf keiner öffentlichen Seite", "rc": {"yes": "Ja", "maybe": "Vielleicht", "no": "Nein", "ask": "Nicht angegeben"}, "u": {"bank": "eigene Gebühr und Kurs der Bank", "conv": "allfällige Währungsumrechnung"}, "stay": "{x} bleibt in CHF", "before": "vor {w}", "upto": "bis zu {x}", "range": "{a} – {b}", "t": {"bankT": "nach Zeitplan der Bank", "wH": "etwa 1 Stunde (Schätzung von Wise)", "wM": "etwa 2 Minuten (Schätzung von Wise)", "wS": "Sekunden (Schätzung von Wise)", "wU": "Sekunden; ab USD 2'500 etwa 7 Stunden (Schätzung von Wise)", "ev": "Zahlung 3–4 Wochen nach Antrag (Myriad USA)", "tw": "Auszahlung in 3–9 Tagen (RaiseNow)"}, "r": {"thbank": {"t": "Überweisung oder QR bei einer Thai-Bank", "s": ["Banking-App öffnen und den QR-Code der FERC scannen oder das Kasikorn-Konto wählen", "Den Betrag senden", "Den Beleg per E-Mail an die Kasse schicken"]}, "thqr": {"t": "QR mit Steuerdaten (e-Donation)", "s": ["Die FERC hat eine 13-stellige Nummer als Spendenempfängerin vom Revenue Department", "Ein reines Spendenkonto bei einer teilnehmenden Bank erhält einen QR-Code", "Die spendende Person scannt; die Bank meldet ihre Daten dem Revenue Department"]}, "thcard": {"t": "Opn-Seite: PromptPay-QR, Banking-App oder Karte", "s": ["Die spendende Person zahlt auf einer Seite der FERC", "Opn zieht bei jeder Zahlung seine Gebühr ab", "Opn überweist den Gesamtbetrag auf das Thai-Konto der FERC"]}, "card": {"t": "Kartenseite (Opn Payments)", "s": ["Die spendende Person zahlt mit Karte auf einer Seite der FERC", "Opn zieht bei jeder Zahlung seine Gebühr ab", "Opn überweist den Gesamtbetrag auf das Thai-Konto der FERC"]}, "paypal": {"t": "PayPal (thailändisches Geschäftskonto)", "s": ["Die spendende Person zahlt über einen PayPal-Knopf", "PayPal nimmt 4,40 % plus eine feste Gebühr", "Der Rest geht auf das Thai-Konto der FERC"]}, "wise": {"t": "Wise auf das Kasikorn-Konto", "s": ["Auf wise.com den Betrag senden; Geschäft oder Wohltätigkeit wählen", "Grund: Spende an eine Wohltätigkeitsorganisation. Die Kasikorn-Angaben der FERC stehen auf ihrer Spendenseite", "Bezahlen, dann den Beleg per E-Mail an die Kasse schicken"]}, "wire": {"t": "Internationale Banküberweisung (SWIFT)", "s": ["Bei Ihrer Bank eine Auslandzahlung an Kasikorn mit den Angaben der FERC auslösen", "Ihre Bank nimmt ihre Gebühr und eine Marge auf den Kurs", "Kasikorn schreibt der FERC den Betrag nach ihrer Eingangsgebühr gut"]}, "swiss": {"t": "Schweizer Bankkonto", "s": ["Die Schweizer IBAN der FERC von ihrer Spendenseite verwenden", "In CHF zahlen; andere Währungen rechnet eine Bank um", "Den Beleg per E-Mail an die Kasse schicken"]}, "every": {"t": "Every.org, geführt bei Myriad USA", "s": ["Auf der Every.org-Seite der FERC per Bank (ACH), Karte oder PayPal spenden", "Myriad USA, eine US-Wohltätigkeitsorganisation, nimmt die Spende an und bestätigt sie", "Myriad zahlt der FERC per Überweisung einen Beitrag, ab USD 5'000"]}, "globalg": {"t": "GlobalGiving", "s": ["Die FERC bewirbt sich und besteht die Prüfung von GlobalGiving", "Die spendende Person gibt auf einer Projektseite der FERC", "GlobalGiving behält seine Gebühren und sendet den Rest"]}, "twint": {"t": "TWINT-Seite (RaiseNow)", "s": ["Die FERC meldet sich mit ihren Statuten oder einem Registerauszug an", "Die spendende Person scannt einen QR-Code in der TWINT-App", "RaiseNow zahlt jeden Mittwoch auf das Schweizer Konto aus"]}, "umbrella": {"t": "Schweizer Dachstiftung", "s": ["Die spendende Person gibt in den allgemeinen Spendenfonds der Swiss Philanthropy Foundation", "Die Stiftung, eine gemeinnützige Schweizer Körperschaft, nimmt die Spende an", "Sie leitet einen Beitrag an die FERC weiter"]}, "prism": {"t": "Britischer Freundesfonds (Prism the Gift Fund)", "s": ["Eine britische Wohltätigkeitsorganisation führt einen Fonds für die FERC", "Spender in Grossbritannien geben in den Fonds und beantragen Gift Aid", "Der Fonds leitet einen Beitrag an die FERC weiter"]}, "myriad": {"t": "Freundesfonds über ein Myriad-Mitglied", "s": ["Die Myriad-Allianz nennt Mitglieder in Australien, Belgien, Kanada, Hongkong, Neuseeland, Singapur, Grossbritannien und den USA", "Ein Mitglied führt einen Fonds für die FERC", "Spender in jenem Land geben in den Fonds"]}}, "rn": {"thbank": {"maybe": "Merkblatt der FERC: die Spende einer Person mit thailändischer Steuernummer «may be tax deductible». Im e-Donation-Register steht keine FERC (19. Okt. 2026)."}, "thqr": {"maybe": "Für Privatpersonen automatisch, sobald die FERC eine Nummer als Spendenempfängerin hat. Im Register steht keine FERC."}, "thcard": {"maybe": "Braucht denselben e-Donation-Eintrag der FERC."}, "swissCH": {"yes": "Merkblatt der FERC: abziehbar für Steuerpflichtige in der Schweiz. Bundesrecht: Spende ab CHF 100 an eine steuerbefreite Institution mit Sitz in der Schweiz, bis 20 % des Reineinkommens."}, "swissEU": {"maybe": "Merkblatt der FERC: «The same may apply to some European countries.»"}, "noThai": {"no": "Die Spende landet in Thailand. Weder die FERC noch eine Quelle nennt einen Weg zum Abzug."}, "noSwiss": {"no": "Die Spende landet in Thailand. Das Merkblatt der FERC knüpft den Schweizer Abzug an das Schweizer Konto."}, "every": {"yes": "Every.org-Seite der FERC: abziehbar für Steuerpflichtige in den USA. Myriad USA schickt der spendenden Person eine Bestätigung."}, "globalg": {"ask": "Die Gebührenseite von GlobalGiving sagt es nicht."}, "paypal": {"no": "Auf der thailändischen Gebührenseite von PayPal steht kein Tarif für Wohltätigkeit."}, "twint": {"maybe": "Die Formulare von RaiseNow bieten Spendenbescheinigungen. Für den Abzug braucht es eine steuerbefreite Inhaberin in der Schweiz."}, "umbrella": {"maybe": "Die Stiftung sagt, Spenden an ihre Fonds erfüllen die Bedingungen von Art. 56 g: uneigennützig und unwiderruflich."}, "prism": {"maybe": "Prism sagt, seine British-Friends-Of-Strukturen bringen Steuervorteile für Spender in Grossbritannien."}, "myriad": {"maybe": "Hängt vom Land des Mitglieds ab."}, "card": {"no": "Kein Weg zu einer Bescheinigung wird genannt."}}, "l": {"sendC": "Gebühr der Absenderbank, Obergrenze der Bank of Thailand", "sendF": "Gebühr der Absenderbank bis THB 5'000", "sendK": "KBank zu KBank", "total": "Kommt bei der FERC an", "totalMin": "Kommt mindestens bei der FERC an", "totalUp": "Bis zu, vor den nicht genannten Kosten", "qrInd": "Der QR-Dienst der Bank meldet nur Daten von Privatpersonen, nicht von Firmen", "opnP": "PromptPay-QR 1,65 % von {a}", "opnV": "7 % MWST auf diese Gebühr", "opnC": "Stattdessen Karte: 3,65 % + MWST", "opnC2": "Kartengebühr 3,65 % + 7 % MWST auf die Gebühr", "opnPay": "Auszahlung auf das Konto der FERC: THB 20 + MWST pro Überweisung, nicht pro Spende", "opnR": "Die Liste eingeschränkter Branchen von Opn nennt Spendensammlungen (nicht über TrueMoney, Alipay, WeChat Pay) und Spenden; Opn entscheidet im Einzelfall", "wF": "Wise-Gebühr auf {a}, bezahlt ab einem Bankkonto", "wN": "Gesendet nach der Gebühr", "wT": "× {r} THB pro {c}", "wL": "Wise zahlt als Thai-Überweisung aus: keine Eingangsgebühr bei Kasikorn", "wB": "Banken in der Tabelle von Wise, alles inbegriffen (Gebühr + Kursmarge)", "wB1": "{a} in der Tabelle von Wise, alles inbegriffen (Gebühr + Kursmarge)", "wBn": "tiefste {a}, höchste {b}", "wR": "Erhalten vor Kasikorn", "wK": "Eingangsgebühr Kasikorn, 0,25 %, THB 200–500", "wBX": "Gebühr und Kursmarge Ihrer Bank: auf keiner öffentlichen Seite", "swNo": "Keine Währungsumrechnung", "swF": "Gebühr für eine CHF-Überweisung innerhalb der Schweiz", "swF2": "Gebühr für eine Zahlung auf ein Schweizer Konto", "swIn": "Auf dem Schweizer Konto", "swMw": "Später per Überweisung nach Thailand", "swMi": "Mit Wise überwiesen", "swEU": "Umrechnung in CHF zum Kurs einer Bank: auf keiner öffentlichen Seite", "evA": "Bank (ACH): Every.org übernimmt die Gebühr", "evM": "Verwaltungsgebühr von Myriad USA, Tarif American Friends Fund: 5 % auf die ersten USD 100'000 pro Jahr", "evT": "Im Fonds nach der Gebühr, bei Zahlung per ACH", "evC": "Stattdessen per Karte: 2,2 % + USD 0.30, dann die 5 %", "evW": "Überweisung des Beitrags und Eingangsgebühr von Kasikorn: nicht angegeben", "ggF": "Unterstützungsgebühr: 12 % auf die ersten USD 5'000, die die FERC sammelt, danach 7 %", "ggP": "Bearbeitungsgebühr 3 %", "ppF": "4,40 % + {f} fix", "ppC": "Rechnet PayPal die Währung um, kommt eine Marge dazu", "twF": "Gebühr von RaiseNow auf jede erfolgreiche Zahlung: Satz gemäss Preisliste von RaiseNow", "twP": "Auszahlung jeden Mittwoch, 3–9 Tage", "umF": "Gebühr der Stiftung: auf keiner öffentlichen Seite (international@swissphilanthropy.ch)", "prF": "Gebühren von Prism: nicht auf der gelesenen Seite", "myF": "Gebühren: legt jedes Mitglied fest", "oneoff": "Kurse und Gebühren sind die Angaben der Anbieter, gelesen am 19. Okt. 2026."}, "note": "Beträge sind zum Mittelkurs von Wise vom 19. Okt. 2026 umgerechnet. Gebühren sind die veröffentlichten Zahlen der Anbieter; «eigene Gebühr der Bank» heisst, dass keine Quelle eine nennt. Die Bankzahlen von Wise stammen aus seiner Vergleichstabelle für private Überweisungen.", "noteXX": " Für «Anderswo» gelten die Zahlen von Wise für USD."}, "two": {"th": [["0,25 %", "Gebühr von Kasikorn auf eine eingehende Auslandüberweisung, mindestens THB 200, höchstens THB 500.{11}"], ["THB 0", "PromptPay-Überweisungen bis THB 5'000; unter THB 2 bis THB 30'000; unter THB 5 bis THB 100'000.{12}"], ["1 : 1", "PromptPay for Business verbindet eine Steuernummer mit einem Konto. KBank verlangt einen Registerauszug, nicht älter als drei Monate, und die Ausweise der Zeichnungsberechtigten; Stiftungen nennt die Seite nicht.{13}"], ["USD 200k", "Fremdwährung, die einem Thai-Konto gutgeschrieben wird, wird der Bank gemeldet; ab USD 200'000 werden Belege verlangt.{25}"], ["1. Jan. 2026", "Der Abzug einer Person in Thailand für eine Spende an eine Stiftung läuft über e-Donation.{16}"], ["Nicht gefunden", "Suche im e-Donation-Register nach «FERC», 19. Okt. 2026; der thailändische Name der FERC lag nicht vor. Empfängerinnen brauchen eine 13-stellige Nummer.{14}"], ["2×", "Der doppelte Abzug 2025–27 für Bildungsspenden nennt Schulen, Universitäten und Sportverbände; die Verordnung war am 23. Juli 2026 noch nicht in Kraft.{15}"], ["Nicht offen", "Stripe zählt Wohltätigkeits- und Non-Profit-Organisationen zu den Branchen, die es über Connect in Thailand nicht unterstützt.{22}"]], "ch": [["CHF 100", "Eine Spende ab CHF 100 an eine steuerbefreite Institution mit Sitz in der Schweiz ist abziehbar, bis 20 % des Reineinkommens.{17}"], ["Ja", "Merkblatt der FERC: wer in der Schweiz steuerpflichtig ist und auf das Schweizer Konto zahlt, kann die Spende abziehen.{6}"], ["Lückenlos", "Der Kanton Zürich verlangt von einer steuerbefreiten Schweizer Institution, die im Ausland tätig ist, einen Nachweis der Geldflüsse bis zur Empfängerin im Ausland.{18}"], ["Häufiger", "Schweizer Banken kündigen oder verweigern Konten (Notiz einer Anwaltskanzlei, 3. Juli 2026).{29} Auslandschweizer zahlen höhere Gebühren.{28}"], ["2 Wege", "Die FERC könnte ergänzen: eine Dachstiftung{19} und eine TWINT-Seite.{20}"], ["Europa", "Giving Europe dient Empfängern in Europa; der allgemeine Fonds der Schweizer Stiftung deckt Spenden ausserhalb Europas.{19}"]]}, "bo": {"lede": "Heute schickt die spendende Person der Kasse einen Beleg, einen Screenshot oder einen anderen Nachweis per E-Mail. Hier wird ein Thai-Beleg beim Eingang gelesen, jede Spende wird eine Zeile im Kassenbuch in THB und CHF, und jeder Vorstand erhält eine Abrechnung. Alle Zeilen sind Musterdaten.", "inbox": [["Foto eines Belegs", "kein Name auf der Bankzeile"], ["Screenshot", "Betrag im Text der Nachricht"], ["PDF einer Schweizer Bank", "CHF, muss umgerechnet werden"]], "hand": "von Hand zuordnen", "flow": ["Beleg kommt", "Gelesen", "Geprüft", "Kassenbuch", "Bestätigung"], "slipH": "Thai-Bankbeleg · Muster", "sAmt": "Betrag", "sFrom": "Absender", "sTo": "Empfänger", "sRef": "Referenz", "sTime": "Zeit", "toFERC": "FERC", "chk": ["Betrag stimmt mit der Wahl überein", "Empfänger ist das Konto der FERC", "Noch nie verwendet", "Nicht zu alt"], "res": {"ok": "Zugeordnet. Zeile im Kassenbuch eingetragen.", "used": "Zurückgehalten: dieser Beleg wurde schon bezahlt.", "amount": "Zurückgehalten: der Beleg zeigt einen anderen Betrag.", "receiver": "Zurückgehalten: der Beleg zeigt einen anderen Empfänger."}, "readBy": "Die Zahlungsfelder von Hongdam schicken das Foto eines Belegs an SlipOK, das ihn liest und Betrag, Empfänger und Wiederholungen prüft.{26}", "routes": {"all": "Alle", "th": "Thai-Bank / QR", "wise": "Wise", "sw": "Schweizer Konto", "wire": "SWIFT", "ev": "Beitrag Every.org"}, "st": {"ok": "Zugeordnet", "name": "Name fehlt", "held": "Zurückgehalten"}, "tot": {"thb": "Zugeordnet, THB", "chf": "Zugeordnet, CHF", "chk": "Zu prüfen"}, "ed": "e-Donation-Einträge bereit: {n}", "dt": {"date": "Datum", "donor": "Spender", "route": "Weg", "paid": "Bezahlt", "thb": "In THB", "chf": "In CHF", "by": "Gelesen aus", "st": "Status", "ed": "e-Donation"}, "by": {"th": "Foto des Belegs, automatisch gelesen", "wise": "Bestätigung von Wise", "sw": "Zeile im Schweizer Kontoauszug", "wire": "Gutschriftsanzeige von Kasikorn", "ev": "Beitragsschreiben von Myriad USA"}, "stT": {"ok": "Einer Spende zugeordnet", "name": "Betrag eingegangen, kein Name bei der Gutschrift", "held": "Beleg schon verwendet; wartet auf die Kasse"}, "edT": {"ready": "Eintrag bereit; die 13-stellige Nummer der spendenden Person fehlt", "qr": "Eintrag bereit über den Bank-QR", "na": "Spender im Ausland: entfällt", "off": "Oben einschalten"}, "zr": "Der Kanton Zürich verlangt von einer steuerbefreiten Schweizer Institution, die im Ausland tätig ist, einen lückenlosen Nachweis der Geldflüsse bis zur Empfängerin im Ausland.{18} Eine Liste wie diese ist ein solcher Nachweis.", "stmH": "Monatsabrechnung · September 2026", "boards": {"THB": "Thai-Vorstand · THB", "CHF": "Schweizer Vorstand · CHF"}, "stmCol": ["Weg", "Spenden", "Total"], "stmTot": "Total", "stmChk": "{a} zu prüfen · {b} zurückgehalten", "stmFx": "Umgerechnet zu {r} THB pro CHF, Mittelkurs Wise, 19. Okt. 2026.", "copy": "Als Text kopieren", "copied": "Kopiert", "mvH": "Zwischen den beiden Konten", "mvL": "CHF {x} vom Schweizer Konto zu Kasikorn verschieben", "mvW": "Gebühr von Wise", "mvWr": "Kommt mit Wise bei Kasikorn an", "mvB": "Überweisung der Schweizer Bank, alles inbegriffen", "mvK": "Eingangsgebühr Kasikorn auf die Überweisung", "mvBr": "Kommt per Überweisung bei Kasikorn an", "mvN": "Die Zahlen von Wise gelten für private Überweisungen. Geschäftstarife sind anders. Ob Wise Business eine thailändische Stiftung oder einen Schweizer Verein annimmt, steht auf den gelesenen Seiten nicht."}, "op": [["Belegleser", "Das Foto eines Belegs wird gelesen und auf Betrag, Empfänger und Wiederholungen geprüft.{26}"], ["Kassenbuch", "Jede Spende ist eine Zeile in einer Liste, in THB und CHF, mit ihrem Weg."], ["Monatsabrechnung", "Eine Seite für den Thai-Vorstand in THB, eine für den Schweizer Vorstand in CHF."], ["Spenderseite", "Eine Seite auf fercthailand.org mit den Wegen dieses Schalters für das Land der spendenden Person und einem PromptPay-QR mit dem genauen Betrag."], ["Dankesmail", "Die spendende Person erhält einen Dank mit Betrag und Datum, sobald die Spende zugeordnet ist."], ["e-Donation-Einträge", "Vorbereitet, damit die Kasse sie einreichen kann, wo die FERC zugelassen ist.{14}"], ["Kontoverschiebungen", "Wise und Überweisung verglichen für jede Verschiebung von CHF zu THB, mit der Gebühr von Kasikorn ausgerechnet.{10}{11}"], ["Antragsentwürfe", "Formulare für Wise, Opn oder eine Schweizer Dachstiftung, entworfen zum Lesen und Unterschreiben durch den Vorstand."]], "opMail": {"sub": "Spendenschalter der FERC", "body": "Liebe NaN\n\nFür die FERC möchte ich mir Folgendes ansehen:\n"}};
+(function(){var X={"en": {"est": "estimate", "avg": "average", "wks": "weeks", "big": "Large print", "bigOff": "Normal print"}, "th": {"est": "ประมาณการ", "avg": "เฉลี่ย", "wks": "สัปดาห์", "big": "ตัวอักษรใหญ่", "bigOff": "ตัวอักษรปกติ"}};['en','th'].forEach(function(l){Object.keys(X[l]).forEach(function(k){T[l][k]=X[l][k];});});})();
+(function(){['en','th','de'].forEach(function(l){Object.keys(GDT[l]).forEach(function(k){T[l][k]=GDT[l][k];});});})();
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+var lang=(function(){var q=(location.search.match(/[?&]lang=(th|en|de)\b/)||[])[1]; if(q) return q; var s=store('ferc-lang'); if(s==='th'||s==='en'||s==='de') return s; var n=(navigator.language||'en').toLowerCase(); return n.indexOf('th')===0?'th':(n.indexOf('de')===0||n.indexOf('gsw')===0)?'de':'en';})();
+function loc(){return lang==='th'?'th-TH':lang==='de'?'de-CH':'en-US';}
+var MON={en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],th:['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'],de:['Jan.','Feb.','März','April','Mai','Juni','Juli','Aug.','Sept.','Okt.','Nov.','Dez.']};
+var WD={en:['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],th:['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'],de:['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag']};
 var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 var S=DATA.schools; S.forEach(function(s,i){s.i=i;});
 var D={}; S.forEach(function(s){var d=D[s.amphoe]||(D[s.amphoe]={th:s.amphoe,en:s.amphoeEn,idx:[],min:1e9,sum:0}); d.idx.push(s.i); d.min=Math.min(d.min,s.r); d.sum+=s.r;});
@@ -1061,7 +1119,7 @@ function nm(s){return lang==='th'?s.th:(s.en||s.th);}
 function alt(s){return lang==='th'?(s.en||''):(s.en?s.th:'');}
 function dn(d){return lang==='th'?d.th:d.en;}
 function km(x){return (x<10?x.toFixed(1):String(Math.round(x)))+(lang==='th'?' กม.':' km');}
-function lvl(l){var en=lang==='en';return l.replace(/ปวช\./g,en?'Voc.':'ปวช.').replace(/อ\./g,en?'K':'อ.').replace(/ป\./g,en?'P':'ป.').replace(/ม\./g,en?'M':'ม.');}
+function lvl(l){var en=lang!=='th';return l.replace(/ปวช\./g,en?'Voc.':'ปวช.').replace(/อ\./g,en?'K':'อ.').replace(/ป\./g,en?'P':'ป.').replace(/ม\./g,en?'M':'ม.');}
 function durTxt(m){
   var r=Math.max(5,Math.round(m/5)*5), h=Math.floor(r/60), mm=r%60, s;
   if(h===0) s=mm+' '+t('mn'); else s=h+' '+t('hr')+(mm?' '+mm+' '+t('mn'):'');
@@ -1071,18 +1129,21 @@ function cssv(n){return getComputedStyle(document.documentElement).getPropertyVa
 function isDesk(){return window.matchMedia('(min-width:1024px)').matches;}
 
 /* ---------- language ---------- */
+function setBig(on){document.documentElement.classList.toggle('big',on); RM=on||!!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches); store('ferc-big',on?'1':'0'); bigLabel(); ROWH=on?56:36; $('chart').style.height=(DL.length*ROWH)+'px'; sortChart(false); $('silw').style.padding=silPad(); if(mapReady) setTimeout(function(){map.resize();},50);}
+function bigLabel(){var b=$('b-big'); if(!b) return; var on=document.documentElement.classList.contains('big'); b.setAttribute('aria-pressed',on); b.setAttribute('aria-label',t(on?'bigOff':'big')); b.title=t(on?'bigOff':'big');}
+(function(){var q=/[?&]view=big\b/.test(location.search), s=store('ferc-big'); if(q||s==='1'){ document.documentElement.classList.add('big'); RM=true; }})();
 function applyLang(){
   document.documentElement.lang=lang; document.body.classList.toggle('th',lang==='th');
-  $('b-th').setAttribute('aria-pressed',lang==='th'); $('b-en').setAttribute('aria-pressed',lang==='en');
+  ['th','en','de'].forEach(function(l){$('b-'+l).setAttribute('aria-pressed',lang===l);}); store('ferc-lang',lang); bigLabel();
   document.querySelectorAll('[data-i]').forEach(function(e){var v=t(e.getAttribute('data-i')); if(typeof v==='string') e.textContent=v;});
   document.title=t('title');
   var m='mailto:nan@motdang.net?subject='+encodeURIComponent(t('mailSubject'))+'&body='+encodeURIComponent(t('mailBody'));
   $('lunch').setAttribute('href',m);
   $('gl').textContent=t(mode==='n'?'gLn':'gLr');
   document.querySelectorAll('.date').forEach(function(d){
-    var day=d.getAttribute('data-d'), w=new Date(Date.UTC(2026,10,+day.slice(6),12)).getUTCDay();
-    d.querySelector('.mo').textContent=t('mo')[11]+' 2026'.replace('2026',lang==='th'?'2569':'2026');
-    d.querySelector('.wd').textContent=t('wd')[w];
+    var day=d.getAttribute('data-d'), y=+day.slice(0,4), m=+day.slice(4,6), w=new Date(Date.UTC(y,m-1,+day.slice(6),12)).getUTCDay();
+    d.querySelector('.mo').textContent=MON[lang][m-1]+' '+(lang==='th'?y+543:y);
+    d.querySelector('.wd').textContent=WD[lang][w];
   });
   buildRadar(); renderRead(false); buildChartLabels(); renderDD(); renderCard(); updateChip(); tickAll();
   renderAllDesk();
@@ -1226,7 +1287,7 @@ function renderCard(){
   c.appendChild(el('div','kick',dn(D[s.amphoe])));
   c.appendChild(el('h3','',nm(s)));
   var a=alt(s); if(a) c.appendChild(el('p','alt',a));
-  var sub=(s.students!=null?s.students.toLocaleString(lang==='th'?'th-TH':'en-US')+' '+t('unitStu'):'');
+  var sub=(s.students!=null?s.students.toLocaleString(loc())+' '+t('unitStu'):'');
   if(sub) c.appendChild(el('p','sub',sub));
   var f=el('div','facts');
   function fact(b,sp){var d=el('div'); d.appendChild(el('b','',b)); d.appendChild(el('span','',sp)); f.appendChild(d); return d;}
@@ -1280,7 +1341,7 @@ function renderRead(animate){
   c.appendChild(el('div','kick',dn(D[s.amphoe])));
   var h=el('h3','',nm(s)); h.style.marginTop='8px'; c.appendChild(h);
   var a=alt(s); if(a) c.appendChild(el('p','alt',a));
-  c.appendChild(el('p','sub',lvl(s.levels)+(s.students!=null?' · '+s.students.toLocaleString(lang==='th'?'th-TH':'en-US')+' '+t('unitStu'):'')));
+  c.appendChild(el('p','sub',lvl(s.levels)+(s.students!=null?' · '+s.students.toLocaleString(loc())+' '+t('unitStu'):'')));
   function row(cls,lab,val,max){
     var r=el('div','brow '+cls); r.appendChild(el('span','',lab));
     var tr=el('div','trk'), i=el('i'); tr.appendChild(i); r.appendChild(tr);
@@ -1289,7 +1350,7 @@ function renderRead(animate){
     if(animate&&!RM){ setTimeout(function(){i.style.width=w;},30); countUp(b,val); } else i.style.width=w;
   }
   row('road',t('byRoad'),s.r,260); row('line',t('straight'),s.k,260);
-  c.appendChild(el('p','car',durTxt(s.m)+' · '+(lang==='th'?'ประมาณการ':'estimate')));
+  c.appendChild(el('p','car',durTxt(s.m)+' · '+t('est')));
 }
 function countUp(node,to){
   var t0=performance.now(), d=520;
@@ -1301,7 +1362,7 @@ function pickBy(k){
 }
 
 /* ---------- districts chart ---------- */
-var ROWH=36, rowEls={}, chartShown=false;
+var ROWH=document.documentElement.classList.contains('big')?56:36, rowEls={}, chartShown=false;
 function buildChart(){
   var ch=$('chart'); ch.style.height=(DL.length*ROWH)+'px';
   DL.forEach(function(d){
@@ -1333,7 +1394,7 @@ function renderDD(){
   if(openD==null){ c.appendChild(el('p','',t('ddHint'))); return; }
   var d=D[openD];
   c.appendChild(el('b','',dn(d)));
-  c.appendChild(el('p','',d.idx.length+' '+t(d.idx.length===1?'ddOne':'ddMany')+' · '+t('byRoad')+' '+km(d.avg)+' ('+(lang==='th'?'เฉลี่ย':'average')+')'));
+  c.appendChild(el('p','',d.idx.length+' '+t(d.idx.length===1?'ddOne':'ddMany')+' · '+t('byRoad')+' '+km(d.avg)+' ('+t('avg')+')'));
   var ch=el('div','chips');
   d.idx.slice().sort(function(a,b){return S[a].r-S[b].r;}).forEach(function(i){
     var b=el('button'); b.type='button'; b.appendChild(document.createTextNode(nm(S[i]))); b.appendChild(el('small','',km(S[i].r)+' '+t('byRoad')));
@@ -1360,7 +1421,7 @@ function tickAll(){
     var ms=new Date(d.getAttribute('data-cd')).getTime()-Date.now(), bs=d.querySelectorAll('.t b'), sp=d.querySelectorAll('.t span');
     if(d.classList.contains('wk')){
       var dd=Math.max(0,Math.floor(ms/86400000)); bs[0].textContent=Math.floor(dd/7); bs[1].textContent=dd%7; bs[2].textContent=''; bs[3].textContent='';
-      sp[0].textContent=lang==='th'?'สัปดาห์':'weeks'; sp[1].textContent=t('u_d'); sp[2].textContent=''; sp[3].textContent=''; return;
+      sp[0].textContent=t('wks'); sp[1].textContent=t('u_d'); sp[2].textContent=''; sp[3].textContent=''; return;
     }
     sp[0].textContent=t('u_d'); sp[1].textContent=t('u_h'); sp[2].textContent=t('u_m'); sp[3].textContent=t('u_s');
     if(ms<=0){ bs.forEach(function(b){b.textContent='0';}); return; }
@@ -1405,7 +1466,7 @@ function interp(arr,a){
 function kin(thb){return Math.min(500,Math.max(200,thb*0.0025));}
 function ceilFee(a){return a<=5000?0:a<=30000?2:a<=100000?5:10;}
 function gdT(){return T[lang].gd;}
-function num(x){return Math.round(x).toLocaleString('en-US');}
+function num(x){return Math.round(x).toLocaleString(loc());}
 function M(c,x){var s=(Math.abs(x)<100&&Math.abs(x%1)>0.004)?x.toFixed(2):num(x); return c+' '+s;}
 function rg(c,a,b){return Math.abs(a-b)<0.5?M(c,a):M(c,a)+' – '+num(b);}
 function sp(n){return '<sup><a href="#s'+n+'">'+n+'</a></sup>';}
@@ -1608,7 +1669,7 @@ function thbOf(r){
  if(r.r==='ev'){var gr=r.a*rate; return gr-kin(gr);}
  return 0;
 }
-function dfmt(d){var p=d.split('-'), m=lang==='th'?['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return (+p[2])+' '+m[+p[1]-1];}
+function dfmt(d){var p=d.split('-'), m=MON[lang]; return (+p[2])+' '+m[+p[1]-1];}
 function edState(r){var b=T[lang].bo;
  if(!G.ed) return b.edT.off;
  if(r.r==='th') return b.edT.qr;
@@ -1754,6 +1815,8 @@ document.addEventListener('DOMContentLoaded',function(){
   silBuild(); buildChart();
   $('b-th').addEventListener('click',function(){lang='th';applyLang();});
   $('b-en').addEventListener('click',function(){lang='en';applyLang();});
+  $('b-de').addEventListener('click',function(){lang='de';applyLang();});
+  $('b-big').addEventListener('click',function(){setBig(!document.documentElement.classList.contains('big'));});
   document.querySelectorAll('.stat').forEach(function(b){b.addEventListener('click',counters);});
   $('radar').addEventListener('click',function(e){var g=e.target.closest&&e.target.closest('g[data-s]'); if(g) choose(+g.getAttribute('data-s'),{fly:false,card:false});});
   $('radar').addEventListener('keydown',function(e){ if(e.key!=='Enter'&&e.key!==' ') return; var g=e.target.closest&&e.target.closest('g[data-s]'); if(g){e.preventDefault(); choose(+g.getAttribute('data-s'),{fly:false,card:false});} });
