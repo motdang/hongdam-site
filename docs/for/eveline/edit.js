@@ -110,7 +110,8 @@
   }
   function send(body){
     return fetch(API,{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+key},body:JSON.stringify(body)})
-      .then(function(r){ if(r.status===401||r.status===403){ status(w('key')); throw 0; } if(!r.ok){ status(w('fail')); throw 0; } return r.json(); });
+      .then(function(r){ if(r.status===401||r.status===403){ status(w('key')); throw 0; } if(!r.ok){ status(w('fail')); throw 0; } return r.json(); })
+      .catch(function(e){ if(e!==0) status(w('fail')); throw 0; });
   }
   $b('evgo').addEventListener('click',start);
   $b('evcancel').addEventListener('click',function(){
@@ -123,7 +124,7 @@
     [0,1].forEach(function(i){ var g=dirty['*']||{}; if(g[NUMK[i]]) setNum(i,+g[NUMK[i]]); });
     if(!Object.keys(dirty).length){ stop(); return; }
     status(w('saving'));
-    send({edits:dirty}).then(function(){ var t=new Date(); stop(); status(w('saved')+' ✓ '+String(t.getHours()).padStart(2,'0')+':'+String(t.getMinutes()).padStart(2,'0')); }).catch(function(){});
+    send({edits:dirty}).then(function(j){ var t=new Date(); stop(); if(j&&j.edits) apply(j.edits); status(w('saved')+' ✓ '+String(t.getHours()).padStart(2,'0')+':'+String(t.getMinutes()).padStart(2,'0')); }).catch(function(){});
   });
   $b('evreset').addEventListener('click',function(){
     if(!confirm(w('resetQ'))) return;
