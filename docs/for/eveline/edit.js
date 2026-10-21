@@ -5,9 +5,9 @@
   var PAGE=window.EV_PAGE; if(!PAGE) return;
   var API='/api/page/'+PAGE, KEY='ev-key-'+PAGE;
   var W={
-    de:{edit:'✎ Seite bearbeiten',hint:'Tippen Sie auf einen Text und schreiben Sie. Zahlen und Daten auch.',save:'Speichern',cancel:'Abbrechen',saved:'Gespeichert',saving:'Speichere …',fail:'Speichern fehlgeschlagen. Bitte nochmals versuchen.',loadFail:'Laden fehlgeschlagen. Zum Bearbeiten die Seite neu laden.',key:'Dieser Link darf nicht bearbeiten.',reset:'Zurück zum Original',resetQ:'Alle Ihre Änderungen auf dieser Seite löschen?',demo:'Muster-Seite: Ihre Änderungen sieht jede Person mit diesem Link.',date:'Datum'},
-    en:{edit:'✎ Edit this page',hint:'Tap any text and type. Numbers and dates too.',save:'Save',cancel:'Cancel',saved:'Saved',saving:'Saving …',fail:'Saving failed. Please try again.',loadFail:'Loading failed. Please reload the page to edit.',key:'This link cannot edit.',reset:'Back to the original',resetQ:'Delete all your changes on this page?',demo:'Demo page: anyone with this link sees your changes.',date:'Date'},
-    th:{edit:'✎ แก้ไขหน้านี้',hint:'แตะข้อความแล้วพิมพ์ได้เลย ตัวเลขและวันที่ก็แก้ได้',save:'บันทึก',cancel:'ยกเลิก',saved:'บันทึกแล้ว',saving:'กำลังบันทึก …',fail:'บันทึกไม่สำเร็จ กรุณาลองอีกครั้ง',loadFail:'โหลดไม่สำเร็จ กรุณาโหลดหน้าใหม่เพื่อแก้ไข',key:'ลิงก์นี้แก้ไขไม่ได้',reset:'กลับไปเป็นต้นฉบับ',resetQ:'ลบการแก้ไขทั้งหมดในหน้านี้?',demo:'หน้าตัวอย่าง: ทุกคนที่มีลิงก์นี้เห็นสิ่งที่คุณแก้',date:'วันที่'}
+    de:{edit:'✎ Seite bearbeiten',hint:'Tippen Sie auf einen Text und schreiben Sie. Zahlen und Daten auch.',save:'Speichern',cancel:'Abbrechen',saved:'Gespeichert',saving:'Speichere …',fail:'Speichern fehlgeschlagen. Bitte nochmals versuchen.',loadFail:'Laden fehlgeschlagen. Zum Bearbeiten die Seite neu laden.',key:'Dieser Link darf nicht bearbeiten.',reset:'Zurück zum Original',resetQ:'Alle Ihre Änderungen auf dieser Seite löschen?',demo:'Muster-Seite: Ihre Änderungen sieht jede Person mit diesem Link.',date:'Datum',field:'Bearbeitbar, Abschnitt'},
+    en:{edit:'✎ Edit this page',hint:'Tap any text and type. Numbers and dates too.',save:'Save',cancel:'Cancel',saved:'Saved',saving:'Saving …',fail:'Saving failed. Please try again.',loadFail:'Loading failed. Please reload the page to edit.',key:'This link cannot edit.',reset:'Back to the original',resetQ:'Delete all your changes on this page?',demo:'Demo page: anyone with this link sees your changes.',date:'Date',field:'Editable, section'},
+    th:{edit:'✎ แก้ไขหน้านี้',hint:'แตะข้อความแล้วพิมพ์ได้เลย ตัวเลขและวันที่ก็แก้ได้',save:'บันทึก',cancel:'ยกเลิก',saved:'บันทึกแล้ว',saving:'กำลังบันทึก …',fail:'บันทึกไม่สำเร็จ กรุณาลองอีกครั้ง',loadFail:'โหลดไม่สำเร็จ กรุณาโหลดหน้าใหม่เพื่อแก้ไข',key:'ลิงก์นี้แก้ไขไม่ได้',reset:'กลับไปเป็นต้นฉบับ',resetQ:'ลบการแก้ไขทั้งหมดในหน้านี้?',demo:'หน้าตัวอย่าง: ทุกคนที่มีลิงก์นี้เห็นสิ่งที่คุณแก้',date:'วันที่',field:'แก้ไขได้ ส่วน'}
   };
   function w(k){return (W[lang]||W.en)[k];}
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null;}}
@@ -71,7 +71,7 @@
     });
   }
   function mark(){
-    editable().forEach(function(e){ e.setAttribute('contenteditable','plaintext-only'); if(e.contentEditable!=='plaintext-only') e.setAttribute('contenteditable','true'); e.classList.add('ev-ed'); e.setAttribute('spellcheck','true'); });
+    editable().forEach(function(e){ e.setAttribute('contenteditable','plaintext-only'); if(e.contentEditable!=='plaintext-only') e.setAttribute('contenteditable','true'); e.classList.add('ev-ed'); e.setAttribute('spellcheck','true'); var hd=(e.closest('section,header')||document).querySelector('h1,h2'); e.setAttribute('aria-description',w('field')+' '+(hd?hd.textContent:'')); });
     [0,1].forEach(function(i){ var b=stats()[i]; if(!b) return; var n=b.querySelector('b'); n.setAttribute('contenteditable','true'); n.setAttribute('inputmode','numeric'); n.classList.add('ev-ed','ev-num'); n.dataset.ev=NUMK[i]; n.textContent=getNum(i); });
     dates().forEach(function(d,i){
       if(d.querySelector('.evdate')) return;
@@ -83,7 +83,7 @@
     words();
   }
   function unmark(){
-    document.querySelectorAll('.ev-ed').forEach(function(e){ e.removeAttribute('contenteditable'); e.classList.remove('ev-ed','ev-num'); });
+    document.querySelectorAll('.ev-ed').forEach(function(e){ e.removeAttribute('contenteditable'); e.removeAttribute('aria-description'); e.classList.remove('ev-ed','ev-num'); });
     document.querySelectorAll('.evdate').forEach(function(e){ e.remove(); });
   }
   function put(scope,k,v){ (dirty[scope]=dirty[scope]||{})[k]=v; }
