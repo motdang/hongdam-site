@@ -713,6 +713,17 @@
    "page": "https://hongdam.net/tasks/c/sec-redteam"
   },
   {
+   "id": "sec-php",
+   "type": "category",
+   "en": "PHP fix after PHP2Shell",
+   "th": "แก้ PHP หลังช่องโหว่ PHP2Shell",
+   "price": {
+    "her": "priced by bookings at hongdam.net/php"
+   },
+   "href": "https://hongdam.net/php/",
+   "page": "https://hongdam.net/tasks/c/sec-php"
+  },
+  {
    "id": "sec-packs",
    "type": "category",
    "en": "Probe packs",
@@ -2936,6 +2947,26 @@
   {
    "s": "sec-redteam",
    "t": "ai-whitelabel",
+   "type": "related"
+  },
+  {
+   "s": "sec-php",
+   "t": "sec",
+   "type": "part_of"
+  },
+  {
+   "s": "sec-php",
+   "t": "hongdam",
+   "type": "answered_by"
+  },
+  {
+   "s": "sec-php",
+   "t": "human",
+   "type": "done_by"
+  },
+  {
+   "s": "sec-php",
+   "t": "web-move",
    "type": "related"
   },
   {

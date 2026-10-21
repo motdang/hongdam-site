@@ -42,7 +42,7 @@ async function book(ctx, b, now) {
   const { request, env } = ctx
   const kind = clean(b.kind, 20), login = clean(b.login, 60).replace(/^@/, '').replace(/^https?:\/\/github\.com\//i, '').replace(/\/.*$/, '')
   const contact = clean(b.contact, 120), note = clean(b.note, 600)
-  if (!KINDS[kind]) return json({ ok: false, error: 'Pick a kind: profile, showcase or whole.' }, 400)
+  if (!Object.hasOwn(KINDS, kind)) return json({ ok: false, error: 'Pick a kind: profile, showcase or whole.' }, 400)
   if (!LOGIN.test(login)) return json({ ok: false, error: 'That is not a GitHub username.' }, 400)
   if (contact.length < 3) return json({ ok: false, error: 'Leave an email or a LINE ID.' }, 400)
   const ip = request.headers.get('cf-connecting-ip') || ''

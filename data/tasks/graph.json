@@ -73,6 +73,7 @@
 
     {"id": "sec", "en": "Security", "th": "ความปลอดภัย", "who": ["hongdam"], "by": "both"},
     {"id": "sec-redteam", "up": "sec", "en": "Red-team test of a chatbot", "th": "ทดสอบเจาะแชตบอต", "who": ["hongdam"], "by": "robot", "price": {"baht": 5000}, "href": "https://hongdam.net/redteam", "rel": ["ai-line", "ai-whitelabel"]},
+    {"id": "sec-php", "up": "sec", "en": "PHP fix after PHP2Shell", "th": "แก้ PHP หลังช่องโหว่ PHP2Shell", "who": ["hongdam"], "by": "human", "price": {"her": "priced by bookings at hongdam.net/php"}, "href": "https://hongdam.net/php/", "rel": ["web-move"]},
     {"id": "sec-packs", "up": "sec", "en": "Probe packs", "th": "ชุดคำทดสอบ", "who": ["hongdam"], "by": "robot", "price": {"her": "as listed on the market"}, "href": "https://hongdam.net/market"},
     {"id": "sec-mail", "up": "sec", "en": "Mail spoofing check", "th": "ตรวจการปลอมอีเมล", "who": ["hongdam"], "by": "robot", "price": {"baht": 1000}, "rel": ["web-mail"]},
     {"id": "sec-msp", "up": "sec", "en": "Call lists for IT providers", "th": "รายชื่อโทรหาผู้ให้บริการไอที", "who": ["hongdam"], "by": "both", "price": {"quote": true}, "rel": ["data-leads"]},

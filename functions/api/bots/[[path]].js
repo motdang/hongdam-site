@@ -41,7 +41,7 @@ async function book(ctx, b, now) {
   const { request, env } = ctx
   const kind = clean(b.kind, 20), site = clean(b.site, 160)
   const contact = clean(b.contact, 120), note = clean(b.note, 600)
-  if (!KINDS[kind]) return json({ ok: false, error: 'Pick one: ' + Object.keys(KINDS).join(', ') + '.' }, 400)
+  if (!Object.hasOwn(KINDS, kind)) return json({ ok: false, error: 'Pick one: ' + Object.keys(KINDS).join(', ') + '.' }, 400)
   if (site.length < 3) return json({ ok: false, error: 'Name the site, repo or field the bot works on.' }, 400)
   if (contact.length < 3) return json({ ok: false, error: 'Leave an email or a LINE ID.' }, 400)
   const ip = request.headers.get('cf-connecting-ip') || ''
