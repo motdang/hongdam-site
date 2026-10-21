@@ -5,9 +5,9 @@
   var PAGE=window.EV_PAGE; if(!PAGE) return;
   var API='/api/page/'+PAGE, KEY='ev-key-'+PAGE;
   var W={
-    de:{edit:'✎ Seite bearbeiten',hint:'Tippen Sie auf einen Text und schreiben Sie. Zahlen und Daten auch.',save:'Speichern',cancel:'Abbrechen',saved:'Gespeichert',saving:'Speichere …',fail:'Speichern fehlgeschlagen. Bitte nochmals versuchen.',key:'Dieser Link darf nicht bearbeiten.',reset:'Zurück zum Original',resetQ:'Alle Ihre Änderungen auf dieser Seite löschen?',demo:'Muster-Seite: Ihre Änderungen sieht jede Person mit diesem Link.',date:'Datum'},
-    en:{edit:'✎ Edit this page',hint:'Tap any text and type. Numbers and dates too.',save:'Save',cancel:'Cancel',saved:'Saved',saving:'Saving …',fail:'Saving failed. Please try again.',key:'This link cannot edit.',reset:'Back to the original',resetQ:'Delete all your changes on this page?',demo:'Demo page: anyone with this link sees your changes.',date:'Date'},
-    th:{edit:'✎ แก้ไขหน้านี้',hint:'แตะข้อความแล้วพิมพ์ได้เลย ตัวเลขและวันที่ก็แก้ได้',save:'บันทึก',cancel:'ยกเลิก',saved:'บันทึกแล้ว',saving:'กำลังบันทึก …',fail:'บันทึกไม่สำเร็จ กรุณาลองอีกครั้ง',key:'ลิงก์นี้แก้ไขไม่ได้',reset:'กลับไปเป็นต้นฉบับ',resetQ:'ลบการแก้ไขทั้งหมดในหน้านี้?',demo:'หน้าตัวอย่าง: ทุกคนที่มีลิงก์นี้เห็นสิ่งที่คุณแก้',date:'วันที่'}
+    de:{edit:'✎ Seite bearbeiten',hint:'Tippen Sie auf einen Text und schreiben Sie. Zahlen und Daten auch.',save:'Speichern',cancel:'Abbrechen',saved:'Gespeichert',saving:'Speichere …',fail:'Speichern fehlgeschlagen. Bitte nochmals versuchen.',loadFail:'Laden fehlgeschlagen. Zum Bearbeiten die Seite neu laden.',key:'Dieser Link darf nicht bearbeiten.',reset:'Zurück zum Original',resetQ:'Alle Ihre Änderungen auf dieser Seite löschen?',demo:'Muster-Seite: Ihre Änderungen sieht jede Person mit diesem Link.',date:'Datum'},
+    en:{edit:'✎ Edit this page',hint:'Tap any text and type. Numbers and dates too.',save:'Save',cancel:'Cancel',saved:'Saved',saving:'Saving …',fail:'Saving failed. Please try again.',loadFail:'Loading failed. Please reload the page to edit.',key:'This link cannot edit.',reset:'Back to the original',resetQ:'Delete all your changes on this page?',demo:'Demo page: anyone with this link sees your changes.',date:'Date'},
+    th:{edit:'✎ แก้ไขหน้านี้',hint:'แตะข้อความแล้วพิมพ์ได้เลย ตัวเลขและวันที่ก็แก้ได้',save:'บันทึก',cancel:'ยกเลิก',saved:'บันทึกแล้ว',saving:'กำลังบันทึก …',fail:'บันทึกไม่สำเร็จ กรุณาลองอีกครั้ง',loadFail:'โหลดไม่สำเร็จ กรุณาโหลดหน้าใหม่เพื่อแก้ไข',key:'ลิงก์นี้แก้ไขไม่ได้',reset:'กลับไปเป็นต้นฉบับ',resetQ:'ลบการแก้ไขทั้งหมดในหน้านี้?',demo:'หน้าตัวอย่าง: ทุกคนที่มีลิงก์นี้เห็นสิ่งที่คุณแก้',date:'วันที่'}
   };
   function w(k){return (W[lang]||W.en)[k];}
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k); if(v===null)localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){return null;}}
@@ -43,7 +43,11 @@
     applyLang(); counters(); tickAll();
   }
   function ready(f){ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){setTimeout(f,0);}); else f(); }
-  fetch(API,{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(j){ if(j&&j.edits) ready(function(){apply(j.edits);}); }).catch(function(){});
+  /* editing waits for the saved words, so a save never covers words it has not shown */
+  var loaded=null;
+  fetch(API,{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){ if(!j||!j.edits) throw 0; ready(function(){ apply(j.edits); loaded=true; if(window.evReady) evReady(); }); })
+    .catch(function(){ loaded=false; if(window.evReady) evReady(); });
 
   if(!key) return;
 
@@ -114,6 +118,7 @@
       .catch(function(e){ if(e!==0) status(w('fail')); throw 0; });
   }
   $b('evgo').addEventListener('click',start);
+  window.evReady=function(){ $b('evgo').disabled=!loaded; status(loaded===false?w('loadFail'):''); };
   $b('evcancel').addEventListener('click',function(){
     ['en','th','de'].forEach(function(l){ Object.keys(snapT[l]).forEach(function(k){ T[l][k]=snapT[l][k]; }); });
     [0,1].forEach(function(i){ setNum(i,+snapG.n[i]); setDate(i,snapG.d[i]); });
@@ -137,7 +142,7 @@
     '.evbar p{margin:0 0 10px;font-size:20px!important}.evbar .evst{margin:8px 0 0;min-height:0}.evbar .evst:empty{display:none}'+
     '.evrow{display:flex;gap:10px;flex-wrap:wrap}'+
     '.evbar button{min-height:60px;padding:0 22px;border-radius:14px;border:3px solid #000;font:800 21px/1 var(--body)!important;cursor:pointer}'+
-    '.evgo,.evsave{background:#000;color:#ffd23f;flex:1}.evcancel{background:#fff;color:#000}'+
+    '.evgo,.evsave{background:#000;color:#ffd23f;flex:1}.evcancel{background:#fff;color:#000}.evbar button:disabled{opacity:.45;cursor:default}'+
     '.evbar .evreset{min-height:48px;margin-top:10px;background:transparent;border:0;text-decoration:underline;font-weight:600!important;padding:0}'+
     '.evbar:not(.on){left:auto;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:0;background:none;box-shadow:none}'+
     '.evbar:not(.on) .evst{background:#ffd23f;padding:6px 12px;border-radius:10px;margin-top:8px;text-align:center}'+
@@ -148,5 +153,5 @@
     '.evdate{display:flex;flex-direction:column;gap:4px;margin-top:12px;font:700 18px/1.2 var(--body)}'+
     '.evdate input{min-height:56px;font:700 22px/1 var(--body);padding:6px 10px;border:3px solid #ffb000;border-radius:10px;background:var(--bg);color:var(--ink)}';
   document.head.appendChild(css);
-  ready(function(){ document.body.appendChild(bar); words(); });
+  ready(function(){ document.body.appendChild(bar); words(); evReady(); });
 })();

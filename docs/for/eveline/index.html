@@ -1129,9 +1129,9 @@ function cssv(n){return getComputedStyle(document.documentElement).getPropertyVa
 function isDesk(){return window.matchMedia('(min-width:1024px)').matches;}
 
 /* ---------- language ---------- */
-function setBig(on){document.documentElement.classList.toggle('big',on); store('ferc-big',on?'1':'0'); bigLabel(); ROWH=on?56:36; $('chart').style.height=(DL.length*ROWH)+'px'; sortChart(false); $('silw').style.padding=silPad(); if(mapReady) setTimeout(function(){map.resize();},50);}
+function setBig(on){document.documentElement.classList.toggle('big',on); RM=on||!!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches); store('ferc-big',on?'1':'0'); bigLabel(); ROWH=on?56:36; $('chart').style.height=(DL.length*ROWH)+'px'; sortChart(false); $('silw').style.padding=silPad(); if(mapReady) setTimeout(function(){map.resize();},50);}
 function bigLabel(){var b=$('b-big'); if(!b) return; var on=document.documentElement.classList.contains('big'); b.setAttribute('aria-pressed',on); b.setAttribute('aria-label',t(on?'bigOff':'big')); b.title=t(on?'bigOff':'big');}
-(function(){var q=/[?&]view=big\b/.test(location.search), s=store('ferc-big'); if(q||s==='1') document.documentElement.classList.add('big');})();
+(function(){var q=/[?&]view=big\b/.test(location.search), s=store('ferc-big'); if(q||s==='1'){ document.documentElement.classList.add('big'); RM=true; }})();
 function applyLang(){
   document.documentElement.lang=lang; document.body.classList.toggle('th',lang==='th');
   ['th','en','de'].forEach(function(l){$('b-'+l).setAttribute('aria-pressed',lang===l);}); store('ferc-lang',lang); bigLabel();
