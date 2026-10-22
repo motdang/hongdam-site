@@ -138,6 +138,28 @@ sup a{text-decoration:none;font-size:.72em;font-weight:700;margin-left:1px}
 .rcpt{display:inline-block;font:700 12px/1 var(--body);padding:5px 9px;border-radius:999px;margin-right:6px}
 .rcpt.yes{background:var(--ok-soft);color:var(--ok)} .rcpt.maybe{background:var(--may-soft);color:var(--may)} .rcpt.no{background:var(--no-soft);color:var(--no)}
 .note{font-size:13.5px;color:var(--muted);margin-top:14px}
+.fh{font-size:1.25rem;margin:4px 0 10px}
+.tag.why{background:var(--gold-soft);color:var(--ink)}
+.drawer{margin-top:16px;border:2px solid var(--line);border-radius:18px;background:var(--paper2)}
+.drawer summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:800;min-height:48px;display:flex;align-items:center;gap:10px}
+.drawer summary::-webkit-details-marker{display:none}
+.drawer summary::before{content:"▸";font-size:1.1em;transition:transform .15s}
+.drawer[open] summary::before{transform:rotate(90deg)}
+.drawer .cards{padding:0 12px 12px}
+.wl{display:block;margin-top:8px;font-weight:700}
+.wl a{color:inherit}
+.tiers{display:grid;gap:12px;margin:20px 0}
+@media (min-width:860px){.tiers{grid-template-columns:repeat(4,1fr)}}
+.tier{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px;position:relative;overflow:hidden}
+.tier::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--tc)}
+.tier h3{font-size:1.2rem;margin:4px 0 2px}
+.tier .th2{font-size:13.5px;color:var(--muted)}
+.tier .slot{margin-top:12px;border:2px dashed var(--line);border-radius:10px;padding:10px;color:var(--muted);font-size:14px;text-align:center}
+.tier .ex{font-size:14px;margin-top:8px}
+.nameme{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px;display:grid;gap:10px;max-width:560px}
+.nameme h3{font-size:1.15rem}
+.nameme label:not(.need){display:grid;gap:4px;font-weight:700;font-size:14px;color:var(--muted)}
+.nameme input:not([type=checkbox]){border:2px solid var(--line);border-radius:10px;padding:10px;background:var(--paper);font-size:17px;min-height:44px;color:var(--ink)}
 
 /* kinds */
 .kinds{display:grid;gap:12px;margin-top:20px}
@@ -227,7 +249,9 @@ footer{padding:18px 0 40px;font-size:14px;color:var(--muted)}
     </div>
     <div class="sum" id="sum" aria-live="polite"></div>
     <div id="warn"></div>
+    <h3 class="fh"><span class="en">Preferred ways</span><span class="th" lang="th">ช่องทางที่แนะนำ</span></h3>
     <div class="cards" id="cards"></div>
+    <details class="drawer" id="drawer"><summary id="drawerS"></summary><div class="cards" id="cards2"></div></details>
     <p class="note" id="note"></p>
   </div>
 </section>
@@ -278,12 +302,29 @@ footer{padding:18px 0 40px;font-size:14px;color:var(--muted)}
   </div>
 </section>
 
+<section class="sec" id="wall" aria-labelledby="wh">
+  <div class="wrap">
+    <span class="kick"><span class="en">Thanks</span><span class="th" lang="th">ขอบคุณ</span></span>
+    <h2 id="wh"><span class="en">Thank-you wall</span><span class="th" lang="th">ผนังขอบคุณ</span></h2>
+    <p class="lede en">Gifts from US$1,000 are named here, in the donor's own words, or kept anonymous at their word. A gift can honour or remember someone. Levels and wording: the board's to set.</p>
+    <p class="lede th" lang="th">ของขวัญตั้งแต่ 1,000 ดอลลาร์สหรัฐได้รับการเอ่ยนามที่นี่ ตามถ้อยคำของผู้บริจาค หรือไม่ระบุชื่อตามที่ผู้บริจาคขอ ของขวัญอาจให้เพื่อเป็นเกียรติหรือรำลึกถึงผู้อื่น ระดับและถ้อยคำ: คณะกรรมการเป็นผู้กำหนด</p>
+    <div class="tiers" id="tiers"></div>
+    <div class="nameme">
+      <h3><span class="en">How the donor is named</span><span class="th" lang="th">ให้เอ่ยนามผู้บริจาคอย่างไร</span></h3>
+      <label><span class="en">Name as shown</span><span class="th" lang="th">ชื่อที่แสดง</span><input id="nmName" autocomplete="name"></label>
+      <label><span class="en">In honour or memory of (optional)</span><span class="th" lang="th">เพื่อเป็นเกียรติหรือรำลึกถึง (ไม่บังคับ)</span><input id="nmHon"></label>
+      <label class="need"><input type="checkbox" id="nmAnon"><span class="en">Anonymous</span><span class="th" lang="th">ไม่ระบุชื่อ</span></label>
+      <button type="button" class="btn" id="nmBtn"><span class="en">Send to CCA</span><span class="th" lang="th">ส่งถึง CCA</span></button>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="unlock" aria-labelledby="uh">
   <div class="wrap">
     <span class="kick"><span class="en">From the board</span><span class="th" lang="th">จากคณะกรรมการ</span></span>
     <h2 id="uh"><span class="en">Five answers open the dashed routes</span><span class="th" lang="th">ห้าคำตอบ เปิดช่องทางเส้นประ</span></h2>
-    <p class="lede en">Two routes work today: Fractured Atlas and the PayPal form on CCA's donate page. Each answer below turns more cards solid.</p>
-    <p class="lede th" lang="th">วันนี้ใช้ได้สองช่องทาง: Fractured Atlas และแบบฟอร์ม PayPal บนหน้าบริจาคของ CCA แต่ละคำตอบด้านล่างเปลี่ยนการ์ดเส้นประให้ใช้ได้จริง</p>
+    <p class="lede en">Five ways work today: four through Fractured Atlas (online, cheque, fund grant, shares) and the PayPal form on CCA's donate page. Each answer below turns more cards solid.</p>
+    <p class="lede th" lang="th">วันนี้ใช้ได้ห้าช่องทาง: สี่ทางผ่าน Fractured Atlas (ออนไลน์ เช็ค ทุน DAF หุ้น) และแบบฟอร์ม PayPal บนหน้าบริจาคของ CCA แต่ละคำตอบด้านล่างเปลี่ยนการ์ดเส้นประให้ใช้ได้จริง</p>
     <div class="ul" id="ulist"></div>
   </div>
 </section>
@@ -341,6 +382,7 @@ var GD={
  A:[100,250,500,1000,2500,5000,10000],
  W:{USD:[8.78,9.66,11.12,14.05,22.86,37.52,66.85],GBP:[2.13,3.07,4.63,7.77,17.16,32.8,64.11],EUR:[2.85,3.95,5.79,9.46,20.48,38.85,75.57],CHF:[2.93,3.72,5.04,7.68,15.59,28.77,55.13],AUD:[3.14,4.04,5.56,8.6,17.7,32.85,63.16]},
  B:{"USD":{"Wells Fargo":[3.18,7.97,15.94,31.95,79.62,159.24,318.48]},"GBP":{"Nationwide":[16.97,20.46,26.27,37.88,72.72,130.79,246.94],"NatWest":[2.44,6.1,12.19,24.38,60.95,121.9,243.81],"HSBC":[1.72,3.9,7.8,15.61,39.01,78.03,156.06],"Lloyds":[12.94,18.65,28.17,47.2,103.19,197.25,385.35],"RBS":[2.44,6.1,12.19,24.38,60.95,121.9,243.81],"Barclays":[2.85,7.12,14.23,28.46,71.15,142.3,284.61]},"EUR":{"Rabobank":[17.98,21.52,27.41,39.2,74.55,133.49,253.3],"Commerzbank":[15.07,31.6,29.22,43.89,87.87,161.19,310.24],"UniCredit":[42.78,45.98,51.34,62.07,94.27,147.93,255.26],"LaCaixa":[28.77,32.4,38.45,50.56,86.88,155.23,310.46],"ABN AMRO Bank":[24.73,26.19,28.6,33.44,47.94,72.12,120.46],"Deutsche Bank":[37.87,40.98,46.17,56.56,87.7,139.61,248.33]},"CHF":{"Zürcher Kantonalbank":[32.15,48.24,75.05,130.06,289.55,557.67,1093.91],"Migros":[26.7,30.09,35.75,48.59,81.03,137.63,250.83]},"AUD":{"ANZ":[3.71,9.27,18.53,37.07,92.67,185.68,371.36],"Commonwealth Bank of Australia":[3.06,7.66,15.32,30.64,76.6,153.54,307.09],"HSBC Australia":[31.88,35.92,42.65,56.1,96.46,164.08,298.97],"Westpac":[4.38,10.96,21.91,43.82,109.56,219.47,438.94]}},
+ P:{"USD":{"WorldRemit":[4.52,6.87,10.81,18.67,42.26,81.57,160.19],"Xoom":[9.14,15.7,26.62,48.46,114.0,223.24,441.7],"Remitly":[3.4,5.57,9.17,16.39,17.22,32.46,62.94],"Western Union":[4.09,7.3,12.65,18.37,42.98,84.01,166.05],"Instarem":[0.83,2.08,4.17,8.33,20.83,38.65,76.31]},"GBP":{"Remitly":[3.38,7.0,13.02,25.08,61.26,121.55,242.13],"Instarem":[0.62,1.56,3.11,6.23,15.57,31.14,62.28],"Skrill":[1.81,4.53,9.05,18.11,45.27,90.55,181.09],"Moneygram":[4.69,10.51,16.15,27.41,61.22,117.56,230.24],"Xoom":[5.83,10.22,17.54,32.18,76.1,149.31,295.71],"Western Union":[3.69,7.79,14.62,28.28,69.26,137.55,274.14]},"EUR":{"Xoom":[5.82,10.2,17.5,32.09,75.87,148.83,294.76],"Remitly":[4.12,5.86,8.77,14.59,32.03,61.11,119.25],"Western Union":[2.96,6.91,11.88,21.81,51.59,101.24,200.52],"Skrill":[1.83,4.56,9.13,18.26,45.65,91.29,182.58],"Instarem":[0.56,1.41,3.56,7.13,17.82,35.64,71.28],"WorldRemit":[4.93,9.44,16.95,31.97,77.04,152.15,304.3]},"CHF":{"Western Union":[5.22,7.44,11.95,17.97,39.02,74.1,144.26]},"AUD":{"Instarem":[0.57,1.42,2.84,5.68,13.84,28.68,57.36],"Western Union":[2.11,3.55,6.13,10.27,22.34,42.7,29.37],"Xoom":[4.66,6.27,10.61,19.93,46.01,89.06,129.72],"Remitly":[2.55,3.4,4.83,8.59,15.86,29.74,57.51]}},
  CUR:{US:'USD',TH:'THB',UK:'GBP',EU:'EUR',CH:'CHF',AU:'AUD',XX:'USD'},
  PRE:{US:[100,1000,25000,250000],TH:[1000,10000,100000,1000000],UK:[100,1000,20000,200000],EU:[100,1000,20000,200000],CH:[100,1000,20000,200000],AU:[100,1000,25000,250000],XX:[100,1000,25000,250000]},
  PPF:{USD:0.30,GBP:0.20,EUR:0.35,CHF:0.55,AUD:0.30}
@@ -361,7 +403,7 @@ var W={
   rate:'= {t} · {a} at {r} THB per {c}, mid-market, {d}',bigW:'Above 10,000, the Wise and bank figures are scaled up from their 10,000 quote; both quote large transfers lower.',
   bot:'From about USD 200,000, a Thai bank asks CCA for documents for the foreign money it receives.',
   note:'Fees are the providers’ published figures; amounts convert at Wise’s mid-market rate of {d}. "Could add" routes need the board’s answers below.',
-  todayR:' Works today: {r}, {x}.',todayNone:' No Thai route is on CCA’s donate page today.',stT:'Stripe’s payout schedule',ppT:'when CCA moves it from PayPal',
+  todayR:' Works today: {r}, {x}.',now:'on the spot',dafT:'several weeks (the fund\u2019s schedule)',appT:'shown by the app before paying',more:'All other ways to pay ({n})',whyR:'Best with a tax receipt',wallIs:'A gift this size is named on the thank-you wall as {t}.',todayNone:' No Thai route is on CCA’s donate page today.',stT:'Stripe’s payout schedule',ppT:'when CCA moves it from PayPal',
   bankT:'the bank’s schedule',wiseT:'shown by Wise before paying',faT:'Fractured Atlas pays out to the project',cafT:'grants in about 3–4 weeks',
   before:'before {w}',u:{fa:'Fractured Atlas’s payout to CCA',conv:'any currency conversion',pp:'PayPal’s rate for CCA’s account'},
   l:{fee:'{n} fee',sent:'Sent after the fee',conv:'× {r} THB per {c}',kin:'Thai bank’s incoming fee (Kasikorn: 0.25%, THB 200–500)',total:'Reaches CCA',totalUp:'Up to, before the costs not stated',
@@ -371,7 +413,7 @@ var W={
    ppF:'PayPal 4.40% + {f} fixed, if CCA’s account is Thai',ppC:'Plus a conversion margin if PayPal converts',
    stF:'Stripe 4.75% + THB 10 on a foreign card',stX:'Stripe +2% when the currency converts',stT:'Stripe 3.65% + THB 10 on a Thai card',
    pp0:'PromptPay transfer fee to the donor',pp1:'THB 0 to CCA',bankB:'Banks in Wise’s table, all-in (fee + rate margin)',lohi:'lowest {a}, highest {b}',wireX:'Your bank’s fee and rate margin',
-   ngo:'No fee per gift once the determination is done; its own fee is not published',edu:'Needs CCA’s 13-digit donation-unit number from the Revenue Department'}},
+   ngo:'No fee per gift once the determination is done; its own fee is not published',appC:'Fee and rate margin, all-in',edu:'Needs CCA’s 13-digit donation-unit number from the Revenue Department'}},
  th:{best:'ดีที่สุด',today:'CCA มีวันนี้',add:'เพิ่มได้',reach:'ถึง CCA',time:'เวลา',rcpt:'ใบลดหย่อนภาษี',how:'ขั้นตอนและการคำนวณ',
   rc:{yes:'ได้',maybe:'อาจได้',no:'ไม่ได้'},upto:'สูงสุด {x}',range:'{a} – {b}',noFee:'ไม่มีค่าธรรมเนียมบนหน้าสาธารณะ',
   sum:'{a} จาก{p}',bestIs:'ดีที่สุด: {r} ถึง CCA ประมาณ {x}',bestUp:'ดีที่สุด: {r} ถึง CCA สูงสุด {x}',forR:' ถ้าต้องการใบลดหย่อนภาษี: {r} {x}',
@@ -379,7 +421,7 @@ var W={
   rate:'= {t} · {a} ที่ {r} บาทต่อ {c} อัตรากลาง {d}',bigW:'เกิน 10,000 ตัวเลขของ Wise และธนาคารขยายจากราคาที่ 10,000 ทั้งสองมักคิดถูกลงสำหรับยอดใหญ่',
   bot:'ตั้งแต่ประมาณ 200,000 ดอลลาร์สหรัฐ ธนาคารไทยจะขอเอกสารจาก CCA สำหรับเงินตราต่างประเทศที่รับเข้ามา',
   note:'ค่าธรรมเนียมเป็นตัวเลขที่ผู้ให้บริการประกาศ แปลงค่าที่อัตรากลางของ Wise วันที่ {d} ช่องทาง "เพิ่มได้" ต้องใช้คำตอบของคณะกรรมการด้านล่าง',
-  todayR:' ใช้ได้วันนี้: {r} {x}',todayNone:' วันนี้หน้าบริจาคของ CCA ยังไม่มีช่องทางในไทย',stT:'ตามรอบจ่ายของ Stripe',ppT:'เมื่อ CCA ถอนออกจาก PayPal',
+  todayR:' ใช้ได้วันนี้: {r} {x}',now:'ทันที',dafT:'หลายสัปดาห์ (ตามรอบของกองทุน)',appT:'แอปแสดงก่อนจ่าย',more:'ช่องทางอื่นทั้งหมด ({n})',whyR:'ดีที่สุดที่มีใบลดหย่อนภาษี',wallIs:'ของขวัญขนาดนี้ได้รับการขอบคุณบนผนังขอบคุณในระดับ{t}',todayNone:' วันนี้หน้าบริจาคของ CCA ยังไม่มีช่องทางในไทย',stT:'ตามรอบจ่ายของ Stripe',ppT:'เมื่อ CCA ถอนออกจาก PayPal',
   bankT:'ตามรอบของธนาคาร',wiseT:'Wise แสดงก่อนจ่าย',faT:'Fractured Atlas จ่ายต่อให้โครงการ',cafT:'จ่ายทุนในราว 3–4 สัปดาห์',
   before:'ก่อน{w}',u:{fa:'การจ่ายต่อจาก Fractured Atlas ให้ CCA',conv:'การแปลงสกุลเงิน',pp:'อัตรา PayPal ของบัญชี CCA'},
   l:{fee:'ค่าธรรมเนียม {n}',sent:'ส่งหลังหักค่าธรรมเนียม',conv:'× {r} บาทต่อ {c}',kin:'ค่าธรรมเนียมรับเงินของธนาคารไทย (กสิกร: 0.25% 200–500 บาท)',total:'ถึง CCA',totalUp:'สูงสุด ก่อนค่าใช้จ่ายที่ไม่ระบุ',
@@ -389,12 +431,14 @@ var W={
    ppF:'PayPal 4.40% + {f} ถ้าบัญชีของ CCA เป็นบัญชีไทย',ppC:'บวกส่วนต่างอัตราแลกเปลี่ยนถ้า PayPal แปลงสกุลเงิน',
    stF:'Stripe 4.75% + 10 บาท สำหรับบัตรต่างประเทศ',stX:'Stripe +2% เมื่อแปลงสกุลเงิน',stT:'Stripe 3.65% + 10 บาท สำหรับบัตรไทย',
    pp0:'ค่าโอนพร้อมเพย์ของผู้บริจาค',pp1:'CCA ไม่เสียค่าใช้จ่าย',bankB:'ธนาคารในตารางของ Wise รวมทั้งหมด (ค่าธรรมเนียม + ส่วนต่างอัตรา)',lohi:'ต่ำสุด {a} สูงสุด {b}',wireX:'ค่าธรรมเนียมและส่วนต่างอัตราของธนาคารคุณ',
-   ngo:'ไม่มีค่าธรรมเนียมต่อครั้งเมื่อได้รับการรับรองแล้ว ค่ารับรองไม่ได้ประกาศ',edu:'ต้องมีเลขหน่วยรับบริจาค 13 หลักของ CCA จากกรมสรรพากร'}}
+   ngo:'ไม่มีค่าธรรมเนียมต่อครั้งเมื่อได้รับการรับรองแล้ว ค่ารับรองไม่ได้ประกาศ',appC:'ค่าธรรมเนียมและส่วนต่างอัตรา รวมทั้งหมด',edu:'ต้องมีเลขหน่วยรับบริจาค 13 หลักของ CCA จากกรมสรรพากร'}}
 };
 function g(){return W[LANG];}
 function f(s,p){for(var k in p) s=s.split('{'+k+'}').join(p[k]); return s;}
 
 /* route names, steps, receipt notes */
+var RT_APPS={n:{en:'Transfer apps (Instarem, Remitly, Western Union and others)',th:'แอปโอนเงิน (Instarem, Remitly, Western Union และอื่น ๆ)'}};
+var RT_FA_R={en:'Fractured Atlas is the 501(c)(3) charity; CCA\u2019s donate page says American donors receive tax benefits there.',th:'Fractured Atlas เป็นองค์กรการกุศล 501(c)(3) หน้าบริจาคของ CCA ระบุว่าผู้บริจาคชาวอเมริกันได้สิทธิประโยชน์ทางภาษีที่นั่น'};
 var RT={
  fa:{n:{en:'Fractured Atlas (US fiscal sponsor)',th:'Fractured Atlas (ผู้รับบริจาคแทนในสหรัฐ)'},
   s:{en:['Open CCA’s page at Fractured Atlas, from CCA’s donate page','Give by card or bank, one-time or monthly','Fractured Atlas keeps 8% and pays the rest to the project'],th:['เปิดหน้าของ CCA ที่ Fractured Atlas จากหน้าบริจาคของ CCA','ให้ด้วยบัตรหรือธนาคาร ครั้งเดียวหรือรายเดือน','Fractured Atlas หัก 8% แล้วจ่ายส่วนที่เหลือให้โครงการ']},
@@ -407,7 +451,7 @@ var RT={
   r:{en:'GlobalGiving is a US charity: a receipt for US taxpayers.',th:'GlobalGiving เป็นองค์กรการกุศลในสหรัฐ: ใบลดหย่อนสำหรับผู้เสียภาษีสหรัฐ'}},
  ngo:{n:{en:'Direct grant from a US foundation or donor-advised fund (NGOsource)',th:'ทุนตรงจากมูลนิธิหรือกองทุน DAF ในสหรัฐ (NGOsource)'},
   s:{en:['CCA gets an equivalency determination through NGOsource, once','The donor’s fund (Fidelity, Schwab, a family foundation) grants to CCA','The grant arrives by wire'],th:['CCA ขอการรับรองเทียบเท่าผ่าน NGOsource หนึ่งครั้ง','กองทุนของผู้บริจาค (Fidelity, Schwab, มูลนิธิครอบครัว) ให้ทุน CCA','ทุนมาทางโอนเงินระหว่างประเทศ']},
-  r:{en:'The donor took the deduction when funding the donor-advised fund or foundation.',th:'ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF หรือมูลนิธิ'}},
+  r:{en:'No receipt for the grant: the donor took the deduction when funding the donor-advised fund or foundation.',th:'ทุนนี้ไม่มีใบลดหย่อน: ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF หรือมูลนิธิ'}},
  form:{n:{en:'CCA’s donate form (PayPal)',th:'แบบฟอร์มบริจาคของ CCA (PayPal)'},
   s:{en:['Use the form on culturalcrossroadsasia.org/donate','Pay by PayPal or card through PayPal','PayPal keeps its fee; the rest is in CCA’s PayPal'],th:['ใช้แบบฟอร์มที่ culturalcrossroadsasia.org/donate','จ่ายด้วย PayPal หรือบัตรผ่าน PayPal','PayPal หักค่าธรรมเนียม ส่วนที่เหลืออยู่ใน PayPal ของ CCA']},
   r:{en:'PayPal gives no tax receipt.',th:'PayPal ไม่ออกใบลดหย่อนภาษี'}},
@@ -426,6 +470,27 @@ var RT={
  edon:{n:{en:'e-Donation QR (Thai tax deduction)',th:'คิวอาร์ e-Donation (ลดหย่อนภาษีไทย)'},
   s:{en:['CCA registers as a donation unit with the Revenue Department','A donation-only account gets a QR at a participating bank','The donor scans; the bank reports the gift to the Revenue Department'],th:['CCA ลงทะเบียนเป็นหน่วยรับบริจาคกับกรมสรรพากร','บัญชีรับบริจาคโดยเฉพาะได้คิวอาร์จากธนาคารที่ร่วมโครงการ','ผู้บริจาคสแกน ธนาคารส่งข้อมูลให้กรมสรรพากร']},
   r:{en:'From 1 Jan 2026, a Thai donor’s deduction for a gift to a foundation goes through e-Donation.',th:'ตั้งแต่ 1 ม.ค. 2569 การลดหย่อนของผู้บริจาคในไทยสำหรับมูลนิธิต้องผ่าน e-Donation'}},
+ cheque:{n:{en:'Cheque to Fractured Atlas',th:'เช็คสั่งจ่าย Fractured Atlas'},
+  s:{en:['Make the cheque payable to Fractured Atlas','Write \u201cCultural Crossroads Asia\u201d on the memo line','Mail it to the address CCA gives; Fractured Atlas keeps 8% and pays the rest to the project'],th:['สั่งจ่ายเช็คให้ Fractured Atlas','เขียน \u201cCultural Crossroads Asia\u201d ในช่องบันทึก','ส่งทางไปรษณีย์ไปยังที่อยู่ที่ CCA แจ้ง Fractured Atlas หัก 8% แล้วจ่ายส่วนที่เหลือให้โครงการ']},
+  r:RT_FA_R},
+ daf:{n:{en:'Donor-advised fund grant to Fractured Atlas',th:'ทุนจากกองทุน DAF ให้ Fractured Atlas'},
+  s:{en:['In the fund\u2019s portal (Fidelity, Schwab, Vanguard), recommend a grant to Fractured Atlas','Name Cultural Crossroads Asia in the grant note','The grant takes several weeks; Fractured Atlas keeps 8%'],th:['ในพอร์ทัลของกองทุน (Fidelity, Schwab, Vanguard) แนะนำทุนให้ Fractured Atlas','ระบุ Cultural Crossroads Asia ในหมายเหตุ','ใช้เวลาหลายสัปดาห์ Fractured Atlas หัก 8%']},
+  r:{en:'No receipt for the grant: the donor took the deduction when funding the donor-advised fund.',th:'ทุนนี้ไม่มีใบลดหย่อน: ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF'}},
+ shares:{n:{en:'Shares to Fractured Atlas',th:'หุ้นให้ Fractured Atlas'},
+  s:{en:['Ask Fractured Atlas for its noncash gift letter','The broker moves the shares to Fractured Atlas, naming CCA','Fractured Atlas sells them, keeps 8% and pays the rest to the project'],th:['ขอหนังสือรับบริจาคที่ไม่ใช่เงินสดจาก Fractured Atlas','โบรกเกอร์โอนหุ้นให้ Fractured Atlas โดยระบุ CCA','Fractured Atlas ขายหุ้น หัก 8% แล้วจ่ายส่วนที่เหลือให้โครงการ']},
+  r:RT_FA_R},
+ match:{n:{en:'Employer match (Benevity)',th:'นายจ้างสมทบ (Benevity)'},
+  s:{en:['The donor gives through their employer\u2019s giving portal, often Benevity','Fractured Atlas Productions is listed on Benevity; the gift names CCA','The employer may match it, doubling the gift'],th:['ผู้บริจาคให้ผ่านพอร์ทัลการให้ของนายจ้าง ซึ่งมักเป็น Benevity','Fractured Atlas Productions อยู่ในรายชื่อของ Benevity โดยระบุ CCA','นายจ้างอาจสมทบ ทำให้เงินเพิ่มเป็นสองเท่า']},
+  r:{en:'Fractured Atlas is the charity on the receipt; its Benevity page asks donors to name the sponsored project. Whether an employer matches is the employer\u2019s rule.',th:'Fractured Atlas เป็นองค์กรการกุศลในใบเสร็จ หน้า Benevity ขอให้ผู้บริจาคระบุโครงการ การสมทบขึ้นกับกฎของนายจ้าง'}},
+ asiaqr:{n:{en:'A home banking app from Singapore, Malaysia, Hong Kong, Indonesia, Vietnam, Cambodia or Laos',th:'แอปธนาคารจากสิงคโปร์ มาเลเซีย ฮ่องกง อินโดนีเซีย เวียดนาม กัมพูชา หรือลาว'},
+  s:{en:['CCA gets a Thai QR for its shop or exhibit from a Thai bank','A visitor scans it with their own banking app, in their own currency','The baht land in CCA\u2019s account'],th:['CCA ขอคิวอาร์ไทยสำหรับร้านหรือนิทรรศการจากธนาคารไทย','ผู้มาเยือนสแกนด้วยแอปธนาคารของตนเอง เป็นสกุลเงินของตน','เงินบาทเข้าบัญชีของ CCA']},
+  r:{en:'A payment, not a tax-deductible gift.',th:'เป็นการชำระเงิน ไม่ใช่การบริจาคที่ลดหย่อนภาษีได้'}},
+ alipay:{n:{en:'Alipay on CCA\u2019s card page (Stripe)',th:'Alipay บนหน้าจ่ายของ CCA (Stripe)'},
+  s:{en:['CCA turns on Alipay in its Stripe account','The donor picks Alipay on CCA\u2019s page','Stripe pays the rest to CCA\u2019s Thai bank'],th:['CCA เปิด Alipay ในบัญชี Stripe','ผู้บริจาคเลือก Alipay บนหน้าของ CCA','Stripe โอนส่วนที่เหลือเข้าบัญชีธนาคารไทยของ CCA']},
+  r:{en:'Stripe gives no tax receipt.',th:'Stripe ไม่ออกใบลดหย่อนภาษี'}},
+ cash:{n:{en:'Cash or a Thai cheque at CCA\u2019s office',th:'เงินสดหรือเช็คไทยที่สำนักงาน CCA'},
+  s:{en:['At 191 Prachasumpan Road, Soi 2, Chiang Mai','CCA writes a receipt on the spot','Once registered, CCA enters the gift in e-Donation for the donor\u2019s deduction'],th:['ที่ 191 ถนนประชาสัมพันธ์ ซอย 2 เชียงใหม่','CCA ออกใบเสร็จทันที','เมื่อลงทะเบียนแล้ว CCA บันทึกการบริจาคใน e-Donation ให้ผู้บริจาคลดหย่อน']},
+  r:{en:'A Thai deduction counts only through e-Donation, once CCA is registered.',th:'การลดหย่อนในไทยนับเฉพาะผ่าน e-Donation เมื่อ CCA ลงทะเบียนแล้ว'}},
  prism:{n:{en:'British friends fund (Prism the Gift Fund)',th:'กองทุนเพื่อนชาวอังกฤษ (Prism the Gift Fund)'},
   s:{en:['A UK charity holds a fund for CCA','UK donors give to the fund and claim Gift Aid','The fund grants on to CCA'],th:['องค์กรการกุศลในอังกฤษถือกองทุนสำหรับ CCA','ผู้บริจาคในอังกฤษให้เข้ากองทุนและขอ Gift Aid','กองทุนส่งต่อเป็นทุนให้ CCA']},
   r:{en:'A UK charity receives the gift.',th:'องค์กรการกุศลในอังกฤษเป็นผู้รับเงิน'}},
@@ -436,7 +501,11 @@ var RT={
   s:{en:['Global Development Group approves a CCA project','Australian donors give to the project','The group funds CCA’s work and reports on it'],th:['Global Development Group อนุมัติโครงการของ CCA','ผู้บริจาคในออสเตรเลียให้แก่โครงการ','กลุ่มให้ทุนงานของ CCA และรายงานผล']},
   r:{en:'An Australian charity gives receipts for gifts of A$2 or more to approved overseas projects.',th:'องค์กรการกุศลในออสเตรเลียออกใบเสร็จสำหรับการให้ตั้งแต่ 2 ดอลลาร์ออสเตรเลีย แก่โครงการต่างประเทศที่อนุมัติแล้ว'}}
 };
-var SRC={fa:[1,3],caf:[6],gg:[7],ngo:[8],form:[1,10],wise:[11],wire:[11,12,13],stripe:[4,5],th:[13,14,15],edon:[15],prism:[16],spf:[17],gdg:[18]};
+function INFO(id){ if(id==='apps') return RT_APPS; if(id.indexOf('app:')===0){var n=id.slice(4); return {n:{en:n+' to CCA\u2019s Thai bank',th:n+' เข้าบัญชีธนาคารไทยของ CCA'},
+  s:{en:['In the '+n+' app or site, send the amount to CCA\u2019s Thai account','Its fee and rate margin come from Wise\u2019s comparison table','It pays out in baht to CCA\u2019s bank'],th:['ในแอปหรือเว็บ '+n+' ส่งเงินเข้าบัญชีไทยของ CCA','ค่าธรรมเนียมและส่วนต่างอัตรามาจากตารางเปรียบเทียบของ Wise','จ่ายเป็นเงินบาทเข้าธนาคารของ CCA']},
+  r:RT.wise.r};} return RT[id]; }
+function srcOf(id){return id.indexOf('app:')===0?[11]:(SRC[id]||[]);}
+var SRC={cheque:[3,19],daf:[3,22],shares:[3,20],match:[21],asiaqr:[23],ngo:[8,22],cash:[15],fa:[1,3],caf:[6],gg:[7],form:[1,10],wise:[11],wire:[11,12,13],stripe:[4,5],th:[13,14,15],edon:[15],prism:[16],spf:[17],gdg:[18]};
 
 function ln(k,v,s,t){return {k:k,v:v,s:s,t:t};}
 function build(pl,a){
@@ -446,6 +515,7 @@ function build(pl,a){
   var c=ppFee(a);
   R({id:'th',today:false,tier:1,lo:a-c,hi:a,time:G.bankT,rc:'maybe',lines:[ln(l.pp0,c?'≤ THB '+c:'THB 0',14),ln(l.kin.split(' (')[0],'THB 0'),ln(l.total,M('THB',a),0,1)]});
   R({id:'edon',today:false,tier:1,lo:a-c,hi:a,time:G.bankT,rc:'yes',lines:[ln(l.edu,'',15),ln(l.total,M('THB',a),0,1)]});
+  R({id:'cash',today:false,tier:1,lo:a-c,hi:a,time:G.now,rc:'maybe',lines:[ln(l.total,M('THB',a),0,1)]});
   var sf=a*0.0365+10;
   R({id:'stripe',today:false,tier:1,lo:a-sf,hi:a-sf,time:G.stT,rc:'no',lines:[ln(l.stT,'−'+M('THB',sf),4),ln(l.total,M('THB',a-sf),0,1)]});
   return out;
@@ -454,6 +524,10 @@ function build(pl,a){
   var fee=a*0.08, inFA=a-fee;
   R({id:'fa',today:true,tier:2,unk:'fa',lo:null,hi:inFA*rate,native:{c:'USD',x:inFA},time:G.faT,rc:'yes',
    lines:[ln(f(l.fee,{n:'Fractured Atlas 8%'}),'−'+M('USD',fee),1),ln(l.faIn,M('USD',inFA),0,1),a>20000?ln(l.faCap,'',3):null,ln(l.faDues,'',1)].filter(Boolean)});
+  ['cheque','daf','shares'].forEach(function(id){
+   R({id:id,today:true,tier:2,unk:'fa',lo:null,hi:inFA*rate,native:{c:'USD',x:inFA},time:id==='daf'?G.dafT:G.faT,rc:id==='daf'?'no':'yes',
+    lines:[ln(f(l.fee,{n:'Fractured Atlas 8%'}),'−'+M('USD',fee),3),ln(l.faIn,M('USD',inFA),0,1)]});});
+  R({id:'match',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
   var base=Math.min(a,500000), cf=base*0.05;
   R({id:'caf',today:false,tier:2,unk:'conv',lo:null,hi:(a-cf)*rate,time:G.cafT,rc:'yes',
    lines:[ln(f(l.fee,{n:'CAF America 5%'}),'−'+M('USD',cf),6),a>500000?ln(l.cafAbove,'',6):null,ln(l.cafChk,'USD 400',6),ln(l.totalUp,'< '+M('THB',(a-cf)*rate),0,1)].filter(Boolean)});
@@ -466,6 +540,10 @@ function build(pl,a){
  var wf=interp(GD.W[cur],a), wthb=(a-wf)*rate;
  R({id:'wise',today:false,tier:1,lo:wthb,hi:wthb,time:G.wiseT,rc:'no',
   lines:[ln(f(l.fee,{n:'Wise'}),'−'+M(cur,wf),11),ln(l.sent,M(cur,a-wf)),ln(f(l.conv,{r:rate.toFixed(2),c:cur}),M('THB',wthb),11),ln(l.total,M('THB',wthb),0,1)]});
+ var pv=a<=10000?(GD.P[cur]||{}):{};
+ Object.keys(pv).forEach(function(n){var c=interp(pv[n],a), v=(a-c)*rate;
+  R({id:'app:'+n,today:false,tier:1,lo:v,hi:v,time:G.appT,rc:'no',
+   lines:[ln(l.appC,'−'+M(cur,c),11),ln(l.total,M('THB',v),0,1)]});});
  var tb=GD.B[cur];
  if(tb&&pl!=='XX'){
   var lo=1e18,hi=-1,nl='',nh='';
@@ -484,6 +562,7 @@ function build(pl,a){
  var pf=a*0.044+(GD.PPF[cur]||0.30);
  R({id:'form',today:true,tier:2,unk:'pp',lo:null,hi:(a-pf)*rate,time:G.ppT,rc:'no',
   lines:[ln(f(l.ppF,{f:M(cur,GD.PPF[cur]||0.30)}),'−'+M(cur,pf),10),ln(l.ppC,'',10),ln(l.totalUp,'< '+M('THB',(a-pf)*rate),0,1)]});
+ if(pl==='XX'){R({id:'asiaqr',today:false,tier:3,lo:null,hi:null,time:G.now,rc:'no',lines:[]});}
  if(pl==='UK') R({id:'prism',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
  if(pl==='CH') R({id:'spf',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
  if(pl==='AU') R({id:'gdg',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
@@ -514,28 +593,42 @@ function renderDesk(){
  var best=list.filter(function(r){return r.tier<3;})[0]||null;
  var head='<b>'+esc(f(G.sum,{a:M(cur,a),p:L(PLACES[pl])}))+'</b>';
  if(best){
-  var rn=L(RT[best.id].n), t=best.lo==null?f(G.bestUp,{r:rn,x:M('THB',best.hi)}):f(G.bestIs,{r:rn,x:reach(best)});
-  var fr=(!S.need&&best.rc!=='yes')?list.filter(function(r){return r.rc==='yes'&&r.tier<3;})[0]:null;
-  if(fr) t+=f(G.forR,{r:L(RT[fr.id].n),x:fr.lo==null?f(G.upto,{x:M('THB',fr.hi)}):reach(fr)});
-  var td=list.filter(function(r){return r.today&&r!==best;});
-  if(td.length) t+=f(G.todayR,{r:td.map(function(r){return L(RT[r.id].n)+', '+(r.native?M(r.native.c,r.native.x)+' ('+G.rcpt.toLowerCase()+': '+G.rc[r.rc].toLowerCase()+')':r.lo==null?f(G.upto,{x:M('THB',r.hi)}):reach(r));}).join(LANG==='th'?' · ':'; '),x:''}).replace(/[, ]+\.$/,'.').replace(/ $/,'');
+  var rn=L(INFO(best.id).n), t=best.lo==null?f(G.bestUp,{r:rn,x:M('THB',best.hi)}):f(G.bestIs,{r:rn,x:reach(best)});
+  var ys=list.filter(function(r){return r.rc==='yes'&&r.tier<3;}), fr=(!S.need&&best.rc!=='yes')?(ys.filter(function(r){return r.today;})[0]||ys[0]):null;
+  if(fr) t+=f(G.forR,{r:L(INFO(fr.id).n),x:fr.native?M(fr.native.c,fr.native.x):fr.lo==null?f(G.upto,{x:M('THB',fr.hi)}):reach(fr)});
+  var td=list.filter(function(r){return r.today&&r!==best&&r!==fr&&['cheque','daf','shares'].indexOf(r.id)<0;});
+  if(td.length) t+=f(G.todayR,{r:td.map(function(r){return L(INFO(r.id).n)+', '+(r.native?M(r.native.c,r.native.x)+' ('+G.rcpt.toLowerCase()+': '+G.rc[r.rc].toLowerCase()+')':r.lo==null?f(G.upto,{x:M('THB',r.hi)}):reach(r));}).join(LANG==='th'?' · ':'; '),x:''}).replace(/[, ]+\.$/,'.').replace(/ $/,'');
   else if(!best.today&&pl==='TH') t+=G.todayNone;
   head+='<span>'+esc(t)+'</span>';
  }else head+='<span>'+esc(pl==='EU'?G.euNone:G.none)+'</span>';
  if(pl==='EU'&&best&&S.need===false) head+='<span style="display:block;font-size:14px;margin-top:6px">'+esc(G.euNone)+sp(9)+'</span>';
+ var usd=a*GD.R[cur]/GD.R.USD, tr=tierFor(usd);
+ if(tr) head+='<span class="wl"><a href="#wall">'+esc(f(G.wallIs,{t:L(tr)}))+'</a></span>';
  $('sum').innerHTML=head;
  var thbAll=a*GD.R[cur], w='';
  if(pl!=='TH'&&a>10000) w+='<p class="warn">'+esc(G.bigW)+'</p>';
  if(thbAll>=200000*GD.R.USD) w+='<p class="warn">'+esc(G.bot)+sp(12)+'</p>';
  $('warn').innerHTML=w;
+ var pool=list.filter(function(r){return r.tier<3;}), feat=[], why={};
+ function add(r,w){ if(r&&feat.indexOf(r)<0&&feat.length<3){feat.push(r); why[r.id]=w;} }
+ add(best,'best');
+ var ry=pool.filter(function(r){return r.rc==='yes';});
+ add(ry.filter(function(r){return r.today;})[0]||ry[0],'rcpt');
+ add(pool.filter(function(r){return r.today;})[0],'today');
+ pool.forEach(function(r){add(r,'');});
+ if(!feat.length) list.slice(0,3).forEach(function(r){add(r,'');});
+ var rest=list.filter(function(r){return feat.indexOf(r)<0;});
  var cards=$('cards'); cards.innerHTML='';
- list.forEach(function(r){cards.appendChild(card(r,G,r===best));});
+ feat.forEach(function(r){cards.appendChild(card(r,G,r===best,why[r.id]));});
+ var c2=$('cards2'); c2.innerHTML=''; rest.forEach(function(r){c2.appendChild(card(r,G,false,''));});
+ $('drawer').style.display=rest.length?'':'none';
+ $('drawerS').textContent=f(G.more,{n:rest.length});
  $('note').innerHTML=esc(f(G.note,{d:GD.date}))+sp(11);
 }
-function card(r,G,isBest){
- var info=RT[r.id], open=(S.open[r.id]!==undefined)?S.open[r.id]:isBest;
+function card(r,G,isBest,w){
+ var info=INFO(r.id), open=(S.open[r.id]!==undefined)?S.open[r.id]:isBest;
  var a=el('article','rc'+(r.today?'':' add')+(isBest?' best':'')+(open?' open':''));
- var tags='<span class="tags">'+(isBest?'<span class="tag best">'+esc(G.best)+'</span>':'')+'<span class="tag'+(r.today?'':' add')+'">'+esc(r.today?G.today:G.add)+'</span></span>';
+ var tags='<span class="tags">'+(isBest?'<span class="tag best">'+esc(G.best)+'</span>':'')+(w==='rcpt'?'<span class="tag why">'+esc(G.whyR)+'</span>':'')+'<span class="tag'+(r.today?'':' add')+'">'+esc(r.today?G.today:G.add)+'</span></span>';
  var small=G.reach;
  if(r.native) small=M(r.native.c,r.native.x)+' · '+f(G.before,{w:G.u.fa});
  else if(r.lo==null&&r.tier===2) small=f(G.before,{w:G.u[r.unk]});
@@ -546,7 +639,7 @@ function card(r,G,isBest){
  a.appendChild(b);
  var h='<ol>'+L(info.s).map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol>';
  if(r.lines.length) h+='<dl class="ar">'+r.lines.map(function(x){return '<div class="'+(x.t?'t':'')+'"><dt>'+esc(x.k)+(x.s?sp(x.s):'')+'</dt><dd>'+esc(x.v||'')+'</dd></div>';}).join('')+'</dl>';
- h+='<p style="margin-top:10px;font-size:14px"><span class="rcpt '+r.rc+'">'+esc(G.rc[r.rc])+'</span>'+esc(L(info.r))+(SRC[r.id]||[]).map(sp).join('')+'</p>';
+ h+='<p style="margin-top:10px;font-size:14px"><span class="rcpt '+r.rc+'">'+esc(G.rc[r.rc])+'</span>'+esc(L(info.r))+srcOf(r.id).map(sp).join('')+'</p>';
  var m=el('div','more',h); a.appendChild(m);
  return a;
 }
@@ -554,7 +647,7 @@ function card(r,G,isBest){
 /* five answers */
 var UL=[
  {q:{en:'CCA’s Thai bank account on the giving page',th:'บัญชีธนาคารไทยของ CCA บนหน้าบริจาค'},
-  d:{en:'Account name, bank, branch, SWIFT code, and a PromptPay ID in the foundation’s name.',th:'ชื่อบัญชี ธนาคาร สาขา รหัส SWIFT และพร้อมเพย์ในชื่อมูลนิธิ'},o:['th','wise','wire']},
+  d:{en:'Account name, bank, branch, SWIFT code, and a PromptPay ID in the foundation’s name.',th:'ชื่อบัญชี ธนาคาร สาขา รหัส SWIFT และพร้อมเพย์ในชื่อมูลนิธิ'},o:['th','cash','wise','apps','wire','asiaqr']},
  {q:{en:'CCA’s Thai registered name, and its Revenue Department status',th:'ชื่อที่จดทะเบียนในไทยของ CCA และสถานะกับกรมสรรพากร'},
   d:{en:'A search on 17 Oct found no Thai registered name and no charity listing. With them: the e-Donation register, and the bequest wording.',th:'การค้นเมื่อ 17 ต.ค. ไม่พบชื่อที่จดทะเบียนในไทยและรายชื่อองค์กรการกุศล เมื่อมีแล้ว: ลงทะเบียน e-Donation และถ้อยคำพินัยกรรม'},o:['edon']},
  {q:{en:'The foundation’s papers in English',th:'เอกสารของมูลนิธิเป็นภาษาอังกฤษ'},
@@ -567,7 +660,7 @@ var UL=[
 function renderUL(){
  var u=$('ulist'); u.innerHTML='';
  UL.forEach(function(x){
-  var o=x.o.map(function(id){return '<i>'+esc(L(RT[id].n))+'</i>';}).join('');
+  var o=x.o.map(function(id){return '<i>'+esc(L(INFO(id).n))+'</i>';}).join('');
   u.appendChild(el('div','ui','<div><b>'+esc(L(x.q))+'</b><span>'+esc(L(x.d))+'</span>'+(o?'<div class="opens">'+o+'</div>':'')+'</div>'));
  });
 }
@@ -647,12 +740,35 @@ var SL=[
  ['THE STANDARD, donations to temples or foundations through e-Donation from 1 Jan 2026, 18 Aug 2025; the Revenue Department’s e-Donation portal is epayapp.rd.go.th/rd-edonation','https://thestandard.co/donation-tax-deduction-e-donation-2026/'],
  ['Prism the Gift Fund, British Friends Of structure','https://prismthegiftfund.co.uk/collective-funds-series-british-friends-of-structure/'],
  ['Swiss Philanthropy Foundation, philanthropic funds','https://www.swissphilanthropy.ch/en/philanthropic-funds/european-cross-border-donations-fund'],
- ['Global Development Group, Australia: receipts for A$2 or more to approved projects','https://globaldevelopmentgroup.org/au/help/']
+ ['Global Development Group, Australia: receipts for A$2 or more to approved projects','https://globaldevelopmentgroup.org/au/help/'],
+ ['The Song Cave, a Fractured Atlas project: cheques payable to \u201cFractured Atlas\u201d, mailed to the project','https://the-song-cave.com/pages/donate-1'],
+ ['Fractured Atlas, noncash donation letter (shares and property)','https://fundraising.fracturedatlas.org/donations/noncash_donation_letter.pdf'],
+ ['Benevity Causes, Fractured Atlas Productions: gifts name the fiscally sponsored project','https://causes.benevity.org/causes/840-113451703'],
+ ['Fidelity Charitable, How to thank donors who use donor-advised funds: a grant is not a tax receipt for the donor','https://www.fidelitycharitable.org/articles/how-to-thank-donors-who-use-donor-advised-funds.html'],
+ ['Bank of Thailand, Cross-border payment linkages: visitors from Cambodia, Laos, Malaysia, Vietnam, Singapore, Indonesia and Hong Kong scan Thai QR codes with their own apps','https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/cross-border-payment.html']
 ];
 function renderSrc(){$('srcList').innerHTML=SL.map(function(s,i){return '<li id="s'+(i+1)+'">'+esc(s[0])+' · <a href="'+s[1]+'" target="_blank" rel="noopener">'+esc(s[1].replace(/^https?:\/\/(www\.)?/,'').split('/')[0])+'</a></li>';}).join('');}
 
+var TIERS=[{u:250000,en:'Founding donor',th:'ผู้บริจาคผู้ก่อตั้ง',c:'var(--red)',x:{en:'Room naming; a lead gift names the Heritage Center',th:'ตั้งชื่อห้อง ของขวัญชั้นนำตั้งชื่อศูนย์มรดกวัฒนธรรม'}},
+ {u:50000,en:'Benefactor',th:'ผู้มีอุปการคุณ',c:'var(--brand)',x:{en:'Named on the Center\u2019s founders\u2019 board',th:'ชื่อบนแผ่นผู้ก่อตั้งของศูนย์'}},
+ {u:10000,en:'Patron',th:'ผู้อุปถัมภ์',c:'var(--gold)',x:{en:'Named in each newsletter for a year',th:'เอ่ยนามในจดหมายข่าวทุกฉบับหนึ่งปี'}},
+ {u:1000,en:'Friend of CCA',th:'มิตรของ CCA',c:'#2f7d4f',x:{en:'Named on this wall',th:'เอ่ยนามบนผนังนี้'}}];
+function tierFor(usd){for(var i=0;i<TIERS.length;i++) if(usd>=TIERS[i].u) return TIERS[i]; return null;}
+function renderTiers(){
+ var t=$('tiers'); t.innerHTML='';
+ TIERS.forEach(function(x){var d=el('div','tier');d.style.setProperty('--tc',x.c);
+  d.innerHTML='<h3>'+esc(L(x))+'</h3><div class="th2">'+esc((LANG==='th'?'ตั้งแต่ ':'')+M('USD',x.u)+(LANG==='th'?'':' and up')+' · '+M('THB',x.u*GD.R.USD))+'</div><div class="ex">'+esc(L(x.x))+'</div><div class="slot">'+esc(LANG==='th'?'ชื่อแรกในระดับนี้':'The first name at this level')+'</div>';
+  t.appendChild(d);});
+}
+$('nmBtn').onclick=function(){
+ var anon=$('nmAnon').checked, n=$('nmName').value.trim(), h=$('nmHon').value.trim();
+ var b=(LANG==='th'?'เรียน CCA\n\nสำหรับผนังขอบคุณ:\n':'Dear CCA,\n\nFor the thank-you wall:\n')+(anon?(LANG==='th'?'- ไม่ระบุชื่อ\n':'- Anonymous\n'):(LANG==='th'?'- ชื่อที่แสดง: ':'- Name as shown: ')+n+'\n')+(h?(LANG==='th'?'- เพื่อเป็นเกียรติหรือรำลึกถึง: ':'- In honour or memory of: ')+h+'\n':'');
+ location.href='mailto:CulturalCrossroadsAsia@gmail.com?subject='+encodeURIComponent(LANG==='th'?'ผนังขอบคุณ':'Thank-you wall')+'&body='+encodeURIComponent(b);
+};
 function renderStats(){
- var t={en:[['2','routes open today'],['13','routes on this page'],['7','donor countries']],th:[['2','ช่องทางที่เปิดวันนี้'],['13','ช่องทางในหน้านี้'],['7','ประเทศของผู้บริจาค']]}[LANG];
+ var ids={},td={}; Object.keys(PLACES).forEach(function(pl){build(pl,1000).forEach(function(r){ids[r.id]=1; if(r.today) td[r.id]=1;});}); ['ngo'].forEach(function(k){ids[k]=1;});
+ var n1=Object.keys(td).length, n2=Object.keys(ids).length;
+ var t={en:[[n1,'ways open today'],[n2,'ways on this page'],['7','donor countries']],th:[[n1,'ช่องทางที่เปิดวันนี้'],[n2,'ช่องทางในหน้านี้'],['7','ประเทศของผู้บริจาค']]}[LANG];
  $('stats').innerHTML=t.map(function(x){return '<div><b>'+x[0]+'</b><small>'+esc(x[1])+'</small></div>';}).join('');}
 
 $('amtIn').addEventListener('input',function(e){var v=parseFloat(String(e.target.value).replace(/[^0-9.]/g,'')); if(v>0){S.amt[S.pl]=v; renderDesk();}});
@@ -663,7 +779,7 @@ function setLang(l){LANG=l; document.documentElement.lang=l; document.title=TITL
  try{localStorage.setItem('lang',l);}catch(e){}
  document.querySelectorAll('#langs button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l);});
  $('amtIn').setAttribute('aria-label',l==='th'?'จำนวนเงิน':'Amount');
- renderStats(); renderDesk(); renderUL(); renderLed(); renderOpts(); renderSrc();}
+ renderStats(); renderDesk(); renderTiers(); renderUL(); renderLed(); renderOpts(); renderSrc();}
 $('langs').addEventListener('click',function(e){var b=e.target.closest('button[data-set]'); if(b) setLang(b.getAttribute('data-set'));});
 var big=false; try{big=localStorage.getItem('big')==='1';}catch(e){}
 function setBig(v){big=v; document.documentElement.classList.toggle('big',v); $('bigBtn').setAttribute('aria-pressed',v); try{localStorage.setItem('big',v?'1':'0');}catch(e){}}
