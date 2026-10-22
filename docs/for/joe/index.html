@@ -7,10 +7,10 @@
 <meta name="theme-color" content="#171009">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <title>The group remembers</title>
-<meta name="description" content="A LINE desk for volunteer groups: a new member asks, and gets what the group already said, with who said it and when. Sample chat.">
+<meta name="description" content="A LINE desk for volunteer groups: a new member asks and gets what the group already said, with who and when; cases go on a wheel, handed out by town. Sample chat.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Joined today? The group remembers.">
-<meta property="og:description" content="A LINE desk for volunteer groups. Ask, and get the old answers with who and when. Sample chat, made for Joe by Hongdam.">
+<meta property="og:description" content="A LINE desk and a case wheel for volunteer groups: old answers with who and when, cases handed out by town. Sample chat, made for Joe by Hongdam.">
 <meta property="og:url" content="https://hongdam.net/for/joe/">
 <meta property="og:image" content="https://hongdam.net/for/joe/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="Card: Joined today? The group remembers. A LINE chat where a new member asks about a passport and the desk answers with three old messages. Hongdam, Chiang Rai.">
@@ -135,7 +135,8 @@ body.th h2{letter-spacing:0;line-height:1.3}
 .more{margin-top:12px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer}
 
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:minmax(0,1fr)}
-@media (min-width:760px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:640px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .steps li{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px}
 .steps .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--verm);color:var(--verm-ink);font-weight:800;font-size:20px;margin-bottom:10px}
 .steps h3{margin:0 0 4px;font-size:19px}
@@ -143,6 +144,71 @@ body.th h2{letter-spacing:0;line-height:1.3}
 
 footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:15px}
 footer p{margin:0 0 6px}
+
+/* wheel */
+.as{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 16px}
+.as .dsk{margin-right:4px}
+.as button{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 14px;min-height:44px;cursor:pointer;font-size:15px}
+.as button[aria-pressed="true"]{background:var(--verm);color:var(--verm-ink);border-color:var(--verm);font-weight:600}
+.wgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}
+@media (min-width:860px){.wgrid{grid-template-columns:420px minmax(0,1fr);gap:40px}}
+.wheel{position:relative;margin:0 auto;width:min(100%,420px);aspect-ratio:1/1}
+.wheel::before{content:"";position:absolute;inset:16%;border-radius:50%;border:2px dashed var(--line)}
+.ray{position:absolute;left:50%;top:50%;width:2px;height:40%;background:linear-gradient(var(--line),transparent);transform-origin:50% 0;margin-left:-1px}
+.hub{position:absolute;left:50%;top:50%;width:40%;height:40%;transform:translate(-50%,-50%);border-radius:50%;border:4px solid var(--verm);background:var(--paper);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px}
+.hub b{font-size:clamp(34px,9vw,48px);line-height:1}
+.hub span{font-size:13px;font-weight:600;line-height:1.2}
+.hub small{font-size:12px;color:var(--muted);margin-top:2px}
+.spoke{position:absolute;width:25%;height:25%;transform:translate(-50%,-50%);border-radius:50%;border:2px solid var(--line);background:var(--paper);color:var(--ink);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:4px;cursor:pointer;text-align:center}
+.spoke i{font-style:normal;font-size:clamp(20px,5.5vw,28px);line-height:1}
+.spoke span{font-size:clamp(11px,3vw,14px);font-weight:600;line-height:1.1}
+.spoke[aria-pressed="true"]{border-color:var(--verm);border-width:3px}
+@media (hover:hover) and (pointer:fine){.spoke:hover{border-color:var(--verm)}}
+.badge{position:absolute;top:0;right:0;min-width:24px;height:24px;border-radius:12px;background:var(--verm);color:var(--verm-ink);font-size:13px;font-weight:800;display:grid;place-items:center;padding:0 6px}
+.whelp{font-size:14px;color:var(--muted);margin:10px 0 0;text-align:center}
+.panel h3{margin:0 0 10px;font-size:22px}
+.panel h4{margin:16px 0 8px;font-size:15px;color:var(--muted);font-weight:600}
+.case{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.case.fresh{border-color:var(--gold);border-width:2px}
+.case>button.head{display:block;width:100%;text-align:left;background:none;border:0;padding:12px 14px;cursor:pointer;color:var(--ink)}
+.case .tt{display:block;font-weight:600;font-size:16px;line-height:1.35}
+.case .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;font-size:13px}
+.pill{border:1px solid var(--line);border-radius:999px;padding:1px 9px;color:var(--muted)}
+.pill.st{color:var(--ink);font-weight:600}
+.cbody{padding:0 14px 14px;border-top:1px solid var(--line)}
+.cbody h4{margin:12px 0 4px;font-size:14px}
+.cbody p{margin:0}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+.acts b{width:100%}
+.acts button,.acts select{min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:8px 16px;cursor:pointer;font-size:15px}
+.acts .go,.newf .go{background:var(--verm);color:var(--verm-ink);border-color:var(--verm);font-weight:600}
+.logl{list-style:none;margin:0;padding:0;font-size:14px}
+.logl li{padding:4px 0;border-bottom:1px dashed var(--line)}
+.logl time{color:var(--muted);margin-right:6px}
+.note{display:flex;gap:8px;margin-top:10px}
+.note input{flex:1;min-width:0;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:var(--bg);color:var(--ink)}
+.note button{min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--bg);padding:8px 16px;cursor:pointer}
+.newf{display:grid;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px}
+.newf textarea{width:100%;min-height:84px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);color:var(--ink);font:inherit;font-size:16px}
+.newf select{min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:8px 12px;font:inherit}
+.newf label{font-size:14px;font-weight:600;margin-top:4px}
+.newf button{min-height:48px;border-radius:999px;border:1px solid var(--verm);cursor:pointer;font-size:16px;margin-top:6px}
+.ppl{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ppl li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.ppl b{font-size:17px}
+.ppl .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;font-size:13px}
+.hl{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.hl li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.hl i{font-style:normal;font-size:26px;line-height:1.2;text-align:center}
+.hl p{margin:0;color:var(--muted);font-size:15px}
+.cmds{background:var(--paper);border:1px solid var(--line);border-left:5px solid #077a3a;border-radius:12px;padding:12px 14px;margin-top:12px;font-size:15px}
+.cmds code{font:600 14px/1.6 ui-monospace,Menlo,monospace;background:var(--bg);border-radius:6px;padding:1px 6px;white-space:nowrap}
+.tochat{min-height:48px;border-radius:999px;border:0;background:#077a3a;color:#fff;font-weight:600;padding:10px 20px;cursor:pointer;font-size:16px}
+.casetag{font-size:12px;border:1px solid var(--verm);color:var(--verm);border-radius:999px;padding:1px 9px;background:none;cursor:pointer;min-height:24px}
+.toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,40px);opacity:0;pointer-events:none;background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:15px;transition:.25s;z-index:9;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.dsk{font-size:14px;color:var(--muted)}
+.bub .dsk{display:block;margin-top:8px}
 </style>
 </head>
 <body>
@@ -159,7 +225,7 @@ footer p{margin:0 0 6px}
     <div class="hero">
       <div>
         <h1 data-t="h1">Joined today? The group remembers.</h1>
-        <p class="lead" data-t="lead">A desk for a volunteer LINE group. A new member asks a question and gets what the group already said, with who said it and when.</p>
+        <p class="lead" data-t="lead">A desk for a volunteer LINE group. A new member asks and gets what the group already said, with who said it and when. Cases go on a wheel, handed out by town.</p>
       </div>
       <div class="facts">
         <div class="count">
@@ -193,6 +259,16 @@ footer p{margin:0 0 6px}
       </div>
     </div>
 
+    <section id="wheel" aria-labelledby="h-wh">
+      <h2 id="h-wh" data-t="h2w">Who is helping whom</h2>
+      <p class="sub" data-t="subw">Cases come out of the chat and go on a wheel, handed out by town. Each change also shows in the LINE group.</p>
+      <div class="as" id="as" role="group" aria-label="See it as"></div>
+      <div class="wgrid">
+        <div><div class="wheel" id="wh"></div><p class="whelp" id="whelp"></p></div>
+        <div class="panel" id="panel" aria-live="polite"></div>
+      </div>
+    </section>
+
     <section id="all" aria-labelledby="h-all">
       <h2 id="h-all" data-t="h2a">Everything the group said, filed</h2>
       <p class="sub" data-t="suba">Each message lands in a topic as it is posted. Tap a topic, or search.</p>
@@ -213,6 +289,7 @@ footer p{margin:0 0 6px}
         <li><span class="n" aria-hidden="true">1</span><h3 data-t="s1h">Add the desk to the group</h3><p data-t="s1p">An admin adds the desk to the LINE group, like adding a member. From then on it files each new message.</p></li>
         <li><span class="n" aria-hidden="true">2</span><h3 data-t="s2h">Send the old chat once</h3><p data-t="s2p">In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are filed too.</p></li>
         <li><span class="n" aria-hidden="true">3</span><h3 data-t="s3h">New members ask</h3><p data-t="s3p">In the group with @desk, or on a page like this one. Questions nobody has answered yet go to the person who covers that subject.</p></li>
+        <li><span class="n" aria-hidden="true">4</span><h3 data-t="s4h">Each volunteer gets a link</h3><p data-t="s4p">No password. The link opens the wheel with that person's cases. The coordinator's link hands cases out and checks them.</p></li>
       </ol>
     </section>
   </main>
@@ -224,11 +301,12 @@ footer p{margin:0 0 6px}
   </footer>
 </div>
 
+<div class="toast" id="toast" role="status"></div>
 <script>
 (function(){
 "use strict";
 var T={
- en:{h1:"Joined today? The group remembers.",lead:"A desk for a volunteer LINE group. A new member asks a question and gets what the group already said, with who said it and when.",
+ en:{h1:"Joined today? The group remembers.",lead:"A desk for a volunteer LINE group. A new member asks and gets what the group already said, with who said it and when. Cases go on a wheel, handed out by town.",
   c1:"old messages LINE shows a new member",c2:"old messages the desk shows, in 10 topics",sample:"Sample chat. The people and messages are made up.",
   group:"Liaison Volunteers · North",members:"38 members · sample",joined:"You joined the group today",nohist:"LINE shows nothing from before you joined",
   deskname:"Desk (bot)",hello:"Welcome. Ask me anything the group has talked about. Type it below, or tap a question.",
@@ -240,8 +318,33 @@ var T={
   s3h:"New members ask",s3p:"In the group with @desk, or on a page like this one. Questions nobody has answered yet go to the person who covers that subject.",
   foot1:"Made for Joe by Hongdam, Chiang Rai.",foot2:"Sample chat: the people and messages are made up. For the facts in a real case, check the consulate's own pages.",
   from:"From the chat:",short:"Short answer",found:"found in",msgs:"messages",msg:"message",none:"Nobody in the group has written about that yet. I've asked in the group and tagged ",noneany:"Nobody in the group has written about that yet. I've asked the group for you.",
-  nohits:"No messages match.",inchat:"Show in chat"},
- th:{h1:"<span class=nw>เพิ่งเข้ากลุ่มวันนี้?</span> <span class=nw>กลุ่มยังจำได้</span>",lead:"ผู้ช่วยสำหรับกลุ่มไลน์อาสาสมัคร สมาชิกใหม่ถามคำถาม แล้วได้คำตอบจากที่กลุ่มเคยคุยกันไว้ พร้อมบอกว่าใครพูด และพูดเมื่อไร",
+  nohits:"No messages match.",inchat:"Show in chat",
+  h2w:"Who is helping whom",subw:"Cases come out of the chat and go on a wheel, handed out by town. Each change also shows in the LINE group.",
+  seeas:"See it as:",r_joe:"Joe · coordinator",r_sue:"Sue · Chiang Rai",r_new:"Mai · new member",nowas:"Now seeing it as {a}",
+  sp_check:"To check",x_check:"Finished cases waiting for your yes.",sp_give:"Hand out",x_give:"Cases nobody holds yet.",
+  sp_all:"All cases",x_all:"Every case, by where it stands.",sp_new:"New case",x_new:"Write what someone needs, in plain words.",
+  sp_towns:"Towns",x_towns:"Who covers which town and subject.",sp_help:"Help",x_help:"What the buttons do.",
+  sp_mine:"My cases",x_mine:"Cases you hold.",sp_ask:"The desk",x_ask:"Answers the group has given before.",
+  sp_need:"I need a person",x_need:"A volunteer near you takes it.",
+  hub:"people helped this month",open:"cases open",whelp:"Tap a spoke. A red number is how many wait there.",
+  st_new:"New",st_taken:"Being done",st_waiting:"Waiting on someone",st_done:"Done, to check",st_closed:"Closed",
+  nobody:"Nobody yet",casew:"Case",fromchat:"From the chat",knows:"What the group already knows",history:"What happened",
+  q_right:"Is it right?",yes:"Yes, close it",notyet:"Not yet",q_who:"Who does it?",give:"Give",giveto:"Give to someone else",
+  take:"I'll take it",done:"Done",wait:"Waiting on someone",back:"Back to doing",pass:"Pass it back",
+  noteph:"Add a note…",addnote:"Add",newwhat:"What is needed, in plain words",newtown:"Town",newwho:"Who does it",later:"Hand out later",
+  make:"Make the case",newph:"e.g. My neighbour's pension stopped in September",alltowns:"All towns",
+  empty_check:"Nothing waiting for your check.",empty_give:"Every case has someone.",empty_mine:"You hold no open cases.",empty_need:"No requests yet.",
+  next:"Next for you",yours:"Your requests",covers:"Covers",holds:"open cases",ownlink:"Own link, no password",coord:"Coordinator",
+  posted:"Posted in the LINE group",close1:"Back",tochat:"Go to the chat",askp:"The desk answers from what the group already said, with who and when.",
+  helpp:"Every button here also works by typing in the LINE group:",
+  l_made:"made the case",l_took:"took it",l_gave:"gave it to {b}",l_done:"finished it",l_closed:"closed it",l_notyet:"sent it back",l_wait:"is waiting on someone",l_back:"is back on it",l_pass:"passed it back",
+  d_gave:"👉 {a} gave case {n} to {b}.",d_took:"✋ {a} took case {n}.",d_done:"✅ {a} finished case {n}. Joe checks it.",d_closed:"✔️ {a} closed case {n}.",
+  d_notyet:"↩️ {a} sent case {n} back to {b}.",d_wait:"⏳ Case {n} is waiting on someone ({a}).",d_back:"🔨 {a} is back on case {n}.",d_pass:"↩️ {a} passed case {n} back. Joe hands it out.",
+  d_new:"🆕 Case {n}: {title} ({town}). {owner} covers this; Joe hands it out.",d_note:"📝 {a} on case {n}: {x}",d_list:"Open cases:",d_mine:"Your cases, {a}:",
+  d_nocmd:"Case {n} isn't open.",d_held:"Case {n} is held by {b}.",d_notyours:"Case {n} is {b}'s.",d_onlylead:"Only the coordinator hands cases out.",d_onlyvol:"Volunteers take cases. You can ask for a person: @desk help: what you need",d_noone:"Nobody called {b} in the group.",
+  none2:"Nobody in the group has written about that yet. It is now case {n}; {owner} covers it.",noneany2:"Nobody in the group has written about that yet. It is now case {n}; Joe hands it out.",
+  openon:"Open case on this:",s4h:"Each volunteer gets a link",s4p:"No password. The link opens the wheel with that person's cases. The coordinator's link hands cases out and checks them."},
+ th:{h1:"<span class=nw>เพิ่งเข้ากลุ่มวันนี้?</span> <span class=nw>กลุ่มยังจำได้</span>",lead:"ผู้ช่วยสำหรับกลุ่มไลน์อาสาสมัคร สมาชิกใหม่ถาม แล้วได้คำตอบจากที่กลุ่มเคยคุยกันไว้ พร้อมบอกว่าใครพูดและพูดเมื่อไร เคสขึ้นบนวงล้อ แบ่งให้ตามพื้นที่",
   c1:"ข้อความเก่าที่ไลน์ให้สมาชิกใหม่เห็น",c2:"ข้อความเก่าที่ผู้ช่วยเปิดให้ดู แยกเป็น 10 เรื่อง",sample:"แชตตัวอย่าง ชื่อคนและข้อความเป็นเรื่องสมมติ",
   group:"อาสาสมัครประสานงาน · ภาคเหนือ",members:"สมาชิก 38 คน · ตัวอย่าง",joined:"คุณเข้ากลุ่มวันนี้",nohist:"ไลน์ไม่แสดงข้อความก่อนที่คุณเข้ากลุ่ม",
   deskname:"ผู้ช่วย (บอท)",hello:"ยินดีต้อนรับค่ะ ถามเรื่องที่กลุ่มเคยคุยกันได้เลย พิมพ์ด้านล่าง หรือแตะคำถาม",
@@ -253,7 +356,32 @@ var T={
   s3h:"สมาชิกใหม่ถามได้เลย",s3p:"ถามในกลุ่มด้วย @desk หรือบนหน้าเว็บแบบนี้ คำถามที่ยังไม่มีใครตอบ จะส่งไปหาคนที่ดูแลเรื่องนั้น",
   foot1:"ทำให้คุณโจ โดยหงส์แดง เชียงราย",foot2:"แชตตัวอย่าง: ชื่อคนและข้อความเป็นเรื่องสมมติ ข้อมูลสำหรับเรื่องจริง โปรดดูจากเว็บไซต์ของสถานกงสุล",
   from:"จากแชต:",short:"คำตอบสั้น ๆ",found:"พบใน",msgs:"ข้อความ",msg:"ข้อความ",none:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ผู้ช่วยถามในกลุ่มให้แล้ว และแท็ก ",noneany:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ผู้ช่วยถามในกลุ่มให้แล้ว",
-  nohits:"ไม่พบข้อความที่ตรงกัน",inchat:"ดูในแชต"}
+  nohits:"ไม่พบข้อความที่ตรงกัน",inchat:"ดูในแชต",
+  h2w:"ใครช่วยใครอยู่",subw:"เคสมาจากแชต ขึ้นบนวงล้อ แบ่งให้ตามพื้นที่ ทุกการเปลี่ยนแปลงขึ้นในกลุ่มไลน์ด้วย",
+  seeas:"ดูในฐานะ:",r_joe:"โจ · ผู้ประสานงาน",r_sue:"ซู · เชียงราย",r_new:"ไหม · สมาชิกใหม่",nowas:"ตอนนี้ดูในฐานะ {a}",
+  sp_check:"รอตรวจ",x_check:"เคสที่เสร็จแล้ว รอคุณตรวจ",sp_give:"แจกงาน",x_give:"เคสที่ยังไม่มีใครรับ",
+  sp_all:"เคสทั้งหมด",x_all:"ทุกเคส แยกตามสถานะ",sp_new:"เคสใหม่",x_new:"เขียนว่าใครต้องการอะไร ด้วยคำง่าย ๆ",
+  sp_towns:"พื้นที่",x_towns:"ใครดูแลพื้นที่และเรื่องไหน",sp_help:"วิธีใช้",x_help:"ปุ่มแต่ละปุ่มทำอะไร",
+  sp_mine:"เคสของฉัน",x_mine:"เคสที่คุณถืออยู่",sp_ask:"ผู้ช่วย",x_ask:"คำตอบที่กลุ่มเคยให้ไว้",
+  sp_need:"ขอคนช่วย",x_need:"อาสาสมัครใกล้คุณจะรับเรื่อง",
+  hub:"คนที่กลุ่มช่วยเดือนนี้",open:"เคสที่เปิดอยู่",whelp:"แตะปุ่มบนวงล้อ ตัวเลขสีแดงคือจำนวนที่รออยู่",
+  st_new:"ใหม่",st_taken:"กำลังทำ",st_waiting:"รอคนอื่น",st_done:"เสร็จ รอตรวจ",st_closed:"ปิดแล้ว",
+  nobody:"ยังไม่มีคนรับ",casew:"เคส",fromchat:"จากแชต",knows:"สิ่งที่กลุ่มรู้อยู่แล้ว",history:"ความคืบหน้า",
+  q_right:"เรียบร้อยไหม",yes:"ใช่ ปิดเคส",notyet:"ยังไม่เรียบร้อย",q_who:"ใครจะทำ",give:"มอบให้",giveto:"ส่งให้คนอื่น",
+  take:"ฉันรับเอง",done:"เสร็จแล้ว",wait:"รอคนอื่น",back:"กลับไปทำต่อ",pass:"คืนเคส",
+  noteph:"เพิ่มบันทึก…",addnote:"เพิ่ม",newwhat:"ต้องการอะไร เขียนด้วยคำง่าย ๆ",newtown:"พื้นที่",newwho:"ใครทำ",later:"แจกทีหลัง",
+  make:"สร้างเคส",newph:"เช่น บำนาญของเพื่อนบ้านหยุดจ่ายตั้งแต่กันยายน",alltowns:"ทุกพื้นที่",
+  empty_check:"ไม่มีเคสรอตรวจ",empty_give:"ทุกเคสมีคนรับแล้ว",empty_mine:"คุณไม่มีเคสที่เปิดอยู่",empty_need:"ยังไม่มีคำขอ",
+  next:"งานต่อไปของคุณ",yours:"คำขอของคุณ",covers:"ดูแลเรื่อง",holds:"เคสที่เปิดอยู่",ownlink:"มีลิงก์ของตัวเอง ไม่ต้องใช้รหัสผ่าน",coord:"ผู้ประสานงาน",
+  posted:"โพสต์ในกลุ่มไลน์แล้ว",close1:"กลับ",tochat:"ไปที่แชต",askp:"ผู้ช่วยตอบจากสิ่งที่กลุ่มเคยพูดไว้ พร้อมบอกว่าใครพูดและเมื่อไร",
+  helpp:"ทุกปุ่มตรงนี้ ใช้ได้ด้วยการพิมพ์ในกลุ่มไลน์เช่นกัน:",
+  l_made:"สร้างเคส",l_took:"รับเคส",l_gave:"มอบให้ {b}",l_done:"ทำเสร็จ",l_closed:"ปิดเคส",l_notyet:"ส่งกลับ",l_wait:"รอคนอื่น",l_back:"กลับมาทำต่อ",l_pass:"คืนเคส",
+  d_gave:"👉 {a} มอบเคส {n} ให้ {b}",d_took:"✋ {a} รับเคส {n}",d_done:"✅ {a} ทำเคส {n} เสร็จแล้ว โจจะตรวจ",d_closed:"✔️ {a} ปิดเคส {n}",
+  d_notyet:"↩️ {a} ส่งเคส {n} กลับให้ {b}",d_wait:"⏳ เคส {n} รอคนอื่นอยู่ ({a})",d_back:"🔨 {a} กลับมาทำเคส {n}",d_pass:"↩️ {a} คืนเคส {n} โจจะแจกใหม่",
+  d_new:"🆕 เคส {n}: {title} ({town}) {owner} ดูแลเรื่องนี้ โจจะแจกงาน",d_note:"📝 {a} ในเคส {n}: {x}",d_list:"เคสที่เปิดอยู่:",d_mine:"เคสของคุณ {a}:",
+  d_nocmd:"เคส {n} ไม่ได้เปิดอยู่",d_held:"เคส {n} มี {b} ถืออยู่",d_notyours:"เคส {n} เป็นของ {b}",d_onlylead:"ผู้ประสานงานเท่านั้นที่แจกเคส",d_onlyvol:"อาสาสมัครเป็นคนรับเคส คุณขอคนช่วยได้: @desk ช่วย: สิ่งที่ต้องการ",d_noone:"ไม่มีชื่อ {b} ในกลุ่ม",
+  none2:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ตอนนี้เป็นเคส {n} แล้ว {owner} ดูแลเรื่องนี้",noneany2:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ตอนนี้เป็นเคส {n} แล้ว โจจะแจกงาน",
+  openon:"มีเคสเปิดอยู่เรื่องนี้:",s4h:"อาสาสมัครแต่ละคนได้ลิงก์ของตัวเอง",s4p:"ไม่ต้องใช้รหัสผ่าน ลิงก์เปิดวงล้อพร้อมเคสของคนนั้น ลิงก์ของผู้ประสานงานใช้แจกและตรวจเคส"}
 };
 
 // Topics: name, short answer, who covers it, search words (English and Thai).
@@ -371,7 +499,7 @@ function rank(q){
   MSG.forEach(function(m){
     var x=m.x.toLowerCase(),s=0;
     ws.forEach(function(w){if(w.length<3)return;var hit=/[\u0E00-\u0E7F]/.test(w)?x.indexOf(w)>=0:new RegExp("(^|[^a-z0-9])"+w.replace(/[.\-]/g,"\\$&")).test(x);if(hit)s+=2;});
-    if(topicScore[m.t])s+=topicScore[m.t]*1.5;
+    if(topicScore[m.t])s+=topicScore[m.t]*3;
     var tw=m.town.toLowerCase()+" "+(TOWN_TH[m.town]||"");
     if(ws.some(function(w){return tw.indexOf(w)>=0;})||(TOWN_TH[m.town]&&q.indexOf(TOWN_TH[m.town])>=0))s+=1;
     if(s>0)hits.push({m:m,s:s});
@@ -397,26 +525,33 @@ function ask(q){
   var wait=addRow('<span class="typing" aria-label="…"><i></i><i></i><i></i></span>');
   setTimeout(function(){
     wait.remove();
+    var cmd=command(q);
+    if(cmd!==null){addRow(cmd);busy=false;return;}
     var r=rank(q),top=r.hits.slice(0,3),h="";
     if(!top.length){
-      var own=r.topic?TOPICS[r.topic].owner:null;
-      h='<p>'+esc(own?t("none")+own+".":t("noneany"))+'</p>';
+      var own=r.topic?TOPICS[r.topic].owner:null,nc=newCase(q.replace(/^@desk\s*/i,""),PERS[ROLE].town,null,me());refresh();
+      h='<p>'+esc(own?tf("none2",{n:nc.n,owner:own}):tf("noneany2",{n:nc.n}))+'</p>'+caseBtn(nc);
     }else{
       var tp=TOPICS[r.topic||top[0].m.t];
       var n=r.hits.filter(function(x){return x.m.t===(r.topic||top[0].m.t);}).length||top.length;
       h='<p><b>'+esc(t("short"))+'</b> · '+esc(t("found"))+' '+n+' '+esc(n===1?t("msg"):t("msgs"))+'<br>'+esc(lang==="th"?tp.s_th:tp.s_en)+'</p><p style="margin:0">'+esc(t("from"))+'</p>';
       top.forEach(function(x){var m=x.m;
         h+='<button type="button" class="quote" data-go="'+m.i+'"><em>'+esc(m.who)+' · '+esc(m.town)+' · '+esc(when(m.d))+'</em>'+esc(m.x.length>150?m.x.slice(0,147)+"…":m.x)+'</button>';});
+      var oc=CASES.filter(function(c){return isOpen(c)&&c.topic===(r.topic||top[0].m.t);})[0];
+      if(oc&&tier()!=="member")h+='<span class="dsk">'+esc(t("openon"))+'</span>'+caseBtn(oc);
     }
     addRow(h);busy=false;
   },650);
   return true;
 }
 $("ask").addEventListener("submit",function(e){e.preventDefault();var q=$("q");if(ask(q.value))q.value="";});
-feed.addEventListener("click",function(e){var b=e.target.closest("[data-go]");if(b)go(+b.getAttribute("data-go"));});
+feed.addEventListener("click",function(e){var b=e.target.closest("[data-case]");if(b){openOne(+b.getAttribute("data-case"));return;}b=e.target.closest("[data-go]");if(b)go(+b.getAttribute("data-go"));});
 function chips(){
   var c=$("chips");c.innerHTML="";
-  QS.forEach(function(q){var b=document.createElement("button");b.type="button";b.textContent=q[lang];b.onclick=function(){ask(q[lang]);};c.appendChild(b);});
+  var CH={joe:[{en:"@desk cases",th:"@desk เคส"},{en:"@desk give 4 to Ray",th:"@desk ให้ 4 Ray"},{en:"@desk give 5 to Ken",th:"@desk ให้ 5 Ken"},QS[0],QS[2]],
+    sue:[{en:"@desk my cases",th:"@desk เคสของฉัน"},{en:"@desk done 1",th:"@desk เสร็จ 1"},{en:"@desk take 4",th:"@desk รับ 4"},QS[1]],
+    "new":[QS[0],{en:"@desk help: my father's pension stopped",th:"@desk ช่วย: บำนาญของพ่อหยุดจ่าย"}].concat(QS.slice(1))};
+  (CH[ROLE]||QS).forEach(function(q){var b=document.createElement("button");b.type="button";b.textContent=q[lang];b.onclick=function(){ask(q[lang]);};c.appendChild(b);});
 }
 
 // archive
@@ -429,7 +564,7 @@ function topics(){
     b.onclick=function(){cur=k;$("f").value="";showAll=false;topics();list();};c.appendChild(b);});
 }
 function li(m){
-  return '<li id="m'+m.i+'"><div class="who"><b>'+esc(m.who)+'</b><span>'+esc(m.town)+'</span><time datetime="'+m.d+'">'+esc(when(m.d))+'</time><span class="tag">'+esc(tname(m.t))+'</span></div><p>'+esc(m.x)+'</p></li>';
+  return '<li id="m'+m.i+'"><div class="who"><b>'+esc(m.who)+'</b><span>'+esc(m.town)+'</span><time datetime="'+m.d+'">'+esc(when(m.d))+'</time><span class="tag">'+esc(tname(m.t))+'</span>'+CASES.filter(function(c){return c.from.indexOf(m.i)>=0;}).map(function(c){return '<button type="button" class="casetag" data-case="'+c.n+'">'+esc(t("casew"))+' '+c.n+'</button>';}).join("")+'</div><p>'+esc(m.x)+'</p></li>';
 }
 function list(){
   var q=$("f").value.trim(),rows,sum=$("sum");
@@ -450,13 +585,202 @@ function go(i){
   setTimeout(function(){el.classList.remove("hit");},2400);
 }
 
+// ---------- the wheel: cases handed out, run from the same desk ----------
+var TODAY=new Date().toISOString().slice(0,10);
+var TOWNS=["All towns","Chiang Mai","Chiang Rai","Lampang","Lamphun","Pai","Mae Hong Son","Nan","Phrae","Mae Rim"];
+var PEOPLE=[{n:"Joe",town:"Chiang Mai",lead:1,covers:[]},{n:"Pat",town:"Chiang Mai",covers:["passport","emergency","group"]},{n:"Dale",town:"Lampang",covers:[]},
+ {n:"Sue",town:"Chiang Rai",covers:["death"]},{n:"Ray",town:"Pai",covers:[]},{n:"Ken",town:"Lamphun",covers:["vote","docs"]},
+ {n:"Joan",town:"Nan",covers:["health","alerts"]},{n:"Bill",town:"Phrae",covers:["money","scam"]}];
+var PERS={joe:{name:"Joe",town:"Chiang Mai",tier:"lead"},sue:{name:"Sue",town:"Chiang Rai",tier:"team"},"new":{name:"Mai",town:"Lamphun",tier:"member"}};
+function L_(d,who,k,x,b){return {d:d,who:who,k:k,x:x,b:b};}
+var CASES=[
+ {n:1,en:"Noi: survivor benefits form",th:"น้อย: แบบฟอร์มเงินคู่สมรสผู้เสียชีวิต",topic:"death",town:"Mae Rim",who:"Sue",st:"taken",from:[13,14],
+  log:[L_("2025-11-14","Desk","made"),L_("2025-11-14","Sue","took"),L_("2026-10-18","Sue",null,"Form filled in with Noi. It goes to Manila on Monday.")]},
+ {n:2,en:"Wanida's uncle: renew passport, then move the visa stamp",th:"ลุงของวนิดา: ต่อพาสปอร์ต แล้วย้ายตราวีซ่า",topic:"passport",town:"Chiang Mai",who:"Pat",st:"waiting",from:[22,23],
+  log:[L_("2026-06-30","Desk","made"),L_("2026-06-30","Pat","took"),L_("2026-10-15","Pat",null,"Appointment booked for 3 Nov."),L_("2026-10-15","Pat","wait")]},
+ {n:3,en:"Fake 'embassy' calls to widows: a card in Thai for the group",th:"สายโทรอ้างเป็นสถานทูตถึงภรรยาหม้าย: การ์ดภาษาไทยสำหรับกลุ่ม",topic:"scam",town:"All towns",who:"Bill",st:"done",from:[8,25],
+  log:[L_("2026-08-25","Desk","made"),L_("2026-08-26","Bill","took"),L_("2026-10-20","Bill",null,"Card made with Wanida, Thai and English."),L_("2026-10-20","Bill","done")]},
+ {n:4,en:"Vet in Pai: sign up for the VA Foreign Medical Program",th:"ทหารผ่านศึกที่ปาย: สมัคร VA Foreign Medical Program",topic:"health",town:"Pai",who:null,st:"new",from:[4,12],
+  log:[L_("2026-10-21","Desk","made")]},
+ {n:5,en:"Lamphun: where to get a US-size passport photo",th:"ลำพูน: ถ่ายรูปพาสปอร์ตขนาดอเมริกันได้ที่ไหน",topic:"passport",town:"Lamphun",who:null,st:"new",from:[9],
+  log:[L_("2026-10-21","Desk","made")]},
+ {n:6,en:"Lampang questions for the town hall",th:"ลำปาง: คำถามสำหรับประชุมใหญ่",topic:"group",town:"Lampang",who:"Dale",st:"taken",from:[15],
+  log:[L_("2025-12-01","Desk","made"),L_("2025-12-02","Dale","took")]},
+ {n:7,en:"STEP sign-ups at the Nan senior centre",th:"สมัคร STEP ที่ศูนย์ผู้สูงอายุน่าน",topic:"alerts",town:"Nan",who:"Joan",st:"closed",from:[3,19],
+  log:[L_("2026-10-02","Desk","made"),L_("2026-10-02","Joan","took"),L_("2026-10-09","Joan",null,"14 people signed up."),L_("2026-10-09","Joan","done"),L_("2026-10-10","Joe","closed")]},
+ {n:8,en:"Phrae: proof of life letter for a pension",th:"แพร่: หนังสือรับรองการมีชีวิตสำหรับบำนาญ",topic:"docs",town:"Phrae",who:"Bill",st:"waiting",from:[24],
+  log:[L_("2026-07-14","Desk","made"),L_("2026-07-14","Bill","took"),L_("2026-10-12","Bill",null,"The plan takes a Thai notary. Waiting on the notary's date."),L_("2026-10-12","Bill","wait")]}
+];
+var ROLE="joe",SPOKE=null,ONE=null,OPEN={},FRESH={},HELPED=11;
+var SP={lead:[["check","✅"],["give","👉"],["all","🧱"],["new","➕"],["towns","🗺️"],["help","🛟"]],
+ team:[["mine","🙋"],["all","🧱"],["new","➕"],["towns","🗺️"],["help","🛟"]],
+ member:[["ask","💬"],["need","🆘"],["help","🛟"]]};
+var STI={"new":"📥",taken:"🔨",waiting:"⏳",done:"✅",closed:"✔️"};
+var ORDER=["new","taken","waiting","done","closed"];
+function tier(){return PERS[ROLE].tier;}
+function me(){return PERS[ROLE].name;}
+function tf(k,o){return t(k).replace(/\{(\w+)\}/g,function(_,x){return o&&o[x]!=null?o[x]:"";});}
+function town(x){return lang==="th"?(x==="All towns"?t("alltowns"):(TOWN_TH[x]||x)):(x==="All towns"?t("alltowns"):x);}
+function title(c){return (lang==="th"?c.th:c.en)||c.en;}
+function byN(n){for(var i=0;i<CASES.length;i++)if(CASES[i].n===n)return CASES[i];return null;}
+function isOpen(c){return c.st!=="closed";}
+var L={check:function(){return CASES.filter(function(c){return c.st==="done";});},
+ give:function(){return CASES.filter(function(c){return !c.who&&isOpen(c);});},
+ mine:function(){return CASES.filter(function(c){return c.who===me()&&(c.st==="taken"||c.st==="waiting");});},
+ need:function(){return CASES.filter(function(c){return c.by===me();});},
+ open:function(){return CASES.filter(isOpen);}};
+function badge(k){if(k==="check"||k==="give"||k==="mine")return L[k]().length;if(k==="need")return L.need().filter(isOpen).length;return 0;}
+function toast(x){var el=$("toast");el.textContent=x;el.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(function(){el.classList.remove("show");},2600);}
+
+function renderAs(){
+  var h='<span class="dsk">'+esc(t("seeas"))+'</span>';
+  ["joe","sue","new"].forEach(function(r){h+='<button type="button" data-role="'+r+'" aria-pressed="'+(ROLE===r)+'">'+esc(t("r_"+r))+'</button>';});
+  $("as").innerHTML=h;
+}
+function renderWheel(){
+  var sp=SP[tier()],h="";
+  sp.forEach(function(s,i){h+='<span class="ray" aria-hidden="true" style="transform:rotate('+(180+i*360/sp.length)+'deg)"></span>';});
+  h+='<div class="hub"><b>'+HELPED+'</b><span>'+esc(t("hub"))+'</span><small>'+L.open().length+' '+esc(t("open"))+'</small></div>';
+  sp.forEach(function(s,i){
+    var a=-Math.PI/2+i*2*Math.PI/sp.length,x=50+37.5*Math.cos(a),y=50+37.5*Math.sin(a),n=badge(s[0]);
+    h+='<button type="button" class="spoke" data-sp="'+s[0]+'" aria-pressed="'+(SPOKE===s[0])+'" title="'+esc(t("x_"+s[0]))+'" style="left:'+x.toFixed(2)+'%;top:'+y.toFixed(2)+'%"><i aria-hidden="true">'+s[1]+'</i><span>'+esc(t("sp_"+s[0]))+'</span>'+(n?'<b class="badge">'+n+'</b>':'')+'</button>';
+  });
+  $("wh").innerHTML=h;$("whelp").textContent=t("whelp");
+}
+function pills(c){
+  return '<span class="meta"><span class="pill st">'+STI[c.st]+' '+esc(t("st_"+c.st))+'</span><span class="pill">'+esc(c.who||t("nobody"))+'</span><span class="pill">'+esc(town(c.town))+'</span><span class="pill">'+esc(tname(c.topic))+'</span></span>';
+}
+function opts(c){
+  var sug=PEOPLE.filter(function(p){return !p.lead&&(TOPICS[c.topic].owner===p.n||p.town===c.town);}),rest=PEOPLE.filter(function(p){return !p.lead&&sug.indexOf(p)<0;});
+  return sug.concat(rest).filter(function(p){return p.n!==c.who;}).map(function(p){return '<option value="'+p.n+'">'+(sug.indexOf(p)>=0?"★ ":"")+esc(p.n)+' · '+esc(town(p.town))+'</option>';}).join("");
+}
+function actions(c){
+  var tr=tier(),h="",n=c.n;
+  if(tr==="member"||c.st==="closed")return "";
+  if(tr==="lead"){
+    if(c.st==="done")h='<b>'+esc(t("q_right"))+'</b><button type="button" class="go" data-act="close">'+esc(t("yes"))+'</button><button type="button" data-act="notyet">'+esc(t("notyet"))+'</button>';
+    else h=(c.who?'':'<b>'+esc(t("q_who"))+'</b>')+'<label class="sr" for="g'+n+'">'+esc(t("newwho"))+'</label><select id="g'+n+'">'+opts(c)+'</select><button type="button" class="'+(c.who?'':'go')+'" data-act="give">'+esc(c.who?t("giveto"):t("give"))+'</button>';
+  }else if(!c.who)h='<button type="button" class="go" data-act="take">'+esc(t("take"))+'</button>';
+  else if(c.who===me()){
+    if(c.st==="taken")h='<button type="button" class="go" data-act="done">'+esc(t("done"))+'</button><button type="button" data-act="wait">'+esc(t("wait"))+'</button><button type="button" data-act="pass">'+esc(t("pass"))+'</button>';
+    if(c.st==="waiting")h='<button type="button" class="go" data-act="back">'+esc(t("back"))+'</button><button type="button" data-act="done">'+esc(t("done"))+'</button>';
+  }
+  var note=(tr==="lead"||c.who===me())?'<div class="note"><label class="sr" for="nt'+n+'">'+esc(t("noteph"))+'</label><input id="nt'+n+'" placeholder="'+esc(t("noteph"))+'"><button type="button" data-act="note">'+esc(t("addnote"))+'</button></div>':"";
+  return (h?'<div class="acts">'+h+'</div>':"")+note;
+}
+function caseHTML(c,force){
+  var op=force||OPEN[c.n],h='<div class="case'+(FRESH[c.n]?' fresh':'')+'" data-case="'+c.n+'">';
+  h+='<button type="button" class="head" data-act="open" aria-expanded="'+!!op+'"><span class="tt">'+esc(t("casew"))+' '+c.n+' · '+esc(title(c))+'</span>'+pills(c)+'</button>';
+  if(op){
+    h+='<div class="cbody">';
+    if(c.from.length){h+='<h4>'+esc(t("fromchat"))+'</h4>';c.from.forEach(function(i){var m=MSG[i];h+='<button type="button" class="quote" data-go="'+i+'"><em>'+esc(m.who)+' · '+esc(m.town)+' · '+esc(when(m.d))+'</em>'+esc(m.x.length>140?m.x.slice(0,137)+"…":m.x)+'</button>';});}
+    h+='<h4>'+esc(t("knows"))+'</h4><p>'+esc(lang==="th"?TOPICS[c.topic].s_th:TOPICS[c.topic].s_en)+'</p>';
+    h+='<h4>'+esc(t("history"))+'</h4><ul class="logl">'+c.log.map(function(e){return '<li><time datetime="'+e.d+'">'+esc(when(e.d))+'</time><b>'+esc(e.who)+'</b> '+esc(e.k?tf("l_"+e.k,{b:e.b}):"“"+e.x+"”")+'</li>';}).join("")+'</ul>';
+    h+=actions(c)+'</div>';
+  }
+  return h+'</div>';
+}
+function cards(arr,empty){return arr.length?arr.map(function(c){return caseHTML(c);}).join(""):'<p class="dsk">'+esc(empty)+'</p>';}
+function newForm(){
+  var tr=tier(),h='<form class="newf" id="nf"><label for="nfx">'+esc(t("newwhat"))+'</label><textarea id="nfx" required placeholder="'+esc(t("newph"))+'"></textarea>';
+  h+='<label for="nft">'+esc(t("newtown"))+'</label><select id="nft">'+TOWNS.map(function(x){return '<option value="'+x+'"'+(x===PERS[ROLE].town?' selected':'')+'>'+esc(town(x))+'</option>';}).join("")+'</select>';
+  if(tr==="lead")h+='<label for="nfw">'+esc(t("newwho"))+'</label><select id="nfw"><option value="">'+esc(t("later"))+'</option>'+PEOPLE.filter(function(p){return !p.lead;}).map(function(p){return '<option value="'+p.n+'">'+esc(p.n)+' · '+esc(town(p.town))+'</option>';}).join("")+'</select>';
+  return h+'<button type="submit" class="go">'+esc(t("make"))+'</button></form>';
+}
+function renderPanel(){
+  var p=$("panel"),h="",k=SPOKE,tr=tier();
+  if(ONE!=null){var c1=byN(ONE);p.innerHTML='<h3>'+esc(t("casew"))+' '+c1.n+'</h3>'+caseHTML(c1,true)+'<div class="acts"><button type="button" data-act="back1">‹ '+esc(t("close1"))+'</button></div>';return;}
+  if(!k)k=tr==="lead"?"next":tr==="team"?"mine":"ask";
+  if(k==="next")h='<h3>'+esc(t("next"))+'</h3><h4>✅ '+esc(t("sp_check"))+'</h4>'+cards(L.check(),t("empty_check"))+'<h4>👉 '+esc(t("sp_give"))+'</h4>'+cards(L.give(),t("empty_give"));
+  else if(k==="check")h='<h3>✅ '+esc(t("sp_check"))+'</h3>'+cards(L.check(),t("empty_check"));
+  else if(k==="give")h='<h3>👉 '+esc(t("sp_give"))+'</h3>'+cards(L.give(),t("empty_give"));
+  else if(k==="mine")h='<h3>🙋 '+esc(t("sp_mine"))+'</h3>'+cards(L.mine(),t("empty_mine"));
+  else if(k==="all"){h='<h3>🧱 '+esc(t("sp_all"))+'</h3>';ORDER.forEach(function(st){var a=CASES.filter(function(c){return c.st===st;});if(a.length)h+='<h4>'+STI[st]+' '+esc(t("st_"+st))+'</h4>'+cards(a,"");});}
+  else if(k==="new")h='<h3>➕ '+esc(t("sp_new"))+'</h3>'+newForm();
+  else if(k==="need")h='<h3>🆘 '+esc(t("sp_need"))+'</h3>'+newForm()+'<h4>'+esc(t("yours"))+'</h4>'+cards(L.need(),t("empty_need"));
+  else if(k==="ask")h='<h3>💬 '+esc(t("sp_ask"))+'</h3><p class="sub">'+esc(t("askp"))+'</p><button type="button" class="tochat" data-act="tochat">'+esc(t("tochat"))+'</button><h4>'+esc(t("yours"))+'</h4>'+cards(L.need(),t("empty_need"));
+  else if(k==="towns"){h='<h3>🗺️ '+esc(t("sp_towns"))+'</h3><ul class="ppl">'+PEOPLE.map(function(p){var held=CASES.filter(function(c){return c.who===p.n&&isOpen(c);}).length;
+    return '<li><b>'+esc(p.n)+'</b> · '+esc(town(p.town))+'<span class="meta">'+(p.lead?'<span class="pill st">'+esc(t("coord"))+'</span>':'')+(p.covers.length?'<span class="pill">'+esc(t("covers"))+': '+esc(p.covers.map(tname).join(", "))+'</span>':'')+'<span class="pill">'+held+' '+esc(t("holds"))+'</span><span class="pill">🔗 '+esc(t("ownlink"))+'</span></span></li>';}).join("")+'</ul>';}
+  else if(k==="help"){h='<h3>🛟 '+esc(t("sp_help"))+'</h3><ul class="hl">'+SP[tr].map(function(s){return '<li><i aria-hidden="true">'+s[1]+'</i><div><b>'+esc(t("sp_"+s[0]))+'</b><p>'+esc(t("x_"+s[0]))+'</p></div></li>';}).join("")+'</ul>';
+    var cm=lang==="th"?["@desk รับ 4","@desk เสร็จ 4","@desk ให้ 4 Ray","@desk เคส","@desk ช่วย: สิ่งที่ต้องการ"]:["@desk take 4","@desk done 4","@desk give 4 to Ray","@desk cases","@desk help: what you need"];
+    h+='<div class="cmds">'+esc(t("helpp"))+' '+cm.map(function(x){return '<code>'+esc(x)+'</code>';}).join(" · ")+'</div>';}
+  p.innerHTML=h;
+}
+function refresh(){renderAs();renderWheel();renderPanel();list();}
+
+function logIt(c,k,b,x){c.log.push(L_(TODAY,me(),k,x,b));}
+function act(n,a,arg,quiet){
+  var c=byN(n),who=me(),line;
+  if(!c||(c.st==="closed"&&a!=="note"))return tf("d_nocmd",{n:n});
+  if(a==="take"){if(c.who&&c.who!==who)return tf("d_held",{n:n,b:c.who});c.who=who;c.st="taken";logIt(c,"took");line=tf("d_took",{a:who,n:n});}
+  else if(a==="give"){c.who=arg;c.st="taken";logIt(c,"gave",arg);line=tf("d_gave",{a:who,n:n,b:arg});}
+  else if(a==="done"){c.st="done";logIt(c,"done");line=tf("d_done",{a:who,n:n});}
+  else if(a==="close"){c.st="closed";HELPED++;logIt(c,"closed");line=tf("d_closed",{a:who,n:n});}
+  else if(a==="notyet"){c.st="taken";logIt(c,"notyet");line=tf("d_notyet",{a:who,n:n,b:c.who||t("nobody")});}
+  else if(a==="wait"){c.st="waiting";logIt(c,"wait");line=tf("d_wait",{a:who,n:n});}
+  else if(a==="back"){c.st="taken";logIt(c,"back");line=tf("d_back",{a:who,n:n});}
+  else if(a==="pass"){c.who=null;c.st="new";logIt(c,"pass");line=tf("d_pass",{a:who,n:n});}
+  else if(a==="note"){logIt(c,null,null,arg);line=tf("d_note",{a:who,n:n,x:arg});}
+  else return "";
+  FRESH={};FRESH[n]=1;refresh();
+  if(!quiet){addRow('<p>'+esc(line)+'</p>');toast(t("posted"));}
+  return line;
+}
+function newCase(text,tw,who,by){
+  var r=rank(text),tp=r.topic||"group",n=CASES.length+1,x=text.length>90?text.slice(0,87)+"…":text;
+  var c={n:n,en:x,th:x,topic:tp,town:tw,who:who||null,st:who?"taken":"new",from:r.hits.slice(0,2).map(function(h){return h.m.i;}),by:by,log:[L_(TODAY,by,"made")]};
+  if(who)c.log.push(L_(TODAY,by,"gave",null,who));
+  CASES.push(c);FRESH={};FRESH[n]=1;OPEN[n]=1;return c;
+}
+function caseBtn(c){return '<button type="button" class="quote" data-case="'+c.n+'"><em>'+esc(t("casew"))+' '+c.n+' · '+STI[c.st]+' '+esc(t("st_"+c.st))+' · '+esc(c.who||t("nobody"))+'</em>'+esc(title(c))+'</button>';}
+function P_(x){return '<p>'+esc(x)+'</p>';}
+function command(q){
+  var c=q.replace(/^@desk\s*/i,"").trim(),m,tr=tier(),cs;
+  if(/^(cases|my cases|เคส|เคสของฉัน)$/i.test(c)){
+    var arr=tr==="member"?L.need():tr==="team"?L.mine():L.open();
+    return P_(tr==="lead"?t("d_list"):tf("d_mine",{a:me()}))+(arr.length?arr.map(caseBtn).join(""):P_(tr==="member"?t("empty_need"):t("empty_mine")));
+  }
+  if((m=c.match(/^(?:take|รับ)\s*#?(\d+)$/i))){if(tr==="member")return P_(t("d_onlyvol"));return P_(act(+m[1],"take",null,true));}
+  if((m=c.match(/^(?:done|เสร็จ)\s*#?(\d+)$/i))){if(tr==="member")return P_(t("d_onlyvol"));cs=byN(+m[1]);
+    if(cs&&tr==="team"&&cs.who!==me())return P_(tf("d_notyours",{n:cs.n,b:cs.who||t("nobody")}));return P_(act(+m[1],"done",null,true));}
+  if((m=c.match(/^(?:give|ให้)\s*#?(\d+)\s+(?:to\s+)?([A-Za-z]+)$/i))){if(tr!=="lead")return P_(t("d_onlylead"));
+    var p=PEOPLE.filter(function(x){return !x.lead&&x.n.toLowerCase()===m[2].toLowerCase();})[0];if(!p)return P_(tf("d_noone",{b:m[2]}));return P_(act(+m[1],"give",p.n,true));}
+  if((m=c.match(/^(?:help|need|ช่วย)\s*[:：]\s*(.+)$/i))){cs=newCase(m[1],PERS[ROLE].town,null,me());refresh();
+    return P_(tf("d_new",{n:cs.n,title:title(cs),town:town(cs.town),owner:TOPICS[cs.topic].owner}))+caseBtn(cs);}
+  return null;
+}
+function openOne(n){ONE=n;SPOKE=null;renderWheel();renderPanel();$("wheel").scrollIntoView({block:"start"});}
+$("as").addEventListener("click",function(e){var b=e.target.closest("[data-role]");if(!b)return;ROLE=b.getAttribute("data-role");SPOKE=null;ONE=null;OPEN={};FRESH={};
+  var s=document.createElement("div");s.className="sysmsg";s.textContent=tf("nowas",{a:t("r_"+ROLE)});feed.appendChild(s);feed.scrollTop=feed.scrollHeight;chips();refresh();});
+$("wh").addEventListener("click",function(e){var b=e.target.closest("[data-sp]");if(!b)return;var k=b.getAttribute("data-sp");SPOKE=SPOKE===k?null:k;ONE=null;renderWheel();renderPanel();
+  if(innerWidth<860)$("panel").scrollIntoView({block:"start"});});
+$("panel").addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  if(b.hasAttribute("data-go")){go(+b.getAttribute("data-go"));return;}
+  var a=b.getAttribute("data-act");if(!a)return;
+  if(a==="tochat"){$("ask").scrollIntoView({block:"center"});$("q").focus({preventScroll:true});return;}
+  if(a==="back1"){ONE=null;renderPanel();return;}
+  var card=b.closest("[data-case]"),n=card?+card.getAttribute("data-case"):0;
+  if(a==="open"){OPEN[n]=!OPEN[n];renderPanel();return;}
+  if(a==="give"){act(n,"give",$("g"+n).value);return;}
+  if(a==="note"){var i=$("nt"+n);if(i.value.trim())act(n,"note",i.value.trim());return;}
+  act(n,a);
+});
+$("panel").addEventListener("submit",function(e){
+  e.preventDefault();var x=$("nfx").value.trim();if(!x)return;var w=$("nfw")?$("nfw").value:"";
+  var c=newCase(x,$("nft").value,w,me());
+  addRow('<p>'+esc(tf("d_new",{n:c.n,title:title(c),town:town(c.town),owner:w||TOPICS[c.topic].owner}))+'</p>'+caseBtn(c));toast(t("posted"));
+  SPOKE=tier()==="member"?"need":tier()==="team"?"all":(w?"all":"give");refresh();
+});
+$("log").addEventListener("click",function(e){var b=e.target.closest("[data-case]");if(b)openOne(+b.getAttribute("data-case"));});
+
 // language
 function apply(){
   document.documentElement.lang=lang;document.body.classList.toggle("th",lang==="th");
   document.querySelectorAll("[data-t]").forEach(function(el){var k=el.getAttribute("data-t"),v=T[lang][k];if(v==null)return;if(k==="h1")el.innerHTML=v;else el.textContent=v;});
   document.querySelectorAll("[data-tp]").forEach(function(el){el.placeholder=T[lang][el.getAttribute("data-tp")];});
   document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-lang")===lang));});
-  chips();topics();list();
+  chips();topics();refresh();
 }
 document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){lang=b.getAttribute("data-lang");try{localStorage.setItem("joe-lang",lang);}catch(e){}apply();};});
 $("n-all").textContent=MSG.length;
