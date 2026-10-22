@@ -249,6 +249,10 @@ footer p{margin:0 0 6px}
 @media (pointer:coarse),(prefers-reduced-motion:reduce){
   .hero,.band{background-attachment:scroll}
 }
+/* contrast: WCAG AA in every mode and language (tools/contrast/run.mjs) */
+.years{background:rgba(22,11,4,.72);border-radius:12px;padding:0 6px 4px}
+h1 em{background:rgba(22,11,4,.62);display:inline-block;padding:0 .18em;border-radius:6px}
+.band .kicker{display:inline-block;background:rgba(22,11,4,.74);padding:4px 8px;border-radius:6px}
 </style>
 </head>
 <body>
@@ -654,7 +658,7 @@ function renderPins(){
   }else{
     send.href='#'; send.setAttribute('aria-disabled','true');
   }
-  $('undo').style.opacity=$('clear').style.opacity=pinsData.length?1:.45;
+  $('undo').style.opacity=$('clear').style.opacity=pinsData.length?1:.45; $('undo').disabled=$('clear').disabled=!pinsData.length;
 }
 function addPin(lng,lat){
   if(pinsData.length>=12) return;

@@ -12,6 +12,28 @@ deploys `docs/` and `functions/`. Ledger: `/srv/state/site-deploy.tsv` on the se
 Roll back by reverting the commit on `main`, or in the Cloudflare dashboard.
 Bindings and secrets (`AI`, `RT_LIMIT`, Resend) live on the Pages project, not here.
 
+## Contrast gate
+
+Her word 2026-10-22: every page under `docs/` meets WCAG AA contrast (4.5 for body
+text, 3 for large text) at phone and desktop width, in light and dark, in English and
+Thai, at the top and scrolled, and on each tab. `node tools/contrast/run.mjs` checks
+them all in about 80 seconds; `node tools/contrast/run.mjs for/cca` checks pages whose
+path contains `for/cca`. Node 22+ and Chrome; nothing to install. Pages that read `/api/...` get their answers
+from live hongdam.net (GET only), so the gate sees the content people see; a failed read
+or a page that does not load fails the run.
+
+The GitHub check "gate: contrast" (`.github/workflows/gate-contrast.yml`) runs it on
+every pull request and every commit to `main`. `pr-push` waits for it and leaves the PR
+open when it is red. The server's deploy holds a commit on `main` until it is green
+(`held` in `/srv/state/site-deploy.tsv`).
+
+What it measures: each visible run of text against the colours behind it. Over a
+photograph, against the overlay gradient laid on the lightest tenth of the part of the
+photo behind the text. Faded text counts at its faded strength. Gradient-filled text
+counts at its weakest colour. A see-through fixed bar counts against what scrolls
+under it. Text not shown yet (a fade-in that has not run), hidden text, and switched-off
+controls (`disabled`, `aria-disabled="true"`) are left out, as WCAG leaves them out.
+
 ## What's in this build (v2, expanded per Nan's request)
 
 - **Real screenshots, not mockups.** 12 pages were captured live with headless
