@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#171009">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>The group remembers</title>
+<meta name="description" content="A LINE desk for volunteer groups: a new member asks, and gets what the group already said, with who said it and when. Sample chat.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Joined today? The group remembers.">
+<meta property="og:description" content="A LINE desk for volunteer groups. Ask, and get the old answers with who and when. Sample chat, made for Joe by Hongdam.">
+<meta property="og:url" content="https://hongdam.net/for/joe/">
+<meta property="og:image" content="https://hongdam.net/for/joe/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Card: Joined today? The group remembers. A LINE chat where a new member asks about a passport and the desk answers with three old messages. Hongdam, Chiang Rai.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/for/joe/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Thai:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f0e3; --paper:#fffaf1; --ink:#171009; --muted:#5e5446; --line:#e2d6c1;
+  --verm:#c8371e; --verm-ink:#ffffff; --gold:#e7be6a; --gold-ink:#171009;
+  --phone:#8fa6c4; --phone-head:#273246; --phone-head-ink:#ffffff;
+  --me:#a6e58b; --me-ink:#10220a; --them:#ffffff; --them-ink:#171009; --sys:rgba(0,0,0,.28); --sys-ink:#ffffff;
+  --hit:#fff2b8;
+  --shadow:0 1px 2px rgba(23,16,9,.08),0 10px 30px rgba(23,16,9,.12);
+  --font:"Inter","Noto Sans Thai",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171009; --paper:#221a10; --ink:#f2e7d3; --muted:#cdbfa4; --line:#3a2e1f;
+  --verm:#ff6a45; --verm-ink:#171009; --gold:#e7be6a; --gold-ink:#171009;
+  --phone:#2b3646; --phone-head:#11161f; --phone-head-ink:#f2e7d3;
+  --me:#3f7a2c; --me-ink:#eaffdf; --them:#3a3127; --them-ink:#f2e7d3; --sys:rgba(255,255,255,.14); --sys-ink:#f2e7d3;
+  --hit:#5a4a14;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45);
+}}
+:root[data-theme="dark"]{
+  --bg:#171009; --paper:#221a10; --ink:#f2e7d3; --muted:#cdbfa4; --line:#3a2e1f;
+  --verm:#ff6a45; --verm-ink:#171009; --gold:#e7be6a; --gold-ink:#171009;
+  --phone:#2b3646; --phone-head:#11161f; --phone-head-ink:#f2e7d3;
+  --me:#3f7a2c; --me-ink:#eaffdf; --them:#3a3127; --them-ink:#f2e7d3; --sys:rgba(255,255,255,.14); --sys-ink:#f2e7d3;
+  --hit:#5a4a14;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--font);overflow-x:hidden}
+body.th{line-height:1.7}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+a{color:var(--verm)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.nw{white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* top */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;letter-spacing:-.01em}
+.mark i{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#1b1b1f,#b5432a);color:#faf7f2;font:400 22px/1 Georgia,serif;font-style:normal}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--paper)}
+.lang button{border:0;background:none;padding:8px 14px;min-height:40px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;padding:10px 0 36px;align-items:start}
+.hero .lead{margin-bottom:0}
+.facts{order:2}
+@media (min-width:860px){.hero{grid-template-columns:minmax(0,1fr) 400px;grid-template-areas:"intro phone" "facts phone";column-gap:48px;padding-top:36px}.hero>div:first-child{grid-area:intro}.facts{grid-area:facts}.pwrap{grid-area:phone}}
+h1{font-size:clamp(30px,7vw,60px);line-height:1.02;letter-spacing:-.03em;margin:0 0 14px;font-weight:800;text-wrap:balance}
+body.th h1{letter-spacing:0;line-height:1.2}
+.lead{font-size:clamp(18px,2.4vw,21px);color:var(--muted);margin:0 0 22px;max-width:34em}
+.count{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:460px}
+.count div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px}
+.count b{display:block;font-size:40px;line-height:1;font-weight:800}
+.count div:last-child b{color:var(--verm)}
+.count span{font-size:15px;color:var(--muted)}
+.sample{display:inline-block;margin-top:18px;font-size:14px;color:var(--muted);border-left:4px solid var(--gold);padding:2px 0 2px 10px}
+
+/* phone */
+.phone{background:var(--phone);border-radius:28px;box-shadow:var(--shadow);overflow:hidden;border:6px solid var(--ink);max-width:400px;width:100%;justify-self:center}
+.phead{display:flex;align-items:center;gap:10px;background:var(--phone-head);color:var(--phone-head-ink);padding:12px 14px}
+.phead .av{width:36px;height:36px;border-radius:50%;background:#6c8f5a;display:grid;place-items:center;font-weight:800;flex:none}
+.phead b{display:block;font-size:15px;line-height:1.2}
+.phead small{font-size:12px;opacity:.75}
+.feed{height:min(430px,52vh);min-height:300px;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.sysmsg{align-self:center;background:var(--sys);color:var(--sys-ink);font-size:13px;padding:4px 12px;border-radius:999px;text-align:center;max-width:92%}
+.row{display:flex;gap:8px;align-items:flex-end;max-width:94%}
+.row.me{align-self:flex-end;flex-direction:row-reverse}
+.row .av{width:30px;height:30px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff;background:var(--verm)}
+.bub{background:var(--them);color:var(--them-ink);border-radius:16px;padding:9px 12px;font-size:15px;line-height:1.45}
+.row.me .bub{background:var(--me);color:var(--me-ink)}
+.bub .nm{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:2px}
+.bub p{margin:0 0 8px}
+.quote{display:block;width:100%;text-align:left;border:1px solid var(--line);border-left:4px solid var(--verm);background:var(--paper);color:var(--ink);border-radius:10px;padding:8px 10px;margin:6px 0 0;cursor:pointer;font-size:14px;line-height:1.4}
+.quote em{display:block;font-style:normal;font-size:12px;color:var(--muted);margin-bottom:2px}
+.quote:hover{border-color:var(--verm)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 12px 4px;background:var(--phone);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:0;border-radius:999px;background:var(--paper);color:var(--ink);padding:8px 14px;min-height:40px;cursor:pointer;font-size:14px;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.ask{display:flex;gap:8px;padding:10px 12px 12px;background:var(--phone)}
+.ask input{flex:1;min-width:0;border:0;border-radius:999px;padding:12px 16px;background:var(--paper);color:var(--ink);font-size:16px}
+.ask button{border:0;border-radius:999px;background:#06c755;color:#fff;font-weight:600;padding:0 18px;min-height:46px;cursor:pointer}
+.typing{display:inline-flex;gap:4px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:b 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes b{0%,60%,100%{opacity:.3}30%{opacity:1}}
+.under{font-size:14px;color:var(--muted);text-align:center;margin:10px auto 0;max-width:400px}
+
+/* sections */
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(26px,4.4vw,38px);line-height:1.1;letter-spacing:-.02em;margin:0 0 6px;font-weight:800}
+body.th h2{letter-spacing:0;line-height:1.3}
+.sub{color:var(--muted);margin:0 0 18px}
+.topics{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.topics button{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 14px;min-height:44px;cursor:pointer;font-size:15px}
+.topics button b{color:var(--verm);margin-left:4px}
+.topics button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.topics button[aria-pressed="true"] b{color:var(--gold)}
+.find{display:flex;gap:8px;margin-bottom:14px}
+.find input{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--paper);font-size:16px}
+.summary{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:12px 14px;margin:0 0 14px}
+.summary b{display:block;font-size:13px;color:var(--muted);font-weight:600;margin-bottom:2px}
+.log{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.log li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px;transition:background .6s}
+.log li.hit{background:var(--hit)}
+.log .who{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:14px;color:var(--muted);margin-bottom:4px}
+.log .who b{color:var(--ink);font-size:15px}
+.log .tag{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+.log p{margin:0}
+.empty{color:var(--muted)}
+.more{margin-top:12px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.steps li{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px}
+.steps .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--verm);color:var(--verm-ink);font-weight:800;font-size:20px;margin-bottom:10px}
+.steps h3{margin:0 0 4px;font-size:19px}
+.steps p{margin:0;color:var(--muted);font-size:16px}
+
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:15px}
+footer p{margin:0 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="https://hongdam.net/"><i aria-hidden="true">ฮ</i>Hongdam</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="th" aria-pressed="false" lang="th">ไทย</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1 data-t="h1">Joined today? The group remembers.</h1>
+        <p class="lead" data-t="lead">A desk for a volunteer LINE group. A new member asks a question and gets what the group already said, with who said it and when.</p>
+      </div>
+      <div class="facts">
+        <div class="count">
+          <div><b>0</b><span data-t="c1">old messages LINE shows a new member</span></div>
+          <div><b id="n-all">29</b><span data-t="c2">old messages the desk shows, in 10 topics</span></div>
+        </div>
+        <p class="sample" data-t="sample">Sample chat. The people and messages are made up.</p>
+      </div>
+
+      <div class="pwrap">
+        <div class="phone" role="region" aria-labelledby="ph-name">
+          <div class="phead">
+            <span class="av" aria-hidden="true">LV</span>
+            <span><b id="ph-name" data-t="group">Liaison Volunteers · North</b><small data-t="members">38 members · sample</small></span>
+          </div>
+          <div class="feed" id="feed" aria-live="polite">
+            <div class="sysmsg" data-t="joined">You joined the group today</div>
+            <div class="sysmsg" data-t="nohist">LINE shows nothing from before you joined</div>
+            <div class="row"><span class="av" aria-hidden="true" style="background:#b5432a">ฮ</span>
+              <div class="bub"><span class="nm" data-t="deskname">Desk (bot)</span><p data-t="hello">Welcome. Ask me anything the group has talked about. Type it below, or tap a question.</p></div>
+            </div>
+          </div>
+          <div class="chips" id="chips" role="group" aria-label="Sample questions"></div>
+          <form class="ask" id="ask">
+            <label class="sr" for="q" data-t="asklabel">Your question</label>
+            <input id="q" autocomplete="off" enterkeyhint="send" placeholder="Ask the group…" data-tp="ph">
+            <button type="submit" data-t="send">Send</button>
+          </form>
+        </div>
+        <p class="under" data-t="under">In LINE, a member types @desk and the question. The same answer comes back inside the group.</p>
+      </div>
+    </div>
+
+    <section id="all" aria-labelledby="h-all">
+      <h2 id="h-all" data-t="h2a">Everything the group said, filed</h2>
+      <p class="sub" data-t="suba">Each message lands in a topic as it is posted. Tap a topic, or search.</p>
+      <div class="topics" id="topics" role="group" aria-label="Topics"></div>
+      <div class="find">
+        <label class="sr" for="f" data-t="findlabel">Search the chat</label>
+        <input id="f" type="search" autocomplete="off" placeholder="Search: passport, widow, ballot…" data-tp="fph">
+      </div>
+      <div class="summary" id="sum" hidden></div>
+      <ol class="log" id="log"></ol>
+      <button class="more" id="more" type="button" hidden data-t="more">Show all</button>
+    </section>
+
+    <section aria-labelledby="h-how">
+      <h2 id="h-how" data-t="h2b">How a group starts</h2>
+      <p class="sub" data-t="subb">About an hour, once.</p>
+      <ol class="steps">
+        <li><span class="n" aria-hidden="true">1</span><h3 data-t="s1h">Add the desk to the group</h3><p data-t="s1p">An admin adds the desk to the LINE group, like adding a member. From then on it files each new message.</p></li>
+        <li><span class="n" aria-hidden="true">2</span><h3 data-t="s2h">Send the old chat once</h3><p data-t="s2p">In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are filed too.</p></li>
+        <li><span class="n" aria-hidden="true">3</span><h3 data-t="s3h">New members ask</h3><p data-t="s3p">In the group with @desk, or on a page like this one. Questions nobody has answered yet go to the person who covers that subject.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p data-t="foot1">Made for Joe by Hongdam, Chiang Rai.</p>
+    <p data-t="foot2">Sample chat: the people and messages are made up. For the facts in a real case, check the consulate's own pages.</p>
+    <p><a href="https://hongdam.net/">hongdam.net</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var T={
+ en:{h1:"Joined today? The group remembers.",lead:"A desk for a volunteer LINE group. A new member asks a question and gets what the group already said, with who said it and when.",
+  c1:"old messages LINE shows a new member",c2:"old messages the desk shows, in 10 topics",sample:"Sample chat. The people and messages are made up.",
+  group:"Liaison Volunteers · North",members:"38 members · sample",joined:"You joined the group today",nohist:"LINE shows nothing from before you joined",
+  deskname:"Desk (bot)",hello:"Welcome. Ask me anything the group has talked about. Type it below, or tap a question.",
+  asklabel:"Your question",ph:"Ask the group…",send:"Send",under:"In LINE, a member types @desk and the question. The same answer comes back inside the group.",
+  h2a:"Everything the group said, filed",suba:"Each message lands in a topic as it is posted. Tap a topic, or search.",findlabel:"Search the chat",fph:"Search: passport, widow, ballot…",
+  more:"Show all",all:"All",h2b:"How a group starts",subb:"About an hour, once.",
+  s1h:"Add the desk to the group",s1p:"An admin adds the desk to the LINE group, like adding a member. From then on it files each new message.",
+  s2h:"Send the old chat once",s2p:"In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are filed too.",
+  s3h:"New members ask",s3p:"In the group with @desk, or on a page like this one. Questions nobody has answered yet go to the person who covers that subject.",
+  foot1:"Made for Joe by Hongdam, Chiang Rai.",foot2:"Sample chat: the people and messages are made up. For the facts in a real case, check the consulate's own pages.",
+  from:"From the chat:",short:"Short answer",found:"found in",msgs:"messages",msg:"message",none:"Nobody in the group has written about that yet. I've asked in the group and tagged ",noneany:"Nobody in the group has written about that yet. I've asked the group for you.",
+  nohits:"No messages match.",inchat:"Show in chat"},
+ th:{h1:"<span class=nw>เพิ่งเข้ากลุ่มวันนี้?</span> <span class=nw>กลุ่มยังจำได้</span>",lead:"ผู้ช่วยสำหรับกลุ่มไลน์อาสาสมัคร สมาชิกใหม่ถามคำถาม แล้วได้คำตอบจากที่กลุ่มเคยคุยกันไว้ พร้อมบอกว่าใครพูด และพูดเมื่อไร",
+  c1:"ข้อความเก่าที่ไลน์ให้สมาชิกใหม่เห็น",c2:"ข้อความเก่าที่ผู้ช่วยเปิดให้ดู แยกเป็น 10 เรื่อง",sample:"แชตตัวอย่าง ชื่อคนและข้อความเป็นเรื่องสมมติ",
+  group:"อาสาสมัครประสานงาน · ภาคเหนือ",members:"สมาชิก 38 คน · ตัวอย่าง",joined:"คุณเข้ากลุ่มวันนี้",nohist:"ไลน์ไม่แสดงข้อความก่อนที่คุณเข้ากลุ่ม",
+  deskname:"ผู้ช่วย (บอท)",hello:"ยินดีต้อนรับค่ะ ถามเรื่องที่กลุ่มเคยคุยกันได้เลย พิมพ์ด้านล่าง หรือแตะคำถาม",
+  asklabel:"คำถามของคุณ",ph:"ถามกลุ่ม…",send:"ส่ง",under:"ในไลน์ สมาชิกพิมพ์ @desk ตามด้วยคำถาม แล้วได้คำตอบเดียวกันในกลุ่ม",
+  h2a:"ทุกอย่างที่กลุ่มเคยคุย จัดเข้าแฟ้มแล้ว",suba:"ทุกข้อความถูกจัดเข้าเรื่องทันทีที่โพสต์ แตะเรื่องที่ต้องการ หรือค้นหา",findlabel:"ค้นหาในแชต",fph:"ค้นหา: พาสปอร์ต ม่าย เลือกตั้ง…",
+  more:"ดูทั้งหมด",all:"ทั้งหมด",h2b:"เริ่มใช้กับกลุ่มอย่างไร",subb:"ใช้เวลาประมาณหนึ่งชั่วโมง ครั้งเดียว",
+  s1h:"เพิ่มผู้ช่วยเข้ากลุ่ม",s1p:"แอดมินเพิ่มผู้ช่วยเข้ากลุ่มไลน์ เหมือนเพิ่มสมาชิก จากนั้นทุกข้อความใหม่จะถูกจัดเข้าแฟ้ม",
+  s2h:"ส่งแชตเก่าครั้งเดียว",s2p:"ในกลุ่ม: เมนู › การตั้งค่า › ส่งออกประวัติการแชต ไลน์จะทำเป็นไฟล์ข้อความ ส่งไฟล์นั้นให้ผู้ช่วย ข้อความเก่าก็จะเข้าแฟ้มด้วย",
+  s3h:"สมาชิกใหม่ถามได้เลย",s3p:"ถามในกลุ่มด้วย @desk หรือบนหน้าเว็บแบบนี้ คำถามที่ยังไม่มีใครตอบ จะส่งไปหาคนที่ดูแลเรื่องนั้น",
+  foot1:"ทำให้คุณโจ โดยหงส์แดง เชียงราย",foot2:"แชตตัวอย่าง: ชื่อคนและข้อความเป็นเรื่องสมมติ ข้อมูลสำหรับเรื่องจริง โปรดดูจากเว็บไซต์ของสถานกงสุล",
+  from:"จากแชต:",short:"คำตอบสั้น ๆ",found:"พบใน",msgs:"ข้อความ",msg:"ข้อความ",none:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ผู้ช่วยถามในกลุ่มให้แล้ว และแท็ก ",noneany:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ผู้ช่วยถามในกลุ่มให้แล้ว",
+  nohits:"ไม่พบข้อความที่ตรงกัน",inchat:"ดูในแชต"}
+};
+
+// Topics: name, short answer, who covers it, search words (English and Thai).
+var TOPICS={
+ passport:{en:"Passports",th:"หนังสือเดินทาง",owner:"Pat",
+  s_en:"Appointments are booked online; walk-ins are turned away. A renewal takes the old passport, the form and a US-size 2×2 inch photo. A lost passport needs a police report before the consulate. A Thai visa in the old passport moves at immigration afterwards.",
+  s_th:"นัดคิวทางออนไลน์ ไม่รับวอล์กอิน การต่ออายุใช้พาสปอร์ตเล่มเก่า แบบฟอร์ม และรูปขนาดอเมริกัน 2×2 นิ้ว พาสปอร์ตหายต้องมีใบแจ้งความก่อนไปสถานกงสุล วีซ่าไทยในเล่มเก่าย้ายที่ตรวจคนเข้าเมืองภายหลัง",
+  w:"passport passports renew renewal renewing lost stolen photo expired expire expiring ds-82 พาสปอร์ต หนังสือเดินทาง หมดอายุ ต่ออายุ ทำหาย หาย รูป"},
+ death:{en:"Deaths and widows",th:"การเสียชีวิตและภรรยาหม้าย",owner:"Sue",
+  s_en:"Thai death certificate, translated, then the consulate for the Consular Report of Death Abroad. Social Security takes back payments made after a death. A spouse's survivor benefits go through the Federal Benefits Unit in Manila. VA survivor benefits (DIC) are a separate claim.",
+  s_th:"ใบมรณบัตรไทย แปลเป็นภาษาอังกฤษ แล้วไปสถานกงสุลเพื่อขอ Consular Report of Death Abroad เงิน Social Security ที่เข้าหลังเสียชีวิตจะถูกเรียกคืน เงินของคู่สมรสยื่นผ่าน Federal Benefits Unit ที่มะนิลา ส่วนเงินของ VA (DIC) เป็นอีกคำขอหนึ่ง",
+  w:"death dead died dies dying passed away widow widows widower survivor survivors funeral husband wife spouse dic report เสียชีวิต ตาย เสีย ม่าย หม้าย ภรรยา สามี คู่สมรส งานศพ มรณบัตร"},
+ money:{en:"Social Security and VA",th:"Social Security และ VA",owner:"Bill",
+  s_en:"Social Security for people in Thailand is handled by the Federal Benefits Unit in Manila. Payments that land after a death are taken back. Veterans' care abroad goes through the VA Foreign Medical Program.",
+  s_th:"Social Security ของคนที่อยู่ไทย ดูแลโดย Federal Benefits Unit ที่มะนิลา เงินที่เข้าหลังผู้รับเสียชีวิตจะถูกเรียกคืน การรักษาของทหารผ่านศึกในต่างประเทศ ผ่าน VA Foreign Medical Program",
+  w:"social security ssa pension pensions benefit benefits payment payments money va veteran veterans vet vets fbu manila proof life บำนาญ เงิน ทหารผ่านศึก ประกันสังคม"},
+ vote:{en:"Voting",th:"เลือกตั้ง",owner:"Ken",
+  s_en:"The FPCA goes in every year at FVAP.gov. With no ballot by early October, the backup write-in ballot (FWAB) works. Ken covers voting.",
+  s_th:"แบบฟอร์ม FPCA ส่งทุกปีที่ FVAP.gov ถ้าต้นเดือนตุลาคมยังไม่ได้บัตร ใช้บัตรสำรอง FWAB ได้ คุณเคนดูแลเรื่องเลือกตั้ง",
+  w:"vote voting voter ballot ballots election elections fvap fpca fwab absentee เลือกตั้ง บัตรเลือกตั้ง ลงคะแนน"},
+ scam:{en:"Scams",th:"มิจฉาชีพ",owner:"Bill",
+  s_en:"The embassy does not phone asking for money or bank numbers. ID.me costs nothing; people charging to 'help' with ID.me are not from ID.me.",
+  s_th:"สถานทูตไม่โทรมาขอเงินหรือเลขบัญชี ID.me ไม่มีค่าใช้จ่าย คนที่เก็บเงินเพื่อ 'ช่วย' ทำ ID.me ไม่ใช่คนของ ID.me",
+  w:"scam scams scammer fraud fake phishing call calling phone caller id.me idme fee หลอก มิจฉาชีพ โกง โทร แก๊งคอล ปลอม"},
+ health:{en:"Doctors and hospitals",th:"หมอและโรงพยาบาล",owner:"Joan",
+  s_en:"The consulate site lists doctors and hospitals in the north. Veterans register with VA's Foreign Medical Program; claims need itemized receipts in English, which hospital billing desks print on request.",
+  s_th:"เว็บไซต์สถานกงสุลมีรายชื่อหมอและโรงพยาบาลในภาคเหนือ ทหารผ่านศึกลงทะเบียนกับ Foreign Medical Program ของ VA การเบิกต้องใช้ใบเสร็จแยกรายการเป็นภาษาอังกฤษ ขอได้ที่ฝ่ายการเงินของโรงพยาบาล",
+  w:"doctor doctors hospital hospitals clinic medical sick health fmp receipt receipts bill billing insurance หมอ โรงพยาบาล คลินิก ป่วย ใบเสร็จ รักษา"},
+ emergency:{en:"Emergencies and arrests",th:"เหตุฉุกเฉินและการถูกจับ",owner:"Pat",
+  s_en:"A person arrested can ask police to tell the consulate. The consulate keeps a list of lawyers. After hours, the duty officer number is on the consulate contact page.",
+  s_th:"คนที่ถูกจับขอให้ตำรวจแจ้งสถานกงสุลได้ สถานกงสุลมีรายชื่อทนาย นอกเวลาทำการ เบอร์เจ้าหน้าที่เวรอยู่ในหน้าติดต่อของสถานกงสุล",
+  w:"emergency emergencies arrest arrested jail police lawyer lawyers night after hours duty urgent ฉุกเฉิน ถูกจับ ตำรวจ ทนาย คุก ด่วน กลางคืน"},
+ docs:{en:"Notary and documents",th:"รับรองเอกสาร",owner:"Ken",
+  s_en:"Notary is by appointment, and the document is signed in front of the officer. Pension plans differ on which notary they accept for proof of life.",
+  s_th:"รับรองเอกสารต้องนัดก่อน และเซ็นต่อหน้าเจ้าหน้าที่ กองทุนบำนาญแต่ละแห่งรับโนตารีต่างกันสำหรับหนังสือรับรองการมีชีวิต",
+  w:"notary notarial notarize notarized document documents sign signature affidavit proof life letter รับรอง เอกสาร โนตารี ลายเซ็น เซ็น"},
+ alerts:{en:"Alerts (STEP)",th:"ประกาศ (STEP)",owner:"Joan",
+  s_en:"STEP (step.state.gov) sends embassy alerts by email: smoke, floods, protests.",
+  s_th:"STEP (step.state.gov) ส่งประกาศจากสถานทูตทางอีเมล: หมอกควัน น้ำท่วม การชุมนุม",
+  w:"step alert alerts warning smoke haze flood floods protest enroll register sign up แจ้งเตือน หมอกควัน ควัน น้ำท่วม ชุมนุม สมัคร"},
+ group:{en:"Group and towns",th:"กลุ่มและพื้นที่",owner:"Pat",
+  s_en:"Pat Chiang Mai, Dale Lampang, Sue Chiang Rai, Ray Pai and Mae Hong Son, Ken Lamphun, Joan Nan, Bill Phrae. Town hall in Chiang Mai in the second week of January.",
+  s_th:"แพท เชียงใหม่ เดล ลำปาง ซู เชียงราย เรย์ ปายและแม่ฮ่องสอน เคน ลำพูน โจน น่าน บิล แพร่ ประชุมใหญ่ที่เชียงใหม่สัปดาห์ที่สองของมกราคม",
+  w:"who covers town towns area meeting town hall welcome new member members volunteer volunteers ใคร พื้นที่ ประชุม สมาชิก อาสา"}
+};
+
+// Sample chat. Made-up people; facts kept general.
+var MSG=[
+ ["2025-03-08","Pat","Chiang Mai","group","Welcome all. Rough split for now: Dale Lampang, Sue Chiang Rai, Ray Pai and Mae Hong Son, Ken Lamphun, Joan Nan, Bill Phrae, me Chiang Mai."],
+ ["2025-03-11","Pat","Chiang Mai","passport","Heads up for anyone helping with passports: the Chiang Mai consulate wants an online appointment first. Walk-ins get turned around at the gate."],
+ ["2025-03-11","Dale","Lampang","passport","Same for my neighbour last month. He booked on the consulate website and got a slot 9 days out."],
+ ["2025-03-20","Joan","Nan","alerts","Get people signed up for STEP (step.state.gov). Embassy alerts go to their email: floods, smoke season, protests."],
+ ["2025-04-15","Ray","Pai","health","The consulate site has a list of doctors and hospitals in the north. Easier than guessing. Pai cases usually go to Chiang Mai."],
+ ["2025-05-06","Joan","Nan","death","Sad one this week: a vet in Nan passed at home. What worked: hospital death certificate (Thai), translated, then the consulate for the Consular Report of Death Abroad. The family needs that report for US banks and Social Security."],
+ ["2025-05-06","Bill","Phrae","money","Add: tell Social Security early. Payments that land after the death get pulled back from the account, and the widow is left sorting it out."],
+ ["2025-06-18","Pat","Chiang Mai","emergency","If a US citizen is arrested, they can ask the police to tell the consulate. We don't give legal advice; point families to the consulate's list of lawyers."],
+ ["2025-07-21","Bill","Phrae","scam","SCAM going round: someone phoning widows, saying they're 'from the embassy' and a pension is frozen until a fee is paid. The embassy doesn't phone asking for money. Hang up."],
+ ["2025-08-02","Sue","Chiang Rai","passport","Renewal tip from today: bring the old passport, the filled form, and a printed 2×2 inch photo. Photo shops here make Thai size by default; ask for US size."],
+ ["2025-08-19","Ken","Lamphun","docs","Notarial services are by appointment too. Don't sign the document before you get there. You sign in front of the officer."],
+ ["2025-09-02","Ken","Lamphun","vote","Election reminder: overseas voters send the FPCA form every year, through FVAP.gov. Takes ten minutes."],
+ ["2025-10-03","Joan","Nan","health","VA Foreign Medical Program pays for service-connected care abroad. The vet registers with FMP first, then claims go in with the Thai hospital receipts."],
+ ["2025-11-14","Noi","Mae Rim","death","สามีเสียแล้วค่ะ เงิน Social Security ของเขา ฉันขอต่อได้ไหมคะ (My husband has died. Can I claim his Social Security?)"],
+ ["2025-11-14","Sue","Chiang Rai","death","Noi, I'm so sorry. Survivor benefits for a spouse in Thailand go through the Federal Benefits Unit, which sits at the embassy in Manila. I'll sit with you to fill in the form. Message me."],
+ ["2025-12-01","Pat","Chiang Mai","group","Town hall in Chiang Mai is set for the second week of January. Consulate staff will be there. Bring questions from your towns."],
+ ["2026-01-12","Sue","Chiang Rai","scam","Another one: fake ID.me 'helpers' on Facebook charging 3,000 baht. ID.me itself costs nothing."],
+ ["2026-02-19","Ray","Pai","passport","Lost passport case in Pai. Police report first (ใบแจ้งความ) at the local station, then the consulate. They got an emergency passport the same week."],
+ ["2026-03-03","Sue","Chiang Rai","emergency","After hours, the embassy has a duty officer for emergencies. The number is on the consulate contact page. Save it in your phone now, not at 2am."],
+ ["2026-03-15","Ray","Pai","alerts","Smoke season alert came through STEP today. Good reminder to check on the older folks."],
+ ["2026-04-08","Dale","Lampang","death","For a veteran's widow: VA survivor benefits (DIC) are a separate claim from Social Security. Two claims, two offices. Keep copies of the death report for both."],
+ ["2026-05-27","Dale","Lampang","health","Lampang hospital billing will print receipts in English if you ask at the counter. FMP wants itemized ones."],
+ ["2026-06-30","Wanida","Chiang Mai","passport","คุณลุงที่บ้านพาสปอร์ตหมดอายุ ยังอยู่ไทยต่อได้ไหมคะ (My uncle's passport has expired. Can he stay in Thailand?)"],
+ ["2026-06-30","Pat","Chiang Mai","passport","Wanida, his Thai visa is in the old passport. After the renewal he takes both passports to immigration to move the stamp. Consulate first, immigration second."],
+ ["2026-07-14","Bill","Phrae","docs","Proof of life letters for pensions: some US pension plans accept a Thai notary, some want the consulate. Ask the plan first."],
+ ["2026-08-25","Wanida","Chiang Mai","scam","มีคนโทรมาอ้างว่าเป็นสถานทูต ขอเลขบัญชี ระวังนะคะ (Someone called claiming to be the embassy and asked for a bank account number. Be careful.)"],
+ ["2026-09-10","Ken","Lamphun","vote","Ballots for November are going out. If yours hasn't come by early October, FVAP has the backup write-in ballot (FWAB)."],
+ ["2026-09-11","Pat","Chiang Mai","vote","Ken is our voting person. Send people to him."],
+ ["2026-10-20","Pat","Chiang Mai","group","New members joining this week. Please be patient when the same questions come up. Most of the answers are somewhere up there."]
+].map(function(m,i){return {i:i,d:m[0],who:m[1],town:m[2],t:m[3],x:m[4]};});
+
+var QS=[
+ {en:"How do I renew a passport?",th:"ต่ออายุพาสปอร์ตอย่างไร"},
+ {en:"A veteran died. What do we do?",th:"ทหารผ่านศึกเสียชีวิต ต้องทำอะไร"},
+ {en:"Someone called saying they're the embassy",th:"มีคนโทรมาอ้างว่าเป็นสถานทูต"},
+ {en:"How do I vote from here?",th:"ลงคะแนนเลือกตั้งจากที่นี่อย่างไร"},
+ {en:"Which hospital takes vets?",th:"โรงพยาบาลไหนรับทหารผ่านศึก"},
+ {en:"Who covers Chiang Rai?",th:"ใครดูแลเชียงราย"}
+];
+
+var lang="en";
+try{var s=localStorage.getItem("joe-lang");if(s==="th"||s==="en")lang=s;else if(/^th/i.test(navigator.language||""))lang="th";}catch(e){if(/^th/i.test(navigator.language||""))lang="th";}
+var cur="all";
+var $=function(id){return document.getElementById(id);};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function t(k){return T[lang][k];}
+var MON={en:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],th:["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."]};
+function when(d){var p=d.split("-");var y=+p[0],m=+p[1]-1,dd=+p[2];return lang==="th"?dd+" "+MON.th[m]+" "+(y+543):dd+" "+MON.en[m]+" "+y;}
+function tname(k){return TOPICS[k][lang];}
+
+// search
+var WORD={};
+Object.keys(TOPICS).forEach(function(k){TOPICS[k].w.split(/\s+/).forEach(function(w){(WORD[w]=WORD[w]||[]).push(k);});});
+var STOP={"the":1,"a":1,"an":1,"i":1,"do":1,"we":1,"what":1,"how":1,"is":1,"to":1,"of":1,"in":1,"for":1,"my":1,"and":1,"from":1,"here":1,"it":1,"they":1,"re":1,"a":1,"can":1,"does":1,"which":1,"who":1,"on":1,"at":1,"be":1,"saying":1,"someone":1,"get":1,"where":1,"when":1,"why":1,"about":1,"his":1,"her":1,"there":1,"this":1,"that":1,"with":1,"any":1,"buy":1,"me":1,"you":1,"your":1,"our":1,"was":1,"has":1,"have":1,"need":1};
+function terms(q){
+  q=q.toLowerCase().replace(/@desk/g," ");
+  var out=q.split(/[^a-z0-9฀-๿.\-]+/).map(function(w){return w.replace(/^[.\-]+|[.\-]+$/g,"");}).filter(function(w){return w&&!STOP[w]&&w.length>1;});
+  // Thai has no spaces: also match any Thai topic word found inside the text
+  Object.keys(WORD).forEach(function(w){if(/[฀-๿]/.test(w)&&q.indexOf(w)>=0&&out.indexOf(w)<0)out.push(w);});
+  return out;
+}
+function rank(q){
+  var ws=terms(q),topicScore={},hits=[];
+  ws.forEach(function(w){(WORD[w]||[]).forEach(function(k){topicScore[k]=(topicScore[k]||0)+1;});
+    if(w==="who"||w==="covers")topicScore.group=(topicScore.group||0)+1;});
+  MSG.forEach(function(m){
+    var x=m.x.toLowerCase(),s=0;
+    ws.forEach(function(w){if(w.length<3)return;var hit=/[\u0E00-\u0E7F]/.test(w)?x.indexOf(w)>=0:new RegExp("(^|[^a-z0-9])"+w.replace(/[.\-]/g,"\\$&")).test(x);if(hit)s+=2;});
+    if(topicScore[m.t])s+=topicScore[m.t]*1.5;
+    if(ws.some(function(w){return m.town.toLowerCase().indexOf(w)>=0;}))s+=1;
+    if(s>0)hits.push({m:m,s:s});
+  });
+  hits.sort(function(a,b){return b.s-a.s||(a.m.d<b.m.d?1:-1);});
+  var sum={};hits.forEach(function(h){sum[h.m.t]=(sum[h.m.t]||0)+h.s;});
+  if(!hits.length)sum=topicScore;
+  var best=null,bs=0;Object.keys(sum).forEach(function(k){if(sum[k]>bs){bs=sum[k];best=k;}});
+  return {topic:best,hits:hits,ws:ws};
+}
+
+// phone
+var feed=$("feed");
+function addRow(html,me){
+  var r=document.createElement("div");r.className="row"+(me?" me":"");
+  r.innerHTML=me?'<div class="bub">'+html+'</div>':'<span class="av" aria-hidden="true" style="background:#b5432a">ฮ</span><div class="bub"><span class="nm">'+esc(t("deskname"))+'</span>'+html+'</div>';
+  feed.appendChild(r);feed.scrollTop=feed.scrollHeight;return r;
+}
+var busy=false;
+function ask(q){
+  q=q.trim();if(!q||busy)return;busy=true;
+  addRow(esc(q),true);
+  var wait=addRow('<span class="typing" aria-label="…"><i></i><i></i><i></i></span>');
+  setTimeout(function(){
+    wait.remove();
+    var r=rank(q),top=r.hits.slice(0,3),h="";
+    if(!top.length){
+      var own=r.topic?TOPICS[r.topic].owner:null;
+      h='<p>'+esc(own?t("none")+own+".":t("noneany"))+'</p>';
+    }else{
+      var tp=TOPICS[r.topic||top[0].m.t];
+      var n=r.hits.filter(function(x){return x.m.t===(r.topic||top[0].m.t);}).length||top.length;
+      h='<p><b>'+esc(t("short"))+'</b> · '+esc(t("found"))+' '+n+' '+esc(n===1?t("msg"):t("msgs"))+'<br>'+esc(lang==="th"?tp.s_th:tp.s_en)+'</p><p style="margin:0">'+esc(t("from"))+'</p>';
+      top.forEach(function(x){var m=x.m;
+        h+='<button type="button" class="quote" data-go="'+m.i+'"><em>'+esc(m.who)+' · '+esc(m.town)+' · '+esc(when(m.d))+'</em>'+esc(m.x.length>150?m.x.slice(0,147)+"…":m.x)+'</button>';});
+    }
+    addRow(h);busy=false;
+  },650);
+}
+$("ask").addEventListener("submit",function(e){e.preventDefault();var q=$("q");ask(q.value);q.value="";});
+feed.addEventListener("click",function(e){var b=e.target.closest("[data-go]");if(b)go(+b.getAttribute("data-go"));});
+function chips(){
+  var c=$("chips");c.innerHTML="";
+  QS.forEach(function(q){var b=document.createElement("button");b.type="button";b.textContent=q[lang];b.onclick=function(){ask(q[lang]);};c.appendChild(b);});
+}
+
+// archive
+var showAll=false;
+function topics(){
+  var c=$("topics"),counts={};MSG.forEach(function(m){counts[m.t]=(counts[m.t]||0)+1;});
+  var keys=["all"].concat(Object.keys(TOPICS));c.innerHTML="";
+  keys.forEach(function(k){var b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed",String(cur===k));
+    b.innerHTML=esc(k==="all"?t("all"):tname(k))+'<b>'+(k==="all"?MSG.length:counts[k])+'</b>';
+    b.onclick=function(){cur=k;$("f").value="";showAll=false;topics();list();};c.appendChild(b);});
+}
+function li(m){
+  return '<li id="m'+m.i+'"><div class="who"><b>'+esc(m.who)+'</b><span>'+esc(m.town)+'</span><time datetime="'+m.d+'">'+esc(when(m.d))+'</time><span class="tag">'+esc(tname(m.t))+'</span></div><p>'+esc(m.x)+'</p></li>';
+}
+function list(){
+  var q=$("f").value.trim(),rows,sum=$("sum");
+  if(q){var r=rank(q);rows=r.hits.map(function(x){return x.m;});
+    if(r.topic&&rows.length){sum.hidden=false;sum.innerHTML='<b>'+esc(t("short"))+' · '+esc(tname(r.topic))+'</b>'+esc(lang==="th"?TOPICS[r.topic].s_th:TOPICS[r.topic].s_en);}else sum.hidden=true;}
+  else{rows=MSG.filter(function(m){return cur==="all"||m.t===cur;}).slice().reverse();
+    if(cur!=="all"){sum.hidden=false;sum.innerHTML='<b>'+esc(t("short"))+'</b>'+esc(lang==="th"?TOPICS[cur].s_th:TOPICS[cur].s_en);}else sum.hidden=true;}
+  var lim=(!q&&cur==="all"&&!showAll)?8:rows.length;
+  $("log").innerHTML=rows.length?rows.slice(0,lim).map(li).join(""):'<li class="empty">'+esc(t("nohits"))+'</li>';
+  $("more").hidden=!(rows.length>lim);
+}
+$("more").onclick=function(){showAll=true;list();};
+var ft;$("f").addEventListener("input",function(){clearTimeout(ft);ft=setTimeout(list,150);});
+function go(i){
+  var m=MSG[i];cur=m.t;$("f").value="";showAll=true;topics();list();
+  var el=$("m"+i);if(!el)return;
+  el.scrollIntoView({block:"center"});el.classList.add("hit");el.setAttribute("tabindex","-1");el.focus({preventScroll:true});
+  setTimeout(function(){el.classList.remove("hit");},2400);
+}
+
+// language
+function apply(){
+  document.documentElement.lang=lang;document.body.classList.toggle("th",lang==="th");
+  document.querySelectorAll("[data-t]").forEach(function(el){var k=el.getAttribute("data-t"),v=T[lang][k];if(v==null)return;if(k==="h1")el.innerHTML=v;else el.textContent=v;});
+  document.querySelectorAll("[data-tp]").forEach(function(el){el.placeholder=T[lang][el.getAttribute("data-tp")];});
+  document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-lang")===lang));});
+  chips();topics();list();
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){lang=b.getAttribute("data-lang");try{localStorage.setItem("joe-lang",lang);}catch(e){}apply();};});
+$("n-all").textContent=MSG.length;
+apply();
+})();
+</script>
+</body>
+</html>
