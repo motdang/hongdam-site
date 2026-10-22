@@ -451,7 +451,7 @@ var RT={
   r:{en:'GlobalGiving is a US charity: a receipt for US taxpayers.',th:'GlobalGiving เป็นองค์กรการกุศลในสหรัฐ: ใบลดหย่อนสำหรับผู้เสียภาษีสหรัฐ'}},
  ngo:{n:{en:'Direct grant from a US foundation or donor-advised fund (NGOsource)',th:'ทุนตรงจากมูลนิธิหรือกองทุน DAF ในสหรัฐ (NGOsource)'},
   s:{en:['CCA gets an equivalency determination through NGOsource, once','The donor’s fund (Fidelity, Schwab, a family foundation) grants to CCA','The grant arrives by wire'],th:['CCA ขอการรับรองเทียบเท่าผ่าน NGOsource หนึ่งครั้ง','กองทุนของผู้บริจาค (Fidelity, Schwab, มูลนิธิครอบครัว) ให้ทุน CCA','ทุนมาทางโอนเงินระหว่างประเทศ']},
-  r:{en:'The donor took the deduction when funding the donor-advised fund or foundation.',th:'ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF หรือมูลนิธิ'}},
+  r:{en:'No receipt for the grant: the donor took the deduction when funding the donor-advised fund or foundation.',th:'ทุนนี้ไม่มีใบลดหย่อน: ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF หรือมูลนิธิ'}},
  form:{n:{en:'CCA’s donate form (PayPal)',th:'แบบฟอร์มบริจาคของ CCA (PayPal)'},
   s:{en:['Use the form on culturalcrossroadsasia.org/donate','Pay by PayPal or card through PayPal','PayPal keeps its fee; the rest is in CCA’s PayPal'],th:['ใช้แบบฟอร์มที่ culturalcrossroadsasia.org/donate','จ่ายด้วย PayPal หรือบัตรผ่าน PayPal','PayPal หักค่าธรรมเนียม ส่วนที่เหลืออยู่ใน PayPal ของ CCA']},
   r:{en:'PayPal gives no tax receipt.',th:'PayPal ไม่ออกใบลดหย่อนภาษี'}},
@@ -475,7 +475,7 @@ var RT={
   r:RT_FA_R},
  daf:{n:{en:'Donor-advised fund grant to Fractured Atlas',th:'ทุนจากกองทุน DAF ให้ Fractured Atlas'},
   s:{en:['In the fund\u2019s portal (Fidelity, Schwab, Vanguard), recommend a grant to Fractured Atlas','Name Cultural Crossroads Asia in the grant note','The grant takes several weeks; Fractured Atlas keeps 8%'],th:['ในพอร์ทัลของกองทุน (Fidelity, Schwab, Vanguard) แนะนำทุนให้ Fractured Atlas','ระบุ Cultural Crossroads Asia ในหมายเหตุ','ใช้เวลาหลายสัปดาห์ Fractured Atlas หัก 8%']},
-  r:{en:'The donor took the deduction when funding the donor-advised fund.',th:'ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF'}},
+  r:{en:'No receipt for the grant: the donor took the deduction when funding the donor-advised fund.',th:'ทุนนี้ไม่มีใบลดหย่อน: ผู้บริจาคได้ลดหย่อนแล้วตอนใส่เงินเข้ากองทุน DAF'}},
  shares:{n:{en:'Shares to Fractured Atlas',th:'หุ้นให้ Fractured Atlas'},
   s:{en:['Ask Fractured Atlas for its noncash gift letter','The broker moves the shares to Fractured Atlas, naming CCA','Fractured Atlas sells them, keeps 8% and pays the rest to the project'],th:['ขอหนังสือรับบริจาคที่ไม่ใช่เงินสดจาก Fractured Atlas','โบรกเกอร์โอนหุ้นให้ Fractured Atlas โดยระบุ CCA','Fractured Atlas ขายหุ้น หัก 8% แล้วจ่ายส่วนที่เหลือให้โครงการ']},
   r:RT_FA_R},
@@ -505,7 +505,7 @@ function INFO(id){ if(id==='apps') return RT_APPS; if(id.indexOf('app:')===0){va
   s:{en:['In the '+n+' app or site, send the amount to CCA\u2019s Thai account','Its fee and rate margin come from Wise\u2019s comparison table','It pays out in baht to CCA\u2019s bank'],th:['ในแอปหรือเว็บ '+n+' ส่งเงินเข้าบัญชีไทยของ CCA','ค่าธรรมเนียมและส่วนต่างอัตรามาจากตารางเปรียบเทียบของ Wise','จ่ายเป็นเงินบาทเข้าธนาคารของ CCA']},
   r:RT.wise.r};} return RT[id]; }
 function srcOf(id){return id.indexOf('app:')===0?[11]:(SRC[id]||[]);}
-var SRC={cheque:[3,19],daf:[3],shares:[3,20],match:[21],asiaqr:[22],alipay:[4],cash:[15],fa:[1,3],caf:[6],gg:[7],ngo:[8],form:[1,10],wise:[11],wire:[11,12,13],stripe:[4,5],th:[13,14,15],edon:[15],prism:[16],spf:[17],gdg:[18]};
+var SRC={cheque:[3,19],daf:[3,22],shares:[3,20],match:[21],asiaqr:[23],ngo:[8,22],cash:[15],fa:[1,3],caf:[6],gg:[7],form:[1,10],wise:[11],wire:[11,12,13],stripe:[4,5],th:[13,14,15],edon:[15],prism:[16],spf:[17],gdg:[18]};
 
 function ln(k,v,s,t){return {k:k,v:v,s:s,t:t};}
 function build(pl,a){
@@ -525,7 +525,7 @@ function build(pl,a){
   R({id:'fa',today:true,tier:2,unk:'fa',lo:null,hi:inFA*rate,native:{c:'USD',x:inFA},time:G.faT,rc:'yes',
    lines:[ln(f(l.fee,{n:'Fractured Atlas 8%'}),'−'+M('USD',fee),1),ln(l.faIn,M('USD',inFA),0,1),a>20000?ln(l.faCap,'',3):null,ln(l.faDues,'',1)].filter(Boolean)});
   ['cheque','daf','shares'].forEach(function(id){
-   R({id:id,today:true,tier:2,unk:'fa',lo:null,hi:inFA*rate,native:{c:'USD',x:inFA},time:id==='daf'?G.dafT:G.faT,rc:'yes',
+   R({id:id,today:true,tier:2,unk:'fa',lo:null,hi:inFA*rate,native:{c:'USD',x:inFA},time:id==='daf'?G.dafT:G.faT,rc:id==='daf'?'no':'yes',
     lines:[ln(f(l.fee,{n:'Fractured Atlas 8%'}),'−'+M('USD',fee),3),ln(l.faIn,M('USD',inFA),0,1)]});});
   R({id:'match',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
   var base=Math.min(a,500000), cf=base*0.05;
@@ -562,7 +562,7 @@ function build(pl,a){
  var pf=a*0.044+(GD.PPF[cur]||0.30);
  R({id:'form',today:true,tier:2,unk:'pp',lo:null,hi:(a-pf)*rate,time:G.ppT,rc:'no',
   lines:[ln(f(l.ppF,{f:M(cur,GD.PPF[cur]||0.30)}),'−'+M(cur,pf),10),ln(l.ppC,'',10),ln(l.totalUp,'< '+M('THB',(a-pf)*rate),0,1)]});
- if(pl==='XX'){R({id:'asiaqr',today:false,tier:3,lo:null,hi:null,time:G.now,rc:'no',lines:[]}); R({id:'alipay',today:false,tier:3,lo:null,hi:null,time:G.stT,rc:'no',lines:[]});}
+ if(pl==='XX'){R({id:'asiaqr',today:false,tier:3,lo:null,hi:null,time:G.now,rc:'no',lines:[]});}
  if(pl==='UK') R({id:'prism',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
  if(pl==='CH') R({id:'spf',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
  if(pl==='AU') R({id:'gdg',today:false,tier:3,lo:null,hi:null,time:G.bankT,rc:'maybe',lines:[]});
@@ -653,7 +653,7 @@ var UL=[
  {q:{en:'The foundation’s papers in English',th:'เอกสารของมูลนิธิเป็นภาษาอังกฤษ'},
   d:{en:'Registration certificate, statutes, the board list, last year’s accounts. Every friends fund and every checker asks for these.',th:'ใบสำคัญการจดทะเบียน ข้อบังคับ รายชื่อกรรมการ บัญชีปีที่แล้ว กองทุนและผู้ตรวจสอบทุกแห่งขอเอกสารชุดนี้'},o:['caf','gg','ngo','prism','spf','gdg']},
  {q:{en:'A Stripe account in CCA’s name',th:'บัญชี Stripe ในชื่อ CCA'},
-  d:{en:'The papers above, a director’s ID, and the Thai bank account. Cards, Apple Pay and Google Pay from anywhere.',th:'เอกสารข้างต้น บัตรประชาชนของกรรมการ และบัญชีธนาคารไทย รับบัตร Apple Pay และ Google Pay จากทุกที่'},o:['stripe','alipay']},
+  d:{en:'The papers above, a director’s ID, and the Thai bank account. Cards, Apple Pay and Google Pay from anywhere.',th:'เอกสารข้างต้น บัตรประชาชนของกรรมการ และบัญชีธนาคารไทย รับบัตร Apple Pay และ Google Pay จากทุกที่'},o:['stripe']},
  {q:{en:'Who owns the collection and archive today',th:'ตอนนี้ใครเป็นเจ้าของชุดสะสมและคลังเอกสาร'},
   d:{en:'A deed of gift or a signed bequest answers it. Then objects can be given, and the Heritage Center can be named.',th:'หนังสือยกให้หรือพินัยกรรมที่ลงนามเป็นคำตอบ จากนั้นจึงรับบริจาควัตถุ และตั้งชื่อศูนย์มรดกวัฒนธรรมได้'},o:[]}
 ];
@@ -744,6 +744,7 @@ var SL=[
  ['The Song Cave, a Fractured Atlas project: cheques payable to \u201cFractured Atlas\u201d, mailed to the project','https://the-song-cave.com/pages/donate-1'],
  ['Fractured Atlas, noncash donation letter (shares and property)','https://fundraising.fracturedatlas.org/donations/noncash_donation_letter.pdf'],
  ['Benevity Causes, Fractured Atlas Productions: gifts name the fiscally sponsored project','https://causes.benevity.org/causes/840-113451703'],
+ ['Fidelity Charitable, How to thank donors who use donor-advised funds: a grant is not a tax receipt for the donor','https://www.fidelitycharitable.org/articles/how-to-thank-donors-who-use-donor-advised-funds.html'],
  ['Bank of Thailand, Cross-border payment linkages: visitors from Cambodia, Laos, Malaysia, Vietnam, Singapore, Indonesia and Hong Kong scan Thai QR codes with their own apps','https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/cross-border-payment.html']
 ];
 function renderSrc(){$('srcList').innerHTML=SL.map(function(s,i){return '<li id="s'+(i+1)+'">'+esc(s[0])+' · <a href="'+s[1]+'" target="_blank" rel="noopener">'+esc(s[1].replace(/^https?:\/\/(www\.)?/,'').split('/')[0])+'</a></li>';}).join('');}
