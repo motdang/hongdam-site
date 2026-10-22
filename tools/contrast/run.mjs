@@ -58,13 +58,14 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
 // Only GET is passed through; a failed read is a scan error.
 const LIVE = process.env.CONTRAST_LIVE || 'https://hongdam.net'
 const apiErrors = []
+const inFlight = new Set()
 async function proxy(req, res) {
   if (req.method !== 'GET') { res.writeHead(405); return res.end() }
   for (let i = 0; i < 2; i++) {
     try {
       const r = await fetch(LIVE + req.url, { signal: AbortSignal.timeout(15000), headers: { accept: req.headers.accept || '*/*' } })
       const body = Buffer.from(await r.arrayBuffer())
-      if (r.status >= 500) throw new Error(`HTTP ${r.status}`)
+      if (!r.ok) throw new Error(`HTTP ${r.status}`)
       res.writeHead(r.status, { 'content-type': r.headers.get('content-type') || 'application/json', 'access-control-allow-origin': '*' })
       return res.end(body)
     } catch (e) { if (i) { apiErrors.push(`${req.url}: ${e.message}`); res.writeHead(502); return res.end() } }
@@ -74,7 +75,12 @@ async function proxy(req, res) {
 function serve() {
   return new Promise((ok) => {
     const s = createServer((req, res) => {
-      if (req.url.startsWith('/api/')) return proxy(req, res)
+      if (req.url.startsWith('/api/')) {
+        const p = proxy(req, res).finally(() => inFlight.delete(tag))
+        const tag = { url: req.url, p }
+        inFlight.add(tag)
+        return
+      }
       let p = decodeURIComponent(new URL(req.url, 'http://x').pathname)
       let f = join(DOCS, p)
       if (!f.startsWith(DOCS)) { res.writeHead(403); return res.end() }
@@ -200,6 +206,9 @@ async function main() {
   server.close()
   try { rmSync(dir, { recursive: true, force: true, maxRetries: 3 }) } catch { /* Chrome's profile folder; the OS clears temp */ }
 
+  // reads still in flight when the last state finished: wait up to 35 s, then count them
+  if (inFlight.size) await Promise.race([Promise.allSettled([...inFlight].map((t) => t.p)), sleep(35000)])
+  for (const t of inFlight) apiErrors.push(`${t.url}: no answer`)
   for (const a of new Set(apiErrors)) errors.push(`live API read failed: ${a}`)
   console.log(`contrast: ${list.length} page${list.length === 1 ? '' : 's'}, ${states} states, ${checked} text checks`)
   for (const e of errors) console.log(`  ERROR ${e}`)
