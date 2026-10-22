@@ -19,7 +19,7 @@
 :root{
   --paper:#fffaf0; --paper2:#fff3d6; --card:#ffffff; --ink:#15183f; --muted:#51567f; --line:#eadfc4;
   --brand:#1d2b8f; --brand2:#101a63; --brand-soft:#e8ebfb; --link:#1d2b8f;
-  --red:#d5212b; --red-soft:#fde6e4;
+  --red:#d5212b; --red-ink:#b81c25; --red-soft:#fde6e4;
   --gold:#ffc20e; --gold-ink:#000; --gold-soft:#fff0b8;
   --ok:#17663a; --ok-soft:#dff3e6; --may:#8a5a00; --may-soft:#fff0c9; --no:#8a1c22; --no-soft:#fde6e4;
   --bar-bg:rgba(255,250,240,.94);
@@ -31,7 +31,7 @@
   :root:not([data-theme="light"]){
     --paper:#0c0f33; --paper2:#12165a; --card:#171b52; --ink:#f6f1e4; --muted:#b9bddf; --line:#2b3175;
     --brand:#3b4fd6; --brand2:#0a0d3a; --brand-soft:#222a74; --link:#b3beff;
-    --red:#ee4a52; --red-soft:#3a1a30;
+    --red:#d5212b; --red-ink:#ff8a90; --red-soft:#3a1a30;
     --ok:#7fe0a3; --ok-soft:#173d2b; --may:#ffd36b; --may-soft:#3d3214; --no:#ff9aa0; --no-soft:#3a1a30;
     --bar-bg:rgba(12,15,51,.94); --focus:#ffc20e;
   }
@@ -39,7 +39,7 @@
 :root[data-theme="dark"]{
   --paper:#0c0f33; --paper2:#12165a; --card:#171b52; --ink:#f6f1e4; --muted:#b9bddf; --line:#2b3175;
   --brand:#3b4fd6; --brand2:#0a0d3a; --brand-soft:#222a74; --link:#b3beff;
-  --red:#ee4a52; --red-soft:#3a1a30;
+  --red:#d5212b; --red-ink:#ff8a90; --red-soft:#3a1a30;
   --ok:#7fe0a3; --ok-soft:#173d2b; --may:#ffd36b; --may-soft:#3d3214; --no:#ff9aa0; --no-soft:#3a1a30;
   --bar-bg:rgba(12,15,51,.94); --focus:#ffc20e;
 }
@@ -92,7 +92,7 @@ html[lang="th"] .en{display:none!important}
 /* sections */
 .sec{padding:48px 0 56px}
 .sec.alt{background:var(--paper2)}
-.kick{display:block;font:700 12px/1.4 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.kick{display:block;font:700 12px/1.4 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--red-ink);margin-bottom:8px}
 .sec h2{font-size:clamp(1.8rem,5.4vw,2.8rem);margin-bottom:10px;max-width:22ch}
 .sec .lede{color:var(--muted);max-width:42rem}
 sup a{text-decoration:none;font-size:.72em;font-weight:700;margin-left:1px}
@@ -139,7 +139,7 @@ sup a{text-decoration:none;font-size:.72em;font-weight:700;margin-left:1px}
 .rcpt.yes{background:var(--ok-soft);color:var(--ok)} .rcpt.maybe{background:var(--may-soft);color:var(--may)} .rcpt.no{background:var(--no-soft);color:var(--no)}
 .note{font-size:13.5px;color:var(--muted);margin-top:14px}
 .fh{font-size:1.25rem;margin:4px 0 10px}
-.tag.why{background:var(--gold-soft);color:var(--ink)}
+.tag.why{background:var(--gold-soft);color:#000}
 .drawer{margin-top:16px;border:2px solid var(--line);border-radius:18px;background:var(--paper2)}
 .drawer summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:800;min-height:48px;display:flex;align-items:center;gap:10px}
 .drawer summary::-webkit-details-marker{display:none}
@@ -194,7 +194,7 @@ sup a{text-decoration:none;font-size:.72em;font-weight:700;margin-left:1px}
 .st.ok{background:var(--ok-soft);color:var(--ok)} .st.name{background:var(--may-soft);color:var(--may)}
 small.pm{display:none}
 @media (max-width:620px){.tbl .hm{display:none} small.pm{display:block;color:var(--muted);font-size:13px} .tbl th,.tbl td{padding:8px 6px} .tbl .st{white-space:normal;display:inline-block;line-height:1.2}}
-.samp{display:inline-block;font:700 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;background:var(--red-soft);color:var(--red);padding:4px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
+.samp{display:inline-block;font:700 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;background:var(--red-soft);color:var(--red-ink);padding:4px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
 
 /* setup */
 .opts{display:grid;gap:8px;margin:18px 0}
@@ -208,7 +208,8 @@ small.pm{display:none}
 .srcs h2{font-size:1.4rem;color:var(--ink);margin-bottom:10px}
 .srcs ol{padding-left:22px}
 .srcs li{margin-bottom:5px}
-.srcs li:target{background:var(--gold-soft)}
+.srcs li:target{background:var(--gold-soft);color:#000}
+.srcs li:target a{color:#1d2b8f}
 footer{padding:18px 0 40px;font-size:14px;color:var(--muted)}
 </style>
 </head>

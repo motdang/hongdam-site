@@ -6,6 +6,7 @@
  *   /tasks/:id/k/:token    the poster's own page: contacts, accept, Shoup, close
  *   /tasks/graph/          static, written by tools/build_tasks.py
  */
+import { TASK_CARDS } from '../_task_cards.js'
 import {
   CAT, ROOTS, KIDS, ORGS, L, ORIGIN, LAYERS, layerOf, mix, baht, iso, rungOf, lineUrl, orgSays, shoup, catBaht,
   openTasks, answersFor, createTask, createAnswer, ownTask, ownerAct, readBody,
@@ -78,12 +79,14 @@ footer{max-width:980px;margin:0 auto;padding:24px 16px 48px;color:var(--cream-di
 @media (max-width:520px){.pay{font-size:23px} h1{font-size:34px}}
 `
 
-// /tasks has its own card; the pages under it keep the shared one.
+// /tasks and each group or kind of work (/tasks/c/<id>) have their own card; a single task keeps the shared one.
 function socialCard(path) {
-  const own = path === '/tasks'
-  const img = `${ORIGIN}${own ? '/og/tasks.jpg' : '/assets/card.jpg'}`
-  const alt = own ? 'Card: Tasks, งาน, post work for people or bots, Hongdam.' : 'Hongdam หงส์ดำ, Chiang Rai'
-  return `<meta property="og:image" content="${img}">${own ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">' : ''}<meta property="og:image:alt" content="${alt}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${img}"><meta name="twitter:image:alt" content="${alt}">`
+  const kind = /^\/tasks\/c\/([a-z0-9-]+)$/.exec(path)?.[1]
+  const alt0 = path === '/tasks' ? 'Card: Tasks, งาน, post work for people or bots, Hongdam.' : kind && TASK_CARDS[kind]
+  const own = !!alt0
+  const img = `${ORIGIN}${path === '/tasks' ? '/og/tasks.jpg' : own ? `/og/tasks/${kind}.jpg` : '/assets/card.jpg'}`
+  const alt = alt0 || 'Hongdam หงส์ดำ, Chiang Rai'
+  return `<meta property="og:image" content="${img}">${own ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">' : ''}<meta property="og:image:alt" content="${e(alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${img}"><meta name="twitter:image:alt" content="${e(alt)}">`
 }
 
 function page({ title, desc, path, body, noindex }) {
