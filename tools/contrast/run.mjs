@@ -54,16 +54,33 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
   '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
   '.webp': 'image/webp', '.gif': 'image/gif', '.ico': 'image/x-icon', '.woff2': 'font/woff2', '.txt': 'text/plain' }
 
+// /api/... reads come from the live site so pages render the content people see.
+// Only GET is passed through; a failed read is a scan error.
+const LIVE = process.env.CONTRAST_LIVE || 'https://hongdam.net'
+const apiErrors = []
+async function proxy(req, res) {
+  if (req.method !== 'GET') { res.writeHead(405); return res.end() }
+  for (let i = 0; i < 2; i++) {
+    try {
+      const r = await fetch(LIVE + req.url, { signal: AbortSignal.timeout(15000), headers: { accept: req.headers.accept || '*/*' } })
+      const body = Buffer.from(await r.arrayBuffer())
+      if (r.status >= 500) throw new Error(`HTTP ${r.status}`)
+      res.writeHead(r.status, { 'content-type': r.headers.get('content-type') || 'application/json', 'access-control-allow-origin': '*' })
+      return res.end(body)
+    } catch (e) { if (i) { apiErrors.push(`${req.url}: ${e.message}`); res.writeHead(502); return res.end() } }
+  }
+}
+
 function serve() {
   return new Promise((ok) => {
     const s = createServer((req, res) => {
+      if (req.url.startsWith('/api/')) return proxy(req, res)
       let p = decodeURIComponent(new URL(req.url, 'http://x').pathname)
       let f = join(DOCS, p)
       if (!f.startsWith(DOCS)) { res.writeHead(403); return res.end() }
       if (existsSync(f) && statSync(f).isDirectory()) f = join(f, 'index.html')
       if (!existsSync(f)) {
-        // /api/... and other server routes do not exist here; pages render without them
-        res.writeHead(404, { 'content-type': 'application/json' }); return res.end('{}')
+        res.writeHead(404, { 'content-type': 'text/plain' }); return res.end('not found')
       }
       res.writeHead(200, { 'content-type': TYPES[extname(f)] || 'application/octet-stream', 'access-control-allow-origin': '*' })
       res.end(readFileSync(f))
@@ -147,8 +164,9 @@ async function main() {
         await S('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: scheme }] })
         try {
           const loaded = cdp.once('Page.loadEventFired', s)
-          await S('Page.navigate', { url: base + path })
-          await loaded
+          const nav = await S('Page.navigate', { url: base + path })
+          if (nav.errorText) throw new Error(`navigation failed: ${nav.errorText}`)
+          if (!(await loaded)) throw new Error('page did not finish loading in 20 s')
           await sleep(400)
           await evalIn('try{localStorage.clear()}catch(e){};1')
           // scroll the length of the page once so fade-ins and counters run
@@ -182,6 +200,7 @@ async function main() {
   server.close()
   try { rmSync(dir, { recursive: true, force: true, maxRetries: 3 }) } catch { /* Chrome's profile folder; the OS clears temp */ }
 
+  for (const a of new Set(apiErrors)) errors.push(`live API read failed: ${a}`)
   console.log(`contrast: ${list.length} page${list.length === 1 ? '' : 's'}, ${states} states, ${checked} text checks`)
   for (const e of errors) console.log(`  ERROR ${e}`)
   const byPage = {}

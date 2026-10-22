@@ -18,7 +18,9 @@ Her word 2026-10-22: every page under `docs/` meets WCAG AA contrast (4.5 for bo
 text, 3 for large text) at phone and desktop width, in light and dark, in English and
 Thai, at the top and scrolled, and on each tab. `node tools/contrast/run.mjs` checks
 them all in about 80 seconds; `node tools/contrast/run.mjs for/cca` checks pages whose
-path contains `for/cca`. Node 22+ and Chrome; nothing to install.
+path contains `for/cca`. Node 22+ and Chrome; nothing to install. Pages that read `/api/...` get their answers
+from live hongdam.net (GET only), so the gate sees the content people see; a failed read
+or a page that does not load fails the run.
 
 The GitHub check "gate: contrast" (`.github/workflows/gate-contrast.yml`) runs it on
 every pull request and every commit to `main`. `pr-push` waits for it and leaves the PR
