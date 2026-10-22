@@ -46,7 +46,7 @@
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+@media (prefers-reduced-motion:reduce){html,.feed{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--font);overflow-x:hidden}
 body.th{line-height:1.7}
 button,input{font:inherit;color:inherit}
@@ -54,6 +54,7 @@ button,input{font:inherit;color:inherit}
 a{color:var(--verm)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
 .nw{white-space:nowrap}
+@media (max-width:360px){.nw{white-space:normal}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* top */
@@ -102,7 +103,7 @@ body.th h1{letter-spacing:0;line-height:1.2}
 .chips button{flex:none;border:0;border-radius:999px;background:var(--paper);color:var(--ink);padding:8px 14px;min-height:40px;cursor:pointer;font-size:14px;box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .ask{display:flex;gap:8px;padding:10px 12px 12px;background:var(--phone)}
 .ask input{flex:1;min-width:0;border:0;border-radius:999px;padding:12px 16px;background:var(--paper);color:var(--ink);font-size:16px}
-.ask button{border:0;border-radius:999px;background:#06c755;color:#fff;font-weight:600;padding:0 18px;min-height:46px;cursor:pointer}
+.ask button{border:0;border-radius:999px;background:#077a3a;color:#fff;font-weight:600;padding:0 18px;min-height:46px;cursor:pointer}
 .typing{display:inline-flex;gap:4px}
 .typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:b 1s infinite}
 .typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
@@ -362,6 +363,7 @@ function terms(q){
   Object.keys(WORD).forEach(function(w){if(/[฀-๿]/.test(w)&&q.indexOf(w)>=0&&out.indexOf(w)<0)out.push(w);});
   return out;
 }
+var TOWN_TH={"Chiang Mai":"เชียงใหม่","Chiang Rai":"เชียงราย","Lampang":"ลำปาง","Lamphun":"ลำพูน","Pai":"ปาย","Nan":"น่าน","Phrae":"แพร่","Mae Rim":"แม่ริม","Mae Hong Son":"แม่ฮ่องสอน"};
 function rank(q){
   var ws=terms(q),topicScore={},hits=[];
   ws.forEach(function(w){(WORD[w]||[]).forEach(function(k){topicScore[k]=(topicScore[k]||0)+1;});
@@ -370,7 +372,8 @@ function rank(q){
     var x=m.x.toLowerCase(),s=0;
     ws.forEach(function(w){if(w.length<3)return;var hit=/[\u0E00-\u0E7F]/.test(w)?x.indexOf(w)>=0:new RegExp("(^|[^a-z0-9])"+w.replace(/[.\-]/g,"\\$&")).test(x);if(hit)s+=2;});
     if(topicScore[m.t])s+=topicScore[m.t]*1.5;
-    if(ws.some(function(w){return m.town.toLowerCase().indexOf(w)>=0;}))s+=1;
+    var tw=m.town.toLowerCase()+" "+(TOWN_TH[m.town]||"");
+    if(ws.some(function(w){return tw.indexOf(w)>=0;})||(TOWN_TH[m.town]&&q.indexOf(TOWN_TH[m.town])>=0))s+=1;
     if(s>0)hits.push({m:m,s:s});
   });
   hits.sort(function(a,b){return b.s-a.s||(a.m.d<b.m.d?1:-1);});
@@ -389,7 +392,7 @@ function addRow(html,me){
 }
 var busy=false;
 function ask(q){
-  q=q.trim();if(!q||busy)return;busy=true;
+  q=q.trim();if(!q||busy)return false;busy=true;
   addRow(esc(q),true);
   var wait=addRow('<span class="typing" aria-label="…"><i></i><i></i><i></i></span>');
   setTimeout(function(){
@@ -407,8 +410,9 @@ function ask(q){
     }
     addRow(h);busy=false;
   },650);
+  return true;
 }
-$("ask").addEventListener("submit",function(e){e.preventDefault();var q=$("q");ask(q.value);q.value="";});
+$("ask").addEventListener("submit",function(e){e.preventDefault();var q=$("q");if(ask(q.value))q.value="";});
 feed.addEventListener("click",function(e){var b=e.target.closest("[data-go]");if(b)go(+b.getAttribute("data-go"));});
 function chips(){
   var c=$("chips");c.innerHTML="";
