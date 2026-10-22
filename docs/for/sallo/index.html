@@ -248,6 +248,12 @@ html[lang="th"] .sheet h3{text-transform:none;line-height:1.25;font-size:28px}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
 .maplibregl-ctrl-attrib{font-size:10px}
+/* contrast: WCAG AA in every mode and language (tools/contrast/run.mjs) */
+.card{opacity:1}
+.band::before{background:linear-gradient(180deg,rgba(8,7,4,.5) 0%,rgba(8,7,4,.48) 36%,rgba(8,7,4,.84) 100%)}
+.band .kick{display:inline-block;background:rgba(8,7,4,.74);padding:5px 9px;border-radius:6px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card .meta{color:var(--fg)}}
+:root[data-theme="dark"] .card .meta{color:var(--fg)}
 </style>
 </head>
 <body>

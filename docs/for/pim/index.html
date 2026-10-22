@@ -210,6 +210,12 @@ footer a{color:var(--mute)}
   h1{font-size:36px}.title{padding:8px 16px 10px}.kick{margin-bottom:3px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+/* contrast: WCAG AA in every mode and language (tools/contrast/run.mjs) */
+.lang span{opacity:.78}
+.band::before{background:linear-gradient(180deg,rgba(8,6,4,.74),rgba(8,6,4,.52) 38%,rgba(8,6,4,.58) 62%,rgba(8,6,4,.88))}
+.band .bk{display:inline-block;background:rgba(8,6,4,.74);padding:5px 9px;border-radius:6px}
+.mline a{color:var(--ink)}
+.chip.on b{color:inherit}
 </style>
 </head>
 <body>
