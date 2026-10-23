@@ -1,5 +1,7 @@
 /**
- * POST /api/contact — relays the /services enquiry form to Nan.
+ * POST /api/contact — relays the order form on hongdam.net/ (and /th/, /translation/)
+ * to Nan. A writer gives an email address or a LINE ID; `service` names the row ordered and
+ * `svc` its id, which counts as one order in that service's monthly Shoup walk (functions/_services.js).
  *
  * The destination address stays on the server: it lives here and in
  * the Pages environment. Requires two secrets on the Pages project:
@@ -8,7 +10,9 @@
  * CONTACT_FROM is optional and defaults to a verified send.motdang.net sender.
  */
 
-const LIMITS = { name: 120, email: 200, message: 4000 };
+import { record, whoHash } from '../_services.js'
+
+const LIMITS = { name: 120, email: 200, line: 80, service: 200, page: 200, message: 4000 };
 
 const reply = (status, body) =>
   new Response(JSON.stringify(body), {
@@ -46,10 +50,16 @@ export async function onRequestPost({ request, env }) {
 
   const name = clean(form.name, LIMITS.name);
   const email = clean(form.email, LIMITS.email);
+  const line = clean(form.line, LIMITS.line);
+  const service = clean(form.service, LIMITS.service);
+  const svc = clean(form.svc, 40);
+  const page = clean(form.page, LIMITS.page).replace(/[^\w\/.#-]/g, "");
   const message = cleanBody(form.message, LIMITS.message);
 
-  if (!email || !looksLikeEmail(email))
+  if (email && !looksLikeEmail(email))
     return reply(400, { ok: false, error: "That email address does not look right." });
+  if (!email && !line)
+    return reply(400, { ok: false, error: "An email address or a LINE ID, please." });
   if (message.length < 2)
     return reply(400, { ok: false, error: "Please say what you need." });
 
@@ -65,11 +75,13 @@ export async function onRequestPost({ request, env }) {
     body: JSON.stringify({
       from: env.CONTACT_FROM || "Hongdam <hongdam@send.motdang.net>",
       to: [env.CONTACT_TO],
-      reply_to: email,
-      subject: `hongdam.net — ${name || email}`,
+      ...(email ? { reply_to: email } : {}),
+      subject: `hongdam.net — ${service ? service + " — " : ""}${name || email || "LINE " + line}`,
       text: [
-        `From: ${name || "(no name)"} <${email}>`,
-        `Page: ${new URL(request.url).origin}/services`,
+        `From: ${name || "(no name)"}${email ? ` <${email}>` : ""}`,
+        ...(line ? [`LINE: ${line}`] : []),
+        ...(service ? [`Service: ${service}`] : []),
+        `Page: ${new URL(request.url).origin}${page || "/"}`,
         "",
         message,
       ].join("\n"),
@@ -80,7 +92,19 @@ export async function onRequestPost({ request, env }) {
     console.error("resend", res.status, await res.text());
     return reply(502, { ok: false, error: "Could not send that just now." });
   }
+  if (svc && (await counted(env, request))) await record(env.TASKS, svc, await whoHash(email || "line:" + line), "form");
   return reply(200, { ok: true });
+}
+
+// At most three orders a day from one address count toward prices.
+async function counted(env, request) {
+  if (!env.RT_LIMIT) return true;
+  const ip = request.headers.get("cf-connecting-ip") || "?";
+  const k = `svc:${ip}:${new Date().toISOString().slice(0, 10)}`;
+  const n = Number(await env.RT_LIMIT.get(k)) || 0;
+  if (n >= 3) return false;
+  await env.RT_LIMIT.put(k, String(n + 1), { expirationTtl: 2 * 86400 });
+  return true;
 }
 
 // A bare GET on the endpoint should not look like a broken page.
