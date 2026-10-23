@@ -130,6 +130,19 @@
      "p_th": "10 ชั่วโมงละ {price}",
      "d_en": "Calls in Thai or English to your list with your offer, sales or appointments, and each call's result in a sheet.",
      "d_th": "โทรหารายชื่อของคุณเป็นภาษาไทยหรืออังกฤษ ด้วยข้อเสนอของคุณ เพื่อขายหรือนัดหมาย และบันทึกผลการโทรลงตาราง"
+    },
+    {
+     "id": "voice",
+     "en": "Thai voice recording",
+     "th": "บันทึกเสียงภาษาไทย",
+     "p_en": "{price} a finished minute",
+     "p_th": "นาทีละ {price}",
+     "d_en": "Thai lines read and recorded for your app or video.",
+     "d_th": "อ่านและบันทึกเสียงภาษาไทยสำหรับแอปหรือวิดีโอ",
+     "baht": 1000,
+     "floor": 600,
+     "ceiling": 2500,
+     "slots": 40
     }
    ]
   },
@@ -270,6 +283,169 @@
    ]
   },
   {
+   "id": "care",
+   "en": "Retirement and care",
+   "th": "เกษียณและดูแลผู้สูงอายุ",
+   "items": [
+    {
+     "id": "retire-setup",
+     "en": "Retiring here: set-up",
+     "th": "เกษียณที่นี่: เริ่มต้น",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "One plan for the visa (filed through Chiang Mai Visa Desk), bank account, phone, housing shortlist, hospital registration, and insurance quotes from a licensed broker. Government fees and rent at cost.",
+     "d_th": "แผนเดียวสำหรับวีซ่า (ยื่นผ่านโต๊ะวีซ่าเชียงใหม่) บัญชีธนาคาร โทรศัพท์ รายการที่พัก ลงทะเบียนโรงพยาบาล และใบเสนอราคาประกันจากนายหน้าที่มีใบอนุญาต ค่าธรรมเนียมราชการและค่าเช่าคิดตามจริง",
+     "baht": 25000,
+     "floor": 15000,
+     "ceiling": 50000,
+     "slots": 4
+    },
+    {
+     "id": "retire-month",
+     "en": "Retiring here: monthly",
+     "th": "เกษียณที่นี่: รายเดือน",
+     "p_en": "{price} a month, 4 hours",
+     "p_th": "เดือนละ {price} 4 ชั่วโมง",
+     "d_en": "One person to call, 4 hours of help a month, and renewal dates kept with a note ahead of each.",
+     "d_th": "คนเดียวที่ติดต่อได้ ช่วย 4 ชั่วโมงต่อเดือน และแจ้งวันต่ออายุล่วงหน้า",
+     "baht": 5000,
+     "floor": 3000,
+     "ceiling": 10000,
+     "slots": 20
+    },
+    {
+     "id": "retire-hour",
+     "en": "Retiring here: extra hours",
+     "th": "เกษียณที่นี่: ชั่วโมงเพิ่ม",
+     "p_en": "{price} an hour",
+     "p_th": "ชั่วโมงละ {price}",
+     "d_en": "Past the four hours, by the hour.",
+     "d_th": "เกินสี่ชั่วโมง คิดเป็นชั่วโมง",
+     "baht": 600,
+     "floor": 500,
+     "ceiling": 1000,
+     "slots": 40
+    },
+    {
+     "id": "care-placement",
+     "en": "Care home placement",
+     "th": "หาบ้านพักผู้สูงอายุ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Care homes shortlisted, visited and compared, and the move arranged. The care itself is paid to the home.",
+     "d_th": "คัดและไปดูบ้านพักผู้สูงอายุ เทียบราคา และจัดการย้าย ค่าดูแลจ่ายให้สถานที่โดยตรง",
+     "baht": 20000,
+     "floor": 12000,
+     "ceiling": 40000,
+     "slots": 3
+    },
+    {
+     "id": "care-visit",
+     "en": "Visit to an older person",
+     "th": "ไปเยี่ยมผู้สูงอายุ",
+     "p_en": "{price} a visit",
+     "p_th": "ครั้งละ {price}",
+     "d_en": "Someone visits, checks in and writes the family what they saw. Not a nurse; no medicine handled.",
+     "d_th": "คนไปเยี่ยม พูดคุย และเขียนบอกครอบครัวว่าเห็นอะไร ไม่ใช่พยาบาล ไม่จัดการยา",
+     "baht": 1200,
+     "floor": 800,
+     "ceiling": 2000,
+     "slots": 48
+    },
+    {
+     "id": "care-visits-month",
+     "en": "Visits, weekly",
+     "th": "ไปเยี่ยมทุกสัปดาห์",
+     "p_en": "{price} a month, 4 visits",
+     "p_th": "เดือนละ {price} 4 ครั้ง",
+     "d_en": "Four visits a month, each written up for the family.",
+     "d_th": "เยี่ยมเดือนละสี่ครั้ง เขียนสรุปให้ครอบครัวทุกครั้ง",
+     "baht": 4000,
+     "floor": 3000,
+     "ceiling": 6000,
+     "slots": 12
+    },
+    {
+     "id": "specialist",
+     "en": "Specialist visit with an interpreter",
+     "th": "พบแพทย์เฉพาะทางพร้อมล่าม",
+     "p_en": "{price}, up to 4 hours",
+     "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
+     "d_en": "A clinic or specialist found and booked, with an interpreter there with you. Clinic fees at cost.",
+     "d_th": "หาและจองคลินิกหรือแพทย์เฉพาะทาง พร้อมล่ามไปด้วย ค่ารักษาคิดตามจริง",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 6000,
+     "slots": 16
+    },
+    {
+     "id": "specialist-book",
+     "en": "Specialist booked",
+     "th": "จองแพทย์เฉพาะทางให้",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Found and booked, with no interpreter.",
+     "d_th": "หาและจองให้ ไม่มีล่าม",
+     "baht": 800,
+     "floor": 500,
+     "ceiling": 1500,
+     "slots": 30
+    },
+    {
+     "id": "death-help",
+     "en": "When someone dies here",
+     "th": "เมื่อมีคนเสียชีวิตที่นี่",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "The death registered, embassy papers prepared, and cremation or repatriation arranged with a funeral home. Funeral home, embassy and translation at cost.",
+     "d_th": "แจ้งการเสียชีวิต เตรียมเอกสารสถานทูต และจัดการฌาปนกิจหรือส่งร่างกลับประเทศกับบริษัทจัดงานศพ ค่าบริษัท สถานทูต และการแปลคิดตามจริง",
+     "baht": 15000,
+     "floor": 10000,
+     "ceiling": 30000,
+     "slots": 2
+    },
+    {
+     "id": "lab-test",
+     "en": "Lab test arranged",
+     "th": "ส่งตรวจห้องแล็บให้",
+     "p_en": "{price}, lab at cost",
+     "p_th": "{price} ค่าแล็บตามจริง",
+     "d_en": "A sample taken to a Thai lab, and the report translated.",
+     "d_th": "นำตัวอย่างส่งห้องแล็บในไทย และแปลผล",
+     "baht": 2500,
+     "floor": 1500,
+     "ceiling": 5000,
+     "slots": 12
+    },
+    {
+     "id": "clean-air",
+     "en": "Clean air at home",
+     "th": "อากาศสะอาดในบ้าน",
+     "p_en": "{price}, equipment at cost",
+     "p_th": "{price} ค่าเครื่องตามจริง",
+     "d_en": "A PM2.5 sensor and a purifier sized for up to 3 rooms, placed, with a filter plan.",
+     "d_th": "เครื่องวัด PM2.5 และเครื่องฟอกอากาศขนาดเหมาะกับไม่เกิน 3 ห้อง จัดวางให้ พร้อมแผนเปลี่ยนไส้กรอง",
+     "baht": 2500,
+     "floor": 1500,
+     "ceiling": 5000,
+     "slots": 10
+    },
+    {
+     "id": "accident",
+     "en": "After an accident",
+     "th": "หลังเกิดอุบัติเหตุ",
+     "p_en": "{price} a case",
+     "p_th": "เรื่องละ {price}",
+     "d_en": "With you at the police station, the report translated, and the insurer or rental shop dealt with in Thai. A lawyer, if one is needed, is separate.",
+     "d_th": "ไปด้วยที่สถานีตำรวจ แปลบันทึก และคุยกับประกันหรือร้านเช่าเป็นภาษาไทย ทนายความถ้าจำเป็นแยกต่างหาก",
+     "baht": 8000,
+     "floor": 5000,
+     "ceiling": 15000,
+     "slots": 4
+    }
+   ]
+  },
+  {
    "id": "moving",
    "en": "Moving house abroad",
    "th": "ย้ายบ้านข้ามประเทศ",
@@ -387,6 +563,19 @@
      "p_th": "เดือนละ {price}",
      "d_en": "Rates, rooms and changes kept up each month.",
      "d_th": "ปรับราคา ห้อง และแก้ไขให้ทุกเดือน"
+    },
+    {
+     "id": "agency-sheet",
+     "en": "Listing sheet for an agency",
+     "th": "ตารางประกาศสำหรับนายหน้า",
+     "p_en": "{price} a month",
+     "p_th": "เดือนละ {price}",
+     "d_en": "Your listings on one sheet that drops stale offers by itself.",
+     "d_th": "รายการทรัพย์ในตารางเดียวที่ตัดประกาศเก่าออกเอง",
+     "baht": 2500,
+     "floor": 1200,
+     "ceiling": 6000,
+     "slots": 3
     }
    ]
   },
@@ -511,6 +700,32 @@
      "floor": 300,
      "ceiling": 1000,
      "slots": 10
+    },
+    {
+     "id": "thai-lessons",
+     "en": "Thai lessons",
+     "th": "เรียนภาษาไทย",
+     "p_en": "{price} an hour",
+     "p_th": "ชั่วโมงละ {price}",
+     "d_en": "By video, or in person in Chiang Rai or Chiang Mai.",
+     "d_th": "ทางวิดีโอ หรือพบตัวในเชียงรายหรือเชียงใหม่",
+     "baht": 600,
+     "floor": 400,
+     "ceiling": 1000,
+     "slots": 20
+    },
+    {
+     "id": "german",
+     "en": "German pages, Swiss spelling",
+     "th": "หน้าเว็บภาษาเยอรมัน สะกดแบบสวิส",
+     "p_en": "{price} a page, up to 300 words",
+     "p_th": "หน้าละ {price} ไม่เกิน 300 คำ",
+     "d_en": "A web page put into German with Swiss spelling.",
+     "d_th": "แปลหน้าเว็บเป็นภาษาเยอรมันแบบสะกดสวิส",
+     "baht": 1200,
+     "floor": 800,
+     "ceiling": 3000,
+     "slots": 20
     }
    ]
   },
@@ -731,6 +946,19 @@
      "p_th": "แพลตฟอร์มละ เดือนละ {price}",
      "d_en": "Facebook and Instagram, TikTok or Google: ads made, run and reported each month, in your own ad account. Ad spend at cost.",
      "d_th": "Facebook และ Instagram, TikTok หรือ Google ทำโฆษณา ดูแล และรายงานทุกเดือน ในบัญชีโฆษณาของคุณเอง ค่าโฆษณาคิดตามจริง"
+    },
+    {
+     "id": "stall-page",
+     "en": "Market stall page with a QR sign",
+     "th": "หน้าแผงตลาดพร้อมป้ายคิวอาร์",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A page for your stall, and a QR table sign that opens it.",
+     "d_th": "หน้าเว็บสำหรับแผงของคุณ พร้อมป้ายคิวอาร์ตั้งโต๊ะที่เปิดหน้านั้น",
+     "baht": 3000,
+     "floor": 2000,
+     "ceiling": 6000,
+     "slots": 6
     }
    ]
   },
@@ -929,6 +1157,307 @@
      "p_th": "ครั้งละ {price}",
      "d_en": "An ajarn or a monk near where you are in the north, found and asked for you, the visit arranged, and an interpreter beside you for up to 4 hours. The ajarn chooses the yant and may say no. The yant and the offering go to the ajarn directly; transport at cost.",
      "d_th": "หาอาจารย์หรือพระในพื้นที่ภาคเหนือใกล้ที่คุณอยู่ ติดต่อขอให้ นัดวัน และมีล่ามอยู่ด้วยไม่เกิน 4 ชั่วโมง อาจารย์เป็นผู้เลือกยันต์และอาจไม่รับ ค่ายันต์และเครื่องไหว้ครูจ่ายให้อาจารย์โดยตรง ค่าเดินทางคิดตามจริง"
+    }
+   ]
+  },
+  {
+   "id": "luck",
+   "en": "Luck",
+   "th": "ดวงและโชค",
+   "items": [
+    {
+     "id": "reading-en",
+     "en": "Reading, written in English",
+     "th": "ดูดวง เขียนเป็นภาษาอังกฤษ",
+     "p_en": "US$99",
+     "p_th": "US$99",
+     "d_en": "A written reading of your chart from your birth date, time and place, in English.",
+     "d_th": "ดวงจากวัน เวลา และสถานที่เกิด เขียนเป็นภาษาอังกฤษ"
+    },
+    {
+     "id": "reading-th",
+     "en": "Thai or Lanna reading, in Thai",
+     "th": "ดูดวงไทยหรือล้านนา เป็นภาษาไทย",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A written Thai or Lanna reading from your birth date and time, in Thai, with a 30-minute call after.",
+     "d_th": "ดูดวงแบบไทยหรือล้านนาจากวันเวลาเกิด เขียนเป็นภาษาไทย พร้อมโทรคุย 30 นาที",
+     "baht": 2500,
+     "floor": 1500,
+     "ceiling": 4000,
+     "slots": 20
+    },
+    {
+     "id": "bazi",
+     "en": "Bazi reading",
+     "th": "ดูดวงปาจื้อ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Your four pillars from your birth date and time, with the ten-year luck pillars, written in English or Chinese.",
+     "d_th": "ปาจื้อสี่เสาจากวันเวลาเกิด พร้อมวัยจรสิบปี เขียนเป็นภาษาอังกฤษหรือจีน",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 8000,
+     "slots": 12
+    },
+    {
+     "id": "iching",
+     "en": "I Ching reading",
+     "th": "ดูอี้จิง",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Your question cast and read, written in English or Chinese.",
+     "d_th": "ตั้งคำถามแล้วอ่านคำทำนายจากอี้จิง เขียนเป็นภาษาอังกฤษหรือจีน",
+     "baht": 2000,
+     "floor": 1000,
+     "ceiling": 5000,
+     "slots": 12
+    },
+    {
+     "id": "date-en",
+     "en": "Auspicious date, in English",
+     "th": "หาฤกษ์ เป็นภาษาอังกฤษ",
+     "p_en": "US$59",
+     "p_th": "US$59",
+     "d_en": "Two dates for a wedding, a move, an opening or a new car, with the reasons, in English.",
+     "d_th": "ฤกษ์สองวันสำหรับงานแต่ง ขึ้นบ้านใหม่ เปิดร้าน หรือออกรถ พร้อมเหตุผล เป็นภาษาอังกฤษ"
+    },
+    {
+     "id": "date-th",
+     "en": "Auspicious date, in Thai",
+     "th": "หาฤกษ์ เป็นภาษาไทย",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Two dates for a wedding, a move, an opening or a new car, with the reasons, in Thai.",
+     "d_th": "ฤกษ์สองวันสำหรับงานแต่ง ขึ้นบ้านใหม่ เปิดร้าน หรือออกรถ พร้อมเหตุผล เป็นภาษาไทย",
+     "baht": 2000,
+     "floor": 1000,
+     "ceiling": 5000,
+     "slots": 30
+    },
+    {
+     "id": "name-pick",
+     "en": "Auspicious name for a person",
+     "th": "ตั้งชื่อมงคล",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Three names for a baby or a name change, with their meanings.",
+     "d_th": "สามชื่อสำหรับลูกหรือการเปลี่ยนชื่อ พร้อมความหมาย",
+     "baht": 1500,
+     "floor": 800,
+     "ceiling": 5000,
+     "slots": 25
+    },
+    {
+     "id": "name-biz",
+     "en": "Auspicious name for a business",
+     "th": "ตั้งชื่อร้านหรือบริษัทมงคล",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Three names for a shop or company, with their meanings.",
+     "d_th": "สามชื่อสำหรับร้านหรือบริษัท พร้อมความหมาย",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 8000,
+     "slots": 10
+    },
+    {
+     "id": "lucky-number",
+     "en": "Lucky phone number or plate",
+     "th": "เบอร์มงคลหรือทะเบียนมงคล",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "One number read, or three candidates picked, for a phone or a car plate.",
+     "d_th": "อ่านเบอร์หรือทะเบียนหนึ่งชุด หรือคัดให้สามชุด",
+     "baht": 600,
+     "floor": 300,
+     "ceiling": 1500,
+     "slots": 60
+    },
+    {
+     "id": "name-charm",
+     "en": "Name charm",
+     "th": "เครื่องรางเขียนชื่อ",
+     "p_en": "US$59",
+     "p_th": "US$59",
+     "d_en": "A small charm drawn with your name, with a photo of its blessing. Shipping extra.",
+     "d_th": "เครื่องรางเล็กที่เขียนชื่อของคุณ พร้อมรูปตอนปลุกเสก ค่าส่งแยก"
+    },
+    {
+     "id": "pha-yant",
+     "en": "Pha yant drawn for you",
+     "th": "ผ้ายันต์เขียนให้",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A yant cloth about 55 by 45 cm, drawn by an ajarn with your name and birth date. The ajarn's khan khru, if any, at cost.",
+     "d_th": "ผ้ายันต์ขนาดประมาณ 55×45 ซม. อาจารย์เขียนพร้อมชื่อและวันเกิดของคุณ ค่าขันครูถ้ามีคิดตามจริง",
+     "baht": 5000,
+     "floor": 3000,
+     "ceiling": 10000,
+     "slots": 8
+    },
+    {
+     "id": "amulet-check",
+     "en": "Amulet opinion from photos",
+     "th": "ดูพระเครื่องจากรูป",
+     "p_en": "{price} an amulet",
+     "p_th": "องค์ละ {price}",
+     "d_en": "What an amulet is and what similar ones sell for, from your photos. An opinion, not a certificate.",
+     "d_th": "ความเห็นว่าพระเครื่องเป็นรุ่นใด และราคาที่ใกล้เคียงซื้อขายกัน จากรูปที่ส่งมา เป็นความเห็น ไม่ใช่ใบรับรอง",
+     "baht": 500,
+     "floor": 300,
+     "ceiling": 1500,
+     "slots": 40
+    },
+    {
+     "id": "amulet-buy",
+     "en": "Amulet bought for you",
+     "th": "ซื้อพระเครื่องให้",
+     "p_en": "{price}, amulet at cost",
+     "p_th": "{price} ค่าพระตามจริง",
+     "d_en": "Found and bought at a market in Chiang Mai or Chiang Rai, with photos before you pay for it. Shipping extra.",
+     "d_th": "หาและซื้อที่ตลาดในเชียงใหม่หรือเชียงราย ส่งรูปให้ดูก่อนจ่าย ค่าส่งแยก",
+     "baht": 1000,
+     "floor": 600,
+     "ceiling": 2500,
+     "slots": 20
+    },
+    {
+     "id": "almanac-widget",
+     "en": "Almanac or fortune calculator for your site",
+     "th": "ปฏิทินหรือเครื่องคำนวณดวงบนเว็บ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A Lanna calendar, Bazi or I Ching calculator on your own site.",
+     "d_th": "ปฏิทินล้านนา ปาจื้อ หรืออี้จิง บนเว็บของคุณ",
+     "baht": 10000,
+     "floor": 6000,
+     "ceiling": 25000,
+     "slots": 1
+    },
+    {
+     "id": "eink-clock",
+     "en": "Lanna almanac clock",
+     "th": "นาฬิกาปฏิทินล้านนา",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A solar-powered e-ink clock showing the Lanna calendar day, for a temple, a hotel or a home.",
+     "d_th": "นาฬิกาจอ e-ink พลังแสงอาทิตย์ แสดงวันตามปฏิทินล้านนา สำหรับวัด โรงแรม หรือบ้าน",
+     "baht": 12000,
+     "floor": 8000,
+     "ceiling": 30000,
+     "slots": 2
+    }
+   ]
+  },
+  {
+   "id": "merit",
+   "en": "Merit",
+   "th": "ทำบุญ",
+   "items": [
+    {
+     "id": "merit-alms",
+     "en": "Food for monks at dawn, for you",
+     "th": "ใส่บาตรแทนคุณ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Alms given at dawn in your name, with a video and the date.",
+     "d_th": "ใส่บาตรตอนเช้าในชื่อของคุณ พร้อมวิดีโอและวันที่",
+     "baht": 300,
+     "floor": 150,
+     "ceiling": 600,
+     "slots": 100
+    },
+    {
+     "id": "merit-set",
+     "en": "Sangkhathan set offered for you",
+     "th": "ถวายสังฆทานแทนคุณ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A sangkhathan set offered at a wat in your name, with photos and the date.",
+     "d_th": "ถวายสังฆทานที่วัดในชื่อของคุณ พร้อมรูปและวันที่",
+     "baht": 800,
+     "floor": 500,
+     "ceiling": 3000,
+     "slots": 60
+    },
+    {
+     "id": "merit-gift",
+     "en": "Robes, an image or a donation offered for you",
+     "th": "ถวายผ้าไตร พระพุทธรูป หรือปัจจัยแทนคุณ",
+     "p_en": "{price}, the item at cost",
+     "p_th": "{price} ค่าของคิดตามจริง",
+     "d_en": "Robes, a Buddha image or a donation offered at a wat in your name, with photos.",
+     "d_th": "ถวายผ้าไตร พระพุทธรูป หรือปัจจัยที่วัดในชื่อของคุณ พร้อมรูป",
+     "baht": 500,
+     "floor": 300,
+     "ceiling": 1000,
+     "slots": 40
+    },
+    {
+     "id": "merit-fish",
+     "en": "Fish released for you",
+     "th": "ปล่อยปลาแทนคุณ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Native fish released into permitted water in your name, with a video.",
+     "d_th": "ปล่อยปลาพันธุ์พื้นเมืองในแหล่งน้ำที่อนุญาต ในชื่อของคุณ พร้อมวิดีโอ",
+     "baht": 500,
+     "floor": 300,
+     "ceiling": 1200,
+     "slots": 30
+    },
+    {
+     "id": "merit-dead",
+     "en": "Merit for someone who died",
+     "th": "ทำบุญอุทิศให้ผู้ล่วงลับ",
+     "p_en": "{price}, monks' food and envelopes at cost",
+     "p_th": "{price} ค่าภัตตาหารและปัจจัยตามจริง",
+     "d_en": "Merit on the 7th, 50th or 100th day: monks invited, the rite arranged, photos sent.",
+     "d_th": "ทำบุญ 7 วัน 50 วัน หรือ 100 วัน นิมนต์พระ จัดพิธี ส่งรูปให้",
+     "baht": 3000,
+     "floor": 2000,
+     "ceiling": 6000,
+     "slots": 6
+    },
+    {
+     "id": "house-blessing",
+     "en": "House or shop blessing",
+     "th": "ทำบุญบ้านหรือเปิดร้าน",
+     "p_en": "{price}, food and offerings at cost",
+     "p_th": "{price} อาหารและเครื่องไทยธรรมตามจริง",
+     "d_en": "Nine monks invited, the ceremony master, altar, seats and a translator arranged. Monks' food, offerings, envelopes and guests' food at cost.",
+     "d_th": "นิมนต์พระเก้ารูป พิธีกร โต๊ะหมู่ ที่นั่ง และล่าม ค่าภัตตาหาร เครื่องไทยธรรม ปัจจัย และอาหารแขกคิดตามจริง",
+     "baht": 8000,
+     "floor": 5000,
+     "ceiling": 15000,
+     "slots": 8
+    },
+    {
+     "id": "su-khwan-arr",
+     "en": "Su khwan ceremony arranged",
+     "th": "จัดพิธีสู่ขวัญ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A mo khwan found and the ceremony arranged, with a translator. The bai si tray, offerings and the mo khwan's khan khru at cost.",
+     "d_th": "หาหมอขวัญและจัดพิธีสู่ขวัญ พร้อมล่าม ค่าบายศรี เครื่องบูชา และขันครูคิดตามจริง",
+     "baht": 3000,
+     "floor": 2000,
+     "ceiling": 6000,
+     "slots": 12
+    },
+    {
+     "id": "lanna-wedding",
+     "en": "Lanna wedding ceremony arranged",
+     "th": "จัดพิธีแต่งงานแบบล้านนา",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Monks, the khwan rite, Lanna dress fitting and the running order. Venue, food, photographer and envelopes at cost; the legal registration is at the district office.",
+     "d_th": "นิมนต์พระ พิธีสู่ขวัญ ลองชุดล้านนา และลำดับพิธี ค่าสถานที่ อาหาร ช่างภาพ และซองคิดตามจริง การจดทะเบียนสมรสทำที่อำเภอ",
+     "baht": 25000,
+     "floor": 15000,
+     "ceiling": 60000,
+     "slots": 2
     }
    ]
   },
@@ -1282,6 +1811,58 @@
      "p_th": "{price} ไม่เกิน 5 กล่องจดหมาย",
      "d_en": "Your domain verified, mailboxes made, old mail moved and phones set up. Licences at cost, on your own account.",
      "d_th": "ยืนยันโดเมน สร้างกล่องจดหมาย ย้ายอีเมลเก่า และตั้งค่าบนมือถือ ค่าไลเซนส์คิดตามจริงบนบัญชีของคุณเอง"
+    },
+    {
+     "id": "help-page",
+     "en": "Help page with a live map",
+     "th": "หน้าช่วยเหลือพร้อมแผนที่สด",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "For a tow, roadside or delivery firm: a live map, the distance to you, and a help card in three languages.",
+     "d_th": "สำหรับรถลาก บริการช่วยเหลือ หรือขนส่ง แผนที่สด ระยะทาง และการ์ดช่วยเหลือสามภาษา",
+     "baht": 10000,
+     "floor": 6000,
+     "ceiling": 20000,
+     "slots": 3
+    },
+    {
+     "id": "help-page-run",
+     "en": "Help page: kept up",
+     "th": "ดูแลหน้าช่วยเหลือ",
+     "p_en": "{price} a month",
+     "p_th": "เดือนละ {price}",
+     "d_en": "The map, numbers and help card kept up each month.",
+     "d_th": "ดูแลแผนที่ เบอร์ และการ์ดช่วยเหลือทุกเดือน",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 8000,
+     "slots": 3
+    },
+    {
+     "id": "widget",
+     "en": "Weather, smoke or events box for your site",
+     "th": "กล่องอากาศ ฝุ่น หรืองานบนเว็บ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A box on your site with the weather, PM2.5 or events nearby.",
+     "d_th": "กล่องบนเว็บของคุณ แสดงอากาศ ฝุ่น PM2.5 หรืองานใกล้ ๆ",
+     "baht": 4000,
+     "floor": 2500,
+     "ceiling": 10000,
+     "slots": 5
+    },
+    {
+     "id": "tap-card",
+     "en": "Contact card on a QR code",
+     "th": "นามบัตรบนคิวอาร์",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Your name, numbers and links on one page, opened from a QR code.",
+     "d_th": "ชื่อ เบอร์ และลิงก์ของคุณในหน้าเดียว เปิดจากคิวอาร์",
+     "baht": 500,
+     "floor": 300,
+     "ceiling": 1500,
+     "slots": 20
     }
    ]
   },
@@ -1428,6 +2009,19 @@
      "p_th": "รอบละ {price}",
      "d_en": "Thai speakers use your app on phones people here own, and write up what breaks.",
      "d_th": "คนไทยใช้แอปของคุณบนมือถือรุ่นที่คนที่นี่ใช้ แล้วเขียนรายงานจุดที่ผิดพลาด"
+    },
+    {
+     "id": "dmarc-watch",
+     "en": "Fake-email reports read, monthly",
+     "th": "อ่านรายงานอีเมลปลอมรายเดือน",
+     "p_en": "{price} a domain a month",
+     "p_th": "โดเมนละ เดือนละ {price}",
+     "d_en": "Your domain's DMARC reports read each month, with what changed.",
+     "d_th": "อ่านรายงาน DMARC ของโดเมนทุกเดือน พร้อมสิ่งที่เปลี่ยน",
+     "baht": 800,
+     "floor": 500,
+     "ceiling": 1500,
+     "slots": 25
     }
    ]
   },
@@ -1854,6 +2448,32 @@
      "p_th": "{price}",
      "d_en": "A hand-drawn map people zoom and tap, online and as a print.",
      "d_th": "แผนที่วาดมือที่ซูมและแตะได้ ทั้งออนไลน์และฉบับพิมพ์"
+    },
+    {
+     "id": "cartoons",
+     "en": "Campaign cartoons",
+     "th": "การ์ตูนสำหรับแคมเปญ",
+     "p_en": "{price}, six panels",
+     "p_th": "{price} หกช่อง",
+     "d_en": "Panels for a health, charity or public campaign.",
+     "d_th": "การ์ตูนสำหรับแคมเปญสุขภาพ การกุศล หรือสาธารณะ",
+     "baht": 5000,
+     "floor": 3000,
+     "ceiling": 10000,
+     "slots": 2
+    },
+    {
+     "id": "interview",
+     "en": "Recorded interview",
+     "th": "บันทึกบทสัมภาษณ์",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A maker or an elder interviewed with a consent form, edited, with credits.",
+     "d_th": "สัมภาษณ์ช่างหรือผู้อาวุโส พร้อมใบยินยอม ตัดต่อ และเครดิต",
+     "baht": 15000,
+     "floor": 10000,
+     "ceiling": 30000,
+     "slots": 3
     }
    ]
   },
@@ -2048,6 +2668,32 @@
      "floor": 3000,
      "ceiling": 10000,
      "slots": 2
+    },
+    {
+     "id": "staff-contract",
+     "en": "Staff contract in Thai and English",
+     "th": "สัญญาจ้างพนักงาน ไทยและอังกฤษ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "An employment contract from a template, filled in for one employee. A lawyer's review is separate.",
+     "d_th": "สัญญาจ้างจากแม่แบบ กรอกสำหรับพนักงานหนึ่งคน การตรวจโดยทนายแยกต่างหาก",
+     "baht": 2500,
+     "floor": 1500,
+     "ceiling": 5000,
+     "slots": 6
+    },
+    {
+     "id": "payslips",
+     "en": "Payslips",
+     "th": "สลิปเงินเดือน",
+     "p_en": "{price} a person a month",
+     "p_th": "คนละ {price} ต่อเดือน",
+     "d_en": "A payslip each month for each person, in Thai and English.",
+     "d_th": "สลิปเงินเดือนทุกเดือน ไทยและอังกฤษ",
+     "baht": 150,
+     "floor": 100,
+     "ceiling": 300,
+     "slots": 30
     }
    ]
   },
@@ -2172,6 +2818,32 @@
      "p_th": "ฤดูละ {price}",
      "d_en": "Field workers send photos on LINE, stamped with time and place, checked by two people and flagged daily, with an export at the end.",
      "d_th": "คนในพื้นที่ส่งรูปทางไลน์ มีเวลาและพิกัด ตรวจโดยสองคน แจ้งรายการผิดปกติทุกวัน และส่งออกข้อมูลตอนจบ"
+    },
+    {
+     "id": "club-desk",
+     "en": "Admin desk for a club",
+     "th": "ผู้ช่วยงานธุรการสำหรับชมรม",
+     "p_en": "{price} a month",
+     "p_th": "เดือนละ {price}",
+     "d_en": "Forwarded mail and handwritten receipts filed, polls run, and invoices matched to PromptPay donations.",
+     "d_th": "เก็บอีเมลที่ส่งต่อและใบเสร็จลายมือ ทำโพล และจับคู่ใบแจ้งหนี้กับเงินบริจาคทางพร้อมเพย์",
+     "baht": 8000,
+     "floor": 5000,
+     "ceiling": 15000,
+     "slots": 3
+    },
+    {
+     "id": "funder-report",
+     "en": "Funder research report",
+     "th": "รายงานแหล่งทุน",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Who funds work like yours, their deadlines and fit, in a written report.",
+     "d_th": "ใครให้ทุนงานแบบของคุณ กำหนดส่ง และความเหมาะสม เป็นรายงาน",
+     "baht": 8000,
+     "floor": 5000,
+     "ceiling": 20000,
+     "slots": 3
     }
    ]
   },

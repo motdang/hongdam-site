@@ -39,6 +39,12 @@ export const SERVICES = {
   "ceiling": 8000,
   "slots": 20
  },
+ "voice": {
+  "open": 1000,
+  "floor": 600,
+  "ceiling": 2500,
+  "slots": 40
+ },
  "call": {
   "open": 300,
   "floor": 150,
@@ -93,6 +99,78 @@ export const SERVICES = {
   "ceiling": 3000,
   "slots": 10
  },
+ "retire-setup": {
+  "open": 25000,
+  "floor": 15000,
+  "ceiling": 50000,
+  "slots": 4
+ },
+ "retire-month": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 20
+ },
+ "retire-hour": {
+  "open": 600,
+  "floor": 500,
+  "ceiling": 1000,
+  "slots": 40
+ },
+ "care-placement": {
+  "open": 20000,
+  "floor": 12000,
+  "ceiling": 40000,
+  "slots": 3
+ },
+ "care-visit": {
+  "open": 1200,
+  "floor": 800,
+  "ceiling": 2000,
+  "slots": 48
+ },
+ "care-visits-month": {
+  "open": 4000,
+  "floor": 3000,
+  "ceiling": 6000,
+  "slots": 12
+ },
+ "specialist": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 6000,
+  "slots": 16
+ },
+ "specialist-book": {
+  "open": 800,
+  "floor": 500,
+  "ceiling": 1500,
+  "slots": 30
+ },
+ "death-help": {
+  "open": 15000,
+  "floor": 10000,
+  "ceiling": 30000,
+  "slots": 2
+ },
+ "lab-test": {
+  "open": 2500,
+  "floor": 1500,
+  "ceiling": 5000,
+  "slots": 12
+ },
+ "clean-air": {
+  "open": 2500,
+  "floor": 1500,
+  "ceiling": 5000,
+  "slots": 10
+ },
+ "accident": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
  "move-house": {
   "open": 30000,
   "floor": 20000,
@@ -141,6 +219,12 @@ export const SERVICES = {
   "ceiling": 6000,
   "slots": 6
  },
+ "agency-sheet": {
+  "open": 2500,
+  "floor": 1200,
+  "ceiling": 6000,
+  "slots": 3
+ },
  "interp-phone": {
   "open": 400,
   "floor": 250,
@@ -176,6 +260,18 @@ export const SERVICES = {
   "floor": 300,
   "ceiling": 1000,
   "slots": 10
+ },
+ "thai-lessons": {
+  "open": 600,
+  "floor": 400,
+  "ceiling": 1000,
+  "slots": 20
+ },
+ "german": {
+  "open": 1200,
+  "floor": 800,
+  "ceiling": 3000,
+  "slots": 20
  },
  "grab-start": {
   "open": 3000,
@@ -270,6 +366,12 @@ export const SERVICES = {
   "ceiling": 15000,
   "slots": 8
  },
+ "stall-page": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 6000,
+  "slots": 6
+ },
  "trade-setup": {
   "open": 10000,
   "floor": 5000,
@@ -354,6 +456,126 @@ export const SERVICES = {
   "floor": 2500,
   "ceiling": 8000,
   "slots": 8
+ },
+ "reading-th": {
+  "open": 2500,
+  "floor": 1500,
+  "ceiling": 4000,
+  "slots": 20
+ },
+ "bazi": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 8000,
+  "slots": 12
+ },
+ "iching": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 12
+ },
+ "date-th": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 30
+ },
+ "name-pick": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 5000,
+  "slots": 25
+ },
+ "name-biz": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 8000,
+  "slots": 10
+ },
+ "lucky-number": {
+  "open": 600,
+  "floor": 300,
+  "ceiling": 1500,
+  "slots": 60
+ },
+ "pha-yant": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 8
+ },
+ "amulet-check": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1500,
+  "slots": 40
+ },
+ "amulet-buy": {
+  "open": 1000,
+  "floor": 600,
+  "ceiling": 2500,
+  "slots": 20
+ },
+ "almanac-widget": {
+  "open": 10000,
+  "floor": 6000,
+  "ceiling": 25000,
+  "slots": 1
+ },
+ "eink-clock": {
+  "open": 12000,
+  "floor": 8000,
+  "ceiling": 30000,
+  "slots": 2
+ },
+ "merit-alms": {
+  "open": 300,
+  "floor": 150,
+  "ceiling": 600,
+  "slots": 100
+ },
+ "merit-set": {
+  "open": 800,
+  "floor": 500,
+  "ceiling": 3000,
+  "slots": 60
+ },
+ "merit-gift": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1000,
+  "slots": 40
+ },
+ "merit-fish": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1200,
+  "slots": 30
+ },
+ "merit-dead": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 6000,
+  "slots": 6
+ },
+ "house-blessing": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 8
+ },
+ "su-khwan-arr": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 6000,
+  "slots": 12
+ },
+ "lanna-wedding": {
+  "open": 25000,
+  "floor": 15000,
+  "ceiling": 60000,
+  "slots": 2
  },
  "web-minisite": {
   "open": 10000,
@@ -493,6 +715,30 @@ export const SERVICES = {
   "ceiling": 10000,
   "slots": 8
  },
+ "help-page": {
+  "open": 10000,
+  "floor": 6000,
+  "ceiling": 20000,
+  "slots": 3
+ },
+ "help-page-run": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 8000,
+  "slots": 3
+ },
+ "widget": {
+  "open": 4000,
+  "floor": 2500,
+  "ceiling": 10000,
+  "slots": 5
+ },
+ "tap-card": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1500,
+  "slots": 20
+ },
  "sec-hacked": {
   "open": 5000,
   "floor": 2500,
@@ -522,6 +768,12 @@ export const SERVICES = {
   "floor": 3000,
   "ceiling": 10000,
   "slots": 4
+ },
+ "dmarc-watch": {
+  "open": 800,
+  "floor": 500,
+  "ceiling": 1500,
+  "slots": 25
  },
  "ai-whitelabel": {
   "open": 20000,
@@ -661,6 +913,18 @@ export const SERVICES = {
   "ceiling": 20000,
   "slots": 3
  },
+ "cartoons": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 2
+ },
+ "interview": {
+  "open": 15000,
+  "floor": 10000,
+  "ceiling": 30000,
+  "slots": 3
+ },
  "words-articles": {
   "open": 3000,
   "floor": 1500,
@@ -739,6 +1003,18 @@ export const SERVICES = {
   "ceiling": 10000,
   "slots": 2
  },
+ "staff-contract": {
+  "open": 2500,
+  "floor": 1500,
+  "ceiling": 5000,
+  "slots": 6
+ },
+ "payslips": {
+  "open": 150,
+  "floor": 100,
+  "ceiling": 300,
+  "slots": 30
+ },
  "giving-desk": {
   "open": 30000,
   "floor": 20000,
@@ -792,5 +1068,17 @@ export const SERVICES = {
   "floor": 15000,
   "ceiling": 60000,
   "slots": 2
+ },
+ "club-desk": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 3
+ },
+ "funder-report": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 20000,
+  "slots": 3
  }
 }
