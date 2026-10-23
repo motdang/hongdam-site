@@ -13,9 +13,13 @@
   "design": "pencil",
   "moving": "songthaew",
   "ship": "parcel",
-  "charity": "heart",
+  "charity": "gift",
   "money": "coin",
-  "visa": "passport"
+  "visa": "passport",
+  "care": "heart",
+  "tours": "tuk-tuk",
+  "luck": "star",
+  "merit": "lotus"
  },
  "pics": {
   "call": [

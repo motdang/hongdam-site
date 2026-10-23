@@ -1,13 +1,17 @@
 {
  "core": "core.js?v=69775a4d",
  "groups": {
-  "front": "front.js?v=a6e256b3",
-  "help": "help.js?v=55d10ab9",
+  "front": "front.js?v=7a6ba6a7",
+  "help": "help.js?v=1ef02660",
+  "care": "care.js?v=06c0f388",
   "outsource": "outsource.js?v=da7fbcc6",
   "translate": "translate.js?v=19385175",
   "shop": "shop.js?v=732155bf",
   "stay": "stay.js?v=64ce6db8",
+  "tours": "tours.js?v=e4ab4fb9",
   "events": "events.js?v=419132c7",
+  "luck": "luck.js?v=557be527",
+  "merit": "merit.js?v=118ab792",
   "web": "web.js?v=6edfdaad",
   "fix": "fix.js?v=f2a08359",
   "ai": "ai.js?v=5f7c41a0",
@@ -15,7 +19,7 @@
   "design": "design.js?v=a6fc1b38",
   "moving": "moving.js?v=70939409",
   "ship": "ship.js?v=b6f7ad79",
-  "charity": "charity.js?v=7020f7c8",
+  "charity": "charity.js?v=841a1813",
   "money": "money.js?v=fc62016c",
   "visa": "visa.js?v=625bad0a"
  }
