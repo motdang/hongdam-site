@@ -251,14 +251,14 @@
      "id": "dispute",
      "en": "Haggling buddy",
      "th": "เพื่อนช่วยต่อรอง",
-     "baht": 1500,
-     "floor": 1000,
-     "ceiling": 3000,
-     "slots": 10,
-     "p_en": "{price} a case",
-     "p_th": "เรื่องละ {price}",
-     "d_en": "A deposit, a repair, a bill or a neighbour: we talk to the other side in Thai, by phone and in person, and write you each answer.",
-     "d_th": "เงินมัดจำ งานซ่อม บิล หรือเพื่อนบ้าน เราคุยกับอีกฝ่ายเป็นภาษาไทย ทางโทรศัพท์และไปพบ แล้วส่งสรุปให้"
+     "baht": 800,
+     "floor": 500,
+     "ceiling": 1500,
+     "slots": 40,
+     "p_en": "{price} an hour",
+     "p_th": "ชั่วโมงละ {price}",
+     "d_en": "We bargain or settle for you in Thai, by phone or in person: a car or motorcycle dealer, an amulet seller, a deposit, a repair, a bill or a neighbour. We write you each answer.",
+     "d_th": "เราต่อรองหรือเจรจาแทนคุณเป็นภาษาไทย ทางโทรศัพท์หรือไปพบ กับดีลเลอร์รถยนต์หรือมอเตอร์ไซค์ ผู้ให้เช่าพระ เงินมัดจำ งานซ่อม บิล หรือเพื่อนบ้าน แล้วส่งสรุปให้"
     },
     {
      "id": "thai-plan",
@@ -322,8 +322,8 @@
      "slots": 4,
      "p_en": "{price} a car",
      "p_th": "คันละ {price}",
-     "d_en": "Cars shortlisted to your budget, dealers visited and test drives booked with you, the price talked over in Thai, and the registration put in your name at the Department of Land Transport. The car, and a mechanic's check of a used one, at cost.",
-     "d_th": "คัดรถตามงบ พาไปดูรถที่ดีลเลอร์และนัดทดลองขับ ต่อรองราคาเป็นภาษาไทย และโอนทะเบียนเป็นชื่อคุณที่กรมการขนส่งทางบก ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
+     "d_en": "Cars shortlisted to your budget, dealers visited and test drives booked with you, and the registration put in your name at the Department of Land Transport. Haggling is extra, by the hour. The car, and a mechanic's check of a used one, at cost.",
+     "d_th": "คัดรถตามงบ พาไปดูรถที่ดีลเลอร์และนัดทดลองขับ และโอนทะเบียนเป็นชื่อคุณที่กรมการขนส่งทางบก การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
     },
     {
      "id": "moto-buy",
@@ -335,8 +335,8 @@
      "slots": 8,
      "p_en": "{price} a motorcycle",
      "p_th": "คันละ {price}",
-     "d_en": "Scooters and motorcycles shortlisted, shops visited and test rides booked with you, the price talked over in Thai, and the registration put in your name. The bike, and a mechanic's check of a used one, at cost.",
-     "d_th": "คัดสกู๊ตเตอร์และมอเตอร์ไซค์ พาไปดูที่ร้านและนัดทดลองขี่ ต่อรองราคาเป็นภาษาไทย และโอนทะเบียนเป็นชื่อคุณ ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
+     "d_en": "Scooters and motorcycles shortlisted, shops visited and test rides booked with you, and the registration put in your name. Haggling is extra, by the hour. The bike, and a mechanic's check of a used one, at cost.",
+     "d_th": "คัดสกู๊ตเตอร์และมอเตอร์ไซค์ พาไปดูที่ร้านและนัดทดลองขี่ และโอนทะเบียนเป็นชื่อคุณ การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
     }
    ]
   },
@@ -1782,9 +1782,9 @@
      "en": "Amulet bought for you",
      "th": "ซื้อพระเครื่องให้",
      "p_en": "{price}, amulet at cost",
-     "p_th": "{price} ค่าพระตามจริง",
-     "d_en": "Found and bought at a market in Chiang Mai or Chiang Rai, with photos before you pay for it. Shipping extra.",
-     "d_th": "หาและซื้อที่ตลาดในเชียงใหม่หรือเชียงราย ส่งรูปให้ดูก่อนจ่าย ค่าส่งแยก",
+     "p_th": "{price} ค่าเช่าพระตามจริง",
+     "d_en": "Found and bought at a market in Chiang Mai or Chiang Rai, with photos before you pay for it. Haggling is extra, by the hour. Shipping extra.",
+     "d_th": "หาและเช่าพระที่ตลาดในเชียงใหม่หรือเชียงราย ส่งรูปให้ดูก่อนจ่าย การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่าส่งแยก",
      "baht": 1000,
      "floor": 600,
      "ceiling": 2500,

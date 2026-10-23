@@ -103,10 +103,10 @@ export const SERVICES = {
  "dispute": {
   "en": "Haggling buddy",
   "th": "\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e19\u0e0a\u0e48\u0e27\u0e22\u0e15\u0e48\u0e2d\u0e23\u0e2d\u0e07",
-  "open": 1500,
-  "floor": 1000,
-  "ceiling": 3000,
-  "slots": 10
+  "open": 800,
+  "floor": 500,
+  "ceiling": 1500,
+  "slots": 40
  },
  "thai-plan": {
   "en": "A written plan for a hard Thai question",
