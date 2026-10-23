@@ -45,7 +45,7 @@ export function walk(id, counts, now, from = OPENED_MONTH) {
   }
   const m = monthOf(now)
   return {
-    id, ...(s.pct ? { unit: '%', price: L[r] } : s.usd ? { unit: 'USD', price: L[r] } : { baht: L[r], price: L[r] }),
+    id, en: s.en, th: s.th, ...(s.pct ? { unit: '%', price: L[r] } : s.usd ? { unit: 'USD', price: L[r] } : { baht: L[r], price: L[r] }),
     ...(s.tail ? { tail: tailOf(s, L[r]), tail_unit: s.tail_usd ? 'USD' : 'THB' } : {}), opened: L[r0], floor: L[lo], ceiling: L[hi],
     slots: s.slots, orders: counts[m] || 0,
     next_check: new Date(monthStart(Math.max(m, from) + 1)).toISOString(),
@@ -76,7 +76,7 @@ export async function deskPrices(db) {
 export function pricesFrom(counts, desk, now) {
   return Object.keys(SERVICES).map((id) => {
     const s = SERVICES[id]
-    if (s.walk === 'desk') { const b = desk[id] || s.open; return { id, baht: b, price: b, opened: s.open, walked_by: 'hongdam-desk grab.py' } }
+    if (s.walk === 'desk') { const b = desk[id] || s.open; return { id, en: s.en, th: s.th, baht: b, price: b, opened: s.open, walked_by: 'hongdam-desk grab.py' } }
     return walk(id, counts[id] || {}, now)
   })
 }

@@ -195,7 +195,7 @@ def check(data, graph):
 
 
 def walk_js(data):
-    svcs = {it["id"]: {"open": it.get("baht", it.get("pct", it.get("usd"))), "floor": it["floor"], "ceiling": it["ceiling"], "slots": it["slots"],
+    svcs = {it["id"]: {"en": it["en"], "th": it["th"], "open": it.get("baht", it.get("pct", it.get("usd"))), "floor": it["floor"], "ceiling": it["ceiling"], "slots": it["slots"],
                        **({"pct": True} if "pct" in it else {}), **({"usd": True} if "usd" in it else {}),
                        **({"tail": it["tail"]} if "tail" in it else {}), **({"tail_usd": True} if it.get("tail_usd") else {}),
                        **({"walk": it["walk"]} if it.get("walk") else {})} for it in walking(data)}
