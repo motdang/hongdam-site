@@ -279,6 +279,19 @@
      "p_th": "ครั้งละ {price}",
      "d_en": "For US veterans and their families in Thailand: we sit with you through the sign-in and the forms, by video or in person. You type your own passwords.",
      "d_th": "สำหรับทหารผ่านศึกสหรัฐฯ และครอบครัวในไทย เรานั่งช่วยระหว่างเข้าระบบและกรอกฟอร์ม ทางวิดีโอหรือพบตัว คุณพิมพ์รหัสผ่านเอง"
+    },
+    {
+     "id": "compare",
+     "en": "Comparison shopping",
+     "th": "เทียบราคาให้",
+     "p_en": "{price} a thing to buy",
+     "p_th": "รายการละ {price}",
+     "d_en": "Quotes gathered and set side by side for one thing you want to buy: insurance, internet, a car, appliances, a school, hospital packages. The fee is the same whether or not you buy.",
+     "d_th": "รวบรวมใบเสนอราคาและเทียบให้ดูสำหรับสิ่งที่คุณจะซื้อหนึ่งอย่าง ประกัน อินเทอร์เน็ต รถ เครื่องใช้ไฟฟ้า โรงเรียน แพ็กเกจโรงพยาบาล ค่าบริการเท่าเดิมไม่ว่าจะซื้อหรือไม่",
+     "baht": 1500,
+     "floor": 800,
+     "ceiling": 4000,
+     "slots": 10
     }
    ]
   },
@@ -455,6 +468,58 @@
      "floor": 8000,
      "ceiling": 25000,
      "slots": 4
+    },
+    {
+     "id": "lab-compound",
+     "en": "Compound tested at a lab",
+     "th": "ส่งตรวจสารที่ห้องแล็บ",
+     "p_en": "{price}, up to 3 samples",
+     "p_th": "{price} ไม่เกิน 3 ตัวอย่าง",
+     "d_en": "Purity or identity by HPLC, GC-MS or NMR at a Thai university or private lab, for compounds legal to hold in Thailand. Lab fee and courier at cost; the lab's report is its own.",
+     "d_th": "ตรวจความบริสุทธิ์หรือชนิดสารด้วย HPLC GC-MS หรือ NMR ที่แล็บมหาวิทยาลัยหรือเอกชนในไทย สำหรับสารที่ครอบครองได้ตามกฎหมายไทย ค่าแล็บและค่าส่งคิดตามจริง ผลเป็นของห้องแล็บ",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 8000,
+     "slots": 8
+    },
+    {
+     "id": "blood-basic",
+     "en": "Blood test booked: basic panel",
+     "th": "จองตรวจเลือด: พื้นฐาน",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Booked at a licensed lab or hospital, which draws and reads the blood; the report translated. The lab's fee at cost.",
+     "d_th": "จองที่แล็บหรือโรงพยาบาลที่มีใบอนุญาต ซึ่งเจาะและอ่านผลเลือด แปลผลให้ ค่าแล็บคิดตามจริง",
+     "baht": 1500,
+     "floor": 800,
+     "ceiling": 3000,
+     "slots": 30
+    },
+    {
+     "id": "blood-full",
+     "en": "Health checkup booked",
+     "th": "จองตรวจสุขภาพ",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A full checkup booked at a hospital, someone with you on the day, the report translated. The hospital's fee at cost.",
+     "d_th": "จองตรวจสุขภาพที่โรงพยาบาล มีคนไปด้วยในวันตรวจ แปลผลให้ ค่าโรงพยาบาลคิดตามจริง",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 6000,
+     "slots": 8
+    },
+    {
+     "id": "specialist-hour",
+     "en": "Clinic visit: extra hours",
+     "th": "พาไปคลินิก: ชั่วโมงเพิ่ม",
+     "p_en": "{price} an hour",
+     "p_th": "ชั่วโมงละ {price}",
+     "d_en": "Past the four hours, by the hour.",
+     "d_th": "เกินสี่ชั่วโมง คิดเป็นชั่วโมง",
+     "baht": 800,
+     "floor": 600,
+     "ceiling": 1200,
+     "slots": 20
     }
    ]
   },
@@ -589,6 +654,58 @@
      "floor": 1200,
      "ceiling": 6000,
      "slots": 3
+    },
+    {
+     "id": "rent-vehicle",
+     "en": "Car or scooter rental arranged",
+     "th": "จัดหารถหรือมอเตอร์ไซค์เช่า",
+     "p_en": "{price} a rental",
+     "p_th": "ครั้งละ {price}",
+     "d_en": "Found, compared and booked for your dates. The rental, deposit and insurance are the shop's terms, paid to the shop.",
+     "d_th": "หา เทียบ และจองตามวันที่ของคุณ ค่าเช่า มัดจำ และประกันตามเงื่อนไขของร้าน จ่ายให้ร้านโดยตรง",
+     "baht": 800,
+     "floor": 500,
+     "ceiling": 1500,
+     "slots": 20
+    },
+    {
+     "id": "rent-event",
+     "en": "Equipment or venue rental arranged",
+     "th": "จัดหาอุปกรณ์หรือสถานที่เช่า",
+     "p_en": "{price} a rental",
+     "p_th": "ครั้งละ {price}",
+     "d_en": "Sound, tents, tables or a venue found, compared and booked. The rental is paid to the supplier.",
+     "d_th": "เครื่องเสียง เต็นท์ โต๊ะ หรือสถานที่ หา เทียบ และจองให้ ค่าเช่าจ่ายให้ผู้ให้เช่าโดยตรง",
+     "baht": 3000,
+     "floor": 2000,
+     "ceiling": 8000,
+     "slots": 4
+    },
+    {
+     "id": "let-find",
+     "en": "Your place rented out: tenant found",
+     "th": "ปล่อยเช่า: หาผู้เช่า",
+     "p_en": "{price} of the first year's rent",
+     "p_th": "{price} ของค่าเช่าปีแรก",
+     "d_en": "Tenant found and checked, the lease, and a check-in report with photos. For leases of 12 months.",
+     "d_th": "หาและตรวจสอบผู้เช่า ทำสัญญา และรายงานเข้าพักพร้อมรูป สำหรับสัญญา 12 เดือน",
+     "pct": 10,
+     "floor": 8,
+     "ceiling": 12,
+     "slots": 3
+    },
+    {
+     "id": "let-manage",
+     "en": "Your place rented out: looked after",
+     "th": "ปล่อยเช่า: ดูแลให้",
+     "p_en": "{price} of rent collected, at least ฿1,500 a month",
+     "p_th": "{price} ของค่าเช่าที่เก็บได้ ขั้นต่ำเดือนละ ฿1,500",
+     "d_en": "Rent collected, repairs arranged and the owner sent a monthly statement.",
+     "d_th": "เก็บค่าเช่า จัดการซ่อม และส่งรายงานให้เจ้าของทุกเดือน",
+     "pct": 10,
+     "floor": 8,
+     "ceiling": 12,
+     "slots": 15
     }
    ]
   },
@@ -1320,6 +1437,71 @@
      "p_th": "ครั้งละ {price}",
      "d_en": "An ajarn or a monk near where you are in the north, found and asked for you, the visit arranged, and an interpreter beside you for up to 4 hours. The ajarn chooses the yant and may say no. The yant and the offering go to the ajarn directly; transport at cost.",
      "d_th": "หาอาจารย์หรือพระในพื้นที่ภาคเหนือใกล้ที่คุณอยู่ ติดต่อขอให้ นัดวัน และมีล่ามอยู่ด้วยไม่เกิน 4 ชั่วโมง อาจารย์เป็นผู้เลือกยันต์และอาจไม่รับ ค่ายันต์และเครื่องไหว้ครูจ่ายให้อาจารย์โดยตรง ค่าเดินทางคิดตามจริง"
+    },
+    {
+     "id": "wed-full",
+     "en": "Wedding planning, full",
+     "th": "วางแผนงานแต่งงานครบวงจร",
+     "p_en": "{price} a wedding",
+     "p_th": "งานละ {price}",
+     "d_en": "Venue, vendors, budget and timeline, and the day run for you. Vendors at cost; the legal marriage is registered at the district office.",
+     "d_th": "สถานที่ ผู้ให้บริการ งบประมาณ และกำหนดการ พร้อมดูแลในวันงาน ค่าผู้ให้บริการคิดตามจริง การจดทะเบียนสมรสทำที่อำเภอ",
+     "baht": 60000,
+     "floor": 40000,
+     "ceiling": 150000,
+     "slots": 1
+    },
+    {
+     "id": "wed-partial",
+     "en": "Wedding planning, partial",
+     "th": "วางแผนงานแต่งงานบางส่วน",
+     "p_en": "{price} a wedding",
+     "p_th": "งานละ {price}",
+     "d_en": "You have the venue; we line up the vendors and the timeline, and run the day. Vendors at cost.",
+     "d_th": "คุณมีสถานที่แล้ว เราหาผู้ให้บริการ ทำกำหนดการ และดูแลในวันงาน ค่าผู้ให้บริการคิดตามจริง",
+     "baht": 30000,
+     "floor": 20000,
+     "ceiling": 80000,
+     "slots": 1
+    },
+    {
+     "id": "wed-day",
+     "en": "Wedding day coordination",
+     "th": "ประสานงานวันแต่งงาน",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Your plan run on the day: vendors, timings and guests.",
+     "d_th": "ดูแลตามแผนของคุณในวันงาน ผู้ให้บริการ เวลา และแขก",
+     "baht": 20000,
+     "floor": 12000,
+     "ceiling": 40000,
+     "slots": 2
+    },
+    {
+     "id": "bride-concierge",
+     "en": "Bride concierge",
+     "th": "ผู้ช่วยเจ้าสาว",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Dress, hair and makeup, fittings, the photographer and your schedule on the day. Their fees at cost.",
+     "d_th": "ชุด ทำผมแต่งหน้า ลองชุด ช่างภาพ และตารางของคุณในวันงาน ค่าบริการของแต่ละที่คิดตามจริง",
+     "baht": 12000,
+     "floor": 8000,
+     "ceiling": 25000,
+     "slots": 2
+    },
+    {
+     "id": "event-plan",
+     "en": "Event planning",
+     "th": "วางแผนจัดงาน",
+     "p_en": "{price} an event",
+     "p_th": "งานละ {price}",
+     "d_en": "A party, a launch, a company dinner or a retreat planned and run. Venue, catering and sound at cost.",
+     "d_th": "ปาร์ตี้ งานเปิดตัว งานเลี้ยงบริษัท หรือสัมมนานอกสถานที่ วางแผนและดูแลให้ ค่าสถานที่ อาหาร และเครื่องเสียงคิดตามจริง",
+     "baht": 20000,
+     "floor": 10000,
+     "ceiling": 60000,
+     "slots": 2
     }
    ]
   },
@@ -2495,6 +2677,19 @@
      "p_th": "หัวข้อละ {price}",
      "d_en": "For an event: speakers or exhibitors who fit a track, with contacts and a line on each.",
      "d_th": "สำหรับงานอีเวนต์ วิทยากรหรือผู้ออกบูธที่เหมาะกับหัวข้อ พร้อมช่องทางติดต่อและคำอธิบาย"
+    },
+    {
+     "id": "compare-biz",
+     "en": "Suppliers found and compared",
+     "th": "หาและเทียบผู้ขายสำหรับธุรกิจ",
+     "p_en": "{price} a job",
+     "p_th": "งานละ {price}",
+     "d_en": "Suppliers for your business found, quotes gathered and set side by side. The fee is the same whether or not you buy.",
+     "d_th": "หาผู้ขายสำหรับธุรกิจของคุณ รวบรวมใบเสนอราคาและเทียบให้ดู ค่าบริการเท่าเดิมไม่ว่าจะซื้อหรือไม่",
+     "baht": 8000,
+     "floor": 4000,
+     "ceiling": 25000,
+     "slots": 3
     }
    ]
   },

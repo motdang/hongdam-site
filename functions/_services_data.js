@@ -99,6 +99,12 @@ export const SERVICES = {
   "ceiling": 3000,
   "slots": 10
  },
+ "compare": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 4000,
+  "slots": 10
+ },
  "retire-setup": {
   "open": 25000,
   "floor": 15000,
@@ -177,6 +183,30 @@ export const SERVICES = {
   "ceiling": 25000,
   "slots": 4
  },
+ "lab-compound": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 8000,
+  "slots": 8
+ },
+ "blood-basic": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 3000,
+  "slots": 30
+ },
+ "blood-full": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 6000,
+  "slots": 8
+ },
+ "specialist-hour": {
+  "open": 800,
+  "floor": 600,
+  "ceiling": 1200,
+  "slots": 20
+ },
  "move-house": {
   "open": 30000,
   "floor": 20000,
@@ -230,6 +260,32 @@ export const SERVICES = {
   "floor": 1200,
   "ceiling": 6000,
   "slots": 3
+ },
+ "rent-vehicle": {
+  "open": 800,
+  "floor": 500,
+  "ceiling": 1500,
+  "slots": 20
+ },
+ "rent-event": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 8000,
+  "slots": 4
+ },
+ "let-find": {
+  "open": 10,
+  "floor": 8,
+  "ceiling": 12,
+  "slots": 3,
+  "pct": true
+ },
+ "let-manage": {
+  "open": 10,
+  "floor": 8,
+  "ceiling": 12,
+  "slots": 15,
+  "pct": true
  },
  "tour-cr": {
   "open": 8000,
@@ -528,6 +584,36 @@ export const SERVICES = {
   "floor": 2500,
   "ceiling": 8000,
   "slots": 8
+ },
+ "wed-full": {
+  "open": 60000,
+  "floor": 40000,
+  "ceiling": 150000,
+  "slots": 1
+ },
+ "wed-partial": {
+  "open": 30000,
+  "floor": 20000,
+  "ceiling": 80000,
+  "slots": 1
+ },
+ "wed-day": {
+  "open": 20000,
+  "floor": 12000,
+  "ceiling": 40000,
+  "slots": 2
+ },
+ "bride-concierge": {
+  "open": 12000,
+  "floor": 8000,
+  "ceiling": 25000,
+  "slots": 2
+ },
+ "event-plan": {
+  "open": 20000,
+  "floor": 10000,
+  "ceiling": 60000,
+  "slots": 2
  },
  "reading-th": {
   "open": 2500,
@@ -936,6 +1022,12 @@ export const SERVICES = {
   "floor": 1500,
   "ceiling": 6000,
   "slots": 6
+ },
+ "compare-biz": {
+  "open": 8000,
+  "floor": 4000,
+  "ceiling": 25000,
+  "slots": 3
  },
  "media-graphics": {
   "open": 6000,
