@@ -1,0 +1,790 @@
+// Written by tools/build_services.py from data/services.json; changes go there.
+export const LADDER = [10, 20, 30, 50, 100, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000, 10000, 12000, 15000, 20000, 25000, 30000, 40000, 50000, 60000, 80000, 100000, 150000, 200000]
+export const PCT_LADDER = [5, 8, 10, 12, 15, 20]
+export const OPENED = "2026-11-01"
+export const SERVICES = {
+ "assistant-10": {
+  "open": 15000,
+  "floor": 8000,
+  "ceiling": 30000,
+  "slots": 3
+ },
+ "assistant-20": {
+  "open": 30000,
+  "floor": 15000,
+  "ceiling": 60000,
+  "slots": 2
+ },
+ "typing": {
+  "open": 1000,
+  "floor": 500,
+  "ceiling": 2000,
+  "slots": 10
+ },
+ "subtitles": {
+  "open": 500,
+  "floor": 200,
+  "ceiling": 1500,
+  "slots": 100
+ },
+ "cs-desk": {
+  "open": 12000,
+  "floor": 6000,
+  "ceiling": 20000,
+  "slots": 4
+ },
+ "calls-out": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 8000,
+  "slots": 20
+ },
+ "call": {
+  "open": 300,
+  "floor": 150,
+  "ceiling": 500,
+  "slots": 40
+ },
+ "trades": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1000,
+  "slots": 20
+ },
+ "there": {
+  "open": 600,
+  "floor": 400,
+  "ceiling": 1000,
+  "slots": 20
+ },
+ "errand": {
+  "open": 300,
+  "floor": 200,
+  "ceiling": 500,
+  "slots": 30
+ },
+ "form": {
+  "open": 400,
+  "floor": 200,
+  "ceiling": 800,
+  "slots": 30
+ },
+ "dispute": {
+  "open": 1500,
+  "floor": 1000,
+  "ceiling": 3000,
+  "slots": 10
+ },
+ "thai-plan": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 10
+ },
+ "legalise": {
+  "open": 1500,
+  "floor": 1000,
+  "ceiling": 3000,
+  "slots": 10
+ },
+ "idme": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 3000,
+  "slots": 10
+ },
+ "move-house": {
+  "open": 30000,
+  "floor": 20000,
+  "ceiling": 50000,
+  "slots": 2
+ },
+ "move-room": {
+  "open": 15000,
+  "floor": 10000,
+  "ceiling": 25000,
+  "slots": 3
+ },
+ "move-boxes": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 12000,
+  "slots": 4
+ },
+ "luggage": {
+  "open": 800,
+  "floor": 500,
+  "ceiling": 1500,
+  "slots": 10
+ },
+ "stay-rent": {
+  "open": 6000,
+  "floor": 3000,
+  "ceiling": 12000,
+  "slots": 8
+ },
+ "stay-check": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
+ "stay-booking": {
+  "open": 30000,
+  "floor": 20000,
+  "ceiling": 60000,
+  "slots": 2
+ },
+ "stay-booking-run": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 6000,
+  "slots": 6
+ },
+ "interp-phone": {
+  "open": 400,
+  "floor": 250,
+  "ceiling": 800,
+  "slots": 40
+ },
+ "interp-person": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 5000,
+  "slots": 8
+ },
+ "interp-day": {
+  "open": 5000,
+  "floor": 4000,
+  "ceiling": 8000,
+  "slots": 4
+ },
+ "lang-pages": {
+  "open": 400,
+  "floor": 250,
+  "ceiling": 800,
+  "slots": 20
+ },
+ "lang-shan": {
+  "open": 800,
+  "floor": 500,
+  "ceiling": 1500,
+  "slots": 20
+ },
+ "lang-leaves": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1000,
+  "slots": 10
+ },
+ "grab-start": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 5000,
+  "slots": 10,
+  "walk": "desk"
+ },
+ "grab-menu": {
+  "open": 1500,
+  "floor": 1000,
+  "ceiling": 3000,
+  "slots": 10,
+  "walk": "desk"
+ },
+ "grab-care": {
+  "open": 1000,
+  "floor": 500,
+  "ceiling": 2000,
+  "slots": 20,
+  "walk": "desk"
+ },
+ "signs": {
+  "open": 250,
+  "floor": 150,
+  "ceiling": 500,
+  "slots": 20
+ },
+ "print": {
+  "open": 800,
+  "floor": 400,
+  "ceiling": 1500,
+  "slots": 10
+ },
+ "trade-photos": {
+  "open": 400,
+  "floor": 200,
+  "ceiling": 800,
+  "slots": 60
+ },
+ "paybox": {
+  "open": 4000,
+  "floor": 2000,
+  "ceiling": 8000,
+  "slots": 4
+ },
+ "restaurant-desk": {
+  "open": 6000,
+  "floor": 3000,
+  "ceiling": 12000,
+  "slots": 6
+ },
+ "ordering": {
+  "open": 10000,
+  "floor": 5000,
+  "ceiling": 20000,
+  "slots": 3
+ },
+ "etsy-open": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 4
+ },
+ "etsy-run": {
+  "open": 4000,
+  "floor": 2000,
+  "ceiling": 8000,
+  "slots": 4
+ },
+ "online-shop": {
+  "open": 25000,
+  "floor": 15000,
+  "ceiling": 60000,
+  "slots": 3
+ },
+ "lineman-start": {
+  "open": 2500,
+  "floor": 1500,
+  "ceiling": 4000,
+  "slots": 12
+ },
+ "fb-care": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 15
+ },
+ "ads-run": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 8
+ },
+ "trade-setup": {
+  "open": 10000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
+ "trade-dropship": {
+  "open": 100,
+  "floor": 50,
+  "ceiling": 200,
+  "slots": 300
+ },
+ "trade-shelf": {
+  "open": 300,
+  "floor": 200,
+  "ceiling": 500,
+  "slots": 30
+ },
+ "trade-sourcing": {
+  "open": 12,
+  "floor": 8,
+  "ceiling": 15,
+  "slots": 40,
+  "pct": true
+ },
+ "trade-qc": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 3000,
+  "slots": 20
+ },
+ "trade-export": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 3000,
+  "slots": 30
+ },
+ "trade-import": {
+  "open": 1200,
+  "floor": 600,
+  "ceiling": 2500,
+  "slots": 20
+ },
+ "trip-plan": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 6000,
+  "slots": 8
+ },
+ "event-page": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
+ "event-kit": {
+  "open": 10000,
+  "floor": 6000,
+  "ceiling": 20000,
+  "slots": 2
+ },
+ "tribute": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 6
+ },
+ "keepsake": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
+ "spirit-house": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 6000,
+  "slots": 4
+ },
+ "web-minisite": {
+  "open": 10000,
+  "floor": 6000,
+  "ceiling": 15000,
+  "slots": 6
+ },
+ "web-site": {
+  "open": 30000,
+  "floor": 20000,
+  "ceiling": 50000,
+  "slots": 3
+ },
+ "vibe-check": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 10
+ },
+ "vibe-finish": {
+  "open": 30000,
+  "floor": 15000,
+  "ceiling": 60000,
+  "slots": 6
+ },
+ "vibe-hours": {
+  "open": 2000,
+  "floor": 1200,
+  "ceiling": 3000,
+  "slots": 40
+ },
+ "web-line": {
+  "open": 25000,
+  "floor": 12000,
+  "ceiling": 50000,
+  "slots": 3
+ },
+ "web-pwa": {
+  "open": 15000,
+  "floor": 6000,
+  "ceiling": 30000,
+  "slots": 3
+ },
+ "web-search": {
+  "open": 5000,
+  "floor": 2500,
+  "ceiling": 10000,
+  "slots": 6
+ },
+ "web-sharecard": {
+  "open": 800,
+  "floor": 400,
+  "ceiling": 1500,
+  "slots": 10
+ },
+ "web-found": {
+  "open": 5000,
+  "floor": 2500,
+  "ceiling": 10000,
+  "slots": 8
+ },
+ "web-mail": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 3000,
+  "slots": 8
+ },
+ "web-move": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 12000,
+  "slots": 6
+ },
+ "web-license": {
+  "open": 50000,
+  "floor": 30000,
+  "ceiling": 100000,
+  "slots": 1
+ },
+ "android": {
+  "open": 20000,
+  "floor": 10000,
+  "ceiling": 40000,
+  "slots": 3
+ },
+ "sheet-app": {
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
+ "game": {
+  "open": 20000,
+  "floor": 10000,
+  "ceiling": 50000,
+  "slots": 2
+ },
+ "directory": {
+  "open": 20000,
+  "floor": 12000,
+  "ceiling": 40000,
+  "slots": 2
+ },
+ "directory-run": {
+  "open": 20000,
+  "floor": 10000,
+  "ceiling": 40000,
+  "slots": 3
+ },
+ "accessible": {
+  "open": 15000,
+  "floor": 8000,
+  "ceiling": 40000,
+  "slots": 4
+ },
+ "wp-api": {
+  "open": 10000,
+  "floor": 6000,
+  "ceiling": 20000,
+  "slots": 3
+ },
+ "guide-site": {
+  "open": 20000,
+  "floor": 12000,
+  "ceiling": 40000,
+  "slots": 3
+ },
+ "web-care": {
+  "open": 3000,
+  "floor": 2000,
+  "ceiling": 8000,
+  "slots": 8
+ },
+ "web-workspace": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 8
+ },
+ "sec-hacked": {
+  "open": 5000,
+  "floor": 2500,
+  "ceiling": 12000,
+  "slots": 10
+ },
+ "sec-mail": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 4000,
+  "slots": 10
+ },
+ "sec-redteam": {
+  "open": 12000,
+  "floor": 8000,
+  "ceiling": 40000,
+  "slots": 5
+ },
+ "mirror": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 6
+ },
+ "app-test": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 4
+ },
+ "ai-whitelabel": {
+  "open": 20000,
+  "floor": 8000,
+  "ceiling": 50000,
+  "slots": 4
+ },
+ "ai-line": {
+  "open": 20000,
+  "floor": 10000,
+  "ceiling": 40000,
+  "slots": 3
+ },
+ "ai-batch": {
+  "open": 1000,
+  "floor": 400,
+  "ceiling": 3000,
+  "slots": 15
+ },
+ "ai-monthly": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 4000,
+  "slots": 10
+ },
+ "crawl-pay": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 4
+ },
+ "demand-prices": {
+  "open": 20000,
+  "floor": 10000,
+  "ceiling": 40000,
+  "slots": 3
+ },
+ "ai-automation": {
+  "open": 8000,
+  "floor": 4000,
+  "ceiling": 30000,
+  "slots": 6
+ },
+ "data-leads": {
+  "open": 2500,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 10
+ },
+ "data-crawl": {
+  "open": 6000,
+  "floor": 3000,
+  "ceiling": 15000,
+  "slots": 3
+ },
+ "data-research": {
+  "open": 1200,
+  "floor": 600,
+  "ceiling": 5000,
+  "slots": 8
+ },
+ "data-prices": {
+  "open": 1500,
+  "floor": 800,
+  "ceiling": 4000,
+  "slots": 8
+ },
+ "data-traffic": {
+  "open": 1200,
+  "floor": 600,
+  "ceiling": 3000,
+  "slots": 10
+ },
+ "street-survey": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 4
+ },
+ "romanise": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 1000,
+  "slots": 10
+ },
+ "event-lists": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 6000,
+  "slots": 6
+ },
+ "media-graphics": {
+  "open": 6000,
+  "floor": 3000,
+  "ceiling": 12000,
+  "slots": 4
+ },
+ "media-reels": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 4000,
+  "slots": 10
+ },
+ "media-doodles": {
+  "open": 1000,
+  "floor": 500,
+  "ceiling": 3000,
+  "slots": 8
+ },
+ "media-animation": {
+  "open": 10000,
+  "floor": 5000,
+  "ceiling": 30000,
+  "slots": 3
+ },
+ "media-decks": {
+  "open": 6000,
+  "floor": 3000,
+  "ceiling": 25000,
+  "slots": 4
+ },
+ "patterns": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 8
+ },
+ "explainer": {
+  "open": 30000,
+  "floor": 15000,
+  "ceiling": 80000,
+  "slots": 2
+ },
+ "venue-map": {
+  "open": 10000,
+  "floor": 5000,
+  "ceiling": 20000,
+  "slots": 3
+ },
+ "words-articles": {
+  "open": 3000,
+  "floor": 1500,
+  "ceiling": 6000,
+  "slots": 10
+ },
+ "words-copy": {
+  "open": 4000,
+  "floor": 2500,
+  "ceiling": 8000,
+  "slots": 6
+ },
+ "words-newsletter": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 8
+ },
+ "words-social": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 800,
+  "slots": 20
+ },
+ "words-proposals": {
+  "open": 6000,
+  "floor": 3000,
+  "ceiling": 12000,
+  "slots": 3
+ },
+ "words-plan": {
+  "open": 12000,
+  "floor": 6000,
+  "ceiling": 30000,
+  "slots": 2
+ },
+ "sec-awards": {
+  "open": 30000,
+  "floor": 15000,
+  "ceiling": 80000,
+  "slots": 2
+ },
+ "merchant-check": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 8000,
+  "slots": 12
+ },
+ "merchant-fix": {
+  "open": 15000,
+  "floor": 8000,
+  "ceiling": 40000,
+  "slots": 6
+ },
+ "money-invoice": {
+  "open": 1000,
+  "floor": 500,
+  "ceiling": 2500,
+  "slots": 10
+ },
+ "co-books": {
+  "open": 4000,
+  "floor": 2500,
+  "ceiling": 8000,
+  "slots": 6
+ },
+ "money-payouts": {
+  "open": 2000,
+  "floor": 1000,
+  "ceiling": 4000,
+  "slots": 4
+ },
+ "money-exchange": {
+  "open": 5000,
+  "floor": 3000,
+  "ceiling": 10000,
+  "slots": 2
+ },
+ "giving-desk": {
+  "open": 30000,
+  "floor": 20000,
+  "ceiling": 60000,
+  "slots": 2
+ },
+ "giving-run": {
+  "open": 10000,
+  "floor": 5000,
+  "ceiling": 20000,
+  "slots": 3
+ },
+ "gifts-ready": {
+  "open": 100000,
+  "floor": 50000,
+  "ceiling": 200000,
+  "slots": 1
+ },
+ "grant": {
+  "open": 25000,
+  "floor": 15000,
+  "ceiling": 50000,
+  "slots": 3
+ },
+ "findable": {
+  "open": 50000,
+  "floor": 30000,
+  "ceiling": 80000,
+  "slots": 2
+ },
+ "map-archive": {
+  "open": 30000,
+  "floor": 15000,
+  "ceiling": 60000,
+  "slots": 2
+ },
+ "line-memory": {
+  "open": 15000,
+  "floor": 8000,
+  "ceiling": 30000,
+  "slots": 3
+ },
+ "checkin": {
+  "open": 10000,
+  "floor": 6000,
+  "ceiling": 20000,
+  "slots": 3
+ },
+ "photo-proof": {
+  "open": 30000,
+  "floor": 15000,
+  "ceiling": 60000,
+  "slots": 2
+ }
+}
