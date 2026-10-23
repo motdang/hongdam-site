@@ -916,6 +916,19 @@
      "p_th": "{price} ค่าศาลและพิธีคิดตามจริง",
      "d_en": "For a new home or shop: the spirit house chosen with you, the maker and the officiant booked, the day arranged.",
      "d_th": "สำหรับบ้านหรือร้านใหม่ เลือกศาลด้วยกัน จองช่างและผู้ทำพิธี จัดวันให้"
+    },
+    {
+     "id": "sak-yant",
+     "en": "Sak yant, off the beaten path",
+     "th": "พาไปสักยันต์กับอาจารย์ในพื้นที่",
+     "baht": 4000,
+     "floor": 2500,
+     "ceiling": 8000,
+     "slots": 8,
+     "p_en": "{price} a visit",
+     "p_th": "ครั้งละ {price}",
+     "d_en": "An ajarn or a monk near where you are in the north, found and asked for you, the visit arranged, and an interpreter beside you for up to 4 hours. The ajarn chooses the yant and may say no. The yant and the offering go to the ajarn directly; transport at cost.",
+     "d_th": "หาอาจารย์หรือพระในพื้นที่ภาคเหนือใกล้ที่คุณอยู่ ติดต่อขอให้ นัดวัน และมีล่ามอยู่ด้วยไม่เกิน 4 ชั่วโมง อาจารย์เป็นผู้เลือกยันต์และอาจไม่รับ ค่ายันต์และเครื่องไหว้ครูจ่ายให้อาจารย์โดยตรง ค่าเดินทางคิดตามจริง"
     }
    ]
   },

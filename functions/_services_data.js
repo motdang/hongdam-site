@@ -349,6 +349,12 @@ export const SERVICES = {
   "ceiling": 6000,
   "slots": 4
  },
+ "sak-yant": {
+  "open": 4000,
+  "floor": 2500,
+  "ceiling": 8000,
+  "slots": 8
+ },
  "web-minisite": {
   "open": 10000,
   "floor": 6000,
