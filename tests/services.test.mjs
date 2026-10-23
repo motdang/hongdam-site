@@ -62,4 +62,9 @@ import('../functions/_services.js').then(({ countOf }) => {
   assert.ok(countOf(10, 0, 50) / 10 <= 0.8)
   assert.equal(countOf(10, 3, 50), 11)
 })
+// a failed read refuses to price rather than walking on zero demand
+import('../functions/_services.js').then(async ({ allCounts }) => {
+  await assert.rejects(allCounts({ prepare: () => ({ all: async () => { throw new Error('D1 down') } }) }))
+  assert.deepEqual(await allCounts(undefined), {})
+})
 console.log(`services ok · ${site.length} walk monthly, ${desk.length} by the Desk bot`)
