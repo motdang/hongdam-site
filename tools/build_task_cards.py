@@ -7,15 +7,20 @@ functions/_task_cards.js, the list the task pages read to use a kind's own card.
 
     python3 tools/build_task_cards.py            # draw the missing ones
     python3 tools/build_task_cards.py --all      # redraw every card
+
+Needs the share-cards renderer (render.mjs, with its node_modules installed), which lives
+outside this repo: by default the folder next to this one, ../share-cards, or the folder
+named in SHARE_CARDS. The cards it drew are committed, so the site builds without it.
 """
 import json
+import os
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
-CARDS = HERE.parent / "share-cards"
+CARDS = Path(os.environ.get("SHARE_CARDS") or HERE.parent / "share-cards")
 OUT = HERE / "docs" / "og" / "tasks"
 LIST = HERE / "functions" / "_task_cards.js"
 
@@ -37,6 +42,8 @@ def main():
             "glyph": n["en"][:1],
         })
     if jobs:
+        if not (CARDS / "render.mjs").exists():
+            sys.exit(f"{len(jobs)} cards to draw, and no share-cards renderer at {CARDS}: set SHARE_CARDS to its folder")
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
             json.dump(jobs, f, ensure_ascii=False)
         subprocess.run(["node", "render.mjs", f.name], cwd=CARDS, check=True)
