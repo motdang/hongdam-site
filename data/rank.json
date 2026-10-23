@@ -1,0 +1,769 @@
+{
+ "about": "Ranking model for the shop (her ask 2026-10-23: 'put these things in a meaningful order — highlight ones that are particularly high margin for us and essential to clients'). Per card: h = team hours for the main option (estimate), x = baht paid out of our own price to others (cars, rooms, parts; not the at-cost items the buyer pays), n = need to the client: 3 essential (health, legal, money, home, urgent), 2 keeps a business or life running, 1 optional. Score = (price − x) / h × (n / 2)², so need counts for more than margin. tools/rank_shop.py orders data/shop.json by it.",
+ "cards": {
+  "call": [
+   0.4,
+   0,
+   3
+  ],
+  "trades": [
+   1,
+   0,
+   3
+  ],
+  "there": [
+   1,
+   0,
+   3
+  ],
+  "errand": [
+   1,
+   0,
+   2
+  ],
+  "form": [
+   0.5,
+   0,
+   3
+  ],
+  "dispute": [
+   2,
+   0,
+   3
+  ],
+  "thai-plan": [
+   1.5,
+   0,
+   3
+  ],
+  "legalise": [
+   2,
+   0,
+   3
+  ],
+  "idme": [
+   1.5,
+   0,
+   3
+  ],
+  "translate": [
+   1.5,
+   0,
+   3
+  ],
+  "interp": [
+   0.5,
+   0,
+   3
+  ],
+  "lang-pages": [
+   0.4,
+   0,
+   2
+  ],
+  "lang-shan": [
+   1,
+   0,
+   2
+  ],
+  "lang-leaves": [
+   1,
+   0,
+   1
+  ],
+  "romanise": [
+   0.3,
+   0,
+   1
+  ],
+  "thai-lessons": [
+   1,
+   0,
+   1
+  ],
+  "german": [
+   0.5,
+   0,
+   2
+  ],
+  "grab": [
+   3,
+   0,
+   2
+  ],
+  "restaurant-desk": [
+   4,
+   0,
+   2
+  ],
+  "ordering": [
+   5,
+   0,
+   2
+  ],
+  "signs": [
+   0.3,
+   0,
+   2
+  ],
+  "print": [
+   0.5,
+   0,
+   1
+  ],
+  "trade-photos": [
+   0.4,
+   0,
+   2
+  ],
+  "paybox": [
+   2,
+   0,
+   2
+  ],
+  "online-shop": [
+   12,
+   0,
+   2
+  ],
+  "etsy": [
+   4,
+   0,
+   1
+  ],
+  "fb-care": [
+   8,
+   0,
+   2
+  ],
+  "ads-run": [
+   5,
+   0,
+   2
+  ],
+  "stall-page": [
+   1.5,
+   0,
+   1
+  ],
+  "stay-booking": [
+   12,
+   0,
+   2
+  ],
+  "stay-rent": [
+   6,
+   0,
+   3
+  ],
+  "stay-check": [
+   5,
+   0,
+   3
+  ],
+  "agency-sheet": [
+   1,
+   0,
+   1
+  ],
+  "trip-plan": [
+   2,
+   0,
+   1
+  ],
+  "tour-day": [
+   10,
+   4500,
+   1
+  ],
+  "tour-3d": [
+   24,
+   13000,
+   1
+  ],
+  "car-guide": [
+   9,
+   3000,
+   1
+  ],
+  "experience": [
+   4,
+   0,
+   1
+  ],
+  "lantern": [
+   0.5,
+   1500,
+   1
+  ],
+  "balloon": [
+   2,
+   10000,
+   1
+  ],
+  "event-page": [
+   4,
+   0,
+   1
+  ],
+  "tribute": [
+   3,
+   0,
+   1
+  ],
+  "spirit-house": [
+   3,
+   0,
+   2
+  ],
+  "merit-you": [
+   0.3,
+   0,
+   2
+  ],
+  "merit-dead": [
+   4,
+   0,
+   3
+  ],
+  "house-blessing": [
+   6,
+   0,
+   2
+  ],
+  "su-khwan": [
+   3,
+   0,
+   1
+  ],
+  "lanna-wedding": [
+   16,
+   0,
+   1
+  ],
+  "sak-yant": [
+   5,
+   0,
+   1
+  ],
+  "reading": [
+   1,
+   0,
+   1
+  ],
+  "bazi": [
+   1,
+   0,
+   1
+  ],
+  "date-pick": [
+   0.5,
+   0,
+   2
+  ],
+  "name-pick": [
+   0.75,
+   0,
+   2
+  ],
+  "lucky-number": [
+   0.25,
+   0,
+   1
+  ],
+  "name-charm": [
+   1,
+   300,
+   1
+  ],
+  "pha-yant": [
+   1,
+   1500,
+   1
+  ],
+  "amulet": [
+   0.3,
+   0,
+   1
+  ],
+  "almanac-widget": [
+   4,
+   0,
+   1
+  ],
+  "eink-clock": [
+   3,
+   4500,
+   1
+  ],
+  "giving": [
+   12,
+   0,
+   2
+  ],
+  "grants": [
+   10,
+   0,
+   2
+  ],
+  "findable": [
+   20,
+   0,
+   1
+  ],
+  "map-archive": [
+   12,
+   0,
+   1
+  ],
+  "line-memory": [
+   6,
+   0,
+   2
+  ],
+  "checkin": [
+   5,
+   0,
+   2
+  ],
+  "event-kit": [
+   6,
+   0,
+   1
+  ],
+  "photo-proof": [
+   20,
+   0,
+   2
+  ],
+  "club-desk": [
+   8,
+   0,
+   2
+  ],
+  "site": [
+   5,
+   0,
+   2
+  ],
+  "vibe": [
+   2,
+   0,
+   2
+  ],
+  "web-line": [
+   10,
+   0,
+   2
+  ],
+  "app": [
+   8,
+   0,
+   2
+  ],
+  "web-search": [
+   2,
+   0,
+   1
+  ],
+  "web-found": [
+   2,
+   0,
+   2
+  ],
+  "web-sharecard": [
+   0.3,
+   0,
+   1
+  ],
+  "web-mail": [
+   0.5,
+   0,
+   2
+  ],
+  "web-move": [
+   3,
+   0,
+   2
+  ],
+  "accessible": [
+   5,
+   0,
+   2
+  ],
+  "directory": [
+   8,
+   0,
+   1
+  ],
+  "guide-site": [
+   8,
+   0,
+   1
+  ],
+  "wp-api": [
+   4,
+   0,
+   1
+  ],
+  "web-license": [
+   10,
+   0,
+   1
+  ],
+  "github": [
+   1.5,
+   0,
+   1,
+   3000
+  ],
+  "web-care": [
+   2.5,
+   0,
+   2
+  ],
+  "help-page": [
+   5,
+   0,
+   1
+  ],
+  "widget": [
+   1.5,
+   0,
+   1
+  ],
+  "tap-card": [
+   0.3,
+   0,
+   1
+  ],
+  "php": [
+   2,
+   0,
+   3,
+   5000
+  ],
+  "sec-mail": [
+   0.5,
+   0,
+   2
+  ],
+  "mirror": [
+   2,
+   0,
+   2
+  ],
+  "app-test": [
+   4,
+   0,
+   1
+  ],
+  "redteam": [
+   3,
+   0,
+   2
+  ],
+  "sec-hacked": [
+   4,
+   0,
+   3
+  ],
+  "ai-own": [
+   10,
+   0,
+   1
+  ],
+  "ai-assistant": [
+   6,
+   0,
+   2
+  ],
+  "ai-line": [
+   8,
+   0,
+   2
+  ],
+  "bots": [
+   3,
+   0,
+   1,
+   5000
+  ],
+  "crew": [
+   24,
+   0,
+   1,
+   20000
+  ],
+  "ai-batch": [
+   0.3,
+   0,
+   1
+  ],
+  "crawl-pay": [
+   1.5,
+   0,
+   1
+  ],
+  "demand-prices": [
+   8,
+   0,
+   2
+  ],
+  "ai-automation": [
+   4,
+   0,
+   2
+  ],
+  "leads": [
+   1.5,
+   0,
+   2
+  ],
+  "data-crawl": [
+   3,
+   0,
+   2
+  ],
+  "research": [
+   1,
+   0,
+   2
+  ],
+  "price-watch": [
+   1,
+   0,
+   2
+  ],
+  "traffic": [
+   0.5,
+   0,
+   1
+  ],
+  "street-survey": [
+   4,
+   0,
+   1
+  ],
+  "graphics": [
+   4,
+   0,
+   2
+  ],
+  "video": [
+   2,
+   0,
+   2
+  ],
+  "drawn": [
+   0.5,
+   0,
+   1
+  ],
+  "interactive": [
+   5,
+   0,
+   1
+  ],
+  "decks": [
+   3,
+   0,
+   2
+  ],
+  "patterns": [
+   1,
+   0,
+   1
+  ],
+  "article": [
+   1.5,
+   0,
+   1
+  ],
+  "copy": [
+   2,
+   0,
+   2
+  ],
+  "newsletter": [
+   1,
+   0,
+   1
+  ],
+  "social": [
+   0.4,
+   0,
+   1
+  ],
+  "proposal": [
+   3,
+   0,
+   2
+  ],
+  "awards": [
+   8,
+   0,
+   2
+  ],
+  "cartoons": [
+   3,
+   0,
+   1
+  ],
+  "interview": [
+   8,
+   0,
+   1
+  ],
+  "move": [
+   15,
+   0,
+   3
+  ],
+  "luggage": [
+   1,
+   0,
+   2
+  ],
+  "partner": [
+   5,
+   0,
+   2
+  ],
+  "merchant": [
+   2,
+   0,
+   3
+  ],
+  "books": [
+   3,
+   0,
+   3
+  ],
+  "payouts": [
+   1,
+   0,
+   2
+  ],
+  "invoice": [
+   0.3,
+   0,
+   2
+  ],
+  "exchange": [
+   3,
+   0,
+   1
+  ],
+  "staff-papers": [
+   1,
+   0,
+   2
+  ],
+  "assistant": [
+   40,
+   0,
+   2
+  ],
+  "cs-desk": [
+   30,
+   0,
+   2
+  ],
+  "calls-out": [
+   10,
+   0,
+   2
+  ],
+  "typing": [
+   2,
+   0,
+   2
+  ],
+  "subtitles": [
+   0.5,
+   0,
+   1
+  ],
+  "voice": [
+   0.5,
+   0,
+   1
+  ],
+  "retire": [
+   12,
+   0,
+   3
+  ],
+  "elder-care": [
+   10,
+   0,
+   3
+  ],
+  "care-visits": [
+   2,
+   0,
+   3
+  ],
+  "specialist": [
+   4,
+   0,
+   3
+  ],
+  "death-help": [
+   10,
+   0,
+   3
+  ],
+  "lab-test": [
+   1.5,
+   0,
+   3
+  ],
+  "clean-air": [
+   2,
+   0,
+   2
+  ],
+  "accident": [
+   6,
+   0,
+   3
+  ],
+  "wedding": [
+   30,
+   0,
+   1
+  ],
+  "bride": [
+   8,
+   0,
+   1
+  ],
+  "event-plan": [
+   12,
+   0,
+   1
+  ],
+  "rentals": [
+   1,
+   0,
+   2
+  ],
+  "letting": [
+   4,
+   0,
+   2
+  ],
+  "compare": [
+   1.5,
+   0,
+   2
+  ],
+  "blood": [
+   1,
+   0,
+   3
+  ]
+ }
+}

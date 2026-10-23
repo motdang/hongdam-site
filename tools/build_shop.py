@@ -322,8 +322,27 @@ def category(lang, cat):
     if cat.get("note"):
         out += '<p><b>%s</b></p>\n' % E(tr(cat["note"], lang))
     out += '<ul class="cards">%s</ul>\n' % "".join(card_html(c, lang) for c in SHOP["cards"] if c["cat"] == cat["id"])
+    out += know(lang, cat)
     out += search_box(lang) + not_here(lang) + '</main>\n' + foot(lang, group=cat["id"])
     return out
+
+
+def know(lang, cat):
+    """Facts and other people's fees for a category, each with its source, from cats[].facts and cats[].costs."""
+    from urllib.parse import quote, urlsplit
+    ui = SHOP["ui"][lang]
+    if not cat.get("facts") and not cat.get("costs"):
+        return ""
+
+    def src(u):
+        host = urlsplit(u).netloc.removeprefix("www.")
+        return ' <a class="src" href="%s" target="_blank" rel="noopener">%s</a>' % (E(quote(u, safe=":/?=&#%~+,;@!$*'()")), E(host))
+    out = '<section class="know">\n<h2>%s</h2>\n<ul>%s</ul>\n' % (
+        E(ui["know"]), "".join("<li>%s%s</li>" % (E(tr(f["t"], lang)), src(f["src"])) for f in cat.get("facts", [])))
+    if cat.get("costs"):
+        out += '<h3>%s</h3>\n<table>%s</table>\n' % (E(ui["costs"]), "".join(
+            '<tr><th scope="row">%s</th><td>%s%s</td></tr>' % (E(tr(k["t"], lang)), E(tr(k["p"], lang)), src(k["src"])) for k in cat["costs"]))
+    return out + '<p class="read">%s</p>\n</section>\n' % E(ui["read"].replace("{date}", SHOP.get("facts_read", "")))
 
 
 def buy_page(lang):
