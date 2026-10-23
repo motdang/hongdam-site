@@ -111,7 +111,7 @@
 
   <section>
     <h2>Prices</h2>
-    <div class="prices"><div><span>New translation</span><b>฿1,500</b><i>Up to 5 pages; ฿500 a page after that.</i></div><div><span>Checking an existing translation</span><b>฿500</b><i>Up to 5 pages; ฿150 a page after that.</i></div><div><span>Stamp</span><b>฿100</b><i>A page.</i></div><div><span>Interpreting</span><b>Quote</b><i>In writing, by the hour and the place.</i></div></div>
+    <div class="prices"><div><span>New translation</span><b>฿1,500</b><i>Up to 5 pages; ฿500 a page after that.</i></div><div><span>Checking an existing translation</span><b>฿500</b><i>Up to 5 pages; ฿150 a page after that.</i></div><div><span>Stamp</span><b>฿100</b><i>A page.</i></div><div><span>Interpreting by phone or video</span><b data-live="services/interp-phone">฿400</b><i>Per 30 minutes.</i></div><div><span>Interpreting in person</span><b data-live="services/interp-person">฿3,000</b><i>Up to 4 hours, in Chiang Rai or Chiang Mai.</i></div><div><span>Interpreting in person, full day</span><b data-live="services/interp-day">฿5,000</b><i>Up to 8 hours.</i></div></div>
     <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="en" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}'></div>
     <script type="module" src="/pay/paybox.js"></script>
   </section>
@@ -126,7 +126,7 @@
 
   <section>
     <h2>How it works</h2>
-    <div class="steps"><div><b>Photos</b><p>A photo or a scan of each page. A phone photo works when every line can be read.</p></div><div><b>Price</b><p>From the table above, in writing before any work starts. Interpreting by quote.</p></div><div><b>Delivery</b><p>A PDF by email or LINE, and as stamped paper if you ask for it.</p></div></div>
+    <div class="steps"><div><b>Photos</b><p>A photo or a scan of each page. A phone photo works when every line can be read.</p></div><div><b>Price</b><p>From the table above, in writing before any work starts.</p></div><div><b>Delivery</b><p>A PDF by email or LINE, and as stamped paper if you ask for it.</p></div></div>
   </section>
 
   <section id="quote">
@@ -175,5 +175,6 @@
 })();
 </script>
 <script src="/ticker.js" defer></script>
+<script>fetch('/api/services').then(function(r){return r.ok?r.json():null}).then(function(j){if(!j)return;var by={};j.kinds.forEach(function(k){by[k.id]=k});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){var k=by[x.getAttribute('data-live').slice(9)];if(k)x.textContent='฿'+Number(k.baht).toLocaleString('en-US')})}).catch(function(){})</script>
 </body>
 </html>
