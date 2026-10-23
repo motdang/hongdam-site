@@ -172,9 +172,9 @@ async function startBuy() {
     return walkNum(walkOf(p.w), p.part, 'THB') ?? p.fixed ?? 0
   }
   const totalOf = (o, n, add) => {
-    const p = o.price, w = walkOf(p.w)
+    const p = o.price, w = walkOf(p.w), a = addOn(o)
     let t = p.tier ? (walkNum(w, 'price', 'THB') ?? p.tier[0]) + Math.max(0, n - p.tier[1]) * (walkNum(w, 'tail', 'THB') ?? p.tier[2]) : base(o) * n
-    if (add && card.add && !p.usd) t += (walkNum(walkOf(card.add.w), 'price', 'THB') ?? card.add.fixed) * n
+    if (add && a && !p.usd) t += (walkNum(walkOf(a.w), 'price', 'THB') ?? a.fixed) * (a.unit ? addN() : n)
     return t
   }
   const cur = (o) => (o.price.usd ? 'USD' : 'THB')
@@ -188,7 +188,8 @@ ${card.opts.length > 1 ? `<fieldset><legend>${esc(T.choose)}</legend>${card.opts
 <div class="qtyrow" hidden><span class="lab">${esc(T.qty)}</span>
  <button type="button" class="step" data-d="-1" aria-label="−">−</button><input name="qty" type="number" inputmode="numeric" min="1" value="1" aria-label="${esc(T.qty)}"><button type="button" class="step" data-d="1" aria-label="+">+</button>
  <span class="unit"></span></div>
-${card.add ? `<label class="opt"><input type="checkbox" name="addon"> <span>${card.add.nh || esc(card.add.n)}</span></label>` : ''}
+${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <span>${card.add.nh || esc(card.add.n)}</span></label>${card.add.unit ? `
+<div class="qtyrow addq" hidden><span class="lab">${esc(T.qty)}</span><input name="addonQty" type="number" inputmode="numeric" min="1" max="${card.add.max || 8}" value="1" aria-label="${esc(card.add.unitMany || T.qty)}"> <span class="unit">${esc(card.add.unitMany || '')}</span></div>` : ''}` : ''}
 <p class="tot"><span>${esc(T.total)}</span> <b id="total"></b></p><p id="halfnote" class="note" hidden></p>
 <label class="field">${esc(T.reach)}<input name="contact" required autocomplete="tel" maxlength="120"></label>
 <label class="field">${esc(T.note)}<textarea name="note" rows="3" maxlength="600"></textarea></label>
@@ -196,10 +197,16 @@ ${card.add ? `<label class="opt"><input type="checkbox" name="addon"> <span>${ca
 <p id="bmsg" role="status"></p>
 </form><div id="pay" hidden></div>`
   const f = $('#bf', root), qty = f.elements.qty
+  // The add-on, when this option takes it; an add-on with a unit (hours of haggling) has its own count.
+  const addOn = (o) => (card.add && (!card.add.for || card.add.for.includes(o.id)) ? card.add : null)
+  const addN = () => Math.max(1, Math.min(card.add.max || 8, parseInt(f.elements.addonQty.value, 10) || 1))
   const n = () => (opt.unit ? Math.max(1, Math.min(opt.max || 99, parseInt(qty.value, 10) || 1)) : 1)
   function redraw() {
     $('#odesc', root).textContent = opt.d || ''
     $('.qtyrow', root).hidden = !opt.unit
+    const ad = $('.addon', root), on = !!addOn(opt)
+    if (ad) { ad.hidden = !on; if (!on) f.elements.addon.checked = false }
+    if ($('.addq', root)) $('.addq', root).hidden = !(on && f.elements.addon.checked)
     if (opt.unit) { qty.max = opt.max || 99; $('.unit', root).textContent = opt.unitMany || '' }
     card.opts.forEach((o) => { const e = $(`.oprice[data-o="${o.id}"]`, root); if (e && o.price.walk) e.textContent = fmt(base(o)) + (o.per || '') })
     liveText(root)
@@ -226,7 +233,7 @@ ${card.add ? `<label class="opt"><input type="checkbox" name="addon"> <span>${ca
     let j
     try {
       j = await (await fetch('/api/buy', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({
-        card: card.id, opt: opt.id, qty: n(), addon: !!(f.elements.addon && f.elements.addon.checked), contact, note: f.elements.note.value, lang: D.lang }) })).json()
+        card: card.id, opt: opt.id, qty: n(), addon: f.elements.addon && f.elements.addon.checked ? (card.add.unit ? addN() : true) : false, contact, note: f.elements.note.value, lang: D.lang }) })).json()
     } catch { j = { ok: false, why: 'service' } }
     if (!j.ok) { m.textContent = T.err[j.why] || T.err.service; return }
     m.textContent = ''

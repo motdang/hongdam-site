@@ -144,6 +144,12 @@ def add_rule(c, lang=None):
     r = {"id": a["i"], "fixed": a["fixed"]}
     if "floor" in ITEMS.get(a["i"], {}):
         r["w"] = a["i"]
+    if a.get("u"):   # its own count, e.g. hours of haggling
+        r["unit"], r["max"] = a["u"], a.get("max", 8)
+        if lang:
+            r["unitMany"] = tr(SHOP["units"][a["u"]]["many"], lang)
+    if a.get("for"):
+        r["for"] = a["for"]
     if lang:
         n = walk_num(a["i"], "price", "THB", a["fixed"])
         r["n"] = tr(a["n"], lang).replace("{price}", money(n))

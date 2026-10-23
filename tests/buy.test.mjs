@@ -67,6 +67,16 @@ r = await (await onRequest(team({ ref: rows[0][0], state: 'started' }))).json()
 assert.equal(r.state, 'started')
 r = await (await onRequest(team({ ref: rows[0][0], state: 'sideways' }))).json()
 assert.equal(r.why, 'body')
+// haggling by the hour (her word 2026-10-24): its own count, only on the options that take it
+assert.equal(quote('vehicle', 'car-buy', 1, 3, { 'car-buy': 8000, dispute: 800 }).total, 8000 + 3 * 800)
+assert.equal(quote('vehicle', 'moto-buy', 1, true, { 'moto-buy': 4000, dispute: 1000 }).total, 5000)
+assert.equal(quote('vehicle', 'car-buy', 1, 99, { 'car-buy': 8000, dispute: 800 }).addon, CARDS.vehicle.add.max)
+assert.equal(quote('amulet', 'amulet-buy', 1, 2, { 'amulet-buy': 1000, dispute: 800 }).total, 2600)
+assert.equal(quote('amulet', 'amulet-check', 2, 2, { 'amulet-check': 500, dispute: 800 }).total, 1000)
+assert.equal(quote('dispute', 'dispute', 3, false, { dispute: 800 }).total, 2400)
+// the stamp is still per page
+assert.equal(quote('translate', 'lang-new', 8, true, walked).addon, 8)
+
 // her ฿2,000 plans (her word 2026-10-24, "Send them to me"): a mail to her alone, nothing in #help-desk
 const calls = [], realFetch = globalThis.fetch
 globalThis.fetch = async (u, o) => { calls.push([String(u), o && o.body]); return new Response('{}') }
@@ -86,5 +96,20 @@ await (await onRequest({ env: penv, params: {}, waitUntil: (p) => pend.push(p),
 await Promise.all(pend)
 assert.equal(calls.filter(([u]) => u.includes('discord')).length, 1)
 assert.deepEqual(JSON.parse(calls.find(([u]) => u.includes('resend'))[1]).to, ['desk@example.com'])
+// slips and claims: five tries a day for one order, then 429 (CodeRabbit on #51)
+const slipTry = () => onRequest({ env: { TASKS: db }, params: { path: ['slip'] }, waitUntil: () => {},
+  request: new Request('https://hongdam.net/api/buy/slip', { method: 'POST', headers: { origin: 'https://hongdam.net' }, body: (() => { const f = new FormData(); f.set('ref', 'HD-TRY000'); return f })() }) })
+for (let i = 0; i < 5; i++) assert.notEqual((await slipTry()).status, 429)
+assert.equal((await slipTry()).status, 429); assert.equal((await (await slipTry()).json()).why, 'tries')
+// a payment marked by the team counts as paid demand, under the order's own who
+const ins = []
+const db2 = { prepare: (sql) => ({ bind: (...a) => ({ run: async () => { ins.push([sql, a]); return { meta: { changes: 1 } } },
+  first: async () => ({ ref: 'HD-PAID00', card: 'vehicle', opt: 'car-buy', qty: 1, addon: 2, total: 9600, due: 9600, cur: 'THB', contact: 'line:abc', state: 'claimed' }) }) }) }
+const wait = []
+await onRequest({ env: { TASKS: db2, TASKS_ADMIN: 'k' }, params: { path: ['state'] }, waitUntil: (p) => wait.push(p),
+  request: new Request('https://hongdam.net/api/buy/state', { method: 'POST', headers: { authorization: 'Bearer k', 'content-type': 'application/json' }, body: JSON.stringify({ ref: 'HD-PAID00', state: 'paid' }) }) })
+await Promise.all(wait)
+const paid = ins.filter(([q, a]) => q.startsWith('INSERT INTO svc_order') && a[3] === 'paid').map(([, a]) => a[0]).sort()
+assert.deepEqual(paid, ['car-buy', 'dispute'])
 globalThis.fetch = realFetch
 console.log('buy ok')

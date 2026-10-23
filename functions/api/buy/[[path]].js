@@ -3,6 +3,7 @@
  *
  *   GET  /api/buy                                               {slip: true} when slips are checked by SlipOK
  *   POST /api/buy {card, opt, qty, addon, contact, note, lang}  an order; the price is worked out here
+ *                                                               (addon: true, or a count for an add-on with its own unit)
  *   POST /api/buy/slip  form: ref, slip                         a PromptPay slip, checked by SlipOK → paid
  *   POST /api/buy/claim {ref, how: paypal|wise}                 the buyer says they paid; the team checks
  *   GET  /api/buy/HD-xxxxxx                                     the order tracker: card, option and state, nothing else
@@ -41,6 +42,33 @@ async function allowed(env, ip, now) {
   return true
 }
 
+// Slip checks and payment claims (CodeRabbit on PR #51: every slip goes to SlipOK, whose quota is shared):
+// 10 a day from one address and 5 a day for one order, apart from the order quota. Without RT_LIMIT,
+// 5 a day for one order, counted in this worker's memory.
+const TRIES = new Map()
+async function triesOk(env, ip, ref, now) {
+  const day = new Date(now).toISOString().slice(0, 10)
+  if (!env.RT_LIMIT) {
+    if (TRIES.size > 5000) TRIES.clear()
+    const k = `${ref}:${day}`, n = (TRIES.get(k) || 0) + 1
+    TRIES.set(k, n)
+    return n <= 5
+  }
+  const ki = `pay:ip:${ip}:${day}`, kr = `pay:ref:${ref}:${day}`
+  const [ni, nr] = (await Promise.all([env.RT_LIMIT.get(ki), env.RT_LIMIT.get(kr)])).map((x) => Number(x) || 0)
+  if (ni >= 10 || nr >= 5) return false
+  await Promise.all([env.RT_LIMIT.put(ki, String(ni + 1), { expirationTtl: 2 * 86400 }), env.RT_LIMIT.put(kr, String(nr + 1), { expirationTtl: 2 * 86400 })])
+  return true
+}
+
+// A confirmed payment counts in full for the price walk (412e47c: unpaid orders hold a price, paid ones move it).
+// Same who as the order's 'buy' record, so a booked-then-paid order counts once.
+async function paidDemand(db, o, now) {
+  const who = await whoHash(o.contact || '')
+  const add = o.addon ? CARDS[o.card]?.add?.id : null
+  await Promise.all([record(db, o.opt, who, 'paid', now), add && record(db, add, who, 'paid', now)])
+}
+
 async function mail(env, subject, text, replyTo, only) {
   const to = (only || env.ORDER_TO || env.CONTACT_TO || '').split(',').map((s) => s.trim()).filter(Boolean)
   if (!env.RESEND_API_KEY || !to.length) return
@@ -58,7 +86,7 @@ const notify = (env, card, title, lines, subject, replyTo) => (HERS.has(card)
   : Promise.all([tell(env, title, lines), mail(env, subject, lines.join('\n'), replyTo)]))
 
 const lineOf = (o) => [
-  `${CARDS[o.card]?.en || o.card} · ${o.opt}${o.qty > 1 ? ` × ${o.qty}` : ''}${o.addon ? ' + stamp' : ''}`,
+  `${CARDS[o.card]?.en || o.card} · ${o.opt}${o.qty > 1 ? ` × ${o.qty}` : ''}${o.addon ? ` + ${CARDS[o.card]?.add?.id || 'add-on'}${CARDS[o.card]?.add?.unit ? ` × ${o.addon} ${CARDS[o.card].add.unit}` : ''}` : ''}`,
   `Total ${money(o.total, o.cur)} · due now ${money(o.due, o.cur)}`,
   `Contact: ${code(o.contact)}${o.lang ? ` · page ${o.lang}` : ''}`,
   o.note && `Note: ${code(o.note)}`,
@@ -84,7 +112,7 @@ async function order(ctx, b, now) {
     const r = newRef()
     try {
       await db.prepare('INSERT INTO svc_buy (ref, card, opt, qty, addon, total, due, cur, contact, note, lang, created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)')
-        .bind(r, card, q.opt, q.qty, q.addon ? 1 : 0, q.total, q.due, q.cur, contact, note || null, lang, new Date(now).toISOString()).run()
+        .bind(r, card, q.opt, q.qty, q.addon || 0, q.total, q.due, q.cur, contact, note || null, lang, new Date(now).toISOString()).run()
       ref = r
     } catch { /* a ref taken, or the database busy: try another */ }
   }
@@ -92,16 +120,19 @@ async function order(ctx, b, now) {
   const o = { ref, card, ...q, contact, note, lang }
   ctx.waitUntil(Promise.all([
     record(db, q.opt, await whoHash(contact), 'buy', now),
+    q.addon && record(db, CARDS[card].add.id, await whoHash(contact), 'buy', now),
     notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(q.due, q.cur)} due`, contact),
   ]))
   return json({ ok: true, ref, total: q.total, due: q.due, cur: q.cur, qty: q.qty, half: q.due < q.total, pay: payLinks(q.cur, q.due) })
 }
 
-async function slip(ctx) {
+async function slip(ctx, now) {
   const { request, env } = ctx
   let form
   try { form = await request.formData() } catch { return json({ ok: false, why: 'nofile' }, 400) }
   const ref = clean(form.get('ref'), 12)
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  if (!(await triesOk(env, request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o) return json({ ok: false, why: 'ref' }, 404)
   if (o.state === 'paid' || o.state === 'done') return json({ ok: true, ref, amount: o.due })
@@ -111,13 +142,15 @@ async function slip(ctx) {
   const u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state IN ('booked','claimed')").bind(r.transRef, ref).run()
   if (u?.meta?.changes === 0) return json({ ok: false, why: 'state' })
   const lines = [`Paid ${money(o.due, 'THB')} by PromptPay · bank ref ${r.transRef}`, ...lineOf(o)]
-  ctx.waitUntil(notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(o.due, 'THB')} · order ${ref}`))
+  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(o.due, 'THB')} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
   return json({ ok: true, ref, amount: o.due })
 }
 
-async function claim(ctx, b) {
-  const { env } = ctx
+async function claim(ctx, b, now) {
+  const { request, env } = ctx
   const ref = clean(b.ref, 12), how = b.how === 'wise' ? 'wise' : 'paypal'
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  if (!(await triesOk(env, request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o) return json({ ok: false, why: 'ref' }, 404)
   if (o.state !== 'booked') return json({ ok: true, ref, state: o.state })
@@ -150,6 +183,7 @@ async function moved(ctx, b, now) {
   if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
   if (STEPS.indexOf(state) <= STEPS.indexOf(o.state)) return json({ ok: true, ref, state: o.state })
   await env.TASKS.prepare('UPDATE svc_buy SET state = ? WHERE ref = ?').bind(state, ref).run()
+  if (STEPS.indexOf(o.state) < STEPS.indexOf('paid')) ctx.waitUntil(paidDemand(env.TASKS, o, now))
   const said = [`Marked ${state} ${new Date(now).toISOString().slice(0, 16)}Z`, ...lineOf(o)]
   ctx.waitUntil(HERS.has(o.card) ? mail(env, `Order ${ref} ${state}`, said.join('\n'), '', env.PLAN_TO || 'nan@motdang.net') : tell(env, `Order ${ref} ${state}`, said))
   return json({ ok: true, ref, state })
@@ -168,7 +202,7 @@ async function handle(ctx, now) {
     return order(ctx, b, now)
   }
   if (!env.TASKS) return json({ ok: false, why: 'off' }, 503)
-  if (path[0] === 'slip') return slip(ctx)
+  if (path[0] === 'slip') return slip(ctx, now)
   if (path[0] === 'state') {
     let b
     try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
@@ -177,7 +211,7 @@ async function handle(ctx, now) {
   if (path[0] === 'claim') {
     let b
     try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
-    return claim(ctx, b || {})
+    return claim(ctx, b || {}, now)
   }
   return json({ ok: false, why: 'route' }, 404)
 }

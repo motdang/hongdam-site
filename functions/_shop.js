@@ -51,9 +51,16 @@ export function quote(card, opt, qty, addon, walked) {
   } else if (p.fixed) total = (walkNum(w, p.part, 'THB') ?? p.fixed) * n
   else if (p.usd) { total = (walkNum(w, p.part, 'USD') ?? p.usd) * n; cur = 'USD' }
   else return { error: 'price' }
-  if (addon && c.add && cur === 'THB') total += (walkNum(c.add.w && walked[c.add.w], 'price', 'THB') ?? c.add.fixed) * n
+  // The add-on: per unit of the option (the translator's stamp, per page), or with its own count when it
+  // has a unit (haggling, by the hour: her word 2026-10-24). add.for limits it to some options.
+  const add = c.add && (!c.add.for || c.add.for.includes(o.id)) ? c.add : null
+  let k = 0
+  if (addon && add && cur === 'THB') {
+    k = add.unit ? Math.max(1, Math.min(add.max || 8, Math.floor(Number(addon)) || 1)) : n
+    total += (walkNum(add.w && walked[add.w], 'price', 'THB') ?? add.fixed) * k
+  }
   const due = total >= HALF_FROM[cur] ? Math.ceil(total / 2) : total
-  return { total, due, cur, qty: n, opt: o.id, addon: !!(addon && c.add) }
+  return { total, due, cur, qty: n, opt: o.id, addon: k }
 }
 
 /** {item id: {price, cur, tail}} for every walking price that is not a percentage. */

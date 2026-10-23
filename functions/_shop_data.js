@@ -1480,20 +1480,6 @@ export const CARDS = {
    }
   ]
  },
- "dispute": {
-  "act": "buy",
-  "en": "Haggling buddy",
-  "opts": [
-   {
-    "id": "dispute",
-    "price": {
-     "walk": true
-    },
-    "unit": false,
-    "max": 99
-   }
-  ]
- },
  "legalise": {
   "act": "buy",
   "en": "Document legalised",
@@ -1536,6 +1522,35 @@ export const CARDS = {
    }
   ]
  },
+ "vehicle": {
+  "act": "buy",
+  "en": "Car or motorcycle bought with you",
+  "opts": [
+   {
+    "id": "car-buy",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "moto-buy",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ],
+  "add": {
+   "id": "dispute",
+   "fixed": 800,
+   "w": "dispute",
+   "unit": "hour",
+   "max": 8
+  }
+ },
  "compare": {
   "act": "buy",
   "en": "Comparison shopping",
@@ -1555,6 +1570,20 @@ export const CARDS = {
     },
     "unit": false,
     "max": 99
+   }
+  ]
+ },
+ "dispute": {
+  "act": "buy",
+  "en": "Haggling buddy",
+  "opts": [
+   {
+    "id": "dispute",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 8
    }
   ]
  },
@@ -1750,7 +1779,17 @@ export const CARDS = {
     "unit": false,
     "max": 99
    }
-  ]
+  ],
+  "add": {
+   "id": "dispute",
+   "fixed": 800,
+   "w": "dispute",
+   "unit": "hour",
+   "max": 8,
+   "for": [
+    "amulet-buy"
+   ]
+  }
  },
  "name-charm": {
   "act": "buy",

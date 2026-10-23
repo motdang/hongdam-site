@@ -85,7 +85,8 @@
     "state": "That order is closed. Message us on LINE.",
     "origin": "Order from hongdam.net.",
     "body": "Something went wrong. Try again.",
-    "route": "Something went wrong. Try again."
+    "route": "Something went wrong. Try again.",
+    "tries": "Too many tries for this order today. Send your slip to us on LINE."
    },
    "know": "Good to know",
    "costs": "What others charge",
@@ -170,7 +171,8 @@
     "state": "ออเดอร์นี้ปิดแล้ว ทักไลน์มาได้",
     "origin": "สั่งจาก hongdam.net",
     "body": "มีบางอย่างผิดพลาด ลองอีกครั้ง",
-    "route": "มีบางอย่างผิดพลาด ลองอีกครั้ง"
+    "route": "มีบางอย่างผิดพลาด ลองอีกครั้ง",
+    "tries": "วันนี้ลองกับคำสั่งซื้อนี้หลายครั้งแล้ว ส่งสลิปให้เราทาง LINE"
    },
    "know": "ข้อมูลน่ารู้",
    "costs": "ค่าใช้จ่ายที่จ่ายให้ผู้อื่น",
@@ -255,7 +257,8 @@
     "state": "ဤအော်ဒါ ပိတ်ပြီးပါပြီ။ LINE ဖြင့် ဆက်သွယ်ပါ။",
     "origin": "hongdam.net မှ မှာယူပါ။",
     "body": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။",
-    "route": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။"
+    "route": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။",
+    "tries": "ဒီနေ့ ဒီအော်ဒါအတွက် အကြိမ်များလွန်းပါပြီ။ စလစ်ကို LINE မှ ပို့ပါ။"
    },
    "know": "သိထားသင့်သည်",
    "costs": "အခြားသူများ ကောက်ခံသော စျေးနှုန်း",
@@ -340,7 +343,8 @@
     "state": "这个订单已关闭。请在 LINE 上联系我们。",
     "origin": "请在 hongdam.net 下单。",
     "body": "出了点问题，请重试。",
-    "route": "出了点问题，请重试。"
+    "route": "出了点问题，请重试。",
+    "tries": "今天这笔订单尝试次数过多。请通过 LINE 把凭证发给我们。"
    },
    "know": "须知",
    "costs": "第三方收费参考",
@@ -5253,29 +5257,6 @@
    ]
   },
   {
-   "id": "dispute",
-   "cat": "help",
-   "n": {
-    "en": "Haggling buddy",
-    "th": "เพื่อนช่วยต่อรอง",
-    "my": "စျေးဆစ်ပေးမည့် အဖော်",
-    "zh": "砍价帮手"
-   },
-   "l": {
-    "en": "Deposit, repair, bill or neighbour: we talk to them in Thai.",
-    "th": "เงินมัดจำ งานซ่อม บิล เพื่อนบ้าน เราคุยให้",
-    "my": "စပေါ်ငွေ၊ ပြင်ဆင်ခ၊ ဘေလ်၊ အိမ်နီးချင်း — ထိုင်းလို ပြောပေးသည်။",
-    "zh": "押金、维修、账单、邻居纠纷，我们用泰语交涉。"
-   },
-   "kw": "dispute deposit refund landlord bargain haggle negotiate complaint ต่อรอง มัดจำ คืนเงิน ร้องเรียน 押金 退款 纠纷 讨价还价 投诉",
-   "act": "buy",
-   "opts": [
-    {
-     "i": "dispute"
-    }
-   ]
-  },
-  {
    "id": "legalise",
    "cat": "help",
    "n": {
@@ -5351,6 +5332,56 @@
    ]
   },
   {
+   "id": "vehicle",
+   "cat": "help",
+   "n": {
+    "en": "Car or motorcycle bought with you",
+    "th": "ซื้อรถยนต์หรือมอเตอร์ไซค์ไปด้วยกัน",
+    "my": "ကား သို့မဟုတ် ဆိုင်ကယ် အတူဝယ်ပေး",
+    "zh": "陪您买汽车或摩托车"
+   },
+   "l": {
+    "en": "Shortlist, dealer visits, test drives, the registration in your name. Haggling is extra, by the hour.",
+    "th": "คัดรถ พาไปดูที่ดีลเลอร์ ทดลองขับ โอนทะเบียนเป็นชื่อคุณ การต่อรองราคาคิดเพิ่มรายชั่วโมง",
+    "my": "ရွေးချယ်စာရင်း၊ အရောင်းဆိုင်သွား၊ စမ်းမောင်း၊ သင့်အမည်ဖြင့် မှတ်ပုံတင်။ စျေးဆစ်ခြင်းကို နာရီအလိုက် ထပ်ယူသည်။",
+    "zh": "筛选车辆、陪看车行、试驾，过户到您名下。砍价另计，按小时收费。"
+   },
+   "kw": "buy a car thailand buy motorcycle scooter dealer test drive used car registration transfer green book dlt ซื้อรถ ซื้อมอเตอร์ไซค์ ทดลองขับ โอนรถ เล่มทะเบียน 买车 买摩托车 试驾 过户",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "car-buy",
+     "n": {
+      "en": "Car",
+      "th": "รถยนต์",
+      "my": "ကား",
+      "zh": "汽车"
+     }
+    },
+    {
+     "i": "moto-buy",
+     "n": {
+      "en": "Motorcycle or scooter",
+      "th": "มอเตอร์ไซค์หรือสกู๊ตเตอร์",
+      "my": "ဆိုင်ကယ် သို့မဟုတ် စကူတာ",
+      "zh": "摩托车或踏板车"
+     }
+    }
+   ],
+   "add": {
+    "i": "dispute",
+    "u": "hour",
+    "max": 8,
+    "fixed": 800,
+    "n": {
+     "en": "Haggling with the dealer, {price} an hour",
+     "th": "ต่อรองราคากับดีลเลอร์ ชั่วโมงละ {price}",
+     "my": "အရောင်းဆိုင်နှင့် စျေးဆစ်ခြင်း၊ တစ်နာရီ {price}",
+     "zh": "与车行砍价，每小时 {price}"
+    }
+   }
+  },
+  {
    "id": "compare",
    "cat": "help",
    "n": {
@@ -5385,6 +5416,31 @@
       "my": "သင့်လုပ်ငန်းအတွက် ပေးသွင်းသူ",
       "zh": "为企业找供应商"
      }
+    }
+   ]
+  },
+  {
+   "id": "dispute",
+   "cat": "help",
+   "n": {
+    "en": "Haggling buddy",
+    "th": "เพื่อนช่วยต่อรอง",
+    "my": "စျေးဆစ်ပေးမည့် အဖော်",
+    "zh": "砍价帮手"
+   },
+   "l": {
+    "en": "A dealer, an amulet seller, a deposit, a repair, a bill or a neighbour: we talk to them in Thai.",
+    "th": "ดีลเลอร์ ผู้ให้เช่าพระ เงินมัดจำ งานซ่อม บิล เพื่อนบ้าน เราคุยให้เป็นภาษาไทย",
+    "my": "အရောင်းဆိုင်၊ ဆောင်ဖွယ်ရောင်းသူ၊ စပေါ်ငွေ၊ ပြင်ဆင်ခ၊ ဘေလ်၊ အိမ်နီးချင်း — ထိုင်းလို ပြောပေးသည်။",
+    "zh": "车行、佛牌店主、押金、维修、账单、邻居，我们用泰语交涉。"
+   },
+   "kw": "dispute deposit refund landlord bargain haggle negotiate complaint ต่อรอง มัดจำ คืนเงิน ร้องเรียน 押金 退款 纠纷 讨价还价 投诉 car dealer amulet seller price ต่อราคา 砍价 议价",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "dispute",
+     "u": "hour",
+     "max": 8
     }
    ]
   },
@@ -5753,12 +5809,12 @@
     "zh": "佛牌"
    },
    "l": {
-    "en": "An opinion from your photos, or one bought for you at a market.",
-    "th": "ดูจากรูป หรือซื้อให้ที่ตลาด",
-    "my": "ဓာတ်ပုံမှ အမြင် သို့မဟုတ် ဈေးတွင် ဝယ်ပေး။",
-    "zh": "根据照片给意见，或去市场代买。"
+    "en": "An opinion from your photos, or one found for you at a market.",
+    "th": "ดูจากรูป หรือเช่าให้ที่ตลาด",
+    "my": "ဓာတ်ပုံမှ အမြင် သို့မဟုတ် ဈေးတွင် ပင့်ဆောင်ပေး။",
+    "zh": "根据照片给意见，或去市场代请。"
    },
-   "kw": "amulet thai amulet buddha amulet appraisal real or fake price buy amulet market พระเครื่อง ดูพระ เช่าพระ ตลาดพระ 佛牌 泰国佛牌 鉴定 代购",
+   "kw": "amulet thai amulet buddha amulet appraisal real or fake price buy amulet market พระเครื่อง ดูพระ เช่าพระ ตลาดพระ 佛牌 泰国佛牌 鉴定 代购 rent amulet 请佛牌 代请",
    "act": "buy",
    "opts": [
     {
@@ -5775,13 +5831,28 @@
     {
      "i": "amulet-buy",
      "n": {
-      "en": "Bought for you",
-      "th": "ซื้อให้",
-      "my": "ဝယ်ပေး",
-      "zh": "代买"
+      "en": "Found for you at a market",
+      "th": "เช่าให้ที่ตลาด",
+      "my": "ဈေးတွင် ပင့်ဆောင်ပေး",
+      "zh": "去市场代请"
      }
     }
-   ]
+   ],
+   "add": {
+    "i": "dispute",
+    "u": "hour",
+    "max": 8,
+    "fixed": 800,
+    "n": {
+     "en": "Haggling with the seller, {price} an hour",
+     "th": "ต่อรองกับผู้ให้เช่าพระ ชั่วโมงละ {price}",
+     "my": "ရောင်းသူနှင့် စျေးဆစ်ခြင်း၊ တစ်နာရီ {price}",
+     "zh": "与佛牌店主议价，每小时 {price}"
+    },
+    "for": [
+     "amulet-buy"
+    ]
+   }
   },
   {
    "id": "name-charm",
