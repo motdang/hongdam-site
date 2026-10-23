@@ -1,0 +1,349 @@
+{
+ "doors": {
+  "help": "wai",
+  "outsource": "typewriter",
+  "translate": "translate",
+  "shop": "cart",
+  "stay": "home",
+  "events": "lantern",
+  "web": "laptop",
+  "fix": "lock",
+  "ai": "robot",
+  "data": "abacus",
+  "design": "pencil",
+  "moving": "songthaew",
+  "ship": "parcel",
+  "charity": "heart",
+  "money": "coin",
+  "visa": "passport"
+ },
+ "pics": {
+  "call": [
+   "telephone",
+   "chat",
+   "nib"
+  ],
+  "trades": [
+   "home",
+   "telephone",
+   "wrench",
+   "calendar"
+  ],
+  "there": [
+   "home",
+   "translate",
+   "eye"
+  ],
+  "errand": [
+   "cart",
+   "scooter",
+   "done"
+  ],
+  "form": [
+   "page",
+   "pencil",
+   "done"
+  ],
+  "dispute": [
+   "angry",
+   "chat",
+   "smile"
+  ],
+  "thai-plan": [
+   "thinking",
+   "lightbulb",
+   "page"
+  ],
+  "legalise": [
+   "page",
+   "scooter",
+   "stamp"
+  ],
+  "idme": [
+   "lock",
+   "key",
+   "thumbs-up"
+  ],
+  "homehelp": [
+   "home",
+   "page",
+   "pencil"
+  ],
+  "doctor": [
+   "heart",
+   "coin",
+   "translate"
+  ],
+  "translate": [
+   "page",
+   "translate",
+   "stamp"
+  ],
+  "interp": [
+   "chat",
+   "translate",
+   "wai"
+  ],
+  "site": [
+   "lightbulb",
+   "laptop",
+   "earth"
+  ],
+  "php": [
+   "server",
+   "wrench",
+   "lock"
+  ]
+ },
+ "master": [
+  {
+   "db": "manicule"
+  },
+  {
+   "db": "scan"
+  },
+  {
+   "db": "gears"
+  }
+ ],
+ "track": [
+  {
+   "db": "send",
+   "state": "booked"
+  },
+  {
+   "db": "coin",
+   "state": "paid"
+  },
+  {
+   "db": "gears",
+   "state": "started"
+  },
+  {
+   "db": "done",
+   "state": "done"
+  }
+ ],
+ "glyphs": {
+  "telephone": {
+   "en": "Phone",
+   "th": "โทรศัพท์",
+   "my": "ဖုန်း",
+   "zh": "电话"
+  },
+  "chat": {
+   "en": "Talk",
+   "th": "คุย",
+   "my": "စကားပြော",
+   "zh": "交谈"
+  },
+  "nib": {
+   "en": "Notes",
+   "th": "จดให้",
+   "my": "မှတ်စု",
+   "zh": "记录"
+  },
+  "home": {
+   "en": "Home",
+   "th": "บ้าน",
+   "my": "အိမ်",
+   "zh": "家"
+  },
+  "wrench": {
+   "en": "Repair",
+   "th": "ซ่อม",
+   "my": "ပြင်ဆင်",
+   "zh": "维修"
+  },
+  "calendar": {
+   "en": "Booked",
+   "th": "นัดแล้ว",
+   "my": "ချိန်းပြီး",
+   "zh": "已预约"
+  },
+  "translate": {
+   "en": "Translate",
+   "th": "แปล",
+   "my": "ဘာသာပြန်",
+   "zh": "翻译"
+  },
+  "eye": {
+   "en": "Checked",
+   "th": "ตรวจดู",
+   "my": "စစ်ဆေး",
+   "zh": "检查"
+  },
+  "cart": {
+   "en": "Shop",
+   "th": "ซื้อของ",
+   "my": "ဈေးဝယ်",
+   "zh": "采购"
+  },
+  "scooter": {
+   "en": "On the way",
+   "th": "กำลังไป",
+   "my": "လာနေပြီ",
+   "zh": "在路上"
+  },
+  "done": {
+   "en": "Done",
+   "th": "เสร็จ",
+   "my": "ပြီးပြီ",
+   "zh": "完成"
+  },
+  "page": {
+   "en": "Paper",
+   "th": "เอกสาร",
+   "my": "စာရွက်",
+   "zh": "文件"
+  },
+  "pencil": {
+   "en": "Filled in",
+   "th": "กรอกแล้ว",
+   "my": "ဖြည့်ပြီး",
+   "zh": "填写"
+  },
+  "angry": {
+   "en": "Trouble",
+   "th": "มีปัญหา",
+   "my": "ပြဿနာ",
+   "zh": "麻烦"
+  },
+  "smile": {
+   "en": "Sorted",
+   "th": "เคลียร์แล้ว",
+   "my": "အဆင်ပြေ",
+   "zh": "解决"
+  },
+  "thinking": {
+   "en": "Question",
+   "th": "คำถาม",
+   "my": "မေးခွန်း",
+   "zh": "疑问"
+  },
+  "lightbulb": {
+   "en": "Plan",
+   "th": "แผน",
+   "my": "အစီအစဉ်",
+   "zh": "方案"
+  },
+  "stamp": {
+   "en": "Stamped",
+   "th": "ประทับตรา",
+   "my": "တံဆိပ်",
+   "zh": "盖章"
+  },
+  "lock": {
+   "en": "Locked",
+   "th": "ล็อก",
+   "my": "သော့ခတ်",
+   "zh": "锁定"
+  },
+  "key": {
+   "en": "Signed in",
+   "th": "เข้าระบบ",
+   "my": "ဝင်ပြီး",
+   "zh": "登录"
+  },
+  "thumbs-up": {
+   "en": "OK",
+   "th": "โอเค",
+   "my": "အိုကေ",
+   "zh": "好了"
+  },
+  "heart": {
+   "en": "Care",
+   "th": "ดูแล",
+   "my": "စောင့်ရှောက်",
+   "zh": "关怀"
+  },
+  "coin": {
+   "en": "Price",
+   "th": "ราคา",
+   "my": "ဈေးနှုန်း",
+   "zh": "价格"
+  },
+  "wai": {
+   "en": "Thank you",
+   "th": "ขอบคุณ",
+   "my": "ကျေးဇူး",
+   "zh": "谢谢"
+  },
+  "server": {
+   "en": "Server",
+   "th": "เซิร์ฟเวอร์",
+   "my": "ဆာဗာ",
+   "zh": "服务器"
+  },
+  "laptop": {
+   "en": "Website",
+   "th": "เว็บไซต์",
+   "my": "ဝက်ဘ်ဆိုက်",
+   "zh": "网站"
+  },
+  "earth": {
+   "en": "Online",
+   "th": "ออนไลน์",
+   "my": "အွန်လိုင်း",
+   "zh": "上线"
+  }
+ },
+ "ui": {
+  "en": {
+   "tOrdered": "Ordered",
+   "tPaid": "Paid",
+   "tChecking": "Checking payment",
+   "tStarted": "Started",
+   "tDone": "Done",
+   "trackH": "Your order",
+   "trackKeep": "Keep this page: it shows where your order is.",
+   "ladder": "Prices move with demand on the 1st of each month.",
+   "priceNow": "Price now",
+   "lo": "low",
+   "hi": "high",
+   "slotsOpen": "{n} open this month"
+  },
+  "th": {
+   "tOrdered": "สั่งแล้ว",
+   "tPaid": "จ่ายแล้ว",
+   "tChecking": "กำลังตรวจการจ่าย",
+   "tStarted": "เริ่มงานแล้ว",
+   "tDone": "เสร็จ",
+   "trackH": "คำสั่งซื้อของคุณ",
+   "trackKeep": "เก็บหน้านี้ไว้ จะเห็นว่างานถึงไหนแล้ว",
+   "ladder": "ราคาขึ้นลงตามความต้องการ ทุกวันที่ 1 ของเดือน",
+   "priceNow": "ราคาตอนนี้",
+   "lo": "ต่ำ",
+   "hi": "สูง",
+   "slotsOpen": "เดือนนี้ว่าง {n} คิว"
+  },
+  "my": {
+   "tOrdered": "မှာပြီး",
+   "tPaid": "ပေးပြီး",
+   "tChecking": "ငွေပေးချေမှု စစ်နေသည်",
+   "tStarted": "စတင်ပြီး",
+   "tDone": "ပြီးပြီ",
+   "trackH": "သင့်အော်ဒါ",
+   "trackKeep": "ဤစာမျက်နှာကို သိမ်းထားပါ။ အော်ဒါ ဘယ်ရောက်နေပြီလဲ ပြသည်။",
+   "ladder": "ဈေးနှုန်းသည် လိုအပ်ချက်အလိုက် လစဉ် ၁ ရက်နေ့တွင် ပြောင်းသည်။",
+   "priceNow": "လက်ရှိဈေး",
+   "lo": "နိမ့်",
+   "hi": "မြင့်",
+   "slotsOpen": "ဒီလ {n} ခု လွတ်သေးသည်"
+  },
+  "zh": {
+   "tOrdered": "已下单",
+   "tPaid": "已付款",
+   "tChecking": "正在核对付款",
+   "tStarted": "已开工",
+   "tDone": "完成",
+   "trackH": "您的订单",
+   "trackKeep": "请保存此页：可以看到订单进度。",
+   "ladder": "价格每月1日按需求调整。",
+   "priceNow": "当前价格",
+   "lo": "低",
+   "hi": "高",
+   "slotsOpen": "本月还剩 {n} 个名额"
+  }
+ }
+}

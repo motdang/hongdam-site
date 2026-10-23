@@ -31,6 +31,18 @@ LINE_URL = "https://line.me/R/ti/p/@964yxgnk"
 MAIL = "nan@motdang.net"
 E = html.escape
 
+# The looks layer: which doodle dingbat each door, card line, master line and tracker stop draws
+# (data/looks.json), and the bundles tools/dingbats.mjs built for them (data/dingbats.json).
+LOOKS_F = os.path.join(HERE, "data", "looks.json")
+LOOKS = json.load(open(LOOKS_F, encoding="utf-8")) if os.path.exists(LOOKS_F) else {"doors": {}, "pics": {}, "master": [], "track": [], "glyphs": {}, "ui": {}}
+for _l, _u in LOOKS["ui"].items():
+    SHOP["ui"].setdefault(_l, {}).update(_u)
+DBM_F = os.path.join(HERE, "data", "dingbats.json")
+DBM = json.load(open(DBM_F, encoding="utf-8")) if os.path.exists(DBM_F) else None
+LOOK = "lacquer"   # until Nan picks one of the three; ?look= on any page shows the others
+import re as _re
+LADDER = json.loads(_re.search(r"export const LADDER = (\[[^\]]*\])", open(os.path.join(HERE, "functions", "_services_data.js"), encoding="utf-8").read()).group(1))
+
 
 def pre(lang):
     return "" if lang == "en" else lang + "/"
@@ -56,7 +68,35 @@ def tr(d, lang):
 MISSING = set()
 # Changes when the shop data changes, so a phone fetches the new card list.
 import hashlib
-VERSION = hashlib.sha1(json.dumps([SHOP, LIVE], sort_keys=True).encode()).hexdigest()[:8]
+VERSION = hashlib.sha1(json.dumps([SHOP, LIVE, LOOKS], sort_keys=True).encode()).hexdigest()[:8]
+_CSS = os.path.join(DOCS, "assets", "shop.css")
+CSS_V = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(_CSS) else "0"
+
+
+def db(name, cls="", play="still"):
+    """A doodle dingbat; drawn by /assets/db/core.js once it loads, its box held by shop.css until then."""
+    return '<doodle-dingbat class="db%s" name="%s" play="%s" aria-hidden="true"></doodle-dingbat>' % ((" " + cls) if cls else "", E(name), play)
+
+
+def glyph_name(g, lang):
+    return tr(LOOKS["glyphs"].get(g, {"en": g}), lang)
+
+
+def job(stops, lang, caps=None, cls="", name=None):
+    """A job as a line of stops, the swan riding it. caps: words under the stops (the master line, the Buy page)."""
+    lis = "".join('<li class="stop">%s%s</li>' % (db(g), '<span class="cap">%s</span>' % caps[i] if caps else "") for i, g in enumerate(stops))
+    return '<div class="job%s"%s%s><ol>%s</ol><span class="rider">%s</span></div>' % (
+        (" " + cls) if cls else "", ' style="view-transition-name:%s"' % name if name else "", "" if caps else ' aria-hidden="true"',
+        lis, db("hongsa", play="loop"))
+
+
+def walks(c):
+    """The service id whose monthly price a card shows, when it has one option that walks."""
+    opts = c.get("opts", [])
+    if c["act"] != "buy" or len(opts) != 1 or opts[0].get("price"):
+        return None
+    it = ITEMS.get(opts[0]["i"], {})
+    return it["id"] if "baht" in it and "floor" in it else None
 
 
 def unit_one(u, lang):
@@ -132,8 +172,11 @@ def go_of(c, lang):
 
 def card_html(c, lang):
     go, btn = go_of(c, lang)
-    out = '<li class="card" id="%s"><h3>%s</h3><p class="price">%s</p><p>%s</p>' % (
-        E(c["id"]), E(tr(c["n"], lang)), card_price(c, lang), E(tr(c["l"], lang)))
+    pic = LOOKS["pics"].get(c["id"])
+    out = '<li class="card" id="%s" style="--line:var(--c-%s)">%s<h3>%s</h3><p class="price">%s</p><p class="l">%s</p>' % (
+        E(c["id"]), E(c["cat"]), job(pic, lang, name="job-" + c["id"]) if pic else "", E(tr(c["n"], lang)), card_price(c, lang), E(tr(c["l"], lang)))
+    if walks(c):
+        out += '<details class="ladder" data-svc="%s" hidden></details>' % E(walks(c))
     if c["act"] == "list":
         out += "<ul>" + "".join("<li>%s · <b>%s</b></li>" % (E(tr(o["n"], lang)), opt_price(o, lang)[0]) for o in c["opts"]) + "</ul>"
     if c.get("list"):
@@ -179,34 +222,48 @@ def client_cards(lang):
                 d["opts"].append(od)
             if c.get("add"):
                 d["add"] = {"n": tr(c["add"]["n"], lang), "fixed": c["add"]["fixed"]}
+        d["cat"] = c["cat"]
+        if LOOKS["pics"].get(c["id"]):
+            d["pic"] = LOOKS["pics"][c["id"]]
+        if walks(c):
+            d["walk"] = walks(c)
         out.append(d)
     return out
 
 
 def head(lang, title, desc, path, noindex=False):
     alts = "".join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (l, SITE, url(l, path)) for l in LANGS)
-    return ('<!doctype html>\n<html lang="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+    # ?look= and ?scheme= show the other looks and modes side by side until Nan picks one
+    pick = ("<script>try{var q=new URLSearchParams(location.search),r=document.documentElement;"
+            "if(/^(lacquer|isotype|night)$/.test(q.get('look')))r.dataset.look=q.get('look');"
+            "if(/^(light|dark)$/.test(q.get('scheme')))r.dataset.theme=q.get('scheme')}catch(e){}</script>\n")
+    return ('<!doctype html>\n<html lang="%s" data-look="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<title>%s</title>\n<meta name="description" content="%s">\n'
             '%s<link rel="canonical" href="%s%s">\n%s<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n'
-            '<link rel="stylesheet" href="/assets/shop.css">\n'
+            '%s<link rel="stylesheet" href="/assets/shop.css?v=%s">\n'
             '<meta property="og:title" content="%s">\n<meta property="og:description" content="%s">\n<meta property="og:url" content="%s%s">\n'
             '<meta property="og:image" content="%s/assets/card.jpg">\n<meta name="twitter:card" content="summary_large_image">\n</head>\n'
-            % (lang, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
-               E(title), E(desc), SITE, url(lang, path), SITE))
+            % (lang, LOOK, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
+               pick, CSS_V, E(title), E(desc), SITE, url(lang, path), SITE))
 
 
 def top(lang, path):
     ui = SHOP["ui"][lang]
     langs = " ".join('<a href="%s" lang="%s" hreflang="%s" data-setlang="%s"%s>%s</a>' % (
         url(l, path), l, l, l, ' aria-current="true"' if l == lang else "", E(SHOP["lang_names"][l])) for l in LANGS)
-    return ('<header class="top"><a class="brand" href="%s">Hongdam หงส์ดำ</a><nav class="langs" aria-label="%s">%s</nav>'
-            '<a href="%s">LINE</a></header>\n' % (url(lang), E(ui["language"]), langs, LINE_URL))
+    return ('<header class="top"><a class="brand" href="%s">%s<span class="wm">Hongdam</span> <span class="wm-th" lang="th">หงส์ดำ</span></a>'
+            '<nav class="langs" aria-label="%s">%s</nav><a class="line" href="%s">LINE</a></header>\n'
+            % (url(lang), db("hongsa", "mark", "loop"), E(ui["language"]), langs, LINE_URL))
 
 
-def foot(lang, front=False):
+def foot(lang, front=False, group=None):
     ui = SHOP["ui"][lang]
     data = {"lang": lang, "langs": LANGS, "front": front, "home": url(lang), "lineUrl": LINE_URL,
-            "ui": ui, "cardsUrl": "/assets/shop-%s.json?v=%s" % (lang, VERSION)}
+            "ui": ui, "cardsUrl": "/assets/shop-%s.json?v=%s" % (lang, VERSION),
+            "group": group, "ladder": LADDER, "track": LOOKS["track"], "master": LOOKS["master"],
+            "glyphs": {g: glyph_name(g, lang) for g in LOOKS["glyphs"]}}
+    if DBM:
+        data["db"] = {"core": "/assets/db/" + DBM["core"], "groups": {g: "/assets/db/" + f for g, f in DBM["groups"].items()}}
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return ('<footer><p>%s</p><p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
             '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · <a href="/llms.txt">llms.txt</a></p></footer>\n'
@@ -216,8 +273,8 @@ def foot(lang, front=False):
 
 def search_box(lang):
     ui = SHOP["ui"][lang]
-    return ('<label for="q" class="field">%s</label><input id="q" class="q" type="search" placeholder="%s" autocomplete="off">\n'
-            '<ul id="hits" class="cards" hidden aria-live="polite"></ul>\n' % (E(ui["search"]), E(ui["searchPh"])))
+    return ('<label for="q" class="field">%s</label><div class="qwrap"><span class="qi">%s</span><input id="q" class="q" type="search" placeholder="%s" autocomplete="off"></div>\n'
+            '<ul id="hits" class="cards" hidden aria-live="polite"></ul>\n' % (E(ui["search"]), db("search", play="loop") if LOOKS["master"] else "", E(ui["searchPh"])))
 
 
 def not_here(lang):
@@ -229,15 +286,28 @@ def not_here(lang):
 def front(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, ui["title"], ui["desc"], "")
-    out += '<body>\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
-    out += '<ol class="steps3">%s</ol>\n' % "".join("<li>%s</li>" % E(s) for s in ui["how"])
+    out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
+    if LOOKS["master"]:
+        caps = []
+        for s in ui["how"]:
+            n, _, w = s.partition(" ")
+            caps.append('<b>%s</b> %s' % (E(n), E(w)) if w else E(s))
+        out += job([m["db"] for m in LOOKS["master"]], lang, caps=caps, cls="master") + "\n"
+    else:
+        out += '<ol class="steps3">%s</ol>\n' % "".join("<li>%s</li>" % E(s) for s in ui["how"])
     out += search_box(lang)
     pop = sorted((c for c in SHOP["cards"] if c.get("pop")), key=lambda c: c["pop"])
     out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
+    count = {}
+    for c in SHOP["cards"]:
+        count[c["cat"]] = count.get(c["cat"], 0) + 1
     out += '<h2>%s</h2>\n<ul class="doors">%s</ul>\n' % (E(ui["cats"]), "".join(
-        '<li><a href="%s"><span class="e" aria-hidden="true">%s</span>%s</a></li>' % (url(lang, c["id"] + "/"), c["emoji"], E(tr(c["n"], lang)))
+        '<li><a href="%s" style="--line:var(--c-%s);view-transition-name:cat-%s">%s<span class="dn">%s</span><span class="dc" aria-hidden="true">%d</span></a></li>' % (
+            url(lang, c["id"] + "/"), c["id"], c["id"],
+            db(LOOKS["doors"][c["id"]], play="hover") if LOOKS["doors"].get(c["id"]) else '<span class="e" aria-hidden="true">%s</span>' % c["emoji"],
+            E(tr(c["n"], lang)), count.get(c["id"], 0))
         for c in SHOP["cats"]))
-    out += not_here(lang) + '</main>\n' + foot(lang, front=True)
+    out += not_here(lang) + '</main>\n' + foot(lang, front=True, group="front")
     return out
 
 
@@ -245,19 +315,21 @@ def category(lang, cat):
     ui = SHOP["ui"][lang]
     name = tr(cat["n"], lang)
     out = head(lang, "%s · Hongdam" % name, tr(cat["l"], lang), cat["id"] + "/")
-    out += '<body>\n' + top(lang, cat["id"] + "/") + '<main>\n<p><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
-    out += '<h1><span aria-hidden="true">%s</span> %s</h1>\n<p>%s</p>\n' % (cat["emoji"], E(name), E(tr(cat["l"], lang)))
+    out += '<body class="p-cat" style="--line:var(--c-%s)">\n' % cat["id"] + top(lang, cat["id"] + "/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
+    door = LOOKS["doors"].get(cat["id"])
+    out += '<h1 class="cat-h" style="view-transition-name:cat-%s">%s<span>%s</span></h1>\n<p class="lede">%s</p>\n' % (
+        cat["id"], db(door, play="loop") if door else '<span aria-hidden="true">%s</span>' % cat["emoji"], E(name), E(tr(cat["l"], lang)))
     if cat.get("note"):
         out += '<p><b>%s</b></p>\n' % E(tr(cat["note"], lang))
     out += '<ul class="cards">%s</ul>\n' % "".join(card_html(c, lang) for c in SHOP["cards"] if c["cat"] == cat["id"])
-    out += search_box(lang) + not_here(lang) + '</main>\n' + foot(lang)
+    out += search_box(lang) + not_here(lang) + '</main>\n' + foot(lang, group=cat["id"])
     return out
 
 
 def buy_page(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, "%s · Hongdam" % ui["buy"], ui["desc"], "buy/", noindex=True)
-    out += '<body>\n' + top(lang, "buy/") + '<main>\n<p><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
+    out += '<body class="p-buy">\n' + top(lang, "buy/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
     out += '<div id="buy"><noscript><p>%s</p><p><a class="btn" href="%s">LINE</a></p></noscript></div>\n</main>\n' % (E(ui["noscript"]), LINE_URL)
     return out + foot(lang)
 
@@ -265,14 +337,14 @@ def buy_page(lang):
 def ask_page(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, "%s · Hongdam" % ui["askBtn"], ui["desc"], "ask/", noindex=True)
-    out += '<body>\n' + top(lang, "ask/") + '<main>\n<p><a href="%s">← %s</a></p>\n<h1>%s</h1>\n' % (url(lang), E(ui["home"]), E(ui["askH"]))
+    out += '<body class="p-ask">\n' + top(lang, "ask/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n<h1>%s</h1>\n' % (url(lang), E(ui["home"]), E(ui["askH"]))
     out += ('<form id="af"><label class="field">%s<textarea name="message" rows="5" maxlength="4000" required></textarea></label>\n'
             '<label class="field">%s<input name="contact" required maxlength="120" autocomplete="email"></label>\n'
             '<label class="hp" aria-hidden="true">website<input name="website" tabindex="-1" autocomplete="off"></label>\n'
             '<button class="btn big" type="submit">%s</button><p id="amsg" role="status"></p></form>\n'
             '<p><a class="btn alt" href="%s">LINE @964yxgnk</a></p>\n</main>\n'
             % (E(ui["askWhat"]), E(ui["reach"]), E(ui["send"]), LINE_URL))
-    return out + foot(lang)
+    return out + foot(lang, group="front")
 
 
 def shop_js_data():

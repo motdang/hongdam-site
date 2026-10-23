@@ -1,0 +1,22 @@
+{
+ "core": "core.js?v=69775a4d",
+ "groups": {
+  "front": "front.js?v=a6e256b3",
+  "help": "help.js?v=55d10ab9",
+  "outsource": "outsource.js?v=da7fbcc6",
+  "translate": "translate.js?v=19385175",
+  "shop": "shop.js?v=732155bf",
+  "stay": "stay.js?v=64ce6db8",
+  "events": "events.js?v=419132c7",
+  "web": "web.js?v=6edfdaad",
+  "fix": "fix.js?v=f2a08359",
+  "ai": "ai.js?v=5f7c41a0",
+  "data": "data.js?v=0d949bff",
+  "design": "design.js?v=a6fc1b38",
+  "moving": "moving.js?v=70939409",
+  "ship": "ship.js?v=b6f7ad79",
+  "charity": "charity.js?v=7020f7c8",
+  "money": "money.js?v=fc62016c",
+  "visa": "visa.js?v=625bad0a"
+ }
+}
