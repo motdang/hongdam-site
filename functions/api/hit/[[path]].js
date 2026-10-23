@@ -6,8 +6,18 @@
  *
  * A row per event in D1 table `hit` (migrations/0008_hit.sql). Requests a robot sends, by
  * functions/_classify.js, are answered and not written. Orders are read from svc_buy (0007).
+ *
+ * D1's daily write allowance is shared with the orders in svc_buy, so a post is counted (functions/_tries.js)
+ * against two daily caps, one per address and one for the whole site, before its rows are written: at most
+ * EVENTS rows a post, PER_DAY posts a day. A count goes up even when it is refused, so each instance also
+ * remembers, until the Bangkok day turns, the addresses it has refused and whether the site cap is spent, and
+ * stops writing counts for them.
  */
 import { classify } from '../../_classify.js'
+import { tryOnce, sweep } from '../../_tries.js'
+
+const EVENTS = 20, PER_ADDRESS = 150, PER_DAY = 1500
+let shut = { day: '', all: false, ips: new Set() }
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -17,7 +27,8 @@ const str = (v, max) => (typeof v === 'string' ? v.replace(/\s+/g, ' ').trim().s
 const int = (v, max) => (Number.isFinite(v) ? Math.max(0, Math.min(max, Math.round(v))) : null)
 const bkkDay = (t = Date.now()) => new Date(t + 7 * 3600e3).toISOString().slice(0, 10)
 const ORIGINS = ['https://hongdam.net', 'https://www.hongdam.net', 'https://hongdam.pages.dev']
-const originOk = (o) => !o || ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(o)
+// Browsers send Origin with every POST, sendBeacon's included
+const originOk = (o) => !!o && (ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(o))
 
 export async function onRequestPost({ request, env }) {
   if (!env.TASKS) return new Response(null, { status: 204 })
@@ -33,7 +44,7 @@ export async function onRequestPost({ request, env }) {
     return new Response(null, { status: 400 })
   }
   const s = str(body && body.s, 16)
-  const ev = Array.isArray(body && body.ev) ? body.ev.slice(0, 40) : []
+  const ev = Array.isArray(body && body.ev) ? body.ev.slice(0, EVENTS) : []
   if (!s || !/^[a-z0-9]{6,16}$/.test(s) || !ev.length) return new Response(null, { status: 400 })
   const at = new Date().toISOString(), day = bkkDay(), c = (request.cf && request.cf.country) || null
   const rows = []
@@ -43,10 +54,22 @@ export async function onRequestPost({ request, env }) {
     rows.push(env.TASKS.prepare('INSERT INTO hit (at, day, s, k, p, l, d, n, r, c, w) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
       .bind(at, day, s, k, p, str(e.l, 5), str(e.d, 120), int(e.n, 999), str(e.r, 80), c, int(e.w, 9999)))
   }
+  if (!rows.length) return new Response(null, { status: 204 })
+  const ip = request.headers.get('cf-connecting-ip') || 'unknown'
+  if (shut.day !== day) shut = { day, all: false, ips: new Set() }
+  if (shut.all || shut.ips.has(ip)) return new Response(null, { status: 204 })
+  if (!(await tryOnce(env.TASKS, [['hit:ip:' + ip, PER_ADDRESS], ['hit:all', PER_DAY]]))) {
+    shut.ips.add(ip)
+    try {   // a read, not a write: is it the site's cap that is spent?
+      const r = await env.TASKS.prepare("SELECT n FROM tries WHERE k = 'hit:all' AND day = ?").bind(day).first()
+      if (!r || r.n > PER_DAY) shut.all = true
+    } catch { shut.all = true }
+    return new Response(null, { status: 204 })
+  }
   try {
-    if (rows.length) await env.TASKS.batch(rows)
-    // A year and a bit is kept; the trim runs on about one post in a hundred.
-    if (Math.random() < 0.01) await env.TASKS.prepare('DELETE FROM hit WHERE day < ?').bind(bkkDay(Date.now() - 400 * 864e5)).run()
+    await env.TASKS.batch(rows)
+    // A year and a bit is kept; the trim (and the counters' sweep) runs on about one post in a hundred.
+    if (Math.random() < 0.01) { await env.TASKS.prepare('DELETE FROM hit WHERE day < ?').bind(bkkDay(Date.now() - 400 * 864e5)).run(); await sweep(env.TASKS) }
   } catch { /* table not there yet (0008): the visitor's page is not the place to say so */ }
   return new Response(null, { status: 204 })
 }
