@@ -1,0 +1,636 @@
+{
+ "about": "The story layer on top of data/eggs.json: the eggs on hongdam.net tell one story, The Ugly Duckling (Hans Christian Andersen, 1843) told in Chiang Rai. A dark chick hatches among ducks, is called Dam (ดำ, 'black'), wanders the site's pages getting help with everything, and on the ninth egg sees itself in a lake: a black swan, Hong Dam, หงส์ดำ, the site's own name. After that it helps the next newcomer. Every visitor's story runs in the order they find the eggs. Progress is kept in the visitor's own browser. English, with Thai words glossed at first use. Pictures are doodle dingbat names (Dam, the duck, the feather and the dyed egg drawn for this: doodle-dingbats 9d81a4b).",
+ "character": {
+  "name": "Dam",
+  "thai": "ดำ",
+  "gloss": "'black'; what the ducks call it",
+  "whole_name": "Hong Dam, หงส์ดำ: the black swan",
+  "forms": {
+   "hatchling": {
+    "glyph": "duckling"
+   },
+   "scruffy": {
+    "glyph": "duckling-scruffy"
+   },
+   "fledgling": {
+    "glyph": "duckling-fledgling"
+   },
+   "swan": {
+    "glyph": "hongsa-walk"
+   }
+  }
+ },
+ "chapters": [
+  {
+   "at": 1,
+   "name": "hatch",
+   "form": "hatchling",
+   "show": "burst",
+   "g": [
+    "easter-egg",
+    "sparkle"
+   ],
+   "say": "An egg in a rice paddy outside Chiang Rai hatches. The chick inside is bigger and darker than the others."
+  },
+  {
+   "at": 2,
+   "name": "counted",
+   "form": "hatchling",
+   "say": "The ducks count their eggs twice. They call the dark one Dam (ดำ, 'black')."
+  },
+  {
+   "at": 3,
+   "name": "leaves",
+   "form": "scruffy",
+   "show": "parade",
+   "g": [
+    "footsteps",
+    "river",
+    "home"
+   ],
+   "say": "Too big, too grey, feet too large. Dam waddles off to see what else there is."
+  },
+  {
+   "at": 6,
+   "name": "moult",
+   "form": "fledgling",
+   "say": "Dam's grey fluff is falling out. Something black is coming in underneath."
+  },
+  {
+   "at": 8,
+   "name": "almost",
+   "form": "fledgling",
+   "say": "Dam's wings are too long for a duck. Dam keeps them folded."
+  },
+  {
+   "at": 9,
+   "name": "the lake",
+   "form": "swan",
+   "show": "reveal",
+   "g": [
+    "ocean-wave",
+    "hongsa",
+    "sparkle"
+   ],
+   "say": "At the lake Dam looks down. A black swan looks back. Its whole name was Hong Dam, หงส์ดำ: the black swan.",
+   "then": "Nine eggs. เก้า (kao, nine) sounds like ก้าว (kao, a step forward)."
+  },
+  {
+   "at": 10,
+   "name": "helper",
+   "form": "swan",
+   "say": "Hong Dam remembers who helped. Now there is a new chick at the edge of the paddy."
+  },
+  {
+   "at": 20,
+   "name": "egg",
+   "form": "swan",
+   "show": "rise",
+   "g": [
+    "egg",
+    "lotus",
+    "sparkle"
+   ],
+   "say": "Hong Dam lays an egg on the front page. Someone new will find it.",
+   "unlocks": "golden-front"
+  }
+ ],
+ "scenes": {
+  "front": {
+   "duckling": "Dam's story starts with an egg. This is one.",
+   "swan": "Hong Dam laid this one. Someone new will find it."
+  },
+  "help": {
+   "duckling": "Dam can't read the sign on the clinic door. Someone reads it out in Thai.",
+   "swan": "Hong Dam phones the landlord, so the new one doesn't have to."
+  },
+  "care": {
+   "duckling": "An old woman at the market feeds Dam sticky rice and asks nothing back.",
+   "swan": "Hong Dam sits with the old woman now. She talks; the swan listens."
+  },
+  "outsource": {
+   "duckling": "Dam tries to answer forty LINE messages with one wing.",
+   "swan": "Hong Dam has a desk now, and a mug."
+  },
+  "translate": {
+   "duckling": "The ducks say quack. Everyone else says something else. Dam learns hello: สวัสดี · Hello · မင်္ဂလာပါ · 你好.",
+   "swan": "Hong Dam translates for the ducks. They are polite about it."
+  },
+  "translation": {
+   "duckling": "The ducks say quack. Everyone else says something else. Dam learns hello: สวัสดี · Hello · မင်္ဂလာပါ · 你好.",
+   "swan": "Hong Dam translates for the ducks. They are polite about it."
+  },
+  "shop": {
+   "duckling": "Dam smells khao soi (curry noodle soup) and has no baht.",
+   "swan": "Hong Dam buys the next one a bowl."
+  },
+  "stay": {
+   "duckling": "Dam sleeps under a songthaew (a red pickup bus). It is loud.",
+   "swan": "Hong Dam knows a quiet room with a fan."
+  },
+  "tours": {
+   "duckling": "Dam climbs into a tuk-tuk by mistake and sees the whole city.",
+   "swan": "Hong Dam gives tours now. Same tuk-tuk."
+  },
+  "weddings": {
+   "duckling": "Dam watches the lanterns go up and wishes for one friend.",
+   "swan": "Hong Dam lights a lantern for someone else's wish."
+  },
+  "luck": {
+   "duckling": "A fortune teller looks at Dam's feet for a long time and says: nine.",
+   "swan": "Nine steps later, a swan."
+  },
+  "merit": {
+   "duckling": "Dam has nothing to give the monks, so Dam sweeps the temple steps with a wing.",
+   "swan": "Hong Dam brings marigolds. สาธุ (sathu): well said."
+  },
+  "web": {
+   "duckling": "Dam types with one webbed foot. The page says error.",
+   "swan": "Hong Dam's page loads in a second. The ducks ask for one."
+  },
+  "fix": {
+   "duckling": "A bug crawls into Dam's laptop. Dam eats it.",
+   "swan": "Hong Dam patches the server. Fewer bugs to eat."
+  },
+  "ai": {
+   "duckling": "A robot asks Dam a question. Dam asks one back.",
+   "swan": "Hong Dam and the robot take the night shift."
+  },
+  "data": {
+   "duckling": "Dam counts the ducks: eleven. The ducks count Dam: odd.",
+   "swan": "Hong Dam counts for a living now."
+  },
+  "design": {
+   "duckling": "Dam draws a self-portrait. It comes out as a swan. Dam rubs it out.",
+   "swan": "Hong Dam finds the drawing and pins it up."
+  },
+  "moving": {
+   "duckling": "Dam's whole home fits in one box: a feather and a grain of rice.",
+   "swan": "Hong Dam moves whole houses now. Bigger boxes."
+  },
+  "ship": {
+   "duckling": "Dam tries to post itself to a warmer pond.",
+   "swan": "Hong Dam posts parcels now, and stays."
+  },
+  "charity": {
+   "duckling": "A stranger gives Dam a mango. Dam keeps the seed.",
+   "swan": "Hong Dam plants the seed. The tree feeds the next one."
+  },
+  "money": {
+   "duckling": "Dam finds one satang (a hundredth of a baht) and wonders what it buys.",
+   "swan": "Hong Dam keeps the books. The satang is framed."
+  },
+  "visa": {
+   "duckling": "Dam has no papers. Ducks don't need them, and Dam isn't sure what Dam is.",
+   "swan": "Hong Dam's passport says SWAN. Stamped."
+  },
+  "buy": {
+   "duckling": "Dam presses Buy on a bowl of noodles and waits.",
+   "swan": "The noodles come. Hong Dam pays for the next bowl."
+  },
+  "ask": {
+   "duckling": "Dam folds a question into a paper boat and sends it down the river.",
+   "swan": "Hong Dam answers the paper boats."
+  },
+  "404": {
+   "duckling": "Dam is lost here too. Lost together is less lost.",
+   "swan": "Hong Dam knows the way: tap the swan at the top."
+  },
+  "bots": {
+   "duckling": "A bot sells Dam a road. Dam walks down it.",
+   "swan": "Hong Dam builds bots now. They sell roads to each other."
+  },
+  "github": {
+   "duckling": "An octopus gives Dam a star.",
+   "swan": "Hong Dam gives stars back."
+  },
+  "php": {
+   "duckling": "An elephant made of code asks Dam for help. Dam is very small.",
+   "swan": "Hong Dam and the elephant are friends now."
+  },
+  "own": {
+   "duckling": "Dam wants a robot of its own.",
+   "swan": "Hong Dam's robot lives on Hong Dam's own keys."
+  },
+  "redteam": {
+   "duckling": "Dam pokes the chatbot to see if it bites.",
+   "swan": "Hong Dam pokes chatbots for a living."
+  },
+  "market": {
+   "duckling": "Dam trades a feather for a box of questions.",
+   "swan": "Hong Dam sells the box."
+  },
+  "portfolio": {
+   "duckling": "Dam looks at the pictures on the wall and isn't in any of them.",
+   "swan": "Hong Dam is in the pictures now."
+  },
+  "tasks": {
+   "duckling": "Ants carry a grain of rice past Dam. Dam helps carry it.",
+   "swan": "Hong Dam posts jobs for the ants."
+  },
+  "tasks/graph": {
+   "duckling": "Dam draws a line between each thing it has seen.",
+   "swan": "Everything connects."
+  },
+  "events": {
+   "duckling": "Dam sits at the back of a meetup and claps.",
+   "swan": "Hong Dam gives the talk."
+  },
+  "invoice": {
+   "duckling": "Dam reads a bill it can't pay.",
+   "swan": "Hong Dam sends this one with a thank you."
+  },
+  "stats": {
+   "duckling": "Dam counts the eggs it has found.",
+   "swan": "Hong Dam counts the visitors. One of them is you."
+  },
+  "default": {
+   "duckling": "Dam peeks in.",
+   "swan": "Hong Dam was here."
+  }
+ },
+ "feathers": {
+  "about": "Each egg found gives Dam one feather; the toast shows them in a row. At nine, the lake (chapter 9).",
+  "glyph": "feather",
+  "golden": {
+   "glyph": "feather",
+   "ink": "#C9962B",
+   "say": "A golden feather."
+  }
+ },
+ "journey": {
+  "about": "The toast draws the visitor's own trip as a job line in the shop's look: one stop per egg found, in the order found, each stop the page's door dingbat (data/looks.json doors; door 'hongsa' for pages without one), Dam standing at the last stop in its current form. Tapping the line plays it: Dam walks the stops from the first.",
+  "max_stops": 12,
+  "older": "the earliest stops fold into a dotted lead-in"
+ },
+ "egg": {
+  "glyph": "easter-egg",
+  "day_colours": {
+   "about": "The egg is tinted with the Thai colour of the day (Bangkok time).",
+   "0": {
+    "day": "Sunday",
+    "a": "#D7263D"
+   },
+   "1": {
+    "day": "Monday",
+    "a": "#F2C230"
+   },
+   "2": {
+    "day": "Tuesday",
+    "a": "#EE7BB0"
+   },
+   "3": {
+    "day": "Wednesday",
+    "a": "#3C9D5A",
+    "night": {
+     "from": "18:00",
+     "a": "#3B3B3B",
+     "note": "Wednesday night has its own colour in the Thai week, dark grey; a black egg for a black swan."
+    }
+   },
+   "4": {
+    "day": "Thursday",
+    "a": "#F28C28"
+   },
+   "5": {
+    "day": "Friday",
+    "a": "#6BB7E8"
+   },
+   "6": {
+    "day": "Saturday",
+    "a": "#7B4FB3"
+   }
+  },
+  "hiding": {
+   "about": "Where the egg sits, by day of the week; the first selector found on the page wins, else the foot of the page.",
+   "0": [
+    "footer"
+   ],
+   "1": [
+    ".cat-h",
+    "main > h1"
+   ],
+   "2": [
+    "main .cards > li:last-child"
+   ],
+   "3": [
+    "nav.langs"
+   ],
+   "4": [
+    ".qwrap"
+   ],
+   "5": [
+    "main > h2:last-of-type"
+   ],
+   "6": [
+    "header .brand"
+   ]
+  },
+  "shy": {
+   "chance": 0.14,
+   "say": "The egg rolled. Try again.",
+   "about": "On the first tap the egg rolls to another of the week's hiding places; the second tap hatches it."
+  },
+  "knock": {
+   "about": "The very first egg a visitor ever taps knocks back from inside before it cracks.",
+   "say": "Something knocks back."
+  },
+  "found": {
+   "glyph": "feather",
+   "say": "Dam was here.",
+   "hint": "Next egg: {page}",
+   "about": "On a page whose egg is already found, a feather lies where the egg was. Tapping it shows how far Dam has come and names a category page with an egg still waiting."
+  }
+ },
+ "rare": [
+  {
+   "id": "golden",
+   "chance": 0.025,
+   "pages": {
+    "luck": 0.111
+   },
+   "colors": {
+    "a": "#E0A21B"
+   },
+   "say": "A golden egg. Dam's feather comes out gold.",
+   "gives": "golden-feather"
+  },
+  {
+   "id": "golden-front",
+   "needs": "golden-front",
+   "pages_only": [
+    "front"
+   ],
+   "chance": 1,
+   "colors": {
+    "a": "#E0A21B"
+   },
+   "say": "Hong Dam's own egg. The story starts again for someone else."
+  }
+ ],
+ "moments": [
+  {
+   "id": "late",
+   "when": {
+    "hours": [
+     1,
+     4
+    ]
+   },
+   "egg_play": "still",
+   "taps_to_hatch": 3,
+   "add": [
+    "sleepy"
+   ],
+   "say": "Dam was asleep."
+  },
+  {
+   "id": "loy-krathong",
+   "when": {
+    "moon": [
+     0.47,
+     0.53
+    ],
+    "months": [
+     11
+    ]
+   },
+   "replace": [
+    "krathong",
+    "lantern",
+    "candles"
+   ],
+   "show": "rise",
+   "say": "Loy Krathong: Dam floats a little boat of leaves and lets it go.",
+   "note": "The festival is the full moon of the twelfth Thai lunar month, usually in November; this reads the moon in November."
+  },
+  {
+   "id": "songkran",
+   "when": {
+    "dates": [
+     "04-13",
+     "04-15"
+    ]
+   },
+   "replace": [
+    "raindrop",
+    "songkran",
+    "ocean-wave"
+   ],
+   "show": "rain",
+   "say": "Songkran: Dam gets soaked, and likes it."
+  },
+  {
+   "id": "new-year",
+   "when": {
+    "dates": [
+     "12-31",
+     "01-01"
+    ]
+   },
+   "add": [
+    "party",
+    "balloon"
+   ],
+   "say": "Happy new year from a very small bird."
+  },
+  {
+   "id": "full-moon",
+   "when": {
+    "moon": [
+     0.47,
+     0.53
+    ]
+   },
+   "add": [
+    "moon",
+    "stars-row"
+   ],
+   "say": "Full moon. Dam makes a wish."
+  },
+  {
+   "id": "night",
+   "when": {
+    "hours": [
+     19,
+     5
+    ]
+   },
+   "add": [
+    "firefly",
+    "moon"
+   ],
+   "say": "Night. The fireflies came too."
+  },
+  {
+   "id": "hot",
+   "when": {
+    "dates": [
+     "02-16",
+     "05-15"
+    ]
+   },
+   "add": [
+    "sun"
+   ],
+   "chance": 0.3,
+   "say": "Hot season. Dam stands in the shade."
+  },
+  {
+   "id": "rain",
+   "when": {
+    "dates": [
+     "05-16",
+     "10-15"
+    ]
+   },
+   "add": [
+    "raindrop",
+    "cloud"
+   ],
+   "chance": 0.3,
+   "say": "Rainy season. Good weather for ducks."
+  },
+  {
+   "id": "cool",
+   "when": {
+    "dates": [
+     "10-16",
+     "02-15"
+    ]
+   },
+   "add": [
+    "cloud"
+   ],
+   "chance": 0.3,
+   "say": "Cool season. Dam fluffs up."
+  }
+ ],
+ "words": {
+  "about": "Typed anywhere outside a field, like egg and swan. Each plays once a visit.",
+  "quack": {
+   "show": "parade",
+   "g": [
+    "duck",
+    "duck",
+    "duck",
+    "laugh"
+   ],
+   "say": "The ducks laugh. Dam waddles on."
+  },
+  "honk": {
+   "show": "burst",
+   "g": [
+    "sound",
+    "hongsa-stand"
+   ],
+   "say": "Swans honk. Ducks quack. Dam is starting to notice."
+  },
+  "sawasdee": {
+   "also": [
+    "สวัสดี"
+   ],
+   "show": "burst",
+   "g": [
+    "wai",
+    "smile"
+   ],
+   "say": "สวัสดี (sawasdee): hello. Dam does a wai (palms together, a small bow)."
+  },
+  "nine": {
+   "also": [
+    "เก้า"
+   ],
+   "show": "rain",
+   "g": [
+    "star"
+   ],
+   "n": 9,
+   "say": "Nine stars. One step forward."
+  },
+  "sathu": {
+   "also": [
+    "สาธุ"
+   ],
+   "show": "rise",
+   "g": [
+    "lotus",
+    "candles"
+   ],
+   "say": "สาธุ (sathu): well said."
+  },
+  "hongsa": {
+   "also": [
+    "หงส์"
+   ],
+   "show": "swim",
+   "g": [
+    "hongsa"
+   ],
+   "say": "Hongsa, หงส์: the swan of the old Lanna paintings."
+  },
+  "konami": {
+   "keys": [
+    "ArrowUp",
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "ArrowLeft",
+    "ArrowRight",
+    "b",
+    "a"
+   ],
+   "show": "journey",
+   "say": "Dam walks the whole trip again, from the first egg."
+  }
+ },
+ "draw": [
+  {
+   "glyph": "duckling",
+   "family": "lanna",
+   "about": "A newly hatched cygnet: round, fluffy, grey-brown down, a stub of a beak, webbed feet too big for it. Loop: waddles, wobbles, sits down hard. Tap: peeps and flaps two stubs of wings.",
+   "drawn": "doodle-dingbats 9d81a4b"
+  },
+  {
+   "glyph": "duckling-scruffy",
+   "family": "lanna",
+   "about": "The same chick a few weeks on: longer neck, patchy grey down, a few black feathers poking through. Loop: walks head-down. Tap: looks at its reflection, shakes it off.",
+   "drawn": "doodle-dingbats 9d81a4b"
+  },
+  {
+   "glyph": "duckling-fledgling",
+   "family": "lanna",
+   "about": "Nearly grown: black body feathers, grey down only on the head, wings too long, folded. Loop: walks, glances at the camera. Tap: half-opens the wings, then folds them, shy.",
+   "drawn": "doodle-dingbats 9d81a4b"
+  },
+  {
+   "glyph": "duck",
+   "family": "nature",
+   "about": "A plain white farm duck, orange bill, for the ducks of the paddy. Loop: waddles. Tap: quacks (open bill, three small sound lines).",
+   "drawn": "doodle-dingbats 9d81a4b"
+  },
+  {
+   "glyph": "feather",
+   "family": "nature",
+   "about": "A single black swan feather, curving, with a pale quill; colour a tints it (the golden feather). Loop: drifts and turns. Tap: spins.",
+   "drawn": "doodle-dingbats 9d81a4b"
+  },
+  {
+   "glyph": "easter-egg",
+   "family": "lanna",
+   "about": "A dyed egg in colour a with a painted white zigzag and dots; it rocks and sometimes knocks. Tap: cracks along the zigzag, the top lifts, Dam's head pops out, looks at you and peeps, ducks back.",
+   "drawn": "doodle-dingbats 9d81a4b"
+  }
+ ],
+ "engine": {
+  "reads": "tools/eggs.mjs folds this file into docs/assets/eggs.js beside data/eggs.json. Pictures load in three steps: the base file (the dyed egg and the feather) once the page settles, the story file (Dam, the duck, the doors, the moments' and words' pictures) at the first tap, and the page's own pictures.",
+  "keeps": "localStorage hd-eggs (pages found, in order), hd-feathers (count, golden count), hd-story (last chapter seen), hd-words (words played this visit, sessionStorage).",
+  "order": "On a hatch: the count of eggs found picks the chapter and Dam's form; the page picks the scene (duckling before chapter 9, swan from 9); a moment that matches adds pictures or changes the show; a rare egg overrides the colour and line. The toast: chapter line (when this count has one), scene line, moment line, feathers, the journey line.",
+  "counts": "window.hd('egg', page) as now, and window.hd('story', chapter name) when a chapter plays.",
+  "calm": "With reduced motion the shows are still pictures and the toast keeps every line.",
+  "moon": "Moon phase from the new moon of 2000-01-06 18:14 UTC and a synodic month of 29.530588853 days; 0.5 is full."
+ },
+ "moments_about": "The first moment that matches wins, in this order; a moment with a chance is rolled once per page view."
+}
