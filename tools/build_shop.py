@@ -214,6 +214,17 @@ def opt_price(o, lang):
     raise SystemExit("no price for option %s" % o["i"])
 
 
+# A rate per month or per hour is not a card's "from" price: ฿600 for an extra hour beside a ฿25,000 set-up
+# reads as the price of the job (CodeRabbit on #55). tools/seo.py reads the same options.
+TIME_UNITS = {"month", "hour"}
+
+
+def from_options(c):
+    """The options of a card that can stand as its "from" price: none priced per month or per hour.
+    Add-ons are never among them. Empty when every option runs by time."""
+    return [o for o in c.get("opts", []) if o.get("u") not in TIME_UNITS]
+
+
 def card_price(c, lang):
     ui = SHOP["ui"][lang]
     if c.get("pshow"):
@@ -233,11 +244,13 @@ def card_price(c, lang):
         if c["act"] == "list":
             return ""
         return opt_price(opts[0], lang)[0]
-    nums = [opt_price(o, lang) for o in opts]
-    thb = [n for _, n, cur in nums if cur == "THB" and n]
+    elig = from_options(c)
+    nums = [opt_price(o, lang) for o in (elig or opts)]
+    thb = sorted((n, h) for h, n, cur in nums if cur == "THB" and n)
     if not thb:
         return nums[0][0]
-    return ui["from"].replace("{p}", money_h(min(thb)))
+    # every option runs by time: the lowest, with its unit ("from ฿2,000 / month")
+    return ui["from"].replace("{p}", money_h(thb[0][0]) if elig else thb[0][1])
 
 
 def go_of(c, lang):

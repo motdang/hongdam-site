@@ -33,12 +33,13 @@ def title_of(B, lang, path, title):
 
 
 def low_price(B, lang, cat):
-    """The lowest baht price on a category's cards, as today's page shows it."""
+    """The lowest baht price on a category's cards, as today's page shows it; monthly and hourly rates
+    are not counted (build_shop.from_options, CodeRabbit on #55)."""
     low = None
     for c in B["SHOP"]["cards"]:
         if c["cat"] != cat["id"] or c["act"] != "buy":
             continue
-        for o in c.get("opts", []):
+        for o in B["from_options"](c):
             _, n, cur = B["opt_price"](o, lang)
             if cur == "THB" and n:
                 low = n if low is None else min(low, n)
