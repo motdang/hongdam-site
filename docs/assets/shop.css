@@ -1,0 +1,47 @@
+/* hongdam.net front page, category pages, Buy page. Plain on purpose: looks come later (her word 2026-10-23). */
+:root { color-scheme: light dark }
+body { margin: 0 auto; max-width: 42rem; padding: 0 1rem 3rem; background: Canvas; color: CanvasText;
+  font: 1.125rem/1.5 system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", Thonburi, "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", "PingFang SC", "Microsoft YaHei", sans-serif }
+:lang(my) { line-height: 1.8 }
+header.top { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; justify-content: space-between; padding: .7rem 0; border-bottom: 1px solid GrayText }
+.brand { font-weight: 700; font-size: 1.2rem; color: inherit; text-decoration: none }
+.langs { display: flex; flex-wrap: wrap; gap: .2rem .8rem }
+.langs a { padding: .3rem 0 }
+.langs a[aria-current] { font-weight: 700; color: inherit; text-decoration: none }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 1rem 0 .3rem }
+h2 { font-size: 1.3rem; margin: 2rem 0 .5rem }
+.q { display: block; width: 100%; box-sizing: border-box; font: inherit; font-size: 1.2rem; padding: .75rem; border: 2px solid CanvasText; border-radius: 10px; background: Canvas; color: CanvasText }
+.steps3 { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; padding: 0; list-style: none; font-weight: 600 }
+.doors { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: .6rem; margin: 1rem 0; padding: 0; list-style: none }
+.doors a { display: flex; flex-direction: column; gap: .25rem; min-height: 4.6rem; padding: .8rem; border: 2px solid GrayText; border-radius: 12px; color: inherit; text-decoration: none; font-weight: 600 }
+.doors .e { font-size: 1.8rem; line-height: 1 }
+.cards { list-style: none; margin: 0; padding: 0 }
+.card { display: grid; grid-template-columns: 1fr auto; gap: .15rem 1rem; align-items: center; padding: .9rem 0; border-top: 1px solid GrayText }
+.card h3 { margin: 0; font-size: 1.1rem; grid-column: 1 }
+.card p { margin: 0; grid-column: 1 }
+.card .btn { grid-column: 2; grid-row: 1 / span 3 }
+.card ul { grid-column: 1 / -1; margin: .3rem 0 0; padding-left: 1.2rem }
+.price { font-weight: 700; font-size: 1.15rem }
+.btn { display: inline-block; min-width: 5.5rem; min-height: 2.9rem; box-sizing: border-box; padding: .65rem 1rem; border: 2px solid #0b5394; border-radius: 10px; background: #0b5394; color: #fff; font: inherit; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer }
+.btn.alt { background: transparent; color: inherit; border-color: currentColor }
+.btn.big { width: 100%; font-size: 1.2rem; margin-top: 1rem }
+.btn:disabled { opacity: .5 }
+fieldset { border: 0; padding: 0; margin: 1rem 0 }
+legend { font-weight: 700; margin-bottom: .3rem }
+.opt { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; min-height: 2.9rem; padding: .3rem 0 }
+.opt input { width: 1.4rem; height: 1.4rem; margin: 0 }
+.opt b { margin-left: auto }
+.qtyrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 }
+.qtyrow .lab { font-weight: 700; width: 100% }
+.qtyrow input { width: 4.5rem; font: inherit; font-size: 1.2rem; text-align: center; padding: .5rem; border: 2px solid CanvasText; border-radius: 8px; background: Canvas; color: CanvasText }
+.step { width: 2.9rem; height: 2.9rem; font: inherit; font-size: 1.4rem; font-weight: 700; border: 2px solid CanvasText; border-radius: 8px; background: Canvas; color: CanvasText; cursor: pointer }
+.tot { display: flex; justify-content: space-between; align-items: baseline; font-size: 1.3rem; margin: 1rem 0 .2rem; padding-top: .6rem; border-top: 2px solid CanvasText }
+.tot b { font-size: 1.6rem }
+.field { display: block; margin: 1rem 0 0; font-weight: 600 }
+.field input, .field textarea { display: block; width: 100%; box-sizing: border-box; margin-top: .3rem; font: inherit; padding: .6rem; border: 2px solid CanvasText; border-radius: 8px; background: Canvas; color: CanvasText }
+.way { margin: 1.2rem 0; padding-top: .6rem; border-top: 1px solid GrayText }
+.way h3 { margin: 0 0 .4rem }
+.qr svg { display: block; width: 240px; height: 240px; background: #fff; border-radius: 6px }
+.note { margin: .2rem 0 }
+.hp { position: absolute; left: -9999px }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid GrayText }

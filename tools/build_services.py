@@ -325,14 +325,12 @@ def main():
     if missing:
         print("  ! no live price for", ", ".join(missing))
         return 1
-    os.makedirs(os.path.join(DOCS, "th"), exist_ok=True)
-    for lang, path in (("en", "index.html"), ("th", os.path.join("th", "index.html"))):
-        open(os.path.join(DOCS, path), "w", encoding="utf-8").write(page(data, graph, lang, live))
+    # The pages people see (front page, category minisites, Buy) are tools/build_shop.py's.
     txt = open(LLMS, encoding="utf-8").read()
     a, b = txt.index("<!-- SERVICES:START -->"), txt.index("<!-- SERVICES:END -->") + len("<!-- SERVICES:END -->")
     open(LLMS, "w", encoding="utf-8").write(txt[:a] + llms_block(data, graph, live) + txt[b:])
     n = sum(len(s.get("items", [])) for s in data["sections"])
-    print("%d services in %d groups · docs/index.html, docs/th/index.html, llms.txt" % (n, len(data["sections"])))
+    print("%d services in %d groups · functions/_services_data.js, llms.txt; pages: python3 tools/build_shop.py" % (n, len(data["sections"])))
     return 0
 
 
