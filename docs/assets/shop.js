@@ -238,7 +238,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
       j = await (await fetch('/api/buy', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({
         card: card.id, opt: opt.id, qty: n(), addon: f.elements.addon && f.elements.addon.checked ? (card.add.unit ? addN() : true) : false, contact, note: f.elements.note.value, lang: D.lang }) })).json()
     } catch { j = { ok: false, why: 'service' } }
-    if (!j.ok) { m.textContent = T.err[j.why] || T.err.service; return }
+    if (!j.ok) { m.textContent = (j.retry ? T.err.service : T.err[j.why]) || T.err.service; return }
     m.textContent = ''
     f.hidden = true
     pay(j)

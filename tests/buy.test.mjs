@@ -120,5 +120,10 @@ await onRequest({ env: { TASKS: db2, TASKS_ADMIN: 'k' }, params: { path: ['state
 await Promise.all(wait)
 const paid = ins.filter(([q, a]) => q.startsWith('INSERT INTO svc_order') && a[3] === 'paid').map(([, a]) => a[0]).sort()
 assert.deepEqual(paid, ['car-buy', 'dispute'])
+// the walk unreadable (D1 down): 503 with retry, no order (CodeRabbit on #53)
+const down = { prepare: () => { const st = { bind: () => st, all: async () => { throw new Error('D1 down') }, first: async () => { throw new Error('D1 down') }, run: async () => { throw new Error('D1 down') } }; return st } }
+const dr = await onRequest({ env: { TASKS: down }, params: {}, waitUntil: () => {},
+  request: new Request('https://hongdam.net/api/buy', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: JSON.stringify({ card: 'trades', opt: 'trades', contact: 'a@b.co' }) }) })
+assert.equal(dr.status, 503); assert.deepEqual(await dr.json(), { ok: false, why: 'price', retry: true })
 globalThis.fetch = realFetch
 console.log('buy ok')

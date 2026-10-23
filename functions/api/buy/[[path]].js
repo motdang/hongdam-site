@@ -91,7 +91,9 @@ async function order(ctx, b, now) {
   if (!CARDS[card] || CARDS[card].act !== 'buy') return json({ ok: false, why: 'card' }, 400)
   if (contact.length < 3) return json({ ok: false, why: 'contact' }, 400)
   const db = env.TASKS
-  const q = quote(card, opt, b.qty, b.addon, await walkedPrices(db, now))
+  let walked
+  try { walked = await walkedPrices(db, now) } catch { return json({ ok: false, why: 'price', retry: true }, 503) }   // the walk unreadable (D1 down): no order, try again
+  const q = quote(card, opt, b.qty, b.addon, walked)
   if (q.error) return json({ ok: false, why: q.error }, 400)
   if (!(await allowed(env, request.headers.get('cf-connecting-ip') || '', now))) return json({ ok: false, why: 'limit' }, 429)
   if (!db) return json({ ok: false, why: 'off' }, 503)
