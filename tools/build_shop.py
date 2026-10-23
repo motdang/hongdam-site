@@ -108,6 +108,49 @@ def walks(c):
     return it["id"] if "baht" in it and "floor" in it else None
 
 
+def walk_of(o):
+    """(service id, part) for an option with a set price that now walks on data/services.json: its own
+    item, or the one named in o["w"] (part "tail" is the item's second price). (None, None) otherwise."""
+    if o.get("w"):
+        return o["w"]["of"], o["w"].get("part", "price")
+    it = ITEMS.get(o["i"], {})
+    return (it["id"], "price") if o.get("price") and "floor" in it else (None, None)
+
+
+def walk_num(sid, part, cur, fallback):
+    """Today's opening number of a walking price, in cur; shop.js and /api/buy read the walk's own."""
+    it = ITEMS.get(sid, {})
+    return it.get("tail", fallback) if part == "tail" else it.get("usd" if cur == "USD" else "baht", fallback)
+
+
+def live_span(sid, part, cur, n):
+    return '<span data-live="services/%s"%s%s>%s</span>' % (
+        E(sid), ' data-part="tail"' if part == "tail" else "", ' data-cur="USD"' if cur == "USD" else "", E(money(n, cur)))
+
+
+def price_rule(o):
+    """An option's price rule for the Buy button: its set numbers, and w (+ part) naming the walk that moves them."""
+    p = dict(o.get("price") or {"walk": True})
+    sid, part = walk_of(o)
+    if sid:
+        p["w"] = sid
+        if part == "tail":
+            p["part"] = "tail"
+    return p
+
+
+def add_rule(c, lang=None):
+    a = c["add"]
+    r = {"id": a["i"], "fixed": a["fixed"]}
+    if "floor" in ITEMS.get(a["i"], {}):
+        r["w"] = a["i"]
+    if lang:
+        n = walk_num(a["i"], "price", "THB", a["fixed"])
+        r["n"] = tr(a["n"], lang).replace("{price}", money(n))
+        r["nh"] = E(tr(a["n"], lang)).replace("{price}", live_span(a["i"], "price", "THB", n) if r.get("w") else E(money(n)))
+    return r
+
+
 def unit_one(u, lang):
     return tr(SHOP["units"][u]["one"], lang) if u else ""
 
@@ -118,12 +161,23 @@ def opt_price(o, lang):
     it = ITEMS.get(o["i"], {})
     per = (" / " + unit_one(o.get("u"), lang)) if o.get("u") else ""
     p = o.get("price")
+    sid, part = walk_of(o)
     if o.get("show"):
         n = p.get("tier", [0])[0] if p else 0
-        return E(tr(o["show"], lang)), n, "THB"
+        s = E(tr(o["show"], lang))
+        if "{price}" in s:
+            n, t = walk_num(sid, "price", "THB", p["tier"][0]), walk_num(sid, "tail", "THB", p["tier"][2])
+            s = s.replace("{price}", live_span(sid, "price", "THB", n) if sid else E(money(n)))
+            s = s.replace("{tail}", live_span(sid, "tail", "THB", t) if sid else E(money(t)))
+        return s, n, "THB"
     if p and "usd" in p:
+        if sid:
+            return live_span(sid, part, "USD", walk_num(sid, part, "USD", p["usd"])) + E(per), None, "USD"
         return E(money(p["usd"], "USD") + per), None, "USD"
     if p and "fixed" in p:
+        if sid:
+            n = walk_num(sid, part, "THB", p["fixed"])
+            return live_span(sid, part, "THB", n) + E(per), n, "THB"
         return E(money(p["fixed"]) + per), p["fixed"], "THB"
     if "pct" in it:
         v = LIVE.get("services/" + it["id"]) or "%d%%" % it["pct"]
@@ -221,7 +275,9 @@ def client_cards(lang):
             for o in c["opts"]:
                 it = ITEMS.get(o["i"], {})
                 ph, _, _ = opt_price(o, lang)
-                p = o.get("price") or {"walk": it.get("baht")}
+                p = price_rule(o)
+                if p.get("walk"):
+                    p["walk"] = it.get("baht")
                 od = {"id": o["i"], "n": tr(o.get("n") or c["n"], lang), "ph": ph, "price": p,
                       "unit": bool(o.get("u")), "max": o.get("max", 99),
                       "unitMany": tr(SHOP["units"][o["u"]]["many"], lang) if o.get("u") else "",
@@ -230,7 +286,7 @@ def client_cards(lang):
                     od["d"] = it["d_" + lang]
                 d["opts"].append(od)
             if c.get("add"):
-                d["add"] = {"n": tr(c["add"]["n"], lang), "fixed": c["add"]["fixed"]}
+                d["add"] = add_rule(c, lang)
         d["cat"] = c["cat"]
         if pic_of(c):
             d["pic"] = pic_of(c)
@@ -272,10 +328,26 @@ def foot(lang, front=False, group=None):
     if DBM:
         data["db"] = {"core": "/assets/db/" + DBM["core"], "groups": {g: "/assets/db/" + f for g, f in DBM["groups"].items()}}
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    return ('<footer><p>%s</p><p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
+    return rate_box(lang) + ('<footer><p>%s</p><p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
             '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · <a href="/llms.txt">llms.txt</a></p></footer>\n'
             '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js"></script>\n</body>\n</html>\n'
             % (E(ui["payMethods"]), E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j))
+
+
+RATE_LANGS = ("my", "zh")
+
+
+def rate_box(lang):
+    """Her word 2026-10-24: the Burmese and Chinese pages go out with a way for readers to rate the
+    translation. shop.js posts the answer to /api/rate."""
+    if lang not in RATE_LANGS:
+        return ""
+    ui = SHOP["ui"][lang]
+    return ('<form id="rate" class="rate"><p>%s</p><p><button type="button" class="btn alt" data-score="good">%s</button> '
+            '<button type="button" class="btn alt" data-score="better">%s</button></p>\n'
+            '<div hidden><label class="field">%s<textarea name="text" rows="3" maxlength="2000"></textarea></label>'
+            '<button class="btn" type="submit">%s</button></div><p class="thanks" role="status" hidden>%s</p></form>\n'
+            % tuple(E(ui[k]) for k in ("rateQ", "rateGood", "rateBetter", "rateText", "rateSend", "rateThanks")))
 
 
 def search_box(lang):
@@ -378,9 +450,9 @@ def shop_js_data():
     for c in SHOP["cards"]:
         e = {"act": c["act"], "en": tr(c["n"], "en")}
         if c["act"] == "buy":
-            e["opts"] = [{"id": o["i"], "price": o.get("price") or {"walk": True}, "unit": bool(o.get("u")), "max": o.get("max", 99)} for o in c["opts"]]
+            e["opts"] = [{"id": o["i"], "price": price_rule(o), "unit": bool(o.get("u")), "max": o.get("max", 99)} for o in c["opts"]]
             if c.get("add"):
-                e["add"] = {"id": c["add"]["i"], "fixed": c["add"]["fixed"]}
+                e["add"] = add_rule(c)
         cards[c["id"]] = e
     return ("// Written by tools/build_shop.py from data/shop.json; changes go there.\nexport const CARDS = %s\n"
             % json.dumps(cards, ensure_ascii=False, indent=1))
