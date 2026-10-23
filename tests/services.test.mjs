@@ -56,4 +56,10 @@ if (tw) {
 }
 const usd = Object.keys(SERVICES).filter((id) => SERVICES[id].usd)
 for (const id of usd) assert.equal(walk(id, {}, at(OPENED_MONTH)).unit, 'USD', id)
+// unverified demand can hold a price but never raise it; verified demand can
+import('../functions/_services.js').then(({ countOf }) => {
+  assert.equal(countOf(10, 0, 50), 8)
+  assert.ok(countOf(10, 0, 50) / 10 <= 0.8)
+  assert.equal(countOf(10, 3, 50), 11)
+})
 console.log(`services ok · ${site.length} walk monthly, ${desk.length} by the Desk bot`)

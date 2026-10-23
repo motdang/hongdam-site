@@ -7,8 +7,8 @@
  * Each service has slots a month: the orders the team can take. On the 1st, 00:00 Bangkok,
  * the month just ended is checked: orders over slots. Over 80%: one step up the ladder.
  * Under 60%: one step down. Between: no change. Never past the service's floor or ceiling.
- * An order is a request for that service through the form on the page (one per contact per
- * service per month) or one the team logs from LINE or the phone. The walk starts with
+ * An order is one per contact per service per month: logged by the team (LINE, phone) or paid through
+ * Buy (verified), or asked through the form or booked unpaid (unverified, counted only up to 80% of slots). The walk starts with
  * the first whole month (OPENED); the first check reads that month. A service marked pct
  * (sourcing) is a share of the goods' value and walks on PCT_LADDER; one marked usd walks in US$ on
  * USD_LADDER. A tail is a second price that moves with the first ("฿1,500 up to 5 pages, then ฿500 a page").
@@ -53,13 +53,32 @@ export function walk(id, counts, now, from = OPENED_MONTH) {
   }
 }
 
+// Orders the team logged (desk) or that were paid (paid) are verified. Form inquiries and unpaid Buy
+// orders are not: they count only up to 80% of the slots, so they can hold a price but never raise it.
+export const VERIFIED = ['desk', 'paid']
+
+/** Orders a month from verified and unverified contacts, one per contact; unverified capped below the step up. */
+export function countOf(slots, verified, unverified) {
+  return verified + Math.min(unverified, Math.floor(slots * 0.8))
+}
+
 /** {service: {month: orders}} from svc_order; one order per contact per service per month. */
 export async function allCounts(db) {
   const out = {}
   if (!db) return out
   try {
-    const rows = (await db.prepare("SELECT svc, month, COUNT(DISTINCT who) n FROM svc_order WHERE state != 'void' GROUP BY svc, month").all()).results
-    for (const x of rows) (out[x.svc] ||= {})[x.month] = x.n
+    const rows = (await db.prepare(
+      "SELECT svc, month, who, MAX(CASE WHEN src IN ('desk','paid') THEN 1 ELSE 0 END) v FROM svc_order WHERE state != 'void' GROUP BY svc, month, who").all()).results
+    const tally = {}
+    for (const x of rows) {
+      const t = ((tally[x.svc] ||= {})[x.month] ||= { v: 0, u: 0 })
+      if (x.v) t.v++
+      else t.u++
+    }
+    for (const [svc, months] of Object.entries(tally)) {
+      if (!SERVICES[svc]) continue
+      for (const [m, t] of Object.entries(months)) (out[svc] ||= {})[m] = countOf(SERVICES[svc].slots, t.v, t.u)
+    }
   } catch { /* no table yet: every month reads as no orders */ }
   return out
 }
