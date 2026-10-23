@@ -45,7 +45,7 @@ export function walk(id, counts, now, from = OPENED_MONTH) {
   }
   const m = monthOf(now)
   return {
-    id, en: s.en, th: s.th, ...(s.pct ? { unit: '%', price: L[r] } : s.usd ? { unit: 'USD', price: L[r] } : { baht: L[r], price: L[r] }),
+    id, en: s.en, th: s.th, ...(s.pct ? { unit: '%', price: L[r] } : s.usd ? { unit: 'USD', cur: 'USD', price: L[r] } : { baht: L[r], price: L[r], cur: 'THB' }),
     ...(s.tail ? { tail: tailOf(s, L[r]), tail_unit: s.tail_usd ? 'USD' : 'THB' } : {}), opened: L[r0], floor: L[lo], ceiling: L[hi],
     slots: s.slots, orders: counts[m] || 0,
     next_check: new Date(monthStart(Math.max(m, from) + 1)).toISOString(),
