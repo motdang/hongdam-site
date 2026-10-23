@@ -16,6 +16,9 @@ import json
 import os
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import seo  # noqa: E402
+
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(HERE, "docs")
 SHOP = json.load(open(os.path.join(HERE, "data", "shop.json"), encoding="utf-8"))
@@ -84,8 +87,10 @@ def glyph_name(g, lang):
 def job(stops, lang, caps=None, cls="", name=None):
     """A job as a line of stops, the swan riding it. caps: words under the stops (the master line, the Buy page)."""
     lis = "".join('<li class="stop">%s%s</li>' % (db(g), '<span class="cap">%s</span>' % caps[i] if caps else "") for i, g in enumerate(stops))
+    # alt text: a line without words under it is one picture, named by its stops in the page's language
+    alt = "" if caps else ' role="img" aria-label="%s"' % E(", ".join(glyph_name(g, lang) for g in stops))
     return '<div class="job%s"%s%s><ol>%s</ol><span class="rider">%s</span></div>' % (
-        (" " + cls) if cls else "", ' style="view-transition-name:%s"' % name if name else "", "" if caps else ' aria-hidden="true"',
+        (" " + cls) if cls else "", ' style="view-transition-name:%s"' % name if name else "", alt,
         lis, db("hongsa-stand", play="loop"))
 
 
@@ -236,15 +241,17 @@ def client_cards(lang):
 
 
 def head(lang, title, desc, path, noindex=False, og="og/shop/front.jpg"):
+    # tools/seo.py: the town in a category's title, its lowest price in the description, link-preview and schema.org tags
+    title, desc = seo.title_of(globals(), lang, path, title), seo.desc_of(globals(), lang, path, desc)
     alts = "".join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (l, SITE, url(l, path)) for l in LANGS)
     return ('<!doctype html>\n<html lang="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<title>%s</title>\n<meta name="description" content="%s">\n'
             '%s<link rel="canonical" href="%s%s">\n%s<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n'
             '<link rel="stylesheet" href="/assets/shop.css?v=%s">\n'
             '<meta property="og:title" content="%s">\n<meta property="og:description" content="%s">\n<meta property="og:url" content="%s%s">\n'
-            '<meta property="og:image" content="%s/%s">\n<meta name="twitter:card" content="summary_large_image">\n</head>\n'
+            '<meta property="og:image" content="%s/%s">\n<meta name="twitter:card" content="summary_large_image">\n%s</head>\n'
             % (lang, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
-               CSS_V, E(title), E(desc), SITE, url(lang, path), SITE, og))
+               CSS_V, E(title), E(desc), SITE, url(lang, path), SITE, og, seo.tags(globals(), lang, path, title, desc, og, noindex)))
 
 
 def top(lang, path):
@@ -347,7 +354,7 @@ def know(lang, cat):
 
 def buy_page(lang):
     ui = SHOP["ui"][lang]
-    out = head(lang, "%s · Hongdam" % ui["buy"], ui["desc"], "buy/", noindex=True)
+    out = head(lang, "%s · Hongdam" % ui["buy"], ui["desc"], "buy/", noindex=True, og="og/shop/buy.jpg")
     out += '<body class="p-buy">\n' + top(lang, "buy/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
     out += '<div id="buy"><noscript><p>%s</p><p><a class="btn" href="%s">LINE</a></p></noscript></div>\n</main>\n' % (E(ui["noscript"]), LINE_URL)
     return out + foot(lang)
@@ -355,7 +362,7 @@ def buy_page(lang):
 
 def ask_page(lang):
     ui = SHOP["ui"][lang]
-    out = head(lang, "%s · Hongdam" % ui["askBtn"], ui["desc"], "ask/", noindex=True)
+    out = head(lang, "%s · Hongdam" % ui["askBtn"], ui["desc"], "ask/", noindex=True, og="og/shop/ask.jpg")
     out += '<body class="p-ask">\n' + top(lang, "ask/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n<h1>%s</h1>\n' % (url(lang), E(ui["home"]), E(ui["askH"]))
     out += ('<form id="af"><label class="field">%s<textarea name="message" rows="5" maxlength="4000" required></textarea></label>\n'
             '<label class="field">%s<input name="contact" required maxlength="120" autocomplete="email"></label>\n'
@@ -380,29 +387,47 @@ def shop_js_data():
 
 
 def sitemap():
-    """The shop's pages in docs/sitemap.xml, between SHOP markers (added once, after the front page)."""
+    """The shop's pages in docs/sitemap.xml between SHOP markers, each with its other languages (hreflang) and
+    the day its page last changed. The pages outside the markers are kept as they are."""
+    import re
+    from datetime import date
     p = os.path.join(DOCS, "sitemap.xml")
     xml = open(p, encoding="utf-8").read()
-    from datetime import date
     today = date.today().isoformat()
-    urls = [url(l) for l in LANGS if l != "en"] + [url(l, c["id"] + "/") for l in LANGS for c in SHOP["cats"]]
-    block = "<!-- SHOP:START -->\n" + "".join(
-        "  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n    <changefreq>monthly</changefreq>\n  </url>\n" % (SITE, u, today)
-        for u in urls) + "  <!-- SHOP:END -->"
+    was = dict(re.findall(r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", xml))
+    paths = [""] + [c["id"] + "/" for c in SHOP["cats"]]
+    rows = []
+    for path in paths:
+        alts = "".join('    <xhtml:link rel="alternate" hreflang="%s" href="%s%s"/>\n' % (l, SITE, url(l, path)) for l in LANGS)
+        alts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>\n' % (SITE, url("en", path))
+        for l in LANGS:
+            loc = SITE + url(l, path)
+            day = today if (pre(l) + path + "index.html") in CHANGED or loc not in was else was[loc]
+            rows.append("  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n    <changefreq>monthly</changefreq>\n%s%s  </url>\n"
+                        % (loc, day, "    <priority>1.0</priority>\n" if path == "" else "", alts))
+    block = "<!-- SHOP:START -->\n" + "".join(rows) + "  <!-- SHOP:END -->"
     if "<!-- SHOP:START -->" in xml:
         a, b = xml.index("<!-- SHOP:START -->"), xml.index("<!-- SHOP:END -->") + len("<!-- SHOP:END -->")
         xml = xml[:a] + block + xml[b:]
     else:
-        import re
-        xml = re.sub(r"\s*<url>\s*<loc>https://hongdam.net/th/</loc>.*?</url>", "", xml, count=1, flags=re.S)
         i = xml.index("</url>") + len("</url>")
         xml = xml[:i] + "\n  " + block + xml[i:]
+    # the front page lives inside the block now, with its languages
+    xml = re.sub(r"\n  <url>\n    <loc>https://hongdam\.net/</loc>(?:(?!</url>).)*</url>(?=\n  <!-- SHOP:START -->)", "", xml, flags=re.S)
+    if "xmlns:xhtml" not in xml:
+        xml = xml.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+                          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">')
     open(p, "w", encoding="utf-8").write(xml)
+
+
+CHANGED = set()
 
 
 def write(path, text):
     full = os.path.join(DOCS, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
+    if not os.path.exists(full) or open(full, encoding="utf-8").read() != text:
+        CHANGED.add(path)
     open(full, "w", encoding="utf-8").write(text)
 
 

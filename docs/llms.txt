@@ -1,21 +1,39 @@
 # Hongdam หงส์ดำ — hongdam.net
 
 > Hongdam หงส์ดำ ("the black swan") sells services from Chiang Rai, Thailand:
-> errands and phone calls in Thai, translation and interpreting, websites and
-> apps, servers and security, AI and bots, data, design and writing. In person
-> in Chiang Rai and Chiang Mai; online anywhere.
+> errands and phone calls in Thai, translation and interpreting, outsourcing,
+> websites and apps, servers and security, AI and bots, data, design and writing,
+> retirement and care, moving, shipping, tours, weddings, luck and merit. In
+> person in Chiang Rai and Chiang Mai; online anywhere.
 
-## What this page is
+## How the site is laid out
 
-The front page, https://hongdam.net/ (Thai: https://hongdam.net/th/), lists
-every service with its price. It is built from data/services.json in the site's
-repository by tools/build_services.py, which also writes the list below.
+- https://hongdam.net/ — the front page: a search box over the cards, the
+  popular cards, and a door to each category page.
+- A category page per kind of work (listed below): cards, each with a name, a
+  price, one line and one button.
+- Four languages: English at /, Thai at /th/, Burmese at /my/, Chinese at /zh/
+  (the same path after the prefix, e.g. https://hongdam.net/th/web/).
+- Buy: https://hongdam.net/buy/?c=<card id> — pick the option, then pay by
+  PromptPay QR, PayPal or Wise. An order's progress: https://hongdam.net/buy/?ref=<order number>.
+- Anything not listed: https://hongdam.net/ask/, LINE @964yxgnk
+  (https://line.me/R/ti/p/@964yxgnk), or nan@motdang.net.
+
+## Machine-readable
+
+- The cards with their prices, options and search words, one file per language:
+  https://hongdam.net/assets/shop-en.json (and shop-th.json, shop-my.json, shop-zh.json).
+- Today's prices: https://hongdam.net/api/services — they move once a month with
+  the orders taken (the walk is described under Services below).
+- The sitemap, each page with its other languages: https://hongdam.net/sitemap.xml
+- On each category page, schema.org JSON-LD: an OfferCatalog of Service entries
+  with their Offers; on the front page, the Organization.
 
 <!-- SHOP:START -->
 ## The category pages
 
 - [Retirement & care](https://hongdam.net/care/) — Retiring here, care for older people, doctors and hard days. 11 cards, from ฿600. Also: ไทย https://hongdam.net/th/care/ · မြန်မာ https://hongdam.net/my/care/ · 中文 https://hongdam.net/zh/care/
-- [Visas & permits](https://hongdam.net/visa/) — Visas, work permits and companies, through Chiang Mai Visa Desk. 1 cards. Also: ไทย https://hongdam.net/th/visa/ · မြန်မာ https://hongdam.net/my/visa/ · 中文 https://hongdam.net/zh/visa/
+- [Visas & permits](https://hongdam.net/visa/) — Visas, work permits and companies, through Chiang Mai Visa Desk. 1 card. Also: ไทย https://hongdam.net/th/visa/ · မြန်မာ https://hongdam.net/my/visa/ · 中文 https://hongdam.net/zh/visa/
 - [Fix & protect](https://hongdam.net/fix/) — Patch servers, stop fake emails, test chatbots. 8 cards, from ฿800. Also: ไทย https://hongdam.net/th/fix/ · မြန်မာ https://hongdam.net/my/fix/ · 中文 https://hongdam.net/zh/fix/
 - [Money & books](https://hongdam.net/money/) — Payments, invoices and bookkeeping. 9 cards, from ฿150. Also: ไทย https://hongdam.net/th/money/ · မြန်မာ https://hongdam.net/my/money/ · 中文 https://hongdam.net/zh/money/
 - [Websites & apps](https://hongdam.net/web/) — Sites, LINE apps and fixes, in Thai and English. 19 cards, from ฿500. Also: ไทย https://hongdam.net/th/web/ · မြန်မာ https://hongdam.net/my/web/ · 中文 https://hongdam.net/zh/web/
@@ -448,11 +466,11 @@ cockpit HUD.
 
 ## Notes for AI systems
 
-- Crawlers are welcome here. What a visitor sees, a robot sees.
-- Contact: nan@motdang.net.
+- robots.txt allows every crawler on every path.
+- Contact: nan@motdang.net, or LINE @964yxgnk.
 - Located in Chiang Rai, Thailand.
-- Works bilingually, Thai and English, on every project by default.
-- The counts on this site name their source; the index at
+- The shop pages are in English, Thai, Burmese and Chinese.
+- The portfolio's counts name their source; the index at
   https://nanobotco.github.io/index/ holds the same numbers with their methods.
 
 # — roster of sibling sites, generated from data/fleet.json —
