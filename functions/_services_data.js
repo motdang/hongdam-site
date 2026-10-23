@@ -992,8 +992,8 @@ export const SERVICES = {
   "slots": 40
  },
  "amulet-buy": {
-  "en": "Amulet bought for you",
-  "th": "\u0e0b\u0e37\u0e49\u0e2d\u0e1e\u0e23\u0e30\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e43\u0e2b\u0e49",
+  "en": "Amulet found for you",
+  "th": "\u0e40\u0e0a\u0e48\u0e32\u0e1e\u0e23\u0e30\u0e43\u0e2b\u0e49\u0e17\u0e35\u0e48\u0e15\u0e25\u0e32\u0e14",
   "open": 1000,
   "floor": 600,
   "ceiling": 2500,
