@@ -2,7 +2,9 @@
  * The Buy button behind every service card on hongdam.net (her ask 2026-10-23: "most importantly,
  * spend money"). Cards and options: functions/_shop_data.js, written by tools/build_shop.py from
  * data/shop.json and data/services.json. Prices: functions/_services.js (the monthly Shoup walk) for
- * walking items; a tier, a fixed price or a US$ price for the rest. The total is worked out here,
+ * walking items. A tier, a fixed price or a US$ price is the set number; when its option names a walk
+ * (price.w, her word 2026-10-24 "Put them on the walk"), the walk's number is used instead, in the
+ * same currency, with price.part "tail" for an item's second price. The total is worked out here,
  * never taken from the browser.
  *
  * Under ฿10,000 (US$300) the buyer pays it all; from there, half now and half at delivery.
@@ -24,30 +26,40 @@ export const optionOf = (card, opt) => {
   return c.opts.find((o) => o.id === opt) || (opt ? null : c.opts[0])
 }
 
-/** {total, due, cur, qty} for one choice, or {error}. walked: {item id: baht} from the walk. */
+/** The walk's number for a price in cur, or undefined while the walk has none in that currency. */
+export function walkNum(k, part, cur) {
+  if (typeof k === 'number') k = { price: k, cur: 'THB' }
+  if (!k) return undefined
+  if (part === 'tail') return k.tail > 0 ? k.tail : undefined
+  return (k.cur || 'THB') === cur && k.price > 0 ? k.price : undefined
+}
+
+/** {total, due, cur, qty} for one choice, or {error}. walked: {item id: {price, cur, tail}} from the walk. */
 export function quote(card, opt, qty, addon, walked) {
   const c = CARDS[card], o = optionOf(card, opt)
   if (!o) return { error: 'card' }
   const n = o.unit ? Math.max(1, Math.min(o.max || 99, Math.floor(Number(qty)) || 1)) : 1
-  const p = o.price
+  const p = o.price, w = p.w && walked[p.w]
   let total, cur = 'THB'
   if (p.walk) {
-    const b = walked[o.id]
+    const b = walkNum(walked[o.id], 'price', 'THB')
     if (!b) return { error: 'price' }
     total = b * n
   } else if (p.tier) {
     const [base, upto, per] = p.tier
-    total = base + Math.max(0, n - upto) * per
-  } else if (p.fixed) total = p.fixed * n
-  else if (p.usd) { total = p.usd * n; cur = 'USD' }
+    total = (walkNum(w, 'price', 'THB') ?? base) + Math.max(0, n - upto) * (walkNum(w, 'tail', 'THB') ?? per)
+  } else if (p.fixed) total = (walkNum(w, p.part, 'THB') ?? p.fixed) * n
+  else if (p.usd) { total = (walkNum(w, p.part, 'USD') ?? p.usd) * n; cur = 'USD' }
   else return { error: 'price' }
-  if (addon && c.add && cur === 'THB') total += c.add.fixed * n
+  if (addon && c.add && cur === 'THB') total += (walkNum(c.add.w && walked[c.add.w], 'price', 'THB') ?? c.add.fixed) * n
   const due = total >= HALF_FROM[cur] ? Math.ceil(total / 2) : total
   return { total, due, cur, qty: n, opt: o.id, addon: !!(addon && c.add) }
 }
 
+/** {item id: {price, cur, tail}} for every walking price that is not a percentage. */
 export async function walkedPrices(db, now) {
-  return Object.fromEntries((await prices(db, now)).filter((p) => p.baht).map((p) => [p.id, p.baht]))
+  return Object.fromEntries((await prices(db, now)).filter((k) => k.unit !== '%' && (k.price ?? k.baht) > 0)
+    .map((k) => [k.id, { price: k.price ?? k.baht, cur: k.cur || 'THB', ...(k.tail > 0 ? { tail: k.tail } : {}) }]))
 }
 
 export function payLinks(cur, due) {

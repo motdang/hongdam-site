@@ -22,6 +22,18 @@ assert.equal(quote('call', 'web-site', 1, false, walked).error, 'card')
 assert.equal(quote('php', '', 1, false, walked).error, 'card')
 assert.equal(quote('trades', 'trades', 1, false, {}).error, 'price')
 assert.ok(HALF_FROM.THB === 10000)
+// her prices on the walk (2026-10-24): the walk's number when it has one in the option's currency, else the set number
+const wk = { ...walked, 'lang-new': { price: 2000, cur: 'THB', tail: 600 }, 'lang-stamp': { price: 150, cur: 'THB' },
+  'reading-en': { price: 129, cur: 'USD' }, 'ai-own': { price: 30000, cur: 'THB', tail: 30000 }, 'date-en': 59 }
+assert.equal(quote('translate', 'lang-new', 8, true, wk).total, 2000 + 3 * 600 + 8 * 150)
+assert.equal(quote('reading', 'reading-en', 1, false, wk).total, 129)
+assert.equal(quote('ai-own', 'ai-own', 1, false, wk).total, 30000)
+assert.deepEqual([quote('ai-own', 'ai-own-usd', 1, false, wk).total, quote('ai-own', 'ai-own-usd', 1, false, wk).cur], [30000, 'USD'])
+// a walked number in baht never prices a US$ option; no walk at all keeps the set numbers
+assert.equal(quote('date-pick', 'date-en', 1, false, wk).total, 59)
+assert.equal(quote('date-pick', 'date-en', 1, false, { 'date-en': { price: 1500, cur: 'THB' } }).total, 59)
+assert.equal(quote('translate', 'lang-new', 8, true, {}).total, 3800)
+assert.equal(CARDS['ai-own'].opts[1].price.w, 'ai-own'); assert.equal(CARDS['ai-own'].opts[1].price.part, 'tail')
 // every buy card has options with a price rule
 for (const [id, c] of Object.entries(CARDS)) if (c.act === 'buy') assert.ok(c.opts.length && c.opts.every((o) => o.price), id)
 

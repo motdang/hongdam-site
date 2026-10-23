@@ -63,6 +63,19 @@ if (D.front && D.lang === 'en' && !store('hd-lang')) {
 
 // Today's prices
 const live = {}
+// The walk's number for a price shown in cur, or undefined while the walk has none in that currency (functions/_shop.js walkNum).
+const walkNum = (k, part, cur) => !k ? undefined : part === 'tail' ? (k.tail > 0 ? k.tail : undefined)
+  : (k.cur || 'THB') === cur && (k.price ?? k.baht) > 0 ? (k.price ?? k.baht) : undefined
+const walkOf = (id) => live.services && live.services[id]
+function liveText(root = document) {
+  root.querySelectorAll('[data-live]').forEach((e) => {
+    const [a, id] = e.dataset.live.split('/'), k = live[a] && live[a][id]
+    if (!k) return
+    if (k.unit === '%') { e.textContent = k.price + '%'; return }
+    const cur = e.dataset.cur || 'THB', v = walkNum(k, e.dataset.part, cur)
+    if (v) e.textContent = fmt(v, cur)
+  })
+}
 async function loadLive() {
   const apis = ['services', 'php', 'github', 'bots']
   await Promise.all(apis.map(async (a) => {
@@ -71,11 +84,7 @@ async function loadLive() {
       live[a] = Object.fromEntries((j.kinds || []).map((k) => [k.id, k]))
     } catch { live[a] = {} }
   }))
-  document.querySelectorAll('[data-live]').forEach((e) => {
-    const [a, id] = e.dataset.live.split('/'), k = live[a] && live[a][id]
-    if (!k) return
-    e.textContent = k.unit === '%' ? k.price + '%' : fmt(k.baht)
-  })
+  liveText()
   document.querySelectorAll('[data-min]').forEach((e) => {
     const ks = Object.values(live[e.dataset.min] || {}).filter((k) => k.baht > 0)
     if (ks.length) e.textContent = fmt(Math.min(...ks.map((k) => k.baht)))
@@ -157,13 +166,15 @@ async function startBuy() {
   document.body.style.setProperty('--line', `var(--c-${card.cat})`)
   let opt = card.opts.find((o) => o.id === P.get('o')) || card.opts[0]
   const base = (o) => {
-    if (o.price.walk) { const k = live.services && live.services[o.id]; return k && k.baht ? k.baht : o.price.walk }
-    return o.price.fixed || o.price.usd || 0
+    const p = o.price
+    if (p.walk) return walkNum(walkOf(o.id), 'price', 'THB') || p.walk
+    if (p.usd) return walkNum(walkOf(p.w), p.part, 'USD') ?? p.usd
+    return walkNum(walkOf(p.w), p.part, 'THB') ?? p.fixed ?? 0
   }
   const totalOf = (o, n, add) => {
-    const p = o.price
-    let t = p.tier ? p.tier[0] + Math.max(0, n - p.tier[1]) * p.tier[2] : base(o) * n
-    if (add && card.add && !p.usd) t += card.add.fixed * n
+    const p = o.price, w = walkOf(p.w)
+    let t = p.tier ? (walkNum(w, 'price', 'THB') ?? p.tier[0]) + Math.max(0, n - p.tier[1]) * (walkNum(w, 'tail', 'THB') ?? p.tier[2]) : base(o) * n
+    if (add && card.add && !p.usd) t += (walkNum(walkOf(card.add.w), 'price', 'THB') ?? card.add.fixed) * n
     return t
   }
   const cur = (o) => (o.price.usd ? 'USD' : 'THB')
@@ -177,7 +188,7 @@ ${card.opts.length > 1 ? `<fieldset><legend>${esc(T.choose)}</legend>${card.opts
 <div class="qtyrow" hidden><span class="lab">${esc(T.qty)}</span>
  <button type="button" class="step" data-d="-1" aria-label="−">−</button><input name="qty" type="number" inputmode="numeric" min="1" value="1" aria-label="${esc(T.qty)}"><button type="button" class="step" data-d="1" aria-label="+">+</button>
  <span class="unit"></span></div>
-${card.add ? `<label class="opt"><input type="checkbox" name="addon"> <span>${esc(card.add.n)}</span></label>` : ''}
+${card.add ? `<label class="opt"><input type="checkbox" name="addon"> <span>${card.add.nh || esc(card.add.n)}</span></label>` : ''}
 <p class="tot"><span>${esc(T.total)}</span> <b id="total"></b></p><p id="halfnote" class="note" hidden></p>
 <label class="field">${esc(T.reach)}<input name="contact" required autocomplete="tel" maxlength="120"></label>
 <label class="field">${esc(T.note)}<textarea name="note" rows="3" maxlength="600"></textarea></label>
@@ -191,6 +202,7 @@ ${card.add ? `<label class="opt"><input type="checkbox" name="addon"> <span>${es
     $('.qtyrow', root).hidden = !opt.unit
     if (opt.unit) { qty.max = opt.max || 99; $('.unit', root).textContent = opt.unitMany || '' }
     card.opts.forEach((o) => { const e = $(`.oprice[data-o="${o.id}"]`, root); if (e && o.price.walk) e.textContent = fmt(base(o)) + (o.per || '') })
+    liveText(root)
     const c = cur(opt), t = totalOf(opt, n(), f.elements.addon && f.elements.addon.checked)
     $('#total', root).textContent = fmt(t, c)
     const h = $('#halfnote', root)
@@ -282,6 +294,20 @@ if (af) af.addEventListener('submit', async (e) => {
   m.textContent = r.ok ? T.asked : (r.error || T.err.service)
   if (r.ok) af.reset()
 })
+
+// "How is this translation?" on the Burmese and Chinese pages (her word 2026-10-24); answers go to /api/rate.
+const rf = $('#rate')
+if (rf) {
+  const send = async (score, text = '') => {
+    rf.querySelectorAll('button').forEach((b) => { b.disabled = true })
+    try { await fetch('/api/rate', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ page: (location.pathname + location.search).slice(0, 200), lang: D.lang, score, text }) }) } catch { /* the thanks shows either way */ }
+    rf.querySelector('div').hidden = true
+    rf.querySelector('.thanks').hidden = false
+  }
+  rf.querySelector('[data-score="good"]').addEventListener('click', () => send('good'))
+  rf.querySelector('[data-score="better"]').addEventListener('click', () => { rf.querySelector('div').hidden = false; rf.elements.text.focus() })
+  rf.addEventListener('submit', (e) => { e.preventDefault(); send('better', rf.elements.text.value.trim()) })
+}
 
 if (D.group) glyphs(D.group)
 startBuy().then((b) => { buy = b; loadLive() })

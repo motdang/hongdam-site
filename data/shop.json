@@ -89,7 +89,13 @@
    },
    "know": "Good to know",
    "costs": "What others charge",
-   "read": "Read {date}. Sources open in a new tab."
+   "read": "Read {date}. Sources open in a new tab.",
+   "rateQ": "How is this translation?",
+   "rateGood": "Good",
+   "rateBetter": "Could be better",
+   "rateText": "Your correction (you may leave this empty)",
+   "rateSend": "Send",
+   "rateThanks": "Thank you. The team reads every one."
   },
   "th": {
    "title": "หงส์ดำ — เราทำให้ · เชียงราย",
@@ -168,7 +174,13 @@
    },
    "know": "ข้อมูลน่ารู้",
    "costs": "ค่าใช้จ่ายที่จ่ายให้ผู้อื่น",
-   "read": "อ่านเมื่อ {date} แหล่งที่มาเปิดในแท็บใหม่"
+   "read": "อ่านเมื่อ {date} แหล่งที่มาเปิดในแท็บใหม่",
+   "rateQ": "คำแปลนี้เป็นอย่างไร",
+   "rateGood": "ดี",
+   "rateBetter": "ปรับให้ดีขึ้นได้",
+   "rateText": "คำแก้ของคุณ (เว้นว่างได้)",
+   "rateSend": "ส่ง",
+   "rateThanks": "ขอบคุณ ทีมอ่านทุกข้อความ"
   },
   "my": {
    "title": "Hongdam — ကျွန်ုပ်တို့ လုပ်ပေးပါသည် · ချင်းရိုင်",
@@ -247,7 +259,13 @@
    },
    "know": "သိထားသင့်သည်",
    "costs": "အခြားသူများ ကောက်ခံသော စျေးနှုန်း",
-   "read": "{date} တွင် ဖတ်ခဲ့သည်။ ရင်းမြစ်များ တဘ်အသစ်တွင် ပွင့်သည်။"
+   "read": "{date} တွင် ဖတ်ခဲ့သည်။ ရင်းမြစ်များ တဘ်အသစ်တွင် ပွင့်သည်။",
+   "rateQ": "ဤဘာသာပြန်ချက် ဘယ်လိုလဲ။",
+   "rateGood": "ကောင်းသည်",
+   "rateBetter": "ပိုကောင်းနိုင်သည်",
+   "rateText": "သင့်ပြင်ဆင်ချက် (ချန်ထားနိုင်သည်)",
+   "rateSend": "ပို့ရန်",
+   "rateThanks": "ကျေးဇူးတင်ပါသည်။ အဖွဲ့က အားလုံးကို ဖတ်ပါသည်။"
   },
   "zh": {
    "title": "Hongdam — 我们替您办 · 清莱",
@@ -326,7 +344,13 @@
    },
    "know": "须知",
    "costs": "第三方收费参考",
-   "read": "{date} 查阅。来源在新标签页打开。"
+   "read": "{date} 查阅。来源在新标签页打开。",
+   "rateQ": "这个翻译怎么样？",
+   "rateGood": "很好",
+   "rateBetter": "可以更好",
+   "rateText": "您的修改（可留空）",
+   "rateSend": "发送",
+   "rateThanks": "谢谢。团队会逐条阅读。"
   }
  },
  "units": {
@@ -4208,6 +4232,10 @@
      },
      "price": {
       "usd": 25000
+     },
+     "w": {
+      "of": "ai-own",
+      "part": "tail"
      }
     }
    ]
@@ -5761,12 +5789,12 @@
     "zh": "文件翻译"
    },
    "l": {
-    "en": "Thai, English, Burmese. Passports, contracts, certificates.",
-    "th": "ไทย อังกฤษ พม่า หนังสือเดินทาง สัญญา ใบรับรอง",
-    "my": "ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ။ ပတ်စပို့၊ စာချုပ်၊ လက်မှတ်။",
-    "zh": "泰、英、缅。护照、合同、证书。"
+    "en": "Thai, English, Burmese, Chinese. Passports, contracts, certificates.",
+    "th": "ไทย อังกฤษ พม่า จีน หนังสือเดินทาง สัญญา ใบรับรอง",
+    "my": "ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ၊ တရုတ်။ ပတ်စပို့၊ စာချုပ်၊ လက်မှတ်။",
+    "zh": "泰、英、缅、中。护照、合同、证书。"
    },
-   "kw": "translation translate certified translation document translation passport house registration tabien baan birth certificate marriage police clearance contract แปล แปลเอกสาร รับแปลเอกสาร รับรองคำแปล แปลเอกสารยื่นวีซ่า ทะเบียนบ้าน ဘာသာပြန် 翻译 文件翻译 护照 认证翻译 合同",
+   "kw": "translation translate certified translation document translation passport house registration tabien baan birth certificate marriage police clearance contract แปล แปลเอกสาร รับแปลเอกสาร รับรองคำแปล แปลเอกสารยื่นวีซ่า ทะเบียนบ้าน ဘာသာပြန် 翻译 文件翻译 护照 认证翻译 合同 chinese translation แปลภาษาจีน แปลจีน 中文翻译 中泰翻译 中英翻译",
    "act": "buy",
    "opts": [
     {
@@ -5787,10 +5815,10 @@
       ]
      },
      "show": {
-      "en": "฿1,500 up to 5 pages, then ฿500 / page",
-      "th": "฿1,500 ไม่เกิน 5 หน้า หน้าต่อไป ฿500",
-      "my": "5 မျက်နှာအထိ ฿1,500၊ ထို့နောက် တစ်မျက်နှာ ฿500",
-      "zh": "5 页内 ฿1,500，之后每页 ฿500"
+      "en": "{price} up to 5 pages, then {tail} / page",
+      "th": "{price} ไม่เกิน 5 หน้า หน้าต่อไป {tail}",
+      "my": "5 မျက်နှာအထိ {price}၊ ထို့နောက် တစ်မျက်နှာ {tail}",
+      "zh": "5 页内 {price}，之后每页 {tail}"
      }
     },
     {
@@ -5811,21 +5839,32 @@
       ]
      },
      "show": {
-      "en": "฿500 up to 5 pages, then ฿150 / page",
-      "th": "฿500 ไม่เกิน 5 หน้า หน้าต่อไป ฿150",
-      "my": "5 မျက်နှာအထိ ฿500၊ ထို့နောက် တစ်မျက်နှာ ฿150",
-      "zh": "5 页内 ฿500，之后每页 ฿150"
+      "en": "{price} up to 5 pages, then {tail} / page",
+      "th": "{price} ไม่เกิน 5 หน้า หน้าต่อไป {tail}",
+      "my": "5 မျက်နှာအထိ {price}၊ ထို့နောက် တစ်မျက်နှာ {tail}",
+      "zh": "5 页内 {price}，之后每页 {tail}"
      }
+    },
+    {
+     "i": "zh-translate",
+     "n": {
+      "en": "Chinese translation",
+      "th": "แปลภาษาจีน",
+      "my": "တရုတ်ဘာသာပြန်",
+      "zh": "中文翻译"
+     },
+     "u": "page",
+     "max": 200
     }
    ],
    "add": {
     "i": "lang-stamp",
     "fixed": 100,
     "n": {
-     "en": "Translator's stamp on the pages, + ฿100 a page",
-     "th": "ประทับตราผู้แปล หน้าละ ฿100",
-     "my": "ဘာသာပြန်သူ တံဆိပ်၊ တစ်မျက်နှာ +฿100",
-     "zh": "加盖译者章，每页 ฿100"
+     "en": "Translator's stamp on the pages, + {price} a page",
+     "th": "ประทับตราผู้แปล หน้าละ {price}",
+     "my": "ဘာသာပြန်သူ တံဆိပ်၊ တစ်မျက်နှာ +{price}",
+     "zh": "加盖译者章，每页 {price}"
     }
    },
    "feat": true
@@ -5845,7 +5884,7 @@
     "my": "ဖုန်းဖြင့် သို့မဟုတ် လူဝင်မှု၊ ဆေးရုံ၊ ဘဏ်သို့ အတူလိုက်။",
     "zh": "电话口译，或陪您去移民局、医院、银行。"
    },
-   "kw": "interpreter interpreting hospital interpreter immigration police bank court meeting ล่าม ล่ามพม่า ล่ามโรงพยาบาล စကားပြန် 口译 陪同 医院 移民局",
+   "kw": "interpreter interpreting hospital interpreter immigration police bank court meeting ล่าม ล่ามพม่า ล่ามโรงพยาบาล စကားပြန် 口译 陪同 医院 移民局 chinese interpreter ล่ามภาษาจีน ล่ามจีน 中文口译 中文翻译陪同",
    "act": "buy",
    "opts": [
     {
@@ -5875,6 +5914,26 @@
       "th": "ไปด้วยทั้งวัน",
       "my": "အတူလိုက်၊ တစ်နေ့လုံး",
       "zh": "陪同，全天"
+     }
+    },
+    {
+     "i": "zh-interp-phone",
+     "n": {
+      "en": "Chinese, by phone or video",
+      "th": "ภาษาจีน ทางโทรศัพท์หรือวิดีโอ",
+      "my": "တရုတ်၊ ဖုန်း သို့မဟုတ် ဗီဒီယို",
+      "zh": "中文，电话或视频"
+     },
+     "u": "half",
+     "max": 16
+    },
+    {
+     "i": "zh-interp-person",
+     "n": {
+      "en": "Chinese, with you, up to 4 hours",
+      "th": "ภาษาจีน ไปด้วย ไม่เกิน 4 ชั่วโมง",
+      "my": "တရုတ်၊ အတူလိုက်၊ 4 နာရီအထိ",
+      "zh": "中文，陪同，4 小时以内"
      }
     }
    ]

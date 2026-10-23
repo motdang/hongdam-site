@@ -921,7 +921,8 @@ export const CARDS = {
    {
     "id": "ai-own",
     "price": {
-     "fixed": 25000
+     "fixed": 25000,
+     "w": "ai-own"
     },
     "unit": false,
     "max": 99
@@ -929,7 +930,9 @@ export const CARDS = {
    {
     "id": "ai-own-usd",
     "price": {
-     "usd": 25000
+     "usd": 25000,
+     "w": "ai-own",
+     "part": "tail"
     },
     "unit": false,
     "max": 99
@@ -1541,7 +1544,8 @@ export const CARDS = {
    {
     "id": "date-en",
     "price": {
-     "usd": 59
+     "usd": 59,
+     "w": "date-en"
     },
     "unit": false,
     "max": 99
@@ -1599,7 +1603,8 @@ export const CARDS = {
    {
     "id": "reading-en",
     "price": {
-     "usd": 99
+     "usd": 99,
+     "w": "reading-en"
     },
     "unit": false,
     "max": 99
@@ -1707,7 +1712,8 @@ export const CARDS = {
    {
     "id": "name-charm",
     "price": {
-     "usd": 59
+     "usd": 59,
+     "w": "name-charm"
     },
     "unit": false,
     "max": 99
@@ -1757,7 +1763,8 @@ export const CARDS = {
       1500,
       5,
       500
-     ]
+     ],
+     "w": "lang-new"
     },
     "unit": true,
     "max": 200
@@ -1769,7 +1776,16 @@ export const CARDS = {
       500,
       5,
       150
-     ]
+     ],
+     "w": "lang-check"
+    },
+    "unit": true,
+    "max": 200
+   },
+   {
+    "id": "zh-translate",
+    "price": {
+     "walk": true
     },
     "unit": true,
     "max": 200
@@ -1777,7 +1793,8 @@ export const CARDS = {
   ],
   "add": {
    "id": "lang-stamp",
-   "fixed": 100
+   "fixed": 100,
+   "w": "lang-stamp"
   }
  },
  "interp": {
@@ -1802,6 +1819,22 @@ export const CARDS = {
    },
    {
     "id": "interp-day",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "zh-interp-phone",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 16
+   },
+   {
+    "id": "zh-interp-person",
     "price": {
      "walk": true
     },
@@ -2155,7 +2188,8 @@ export const CARDS = {
    {
     "id": "sec-msp",
     "price": {
-     "usd": 2
+     "usd": 2,
+     "w": "sec-msp"
     },
     "unit": true,
     "max": 2000
