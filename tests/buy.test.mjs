@@ -43,4 +43,16 @@ r = await (await onRequest(ctx('POST', ['claim'], { ref: rows[0][0], how: 'wise'
 assert.equal(r.state, 'claimed')
 const bad = await onRequest({ ...ctx('POST', undefined, { card: 'call', contact: 'abc' }), request: new Request('https://hongdam.net/api/buy', { method: 'POST', headers: { origin: 'https://evil.example' }, body: '{}' }) })
 assert.equal(bad.status, 403)
+// the tracker: card, option and state, never the contact
+r = await (await onRequest(ctx('GET', [rows[0][0]]))).json()
+assert.equal(r.ok, true); assert.equal(r.card, 'call'); assert.equal(r.contact, undefined)
+assert.equal((await onRequest(ctx('GET', ['nope']))).status, 404)
+// moving an order on needs the team's key
+env.TASKS_ADMIN = 'k'
+assert.equal((await onRequest(ctx('POST', ['state'], { ref: rows[0][0], state: 'done' }))).status, 401)
+const team = (body) => ({ ...ctx('POST', ['state'], body), request: new Request('https://hongdam.net/api/buy/state', { method: 'POST', headers: { authorization: 'Bearer k', 'content-type': 'application/json' }, body: JSON.stringify(body) }) })
+r = await (await onRequest(team({ ref: rows[0][0], state: 'started' }))).json()
+assert.equal(r.state, 'started')
+r = await (await onRequest(team({ ref: rows[0][0], state: 'sideways' }))).json()
+assert.equal(r.why, 'body')
 console.log('buy ok')

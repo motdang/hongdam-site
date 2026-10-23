@@ -1,5 +1,5 @@
 /* hongdam.net: front page, category pages, Buy page, order tracker.
-   Structure first, then three looks (lacquer, isotype, night) set on <html data-look>, until Nan picks one.
+   The look is Isotype (her pick 2026-10-23): paper, ink, flat colour, hard edges, riso dingbats.
    A job is a line with stops: doodle dingbats on a coloured line, the black swan riding it. */
 
 /* ---------------------------------------------------------------- shared tokens */
@@ -8,7 +8,7 @@
   --sys: system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", Thonburi, "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, var(--sys);
   --ease: cubic-bezier(.45, .05, .25, 1);
-  --rw: 2.25rem;
+  --rw: 2.4rem;
   /* one hue per category line; each look sets the lightness (--lL) and chroma (--lC) */
   --c-help: oklch(var(--lL) var(--lC) 32);
   --c-care: oklch(var(--lL) var(--lC) 185);
@@ -32,36 +32,11 @@
   --c-visa: oklch(var(--lL) var(--lC) 275);
 }
 
-/* ---------------------------------------------------------------- lacquer: black lacquer, gold, vermilion; cut-paper dingbats */
-:root[data-look="lacquer"] {
-  --bg: #F3EBDD; --bg2: #FBF6EC; --fg: #1C140D; --mut: #5C4F40; --rule: rgba(70, 45, 20, .16); --acc: #7E550C;
-  --btn: #A82E19; --btn-fg: #FFF8EE; --lL: .54; --lC: .15;
-  --font-d: "Didot", "Bodoni 72", "Bodoni Moda", "Noto Serif Display", "Playfair Display", Georgia, var(--sys);
-  --font-l: var(--sys); --font-num: var(--font-d);
-  --hd-w: 400; --hd-track: -.01em; --r: 16px; --btn-r: 999px;
-  --card-bd: 1px solid var(--rule); --card-shadow: 0 1px 0 rgba(255, 255, 255, .6) inset, 0 10px 30px -18px rgba(60, 30, 10, .35);
-  --label-case: uppercase; --label-track: .18em; --line-w: 3px;
-  --db-look: paper; --db-a: #E2A93B;
-  --page: radial-gradient(120% 50% at 50% -8%, rgba(214, 160, 60, .16), transparent 60%);
-}
-@media (prefers-color-scheme: dark) { :root[data-look="lacquer"]:not([data-theme="light"]) {
-  --bg: #0C0907; --bg2: #17110C; --fg: #F2E7D4; --mut: #BCAA90; --rule: rgba(240, 205, 150, .15); --acc: #E2B65A;
-  --btn: #E2B65A; --btn-fg: #1A1108; --lL: .74; --lC: .13;
-  --card-shadow: 0 1px 0 rgba(255, 220, 160, .05) inset, 0 18px 40px -24px #000;
-  --page: radial-gradient(120% 50% at 50% -8%, rgba(226, 170, 70, .14), transparent 60%);
-} }
-:root[data-look="lacquer"][data-theme="dark"] {
-  --bg: #0C0907; --bg2: #17110C; --fg: #F2E7D4; --mut: #BCAA90; --rule: rgba(240, 205, 150, .15); --acc: #E2B65A;
-  --btn: #E2B65A; --btn-fg: #1A1108; --lL: .74; --lC: .13;
-  --card-shadow: 0 1px 0 rgba(255, 220, 160, .05) inset, 0 18px 40px -24px #000;
-  --page: radial-gradient(120% 50% at 50% -8%, rgba(226, 170, 70, .14), transparent 60%);
-}
-
 /* ---------------------------------------------------------------- isotype: paper, ink, flat colour, hard edges; riso dingbats */
-:root[data-look="isotype"] {
+:root {
   --bg: #F1EDE4; --bg2: #FFFDF8; --fg: #121212; --mut: #4A4640; --rule: #121212; --acc: #121212;
   --btn: #121212; --btn-fg: #FFFDF8; --lL: .6; --lC: .17;
-  --font-d: "Futura", "Futura PT", "Avenir Next", "Century Gothic", "Jost", var(--sys);
+  --font-d: "Futura", "Futura PT", "Jost", "Avenir Next", "Century Gothic", "URW Gothic", var(--sys);
   --font-l: var(--font-d); --font-num: var(--font-d);
   --hd-w: 700; --hd-track: -.025em; --r: 3px; --btn-r: 3px;
   --card-bd: 2px solid var(--fg); --card-shadow: 5px 5px 0 var(--fg);
@@ -69,42 +44,10 @@
   --db-look: riso;
   --page: none;
 }
-@media (prefers-color-scheme: dark) { :root[data-look="isotype"]:not([data-theme="light"]) {
+@media (prefers-color-scheme: dark) { :root {
   --bg: #141311; --bg2: #1D1B18; --fg: #F1EDE4; --mut: #BDB6A8; --rule: #F1EDE4; --acc: #F1EDE4;
   --btn: #F1EDE4; --btn-fg: #121212; --lL: .76; --lC: .15; --db-look: ink;
 } }
-:root[data-look="isotype"][data-theme="dark"] {
-  --bg: #141311; --bg2: #1D1B18; --fg: #F1EDE4; --mut: #BDB6A8; --rule: #F1EDE4; --acc: #F1EDE4;
-  --btn: #F1EDE4; --btn-fg: #121212; --lL: .76; --lC: .15; --db-look: ink;
-}
-
-/* ---------------------------------------------------------------- night: a metro map after dark; neon dingbats */
-:root[data-look="night"] {
-  --bg: #F4F5F8; --bg2: #FFFFFF; --fg: #0A0C12; --mut: #4A5163; --rule: #D9DCE4; --acc: #0047D6;
-  --btn: #0A0C12; --btn-fg: #FFFFFF; --lL: .56; --lC: .2;
-  --font-d: var(--sys); --font-l: var(--mono); --font-num: var(--sys);
-  --hd-w: 800; --hd-track: -.035em; --r: 14px; --btn-r: 12px;
-  --card-bd: 1px solid var(--rule); --card-shadow: 0 1px 2px rgba(10, 12, 18, .05);
-  --label-case: uppercase; --label-track: .12em; --line-w: 4px;
-  --db-look: ink;
-  --page: radial-gradient(circle at 1px 1px, rgba(10, 12, 18, .07) 1px, transparent 0) 0 0 / 22px 22px;
-}
-@media (prefers-color-scheme: dark) { :root[data-look="night"]:not([data-theme="light"]) {
-  --bg: #05060A; --bg2: #0C0F16; --fg: #EDF0F7; --mut: #9AA3B5; --rule: #1E2433; --acc: #7CF5C8;
-  --btn: #7CF5C8; --btn-fg: #03130C; --lL: .8; --lC: .19;
-  --card-shadow: 0 0 0 1px rgba(124, 245, 200, .03), 0 20px 50px -30px #000;
-  --db-look: neon;
-  --page: radial-gradient(circle at 1px 1px, rgba(237, 240, 247, .07) 1px, transparent 0) 0 0 / 22px 22px;
-} }
-:root[data-look="night"][data-theme="dark"] {
-  --bg: #05060A; --bg2: #0C0F16; --fg: #EDF0F7; --mut: #9AA3B5; --rule: #1E2433; --acc: #7CF5C8;
-  --btn: #7CF5C8; --btn-fg: #03130C; --lL: .8; --lC: .19;
-  --card-shadow: 0 0 0 1px rgba(124, 245, 200, .03), 0 20px 50px -30px #000;
-  --db-look: neon;
-  --page: radial-gradient(circle at 1px 1px, rgba(237, 240, 247, .07) 1px, transparent 0) 0 0 / 22px 22px;
-}
-:root[data-theme="light"] { color-scheme: light }
-:root[data-theme="dark"] { color-scheme: dark }
 
 /* ---------------------------------------------------------------- page */
 *, *::before, *::after { box-sizing: border-box }
@@ -138,10 +81,10 @@ h2 { margin: 2.8rem 0 1rem; font: 700 .78rem/1.3 var(--font-l); letter-spacing: 
 
 /* ---------------------------------------------------------------- dingbats hold their box before core.js draws them */
 doodle-dingbat { display: inline-block; width: 1em; height: 1em; vertical-align: middle }
-doodle-dingbat[name="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[name="translate"] { width: 1.2em }
+doodle-dingbat[name^="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[name="translate"] { width: 1.2em }
 
 /* ---------------------------------------------------------------- the job line */
-.job { --stop: 2.55rem; --lineY: .62rem; --clear: 1.6rem; --pad: calc(var(--lineY) + var(--clear)); position: relative; padding-bottom: var(--pad) }
+.job { --stop: 2.55rem; --lineY: .62rem; --clear: 1.95rem; --pad: calc(var(--lineY) + var(--clear)); position: relative; padding-bottom: var(--pad) }
 .job ol { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-end; margin: 0; padding: 0; list-style: none }
 .job::before { content: ""; position: absolute; left: calc(var(--stop) / 2); right: calc(var(--stop) / 2); bottom: calc(var(--lineY) - var(--line-w) / 2); height: var(--line-w);
   border-radius: var(--line-w); background: var(--line, var(--fg)) }
@@ -157,8 +100,8 @@ doodle-dingbat[name="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[nam
   font: 700 .74rem/1.25 var(--font-l); letter-spacing: .06em; text-transform: var(--label-case); color: var(--mut) }
 :lang(th) .cap, :lang(my) .cap, :lang(zh) .cap { font-size: .86rem; letter-spacing: 0 }
 .cap b { color: var(--acc); margin-right: .15em }
-.rider { position: absolute; z-index: 3; left: 0; bottom: calc(var(--lineY) - .42rem); line-height: 0; transition: left var(--dur, 2.4s) var(--ease) }
-.rider .db { font-size: 1.85rem }
+.rider { position: absolute; z-index: 3; left: 0; bottom: calc(var(--lineY) - .2rem); line-height: 0; transition: left var(--dur, 2.4s) var(--ease) }
+.rider .db { font-size: 2rem }
 .stop:first-child .cap { left: 0; text-align: left }
 .stop:last-child .cap { right: 0; text-align: right }
 .job.go .rider { left: calc((100% - var(--rw)) * var(--to, 1)) }
@@ -243,24 +186,19 @@ legend { margin-bottom: .4rem; font-weight: 700 }
 /* ---------------------------------------------------------------- order tracker */
 .kicker { margin: 1.4rem 0 0; font: 700 .8rem/1.3 var(--font-l); letter-spacing: var(--label-track); text-transform: var(--label-case); color: var(--acc) }
 .kicker b { font-family: var(--mono); letter-spacing: .04em; color: var(--fg) }
+:lang(th) .kicker, :lang(my) .kicker, :lang(zh) .kicker { font-size: .95rem; letter-spacing: 0 }
 .state { margin: 2.6rem 0 0; font: var(--hd-w) clamp(1.6rem, 6.5vw, 2.3rem)/1.15 var(--font-d); letter-spacing: var(--hd-track) }
 .track { --line: var(--acc) }
 
 footer { margin-top: 3.5rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); color: var(--mut); font-size: .95rem }
 footer p { margin: .35rem 0 }
 
-/* ---------------------------------------------------------------- per look, beyond the tokens */
-:root[data-look="lacquer"] .wm { font-style: italic }
-:root[data-look="lacquer"] h1 { font-weight: 400 }
-:root[data-look="isotype"] .wm { text-transform: lowercase; letter-spacing: -.04em }
-:root[data-look="isotype"] h1 { text-transform: lowercase }
-:root[data-look="isotype"] .btn:not(.alt) { box-shadow: 3px 3px 0 var(--line, var(--acc)) }
-:root[data-look="isotype"] .doors a:hover, :root[data-look="isotype"] .card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--fg) }
-:root[data-look="isotype"] .card, :root[data-look="isotype"] .doors a { transition: transform .15s var(--ease), box-shadow .15s var(--ease) }
-:root[data-look="night"] .wm { letter-spacing: -.04em }
-:root[data-look="night"] .job::before { box-shadow: 0 0 14px -2px var(--line, var(--fg)) }
-:root[data-look="night"] .doors a::before { box-shadow: 0 0 14px var(--line) }
-:root[data-look="night"] .price, :root[data-look="night"] .tot b { font-family: var(--mono); letter-spacing: -.02em }
+/* ---------------------------------------------------------------- isotype details */
+.wm { text-transform: lowercase; letter-spacing: -.04em }
+h1 { text-transform: lowercase }
+.btn:not(.alt) { box-shadow: 3px 3px 0 var(--line, var(--acc)) }
+.card, .doors a { transition: transform .15s var(--ease), box-shadow .15s var(--ease) }
+.doors a:hover, .card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--fg) }
 
 /* ---------------------------------------------------------------- moving between pages: one page morphs into the next */
 @media (prefers-reduced-motion: no-preference) {

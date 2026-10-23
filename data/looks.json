@@ -97,6 +97,782 @@
    "server",
    "wrench",
    "lock"
+  ],
+  "lang-pages": [
+   "laptop",
+   "pencil",
+   "check"
+  ],
+  "lang-shan": [
+   "page",
+   "translate",
+   "done"
+  ],
+  "lang-leaves": [
+   "leaf",
+   "eye",
+   "page"
+  ],
+  "romanise": [
+   "translate",
+   "nib",
+   "check"
+  ],
+  "thai-lessons": [
+   "chat",
+   "pencil",
+   "star"
+  ],
+  "german": [
+   "page",
+   "translate",
+   "flag"
+  ],
+  "grab": [
+   "scooter",
+   "camera",
+   "thumbs-up"
+  ],
+  "restaurant-desk": [
+   "noodles",
+   "search",
+   "calendar"
+  ],
+  "ordering": [
+   "coffee",
+   "scan",
+   "bell"
+  ],
+  "signs": [
+   "flag",
+   "translate",
+   "thumbs-up"
+  ],
+  "print": [
+   "scan",
+   "copy",
+   "check"
+  ],
+  "trade-photos": [
+   "gift",
+   "camera",
+   "cart"
+  ],
+  "paybox": [
+   "scan",
+   "coin",
+   "done"
+  ],
+  "online-shop": [
+   "laptop",
+   "cart",
+   "parcel"
+  ],
+  "etsy": [
+   "camera",
+   "cart",
+   "airplane"
+  ],
+  "ownpage": [
+   "pin",
+   "clock",
+   "star"
+  ],
+  "fb-care": [
+   "chat",
+   "calendar",
+   "heart"
+  ],
+  "ads-run": [
+   "megaphone",
+   "coin",
+   "rocket"
+  ],
+  "stall-page": [
+   "flag",
+   "scan",
+   "laptop"
+  ],
+  "coffee": [
+   "sprout",
+   "coffee",
+   "parcel"
+  ],
+  "founders": [
+   "crown",
+   "gift",
+   "star"
+  ],
+  "stay-booking": [
+   "laptop",
+   "calendar",
+   "key"
+  ],
+  "hotelpage": [
+   "home",
+   "calendar",
+   "refresh"
+  ],
+  "stay-rent": [
+   "search",
+   "home",
+   "key"
+  ],
+  "stay-check": [
+   "home",
+   "search",
+   "page"
+  ],
+  "listing": [
+   "home",
+   "camera",
+   "megaphone"
+  ],
+  "agency-sheet": [
+   "home",
+   "copy",
+   "refresh"
+  ],
+  "trip-plan": [
+   "compass",
+   "tuk-tuk",
+   "calendar"
+  ],
+  "tour-day": [
+   "songthaew",
+   "chedi",
+   "khao-soi"
+  ],
+  "tour-3d": [
+   "songthaew",
+   "chedi",
+   "moon"
+  ],
+  "car-guide": [
+   "songthaew",
+   "wave",
+   "clock"
+  ],
+  "experience": [
+   "muscle",
+   "frying-pan",
+   "translate"
+  ],
+  "lantern": [
+   "songthaew",
+   "chedi",
+   "lantern"
+  ],
+  "balloon": [
+   "songthaew",
+   "balloon",
+   "star-struck"
+  ],
+  "honeymoon": [
+   "heart",
+   "phuang-malai",
+   "chedi"
+  ],
+  "event-page": [
+   "laptop",
+   "scan",
+   "party"
+  ],
+  "tribute": [
+   "camera",
+   "laptop",
+   "heart"
+  ],
+  "magic": [
+   "spade",
+   "sparkle",
+   "star-struck"
+  ],
+  "spirit-house": [
+   "search",
+   "spirit-house",
+   "lotus"
+  ],
+  "merit-you": [
+   "chedi",
+   "lotus",
+   "camera"
+  ],
+  "merit-dead": [
+   "calendar",
+   "chedi",
+   "camera"
+  ],
+  "house-blessing": [
+   "home",
+   "wai",
+   "lotus"
+  ],
+  "su-khwan": [
+   "phuang-malai",
+   "wai",
+   "sparkle"
+  ],
+  "lanna-wedding": [
+   "heart",
+   "phuang-malai",
+   "wai"
+  ],
+  "sak-yant": [
+   "songthaew",
+   "translate",
+   "naga"
+  ],
+  "reading": [
+   "calendar",
+   "orrery",
+   "page"
+  ],
+  "bazi": [
+   "calendar",
+   "coin",
+   "nib"
+  ],
+  "date-pick": [
+   "calendar",
+   "sundial",
+   "check"
+  ],
+  "name-pick": [
+   "thinking",
+   "nib",
+   "star"
+  ],
+  "lucky-number": [
+   "telephone",
+   "crossed-fingers",
+   "star"
+  ],
+  "name-charm": [
+   "nib",
+   "sparkle",
+   "camera"
+  ],
+  "pha-yant": [
+   "nib",
+   "wai",
+   "naga"
+  ],
+  "amulet": [
+   "camera",
+   "eye",
+   "coin"
+  ],
+  "almanac-widget": [
+   "moon",
+   "laptop",
+   "sparkle"
+  ],
+  "eink-clock": [
+   "sun",
+   "clock",
+   "moon"
+  ],
+  "amulet-seller": [
+   "camera",
+   "laptop",
+   "coin"
+  ],
+  "giving": [
+   "earth",
+   "heart",
+   "gift"
+  ],
+  "grants": [
+   "lightbulb",
+   "nib",
+   "coin"
+  ],
+  "findable": [
+   "camera",
+   "nib",
+   "search"
+  ],
+  "map-archive": [
+   "camera",
+   "pin",
+   "laptop"
+  ],
+  "line-memory": [
+   "chat",
+   "bookmark",
+   "smile"
+  ],
+  "checkin": [
+   "wave",
+   "scan",
+   "check"
+  ],
+  "event-kit": [
+   "party",
+   "scan",
+   "gift"
+  ],
+  "photo-proof": [
+   "camera",
+   "stamp",
+   "check"
+  ],
+  "teamboard": [
+   "clap",
+   "bell",
+   "flag"
+  ],
+  "club-desk": [
+   "mailbox",
+   "abacus",
+   "check"
+  ],
+  "vibe": [
+   "robot",
+   "wrench",
+   "rocket"
+  ],
+  "web-line": [
+   "chat",
+   "cart",
+   "calendar"
+  ],
+  "app": [
+   "lightbulb",
+   "gears",
+   "wifi"
+  ],
+  "web-search": [
+   "laptop",
+   "search",
+   "check"
+  ],
+  "web-found": [
+   "search",
+   "robot",
+   "star"
+  ],
+  "web-sharecard": [
+   "link",
+   "camera",
+   "share"
+  ],
+  "web-mail": [
+   "envelope",
+   "link",
+   "mailbox"
+  ],
+  "web-move": [
+   "server",
+   "parcel",
+   "check"
+  ],
+  "accessible": [
+   "eye",
+   "sound",
+   "check"
+  ],
+  "directory": [
+   "search",
+   "pin",
+   "robot"
+  ],
+  "guide-site": [
+   "pin",
+   "khao-soi",
+   "compass"
+  ],
+  "wp-api": [
+   "laptop",
+   "link",
+   "robot"
+  ],
+  "web-license": [
+   "laptop",
+   "key",
+   "pin"
+  ],
+  "github": [
+   "octopus",
+   "nib",
+   "star"
+  ],
+  "web-care": [
+   "save",
+   "wrench",
+   "bell"
+  ],
+  "help-page": [
+   "warning",
+   "pin",
+   "songthaew"
+  ],
+  "widget": [
+   "sun",
+   "cloud",
+   "laptop"
+  ],
+  "tap-card": [
+   "scan",
+   "telephone",
+   "smile"
+  ],
+  "sec-mail": [
+   "envelope",
+   "warning",
+   "lock"
+  ],
+  "mirror": [
+   "server",
+   "copy",
+   "power"
+  ],
+  "app-test": [
+   "gear",
+   "eye",
+   "page"
+  ],
+  "redteam": [
+   "robot",
+   "lightning",
+   "page"
+  ],
+  "redteam-free": [
+   "copy",
+   "robot",
+   "check"
+  ],
+  "sec-hacked": [
+   "skull",
+   "wrench",
+   "lock"
+  ],
+  "forensics": [
+   "laptop",
+   "copy",
+   "lock"
+  ],
+  "ai-own": [
+   "robot",
+   "laptop",
+   "key"
+  ],
+  "ai-assistant": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "ai-line": [
+   "home",
+   "chat",
+   "robot"
+  ],
+  "bots": [
+   "robot",
+   "search",
+   "bell"
+  ],
+  "crew": [
+   "thinking",
+   "clap",
+   "lightbulb"
+  ],
+  "ai-batch": [
+   "abacus",
+   "robot",
+   "check"
+  ],
+  "crawl-pay": [
+   "robot",
+   "eye",
+   "coin"
+  ],
+  "demand-prices": [
+   "hot",
+   "coin",
+   "sleepy"
+  ],
+  "ai-automation": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "demo-bot": [
+   "robot",
+   "laptop",
+   "clap"
+  ],
+  "leads": [
+   "search",
+   "home",
+   "copy"
+  ],
+  "data-crawl": [
+   "laptop",
+   "spider",
+   "copy"
+  ],
+  "research": [
+   "thinking",
+   "search",
+   "page"
+  ],
+  "price-watch": [
+   "eye",
+   "coin",
+   "bell"
+  ],
+  "traffic": [
+   "eye",
+   "wave",
+   "robot"
+  ],
+  "street-survey": [
+   "scooter",
+   "camera",
+   "pin"
+  ],
+  "places-data": [
+   "pin",
+   "earth",
+   "refresh"
+  ],
+  "graphics": [
+   "lightbulb",
+   "pencil",
+   "sparkle"
+  ],
+  "video": [
+   "camera",
+   "scissors",
+   "play"
+  ],
+  "drawn": [
+   "pencil",
+   "compass",
+   "sparkle"
+  ],
+  "interactive": [
+   "lightbulb",
+   "dice",
+   "laugh"
+  ],
+  "decks": [
+   "lightbulb",
+   "copy",
+   "rocket"
+  ],
+  "patterns": [
+   "pencil",
+   "lotus",
+   "copy"
+  ],
+  "article": [
+   "search",
+   "nib",
+   "page"
+  ],
+  "copy": [
+   "nib",
+   "translate",
+   "laptop"
+  ],
+  "newsletter": [
+   "nib",
+   "envelope",
+   "send"
+  ],
+  "social": [
+   "camera",
+   "nib",
+   "megaphone"
+  ],
+  "proposal": [
+   "lightbulb",
+   "page",
+   "thumbs-up"
+  ],
+  "awards": [
+   "page",
+   "nib",
+   "crown"
+  ],
+  "cartoons": [
+   "pencil",
+   "laugh",
+   "megaphone"
+  ],
+  "interview": [
+   "mic",
+   "scissors",
+   "star"
+  ],
+  "move": [
+   "home",
+   "parcel",
+   "airplane"
+  ],
+  "luggage": [
+   "parcel",
+   "songthaew",
+   "home"
+  ],
+  "partner": [
+   "page",
+   "parcel",
+   "paper-boat"
+  ],
+  "partner-prices": [
+   "parcel",
+   "coin",
+   "airplane"
+  ],
+  "peptides": [
+   "chat",
+   "thinking",
+   "parcel"
+  ],
+  "pharma": [
+   "chat",
+   "page",
+   "parcel"
+  ],
+  "merchant": [
+   "error",
+   "wrench",
+   "coin"
+  ],
+  "books": [
+   "page",
+   "abacus",
+   "check"
+  ],
+  "payouts": [
+   "calendar",
+   "abacus",
+   "scan"
+  ],
+  "invoice": [
+   "page",
+   "earth",
+   "coin"
+  ],
+  "exchange": [
+   "coin",
+   "refresh",
+   "laptop"
+  ],
+  "exchange-system": [
+   "coin",
+   "abacus",
+   "page"
+  ],
+  "staff-papers": [
+   "page",
+   "nib",
+   "coin"
+  ],
+  "sell-motdang": [
+   "megaphone",
+   "laptop",
+   "coin"
+  ],
+  "paid-in-kind": [
+   "pencil",
+   "noodles",
+   "laptop"
+  ],
+  "visas": [
+   "passport",
+   "stamp",
+   "check"
+  ],
+  "assistant": [
+   "wave",
+   "telephone",
+   "calendar"
+  ],
+  "cs-desk": [
+   "mailbox",
+   "chat",
+   "smile"
+  ],
+  "calls-out": [
+   "copy",
+   "telephone",
+   "abacus"
+  ],
+  "typing": [
+   "page",
+   "typewriter",
+   "laptop"
+  ],
+  "subtitles": [
+   "play",
+   "nib",
+   "page"
+  ],
+  "voice": [
+   "page",
+   "mic",
+   "sound"
+  ],
+  "retire": [
+   "passport",
+   "home",
+   "heart",
+   "telephone"
+  ],
+  "elder-care": [
+   "search",
+   "home",
+   "heart"
+  ],
+  "care-visits": [
+   "wave",
+   "eye",
+   "envelope"
+  ],
+  "specialist": [
+   "search",
+   "calendar",
+   "translate"
+  ],
+  "death-help": [
+   "page",
+   "passport",
+   "lotus"
+  ],
+  "lab-test": [
+   "dna",
+   "page",
+   "translate"
+  ],
+  "clean-air": [
+   "cloud",
+   "gear",
+   "leaf"
+  ],
+  "accident": [
+   "warning",
+   "translate",
+   "page"
+  ],
+  "med-papers": [
+   "page",
+   "stamp",
+   "airplane"
+  ],
+  "homehelp-plan": [
+   "home",
+   "wave",
+   "calendar"
+  ],
+  "post-job": [
+   "nib",
+   "megaphone",
+   "clap"
   ]
  },
  "master": [
@@ -290,6 +1066,474 @@
    "th": "ออนไลน์",
    "my": "အွန်လိုင်း",
    "zh": "上线"
+  },
+  "abacus": {
+   "en": "Counted",
+   "th": "นับ",
+   "my": "ရေတွက်",
+   "zh": "统计"
+  },
+  "airplane": {
+   "en": "Abroad",
+   "th": "ต่างประเทศ",
+   "my": "နိုင်ငံခြား",
+   "zh": "海外"
+  },
+  "balloon": {
+   "en": "Balloon",
+   "th": "บอลลูน",
+   "my": "မိုးပျံပူဖောင်း",
+   "zh": "热气球"
+  },
+  "bell": {
+   "en": "Alert",
+   "th": "แจ้งเตือน",
+   "my": "သတိပေး",
+   "zh": "提醒"
+  },
+  "bookmark": {
+   "en": "Saved",
+   "th": "บันทึกไว้",
+   "my": "သိမ်းထား",
+   "zh": "收藏"
+  },
+  "camera": {
+   "en": "Photos",
+   "th": "ถ่ายรูป",
+   "my": "ဓာတ်ပုံ",
+   "zh": "拍照"
+  },
+  "check": {
+   "en": "Checked",
+   "th": "ตรวจแล้ว",
+   "my": "စစ်ပြီး",
+   "zh": "已核对"
+  },
+  "chedi": {
+   "en": "Temple",
+   "th": "วัด",
+   "my": "ဘုရား",
+   "zh": "寺庙"
+  },
+  "clap": {
+   "en": "Team",
+   "th": "ทีม",
+   "my": "အဖွဲ့",
+   "zh": "团队"
+  },
+  "clock": {
+   "en": "Hours",
+   "th": "เวลา",
+   "my": "အချိန်",
+   "zh": "时间"
+  },
+  "cloud": {
+   "en": "Air",
+   "th": "อากาศ",
+   "my": "လေ",
+   "zh": "空气"
+  },
+  "coffee": {
+   "en": "Coffee",
+   "th": "กาแฟ",
+   "my": "ကော်ဖီ",
+   "zh": "咖啡"
+  },
+  "compass": {
+   "en": "Route",
+   "th": "เส้นทาง",
+   "my": "လမ်းကြောင်း",
+   "zh": "路线"
+  },
+  "copy": {
+   "en": "Sheets",
+   "th": "แผ่นงาน",
+   "my": "စာရွက်များ",
+   "zh": "表格"
+  },
+  "crossed-fingers": {
+   "en": "Luck",
+   "th": "โชค",
+   "my": "ကံ",
+   "zh": "好运"
+  },
+  "crown": {
+   "en": "Award",
+   "th": "รางวัล",
+   "my": "ဆု",
+   "zh": "奖项"
+  },
+  "dice": {
+   "en": "Game",
+   "th": "เกม",
+   "my": "ဂိမ်း",
+   "zh": "游戏"
+  },
+  "dna": {
+   "en": "Lab",
+   "th": "แล็บ",
+   "my": "ဓာတ်ခွဲခန်း",
+   "zh": "化验"
+  },
+  "envelope": {
+   "en": "Mail",
+   "th": "จดหมาย",
+   "my": "စာ",
+   "zh": "邮件"
+  },
+  "error": {
+   "en": "Broken",
+   "th": "เสีย",
+   "my": "ပျက်",
+   "zh": "故障"
+  },
+  "flag": {
+   "en": "Sign",
+   "th": "ป้าย",
+   "my": "ဆိုင်းဘုတ်",
+   "zh": "招牌"
+  },
+  "frying-pan": {
+   "en": "Cooking",
+   "th": "ทำอาหาร",
+   "my": "ချက်ပြုတ်",
+   "zh": "烹饪"
+  },
+  "gear": {
+   "en": "Test",
+   "th": "ทดสอบ",
+   "my": "စမ်းသပ်",
+   "zh": "测试"
+  },
+  "gears": {
+   "en": "We start",
+   "th": "เราเริ่ม",
+   "my": "စတင်",
+   "zh": "开工"
+  },
+  "gift": {
+   "en": "Gift",
+   "th": "ของขวัญ",
+   "my": "လက်ဆောင်",
+   "zh": "礼物"
+  },
+  "hot": {
+   "en": "Busy",
+   "th": "คนเยอะ",
+   "my": "လူများ",
+   "zh": "旺季"
+  },
+  "khao-soi": {
+   "en": "Lunch",
+   "th": "มื้อกลางวัน",
+   "my": "နေ့လယ်စာ",
+   "zh": "午餐"
+  },
+  "lantern": {
+   "en": "Lanterns",
+   "th": "โคมลอย",
+   "my": "မီးပုံး",
+   "zh": "天灯"
+  },
+  "laugh": {
+   "en": "Fun",
+   "th": "สนุก",
+   "my": "ပျော်",
+   "zh": "有趣"
+  },
+  "leaf": {
+   "en": "Palm leaf",
+   "th": "ใบลาน",
+   "my": "ပေရွက်",
+   "zh": "贝叶"
+  },
+  "lightning": {
+   "en": "Attack",
+   "th": "โจมตี",
+   "my": "တိုက်ခိုက်",
+   "zh": "攻击"
+  },
+  "link": {
+   "en": "Link",
+   "th": "ลิงก์",
+   "my": "လင့်ခ်",
+   "zh": "链接"
+  },
+  "lotus": {
+   "en": "Merit",
+   "th": "ทำบุญ",
+   "my": "ကုသိုလ်",
+   "zh": "功德"
+  },
+  "mailbox": {
+   "en": "Inbox",
+   "th": "กล่องจดหมาย",
+   "my": "စာတိုက်ပုံး",
+   "zh": "收件箱"
+  },
+  "megaphone": {
+   "en": "Promote",
+   "th": "โปรโมต",
+   "my": "ကြော်ငြာ",
+   "zh": "推广"
+  },
+  "mic": {
+   "en": "Record",
+   "th": "อัดเสียง",
+   "my": "အသံဖမ်း",
+   "zh": "录音"
+  },
+  "moon": {
+   "en": "Night",
+   "th": "กลางคืน",
+   "my": "ည",
+   "zh": "夜晚"
+  },
+  "muscle": {
+   "en": "Muay thai",
+   "th": "มวยไทย",
+   "my": "မွေထိုင်း",
+   "zh": "泰拳"
+  },
+  "naga": {
+   "en": "Yant",
+   "th": "ยันต์",
+   "my": "ယန္တရား",
+   "zh": "符"
+  },
+  "noodles": {
+   "en": "Menu",
+   "th": "เมนู",
+   "my": "မီနူး",
+   "zh": "菜单"
+  },
+  "octopus": {
+   "en": "GitHub",
+   "th": "GitHub",
+   "my": "GitHub",
+   "zh": "GitHub"
+  },
+  "orrery": {
+   "en": "Chart",
+   "th": "ดวง",
+   "my": "ဇာတာ",
+   "zh": "星盘"
+  },
+  "paper-boat": {
+   "en": "Shipped",
+   "th": "ส่งออก",
+   "my": "ပို့ပြီး",
+   "zh": "已发货"
+  },
+  "parcel": {
+   "en": "Parcel",
+   "th": "พัสดุ",
+   "my": "ပါဆယ်",
+   "zh": "包裹"
+  },
+  "party": {
+   "en": "Event",
+   "th": "งาน",
+   "my": "ပွဲ",
+   "zh": "活动"
+  },
+  "passport": {
+   "en": "Papers",
+   "th": "เอกสารเดินทาง",
+   "my": "ပတ်စ်ပို့",
+   "zh": "证件"
+  },
+  "phuang-malai": {
+   "en": "Garland",
+   "th": "พวงมาลัย",
+   "my": "ပန်းကုံး",
+   "zh": "花环"
+  },
+  "pin": {
+   "en": "Map",
+   "th": "แผนที่",
+   "my": "မြေပုံ",
+   "zh": "地图"
+  },
+  "play": {
+   "en": "Video",
+   "th": "วิดีโอ",
+   "my": "ဗီဒီယို",
+   "zh": "视频"
+  },
+  "power": {
+   "en": "Standby",
+   "th": "สำรอง",
+   "my": "အရန်",
+   "zh": "备用"
+  },
+  "refresh": {
+   "en": "Updated",
+   "th": "อัปเดต",
+   "my": "အပ်ဒိတ်",
+   "zh": "更新"
+  },
+  "robot": {
+   "en": "AI",
+   "th": "AI",
+   "my": "AI",
+   "zh": "AI"
+  },
+  "rocket": {
+   "en": "Launch",
+   "th": "เปิดตัว",
+   "my": "စတင်",
+   "zh": "发布"
+  },
+  "save": {
+   "en": "Backup",
+   "th": "สำรองข้อมูล",
+   "my": "အရန်ကူး",
+   "zh": "备份"
+  },
+  "scan": {
+   "en": "Pay",
+   "th": "จ่าย",
+   "my": "ပေးချေ",
+   "zh": "付款"
+  },
+  "scissors": {
+   "en": "Edit",
+   "th": "ตัดต่อ",
+   "my": "တည်းဖြတ်",
+   "zh": "剪辑"
+  },
+  "search": {
+   "en": "Search",
+   "th": "ค้นหา",
+   "my": "ရှာ",
+   "zh": "搜索"
+  },
+  "send": {
+   "en": "Ordered",
+   "th": "สั่งแล้ว",
+   "my": "မှာပြီး",
+   "zh": "已下单"
+  },
+  "share": {
+   "en": "Shared",
+   "th": "แชร์",
+   "my": "မျှဝေ",
+   "zh": "分享"
+  },
+  "skull": {
+   "en": "Hacked",
+   "th": "ถูกแฮก",
+   "my": "ဟက်ခံရ",
+   "zh": "被黑"
+  },
+  "sleepy": {
+   "en": "Quiet",
+   "th": "เงียบ",
+   "my": "လူနည်း",
+   "zh": "淡季"
+  },
+  "songthaew": {
+   "en": "Car",
+   "th": "รถ",
+   "my": "ကား",
+   "zh": "用车"
+  },
+  "sound": {
+   "en": "Read aloud",
+   "th": "อ่านออกเสียง",
+   "my": "အသံဖတ်",
+   "zh": "朗读"
+  },
+  "spade": {
+   "en": "Cards",
+   "th": "ไพ่",
+   "my": "ဖဲ",
+   "zh": "纸牌"
+  },
+  "sparkle": {
+   "en": "Blessed",
+   "th": "ศักดิ์สิทธิ์",
+   "my": "မင်္ဂလာ",
+   "zh": "加持"
+  },
+  "spider": {
+   "en": "Crawler",
+   "th": "ตัวเก็บข้อมูล",
+   "my": "ဒေတာစုစက်",
+   "zh": "爬虫"
+  },
+  "spirit-house": {
+   "en": "Spirit house",
+   "th": "ศาลพระภูมิ",
+   "my": "နတ်စင်",
+   "zh": "神龛"
+  },
+  "sprout": {
+   "en": "Farm",
+   "th": "ไร่",
+   "my": "ခြံ",
+   "zh": "农场"
+  },
+  "star": {
+   "en": "Done well",
+   "th": "เยี่ยม",
+   "my": "ကောင်းမွန်",
+   "zh": "出色"
+  },
+  "star-struck": {
+   "en": "Wow",
+   "th": "ว้าว",
+   "my": "အံ့ဩ",
+   "zh": "惊叹"
+  },
+  "sun": {
+   "en": "Day",
+   "th": "กลางวัน",
+   "my": "နေ့",
+   "zh": "白天"
+  },
+  "sundial": {
+   "en": "Good date",
+   "th": "ฤกษ์ดี",
+   "my": "နေ့ကောင်း",
+   "zh": "吉日"
+  },
+  "tuk-tuk": {
+   "en": "Getting around",
+   "th": "เดินทาง",
+   "my": "သွားလာ",
+   "zh": "出行"
+  },
+  "typewriter": {
+   "en": "Typed",
+   "th": "พิมพ์",
+   "my": "ရိုက်",
+   "zh": "录入"
+  },
+  "warning": {
+   "en": "Trouble",
+   "th": "เหตุด่วน",
+   "my": "အရေးပေါ်",
+   "zh": "紧急"
+  },
+  "wave": {
+   "en": "Hello",
+   "th": "สวัสดี",
+   "my": "မင်္ဂလာပါ",
+   "zh": "你好"
+  },
+  "wifi": {
+   "en": "Offline too",
+   "th": "ใช้ได้แม้ไม่มีเน็ต",
+   "my": "အင်တာနက်မရှိလည်း",
+   "zh": "离线可用"
+  },
+  "manicule": {
+   "en": "Pick",
+   "th": "เลือก",
+   "my": "ရွေး",
+   "zh": "选择"
   }
  },
  "ui": {

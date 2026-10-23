@@ -31,13 +31,16 @@ const calm = matchMedia('(prefers-reduced-motion: reduce)')
 const dbTag = (g, play = 'still') => `<doodle-dingbat class="db" name="${esc(g)}" play="${play}" aria-hidden="true"></doodle-dingbat>`
 const jobHtml = (stops, o = {}) => `<div class="job${o.cls ? ' ' + o.cls : ''}"${o.to != null ? ` style="--to:${o.to}"` : ''}${o.caps && !o.hide ? '' : ' aria-hidden="true"'}><ol>` +
   stops.map((g, i) => `<li class="stop">${dbTag(g)}${o.caps ? `<span class="cap">${o.caps[i]}</span>` : ''}</li>`).join('') +
-  `</ol><span class="rider">${dbTag('hongsa', 'loop')}</span></div>`
+  `</ol><span class="rider">${dbTag('hongsa-stand', 'loop')}</span></div>`
 function ride(job) {
   const stops = [...job.querySelectorAll('.stop')], n = stops.length
   const to = parseFloat(getComputedStyle(job).getPropertyValue('--to')) || (job.style.getPropertyValue('--to') === '0' ? 0 : 1)
   const reach = Math.floor(to * (n - 1) + 1e-6), dur = 520 * Math.max(1, reach) + 300
   job.style.setProperty('--dur', dur + 'ms')
   if (calm.matches) { job.classList.add('go'); stops.slice(0, reach + 1).forEach((s) => s.classList.add('hit')); return }
+  // the swan waddles along the line, then stands at its stop and looks round
+  const sw = job.querySelector('.rider doodle-dingbat')
+  if (sw && reach > 0) { sw.setAttribute('name', 'hongsa-walk'); setTimeout(() => sw.setAttribute('name', 'hongsa-stand'), dur) }
   requestAnimationFrame(() => job.classList.add('go'))
   stops.slice(0, reach + 1).forEach((s, i) => setTimeout(() => {
     const g = s.querySelector('doodle-dingbat')

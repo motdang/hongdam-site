@@ -5,6 +5,8 @@
  *   POST /api/buy {card, opt, qty, addon, contact, note, lang}  an order; the price is worked out here
  *   POST /api/buy/slip  form: ref, slip                         a PromptPay slip, checked by SlipOK → paid
  *   POST /api/buy/claim {ref, how: paypal|wise}                 the buyer says they paid; the team checks
+ *   GET  /api/buy/HD-xxxxxx                                     the order tracker: card, option and state, nothing else
+ *   POST /api/buy/state {ref, state: paid|started|done}         the team moves an order on   Authorization: Bearer TASKS_ADMIN
  *
  * Each order mails ORDER_TO (or CONTACT_TO) and posts in #help-desk (DISCORD_TASKS), and counts as
  * demand for that service's monthly price walk. POST answers hongdam.net, hongdam.pages.dev and
@@ -118,10 +120,38 @@ async function claim(ctx, b) {
   return json({ ok: true, ref, state: 'claimed' })
 }
 
+const REF = /^HD-[0-9A-Z]{6}$/
+const STEPS = ['booked', 'claimed', 'paid', 'started', 'done']
+
+// The tracker page reads this: no contact, no note, no money.
+async function tracked(env, ref) {
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  if (!env.TASKS) return json({ ok: false, why: 'off' }, 503)
+  const o = await env.TASKS.prepare('SELECT ref, card, opt, state FROM svc_buy WHERE ref = ?').bind(ref).first()
+  if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
+  return json({ ok: true, ref: o.ref, card: o.card, opt: o.opt, state: o.state })
+}
+
+// The team (or the Desk bot) moves an order forward: paid for a PayPal or Wise payment it found, started, done.
+async function moved(ctx, b, now) {
+  const { request, env } = ctx
+  const key = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '')
+  if (!env.TASKS_ADMIN || key !== env.TASKS_ADMIN) return json({ ok: false, why: 'key' }, 401)
+  const ref = clean(b.ref, 12), state = ['paid', 'started', 'done'].includes(b.state) ? b.state : ''
+  if (!REF.test(ref) || !state) return json({ ok: false, why: 'body' }, 400)
+  const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
+  if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
+  if (STEPS.indexOf(state) <= STEPS.indexOf(o.state)) return json({ ok: true, ref, state: o.state })
+  await env.TASKS.prepare('UPDATE svc_buy SET state = ? WHERE ref = ?').bind(state, ref).run()
+  ctx.waitUntil(tell(env, `Order ${ref} ${state}`, [`Marked ${state} ${new Date(now).toISOString().slice(0, 16)}Z`, ...lineOf(o)]))
+  return json({ ok: true, ref, state })
+}
+
 async function handle(ctx, now) {
   const { request, env, params } = ctx
   const path = [].concat(params.path || [])
   if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
+  if (request.method === 'GET' && path.length === 1) return tracked(env, clean(path[0], 12))
   if (request.method !== 'POST') return json({ ok: false, why: 'route' }, 404)
   if (!path.length) {
     let b
@@ -131,6 +161,11 @@ async function handle(ctx, now) {
   }
   if (!env.TASKS) return json({ ok: false, why: 'off' }, 503)
   if (path[0] === 'slip') return slip(ctx)
+  if (path[0] === 'state') {
+    let b
+    try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
+    return moved(ctx, b || {}, now)
+  }
   if (path[0] === 'claim') {
     let b
     try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }

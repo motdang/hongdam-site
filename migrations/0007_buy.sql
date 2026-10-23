@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS svc_buy (
   contact TEXT NOT NULL,           -- LINE ID, phone or email, as typed; private
   note TEXT,
   lang TEXT,                       -- en · th · my · zh
-  state TEXT NOT NULL DEFAULT 'booked', -- booked · claimed (said paid by PayPal or Wise) · paid · done · void
+  state TEXT NOT NULL DEFAULT 'booked', -- booked · claimed (said paid by PayPal or Wise) · paid · started · done · void
   paid_ref TEXT,                   -- bank reference from SlipOK, or paypal / wise
   created_at TEXT NOT NULL
 );

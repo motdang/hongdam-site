@@ -39,7 +39,6 @@ for _l, _u in LOOKS["ui"].items():
     SHOP["ui"].setdefault(_l, {}).update(_u)
 DBM_F = os.path.join(HERE, "data", "dingbats.json")
 DBM = json.load(open(DBM_F, encoding="utf-8")) if os.path.exists(DBM_F) else None
-LOOK = "lacquer"   # until Nan picks one of the three; ?look= on any page shows the others
 import re as _re
 LADDER = json.loads(_re.search(r"export const LADDER = (\[[^\]]*\])", open(os.path.join(HERE, "functions", "_services_data.js"), encoding="utf-8").read()).group(1))
 
@@ -87,7 +86,12 @@ def job(stops, lang, caps=None, cls="", name=None):
     lis = "".join('<li class="stop">%s%s</li>' % (db(g), '<span class="cap">%s</span>' % caps[i] if caps else "") for i, g in enumerate(stops))
     return '<div class="job%s"%s%s><ol>%s</ol><span class="rider">%s</span></div>' % (
         (" " + cls) if cls else "", ' style="view-transition-name:%s"' % name if name else "", "" if caps else ' aria-hidden="true"',
-        lis, db("hongsa", play="loop"))
+        lis, db("hongsa-stand", play="loop"))
+
+
+def pic_of(c):
+    """A card's line; a card with none yet draws its door, the work starting, and done."""
+    return LOOKS["pics"].get(c["id"]) or [g for g in (LOOKS["doors"].get(c["cat"]), "gears", "done") if g]
 
 
 def walks(c):
@@ -172,7 +176,7 @@ def go_of(c, lang):
 
 def card_html(c, lang):
     go, btn = go_of(c, lang)
-    pic = LOOKS["pics"].get(c["id"])
+    pic = pic_of(c)
     out = '<li class="card" id="%s" style="--line:var(--c-%s)">%s<h3>%s</h3><p class="price">%s</p><p class="l">%s</p>' % (
         E(c["id"]), E(c["cat"]), job(pic, lang, name="job-" + c["id"]) if pic else "", E(tr(c["n"], lang)), card_price(c, lang), E(tr(c["l"], lang)))
     if walks(c):
@@ -223,28 +227,24 @@ def client_cards(lang):
             if c.get("add"):
                 d["add"] = {"n": tr(c["add"]["n"], lang), "fixed": c["add"]["fixed"]}
         d["cat"] = c["cat"]
-        if LOOKS["pics"].get(c["id"]):
-            d["pic"] = LOOKS["pics"][c["id"]]
+        if pic_of(c):
+            d["pic"] = pic_of(c)
         if walks(c):
             d["walk"] = walks(c)
         out.append(d)
     return out
 
 
-def head(lang, title, desc, path, noindex=False):
+def head(lang, title, desc, path, noindex=False, og="og/shop/front.jpg"):
     alts = "".join('<link rel="alternate" hreflang="%s" href="%s%s">\n' % (l, SITE, url(l, path)) for l in LANGS)
-    # ?look= and ?scheme= show the other looks and modes side by side until Nan picks one
-    pick = ("<script>try{var q=new URLSearchParams(location.search),r=document.documentElement;"
-            "if(/^(lacquer|isotype|night)$/.test(q.get('look')))r.dataset.look=q.get('look');"
-            "if(/^(light|dark)$/.test(q.get('scheme')))r.dataset.theme=q.get('scheme')}catch(e){}</script>\n")
-    return ('<!doctype html>\n<html lang="%s" data-look="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+    return ('<!doctype html>\n<html lang="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<title>%s</title>\n<meta name="description" content="%s">\n'
             '%s<link rel="canonical" href="%s%s">\n%s<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n'
-            '%s<link rel="stylesheet" href="/assets/shop.css?v=%s">\n'
+            '<link rel="stylesheet" href="/assets/shop.css?v=%s">\n'
             '<meta property="og:title" content="%s">\n<meta property="og:description" content="%s">\n<meta property="og:url" content="%s%s">\n'
-            '<meta property="og:image" content="%s/assets/card.jpg">\n<meta name="twitter:card" content="summary_large_image">\n</head>\n'
-            % (lang, LOOK, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
-               pick, CSS_V, E(title), E(desc), SITE, url(lang, path), SITE))
+            '<meta property="og:image" content="%s/%s">\n<meta name="twitter:card" content="summary_large_image">\n</head>\n'
+            % (lang, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
+               CSS_V, E(title), E(desc), SITE, url(lang, path), SITE, og))
 
 
 def top(lang, path):
@@ -314,7 +314,7 @@ def front(lang):
 def category(lang, cat):
     ui = SHOP["ui"][lang]
     name = tr(cat["n"], lang)
-    out = head(lang, "%s · Hongdam" % name, tr(cat["l"], lang), cat["id"] + "/")
+    out = head(lang, "%s · Hongdam" % name, tr(cat["l"], lang), cat["id"] + "/", og="og/shop/%s.jpg" % cat["id"])
     out += '<body class="p-cat" style="--line:var(--c-%s)">\n' % cat["id"] + top(lang, cat["id"] + "/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
     door = LOOKS["doors"].get(cat["id"])
     out += '<h1 class="cat-h" style="view-transition-name:cat-%s">%s<span>%s</span></h1>\n<p class="lede">%s</p>\n' % (

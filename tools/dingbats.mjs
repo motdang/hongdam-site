@@ -61,8 +61,9 @@ const ver = (s) => crypto.createHash('sha1').update(s).digest('hex').slice(0, 8)
 
 // data/looks.json: which glyph each door, card line, master line and tracker stop draws
 const LOOKS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/looks.json'), 'utf8'))
-const pic = (c) => LOOKS.pics[c.id] || []
-const always = ['hongsa', 'search', ...LOOKS.master.map((m) => m.db), ...LOOKS.track.map((m) => m.db)]
+// a card with no line of its own draws its door, the work starting, and done
+const pic = (c) => LOOKS.pics[c.id] || [LOOKS.doors[c.cat], 'gears', 'done'].filter(Boolean)
+const always = ['hongsa', 'hongsa-walk', 'hongsa-stand', 'search', ...LOOKS.master.map((m) => m.db), ...LOOKS.track.map((m) => m.db)]
 const groups = { front: [...always, ...Object.values(LOOKS.doors)] }
 for (const c of SHOP.cards) if (c.pop) groups.front.push(...pic(c))
 for (const cat of SHOP.cats) groups[cat.id] = [...always, ...(LOOKS.doors[cat.id] ? [LOOKS.doors[cat.id]] : []), ...SHOP.cards.filter((c) => c.cat === cat.id).flatMap(pic)]
@@ -82,3 +83,15 @@ for (const [g, names] of Object.entries(groups)) {
 fs.writeFileSync(path.join(ROOT, 'data/dingbats.json'), JSON.stringify(manifest, null, 1) + '\n')
 const gz = (s) => execFileSync('gzip', ['-9c'], { input: s }).length
 console.log('core', (gz(core) / 1024).toFixed(1), 'KB gz ·', Object.keys(groups).length, 'groups, front', (gz(fs.readFileSync(path.join(OUT, 'front.js'))) / 1024).toFixed(1), 'KB gz')
+
+// The favicon: the black swan on paper, drawn by the same code as the glyph (still frame, small-size detail).
+{
+  const { createRequire } = await import('node:module')
+  const req = createRequire(import.meta.url)
+  req(path.join(SRC, 'core.js')); req(path.join(SRC, 'fam/lanna.js'))
+  const svg = globalThis.Dingbats.svg('hongsa-stand', { t: 0.12, size: 28, ink: '#121212', bg: '#F1EDE4', margin: 6 })
+  const vb = svg.match(/viewBox="([^"]+)"/)[1].split(' ').map(Number)
+  const icon = svg.replace(/width="\d+" height="\d+"/, 'width="64" height="64"').replace(/(<svg[^>]*>)/, `$1<rect x="${vb[0]}" y="${vb[1]}" width="${vb[2]}" height="${vb[3]}" rx="${vb[3] * 0.22}" fill="#F1EDE4"/>`)
+  fs.writeFileSync(path.join(ROOT, 'docs/assets/favicon.svg'), icon + '\n')
+  console.log('favicon', (icon.length / 1024).toFixed(1), 'KB')
+}
