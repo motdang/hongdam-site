@@ -1,0 +1,4412 @@
+{
+ "langs": [
+  "en",
+  "th",
+  "my",
+  "zh"
+ ],
+ "lang_names": {
+  "en": "English",
+  "th": "ไทย",
+  "my": "မြန်မာ",
+  "zh": "中文"
+ },
+ "ui": {
+  "en": {
+   "title": "Hongdam — we do it for you · Chiang Rai",
+   "desc": "Phone calls in Thai, repairs booked, translation, websites, shipping and more. Pick it, pay, we start.",
+   "tagline": "We do it for you. Pick it, pay, we start.",
+   "how": [
+    "1 Pick",
+    "2 Pay",
+    "3 We start"
+   ],
+   "language": "Language",
+   "search": "What do you need?",
+   "searchPh": "plumber, translation, website, Grab…",
+   "popular": "Most bought",
+   "cats": "Everything we do",
+   "buy": "Buy",
+   "book": "Book",
+   "open": "Open",
+   "go": "Go",
+   "free": "Free",
+   "from": "from {p}",
+   "notHere": "Not on the list? Write to us, in any language.",
+   "askBtn": "Write to us",
+   "askH": "What do you need?",
+   "askWhat": "Tell us what you need, in any language.",
+   "send": "Send",
+   "asked": "Sent. We write back to you there.",
+   "home": "All services",
+   "noresult": "Nothing found. Write to us on LINE.",
+   "nocard": "That service is not here. Pick one from the list.",
+   "noscript": "This page needs JavaScript. Or message us on LINE.",
+   "payMethods": "Pay with PromptPay from any Thai bank app, or PayPal or Wise from anywhere.",
+   "where": "Hongdam หงส์ดำ · Chiang Rai, Thailand",
+   "portfolio": "Our work",
+   "tasks": "Post any job",
+   "choose": "Choose",
+   "qty": "How many",
+   "total": "Total",
+   "half": "Pay half now, {now}; the rest when it is done.",
+   "reach": "Your LINE ID, phone or email",
+   "note": "Anything we should know (you may leave this empty)",
+   "next": "Continue to pay",
+   "sending": "Sending…",
+   "order": "Order",
+   "payNow": "Pay now",
+   "payHalf": "Pay half now",
+   "pp": "PromptPay · any Thai bank app",
+   "scan": "Scan with your bank app. Your app shows who receives the money before you pay. Then upload the slip.",
+   "slip": "Your payment slip",
+   "slipBtn": "Send my slip",
+   "checking": "Checking…",
+   "paid": "Paid. Order",
+   "abroad": "Abroad: pay {amount} (about {usd}) by PayPal or Wise. Write {ref} in the note.",
+   "ipaid": "I paid by",
+   "claimed": "Thank you. We check the payment, then message you. Order",
+   "msgUs": "Message us on LINE",
+   "err": {
+    "contact": "Please write your LINE ID, phone or email.",
+    "what": "Please say what you need.",
+    "limit": "Five orders a day from one connection. Message us on LINE.",
+    "card": "Pick a service from the list.",
+    "price": "This price could not be worked out. Message us on LINE.",
+    "off": "Ordering is not working right now. Message us on LINE.",
+    "service": "Could not reach us. Try again, or message us on LINE.",
+    "nofile": "Choose the slip picture first.",
+    "unread": "That picture is not a readable bank slip.",
+    "amount": "The slip shows a different amount.",
+    "receiver": "The slip shows a different receiver.",
+    "used": "That slip has paid already.",
+    "late": "That slip is too old to check.",
+    "ref": "That order number is not ours.",
+    "state": "That order is closed. Message us on LINE.",
+    "origin": "Order from hongdam.net.",
+    "body": "Something went wrong. Try again.",
+    "route": "Something went wrong. Try again."
+   }
+  },
+  "th": {
+   "title": "หงส์ดำ — เราทำให้ · เชียงราย",
+   "desc": "โทรแทน หาช่าง แปลเอกสาร ทำเว็บ ส่งของ และอีกมาก เลือก จ่าย แล้วเราเริ่มงาน",
+   "tagline": "เราทำให้ เลือก จ่าย แล้วเราเริ่มงาน",
+   "how": [
+    "1 เลือก",
+    "2 จ่าย",
+    "3 เราเริ่มงาน"
+   ],
+   "language": "ภาษา",
+   "search": "ต้องการอะไร",
+   "searchPh": "ช่างประปา แปลเอกสาร เว็บไซต์ Grab…",
+   "popular": "ขายดี",
+   "cats": "บริการทั้งหมด",
+   "buy": "ซื้อ",
+   "book": "จอง",
+   "open": "เปิด",
+   "go": "ไป",
+   "free": "ฟรี",
+   "from": "เริ่ม {p}",
+   "notHere": "ไม่มีในรายการ เขียนถึงเราได้ ภาษาไหนก็ได้",
+   "askBtn": "เขียนถึงเรา",
+   "askH": "ต้องการอะไร",
+   "askWhat": "บอกเราว่าต้องการอะไร ภาษาไหนก็ได้",
+   "send": "ส่ง",
+   "asked": "ส่งแล้ว เราตอบกลับทางช่องที่ให้ไว้",
+   "home": "บริการทั้งหมด",
+   "noresult": "ไม่พบ เขียนถึงเราทางไลน์ได้",
+   "nocard": "ไม่มีบริการนี้ เลือกจากรายการ",
+   "noscript": "หน้านี้ต้องใช้ JavaScript หรือทักไลน์มาได้",
+   "payMethods": "จ่ายด้วยพร้อมเพย์จากแอปธนาคารไหนก็ได้ หรือ PayPal หรือ Wise จากต่างประเทศ",
+   "where": "หงส์ดำ Hongdam · เชียงราย",
+   "portfolio": "ผลงาน",
+   "tasks": "ลงประกาศงาน",
+   "choose": "เลือก",
+   "qty": "จำนวน",
+   "total": "รวม",
+   "half": "จ่ายครึ่งหนึ่งตอนนี้ {now} ที่เหลือจ่ายเมื่องานเสร็จ",
+   "reach": "ไลน์ไอดี เบอร์โทร หรืออีเมล",
+   "note": "รายละเอียดเพิ่มเติม (เว้นว่างได้)",
+   "next": "ไปหน้าจ่ายเงิน",
+   "sending": "กำลังส่ง…",
+   "order": "ออเดอร์",
+   "payNow": "จ่ายตอนนี้",
+   "payHalf": "จ่ายครึ่งหนึ่งตอนนี้",
+   "pp": "พร้อมเพย์ · แอปธนาคารไหนก็ได้",
+   "scan": "สแกนด้วยแอปธนาคาร แอปจะแสดงชื่อผู้รับเงินก่อนกดโอน โอนแล้วอัปโหลดสลิป",
+   "slip": "สลิปโอนเงิน",
+   "slipBtn": "ส่งสลิป",
+   "checking": "กำลังตรวจ…",
+   "paid": "ชำระแล้ว ออเดอร์",
+   "abroad": "จากต่างประเทศ: จ่าย {amount} (ประมาณ {usd}) ทาง PayPal หรือ Wise ใส่ {ref} ในช่องหมายเหตุ",
+   "ipaid": "จ่ายแล้วทาง",
+   "claimed": "ขอบคุณ เราตรวจยอดแล้วทักกลับ ออเดอร์",
+   "msgUs": "ทักไลน์",
+   "err": {
+    "contact": "กรุณาใส่ไลน์ไอดี เบอร์โทร หรืออีเมล",
+    "what": "กรุณาบอกว่าต้องการอะไร",
+    "limit": "สั่งได้วันละห้าครั้งต่อหนึ่งการเชื่อมต่อ ทักไลน์มาได้",
+    "card": "เลือกบริการจากรายการ",
+    "price": "คำนวณราคาไม่ได้ ทักไลน์มาได้",
+    "off": "ระบบสั่งซื้อใช้ไม่ได้ตอนนี้ ทักไลน์มาได้",
+    "service": "ติดต่อเราไม่ได้ ลองอีกครั้ง หรือทักไลน์",
+    "nofile": "เลือกรูปสลิปก่อน",
+    "unread": "รูปนี้อ่านเป็นสลิปไม่ได้",
+    "amount": "ยอดในสลิปไม่ตรง",
+    "receiver": "ผู้รับในสลิปไม่ตรง",
+    "used": "สลิปนี้ใช้ชำระไปแล้ว",
+    "late": "สลิปนี้เก่าเกินกว่าจะตรวจได้",
+    "ref": "เลขออเดอร์นี้ไม่ใช่ของเรา",
+    "state": "ออเดอร์นี้ปิดแล้ว ทักไลน์มาได้",
+    "origin": "สั่งจาก hongdam.net",
+    "body": "มีบางอย่างผิดพลาด ลองอีกครั้ง",
+    "route": "มีบางอย่างผิดพลาด ลองอีกครั้ง"
+   }
+  },
+  "my": {
+   "title": "Hongdam — ကျွန်ုပ်တို့ လုပ်ပေးပါသည် · ချင်းရိုင်",
+   "desc": "ထိုင်းလို ဖုန်းခေါ်ပေးခြင်း၊ ပြင်ဆင်သူ ရှာပေးခြင်း၊ ဘာသာပြန်၊ ဝက်ဘ်ဆိုက်၊ ပို့ဆောင်ရေးနှင့် အခြား။ ရွေးပါ၊ ပေးချေပါ၊ ကျွန်ုပ်တို့ စတင်ပါမည်။",
+   "tagline": "ကျွန်ုပ်တို့ လုပ်ပေးပါသည်။ ရွေးပါ၊ ပေးချေပါ၊ ကျွန်ုပ်တို့ စတင်ပါမည်။",
+   "how": [
+    "1 ရွေးပါ",
+    "2 ပေးချေပါ",
+    "3 ကျွန်ုပ်တို့ စတင်"
+   ],
+   "language": "ဘာသာစကား",
+   "search": "ဘာလိုအပ်ပါသလဲ",
+   "searchPh": "ဘာသာပြန်၊ ဖုန်းခေါ်၊ ဝက်ဘ်ဆိုက်…",
+   "popular": "လူကြိုက်များ",
+   "cats": "ဝန်ဆောင်မှုအားလုံး",
+   "buy": "ဝယ်ရန်",
+   "book": "ကြိုတင်မှာရန်",
+   "open": "ဖွင့်ရန်",
+   "go": "သွားရန်",
+   "free": "အခမဲ့",
+   "from": "{p} မှစ၍",
+   "notHere": "စာရင်းတွင် မပါပါက မည်သည့်ဘာသာဖြင့်မဆို စာရေးပို့ပါ။",
+   "askBtn": "စာရေးပို့ရန်",
+   "askH": "ဘာလိုအပ်ပါသလဲ",
+   "askWhat": "လိုအပ်သည်ကို မည်သည့်ဘာသာဖြင့်မဆို ရေးပါ။",
+   "send": "ပို့ရန်",
+   "asked": "ပို့ပြီးပါပြီ။ ပေးထားသောလိပ်စာသို့ ပြန်ဆက်သွယ်ပါမည်။",
+   "home": "ဝန်ဆောင်မှုအားလုံး",
+   "noresult": "မတွေ့ပါ။ LINE ဖြင့် မေးပါ။",
+   "nocard": "ဤဝန်ဆောင်မှု မရှိပါ။ စာရင်းမှ ရွေးပါ။",
+   "noscript": "ဤစာမျက်နှာသည် JavaScript လိုအပ်သည်။ သို့မဟုတ် LINE ဖြင့် ဆက်သွယ်ပါ။",
+   "payMethods": "ထိုင်းဘဏ်အက်ပ်မှ PromptPay ဖြင့် သို့မဟုတ် နိုင်ငံခြားမှ PayPal၊ Wise ဖြင့် ပေးချေပါ။",
+   "where": "Hongdam · ချင်းရိုင်၊ ထိုင်းနိုင်ငံ",
+   "portfolio": "ကျွန်ုပ်တို့၏ လက်ရာ",
+   "tasks": "အလုပ်တင်ရန်",
+   "choose": "ရွေးပါ",
+   "qty": "အရေအတွက်",
+   "total": "စုစုပေါင်း",
+   "half": "ယခု တစ်ဝက် {now} ပေးပါ၊ ကျန်ငွေကို အလုပ်ပြီးမှ ပေးပါ။",
+   "reach": "LINE ID၊ ဖုန်း သို့မဟုတ် အီးမေးလ်",
+   "note": "သိစေလိုသည်များ (မဖြည့်လည်း ရပါသည်)",
+   "next": "ငွေပေးချေရန် ဆက်သွားပါ",
+   "sending": "ပို့နေသည်…",
+   "order": "အော်ဒါ",
+   "payNow": "ယခု ပေးချေရန်",
+   "payHalf": "ယခု တစ်ဝက် ပေးချေရန်",
+   "pp": "PromptPay · ထိုင်းဘဏ်အက်ပ် မည်သည့်အက်ပ်မဆို",
+   "scan": "ဘဏ်အက်ပ်ဖြင့် စကင်ဖတ်ပါ။ မပေးမီ ငွေလက်ခံသူအမည်ကို အက်ပ်က ပြပါမည်။ ပြီးလျှင် စလစ်ကို တင်ပါ။",
+   "slip": "ငွေလွှဲစလစ်",
+   "slipBtn": "စလစ်ပို့ရန်",
+   "checking": "စစ်နေသည်…",
+   "paid": "ပေးချေပြီး။ အော်ဒါ",
+   "abroad": "နိုင်ငံခြားမှ: PayPal သို့မဟုတ် Wise ဖြင့် {amount} (ခန့်မှန်း {usd}) ပေးပါ။ မှတ်ချက်တွင် {ref} ရေးပါ။",
+   "ipaid": "ပေးချေပြီး:",
+   "claimed": "ကျေးဇူးတင်ပါသည်။ ငွေကို စစ်ပြီး ဆက်သွယ်ပါမည်။ အော်ဒါ",
+   "msgUs": "LINE ဖြင့် ဆက်သွယ်ရန်",
+   "err": {
+    "contact": "LINE ID၊ ဖုန်း သို့မဟုတ် အီးမေးလ် ရေးပါ။",
+    "what": "လိုအပ်သည်ကို ရေးပါ။",
+    "limit": "တစ်ရက်လျှင် အော်ဒါ ငါးခုသာ။ LINE ဖြင့် ဆက်သွယ်ပါ။",
+    "card": "စာရင်းမှ ဝန်ဆောင်မှုကို ရွေးပါ။",
+    "price": "စျေးနှုန်း တွက်၍မရပါ။ LINE ဖြင့် ဆက်သွယ်ပါ။",
+    "off": "ယခု မှာယူ၍ မရပါ။ LINE ဖြင့် ဆက်သွယ်ပါ။",
+    "service": "ဆက်သွယ်၍ မရပါ။ ထပ်စမ်းပါ သို့မဟုတ် LINE ဖြင့် ဆက်သွယ်ပါ။",
+    "nofile": "စလစ်ပုံကို အရင်ရွေးပါ။",
+    "unread": "ဤပုံကို ဘဏ်စလစ်အဖြစ် ဖတ်၍မရပါ။",
+    "amount": "စလစ်ပေါ်ရှိ ငွေပမာဏ မကိုက်ညီပါ။",
+    "receiver": "စလစ်ပေါ်ရှိ လက်ခံသူ မကိုက်ညီပါ။",
+    "used": "ဤစလစ်ဖြင့် ပေးချေပြီးသားဖြစ်သည်။",
+    "late": "ဤစလစ်သည် စစ်ရန် ဟောင်းလွန်းသည်။",
+    "ref": "ဤအော်ဒါနံပါတ် မရှိပါ။",
+    "state": "ဤအော်ဒါ ပိတ်ပြီးပါပြီ။ LINE ဖြင့် ဆက်သွယ်ပါ။",
+    "origin": "hongdam.net မှ မှာယူပါ။",
+    "body": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။",
+    "route": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။"
+   }
+  },
+  "zh": {
+   "title": "Hongdam — 我们替您办 · 清莱",
+   "desc": "泰语代打电话、找师傅、翻译、网站、发货等。选好、付款，我们就开工。",
+   "tagline": "我们替您办。选好、付款，我们就开工。",
+   "how": [
+    "1 选择",
+    "2 付款",
+    "3 开工"
+   ],
+   "language": "语言",
+   "search": "您需要什么？",
+   "searchPh": "水管工、翻译、网站、Grab…",
+   "popular": "最受欢迎",
+   "cats": "全部服务",
+   "buy": "购买",
+   "book": "预订",
+   "open": "打开",
+   "go": "前往",
+   "free": "免费",
+   "from": "{p} 起",
+   "notHere": "列表里没有？用任何语言给我们留言。",
+   "askBtn": "给我们留言",
+   "askH": "您需要什么？",
+   "askWhat": "用任何语言告诉我们您需要什么。",
+   "send": "发送",
+   "asked": "已发送。我们通过您留下的方式回复。",
+   "home": "全部服务",
+   "noresult": "没有找到。请在 LINE 上问我们。",
+   "nocard": "没有这项服务。请从列表中选择。",
+   "noscript": "此页面需要 JavaScript，或在 LINE 上联系我们。",
+   "payMethods": "可用任何泰国银行 App 的 PromptPay 付款，海外可用 PayPal 或 Wise。",
+   "where": "Hongdam หงส์ดำ · 泰国清莱",
+   "portfolio": "我们的作品",
+   "tasks": "发布任务",
+   "choose": "选择",
+   "qty": "数量",
+   "total": "合计",
+   "half": "现在先付一半 {now}，完工后付余款。",
+   "reach": "您的 LINE ID、电话或邮箱",
+   "note": "补充说明（可不填）",
+   "next": "去付款",
+   "sending": "发送中…",
+   "order": "订单",
+   "payNow": "立即付款",
+   "payHalf": "现在付一半",
+   "pp": "PromptPay · 任何泰国银行 App",
+   "scan": "用银行 App 扫码。付款前 App 会显示收款人名称。付款后上传转账凭证。",
+   "slip": "转账凭证",
+   "slipBtn": "提交凭证",
+   "checking": "核对中…",
+   "paid": "已付款。订单",
+   "abroad": "海外付款：用 PayPal 或 Wise 支付 {amount}（约 {usd}），备注里写 {ref}。",
+   "ipaid": "我已通过以下方式付款：",
+   "claimed": "谢谢。我们核对付款后联系您。订单",
+   "msgUs": "LINE 联系我们",
+   "err": {
+    "contact": "请填写您的 LINE ID、电话或邮箱。",
+    "what": "请写下您需要什么。",
+    "limit": "同一网络每天最多五个订单。请在 LINE 上联系我们。",
+    "card": "请从列表中选择服务。",
+    "price": "无法计算价格。请在 LINE 上联系我们。",
+    "off": "暂时无法下单。请在 LINE 上联系我们。",
+    "service": "连接失败。请重试，或在 LINE 上联系我们。",
+    "nofile": "请先选择凭证图片。",
+    "unread": "这张图片无法识别为银行转账凭证。",
+    "amount": "凭证上的金额不符。",
+    "receiver": "凭证上的收款人不符。",
+    "used": "这张凭证已经用过。",
+    "late": "这张凭证太旧，无法核对。",
+    "ref": "这个订单号不是我们的。",
+    "state": "这个订单已关闭。请在 LINE 上联系我们。",
+    "origin": "请在 hongdam.net 下单。",
+    "body": "出了点问题，请重试。",
+    "route": "出了点问题，请重试。"
+   }
+  }
+ },
+ "units": {
+  "call": {
+   "one": {
+    "en": "call",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "次"
+   },
+   "many": {
+    "en": "calls",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "次"
+   }
+  },
+  "job": {
+   "one": {
+    "en": "job",
+    "th": "งาน",
+    "my": "ခု",
+    "zh": "单"
+   },
+   "many": {
+    "en": "jobs",
+    "th": "งาน",
+    "my": "ခု",
+    "zh": "单"
+   }
+  },
+  "hour": {
+   "one": {
+    "en": "hour",
+    "th": "ชั่วโมง",
+    "my": "နာရီ",
+    "zh": "小时"
+   },
+   "many": {
+    "en": "hours",
+    "th": "ชั่วโมง",
+    "my": "နာရီ",
+    "zh": "小时"
+   }
+  },
+  "form": {
+   "one": {
+    "en": "form",
+    "th": "ฉบับ",
+    "my": "စောင်",
+    "zh": "份"
+   },
+   "many": {
+    "en": "forms",
+    "th": "ฉบับ",
+    "my": "စောင်",
+    "zh": "份"
+   }
+  },
+  "page": {
+   "one": {
+    "en": "page",
+    "th": "หน้า",
+    "my": "မျက်နှာ",
+    "zh": "页"
+   },
+   "many": {
+    "en": "pages",
+    "th": "หน้า",
+    "my": "မျက်နှာ",
+    "zh": "页"
+   }
+  },
+  "leaf": {
+   "one": {
+    "en": "leaf",
+    "th": "ใบ",
+    "my": "ရွက်",
+    "zh": "叶"
+   },
+   "many": {
+    "en": "leaves",
+    "th": "ใบ",
+    "my": "ရွက်",
+    "zh": "叶"
+   }
+  },
+  "half": {
+   "one": {
+    "en": "30 minutes",
+    "th": "30 นาที",
+    "my": "30 မိနစ်",
+    "zh": "30 分钟"
+   },
+   "many": {
+    "en": "× 30 minutes",
+    "th": "× 30 นาที",
+    "my": "× 30 မိနစ်",
+    "zh": "× 30 分钟"
+   }
+  },
+  "sign": {
+   "one": {
+    "en": "sign or menu page",
+    "th": "ป้ายหรือหน้าเมนู",
+    "my": "ဆိုင်းဘုတ် သို့မဟုတ် မီနူးစာမျက်နှာ",
+    "zh": "块招牌或页菜单"
+   },
+   "many": {
+    "en": "signs or menu pages",
+    "th": "ป้ายหรือหน้าเมนู",
+    "my": "ဆိုင်းဘုတ် သို့မဟုတ် မီနူးစာမျက်နှာ",
+    "zh": "块招牌或页菜单"
+   }
+  },
+  "piece": {
+   "one": {
+    "en": "piece",
+    "th": "ชิ้น",
+    "my": "ခု",
+    "zh": "件"
+   },
+   "many": {
+    "en": "pieces",
+    "th": "ชิ้น",
+    "my": "ခု",
+    "zh": "件"
+   }
+  },
+  "post": {
+   "one": {
+    "en": "post",
+    "th": "โพสต์",
+    "my": "ပို့စ်",
+    "zh": "条"
+   },
+   "many": {
+    "en": "posts",
+    "th": "โพสต์",
+    "my": "ပို့စ်",
+    "zh": "条"
+   }
+  },
+  "issue": {
+   "one": {
+    "en": "issue",
+    "th": "ฉบับ",
+    "my": "စောင်",
+    "zh": "期"
+   },
+   "many": {
+    "en": "issues",
+    "th": "ฉบับ",
+    "my": "စောင်",
+    "zh": "期"
+   }
+  },
+  "video": {
+   "one": {
+    "en": "video",
+    "th": "คลิป",
+    "my": "ဗီဒီယို",
+    "zh": "条"
+   },
+   "many": {
+    "en": "videos",
+    "th": "คลิป",
+    "my": "ဗီဒီယို",
+    "zh": "条"
+   }
+  },
+  "question": {
+   "one": {
+    "en": "question",
+    "th": "คำถาม",
+    "my": "မေးခွန်း",
+    "zh": "个问题"
+   },
+   "many": {
+    "en": "questions",
+    "th": "คำถาม",
+    "my": "မေးခွန်း",
+    "zh": "个问题"
+   }
+  },
+  "rows": {
+   "one": {
+    "en": "100 rows",
+    "th": "100 แถว",
+    "my": "100 တန်း",
+    "zh": "100 行"
+   },
+   "many": {
+    "en": "× 100 rows",
+    "th": "× 100 แถว",
+    "my": "× 100 တန်း",
+    "zh": "× 100 行"
+   }
+  },
+  "line": {
+   "one": {
+    "en": "line",
+    "th": "บรรทัด",
+    "my": "ကြောင်း",
+    "zh": "条"
+   },
+   "many": {
+    "en": "lines",
+    "th": "บรรทัด",
+    "my": "ကြောင်း",
+    "zh": "条"
+   }
+  },
+  "month": {
+   "one": {
+    "en": "month",
+    "th": "เดือน",
+    "my": "လ",
+    "zh": "月"
+   },
+   "many": {
+    "en": "months",
+    "th": "เดือน",
+    "my": "လ",
+    "zh": "个月"
+   }
+  },
+  "order": {
+   "one": {
+    "en": "order",
+    "th": "ออเดอร์",
+    "my": "အော်ဒါ",
+    "zh": "单"
+   },
+   "many": {
+    "en": "orders",
+    "th": "ออเดอร์",
+    "my": "အော်ဒါ",
+    "zh": "单"
+   }
+  },
+  "shelf": {
+   "one": {
+    "en": "shelf a month",
+    "th": "ชั้นต่อเดือน",
+    "my": "စင် တစ်လ",
+    "zh": "个货架/月"
+   },
+   "many": {
+    "en": "shelf-months",
+    "th": "ชั้น-เดือน",
+    "my": "စင်-လ",
+    "zh": "个货架月"
+   }
+  },
+  "item": {
+   "one": {
+    "en": "item",
+    "th": "ชิ้น",
+    "my": "ခု",
+    "zh": "件"
+   },
+   "many": {
+    "en": "items",
+    "th": "ชิ้น",
+    "my": "ခု",
+    "zh": "件"
+   }
+  },
+  "batch": {
+   "one": {
+    "en": "batch",
+    "th": "ล็อต",
+    "my": "အသုတ်",
+    "zh": "批"
+   },
+   "many": {
+    "en": "batches",
+    "th": "ล็อต",
+    "my": "အသုတ်",
+    "zh": "批"
+   }
+  },
+  "shipment": {
+   "one": {
+    "en": "shipment",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "票"
+   },
+   "many": {
+    "en": "shipments",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "票"
+   }
+  },
+  "move": {
+   "one": {
+    "en": "move",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "次"
+   },
+   "many": {
+    "en": "moves",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "次"
+   }
+  },
+  "site": {
+   "one": {
+    "en": "site",
+    "th": "เว็บ",
+    "my": "ဆိုက်",
+    "zh": "个网站"
+   },
+   "many": {
+    "en": "sites",
+    "th": "เว็บ",
+    "my": "ဆိုက်",
+    "zh": "个网站"
+   }
+  },
+  "doc": {
+   "one": {
+    "en": "document",
+    "th": "ฉบับ",
+    "my": "စောင်",
+    "zh": "份"
+   },
+   "many": {
+    "en": "documents",
+    "th": "ฉบับ",
+    "my": "စောင်",
+    "zh": "份"
+   }
+  },
+  "names": {
+   "one": {
+    "en": "100 names",
+    "th": "100 ชื่อ",
+    "my": "အမည် 100",
+    "zh": "100 个名称"
+   },
+   "many": {
+    "en": "× 100 names",
+    "th": "× 100 ชื่อ",
+    "my": "× အမည် 100",
+    "zh": "× 100 个名称"
+   }
+  },
+  "items": {
+   "one": {
+    "en": "100 items",
+    "th": "100 ชิ้น",
+    "my": "100 ခု",
+    "zh": "100 件"
+   },
+   "many": {
+    "en": "× 100 items",
+    "th": "× 100 ชิ้น",
+    "my": "× 100 ခု",
+    "zh": "× 100 件"
+   }
+  },
+  "forms": {
+   "one": {
+    "en": "100 forms",
+    "th": "100 ฉบับ",
+    "my": "100 စောင်",
+    "zh": "100 份"
+   },
+   "many": {
+    "en": "× 100 forms",
+    "th": "× 100 ฉบับ",
+    "my": "× 100 စောင်",
+    "zh": "× 100 份"
+   }
+  },
+  "track": {
+   "one": {
+    "en": "track",
+    "th": "หัวข้อ",
+    "my": "ခေါင်းစဉ်",
+    "zh": "个分会场"
+   },
+   "many": {
+    "en": "tracks",
+    "th": "หัวข้อ",
+    "my": "ခေါင်းစဉ်",
+    "zh": "个分会场"
+   }
+  },
+  "minute": {
+   "one": {
+    "en": "minute",
+    "th": "นาที",
+    "my": "မိနစ်",
+    "zh": "分钟"
+   },
+   "many": {
+    "en": "minutes",
+    "th": "นาที",
+    "my": "မိနစ်",
+    "zh": "分钟"
+   }
+  },
+  "min10": {
+   "one": {
+    "en": "10 minutes",
+    "th": "10 นาที",
+    "my": "10 မိနစ်",
+    "zh": "10 分钟"
+   },
+   "many": {
+    "en": "× 10 minutes",
+    "th": "× 10 นาที",
+    "my": "× 10 မိနစ်",
+    "zh": "× 10 分钟"
+   }
+  },
+  "hours10": {
+   "one": {
+    "en": "10 hours",
+    "th": "10 ชั่วโมง",
+    "my": "10 နာရီ",
+    "zh": "10 小时"
+   },
+   "many": {
+    "en": "× 10 hours",
+    "th": "× 10 ชั่วโมง",
+    "my": "× 10 နာရီ",
+    "zh": "× 10 小时"
+   }
+  },
+  "platform": {
+   "one": {
+    "en": "platform",
+    "th": "แพลตฟอร์ม",
+    "my": "ပလက်ဖောင်း",
+    "zh": "个平台"
+   },
+   "many": {
+    "en": "platforms",
+    "th": "แพลตฟอร์ม",
+    "my": "ပလက်ဖောင်း",
+    "zh": "个平台"
+   }
+  },
+  "workflow": {
+   "one": {
+    "en": "workflow",
+    "th": "ระบบ",
+    "my": "လုပ်ငန်းစဉ်",
+    "zh": "个流程"
+   },
+   "many": {
+    "en": "workflows",
+    "th": "ระบบ",
+    "my": "လုပ်ငန်းစဉ်",
+    "zh": "个流程"
+   }
+  }
+ },
+ "cats": [
+  {
+   "id": "help",
+   "emoji": "🤝",
+   "n": {
+    "en": "Help in Thai",
+    "th": "ธุระและโทรแทน",
+    "my": "ဖုန်းခေါ်ပေး၊ ကိစ္စလုပ်ပေး",
+    "zh": "代办跑腿"
+   },
+   "l": {
+    "en": "Calls, repairs, errands and forms, done in Thai for you.",
+    "th": "โทรแทน หาช่าง วิ่งธุระ กรอกฟอร์ม เราทำให้",
+    "my": "ဖုန်းခေါ်ခြင်း၊ ပြင်ဆင်ရေး၊ ကိစ္စများနှင့် ဖောင်ဖြည့်ခြင်းကို ထိုင်းလို လုပ်ပေးပါသည်။",
+    "zh": "打电话、找师傅、跑腿、填表，我们用泰语替您办。"
+   }
+  },
+  {
+   "id": "outsource",
+   "emoji": "🧑‍💼",
+   "n": {
+    "en": "Outsourcing",
+    "th": "เอาท์ซอร์ส",
+    "my": "ပြင်ပ ဝန်ထမ်းငှား",
+    "zh": "外包"
+   },
+   "l": {
+    "en": "An assistant, a Thai service desk, calls and data entry.",
+    "th": "ผู้ช่วย แอดมินตอบแชท โทรออก และคีย์ข้อมูล",
+    "my": "လက်ထောက်၊ ထိုင်းဝန်ဆောင်မှုဌာန၊ ဖုန်းခေါ်ခြင်းနှင့် ဒေတာထည့်ခြင်း။",
+    "zh": "助理、泰语客服、外呼和数据录入。"
+   }
+  },
+  {
+   "id": "translate",
+   "emoji": "🔤",
+   "n": {
+    "en": "Translation",
+    "th": "แปลและล่าม",
+    "my": "ဘာသာပြန်နှင့် စကားပြန်",
+    "zh": "翻译口译"
+   },
+   "l": {
+    "en": "Documents, interpreters and web pages: Thai, English, Burmese.",
+    "th": "เอกสาร ล่าม และหน้าเว็บ ไทย อังกฤษ พม่า",
+    "my": "စာရွက်စာတမ်း၊ စကားပြန်နှင့် ဝက်ဘ်စာမျက်နှာ — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ။",
+    "zh": "文件、口译和网页：泰语、英语、缅甸语。"
+   }
+  },
+  {
+   "id": "shop",
+   "emoji": "🛒",
+   "n": {
+    "en": "Shops & restaurants",
+    "th": "ร้านค้าและร้านอาหาร",
+    "my": "ဆိုင်နှင့် စားသောက်ဆိုင်",
+    "zh": "商店餐厅"
+   },
+   "l": {
+    "en": "Grab, menus, signs and payments for your shop.",
+    "th": "Grab เมนู ป้าย และรับเงิน สำหรับร้านของคุณ",
+    "my": "သင့်ဆိုင်အတွက် Grab၊ မီနူး၊ ဆိုင်းဘုတ်နှင့် ငွေလက်ခံခြင်း။",
+    "zh": "为您的店铺办理 Grab、菜单、招牌和收款。"
+   }
+  },
+  {
+   "id": "stay",
+   "emoji": "🏨",
+   "n": {
+    "en": "Hotels & homes",
+    "th": "โรงแรมและที่พัก",
+    "my": "ဟိုတယ်နှင့် အိမ်",
+    "zh": "酒店与住房"
+   },
+   "l": {
+    "en": "Booking sites, rentals found, houses checked before you buy.",
+    "th": "เว็บรับจอง หาที่เช่า ตรวจบ้านก่อนซื้อ",
+    "my": "ဘွတ်ကင်ဆိုက်၊ ငှားရန်နေရာ ရှာ၊ မဝယ်မီ အိမ်စစ်။",
+    "zh": "直订网站、代找租房、购房前核查。"
+   }
+  },
+  {
+   "id": "events",
+   "emoji": "🎉",
+   "n": {
+    "en": "Trips & events",
+    "th": "เที่ยวและงาน",
+    "my": "ခရီးနှင့် ပွဲများ",
+    "zh": "旅行与活动"
+   },
+   "l": {
+    "en": "Trip plans, ticket pages, ceremonies and keepsakes.",
+    "th": "แผนเที่ยว หน้าขายบัตร พิธี และของที่ระลึก",
+    "my": "ခရီးစဉ်၊ လက်မှတ်စာမျက်နှာ၊ အခမ်းအနားနှင့် အမှတ်တရ။",
+    "zh": "行程、售票页、仪式和纪念。"
+   }
+  },
+  {
+   "id": "web",
+   "emoji": "💻",
+   "n": {
+    "en": "Websites & apps",
+    "th": "เว็บและแอป",
+    "my": "ဝက်ဘ်ဆိုက်နှင့် အက်ပ်",
+    "zh": "网站和应用"
+   },
+   "l": {
+    "en": "Sites, LINE apps and fixes, in Thai and English.",
+    "th": "เว็บไซต์ แอปในไลน์ และงานแก้ ไทยและอังกฤษ",
+    "my": "ဝက်ဘ်ဆိုက်၊ LINE အက်ပ်နှင့် ပြင်ဆင်ခြင်း။",
+    "zh": "泰英双语网站、LINE 应用和修复。"
+   }
+  },
+  {
+   "id": "fix",
+   "emoji": "🔒",
+   "n": {
+    "en": "Fix & protect",
+    "th": "แก้ไขและป้องกัน",
+    "my": "ပြင်ဆင်ခြင်းနှင့် ကာကွယ်ခြင်း",
+    "zh": "修复与安全"
+   },
+   "l": {
+    "en": "Patch servers, stop fake emails, test chatbots.",
+    "th": "แพตช์เซิร์ฟเวอร์ กันอีเมลปลอม ทดสอบแชตบอท",
+    "my": "ဆာဗာပြင်ခြင်း၊ အတုအီးမေးလ် တားခြင်း၊ chatbot စမ်းသပ်ခြင်း။",
+    "zh": "修补服务器、阻止冒名邮件、测试聊天机器人。"
+   }
+  },
+  {
+   "id": "ai",
+   "emoji": "🤖",
+   "n": {
+    "en": "AI & bots",
+    "th": "AI และบอท",
+    "my": "AI နှင့် ဘော့",
+    "zh": "AI 和机器人"
+   },
+   "l": {
+    "en": "AI helpers and bots that work for you.",
+    "th": "ผู้ช่วย AI และบอทที่ทำงานให้คุณ",
+    "my": "သင့်အတွက် အလုပ်လုပ်ပေးသော AI နှင့် ဘော့များ။",
+    "zh": "为您工作的 AI 助手和机器人。"
+   }
+  },
+  {
+   "id": "data",
+   "emoji": "📊",
+   "n": {
+    "en": "Lists & research",
+    "th": "รายชื่อและค้นคว้า",
+    "my": "စာရင်းနှင့် သုတေသန",
+    "zh": "名单与调研"
+   },
+   "l": {
+    "en": "Customer lists, data collected, questions answered.",
+    "th": "รายชื่อลูกค้า เก็บข้อมูล ตอบคำถาม",
+    "my": "ဖောက်သည်စာရင်း၊ ဒေတာစုဆောင်းခြင်း၊ မေးခွန်းဖြေခြင်း။",
+    "zh": "客户名单、数据采集、问题解答。"
+   }
+  },
+  {
+   "id": "design",
+   "emoji": "🎨",
+   "n": {
+    "en": "Design & writing",
+    "th": "ออกแบบและงานเขียน",
+    "my": "ဒီဇိုင်းနှင့် စာရေး",
+    "zh": "设计与文案"
+   },
+   "l": {
+    "en": "Logos, videos, slides, posts and words.",
+    "th": "โลโก้ วิดีโอ สไลด์ โพสต์ และเนื้อหา",
+    "my": "လိုဂို၊ ဗီဒီယို၊ ဆလိုက်၊ ပို့စ်နှင့် စာသား။",
+    "zh": "标志、视频、幻灯片、帖子和文案。"
+   }
+  },
+  {
+   "id": "moving",
+   "emoji": "🚚",
+   "n": {
+    "en": "Moving house abroad",
+    "th": "ย้ายบ้านต่างประเทศ",
+    "my": "နိုင်ငံခြားသို့ အိမ်ပြောင်း",
+    "zh": "跨国搬家"
+   },
+   "l": {
+    "en": "Your home packed and shipped into or out of Thailand.",
+    "th": "แพ็กและส่งของในบ้านเข้าหรือออกจากไทย",
+    "my": "ထိုင်းနိုင်ငံ အဝင်အထွက် အိမ်ပစ္စည်း ထုပ်ပိုးပို့ဆောင်ခြင်း။",
+    "zh": "打包托运家当，进出泰国。"
+   }
+  },
+  {
+   "id": "ship",
+   "emoji": "📦",
+   "n": {
+    "en": "Shipping partners",
+    "th": "พาร์ทเนอร์ขนส่ง",
+    "my": "ပို့ဆောင်ရေး မိတ်ဖက်",
+    "zh": "发货合作"
+   },
+   "l": {
+    "en": "Crafts and small parcels, sourced, packed and shipped.",
+    "th": "งานฝีมือและพัสดุเล็ก จัดหา แพ็ก และส่ง",
+    "my": "လက်မှုပစ္စည်းနှင့် ပါဆယ်ငယ်များကို ရှာ၊ ထုပ်ပိုး၊ ပို့ပေးသည်။",
+    "zh": "手工艺品和小包裹的采购、包装和寄送。"
+   },
+   "note": {
+    "en": "For partners on a standing agreement, not single parcels. Postage, duties and taxes at cost; fees at least ฿3,000 a month. Buddha images and antiques need a Fine Arts Department licence to leave Thailand.",
+    "th": "สำหรับพาร์ทเนอร์ที่มีข้อตกลงต่อเนื่อง ไม่รับพัสดุชิ้นเดียว ค่าส่ง อากร และภาษีคิดตามจริง ค่าบริการขั้นต่ำเดือนละ ฿3,000 พระพุทธรูปและโบราณวัตถุต้องมีใบอนุญาตกรมศิลปากรก่อนส่งออก",
+    "my": "ရေရှည်သဘောတူညီချက်ရှိသော မိတ်ဖက်များအတွက်သာ၊ ပါဆယ်တစ်ခုချင်း မလက်ခံပါ။ စာပို့ခ၊ အကောက်ခွန်နှင့် အခွန်များ အမှန်အတိုင်း၊ ဝန်ဆောင်ခ တစ်လ ฿3,000 အနည်းဆုံး။ ဗုဒ္ဓရုပ်ပွားနှင့် ရှေးဟောင်းပစ္စည်းများ ထိုင်းမှ ထုတ်ရန် Fine Arts Department ခွင့်ပြုချက် လိုသည်။",
+    "zh": "仅限签订长期协议的合作伙伴，不接单件包裹。运费、关税和税费按实际收取；服务费每月至少 ฿3,000。佛像和古董出境需泰国艺术厅许可。"
+   }
+  },
+  {
+   "id": "charity",
+   "emoji": "🤲",
+   "n": {
+    "en": "Charities & clubs",
+    "th": "การกุศลและชมรม",
+    "my": "ပရဟိတနှင့် အသင်းများ",
+    "zh": "慈善与社团"
+   },
+   "l": {
+    "en": "Giving pages, grants, volunteers and team tools.",
+    "th": "หน้ารับบริจาค ทุน อาสาสมัคร และเครื่องมือทีม",
+    "my": "လှူဒါန်းစာမျက်နှာ၊ ထောက်ပံ့ငွေ၊ စေတနာ့ဝန်ထမ်းနှင့် အဖွဲ့ကိရိယာ။",
+    "zh": "捐款页、基金申请、志愿者和团队工具。"
+   }
+  },
+  {
+   "id": "money",
+   "emoji": "💵",
+   "n": {
+    "en": "Money & books",
+    "th": "การเงินและบัญชี",
+    "my": "ငွေနှင့် စာရင်း",
+    "zh": "收款与记账"
+   },
+   "l": {
+    "en": "Payments, invoices and bookkeeping.",
+    "th": "รับเงิน ใบแจ้งหนี้ และทำบัญชี",
+    "my": "ငွေလက်ခံခြင်း၊ ငွေတောင်းခံလွှာနှင့် စာရင်းကိုင်ခြင်း။",
+    "zh": "收款、发票和记账。"
+   }
+  },
+  {
+   "id": "visa",
+   "emoji": "🛂",
+   "n": {
+    "en": "Visas & permits",
+    "th": "วีซ่าและใบอนุญาต",
+    "my": "ဗီဇာနှင့် ပါမစ်",
+    "zh": "签证与许可"
+   },
+   "l": {
+    "en": "Visas, work permits and companies, through Chiang Mai Visa Desk.",
+    "th": "วีซ่า ใบอนุญาตทำงาน และบริษัท ผ่านโต๊ะวีซ่าเชียงใหม่",
+    "my": "ဗီဇာ၊ အလုပ်ပါမစ်နှင့် ကုမ္ပဏီ — Chiang Mai Visa Desk မှတစ်ဆင့်။",
+    "zh": "签证、工作许可和公司注册，由清迈签证服务台办理。"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "call",
+   "cat": "help",
+   "n": {
+    "en": "Phone call in Thai",
+    "th": "โทรแทนคุณ",
+    "my": "ထိုင်းလို ဖုန်းခေါ်ပေးခြင်း",
+    "zh": "泰语代打电话"
+   },
+   "l": {
+    "en": "We call anyone for you and write what they said.",
+    "th": "เราโทรแทนแล้วสรุปให้ว่าเขาพูดอะไร",
+    "my": "သင့်ကိုယ်စား ဖုန်းခေါ်ပြီး ပြောသမျှ ရေးပေးပါသည်။",
+    "zh": "我们替您打电话，再把对方的话写给您。"
+   },
+   "kw": "phone call telephone landlord clinic office personal assistant virtual assistant concierge chiang mai help chiang rai help โทร โทรศัพท์ ผู้ช่วย ဖုန်း 电话 打电话 助理",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "call",
+     "u": "call",
+     "max": 20
+    }
+   ],
+   "pop": 1
+  },
+  {
+   "id": "trades",
+   "cat": "help",
+   "n": {
+    "en": "Plumber, electrician, air-con: booked",
+    "th": "หาช่างประปา ช่างไฟ ช่างแอร์",
+    "my": "ပိုက်ဆရာ၊ လျှပ်စစ်ဆရာ၊ အဲယားကွန်း ရှာပေးခြင်း",
+    "zh": "找水管工、电工、空调师傅"
+   },
+   "l": {
+    "en": "We find one, get the price first, book the time.",
+    "th": "หาช่าง ขอราคาก่อน นัดเวลาให้",
+    "my": "ဆရာရှာ၊ စျေးအရင်မေး၊ အချိန်ချိန်းပေးသည်။",
+    "zh": "找师傅、先问价、约时间。"
+   },
+   "kw": "handyman plumber electrician aircon air-con air conditioner cleaning pest termite locksmith internet installer movers cleaner maid repair fix leak ช่าง ช่างแอร์ ล้างแอร์ ช่างประปา ช่างไฟ กำจัดปลวก ขนย้าย รถรับจ้างขนของ แม่บ้านรายวัน ซ่อม ท่อรั่ว ပြင် ပိုက် လျှပ်စစ် အဲယားကွန်း 维修 水管 电工 空调 清洗 搬家 保洁 开锁 除虫 漏水",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "trades",
+     "u": "job",
+     "max": 10
+    }
+   ],
+   "pop": 2
+  },
+  {
+   "id": "there",
+   "cat": "help",
+   "n": {
+    "en": "Someone at your place",
+    "th": "คนไปอยู่ด้วยที่หน้างาน",
+    "my": "သင့်နေရာသို့ လူလာပေးခြင်း",
+    "zh": "派人到场"
+   },
+   "l": {
+    "en": "Meets the repairman or landlord, translates, checks the work.",
+    "th": "พบช่างหรือเจ้าของบ้าน เป็นล่าม ตรวจงาน",
+    "my": "ပြင်ဆင်သူ သို့မဟုတ် အိမ်ရှင်ကို တွေ့၊ စကားပြန်၊ အလုပ်စစ်ပေးသည်။",
+    "zh": "陪您见师傅或房东，翻译并检查工作。"
+   },
+   "kw": "accompany meet landlord visit translate supervise ไปด้วย คุมงาน 陪同 监工",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "there",
+     "u": "hour",
+     "max": 8
+    }
+   ]
+  },
+  {
+   "id": "errand",
+   "cat": "help",
+   "n": {
+    "en": "Errand",
+    "th": "วิ่งธุระ",
+    "my": "ကိစ္စလုပ်ပေးခြင်း",
+    "zh": "跑腿"
+   },
+   "l": {
+    "en": "Collect, deliver, buy, queue, pay a bill.",
+    "th": "รับ ส่ง ซื้อ ต่อคิว จ่ายบิล",
+    "my": "ယူ၊ ပို့၊ ဝယ်၊ တန်းစီ၊ ဘေလ်ဆောင်။",
+    "zh": "取件、送件、代买、排队、缴费。"
+   },
+   "kw": "errand pickup delivery queue pay bill bank account driving licence po box shopping ส่งของ รับของ ต่อคิว จ่ายบิล เปิดบัญชี ใบขับขี่ ซื้อของ 跑腿 取件 送件 排队 缴费 开户 驾照 代购",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "errand",
+     "u": "hour",
+     "max": 8
+    }
+   ]
+  },
+  {
+   "id": "form",
+   "cat": "help",
+   "n": {
+    "en": "Thai form filled",
+    "th": "กรอกฟอร์มให้",
+    "my": "ထိုင်းဖောင် ဖြည့်ပေးခြင်း",
+    "zh": "代填泰文表格"
+   },
+   "l": {
+    "en": "Filled in, with English labels on the boxes.",
+    "th": "กรอกให้ พร้อมป้ายภาษาอังกฤษ",
+    "my": "ဖြည့်ပေးပြီး အင်္ဂလိပ်လို တံဆိပ်ကပ်ပေးသည်။",
+    "zh": "代为填写，附英文说明。"
+   },
+   "kw": "form application tm30 90 day thai form paperwork ฟอร์ม แบบฟอร์ม เอกสาร 表格 填表",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "form",
+     "u": "form",
+     "max": 10
+    }
+   ]
+  },
+  {
+   "id": "dispute",
+   "cat": "help",
+   "n": {
+    "en": "Haggling buddy",
+    "th": "เพื่อนช่วยต่อรอง",
+    "my": "စျေးဆစ်ပေးမည့် အဖော်",
+    "zh": "砍价帮手"
+   },
+   "l": {
+    "en": "Deposit, repair, bill or neighbour: we talk to them in Thai.",
+    "th": "เงินมัดจำ งานซ่อม บิล เพื่อนบ้าน เราคุยให้",
+    "my": "စပေါ်ငွေ၊ ပြင်ဆင်ခ၊ ဘေလ်၊ အိမ်နီးချင်း — ထိုင်းလို ပြောပေးသည်။",
+    "zh": "押金、维修、账单、邻居纠纷，我们用泰语交涉。"
+   },
+   "kw": "dispute deposit refund landlord bargain haggle negotiate complaint ต่อรอง มัดจำ คืนเงิน ร้องเรียน 押金 退款 纠纷 讨价还价 投诉",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "dispute"
+    }
+   ]
+  },
+  {
+   "id": "thai-plan",
+   "cat": "help",
+   "n": {
+    "en": "A plan for a hard Thai question",
+    "th": "แผนสำหรับเรื่องยาก",
+    "my": "ခက်ခဲသောကိစ္စအတွက် အစီအစဉ်",
+    "zh": "疑难事务的书面方案"
+   },
+   "l": {
+    "en": "Bank, visa, property or a death: the steps written out.",
+    "th": "ธนาคาร วีซ่า ทรัพย์สิน การเสียชีวิต เขียนขั้นตอนให้",
+    "my": "ဘဏ်၊ ဗီဇာ၊ အိမ်ခြံမြေ၊ သေဆုံးမှု — အဆင့်များ ရေးပေးသည်။",
+    "zh": "银行、签证、房产、身后事：步骤写给您。"
+   },
+   "kw": "advice how to steps death funeral inheritance will bank account property ขั้นตอน คำแนะนำ มรดก 建议 步骤 遗产 葬礼",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "thai-plan"
+    }
+   ]
+  },
+  {
+   "id": "legalise",
+   "cat": "help",
+   "n": {
+    "en": "Document legalised",
+    "th": "รับรองเอกสาร",
+    "my": "စာရွက်စာတမ်း အတည်ပြုခြင်း",
+    "zh": "文件认证"
+   },
+   "l": {
+    "en": "Ministry of Foreign Affairs seal or a notary, taken and fetched.",
+    "th": "นำไปรับรองที่กระทรวงการต่างประเทศหรือโนตารี",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာန တံဆိပ် သို့မဟုတ် နိုတာရီ — ယူသွားပြန်ယူပေးသည်။",
+    "zh": "外交部认证或公证，代送代取。"
+   },
+   "kw": "legalization legalisation apostille notary mfa consular seal รับรองเอกสาร กงสุล กระทรวงการต่างประเทศ 认证 公证 领事",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "legalise",
+     "u": "doc",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "idme",
+   "cat": "help",
+   "n": {
+    "en": "ID.me, VA or SSA sign-in help",
+    "th": "ช่วยเข้าระบบ ID.me VA SSA",
+    "my": "ID.me၊ VA၊ SSA ဝင်ရောက်ရန် ကူညီခြင်း",
+    "zh": "ID.me、VA、SSA 登录协助"
+   },
+   "l": {
+    "en": "For US veterans and families abroad. You type your passwords.",
+    "th": "สำหรับทหารผ่านศึกสหรัฐฯ และครอบครัว คุณพิมพ์รหัสผ่านเอง",
+    "my": "US စစ်မှုထမ်းဟောင်းနှင့် မိသားစုများအတွက်။ စကားဝှက်ကို ကိုယ်တိုင်ရိုက်ပါ။",
+    "zh": "适用于海外的美国退伍军人及家属。密码由您本人输入。"
+   },
+   "kw": "id.me idme va veterans ssa social security benefits widow login.gov ทหารผ่านศึก 退伍军人 社保",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "idme"
+    }
+   ]
+  },
+  {
+   "id": "homehelp",
+   "cat": "help",
+   "n": {
+    "en": "Maid or nanny contract",
+    "th": "สัญญาจ้างแม่บ้าน",
+    "my": "အိမ်အကူ စာချုပ်",
+    "zh": "保姆雇佣合同"
+   },
+   "l": {
+    "en": "Thai and English, ready to print.",
+    "th": "ไทยและอังกฤษ พิมพ์ได้ทันที",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ်၊ ပုံနှိပ်ရန် အသင့်။",
+    "zh": "泰英双语，可直接打印。"
+   },
+   "kw": "maid nanny cook housekeeper domestic worker contract แม่บ้าน พี่เลี้ยง สัญญาจ้าง 保姆 合同",
+   "act": "link",
+   "href": "https://motdang.net/home-help/agreement",
+   "pshow": {
+    "en": "฿100",
+    "th": "฿100",
+    "my": "฿100",
+    "zh": "฿100"
+   },
+   "covers": [
+    "homehelp"
+   ]
+  },
+  {
+   "id": "doctor",
+   "cat": "help",
+   "n": {
+    "en": "Doctor or dentist visit",
+    "th": "พบหมอหรือหมอฟัน",
+    "my": "ဆရာဝန် သို့မဟုတ် သွားဆရာဝန် ပြခြင်း",
+    "zh": "看医生或牙医"
+   },
+   "l": {
+    "en": "Prices first, an interpreter at the visit: Defiant.",
+    "th": "ราคาก่อนตัดสินใจ มีล่ามไปด้วย: Defiant",
+    "my": "စျေးနှုန်းအရင်၊ စကားပြန်ပါ — Defiant။",
+    "zh": "先报价，看诊有翻译陪同：Defiant。"
+   },
+   "kw": "doctor dentist hospital clinic medical health surgery check-up หมอ โรงพยาบาล คลินิก ทันตแพทย์ ตรวจสุขภาพ 医生 医院 牙医 看病 体检",
+   "act": "link",
+   "href": "https://defiant.to/",
+   "pshow": {
+    "en": "defiant.to",
+    "th": "defiant.to",
+    "my": "defiant.to",
+    "zh": "defiant.to"
+   }
+  },
+  {
+   "id": "translate",
+   "cat": "translate",
+   "n": {
+    "en": "Document translation",
+    "th": "แปลเอกสาร",
+    "my": "စာရွက်စာတမ်း ဘာသာပြန်",
+    "zh": "文件翻译"
+   },
+   "l": {
+    "en": "Thai, English, Burmese. Passports, contracts, certificates.",
+    "th": "ไทย อังกฤษ พม่า หนังสือเดินทาง สัญญา ใบรับรอง",
+    "my": "ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ။ ပတ်စပို့၊ စာချုပ်၊ လက်မှတ်။",
+    "zh": "泰、英、缅。护照、合同、证书。"
+   },
+   "kw": "translation translate certified translation document translation passport house registration tabien baan birth certificate marriage police clearance contract แปล แปลเอกสาร รับแปลเอกสาร รับรองคำแปล แปลเอกสารยื่นวีซ่า ทะเบียนบ้าน ဘာသာပြန် 翻译 文件翻译 护照 认证翻译 合同",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lang-new",
+     "n": {
+      "en": "New translation",
+      "th": "แปลใหม่",
+      "my": "ဘာသာပြန်အသစ်",
+      "zh": "新翻译"
+     },
+     "u": "page",
+     "max": 200,
+     "price": {
+      "tier": [
+       1500,
+       5,
+       500
+      ]
+     },
+     "show": {
+      "en": "฿1,500 up to 5 pages, then ฿500 / page",
+      "th": "฿1,500 ไม่เกิน 5 หน้า หน้าต่อไป ฿500",
+      "my": "5 မျက်နှာအထိ ฿1,500၊ ထို့နောက် တစ်မျက်နှာ ฿500",
+      "zh": "5 页内 ฿1,500，之后每页 ฿500"
+     }
+    },
+    {
+     "i": "lang-check",
+     "n": {
+      "en": "Checking a translation",
+      "th": "ตรวจงานแปล",
+      "my": "ဘာသာပြန်ကို စစ်ဆေးခြင်း",
+      "zh": "校对译文"
+     },
+     "u": "page",
+     "max": 200,
+     "price": {
+      "tier": [
+       500,
+       5,
+       150
+      ]
+     },
+     "show": {
+      "en": "฿500 up to 5 pages, then ฿150 / page",
+      "th": "฿500 ไม่เกิน 5 หน้า หน้าต่อไป ฿150",
+      "my": "5 မျက်နှာအထိ ฿500၊ ထို့နောက် တစ်မျက်နှာ ฿150",
+      "zh": "5 页内 ฿500，之后每页 ฿150"
+     }
+    }
+   ],
+   "add": {
+    "i": "lang-stamp",
+    "fixed": 100,
+    "n": {
+     "en": "Translator's stamp on the pages, + ฿100 a page",
+     "th": "ประทับตราผู้แปล หน้าละ ฿100",
+     "my": "ဘာသာပြန်သူ တံဆိပ်၊ တစ်မျက်နှာ +฿100",
+     "zh": "加盖译者章，每页 ฿100"
+    }
+   },
+   "pop": 3
+  },
+  {
+   "id": "interp",
+   "cat": "translate",
+   "n": {
+    "en": "Interpreter",
+    "th": "ล่าม",
+    "my": "စကားပြန်",
+    "zh": "口译"
+   },
+   "l": {
+    "en": "By phone, or with you at immigration, hospital or bank.",
+    "th": "ทางโทรศัพท์ หรือไปด้วยที่ ตม. โรงพยาบาล ธนาคาร",
+    "my": "ဖုန်းဖြင့် သို့မဟုတ် လူဝင်မှု၊ ဆေးရုံ၊ ဘဏ်သို့ အတူလိုက်။",
+    "zh": "电话口译，或陪您去移民局、医院、银行。"
+   },
+   "kw": "interpreter interpreting hospital interpreter immigration police bank court meeting ล่าม ล่ามพม่า ล่ามโรงพยาบาล စကားပြန် 口译 陪同 医院 移民局",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "interp-phone",
+     "n": {
+      "en": "By phone or video",
+      "th": "ทางโทรศัพท์หรือวิดีโอ",
+      "my": "ဖုန်း သို့မဟုတ် ဗီဒီယို",
+      "zh": "电话或视频"
+     },
+     "u": "half",
+     "max": 16
+    },
+    {
+     "i": "interp-person",
+     "n": {
+      "en": "With you, up to 4 hours",
+      "th": "ไปด้วย ไม่เกิน 4 ชั่วโมง",
+      "my": "အတူလိုက်၊ 4 နာရီအထိ",
+      "zh": "陪同，4 小时以内"
+     }
+    },
+    {
+     "i": "interp-day",
+     "n": {
+      "en": "With you, a full day",
+      "th": "ไปด้วยทั้งวัน",
+      "my": "အတူလိုက်၊ တစ်နေ့လုံး",
+      "zh": "陪同，全天"
+     }
+    }
+   ],
+   "pop": 4
+  },
+  {
+   "id": "lang-pages",
+   "cat": "translate",
+   "n": {
+    "en": "Website translation checked",
+    "th": "ตรวจคำแปลหน้าเว็บ",
+    "my": "ဝက်ဘ်ဘာသာပြန် စစ်ဆေးခြင်း",
+    "zh": "网页译文校对"
+   },
+   "l": {
+    "en": "A Thai or English page read and corrected.",
+    "th": "อ่านและแก้หน้าเว็บภาษาไทยหรืออังกฤษ",
+    "my": "ထိုင်း သို့မဟုတ် အင်္ဂလိပ် စာမျက်နှာ ဖတ်ပြီး ပြင်ပေးသည်။",
+    "zh": "泰语或英语网页的审读和修改。"
+   },
+   "kw": "proofreading proofread website copy check native speaker พิสูจน์อักษร ตรวจภาษา 校对 润色",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lang-pages",
+     "u": "page",
+     "max": 50
+    }
+   ]
+  },
+  {
+   "id": "lang-shan",
+   "cat": "translate",
+   "n": {
+    "en": "Shan translation",
+    "th": "แปลภาษาไทใหญ่",
+    "my": "ရှမ်းဘာသာပြန်",
+    "zh": "掸语翻译"
+   },
+   "l": {
+    "en": "Into Shan from Thai, English or Burmese.",
+    "th": "แปลเป็นไทใหญ่จากไทย อังกฤษ หรือพม่า",
+    "my": "ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် မြန်မာမှ ရှမ်းဘာသာသို့။",
+    "zh": "从泰语、英语或缅甸语译成掸语。"
+   },
+   "kw": "shan tai yai ไทใหญ่ ရှမ်း 掸语",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lang-shan",
+     "u": "page",
+     "max": 50
+    }
+   ]
+  },
+  {
+   "id": "lang-leaves",
+   "cat": "translate",
+   "n": {
+    "en": "Lanna palm-leaf manuscript read",
+    "th": "ปริวรรตใบลานล้านนา",
+    "my": "လန်နာ ပေရွက်စာ ဖတ်ခြင်း",
+    "zh": "兰纳贝叶经转写"
+   },
+   "l": {
+    "en": "Tai Tham script written out in Thai letters.",
+    "th": "อักษรธรรมล้านนา ปริวรรตเป็นอักษรไทย",
+    "my": "တိုင်းထမ်အက္ခရာကို ထိုင်းအက္ခรာဖြင့် ရေးပေးသည်။",
+    "zh": "将兰纳经文字转写为泰文。"
+   },
+   "kw": "lanna palm leaf manuscript tai tham ใบลาน อักษรธรรม ปริวรรต 贝叶经",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lang-leaves",
+     "u": "leaf",
+     "max": 100
+    }
+   ]
+  },
+  {
+   "id": "romanise",
+   "cat": "translate",
+   "n": {
+    "en": "Thai names in English letters",
+    "th": "ชื่อไทยเป็นอักษรอังกฤษ",
+    "my": "ထိုင်းအမည်များ အင်္ဂလိပ်အက္ခရာဖြင့်",
+    "zh": "泰文名称转拉丁字母"
+   },
+   "l": {
+    "en": "Places, people or products, one spelling for the set.",
+    "th": "สถานที่ คน หรือสินค้า สะกดแบบเดียวทั้งชุด",
+    "my": "နေရာ၊ လူ သို့မဟုတ် ကုန်ပစ္စည်း — စာလုံးပေါင်း တစ်မျိုးတည်း။",
+    "zh": "地名、人名或产品名，整套统一拼写。"
+   },
+   "kw": "romanization romanisation transliteration thai to english names spelling ถอดอักษร ทับศัพท์ 音译 罗马字",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "romanise",
+     "u": "names",
+     "max": 100
+    }
+   ]
+  },
+  {
+   "id": "grab",
+   "cat": "shop",
+   "n": {
+    "en": "Grab, LINE MAN or ShopeeFood for your shop",
+    "th": "Grab LINE MAN ShopeeFood สำหรับร้านของคุณ",
+    "my": "သင့်ဆိုင်အတွက် Grab၊ LINE MAN သို့မဟုတ် ShopeeFood",
+    "zh": "为您的店铺开通 Grab、LINE MAN 或 ShopeeFood"
+   },
+   "l": {
+    "en": "Sign-up, menu photos and names, review replies.",
+    "th": "สมัคร รูปเมนู ชื่อเมนู ตอบรีวิว",
+    "my": "စာရင်းသွင်း၊ မီနူးပုံနှင့် အမည်၊ သုံးသပ်ချက် ပြန်ဖြေ။",
+    "zh": "注册、菜单照片和名称、回复评价。"
+   },
+   "kw": "grab grabfood grab food registration สมัคร grab food ร้านค้า แกร็บ เดลิเวอรี่ delivery foodpanda lineman 外卖 送餐 lineman line man shopeefood shopee food สมัคร lineman ร้านอาหาร",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "grab-start",
+     "n": {
+      "en": "Start: sign-up and first menu",
+      "th": "เปิดร้าน: สมัครและเมนูแรก",
+      "my": "စတင်: စာရင်းသွင်းပြီး ပထမမီနူး",
+      "zh": "开店：注册和首个菜单"
+     }
+    },
+    {
+     "i": "lineman-start",
+     "n": {
+      "en": "LINE MAN or ShopeeFood start",
+      "th": "เปิดร้าน LINE MAN หรือ ShopeeFood",
+      "my": "LINE MAN သို့မဟုတ် ShopeeFood စတင်",
+      "zh": "LINE MAN 或 ShopeeFood 开店"
+     },
+     "u": "platform",
+     "max": 2
+    },
+    {
+     "i": "grab-menu",
+     "n": {
+      "en": "Menu refresh",
+      "th": "ปรับเมนู",
+      "my": "မီနူး အသစ်ပြင်",
+      "zh": "菜单更新"
+     }
+    },
+    {
+     "i": "grab-care",
+     "n": {
+      "en": "Care, monthly",
+      "th": "ดูแลรายเดือน",
+      "my": "လစဉ် စောင့်ရှောက်မှု",
+      "zh": "每月维护"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "restaurant-desk",
+   "cat": "shop",
+   "n": {
+    "en": "Restaurant desk",
+    "th": "ผู้ช่วยร้านอาหารรายสัปดาห์",
+    "my": "စားသောက်ဆိုင် အပတ်စဉ်အကူ",
+    "zh": "餐厅每周助手"
+   },
+   "l": {
+    "en": "Competitor and Grab prices, menu prices, review replies, weekly.",
+    "th": "ราคาคู่แข่งและ Grab ราคาเมนู ตอบรีวิว ทุกสัปดาห์",
+    "my": "ပြိုင်ဘက်နှင့် Grab စျေး၊ မီနူးစျေး၊ သုံးသပ်ချက်ဖြေ — အပတ်စဉ်။",
+    "zh": "每周：竞品和 Grab 价格、菜单定价、回复评价。"
+   },
+   "kw": "restaurant menu pricing reviews competitor google reviews ร้านอาหาร รีวิว ตั้งราคา 餐厅 评价 定价",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "restaurant-desk",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "ordering",
+   "cat": "shop",
+   "n": {
+    "en": "Online ordering for your café",
+    "th": "สั่งออนไลน์สำหรับคาเฟ่",
+    "my": "ကော်ဖီဆိုင်အတွက် အွန်လိုင်းမှာယူခြင်း",
+    "zh": "咖啡店在线点单"
+   },
+   "l": {
+    "en": "Orders from phones, straight to your point-of-sale.",
+    "th": "ลูกค้าสั่งจากมือถือ เข้าระบบหน้าร้าน",
+    "my": "ဖုန်းမှ မှာယူမှု ဆိုင်စနစ်သို့ တိုက်ရိုက်။",
+    "zh": "手机下单，直接进收银系统。"
+   },
+   "kw": "online ordering pos clover cafe coffee qr menu order ahead สั่งออนไลน์ คาเฟ่ 点单 收银",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ordering"
+    }
+   ]
+  },
+  {
+   "id": "signs",
+   "cat": "shop",
+   "n": {
+    "en": "Signs and menus translated",
+    "th": "แปลป้ายและเมนู",
+    "my": "ဆိုင်းဘုတ်နှင့် မီနူး ဘာသာပြန်",
+    "zh": "招牌和菜单翻译"
+   },
+   "l": {
+    "en": "Into Thai, English or Burmese, for customers or staff.",
+    "th": "เป็นไทย อังกฤษ หรือพม่า สำหรับลูกค้าหรือพนักงาน",
+    "my": "ဖောက်သည် သို့မဟုတ် ဝန်ထမ်းအတွက် ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ။",
+    "zh": "译成泰、英、缅语，给顾客或员工看。"
+   },
+   "kw": "menu sign translation staff notice safety sign เมนู ป้าย แปลเมนู 菜单 招牌",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "signs",
+     "u": "sign",
+     "max": 50
+    }
+   ]
+  },
+  {
+   "id": "print",
+   "cat": "shop",
+   "n": {
+    "en": "Signs and QR stands to print",
+    "th": "ป้ายและป้ายคิวอาร์พร้อมพิมพ์",
+    "my": "ပုံနှိပ်ရန် ဆိုင်းဘုတ်နှင့် QR",
+    "zh": "可打印的招牌和二维码立牌"
+   },
+   "l": {
+    "en": "Table signs, QR stands, price boards, sheets.",
+    "th": "ป้ายตั้งโต๊ะ ป้ายคิวอาร์ ป้ายราคา ใบปลิว",
+    "my": "စားပွဲဆိုင်းဘုတ်၊ QR၊ စျေးနှုန်းဘုတ်၊ စာရွက်။",
+    "zh": "桌牌、二维码立牌、价目板、单页。"
+   },
+   "kw": "print sign qr stand price board flyer poster ป้าย ใบปลิว พิมพ์ โปสเตอร์ 打印 传单 海报",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "print",
+     "u": "piece",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "trade-photos",
+   "cat": "shop",
+   "n": {
+    "en": "Product photos",
+    "th": "ถ่ายรูปสินค้า",
+    "my": "ကုန်ပစ္စည်း ဓာတ်ပုံ",
+    "zh": "商品摄影"
+   },
+   "l": {
+    "en": "Three pictures an item, for Grab, Shopee or your site.",
+    "th": "สามรูปต่อชิ้น สำหรับ Grab Shopee หรือเว็บของคุณ",
+    "my": "တစ်ခုလျှင် ပုံသုံးပုံ၊ Grab၊ Shopee သို့မဟုတ် ဝက်ဘ်ဆိုက်အတွက်။",
+    "zh": "每件三张，用于 Grab、Shopee 或您的网站。"
+   },
+   "kw": "product photo photography shopee lazada etsy รับถ่ายรูปสินค้า ถ่ายรูป ထုတ်ကုန်ဓာတ်ပုံ 商品照 拍照",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "trade-photos",
+     "u": "item",
+     "max": 100
+    }
+   ]
+  },
+  {
+   "id": "paybox",
+   "cat": "shop",
+   "n": {
+    "en": "Take PromptPay payments",
+    "th": "รับเงินพร้อมเพย์",
+    "my": "PromptPay ငွေလက်ခံခြင်း",
+    "zh": "收 PromptPay 付款"
+   },
+   "l": {
+    "en": "A QR for the exact amount; slips checked by machine.",
+    "th": "คิวอาร์ยอดตรง ตรวจสลิปอัตโนมัติ",
+    "my": "ငွေပမာဏအတိအကျ QR၊ စလစ်ကို စက်ဖြင့်စစ်။",
+    "zh": "精确金额二维码，凭证自动核对。"
+   },
+   "kw": "promptpay qr payment slip check slip verification bank transfer thai qr ระบบตรวจสลิป พร้อมเพย์ รับเงิน 收款 二维码 转账",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "paybox"
+    }
+   ]
+  },
+  {
+   "id": "online-shop",
+   "cat": "shop",
+   "n": {
+    "en": "Online shop",
+    "th": "ร้านค้าออนไลน์",
+    "my": "အွန်လိုင်းဆိုင်",
+    "zh": "网店"
+   },
+   "l": {
+    "en": "Up to 30 products, PromptPay and card, on your domain.",
+    "th": "สินค้าไม่เกิน 30 รายการ พร้อมเพย์และบัตร บนโดเมนของคุณ",
+    "my": "ကုန်ပစ္စည်း 30 အထိ၊ PromptPay နှင့် ကတ်၊ သင့်ဒိုမိန်းပေါ်။",
+    "zh": "最多 30 件商品，PromptPay 和刷卡，用您的域名。"
+   },
+   "kw": "online shop ecommerce e-commerce store shopify woocommerce sell online ร้านค้าออนไลน์ ขายออนไลน์ 网店 电商",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "online-shop"
+    }
+   ]
+  },
+  {
+   "id": "etsy",
+   "cat": "shop",
+   "n": {
+    "en": "Etsy or eBay shop",
+    "th": "ร้าน Etsy หรือ eBay",
+    "my": "Etsy သို့မဟုတ် eBay ဆိုင်",
+    "zh": "Etsy 或 eBay 店铺"
+   },
+   "l": {
+    "en": "Opened and listed, and run for you if you like.",
+    "th": "เปิดร้าน ลงสินค้า และดูแลให้ได้",
+    "my": "ဖွင့်၊ ပစ္စည်းတင်၊ လိုလျှင် စီမံပေးသည်။",
+    "zh": "开店、上架，也可代运营。"
+   },
+   "kw": "etsy ebay amazon marketplace sell abroad handmade crafts ขายต่างประเทศ งานฝีมือ 跨境 电商 手工",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "etsy-open",
+     "n": {
+      "en": "Open the shop",
+      "th": "เปิดร้าน",
+      "my": "ဆိုင်ဖွင့်",
+      "zh": "开店"
+     }
+    },
+    {
+     "i": "etsy-run",
+     "n": {
+      "en": "Run it, monthly",
+      "th": "ดูแลรายเดือน",
+      "my": "လစဉ် စီမံ",
+      "zh": "按月代运营"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "ownpage",
+   "cat": "shop",
+   "n": {
+    "en": "Free shop page on Mot Dang",
+    "th": "หน้าร้านฟรีบนมดแดง",
+    "my": "Mot Dang တွင် အခမဲ့ဆိုင်စာမျက်နှာ",
+    "zh": "Mot Dang 免费店铺页"
+   },
+   "l": {
+    "en": "Hours, map, photos, menu; Gold adds bookings and offers.",
+    "th": "เวลาเปิด แผนที่ รูป เมนู Gold เพิ่มการจองและโปรโมชั่น",
+    "my": "ဖွင့်ချိန်၊ မြေပုံ၊ ပုံ၊ မီနူး; Gold တွင် ကြိုတင်မှာယူခြင်းနှင့် ပရိုမိုးရှင်း။",
+    "zh": "营业时间、地图、照片、菜单；Gold 版加预订和优惠。"
+   },
+   "kw": "free business page listing directory shop page gold google maps หน้าร้าน ฟรี ลงร้าน 免费 商家页",
+   "act": "open",
+   "href": "https://sites.motdang.net/make",
+   "pshow": {
+    "en": "Free · Gold ฿3,000 a year",
+    "th": "ฟรี · Gold ปีละ ฿3,000",
+    "my": "အခမဲ့ · Gold တစ်နှစ် ฿3,000",
+    "zh": "免费 · Gold 每年 ฿3,000"
+   },
+   "covers": [
+    "ownpage"
+   ]
+  },
+  {
+   "id": "fb-care",
+   "cat": "shop",
+   "n": {
+    "en": "Facebook page care",
+    "th": "ดูแลเพจ Facebook",
+    "my": "Facebook စာမျက်နှာ ထိန်းသိမ်းခြင်း",
+    "zh": "Facebook 主页代运营"
+   },
+   "l": {
+    "en": "12 posts a month, comments and inbox answered on weekdays.",
+    "th": "12 โพสต์ต่อเดือน ตอบคอมเมนต์และแชทวันทำการ",
+    "my": "တစ်လ ပို့စ် 12 ခု၊ ရုံးရက်တွင် comment နှင့် inbox ဖြေ။",
+    "zh": "每月 12 条帖子，工作日回复评论和私信。"
+   },
+   "kw": "facebook page management social media admin รับดูแลเพจ รายเดือน รับทำเพจ แอดมินเพจ 脸书 代运营",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "fb-care",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "ads-run",
+   "cat": "shop",
+   "n": {
+    "en": "Ads run for you",
+    "th": "ยิงแอดให้",
+    "my": "ကြော်ငြာ စီမံပေးခြင်း",
+    "zh": "代投广告"
+   },
+   "l": {
+    "en": "Facebook, TikTok or Google, in your ad account; spend at cost.",
+    "th": "Facebook TikTok หรือ Google ในบัญชีของคุณ ค่าโฆษณาตามจริง",
+    "my": "Facebook၊ TikTok သို့မဟုတ် Google — သင့်အကောင့်တွင်၊ ကြော်ငြာစရိတ် အမှန်အတိုင်း။",
+    "zh": "Facebook、TikTok 或 Google，用您的广告账户，广告费实报。"
+   },
+   "kw": "ads advertising facebook ads tiktok ads google ads ppc marketing รับยิงแอด ยิงแอด facebook tiktok google โฆษณา 广告 投放",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ads-run",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "stay-booking",
+   "cat": "stay",
+   "n": {
+    "en": "Booking website for your hotel",
+    "th": "เว็บรับจองสำหรับโรงแรม",
+    "my": "ဟိုတယ်အတွက် ဘွတ်ကင်ဝက်ဘ်ဆိုက်",
+    "zh": "酒店直订网站"
+   },
+   "l": {
+    "en": "Guests book on your site and pay you directly.",
+    "th": "แขกจองบนเว็บของคุณและจ่ายตรงกับคุณ",
+    "my": "ဧည့်သည်များ သင့်ဆိုက်တွင် ဘွတ်ကင်ပြီး သင့်ထံ တိုက်ရိုက်ပေးချေ။",
+    "zh": "客人在您的网站预订并直接付款给您。"
+   },
+   "kw": "booking engine hotel website direct booking resort guesthouse homestay airbnb booking.com agoda vacation rental villa โรงแรม รีสอร์ท ที่พัก ระบบจอง โฮมสเตย์ 酒店 民宿 预订 别墅",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "stay-booking",
+     "n": {
+      "en": "Build it",
+      "th": "สร้าง",
+      "my": "တည်ဆောက်",
+      "zh": "搭建"
+     }
+    },
+    {
+     "i": "stay-booking-run",
+     "n": {
+      "en": "Keep it up, monthly",
+      "th": "ดูแลรายเดือน",
+      "my": "လစဉ် ထိန်းသိမ်း",
+      "zh": "按月维护"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "hotelpage",
+   "cat": "stay",
+   "n": {
+    "en": "Hotel page on Mot Dang",
+    "th": "หน้าโรงแรมบนมดแดง",
+    "my": "Mot Dang တွင် ဟိုတယ်စာမျက်နှာ",
+    "zh": "Mot Dang 酒店页"
+   },
+   "l": {
+    "en": "Rooms and bookings, calendars shared with Airbnb, Booking.com, Agoda.",
+    "th": "ห้องและการจอง ปฏิทินเชื่อม Airbnb Booking.com Agoda",
+    "my": "အခန်းနှင့် ဘွတ်ကင်၊ Airbnb၊ Booking.com၊ Agoda ပြက္ခဒိန်ချိတ်။",
+    "zh": "房间和预订，日历与 Airbnb、Booking.com、Agoda 同步。"
+   },
+   "kw": "hotel page ical channel manager rooms calendar หน้าโรงแรม 酒店页 日历",
+   "act": "open",
+   "href": "https://sites.motdang.net/make",
+   "pshow": {
+    "en": "฿555 a month",
+    "th": "เดือนละ ฿555",
+    "my": "တစ်လ ฿555",
+    "zh": "每月 ฿555"
+   }
+  },
+  {
+   "id": "stay-rent",
+   "cat": "stay",
+   "n": {
+    "en": "A place to rent, found",
+    "th": "หาที่พักเช่าให้",
+    "my": "ငှားရန်နေရာ ရှာပေးခြင်း",
+    "zh": "代找租房"
+   },
+   "l": {
+    "en": "Shortlist, up to 5 viewings, lease read in English, deposit checked.",
+    "th": "คัดรายการ ดูได้ 5 ที่ อ่านสัญญา ตรวจเงินมัดจำ",
+    "my": "ရွေးချယ်စာရင်း၊ 5 နေရာအထိ ကြည့်ရှု၊ စာချုပ်ဖတ်၊ စပေါ်ငွေစစ်။",
+    "zh": "筛选、最多看 5 处、英文解读租约、核对押金。"
+   },
+   "kw": "rent apartment condo house rental find a place long stay lease relocation เช่า คอนโด บ้านเช่า อพาร์ทเมนท์ หาที่พัก 租房 公寓 找房",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "stay-rent"
+    }
+   ]
+  },
+  {
+   "id": "stay-check",
+   "cat": "stay",
+   "n": {
+    "en": "House or land checked before you buy",
+    "th": "ตรวจบ้านหรือที่ดินก่อนซื้อ",
+    "my": "မဝယ်မီ အိမ် သို့မဟုတ် မြေ စစ်ဆေးခြင်း",
+    "zh": "购房购地前核查"
+   },
+   "l": {
+    "en": "Land office record, price against value, a written report.",
+    "th": "ข้อมูลที่ดิน ราคาเทียบราคาประเมิน รายงาน",
+    "my": "မြေရုံးမှတ်တမ်း၊ စျေးနှုန်း နှိုင်းယှဉ်၊ အစီရင်ခံစာ။",
+    "zh": "土地局记录、价格对比评估价、书面报告。"
+   },
+   "kw": "property buy land title deed chanote condo due diligence real estate ซื้อบ้าน ที่ดิน โฉนด อสังหา 买房 土地 产权 房产",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "stay-check"
+    }
+   ]
+  },
+  {
+   "id": "listing",
+   "cat": "stay",
+   "n": {
+    "en": "List your home or business",
+    "th": "ลงประกาศบ้านหรือกิจการ",
+    "my": "အိမ် သို့မဟုတ် လုပ်ငန်း ကြော်ငြာတင်ခြင်း",
+    "zh": "发布房屋或生意转让"
+   },
+   "l": {
+    "en": "For rent, sale or takeover, on Mot Dang.",
+    "th": "ให้เช่า ขาย หรือเซ้ง บนมดแดง",
+    "my": "ငှား၊ ရောင်း သို့မဟုတ် လွှဲပြောင်း — Mot Dang တွင်။",
+    "zh": "出租、出售或转让，发布在 Mot Dang。"
+   },
+   "kw": "sell house rent out takeover business for sale listing เซ้ง ขายบ้าน ให้เช่า ประกาศ 转让 出租 出售",
+   "act": "open",
+   "href": "https://sites.motdang.net/make",
+   "pshow": {
+    "en": "Free to list",
+    "th": "ลงประกาศฟรี",
+    "my": "အခမဲ့ တင်နိုင်",
+    "zh": "免费发布"
+   }
+  },
+  {
+   "id": "trip-plan",
+   "cat": "events",
+   "n": {
+    "en": "Trip plan, booked for you",
+    "th": "วางแผนเที่ยวและจองให้",
+    "my": "ခရီးစဉ် စီစဉ်ပြီး ဘွတ်ကင်ပေးခြင်း",
+    "zh": "行程规划并代订"
+   },
+   "l": {
+    "en": "Day by day; drivers, rooms and tables booked in your name.",
+    "th": "แผนรายวัน จองรถ ที่พัก ร้านอาหารในชื่อคุณ",
+    "my": "နေ့စဉ်အစီအစဉ်၊ ကား၊ အခန်း၊ စားပွဲ သင့်အမည်ဖြင့် ဘွတ်ကင်။",
+    "zh": "按天安排，以您的名义预订司机、住宿和餐位。"
+   },
+   "kw": "trip itinerary tour travel plan driver chiang rai chiang mai golden triangle mae hong son loop honeymoon เที่ยว ทริป แผนเที่ยว 行程 旅游 包车 蜜月",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "trip-plan"
+    }
+   ]
+  },
+  {
+   "id": "event-page",
+   "cat": "events",
+   "n": {
+    "en": "Event page with tickets",
+    "th": "หน้างานพร้อมขายบัตร",
+    "my": "လက်မှတ်ပါ ပွဲစာမျက်နှာ",
+    "zh": "活动页和售票"
+   },
+   "l": {
+    "en": "Seats paid by PromptPay, a QR for the door.",
+    "th": "ที่นั่งจ่ายพร้อมเพย์ คิวอาร์หน้างาน",
+    "my": "PromptPay ဖြင့် ထိုင်ခုံပေးချေ၊ တံခါးအတွက် QR။",
+    "zh": "PromptPay 付座位费，入场二维码。"
+   },
+   "kw": "event tickets ticketing concert workshop registration festival lantern งาน บัตร ขายบัตร ลงทะเบียน 活动 门票 报名",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "event-page"
+    }
+   ]
+  },
+  {
+   "id": "tribute",
+   "cat": "events",
+   "n": {
+    "en": "Page for a wedding, ordination or memorial",
+    "th": "หน้าเว็บงานแต่ง บวช หรืองานรำลึก",
+    "my": "မင်္ဂလာ၊ ရှင်ပြု သို့မဟုတ် အမှတ်တရ စာမျက်နှာ",
+    "zh": "婚礼、出家或纪念网页"
+   },
+   "l": {
+    "en": "Photos, video, times and a map, to share on LINE.",
+    "th": "รูป วิดีโอ กำหนดการ แผนที่ แชร์ทางไลน์",
+    "my": "ပုံ၊ ဗီဒီယို၊ အချိန်နှင့် မြေပုံ၊ LINE တွင် မျှဝေရန်။",
+    "zh": "照片、视频、流程和地图，可在 LINE 分享。"
+   },
+   "kw": "wedding ordination memorial funeral graduation birthday keepsake framed print งานแต่ง งานบวช งานศพ รับปริญญา 婚礼 葬礼 纪念 毕业",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "tribute",
+     "n": {
+      "en": "The page",
+      "th": "หน้าเว็บ",
+      "my": "စာမျက်နှာ",
+      "zh": "网页"
+     }
+    },
+    {
+     "i": "keepsake",
+     "n": {
+      "en": "Keepsake page with an A3 framed print",
+      "th": "หน้าที่ระลึกพร้อมภาพ A3 ใส่กรอบ",
+      "my": "A3 ဘောင်ပါပုံနှိပ်နှင့် အမှတ်တရစာမျက်နှာ",
+      "zh": "纪念页加 A3 装框印刷"
+     }
+    }
+   ]
+  },
+  {
+   "id": "spirit-house",
+   "cat": "events",
+   "n": {
+    "en": "Spirit house set up",
+    "th": "ตั้งศาลพระภูมิ",
+    "my": "နတ်ကွန်း တည်ခြင်း",
+    "zh": "安置土地神龛"
+   },
+   "l": {
+    "en": "Chosen with you, placed and blessed; costs at cost.",
+    "th": "เลือกด้วยกัน ตั้งและทำพิธี ค่าใช้จ่ายตามจริง",
+    "my": "အတူရွေး၊ တည်ပြီး ပူဇော်၊ ကုန်ကျစရိတ် အမှန်အတိုင်း။",
+    "zh": "陪您挑选、安置并祈福，费用实报实销。"
+   },
+   "kw": "spirit house san phra phum blessing new home shop opening ceremony ศาลพระภูมิ ศาลเจ้าที่ ขึ้นบ้านใหม่ 神龛 土地公 入宅",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "spirit-house"
+    }
+   ]
+  },
+  {
+   "id": "giving",
+   "cat": "charity",
+   "n": {
+    "en": "Giving page for your charity",
+    "th": "หน้ารับบริจาค",
+    "my": "လှူဒါန်းစာမျက်နှာ",
+    "zh": "慈善捐款页"
+   },
+   "l": {
+    "en": "Donors pick their country and see the cheaper ways to give.",
+    "th": "ผู้บริจาคเลือกประเทศแล้วเห็นช่องทางที่ถูกกว่า",
+    "my": "လှူဒါန်းသူ နိုင်ငံရွေးပြီး ပိုသက်သာသော နည်းလမ်းကို မြင်ရ။",
+    "zh": "捐款人选择所在国家，看到更省钱的捐款方式。"
+   },
+   "kw": "donation donate giving charity foundation ngo nonprofit fundraising tax deductible rotary บริจาค มูลนิธิ การกุศล 捐款 慈善 基金会",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "giving-desk",
+     "n": {
+      "en": "Build it",
+      "th": "สร้าง",
+      "my": "တည်ဆောက်",
+      "zh": "搭建"
+     }
+    },
+    {
+     "i": "giving-run",
+     "n": {
+      "en": "Keep it up, monthly",
+      "th": "ดูแลรายเดือน",
+      "my": "လစဉ် ထိန်းသိမ်း",
+      "zh": "按月维护"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "grants",
+   "cat": "charity",
+   "n": {
+    "en": "Grants and major gifts",
+    "th": "ทุนและเงินบริจาคก้อนใหญ่",
+    "my": "ထောက်ပံ့ငွေနှင့် အလှူကြီးများ",
+    "zh": "基金申请与大额捐赠"
+   },
+   "l": {
+    "en": "Grant applications, a case for support, a funder calendar.",
+    "th": "ใบสมัครทุน เอกสารนำเสนอ ปฏิทินแหล่งทุน",
+    "my": "ထောက်ပံ့ငွေ လျှောက်လွှာ၊ အထောက်အပံ့ တောင်းခံစာ၊ ရန်ပုံငွေ ပြက္ခဒိန်။",
+    "zh": "基金申请、募捐说明书、资助方日历。"
+   },
+   "kw": "grant grant writing proposal funder foundation major gifts fundraising strategy ทุน ขอทุน 基金 申请 资助",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "grant",
+     "n": {
+      "en": "One grant application",
+      "th": "ใบสมัครทุนหนึ่งฉบับ",
+      "my": "လျှောက်လွှာ တစ်စောင်",
+      "zh": "一份基金申请"
+     }
+    },
+    {
+     "i": "gifts-ready",
+     "n": {
+      "en": "Ready for major gifts",
+      "th": "เตรียมพร้อมรับทุนก้อนใหญ่",
+      "my": "အလှူကြီးများအတွက် အသင့်ပြင်",
+      "zh": "大额捐赠准备"
+     }
+    }
+   ]
+  },
+  {
+   "id": "findable",
+   "cat": "charity",
+   "n": {
+    "en": "Collection findable online",
+    "th": "ทำให้คอลเลกชันค้นเจอ",
+    "my": "စုဆောင်းမှုကို အွန်လိုင်းတွင် ရှာတွေ့စေခြင်း",
+    "zh": "藏品可在网上被搜到"
+   },
+   "l": {
+    "en": "Photo descriptions, credits in the files, Wikidata.",
+    "th": "คำอธิบายรูป เครดิตในไฟล์ Wikidata",
+    "my": "ပုံဖော်ပြချက်၊ ဖိုင်ထဲတွင် အသိအမှတ်ပြုချက်၊ Wikidata။",
+    "zh": "照片说明、文件内署名、Wikidata。"
+   },
+   "kw": "museum archive collection catalogue alt text metadata wikidata gallery พิพิธภัณฑ์ คลังภาพ 博物馆 档案 藏品",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "findable",
+     "u": "items",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "map-archive",
+   "cat": "charity",
+   "n": {
+    "en": "Map of your projects or places",
+    "th": "แผนที่โครงการของคุณ",
+    "my": "သင့်စီမံကိန်းများ၏ မြေပုံ",
+    "zh": "项目或地点地图"
+   },
+   "l": {
+    "en": "One map; tap a place to open its page.",
+    "th": "แผนที่เดียว แตะแล้วเปิดหน้าของสถานที่",
+    "my": "မြေပုံတစ်ခု၊ နေရာကို နှိပ်လျှင် ၎င်း၏စာမျက်နှာ ပွင့်။",
+    "zh": "一张地图，点一个地点即打开它的页面。"
+   },
+   "kw": "map projects schools villages story map impact map แผนที่ โครงการ 地图 项目",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "map-archive"
+    }
+   ]
+  },
+  {
+   "id": "line-memory",
+   "cat": "charity",
+   "n": {
+    "en": "Memory desk for your LINE group",
+    "th": "ความจำสำหรับกลุ่มไลน์",
+    "my": "LINE အုပ်စုအတွက် မှတ်ဉာဏ်",
+    "zh": "LINE 群记忆助手"
+   },
+   "l": {
+    "en": "New members get what the group already said.",
+    "th": "สมาชิกใหม่ได้คำตอบจากที่กลุ่มเคยคุย",
+    "my": "အဖွဲ့ဝင်သစ်များ အုပ်စုပြောခဲ့သည်ကို ရရှိ။",
+    "zh": "新成员能看到群里说过的话。"
+   },
+   "kw": "line group volunteers community faq memory search chat club กลุ่มไลน์ อาสา ชมรม 群聊 志愿者",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "line-memory"
+    }
+   ]
+  },
+  {
+   "id": "checkin",
+   "cat": "charity",
+   "n": {
+    "en": "Volunteer sign-up and check-in",
+    "th": "ลงชื่อและเช็กอินอาสาสมัคร",
+    "my": "စေတနာ့ဝန်ထမ်း စာရင်းသွင်းခြင်း",
+    "zh": "志愿者报名签到"
+   },
+   "l": {
+    "en": "From their phones, with a public page.",
+    "th": "จากมือถือ พร้อมหน้าเว็บสาธารณะ",
+    "my": "ဖုန်းမှ၊ အများမြင်စာမျက်နှာနှင့်။",
+    "zh": "手机报名签到，附公开页面。"
+   },
+   "kw": "volunteer sign up check in food pantry roster อาสาสมัคร 志愿者 签到",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "checkin"
+    }
+   ]
+  },
+  {
+   "id": "event-kit",
+   "cat": "charity",
+   "n": {
+    "en": "Charity event kit",
+    "th": "ชุดจัดงานการกุศล",
+    "my": "ပရဟိတပွဲ အစုံ",
+    "zh": "慈善活动套件"
+   },
+   "l": {
+    "en": "Page, raffle QR codes, sponsor list, thank-yous.",
+    "th": "หน้าเว็บ คิวอาร์จับฉลาก ผู้สนับสนุน คำขอบคุณ",
+    "my": "စာမျက်နှာ၊ ကံစမ်းမဲ QR၊ စပွန်ဆာစာရင်း၊ ကျေးဇူးတင်လွှာ။",
+    "zh": "活动页、抽奖二维码、赞助名单、致谢。"
+   },
+   "kw": "raffle fundraiser charity event rotary sponsors gala จับฉลาก งานการกุศล 抽奖 募捐活动",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "event-kit"
+    }
+   ]
+  },
+  {
+   "id": "photo-proof",
+   "cat": "charity",
+   "n": {
+    "en": "Photo proof from the field",
+    "th": "หลักฐานรูปจากพื้นที่",
+    "my": "ကွင်းဆင်း ဓာတ်ပုံအထောက်အထား",
+    "zh": "现场照片核验"
+   },
+   "l": {
+    "en": "Field photos on LINE, stamped and checked by two people.",
+    "th": "รูปจากพื้นที่ทางไลน์ มีเวลาพิกัด ตรวจสองคน",
+    "my": "LINE မှ ကွင်းဆင်းပုံများ၊ အချိန်နေရာပါ၊ လူနှစ်ဦး စစ်။",
+    "zh": "LINE 上的现场照片，带时间地点，由两人核验。"
+   },
+   "kw": "monitoring field photos verification proof ngo project carbon biochar ตรวจสอบ รูปถ่าย 核验 监测",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "photo-proof"
+    }
+   ]
+  },
+  {
+   "id": "teamboard",
+   "cat": "charity",
+   "n": {
+    "en": "Team task board",
+    "th": "บอร์ดงานของทีม",
+    "my": "အဖွဲ့ လုပ်ငန်းဘုတ်",
+    "zh": "团队任务板"
+   },
+   "l": {
+    "en": "Roles, LINE pings and the top goal in the middle.",
+    "th": "บทบาท ข้อความทางไลน์ เป้าหมายหลักตรงกลาง",
+    "my": "တာဝန်များ၊ LINE သတိပေးချက်၊ အဓိကပန်းတိုင် အလယ်တွင်။",
+    "zh": "角色、LINE 提醒、核心目标居中。"
+   },
+   "kw": "task board project management team wheel trello asana todo บอร์ดงาน จัดการงาน 任务 项目管理",
+   "act": "ask",
+   "pshow": {
+    "en": "Free while we test it",
+    "th": "ฟรีระหว่างทดสอบ",
+    "my": "စမ်းသပ်နေစဉ် အခမဲ့",
+    "zh": "测试期间免费"
+   }
+  },
+  {
+   "id": "site",
+   "cat": "web",
+   "n": {
+    "en": "Website",
+    "th": "เว็บไซต์",
+    "my": "ဝက်ဘ်ဆိုက်",
+    "zh": "网站"
+   },
+   "l": {
+    "en": "Thai and English, on your own address.",
+    "th": "ไทยและอังกฤษ บนชื่อเว็บของคุณ",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ်၊ ကိုယ်ပိုင်လိပ်စာပေါ်။",
+    "zh": "泰英双语，用您自己的域名。"
+   },
+   "kw": "website web design web developer landing page one page wordpress wix web design chiang mai website developer thailand รับทำเว็บไซต์ ทำเว็บ เว็บไซต์ ออกแบบเว็บ ဝက်ဘ်ဆိုက် 网站 建站 网页设计",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-minisite",
+     "n": {
+      "en": "One page or a few",
+      "th": "หน้าเดียวหรือไม่กี่หน้า",
+      "my": "စာမျက်နှာ တစ်ခု သို့မဟုတ် အနည်းငယ်",
+      "zh": "一页或几页"
+     }
+    },
+    {
+     "i": "web-site",
+     "n": {
+      "en": "Full website",
+      "th": "เว็บไซต์เต็ม",
+      "my": "ဝက်ဘ်ဆိုက်အပြည့်",
+      "zh": "完整网站"
+     }
+    }
+   ],
+   "pop": 6
+  },
+  {
+   "id": "vibe",
+   "cat": "web",
+   "n": {
+    "en": "Finish my vibe code",
+    "th": "ทำโค้ดที่เขียนด้วย AI ให้เสร็จ",
+    "my": "AI ဖြင့်ရေးထားသော ကုဒ်ကို ပြီးအောင်",
+    "zh": "把 AI 写了一半的代码做完"
+   },
+   "l": {
+    "en": "Lovable, Bolt, Replit, Cursor: read, fixed, published.",
+    "th": "Lovable Bolt Replit Cursor อ่าน แก้ เผยแพร่",
+    "my": "Lovable၊ Bolt၊ Replit၊ Cursor — ဖတ်၊ ပြင်၊ ထုတ်ဝေ။",
+    "zh": "Lovable、Bolt、Replit、Cursor：审读、修复、上线。"
+   },
+   "kw": "vibe coding ai code lovable bolt replit cursor v0 bug fix my app not working fix ai generated code แอปเสีย แก้โค้ด 修复 代码 程序",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "vibe-check",
+     "n": {
+      "en": "Read-through: what is broken, in writing",
+      "th": "อ่านโค้ด: สรุปสิ่งที่เสีย",
+      "my": "ဖတ်ရှု: ပျက်နေသည်များကို စာဖြင့်",
+      "zh": "通读：书面列出问题"
+     }
+    },
+    {
+     "i": "vibe-finish",
+     "n": {
+      "en": "Finish: 15 hours of work",
+      "th": "ทำให้เสร็จ: งาน 15 ชั่วโมง",
+      "my": "ပြီးအောင်: အလုပ် 15 နာရီ",
+      "zh": "完成：15 小时工作"
+     }
+    },
+    {
+     "i": "vibe-hours",
+     "n": {
+      "en": "More hours",
+      "th": "ชั่วโมงเพิ่ม",
+      "my": "နာရီ ထပ်",
+      "zh": "追加工时"
+     },
+     "u": "hour",
+     "max": 40
+    }
+   ]
+  },
+  {
+   "id": "web-line",
+   "cat": "web",
+   "n": {
+    "en": "LINE shop or booking app",
+    "th": "แอปในไลน์ ร้านหรือจอง",
+    "my": "LINE ဆိုင် သို့မဟုတ် ဘွတ်ကင်အက်ပ်",
+    "zh": "LINE 商店或预订应用"
+   },
+   "l": {
+    "en": "Your LINE account set up, with an app inside LINE.",
+    "th": "ตั้งค่าไลน์ OA พร้อมแอปในไลน์",
+    "my": "သင့် LINE အကောင့် ပြင်ဆင်ပြီး LINE ထဲတွင် အက်ပ်။",
+    "zh": "设置 LINE 官方账号，并在 LINE 内做应用。"
+   },
+   "kw": "line oa line official account liff line app rich menu mini app member card รับทำ line oa ไลน์โอเอ ริชเมนู LINE 官方账号 会员卡",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-line"
+    }
+   ]
+  },
+  {
+   "id": "app",
+   "cat": "web",
+   "n": {
+    "en": "Phone app",
+    "th": "แอปมือถือ",
+    "my": "ဖုန်းအက်ပ်",
+    "zh": "手机应用"
+   },
+   "l": {
+    "en": "For Android or the browser; works with no signal.",
+    "th": "Android หรือเบราว์เซอร์ ใช้ได้แม้ไม่มีสัญญาณ",
+    "my": "Android သို့မဟုတ် browser; လိုင်းမရှိလည်း အလုပ်လုပ်။",
+    "zh": "安卓或浏览器应用，无网络也能用。"
+   },
+   "kw": "app mobile app android apk pwa offline application spreadsheet to app แอป แอปมือถือ ทำแอป 应用 安卓 app 开发",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-pwa",
+     "n": {
+      "en": "Web app that works offline",
+      "th": "เว็บแอปใช้ได้ออฟไลน์",
+      "my": "အော့ဖ်လိုင်း အလုပ်လုပ်သော ဝက်ဘ်အက်ပ်",
+      "zh": "离线可用的网页应用"
+     }
+    },
+    {
+     "i": "android",
+     "n": {
+      "en": "Android app, no store",
+      "th": "แอป Android ไม่ต้องผ่านสโตร์",
+      "my": "စတိုးမလိုသော Android အက်ပ်",
+      "zh": "安卓应用，无需商店"
+     }
+    },
+    {
+     "i": "sheet-app",
+     "n": {
+      "en": "Your spreadsheet as an app",
+      "th": "สเปรดชีตเป็นแอป",
+      "my": "စာရင်းဇယားကို အက်ပ်အဖြစ်",
+      "zh": "把表格做成应用"
+     }
+    }
+   ]
+  },
+  {
+   "id": "web-search",
+   "cat": "web",
+   "n": {
+    "en": "Search box for your site",
+    "th": "ช่องค้นหาสำหรับเว็บ",
+    "my": "ဝက်ဘ်ဆိုက်အတွက် ရှာဖွေရေးအကွက်",
+    "zh": "站内搜索框"
+   },
+   "l": {
+    "en": "Thai and English, over your pages.",
+    "th": "ไทยและอังกฤษ ค้นในเว็บของคุณ",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ်၊ သင့်စာမျက်နှာများတွင်။",
+    "zh": "泰英双语，搜索您的网页。"
+   },
+   "kw": "site search search box thai search ค้นหา 搜索",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-search"
+    }
+   ]
+  },
+  {
+   "id": "web-found",
+   "cat": "web",
+   "n": {
+    "en": "Google and AI set-up",
+    "th": "ตั้งค่า Google และ AI",
+    "my": "Google နှင့် AI ပြင်ဆင်ခြင်း",
+    "zh": "Google 和 AI 设置"
+   },
+   "l": {
+    "en": "Search Console, sitemap, titles and llms.txt, set up.",
+    "th": "ตั้งค่า Search Console แผนผังเว็บ ชื่อหน้า llms.txt",
+    "my": "Search Console၊ sitemap၊ ခေါင်းစဉ်နှင့် llms.txt ပြင်ဆင်။",
+    "zh": "设置 Search Console、站点地图、标题和 llms.txt。"
+   },
+   "kw": "seo search engine optimisation google search console chatgpt ai search google business รับทำ seo 搜索引擎优化",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-found"
+    }
+   ]
+  },
+  {
+   "id": "web-sharecard",
+   "cat": "web",
+   "n": {
+    "en": "Link preview picture",
+    "th": "ภาพตัวอย่างลิงก์",
+    "my": "လင့်ခ် ကြိုတင်ကြည့်ပုံ",
+    "zh": "链接预览图"
+   },
+   "l": {
+    "en": "What people see when your link is shared.",
+    "th": "สิ่งที่คนเห็นเมื่อแชร์ลิงก์ของคุณ",
+    "my": "သင့်လင့်ခ်ကို မျှဝေသည့်အခါ မြင်ရသည့်ပုံ။",
+    "zh": "您的链接被分享时显示的图片。"
+   },
+   "kw": "share card open graph og image link preview facebook line preview thumbnail แชร์ ภาพปก 预览 缩略图",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-sharecard",
+     "u": "page",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "web-mail",
+   "cat": "web",
+   "n": {
+    "en": "Email at your own name",
+    "th": "อีเมลชื่อของคุณเอง",
+    "my": "ကိုယ်ပိုင်အမည်ဖြင့် အီးမေးလ်",
+    "zh": "自有域名邮箱"
+   },
+   "l": {
+    "en": "you@yourshop.com into the inbox you use.",
+    "th": "you@ร้านคุณ.com เข้ากล่องที่ใช้อยู่",
+    "my": "you@yourshop.com ကို သင်သုံးနေသော inbox သို့။",
+    "zh": "you@yourshop.com 转到您常用的邮箱。"
+   },
+   "kw": "email domain custom email business email google workspace gmail อีเมล โดเมน อีเมลบริษัท 邮箱 域名 企业邮箱 google workspace microsoft 365 office 365 outlook business email setup google workspace thailand",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-mail",
+     "n": {
+      "en": "Forwarding to your inbox",
+      "th": "ส่งต่อเข้ากล่องที่ใช้อยู่",
+      "my": "သင့် inbox သို့ ပေးပို့",
+      "zh": "转发到现有邮箱"
+     }
+    },
+    {
+     "i": "web-workspace",
+     "n": {
+      "en": "Google Workspace or Microsoft 365, up to 5 mailboxes",
+      "th": "Google Workspace หรือ Microsoft 365 ไม่เกิน 5 กล่อง",
+      "my": "Google Workspace သို့မဟုတ် Microsoft 365၊ 5 စာတိုက်ပုံးအထိ",
+      "zh": "Google Workspace 或 Microsoft 365，最多 5 个邮箱"
+     }
+    }
+   ]
+  },
+  {
+   "id": "web-move",
+   "cat": "web",
+   "n": {
+    "en": "Move to new hosting",
+    "th": "ย้ายโฮสติ้ง",
+    "my": "hosting အသစ်သို့ ပြောင်းခြင်း",
+    "zh": "迁移主机"
+   },
+   "l": {
+    "en": "Site, domain and mail moved, from Wix, WordPress or others.",
+    "th": "ย้ายเว็บ โดเมน อีเมล จาก Wix WordPress หรืออื่น ๆ",
+    "my": "ဆိုက်၊ ဒိုမိန်းနှင့် မေးလ် ပြောင်း; Wix၊ WordPress စသည်။",
+    "zh": "迁移网站、域名和邮箱，Wix、WordPress 等。"
+   },
+   "kw": "hosting migration move site domain transfer replace wix wordpress host server ย้ายเว็บ โฮสติ้ง ย้ายโดเมน 迁移 主机 域名转移",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-move"
+    }
+   ]
+  },
+  {
+   "id": "accessible",
+   "cat": "web",
+   "n": {
+    "en": "Easier to read",
+    "th": "อ่านง่ายขึ้น",
+    "my": "ဖတ်ရလွယ်ကူစေခြင်း",
+    "zh": "更易阅读"
+   },
+   "l": {
+    "en": "Contrast, large print, read-aloud, screen readers: checked, with fixes listed.",
+    "th": "ตรวจความต่างสี ตัวใหญ่ อ่านออกเสียง โปรแกรมอ่านหน้าจอ พร้อมรายการแก้",
+    "my": "အရောင်ကွာခြားမှု၊ စာလုံးကြီး၊ အသံဖတ်၊ screen reader — စစ်ပြီး ပြင်ရန်စာရင်း။",
+    "zh": "检查对比度、大字、朗读和读屏，并列出修改项。"
+   },
+   "kw": "accessibility wcag ada low vision screen reader large print elderly blind การเข้าถึง ผู้สูงอายุ ผู้พิการ 无障碍 老年人",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "accessible"
+    }
+   ]
+  },
+  {
+   "id": "directory",
+   "cat": "web",
+   "n": {
+    "en": "Directory of your field",
+    "th": "สารบบของวงการคุณ",
+    "my": "သင့်နယ်ပယ်၏ လမ်းညွှန်",
+    "zh": "行业名录网站"
+   },
+   "l": {
+    "en": "Your trade or region, sourced, mapped, readable by AI.",
+    "th": "วงการหรือพื้นที่ของคุณ มีแหล่งที่มา แผนที่ AI อ่านได้",
+    "my": "သင့်လုပ်ငန်း သို့မဟုတ် ဒေသ — ရင်းမြစ်၊ မြေပုံ၊ AI ဖတ်နိုင်။",
+    "zh": "您的行业或地区，有来源、有地图、AI 可读。"
+   },
+   "kw": "directory listing site association guide database ai search chamber สารบบ ไดเรกทอรี สมาคม 名录 协会",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "directory",
+     "n": {
+      "en": "Build it",
+      "th": "สร้าง",
+      "my": "တည်ဆောက်",
+      "zh": "搭建"
+     }
+    },
+    {
+     "i": "directory-run",
+     "n": {
+      "en": "Keep it up, yearly",
+      "th": "ดูแลรายปี",
+      "my": "နှစ်စဉ် ထိန်းသိမ်း",
+      "zh": "按年维护"
+     }
+    }
+   ]
+  },
+  {
+   "id": "guide-site",
+   "cat": "web",
+   "n": {
+    "en": "Guide site for your town or hotel",
+    "th": "เว็บไกด์สำหรับเมืองหรือโรงแรม",
+    "my": "မြို့ သို့မဟုတ် ဟိုတယ်အတွက် လမ်းညွှန်ဆိုက်",
+    "zh": "城镇或酒店导览网站"
+   },
+   "l": {
+    "en": "Where to go, eat and walk, with a route map.",
+    "th": "ที่เที่ยว ที่กิน ทางเดิน พร้อมแผนที่",
+    "my": "သွားရန်၊ စားရန်၊ လမ်းလျှောက်ရန် နေရာများ၊ လမ်းကြောင်းမြေပုံ။",
+    "zh": "去哪玩、吃什么、怎么走，附路线图。"
+   },
+   "kw": "guide tourism tour self-guided hotel guide town walking tour เที่ยว ไกด์ 导览 旅游指南",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "guide-site"
+    }
+   ]
+  },
+  {
+   "id": "wp-api",
+   "cat": "web",
+   "n": {
+    "en": "Let partners and AI read your WordPress",
+    "th": "ให้ AI อ่าน WordPress ของคุณ",
+    "my": "WordPress ကို မိတ်ဖက်နှင့် AI ဖတ်နိုင်စေခြင်း",
+    "zh": "让合作方和 AI 读取您的 WordPress"
+   },
+   "l": {
+    "en": "A read-only API plugin for your listings.",
+    "th": "ปลั๊กอิน API อ่านอย่างเดียว",
+    "my": "စာရင်းများအတွက် ဖတ်ရုံသာ API plugin။",
+    "zh": "用于您内容的只读 API 插件。"
+   },
+   "kw": "wordpress api plugin rest feed partners ai integration ปลั๊กอิน 插件 接口",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "wp-api"
+    }
+   ]
+  },
+  {
+   "id": "web-license",
+   "cat": "web",
+   "n": {
+    "en": "Our site, for your city",
+    "th": "เว็บของเรา สำหรับเมืองของคุณ",
+    "my": "သင့်မြို့အတွက် ကျွန်ုပ်တို့၏ဆိုက်",
+    "zh": "为您的城市授权我们的网站"
+   },
+   "l": {
+    "en": "Chiang Mai Visa Desk and others, licensed and set up.",
+    "th": "เช่น โต๊ะวีซ่าเชียงใหม่ ให้สิทธิ์และตั้งค่าให้",
+    "my": "Chiang Mai Visa Desk စသည် — လိုင်စင်နှင့် ပြင်ဆင်ပေး။",
+    "zh": "如清迈签证服务台，授权并部署。"
+   },
+   "kw": "license licence franchise white label agency site copy visa agency ลิขสิทธิ์ แฟรนไชส์ 授权 加盟",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-license"
+    }
+   ]
+  },
+  {
+   "id": "github",
+   "cat": "web",
+   "n": {
+    "en": "GitHub profile",
+    "th": "โปรไฟล์ GitHub",
+    "my": "GitHub ပရိုဖိုင်",
+    "zh": "GitHub 主页"
+   },
+   "l": {
+    "en": "Written in 24 hours from your slot.",
+    "th": "เขียนให้ภายใน 24 ชั่วโมงหลังคิวเปิด",
+    "my": "သင့်အလှည့်မှ 24 နာရီအတွင်း ရေးပေးသည်။",
+    "zh": "排期后 24 小时内写好。"
+   },
+   "kw": "github profile readme repo developer portfolio โปรไฟล์ 主页 程序员",
+   "act": "book",
+   "href": "/github/",
+   "min": "github",
+   "covers": [
+    "gh-profile",
+    "gh-showcase",
+    "gh-whole"
+   ]
+  },
+  {
+   "id": "web-care",
+   "cat": "web",
+   "n": {
+    "en": "Website care",
+    "th": "ดูแลเว็บไซต์",
+    "my": "ဝက်ဘ်ဆိုက် ထိန်းသိမ်းခြင်း",
+    "zh": "网站维护"
+   },
+   "l": {
+    "en": "Updates, backups, a down alert and 2 hours of fixes a month.",
+    "th": "อัปเดต สำรองข้อมูล บอกเมื่อเว็บล่ม แก้ 2 ชั่วโมงต่อเดือน",
+    "my": "အပ်ဒိတ်၊ အရန်သိမ်း၊ ကျသည့်သတိပေး၊ တစ်လ ပြင်ဆင်ချိန် 2 နာရီ။",
+    "zh": "更新、备份、宕机提醒，每月 2 小时修改。"
+   },
+   "kw": "website maintenance wordpress maintenance updates backup support care plan ดูแลเว็บ อัปเดตเว็บ 网站维护 更新 备份",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-care",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "php",
+   "cat": "fix",
+   "n": {
+    "en": "Fix PHP or WordPress",
+    "th": "แก้ PHP หรือ WordPress",
+    "my": "PHP သို့မဟုတ် WordPress ပြင်ဆင်ခြင်း",
+    "zh": "修复 PHP 或 WordPress"
+   },
+   "l": {
+    "en": "PHP2Shell patched on your site or server.",
+    "th": "แพตช์ PHP2Shell บนเว็บหรือเซิร์ฟเวอร์",
+    "my": "သင့်ဆိုက် သို့မဟုတ် ဆာဗာတွင် PHP2Shell ပြင်ဆင်။",
+    "zh": "为您的网站或服务器修补 PHP2Shell。"
+   },
+   "kw": "php wordpress patch update upgrade php 8.3 php 8.4 php2shell cve hack hacked server vps plugin แก้ php อัปเดต เว็บโดนแฮก 修补 升级 漏洞 被黑",
+   "act": "book",
+   "href": "/php/",
+   "min": "php",
+   "pop": 5,
+   "covers": [
+    "php-hosted",
+    "php-server",
+    "php-upgrade",
+    "php-fleet"
+   ]
+  },
+  {
+   "id": "sec-mail",
+   "cat": "fix",
+   "n": {
+    "en": "Stop fake emails in your name",
+    "th": "กันอีเมลปลอมในชื่อคุณ",
+    "my": "သင့်အမည်ဖြင့် အတုအီးမေးလ် တားဆီးခြင်း",
+    "zh": "阻止冒用您名义的邮件"
+   },
+   "l": {
+    "en": "Your domain's SPF, DKIM and DMARC read, and the fixes.",
+    "th": "อ่าน SPF DKIM DMARC ของโดเมน พร้อมวิธีแก้",
+    "my": "သင့်ဒိုမိန်း၏ SPF၊ DKIM၊ DMARC ဖတ်ပြီး ပြင်ဆင်ရန်။",
+    "zh": "检查域名的 SPF、DKIM、DMARC 并给出修改。"
+   },
+   "kw": "spf dkim dmarc email spoofing phishing fake email deliverability spam อีเมลปลอม 钓鱼邮件 垃圾邮件",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "sec-mail"
+    }
+   ]
+  },
+  {
+   "id": "mirror",
+   "cat": "fix",
+   "n": {
+    "en": "Standby copy of your site",
+    "th": "สำเนาสำรองของเว็บ",
+    "my": "ဆိုက်၏ အရန်မိတ္တူ",
+    "zh": "网站备用副本"
+   },
+   "l": {
+    "en": "On a second host, to switch to if yours goes down.",
+    "th": "บนโฮสต์ที่สอง สลับใช้เมื่อเว็บล่ม",
+    "my": "ဒုတိယ host ပေါ်တွင်၊ ဆိုက်ကျလျှင် ပြောင်းသုံးရန်။",
+    "zh": "放在第二台主机上，主站宕机时切换。"
+   },
+   "kw": "backup mirror failover downtime uptime site down สำรอง เว็บล่ม 备份 宕机",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "mirror"
+    }
+   ]
+  },
+  {
+   "id": "app-test",
+   "cat": "fix",
+   "n": {
+    "en": "App tested on Thai phones",
+    "th": "ทดสอบแอปบนมือถือคนไทย",
+    "my": "ထိုင်းဖုန်းများပေါ်တွင် အက်ပ်စမ်းသပ်ခြင်း",
+    "zh": "在泰国手机上测试应用"
+   },
+   "l": {
+    "en": "Thai speakers use it and write up what breaks.",
+    "th": "คนไทยใช้งานแล้วรายงานจุดที่เสีย",
+    "my": "ထိုင်းစကားပြောသူများ သုံးပြီး ပျက်သည်များ ရေးပေး။",
+    "zh": "泰语用户实测并写出问题。"
+   },
+   "kw": "app testing qa localization localisation thai testing usability beta ทดสอบแอป 测试 本地化",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "app-test"
+    }
+   ]
+  },
+  {
+   "id": "redteam",
+   "cat": "fix",
+   "n": {
+    "en": "Chatbot attack test",
+    "th": "ทดสอบเจาะแชตบอท",
+    "my": "Chatbot တိုက်ခိုက်မှု စမ်းသပ်ခြင်း",
+    "zh": "聊天机器人攻击测试"
+   },
+   "l": {
+    "en": "We try to break it and write the fixes.",
+    "th": "เราลองเจาะแล้วเขียนวิธีแก้",
+    "my": "ဖောက်ကြည့်ပြီး ပြင်နည်း ရေးပေးသည်။",
+    "zh": "我们尝试攻破它并写出修复方法。"
+   },
+   "kw": "chatbot red team prompt injection llm security ai safety jailbreak pentest ทดสอบ แชตบอท 提示注入 安全 渗透测试",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "sec-redteam"
+    }
+   ]
+  },
+  {
+   "id": "redteam-free",
+   "cat": "fix",
+   "n": {
+    "en": "Test your chatbot yourself",
+    "th": "ทดสอบแชตบอทด้วยตัวเอง",
+    "my": "Chatbot ကို ကိုယ်တိုင် စမ်းသပ်",
+    "zh": "自行测试聊天机器人"
+   },
+   "l": {
+    "en": "Paste its instructions, pick probe packs, read the results.",
+    "th": "วางคำสั่ง เลือกชุดทดสอบ อ่านผล",
+    "my": "ညွှန်ကြားချက်ထည့်၊ စမ်းသပ်အစုရွေး၊ ရလဒ်ဖတ်။",
+    "zh": "粘贴指令，选测试包，看结果。"
+   },
+   "kw": "free red team test probe packs prompt",
+   "act": "open",
+   "href": "/redteam",
+   "covers": [
+    "redteam-self",
+    "packs"
+   ]
+  },
+  {
+   "id": "sec-hacked",
+   "cat": "fix",
+   "n": {
+    "en": "Hacked site cleanup",
+    "th": "กู้เว็บที่ถูกแฮก",
+    "my": "ဟက်ခံရသော ဆိုက် ရှင်းလင်းခြင်း",
+    "zh": "被黑网站清理"
+   },
+   "l": {
+    "en": "Malware removed, the way in closed, a written report.",
+    "th": "ลบมัลแวร์ ปิดทางเข้า พร้อมรายงาน",
+    "my": "မဲလ်ဝဲဖယ်ရှား၊ ဝင်ပေါက်ပိတ်၊ အစီရင်ခံစာ။",
+    "zh": "清除恶意代码、堵住入口、书面报告。"
+   },
+   "kw": "hacked website wordpress hacked fix malware removal virus redirect spam injected fix my website เว็บโดนแฮก มัลแวร์ 被黑 恶意软件 清除",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "sec-hacked",
+     "u": "site",
+     "max": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-own",
+   "cat": "ai",
+   "n": {
+    "en": "Your own AI website builder",
+    "th": "เครื่องสร้างเว็บด้วย AI ของคุณเอง",
+    "my": "ကိုယ်ပိုင် AI ဝက်ဘ်တည်ဆောက်စက်",
+    "zh": "您自己的 AI 建站工具"
+   },
+   "l": {
+    "en": "On your computer and your accounts, set up and taught.",
+    "th": "บนคอมพิวเตอร์และบัญชีของคุณ ติดตั้งและสอน",
+    "my": "သင့်ကွန်ပျူတာနှင့် အကောင့်ပေါ်တွင်၊ တပ်ဆင်ပြီး သင်ပေး။",
+    "zh": "装在您的电脑和账号上，安装并培训。"
+   },
+   "kw": "ai builder coding agent opencode self host open weights ai tool training workshop เครื่องมือ AI อบรม 自建 AI 培训",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ai-own",
+     "n": {
+      "en": "Thai company",
+      "th": "บริษัทไทย",
+      "my": "ထိုင်းကုမ္ပဏီ",
+      "zh": "泰国公司"
+     },
+     "price": {
+      "fixed": 25000
+     }
+    },
+    {
+     "i": "ai-own-usd",
+     "n": {
+      "en": "Everyone else",
+      "th": "ลูกค้าอื่น",
+      "my": "အခြားသူများ",
+      "zh": "其他客户"
+     },
+     "price": {
+      "usd": 25000
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai-assistant",
+   "cat": "ai",
+   "n": {
+    "en": "AI assistant under your name",
+    "th": "ผู้ช่วย AI ในชื่อของคุณ",
+    "my": "သင့်အမည်ဖြင့် AI လက်ထောက်",
+    "zh": "以您品牌命名的 AI 助手"
+   },
+   "l": {
+    "en": "Answers from your pages, with seats for your staff.",
+    "th": "ตอบจากหน้าเว็บของคุณ มีที่นั่งให้ทีม",
+    "my": "သင့်စာမျက်နှာများမှ ဖြေ၊ ဝန်ထမ်းများအတွက် နေရာ။",
+    "zh": "根据您的网页回答，员工可共用。"
+   },
+   "kw": "ai chatbot assistant white label custom gpt thai chatbot customer service bot แชทบอท AI ตอบแชท 聊天机器人 客服",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ai-whitelabel",
+     "n": {
+      "en": "Set-up",
+      "th": "ติดตั้ง",
+      "my": "တပ်ဆင်",
+      "zh": "安装"
+     }
+    },
+    {
+     "i": "ai-monthly",
+     "n": {
+      "en": "Monthly, no set-up",
+      "th": "รายเดือน ไม่มีค่าติดตั้ง",
+      "my": "လစဉ်၊ တပ်ဆင်ခမဲ့",
+      "zh": "按月，无安装费"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "ai-line",
+   "cat": "ai",
+   "n": {
+    "en": "One LINE for many shops",
+    "th": "ไลน์เดียวหลายร้าน",
+    "my": "ဆိုင်များစွာအတွက် LINE တစ်ခု",
+    "zh": "一个 LINE 服务多家店"
+   },
+   "l": {
+    "en": "One LINE account answering for several businesses.",
+    "th": "ไลน์ OA เดียวตอบแทนหลายธุรกิจ",
+    "my": "LINE အကောင့်တစ်ခုက လုပ်ငန်းများစွာအတွက် ဖြေ။",
+    "zh": "一个 LINE 账号替多家商户回复。"
+   },
+   "kw": "line chatbot multi branch franchise line bot หลายสาขา แฟรนไชส์ 多门店 连锁",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ai-line"
+    }
+   ]
+  },
+  {
+   "id": "bots",
+   "cat": "ai",
+   "n": {
+    "en": "Bots that find work or news",
+    "th": "บอทหางานหรือข่าว",
+    "my": "အလုပ် သို့မဟုတ် သတင်းရှာသော ဘော့",
+    "zh": "找活儿或找新闻的机器人"
+   },
+   "l": {
+    "en": "Scout, Bounty Desk and Earner, bought or run for you.",
+    "th": "สเกาต์ โต๊ะค่าหัว และบอทหาเงิน ซื้อหรือให้เราดูแล",
+    "my": "Scout၊ Bounty Desk နှင့် Earner — ဝယ် သို့မဟုတ် စီမံပေး။",
+    "zh": "Scout、Bounty Desk 和 Earner，可买断或代运营。"
+   },
+   "kw": "bot agent ai agent automation finds paid work scraper news monitor บอท ระบบอัตโนมัติ 机器人 自动化 智能体",
+   "act": "book",
+   "href": "/bots/",
+   "min": "bots",
+   "covers": [
+    "bot-scout",
+    "bot-desk",
+    "bot-earner",
+    "bot-share",
+    "bot-run"
+   ]
+  },
+  {
+   "id": "crew",
+   "cat": "ai",
+   "n": {
+    "en": "A crew day on a hard problem",
+    "th": "ทีมหนึ่งวันกับโจทย์ยาก",
+    "my": "ခက်ခဲသောပြဿနာအတွက် အဖွဲ့ တစ်ရက်",
+    "zh": "团队一天攻克难题"
+   },
+   "l": {
+    "en": "Our crew for a day on what you bring.",
+    "th": "ทีมเราหนึ่งวันเต็มกับโจทย์ของคุณ",
+    "my": "သင်ယူလာသော ပြဿနာအတွက် ကျွန်ုပ်တို့အဖွဲ့ တစ်ရက်။",
+    "zh": "我们的团队用一整天处理您的问题。"
+   },
+   "kw": "consulting hard problem impossible crew day expert team consultant prototype hackathon ที่ปรึกษา 顾问 难题",
+   "act": "book",
+   "href": "/bots/",
+   "live": "bots/crew",
+   "covers": [
+    "bot-crew"
+   ]
+  },
+  {
+   "id": "ai-batch",
+   "cat": "ai",
+   "n": {
+    "en": "Clean or sort a big file with AI",
+    "th": "ทำความสะอาดหรือจัดไฟล์ใหญ่ด้วย AI",
+    "my": "AI ဖြင့် ဖိုင်ကြီး သန့်ရှင်း/စီစဉ်ခြင်း",
+    "zh": "用 AI 清理或整理大文件"
+   },
+   "l": {
+    "en": "Thousands of rows cleaned, sorted or summarised.",
+    "th": "หลายพันแถว ทำความสะอาด จัดเรียง หรือสรุป",
+    "my": "တန်းထောင်ချီ သန့်စင်၊ စီ၊ အကျဉ်းချုပ်။",
+    "zh": "成千上万行数据清理、排序或汇总。"
+   },
+   "kw": "data cleaning excel spreadsheet csv bulk ai summarise dedupe จัดข้อมูล 数据清洗 表格",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ai-batch"
+    }
+   ]
+  },
+  {
+   "id": "crawl-pay",
+   "cat": "ai",
+   "n": {
+    "en": "Charge AI crawlers",
+    "th": "เก็บเงินบอท AI",
+    "my": "AI crawler များထံ ငွေတောင်းခြင်း",
+    "zh": "向 AI 爬虫收费"
+   },
+   "l": {
+    "en": "See which bots read your site; Cloudflare pay-per-crawl set up.",
+    "th": "ดูว่าบอทไหนอ่านเว็บ ตั้งค่า pay-per-crawl",
+    "my": "မည်သည့်ဘော့များ ဖတ်သည်ကို ကြည့်၊ Cloudflare pay-per-crawl ပြင်ဆင်။",
+    "zh": "查看哪些机器人在读您的网站，设置 Cloudflare 按次收费。"
+   },
+   "kw": "ai crawlers bots gptbot claudebot pay per crawl cloudflare scraping block publisher บอท 爬虫 内容收费",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "crawl-pay"
+    }
+   ]
+  },
+  {
+   "id": "demand-prices",
+   "cat": "ai",
+   "n": {
+    "en": "Prices that follow demand",
+    "th": "ราคาที่ขยับตามความต้องการ",
+    "my": "ဝယ်လိုအားအလိုက် ပြောင်းသော စျေးနှုန်း",
+    "zh": "随需求浮动的定价"
+   },
+   "l": {
+    "en": "Rooms, menu or tickets: busy goes up a step, quiet down.",
+    "th": "ห้อง เมนู บัตร ขายดีขึ้นหนึ่งขั้น เงียบลงหนึ่งขั้น",
+    "my": "အခန်း၊ မီနူး၊ လက်မှတ် — လူများလျှင် တစ်ဆင့်တက်၊ နည်းလျှင် ဆင်း။",
+    "zh": "客房、菜单或门票：卖得好涨一档，冷清降一档。"
+   },
+   "kw": "dynamic pricing demand pricing shoup revenue management yield surge ราคา ปรับราคา 动态定价 定价 收益管理",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "demand-prices"
+    }
+   ]
+  },
+  {
+   "id": "ai-automation",
+   "cat": "ai",
+   "n": {
+    "en": "Automation",
+    "th": "ระบบอัตโนมัติ",
+    "my": "အလိုအလျောက်စနစ်",
+    "zh": "自动化流程"
+   },
+   "l": {
+    "en": "A job that runs itself in n8n, Make, Zapier or code.",
+    "th": "งานที่ทำเองอัตโนมัติด้วย n8n Make Zapier หรือโค้ด",
+    "my": "n8n၊ Make၊ Zapier သို့မဟုတ် ကုဒ်ဖြင့် ကိုယ်တိုင်လည်ပတ်သော အလုပ်။",
+    "zh": "用 n8n、Make、Zapier 或代码自动运行的流程。"
+   },
+   "kw": "automation workflow n8n make zapier integration google sheets line notify รับทำระบบ automation ระบบอัตโนมัติ 自动化 工作流",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "ai-automation",
+     "u": "workflow",
+     "max": 10
+    }
+   ]
+  },
+  {
+   "id": "leads",
+   "cat": "data",
+   "n": {
+    "en": "Customer list",
+    "th": "รายชื่อลูกค้าเป้าหมาย",
+    "my": "ဖောက်သည်စာရင်း",
+    "zh": "客户名单"
+   },
+   "l": {
+    "en": "Businesses that fit, with phone, email and source.",
+    "th": "ธุรกิจที่ตรงเป้า มีเบอร์ อีเมล แหล่งที่มา",
+    "my": "ကိုက်ညီသော လုပ်ငန်းများ၊ ဖုန်း၊ အီးမေးလ်၊ ရင်းမြစ်နှင့်။",
+    "zh": "符合条件的商家，附电话、邮箱和来源。"
+   },
+   "kw": "lead generation leads b2b list contacts database prospect call list telemarketing speakers exhibitors msp รายชื่อ ลูกค้า 潜在客户 名单 线索",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "data-leads",
+     "n": {
+      "en": "Business list",
+      "th": "รายชื่อธุรกิจ",
+      "my": "လုပ်ငန်းစာရင်း",
+      "zh": "商家名单"
+     },
+     "u": "rows",
+     "max": 50
+    },
+    {
+     "i": "event-lists",
+     "n": {
+      "en": "Event speakers or exhibitors",
+      "th": "วิทยากรหรือผู้ออกบูธ",
+      "my": "ဟောပြောသူ သို့မဟုတ် ပြပွဲဝင်",
+      "zh": "活动演讲人或参展商"
+     },
+     "u": "track",
+     "max": 20
+    },
+    {
+     "i": "sec-msp",
+     "n": {
+      "en": "IT companies abroad, with decision-makers",
+      "th": "บริษัทไอทีต่างประเทศ พร้อมผู้ตัดสินใจ",
+      "my": "နိုင်ငံခြား IT ကုမ္ပဏီများ၊ ဆုံးဖြတ်သူနှင့်",
+      "zh": "海外 IT 公司及决策人"
+     },
+     "u": "line",
+     "max": 2000,
+     "price": {
+      "usd": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "data-crawl",
+   "cat": "data",
+   "n": {
+    "en": "Data collector",
+    "th": "โปรแกรมเก็บข้อมูล",
+    "my": "ဒေတာ စုဆောင်းစနစ်",
+    "zh": "数据采集程序"
+   },
+   "l": {
+    "en": "Reads websites or files on a schedule, into a table.",
+    "th": "อ่านเว็บหรือไฟล์ตามรอบ ลงตาราง",
+    "my": "ဝက်ဘ်ဆိုက် သို့မဟုတ် ဖိုင်များကို အချိန်ဇယားအတိုင်း ဖတ်ပြီး ဇယားထဲထည့်။",
+    "zh": "定时读取网站或文件，整理成表格。"
+   },
+   "kw": "web scraping scraper crawler data pipeline automation api extract ดึงข้อมูล 爬虫 数据采集",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "data-crawl"
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "cat": "data",
+   "n": {
+    "en": "A question researched",
+    "th": "ค้นคว้าคำถามให้",
+    "my": "မေးခွန်း သုတေသနပြုခြင်း",
+    "zh": "问题调研"
+   },
+   "l": {
+    "en": "Answered in writing, with sources.",
+    "th": "ตอบเป็นลายลักษณ์อักษร มีแหล่งที่มา",
+    "my": "ရင်းမြစ်နှင့်အတူ စာဖြင့်ဖြေ။",
+    "zh": "书面回答，附来源。"
+   },
+   "kw": "research market research desk research report fact check due diligence ค้นคว้า วิจัยตลาด 调研 市场调查",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "data-research",
+     "u": "question",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "price-watch",
+   "cat": "data",
+   "n": {
+    "en": "Price watch",
+    "th": "ติดตามราคา",
+    "my": "စျေးနှုန်း စောင့်ကြည့်",
+    "zh": "价格监控"
+   },
+   "l": {
+    "en": "Competitor prices and stock, daily, into a sheet.",
+    "th": "ราคาคู่แข่งและสต็อก ทุกวัน ลงตาราง",
+    "my": "ပြိုင်ဘက်စျေးနှင့် စတော့ နေ့စဉ် ဇယားထဲ။",
+    "zh": "每天抓取竞品价格和库存到表格。"
+   },
+   "kw": "price monitoring competitor price tracking stock inventory ติดตามราคา เช็คราคา 价格监控 比价",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "data-prices",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "traffic",
+   "cat": "data",
+   "n": {
+    "en": "Visitor count: people and bots",
+    "th": "นับผู้เข้าชม คนและบอท",
+    "my": "လာရောက်သူ ရေတွက်ခြင်း: လူနှင့် ဘော့",
+    "zh": "访客统计：真人与机器人"
+   },
+   "l": {
+    "en": "Your site's visits each week, split.",
+    "th": "ยอดเข้าชมรายสัปดาห์ แยกคนกับบอท",
+    "my": "အပတ်စဉ် လာရောက်မှု၊ ခွဲခြား။",
+    "zh": "每周访问量，分开统计。"
+   },
+   "kw": "analytics traffic visitors google analytics bots stats สถิติ ผู้เข้าชม 流量 统计",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "data-traffic",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "street-survey",
+   "cat": "data",
+   "n": {
+    "en": "Street photo survey",
+    "th": "สำรวจถนนด้วยภาพ",
+    "my": "လမ်း ဓာတ်ပုံ စစ်တမ်း",
+    "zh": "街道照片普查"
+   },
+   "l": {
+    "en": "Shop signs on a street or market, photographed and mapped.",
+    "th": "ป้ายร้านในถนนหรือตลาด ถ่ายและลงแผนที่",
+    "my": "လမ်း သို့မဟုတ် ဈေးရှိ ဆိုင်းဘုတ်များ ဓာတ်ပုံရိုက်ပြီး မြေပုံထဲ။",
+    "zh": "拍下街道或市场的店招并标到地图上。"
+   },
+   "kw": "street survey field survey retail mapping signs photos market census สำรวจ ถนน ตลาด 普查 实地",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "street-survey"
+    }
+   ]
+  },
+  {
+   "id": "places-data",
+   "cat": "data",
+   "n": {
+    "en": "Thai places data",
+    "th": "ข้อมูลสถานที่ในไทย",
+    "my": "ထိုင်းနေရာ ဒေတာ",
+    "zh": "泰国地点数据"
+   },
+   "l": {
+    "en": "89,000 places in Chiang Mai and Chiang Rai, weekly changes.",
+    "th": "89,000 สถานที่ในเชียงใหม่และเชียงราย อัปเดตรายสัปดาห์",
+    "my": "ချင်းမိုင်နှင့် ချင်းရိုင်ရှိ နေရာ 89,000၊ အပတ်စဉ် ပြောင်းလဲမှု။",
+    "zh": "清迈和清莱 89,000 个地点，每周更新。"
+   },
+   "kw": "places data poi dataset api map data business listings thailand ข้อมูล ข้อมูลสถานที่ 地点数据 数据集",
+   "act": "ask",
+   "pshow": {
+    "en": "Four-week free trial",
+    "th": "ทดลองฟรีสี่สัปดาห์",
+    "my": "လေးပတ် အခမဲ့ စမ်းသုံး",
+    "zh": "免费试用四周"
+   }
+  },
+  {
+   "id": "graphics",
+   "cat": "design",
+   "n": {
+    "en": "Logo and brand look",
+    "th": "โลโก้และภาพลักษณ์แบรนด์",
+    "my": "လိုဂိုနှင့် အမှတ်တံဆိပ်",
+    "zh": "标志和品牌形象"
+   },
+   "l": {
+    "en": "A logo, colours and pictures for posts and signs.",
+    "th": "โลโก้ สี และภาพสำหรับโพสต์และป้าย",
+    "my": "လိုဂို၊ အရောင်နှင့် ပို့စ်၊ ဆိုင်းဘုတ်အတွက် ပုံများ။",
+    "zh": "标志、配色和用于帖子招牌的图片。"
+   },
+   "kw": "logo branding graphic design brand identity รับทำกราฟิก โลโก้ ออกแบบ 标志 设计 品牌",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "media-graphics"
+    }
+   ]
+  },
+  {
+   "id": "video",
+   "cat": "design",
+   "n": {
+    "en": "Short video",
+    "th": "คลิปสั้น",
+    "my": "ဗီဒီယိုတို",
+    "zh": "短视频"
+   },
+   "l": {
+    "en": "Vertical, for TikTok, Reels or Shorts.",
+    "th": "แนวตั้ง สำหรับ TikTok Reels Shorts",
+    "my": "TikTok၊ Reels သို့မဟုတ် Shorts အတွက် ဒေါင်လိုက်။",
+    "zh": "竖屏，用于 TikTok、Reels 或 Shorts。"
+   },
+   "kw": "video tiktok reels shorts editing รับตัดต่อวิดีโอ คลิป 视频 剪辑 抖音",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "media-reels",
+     "u": "video",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "drawn",
+   "cat": "design",
+   "n": {
+    "en": "Drawn map or picture",
+    "th": "แผนที่หรือภาพวาด",
+    "my": "ရေးဆွဲထားသော မြေပုံ သို့မဟုတ် ပုံ",
+    "zh": "手绘地图或插画"
+   },
+   "l": {
+    "en": "Zoomable maps, diagrams and cartoons, drawn in code.",
+    "th": "แผนที่ซูมได้ แผนภาพ การ์ตูน วาดด้วยโค้ด",
+    "my": "ချဲ့ကြည့်နိုင်သော မြေပုံ၊ ပုံကြမ်း၊ ကာတွန်း။",
+    "zh": "可缩放的地图、图解和漫画。"
+   },
+   "kw": "map illustration drawing cartoon diagram infographic hand drawn resort map แผนที่ ภาพวาด การ์ตูน อินโฟกราฟิก 地图 插画 漫画",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "media-doodles",
+     "n": {
+      "en": "A picture or diagram",
+      "th": "ภาพหรือแผนภาพ",
+      "my": "ပုံ သို့မဟုတ် ပုံကြမ်း",
+      "zh": "插画或图解"
+     }
+    },
+    {
+     "i": "venue-map",
+     "n": {
+      "en": "A map of your venue or town",
+      "th": "แผนที่สถานที่หรือเมือง",
+      "my": "နေရာ သို့မဟုတ် မြို့ မြေပုံ",
+      "zh": "场所或城镇地图"
+     }
+    }
+   ]
+  },
+  {
+   "id": "interactive",
+   "cat": "design",
+   "n": {
+    "en": "Interactive page or game",
+    "th": "หน้าเว็บโต้ตอบหรือเกม",
+    "my": "အပြန်အလှန် စာမျက်နှာ သို့မဟုတ် ဂိမ်း",
+    "zh": "互动网页或游戏"
+   },
+   "l": {
+    "en": "Animations, explainers people play with, branded games.",
+    "th": "แอนิเมชัน สื่ออธิบายที่เล่นได้ เกมของแบรนด์",
+    "my": "အန်နီမေးရှင်း၊ ကစားနိုင်သော ရှင်းပြချက်၊ ဂိမ်း။",
+    "zh": "动画、可互动的讲解页、品牌游戏。"
+   },
+   "kw": "animation interactive explainer data story game gamification education แอนิเมชัน เกม สื่อการสอน 动画 互动 游戏 教育",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "media-animation",
+     "n": {
+      "en": "A moving picture for your site",
+      "th": "ภาพเคลื่อนไหวสำหรับเว็บ",
+      "my": "ဝက်ဘ်ဆိုက်အတွက် လှုပ်ရှားပုံ",
+      "zh": "网站动画"
+     }
+    },
+    {
+     "i": "explainer",
+     "n": {
+      "en": "An explainer people play with",
+      "th": "สื่ออธิบายแบบโต้ตอบ",
+      "my": "ကစားနိုင်သော ရှင်းပြချက်",
+      "zh": "互动讲解页"
+     }
+    },
+    {
+     "i": "game",
+     "n": {
+      "en": "A game for your brand or event",
+      "th": "เกมสำหรับแบรนด์หรืองาน",
+      "my": "အမှတ်တံဆိပ် သို့မဟုတ် ပွဲအတွက် ဂိမ်း",
+      "zh": "品牌或活动游戏"
+     }
+    }
+   ]
+  },
+  {
+   "id": "decks",
+   "cat": "design",
+   "n": {
+    "en": "Pitch slides",
+    "th": "สไลด์นำเสนอ",
+    "my": "တင်ပြချက် ဆလိုက်",
+    "zh": "路演幻灯片"
+   },
+   "l": {
+    "en": "For investors, buyers or a grant panel.",
+    "th": "สำหรับนักลงทุน ผู้ซื้อ หรือคณะกรรมการทุน",
+    "my": "ရင်းနှီးမြှုပ်နှံသူ၊ ဝယ်သူ သို့မဟုတ် ထောက်ပံ့ငွေကော်မတီအတွက်။",
+    "zh": "给投资人、买家或评审委员会。"
+   },
+   "kw": "pitch deck presentation slides powerpoint keynote investor สไลด์ พรีเซนต์ 幻灯片 路演 PPT",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "media-decks"
+    }
+   ]
+  },
+  {
+   "id": "patterns",
+   "cat": "design",
+   "n": {
+    "en": "Lanna pattern files",
+    "th": "ไฟล์ลายล้านนา",
+    "my": "လန်နာ ပုံစံဖိုင်",
+    "zh": "兰纳纹样文件"
+   },
+   "l": {
+    "en": "Borders and patterns for print, laser, signs or tattoo.",
+    "th": "ลายขอบและลวดลาย สำหรับพิมพ์ เลเซอร์ ป้าย สัก",
+    "my": "ပုံနှိပ်၊ လေဆာ၊ ဆိုင်းဘုတ်၊ တက်တူးအတွက် ပုံစံ။",
+    "zh": "用于印刷、激光、招牌或纹身的边框纹样。"
+   },
+   "kw": "lanna pattern kranok thai ornament tattoo laser vector svg ลายไทย ลายล้านนา กนก 泰式纹样",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "patterns"
+    }
+   ]
+  },
+  {
+   "id": "article",
+   "cat": "design",
+   "n": {
+    "en": "Article",
+    "th": "บทความ",
+    "my": "ဆောင်းပါး",
+    "zh": "文章"
+   },
+   "l": {
+    "en": "An article or explainer page, with its sources.",
+    "th": "บทความหรือหน้าอธิบาย พร้อมแหล่งที่มา",
+    "my": "ရင်းမြစ်ပါ ဆောင်းပါး သို့မဟုတ် ရှင်းပြစာမျက်နှာ။",
+    "zh": "文章或讲解页，附来源。"
+   },
+   "kw": "article blog content writing copywriting บทความ เขียนบทความ รับทำคอนเทนต์ 文章 软文",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "words-articles"
+    }
+   ]
+  },
+  {
+   "id": "copy",
+   "cat": "design",
+   "n": {
+    "en": "Words for your website",
+    "th": "เนื้อหาเว็บไซต์",
+    "my": "ဝက်ဘ်ဆိုက်အတွက် စာသား",
+    "zh": "网站文案"
+   },
+   "l": {
+    "en": "Up to five pages, in Thai and English.",
+    "th": "ไม่เกินห้าหน้า ไทยและอังกฤษ",
+    "my": "စာမျက်နှာ ငါးမျက်နှာအထိ၊ ထိုင်းနှင့် အင်္ဂလိပ်။",
+    "zh": "最多五页，泰英双语。"
+   },
+   "kw": "copywriting website copy content รับเขียนคอนเทนต์ เขียนเว็บ 文案",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "words-copy"
+    }
+   ]
+  },
+  {
+   "id": "newsletter",
+   "cat": "design",
+   "n": {
+    "en": "Newsletter",
+    "th": "จดหมายข่าว",
+    "my": "သတင်းလွှာ",
+    "zh": "电子报"
+   },
+   "l": {
+    "en": "Written and laid out, ready to send.",
+    "th": "เขียนและจัดหน้า พร้อมส่ง",
+    "my": "ရေးပြီး ပုံစံချ၊ ပို့ရန်အသင့်။",
+    "zh": "撰写排版，可直接发送。"
+   },
+   "kw": "newsletter email marketing mailchimp จดหมายข่าว 邮件营销",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "words-newsletter",
+     "u": "issue",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "social",
+   "cat": "design",
+   "n": {
+    "en": "Social media posts",
+    "th": "โพสต์โซเชียล",
+    "my": "ဆိုရှယ်မီဒီယာ ပို့စ်",
+    "zh": "社交媒体帖子"
+   },
+   "l": {
+    "en": "Facebook, Instagram, TikTok or LINE, with a picture.",
+    "th": "Facebook Instagram TikTok LINE พร้อมภาพ",
+    "my": "Facebook၊ Instagram၊ TikTok သို့မဟုတ် LINE၊ ပုံနှင့်။",
+    "zh": "Facebook、Instagram、TikTok 或 LINE，配图。"
+   },
+   "kw": "social media management facebook page instagram content admin รับทำเพจ แอดมินเพจ โพสต์ 社媒 代运营",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "words-social",
+     "u": "post",
+     "max": 60
+    }
+   ]
+  },
+  {
+   "id": "proposal",
+   "cat": "design",
+   "n": {
+    "en": "Proposal or business plan",
+    "th": "ข้อเสนอหรือแผนธุรกิจ",
+    "my": "အဆိုပြုချက် သို့မဟုတ် စီးပွားရေးအစီအစဉ်",
+    "zh": "提案或商业计划书"
+   },
+   "l": {
+    "en": "For a buyer, a partner, a bank or a visa.",
+    "th": "สำหรับผู้ซื้อ พันธมิตร ธนาคาร หรือวีซ่า",
+    "my": "ဝယ်သူ၊ မိတ်ဖက်၊ ဘဏ် သို့မဟုတ် ဗီဇာအတွက်။",
+    "zh": "给买家、合作方、银行或签证用。"
+   },
+   "kw": "proposal business plan bank loan investor visa business plan tender แผนธุรกิจ ข้อเสนอ 商业计划 提案 招标",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "words-proposals",
+     "n": {
+      "en": "Proposal",
+      "th": "ข้อเสนองาน",
+      "my": "အဆိုပြုချက်",
+      "zh": "提案"
+     }
+    },
+    {
+     "i": "words-plan",
+     "n": {
+      "en": "Business plan",
+      "th": "แผนธุรกิจ",
+      "my": "စီးပွားရေး အစီအစဉ်",
+      "zh": "商业计划书"
+     }
+    }
+   ]
+  },
+  {
+   "id": "awards",
+   "cat": "design",
+   "n": {
+    "en": "Award entry",
+    "th": "เอกสารส่งประกวดรางวัล",
+    "my": "ဆုပြိုင်ပွဲ ဝင်ရောက်စာ",
+    "zh": "奖项申报材料"
+   },
+   "l": {
+    "en": "For a cyber-security award, from your work.",
+    "th": "สำหรับรางวัลความปลอดภัยไซเบอร์ จากผลงานของคุณ",
+    "my": "ဆိုက်ဘာလုံခြုံရေးဆုအတွက်၊ သင့်လက်ရာမှ။",
+    "zh": "网络安全奖项申报，基于您的业绩。"
+   },
+   "kw": "award entry nomination cyber security awards submission ประกวด รางวัล 奖项 申报",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "sec-awards"
+    }
+   ]
+  },
+  {
+   "id": "move",
+   "cat": "moving",
+   "n": {
+    "en": "Moving house abroad",
+    "th": "ย้ายบ้านไปต่างประเทศ",
+    "my": "နိုင်ငံခြားသို့ အိမ်ပြောင်း",
+    "zh": "跨国搬家"
+   },
+   "l": {
+    "en": "Movers and freight found, papers done, followed to the door.",
+    "th": "หาบริษัทขนย้าย ทำเอกสาร ติดตามจนถึงปลายทาง",
+    "my": "ပြောင်းရွှေ့ရေးနှင့် ကုန်တင် ရှာ၊ စာရွက်စာတမ်း၊ အိမ်တံခါးအထိ။",
+    "zh": "找搬家和货代公司、办单证，跟踪到门。"
+   },
+   "kw": "international movers moving abroad relocation shipping household goods to thailand personal effects container freight forwarder customs broker for personal effects ย้ายบ้าน ขนย้าย ต่างประเทศ 搬家 国际搬家 货代 托运",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "move-house",
+     "n": {
+      "en": "Whole house, 20-foot container",
+      "th": "ทั้งบ้าน ตู้ 20 ฟุต",
+      "my": "အိမ်တစ်လုံးလုံး၊ 20 ပေ ကွန်တိန်နာ",
+      "zh": "整屋，20 英尺集装箱"
+     }
+    },
+    {
+     "i": "move-room",
+     "n": {
+      "en": "One room",
+      "th": "หนึ่งห้อง",
+      "my": "အခန်းတစ်ခန်း",
+      "zh": "一个房间"
+     }
+    },
+    {
+     "i": "move-boxes",
+     "n": {
+      "en": "Up to 10 boxes",
+      "th": "ไม่เกิน 10 กล่อง",
+      "my": "သေတ္တာ 10 လုံးအထိ",
+      "zh": "最多 10 箱"
+     }
+    }
+   ]
+  },
+  {
+   "id": "luggage",
+   "cat": "moving",
+   "n": {
+    "en": "Luggage or scooter sent",
+    "th": "ส่งกระเป๋าหรือมอเตอร์ไซค์",
+    "my": "ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာ ပို့ခြင်း",
+    "zh": "行李或摩托车托运"
+   },
+   "l": {
+    "en": "Across Thailand by courier or train; postage at cost.",
+    "th": "ส่งข้ามจังหวัดทางขนส่งหรือรถไฟ ค่าส่งตามจริง",
+    "my": "ထိုင်းနိုင်ငံအတွင်း courier သို့မဟုတ် ရထားဖြင့်၊ ပို့ခ အမှန်အတိုင်း။",
+    "zh": "泰国境内快递或火车托运，运费实报。"
+   },
+   "kw": "luggage forwarding scooter motorbike shipping send bag train courier ส่งกระเป๋า ส่งมอเตอร์ไซค์ 行李 托运 摩托车",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "luggage"
+    }
+   ]
+  },
+  {
+   "id": "partner",
+   "cat": "ship",
+   "n": {
+    "en": "Become a shipping partner",
+    "th": "เป็นพาร์ทเนอร์ขนส่ง",
+    "my": "ပို့ဆောင်ရေး မိတ်ဖက် ဖြစ်လာရန်",
+    "zh": "成为发货合作伙伴"
+   },
+   "l": {
+    "en": "Agreement, product list, papers and carrier accounts.",
+    "th": "ข้อตกลง รายการสินค้า เอกสาร บัญชีขนส่ง",
+    "my": "သဘောတူညီချက်၊ ကုန်ပစ္စည်းစာရင်း၊ စာရွက်စာတမ်း၊ သယ်ယူပို့ဆောင်ရေးအကောင့်။",
+    "zh": "协议、产品清单、单证模板、物流账号。"
+   },
+   "kw": "partner dropshipping drop ship fulfillment fulfilment warehouse sourcing agent buying agent export import customs broker customs clearance freight forwarder crafts ชิปปิ้ง ตัวแทนออกของ ดรอปชิป ส่งออก นำเข้า งานฝีมือ 代发货 代采购 报关 出口 进口 货代 手工艺品",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "trade-setup"
+    }
+   ]
+  },
+  {
+   "id": "partner-prices",
+   "cat": "ship",
+   "n": {
+    "en": "Partner prices",
+    "th": "ราคาสำหรับพาร์ทเนอร์",
+    "my": "မိတ်ဖက် စျေးနှုန်း",
+    "zh": "合作伙伴价格"
+   },
+   "l": {
+    "en": "After set-up, by the order, shelf or shipment.",
+    "th": "หลังเริ่มงาน คิดต่อออเดอร์ ชั้นวาง หรือครั้ง",
+    "my": "စတင်ပြီးနောက် အော်ဒါ၊ စင် သို့မဟုတ် ပို့ဆောင်မှုအလိုက်။",
+    "zh": "开通后按订单、货架或批次计费。"
+   },
+   "kw": "fulfillment price storage sourcing commission export import clearance",
+   "act": "list",
+   "opts": [
+    {
+     "i": "trade-dropship",
+     "n": {
+      "en": "Drop-ship an order",
+      "th": "จัดส่งแทนต่อออเดอร์",
+      "my": "အော်ဒါ တစ်ခု ပို့ပေး",
+      "zh": "代发一单"
+     },
+     "u": "order"
+    },
+    {
+     "i": "trade-shelf",
+     "n": {
+      "en": "A shelf in Chiang Rai",
+      "th": "ชั้นวางที่เชียงราย",
+      "my": "ချင်းရိုင်ရှိ စင်",
+      "zh": "清莱货架"
+     },
+     "u": "shelf"
+    },
+    {
+     "i": "trade-sourcing",
+     "n": {
+      "en": "Sourcing from makers, of the goods' value",
+      "th": "จัดหาจากช่าง ของมูลค่าสินค้า",
+      "my": "လက်မှုသမားထံမှ ရှာဖွေ၊ ကုန်တန်ဖိုး၏",
+      "zh": "向手艺人采购，按货值"
+     }
+    },
+    {
+     "i": "trade-qc",
+     "n": {
+      "en": "Quality check",
+      "th": "ตรวจคุณภาพ",
+      "my": "အရည်အသွေး စစ်ဆေး",
+      "zh": "质检"
+     },
+     "u": "batch"
+    },
+    {
+     "i": "trade-export",
+     "n": {
+      "en": "Export paperwork",
+      "th": "เอกสารส่งออก",
+      "my": "ပို့ကုန် စာရွက်စာတမ်း",
+      "zh": "出口单证"
+     },
+     "u": "shipment"
+    },
+    {
+     "i": "trade-import",
+     "n": {
+      "en": "Import clearance",
+      "th": "นำเข้าผ่านศุลกากร",
+      "my": "သွင်းကုန် ရှင်းလင်း",
+      "zh": "进口清关"
+     },
+     "u": "shipment"
+    }
+   ]
+  },
+  {
+   "id": "merchant",
+   "cat": "money",
+   "n": {
+    "en": "Unfuck my merchant services",
+    "th": "แก้ระบบรับชำระเงิน",
+    "my": "ငွေပေးချေမှုစနစ် ပြင်ဆင်ခြင်း",
+    "zh": "修复收款系统"
+   },
+   "l": {
+    "en": "Card payments, PayPal, Stripe or a checkout that won't take money.",
+    "th": "บัตร PayPal Stripe หรือหน้าชำระเงินที่รับเงินไม่ได้",
+    "my": "ကတ်၊ PayPal၊ Stripe သို့မဟုတ် ငွေမလက်ခံသော checkout။",
+    "zh": "刷卡、PayPal、Stripe 或收不到钱的结账页。"
+   },
+   "kw": "payment gateway stripe promptpay omise 2c2p paypal limited account frozen merchant account checkout shopify woocommerce payout held เชื่อมต่อ payment gateway บัญชีถูกระงับ 支付 收款 冻结 网关",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "merchant-check",
+     "n": {
+      "en": "Diagnosis, in writing",
+      "th": "วินิจฉัยเป็นลายลักษณ์อักษร",
+      "my": "စာဖြင့် ရောဂါရှာဖွေ",
+      "zh": "书面诊断"
+     }
+    },
+    {
+     "i": "merchant-fix",
+     "n": {
+      "en": "The fix",
+      "th": "แก้ไข",
+      "my": "ပြင်ဆင်",
+      "zh": "修复"
+     }
+    }
+   ]
+  },
+  {
+   "id": "books",
+   "cat": "money",
+   "n": {
+    "en": "Bookkeeping in Thai and English",
+    "th": "ทำบัญชีไทยและอังกฤษ",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ် စာရင်းကိုင်ခြင်း",
+    "zh": "泰英双语记账"
+   },
+   "l": {
+    "en": "Each month, ready for your accountant.",
+    "th": "ทุกเดือน พร้อมส่งนักบัญชี",
+    "my": "လစဉ်၊ စာရင်းကိုင်ထံ ပို့ရန်အသင့်။",
+    "zh": "每月记账，交给会计即可。"
+   },
+   "kw": "bookkeeping accounting accountant tax invoice vat receipts รับทำบัญชี บัญชี ภาษี ใบกำกับภาษี 记账 会计 发票",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "co-books",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "payouts",
+   "cat": "money",
+   "n": {
+    "en": "Team pay day",
+    "th": "สรุปเงินเดือนทีม",
+    "my": "အဖွဲ့ လစာနေ့",
+    "zh": "团队发薪"
+   },
+   "l": {
+    "en": "Who is owed what on the 1st, with a QR each.",
+    "th": "วันที่ 1 สรุปยอดแต่ละคน พร้อมคิวอาร์",
+    "my": "လဆန်း 1 ရက်တွင် တစ်ဦးချင်း ပေးရမည့်ငွေ၊ QR နှင့်။",
+    "zh": "每月 1 号算清每人应得，附收款码。"
+   },
+   "kw": "payroll salary pay staff wages payslip เงินเดือน ค่าแรง สลิปเงินเดือน 工资 发薪",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "money-payouts",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "invoice",
+   "cat": "money",
+   "n": {
+    "en": "Invoice page for PayPal or Wise",
+    "th": "หน้าใบแจ้งหนี้ PayPal Wise",
+    "my": "PayPal သို့မဟုတ် Wise ငွေတောင်းခံလွှာ",
+    "zh": "PayPal 或 Wise 账单页"
+   },
+   "l": {
+    "en": "For a customer abroad, payable online.",
+    "th": "สำหรับลูกค้าต่างประเทศ จ่ายออนไลน์",
+    "my": "နိုင်ငံခြားဖောက်သည်အတွက် အွန်လိုင်းပေးချေနိုင်။",
+    "zh": "给海外客户，在线付款。"
+   },
+   "kw": "invoice billing paypal wise international payment ใบแจ้งหนี้ 账单 发票",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "money-invoice"
+    }
+   ]
+  },
+  {
+   "id": "exchange",
+   "cat": "money",
+   "n": {
+    "en": "Exchange-rate page",
+    "th": "หน้าอัตราแลกเปลี่ยน",
+    "my": "ငွေလဲနှုန်း စာမျက်နှာ",
+    "zh": "汇率页"
+   },
+   "l": {
+    "en": "Your counter's rates, updated when you change them.",
+    "th": "อัตราของร้าน อัปเดตเมื่อคุณเปลี่ยน",
+    "my": "ကောင်တာ၏ နှုန်းများ၊ ပြောင်းသည့်အခါ အပ်ဒိတ်။",
+    "zh": "您柜台的汇率，随改随更新。"
+   },
+   "kw": "money exchange rate board currency changer ร้านแลกเงิน อัตราแลกเปลี่ยน 汇率 换汇",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "money-exchange"
+    }
+   ]
+  },
+  {
+   "id": "exchange-system",
+   "cat": "money",
+   "n": {
+    "en": "Exchange counter system",
+    "th": "ระบบร้านแลกเงิน",
+    "my": "ငွေလဲကောင်တာ စနစ်",
+    "zh": "换汇柜台系统"
+   },
+   "l": {
+    "en": "Rate board, receipts, float and the daily report.",
+    "th": "ป้ายอัตรา ใบเสร็จ เงินทุน รายงานประจำวัน",
+    "my": "နှုန်းဘုတ်၊ ပြေစာ၊ ငွေလက်ကျန်၊ နေ့စဉ်အစီရင်ခံစာ။",
+    "zh": "汇率牌、收据、备用金和日报。"
+   },
+   "kw": "money changer exchange counter system receipts pos ร้านแลกเงิน ระบบ 换汇 系统",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per job",
+    "th": "ราคาตามงาน",
+    "my": "အလုပ်အလိုက် စျေးနှုန်း",
+    "zh": "按项目报价"
+   }
+  },
+  {
+   "id": "visas",
+   "cat": "visa",
+   "n": {
+    "en": "Visas, permits and companies",
+    "th": "วีซ่า ใบอนุญาต และบริษัท",
+    "my": "ဗီဇာ၊ ပါမစ်နှင့် ကုမ္ပဏီ",
+    "zh": "签证、许可与公司"
+   },
+   "l": {
+    "en": "Chiang Mai Visa Desk does these, quoted in writing.",
+    "th": "โต๊ะวีซ่าเชียงใหม่ดูแล เสนอราคาเป็นลายลักษณ์อักษร",
+    "my": "Chiang Mai Visa Desk က လုပ်ဆောင်ပြီး စာဖြင့် စျေးပေးသည်။",
+    "zh": "由清迈签证服务台办理，书面报价。"
+   },
+   "kw": "visa retirement visa extension 90 day report tm30 work permit non-b non-o o-a dtv ed visa marriage visa border run re-entry company registration migrant workers mou ltr us visa วีซ่า ใบอนุญาตทำงาน ต่อวีซ่า รายงานตัว 90 วัน จดบริษัท แรงงานต่างด้าว ဗီဇာ အလုပ်ပါမစ် 签证 工作许可 续签 公司注册 劳工",
+   "act": "link",
+   "href": "https://chiangmaivisadesk.com/",
+   "list": [
+    "visa-workpermit",
+    "visa-retire",
+    "visa-extend",
+    "visa-90day",
+    "visa-tm30",
+    "visa-reentry",
+    "visa-borderrun",
+    "visa-dtv",
+    "visa-ed",
+    "visa-marriage",
+    "visa-us",
+    "visa-bank",
+    "visa-licence",
+    "co-register",
+    "co-tax",
+    "co-bank",
+    "workers-mou",
+    "workers-permit",
+    "workers-change",
+    "workers-ss",
+    "workers-la"
+   ],
+   "pshow": {
+    "en": "Quoted in writing",
+    "th": "เสนอราคาเป็นลายลักษณ์อักษร",
+    "my": "စာဖြင့် စျေးပေး",
+    "zh": "书面报价"
+   }
+  },
+  {
+   "id": "assistant",
+   "cat": "outsource",
+   "n": {
+    "en": "Your assistant in Thailand",
+    "th": "ผู้ช่วยส่วนตัวในไทย",
+    "my": "ထိုင်းတွင် သင့်လက်ထောက်",
+    "zh": "您在泰国的助理"
+   },
+   "l": {
+    "en": "A Thai and English speaker, by the month.",
+    "th": "ผู้ช่วยพูดไทยและอังกฤษ รายเดือน",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ် ပြောတတ်သူ၊ လစဉ်။",
+    "zh": "会说泰语和英语，按月聘用。"
+   },
+   "kw": "assistant personal assistant virtual assistant pa secretary bpo back office customer support staff outsourcing ผู้ช่วย เลขา 助理 秘书 客服 外包",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "assistant-10",
+     "n": {
+      "en": "10 hours a week",
+      "th": "สัปดาห์ละ 10 ชั่วโมง",
+      "my": "တစ်ပတ် 10 နာရီ",
+      "zh": "每周 10 小时"
+     }
+    },
+    {
+     "i": "assistant-20",
+     "n": {
+      "en": "20 hours a week",
+      "th": "สัปดาห์ละ 20 ชั่วโมง",
+      "my": "တစ်ပတ် 20 နာရီ",
+      "zh": "每周 20 小时"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cs-desk",
+   "cat": "outsource",
+   "n": {
+    "en": "Thai customer service desk",
+    "th": "แอดมินตอบแชทภาษาไทย",
+    "my": "ထိုင်းဘာသာ ဖောက်သည်ဝန်ဆောင်မှု",
+    "zh": "泰语客服"
+   },
+   "l": {
+    "en": "Your LINE, Messenger or email answered, weekdays, by the month.",
+    "th": "ตอบไลน์ Messenger อีเมล วันทำการ รายเดือน",
+    "my": "LINE၊ Messenger သို့မဟုတ် အီးမေးလ်ကို ရုံးရက်တွင် ဖြေပေး၊ လစဉ်။",
+    "zh": "按月在工作日回复您的 LINE、Messenger 或邮件。"
+   },
+   "kw": "customer service customer support thai speaking customer service call center thailand chat admin helpdesk แอดมินตอบแชท ตอบแชท ฝ่ายบริการลูกค้า 客服 呼叫中心",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "cs-desk",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "calls-out",
+   "cat": "outsource",
+   "n": {
+    "en": "Outbound calling",
+    "th": "โทรออกแทนคุณ",
+    "my": "ဖုန်းထွက်ခေါ်ပေးခြင်း",
+    "zh": "外呼电话"
+   },
+   "l": {
+    "en": "Your list called in Thai or English; results in a sheet.",
+    "th": "โทรหารายชื่อของคุณ ภาษาไทยหรืออังกฤษ ผลลงตาราง",
+    "my": "သင့်စာရင်းကို ထိုင်း/အင်္ဂလိပ်လို ခေါ်၊ ရလဒ်ကို ဇယားထဲ။",
+    "zh": "用泰语或英语拨打您的名单，结果记入表格。"
+   },
+   "kw": "telemarketing appointment setting cold calling outbound sales calls เทเลเซลล์ โทรขาย นัดหมาย 电话销售 外呼 预约",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "calls-out",
+     "u": "hours10",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "typing",
+   "cat": "outsource",
+   "n": {
+    "en": "Paper forms typed up",
+    "th": "พิมพ์ฟอร์มกระดาษ",
+    "my": "စာရွက်ဖောင်များ ရိုက်ထည့်ခြင်း",
+    "zh": "纸质表格录入"
+   },
+   "l": {
+    "en": "Handwritten Thai or English, into a spreadsheet.",
+    "th": "ลายมือไทยหรืออังกฤษ ลงตาราง",
+    "my": "လက်ရေး ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ကို ဇယားထဲ။",
+    "zh": "泰文或英文手写稿录入表格。"
+   },
+   "kw": "data entry typing handwriting receipts forms digitise รับคีย์ข้อมูล พิมพ์งาน 数据录入 打字",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "typing",
+     "u": "forms",
+     "max": 50
+    }
+   ]
+  },
+  {
+   "id": "subtitles",
+   "cat": "outsource",
+   "n": {
+    "en": "Subtitles and transcripts",
+    "th": "ซับไตเติลและถอดความ",
+    "my": "စာတန်းထိုးနှင့် စာသားမှတ်တမ်း",
+    "zh": "字幕和文字稿"
+   },
+   "l": {
+    "en": "A transcript or a subtitle file: Thai, English or Burmese.",
+    "th": "ถอดความหรือไฟล์ซับ ไทย อังกฤษ หรือพม่า",
+    "my": "စာသားမှတ်တမ်း သို့မဟုတ် စာတန်းဖိုင် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ။",
+    "zh": "文字稿或字幕文件：泰、英、缅语。"
+   },
+   "kw": "subtitles captions transcript transcription srt ซับ ถอดความ ซับไตเติ้ล 字幕 转写",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "subtitles",
+     "u": "min10",
+     "max": 30
+    }
+   ]
+  }
+ ],
+ "visa_names": {
+  "visa-workpermit": {
+   "my": "အလုပ်ပါမစ်နှင့် Non-B ဗီဇာ",
+   "zh": "工作许可和 Non-B 签证"
+  },
+  "visa-retire": {
+   "my": "အငြိမ်းစား ဗီဇာ Non-O၊ O-A",
+   "zh": "养老签证 Non-O、O-A"
+  },
+  "visa-extend": {
+   "my": "နေထိုင်ခွင့် သက်တမ်းတိုး",
+   "zh": "延期居留"
+  },
+  "visa-90day": {
+   "my": "90 ရက် အစီရင်ခံ",
+   "zh": "90 天报到"
+  },
+  "visa-tm30": {
+   "my": "TM30 လိပ်စာ အကြောင်းကြားစာ",
+   "zh": "TM30 住址申报"
+  },
+  "visa-reentry": {
+   "my": "ပြန်ဝင်ခွင့်",
+   "zh": "再入境许可"
+  },
+  "visa-borderrun": {
+   "my": "နယ်စပ် ထွက်ပြန်ဝင်",
+   "zh": "边境往返"
+  },
+  "visa-dtv": {
+   "my": "DTV ဗီဇာ စာရွက်စာတမ်း",
+   "zh": "DTV 签证材料"
+  },
+  "visa-ed": {
+   "my": "ပညာရေး ဗီဇာ စာရွက်စာတမ်း",
+   "zh": "教育签证材料"
+  },
+  "visa-marriage": {
+   "my": "လက်ထပ် ဗီဇာ စာရွက်စာတမ်း",
+   "zh": "婚姻签证材料"
+  },
+  "visa-us": {
+   "my": "ထိုင်းနိုင်ငံသားများအတွက် US ဗီဇာ",
+   "zh": "泰国公民办美国签证"
+  },
+  "visa-bank": {
+   "my": "ဘဏ်စာနှင့် ဘဏ်စာရင်း",
+   "zh": "银行证明和开户"
+  },
+  "visa-licence": {
+   "my": "ယာဉ်မောင်းလိုင်စင် စာရွက်စာတမ်း",
+   "zh": "驾照材料"
+  },
+  "co-register": {
+   "my": "ကုမ္ပဏီ မှတ်ပုံတင်",
+   "zh": "公司注册"
+  },
+  "co-tax": {
+   "my": "အခွန် ID နှင့် VAT",
+   "zh": "税号和增值税"
+  },
+  "co-bank": {
+   "my": "ကုမ္ပဏီ ဘဏ်စာရင်း",
+   "zh": "公司银行账户"
+  },
+  "workers-mou": {
+   "my": "MOU အလုပ်သမား ခေါ်ယူခြင်း",
+   "zh": "MOU 劳工招聘"
+  },
+  "workers-permit": {
+   "my": "အလုပ်သမား ပါမစ်နှင့် သက်တမ်းတိုး",
+   "zh": "劳工许可及续期"
+  },
+  "workers-change": {
+   "my": "အလုပ်ရှင် ပြောင်းခြင်း",
+   "zh": "更换雇主"
+  },
+  "workers-ss": {
+   "my": "လူမှုဖူလုံရေးနှင့် ကျန်းမာရေးအာမခံ",
+   "zh": "社保和医疗保险"
+  },
+  "workers-la": {
+   "my": "Non-Immigrant L-A ဗီဇာ",
+   "zh": "Non-Immigrant L-A 签证"
+  }
+ }
+}
