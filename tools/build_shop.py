@@ -226,8 +226,8 @@ def go_of(c, lang):
         return c["href"], ui["book"]
     if a == "open":
         return c["href"], ui["open"]
-    if a == "link":
-        return c["href"], ui["go"]
+    if a == "link":   # a dict gives each language its own address, English where one is missing
+        return (tr(c["href"], lang) if isinstance(c["href"], dict) else c["href"]), ui["go"]
     if a == "ask":
         return url(lang, "ask/?about=" + c["id"]), ui["askBtn"]
     return "", ""

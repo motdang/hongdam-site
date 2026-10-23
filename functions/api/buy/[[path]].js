@@ -9,7 +9,9 @@
  *   POST /api/buy/state {ref, state: paid|started|done}         the team moves an order on   Authorization: Bearer TASKS_ADMIN
  *
  * Each order mails ORDER_TO (or CONTACT_TO) and posts in #help-desk (DISCORD_TASKS), and counts as
- * demand for that service's monthly price walk. POST answers hongdam.net, hongdam.pages.dev and
+ * demand for that service's monthly price walk. The cards in HERS go to Nan alone (PLAN_TO, else
+ * nan@motdang.net), by mail, never to #help-desk: her word 2026-10-24, "Send them to me", on the
+ * ฿2,000 written plans, as CMVD sends its plans. POST answers hongdam.net, hongdam.pages.dev and
  * localhost. Bindings and secrets on the Pages project: TASKS (D1), RT_LIMIT, DISCORD_TASKS,
  * SLIPOK_KEY + SLIPOK_BRANCH, RESEND_API_KEY + ORDER_TO or CONTACT_TO. Table migrations/0007_buy.sql.
  */
@@ -39,8 +41,8 @@ async function allowed(env, ip, now) {
   return true
 }
 
-async function mail(env, subject, text, replyTo) {
-  const to = (env.ORDER_TO || env.CONTACT_TO || '').split(',').map((s) => s.trim()).filter(Boolean)
+async function mail(env, subject, text, replyTo, only) {
+  const to = (only || env.ORDER_TO || env.CONTACT_TO || '').split(',').map((s) => s.trim()).filter(Boolean)
   if (!env.RESEND_API_KEY || !to.length) return
   await fetch('https://api.resend.com/emails', {
     method: 'POST', headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
@@ -48,6 +50,12 @@ async function mail(env, subject, text, replyTo) {
       ...(/^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/.test(replyTo) ? { reply_to: replyTo } : {}) }),
   }).catch(() => {})
 }
+
+export const HERS = new Set(['thai-plan'])
+/** An order's notice: #help-desk and ORDER_TO, or for her cards a mail to her alone. */
+const notify = (env, card, title, lines, subject, replyTo) => (HERS.has(card)
+  ? mail(env, subject, lines.join('\n'), replyTo, env.PLAN_TO || 'nan@motdang.net')
+  : Promise.all([tell(env, title, lines), mail(env, subject, lines.join('\n'), replyTo)]))
 
 const lineOf = (o) => [
   `${CARDS[o.card]?.en || o.card} · ${o.opt}${o.qty > 1 ? ` × ${o.qty}` : ''}${o.addon ? ' + stamp' : ''}`,
@@ -84,8 +92,7 @@ async function order(ctx, b, now) {
   const o = { ref, card, ...q, contact, note, lang }
   ctx.waitUntil(Promise.all([
     record(db, q.opt, await whoHash(contact), 'buy', now),
-    tell(env, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)]),
-    mail(env, `Order ${ref} — ${CARDS[card].en} — ${money(q.due, q.cur)} due`, lineOf(o).join('\n'), contact),
+    notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(q.due, q.cur)} due`, contact),
   ]))
   return json({ ok: true, ref, total: q.total, due: q.due, cur: q.cur, qty: q.qty, half: q.due < q.total, pay: payLinks(q.cur, q.due) })
 }
@@ -104,7 +111,7 @@ async function slip(ctx) {
   const u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state IN ('booked','claimed')").bind(r.transRef, ref).run()
   if (u?.meta?.changes === 0) return json({ ok: false, why: 'state' })
   const lines = [`Paid ${money(o.due, 'THB')} by PromptPay · bank ref ${r.transRef}`, ...lineOf(o)]
-  ctx.waitUntil(Promise.all([tell(env, `Order ${ref} paid`, lines), mail(env, `Paid: ${money(o.due, 'THB')} · order ${ref}`, lines.join('\n'))]))
+  ctx.waitUntil(notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(o.due, 'THB')} · order ${ref}`))
   return json({ ok: true, ref, amount: o.due })
 }
 
@@ -116,7 +123,7 @@ async function claim(ctx, b) {
   if (o.state !== 'booked') return json({ ok: true, ref, state: o.state })
   await env.TASKS.prepare("UPDATE svc_buy SET state = 'claimed', paid_ref = ? WHERE ref = ? AND state = 'booked'").bind(how, ref).run()
   const lines = [`Buyer says paid ${money(o.due, o.cur)} by ${how === 'wise' ? 'Wise' : 'PayPal'}: check the account`, ...lineOf(o)]
-  ctx.waitUntil(Promise.all([tell(env, `Order ${ref} says paid (${how})`, lines), mail(env, `Check ${how}: ${money(o.due, o.cur)} · order ${ref}`, lines.join('\n'))]))
+  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${how}: ${money(o.due, o.cur)} · order ${ref}`))
   return json({ ok: true, ref, state: 'claimed' })
 }
 
@@ -143,7 +150,8 @@ async function moved(ctx, b, now) {
   if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
   if (STEPS.indexOf(state) <= STEPS.indexOf(o.state)) return json({ ok: true, ref, state: o.state })
   await env.TASKS.prepare('UPDATE svc_buy SET state = ? WHERE ref = ?').bind(state, ref).run()
-  ctx.waitUntil(tell(env, `Order ${ref} ${state}`, [`Marked ${state} ${new Date(now).toISOString().slice(0, 16)}Z`, ...lineOf(o)]))
+  const said = [`Marked ${state} ${new Date(now).toISOString().slice(0, 16)}Z`, ...lineOf(o)]
+  ctx.waitUntil(HERS.has(o.card) ? mail(env, `Order ${ref} ${state}`, said.join('\n'), '', env.PLAN_TO || 'nan@motdang.net') : tell(env, `Order ${ref} ${state}`, said))
   return json({ ok: true, ref, state })
 }
 

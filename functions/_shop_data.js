@@ -342,6 +342,20 @@ export const CARDS = {
    }
   ]
  },
+ "bank-account": {
+  "act": "buy",
+  "en": "Thai bank account opened",
+  "opts": [
+   {
+    "id": "bank-account",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
  "staff-papers": {
   "act": "buy",
   "en": "Staff contract and payslips",
@@ -378,6 +392,21 @@ export const CARDS = {
    }
   ]
  },
+ "kh-books": {
+  "act": "buy",
+  "en": "Bookkeeping in Khmer and English",
+  "opts": [
+   {
+    "id": "kh-books",
+    "price": {
+     "usd": 149,
+     "w": "kh-books"
+    },
+    "unit": true,
+    "max": 12
+   }
+  ]
+ },
  "exchange": {
   "act": "buy",
   "en": "Exchange-rate page",
@@ -403,6 +432,10 @@ export const CARDS = {
  "paid-in-kind": {
   "act": "open",
   "en": "Pay in kind"
+ },
+ "crypto-baht": {
+  "act": "link",
+  "en": "Crypto to baht"
  },
  "web-mail": {
   "act": "buy",
@@ -766,6 +799,20 @@ export const CARDS = {
   "opts": [
    {
     "id": "stay-rent",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "npa-homes": {
+  "act": "buy",
+  "en": "Bank-sale homes found",
+  "opts": [
+   {
+    "id": "npa-homes",
     "price": {
      "walk": true
     },

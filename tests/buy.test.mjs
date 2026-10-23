@@ -67,4 +67,24 @@ r = await (await onRequest(team({ ref: rows[0][0], state: 'started' }))).json()
 assert.equal(r.state, 'started')
 r = await (await onRequest(team({ ref: rows[0][0], state: 'sideways' }))).json()
 assert.equal(r.why, 'body')
+// her ฿2,000 plans (her word 2026-10-24, "Send them to me"): a mail to her alone, nothing in #help-desk
+const calls = [], realFetch = globalThis.fetch
+globalThis.fetch = async (u, o) => { calls.push([String(u), o && o.body]); return new Response('{}') }
+const penv = { TASKS: db, DISCORD_TASKS: 'https://discord.test/hook', RESEND_API_KEY: 'x', ORDER_TO: 'desk@example.com' }
+const pend = []
+const pr = await (await onRequest({ env: penv, params: {}, waitUntil: (p) => pend.push(p),
+  request: new Request('https://hongdam.net/api/buy', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: JSON.stringify({ card: 'thai-plan', opt: 'thai-plan', contact: 'a@b.co' }) }) })).json()
+await Promise.all(pend)
+assert.equal(pr.ok, true)
+assert.equal(calls.filter(([u]) => u.includes('discord')).length, 0)
+const sent = calls.filter(([u]) => u.includes('resend'))
+assert.equal(sent.length, 1); assert.deepEqual(JSON.parse(sent[0][1]).to, ['nan@motdang.net'])
+// another card still posts in #help-desk and mails the desk
+calls.length = 0
+await (await onRequest({ env: penv, params: {}, waitUntil: (p) => pend.push(p),
+  request: new Request('https://hongdam.net/api/buy', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: JSON.stringify({ card: 'trades', opt: 'trades', contact: 'a@b.co' }) }) })).json()
+await Promise.all(pend)
+assert.equal(calls.filter(([u]) => u.includes('discord')).length, 1)
+assert.deepEqual(JSON.parse(calls.find(([u]) => u.includes('resend'))[1]).to, ['desk@example.com'])
+globalThis.fetch = realFetch
 console.log('buy ok')

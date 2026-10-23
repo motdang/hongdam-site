@@ -3073,6 +3073,29 @@
    ]
   },
   {
+   "id": "bank-account",
+   "cat": "money",
+   "n": {
+    "en": "Thai bank account opened",
+    "th": "เปิดบัญชีธนาคารไทย",
+    "my": "ထိုင်းဘဏ်အကောင့် ဖွင့်ပေး",
+    "zh": "开泰国银行账户"
+   },
+   "l": {
+    "en": "The bank for your visa, papers ready, a Thai speaker at the counter with you.",
+    "th": "ธนาคารที่เหมาะกับวีซ่าของคุณ เอกสารพร้อม มีคนพูดไทยไปด้วยที่เคาน์เตอร์",
+    "my": "သင့်ဗီဇာနှင့် ကိုက်ညီသော ဘဏ်၊ စာရွက်စာတမ်း အဆင်သင့်၊ ကောင်တာတွင် ထိုင်းစကားပြောသူ အတူလိုက်။",
+    "zh": "选适合您签证的银行，备好文件，柜台有会说泰语的人陪同。"
+   },
+   "kw": "open bank account thailand foreigner bank account bangkok bank kasikorn kbank scb krungthai เปิดบัญชี เปิดบัญชีธนาคาร ชาวต่างชาติ 开户 泰国银行开户 银行账户",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "bank-account"
+    }
+   ]
+  },
+  {
    "id": "staff-papers",
    "cat": "money",
    "n": {
@@ -3134,6 +3157,34 @@
      "i": "money-payouts",
      "u": "month",
      "max": 12
+    }
+   ]
+  },
+  {
+   "id": "kh-books",
+   "cat": "money",
+   "n": {
+    "en": "Bookkeeping in Khmer and English",
+    "th": "ทำบัญชีภาษาเขมรและอังกฤษ",
+    "my": "ခမာနှင့် အင်္ဂလိပ် စာရင်းကိုင်",
+    "zh": "高棉语和英语记账"
+   },
+   "l": {
+    "en": "For a company in Cambodia, each month, ready for your accountant.",
+    "th": "สำหรับบริษัทในกัมพูชา ทุกเดือน พร้อมส่งให้นักบัญชี",
+    "my": "ကမ္ဘောဒီးယားရှိ ကုမ္ပဏီအတွက်၊ လစဉ်၊ သင့်စာရင်းကိုင်ထံ ပို့ရန် အဆင်သင့်။",
+    "zh": "为柬埔寨公司每月记账，交给您的会计。"
+   },
+   "kw": "cambodia bookkeeping khmer accounting phnom penh siem reap accountant ทำบัญชี กัมพูชา เขมร 柬埔寨 记账 会计 高棉",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "kh-books",
+     "u": "month",
+     "max": 12,
+     "price": {
+      "usd": 149
+     }
     }
    ]
   },
@@ -3232,6 +3283,36 @@
     "th": "แลกเปลี่ยน",
     "my": "လဲလှယ်",
     "zh": "交换"
+   }
+  },
+  {
+   "id": "crypto-baht",
+   "cat": "money",
+   "n": {
+    "en": "Crypto to baht",
+    "th": "คริปโตเป็นเงินบาท",
+    "my": "Crypto မှ ဘတ်သို့",
+    "zh": "加密货币换泰铢"
+   },
+   "l": {
+    "en": "How many baht for your crypto: the routes ranked by baht in hand. On Offrampt.",
+    "th": "คริปโตของคุณได้กี่บาท เส้นทางเรียงตามเงินบาทที่ได้รับ บน Offrampt",
+    "my": "သင့် crypto အတွက် ဘတ်ဘယ်လောက်ရမလဲ၊ ရရှိမည့်ဘတ်အလိုက် လမ်းကြောင်းများ စီထားသည်။ Offrampt တွင်။",
+    "zh": "您的加密货币能换多少泰铢：按到手泰铢排序的途径。在 Offrampt 上。"
+   },
+   "kw": "crypto to baht usdt to thb sell crypto thailand bitkub binance off-ramp cash out crypto แลกคริปโต ขาย usdt คริปโตเป็นเงินบาท 加密货币 换泰铢 USDT 出金",
+   "act": "link",
+   "href": {
+    "en": "https://offrampt.net/",
+    "th": "https://offrampt.net/th/",
+    "my": "https://offrampt.net/",
+    "zh": "https://offrampt.net/"
+   },
+   "pshow": {
+    "en": "Free",
+    "th": "ฟรี",
+    "my": "အခမဲ့",
+    "zh": "免费"
    }
   },
   {
@@ -3878,6 +3959,29 @@
    "opts": [
     {
      "i": "stay-rent"
+    }
+   ]
+  },
+  {
+   "id": "npa-homes",
+   "cat": "stay",
+   "n": {
+    "en": "Bank-sale homes found",
+    "th": "หาบ้านและที่ดินที่ธนาคารขาย",
+    "my": "ဘဏ်ရောင်း အိမ်နှင့် မြေ ရှာပေး",
+    "zh": "查找银行出售的房产"
+   },
+   "l": {
+    "en": "Up to 10 homes, condos or plots that banks are selling, matched to you, with how to bid.",
+    "th": "บ้าน คอนโด หรือที่ดินที่ธนาคารขาย ไม่เกิน 10 รายการ ตรงกับที่คุณต้องการ พร้อมวิธียื่นซื้อ",
+    "my": "ဘဏ်များ ရောင်းနေသော အိမ်၊ ကွန်ဒို သို့မဟုတ် မြေ 10 ခုအထိ၊ သင်နှင့် ကိုက်ညီ၊ ဝယ်ယူရန် လျှောက်ပုံနှင့်။",
+    "zh": "最多 10 套银行出售的房屋、公寓或土地，按您的要求筛选，附出价方式。"
+   },
+   "kw": "npa bank sale property thailand foreclosed house condo land bam sam ghb บ้าน npa ทรัพย์ npa บ้านธนาคาร ทรัพย์สินรอการขาย 银行房产 法拍房 NPA",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "npa-homes"
     }
    ]
   },
