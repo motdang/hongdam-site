@@ -29,7 +29,7 @@ async function glyphs(...groups) {
 // A job is a line with stops; when it comes into view the swan rides it and each stop plays as the swan reaches it.
 const calm = matchMedia('(prefers-reduced-motion: reduce)')
 const dbTag = (g, play = 'still') => `<doodle-dingbat class="db" name="${esc(g)}" play="${play}" aria-hidden="true"></doodle-dingbat>`
-const jobHtml = (stops, o = {}) => `<div class="job${o.cls ? ' ' + o.cls : ''}"${o.to != null ? ` style="--to:${o.to}"` : ''}${o.caps && !o.hide ? '' : ' aria-hidden="true"'}><ol>` +
+const jobHtml = (stops, o = {}) => `<div class="job${o.cls ? ' ' + o.cls : ''}"${o.to != null ? ` style="--to:${o.to}"` : ''}${o.caps ? (o.hide ? ' aria-hidden="true"' : '') : ` role="img" aria-label="${esc(stops.map((g) => D.glyphs[g] || g).join(', '))}"`}><ol>` +
   stops.map((g, i) => `<li class="stop">${dbTag(g)}${o.caps ? `<span class="cap">${o.caps[i]}</span>` : ''}</li>`).join('') +
   `</ol><span class="rider">${dbTag('hongsa-stand', 'loop')}</span></div>`
 function ride(job) {
