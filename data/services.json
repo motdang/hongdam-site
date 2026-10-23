@@ -725,6 +725,19 @@
      "floor": 8,
      "ceiling": 12,
      "slots": 15
+    },
+    {
+     "id": "npa-homes",
+     "en": "Bank-sale homes found for you",
+     "th": "หาบ้านและที่ดินที่ธนาคารขาย",
+     "p_en": "{price} a shortlist",
+     "p_th": "{price} ต่อชุด",
+     "d_en": "Up to 10 homes, condos or plots that banks are selling, matched to your area, budget and title type, each with the bank's price and how to bid. SAM, one of the sellers, pays referrers a fee until 30 Dec 2026.",
+     "d_th": "บ้าน คอนโด หรือที่ดินที่ธนาคารขาย ไม่เกิน 10 รายการ ตรงกับพื้นที่ งบประมาณ และประเภทโฉนดที่ต้องการ พร้อมราคาของธนาคารและวิธียื่นซื้อ SAM หนึ่งในผู้ขาย จ่ายค่าตอบแทนแก่ผู้ส่งต่อผู้ซื้อถึง 30 ธ.ค. 2569",
+     "baht": 5000,
+     "floor": 3000,
+     "ceiling": 10000,
+     "slots": 10
     }
    ]
   },
@@ -3146,6 +3159,32 @@
      "floor": 100,
      "ceiling": 300,
      "slots": 30
+    },
+    {
+     "id": "bank-account",
+     "en": "Thai bank account opened, with you",
+     "th": "เปิดบัญชีธนาคารไทย ไปด้วยกัน",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "The bank and branch picked for your visa, your papers made ready, and a Thai speaker with you at the counter. The bank decides; the fee is for the visit.",
+     "d_th": "เลือกธนาคารและสาขาที่เหมาะกับวีซ่าของคุณ เตรียมเอกสาร และมีคนพูดไทยไปด้วยที่เคาน์เตอร์ ธนาคารเป็นผู้พิจารณา ค่าบริการคิดตามการไป",
+     "baht": 4000,
+     "floor": 2500,
+     "ceiling": 8000,
+     "slots": 8
+    },
+    {
+     "id": "kh-books",
+     "en": "Books for a Cambodian company, in Khmer and English",
+     "th": "บัญชีบริษัทในกัมพูชา ภาษาเขมรและอังกฤษ",
+     "p_en": "{price} a month, up to 100 entries",
+     "p_th": "เดือนละ {price} ไม่เกิน 100 รายการ",
+     "d_en": "Each month's income and costs recorded in Khmer and English, ready for your accountant in Cambodia.",
+     "d_th": "บันทึกรายรับรายจ่ายรายเดือนเป็นภาษาเขมรและอังกฤษ พร้อมส่งให้นักบัญชีในกัมพูชา",
+     "usd": 149,
+     "floor": 99,
+     "ceiling": 299,
+     "slots": 4
     }
    ]
   },
