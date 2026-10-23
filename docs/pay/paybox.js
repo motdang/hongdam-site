@@ -71,6 +71,16 @@ ${line ? `<p class="linep"><a class="btn" href="https://line.me/R/ti/p/${line}">
       { ecl: 'M', border: 4, scale: 6, dark: '#000', light: '#fff', title: `PromptPay ${baht} THB` })
   }
   el.addEventListener('input', draw); draw()
+  // Walked prices (hongdam.net services list): data-live-prices="new-id,check-id,stamp-id".
+  const live = (el.dataset.livePrices || '').split(',')
+  if (live.length === 3) fetch('/api/services').then((r) => (r.ok ? r.json() : null)).then((j) => {
+    const by = {}; ((j && j.kinds) || []).forEach((k) => { by[k.id] = k })
+    const [n, c, st] = live.map((id) => by[id])
+    if (n && n.tail) prices.new = [n.price, prices.new[1], n.tail]
+    if (c && c.tail) prices.check = [c.price, prices.check[1], c.tail]
+    if (st) prices.stamp = st.price
+    draw()
+  }).catch(() => {})
   if (!verify) return
   // Show the upload only when the server says the slip check is on.
   fetch(verify, { method: 'GET' }).then((r) => r.json()).then((j) => {

@@ -1,6 +1,7 @@
 // Written by tools/build_services.py from data/services.json; changes go there.
 export const LADDER = [10, 20, 30, 50, 100, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000, 10000, 12000, 15000, 20000, 25000, 30000, 40000, 50000, 60000, 80000, 100000, 150000, 200000]
 export const PCT_LADDER = [5, 8, 10, 12, 15, 20]
+export const USD_LADDER = [1, 2, 3, 5, 9, 19, 29, 39, 49, 59, 79, 99, 149, 199, 299, 499, 999]
 export const OPENED = "2026-11-01"
 export const SERVICES = {
  "assistant-10": {
@@ -353,6 +354,26 @@ export const SERVICES = {
   "ceiling": 5000,
   "slots": 12
  },
+ "lang-new": {
+  "open": 1500,
+  "floor": 1000,
+  "ceiling": 5000,
+  "slots": 20,
+  "tail": 500
+ },
+ "lang-check": {
+  "open": 500,
+  "floor": 300,
+  "ceiling": 2000,
+  "slots": 10,
+  "tail": 150
+ },
+ "lang-stamp": {
+  "open": 100,
+  "floor": 50,
+  "ceiling": 500,
+  "slots": 40
+ },
  "interp-phone": {
   "open": 400,
   "floor": 250,
@@ -615,6 +636,13 @@ export const SERVICES = {
   "ceiling": 60000,
   "slots": 2
  },
+ "reading-en": {
+  "open": 99,
+  "floor": 49,
+  "ceiling": 199,
+  "slots": 20,
+  "usd": true
+ },
  "reading-th": {
   "open": 2500,
   "floor": 1500,
@@ -632,6 +660,13 @@ export const SERVICES = {
   "floor": 1000,
   "ceiling": 5000,
   "slots": 12
+ },
+ "date-en": {
+  "open": 59,
+  "floor": 29,
+  "ceiling": 99,
+  "slots": 30,
+  "usd": true
  },
  "date-th": {
   "open": 2000,
@@ -656,6 +691,13 @@ export const SERVICES = {
   "floor": 300,
   "ceiling": 1500,
   "slots": 60
+ },
+ "name-charm": {
+  "open": 59,
+  "floor": 29,
+  "ceiling": 99,
+  "slots": 25,
+  "usd": true
  },
  "pha-yant": {
   "open": 5000,
@@ -933,6 +975,14 @@ export const SERVICES = {
   "ceiling": 1500,
   "slots": 25
  },
+ "ai-own": {
+  "open": 25000,
+  "floor": 15000,
+  "ceiling": 50000,
+  "slots": 2,
+  "tail": 25000,
+  "tail_usd": true
+ },
  "ai-whitelabel": {
   "open": 20000,
   "floor": 8000,
@@ -980,6 +1030,13 @@ export const SERVICES = {
   "floor": 1000,
   "ceiling": 5000,
   "slots": 10
+ },
+ "sec-msp": {
+  "open": 2,
+  "floor": 1,
+  "ceiling": 5,
+  "slots": 4,
+  "usd": true
  },
  "data-crawl": {
   "open": 6000,

@@ -111,8 +111,8 @@
 
   <section>
     <h2>Prices</h2>
-    <div class="prices"><div><span>New translation</span><b>฿1,500</b><i>Up to 5 pages; ฿500 a page after that.</i></div><div><span>Checking an existing translation</span><b>฿500</b><i>Up to 5 pages; ฿150 a page after that.</i></div><div><span>Stamp</span><b>฿100</b><i>A page.</i></div><div><span>Interpreting by phone or video</span><b data-live="services/interp-phone">฿400</b><i>Per 30 minutes.</i></div><div><span>Interpreting in person</span><b data-live="services/interp-person">฿3,000</b><i>Up to 4 hours, in Chiang Rai or Chiang Mai.</i></div><div><span>Interpreting in person, full day</span><b data-live="services/interp-day">฿5,000</b><i>Up to 8 hours.</i></div></div>
-    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="en" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}'></div>
+    <div class="prices"><div><span>New translation</span><b data-live="services/lang-new">฿1,500</b><i>Up to 5 pages; <span data-live="services/lang-new#tail">฿500</span> a page after that.</i></div><div><span>Checking an existing translation</span><b data-live="services/lang-check">฿500</b><i>Up to 5 pages; <span data-live="services/lang-check#tail">฿150</span> a page after that.</i></div><div><span>Stamp</span><b data-live="services/lang-stamp">฿100</b><i>A page.</i></div><div><span>Interpreting by phone or video</span><b data-live="services/interp-phone">฿400</b><i>Per 30 minutes.</i></div><div><span>Interpreting in person</span><b data-live="services/interp-person">฿3,000</b><i>Up to 4 hours, in Chiang Rai or Chiang Mai.</i></div><div><span>Interpreting in person, full day</span><b data-live="services/interp-day">฿5,000</b><i>Up to 8 hours.</i></div></div>
+    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="en" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
     <script type="module" src="/pay/paybox.js"></script>
   </section>
 
@@ -175,6 +175,6 @@
 })();
 </script>
 <script src="/ticker.js" defer></script>
-<script>fetch('/api/services').then(function(r){return r.ok?r.json():null}).then(function(j){if(!j)return;var by={};j.kinds.forEach(function(k){by[k.id]=k});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){var k=by[x.getAttribute('data-live').slice(9)];if(k)x.textContent='฿'+Number(k.baht).toLocaleString('en-US')})}).catch(function(){})</script>
+<script>fetch('/api/services').then(function(r){return r.ok?r.json():null}).then(function(j){if(!j)return;var by={};j.kinds.forEach(function(k){by[k.id]=k});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){var a=x.getAttribute('data-live').slice(9).split('#'),k=by[a[0]];if(!k)return;var v=a[1]==='tail'?k.tail:k.price;if(v!=null)x.textContent='฿'+Number(v).toLocaleString('en-US')})}).catch(function(){})</script>
 </body>
 </html>

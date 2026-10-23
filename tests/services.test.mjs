@@ -33,7 +33,7 @@ for (const id of site) {
   if (Math.round(s.slots * 0.7) / s.slots > 0.6 && Math.round(s.slots * 0.7) / s.slots <= 0.8) {
     assert.equal(walk(id, mid, at(OPENED_MONTH + 6)).price, s.open, id)
   }
-  const L = s.pct ? PCT_LADDER : LADDER
+  const L = ladderOf(id)
   assert.ok(L.includes(s.open) && L.includes(s.floor) && L.includes(s.ceiling), id)
 }
 
@@ -44,4 +44,16 @@ for (const id of desk) {
   assert.equal(p.baht, SERVICES[id].floor)
   assert.equal(pricesFrom({}, {}, Date.now()).find((x) => x.id === id).price, SERVICES[id].open)
 }
+// a two-part price moves both parts by the same ratio; US$ items walk on their own ladder
+const tw = Object.keys(SERVICES).find((id) => SERVICES[id].tail && !SERVICES[id].tail_usd)
+if (tw) {
+  const s = SERVICES[tw], full = {}
+  for (let k = 0; k < 24; k++) full[OPENED_MONTH + k] = s.slots
+  const top = walk(tw, full, at(OPENED_MONTH + 24))
+  assert.equal(top.price, s.ceiling)
+  assert.ok(LADDER.includes(top.tail) && Math.abs(top.tail - s.tail * s.ceiling / s.open) <= top.tail * 0.34, tw)
+  assert.equal(walk(tw, {}, at(OPENED_MONTH)).tail, s.tail)
+}
+const usd = Object.keys(SERVICES).filter((id) => SERVICES[id].usd)
+for (const id of usd) assert.equal(walk(id, {}, at(OPENED_MONTH)).unit, 'USD', id)
 console.log(`services ok · ${site.length} walk monthly, ${desk.length} by the Desk bot`)

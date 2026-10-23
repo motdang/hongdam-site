@@ -46,6 +46,25 @@
   15,
   20
  ],
+ "usd_ladder": [
+  1,
+  2,
+  3,
+  5,
+  9,
+  19,
+  29,
+  39,
+  49,
+  59,
+  79,
+  99,
+  149,
+  199,
+  299,
+  499,
+  999
+ ],
  "opened": "2026-11-01",
  "sections": [
   {
@@ -869,33 +888,47 @@
      "kind": "lang-new",
      "en": "New translation",
      "th": "แปลเอกสารใหม่",
-     "p_en": "฿1,500 up to 5 pages, then ฿500 a page",
-     "p_th": "฿1,500 ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿500",
+     "p_en": "{price} up to 5 pages, then {tail} a page",
+     "p_th": "{price} ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ {tail}",
      "d_en": "Between Thai, English and Burmese: passports, house registration, certificates, contracts, bank letters, school and medical papers, business text.",
      "d_th": "ระหว่างไทย อังกฤษ และพม่า หนังสือเดินทาง ทะเบียนบ้าน ใบสำคัญต่าง ๆ สัญญา หนังสือจากธนาคาร เอกสารการศึกษาและการแพทย์ และเอกสารธุรกิจ",
-     "href": "/translation/"
+     "href": "/translation/",
+     "baht": 1500,
+     "floor": 1000,
+     "ceiling": 5000,
+     "slots": 20,
+     "tail": 500
     },
     {
      "id": "lang-check",
      "kind": "lang-check",
      "en": "Checking a translation",
      "th": "ตรวจงานแปล",
-     "p_en": "฿500 up to 5 pages, then ฿150 a page",
-     "p_th": "฿500 ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿150",
+     "p_en": "{price} up to 5 pages, then {tail} a page",
+     "p_th": "{price} ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ {tail}",
      "d_en": "A translation read against the original, with corrections marked.",
      "d_th": "อ่านงานแปลเทียบกับต้นฉบับ และทำเครื่องหมายจุดที่ต้องแก้",
-     "href": "/translation/"
+     "href": "/translation/",
+     "baht": 500,
+     "floor": 300,
+     "ceiling": 2000,
+     "slots": 10,
+     "tail": 150
     },
     {
      "id": "lang-stamp",
      "kind": "lang-stamp",
      "en": "Translator's stamp",
      "th": "ตราประทับผู้แปล",
-     "p_en": "฿100 a page",
-     "p_th": "หน้าละ ฿100",
+     "p_en": "{price} a page",
+     "p_th": "หน้าละ {price}",
      "d_en": "The date, the translator's name and a QR code on each page. We don't notarize. Send a photo of a stamped page and we confirm whether it is ours.",
      "d_th": "วันที่ ชื่อผู้แปล และคิวอาร์โค้ดบนทุกหน้า เราไม่รับรองโนตารี ส่งรูปหน้าที่ประทับตรามา เรายืนยันว่าเป็นงานของเราหรือไม่",
-     "href": "/translation/"
+     "href": "/translation/",
+     "baht": 100,
+     "floor": 50,
+     "ceiling": 500,
+     "slots": 40
     },
     {
      "id": "interp-phone",
@@ -1514,10 +1547,14 @@
      "id": "reading-en",
      "en": "Reading, written in English",
      "th": "ดูดวง เขียนเป็นภาษาอังกฤษ",
-     "p_en": "US$99",
-     "p_th": "US$99",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "A written reading of your chart from your birth date, time and place, in English.",
-     "d_th": "ดวงจากวัน เวลา และสถานที่เกิด เขียนเป็นภาษาอังกฤษ"
+     "d_th": "ดวงจากวัน เวลา และสถานที่เกิด เขียนเป็นภาษาอังกฤษ",
+     "usd": 99,
+     "floor": 49,
+     "ceiling": 199,
+     "slots": 20
     },
     {
      "id": "reading-th",
@@ -1562,10 +1599,14 @@
      "id": "date-en",
      "en": "Auspicious date, in English",
      "th": "หาฤกษ์ เป็นภาษาอังกฤษ",
-     "p_en": "US$59",
-     "p_th": "US$59",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "Two dates for a wedding, a move, an opening or a new car, with the reasons, in English.",
-     "d_th": "ฤกษ์สองวันสำหรับงานแต่ง ขึ้นบ้านใหม่ เปิดร้าน หรือออกรถ พร้อมเหตุผล เป็นภาษาอังกฤษ"
+     "d_th": "ฤกษ์สองวันสำหรับงานแต่ง ขึ้นบ้านใหม่ เปิดร้าน หรือออกรถ พร้อมเหตุผล เป็นภาษาอังกฤษ",
+     "usd": 59,
+     "floor": 29,
+     "ceiling": 99,
+     "slots": 30
     },
     {
      "id": "date-th",
@@ -1623,10 +1664,14 @@
      "id": "name-charm",
      "en": "Name charm",
      "th": "เครื่องรางเขียนชื่อ",
-     "p_en": "US$59",
-     "p_th": "US$59",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "A small charm drawn with your name, with a photo of its blessing. Shipping extra.",
-     "d_th": "เครื่องรางเล็กที่เขียนชื่อของคุณ พร้อมรูปตอนปลุกเสก ค่าส่งแยก"
+     "d_th": "เครื่องรางเล็กที่เขียนชื่อของคุณ พร้อมรูปตอนปลุกเสก ค่าส่งแยก",
+     "usd": 59,
+     "floor": 29,
+     "ceiling": 99,
+     "slots": 25
     },
     {
      "id": "pha-yant",
@@ -2380,11 +2425,17 @@
      "kind": "ai-own",
      "en": "Your own builder",
      "th": "เครื่องสร้างเว็บของคุณเอง",
-     "p_en": "฿25,000 Thai companies · US$25,000 everyone else",
-     "p_th": "บริษัทไทย ฿25,000 · ลูกค้าอื่น US$25,000",
+     "p_en": "{price} Thai companies · {tail} everyone else",
+     "p_th": "บริษัทไทย {price} · ลูกค้าอื่น {tail}",
      "d_en": "A coding agent on your computer that builds and publishes sites through your own GitHub and Cloudflare accounts: installed, connected, and taught.",
      "d_th": "เอเจนต์เขียนโค้ดบนคอมพิวเตอร์ของคุณ สร้างและเผยแพร่เว็บผ่านบัญชี GitHub และ Cloudflare ของคุณเอง ติดตั้ง เชื่อมบัญชี และสอนใช้งาน",
-     "href": "/own/"
+     "href": "/own/",
+     "baht": 25000,
+     "floor": 15000,
+     "ceiling": 50000,
+     "slots": 2,
+     "tail": 25000,
+     "tail_usd": true
     },
     {
      "id": "ai-whitelabel",
@@ -2578,10 +2629,14 @@
      "kind": "sec-msp",
      "en": "Call list of IT companies",
      "th": "รายชื่อบริษัทไอทีสำหรับโทร",
-     "p_en": "US$2 a line",
-     "p_th": "บรรทัดละ US$2",
+     "p_en": "{price} a line",
+     "p_th": "บรรทัดละ {price}",
      "d_en": "IT and security service companies in a country you name, with decision-makers and call openers.",
-     "d_th": "บริษัทบริการไอทีและความปลอดภัยในประเทศที่คุณเลือก พร้อมชื่อผู้ตัดสินใจและประโยคเปิดการโทร"
+     "d_th": "บริษัทบริการไอทีและความปลอดภัยในประเทศที่คุณเลือก พร้อมชื่อผู้ตัดสินใจและประโยคเปิดการโทร",
+     "usd": 2,
+     "floor": 1,
+     "ceiling": 5,
+     "slots": 4
     },
     {
      "id": "data-crawl",

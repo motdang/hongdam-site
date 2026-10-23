@@ -22,6 +22,7 @@ DATA = os.path.join(HERE, "data", "services.json")
 LIVE_CACHE = os.path.join(HERE, "data", "services.live.json")
 GRAPH = os.path.join(HERE, "data", "tasks", "graph.json")
 WALK_JS = os.path.join(HERE, "functions", "_services_data.js")
+TAIL_LADDER = json.load(open(os.path.join(HERE, "data", "services.json"), encoding="utf-8"))["ladder"]
 DOCS = os.path.join(HERE, "docs")
 LLMS = os.path.join(DOCS, "llms.txt")
 SITE = "https://hongdam.net"
@@ -122,15 +123,26 @@ def money(n):
 
 
 def walking(data):
-    return [it for s in data["sections"] for it in s.get("items", []) if "baht" in it or "pct" in it]
+    return [it for s in data["sections"] for it in s.get("items", []) if "baht" in it or "pct" in it or "usd" in it]
 
 
 def opening_of(it):
-    return "%d%%" % it["pct"] if "pct" in it else money(it["baht"])
+    if "pct" in it:
+        return "%d%%" % it["pct"]
+    return "US$%s" % format(it["usd"], ",") if "usd" in it else money(it["baht"])
+
+
+def tail_text(it, price=None):
+    """The second price of a two-part row, moved by the same ratio as the first."""
+    t = it["tail"]
+    if price is not None:
+        t = min(TAIL_LADDER, key=lambda v: abs(v - t * price / it["baht"]))
+    return ("US$%s" % format(t, ",")) if it.get("tail_usd") else money(t)
 
 
 def live_prices(data, offline):
     opening = {"services/" + it["id"]: opening_of(it) for it in walking(data)}
+    opening.update({"services/" + it["id"] + "#tail": tail_text(it) for it in walking(data) if "tail" in it})
     if offline:
         cache = json.load(open(LIVE_CACHE, encoding="utf-8"))
         return {**opening, **cache}
@@ -139,7 +151,10 @@ def live_prices(data, offline):
         with urllib.request.urlopen(urllib.request.Request(SITE + "/api/services", headers={"user-agent": "hongdam-build"}), timeout=20) as r:
             for k in json.load(r)["kinds"]:
                 if "services/" + k["id"] in opening:
-                    out["services/" + k["id"]] = ("%d%%" % k["price"]) if k.get("unit") == "%" else money(k["baht"])
+                    out["services/" + k["id"]] = ("%d%%" % k["price"]) if k.get("unit") == "%" else \
+                        ("US$%s" % format(k["price"], ",")) if k.get("unit") == "USD" else money(k["baht"])
+                    if k.get("tail") is not None:
+                        out["services/" + k["id"] + "#tail"] = ("US$%s" % format(k["tail"], ",")) if k.get("tail_unit") == "USD" else money(k["tail"])
     except Exception as e:  # not published yet: opening prices
         print("  · /api/services not read (%s); opening prices" % e)
     for api in ("github", "php", "bots"):
@@ -155,8 +170,7 @@ def check(data, graph):
     nodes = {n["id"]: n for n in graph["nodes"]}
     bad = []
     for it in walking(data):
-        pct = "pct" in it
-        ladder, o = (data["pct_ladder"], "pct") if pct else (data["ladder"], "baht")
+        ladder, o = (data["pct_ladder"], "pct") if "pct" in it else (data["usd_ladder"], "usd") if "usd" in it else (data["ladder"], "baht")
         for f in (o, "floor", "ceiling"):
             if it.get(f) not in ladder:
                 bad.append("%s: %s %s is not on the ladder" % (it["id"], f, it.get(f)))
@@ -181,12 +195,13 @@ def check(data, graph):
 
 
 def walk_js(data):
-    svcs = {it["id"]: {"open": it.get("baht", it.get("pct")), "floor": it["floor"], "ceiling": it["ceiling"], "slots": it["slots"],
-                       **({"pct": True} if "pct" in it else {}),
+    svcs = {it["id"]: {"open": it.get("baht", it.get("pct", it.get("usd"))), "floor": it["floor"], "ceiling": it["ceiling"], "slots": it["slots"],
+                       **({"pct": True} if "pct" in it else {}), **({"usd": True} if "usd" in it else {}),
+                       **({"tail": it["tail"]} if "tail" in it else {}), **({"tail_usd": True} if it.get("tail_usd") else {}),
                        **({"walk": it["walk"]} if it.get("walk") else {})} for it in walking(data)}
     return ("// Written by tools/build_services.py from data/services.json; changes go there.\n"
-            "export const LADDER = %s\nexport const PCT_LADDER = %s\nexport const OPENED = %s\nexport const SERVICES = %s\n"
-            % (json.dumps(data["ladder"]), json.dumps(data["pct_ladder"]), json.dumps(data["opened"]), json.dumps(svcs, indent=1)))
+            "export const LADDER = %s\nexport const PCT_LADDER = %s\nexport const USD_LADDER = %s\nexport const OPENED = %s\nexport const SERVICES = %s\n"
+            % (json.dumps(data["ladder"]), json.dumps(data["pct_ladder"]), json.dumps(data["usd_ladder"]), json.dumps(data["opened"]), json.dumps(svcs, indent=1)))
 
 
 def price_html(it, lang, live):
@@ -285,8 +300,8 @@ def page(data, graph, lang, live):
 def llms_block(data, graph, live):
     nodes = {n["id"]: n for n in graph["nodes"]}
     out = ["<!-- SERVICES:START -->", "## Services", "",
-           "Prices in Thai baht; a price with no unit is for one job. Order through the form at",
-           "https://hongdam.net/#order, LINE %s, or %s." % (LINE_ID, MAIL)]
+           "Prices in Thai baht; a price with no unit is for one job. Order with the Buy button on a card",
+           "(https://hongdam.net/ and its category pages), LINE %s, or %s." % (LINE_ID, MAIL)]
     for s in data["sections"]:
         out += ["", "### " + s["en"]]
         if s.get("note_en") and not s.get("list"):
@@ -296,7 +311,7 @@ def llms_block(data, graph, live):
             out += ["- " + nodes[k]["en"] for k in s["list"]]
             continue
         for it in s["items"]:
-            p = it["p_en"].replace("{price}", live.get(it.get("live") or "services/" + it["id"], ""))
+            p = it["p_en"].replace("{price}", live.get(it.get("live") or "services/" + it["id"], "")).replace("{tail}", live.get("services/" + it["id"] + "#tail", ""))
             line = "- %s — %s. %s" % (it["en"], p, it["d_en"])
             if it.get("href"):
                 href = it["href"] if it["href"].startswith("http") else SITE + it["href"]

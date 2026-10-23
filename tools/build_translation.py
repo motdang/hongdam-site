@@ -20,6 +20,11 @@ _SVC = {it["id"]: it for s in _json.loads((ROOT / "data" / "services.json").read
 _LIVE = _json.loads((ROOT / "data" / "services.live.json").read_text()) if (ROOT / "data" / "services.live.json").exists() else {}
 def _p(i):
     return _LIVE.get("services/" + i) or "฿{:,}".format(_SVC[i]["baht"])
+def _t(i):
+    return _LIVE.get("services/" + i + "#tail") or "฿{:,}".format(_SVC[i]["tail"])
+def _n(v):
+    return int(str(v).replace("฿", "").replace(",", ""))
+_BOX = {"new": [_n(_p("lang-new")), 5, _n(_t("lang-new"))], "check": [_n(_p("lang-check")), 5, _n(_t("lang-check"))], "stamp": _n(_p("lang-stamp"))}
 DOCS = ROOT / "docs"
 ORIGIN = "https://hongdam.net"
 
@@ -200,21 +205,21 @@ W = {
 
 PRICE_H = {"en": "Prices", "th": "ราคา", "my": "စျေးနှုန်း"}
 PRICES = {
-    "en": [("New translation", "฿1,500", "Up to 5 pages; ฿500 a page after that."),
-           ("Checking an existing translation", "฿500", "Up to 5 pages; ฿150 a page after that."),
-           ("Stamp", "฿100", "A page."),
+    "en": [("New translation", _p("lang-new"), "Up to 5 pages; {tail} a page after that.", "lang-new"),
+           ("Checking an existing translation", _p("lang-check"), "Up to 5 pages; {tail} a page after that.", "lang-check"),
+           ("Stamp", _p("lang-stamp"), "A page.", "lang-stamp"),
            ("Interpreting by phone or video", _p("interp-phone"), "Per 30 minutes.", "interp-phone"),
            ("Interpreting in person", _p("interp-person"), "Up to 4 hours, in Chiang Rai or Chiang Mai.", "interp-person"),
            ("Interpreting in person, full day", _p("interp-day"), "Up to 8 hours.", "interp-day")],
-    "th": [("แปลใหม่", "฿1,500", "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿500"),
-           ("ตรวจงานแปลที่มีอยู่", "฿500", "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿150"),
-           ("ตราประทับ", "฿100", "ต่อหน้า"),
+    "th": [("แปลใหม่", _p("lang-new"), "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ {tail}", "lang-new"),
+           ("ตรวจงานแปลที่มีอยู่", _p("lang-check"), "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ {tail}", "lang-check"),
+           ("ตราประทับ", _p("lang-stamp"), "ต่อหน้า", "lang-stamp"),
            ("ล่ามทางโทรศัพท์หรือวิดีโอ", _p("interp-phone"), "ต่อครึ่งชั่วโมง", "interp-phone"),
            ("ล่ามไปด้วย", _p("interp-person"), "ไม่เกิน 4 ชั่วโมง ในเชียงรายหรือเชียงใหม่", "interp-person"),
            ("ล่ามไปด้วยทั้งวัน", _p("interp-day"), "ไม่เกิน 8 ชั่วโมง", "interp-day")],
-    "my": [("ဘာသာပြန်အသစ်", "฿1,500", "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် ฿500။"),
-           ("ရှိပြီးသား ဘာသာပြန်ကို စစ်ဆေးခြင်း", "฿500", "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် ฿150။"),
-           ("တံဆိပ်", "฿100", "တစ်မျက်နှာလျှင်။"),
+    "my": [("ဘာသာပြန်အသစ်", _p("lang-new"), "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် {tail}။", "lang-new"),
+           ("ရှိပြီးသား ဘာသာပြန်ကို စစ်ဆေးခြင်း", _p("lang-check"), "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် {tail}။", "lang-check"),
+           ("တံဆိပ်", _p("lang-stamp"), "တစ်မျက်နှာလျှင်။", "lang-stamp"),
            ("စကားပြန်၊ ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့်", _p("interp-phone"), "မိနစ် ၃၀ လျှင်။", "interp-phone"),
            ("စကားပြန်၊ လူကိုယ်တိုင်", _p("interp-person"), "၄ နာရီအထိ၊ ချင်းရိုင်နှင့် ချင်းမိုင်တွင်။", "interp-person"),
            ("စကားပြန်၊ လူကိုယ်တိုင်၊ တစ်နေ့လုံး", _p("interp-day"), "၈ နာရီအထိ။", "interp-day")],
@@ -274,7 +279,8 @@ def page(lang):
         for k, n in SWITCH)
     lis = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
     opts = lambda xs: "".join(f"<option>{e(x)}</option>" for x in xs)
-    prices = "".join(f"<div><span>{e(r[0])}</span><b{' data-live=' + chr(34) + 'services/' + r[3] + chr(34) if len(r) > 3 else ''}>{e(r[1])}</b><i>{e(r[2])}</i></div>" for r in PRICES[lang])
+    tailspan = lambda r: e(r[2]).replace("{tail}", f'<span data-live="services/{r[3]}#tail">{e(_t(r[3]))}</span>') if len(r) > 3 and "{tail}" in r[2] else e(r[2])
+    prices = "".join(f"<div><span>{e(r[0])}</span><b{' data-live=' + chr(34) + 'services/' + r[3] + chr(34) if len(r) > 3 else ''}>{e(r[1])}</b><i>{tailspan(r)}</i></div>" for r in PRICES[lang])
     steps = "".join(f"<div><b>{e(h)}</b><p>{e(p)}</p></div>" for h, p in t["how"])
     pairs = "".join(f"<span>{e(p)}</span>" for p in t["pairs"])
     msgs = {k: t[k] for k in ("s_need", "s_sending", "s_ok", "s_err")}
@@ -343,7 +349,7 @@ def page(lang):
   <section>
     <h2>{e(PRICE_H[lang])}</h2>
     <div class="prices">{prices}</div>
-    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="{lang}" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{{"new":[1500,5,500],"check":[500,5,150],"stamp":100}}'></div>
+    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="{lang}" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{_json.dumps(_BOX, separators=(",", ":"))}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
     <script type="module" src="/pay/paybox.js"></script>
   </section>
 
@@ -406,7 +412,7 @@ def page(lang):
 }})();
 </script>
 <script src="/ticker.js" defer></script>
-<script>fetch('/api/services').then(function(r){{return r.ok?r.json():null}}).then(function(j){{if(!j)return;var by={{}};j.kinds.forEach(function(k){{by[k.id]=k}});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){{var k=by[x.getAttribute('data-live').slice(9)];if(k)x.textContent='\u0e3f'+Number(k.baht).toLocaleString('en-US')}})}}).catch(function(){{}})</script>
+<script>fetch('/api/services').then(function(r){{return r.ok?r.json():null}}).then(function(j){{if(!j)return;var by={{}};j.kinds.forEach(function(k){{by[k.id]=k}});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){{var a=x.getAttribute('data-live').slice(9).split('#'),k=by[a[0]];if(!k)return;var v=a[1]==='tail'?k.tail:k.price;if(v!=null)x.textContent='\u0e3f'+Number(v).toLocaleString('en-US')}})}}).catch(function(){{}})</script>
 </body>
 </html>
 """
