@@ -57,7 +57,7 @@ function mount(el) {
  <label><input type="radio" name="svc" value="check"> ${t.check}</label></fieldset>
 <label>${t.pages} <input type="number" name="pages" min="1" max="200" value="1"></label>
 <label><input type="checkbox" name="stamp"> ${t.stamp}</label>
-<p>${t.total}</p><p class="amt" aria-live="polite"></p><div class="qr"></div><p>${t.how}</p>
+<p>${t.total}</p><p class="amt amt-th" aria-live="polite"></p><div class="qr"></div><p>${t.how}</p>
 <form class="slipf" hidden><label>${t.slip}<input type="file" name="slip" accept="image/*" required></label>
  <button type="submit">${t.checkBtn}</button><p class="msg" role="status"></p></form>
 ${line ? `<p class="linep"><a class="btn" href="https://line.me/R/ti/p/${line}">${t.line}</a></p>` : ''}`
