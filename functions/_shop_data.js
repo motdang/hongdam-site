@@ -330,7 +330,7 @@ export const CARDS = {
  },
  "books": {
   "act": "buy",
-  "en": "Bookkeeping in Thai and English",
+  "en": "Books in Thai and English",
   "opts": [
    {
     "id": "co-books",
@@ -394,7 +394,7 @@ export const CARDS = {
  },
  "kh-books": {
   "act": "buy",
-  "en": "Bookkeeping in Khmer and English",
+  "en": "Books in Khmer and English",
   "opts": [
    {
     "id": "kh-books",

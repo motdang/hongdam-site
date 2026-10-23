@@ -209,3 +209,16 @@ h1 { text-transform: lowercase }
   .rider { transition: none }
   .stop.hit .db { animation: none }
 }
+
+/* ---------------------------------------------------------------- money marks
+   Her ask 2026-10-24: "baht symbol looks similar enough to dollar symbol, pls add flag dingbat for US and
+   Thailand, make the $ different color." A price element carries class "amt amt-th" (baht) or "amt amt-us" (US$):
+   a small flag before it, and US$ in its own green. Built by tools/build_shop.py and docs/assets/shop.js. */
+:root { --usd: #1E6B43 }
+@media (prefers-color-scheme: dark) { :root { --usd: #7DD3A3 } }
+.amt { white-space: nowrap }
+.amt-th::before, .amt-us::before { content: ""; display: inline-block; width: 1.1em; height: .74em; margin-right: .28em; vertical-align: -.04em;
+  border-radius: 1.5px; background: center / 100% 100% no-repeat; box-shadow: 0 0 0 1px color-mix(in oklab, var(--fg) 22%, transparent) }
+.amt-th::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E") }
+.amt-us::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 7' preserveAspectRatio='none'%3E%3Cpath fill='%23FFF' d='M0 0h10v7H0z'/%3E%3Cpath fill='%23B22234' d='M0 0h10v1H0zM0 2h10v1H0zM0 4h10v1H0zM0 6h10v1H0z'/%3E%3Cpath fill='%233C3B6E' d='M0 0h4.4v4H0z'/%3E%3Cg fill='%23FFF'%3E%3Ccircle cx='1.1' cy='1' r='.42'/%3E%3Ccircle cx='3.3' cy='1' r='.42'/%3E%3Ccircle cx='2.2' cy='2' r='.42'/%3E%3Ccircle cx='1.1' cy='3' r='.42'/%3E%3Ccircle cx='3.3' cy='3' r='.42'/%3E%3C/g%3E%3C/svg%3E") }
+.amt-us { color: var(--usd) }
