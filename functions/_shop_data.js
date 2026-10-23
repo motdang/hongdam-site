@@ -566,6 +566,20 @@ export const CARDS = {
    }
   ]
  },
+ "sak-yant": {
+  "act": "buy",
+  "en": "Sak yant, off the beaten path",
+  "opts": [
+   {
+    "id": "sak-yant",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
  "giving": {
   "act": "buy",
   "en": "Giving page for your charity",
@@ -602,6 +616,14 @@ export const CARDS = {
    },
    {
     "id": "gifts-ready",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "funder-report",
     "price": {
      "walk": true
     },
@@ -983,6 +1005,14 @@ export const CARDS = {
     },
     "unit": false,
     "max": 99
+   },
+   {
+    "id": "dmarc-watch",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
    }
   ]
  },
@@ -1697,5 +1727,795 @@ export const CARDS = {
     "max": 30
    }
   ]
+ },
+ "reading": {
+  "act": "buy",
+  "en": "Horoscope reading",
+  "opts": [
+   {
+    "id": "reading-en",
+    "price": {
+     "usd": 99
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "reading-th",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "bazi": {
+  "act": "buy",
+  "en": "Bazi or I Ching reading",
+  "opts": [
+   {
+    "id": "bazi",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "iching",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "date-pick": {
+  "act": "buy",
+  "en": "Auspicious date",
+  "opts": [
+   {
+    "id": "date-en",
+    "price": {
+     "usd": 59
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "date-th",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "name-pick": {
+  "act": "buy",
+  "en": "Auspicious name",
+  "opts": [
+   {
+    "id": "name-pick",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "name-biz",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "lucky-number": {
+  "act": "buy",
+  "en": "Lucky phone number or plate",
+  "opts": [
+   {
+    "id": "lucky-number",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "name-charm": {
+  "act": "buy",
+  "en": "Name charm",
+  "opts": [
+   {
+    "id": "name-charm",
+    "price": {
+     "usd": 59
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "pha-yant": {
+  "act": "buy",
+  "en": "Pha yant drawn for you",
+  "opts": [
+   {
+    "id": "pha-yant",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "amulet": {
+  "act": "buy",
+  "en": "Amulets",
+  "opts": [
+   {
+    "id": "amulet-check",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 10
+   },
+   {
+    "id": "amulet-buy",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "almanac-widget": {
+  "act": "buy",
+  "en": "Almanac or fortune calculator for your site",
+  "opts": [
+   {
+    "id": "almanac-widget",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "eink-clock": {
+  "act": "buy",
+  "en": "Lanna almanac clock",
+  "opts": [
+   {
+    "id": "eink-clock",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "amulet-seller": {
+  "act": "open",
+  "en": "Amulet seller page on Mot Dang"
+ },
+ "merit-you": {
+  "act": "buy",
+  "en": "Merit made for you",
+  "opts": [
+   {
+    "id": "merit-alms",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "merit-set",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "merit-gift",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "merit-fish",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "merit-dead": {
+  "act": "buy",
+  "en": "Merit for someone who died",
+  "opts": [
+   {
+    "id": "merit-dead",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "house-blessing": {
+  "act": "buy",
+  "en": "House or shop blessing",
+  "opts": [
+   {
+    "id": "house-blessing",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "su-khwan": {
+  "act": "buy",
+  "en": "Su khwan ceremony",
+  "opts": [
+   {
+    "id": "su-khwan-arr",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "lanna-wedding": {
+  "act": "buy",
+  "en": "Lanna wedding ceremony",
+  "opts": [
+   {
+    "id": "lanna-wedding",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "retire": {
+  "act": "buy",
+  "en": "Retiring here, handled",
+  "opts": [
+   {
+    "id": "retire-setup",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "retire-month",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
+   },
+   {
+    "id": "retire-hour",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 20
+   }
+  ]
+ },
+ "elder-care": {
+  "act": "buy",
+  "en": "Care home or caregiver",
+  "opts": [
+   {
+    "id": "care-placement",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "caregiver-hire",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "care-visits": {
+  "act": "buy",
+  "en": "Visits to an older person",
+  "opts": [
+   {
+    "id": "care-visit",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 8
+   },
+   {
+    "id": "care-visits-month",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
+   }
+  ]
+ },
+ "specialist": {
+  "act": "buy",
+  "en": "Specialist visit with an interpreter",
+  "opts": [
+   {
+    "id": "specialist",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "specialist-book",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "death-help": {
+  "act": "buy",
+  "en": "When someone dies here",
+  "opts": [
+   {
+    "id": "death-help",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "lab-test": {
+  "act": "buy",
+  "en": "Lab test arranged",
+  "opts": [
+   {
+    "id": "lab-test",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "clean-air": {
+  "act": "buy",
+  "en": "Clean air at home",
+  "opts": [
+   {
+    "id": "clean-air",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "accident": {
+  "act": "buy",
+  "en": "After an accident",
+  "opts": [
+   {
+    "id": "accident",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "med-papers": {
+  "act": "ask",
+  "en": "Medicine papers for travel"
+ },
+ "tour-day": {
+  "act": "buy",
+  "en": "Private day tour",
+  "opts": [
+   {
+    "id": "tour-cr",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "tour-cm",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "tour-3d": {
+  "act": "buy",
+  "en": "Three days in the north",
+  "opts": [
+   {
+    "id": "tour-3d",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 10
+   }
+  ]
+ },
+ "car-guide": {
+  "act": "buy",
+  "en": "Car, driver or guide for a day",
+  "opts": [
+   {
+    "id": "driver-day",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "guide-day",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "guide-day-other",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "experience": {
+  "act": "buy",
+  "en": "Class or workshop, with a translator",
+  "opts": [
+   {
+    "id": "experience",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "lantern": {
+  "act": "buy",
+  "en": "Lantern night in Lamphun",
+  "opts": [
+   {
+    "id": "lantern-seat",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 16
+   }
+  ]
+ },
+ "balloon": {
+  "act": "buy",
+  "en": "Balloon or paramotor flight",
+  "opts": [
+   {
+    "id": "balloon-cr",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 4
+   },
+   {
+    "id": "balloon-cm",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 4
+   },
+   {
+    "id": "paramotor",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 4
+   }
+  ]
+ },
+ "honeymoon": {
+  "act": "link",
+  "en": "Lanna honeymoon"
+ },
+ "thai-lessons": {
+  "act": "buy",
+  "en": "Thai lessons",
+  "opts": [
+   {
+    "id": "thai-lessons",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 40
+   }
+  ]
+ },
+ "german": {
+  "act": "buy",
+  "en": "German pages, Swiss spelling",
+  "opts": [
+   {
+    "id": "german",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 50
+   }
+  ]
+ },
+ "voice": {
+  "act": "buy",
+  "en": "Thai voice recording",
+  "opts": [
+   {
+    "id": "voice",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 60
+   }
+  ]
+ },
+ "cartoons": {
+  "act": "buy",
+  "en": "Campaign cartoons",
+  "opts": [
+   {
+    "id": "cartoons",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "interview": {
+  "act": "buy",
+  "en": "Recorded interview",
+  "opts": [
+   {
+    "id": "interview",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "staff-papers": {
+  "act": "buy",
+  "en": "Staff contract and payslips",
+  "opts": [
+   {
+    "id": "staff-contract",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "payslips",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 50
+   }
+  ]
+ },
+ "stall-page": {
+  "act": "buy",
+  "en": "Market stall page with a QR sign",
+  "opts": [
+   {
+    "id": "stall-page",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "club-desk": {
+  "act": "buy",
+  "en": "Admin desk for a club",
+  "opts": [
+   {
+    "id": "club-desk",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
+   }
+  ]
+ },
+ "help-page": {
+  "act": "buy",
+  "en": "Help page with a live map",
+  "opts": [
+   {
+    "id": "help-page",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "help-page-run",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
+   }
+  ]
+ },
+ "agency-sheet": {
+  "act": "buy",
+  "en": "Listing sheet for an agency",
+  "opts": [
+   {
+    "id": "agency-sheet",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
+   }
+  ]
+ },
+ "widget": {
+  "act": "buy",
+  "en": "Weather, smoke or events box",
+  "opts": [
+   {
+    "id": "widget",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "tap-card": {
+  "act": "buy",
+  "en": "Contact card on a QR code",
+  "opts": [
+   {
+    "id": "tap-card",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
+ "peptides": {
+  "act": "ask",
+  "en": "Peptides, brought in"
+ },
+ "pharma": {
+  "act": "ask",
+  "en": "Medicines and pharma imports"
+ },
+ "forensics": {
+  "act": "ask",
+  "en": "Device forensics"
+ },
+ "demo-bot": {
+  "act": "ask",
+  "en": "A bot that gives your demo on Zoom"
+ },
+ "coffee": {
+  "act": "ask",
+  "en": "Coffee from a Lahu farm"
+ },
+ "magic": {
+  "act": "ask",
+  "en": "Close-up magic for your event"
+ },
+ "founders": {
+  "act": "open",
+  "en": "Founding member of Mot Dang"
+ },
+ "homehelp-plan": {
+  "act": "open",
+  "en": "Home help: employer plan"
+ },
+ "sell-motdang": {
+  "act": "open",
+  "en": "Earn by selling Mot Dang pages"
+ },
+ "paid-in-kind": {
+  "act": "open",
+  "en": "Pay in kind"
+ },
+ "post-job": {
+  "act": "open",
+  "en": "Post any job"
  }
 }

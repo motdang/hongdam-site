@@ -779,6 +779,62 @@
     "my": "လုပ်ငန်းစဉ်",
     "zh": "个流程"
    }
+  },
+  "amulet": {
+   "one": {
+    "en": "amulet",
+    "th": "องค์",
+    "my": "ဆောင်ဖွယ်",
+    "zh": "枚"
+   },
+   "many": {
+    "en": "amulets",
+    "th": "องค์",
+    "my": "ဆောင်ဖွယ်",
+    "zh": "枚"
+   }
+  },
+  "visit": {
+   "one": {
+    "en": "visit",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "次"
+   },
+   "many": {
+    "en": "visits",
+    "th": "ครั้ง",
+    "my": "ကြိမ်",
+    "zh": "次"
+   }
+  },
+  "person": {
+   "one": {
+    "en": "person",
+    "th": "คน",
+    "my": "ဦး",
+    "zh": "人"
+   },
+   "many": {
+    "en": "people",
+    "th": "คน",
+    "my": "ဦး",
+    "zh": "人"
+   }
+  },
+  "seat": {
+   "one": {
+    "en": "seat",
+    "th": "ที่นั่ง",
+    "my": "ထိုင်ခုံ",
+    "zh": "个座位"
+   },
+   "many": {
+    "en": "seats",
+    "th": "ที่นั่ง",
+    "my": "ထိုင်ခုံ",
+    "zh": "个座位"
+   }
   }
  },
  "cats": [
@@ -796,6 +852,22 @@
     "th": "โทรแทน หาช่าง วิ่งธุระ กรอกฟอร์ม เราทำให้",
     "my": "ဖုန်းခေါ်ခြင်း၊ ပြင်ဆင်ရေး၊ ကိစ္စများနှင့် ဖောင်ဖြည့်ခြင်းကို ထိုင်းလို လုပ်ပေးပါသည်။",
     "zh": "打电话、找师傅、跑腿、填表，我们用泰语替您办。"
+   }
+  },
+  {
+   "id": "care",
+   "emoji": "🧓",
+   "n": {
+    "en": "Retirement & care",
+    "th": "เกษียณและดูแลผู้สูงอายุ",
+    "my": "အငြိမ်းစားနှင့် သက်ကြီးစောင့်ရှောက်မှု",
+    "zh": "养老与照护"
+   },
+   "l": {
+    "en": "Retiring here, care for older people, doctors and hard days.",
+    "th": "เกษียณที่นี่ ดูแลผู้สูงอายุ หาหมอ และวันที่ยาก",
+    "my": "ဤနေရာတွင် အငြိမ်းစား၊ သက်ကြီးစောင့်ရှောက်မှု၊ ဆရာဝန်နှင့် ခက်ခဲသောနေ့များ။",
+    "zh": "在此养老、照护老人、看医生和难关。"
    }
   },
   {
@@ -863,19 +935,67 @@
    }
   },
   {
+   "id": "tours",
+   "emoji": "🗺️",
+   "n": {
+    "en": "Tours & trips",
+    "th": "ทัวร์และเที่ยว",
+    "my": "ခရီးစဉ်များ",
+    "zh": "旅游行程"
+   },
+   "l": {
+    "en": "Day tours, cars, guides, classes, lanterns and balloons.",
+    "th": "ทัวร์รายวัน รถ ไกด์ คลาส โคม และบอลลูน",
+    "my": "နေ့ချင်းခရီး၊ ကား၊ ဧည့်လမ်းညွှန်၊ သင်တန်း၊ မီးအိမ်နှင့် လေပူဖောင်း။",
+    "zh": "一日游、包车、导游、课程、灯会和热气球。"
+   }
+  },
+  {
    "id": "events",
    "emoji": "🎉",
    "n": {
-    "en": "Trips & events",
-    "th": "เที่ยวและงาน",
-    "my": "ခရီးနှင့် ပွဲများ",
-    "zh": "旅行与活动"
+    "en": "Events & keepsakes",
+    "th": "งานและของที่ระลึก",
+    "my": "ပွဲနှင့် အမှတ်တရ",
+    "zh": "活动与纪念"
    },
    "l": {
-    "en": "Trip plans, ticket pages, ceremonies and keepsakes.",
-    "th": "แผนเที่ยว หน้าขายบัตร พิธี และของที่ระลึก",
-    "my": "ခရီးစဉ်၊ လက်မှတ်စာမျက်နှာ၊ အခမ်းအနားနှင့် အမှတ်တရ။",
-    "zh": "行程、售票页、仪式和纪念。"
+    "en": "Ticket pages, and pages for weddings, ordinations and memorials.",
+    "th": "หน้าขายบัตร และหน้าเว็บงานแต่ง บวช และงานรำลึก",
+    "my": "လက်မှတ်စာမျက်နှာနှင့် မင်္ဂလာ၊ ရှင်ပြု၊ အမှတ်တရ စာမျက်နှာ။",
+    "zh": "售票页，以及婚礼、出家和纪念网页。"
+   }
+  },
+  {
+   "id": "luck",
+   "emoji": "🔮",
+   "n": {
+    "en": "Luck",
+    "th": "ดวงและโชค",
+    "my": "ကံကြမ္မာ",
+    "zh": "运势"
+   },
+   "l": {
+    "en": "Readings, auspicious dates and names, yant and amulets.",
+    "th": "ดูดวง ฤกษ์ ตั้งชื่อ ยันต์ และพระเครื่อง",
+    "my": "ဗေဒင်၊ မင်္ဂလာရက်နှင့် အမည်၊ ယန္တရားနှင့် ဆောင်ဖွယ်။",
+    "zh": "算命、择日、起名、符咒和佛牌。"
+   }
+  },
+  {
+   "id": "merit",
+   "emoji": "🙏",
+   "n": {
+    "en": "Merit",
+    "th": "ทำบุญ",
+    "my": "ကုသိုလ်",
+    "zh": "功德"
+   },
+   "l": {
+    "en": "Merit made for you, blessings, su khwan and Lanna weddings.",
+    "th": "ทำบุญแทน ทำบุญบ้าน สู่ขวัญ และแต่งงานล้านนา",
+    "my": "သင့်ကိုယ်စား ကုသိုလ်၊ အိမ်မင်္ဂလာ၊ ဆူခွမ်နှင့် လန်နာ မင်္ဂလာဆောင်။",
+    "zh": "代您做功德、新居祈福、招魂礼和兰纳婚礼。"
    }
   },
   {
@@ -1297,7 +1417,7 @@
   },
   {
    "id": "doctor",
-   "cat": "help",
+   "cat": "care",
    "n": {
     "en": "Doctor or dentist visit",
     "th": "พบหมอหรือหมอฟัน",
@@ -2034,7 +2154,7 @@
   },
   {
    "id": "trip-plan",
-   "cat": "events",
+   "cat": "tours",
    "n": {
     "en": "Trip plan, booked for you",
     "th": "วางแผนเที่ยวและจองให้",
@@ -2118,7 +2238,7 @@
   },
   {
    "id": "spirit-house",
-   "cat": "events",
+   "cat": "merit",
    "n": {
     "en": "Spirit house set up",
     "th": "ตั้งศาลพระภูมิ",
@@ -2136,6 +2256,29 @@
    "opts": [
     {
      "i": "spirit-house"
+    }
+   ]
+  },
+  {
+   "id": "sak-yant",
+   "cat": "luck",
+   "n": {
+    "en": "Sak yant, off the beaten path",
+    "th": "พาไปสักยันต์กับอาจารย์ในพื้นที่",
+    "my": "ဒေသခံ ဆရာထံ ယန္တရား ထိုးရန် လိုက်ပို့ခြင်း",
+    "zh": "陪您找当地法师刺符"
+   },
+   "l": {
+    "en": "An ajarn or monk near you in the north, asked and visited, with an interpreter.",
+    "th": "อาจารย์หรือพระใกล้คุณในภาคเหนือ เราติดต่อและพาไป พร้อมล่าม",
+    "my": "မြောက်ပိုင်းရှိ သင့်အနီးမှ ဆရာ သို့မဟုတ် ဘုန်းကြီးထံ ဆက်သွယ်ပြီး စကားပြန်နှင့် လိုက်ပို့။",
+    "zh": "在北部为您联系附近的法师或僧人，陪同前往并翻译。"
+   },
+   "kw": "sak yant chiang mai sak yant chiang rai yant tattoo ajarn monk tattoo blessing สักยันต์ เชียงใหม่ สักยันต์ เชียงราย อาจารย์ ยันต์ ယန္တရား 刺符 泰国刺符 法师",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "sak-yant"
     }
    ]
   },
@@ -2213,6 +2356,15 @@
       "th": "เตรียมพร้อมรับทุนก้อนใหญ่",
       "my": "အလှူကြီးများအတွက် အသင့်ပြင်",
       "zh": "大额捐赠准备"
+     }
+    },
+    {
+     "i": "funder-report",
+     "n": {
+      "en": "Funder research report",
+      "th": "รายงานแหล่งทุน",
+      "my": "ရန်ပုံငွေရှင် သုတေသန အစီရင်ခံစာ",
+      "zh": "资助方调研报告"
      }
     }
    ]
@@ -2897,7 +3049,24 @@
    "act": "buy",
    "opts": [
     {
-     "i": "sec-mail"
+     "i": "sec-mail",
+     "n": {
+      "en": "Records read, with fixes",
+      "th": "อ่านระเบียนพร้อมวิธีแก้",
+      "my": "မှတ်တမ်းဖတ်ပြီး ပြင်ဆင်ရန်",
+      "zh": "读取记录并给出修改"
+     }
+    },
+    {
+     "i": "dmarc-watch",
+     "n": {
+      "en": "Reports read, monthly",
+      "th": "อ่านรายงานรายเดือน",
+      "my": "အစီရင်ခံစာ ဖတ်၊ လစဉ်",
+      "zh": "按月解读报告"
+     },
+     "u": "month",
+     "max": 12
     }
    ]
   },
@@ -4146,12 +4315,12 @@
     "zh": "签证、许可与公司"
    },
    "l": {
-    "en": "Chiang Mai Visa Desk does these, quoted in writing.",
-    "th": "โต๊ะวีซ่าเชียงใหม่ดูแล เสนอราคาเป็นลายลักษณ์อักษร",
-    "my": "Chiang Mai Visa Desk က လုပ်ဆောင်ပြီး စာဖြင့် စျေးပေးသည်။",
-    "zh": "由清迈签证服务台办理，书面报价。"
+    "en": "Chiang Mai Visa Desk does these, quoted in writing, and LTR, Privilege and residence files.",
+    "th": "โต๊ะวีซ่าเชียงใหม่ดูแล เสนอราคาเป็นลายลักษณ์อักษร รวม LTR Privilege และถิ่นที่อยู่",
+    "my": "Chiang Mai Visa Desk က လုပ်ဆောင်ပြီး စာဖြင့် စျေးပေး၊ LTR၊ Privilege နှင့် နေထိုင်ခွင့်လည်း။",
+    "zh": "由清迈签证服务台办理并书面报价，也办 LTR、精英签和居留。"
    },
-   "kw": "visa retirement visa extension 90 day report tm30 work permit non-b non-o o-a dtv ed visa marriage visa border run re-entry company registration migrant workers mou ltr us visa วีซ่า ใบอนุญาตทำงาน ต่อวีซ่า รายงานตัว 90 วัน จดบริษัท แรงงานต่างด้าว ဗီဇာ အလုပ်ပါမစ် 签证 工作许可 续签 公司注册 劳工",
+   "kw": "visa retirement visa extension 90 day report tm30 work permit non-b non-o o-a dtv ed visa marriage visa border run re-entry company registration migrant workers mou ltr us visa วีซ่า ใบอนุญาตทำงาน ต่อวีซ่า รายงานตัว 90 วัน จดบริษัท แรงงานต่างด้าว ဗီဇာ အလုပ်ပါမစ် 签证 工作许可 续签 公司注册 劳工 ltr long term resident thailand privilege elite visa permanent residence ถิ่นที่อยู่ 长期居留 精英签 永居",
    "act": "link",
    "href": "https://chiangmaivisadesk.com/",
    "list": [
@@ -4321,6 +4490,1607 @@
      "max": 30
     }
    ]
+  },
+  {
+   "id": "reading",
+   "cat": "luck",
+   "n": {
+    "en": "Horoscope reading",
+    "th": "ดูดวง",
+    "my": "ဗေဒင် ဟောခြင်း",
+    "zh": "算命"
+   },
+   "l": {
+    "en": "Your chart from birth date and time, written out.",
+    "th": "ดวงจากวันเวลาเกิด เขียนให้อ่าน",
+    "my": "မွေးရက်နှင့် အချိန်မှ ဇာတာ၊ စာဖြင့်။",
+    "zh": "根据出生日期和时间，书面解读命盘。"
+   },
+   "kw": "horoscope astrology fortune reading thai astrology lanna birth chart ดูดวง หมอดู ดวงชะตา โหราศาสตร์ ဗေဒင် ဇာတာ 算命 占星 泰国算命",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "reading-en",
+     "n": {
+      "en": "In English",
+      "th": "เป็นภาษาอังกฤษ",
+      "my": "အင်္ဂလိပ်လို",
+      "zh": "英文"
+     },
+     "price": {
+      "usd": 99
+     }
+    },
+    {
+     "i": "reading-th",
+     "n": {
+      "en": "Thai or Lanna, in Thai",
+      "th": "ไทยหรือล้านนา เป็นภาษาไทย",
+      "my": "ထိုင်း သို့မဟုတ် လန်နာ၊ ထိုင်းလို",
+      "zh": "泰式或兰纳，泰文"
+     }
+    }
+   ],
+   "pop": null
+  },
+  {
+   "id": "bazi",
+   "cat": "luck",
+   "n": {
+    "en": "Bazi or I Ching reading",
+    "th": "ปาจื้อหรืออี้จิง",
+    "my": "Bazi သို့မဟုတ် I Ching",
+    "zh": "八字或易经"
+   },
+   "l": {
+    "en": "Four pillars or a cast question, in English or Chinese.",
+    "th": "สี่เสาหรือคำถามอี้จิง เป็นภาษาอังกฤษหรือจีน",
+    "my": "ဇာတာတိုင်လေးတိုင် သို့မဟုတ် မေးခွန်း၊ အင်္ဂလိပ် သို့မဟုတ် တရုတ်။",
+    "zh": "八字四柱或易经问卦，英文或中文。"
+   },
+   "kw": "bazi four pillars i ching iching chinese astrology feng shui ปาจื้อ อี้จิง โหราศาสตร์จีน 八字 易经 四柱 命理",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "bazi",
+     "n": {
+      "en": "Bazi reading",
+      "th": "ดูปาจื้อ",
+      "my": "Bazi ဗေဒင်",
+      "zh": "八字"
+     }
+    },
+    {
+     "i": "iching",
+     "n": {
+      "en": "I Ching reading",
+      "th": "ดูอี้จิง",
+      "my": "I Ching ဗေဒင်",
+      "zh": "易经"
+     }
+    }
+   ]
+  },
+  {
+   "id": "date-pick",
+   "cat": "luck",
+   "n": {
+    "en": "Auspicious date",
+    "th": "หาฤกษ์",
+    "my": "မင်္ဂလာရက်",
+    "zh": "择日"
+   },
+   "l": {
+    "en": "Two dates for a wedding, a move, an opening or a car.",
+    "th": "ฤกษ์สองวัน งานแต่ง ขึ้นบ้านใหม่ เปิดร้าน ออกรถ",
+    "my": "မင်္ဂလာဆောင်၊ အိမ်ပြောင်း၊ ဆိုင်ဖွင့်၊ ကားအတွက် ရက်နှစ်ရက်။",
+    "zh": "婚礼、搬家、开业或提车的两个吉日。"
+   },
+   "kw": "auspicious date good day wedding date moving date opening date new car ฤกษ์ ฤกษ์ดี ฤกษ์แต่งงาน ฤกษ์ขึ้นบ้านใหม่ ฤกษ์ออกรถ မင်္ဂလာရက် 择日 吉日 黄道吉日",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "date-en",
+     "n": {
+      "en": "In English",
+      "th": "เป็นภาษาอังกฤษ",
+      "my": "အင်္ဂလိပ်လို",
+      "zh": "英文"
+     },
+     "price": {
+      "usd": 59
+     }
+    },
+    {
+     "i": "date-th",
+     "n": {
+      "en": "In Thai",
+      "th": "เป็นภาษาไทย",
+      "my": "ထိုင်းလို",
+      "zh": "泰文"
+     }
+    }
+   ]
+  },
+  {
+   "id": "name-pick",
+   "cat": "luck",
+   "n": {
+    "en": "Auspicious name",
+    "th": "ตั้งชื่อมงคล",
+    "my": "မင်္ဂလာအမည်",
+    "zh": "起名"
+   },
+   "l": {
+    "en": "Three names with their meanings, for a person or a business.",
+    "th": "สามชื่อพร้อมความหมาย สำหรับคนหรือธุรกิจ",
+    "my": "လူ သို့မဟုတ် လုပ်ငန်းအတွက် အဓိပ္ပာယ်ပါ အမည်သုံးခု။",
+    "zh": "三个带含义的名字，人名或店名。"
+   },
+   "kw": "name auspicious name baby name name change business name shop name ตั้งชื่อ ชื่อมงคล เปลี่ยนชื่อ ตั้งชื่อร้าน အမည်ပေး 起名 改名 公司起名",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "name-pick",
+     "n": {
+      "en": "For a person",
+      "th": "สำหรับคน",
+      "my": "လူအတွက်",
+      "zh": "人名"
+     }
+    },
+    {
+     "i": "name-biz",
+     "n": {
+      "en": "For a business",
+      "th": "สำหรับธุรกิจ",
+      "my": "လုပ်ငန်းအတွက်",
+      "zh": "店名或公司名"
+     }
+    }
+   ]
+  },
+  {
+   "id": "lucky-number",
+   "cat": "luck",
+   "n": {
+    "en": "Lucky phone number or plate",
+    "th": "เบอร์หรือทะเบียนมงคล",
+    "my": "ကံကောင်းဖုန်းနံပါတ် သို့မဟုတ် ကားနံပါတ်",
+    "zh": "吉祥手机号或车牌"
+   },
+   "l": {
+    "en": "One number read, or three picked for you.",
+    "th": "อ่านเบอร์ให้ หรือคัดให้สามชุด",
+    "my": "နံပါတ်တစ်ခု ဖတ်ပေး သို့မဟုတ် သုံးခု ရွေးပေး။",
+    "zh": "解读一个号码，或替您挑三个。"
+   },
+   "kw": "lucky number phone number license plate numerology เบอร์มงคล ทะเบียนมงคล เลขมงคล 吉祥号码 车牌 号码",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lucky-number"
+    }
+   ]
+  },
+  {
+   "id": "name-charm",
+   "cat": "luck",
+   "n": {
+    "en": "Name charm",
+    "th": "เครื่องรางเขียนชื่อ",
+    "my": "အမည်ပါ ဆောင်ဖွယ်",
+    "zh": "姓名护身符"
+   },
+   "l": {
+    "en": "A small charm drawn with your name, sent with a photo.",
+    "th": "เครื่องรางเล็กเขียนชื่อคุณ ส่งพร้อมรูป",
+    "my": "သင့်အမည်ပါ ဆောင်ဖွယ်ငယ်၊ ဓာတ်ပုံနှင့် ပို့။",
+    "zh": "写上您名字的小护身符，附照片寄出。"
+   },
+   "kw": "name charm talisman amulet personalised yant เครื่องราง ยันต์ชื่อ 护身符 符",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "name-charm",
+     "price": {
+      "usd": 59
+     }
+    }
+   ]
+  },
+  {
+   "id": "pha-yant",
+   "cat": "luck",
+   "n": {
+    "en": "Pha yant drawn for you",
+    "th": "ผ้ายันต์เขียนให้",
+    "my": "ယန္တရား အထည် ရေးပေးခြင်း",
+    "zh": "手绘符布"
+   },
+   "l": {
+    "en": "A yant cloth drawn by an ajarn with your name and birth date.",
+    "th": "ผ้ายันต์ที่อาจารย์เขียนพร้อมชื่อและวันเกิด",
+    "my": "ဆရာက သင့်အမည်နှင့် မွေးရက်ပါ ရေးသော ယန္တရားအထည်။",
+    "zh": "由法师写上您姓名和生日的符布。"
+   },
+   "kw": "pha yant yant cloth sacred cloth ผ้ายันต์ ยันต์ 符布 符",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "pha-yant"
+    }
+   ]
+  },
+  {
+   "id": "amulet",
+   "cat": "luck",
+   "n": {
+    "en": "Amulets",
+    "th": "พระเครื่อง",
+    "my": "ဆောင်ဖွယ်ရုပ်တု",
+    "zh": "佛牌"
+   },
+   "l": {
+    "en": "An opinion from your photos, or one bought for you at a market.",
+    "th": "ดูจากรูป หรือซื้อให้ที่ตลาด",
+    "my": "ဓာတ်ပုံမှ အမြင် သို့မဟုတ် ဈေးတွင် ဝယ်ပေး။",
+    "zh": "根据照片给意见，或去市场代买。"
+   },
+   "kw": "amulet thai amulet buddha amulet appraisal real or fake price buy amulet market พระเครื่อง ดูพระ เช่าพระ ตลาดพระ 佛牌 泰国佛牌 鉴定 代购",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "amulet-check",
+     "n": {
+      "en": "Opinion from photos",
+      "th": "ดูจากรูป",
+      "my": "ဓာတ်ပုံမှ အမြင်",
+      "zh": "看照片给意见"
+     },
+     "u": "amulet",
+     "max": 10
+    },
+    {
+     "i": "amulet-buy",
+     "n": {
+      "en": "Bought for you",
+      "th": "ซื้อให้",
+      "my": "ဝယ်ပေး",
+      "zh": "代买"
+     }
+    }
+   ]
+  },
+  {
+   "id": "almanac-widget",
+   "cat": "luck",
+   "n": {
+    "en": "Almanac or fortune calculator for your site",
+    "th": "ปฏิทินหรือเครื่องคำนวณดวงบนเว็บ",
+    "my": "ဝက်ဘ်ဆိုက်အတွက် ပြက္ခဒိန် သို့မဟုတ် ဗေဒင်တွက်စက်",
+    "zh": "网站用的历法或算命工具"
+   },
+   "l": {
+    "en": "Lanna calendar, Bazi or I Ching, on your own site.",
+    "th": "ปฏิทินล้านนา ปาจื้อ หรืออี้จิง บนเว็บของคุณ",
+    "my": "လန်နာ ပြက္ခဒိန်၊ Bazi သို့မဟုတ် I Ching၊ သင့်ဆိုက်ပေါ်။",
+    "zh": "兰纳历、八字或易经，放在您的网站上。"
+   },
+   "kw": "almanac calendar lanna calendar calculator widget fortune app ปฏิทินล้านนา ปฏิทิน 历法 黄历 工具",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "almanac-widget"
+    }
+   ]
+  },
+  {
+   "id": "eink-clock",
+   "cat": "luck",
+   "n": {
+    "en": "Lanna almanac clock",
+    "th": "นาฬิกาปฏิทินล้านนา",
+    "my": "လန်နာ ပြက္ခဒိန် နာရီ",
+    "zh": "兰纳历时钟"
+   },
+   "l": {
+    "en": "Solar-powered e-ink clock showing the Lanna calendar day.",
+    "th": "นาฬิกาจอ e-ink พลังแสงอาทิตย์ แสดงวันปฏิทินล้านนา",
+    "my": "လန်နာ ပြက္ခဒိန်ရက်ကို ပြသော နေရောင်ခြည်သုံး e-ink နာရီ။",
+    "zh": "太阳能电子墨水屏时钟，显示兰纳历日期。"
+   },
+   "kw": "clock e-ink lanna calendar solar temple hotel gift นาฬิกา ปฏิทินล้านนา 时钟 日历",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "eink-clock"
+    }
+   ]
+  },
+  {
+   "id": "amulet-seller",
+   "cat": "luck",
+   "n": {
+    "en": "Amulet seller page on Mot Dang",
+    "th": "หน้าร้านพระบนมดแดง",
+    "my": "Mot Dang တွင် ဆောင်ဖွယ်ရောင်းသူ စာမျက်နှာ",
+    "zh": "Mot Dang 佛牌商家页"
+   },
+   "l": {
+    "en": "Your stall's amulets with the amulet camera.",
+    "th": "พระของแผงคุณพร้อมกล้องถ่ายพระ",
+    "my": "ဆောင်ဖွယ်ကင်မရာဖြင့် သင့်ဆိုင်၏ ဆောင်ဖွယ်များ။",
+    "zh": "用佛牌相机展示您摊位的佛牌。"
+   },
+   "kw": "amulet seller shop page dealer แผงพระ ร้านพระ 佛牌商家",
+   "act": "open",
+   "href": "https://sites.motdang.net/amulet-demo",
+   "pshow": {
+    "en": "Gold ฿3,000 a year",
+    "th": "Gold ปีละ ฿3,000",
+    "my": "Gold တစ်နှစ် ฿3,000",
+    "zh": "Gold 每年 ฿3,000"
+   }
+  },
+  {
+   "id": "merit-you",
+   "cat": "merit",
+   "n": {
+    "en": "Merit made for you",
+    "th": "ทำบุญแทนคุณ",
+    "my": "သင့်ကိုယ်စား ကုသိုလ်ပြုခြင်း",
+    "zh": "代您做功德"
+   },
+   "l": {
+    "en": "At a wat in your name, with photos or video and the date.",
+    "th": "ที่วัดในชื่อของคุณ พร้อมรูปหรือวิดีโอและวันที่",
+    "my": "သင့်အမည်ဖြင့် ဘုန်းကြီးကျောင်းတွင်၊ ဓာတ်ပုံ/ဗီဒီယိုနှင့် ရက်စွဲ။",
+    "zh": "以您的名义在寺庙进行，附照片或视频和日期。"
+   },
+   "kw": "merit making tamboon alms monks sangkhathan robes donation temple online merit ทำบุญ ทำบุญแทน ฝากทำบุญ ใส่บาตร สังฆทาน ถวายผ้าไตร ปล่อยปลา ကုသိုလ် ဆွမ်း 做功德 布施 斋僧 放生",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "merit-alms",
+     "n": {
+      "en": "Food for monks at dawn",
+      "th": "ใส่บาตรตอนเช้า",
+      "my": "နံနက် ဆွမ်းလောင်း",
+      "zh": "清晨斋僧"
+     }
+    },
+    {
+     "i": "merit-set",
+     "n": {
+      "en": "A sangkhathan set",
+      "th": "ถวายสังฆทาน",
+      "my": "သင်္ဃဒါန် အစုံ",
+      "zh": "僧伽布施"
+     }
+    },
+    {
+     "i": "merit-gift",
+     "n": {
+      "en": "Robes, an image or a donation",
+      "th": "ผ้าไตร พระพุทธรูป หรือปัจจัย",
+      "my": "သင်္ကန်း၊ ရုပ်ပွား သို့မဟုတ် အလှူငွေ",
+      "zh": "袈裟、佛像或捐款"
+     }
+    },
+    {
+     "i": "merit-fish",
+     "n": {
+      "en": "Native fish released",
+      "th": "ปล่อยปลาพันธุ์พื้นเมือง",
+      "my": "ဒေသခံ ငါးလွှတ်",
+      "zh": "放生本地鱼"
+     }
+    }
+   ]
+  },
+  {
+   "id": "merit-dead",
+   "cat": "merit",
+   "n": {
+    "en": "Merit for someone who died",
+    "th": "ทำบุญอุทิศผู้ล่วงลับ",
+    "my": "ကွယ်လွန်သူအတွက် ကုသိုလ်",
+    "zh": "为亡者做功德"
+   },
+   "l": {
+    "en": "The 7th, 50th or 100th day: monks invited, photos sent.",
+    "th": "7 วัน 50 วัน 100 วัน นิมนต์พระ ส่งรูปให้",
+    "my": "7၊ 50 သို့မဟုတ် 100 ရက်မြောက်: ဘုန်းကြီးပင့်၊ ဓာတ်ပုံပို့။",
+    "zh": "头七、五十日或百日：请僧、发照片。"
+   },
+   "kw": "merit for the dead funeral 7 days 50 days 100 days memorial ทำบุญ 7 วัน 50 วัน 100 วัน อุทิศส่วนกุศล 超度 头七 百日",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "merit-dead"
+    }
+   ]
+  },
+  {
+   "id": "house-blessing",
+   "cat": "merit",
+   "n": {
+    "en": "House or shop blessing",
+    "th": "ทำบุญบ้านหรือเปิดร้าน",
+    "my": "အိမ် သို့မဟုတ် ဆိုင် မင်္ဂလာ",
+    "zh": "新居或开业祈福"
+   },
+   "l": {
+    "en": "Nine monks invited, the ceremony arranged, a translator.",
+    "th": "นิมนต์พระเก้ารูป จัดพิธี มีล่าม",
+    "my": "ဘုန်းကြီးကိုးပါးပင့်၊ အခမ်းအနား စီစဉ်၊ စကားပြန်ပါ။",
+    "zh": "请九位僧人、安排仪式、配翻译。"
+   },
+   "kw": "house blessing new home blessing shop opening monks ceremony ทำบุญบ้าน ทำบุญขึ้นบ้านใหม่ ทำบุญเปิดร้าน นิมนต์พระ 新居祈福 开业 请僧",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "house-blessing"
+    }
+   ]
+  },
+  {
+   "id": "su-khwan",
+   "cat": "merit",
+   "n": {
+    "en": "Su khwan ceremony",
+    "th": "พิธีสู่ขวัญ",
+    "my": "ဆူခွမ် အခမ်းအနား",
+    "zh": "招魂礼"
+   },
+   "l": {
+    "en": "A mo khwan found and the rite arranged, with a translator.",
+    "th": "หาหมอขวัญและจัดพิธี พร้อมล่าม",
+    "my": "မိုခွမ် ရှာပြီး အခမ်းအနား စီစဉ်၊ စကားပြန်ပါ။",
+    "zh": "请招魂师并安排仪式，配翻译。"
+   },
+   "kw": "su khwan baci bai si khwan ceremony welcome farewell สู่ขวัญ บายศรี ผูกข้อมือ 招魂 拴线",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "su-khwan-arr"
+    }
+   ]
+  },
+  {
+   "id": "lanna-wedding",
+   "cat": "merit",
+   "n": {
+    "en": "Lanna wedding ceremony",
+    "th": "พิธีแต่งงานแบบล้านนา",
+    "my": "လန်နာ မင်္ဂလာဆောင်",
+    "zh": "兰纳婚礼"
+   },
+   "l": {
+    "en": "Monks, the khwan rite, Lanna dress and the running order.",
+    "th": "นิมนต์พระ สู่ขวัญ ชุดล้านนา และลำดับพิธี",
+    "my": "ဘုန်းကြီး၊ ခွမ် အခမ်းအနား၊ လန်နာဝတ်စုံနှင့် အစီအစဉ်။",
+    "zh": "僧人、招魂礼、兰纳服饰和流程。"
+   },
+   "kw": "wedding lanna wedding thai wedding ceremony monks marriage แต่งงาน งานแต่งล้านนา 婚礼 泰式婚礼",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lanna-wedding"
+    }
+   ]
+  },
+  {
+   "id": "retire",
+   "cat": "care",
+   "n": {
+    "en": "Retiring here, handled",
+    "th": "เกษียณที่นี่ เราจัดการให้",
+    "my": "ဤနေရာတွင် အငြိမ်းစားယူခြင်း",
+    "zh": "在此养老，一站办妥"
+   },
+   "l": {
+    "en": "Visa, bank, phone, housing, hospital and insurance, then one person to call.",
+    "th": "วีซ่า ธนาคาร โทรศัพท์ ที่พัก โรงพยาบาล ประกัน แล้วมีคนเดียวให้ติดต่อ",
+    "my": "ဗီဇာ၊ ဘဏ်၊ ဖုန်း၊ နေအိမ်၊ ဆေးရုံ၊ အာမခံ၊ ပြီးလျှင် ဆက်သွယ်ရန် လူတစ်ဦး။",
+    "zh": "签证、银行、电话、住房、医院和保险，之后一位专人对接。"
+   },
+   "kw": "retirement retire in thailand retirement concierge relocation expat retirement visa pension เกษียณ ย้ายมาอยู่ไทย 养老 退休 移居泰国",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "retire-setup",
+     "n": {
+      "en": "Set-up",
+      "th": "เริ่มต้น",
+      "my": "စတင်",
+      "zh": "安顿"
+     }
+    },
+    {
+     "i": "retire-month",
+     "n": {
+      "en": "Monthly",
+      "th": "รายเดือน",
+      "my": "လစဉ်",
+      "zh": "按月"
+     },
+     "u": "month",
+     "max": 12
+    },
+    {
+     "i": "retire-hour",
+     "n": {
+      "en": "Extra hours",
+      "th": "ชั่วโมงเพิ่ม",
+      "my": "နာရီ ထပ်",
+      "zh": "追加工时"
+     },
+     "u": "hour",
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "elder-care",
+   "cat": "care",
+   "n": {
+    "en": "Care home or caregiver",
+    "th": "บ้านพักหรือผู้ดูแลผู้สูงอายุ",
+    "my": "သက်ကြီးစောင့်ရှောက်ရေးအိမ် သို့မဟုတ် စောင့်ရှောက်သူ",
+    "zh": "养老院或护工"
+   },
+   "l": {
+    "en": "Care homes shortlisted, visited and compared, or a caregiver hired.",
+    "th": "คัด ไปดู และเทียบบ้านพัก หรือจ้างผู้ดูแลให้",
+    "my": "စောင့်ရှောက်ရေးအိမ်များ ရွေး၊ သွားကြည့်၊ နှိုင်းယှဉ် သို့မဟုတ် စောင့်ရှောက်သူ ငှား။",
+    "zh": "筛选、实地看、比较养老院，或代聘护工。"
+   },
+   "kw": "elder care nursing home care home caregiver dementia stroke assisted living chiang mai ดูแลผู้สูงอายุ บ้านพักคนชรา ผู้ดูแล 养老院 护工 老人照护",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "care-placement",
+     "n": {
+      "en": "Care home placement",
+      "th": "หาบ้านพักผู้สูงอายุ",
+      "my": "သက်ကြီးစောင့်ရှောက်ရေးအိမ် ရှာပေးခြင်း",
+      "zh": "养老院安置"
+     }
+    },
+    {
+     "i": "caregiver-hire",
+     "n": {
+      "en": "Caregiver found and hired",
+      "th": "หาและจ้างผู้ดูแล",
+      "my": "စောင့်ရှောက်သူ ရှာပြီး ငှား",
+      "zh": "代找代聘护工"
+     }
+    }
+   ]
+  },
+  {
+   "id": "care-visits",
+   "cat": "care",
+   "n": {
+    "en": "Visits to an older person",
+    "th": "ไปเยี่ยมผู้สูงอายุ",
+    "my": "သက်ကြီးကို သွားရောက်တွေ့ဆုံခြင်း",
+    "zh": "探望老人"
+   },
+   "l": {
+    "en": "Someone checks in and writes the family what they saw.",
+    "th": "มีคนไปเยี่ยมแล้วเขียนบอกครอบครัว",
+    "my": "တစ်ဦးက သွားတွေ့ပြီး မိသားစုထံ ရေးပို့။",
+    "zh": "有人上门探望，并把所见写给家人。"
+   },
+   "kw": "visit parents check on mum dad elderly family abroad เยี่ยม พ่อแม่ ผู้สูงอายุ 探望 父母 老人",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "care-visit",
+     "n": {
+      "en": "One visit",
+      "th": "ครั้งเดียว",
+      "my": "တစ်ကြိမ်",
+      "zh": "一次"
+     },
+     "u": "visit",
+     "max": 8
+    },
+    {
+     "i": "care-visits-month",
+     "n": {
+      "en": "Weekly, monthly",
+      "th": "ทุกสัปดาห์ รายเดือน",
+      "my": "အပတ်စဉ်၊ လစဉ်",
+      "zh": "每周，按月"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "specialist",
+   "cat": "care",
+   "n": {
+    "en": "Specialist visit with an interpreter",
+    "th": "พบแพทย์เฉพาะทางพร้อมล่าม",
+    "my": "စကားပြန်ပါ အထူးကုဆရာဝန်ပြခြင်း",
+    "zh": "陪同看专科并翻译"
+   },
+   "l": {
+    "en": "Found and booked; dialysis, eyes, hearing, physio, dental.",
+    "th": "หาและจองให้ ฟอกไต ตา หู กายภาพ ฟัน",
+    "my": "ရှာပြီး ဘွတ်ကင်; ကျောက်ကပ်၊ မျက်စိ၊ နား၊ ကိုယ်ကာယ၊ သွား။",
+    "zh": "代找代约：透析、眼科、听力、理疗、牙科。"
+   },
+   "kw": "specialist doctor clinic dialysis eye hearing physio dental vaccine counselling hospital appointment หมอเฉพาะทาง ฟอกไต ตา หู กายภาพ ฟัน 专科 透析 眼科 牙科 预约",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "specialist",
+     "n": {
+      "en": "With an interpreter, up to 4 hours",
+      "th": "พร้อมล่าม ไม่เกิน 4 ชั่วโมง",
+      "my": "စကားပြန်ပါ၊ 4 နာရီအထိ",
+      "zh": "配翻译，4 小时内"
+     }
+    },
+    {
+     "i": "specialist-book",
+     "n": {
+      "en": "Booked only",
+      "th": "จองอย่างเดียว",
+      "my": "ဘွတ်ကင်သာ",
+      "zh": "仅预约"
+     }
+    }
+   ]
+  },
+  {
+   "id": "death-help",
+   "cat": "care",
+   "n": {
+    "en": "When someone dies here",
+    "th": "เมื่อมีคนเสียชีวิตที่นี่",
+    "my": "ဤနေရာတွင် တစ်ဦးဦး ကွယ်လွန်သည့်အခါ",
+    "zh": "有人在此离世时"
+   },
+   "l": {
+    "en": "Registration, embassy papers, cremation or repatriation arranged.",
+    "th": "แจ้งการตาย เอกสารสถานทูต ฌาปนกิจหรือส่งร่างกลับ",
+    "my": "မှတ်ပုံတင်၊ သံရုံးစာရွက်၊ မီးသင်္ဂြိုဟ် သို့မဟုတ် ပြန်ပို့ခြင်း စီစဉ်။",
+    "zh": "办理死亡登记、使馆文件、火化或遗体运回。"
+   },
+   "kw": "death funeral cremation repatriation embassy death certificate die in thailand เสียชีวิต งานศพ ฌาปนกิจ ส่งร่างกลับ 去世 葬礼 火化 遗体运回 使馆",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "death-help"
+    }
+   ]
+  },
+  {
+   "id": "lab-test",
+   "cat": "care",
+   "n": {
+    "en": "Lab test arranged",
+    "th": "ส่งตรวจห้องแล็บให้",
+    "my": "ဓာတ်ခွဲခန်း စစ်ဆေးမှု စီစဉ်ပေးခြင်း",
+    "zh": "代送实验室检测"
+   },
+   "l": {
+    "en": "A sample taken to a Thai lab; the report translated.",
+    "th": "ส่งตัวอย่างไปแล็บในไทย และแปลผล",
+    "my": "နမူနာကို ထိုင်းဓာတ်ခွဲခန်းသို့ ပို့၊ အစီရင်ခံစာ ဘာသာပြန်။",
+    "zh": "把样品送到泰国实验室，并翻译报告。"
+   },
+   "kw": "lab test laboratory water test food test pesticide cannabis gc-ms ตรวจแล็บ ตรวจน้ำ ตรวจสารเคมี 实验室 检测 水质",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lab-test"
+    }
+   ]
+  },
+  {
+   "id": "clean-air",
+   "cat": "care",
+   "n": {
+    "en": "Clean air at home",
+    "th": "อากาศสะอาดในบ้าน",
+    "my": "အိမ်တွင် လေသန့်",
+    "zh": "家中洁净空气"
+   },
+   "l": {
+    "en": "A PM2.5 sensor and purifier sized, placed, with a filter plan.",
+    "th": "เครื่องวัดฝุ่นและเครื่องฟอก ขนาดพอดี จัดวาง พร้อมแผนไส้กรอง",
+    "my": "PM2.5 တိုင်းကိရိယာနှင့် လေသန့်စက် ချိန်ညှိ၊ နေရာချ၊ filter အစီအစဉ်။",
+    "zh": "PM2.5 检测仪和净化器选型、摆放，附滤网计划。"
+   },
+   "kw": "pm2.5 smoke haze burning season air purifier air quality ฝุ่น pm2.5 เครื่องฟอกอากาศ หมอกควัน 雾霾 空气净化器",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "clean-air"
+    }
+   ]
+  },
+  {
+   "id": "accident",
+   "cat": "care",
+   "n": {
+    "en": "After an accident",
+    "th": "หลังเกิดอุบัติเหตุ",
+    "my": "မတော်တဆမှုအပြီး",
+    "zh": "事故之后"
+   },
+   "l": {
+    "en": "Police station, report translated, insurer or rental shop in Thai.",
+    "th": "ไปสถานีตำรวจ แปลบันทึก คุยกับประกันหรือร้านเช่า",
+    "my": "ရဲစခန်း၊ အစီရင်ခံစာ ဘာသာပြန်၊ အာမခံ သို့မဟုတ် ငှားဆိုင်နှင့် ထိုင်းလို။",
+    "zh": "陪同去警局、翻译报告、用泰语对接保险或租车行。"
+   },
+   "kw": "accident police report insurance claim scooter rental damage motorbike crash อุบัติเหตุ แจ้งความ ประกัน 事故 报警 保险 理赔",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "accident"
+    }
+   ]
+  },
+  {
+   "id": "med-papers",
+   "cat": "care",
+   "n": {
+    "en": "Medicine papers for travel",
+    "th": "เอกสารยาสำหรับเดินทาง",
+    "my": "ခရီးသွားရန် ဆေးစာရွက်စာတမ်း",
+    "zh": "旅行用药证明文件"
+   },
+   "l": {
+    "en": "Letters and Thai FDA forms for your own medicine, case by case.",
+    "th": "จดหมายและแบบฟอร์ม อย. สำหรับยาของคุณ เป็นกรณีไป",
+    "my": "ကိုယ်ပိုင်ဆေးအတွက် စာနှင့် ထိုင်း FDA ဖောင်၊ တစ်ခုချင်း။",
+    "zh": "个人药品的证明信和泰国药监表格，个案处理。"
+   },
+   "kw": "medicine travel prescription fda permit bring medicine thailand customs adhd ยา อย. นำยาเข้า 药品 处方 入境",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per case",
+    "th": "ราคาตามกรณี",
+    "my": "ကိစ္စအလိုက် စျေးနှုန်း",
+    "zh": "按个案报价"
+   }
+  },
+  {
+   "id": "tour-day",
+   "cat": "tours",
+   "n": {
+    "en": "Private day tour",
+    "th": "ทัวร์ส่วนตัวหนึ่งวัน",
+    "my": "တစ်ရက်တာ ကိုယ်ပိုင်ခရီး",
+    "zh": "私人一日游"
+   },
+   "l": {
+    "en": "Car, fuel and a licensed guide; entries and lunch at cost.",
+    "th": "รถ น้ำมัน ไกด์มีใบอนุญาต ค่าเข้าและอาหารตามจริง",
+    "my": "ကား၊ ဆီ၊ လိုင်စင်ရ ဧည့်လမ်းညွှန်၊ ဝင်ကြေးနှင့် နေ့လယ်စာ အမှန်အတိုင်း။",
+    "zh": "含车、油费和持证导游；门票午餐实报。"
+   },
+   "kw": "tour day tour private tour chiang rai white temple blue temple black house golden triangle doi suthep doi inthanon ทัวร์ เที่ยว วัดร่องขุ่น สามเหลี่ยมทองคำ ดอยสุเทพ 一日游 白庙 金三角 素贴山 包车",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "tour-cr",
+     "n": {
+      "en": "Chiang Rai, up to 3 people",
+      "th": "เชียงราย ไม่เกิน 3 คน",
+      "my": "ချင်းရိုင်၊ 3 ဦးအထိ",
+      "zh": "清莱，最多 3 人"
+     }
+    },
+    {
+     "i": "tour-cm",
+     "n": {
+      "en": "Chiang Mai, up to 3 people",
+      "th": "เชียงใหม่ ไม่เกิน 3 คน",
+      "my": "ချင်းမိုင်၊ 3 ဦးအထိ",
+      "zh": "清迈，最多 3 人"
+     }
+    }
+   ],
+   "pop": null
+  },
+  {
+   "id": "tour-3d",
+   "cat": "tours",
+   "n": {
+    "en": "Three days in the north",
+    "th": "สามวันในภาคเหนือ",
+    "my": "မြောက်ပိုင်း သုံးရက်",
+    "zh": "北部三日游"
+   },
+   "l": {
+    "en": "Two nights, car, guide, breakfasts and two lunches, per person.",
+    "th": "สองคืน รถ ไกด์ อาหารเช้า อาหารกลางวันสองมื้อ ต่อคน",
+    "my": "နှစ်ည၊ ကား၊ ဧည့်လမ်းညွှန်၊ မနက်စာနှင့် နေ့လယ်စာ နှစ်ကြိမ်၊ တစ်ဦးလျှင်။",
+    "zh": "两晚住宿、包车、导游、早餐和两顿午餐，按人计。"
+   },
+   "kw": "package tour multi day 3 days 2 nights mae hong son loop north thailand ทัวร์ 3 วัน 2 คืน แพ็กเกจ 三天两夜 跟团 套餐",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "tour-3d",
+     "u": "person",
+     "max": 10
+    }
+   ]
+  },
+  {
+   "id": "car-guide",
+   "cat": "tours",
+   "n": {
+    "en": "Car, driver or guide for a day",
+    "th": "รถ คนขับ หรือไกด์หนึ่งวัน",
+    "my": "တစ်ရက် ကား၊ ယာဉ်မောင်း သို့မဟုတ် ဧည့်လမ်းညွှန်",
+    "zh": "一日包车、司机或导游"
+   },
+   "l": {
+    "en": "Nine hours with a driver, or a licensed guide for eight.",
+    "th": "รถพร้อมคนขับเก้าชั่วโมง หรือไกด์แปดชั่วโมง",
+    "my": "ယာဉ်မောင်းနှင့် ကိုးနာရီ သို့မဟုတ် လိုင်စင်ရ ဧည့်လမ်းညွှန် ရှစ်နာရီ။",
+    "zh": "司机九小时，或持证导游八小时。"
+   },
+   "kw": "driver car hire private driver van guide tour guide chinese guide japanese guide รถเช่าพร้อมคนขับ ไกด์ 司机 包车 导游 中文导游",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "driver-day",
+     "n": {
+      "en": "Car and driver",
+      "th": "รถพร้อมคนขับ",
+      "my": "ကားနှင့် ယာဉ်မောင်း",
+      "zh": "车和司机"
+     }
+    },
+    {
+     "i": "guide-day",
+     "n": {
+      "en": "Guide, English",
+      "th": "ไกด์ภาษาอังกฤษ",
+      "my": "ဧည့်လမ်းညွှန်၊ အင်္ဂလိပ်",
+      "zh": "英语导游"
+     }
+    },
+    {
+     "i": "guide-day-other",
+     "n": {
+      "en": "Guide, Chinese, Japanese, Korean or others",
+      "th": "ไกด์ภาษาจีน ญี่ปุ่น เกาหลี หรืออื่น ๆ",
+      "my": "ဧည့်လမ်းညွှန်၊ တရုတ်၊ ဂျပန်၊ ကိုရီးယား စသည်",
+      "zh": "中文、日语、韩语等导游"
+     }
+    }
+   ]
+  },
+  {
+   "id": "experience",
+   "cat": "tours",
+   "n": {
+    "en": "Class or workshop, with a translator",
+    "th": "คลาสหรือเวิร์กช็อปพร้อมล่าม",
+    "my": "စကားပြန်ပါ သင်တန်း သို့မဟုတ် အလုပ်ရုံ",
+    "zh": "带翻译的课程或手作"
+   },
+   "l": {
+    "en": "Muay thai, cooking, silver or weaving, booked for up to 4.",
+    "th": "มวยไทย ทำอาหาร เครื่องเงิน ทอผ้า จองให้ไม่เกิน 4 คน",
+    "my": "မွေထိုင်း၊ ချက်ပြုတ်၊ ငွေထည်၊ ရက်ကန်း — 4 ဦးအထိ ဘွတ်ကင်။",
+    "zh": "泰拳、烹饪、银器或织布，最多 4 人预订。"
+   },
+   "kw": "muay thai class cooking class silver workshop weaving class experience activity มวยไทย คลาสทำอาหาร เครื่องเงิน ทอผ้า 泰拳 烹饪课 手作 体验",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "experience"
+    }
+   ]
+  },
+  {
+   "id": "lantern",
+   "cat": "tours",
+   "n": {
+    "en": "Lantern night in Lamphun",
+    "th": "คืนโคมแสนดวงที่ลำพูน",
+    "my": "လမ်ဖွန်း မီးအိမ်ည",
+    "zh": "南奔万灯之夜"
+   },
+   "l": {
+    "en": "November at Wat Phra That Hariphunchai: transport, dinner, a guide.",
+    "th": "พฤศจิกายน ที่วัดพระธาตุหริภุญชัย รถ อาหารเย็น ไกด์",
+    "my": "နိုဝင်ဘာ၊ ဝပ်ဖရာထတ် ဟာရီဖွန်ချိုင်: သယ်ယူ၊ ညစာ၊ ဧည့်လမ်းညွှန်။",
+    "zh": "十一月在哈里奔猜寺：交通、晚餐、导游。"
+   },
+   "kw": "lantern festival yi peng loy krathong lamphun november lanterns ยี่เป็ง ลอยกระทง โคมแสนดวง ลำพูน 水灯节 天灯节 灯会",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "lantern-seat",
+     "u": "seat",
+     "max": 16
+    }
+   ]
+  },
+  {
+   "id": "balloon",
+   "cat": "tours",
+   "n": {
+    "en": "Balloon or paramotor flight",
+    "th": "บินบอลลูนหรือพารามอเตอร์",
+    "my": "လေပူဖောင်း သို့မဟုတ် ပါရာမော်တာ ပျံသန်းမှု",
+    "zh": "热气球或动力伞"
+   },
+   "l": {
+    "en": "Booked with transfers, per person.",
+    "th": "จองพร้อมรถรับส่ง ต่อคน",
+    "my": "ကားကြိုပို့နှင့် ဘွတ်ကင်၊ တစ်ဦးလျှင်။",
+    "zh": "含接送预订，按人计。"
+   },
+   "kw": "hot air balloon balloon festival singha park paramotor flight sunrise บอลลูน พารามอเตอร์ สิงห์ปาร์ค 热气球 动力伞",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "balloon-cr",
+     "n": {
+      "en": "Balloon, Chiang Rai",
+      "th": "บอลลูน เชียงราย",
+      "my": "လေပူဖောင်း၊ ချင်းရိုင်",
+      "zh": "热气球，清莱"
+     },
+     "u": "person",
+     "max": 4
+    },
+    {
+     "i": "balloon-cm",
+     "n": {
+      "en": "Balloon, Chiang Mai",
+      "th": "บอลลูน เชียงใหม่",
+      "my": "လေပူဖောင်း၊ ချင်းမိုင်",
+      "zh": "热气球，清迈"
+     },
+     "u": "person",
+     "max": 4
+    },
+    {
+     "i": "paramotor",
+     "n": {
+      "en": "Paramotor",
+      "th": "พารามอเตอร์",
+      "my": "ပါရာမော်တာ",
+      "zh": "动力伞"
+     },
+     "u": "person",
+     "max": 4
+    }
+   ]
+  },
+  {
+   "id": "honeymoon",
+   "cat": "tours",
+   "n": {
+    "en": "Lanna honeymoon",
+    "th": "ฮันนีมูนล้านนา",
+    "my": "လန်နာ ဟန်းနီးမွန်း",
+    "zh": "兰纳蜜月"
+   },
+   "l": {
+    "en": "Two and a half days in Chiang Rai with a su khwan for two.",
+    "th": "สองวันครึ่งในเชียงราย พร้อมพิธีสู่ขวัญสำหรับสองคน",
+    "my": "ချင်းရိုင်တွင် နှစ်ရက်ခွဲ၊ နှစ်ဦးအတွက် ဆူခွမ်။",
+    "zh": "清莱两天半，含两人招魂礼。"
+   },
+   "kw": "honeymoon luxury couple romantic lanna su khwan chiang rai ฮันนีมูน 蜜月 奢华",
+   "act": "link",
+   "href": "https://motdang.net/sites/su-khwan/",
+   "pshow": {
+    "en": "Inquire",
+    "th": "สอบถาม",
+    "my": "မေးမြန်းပါ",
+    "zh": "请咨询"
+   }
+  },
+  {
+   "id": "thai-lessons",
+   "cat": "translate",
+   "n": {
+    "en": "Thai lessons",
+    "th": "เรียนภาษาไทย",
+    "my": "ထိုင်းဘာသာ သင်ခန်းစာ",
+    "zh": "泰语课"
+   },
+   "l": {
+    "en": "By video, or in person in Chiang Rai or Chiang Mai.",
+    "th": "ทางวิดีโอ หรือพบตัวในเชียงรายหรือเชียงใหม่",
+    "my": "ဗီဒီယိုဖြင့် သို့မဟုတ် ချင်းရိုင်/ချင်းမိုင်တွင် လူကိုယ်တိုင်။",
+    "zh": "视频上课，或在清莱、清迈面授。"
+   },
+   "kw": "thai lessons learn thai thai teacher thai tutor เรียนภาษาไทย ครูสอนภาษาไทย 泰语课 学泰语",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "thai-lessons",
+     "u": "hour",
+     "max": 40
+    }
+   ]
+  },
+  {
+   "id": "german",
+   "cat": "translate",
+   "n": {
+    "en": "German pages, Swiss spelling",
+    "th": "หน้าเว็บภาษาเยอรมัน แบบสวิส",
+    "my": "ဂျာမန် စာမျက်နှာ (ဆွစ်)",
+    "zh": "德语网页（瑞士拼写）"
+   },
+   "l": {
+    "en": "A web page put into German, up to 300 words.",
+    "th": "แปลหน้าเว็บเป็นภาษาเยอรมัน ไม่เกิน 300 คำ",
+    "my": "ဝက်ဘ်စာမျက်နှာကို ဂျာမန်သို့၊ စကားလုံး 300 အထိ။",
+    "zh": "网页译成德语，每页最多 300 词。"
+   },
+   "kw": "german translation swiss german deutsch schweiz übersetzung แปลภาษาเยอรมัน 德语翻译",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "german",
+     "u": "page",
+     "max": 50
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "cat": "outsource",
+   "n": {
+    "en": "Thai voice recording",
+    "th": "บันทึกเสียงภาษาไทย",
+    "my": "ထိုင်း အသံသွင်းခြင်း",
+    "zh": "泰语配音"
+   },
+   "l": {
+    "en": "Thai lines read and recorded, by the finished minute.",
+    "th": "อ่านและบันทึกเสียงไทย คิดตามนาทีที่เสร็จ",
+    "my": "ထိုင်းစာကြောင်းများ ဖတ်ပြီး အသံသွင်း၊ မိနစ်အလိုက်။",
+    "zh": "泰语台词朗读录音，按成品分钟计。"
+   },
+   "kw": "voice over voiceover thai voice recording narration app voice พากย์เสียง ลงเสียง 配音 泰语配音",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "voice",
+     "u": "minute",
+     "max": 60
+    }
+   ]
+  },
+  {
+   "id": "cartoons",
+   "cat": "design",
+   "n": {
+    "en": "Campaign cartoons",
+    "th": "การ์ตูนสำหรับแคมเปญ",
+    "my": "လှုပ်ရှားမှုအတွက် ကာတွန်း",
+    "zh": "宣传漫画"
+   },
+   "l": {
+    "en": "Six panels for a health, charity or public campaign.",
+    "th": "การ์ตูนหกช่อง แคมเปญสุขภาพ การกุศล สาธารณะ",
+    "my": "ကျန်းမာရေး၊ ပရဟိတ သို့မဟုတ် အများပြည်သူ လှုပ်ရှားမှုအတွက် ကွက်ခြောက်ကွက်။",
+    "zh": "六格漫画，用于健康、公益或公共宣传。"
+   },
+   "kw": "cartoon comic campaign illustration health campaign การ์ตูน แคมเปญ 漫画 宣传",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "cartoons"
+    }
+   ]
+  },
+  {
+   "id": "interview",
+   "cat": "design",
+   "n": {
+    "en": "Recorded interview",
+    "th": "บันทึกบทสัมภาษณ์",
+    "my": "အင်တာဗျူး မှတ်တမ်းတင်ခြင်း",
+    "zh": "访谈录制"
+   },
+   "l": {
+    "en": "A maker or an elder, with consent, edited, credited.",
+    "th": "ช่างหรือผู้อาวุโส มีใบยินยอม ตัดต่อ ใส่เครดิต",
+    "my": "လက်မှုသမား သို့မဟုတ် သက်ကြီး၊ ခွင့်ပြုချက်ဖြင့်၊ တည်းဖြတ်၊ အသိအမှတ်ပြု။",
+    "zh": "手艺人或长者访谈，有授权、剪辑、署名。"
+   },
+   "kw": "interview oral history video interview documentary consent สัมภาษณ์ สารคดี 访谈 口述历史",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "interview"
+    }
+   ]
+  },
+  {
+   "id": "staff-papers",
+   "cat": "money",
+   "n": {
+    "en": "Staff contract and payslips",
+    "th": "สัญญาจ้างและสลิปเงินเดือน",
+    "my": "ဝန်ထမ်း စာချုပ်နှင့် လစာစလစ်",
+    "zh": "员工合同和工资单"
+   },
+   "l": {
+    "en": "In Thai and English, from a template.",
+    "th": "ไทยและอังกฤษ จากแม่แบบ",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ်၊ နမူနာပုံစံမှ။",
+    "zh": "泰英双语，按模板制作。"
+   },
+   "kw": "employment contract staff contract payslip payroll hr thai labour สัญญาจ้าง สลิปเงินเดือน 劳动合同 工资单",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "staff-contract",
+     "n": {
+      "en": "Contract, one employee",
+      "th": "สัญญา หนึ่งคน",
+      "my": "စာချုပ်၊ ဝန်ထမ်းတစ်ဦး",
+      "zh": "合同，一人"
+     }
+    },
+    {
+     "i": "payslips",
+     "n": {
+      "en": "Payslips, a person a month",
+      "th": "สลิป ต่อคนต่อเดือน",
+      "my": "လစာစလစ်၊ တစ်ဦး တစ်လ",
+      "zh": "工资单，每人每月"
+     },
+     "u": "person",
+     "max": 50
+    }
+   ]
+  },
+  {
+   "id": "stall-page",
+   "cat": "shop",
+   "n": {
+    "en": "Market stall page with a QR sign",
+    "th": "หน้าแผงตลาดพร้อมป้ายคิวอาร์",
+    "my": "QR ဆိုင်းဘုတ်ပါ ဈေးဆိုင်စာမျက်နှာ",
+    "zh": "市场摊位页和二维码牌"
+   },
+   "l": {
+    "en": "A page for your stall and the table sign that opens it.",
+    "th": "หน้าเว็บของแผงและป้ายตั้งโต๊ะที่เปิดหน้านั้น",
+    "my": "သင့်ဆိုင်အတွက် စာမျက်နှာနှင့် ၎င်းကိုဖွင့်သော စားပွဲဆိုင်းဘုတ်။",
+    "zh": "摊位网页和能打开它的桌牌。"
+   },
+   "kw": "market stall page qr sign vendor night market แผงตลาด ตลาดนัด ป้ายคิวอาร์ 摊位 夜市 二维码",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "stall-page"
+    }
+   ]
+  },
+  {
+   "id": "club-desk",
+   "cat": "charity",
+   "n": {
+    "en": "Admin desk for a club",
+    "th": "ผู้ช่วยธุรการสำหรับชมรม",
+    "my": "အသင်းအတွက် စီမံရေးဌာန",
+    "zh": "社团行政助手"
+   },
+   "l": {
+    "en": "Mail and receipts filed, polls run, donations matched.",
+    "th": "เก็บอีเมลและใบเสร็จ ทำโพล จับคู่เงินบริจาค",
+    "my": "မေးလ်နှင့် ပြေစာ သိမ်း၊ မဲစစ်တမ်း၊ အလှူငွေ ကိုက်ညီ။",
+    "zh": "整理邮件和收据、发起投票、核对捐款。"
+   },
+   "kw": "club admin secretary rotary ngo association treasurer receipts ชมรม สมาคม ธุรการ 社团 行政 秘书",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "club-desk",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "help-page",
+   "cat": "web",
+   "n": {
+    "en": "Help page with a live map",
+    "th": "หน้าช่วยเหลือพร้อมแผนที่สด",
+    "my": "တိုက်ရိုက်မြေပုံပါ အကူအညီစာမျက်နှာ",
+    "zh": "带实时地图的求助页"
+   },
+   "l": {
+    "en": "For tow, roadside or delivery firms, in three languages.",
+    "th": "สำหรับรถลาก ช่วยเหลือ หรือขนส่ง สามภาษา",
+    "my": "ဆွဲယာဉ်၊ လမ်းဘေးအကူ သို့မဟုတ် ပို့ဆောင်ရေး၊ ဘာသာသုံးမျိုး။",
+    "zh": "适用于拖车、道路救援或配送公司，三语。"
+   },
+   "kw": "tow truck roadside assistance delivery live map help page รถลาก ช่วยเหลือฉุกเฉิน 拖车 道路救援",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "help-page",
+     "n": {
+      "en": "Build it",
+      "th": "สร้าง",
+      "my": "တည်ဆောက်",
+      "zh": "搭建"
+     }
+    },
+    {
+     "i": "help-page-run",
+     "n": {
+      "en": "Keep it up, monthly",
+      "th": "ดูแลรายเดือน",
+      "my": "လစဉ် ထိန်းသိမ်း",
+      "zh": "按月维护"
+     },
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "agency-sheet",
+   "cat": "stay",
+   "n": {
+    "en": "Listing sheet for an agency",
+    "th": "ตารางประกาศสำหรับนายหน้า",
+    "my": "အေဂျင်စီအတွက် စာရင်းဇယား",
+    "zh": "中介房源表"
+   },
+   "l": {
+    "en": "Your listings on one sheet that drops stale offers.",
+    "th": "รายการทรัพย์ในตารางเดียว ตัดประกาศเก่าออกเอง",
+    "my": "သင့်စာရင်းများကို ဇယားတစ်ခုတည်းတွင်၊ ဟောင်းသည်များ ဖယ်ရှား။",
+    "zh": "房源汇总一张表，自动下架过期信息。"
+   },
+   "kw": "real estate agency listings property sheet stale listings นายหน้า อสังหา ประกาศ 中介 房源",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "agency-sheet",
+     "u": "month",
+     "max": 12
+    }
+   ]
+  },
+  {
+   "id": "widget",
+   "cat": "web",
+   "n": {
+    "en": "Weather, smoke or events box",
+    "th": "กล่องอากาศ ฝุ่น หรืองาน",
+    "my": "ရာသီဥတု၊ မီးခိုး သို့မဟုတ် ပွဲ အကွက်",
+    "zh": "天气、雾霾或活动小组件"
+   },
+   "l": {
+    "en": "On your site: weather, PM2.5 or events nearby.",
+    "th": "บนเว็บของคุณ อากาศ ฝุ่น หรืองานใกล้ ๆ",
+    "my": "သင့်ဆိုက်ပေါ်: ရာသီဥတု၊ PM2.5 သို့မဟုတ် အနီးရှိ ပွဲ။",
+    "zh": "放在您网站上：天气、PM2.5 或附近活动。"
+   },
+   "kw": "widget weather pm2.5 aqi events embed website box วิดเจ็ต สภาพอากาศ ฝุ่น 小组件 天气",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "widget"
+    }
+   ]
+  },
+  {
+   "id": "tap-card",
+   "cat": "web",
+   "n": {
+    "en": "Contact card on a QR code",
+    "th": "นามบัตรบนคิวอาร์",
+    "my": "QR ပေါ်ရှိ ဆက်သွယ်ရန်ကတ်",
+    "zh": "二维码名片"
+   },
+   "l": {
+    "en": "Your name, numbers and links on one page.",
+    "th": "ชื่อ เบอร์ และลิงก์ในหน้าเดียว",
+    "my": "သင့်အမည်၊ နံပါတ်နှင့် လင့်ခ်များ စာမျက်နှာတစ်ခုတည်း။",
+    "zh": "姓名、电话和链接放在一页。"
+   },
+   "kw": "business card digital business card qr vcard contact นามบัตร นามบัตรดิจิทัล 名片 电子名片",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "tap-card"
+    }
+   ]
+  },
+  {
+   "id": "peptides",
+   "cat": "ship",
+   "n": {
+    "en": "Peptides, brought in",
+    "th": "นำเข้าเปปไทด์",
+    "my": "ပက်ပ်တိုက် တင်သွင်းခြင်း",
+    "zh": "多肽进口"
+   },
+   "l": {
+    "en": "Case by case, after we talk.",
+    "th": "เป็นกรณีไป หลังจากคุยกัน",
+    "my": "စကားပြောပြီးနောက် တစ်ခုချင်း။",
+    "zh": "个案处理，先沟通。"
+   },
+   "kw": "peptides peptide import research peptides bpc เปปไทด์ นำเข้า 多肽 进口",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per case",
+    "th": "ราคาตามกรณี",
+    "my": "ကိစ္စအလိုက် စျေးနှုန်း",
+    "zh": "按个案报价"
+   }
+  },
+  {
+   "id": "pharma",
+   "cat": "ship",
+   "n": {
+    "en": "Medicines and pharma imports",
+    "th": "นำเข้ายาและเวชภัณฑ์",
+    "my": "ဆေးဝါး တင်သွင်းခြင်း",
+    "zh": "药品进口"
+   },
+   "l": {
+    "en": "Case by case, after we talk.",
+    "th": "เป็นกรณีไป หลังจากคุยกัน",
+    "my": "စကားပြောပြီးနောက် တစ်ခုချင်း။",
+    "zh": "个案处理，先沟通。"
+   },
+   "kw": "pharma pharmaceutical import medicine import fda licence drugs นำเข้ายา เวชภัณฑ์ อย. 药品进口 医药",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per case",
+    "th": "ราคาตามกรณี",
+    "my": "ကိစ္စအလိုက် စျေးနှုန်း",
+    "zh": "按个案报价"
+   }
+  },
+  {
+   "id": "forensics",
+   "cat": "fix",
+   "n": {
+    "en": "Device forensics",
+    "th": "ตรวจพิสูจน์อุปกรณ์",
+    "my": "စက်ပစ္စည်း ဓာတ်ခွဲစစ်ဆေးခြင်း",
+    "zh": "设备取证"
+   },
+   "l": {
+    "en": "A computer or phone imaged and read, custody logged.",
+    "th": "ทำสำเนาและอ่านคอมพิวเตอร์หรือโทรศัพท์ บันทึกการครอบครอง",
+    "my": "ကွန်ပျူတာ သို့မဟုတ် ဖုန်းကို ပုံတူကူး၊ ဖတ်၊ ထိန်းသိမ်းမှု မှတ်တမ်း။",
+    "zh": "电脑或手机镜像并读取，记录保管链。"
+   },
+   "kw": "forensics digital forensics phone forensics computer forensics evidence chain of custody นิติวิทยาศาสตร์ดิจิทัล หลักฐาน 电子取证 证据",
+   "act": "ask",
+   "pshow": {
+    "en": "Case by case",
+    "th": "เป็นกรณีไป",
+    "my": "တစ်ခုချင်း",
+    "zh": "个案处理"
+   }
+  },
+  {
+   "id": "demo-bot",
+   "cat": "ai",
+   "n": {
+    "en": "A bot that gives your demo on Zoom",
+    "th": "บอทนำเสนอเดโมบน Zoom",
+    "my": "Zoom တွင် သရုပ်ပြပေးသော ဘော့",
+    "zh": "在 Zoom 上做演示的机器人"
+   },
+   "l": {
+    "en": "In Thai or English, for software firms.",
+    "th": "ภาษาไทยหรืออังกฤษ สำหรับบริษัทซอฟต์แวร์",
+    "my": "ဆော့ဖ်ဝဲကုမ္ပဏီများအတွက် ထိုင်း သို့မဟုတ် အင်္ဂလိပ်။",
+    "zh": "泰语或英语，适用于软件公司。"
+   },
+   "kw": "demo bot zoom sales demo ai sales agent presentation บอท เดโม 演示 销售机器人",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per job",
+    "th": "ราคาตามงาน",
+    "my": "အလုပ်အလိုက် စျေးနှုန်း",
+    "zh": "按项目报价"
+   }
+  },
+  {
+   "id": "coffee",
+   "cat": "shop",
+   "n": {
+    "en": "Coffee from a Lahu farm",
+    "th": "กาแฟจากไร่ชาวลาหู่",
+    "my": "လားဟူ ခြံမှ ကော်ဖီ",
+    "zh": "拉祜族农场咖啡"
+   },
+   "l": {
+    "en": "Roasted and packed at the farm in Wiang Pa Pao.",
+    "th": "คั่วและบรรจุที่ไร่ เวียงป่าเป้า",
+    "my": "ဝီယန်ပါပေါ် ခြံတွင် လှော်ပြီး ထုပ်ပိုး။",
+    "zh": "在威昂巴拜农场烘焙包装。"
+   },
+   "kw": "coffee beans thai coffee lahu farm roasted wholesale กาแฟ เมล็ดกาแฟ ลาหู่ 咖啡 咖啡豆",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per order",
+    "th": "ราคาตามออเดอร์",
+    "my": "အော်ဒါအလိုက် စျေးနှုန်း",
+    "zh": "按订单报价"
+   }
+  },
+  {
+   "id": "magic",
+   "cat": "events",
+   "n": {
+    "en": "Close-up magic for your event",
+    "th": "มายากลระยะใกล้สำหรับงาน",
+    "my": "ပွဲအတွက် အနီးကပ် မျက်လှည့်",
+    "zh": "活动近景魔术"
+   },
+   "l": {
+    "en": "For a dinner, a party or a launch.",
+    "th": "สำหรับงานเลี้ยง ปาร์ตี้ หรืองานเปิดตัว",
+    "my": "ညစာ၊ ပါတီ သို့မဟုတ် စတင်ပွဲအတွက်။",
+    "zh": "适合晚宴、派对或发布会。"
+   },
+   "kw": "magic magician close up magic party entertainment มายากล นักมายากล 魔术 魔术师",
+   "act": "ask",
+   "pshow": {
+    "en": "Priced per event",
+    "th": "ราคาตามงาน",
+    "my": "ပွဲအလိုက် စျေးနှုန်း",
+    "zh": "按活动报价"
+   }
+  },
+  {
+   "id": "founders",
+   "cat": "shop",
+   "n": {
+    "en": "Founding member of Mot Dang",
+    "th": "สมาชิกผู้ก่อตั้งมดแดง",
+    "my": "Mot Dang တည်ထောင်သူ အဖွဲ့ဝင်",
+    "zh": "Mot Dang 创始会员"
+   },
+   "l": {
+    "en": "Two Gold codes and a number on the wall.",
+    "th": "รหัส Gold สองรหัสและหมายเลขบนผนัง",
+    "my": "Gold ကုဒ် နှစ်ခုနှင့် နံရံပေါ်ရှိ နံပါတ်။",
+    "zh": "两个 Gold 码和墙上的编号。"
+   },
+   "kw": "founding member supporter mot dang gold สมาชิก ผู้ก่อตั้ง 创始会员",
+   "act": "open",
+   "href": "https://sites.motdang.net/founders",
+   "pshow": {
+    "en": "฿3,000",
+    "th": "฿3,000",
+    "my": "฿3,000",
+    "zh": "฿3,000"
+   }
+  },
+  {
+   "id": "homehelp-plan",
+   "cat": "help",
+   "n": {
+    "en": "Home help: employer plan",
+    "th": "แม่บ้าน: แผนสำหรับนายจ้าง",
+    "my": "အိမ်အကူ: အလုပ်ရှင်အစီအစဉ်",
+    "zh": "家政：雇主方案"
+   },
+   "l": {
+    "en": "Finding and keeping a cleaner, cook or nanny, on Mot Dang.",
+    "th": "หาและดูแลแม่บ้าน แม่ครัว พี่เลี้ยง บนมดแดง",
+    "my": "Mot Dang တွင် သန့်ရှင်းရေး၊ ထမင်းချက်၊ ကလေးထိန်း ရှာခြင်း။",
+    "zh": "在 Mot Dang 上找到并留住保洁、厨师或保姆。"
+   },
+   "kw": "home help maid cleaner cook nanny employer housekeeper แม่บ้าน พี่เลี้ยง หาแม่บ้าน 保姆 家政 保洁",
+   "act": "open",
+   "href": "https://motdang.net/home-help",
+   "pshow": {
+    "en": "฿1,000 a month · buildings ฿2,000",
+    "th": "เดือนละ ฿1,000 · อาคาร ฿2,000",
+    "my": "တစ်လ ฿1,000 · အဆောက်အအုံ ฿2,000",
+    "zh": "每月 ฿1,000 · 楼宇 ฿2,000"
+   }
+  },
+  {
+   "id": "sell-motdang",
+   "cat": "money",
+   "n": {
+    "en": "Earn by selling Mot Dang pages",
+    "th": "หารายได้จากการขายหน้ามดแดง",
+    "my": "Mot Dang စာမျက်နှာ ရောင်း၍ ဝင်ငွေရှာ",
+    "zh": "销售 Mot Dang 页面赚钱"
+   },
+   "l": {
+    "en": "A share of each plan you sell.",
+    "th": "ได้ส่วนแบ่งจากทุกแผนที่ขาย",
+    "my": "ရောင်းသော အစီအစဉ်တိုင်းမှ ဝေစု။",
+    "zh": "每卖出一个方案得一份分成。"
+   },
+   "kw": "earn money sell commission affiliate referral side income หารายได้ ค่าคอม นายหน้า 赚钱 佣金 推广",
+   "act": "open",
+   "href": "https://sites.motdang.net/sell",
+   "pshow": {
+    "en": "20% of each plan",
+    "th": "20% ของแต่ละแผน",
+    "my": "အစီအစဉ်တိုင်း၏ 20%",
+    "zh": "每单 20%"
+   }
+  },
+  {
+   "id": "paid-in-kind",
+   "cat": "money",
+   "n": {
+    "en": "Pay in kind",
+    "th": "จ่ายเป็นของหรือแรงงาน",
+    "my": "ပစ္စည်း သို့မဟုတ် လုပ်အားဖြင့် ပေးချေ",
+    "zh": "以物或劳务支付"
+   },
+   "l": {
+    "en": "Art, meals, room nights, repairs or lessons, for a Mot Dang page.",
+    "th": "งานศิลปะ อาหาร ห้องพัก ซ่อม หรือสอน แลกหน้ามดแดง",
+    "my": "Mot Dang စာမျက်နှာအတွက် အနုပညာ၊ အစားအစာ၊ အခန်း၊ ပြင်ဆင်ခြင်း သို့မဟုတ် သင်ခန်းစာ။",
+    "zh": "用艺术品、餐食、房晚、维修或课程换 Mot Dang 页面。"
+   },
+   "kw": "barter trade pay in kind exchange แลกเปลี่ยน จ่ายเป็นของ 以物易物",
+   "act": "open",
+   "href": "https://motdang.net/sites/paid-in-art/",
+   "pshow": {
+    "en": "Trade",
+    "th": "แลกเปลี่ยน",
+    "my": "လဲလှယ်",
+    "zh": "交换"
+   }
+  },
+  {
+   "id": "post-job",
+   "cat": "help",
+   "n": {
+    "en": "Post any job",
+    "th": "ลงประกาศงานอะไรก็ได้",
+    "my": "မည်သည့်အလုပ်မဆို တင်ပါ",
+    "zh": "发布任何任务"
+   },
+   "l": {
+    "en": "On the task board, for people or bots.",
+    "th": "บนกระดานงาน สำหรับคนหรือบอท",
+    "my": "လူ သို့မဟုတ် ဘော့အတွက် အလုပ်ဘုတ်ပေါ်တွင်။",
+    "zh": "发到任务板，给人或机器人做。"
+   },
+   "kw": "post a job task board freelance gig hire someone bounty ลงประกาศ จ้างงาน 发布任务 悬赏",
+   "act": "open",
+   "href": "/tasks",
+   "pshow": {
+    "en": "Free",
+    "th": "ฟรี",
+    "my": "အခမဲ့",
+    "zh": "免费"
+   }
   }
  ],
  "visa_names": {
