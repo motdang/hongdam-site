@@ -140,6 +140,22 @@ export const SERVICES = {
   "ceiling": 4000,
   "slots": 10
  },
+ "car-buy": {
+  "en": "Car bought with you",
+  "th": "\u0e0b\u0e37\u0e49\u0e2d\u0e23\u0e16\u0e22\u0e19\u0e15\u0e4c\u0e44\u0e1b\u0e14\u0e49\u0e27\u0e22\u0e01\u0e31\u0e19",
+  "open": 8000,
+  "floor": 5000,
+  "ceiling": 15000,
+  "slots": 4
+ },
+ "moto-buy": {
+  "en": "Motorcycle bought with you",
+  "th": "\u0e0b\u0e37\u0e49\u0e2d\u0e21\u0e2d\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e44\u0e0b\u0e04\u0e4c\u0e44\u0e1b\u0e14\u0e49\u0e27\u0e22\u0e01\u0e31\u0e19",
+  "open": 4000,
+  "floor": 2500,
+  "ceiling": 8000,
+  "slots": 8
+ },
  "retire-setup": {
   "en": "Retiring here: set-up",
   "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e17\u0e35\u0e48\u0e19\u0e35\u0e48: \u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19",

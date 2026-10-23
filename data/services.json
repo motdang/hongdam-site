@@ -311,6 +311,32 @@
      "floor": 800,
      "ceiling": 4000,
      "slots": 10
+    },
+    {
+     "id": "car-buy",
+     "en": "Car bought with you",
+     "th": "ซื้อรถยนต์ไปด้วยกัน",
+     "baht": 8000,
+     "floor": 5000,
+     "ceiling": 15000,
+     "slots": 4,
+     "p_en": "{price} a car",
+     "p_th": "คันละ {price}",
+     "d_en": "Cars shortlisted to your budget, dealers visited and test drives booked with you, the price talked over in Thai, and the registration put in your name at the Department of Land Transport. The car, and a mechanic's check of a used one, at cost.",
+     "d_th": "คัดรถตามงบ พาไปดูรถที่ดีลเลอร์และนัดทดลองขับ ต่อรองราคาเป็นภาษาไทย และโอนทะเบียนเป็นชื่อคุณที่กรมการขนส่งทางบก ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
+    },
+    {
+     "id": "moto-buy",
+     "en": "Motorcycle bought with you",
+     "th": "ซื้อมอเตอร์ไซค์ไปด้วยกัน",
+     "baht": 4000,
+     "floor": 2500,
+     "ceiling": 8000,
+     "slots": 8,
+     "p_en": "{price} a motorcycle",
+     "p_th": "คันละ {price}",
+     "d_en": "Scooters and motorcycles shortlisted, shops visited and test rides booked with you, the price talked over in Thai, and the registration put in your name. The bike, and a mechanic's check of a used one, at cost.",
+     "d_th": "คัดสกู๊ตเตอร์และมอเตอร์ไซค์ พาไปดูที่ร้านและนัดทดลองขี่ ต่อรองราคาเป็นภาษาไทย และโอนทะเบียนเป็นชื่อคุณ ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
     }
    ]
   },
