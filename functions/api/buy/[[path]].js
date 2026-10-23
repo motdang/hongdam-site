@@ -14,13 +14,15 @@
  * nan@motdang.net), by mail, never to #help-desk: her word 2026-10-24, "Send them to me", on the
  * ฿2,000 written plans, as CMVD sends its plans. POST answers hongdam.net, hongdam.pages.dev and
  * localhost. Bindings and secrets on the Pages project: TASKS (D1), RT_LIMIT, DISCORD_TASKS,
- * SLIPOK_KEY + SLIPOK_BRANCH, RESEND_API_KEY + ORDER_TO or CONTACT_TO. Table migrations/0007_buy.sql.
+ * SLIPOK_KEY + SLIPOK_BRANCH, RESEND_API_KEY + ORDER_TO or CONTACT_TO. Tables migrations/0007_buy.sql and
+ * 0010_tries.sql (slip and claim tries).
  */
 import { CARDS } from '../../_shop_data.js'
 import { quote, walkedPrices, payLinks } from '../../_shop.js'
 import { record, whoHash } from '../../_services.js'
 import { checkSlip, slipOn } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { tryOnce, sweep } from '../../_tries.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -42,24 +44,10 @@ async function allowed(env, ip, now) {
   return true
 }
 
-// Slip checks and payment claims (CodeRabbit on PR #51: every slip goes to SlipOK, whose quota is shared):
-// 10 a day from one address and 5 a day for one order, apart from the order quota. Without RT_LIMIT,
-// 5 a day for one order, counted in this worker's memory.
-const TRIES = new Map()
-async function triesOk(env, ip, ref, now) {
-  const day = new Date(now).toISOString().slice(0, 10)
-  if (!env.RT_LIMIT) {
-    if (TRIES.size > 5000) TRIES.clear()
-    const k = `${ref}:${day}`, n = (TRIES.get(k) || 0) + 1
-    TRIES.set(k, n)
-    return n <= 5
-  }
-  const ki = `pay:ip:${ip}:${day}`, kr = `pay:ref:${ref}:${day}`
-  const [ni, nr] = (await Promise.all([env.RT_LIMIT.get(ki), env.RT_LIMIT.get(kr)])).map((x) => Number(x) || 0)
-  if (ni >= 10 || nr >= 5) return false
-  await Promise.all([env.RT_LIMIT.put(ki, String(ni + 1), { expirationTtl: 2 * 86400 }), env.RT_LIMIT.put(kr, String(nr + 1), { expirationTtl: 2 * 86400 })])
-  return true
-}
+// Slip checks and payment claims (CodeRabbit on #51 and #52: every slip goes to SlipOK, whose quota is
+// shared): 10 tries a day from one address and 5 for one order, counted atomically in D1 (functions/_tries.js,
+// table tries), apart from the order quota. No table or no D1: refused.
+const triesOk = (env, kind, ip, ref, now) => tryOnce(env.TASKS, [[`${kind}:ip:${ip}`, 10], [`${kind}:ref:${ref}`, 5]], now)
 
 // A confirmed payment counts in full for the price walk (412e47c: unpaid orders hold a price, paid ones move it).
 // Same who as the order's 'buy' record, so a booked-then-paid order counts once.
@@ -132,7 +120,8 @@ async function slip(ctx, now) {
   try { form = await request.formData() } catch { return json({ ok: false, why: 'nofile' }, 400) }
   const ref = clean(form.get('ref'), 12)
   if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
-  if (!(await triesOk(env, request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
+  if (!(await triesOk(env, 'slip', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
+  ctx.waitUntil(sweep(env.TASKS, now))
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o) return json({ ok: false, why: 'ref' }, 404)
   if (o.state === 'paid' || o.state === 'done') return json({ ok: true, ref, amount: o.due })
@@ -150,7 +139,7 @@ async function claim(ctx, b, now) {
   const { request, env } = ctx
   const ref = clean(b.ref, 12), how = b.how === 'wise' ? 'wise' : 'paypal'
   if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
-  if (!(await triesOk(env, request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
+  if (!(await triesOk(env, 'claim', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o) return json({ ok: false, why: 'ref' }, 404)
   if (o.state !== 'booked') return json({ ok: true, ref, state: o.state })

@@ -30,7 +30,7 @@ export const optionOf = (card, opt) => {
 export function walkNum(k, part, cur) {
   if (typeof k === 'number') k = { price: k, cur: 'THB' }
   if (!k) return undefined
-  if (part === 'tail') return k.tail > 0 ? k.tail : undefined
+  if (part === 'tail') return k.tail > 0 && (k.tail_cur || 'THB') === cur ? k.tail : undefined   // a ฿ tail is never read as US$
   return (k.cur || 'THB') === cur && k.price > 0 ? k.price : undefined
 }
 
@@ -63,10 +63,10 @@ export function quote(card, opt, qty, addon, walked) {
   return { total, due, cur, qty: n, opt: o.id, addon: k }
 }
 
-/** {item id: {price, cur, tail}} for every walking price that is not a percentage. */
+/** {item id: {price, cur, tail, tail_cur}} for every walking price that is not a percentage. */
 export async function walkedPrices(db, now) {
   return Object.fromEntries((await prices(db, now)).filter((k) => k.unit !== '%' && (k.price ?? k.baht) > 0)
-    .map((k) => [k.id, { price: k.price ?? k.baht, cur: k.cur || 'THB', ...(k.tail > 0 ? { tail: k.tail } : {}) }]))
+    .map((k) => [k.id, { price: k.price ?? k.baht, cur: k.cur || 'THB', ...(k.tail > 0 ? { tail: k.tail, tail_cur: k.tail_unit || 'THB' } : {}) }]))
 }
 
 export function payLinks(cur, due) {

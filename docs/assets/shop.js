@@ -64,7 +64,7 @@ if (D.front && D.lang === 'en' && !store('hd-lang')) {
 // Today's prices
 const live = {}
 // The walk's number for a price shown in cur, or undefined while the walk has none in that currency (functions/_shop.js walkNum).
-const walkNum = (k, part, cur) => !k ? undefined : part === 'tail' ? (k.tail > 0 ? k.tail : undefined)
+const walkNum = (k, part, cur) => !k ? undefined : part === 'tail' ? (k.tail > 0 && (k.tail_unit || 'THB') === cur ? k.tail : undefined)
   : (k.cur || 'THB') === cur && (k.price ?? k.baht) > 0 ? (k.price ?? k.baht) : undefined
 const walkOf = (id) => live.services && live.services[id]
 function liveText(root = document) {
