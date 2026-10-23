@@ -442,6 +442,19 @@
      "floor": 5000,
      "ceiling": 15000,
      "slots": 4
+    },
+    {
+     "id": "caregiver-hire",
+     "en": "Caregiver found and hired",
+     "th": "หาและจ้างผู้ดูแล",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "A caregiver found, interviewed with you and hired. The wage is paid by the family.",
+     "d_th": "หาผู้ดูแล สัมภาษณ์ด้วยกัน และจ้าง ค่าจ้างครอบครัวจ่ายเอง",
+     "baht": 12000,
+     "floor": 8000,
+     "ceiling": 25000,
+     "slots": 4
     }
    ]
   },
@@ -576,6 +589,156 @@
      "floor": 1200,
      "ceiling": 6000,
      "slots": 3
+    }
+   ]
+  },
+  {
+   "id": "tours",
+   "en": "Tours and trips",
+   "th": "ทัวร์และเที่ยว",
+   "items": [
+    {
+     "id": "tour-cr",
+     "en": "Chiang Rai day, private",
+     "th": "เที่ยวเชียงรายหนึ่งวัน ส่วนตัว",
+     "p_en": "{price} a car, up to 3",
+     "p_th": "คันละ {price} ไม่เกิน 3 คน",
+     "d_en": "Car, fuel and a licensed guide: White Temple, Blue Temple, Black House, the Golden Triangle or Mae Salong. Entries, boat and lunch at cost.",
+     "d_th": "รถ น้ำมัน และไกด์ที่มีใบอนุญาต วัดร่องขุ่น วัดร่องเสือเต้น บ้านดำ สามเหลี่ยมทองคำ หรือดอยแม่สลอง ค่าเข้า เรือ และอาหารกลางวันคิดตามจริง",
+     "baht": 8000,
+     "floor": 6000,
+     "ceiling": 12000,
+     "slots": 16
+    },
+    {
+     "id": "tour-cm",
+     "en": "Chiang Mai day, private",
+     "th": "เที่ยวเชียงใหม่หนึ่งวัน ส่วนตัว",
+     "p_en": "{price} a car, up to 3",
+     "p_th": "คันละ {price} ไม่เกิน 3 คน",
+     "d_en": "Car, fuel and a licensed guide: Doi Suthep and the old city, Doi Inthanon or Mae Kampong. Park fees and lunch at cost.",
+     "d_th": "รถ น้ำมัน และไกด์ที่มีใบอนุญาต ดอยสุเทพและเมืองเก่า ดอยอินทนนท์ หรือแม่กำปอง ค่าอุทยานและอาหารกลางวันคิดตามจริง",
+     "baht": 8000,
+     "floor": 6000,
+     "ceiling": 12000,
+     "slots": 12
+    },
+    {
+     "id": "tour-3d",
+     "en": "Three days in the north",
+     "th": "สามวันในภาคเหนือ",
+     "p_en": "{price} a person, sharing",
+     "p_th": "คนละ {price} พักคู่",
+     "d_en": "Two nights in a twin room, car, guide, breakfasts and two lunches. Entries and dinners at cost.",
+     "d_th": "พักห้องคู่สองคืน รถ ไกด์ อาหารเช้า และอาหารกลางวันสองมื้อ ค่าเข้าและอาหารเย็นคิดตามจริง",
+     "baht": 20000,
+     "floor": 15000,
+     "ceiling": 30000,
+     "slots": 4
+    },
+    {
+     "id": "driver-day",
+     "en": "Car and driver for a day",
+     "th": "รถพร้อมคนขับหนึ่งวัน",
+     "p_en": "{price}, 9 hours",
+     "p_th": "{price} 9 ชั่วโมง",
+     "d_en": "Fuel and tolls included; overtime and parking at cost.",
+     "d_th": "รวมน้ำมันและทางด่วน ค่าล่วงเวลาและที่จอดคิดตามจริง",
+     "baht": 4000,
+     "floor": 3000,
+     "ceiling": 5000,
+     "slots": 8
+    },
+    {
+     "id": "guide-day",
+     "en": "Licensed guide for a day, English",
+     "th": "ไกด์ที่มีใบอนุญาตหนึ่งวัน ภาษาอังกฤษ",
+     "p_en": "{price}, 8 hours",
+     "p_th": "{price} 8 ชั่วโมง",
+     "d_en": "The guide's meals and entries at cost.",
+     "d_th": "ค่าอาหารและค่าเข้าของไกด์คิดตามจริง",
+     "baht": 3000,
+     "floor": 2500,
+     "ceiling": 4000,
+     "slots": 10
+    },
+    {
+     "id": "guide-day-other",
+     "en": "Licensed guide for a day, other languages",
+     "th": "ไกด์ที่มีใบอนุญาตหนึ่งวัน ภาษาอื่น",
+     "p_en": "{price}, 8 hours",
+     "p_th": "{price} 8 ชั่วโมง",
+     "d_en": "Chinese, Japanese, Korean or others. The guide's meals and entries at cost.",
+     "d_th": "จีน ญี่ปุ่น เกาหลี หรือภาษาอื่น ค่าอาหารและค่าเข้าของไกด์คิดตามจริง",
+     "baht": 4000,
+     "floor": 3000,
+     "ceiling": 5000,
+     "slots": 6
+    },
+    {
+     "id": "experience",
+     "en": "Class or workshop booked, with a translator",
+     "th": "จองคลาสหรือเวิร์กช็อปพร้อมล่าม",
+     "p_en": "{price} a booking, up to 4",
+     "p_th": "{price} ต่อการจอง ไม่เกิน 4 คน",
+     "d_en": "Muay thai, cooking, silver or weaving, with a translator there. The venue's price at cost.",
+     "d_th": "มวยไทย ทำอาหาร เครื่องเงิน หรือทอผ้า พร้อมล่ามไปด้วย ค่าสถานที่คิดตามจริง",
+     "baht": 1500,
+     "floor": 1000,
+     "ceiling": 2500,
+     "slots": 20
+    },
+    {
+     "id": "lantern-seat",
+     "en": "Lantern night in Lamphun",
+     "th": "คืนโคมแสนดวงที่ลำพูน",
+     "p_en": "{price} a seat",
+     "p_th": "ที่นั่งละ {price}",
+     "d_en": "A November lantern night at Wat Phra That Hariphunchai: transport from Chiang Mai, dinner and a guide.",
+     "d_th": "คืนโคมแสนดวงที่วัดพระธาตุหริภุญชัยในเดือนพฤศจิกายน รถจากเชียงใหม่ อาหารเย็น และไกด์",
+     "baht": 4000,
+     "floor": 3000,
+     "ceiling": 6000,
+     "slots": 24
+    },
+    {
+     "id": "balloon-cr",
+     "en": "Balloon flight, Chiang Rai",
+     "th": "บินบอลลูน เชียงราย",
+     "p_en": "{price} a person",
+     "p_th": "คนละ {price}",
+     "d_en": "A shared basket in the balloon season, booked, with transfers. Festival entry at cost.",
+     "d_th": "บอลลูนตะกร้ารวมในฤดูบอลลูน จองพร้อมรถรับส่ง ค่าเข้างานคิดตามจริง",
+     "baht": 12000,
+     "floor": 10000,
+     "ceiling": 15000,
+     "slots": 8
+    },
+    {
+     "id": "balloon-cm",
+     "en": "Balloon flight, Chiang Mai",
+     "th": "บินบอลลูน เชียงใหม่",
+     "p_en": "{price} a person",
+     "p_th": "คนละ {price}",
+     "d_en": "A shared basket from November to February, booked, with transfers.",
+     "d_th": "บอลลูนตะกร้ารวม พฤศจิกายนถึงกุมภาพันธ์ จองพร้อมรถรับส่ง",
+     "baht": 10000,
+     "floor": 8000,
+     "ceiling": 12000,
+     "slots": 8
+    },
+    {
+     "id": "paramotor",
+     "en": "Paramotor flight",
+     "th": "บินพารามอเตอร์",
+     "p_en": "{price} a person",
+     "p_th": "คนละ {price}",
+     "d_en": "A tandem flight with a pilot, booked, with transfers.",
+     "d_th": "บินคู่กับนักบิน จองพร้อมรถรับส่ง",
+     "baht": 4000,
+     "floor": 3000,
+     "ceiling": 5000,
+     "slots": 12
     }
    ]
   },

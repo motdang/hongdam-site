@@ -171,6 +171,12 @@ export const SERVICES = {
   "ceiling": 15000,
   "slots": 4
  },
+ "caregiver-hire": {
+  "open": 12000,
+  "floor": 8000,
+  "ceiling": 25000,
+  "slots": 4
+ },
  "move-house": {
   "open": 30000,
   "floor": 20000,
@@ -224,6 +230,72 @@ export const SERVICES = {
   "floor": 1200,
   "ceiling": 6000,
   "slots": 3
+ },
+ "tour-cr": {
+  "open": 8000,
+  "floor": 6000,
+  "ceiling": 12000,
+  "slots": 16
+ },
+ "tour-cm": {
+  "open": 8000,
+  "floor": 6000,
+  "ceiling": 12000,
+  "slots": 12
+ },
+ "tour-3d": {
+  "open": 20000,
+  "floor": 15000,
+  "ceiling": 30000,
+  "slots": 4
+ },
+ "driver-day": {
+  "open": 4000,
+  "floor": 3000,
+  "ceiling": 5000,
+  "slots": 8
+ },
+ "guide-day": {
+  "open": 3000,
+  "floor": 2500,
+  "ceiling": 4000,
+  "slots": 10
+ },
+ "guide-day-other": {
+  "open": 4000,
+  "floor": 3000,
+  "ceiling": 5000,
+  "slots": 6
+ },
+ "experience": {
+  "open": 1500,
+  "floor": 1000,
+  "ceiling": 2500,
+  "slots": 20
+ },
+ "lantern-seat": {
+  "open": 4000,
+  "floor": 3000,
+  "ceiling": 6000,
+  "slots": 24
+ },
+ "balloon-cr": {
+  "open": 12000,
+  "floor": 10000,
+  "ceiling": 15000,
+  "slots": 8
+ },
+ "balloon-cm": {
+  "open": 10000,
+  "floor": 8000,
+  "ceiling": 12000,
+  "slots": 8
+ },
+ "paramotor": {
+  "open": 4000,
+  "floor": 3000,
+  "ceiling": 5000,
+  "slots": 12
  },
  "interp-phone": {
   "open": 400,
