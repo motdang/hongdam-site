@@ -392,6 +392,24 @@ export const SERVICES = {
   "ceiling": 8000,
   "slots": 4
  },
+ "zh-translate": {
+  "open": 1200,
+  "floor": 800,
+  "ceiling": 2500,
+  "slots": 20
+ },
+ "zh-interp-phone": {
+  "open": 600,
+  "floor": 400,
+  "ceiling": 1200,
+  "slots": 30
+ },
+ "zh-interp-person": {
+  "open": 4000,
+  "floor": 3000,
+  "ceiling": 6000,
+  "slots": 6
+ },
  "lang-pages": {
   "open": 400,
   "floor": 250,

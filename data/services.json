@@ -973,6 +973,45 @@
      "d_th": "เหมือนกัน แต่ทั้งวัน เช่น ดูโรงงาน งานแสดงสินค้า อยู่โรงพยาบาล หรือประชุมทั้งวัน"
     },
     {
+     "id": "zh-translate",
+     "en": "Chinese translation",
+     "th": "แปลภาษาจีน",
+     "baht": 1200,
+     "floor": 800,
+     "ceiling": 2500,
+     "slots": 20,
+     "p_en": "{price} a page",
+     "p_th": "หน้าละ {price}",
+     "d_en": "Chinese to or from Thai or English: papers, contracts, menus, websites and business text.",
+     "d_th": "จีนเป็นไทยหรืออังกฤษ หรือกลับกัน เอกสาร สัญญา เมนู เว็บไซต์ และเอกสารธุรกิจ"
+    },
+    {
+     "id": "zh-interp-phone",
+     "en": "Chinese interpreter by phone or video",
+     "th": "ล่ามภาษาจีนทางโทรศัพท์หรือวิดีโอ",
+     "baht": 600,
+     "floor": 400,
+     "ceiling": 1200,
+     "slots": 30,
+     "p_en": "{price} per 30 minutes",
+     "p_th": "ครึ่งชั่วโมงละ {price}",
+     "d_en": "Chinese with Thai or English, for a call, a meeting or a supplier.",
+     "d_th": "จีนกับไทยหรืออังกฤษ สำหรับโทรศัพท์ ประชุม หรือคุยกับผู้ขาย"
+    },
+    {
+     "id": "zh-interp-person",
+     "en": "Chinese interpreter in person",
+     "th": "ล่ามภาษาจีนไปด้วย",
+     "baht": 4000,
+     "floor": 3000,
+     "ceiling": 6000,
+     "slots": 6,
+     "p_en": "{price} up to 4 hours",
+     "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
+     "d_en": "In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings. Travel in town included; further, at cost.",
+     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่หน่วยงาน โรงพยาบาล โรงงาน ร้านค้า และการประชุม รวมค่าเดินทางในเมือง นอกเมืองคิดตามจริง"
+    },
+    {
      "id": "lang-pages",
      "kind": "lang-pages",
      "en": "Web page translation check",
