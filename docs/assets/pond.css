@@ -1,0 +1,78 @@
+/* hongdam.net: the pond. Her ask 2026-10-24: "hongdam should be simple but cleverly stylized. bullet points should
+   read as lotus flowers and lily pads. the whole page should be meaningfully animated, in a way that leads directly to
+   usefulness, trust, and conversions."
+   A point in a list is a lily pad, and a lotus opens on it as it comes into view. The stops on a job line are pads; a
+   lotus opens on each as the swan reaches it. A picked option on the Buy page is a pad with its lotus open.
+   Loaded after shop.css (and pages.css or studio.css). pond.js does the moving: cards rise into view, a tap rings like
+   water, the search box shows what people order, a price meter fills, a changed price drops in, the "write to us"
+   buttons ring once at the end of a list. */
+
+/* ---------------------------------------------------------------- pad and lotus */
+:root {
+  --bloom: cubic-bezier(.3, 1.12, .4, 1);
+  --lily: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 12 21.4 17.4A10.8 10.8 0 1 0 18.9 20.3Z' fill='%2349A05B'/><path d='M12 12 18.5 8.2M12 12 10.7 4.6M12 12 4.5 12M12 12 8.2 18.5' stroke='%23A3D7A1' stroke-width='1.2' stroke-linecap='round' fill='none'/></svg>");
+  --lily-off: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 12 21.4 17.4A10.8 10.8 0 1 0 18.9 20.3Z' fill='%23E4F2E0' stroke='%2349A05B' stroke-width='1.5' stroke-linejoin='round'/><path d='M12 12 18.5 8.2M12 12 10.7 4.6M12 12 4.5 12M12 12 8.2 18.5' stroke='%23A9D6A6' stroke-width='1.2' stroke-linecap='round' fill='none'/></svg>");
+  --lotus: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20'><g stroke='%23FFF6F9' stroke-width='.9' stroke-linejoin='round'><path d='M12 18.6C7.4 18.4 3 15.6 1.2 11.2 5.8 10.9 10 13.8 12 18.6ZM12 18.6C16.6 18.4 21 15.6 22.8 11.2 18.2 10.9 14 13.8 12 18.6Z' fill='%23F7B9CD'/><path d='M12 18.6C7.9 16.6 5.4 11.6 5.8 5.8 9.4 7.8 11.8 12.6 12 18.6ZM12 18.6C16.1 16.6 18.6 11.6 18.2 5.8 14.6 7.8 12.2 12.6 12 18.6Z' fill='%23EF88AB'/><path d='M12 18.6C9.1 15 8.8 9 12 2.4 15.2 9 14.9 15 12 18.6Z' fill='%23DF5588'/></g></svg>");
+}
+@media (prefers-color-scheme: dark) { :root {
+  --lily: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 12 21.4 17.4A10.8 10.8 0 1 0 18.9 20.3Z' fill='%235DB56E'/><path d='M12 12 18.5 8.2M12 12 10.7 4.6M12 12 4.5 12M12 12 8.2 18.5' stroke='%232E7A3D' stroke-width='1.2' stroke-linecap='round' fill='none'/></svg>");
+  --lily-off: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 12 21.4 17.4A10.8 10.8 0 1 0 18.9 20.3Z' fill='%231F3625' stroke='%235DB56E' stroke-width='1.5' stroke-linejoin='round'/><path d='M12 12 18.5 8.2M12 12 10.7 4.6M12 12 4.5 12M12 12 8.2 18.5' stroke='%233D6444' stroke-width='1.2' stroke-linecap='round' fill='none'/></svg>");
+  --lotus: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20'><g stroke='%231D1B18' stroke-width='.9' stroke-linejoin='round'><path d='M12 18.6C7.4 18.4 3 15.6 1.2 11.2 5.8 10.9 10 13.8 12 18.6ZM12 18.6C16.6 18.4 21 15.6 22.8 11.2 18.2 10.9 14 13.8 12 18.6Z' fill='%23F7B9CD'/><path d='M12 18.6C7.9 16.6 5.4 11.6 5.8 5.8 9.4 7.8 11.8 12.6 12 18.6ZM12 18.6C16.1 16.6 18.6 11.6 18.2 5.8 14.6 7.8 12.2 12.6 12 18.6Z' fill='%23EF88AB'/><path d='M12 18.6C9.1 15 8.8 9 12 2.4 15.2 9 14.9 15 12 18.6Z' fill='%23DF5588'/></g></svg>");
+} }
+
+/* ---------------------------------------------------------------- points in a list: a pad, a lotus opening on it */
+.know ul, .card > ul, .pg .kind ul, .s-body ul { padding-left: 0; list-style: none }
+:is(.know ul, .card > ul, .pg .kind ul, .s-body ul) > li { position: relative; padding-left: 1.95em }
+:is(.know ul, .card > ul, .pg .kind ul, .s-body ul) > li::before { content: ""; position: absolute; left: 0; top: .2em; top: calc(.5lh - .6em); width: 1.2em; height: 1.2em;
+  background: var(--lily) center / contain no-repeat }
+:is(.know ul, .card > ul, .pg .kind ul, .s-body ul) > li::after { content: ""; position: absolute; left: .15em; top: -.02em; top: calc(.5lh - .78em); width: .9em; height: .76em;
+  background: var(--lotus) center bottom / contain no-repeat; transform-origin: 50% 100%; transition: transform 1.1s var(--bloom) var(--d, 0ms) }
+/* a list in a list: pads only, smaller */
+:is(.know ul, .card > ul, .pg .kind ul, .s-body ul) ul > li::after { display: none }
+:is(.know ul, .card > ul, .pg .kind ul, .s-body ul) ul > li::before { transform: scale(.78) }
+/* closed until it is read (pond.js opens it); without scripts it is open from the start */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  :is(.know ul, .card > ul, .pg .kind ul, .s-body ul) > li:not(.pond-up)::after { transform: scale(.4, .62) }
+}
+
+/* ---------------------------------------------------------------- the stops on a job line: pads on the water */
+.stop { --pd: calc(var(--stop) * .48) }
+.stop::after { width: calc(var(--pd) * 1.36); height: calc(var(--pd) * 1.36); margin-left: calc(var(--pd) * -.68); border-radius: 0; box-shadow: none;
+  bottom: calc(var(--lineY) - var(--pad) - var(--pd) / 2);
+  background: var(--lotus) 50% calc(var(--pd) * .78) / 0 0 no-repeat, var(--lily-off) 50% 100% / var(--pd) var(--pd) no-repeat;
+  transition: background-size 1.1s var(--bloom), background-position 1.1s var(--bloom) }
+/* the swan reaches it: the pad greens and a lotus opens from its middle */
+.stop.hit::after { background-color: transparent; background-repeat: no-repeat; background-image: var(--lotus), var(--lily);
+  background-size: calc(var(--pd) * .92) calc(var(--pd) * .77), var(--pd) var(--pd); background-position: 50% 0, 50% 100%;
+  transition: background-size 1.1s var(--bloom), background-position 1.1s var(--bloom) }
+.stop::before { bottom: calc(var(--lineY) - var(--pad) + var(--pd) * .45) }
+
+/* ---------------------------------------------------------------- an option on the Buy page: picked, its lotus open */
+.opt input[type="radio"] { -webkit-appearance: none; appearance: none; flex: none; width: 1.75rem; height: 1.75rem; margin: 0; border: 0; border-radius: 0; cursor: pointer;
+  background: var(--lotus) 50% 1.13rem / 0 0 no-repeat, var(--lily-off) 50% 100% / 1.3rem 1.3rem no-repeat;
+  transition: background-size .8s var(--bloom), background-position .8s var(--bloom) }
+.opt input[type="radio"]:checked { background-image: var(--lotus), var(--lily); background-size: 1.36rem 1.13rem, 1.3rem 1.3rem; background-position: 50% 0, 50% 100% }
+
+/* ---------------------------------------------------------------- pond.js: what moves, and why */
+/* a card below the fold rises into view as it is reached, in the order the page ranks them */
+.pond-sink { opacity: 0; translate: 0 1.4rem }
+.pond-sink.pond-up { opacity: 1; translate: none; transition: opacity .7s ease-out var(--d, 0ms), translate 1s cubic-bezier(.2, .7, .3, 1) var(--d, 0ms) }
+/* a tap rings out like water, so a slow page still shows the tap landed */
+.pond-ring { position: fixed; z-index: 60; width: 0; height: 0; border-radius: 50%; pointer-events: none; box-shadow: 0 0 0 2px var(--rc, currentColor);
+  animation: pond-ring .7s cubic-bezier(.2, .7, .3, 1) forwards }
+.pond-ring + .pond-ring { animation-delay: .14s; opacity: 0 }
+@keyframes pond-ring { 0% { width: 0; height: 0; margin: 0; opacity: .85 } 100% { width: 3.6rem; height: 3.6rem; margin: -1.8rem 0 0 -1.8rem; opacity: 0 } }
+/* the price meter: its steps rise to today's, then this month's bookings fill one by one */
+.ladder .bars i { transform-origin: 50% 100%; transition: transform .55s cubic-bezier(.2, .7, .3, 1) calc(var(--i, 0) * 55ms) }
+.ladder .slots i { transition: background-color .35s ease-out calc(var(--i, 0) * 110ms + 350ms) }
+.ladder.pond-wait:not(.lit) .bars i { transform: scaleY(0) }
+.ladder.pond-wait:not(.lit) .slots i.b { background-color: transparent }
+/* a price that changes (the Buy total, the ฿ / $ / € switch) drops in */
+.pond-tick { display: inline-block; animation: pond-tick .5s cubic-bezier(.2, .7, .3, 1) }
+@keyframes pond-tick { 0% { opacity: .15; translate: 0 -.45em } }
+
+@media (prefers-reduced-motion: reduce) {
+  .stop::after, .stop.hit::after, .opt input[type="radio"], :is(.know ul, .card > ul, .pg .kind ul, .s-body ul) > li::after { transition: none }
+  .pond-sink { opacity: 1; translate: none }
+  .pond-ring, .pond-tick { animation: none }
+}
