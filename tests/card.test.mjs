@@ -133,4 +133,17 @@ const o7 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1
 sql.prepare('UPDATE svc_buy SET pay = NULL WHERE ref = ?').run(o7.ref)   // as before 0011
 await call(on, 'POST', ['card'], { ref: o7.ref, cur: 'EUR' })
 assert.equal(Object.values(pp.orders).at(-1).b.purchase_units[0].amount.currency_code, 'EUR')
+sql.exec('DELETE FROM tries')   // ten returns a day from one address; this file makes more
+// CodeRabbit on #78: a second press gets the same PayPal order; a claimed order goes back to claimed after a decline
+const oA = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:twice', pay: 'EUR' })
+const n0 = Object.keys(pp.orders).length
+const a1 = await call(on, 'POST', ['card'], { ref: oA.ref }), a2 = await call(on, 'POST', ['card'], { ref: oA.ref })
+assert.equal(a1.url, a2.url); assert.equal(Object.keys(pp.orders).length, n0 + 1)
+const oB = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:claimed', pay: 'EUR' })
+await call(on, 'POST', ['claim'], { ref: oB.ref, how: 'wise' })
+await call(on, 'POST', ['card'], { ref: oB.ref })
+pp.next = 'down'; await call(on, 'POST', ['card', 'done'], { ref: oB.ref })
+assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(oB.ref).state, 'capturing')
+pp.next = 'declined'; await call(on, 'POST', ['card', 'done'], { ref: oB.ref })
+assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(oB.ref).state, 'claimed')
 console.log('card review fixes ok')

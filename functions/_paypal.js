@@ -58,8 +58,9 @@ export async function finishCard(env, id, { ref, amount, cur }) {
   if (status === 422 && /ORDER_ALREADY_CAPTURED/.test(JSON.stringify(j))) {
     const r = await fetch(`${base(env)}/v2/checkout/orders/${encodeURIComponent(id)}`, { headers: { authorization: 'Bearer ' + (await token(env)) } })
     j = await r.json().catch(() => ({})); status = r.status
+    if (status >= 300) return { ok: false, why: 'pending', final: false }   // captured already, details unread: still held
   }
-  if (status >= 500 || status === 0) return { ok: false, why: 'pending', final: false }
+  if (status >= 500 || status === 429 || status === 0) return { ok: false, why: 'pending', final: false }
   if (status >= 300) return { ok: false, why: 'paypal', final: true }
   const pu = (j.purchase_units || [])[0] || {}
   const c = ((pu.payments || {}).captures || [])[0] || {}
