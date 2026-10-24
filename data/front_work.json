@@ -1,11 +1,11 @@
 {
   "read": "Her asks 2026-10-24: the Rotary lice cartoon on the page; a few Mot Dang videos in a Mot Dang section; reviews and partnerships (quotes held until she says how to credit them). tools/build_shop.py work_band() draws this on the front page in every language.",
   "ui": {
-    "en": {"work": "Our work", "say": "What people say", "play": "Play · 4 min"},
-    "th": {"work": "ผลงานของเรา", "say": "เสียงตอบรับ", "play": "เล่น · 4 นาที"},
-    "my": {"work": "ကျွန်ုပ်တို့၏ လက်ရာများ", "say": "တုံ့ပြန်ချက်များ", "play": "ဖွင့်ရန် · ၄ မိနစ်"},
-    "zh": {"work": "我们的作品", "say": "大家怎么说", "play": "播放 · 4 分钟"},
-    "de": {"work": "Unsere Arbeit", "say": "Was andere sagen", "play": "Abspielen · 4 Min."}
+    "en": {"work": "Our work", "say": "What people say", "play": "Play · 4 min", "close": "Close"},
+    "th": {"work": "ผลงานของเรา", "say": "เสียงตอบรับ", "play": "เล่น · 4 นาที", "close": "ปิด"},
+    "my": {"work": "ကျွန်ုပ်တို့၏ လက်ရာများ", "say": "တုံ့ပြန်ချက်များ", "play": "ဖွင့်ရန် · ၄ မိနစ်", "close": "ပိတ်ရန်"},
+    "zh": {"work": "我们的作品", "say": "大家怎么说", "play": "播放 · 4 分钟", "close": "关闭"},
+    "de": {"work": "Unsere Arbeit", "say": "Was andere sagen", "play": "Abspielen · 4 Min.", "close": "Schließen"}
   },
   "groups": [
     {
@@ -42,11 +42,11 @@
       "line": "shop",
       "n": {"en": "Mot Dang", "th": "มดแดง", "my": "Mot Dang", "zh": "Mot Dang", "de": "Mot Dang"},
       "l": {
-        "en": "Our online directory of places in Chiang Mai and Chiang Rai, in Thai and English. Three of its videos:",
-        "th": "สารบัญสถานที่ในเชียงใหม่และเชียงรายของเรา ภาษาไทยและอังกฤษ วิดีโอสามเรื่อง:",
-        "my": "ချင်းမိုင်နှင့် ချင်းရိုင်အတွက် ကျွန်ုပ်တို့၏ လမ်းညွှန်၊ ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာ။ ဗီဒီယို သုံးခု—",
-        "zh": "我们的清迈和清莱在线地点目录，泰文和英文。三段视频：",
-        "de": "Unser Online-Verzeichnis von Orten in Chiang Mai und Chiang Rai, auf Thai und Englisch. Drei seiner Videos:"
+        "en": "Our online directory of places in Chiang Mai and Chiang Rai, in Thai and English.",
+        "th": "สารบัญสถานที่ในเชียงใหม่และเชียงรายของเรา ภาษาไทยและอังกฤษ",
+        "my": "ချင်းမိုင်နှင့် ချင်းရိုင်အတွက် ကျွန်ုပ်တို့၏ လမ်းညွှန်၊ ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာ။",
+        "zh": "我们的清迈和清莱在线地点目录，泰文和英文。",
+        "de": "Unser Online-Verzeichnis von Orten in Chiang Mai und Chiang Rai, auf Thai und Englisch."
       },
       "videos": [
         {

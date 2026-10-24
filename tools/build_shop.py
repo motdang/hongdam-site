@@ -444,7 +444,6 @@ def front(lang):
     # (her asks 2026-10-24: where "here" is; "everything should be fully self-explanatory")
     out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
     out += '<p class="lede">%s</p>\n' % "<br>".join(E(ui[k]) for k in ("place", "lede") if ui.get(k))
-    out += questions_band(lang)
     out += '<p class="share-row">%s</p>\n' % share_btn(lang)
     if LOOKS["master"]:
         caps = []
@@ -469,6 +468,9 @@ def front(lang):
             db(LOOKS["doors"][c["id"]], play="hover") if LOOKS["doors"].get(c["id"]) else '<span class="e" aria-hidden="true">%s</span>' % c["emoji"],
             E(tr(c["n"], lang)), count.get(c["id"], 0))
         for c in SHOP["cats"]))
+    # the questions people asked, at the foot of the page above "can't find it?" (her word 2026-10-24: "the question
+    # crawl should be at the bottom not the top")
+    out += questions_band(lang)
     out += not_here(lang) + '</main>\n' + foot(lang, front=True, group="front")
     return out
 
@@ -506,31 +508,36 @@ WORK = json.load(open(WORK_F, encoding="utf-8")) if os.path.exists(WORK_F) else 
 
 
 def work_band(lang):
-    """Her asks 2026-10-24 (data/front_work.json): the Rotary lice cartoon, a Mot Dang section with a few of its
-    videos, and what people say. The cartoon lives on Google Drive: its poster is a button that shop.js swaps for
-    Drive's player. A quote shows only once it is marked show."""
+    """Her asks 2026-10-24 (data/front_work.json): the Rotary lice cartoon and a few Mot Dang videos, as one row of
+    thumbnails ("our work should be smaller interface with thumbnails"), and what people say. A tap opens the film over
+    the page with its words and link (shop.js, dialog.player); the cartoon lives on Google Drive, so no Google script
+    loads until someone opens it. A quote shows only once it is marked show."""
     if not WORK or lang not in WORK["ui"]:
         return ""
     wu = WORK["ui"][lang]
-    out = '<h2>%s</h2>\n<div class="work">' % E(wu["work"])
+    thumb = lambda p: p.replace("/media/", "/media/thumbs/")
+
+    def item(kind, src, n, sub, g, poster, w, h, go):
+        # a short line under the name stays on the thumbnail; a long one moves into the player, before the group's words
+        about = tr(g["l"], lang)
+        if len(sub) > 28:
+            sub, about = "", sub + " " + about
+        return ('<li><button type="button" class="thumb" aria-haspopup="dialog" data-kind="%s" data-src="%s" data-poster="%s" data-w="%d" data-h="%d"'
+                ' data-n="%s" data-l="%s" data-go="%s" data-gon="%s" style="--line:var(--c-%s)">'
+                '<img src="%s" width="240" height="300" alt="" loading="lazy" decoding="async"><span class="tn">%s</span>%s</button></li>' % (
+                    kind, E(src), E(poster), w, h, E(n), E(about), E(go), E(tr(g["goN"], lang)), g["line"],
+                    E(thumb(poster)), E(n), '<span class="ts">%s</span>' % E(sub) if sub else ""))
+    out = '<h2>%s</h2>\n<ul class="thumbs">' % E(wu["work"])
     for g in WORK["groups"]:
-        out += '<section class="wk" id="work-%s" style="--line:var(--c-%s)"><h3>%s</h3><p class="l">%s</p>' % (
-            g["id"], g["line"], E(tr(g["n"], lang)), E(tr(g["l"], lang)))
         if g.get("drive"):
-            out += ('<button type="button" class="vid drive" data-src="%s" aria-label="%s: %s">'
-                    '<img src="%s" width="%d" height="%d" alt="%s" loading="lazy" decoding="async"><span class="play">%s</span></button>' % (
-                        E(g["drive"]), E(wu["play"]), E(tr(g["n"], lang)), E(g["poster"]), g["w"], g["h"], E(tr(g["alt"], lang)), E(wu["play"])))
-        if g.get("videos"):
-            out += '<ul class="reels">'
-            for v in g["videos"]:
-                name = E(tr(v["n"], lang))
-                out += ('<li><video controls playsinline preload="none" poster="%s" width="%d" height="%d" title="%s"><source src="%s" type="video/mp4"></video>'
-                        '<p><b>%s</b> <span>%s</span></p></li>' % (
-                            E(v["poster"]), v["w"], v["h"], name, E(v["src"]),
-                            '<a href="%s">%s</a>' % (E(v["go"]), name) if v.get("go") else name, E(tr(v["by"], lang))))
-            out += '</ul>'
-        out += '<p class="go"><a href="%s">%s →</a></p></section>' % (E(g["go"]), E(tr(g["goN"], lang)))
-    out += '</div>\n'
+            out += item("drive", g["drive"], tr(g["n"], lang), wu["play"], g, g["poster"], g["w"], g["h"], g["go"])
+        for v in g.get("videos", []):
+            out += item("mp4", v["src"], tr(v["n"], lang), tr(v["by"], lang), g, v["poster"], v["w"], v["h"], v.get("go") or g["go"])
+    out += '</ul>\n<p class="thumbs-go">%s</p>\n' % " · ".join(
+        '<a href="%s">%s →</a>' % (E(g["go"]), E(tr(g["goN"], lang))) for g in WORK["groups"])
+    out += ('<dialog class="player" aria-labelledby="player-h"><div class="bar"><h3 id="player-h"></h3>'
+            '<button type="button" class="x" aria-label="%s">×</button></div><div class="pv"></div>'
+            '<p class="desc"></p><p class="go"><a href=""></a></p></dialog>\n' % E(wu["close"]))
     says = [q for q in WORK.get("quotes", []) if q.get("show")]
     if says:
         out += '<h2>%s</h2>\n<ul class="says">%s</ul>\n' % (E(wu["say"]), "".join(

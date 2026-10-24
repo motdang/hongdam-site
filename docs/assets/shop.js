@@ -495,24 +495,27 @@ if (D.front && D.lang === 'en' && !store('hd-lang')) {
   if (want && want !== 'en') location.replace('/' + want + '/')
 }
 
-// Our work (front page): the Rotary cartoon lives on Google Drive. Its poster is a button; a press puts Drive's
-// player in its place, so the page loads no Google script until someone wants the film.
-document.querySelectorAll('.vid.drive').forEach((b) => b.addEventListener('click', () => {
-  const f = document.createElement('iframe')
-  f.src = b.dataset.src
-  f.title = b.getAttribute('aria-label')
-  f.allow = 'autoplay; fullscreen'
-  f.allowFullscreen = true
-  const box = document.createElement('div')
-  box.className = 'vid'
-  box.appendChild(f)
-  b.replaceWith(box)
-  f.focus()
-}, { once: true }))
-// one Mot Dang video plays at a time
-document.querySelectorAll('.reels video').forEach((v) => v.addEventListener('play', () => {
-  document.querySelectorAll('.reels video').forEach((o) => { if (o !== v) o.pause() })
-}))
+// Our work (front page): one row of thumbnails (her ask 2026-10-24: "smaller interface with thumbnails"). A tap opens
+// the film over the page with its words and link; closing it stops the film. The Rotary cartoon lives on Google Drive,
+// so the page loads no Google script until someone opens it.
+const player = document.querySelector('dialog.player')
+if (player && player.showModal) {
+  const pv = $('.pv', player), go = $('.go a', player), desc = $('.desc', player)
+  document.querySelectorAll('.thumb').forEach((b) => b.addEventListener('click', () => {
+    const d = b.dataset
+    $('h3', player).textContent = d.n
+    desc.textContent = d.l || ''; desc.hidden = !d.l
+    go.href = d.go; go.textContent = d.gon + ' →'
+    let m
+    if (d.kind === 'drive') { m = document.createElement('iframe'); m.src = d.src; m.title = d.n; m.allow = 'autoplay; fullscreen'; m.allowFullscreen = true }
+    else { m = document.createElement('video'); m.src = d.src; m.poster = d.poster; m.controls = true; m.playsInline = true; m.autoplay = true; m.width = d.w; m.height = d.h }
+    pv.replaceChildren(m)
+    player.showModal()
+  }))
+  player.addEventListener('close', () => pv.replaceChildren())
+  $('.x', player).addEventListener('click', () => player.close())
+  player.addEventListener('click', (e) => { if (e.target === player) player.close() })   // a tap on the dark around it
+} else document.querySelectorAll('.thumb').forEach((b) => b.addEventListener('click', () => { location.href = b.dataset.src }))
 
 // Today's prices
 const live = {}
