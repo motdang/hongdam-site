@@ -1,0 +1,356 @@
+/* hongdam.net: the pages outside the shop (own, red team, market, bots, GitHub, translation, tasks, events,
+   portfolio, stats, invoices, 404), in the shop's Isotype look. Loaded after shop.css, which holds the tokens,
+   the top bar, buttons, cards and the job line. Each page's body carries class "pg pg-<id>" and its line colour. */
+
+:root { --ok: #1E6B43; --err: #A3241F; --tint: color-mix(in oklab, var(--fg) 7%, transparent) }
+@media (prefers-color-scheme: dark) { :root { --ok: #7DD3A3; --err: #FF9C94 } }
+
+/* a page's own display rules never show what it has hidden (the pay box before a booking) */
+.pg [hidden] { display: none !important }
+
+/* ---------------------------------------------------------------- heading, picture, words */
+.pg h1 small, .pg h1 .sub { display: block; margin-top: .4em; font: 600 clamp(1.05rem, 4.6vw, 1.45rem)/1.4 var(--sys); letter-spacing: 0; text-transform: none; color: var(--mut) }
+.pg h1.cat-h { align-items: flex-start }
+.pg h1.cat-h > .db { margin-top: .05em }
+.pg .job.page { --stop: 2.7rem; margin: .2rem 0 1.7rem }
+.pg main section { margin-top: 2.7rem }
+.pg h2 span[lang], .pg h2 small { display: block; margin-top: .3rem; font: 600 .98rem/1.4 var(--sys); letter-spacing: 0; text-transform: none; color: var(--mut) }
+.pg h3 { margin: 0; font: 680 1.14rem/1.3 var(--sys); letter-spacing: -.005em }
+.pg h3 span[lang], .pg h3 small { display: block; margin-top: .15rem; font-size: .9rem; font-weight: 500; color: var(--mut) }
+.pg p { margin: .5rem 0 }
+.pg .pair { max-width: 62ch; margin: 0 0 1.4rem }
+.pg .pair p { margin: .35rem 0; font-size: 1.12rem; color: var(--mut) }
+.pg .pair p[lang="th"] { color: var(--fg) }
+.pg .note, .pg .shoup, .pg .small { max-width: 62ch; color: var(--mut) }
+.pg .note span[lang="th"], .pg .shoup span[lang="th"] { display: block; color: var(--fg) }
+.pg .small { font-size: .95rem }
+.pg code { padding: .05em .35em; border-radius: 4px; background: var(--tint); font: .88em/1.4 var(--mono); overflow-wrap: anywhere }
+.pg pre { margin: .5rem 0; padding: .7rem .8rem; border-radius: var(--r); background: var(--tint); font: .86rem/1.5 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere }
+/* .go is also the class shop.js gives a job line while the swan rides it */
+.pg div.go:not(.job), .pg .cta, .pg .acts { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; margin: 1rem 0 }
+.pg div.go:not(.job) small { color: var(--mut); font-size: .98rem }
+
+/* panels: the shop card's paper, ink border and hard shadow, for blocks that are not shop cards */
+.pg .panel, .pg .kind, .pg .pack, .pg .flow, .pg .col, .pg .prices > div, .pg .price > div, .pg form.book, .pg #paid, .pg .box, .pg .score > div, .pg .res li {
+  padding: 1.1rem 1.15rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+
+/* a big number: a price, a count */
+.pg .kind b.p, .pg .price b, .pg .prices b, .pg .score b { display: block; font: 700 1.9rem/1.1 var(--font-num); font-variant-numeric: tabular-nums; letter-spacing: -.01em }
+
+/* tables */
+.pg table { width: 100%; border-collapse: collapse; font-size: 1rem }
+.pg th, .pg td { padding: .7rem .5rem .7rem 0; border-top: 1px solid var(--rule); text-align: left; vertical-align: top }
+.pg th { font-weight: 700 }
+.pg th span[lang], .pg td span[lang] { display: block; margin-top: .15rem; font-weight: 500; color: var(--mut) }
+
+/* ---------------------------------------------------------------- forms */
+.pg main :where(label) { display: block; margin: 1rem 0 .2rem; font-weight: 650 }
+/* :where() keeps these plain defaults easy for a page's own rules to override */
+.pg main :where(input:not([type=radio], [type=checkbox], [type=file], .q), textarea, select) {
+  display: block; width: 100%; margin-top: .35rem; padding: .7rem .8rem; border: 1.5px solid var(--fg); border-radius: 10px; background: var(--bg2); color: var(--fg); font: inherit }
+.pg main textarea { min-height: 7.5rem; resize: vertical }
+.pg main :where(input, textarea)::placeholder { color: var(--mut) }
+.pg main :where(input[type=radio], input[type=checkbox]) { width: 1.25rem; height: 1.25rem; margin: 0; accent-color: var(--fg); flex: none }
+.pg main :where(input[type=file]) { display: block; margin-top: .4rem; font: inherit; color: var(--fg) }
+.pg main :where(button:not(.btn, .step, .linkish, [data-copy])) {
+  display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 2.9rem; padding: .6rem 1.3rem; border: 0; border-radius: var(--btn-r);
+  background: var(--btn); color: var(--btn-fg); box-shadow: 3px 3px 0 var(--line, var(--acc)); font: 700 1rem/1.1 var(--sys); cursor: pointer }
+.pg main :where(button:disabled) { opacity: .5; cursor: default }
+.pg .linkish { padding: 0; border: 0; background: none; color: var(--fg); font: inherit; font-size: .95rem; font-weight: 650; text-decoration: underline; text-underline-offset: .2em; cursor: pointer }
+.pg .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0 1rem }
+.pg .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden }
+.pg .status, .pg .msg { min-height: 1.5em; margin: .7rem 0 0; font-weight: 650 }
+.pg .status.err, .pg .msg.err, .pg .err { color: var(--err) }
+.pg .status.ok { color: var(--ok) }
+
+/* ---------------------------------------------------------------- your own builder */
+.pg .shot { display: block; max-width: 40rem; overflow: hidden; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow); text-decoration: none }
+.pg .shot img { display: block; width: 100%; height: auto; aspect-ratio: 1.6; object-fit: cover; object-position: top; border-bottom: var(--card-bd) }
+.pg .shot b { display: block; padding: .8rem 1rem 0; font: 680 1.14rem/1.3 var(--sys) }
+.pg .shot i { display: block; padding: .1rem 1rem .9rem; font-style: normal; color: var(--mut); font-size: .95rem; overflow-wrap: anywhere }
+.pg .price { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; max-width: 40rem }
+.pg .price span { display: block; color: var(--mut) }
+.pg .price span[lang="th"] { color: var(--fg) }
+
+/* ---------------------------------------------------------------- bots and GitHub */
+.pg .why { max-width: 30ch; margin: 0; font: var(--hd-w) clamp(1.45rem, 6vw, 2.1rem)/1.2 var(--font-d); letter-spacing: var(--hd-track) }
+.pg .why span { display: block; margin-top: .5rem; font: 600 .62em/1.5 var(--sys); letter-spacing: 0; color: var(--mut) }
+.pg ol.time { display: grid; gap: 1.1rem; max-width: 62ch; margin: 0; padding: 0; list-style: none }
+.pg ol.time li { display: grid; grid-template-columns: 4.2rem 1fr; gap: .8rem }
+.pg ol.time b.t { font: 700 1.2rem/1.35 var(--font-num); font-variant-numeric: tabular-nums }
+.pg ol.time li span[lang="th"] { display: block; margin-top: .25rem; color: var(--mut) }
+.pg .dawg { max-width: 62ch; padding: .2rem 0 .2rem 1.1rem; border-left: var(--line-w) solid var(--line, var(--fg)) }
+.pg .dawg q { display: block; font: var(--hd-w) 1.5rem/1.25 var(--font-d); letter-spacing: var(--hd-track); quotes: none }
+.pg .dawg p { color: var(--mut) }
+.pg .dawg p[lang="th"] { color: var(--fg) }
+.pg .flow { max-width: 46rem; margin: 1rem 0 }
+.pg .flow ol { display: flex; flex-wrap: wrap; gap: .45rem; margin: .8rem 0 .6rem; padding: 0; list-style: none }
+.pg .flow ol li { padding: .25rem .7rem; border-radius: 1.1rem; box-shadow: inset 0 0 0 1.5px var(--fg); font-size: .92rem; line-height: 1.4 }
+.pg .flow ol li:not(:last-child)::after { content: " →"; color: var(--mut) }
+.pg .flow ol li.you { background: var(--fg); color: var(--bg); box-shadow: none; font-weight: 700 }
+.pg .flow ol li.you::after { color: var(--bg) }
+.pg .flow p { color: var(--mut) }
+.pg .flow p[lang="th"] { color: var(--fg) }
+.pg .kinds { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem }
+.pg .kind { display: flex; flex-direction: column; gap: .55rem; border-top: calc(var(--line-w) + 2px) solid var(--line, var(--fg)) }
+.pg .kind .usd { color: var(--mut); font-size: .95rem }
+.pg .kind ul { margin: .2rem 0; padding-left: 1.1rem; color: var(--mut); font-size: .98rem }
+.pg .kind li { margin: .35rem 0 }
+.pg .kind li span { display: block; color: var(--fg) }
+.pg .kind .slots { color: var(--ok); font-size: .95rem; font-weight: 650 }
+.pg .kind .slots.full { color: var(--err) }
+.pg .kind .btn { align-self: flex-start; margin-top: auto }
+.pg ol.how { display: grid; gap: 1rem; max-width: 62ch; margin: 0; padding: 0; list-style: none; counter-reset: s }
+.pg ol.how li { position: relative; padding-left: 2.8rem; counter-increment: s; color: var(--mut) }
+.pg ol.how li::before { content: counter(s); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--fg); color: var(--bg); font: 700 1rem/1 var(--font-num) }
+.pg ol.how li b { color: var(--fg) }
+.pg ol.how li span[lang="th"] { display: block; color: var(--fg) }
+.pg ul.more { display: grid; gap: 1rem; max-width: 62ch; margin: 0; padding: 0; list-style: none; color: var(--mut) }
+.pg ul.more li b { color: var(--fg) }
+.pg ul.more li span[lang="th"] { display: block; color: var(--fg) }
+.pg form.book { display: grid; grid-template-columns: minmax(0, 1fr); gap: .3rem; max-width: 36rem }
+.pg form.book fieldset { display: grid; gap: .1rem; margin: 0 0 .4rem }
+.pg form.book label.r, .pg .opt { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; min-height: 3rem; margin: 0 0 .45rem; padding: .5rem .9rem;
+  border-radius: var(--r); box-shadow: inset 0 0 0 1px var(--rule); background: var(--bg); font-weight: 500 }
+.pg form.book label.r:has(input:checked) { box-shadow: inset 0 0 0 2px var(--line, var(--fg)) }
+.pg form.book label.r b { font-family: var(--font-num); font-variant-numeric: tabular-nums }
+.pg form.book button { justify-self: start; margin-top: 1rem }
+.pg #paid { display: grid; grid-template-columns: minmax(0, 1fr); gap: .7rem; max-width: 36rem; border-top: calc(var(--line-w) + 2px) solid var(--line, var(--fg)) }
+.pg #paid .amt { font: 700 1.9rem/1.1 var(--font-num); font-variant-numeric: tabular-nums; white-space: normal }
+.pg .qr svg { display: block; width: 220px; height: 220px; background: #fff; border-radius: 10px }
+.pg #paid .ways { display: flex; flex-wrap: wrap; gap: .8rem }
+
+/* ---------------------------------------------------------------- red team and the market */
+.pg .run { max-width: 46rem }
+.pg .pick { display: flex; flex-wrap: wrap; gap: .5rem; margin: .4rem 0 1.2rem }
+.pg .pick label { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.6rem; margin: 0; padding: .3rem .9rem; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--fg); font-weight: 600; cursor: pointer }
+.pg .pick label:has(input:checked) { background: var(--fg); color: var(--bg) }
+.pg .pick label:has(input:checked) input { accent-color: var(--bg) }
+.pg .pick .small { color: inherit; opacity: .85 }
+.pg div.bar { height: 8px; margin: 1.2rem 0 .4rem; overflow: hidden; border-radius: 8px; background: var(--tint) }
+.pg div.bar i { display: block; width: 0; height: 100%; background: var(--line, var(--fg)); transition: width .6s var(--ease) }
+.pg .score { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.6rem 0 .6rem }
+.pg .score > div { min-width: 9rem; padding: .7rem 1rem }
+.pg .score span { font: 700 .74rem/1.3 var(--font-l); letter-spacing: .12em; text-transform: uppercase; color: var(--mut) }
+.pg .res { display: grid; gap: .8rem; margin: 1rem 0 0; padding: 0; list-style: none }
+.pg .res li { border-left: calc(var(--line-w) + 3px) solid var(--ok) }
+.pg .res li.fail, .pg .res li.error { border-left-color: var(--err) }
+.pg .res .v { font: 700 .78rem/1.3 var(--font-l); letter-spacing: .14em; text-transform: uppercase }
+.pg .res li.fail .v, .pg .res li.error .v { color: var(--err) }
+.pg .res li.pass .v { color: var(--ok) }
+.pg .res summary { cursor: pointer; font-weight: 650 }
+.pg .dl { display: flex; gap: 1.2rem; margin: 1rem 0 }
+.pg .packs { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem }
+.pg .pack { display: flex; flex-direction: column; gap: .6rem; border-top: calc(var(--line-w) + 2px) solid var(--line, var(--fg)) }
+.pg .pack h2 { margin: 0; font: 680 1.2rem/1.3 var(--sys); letter-spacing: -.005em; text-transform: none; color: var(--fg) }
+.pg .pack p { margin: 0; color: var(--mut) }
+.pg .pack dl { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1rem; margin: .2rem 0 }
+.pg .pack dt { font: 700 .72rem/1.3 var(--font-l); letter-spacing: .14em; text-transform: uppercase; color: var(--mut) }
+.pg .pack dd { margin: .1rem 0 0 }
+.pg .pack .acts { margin: auto 0 0 }
+.pg .sell { max-width: 36rem }
+
+/* ---------------------------------------------------------------- translation */
+.pg .pairs { display: flex; flex-wrap: wrap; gap: .7rem }
+.pg .pairs span { padding: .55rem 1rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: 3px 3px 0 var(--fg); font: 700 1.1rem/1.3 var(--font-d) }
+.pg .prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem }
+.pg .prices span { display: block; font-weight: 650 }
+.pg .prices b { margin: .2rem 0 }
+.pg .prices i { font-style: normal; color: var(--mut); font-size: .95rem }
+.pg .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem }
+.pg .col h2 { margin: 0 0 .6rem }
+.pg .col ul { margin: 0; padding: 0; list-style: none }
+.pg .col li { padding: .45rem 0; border-top: 1px solid color-mix(in oklab, var(--fg) 22%, transparent) }
+.pg .col li:first-child { border-top: 0 }
+.pg .stamp { display: grid; grid-template-columns: minmax(0, 11rem) 1fr; gap: 1.4rem; align-items: center; max-width: 46rem }
+.pg .stamp img { width: 100%; height: auto; padding: .4rem; border-radius: 50%; background: #FFFDF8; box-shadow: 0 0 0 2px var(--fg) }
+.pg .stamp p { color: var(--mut) }
+.pg div.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1.1rem; counter-reset: s }
+.pg div.steps > div { padding-top: .8rem; border-top: var(--line-w) solid var(--line, var(--fg)); counter-increment: s }
+.pg div.steps b { display: block; font-size: 1.08rem }
+.pg div.steps b::before { content: counter(s) ". "; font-family: var(--font-num) }
+.pg div.steps p { margin: .3rem 0 0; color: var(--mut) }
+.pg .mail { margin-top: 1rem; color: var(--mut) }
+/* the pay box /pay/paybox.js draws (its own styles are for any page; these put it in this look) */
+.pg [data-paybox] { max-width: 30rem; margin: 1.4rem 0; padding: 1.1rem 1.15rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+.pg [data-paybox] label { margin: .45rem 0; font-weight: 500 }
+.pg [data-paybox] input[type=number] { display: inline-block; width: 5.5rem; margin: 0 0 0 .4rem; padding: .45rem .6rem }
+.pg [data-paybox] .amt { font: 700 1.9rem/1.1 var(--font-num) }
+.pg [data-paybox] button, .pg [data-paybox] .btn { min-height: 2.9rem; padding: .6rem 1.3rem; border: 0; border-radius: var(--btn-r); background: var(--btn); color: var(--btn-fg); box-shadow: 3px 3px 0 var(--line, var(--acc)); font: 700 1rem/1.1 var(--sys) }
+.pg [data-paybox] .err { color: var(--err) }
+@media (max-width: 35rem) { .pg .stamp { grid-template-columns: 1fr } .pg .stamp img { max-width: 11rem } }
+
+/* ---------------------------------------------------------------- invoice */
+/* the invoice number is a reference to type: its letters keep their case */
+.pg-invoice h1 { text-transform: none }
+.pg .inv-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.2rem; margin: .4rem 0 1.6rem }
+.pg .inv-head dl { display: grid; grid-template-columns: auto auto; gap: .15rem 1.1rem; margin: 0 }
+.pg .inv-head dt { color: var(--mut) }
+.pg .inv-head dd { margin: 0 }
+.pg .label { margin: 0 0 .3rem; font: 700 .78rem/1.3 var(--font-l); letter-spacing: var(--label-track); text-transform: var(--label-case); color: var(--mut) }
+.pg .lines td span { display: block; margin-top: .2rem; color: var(--mut) }
+.pg .lines td.n { padding-left: 1rem; text-align: right; white-space: nowrap; font-family: var(--font-num); font-variant-numeric: tabular-nums }
+.pg .lines tr.total td { padding-top: .9rem; border-top: 2px solid var(--fg); font: 700 1.5rem/1.2 var(--font-num) }
+.pg .way { margin: 1rem 0; padding: 1rem 1.1rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2) }
+.pg .way h3 { margin-bottom: .3rem }
+.pg .way p { color: var(--mut) }
+.pg .way code { color: var(--fg) }
+.pg button[data-copy] { margin-left: .3rem; padding: .15rem .6rem; border: 1.5px solid var(--fg); border-radius: 6px; background: var(--bg2); color: var(--fg); font: 600 .9rem/1.3 var(--sys); cursor: pointer }
+@media print {
+  .pg header.top, .pg footer, .pg .btn, .pg button, .pg .job, .pg .rate, .pg .back { display: none !important }
+  .pg, .pg main { color: #000; background: #fff }
+  .pg .way { box-shadow: none }
+}
+
+/* ---------------------------------------------------------------- task graph */
+.pg #g { display: block; width: 100%; height: auto; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow); touch-action: pinch-zoom }
+.pg #g line.up { stroke: color-mix(in oklab, var(--fg) 30%, transparent); stroke-width: 1.5 }
+.pg #g path.rel { fill: none; stroke: color-mix(in oklab, var(--line) 70%, transparent); stroke-width: 2; stroke-dasharray: 6 6 }
+.pg #g text.leaf { fill: var(--mut); font: 500 17px var(--sys) }
+.pg #g text.root { fill: var(--fg); font: 700 21px var(--font-d) }
+.pg #g text.rootth { fill: var(--mut); font: 600 20px var(--sys) }
+.pg #g a:hover text { fill: var(--fg); text-decoration: underline }
+.pg #g circle.hub { fill: var(--bg); stroke: var(--fg); stroke-width: 2 }
+.pg #g .new circle { fill: none; stroke: var(--fg); stroke-dasharray: 4 3; stroke-width: 2 }
+.pg #g .new line { stroke: var(--fg) }
+.pg #g .new text { fill: var(--fg); font: italic 500 17px var(--sys) }
+.pg .key { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin: .8rem 0 1.6rem; color: var(--mut) }
+.pg .key b { display: inline-block; width: .8rem; height: .8rem; margin-right: .4rem; border-radius: 50%; background: currentColor; vertical-align: -.05em }
+.pg .grps { columns: 17rem; column-gap: 1.6rem }
+.pg .grp { margin: 0 0 1.6rem; break-inside: avoid }
+.pg .grp h2 { margin: 0 0 .4rem; font: 680 1.14rem/1.3 var(--sys); letter-spacing: 0; text-transform: none; color: var(--fg) }
+.pg .grp ul { margin: 0; padding: 0; list-style: none }
+.pg .grp li { padding: .3rem 0; border-top: 1px solid color-mix(in oklab, var(--fg) 22%, transparent); font-size: .98rem }
+.pg .grp li span { color: var(--mut) }
+.pg .grp i { margin-left: .3rem; font: 700 .72rem/1 var(--font-l); font-style: normal; letter-spacing: .08em; text-transform: uppercase }
+/* who does a kind of work: robot, human, either; dots and words in ink-safe colours */
+.pg { --by-robot: #1E6B43; --by-human: #A3241F; --by-both: #6B4E00 }
+@media (prefers-color-scheme: dark) { .pg { --by-robot: #7DD3A3; --by-human: #FF9C94; --by-both: #E9C46A } }
+.pg .by-robot { color: var(--by-robot); fill: var(--by-robot) }
+.pg .by-human { color: var(--by-human); fill: var(--by-human) }
+.pg .by-both { color: var(--by-both); fill: var(--by-both) }
+.pg #newlist { margin: -.6rem 0 1.4rem; color: var(--mut) }
+
+/* ---------------------------------------------------------------- stats */
+.pg .big { display: flex; flex-wrap: wrap; gap: .9rem; margin: 1rem 0 }
+.pg .big > div { flex: 1 1 9rem; padding: .7rem 1rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+.pg .big b { display: block; font: 700 2.2rem/1.1 var(--font-num); font-variant-numeric: tabular-nums }
+.pg .days { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0 1rem }
+.pg .days button { min-height: 2.75rem; padding: .3rem .9rem; border: 0; border-radius: 999px; background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg); font: 650 .98rem/1.2 var(--sys); cursor: pointer }
+.pg .days button[aria-pressed="true"] { background: var(--fg); color: var(--bg); box-shadow: none }
+.pg td.n, .pg th.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums }
+.pg span.bar { display: block; height: 10px; min-width: 2px; margin-top: 4px; background: var(--line, var(--fg)) }
+.pg .empty { color: var(--mut) }
+.pg .box { margin: 1rem 0 }
+
+/* ---------------------------------------------------------------- portfolio (drawn by its own script) */
+.pg-portfolio .kicker { margin: 0 0 .5rem }
+.pg-portfolio .lede b { font-weight: 700; color: var(--fg) }
+.pg-portfolio .who { max-width: 66ch; color: var(--mut) }
+.pg .counts { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.4rem 0 0 }
+.pg .counts .c { min-width: 6.5rem; padding: .6rem .9rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: 3px 3px 0 var(--fg) }
+.pg .counts .n { font: 700 1.5rem/1 var(--font-num); font-variant-numeric: tabular-nums }
+.pg .counts .l { margin-top: .35rem; font: 700 .7rem/1.2 var(--font-l); letter-spacing: .12em; text-transform: uppercase; color: var(--mut) }
+.pg-portfolio #app section { margin-top: 3rem }
+.pg .sec-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .8rem; margin: 0 0 .3rem }
+.pg .sec-h .num { font: 700 .8rem/1 var(--font-num); letter-spacing: .1em; color: var(--mut) }
+.pg .sec-h h2 { margin: 0; font: var(--hd-w) clamp(1.5rem, 6vw, 2.1rem)/1.15 var(--font-d); letter-spacing: var(--hd-track); text-transform: lowercase; color: var(--fg) }
+.pg .sec-h h2 .th { font: 600 .6em/1.3 var(--sys); letter-spacing: 0; text-transform: none; color: var(--mut) }
+.pg .sec-sub { max-width: 66ch; margin: .4rem 0 1.2rem; color: var(--mut) }
+.pg .sec-sub b { color: var(--fg) }
+.pg-portfolio .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)) }
+.pg-portfolio .card { display: flex; flex-direction: column; padding: 0; overflow: hidden }
+.pg-portfolio .card > a { display: block; color: var(--fg); text-decoration: none }
+.pg-portfolio a.shot .bg { display: block; aspect-ratio: 5 / 3; background: var(--tint) top center / cover no-repeat; border-bottom: var(--card-bd) }
+.pg-portfolio a.shot .scrim, .pg-portfolio a.shot .sp { display: none }
+.pg-portfolio a.shot .tx { display: block; padding: .9rem 1rem 0 }
+.pg-portfolio a.panel { padding: 1rem 1rem 0; border: 0; border-radius: 0; background: none; box-shadow: none }
+.pg-portfolio .card h3 { font: 680 1.14rem/1.3 var(--sys) }
+.pg-portfolio .card h3 .th { font-weight: 500; font-size: .85em; color: var(--mut) }
+.pg-portfolio .card > a p { margin: .35rem 0 0; color: var(--mut); font-size: .98rem }
+.pg-portfolio a.panel .term { margin-top: .8rem; padding-top: .6rem; border-top: 1.5px dashed color-mix(in oklab, var(--fg) 35%, transparent); font: .8rem/1.45 var(--mono); color: var(--mut); white-space: pre-wrap; overflow-wrap: anywhere }
+.pg-portfolio a.panel .term .p { color: var(--fg); font-weight: 700 }
+.pg-portfolio .meta { display: flex; flex: 1; flex-direction: column; gap: .7rem; padding: .8rem 1rem 1rem }
+.pg-portfolio .chips { display: flex; flex-wrap: wrap; gap: .35rem }
+.pg-portfolio .chip { padding: .15rem .55rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); font: .78rem/1.4 var(--mono); white-space: nowrap }
+.pg-portfolio .chip.n { background: var(--fg); color: var(--bg); box-shadow: none; font-weight: 700 }
+.pg-portfolio .linkrow { display: flex; align-items: center; gap: .5rem; margin-top: auto; font: .85rem/1.3 var(--mono); color: var(--mut) }
+.pg-portfolio .linkrow .u { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--fg) }
+.pg-portfolio .linkrow .go { margin-left: auto; flex: none }
+.pg-portfolio .packs { margin: 1.2rem 0 0; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)) }
+.pg-portfolio .pack { padding: .8rem .9rem }
+.pg-portfolio .pack h4 { margin: 0; font: 680 1rem/1.3 var(--sys) }
+.pg-portfolio .pack h4 .th { display: block; margin-top: .1rem; font-weight: 500; font-size: .85em; color: var(--mut) }
+.pg-portfolio .pack p { font-size: .92rem }
+.pg-portfolio .pack .k { display: block; margin-top: .5rem; font: .76rem/1.3 var(--mono); color: var(--mut) }
+.pg-portfolio .team { margin-top: 2.8rem; padding: 1.2rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+.pg-portfolio .team .lbl { font: 700 .78rem/1.3 var(--font-l); letter-spacing: var(--label-track); text-transform: uppercase; color: var(--mut) }
+.pg-portfolio .team h3 { margin: .5rem 0 0; font: var(--hd-w) clamp(1.3rem, 5vw, 1.7rem)/1.2 var(--font-d); letter-spacing: var(--hd-track) }
+.pg-portfolio .team p { color: var(--mut) }
+.pg-portfolio .team p b { color: var(--fg) }
+
+/* ---------------------------------------------------------------- task board (functions/tasks) */
+.pg form.post { display: grid; grid-template-columns: minmax(0, 1fr); gap: .2rem; max-width: 46rem; padding: 1.1rem 1.15rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+.pg form.post details { margin-top: .6rem; padding-top: .6rem; border-top: 1px solid var(--rule) }
+.pg form.post > div > button, .pg form.post button[type=submit] { margin-top: 1rem }
+.pg summary { cursor: pointer; font-weight: 650 }
+.pg .chk { display: flex; align-items: flex-start; gap: .6rem; font-weight: 500 }
+.pg .chk small { display: block; color: var(--mut) }
+.pg .radios { display: flex; flex-wrap: wrap; gap: .2rem 1.2rem }
+.pg .radios label { display: flex; align-items: center; gap: .45rem; margin: .3rem 0; font-weight: 500 }
+.pg section.list { margin-top: 2.6rem }
+.pg section.list > h2 span { display: block; margin-top: .3rem; font: 600 .98rem/1.4 var(--sys); letter-spacing: 0; text-transform: none; color: var(--mut) }
+.pg section.list > p { color: var(--mut) }
+.pg-tasks .cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 1rem }
+.pg-tasks .card { display: flex; flex-direction: column; gap: .55rem }
+.pg-tasks .card .th { color: var(--mut) }
+.pg-tasks .card .acts { margin: auto 0 0 }
+.pg-tasks .card .btn { min-height: 2.6rem; padding: .5rem 1rem; font-size: .95rem }
+.pg .tags { display: flex; flex-wrap: wrap; gap: .35rem; font-size: .82rem }
+.pg .tags span, .pg .tags a { padding: .1rem .55rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); color: var(--fg); text-decoration: none }
+.pg .tags .org { box-shadow: inset 0 0 0 1.5px var(--fg); font-weight: 700 }
+.pg .tags .robot { color: var(--by-robot) }
+.pg .tags .human { color: var(--by-human) }
+.pg .tags .layer { background: var(--fg); color: var(--bg); box-shadow: none; font-weight: 700 }
+.pg .tag.free { color: var(--ok); box-shadow: inset 0 0 0 1.5px var(--ok) }
+.pg .pay { font: 700 1.6rem/1.15 var(--font-num); font-variant-numeric: tabular-nums }
+.pg .pay small { margin-left: .3rem; font: 500 .9rem/1.3 var(--sys); color: var(--mut) }
+.pg .pay .mv { display: block; margin-top: .2rem; font: 650 .8rem/1.3 var(--sys); color: var(--ok) }
+.pg .payline { color: var(--mut); font-size: .95rem }
+.pg .ans { display: grid; gap: .25rem; margin: 0; padding: 0; list-style: none; font-size: .92rem; color: var(--mut) }
+.pg .ans b { color: var(--fg) }
+.pg-tasks .kinds { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: .7rem }
+.pg-tasks .kinds a { display: block; padding: .8rem .9rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: 3px 3px 0 var(--fg); font-weight: 680; text-decoration: none }
+.pg-tasks .kinds a span { display: block; font-weight: 500; font-size: .92rem; color: var(--mut) }
+.pg-tasks .kinds a i { font-style: normal; font-size: .82rem; color: var(--mut) }
+.pg details.fold { max-width: 46rem; margin-top: 1.8rem; padding-top: .8rem; border-top: 1px solid var(--rule) }
+.pg details.fold p, .pg details.fold li { color: var(--mut) }
+.pg .crumbs { margin: 1.2rem 0 0; color: var(--mut); font-size: .95rem }
+.pg .crumbs a { color: var(--mut); font-weight: 600 }
+.pg .what { max-width: 68ch; margin: .9rem 0; white-space: pre-wrap }
+.pg .what.th { color: var(--mut) }
+.pg p.about { max-width: 46rem }
+.pg .box.own { border-top: calc(var(--line-w) + 2px) solid var(--line, var(--fg)) }
+.pg .box h2 { margin: 0 0 .5rem }
+.pg .box p { color: var(--mut) }
+.pg .answer { display: grid; gap: .3rem; padding: .8rem 0; border-top: 1px solid var(--rule) }
+.pg .answer:first-of-type { border-top: 0 }
+.pg .answer .who { font-weight: 700 }
+.pg .answer .note { white-space: pre-wrap; color: var(--mut) }
+.pg .answer .ok { color: var(--ok); font-size: .85rem; font-weight: 650 }
+.pg .flash { max-width: 46rem; margin: .8rem 0; padding: .7rem 1rem; border-left: calc(var(--line-w) + 2px) solid var(--ok); background: var(--bg2) }
+.pg .flash.err { border-left-color: var(--err) }
+.pg .inline { display: inline }
+
+/* ---------------------------------------------------------------- tech events (functions/events) */
+.pg h2.wk { margin: 2.4rem 0 .8rem }
+.pg .ev { display: grid; grid-template-columns: 4rem 1fr; gap: .9rem; margin: 0 0 .9rem; padding: 1rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+.pg .ev .d { align-self: start; padding: .35rem .2rem; border-radius: var(--r); box-shadow: inset 0 0 0 2px var(--line, var(--fg)); text-align: center; font: 700 1.5rem/1.05 var(--font-num) }
+.pg .ev .d small { display: block; font: 700 .7rem/1.3 var(--font-l); letter-spacing: .1em; text-transform: uppercase; color: var(--mut) }
+.pg .ev .m { margin: .25rem 0 0; color: var(--mut); font-size: .95rem }
+.pg .ev .acts { margin: .5rem 0 0; font-size: .95rem }
+.pg .none, .pg .src { color: var(--mut) }
+.pg .src { margin-top: 2rem; font-size: .95rem }
+
+/* ---------------------------------------------------------------- 404 */
+.pg-404 main { min-height: 50vh }

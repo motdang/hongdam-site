@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" class="notranslate" translate="no">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hongdam — red-team market</title>
-<meta name="description" content="Probe packs for testing chatbots: prompt extraction, instruction override, indirect injection, Thai-language attacks. Run each one in the browser.">
-<meta name="theme-color" content="#171009">
-<meta name="color-scheme" content="dark">
-<link rel="icon" href="/assets/favicon.svg">
-<link rel="canonical" href="https://hongdam.net/market/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hongdam.net/market/">
-<meta property="og:title" content="Hongdam — red-team market">
-<meta property="og:description" content="Probe packs for testing chatbots, run in the browser.">
-<meta property="og:image" content="https://hongdam.net/og/market.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Card: Red-team market, probe packs for testing chatbots, Hongdam."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/market.jpg"><meta name="twitter:image:alt" content="Card: Red-team market, probe packs for testing chatbots, Hongdam.">
-<link rel="stylesheet" href="/assets/rt.css">
-<meta name="google" content="notranslate">
-<meta name="robots" content="notranslate">
-<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
-</head>
-<body>
-<header class="top">
-  <a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-  <nav><a href="/translation/">Translation</a><a href="/own">Own</a><a href="/redteam">Red team</a><a href="/market" aria-current="page">Market</a></nav>
-</header>
+<!-- The market page between the shop's top bar and footer; tools/build_market.py fills it in and wraps it (tools/pages.py). -->
 <main>
-  <h1>Market <span lang="th">ตลาด</span></h1>
+{{lead}}
   <p class="lede">{{NPACKS}} packs · {{NPROBES}} probes. A probe is one attack message sent to your chatbot; a pack is a set of them aimed at one weakness.</p>
 
   <section class="packs">{{PACKS}}
@@ -39,12 +14,11 @@
       <label>Email<input name="email" type="email" maxlength="200" autocomplete="email" required></label>
       <label>Pack<textarea name="message" maxlength="4000" required placeholder='{"name": "…", "price_usd": 0, "probes": [ … ]}'></textarea></label>
       <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
-      <button type="submit">Send</button>
+      <button class="btn" type="submit">Send</button>
       <p class="status" id="s" role="status" aria-live="polite"></p>
     </form>
   </section>
 </main>
-<footer><a href="/">hongdam.net</a> · Chiang Rai</footer>
 <script>
 (function () {
   var f = document.getElementById('f'), s = document.getElementById('s'), b = f.querySelector('button');
@@ -63,6 +37,3 @@
   });
 })();
 </script>
-<script src="/ticker.js" defer></script>
-</body>
-</html>

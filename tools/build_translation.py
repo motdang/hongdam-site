@@ -5,9 +5,11 @@
 
 Writes docs/translation/index.html (English), docs/translation/th/index.html
 (Thai), docs/translation/my/index.html (Burmese) and docs/translation/de/index.html
-(German). One source, so the pages say the same thing.
+(German), in the shop's frame (tools/pages.py; the link cards are named in data/pages.json).
+One source, so the pages say the same thing.
 """
 
+import sys
 from html import escape
 from pathlib import Path
 
@@ -33,8 +35,6 @@ SWITCH = [("en", "English"), ("th", "ไทย"), ("my", "မြန်မာ"), 
 
 W = {
     "en": {
-        "card": "translation",
-        "card_alt": "Card: Translation between Thai, English and Burmese, Hongdam.",
         "title": "Translation — Thai, English, Burmese · Hongdam",
         "desc": "Hongdam translates papers, business text and conversations between Thai, English and Burmese. Chiang Rai and Chiang Mai in person; by phone or video anywhere.",
         "h1": "Translation",
@@ -89,8 +89,6 @@ W = {
         "or_mail": "Or email", "home": "hongdam.net",
     },
     "th": {
-        "card": "translation-th",
-        "card_alt": "การ์ด: แปลเอกสาร ไทย อังกฤษ พม่า, หงส์ดำ",
         "title": "แปลเอกสาร ไทย อังกฤษ พม่า · หงส์ดำ",
         "desc": "หงส์ดำแปลเอกสาร ข้อความธุรกิจ และล่ามสนทนา ระหว่างภาษาไทย อังกฤษ และพม่า ล่ามตัวจริงที่เชียงรายและเชียงใหม่ ทางโทรศัพท์หรือวิดีโอได้ทุกที่",
         "h1": "แปลภาษา",
@@ -145,8 +143,6 @@ W = {
         "or_mail": "หรืออีเมล", "home": "hongdam.net",
     },
     "my": {
-        "card": "translation-my",
-        "card_alt": "ကတ်: ဘာသာပြန် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ၊ Hongdam",
         "title": "ဘာသာပြန် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ · Hongdam",
         "desc": "Hongdam သည် ထိုင်း၊ အင်္ဂလိပ်နှင့် မြန်မာဘာသာများကြား စာရွက်စာတမ်း၊ လုပ်ငန်းသုံးစာနှင့် စကားပြန် လုပ်ပေးပါသည်။ ချင်းရိုင်နှင့် ချင်းမိုင်တွင် လူကိုယ်တိုင်၊ ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့် မည်သည့်နေရာမဆို။",
         "h1": "ဘာသာပြန်",
@@ -201,8 +197,6 @@ W = {
         "or_mail": "သို့မဟုတ် အီးမေးလ်", "home": "hongdam.net",
     },
     "de": {
-        "card": "translation",
-        "card_alt": "Karte: Übersetzung zwischen Thai, Englisch und Burmesisch, Hongdam.",
         "title": "Übersetzung — Thai, Englisch, Burmesisch · Hongdam",
         "desc": "Hongdam übersetzt Dokumente, Geschäftstexte und Gespräche zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.",
         "h1": "Übersetzung",
@@ -287,49 +281,6 @@ PRICES = {
            ("Dolmetschen vor Ort, ganzer Tag", _p("interp-day"), "Bis 8 Stunden.", "interp-day")],
 }
 
-CSS = """
-  .amt{white-space:nowrap}
-  .prices i .amt{display:inline}
-  .amt-th::before{content:""; display:inline-block; width:1.1em; height:.74em; margin-right:.28em; vertical-align:-.04em; border-radius:1.5px; background:center/100% 100% no-repeat; box-shadow:0 0 0 1px color-mix(in oklab, var(--cream) 22%, transparent); background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E")}
-  .sub{display:block; font-family:"Avenir Next","Segoe UI",system-ui,"Thonburi","Noto Sans Thai","Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text",sans-serif; font-size:.42em; color:var(--gold-deep); font-weight:500; margin-top:10px; letter-spacing:.04em}
-  .switch{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 6px}
-  .switch a{border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:16px}
-  .switch a[aria-current]{background:var(--gold); color:var(--lacquer); border-color:var(--gold)}
-  section{margin-top:52px}
-  h2{margin-bottom:16px}
-  .pairs{display:flex; flex-wrap:wrap; gap:12px}
-  .pairs span{background:var(--lacquer-2); border:1px solid var(--line); border-radius:10px; padding:12px 18px; font-size:20px; color:var(--gold)}
-  .prices{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; max-width:860px}
-  .prices div{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:18px}
-  .prices span{display:block; color:var(--cream); font-size:16px}
-  .prices b{display:block; font-family:Georgia,serif; font-size:30px; color:var(--gold); margin:4px 0}
-  .prices i{font-style:normal; color:var(--cream-dim); font-size:15px}
-  .note{margin-top:14px; max-width:62ch; color:var(--cream-dim); font-size:16px}
-  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
-  .col{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:20px}
-  .col h2{font-size:21px; color:var(--gold)}
-  .col ul{list-style:none}
-  .col li{padding:7px 0; border-top:1px solid var(--line); color:var(--cream-dim); font-size:16px}
-  .col li:first-child{border-top:0}
-  .stamp{display:grid; grid-template-columns:minmax(0,180px) 1fr; gap:24px; align-items:center; max-width:720px}
-  .stamp img{width:100%; height:auto; background:var(--cream); border-radius:50%; padding:6px}
-  .stamp p{color:var(--cream-dim)}
-  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; counter-reset:s}
-  .steps div{counter-increment:s; border-top:2px solid var(--gold-deep); padding-top:14px}
-  .steps b{display:block; color:var(--cream); font-size:18px}
-  .steps b::before{content:counter(s) ". "; color:var(--gold)}
-  .steps p{color:var(--cream-dim); font-size:16px; margin-top:4px}
-  form{max-width:640px; position:relative}
-  .row{display:grid; grid-template-columns:1fr 1fr; gap:0 16px}
-  .mail{margin-top:18px; font-size:16px; color:var(--cream-dim)}
-  footer{max-width:980px; margin:0 auto; padding:0 16px 48px; font-size:15px; color:var(--cream-dim)}
-  html[lang="my"] body{font-family:"Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text","Pyidaungsu",sans-serif; line-height:1.95; overflow-wrap:anywhere}
-  html[lang="my"] h1,html[lang="my"] h2{font-family:inherit; line-height:1.5}
-  html[lang="my"] label{text-transform:none; letter-spacing:0; font-size:15px}
-  @media (max-width:560px){.stamp{grid-template-columns:1fr}.stamp img{max-width:180px}.row{grid-template-columns:1fr}}
-"""
-
-
 def e(s):
     return escape(s, quote=True)
 
@@ -344,13 +295,13 @@ def page(lang):
         for k, n in SWITCH)
     lis = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
     opts = lambda xs: "".join(f"<option>{e(x)}</option>" for x in xs)
-    tailspan = lambda r: e(r[2]).replace("{tail}", f'<span class="amt amt-th" data-live="services/{r[3]}#tail">{e(_t(r[3]))}</span>') if len(r) > 3 and "{tail}" in r[2] else e(r[2])
+    tailspan = lambda r: e(r[2]).replace("{tail}", f'<span class="amt amt-th" data-live="services/{r[3]}" data-part="tail">{e(_t(r[3]))}</span>') if len(r) > 3 and "{tail}" in r[2] else e(r[2])
     prices = "".join(f"<div><span>{e(r[0])}</span><b class=\"amt amt-th\"{' data-live=' + chr(34) + 'services/' + r[3] + chr(34) if len(r) > 3 else ''}>{e(r[1])}</b><i>{tailspan(r)}</i></div>" for r in PRICES[lang])
     steps = "".join(f"<div><b>{e(h)}</b><p>{e(p)}</p></div>" for h, p in t["how"])
     pairs = "".join(f"<span>{e(p)}</span>" for p in t["pairs"])
     msgs = {k: t[k] for k in ("s_need", "s_sending", "s_ok", "s_err")}
     import json
-    ld = json.dumps({
+    ld = {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": t["title"],
@@ -361,100 +312,71 @@ def page(lang):
         "areaServed": ["Chiang Rai Province", "Chiang Mai Province", "Thailand"],
         "provider": {"@id": "https://hongdam.net/#org"},
         "isPartOf": {"@id": "https://hongdam.net/#site"},
-    }, ensure_ascii=False, indent=1)
+    }
     l0, l1, l2 = t["langs"]
-    return f"""<!DOCTYPE html>
-<html lang="{lang}" class="notranslate" translate="no">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(t["title"])}</title>
-<meta name="description" content="{e(t["desc"])}">
-<meta name="theme-color" content="#171009">
-<meta name="color-scheme" content="dark">
-<link rel="icon" href="/assets/favicon.svg">
-<link rel="canonical" href="{url}">
-{alts}
-<meta property="og:type" content="website">
-<meta property="og:url" content="{url}">
-<meta property="og:title" content="{e(t["title"])}">
-<meta property="og:description" content="{e(t["desc"])}">
-<meta property="og:image" content="https://hongdam.net/og/{t["card"]}.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="{e(t["card_alt"])}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/{t["card"]}.jpg"><meta name="twitter:image:alt" content="{e(t["card_alt"])}">
-<link rel="stylesheet" href="/assets/rt.css">
-<style>{CSS}</style>
-<meta name="google" content="notranslate">
-<meta name="robots" content="notranslate">
-<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
-<script type="application/ld+json">
-{ld}
-</script>
-</head>
-<body>
-<header class="top">
-  <a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-  <nav><a href="/translation/" aria-current="page">Translation</a><a href="/own">Own</a><a href="/redteam">Red team</a><a href="/market">Market</a></nav>
-</header>
-<main>
-  <h1>{e(t["h1"])}<span class="sub">{e(t["sub"])}</span></h1>
-  <nav class="switch" aria-label="Language">{switch}</nav>
-  <p class="lede">{e(t["lede"])}</p>
+    sys.path.insert(0, str(ROOT / "tools"))
+    import pages as F
+    alts = {k: v.lstrip("/") for k, v in PAGES.items()}
+    langs = [(k, PAGES[k], n) for k, n in SWITCH]
+    main = f"""<main>
+{F.lead("translation", lang, h1=t["h1"], sub=t["sub"], sub_lang=lang).rstrip()}
+<p class="lede">{e(t["lede"])}</p>
 
-  <section>
-    <h2>{e(t["pairs_h"])}</h2>
-    <div class="pairs">{pairs}</div>
-    <p class="note">{e(t["pairs_note"])}</p>
-  </section>
+<section>
+  <h2>{e(t["pairs_h"])}</h2>
+  <div class="pairs">{pairs}</div>
+  <p class="note">{e(t["pairs_note"])}</p>
+</section>
 
-  <section class="cols">
-    <div class="col"><h2>{e(t["papers_h"])}</h2><ul>{lis(t["papers"])}</ul></div>
-    <div class="col"><h2>{e(t["biz_h"])}</h2><ul>{lis(t["biz"])}</ul></div>
-    <div class="col"><h2>{e(t["talk_h"])}</h2><ul>{lis(t["talk"])}</ul></div>
-  </section>
+<section class="cols">
+  <div class="col"><h2>{e(t["papers_h"])}</h2><ul>{lis(t["papers"])}</ul></div>
+  <div class="col"><h2>{e(t["biz_h"])}</h2><ul>{lis(t["biz"])}</ul></div>
+  <div class="col"><h2>{e(t["talk_h"])}</h2><ul>{lis(t["talk"])}</ul></div>
+</section>
 
-  <section>
-    <h2>{e(PRICE_H[lang])}</h2>
-    <div class="prices">{prices}</div>
-    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="{lang}" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{_json.dumps(_BOX, separators=(",", ":"))}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
-    <script type="module" src="/pay/paybox.js"></script>
-  </section>
+<section>
+  <h2>{e(PRICE_H[lang])}</h2>
+  <div class="prices">{prices}</div>
+  <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="{lang}" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{_json.dumps(_BOX, separators=(",", ":"))}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
+  <script type="module" src="/pay/paybox.js"></script>
+</section>
 
-  <section>
-    <h2>{e(t["stamp_h"])}</h2>
-    <div class="stamp">
-      <img src="/assets/stamp/hongdam-translation-stamp-red.svg" alt="{e(t["stamp_alt"])}" width="300" height="300" loading="lazy">
-      <p>{e(t["stamp"])}</p>
+<section>
+  <h2>{e(t["stamp_h"])}</h2>
+  <div class="stamp">
+    <img src="/assets/stamp/hongdam-translation-stamp-red.svg" alt="{e(t["stamp_alt"])}" width="300" height="300" loading="lazy">
+    <p>{e(t["stamp"])}</p>
+  </div>
+</section>
+
+<section>
+  <h2>{e(t["how_h"])}</h2>
+  <div class="steps">{steps}</div>
+</section>
+
+<section id="quote">
+  <h2>{e(t["form_h"])}</h2>
+  <form id="f" action="/api/contact" method="post" novalidate>
+    <div class="row">
+      <label>{e(t["f_name"])}<input name="name" type="text" autocomplete="name" maxlength="120"></label>
+      <label>{e(t["f_email"])}<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
     </div>
-  </section>
-
-  <section>
-    <h2>{e(t["how_h"])}</h2>
-    <div class="steps">{steps}</div>
-  </section>
-
-  <section id="quote">
-    <h2>{e(t["form_h"])}</h2>
-    <form id="f" action="/api/contact" method="post" novalidate>
-      <div class="row">
-        <label>{e(t["f_name"])}<input name="name" type="text" autocomplete="name" maxlength="120"></label>
-        <label>{e(t["f_email"])}<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
-      </div>
-      <div class="row">
-        <label>{e(t["f_from"])}<select name="from">{opts([l0, l1, l2])}</select></label>
-        <label>{e(t["f_to"])}<select name="to">{opts([l1, l0, l2])}</select></label>
-      </div>
-      <div class="row">
-        <label>{e(t["f_kind"])}<select name="kind">{opts(t["f_kinds"])}</select></label>
-        <label>{e(t["f_pages"])}<input name="size" type="text" maxlength="80" placeholder="{e(t["f_pages_ph"])}"></label>
-      </div>
-      <label>{e(t["f_msg"])}<textarea name="notes" maxlength="3000" placeholder="{e(t["f_msg_ph"])}"></textarea></label>
-      <div class="hp" aria-hidden="true"><label>{e(t["f_hp"])}<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
-      <button type="submit">{e(t["f_send"])}</button>
-      <p class="status" id="s" role="status" aria-live="polite"></p>
-    </form>
-    <p class="mail">{e(t["or_mail"])} <a href="mailto:nan@motdang.net?subject=Translation">nan@motdang.net</a></p>
-  </section>
+    <div class="row">
+      <label>{e(t["f_from"])}<select name="from">{opts([l0, l1, l2])}</select></label>
+      <label>{e(t["f_to"])}<select name="to">{opts([l1, l0, l2])}</select></label>
+    </div>
+    <div class="row">
+      <label>{e(t["f_kind"])}<select name="kind">{opts(t["f_kinds"])}</select></label>
+      <label>{e(t["f_pages"])}<input name="size" type="text" maxlength="80" placeholder="{e(t["f_pages_ph"])}"></label>
+    </div>
+    <label>{e(t["f_msg"])}<textarea name="notes" maxlength="3000" placeholder="{e(t["f_msg_ph"])}"></textarea></label>
+    <div class="hp" aria-hidden="true"><label>{e(t["f_hp"])}<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+    <button class="btn" type="submit">{e(t["f_send"])}</button>
+    <p class="status" id="s" role="status" aria-live="polite"></p>
+  </form>
+  <p class="mail">{e(t["or_mail"])} <a href="mailto:nan@motdang.net?subject=Translation">nan@motdang.net</a></p>
+</section>
 </main>
-<footer><span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai · <a href="/">{e(t["home"])}</a></footer>
 <script>
 (function () {{
   var M = {json.dumps(msgs, ensure_ascii=False)};
@@ -476,11 +398,9 @@ def page(lang):
   }});
 }})();
 </script>
-<script src="/ticker.js" defer></script>
-<script>fetch('/api/services').then(function(r){{return r.ok?r.json():null}}).then(function(j){{if(!j)return;var by={{}};j.kinds.forEach(function(k){{by[k.id]=k}});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){{var a=x.getAttribute('data-live').slice(9).split('#'),k=by[a[0]];if(!k)return;var v=a[1]==='tail'?k.tail:k.price;if(v!=null)x.textContent='\u0e3f'+Number(v).toLocaleString('en-US')}})}}).catch(function(){{}})</script>
-</body>
-</html>
 """
+    return (F.head("translation", lang, t["title"], t["desc"], PAGES[lang].lstrip("/"), alternates=alts, ld=ld) +
+            F.body("translation") + F.top(lang, langs) + main + F.foot("translation", lang))
 
 
 def main():

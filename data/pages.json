@@ -1,0 +1,496 @@
+{
+ "about": "The pages outside the shop, in the shop's look (tools/pages.py). cat: the shop category whose line colour the page takes and whose page its back link opens. mark: the dingbat beside the heading. stops: the picture under the heading, a job line like a card's. card: the link-preview picture tools/share_cards_pages.mjs draws (big, small, sub), one per language where the page has more than one. tools/dingbats.mjs bundles each page's glyphs as group p-<id>.",
+ "pages": {
+  "own": {
+   "path": "own/",
+   "lang": "en",
+   "cat": "ai",
+   "mark": "laptop",
+   "stops": [
+    "nib",
+    "robot",
+    "laptop",
+    "earth"
+   ],
+   "title": "Your own builder · Hongdam",
+   "h1": "Your own builder",
+   "h1_th": "เครื่องสร้างเว็บของคุณเอง",
+   "desc": "A coding agent that builds and publishes websites, set up on your computer and your own GitHub and Cloudflare accounts. Setup ฿25,000 for Thai companies, US$25,000 for everyone else, training included. เครื่องสร้างเว็บของคุณเอง",
+   "card": {
+    "og": "og/own.jpg",
+    "big": "your own builder",
+    "small": "เครื่องสร้างเว็บของคุณเอง",
+    "sub": "A coding agent on your own accounts."
+   }
+  },
+  "redteam": {
+   "path": "redteam/",
+   "lang": "en",
+   "cat": "fix",
+   "mark": "lightning",
+   "stops": [
+    "robot",
+    "lightning",
+    "lock",
+    "check"
+   ],
+   "title": "Red team · Hongdam",
+   "h1": "Red team",
+   "h1_th": "ทีมแดง",
+   "desc": "Paste your chatbot's system prompt and run attack probes against it: prompt extraction, instruction override, indirect injection, Thai-language attacks.",
+   "card": {
+    "og": "og/redteam.jpg",
+    "big": "red team",
+    "small": "ทีมแดง · ทดสอบแชตบอท",
+    "sub": "Attack your own chatbot before a customer does."
+   }
+  },
+  "market": {
+   "path": "market/",
+   "lang": "en",
+   "cat": "fix",
+   "mark": "parcel",
+   "stops": [
+    "parcel",
+    "lightning",
+    "robot",
+    "check"
+   ],
+   "title": "Red-team market · Hongdam",
+   "h1": "Market",
+   "h1_th": "ตลาด",
+   "desc": "Probe packs for testing chatbots: prompt extraction, instruction override, indirect injection, Thai-language attacks. Run each one in the browser.",
+   "card": {
+    "og": "og/market.jpg",
+    "big": "red-team market",
+    "small": "ตลาดชุดทดสอบ",
+    "sub": "Attack packs for testing chatbots."
+   }
+  },
+  "bots": {
+   "path": "bots/",
+   "lang": "en",
+   "cat": "ai",
+   "mark": "robot",
+   "stops": [
+    "search",
+    "robot",
+    "thumbs-up",
+    "coin"
+   ],
+   "title": "A bot sold us a road · Hongdam bots",
+   "h1": "A bot sold us a road. We built three bots.",
+   "h1_th": "บอทขายถนนให้เรา เราเลยสร้างบอทสามตัว",
+   "desc": "A bot found our open job, did it, and sold us the result for ฿100. Half an hour later we had built three bots of our own: Scout, Bot Bounty Desk, Earner. Purchase them. บอทขายงานให้เรา ครึ่งชั่วโมงต่อมาเราสร้างบอทของเราเอง",
+   "card": {
+    "og": "og/bots.jpg",
+    "big": "bots",
+    "small": "บอทขายถนนให้เรา",
+    "sub": "A bot sold us a road. We built three: Scout, Bot Bounty Desk, Earner."
+   }
+  },
+  "github": {
+   "path": "github/",
+   "lang": "en",
+   "cat": "web",
+   "mark": "octopus",
+   "stops": [
+    "calendar",
+    "coin",
+    "clock",
+    "octopus"
+   ],
+   "title": "Pimp my GitHub · Hongdam",
+   "h1": "Pimp my GitHub",
+   "h1_th": "แต่ง GitHub ให้เทพ",
+   "desc": "Brilliant people find each other on GitHub, and the work pays extremely well. Hongdam's team does your GitHub profile in 24 hours. แต่ง GitHub ให้เทพ ใน 24 ชั่วโมง",
+   "card": {
+    "og": "og/github.jpg",
+    "big": "pimp my github",
+    "small": "แต่ง GitHub ให้เทพ",
+    "sub": "Your GitHub profile, done in 24 hours."
+   }
+  },
+  "translation": {
+   "path": "translation/",
+   "lang": "en",
+   "cat": "translate",
+   "mark": "translate",
+   "stops": [
+    "page",
+    "translate",
+    "stamp",
+    "done"
+   ],
+   "card": {
+    "en": {
+     "og": "og/translation.jpg",
+     "big": "translation",
+     "small": "แปลภาษา · ဘာသာပြန်",
+     "sub": "Thai · English · Burmese. Papers, business text, conversations."
+    },
+    "th": {
+     "og": "og/translation-th.jpg",
+     "big": "แปลภาษา",
+     "small": "ไทย · อังกฤษ · พม่า",
+     "sub": "เอกสาร งานธุรกิจ และงานล่าม"
+    },
+    "my": {
+     "og": "og/translation-my.jpg",
+     "big": "ဘာသာပြန်",
+     "small": "ထိုင်း · အင်္ဂလိပ် · မြန်မာ",
+     "sub": "Thai · English · Burmese"
+    },
+    "de": {
+     "og": "og/translation-de.jpg",
+     "big": "übersetzung",
+     "small": "Thai · Englisch · Burmesisch",
+     "sub": "Papiere, Geschäftstexte und Gespräche."
+    }
+   }
+  },
+  "tasks-graph": {
+   "path": "tasks/graph/",
+   "lang": "en",
+   "cat": "help",
+   "mark": "link",
+   "stops": [
+    "megaphone",
+    "link",
+    "gears",
+    "done"
+   ],
+   "card": {
+    "og": "og/tasks-graph.jpg",
+    "big": "task graph",
+    "small": "กราฟงาน",
+    "sub": "The kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer."
+   }
+  },
+  "tasks": {
+   "path": "tasks",
+   "lang": "en",
+   "cat": "help",
+   "mark": "megaphone",
+   "stops": [
+    "megaphone",
+    "clap",
+    "gears",
+    "coin"
+   ],
+   "card": {
+    "og": "og/tasks.jpg",
+    "big": "tasks",
+    "small": "งาน · ลงงาน รับงาน",
+    "sub": "Post work for people or bots. The pay moves with demand."
+   }
+  },
+  "events": {
+   "path": "events",
+   "lang": "en",
+   "cat": "web",
+   "mark": "calendar",
+   "stops": [
+    "calendar",
+    "pin",
+    "laptop",
+    "clap"
+   ],
+   "card": {
+    "og": "og/events.jpg",
+    "big": "tech events",
+    "small": "งานเทคโนโลยี เชียงใหม่ เชียงราย",
+    "sub": "Tech and AI events in Chiang Mai and Chiang Rai, this week and next."
+   }
+  },
+  "404": {
+   "path": null,
+   "lang": "en",
+   "cat": null,
+   "mark": "compass",
+   "stops": [
+    "footsteps",
+    "compass",
+    "search",
+    "home"
+   ],
+   "title": "Not found · Hongdam หงส์ดำ",
+   "h1": "Not found",
+   "h1_th": "ไม่พบหน้านี้",
+   "noindex": true,
+   "desc": "No page at this address on hongdam.net.",
+   "card": {
+    "og": "og/404.jpg",
+    "big": "not found",
+    "small": "ไม่พบหน้านี้",
+    "sub": "No page at this address. The shop is one tap away."
+   },
+   "egg": "404"
+  },
+  "stats": {
+   "path": "stats/",
+   "lang": "en",
+   "cat": "data",
+   "mark": "abacus",
+   "stops": [
+    "abacus",
+    "eye",
+    "check"
+   ],
+   "title": "Stats · Hongdam",
+   "h1": "Stats",
+   "h1_th": "ตัวเลข",
+   "noindex": true,
+   "desc": "What people did on hongdam.net: pages, searches, taps, orders.",
+   "card": {
+    "og": "og/stats.jpg",
+    "big": "stats",
+    "small": "ตัวเลข",
+    "sub": "What people did on hongdam.net."
+   }
+  },
+  "invoice": {
+   "path": null,
+   "lang": "en",
+   "cat": null,
+   "mark": "coin",
+   "stops": [
+    "page",
+    "coin",
+    "done"
+   ],
+   "card": {
+    "og": "og/invoice.jpg",
+    "big": "invoice",
+    "small": "ใบแจ้งหนี้",
+    "sub": "Hongdam · Chiang Rai, Thailand"
+   }
+  },
+  "portfolio": {
+   "path": "portfolio/",
+   "lang": "en",
+   "cat": null,
+   "mark": "star",
+   "stops": [
+    "lightning",
+    "wifi",
+    "copy",
+    "robot"
+   ],
+   "card": {
+    "og": "og/portfolio.jpg",
+    "big": "portfolio",
+    "small": "ผลงาน",
+    "sub": "Live projects: red team, edge and IoT, harvesting, an AI platform."
+   },
+   "title": "Hongdam Portfolio — Chiang Rai",
+   "h1": "Hongdam หงส์ดำ",
+   "h1_th": "the black-swan studio, Chiang Rai",
+   "sub_lang": "en",
+   "desc": "Hongdam หงส์ดำ — a working studio in Chiang Rai. Live projects across AI red-teaming, edge & IoT, large-scale harvesting, and a white-label AI platform. Every link live, every number counted."
+  }
+ },
+ "task_groups_about": "The link card of each group and kind of work on /tasks/c/ (tools/build_task_cards.py): the shop category whose line colour it takes, its mark and its stops.",
+ "task_groups": {
+  "visa": {
+   "cat": "visa",
+   "mark": "passport",
+   "stops": [
+    "passport",
+    "page",
+    "stamp",
+    "done"
+   ]
+  },
+  "workers": {
+   "cat": "help",
+   "mark": "clap",
+   "stops": [
+    "chat",
+    "passport",
+    "stamp",
+    "clap"
+   ]
+  },
+  "company": {
+   "cat": "money",
+   "mark": "stamp",
+   "stops": [
+    "page",
+    "pencil",
+    "stamp",
+    "done"
+   ]
+  },
+  "lang": {
+   "cat": "translate",
+   "mark": "translate",
+   "stops": [
+    "page",
+    "translate",
+    "stamp",
+    "done"
+   ]
+  },
+  "web": {
+   "cat": "web",
+   "mark": "laptop",
+   "stops": [
+    "nib",
+    "laptop",
+    "earth",
+    "done"
+   ]
+  },
+  "ai": {
+   "cat": "ai",
+   "mark": "robot",
+   "stops": [
+    "chat",
+    "robot",
+    "gears",
+    "done"
+   ]
+  },
+  "sec": {
+   "cat": "fix",
+   "mark": "lock",
+   "stops": [
+    "robot",
+    "lightning",
+    "lock",
+    "check"
+   ]
+  },
+  "data": {
+   "cat": "data",
+   "mark": "abacus",
+   "stops": [
+    "search",
+    "copy",
+    "abacus",
+    "check"
+   ]
+  },
+  "places": {
+   "cat": "tours",
+   "mark": "pin",
+   "stops": [
+    "compass",
+    "pin",
+    "camera",
+    "check"
+   ]
+  },
+  "field": {
+   "cat": "moving",
+   "mark": "camera",
+   "stops": [
+    "scooter",
+    "camera",
+    "pin",
+    "done"
+   ]
+  },
+  "media": {
+   "cat": "design",
+   "mark": "play",
+   "stops": [
+    "camera",
+    "pencil",
+    "play",
+    "done"
+   ]
+  },
+  "words": {
+   "cat": "outsource",
+   "mark": "nib",
+   "stops": [
+    "nib",
+    "page",
+    "megaphone",
+    "done"
+   ]
+  },
+  "sales": {
+   "cat": "shop",
+   "mark": "cart",
+   "stops": [
+    "megaphone",
+    "cart",
+    "coin",
+    "done"
+   ]
+  },
+  "money": {
+   "cat": "money",
+   "mark": "coin",
+   "stops": [
+    "page",
+    "coin",
+    "check",
+    "done"
+   ]
+  },
+  "trade": {
+   "cat": "charity",
+   "mark": "gift",
+   "stops": [
+    "gift",
+    "wai",
+    "clap",
+    "done"
+   ]
+  },
+  "home": {
+   "cat": "stay",
+   "mark": "home",
+   "stops": [
+    "home",
+    "wrench",
+    "calendar",
+    "done"
+   ]
+  },
+  "jobs": {
+   "cat": "outsource",
+   "mark": "flag",
+   "stops": [
+    "flag",
+    "chat",
+    "clap",
+    "done"
+   ]
+  },
+  "culture": {
+   "cat": "merit",
+   "mark": "chedi",
+   "stops": [
+    "lantern",
+    "chedi",
+    "lotus",
+    "done"
+   ]
+  },
+  "food": {
+   "cat": "luck",
+   "mark": "khao-soi",
+   "stops": [
+    "noodles",
+    "frying-pan",
+    "coffee",
+    "khao-soi"
+   ]
+  },
+  "impossible": {
+   "cat": "ai",
+   "mark": "lightbulb",
+   "stops": [
+    "thinking",
+    "lightbulb",
+    "gears",
+    "rocket"
+   ]
+  }
+ }
+}
