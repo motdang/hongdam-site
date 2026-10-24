@@ -580,7 +580,7 @@ if (q) {
 }
 
 // One line from the order to the job done: Pick and Pay, then the job's own stops, one swan at where the order is.
-// The Buy page and the tracker draw the same line. at: the stop the swan stands at, counted from 0 (2.5 = halfway on).
+// The Buy page and the tracker draw the same line. at: the stop the swan stands at, counted from 0.
 const howCap = (s) => { const i = s.indexOf(' '); return i > 0 ? `<b>${esc(s.slice(0, i))}</b> ${esc(s.slice(i + 1))}` : esc(s) }
 const num = (k) => (T.how[k] || '').split(' ')[0]
 function orderLine(card, at, words) {
