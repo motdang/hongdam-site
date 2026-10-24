@@ -79,7 +79,8 @@ def config(lang):
             "delQ", "wait", "mineL", "count", "res", "examples", "share", "oneBy", "yesSwan", "notSwan", "h1", "sub", "kicker")
     return {"lang": lang, "ui": {k: u[k] for k in keep}, "odds": [odds_word(k, lang) for k in range(len(D["odds"]))],
             "size": D["size"][lang], "sizeG": D["size_glyphs"], "years": D["years"],
-            "quiz": [{"q": q["q"], "y": q["y"], "g": q["g"], "t": u["quiz"][q["q"]], "note": u["notes"].get(q["q"], "")} for q in D["quiz"]],
+            "quiz": [{"q": q["q"], "y": q["y"], "g": q["g"], "t": u["quiz"][q["q"]], "note": u["notes"].get(q["q"], ""), "src": q.get("src", "")}
+                     for q in D["quiz"]],
             "page": B.url(lang, PATH)} | {"ui": {**{k: u[k] for k in keep}, "shareW": B.SHOP["ui"][lang]["share"]}}
 
 

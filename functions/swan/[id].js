@@ -3,6 +3,7 @@
  * the prediction as the title, its odds, size and check month as the description, and the odds picture
  * (docs/og/swan/o<0–4>.jpg, tools/blackswan_cards.mjs). The page is docs/<lang>/studio/black-swan/one/index.html
  * (tools/build_blackswan.py) in the language it was written in, or ?l=<lang>; its %%SW_…%% marks are filled here,
+ * noindex: a prediction is a page to share, not to be listed by search engines;
  * in one pass, so a prediction's own words are never read as a mark or a replacement pattern (CodeRabbit on #114).
  */
 import { ID_RE, LANGS, card, esc, pub } from '../_swan.js'
@@ -28,9 +29,9 @@ export async function onRequestGet({ request, env, params }) {
   const fill = {
     TITLE: esc(c.title), DESC: esc(c.desc), URL: `https://hongdam.net/swan/${id}`, IMG: `https://hongdam.net/${c.img}`, ALT: esc(c.alt),
     H1: r.state === 'ok' ? esc(`“${r.text}”`) : '', DATA: JSON.stringify(pub(r)).replace(/</g, '\\u003c'),
-    NOINDEX: r.state === 'ok' ? '' : '<meta name="robots" content="noindex">',
+    NOINDEX: '<meta name="robots" content="noindex">',   // shared, not listed by search engines (CodeRabbit on #117)
   }
   const html = (await tpl.text()).replace(/%%SW_([A-Z0-9]+)%%/g, (m, k) => (Object.hasOwn(fill, k) ? fill[k] : m))
   return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=60',
-    'x-robots-tag': r.state === 'ok' ? 'notranslate' : 'noindex, notranslate' } })
+    'x-robots-tag': 'noindex, notranslate' } })
 }

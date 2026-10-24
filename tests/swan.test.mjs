@@ -95,7 +95,7 @@ let html = await pg.text()
 assert.match(html, /<title>“Snow falls in Chiang Rai”<\/title>/)
 assert.match(html, new RegExp(`https://hongdam.net/swan/${a.id}`))
 assert.match(html, /og\/swan\/o3\.jpg/)
-assert.ok(!html.includes('noindex'))
+assert.ok(html.includes('noindex'))   // shared, not listed by search engines
 pg = await page({ env, params: { id: held.id }, request: new Request('https://hongdam.net/swan/' + held.id) })
 html = await pg.text()
 assert.ok(!html.includes('The king') && html.includes('noindex'))

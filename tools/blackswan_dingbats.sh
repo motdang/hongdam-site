@@ -4,6 +4,11 @@
 #   DINGBATS_SRC=<doodle-dingbats checkout>/src tools/blackswan_dingbats.sh
 set -e
 cd "$(dirname "$0")/.."
+# it puts every other bundle back to the committed copy, so it stops when one has edits of its own (CodeRabbit on #117)
+if [ -n "$(git status --porcelain -- docs/assets/db data/dingbats.json docs/assets/favicon.svg | grep -v 'p-blackswan.js')" ]; then
+  echo "blackswan_dingbats: docs/assets/db, data/dingbats.json or the favicon has uncommitted edits; commit or set them aside first" >&2
+  exit 1
+fi
 node tools/dingbats.mjs >/dev/null
 for f in $(git diff --name-only -- docs/assets/db data/dingbats.json docs/assets/favicon.svg); do
   case "$f" in *p-blackswan.js) ;; *) git show "HEAD:$f" > "$f" ;; esac

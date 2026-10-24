@@ -207,7 +207,7 @@ function toyQuiz() {
     poll.hidden = false
     bar.style.width = p + '%'
     pct.textContent = tot ? `${fill(U.t4res, { p })} · ${fill(U.votes, { n: fmt(tot) })}` : ''
-    note.textContent = q.note || ''
+    note.innerHTML = q.note ? (q.src ? `<a href="${esc(q.src)}" rel="noopener" target="_blank">${esc(q.note)}</a>` : esc(q.note)) : ''
   }
   const show = () => {
     const q = Q[i]
@@ -443,7 +443,7 @@ function form(list) {
   if (!f) return
   const ta = $('#bs-text'), left = $('.bs-left', f), err = $('.bs-err', f), btn = $('.bs-save', f), done = $('.bs-done')
   const max = 200
-  ta.addEventListener('input', () => { left.textContent = String(max - [...ta.value].length) })
+  ta.addEventListener('input', () => { left.textContent = String(max - ta.value.length) })   // the same count as maxlength
   let ex = 0
   if (!calm) setInterval(() => { if (!ta.value && document.activeElement !== ta) { ex = (ex + 1) % U.examples.length; ta.placeholder = U.examples[ex] } }, 3200)
   const why = { short: U.errShort, long: U.errShort, link: U.errLink, limit: U.errLimit }

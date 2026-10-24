@@ -73,14 +73,17 @@ const jobs = [...D.langs.map((l) => [`og/studio/black-swan-${l}`, pageCard(l)]),
 const browser = await chromium.launch({ executablePath: chromeExe() })
 const tab = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 })
 const tmp = path.join(DOCS, 'og', '_bs_card.html')
-for (const [out, html] of jobs) {
-  fs.writeFileSync(tmp, html)
-  await tab.goto(url.pathToFileURL(tmp).href, { waitUntil: 'load' })
-  await tab.waitForTimeout(800)
-  const file = path.join(DOCS, out + '.jpg')
-  fs.mkdirSync(path.dirname(file), { recursive: true })
-  await tab.screenshot({ path: file, type: 'jpeg', quality: 86 })
+try {
+  for (const [out, html] of jobs) {
+    fs.writeFileSync(tmp, html)
+    await tab.goto(url.pathToFileURL(tmp).href, { waitUntil: 'load' })
+    await tab.waitForTimeout(800)
+    const file = path.join(DOCS, out + '.jpg')
+    fs.mkdirSync(path.dirname(file), { recursive: true })
+    await tab.screenshot({ path: file, type: 'jpeg', quality: 86 })
+  }
+} finally {   // the browser closes even when a card fails (CodeRabbit on #117)
+  fs.rmSync(tmp, { force: true })
+  await browser.close()
 }
-fs.unlinkSync(tmp)
-await browser.close()
 console.log('black swan cards:', jobs.length, 'drawn')
