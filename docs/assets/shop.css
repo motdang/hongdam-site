@@ -303,3 +303,31 @@ h1 { text-transform: lowercase }
 .curs button i { font-size: .85rem }
 .curs button[aria-pressed="true"] { background: var(--fg); color: var(--bg) }
 @media (min-width: 40rem) { .langs:has(> .curs) { order: 3; width: 100% } }
+
+/* ---------------------------------------------------------------- our work: the Rotary cartoon, Mot Dang's videos, what people say
+   Her asks 2026-10-24, from data/front_work.json (tools/build_shop.py work_band). The cartoon's poster is a button;
+   shop.js puts Drive's player in its place. On a phone the Mot Dang videos scroll sideways inside their box. */
+.work { display: grid; gap: .85rem }
+.wk { position: relative; overflow: hidden; overflow-wrap: anywhere; padding: 1.35rem 1.15rem 1.15rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow) }
+.wk::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: var(--line-w); background: var(--line) }
+.wk h3 { margin: 0; font: 680 1.14rem/1.3 var(--sys); letter-spacing: -.005em }
+.wk .l { margin: .3rem 0 .9rem; color: var(--mut) }
+.wk .go { margin: .9rem 0 0; font-weight: 700 }
+.vid { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; border: var(--card-bd); border-radius: var(--r); background: #000; color: inherit; cursor: pointer; overflow: hidden }
+.vid img, .vid iframe { display: block; width: 100%; height: 100%; border: 0; object-fit: cover }
+.vid .play { position: absolute; left: .7rem; bottom: .7rem; display: inline-flex; align-items: center; gap: .45rem; padding: .5rem 1rem; border-radius: var(--btn-r);
+  background: var(--btn); color: var(--btn-fg); font: 700 1rem/1.2 var(--sys); box-shadow: 3px 3px 0 var(--line) }
+.vid .play::before { content: ""; border-style: solid; border-width: .38em 0 .38em .62em; border-color: transparent transparent transparent currentColor }
+.vid:hover .play, .vid:focus-visible .play { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--line) }
+.reels { display: flex; gap: .75rem; margin: 0; padding: 0 0 .5rem; list-style: none; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain }
+.reels li { flex: 0 0 62%; min-width: 0; scroll-snap-align: start }
+.reels video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; border: var(--card-bd); border-radius: var(--r); background: #000 }
+.reels p { margin: .45rem 0 0; font-size: .95rem; line-height: 1.35 }
+.reels p span { display: block; color: var(--mut) }
+@media (min-width: 40rem) { .reels { overflow: visible; padding: 0 } .reels li { flex: 1 1 0 } }
+.says { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none }
+.says li { padding: 1.1rem 1.15rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2) }
+.says blockquote { margin: 0; font-size: 1.12rem; line-height: 1.45 }
+.says blockquote p { margin: 0 }
+.says blockquote p::before { content: "“" } .says blockquote p::after { content: "”" }
+.says .who { margin: .55rem 0 0; color: var(--mut); font-size: .95rem }
