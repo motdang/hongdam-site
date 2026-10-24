@@ -4,7 +4,7 @@
 import assert from 'node:assert'
 import fs from 'node:fs'
 import { DatabaseSync } from 'node:sqlite'
-import { onRequestGet, onRequestPost } from '../functions/api/swan/[[path]].js'
+import { onRequestGet, onRequestPost, net } from '../functions/api/swan/[[path]].js'
 import { onRequestGet as page } from '../functions/swan/[id].js'
 import { readNew, needsLook, hasLink, dueFrom, phaseOf, card, oddsWord, newId, ID_RE } from '../functions/_swan.js'
 
@@ -115,6 +115,13 @@ assert.equal((html.match(/<script>/g) || []).length, 1)
 ip = '10.10.10.10'
 for (let i = 0; i < 8; i++) await post('', { text: 'Spam number ' + i, odds: 0, size: 0, years: 1 })
 assert.equal(sq.prepare("SELECT n FROM tries WHERE k = 'swan:new:all'").get().n, 1 + 1 + 1 + 6)   // saved: the first, the held one, the $& one, six of eight
+// a null body is a bad request, not a database fault
+const nul = await onRequestPost({ env, waitUntil: () => {}, params: { path: ['poll'] }, request: new Request('https://hongdam.net/api/swan/poll', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: 'null' }) })
+assert.equal(nul.status, 400)
+// IPv6 counts by /64; reports from one /64 count once
+assert.equal(net('2001:db8:aa:bb:1:2:3:4'), '2001:0db8:00aa:00bb::/64')
+assert.equal(net('2001:db8::1'), '2001:0db8:0000:0000::/64')
+assert.equal(net('1.2.3.4'), '1.2.3.4')
 // the maker deletes it with their key; a wrong key does nothing
 assert.equal((await post(`/${a.id}/delete`, { key: 'nope' })).status, 403)
 assert.equal((await post(`/${a.id}/delete`, { key: a.key })).j.ok, true)

@@ -16,7 +16,6 @@
  * hears of it in #help-desk (DISCORD_TASKS); it is listed once the team sets it to ok. Daily caps per address and
  * for the site are counted in D1 (functions/_tries.js). POSTs answer hongdam.net, hongdam.pages.dev and localhost.
  */
-import { whoHash } from '../../_services.js'
 import { tell } from '../../_tasks.js'
 import { tryOnce } from '../../_tries.js'
 import { ID_RE, LIMITS, QUIZ, SORTS, newId, newKey, sha, readNew, needsLook, phaseOf, pub } from '../../_swan.js'
@@ -38,9 +37,27 @@ async function unsafe(env, text) {
   } catch { return false }
 }
 
-async function who(request) {
-  return whoHash('swan:' + (request.headers.get('cf-connecting-ip') || '0'))
+// The address, an IPv6 one cut to its /64 (one home or phone holds a whole /64), for counts and the identity hash
+// (CodeRabbit on #115).
+export function net(ip) {
+  if (!ip || !ip.includes(':') || ip.includes('.')) return ip || '0'
+  const [h, t = ''] = ip.toLowerCase().split('::')
+  const hs = h ? h.split(':') : [], ts = t ? t.split(':') : []
+  const full = [...hs, ...Array(Math.max(0, 8 - hs.length - ts.length)).fill('0'), ...ts]
+  return full.slice(0, 4).map((x) => x.padStart(4, '0')).join(':') + '::/64'
 }
+
+// who voted or reported: an HMAC of the address keyed with the site's admin secret, so a copy of the table alone
+// cannot be matched to addresses (CodeRabbit on #115); a plain hash where no secret is set (local runs)
+async function who(env, ip) {
+  const msg = new TextEncoder().encode('swan:' + ip)
+  const out = env.TASKS_ADMIN
+    ? await crypto.subtle.sign('HMAC', await crypto.subtle.importKey('raw', new TextEncoder().encode(env.TASKS_ADMIN), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']), msg)
+    : await crypto.subtle.digest('SHA-256', msg)
+  return [...new Uint8Array(out)].slice(0, 8).map((b) => b.toString(16).padStart(2, '0')).join('')
+}
+
+const bodyOf = async (request) => { try { const b = await request.json(); return b && typeof b === 'object' ? b : {} } catch { return {} } }
 
 async function counts(db, id) {
   await db.prepare(`UPDATE swan SET
@@ -102,15 +119,14 @@ export async function onRequestPost(ctx) {
   if (a && ID_RE.test(a) && b === 'state') return setState(request, env, a)
   if (!originOk(request.headers.get('origin') || '')) return json({ ok: false, why: 'origin' }, 403)
   if (!db) return json({ ok: false, why: 'db' }, 503)
-  let body
-  try { body = await request.json() } catch { body = {} }
-  const ip = request.headers.get('cf-connecting-ip') || '0', now = Date.now()
+  const body = await bodyOf(request)
+  const ip = net(request.headers.get('cf-connecting-ip') || '0'), now = Date.now()
   try {
     if (!a) return await create(ctx, body, ip, now)
     if (a === 'poll') {
       if (!QUIZ.includes(body.q) || !['y', 'n'].includes(body.v)) return json({ ok: false, why: 'fields' }, 400)
       if (!(await tryOnce(db, [['swan:poll:' + ip, LIMITS.polls]], now))) return json({ ok: false, why: 'limit' }, 429)
-      const w = await who(request)
+      const w = await who(env, ip)
       await db.prepare('INSERT INTO swan_poll (q, who, v, at) VALUES (?, ?, ?, ?) ON CONFLICT(q, who) DO UPDATE SET v = excluded.v, at = excluded.at')
         .bind(body.q, w, body.v, new Date(now).toISOString()).run()
       const rows = (await db.prepare('SELECT v, COUNT(*) AS n FROM swan_poll WHERE q = ? GROUP BY v').bind(body.q).all()).results
@@ -127,12 +143,12 @@ export async function onRequestPost(ctx) {
       if (!(await tryOnce(db, [['swan:vote:' + ip, LIMITS.votes]], now))) return json({ ok: false, why: 'limit' }, 429)
       const ph = phaseOf(r.due, now)
       await db.prepare('INSERT INTO swan_vote (id, who, ph, v, at) VALUES (?, ?, ?, ?, ?) ON CONFLICT(id, who, ph) DO UPDATE SET v = excluded.v, at = excluded.at')
-        .bind(a, await who(request), ph, body.v, new Date(now).toISOString()).run()
+        .bind(a, await who(env, ip), ph, body.v, new Date(now).toISOString()).run()
       return json({ ok: true, ph, votes: await counts(db, a) })
     }
     if (b === 'report') {
       if (!(await tryOnce(db, [['swan:rep:' + ip, LIMITS.reports]], now))) return json({ ok: false, why: 'limit' }, 429)
-      await db.prepare('INSERT OR IGNORE INTO swan_report (id, who, at) VALUES (?, ?, ?)').bind(a, await who(request), new Date(now).toISOString()).run()
+      await db.prepare('INSERT OR IGNORE INTO swan_report (id, who, at) VALUES (?, ?, ?)').bind(a, await who(env, ip), new Date(now).toISOString()).run()
       const n = (await db.prepare('SELECT COUNT(*) AS n FROM swan_report WHERE id = ?').bind(a).first()).n
       const hide = r.state === 'ok' && n >= LIMITS.hide
       await db.prepare(`UPDATE swan SET reports = ?${hide ? ", state = 'hidden', why = 'reports'" : ''} WHERE id = ?`).bind(n, a).run()
@@ -173,7 +189,7 @@ async function create(ctx, body, ip, now) {
   const words = needsLook(row.text + ' ' + (row.name || ''))
   const model = !words && (await unsafe(env, row.text + (row.name ? '\n' + row.name : '')))
   const state = words || model ? 'wait' : 'ok'
-  const key = newKey(), keyHash = await sha(key), w = await who(request), at = new Date(now).toISOString()
+  const key = newKey(), keyHash = await sha(key), w = await who(env, ip), at = new Date(now).toISOString()
   let id = ''
   for (let i = 0; i < 4 && !id; i++) {
     const tryId = newId()
@@ -195,8 +211,7 @@ async function create(ctx, body, ip, now) {
 
 async function setState(request, env, id) {
   if (!admin(request, env)) return json({ ok: false, why: 'auth' }, 401)
-  let b
-  try { b = await request.json() } catch { b = {} }
+  const b = await bodyOf(request)
   if (!['ok', 'hidden'].includes(b.state)) return json({ ok: false, why: 'state' }, 400)
   const db = env.TASKS
   const up = db.prepare("UPDATE swan SET state = ?, why = CASE WHEN ? = 'ok' THEN NULL ELSE 'team' END, reports = CASE WHEN ? = 'ok' THEN 0 ELSE reports END WHERE id = ? AND state != 'gone'")
