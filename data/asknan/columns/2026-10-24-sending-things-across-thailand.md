@@ -58,7 +58,7 @@ Send It shows each large on a tap [1].
 
 ## Thailand Post numbers and other carriers' numbers open different pages
 
-A Thailand Post number follows the Universal Postal Union's S10 format: two letters, eight digits, a check digit and TH, such as EF123456789TH [12]. It goes into track.thailandpost.co.th [13]. A number from another carrier goes into 17TRACK, which says it covers more than 3,500 carriers [14], or into that carrier's own page; Send It links Flash, KEX, J&T, Nim Express and SPX [1]. For a scooter on the train, the notice lists the 1690 phone line and names no number to track [9].
+A Thailand Post number follows the Universal Postal Union's S10 format: two letters, eight digits, a check digit and TH, such as EF123456785TH [12]. It goes into track.thailandpost.co.th [13]. A number from another carrier goes into 17TRACK, which says it covers more than 3,500 carriers [14], or into that carrier's own page; Send It links Flash, KEX, J&T, Nim Express and SPX [1]. For a scooter on the train, the notice lists the 1690 phone line and names no number to track [9].
 
 ## Hongdam takes it to the counter
 

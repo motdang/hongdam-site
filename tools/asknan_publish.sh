@@ -6,7 +6,11 @@
 # Run on main in a clean clone (the ask-nan desk). Exit codes are pr-push's when it gets that far (6: left open).
 set -e
 cd "$(dirname "$0")/.."
-[ $# -ge 1 ] || { echo "usage: tools/asknan_publish.sh data/asknan/columns/<file>.md [...]" >&2; exit 2; }
+if [ $# -eq 0 ]; then
+  # no column named: allowed only to publish deleted columns (their pages and pictures go)
+  [ -n "$(git status --porcelain -- data/asknan/columns)" ] && [ -z "$(git status --porcelain -- data/asknan/columns | grep -v '^ D \|^D  ')" ] \
+    || { echo "usage: tools/asknan_publish.sh data/asknan/columns/<file>.md [...]" >&2; exit 2; }
+fi
 [ "$(git symbolic-ref --short HEAD)" = main ] || { echo "asknan_publish: not on main" >&2; exit 2; }
 for f in "$@"; do [ -f "$f" ] || { echo "asknan_publish: no file $f" >&2; exit 2; }; done
 # every new, changed or renamed-to column must be one named here (and so checked): the build reads the whole folder.
@@ -30,12 +34,14 @@ for p in bad:
     print("asknan_publish: %s is new or changed but not named; publish it too or move it out" % p, file=sys.stderr)
 sys.exit(2 if bad else 0)
 PY
-python3 tools/asknan_check.py "$@"
+[ $# -eq 0 ] || python3 tools/asknan_check.py "$@"
 tools/asknan_dingbats.sh
 python3 tools/build_asknan.py
 node tools/asknan_cards.mjs
 node tools/contrast/run.mjs ask-nan
-if [ $# -eq 1 ]; then
+if [ $# -eq 0 ]; then
+  title="columns removed"
+elif [ $# -eq 1 ]; then
   title=$(python3 -c 'import sys; sys.path.insert(0, "tools"); import studio_md as M; h = M.read(sys.argv[1])[0]; print("No. %d: %s" % (h["no"], h["title"]))' "$1")
 else
   title="$# columns"

@@ -394,8 +394,10 @@ def cards_list(cs):
         out.append({"out": "og/ask-nan/c/" + c["slug"], "kicker": "Ask Nan · No. %d · %s" % (c["no"], kind_label(c, "en")),
                     "title": k.get("big", c["title"]), "th": k.get("th", c["title_th"]), "sub": k.get("sub", ""),
                     "line": c["line"], "hue": hue.get(c["kind"], 32)})
+    # the drawings' versions go into the hash too, so new dingbats redraw the pictures
+    dbv = [B.DBM["core"], B.DBM["groups"].get("p-asknan", B.DBM["groups"].get("front", ""))] if B.DBM else []
     for c in out:
-        c["hash"] = hashlib.sha1(json.dumps(c, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:10]
+        c["hash"] = hashlib.sha1(json.dumps([c, dbv], sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:10]
     json.dump(out, open(os.path.join(HERE, "data", "asknan", "cards.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return out
 

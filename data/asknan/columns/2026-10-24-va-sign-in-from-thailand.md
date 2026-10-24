@@ -28,7 +28,7 @@ A surviving spouse can claim on paper, with no sign-in. The form is VA Form 21P-
 
 ## Four things go by post
 
-- **The claim.** If VA receives it within one year after the death, payment starts from the first day of the month of the death [2]. An Intent to File, VA Form 21-0966, holds the date while you gather papers [1][2].
+- **The claim.** If VA receives it within one year after the death, entitlement runs from the first day of the month of the death [2]. An Intent to File, VA Form 21-0966, holds the date while you gather papers [1][2].
 - **The report of the death.** By post it goes to the Claims Intake Center, PO Box 4444, Janesville, WI 53547-4444. VA says calling is fastest, and a posted report may take longer to stop the veteran's payments [3].
 - **Social Security.** Social Security's page names the Federal Benefits Unit at the US Embassy, 1201 Roxas Boulevard, Ermita, Manila 0930, Philippines, as the unit for Thailand [4].
 - **Health cover.** CHAMPVA is a VA program that shares the cost of care for the surviving spouse of a veteran who died of a service-connected disability, or who was rated permanently and totally disabled at death. VA Form 10-10d goes to VHA Office of Community Care, CHAMPVA Eligibility, PO Box 137, Spring City, PA 19475 [5]. The page does not say how it works abroad.
