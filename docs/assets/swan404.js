@@ -278,7 +278,7 @@ function main(box) {
     const bx = SX, by = WL - 1.4 - S.y
     if (S.pose === 'dive') return [[bx - 7, WL - 3, 3.2]]
     const tilt = S.pose === 'air' ? -0.38 : 0, c = Math.cos(tilt), s = Math.sin(tilt)
-    return [[-4, 0, 4.4], [4, 0, 4.4], [10, -9, 2.4], [13, -15.6, 3]].map(([x, y, r]) => [bx + x * c - y * s, by + x * s + y * c, r])
+    return [[-4, 0, 4.4], [4, 0, 4.4], [9.4, -13.2, 2.4], [10.5, -21, 3]].map(([x, y, r]) => [bx + x * c - y * s, by + x * s + y * c, r])
   }
   function thingHits(o) {
     const sx = o.x - S.x, ty = WL + o.y
