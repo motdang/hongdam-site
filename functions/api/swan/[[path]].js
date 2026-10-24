@@ -165,7 +165,10 @@ async function create(ctx, body, ip, now) {
   const db = env.TASKS
   const got = readNew(body, new Date(now))
   if (!got.ok) return json({ ok: false, why: got.why }, 400)
-  if (!(await tryOnce(db, [['swan:new:' + ip, LIMITS.perAddress], ['swan:new:all', LIMITS.perDay]], now))) return json({ ok: false, why: 'limit' }, 429)
+  // the address's own cap first; only a request inside it counts against the site's (CodeRabbit on #114)
+  if (!(await tryOnce(db, [['swan:new:' + ip, LIMITS.perAddress]], now)) || !(await tryOnce(db, [['swan:new:all', LIMITS.perDay]], now))) {
+    return json({ ok: false, why: 'limit' }, 429)
+  }
   const row = got.row
   const words = needsLook(row.text + ' ' + (row.name || ''))
   const model = !words && (await unsafe(env, row.text + (row.name ? '\n' + row.name : '')))
@@ -195,7 +198,10 @@ async function setState(request, env, id) {
   let b
   try { b = await request.json() } catch { b = {} }
   if (!['ok', 'hidden'].includes(b.state)) return json({ ok: false, why: 'state' }, 400)
-  const res = await env.TASKS.prepare("UPDATE swan SET state = ?, why = CASE WHEN ? = 'ok' THEN NULL ELSE 'team' END WHERE id = ? AND state != 'gone'")
-    .bind(b.state, b.state, id).run()
+  const db = env.TASKS
+  const up = db.prepare("UPDATE swan SET state = ?, why = CASE WHEN ? = 'ok' THEN NULL ELSE 'team' END, reports = CASE WHEN ? = 'ok' THEN 0 ELSE reports END WHERE id = ? AND state != 'gone'")
+    .bind(b.state, b.state, b.state, id)
+  // listed again by the team: its old reports go, so one new report does not hide it again (CodeRabbit on #114)
+  const res = b.state === 'ok' ? (await db.batch([up, db.prepare('DELETE FROM swan_report WHERE id = ?').bind(id)]))[0] : await up.run()
   return json({ ok: !!res.meta?.changes })
 }

@@ -100,6 +100,21 @@ pg = await page({ env, params: { id: held.id }, request: new Request('https://ho
 html = await pg.text()
 assert.ok(!html.includes('The king') && html.includes('noindex'))
 assert.equal((await page({ env, params: { id: 'zzzzzz' }, request: new Request('https://hongdam.net/swan/zzzzzz') })).status, 404)
+// listed again, its old reports are gone: one new report does not hide it
+assert.equal(sq.prepare('SELECT COUNT(*) AS n FROM swan_report WHERE id = ?').get(a.id).n, 0)
+ip = '8.8.8.8'; await post(`/${a.id}/report`, {})
+assert.equal((await get('?sort=new')).j.n, 1)
+// words that look like a mark or a replacement pattern stay as written
+ip = '9.9.9.9'
+r = await post('', { text: 'Gold $& silver %%SW_DATA%% and $1', odds: 2, size: 1, years: 1 })
+pg = await page({ env, params: { id: r.j.id }, request: new Request('https://hongdam.net/swan/' + r.j.id) })
+html = await pg.text()
+assert.match(html, /<h1>“Gold \$&amp; silver %%SW_DATA%% and \$1”<\/h1>/)
+assert.equal((html.match(/<script>/g) || []).length, 1)
+// a refused address does not use up the site's count
+ip = '10.10.10.10'
+for (let i = 0; i < 8; i++) await post('', { text: 'Spam number ' + i, odds: 0, size: 0, years: 1 })
+assert.equal(sq.prepare("SELECT n FROM tries WHERE k = 'swan:new:all'").get().n, 1 + 1 + 1 + 6)   // saved: the first, the held one, the $& one, six of eight
 // the maker deletes it with their key; a wrong key does nothing
 assert.equal((await post(`/${a.id}/delete`, { key: 'nope' })).status, 403)
 assert.equal((await post(`/${a.id}/delete`, { key: a.key })).j.ok, true)
