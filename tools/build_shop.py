@@ -90,6 +90,9 @@ import hashlib
 VERSION = hashlib.sha1(json.dumps([SHOP, LIVE, LOOKS], sort_keys=True).encode()).hexdigest()[:8]
 _CSS = os.path.join(DOCS, "assets", "shop.css")
 CSS_V = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(_CSS) else "0"
+# shop.js gets its own, so a browser holding yesterday's copy (kept 4 h) fetches the new one at once.
+_JS = os.path.join(DOCS, "assets", "shop.js")
+JS_V = hashlib.sha1(open(_JS, "rb").read()).hexdigest()[:8] if os.path.exists(_JS) else "0"
 
 
 def db(name, cls="", play="still"):
@@ -366,8 +369,8 @@ def foot(lang, front=False, group=None):
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return rate_box(lang) + ('<footer><p>%s</p><p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
             '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · <a href="/llms.txt">llms.txt</a></p></footer>\n'
-            '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js"></script>\n</body>\n</html>\n'
-            % (E(ui["payMethods"]), E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j))
+            '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n</body>\n</html>\n'
+            % (E(ui["payMethods"]), E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j, JS_V))
 
 
 RATE_LANGS = ("my", "zh", "de")
