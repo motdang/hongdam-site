@@ -7,11 +7,12 @@
  *                                                           Authorization: Bearer TASKS_ADMIN
  *
  * Each answer is a row in svc_rate (migrations/0009_rate.sql, D1 TASKS). "Could be better" also posts in
- * #help-desk (DISCORD_TASKS) with the reader's correction. Twenty answers a day from one address (RT_LIMIT).
+ * #help-desk (DISCORD_TASKS) with the reader's correction. Twenty answers a day from one address (atomic D1 counter, functions/_tries.js).
  * POST answers hongdam.net, hongdam.pages.dev and localhost.
  */
 import { whoHash } from '../_services.js'
 import { tell } from '../_tasks.js'
+import { tryOnce } from '../_tries.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -21,13 +22,9 @@ const originOk = (o) => ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localh
 const LANGS = { my: 'Burmese', zh: 'Chinese', th: 'Thai', en: 'English' }
 const code = (s) => '`' + String(s).replace(/`/g, '') + '`'
 
+// Twenty answers a day from one address, counted atomically in D1 (functions/_tries.js; CodeRabbit on #57).
 async function allowed(env, ip, now) {
-  if (!env.RT_LIMIT) return true
-  const k = `rate:${ip}:${new Date(now).toISOString().slice(0, 10)}`
-  const n = Number(await env.RT_LIMIT.get(k)) || 0
-  if (n >= 20) return false
-  await env.RT_LIMIT.put(k, String(n + 1), { expirationTtl: 2 * 86400 })
-  return true
+  return tryOnce(env.TASKS, [['rate:ip:' + ip, 20]], now)
 }
 
 export async function onRequestPost(ctx) {
@@ -52,7 +49,7 @@ export async function onRequestPost(ctx) {
     ctx.waitUntil(tell(env, `Translation · ${LANGS[lang]} · ${page}`.slice(0, 95), [
       score === 'better' && `A reader of the ${LANGS[lang]} page ${page} says the translation could be better.`,
       score === 'good' ? `A reader of the ${LANGS[lang]} page ${page} says the translation is good.` : text ? `Their correction: ${code(text)}` : 'No correction written.',
-      !stored && 'Not saved: the svc_rate table (migrations/0009_rate.sql) is not on the database yet.',
+      !stored && 'The database did not store this answer: svc_rate (migrations/0009_rate.sql) was unreachable.',
     ].filter(Boolean)))
   }
   return json({ ok: true, stored })
