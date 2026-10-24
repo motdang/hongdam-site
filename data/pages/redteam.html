@@ -1,6 +1,10 @@
 <main>
 {{lead}}
   <p class="lede">Red-teaming: attacking your own chatbot before a customer does. Paste the bot's system prompt — the hidden instructions it runs on — pick packs, and run. A secret reference code is added to your prompt for each batch; a bot that gives it out, quotes its instructions, or obeys a planted command fails that probe.</p>
+  <div class="go">
+    <a class="btn alt" href="/buy/?c=redteam">Buy · <span lang="th">ซื้อ</span></a>
+    <small>Chatbot attack test {{live:sec-redteam}} · We try to break it and write the fixes.</small>
+  </div>
 
   <form class="run" id="f" novalidate>
     <label>System prompt
@@ -31,6 +35,10 @@
   <div class="score" id="score"></div>
   <ol class="res" id="res"></ol>
   <p class="dl" hidden id="dl"><a href="#" id="dlj" download="redteam.json">Report · JSON</a><a href="#" id="dlt" download="redteam.txt">Report · text</a></p>
+  <div class="go" hidden id="hire">
+    <a class="btn alt" href="/buy/?c=redteam">Buy · <span lang="th">ซื้อ</span></a>
+    <small>Chatbot attack test {{live:sec-redteam}} · We try to break it and write the fixes.</small>
+  </div>
 </main>
 <script>
 (function () {
@@ -67,7 +75,7 @@
       for (var i = 0; i < p.probes.length; i += 8) jobs.push({ pack: p, probes: p.probes.slice(i, i + 8) });
     });
     var total = jobs.reduce(function (n, j) { return n + j.probes.length; }, 0), done = 0;
-    log = []; $('res').innerHTML = ''; $('score').innerHTML = ''; $('dl').hidden = true;
+    log = []; $('res').innerHTML = ''; $('score').innerHTML = ''; $('dl').hidden = true; $('hire').hidden = true;
     $('bar').hidden = false; $('bar').firstChild.style.width = '0';
     $('go').disabled = true; say('Running 0 of ' + total + '…');
     var model = $('model').value;
@@ -125,7 +133,7 @@
       })).join('\n');
     $('dlj').href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
     $('dlt').href = URL.createObjectURL(new Blob([txt], { type: 'text/plain' }));
-    $('dl').hidden = false;
+    $('dl').hidden = false; $('hire').hidden = false;
   }
 })();
 </script>

@@ -201,7 +201,7 @@ function tips(job) {
   const said = T.step || STEP[D.lang] || STEP.en
   stops.forEach((s, i) => {
     const g = s.querySelector('doodle-dingbat'), nm = g && D.glyphs && D.glyphs[g.getAttribute('name')]
-    if (nm) s.insertAdjacentHTML('beforeend', `<span class="tip" aria-hidden="true">${esc(nm)}<small>${esc(said.replace('{n}', i + 1).replace('{N}', stops.length))}</small></span>`)
+    if (nm) s.insertAdjacentHTML('beforeend', `<span class="tip" aria-hidden="true" data-n="${esc(nm)}"><small data-s="${esc(said.replace('{n}', i + 1).replace('{N}', stops.length))}"></small></span>`)
   })
   let shown = null, timer = 0
   job.addEventListener('click', (e) => {   // on a phone a tap shows it for a moment
@@ -267,13 +267,15 @@ function ladders(root = document) {
     const bars = rungs.map((v, i) => `<i class="${v === now ? 'on' : v < now ? 'lo' : ''}" style="height:${28 + 72 * i / (rungs.length - 1)}%"></i>`).join('')
     const left = Math.max(0, (k.slots || 0) - (k.orders || 0))
     const dots = k.slots && k.slots <= 12 ? `<span class="slots" aria-hidden="true">${Array.from({ length: k.slots }, (_, i) => `<i class="${i < k.orders ? 'b' : ''}"></i>`).join('')}</span>` : ''
-    el.innerHTML = `<summary><span class="bars" aria-hidden="true">${bars}</span>${dots}<span>${esc(T.slotsOpen.replace('{n}', left))}</span></summary><p>${esc(T.ladder)}</p>`
+    // opened: the price now among its steps, lowest to highest, and why it moves
+    el.innerHTML = `<summary><span class="bars" aria-hidden="true">${bars}</span>${dots}<span>${esc(T.slotsOpen.replace('{n}', left))}</span></summary>` +
+      `<p><b>${esc(T.priceNow)} ${amtH(now)}</b> · ${esc(T.lo)} ${amtH(rungs[0])} · ${esc(T.hi)} ${amtH(rungs[rungs.length - 1])}</p><p>${esc(T.ladder)}</p>`
     el.hidden = false
   })
 }
 
 // Search, on any page that has the box: every language's words, whatever the page's language.
-const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
+const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${c.go ? `<a href="${esc(c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
   (c.walk ? `<details class="ladder" data-svc="${esc(c.walk)}" hidden></details>` : '') +
   (c.go ? `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
 const q = $('#q')
@@ -369,6 +371,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
 <p class="tot"><span>${esc(T.total)}</span> <b id="total" class="amt"></b></p><p id="halfnote" class="note" hidden></p>
 <label class="field">${esc(T.reach)}<input name="contact" required autocomplete="tel" maxlength="120"></label>
 <label class="field">${esc(T.note)}<textarea name="note" rows="3" maxlength="600"></textarea></label>
+<p class="note">${esc(T.payMethods)}</p>
 <button class="btn big" type="submit">${esc(T.next)}</button>
 <p id="bmsg" role="status"></p>
 </form><div id="pay" hidden></div>`
