@@ -6,9 +6,16 @@
  *   PAY_MAIL_TO, PAY_MAIL_FROM  where a confirmed payment is mailed
  */
 import { handle } from './_verify.js'
+import { prices } from '../../_services.js'
 
-const PRICES = { new: [1500, 5, 500], check: [500, 5, 150], stamp: 100 }
+// Translation prices walk monthly with the services list (functions/_services.js; her word
+// 2026-10-24, "Put them on the walk"): new and checking are a price for up to 5 pages and a
+// price for each page after; the stamp is a price a page.
+export async function translationPrices(db, now = Date.now()) {
+  const by = Object.fromEntries((await prices(db, now)).map((k) => [k.id, k]))
+  return { new: [by['lang-new'].price, 5, by['lang-new'].tail], check: [by['lang-check'].price, 5, by['lang-check'].tail], stamp: by['lang-stamp'].price }
+}
 
 export async function onRequest({ request, env, waitUntil }) {
-  return handle(request, env, { prices: PRICES, refPrefix: 'HD', site: 'hongdam.net' }, { waitUntil })
+  return handle(request, env, { prices: await translationPrices(env.TASKS), refPrefix: 'HD', site: 'hongdam.net' }, { waitUntil })
 }

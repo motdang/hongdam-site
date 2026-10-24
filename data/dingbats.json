@@ -1,0 +1,26 @@
+{
+ "core": "core.js?v=69775a4d",
+ "groups": {
+  "front": "front.js?v=221b2a63",
+  "care": "care.js?v=be4d14dd",
+  "visa": "visa.js?v=062a685f",
+  "fix": "fix.js?v=1efe0701",
+  "money": "money.js?v=ffea7704",
+  "web": "web.js?v=f22e1002",
+  "stay": "stay.js?v=7b07fc6d",
+  "ai": "ai.js?v=2efd2d2d",
+  "moving": "moving.js?v=1b0a6bc5",
+  "design": "design.js?v=b14fdf69",
+  "charity": "charity.js?v=cc898002",
+  "help": "help.js?v=d999248f",
+  "luck": "luck.js?v=4eae24ce",
+  "translate": "translate.js?v=61dceefd",
+  "shop": "shop.js?v=124cdd04",
+  "ship": "ship.js?v=21ceb002",
+  "data": "data.js?v=09bf342e",
+  "merit": "merit.js?v=7ec39aaa",
+  "tours": "tours.js?v=3491cb07",
+  "outsource": "outsource.js?v=8c08ea61",
+  "weddings": "weddings.js?v=1e3eb6d1"
+ }
+}

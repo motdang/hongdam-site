@@ -20,6 +20,9 @@
 <meta property="og:image" content="https://hongdam.net/og/translation-th.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="การ์ด: แปลเอกสาร ไทย อังกฤษ พม่า, หงส์ดำ"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/translation-th.jpg"><meta name="twitter:image:alt" content="การ์ด: แปลเอกสาร ไทย อังกฤษ พม่า, หงส์ดำ">
 <link rel="stylesheet" href="/assets/rt.css">
 <style>
+  .amt{white-space:nowrap}
+  .prices i .amt{display:inline}
+  .amt-th::before{content:""; display:inline-block; width:1.1em; height:.74em; margin-right:.28em; vertical-align:-.04em; border-radius:1.5px; background:center/100% 100% no-repeat; box-shadow:0 0 0 1px color-mix(in oklab, var(--cream) 22%, transparent); background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E")}
   .sub{display:block; font-family:"Avenir Next","Segoe UI",system-ui,"Thonburi","Noto Sans Thai","Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text",sans-serif; font-size:.42em; color:var(--gold-deep); font-weight:500; margin-top:10px; letter-spacing:.04em}
   .switch{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 6px}
   .switch a{border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:16px}
@@ -111,8 +114,8 @@
 
   <section>
     <h2>ราคา</h2>
-    <div class="prices"><div><span>แปลใหม่</span><b>฿1,500</b><i>ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿500</i></div><div><span>ตรวจงานแปลที่มีอยู่</span><b>฿500</b><i>ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿150</i></div><div><span>ตราประทับ</span><b>฿100</b><i>ต่อหน้า</i></div><div><span>ล่าม</span><b>ใบเสนอราคา</b><i>เป็นลายลักษณ์อักษร ตามชั่วโมงและสถานที่</i></div></div>
-    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="th" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}'></div>
+    <div class="prices"><div><span>แปลใหม่</span><b class="amt amt-th" data-live="services/lang-new">฿1,500</b><i>ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ <span class="amt amt-th" data-live="services/lang-new#tail">฿500</span></i></div><div><span>ตรวจงานแปลที่มีอยู่</span><b class="amt amt-th" data-live="services/lang-check">฿500</b><i>ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ <span class="amt amt-th" data-live="services/lang-check#tail">฿150</span></i></div><div><span>ตราประทับ</span><b class="amt amt-th" data-live="services/lang-stamp">฿100</b><i>ต่อหน้า</i></div><div><span>ล่ามทางโทรศัพท์หรือวิดีโอ</span><b class="amt amt-th" data-live="services/interp-phone">฿400</b><i>ต่อครึ่งชั่วโมง</i></div><div><span>ล่ามไปด้วย</span><b class="amt amt-th" data-live="services/interp-person">฿3,000</b><i>ไม่เกิน 4 ชั่วโมง ในเชียงรายหรือเชียงใหม่</i></div><div><span>ล่ามไปด้วยทั้งวัน</span><b class="amt amt-th" data-live="services/interp-day">฿5,000</b><i>ไม่เกิน 8 ชั่วโมง</i></div></div>
+    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="th" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
     <script type="module" src="/pay/paybox.js"></script>
   </section>
 
@@ -126,7 +129,7 @@
 
   <section>
     <h2>ขั้นตอน</h2>
-    <div class="steps"><div><b>รูปถ่าย</b><p>รูปถ่ายหรือสแกนทุกหน้า รูปจากโทรศัพท์ใช้ได้ถ้าอ่านออกทุกบรรทัด</p></div><div><b>ราคา</b><p>ตามตารางด้านบน เป็นลายลักษณ์อักษรก่อนเริ่มงาน ล่ามคิดตามใบเสนอราคา</p></div><div><b>ส่งคืน</b><p>เป็น PDF ทางอีเมลหรือ LINE และฉบับกระดาษประทับตราถ้าต้องการ</p></div></div>
+    <div class="steps"><div><b>รูปถ่าย</b><p>รูปถ่ายหรือสแกนทุกหน้า รูปจากโทรศัพท์ใช้ได้ถ้าอ่านออกทุกบรรทัด</p></div><div><b>ราคา</b><p>ตามตารางด้านบน เป็นลายลักษณ์อักษรก่อนเริ่มงาน</p></div><div><b>ส่งคืน</b><p>เป็น PDF ทางอีเมลหรือ LINE และฉบับกระดาษประทับตราถ้าต้องการ</p></div></div>
   </section>
 
   <section id="quote">
@@ -175,5 +178,6 @@
 })();
 </script>
 <script src="/ticker.js" defer></script>
+<script>fetch('/api/services').then(function(r){return r.ok?r.json():null}).then(function(j){if(!j)return;var by={};j.kinds.forEach(function(k){by[k.id]=k});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){var a=x.getAttribute('data-live').slice(9).split('#'),k=by[a[0]];if(!k)return;var v=a[1]==='tail'?k.tail:k.price;if(v!=null)x.textContent='฿'+Number(v).toLocaleString('en-US')})}).catch(function(){})</script>
 </body>
 </html>

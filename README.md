@@ -1,7 +1,23 @@
 # Hongdam — hongdam.net
 
-Web dev studio site for Hongdam, Chiang Rai. Single static page, no build step —
-`docs/index.html` is the whole site, GitHub-Pages-ready (`.nojekyll` + `CNAME` included).
+Services site for Hongdam, Chiang Rai. The front page lists every service with its price,
+English at `/` and Thai at `/th/`: `data/services.json` → `python3 tools/build_services.py`
+→ `docs/index.html`, `docs/th/index.html` and the services block of `docs/llms.txt`. A new
+service is one more item in the JSON. GitHub, PHP fix and bot prices come from `/api/github`,
+`/api/php` and `/api/bots` (at build time, and again in the page when it loads); `--offline`
+uses `data/services.live.json`. The build stops when a price disagrees with its task-graph
+node. `/services` redirects to `/` (`docs/_redirects`). Orders go to `/api/contact`, which
+takes an email address or a LINE ID. The portfolio is at `/portfolio/`.
+
+Prices walk monthly by Shoup's rule (her word 2026-10-15; monthly walk asked 2026-10-23): an item with
+`baht` (or `pct`, for sourcing) and its floor, ceiling and slots a month is written by the build into
+`functions/_services_data.js`; `functions/_services.js` walks it on the 1st, 00:00 Bangkok (over 80% of
+slots ordered last month, one step up; under 60%, one down), first check 1 December 2026. Orders are
+rows in `svc_order` (D1 hongdam-tasks, `migrations/0006_services.sql`): the page's form through
+`/api/contact`, and team orders by `POST /api/services/order {svc, note}` with `Bearer TASKS_ADMIN`.
+`GET /api/services` gives every price and its walk. Grab rows (`walk: "desk"`) are walked by the
+Hongdam Desk bot (hongdam-desk/grab.py), which posts its price to `/api/services/price`.
+`node tests/services.test.mjs`; `node tools/services_sim.mjs` runs a year under four demands.
 
 ## Publishing
 

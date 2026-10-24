@@ -1,26 +1,27 @@
 /**
- * The edge count for a Cloudflare Pages site.
+ * Every request to hongdam.net passes through here. Two jobs:
  *
- * WHY MIDDLEWARE AND NOT THE traffic-eye COLLECTOR
- * The collector Worker sits in front of a site and calls `fetch(request)` to
- * reach the origin. On a hostname that IS a Pages custom domain there is no
- * origin behind the edge: that fetch resolves to this same hostname and the
- * Worker calls itself. Pages middleware runs inside the project instead and
- * hands the request on with `next()`, so there is nothing to loop through.
+ * 1. THE EDGE COUNT. One row per request, in the blob order traffic-eye's
+ *    src/collector.js uses, into the same `traffic_eye` dataset motdang.net
+ *    writes to — host, category, agent, path, country, status, referrer host,
+ *    method. The referring URL is reduced to its host before it is stored.
+ *    (Why middleware and not the traffic-eye collector: on a hostname that is
+ *    a Pages custom domain there is no origin behind the edge, so a Worker in
+ *    front would fetch itself. Middleware hands on with `next()` instead.)
  *
- * WHAT IT RECORDS
- * One row per request, in the blob order src/collector.js uses, into the same
- * `traffic_eye` dataset motdang.net writes to — host, category, agent, path,
- * country, status, referrer host, method. Nothing is added to any page, no
- * script runs in a reader's browser, no cookie is set, and the referring URL
- * is reduced to its host before it is stored.
+ * 2. THE PAGE SCRIPTS. Every HTML page, static or written by a Function, gets
+ *    /assets/hd.js (what people do on the page, sent to /api/hit and read on
+ *    /stats/) and /assets/eggs.js (the easter egg each page hides), appended
+ *    to <body> by HTMLRewriter. One place, so a page added later has them too.
  *
  * THE CONTRACT
  * This runs on every request to a live site, so it must not be able to break
- * one. `next()` is called first and its result returned whatever happens;
- * recording sits inside a try/catch whose failure path is to do nothing.
+ * one. `next()` is called first; recording and the rewrite each sit in a
+ * try/catch whose failure path hands back the page as it came.
  */
 import { classify } from './_classify.js';
+
+const SCRIPTS = '<script type="module" src="/assets/hd.js"></script><script type="module" src="/assets/eggs.js"></script>';
 
 export async function onRequest(context) {
   const started = Date.now();
@@ -30,7 +31,19 @@ export async function onRequest(context) {
   } catch {
     // Recording is never worth an error page.
   }
-  return response;
+  try {
+    return withScripts(context.request, response);
+  } catch {
+    return response;
+  }
+}
+
+function withScripts(request, response) {
+  if (request.method !== 'GET' || (response.status !== 200 && response.status !== 404)) return response;
+  if (!(response.headers.get('content-type') || '').includes('text/html')) return response;
+  return new HTMLRewriter()
+    .on('body', { element(el) { el.append(SCRIPTS, { html: true }); } })
+    .transform(response);
 }
 
 async function record(context, response, ms) {
@@ -40,7 +53,7 @@ async function record(context, response, ms) {
   const request = context.request;
   const url = new URL(request.url);
   const ua = request.headers.get('user-agent') || '';
-  const { category, agent } = classify(ua);
+  const { category, agent } = classify(ua, { asn: request.cf?.asn, headers: request.headers });
 
   let refHost = '';
   const ref = request.headers.get('referer');

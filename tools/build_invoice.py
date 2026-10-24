@@ -60,6 +60,15 @@ def page(inv):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Invoice {e(inv["number"])} · Hongdam</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Invoice {e(inv["number"])} · Hongdam">
+<meta property="og:image" content="https://hongdam.net/og/invoice.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Invoice, ใบแจ้งหนี้: a page, a coin and a tick, and the black swan. Hongdam, Chiang Rai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hongdam.net/og/invoice.jpg">
+<meta name="twitter:image:alt" content="Invoice, ใบแจ้งหนี้: a page, a coin and a tick, and the black swan. Hongdam, Chiang Rai">
 <meta name="theme-color" content="#171009">
 <link rel="icon" href="/assets/favicon.svg">
 <link rel="stylesheet" href="/assets/rt.css">
