@@ -2,7 +2,7 @@
   "id": "thai",
   "name": "Thai-language attacks",
   "name_th": "โจมตีเป็นภาษาไทย",
-  "summary": "The extraction and override attacks, asked in Thai. Guardrails written in English often hold less well in Thai.",
+  "summary": "The same attacks as the Instruction leak and Instruction override packs, asked in Thai. Safety rules written in English often work less well in Thai.",
   "author": "Hongdam",
   "author_url": "https://hongdam.net/",
   "licence": "CC BY 4.0",

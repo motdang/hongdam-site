@@ -50,7 +50,7 @@ V_JS = hashlib.sha1(open(_SJS, "rb").read()).hexdigest()[:8] if os.path.exists(_
 FEED_N = 30
 SHOW = 4   # service rows shown under a practice; the rest open under "n more"
 MONTHS = {
-    "en": "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(),
+    "en": "January February March April May June July August September October November December".split(),
     "th": "ม.ค. ก.พ. มี.ค. เม.ย. พ.ค. มิ.ย. ก.ค. ส.ค. ก.ย. ต.ค. พ.ย. ธ.ค.".split(),
     "de": "Jan. Feb. März Apr. Mai Juni Juli Aug. Sept. Okt. Nov. Dez.".split(),
 }
@@ -254,8 +254,8 @@ def front(lang, ns):
     out += '<div class="s-room">\n' + bar(lang) + '<section class="s-hero s-wrap">\n'
     out += '<p class="s-kicker">%s</p>\n<h1>%s</h1>\n<p class="s-lede">%s</p>\n' % (E(u["kicker"]), E(u["h1"]), E(u["lede"]))
     notes_url = B.url(lang if lang in NOTE_LANGS else "en", "studio/notes/")
-    out += '<p class="s-cta"><a class="s-btn" href="#contact">%s</a> <a class="s-btn alt" href="%s">%s</a></p>\n' % (
-        E(B.SHOP["ui"][lang]["askBtn"]), notes_url, E(u["ctaNotes"]))
+    out += '<p class="s-cta"><a class="s-btn" href="#contact">%s</a> <a class="s-btn alt" href="%s">%s</a> %s</p>\n' % (
+        E(B.SHOP["ui"][lang]["askBtn"]), notes_url, E(u["ctaNotes"]), B.share_btn(lang))
     out += '<p class="s-counts">%s</p>\n' % E(fill(u["counts"], lang, len(ns)))
     out += '<button class="s-swan" type="button" aria-label="Hongdam">%s</button>\n' % B.db("hongsa", play="loop")
     out += '</section>\n</div>\n<main id="main">\n'
@@ -278,7 +278,7 @@ def front(lang, ns):
     if u.get("notesLang"):
         out += '<p class="s-sub s-small">%s</p>\n' % E(u["notesLang"])
     out += '<ul class="s-notes">%s</ul>\n' % "".join(note_card(n, lang) for n in ns[:3])
-    out += '<p class="s-links"><a class="s-btn alt" href="%s">%s</a> <a href="/studio/feed.xml">Atom</a> · <a href="/studio/feed.json">JSON Feed</a></p></section>\n' % (
+    out += '<p class="s-links"><a class="s-btn alt" href="%s">%s</a> <a href="/studio/feed.xml">Atom feed</a> · <a href="/studio/feed.json">JSON Feed</a></p></section>\n' % (
         notes_url, E(u["notesAll"]))
     # work
     out += '<section id="work" class="s-wrap"><h2 class="s-h">%s</h2>\n<ul class="s-work">' % E(u["workH"])
@@ -314,7 +314,7 @@ def notes_index(lang, ns):
     out += '<body class="studio s-index">\n' + top(lang, [(l, "/" + p) for l, p in alts.items()])
     out += '<div class="s-room">\n' + bar(lang, "notes") + '<section class="s-hero s-wrap s-short">\n'
     out += '<p class="s-kicker">%s</p>\n<h1>%s</h1>\n<p class="s-lede">%s</p>\n' % (E(u["kicker"]), E(u["notesH"]), E(u["notesL"]))
-    out += '<p class="s-counts">%s · <a href="/studio/feed.xml">Atom</a> · <a href="/studio/feed.json">JSON Feed</a></p>\n' % E(
+    out += '<p class="s-counts">%s · <a href="/studio/feed.xml">Atom feed</a> · <a href="/studio/feed.json">JSON Feed</a></p>\n' % E(
         fill(u["counts"].split(" · ")[0], lang, len(ns)))
     out += '</section>\n</div>\n<main id="main" class="s-wrap">\n'
     if u.get("notesLang"):
@@ -352,7 +352,7 @@ def note_page(n, ns):
     out += '<h1>%s</h1>\n' % E(n["title"])
     if n.get("title_th"):
         out += '<p class="s-th" lang="th">%s</p>\n' % E(n["title_th"])
-    out += '<p class="s-dek">%s</p>\n' % E(n["dek"])
+    out += '<p class="s-dek">%s</p>\n<p class="share-row">%s</p>\n' % (E(n["dek"]), B.share_btn(lang))
     out += B.job(beat_line(n["beat"]), lang, cls="s-line") + "\n"
     out += '<div class="s-body">\n%s\n</div>\n' % n["html"]
     if n.get("dek_th"):
@@ -363,14 +363,14 @@ def note_page(n, ns):
                 k, E(s["u"]), E(s["t"]), E(re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*", r"\1", s["u"])))) for k, s in enumerate(srcs, 1))
     rows = "".join(svc_row(CARDS[c], lang) for c in n.get("cards", []) if c in CARDS)
     if rows:
-        out += '<section class="s-buy"><h2>Hongdam Studio does this</h2><ul class="s-svc">%s</ul></section>\n' % rows
+        out += '<section class="s-buy"><h2>Hongdam Studio services on this topic</h2><ul class="s-svc">%s</ul></section>\n' % rows
     pn = ""
     if older:
-        pn += '<a class="s-old" href="/%s"><span>← Older</span>%s</a>' % (note_path(older), E(older["title"]))
+        pn += '<a class="s-old" href="/%s"><span>← Older note</span>%s</a>' % (note_path(older), E(older["title"]))
     if newer:
-        pn += '<a class="s-new" href="/%s"><span>Newer →</span>%s</a>' % (note_path(newer), E(newer["title"]))
+        pn += '<a class="s-new" href="/%s"><span>Newer note →</span>%s</a>' % (note_path(newer), E(newer["title"]))
     out += '<nav class="s-pn" aria-label="More notes">%s</nav>\n' % pn
-    out += '<p class="s-links"><a class="s-btn alt" href="/studio/notes/">%s</a> <a href="/studio/feed.xml">Atom</a> · <a href="/studio/feed.json">JSON Feed</a></p>\n' % E(u["notesAll"])
+    out += '<p class="s-links"><a class="s-btn alt" href="/studio/notes/">%s</a> <a href="/studio/feed.xml">Atom feed</a> · <a href="/studio/feed.json">JSON Feed</a></p>\n' % E(u["notesAll"])
     out += '</article></main>\n' + foot(lang)
     return out
 
@@ -446,14 +446,13 @@ def llms(ns):
     p = os.path.join(DOCS, "llms.txt")
     txt = open(p, encoding="utf-8").read()
     lines = ["## Hongdam Studio", "",
-             "Hongdam Studio is the tech side of Hongdam: vibe-coded apps finished and published, security, language models",
-             "and machine learning, workflow automation. Page: https://hongdam.net/studio/ (and /th/, /my/, /zh/, /de/ before it).",
-             "Prices are the shop's own cards and walk with them.", ""]
+             "Hongdam Studio is the technology part of Hongdam, a small company in Chiang Rai, Thailand. It finishes and publishes apps that AI tools wrote (vibe-coded apps), closes security holes, and works with AI language models, machine learning and workflow automation. Page: https://hongdam.net/studio/ (also in Thai, Burmese, Chinese and German under /th/studio/, /my/studio/, /zh/studio/ and /de/studio/).",
+             "Prices are the prices in Hongdam's shop and change when the shop changes them.", ""]
     for pr in S["practices"]:
         lines.append("- %s: %s Services: %s." % (pr["n"]["en"], pr["l"]["en"], ", ".join(
             "%s (https://hongdam.net%s)" % (B.tr(CARDS[c]["n"], "en"), B.go_of(CARDS[c], "en")[0]) for c in pr["cards"] if c in CARDS and B.go_of(CARDS[c], "en")[0].startswith("/"))))
-    lines += ["", "Notes from the bench, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·",
-              "JSON Feed https://hongdam.net/studio/feed.json. Each note lists its sources at the foot.", ""]
+    lines += ["", "Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·",
+              "JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.", ""]
     for n in ns[:12]:
         lines.append("- %s · %s — https://hongdam.net/%s" % (n["date"], n["title"], note_path(n)))
     block = "\n".join(lines) + "\n\n"
@@ -470,17 +469,17 @@ def card_alt(kind, n=None):
     if kind == "note":
         return "Hongdam Studio · %s · %s — hongdam.net/studio" % (tr(BEATS[n["beat"]], "en"), n["title"])
     if kind == "notes":
-        return "Hongdam Studio · Notes — models, security, last-mile code, automation · hongdam.net/studio"
-    return "Hongdam Studio · The last mile — vibe code, security, models, automation · hongdam.net/studio"
+        return "Hongdam Studio · Notes — AI models, security, finishing AI-written apps, automation · hongdam.net/studio"
+    return "Hongdam Studio · The last mile — finishing AI-written apps, security, AI models, automation · hongdam.net/studio"
 
 
 def cards_list(ns):
     hue = lambda cat: {"web": 258, "fix": 292, "ai": 205, "data": 225, "design": 322}.get(cat, 258)  # noqa: E731
     out = [{"out": "og/studio/front", "kicker": "Hongdam Studio · Chiang Rai", "title": "The last mile.",
-            "th": "งานเทคที่ค้างอยู่ เราปิดให้จบ", "sub": "Vibe code finished · security · models · automation",
+            "th": "งานเทคที่ค้างอยู่ เราปิดให้จบ", "sub": "AI-written apps finished · security · AI models · automation",
             "line": ["robot", "laptop", "wrench", "lock"], "hue": 258},
-           {"out": "og/studio/notes", "kicker": "Hongdam Studio · Notes", "title": "Notes from the bench.",
-            "th": "บันทึกจากโต๊ะทำงาน", "sub": "Models measured, holes found, fixes with their code.",
+           {"out": "og/studio/notes", "kicker": "Hongdam Studio · Notes", "title": "Notes on our work.",
+            "th": "บันทึกเกี่ยวกับงานของเรา", "sub": "We test AI models, find security holes, publish fixes with code.",
             "line": ["typewriter", "page", "send"], "hue": 205}]
     for n in ns:
         c = n.get("card", {})

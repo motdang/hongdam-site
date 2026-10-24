@@ -2,7 +2,7 @@
 export const CARDS = {
  "retire": {
   "act": "buy",
-  "en": "Retiring in Thailand, handled",
+  "en": "Retire in Thailand with our help",
   "opts": [
    {
     "id": "retire-setup",
@@ -126,7 +126,7 @@ export const CARDS = {
  },
  "specialist": {
   "act": "buy",
-  "en": "Dentist, clinic or specialist, with you",
+  "en": "We go with you to a dentist, clinic or specialist",
   "opts": [
    {
     "id": "specialist",
@@ -200,7 +200,7 @@ export const CARDS = {
  },
  "visas": {
   "act": "link",
-  "en": "Visas, permits and companies"
+  "en": "Visas, permits and company registration"
  },
  "php": {
   "act": "book",
@@ -258,7 +258,7 @@ export const CARDS = {
  },
  "mirror": {
   "act": "buy",
-  "en": "Standby copy of your site",
+  "en": "Spare copy of your website",
   "opts": [
    {
     "id": "mirror",
@@ -286,7 +286,7 @@ export const CARDS = {
  },
  "forensics": {
   "act": "ask",
-  "en": "Device forensics"
+  "en": "Computer or phone examined for evidence"
  },
  "redteam-free": {
   "act": "open",
@@ -330,7 +330,7 @@ export const CARDS = {
  },
  "books": {
   "act": "buy",
-  "en": "Books in Thai and English",
+  "en": "Bookkeeping in Thai and English",
   "opts": [
    {
     "id": "co-books",
@@ -380,7 +380,7 @@ export const CARDS = {
  },
  "payouts": {
   "act": "buy",
-  "en": "Team pay day",
+  "en": "Monthly pay list for your team",
   "opts": [
    {
     "id": "money-payouts",
@@ -394,7 +394,7 @@ export const CARDS = {
  },
  "kh-books": {
   "act": "buy",
-  "en": "Books in Khmer and English",
+  "en": "Bookkeeping in Khmer and English",
   "opts": [
    {
     "id": "kh-books",
@@ -423,7 +423,7 @@ export const CARDS = {
  },
  "exchange-system": {
   "act": "ask",
-  "en": "Exchange counter system"
+  "en": "System for a money-exchange shop"
  },
  "sell-motdang": {
   "act": "open",
@@ -431,15 +431,15 @@ export const CARDS = {
  },
  "paid-in-kind": {
   "act": "open",
-  "en": "Pay in kind"
+  "en": "Pay with goods or work"
  },
  "crypto-baht": {
   "act": "link",
-  "en": "Crypto to baht"
+  "en": "Cryptocurrency to baht"
  },
  "web-mail": {
   "act": "buy",
-  "en": "Email at your own name",
+  "en": "Email with your own web address",
   "opts": [
    {
     "id": "web-mail",
@@ -461,7 +461,7 @@ export const CARDS = {
  },
  "accessible": {
   "act": "buy",
-  "en": "Easier to read",
+  "en": "Website easier to read",
   "opts": [
    {
     "id": "accessible",
@@ -519,7 +519,7 @@ export const CARDS = {
  },
  "web-found": {
   "act": "buy",
-  "en": "Google and AI set-up",
+  "en": "Be found on Google and AI search",
   "opts": [
    {
     "id": "web-found",
@@ -585,7 +585,7 @@ export const CARDS = {
  },
  "web-move": {
   "act": "buy",
-  "en": "Move to new hosting",
+  "en": "Move your website to a new host",
   "opts": [
    {
     "id": "web-move",
@@ -599,7 +599,7 @@ export const CARDS = {
  },
  "web-license": {
   "act": "buy",
-  "en": "Our site, for your city",
+  "en": "Licence to use our website in your city",
   "opts": [
    {
     "id": "web-license",
@@ -613,7 +613,7 @@ export const CARDS = {
  },
  "web-care": {
   "act": "buy",
-  "en": "Website care",
+  "en": "Website maintenance",
   "opts": [
    {
     "id": "web-care",
@@ -641,7 +641,7 @@ export const CARDS = {
  },
  "widget": {
   "act": "buy",
-  "en": "Weather, smoke or events box",
+  "en": "Weather, air quality or events box for your site",
   "opts": [
    {
     "id": "widget",
@@ -669,7 +669,7 @@ export const CARDS = {
  },
  "directory": {
   "act": "buy",
-  "en": "Directory of your field",
+  "en": "Directory website for your trade or region",
   "opts": [
    {
     "id": "directory",
@@ -795,7 +795,7 @@ export const CARDS = {
  },
  "stay-rent": {
   "act": "buy",
-  "en": "A place to rent, found",
+  "en": "A place to rent, found for you",
   "opts": [
    {
     "id": "stay-rent",
@@ -809,7 +809,7 @@ export const CARDS = {
  },
  "npa-homes": {
   "act": "buy",
-  "en": "Bank-sale homes found",
+  "en": "Homes that banks are selling, found for you",
   "opts": [
    {
     "id": "npa-homes",
@@ -845,7 +845,7 @@ export const CARDS = {
  },
  "agency-sheet": {
   "act": "buy",
-  "en": "Listing sheet for an agency",
+  "en": "Listing sheet for a property agency",
   "opts": [
    {
     "id": "agency-sheet",
@@ -859,7 +859,7 @@ export const CARDS = {
  },
  "letting": {
   "act": "ask",
-  "en": "Your place rented out"
+  "en": "Your home or condo rented out"
  },
  "hotelpage": {
   "act": "open",
@@ -871,7 +871,7 @@ export const CARDS = {
  },
  "ai-assistant": {
   "act": "buy",
-  "en": "AI assistant under your name",
+  "en": "AI assistant with your name on it",
   "opts": [
    {
     "id": "ai-whitelabel",
@@ -893,7 +893,7 @@ export const CARDS = {
  },
  "ai-line": {
   "act": "buy",
-  "en": "One LINE for many shops",
+  "en": "One LINE account for many shops",
   "opts": [
    {
     "id": "ai-line",
@@ -949,7 +949,7 @@ export const CARDS = {
  },
  "crawl-pay": {
   "act": "buy",
-  "en": "Charge AI crawlers",
+  "en": "Charge AI bots for reading your site",
   "opts": [
    {
     "id": "crawl-pay",
@@ -992,15 +992,15 @@ export const CARDS = {
  },
  "crew": {
   "act": "book",
-  "en": "A crew day on a hard problem"
+  "en": "Our team for one day, on a hard problem"
  },
  "demo-bot": {
   "act": "ask",
-  "en": "A bot that gives your demo on Zoom"
+  "en": "A bot that presents your software on Zoom"
  },
  "move": {
   "act": "buy",
-  "en": "Moving house abroad",
+  "en": "Moving house into or out of Thailand",
   "opts": [
    {
     "id": "move-house",
@@ -1044,7 +1044,7 @@ export const CARDS = {
  },
  "awards": {
   "act": "buy",
-  "en": "Award entry",
+  "en": "Cyber-security award application",
   "opts": [
    {
     "id": "sec-awards",
@@ -1058,7 +1058,7 @@ export const CARDS = {
  },
  "decks": {
   "act": "buy",
-  "en": "Pitch slides",
+  "en": "Presentation slides",
   "opts": [
    {
     "id": "media-decks",
@@ -1294,7 +1294,7 @@ export const CARDS = {
  },
  "grants": {
   "act": "buy",
-  "en": "Grants and major gifts",
+  "en": "Grants and large donations",
   "opts": [
    {
     "id": "grant",
@@ -1332,7 +1332,7 @@ export const CARDS = {
  },
  "line-memory": {
   "act": "buy",
-  "en": "Memory desk for your LINE group",
+  "en": "Chat memory for your LINE group",
   "opts": [
    {
     "id": "line-memory",
@@ -1360,7 +1360,7 @@ export const CARDS = {
  },
  "photo-proof": {
   "act": "buy",
-  "en": "Photo proof from the field",
+  "en": "Photo proof from the project site",
   "opts": [
    {
     "id": "photo-proof",
@@ -1374,7 +1374,7 @@ export const CARDS = {
  },
  "club-desk": {
   "act": "buy",
-  "en": "Admin desk for a club",
+  "en": "Admin help for a club",
   "opts": [
    {
     "id": "club-desk",
@@ -1388,7 +1388,7 @@ export const CARDS = {
  },
  "findable": {
   "act": "buy",
-  "en": "Collection findable online",
+  "en": "Your collection easy to find online",
   "opts": [
    {
     "id": "findable",
@@ -1434,7 +1434,7 @@ export const CARDS = {
  },
  "thai-plan": {
   "act": "buy",
-  "en": "A plan for a hard Thai question",
+  "en": "A written plan for a hard problem in Thailand",
   "opts": [
    {
     "id": "thai-plan",
@@ -1462,7 +1462,7 @@ export const CARDS = {
  },
  "form": {
   "act": "buy",
-  "en": "Thai form filled",
+  "en": "Thai form filled in for you",
   "opts": [
    {
     "id": "form",
@@ -1518,7 +1518,7 @@ export const CARDS = {
  },
  "trades": {
   "act": "buy",
-  "en": "Plumber, electrician, air-con: booked",
+  "en": "Plumber, electrician or air-conditioning worker, booked",
   "opts": [
    {
     "id": "trades",
@@ -1561,7 +1561,7 @@ export const CARDS = {
  },
  "compare": {
   "act": "buy",
-  "en": "Comparison shopping",
+  "en": "Price comparison",
   "opts": [
    {
     "id": "compare",
@@ -1583,7 +1583,7 @@ export const CARDS = {
  },
  "dispute": {
   "act": "buy",
-  "en": "Haggling buddy",
+  "en": "Help with bargaining and disputes",
   "opts": [
    {
     "id": "dispute",
@@ -1611,7 +1611,7 @@ export const CARDS = {
  },
  "homehelp-plan": {
   "act": "open",
-  "en": "Home help: employer plan"
+  "en": "Plan for hiring a cleaner, cook or nanny"
  },
  "post-job": {
   "act": "open",
@@ -1623,7 +1623,7 @@ export const CARDS = {
  },
  "date-pick": {
   "act": "buy",
-  "en": "Auspicious date",
+  "en": "Auspicious (lucky) date",
   "opts": [
    {
     "id": "date-en",
@@ -1646,7 +1646,7 @@ export const CARDS = {
  },
  "name-pick": {
   "act": "buy",
-  "en": "Auspicious name",
+  "en": "Auspicious (lucky) name",
   "opts": [
    {
     "id": "name-pick",
@@ -1668,7 +1668,7 @@ export const CARDS = {
  },
  "pha-yant": {
   "act": "buy",
-  "en": "Pha yant drawn for you",
+  "en": "Pha yant (sacred cloth) drawn for you",
   "opts": [
    {
     "id": "pha-yant",
@@ -1727,7 +1727,7 @@ export const CARDS = {
  },
  "almanac-widget": {
   "act": "buy",
-  "en": "Almanac or fortune calculator for your site",
+  "en": "Calendar or fortune calculator for your website",
   "opts": [
    {
     "id": "almanac-widget",
@@ -1741,7 +1741,7 @@ export const CARDS = {
  },
  "eink-clock": {
   "act": "buy",
-  "en": "Lanna almanac clock",
+  "en": "Lanna calendar clock",
   "opts": [
    {
     "id": "eink-clock",
@@ -1755,7 +1755,7 @@ export const CARDS = {
  },
  "lucky-number": {
   "act": "buy",
-  "en": "Lucky phone number or plate",
+  "en": "Lucky phone number or car license plate",
   "opts": [
    {
     "id": "lucky-number",
@@ -1769,7 +1769,7 @@ export const CARDS = {
  },
  "amulet": {
   "act": "buy",
-  "en": "Amulets",
+  "en": "Thai Buddhist amulets",
   "opts": [
    {
     "id": "amulet-check",
@@ -1816,7 +1816,7 @@ export const CARDS = {
  },
  "sak-yant": {
   "act": "buy",
-  "en": "Sak yant, off the beaten path",
+  "en": "Sak yant (sacred tattoo) in a less-visited place",
   "opts": [
    {
     "id": "sak-yant",
@@ -1834,7 +1834,7 @@ export const CARDS = {
  },
  "german": {
   "act": "buy",
-  "en": "German pages, Swiss spelling",
+  "en": "Web pages in German, Swiss spelling",
   "opts": [
    {
     "id": "german",
@@ -1995,7 +1995,7 @@ export const CARDS = {
  },
  "lang-leaves": {
   "act": "buy",
-  "en": "Lanna palm-leaf manuscript read",
+  "en": "Lanna (northern Thai) palm-leaf manuscript read",
   "opts": [
    {
     "id": "lang-leaves",
@@ -2037,7 +2037,7 @@ export const CARDS = {
  },
  "paybox": {
   "act": "buy",
-  "en": "Take PromptPay payments",
+  "en": "Accept PromptPay payments",
   "opts": [
    {
     "id": "paybox",
@@ -2065,7 +2065,7 @@ export const CARDS = {
  },
  "restaurant-desk": {
   "act": "buy",
-  "en": "Restaurant desk",
+  "en": "Weekly help for your restaurant",
   "opts": [
    {
     "id": "restaurant-desk",
@@ -2131,7 +2131,7 @@ export const CARDS = {
  },
  "fb-care": {
   "act": "buy",
-  "en": "Facebook page care",
+  "en": "Facebook page management",
   "opts": [
    {
     "id": "fb-care",
@@ -2221,7 +2221,7 @@ export const CARDS = {
  },
  "partner": {
   "act": "buy",
-  "en": "Become a shipping partner",
+  "en": "Become a Hongdam shipping partner",
   "opts": [
    {
     "id": "trade-setup",
@@ -2235,11 +2235,11 @@ export const CARDS = {
  },
  "peptides": {
   "act": "ask",
-  "en": "Peptides, brought in"
+  "en": "Peptide imports"
  },
  "pharma": {
   "act": "ask",
-  "en": "Medicines and pharma imports"
+  "en": "Medicine imports"
  },
  "partner-prices": {
   "act": "list",
@@ -2261,7 +2261,7 @@ export const CARDS = {
  },
  "leads": {
   "act": "buy",
-  "en": "Customer list",
+  "en": "List of possible customers",
   "opts": [
    {
     "id": "data-leads",
@@ -2320,7 +2320,7 @@ export const CARDS = {
  },
  "traffic": {
   "act": "buy",
-  "en": "Visitor count: people and bots",
+  "en": "Website visitors: people and bots",
   "opts": [
    {
     "id": "data-traffic",
@@ -2352,7 +2352,7 @@ export const CARDS = {
  },
  "merit-dead": {
   "act": "buy",
-  "en": "Merit for someone who died",
+  "en": "Merit (Buddhist good deeds) for someone who died",
   "opts": [
    {
     "id": "merit-dead",
@@ -2380,7 +2380,7 @@ export const CARDS = {
  },
  "spirit-house": {
   "act": "buy",
-  "en": "Spirit house set up",
+  "en": "Spirit house (small shrine) installed",
   "opts": [
    {
     "id": "spirit-house",
@@ -2394,7 +2394,7 @@ export const CARDS = {
  },
  "merit-you": {
   "act": "buy",
-  "en": "Merit made for you",
+  "en": "Merit (Buddhist good deeds) made for you",
   "opts": [
    {
     "id": "merit-alms",
@@ -2432,7 +2432,7 @@ export const CARDS = {
  },
  "lanna-wedding": {
   "act": "buy",
-  "en": "Lanna wedding ceremony",
+  "en": "Lanna (northern Thai) wedding ceremony",
   "opts": [
    {
     "id": "lanna-wedding",
@@ -2446,7 +2446,7 @@ export const CARDS = {
  },
  "su-khwan": {
   "act": "buy",
-  "en": "Su khwan ceremony",
+  "en": "Su khwan ceremony (spirit blessing)",
   "opts": [
    {
     "id": "su-khwan-arr",
@@ -2460,7 +2460,7 @@ export const CARDS = {
  },
  "lantern": {
   "act": "buy",
-  "en": "Lantern night in Lamphun",
+  "en": "Lantern festival night in Lamphun",
   "opts": [
    {
     "id": "lantern-seat",
@@ -2488,7 +2488,7 @@ export const CARDS = {
  },
  "balloon": {
   "act": "buy",
-  "en": "Balloon or paramotor flight",
+  "en": "Hot-air balloon or paramotor (motor paraglider) flight",
   "opts": [
    {
     "id": "balloon-cr",
@@ -2554,7 +2554,7 @@ export const CARDS = {
  },
  "tour-3d": {
   "act": "buy",
-  "en": "Three days in the north",
+  "en": "Three days in northern Thailand",
   "opts": [
    {
     "id": "tour-3d",
@@ -2598,7 +2598,7 @@ export const CARDS = {
  },
  "honeymoon": {
   "act": "link",
-  "en": "Lanna honeymoon"
+  "en": "Lanna (northern Thai) honeymoon"
  },
  "voice": {
   "act": "buy",
@@ -2616,7 +2616,7 @@ export const CARDS = {
  },
  "calls-out": {
   "act": "buy",
-  "en": "Outbound calling",
+  "en": "Phone calls made for you",
   "opts": [
    {
     "id": "calls-out",
@@ -2630,7 +2630,7 @@ export const CARDS = {
  },
  "typing": {
   "act": "buy",
-  "en": "Paper forms typed up",
+  "en": "Paper forms typed into a spreadsheet",
   "opts": [
    {
     "id": "typing",
@@ -2644,7 +2644,7 @@ export const CARDS = {
  },
  "cs-desk": {
   "act": "buy",
-  "en": "Thai customer service desk",
+  "en": "Customer service in Thai",
   "opts": [
    {
     "id": "cs-desk",
@@ -2738,7 +2738,7 @@ export const CARDS = {
  },
  "tribute": {
   "act": "buy",
-  "en": "Page for a wedding, ordination or memorial",
+  "en": "Web page for a wedding, a monk ordination or a memorial",
   "opts": [
    {
     "id": "tribute",

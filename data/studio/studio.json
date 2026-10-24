@@ -10,41 +10,41 @@
  ],
  "ui": {
   "en": {
-   "title": "Hongdam Studio — vibe code finished, security, AI models, automation · Chiang Rai",
-   "desc": "Hongdam Studio finishes vibe-coded apps, closes security holes, and puts the newest language models, machine learning and workflow automation to work. Notes from the bench, with their sources.",
+   "title": "Hongdam Studio — AI-written apps finished, security, AI models, automation · Chiang Rai",
+   "desc": "Hongdam Studio finishes apps that AI tools wrote, closes security holes, and uses the newest AI language models, machine learning and workflow automation in your business. Notes on our work, with sources.",
    "name": "Hongdam Studio",
    "kicker": "Hongdam Studio · Chiang Rai",
    "nav": {
-    "practices": "Practices",
+    "practices": "Services",
     "notes": "Notes",
-    "work": "Work",
+    "work": "Our work",
     "contact": "Contact"
    },
    "h1": "The last mile.",
-   "lede": "We finish vibe-coded apps, close their security holes, and put the newest language models, machine learning and workflow automation to work.",
+   "lede": "The last mile is the final work on an app: we finish it and publish it. We do this for vibe-coded apps (apps that AI tools wrote). We also close security holes and use the newest AI language models, machine learning and workflow automation in your business.",
    "ctaNotes": "Read the notes",
-   "counts": "{notes} notes since {start} · {repos} public repositories · {pages} pages published",
-   "practicesH": "Practices",
-   "allIn": "All of {cat}",
+   "counts": "{notes} notes since {start} · {repos} public code repositories on GitHub · {pages} web pages published",
+   "practicesH": "Services",
+   "allIn": "See all in {cat}",
    "notesH": "Notes",
-   "notesL": "Models measured, holes found, fixes with their code, sources linked.",
+   "notesL": "We measure AI models, find security holes and publish the fixes with their code and links to sources.",
    "notesLang": "",
    "notesAll": "All notes",
-   "workH": "Work",
-   "workAll": "All work",
-   "whoH": "Who",
-   "who": "Built by Nan Peacock, who publishes as a standing practice — at last count {repos} repositories and {pages}+ pages, most of them things she neither owns nor sells. The range is the point: hand the studio a subject and a website exists.",
+   "workH": "Our work",
+   "workAll": "All our work",
+   "whoH": "Who built the studio",
+   "who": "Built by Nan Peacock, who runs Hongdam and publishes as a habit: {repos} code repositories and {pages}+ web pages in total, most of them things she neither owns nor sells. The range of topics is the point: give the studio a subject and a website exists.",
    "contactH": "Contact",
-   "contactL": "Write in any language: LINE, email or the form.",
-   "minRead": "{n} min read",
+   "contactL": "Write to us in any language: LINE (a chat app), email or the contact form.",
+   "minRead": "{n} minutes to read",
    "beatAll": "All",
    "start": "24 October 2026",
-   "more": "{n} more",
-   "band": "AI-written code finished and published, security holes closed, AI models and automation put to work. Notes from the bench."
+   "more": "Show {n} more",
+   "band": "We finish and publish apps that AI tools wrote, close security holes, and use AI models and automation in your business. We write notes on our work."
   },
   "th": {
    "title": "หงส์ดำ สตูดิโอ — ปิดงานโค้ด ความปลอดภัย โมเดล AI ระบบอัตโนมัติ · เชียงราย",
-   "desc": "หงส์ดำ สตูดิโอ ทำแอปที่สร้างด้วย AI ให้เสร็จ ปิดช่องโหว่ความปลอดภัย และนำโมเดลภาษาใหม่ล่าสุด แมชชีนเลิร์นนิง และระบบงานอัตโนมัติมาใช้ บันทึกจากโต๊ะทำงาน พร้อมแหล่งที่มา",
+   "desc": "หงส์ดำ สตูดิโอ ทำแอปที่สร้างด้วย AI ให้เสร็จ ปิดช่องโหว่ความปลอดภัย และนำโมเดลภาษาใหม่ล่าสุด แมชชีนเลิร์นนิง และระบบงานอัตโนมัติมาใช้ บันทึกเกี่ยวกับงานของเรา พร้อมแหล่งที่มา",
    "name": "หงส์ดำ สตูดิโอ",
    "kicker": "หงส์ดำ สตูดิโอ · เชียงราย",
    "nav": {
@@ -65,15 +65,15 @@
    "notesAll": "บันทึกทั้งหมด",
    "workH": "ผลงาน",
    "workAll": "ผลงานทั้งหมด",
-   "whoH": "ใคร",
-   "who": "สร้างโดย แนน พีค็อก (Nan Peacock) ผู้เผยแพร่งานเป็นกิจวัตร นับล่าสุดได้ {repos} คลังโค้ด และกว่า {pages} หน้า ส่วนใหญ่เป็นสิ่งที่เธอไม่ได้เป็นเจ้าของและไม่ได้ขาย ความหลากหลายคือประเด็น: ให้หัวข้อกับสตูดิโอ แล้วเว็บไซต์ก็เกิดขึ้น",
+   "whoH": "ผู้สร้างสตูดิโอ",
+   "who": "สร้างโดย แนน พีค็อก (Nan Peacock) ผู้ดูแลหงส์ดำและเผยแพร่งานเป็นกิจวัตร นับล่าสุดได้ {repos} คลังโค้ด และกว่า {pages} หน้า ส่วนใหญ่เป็นสิ่งที่เธอไม่ได้เป็นเจ้าของและไม่ได้ขาย ความหลากหลายคือประเด็น: ให้หัวข้อกับสตูดิโอ แล้วเว็บไซต์ก็เกิดขึ้น",
    "contactH": "ติดต่อ",
    "contactL": "เขียนมาได้ทุกภาษา: ไลน์ อีเมล หรือแบบฟอร์ม",
    "minRead": "อ่าน {n} นาที",
    "beatAll": "ทั้งหมด",
    "start": "24 ตุลาคม 2569",
    "more": "อีก {n} รายการ",
-   "band": "ทำโค้ดที่สร้างด้วย AI ให้เสร็จและเผยแพร่ ปิดช่องโหว่ความปลอดภัย นำโมเดล AI และระบบอัตโนมัติมาใช้ พร้อมบันทึกจากโต๊ะทำงาน"
+   "band": "ทำโค้ดที่สร้างด้วย AI ให้เสร็จและเผยแพร่ ปิดช่องโหว่ความปลอดภัย นำโมเดล AI และระบบอัตโนมัติมาใช้ พร้อมบันทึกเกี่ยวกับงานของเรา"
   },
   "my": {
    "title": "Hongdam Studio — AI ဖြင့်ရေးထားသော code ပြီးအောင်၊ လုံခြုံရေး၊ AI မော်ဒယ်များ၊ အလိုအလျောက်စနစ် · ချင်းရိုင်",
@@ -98,10 +98,10 @@
    "notesAll": "မှတ်စုအားလုံး",
    "workH": "လက်ရာများ",
    "workAll": "လက်ရာအားလုံး",
-   "whoH": "ဘယ်သူ",
-   "who": "Nan Peacock မှ တည်ဆောက်သည်။ သူမသည် ထုတ်ဝေခြင်းကို အမြဲတမ်း အလေ့အကျင့်တစ်ခုအဖြစ် ပြုလုပ်သည် — နောက်ဆုံးရေတွက်ချက်အရ repository {repos} ခုနှင့် စာမျက်နှာ {pages} ကျော်၊ အများစုမှာ သူမ မပိုင်ဆိုင်၊ မရောင်းချသော အရာများ ဖြစ်သည်။ အဓိကမှာ အကျယ်အဝန်း ဖြစ်သည်- စတူဒီယိုကို ခေါင်းစဉ်တစ်ခု ပေးလိုက်လျှင် ဝက်ဘ်ဆိုက်တစ်ခု ရှိလာသည်။",
+   "whoH": "စတူဒီယို တည်ဆောက်သူ",
+   "who": "Hongdam ကို ဦးစီးသော Nan Peacock မှ တည်ဆောက်သည်။ သူမသည် ထုတ်ဝေခြင်းကို ပုံမှန် အလေ့အကျင့်တစ်ခုအဖြစ် ပြုလုပ်သည် — နောက်ဆုံးရေတွက်ချက်အရ repository {repos} ခုနှင့် စာမျက်နှာ {pages} ကျော်၊ အများစုမှာ သူမ မပိုင်ဆိုင်၊ မရောင်းချသော အရာများ ဖြစ်သည်။ အဓိကမှာ အကျယ်အဝန်း ဖြစ်သည်- စတူဒီယိုကို ခေါင်းစဉ်တစ်ခု ပေးလိုက်လျှင် ဝက်ဘ်ဆိုက်တစ်ခု ရှိလာသည်။",
    "contactH": "ဆက်သွယ်ရန်",
-   "contactL": "မည်သည့်ဘာသာစကားဖြင့်မဆို ရေးပါ- LINE၊ အီးမေးလ် သို့မဟုတ် ဖောင်။",
+   "contactL": "မည်သည့်ဘာသာစကားဖြင့်မဆို ရေးပါ- LINE (ချတ်အက်ပ်)၊ အီးမေးလ် သို့မဟုတ် ဖောင်။",
    "minRead": "{n} မိနစ် ဖတ်ရန်",
    "beatAll": "အားလုံး",
    "start": "၂၀၂၆ အောက်တိုဘာ ၂၄",
@@ -131,10 +131,10 @@
    "notesAll": "全部笔记",
    "workH": "作品",
    "workAll": "全部作品",
-   "whoH": "是谁",
-   "who": "由 Nan Peacock 打造。她把发布当作日常功课——最近一次统计，{repos} 个代码库、{pages} 多个页面，大多是她既不拥有也不出售的东西。重点在于广度：给工作室一个题目，就有一个网站。",
+   "whoH": "工作室创建者",
+   "who": "由负责运营 Hongdam 的 Nan Peacock 打造。她把发布当作日常功课——最近一次统计，{repos} 个代码库、{pages} 多个页面，大多是她既不拥有也不出售的东西。重点在于广度：给工作室一个题目，就有一个网站。",
    "contactH": "联系",
-   "contactL": "用任何语言写给我们：LINE、电子邮件或表单。",
+   "contactL": "用任何语言写给我们：LINE（聊天应用）、电子邮件或表单。",
    "minRead": "阅读 {n} 分钟",
    "beatAll": "全部",
    "start": "2026年10月24日",
@@ -143,7 +143,7 @@
   },
   "de": {
    "title": "Hongdam Studio — KI-Code fertigstellen, Sicherheit, KI-Modelle, Automatisierung · Chiang Rai",
-   "desc": "Hongdam Studio stellt mit KI geschriebene Apps fertig, schliesst Sicherheitslücken und setzt die neuesten Sprachmodelle, maschinelles Lernen und Workflow-Automatisierung ein. Notizen aus der Werkstatt, mit Quellen.",
+   "desc": "Hongdam Studio stellt mit KI geschriebene Apps fertig, schliesst Sicherheitslücken und setzt die neuesten Sprachmodelle, maschinelles Lernen und Workflow-Automatisierung ein. Notizen zu unserer Arbeit, mit Quellen.",
    "name": "Hongdam Studio",
    "kicker": "Hongdam Studio · Chiang Rai",
    "nav": {
@@ -164,15 +164,15 @@
    "notesAll": "Alle Notizen",
    "workH": "Arbeiten",
    "workAll": "Alle Arbeiten",
-   "whoH": "Wer",
-   "who": "Gebaut von Nan Peacock, die Veröffentlichen als ständige Praxis betreibt — zuletzt gezählt {repos} Repositories und über {pages} Seiten, die meisten davon Dinge, die sie weder besitzt noch verkauft. Die Bandbreite ist der Punkt: Geben Sie dem Studio ein Thema, und eine Website entsteht.",
+   "whoH": "Wer das Studio gebaut hat",
+   "who": "Gebaut von Nan Peacock, die Hongdam leitet und Veröffentlichen als ständige Praxis betreibt — zuletzt gezählt {repos} Repositories und über {pages} Seiten, die meisten davon Dinge, die sie weder besitzt noch verkauft. Die Bandbreite ist der Punkt: Geben Sie dem Studio ein Thema, und eine Website entsteht.",
    "contactH": "Kontakt",
-   "contactL": "Schreiben Sie in jeder Sprache: LINE, E-Mail oder das Formular.",
+   "contactL": "Schreiben Sie in jeder Sprache: LINE (eine Chat-App), E-Mail oder das Kontaktformular.",
    "minRead": "{n} Min. Lesezeit",
    "beatAll": "Alle",
    "start": "24. Oktober 2026",
    "more": "{n} weitere",
-   "band": "KI-Code fertiggestellt und veröffentlicht, Sicherheitslücken geschlossen, KI-Modelle und Automatisierung im Einsatz. Notizen aus der Werkstatt."
+   "band": "KI-Code fertiggestellt und veröffentlicht, Sicherheitslücken geschlossen, KI-Modelle und Automatisierung im Einsatz. Notizen zu unserer Arbeit."
   }
  },
  "practices": [
@@ -193,7 +193,7 @@
     "de": "Letzte Meile"
    },
    "l": {
-    "en": "Apps built with Lovable, Bolt, Replit or Cursor: read, fixed, tested and published on your own accounts.",
+    "en": "The final work on an app that an AI tool wrote (Lovable, Bolt, Replit or Cursor): we read it, fix it, test it and publish it on your own accounts.",
     "th": "แอปที่สร้างด้วย Lovable, Bolt, Replit หรือ Cursor: อ่าน แก้ ทดสอบ และเผยแพร่บนบัญชีของคุณเอง",
     "my": "Lovable, Bolt, Replit သို့မဟုတ် Cursor ဖြင့် တည်ဆောက်ထားသော app များ- ဖတ်၊ ပြင်၊ စမ်းသပ်ပြီး သင့်ကိုယ်ပိုင်အကောင့်များပေါ်တွင် ထုတ်ဝေပေးသည်။",
     "zh": "用 Lovable、Bolt、Replit 或 Cursor 做的应用：通读、修复、测试，并发布到你自己的账户上。",
@@ -226,7 +226,7 @@
     "de": "Sicherheit"
    },
    "l": {
-    "en": "Chatbots attacked and fixed, PHP and WordPress patched, hacked sites cleaned, your domain's mail records set, devices read for evidence.",
+    "en": "We attack chatbots to find weak points, then fix them. We update PHP and WordPress against security holes, clean hacked sites, fix your domain's email records against fake emails, and examine computers and phones for evidence.",
     "th": "ทดสอบโจมตีแชตบอตแล้วแก้ แพตช์ PHP และ WordPress ล้างเว็บที่ถูกแฮ็ก ตั้งค่าระเบียนอีเมลของโดเมนคุณ และตรวจอุปกรณ์เพื่อเก็บหลักฐาน",
     "my": "chatbot များကို တိုက်ခိုက်စမ်းသပ်ပြီး ပြင်ဆင်ခြင်း၊ PHP နှင့် WordPress ကို patch လုပ်ခြင်း၊ hack ခံထားရသော ဝက်ဘ်ဆိုက်များကို သန့်ရှင်းခြင်း၊ သင့် domain ၏ mail record များ သတ်မှတ်ခြင်း၊ အထောက်အထားအတွက် စက်ပစ္စည်းများကို စစ်ဆေးခြင်း။",
     "zh": "对聊天机器人做攻击测试并修复，给 PHP 和 WordPress 打补丁，清理被黑网站，配置你域名的邮件记录，为取证读取设备。",
@@ -251,14 +251,14 @@
     "chat"
    ],
    "n": {
-    "en": "Models",
+    "en": "AI models",
     "th": "โมเดล AI",
     "my": "AI မော်ဒယ်များ",
-    "zh": "模型",
-    "de": "Modelle"
+    "zh": "AI 模型",
+    "de": "KI-Modelle"
    },
    "l": {
-    "en": "Language models picked by measurement: assistants that answer from your pages, an AI website builder on your own computer, big files cleaned by AI, prices that follow demand.",
+    "en": "We choose AI language models by testing them. For example: assistants that answer from your web pages, an AI website builder on your own computer, big files cleaned by AI, and prices that follow demand.",
     "th": "เลือกโมเดลภาษาด้วยการวัดผล: ผู้ช่วย AI ที่ตอบจากหน้าเว็บของคุณ เครื่องสร้างเว็บด้วย AI บนคอมพิวเตอร์ของคุณเอง ไฟล์ใหญ่ที่ AI จัดให้เรียบร้อย และราคาที่ขยับตามความต้องการ",
     "my": "တိုင်းတာမှုဖြင့် ရွေးချယ်ထားသော ဘာသာစကားမော်ဒယ်များ- သင့်စာမျက်နှာများမှ ဖြေကြားသော AI လက်ထောက်၊ သင့်ကိုယ်ပိုင်ကွန်ပျူတာပေါ်ရှိ AI ဝက်ဘ်ဆိုက်တည်ဆောက်သူ၊ AI ဖြင့် သန့်စင်ထားသော ဖိုင်ကြီးများ၊ ဝယ်လိုအားအလိုက် ပြောင်းလဲသော ဈေးနှုန်းများ။",
     "zh": "靠实测挑选语言模型：根据你的网页作答的 AI 助手、装在你自己电脑上的 AI 建站工具、用 AI 清理的大文件、随需求浮动的价格。",
@@ -290,7 +290,7 @@
     "de": "Automatisierung"
    },
    "l": {
-    "en": "Jobs that run themselves: workflows in n8n, Make, Zapier or code; bots that find work or news; collectors that read the web into a table.",
+    "en": "Jobs that run by themselves: workflows (chains of automatic steps) in n8n, Make, Zapier or code; bots (programs) that find work or news; collectors that read websites into a table.",
     "th": "งานที่เดินเอง: เวิร์กโฟลว์ใน n8n, Make, Zapier หรือโค้ด บอตที่หางานหรือข่าว และตัวเก็บข้อมูลที่อ่านเว็บลงตาราง",
     "my": "ကိုယ်တိုင်လည်ပတ်သော အလုပ်များ- n8n, Make, Zapier သို့မဟုတ် code ဖြင့် workflow များ၊ အလုပ် သို့မဟုတ် သတင်း ရှာပေးသော bot များ၊ ဝက်ဘ်ကို ဇယားထဲသို့ ဖတ်ထည့်ပေးသော စုဆောင်းသူများ။",
     "zh": "自己跑的活：用 n8n、Make、Zapier 或代码搭的工作流；帮你找活或找新闻的机器人；把网页读进表格的采集器。",
@@ -324,7 +324,7 @@
     "de": "KI unter Ihrer Marke"
    },
    "l": {
-    "en": "Branded chat on Cloudflare Workers AI: seats by invite link, files, web search, answers from a directory of places.",
+    "en": "AI chat under your own brand, on Cloudflare Workers AI: people join by invite link, share files, search the web, and get answers from a directory of places.",
     "th": "แชต AI ใต้แบรนด์ของคุณ บน Cloudflare Workers AI: ที่นั่งผ่านลิงก์เชิญ ไฟล์ ค้นเว็บ และคำตอบจากสารบบสถานที่",
     "my": "Cloudflare Workers AI ပေါ်ရှိ တံဆိပ်ပါ chat- ဖိတ်ကြားလင့်ခ်ဖြင့် နေရာများ၊ ဖိုင်များ၊ ဝက်ဘ်ရှာဖွေမှု၊ နေရာလမ်းညွှန်မှ အဖြေများ။",
     "zh": "基于 Cloudflare Workers AI 的贴牌聊天：邀请链接开席位、文件、网页搜索、从地点名录里作答。",
@@ -347,7 +347,7 @@
     "de": "Mot Dang"
    },
    "l": {
-    "en": "A directory of Chiang Mai and Chiang Rai: {motdang} pages, maps and search in Thai and English, built and published by a server.",
+    "en": "A directory of places in Chiang Mai and Chiang Rai, Thailand: {motdang} pages, maps and search in Thai and English, built and published automatically by a server.",
     "th": "สารบบเชียงใหม่และเชียงราย: {motdang} หน้า แผนที่ และการค้นหาภาษาไทยและอังกฤษ สร้างและเผยแพร่โดยเซิร์ฟเวอร์",
     "my": "ချင်းမိုင်နှင့် ချင်းရိုင် လမ်းညွှန်- စာမျက်နှာ {motdang}၊ မြေပုံများနှင့် ထိုင်း၊ အင်္ဂလိပ် ရှာဖွေမှု၊ server တစ်ခုက တည်ဆောက်ထုတ်ဝေသည်။",
     "zh": "清迈和清莱的名录：{motdang} 个页面，泰英双语地图和搜索，由服务器构建并发布。",
@@ -370,7 +370,7 @@
     "de": "Chatbot-Angriffstest"
    },
    "l": {
-    "en": "Paste a bot's instructions, pick probe packs, read the results. Free to use.",
+    "en": "Paste your chatbot's instructions, choose sets of test attacks, and read the results. Free to use.",
     "th": "วางคำสั่งของบอต เลือกชุดทดสอบ แล้วอ่านผล ใช้ได้ฟรี",
     "my": "bot ၏ ညွှန်ကြားချက်များကို ထည့်ပါ၊ စမ်းသပ်အစုံကို ရွေးပါ၊ ရလဒ်ကို ဖတ်ပါ။ အခမဲ့။",
     "zh": "粘贴机器人的指令，挑选探测包，读结果。免费。",
@@ -386,18 +386,18 @@
     "lock"
    ],
    "n": {
-    "en": "PHP patch",
+    "en": "PHP security fix",
     "th": "แพตช์ PHP",
     "my": "PHP patch",
     "zh": "PHP 补丁",
     "de": "PHP-Patch"
    },
    "l": {
-    "en": "PHP and WordPress sites patched against PHP2Shell, on your server or your host.",
-    "th": "แพตช์เว็บ PHP และ WordPress ให้พ้นจาก PHP2Shell บนเซิร์ฟเวอร์หรือโฮสต์ของคุณ",
-    "my": "PHP နှင့် WordPress ဆိုက်များကို PHP2Shell မှ ကာကွယ်ရန် သင့် server သို့မဟုတ် host ပေါ်တွင် patch လုပ်ပေးသည်။",
-    "zh": "在你的服务器或主机上，为 PHP 和 WordPress 网站打上针对 PHP2Shell 的补丁。",
-    "de": "PHP- und WordPress-Seiten gegen PHP2Shell gepatcht, auf Ihrem Server oder bei Ihrem Hoster."
+    "en": "We fix PHP and WordPress sites against PHP2Shell (a security hole in PHP, the language many websites run on), on your server or at your web host.",
+    "th": "แพตช์เว็บ PHP และ WordPress ให้พ้นจาก PHP2Shell (ช่องโหว่ใน PHP) บนเซิร์ฟเวอร์หรือโฮสต์ของคุณ",
+    "my": "PHP နှင့် WordPress ဆိုက်များကို PHP2Shell (PHP ၏ လုံခြုံရေးအပေါက်) မှ ကာကွယ်ရန် သင့် server သို့မဟုတ် host ပေါ်တွင် patch လုပ်ပေးသည်။",
+    "zh": "在你的服务器或主机上，为 PHP 和 WordPress 网站打上针对 PHP2Shell（PHP 的一个安全漏洞）的补丁。",
+    "de": "PHP- und WordPress-Seiten gegen PHP2Shell (eine Sicherheitslücke in PHP) gepatcht, auf Ihrem Server oder bei Ihrem Hoster."
    }
   }
  ],
@@ -411,7 +411,7 @@
    "th": "ความปลอดภัย"
   },
   "models": {
-   "en": "Models",
+   "en": "AI models",
    "th": "โมเดล AI"
   },
   "automation": {
@@ -419,7 +419,7 @@
    "th": "ระบบอัตโนมัติ"
   },
   "week": {
-   "en": "The week",
+   "en": "Weekly summary",
    "th": "สรุปสัปดาห์"
   }
  },

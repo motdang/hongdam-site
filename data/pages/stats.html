@@ -1,13 +1,13 @@
 <main>
 {{lead}}
-<p class="lede">What people did on the pages. Robots are left out.</p>
+<p class="lede">What people did on hongdam.net. Visits by robots are not counted.</p>
 <form id="kf" class="box panel" hidden>
 <label>Key (the team key, TASKS_ADMIN)<input id="key" type="password" autocomplete="current-password" required></label>
-<button class="btn" type="submit">Show</button>
+<button class="btn" type="submit">Show the numbers</button>
 <p id="kmsg" role="status"></p>
 </form>
 <div id="out" hidden>
-<div class="days" role="group" aria-label="Days"><button data-d="1">Today</button><button data-d="7">7 days</button><button data-d="30">30 days</button><button data-d="90">90 days</button><button id="forget" type="button">Forget key</button></div>
+<div class="days" role="group" aria-label="Days"><button data-d="1">Today</button><button data-d="7">7 days</button><button data-d="30">30 days</button><button data-d="90">90 days</button><button id="forget" type="button">Remove saved key</button></div>
 <div id="view" aria-live="polite"></div>
 </div>
 <noscript><p>This page needs JavaScript.</p></noscript>
@@ -40,20 +40,20 @@
     var n = function (v, one, many) { return '<b>' + fmt(v) + '</b>' + (+v === 1 ? one : many) }
     var h = '<div class="big"><div>' + n(f.visits, 'visit', 'visits') + '</div><div>' + n(f.tapped, 'visit tapped Buy, Book, Ask, LINE or mail', 'visits tapped Buy, Book, Ask, LINE or mail') + '</div><div>' + n(booked, 'order', 'orders') + '</div><div><b>' + money(paid) + '</b>paid in baht</div></div>'
     h += '<h2>By day</h2>' + table(d.byDay, [['day', 'Day'], ['visits', 'Visits'], ['views', 'Pages seen']])
-    h += '<h2>Orders</h2>' + table(d.orders.states, [['state', 'State'], ['n', 'Orders'], ['due', 'Due', function (v, r) { return money(v, r.cur) }], ['total', 'Whole jobs', function (v, r) { return money(v, r.cur) }]], 'No orders in these days.')
+    h += '<h2>Orders</h2>' + table(d.orders.states, [['state', 'State'], ['n', 'Orders'], ['due', 'Due', function (v, r) { return money(v, r.cur) }], ['total', 'Whole jobs', function (v, r) { return money(v, r.cur) }]], 'No orders in this period.')
     if (d.orders.recent && d.orders.recent.length) h += table(d.orders.recent, [['ref', 'Order'], ['due', 'Due', function (v, r) { return money(v, r.cur) }], ['card', 'Card', function (v) { return v }], ['state', 'State', function (v) { return v }], ['created_at', 'When', function (v) { return String(v).replace('T', ' ').slice(0, 16) }]])
-    h += '<h2>Buttons pressed</h2><p class="note">buy: and ask: are the card; go: is a card that opens another page.</p>' + table(d.taps, [['d', 'Button'], ['times', 'Times'], ['visits', 'Visits']])
+    h += '<h2>Buttons pressed</h2><p class="note">Names that start with buy: or ask: are service cards. Names that start with go: are cards that open another page.</p>' + table(d.taps, [['d', 'Button'], ['times', 'Times'], ['visits', 'Visits']])
     h += '<h2>Steps on the Buy and Ask pages</h2>' + table(d.steps, [['k', 'Step'], ['times', 'Times'], ['visits', 'Visits']])
     h += '<h2>Searches that found nothing</h2><p class="note">Things people looked for that no card answers.</p>' + table(d.empty, [['d', 'Words'], ['times', 'Times']])
     h += '<h2>All searches</h2>' + table(d.searches, [['d', 'Words'], ['times', 'Times'], ['found', 'Cards found']])
     h += '<h2>Pages</h2>' + table(d.pages, [['p', 'Page'], ['views', 'Seen'], ['visits', 'Visits']])
     h += '<h2>LINE taps, by page</h2>' + table(d.lines, [['p', 'Page'], ['times', 'Times']])
     h += '<h2>Languages</h2>' + table(d.langs, [['l', 'Page language'], ['views', 'Pages seen']]) + table(d.langSwitch, [['d', 'Switched to'], ['times', 'Times']], 'Nobody switched language.')
-    h += '<h2>Where from</h2>' + table(d.refs, [['r', 'Came from'], ['visits', 'Visits']], 'Typed in, or from an app that hides it.')
+    h += '<h2>Where visitors came from</h2>' + table(d.refs, [['r', 'Came from'], ['visits', 'Visits']], 'Typed in, or from an app that hides it.')
     h += '<h2>Countries</h2>' + table(d.countries, [['c', 'Country'], ['visits', 'Visits']])
-    h += '<h2>Screens</h2>' + table(d.widths, [['kind', 'Screen'], ['visits', 'Visits']])
-    h += '<h2>Links out</h2>' + table(d.outs, [['d', 'To'], ['times', 'Times']])
-    h += '<h2>Eggs found</h2>' + table(d.eggs, [['d', 'Page'], ['times', 'Times']], 'No eggs found yet.')
+    h += '<h2>Screen sizes</h2>' + table(d.widths, [['kind', 'Screen size'], ['visits', 'Visits']])
+    h += '<h2>Links to other sites</h2>' + table(d.outs, [['d', 'To'], ['times', 'Times']])
+    h += '<h2>Easter eggs found (hidden surprises)</h2>' + table(d.eggs, [['d', 'Page'], ['times', 'Times']], 'No eggs found yet.')
     $('#view').innerHTML = h
   }
 
@@ -61,7 +61,7 @@
     var key = store('hd-stats-key')
     if (!key) { $('#kf').hidden = false; $('#out').hidden = true; return }
     document.querySelectorAll('[data-d]').forEach(function (b) { b.setAttribute('aria-pressed', String(+b.dataset.d === days)) })
-    $('#view').innerHTML = '<p>Reading…</p>'
+    $('#view').innerHTML = '<p>Loading…</p>'
     fetch('/api/hit/stats?days=' + days, { headers: { authorization: 'Bearer ' + key } }).then(function (r) {
       if (r.status === 401) { store('hd-stats-key', null); $('#kmsg').textContent = 'That key did not work.'; $('#kf').hidden = false; $('#out').hidden = true; return null }
       return r.json()
