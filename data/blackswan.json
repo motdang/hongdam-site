@@ -1,0 +1,920 @@
+{
+ "about": "Black Swan Event? Hongdam Studio is all ears (her ask 2026-10-24): toys about big surprises and a place to save a prediction and share it, at hongdam.net/studio/black-swan/ in five languages. tools/build_blackswan.py builds the pages from these words; docs/assets/blackswan.js runs the toys, the form and the list; functions/api/swan/ keeps the predictions (D1 table swan, migrations/0012_swan.sql); functions/swan/[id].js is one prediction's page and link card. odds: 1 in 2, 10, 100, 1,000, 10,000. size: my life, my town, my country, the world (the glyph beside each). years: the check-date chips. quiz: past events to vote on; note is a sourced line shown after a vote.",
+ "langs": [
+  "en",
+  "th",
+  "my",
+  "zh",
+  "de"
+ ],
+ "odds": [
+  2,
+  10,
+  100,
+  1000,
+  10000
+ ],
+ "size_glyphs": [
+  "smile",
+  "home",
+  "flag",
+  "earth"
+ ],
+ "years": [
+  1,
+  2,
+  5,
+  10,
+  25
+ ],
+ "quiz": [
+  {
+   "q": "baht97",
+   "y": "1997",
+   "g": "coin"
+  },
+  {
+   "q": "tsunami04",
+   "y": "2004",
+   "g": "ocean-wave"
+  },
+  {
+   "q": "banks08",
+   "y": "2008",
+   "g": "dominoes"
+  },
+  {
+   "q": "flood11",
+   "y": "2011",
+   "g": "umbrella"
+  },
+  {
+   "q": "covid20",
+   "y": "2020",
+   "g": "sneeze",
+   "src": "https://www.bloomberg.com/news/articles/2020-03-30/taleb-says-portfolios-to-blow-up-without-tail-hedges"
+  },
+  {
+   "q": "chatgpt22",
+   "y": "2022",
+   "g": "robot"
+  },
+  {
+   "q": "internet",
+   "y": "1990s",
+   "g": "wifi"
+  }
+ ],
+ "ui": {
+  "en": {
+   "title": "Black Swan Event? Hongdam Studio is all ears",
+   "desc": "Toys about big surprises, and a place to save your prediction and share it. A black swan is a big surprise: almost nobody expects it, and it changes a lot.",
+   "kicker": "Hongdam Studio · Chiang Rai",
+   "h1": "Black Swan Event?",
+   "sub": "Hongdam Studio is all ears",
+   "gloss": [
+    [
+     "black swan",
+     "A big surprise. Almost nobody expects it. It changes a lot."
+    ],
+    [
+     "all ears",
+     "Listening. We want to hear your prediction."
+    ],
+    [
+     "หงส์ดำ",
+     "Hongdam in Thai: หงส์ดำ (hong dam) means black swan."
+    ]
+   ],
+   "predict": "Predict",
+   "play": "Play",
+   "count": "{n} predictions saved",
+   "toysH": "Toys",
+   "t1": "All swans are white?",
+   "t1l": "Tap the pond to look. Hold to look fast.",
+   "t1n": "white swans",
+   "t1btn": "Look",
+   "t1end": "A black swan! So: no.",
+   "t1hist": "1697 · Western Australia: Dutch sailors see black swans.",
+   "t1why": "Many white swans do not prove “all swans are white”. One black swan proves it wrong.",
+   "again": "Again",
+   "t2": "Swan meter",
+   "t2l": "Black swan = unlikely + huge.",
+   "likely": "How likely?",
+   "big": "How big?",
+   "res": [
+    "Normal",
+    "Surprise, small",
+    "Big, expected",
+    "Black swan!"
+   ],
+   "t2btn": "Predict this",
+   "t3": "100 days",
+   "t3l": "Most days are small. One day is huge.",
+   "t3btn": "Next day",
+   "t3hold": "Hold to run.",
+   "t3n": "calm days",
+   "t3end": "Day {n}: a black swan.",
+   "t4": "Black swan or not?",
+   "t4l": "Vote. See what everyone says.",
+   "yesSwan": "Black swan",
+   "notSwan": "Not",
+   "t4res": "{p}% say black swan",
+   "votes": "votes: {n}",
+   "next": "Next",
+   "quiz": {
+    "baht97": "Thailand: the baht falls. A money crisis spreads in Asia.",
+    "tsunami04": "Indian Ocean: a tsunami hits 14 countries.",
+    "banks08": "USA: big banks fall. A money crisis spreads in the world.",
+    "flood11": "Thailand: floods for months. Factories under water.",
+    "covid20": "The world: COVID-19.",
+    "chatgpt22": "ChatGPT: a chatbot anyone can use.",
+    "internet": "The internet comes into homes."
+   },
+   "notes": {
+    "covid20": "Nassim Taleb, who named the idea, said no: “a white swan” (expected)."
+   },
+   "formH": "Your prediction",
+   "formL": "prediction = what you think will happen.",
+   "what": "I predict…",
+   "examples": [
+    "Snow falls in Chiang Rai",
+    "Thailand wins the football World Cup",
+    "A durian with no smell"
+   ],
+   "when": "When to check",
+   "year1": "1 year",
+   "yearN": "{n} years",
+   "whenL": "After this date, people vote: did it happen?",
+   "name": "Your name (you can leave it empty)",
+   "save": "Save and share",
+   "saved": "Saved. Share it:",
+   "held": "Saved. It shows in the list after a check.",
+   "pic": "Save picture",
+   "copy": "Copy link",
+   "copied": "Copied",
+   "open": "Open",
+   "errShort": "Too short. Write a few more words.",
+   "errLink": "No links, please.",
+   "errLimit": "Too many today. Try again tomorrow.",
+   "errAny": "Something went wrong. Try again.",
+   "pondH": "Predictions",
+   "tabs": {
+    "new": "New",
+    "top": "Top",
+    "soon": "Soon",
+    "mine": "Mine"
+   },
+   "mineL": "Saved in this browser.",
+   "will": "Will it happen?",
+   "did": "Did it happen?",
+   "yes": "Yes",
+   "no": "No",
+   "check": "check {d}",
+   "none": "None yet. Be the first.",
+   "more": "More",
+   "report": "Report",
+   "reportQ": "Report this prediction?",
+   "reported": "Thanks.",
+   "del": "Delete",
+   "delQ": "Delete your prediction?",
+   "wait": "Waiting for a check",
+   "wordsH": "Words",
+   "words": [
+    [
+     "black swan",
+     "A big surprise. Almost nobody expects it, it changes a lot, and later people say it was easy to see."
+    ],
+    [
+     "Nassim Taleb",
+     "The writer who named the idea, in his 2007 book The Black Swan."
+    ],
+    [
+     "all ears",
+     "Listening carefully."
+    ],
+    [
+     "Hongdam · หงส์ดำ",
+     "Thai for black swan. Hongdam is a small company in Chiang Rai, Thailand; Hongdam Studio is its technology team."
+    ],
+    [
+     "prediction",
+     "What you think will happen."
+    ],
+    [
+     "1 in 100",
+     "Out of 100 times, it happens once."
+    ],
+    [
+     "check date",
+     "The month when people vote: did it happen?"
+    ]
+   ],
+   "studioH": "A surprise broke your app or website?",
+   "studioL": "Hongdam Studio finishes and fixes apps and websites.",
+   "write": "Write to us",
+   "studio": "Hongdam Studio",
+   "oneMake": "Make your own",
+   "oneMore": "More predictions",
+   "oneBy": "by {name}",
+   "share": "Black Swan Event? Hongdam Studio is all ears"
+  },
+  "th": {
+   "title": "เหตุการณ์หงส์ดำ? Hongdam Studio ตั้งใจฟัง",
+   "desc": "ของเล่นเรื่องเหตุการณ์ที่ไม่มีใครคาดคิด และที่เก็บคำทำนายของคุณไว้แชร์ หงส์ดำคือเรื่องใหญ่ที่แทบไม่มีใครคาดคิด และเปลี่ยนอะไรหลายอย่าง",
+   "kicker": "Hongdam Studio · เชียงราย",
+   "h1": "เหตุการณ์หงส์ดำ?",
+   "sub": "Hongdam Studio ตั้งใจฟัง",
+   "gloss": [
+    [
+     "หงส์ดำ",
+     "เรื่องใหญ่ที่แทบไม่มีใครคาดคิด เกิดแล้วเปลี่ยนอะไรหลายอย่าง"
+    ],
+    [
+     "ตั้งใจฟัง",
+     "เราอยากฟังคำทำนายของคุณ"
+    ],
+    [
+     "Hongdam",
+     "Hongdam คือ หงส์ดำ ภาษาอังกฤษคือ black swan"
+    ]
+   ],
+   "predict": "ทำนาย",
+   "play": "เล่น",
+   "count": "บันทึกคำทำนายแล้ว {n} ข้อ",
+   "toysH": "ของเล่น",
+   "t1": "หงส์ทุกตัวสีขาว?",
+   "t1l": "แตะสระเพื่อดู กดค้างเพื่อดูเร็ว",
+   "t1n": "หงส์ขาว",
+   "t1btn": "ดู",
+   "t1end": "หงส์ดำ! ไม่จริงแล้ว",
+   "t1hist": "ปี 1697 · ออสเตรเลียตะวันตก: ลูกเรือชาวดัตช์เห็นหงส์ดำ",
+   "t1why": "เห็นหงส์ขาวมากแค่ไหนก็ยังพิสูจน์ไม่ได้ว่า “หงส์ทุกตัวสีขาว” แต่หงส์ดำตัวเดียวพิสูจน์ได้ว่าไม่จริง",
+   "again": "อีกครั้ง",
+   "t2": "มาตรวัดหงส์",
+   "t2l": "หงส์ดำ = ไม่น่าเกิด + ใหญ่มาก",
+   "likely": "มีโอกาสแค่ไหน?",
+   "big": "ใหญ่แค่ไหน?",
+   "res": [
+    "ปกติ",
+    "แปลก แต่เรื่องเล็ก",
+    "ใหญ่ แต่คาดไว้แล้ว",
+    "หงส์ดำ!"
+   ],
+   "t2btn": "ทำนายแบบนี้",
+   "t3": "100 วัน",
+   "t3l": "ส่วนใหญ่เปลี่ยนนิดเดียว มีวันเดียวที่เปลี่ยนมาก",
+   "t3btn": "วันต่อไป",
+   "t3hold": "กดค้างให้วิ่ง",
+   "t3n": "วันปกติ",
+   "t3end": "วันที่ {n}: หงส์ดำ",
+   "t4": "หงส์ดำหรือเปล่า?",
+   "t4l": "โหวต แล้วดูว่าคนอื่นว่าอย่างไร",
+   "yesSwan": "หงส์ดำ",
+   "notSwan": "ไม่ใช่",
+   "t4res": "{p}% บอกว่าหงส์ดำ",
+   "votes": "{n} โหวต",
+   "next": "ต่อไป",
+   "quiz": {
+    "baht97": "ไทย: ค่าเงินบาทตก วิกฤตการเงินลามไปทั่วเอเชีย (ต้มยำกุ้ง)",
+    "tsunami04": "มหาสมุทรอินเดีย: สึนามิถล่ม 14 ประเทศ",
+    "banks08": "สหรัฐฯ: ธนาคารใหญ่ล้ม วิกฤตการเงินลามไปทั่วโลก",
+    "flood11": "ไทย: น้ำท่วมหลายเดือน โรงงานจมน้ำ",
+    "covid20": "ทั่วโลก: โควิด-19",
+    "chatgpt22": "ChatGPT: แชตบอตที่ใครก็ใช้ได้",
+    "internet": "อินเทอร์เน็ตเข้ามาในบ้าน"
+   },
+   "notes": {
+    "covid20": "Nassim Taleb ผู้ตั้งชื่อแนวคิดนี้บอกว่าไม่ใช่ เป็น “หงส์ขาว” (คาดได้)"
+   },
+   "formH": "คำทำนายของคุณ",
+   "formL": "คำทำนาย = สิ่งที่คุณคิดว่าจะเกิดขึ้น",
+   "what": "ฉันทำนายว่า…",
+   "examples": [
+    "หิมะตกที่เชียงราย",
+    "ทีมชาติไทยได้แชมป์ฟุตบอลโลก",
+    "ทุเรียนไม่มีกลิ่น"
+   ],
+   "when": "ตรวจในอีก",
+   "year1": "1 ปี",
+   "yearN": "{n} ปี",
+   "whenL": "พอถึงวันนั้น คนจะโหวตว่า เกิดขึ้นจริงไหม?",
+   "name": "ชื่อของคุณ (เว้นว่างได้)",
+   "save": "บันทึกแล้วแชร์",
+   "saved": "บันทึกแล้ว แชร์เลย:",
+   "held": "บันทึกแล้ว จะขึ้นในรายการหลังตรวจ",
+   "pic": "บันทึกรูป",
+   "copy": "คัดลอกลิงก์",
+   "copied": "คัดลอกแล้ว",
+   "open": "เปิด",
+   "errShort": "สั้นไป เขียนเพิ่มอีกนิด",
+   "errLink": "ห้ามใส่ลิงก์",
+   "errLimit": "วันนี้ส่งเยอะแล้ว ลองใหม่พรุ่งนี้",
+   "errAny": "มีอะไรผิดพลาด ลองอีกครั้ง",
+   "pondH": "คำทำนาย",
+   "tabs": {
+    "new": "ใหม่",
+    "top": "ยอดนิยม",
+    "soon": "ใกล้ถึง",
+    "mine": "ของฉัน"
+   },
+   "mineL": "เก็บไว้ในเบราว์เซอร์นี้",
+   "will": "จะเกิดไหม?",
+   "did": "เกิดขึ้นจริงไหม?",
+   "yes": "ใช่",
+   "no": "ไม่",
+   "check": "ตรวจ {d}",
+   "none": "ยังไม่มี มาเป็นคนแรก",
+   "more": "ดูเพิ่ม",
+   "report": "แจ้ง",
+   "reportQ": "แจ้งคำทำนายนี้?",
+   "reported": "ขอบคุณ",
+   "del": "ลบ",
+   "delQ": "ลบคำทำนายของคุณ?",
+   "wait": "รอตรวจ",
+   "wordsH": "คำศัพท์",
+   "words": [
+    [
+     "หงส์ดำ (black swan)",
+     "เรื่องใหญ่ที่แทบไม่มีใครคาดคิด เปลี่ยนอะไรหลายอย่าง แล้วทีหลังคนก็บอกว่ามันเห็นได้ง่าย"
+    ],
+    [
+     "Nassim Taleb",
+     "นักเขียนที่ตั้งชื่อแนวคิดนี้ ในหนังสือ The Black Swan ปี 2007"
+    ],
+    [
+     "ตั้งใจฟัง (all ears)",
+     "ฟังอย่างตั้งใจ"
+    ],
+    [
+     "Hongdam · หงส์ดำ",
+     "บริษัทเล็กๆ ในเชียงราย Hongdam Studio คือทีมเทคโนโลยีของบริษัท"
+    ],
+    [
+     "คำทำนาย",
+     "สิ่งที่คุณคิดว่าจะเกิดขึ้น"
+    ],
+    [
+     "1 ใน 100",
+     "ใน 100 ครั้ง เกิดขึ้น 1 ครั้ง"
+    ],
+    [
+     "วันตรวจ",
+     "เดือนที่คนโหวตว่า เกิดขึ้นจริงไหม?"
+    ]
+   ],
+   "studioH": "เรื่องไม่คาดคิดทำให้แอปหรือเว็บของคุณพัง?",
+   "studioL": "Hongdam Studio ทำแอปและเว็บให้เสร็จ และซ่อมให้",
+   "write": "เขียนถึงเรา",
+   "studio": "Hongdam Studio",
+   "oneMake": "ทำนายของคุณเอง",
+   "oneMore": "คำทำนายอื่น",
+   "oneBy": "โดย {name}",
+   "share": "เหตุการณ์หงส์ดำ? Hongdam Studio ตั้งใจฟัง"
+  },
+  "my": {
+   "title": "Black Swan (ဟင်္သာနက်) ဖြစ်ရပ်လား? Hongdam Studio က နားထောင်နေပါတယ်",
+   "desc": "မမျှော်လင့်ထားတဲ့ အဖြစ်အပျက်ကြီးတွေအကြောင်း ကစားစရာများနဲ့ သင့်ခန့်မှန်းချက်ကို သိမ်းပြီး မျှဝေနိုင်တဲ့နေရာ။ ဟင်္သာနက်ဆိုတာ ဘယ်သူမှ မမျှော်လင့်ထားဘဲ အများကြီး ပြောင်းလဲစေတဲ့ အံ့ဩစရာကြီး ဖြစ်ပါတယ်။",
+   "kicker": "Hongdam Studio · ချင်းရိုင်",
+   "h1": "ဟင်္သာနက် ဖြစ်ရပ်လား?",
+   "sub": "Hongdam Studio က နားထောင်နေပါတယ်",
+   "gloss": [
+    [
+     "ဟင်္သာနက် (black swan)",
+     "အံ့ဩစရာကြီး။ ဘယ်သူမှ မမျှော်လင့်ထားဘူး။ အများကြီး ပြောင်းလဲစေတယ်။"
+    ],
+    [
+     "နားထောင်နေ (all ears)",
+     "သင့်ခန့်မှန်းချက်ကို ကျွန်ုပ်တို့ ကြားချင်ပါတယ်။"
+    ],
+    [
+     "หงส์ดำ",
+     "Hongdam ကို ထိုင်းလို หงส์ดำ လို့ ရေးပြီး ဟင်္သာနက် လို့ အဓိပ္ပာယ်ရပါတယ်။"
+    ]
+   ],
+   "predict": "ခန့်မှန်းရန်",
+   "play": "ကစားရန်",
+   "count": "ခန့်မှန်းချက် {n} ခု သိမ်းထားပြီး",
+   "toysH": "ကစားစရာများ",
+   "t1": "ဟင်္သာ အားလုံး အဖြူလား?",
+   "t1l": "ကန်ကို နှိပ်ပြီး ကြည့်ပါ။ ဖိထားရင် မြန်မြန်ကြည့်မယ်။",
+   "t1n": "ဟင်္သာဖြူ",
+   "t1btn": "ကြည့်ရန်",
+   "t1end": "ဟင်္သာနက်! ဒါကြောင့် မဟုတ်ဘူး။",
+   "t1hist": "1697 · အနောက်ဩစတြေးလျ: ဒတ်ချ် သင်္ဘောသားတွေ ဟင်္သာနက်ကို တွေ့တယ်။",
+   "t1why": "ဟင်္သာဖြူ အများကြီး တွေ့တာက “ဟင်္သာ အားလုံး အဖြူ” လို့ မသက်သေပြနိုင်ဘူး။ ဟင်္သာနက် တစ်ကောင်က မှားကြောင်း သက်သေပြတယ်။",
+   "again": "ထပ်မံ",
+   "t2": "ဟင်္သာ မီတာ",
+   "t2l": "ဟင်္သာနက် = ဖြစ်ဖို့ခဲ + အရမ်းကြီး",
+   "likely": "ဖြစ်နိုင်ခြေ ဘယ်လောက်လဲ?",
+   "big": "ဘယ်လောက် ကြီးလဲ?",
+   "res": [
+    "ပုံမှန်",
+    "အံ့ဩစရာ၊ သေးငယ်",
+    "ကြီးမား၊ မျှော်လင့်ထားပြီး",
+    "ဟင်္သာနက်!"
+   ],
+   "t2btn": "ဒါကို ခန့်မှန်းရန်",
+   "t3": "ရက် 100",
+   "t3l": "ရက်အများစုမှာ နည်းနည်းပဲ ပြောင်းတယ်။ တစ်ရက်မှာ အများကြီး ပြောင်းတယ်။",
+   "t3btn": "နောက်တစ်ရက်",
+   "t3hold": "ဖိထားရင် ဆက်ပြေးမယ်။",
+   "t3n": "ငြိမ်သက်တဲ့ ရက်",
+   "t3end": "ရက် {n}: ဟင်္သာနက်။",
+   "t4": "ဟင်္သာနက်လား၊ မဟုတ်ဘူးလား?",
+   "t4l": "မဲပေးပါ။ လူတိုင်း ဘာပြောလဲ ကြည့်ပါ။",
+   "yesSwan": "ဟင်္သာနက်",
+   "notSwan": "မဟုတ်",
+   "t4res": "{p}% က ဟင်္သာနက်လို့ ပြော",
+   "votes": "မဲ {n}",
+   "next": "နောက်တစ်ခု",
+   "quiz": {
+    "baht97": "ထိုင်း: ဘတ်ငွေ ကျဆင်းတယ်။ ငွေကြေးအကျပ်အတည်း အာရှကို ပျံ့နှံ့တယ်။",
+    "tsunami04": "အိန္ဒိယသမုဒ္ဒရာ: ဆူနာမီ နိုင်ငံ 14 နိုင်ငံကို ရိုက်ခတ်တယ်။",
+    "banks08": "အမေရိကန်: ဘဏ်ကြီးတွေ ပြိုလဲတယ်။ ငွေကြေးအကျပ်အတည်း ကမ္ဘာကို ပျံ့နှံ့တယ်။",
+    "flood11": "ထိုင်း: လပေါင်းများစွာ ရေကြီးတယ်။ စက်ရုံတွေ ရေမြုပ်တယ်။",
+    "covid20": "ကမ္ဘာ: COVID-19။",
+    "chatgpt22": "ChatGPT: ဘယ်သူမဆို သုံးနိုင်တဲ့ chatbot။",
+    "internet": "အင်တာနက် အိမ်တွေထဲ ရောက်လာတယ်။"
+   },
+   "notes": {
+    "covid20": "ဒီအယူအဆကို အမည်ပေးခဲ့သူ Nassim Taleb က မဟုတ်ဘူး၊ “ဟင်္သာဖြူ” (မျှော်လင့်ထားနိုင်) လို့ ပြောခဲ့တယ်။"
+   },
+   "formH": "သင့် ခန့်မှန်းချက်",
+   "formL": "ခန့်မှန်းချက် = ဖြစ်လာမယ်လို့ သင်ထင်တဲ့အရာ။",
+   "what": "ကျွန်ုပ် ခန့်မှန်းတာက…",
+   "examples": [
+    "ချင်းရိုင်မှာ နှင်းကျမယ်",
+    "ထိုင်းက ကမ္ဘာ့ဖလား ဗိုလ်စွဲမယ်",
+    "အနံ့မရှိတဲ့ ဒူးရင်းသီး"
+   ],
+   "when": "စစ်ဆေးမယ့်အချိန်",
+   "year1": "1 နှစ်",
+   "yearN": "{n} နှစ်",
+   "whenL": "ဒီရက်ပြီးရင် လူတွေက “ဖြစ်ခဲ့လား?” လို့ မဲပေးတယ်။",
+   "name": "သင့်နာမည် (ဗလာထားနိုင်ပါတယ်)",
+   "save": "သိမ်းပြီး မျှဝေရန်",
+   "saved": "သိမ်းပြီးပါပြီ။ မျှဝေပါ:",
+   "held": "သိမ်းပြီးပါပြီ။ စစ်ဆေးပြီးမှ စာရင်းထဲ ပေါ်မယ်။",
+   "pic": "ပုံ သိမ်းရန်",
+   "copy": "လင့်ခ် ကူးယူရန်",
+   "copied": "ကူးယူပြီးပါပြီ",
+   "open": "ဖွင့်ရန်",
+   "errShort": "တိုလွန်းတယ်။ စကားလုံး နည်းနည်း ထပ်ရေးပါ။",
+   "errLink": "လင့်ခ် မထည့်ပါနဲ့။",
+   "errLimit": "ဒီနေ့ အများကြီး ပို့ပြီးပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။",
+   "errAny": "တစ်ခုခု မှားသွားတယ်။ ထပ်ကြိုးစားပါ။",
+   "pondH": "ခန့်မှန်းချက်များ",
+   "tabs": {
+    "new": "အသစ်",
+    "top": "ထိပ်တန်း",
+    "soon": "မကြာမီ",
+    "mine": "ကျွန်ုပ်ဟာ"
+   },
+   "mineL": "ဒီ browser ထဲမှာ သိမ်းထားတယ်။",
+   "will": "ဖြစ်လာမလား?",
+   "did": "ဖြစ်ခဲ့လား?",
+   "yes": "ဟုတ်",
+   "no": "မဟုတ်",
+   "check": "စစ်ဆေး {d}",
+   "none": "မရှိသေးဘူး။ ပထမဆုံး ဖြစ်ပါ။",
+   "more": "နောက်ထပ်",
+   "report": "တိုင်ကြားရန်",
+   "reportQ": "ဒီခန့်မှန်းချက်ကို တိုင်ကြားမလား?",
+   "reported": "ကျေးဇူးတင်ပါတယ်။",
+   "del": "ဖျက်ရန်",
+   "delQ": "သင့်ခန့်မှန်းချက်ကို ဖျက်မလား?",
+   "wait": "စစ်ဆေးဖို့ စောင့်နေ",
+   "wordsH": "စကားလုံးများ",
+   "words": [
+    [
+     "ဟင်္သာနက် (black swan)",
+     "အံ့ဩစရာကြီး။ ဘယ်သူမှ မမျှော်လင့်ထားဘူး၊ အများကြီး ပြောင်းလဲစေတယ်၊ နောက်မှ လူတွေက မြင်ရလွယ်တယ်လို့ ပြောကြတယ်။"
+    ],
+    [
+     "Nassim Taleb",
+     "2007 ခုနှစ် The Black Swan စာအုပ်မှာ ဒီအယူအဆကို အမည်ပေးခဲ့တဲ့ စာရေးဆရာ။"
+    ],
+    [
+     "နားထောင်နေ (all ears)",
+     "သေချာ နားထောင်နေတာ။"
+    ],
+    [
+     "Hongdam · หงส์ดำ",
+     "ထိုင်းလို ဟင်္သာနက်။ Hongdam က ထိုင်းနိုင်ငံ ချင်းရိုင်မှာရှိတဲ့ ကုမ္ပဏီငယ်ပါ။ Hongdam Studio က ၎င်းရဲ့ နည်းပညာအဖွဲ့ပါ။"
+    ],
+    [
+     "ခန့်မှန်းချက်",
+     "ဖြစ်လာမယ်လို့ သင်ထင်တဲ့အရာ။"
+    ],
+    [
+     "100 မှာ 1",
+     "100 ကြိမ်မှာ တစ်ကြိမ် ဖြစ်တယ်။"
+    ],
+    [
+     "စစ်ဆေးရက်",
+     "လူတွေက “ဖြစ်ခဲ့လား?” လို့ မဲပေးတဲ့ လ။"
+    ]
+   ],
+   "studioH": "မမျှော်လင့်တာကြောင့် သင့် app ဒါမှမဟုတ် website ပျက်သွားလား?",
+   "studioL": "Hongdam Studio က app နဲ့ website တွေကို အပြီးသတ်ပေးပြီး ပြင်ပေးတယ်။",
+   "write": "ကျွန်ုပ်တို့ထံ စာရေးရန်",
+   "studio": "Hongdam Studio",
+   "oneMake": "ကိုယ်ပိုင် ခန့်မှန်းရန်",
+   "oneMore": "နောက်ထပ် ခန့်မှန်းချက်များ",
+   "oneBy": "{name} ရေးသည်",
+   "share": "ဟင်္သာနက် ဖြစ်ရပ်လား? Hongdam Studio က နားထောင်နေပါတယ်"
+  },
+  "zh": {
+   "title": "黑天鹅事件？Hongdam Studio 洗耳恭听",
+   "desc": "关于大意外的小玩具，还可以保存你的预测并分享。黑天鹅是一种大意外：几乎没人想到，影响却很大。",
+   "kicker": "Hongdam Studio · 清莱",
+   "h1": "黑天鹅事件？",
+   "sub": "Hongdam Studio 洗耳恭听",
+   "gloss": [
+    [
+     "黑天鹅",
+     "很大的意外。几乎没人想到。改变很多。"
+    ],
+    [
+     "洗耳恭听",
+     "认真听。我们想听你的预测。"
+    ],
+    [
+     "หงส์ดำ",
+     "Hongdam 的泰语是 หงส์ดำ，意思是黑天鹅。"
+    ]
+   ],
+   "predict": "预测",
+   "play": "玩",
+   "count": "已保存 {n} 个预测",
+   "toysH": "小玩具",
+   "t1": "天鹅都是白的？",
+   "t1l": "点池塘来看。按住看得更快。",
+   "t1n": "只白天鹅",
+   "t1btn": "看",
+   "t1end": "一只黑天鹅！所以：不是。",
+   "t1hist": "1697 年 · 西澳大利亚：荷兰水手看到黑天鹅。",
+   "t1why": "看到再多白天鹅，也不能证明“天鹅都是白的”。一只黑天鹅就能证明这句话错了。",
+   "again": "再来",
+   "t2": "天鹅仪表",
+   "t2l": "黑天鹅 = 不太可能 + 影响巨大",
+   "likely": "有多可能？",
+   "big": "有多大？",
+   "res": [
+    "平常",
+    "意外，但小",
+    "很大，但想得到",
+    "黑天鹅！"
+   ],
+   "t2btn": "就这样预测",
+   "t3": "100 天",
+   "t3l": "大多数日子变化很小。有一天变化巨大。",
+   "t3btn": "下一天",
+   "t3hold": "按住自动走。",
+   "t3n": "平静的日子",
+   "t3end": "第 {n} 天：黑天鹅。",
+   "t4": "是不是黑天鹅？",
+   "t4l": "投票，看看大家怎么说。",
+   "yesSwan": "黑天鹅",
+   "notSwan": "不是",
+   "t4res": "{p}% 说是黑天鹅",
+   "votes": "{n} 票",
+   "next": "下一个",
+   "quiz": {
+    "baht97": "泰国：泰铢大跌，金融危机蔓延亚洲。",
+    "tsunami04": "印度洋：海啸袭击 14 个国家。",
+    "banks08": "美国：大银行倒下，金融危机蔓延全世界。",
+    "flood11": "泰国：洪水持续几个月，工厂被淹。",
+    "covid20": "全世界：新冠肺炎（COVID-19）。",
+    "chatgpt22": "ChatGPT：人人都能用的聊天机器人。",
+    "internet": "互联网走进家家户户。"
+   },
+   "notes": {
+    "covid20": "提出这个概念的 Nassim Taleb 说不是：“一只白天鹅”（可以预见）。"
+   },
+   "formH": "你的预测",
+   "formL": "预测 = 你认为会发生的事。",
+   "what": "我预测……",
+   "examples": [
+    "清莱下雪",
+    "泰国队赢得足球世界杯",
+    "没有味道的榴莲"
+   ],
+   "when": "检查时间",
+   "year1": "1 年后",
+   "yearN": "{n} 年后",
+   "whenL": "过了这个日期，大家投票：发生了吗？",
+   "name": "你的名字（可以不填）",
+   "save": "保存并分享",
+   "saved": "已保存。分享吧：",
+   "held": "已保存。检查后会出现在列表里。",
+   "pic": "保存图片",
+   "copy": "复制链接",
+   "copied": "已复制",
+   "open": "打开",
+   "errShort": "太短了。再多写几个字。",
+   "errLink": "请不要放链接。",
+   "errLimit": "今天提交太多了。明天再试。",
+   "errAny": "出错了。请再试一次。",
+   "pondH": "预测",
+   "tabs": {
+    "new": "最新",
+    "top": "最热",
+    "soon": "快到期",
+    "mine": "我的"
+   },
+   "mineL": "保存在这个浏览器里。",
+   "will": "会发生吗？",
+   "did": "发生了吗？",
+   "yes": "会",
+   "no": "不会",
+   "check": "检查 {d}",
+   "none": "还没有。来做第一个。",
+   "more": "更多",
+   "report": "举报",
+   "reportQ": "举报这个预测？",
+   "reported": "谢谢。",
+   "del": "删除",
+   "delQ": "删除你的预测？",
+   "wait": "等待检查",
+   "wordsH": "词语",
+   "words": [
+    [
+     "黑天鹅",
+     "很大的意外。几乎没人想到，改变很多，事后大家又说其实很容易看出来。"
+    ],
+    [
+     "Nassim Taleb",
+     "提出这个概念的作家，见他 2007 年的书《黑天鹅》（The Black Swan）。"
+    ],
+    [
+     "洗耳恭听",
+     "认真地听。"
+    ],
+    [
+     "Hongdam · หงส์ดำ",
+     "泰语的“黑天鹅”。Hongdam 是泰国清莱的一家小公司；Hongdam Studio 是它的技术团队。"
+    ],
+    [
+     "预测",
+     "你认为会发生的事。"
+    ],
+    [
+     "100 分之 1",
+     "100 次里发生 1 次。"
+    ],
+    [
+     "检查日期",
+     "大家投票“发生了吗？”的月份。"
+    ]
+   ],
+   "studioH": "一个意外让你的应用或网站坏了？",
+   "studioL": "Hongdam Studio 帮你完成和修好应用与网站。",
+   "write": "写信给我们",
+   "studio": "Hongdam Studio",
+   "oneMake": "做你自己的预测",
+   "oneMore": "更多预测",
+   "oneBy": "{name} 写",
+   "share": "黑天鹅事件？Hongdam Studio 洗耳恭听"
+  },
+  "de": {
+   "title": "Schwarzer Schwan? Hongdam Studio ist ganz Ohr",
+   "desc": "Spielzeuge über grosse Überraschungen und ein Ort, um deine Vorhersage zu speichern und zu teilen. Ein Schwarzer Schwan ist eine grosse Überraschung: Fast niemand erwartet sie, und sie verändert viel.",
+   "kicker": "Hongdam Studio · Chiang Rai",
+   "h1": "Schwarzer Schwan?",
+   "sub": "Hongdam Studio ist ganz Ohr",
+   "gloss": [
+    [
+     "Schwarzer Schwan",
+     "Eine grosse Überraschung. Fast niemand erwartet sie. Sie verändert viel."
+    ],
+    [
+     "ganz Ohr",
+     "Wir hören genau zu. Wir wollen deine Vorhersage hören."
+    ],
+    [
+     "หงส์ดำ",
+     "Hongdam auf Thai: หงส์ดำ (hong dam) heisst Schwarzer Schwan."
+    ]
+   ],
+   "predict": "Vorhersagen",
+   "play": "Spielen",
+   "count": "{n} Vorhersagen gespeichert",
+   "toysH": "Spielzeuge",
+   "t1": "Alle Schwäne sind weiss?",
+   "t1l": "Tippe auf den Teich, um zu schauen. Halten geht schneller.",
+   "t1n": "weisse Schwäne",
+   "t1btn": "Schauen",
+   "t1end": "Ein Schwarzer Schwan! Also: nein.",
+   "t1hist": "1697 · Westaustralien: Niederländische Seeleute sehen schwarze Schwäne.",
+   "t1why": "Viele weisse Schwäne beweisen nicht, dass „alle Schwäne weiss sind“. Ein schwarzer Schwan beweist, dass es falsch ist.",
+   "again": "Nochmal",
+   "t2": "Schwan-Messer",
+   "t2l": "Schwarzer Schwan = unwahrscheinlich + riesig.",
+   "likely": "Wie wahrscheinlich?",
+   "big": "Wie gross?",
+   "res": [
+    "Normal",
+    "Überraschung, klein",
+    "Gross, erwartet",
+    "Schwarzer Schwan!"
+   ],
+   "t2btn": "So vorhersagen",
+   "t3": "100 Tage",
+   "t3l": "Die meisten Tage sind klein. Ein Tag ist riesig.",
+   "t3btn": "Nächster Tag",
+   "t3hold": "Halten zum Laufen.",
+   "t3n": "ruhige Tage",
+   "t3end": "Tag {n}: ein Schwarzer Schwan.",
+   "t4": "Schwarzer Schwan oder nicht?",
+   "t4l": "Stimme ab. Sieh, was alle sagen.",
+   "yesSwan": "Schwarzer Schwan",
+   "notSwan": "Nicht",
+   "t4res": "{p} % sagen Schwarzer Schwan",
+   "votes": "Stimmen: {n}",
+   "next": "Weiter",
+   "quiz": {
+    "baht97": "Thailand: Der Baht fällt. Eine Geldkrise breitet sich in Asien aus.",
+    "tsunami04": "Indischer Ozean: Ein Tsunami trifft 14 Länder.",
+    "banks08": "USA: Grosse Banken fallen. Eine Geldkrise breitet sich weltweit aus.",
+    "flood11": "Thailand: Monatelange Überschwemmungen. Fabriken unter Wasser.",
+    "covid20": "Die Welt: COVID-19.",
+    "chatgpt22": "ChatGPT: ein Chatbot für alle.",
+    "internet": "Das Internet kommt in die Häuser."
+   },
+   "notes": {
+    "covid20": "Nassim Taleb, der die Idee benannt hat, sagte nein: „ein weisser Schwan“ (erwartbar)."
+   },
+   "formH": "Deine Vorhersage",
+   "formL": "Vorhersage = was du glaubst, dass passiert.",
+   "what": "Ich sage voraus …",
+   "examples": [
+    "Schnee in Chiang Rai",
+    "Thailand wird Fussball-Weltmeister",
+    "Eine Durian ohne Geruch"
+   ],
+   "when": "Prüfen in",
+   "year1": "1 Jahr",
+   "yearN": "{n} Jahren",
+   "whenL": "Nach diesem Datum stimmen alle ab: Ist es passiert?",
+   "name": "Dein Name (darf leer bleiben)",
+   "save": "Speichern und teilen",
+   "saved": "Gespeichert. Teile es:",
+   "held": "Gespeichert. Es erscheint in der Liste nach einer Prüfung.",
+   "pic": "Bild speichern",
+   "copy": "Link kopieren",
+   "copied": "Kopiert",
+   "open": "Öffnen",
+   "errShort": "Zu kurz. Schreib noch ein paar Wörter.",
+   "errLink": "Bitte keine Links.",
+   "errLimit": "Heute schon zu viele. Versuch es morgen.",
+   "errAny": "Etwas ist schiefgegangen. Versuch es nochmal.",
+   "pondH": "Vorhersagen",
+   "tabs": {
+    "new": "Neu",
+    "top": "Top",
+    "soon": "Bald",
+    "mine": "Meine"
+   },
+   "mineL": "In diesem Browser gespeichert.",
+   "will": "Wird es passieren?",
+   "did": "Ist es passiert?",
+   "yes": "Ja",
+   "no": "Nein",
+   "check": "prüfen {d}",
+   "none": "Noch keine. Sei die erste Person.",
+   "more": "Mehr",
+   "report": "Melden",
+   "reportQ": "Diese Vorhersage melden?",
+   "reported": "Danke.",
+   "del": "Löschen",
+   "delQ": "Deine Vorhersage löschen?",
+   "wait": "Wartet auf Prüfung",
+   "wordsH": "Wörter",
+   "words": [
+    [
+     "Schwarzer Schwan",
+     "Eine grosse Überraschung. Fast niemand erwartet sie, sie verändert viel, und danach sagen alle, man hätte sie sehen können."
+    ],
+    [
+     "Nassim Taleb",
+     "Der Autor, der die Idee benannt hat, in seinem Buch The Black Swan von 2007."
+    ],
+    [
+     "ganz Ohr",
+     "Genau zuhören."
+    ],
+    [
+     "Hongdam · หงส์ดำ",
+     "Thai für Schwarzer Schwan. Hongdam ist eine kleine Firma in Chiang Rai, Thailand; Hongdam Studio ist ihr Technik-Team."
+    ],
+    [
+     "Vorhersage",
+     "Was du glaubst, dass passiert."
+    ],
+    [
+     "1 zu 100",
+     "Von 100 Malen passiert es einmal."
+    ],
+    [
+     "Prüfdatum",
+     "Der Monat, in dem alle abstimmen: Ist es passiert?"
+    ]
+   ],
+   "studioH": "Eine Überraschung hat deine App oder Website kaputt gemacht?",
+   "studioL": "Hongdam Studio stellt Apps und Websites fertig und repariert sie.",
+   "write": "Schreib uns",
+   "studio": "Hongdam Studio",
+   "oneMake": "Mach deine eigene",
+   "oneMore": "Mehr Vorhersagen",
+   "oneBy": "von {name}",
+   "share": "Schwarzer Schwan? Hongdam Studio ist ganz Ohr"
+  }
+ },
+ "odds_fmt": {
+  "en": "1 in {n}",
+  "th": "1 ใน {n}",
+  "my": "{n} မှာ 1",
+  "zh": "{n} 分之 1",
+  "de": "1 zu {n}"
+ },
+ "size": {
+  "en": [
+   "my life",
+   "my town",
+   "my country",
+   "the world"
+  ],
+  "th": [
+   "ชีวิตฉัน",
+   "เมืองฉัน",
+   "ประเทศฉัน",
+   "ทั้งโลก"
+  ],
+  "my": [
+   "ကျွန်ုပ်ဘဝ",
+   "ကျွန်ုပ်မြို့",
+   "ကျွန်ုပ်နိုင်ငံ",
+   "ကမ္ဘာတစ်ခုလုံး"
+  ],
+  "zh": [
+   "我的生活",
+   "我的城市",
+   "我的国家",
+   "全世界"
+  ],
+  "de": [
+   "mein Leben",
+   "meine Stadt",
+   "mein Land",
+   "die ganze Welt"
+  ]
+ },
+ "photo": {
+  "about": "Her photo, her word 2026-10-24: \"Use this image in the site, give it lots of alt text, and license it for commercial use, but must attribute to me.\" CC BY 4.0, credit Nan Peacock; the licence and credit are also written into the files (EXIF Artist and Copyright, XMP dc:rights, xmpRights:WebStatement, cc:attributionName).",
+  "src": "/assets/photo/hongsa-weight",
+  "w": 1600,
+  "h": 1200,
+  "by": "Nan Peacock",
+  "by_url": "/portfolio/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_name": "CC BY 4.0",
+  "alt": {
+   "en": "Photo: a small bronze swan, a hongsa (หงส์), sitting on a stepped pedestal on a wooden table in low, warm sunlight. The bird has a crest of three rounded points on its head, closed eyes, a long flat beak that curls up at the tip, a ring around its neck, a round chest and a fanned tail with carved lines. The metal is dark brown, gold where hands have rubbed it smooth, and green in the hollows. The pedestal has a band of upright marks and a cross scratched into its front. Out of focus behind it: a white wall, a dark window frame and a tan leather bag. Its shape is the shape of the old bronze bird weights of Burma and northern Thailand.",
+   "th": "ภาพถ่าย: หงส์สำริดตัวเล็ก นั่งบนฐานเป็นขั้น วางบนโต๊ะไม้ในแสงแดดอ่อนสีอุ่น หงส์มีหงอนสามแฉกปลายกลมบนหัว ตาหลับ จะงอยปากยาวแบน ปลายงอนขึ้น มีวงแหวนรอบคอ อกกลม หางแผ่เป็นพัดมีลายเส้นสลัก โลหะสีน้ำตาลเข้ม ตรงที่มือจับจนเรียบเป็นสีทอง ในร่องเป็นสีเขียว ฐานมีแถบลายขีดตั้ง และรอยกากบาทขีดไว้ด้านหน้า ฉากหลังเบลอ: ผนังสีขาว กรอบหน้าต่างสีเข้ม และกระเป๋าหนังสีน้ำตาลอ่อน รูปทรงเหมือนลูกตุ้มชั่งรูปนกสำริดแบบเก่าของพม่าและภาคเหนือของไทย",
+   "my": "ဓာတ်ပုံ: ကြေးဝါ ဟင်္သာ အသေးလေးတစ်ကောင်၊ အဆင့်ဆင့်ပါတဲ့ ခုံပေါ်မှာ ထိုင်နေပြီး နွေးတဲ့ နေရောင်အောက်က သစ်သားစားပွဲပေါ်မှာ ရှိတယ်။ ခေါင်းပေါ်မှာ အဖျားဝိုင်း သုံးခုပါတဲ့ အမောက်၊ မှိတ်ထားတဲ့ မျက်လုံး၊ အဖျားကော့တက်တဲ့ ရှည်ပြားတဲ့ နှုတ်သီး၊ လည်ပင်းမှာ ကွင်း၊ ဝိုင်းတဲ့ ရင်ဘတ်နဲ့ ထွင်းထားတဲ့ မျဉ်းတွေပါတဲ့ ယပ်တောင်ပုံ အမြီး ရှိတယ်။ သတ္တုက အညိုရင့်ရောင်၊ လက်နဲ့ ပွတ်လို့ ချောနေတဲ့နေရာမှာ ရွှေရောင်၊ ချိုင့်တွေထဲမှာ အစိမ်းရောင်။ ခုံမှာ ထောင်လိုက်အမှတ်တွေ တစ်တန်းနဲ့ ရှေ့မှာ ကြက်ခြေခတ် ခြစ်ရာ ရှိတယ်။ နောက်ခံ (မှုန်ဝါး): အဖြူရောင်နံရံ၊ အရောင်ရင့် ပြတင်းပေါက်ဘောင်နဲ့ အညိုနု သားရေအိတ်။ ပုံသဏ္ဌာန်က မြန်မာနဲ့ ထိုင်းမြောက်ပိုင်းက ရှေးဟောင်း ကြေးဝါ ငှက်ပုံ အလေးတွေနဲ့ တူတယ်။",
+   "zh": "照片：一只小小的青铜天鹅（泰语 หงส์，hongsa），坐在阶梯形的底座上，放在木桌上，照着低低的暖色阳光。它头上有三个圆头的冠，眼睛闭着，长而扁的喙尖端向上卷，脖子上有一圈环，胸部圆圆的，扇形的尾巴上刻着线条。金属是深棕色，被手摸得光滑的地方发金色，凹处带着绿色。底座上有一排竖着的刻纹，正面刻着一个叉形记号。背景模糊：白墙、深色的窗框和一个浅棕色的皮包。它的形状就是缅甸和泰国北部古老的青铜鸟形砝码的形状。",
+   "de": "Foto: Ein kleiner Bronzeschwan, ein Hongsa (หงส์), sitzt auf einem gestuften Sockel auf einem Holztisch im tiefen, warmen Sonnenlicht. Der Vogel hat auf dem Kopf einen Kamm aus drei runden Spitzen, geschlossene Augen, einen langen, flachen Schnabel mit hochgebogener Spitze, einen Ring um den Hals, eine runde Brust und einen fächerförmigen Schwanz mit eingeritzten Linien. Das Metall ist dunkelbraun, golden, wo Hände es glatt gerieben haben, und grün in den Vertiefungen. Der Sockel trägt ein Band aus senkrechten Kerben und vorne ein eingeritztes Kreuz. Unscharf im Hintergrund: eine weisse Wand, ein dunkler Fensterrahmen und eine hellbraune Ledertasche. Die Form ist die Form der alten Vogelgewichte aus Bronze aus Burma und Nordthailand."
+  },
+  "cap": {
+   "en": "Hongsa (หงส์): the swan of Thai and Burmese art, in bronze.",
+   "th": "หงส์ ในศิลปะไทยและพม่า หล่อด้วยสำริด",
+   "my": "ဟင်္သာ: ထိုင်းနဲ့ မြန်မာ အနုပညာထဲက ငှက်၊ ကြေးဝါနဲ့ သွန်းထားတယ်။",
+   "zh": "Hongsa（หงส์）：泰国和缅甸艺术里的天鹅，青铜铸成。",
+   "de": "Hongsa (หงส์): der Schwan der thailändischen und burmesischen Kunst, in Bronze."
+  },
+  "credit": {
+   "en": [
+    "Photo:",
+    "= anyone may use this photo, also to make money, if they name Nan Peacock."
+   ],
+   "th": [
+    "ภาพ:",
+    "= ใครก็ใช้ภาพนี้ได้ รวมถึงใช้หาเงิน ถ้าให้เครดิต Nan Peacock"
+   ],
+   "my": [
+    "ဓာတ်ပုံ:",
+    "= ဘယ်သူမဆို ဒီဓာတ်ပုံကို သုံးနိုင်တယ်၊ ငွေရှာဖို့လည်း ရတယ်၊ Nan Peacock ရဲ့ နာမည်ကို ဖော်ပြရင်။"
+   ],
+   "zh": [
+    "摄影：",
+    "= 任何人都可以使用这张照片，也可以用来赚钱，只要写上 Nan Peacock 的名字。"
+   ],
+   "de": [
+    "Foto:",
+    "= Alle dürfen dieses Foto nutzen, auch um Geld zu verdienen, wenn sie Nan Peacock nennen."
+   ]
+  }
+ }
+}
