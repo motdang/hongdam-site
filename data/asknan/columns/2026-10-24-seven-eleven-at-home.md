@@ -1,5 +1,5 @@
 {"no": 6, "date": "2026-10-24", "kind": "life",
- "title": "Why Thailand loves 7-Eleven, and what กด 5 (press 5) means on a home microwave",
+ "title": "Why Thailand loves 7-Eleven, and how to heat a กด 5 (press 5) meal at home",
  "title_th": "ทำไมใครๆ ก็รักเซเว่น และ กด 5 บนซองแปลว่าอะไรเมื่อเวฟที่บ้าน",
  "q": "Why does everyone in Thailand love 7-Eleven so much? And my 7-Eleven rice box says กด 5 on the pack. What does that mean for the microwave in my home?",
  "q_th": "ทำไมทุกคนในไทยรักเซเว่นนัก แล้วบนซองข้าวกล่องเขียนว่า กด 5 ถ้าเวฟที่บ้านหมายความว่าอย่างไร",
@@ -18,7 +18,7 @@
   {"t": "ไมโครเวฟ ใช้ไฟกี่วัตต์ ? พร้อมเจาะลึกข้อดีของไมโครเวฟ MIDEA", "u": "https://www.midea.com/th/news/microwave-watt"},
   {"t": "กด 4 ของเซเว่น - Pantip", "u": "https://pantip.com/topic/40767782"}
  ],
- "card": {"big": "กด 5 on a home microwave", "sub": "A 7-Eleven pack code, turned into minutes"}}
+ "card": {"big": "A กด 5 meal, heated at home", "sub": "A 7-Eleven pack code, turned into minutes"}}
 ---
 7-Eleven's popularity shows in numbers, and the กด (*kot*, "press") on the pack names a button on the shop's own microwave. CP All, the company that runs 7-Eleven in Thailand, reports 16,284 stores at the end of June 2026, 200 of them opened in the three months from April to June [1]. CP All runs 8,414 itself (about 52 percent); store business partners and sub-area stores run 7,870 (about 48 percent). Of all the stores, 86 percent stand alone and the rest are inside PTT petrol stations [1].
 
