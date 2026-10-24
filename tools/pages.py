@@ -113,7 +113,7 @@ def back(pid, lang):
 
 
 def lead(pid, lang, h1=None, sub=None, sub_lang="th", with_back=True, h1_html=None):
-    """The back link, the heading with the page's mark, and its picture (a job line of its stops)."""
+    """The back link, the heading with the page's mark, and its picture (a job line of its stops) unless "job" is false."""
     p = PAGES[pid]
     h1 = h1 if h1 is not None else p.get("h1", "")
     sub = sub if sub is not None else p.get("h1_th")
@@ -122,7 +122,7 @@ def lead(pid, lang, h1=None, sub=None, sub_lang="th", with_back=True, h1_html=No
         words += '<small%s>%s</small>' % (' lang="%s"' % sub_lang if sub_lang and sub_lang != lang else "", E(sub))
     return ((back(pid, lang) if with_back else "") +
             '<h1 class="cat-h">%s<span>%s</span></h1>\n' % (B.db(p["mark"], play="loop"), words) +
-            B.job(p["stops"], lang, cls="page") + "\n")
+            (B.job(p["stops"], lang, cls="page") + "\n" if p.get("job", True) else ""))
 
 
 def foot(pid, lang, bare=False):

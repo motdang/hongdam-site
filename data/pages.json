@@ -1,5 +1,5 @@
 {
- "about": "The pages outside the shop, in the shop's look (tools/pages.py). cat: the shop category whose line colour the page takes and whose page its back link opens. mark: the dingbat beside the heading. stops: the picture under the heading, a job line like a card's. card: the link-preview picture tools/share_cards_pages.mjs draws (big, small, sub), one per language where the page has more than one. tools/dingbats.mjs bundles each page's glyphs as group p-<id>.",
+ "about": "The pages outside the shop, in the shop's look (tools/pages.py). cat: the shop category whose line colour the page takes and whose page its back link opens. mark: the dingbat beside the heading. stops: the picture under the heading, a job line like a card's (job: false leaves it off the page; the link card still draws it). glyphs: other dingbats the page draws (the 404's game). card: the link-preview picture tools/share_cards_pages.mjs draws (big, small, sub), one per language where the page has more than one. tools/dingbats.mjs bundles each page's glyphs as group p-<id>.",
  "pages": {
   "own": {
    "path": "own/",
@@ -225,7 +225,40 @@
     "small": "ไม่พบหน้านี้",
     "sub": "No page at this address. The shop is one tap away."
    },
-   "egg": "404"
+   "egg": "404",
+   "job": false,
+   "glyphs": [
+    "hongsa",
+    "heart",
+    "sun",
+    "moon",
+    "lotus",
+    "krathong",
+    "coconut",
+    "durian",
+    "frangipani",
+    "lantern",
+    "buffalo",
+    "bo-sang",
+    "koi",
+    "swallow",
+    "naga",
+    "phuang-malai",
+    "kratip",
+    "ngob",
+    "chedi",
+    "tree",
+    "spirit-house",
+    "elephant",
+    "rooster",
+    "soi-dog",
+    "tuk-tuk",
+    "songthaew",
+    "scooter",
+    "cloud",
+    "birds",
+    "kite"
+   ]
   },
   "stats": {
    "path": "stats/",

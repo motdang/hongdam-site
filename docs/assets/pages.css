@@ -354,3 +354,20 @@
 
 /* ---------------------------------------------------------------- 404 */
 .pg-404 main { min-height: 50vh }
+/* the swan's river (assets/swan404.js): wider than the words, edge to edge on a phone */
+.pg-404 .swan404 { position: relative; width: min(100vw, 64rem); margin: 1.2rem 0 1.4rem 50%; transform: translateX(-50%);
+  border-block: 2px solid var(--fg); background: var(--bg); -webkit-user-select: none; user-select: none; -webkit-touch-callout: none }
+@media (min-width: 66rem) { .pg-404 .swan404 { border: 2px solid var(--fg); border-radius: var(--r); box-shadow: var(--card-shadow) } }
+.pg-404 .swan404 canvas { display: block; width: 100%; height: clamp(15.5rem, 42vw, 25rem); touch-action: manipulation; cursor: pointer; outline: none }
+.pg-404 .sw-ui { position: absolute; inset: 0 0 38% 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .45rem; text-align: center; pointer-events: none }
+.pg-404 .swan404:not(.on) .sw-ui { visibility: hidden }
+.pg-404 .sw-go { pointer-events: auto; min-width: 8.5rem }
+.pg-404 .sw-go span[lang] { font-weight: 500 }
+.pg-404 .sw-hint, .pg-404 .sw-say, .pg-404 .sw-tip { margin: 0; padding: .15rem .55rem; border-radius: var(--r); background: color-mix(in oklab, var(--bg) 82%, transparent);
+  font: 600 .95rem/1.4 var(--sys); color: var(--fg) }
+.pg-404 .sw-hint:empty, .pg-404 .sw-say:empty { display: none }
+.pg-404 .sw-say { font: 700 1.05rem/1.3 var(--font-num); font-variant-numeric: tabular-nums }
+.pg-404 .sw-tip { position: absolute; left: 50%; bottom: 7%; transform: translateX(-50%); width: max-content; max-width: 92%; pointer-events: none }
+.pg-404 .swan404[data-mode="broken"] { display: none }
+/* on a phone the words sit right of the swan */
+@media (max-width: 40rem) { .pg-404 .sw-ui { left: 30%; padding-right: .5rem } .pg-404 .sw-hint { font-size: .85rem; text-wrap: balance } }
