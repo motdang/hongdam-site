@@ -1,6 +1,6 @@
 {
  "about": "The easter egg each page of hongdam.net hides: tap the egg near the foot of the page, or type egg or swan. Keyed by path without the language prefix; the longest key that starts the path wins; 'default' for the rest; <body data-egg=\"key\"> overrides. show: parade (the swan leads a line across), swim (the swan on water), rise, rain, burst. g: the doodle dingbats it draws. say: one line, English. tools/eggs.mjs builds docs/assets/eggs.js and docs/assets/eggs/.",
- "base": ["egg", "hongsa", "hongsa-walk", "hongsa-stand", "sparkle"],
+ "base": ["easter-egg", "feather"],
  "pages": {
   "front": {"show": "swim", "g": ["manicule", "scan", "gears", "done"], "say": "The black swan laid this one. More are hiding on other pages."},
   "help": {"show": "parade", "g": ["telephone", "chat", "wrench", "done"], "say": "Phoned, booked, fixed."},

@@ -15,6 +15,9 @@ const SRC = path.resolve(ROOT, '../../doodle-dingbats/src')
 const OUT = path.join(ROOT, 'docs/assets/eggs')
 const ESB = path.resolve(ROOT, '../../anidoodle-motdang/node_modules/.bin/esbuild')
 const EGGS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/eggs.json'), 'utf8'))
+const STORY = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/eggs-story.json'), 'utf8'))
+const LOOKS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/looks.json'), 'utf8'))
+const SHOP = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/shop.json'), 'utf8'))
 const DBM = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/dingbats.json'), 'utf8'))
 
 // A family file is an IIFE whose statements start at column 0: helpers, constants, and one D.add per glyph
@@ -80,7 +83,21 @@ for (const [key, e] of Object.entries(EGGS.pages)) {
   if (own.length && !files[id]) { files[id] = write(own); bytes += files[id].bytes }
   pages[PRIVATE.test(key) ? '#' + fnv(key) : key] = { show: e.show, g: e.g, say: e.say, ...(e.at ? { at: e.at } : {}), ...(own.length ? { b: files[id].url } : {}) }
 }
-const data = { core: '/assets/db/' + DBM.core, base: base.url, pages }
+// The story (data/eggs-story.json): Dam's forms, the duck, the feather, the doors of the trip line, and the
+// pictures of the moments and words, in one file loaded at the first tap. Its scenes for pages not listed in
+// public are kept under the same hash as their eggs.
+const doors = Object.fromEntries(Object.entries(LOOKS.doors).filter(([c]) => SHOP.cats.some((x) => x.id === c)))
+const storyNames = new Set(['hongsa', 'hongsa-walk', 'hongsa-stand', 'sparkle', 'duck', 'feather', ...Object.values(STORY.character.forms).map((f) => f.glyph), ...Object.values(doors)])
+for (const c of STORY.chapters) (c.g || []).forEach((g) => storyNames.add(g))
+for (const m of STORY.moments) [...(m.add || []), ...(m.replace || [])].forEach((g) => storyNames.add(g))
+for (const [k, w] of Object.entries(STORY.words)) if (k !== 'about') (w.g || []).forEach((g) => storyNames.add(g))
+for (const g of EGGS.base) storyNames.delete(g)
+const storyB = write([...storyNames])
+bytes += storyB.bytes
+const scenes = Object.fromEntries(Object.entries(STORY.scenes).map(([k, v]) => [PRIVATE.test(k) ? '#' + fnv(k) : k, v]))
+const story = { character: STORY.character, chapters: STORY.chapters, scenes, feathers: { golden: STORY.feathers.golden }, egg: STORY.egg, rare: STORY.rare, moments: STORY.moments, words: STORY.words }
+const cats = SHOP.cats.map((c) => ({ id: c.id, n: c.n.en }))
+const data = { core: '/assets/db/' + DBM.core, base: base.url, storyB: storyB.url, doors, cats, pages, story }
 const src = fs.readFileSync(path.join(ROOT, 'tools/eggs.src.js'), 'utf8')
 if (!src.includes('/*DATA*/{}/*END*/')) throw new Error('tools/eggs.src.js lost its /*DATA*/ marker')
 fs.writeFileSync(path.join(ROOT, 'docs/assets/eggs.js'), src.replace('/*DATA*/{}/*END*/', '/*DATA*/' + JSON.stringify(data) + '/*END*/'))
@@ -89,8 +106,8 @@ fs.writeFileSync(path.join(ROOT, 'docs/assets/eggs.js'), src.replace('/*DATA*/{}
 const LL = path.join(ROOT, 'docs/llms.txt')
 let ll = fs.readFileSync(LL, 'utf8')
 const label = (k) => (k === 'front' ? 'https://hongdam.net/' : k === 'default' ? 'any other page' : k === '404' ? 'a missing page' : 'https://hongdam.net/' + k + '/')
-const block = '<!-- EGGS:START -->\n## Hidden things\n\nEach page hides an easter egg near its foot: a small doodle egg. Tap it, or type egg or swan, and it cracks; then the black swan and the page\'s own pictures play, and a line says how many eggs that browser has found. The pages and their lines:\n\n' +
-  Object.entries(EGGS.pages).filter(([k]) => !PRIVATE.test(k)).map(([k, e]) => `- ${label(k)} — ${e.say}`).join('\n') + '\n<!-- EGGS:END -->'
+const block = '<!-- EGGS:START -->\n## Hidden things\n\nThe pages hide easter eggs: a small dyed egg in the Thai colour of the day, somewhere on the page. Tap it, or type egg or swan, and it cracks and a chick peeps out. The eggs tell one story in the order a visitor finds them: Dam (ดำ, \'black\'), a chick the ducks of a Chiang Rai paddy take for an odd duckling, wanders the pages, and at the ninth egg sees itself in a lake: a black swan, Hong Dam, หงส์ดำ. The pages and their first lines:\n\n' +
+  Object.entries(EGGS.pages).filter(([k]) => !PRIVATE.test(k)).map(([k, e]) => `- ${label(k)} — ${(STORY.scenes[k] || STORY.scenes.default).duckling}`).join('\n') + '\n<!-- EGGS:END -->'
 if (ll.includes('<!-- EGGS:START -->')) ll = ll.slice(0, ll.indexOf('<!-- EGGS:START -->')) + block + ll.slice(ll.indexOf('<!-- EGGS:END -->') + '<!-- EGGS:END -->'.length)
 else ll = ll.replace(/\n*$/, '\n\n' + block + '\n')
 fs.writeFileSync(LL, ll)
