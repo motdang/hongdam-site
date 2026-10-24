@@ -50,7 +50,8 @@ export async function startCard(env, { ref, amount, cur, what, back }) {
   return { id: j.id, url }
 }
 
-/** Capture PayPal order id; {ok, capture} only when it is COMPLETED for ref, amount and cur. */
+/** Capture PayPal order id; {ok, capture} only when it is COMPLETED for ref, amount and cur. On failure, final is true
+ * only when PayPal has said no money moved (a refused capture, a declined card); otherwise the result is unknown. */
 export async function finishCard(env, id, { ref, amount, cur }) {
   let { status, j } = await call(env, `/v2/checkout/orders/${encodeURIComponent(id)}/capture`)
   // captured already (a reload of the return page): read the order instead
@@ -58,11 +59,15 @@ export async function finishCard(env, id, { ref, amount, cur }) {
     const r = await fetch(`${base(env)}/v2/checkout/orders/${encodeURIComponent(id)}`, { headers: { authorization: 'Bearer ' + (await token(env)) } })
     j = await r.json().catch(() => ({})); status = r.status
   }
-  if (status >= 300) return { ok: false, why: 'paypal' }
+  if (status >= 500 || status === 0) return { ok: false, why: 'pending', final: false }
+  if (status >= 300) return { ok: false, why: 'paypal', final: true }
   const pu = (j.purchase_units || [])[0] || {}
   const c = ((pu.payments || {}).captures || [])[0] || {}
   const okRef = (pu.custom_id || c.custom_id) === ref
   const okAmt = c.amount && c.amount.currency_code === cur && value(c.amount.value) === value(amount)
   if (c.status === 'COMPLETED' && okRef && okAmt) return { ok: true, capture: c.id }
-  return { ok: false, why: c.status === 'PENDING' ? 'pending' : 'paypal', status: c.status || j.status }
+  // captured, but not this order's ref, amount or currency: money moved, so the team sorts it out
+  if (c.status === 'COMPLETED') return { ok: false, why: 'pending', final: false, mismatch: true, capture: c.id }
+  const no = ['DECLINED', 'FAILED'].includes(c.status)
+  return { ok: false, why: no ? 'paypal' : 'pending', final: no, status: c.status || j.status }
 }

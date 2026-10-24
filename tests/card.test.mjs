@@ -30,6 +30,9 @@ globalThis.fetch = async (u, o = {}) => {
     if (m) {
       const ord = pp.orders[m[1]]
       if (!ord) return Response.json({ name: 'RESOURCE_NOT_FOUND' }, { status: 404 })
+      const nx = pp.next; pp.next = null
+      if (nx === 'down') return new Response('busy', { status: 503 })
+      if (nx === 'declined') return Response.json({ details: [{ issue: 'INSTRUMENT_DECLINED' }] }, { status: 422 })
       if (ord.paid) return Response.json({ details: [{ issue: 'ORDER_ALREADY_CAPTURED' }] }, { status: 422 })
       ord.paid = true
       const pu = ord.b.purchase_units[0]
@@ -79,12 +82,12 @@ const s2 = await call(on, 'POST', ['card'], { ref: o2.ref })
 const id2 = s2.url.split('token=')[1]
 pp.orders[id2].b.purchase_units[0].amount.value = '1.00'   // the buyer paid a different amount
 d = await call(on, 'POST', ['card', 'done'], { ref: o2.ref, token: id2 })
-assert.equal(d.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o2.ref).state, 'booked')
-// another order's capture does not pay this one (custom_id is the order's ref)
+// money moved for the wrong amount: held for the team, not paid, not open to a second payment
+assert.equal(d.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o2.ref).state, 'capturing')
+// a token in the return address alone pays nothing: the PayPal order must be the one /api/buy/card kept
 const o3 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 2, contact: 'line:q', pay: 'EUR' })
-sql.prepare('UPDATE svc_buy SET pay = json_remove(pay, \'$.pp\') WHERE ref = ?').run(o3.ref)
 d = await call(on, 'POST', ['card', 'done'], { ref: o3.ref, token: 'PP00000001' })
-assert.equal(d.ok, false)
+assert.equal(d.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o3.ref).state, 'booked')
 
 // a baht order: PromptPay slip check reads its baht; a US$ price paid in baht gets PromptPay too
 const o4 = await call(on, 'POST', undefined, { card: 'ai-own', opt: 'ai-own-usd', contact: 'line:r', pay: 'THB' })
@@ -108,7 +111,24 @@ const o6 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1
 const s6 = await call(on, 'POST', ['card'], { ref: o6.ref })
 pp.orders[s6.url.split('token=')[1]].b.purchase_units[0].amount.value = '2.00'
 x = await call(on, 'POST', ['card', 'done'], { ref: o6.ref, token: s6.url.split('token=')[1] })
-assert.equal(x.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o6.ref).state, 'booked')
+assert.equal(x.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o6.ref).state, 'capturing')
+// the team, having checked PayPal, can move a held order on with force; without it, busy
+const st = (body) => onRequest({ env: adm, params: { path: ['state'] }, waitUntil: () => {}, request: new Request('https://hongdam.net/api/buy/state', { method: 'POST', headers: { 'content-type': 'application/json', authorization: 'Bearer k' }, body: JSON.stringify(body) }) }).then((r) => r.json())
+assert.equal((await st({ ref: o6.ref, state: 'paid' })).why, 'busy')
+assert.equal((await st({ ref: o6.ref, state: 'paid', force: true })).state, 'paid')
+// a declined card lets the order go; an unknown answer (PayPal down) keeps it held
+const o8 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:dec', pay: 'EUR' })
+await call(on, 'POST', ['card'], { ref: o8.ref })
+pp.next = 'declined'
+x = await call(on, 'POST', ['card', 'done'], { ref: o8.ref })
+assert.equal(x.why, 'paypal'); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o8.ref).state, 'booked')
+const o9 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:down', pay: 'EUR' })
+await call(on, 'POST', ['card'], { ref: o9.ref })
+pp.next = 'down'
+x = await call(on, 'POST', ['card', 'done'], { ref: o9.ref })
+assert.equal(x.why, 'pending'); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o9.ref).state, 'capturing')
+x = await call(on, 'POST', ['card', 'done'], { ref: o9.ref })   // the buyer's next return finishes it
+assert.equal(x.state, 'paid')
 const o7 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:old', pay: 'THB' })
 sql.prepare('UPDATE svc_buy SET pay = NULL WHERE ref = ?').run(o7.ref)   // as before 0011
 await call(on, 'POST', ['card'], { ref: o7.ref, cur: 'EUR' })
