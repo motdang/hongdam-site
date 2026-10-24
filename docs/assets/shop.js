@@ -356,7 +356,7 @@ async function ride(job) {
     return
   }
   const R = rngOf(lineKey(job, stops))
-  const end = reach === n - 1 && n > 1 && !job.matches('.master, .track') ? ENDS[Math.floor(R() * ENDS.length)] : ''
+  const end = reach === n - 1 && n > 1 && !job.matches('.master') ? ENDS[Math.floor(R() * ENDS.length)] : ''
   // the plan: a move at a stop, or going on past it; the last stop of a whole line belongs to its ending
   let prev = ''
   const plan = stops.slice(0, reach + 1).map((_, i) => {
@@ -473,7 +473,7 @@ function lines(root = document) {
 // Some lines are water (her word 2026-10-24: "Walking or swimming or flying"): the line is drawn over the swan as the
 // water's surface and the swan swims it. Picked from the line's name, as its ending is.
 function way(job) {
-  if (job.matches('.master, .track') || !has('hongsa-float')) return
+  if (job.matches('.master') || !has('hongsa-float')) return
   const stops = [...job.querySelectorAll('.stop')]
   if (rngOf('way ' + lineKey(job, stops))() >= 0.4) return
   job.classList.add('swim')
@@ -579,25 +579,31 @@ if (q) {
   if (q.value) run()
 }
 
-// Pick → Pay → We start, the swan at where the buyer is (0 start, 0.5 paying, 1 started)
+// One line from the order to the job done: Pick and Pay, then the job's own stops, one swan at where the order is.
+// The Buy page and the tracker draw the same line. at: the stop the swan stands at, counted from 0 (2.5 = halfway on).
 const howCap = (s) => { const i = s.indexOf(' '); return i > 0 ? `<b>${esc(s.slice(0, i))}</b> ${esc(s.slice(i + 1))}` : esc(s) }
-const masterHtml = (to) => (D.master && D.master.length ? jobHtml(D.master.map((m) => m.db), { cls: 'master mini', to, caps: T.how.map(howCap) }) : '')
+const num = (k) => (T.how[k] || '').split(' ')[0]
+function orderLine(card, at, words) {
+  const pic = card.pic || [], stops = (D.master || []).slice(0, 2).map((m) => m.db).concat(pic)
+  const caps = words.map((w, k) => howCap(num(k) + ' ' + w)).concat(pic.map((g, i) => (i ? '' : `<b>${esc(num(2))}</b> `) + esc(D.glyphs[g] || g)))
+  return jobHtml(stops, { cls: 'big order', to: Math.min(1, at / Math.max(1, stops.length - 1)), caps })
+}
+const word = (s) => s.slice(s.indexOf(' ') + 1)
 
-// The order tracker, /buy/?ref=HD-…: the job's line, and Ordered → Paid → Started → Done with the swan at the order's state.
+// The order tracker, /buy/?ref=HD-…: the order's line with the swan at its state, and the state in words.
 async function track(root, ref, note = '') {
   let o
   try { o = await (await fetch('/api/buy/' + encodeURIComponent(ref))).json() } catch { o = { ok: false } }
   const card = o && o.ok && (await cardsP).find((c) => c.id === o.card)
   if (!card) { root.innerHTML = `<p>${esc(T.err.ref)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)}</a></p>`; glyphs('front'); return }
   document.body.style.setProperty('--line', `var(--c-${card.cat})`)
-  const at = { booked: 0, claimed: 0.5, paid: 1, started: 2, done: 3 }[o.state] || 0
+  const last = 1 + (card.pic || []).length
+  const at = { started: 2, done: last }[o.state] ?? 1
   const said = { booked: T.tOrdered, claimed: T.tChecking, paid: T.tPaid, started: T.tStarted, done: T.tDone }
-  const steps = D.track || []
   root.innerHTML = `<p class="kicker">${esc(T.trackH)} · <b>${esc(o.ref)}</b></p><h1>${esc(card.n)}</h1>` +
-    (card.pic ? jobHtml(card.pic, { cls: 'big', caps: card.pic.map((g) => esc(D.glyphs[g] || g)), hide: true, to: o.state === 'done' ? 1 : o.state === 'started' ? 0.5 : 0 }) : '') +
-    (note ? `<p class="note" role="alert">${esc(note)}</p>` : '') +
     `<p class="state" role="status">${esc(said[o.state] || T.tOrdered)}</p>` +
-    (steps.length ? jobHtml(steps.map((s) => s.db), { cls: 'big track', to: at / (steps.length - 1), caps: [T.tOrdered, T.tPaid, T.tStarted, T.tDone].map(esc) }) : '') +
+    orderLine(card, at, [word(T.how[0]), word(T.how[1])]) +
+    (note ? `<p class="note" role="alert">${esc(note)}</p>` : '') +
     `<p class="note">${esc(T.trackKeep)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(o.ref)}</a></p>`
   glyphs(card.cat)
 }
@@ -640,8 +646,8 @@ async function startBuy() {
   }
   const cur = (o) => (o.price.usd ? 'USD' : 'THB')
   const half = (t, c) => t >= (c === 'USD' ? 300 : 10000)
-  root.innerHTML = `${masterHtml(0.5)}<h1>${esc(card.n)}</h1>
-${card.pic ? jobHtml(card.pic, { cls: 'big', caps: card.pic.map((g) => esc(D.glyphs[g] || g)), hide: true }) : ''}<p class="lede">${esc(card.l)}</p>
+  root.innerHTML = `<h1>${esc(card.n)}</h1>
+${orderLine(card, 1, [word(T.how[0]), word(T.how[1])])}<p class="lede">${esc(card.l)}</p>
 <form id="bf">
 ${card.opts.length > 1 ? `<fieldset><legend>${esc(T.choose)}</legend>${card.opts.map((o) =>
     `<label class="opt"><input type="radio" name="opt" value="${esc(o.id)}"${o === opt ? ' checked' : ''}> <span>${esc(o.n)}</span> <b class="oprice" data-o="${esc(o.id)}">${o.ph}</b></label>`).join('')}</fieldset>` : ''}
