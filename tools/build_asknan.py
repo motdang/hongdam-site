@@ -215,6 +215,26 @@ def index(lang, cs):
     return out
 
 
+def money_text(h):
+    """The shop's baht and dollar marks (build_shop.mark_money) on the text between tags only, so an amount inside an
+    attribute (a table cell's data-h) stays plain."""
+    return "".join(part if part.startswith("<") else B.mark_money(part) for part in re.split(r"(<[^>]*>)", h))
+
+
+def sources_html(c, lang="en"):
+    srcs = c.get("sources", [])
+    if not srcs:
+        return ""
+    return '<section class="an-src" id="sources"><h2>%s</h2><ol>%s</ol></section>\n' % (E(ui(lang)["sources"]), "".join(
+        '<li id="s%d"><a href="%s" rel="noopener">%s</a> <span class="an-host">%s</span></li>' % (
+            k, E(s["u"]), E(s["t"]), E(src_host(s["u"]))) for k, s in enumerate(srcs, 1)))
+
+
+def feed_body(c):
+    """A feed entry: the question, the answer, and its sources, so the [n] marks have their list."""
+    return '<blockquote><p>%s</p></blockquote>\n%s\n%s' % (E(c["q"]), c["html"], sources_html(c))
+
+
 def src_host(u):
     return re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*", r"\1", u))
 
@@ -254,15 +274,12 @@ def column_page(c, cs):
         go, btn = B.go_of(first, lang)
         out += '<p class="an-cta"><a class="btn" href="%s">%s · %s</a></p>\n' % (E(go), E(btn), E(B.tr(first["n"], lang)))
     out += '<p class="an-by"><span class="an-nan">%s</span></p>\n' % E(u["by"])
-    out += '<div class="an-body">\n%s\n</div>\n' % B.mark_money(c["html"])
+    out += '<div class="an-body">\n%s\n</div>\n' % money_text(c["html"])
     out += '<aside class="an-thsum" lang="th"><h2>%s</h2><p>%s</p></aside>\n' % (E(u["thsum"]), E(c["dek_th"]))
     rows = "".join(B.card_html(CARDS[k], lang) for k in c.get("cards", []) if k in CARDS)
     if rows:
         out += '<section class="an-buy"><h2>%s</h2><ul class="cards">%s</ul></section>\n' % (E(u["does"]), rows)
-    if srcs:
-        out += '<section class="an-src" id="sources"><h2>%s</h2><ol>%s</ol></section>\n' % (E(u["sources"]), "".join(
-            '<li id="s%d"><a href="%s" rel="noopener">%s</a> <span class="an-host">%s</span></li>' % (
-                k, E(s["u"]), E(s["t"]), E(src_host(s["u"]))) for k, s in enumerate(srcs, 1)))
+    out += sources_html(c, lang)
     pn = ""
     if older:
         pn += '<a class="an-old" href="/%s"><span>← %s</span>%s</a>' % (col_path(older), E(u["older"]), E(older["title"]))
@@ -291,7 +308,7 @@ def atom(cs):
            '<author><name>Nan Peacock</name><uri>%s/ask-nan/</uri></author>' % SITE]
     for c in cs[:FEED_N]:
         u = SITE + "/" + col_path(c)
-        body = '<blockquote><p>%s</p></blockquote>\n%s' % (x(c["q"]), c["html"])
+        body = feed_body(c)
         out += ['<entry>', '<title>%s</title>' % x(c["title"]), '<link rel="alternate" type="text/html" href="%s"/>' % u,
                 '<id>tag:hongdam.net,%s:ask-nan/%s</id>' % (c["date"], c["slug"]), '<published>%s</published>' % stamp(c),
                 '<updated>%s</updated>' % (c.get("updated", c["date"]) + "T07:00:00+07:00"),
@@ -302,7 +319,7 @@ def atom(cs):
 
 def jsonfeed(cs):
     items = [{"id": SITE + "/" + col_path(c), "url": SITE + "/" + col_path(c), "title": c["title"], "summary": c["dek"],
-              "content_html": '<blockquote><p>%s</p></blockquote>\n%s' % (E(c["q"]), c["html"]), "date_published": stamp(c),
+              "content_html": feed_body(c), "date_published": stamp(c),
               "tags": [c["kind"]], "language": "en", "image": SITE + "/og/ask-nan/c/%s.jpg" % c["slug"],
               "_hongdam": {"no": c["no"], "question": c["q"], "title_th": c["title_th"], "question_th": c["q_th"],
                            "summary_th": c["dek_th"], "sources": c.get("sources", [])}}
