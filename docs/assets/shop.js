@@ -458,7 +458,7 @@ ${s.cur === 'THB' ? pp + card + away : card + away + pp}
         if (w) w.opener = null
         m.textContent = T.sending
         let r
-        try { r = await (await fetch('/api/buy/card', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref: j.ref }) })).json() } catch { r = { ok: false, why: 'service' } }
+        try { r = await (await fetch('/api/buy/card', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref: j.ref, cur: (j.show || j).cur }) })).json() } catch { r = { ok: false, why: 'service' } }
         if (!r.ok) { if (w) w.close(); m.textContent = T.err[r.why] || T.err.service; return }
         m.textContent = ''
         if (w) w.location.href = r.url; else location.href = r.url
