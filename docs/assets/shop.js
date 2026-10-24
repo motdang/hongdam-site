@@ -199,7 +199,8 @@ function walkLeg(D, B, o) {
 }
 // swimming: each paddle stroke pushes, the water drags (more the faster it goes), so it surges and slows between
 // strokes; near the stop it stops paddling and glides in
-// strokes, harder and quicker where it wants to go faster
+// strokes, harder and quicker where it wants to go faster; slow strokes under the water, each a long push, so the feet
+// move slower than the body (her word 2026-10-24)
 function swimLeg(D, o) {
   const b = 1.4, c = 0.004, b2 = 4.5, dt = 1 / 120, R = []
   let x = 0, v = 0, ph = 0, t = 0, glide = false
@@ -329,8 +330,8 @@ function act(m, k, secs, at) {
 function legFor(m, D, kind, R, pace) {
   if (kind === 'fly') return flyLeg(D, m.water, 0.85 + 0.3 * R())
   const k = D > 150 ? 2 + (R() < 0.5 ? 1 : 0) : 1 + (R() < 0.7 ? 1 : 0), pick = (list) => Array.from({ length: k }, () => list[Math.floor(R() * list.length)] * pace)
-  if (m.B === DAM) return m.water ? swimLeg(D, { Vs: pick([50, 70, 95]), f: 2.6, V0: 70 }) : walkLeg(D, DAM, { Vs: pick([32, 45, 60, 75]), g0: 9, A: 260, B: 200, lift: 5, bob: 2.6, roll: 0.15 })
-  if (m.water) return swimLeg(D, { Vs: pick([55, 85, 115, 150]), f: 1.55, V0: 100 })
+  if (m.B === DAM) return m.water ? swimLeg(D, { Vs: pick([50, 70, 95]), f: 1.5, V0: 70 }) : walkLeg(D, DAM, { Vs: pick([32, 45, 60, 75]), g0: 9, A: 260, B: 200, lift: 5, bob: 2.6, roll: 0.15 })
+  if (m.water) return swimLeg(D, { Vs: pick([55, 85, 115, 150]), f: 0.85, V0: 100 })
   return walkLeg(D, SW, { Vs: pick([30, 48, 68, 95, 120]), g0: 21, lift: 8, bob: 2.8, roll: 0.13, hurry: true })
 }
 
