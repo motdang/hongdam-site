@@ -489,6 +489,83 @@ if (D.front && D.lang === 'en' && !store('hd-lang')) {
   if (want && want !== 'en') location.replace('/' + want + '/')
 }
 
+// The top bar on a phone folds once the page scrolls (her ask 2026-10-24: "Menu/header on hongdam mobile should
+// collapse to hamburger on first scroll. Too bulky."). Folded, it keeps the name and LINE; the languages and the
+// ฿ / $ / € switch open from a menu button. It folds when the page has scrolled by the height it gives up, and opens
+// out again at the top. A spacer under it holds that height, so nothing on the page moves.
+function foldTop() {
+  const top = $('header.top')
+  if (!top) return
+  let box = top.querySelector(':scope > .langs')
+  if (!box) {
+    // a page with no languages: the ฿ / $ / € switch alone goes behind the button
+    const c = top.querySelector(':scope > .curs')
+    if (!c) return
+    box = document.createElement('div')
+    box.className = 'more'
+    box.setAttribute('aria-label', c.getAttribute('aria-label') || '')
+    c.before(box)
+    box.appendChild(c)
+  }
+  const phone = matchMedia('(max-width: 39.99rem)')
+  box.id = box.id || 'top-menu'
+  const b = document.createElement('button')
+  b.type = 'button'
+  b.className = 'menu'
+  b.setAttribute('aria-controls', box.id)
+  b.setAttribute('aria-expanded', 'false')
+  b.setAttribute('aria-label', box.getAttribute('aria-label') || 'Language')
+  b.innerHTML = '<i aria-hidden="true"></i>'
+  top.appendChild(b)
+  const pad = document.createElement('div')
+  pad.setAttribute('aria-hidden', 'true')
+  let small = false, gap = 0, w = innerWidth
+  const open = (o) => { top.classList.toggle('open', o); b.setAttribute('aria-expanded', String(o)) }
+  const measure = () => {
+    if (small || !phone.matches) return
+    const h = top.offsetHeight
+    top.classList.add('small')
+    gap = h - top.offsetHeight
+    top.classList.remove('small')
+  }
+  const fold = (s) => {
+    if (s === small) return
+    small = s
+    open(false)
+    if (s) {
+      const h = top.offsetHeight
+      top.classList.add('small')
+      gap = h - top.offsetHeight
+      pad.style.height = gap + 'px'
+      top.after(pad)
+      b.hidden = !box.querySelector('a, .curs:not([hidden])')
+    } else {
+      top.classList.remove('small')
+      pad.remove()
+    }
+  }
+  const check = () => {
+    if (!phone.matches) fold(false)
+    else if (!small && gap > 0 && scrollY >= gap) fold(true)
+    else if (small && scrollY <= 2) fold(false)
+  }
+  let ask = 0
+  addEventListener('scroll', () => { if (!ask) ask = requestAnimationFrame(() => { ask = 0; check() }) }, { passive: true })
+  addEventListener('resize', () => { if (innerWidth === w) return; w = innerWidth; fold(false); measure(); check() })
+  phone.addEventListener('change', () => { fold(false); measure(); check() })
+  if (document.fonts) document.fonts.ready.then(() => { if (!small) { measure(); check() } })
+  b.addEventListener('click', (e) => {
+    const o = !top.classList.contains('open')
+    open(o)
+    if (o && !e.detail) (box.querySelector('[aria-current], a, button') || b).focus()
+  })
+  document.addEventListener('click', (e) => { if (top.classList.contains('open') && !top.contains(e.target)) open(false) })
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && top.classList.contains('open')) { open(false); b.focus() } })
+  measure()
+  check()
+}
+foldTop()
+
 // Our work (front page): the Rotary cartoon lives on Google Drive. Its poster is a button; a press puts Drive's
 // player in its place, so the page loads no Google script until someone wants the film.
 document.querySelectorAll('.vid.drive').forEach((b) => b.addEventListener('click', () => {
