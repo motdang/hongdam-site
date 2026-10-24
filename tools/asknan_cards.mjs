@@ -54,9 +54,12 @@ ${c.th ? `<p class="th">${esc(c.th)}</p>` : ''}${c.sub ? `<p class="sub">${esc(c
 <script src="${url.pathToFileURL(path.join(DOCS, 'assets/db', DBM.groups[GROUP].split('?')[0])).href}"></script>`
 }
 
+// pictures of columns no longer listed go with them, drawing or not
+const keep = new Set(LIST.map((c) => c.out))
+for (const k of Object.keys(done)) if (!keep.has(k)) { fs.rmSync(path.join(DOCS, k + '.jpg'), { force: true }); delete done[k] }
 const all = process.argv.includes('--all')
 const todo = LIST.filter((c) => all || done[c.out] !== c.hash || !fs.existsSync(path.join(DOCS, c.out + '.jpg')))
-if (!todo.length) { console.log('ask nan cards: nothing to draw'); process.exit(0) }
+if (!todo.length) { fs.writeFileSync(DONE_F, JSON.stringify(done, null, 1) + '\n'); console.log('ask nan cards: nothing to draw'); process.exit(0) }
 const browser = await chromium.launch({ executablePath: chromeExe() })
 const tab = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 })
 const tmp = path.join(DOCS, 'og', '_asknan_card.html')
@@ -72,8 +75,5 @@ for (const c of todo) {
 }
 fs.unlinkSync(tmp)
 await browser.close()
-// pictures of columns no longer listed go with them
-const keep = new Set(LIST.map((c) => c.out))
-for (const k of Object.keys(done)) if (!keep.has(k)) { fs.rmSync(path.join(DOCS, k + '.jpg'), { force: true }); delete done[k] }
 fs.writeFileSync(DONE_F, JSON.stringify(done, null, 1) + '\n')
 console.log('ask nan cards:', todo.length, 'drawn')

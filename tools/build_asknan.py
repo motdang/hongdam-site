@@ -300,7 +300,7 @@ def stamp(c):
 
 def atom(cs):
     x = E
-    upd = stamp(cs[0]) if cs else datetime.date.today().isoformat() + "T07:00:00+07:00"
+    upd = max(c.get("updated", c["date"]) for c in cs) + "T07:00:00+07:00" if cs else datetime.date.today().isoformat() + "T07:00:00+07:00"
     out = ['<?xml version="1.0" encoding="utf-8"?>', '<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">',
            '<title>Ask Nan</title>', '<subtitle>%s</subtitle>' % x(ui("en")["lede"]),
            '<link rel="alternate" type="text/html" href="%s/ask-nan/"/>' % SITE, '<link rel="self" href="%s/ask-nan/feed.xml"/>' % SITE,
@@ -320,6 +320,7 @@ def atom(cs):
 def jsonfeed(cs):
     items = [{"id": SITE + "/" + col_path(c), "url": SITE + "/" + col_path(c), "title": c["title"], "summary": c["dek"],
               "content_html": feed_body(c), "date_published": stamp(c),
+              "date_modified": c.get("updated", c["date"]) + "T07:00:00+07:00",
               "tags": [c["kind"]], "language": "en", "image": SITE + "/og/ask-nan/c/%s.jpg" % c["slug"],
               "_hongdam": {"no": c["no"], "question": c["q"], "title_th": c["title_th"], "question_th": c["q_th"],
                            "summary_th": c["dek_th"], "sources": c.get("sources", [])}}

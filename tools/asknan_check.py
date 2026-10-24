@@ -11,6 +11,7 @@ email addresses but the shop's, names of the team, clients, family or case (the 
 ~/.claude/state/studio-private.txt and ~/.claude/state/asknan-private.txt). Sources answer (a 401, 403 or 429 from a
 site that refuses robots is allowed; --offline skips the fetch).
 """
+import datetime
 import glob
 import json
 import os
@@ -66,6 +67,10 @@ def check(path, offline=False):
     for k in ("no", "date", "kind", "title", "title_th", "q", "q_th", "dek", "dek_th", "line", "sources"):
         if not head.get(k):
             bad.append("head: %s is missing" % k)
+    try:
+        datetime.date.fromisoformat(m.group(1))
+    except ValueError:
+        bad.append("file name: %s is not a calendar date" % m.group(1))
     if head.get("date") and head["date"] != m.group(1):
         bad.append("head: date %s, file name %s" % (head["date"], m.group(1)))
     if not isinstance(head.get("no"), int):
