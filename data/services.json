@@ -347,8 +347,8 @@
    "items": [
     {
      "id": "retire-setup",
-     "en": "Retiring here: set-up",
-     "th": "เกษียณที่นี่: เริ่มต้น",
+     "en": "Retiring in Thailand: set-up",
+     "th": "เกษียณในไทย: เริ่มต้น",
      "p_en": "{price}",
      "p_th": "{price}",
      "d_en": "One plan for the visa (filed through Chiang Mai Visa Desk), bank account, phone, housing shortlist, hospital registration, and insurance quotes from a licensed broker. Government fees and rent at cost.",
@@ -360,8 +360,8 @@
     },
     {
      "id": "retire-month",
-     "en": "Retiring here: monthly",
-     "th": "เกษียณที่นี่: รายเดือน",
+     "en": "Retiring in Thailand: monthly",
+     "th": "เกษียณในไทย: รายเดือน",
      "p_en": "{price} a month, 4 hours",
      "p_th": "เดือนละ {price} 4 ชั่วโมง",
      "d_en": "One person to call, 4 hours of help a month, and renewal dates kept with a note ahead of each.",
@@ -373,8 +373,8 @@
     },
     {
      "id": "retire-hour",
-     "en": "Retiring here: extra hours",
-     "th": "เกษียณที่นี่: ชั่วโมงเพิ่ม",
+     "en": "Retiring in Thailand: extra hours",
+     "th": "เกษียณในไทย: ชั่วโมงเพิ่ม",
      "p_en": "{price} an hour",
      "p_th": "ชั่วโมงละ {price}",
      "d_en": "Past the four hours, by the hour.",
@@ -451,8 +451,8 @@
     },
     {
      "id": "death-help",
-     "en": "When someone dies here",
-     "th": "เมื่อมีคนเสียชีวิตที่นี่",
+     "en": "When someone dies in Thailand",
+     "th": "เมื่อมีคนเสียชีวิตในไทย",
      "p_en": "{price}",
      "p_th": "{price}",
      "d_en": "The death registered, embassy papers prepared, and cremation or repatriation arranged with a funeral home. Funeral home, embassy and translation at cost.",
@@ -2475,8 +2475,8 @@
      "slots": 4,
      "p_en": "{price} a round",
      "p_th": "รอบละ {price}",
-     "d_en": "Thai speakers use your app on phones people here own, and write up what breaks.",
-     "d_th": "คนไทยใช้แอปของคุณบนมือถือรุ่นที่คนที่นี่ใช้ แล้วเขียนรายงานจุดที่ผิดพลาด"
+     "d_en": "Thai speakers use your app on phones people in Thailand own, and write up what breaks.",
+     "d_th": "คนไทยใช้แอปของคุณบนมือถือรุ่นที่คนในไทยใช้ แล้วเขียนรายงานจุดที่ผิดพลาด"
     },
     {
      "id": "dmarc-watch",
