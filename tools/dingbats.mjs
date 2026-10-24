@@ -72,6 +72,14 @@ for (const cat of SHOP.cats) groups[cat.id] = [...always, ...(LOOKS.doors[cat.id
 // the pages outside the shop (data/pages.json, tools/pages.py): group p-<id>, the page's mark, its picture's stops and its other glyphs
 const PAGES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/pages.json'), 'utf8')).pages
 for (const [id, p] of Object.entries(PAGES)) groups['p-' + id] = [...always, p.mark, ...p.stops, ...(p.glyphs || [])]
+// Ask Nan (tools/build_asknan.py): the list's line, each column's line, and the lines of the shop cards under the columns
+const AN_COLS = path.join(ROOT, 'data/asknan/columns')
+if (fs.existsSync(AN_COLS)) {
+  const heads = fs.readdirSync(AN_COLS).filter((f) => f.endsWith('.md')).map((f) => JSON.parse(fs.readFileSync(path.join(AN_COLS, f), 'utf8').split('\n---\n')[0]))
+  const byId = Object.fromEntries(SHOP.cards.map((c) => [c.id, c]))
+  groups['p-asknan'] = [...always, 'chat', 'nib', 'done', ...heads.flatMap((h) => h.line || []),
+    ...heads.flatMap((h) => (h.cards || []).filter((id) => byId[id]).flatMap((id) => pic(byId[id])))]
+}
 
 fs.mkdirSync(OUT, { recursive: true })
 for (const f of fs.readdirSync(OUT)) fs.unlinkSync(path.join(OUT, f))
