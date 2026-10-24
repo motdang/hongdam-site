@@ -157,24 +157,24 @@ export const SERVICES = {
   "slots": 8
  },
  "retire-setup": {
-  "en": "Retiring here: set-up",
-  "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e17\u0e35\u0e48\u0e19\u0e35\u0e48: \u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19",
+  "en": "Retiring in Thailand: set-up",
+  "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e43\u0e19\u0e44\u0e17\u0e22: \u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19",
   "open": 25000,
   "floor": 15000,
   "ceiling": 50000,
   "slots": 4
  },
  "retire-month": {
-  "en": "Retiring here: monthly",
-  "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e17\u0e35\u0e48\u0e19\u0e35\u0e48: \u0e23\u0e32\u0e22\u0e40\u0e14\u0e37\u0e2d\u0e19",
+  "en": "Retiring in Thailand: monthly",
+  "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e43\u0e19\u0e44\u0e17\u0e22: \u0e23\u0e32\u0e22\u0e40\u0e14\u0e37\u0e2d\u0e19",
   "open": 5000,
   "floor": 3000,
   "ceiling": 10000,
   "slots": 20
  },
  "retire-hour": {
-  "en": "Retiring here: extra hours",
-  "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e17\u0e35\u0e48\u0e19\u0e35\u0e48: \u0e0a\u0e31\u0e48\u0e27\u0e42\u0e21\u0e07\u0e40\u0e1e\u0e34\u0e48\u0e21",
+  "en": "Retiring in Thailand: extra hours",
+  "th": "\u0e40\u0e01\u0e29\u0e35\u0e22\u0e13\u0e43\u0e19\u0e44\u0e17\u0e22: \u0e0a\u0e31\u0e48\u0e27\u0e42\u0e21\u0e07\u0e40\u0e1e\u0e34\u0e48\u0e21",
   "open": 600,
   "floor": 500,
   "ceiling": 1000,
@@ -221,8 +221,8 @@ export const SERVICES = {
   "slots": 30
  },
  "death-help": {
-  "en": "When someone dies here",
-  "th": "\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e21\u0e35\u0e04\u0e19\u0e40\u0e2a\u0e35\u0e22\u0e0a\u0e35\u0e27\u0e34\u0e15\u0e17\u0e35\u0e48\u0e19\u0e35\u0e48",
+  "en": "When someone dies in Thailand",
+  "th": "\u0e40\u0e21\u0e37\u0e48\u0e2d\u0e21\u0e35\u0e04\u0e19\u0e40\u0e2a\u0e35\u0e22\u0e0a\u0e35\u0e27\u0e34\u0e15\u0e43\u0e19\u0e44\u0e17\u0e22",
   "open": 15000,
   "floor": 10000,
   "ceiling": 30000,

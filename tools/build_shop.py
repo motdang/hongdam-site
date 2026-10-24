@@ -405,6 +405,8 @@ def front(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, ui["title"], ui["desc"], "")
     out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
+    if ui.get("place"):
+        out += '<p class="lede">%s</p>\n' % E(ui["place"])
     if LOOKS["master"]:
         caps = []
         for s in ui["how"]:
