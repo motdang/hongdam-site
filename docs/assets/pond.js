@@ -4,11 +4,71 @@
 // when it is seen. The Buy total drops in when a choice changes it. With reduced motion none of this runs.
 // Prices tick when the ฿ / $ / € switch changes them. The "write to us" buttons at the end of a list ring once when
 // a reader scrolls down to them.
+// Mixed media (her ask 2026-10-24): a swan on a line that is water has its reflection under the surface, and now and
+// then a drop of water falls: on a line that is water it rings it and rocks the pad beside it, on the paper it leaves a
+// spot that dries. No drops with reduced motion; the reflection then holds still.
 // A plain script, so the copies of /bots on GitHub Pages can load it from hongdam.net too.
 (function () {
   var still = matchMedia('(prefers-reduced-motion: reduce)'), calm = still.matches
   var IO = 'IntersectionObserver' in window
   var LISTS = '.know ul > li, .card > ul > li, .pg .kind ul > li, .s-body ul > li'
+  var quiet = false, hush = []
+  var rem = function () { return parseFloat(getComputedStyle(document.documentElement).fontSize) || 16 }
+  // a job line's measures (shop.css .job): where its line sits above the foot of the job, and how thick it is
+  var lineOf = function (job) {
+    var cs = getComputedStyle(job), r = rem(), len = function (v) { v = String(v).trim(); return (parseFloat(v) || 0) * (/rem$/.test(v) ? r : 1) }
+    return { y: len(cs.getPropertyValue('--lineY')), w: len(cs.getPropertyValue('--line-w')) || 5 }
+  }
+
+  // the swan's reflection: what of it is above the surface, upside down under it, fading with depth and rippling
+  if (IO) (function () {
+    var swims = new Set(), raf = 0, last = 0
+    var seen = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) swims.add(e.target); else swims.delete(e.target) })
+      kick()
+    }, { rootMargin: '40px' })
+    var watch = function () { document.querySelectorAll('.job:not([data-refl])').forEach(function (j) { j.dataset.refl = 1; seen.observe(j) }) }
+    watch()
+    var n = 0, w = setInterval(function () { watch(); if (++n > 20) clearInterval(w) }, 1500)   // lines drawn after load (the Buy page)
+    function kick() { if (!raf && swims.size) raf = requestAnimationFrame(tick) }
+    function tick(now) {
+      raf = 0
+      if (document.hidden) return
+      if (now - last >= 40) {
+        last = now
+        swims.forEach(function (j) { if (j.classList.contains('swim')) j.querySelectorAll('.rider').forEach(function (r) { mirror(j, r, now) }) })
+      }
+      if (!calm && !quiet) kick()
+      else setTimeout(kick, 1000)   // held still: drawn again now and then, as the swan settles
+    }
+    document.addEventListener('visibilitychange', kick)
+    function mirror(job, rider, now) {
+      var g = rider.querySelector('doodle-dingbat'), src = g && g.querySelector('canvas.db-cv')
+      if (!src || !src.width || !rider.offsetHeight) return
+      var c = rider.querySelector(':scope > canvas.pond-refl')
+      if (!c) { c = document.createElement('canvas'); c.className = 'pond-refl'; c.setAttribute('aria-hidden', 'true'); rider.appendChild(c) }
+      // in the rider's own box, so a mate drawn mirrored (scaleX(-1)) gets its reflection mirrored too
+      var L = lineOf(job), cssW = parseFloat(src.style.width) || src.width, k = src.width / cssW
+      var top = g.offsetTop + (parseFloat(src.style.top) || 0), left = g.offsetLeft + (parseFloat(src.style.left) || 0)
+      var surf = rider.offsetHeight + (parseFloat(getComputedStyle(rider).bottom) || 0) - L.y - L.w / 2
+      var above = surf - top
+      if (above < 4) return
+      var depth = Math.min(above, (job.querySelector('.cap') ? 0.5 : 1.4) * rem()), W = src.width, H = Math.max(1, Math.round(depth * k)), sy = Math.round(above * k)
+      if (c.width !== W || c.height !== H) { c.width = W; c.height = H }
+      c.style.width = cssW + 'px'; c.style.height = depth + 'px'; c.style.left = left + 'px'; c.style.top = surf + 'px'
+      var x = c.getContext('2d'), t = now / 1000, strip = Math.max(1, Math.round(k))
+      x.globalCompositeOperation = 'source-over'; x.clearRect(0, 0, W, H)
+      for (var y = 0; y < H; y += strip) {
+        var row = sy - y - strip
+        if (row < 0) break
+        var dx = calm || quiet ? 0 : Math.sin(y / k * 0.6 + t * 3.1) * (0.5 + 1.5 * y / H) * k
+        x.drawImage(src, 0, row, W, strip, dx, y, W, strip)
+      }
+      var f = x.createLinearGradient(0, 0, 0, H); f.addColorStop(0, 'rgba(0,0,0,1)'); f.addColorStop(1, 'rgba(0,0,0,0)')
+      x.globalCompositeOperation = 'destination-in'; x.fillStyle = f; x.fillRect(0, 0, W, H)
+    }
+  })()
+
   if (calm || !IO) {
     document.querySelectorAll(LISTS).forEach(function (li) { li.classList.add('pond-up') })
     return
@@ -50,7 +110,6 @@
 
   // reduced motion switched on while the page is open: everything shows as it is at once (cards up, lotus open,
   // meters filled) and the rings and the typing stop, for the rest of the visit
-  var quiet = false, hush = []
   var onStill = function () {
     if (!still.matches || quiet) return
     quiet = true
@@ -162,6 +221,50 @@
       if (names.length > 2 && !done) type(names)
     }).catch(function () {})
   }
+
+  // now and then a drop of water falls, every 7 to 17 seconds and never while the tab is hidden: onto a line that is
+  // water when one is in view (two rings, and the pad nearest it rocks), else onto the bare paper (a spot that spreads,
+  // then dries lighter and goes)
+  var mk = function (cls, host) { var e = document.createElement('i'); e.className = cls; e.setAttribute('aria-hidden', 'true'); (host || document.body).appendChild(e); return e }
+  var gone = function (e, ms) { e.addEventListener('animationend', function () { e.remove() }); setTimeout(function () { e.remove() }, ms) }
+  function waterAt() {
+    var js = [].filter.call(document.querySelectorAll('.job.swim'), function (j) { var r = j.getBoundingClientRect(); return r.width && r.top > innerHeight * 0.12 && r.bottom < innerHeight * 0.9 })
+    if (!js.length || Math.random() < 0.3) return null
+    var j = js[Math.floor(Math.random() * js.length)], r = j.getBoundingClientRect(), f = 0.1 + 0.8 * Math.random()
+    return { job: j, f: f, x: r.left + f * r.width, y: r.bottom - lineOf(j).y }
+  }
+  function paperAt() {
+    for (var i = 0; i < 10; i++) {
+      var x = 16 + Math.random() * (innerWidth - 32), y = innerHeight * (0.28 + 0.6 * Math.random()), el = document.elementFromPoint(x, y)
+      if (el && /^(HTML|BODY|MAIN)$/.test(el.tagName)) return { x: x, y: y }
+    }
+    return null
+  }
+  function land(t) {
+    if (t.job) {
+      var j = t.job, L = lineOf(j), lx = t.f * j.clientWidth, top = j.clientHeight - L.y
+      for (var i = 0; i < 2; i++) { var s = mk('pond-splash', j); s.style.left = lx + 'px'; s.style.top = top + 'px'; gone(s, 2600) }
+      var r = j.getBoundingClientRect(), best = null, bd = 3 * rem()
+      j.querySelectorAll('.stop').forEach(function (st) { var q = st.getBoundingClientRect(), d = Math.abs(q.left + q.width / 2 - (r.left + lx)); if (d < bd) { bd = d; best = st } })
+      if (best) { best.classList.remove('pond-rock'); void best.offsetWidth; best.classList.add('pond-rock'); setTimeout(function () { best.classList.remove('pond-rock') }, 2100) }
+      return
+    }
+    var p = mk('pond-spot'); p.style.left = t.x + scrollX + 'px'; p.style.top = t.y + scrollY + 'px'; gone(p, 13000)
+  }
+  function drop() {
+    if (quiet) return
+    if (document.hidden) { document.addEventListener('visibilitychange', function back() { if (document.hidden) return; document.removeEventListener('visibilitychange', back); later() }); return }
+    var t = waterAt() || paperAt()
+    if (t && document.body.animate) {
+      var d = mk('pond-drop'), ms = 360 + 460 * Math.sqrt(Math.max(0, t.y) / innerHeight)
+      d.style.left = t.x + 'px'
+      var a = d.animate([{ transform: 'translateY(-1.2rem)' }, { transform: 'translateY(' + t.y + 'px)' }], { duration: ms, easing: 'cubic-bezier(.55, 0, 1, .55)', fill: 'forwards' })
+      a.onfinish = function () { d.remove(); if (!quiet) land(t) }
+    }
+    later()
+  }
+  function later() { setTimeout(drop, 7000 + Math.random() * 10000) }
+  later()
 
   // the Buy page: when a choice changes the total, the new total drops in
   var buy = document.body.classList.contains('p-buy') && document.getElementById('buy')

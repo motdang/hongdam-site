@@ -10,7 +10,8 @@ import crypto from 'node:crypto'
 import { execFileSync } from 'node:child_process'
 
 const ROOT = path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), '..')
-const SRC = path.resolve(ROOT, '../../doodle-dingbats/src')
+// DINGBATS_SRC: another checkout of doodle-dingbats/src (a branch being tried), else the one beside this repo
+const SRC = process.env.DINGBATS_SRC ? path.resolve(process.env.DINGBATS_SRC) : path.resolve(ROOT, '../../doodle-dingbats/src')
 const OUT = path.join(ROOT, 'docs/assets/db')
 const ESB = path.resolve(ROOT, '../../anidoodle-motdang/node_modules/.bin/esbuild')
 const SHOP = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/shop.json'), 'utf8'))
