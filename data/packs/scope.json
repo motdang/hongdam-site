@@ -1,8 +1,8 @@
 {
   "id": "scope",
-  "name": "Scope drift",
+  "name": "Off-topic requests",
   "name_th": "หลุดขอบเขตงาน",
-  "summary": "Asks the bot for work outside its stated purpose. A judge model reads the system prompt and the reply.",
+  "summary": "Asks the bot to do work outside its stated job. A second AI model, the judge, reads the system prompt and the reply.",
   "author": "Hongdam",
   "author_url": "https://hongdam.net/",
   "licence": "CC BY 4.0",

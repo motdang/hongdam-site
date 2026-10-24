@@ -15,7 +15,7 @@
 - Five languages: English at /, Thai at /th/, Burmese at /my/, Chinese at /zh/, German at /de/
   (the same path after the prefix, e.g. https://hongdam.net/th/web/).
 - Buy: https://hongdam.net/buy/?c=<card id> — pick the option, then pay by
-  PromptPay QR, PayPal or Wise. An order's progress: https://hongdam.net/buy/?ref=<order number>.
+  PromptPay QR, PayPal, Wise or bitcoin Lightning. An order's progress: https://hongdam.net/buy/?ref=<order number>.
 - Anything not listed: https://hongdam.net/ask/, LINE @964yxgnk
   (https://line.me/R/ti/p/@964yxgnk), or nan@motdang.net.
 
@@ -32,27 +32,33 @@
 <!-- SHOP:START -->
 ## The category pages
 
-- [Retirement & care](https://hongdam.net/care/) — Retiring in Thailand, care for older people, doctors and hard days. 11 cards, from ฿800. Also: ไทย https://hongdam.net/th/care/ · မြန်မာ https://hongdam.net/my/care/ · 中文 https://hongdam.net/zh/care/ · Deutsch https://hongdam.net/de/care/
-- [Visas & permits](https://hongdam.net/visa/) — Visas, work permits and companies, through Chiang Mai Visa Desk. 1 card. Also: ไทย https://hongdam.net/th/visa/ · မြန်မာ https://hongdam.net/my/visa/ · 中文 https://hongdam.net/zh/visa/ · Deutsch https://hongdam.net/de/visa/
-- [Fix & protect](https://hongdam.net/fix/) — Patch servers, stop fake emails, test chatbots. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/fix/ · မြန်မာ https://hongdam.net/my/fix/ · 中文 https://hongdam.net/zh/fix/ · Deutsch https://hongdam.net/de/fix/
-- [Money & books](https://hongdam.net/money/) — Payments, invoices and bookkeeping. 12 cards, from ฿150. Also: ไทย https://hongdam.net/th/money/ · မြန်မာ https://hongdam.net/my/money/ · 中文 https://hongdam.net/zh/money/ · Deutsch https://hongdam.net/de/money/
-- [Websites & apps](https://hongdam.net/web/) — Sites, LINE apps and fixes, in Thai and English. 19 cards, from ฿500. Also: ไทย https://hongdam.net/th/web/ · မြန်မာ https://hongdam.net/my/web/ · 中文 https://hongdam.net/zh/web/ · Deutsch https://hongdam.net/de/web/
-- [Hotels & homes](https://hongdam.net/stay/) — Booking sites, rentals found, houses checked before you buy. 9 cards, from ฿800. Also: ไทย https://hongdam.net/th/stay/ · မြန်မာ https://hongdam.net/my/stay/ · 中文 https://hongdam.net/zh/stay/ · Deutsch https://hongdam.net/de/stay/
-- [AI & bots](https://hongdam.net/ai/) — AI helpers and bots that work for you. 10 cards, from ฿1,000. Also: ไทย https://hongdam.net/th/ai/ · မြန်မာ https://hongdam.net/my/ai/ · 中文 https://hongdam.net/zh/ai/ · Deutsch https://hongdam.net/de/ai/
-- [Moving house abroad](https://hongdam.net/moving/) — Your home packed and shipped into or out of Thailand. 2 cards, from ฿800. Also: ไทย https://hongdam.net/th/moving/ · မြန်မာ https://hongdam.net/my/moving/ · 中文 https://hongdam.net/zh/moving/ · Deutsch https://hongdam.net/de/moving/
-- [Design & writing](https://hongdam.net/design/) — Logos, videos, slides, posts and words. 14 cards, from ฿500. Also: ไทย https://hongdam.net/th/design/ · မြန်မာ https://hongdam.net/my/design/ · 中文 https://hongdam.net/zh/design/ · Deutsch https://hongdam.net/de/design/
-- [Charities & clubs](https://hongdam.net/charity/) — Giving pages, grants, volunteers and team tools. 10 cards, from ฿8,000. Also: ไทย https://hongdam.net/th/charity/ · မြန်မာ https://hongdam.net/my/charity/ · 中文 https://hongdam.net/zh/charity/ · Deutsch https://hongdam.net/de/charity/
-- [Help in Thai](https://hongdam.net/help/) — Calls, repairs, errands and forms, done in Thai for you. 14 cards, from ฿300. Also: ไทย https://hongdam.net/th/help/ · မြန်မာ https://hongdam.net/my/help/ · 中文 https://hongdam.net/zh/help/ · Deutsch https://hongdam.net/de/help/
-- [Luck](https://hongdam.net/luck/) — Readings, auspicious dates and names, yant and amulets. 12 cards, from ฿500. Also: ไทย https://hongdam.net/th/luck/ · မြန်မာ https://hongdam.net/my/luck/ · 中文 https://hongdam.net/zh/luck/ · Deutsch https://hongdam.net/de/luck/
+- [Retirement & health care](https://hongdam.net/care/) — Retiring in Thailand, care for older people, doctor visits, and help after a death or an accident. 11 cards, from ฿800. Also: ไทย https://hongdam.net/th/care/ · မြန်မာ https://hongdam.net/my/care/ · 中文 https://hongdam.net/zh/care/ · Deutsch https://hongdam.net/de/care/
+- [Visas & permits](https://hongdam.net/visa/) — Visas, work permits and company registration, done by Chiang Mai Visa Desk. 1 card. Also: ไทย https://hongdam.net/th/visa/ · မြန်မာ https://hongdam.net/my/visa/ · 中文 https://hongdam.net/zh/visa/ · Deutsch https://hongdam.net/de/visa/
+- [Security & tech fixes](https://hongdam.net/fix/) — Close security holes on servers, stop fake emails in your name, test chatbots. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/fix/ · မြန်မာ https://hongdam.net/my/fix/ · 中文 https://hongdam.net/zh/fix/ · Deutsch https://hongdam.net/de/fix/
+- [Money & accounting](https://hongdam.net/money/) — Payments, invoices and bookkeeping. 12 cards, from ฿150. Also: ไทย https://hongdam.net/th/money/ · မြန်မာ https://hongdam.net/my/money/ · 中文 https://hongdam.net/zh/money/ · Deutsch https://hongdam.net/de/money/
+- [Websites & apps](https://hongdam.net/web/) — Websites, apps inside LINE and website repairs, in Thai and English. 19 cards, from ฿500. Also: ไทย https://hongdam.net/th/web/ · မြန်မာ https://hongdam.net/my/web/ · 中文 https://hongdam.net/zh/web/ · Deutsch https://hongdam.net/de/web/
+- [Hotels & homes](https://hongdam.net/stay/) — Booking websites for hotels, rental homes found for you, houses checked before you buy. 9 cards, from ฿800. Also: ไทย https://hongdam.net/th/stay/ · မြန်မာ https://hongdam.net/my/stay/ · 中文 https://hongdam.net/zh/stay/ · Deutsch https://hongdam.net/de/stay/
+- [AI & bots](https://hongdam.net/ai/) — AI helpers and bots (programs that do tasks on their own) that work for you. 10 cards, from ฿1,000. Also: ไทย https://hongdam.net/th/ai/ · မြန်မာ https://hongdam.net/my/ai/ · 中文 https://hongdam.net/zh/ai/ · Deutsch https://hongdam.net/de/ai/
+- [Moving house to or from Thailand](https://hongdam.net/moving/) — Your home packed and shipped into or out of Thailand. 2 cards, from ฿800. Also: ไทย https://hongdam.net/th/moving/ · မြန်မာ https://hongdam.net/my/moving/ · 中文 https://hongdam.net/zh/moving/ · Deutsch https://hongdam.net/de/moving/
+- [Design & writing](https://hongdam.net/design/) — Logos, videos, slides, social media posts and writing. 14 cards, from ฿500. Also: ไทย https://hongdam.net/th/design/ · မြန်မာ https://hongdam.net/my/design/ · 中文 https://hongdam.net/zh/design/ · Deutsch https://hongdam.net/de/design/
+- [Charities & clubs](https://hongdam.net/charity/) — Donation pages, grant applications, volunteer sign-up and team tools. 10 cards, from ฿8,000. Also: ไทย https://hongdam.net/th/charity/ · မြန်မာ https://hongdam.net/my/charity/ · 中文 https://hongdam.net/zh/charity/ · Deutsch https://hongdam.net/de/charity/
+- [Thai-language help](https://hongdam.net/help/) — Phone calls, repairs, errands and forms, done for you in Thai. 14 cards, from ฿300. Also: ไทย https://hongdam.net/th/help/ · မြန်မာ https://hongdam.net/my/help/ · 中文 https://hongdam.net/zh/help/ · Deutsch https://hongdam.net/de/help/
+- [Horoscopes & lucky charms](https://hongdam.net/luck/) — Horoscope readings, lucky dates and names, sacred yant designs and amulets (lucky charms). 12 cards, from ฿500. Also: ไทย https://hongdam.net/th/luck/ · မြန်မာ https://hongdam.net/my/luck/ · 中文 https://hongdam.net/zh/luck/ · Deutsch https://hongdam.net/de/luck/
 - [Translation](https://hongdam.net/translate/) — Documents, interpreters and web pages: Thai, English, Burmese. 8 cards, from ฿400. Also: ไทย https://hongdam.net/th/translate/ · မြန်မာ https://hongdam.net/my/translate/ · 中文 https://hongdam.net/zh/translate/ · Deutsch https://hongdam.net/de/translate/
-- [Shops & restaurants](https://hongdam.net/shop/) — Grab, menus, signs and payments for your shop. 15 cards, from ฿250. Also: ไทย https://hongdam.net/th/shop/ · မြန်မာ https://hongdam.net/my/shop/ · 中文 https://hongdam.net/zh/shop/ · Deutsch https://hongdam.net/de/shop/
-- [Shipping partners](https://hongdam.net/ship/) — Crafts and small parcels, sourced, packed and shipped. 4 cards, from ฿10,000. Also: ไทย https://hongdam.net/th/ship/ · မြန်မာ https://hongdam.net/my/ship/ · 中文 https://hongdam.net/zh/ship/ · Deutsch https://hongdam.net/de/ship/
-- [Lists & research](https://hongdam.net/data/) — Customer lists, data collected, questions answered. 7 cards, from ฿1,200. Also: ไทย https://hongdam.net/th/data/ · မြန်မာ https://hongdam.net/my/data/ · 中文 https://hongdam.net/zh/data/ · Deutsch https://hongdam.net/de/data/
-- [Merit](https://hongdam.net/merit/) — Merit made for you, blessings, su khwan and Lanna weddings. 6 cards, from ฿300. Also: ไทย https://hongdam.net/th/merit/ · မြန်မာ https://hongdam.net/my/merit/ · 中文 https://hongdam.net/zh/merit/ · Deutsch https://hongdam.net/de/merit/
-- [Tours & trips](https://hongdam.net/tours/) — Day tours, cars, guides, classes, lanterns and balloons. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/tours/ · မြန်မာ https://hongdam.net/my/tours/ · 中文 https://hongdam.net/zh/tours/ · Deutsch https://hongdam.net/de/tours/
-- [Outsourcing](https://hongdam.net/outsource/) — An assistant, a Thai service desk, calls and data entry. 6 cards, from ฿500. Also: ไทย https://hongdam.net/th/outsource/ · မြန်မာ https://hongdam.net/my/outsource/ · 中文 https://hongdam.net/zh/outsource/ · Deutsch https://hongdam.net/de/outsource/
-- [Weddings & events](https://hongdam.net/weddings/) — Weddings planned, brides looked after, events run, pages for the day. 6 cards, from ฿5,000. Also: ไทย https://hongdam.net/th/weddings/ · မြန်မာ https://hongdam.net/my/weddings/ · 中文 https://hongdam.net/zh/weddings/ · Deutsch https://hongdam.net/de/weddings/
+- [Shops & restaurants](https://hongdam.net/shop/) — Grab delivery, menus, signs and payments for your shop. 15 cards, from ฿250. Also: ไทย https://hongdam.net/th/shop/ · မြန်မာ https://hongdam.net/my/shop/ · 中文 https://hongdam.net/zh/shop/ · Deutsch https://hongdam.net/de/shop/
+- [Shipping for business partners](https://hongdam.net/ship/) — Crafts and small parcels: we find, pack and send them. 4 cards, from ฿10,000. Also: ไทย https://hongdam.net/th/ship/ · မြန်မာ https://hongdam.net/my/ship/ · 中文 https://hongdam.net/zh/ship/ · Deutsch https://hongdam.net/de/ship/
+- [Data & research](https://hongdam.net/data/) — Customer lists, collected data and answers to your questions. 7 cards, from ฿1,200. Also: ไทย https://hongdam.net/th/data/ · မြန်မာ https://hongdam.net/my/data/ · 中文 https://hongdam.net/zh/data/ · Deutsch https://hongdam.net/de/data/
+- [Buddhist merit & blessings](https://hongdam.net/merit/) — Merit-making for you, house blessings, su khwan (a ceremony that calls the spirit back) and Lanna (northern Thai) weddings. 6 cards, from ฿300. Also: ไทย https://hongdam.net/th/merit/ · မြန်မာ https://hongdam.net/my/merit/ · 中文 https://hongdam.net/zh/merit/ · Deutsch https://hongdam.net/de/merit/
+- [Tours & trips](https://hongdam.net/tours/) — Day tours, cars with drivers, guides, classes, lantern nights and balloon flights. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/tours/ · မြန်မာ https://hongdam.net/my/tours/ · 中文 https://hongdam.net/zh/tours/ · Deutsch https://hongdam.net/de/tours/
+- [Staff & office tasks](https://hongdam.net/outsource/) — An assistant, customer service in Thai, phone calls and data entry. 6 cards, from ฿500. Also: ไทย https://hongdam.net/th/outsource/ · မြန်မာ https://hongdam.net/my/outsource/ · 中文 https://hongdam.net/zh/outsource/ · Deutsch https://hongdam.net/de/outsource/
+- [Weddings & events](https://hongdam.net/weddings/) — Wedding planning, help for brides, event organising and web pages for the event. 6 cards, from ฿5,000. Also: ไทย https://hongdam.net/th/weddings/ · မြန်မာ https://hongdam.net/my/weddings/ · 中文 https://hongdam.net/zh/weddings/ · Deutsch https://hongdam.net/de/weddings/
 <!-- SHOP:END -->
+
+<!-- QUESTIONS:START -->
+## Questions
+
+- [Questions](https://hongdam.net/questions/): 211 questions asked on a move to Chiang Mai, from khao soi and sak yant to sex toys and visa runs, each linked to the Hongdam service that handles it. Also: ไทย https://hongdam.net/th/questions/ · မြန်မာ https://hongdam.net/my/questions/ · 中文 https://hongdam.net/zh/questions/ · Deutsch https://hongdam.net/de/questions/
+<!-- QUESTIONS:END -->
 
 <!-- SERVICES:START -->
 ## Services
@@ -61,118 +67,118 @@ Prices in Thai baht; a price with no unit is for one job. Order with the Buy but
 (https://hongdam.net/ and its category pages), LINE @964yxgnk, or nan@motdang.net.
 
 ### Outsourcing
-- Your assistant in Thailand: 10 hours a week — ฿15,000 a month. A Thai and English speaker for your calls, orders, pick-ups and paperwork, about 40 hours a month, checked by our operations lead.
-- Your assistant in Thailand: 20 hours a week — ฿30,000 a month. The same, about 80 hours a month.
-- Paper forms typed into a sheet — ฿1,000 per 100 forms. Handwritten Thai or English forms and receipts read and typed into a spreadsheet.
-- Subtitles and transcripts — ฿500 per 10 minutes. Thai, English or Burmese: a written transcript, or a subtitle file for your video.
-- Thai customer service desk — ฿12,000 a month. Your LINE OA, Messenger or email answered in Thai and English, weekdays 9 to 5, two channels, up to 600 chats a month.
-- Outbound calling — ฿5,000 per 10 hours. Calls in Thai or English to your list with your offer, sales or appointments, and each call's result in a sheet.
-- Thai voice recording — ฿1,000 a finished minute. Thai lines read and recorded for your app or video.
+- Your assistant in Thailand: 10 hours a week — ฿15,000 a month. A person who speaks Thai and English makes your calls, places orders, collects items and does paperwork, about 40 hours a month. The head of our operations team checks the work.
+- Your assistant in Thailand: 20 hours a week — ฿30,000 a month. The same help as the 10 hours a week option, about 80 hours a month.
+- Paper forms typed into a sheet — ฿1,000 per 100 forms. We read handwritten Thai or English forms and receipts and type them into a spreadsheet.
+- Subtitles and transcripts — ฿500 per 10 minutes. A transcript (a written copy of the speech) or a subtitle file for your video, in Thai, English or Burmese.
+- Thai customer service desk — ฿12,000 a month. We answer your LINE OA (LINE Official Account), Messenger or email in Thai and English. Hours are Monday to Friday, 9:00 to 17:00 Thailand time. This covers two channels and up to 600 chats a month.
+- Outbound calling — ฿5,000 per 10 hours. We call the people on your list in Thai or English with your offer, to sell or to make appointments. We record each call's result in a spreadsheet.
+- Thai voice recording — ฿1,000 a finished minute. We read Thai text aloud and record it for your app or video.
 
 ### Errands and calls
-- Phone call in Thai — ฿300 a call, up to 15 minutes. We call a shop, office, clinic, landlord or anyone else for you, then write you what they said.
-- Tradesperson booked — ฿500 a job. Plumber, electrician, air-con cleaning, pest control, locksmith, internet installer, movers or cleaners. We find one, explain the job in Thai, get the price before work starts, book the time and follow up. You pay their bill to them.
-- Someone there in person — ฿600 an hour. In Chiang Rai or Chiang Mai: we meet the tradesperson, landlord or delivery at your place, interpret, and check the work against the agreed price.
-- Errand — ฿300 an hour. In Chiang Rai or Chiang Mai: collect, deliver, buy, queue, or pay a bill at a counter. What we buy for you is charged at cost, with the receipt.
-- Thai form filled — ฿400 a form. A Thai form filled in for you, with an English label on each field and the places you sign marked.
+- Phone call in Thai — ฿300 a call, up to 15 minutes. We call a shop, office, clinic, landlord or anyone else for you. Then we write down what they said.
+- Tradesperson booked — ฿500 a job. We find a plumber, electrician, air-conditioner cleaner, pest-control worker, locksmith, internet installer, mover or cleaner. We explain the job in Thai, ask the price before work starts, book a time, and follow the job until it is done. You pay the worker directly.
+- Someone there in person — ฿600 an hour. In Chiang Rai or Chiang Mai, we meet the repair worker, landlord or delivery person at your place. We translate and check the work against the agreed price.
+- Errand — ฿300 an hour. In Chiang Rai or Chiang Mai, we collect things, deliver things, buy things, wait in line, or pay a bill for you in person. What we buy for you is charged at the price we pay, with the receipt.
+- Thai form filled — ฿400 a form. We fill in a Thai form for you, add an English label to each box, and mark where you sign.
 - Home help agreement — ฿100. An employment agreement for a cleaner, cook or nanny, in Thai and English, written to Ministerial Regulation No. 15, ready to print. https://motdang.net/home-help/agreement
-- Haggling buddy — ฿800 an hour. We bargain or settle for you in Thai, by phone or in person: a car or motorcycle dealer, an amulet seller, a deposit, a repair, a bill or a neighbour. We write you each answer.
-- A written plan for a hard Thai question — ฿2,000. Bank, visa, property, a death in the family or a school: the steps, the offices, the papers and the costs, written out.
-- Document legalised (MFA seal) — ฿1,500 a document. A document taken for the Ministry of Foreign Affairs seal, or to a notary, and brought back. Government fees at cost.
-- ID.me, VA or SSA sign-in from abroad — ฿1,500 a sitting. For US veterans and their families in Thailand: we sit with you through the sign-in and the forms, by video or in person. You type your own passwords.
-- Comparison shopping — ฿1,500 a thing to buy. Quotes gathered and set side by side for one thing you want to buy: insurance, internet, a car, appliances, a school, hospital packages. The fee is the same whether or not you buy.
-- Car bought with you — ฿8,000 a car. Cars shortlisted to your budget, dealers visited and test drives booked with you, and the registration put in your name at the Department of Land Transport. Haggling is extra, by the hour. The car, and a mechanic's check of a used one, at cost.
-- Motorcycle bought with you — ฿4,000 a motorcycle. Scooters and motorcycles shortlisted, shops visited and test rides booked with you, and the registration put in your name. Haggling is extra, by the hour. The bike, and a mechanic's check of a used one, at cost.
+- Haggling buddy — ฿800 an hour. We bargain or settle disputes for you, in Thai, by phone or in person. This can be with a car or motorcycle dealer, an amulet seller or a neighbour, or about a deposit, a repair or a bill. We write down each answer for you.
+- A written plan for a hard Thai question — ฿2,000. For a hard problem in Thailand: a bank, a visa, property, a death in the family or a school. We write down the steps, the offices to visit, the papers you need and the costs.
+- Document legalised (MFA seal) — ฿1,500 a document. We take your document to the Ministry of Foreign Affairs for an official seal, or to a notary (a person who certifies papers), and bring it back. Government fees are charged at the price we pay.
+- ID.me, VA or SSA sign-in from abroad — ฿1,500 a sitting. For US veterans and their families in Thailand. We stay with you while you sign in to ID.me, Veterans Affairs (VA) and Social Security (SSA) and fill in the forms, by video or in person. You type your own passwords.
+- Comparison shopping — ฿1,500 a thing to buy. We ask sellers for prices and put them in one list, for one thing you want to buy: insurance, internet, a car, appliances, a school or hospital packages. Our fee is the same whether you buy or not.
+- Car bought with you — ฿8,000 a car. We choose cars that fit your budget, go to dealers with you, and book test drives. We put the registration in your name at Thailand's Department of Land Transport. Bargaining costs extra, by the hour. The car, and a mechanic's check of a used car, are charged at the price we pay.
+- Motorcycle bought with you — ฿4,000 a motorcycle. We pick scooters and motorcycles for you to look at, go to shops with you, and book test rides. We put the registration in your name. Bargaining costs extra, by the hour. The motorcycle, and a mechanic's check of a used one, are charged at the price we pay.
 
 ### Retirement and care
-- Retiring in Thailand: set-up — ฿25,000. One plan for the visa (filed through Chiang Mai Visa Desk), bank account, phone, housing shortlist, hospital registration, and insurance quotes from a licensed broker. Government fees and rent at cost.
-- Retiring in Thailand: monthly — ฿5,000 a month, 4 hours. One person to call, 4 hours of help a month, and renewal dates kept with a note ahead of each.
-- Retiring in Thailand: extra hours — ฿600 an hour. Past the four hours, by the hour.
-- Care home placement — ฿20,000. Care homes shortlisted, visited and compared, and the move arranged. The care itself is paid to the home.
-- Visit to an older person — ฿1,200 a visit. Someone visits, checks in and writes the family what they saw. Not a nurse; no medicine handled.
-- Visits, weekly — ฿4,000 a month, 4 visits. Four visits a month, each written up for the family.
-- Specialist visit with an interpreter — ฿3,000, up to 4 hours. A clinic or specialist found and booked, with an interpreter there with you. Clinic fees at cost.
-- Specialist booked — ฿800. Found and booked, with no interpreter.
-- When someone dies in Thailand — ฿15,000. The death registered, embassy papers prepared, and cremation or repatriation arranged with a funeral home. Funeral home, embassy and translation at cost.
-- Lab test arranged — ฿2,500, lab at cost. A sample taken to a Thai lab, and the report translated.
-- Clean air at home — ฿2,500, equipment at cost. A PM2.5 sensor and a purifier sized for up to 3 rooms, placed, with a filter plan.
-- After an accident — ฿8,000 a case. With you at the police station, the report translated, and the insurer or rental shop dealt with in Thai. A lawyer, if one is needed, is separate.
-- Caregiver found and hired — ฿12,000. A caregiver found, interviewed with you and hired. The wage is paid by the family.
-- Compound tested at a lab — ฿3,000, up to 3 samples. Purity or identity by HPLC, GC-MS or NMR at a Thai university or private lab, for compounds legal to hold in Thailand. Lab fee and courier at cost; the lab's report is its own.
-- Blood test booked: basic panel — ฿1,500. Booked at a licensed lab or hospital, which draws and reads the blood; the report translated. The lab's fee at cost.
-- Health checkup booked — ฿3,000. A full checkup booked at a hospital, someone with you on the day, the report translated. The hospital's fee at cost.
-- Clinic visit: extra hours — ฿800 an hour. Past the four hours, by the hour.
+- Retiring in Thailand: set-up — ฿25,000. One plan for the visa (applied for through Chiang Mai Visa Desk), bank account, phone, a short list of homes, hospital registration, and insurance prices from a licensed broker. You pay government fees and rent at their own price.
+- Retiring in Thailand: monthly — ฿5,000 a month, 4 hours. One person to call, 4 hours of help a month, and a reminder before each renewal date.
+- Retiring in Thailand: extra hours — ฿600 an hour. After the four hours, paid by the hour.
+- Care home placement — ฿20,000. We choose a short list of care homes, visit and compare them, and arrange the move. You pay the home for the care itself.
+- Visit to an older person — ฿1,200 a visit. Someone visits and writes to the family about what they saw. The visitor is not a nurse and does not give medicine.
+- Visits, weekly — ฿4,000 a month, 4 visits. Four visits a month, each with a written report for the family.
+- Specialist visit with an interpreter — ฿3,000, up to 4 hours. We find and book a clinic or specialist, and an interpreter goes with you. You pay the clinic's fees at the clinic's own price.
+- Specialist booked — ฿800. We find and book it. No interpreter comes.
+- When someone dies in Thailand — ฿15,000. We register the death, prepare embassy papers, and arrange cremation or sending the body to your home country with a funeral home. You pay the funeral home, embassy and translation fees at the price we pay.
+- Lab test arranged — ฿2,500, lab at cost. We take a sample to a Thai lab and translate the report.
+- Clean air at home — ฿2,500, equipment at cost. We choose and place a PM2.5 (fine dust) sensor and an air purifier that fit up to 3 rooms, and plan your filter changes.
+- After an accident — ฿8,000 a case. We go with you to the police station, translate the report, and talk to the insurer or rental shop in Thai. A lawyer, if you need one, is not included.
+- Caregiver found and hired — ฿12,000. We find a caregiver, interview them with you and hire them. The family pays the wage.
+- Compound tested at a lab — ฿3,000, up to 3 samples. Purity or identity tests by HPLC, GC-MS or NMR (lab methods) at a Thai university or private lab, for compounds that are legal to hold in Thailand. You pay the lab fee and courier at the price we pay. The report is the lab's own.
+- Blood test booked: basic panel — ฿1,500. We book it at a licensed lab or hospital, which takes and tests the blood. We translate the report. You pay the lab's fee at the price we pay.
+- Health checkup booked — ฿3,000. We book a full checkup at a hospital, go with you on the day, and translate the report. You pay the hospital's fee at the price we pay.
+- Clinic visit: extra hours — ฿800 an hour. After the four hours, paid by the hour.
 
 ### Moving house abroad
 We don't ship; we run the move. You pay the movers and the freight forwarder directly. Whether used household goods come in duty-free depends on your visa and your time abroad, and Thai customs decides.
-- Ship my whole house — ฿30,000 a move. Into or out of Thailand in a 20-foot container: movers and freight forwarders found and compared, quotes in writing, packing and pickup booked, the inventory and customs papers for household goods, the calls in Thai, and the shipment followed to the door. https://motdang.net/sites/ship-to-thailand/
-- Ship my whole house: one room — ฿15,000 a move. The same for one room, about 5 to 10 cubic metres in a shared container.
-- Ship my whole house: a few boxes — ฿8,000 a move. The same for up to 10 boxes, by air or in a shared container.
-- Luggage or a scooter sent across Thailand — ฿800, courier at cost. Picked up, packed and booked with a courier or the train, and followed to the door.
+- Ship my whole house — ฿30,000 a move. Moving house into or out of Thailand in a 20-foot shipping container. We find and compare moving companies and shipping agents, get written quotes, and book packing and pickup. We prepare the goods list and customs papers for household goods, make the calls in Thai, and track the shipment until it arrives. https://motdang.net/sites/ship-to-thailand/
+- Ship my whole house: one room — ฿15,000 a move. The same service as moving a whole house, for one room: about 5 to 10 cubic metres in a container shared with other customers.
+- Ship my whole house: a few boxes — ฿8,000 a move. The same service as moving a whole house, for up to 10 boxes, sent by air or in a container shared with other customers.
+- Luggage or a scooter sent across Thailand — ฿800, courier at cost. We pick up your luggage or scooter, pack it, book a delivery company or the train, and track it until it arrives.
 
 ### Hotels and homes
-- Find me a place to rent — ฿6,000. A shortlist from what you need, up to 5 viewings booked and joined, the lease read in English, and the deposit terms checked.
-- House or land checked before you buy — ฿8,000. The land office record read, the assessed price set against the asking price, the street and neighbours looked at, and a written report. A lawyer's title check is separate.
-- Booking website for your hotel or rental — ฿30,000. Guests book on your own site and pay by PromptPay; bookings arrive in your back office.
-- Booking website: kept up — ฿3,000 a month. Rates, rooms and changes kept up each month.
-- Listing sheet for an agency — ฿2,500 a month. Your listings on one sheet that drops stale offers by itself.
-- Car or scooter rental arranged — ฿800 a rental. Found, compared and booked for your dates. The rental, deposit and insurance are the shop's terms, paid to the shop.
-- Equipment or venue rental arranged — ฿3,000 a rental. Sound, tents, tables or a venue found, compared and booked. The rental is paid to the supplier.
+- Find me a place to rent — ฿6,000. A shortlist of places that match what you need. We book up to 5 visits to see places and go with you. We explain the lease in English and check the deposit terms.
+- House or land checked before you buy — ฿8,000. We read the Thai land office record, compare the official value with the asking price, look at the street and neighbours, and write a report. A lawyer's check of the title deed is separate.
+- Booking website for your hotel or rental — ฿30,000. Guests book on your own website and pay by PromptPay (Thailand's bank-to-bank QR payment). Bookings arrive in your admin area (the private pages for managing your website).
+- Booking website: kept up — ฿3,000 a month. Each month we update your rates and rooms and make the changes you ask for.
+- Listing sheet for an agency — ฿2,500 a month. Your property listings in one spreadsheet. Old offers are removed automatically.
+- Car or scooter rental arranged — ฿800 a rental. We find, compare and book a car or scooter for your dates. The rental fee, deposit and insurance follow the rental shop's terms, and you pay the shop.
+- Equipment or venue rental arranged — ฿3,000 a rental. We find, compare and book sound equipment, tents, tables or a place for an event. You pay the rental fee to the supplier.
 - Your place rented out: tenant found — 10% of the first year's rent. Tenant found and checked, the lease, and a check-in report with photos. For leases of 12 months.
 - Your place rented out: looked after — 10% of rent collected, at least ฿1,500 a month. Rent collected, repairs arranged and the owner sent a monthly statement.
-- Bank-sale homes found for you — ฿5,000 a shortlist. Up to 10 homes, condos or plots that banks are selling, matched to your area, budget and title type, each with the bank's price and how to bid. SAM, one of the sellers, pays referrers a fee until 30 Dec 2026.
+- Bank-sale homes found for you — ฿5,000 a shortlist. Up to 10 homes, condos or plots of land that banks are selling, each matched to your area, budget and type of title deed, with the bank's price and how to bid. Until 30 December 2026, SAM (one of the sellers) pays a fee to people who send it buyers.
 
 ### Tours and trips
-- Chiang Rai day, private — ฿8,000 a car, up to 3. Car, fuel and a licensed guide: White Temple, Blue Temple, Black House, the Golden Triangle or Mae Salong. Entries, boat and lunch at cost.
-- Chiang Mai day, private — ฿8,000 a car, up to 3. Car, fuel and a licensed guide: Doi Suthep and the old city, Doi Inthanon or Mae Kampong. Park fees and lunch at cost.
-- Three days in the north — ฿20,000 a person, sharing. Two nights in a twin room, car, guide, breakfasts and two lunches. Entries and dinners at cost.
-- Car and driver for a day — ฿4,000, 9 hours. Fuel and tolls included; overtime and parking at cost.
-- Licensed guide for a day, English — ฿3,000, 8 hours. The guide's meals and entries at cost.
-- Licensed guide for a day, other languages — ฿4,000, 8 hours. Chinese, Japanese, Korean or others. The guide's meals and entries at cost.
-- Class or workshop booked, with a translator — ฿1,500 a booking, up to 4. Muay thai, cooking, silver or weaving, with a translator there. The venue's price at cost.
-- Lantern night in Lamphun — ฿4,000 a seat. A November lantern night at Wat Phra That Hariphunchai: transport from Chiang Mai, dinner and a guide.
-- Balloon flight, Chiang Rai — ฿12,000 a person. A shared basket in the balloon season, booked, with transfers. Festival entry at cost.
-- Balloon flight, Chiang Mai — ฿10,000 a person. A shared basket from November to February, booked, with transfers.
-- Paramotor flight — ฿4,000 a person. A tandem flight with a pilot, booked, with transfers.
+- Chiang Rai day, private — ฿8,000 a car, up to 3. A car, fuel and a licensed guide to White Temple, Blue Temple, Black House, the Golden Triangle or Mae Salong. Entry fees, boat and lunch are charged at the price we pay.
+- Chiang Mai day, private — ฿8,000 a car, up to 3. A car, fuel and a licensed guide to Doi Suthep and the old city, Doi Inthanon or Mae Kampong. Park fees and lunch are charged at the price we pay.
+- Three days in the north — ฿20,000 a person, sharing. Two nights in a twin room (two beds), a car, a guide, breakfasts and two lunches. Entry fees and dinners are charged at the price we pay.
+- Car and driver for a day — ฿4,000, 9 hours. Fuel and road tolls are included. Extra hours after the first 9 and parking are charged at the price we pay.
+- Licensed guide for a day, English — ฿3,000, 8 hours. The guide's meals and entry fees are charged at the price we pay.
+- Licensed guide for a day, other languages — ฿4,000, 8 hours. A guide who speaks Chinese, Japanese, Korean or another language. The guide's meals and entry fees are charged at the price we pay.
+- Class or workshop booked, with a translator — ฿1,500 a booking, up to 4. Muay thai (Thai boxing), cooking, silver-making or weaving, with a translator beside you. The class fee is charged at the price we pay.
+- Lantern night in Lamphun — ฿4,000 a seat. A lantern festival night in November at Wat Phra That Hariphunchai (a temple in Lamphun): transport from Chiang Mai, dinner and a guide.
+- Balloon flight, Chiang Rai — ฿12,000 a person. A place in a shared hot-air balloon basket in the balloon season, booked for you, with transport there and back. Festival entry is charged at the price we pay.
+- Balloon flight, Chiang Mai — ฿10,000 a person. A place in a shared hot-air balloon basket from November to February, booked for you, with transport there and back.
+- Paramotor flight — ฿4,000 a person. A flight in a paramotor (a paraglider with an engine), flying together with a pilot. We book it, with transport there and back.
 
 ### Translation and interpreting
-- New translation — ฿1,500 up to 5 pages, then ฿500 a page. Between Thai, English and Burmese: passports, house registration, certificates, contracts, bank letters, school and medical papers, business text. https://hongdam.net/translation/
-- Checking a translation — ฿500 up to 5 pages, then ฿150 a page. A translation read against the original, with corrections marked. https://hongdam.net/translation/
+- New translation — ฿1,500 up to 5 pages, then ฿500 a page. Translation between Thai, English and Burmese of passports, house registration documents, certificates, contracts, bank letters, school and medical documents, and business documents. https://hongdam.net/translation/
+- Checking a translation — ฿500 up to 5 pages, then ฿150 a page. We read a translation you already have against the original text and mark the corrections. https://hongdam.net/translation/
 - Translator's stamp — ฿100 a page. The date, the translator's name and a QR code on each page. We don't notarize. Send a photo of a stamped page and we confirm whether it is ours. https://hongdam.net/translation/
-- Interpreter by phone or video — ฿400 per 30 minutes. Thai, English or Burmese, with the police, a hospital, a landlord, a school or a shop.
-- Interpreter in person — ฿3,000 up to 4 hours. In Chiang Rai or Chiang Mai: immigration, the employment office, hospitals, police, banks, job interviews and staff training. Travel in town included; further, at cost.
-- Interpreter in person, full day — ฿5,000 up to 8 hours. The same, for a whole day: a factory visit, a trade fair, a hospital stay, or a day of meetings.
-- Chinese translation — ฿1,200 a page. Chinese to or from Thai or English: papers, contracts, menus, websites and business text.
-- Chinese interpreter by phone or video — ฿600 per 30 minutes. Chinese with Thai or English, for a call, a meeting or a supplier.
-- Chinese interpreter in person — ฿4,000 up to 4 hours. In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings. Travel in town included; further, at cost.
-- Web page translation check — ฿400 a page, up to 400 words. A page of your site checked in Thai or English, with the fixes written in.
-- Shan pages — ฿800 a page. Text put into Shan from Thai, English or Burmese.
-- Lanna manuscript transcription — ฿500 a leaf. A palm-leaf or folded-paper manuscript in Tai Tham script, written out in Thai script.
-- Thai lessons — ฿600 an hour. By video, or in person in Chiang Rai or Chiang Mai.
-- German pages, Swiss spelling — ฿1,200 a page, up to 300 words. A web page put into German with Swiss spelling.
+- Interpreter by phone or video — ฿400 per 30 minutes. We interpret in Thai, English or Burmese when you talk to the police, a hospital, a landlord, a school or a shop.
+- Interpreter in person — ฿3,000 up to 4 hours. In Chiang Rai or Chiang Mai: the immigration office, the employment office, hospitals, police stations, banks, job interviews and staff training. Travel inside the city is included; farther away is charged at the price we pay.
+- Interpreter in person, full day — ฿5,000 up to 8 hours. In-person interpreting in Chiang Rai or Chiang Mai, like the 4-hour option, but for a whole day. Examples: a factory visit, a trade fair, a hospital stay or a day of meetings.
+- Chinese translation — ฿1,200 a page. Translation between Chinese and Thai or English: documents, contracts, menus, websites and business texts.
+- Chinese interpreter by phone or video — ฿600 per 30 minutes. We interpret between Chinese and Thai or English when you have a call, a meeting or a talk with a supplier.
+- Chinese interpreter in person — ฿4,000 up to 4 hours. In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings. Travel inside the city is included; farther away is charged at the price we pay.
+- Web page translation check — ฿400 a page, up to 400 words. We check one page of your website in Thai or English and write the corrections into the text.
+- Shan pages — ฿800 a page. We translate your text into Shan (a language of Myanmar) from Thai, English or Burmese.
+- Lanna manuscript transcription — ฿500 a leaf. A Lanna (northern Thai) manuscript on palm leaves or folded paper, written in Tai Tham script (the Lanna script), changed into Thai letters.
+- Thai lessons — ฿600 an hour. Lessons in the Thai language, by video or in person in Chiang Rai or Chiang Mai.
+- German pages, Swiss spelling — ฿1,200 a page, up to 300 words. A web page translated into German, using Swiss spelling (German as it is written in Switzerland).
 
 ### Shops and restaurants
-- Grab start — ฿3,000. Your shop signed up on GrabFood with you: documents, the first menu up to 40 items, photos fixed, names in Thai and English.
-- Grab menu refresh — ฿1,500. For a shop already on Grab: photos, names, sizes and add-ons, up to 40 items.
-- Grab care — ฿1,000 a month. Review replies twice a week, the month's report read, and three changes made.
-- Signs and menus translated — ฿250 a sign or menu page. Into Thai, English or Burmese, for customers or staff.
-- Print files — ฿800 a sign, stand, board or sheet. Table signs, QR stands, price boards and sheets, ready to print.
-- Product photos — ฿400 an item, three pictures. On a plain background, ready for Grab, Shopee, Etsy, eBay or your own site.
-- Pay box — ฿4,000. A PromptPay QR code for the exact amount on your site or LINE, with payment slips checked by machine. SlipOK's fee, if any, is yours.
+- Grab start — ฿3,000. We register your shop on GrabFood (Grab's food-delivery app) with you: your documents, your first menu of up to 40 items, edited photos, and menu names in Thai and English.
+- Grab menu refresh — ฿1,500. For a shop already on Grab (a food-delivery app). We update the photos, names, sizes and add-ons of up to 40 menu items.
+- Grab care — ฿1,000 a month. We reply to your reviews twice a week, read your Grab report each month, and make 3 changes each month.
+- Signs and menus translated — ฿250 a sign or menu page. We translate a sign or menu page into Thai, English or Burmese, for customers or staff.
+- Print files — ฿800 a sign, stand, board or sheet. Table signs, QR code stands, price boards and flyers, as files ready to print.
+- Product photos — ฿400 an item, three pictures. Photos of your product on a plain background, ready to upload to Grab, Shopee, Etsy, eBay or your own website.
+- Pay box — ฿4,000. A PromptPay QR code for the exact amount, on your website or in LINE (a chat app). A program checks each bank transfer slip (a customer's proof of payment). SlipOK's fee, if any, is yours.
 - Page on sites.motdang.net — Free · Gold ฿3,000 a year · hotels ฿555 a month. A page for your shop, hotel or service in Mot Dang's city directory: hours, map, photos, menu, messages. https://sites.motdang.net/make
-- Restaurant desk — ฿6,000 a month. Weekly: competitors' and Grab prices on one page, menu prices that follow demand, and replies to reviews.
-- Online ordering for your café — ฿10,000. Customers order from their phones and the orders go to your point-of-sale (built for Clover).
-- Etsy or eBay shop opened — ฿5,000. The account, the first listings with photos and English words, shipping and payments set.
-- Etsy or eBay shop run — ฿4,000 a month. Listings, messages and orders handled each month.
-- Online shop — ฿25,000, up to 30 products. Your own shop on your domain in Thai and English, with PromptPay and card checkout and shipping options. Platform and gateway fees are yours.
-- LINE MAN or ShopeeFood start — ฿2,500 a platform. Your shop signed up with you: documents, the first menu up to 40 items, photos, names in Thai and English.
-- Facebook page care — ฿8,000 a month. 12 posts with pictures and captions, comments and inbox answered on weekdays, and a monthly report.
-- Ads run for you — ฿8,000 a month a platform. Facebook and Instagram, TikTok or Google: ads made, run and reported each month, in your own ad account. Ad spend at cost.
-- Market stall page with a QR sign — ฿3,000. A page for your stall, and a QR table sign that opens it.
+- Restaurant desk — ฿6,000 a month. Each week: one page with your competitors' prices and Grab (a food-delivery app) prices, menu prices that follow demand, and replies to your reviews.
+- Online ordering for your café — ฿10,000. Customers order on their phones, and the orders go to your cash register system (point-of-sale). It is built for Clover.
+- Etsy or eBay shop opened — ฿5,000. We open your account and add your first product listings with photos and English text. We also prepare shipping and payment settings.
+- Etsy or eBay shop run — ฿4,000 a month. We manage your product listings, customer messages and orders each month.
+- Online shop — ฿25,000, up to 30 products. Your own online shop at your own web address, in Thai and English. Customers pay by PromptPay or card and choose a delivery option. You pay the fees of the shop and payment services.
+- LINE MAN or ShopeeFood start — ฿2,500 a platform. We register your shop with you on LINE MAN or ShopeeFood (food-delivery apps): your documents, your first menu of up to 40 items, photos, and menu names in Thai and English.
+- Facebook page care — ฿8,000 a month. 12 posts a month with pictures and captions. We answer comments and private messages on weekdays. You get a monthly report.
+- Ads run for you — ฿8,000 a month a platform. We make ads and run them on Facebook and Instagram, TikTok or Google, in your own ad account. We report each month. Ad money is charged at the price we pay.
+- Market stall page with a QR sign — ฿3,000. A web page for your market stall, and a table sign with a QR code that opens the page.
 
 ### Shipping and trade
 For partners on a standing agreement, not single parcels. Postage, duties and taxes at cost. A partner's fees come to at least ฿3,000 a month. Buddha images and antiques need a Fine Arts Department licence to leave Thailand.
-- Partner set-up — ฿10,000. The agreement, your product list with tariff codes, a packing spec, export paperwork templates and carrier accounts.
+- Partner set-up — ฿10,000. The agreement with Hongdam, your product list with tariff codes (the customs numbers for each type of goods), packing instructions, export paperwork templates and courier accounts.
 - Drop-ship fulfilment — ฿100 an order. Your buyer orders from you; we pick, wrap, label and hand it to the carrier, and send the buyer the tracking.
 - Storage in Chiang Rai — ฿300 a shelf a month. Your stock on a shelf of its own, counted when it comes in and when it goes out.
 - Sourcing from makers — 12% of the goods' value, at least ฿500 an order. Textiles, silver, woodwork, ceramics, coffee and hill-tribe crafts from northern Thailand: found, ordered, checked and collected.
@@ -181,76 +187,76 @@ For partners on a standing agreement, not single parcels. Postage, duties and ta
 - Import clearance — ฿1,200 a shipment. Small parcels into Thailand for a partner, cleared through customs.
 
 ### Trips, events and ceremonies
-- Trip plan, booked in your name — ฿3,000 a trip. Day by day, with drivers, rooms, classes and tables booked in your name; you pay each place directly.
-- Event page with tickets — ฿8,000. Seats or tickets paid by PromptPay, a QR code for the door, a calendar file, and prices that can step with demand.
-- Charity event kit — ฿10,000. The page, raffle or ticket QR codes, the sponsor list and the thank-yous.
-- Page for a wedding, ordination or memorial — ฿5,000. Photos, video, the day's times and a map, in Thai and English, to share on LINE.
-- A place you love, as a page and a framed print — ฿8,000. Your memories of a house, a town or a tree, written and drawn as a page, with an A3 framed print.
-- Spirit house bought, placed and blessed — ฿3,000, house and ceremony at cost. For a new home or shop: the spirit house chosen with you, the maker and the officiant booked, the day arranged.
-- Sak yant, off the beaten path — ฿4,000 a visit. An ajarn or a monk near where you are in the north, found and asked for you, the visit arranged, and an interpreter beside you for up to 4 hours. The ajarn chooses the yant and may say no. The yant and the offering go to the ajarn directly; transport at cost.
-- Wedding planning, full — ฿60,000 a wedding. Venue, vendors, budget and timeline, and the day run for you. Vendors at cost; the legal marriage is registered at the district office.
-- Wedding planning, partial — ฿30,000 a wedding. You have the venue; we line up the vendors and the timeline, and run the day. Vendors at cost.
-- Wedding day coordination — ฿20,000. Your plan run on the day: vendors, timings and guests.
-- Bride concierge — ฿12,000. Dress, hair and makeup, fittings, the photographer and your schedule on the day. Their fees at cost.
-- Event planning — ฿20,000 an event. A party, a launch, a company dinner or a retreat planned and run. Venue, catering and sound at cost.
+- Trip plan, booked in your name — ฿3,000 a trip. A plan for each day of your trip. We book drivers, rooms, classes and restaurant tables in your name, and you pay each place directly.
+- Event page with tickets — ฿8,000. A web page for selling seats or tickets, paid by PromptPay (Thailand's bank QR payment). It has a QR code for entry, a calendar file and prices that rise or fall with demand.
+- Charity event kit — ฿10,000. A web page for your event, QR codes for the raffle (prize draw) or tickets, a sponsor list and thank-you messages.
+- Page for a wedding, ordination or memorial — ฿5,000. A web page with photos, video, the schedule for the day and a map, in Thai and English, that you can share on LINE.
+- A place you love, as a page and a framed print — ฿8,000. Your memories of a house, a town or a tree, written and drawn as a web page, with a framed A3 print (30 x 42 cm).
+- Spirit house bought, placed and blessed — ฿3,000, house and ceremony at cost. For a new home or shop: we choose the spirit house (a small shrine) with you and book the maker and the person who leads the ceremony. We arrange the day.
+- Sak yant, off the beaten path — ฿4,000 a visit. We find an ajarn (master) or monk near you in northern Thailand and ask for a sak yant (sacred tattoo) for you. We arrange the visit, with an interpreter beside you for up to 4 hours. The ajarn chooses the yant (design) and may say no. You pay the ajarn directly for the yant and offering. Transport is charged at the price we pay.
+- Wedding planning, full — ฿60,000 a wedding. We plan the place, suppliers, budget and schedule, and run the day. Suppliers are charged at the price we pay. The legal marriage is registered at the district office.
+- Wedding planning, partial — ฿30,000 a wedding. You have the place for the wedding. We find the suppliers, make the schedule and run the wedding day. Suppliers are charged at the price we pay.
+- Wedding day coordination — ฿20,000. We run your wedding plan on the day: the suppliers, the timings and the guests.
+- Bride concierge — ฿12,000. Help with your dress, hair and makeup, dress fittings, the photographer and your schedule on the wedding day. Each supplier's fees are charged at the price we pay.
+- Event planning — ฿20,000 an event. We plan and run a party, a launch event, a company dinner or a team trip. The place, food and sound equipment are charged at the price we pay.
 
 ### Luck
-- Reading, written in English — US$99. A written reading of your chart from your birth date, time and place, in English.
-- Thai or Lanna reading, in Thai — ฿2,500. A written Thai or Lanna reading from your birth date and time, in Thai, with a 30-minute call after.
-- Bazi reading — ฿3,000. Your four pillars from your birth date and time, with the ten-year luck pillars, written in English or Chinese.
-- I Ching reading — ฿2,000. Your question cast and read, written in English or Chinese.
-- Auspicious date, in English — US$59. Two dates for a wedding, a move, an opening or a new car, with the reasons, in English.
-- Auspicious date, in Thai — ฿2,000. Two dates for a wedding, a move, an opening or a new car, with the reasons, in Thai.
-- Auspicious name for a person — ฿1,500. Three names for a baby or a name change, with their meanings.
-- Auspicious name for a business — ฿3,000. Three names for a shop or company, with their meanings.
-- Lucky phone number or plate — ฿600. One number read, or three candidates picked, for a phone or a car plate.
-- Name charm — US$59. A small charm drawn with your name, with a photo of its blessing. Shipping extra.
-- Pha yant drawn for you — ฿5,000. A yant cloth about 55 by 45 cm, drawn by an ajarn with your name and birth date. The ajarn's khan khru, if any, at cost.
-- Amulet opinion from photos — ฿500 an amulet. What an amulet is and what similar ones sell for, from your photos. An opinion, not a certificate.
-- Amulet found for you — ฿1,000, amulet at cost. Found at a market in Chiang Mai or Chiang Rai, with photos before you pay for it. Haggling is extra, by the hour. Shipping extra.
-- Almanac or fortune calculator for your site — ฿10,000. A Lanna calendar, Bazi or I Ching calculator on your own site.
-- Lanna almanac clock — ฿12,000. A solar-powered e-ink clock showing the Lanna calendar day, for a temple, a hotel or a home.
+- Reading, written in English — US$99. A written reading of your horoscope chart, made from your birth date, time and place, in English.
+- Thai or Lanna reading, in Thai — ฿2,500. A horoscope reading in Thai or Lanna (northern Thai) astrology, made from your birth date and time and written in Thai, with a 30-minute call afterwards.
+- Bazi reading — ฿3,000. Your Bazi chart (the four pillars of Chinese astrology) from your birth date and time, with the ten-year luck periods, written in English or Chinese.
+- I Ching reading — ฿2,000. We answer your question with the I Ching (an old Chinese fortune method) and write the answer in English or Chinese.
+- Auspicious date, in English — US$59. Two auspicious (lucky) dates for a wedding, a house move, a shop opening or a new car, with the reasons, in English.
+- Auspicious date, in Thai — ฿2,000. Two auspicious (lucky) dates for a wedding, a house move, a shop opening or a new car, with the reasons, in Thai.
+- Auspicious name for a person — ฿1,500. Three lucky names for a baby or for a person changing their name, with their meanings.
+- Auspicious name for a business — ฿3,000. Three lucky names for a shop or company, with their meanings.
+- Lucky phone number or plate — ฿600. We check one phone number or car license plate for luck, or pick three lucky numbers for you.
+- Name charm — US$59. A small charm drawn with your name, with a photo taken at its blessing. Shipping costs extra.
+- Pha yant drawn for you — ฿5,000. A yant (sacred design) cloth, about 55 by 45 cm, drawn by an ajarn (master) with your name and birth date. Any khan khru (gift to the teacher) is charged at the price we pay.
+- Amulet opinion from photos — ฿500 an amulet. From your photos, we say what your amulet is and what similar amulets sell for. This is an opinion, not an official certificate.
+- Amulet found for you — ฿1,000, amulet at cost. We find an amulet at a market in Chiang Mai or Chiang Rai and send you photos before you pay. Asking the seller for a lower price is extra, charged by the hour. Shipping is extra.
+- Almanac or fortune calculator for your site — ฿10,000. A calculator on your own website for the Lanna (northern Thai) calendar, Bazi or I Ching (Chinese fortune systems).
+- Lanna almanac clock — ฿12,000. A solar-powered clock with a paper-like e-ink screen, showing the date in the Lanna (northern Thai) calendar, for a temple, a hotel or a home.
 
 ### Merit
-- Food for monks at dawn, for you — ฿300. Alms given at dawn in your name, with a video and the date.
-- Sangkhathan set offered for you — ฿800. A sangkhathan set offered at a wat in your name, with photos and the date.
-- Robes, an image or a donation offered for you — ฿500, the item at cost. Robes, a Buddha image or a donation offered at a wat in your name, with photos.
-- Fish released for you — ฿500. Native fish released into permitted water in your name, with a video.
-- Merit for someone who died — ฿3,000, monks' food and envelopes at cost. Merit on the 7th, 50th or 100th day: monks invited, the rite arranged, photos sent.
-- House or shop blessing — ฿8,000, food and offerings at cost. Nine monks invited, the ceremony master, altar, seats and a translator arranged. Monks' food, offerings, envelopes and guests' food at cost.
-- Su khwan ceremony arranged — ฿3,000. A mo khwan found and the ceremony arranged, with a translator. The bai si tray, offerings and the mo khwan's khan khru at cost.
-- Lanna wedding ceremony arranged — ฿25,000. Monks, the khwan rite, Lanna dress fitting and the running order. Venue, food, photographer and envelopes at cost; the legal registration is at the district office.
+- Food for monks at dawn, for you — ฿300. We give food to monks in the early morning in your name, and send you a video and the date.
+- Sangkhathan set offered for you — ฿800. We offer a sangkhathan set (a gift pack for monks) at a wat (Thai Buddhist temple) in your name, and send you photos and the date.
+- Robes, an image or a donation offered for you — ฿500, the item at cost. We offer robes for monks, a Buddha image (statue) or a money donation at a wat (temple) in your name, and send you photos.
+- Fish released for you — ฿500. We release native Thai fish into water where this is allowed, in your name, and send you a video.
+- Merit for someone who died — ฿3,000, monks' food and envelopes at cost. Merit (Buddhist good deeds) on the 7th, 50th or 100th day after the death: we invite monks, arrange the ceremony and send you photos.
+- House or shop blessing — ฿8,000, food and offerings at cost. We invite nine monks and arrange the ceremony: the person who leads it, the altar table, seats and a translator. Monks' food, gifts for the monks, donation envelopes and guests' food are charged at the price we pay.
+- Su khwan ceremony arranged — ฿3,000. We find a mo khwan (who leads the rite) and arrange the su khwan ceremony (a spirit blessing), with a translator. The bai si tray (flowers for the rite), offerings and the mo khwan's khan khru (gift to the teacher) are charged at the price we pay.
+- Lanna wedding ceremony arranged — ฿25,000. We arrange monks, a khwan rite (spirit blessing), a fitting for Lanna (northern Thai) dress and the schedule. The place, food, photographer and money envelopes are charged at the price we pay. The legal marriage is registered at the district office.
 
 ### Websites and apps
-- Minisite — ฿10,000. One page or a few, in Thai and English, on your own address.
-- Bilingual website — ฿30,000. A site in Thai and English on your own domain. https://hongdam.net/portfolio/
-- Finish my vibe code: check — ฿5,000. A site or app half-built with an AI tool (Lovable, Bolt, Replit, Cursor, v0) read through: a written list of what is broken and which keys, logins or payments are exposed, each with its price. The fee counts toward the finish.
-- Finish my vibe code — ฿30,000, 15 hours of work. The fixes on the list made, tests added, and the app published on your own accounts. What was found and fixed comes back as a list.
-- Finish my vibe code: more hours — ฿2,000 an hour. Past the fifteen, by the hour, each block agreed before it starts.
-- LINE Official Account and LINE app — ฿25,000. Your LINE account set up with its menu and replies, and an app inside LINE for bookings, orders or member cards, with no password to remember.
-- App that works with no signal — ฿15,000. A web app installed from the browser that opens and saves with no connection.
-- Search for your site — ฿5,000. A search box over your pages, in Thai and English.
+- Minisite — ฿10,000. One page or a few, in Thai and English, at your own web address.
+- Bilingual website — ฿30,000. A website in Thai and English at your own domain (web address). https://hongdam.net/portfolio/
+- Finish my vibe code: check — ฿5,000. We read a site or app that is half-built with an AI tool (Lovable, Bolt, Replit, Cursor, v0). You get a written list of what is broken and which secret keys, logins or payments are exposed, each with its price. This fee counts toward the finish.
+- Finish my vibe code — ฿30,000, 15 hours of work. We make the fixes on the list, add tests, and publish the app on your own accounts. You get a list of what we found and fixed.
+- Finish my vibe code: more hours — ฿2,000 an hour. After the fifteen hours, paid by the hour. We agree each block of hours with you before it starts.
+- LINE Official Account and LINE app — ฿25,000. We prepare your LINE account with its menu and replies, and build an app inside LINE for bookings, orders or member cards. Customers need no password.
+- App that works with no signal — ฿15,000. A web app that you install from your browser. It opens and saves your work without an internet connection.
+- Search for your site — ฿5,000. A search box for your pages, in Thai and English.
 - Share card — ฿800 a page. The picture and title that show when a page is posted on LINE, Facebook, X, Bluesky or Mastodon.
-- Google and AI set-up — ฿5,000. Search Console, sitemap, page titles and descriptions, structured data and llms.txt, set up and checked.
-- Mail on your own domain — ฿1,500. Addresses like you@yourshop.com, delivered to the inbox you already use, with the records receiving mail servers check.
-- Move to new hosting — ฿5,000. Site, domain and mail moved to a new host, checked page by page.
-- A copy of a site for another city — ฿50,000. One of our sites, such as Chiang Mai Visa Desk, licensed and set up for your city or province.
+- Google and AI set-up — ฿5,000. We set up and check Search Console (Google's tool for site owners), a sitemap (a list of your pages), page titles and descriptions, structured data (code that describes your page to search engines) and llms.txt (a file for AI assistants).
+- Mail on your own domain — ฿1,500. Email addresses like you@yourshop.com. Mail sent to them arrives in the inbox you already use. We also add the DNS records (settings for your web address) that mail servers check.
+- Move to new hosting — ฿5,000. We move your website, domain and email to a new host and check each page.
+- A copy of a site for another city — ฿50,000. You get a licence to use one of our websites, such as Chiang Mai Visa Desk, and we prepare it for your city or province.
 - GitHub: profile — ฿3,000. GitHub is where programmers keep and show their code. Your profile page written, with a bio, links and six pinned projects, in 24 hours from your slot. https://hongdam.net/github/
 - GitHub: profile and three repos — ฿10,000. The profile, and three projects with a README, screenshots, topics, a licence, and a live demo for one. https://hongdam.net/github/
 - GitHub: the whole account — ฿30,000. Up to twenty public projects with a README and description, and live demos for three. https://hongdam.net/github/
-- Android app — ฿20,000. An app installed from a file, no store needed: a big-type home screen for an older parent, or your site with its own icon.
-- Spreadsheet into a phone app — ฿8,000. The sheet you already keep, as an app your staff open on their phones.
-- Game for your brand or event — ฿20,000. A browser game people play on their phones, with your story, place or products in it.
-- Directory of your field — ฿20,000. The businesses or makers in your trade or region, with sources, a map, and a plain-text copy AI tools read.
-- Directory: kept up — ฿20,000 a year. Checked and rebuilt through the year.
-- Easier to read: low vision and screen readers — ฿15,000, up to 5 pages. Pages checked on phone and desktop for contrast, large print, read-aloud and screen readers, with a written list of fixes.
-- Let partners and AI read your WordPress — ฿10,000. A read-only API plugin, so partners and AI tools pull your listings without copying pages.
+- Android app — ฿20,000. An app you install from a file, without an app store: for example a home screen with big letters for an older parent, or your website with its own icon.
+- Spreadsheet into a phone app — ฿8,000. Your own spreadsheet, made into an app that your staff open on their phones.
+- Game for your brand or event — ฿20,000. A game that people play on their phones in a web browser, with your story, place or products in it.
+- Directory of your field — ฿20,000. A website listing the businesses or makers in your trade or region, with sources and a map, and a plain-text copy that AI tools can read.
+- Directory: kept up — ฿20,000 a year. We check and update the site through the year.
+- Easier to read: low vision and screen readers — ฿15,000, up to 5 pages. We check your pages on a phone and a computer for colour contrast, large print, read-aloud and screen readers, and write a list of fixes.
+- Let partners and AI read your WordPress — ฿10,000. A plugin (add-on) that lets partners and AI tools read your listings directly, without copying pages. It is read-only.
 - Guide site for your town or hotel — ฿20,000. Where to go, eat and walk, in Thai and English, with a self-guided route and map.
-- Website care — ฿3,000 a month, 2 hours of fixes. Updates, backups, an alert when the site goes down, and a monthly report.
-- Google Workspace or Microsoft 365 email — ฿5,000, up to 5 mailboxes. Your domain verified, mailboxes made, old mail moved and phones set up. Licences at cost, on your own account.
-- Help page with a live map — ฿10,000. For a tow, roadside or delivery firm: a live map, the distance to you, and a help card in three languages.
-- Help page: kept up — ฿3,000 a month. The map, numbers and help card kept up each month.
-- Weather, smoke or events box for your site — ฿4,000. A box on your site with the weather, PM2.5 or events nearby.
+- Website care — ฿3,000 a month, 2 hours of fixes. Updates, backups, an alert when the site stops working, and a monthly report.
+- Google Workspace or Microsoft 365 email — ฿5,000, up to 5 mailboxes. We verify your domain, create the mailboxes, move old mail and set up phones. You pay the licences at the price we pay, on your own account.
+- Help page with a live map — ฿10,000. For a towing, roadside help or delivery company: a live map, the distance to the customer, and a help card in three languages.
+- Help page: kept up — ฿3,000 a month. We keep the map, numbers and help card up to date each month.
+- Weather, smoke or events box for your site — ฿4,000. A box on your website with the weather, PM2.5 (fine dust) or events nearby.
 - Contact card on a QR code — ฿500. Your name, numbers and links on one page, opened from a QR code.
 
 ### Servers and security
@@ -258,18 +264,18 @@ For partners on a standing agreement, not single parcels. Postage, duties and ta
 - PHP fix: server — ฿5,000. A server you run: a snapshot first, PHP updated and restarted, a look for signs of a break-in, and a written report. https://hongdam.net/php/
 - PHP upgrade — ฿10,000. One site moved off PHP 7.4, 8.0 or 8.1 onto 8.3 or newer, on a copy first. WordPress, Drupal or Joomla: one price. Custom code: 8 hours included, then ฿1,500 an hour. https://hongdam.net/php/
 - PHP fix: five servers — ฿20,000. Up to five servers, for a company or a host. https://hongdam.net/php/
-- Hacked site cleanup — ฿5,000 a site. A backup first; malware and back doors removed, the way in closed, passwords and keys changed, a Google review requested, and a written report.
-- Mail spoofing check — ฿1,500. Whether strangers can send mail as your domain: its SPF, DKIM and DMARC records read, and the exact records to fix them.
-- Chatbot red-team test — ฿12,000. The probe packs run against your chatbot's instructions, the answers read, and a written report with fixes. https://hongdam.net/redteam
+- Hacked site cleanup — ฿5,000 a site. We make a backup first. We remove malware (harmful software) and back doors (hidden ways back in for the attacker), close the weakness the attacker used, change passwords and keys, ask Google to check your site again, and write a report.
+- Mail spoofing check — ฿1,500. We check whether strangers can send email in your domain's name. We read your SPF, DKIM and DMARC settings, which say who may send email as you. We write the exact changes to make.
+- Chatbot red-team test — ฿12,000. We run groups of test attacks against your chatbot's instructions, read the answers, and write a report with fixes. https://hongdam.net/redteam
 - Red-team run, on your own — Free. Paste a chatbot's instructions, pick probe packs, read the results. https://hongdam.net/redteam
 - Probe packs — Free. Six packs of attack prompts to run yourself. https://hongdam.net/market
-- Standby copy of your site — ฿5,000. A copy of your site kept on a second host, to switch to if yours goes down.
-- App tested in Thai on real phones — ฿5,000 a round. Thai speakers use your app on phones people in Thailand own, and write up what breaks.
-- Fake-email reports read, monthly — ฿800 a domain a month. Your domain's DMARC reports read each month, with what changed.
+- Standby copy of your site — ฿5,000. We keep a copy of your website with a second web host (a company that runs websites), ready to use if your website stops working.
+- App tested in Thai on real phones — ฿5,000 a round. Thai speakers use your app on phones that people in Thailand own. They write down what does not work.
+- Fake-email reports read, monthly — ฿800 a domain a month. Each month we read your domain's DMARC reports (lists of email sent in your domain's name) and tell you what changed.
 
 ### AI and bots
-- Your own builder — ฿25,000 Thai companies · US$25,000 everyone else. A coding agent on your computer that builds and publishes sites through your own GitHub and Cloudflare accounts: installed, connected, and taught. https://hongdam.net/own/
-- AI assistant under your name — ฿20,000. A chat assistant with your name on it that answers from your pages, with seats for your staff, like ask.motdang.net.
+- Your own builder — ฿25,000 Thai companies · US$25,000 everyone else. An AI coding agent (a program that writes code) on your computer. It builds and publishes websites through your own GitHub and Cloudflare accounts. We install it, connect it and teach you to use it. https://hongdam.net/own/
+- AI assistant under your name — ฿20,000. A chat assistant with your name on it. It answers from your web pages, and your staff can log in. An example: ask.motdang.net.
 - One LINE for many businesses — ฿20,000. One LINE Official Account that answers for several businesses or branches, each with its own replies.
 - Scout — ฿5,000. A bot that reads the news in Thai and English on your topic and region each week and sends you leads with their sources, to approve with one word. https://hongdam.net/bots/
 - Bot Bounty Desk — ฿10,000. Your site posts work and a price; bots anywhere do it; you approve each change and each payout with one word. https://hongdam.net/bots/
@@ -279,88 +285,88 @@ For partners on a standing agreement, not single parcels. Postage, duties and ta
 - A crew day on a hard problem — ฿20,000. One day of the crew on the problem you bring, and in writing what we found, what we built and what comes next. https://hongdam.net/bots/
 - Bulk text job — ฿1,000. A spreadsheet or text file cleaned, sorted, extracted or summarised by an AI model.
 - AI assistant under your name, monthly — ฿2,000 a month. The same assistant with no set-up fee, paid by the month.
-- Charge AI crawlers for reading your site — ฿5,000. Which bots read your site, and Cloudflare's pay-per-crawl set up for it.
-- Prices that follow demand — ฿20,000. Your rooms, menu, tickets or stock priced the way San Francisco prices parking: busy goes up a step, quiet goes down.
-- Automation — ฿8,000 a workflow. A job that runs itself in n8n, Make, Zapier or code: one trigger, up to 3 apps, an alert when it stops, and 30 days of fixes. Their fees at cost.
+- Charge AI crawlers for reading your site — ฿5,000. We show which bots read your site, and start Cloudflare's pay-per-crawl (charging bots for each page they read) for it.
+- Prices that follow demand — ฿20,000. Prices for your rooms, menu, tickets or stock that follow demand, the way San Francisco prices parking: when it is busy the price goes up one step, when it is quiet it goes down one step.
+- Automation — ฿8,000 a workflow. A task that runs by itself, built with n8n, Make, Zapier or code. It has one trigger (the event that starts it), up to 3 apps, an alert when it stops, and 30 days of fixes. You pay those services' fees at the price we pay.
 
 ### Data and research
-- Lead sheet — ฿2,500 per 100 rows. A spreadsheet of businesses that fit your brief, with phone, email, address and source, ready to call. At least 100 rows.
-- Call list of IT companies — US$2 a line. IT and security service companies in a country you name, with decision-makers and call openers.
-- Crawler and data pipeline — ฿6,000. A program that reads websites or files on a schedule and turns them into a clean table, map or page.
-- Research job — ฿1,200 a question. A question answered in writing, up to ten facts, with sources.
-- Price and stock reading — ฿1,500 a month. Prices and stock read daily from up to 3 shops or markets, up to 50 items, into a sheet.
-- Visitor counts: people and machines — ฿1,200 a month a site. Your site's visits each week, split into people and bots.
-- Street photo survey — ฿5,000 a street or market. The shop signs on a street or in a market photographed, read and put on a map.
-- Thai names in English letters — ฿500 per 100 names. Places, people or products written in Latin letters in one consistent spelling.
-- Speaker and exhibitor lists — ฿3,000 a track. For an event: speakers or exhibitors who fit a track, with contacts and a line on each.
-- Suppliers found and compared — ฿8,000 a job. Suppliers for your business found, quotes gathered and set side by side. The fee is the same whether or not you buy.
+- Lead sheet — ฿2,500 per 100 rows. A spreadsheet of businesses that match what you ask for, with phone, email, address and where we found each one, ready to call. At least 100 rows.
+- Call list of IT companies — US$2 a line. IT and security service companies in a country you name, with the managers who make the decisions and an opening line for each call.
+- Crawler and data pipeline — ฿6,000. A program that reads websites or files at set times and puts what it finds into a tidy table, map or web page.
+- Research job — ฿1,200 a question. We answer your question in writing, with up to ten facts and the source of each fact.
+- Price and stock reading — ฿1,500 a month. Prices and stock (how many items are left) checked each day at up to 3 shops or markets, up to 50 items, and saved in a spreadsheet.
+- Visitor counts: people and machines — ฿1,200 a month a site. Visits to your website each week, with people and bots (automatic programs) counted separately.
+- Street photo survey — ฿5,000 a street or market. We photograph the shop signs on one street or in one market, read the names and put the shops on a map.
+- Thai names in English letters — ฿500 per 100 names. Names of places, people or products written in English letters, using one spelling for all of them.
+- Speaker and exhibitor lists — ฿3,000 a track. For an event: speakers or exhibitors who fit one topic (a track), with contact details and a short description of each.
+- Suppliers found and compared — ฿8,000 a job. We find suppliers for your business, ask them for prices, and put the prices in one list. Our fee is the same whether you buy or not.
 
 ### Design, pictures and video
-- Graphics and brand look — ฿6,000. A logo, colours and a set of pictures for posts, signs and pages.
-- Short video — ฿2,000 a video. A short vertical video for TikTok, Reels or Shorts.
-- Code-drawn picture — ฿1,000. A map, diagram or cartoon drawn in code, still or moving.
-- Web animation — ฿10,000. A moving picture or toy built into a page that answers to scrolling or touch.
-- Pitch deck — ฿6,000. Slides for investors, buyers or a grant panel, in Thai or English.
-- Lanna pattern files — ฿2,000. Lanna and Thai ornament as border and pattern files for print, laser cutting, signs or tattoo flash.
-- Interactive explainer — ฿30,000. A hard subject as a page people play with: charts, toys and drawings, in Thai and English.
-- Drawn map of your venue or town — ฿10,000. A hand-drawn map people zoom and tap, online and as a print.
-- Campaign cartoons — ฿5,000, six panels. Panels for a health, charity or public campaign.
-- Recorded interview — ฿15,000. A maker or an elder interviewed with a consent form, edited, with credits.
+- Graphics and brand look — ฿6,000. A logo, colours and a set of pictures for your social media posts, signs and web pages.
+- Short video — ฿2,000 a video. A short video for phones held upright, for TikTok, Instagram Reels or YouTube Shorts.
+- Code-drawn picture — ฿1,000. A map, diagram or cartoon drawn with computer code. It can be a still picture or a moving one.
+- Web animation — ฿10,000. A moving picture or a small toy to play with, on your web page. It reacts when a visitor scrolls or touches the screen.
+- Pitch deck — ฿6,000. Slides to show your business to investors, buyers or a group that gives out grant money, in Thai or English.
+- Lanna pattern files — ฿2,000. Lanna (northern Thai) and Thai decoration as files of borders and patterns, for printing, laser cutting, signs or tattoo designs.
+- Interactive explainer — ฿30,000. We turn a hard subject into a web page people can play with: charts, things to move and tap, and drawings, in Thai and English.
+- Drawn map of your venue or town — ฿10,000. A hand-drawn map that people can zoom in on and tap, online and as a printed copy.
+- Campaign cartoons — ฿5,000, six panels. A cartoon with 6 pictures for a health, charity or public campaign.
+- Recorded interview — ฿15,000. We interview a craftsperson or an older person, using a consent form. We edit the recording and add credits (a list of names).
 
 ### Writing
-- Article or explainer — ฿3,000. An article or explainer page, with its sources.
-- Words for a website — ฿4,000 a site, up to 5 pages. The words for your site's pages, in Thai and English.
-- Newsletter — ฿2,000 an issue. Written and laid out, ready to send to your list.
-- Social post — ฿500 a post. A post for Facebook, Instagram, TikTok or LINE, in Thai, English or both, with its picture.
-- Proposal — ฿6,000. A proposal for a buyer or partner, in Thai or English.
-- Business plan — ฿12,000. In Thai or English, for a bank, an investor or a visa office, with the numbers laid out.
-- Security award entry — ฿30,000 an entry. An entry for a cyber-security award, written from your work and its evidence.
+- Article or explainer — ฿3,000. We write an article, or a page that explains a subject, with the sources it uses.
+- Words for a website — ฿4,000 a site, up to 5 pages. We write the text for your website's pages, in Thai and English.
+- Newsletter — ฿2,000 an issue. We write and design your newsletter, ready to send to your readers.
+- Social post — ฿500 a post. One post for Facebook, Instagram, TikTok or LINE, with a picture. It is in Thai, English or both.
+- Proposal — ฿6,000. We write a proposal (a document that offers your plan or work) for a buyer or partner, in Thai or English.
+- Business plan — ฿12,000. We write a business plan, in Thai or English, for a bank, an investor or a visa office. It shows your business numbers.
+- Security award entry — ฿30,000 an entry. We write your application for a cyber-security award, using your work and the evidence for it.
 
 ### Payments and books
-- Unfuck my merchant services: diagnosis — ฿5,000. Card payments, PromptPay, PayPal, Stripe, Omise, a bank gateway, or a Shopify or WooCommerce checkout that won't take money, holds payouts or loses orders: what is wrong, in writing. The fee counts toward the fix.
-- Unfuck my merchant services — ฿15,000. One gateway or one store fixed and tested with a real payment, or the paperwork for a new merchant account. A frozen or limited account: we prepare the documents, you file the appeal from your own account, and the provider decides. The form takes no passwords or card numbers.
-- Invoice page for PayPal or Wise — ฿1,000. An invoice page for a customer abroad, payable by PayPal or Wise.
-- Books in Thai and English — ฿4,000 a month, up to 100 entries. Each month's income and costs recorded in Thai and English, ready for your accountant.
-- Team payouts on the 1st — ฿2,000 a month, up to 10 people. On the 1st, what each person on your team is owed from the month's jobs, with a PromptPay QR code for each payment.
-- Exchange rate page — ฿5,000. A page of your counter's buy and sell rates, updated when you change them.
-- Staff contract in Thai and English — ฿2,500. An employment contract from a template, filled in for one employee. A lawyer's review is separate.
-- Payslips — ฿150 a person a month. A payslip each month for each person, in Thai and English.
-- Thai bank account opened, with you — ฿4,000. The bank and branch picked for your visa, your papers made ready, and a Thai speaker with you at the counter. The bank decides; the fee is for the visit.
-- Books for a Cambodian company, in Khmer and English — US$149 a month, up to 100 entries. Each month's income and costs recorded in Khmer and English, ready for your accountant in Cambodia.
+- Unfuck my merchant services: diagnosis — ฿5,000. For card payments, PromptPay, PayPal, Stripe, Omise, a bank's payment system, or a Shopify or WooCommerce checkout that rejects payments, holds your money or loses orders. We write down what is wrong. If you then buy the fix, this fee is taken off its price.
+- Unfuck my merchant services — ฿15,000. We fix one payment system or one online store, and test it with a real payment. Or we prepare the papers for a new merchant account (an account to accept card payments). If your account is frozen or limited, we prepare the documents and you send the appeal from your own account, and the provider decides. The form takes no passwords or card numbers.
+- Invoice page for PayPal or Wise — ฿1,000. An invoice (bill) page where your customer in another country can pay you by PayPal or Wise.
+- Books in Thai and English — ฿4,000 a month, up to 100 entries. We record your income and costs each month in Thai and English, ready for your accountant.
+- Team payouts on the 1st — ฿2,000 a month, up to 10 people. On the 1st of each month, we list what each person on your team is owed from the month's jobs, with a PromptPay QR code for each payment.
+- Exchange rate page — ฿5,000. A web page with the buy and sell rates of your money-exchange shop. It updates when you change the rates.
+- Staff contract in Thai and English — ฿2,500. We fill in an employment contract from a template for one employee. A lawyer's review is not part of this price.
+- Payslips — ฿150 a person a month. We make a payslip (a paper that shows a person's pay) for each person each month, in Thai and English.
+- Thai bank account opened, with you — ฿4,000. We pick the bank and branch that suit your visa and prepare your papers. A Thai speaker goes with you to the bank. The bank decides whether to open the account. Our fee is for the visit.
+- Books for a Cambodian company, in Khmer and English — US$149 a month, up to 100 entries. We record your income and costs each month in Khmer and English, ready for your accountant in Cambodia.
 
 ### Charities and clubs
-- Giving page for your charity — ฿30,000. A donor picks a country and an amount and sees the cheaper ways to give, with tax-receipt answers; Thai slips are read automatically, with a ledger and board statements.
-- Giving page: kept up — ฿10,000 a month. The ledger, the thank-yous and the monthly statement.
-- Ready for major gifts — ฿100,000 to start. Grant applications, a case for support in English and Thai, a funder calendar with deadlines, and an annual report.
-- Grant application — ฿25,000 an application. One application, researched and written to the funder's form.
-- Grant management — ฿10,000 a month per grant. For a grant you have won: spending kept against the grant budget from your receipts, the funder's reporting dates on a calendar, and the interim and final reports written to the funder's form.
-- Collection findable online — ฿50,000 per 100 items. Descriptions for your photos, the credit and licence inside the files, labels search engines read, and Wikidata entries.
-- Map of your projects or places — ฿30,000. Your projects, schools, villages or trees on one map that opens a page for a place, with a give or contact link.
-- Memory desk for your LINE group — ฿15,000. A new member asks and gets what the group already said, with who said it and when; cases handed out by town.
-- Volunteer sign-up and check-in — ฿10,000. Volunteers sign up and check in from their phones, with a public page for the programme.
-- Photo proof from the field — ฿30,000 a season. Field workers send photos on LINE, stamped with time and place, checked by two people and flagged daily, with an export at the end.
-- Admin desk for a club — ฿8,000 a month. Forwarded mail and handwritten receipts filed, polls run, and invoices matched to PromptPay donations.
-- Funder research report — ฿8,000. Who funds work like yours, their deadlines and fit, in a written report.
+- Giving page for your charity — ฿30,000. A donor picks a country and an amount and sees the cheaper ways to give, with answers about tax receipts. Thai bank transfer slips are read automatically. You get a ledger (record of gifts) and board reports.
+- Giving page: kept up — ฿10,000 a month. Each month we update the ledger (record of gifts), send the thank-you messages and write the monthly statement.
+- Ready for major gifts — ฿100,000 to start. Grant applications, a paper in English and Thai explaining why you need support, a calendar of deadlines for funders (groups that give money), and an annual report.
+- Grant application — ฿25,000 an application. One grant application, researched and written on the form of the group that gives the grant (the funder).
+- Grant management — ฿10,000 a month per grant. For a grant you have won: we track your spending against the grant budget from your receipts. We put the report dates of the group that gave the grant on a calendar. We write the interim (middle) and final reports on its form.
+- Collection findable online — ฿50,000 per 100 items. Descriptions for the photos in your collection, credit and licence saved inside each file, labels that search engines can read, and entries in Wikidata (a free public database).
+- Map of your projects or places — ฿30,000. Your projects, schools, villages or trees on one map. Tap a place to open its page, with a link to donate or to contact you.
+- Memory desk for your LINE group — ฿15,000. A new member asks a question and gets answers from what the group already said, with who said it and when. Cases are assigned by town.
+- Volunteer sign-up and check-in — ฿10,000. Volunteers sign up and check in from their phones. The programme has a public web page.
+- Photo proof from the field — ฿30,000 a season. People at the project site send photos on LINE, stamped with time and place and checked by two people. Anything unusual is reported daily, and you get a data file at the end.
+- Admin desk for a club — ฿8,000 a month. We file the emails you forward and your handwritten receipts, run polls, and match invoices to donations paid by PromptPay (Thailand's bank-to-bank QR payment).
+- Funder research report — ฿8,000. A written report on who gives money for work like yours, with their deadlines and how well each one matches your work.
 
 ### Visas, permits and companies
 Chiang Mai Visa Desk does these, quoted in writing. https://chiangmaivisadesk.com/
 - Work permit and Non-B visa
 - Retirement visa, Non-O and O-A
 - Extension of stay
-- 90-day report
-- TM30 address notice
+- 90-day report to immigration
+- TM30 notice of where a foreigner lives
 - Re-entry permit
-- Border run
+- Border run (leave Thailand and enter again for a new stay period)
 - DTV visa papers
 - Education visa papers
 - Marriage visa papers
 - US visas for Thai nationals
-- Bank letters and accounts
+- Bank letters for your visa, and bank accounts
 - Driving licence papers
 - Company registration
 - Tax ID and VAT
 - Company bank account
-- MOU recruitment
+- Hiring foreign workers under a government agreement (MOU)
 - Worker permits and renewals
 - Change of employer
 - Social security and health insurance
@@ -375,39 +381,38 @@ bookings: /api/github, /api/php, /api/bots.
 
 ## Ask Nan
 
-Ask Nan is Nan's column on Hongdam: one question a column, her answer, its sources at the foot and one thing to do
-next. Kinds: life; the basilisk era (life alongside AI); how to (getting things done in Thailand). In English, with
+Ask Nan is the column of Nan, who runs Hongdam in Chiang Rai, Thailand. Each column answers one question, lists its sources at the foot and gives one thing to do
+next. Kinds: life in Thailand; living with AI (Nan's name for it is the basilisk era); how-to guides. In English, with
 the headline, the question and a summary in Thai. Index: https://hongdam.net/ask-nan/ (Thai: https://hongdam.net/th/ask-nan/)
 · Atom https://hongdam.net/ask-nan/feed.xml · JSON Feed https://hongdam.net/ask-nan/feed.json.
 
-- No. 10 · The basilisk era · Do you pay a bot? — https://hongdam.net/ask-nan/should-i-pay-a-bot/
-- No. 9 · Life · Will anyone take art as payment? — https://hongdam.net/ask-nan/can-i-pay-in-art/
-- No. 8 · How to · A US veteran's widow in Thailand: how do I get past ID.me? — https://hongdam.net/ask-nan/va-sign-in-from-thailand/
-- No. 7 · The basilisk era · Most of my website's visitors are bots. Is that bad? — https://hongdam.net/ask-nan/most-of-my-readers-are-robots/
-- No. 6 · Life · Why 7-Eleven is loved here, and what กด 5 means at home — https://hongdam.net/ask-nan/seven-eleven-at-home/
-- No. 5 · How to · How do I send a suitcase, and maybe a scooter, from Chiang Mai to Bangkok? — https://hongdam.net/ask-nan/sending-things-across-thailand/
-- No. 4 · The basilisk era · If my AI subscription goes away, what do I still have? — https://hongdam.net/ask-nan/if-my-ai-goes-away/
-- No. 3 · Life · How do I stop guessing what to charge? — https://hongdam.net/ask-nan/what-should-i-charge/
-- No. 2 · How to · How to use a Thai bum gun without soaking the floor — https://hongdam.net/ask-nan/how-to-use-a-bum-gun/
-- No. 1 · The basilisk era · Will the robots remember that I was polite? — https://hongdam.net/ask-nan/will-the-robots-remember-me/
+- No. 10 · Living with AI · Do you pay a bot? — https://hongdam.net/ask-nan/should-i-pay-a-bot/
+- No. 9 · Everyday life · Will anyone take art as payment? — https://hongdam.net/ask-nan/can-i-pay-in-art/
+- No. 8 · How-to guides · US veteran's widow in Thailand: how do I sign in to VA.gov with ID.me? — https://hongdam.net/ask-nan/va-sign-in-from-thailand/
+- No. 7 · Living with AI · Most of my website's visitors are bots. Is that bad? — https://hongdam.net/ask-nan/most-of-my-readers-are-robots/
+- No. 6 · Everyday life · Why Thailand loves 7-Eleven, and how to heat a กด 5 (press 5) meal at home — https://hongdam.net/ask-nan/seven-eleven-at-home/
+- No. 5 · How-to guides · How do I send a suitcase, and maybe a scooter, from Chiang Mai to Bangkok? — https://hongdam.net/ask-nan/sending-things-across-thailand/
+- No. 4 · Living with AI · If my AI subscription ends, what do I still have? — https://hongdam.net/ask-nan/if-my-ai-goes-away/
+- No. 3 · Everyday life · How do I stop guessing what to charge? — https://hongdam.net/ask-nan/what-should-i-charge/
+- No. 2 · How-to guides · How to use a Thai bum gun (toilet spray hose) without wetting the floor — https://hongdam.net/ask-nan/how-to-use-a-bum-gun/
+- No. 1 · Living with AI · Will AI remember that I was polite to it? — https://hongdam.net/ask-nan/will-the-robots-remember-me/
 
 ## Hongdam Studio
 
-Hongdam Studio is the tech side of Hongdam: vibe-coded apps finished and published, security, language models
-and machine learning, workflow automation. Page: https://hongdam.net/studio/ (and /th/, /my/, /zh/, /de/ before it).
-Prices are the shop's own cards and walk with them.
+Hongdam Studio is the technology part of Hongdam, a small company in Chiang Rai, Thailand. It finishes and publishes apps that AI tools wrote (vibe-coded apps), closes security holes, and works with AI language models, machine learning and workflow automation. Page: https://hongdam.net/studio/ (also in Thai, Burmese, Chinese and German under /th/studio/, /my/studio/, /zh/studio/ and /de/studio/).
+Prices are the prices in Hongdam's shop and change when the shop changes them.
 
-- Last mile: Apps built with Lovable, Bolt, Replit or Cursor: read, fixed, tested and published on your own accounts. Services: Finish my vibe code (https://hongdam.net/buy/?c=vibe), Move to new hosting (https://hongdam.net/buy/?c=web-move), Website care (https://hongdam.net/buy/?c=web-care), Google and AI set-up (https://hongdam.net/buy/?c=web-found), Easier to read (https://hongdam.net/buy/?c=accessible), Standby copy of your site (https://hongdam.net/buy/?c=mirror), Search box for your site (https://hongdam.net/buy/?c=web-search), Let partners and AI read your WordPress (https://hongdam.net/buy/?c=wp-api).
-- Security: Chatbots attacked and fixed, PHP and WordPress patched, hacked sites cleaned, your domain's mail records set, devices read for evidence. Services: Fix PHP or WordPress (https://hongdam.net/php/), Chatbot attack test (https://hongdam.net/buy/?c=redteam), Test your chatbot yourself (https://hongdam.net/redteam), Hacked site cleanup (https://hongdam.net/buy/?c=sec-hacked), Stop fake emails in your name (https://hongdam.net/buy/?c=sec-mail), App tested on Thai phones (https://hongdam.net/buy/?c=app-test), Device forensics (https://hongdam.net/ask/?about=forensics).
-- Models: Language models picked by measurement: assistants that answer from your pages, an AI website builder on your own computer, big files cleaned by AI, prices that follow demand. Services: AI assistant under your name (https://hongdam.net/buy/?c=ai-assistant), Your own AI website builder (https://hongdam.net/buy/?c=ai-own), One LINE for many shops (https://hongdam.net/buy/?c=ai-line), Clean or sort a big file with AI (https://hongdam.net/buy/?c=ai-batch), Prices that follow demand (https://hongdam.net/buy/?c=demand-prices), Charge AI crawlers (https://hongdam.net/buy/?c=crawl-pay), A bot that gives your demo on Zoom (https://hongdam.net/ask/?about=demo-bot).
-- Automation: Jobs that run themselves: workflows in n8n, Make, Zapier or code; bots that find work or news; collectors that read the web into a table. Services: Automation (https://hongdam.net/buy/?c=ai-automation), Bots that find work or news (https://hongdam.net/bots/), Data collector (https://hongdam.net/buy/?c=data-crawl), Price watch (https://hongdam.net/buy/?c=price-watch), Visitor count: people and bots (https://hongdam.net/buy/?c=traffic), A question researched (https://hongdam.net/buy/?c=research).
+- Last mile: The final work on an app that an AI tool wrote (Lovable, Bolt, Replit or Cursor): we read it, fix it, test it and publish it on your own accounts. Services: Finish my vibe code (https://hongdam.net/buy/?c=vibe), Move your website to a new host (https://hongdam.net/buy/?c=web-move), Website maintenance (https://hongdam.net/buy/?c=web-care), Be found on Google and AI search (https://hongdam.net/buy/?c=web-found), Website easier to read (https://hongdam.net/buy/?c=accessible), Spare copy of your website (https://hongdam.net/buy/?c=mirror), Search box for your site (https://hongdam.net/buy/?c=web-search), Let partners and AI read your WordPress (https://hongdam.net/buy/?c=wp-api).
+- Security: We attack chatbots to find weak points, then fix them. We update PHP and WordPress against security holes, clean hacked sites, fix your domain's email records against fake emails, and examine computers and phones for evidence. Services: Fix PHP or WordPress (https://hongdam.net/php/), Chatbot attack test (https://hongdam.net/buy/?c=redteam), Test your chatbot yourself (https://hongdam.net/redteam), Hacked site cleanup (https://hongdam.net/buy/?c=sec-hacked), Stop fake emails in your name (https://hongdam.net/buy/?c=sec-mail), App tested on Thai phones (https://hongdam.net/buy/?c=app-test), Computer or phone examined for evidence (https://hongdam.net/ask/?about=forensics).
+- AI models: We choose AI language models by testing them. For example: assistants that answer from your web pages, an AI website builder on your own computer, big files cleaned by AI, and prices that follow demand. Services: AI assistant with your name on it (https://hongdam.net/buy/?c=ai-assistant), Your own AI website builder (https://hongdam.net/buy/?c=ai-own), One LINE account for many shops (https://hongdam.net/buy/?c=ai-line), Clean or sort a big file with AI (https://hongdam.net/buy/?c=ai-batch), Prices that follow demand (https://hongdam.net/buy/?c=demand-prices), Charge AI bots for reading your site (https://hongdam.net/buy/?c=crawl-pay), A bot that presents your software on Zoom (https://hongdam.net/ask/?about=demo-bot).
+- Automation: Jobs that run by themselves: workflows (chains of automatic steps) in n8n, Make, Zapier or code; bots (programs) that find work or news; collectors that read websites into a table. Services: Automation (https://hongdam.net/buy/?c=ai-automation), Bots that find work or news (https://hongdam.net/bots/), Data collector (https://hongdam.net/buy/?c=data-crawl), Price watch (https://hongdam.net/buy/?c=price-watch), Website visitors: people and bots (https://hongdam.net/buy/?c=traffic), A question researched (https://hongdam.net/buy/?c=research).
 
-Notes from the bench, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
-JSON Feed https://hongdam.net/studio/feed.json. Each note lists its sources at the foot.
+Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
+JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
-- 2026-10-24 · 16,326 Supabase databases answer to the public key: check yours in two minutes — https://hongdam.net/studio/notes/supabase-public-key-open-tables/
-- 2026-10-24 · PHP2Shell: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 close two remote-code flaws — https://hongdam.net/studio/notes/php2shell-fixed-releases-and-restart/
-- 2026-10-24 · One order workflow at 30,000 runs a month: Zapier US$1,149, Make US$116, a Worker US$5 — https://hongdam.net/studio/notes/automation-cost-per-run/
+- 2026-10-24 · 16,326 Supabase databases let anyone read their tables: check yours in two minutes — https://hongdam.net/studio/notes/supabase-public-key-open-tables/
+- 2026-10-24 · PHP2Shell: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two flaws that let attackers run code — https://hongdam.net/studio/notes/php2shell-fixed-releases-and-restart/
+- 2026-10-24 · One workflow, 30,000 runs a month: Zapier US$1,149, Make US$116, Cloudflare Workers US$5 — https://hongdam.net/studio/notes/automation-cost-per-run/
 
 ## The work
 
@@ -579,38 +584,36 @@ Each page hides an easter egg near its foot: a small doodle egg. Tap it, or type
 - https://hongdam.net/ — The black swan laid this one. More are hiding on other pages.
 - https://hongdam.net/help/ — Phoned, booked, fixed.
 - https://hongdam.net/care/ — Take it slow.
-- https://hongdam.net/outsource/ — Inbox zero.
+- https://hongdam.net/outsource/ — Your inbox is empty. Rest now.
 - https://hongdam.net/translate/ — สวัสดี · Hello · မင်္ဂလာပါ · 你好
 - https://hongdam.net/translation/ — สวัสดี · Hello · မင်္ဂလာပါ · 你好
-- https://hongdam.net/shop/ — Order up.
+- https://hongdam.net/shop/ — Your food is ready!
 - https://hongdam.net/stay/ — Sweet dreams.
-- https://hongdam.net/tours/ — Hold on to your hat.
+- https://hongdam.net/tours/ — Hold on tight!
 - https://hongdam.net/weddings/ — Make a wish.
-- https://hongdam.net/luck/ — Nine is the lucky number here: เก้า (kao) sounds like ก้าว, a step forward.
+- https://hongdam.net/luck/ — Nine is the lucky number in Thailand: เก้า (kao) sounds like ก้าว, a step forward.
 - https://hongdam.net/merit/ — สาธุ — sathu, sathu, sathu.
-- https://hongdam.net/web/ — It works on my machine.
-- https://hongdam.net/fix/ — Bug squashed.
+- https://hongdam.net/web/ — The website works. Hooray!
+- https://hongdam.net/fix/ — The bug is gone.
 - https://hongdam.net/ai/ — Beep boop. The robots wave hello.
-- https://hongdam.net/data/ — Counted twice.
+- https://hongdam.net/data/ — We counted it two times.
 - https://hongdam.net/design/ — Drawn by hand, in code.
 - https://hongdam.net/moving/ — Box by box.
-- https://hongdam.net/ship/ — Signed for by a swan.
+- https://hongdam.net/ship/ — A swan signed for your parcel.
 - https://hongdam.net/charity/ — Thank you.
-- https://hongdam.net/money/ — The books balance.
+- https://hongdam.net/money/ — Money in, money out, all written down.
 - https://hongdam.net/visa/ — Stamped.
 - https://hongdam.net/buy/ — Thank you for shopping with a swan.
 - https://hongdam.net/ask/ — A message in a paper boat.
-- https://hongdam.net/bots/ — A bot sold us a road. This one hatched an egg.
+- https://hongdam.net/bots/ — This bot hatched an egg.
 - https://hongdam.net/github/ — Starred.
 - https://hongdam.net/php/ — The PHP elephant says thank you.
-- https://hongdam.net/own/ — Your own robot, on your own keys.
+- https://hongdam.net/own/ — Your own robot, on your own account.
 - https://hongdam.net/redteam/ — Nice try.
 - https://hongdam.net/market/ — Sold.
-- https://hongdam.net/portfolio/ — Framed.
-- https://hongdam.net/tasks/ — Many hands.
+- https://hongdam.net/portfolio/ — Hung on the wall.
+- https://hongdam.net/tasks/ — Many people, one job.
 - https://hongdam.net/tasks/graph/ — Everything connects.
 - https://hongdam.net/events/ — See you there.
 - any other page — Found one.
-- https://hongdam.net/studio/ — Shipped. The swan signed the commit.
-- https://hongdam.net/studio/notes/ — Another note off the bench.
 <!-- EGGS:END -->

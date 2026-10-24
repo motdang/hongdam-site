@@ -56,11 +56,11 @@ function main(box) {
 
   // ---------------------------------------------------------------- words
   const T = {
-    play: 'Play <span lang="th">เล่น</span>', again: 'Again <span lang="th">อีกครั้ง</span>', on: 'Go on <span lang="th">ต่อ</span>',
+    play: 'Play <span lang="th">เล่น</span>', again: 'Again <span lang="th">อีกครั้ง</span>', on: 'Continue <span lang="th">ต่อ</span>',
     hint: touch ? 'Tap the sky: fly · Tap the water: dive<br><span lang="th">แตะฟ้า: บิน · แตะน้ำ: ดำน้ำ</span>'
       : 'Space or ↑: fly · ↓: dive<br><span lang="th">บิน · ดำน้ำ</span>',
     dive: touch ? 'Tap the water: dive · <span lang="th">แตะน้ำ: ดำน้ำ</span>' : '↓ dive · <span lang="th">ดำน้ำ</span>',
-    m: (n) => n.toLocaleString('en-US') + ' m', best: (n) => 'best ' + n.toLocaleString('en-US') + ' m'
+    m: (n) => n.toLocaleString('en-US') + ' m', best: (n) => 'Best: ' + n.toLocaleString('en-US') + ' m'
   }
 
   // ---------------------------------------------------------------- drawing

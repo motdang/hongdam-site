@@ -43,7 +43,7 @@ V_CSS = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(
 V_JS = hashlib.sha1(open(_JS, "rb").read()).hexdigest()[:8] if os.path.exists(_JS) else "0"
 FEED_N = 30
 BASE = "ask-nan/"
-MONTHS = {"en": "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(),
+MONTHS = {"en": "January February March April May June July August September October November December".split(),
           "th": "ม.ค. ก.พ. มี.ค. เม.ย. พ.ค. มิ.ย. ก.ค. ส.ค. ก.ย. ต.ค. พ.ย. ธ.ค.".split()}
 LINE = ["chat", "nib", "done"]   # the list's line, also the front-page band's (glyphs the front group carries)
 KIND_CAT = {"life": "luck", "basilisk": "ai", "practical": "help"}   # the shop colour each kind borrows
@@ -364,8 +364,8 @@ def llms(cs):
     p = os.path.join(DOCS, "llms.txt")
     txt = open(p, encoding="utf-8").read()
     lines = ["## Ask Nan", "",
-             "Ask Nan is Nan's column on Hongdam: one question a column, her answer, its sources at the foot and one thing to do",
-             "next. Kinds: life; the basilisk era (life alongside AI); how to (getting things done in Thailand). In English, with",
+             "Ask Nan is the column of Nan, who runs Hongdam in Chiang Rai, Thailand. Each column answers one question, lists its sources at the foot and gives one thing to do",
+             "next. Kinds: life in Thailand; living with AI (Nan's name for it is the basilisk era); how-to guides. In English, with",
              "the headline, the question and a summary in Thai. Index: https://hongdam.net/ask-nan/ (Thai: https://hongdam.net/th/ask-nan/)",
              "· Atom https://hongdam.net/ask-nan/feed.xml · JSON Feed https://hongdam.net/ask-nan/feed.json.", ""]
     for c in cs[:20]:
@@ -382,17 +382,17 @@ def llms(cs):
 
 def card_alt(kind, c=None):
     if kind == "col":
-        return "Ask Nan · No. %d · %s · %s — hongdam.net/ask-nan" % (c["no"], kind_label(c, "en"), c["title"])
-    return "Ask Nan · Life, the basilisk era, how to · hongdam.net/ask-nan"
+        return "Ask Nan · Column %d · %s · %s — hongdam.net/ask-nan" % (c["no"], kind_label(c, "en"), c["title"])
+    return "Ask Nan · Life in Thailand, living with AI, how-to guides · hongdam.net/ask-nan"
 
 
 def cards_list(cs):
     hue = {"life": 72, "basilisk": 205, "practical": 32}
     out = [{"out": "og/ask-nan/front", "kicker": "Hongdam · Ask Nan", "title": "Ask Nan.", "th": "ถามแนน",
-            "sub": "Life here · the basilisk era · how to get things done", "line": LINE, "hue": 32}]
+            "sub": "Life in Thailand · living with AI · how-to guides", "line": LINE, "hue": 32}]
     for c in cs:
         k = c.get("card", {})
-        out.append({"out": "og/ask-nan/c/" + c["slug"], "kicker": "Ask Nan · No. %d · %s" % (c["no"], kind_label(c, "en")),
+        out.append({"out": "og/ask-nan/c/" + c["slug"], "kicker": "Ask Nan · Column %d · %s" % (c["no"], kind_label(c, "en")),
                     "title": k.get("big", c["title"]), "th": k.get("th", c["title_th"]), "sub": k.get("sub", ""),
                     "line": c["line"], "hue": hue.get(c["kind"], 32)})
     # the drawings' versions go into the hash too, so new dingbats redraw the pictures

@@ -48,11 +48,16 @@
   var bloom = new IntersectionObserver(inOrder(250, 260, 8), { threshold: 0.6, rootMargin: '0px 0px -12% 0px' })
   document.querySelectorAll(LISTS).forEach(function (li) { bloom.observe(li) })
 
-  // reduced motion switched on while the page is open: the rings and the typing stop
+  // reduced motion switched on while the page is open: everything shows as it is at once (cards up, lotus open,
+  // meters filled) and the rings and the typing stop, for the rest of the visit
   var quiet = false, hush = []
   var onStill = function () {
     if (!still.matches || quiet) return
     quiet = true
+    sink.disconnect(); bloom.disconnect(); meter.disconnect()
+    document.querySelectorAll('.pond-sink').forEach(function (el) { el.classList.remove('pond-sink', 'pond-up'); el.style.removeProperty('--d') })
+    document.querySelectorAll(LISTS).forEach(function (li) { li.classList.add('pond-up') })
+    document.querySelectorAll('.ladder.pond-wait').forEach(function (d) { d.classList.add('lit') })
     document.querySelectorAll('.pond-ring').forEach(function (r) { r.remove() })
     hush.forEach(function (f) { f() })
   }

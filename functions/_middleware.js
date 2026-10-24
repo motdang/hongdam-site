@@ -14,12 +14,17 @@
  *    /stats/) and /assets/eggs.js (the easter egg each page hides), appended
  *    to <body> by HTMLRewriter. One place, so a page added later has them too.
  *
+ * 3. ONE SERVICE'S LINK CARD. /buy/?c=<service> and /ask/?about=<service>, in any language, are one static
+ *    page each; a link to one of them shows that service in a preview (her ask 2026-10-24): its name, line,
+ *    price and picture from _share_data.js (tools/build_shop.py) replace the page's own in the head.
+ *
  * THE CONTRACT
  * This runs on every request to a live site, so it must not be able to break
  * one. `next()` is called first; recording and the rewrite each sit in a
  * try/catch whose failure path hands back the page as it came.
  */
 import { classify } from './_classify.js';
+import { SHARE } from './_share_data.js';
 
 const SCRIPTS = '<script type="module" src="/assets/hd.js"></script><script type="module" src="/assets/eggs.js"></script>';
 
@@ -41,9 +46,35 @@ export async function onRequest(context) {
 function withScripts(request, response) {
   if (request.method !== 'GET' || (response.status !== 200 && response.status !== 404)) return response;
   if (!(response.headers.get('content-type') || '').includes('text/html')) return response;
-  return new HTMLRewriter()
-    .on('body', { element(el) { el.append(SCRIPTS, { html: true }); } })
-    .transform(response);
+  const rw = new HTMLRewriter().on('body', { element(el) { el.append(SCRIPTS, { html: true }); } });
+  const card = serviceCard(new URL(request.url));
+  if (card) {
+    rw.on('title', { element(el) { el.setInnerContent(card.title); } })
+      .on('meta', { element(el) {
+        const v = card.meta[el.getAttribute('property') || el.getAttribute('name')];
+        if (v) el.setAttribute('content', v);
+      } });
+  }
+  return rw.transform(response);
+}
+
+const SITE = 'https://hongdam.net';
+const ONE = /^\/(?:(th|my|zh|de)\/)?(buy|ask)\/$/;
+
+export function serviceCard(url) {
+  const m = url.pathname.match(ONE);
+  if (!m || url.searchParams.has('ref')) return null;
+  const key = m[2] === 'buy' ? 'c' : 'about';
+  const id = url.searchParams.get(key);
+  const s = id && Object.hasOwn(SHARE, id) ? SHARE[id] : null;
+  if (!s || s.k !== m[2]) return null;
+  const [title, desc, alt] = s[m[1] || 'en'] || s.en;
+  const here = `${SITE}${url.pathname}?${key}=${encodeURIComponent(id)}`;
+  const img = `${SITE}/${s.i}`;
+  return { title, meta: {
+    description: desc, 'og:title': title, 'og:description': desc, 'og:url': here, 'og:image': img, 'og:image:alt': alt,
+    'twitter:title': title, 'twitter:description': desc, 'twitter:image': img, 'twitter:image:alt': alt,
+  } };
 }
 
 async function record(context, response, ms) {

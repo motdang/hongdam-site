@@ -24,9 +24,9 @@ export const KINDS = {
   scout: { open: 5000, slots: 5, en: 'Scout', th: 'สเกาต์' },
   desk: { open: 10000, slots: 3, en: 'Bot Bounty Desk', th: 'โต๊ะค่าหัวบอท' },
   earner: { open: 30000, slots: 1, en: 'Earner', th: 'บอทหาเงิน' },
-  run: { open: 3000, slots: 10, en: 'We run it, a month', th: 'เราดูแลให้ รายเดือน', monthly: true },
-  share: { open: 20, slots: 2, en: 'Earner for a share', th: 'บอทหาเงิน แบ่งรายได้', ladder: PCT, unit: '%' },
-  crew: { open: 20000, slots: 2, en: 'A crew day on an impossible problem', th: 'ทีมหนึ่งวัน กับโจทย์ที่เป็นไปไม่ได้' },
+  run: { open: 3000, slots: 10, en: 'We run it for you, per month', th: 'เราดูแลให้ รายเดือน', monthly: true },
+  share: { open: 20, slots: 2, en: 'Earner for a share of its income', th: 'บอทหาเงิน แบ่งรายได้', ladder: PCT, unit: '%' },
+  crew: { open: 20000, slots: 2, en: 'One team day on an impossible problem', th: 'ทีมหนึ่งวัน กับโจทย์ที่เป็นไปไม่ได้' },
 }
 
 const ladderOf = (k) => KINDS[k].ladder || L

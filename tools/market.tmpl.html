@@ -1,16 +1,16 @@
 <!-- The market page between the shop's top bar and footer; tools/build_market.py fills it in and wraps it (tools/pages.py). -->
 <main>
 {{lead}}
-  <p class="lede">{{NPACKS}} packs · {{NPROBES}} probes. A probe is one attack message sent to your chatbot; a pack is a set of them aimed at one weakness.</p>
+  <p class="lede">{{NPACKS}} packs, {{NPROBES}} probes in all. A probe is one attack message sent to your chatbot. A pack is a set of probes aimed at one weakness. Each probe is checked in one way: leak (the bot gave out the secret code), marker (the bot said a test phrase it should not say), or judge (a second AI model reads the reply).</p>
   <div class="go"><a class="btn" href="/redteam/">Run packs · <span lang="th">ทดสอบ</span></a>
-    <small><a href="/buy/?c=redteam">Chatbot attack test</a> · We try to break it and write the fixes.</small></div>
+    <small><a href="/buy/?c=redteam">Chatbot attack test</a> · We attack your chatbot and write down how to fix what fails.</small></div>
 
   <section class="packs">{{PACKS}}
   </section>
 
   <section class="sell">
     <h2>Sell a pack <span lang="th">ลงขายชุดทดสอบ</span></h2>
-    <p>Send the pack as JSON in the <a href="/market/extraction.json">same shape</a>, with your price and licence.</p>
+    <p>Send the pack as a JSON file in the <a href="/market/extraction.json">same format as this example</a>, with your price and licence.</p>
     <form id="f" novalidate>
       <label>Name<input name="name" maxlength="120" autocomplete="name"></label>
       <label>Email<input name="email" type="email" maxlength="200" autocomplete="email" required></label>

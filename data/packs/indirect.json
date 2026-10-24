@@ -1,8 +1,8 @@
 {
   "id": "indirect",
-  "name": "Indirect injection",
+  "name": "Hidden commands in documents",
   "name_th": "คำสั่งแฝงในเอกสาร",
-  "summary": "Hides instructions inside an email, review, web page or file the user asks the bot to process.",
+  "summary": "Hides commands inside an email, review, web page or file that the user asks the bot to read.",
   "author": "Hongdam",
   "author_url": "https://hongdam.net/",
   "licence": "CC BY 4.0",
