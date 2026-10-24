@@ -423,6 +423,7 @@ def front(lang):
     pop = sorted((c for c in SHOP["cards"] if c.get("pop")), key=lambda c: c["pop"])
     out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
     out += studio_band(lang)
+    out += asknan_band(lang)
     count = {}
     for c in SHOP["cards"]:
         count[c["cat"]] = count.get(c["cat"], 0) + 1
@@ -454,6 +455,31 @@ def studio_band(lang, cat=None):
             '<a class="btn" href="%s">%s</a></li></ul>\n' % (
                 E(su["name"]), job(["robot", "laptop", "wrench", "lock"], lang, name="job-studio"), E(su["h1"]), E(su["band"]),
                 url(lang, "studio/"), E(SHOP["ui"][lang]["open"])))
+
+
+ASKNAN_F = os.path.join(HERE, "data", "asknan", "asknan.json")
+ASKNAN = json.load(open(ASKNAN_F, encoding="utf-8")) if os.path.exists(ASKNAN_F) else None
+
+
+def asknan_band(lang):
+    """Ask Nan, Nan's column (tools/build_asknan.py): a card on the front page. The column is in English and Thai;
+    the other languages link to the English list."""
+    if not ASKNAN or lang not in ASKNAN.get("band", {}):
+        return ""
+    b = ASKNAN["band"][lang]
+    href = url(lang if lang in ASKNAN["langs"] else "en", "ask-nan/")
+    newest = None
+    import glob as _glob
+    import studio_md as _md
+    for f in sorted(_glob.glob(os.path.join(HERE, "data", "asknan", "columns", "*.md"))):
+        h = _md.read(f)[0]
+        if not h.get("draft") and (newest is None or (h["date"], h["no"]) > (newest["date"], newest["no"])):
+            newest = h
+    h3 = (newest["title_th"] if lang == "th" else newest["title"]) if newest else b["name"]
+    return ('<h2>%s</h2>\n<ul class="cards"><li class="card" id="ask-nan" style="--line:var(--c-help)">%s<h3%s>%s</h3><p class="l">%s</p>'
+            '<a class="btn" href="%s">%s</a></li></ul>\n' % (
+                E(b["name"]), job(["chat", "nib", "done"], lang, name="job-asknan"),
+                ' lang="en"' if newest and lang not in ("en", "th") else "", E(h3), E(b["line"]), href, E(SHOP["ui"][lang]["open"])))
 
 
 def category(lang, cat):
