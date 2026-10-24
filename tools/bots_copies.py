@@ -16,7 +16,7 @@ DOCS = pathlib.Path(__file__).resolve().parent.parent / "docs"
 DBM = json.loads((DOCS.parent / "data" / "dingbats.json").read_text(encoding="utf-8"))
 src = (DOCS / "bots" / "index.html").read_text(encoding="utf-8")
 page = re.sub(r'href="/assets/(shop|pages)\.css\?v=[^"]*"', r'href="\1.css"', src)
-page = re.sub(r'<script type="application/json" id="shop">.*?</script>\n<script type="module" src="/assets/shop.js"></script>\n',
+page = re.sub(r'<script type="application/json" id="shop">.*?</script>\n<script type="module" src="/assets/shop.js(?:\?v=[^"]*)?"></script>\n',
               '<script src="https://hongdam.net/assets/db/%s"></script>\n<script src="https://hongdam.net/assets/db/%s"></script>\n'
               % (DBM["core"], DBM["groups"]["p-bots"]), page, flags=re.S)
 assert "/assets/shop.js" not in page
