@@ -1,0 +1,79 @@
+/* Ask Nan (hongdam.net/ask-nan/): Nan's column, in the shop's look. After shop.css. */
+.asknan { --an-faint: color-mix(in oklab, var(--fg) 18%, transparent); --an-tint: color-mix(in oklab, var(--fg) 6%, var(--bg2)) }
+.an-kicker { margin: 1.6rem 0 0; font: 650 .74rem/1.4 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--mut) }
+.an-index h1 { margin-top: .5rem }
+.an-line { margin: .4rem 0 1.4rem }
+.an-cta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: 1rem 0 1.4rem }
+.an-small { margin: .5rem 0; color: var(--mut); font-size: .98rem; line-height: 1.6 }
+.an-count { margin: .4rem 0 1rem; color: var(--mut); font-size: .92rem }
+
+.an-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.8rem 0 .4rem }
+.an-chips a { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.6rem; padding: .3rem .95rem; border-radius: 999px;
+  box-shadow: inset 0 0 0 1.5px var(--fg); color: var(--fg); text-decoration: none; font-weight: 650 }
+.an-chips a[data-kind]:not([data-kind=""])::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--line) }
+.an-chips a[aria-current] { background: var(--fg); color: var(--bg); box-shadow: none }
+
+.an-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--an-faint) }
+.an-cc[hidden] { display: none }
+.an-cc a { display: block; padding: 1.3rem .2rem 1.3rem 1rem; border-bottom: 1px solid var(--an-faint); border-left: 4px solid var(--line);
+  color: var(--fg); text-decoration: none }
+.an-cc a:hover, .an-cc a:focus-visible { background: var(--an-tint) }
+.an-cc .job { margin: 0 0 .6rem; max-width: 12rem }
+.an-mini { --stop: 1.7rem; --lineY: .45rem; --clear: 1.2rem }
+.an-meta { margin: 0 0 .4rem; font: 600 .74rem/1.45 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mut) }
+.an-meta a { color: inherit }
+.an-meta b { color: var(--fg) }
+.an-cc h2, .an-cc h3 { margin: 0; font: 720 clamp(1.2rem, 3.2vw, 1.45rem)/1.25 var(--sys); letter-spacing: -.015em; text-transform: none; color: var(--fg) }
+.an-tw { margin: .3rem 0 0; color: var(--mut); font-size: 1rem; line-height: 1.55 }
+.an-dek { margin: .55rem 0 0; font-size: 1rem; line-height: 1.55 }
+
+.an-c h1 { margin: .6rem 0 .3rem; font-size: clamp(1.9rem, 7vw, 2.9rem) }
+.an-c > .an-tw { margin: 0 0 1.2rem; font-size: 1.15rem }
+.an-q { margin: 1.2rem 0; padding: 1rem 1.2rem; border-radius: var(--r, 10px); background: var(--an-tint); border-left: 4px solid var(--line) }
+.an-q p { margin: 0; font-size: 1.12rem; line-height: 1.6 }
+.an-q p + p { margin-top: .55rem; color: var(--mut); font-size: 1.02rem }
+.an-by { margin: 1.6rem 0 .2rem }
+.an-nan { display: inline-block; padding: .15rem .7rem; border-radius: 999px; background: var(--fg); color: var(--bg); font: 700 .82rem/1.5 var(--sys); letter-spacing: .04em }
+
+.an-body { font-size: 1.125rem; line-height: 1.72 }
+.an-body > p, .an-body > ul, .an-body > ol { margin: 1rem 0 }
+.an-body li + li { margin-top: .35rem }
+.an-body h2 { margin: 2.4rem 0 .6rem; font: 740 1.4rem/1.25 var(--sys); letter-spacing: -.02em; text-transform: none; color: var(--fg) }
+.an-body h3 { margin: 1.8rem 0 .4rem; font: 700 1.15rem/1.3 var(--sys) }
+.an-body a { color: var(--fg); text-decoration-color: var(--line); text-decoration-thickness: 2px; text-underline-offset: .15em }
+.an-body blockquote { margin: 1.3rem 0; padding: .1rem 0 .1rem 1rem; border-left: 3px solid var(--line); color: var(--mut) }
+.an-body blockquote p { margin: 0 }
+
+.an-body table { width: 100%; border-collapse: collapse; font-size: .97rem; font-variant-numeric: tabular-nums }
+.an-body th, .an-body td { padding: .5rem .55rem; border-bottom: 1px solid var(--an-faint); text-align: left; vertical-align: top }
+.an-body thead th { font: 700 .74rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mut); border-bottom: 2px solid var(--fg) }
+.an-body .tbl { overflow-x: auto }
+
+.an-thsum { margin: 2.2rem 0 0; padding: 1.1rem 1.2rem; border-radius: var(--r, 10px); background: var(--an-tint) }
+.an-thsum h2 { margin: 0 0 .4rem; font: 700 1rem/1.4 var(--sys); letter-spacing: 0; text-transform: none; color: var(--fg) }
+.an-thsum p { margin: 0; line-height: 1.75 }
+.an-buy { margin-top: 2.2rem }
+.an-src { margin-top: 2.4rem }
+.an-src ol { margin: 0; padding-left: 1.5rem; font-size: .95rem }
+.an-src li { padding: .2rem 0; scroll-margin-top: 5rem; overflow-wrap: anywhere }
+.an-src li:target { background: var(--an-tint); border-radius: 4px }
+.an-host { margin-left: .3rem; color: var(--mut) }
+.an-pn { display: grid; gap: .8rem; margin-top: 2.6rem }
+@media (min-width: 40rem) { .an-pn { grid-template-columns: 1fr 1fr } .an-pn .an-new { grid-column: 2; text-align: right } }
+.an-pn a { display: block; padding: .9rem 1rem; border-radius: var(--r, 10px); box-shadow: inset 0 0 0 1px var(--an-faint); color: var(--fg); text-decoration: none; font-weight: 650 }
+.an-pn a span { display: block; margin-bottom: .25rem; font: 600 .72rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mut) }
+.an-ask { margin-top: 3rem; padding-top: .4rem; border-top: 1px solid var(--an-faint) }
+.an-ask .lede { margin: 0 0 1rem; font-size: 1.05rem }
+.asknan sup.ref { line-height: 0 }
+.asknan sup.ref a { display: inline-block; min-width: 1.35em; padding: .1em .3em; border-radius: 4px; background: var(--an-tint); color: var(--fg);
+  box-shadow: inset 0 0 0 1px var(--an-faint); font: 700 .7rem/1.2 var(--mono); text-align: center; text-decoration: none }
+.asknan .tbl { margin: 1.4rem 0; overflow-x: auto }
+/* a table of three or more columns stacks on a phone: each row a block, each cell under its column's name */
+@media (max-width: 40rem) {
+  .an-body .tbl table:has(thead th:nth-child(3)) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%) }
+  .an-body .tbl table:has(thead th:nth-child(3)), .an-body .tbl table:has(thead th:nth-child(3)) tbody,
+  .an-body .tbl table:has(thead th:nth-child(3)) tr, .an-body .tbl table:has(thead th:nth-child(3)) th, .an-body .tbl table:has(thead th:nth-child(3)) td { display: block }
+  .an-body .tbl table:has(thead th:nth-child(3)) tr { padding: .7rem 0; border-bottom: 1px solid var(--an-faint) }
+  .an-body .tbl table:has(thead th:nth-child(3)) th, .an-body .tbl table:has(thead th:nth-child(3)) td { padding: .15rem 0; border: 0 }
+  .an-body .tbl table:has(thead th:nth-child(3)) td::before { content: attr(data-h); display: block; margin-top: .3rem; font: 700 .68rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mut) }
+}
