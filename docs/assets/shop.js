@@ -654,7 +654,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
 <p class="tot"><span>${esc(T.total)}</span> <b id="total" class="amt"></b></p><p id="halfnote" class="note" hidden></p>
 <label class="field">${esc(T.reach)}<input name="contact" required autocomplete="tel" maxlength="120"></label>
 <label class="field">${esc(T.note)}<textarea name="note" rows="3" maxlength="600"></textarea></label>
-<p class="note">${esc(T.payMethods)}</p>
+<p class="note">${esc(D.ln && T.payMethodsLn ? T.payMethodsLn : T.payMethods)}</p>
 <button class="btn big" type="submit">${esc(T.next)}</button>
 <p id="bmsg" role="status"></p>
 </form><div id="pay" hidden></div>`
@@ -710,6 +710,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
 // The order's amount in the currency the buyer picked (j.show), kept as it is if they flip the switch afterwards.
 // PromptPay is in baht (j.pay.thb, converted when the price is in US$ or the buyer pays in $ or €); PayPal asks for
 // the amount in the buyer's currency. Paying in baht puts PromptPay first; in $ or €, PayPal and Wise first.
+// Bitcoin by Lightning (her ask 2026-10-24) sits after the card, shown once /api/buy says it is on.
 function pay(j) {
   const box = $('#pay')
   box.hidden = false
@@ -728,9 +729,13 @@ function pay(j) {
   // click, so no pop-up blocker stops it) and this page keeps the other ways.
   const card = T.cardH ? `<section class="way" id="cardway" hidden><h3>${esc(T.cardH)}</h3><p>${esc(T.cardNote)}</p>
 <p><button class="btn big" type="button" id="cardbtn">${esc(T.cardBtn).replace('{amount}', amount)}</button></p><p id="kmsg" role="status"></p></section>` : ''
+  const offrampt = 'https://offrampt.net/' + (D.lang === 'th' ? 'th/' : '')
+  const ln = T.lnH ? `<section class="way" id="lnway" hidden><h3>${esc(T.lnH)}</h3><p>${esc(T.lnNote)}</p>
+<p><button class="btn big" type="button" id="lnbtn">${esc(T.lnBtn).replace('{amount}', amount)}</button></p><div id="lnbill" hidden></div>
+<p id="lmsg" role="status"></p><p class="note"><a href="${offrampt}" target="_blank" rel="noopener">${esc(T.lnMore)}</a></p></section>` : ''
   box.innerHTML = `<h2>${esc(T.order)} ${esc(j.ref)}</h2>
 <p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>
-${s.cur === 'THB' ? pp + card + away : card + away + pp}
+${s.cur === 'THB' ? pp + card + ln + away : card + ln + away + pp}
 <p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(j.ref)}</a></p>`
   fetch('/api/buy').then((r) => r.json()).then((s) => {
     const cw = $('#cardway')
@@ -747,6 +752,7 @@ ${s.cur === 'THB' ? pp + card + away : card + away + pp}
         if (w) w.location.href = r.url; else location.href = r.url
       })
     }
+    if (s.ln && $('#lnway')) lightning(j, box)
     const sf = $('#sf'); if (!s.slip || !sf) return
     sf.hidden = false
     sf.addEventListener('submit', async (e) => {
@@ -770,6 +776,48 @@ ${s.cur === 'THB' ? pp + card + away : card + away + pp}
     if (r.ok && !box.querySelector('a[href*="?ref="]')) box.insertAdjacentHTML('beforeend', trackLink(j.ref))
   })
   box.scrollIntoView({ block: 'start' })
+}
+
+// Bitcoin by Lightning: the button asks /api/buy/ln for a bill (sats at this minute's price), shown as a QR code, a
+// wallet link and a copy button. When the wallet can be asked (check), this page asks /api/buy/ln/check every 3 s
+// until it is paid or the bill runs out; otherwise the buyer presses "I paid by Lightning" and the team checks.
+function lightning(j, box) {
+  const way = $('#lnway'), bill = $('#lnbill'), m = $('#lmsg'), btn = $('#lnbtn')
+  way.hidden = false
+  let timer = null
+  const stop = () => { if (timer) clearInterval(timer); timer = null }
+  const done = () => {
+    stop(); bill.hidden = true; btn.hidden = true
+    m.textContent = `${T.paid} ${j.ref}`
+    box.querySelectorAll('[data-claim]').forEach((b) => { b.disabled = true })
+    if (!box.querySelector('a[href*="?ref="]')) box.insertAdjacentHTML('beforeend', trackLink(j.ref))
+  }
+  btn.addEventListener('click', async () => {
+    m.textContent = T.sending
+    let r
+    try { r = await (await fetch('/api/buy/ln', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref: j.ref }) })).json() } catch { r = { ok: false, why: 'service' } }
+    if (r.ok && r.state) { done(); return }
+    if (!r.ok) { m.textContent = T.err[r.why] || T.err.ln || T.err.service; return }
+    const until = new Date(r.exp * 1000).toLocaleTimeString(D.lang === 'en' ? 'en-GB' : D.lang, { hour: '2-digit', minute: '2-digit' })
+    const qr = qrToSvg('lightning:' + r.pr, { ecl: 'L', border: 4, scale: 4, dark: '#000', light: '#fff', title: `Lightning ${r.sats} sats` })
+    bill.innerHTML = `<p class="tot"><b>${Number(r.sats).toLocaleString('en-US')} sats</b></p><div class="qr"><a href="lightning:${esc(r.pr)}">${qr}</a></div>
+<p>${esc(T.lnScan)}</p><p><a class="btn" href="lightning:${esc(r.pr)}">${esc(T.lnOpen)}</a> <button class="btn alt" type="button" id="lncopy">${esc(T.lnCopy)}</button></p>
+<p class="note">${esc(T.lnUntil).replace('{time}', until)}</p>${r.check ? '' : `<p><button class="btn alt" type="button" data-claim="lightning">${esc(T.ipaid)} Lightning</button></p>`}`
+    bill.hidden = false; btn.hidden = true
+    m.textContent = r.check ? T.lnWait : ''
+    $('#lncopy').addEventListener('click', async (e) => {
+      try { await navigator.clipboard.writeText(r.pr); e.target.textContent = T.lnCopied } catch { /* the QR and the wallet link still work */ }
+    })
+    stop()
+    const ask = async () => {
+      if (Date.now() / 1000 > r.exp) { stop(); bill.hidden = true; btn.hidden = false; m.textContent = T.lnOld; return }
+      if (document.hidden) return
+      let c
+      try { c = await (await fetch('/api/buy/ln/check', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref: j.ref }) })).json() } catch { return }
+      if (c.ok && ['paid', 'started', 'done'].includes(c.state)) done()
+    }
+    timer = setInterval(ask, r.check ? 3000 : 15000)
+  })
 }
 
 // The ask form: one contact box (email or LINE ID, phone) and what they need.
