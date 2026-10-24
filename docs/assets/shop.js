@@ -574,7 +574,7 @@ if (q) {
     const hits = cards.filter((c) => words.every((w) => c.kw.includes(w))).slice(0, 12)
     out.hidden = false
     out.innerHTML = hits.length ? hits.map(cardHtml).join('')
-      : `<li class="card"><p>${esc(T.noresult)}</p><a class="btn" href="${esc(D.lineUrl)}">LINE</a></li>`
+      : `<li class="card"><p>${esc(T.noresult)}</p><a class="btn" href="${esc(D.lineUrl)}">${esc(T.msgUs)}</a></li>`
     ladders(out)
     glyphs(...new Set(hits.map((c) => c.cat)))
   }

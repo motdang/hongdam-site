@@ -433,8 +433,8 @@ def search_box(lang):
 
 def not_here(lang):
     ui = SHOP["ui"][lang]
-    return ('<h2>%s</h2><p><a class="btn" href="%s">LINE</a> <a class="btn alt" href="%s">%s</a></p>\n'
-            % (E(ui["notHere"]), LINE_URL, url(lang, "ask/"), E(ui["askBtn"])))
+    return ('<h2>%s</h2><p><a class="btn" href="%s">%s</a> <a class="btn alt" href="%s">%s</a></p>\n'
+            % (E(ui["notHere"]), LINE_URL, E(ui["msgUs"]), url(lang, "ask/"), E(ui["askBtn"])))
 
 
 def front(lang):
@@ -602,7 +602,7 @@ def buy_page(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, "%s · Hongdam" % ui["buy"], ui["desc"], "buy/", noindex=True, og="og/shop/buy.jpg")
     out += '<body class="p-buy">\n' + top(lang, "buy/") + '<main>\n<p class="back"><a href="%s">← %s</a>%s</p>\n' % (url(lang), E(ui["home"]), share_btn(lang, need="c"))
-    out += '<div id="buy"><noscript><p>%s</p><p><a class="btn" href="%s">LINE</a></p></noscript></div>\n</main>\n' % (E(ui["noscript"]), LINE_URL)
+    out += '<div id="buy"><noscript><p>%s</p><p><a class="btn" href="%s">%s</a></p></noscript></div>\n</main>\n' % (E(ui["noscript"]), LINE_URL, E(ui["msgUs"]))
     return out + foot(lang, pay=False)
 
 
@@ -614,8 +614,8 @@ def ask_page(lang):
             '<label class="field">%s<input name="contact" required maxlength="120" autocomplete="email"></label>\n'
             '<label class="hp" aria-hidden="true">website<input name="website" tabindex="-1" autocomplete="off"></label>\n'
             '<button class="btn big" type="submit">%s</button><p id="amsg" role="status"></p></form>\n'
-            '<p><a class="btn alt" href="%s">LINE @964yxgnk</a></p>\n</main>\n'
-            % (E(ui["askWhat"]), E(ui["reach"]), E(ui["send"]), LINE_URL))
+            '<p><a class="btn alt" href="%s">%s @964yxgnk</a></p>\n</main>\n'
+            % (E(ui["askWhat"]), E(ui["reach"]), E(ui["send"]), LINE_URL, E(ui["msgUs"])))
     return out + foot(lang, group="front")
 
 
