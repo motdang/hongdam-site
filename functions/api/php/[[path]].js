@@ -25,7 +25,7 @@ const PRIVATE = /^(?:0\.|10\.|127\.|169\.254\.|192\.168\.|172\.(?:1[6-9]|2\d|3[0
 const PAY = { promptpay: '0988239210', paypal: 'https://www.paypal.me/pfauhaus', wise: 'https://wise.com/pay/me/annikahonorahp', line: '@964yxgnk' }
 const ORIGINS = ['https://hongdam.net', 'https://www.hongdam.net', 'https://hongdam.pages.dev']
 const originOk = (o) => ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(o)
-const OLD = 'PHP older than 7.4 gets a price after a look. Message us on LINE @964yxgnk. · PHP เก่ากว่า 7.4 แจ้งราคาหลังจากดูเว็บแล้ว ทักไลน์ @964yxgnk'
+const OLD = 'For PHP older than 7.4 we give a price after we look at the site. Message us on LINE @964yxgnk. · PHP เก่ากว่า 7.4 แจ้งราคาหลังจากดูเว็บแล้ว ทักไลน์ @964yxgnk'
 
 // "https://www.example.com/shop?x=1" → "www.example.com"; a bare host, an IDN (to its xn-- form) or a public IPv4 stays as it is.
 export function siteOf(v) {
@@ -66,11 +66,11 @@ async function book(ctx, b, now) {
   const contact = clean(b.contact, 120), note = clean(b.note, 600)
   if (!Object.hasOwn(KINDS, kind)) return json({ ok: false, error: 'Pick one of the four kinds. · เลือกหนึ่งในสี่แบบ' }, 400)
   if (!site) return json({ ok: false, error: 'One website address or server name, for example example.com; put others in the note. · ใส่ชื่อเว็บหรือเซิร์ฟเวอร์เพียงหนึ่งชื่อ เช่น example.com ส่วนชื่ออื่นใส่ในช่องหมายเหตุ' }, 400)
-  if (contact.length < 3) return json({ ok: false, error: 'Leave an email or a LINE ID. · ใส่อีเมลหรือไลน์ไอดี' }, 400)
+  if (contact.length < 3) return json({ ok: false, error: 'Give an email address or a LINE ID. · ใส่อีเมลหรือไลน์ไอดี' }, 400)
   if (b.owner !== true) return json({ ok: false, error: 'Tick the box: I own this site or server, or its owner has said I may change it. · ติ๊กช่องยืนยัน: เป็นเจ้าของเว็บหรือเซิร์ฟเวอร์นี้ หรือเจ้าของอนุญาตให้แก้ไขได้' }, 400)
   if (kind === 'upgrade' && php && oldPhp(php)) return json({ ok: false, quote: true, error: OLD, line: PAY.line })
   const ip = request.headers.get('cf-connecting-ip') || ''
-  if (!(await allowed(env, ip, now))) return json({ ok: false, error: 'Three bookings a day from one address. Write to nan@motdang.net. · จองได้วันละสามครั้งต่อหนึ่งไอพี (IP address) หากต้องการจองเพิ่ม เขียนมาที่ nan@motdang.net' }, 429)
+  if (!(await allowed(env, ip, now))) return json({ ok: false, error: 'Three bookings a day are allowed from one internet connection. Write to nan@motdang.net. · จองได้วันละสามครั้งต่อหนึ่งไอพี (IP address) หากต้องการจองเพิ่ม เขียนมาที่ nan@motdang.net' }, 429)
   const db = env.TASKS
   const cs = await allCounts(db, now)
   const price = pricesFrom(cs, now).find((p) => p.id === kind)
@@ -123,7 +123,7 @@ async function handle(ctx, now) {
     return book(ctx, b, now)
   }
   if (path[0] === 'slip' && request.method === 'POST') return slip(ctx, now)
-  return json({ error: 'Not here' }, 404)
+  return json({ error: 'Not found' }, 404)
 }
 
 export async function onRequest(ctx) {

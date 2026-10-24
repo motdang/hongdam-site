@@ -42,11 +42,11 @@ async function book(ctx, b, now) {
   const { request, env } = ctx
   const kind = clean(b.kind, 20), login = clean(b.login, 60).replace(/^@/, '').replace(/^https?:\/\/github\.com\//i, '').replace(/\/.*$/, '')
   const contact = clean(b.contact, 120), note = clean(b.note, 600)
-  if (!Object.hasOwn(KINDS, kind)) return json({ ok: false, error: 'Pick a kind: profile, showcase or whole.' }, 400)
+  if (!Object.hasOwn(KINDS, kind)) return json({ ok: false, error: 'Choose one of the three kinds on the page.' }, 400)
   if (!LOGIN.test(login)) return json({ ok: false, error: 'That is not a GitHub username.' }, 400)
-  if (contact.length < 3) return json({ ok: false, error: 'Leave an email or a LINE ID.' }, 400)
+  if (contact.length < 3) return json({ ok: false, error: 'Give an email address or a LINE ID.' }, 400)
   const ip = request.headers.get('cf-connecting-ip') || ''
-  if (!(await allowed(env, ip, now))) return json({ ok: false, error: 'Three bookings a day from one address. Write to nan@motdang.net.' }, 429)
+  if (!(await allowed(env, ip, now))) return json({ ok: false, error: 'Three bookings a day are allowed from one internet connection. Write to nan@motdang.net.' }, 429)
   const db = env.TASKS
   const c = await counts(db, kind)
   const price = walk(kind, c, OPENED, now)
@@ -92,5 +92,5 @@ export async function onRequest(ctx) {
     return book(ctx, b, now)
   }
   if (path[0] === 'slip' && request.method === 'POST') return slip(ctx, now)
-  return json({ error: 'Not here' }, 404)
+  return json({ error: 'Not found' }, 404)
 }

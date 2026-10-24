@@ -1,16 +1,16 @@
 <main>
 {{lead}}
-  <p class="lede">Red-teaming: attacking your own chatbot before a customer does. Paste the bot's system prompt — the hidden instructions it runs on — pick packs, and run. A secret reference code is added to your prompt for each batch; a bot that gives it out, quotes its instructions, or obeys a planted command fails that probe.</p>
+  <p class="lede">Red-teaming means attacking your own chatbot before a customer does. Paste the bot's system prompt (the hidden instructions it follows), pick packs (sets of test attacks), and press Run. For each batch we add a secret code to your prompt. A bot fails an attack if it gives out the code, quotes its instructions, or obeys a command hidden in the attack.</p>
   <div class="go">
     <a class="btn alt" href="/buy/?c=redteam">Buy · <span lang="th">ซื้อ</span></a>
-    <small>Chatbot attack test {{live:sec-redteam}} · We try to break it and write the fixes.</small>
+    <small>Chatbot attack test {{live:sec-redteam}} · We attack your chatbot and write down how to fix what fails.</small>
   </div>
 
   <form class="run" id="f" novalidate>
     <label>System prompt
       <textarea id="sys" maxlength="6000" required placeholder="You are the booking assistant for …"></textarea>
     </label>
-    <p class="small"><button type="button" class="linkish" id="sample">Use a sample prompt</button> · <span id="len">0</span>/6000 · The prompt goes to Cloudflare Workers AI for the run.</p>
+    <p class="small"><button type="button" class="linkish" id="sample">Use a sample prompt</button> · <span id="len">0</span>/6000 characters · Your prompt goes to Cloudflare Workers AI to run the test.</p>
 
     <div class="row">
       <label>Model
@@ -24,10 +24,10 @@
       </label>
     </div>
 
-    <p class="small">Packs · <a href="/market/">market</a></p>
+    <p class="small">Packs (sets of test attacks) · <a href="/market/">see all packs</a></p>
     <div class="pick" id="packs"></div>
 
-    <button class="btn" type="submit" id="go">Run</button>
+    <button class="btn" type="submit" id="go">Run the test</button>
     <p class="status" id="s" role="status" aria-live="polite"></p>
   </form>
 
@@ -37,7 +37,7 @@
   <p class="dl" hidden id="dl"><a href="#" id="dlj" download="redteam.json">Report · JSON</a><a href="#" id="dlt" download="redteam.txt">Report · text</a></p>
   <div class="go" hidden id="hire">
     <a class="btn alt" href="/buy/?c=redteam">Buy · <span lang="th">ซื้อ</span></a>
-    <small>Chatbot attack test {{live:sec-redteam}} · We try to break it and write the fixes.</small>
+    <small>Chatbot attack test {{live:sec-redteam}} · We attack your chatbot and write down how to fix what fails.</small>
   </div>
 </main>
 <script>
@@ -58,7 +58,7 @@
     $('packs').innerHTML = all.map(function (p) {
       var on = !want || want === p.id ? ' checked' : '';
       return '<label><input type="checkbox" value="' + esc(p.id) + '"' + on + '>' + esc(p.name) +
-        ' <span class="small">' + p.probes.length + '</span></label>';
+        ' <span class="small">' + p.probes.length + ' attacks</span></label>';
     }).join('');
   }).catch(function () { say('Could not load the packs.', 'err'); });
 
@@ -106,9 +106,9 @@
   function show(r) {
     var li = document.createElement('li');
     li.className = r.verdict;
-    li.innerHTML = '<span class="v">' + ({ pass: 'held', fail: 'broke', error: 'error' }[r.verdict]) + ' · ' + esc(r.pack) + '</span>' +
+    li.innerHTML = '<span class="v">' + ({ pass: 'passed', fail: 'failed', error: 'error' }[r.verdict]) + ' · ' + esc(r.pack) + '</span>' +
       '<p class="why">' + esc(r.why) + '</p>' +
-      '<details><summary>Probe and reply</summary><pre>' + esc(r.probe) + '</pre><pre>' + esc(r.reply || '(empty)') + '</pre></details>';
+      '<details><summary>Attack and reply</summary><pre>' + esc(r.probe) + '</pre><pre>' + esc(r.reply || '(empty)') + '</pre></details>';
     $('res').appendChild(li);
   }
 
@@ -120,7 +120,7 @@
     });
     var all = log.filter(function (r) { return r.verdict !== 'error'; });
     var held = all.filter(function (r) { return r.verdict === 'pass'; }).length;
-    $('score').innerHTML = '<div><b>' + held + '/' + all.length + '</b><span>held · all</span></div>' +
+    $('score').innerHTML = '<div><b>' + held + '/' + all.length + '</b><span>passed · all</span></div>' +
       Object.keys(by).map(function (k) { return '<div><b>' + by[k].held + '/' + by[k].n + '</b><span>' + esc(k) + '</span></div>'; }).join('');
   }
 
@@ -129,7 +129,7 @@
     var json = JSON.stringify({ run: stamp, model: model, results: log }, null, 2);
     var txt = ['hongdam.net/redteam — ' + stamp + ' — ' + model, $('score').innerText.replace(/\n+/g, ' '), '']
       .concat(log.map(function (r) {
-        return [({ pass: 'HELD', fail: 'BROKE', error: 'ERROR' }[r.verdict]) + ' · ' + r.pack + ' · ' + r.why, 'PROBE: ' + r.probe, 'REPLY: ' + r.reply, ''].join('\n');
+        return [({ pass: 'PASSED', fail: 'FAILED', error: 'ERROR' }[r.verdict]) + ' · ' + r.pack + ' · ' + r.why, 'PROBE: ' + r.probe, 'REPLY: ' + r.reply, ''].join('\n');
       })).join('\n');
     $('dlj').href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
     $('dlt').href = URL.createObjectURL(new Blob([txt], { type: 'text/plain' }));

@@ -1,8 +1,8 @@
 {
   "id": "encoding",
-  "name": "Obfuscated instructions",
+  "name": "Disguised instructions",
   "name_th": "คำสั่งอำพราง",
-  "summary": "Delivers the override in base64, reversed text, split tokens or leetspeak.",
+  "summary": "Hides the override command by writing it in base64 (a text code), backwards, in pieces, or in leetspeak (letters swapped for numbers).",
   "author": "Hongdam",
   "author_url": "https://hongdam.net/",
   "licence": "CC BY 4.0",

@@ -7,10 +7,10 @@
 <meta name="theme-color" content="#171009">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <title>The group remembers</title>
-<meta name="description" content="A LINE desk for volunteer groups: a new member asks and gets what the group already said, with who and when; cases go on a wheel, handed out by town. Sample chat.">
+<meta name="description" content="A LINE desk for volunteer groups: a new member asks and gets what the group already said, with who and when; each request for help is a case, and cases go to volunteers by town. Sample chat.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Joined today? The group remembers.">
-<meta property="og:description" content="A LINE desk and a case wheel for volunteer groups: old answers with who and when, cases handed out by town. Sample chat, made for Joe by Hongdam.">
+<meta property="og:description" content="A LINE desk and a case wheel for volunteer groups: old answers with who and when, requests for help given to volunteers by town. Sample chat, made for Joe by Hongdam.">
 <meta property="og:url" content="https://hongdam.net/for/joe/">
 <meta property="og:image" content="https://hongdam.net/for/joe/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="Card: Joined today? The group remembers. A LINE chat where a new member asks about a passport and the desk answers with three old messages. Hongdam, Chiang Rai.">
@@ -228,7 +228,7 @@ footer p{margin:0 0 6px}
     <div class="hero">
       <div>
         <h1 data-t="h1">Joined today? The group remembers.</h1>
-        <p class="lead" data-t="lead">A desk for a volunteer LINE group. A new member asks and gets what the group already said, with who said it and when. Cases go on a wheel, handed out by town.</p>
+        <p class="lead" data-t="lead">A desk (an automatic helper) for a volunteer LINE group. A new member asks and gets what the group already said, with who said it and when. Each request for help is a case. Cases go on a wheel (a round board of buttons) and are given to volunteers by town.</p>
       </div>
       <div class="facts">
         <div class="count">
@@ -242,7 +242,7 @@ footer p{margin:0 0 6px}
         <div class="phone" role="region" aria-labelledby="ph-name">
           <div class="phead">
             <span class="av" aria-hidden="true">LV</span>
-            <span><b id="ph-name" data-t="group">Liaison Volunteers · North</b><small data-t="members">38 members · sample</small></span>
+            <span><b id="ph-name" data-t="group">Liaison Volunteers · Northern Thailand</b><small data-t="members">38 members · sample</small></span>
           </div>
           <div class="feed" id="feed" aria-live="polite">
             <div class="sysmsg" data-t="joined">You joined the group today</div>
@@ -264,7 +264,7 @@ footer p{margin:0 0 6px}
 
     <section id="wheel" aria-labelledby="h-wh">
       <h2 id="h-wh" data-t="h2w">Who is helping whom</h2>
-      <p class="sub" data-t="subw">Cases come out of the chat and go on a wheel, handed out by town. Each change also shows in the LINE group.</p>
+      <p class="sub" data-t="subw">Cases are made from the chat and go on a wheel. Each case is given to a volunteer by town. Each change also shows in the LINE group.</p>
       <div class="as" id="as" role="group" aria-label="See it as"></div>
       <div class="wgrid">
         <div><div class="wheel" id="wh"></div><p class="whelp" id="whelp"></p></div>
@@ -273,8 +273,8 @@ footer p{margin:0 0 6px}
     </section>
 
     <section id="all" aria-labelledby="h-all">
-      <h2 id="h-all" data-t="h2a">Everything the group said, filed</h2>
-      <p class="sub" data-t="suba">Each message lands in a topic as it is posted. Tap a topic, or search.</p>
+      <h2 id="h-all" data-t="h2a">Everything the group said, sorted by topic</h2>
+      <p class="sub" data-t="suba">Each message goes into a topic when it is posted. Tap a topic, or search.</p>
       <div class="topics" id="topics" role="group" aria-label="Topics"></div>
       <div class="find">
         <label class="sr" for="f" data-t="findlabel">Search the chat</label>
@@ -289,10 +289,10 @@ footer p{margin:0 0 6px}
       <h2 id="h-how" data-t="h2b">How a group starts</h2>
       <p class="sub" data-t="subb">About an hour, once.</p>
       <ol class="steps">
-        <li><span class="n" aria-hidden="true">1</span><h3 data-t="s1h">Add the desk to the group</h3><p data-t="s1p">An admin adds the desk to the LINE group, like adding a member. From then on it files each new message.</p></li>
-        <li><span class="n" aria-hidden="true">2</span><h3 data-t="s2h">Send the old chat once</h3><p data-t="s2p">In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are filed too.</p></li>
+        <li><span class="n" aria-hidden="true">1</span><h3 data-t="s1h">Add the desk to the group</h3><p data-t="s1p">An admin adds the desk to the LINE group, like adding a member. From then on it saves each new message under a topic.</p></li>
+        <li><span class="n" aria-hidden="true">2</span><h3 data-t="s2h">Send the old chat once</h3><p data-t="s2p">In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are saved under topics too.</p></li>
         <li><span class="n" aria-hidden="true">3</span><h3 data-t="s3h">New members ask</h3><p data-t="s3p">In the group with @desk, or on a page like this one. Questions nobody has answered yet go to the person who covers that subject.</p></li>
-        <li><span class="n" aria-hidden="true">4</span><h3 data-t="s4h">Each volunteer gets a link</h3><p data-t="s4p">No password. The link opens the wheel with that person's cases. The coordinator's link hands cases out and checks them.</p></li>
+        <li><span class="n" aria-hidden="true">4</span><h3 data-t="s4h">Each volunteer gets a link</h3><p data-t="s4p">No password. The link opens the wheel with that person's cases. The coordinator's link assigns cases and checks them.</p></li>
       </ol>
     </section>
   </main>
@@ -309,45 +309,45 @@ footer p{margin:0 0 6px}
 (function(){
 "use strict";
 var T={
- en:{h1:"Joined today? The group remembers.",lead:"A desk for a volunteer LINE group. A new member asks and gets what the group already said, with who said it and when. Cases go on a wheel, handed out by town.",
+ en:{h1:"Joined today? The group remembers.",lead:"A desk (an automatic helper) for a volunteer LINE group. A new member asks and gets what the group already said, with who said it and when. Each request for help is a case. Cases go on a wheel (a round board of buttons) and are given to volunteers by town.",
   c1:"old messages LINE shows a new member",c2:"old messages the desk shows, in 10 topics",sample:"Sample chat. The people and messages are made up.",
-  group:"Liaison Volunteers · North",members:"38 members · sample",joined:"You joined the group today",nohist:"LINE shows nothing from before you joined",
+  group:"Liaison Volunteers · Northern Thailand",members:"38 members · sample",joined:"You joined the group today",nohist:"LINE shows nothing from before you joined",
   deskname:"Desk (bot)",hello:"Welcome. Ask me anything the group has talked about. Type it below, or tap a question.",
   asklabel:"Your question",ph:"Ask the group…",send:"Send",under:"In LINE, a member types @desk and the question. The same answer comes back inside the group.",
-  h2a:"Everything the group said, filed",suba:"Each message lands in a topic as it is posted. Tap a topic, or search.",findlabel:"Search the chat",fph:"Search: passport, widow, ballot…",
+  h2a:"Everything the group said, sorted by topic",suba:"Each message goes into a topic when it is posted. Tap a topic, or search.",findlabel:"Search the chat",fph:"Search: passport, widow, ballot…",
   more:"Show all",all:"All",h2b:"How a group starts",subb:"About an hour, once.",
-  s1h:"Add the desk to the group",s1p:"An admin adds the desk to the LINE group, like adding a member. From then on it files each new message.",
-  s2h:"Send the old chat once",s2p:"In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are filed too.",
+  s1h:"Add the desk to the group",s1p:"An admin adds the desk to the LINE group, like adding a member. From then on it saves each new message under a topic.",
+  s2h:"Send the old chat once",s2p:"In the group: menu, Settings, Export chat history. LINE makes a text file. Send it to the desk and the old messages are saved under topics too.",
   s3h:"New members ask",s3p:"In the group with @desk, or on a page like this one. Questions nobody has answered yet go to the person who covers that subject.",
   foot1:"Made for Joe by Hongdam, Chiang Rai.",foot2:"Sample chat: the people and messages are made up. For the facts in a real case, check the consulate's own pages.",
   from:"From the chat:",short:"Short answer",found:"found in",msgs:"messages",msg:"message",none:"Nobody in the group has written about that yet. I've asked in the group and tagged ",noneany:"Nobody in the group has written about that yet. I've asked the group for you.",
   nohits:"No messages match.",inchat:"Show in chat",
-  h2w:"Who is helping whom",subw:"Cases come out of the chat and go on a wheel, handed out by town. Each change also shows in the LINE group.",
+  h2w:"Who is helping whom",subw:"Cases are made from the chat and go on a wheel. Each case is given to a volunteer by town. Each change also shows in the LINE group.",
   seeas:"See it as:",r_joe:"Joe · coordinator",r_sue:"Sue · Chiang Rai",r_new:"Mai · new member",nowas:"Now seeing it as {a}",
-  sp_check:"To check",x_check:"Finished cases waiting for your yes.",sp_give:"Hand out",x_give:"Cases nobody holds yet.",
+  sp_check:"To check",x_check:"Finished cases waiting for your yes.",sp_give:"Assign",x_give:"Cases nobody holds yet.",
   sp_all:"All cases",x_all:"Every case, by where it stands.",sp_new:"New case",x_new:"Write what someone needs, in plain words.",
   sp_towns:"Towns",x_towns:"Who covers which town and subject.",sp_help:"Help",x_help:"What the buttons do.",
   sp_mine:"My cases",x_mine:"Cases you hold.",sp_ask:"The desk",x_ask:"Answers the group has given before.",
-  sp_need:"I need a person",x_need:"A volunteer near you takes it.",
-  hub:"people helped this month",open:"cases open",whelp:"Tap a spoke. A red number is how many wait there.",
+  sp_need:"I need a person",x_need:"A volunteer in your town takes it.",
+  hub:"people helped (sample number)",open:"cases open",whelp:"Tap a button on the wheel. A red number shows how many cases wait there.",
   st_new:"New",st_taken:"Being done",st_waiting:"Waiting on someone",st_done:"Done, to check",st_closed:"Closed",
   nobody:"Nobody yet",casew:"Case",fromchat:"From the chat",knows:"What the group already knows",history:"What happened",
   q_right:"Is it right?",yes:"Yes, close it",notyet:"Not yet",q_who:"Who does it?",give:"Give",giveto:"Give to someone else",
   take:"I'll take it",done:"Done",wait:"Waiting on someone",back:"Back to doing",pass:"Pass it back",
-  noteph:"Add a note…",addnote:"Add",newwhat:"What is needed, in plain words",newtown:"Town",newwho:"Who does it",later:"Hand out later",
+  noteph:"Add a note…",addnote:"Add",newwhat:"What is needed, in plain words",newtown:"Town",newwho:"Who does it",later:"Assign later",
   make:"Make the case",newph:"e.g. My neighbour's pension stopped in September",alltowns:"All towns",
   empty_check:"Nothing waiting for your check.",empty_give:"Every case has someone.",empty_mine:"You hold no open cases.",empty_need:"No requests yet.",
   next:"Next for you",yours:"Your requests",covers:"Covers",holds:"open cases",ownlink:"Own link, no password",coord:"Coordinator",
   posted:"Posted in the LINE group",close1:"Back",tochat:"Go to the chat",askp:"The desk answers from what the group already said, with who and when.",
-  helpp:"Every button here also works by typing in the LINE group:",
+  helpp:"Every button on the wheel also works by typing in the LINE group:",
   l_made:"made the case",l_took:"took it",l_gave:"gave it to {b}",l_done:"finished it",l_closed:"closed it",l_notyet:"sent it back",l_wait:"is waiting on someone",l_back:"is back on it",l_pass:"passed it back",
   d_gave:"👉 {a} gave case {n} to {b}.",d_took:"✋ {a} took case {n}.",d_done:"✅ {a} finished case {n}. Joe checks it.",d_closed:"✔️ {a} closed case {n}.",
-  d_notyet:"↩️ {a} sent case {n} back to {b}.",d_wait:"⏳ Case {n} is waiting on someone ({a}).",d_back:"🔨 {a} is back on case {n}.",d_pass:"↩️ {a} passed case {n} back. Joe hands it out.",
-  d_new:"🆕 Case {n}: {title} ({town}). {owner} covers this; Joe hands it out.",d_note:"📝 {a} on case {n}: {x}",d_list:"Open cases:",d_mine:"Your cases, {a}:",
-  d_nocmd:"Case {n} isn't open.",d_held:"Case {n} is held by {b}.",d_notyours:"Case {n} is {b}'s.",d_onlylead:"Only the coordinator hands cases out.",d_onlyvol:"Volunteers take cases. You can ask for a person: @desk help: what you need",d_noone:"Nobody called {b} in the group.",
-  none2:"Nobody in the group has written about that yet. It is now case {n}; {owner} covers it.",noneany2:"Nobody in the group has written about that yet. It is now case {n}; Joe hands it out.",
-  openon:"Open case on this:",s4h:"Each volunteer gets a link",s4p:"No password. The link opens the wheel with that person's cases. The coordinator's link hands cases out and checks them."},
- th:{h1:"<span class=nw>เพิ่งเข้ากลุ่มวันนี้?</span> <span class=nw>กลุ่มยังจำได้</span>",lead:"ผู้ช่วยสำหรับกลุ่มไลน์อาสาสมัคร สมาชิกใหม่ถาม แล้วได้คำตอบจากที่กลุ่มเคยคุยกันไว้ พร้อมบอกว่าใครพูดและพูดเมื่อไร เคสขึ้นบนวงล้อ แบ่งให้ตามพื้นที่",
+  d_notyet:"↩️ {a} sent case {n} back to {b}.",d_wait:"⏳ Case {n} is waiting on someone ({a}).",d_back:"🔨 {a} is back on case {n}.",d_pass:"↩️ {a} passed case {n} back. Joe assigns it again.",
+  d_new:"🆕 Case {n}: {title} ({town}). {owner} covers this; Joe assigns it.",d_note:"📝 {a} on case {n}: {x}",d_list:"Open cases:",d_mine:"Your cases, {a}:",
+  d_nocmd:"Case {n} isn't open.",d_held:"Case {n} is held by {b}.",d_notyours:"Case {n} is {b}'s.",d_onlylead:"Only the coordinator assigns cases.",d_onlyvol:"Volunteers take cases. You can ask for a person: @desk help: what you need",d_noone:"Nobody called {b} in the group.",
+  none2:"Nobody in the group has written about that yet. It is now case {n}; {owner} covers it.",noneany2:"Nobody in the group has written about that yet. It is now case {n}; Joe assigns it.",
+  openon:"Open case on this:",s4h:"Each volunteer gets a link",s4p:"No password. The link opens the wheel with that person's cases. The coordinator's link assigns cases and checks them."},
+ th:{h1:"<span class=nw>เพิ่งเข้ากลุ่มวันนี้?</span> <span class=nw>กลุ่มยังจำได้</span>",lead:"ผู้ช่วยสำหรับกลุ่มไลน์อาสาสมัคร สมาชิกใหม่ถาม แล้วได้คำตอบจากที่กลุ่มเคยคุยกันไว้ พร้อมบอกว่าใครพูดและพูดเมื่อไร คำขอความช่วยเหลือแต่ละเรื่องเป็นหนึ่งเคส เคสขึ้นบนวงล้อ (แผงปุ่มวงกลม) แล้วแบ่งให้อาสาสมัครตามพื้นที่",
   c1:"ข้อความเก่าที่ไลน์ให้สมาชิกใหม่เห็น",c2:"ข้อความเก่าที่ผู้ช่วยเปิดให้ดู แยกเป็น 10 เรื่อง",sample:"แชตตัวอย่าง ชื่อคนและข้อความเป็นเรื่องสมมติ",
   group:"อาสาสมัครประสานงาน · ภาคเหนือ",members:"สมาชิก 38 คน · ตัวอย่าง",joined:"คุณเข้ากลุ่มวันนี้",nohist:"ไลน์ไม่แสดงข้อความก่อนที่คุณเข้ากลุ่ม",
   deskname:"ผู้ช่วย (บอท)",hello:"ยินดีต้อนรับค่ะ ถามเรื่องที่กลุ่มเคยคุยกันได้เลย พิมพ์ด้านล่าง หรือแตะคำถาม",
@@ -357,7 +357,7 @@ var T={
   s1h:"เพิ่มผู้ช่วยเข้ากลุ่ม",s1p:"แอดมินเพิ่มผู้ช่วยเข้ากลุ่มไลน์ เหมือนเพิ่มสมาชิก จากนั้นทุกข้อความใหม่จะถูกจัดเข้าแฟ้ม",
   s2h:"ส่งแชตเก่าครั้งเดียว",s2p:"ในกลุ่ม: เมนู › การตั้งค่า › ส่งออกประวัติการแชต ไลน์จะทำเป็นไฟล์ข้อความ ส่งไฟล์นั้นให้ผู้ช่วย ข้อความเก่าก็จะเข้าแฟ้มด้วย",
   s3h:"สมาชิกใหม่ถามได้เลย",s3p:"ถามในกลุ่มด้วย @desk หรือบนหน้าเว็บแบบนี้ คำถามที่ยังไม่มีใครตอบ จะส่งไปหาคนที่ดูแลเรื่องนั้น",
-  foot1:"ทำให้คุณโจ โดยหงส์แดง เชียงราย",foot2:"แชตตัวอย่าง: ชื่อคนและข้อความเป็นเรื่องสมมติ ข้อมูลสำหรับเรื่องจริง โปรดดูจากเว็บไซต์ของสถานกงสุล",
+  foot1:"ทำให้คุณโจ โดยหงส์ดำ เชียงราย",foot2:"แชตตัวอย่าง: ชื่อคนและข้อความเป็นเรื่องสมมติ ข้อมูลสำหรับเรื่องจริง โปรดดูจากเว็บไซต์ของสถานกงสุล",
   from:"จากแชต:",short:"คำตอบสั้น ๆ",found:"พบใน",msgs:"ข้อความ",msg:"ข้อความ",none:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ผู้ช่วยถามในกลุ่มให้แล้ว และแท็ก ",noneany:"ยังไม่มีใครในกลุ่มเขียนเรื่องนี้ ผู้ช่วยถามในกลุ่มให้แล้ว",
   nohits:"ไม่พบข้อความที่ตรงกัน",inchat:"ดูในแชต",
   h2w:"ใครช่วยใครอยู่",subw:"เคสมาจากแชต ขึ้นบนวงล้อ แบ่งให้ตามพื้นที่ ทุกการเปลี่ยนแปลงขึ้นในกลุ่มไลน์ด้วย",
@@ -367,7 +367,7 @@ var T={
   sp_towns:"พื้นที่",x_towns:"ใครดูแลพื้นที่และเรื่องไหน",sp_help:"วิธีใช้",x_help:"ปุ่มแต่ละปุ่มทำอะไร",
   sp_mine:"เคสของฉัน",x_mine:"เคสที่คุณถืออยู่",sp_ask:"ผู้ช่วย",x_ask:"คำตอบที่กลุ่มเคยให้ไว้",
   sp_need:"ขอคนช่วย",x_need:"อาสาสมัครใกล้คุณจะรับเรื่อง",
-  hub:"คนที่กลุ่มช่วยเดือนนี้",open:"เคสที่เปิดอยู่",whelp:"แตะปุ่มบนวงล้อ ตัวเลขสีแดงคือจำนวนที่รออยู่",
+  hub:"คนที่กลุ่มช่วย (ตัวเลขตัวอย่าง)",open:"เคสที่เปิดอยู่",whelp:"แตะปุ่มบนวงล้อ ตัวเลขสีแดงคือจำนวนที่รออยู่",
   st_new:"ใหม่",st_taken:"กำลังทำ",st_waiting:"รอคนอื่น",st_done:"เสร็จ รอตรวจ",st_closed:"ปิดแล้ว",
   nobody:"ยังไม่มีคนรับ",casew:"เคส",fromchat:"จากแชต",knows:"สิ่งที่กลุ่มรู้อยู่แล้ว",history:"ความคืบหน้า",
   q_right:"เรียบร้อยไหม",yes:"ใช่ ปิดเคส",notyet:"ยังไม่เรียบร้อย",q_who:"ใครจะทำ",give:"มอบให้",giveto:"ส่งให้คนอื่น",
@@ -377,7 +377,7 @@ var T={
   empty_check:"ไม่มีเคสรอตรวจ",empty_give:"ทุกเคสมีคนรับแล้ว",empty_mine:"คุณไม่มีเคสที่เปิดอยู่",empty_need:"ยังไม่มีคำขอ",
   next:"งานต่อไปของคุณ",yours:"คำขอของคุณ",covers:"ดูแลเรื่อง",holds:"เคสที่เปิดอยู่",ownlink:"มีลิงก์ของตัวเอง ไม่ต้องใช้รหัสผ่าน",coord:"ผู้ประสานงาน",
   posted:"โพสต์ในกลุ่มไลน์แล้ว",close1:"กลับ",tochat:"ไปที่แชต",askp:"ผู้ช่วยตอบจากสิ่งที่กลุ่มเคยพูดไว้ พร้อมบอกว่าใครพูดและเมื่อไร",
-  helpp:"ทุกปุ่มตรงนี้ ใช้ได้ด้วยการพิมพ์ในกลุ่มไลน์เช่นกัน:",
+  helpp:"ทุกปุ่มบนวงล้อ ใช้ได้ด้วยการพิมพ์ในกลุ่มไลน์เช่นกัน:",
   l_made:"สร้างเคส",l_took:"รับเคส",l_gave:"มอบให้ {b}",l_done:"ทำเสร็จ",l_closed:"ปิดเคส",l_notyet:"ส่งกลับ",l_wait:"รอคนอื่น",l_back:"กลับมาทำต่อ",l_pass:"คืนเคส",
   d_gave:"👉 {a} มอบเคส {n} ให้ {b}",d_took:"✋ {a} รับเคส {n}",d_done:"✅ {a} ทำเคส {n} เสร็จแล้ว โจจะตรวจ",d_closed:"✔️ {a} ปิดเคส {n}",
   d_notyet:"↩️ {a} ส่งเคส {n} กลับให้ {b}",d_wait:"⏳ เคส {n} รอคนอื่นอยู่ ({a})",d_back:"🔨 {a} กลับมาทำเคส {n}",d_pass:"↩️ {a} คืนเคส {n} โจจะแจกใหม่",
@@ -390,7 +390,7 @@ var T={
 // Topics: name, short answer, who covers it, search words (English and Thai).
 var TOPICS={
  passport:{en:"Passports",th:"หนังสือเดินทาง",owner:"Pat",
-  s_en:"Appointments are booked online; walk-ins are turned away. A renewal takes the old passport, the form and a US-size 2×2 inch photo. A lost passport needs a police report before the consulate. A Thai visa in the old passport moves at immigration afterwards.",
+  s_en:"Appointments are booked online; people without an appointment are turned away. A renewal takes the old passport, the form and a US-size 2×2 inch photo. A lost passport needs a police report before the consulate. A Thai visa in the old passport moves at immigration afterwards.",
   s_th:"นัดคิวทางออนไลน์ ไม่รับวอล์กอิน การต่ออายุใช้พาสปอร์ตเล่มเก่า แบบฟอร์ม และรูปขนาดอเมริกัน 2×2 นิ้ว พาสปอร์ตหายต้องมีใบแจ้งความก่อนไปสถานกงสุล วีซ่าไทยในเล่มเก่าย้ายที่ตรวจคนเข้าเมืองภายหลัง",
   w:"passport passports renew renewal renewing lost stolen photo expired expire expiring ds-82 พาสปอร์ต หนังสือเดินทาง หมดอายุ ต่ออายุ ทำหาย หาย รูป"},
  death:{en:"Deaths and widows",th:"การเสียชีวิตและภรรยาหม้าย",owner:"Sue",
@@ -398,7 +398,7 @@ var TOPICS={
   s_th:"ใบมรณบัตรไทย แปลเป็นภาษาอังกฤษ แล้วไปสถานกงสุลเพื่อขอ Consular Report of Death Abroad เงิน Social Security ที่เข้าหลังเสียชีวิตจะถูกเรียกคืน เงินของคู่สมรสยื่นผ่าน Federal Benefits Unit ที่มะนิลา ส่วนเงินของ VA (DIC) เป็นอีกคำขอหนึ่ง",
   w:"death dead died dies dying passed away widow widows widower survivor survivors funeral husband wife spouse dic report เสียชีวิต ตาย เสีย ม่าย หม้าย ภรรยา สามี คู่สมรส งานศพ มรณบัตร"},
  money:{en:"Social Security and VA",th:"Social Security และ VA",owner:"Bill",
-  s_en:"Social Security for people in Thailand is handled by the Federal Benefits Unit in Manila. Payments that land after a death are taken back. Veterans' care abroad goes through the VA Foreign Medical Program.",
+  s_en:"Social Security for people in Thailand goes through the Federal Benefits Unit in Manila. Payments made after a death are taken back. Veterans' care outside the US goes through the VA Foreign Medical Program.",
   s_th:"Social Security ของคนที่อยู่ไทย ดูแลโดย Federal Benefits Unit ที่มะนิลา เงินที่เข้าหลังผู้รับเสียชีวิตจะถูกเรียกคืน การรักษาของทหารผ่านศึกในต่างประเทศ ผ่าน VA Foreign Medical Program",
   w:"social security ssa pension pensions benefit benefits payment payments money va veteran veterans vet vets fbu manila proof life บำนาญ เงิน ทหารผ่านศึก ประกันสังคม"},
  vote:{en:"Voting",th:"เลือกตั้ง",owner:"Ken",
@@ -410,7 +410,7 @@ var TOPICS={
   s_th:"สถานทูตไม่โทรมาขอเงินหรือเลขบัญชี ID.me ไม่มีค่าใช้จ่าย คนที่เก็บเงินเพื่อ 'ช่วย' ทำ ID.me ไม่ใช่คนของ ID.me",
   w:"scam scams scammer fraud fake phishing call calling phone caller id.me idme fee หลอก มิจฉาชีพ โกง โทร แก๊งคอล ปลอม"},
  health:{en:"Doctors and hospitals",th:"หมอและโรงพยาบาล",owner:"Joan",
-  s_en:"The consulate site lists doctors and hospitals in the north. Veterans register with VA's Foreign Medical Program; claims need itemized receipts in English, which hospital billing desks print on request.",
+  s_en:"The consulate site lists doctors and hospitals in northern Thailand. Veterans register with VA's Foreign Medical Program; claims need itemized receipts in English, which hospital billing desks print on request.",
   s_th:"เว็บไซต์สถานกงสุลมีรายชื่อหมอและโรงพยาบาลในภาคเหนือ ทหารผ่านศึกลงทะเบียนกับ Foreign Medical Program ของ VA การเบิกต้องใช้ใบเสร็จแยกรายการเป็นภาษาอังกฤษ ขอได้ที่ฝ่ายการเงินของโรงพยาบาล",
   w:"doctor doctors hospital hospitals clinic medical sick health fmp receipt receipts bill billing insurance หมอ โรงพยาบาล คลินิก ป่วย ใบเสร็จ รักษา"},
  emergency:{en:"Emergencies and arrests",th:"เหตุฉุกเฉินและการถูกจับ",owner:"Pat",
@@ -433,26 +433,26 @@ var TOPICS={
 
 // Sample chat. Made-up people; facts kept general.
 var MSG=[
- ["2025-03-08","Pat","Chiang Mai","group","Welcome all. Rough split for now: Dale Lampang, Sue Chiang Rai, Ray Pai and Mae Hong Son, Ken Lamphun, Joan Nan, Bill Phrae, me Chiang Mai."],
- ["2025-03-11","Pat","Chiang Mai","passport","Heads up for anyone helping with passports: the Chiang Mai consulate wants an online appointment first. Walk-ins get turned around at the gate."],
- ["2025-03-11","Dale","Lampang","passport","Same for my neighbour last month. He booked on the consulate website and got a slot 9 days out."],
+ ["2025-03-08","Pat","Chiang Mai","group","Welcome all. For now we split the towns like this: Dale Lampang, Sue Chiang Rai, Ray Pai and Mae Hong Son, Ken Lamphun, Joan Nan, Bill Phrae, me Chiang Mai."],
+ ["2025-03-11","Pat","Chiang Mai","passport","Note for anyone helping with passports: the Chiang Mai consulate wants an online appointment first. People without an appointment are sent away at the gate."],
+ ["2025-03-11","Dale","Lampang","passport","Same for my neighbour last month. He booked on the consulate website and got a time 9 days later."],
  ["2025-03-20","Joan","Nan","alerts","Get people signed up for STEP (step.state.gov). Embassy alerts go to their email: floods, smoke season, protests."],
- ["2025-04-15","Ray","Pai","health","The consulate site has a list of doctors and hospitals in the north. Easier than guessing. Pai cases usually go to Chiang Mai."],
- ["2025-05-06","Joan","Nan","death","Sad one this week: a vet in Nan passed at home. What worked: hospital death certificate (Thai), translated, then the consulate for the Consular Report of Death Abroad. The family needs that report for US banks and Social Security."],
- ["2025-05-06","Bill","Phrae","money","Add: tell Social Security early. Payments that land after the death get pulled back from the account, and the widow is left sorting it out."],
+ ["2025-04-15","Ray","Pai","health","The consulate site has a list of doctors and hospitals in northern Thailand. Easier than guessing. Pai cases usually go to Chiang Mai."],
+ ["2025-05-06","Joan","Nan","death","Sad news this week: a veteran in Nan died at home. What worked: hospital death certificate (Thai), translated, then the consulate for the Consular Report of Death Abroad. The family needs that report for US banks and Social Security."],
+ ["2025-05-06","Bill","Phrae","money","Tell Social Security early. Payments made after the death are taken back from the account, and the widow has to fix it."],
  ["2025-06-18","Pat","Chiang Mai","emergency","If a US citizen is arrested, they can ask the police to tell the consulate. We don't give legal advice; point families to the consulate's list of lawyers."],
- ["2025-07-21","Bill","Phrae","scam","SCAM going round: someone phoning widows, saying they're 'from the embassy' and a pension is frozen until a fee is paid. The embassy doesn't phone asking for money. Hang up."],
- ["2025-08-02","Sue","Chiang Rai","passport","Renewal tip from today: bring the old passport, the filled form, and a printed 2×2 inch photo. Photo shops here make Thai size by default; ask for US size."],
+ ["2025-07-21","Bill","Phrae","scam","SCAM reported: someone is phoning widows, saying they are 'from the embassy' and a pension is frozen until a fee is paid. The embassy does not phone to ask for money. Hang up."],
+ ["2025-08-02","Sue","Chiang Rai","passport","Renewal note: bring the old passport, the filled form, and a printed 2×2 inch photo. Photo shops in Chiang Rai make Thai size by default; ask for US size."],
  ["2025-08-19","Ken","Lamphun","docs","Notarial services are by appointment too. Don't sign the document before you get there. You sign in front of the officer."],
  ["2025-09-02","Ken","Lamphun","vote","Election reminder: overseas voters send the FPCA form every year, through FVAP.gov. Takes ten minutes."],
- ["2025-10-03","Joan","Nan","health","VA Foreign Medical Program pays for service-connected care abroad. The vet registers with FMP first, then claims go in with the Thai hospital receipts."],
+ ["2025-10-03","Joan","Nan","health","VA Foreign Medical Program pays for service-connected care outside the US. The veteran registers with FMP first, then claims are sent with the Thai hospital receipts."],
  ["2025-11-14","Noi","Mae Rim","death","สามีเสียแล้วค่ะ เงิน Social Security ของเขา ฉันขอต่อได้ไหมคะ (My husband has died. Can I claim his Social Security?)"],
- ["2025-11-14","Sue","Chiang Rai","death","Noi, I'm so sorry. Survivor benefits for a spouse in Thailand go through the Federal Benefits Unit, which sits at the embassy in Manila. I'll sit with you to fill in the form. Message me."],
+ ["2025-11-14","Sue","Chiang Rai","death","Noi, I'm so sorry. Survivor benefits for a spouse in Thailand go through the Federal Benefits Unit, which is at the embassy in Manila. I will sit with you to fill in the form. Message me."],
  ["2025-12-01","Pat","Chiang Mai","group","Town hall in Chiang Mai is set for the second week of January. Consulate staff will be there. Bring questions from your towns."],
- ["2026-01-12","Sue","Chiang Rai","scam","Another one: fake ID.me 'helpers' on Facebook charging 3,000 baht. ID.me itself costs nothing."],
- ["2026-02-19","Ray","Pai","passport","Lost passport case in Pai. Police report first (ใบแจ้งความ) at the local station, then the consulate. They got an emergency passport the same week."],
- ["2026-03-03","Sue","Chiang Rai","emergency","After hours, the embassy has a duty officer for emergencies. The number is on the consulate contact page. Save it in your phone now, not at 2am."],
- ["2026-03-15","Ray","Pai","alerts","Smoke season alert came through STEP today. Good reminder to check on the older folks."],
+ ["2026-01-12","Sue","Chiang Rai","scam","A similar case: fake ID.me 'helpers' on Facebook charging 3,000 baht. ID.me itself costs nothing."],
+ ["2026-02-19","Ray","Pai","passport","Lost passport case in Pai. Police report first (ใบแจ้งความ) at the police station in Pai, then the consulate. The person got an emergency passport the same week."],
+ ["2026-03-03","Sue","Chiang Rai","emergency","Outside office hours, the embassy has a duty officer for emergencies. The number is on the consulate contact page. Save it in your phone now, not at 2am."],
+ ["2026-03-15","Ray","Pai","alerts","An alert about smoke season came through STEP. Good reminder to check on older people."],
  ["2026-04-08","Dale","Lampang","death","For a veteran's widow: VA survivor benefits (DIC) are a separate claim from Social Security. Two claims, two offices. Keep copies of the death report for both."],
  ["2026-05-27","Dale","Lampang","health","Lampang hospital billing will print receipts in English if you ask at the counter. FMP wants itemized ones."],
  ["2026-06-30","Wanida","Chiang Mai","passport","คุณลุงที่บ้านพาสปอร์ตหมดอายุ ยังอยู่ไทยต่อได้ไหมคะ (My uncle's passport has expired. Can he stay in Thailand?)"],
@@ -461,15 +461,15 @@ var MSG=[
  ["2026-08-25","Wanida","Chiang Mai","scam","มีคนโทรมาอ้างว่าเป็นสถานทูต ขอเลขบัญชี ระวังนะคะ (Someone called claiming to be the embassy and asked for a bank account number. Be careful.)"],
  ["2026-09-10","Ken","Lamphun","vote","Ballots for November are going out. If yours hasn't come by early October, FVAP has the backup write-in ballot (FWAB)."],
  ["2026-09-11","Pat","Chiang Mai","vote","Ken is our voting person. Send people to him."],
- ["2026-10-20","Pat","Chiang Mai","group","New members joining this week. Please be patient when the same questions come up. Most of the answers are somewhere up there."]
+ ["2026-10-20","Pat","Chiang Mai","group","New members joining this week. Please be patient when the same questions come up. Most of the answers are somewhere earlier in this chat."]
 ].map(function(m,i){return {i:i,d:m[0],who:m[1],town:m[2],t:m[3],x:m[4]};});
 
 var QS=[
  {en:"How do I renew a passport?",th:"ต่ออายุพาสปอร์ตอย่างไร"},
  {en:"A veteran died. What do we do?",th:"ทหารผ่านศึกเสียชีวิต ต้องทำอะไร"},
  {en:"Someone called saying they're the embassy",th:"มีคนโทรมาอ้างว่าเป็นสถานทูต"},
- {en:"How do I vote from here?",th:"ลงคะแนนเลือกตั้งจากที่นี่อย่างไร"},
- {en:"Which hospital takes vets?",th:"โรงพยาบาลไหนรับทหารผ่านศึก"},
+ {en:"How do I vote from Thailand?",th:"ลงคะแนนเลือกตั้งจากประเทศไทยอย่างไร"},
+ {en:"Which hospital takes veterans?",th:"โรงพยาบาลไหนรับทหารผ่านศึก"},
  {en:"Who covers Chiang Rai?",th:"ใครดูแลเชียงราย"}
 ];
 
@@ -603,7 +603,7 @@ var CASES=[
   log:[L_("2026-06-30","Desk","made"),L_("2026-06-30","Pat","took"),L_("2026-10-15","Pat",null,"Appointment booked for 3 Nov."),L_("2026-10-15","Pat","wait")]},
  {n:3,en:"Fake 'embassy' calls to widows: a card in Thai for the group",th:"สายโทรอ้างเป็นสถานทูตถึงภรรยาหม้าย: การ์ดภาษาไทยสำหรับกลุ่ม",topic:"scam",town:"All towns",who:"Bill",st:"done",from:[8,25],
   log:[L_("2026-08-25","Desk","made"),L_("2026-08-26","Bill","took"),L_("2026-10-20","Bill",null,"Card made with Wanida, Thai and English."),L_("2026-10-20","Bill","done")]},
- {n:4,en:"Vet in Pai: sign up for the VA Foreign Medical Program",th:"ทหารผ่านศึกที่ปาย: สมัคร VA Foreign Medical Program",topic:"health",town:"Pai",who:null,st:"new",from:[4,12],
+ {n:4,en:"Veteran in Pai: sign up for the VA Foreign Medical Program",th:"ทหารผ่านศึกที่ปาย: สมัคร VA Foreign Medical Program",topic:"health",town:"Pai",who:null,st:"new",from:[4,12],
   log:[L_("2026-10-21","Desk","made")]},
  {n:5,en:"Lamphun: where to get a US-size passport photo",th:"ลำพูน: ถ่ายรูปพาสปอร์ตขนาดอเมริกันได้ที่ไหน",topic:"passport",town:"Lamphun",who:null,st:"new",from:[9],
   log:[L_("2026-10-21","Desk","made")]},

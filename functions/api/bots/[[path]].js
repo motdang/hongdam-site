@@ -42,10 +42,10 @@ async function book(ctx, b, now) {
   const kind = clean(b.kind, 20), site = clean(b.site, 160)
   const contact = clean(b.contact, 120), note = clean(b.note, 600)
   if (!Object.hasOwn(KINDS, kind)) return json({ ok: false, error: 'Pick one: ' + Object.keys(KINDS).join(', ') + '.' }, 400)
-  if (site.length < 3) return json({ ok: false, error: 'Name the site, repo or field the bot works on.' }, 400)
-  if (contact.length < 3) return json({ ok: false, error: 'Leave an email or a LINE ID.' }, 400)
+  if (site.length < 3) return json({ ok: false, error: 'Say which site, code project (repo) or subject the bot works on.' }, 400)
+  if (contact.length < 3) return json({ ok: false, error: 'Give an email address or a LINE ID.' }, 400)
   const ip = request.headers.get('cf-connecting-ip') || ''
-  if (!(await allowed(env, ip, now))) return json({ ok: false, error: 'Three purchases a day from one address. Write to nan@motdang.net.' }, 429)
+  if (!(await allowed(env, ip, now))) return json({ ok: false, error: 'Three purchases a day are allowed from one internet connection. Write to nan@motdang.net.' }, 429)
   const db = env.TASKS
   const c = await counts(db, kind)
   const price = walk(kind, c, OPENED, now)
@@ -55,7 +55,7 @@ async function book(ctx, b, now) {
   await db.prepare('INSERT INTO bot_order (ref, kind, site, contact, note, baht, usd, pct, week, created_at, ip) VALUES (?,?,?,?,?,?,?,?,?,?,?)')
     .bind(ref, kind, site, contact, note, price.baht, price.usd, pct, week, new Date(now).toISOString(), ip).run()
   const starts = Math.max(now, weekStart(week))
-  const cost = pct ? `${pct}% of what it earns, first year, nothing up front` : `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}${price.monthly ? ' a month' : ''}`
+  const cost = pct ? `${pct}% of what it earns, first year, nothing to pay in advance` : `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}${price.monthly ? ' a month' : ''}`
   const lines = [`${KINDS[kind].en} for ${site}`, cost,
     `Slot from ${new Date(starts).toISOString().slice(0, 10)}`, `Contact: ${contact}`, note && `Note: ${note}`, `Ref ${ref}`].filter(Boolean)
   ctx.waitUntil(Promise.all([tell(env, `Bots ${ref} · ${KINDS[kind].en}`, lines), mail(env, `Bots purchase ${ref} — ${KINDS[kind].en}`, lines.join('\n'), contact)]))
@@ -94,5 +94,5 @@ export async function onRequest(ctx) {
     return book(ctx, b, now)
   }
   if (path[0] === 'slip' && request.method === 'POST') return slip(ctx, now)
-  return json({ error: 'Not here' }, 404)
+  return json({ error: 'Not found' }, 404)
 }
