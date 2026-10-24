@@ -3,10 +3,20 @@
 // page, the stats page and invoices in the Isotype look of the shop; and two client pages in their own look, by
 // ../../share-cards/render.mjs with the page's own photograph. Run after tools/build_shop.py.
 //   node tools/share_cards_pages.mjs
-import { chromium } from '/Users/annikapeacock/Developer/claude code projects/anidoodle-motdang/node_modules/playwright-core/index.mjs'
 import fs from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
+
+// Playwright (CodeRabbit on #56): PLAYWRIGHT_CORE (a path or module name), else an installed playwright-core,
+// else this Mac's copy beside anidoodle. The browser: CHROME, else this Mac's Playwright cache, else Playwright's own.
+const LOCAL_PW = path.join(process.env.HOME || '', 'Developer/claude code projects/anidoodle-motdang/node_modules/playwright-core/index.mjs')
+const { chromium } = await import(process.env.PLAYWRIGHT_CORE || 'playwright-core').catch(() => import(url.pathToFileURL(LOCAL_PW).href))
+function chromeExe() {
+  if (process.env.CHROME) return process.env.CHROME
+  const cache = path.join(process.env.HOME || '', 'Library/Caches/ms-playwright')
+  const shell = fs.existsSync(cache) && fs.readdirSync(cache).filter((d) => d.startsWith('chromium_headless_shell-')).sort().pop()
+  return shell ? path.join(cache, shell, 'chrome-headless-shell-mac-arm64/chrome-headless-shell') : undefined
+}
 import { execFileSync } from 'node:child_process'
 
 const ROOT = path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), '..')
@@ -44,8 +54,7 @@ const CARDS = [
   ['og/invoice', 'invoice', 'ใบแจ้งหนี้', 'Hongdam · Chiang Rai, Thailand', ['page', 'coin', 'done'], 32, 'coin'],
 ]
 
-const SHELL = fs.readdirSync(path.join(process.env.HOME, 'Library/Caches/ms-playwright')).filter((d) => d.startsWith('chromium_headless_shell-')).sort().pop()
-const EXE = path.join(process.env.HOME, 'Library/Caches/ms-playwright', SHELL, 'chrome-headless-shell-mac-arm64/chrome-headless-shell')
+const EXE = chromeExe()
 const browser = await chromium.launch({ executablePath: EXE })
 const tab = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 })
 const tmp = path.join(DOCS, 'og', '_card.html')

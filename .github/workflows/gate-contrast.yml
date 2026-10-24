@@ -8,6 +8,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+# Read-only (CodeRabbit on #56): the check runs the PR's own code and needs no Git credentials.
+permissions:
+  contents: read
 # Split six ways (her word 2026-10-24: "Split the contrast check into parallel jobs so all 116 pages are
 # checked within the limit; same coverage."): each job takes every sixth page; together, every page.
 jobs:
@@ -21,6 +24,8 @@ jobs:
         shard: [1, 2, 3, 4, 5, 6]
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
