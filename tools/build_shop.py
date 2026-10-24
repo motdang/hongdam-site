@@ -44,6 +44,8 @@ DBM_F = os.path.join(HERE, "data", "dingbats.json")
 DBM = json.load(open(DBM_F, encoding="utf-8")) if os.path.exists(DBM_F) else None
 import re as _re
 LADDER = json.loads(_re.search(r"export const LADDER = (\[[^\]]*\])", open(os.path.join(HERE, "functions", "_services_data.js"), encoding="utf-8").read()).group(1))
+# Her Lightning Address (functions/_shop.js PAY.lightning): set, the pages name bitcoin Lightning among the ways to pay.
+LN = _re.search(r"lightning: '([^']*)'", open(os.path.join(HERE, "functions", "_shop.js"), encoding="utf-8").read()).group(1).strip()
 
 
 def pre(lang):
@@ -371,14 +373,21 @@ def foot(lang, front=False, group=None, pay=True):
     data = {"lang": lang, "langs": LANGS, "front": front, "home": url(lang), "lineUrl": LINE_URL,
             "ui": ui, "cardsUrl": "/assets/shop-%s.json?v=%s" % (lang, VERSION),
             "group": group, "ladder": LADDER, "master": LOOKS["master"],
-            "glyphs": {g: glyph_name(g, lang) for g in LOOKS["glyphs"]}}
+            "glyphs": {g: glyph_name(g, lang) for g in LOOKS["glyphs"]}, "ln": bool(LN)}
     if DBM:
         data["db"] = {"core": "/assets/db/" + DBM["core"], "groups": {g: "/assets/db/" + f for g, f in DBM["groups"].items()}}
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return rate_box(lang) + ('<footer>%s<p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
-            '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · %s: <a href="/llms.txt">llms.txt</a></p></footer>\n'
+            '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · %s: <a href="/llms.txt">llms.txt</a> · %s</p></footer>\n'
             '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n<script defer src="/assets/pond.js?v=%s"></script>\n</body>\n</html>\n'
-            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), j, JS_V, POND_V))
+            % ('<p>%s</p>' % E(ui["payMethodsLn" if LN else "payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL,
+               E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), offrampt_link(lang), j, JS_V, POND_V))
+
+
+def offrampt_link(lang):
+    """Her ask 2026-10-24: link offrampt.net (crypto to baht in Thailand) from hongdam.net; every footer carries it."""
+    return '%s%s<a href="https://offrampt.net/%s">offrampt.net</a>' % (
+        E(SHOP["ui"][lang]["offrampt"]), "：" if lang == "zh" else ": ", "th/" if lang == "th" else "")
 
 
 RATE_LANGS = ("my", "zh", "de")
