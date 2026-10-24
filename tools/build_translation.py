@@ -253,7 +253,7 @@ W = {
         "f_send": "Senden", "f_hp": "Dieses Feld leer lassen",
         "langs": ["Thai", "Englisch", "Burmesisch"],
         "s_need": "Bitte eine E-Mail-Adresse.", "s_sending": "Wird gesendet…",
-        "s_ok": "Gesendet. Der Preis kommt an diese Adresse.", "s_err": "Das ließ sich gerade nicht senden. Schreiben Sie stattdessen an nan@motdang.net.",
+        "s_ok": "Gesendet. Der Preis kommt an diese Adresse.", "s_err": "Das liess sich gerade nicht senden. Schreiben Sie stattdessen an nan@motdang.net.",
         "or_mail": "Oder per E-Mail", "home": "hongdam.net",
     },
 }
