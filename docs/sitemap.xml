@@ -1292,4 +1292,61 @@
     <lastmod>2026-10-24</lastmod>
   </url>
   <!-- STUDIO:END -->
+  <!-- QUESTIONS:START -->
+  <url>
+    <loc>https://hongdam.net/questions/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/questions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/questions/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/questions/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/questions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/questions/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/th/questions/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/questions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/questions/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/questions/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/questions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/questions/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/my/questions/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/questions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/questions/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/questions/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/questions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/questions/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/zh/questions/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/questions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/questions/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/questions/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/questions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/questions/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/de/questions/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/questions/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/questions/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/questions/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/questions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/questions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/questions/"/>
+  </url>
+  <!-- QUESTIONS:END -->
 </urlset>
