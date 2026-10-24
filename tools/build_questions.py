@@ -6,7 +6,7 @@
 data/questions.json holds the questions in the five languages and the card each one links to. This writes
 docs/<lang>/questions/ (every question in a shuffled order, with a find box), docs/assets/questions-<lang>.json (the
 crawl's list), the QUESTIONS blocks of docs/sitemap.xml and docs/llms.txt, and then the shop's pages again
-(tools/build_shop.py), whose front pages draw the crawl from band() here. The crawl is docs/assets/questions.css
+(tools/build_shop.py), whose front pages draw the crawl from band() here. The crawl looks and moves like Mot Dang's gold prices: docs/assets/questions.css
 and questions.js; both shuffle again in the reader's browser. A question pointing at a card the shop does not have
 stops the build.
 """
@@ -61,21 +61,21 @@ def mixed(qs, n=None):
 
 
 def band(lang, B):
-    """The crawl on a front page: one line of questions moving slowly sideways, a pause, and the list."""
+    """The crawl on a front page, like Mot Dang's gold prices: one thin line of questions moving slowly sideways."""
     ui, have = DATA["ui"][lang], cards(B)
     qs = [q for q in DATA["qs"] if q["c"] in have]
     if not qs or lang not in DATA["ui"]:
         return ""
     data = "/assets/questions-%s.json?v=%s" % (lang, list_v(B, lang))
     return ('<link rel="stylesheet" href="/assets/questions.css?v=%s">\n'
-            '<section class="qs-band" aria-labelledby="qs-h"><h2 id="qs-h">%s</h2>\n'
-            '<div class="qs-scroll" data-qs="%s" tabindex="0" aria-label="%s"><ul class="qs-list">%s</ul></div>\n'
-            '<p class="qs-ctl"><button type="button" class="btn alt qs-pause" aria-pressed="false" data-pause="%s" data-play="%s" hidden>%s</button>'
-            ' <a href="%s">%s →</a></p></section>\n'
+            '<div class="qs-crawl" data-qs="%s" aria-label="%s"><span class="qs-w"><span class="qs-r">%s</span></span></div>\n'
             '<script defer src="/assets/questions.js?v=%s"></script>\n'
-            % (ASSET_V, E(ui["h"]), data, E(ui["h"]),
-               "".join(item(B, lang, q, have[q["c"]]) for q in mixed(qs, SHOWN)),
-               E(ui["pause"]), E(ui["play"]), E(ui["pause"]), B.url(lang, PATH), E(ui["all"]), ASSET_V))
+            % (ASSET_V, data, E(ui["h"]), "".join(crawl_item(B, lang, q, have[q["c"]]) for q in mixed(qs, SHOWN)), ASSET_V))
+
+
+def crawl_item(B, lang, q, c):
+    return ('<a class="qs-i" href="%s" style="--line:var(--c-%s)"><b>%s</b> <span class="sv">%s</span></a>'
+            % (href(B, lang, c), c["cat"], E(q["q"][lang]), E(B.tr(c["n"], lang))))
 
 
 def full_list(B, lang):
