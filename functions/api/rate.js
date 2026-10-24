@@ -19,7 +19,7 @@ const json = (body, status = 200) => new Response(JSON.stringify(body), {
 })
 const ORIGINS = ['https://hongdam.net', 'https://www.hongdam.net', 'https://hongdam.pages.dev']
 const originOk = (o) => ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(o)
-const LANGS = { my: 'Burmese', zh: 'Chinese', th: 'Thai', en: 'English' }
+const LANGS = { my: 'Burmese', zh: 'Chinese', de: 'German', th: 'Thai', en: 'English' }
 const code = (s) => '`' + String(s).replace(/`/g, '') + '`'
 
 // Twenty answers a day from one address, counted atomically in D1 (functions/_tries.js; CodeRabbit on #57).

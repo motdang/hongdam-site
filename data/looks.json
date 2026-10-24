@@ -909,631 +909,736 @@
    "en": "Phone",
    "th": "โทรศัพท์",
    "my": "ဖုန်း",
-   "zh": "电话"
+   "zh": "电话",
+   "de": "Telefon"
   },
   "chat": {
    "en": "Talk",
    "th": "คุย",
    "my": "စကားပြော",
-   "zh": "交谈"
+   "zh": "交谈",
+   "de": "Gespräch"
   },
   "nib": {
    "en": "Notes",
    "th": "จดให้",
    "my": "မှတ်စု",
-   "zh": "记录"
+   "zh": "记录",
+   "de": "Notizen"
   },
   "home": {
    "en": "Home",
    "th": "บ้าน",
    "my": "အိမ်",
-   "zh": "家"
+   "zh": "家",
+   "de": "Zuhause"
   },
   "wrench": {
    "en": "Repair",
    "th": "ซ่อม",
    "my": "ပြင်ဆင်",
-   "zh": "维修"
+   "zh": "维修",
+   "de": "Reparatur"
   },
   "calendar": {
    "en": "Booked",
    "th": "นัดแล้ว",
    "my": "ချိန်းပြီး",
-   "zh": "已预约"
+   "zh": "已预约",
+   "de": "Gebucht"
   },
   "translate": {
    "en": "Translate",
    "th": "แปล",
    "my": "ဘာသာပြန်",
-   "zh": "翻译"
+   "zh": "翻译",
+   "de": "Übersetzen"
   },
   "eye": {
    "en": "Checked",
    "th": "ตรวจดู",
    "my": "စစ်ဆေး",
-   "zh": "检查"
+   "zh": "检查",
+   "de": "Geprüft"
   },
   "cart": {
    "en": "Shop",
    "th": "ซื้อของ",
    "my": "ဈေးဝယ်",
-   "zh": "采购"
+   "zh": "采购",
+   "de": "Einkauf"
   },
   "scooter": {
    "en": "On the way",
    "th": "กำลังไป",
    "my": "လာနေပြီ",
-   "zh": "在路上"
+   "zh": "在路上",
+   "de": "Unterwegs"
   },
   "done": {
    "en": "Done",
    "th": "เสร็จ",
    "my": "ပြီးပြီ",
-   "zh": "完成"
+   "zh": "完成",
+   "de": "Fertig"
   },
   "page": {
    "en": "Paper",
    "th": "เอกสาร",
    "my": "စာရွက်",
-   "zh": "文件"
+   "zh": "文件",
+   "de": "Papier"
   },
   "pencil": {
    "en": "Filled in",
    "th": "กรอกแล้ว",
    "my": "ဖြည့်ပြီး",
-   "zh": "填写"
+   "zh": "填写",
+   "de": "Ausgefüllt"
   },
   "angry": {
    "en": "Trouble",
    "th": "มีปัญหา",
    "my": "ပြဿနာ",
-   "zh": "麻烦"
+   "zh": "麻烦",
+   "de": "Ärger"
   },
   "smile": {
    "en": "Sorted",
    "th": "เคลียร์แล้ว",
    "my": "အဆင်ပြေ",
-   "zh": "解决"
+   "zh": "解决",
+   "de": "Erledigt"
   },
   "thinking": {
    "en": "Question",
    "th": "คำถาม",
    "my": "မေးခွန်း",
-   "zh": "疑问"
+   "zh": "疑问",
+   "de": "Frage"
   },
   "lightbulb": {
    "en": "Plan",
    "th": "แผน",
    "my": "အစီအစဉ်",
-   "zh": "方案"
+   "zh": "方案",
+   "de": "Plan"
   },
   "stamp": {
    "en": "Stamped",
    "th": "ประทับตรา",
    "my": "တံဆိပ်",
-   "zh": "盖章"
+   "zh": "盖章",
+   "de": "Gestempelt"
   },
   "lock": {
    "en": "Locked",
    "th": "ล็อก",
    "my": "သော့ခတ်",
-   "zh": "锁定"
+   "zh": "锁定",
+   "de": "Gesichert"
   },
   "key": {
    "en": "Signed in",
    "th": "เข้าระบบ",
    "my": "ဝင်ပြီး",
-   "zh": "登录"
+   "zh": "登录",
+   "de": "Angemeldet"
   },
   "thumbs-up": {
    "en": "OK",
    "th": "โอเค",
    "my": "အိုကေ",
-   "zh": "好了"
+   "zh": "好了",
+   "de": "OK"
   },
   "heart": {
    "en": "Care",
    "th": "ดูแล",
    "my": "စောင့်ရှောက်",
-   "zh": "关怀"
+   "zh": "关怀",
+   "de": "Fürsorge"
   },
   "coin": {
    "en": "Price",
    "th": "ราคา",
    "my": "ဈေးနှုန်း",
-   "zh": "价格"
+   "zh": "价格",
+   "de": "Preis"
   },
   "wai": {
    "en": "Thank you",
    "th": "ขอบคุณ",
    "my": "ကျေးဇူး",
-   "zh": "谢谢"
+   "zh": "谢谢",
+   "de": "Danke"
   },
   "server": {
    "en": "Server",
    "th": "เซิร์ฟเวอร์",
    "my": "ဆာဗာ",
-   "zh": "服务器"
+   "zh": "服务器",
+   "de": "Server"
   },
   "laptop": {
    "en": "Website",
    "th": "เว็บไซต์",
    "my": "ဝက်ဘ်ဆိုက်",
-   "zh": "网站"
+   "zh": "网站",
+   "de": "Website"
   },
   "earth": {
    "en": "Online",
    "th": "ออนไลน์",
    "my": "အွန်လိုင်း",
-   "zh": "上线"
+   "zh": "上线",
+   "de": "Online"
   },
   "abacus": {
    "en": "Counted",
    "th": "นับ",
    "my": "ရေတွက်",
-   "zh": "统计"
+   "zh": "统计",
+   "de": "Gezählt"
   },
   "airplane": {
    "en": "Abroad",
    "th": "ต่างประเทศ",
    "my": "နိုင်ငံခြား",
-   "zh": "海外"
+   "zh": "海外",
+   "de": "Ausland"
   },
   "balloon": {
    "en": "Balloon",
    "th": "บอลลูน",
    "my": "မိုးပျံပူဖောင်း",
-   "zh": "热气球"
+   "zh": "热气球",
+   "de": "Ballon"
   },
   "bell": {
    "en": "Alert",
    "th": "แจ้งเตือน",
    "my": "သတိပေး",
-   "zh": "提醒"
+   "zh": "提醒",
+   "de": "Hinweis"
   },
   "bookmark": {
    "en": "Saved",
    "th": "บันทึกไว้",
    "my": "သိမ်းထား",
-   "zh": "收藏"
+   "zh": "收藏",
+   "de": "Gespeichert"
   },
   "camera": {
    "en": "Photos",
    "th": "ถ่ายรูป",
    "my": "ဓာတ်ပုံ",
-   "zh": "拍照"
+   "zh": "拍照",
+   "de": "Fotos"
   },
   "check": {
    "en": "Checked",
    "th": "ตรวจแล้ว",
    "my": "စစ်ပြီး",
-   "zh": "已核对"
+   "zh": "已核对",
+   "de": "Geprüft"
   },
   "chedi": {
    "en": "Temple",
    "th": "วัด",
    "my": "ဘုရား",
-   "zh": "寺庙"
+   "zh": "寺庙",
+   "de": "Tempel"
   },
   "clap": {
    "en": "Team",
    "th": "ทีม",
    "my": "အဖွဲ့",
-   "zh": "团队"
+   "zh": "团队",
+   "de": "Team"
   },
   "clock": {
    "en": "Hours",
    "th": "เวลา",
    "my": "အချိန်",
-   "zh": "时间"
+   "zh": "时间",
+   "de": "Stunden"
   },
   "cloud": {
    "en": "Air",
    "th": "อากาศ",
    "my": "လေ",
-   "zh": "空气"
+   "zh": "空气",
+   "de": "Luft"
   },
   "coffee": {
    "en": "Coffee",
    "th": "กาแฟ",
    "my": "ကော်ဖီ",
-   "zh": "咖啡"
+   "zh": "咖啡",
+   "de": "Kaffee"
   },
   "compass": {
    "en": "Route",
    "th": "เส้นทาง",
    "my": "လမ်းကြောင်း",
-   "zh": "路线"
+   "zh": "路线",
+   "de": "Route"
   },
   "copy": {
    "en": "Sheets",
    "th": "แผ่นงาน",
    "my": "စာရွက်များ",
-   "zh": "表格"
+   "zh": "表格",
+   "de": "Tabellen"
   },
   "crossed-fingers": {
    "en": "Luck",
    "th": "โชค",
    "my": "ကံ",
-   "zh": "好运"
+   "zh": "好运",
+   "de": "Glück"
   },
   "crown": {
    "en": "Award",
    "th": "รางวัล",
    "my": "ဆု",
-   "zh": "奖项"
+   "zh": "奖项",
+   "de": "Auszeichnung"
   },
   "dice": {
    "en": "Game",
    "th": "เกม",
    "my": "ဂိမ်း",
-   "zh": "游戏"
+   "zh": "游戏",
+   "de": "Spiel"
   },
   "dna": {
    "en": "Lab",
    "th": "แล็บ",
    "my": "ဓာတ်ခွဲခန်း",
-   "zh": "化验"
+   "zh": "化验",
+   "de": "Labor"
   },
   "envelope": {
    "en": "Mail",
    "th": "จดหมาย",
    "my": "စာ",
-   "zh": "邮件"
+   "zh": "邮件",
+   "de": "Post"
   },
   "error": {
    "en": "Broken",
    "th": "เสีย",
    "my": "ပျက်",
-   "zh": "故障"
+   "zh": "故障",
+   "de": "Kaputt"
   },
   "flag": {
    "en": "Sign",
    "th": "ป้าย",
    "my": "ဆိုင်းဘုတ်",
-   "zh": "招牌"
+   "zh": "招牌",
+   "de": "Schild"
   },
   "frying-pan": {
    "en": "Cooking",
    "th": "ทำอาหาร",
    "my": "ချက်ပြုတ်",
-   "zh": "烹饪"
+   "zh": "烹饪",
+   "de": "Kochen"
   },
   "gear": {
    "en": "Test",
    "th": "ทดสอบ",
    "my": "စမ်းသပ်",
-   "zh": "测试"
+   "zh": "测试",
+   "de": "Test"
   },
   "gears": {
    "en": "We start",
    "th": "เราเริ่ม",
    "my": "စတင်",
-   "zh": "开工"
+   "zh": "开工",
+   "de": "Wir legen los"
   },
   "gift": {
    "en": "Gift",
    "th": "ของขวัญ",
    "my": "လက်ဆောင်",
-   "zh": "礼物"
+   "zh": "礼物",
+   "de": "Geschenk"
   },
   "hot": {
    "en": "Busy",
    "th": "คนเยอะ",
    "my": "လူများ",
-   "zh": "旺季"
+   "zh": "旺季",
+   "de": "Viel los"
   },
   "khao-soi": {
    "en": "Lunch",
    "th": "มื้อกลางวัน",
    "my": "နေ့လယ်စာ",
-   "zh": "午餐"
+   "zh": "午餐",
+   "de": "Mittagessen"
   },
   "lantern": {
    "en": "Lanterns",
    "th": "โคมลอย",
    "my": "မီးပုံး",
-   "zh": "天灯"
+   "zh": "天灯",
+   "de": "Laternen"
   },
   "laugh": {
    "en": "Fun",
    "th": "สนุก",
    "my": "ပျော်",
-   "zh": "有趣"
+   "zh": "有趣",
+   "de": "Spass"
   },
   "leaf": {
    "en": "Palm leaf",
    "th": "ใบลาน",
    "my": "ပေရွက်",
-   "zh": "贝叶"
+   "zh": "贝叶",
+   "de": "Palmblatt"
   },
   "lightning": {
    "en": "Attack",
    "th": "โจมตี",
    "my": "တိုက်ခိုက်",
-   "zh": "攻击"
+   "zh": "攻击",
+   "de": "Angriff"
   },
   "link": {
    "en": "Link",
    "th": "ลิงก์",
    "my": "လင့်ခ်",
-   "zh": "链接"
+   "zh": "链接",
+   "de": "Link"
   },
   "lotus": {
    "en": "Merit",
    "th": "ทำบุญ",
    "my": "ကုသိုလ်",
-   "zh": "功德"
+   "zh": "功德",
+   "de": "Verdienst"
   },
   "mailbox": {
    "en": "Inbox",
    "th": "กล่องจดหมาย",
    "my": "စာတိုက်ပုံး",
-   "zh": "收件箱"
+   "zh": "收件箱",
+   "de": "Posteingang"
   },
   "megaphone": {
    "en": "Promote",
    "th": "โปรโมต",
    "my": "ကြော်ငြာ",
-   "zh": "推广"
+   "zh": "推广",
+   "de": "Werbung"
   },
   "mic": {
    "en": "Record",
    "th": "อัดเสียง",
    "my": "အသံဖမ်း",
-   "zh": "录音"
+   "zh": "录音",
+   "de": "Aufnahme"
   },
   "moon": {
    "en": "Night",
    "th": "กลางคืน",
    "my": "ည",
-   "zh": "夜晚"
+   "zh": "夜晚",
+   "de": "Nacht"
   },
   "muscle": {
    "en": "Muay thai",
    "th": "มวยไทย",
    "my": "မွေထိုင်း",
-   "zh": "泰拳"
+   "zh": "泰拳",
+   "de": "Muay Thai"
   },
   "naga": {
    "en": "Yant",
    "th": "ยันต์",
    "my": "ယန္တရား",
-   "zh": "符"
+   "zh": "符",
+   "de": "Yant"
   },
   "noodles": {
    "en": "Menu",
    "th": "เมนู",
    "my": "မီနူး",
-   "zh": "菜单"
+   "zh": "菜单",
+   "de": "Speisekarte"
   },
   "octopus": {
    "en": "GitHub",
    "th": "GitHub",
    "my": "GitHub",
-   "zh": "GitHub"
+   "zh": "GitHub",
+   "de": "GitHub"
   },
   "orrery": {
    "en": "Chart",
    "th": "ดวง",
    "my": "ဇာတာ",
-   "zh": "星盘"
+   "zh": "星盘",
+   "de": "Horoskop"
   },
   "paper-boat": {
    "en": "Shipped",
    "th": "ส่งออก",
    "my": "ပို့ပြီး",
-   "zh": "已发货"
+   "zh": "已发货",
+   "de": "Verschickt"
   },
   "parcel": {
    "en": "Parcel",
    "th": "พัสดุ",
    "my": "ပါဆယ်",
-   "zh": "包裹"
+   "zh": "包裹",
+   "de": "Paket"
   },
   "party": {
    "en": "Event",
    "th": "งาน",
    "my": "ပွဲ",
-   "zh": "活动"
+   "zh": "活动",
+   "de": "Feier"
   },
   "passport": {
    "en": "Papers",
    "th": "เอกสารเดินทาง",
    "my": "ပတ်စ်ပို့",
-   "zh": "证件"
+   "zh": "证件",
+   "de": "Papiere"
   },
   "phuang-malai": {
    "en": "Garland",
    "th": "พวงมาลัย",
    "my": "ပန်းကုံး",
-   "zh": "花环"
+   "zh": "花环",
+   "de": "Blumenkette"
   },
   "pin": {
    "en": "Map",
    "th": "แผนที่",
    "my": "မြေပုံ",
-   "zh": "地图"
+   "zh": "地图",
+   "de": "Karte"
   },
   "play": {
    "en": "Video",
    "th": "วิดีโอ",
    "my": "ဗီဒီယို",
-   "zh": "视频"
+   "zh": "视频",
+   "de": "Video"
   },
   "power": {
    "en": "Standby",
    "th": "สำรอง",
    "my": "အရန်",
-   "zh": "备用"
+   "zh": "备用",
+   "de": "Bereit"
   },
   "refresh": {
    "en": "Updated",
    "th": "อัปเดต",
    "my": "အပ်ဒိတ်",
-   "zh": "更新"
+   "zh": "更新",
+   "de": "Aktualisiert"
   },
   "robot": {
    "en": "AI",
    "th": "AI",
    "my": "AI",
-   "zh": "AI"
+   "zh": "AI",
+   "de": "KI"
   },
   "rocket": {
    "en": "Launch",
    "th": "เปิดตัว",
    "my": "စတင်",
-   "zh": "发布"
+   "zh": "发布",
+   "de": "Start"
   },
   "save": {
    "en": "Backup",
    "th": "สำรองข้อมูล",
    "my": "အရန်ကူး",
-   "zh": "备份"
+   "zh": "备份",
+   "de": "Sicherung"
   },
   "scan": {
    "en": "Pay",
    "th": "จ่าย",
    "my": "ပေးချေ",
-   "zh": "付款"
+   "zh": "付款",
+   "de": "Bezahlen"
   },
   "scissors": {
    "en": "Edit",
    "th": "ตัดต่อ",
    "my": "တည်းဖြတ်",
-   "zh": "剪辑"
+   "zh": "剪辑",
+   "de": "Schnitt"
   },
   "search": {
    "en": "Search",
    "th": "ค้นหา",
    "my": "ရှာ",
-   "zh": "搜索"
+   "zh": "搜索",
+   "de": "Suche"
   },
   "send": {
    "en": "Ordered",
    "th": "สั่งแล้ว",
    "my": "မှာပြီး",
-   "zh": "已下单"
+   "zh": "已下单",
+   "de": "Bestellt"
   },
   "share": {
    "en": "Shared",
    "th": "แชร์",
    "my": "မျှဝေ",
-   "zh": "分享"
+   "zh": "分享",
+   "de": "Geteilt"
   },
   "skull": {
    "en": "Hacked",
    "th": "ถูกแฮก",
    "my": "ဟက်ခံရ",
-   "zh": "被黑"
+   "zh": "被黑",
+   "de": "Gehackt"
   },
   "sleepy": {
    "en": "Quiet",
    "th": "เงียบ",
    "my": "လူနည်း",
-   "zh": "淡季"
+   "zh": "淡季",
+   "de": "Ruhe"
   },
   "songthaew": {
    "en": "Car",
    "th": "รถ",
    "my": "ကား",
-   "zh": "用车"
+   "zh": "用车",
+   "de": "Auto"
   },
   "sound": {
    "en": "Read aloud",
    "th": "อ่านออกเสียง",
    "my": "အသံဖတ်",
-   "zh": "朗读"
+   "zh": "朗读",
+   "de": "Vorlesen"
   },
   "spade": {
    "en": "Cards",
    "th": "ไพ่",
    "my": "ဖဲ",
-   "zh": "纸牌"
+   "zh": "纸牌",
+   "de": "Karten"
   },
   "sparkle": {
    "en": "Blessed",
    "th": "ศักดิ์สิทธิ์",
    "my": "မင်္ဂလာ",
-   "zh": "加持"
+   "zh": "加持",
+   "de": "Gesegnet"
   },
   "spider": {
    "en": "Crawler",
    "th": "ตัวเก็บข้อมูล",
    "my": "ဒေတာစုစက်",
-   "zh": "爬虫"
+   "zh": "爬虫",
+   "de": "Crawler"
   },
   "spirit-house": {
    "en": "Spirit house",
    "th": "ศาลพระภูมิ",
    "my": "နတ်စင်",
-   "zh": "神龛"
+   "zh": "神龛",
+   "de": "Geisterhaus"
   },
   "sprout": {
    "en": "Farm",
    "th": "ไร่",
    "my": "ခြံ",
-   "zh": "农场"
+   "zh": "农场",
+   "de": "Hof"
   },
   "star": {
    "en": "Done well",
    "th": "เยี่ยม",
    "my": "ကောင်းမွန်",
-   "zh": "出色"
+   "zh": "出色",
+   "de": "Gut gemacht"
   },
   "star-struck": {
    "en": "Wow",
    "th": "ว้าว",
    "my": "အံ့ဩ",
-   "zh": "惊叹"
+   "zh": "惊叹",
+   "de": "Wow"
   },
   "sun": {
    "en": "Day",
    "th": "กลางวัน",
    "my": "နေ့",
-   "zh": "白天"
+   "zh": "白天",
+   "de": "Tag"
   },
   "sundial": {
    "en": "Good date",
    "th": "ฤกษ์ดี",
    "my": "နေ့ကောင်း",
-   "zh": "吉日"
+   "zh": "吉日",
+   "de": "Guter Tag"
   },
   "tuk-tuk": {
    "en": "Getting around",
    "th": "เดินทาง",
    "my": "သွားလာ",
-   "zh": "出行"
+   "zh": "出行",
+   "de": "Fahrt"
   },
   "typewriter": {
    "en": "Typed",
    "th": "พิมพ์",
    "my": "ရိုက်",
-   "zh": "录入"
+   "zh": "录入",
+   "de": "Abgetippt"
   },
   "warning": {
    "en": "Trouble",
    "th": "เหตุด่วน",
    "my": "အရေးပေါ်",
-   "zh": "紧急"
+   "zh": "紧急",
+   "de": "Problem"
   },
   "wave": {
    "en": "Hello",
    "th": "สวัสดี",
    "my": "မင်္ဂလာပါ",
-   "zh": "你好"
+   "zh": "你好",
+   "de": "Hallo"
   },
   "wifi": {
    "en": "Offline too",
    "th": "ใช้ได้แม้ไม่มีเน็ต",
    "my": "အင်တာနက်မရှိလည်း",
-   "zh": "离线可用"
+   "zh": "离线可用",
+   "de": "Auch offline"
   },
   "manicule": {
    "en": "Pick",
    "th": "เลือก",
    "my": "ရွေး",
-   "zh": "选择"
+   "zh": "选择",
+   "de": "Auswählen"
   }
  },
  "ui": {
@@ -1592,6 +1697,20 @@
    "lo": "低",
    "hi": "高",
    "slotsOpen": "本月还剩 {n} 个名额"
+  },
+  "de": {
+   "tOrdered": "Bestellt",
+   "tPaid": "Bezahlt",
+   "tChecking": "Zahlung wird geprüft",
+   "tStarted": "Begonnen",
+   "tDone": "Fertig",
+   "trackH": "Ihre Bestellung",
+   "trackKeep": "Behalten Sie diese Seite: Sie zeigt, wo Ihre Bestellung steht.",
+   "ladder": "Die Preise folgen der Nachfrage und ändern sich am 1. jedes Monats.",
+   "priceNow": "Preis jetzt",
+   "lo": "niedrig",
+   "hi": "hoch",
+   "slotsOpen": "{n} frei in diesem Monat"
   }
  }
 }

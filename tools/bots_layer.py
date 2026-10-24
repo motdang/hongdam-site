@@ -4,8 +4,8 @@
     python3 tools/bots_layer.py           # write llms.txt's SHOP block, then check every page
     python3 tools/bots_layer.py --check   # only check
 
-Writes the SHOP part of docs/llms.txt (between SHOP markers): each category page with its addresses in four
-languages, its line, how many cards, and its lowest price. Then reads every page in docs/ and lists what a
+Writes the SHOP part of docs/llms.txt (between SHOP markers): each category page with its addresses in its
+other languages, its line, how many cards, and its lowest price. Then reads every page in docs/ and lists what a
 link preview or a search engine would miss: no title, description or canonical on an indexed page; no
 og:image, or one that is relative, missing on disk, not 1200 x 630 or not a JPEG or PNG; no twitter:card,
 twitter:image or image alt; a picture with no alt; og:url and canonical that disagree; a page that borrows
@@ -19,7 +19,7 @@ import sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(HERE, "docs")
 SITE = "https://hongdam.net"
-LANG_DIRS = ("th/", "my/", "zh/")
+LANG_DIRS = ("th/", "my/", "zh/", "de/")
 
 
 def shop_block():
@@ -109,7 +109,7 @@ def check():
                 page = rel.replace("index.html", "")
                 for l in LANG_DIRS:
                     page = page[len(l):] if page.startswith(l) else page
-                owners.setdefault(img, set()).add(re.sub(r"^translation/(th|my)/", "translation/", page))
+                owners.setdefault(img, set()).add(re.sub(r"^translation/(th|my|de)/", "translation/", page))
             for t in ("twitter:card", "twitter:image", "og:image:alt"):
                 if not meta(head, t):
                     say("no " + t)

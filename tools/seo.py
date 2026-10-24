@@ -12,8 +12,8 @@ import json
 import re
 
 E = html.escape
-LOCALE = {"en": "en_US", "th": "th_TH", "my": "my_MM", "zh": "zh_CN"}
-TOWN = {"en": "Hongdam, Chiang Rai", "th": "หงส์ดำ เชียงราย"}
+LOCALE = {"en": "en_US", "th": "th_TH", "my": "my_MM", "zh": "zh_CN", "de": "de_DE"}
+TOWN = {"en": "Hongdam, Chiang Rai", "th": "หงส์ดำ เชียงราย", "de": "Hongdam, Chiang Rai"}
 CARD_W, CARD_H = 1200, 630
 
 
@@ -55,7 +55,7 @@ def desc_of(B, lang, path, desc):
         return desc
     end = "" if desc.endswith((".", "。", "။")) else ("。" if lang == "zh" else "။" if lang == "my" else "" if lang == "th" else ".")
     frm = B["SHOP"]["ui"][lang]["from"].replace("{p}", "฿{:,}".format(low))
-    return "%s%s %s" % (desc, end, frm[0].upper() + frm[1:] if lang == "en" else frm)
+    return "%s%s %s" % (desc, end, frm[0].upper() + frm[1:] if lang in ("en", "de") else frm)
 
 
 def card_alt(B, lang, path, title):

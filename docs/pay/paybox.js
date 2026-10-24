@@ -37,6 +37,14 @@ const T = {
         err: { nofile: 'စလစ်ပုံကို အရင်ရွေးပါ။', unread: 'ဤပုံကို ဘဏ်စလစ်အဖြစ် ဖတ်၍မရပါ။', amount: 'စလစ်ပေါ်ရှိ ငွေပမာဏ မကိုက်ညီပါ။',
                receiver: 'စလစ်ပေါ်ရှိ လက်ခံသူ မကိုက်ညီပါ။', used: 'ဤစလစ်ဖြင့် ပေးချေပြီးသားဖြစ်သည်။', late: 'ဤစလစ်သည် စစ်ရန် ဟောင်းလွန်းသည်။',
                service: 'စလစ်စစ်စနစ် မတုံ့ပြန်ပါ။ ခဏနေ ထပ်စမ်းပါ။' } },
+  de: { service: 'Leistung', new: 'Neue Übersetzung', check: 'Prüfung einer Übersetzung', pages: 'Seiten', stamp: 'Jede Seite stempeln',
+        total: 'Zu zahlen', how: 'Scannen Sie mit einer beliebigen thailändischen Bank-App. Die App zeigt vor der Zahlung den Namen des Empfängers.',
+        slip: 'Laden Sie nach der Zahlung den Beleg aus Ihrer Bank-App hoch:', checkBtn: 'Zahlung prüfen', checking: 'Wird geprüft…',
+        paid: 'Bezahlt. Ihre Referenz ist', keep: 'Senden Sie sie mit Ihren Dokumenten.', line: 'Beleg auf LINE senden',
+        err: { nofile: 'Wählen Sie zuerst das Bild des Belegs.', unread: 'Dieses Bild ist kein lesbarer Bankbeleg.',
+               amount: 'Der Beleg zeigt einen anderen Betrag.', receiver: 'Der Beleg zeigt einen anderen Empfänger.',
+               used: 'Mit diesem Beleg wurde schon bezahlt.', late: 'Dieser Beleg ist zu alt für die Prüfung.',
+               service: 'Die Belegprüfung antwortet nicht. Versuchen Sie es in einer Minute noch einmal.' } },
 }
 
 const CSS = `[data-paybox]{border:2px solid currentColor;border-radius:12px;padding:1rem;max-width:30rem;margin:1rem 0}
