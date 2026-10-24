@@ -275,8 +275,10 @@ def go_of(c, lang):
 def card_html(c, lang):
     go, btn = go_of(c, lang)
     pic = pic_of(c)
+    # the card's name opens what its button opens
+    name = '<a href="%s">%s</a>' % (E(go), E(tr(c["n"], lang))) if go else E(tr(c["n"], lang))
     out = '<li class="card" id="%s" style="--line:var(--c-%s)">%s<h3>%s</h3><p class="price">%s</p><p class="l">%s</p>' % (
-        E(c["id"]), E(c["cat"]), job(pic, lang, name="job-" + c["id"]) if pic else "", E(tr(c["n"], lang)), card_price(c, lang), E(tr(c["l"], lang)))
+        E(c["id"]), E(c["cat"]), job(pic, lang, name="job-" + c["id"]) if pic else "", name, card_price(c, lang), E(tr(c["l"], lang)))
     if walks(c):
         out += '<details class="ladder" data-svc="%s" hidden></details>' % E(walks(c))
     if c["act"] == "list":
@@ -358,7 +360,8 @@ def top(lang, path):
             % (url(lang), db("hongsa", "mark", "loop"), E(ui["language"]), langs, LINE_URL))
 
 
-def foot(lang, front=False, group=None):
+def foot(lang, front=False, group=None, pay=True):
+    """pay: the line on how to pay; the Buy page says it above its own button instead."""
     ui = SHOP["ui"][lang]
     data = {"lang": lang, "langs": LANGS, "front": front, "home": url(lang), "lineUrl": LINE_URL,
             "ui": ui, "cardsUrl": "/assets/shop-%s.json?v=%s" % (lang, VERSION),
@@ -367,10 +370,10 @@ def foot(lang, front=False, group=None):
     if DBM:
         data["db"] = {"core": "/assets/db/" + DBM["core"], "groups": {g: "/assets/db/" + f for g, f in DBM["groups"].items()}}
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    return rate_box(lang) + ('<footer><p>%s</p><p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
+    return rate_box(lang) + ('<footer>%s<p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
             '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · <a href="/llms.txt">llms.txt</a></p></footer>\n'
             '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n</body>\n</html>\n'
-            % (E(ui["payMethods"]), E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j, JS_V))
+            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j, JS_V))
 
 
 RATE_LANGS = ("my", "zh", "de")
@@ -404,9 +407,10 @@ def not_here(lang):
 def front(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, ui["title"], ui["desc"], "")
+    # under the tagline: where Hongdam works, then what it does, the first sentence of the site's description
+    # (her asks 2026-10-24: where "here" is; "everything should be fully self-explanatory")
     out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
-    if ui.get("place"):
-        out += '<p class="lede">%s</p>\n' % E(ui["place"])
+    out += '<p class="lede">%s</p>\n' % "<br>".join(E(ui[k]) for k in ("place", "lede") if ui.get(k))
     if LOOKS["master"]:
         caps = []
         for s in ui["how"]:
@@ -492,7 +496,7 @@ def buy_page(lang):
     out = head(lang, "%s · Hongdam" % ui["buy"], ui["desc"], "buy/", noindex=True, og="og/shop/buy.jpg")
     out += '<body class="p-buy">\n' + top(lang, "buy/") + '<main>\n<p class="back"><a href="%s">← %s</a></p>\n' % (url(lang), E(ui["home"]))
     out += '<div id="buy"><noscript><p>%s</p><p><a class="btn" href="%s">LINE</a></p></noscript></div>\n</main>\n' % (E(ui["noscript"]), LINE_URL)
-    return out + foot(lang)
+    return out + foot(lang, pay=False)
 
 
 def ask_page(lang):
