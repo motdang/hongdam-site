@@ -254,8 +254,8 @@ def front(lang, ns):
     out += '<div class="s-room">\n' + bar(lang) + '<section class="s-hero s-wrap">\n'
     out += '<p class="s-kicker">%s</p>\n<h1>%s</h1>\n<p class="s-lede">%s</p>\n' % (E(u["kicker"]), E(u["h1"]), E(u["lede"]))
     notes_url = B.url(lang if lang in NOTE_LANGS else "en", "studio/notes/")
-    out += '<p class="s-cta"><a class="s-btn" href="#contact">%s</a> <a class="s-btn alt" href="%s">%s</a></p>\n' % (
-        E(B.SHOP["ui"][lang]["askBtn"]), notes_url, E(u["ctaNotes"]))
+    out += '<p class="s-cta"><a class="s-btn" href="#contact">%s</a> <a class="s-btn alt" href="%s">%s</a> %s</p>\n' % (
+        E(B.SHOP["ui"][lang]["askBtn"]), notes_url, E(u["ctaNotes"]), B.share_btn(lang))
     out += '<p class="s-counts">%s</p>\n' % E(fill(u["counts"], lang, len(ns)))
     out += '<button class="s-swan" type="button" aria-label="Hongdam">%s</button>\n' % B.db("hongsa", play="loop")
     out += '</section>\n</div>\n<main id="main">\n'
@@ -352,7 +352,7 @@ def note_page(n, ns):
     out += '<h1>%s</h1>\n' % E(n["title"])
     if n.get("title_th"):
         out += '<p class="s-th" lang="th">%s</p>\n' % E(n["title_th"])
-    out += '<p class="s-dek">%s</p>\n' % E(n["dek"])
+    out += '<p class="s-dek">%s</p>\n<p class="share-row">%s</p>\n' % (E(n["dek"]), B.share_btn(lang))
     out += B.job(beat_line(n["beat"]), lang, cls="s-line") + "\n"
     out += '<div class="s-body">\n%s\n</div>\n' % n["html"]
     if n.get("dek_th"):

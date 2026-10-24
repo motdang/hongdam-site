@@ -103,13 +103,18 @@ def top(lang, langs=None):
             '%s<a class="line" href="%s">LINE</a></header>\n' % (B.url(lang), B.db("hongsa", "mark", "loop"), nav, B.LINE_URL))
 
 
+# The pages that sell a service: a Share button on the back row (her ask 2026-10-24).
+SELL = ("own", "redteam", "market", "bots", "github", "translation")
+
+
 def back(pid, lang):
-    """← the shop category the page belongs to (its cat in data/pages.json), or the front page."""
+    """← the shop category the page belongs to (its cat in data/pages.json), or the front page; Share on a page that sells."""
     cat = next((c for c in B.SHOP["cats"] if c["id"] == PAGES[pid].get("cat")), None)
     ui = B.SHOP["ui"][lang]
+    share = B.share_btn(lang) if pid in SELL else ""
     if cat:
-        return '<p class="back"><a href="%s">← %s</a></p>\n' % (B.url(lang, cat["id"] + "/"), E(B.tr(cat["n"], lang)))
-    return '<p class="back"><a href="%s">← %s</a></p>\n' % (B.url(lang), E(ui["home"]))
+        return '<p class="back"><a href="%s">← %s</a>%s</p>\n' % (B.url(lang, cat["id"] + "/"), E(B.tr(cat["n"], lang)), share)
+    return '<p class="back"><a href="%s">← %s</a>%s</p>\n' % (B.url(lang), E(ui["home"]), share)
 
 
 def lead(pid, lang, h1=None, sub=None, sub_lang="th", with_back=True, h1_html=None):

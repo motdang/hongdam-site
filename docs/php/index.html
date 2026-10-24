@@ -16,6 +16,15 @@
 <meta property="og:image" content="https://hongdam.net/og/php.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Card: PHP fix. Hongdam's team puts a fixed PHP on your site or server."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/php.jpg"><meta name="twitter:image:alt" content="Card: PHP fix. Hongdam's team puts a fixed PHP on your site or server.">
 <link rel="stylesheet" href="/assets/rt.css">
 <style>
+  /* Share (assets/share.js) in this page's colours */
+  .share{display:inline-flex; align-items:center; gap:6px; min-height:44px; padding:6px 2px; border:0; background:none; color:var(--cream-dim); font:600 16px/1.2 system-ui,sans-serif; cursor:pointer}
+  .share svg{width:18px; height:18px; flex:none; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+  .share:hover, .share[aria-expanded="true"]{color:var(--cream); background:none}
+  .share, #share-menu a, #share-menu button{letter-spacing:normal}
+  #share-menu{position:fixed; inset:auto; margin:0; min-width:200px; padding:6px; border:1px solid var(--line); border-radius:12px; background:var(--lacquer-2); color:var(--cream)}
+  #share-menu[hidden]{display:none}
+  #share-menu a, #share-menu button{display:flex; align-items:center; width:100%; min-height:44px; padding:6px 12px; border:0; border-radius:8px; background:none; color:var(--cream); font:600 16px/1.2 system-ui,sans-serif; text-decoration:none; text-align:start; cursor:pointer}
+  #share-menu a:hover, #share-menu button:hover, #share-menu :focus-visible{background:var(--lacquer-3); outline:none}
   .pair{margin:14px 0 26px; max-width:62ch}
   .pair p{color:var(--cream-dim)}
   .pair p[lang="th"]{color:var(--cream); margin-bottom:6px}
@@ -94,6 +103,7 @@
   <div class="go">
     <a class="btn" href="#book">Book · <span lang="th">จอง</span></a>
     <small id="lede-price">Server ฿5,000 · about US$150 · opening price</small>
+    <button class="share" type="button" data-share=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span>Share · <span lang="th">แชร์</span></span></button>
   </div>
 
   <section>
@@ -311,5 +321,6 @@ form.addEventListener('submit', async (e) => {
 })
 </script>
 <script src="/ticker.js" defer></script>
+<script type="module" src="/assets/share.js?v=95e47def"></script>
 </body>
 </html>

@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 // Link-preview pictures (1200 × 630) for the shop: docs/og/shop/front.jpg and one per category, in the Isotype look,
-// drawn with the same dingbats the pages use. Run after tools/dingbats.mjs and tools/build_shop.py.
-//   node tools/share_cards.mjs
+// drawn with the same dingbats the pages use; and docs/og/svc/<id>.jpg, one per service people buy or ask about
+// (its name, Thai name, line and its own job line), which a link to its Buy or Ask page shows (functions/_middleware.js).
+// Run after tools/dingbats.mjs, then tools/build_shop.py again so functions/_share_data.js names the new pictures.
+//   node tools/share_cards.mjs              everything
+//   node tools/share_cards.mjs retire ...   those services only
 import fs from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
@@ -50,19 +53,35 @@ h1{margin:0;font-size:${big.length > 16 ? 76 : 104}px;line-height:.98;letter-spa
 fs.mkdirSync(OUT, { recursive: true })
 const browser = await chromium.launch({ executablePath: chromeExe() })
 const tab = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 })
-const shoot = async (name, html) => {
+const shoot = async (name, html, dir = OUT) => {
   const f = path.join(OUT, '_card.html')
   fs.writeFileSync(f, html)
   await tab.goto(url.pathToFileURL(f).href, { waitUntil: 'load' })
   await tab.waitForTimeout(500)
-  await tab.screenshot({ path: path.join(OUT, name + '.jpg'), type: 'jpeg', quality: 86 })
+  await tab.screenshot({ path: path.join(dir, name + '.jpg'), type: 'jpeg', quality: 86 })
 }
+// A service's name runs longer than a category's: the name shrinks first, so the Thai name and the line under it
+// stay readable in a feed; then all three, until they clear the job line. No word breaks.
+const FIT = `<style>.th,.sub{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.th{margin-top:10px}</style>
+<script>addEventListener('load',()=>{const h=document.querySelector('h1'),t=document.querySelector('.th'),s=document.querySelector('.sub'),l=document.querySelector('.line')
+const fits=()=>s.getBoundingClientRect().bottom<=l.getBoundingClientRect().top-18&&h.scrollWidth<=h.clientWidth
+const set=(a,b,c)=>{h.style.fontSize=a+'px';t.style.fontSize=b+'px';s.style.fontSize=c+'px'}
+for(let a=104;a>=64;a-=4){set(a,40,30);if(fits())return}
+for(let k=1;k>=.7;k-=.05){set(64*k,40*k,30*k);if(fits())return}})</script>`
+const svcPage = (c) => page(c.n.en, c.n.th || '', c.l.en, pic(c), HUE[c.cat] ?? 32, LOOKS.doors[c.cat] || 'hongsa', c.cat) + FIT
 const ui = SHOP.ui
-await shoot('front', page('hongdam', 'หงส์ดำ · เราทำให้', ui.en.tagline, LOOKS.master.map((m) => m.db), 32, 'hongsa', 'front'))
-for (const cat of SHOP.cats) {
-  const first = SHOP.cards.find((c) => c.cat === cat.id)
-  await shoot(cat.id, page(cat.n.en, cat.n.th, cat.l.en, first ? pic(first) : LOOKS.master.map((m) => m.db), HUE[cat.id] ?? 32, LOOKS.doors[cat.id] || 'hongsa', cat.id))
+const only = process.argv.slice(2)
+if (!only.length) {
+  await shoot('front', page('hongdam', 'หงส์ดำ · เราทำให้', ui.en.tagline, LOOKS.master.map((m) => m.db), 32, 'hongsa', 'front'))
+  for (const cat of SHOP.cats) {
+    const first = SHOP.cards.find((c) => c.cat === cat.id)
+    await shoot(cat.id, page(cat.n.en, cat.n.th, cat.l.en, first ? pic(first) : LOOKS.master.map((m) => m.db), HUE[cat.id] ?? 32, LOOKS.doors[cat.id] || 'hongsa', cat.id))
+  }
+  console.log(1 + SHOP.cats.length, 'cards in docs/og/shop/')
 }
+const SVC = path.join(DOCS, 'og/svc'), svcs = SHOP.cards.filter((c) => ['buy', 'ask'].includes(c.act) && (!only.length || only.includes(c.id)))
+fs.mkdirSync(SVC, { recursive: true })
+for (const c of svcs) await shoot(c.id, svcPage(c), SVC)
+console.log(svcs.length, 'cards in docs/og/svc/')
 fs.unlinkSync(path.join(OUT, '_card.html'))
 await browser.close()
-console.log(1 + SHOP.cats.length, 'cards in docs/og/shop/')
