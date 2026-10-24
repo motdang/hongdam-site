@@ -4,6 +4,8 @@
 // /api/github and /api/bots. The Buy page posts to /api/buy, which works the price out again.
 import { promptPayPayload } from '/pay/promptpay.js'
 import { qrToSvg } from '/pay/qr.js'
+// ฿ / $ / €: every .amt on the page shows in the reader's currency (her ask 2026-10-24); cur.js adds the switch.
+import { amtH, setAmt, cur as payCur } from '/assets/cur.js'
 
 const D = JSON.parse(document.getElementById('shop').textContent)
 // The card list (names, prices, options, search words) is one file per language, shared by every page.
@@ -12,9 +14,8 @@ const T = D.ui
 const $ = (s, r = document) => r.querySelector(s)
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
 const fmt = (n, cur = 'THB') => (cur === 'USD' ? 'US$' : '฿') + Number(n).toLocaleString('en-US')
-// A price in its mark (her ask 2026-10-24): Thai flag before baht, US flag and its own colour for US$ (shop.css .amt).
-const amtCls = (cur) => (cur === 'USD' ? 'amt amt-us' : 'amt amt-th')
-const amtH = (n, cur = 'THB') => `<span class="${amtCls(cur)}">${esc(fmt(n, cur))}</span>`
+// A price in its mark (her ask 2026-10-24): a flag before it, US$ and € in their own colours (shop.css .amt);
+// amtH writes it in the reader's currency (cur.js).
 const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v) } catch { return null } }
 
 // Doodle dingbats: core.js, then the glyphs of this page's group (tools/dingbats.mjs). Words and buttons work before they arrive.
@@ -298,7 +299,7 @@ const howCap = (s) => { const i = s.indexOf(' '); return i > 0 ? `<b>${esc(s.sli
 const masterHtml = (to) => (D.master && D.master.length ? jobHtml(D.master.map((m) => m.db), { cls: 'master mini', to, caps: T.how.map(howCap) }) : '')
 
 // The order tracker, /buy/?ref=HD-…: the job's line, and Ordered → Paid → Started → Done with the swan at the order's state.
-async function track(root, ref) {
+async function track(root, ref, note = '') {
   let o
   try { o = await (await fetch('/api/buy/' + encodeURIComponent(ref))).json() } catch { o = { ok: false } }
   const card = o && o.ok && (await cardsP).find((c) => c.id === o.card)
@@ -309,10 +310,21 @@ async function track(root, ref) {
   const steps = D.track || []
   root.innerHTML = `<p class="kicker">${esc(T.trackH)} · <b>${esc(o.ref)}</b></p><h1>${esc(card.n)}</h1>` +
     (card.pic ? jobHtml(card.pic, { cls: 'big', caps: card.pic.map((g) => esc(D.glyphs[g] || g)), hide: true, to: o.state === 'done' ? 1 : o.state === 'started' ? 0.5 : 0 }) : '') +
+    (note ? `<p class="note" role="alert">${esc(note)}</p>` : '') +
     `<p class="state" role="status">${esc(said[o.state] || T.tOrdered)}</p>` +
     (steps.length ? jobHtml(steps.map((s) => s.db), { cls: 'big track', to: at / (steps.length - 1), caps: [T.tOrdered, T.tPaid, T.tStarted, T.tDone].map(esc) }) : '') +
     `<p class="note">${esc(T.trackKeep)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(o.ref)}</a></p>`
   glyphs(card.cat)
+}
+// Back from PayPal's page (/buy/?ref=HD-…&pp=back&token=…): the server captures and checks it, then the tracker.
+async function cardBack(root, P) {
+  const ref = P.get('ref')
+  history.replaceState(null, '', location.pathname + '?ref=' + encodeURIComponent(ref))
+  if (P.get('pp') !== 'back') { await track(root, ref, T.cardCancel || ''); return }
+  root.innerHTML = `<p class="state" role="status">${esc(T.cardBack || T.checking)}</p>`
+  let r
+  try { r = await (await fetch('/api/buy/card/done', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref, token: P.get('token') || '' }) })).json() } catch { r = { ok: false, why: 'service' } }
+  await track(root, ref, r.ok ? '' : (T.err[r.why] || T.err.paypal || T.err.service))
 }
 const trackLink = (ref) => `<p><a class="btn" href="${esc(location.pathname)}?ref=${encodeURIComponent(ref)}">${esc(T.trackH)} · ${esc(ref)}</a></p>`
 
@@ -323,6 +335,7 @@ async function startBuy() {
   const root = document.body.classList.contains('p-buy') && $('#buy')
   if (!root) return null
   const P = new URLSearchParams(location.search)
+  if (P.get('ref') && P.get('pp')) { await cardBack(root, P); return null }
   if (P.get('ref')) { await track(root, P.get('ref')); return null }
   const card = (await cardsP).find((c) => c.id === P.get('c'))
   if (!card || card.act !== 'buy') { root.innerHTML = `<p>${esc(T.nocard)}</p><p><a class="btn" href="${esc(D.home)}">${esc(T.home)}</a></p>`; glyphs('front'); return null }
@@ -353,7 +366,7 @@ ${card.opts.length > 1 ? `<fieldset><legend>${esc(T.choose)}</legend>${card.opts
  <span class="unit"></span></div>
 ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <span>${card.add.nh || esc(card.add.n)}</span></label>${card.add.unit ? `
 <div class="qtyrow addq" hidden><span class="lab">${esc(T.qty)}</span><input name="addonQty" type="number" inputmode="numeric" min="1" max="${card.add.max || 8}" value="1" aria-label="${esc(card.add.unitMany || T.qty)}"> <span class="unit">${esc(card.add.unitMany || '')}</span></div>` : ''}` : ''}
-<p class="tot"><span>${esc(T.total)}</span> <b id="total"></b></p><p id="halfnote" class="note" hidden></p>
+<p class="tot"><span>${esc(T.total)}</span> <b id="total" class="amt"></b></p><p id="halfnote" class="note" hidden></p>
 <label class="field">${esc(T.reach)}<input name="contact" required autocomplete="tel" maxlength="120"></label>
 <label class="field">${esc(T.note)}<textarea name="note" rows="3" maxlength="600"></textarea></label>
 <button class="btn big" type="submit">${esc(T.next)}</button>
@@ -374,7 +387,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
     card.opts.forEach((o) => { const e = $(`.oprice[data-o="${o.id}"]`, root); if (e && o.price.walk) e.innerHTML = amtH(base(o)) + esc(o.per || '') })
     liveText(root)
     const c = cur(opt), t = totalOf(opt, n(), f.elements.addon && f.elements.addon.checked)
-    const tot = $('#total', root); tot.textContent = fmt(t, c); tot.className = amtCls(c)
+    setAmt($('#total', root), t, c)
     const h = $('#halfnote', root)
     h.hidden = !half(t, c)
     if (half(t, c)) h.innerHTML = esc(T.half).replace('{now}', amtH(Math.ceil(t / 2), c))
@@ -396,7 +409,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
     let j
     try {
       j = await (await fetch('/api/buy', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({
-        card: card.id, opt: opt.id, qty: n(), addon: f.elements.addon && f.elements.addon.checked ? (card.add.unit ? addN() : true) : false, contact, note: f.elements.note.value, lang: D.lang }) })).json()
+        card: card.id, opt: opt.id, qty: n(), addon: f.elements.addon && f.elements.addon.checked ? (card.add.unit ? addN() : true) : false, contact, note: f.elements.note.value, lang: D.lang, pay: payCur() }) })).json()
     } catch { j = { ok: false, why: 'service' } }
     if (!j.ok) { m.textContent = (j.retry ? T.err.service : T.err[j.why]) || T.err.service; return }
     m.textContent = ''
@@ -408,23 +421,46 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
   return { redraw }
 }
 
+// The order's amount in the currency the buyer picked (j.show), kept as it is if they flip the switch afterwards.
+// PromptPay is in baht (j.pay.thb, converted when the price is in US$ or the buyer pays in $ or €); PayPal asks for
+// the amount in the buyer's currency. Paying in baht puts PromptPay first; in $ or €, PayPal and Wise first.
 function pay(j) {
   const box = $('#pay')
   box.hidden = false
-  const amount = amtH(j.due, j.cur)
-  const qr = j.pay.promptpay ? qrToSvg(promptPayPayload({ payeeId: j.pay.promptpay, satang: j.due * 100, merchantName: 'NaNoBotCo', ref: j.ref }),
-    { ecl: 'M', border: 4, scale: 6, dark: '#000', light: '#fff', title: `PromptPay ${j.due} THB` }) : ''
-  box.innerHTML = `<h2>${esc(T.order)} ${esc(j.ref)}</h2>
-<p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>
-${qr ? `<section class="way"><h3>${esc(T.pp)}</h3><div class="qr">${qr}</div><p>${esc(T.scan)}</p>
+  const s = j.show || { cur: j.cur, due: j.due }, thb = j.pay.thb ?? (j.cur === 'THB' ? j.due : null)
+  const amount = amtH(s.due, s.cur, true)
+  const qr = j.pay.promptpay && thb ? qrToSvg(promptPayPayload({ payeeId: j.pay.promptpay, satang: thb * 100, merchantName: 'NaNoBotCo', ref: j.ref }),
+    { ecl: 'M', border: 4, scale: 6, dark: '#000', light: '#fff', title: `PromptPay ${thb} THB` }) : ''
+  const pp = qr ? `<section class="way"><h3>${esc(T.pp)}</h3>${s.cur !== 'THB' ? `<p class="tot"><b>${amtH(thb, 'THB', true)}</b></p>` : ''}<div class="qr">${qr}</div><p>${esc(T.scan)}</p>
 <form id="sf" hidden><label class="field">${esc(T.slip)}<input type="file" name="slip" accept="image/*" required></label><button class="btn" type="submit">${esc(T.slipBtn)}</button></form>
-<p id="smsg" role="status"></p></section>` : ''}
-<section class="way"><h3>PayPal · Wise</h3><p>${esc(j.cur === 'USD' ? T.abroad.replace(/\s*[(（][^)）]*\{usd\}[^)）]*[)）]/, '') : T.abroad).replace('{usd}', amtH(j.pay.usd, 'USD')).replace('{amount}', amount).replace('{ref}', esc(j.ref))}</p>
+<p id="smsg" role="status"></p></section>` : ''
+  const away = `<section class="way"><h3>PayPal · Wise</h3><p>${esc(T.abroad).replace(/\s*[(（][^)）]*\{usd\}[^)）]*[)）]/, '').replace('{amount}', amount).replace('{ref}', esc(j.ref))}</p>
 <p><a class="btn" href="${esc(j.pay.paypal)}" target="_blank" rel="noopener">PayPal</a> <a class="btn" href="${esc(j.pay.wise)}" target="_blank" rel="noopener">Wise</a></p>
 <p><button class="btn alt" type="button" data-claim="paypal">${esc(T.ipaid)} PayPal</button> <button class="btn alt" type="button" data-claim="wise">${esc(T.ipaid)} Wise</button></p>
-<p id="cmsg" role="status"></p></section>
+<p id="cmsg" role="status"></p></section>`
+  // Card or PayPal on PayPal's page, shown once /api/buy says it is on; it opens in a tab of its own (opened on the
+  // click, so no pop-up blocker stops it) and this page keeps the other ways.
+  const card = T.cardH ? `<section class="way" id="cardway" hidden><h3>${esc(T.cardH)}</h3><p>${esc(T.cardNote)}</p>
+<p><button class="btn big" type="button" id="cardbtn">${esc(T.cardBtn).replace('{amount}', amount)}</button></p><p id="kmsg" role="status"></p></section>` : ''
+  box.innerHTML = `<h2>${esc(T.order)} ${esc(j.ref)}</h2>
+<p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>
+${s.cur === 'THB' ? pp + card + away : card + away + pp}
 <p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(j.ref)}</a></p>`
   fetch('/api/buy').then((r) => r.json()).then((s) => {
+    const cw = $('#cardway')
+    if (s.card && cw) {
+      cw.hidden = false
+      $('#cardbtn').addEventListener('click', async () => {
+        const m = $('#kmsg'), w = window.open('', '_blank')
+        if (w) w.opener = null
+        m.textContent = T.sending
+        let r
+        try { r = await (await fetch('/api/buy/card', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref: j.ref }) })).json() } catch { r = { ok: false, why: 'service' } }
+        if (!r.ok) { if (w) w.close(); m.textContent = T.err[r.why] || T.err.service; return }
+        m.textContent = ''
+        if (w) w.location.href = r.url; else location.href = r.url
+      })
+    }
     const sf = $('#sf'); if (!s.slip || !sf) return
     sf.hidden = false
     sf.addEventListener('submit', async (e) => {

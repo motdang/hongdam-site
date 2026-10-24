@@ -14,11 +14,17 @@ import { promptPayPayload } from './promptpay.js'
 import { qrToSvg } from './qr.js'
 import { price } from './price.js'
 
+// On hongdam.net (her ask 2026-10-24, the ฿ / $ / € switch): the page's prices in the reader's currency (cur.js); this
+// box stays in baht, since its QR is PromptPay; buyers abroad get a link to the Buy page, which takes $ and €.
+const home = new URL(import.meta.url).origin === location.origin
+if (home) import('/assets/cur.js').catch(() => {})
+
 const T = {
   en: { service: 'Service', new: 'New translation', check: 'Checking a translation', pages: 'Pages', stamp: 'Stamp each page',
         total: 'To pay', how: 'Scan with any Thai banking app. The app shows the name the money goes to before you pay.',
         slip: 'After paying, upload the slip from your banking app:', checkBtn: 'Check my payment', checking: 'Checking…',
         paid: 'Paid. Your reference is', keep: 'Send it with your documents.', line: 'Send the slip on LINE',
+        away: 'Paying from abroad? Order here, in baht, dollars or euros.',
         err: { nofile: 'Choose the slip picture first.', unread: 'That picture is not a readable bank slip.',
                amount: 'The slip shows a different amount.', receiver: 'The slip shows a different receiver.',
                used: 'That slip has paid already.', late: 'That slip is too old to check.',
@@ -27,6 +33,7 @@ const T = {
         total: 'ยอดชำระ', how: 'สแกนด้วยแอปธนาคารใดก็ได้ แอปจะแสดงชื่อผู้รับเงินก่อนกดโอน',
         slip: 'โอนแล้ว อัปโหลดสลิปจากแอปธนาคาร:', checkBtn: 'ตรวจการชำระเงิน', checking: 'กำลังตรวจ…',
         paid: 'ชำระแล้ว เลขอ้างอิงของคุณคือ', keep: 'ส่งเลขนี้มาพร้อมเอกสาร', line: 'ส่งสลิปทางไลน์',
+        away: 'จ่ายจากต่างประเทศ? สั่งที่นี่ เป็นบาท ดอลลาร์ หรือยูโร',
         err: { nofile: 'เลือกรูปสลิปก่อน', unread: 'รูปนี้อ่านเป็นสลิปไม่ได้', amount: 'ยอดในสลิปไม่ตรง',
                receiver: 'ผู้รับในสลิปไม่ตรง', used: 'สลิปนี้ใช้ชำระไปแล้ว', late: 'สลิปนี้เก่าเกินกว่าจะตรวจได้',
                service: 'ระบบตรวจสลิปไม่ตอบ ลองใหม่อีกครั้งในอีกสักครู่' } },
@@ -34,6 +41,7 @@ const T = {
         total: 'ပေးရန်', how: 'ထိုင်းဘဏ်အက်ပ်တစ်ခုခုဖြင့် စကင်ဖတ်ပါ။ မပေးမီ ငွေလက်ခံသူအမည်ကို အက်ပ်က ပြပါမည်။',
         slip: 'ငွေလွှဲပြီးလျှင် ဘဏ်အက်ပ်မှ ငွေလွှဲစလစ်ကို တင်ပါ:', checkBtn: 'ငွေပေးချေမှု စစ်ရန်', checking: 'စစ်နေသည်…',
         paid: 'ပေးချေပြီး။ သင့်ရည်ညွှန်းနံပါတ်မှာ', keep: 'စာရွက်စာတမ်းများနှင့်အတူ ပို့ပါ။', line: 'LINE ဖြင့် စလစ်ပို့ရန်',
+        away: 'နိုင်ငံခြားမှ ပေးမည်လား? ဘတ်၊ ဒေါ်လာ သို့မဟုတ် ယူရိုဖြင့် ဤနေရာတွင် မှာပါ။',
         err: { nofile: 'စလစ်ပုံကို အရင်ရွေးပါ။', unread: 'ဤပုံကို ဘဏ်စလစ်အဖြစ် ဖတ်၍မရပါ။', amount: 'စလစ်ပေါ်ရှိ ငွေပမာဏ မကိုက်ညီပါ။',
                receiver: 'စလစ်ပေါ်ရှိ လက်ခံသူ မကိုက်ညီပါ။', used: 'ဤစလစ်ဖြင့် ပေးချေပြီးသားဖြစ်သည်။', late: 'ဤစလစ်သည် စစ်ရန် ဟောင်းလွန်းသည်။',
                service: 'စလစ်စစ်စနစ် မတုံ့ပြန်ပါ။ ခဏနေ ထပ်စမ်းပါ။' } },
@@ -41,6 +49,7 @@ const T = {
         total: 'Zu zahlen', how: 'Scannen Sie mit einer beliebigen thailändischen Bank-App. Die App zeigt vor der Zahlung den Namen des Empfängers.',
         slip: 'Laden Sie nach der Zahlung den Beleg aus Ihrer Bank-App hoch:', checkBtn: 'Zahlung prüfen', checking: 'Wird geprüft…',
         paid: 'Bezahlt. Ihre Referenz ist', keep: 'Senden Sie sie mit Ihren Dokumenten.', line: 'Beleg auf LINE senden',
+        away: 'Zahlung aus dem Ausland? Hier bestellen, in Baht, Dollar oder Euro.',
         err: { nofile: 'Wählen Sie zuerst das Bild des Belegs.', unread: 'Dieses Bild ist kein lesbarer Bankbeleg.',
                amount: 'Der Beleg zeigt einen anderen Betrag.', receiver: 'Der Beleg zeigt einen anderen Empfänger.',
                used: 'Mit diesem Beleg wurde schon bezahlt.', late: 'Dieser Beleg ist zu alt für die Prüfung.',
@@ -65,10 +74,11 @@ function mount(el) {
  <label><input type="radio" name="svc" value="check"> ${t.check}</label></fieldset>
 <label>${t.pages} <input type="number" name="pages" min="1" max="200" value="1"></label>
 <label><input type="checkbox" name="stamp"> ${t.stamp}</label>
-<p>${t.total}</p><p class="amt amt-th" aria-live="polite"></p><div class="qr"></div><p>${t.how}</p>
+<p>${t.total}</p><p class="amt amt-th" data-keep aria-live="polite"></p><div class="qr"></div><p>${t.how}</p>
 <form class="slipf" hidden><label>${t.slip}<input type="file" name="slip" accept="image/*" required></label>
  <button type="submit">${t.checkBtn}</button><p class="msg" role="status"></p></form>
-${line ? `<p class="linep"><a class="btn" href="https://line.me/R/ti/p/${line}">${t.line}</a></p>` : ''}`
+${line ? `<p class="linep"><a class="btn" href="https://line.me/R/ti/p/${line}">${t.line}</a></p>` : ''}
+${home && t.away ? `<p class="away"><a href="/${el.dataset.lang && el.dataset.lang !== 'en' ? el.dataset.lang + '/' : ''}buy/?c=${el.dataset.buy || 'translate'}">${t.away}</a></p>` : ''}`
   const choice = () => ({ svc: el.querySelector('[name=svc]:checked').value,
     pages: Math.max(1, Math.min(200, parseInt(el.querySelector('[name=pages]').value, 10) || 1)),
     stamp: el.querySelector('[name=stamp]').checked })

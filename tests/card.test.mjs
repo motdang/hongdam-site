@@ -1,0 +1,92 @@
+// Card or PayPal on PayPal's page (functions/_paypal.js) for a Buy-button order, against a stand-in PayPal and a
+// SQLite copy of the D1 tables (node:sqlite), so the SQL runs as written.
+import assert from 'node:assert'
+import { DatabaseSync } from 'node:sqlite'
+import { readFileSync, readdirSync } from 'node:fs'
+
+const sql = new DatabaseSync(':memory:')
+for (const f of readdirSync(new URL('../migrations/', import.meta.url)).sort()) sql.exec(readFileSync(new URL('../migrations/' + f, import.meta.url), 'utf8'))
+const stmt = (q, a = []) => ({ q, a, bind: (...b) => stmt(q, b),
+  run: async () => { const r = sql.prepare(q).run(...a); return { meta: { changes: Number(r.changes) } } },
+  first: async () => sql.prepare(q).get(...a) ?? null,
+  all: async () => ({ results: sql.prepare(q).all(...a) }) })
+const TASKS = { prepare: (q) => stmt(q), batch: async (list) => list.map((s) => ({ results: sql.prepare(s.q).all(...s.a) })) }
+
+// stand-in PayPal and rates
+const pp = { orders: {}, calls: [] }
+globalThis.fetch = async (u, o = {}) => {
+  const url = String(u?.url || u)
+  if (url.startsWith('https://api.frankfurter.dev/')) return Response.json({ date: '2026-10-23', rates: { EUR: 0.8934, THB: 33.745 } })
+  if (url.startsWith('https://pp.test/')) {
+    const path = url.slice('https://pp.test'.length)
+    pp.calls.push([o.method || 'GET', path])
+    if (path === '/v1/oauth2/token') return Response.json({ access_token: 'T' })
+    if (path === '/v2/checkout/orders') {
+      const b = JSON.parse(o.body), id = 'PP' + (Object.keys(pp.orders).length + 1).toString().padStart(8, '0')
+      pp.orders[id] = { b, paid: false }
+      return Response.json({ id, status: 'PAYER_ACTION_REQUIRED', links: [{ rel: 'self', href: 'x' }, { rel: 'payer-action', href: 'https://www.paypal.com/checkoutnow?token=' + id }] })
+    }
+    const m = path.match(/^\/v2\/checkout\/orders\/(\w+)\/capture$/)
+    if (m) {
+      const ord = pp.orders[m[1]]
+      if (!ord) return Response.json({ name: 'RESOURCE_NOT_FOUND' }, { status: 404 })
+      if (ord.paid) return Response.json({ details: [{ issue: 'ORDER_ALREADY_CAPTURED' }] }, { status: 422 })
+      ord.paid = true
+      const pu = ord.b.purchase_units[0]
+      return Response.json({ id: m[1], status: 'COMPLETED', purchase_units: [{ custom_id: pu.custom_id, payments: { captures: [{ id: 'CAP' + m[1], status: 'COMPLETED', custom_id: pu.custom_id, amount: pu.amount }] } }] })
+    }
+    const g = path.match(/^\/v2\/checkout\/orders\/(\w+)$/)
+    if (g) { const pu = pp.orders[g[1]].b.purchase_units[0]; return Response.json({ id: g[1], status: 'COMPLETED', purchase_units: [{ custom_id: pu.custom_id, payments: { captures: [{ id: 'CAP' + g[1], status: 'COMPLETED', amount: pu.amount }] } }] }) }
+  }
+  throw new Error('unexpected fetch ' + url)
+}
+
+const { onRequest } = await import('../functions/api/buy/[[path]].js')
+const told = []
+const call = async (env, method, path, body) => (await onRequest({ env, params: { path }, waitUntil: (p) => told.push(p),
+  request: new Request('https://hongdam.net/api/buy' + (path ? '/' + path.join('/') : ''), { method, headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: body && JSON.stringify(body) }) })).json()
+
+const off = { TASKS }
+const on = { TASKS, PAYPAL_CLIENT_ID: 'id', PAYPAL_SECRET: 'sec', PAYPAL_API: 'https://pp.test' }
+// off until the keys are set
+assert.equal((await call(off, 'GET')).card, false)
+assert.equal((await call(on, 'GET')).card, true)
+
+// an order in euros, paid by card
+const o = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 2, contact: 'line:abc', lang: 'de', pay: 'EUR' })
+assert.equal(o.ok, true); assert.equal(o.show.cur, 'EUR')
+assert.equal((await call(off, 'POST', ['card'], { ref: o.ref })).why, 'off')
+const s = await call(on, 'POST', ['card'], { ref: o.ref })
+assert.equal(s.ok, true); assert.match(s.url, /^https:\/\/www\.paypal\.com\/checkoutnow\?token=PP/)
+const sent = Object.values(pp.orders)[0].b
+assert.deepEqual(sent.purchase_units[0].amount, { currency_code: 'EUR', value: o.show.due.toFixed(2) })
+assert.equal(sent.purchase_units[0].custom_id, o.ref)
+assert.equal(sent.payment_source.paypal.experience_context.return_url, `https://hongdam.net/de/buy/?ref=${o.ref}&pp=back`)
+assert.equal(sent.payment_source.paypal.experience_context.landing_page, 'GUEST_CHECKOUT')
+assert.match(sql.prepare('SELECT pay FROM svc_buy WHERE ref = ?').get(o.ref).pay, /"pp":"PP00000001"/)
+// back from PayPal: captured, checked, paid; a reload stays paid
+let d = await call(on, 'POST', ['card', 'done'], { ref: o.ref, token: 'PP00000001' })
+assert.deepEqual(d, { ok: true, ref: o.ref, state: 'paid' })
+assert.equal(sql.prepare('SELECT state, paid_ref FROM svc_buy WHERE ref = ?').get(o.ref).paid_ref, 'paypal CAPPP00000001')
+d = await call(on, 'POST', ['card', 'done'], { ref: o.ref, token: 'PP00000001' })
+assert.equal(d.state, 'paid')
+await Promise.all(told)
+assert.equal(sql.prepare("SELECT count(*) n FROM svc_order WHERE src = 'paid'").get().n, 1)
+
+// a PayPal order for another amount does not pay this one
+const o2 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:xyz', pay: 'USD' })
+const s2 = await call(on, 'POST', ['card'], { ref: o2.ref })
+const id2 = s2.url.split('token=')[1]
+pp.orders[id2].b.purchase_units[0].amount.value = '1.00'   // the buyer paid a different amount
+d = await call(on, 'POST', ['card', 'done'], { ref: o2.ref, token: id2 })
+assert.equal(d.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o2.ref).state, 'booked')
+// another order's capture does not pay this one (custom_id is the order's ref)
+const o3 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 2, contact: 'line:q', pay: 'EUR' })
+sql.prepare('UPDATE svc_buy SET pay = json_remove(pay, \'$.pp\') WHERE ref = ?').run(o3.ref)
+d = await call(on, 'POST', ['card', 'done'], { ref: o3.ref, token: 'PP00000001' })
+assert.equal(d.ok, false)
+
+// a baht order: PromptPay slip check reads its baht; a US$ price paid in baht gets PromptPay too
+const o4 = await call(on, 'POST', undefined, { card: 'ai-own', opt: 'ai-own-usd', contact: 'line:r', pay: 'THB' })
+assert.equal(o4.show.cur, 'THB'); assert.equal(o4.pay.thb, o4.show.due); assert.ok(o4.pay.promptpay)
+console.log('card ok')

@@ -65,7 +65,7 @@
    "slipBtn": "Send my slip",
    "checking": "Checking…",
    "paid": "Paid. Order",
-   "abroad": "Abroad: pay {amount} (about {usd}) by PayPal or Wise. Write {ref} in the note.",
+   "abroad": "Send {amount} by PayPal or Wise and write {ref} in the note.",
    "ipaid": "I paid by",
    "claimed": "Thank you. We check the payment, then message you. Order",
    "msgUs": "Message us on LINE",
@@ -88,7 +88,9 @@
     "origin": "Order from hongdam.net.",
     "body": "Something went wrong. Try again.",
     "route": "Something went wrong. Try again.",
-    "tries": "Too many tries for this order today. Send your slip to us on LINE."
+    "tries": "Too many tries for this order today. Send your slip to us on LINE.",
+    "pending": "PayPal is still checking this payment. We message you when it clears.",
+    "paypal": "PayPal could not confirm this payment. Message us on LINE with your order number."
    },
    "know": "Good to know",
    "costs": "What others charge",
@@ -98,7 +100,12 @@
    "rateBetter": "Could be better",
    "rateText": "Your correction (you may leave this empty)",
    "rateSend": "Send",
-   "rateThanks": "Thank you. The team reads every one."
+   "rateThanks": "Thank you. The team reads every one.",
+   "cardH": "Card or PayPal",
+   "cardNote": "On PayPal's page: a card, or your PayPal account. Then you come back here.",
+   "cardBtn": "Pay {amount}",
+   "cardBack": "Checking the payment with PayPal…",
+   "cardCancel": "The card payment was not finished. Message us on LINE to pay another way."
   },
   "th": {
    "title": "หงส์ดำ — เราทำให้ · เชียงราย",
@@ -151,7 +158,7 @@
    "slipBtn": "ส่งสลิป",
    "checking": "กำลังตรวจ…",
    "paid": "ชำระแล้ว ออเดอร์",
-   "abroad": "จากต่างประเทศ: จ่าย {amount} (ประมาณ {usd}) ทาง PayPal หรือ Wise ใส่ {ref} ในช่องหมายเหตุ",
+   "abroad": "โอน {amount} ทาง PayPal หรือ Wise และใส่ {ref} ในช่องหมายเหตุ",
    "ipaid": "จ่ายแล้วทาง",
    "claimed": "ขอบคุณ เราตรวจยอดแล้วทักกลับ ออเดอร์",
    "msgUs": "ทักไลน์",
@@ -174,7 +181,9 @@
     "origin": "สั่งจาก hongdam.net",
     "body": "มีบางอย่างผิดพลาด ลองอีกครั้ง",
     "route": "มีบางอย่างผิดพลาด ลองอีกครั้ง",
-    "tries": "วันนี้ลองกับคำสั่งซื้อนี้หลายครั้งแล้ว ส่งสลิปให้เราทาง LINE"
+    "tries": "วันนี้ลองกับคำสั่งซื้อนี้หลายครั้งแล้ว ส่งสลิปให้เราทาง LINE",
+    "pending": "PayPal ยังตรวจการชำระเงินนี้อยู่ เราจะแจ้งเมื่อเรียบร้อย",
+    "paypal": "PayPal ยืนยันการชำระเงินนี้ไม่ได้ ทักเราทางไลน์พร้อมเลขคำสั่งซื้อ"
    },
    "know": "ข้อมูลน่ารู้",
    "costs": "ค่าใช้จ่ายที่จ่ายให้ผู้อื่น",
@@ -184,7 +193,12 @@
    "rateBetter": "ปรับให้ดีขึ้นได้",
    "rateText": "คำแก้ของคุณ (เว้นว่างได้)",
    "rateSend": "ส่ง",
-   "rateThanks": "ขอบคุณ ทีมอ่านทุกข้อความ"
+   "rateThanks": "ขอบคุณ ทีมอ่านทุกข้อความ",
+   "cardH": "บัตร หรือ PayPal",
+   "cardNote": "ที่หน้าของ PayPal: ใช้บัตร หรือบัญชี PayPal แล้วจะกลับมาที่หน้านี้",
+   "cardBtn": "จ่าย {amount}",
+   "cardBack": "กำลังตรวจการชำระเงินกับ PayPal…",
+   "cardCancel": "ยังจ่ายด้วยบัตรไม่เสร็จ ทักเราทางไลน์เพื่อจ่ายด้วยวิธีอื่น"
   },
   "my": {
    "title": "Hongdam — ကျွန်ုပ်တို့ လုပ်ပေးပါသည် · ချင်းရိုင်",
@@ -237,7 +251,7 @@
    "slipBtn": "စလစ်ပို့ရန်",
    "checking": "စစ်နေသည်…",
    "paid": "ပေးချေပြီး။ အော်ဒါ",
-   "abroad": "နိုင်ငံခြားမှ: PayPal သို့မဟုတ် Wise ဖြင့် {amount} (ခန့်မှန်း {usd}) ပေးပါ။ မှတ်ချက်တွင် {ref} ရေးပါ။",
+   "abroad": "PayPal သို့မဟုတ် Wise ဖြင့် {amount} ပေးပြီး မှတ်ချက်တွင် {ref} ရေးပါ။",
    "ipaid": "ပေးချေပြီး:",
    "claimed": "ကျေးဇူးတင်ပါသည်။ ငွေကို စစ်ပြီး ဆက်သွယ်ပါမည်။ အော်ဒါ",
    "msgUs": "LINE ဖြင့် ဆက်သွယ်ရန်",
@@ -260,7 +274,9 @@
     "origin": "hongdam.net မှ မှာယူပါ။",
     "body": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။",
     "route": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။",
-    "tries": "ဒီနေ့ ဒီအော်ဒါအတွက် အကြိမ်များလွန်းပါပြီ။ စလစ်ကို LINE မှ ပို့ပါ။"
+    "tries": "ဒီနေ့ ဒီအော်ဒါအတွက် အကြိမ်များလွန်းပါပြီ။ စလစ်ကို LINE မှ ပို့ပါ။",
+    "pending": "PayPal က ဤငွေပေးချေမှုကို စစ်ဆေးနေဆဲဖြစ်သည်။ ပြီးလျှင် ကျွန်ုပ်တို့ ဆက်သွယ်ပါမည်။",
+    "paypal": "PayPal က ဤငွေပေးချေမှုကို အတည်မပြုနိုင်ပါ။ အော်ဒါနံပါတ်နှင့်အတူ LINE တွင် ဆက်သွယ်ပါ။"
    },
    "know": "သိထားသင့်သည်",
    "costs": "အခြားသူများ ကောက်ခံသော စျေးနှုန်း",
@@ -270,7 +286,12 @@
    "rateBetter": "ပိုကောင်းနိုင်သည်",
    "rateText": "သင့်ပြင်ဆင်ချက် (ချန်ထားနိုင်သည်)",
    "rateSend": "ပို့ရန်",
-   "rateThanks": "ကျေးဇူးတင်ပါသည်။ အဖွဲ့က အားလုံးကို ဖတ်ပါသည်။"
+   "rateThanks": "ကျေးဇူးတင်ပါသည်။ အဖွဲ့က အားလုံးကို ဖတ်ပါသည်။",
+   "cardH": "ကတ် သို့မဟုတ် PayPal",
+   "cardNote": "PayPal စာမျက်နှာတွင် ကတ် သို့မဟုတ် PayPal အကောင့်ဖြင့် ပေးပါ။ ပြီးလျှင် ဤနေရာသို့ ပြန်ရောက်ပါမည်။",
+   "cardBtn": "{amount} ပေးရန်",
+   "cardBack": "PayPal နှင့် ငွေပေးချေမှုကို စစ်နေသည်…",
+   "cardCancel": "ကတ်ဖြင့် ပေးချေမှု မပြီးသေးပါ။ အခြားနည်းဖြင့် ပေးရန် LINE တွင် ဆက်သွယ်ပါ။"
   },
   "zh": {
    "title": "Hongdam — 我们替您办 · 清莱",
@@ -323,7 +344,7 @@
    "slipBtn": "提交凭证",
    "checking": "核对中…",
    "paid": "已付款。订单",
-   "abroad": "海外付款：用 PayPal 或 Wise 支付 {amount}（约 {usd}），备注里写 {ref}。",
+   "abroad": "用 PayPal 或 Wise 支付 {amount}，备注里写 {ref}。",
    "ipaid": "我已通过以下方式付款：",
    "claimed": "谢谢。我们核对付款后联系您。订单",
    "msgUs": "LINE 联系我们",
@@ -346,7 +367,9 @@
     "origin": "请在 hongdam.net 下单。",
     "body": "出了点问题，请重试。",
     "route": "出了点问题，请重试。",
-    "tries": "今天这笔订单尝试次数过多。请通过 LINE 把凭证发给我们。"
+    "tries": "今天这笔订单尝试次数过多。请通过 LINE 把凭证发给我们。",
+    "pending": "PayPal 仍在核对这笔付款，到账后我们会通知你。",
+    "paypal": "PayPal 无法确认这笔付款。请在 LINE 告诉我们订单号。"
    },
    "know": "须知",
    "costs": "第三方收费参考",
@@ -356,7 +379,12 @@
    "rateBetter": "可以更好",
    "rateText": "您的修改（可留空）",
    "rateSend": "发送",
-   "rateThanks": "谢谢。团队会逐条阅读。"
+   "rateThanks": "谢谢。团队会逐条阅读。",
+   "cardH": "银行卡或 PayPal",
+   "cardNote": "在 PayPal 页面用银行卡或 PayPal 账户付款，然后回到这里。",
+   "cardBtn": "支付 {amount}",
+   "cardBack": "正在向 PayPal 核对付款…",
+   "cardCancel": "银行卡付款没有完成。请在 LINE 联系我们，用其他方式付款。"
   },
   "de": {
    "title": "Hongdam — wir erledigen das für Sie · Chiang Rai",
@@ -409,7 +437,7 @@
    "slipBtn": "Beleg senden",
    "checking": "Wird geprüft…",
    "paid": "Bezahlt. Bestellung",
-   "abroad": "Aus dem Ausland: Zahlen Sie {amount} (etwa {usd}) per PayPal oder Wise. Schreiben Sie {ref} in den Verwendungszweck.",
+   "abroad": "Senden Sie {amount} per PayPal oder Wise und schreiben Sie {ref} in den Verwendungszweck.",
    "ipaid": "Ich habe bezahlt per",
    "claimed": "Danke. Wir prüfen die Zahlung und melden uns dann. Bestellung",
    "msgUs": "Schreiben Sie uns auf LINE",
@@ -432,7 +460,9 @@
     "origin": "Bestellen Sie auf hongdam.net.",
     "body": "Etwas ist schiefgelaufen. Versuchen Sie es noch einmal.",
     "route": "Etwas ist schiefgelaufen. Versuchen Sie es noch einmal.",
-    "tries": "Zu viele Versuche für diese Bestellung heute. Senden Sie uns den Beleg auf LINE."
+    "tries": "Zu viele Versuche für diese Bestellung heute. Senden Sie uns den Beleg auf LINE.",
+    "pending": "PayPal prüft diese Zahlung noch. Wir melden uns, sobald sie eingegangen ist.",
+    "paypal": "PayPal konnte diese Zahlung nicht bestätigen. Schreiben Sie uns auf LINE mit Ihrer Bestellnummer."
    },
    "know": "Gut zu wissen",
    "costs": "Was andere verlangen",
@@ -442,7 +472,12 @@
    "rateBetter": "Geht besser",
    "rateText": "Ihre Korrektur (darf leer bleiben)",
    "rateSend": "Senden",
-   "rateThanks": "Danke. Das Team liest jede Antwort."
+   "rateThanks": "Danke. Das Team liest jede Antwort.",
+   "cardH": "Karte oder PayPal",
+   "cardNote": "Auf der Seite von PayPal: mit Karte oder Ihrem PayPal-Konto. Danach kommen Sie hierher zurück.",
+   "cardBtn": "{amount} zahlen",
+   "cardBack": "Die Zahlung wird bei PayPal geprüft…",
+   "cardCancel": "Die Kartenzahlung wurde nicht abgeschlossen. Schreiben Sie uns auf LINE, um anders zu zahlen."
   }
  },
  "units": {
