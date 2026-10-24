@@ -444,6 +444,7 @@ def front(lang):
     # (her asks 2026-10-24: where "here" is; "everything should be fully self-explanatory")
     out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
     out += '<p class="lede">%s</p>\n' % "<br>".join(E(ui[k]) for k in ("place", "lede") if ui.get(k))
+    out += questions_band(lang)
     out += '<p class="share-row">%s</p>\n' % share_btn(lang)
     if LOOKS["master"]:
         caps = []
@@ -468,7 +469,7 @@ def front(lang):
             db(LOOKS["doors"][c["id"]], play="hover") if LOOKS["doors"].get(c["id"]) else '<span class="e" aria-hidden="true">%s</span>' % c["emoji"],
             E(tr(c["n"], lang)), count.get(c["id"], 0))
         for c in SHOP["cats"]))
-    out += questions_band(lang) + not_here(lang) + '</main>\n' + foot(lang, front=True, group="front")
+    out += not_here(lang) + '</main>\n' + foot(lang, front=True, group="front")
     return out
 
 
