@@ -30,9 +30,9 @@
  * through before it is applied, with those numbers in the notice only). Card payments: functions/_paypal.js, on
  * when PAYPAL_CLIENT_ID and PAYPAL_SECRET are set; the PayPal order's id goes into pay as pp.
  *
- * Bitcoin by Lightning (her ask 2026-10-24): functions/_lightning.js, on while PAY.lightning (or LN_ADDRESS on the
- * Pages project) holds a Lightning Address. The bill goes into pay as ln {pr, hash, msat, sats, exp, verify, btc, at};
- * one bill per order at a time, a new one once it has under two minutes left.
+ * Bitcoin by Lightning (her ask 2026-10-24): functions/_lightning.js, on while PAY.lightning holds a Lightning Address.
+ * The bill goes into pay as ln {pr, hash, msat, sats, exp, verify, btc, at}; one bill per order at a time, kept until
+ * it runs out (CodeRabbit on #91: a bill replaced early could still be paid, unseen).
  */
 import { CARDS } from '../../_shop_data.js'
 import { quote, walkedPrices, payLinks } from '../../_shop.js'
@@ -278,11 +278,10 @@ async function cardDone(ctx, b, now) {
 
 // Bitcoin by Lightning (functions/_lightning.js): a bill from her wallet for the amount the buyer pays, in sats.
 const billOut = (ln) => ({ ok: true, pr: ln.pr, sats: ln.sats, exp: ln.exp, check: !!ln.verify })
-const LEFT = 120   // seconds a kept bill must still have to be shown again
 
 async function lightning(ctx, b, now) {
   const { request, env } = ctx
-  if (!lnOn(env)) return json({ ok: false, why: 'off' }, 503)
+  if (!lnOn()) return json({ ok: false, why: 'off' }, 503)
   const ref = clean(b.ref, 12)
   if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
@@ -291,8 +290,8 @@ async function lightning(ctx, b, now) {
   if (!['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
   const p = payOf(o)
   if (p.ln && p.ln.pr) {
-    if (p.ln.exp - now / 1000 > LEFT) return json(billOut(p.ln))
-    // the kept bill runs out: paid meanwhile? then no new one
+    if (p.ln.exp > now / 1000) return json(billOut(p.ln))
+    // the kept bill ran out: paid before it did? then no new one
     const s = await settled(p.ln).catch(() => ({}))
     if (s.paid) return lnPaid(ctx, o, p, now)
   }
@@ -309,8 +308,11 @@ async function lightning(ctx, b, now) {
     .bind(JSON.stringify(ln), ref, (p.ln && p.ln.pr) || '').run().catch(() => null)
   if (!u) return json({ ok: false, why: 'off' }, 503)
   if (u.meta?.changes === 0) {
-    const again = payOf((await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()) || {})
-    return again.ln && again.ln.exp - now / 1000 > LEFT ? json(billOut(again.ln)) : json({ ok: false, why: 'state' })
+    // another press kept a bill, or the order moved on (CodeRabbit on #91): a bill only for an order still unpaid
+    const o2 = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
+    if (o2 && ['paid', 'started', 'done'].includes(o2.state)) return json({ ok: true, ref, state: o2.state })
+    const again = o2 && ['booked', 'claimed'].includes(o2.state) ? payOf(o2) : {}
+    return again.ln && again.ln.exp > now / 1000 ? json(billOut(again.ln)) : json({ ok: false, why: 'state' })
   }
   return json(billOut(ln))
 }
@@ -357,7 +359,7 @@ async function tracked(ctx, ref, now) {
   let o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
   const p = payOf(o)
-  if (['booked', 'claimed'].includes(o.state) && p.ln && p.ln.verify && lnOn(env)) {
+  if (['booked', 'claimed'].includes(o.state) && p.ln && p.ln.verify && lnOn()) {
     const s = await settled(p.ln).catch(() => ({}))
     if (s.paid) { await lnPaid(ctx, o, p, now); o = (await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()) || o }
   }
@@ -387,7 +389,7 @@ async function moved(ctx, b, now) {
 async function handle(ctx, now) {
   const { request, env, params } = ctx
   const path = [].concat(params.path || [])
-  if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), card: cardOn(env), ln: lnOn(env), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
+  if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), card: cardOn(env), ln: lnOn(), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
   if (request.method === 'GET' && path.length === 1) return tracked(ctx, clean(path[0], 12), now)
   if (request.method !== 'POST') return json({ ok: false, why: 'route' }, 404)
   if (!path.length) {
