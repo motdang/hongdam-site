@@ -307,10 +307,10 @@ def llms():
     if "<!-- BLACKSWAN:START -->" in s:
         a, b = s.index("<!-- BLACKSWAN:START -->"), s.index("<!-- BLACKSWAN:END -->") + len("<!-- BLACKSWAN:END -->")
         s = s[:a] + block + s[b:]
-    else:
-        m = re.search(r"^## Hongdam Studio\n.*?(?=^## |\Z)", s, flags=re.S | re.M)
-        i = m.end() if m else len(s)
-        s = s[:i] + block + "\n\n" + s[i:]
+    else:   # beside the Questions block; tools/build_studio.py rewrites its own section up to the next heading
+        anchor = "<!-- QUESTIONS:START -->" if "<!-- QUESTIONS:START -->" in s else "<!-- SERVICES:START -->"
+        s = s.replace(anchor, block + "\n\n" + anchor, 1) if anchor in s else s.rstrip("\n") + "\n\n" + block + "\n"
+    s = re.sub(r"\n## Black Swan Event\? Hongdam Studio is all ears\n\n- \[Black Swan[^\n]*\n<!-- BLACKSWAN:END -->\n?", "\n", s) if s.count("<!-- BLACKSWAN:END -->") > 1 else s
     open(p, "w", encoding="utf-8").write(s)
 
 
