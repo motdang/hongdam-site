@@ -1,75 +1,70 @@
 {
- "about": "Questions asked on a move to Chiang Mai, 2025-26, without the asker's name (tools/build_questions.py). c: the shop card the question links to. q: the question in each language. ui: the words around them.",
+ "about": "Questions about living in Chiang Mai, each linked to the Hongdam card closest to it (tools/build_questions.py). c: the shop card the question links to. q: the question in each language. ui: the words around them.",
  "ui": {
   "en": {
    "h": "Questions",
    "h1": "Questions",
-   "lede": "Asked on a move to Chiang Mai, 2025–26. Tap one for the service that handles it.",
-   "all": "All {n}",
+   "lede": "Tap one for the service that handles it.",
+   "all": "All questions",
    "pause": "Pause",
    "play": "Play",
    "find": "Find a question",
    "findPh": "sak yant, visa, sex toy…",
-   "of": "{k} of {n}",
    "none": "Nothing like that here yet. Write to us below.",
    "title": "Questions about living in Chiang Mai · Hongdam",
-   "desc": "{n} questions asked on a move to Chiang Mai, from khao soi and sak yant to sex toys and visa runs, each linked to the Hongdam service that handles it."
+   "desc": "Questions about living in Chiang Mai, from khao soi and sak yant to sex toys and visa runs, each linked to the Hongdam service that handles it."
   },
   "th": {
    "h": "คำถาม",
    "h1": "คำถาม",
-   "lede": "จากการย้ายมาอยู่เชียงใหม่ ปี 2568–69 กดคำถามเพื่อดูบริการที่ช่วยได้",
-   "all": "ทั้งหมด {n} ข้อ",
+   "lede": "กดคำถามเพื่อดูบริการที่ช่วยได้",
+   "all": "ดูคำถามทั้งหมด",
    "pause": "หยุด",
    "play": "เล่นต่อ",
    "find": "ค้นหาคำถาม",
    "findPh": "สักยันต์ วีซ่า ข้าวซอย…",
-   "of": "{k} จาก {n} ข้อ",
    "none": "ยังไม่มีคำถามแบบนี้ เขียนถึงเราด้านล่างได้เลย",
    "title": "คำถามเรื่องการใช้ชีวิตในเชียงใหม่ · หงส์ดำ",
-   "desc": "{n} คำถามจากการย้ายมาอยู่เชียงใหม่ ตั้งแต่ข้าวซอยและสักยันต์ ไปจนถึงเซ็กซ์ทอยและการวิ่งวีซ่า แต่ละข้อลิงก์ไปยังบริการของหงส์ดำที่ช่วยได้"
+   "desc": "คำถามเรื่องการใช้ชีวิตในเชียงใหม่ ตั้งแต่ข้าวซอยและสักยันต์ ไปจนถึงเซ็กซ์ทอยและการวิ่งวีซ่า แต่ละข้อลิงก์ไปยังบริการของหงส์ดำที่ช่วยได้"
   },
   "my": {
    "h": "မေးခွန်းများ",
    "h1": "မေးခွန်းများ",
-   "lede": "ချင်းမိုင်သို့ ပြောင်းရွှေ့စဉ် မေးခဲ့သော မေးခွန်းများ၊ 2025–26။ ကူညီပေးနိုင်သော ဝန်ဆောင်မှုကို ကြည့်ရန် မေးခွန်းကို နှိပ်ပါ။",
-   "all": "အားလုံး {n} ခု",
+   "lede": "ကူညီပေးနိုင်သော ဝန်ဆောင်မှုကို ကြည့်ရန် မေးခွန်းကို နှိပ်ပါ။",
+   "all": "မေးခွန်းအားလုံး",
    "pause": "ရပ်ရန်",
    "play": "ဆက်ရန်",
    "find": "မေးခွန်း ရှာရန်",
    "findPh": "ဗီဇာ၊ ခေါက်ဆွဲ၊ sak yant…",
-   "of": "{n} ခုအနက် {k} ခု",
    "none": "ဤကဲ့သို့ မေးခွန်း မရှိသေးပါ။ အောက်တွင် ကျွန်ုပ်တို့ထံ ရေးပို့ပါ။",
    "title": "ချင်းမိုင်တွင် နေထိုင်ခြင်းဆိုင်ရာ မေးခွန်းများ · Hongdam",
-   "desc": "ချင်းမိုင်သို့ ပြောင်းရွှေ့စဉ် မေးခဲ့သော မေးခွန်း {n} ခု၊ တစ်ခုစီသည် ကူညီပေးနိုင်သော Hongdam ဝန်ဆောင်မှုသို့ ချိတ်ထားသည်။"
+   "desc": "ချင်းမိုင်တွင် နေထိုင်ခြင်းဆိုင်ရာ မေးခွန်းများ၊ တစ်ခုစီသည် ကူညီပေးနိုင်သော Hongdam ဝန်ဆောင်မှုသို့ ချိတ်ထားသည်။"
   },
   "zh": {
    "h": "问题",
    "h1": "问题",
-   "lede": "来自一次搬到清迈的经历，2025–26年。点一个问题，看对应的服务。",
-   "all": "全部 {n} 个",
+   "lede": "点一个问题，看对应的服务。",
+   "all": "全部问题",
    "pause": "暂停",
    "play": "继续",
    "find": "查找问题",
    "findPh": "刺符、签证、情趣用品…",
-   "of": "{n} 个中的 {k} 个",
    "none": "这里还没有这样的问题。请在下方给我们留言。",
    "title": "在清迈生活的问题 · Hongdam",
-   "desc": "搬到清迈时问过的 {n} 个问题，从咖喱面、刺符到情趣用品和签证，每一个都链接到 Hongdam 对应的服务。"
+   "desc": "关于在清迈生活的问题，从咖喱面、刺符到情趣用品和签证，每一个都链接到 Hongdam 对应的服务。"
   },
   "de": {
    "h": "Fragen",
    "h1": "Fragen",
-   "lede": "Gestellt bei einem Umzug nach Chiang Mai, 2025–26. Tippe eine an für den passenden Service.",
-   "all": "Alle {n}",
+   "lede": "Tippe eine Frage an, um den passenden Service zu sehen.",
+   "all": "Alle Fragen",
    "pause": "Anhalten",
    "play": "Weiter",
    "find": "Frage suchen",
    "findPh": "Sak Yant, Visum, Sextoy…",
-   "of": "{k} von {n}",
    "none": "So eine Frage gibt es hier noch nicht. Schreib uns unten.",
    "title": "Fragen zum Leben in Chiang Mai · Hongdam",
-   "desc": "{n} Fragen von einem Umzug nach Chiang Mai, von Khao Soi und Sak Yant bis Sextoys und Visa-Runs, jede verlinkt mit dem passenden Hongdam-Service."
+   "desc": "Fragen zum Leben in Chiang Mai, von Khao Soi und Sak Yant bis Sextoys und Visa-Runs, jede verlinkt mit dem passenden Hongdam-Service."
   }
  },
  "qs": [
@@ -111,16 +106,6 @@
     "my": "khao soi ထက် ပိုလန်နာဆန်တဲ့ ဟင်းလျာ ရှိသေးလား",
     "zh": "有比泰北咖喱面更典型的兰纳菜吗？",
     "de": "Gibt es ein typischeres Lanna-Gericht als Khao Soi?"
-   }
-  },
-  {
-   "c": "accident",
-   "q": {
-    "en": "Are Thai police bastards?",
-    "th": "ตำรวจไทยเป็นไอ้พวกสารเลวใช่ไหม",
-    "my": "ထိုင်းရဲတွေက ခွေးမသားတွေလား",
-    "zh": "泰国警察都是王八蛋吗？",
-    "de": "Sind die Polizisten in Thailand Bastarde?"
    }
   },
   {
@@ -231,16 +216,6 @@
     "my": "ထိုင်းမှာ ခိုလှုံခွင့် လျှောက်လို့ရလား",
     "zh": "我能在泰国申请庇护吗？",
     "de": "Kann ich in Thailand Asyl beantragen?"
-   }
-  },
-  {
-   "c": "house-blessing",
-   "q": {
-    "en": "What do monks do for fun?",
-    "th": "พระเขาทำอะไรสนุกๆ กันบ้าง",
-    "my": "ဘုန်းကြီးတွေ ပျော်ဖို့ ဘာလုပ်ကြလဲ",
-    "zh": "僧人平时都怎么找乐子？",
-    "de": "Was machen Mönche zum Spass?"
    }
   },
   {
@@ -464,16 +439,6 @@
    }
   },
   {
-   "c": "interp",
-   "q": {
-    "en": "Which sucks more: jail in the US or in Thailand?",
-    "th": "คุกอเมริกากับคุกไทย อันไหนห่วยกว่ากัน",
-    "my": "အမေရိကန်က ထောင်နဲ့ ထိုင်းက ထောင် ဘယ်ဟာက ပိုဆိုးလဲ",
-    "zh": "坐牢的话，美国和泰国哪个更糟？",
-    "de": "Wo ist der Knast beschissener: in den USA oder in Thailand?"
-   }
-  },
-  {
    "c": "tour-day",
    "q": {
     "en": "Any private hot springs near Chiang Mai where we can go nude?",
@@ -501,16 +466,6 @@
     "my": "sak yant ပုံစံတွေထဲက ကိုယ့်အတွက် မင်္ဂလာရှိမယ့် ပုံတွေ ရှိလား",
     "zh": "有没有对我来说比较吉利的 Sak Yant 刺符图案？",
     "de": "Gibt es Sak-Yant-Motive, die mir Glück bringen würden?"
-   }
-  },
-  {
-   "c": "sak-yant",
-   "q": {
-    "en": "As an AI, do you think it's silly to believe in sak yant?",
-    "th": "ในฐานะที่เป็น AI คิดว่าการเชื่อเรื่องสักยันต์มันไร้สาระไหม",
-    "my": "AI တစ်ခုအနေနဲ့ sak yant ကို ယုံကြည်တာ ရူးကြောင်ကြောင်ဆန်တယ်လို့ ထင်လား",
-    "zh": "作为 AI，你觉得相信 Sak Yant 刺符很傻吗？",
-    "de": "Findest du als KI es albern, an Sak Yant zu glauben?"
    }
   },
   {
@@ -1046,16 +1001,6 @@
   {
    "c": "experience",
    "q": {
-    "en": "What percent of Thai people could kick your ass with Muay Thai?",
-    "th": "คนไทยกี่เปอร์เซ็นต์ที่ใช้มวยไทยเตะก้นเราได้",
-    "my": "ထိုင်းလူ ဘယ်နှစ်ရာခိုင်နှုန်းက ထိုင်းလက်ဝှေ့နဲ့ မင်းကို ရိုက်ချနိုင်သလဲ",
-    "zh": "有百分之几的泰国人能用泰拳把你揍得满地找牙？",
-    "de": "Wie viel Prozent der Thais könnten dir mit Muay Thai in den Arsch treten?"
-   }
-  },
-  {
-   "c": "experience",
-   "q": {
     "en": "I'd like to watch excellent Muay Thai but I struggle with crowds. Thoughts?",
     "th": "อยากดูมวยไทยระดับดีเยี่ยม แต่ทนที่คนเยอะๆ ไม่ค่อยไหว มีไอเดียไหม",
     "my": "ထိုင်းလက်ဝှေ့ကောင်းကောင်း ကြည့်ချင်ပေမဲ့ လူစည်တဲ့နေရာမှာ အဆင်မပြေဘူး။ ဘယ်လိုအကြံပေးမလဲ",
@@ -1091,16 +1036,6 @@
     "my": "ချင်းမိုင်မှာ ပိုလိုကလပ် ဒါမှမဟုတ် မြင်းပြိုင်ပွဲ ရှိလား",
     "zh": "清迈有马球俱乐部或赛马吗？",
     "de": "Gibt es in Chiang Mai einen Polo-Club oder Pferderennen?"
-   }
-  },
-  {
-   "c": "cartoons",
-   "q": {
-    "en": "What is Thai humor like?",
-    "th": "อารมณ์ขันแบบคนไทยเป็นยังไง",
-    "my": "ထိုင်းလူတွေရဲ့ ဟာသက ဘယ်လိုမျိုးလဲ",
-    "zh": "泰国人的幽默是什么样的？",
-    "de": "Wie ist thailändischer Humor so?"
    }
   },
   {
@@ -1214,26 +1149,6 @@
    }
   },
   {
-   "c": "romanise",
-   "q": {
-    "en": "Is Trump 2 Square in Chiang Mai named after Donald Trump?",
-    "th": "Trump 2 Square ในเชียงใหม่ตั้งชื่อตามโดนัลด์ ทรัมป์หรือเปล่า",
-    "my": "ချင်းမိုင်က Trump 2 Square ကို ဒေါ်နယ်ထရမ့်ရဲ့ နာမည်ကို ယူပြီး ပေးထားတာလား",
-    "zh": "清迈的 Trump 2 Square 是以唐纳德·特朗普命名的吗？",
-    "de": "Ist der Trump 2 Square in Chiang Mai nach Donald Trump benannt?"
-   }
-  },
-  {
-   "c": "almanac-widget",
-   "q": {
-    "en": "How many \"years in the future\" is Thailand?",
-    "th": "ไทยอยู่ใน \"อนาคต\" ไปกี่ปี",
-    "my": "ထိုင်းက “နှစ်ဘယ်နှစ်နှစ် အနာဂတ်ကို” ရောက်နေတာလဲ",
-    "zh": "泰国比现在“超前”多少年？",
-    "de": "Wie viele \"Jahre in der Zukunft\" ist Thailand?"
-   }
-  },
-  {
    "c": "date-pick",
    "q": {
     "en": "What is auspicious and inauspicious for New Year in Chiang Mai?",
@@ -1291,16 +1206,6 @@
     "my": "ထိုင်းဒင်္ဂါးပြားတွေ အများကြီးရှိရင် ဘာလုပ်တာ အကောင်းဆုံးလဲ",
     "zh": "手里有一大堆泰国硬币，怎么处理最好？",
     "de": "Was macht man am besten mit vielen thailändischen Münzen?"
-   }
-  },
-  {
-   "c": "merit-dead",
-   "q": {
-    "en": "Did a Thai woman recently wake up on the way to her own funeral?",
-    "th": "มีผู้หญิงไทยฟื้นขึ้นมาระหว่างทางไปงานศพของตัวเองเมื่อไม่นานมานี้จริงไหม",
-    "my": "ထိုင်းအမျိုးသမီးတစ်ယောက်က မကြာသေးခင်က ကိုယ့်အသုဘသွားတဲ့လမ်းမှာ ပြန်နိုးလာတယ်ဆိုတာ ဟုတ်လား",
-    "zh": "最近是不是有个泰国女人在去自己葬礼的路上醒过来了？",
-    "de": "Ist vor Kurzem eine Thailänderin auf dem Weg zu ihrer eigenen Beerdigung aufgewacht?"
    }
   },
   {
@@ -1424,26 +1329,6 @@
    }
   },
   {
-   "c": "street-survey",
-   "q": {
-    "en": "Are there mole people in Chiang Mai, like in Vegas?",
-    "th": "เชียงใหม่มีมนุษย์ตุ่นที่อาศัยอยู่ใต้ดินเหมือนที่ลาสเวกัสไหม",
-    "my": "လပ်စ်ဗေဂတ်စ်မှာလို ချင်းမိုင်မှာလည်း မြေအောက်မှာ နေတဲ့ လူတွေ ရှိလား",
-    "zh": "清迈有像拉斯维加斯那样的“鼹鼠人”吗？",
-    "de": "Gibt es in Chiang Mai Maulwurfsmenschen wie in Vegas?"
-   }
-  },
-  {
-   "c": "widget",
-   "q": {
-    "en": "Does it snow in Thailand?",
-    "th": "ที่ไทยมีหิมะตกไหม",
-    "my": "ထိုင်းမှာ နှင်းကျလား",
-    "zh": "泰国下雪吗？",
-    "de": "Schneit es in Thailand?"
-   }
-  },
-  {
    "c": "clean-air",
    "q": {
     "en": "Is Chiang Mai lovely year-round?",
@@ -1461,46 +1346,6 @@
     "my": "ချင်းမိုင်ရဲ့ မီးခိုးမှုန်ရာသီကနေ ရှောင်ဖို့ Sihanoukville က ကောင်းလား",
     "zh": "清迈的烟霾季，去西哈努克躲一躲好不好？",
     "de": "Ist Sihanoukville ein guter Ort, um der Rauchsaison in Chiang Mai zu entkommen?"
-   }
-  },
-  {
-   "c": "research",
-   "q": {
-    "en": "Should I worry more about rat lungworm or being lured to Myanmar as a digital slave?",
-    "th": "ควรกังวลเรื่องพยาธิปอดหนูมากกว่า หรือเรื่องถูกล่อไปเป็นทาสดิจิทัลที่เมียนมามากกว่ากัน",
-    "my": "rat lungworm ကိုပိုစိုးရိမ်သင့်လား၊ ဒါမှမဟုတ် ဒစ်ဂျစ်တယ်ကျွန်အဖြစ် မြန်မာနိုင်ငံကို ဖြားယောင်းခေါ်ဆောင်ခံရမှာကို ပိုစိုးရိမ်သင့်လား",
-    "zh": "我更该担心广州管圆线虫，还是被骗去缅甸当数字奴隶？",
-    "de": "Sollte ich mir mehr Sorgen um den Rattenlungenwurm machen oder darum, als digitaler Sklave nach Myanmar gelockt zu werden?"
-   }
-  },
-  {
-   "c": "research",
-   "q": {
-    "en": "What are the most dangerous organisms around Chiang Mai, ranked?",
-    "th": "สิ่งมีชีวิตที่อันตรายที่สุดรอบๆ เชียงใหม่มีอะไรบ้าง ช่วยเรียงอันดับให้หน่อย",
-    "my": "ချင်းမိုင်ပတ်ဝန်းကျင်မှာ အန္တရာယ်အရှိဆုံး သက်ရှိတွေက ဘာတွေလဲ၊ အဆင့်လိုက်စီပါ",
-    "zh": "清迈周边最危险的生物有哪些？按危险程度排个名。",
-    "de": "Was sind die gefährlichsten Lebewesen rund um Chiang Mai, als Rangliste?"
-   }
-  },
-  {
-   "c": "tour-day",
-   "q": {
-    "en": "Are there wild tigers in Thailand?",
-    "th": "ในไทยมีเสือโคร่งป่าไหม",
-    "my": "ထိုင်းမှာ တောကျား ရှိလား",
-    "zh": "泰国有野生老虎吗？",
-    "de": "Gibt es in Thailand wilde Tiger?"
-   }
-  },
-  {
-   "c": "research",
-   "q": {
-    "en": "Can anyone in Thailand artificially inseminate a queen bee?",
-    "th": "ในไทยมีใครผสมเทียมผึ้งนางพญาได้ไหม",
-    "my": "ထိုင်းမှာ ပျားဘုရင်မကို လူလုပ်နည်းနဲ့ မျိုးအောင်စေနိုင်တဲ့ လူ ရှိလား",
-    "zh": "在泰国有人会给蜂王做人工授精吗？",
-    "de": "Kann in Thailand jemand eine Bienenkönigin künstlich besamen?"
    }
   },
   {
@@ -1671,26 +1516,6 @@
     "my": "ထိုင်းကျန်းမာရေးအာမခံ ဝယ်သင့်လား",
     "zh": "我该买泰国的健康保险吗？",
     "de": "Sollte ich mir eine thailändische Krankenversicherung zulegen?"
-   }
-  },
-  {
-   "c": "retire",
-   "q": {
-    "en": "Is it possible hypervigilance is making me want to move to Thailand?",
-    "th": "เป็นไปได้ไหมว่าภาวะระแวดระวังภัยเกินปกติทำให้อยากย้ายไปอยู่ไทย",
-    "my": "အမြဲသတိကြီးနေတာကြောင့် ထိုင်းကို ပြောင်းချင်လာတာ ဖြစ်နိုင်လား",
-    "zh": "会不会是过度警觉让我想搬到泰国？",
-    "de": "Kann es sein, dass mich Hypervigilanz dazu bringt, nach Thailand ziehen zu wollen?"
-   }
-  },
-  {
-   "c": "retire",
-   "q": {
-    "en": "Is there anywhere in the world even better for me than Thailand, or did we nail it?",
-    "th": "ในโลกนี้มีที่ไหนเหมาะกับเรายิ่งกว่าไทยอีกไหม หรือว่าเราเลือกได้เป๊ะแล้ว",
-    "my": "ကမ္ဘာပေါ်မှာ ထိုင်းထက်တောင် ကိုယ့်အတွက် ပိုကောင်းတဲ့ နေရာ ရှိသေးလား၊ ဒါမှမဟုတ် ကိုယ်တို့ ကွက်တိရွေးမိပြီလား",
-    "zh": "世界上还有没有比泰国更适合我的地方，还是我们已经选到最好的了？",
-    "de": "Gibt es irgendwo auf der Welt einen noch besseren Ort für mich als Thailand, oder haben wir es perfekt getroffen?"
    }
   },
   {
@@ -1881,36 +1706,6 @@
     "my": "Lampang က အစိုးရကျောင်းတစ်ကျောင်းကို Ban Chiangrai လို့ ဘာကြောင့် ခေါ်တာလဲ",
     "zh": "为什么南邦有一所公立学校叫 Ban Chiangrai？",
     "de": "Warum heisst eine öffentliche Schule in Lampang Ban Chiangrai?"
-   }
-  },
-  {
-   "c": "article",
-   "q": {
-    "en": "Besides Chiang Mai, do any cities still have moats?",
-    "th": "นอกจากเชียงใหม่ ยังมีเมืองไหนที่ยังมีคูเมืองอยู่ไหม",
-    "my": "ချင်းမိုင်ကလွဲရင် ကျုံးရှိသေးတဲ့ မြို့တွေ ရှိလား",
-    "zh": "除了清迈，还有哪些城市保留着护城河？",
-    "de": "Haben ausser Chiang Mai noch andere Städte einen Stadtgraben?"
-   }
-  },
-  {
-   "c": "article",
-   "q": {
-    "en": "Is Thailand considered a \"third world country\"?",
-    "th": "ไทยถือเป็น \"ประเทศโลกที่สาม\" ไหม",
-    "my": "ထိုင်းကို “တတိယကမ္ဘာနိုင်ငံ” လို့ သတ်မှတ်လား",
-    "zh": "泰国算是“第三世界国家”吗？",
-    "de": "Gilt Thailand als \"Dritte-Welt-Land\"?"
-   }
-  },
-  {
-   "c": "interview",
-   "q": {
-    "en": "Does Thailand have rednecks?",
-    "th": "เมืองไทยมีเรดเน็คไหม",
-    "my": "ထိုင်းမှာ “rednecks” တွေ ရှိလား",
-    "zh": "泰国有红脖子吗？",
-    "de": "Gibt es in Thailand Rednecks?"
    }
   },
   {
@@ -2151,16 +1946,6 @@
     "my": "sciatica ပြင်းပြင်းထန်ထန်ဖြစ်နေရင် ချင်းမိုင်မှာ ပျော်စရာ ဘာတွေလုပ်လို့ရလဲ",
     "zh": "严重坐骨神经痛的话，在清迈有什么好玩的？",
     "de": "Was macht in Chiang Mai Spass, wenn man schlimmen Ischias hat?"
-   }
-  },
-  {
-   "c": "research",
-   "q": {
-    "en": "What kinds of ex-cons get picked up for the prison massage program in Chiang Mai?",
-    "th": "อดีตนักโทษประเภทไหนบ้างที่ได้รับคัดเลือกเข้าโครงการนวดของเรือนจำในเชียงใหม่",
-    "my": "ချင်းမိုင်က ထောင်နှိပ်နယ်အစီအစဉ်အတွက် ထောင်ကလွတ်လာသူ ဘယ်လိုလူမျိုးတွေကို ရွေးကြလဲ",
-    "zh": "什么样的出狱人员会被选进清迈的监狱按摩项目？",
-    "de": "Was für Ex-Knackis werden für das Gefängnis-Massageprogramm in Chiang Mai ausgewählt?"
    }
   },
   {

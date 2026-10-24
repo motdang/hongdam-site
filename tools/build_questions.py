@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
-"""Questions: what was asked on a move to Chiang Mai, 2025–26, each linked to the Hongdam card closest to it.
+"""Questions about living in Chiang Mai, each linked to the Hongdam card closest to it.
 
     python3 tools/build_questions.py
 
-Her ask 2026-10-24: her own ChatGPT questions about Chiang Mai and Lanna, her name taken off, spicy and legal ones
-in, as a quiet scroll on hongdam.net with each question linked to the service that answers it. Questions naming
-people or the facts of her cases, and questions about the royal family, were left out.
-
 data/questions.json holds the questions in the five languages and the card each one links to. This writes
-docs/<lang>/questions/ (every question, by category, with a find box), docs/assets/questions-<lang>.json (the
-scroll's full list), the QUESTIONS blocks of docs/sitemap.xml and docs/llms.txt, and then the shop's pages again
-(tools/build_shop.py), whose front pages draw the scroll from band() here. The scroll is docs/assets/questions.css
-and questions.js. A question pointing at a card the shop does not have stops the build.
+docs/<lang>/questions/ (every question in a shuffled order, with a find box), docs/assets/questions-<lang>.json (the
+crawl's list), the QUESTIONS blocks of docs/sitemap.xml and docs/llms.txt, and then the shop's pages again
+(tools/build_shop.py), whose front pages draw the crawl from band() here. The crawl looks and moves like Mot Dang's gold prices: docs/assets/questions.css
+and questions.js; both shuffle again in the reader's browser. A question pointing at a card the shop does not have
+stops the build.
 """
 import hashlib
 import html
 import json
 import os
+import random
 import sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +22,7 @@ DOCS = os.path.join(HERE, "docs")
 DATA = json.load(open(os.path.join(HERE, "data", "questions.json"), encoding="utf-8"))
 E = html.escape
 PATH = "questions/"
-SHOWN = 24     # questions in the front page's own HTML; questions.js swaps in the full list
+SHOWN = 16     # questions in the front page's own HTML; questions.js swaps in the full list
 _A = [os.path.join(DOCS, "assets", "questions." + x) for x in ("css", "js")]
 ASSET_V = hashlib.sha1(b"".join(open(p, "rb").read() for p in _A if os.path.exists(p))).hexdigest()[:8]
 
@@ -54,29 +52,30 @@ def item(B, lang, q, c):
             % (c["cat"], href(B, lang, c), E(q["q"][lang]), E(B.tr(c["n"], lang))))
 
 
-def spread(qs, n):
-    """n questions taken evenly through the list, so the front page's few cover its range."""
-    if len(qs) <= n:
-        return qs
-    return [qs[i * len(qs) // n] for i in range(n)]
+def mixed(qs, n=None):
+    """The questions in a shuffled order (n of them, when n is given). A fixed shuffle, so a build changes the pages only
+    when the questions change; questions.js shuffles again, at random, on every visit."""
+    qs = list(qs)
+    random.Random(len(qs)).shuffle(qs)
+    return qs[:n] if n else qs
 
 
 def band(lang, B):
-    """The scroll on a front page: a short window the questions drift up through, a pause, and the full list."""
+    """The crawl on a front page, like Mot Dang's gold prices: one thin line of questions moving slowly sideways."""
     ui, have = DATA["ui"][lang], cards(B)
     qs = [q for q in DATA["qs"] if q["c"] in have]
     if not qs or lang not in DATA["ui"]:
         return ""
     data = "/assets/questions-%s.json?v=%s" % (lang, list_v(B, lang))
     return ('<link rel="stylesheet" href="/assets/questions.css?v=%s">\n'
-            '<section class="qs-band" aria-labelledby="qs-h"><h2 id="qs-h">%s</h2>\n<p class="lede">%s</p>\n'
-            '<div class="qs-scroll" data-qs="%s" tabindex="0" aria-label="%s"><ul class="qs-list">%s</ul></div>\n'
-            '<p class="qs-ctl"><button type="button" class="btn alt qs-pause" aria-pressed="false" data-pause="%s" data-play="%s" hidden>%s</button>'
-            ' <a href="%s">%s →</a></p></section>\n'
+            '<div class="qs-crawl" data-qs="%s" aria-label="%s"><span class="qs-w"><span class="qs-r">%s</span></span></div>\n'
             '<script defer src="/assets/questions.js?v=%s"></script>\n'
-            % (ASSET_V, E(ui["h"]), E(ui["lede"]), data, E(ui["h"]),
-               "".join(item(B, lang, q, have[q["c"]]) for q in spread(qs, SHOWN)),
-               E(ui["pause"]), E(ui["play"]), E(ui["pause"]), B.url(lang, PATH), E(ui["all"].replace("{n}", str(len(qs)))), ASSET_V))
+            % (ASSET_V, data, E(ui["h"]), "".join(crawl_item(B, lang, q, have[q["c"]]) for q in mixed(qs, SHOWN)), ASSET_V))
+
+
+def crawl_item(B, lang, q, c):
+    return ('<a class="qs-i" href="%s" style="--line:var(--c-%s)"><b>%s</b> <span class="sv">%s</span></a>'
+            % (href(B, lang, c), c["cat"], E(q["q"][lang]), E(B.tr(c["n"], lang))))
 
 
 def full_list(B, lang):
@@ -92,26 +91,20 @@ def list_v(B, lang):
 def page(lang, B, F):
     ui, have = DATA["ui"][lang], cards(B)
     qs = [q for q in DATA["qs"] if q["c"] in have]
-    n = str(len(qs))
     alts = {l: B.pre(l) + PATH for l in B.LANGS}
     langs = [(l, B.url(l, PATH), B.SHOP["lang_names"][l]) for l in B.LANGS]
     sub, sub_lang = (DATA["ui"]["en"]["h1"], "en") if lang == "th" else (DATA["ui"]["th"]["h1"], "th")
-    out = F.head("questions", lang, ui["title"], ui["desc"].replace("{n}", n), B.pre(lang) + PATH, alternates=alts,
+    out = F.head("questions", lang, ui["title"], ui["desc"], B.pre(lang) + PATH, alternates=alts,
                  extra='<link rel="stylesheet" href="/assets/questions.css?v=%s">' % ASSET_V)
     out += F.body("questions") + F.top(lang, langs) + "<main>\n"
     out += F.lead("questions", lang, h1=ui["h1"], sub=sub, sub_lang=sub_lang)
     out += '<p class="lede">%s</p>\n' % E(ui["lede"])
     out += ('<div class="qs-find"><label for="qf" class="field">%s</label><div class="qwrap"><span class="qi">%s</span>'
             '<input id="qf" class="q" type="search" placeholder="%s" autocomplete="off"></div>'
-            '<p class="qs-n" role="status" aria-live="polite" data-of="%s" data-none="%s"></p></div>\n'
-            % (E(ui["find"]), B.db("search", play="loop"), E(ui["findPh"]), E(ui["of"]), E(ui["none"])))
-    for cat in B.SHOP["cats"]:
-        mine = [q for q in qs if have[q["c"]]["cat"] == cat["id"]]
-        if not mine:
-            continue
-        out += ('<section class="kind qs-cat" id="c-%s" style="--line:var(--c-%s)"><h2><a href="%s">%s</a></h2><ul class="qs-page">%s</ul></section>\n'
-                % (cat["id"], cat["id"], B.url(lang, cat["id"] + "/"), E(B.tr(cat["n"], lang)),
-                   "".join(item(B, lang, q, have[q["c"]]) for q in mine)))
+            '<p class="qs-n" role="status" aria-live="polite" data-none="%s"></p></div>\n'
+            % (E(ui["find"]), B.db("search", play="loop"), E(ui["findPh"]), E(ui["none"])))
+    out += ('<section class="kind qs-all"><ul class="qs-page">%s</ul></section>\n'
+            % "".join(item(B, lang, q, have[q["c"]]) for q in mixed(qs)))
     out += B.not_here(lang) + "</main>\n"
     out += '<script defer src="/assets/questions.js?v=%s"></script>\n' % ASSET_V
     return out + B.foot(lang, group="front")    # its glyphs are all in the front page's bundle
@@ -139,12 +132,12 @@ def sitemap(B):
     open(p, "w", encoding="utf-8").write(xml)
 
 
-def llms(B, n):
+def llms(B):
     p = os.path.join(DOCS, "llms.txt")
     s = open(p, encoding="utf-8").read()
     ui = DATA["ui"]["en"]
     block = ("<!-- QUESTIONS:START -->\n## Questions\n\n- [%s](%s%s): %s Also: %s\n<!-- QUESTIONS:END -->" % (
-        ui["h1"], B.SITE, B.url("en", PATH), ui["desc"].replace("{n}", str(n)),
+        ui["h1"], B.SITE, B.url("en", PATH), ui["desc"],
         " · ".join("%s %s%s" % (B.SHOP["lang_names"][l], B.SITE, B.url(l, PATH)) for l in B.LANGS[1:])))
     if "<!-- QUESTIONS:START -->" in s:
         a, b = s.index("<!-- QUESTIONS:START -->"), s.index("<!-- QUESTIONS:END -->") + len("<!-- QUESTIONS:END -->")
@@ -164,8 +157,8 @@ def main():
         B.write(B.pre(lang) + PATH + "index.html", page(lang, B, F))
         B.write("assets/questions-%s.json" % lang, json.dumps(full_list(B, lang), ensure_ascii=False, separators=(",", ":")))
     sitemap(B)
-    llms(B, len([q for q in DATA["qs"] if q["c"] in cards(B)]))
-    print("%d questions · %d pages" % (len(DATA["qs"]), len(B.LANGS)))
+    llms(B)
+    print("questions · %d pages" % len(B.LANGS))
     B.main()    # the front pages carry the scroll
     return 0
 

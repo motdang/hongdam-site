@@ -341,30 +341,30 @@
      "og": "og/questions.jpg",
      "big": "questions",
      "small": "คำถาม · Chiang Mai",
-     "sub": "Asked on a move to Chiang Mai. Each one opens its service."
+     "sub": "Tap one for the service that handles it."
     },
     "th": {
      "og": "og/questions-th.jpg",
      "big": "คำถาม",
-     "small": "ย้ายมาอยู่เชียงใหม่",
+     "small": "เชียงใหม่",
      "sub": "กดคำถามเพื่อดูบริการที่ช่วยได้"
     },
     "my": {
      "og": "og/questions-my.jpg",
      "big": "မေးခွန်းများ",
      "small": "ချင်းမိုင် · Chiang Mai",
-     "sub": "Questions from a move to Chiang Mai."
+     "sub": "ကူညီပေးနိုင်သော ဝန်ဆောင်မှုကို ကြည့်ရန် နှိပ်ပါ။"
     },
     "zh": {
      "og": "og/questions-zh.jpg",
      "big": "问题",
-     "small": "搬到清迈 · Chiang Mai",
+     "small": "清迈 · Chiang Mai",
      "sub": "点一个问题，看对应的服务。"
     },
     "de": {
      "og": "og/questions-de.jpg",
      "big": "fragen",
-     "small": "Umzug nach Chiang Mai",
+     "small": "Chiang Mai",
      "sub": "Jede Frage öffnet ihren Service."
     }
    }
