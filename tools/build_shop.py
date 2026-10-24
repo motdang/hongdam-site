@@ -447,8 +447,16 @@ def front(lang):
             db(LOOKS["doors"][c["id"]], play="hover") if LOOKS["doors"].get(c["id"]) else '<span class="e" aria-hidden="true">%s</span>' % c["emoji"],
             E(tr(c["n"], lang)), count.get(c["id"], 0))
         for c in SHOP["cats"]))
-    out += not_here(lang) + '</main>\n' + foot(lang, front=True, group="front")
+    out += questions_band(lang) + not_here(lang) + '</main>\n' + foot(lang, front=True, group="front")
     return out
+
+
+def questions_band(lang):
+    """The scroll of questions asked on a move to Chiang Mai, each linked to its card (tools/build_questions.py)."""
+    if not os.path.exists(os.path.join(HERE, "data", "questions.json")):
+        return ""
+    import build_questions
+    return build_questions.band(lang, sys.modules[__name__])
 
 
 STUDIO_F = os.path.join(HERE, "data", "studio", "studio.json")
