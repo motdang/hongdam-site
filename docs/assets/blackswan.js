@@ -246,8 +246,8 @@ function swanCanvas() {
     document.body.append(s)
     let n = 0
     const look = () => {
-      const c = $('canvas', s)
-      if (c && c.width > 10) { swanCv = c; return ok(c) }
+      const c = $('canvas', s), ready = window.Dingbats && window.Dingbats.has && window.Dingbats.has('hongsa')
+      if (c && c.width > 10 && ready) { swanCv = c; return ok(c) }
       if (++n > 40) return ok(null)
       setTimeout(look, 60)
     }
