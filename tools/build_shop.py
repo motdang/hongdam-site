@@ -407,8 +407,10 @@ def not_here(lang):
 def front(lang):
     ui = SHOP["ui"][lang]
     out = head(lang, ui["title"], ui["desc"], "")
-    # what Hongdam does, under the tagline: the first sentence of the site's description (her ask 2026-10-24, "everything should be fully self-explanatory")
-    out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n<p class="lede">%s</p>\n' % (E(ui["tagline"]), E(ui["lede"]))
+    # under the tagline: where Hongdam works, then what it does, the first sentence of the site's description
+    # (her asks 2026-10-24: where "here" is; "everything should be fully self-explanatory")
+    out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
+    out += '<p class="lede">%s</p>\n' % "<br>".join(E(ui[k]) for k in ("place", "lede") if ui.get(k))
     if LOOKS["master"]:
         caps = []
         for s in ui["how"]:
