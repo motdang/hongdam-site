@@ -29,6 +29,15 @@ Baht, dollars or euros (her ask 2026-10-24): `docs/assets/cur.js` adds a ฿ / $
 
 Bitcoin by Lightning (her ask 2026-10-24): on while `PAY.lightning` in `functions/_shop.js` holds a Lightning Address (empty turns it off). The Buy page asks `POST /api/buy/ln` for a bill from that address's wallet (LNURL-pay) for the amount due, in sats at the bitcoin price from Kraken (Coinbase as the spare) and the day's exchange rate; the bill is kept on the order in `pay.ln`. When the wallet gives a verify address (LUD-21), `POST /api/buy/ln/check` and the order page mark the order paid once the wallet reports the bill settled with a preimage that hashes to its payment hash; the buyer can also press "I paid by Lightning", and the team checks the wallet. A bill is kept until it runs out. With an address set, `tools/build_shop.py` names Lightning in the pay line of the footer and the Buy form (rebuild the pages). The footer links offrampt.net, crypto to baht in Thailand, and so does the Lightning box. `node tests/ln.test.mjs`.
 
+## Black Swan Event? Hongdam Studio is all ears
+
+Her ask 2026-10-24: a Hongdam Studio minisite on black swans and black swan predictions, with toys and prediction storage, very shareable, in few words with each one explained, for second-language readers and short attention. hongdam.net/studio/black-swan/ (and /th/, /my/, /zh/, /de/): her photo of a bronze hongsa (CC BY 4.0, credit Nan Peacock; the licence is also in the files' EXIF and XMP and in the page's ImageObject JSON-LD), four toys (count white swans until a black one comes; a swan meter, likely × big; 100 days with one huge day; black swan or not, with everyone's votes), a form that saves a prediction with its odds, size and check date, and the list of predictions with votes (will it happen, then after the check month, did it happen). Each prediction has a short page, hongdam.net/swan/<id> (`functions/swan/[id].js`), whose link preview carries the prediction as its title and an odds picture (`docs/og/swan/o0–o4.jpg`); the page also makes a 1080 × 1350 picture of the prediction to share or save.
+
+- Words: `data/blackswan.json` → `python3 tools/build_blackswan.py` (pages, the /swan/<id> template at `studio/black-swan/one/`, sitemap and llms.txt blocks); the Studio front pages carry a link band (`tools/build_studio.py` swan_band).
+- Toys, form, list, picture: `docs/assets/blackswan.js`, `blackswan.css`. Dingbats: group p-blackswan, `DINGBATS_SRC=<doodle-dingbats>/src tools/blackswan_dingbats.sh` (that group only).
+- Link-preview pictures: `node tools/blackswan_cards.mjs`.
+- Storage: `functions/api/swan/` (D1 tables in `migrations/0012_swan.sql`). A prediction naming the Thai royal family, or one Llama Guard flags, waits for the team (a note in #help-desk); `POST /api/swan/<id>/state {"state":"ok"}` with `Bearer TASKS_ADMIN` lists it, `GET /api/swan/held` shows the waiting ones. Three reports from three addresses take one off the list. Six new predictions a day from one address, 400 for the site. `node tests/swan.test.mjs`.
+
 ## Publishing
 
 Live at https://hongdam.net (Cloudflare Pages project `hongdam`). A merge to `main`

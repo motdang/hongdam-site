@@ -1,0 +1,204 @@
+/* Black Swan Event? (hongdam.net/studio/black-swan/ and /swan/<id>): loaded after studio.css. The hero is the Studio's
+   black room; the four toys are cards on the reading floor, each with its board (water, a meter, a chart, a vote) and its
+   buttons inside one card so a phone shows both at once. Words stay in --fg and --mut; --sig marks what to press. */
+
+:root:has(body.bs) {
+  --water: #D5E9F2; --water2: #BCD9E7; --ripple: rgba(14, 14, 16, .10); --board-fg: #0E0E10;
+  --yes: #1B7F4B; --no: #B8321A;
+}
+@media (prefers-color-scheme: dark) { :root:has(body.bs) {
+  --water: #C3DCE7; --water2: #AECDDB; --ripple: rgba(14, 14, 16, .10); --board-fg: #0E0E10;
+  --yes: #5FD497; --no: #FF7A60;
+} }
+
+/* ---------------------------------------------------------------- hero */
+.bs .s-hero h1 { max-width: 10ch }
+.bs .s-hero h1 small { display: block; margin-top: .7rem; font-size: clamp(1.25rem, 4.2vw, 2rem); line-height: 1.2; font-weight: 640;
+  letter-spacing: -.02em; color: var(--sig-t) }
+.bs-gloss { display: grid; gap: .45rem; max-width: 38rem; margin: 1.6rem 0 0; padding: 0 }
+.bs-gloss div { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .55rem }
+.bs-gloss dt { padding: .12rem .55rem; border-radius: 999px; background: var(--on); color: var(--room); font-weight: 760; font-size: .95rem }
+.bs-gloss dt::after { content: " =" }
+.bs-gloss dd { margin: 0; color: var(--on); font-size: 1.02rem }
+.bs-ears { top: 1.4rem }
+.bs-ears .bs-wave { position: absolute; left: -.28em; top: .02em; font-size: .34em; opacity: .9; transform: scaleX(-1) }
+@media (max-width: 30rem) { .bs .s-hero h1 { max-width: 8ch } .bs .s-kicker { padding-right: 5.2rem } }
+.bs-count:empty { display: none }
+.nw { white-space: nowrap }
+
+/* ---------------------------------------------------------------- her photo */
+.bs-photo { margin-top: 2.2rem; margin-bottom: 0 }
+.bs-frame { overflow: hidden; border-radius: 8px; background: #2A2018; cursor: zoom-in }
+.bs-frame img { display: block; width: 100%; height: auto; transform-origin: 54% 48%; transition: transform .6s cubic-bezier(.2, .8, .2, 1) }
+.bs-frame.zoom { cursor: zoom-out } .bs-frame.zoom img { transform: scale(1.75) }
+.bs-photo figcaption { display: grid; gap: .25rem; margin-top: .6rem }
+.bs-cap { font-weight: 720; font-size: 1.08rem }
+.bs-credit { color: var(--mut); font-size: .95rem } .bs-credit a { color: var(--fg) }
+@media (min-width: 56rem) { .bs-photo .bs-frame { max-height: 34rem } .bs-photo img { object-fit: cover; max-height: 34rem } }
+
+/* ---------------------------------------------------------------- toys */
+.bs-toys { display: grid; gap: 1.2rem; margin: 0 }
+@media (min-width: 56rem) { .bs-toys { grid-template-columns: 1fr 1fr } }
+.bs-toy { display: flex; flex-direction: column; gap: .7rem; padding: 1rem 1rem 1.1rem; border: 1px solid var(--faint); border-top: 3px solid var(--sig);
+  border-radius: 6px; background: var(--bg2); scroll-margin-top: 1rem }
+.bs-toy header { display: grid; grid-template-columns: auto 1fr; gap: 0 .7rem; align-items: baseline }
+.bs-toy h3 { margin: 0; font: 740 clamp(1.3rem, 4vw, 1.6rem)/1.15 var(--s-sans); letter-spacing: -.02em }
+:lang(th) .bs-toy h3, :lang(my) .bs-toy h3 { letter-spacing: 0; line-height: 1.35 }
+.bs-line { grid-column: 1 / -1; margin: .25rem 0 0; color: var(--mut); font-size: 1rem }
+.bs-board { position: relative; overflow: hidden; height: clamp(12.5rem, 38svh, 17rem); border-radius: 6px; background: var(--water); color: var(--board-fg);
+  background-image: linear-gradient(180deg, transparent 0 45%, var(--water2) 100%), repeating-linear-gradient(172deg, transparent 0 26px, var(--ripple) 26px 27px);
+  --db-look: ink; touch-action: manipulation; -webkit-user-select: none; user-select: none }
+.bs-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .7rem; margin: 0 }
+.bs-hint { color: var(--mut); font-size: .95rem }
+.bs-tally { position: absolute; left: .8rem; top: .55rem; margin: 0; font-weight: 700; z-index: 2 }
+.bs-n { font: 800 clamp(1.8rem, 7vw, 2.6rem)/1 var(--s-sans); letter-spacing: -.03em; font-variant-numeric: tabular-nums }
+.bs-over { position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column; justify-content: center; gap: .35rem; padding: 1rem 1.1rem;
+  background: rgba(14, 14, 16, .86); color: #F3F2EE }
+.bs-over p { margin: 0; max-width: 32rem }
+.bs-over .bs-big { font: 800 clamp(1.4rem, 5vw, 2rem)/1.15 var(--s-sans); letter-spacing: -.02em }
+.bs-over .bs-why { color: #D7D6D2; font-size: .98rem }
+.bs-over .s-btn { align-self: flex-start; margin-top: .4rem; background: #FF5A3C; color: #0E0E10 }
+
+/* 01 the pond: white swans come; one day a black one */
+.bs-pond { cursor: pointer }
+.bs-pond:focus-visible { outline: 3px solid var(--sig); outline-offset: 2px }
+.bs-swim { position: absolute; inset: 0 }
+.bs-swim .sw { position: absolute; font-size: clamp(2rem, 7vw, 2.6rem); line-height: 0; transform: translate(-50%, -50%) }
+.bs-swim .sw.white doodle-dingbat { color: #F3F2EE; filter: invert(1) hue-rotate(180deg) }
+.bs-swim .sw.black { z-index: 4; font-size: clamp(3.4rem, 13vw, 4.6rem); color: var(--board-fg); transition: left .9s ease, top .9s ease }
+.bs-pond.done .sw.black { left: 80% !important; top: 22% !important; color: #F3F2EE }
+.bs-pond .bs-over .bs-big { padding-right: 4.6rem }
+.bs-swim .sw.old { opacity: .5 }
+
+/* 02 the meter: the swan darkens as the thing gets less likely and bigger */
+.bs-meter { display: grid; place-items: center; height: clamp(9rem, 24svh, 11rem) }
+.bs-pair { position: relative; width: 9rem; height: 5.6rem; margin-bottom: 1.6rem; padding: 0; border: 0; background: none; cursor: pointer; font-size: 4.8rem; line-height: 0 }
+.bs-pair > span { position: absolute; left: 50%; top: 55%; transform: translate(-50%, -50%); transition: opacity .45s ease }
+.bs-pair .bs-w { z-index: 2 }
+.bs-pair .bs-w doodle-dingbat { color: #F3F2EE; filter: invert(1) hue-rotate(180deg) }
+.bs-pair .bs-b { color: var(--board-fg) }
+.bs-res { position: absolute; left: 0; right: 0; bottom: .5rem; margin: 0; text-align: center; font: 800 1.35rem/1.2 var(--s-sans); letter-spacing: -.01em }
+.bs-res.on { color: var(--board-fg) }
+.bs-pair.pop { animation: bs-pop .5s ease }
+@keyframes bs-pop { 40% { transform: scale(1.12) rotate(-4deg) } }
+
+/* chips: radio buttons that look like pills */
+.bs-chips { margin: 0; padding: 0; border: 0; min-width: 0 }
+.bs-chips legend { padding: 0; margin: 0 0 .35rem; font-weight: 700 }
+.bs-chips > div { display: flex; flex-wrap: wrap; gap: .4rem }
+.bs-chips label { position: relative; cursor: pointer }
+.bs-chips input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer }
+.bs-chips span { display: inline-flex; align-items: center; gap: .35rem; min-height: 2.45rem; padding: .3rem .85rem; border-radius: 999px;
+  box-shadow: inset 0 0 0 1.5px var(--fg); font-weight: 680; font-variant-numeric: tabular-nums; white-space: nowrap }
+.bs-chips span doodle-dingbat { font-size: 1.35rem }
+.bs-chips span b { font-weight: inherit }
+.bs-chips input:checked + span { background: var(--fg); color: var(--bg) }
+.bs-chips input:focus-visible + span { outline: 3px solid var(--sig); outline-offset: 2px }
+
+/* 03 a hundred days */
+.bs-chart canvas { position: absolute; inset: 0; width: 100%; height: 100% }
+.bs-mark { position: absolute; z-index: 2; font-size: 2.6rem; line-height: 0; transform: translate(-50%, -110%); color: var(--board-fg) }
+.bs-chart .bs-over { background: rgba(14, 14, 16, .78) }
+
+/* 04 black swan or not */
+.bs-quiz { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .4rem; padding: 1rem; text-align: center }
+.bs-year { margin: 0; font: 800 clamp(2.4rem, 10vw, 3.4rem)/1 var(--s-sans); letter-spacing: -.04em }
+.bs-qg { font-size: 3.8rem; line-height: 0; margin: .9rem 0 .5rem; --db-look: riso }
+.bs-what { margin: 0; max-width: 26rem; font-size: 1.12rem; font-weight: 600 }
+.bs-poll { width: min(100%, 22rem) }
+.bs-bar { height: .7rem; border-radius: 999px; background: var(--ripple); overflow: hidden }
+.bs-bar i { display: block; height: 100%; width: 0; background: var(--board-fg); border-radius: inherit; transition: width .7s cubic-bezier(.2, .8, .2, 1) }
+.bs-pct { margin: .35rem 0 0; font-weight: 750 }
+.bs-note { margin: .25rem 0 0; font-size: .95rem }
+.bs-step { margin-left: auto; color: var(--mut); font-variant-numeric: tabular-nums }
+.bs-ctl .s-btn { min-height: 2.9rem; font-size: 1.05rem }
+.bs-ctl .s-btn[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--sig) }
+
+/* ---------------------------------------------------------------- the form */
+.bs-form { display: grid; gap: .9rem; max-width: 40rem }
+.bs-lab { font-weight: 760; font-size: 1.1rem }
+.bs-tw { position: relative }
+.bs-form textarea, .bs-form input[type=text], .bs-form input:not([type]) { width: 100%; box-sizing: border-box; padding: .75rem .85rem; border: 1.5px solid var(--fg);
+  border-radius: 6px; background: var(--bg2); color: var(--fg); font: 600 1.15rem/1.4 var(--s-sans) }
+.bs-form textarea { min-height: 6.2rem; resize: vertical; padding-bottom: 1.6rem }
+.bs-left { position: absolute; right: .7rem; bottom: .5rem; color: var(--mut); font: 600 .85rem/1 var(--mono) }
+.bs-err { margin: 0; padding: .55rem .8rem; border-left: 4px solid var(--no); background: var(--tint); font-weight: 650 }
+.bs-done { max-width: 40rem; margin-top: 1rem }
+.bs-ok { font: 760 1.3rem/1.3 var(--s-sans) }
+.bs-shot img { display: block; width: min(100%, 22rem); height: auto; border-radius: 8px; box-shadow: 0 18px 40px -22px rgba(0, 0, 0, .6) }
+.bs-acts { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem }
+
+/* ---------------------------------------------------------------- the list */
+.bs-tabs { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1rem }
+.bs-tabs button { min-height: 2.6rem; padding: .3rem .95rem; border: 0; border-radius: 999px; background: none; color: var(--fg);
+  box-shadow: inset 0 0 0 1.5px var(--faint); font: 700 1rem/1 var(--s-sans); cursor: pointer }
+.bs-tabs button[aria-selected="true"] { background: var(--fg); color: var(--bg); box-shadow: none }
+.bs-mine-l { margin: -.4rem 0 .8rem; color: var(--mut) }
+.bs-list { display: grid; gap: .8rem; margin: 0; padding: 0; list-style: none }
+@media (min-width: 56rem) { .bs-list { grid-template-columns: 1fr 1fr } }
+.bs-item { display: grid; gap: .45rem; padding: .9rem 1rem 1rem; border: 1px solid var(--faint); border-top: 3px solid var(--fg); border-radius: 6px; background: var(--bg2) }
+.bs-dot { width: 1.05rem; height: 1.05rem; border-radius: 50%; background: var(--s); box-shadow: 0 0 0 1.5px var(--fg) }
+.bs-none { padding: 1rem; color: var(--mut); border: 1px dashed var(--faint); border-radius: 6px }
+.bs-item.new { animation: bs-in .6s ease }
+@keyframes bs-in { from { opacity: 0; transform: translateY(8px) } }
+.bs-it { display: block; text-decoration: none; font: 720 1.18rem/1.35 var(--s-sans); letter-spacing: -.01em; color: var(--fg); overflow-wrap: anywhere }
+.bs-it:hover { text-decoration: underline }
+.bs-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .2rem .7rem; margin: 0; color: var(--mut); font-size: .95rem }
+.bs-meta b { color: var(--fg) }
+.bs-meta doodle-dingbat { font-size: 1.2rem }
+.bs-vote { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .6rem }
+.bs-vote > span { font-weight: 700 }
+.bs-vote button { min-height: 2.5rem; padding: .25rem .8rem; border: 0; border-radius: 999px; background: none; color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg);
+  font: 700 .98rem/1 var(--s-sans); font-variant-numeric: tabular-nums; cursor: pointer }
+.bs-vote button[aria-pressed="true"] { background: var(--fg); color: var(--bg) }
+.bs-vbar { flex: 1 1 6rem; display: flex; height: .55rem; min-width: 5rem; border-radius: 999px; overflow: hidden; background: var(--tint) }
+.bs-vbar i { display: block; height: 100% } .bs-vbar .y { background: var(--yes) } .bs-vbar .n { background: var(--no) }
+.bs-tools { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin: 0; align-items: center }
+.bs-tools button { min-height: 2.4rem; padding: 0; border: 0; background: none; color: var(--mut); font: 650 .92rem/1 var(--s-sans); cursor: pointer; text-decoration: underline; text-underline-offset: 3px }
+.bs-tools .share { text-decoration: none }
+.bs-item .bs-wait { color: var(--mut); font-style: italic }
+.bs-more { margin-top: .4rem }
+
+/* ---------------------------------------------------------------- words, Studio */
+.bs-words { display: grid; gap: .1rem; max-width: 46rem; margin: 0 }
+.bs-words div { padding: .7rem 0; border-bottom: 1px solid var(--faint) }
+.bs-words dt { font-weight: 780; font-size: 1.08rem }
+.bs-words dd { margin: .15rem 0 0; color: var(--mut) }
+.bs-studio { margin-top: 4rem; padding-block: 2.6rem 2.8rem }
+.bs-studio h2 { margin: 0; color: var(--on); font: 760 clamp(1.5rem, 4.6vw, 2.2rem)/1.15 var(--s-sans); letter-spacing: -.03em; text-transform: none }
+.bs-studio p { color: var(--on-mut); font-size: 1.1rem }
+
+.s-btn.share { gap: .45rem; min-height: 2.75rem; padding: .55rem 1.15rem; background: var(--fg); color: var(--bg); font-weight: 700 }
+.s-room .s-btn.share { background: var(--sig); color: #0E0E10 }
+.s-btn.share:hover span { text-decoration: none }
+
+/* the Predict button that follows the reader on a phone */
+.bs-fab { position: fixed; right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom)); z-index: 20; display: inline-flex; align-items: center; min-height: 3.1rem;
+  padding: .5rem 1.25rem; border-radius: 999px; background: #FF5A3C; color: #0E0E10; font-weight: 800; font-size: 1.08rem; text-decoration: none;
+  box-shadow: 0 10px 28px -10px rgba(0, 0, 0, .55); transition: transform .25s ease, opacity .25s ease }
+.bs-fab.off { opacity: 0; transform: translateY(1rem); pointer-events: none }
+
+/* ---------------------------------------------------------------- one prediction (/swan/<id>) */
+.bs-one .s-hero h1 { max-width: 22ch; font-size: clamp(2rem, 7.5vw, 4.2rem); line-height: 1.08; letter-spacing: -.03em; overflow-wrap: anywhere }
+.bs-one .s-hero h1.long { font-size: clamp(1.6rem, 5.2vw, 2.9rem) }
+.bs-one .bs-card { margin-top: 1.2rem }
+.bs-one .bs-meta { color: var(--on-mut); font-size: 1.05rem } .bs-one .bs-meta b { color: var(--on) }
+.bs-one .bs-by { margin: .3rem 0 0; color: var(--on-mut) }
+.bs-vote1 { margin-top: 1.2rem }
+.bs-vote1 .bs-vote > span { color: var(--on); font-size: 1.15rem }
+.bs-vote1 .bs-vote button { color: var(--on); box-shadow: inset 0 0 0 1.5px var(--on); min-height: 2.9rem; padding-inline: 1.2rem; font-size: 1.08rem }
+.bs-vote1 .bs-vote button[aria-pressed="true"] { background: var(--on); color: var(--room) }
+.bs-one .s-swan { display: none }
+
+/* the band on the Studio front page */
+.bs-band { margin-top: 2.6rem }
+.bs-band-a { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .3rem 1rem; padding: 1rem 1.1rem; border: 1px solid var(--faint);
+  border-left: 6px solid var(--sig); border-radius: 6px; background: var(--bg2); text-decoration: none }
+.bs-band-a b { font-weight: 800; font-size: 1.2rem; margin-right: .35rem }
+.bs-band-s { font-size: 2.6rem; line-height: 0 }
+.bs-band-a:hover { background: var(--tint) }
+
+@media (prefers-reduced-motion: reduce) {
+  .bs-item.new, .bs-pair.pop { animation: none }
+  .bs-bar i, .bs-pair > span, .bs-fab, .bs-frame img { transition: none }
+}
