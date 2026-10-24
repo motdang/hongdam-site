@@ -18,6 +18,7 @@
    "title": "Hongdam — we do it for you · Chiang Rai",
    "desc": "Phone calls in Thai, repairs booked, translation, websites, shipping and more. Pick it, pay, we start.",
    "tagline": "We do it for you. Pick it, pay, we start.",
+   "place": "Chiang Rai and Chiang Mai, Thailand",
    "how": [
     "1 Pick",
     "2 Pay",
@@ -104,6 +105,7 @@
    "title": "หงส์ดำ — เราทำให้ · เชียงราย",
    "desc": "โทรแทน หาช่าง แปลเอกสาร ทำเว็บ ส่งของ และอีกมาก เลือก จ่าย แล้วเราเริ่มงาน",
    "tagline": "เราทำให้ เลือก จ่าย แล้วเราเริ่มงาน",
+   "place": "เชียงรายและเชียงใหม่ ประเทศไทย",
    "how": [
     "1 เลือก",
     "2 จ่าย",
@@ -190,6 +192,7 @@
    "title": "Hongdam — ကျွန်ုပ်တို့ လုပ်ပေးပါသည် · ချင်းရိုင်",
    "desc": "ထိုင်းလို ဖုန်းခေါ်ပေးခြင်း၊ ပြင်ဆင်သူ ရှာပေးခြင်း၊ ဘာသာပြန်၊ ဝက်ဘ်ဆိုက်၊ ပို့ဆောင်ရေးနှင့် အခြား။ ရွေးပါ၊ ပေးချေပါ၊ ကျွန်ုပ်တို့ စတင်ပါမည်။",
    "tagline": "ကျွန်ုပ်တို့ လုပ်ပေးပါသည်။ ရွေးပါ၊ ပေးချေပါ၊ ကျွန်ုပ်တို့ စတင်ပါမည်။",
+   "place": "ချင်းရိုင်နှင့် ချင်းမိုင်၊ ထိုင်းနိုင်ငံ",
    "how": [
     "1 ရွေးပါ",
     "2 ပေးချေပါ",
@@ -276,6 +279,7 @@
    "title": "Hongdam — 我们替您办 · 清莱",
    "desc": "泰语代打电话、找师傅、翻译、网站、发货等。选好、付款，我们就开工。",
    "tagline": "我们替您办。选好、付款，我们就开工。",
+   "place": "泰国清莱和清迈",
    "how": [
     "1 选择",
     "2 付款",
@@ -362,6 +366,7 @@
    "title": "Hongdam — wir erledigen das für Sie · Chiang Rai",
    "desc": "Telefonate auf Thai, Handwerker gebucht, Übersetzungen, Websites, Versand und mehr. Auswählen, bezahlen, wir legen los.",
    "tagline": "Wir erledigen das für Sie. Auswählen, bezahlen, wir legen los.",
+   "place": "Chiang Rai und Chiang Mai, Thailand",
    "how": [
     "1 Auswählen",
     "2 Bezahlen",
@@ -1051,11 +1056,11 @@
     "de": "Ruhestand & Pflege"
    },
    "l": {
-    "en": "Retiring here, care for older people, doctors and hard days.",
-    "th": "เกษียณที่นี่ ดูแลผู้สูงอายุ หาหมอ และวันที่ยาก",
-    "my": "ဤနေရာတွင် အငြိမ်းစား၊ သက်ကြီးစောင့်ရှောက်မှု၊ ဆရာဝန်နှင့် ခက်ခဲသောနေ့များ။",
-    "zh": "在此养老、照护老人、看医生和难关。",
-    "de": "Ruhestand hier, Pflege für Ältere, Ärzte und schwere Tage."
+    "en": "Retiring in Thailand, care for older people, doctors and hard days.",
+    "th": "เกษียณในไทย ดูแลผู้สูงอายุ หาหมอ และวันที่ยาก",
+    "my": "ထိုင်းနိုင်ငံတွင် အငြိမ်းစား၊ သက်ကြီးစောင့်ရှောက်မှု၊ ဆရာဝန်နှင့် ခက်ခဲသောနေ့များ။",
+    "zh": "在泰国养老、照护老人、看医生和难关。",
+    "de": "Ruhestand in Thailand, Pflege für Ältere, Ärzte und schwere Tage."
    },
    "facts": [
     {
@@ -2689,11 +2694,11 @@
    "id": "retire",
    "cat": "care",
    "n": {
-    "en": "Retiring here, handled",
-    "th": "เกษียณที่นี่ เราจัดการให้",
-    "my": "ဤနေရာတွင် အငြိမ်းစားယူခြင်း",
-    "zh": "在此养老，一站办妥",
-    "de": "Ruhestand hier, für Sie organisiert"
+    "en": "Retiring in Thailand, handled",
+    "th": "เกษียณในไทย เราจัดการให้",
+    "my": "ထိုင်းနိုင်ငံတွင် အငြိမ်းစားယူခြင်း",
+    "zh": "在泰国养老，一站办妥",
+    "de": "Ruhestand in Thailand, für Sie organisiert"
    },
    "l": {
     "en": "Visa, bank, phone, housing, hospital and insurance, then one person to call.",
@@ -2832,11 +2837,11 @@
    "id": "death-help",
    "cat": "care",
    "n": {
-    "en": "When someone dies here",
-    "th": "เมื่อมีคนเสียชีวิตที่นี่",
-    "my": "ဤနေရာတွင် တစ်ဦးဦး ကွယ်လွန်သည့်အခါ",
-    "zh": "有人在此离世时",
-    "de": "Wenn hier jemand stirbt"
+    "en": "When someone dies in Thailand",
+    "th": "เมื่อมีคนเสียชีวิตในไทย",
+    "my": "ထိုင်းနိုင်ငံတွင် တစ်ဦးဦး ကွယ်လွန်သည့်အခါ",
+    "zh": "有人在泰国离世时",
+    "de": "Wenn jemand in Thailand stirbt"
    },
    "l": {
     "en": "Registration, embassy papers, cremation or repatriation arranged.",

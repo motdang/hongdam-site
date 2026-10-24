@@ -12,7 +12,7 @@
   "stay": {"show": "rise", "g": ["moon", "firefly", "home", "sleepy"], "say": "Sweet dreams."},
   "tours": {"show": "parade", "g": ["tuk-tuk", "songthaew", "elephant", "chedi"], "say": "Hold on to your hat."},
   "weddings": {"show": "rise", "g": ["lantern", "krathong", "balloon", "heart"], "say": "Make a wish."},
-  "luck": {"show": "rain", "g": ["star", "coin", "crossed-fingers", "dice"], "say": "Nine is the lucky number here: เก้า (kao) sounds like ก้าว, a step forward."},
+  "luck": {"show": "rain", "g": ["star", "coin", "crossed-fingers", "dice"], "say": "Nine is the lucky number in Thailand: เก้า (kao) sounds like ก้าว, a step forward."},
   "merit": {"show": "rise", "g": ["lotus", "candles", "phuang-malai", "chedi"], "say": "สาธุ — sathu, sathu, sathu."},
   "web": {"show": "parade", "g": ["laptop", "server", "rocket", "done"], "say": "It works on my machine."},
   "fix": {"show": "parade", "g": ["ladybug", "wrench", "lock", "check"], "say": "Bug squashed."},

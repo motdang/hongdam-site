@@ -2,7 +2,7 @@
 export const CARDS = {
  "retire": {
   "act": "buy",
-  "en": "Retiring here, handled",
+  "en": "Retiring in Thailand, handled",
   "opts": [
    {
     "id": "retire-setup",
@@ -76,7 +76,7 @@ export const CARDS = {
  },
  "death-help": {
   "act": "buy",
-  "en": "When someone dies here",
+  "en": "When someone dies in Thailand",
   "opts": [
    {
     "id": "death-help",
