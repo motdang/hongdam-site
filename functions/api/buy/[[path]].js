@@ -6,10 +6,12 @@
  *                                                               (addon: true, or a count for an add-on with its own unit;
  *                                                               pay: THB, USD or EUR, the currency the buyer pays in)
  *   POST /api/buy/slip  form: ref, slip                         a PromptPay slip, checked by SlipOK → paid
- *   POST /api/buy/claim {ref, how: paypal|wise}                 the buyer says they paid; the team checks
+ *   POST /api/buy/claim {ref, how: paypal|wise|lightning}       the buyer says they paid; the team checks
  *   POST /api/buy/card {ref, cur}                               card or PayPal on PayPal's page: {url} to send the buyer to
  *                                                               (cur: the pay box's currency, used before 0011 is applied)
  *   POST /api/buy/card/done {ref, token}                        back from PayPal: held (state capturing), captured, checked → paid
+ *   POST /api/buy/ln {ref}                                      a bitcoin Lightning bill for the amount due: {pr, sats, exp, check}
+ *   POST /api/buy/ln/check {ref}                                the bill paid? asks the wallet (check: true only) → paid
  *   GET  /api/buy/HD-xxxxxx                                     the order tracker: card, option and state, nothing else
  *   POST /api/buy/state {ref, state: paid|started|done, force?} the team moves an order on   Authorization: Bearer TASKS_ADMIN
  *                                                               (force: true moves one held while PayPal captures)
@@ -27,6 +29,10 @@
  * and kept in the column pay as JSON {cur, total, due, thb, rate, at} (migrations/0011_pay.sql; orders still go
  * through before it is applied, with those numbers in the notice only). Card payments: functions/_paypal.js, on
  * when PAYPAL_CLIENT_ID and PAYPAL_SECRET are set; the PayPal order's id goes into pay as pp.
+ *
+ * Bitcoin by Lightning (her ask 2026-10-24): functions/_lightning.js, on while PAY.lightning (or LN_ADDRESS on the
+ * Pages project) holds a Lightning Address. The bill goes into pay as ln {pr, hash, msat, sats, exp, verify, btc, at};
+ * one bill per order at a time, a new one once it has under two minutes left.
  */
 import { CARDS } from '../../_shop_data.js'
 import { quote, walkedPrices, payLinks } from '../../_shop.js'
@@ -36,6 +42,7 @@ import { tell } from '../../_tasks.js'
 import { tryOnce, sweep } from '../../_tries.js'
 import { rates, conv, CURS } from '../../_fx.js'
 import { cardOn, startCard, finishCard } from '../../_paypal.js'
+import { lnOn, btcUsd, satsFor, makeBill, settled } from '../../_lightning.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -183,7 +190,7 @@ async function slip(ctx, now) {
 
 async function claim(ctx, b, now) {
   const { request, env } = ctx
-  const ref = clean(b.ref, 12), how = b.how === 'wise' ? 'wise' : 'paypal'
+  const ref = clean(b.ref, 12), how = ['wise', 'lightning'].includes(b.how) ? b.how : 'paypal'
   if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
   if (!(await triesOk(env, 'claim', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
@@ -191,8 +198,11 @@ async function claim(ctx, b, now) {
   if (o.state !== 'booked') return json({ ok: true, ref, state: o.state })
   await env.TASKS.prepare("UPDATE svc_buy SET state = 'claimed', paid_ref = ? WHERE ref = ? AND state = 'booked'").bind(how, ref).run()
   const p = payOf(o)
-  const lines = [`Buyer says paid ${money(p.due, p.cur)} by ${how === 'wise' ? 'Wise' : 'PayPal'}: check the account`, ...lineOf(o)]
-  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${how}: ${money(p.due, p.cur)} · order ${ref}`))
+  const by = { paypal: 'PayPal', wise: 'Wise', lightning: 'Lightning' }[how]
+  const lines = [how === 'lightning' && p.ln
+    ? `Buyer says paid ${p.ln.sats.toLocaleString('en-US')} sats (${money(p.due, p.cur)}) by Lightning: check the wallet for payment hash ${p.ln.hash}`
+    : `Buyer says paid ${money(p.due, p.cur)} by ${by}: check the account`, ...lineOf(o)]
+  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${by}: ${money(p.due, p.cur)} · order ${ref}`))
   return json({ ok: true, ref, state: 'claimed' })
 }
 
@@ -266,15 +276,91 @@ async function cardDone(ctx, b, now) {
   return json({ ok: true, ref, state: 'paid' })
 }
 
+// Bitcoin by Lightning (functions/_lightning.js): a bill from her wallet for the amount the buyer pays, in sats.
+const billOut = (ln) => ({ ok: true, pr: ln.pr, sats: ln.sats, exp: ln.exp, check: !!ln.verify })
+const LEFT = 120   // seconds a kept bill must still have to be shown again
+
+async function lightning(ctx, b, now) {
+  const { request, env } = ctx
+  if (!lnOn(env)) return json({ ok: false, why: 'off' }, 503)
+  const ref = clean(b.ref, 12)
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
+  if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
+  if (['paid', 'started', 'done'].includes(o.state)) return json({ ok: true, ref, state: o.state })
+  if (!['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
+  const p = payOf(o)
+  if (p.ln && p.ln.pr) {
+    if (p.ln.exp - now / 1000 > LEFT) return json(billOut(p.ln))
+    // the kept bill runs out: paid meanwhile? then no new one
+    const s = await settled(p.ln).catch(() => ({}))
+    if (s.paid) return lnPaid(ctx, o, p, now)
+  }
+  if (!(await triesOk(env, 'ln', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
+  const [r, btc] = await Promise.all([rates(env).catch(() => null), btcUsd()])
+  const sats = btc ? satsFor(p.due, p.cur, btc.usd, r && r.rates) : 0
+  if (!sats) return json({ ok: false, why: 'ln' }, 502)
+  let bill
+  try { bill = await makeBill(env, { msat: sats * 1000, comment: `Hongdam ${ref}` }) } catch { bill = { error: 'ln' } }
+  if (bill.error) return json({ ok: false, why: 'ln' }, 502)
+  const ln = { ...bill, sats, btc: Math.round(btc.usd), at: new Date(now).toISOString() }
+  // kept on the order unless another press kept a bill meanwhile; that one is shown instead
+  const u = await env.TASKS.prepare("UPDATE svc_buy SET pay = json_set(coalesce(pay, '{}'), '$.ln', json(?)) WHERE ref = ? AND state IN ('booked','claimed') AND coalesce(json_extract(pay, '$.ln.pr'), '') = ?")
+    .bind(JSON.stringify(ln), ref, (p.ln && p.ln.pr) || '').run().catch(() => null)
+  if (!u) return json({ ok: false, why: 'off' }, 503)
+  if (u.meta?.changes === 0) {
+    const again = payOf((await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()) || {})
+    return again.ln && again.ln.exp - now / 1000 > LEFT ? json(billOut(again.ln)) : json({ ok: false, why: 'state' })
+  }
+  return json(billOut(ln))
+}
+
+async function lnCheck(ctx, b, now) {
+  const { env } = ctx
+  const ref = clean(b.ref, 12)
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
+  if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
+  const shown = o.state === 'capturing' ? 'claimed' : o.state
+  const p = payOf(o)
+  if (!['booked', 'claimed'].includes(o.state) || !p.ln || !p.ln.verify) return json({ ok: true, ref, state: shown })
+  const s = await settled(p.ln).catch(() => ({}))
+  if (s.mismatch) ctx.waitUntil(notify(env, o.card, `Order ${ref}: Lightning answer does not match`, [`The wallet says bill ${p.ln.hash} is paid, with a preimage or bill that does not match it. The order stays unpaid: check the wallet.`, ...lineOf(o)], `Check the Lightning wallet: order ${ref}`))
+  return s.paid ? lnPaid(ctx, o, p, now) : json({ ok: true, ref, state: shown, exp: p.ln.exp })
+}
+
+/** The wallet showed the bill paid: the order is paid, the team told, the price walk counts it. */
+async function lnPaid(ctx, o, p, now) {
+  const { env } = ctx
+  const lines = [`Paid ${p.ln.sats.toLocaleString('en-US')} sats by Lightning (${money(p.due, p.cur)} at US$${p.ln.btc.toLocaleString('en-US')} a bitcoin) · payment hash ${p.ln.hash}`, ...lineOf(o)]
+  const u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state IN ('booked','claimed')").bind('lightning ' + p.ln.hash, o.ref).run()
+  if (u?.meta?.changes === 0) {
+    const now2 = await env.TASKS.prepare('SELECT state, paid_ref FROM svc_buy WHERE ref = ?').bind(o.ref).first()
+    // paid by this bill already (a second page asking), or moved on by the team: nothing to add
+    if (now2 && ['paid', 'started', 'done'].includes(now2.state)) return json({ ok: true, ref: o.ref, state: now2.state })
+    ctx.waitUntil(notify(env, o.card, `Order ${o.ref}: paid by Lightning while ${now2 ? now2.state : 'gone'}`, [`The Lightning bill was paid while the order was ${now2 ? now2.state : 'gone'}, so it is not marked paid. To record it: POST /api/buy/state {ref, state: "paid", force: true}`, ...lines], `Record by hand: Lightning · order ${o.ref}`))
+    return json({ ok: false, why: 'pending' })
+  }
+  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${o.ref} paid`, lines, `Paid: ${money(p.due, p.cur)} by Lightning · order ${o.ref}`), paidDemand(env.TASKS, o, now)]))
+  return json({ ok: true, ref: o.ref, state: 'paid' })
+}
+
 const REF = /^HD-[0-9A-Z]{6}$/
 const STEPS = ['booked', 'claimed', 'paid', 'started', 'done']
 
-// The tracker page reads this: no contact, no note, no money.
-async function tracked(env, ref) {
+// The tracker page reads this: no contact, no note, no money. An unpaid order with a Lightning bill the wallet can
+// be asked about is asked once more, so a buyer who closed the pay page finds it paid here.
+async function tracked(ctx, ref, now) {
+  const { env } = ctx
   if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
   if (!env.TASKS) return json({ ok: false, why: 'off' }, 503)
-  const o = await env.TASKS.prepare('SELECT ref, card, opt, state FROM svc_buy WHERE ref = ?').bind(ref).first()
+  let o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
+  const p = payOf(o)
+  if (['booked', 'claimed'].includes(o.state) && p.ln && p.ln.verify && lnOn(env)) {
+    const s = await settled(p.ln).catch(() => ({}))
+    if (s.paid) { await lnPaid(ctx, o, p, now); o = (await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()) || o }
+  }
   return json({ ok: true, ref: o.ref, card: o.card, opt: o.opt, state: o.state === 'capturing' ? 'claimed' : o.state })
 }
 
@@ -301,8 +387,8 @@ async function moved(ctx, b, now) {
 async function handle(ctx, now) {
   const { request, env, params } = ctx
   const path = [].concat(params.path || [])
-  if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), card: cardOn(env), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
-  if (request.method === 'GET' && path.length === 1) return tracked(env, clean(path[0], 12))
+  if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), card: cardOn(env), ln: lnOn(env), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
+  if (request.method === 'GET' && path.length === 1) return tracked(ctx, clean(path[0], 12), now)
   if (request.method !== 'POST') return json({ ok: false, why: 'route' }, 404)
   if (!path.length) {
     let b
@@ -321,6 +407,11 @@ async function handle(ctx, now) {
     let b
     try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
     return path[1] === 'done' ? cardDone(ctx, b || {}, now) : card(ctx, b || {}, now)
+  }
+  if (path[0] === 'ln') {
+    let b
+    try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
+    return path[1] === 'check' ? lnCheck(ctx, b || {}, now) : lightning(ctx, b || {}, now)
   }
   if (path[0] === 'claim') {
     let b

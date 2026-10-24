@@ -18,6 +18,8 @@ export const PAY = {
   paypal: 'https://www.paypal.me/pfauhaus',
   wise: 'https://wise.com/pay/me/annikahonorahp',
   line: '@964yxgnk',
+  // bitcoin by Lightning (functions/_lightning.js): her wallet's Lightning Address, '' while there is none
+  lightning: '',
 }
 
 export const optionOf = (card, opt) => {
