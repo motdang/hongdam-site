@@ -1405,4 +1405,61 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/questions/"/>
   </url>
   <!-- QUESTIONS:END -->
+  <!-- BLACKSWAN:START -->
+  <url>
+    <loc>https://hongdam.net/studio/black-swan/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/black-swan/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/th/studio/black-swan/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/black-swan/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/my/studio/black-swan/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/black-swan/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/zh/studio/black-swan/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/black-swan/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/de/studio/black-swan/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/black-swan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/black-swan/"/>
+  </url>
+  <!-- BLACKSWAN:END -->
 </urlset>

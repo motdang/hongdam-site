@@ -10,7 +10,7 @@ import crypto from 'node:crypto'
 import { execFileSync } from 'node:child_process'
 
 const ROOT = path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), '..')
-const SRC = path.resolve(ROOT, '../../doodle-dingbats/src')
+const SRC = process.env.DINGBATS_SRC || path.resolve(ROOT, '../../doodle-dingbats/src')   // DINGBATS_SRC: another checkout's src
 const OUT = path.join(ROOT, 'docs/assets/db')
 const ESB = path.resolve(ROOT, '../../anidoodle-motdang/node_modules/.bin/esbuild')
 const SHOP = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/shop.json'), 'utf8'))
@@ -79,6 +79,13 @@ if (fs.existsSync(AN_COLS)) {
   const byId = Object.fromEntries(SHOP.cards.map((c) => [c.id, c]))
   groups['p-asknan'] = [...always, 'chat', 'nib', 'done', ...heads.flatMap((h) => h.line || []),
     ...heads.flatMap((h) => (h.cards || []).filter((id) => byId[id]).flatMap((id) => pic(byId[id])))]
+}
+
+// Black Swan (tools/build_blackswan.py, data/blackswan.json): the ear, the size steps, the past events to vote on
+const BS_F = path.join(ROOT, 'data/blackswan.json')
+if (fs.existsSync(BS_F)) {
+  const bs = JSON.parse(fs.readFileSync(BS_F, 'utf8'))
+  groups['p-blackswan'] = [...always, 'sound', 'sparkle', ...bs.size_glyphs, ...bs.quiz.map((q) => q.g)]
 }
 
 fs.mkdirSync(OUT, { recursive: true })
