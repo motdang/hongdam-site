@@ -90,3 +90,27 @@ assert.equal(d.ok, false)
 const o4 = await call(on, 'POST', undefined, { card: 'ai-own', opt: 'ai-own-usd', contact: 'line:r', pay: 'THB' })
 assert.equal(o4.show.cur, 'THB'); assert.equal(o4.pay.thb, o4.show.due); assert.ok(o4.pay.promptpay)
 console.log('card ok')
+
+// CodeRabbit on #76: an unknown card keeps its own message; a held order (capturing) cannot be paid by a slip or
+// the team meanwhile; a failed capture lets it go; before 0011 the card page charges the pay box's currency.
+let x = await call(on, 'POST', undefined, { card: 'no-such-card', contact: 'line:z' })
+assert.equal(x.why, 'card')
+const o5 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:held', pay: 'EUR' })
+const s5 = await call(on, 'POST', ['card'], { ref: o5.ref })
+sql.prepare("UPDATE svc_buy SET state = 'capturing' WHERE ref = ?").run(o5.ref)
+const adm = { ...on, TASKS_ADMIN: 'k' }
+const mv = await (await onRequest({ env: adm, params: { path: ['state'] }, waitUntil: () => {}, request: new Request('https://hongdam.net/api/buy/state', { method: 'POST', headers: { 'content-type': 'application/json', authorization: 'Bearer k' }, body: JSON.stringify({ ref: o5.ref, state: 'paid' }) }) })).json()
+assert.equal(mv.why, 'busy')
+assert.equal((await call(on, 'GET', [o5.ref])).state, 'claimed')   // the tracker reads it as checking
+x = await call(on, 'POST', ['card', 'done'], { ref: o5.ref, token: s5.url.split('token=')[1] })   // a held order finishes on its return
+assert.equal(x.state, 'paid')
+const o6 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:fail', pay: 'USD' })
+const s6 = await call(on, 'POST', ['card'], { ref: o6.ref })
+pp.orders[s6.url.split('token=')[1]].b.purchase_units[0].amount.value = '2.00'
+x = await call(on, 'POST', ['card', 'done'], { ref: o6.ref, token: s6.url.split('token=')[1] })
+assert.equal(x.ok, false); assert.equal(sql.prepare('SELECT state FROM svc_buy WHERE ref = ?').get(o6.ref).state, 'booked')
+const o7 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1, contact: 'line:old', pay: 'THB' })
+sql.prepare('UPDATE svc_buy SET pay = NULL WHERE ref = ?').run(o7.ref)   // as before 0011
+await call(on, 'POST', ['card'], { ref: o7.ref, cur: 'EUR' })
+assert.equal(Object.values(pp.orders).at(-1).b.purchase_units[0].amount.currency_code, 'EUR')
+console.log('card review fixes ok')
