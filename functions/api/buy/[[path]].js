@@ -208,6 +208,7 @@ async function card(ctx, b, now) {
   if (!['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
   // the currency the pay box showed: kept in pay, or (before 0011) sent by the page and worked out again here
   let p = payOf(o)
+  if (p.pp && p.ppUrl) return json({ ok: true, url: p.ppUrl })   // one PayPal order per order: a second press gets the same link
   if (!o.pay && CURS.includes(b.cur) && b.cur !== o.cur) p = { ...p, ...(await payIn(env, o, b.cur)) }
   const back = `${new URL(request.url).origin}/${o.lang && o.lang !== 'en' ? o.lang + '/' : ''}buy/?ref=${ref}`
   let r
@@ -215,8 +216,15 @@ async function card(ctx, b, now) {
   if (r.error) return json({ ok: false, why: 'paypal' }, 502)
   // no link to PayPal unless this order keeps the PayPal order and the amount it asks for (CodeRabbit on #77)
   let kept = null
-  try { kept = await env.TASKS.prepare("UPDATE svc_buy SET pay = ? WHERE ref = ? AND state IN ('booked','claimed')").bind(JSON.stringify({ ...p, pp: r.id }), ref).run() } catch { /* no column yet */ }
-  if (!kept || kept.meta?.changes === 0) return json({ ok: false, why: 'off' }, 503)
+  try {
+    kept = await env.TASKS.prepare("UPDATE svc_buy SET pay = ? WHERE ref = ? AND state IN ('booked','claimed') AND (pay IS NULL OR json_extract(pay, '$.pp') IS NULL)")
+      .bind(JSON.stringify({ ...p, pp: r.id, ppUrl: r.url }), ref).run()
+  } catch { /* no column yet */ }
+  if (!kept) return json({ ok: false, why: 'off' }, 503)
+  if (kept.meta?.changes === 0) {   // two presses at once: the first one's link; this PayPal order is never shown
+    const again = payOf((await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()) || {})
+    return again.ppUrl ? json({ ok: true, url: again.ppUrl }) : json({ ok: false, why: 'state' })
+  }
   return json({ ok: true, url: r.url })
 }
 
@@ -236,14 +244,14 @@ async function cardDone(ctx, b, now) {
   // Held while PayPal captures (CodeRabbit on #76): a slip or the team cannot pay it meanwhile. A second return (a
   // reload) finds it held and captures again, which PayPal answers for an order it has captured already.
   if (o.state !== 'capturing') {
-    const h = await env.TASKS.prepare("UPDATE svc_buy SET state = 'capturing' WHERE ref = ? AND state IN ('booked','claimed')").bind(ref).run()
+    const h = await env.TASKS.prepare("UPDATE svc_buy SET state = 'capturing', pay = json_set(coalesce(pay, '{}'), '$.from', state) WHERE ref = ? AND state IN ('booked','claimed')").bind(ref).run()
     if (h?.meta?.changes === 0) return json({ ok: false, why: 'state' })
   }
   let r
   try { r = await finishCard(env, id, { ref, amount: p.due, cur: p.cur }) } catch { r = { ok: false, why: 'pending', final: false } }
   if (!r.ok) {
     // let go only when PayPal said no money moved; an unknown result stays held until the buyer's next return or the team
-    if (r.final) await env.TASKS.prepare("UPDATE svc_buy SET state = ? WHERE ref = ? AND state = 'capturing'").bind(o.state === 'claimed' ? 'claimed' : 'booked', ref).run().catch(() => {})
+    if (r.final) await env.TASKS.prepare("UPDATE svc_buy SET state = coalesce(json_extract(pay, '$.from'), 'booked') WHERE ref = ? AND state = 'capturing'").bind(ref).run().catch(() => {})
     if (r.mismatch) ctx.waitUntil(notify(env, o.card, `Order ${ref}: PayPal capture does not match`, [`PayPal captured ${r.capture} for another ref, amount or currency than ${money(p.due, p.cur)}. The order stays held: check PayPal, then refund or mark it paid with force.`, ...lineOf(o)], `Check PayPal: order ${ref}`))
     return json({ ok: false, why: r.why || 'paypal' })
   }
