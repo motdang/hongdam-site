@@ -63,7 +63,7 @@ def head(pid, lang, title, desc, path=None, alternates=None, noindex=False, ld=N
         out.append('<link rel="alternate" hreflang="x-default" href="%s/%s">' % (SITE, alternates.get("en", path)))
     out += ['<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">',
             '<link rel="stylesheet" href="/assets/shop.css?v=%s">' % B.CSS_V,
-            '<link rel="stylesheet" href="/assets/pages.css?v=%s">' % PCSS_V,
+            '<link rel="stylesheet" href="/assets/pages.css?v=%s">' % PCSS_V, B.POND_CSS,
             '<meta name="theme-color" content="#F1EDE4" media="(prefers-color-scheme: light)">',
             '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">',
             '<meta property="og:type" content="website">', '<meta property="og:site_name" content="Hongdam หงส์ดำ">',
@@ -175,9 +175,9 @@ def frame_js():
                       "alt": card_alt(pid), "og": SITE + "/" + card(pid)["og"]}
     links = ('<meta name="color-scheme" content="light dark">'
              '<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">'
-             '<link rel="stylesheet" href="/assets/shop.css?v=%s"><link rel="stylesheet" href="/assets/pages.css?v=%s">'
+             '<link rel="stylesheet" href="/assets/shop.css?v=%s"><link rel="stylesheet" href="/assets/pages.css?v=%s">%s'
              '<meta name="theme-color" content="#F1EDE4" media="(prefers-color-scheme: light)">'
-             '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">' % (B.CSS_V, PCSS_V))
+             '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">' % (B.CSS_V, PCSS_V, B.POND_CSS))
     js = ("// Written by tools/pages.py: the shop's frame for the pages functions draw. Change it there.\n"
           "export const LINKS = %s\nexport const FRAME = %s\n" % (json.dumps(links, ensure_ascii=False), json.dumps(parts, ensure_ascii=False, indent=1)))
     open(os.path.join(HERE, "functions", "_frame.js"), "w", encoding="utf-8").write(js)

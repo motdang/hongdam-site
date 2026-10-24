@@ -93,6 +93,11 @@ CSS_V = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(
 # shop.js gets its own, so a browser holding yesterday's copy (kept 4 h) fetches the new one at once.
 _JS = os.path.join(DOCS, "assets", "shop.js")
 JS_V = hashlib.sha1(open(_JS, "rb").read()).hexdigest()[:8] if os.path.exists(_JS) else "0"
+# the pond (pond.css, pond.js): lily pads and lotus for points and stops, and what moves on the page; loaded after
+# the page's other stylesheets
+_POND = [os.path.join(DOCS, "assets", "pond." + x) for x in ("css", "js")]
+POND_V = hashlib.sha1(b"".join(open(p, "rb").read() for p in _POND if os.path.exists(p))).hexdigest()[:8]
+POND_CSS = '<link rel="stylesheet" href="/assets/pond.css?v=%s">' % POND_V
 
 
 def db(name, cls="", play="still"):
@@ -344,11 +349,11 @@ def head(lang, title, desc, path, noindex=False, og="og/shop/front.jpg"):
     return ('<!doctype html>\n<html lang="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<title>%s</title>\n<meta name="description" content="%s">\n'
             '%s<link rel="canonical" href="%s%s">\n%s<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n'
-            '<link rel="stylesheet" href="/assets/shop.css?v=%s">\n'
+            '<link rel="stylesheet" href="/assets/shop.css?v=%s">\n%s\n'
             '<meta property="og:title" content="%s">\n<meta property="og:description" content="%s">\n<meta property="og:url" content="%s%s">\n'
             '<meta property="og:image" content="%s/%s">\n<meta name="twitter:card" content="summary_large_image">\n%s</head>\n'
             % (lang, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
-               CSS_V, E(title), E(desc), SITE, url(lang, path), SITE, og, seo.tags(globals(), lang, path, title, desc, og, noindex)))
+               CSS_V, POND_CSS, E(title), E(desc), SITE, url(lang, path), SITE, og, seo.tags(globals(), lang, path, title, desc, og, noindex)))
 
 
 def top(lang, path):
@@ -372,8 +377,8 @@ def foot(lang, front=False, group=None, pay=True):
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return rate_box(lang) + ('<footer>%s<p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
             '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · %s: <a href="/llms.txt">llms.txt</a></p></footer>\n'
-            '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n</body>\n</html>\n'
-            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), j, JS_V))
+            '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n<script defer src="/assets/pond.js?v=%s"></script>\n</body>\n</html>\n'
+            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), j, JS_V, POND_V))
 
 
 RATE_LANGS = ("my", "zh", "de")
@@ -423,6 +428,7 @@ def front(lang):
     pop = sorted((c for c in SHOP["cards"] if c.get("pop")), key=lambda c: c["pop"])
     out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
     out += studio_band(lang)
+    out += work_band(lang)
     count = {}
     for c in SHOP["cards"]:
         count[c["cat"]] = count.get(c["cat"], 0) + 1
@@ -454,6 +460,44 @@ def studio_band(lang, cat=None):
             '<a class="btn" href="%s">%s</a></li></ul>\n' % (
                 E(su["name"]), job(["robot", "laptop", "wrench", "lock"], lang, name="job-studio"), E(su["h1"]), E(su["band"]),
                 url(lang, "studio/"), E(SHOP["ui"][lang]["open"])))
+
+
+WORK_F = os.path.join(HERE, "data", "front_work.json")
+WORK = json.load(open(WORK_F, encoding="utf-8")) if os.path.exists(WORK_F) else None
+
+
+def work_band(lang):
+    """Her asks 2026-10-24 (data/front_work.json): the Rotary lice cartoon, a Mot Dang section with a few of its
+    videos, and what people say. The cartoon lives on Google Drive: its poster is a button that shop.js swaps for
+    Drive's player. A quote shows only once it is marked show."""
+    if not WORK or lang not in WORK["ui"]:
+        return ""
+    wu = WORK["ui"][lang]
+    out = '<h2>%s</h2>\n<div class="work">' % E(wu["work"])
+    for g in WORK["groups"]:
+        out += '<section class="wk" id="work-%s" style="--line:var(--c-%s)"><h3>%s</h3><p class="l">%s</p>' % (
+            g["id"], g["line"], E(tr(g["n"], lang)), E(tr(g["l"], lang)))
+        if g.get("drive"):
+            out += ('<button type="button" class="vid drive" data-src="%s" aria-label="%s: %s">'
+                    '<img src="%s" width="%d" height="%d" alt="%s" loading="lazy" decoding="async"><span class="play">%s</span></button>' % (
+                        E(g["drive"]), E(wu["play"]), E(tr(g["n"], lang)), E(g["poster"]), g["w"], g["h"], E(tr(g["alt"], lang)), E(wu["play"])))
+        if g.get("videos"):
+            out += '<ul class="reels">'
+            for v in g["videos"]:
+                name = E(tr(v["n"], lang))
+                out += ('<li><video controls playsinline preload="none" poster="%s" width="%d" height="%d" title="%s"><source src="%s" type="video/mp4"></video>'
+                        '<p><b>%s</b> <span>%s</span></p></li>' % (
+                            E(v["poster"]), v["w"], v["h"], name, E(v["src"]),
+                            '<a href="%s">%s</a>' % (E(v["go"]), name) if v.get("go") else name, E(tr(v["by"], lang))))
+            out += '</ul>'
+        out += '<p class="go"><a href="%s">%s →</a></p></section>' % (E(g["go"]), E(tr(g["goN"], lang)))
+    out += '</div>\n'
+    says = [q for q in WORK.get("quotes", []) if q.get("show")]
+    if says:
+        out += '<h2>%s</h2>\n<ul class="says">%s</ul>\n' % (E(wu["say"]), "".join(
+            '<li><blockquote lang="%s"><p>%s</p></blockquote><p class="who">%s</p></li>' % (q["lang"], E(q["q"]), E(tr(q["who"], lang)))
+            for q in says))
+    return out
 
 
 def category(lang, cat):

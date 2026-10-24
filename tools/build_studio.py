@@ -144,7 +144,7 @@ def head(lang, title, desc, path, alternates=None, og="og/studio/front.jpg", og_
             '<link rel="alternate" type="application/feed+json" title="Hongdam Studio notes" href="/studio/feed.json">',
             '<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">',
             '<link rel="stylesheet" href="/assets/shop.css?v=%s">' % B.CSS_V,
-            '<link rel="stylesheet" href="/assets/studio.css?v=%s">' % V_CSS,
+            '<link rel="stylesheet" href="/assets/studio.css?v=%s">' % V_CSS, B.POND_CSS,
             '<meta name="theme-color" content="#0E0E10">',
             '<meta property="og:type" content="%s">' % kind, '<meta property="og:site_name" content="Hongdam Studio">',
             '<meta property="og:locale" content="%s">' % seo.LOCALE[lang],
