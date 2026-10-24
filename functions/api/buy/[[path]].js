@@ -2,10 +2,13 @@
  * /api/buy — orders from the Buy button on hongdam.net's service cards.
  *
  *   GET  /api/buy                                               {slip: true} when slips are checked by SlipOK
- *   POST /api/buy {card, opt, qty, addon, contact, note, lang}  an order; the price is worked out here
- *                                                               (addon: true, or a count for an add-on with its own unit)
+ *   POST /api/buy {card, opt, qty, addon, contact, note, lang, pay}  an order; the price is worked out here
+ *                                                               (addon: true, or a count for an add-on with its own unit;
+ *                                                               pay: THB, USD or EUR, the currency the buyer pays in)
  *   POST /api/buy/slip  form: ref, slip                         a PromptPay slip, checked by SlipOK → paid
  *   POST /api/buy/claim {ref, how: paypal|wise}                 the buyer says they paid; the team checks
+ *   POST /api/buy/card {ref}                                    card or PayPal on PayPal's page: {url} to send the buyer to
+ *   POST /api/buy/card/done {ref, token}                        back from PayPal: captured and checked → paid
  *   GET  /api/buy/HD-xxxxxx                                     the order tracker: card, option and state, nothing else
  *   POST /api/buy/state {ref, state: paid|started|done}         the team moves an order on   Authorization: Bearer TASKS_ADMIN
  *
@@ -16,6 +19,12 @@
  * localhost. Bindings and secrets on the Pages project: TASKS (D1), RT_LIMIT, DISCORD_TASKS,
  * SLIPOK_KEY + SLIPOK_BRANCH, RESEND_API_KEY + ORDER_TO or CONTACT_TO. Tables migrations/0007_buy.sql and
  * 0010_tries.sql (slip and claim tries).
+ *
+ * The ฿ / $ / € switch (her ask 2026-10-24): the price keeps its own currency in total, due and cur; the amount
+ * the buyer pays in their currency, and the baht for PromptPay, are worked out at today's rate (functions/_fx.js)
+ * and kept in the column pay as JSON {cur, total, due, thb, rate, at} (migrations/0011_pay.sql; orders still go
+ * through before it is applied, with those numbers in the notice only). Card payments: functions/_paypal.js, on
+ * when PAYPAL_CLIENT_ID and PAYPAL_SECRET are set; the PayPal order's id goes into pay as pp.
  */
 import { CARDS } from '../../_shop_data.js'
 import { quote, walkedPrices, payLinks } from '../../_shop.js'
@@ -23,6 +32,8 @@ import { record, whoHash } from '../../_services.js'
 import { checkSlip, slipOn } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
 import { tryOnce, sweep } from '../../_tries.js'
+import { rates, conv, CURS } from '../../_fx.js'
+import { cardOn, startCard, finishCard } from '../../_paypal.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -31,7 +42,15 @@ const clean = (v, max) => (typeof v === 'string' ? v.replace(/\s+/g, ' ').trim()
 const ORIGINS = ['https://hongdam.net', 'https://www.hongdam.net', 'https://hongdam.pages.dev']
 const originOk = (o) => ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(o)
 const LANGS = ['en', 'th', 'my', 'zh', 'de']
-const money = (n, cur) => (cur === 'USD' ? 'US$' : '฿') + Number(n).toLocaleString('en-US')
+const money = (n, cur) => ({ USD: 'US$', EUR: '€' }[cur] || '฿') + Number(n).toLocaleString('en-US')
+/** What the buyer pays: {cur, total, due, thb, rate?, at?, pp?}, the price's own numbers unless the pay column says otherwise. */
+const payOf = (o) => {
+  let j = {}
+  try { j = o.pay ? JSON.parse(o.pay) || {} : {} } catch { /* the price's own */ }
+  return { cur: o.cur, total: o.total, due: o.due, thb: o.cur === 'THB' ? o.due : 0, ...j }
+}
+/** The baht a PromptPay slip must show for this order, or 0 when there is none. */
+const bahtDue = (o) => payOf(o).thb || 0
 const code = (s) => '`' + String(s).replace(/`/g, '') + '`'
 const newRef = () => 'HD-' + crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6, '0').slice(-6)
 
@@ -76,6 +95,8 @@ const notify = (env, card, title, lines, subject, replyTo) => (HERS.has(card)
 const lineOf = (o) => [
   `${CARDS[o.card]?.en || o.card} · ${o.opt}${o.qty > 1 ? ` × ${o.qty}` : ''}${o.addon ? ` + ${CARDS[o.card]?.add?.id || 'add-on'}${CARDS[o.card]?.add?.unit ? ` × ${o.addon} ${CARDS[o.card].add.unit}` : ''}` : ''}`,
   `Total ${money(o.total, o.cur)} · due now ${money(o.due, o.cur)}`,
+  payOf(o).cur !== o.cur && `Buyer pays in ${payOf(o).cur}: ${money(payOf(o).due, payOf(o).cur)} now${payOf(o).total !== payOf(o).due ? ` of ${money(payOf(o).total, payOf(o).cur)}` : ''} (1 ${payOf(o).cur === 'THB' ? o.cur : payOf(o).cur} = ฿${payOf(o).rate}, ${payOf(o).at})`,
+  o.cur !== 'THB' && payOf(o).thb && `PromptPay amount ${money(payOf(o).thb, 'THB')}`,
   `Contact: ${code(o.contact)}${o.lang ? ` · page ${o.lang}` : ''}`,
   o.note && `Note: ${code(o.note)}`,
   GRAB[o.opt] && `Once paid, log it on the Desk: /grab sold ${GRAB[o.opt]} <shop> — the Grab prices walk on those sales`,
@@ -88,7 +109,7 @@ async function order(ctx, b, now) {
   const { request, env } = ctx
   const card = clean(b.card, 40), opt = clean(b.opt, 40)
   const contact = clean(b.contact, 120), note = clean(b.note, 600), lang = LANGS.includes(b.lang) ? b.lang : 'en'
-  if (!CARDS[card] || CARDS[card].act !== 'buy') return json({ ok: false, why: 'card' }, 400)
+  if (!CARDS[card] || CARDS[card].act !== 'buy') return json({ ok: false, why: 'paypal' }, 400)
   if (contact.length < 3) return json({ ok: false, why: 'contact' }, 400)
   const db = env.TASKS
   let walked
@@ -97,23 +118,43 @@ async function order(ctx, b, now) {
   if (q.error) return json({ ok: false, why: q.error }, 400)
   if (!(await allowed(env, request.headers.get('cf-connecting-ip') || '', now))) return json({ ok: false, why: 'limit' }, 429)
   if (!db) return json({ ok: false, why: 'off' }, 503)
-  let ref = ''
-  for (let i = 0; i < 3 && !ref; i++) {
+  const p = await payIn(env, q, CURS.includes(b.pay) ? b.pay : q.cur)
+  const payCol = p.cur !== q.cur || p.thb !== (q.cur === 'THB' ? q.due : 0) ? JSON.stringify(p) : null
+  let ref = '', cols = !!payCol
+  for (let i = 0; i < 4 && !ref; i++) {
     const r = newRef()
     try {
-      await db.prepare('INSERT INTO svc_buy (ref, card, opt, qty, addon, total, due, cur, contact, note, lang, created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)')
-        .bind(r, card, q.opt, q.qty, q.addon || 0, q.total, q.due, q.cur, contact, note || null, lang, new Date(now).toISOString()).run()
+      await db.prepare(`INSERT INTO svc_buy (ref, card, opt, qty, addon, total, due, cur, contact, note, lang, created_at${cols ? ', pay' : ''}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?${cols ? ',?' : ''})`)
+        .bind(r, card, q.opt, q.qty, q.addon || 0, q.total, q.due, q.cur, contact, note || null, lang, new Date(now).toISOString(), ...(cols ? [payCol] : [])).run()
       ref = r
-    } catch { /* a ref taken, or the database busy: try another */ }
+    } catch (e) {
+      if (cols && /pay/.test(String(e && e.message))) cols = false   // 0011 not applied yet: the order without the column
+      /* else a ref taken, or the database busy: try another */
+    }
   }
   if (!ref) return json({ ok: false, why: 'off' }, 500)
-  const o = { ref, card, ...q, contact, note, lang }
+  const o = { ref, card, ...q, contact, note, lang, pay: payCol }
   ctx.waitUntil(Promise.all([
     record(db, q.opt, await whoHash(contact), 'buy', now),
     q.addon && record(db, CARDS[card].add.id, await whoHash(contact), 'buy', now),
-    notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(q.due, q.cur)} due`, contact),
+    notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(p.due, p.cur)} due`, contact),
   ]))
-  return json({ ok: true, ref, total: q.total, due: q.due, cur: q.cur, qty: q.qty, half: q.due < q.total, pay: payLinks(q.cur, q.due) })
+  // a slip is checked against the baht kept in pay: no PromptPay for a US$ price until 0011 is applied
+  const thb = q.cur === 'THB' ? q.due : cols ? p.thb : 0
+  return json({ ok: true, ref, total: q.total, due: q.due, cur: q.cur, qty: q.qty, half: q.due < q.total,
+    show: { cur: p.cur, total: p.total, due: p.due }, pay: payLinks(p.cur, p.due, thb) })
+}
+
+/** The order in the buyer's currency, and its baht for PromptPay, at today's rate. In the price's own currency
+ * (and no PromptPay for a US$ price) while no rate can be read. */
+async function payIn(env, q, cur) {
+  const same = { cur: q.cur, total: q.total, due: q.due, thb: q.cur === 'THB' ? q.due : 0 }
+  if (cur === q.cur && q.cur === 'THB') return same
+  const r = await rates(env).catch(() => null)
+  if (!r) return same
+  const total = conv(q.total, q.cur, cur, r.rates), due = conv(q.due, q.cur, cur, r.rates), thb = conv(q.due, q.cur, 'THB', r.rates)
+  if (!total || !due || !thb) return same
+  return { cur, total, due, thb, rate: r.rates[cur === 'THB' ? q.cur : cur], at: r.at }
 }
 
 async function slip(ctx, now) {
@@ -126,15 +167,16 @@ async function slip(ctx, now) {
   ctx.waitUntil(sweep(env.TASKS, now))
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o) return json({ ok: false, why: 'ref' }, 404)
-  if (o.state === 'paid' || o.state === 'done') return json({ ok: true, ref, amount: o.due })
-  if (o.cur !== 'THB' || !['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
-  const r = await checkSlip(env, form.get('slip'), o.due)
+  if (o.state === 'paid' || o.state === 'done') return json({ ok: true, ref, amount: bahtDue(o) || o.due })
+  const baht = bahtDue(o)
+  if (!baht || !['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
+  const r = await checkSlip(env, form.get('slip'), baht)
   if (!r.ok) return json({ ok: false, why: r.why })
   const u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state IN ('booked','claimed')").bind(r.transRef, ref).run()
   if (u?.meta?.changes === 0) return json({ ok: false, why: 'state' })
-  const lines = [`Paid ${money(o.due, 'THB')} by PromptPay · bank ref ${r.transRef}`, ...lineOf(o)]
-  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(o.due, 'THB')} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
-  return json({ ok: true, ref, amount: o.due })
+  const lines = [`Paid ${money(baht, 'THB')} by PromptPay · bank ref ${r.transRef}`, ...lineOf(o)]
+  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(baht, 'THB')} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
+  return json({ ok: true, ref, amount: baht })
 }
 
 async function claim(ctx, b, now) {
@@ -146,9 +188,52 @@ async function claim(ctx, b, now) {
   if (!o) return json({ ok: false, why: 'ref' }, 404)
   if (o.state !== 'booked') return json({ ok: true, ref, state: o.state })
   await env.TASKS.prepare("UPDATE svc_buy SET state = 'claimed', paid_ref = ? WHERE ref = ? AND state = 'booked'").bind(how, ref).run()
-  const lines = [`Buyer says paid ${money(o.due, o.cur)} by ${how === 'wise' ? 'Wise' : 'PayPal'}: check the account`, ...lineOf(o)]
-  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${how}: ${money(o.due, o.cur)} · order ${ref}`))
+  const p = payOf(o)
+  const lines = [`Buyer says paid ${money(p.due, p.cur)} by ${how === 'wise' ? 'Wise' : 'PayPal'}: check the account`, ...lineOf(o)]
+  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${how}: ${money(p.due, p.cur)} · order ${ref}`))
   return json({ ok: true, ref, state: 'claimed' })
+}
+
+// Card or PayPal (functions/_paypal.js): the amount the buyer pays, in their currency, on PayPal's page.
+async function card(ctx, b, now) {
+  const { request, env } = ctx
+  if (!cardOn(env)) return json({ ok: false, why: 'off' }, 503)
+  const ref = clean(b.ref, 12)
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  if (!(await triesOk(env, 'card', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
+  const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
+  if (!o) return json({ ok: false, why: 'ref' }, 404)
+  if (!['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
+  const p = payOf(o)
+  const back = `${new URL(request.url).origin}/${o.lang && o.lang !== 'en' ? o.lang + '/' : ''}buy/?ref=${ref}`
+  let r
+  try { r = await startCard(env, { ref, amount: p.due, cur: p.cur, what: `${CARDS[o.card]?.en || o.card} · ${ref}`, back }) } catch { r = { error: 'paypal' } }
+  if (r.error) return json({ ok: false, why: 'paypal' }, 502)
+  await env.TASKS.prepare("UPDATE svc_buy SET pay = json_set(coalesce(pay, '{}'), '$.pp', ?) WHERE ref = ?").bind(r.id, ref).run().catch(() => {})
+  return json({ ok: true, url: r.url })
+}
+
+async function cardDone(ctx, b, now) {
+  const { request, env } = ctx
+  if (!cardOn(env)) return json({ ok: false, why: 'off' }, 503)
+  const ref = clean(b.ref, 12), tok = clean(b.token, 40)
+  if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
+  if (!(await triesOk(env, 'cardok', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
+  const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
+  if (!o) return json({ ok: false, why: 'ref' }, 404)
+  if (['paid', 'started', 'done'].includes(o.state)) return json({ ok: true, ref, state: o.state })
+  const p = payOf(o)
+  const id = p.pp || (/^[A-Z0-9]{8,30}$/.test(tok) ? tok : '')   // the custom_id check below ties either to this order
+  if (!id) return json({ ok: false, why: 'paypal' })
+  let r
+  try { r = await finishCard(env, id, { ref, amount: p.due, cur: p.cur }) } catch { r = { ok: false, why: 'paypal' } }
+  if (!r.ok) return json({ ok: false, why: r.why || 'paypal' })
+  const u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state IN ('booked','claimed')").bind('paypal ' + r.capture, ref).run()
+  if (u?.meta?.changes !== 0) {
+    const lines = [`Paid ${money(p.due, p.cur)} by card or PayPal on PayPal's page · capture ${r.capture}`, ...lineOf(o)]
+    ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(p.due, p.cur)} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
+  }
+  return json({ ok: true, ref, state: 'paid' })
 }
 
 const REF = /^HD-[0-9A-Z]{6}$/
@@ -183,7 +268,7 @@ async function moved(ctx, b, now) {
 async function handle(ctx, now) {
   const { request, env, params } = ctx
   const path = [].concat(params.path || [])
-  if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
+  if (request.method === 'GET' && !path.length) return json({ slip: slipOn(env), card: cardOn(env), cards: Object.keys(CARDS).filter((k) => CARDS[k].act === 'buy').length })
   if (request.method === 'GET' && path.length === 1) return tracked(env, clean(path[0], 12))
   if (request.method !== 'POST') return json({ ok: false, why: 'route' }, 404)
   if (!path.length) {
@@ -198,6 +283,11 @@ async function handle(ctx, now) {
     let b
     try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
     return moved(ctx, b || {}, now)
+  }
+  if (path[0] === 'card') {
+    let b
+    try { b = await request.json() } catch { return json({ ok: false, why: 'body' }, 400) }
+    return path[1] === 'done' ? cardDone(ctx, b || {}, now) : card(ctx, b || {}, now)
   }
   if (path[0] === 'claim') {
     let b

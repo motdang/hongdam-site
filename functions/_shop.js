@@ -69,12 +69,12 @@ export async function walkedPrices(db, now) {
     .map((k) => [k.id, { price: k.price ?? k.baht, cur: k.cur || 'THB', ...(k.tail > 0 ? { tail: k.tail, tail_cur: k.tail_unit || 'THB' } : {}) }]))
 }
 
-export function payLinks(cur, due) {
+/** How to pay due in cur: PromptPay in baht when thb is known, PayPal asking for due in cur (THB, USD or EUR), Wise. */
+export function payLinks(cur, due, thb) {
   return {
-    ...(cur === 'THB' ? { promptpay: PAY.promptpay } : {}),
+    ...(thb > 0 ? { promptpay: PAY.promptpay, thb } : {}),
     paypal: `${PAY.paypal}/${due}${cur}`,
     wise: PAY.wise,
     line: PAY.line,
-    usd: cur === 'USD' ? due : Math.max(1, Math.round(due / 33)),
   }
 }

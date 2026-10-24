@@ -269,13 +269,27 @@ h1 { text-transform: lowercase }
 
 /* ---------------------------------------------------------------- money marks
    Her ask 2026-10-24: "baht symbol looks similar enough to dollar symbol, pls add flag dingbat for US and
-   Thailand, make the $ different color." A price element carries class "amt amt-th" (baht) or "amt amt-us" (US$):
-   a small flag before it, and US$ in its own green. Built by tools/build_shop.py and docs/assets/shop.js. */
-:root { --usd: #1E6B43 }
-@media (prefers-color-scheme: dark) { :root { --usd: #7DD3A3 } }
+   Thailand, make the $ different color." A price element carries class "amt amt-th" (baht), "amt amt-us" (US$) or
+   "amt amt-eu" (€, the ฿ / $ / € switch, her ask 2026-10-24): a small flag before it, US$ in its own green, € in blue.
+   Built by tools/build_shop.py; docs/assets/cur.js shows them in the reader's currency. */
+:root { --usd: #1E6B43; --eur: #1F4A94 }
+@media (prefers-color-scheme: dark) { :root { --usd: #7DD3A3; --eur: #A9C1FF } }
 .amt { white-space: nowrap }
-.amt-th::before, .amt-us::before { content: ""; display: inline-block; width: 1.1em; height: .74em; margin-right: .28em; vertical-align: -.04em;
+.amt-th::before, .amt-us::before, .amt-eu::before { content: ""; display: inline-block; width: 1.1em; height: .74em; margin-right: .28em; vertical-align: -.04em;
   border-radius: 1.5px; background: center / 100% 100% no-repeat; box-shadow: 0 0 0 1px color-mix(in oklab, var(--fg) 22%, transparent) }
 .amt-th::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E") }
 .amt-us::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 7' preserveAspectRatio='none'%3E%3Cpath fill='%23FFF' d='M0 0h10v7H0z'/%3E%3Cpath fill='%23B22234' d='M0 0h10v1H0zM0 2h10v1H0zM0 4h10v1H0zM0 6h10v1H0z'/%3E%3Cpath fill='%233C3B6E' d='M0 0h4.4v4H0z'/%3E%3Cg fill='%23FFF'%3E%3Ccircle cx='1.1' cy='1' r='.42'/%3E%3Ccircle cx='3.3' cy='1' r='.42'/%3E%3Ccircle cx='2.2' cy='2' r='.42'/%3E%3Ccircle cx='1.1' cy='3' r='.42'/%3E%3Ccircle cx='3.3' cy='3' r='.42'/%3E%3C/g%3E%3C/svg%3E") }
 .amt-us { color: var(--usd) }
+.amt-eu::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 10' preserveAspectRatio='none'%3E%3Cpath fill='%23039' d='M0 0h15v10H0z'/%3E%3Cg fill='%23FC0'%3E%3Ccircle cx='7.5' cy='1.9' r='.55'/%3E%3Ccircle cx='9.05' cy='2.32' r='.55'/%3E%3Ccircle cx='10.18' cy='3.45' r='.55'/%3E%3Ccircle cx='10.6' cy='5' r='.55'/%3E%3Ccircle cx='10.18' cy='6.55' r='.55'/%3E%3Ccircle cx='9.05' cy='7.68' r='.55'/%3E%3Ccircle cx='7.5' cy='8.1' r='.55'/%3E%3Ccircle cx='5.95' cy='7.68' r='.55'/%3E%3Ccircle cx='4.82' cy='6.55' r='.55'/%3E%3Ccircle cx='4.4' cy='5' r='.55'/%3E%3Ccircle cx='4.82' cy='3.45' r='.55'/%3E%3Ccircle cx='5.95' cy='2.32' r='.55'/%3E%3C/g%3E%3C/svg%3E") }
+.amt-eu { color: var(--eur) }
+/* on a button the price takes the button's colour; the flag still tells the currency */
+.btn .amt, button .amt { color: inherit }
+/* The switch: cur.js puts it at the end of the language row, pushed right; a flag and a sign on each button, the pick
+   filled like the language. On a wide screen that row goes under the name and LINE. */
+.curs { display: inline-flex; margin-left: auto; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); overflow: hidden }
+.curs[hidden] { display: none }
+.curs button { display: inline-flex; align-items: center; min-height: 2.4rem; min-width: 2.75rem; padding: .3rem .6rem; border: 0; background: none;
+  color: inherit; font: 700 .98rem/1 var(--sys); cursor: pointer }
+.curs button i { font-size: .85rem }
+.curs button[aria-pressed="true"] { background: var(--fg); color: var(--bg) }
+@media (min-width: 40rem) { .langs:has(> .curs) { order: 3; width: 100% } }

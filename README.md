@@ -25,6 +25,8 @@ rows in `svc_order` (D1 hongdam-tasks, `migrations/0006_services.sql`): the page
 Hongdam Desk bot (hongdam-desk/grab.py), which posts its price to `/api/services/price`.
 `node tests/services.test.mjs`; `node tools/services_sim.mjs` runs a year under four demands.
 
+Baht, dollars or euros (her ask 2026-10-24): `docs/assets/cur.js` adds a ฿ / $ / € switch to the top bar and shows every `.amt` price in the reader's currency, rounded up to a whole unit, at the day's rate from `/api/fx` (European Central Bank reference rates through frankfurter.dev, open.er-api.com as the spare; `functions/_fx.js`). A first visit opens in baht in Thailand and its neighbours, euros in Europe, dollars elsewhere. `/api/buy` takes `pay` (THB, USD or EUR) and asks for the same converted amount; the column `svc_buy.pay` (`migrations/0011_pay.sql`) keeps it and the baht for PromptPay. Card or PayPal on PayPal's own page (`functions/_paypal.js`, `POST /api/buy/card`) is on once `PAYPAL_CLIENT_ID` and `PAYPAL_SECRET` are set on the Pages project; a payment counts only when PayPal reports it COMPLETED for the order's ref, amount and currency. `node tests/fx.test.mjs`, `node tests/card.test.mjs`.
+
 ## Publishing
 
 Live at https://hongdam.net (Cloudflare Pages project `hongdam`). A merge to `main`
