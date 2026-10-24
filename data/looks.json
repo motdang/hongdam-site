@@ -1004,7 +1004,7 @@
    "de": "Ärger"
   },
   "smile": {
-   "en": "Sorted",
+   "en": "Solved",
    "th": "เคลียร์แล้ว",
    "my": "အဆင်ပြေ",
    "zh": "解决",
@@ -1550,7 +1550,7 @@
    "de": "Gesegnet"
   },
   "spider": {
-   "en": "Crawler",
+   "en": "Web bot",
    "th": "ตัวเก็บข้อมูล",
    "my": "ဒေတာစုစက်",
    "zh": "爬虫",
@@ -1627,7 +1627,7 @@
    "de": "Hallo"
   },
   "wifi": {
-   "en": "Offline too",
+   "en": "Works offline",
    "th": "ใช้ได้แม้ไม่มีเน็ต",
    "my": "အင်တာနက်မရှိလည်း",
    "zh": "离线可用",
@@ -1646,14 +1646,14 @@
    "tOrdered": "Ordered",
    "tPaid": "Paid",
    "tChecking": "Checking payment",
-   "tStarted": "Started",
+   "tStarted": "Work started",
    "tDone": "Done",
    "trackH": "Your order",
-   "trackKeep": "Keep this page: it shows where your order is.",
-   "ladder": "Prices move with demand on the 1st of each month.",
+   "trackKeep": "Save the link to this page. It shows the status of your order.",
+   "ladder": "On the 1st of each month, prices go up if many people bought and down if few did.",
    "priceNow": "Price now",
-   "lo": "low",
-   "hi": "high",
+   "lo": "lowest",
+   "hi": "highest",
    "slotsOpen": "{n} places left this month"
   },
   "th": {
@@ -1664,7 +1664,7 @@
    "tDone": "เสร็จ",
    "trackH": "คำสั่งซื้อของคุณ",
    "trackKeep": "เก็บหน้านี้ไว้ จะเห็นว่างานถึงไหนแล้ว",
-   "ladder": "ราคาขึ้นลงตามความต้องการ ทุกวันที่ 1 ของเดือน",
+   "ladder": "ทุกวันที่ 1 ของเดือน ถ้ามีคนซื้อมาก ราคาขึ้น ถ้ามีคนซื้อน้อย ราคาลง",
    "priceNow": "ราคาตอนนี้",
    "lo": "ต่ำ",
    "hi": "สูง",
@@ -1692,7 +1692,7 @@
    "tDone": "完成",
    "trackH": "您的订单",
    "trackKeep": "请保存此页：可以看到订单进度。",
-   "ladder": "价格每月1日按需求调整。",
+   "ladder": "每月1日调价：买的人多就涨，买的人少就降。",
    "priceNow": "当前价格",
    "lo": "低",
    "hi": "高",
@@ -1706,7 +1706,7 @@
    "tDone": "Fertig",
    "trackH": "Ihre Bestellung",
    "trackKeep": "Behalten Sie diese Seite: Sie zeigt, wo Ihre Bestellung steht.",
-   "ladder": "Die Preise folgen der Nachfrage und ändern sich am 1. jedes Monats.",
+   "ladder": "Am 1. jedes Monats steigen die Preise, wenn viele gekauft haben, und sinken, wenn wenige gekauft haben.",
    "priceNow": "Preis jetzt",
    "lo": "niedrig",
    "hi": "hoch",

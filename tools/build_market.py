@@ -59,8 +59,8 @@ def row(p):
         <div><dt>Licence</dt><dd>{e(p['licence'])}</dd></div>
         <div><dt>Price</dt><dd>{price(p)}</dd></div>
       </dl>
-      <p class="acts"><a class="btn" href="/redteam/?pack={e(p['id'])}">Run</a>
-        <a href="/market/{e(p['id'])}.json" download>JSON</a></p>
+      <p class="acts"><a class="btn" href="/redteam/?pack={e(p['id'])}">Run this pack</a>
+        <a href="/market/{e(p['id'])}.json" download>Download JSON</a></p>
     </article>"""
 
 

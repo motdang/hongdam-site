@@ -8,7 +8,7 @@
 <meta name="description" content="A live map, the road you are on, the distance by road from Thai Road Assist, and a help card in Thai, English and Hindi to show the mechanic. Made for Sanya.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Stuck on the road, in any language">
-<meta property="og:description" content="A live map, a help card in Thai, English and Hindi, and how Mot Dang, TRA and Hongdam fit together. Made for Sanya.">
+<meta property="og:description" content="A live map, a help card in Thai, English and Hindi, and how Mot Dang, TRA and Hongdam work together. Made for Sanya.">
 <meta property="og:url" content="https://hongdam.net/for/sanya/">
 <meta property="og:image" content="https://hongdam.net/for/sanya/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Card: Stuck on the road, in any language, made for Sanya, Hongdam">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image:alt" content="Card: Stuck on the road, in any language, made for Sanya, Hongdam">
@@ -447,52 +447,52 @@ const T={
  kick:['A demo for Sanya','เดโมสำหรับ Sanya'],
  h1a:['Stuck on the road,','รถเสียกลางทาง'],
  h1b:['in any language.','ขอความช่วยเหลือได้ทุกภาษา'],
- src_demo:['Demo point · Superhighway','จุดตัวอย่าง · ซุปเปอร์ไฮเวย์'],
+ src_demo:['Sample place · Super Highway','จุดตัวอย่าง · ซุปเปอร์ไฮเวย์'],
  src_gps:['Your location','ตำแหน่งของคุณ'],
- src_tap:['Pin you dropped','หมุดที่คุณปัก'],
- src_find:['Looking for you…','กำลังหาตำแหน่งของคุณ…'],
+ src_tap:['Pin you placed','หมุดที่คุณปัก'],
+ src_find:['Finding your location…','กำลังหาตำแหน่งของคุณ…'],
  km:['km','กม.'], mnu:['min','นาที'], hr:['h','ชม.'],
- est:['By road from TRA, San Kamphaeng. OSRM estimate, no live traffic.','ทางรถจาก TRA สันกำแพง ประมาณการโดย OSRM ไม่รวมจราจรจริง'],
+ est:['By road from Thai Road Assist (TRA), San Kamphaeng, Chiang Mai. Estimate from OSRM (a free route calculator), no live traffic.','ทางรถจาก Thai Road Assist (TRA) สันกำแพง เชียงใหม่ ประมาณการโดย OSRM (เครื่องคำนวณเส้นทางฟรี) ไม่รวมจราจรจริง'],
  help:['I need help','ขอความช่วยเหลือ'],
  locate:['Use my location','ใช้ตำแหน่งของฉัน'],
  tapmap:['Tap the map to move the pin.','แตะแผนที่เพื่อย้ายหมุด'],
- denied:['Location is off. The demo point stays.','ไม่ได้เปิดตำแหน่ง ใช้จุดตัวอย่างต่อไป'],
+ denied:['Location is off. The sample place stays.','ไม่ได้เปิดตำแหน่ง ใช้จุดตัวอย่างต่อไป'],
  route:['Route','ทางหลวง'],
  near:['Near','ใกล้'],
- noroad:['No road name in the map here','ไม่มีชื่อถนนในแผนที่ตรงนี้'],
+ noroad:['No road name in the map at this pin','ไม่มีชื่อถนนในแผนที่ที่หมุดนี้'],
  noname:['Road name not loaded','ยังโหลดชื่อถนนไม่ได้'],
  pop_you:['You are here','คุณอยู่ที่นี่'],
  pop_tra:['TRA, San Kamphaeng','TRA สันกำแพง'],
- pop_tra2:['Map point: Serene Park, Ton Pao. The office sits inside the estate; the pin is approximate.','จุดบนแผนที่: ซีรีนพาร์ค ต้นเปา สำนักงานอยู่ในหมู่บ้าน หมุดเป็นตำแหน่งโดยประมาณ'],
+ pop_tra2:['Map point: Serene Park, Ton Pao. The office is inside the housing estate (a group of homes); the pin is approximate.','จุดบนแผนที่: ซีรีนพาร์ค ต้นเปา สำนักงานอยู่ในหมู่บ้าน หมุดเป็นตำแหน่งโดยประมาณ'],
  pop_mech:['If a mechanic left TRA now: about','ถ้าช่างออกจาก TRA ตอนนี้ ประมาณ'],
  moved:['Pin moved.','ย้ายหมุดแล้ว'],
  k2:['2 · Tap what is wrong','2 · แตะที่เกิดปัญหา'],
- h2a:['One tap. A card the mechanic can read.','แตะครั้งเดียว ได้การ์ดที่ช่างอ่านได้'],
+ h2a:['One tap makes a card that the mechanic can read.','แตะครั้งเดียว ได้การ์ดที่ช่างอ่านได้'],
  kb1:['Thai Road Assist, from its site','Thai Road Assist จากเว็บไซต์ของบริษัท'],
  hb1:['What TRA covers','TRA ดูแลอะไรบ้าง'],
  kb2:['Mot Dang, on the same roads','มดแดง บนถนนเส้นเดียวกัน'],
- hb2:['What the map already holds','สิ่งที่แผนที่มีอยู่แล้ว'],
- k3:['3 · How it fits together','3 · ทุกส่วนต่อกันอย่างไร'],
+ hb2:['What the Mot Dang map has','สิ่งที่แผนที่มีอยู่แล้ว'],
+ k3:['3 · How the parts work together','3 · ทุกส่วนต่อกันอย่างไร'],
  h3:['From a reader to a mechanic','จากผู้อ่านถึงช่างซ่อม'],
- t_today:['Exists today','มีแล้ว'], t_demo:['This page','หน้านี้'], t_idea:['To build together','สร้างด้วยกัน'],
- ping:['Send a test ping','ส่งสัญญาณทดสอบ'],
+ t_today:['Already built','มีแล้ว'], t_demo:['This page','หน้านี้'], t_idea:['To build together','สร้างด้วยกัน'],
+ ping:['Play a test run','เล่นตัวอย่างทีละขั้น'],
  playing:['Playing…','กำลังเล่น…'],
  opencard:['Open the card','เปิดการ์ด'],
  k4:['4 · A note for Sanya','4 · ถึงคุณ Sanya'],
  h4:['Three teams, one roadside','สามทีม หนึ่งข้างถนน'],
  kb3:['Next','ต่อไป'],
- hb3:['Coffee with Sallo and me?','กาแฟกับ Sallo และฉันไหม'],
- coffee:['Coffee with Sallo and me?','กาแฟกับ Sallo และฉันไหม'],
+ hb3:['Coffee with Sallo and NaN?','กาแฟกับ Sallo และ NaN ไหม'],
+ coffee:['Coffee with Sallo and NaN?','กาแฟกับ Sallo และ NaN ไหม'],
  coffee2:['Say yes by email','ตอบรับทางอีเมล'],
  sh_t:['Help card','การ์ดขอความช่วยเหลือ'],
  lab1:['What is wrong?','เกิดอะไรขึ้น'],
- lab2:['Show it in','แสดงเป็นภาษา'],
- lab3:['Thai ending','คำลงท้ายภาษาไทย'],
+ lab2:['Show the card in','แสดงเป็นภาษา'],
+ lab3:['Thai polite ending (ค่ะ or ครับ)','คำลงท้ายภาษาไทย'],
  lab4:['Your number (optional)','เบอร์โทรของคุณ (ไม่บังคับ)'],
  showfs:['Show full-screen','แสดงเต็มจอ'],
  copy:['Copy','คัดลอก'], copied:['Copied. Paste it into LINE or WhatsApp.','คัดลอกแล้ว วางใน LINE หรือ WhatsApp ได้เลย'],
  send:['Send this card','ส่งการ์ดนี้'],
- sendnote:['Demo: in the live version this goes to TRA\'s dispatch.','เดโม: ในเวอร์ชันจริงจะส่งไปยังศูนย์สั่งงานของ TRA'],
+ sendnote:['Demo: in the live version this goes to TRA, which sends the mechanic.','เดโม: ในเวอร์ชันจริงจะส่งไปยังศูนย์สั่งงานของ TRA'],
  next:['Next language','ภาษาถัดไป'],
  openmap:['Open the map','เปิดแผนที่'],
  loc:['Location','ตำแหน่ง'],
@@ -784,8 +784,8 @@ const SRC=[
  ['Map: OpenFreeMap tiles, OpenStreetMap contributors; MapLibre GL JS 4.7.1.','https://openfreemap.org/'],
  ['Mot Dang: 5,024 parking places (Chiang Mai, Chiang Rai, Pathum Thani), parking memory; Send, Guide me and road distance on motdang.net place pages.','https://motdang.net/parking/'],
  ['Mot Dang Safety First: five emergency numbers (1669, 1784, 199, 191, 1155) and 45 rescue units listed by district.','https://motdang.net/sites/safety/'],
- ['Hongdam: translation pages in Thai, English and Burmese; interpreting quoted in writing. Chiang Mai Visa Desk serves migrant workers from Myanmar, Laos, Cambodia and Vietnam. Hongdam Desk, a client desk on Discord, as NaN describes it; it has no public page.','https://hongdam.net/translation'],
- ['Card wording in Thai, Hindi, Burmese and Chinese: first drafts, not yet read by native speakers. Sanya, the Hindi is yours to correct.','mailto:nan@motdang.net?subject='+encodeURIComponent('Corrections to the Hindi on the help card')],
+ ['Hongdam: translation pages in Thai, English and Burmese; interpreting prices given in writing. Chiang Mai Visa Desk serves migrant workers from Myanmar, Laos, Cambodia and Vietnam. Hongdam Desk, a client desk on Discord, as NaN describes it; it has no public page.','https://hongdam.net/translation'],
+ ['Card wording in Thai, Hindi, Burmese and Chinese: first drafts, not yet read by native speakers. Sanya, please correct the Hindi.','mailto:nan@motdang.net?subject='+encodeURIComponent('Corrections to the Hindi on the help card')],
  ['Photographs: Wikimedia Commons, credited under each picture.','https://commons.wikimedia.org/']
 ];
 const sup=n=>'<sup><a href="#s'+n+'">['+n+']</a></sup>';
@@ -813,9 +813,9 @@ const io='IntersectionObserver' in window?new IntersectionObserver(function(es){
 const FLOW=[
  {k:'KM 1',tag:'today',t:['Mot Dang reader','ผู้อ่านมดแดง'],d:['Reading a place page, a route or the pin of a parked scooter. The Send button shares the position, now or live for an hour.','อ่านหน้าสถานที่ เส้นทาง หรือหมุดรถมอเตอร์ไซค์ที่จอดไว้ ปุ่มส่งแชร์ตำแหน่ง ตอนนี้หรือสดนาน 1 ชั่วโมง'],s:6},
  {k:'KM 2',tag:'demo',t:['Help button','ปุ่มขอความช่วยเหลือ'],d:['Position, road and problem go onto one card, in the driver\'s languages.','ตำแหน่ง ถนน และปัญหา อยู่บนการ์ดใบเดียว ในภาษาของผู้ขับ'],card:1},
- {k:'KM 3',tag:'today',t:['TRA dispatch','ศูนย์ TRA'],d:['TRA sends the mechanic or the tow truck. Its customer service runs 24/7 on the paid packages.','TRA ส่งช่างหรือรถยก ฝ่ายบริการลูกค้าเปิด 24 ชม. ในแพ็กเกจแบบชำระเงิน'],s:1},
- {k:'KM 4',tag:'idea',t:['Hongdam desk relays','โต๊ะหงส์ดำส่งต่อ'],d:['Today a client post on the Hongdam desk reaches the team and the reply comes back signed "Desk · first name". Here it writes to the driver in their language.','ปัจจุบันโพสต์ของลูกค้าบนโต๊ะหงส์ดำถึงทีม และคำตอบกลับมาลงชื่อ "Desk · ชื่อเล่น" ที่นี่โต๊ะเขียนถึงผู้ขับด้วยภาษาของเขา'],s:8},
- {k:'KM 5',tag:'today',t:['Done','เสร็จ'],d:['The ticket moves Open, Doing, Done.','ตั๋วเลื่อนจาก Open, Doing เป็น Done'],s:8}
+ {k:'KM 3',tag:'today',t:['TRA sends help','TRA ส่งความช่วยเหลือ'],d:['TRA sends the mechanic or the tow truck. Its customer service runs 24/7 on the paid packages.','TRA ส่งช่างหรือรถยก ฝ่ายบริการลูกค้าเปิด 24 ชม. ในแพ็กเกจแบบชำระเงิน'],s:1},
+ {k:'KM 4',tag:'idea',t:['Hongdam desk passes messages on','โต๊ะหงส์ดำส่งต่อ'],d:['A client post on the Hongdam desk reaches the team, and the reply comes back signed "Desk · first name". In this plan, the desk writes to the driver in their language.','โพสต์ของลูกค้าบนโต๊ะหงส์ดำถึงทีม และคำตอบกลับมาลงชื่อ "Desk · ชื่อเล่น" ในแผนนี้ โต๊ะเขียนถึงผู้ขับด้วยภาษาของเขา'],s:8},
+ {k:'KM 5',tag:'today',t:['Done','เสร็จ'],d:['The ticket moves from Open to Doing to Done.','ตั๋วเลื่อนจาก Open, Doing เป็น Done'],s:8}
 ];
 let cur=0,playing=false;
 function renderFlow(){
@@ -852,21 +852,21 @@ window.addEventListener('resize',()=>{place();if(map)map.resize()});
 /* note */
 function renderNote(){
   $('letter').innerHTML=L==='th'
-   ?'Sanya เราพบกันผ่านวง 137 Pillars of Hope ความถนัดของคุณคือการข้ามวัฒนธรรม หน้านี้พาความถนัดนั้นไปไว้ข้างถนน <strong>มดแดงรู้ถนน สถานที่ และเบอร์ฉุกเฉินของภาคเหนือ หงส์ดำมีโต๊ะที่ส่งต่อข้อความ TRA ขับออกไปช่วย</strong> สามส่วนนี้ต่อกันได้ไหม'
-   :'Sanya, we met through the 137 Pillars of Hope circle. Your strength is crossing cultures. This page puts it on a roadside. <strong>Mot Dang knows the roads, places and emergency numbers of the north. Hongdam keeps a desk that relays messages. TRA drives out.</strong> Could the three fit together?';
+   ?'Sanya โน้ตนี้มาจาก NaN ผู้ดูแลหงส์ดำ เราพบกันผ่านวง 137 Pillars of Hope ความถนัดของคุณคือการข้ามวัฒนธรรม หน้านี้พาความถนัดนั้นไปไว้ข้างถนน <strong>มดแดงรู้ถนน สถานที่ และเบอร์ฉุกเฉินของภาคเหนือ หงส์ดำมีโต๊ะที่ส่งต่อข้อความ TRA ขับออกไปช่วย</strong> สามส่วนนี้ต่อกันได้ไหม'
+   :'Sanya, this note is from NaN, who runs Hongdam. We met through the 137 Pillars of Hope group. Your strength is working across cultures. This page uses that strength for people stuck at the roadside. <strong>Mot Dang knows the roads, places and emergency numbers of northern Thailand. Hongdam runs a desk that passes messages on. TRA sends a mechanic or a tow truck.</strong> Could the three work together?';
   const C=[
    ['Mot Dang','motdang.net',[
      ['Place pages, routes and a parking memory for cars and bikes.','หน้าสถานที่ เส้นทาง และความจำเรื่องที่จอดรถ สำหรับรถยนต์และมอเตอร์ไซค์',6],
      ['Send: your position now, or live for an hour.','ส่ง: ตำแหน่งตอนนี้ หรือสดนาน 1 ชั่วโมง',6],
-     ['Guide me: turn-by-turn on screen and by voice, with a reroute when you leave the line.','นำทาง: บอกเลี้ยวบนจอและด้วยเสียง คำนวณใหม่เมื่อออกนอกเส้นทาง',6],
+     ['Guide me: turn-by-turn on screen and by voice, with a new route when you leave the line.','นำทาง: บอกเลี้ยวบนจอและด้วยเสียง คำนวณใหม่เมื่อออกนอกเส้นทาง',6],
      ['Emergency numbers and 45 rescue units by district.','เบอร์ฉุกเฉิน และหน่วยกู้ภัย 45 หน่วยตามอำเภอ',7]]],
    ['Hongdam','hongdam.net',[
      ['A client desk on Discord: a post reaches the team, the reply comes back as "Desk · first name".','โต๊ะลูกค้าบน Discord: โพสต์ถึงทีม คำตอบกลับมาเป็น "Desk · ชื่อเล่น"',8],
-     ['Tickets that move Open, Doing, Done.','ตั๋วที่เลื่อน Open, Doing, Done',8],
-     ['Translation pages in Thai, English and Burmese; interpreting quoted in writing.','หน้าแปลภาษาไทย อังกฤษ พม่า ล่ามเสนอราคาเป็นลายลักษณ์อักษร',8],
+     ['Tickets that move from Open to Doing to Done.','ตั๋วที่เลื่อน Open, Doing, Done',8],
+     ['Translation pages in Thai, English and Burmese; interpreting prices given in writing.','หน้าแปลภาษาไทย อังกฤษ พม่า ล่ามเสนอราคาเป็นลายลักษณ์อักษร',8],
      ['Chiang Mai Visa Desk serves migrant workers from Myanmar, Laos, Cambodia and Vietnam.','Chiang Mai Visa Desk ดูแลแรงงานข้ามชาติจากเมียนมา ลาว กัมพูชา เวียดนาม',8]]],
    ['TRA','thairoadassist.com',[
-     ['Roadside help, towing, battery help, emergency fuel or EV support.','ช่วยบนถนน ลากรถ แบตเตอรี่ น้ำมันฉุกเฉิน หรือชาร์จ EV',1],
+     ['Roadside help, towing, battery help, emergency fuel or EV (electric car) support.','ช่วยบนถนน ลากรถ แบตเตอรี่ น้ำมันฉุกเฉิน หรือชาร์จ EV',1],
      ['24/7 customer service on Standard, Elite and Prestige.','บริการลูกค้า 24 ชม. ในแพ็กเกจ Standard, Elite, Prestige',1],
      ['Basic is free to join; the other three go by car age.','Basic สมัครฟรี อีกสามแพ็กเกจแบ่งตามอายุรถ',1],
      ['Separate contacts for garages and suppliers, affiliate partners and insurance brokers.','ช่องทางติดต่อแยกสำหรับอู่และซัพพลายเออร์ พันธมิตร และนายหน้าประกัน',1]]]

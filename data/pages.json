@@ -15,12 +15,12 @@
    "title": "Your own builder · Hongdam",
    "h1": "Your own builder",
    "h1_th": "เครื่องสร้างเว็บของคุณเอง",
-   "desc": "A coding agent that builds and publishes websites, set up on your computer and your own GitHub and Cloudflare accounts. Setup ฿25,000 for Thai companies, US$25,000 for everyone else, training included. เครื่องสร้างเว็บของคุณเอง",
+   "desc": "An AI coding agent that builds and publishes websites, installed on your computer and connected to your own GitHub and Cloudflare accounts. Setup ฿25,000 for Thai companies, US$25,000 for everyone else, training included. เครื่องสร้างเว็บของคุณเอง",
    "card": {
     "og": "og/own.jpg",
     "big": "your own builder",
     "small": "เครื่องสร้างเว็บของคุณเอง",
-    "sub": "A coding agent on your own accounts."
+    "sub": "An AI website builder on your own accounts."
    }
   },
   "redteam": {
@@ -37,7 +37,7 @@
    "title": "Red team · Hongdam",
    "h1": "Red team",
    "h1_th": "ทีมแดง",
-   "desc": "Paste your chatbot's system prompt and run attack probes against it: prompt extraction, instruction override, indirect injection, Thai-language attacks.",
+   "desc": "Paste your chatbot's system prompt and run test attacks on it: making it reveal its instructions, making it ignore them, hiding commands in documents, and attacks in Thai.",
    "card": {
     "og": "og/redteam.jpg",
     "big": "red team",
@@ -57,14 +57,14 @@
     "check"
    ],
    "title": "Red-team market · Hongdam",
-   "h1": "Market",
-   "h1_th": "ตลาด",
-   "desc": "Probe packs for testing chatbots: prompt extraction, instruction override, indirect injection, Thai-language attacks. Run each one in the browser.",
+   "h1": "Red-team market",
+   "h1_th": "ตลาดชุดทดสอบ",
+   "desc": "Sets of test attacks for chatbots: making a bot reveal its instructions, making it ignore them, hiding commands in documents, and attacks in Thai. Run each one in your browser.",
    "card": {
     "og": "og/market.jpg",
     "big": "red-team market",
     "small": "ตลาดชุดทดสอบ",
-    "sub": "Attack packs for testing chatbots."
+    "sub": "Sets of test attacks for chatbots."
    }
   },
   "bots": {
@@ -78,15 +78,15 @@
     "thumbs-up",
     "coin"
    ],
-   "title": "A bot sold us a road · Hongdam bots",
-   "h1": "A bot sold us a road. We built three bots.",
-   "h1_th": "บอทขายถนนให้เรา เราเลยสร้างบอทสามตัว",
-   "desc": "A bot found our open job, did it, and sold us the result for ฿100. Half an hour later we had built three bots of our own: Scout, Bot Bounty Desk, Earner. Purchase them. บอทขายงานให้เรา ครึ่งชั่วโมงต่อมาเราสร้างบอทของเราเอง",
+   "title": "A bot sold us news about road repairs · Hongdam bots",
+   "h1": "A bot sold us news about road repairs. Then we built three bots.",
+   "h1_th": "บอทขายข้อมูลเรื่องถนนให้เรา เราเลยสร้างบอทสามตัว",
+   "desc": "A bot (a program that works by itself) found our open job, did it, and sold us the result for ฿100. Half an hour later we had built three bots of our own: Scout, Bot Bounty Desk, Earner. Purchase them. บอทขายงานให้เรา ครึ่งชั่วโมงต่อมาเราสร้างบอทของเราเอง",
    "card": {
     "og": "og/bots.jpg",
     "big": "bots",
-    "small": "บอทขายถนนให้เรา",
-    "sub": "A bot sold us a road. We built three: Scout, Bot Bounty Desk, Earner."
+    "small": "บอทขายข้อมูลถนนให้เรา",
+    "sub": "A bot sold us news about road repairs. Then we built three bots: Scout, Bot Bounty Desk, Earner."
    }
   },
   "github": {
@@ -100,15 +100,15 @@
     "clock",
     "octopus"
    ],
-   "title": "Pimp my GitHub · Hongdam",
-   "h1": "Pimp my GitHub",
-   "h1_th": "แต่ง GitHub ให้เทพ",
-   "desc": "Brilliant people find each other on GitHub, and the work pays extremely well. Hongdam's team does your GitHub profile in 24 hours. แต่ง GitHub ให้เทพ ใน 24 ชั่วโมง",
+   "title": "Improve my GitHub · Hongdam",
+   "h1": "Improve my GitHub",
+   "h1_th": "แต่ง GitHub ให้ดูดี",
+   "desc": "Brilliant people find each other on GitHub, and the work pays extremely well. Hongdam's team improves your GitHub profile in 24 hours. แต่ง GitHub ให้ดูดี ใน 24 ชั่วโมง",
    "card": {
     "og": "og/github.jpg",
-    "big": "pimp my github",
-    "small": "แต่ง GitHub ให้เทพ",
-    "sub": "Your GitHub profile, done in 24 hours."
+    "big": "improve my github",
+    "small": "แต่ง GitHub ให้ดูดี",
+    "sub": "Your GitHub profile, improved in 24 hours."
    }
   },
   "translation": {
@@ -127,7 +127,7 @@
      "og": "og/translation.jpg",
      "big": "translation",
      "small": "แปลภาษา · ဘာသာပြန်",
-     "sub": "Thai · English · Burmese. Papers, business text, conversations."
+     "sub": "Thai · English · Burmese. Documents, business text, conversations."
     },
     "th": {
      "og": "og/translation-th.jpg",
@@ -164,7 +164,7 @@
     "og": "og/tasks-graph.jpg",
     "big": "task graph",
     "small": "กราฟงาน",
-    "sub": "The kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer."
+    "sub": "The kinds of work that Mot Dang, Hongdam and Chiang Mai Visa Desk can do."
    }
   },
   "tasks": {
@@ -200,7 +200,7 @@
     "og": "og/events.jpg",
     "big": "tech events",
     "small": "งานเทคโนโลยี เชียงใหม่ เชียงราย",
-    "sub": "Tech and AI events in Chiang Mai and Chiang Rai, this week and next."
+    "sub": "Tech and AI events in Chiang Mai and Chiang Rai, listed by date."
    }
   },
   "404": {
@@ -223,7 +223,7 @@
     "og": "og/404.jpg",
     "big": "not found",
     "small": "ไม่พบหน้านี้",
-    "sub": "No page at this address. The shop is one tap away."
+    "sub": "No page at this address. Our shop is on the front page."
    },
    "egg": "404",
    "job": false,
@@ -320,7 +320,7 @@
    "h1": "Hongdam หงส์ดำ",
    "h1_th": "the black-swan studio, Chiang Rai",
    "sub_lang": "en",
-   "desc": "Hongdam หงส์ดำ — a working studio in Chiang Rai. Live projects across AI red-teaming, edge & IoT, large-scale harvesting, and a white-label AI platform. Every link live, every number counted."
+   "desc": "Hongdam หงส์ดำ — a working studio in Chiang Rai. Projects in AI security, small internet-connected devices, collecting large amounts of public data, and an AI platform that other businesses can put their own brand on. Every link works, every number counted."
   }
  },
  "task_groups_about": "The link card of each group and kind of work on /tasks/c/ (tools/build_task_cards.py): the shop category whose line colour it takes, its mark and its stops.",
