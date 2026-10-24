@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto'
 import { DatabaseSync } from 'node:sqlite'
 import { readFileSync, readdirSync } from 'node:fs'
 import { decode, satsFor } from '../functions/_lightning.js'
+import { PAY } from '../functions/_shop.js'
 
 // the BOLT11 example "1 cup coffee" (lightning/bolts, 11-payment-encoding.md)
 const SPEC = 'lnbc2500u1pvjluezsp5zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zygspp5qqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqypqdq5xysxxatsyp3k7enxv4jsxqzpu9qrsgquk0rl77nj30yxdy8j9vdx85fkpmdla2087ne0xh8nhedh8w27kyke0lp53ut353s06fv3qfegext0eh0ymjpf39tuven09sam30g4vgpfna3rh'
@@ -70,16 +71,20 @@ const call = async (env, method, path, body) => (await onRequest({ env, params: 
   request: new Request('https://hongdam.net/api/buy' + (path ? '/' + path.join('/') : ''), { method, headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: body && JSON.stringify(body) }) })).json()
 const row = (ref) => sql.prepare('SELECT state, paid_ref, pay FROM svc_buy WHERE ref = ?').get(ref)
 
-const off = { TASKS }
-const on = { TASKS, LN_ADDRESS: 'shop@ln.test' }
-// off while there is no Lightning Address
-assert.equal((await call(off, 'GET')).ln, false)
+const on = { TASKS }
+// off while there is no Lightning Address (the real one, if set, comes back at the end)
+const realAddress = PAY.lightning
+PAY.lightning = ''
+assert.equal((await call(on, 'GET')).ln, false)
+PAY.lightning = 'shop@ln.test'
 assert.equal((await call(on, 'GET')).ln, true)
 
 // an order in euros, a bill in sats at this minute's price
 const o = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 2, contact: 'line:ln', lang: 'de', pay: 'EUR' })
 assert.equal(o.ok, true); assert.equal(o.show.cur, 'EUR')
-assert.equal((await call(off, 'POST', ['ln'], { ref: o.ref })).why, 'off')
+PAY.lightning = ''
+assert.equal((await call(on, 'POST', ['ln'], { ref: o.ref })).why, 'off')
+PAY.lightning = 'shop@ln.test'
 const b = await call(on, 'POST', ['ln'], { ref: o.ref })
 const want = satsFor(o.show.due, 'EUR', 100000, { THB: 1, USD: 33.745, EUR: +(33.745 / 0.8934).toFixed(4) })
 assert.equal(b.ok, true); assert.equal(b.sats, want); assert.equal(b.check, true)
@@ -110,14 +115,17 @@ const o2 = await call(on, 'POST', undefined, { card: 'call', opt: 'call', qty: 1
 w.next = { msat: 1000 }
 assert.equal((await call(on, 'POST', ['ln'], { ref: o2.ref })).why, 'ln')
 assert.equal(JSON.parse(row(o2.ref).pay).ln, undefined)
-// a bill about to run out: checked once more, then a new one
+// a bill about to run out is kept until it does (it can still be paid); then checked once more, and a new one
 w.next = { ts: Math.floor(Date.now() / 1000) - 590, expiry: 600 }
 const b2 = await call(on, 'POST', ['ln'], { ref: o2.ref })
+assert.equal((await call(on, 'POST', ['ln'], { ref: o2.ref })).pr, b2.pr)
+const ranOut = () => sql.prepare("UPDATE svc_buy SET pay = json_set(pay, '$.ln.exp', ?) WHERE ref = ?").run(Math.floor(Date.now() / 1000) - 1, o2.ref)
+ranOut()
 const b3 = await call(on, 'POST', ['ln'], { ref: o2.ref })
 assert.notEqual(b2.pr, b3.pr)
-// paid while running out: the next press finds it paid, no new bill
+// paid just before it ran out: the next press finds it paid, no new bill
 const h3 = JSON.parse(row(o2.ref).pay).ln.hash
-sql.prepare("UPDATE svc_buy SET pay = json_set(pay, '$.ln.exp', ?) WHERE ref = ?").run(Math.floor(Date.now() / 1000) + 30, o2.ref)
+ranOut()
 w.bills[h3].paid = true
 assert.equal((await call(on, 'POST', ['ln'], { ref: o2.ref })).state, 'paid')
 
@@ -137,3 +145,4 @@ assert.equal((await call(on, 'POST', ['claim'], { ref: o4.ref, how: 'lightning' 
 assert.equal(row(o4.ref).paid_ref, 'lightning')
 await Promise.all(told)
 console.log('lightning edges ok')
+PAY.lightning = realAddress
