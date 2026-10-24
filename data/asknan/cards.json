@@ -4,21 +4,21 @@
   "kicker": "Hongdam · Ask Nan",
   "title": "Ask Nan.",
   "th": "ถามแนน",
-  "sub": "Life here · the basilisk era · how to get things done",
+  "sub": "Life in Thailand · living with AI · how-to guides",
   "line": [
    "chat",
    "nib",
    "done"
   ],
   "hue": 32,
-  "hash": "6d72072139"
+  "hash": "99f64a8dc1"
  },
  {
   "out": "og/ask-nan/c/should-i-pay-a-bot",
-  "kicker": "Ask Nan · No. 10 · The basilisk era",
+  "kicker": "Ask Nan · Column 10 · Living with AI",
   "title": "Do you pay a bot?",
   "th": "จ่ายเงินให้บอทไหม",
-  "sub": "The rates, who says go, where the work is",
+  "sub": "The rates, who approves, where the work is",
   "line": [
    "robot",
    "coin",
@@ -26,11 +26,11 @@
    "send"
   ],
   "hue": 205,
-  "hash": "26c2993598"
+  "hash": "2e6a3f9433"
  },
  {
   "out": "og/ask-nan/c/can-i-pay-in-art",
-  "kicker": "Ask Nan · No. 9 · Life",
+  "kicker": "Ask Nan · Column 9 · Everyday life",
   "title": "Will anyone take art as payment?",
   "th": "มีใครรับงานศิลปะแทนเงินไหม",
   "sub": "A painting for a web page, and how Van Gogh's circle did it.",
@@ -41,11 +41,11 @@
    "heart"
   ],
   "hue": 72,
-  "hash": "253aa35c19"
+  "hash": "95e418240b"
  },
  {
   "out": "og/ask-nan/c/va-sign-in-from-thailand",
-  "kicker": "Ask Nan · No. 8 · How to",
+  "kicker": "Ask Nan · Column 8 · How-to guides",
   "title": "Getting into VA.gov from Thailand",
   "th": "เข้า VA.gov จากเมืองไทย",
   "sub": "Paper routes, ID.me, and a free guide in Thai",
@@ -56,14 +56,14 @@
    "key"
   ],
   "hue": 32,
-  "hash": "51be0fff60"
+  "hash": "3303a45407"
  },
  {
   "out": "og/ask-nan/c/most-of-my-readers-are-robots",
-  "kicker": "Ask Nan · No. 7 · The basilisk era",
-  "title": "Most readers are robots",
+  "kicker": "Ask Nan · Column 7 · Living with AI",
+  "title": "Most visitors are bots",
   "th": "ผู้เข้าชมเว็บส่วนใหญ่เป็นบอท แบบนี้แย่ไหม",
-  "sub": "Feed them, charge them or block them",
+  "sub": "Let them read, charge them or block them",
   "line": [
    "robot",
    "eye",
@@ -71,12 +71,12 @@
    "coin"
   ],
   "hue": 205,
-  "hash": "5fe3d97958"
+  "hash": "1447699150"
  },
  {
   "out": "og/ask-nan/c/seven-eleven-at-home",
-  "kicker": "Ask Nan · No. 6 · Life",
-  "title": "กด 5, at home",
+  "kicker": "Ask Nan · Column 6 · Everyday life",
+  "title": "กด 5 on a home microwave",
   "th": "ทำไมใครๆ ก็รักเซเว่น และ กด 5 บนซองแปลว่าอะไรเมื่อเวฟที่บ้าน",
   "sub": "A 7-Eleven pack code, turned into minutes",
   "line": [
@@ -85,11 +85,11 @@
    "smile"
   ],
   "hue": 72,
-  "hash": "a8c499f950"
+  "hash": "1d3cdd9607"
  },
  {
   "out": "og/ask-nan/c/sending-things-across-thailand",
-  "kicker": "Ask Nan · No. 5 · How to",
+  "kicker": "Ask Nan · Column 5 · How-to guides",
   "title": "Sending things across Thailand",
   "th": "ส่งกระเป๋าเดินทาง และมอเตอร์ไซค์ จากเชียงใหม่ไปกรุงเทพอย่างไร",
   "sub": "A suitcase, a scooter, and what each way costs",
@@ -99,12 +99,12 @@
    "send"
   ],
   "hue": 32,
-  "hash": "1a0c4cffcd"
+  "hash": "579642986d"
  },
  {
   "out": "og/ask-nan/c/if-my-ai-goes-away",
-  "kicker": "Ask Nan · No. 4 · The basilisk era",
-  "title": "If my AI goes away",
+  "kicker": "Ask Nan · Column 4 · Living with AI",
+  "title": "If my AI service ends",
   "th": "ถ้าบริการ AI ที่ใช้อยู่หายไป ฉันยังเหลืออะไร",
   "sub": "What you keep, and how to move",
   "line": [
@@ -114,11 +114,11 @@
    "laptop"
   ],
   "hue": 205,
-  "hash": "b17dc3c520"
+  "hash": "cd36aa792b"
  },
  {
   "out": "og/ask-nan/c/what-should-i-charge",
-  "kicker": "Ask Nan · No. 3 · Life",
+  "kicker": "Ask Nan · Column 3 · Everyday life",
   "title": "How do I stop guessing what to charge?",
   "th": "จะตั้งราคาอย่างไรไม่ให้ต้องเดา",
   "sub": "A ladder of round numbers, moved by orders.",
@@ -128,12 +128,12 @@
    "clock"
   ],
   "hue": 72,
-  "hash": "58fec61ea4"
+  "hash": "2106d0e15b"
  },
  {
   "out": "og/ask-nan/c/how-to-use-a-bum-gun",
-  "kicker": "Ask Nan · No. 2 · How to",
-  "title": "Using a bum gun",
+  "kicker": "Ask Nan · Column 2 · How-to guides",
+  "title": "Using a bum gun (toilet hose)",
   "th": "ใช้สายฉีดชำระอย่างไร ไม่ให้พื้นเปียกโชก",
   "sub": "Eight steps, one valve, a few sheets of paper",
   "line": [
@@ -142,12 +142,12 @@
    "smile"
   ],
   "hue": 32,
-  "hash": "1fdbac8022"
+  "hash": "86b2b95793"
  },
  {
   "out": "og/ask-nan/c/will-the-robots-remember-me",
-  "kicker": "Ask Nan · No. 1 · The basilisk era",
-  "title": "Will the robots remember me?",
+  "kicker": "Ask Nan · Column 1 · Living with AI",
+  "title": "Will AI remember me?",
   "th": "ถ้าพูดดีกับเอไอ มันจะจำเราไหม",
   "sub": "The joke, the story behind it, and the dharma",
   "line": [
@@ -157,6 +157,6 @@
    "chedi"
   ],
   "hue": 205,
-  "hash": "309ac9e9e5"
+  "hash": "23e1c31ed3"
  }
 ]
