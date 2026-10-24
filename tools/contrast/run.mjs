@@ -7,6 +7,7 @@
 //   node tools/contrast/run.mjs                 all pages
 //   node tools/contrast/run.mjs for/cca/land    pages whose path contains this
 //   CHROME=/path/to/chrome node tools/contrast/run.mjs
+//   SHARD=2/6 node tools/contrast/run.mjs      every 6th page from the 2nd (CI runs six at once)
 //
 // Needs Node 22+ (built-in WebSocket) and Chrome or Chromium. No npm install.
 import { spawn } from 'node:child_process'
@@ -47,7 +48,10 @@ function pages() {
   }
   walk(DOCS)
   // share-card templates and fragments are not pages people read
-  return out.filter((p) => !/\/(card|og)[^/]*\.html$/.test(p) && p.includes(filter)).sort()
+  const all = out.filter((p) => !/\/(card|og)[^/]*\.html$/.test(p) && p.includes(filter)).sort()
+  // SHARD=i/n (her word 2026-10-24: split into parallel jobs, same coverage): every nth page from the ith.
+  const m = /^(\d+)\/(\d+)$/.exec(process.env.SHARD || '')
+  return m ? all.filter((_, k) => k % +m[2] === +m[1] - 1) : all
 }
 
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css',
