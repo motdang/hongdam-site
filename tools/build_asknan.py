@@ -125,7 +125,7 @@ def head(lang, title, desc, path, alternates=None, og="og/ask-nan/front.jpg", og
             '<link rel="alternate" type="application/feed+json" title="Ask Nan" href="/ask-nan/feed.json">',
             '<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">',
             '<link rel="stylesheet" href="/assets/shop.css?v=%s">' % B.CSS_V,
-            '<link rel="stylesheet" href="/assets/asknan.css?v=%s">' % V_CSS,
+            '<link rel="stylesheet" href="/assets/asknan.css?v=%s">' % V_CSS, B.POND_CSS,
             '<meta property="og:type" content="%s">' % kind, '<meta property="og:site_name" content="Hongdam">',
             '<meta property="og:locale" content="%s">' % ("th_TH" if lang == "th" else "en_US"),
             '<meta property="og:title" content="%s">' % E(title), '<meta property="og:description" content="%s">' % E(desc),
