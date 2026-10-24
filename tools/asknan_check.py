@@ -29,9 +29,11 @@ SHOP = json.load(open(os.path.join(HERE, "data", "shop.json"), encoding="utf-8")
 LOOKS = json.load(open(os.path.join(HERE, "data", "looks.json"), encoding="utf-8"))
 CARD_IDS = {c["id"] for c in SHOP["cards"]}
 NAMES = []
+LISTS = 0
 for f in (os.path.expanduser("~/.claude/state/studio-private.txt"), os.path.expanduser("~/.claude/state/asknan-private.txt")):
     if os.path.exists(f):
         NAMES += [ln.strip() for ln in open(f, encoding="utf-8") if ln.strip() and not ln.startswith("#")]
+        LISTS += 1
 SECRET = [
     (r"\b(?:\d{1,3}\.){3}\d{1,3}\b", "an IP address"),
     (r"/Users/|~/\.|\.tokens|/srv/", "a path on our machines"),
@@ -129,6 +131,8 @@ def check(path, offline=False):
             if what == "an IP address" and all(int(p) < 10 for p in hit.split(".")):
                 continue  # a version number like 1.2.3.4
             bad.append("private: %s (%s)" % (what, hit))
+    if not LISTS:
+        bad.append("private: no list of private names on this computer (~/.claude/state/studio-private.txt)")
     for nm in NAMES:   # as written: "Beer" the name, not beer the drink
         if re.search(r"(?<![\w])%s(?![\w])" % re.escape(nm), scan):
             bad.append("private: names %s" % nm)

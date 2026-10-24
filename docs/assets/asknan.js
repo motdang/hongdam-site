@@ -13,5 +13,7 @@ if (chips.length) {
     history.replaceState(null, '', k ? '?kind=' + k : location.pathname)
     show(k)
   }))
-  show(new URLSearchParams(location.search).get('kind'))
+  const known = chips.map((a) => a.dataset.kind).filter(Boolean)
+  const asked = new URLSearchParams(location.search).get('kind')
+  show(known.includes(asked) ? asked : '')
 }

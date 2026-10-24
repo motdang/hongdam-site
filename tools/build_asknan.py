@@ -161,7 +161,8 @@ def ask_box(lang):
     """The shop's ask form (shop.js sends it to /api/contact with this page's path, so it reaches Nan marked Ask Nan)."""
     u, su = ui(lang), B.SHOP["ui"][lang]
     return ('<section class="an-ask" id="ask"><h2>%s</h2><p class="lede">%s</p>\n'
-            '<form id="af"><label class="field">%s<textarea name="message" rows="4" maxlength="4000" required></textarea></label>\n'
+            '<form id="af" method="post" action="/api/contact"><input type="hidden" name="service" value="Ask Nan">'
+            '<label class="field">%s<textarea name="message" rows="4" maxlength="4000" required></textarea></label>\n'
             '<label class="field">%s<input name="contact" required maxlength="120" autocomplete="email"></label>\n'
             '<label class="hp" aria-hidden="true">website<input name="website" tabindex="-1" autocomplete="off"></label>\n'
             '<button class="btn" type="submit">%s</button><p id="amsg" role="status"></p></form></section>\n' % (
@@ -258,7 +259,7 @@ def column_page(c, cs):
     out = out.replace("</head>", '<meta property="article:published_time" content="%s">\n</head>' % c["date"])
     out += '<body class="asknan an-col">\n' + top(lang, [])
     out += '<main id="main"><article class="an-c" style="--line:var(--c-%s)">\n' % KIND_CAT[c["kind"]]
-    out += '<p class="back"><a href="/%s">← %s</a></p>\n' % (BASE, E(u["name"]))
+    out += '<p class="back"><a href="/%s">← %s</a> · <a href="/%s" lang="th">%s</a></p>\n' % (BASE, E(u["name"]), index_path("th"), E(ui("th")["name"]))
     out += '<p class="an-meta"><b>%s</b> · <a href="/%s?kind=%s">%s</a> · <time datetime="%s">%s</time> · %s</p>\n' % (
         E(no(c["no"], lang)), BASE, c["kind"], E(kind_label(c, lang)), c["date"], E(day(c["date"], lang)),
         E(u["minRead"].replace("{n}", str(c["min"]))))
