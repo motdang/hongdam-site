@@ -1,0 +1,67 @@
+{
+ "langs": ["en", "th"],
+ "kinds": {
+  "life": {"en": "Life", "th": "ชีวิต"},
+  "basilisk": {"en": "The basilisk era", "th": "ยุคบาซิลิสก์"},
+  "practical": {"en": "How to", "th": "วิธีทำ"}
+ },
+ "ui": {
+  "en": {
+   "name": "Ask Nan",
+   "title": "Ask Nan · Hongdam",
+   "desc": "Nan answers one question a column: life in northern Thailand, the basilisk era, and how to get things done. Each answer has its sources and one thing to do next.",
+   "kicker": "Hongdam · Chiang Rai",
+   "lede": "One question, Nan's answer. Life here, the basilisk era, and how to get things done.",
+   "basilisk": "The basilisk era is life alongside AI. The name comes from Roko's basilisk, a 2010 thought experiment about a future AI that judges how people treated it.",
+   "origin": "The first ten are questions Hongdam and Mot Dang had already answered in their own pages. Each column links to that work and to its sources.",
+   "count": "{n} columns",
+   "all": "All",
+   "no": "No. {n}",
+   "by": "Nan",
+   "read": "Read",
+   "minRead": "{n} min read",
+   "thsum": "สรุปภาษาไทย",
+   "sources": "Sources",
+   "does": "Hongdam does this",
+   "older": "Older",
+   "newer": "Newer",
+   "allCols": "Every column",
+   "askH": "Ask Nan a question",
+   "askL": "In any language. Questions go to Nan.",
+   "askWhat": "Your question",
+   "langNote": "Columns are in English, with the headline, the question and a summary in Thai."
+  },
+  "th": {
+   "name": "ถามแนน",
+   "title": "ถามแนน · หงส์ดำ",
+   "desc": "แนนตอบคำถามคอลัมน์ละหนึ่งข้อ เรื่องชีวิตในภาคเหนือ ยุคบาซิลิสก์ และวิธีทำเรื่องต่าง ๆ ให้สำเร็จ ทุกคำตอบมีแหล่งที่มา และมีสิ่งที่ทำต่อได้ทันที",
+   "kicker": "หงส์ดำ · เชียงราย",
+   "lede": "คำถามหนึ่งข้อ คำตอบจากแนน เรื่องชีวิตที่นี่ ยุคบาซิลิสก์ และวิธีทำเรื่องต่าง ๆ ให้สำเร็จ",
+   "basilisk": "ยุคบาซิลิสก์ คือชีวิตที่อยู่ร่วมกับ AI ชื่อนี้มาจาก Roko's basilisk การทดลองทางความคิดเมื่อปี 2010 ว่าด้วย AI ในอนาคตที่ตัดสินว่าแต่ละคนเคยปฏิบัติต่อมันอย่างไร",
+   "origin": "สิบคอลัมน์แรกเป็นคำถามที่หงส์ดำและมดแดงเคยตอบไว้แล้วในหน้าของตัวเอง แต่ละคอลัมน์ลิงก์ไปยังงานนั้นและแหล่งที่มา",
+   "count": "{n} คอลัมน์",
+   "all": "ทั้งหมด",
+   "no": "ฉบับที่ {n}",
+   "by": "แนน",
+   "read": "อ่าน",
+   "minRead": "อ่าน {n} นาที",
+   "thsum": "สรุปภาษาไทย",
+   "sources": "แหล่งที่มา",
+   "does": "หงส์ดำทำให้ได้",
+   "older": "ก่อนหน้า",
+   "newer": "ถัดไป",
+   "allCols": "คอลัมน์ทั้งหมด",
+   "askH": "ส่งคำถามถึงแนน",
+   "askL": "ภาษาใดก็ได้ คำถามส่งถึงแนนโดยตรง",
+   "askWhat": "คำถามของคุณ",
+   "langNote": "ตัวคอลัมน์เป็นภาษาอังกฤษ มีหัวเรื่อง คำถาม และสรุปเป็นภาษาไทย"
+  }
+ },
+ "band": {
+  "en": {"name": "Ask Nan", "line": "Questions about life here, the basilisk era and getting things done, answered by Nan."},
+  "th": {"name": "ถามแนน", "line": "คำถามเรื่องชีวิตที่นี่ ยุคบาซิลิสก์ และวิธีทำเรื่องต่าง ๆ ให้สำเร็จ ตอบโดยแนน"},
+  "my": {"name": "Ask Nan", "line": "ဒီမှာနေထိုင်ရေး၊ AI နဲ့အတူနေရတဲ့ခေတ်၊ အလုပ်တွေပြီးအောင်လုပ်နည်းတွေအကြောင်း မေးခွန်းတွေကို Nan ဖြေပေးပါတယ်။ အင်္ဂလိပ်နဲ့ ထိုင်းဘာသာဖြင့်။"},
+  "zh": {"name": "Ask Nan", "line": "关于在这里生活、与 AI 共处的“巴西利斯克时代”以及如何把事情办成的问题，由 Nan 回答。英文和泰文。"},
+  "de": {"name": "Ask Nan", "line": "Fragen zum Leben hier, zur Basilisken-Ära mit KI und dazu, wie man Dinge erledigt, beantwortet von Nan. Auf Englisch und Thai."}
+ }
+}
