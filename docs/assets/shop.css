@@ -113,6 +113,47 @@ doodle-dingbat[name^="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[na
 .job.master .cap b { font-family: var(--font-num) }
 .stop.hit::after { background: var(--line, var(--fg)); transition: background .3s }
 
+/* the swans at work (shop.js ride): walked stop by stop, a mate at the end of some lines, Dam behind on others */
+.job.riding .rider { transition-property: left }
+.rider.mate { left: calc(100% - var(--rw)); transform: scaleX(-1) }
+.rider.dam { z-index: 4; transition: left .6s linear .12s }
+.rider.dam .db { font-size: 1.9rem }
+/* a picture answers what the swan does under it */
+.stop .db { transform-origin: 50% 100% }
+.stop.fx-poke .db { animation: fx-poke .62s var(--ease) }
+.stop.fx-bump .db { animation: fx-bump .7s var(--ease) }
+.stop.fx-sway .db { animation: fx-sway 1.4s ease-out }
+.stop.fx-startle .db { animation: fx-startle .75s var(--ease) }
+.stop.fx-bow .db { animation: fx-bow 1.2s var(--ease) }
+.stop.fx-wink .db { animation: fx-wink .9s var(--ease) }
+@keyframes fx-poke { 12% { transform: translateY(-12%) rotate(-6deg) } 30% { transform: none } 52% { transform: translateY(-9%) rotate(5deg) } 70% { transform: none } }
+@keyframes fx-bump { 18% { transform: translateY(-22%) scale(1.05, .95) } 45% { transform: translateY(2%) scale(.96, 1.04) } 66% { transform: translateY(-4%) } }
+@keyframes fx-sway { 15% { transform: rotate(-12deg) } 35% { transform: rotate(9deg) } 55% { transform: rotate(-6deg) } 75% { transform: rotate(3deg) } }
+@keyframes fx-startle { 14% { transform: translateY(-16%) scale(1.14) } 30%, 52% { transform: translateY(-6%) rotate(-5deg) } 41%, 63% { transform: translateY(-6%) rotate(5deg) } 80% { transform: none } }
+@keyframes fx-bow { 30%, 66% { transform: rotate(14deg) translateY(3%) } }
+@keyframes fx-wink { 25% { transform: rotate(-7deg) scale(1.05) } 50% { transform: rotate(6deg) } 75% { transform: rotate(-3deg) } }
+/* a picture's name and its step, on hover or a tap: small, quiet, gone when the pointer leaves */
+.tip { position: absolute; z-index: 6; bottom: calc(100% + .3rem); left: 50%; width: max-content; max-width: 11rem; padding: .3rem .55rem .32rem; border-radius: 4px;
+  background: var(--fg); color: var(--bg2); font: 650 .8rem/1.2 var(--sys); text-align: center; pointer-events: none;
+  opacity: 0; transform: translate(-50%, .25rem); transition: opacity .16s, transform .16s var(--ease) }
+.tip small { display: block; margin-top: .1rem; font: 500 .7rem/1.2 var(--sys); opacity: .72 }
+.tip::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -4px; border: 4px solid transparent; border-top-color: var(--fg) }
+.stop:first-child .tip { left: 0; transform: translate(0, .25rem) }
+.stop:first-child .tip::after { left: calc(var(--stop) / 2) }
+.stop:last-child .tip { left: auto; right: 0; transform: translate(0, .25rem) }
+.stop:last-child .tip::after { left: auto; right: calc(var(--stop) / 2 - 4px) }
+.stop.tip-on .tip { opacity: 1; transform: translate(-50%, 0) }
+.stop:first-child.tip-on .tip, .stop:last-child.tip-on .tip { transform: none }
+@media (hover: hover) {
+  .stop { cursor: help }
+  .stop:hover .tip { opacity: 1; transform: translate(-50%, 0) }
+  .stop:first-child:hover .tip, .stop:last-child:hover .tip { transform: none }
+}
+/* the job done: the card's button arrow steps forward twice */
+.card .btn::after { display: inline-block }
+.card .btn.nudge::after { animation: nudge .8s var(--ease) 2 }
+@keyframes nudge { 50% { transform: translateX(.35rem) } }
+
 /* ---------------------------------------------------------------- search */
 .field { display: block; margin: 1.5rem 0 .5rem; font-weight: 650 }
 .qwrap { position: relative }
@@ -211,7 +252,8 @@ h1 { text-transform: lowercase }
 }
 @media (prefers-reduced-motion: reduce) {
   .rider { transition: none }
-  .stop.hit .db { animation: none }
+  .stop.hit .db, .stop[class*="fx-"] .db, .card .btn.nudge::after { animation: none }
+  .tip { transition: none }
 }
 
 /* ---------------------------------------------------------------- money marks

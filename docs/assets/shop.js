@@ -35,26 +35,185 @@ const dbTag = (g, play = 'still') => `<doodle-dingbat class="db" name="${esc(g)}
 const jobHtml = (stops, o = {}) => `<div class="job${o.cls ? ' ' + o.cls : ''}"${o.to != null ? ` style="--to:${o.to}"` : ''}${o.caps ? (o.hide ? ' aria-hidden="true"' : '') : ` role="img" aria-label="${esc(stops.map((g) => D.glyphs[g] || g).join(', '))}"`}><ol>` +
   stops.map((g, i) => `<li class="stop">${dbTag(g)}${o.caps ? `<span class="cap">${o.caps[i]}</span>` : ''}</li>`).join('') +
   `</ol><span class="rider">${dbTag('hongsa-stand', 'loop')}</span></div>`
-function ride(job) {
+// What the swans do (her ask 2026-10-24: "more variety in what they do, and interact with each other ... and with
+// the icons"). The swan walks stop by stop. At some stops it does something to the picture above it and the picture
+// answers: [the swan's move, the picture's answer, when they touch as a part of the move]. A line walked to its end
+// ends one of four ways: alone, it honks and the nearest resting swan on another line honks back; it rears and
+// flaps; a mate waits at the end and their necks make a heart; or Dam trots behind, runs ahead and is nuzzled.
+// Picked from the line's name, so a card does the same each visit and the next card something else.
+const MOVES = [['peck', 'poke', 0.34], ['hop', 'bump', 0.42], ['flap', 'sway', 0.22], ['honk', 'startle', 0.28], ['bow', 'bow', 0.3], ['look', 'wink', 0.3]]
+const ENDS = ['honk', 'honk', 'flap', 'mate', 'mate', 'dam', 'dam']
+// a browser holding a bundle from before these moves has only hongsa-walk and hongsa-stand: it gets the plain walk
+const has = (n) => !!(window.Dingbats && window.Dingbats.info(n))
+const loopMs = (n) => Math.round(window.Dingbats.info(n).loop * 1000)
+const sleep = (ms) => new Promise((ok) => setTimeout(ok, ms))
+const rngOf = (key) => {
+  let a = [...String(key)].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 16777619), 2166136261) >>> 0
+  return () => { a = (a + 0x6D2B79F5) >>> 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296 }
+}
+// swap what a swan (or Dam) is drawing; 'once' plays a move from its start and leaves it standing
+function pose(el, name, play = 'loop') {
+  if (!el || !has(name)) return false
+  if (play !== 'once' && el.getAttribute('name') === name && el.getAttribute('play') === play) return true
+  el.setAttribute('play', play); el.setAttribute('name', name)
+  return true
+}
+// where a rider stands: at a share of the line, less an offset
+const spot = (f, less = '0rem') => `calc((100% - var(--rw)) * ${f} - ${less})`
+const EASE = { both: 'cubic-bezier(.45,.05,.55,.95)', start: 'cubic-bezier(.45,0,1,1)', stop: 'cubic-bezier(0,0,.55,1)', none: 'linear' }
+// a picture's answer to the swan: a CSS animation on the stop (shop.css .fx-…)
+function fx(stop, kind) {
+  stop.classList.remove(...MOVES.map((m) => 'fx-' + m[1]))
+  void stop.offsetWidth
+  stop.classList.add('fx-' + kind)
+}
+// Swans standing at the ends of their lines, so one can answer another: a honk at the end of a line, or a tap on
+// a resting swan, and the nearest one on the screen honks back.
+const resting = new Set()
+function rest(el) {
+  if (!el || resting.has(el)) return
+  resting.add(el); pose(el, 'hongsa-idle')
+  el.addEventListener('click', () => answer(el))
+}
+function answer(from) {
+  const r0 = from.getBoundingClientRect()
+  let best = null, bd = Infinity
+  for (const el of resting) {
+    if (!el.isConnected) { resting.delete(el); continue }
+    if (el === from || el.dataset.busy) continue
+    const r = el.getBoundingClientRect()
+    if (r.bottom < 0 || r.top > innerHeight || !r.width) continue
+    const d = Math.hypot(r.left - r0.left, r.top - r0.top)
+    if (d < bd) { bd = d; best = el }
+  }
+  if (!best || !has('hongsa-honk')) return
+  best.dataset.busy = 1
+  setTimeout(() => { pose(best, 'hongsa-honk', 'once'); setTimeout(() => { pose(best, 'hongsa-idle'); delete best.dataset.busy }, loopMs('hongsa-honk')) }, 650)
+}
+const lineKey = (job, stops) => { const c = job.closest('.card'); return (c && c.id) || job.style.viewTransitionName || stops.map((s) => s.querySelector('doodle-dingbat')?.getAttribute('name')).join('-') }
+
+async function ride(job) {
   const stops = [...job.querySelectorAll('.stop')], n = stops.length
   const to = parseFloat(getComputedStyle(job).getPropertyValue('--to')) || (job.style.getPropertyValue('--to') === '0' ? 0 : 1)
   const reach = Math.floor(to * (n - 1) + 1e-6), dur = 520 * Math.max(1, reach) + 300
+  const rider = job.querySelector('.rider'), sw = rider && rider.querySelector('doodle-dingbat')
+  const play = (i) => {   // a picture plays as the swan reaches it; the end of the line plays its tap reaction, the job done
+    const s = stops[i], g = s && s.querySelector('doodle-dingbat')
+    if (!s) return
+    s.classList.add('hit')
+    if (i === n - 1 && g && g.__db) g.__db.onTap()
+    else if (g) g.setAttribute('play', 'once')
+  }
   job.style.setProperty('--dur', dur + 'ms')
   if (calm.matches) { job.classList.add('go'); stops.slice(0, reach + 1).forEach((s) => s.classList.add('hit')); return }
-  // the swan waddles along the line, then stands at its stop and looks round
-  const sw = job.querySelector('.rider doodle-dingbat')
-  if (sw && reach > 0) { sw.setAttribute('name', 'hongsa-walk'); setTimeout(() => sw.setAttribute('name', 'hongsa-stand'), dur) }
+  if (!sw || !has('hongsa-idle')) {   // the plain walk: it waddles along the line, then stands at its stop and looks round
+    if (sw && reach > 0) { sw.setAttribute('name', 'hongsa-walk'); setTimeout(() => sw.setAttribute('name', 'hongsa-stand'), dur) }
+    requestAnimationFrame(() => job.classList.add('go'))
+    stops.slice(0, reach + 1).forEach((s, i) => setTimeout(() => play(i), reach ? i / reach * (dur - 300) + 150 : 150))
+    return
+  }
+  const R = rngOf(lineKey(job, stops))
+  const end = reach === n - 1 && n > 1 && !job.matches('.master, .track') ? ENDS[Math.floor(R() * ENDS.length)] : ''
+  // the plan: a move at a stop, or walking on past it; the last stop of a whole line belongs to its ending
+  let prev = ''
+  const plan = stops.slice(0, reach + 1).map((_, i) => {
+    if (i === reach && end) return 'end'
+    if (R() > 0.6) return null
+    let m; do m = MOVES[Math.floor(R() * MOVES.length)]; while (m[0] === prev)
+    prev = m[0]
+    return m
+  })
+  job.classList.add('riding')
+  job.dataset.end = end || 'stop'
+  rider.style.left = spot(0)
+  let mate = null, dam = null, damG = null, damGo = 0
+  if (end === 'mate') {
+    rider.insertAdjacentHTML('afterend', `<span class="rider mate">${dbTag('hongsa-stand', 'loop')}</span>`)
+    mate = rider.nextElementSibling.firstElementChild
+  }
+  if (end === 'dam') {
+    rider.insertAdjacentHTML('beforebegin', `<span class="rider dam" style="left:${spot(0, '1.5rem')}">${dbTag('duckling-wait', 'loop')}</span>`)
+    dam = rider.previousElementSibling; damG = dam.firstElementChild
+  }
   requestAnimationFrame(() => job.classList.add('go'))
-  stops.slice(0, reach + 1).forEach((s, i) => setTimeout(() => {
-    const g = s.querySelector('doodle-dingbat')
-    s.classList.add('hit')
-    if (i === n - 1 && g && g.__db) g.__db.onTap()   // the end of the line: its tap reaction, the job done
-    else if (g) g.setAttribute('play', 'once')
-  }, reach ? i / reach * (dur - 300) + 150 : 150))
+  const step = Math.max(1, job.clientWidth - rider.offsetWidth) / Math.max(1, n - 1)
+  let walked = 0
+  for (let i = 0; i <= reach; i++) {
+    if (i > 0) {   // walk to stop i
+      const from = i === 1 || plan[i - 1], halt = i === reach || plan[i], ms = Math.round(Math.min(1500, Math.max(480, step * 6.5)) * (halt && from ? 1.08 : 1))
+      const lastEnd = i === reach && end
+      rider.style.transitionDuration = ms + 'ms'
+      rider.style.transitionTimingFunction = EASE[from && halt ? 'both' : from ? 'start' : halt ? 'stop' : 'none']
+      walked = ms
+      if (from) pose(sw, 'hongsa-walk')
+      rider.style.left = lastEnd === 'mate' ? 'calc(100% - 2 * var(--rw))' : lastEnd === 'dam' ? 'calc(100% - var(--rw) - .8rem)' : spot(i / (n - 1))
+      if (dam) {   // Dam trots behind and catches up; at the end it runs on ahead of the swan
+        const go = ++damGo, dms = Math.round(ms * 1.25) + 120
+        dam.style.transitionDuration = Math.round(ms * 1.25) + 'ms'
+        dam.style.transitionTimingFunction = rider.style.transitionTimingFunction
+        pose(damG, 'duckling-walk')
+        dam.style.left = lastEnd === 'dam' ? 'calc(100% - 1.95rem)' : spot(i / (n - 1), '1.5rem')
+        setTimeout(() => { if (go === damGo) pose(damG, 'duckling-wait') }, dms)
+      }
+      await sleep(ms)
+      if (!job.isConnected) return
+    }
+    const m = plan[i]
+    if (m === 'end') break
+    if (m && pose(sw, 'hongsa-' + m[0], 'once')) {
+      const L = loopMs('hongsa-' + m[0])
+      await sleep(L * m[2]); fx(stops[i], m[1]); play(i); await sleep(L * (1 - m[2]) + 60)
+    } else {
+      if (i === reach) pose(sw, 'hongsa-stand')
+      play(i)
+    }
+  }
+  // the ending
+  const E = { honk: 'hongsa-honk', flap: 'hongsa-flap', mate: 'hongsa-court', dam: 'hongsa-nuzzle' }[end]
+  if (E && has(E)) {
+    if (end === 'dam') await sleep(Math.round(walked * 0.25) + 180)   // Dam gets there
+    pose(sw, E, 'once')
+    if (mate) pose(mate, E, 'once')
+    const L = loopMs(E), at = { honk: 0.26, flap: 0.22, mate: 0.4, dam: 0.36 }[end]
+    await sleep(L * at)
+    if (end === 'flap') fx(stops[n - 1], 'sway')
+    if (end === 'dam' && damG && damG.__db) damG.__db.onTap()
+    play(n - 1)
+    if (end === 'honk') answer(sw)
+    await sleep(L * (1 - at))
+  } else if (end) play(n - 1)
+  if (!job.isConnected) return
+  rest(sw)
+  if (mate) rest(mate)
+  if (damG) pose(damG, 'duckling-wait')
+  // the job is done: the card's button points the way (its arrow steps forward twice)
+  const btn = end && job.closest('.card')?.querySelector(':scope > .btn')
+  if (btn) { btn.classList.add('nudge'); btn.addEventListener('animationend', () => btn.classList.remove('nudge'), { once: true }) }
+}
+
+// A picture's name and its place in the job, on hover or a tap (her ask 2026-10-24: "icons should have subtle tool
+// tips"). A line with words under its pictures already says them.
+const STEP = { en: 'Step {n} of {N}', th: 'ขั้นที่ {n} จาก {N}', my: 'အဆင့် {n} / {N}', zh: '第 {n} 步，共 {N} 步', de: 'Schritt {n} von {N}' }
+function tips(job) {
+  const stops = [...job.querySelectorAll('.stop')]
+  if (!stops.length || job.querySelector('.cap')) return
+  const said = T.step || STEP[D.lang] || STEP.en
+  stops.forEach((s, i) => {
+    const g = s.querySelector('doodle-dingbat'), nm = g && D.glyphs && D.glyphs[g.getAttribute('name')]
+    if (nm) s.insertAdjacentHTML('beforeend', `<span class="tip" aria-hidden="true">${esc(nm)}<small>${esc(said.replace('{n}', i + 1).replace('{N}', stops.length))}</small></span>`)
+  })
+  let shown = null, timer = 0
+  job.addEventListener('click', (e) => {   // on a phone a tap shows it for a moment
+    const s = e.target.closest('.stop')
+    if (!s || !s.querySelector('.tip')) return
+    if (shown) shown.classList.remove('tip-on')
+    shown = s; s.classList.add('tip-on')
+    clearTimeout(timer); timer = setTimeout(() => s.classList.remove('tip-on'), 2400)
+  })
 }
 const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { io.unobserve(e.target); ride(e.target) } }), { threshold: 0.55 }) : null
 function lines(root = document) {
-  root.querySelectorAll('.job:not([data-seen])').forEach((j) => { j.dataset.seen = 1; if (io) io.observe(j); else ride(j) })
+  root.querySelectorAll('.job:not([data-seen])').forEach((j) => { j.dataset.seen = 1; tips(j); if (io) io.observe(j); else ride(j) })
 }
 
 // Language: a choice made by hand is kept; the English front page opens the phone's language once.
