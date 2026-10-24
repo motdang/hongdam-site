@@ -331,3 +331,19 @@ h1 { text-transform: lowercase }
 .says blockquote p { margin: 0 }
 .says blockquote p::before { content: "“" } .says blockquote p::after { content: "”" }
 .says .who { margin: .55rem 0 0; color: var(--mut); font-size: .95rem }
+
+/* Share (assets/share.js): a quiet button beside a card's Buy and on the page's back row, and its menu */
+.share { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.9rem; padding: .4rem .15rem; border: 0; background: none; color: var(--mut); font: 600 1rem/1.2 var(--sys); cursor: pointer; -webkit-tap-highlight-color: transparent }
+.share svg { width: 1.15em; height: 1.15em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+.share:hover span, .share:focus-visible span, .share[aria-expanded="true"] span { text-decoration: underline; text-underline-offset: .18em }
+.share:hover, .share[aria-expanded="true"] { color: var(--fg) }
+.card .share { grid-column: 1; justify-self: start; align-self: center; margin-top: .9rem }
+.back:has(.share) { display: flex; justify-content: space-between; align-items: center; gap: 1rem }
+.back .share { margin: -.7rem 0 }
+.share-row { margin: .2rem 0 0 }
+#share-menu { position: fixed; inset: auto; margin: 0; min-width: 12.5rem; padding: .35rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); color: var(--fg); box-shadow: var(--card-shadow) }
+#share-menu[hidden] { display: none }
+#share-menu a, #share-menu button { display: flex; align-items: center; width: 100%; min-height: 2.75rem; padding: .4rem .8rem; border: 0; border-radius: var(--r); background: none; color: var(--fg); font: 600 1rem/1.2 var(--sys); text-align: start; text-decoration: none; cursor: pointer }
+#share-menu a:hover, #share-menu a:focus-visible, #share-menu button:hover, #share-menu button:focus-visible { background: color-mix(in oklab, var(--fg) 9%, transparent); outline: none }
+#share-menu :focus-visible { box-shadow: inset 0 0 0 2px var(--fg) }
+@media print { .share, #share-menu { display: none !important } }

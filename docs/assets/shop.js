@@ -560,7 +560,10 @@ function ladders(root = document) {
 // Search, on any page that has the box: every language's words, whatever the page's language.
 const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${c.go ? `<a href="${esc(c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
   (c.walk ? `<details class="ladder" data-svc="${esc(c.walk)}" hidden></details>` : '') +
-  (c.go ? `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
+  (c.go ? shareHtml(c) + `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
+// the card's Share button, as tools/build_shop.py share_btn() writes it; assets/share.js does the sharing
+const shareHtml = (c) => `<button class="share" type="button" data-share="${esc(c.go)}" data-t="${esc(c.n)}" aria-label="${esc(T.share + ': ' + c.n)}">` +
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>' + `<span>${esc(T.share)}</span></button>`
 const q = $('#q')
 if (q) {
   const out = $('#hits')
