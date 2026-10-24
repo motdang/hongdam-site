@@ -93,6 +93,11 @@ CSS_V = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(
 # shop.js gets its own, so a browser holding yesterday's copy (kept 4 h) fetches the new one at once.
 _JS = os.path.join(DOCS, "assets", "shop.js")
 JS_V = hashlib.sha1(open(_JS, "rb").read()).hexdigest()[:8] if os.path.exists(_JS) else "0"
+# the pond (pond.css, pond.js): lily pads and lotus for points and stops, and what moves on the page; loaded after
+# the page's other stylesheets
+_POND = [os.path.join(DOCS, "assets", "pond." + x) for x in ("css", "js")]
+POND_V = hashlib.sha1(b"".join(open(p, "rb").read() for p in _POND if os.path.exists(p))).hexdigest()[:8]
+POND_CSS = '<link rel="stylesheet" href="/assets/pond.css?v=%s">' % POND_V
 
 
 def db(name, cls="", play="still"):
@@ -344,11 +349,11 @@ def head(lang, title, desc, path, noindex=False, og="og/shop/front.jpg"):
     return ('<!doctype html>\n<html lang="%s">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<title>%s</title>\n<meta name="description" content="%s">\n'
             '%s<link rel="canonical" href="%s%s">\n%s<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n'
-            '<link rel="stylesheet" href="/assets/shop.css?v=%s">\n'
+            '<link rel="stylesheet" href="/assets/shop.css?v=%s">\n%s\n'
             '<meta property="og:title" content="%s">\n<meta property="og:description" content="%s">\n<meta property="og:url" content="%s%s">\n'
             '<meta property="og:image" content="%s/%s">\n<meta name="twitter:card" content="summary_large_image">\n%s</head>\n'
             % (lang, E(title), E(desc), '<meta name="robots" content="noindex">\n' if noindex else "", SITE, url(lang, path), alts,
-               CSS_V, E(title), E(desc), SITE, url(lang, path), SITE, og, seo.tags(globals(), lang, path, title, desc, og, noindex)))
+               CSS_V, POND_CSS, E(title), E(desc), SITE, url(lang, path), SITE, og, seo.tags(globals(), lang, path, title, desc, og, noindex)))
 
 
 def top(lang, path):
@@ -372,8 +377,8 @@ def foot(lang, front=False, group=None, pay=True):
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return rate_box(lang) + ('<footer>%s<p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
             '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · %s: <a href="/llms.txt">llms.txt</a></p></footer>\n'
-            '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n</body>\n</html>\n'
-            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), j, JS_V))
+            '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n<script defer src="/assets/pond.js?v=%s"></script>\n</body>\n</html>\n'
+            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), j, JS_V, POND_V))
 
 
 RATE_LANGS = ("my", "zh", "de")
