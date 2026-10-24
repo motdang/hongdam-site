@@ -1,0 +1,75 @@
+{
+  "read": "Her asks 2026-10-24: the Rotary lice cartoon on the page; a few Mot Dang videos in a Mot Dang section; reviews and partnerships (quotes held until she says how to credit them). tools/build_shop.py work_band() draws this on the front page in every language.",
+  "ui": {
+    "en": {"work": "Our work", "say": "What people say", "play": "Play · 4 min"},
+    "th": {"work": "ผลงานของเรา", "say": "เสียงตอบรับ", "play": "เล่น · 4 นาที"},
+    "my": {"work": "ကျွန်ုပ်တို့၏ လက်ရာများ", "say": "တုံ့ပြန်ချက်များ", "play": "ဖွင့်ရန် · ၄ မိနစ်"},
+    "zh": {"work": "我们的作品", "say": "大家怎么说", "play": "播放 · 4 分钟"},
+    "de": {"work": "Unsere Arbeit", "say": "Was andere sagen", "play": "Abspielen · 4 Min."}
+  },
+  "groups": [
+    {
+      "id": "rotary",
+      "line": "charity",
+      "n": {
+        "en": "Lice can't swim. You can!",
+        "th": "เหาว่ายน้ำไม่เป็น แต่เราว่ายเป็น!",
+        "my": "သန်းတွေ ရေမကူးတတ်ဘူး။ သင်ကူးတတ်တယ်!",
+        "zh": "虱子不会游泳，你会！",
+        "de": "Läuse können nicht schwimmen. Du schon!"
+      },
+      "l": {
+        "en": "A four-minute cartoon by Marcus for the Chiang Mai International Rotary Club's swim lessons for children: what a louse is, how to check, then everyone into the pool.",
+        "th": "การ์ตูนสี่นาทีโดย Marcus สำหรับโครงการสอนเด็กว่ายน้ำของสโมสรโรตารีเชียงใหม่อินเตอร์เนชั่นแนล: เหาคืออะไร ตรวจอย่างไร แล้วลงสระกันทุกคน",
+        "my": "Chiang Mai International Rotary Club ၏ ကလေးရေကူးသင်တန်းအတွက် Marcus ပြုလုပ်သော လေးမိနစ် ကာတွန်း — သန်းဆိုတာ ဘာလဲ၊ ဘယ်လိုစစ်ရမလဲ၊ ပြီးရင် အားလုံး ရေကူးကန်ထဲ ဆင်းကြမယ်။",
+        "zh": "Marcus 为清迈国际扶轮社儿童游泳课制作的四分钟动画：虱子是什么、怎么检查，然后大家一起下水。",
+        "de": "Ein vierminütiger Zeichentrickfilm von Marcus für den Kinder-Schwimmunterricht des Chiang Mai International Rotary Club: was eine Laus ist, wie man nachschaut, dann alle ins Becken."
+      },
+      "drive": "https://drive.google.com/file/d/1hsinVGuEZQDoQ3_IE1OJLBpmBZ0vuKGP/preview",
+      "poster": "/media/rotary-lice.jpg", "w": 960, "h": 540,
+      "alt": {
+        "en": "NaN and Beer as cartoon dolls on a golden swan float in a pool.",
+        "th": "แนนกับเบียร์ในแบบตุ๊กตาการ์ตูน นั่งห่วงยางหงส์สีทองในสระ",
+        "my": "ကာတွန်းအရုပ် NaN နှင့် Beer တို့ ရေကူးကန်ထဲတွင် ရွှေရောင်ဟင်္သာ ရေပေါ်ကွင်းကို စီးနေကြသည်။",
+        "zh": "卡通人偶造型的 NaN 和 Beer 坐在泳池里的金色天鹅浮圈上。",
+        "de": "NaN und Beer als Trickfilmpuppen auf einem goldenen Schwan-Schwimmring im Becken."
+      },
+      "go": "https://sites.motdang.net/cwsdpp/w/lice",
+      "goN": {"en": "The swim program", "th": "โครงการสอนว่ายน้ำ", "my": "ရေကူးသင်တန်း", "zh": "游泳项目", "de": "Das Schwimmprogramm"}
+    },
+    {
+      "id": "motdang",
+      "line": "shop",
+      "n": {"en": "Mot Dang", "th": "มดแดง", "my": "Mot Dang", "zh": "Mot Dang", "de": "Mot Dang"},
+      "l": {
+        "en": "Our directory of Chiang Mai and Chiang Rai, in Thai and English. Three of its videos:",
+        "th": "สารบัญเชียงใหม่และเชียงรายของเรา ภาษาไทยและอังกฤษ วิดีโอสามเรื่อง:",
+        "my": "ချင်းမိုင်နှင့် ချင်းရိုင်အတွက် ကျွန်ုပ်တို့၏ လမ်းညွှန်၊ ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာ။ ဗီဒီယို သုံးခု—",
+        "zh": "我们的清迈和清莱城市目录，泰文和英文。三段视频：",
+        "de": "Unser Verzeichnis für Chiang Mai und Chiang Rai, auf Thai und Englisch. Drei seiner Videos:"
+      },
+      "videos": [
+        {
+          "src": "/media/motdang-45s.mp4", "poster": "/media/motdang-45s.jpg", "w": 304, "h": 540,
+          "n": {"en": "Mot Dang in 45 seconds", "th": "มดแดงใน 45 วินาที", "my": "Mot Dang ကို စက္ကန့် ၄၅ ဖြင့်", "zh": "45 秒看 Mot Dang", "de": "Mot Dang in 45 Sekunden"},
+          "by": {"en": "By Marcus", "th": "โดย Marcus", "my": "Marcus ပြုလုပ်သည်", "zh": "Marcus 制作", "de": "Von Marcus"}
+        },
+        {
+          "src": "/media/motdang-doodle-map.mp4", "poster": "/media/motdang-doodle-map.jpg", "w": 540, "h": 960,
+          "n": {"en": "Chiang Mai, Doodled", "th": "เชียงใหม่ วาดเล่น", "my": "Chiang Mai, Doodled", "zh": "Chiang Mai, Doodled", "de": "Chiang Mai, Doodled"},
+          "by": {"en": "The hand-drawn city map", "th": "แผนที่วาดมือทั้งเมือง", "my": "လက်ဖြင့်ဆွဲထားသော မြို့မြေပုံ", "zh": "手绘的全城地图", "de": "Der handgezeichnete Stadtplan"},
+          "go": "https://motdang.net/sites/doodle-map/"
+        },
+        {
+          "src": "/media/motdang-bum-gun.mp4", "poster": "/media/motdang-bum-gun.jpg", "w": 540, "h": 960,
+          "n": {"en": "Install a bum gun", "th": "ติดสายฉีดชำระ", "my": "ရေဖြန်းပိုက် (bum gun) တပ်ဆင်ခြင်း", "zh": "装一个马桶喷枪", "de": "Eine Po-Dusche einbauen"},
+          "by": {"en": "Beer finds a plumber on Mot Dang", "th": "เบียร์หาช่างประปาในมดแดง", "my": "Beer က Mot Dang တွင် ပိုက်ဆရာ ရှာသည်", "zh": "Beer 在 Mot Dang 上找到水管工", "de": "Beer findet auf Mot Dang einen Sanitär"},
+          "go": "https://motdang.net/sites/bum-gun/"
+        }
+      ],
+      "go": "https://motdang.net/",
+      "goN": {"en": "motdang.net", "th": "motdang.net", "my": "motdang.net", "zh": "motdang.net", "de": "motdang.net"}
+    }
+  ],
+  "quotes": []
+}
