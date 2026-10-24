@@ -780,7 +780,8 @@ ${s.cur === 'THB' ? pp + card + ln + away : card + ln + away + pp}
 
 // Bitcoin by Lightning: the button asks /api/buy/ln for a bill (sats at this minute's price), shown as a QR code, a
 // wallet link and a copy button. When the wallet can be asked (check), this page asks /api/buy/ln/check every 3 s
-// until it is paid or the bill runs out; otherwise the buyer presses "I paid by Lightning" and the team checks.
+// until it is paid or the bill runs out. "I paid by Lightning" is there either way (CodeRabbit on #91: a wallet whose
+// answer lacks a preimage leaves the order unpaid); the team checks the wallet, and the check still runs.
 function lightning(j, box) {
   const way = $('#lnway'), bill = $('#lnbill'), m = $('#lmsg'), btn = $('#lnbtn')
   way.hidden = false
@@ -802,7 +803,7 @@ function lightning(j, box) {
     const qr = qrToSvg('lightning:' + r.pr, { ecl: 'L', border: 4, scale: 4, dark: '#000', light: '#fff', title: `Lightning ${r.sats} sats` })
     bill.innerHTML = `<p class="tot"><b>${Number(r.sats).toLocaleString('en-US')} sats</b></p><div class="qr"><a href="lightning:${esc(r.pr)}">${qr}</a></div>
 <p>${esc(T.lnScan)}</p><p><a class="btn" href="lightning:${esc(r.pr)}">${esc(T.lnOpen)}</a> <button class="btn alt" type="button" id="lncopy">${esc(T.lnCopy)}</button></p>
-<p class="note">${esc(T.lnUntil).replace('{time}', until)}</p>${r.check ? '' : `<p><button class="btn alt" type="button" data-claim="lightning">${esc(T.ipaid)} Lightning</button></p>`}`
+<p class="note">${esc(T.lnUntil).replace('{time}', until)}</p><p><button class="btn alt" type="button" data-claim="lightning">${esc(T.ipaid)} Lightning</button></p>`
     bill.hidden = false; btn.hidden = true
     m.textContent = r.check ? T.lnWait : ''
     $('#lncopy').addEventListener('click', async (e) => {
