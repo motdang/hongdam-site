@@ -1214,4 +1214,82 @@
   <url><loc>https://hongdam.net/bots/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://hongdam.net/php/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://hongdam.net/events</loc><changefreq>hourly</changefreq></url>
+  <!-- STUDIO:START -->
+  <url>
+    <loc>https://hongdam.net/studio/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/th/studio/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/my/studio/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/zh/studio/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/de/studio/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/"/>
+    <xhtml:link rel="alternate" hreflang="my" href="https://hongdam.net/my/studio/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hongdam.net/zh/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hongdam.net/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/studio/notes/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/notes/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/notes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/notes/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/th/studio/notes/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hongdam.net/studio/notes/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hongdam.net/th/studio/notes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hongdam.net/studio/notes/"/>
+  </url>
+  <url>
+    <loc>https://hongdam.net/studio/notes/supabase-public-key-open-tables/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://hongdam.net/studio/notes/php2shell-fixed-releases-and-restart/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://hongdam.net/studio/notes/automation-cost-per-run/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <!-- STUDIO:END -->
 </urlset>

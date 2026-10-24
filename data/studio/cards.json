@@ -1,0 +1,74 @@
+[
+ {
+  "out": "og/studio/front",
+  "kicker": "Hongdam Studio · Chiang Rai",
+  "title": "The last mile.",
+  "th": "งานเทคที่ค้างอยู่ เราปิดให้จบ",
+  "sub": "Vibe code finished · security · models · automation",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "lock"
+  ],
+  "hue": 258,
+  "hash": "e70194c766"
+ },
+ {
+  "out": "og/studio/notes",
+  "kicker": "Hongdam Studio · Notes",
+  "title": "Notes from the bench.",
+  "th": "บันทึกจากโต๊ะทำงาน",
+  "sub": "Models measured, holes found, fixes with their code.",
+  "line": [
+   "typewriter",
+   "page",
+   "send"
+  ],
+  "hue": 205,
+  "hash": "1452947977"
+ },
+ {
+  "out": "og/studio/n/supabase-public-key-open-tables",
+  "kicker": "Hongdam Studio · Last mile · 24 Oct 2026",
+  "title": "Is your database open?",
+  "th": "ฐานข้อมูล Supabase 16,326 แห่งเปิดให้ใครก็อ่านตารางได้ ตรวจแอปของคุณเองใน 2 นาที",
+  "sub": "A two-minute check for Supabase apps",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "968215024f"
+ },
+ {
+  "out": "og/studio/n/php2shell-fixed-releases-and-restart",
+  "kicker": "Hongdam Studio · Security · 24 Oct 2026",
+  "title": "PHP2Shell: update, then restart",
+  "th": "PHP2Shell: PHP 8.5.12, 8.4.27, 8.3.36 และ 8.2.35 ปิดช่องโหว่สั่งรันโค้ดจากระยะไกล 2 รายการ",
+  "sub": "Two PHP flaws, fixed 21 October 2026",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "e2c223c998"
+ },
+ {
+  "out": "og/studio/n/automation-cost-per-run",
+  "kicker": "Hongdam Studio · Automation · 24 Oct 2026",
+  "title": "Zapier $1,149 or a Worker $5",
+  "th": "เวิร์กโฟลว์รับออเดอร์เดียวกัน 30,000 รอบต่อเดือน: Zapier 1,149 ดอลลาร์ Make 116 ดอลลาร์ Worker 5 ดอลลาร์",
+  "sub": "One order workflow, 30,000 runs a month",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "d64eb1c4cc"
+ }
+]

@@ -201,3 +201,13 @@ The four kinds are Hosted site, Server, Upgrade and Five servers. After the walk
 
 The form takes a site name and a contact; server access is arranged on LINE after payment. GET `/api/php` answers any origin; POST answers hongdam.net, hongdam.pages.dev and localhost. The ip column of `php_order` is written null. nanobotco.github.io/php-patch links here and reads `/api/php`.
 Upgrade scope (her pick 2026-10-22, option D): flat for WordPress, Drupal and Joomla; custom code gets 8 hours in the price, then a quote at ฿1,500 an hour, and the buyer can stop there with nothing more to pay.
+
+## Studio
+
+Hongdam Studio, the tech side (her ask 2026-10-24), is a site inside the shop: `/studio/` in five languages and the
+notes under `/studio/notes/`, with Atom and JSON feeds at `/studio/feed.xml` and `/studio/feed.json`. Words, practices
+and work: `data/studio/studio.json`; a practice sells shop cards at the shop's prices. Notes:
+`data/studio/notes/<date>-<slug>.md`, written to `data/studio/brief.md`, checked by `tools/studio_check.py`.
+`python3 tools/build_studio.py` builds the pages, feeds, sitemap block and llms.txt section; `node tools/studio_cards.mjs`
+draws the link pictures; `tools/studio_publish.sh <note>` does all of it and publishes through pr-push. A scheduled task,
+studio-notes, writes a note each morning in a clean clone, `../studio-desk`.
