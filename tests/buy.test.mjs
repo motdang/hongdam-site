@@ -24,7 +24,7 @@ assert.equal(quote('trades', 'trades', 1, false, {}).error, 'price')
 assert.ok(HALF_FROM.THB === 10000)
 // her prices on the walk (2026-10-24): the walk's number when it has one in the option's currency, else the set number
 const wk = { ...walked, 'lang-new': { price: 2000, cur: 'THB', tail: 600 }, 'lang-stamp': { price: 150, cur: 'THB' },
-  'reading-en': { price: 129, cur: 'USD' }, 'ai-own': { price: 30000, cur: 'THB', tail: 30000 }, 'date-en': 59 }
+  'reading-en': { price: 129, cur: 'USD' }, 'ai-own': { price: 30000, cur: 'THB', tail: 30000, tail_cur: 'USD' }, 'date-en': 59 }
 assert.equal(quote('translate', 'lang-new', 8, true, wk).total, 2000 + 3 * 600 + 8 * 150)
 assert.equal(quote('reading', 'reading-en', 1, false, wk).total, 129)
 assert.equal(quote('ai-own', 'ai-own', 1, false, wk).total, 30000)
@@ -33,13 +33,18 @@ assert.deepEqual([quote('ai-own', 'ai-own-usd', 1, false, wk).total, quote('ai-o
 assert.equal(quote('date-pick', 'date-en', 1, false, wk).total, 59)
 assert.equal(quote('date-pick', 'date-en', 1, false, { 'date-en': { price: 1500, cur: 'THB' } }).total, 59)
 assert.equal(quote('translate', 'lang-new', 8, true, {}).total, 3800)
+// a tail in baht is never read as US$ (CodeRabbit on #52)
+assert.equal(quote('ai-own', 'ai-own-usd', 1, false, { 'ai-own': { price: 30000, cur: 'THB', tail: 30000 } }).total, 25000)
+assert.equal(quote('translate', 'lang-new', 8, false, { 'lang-new': { price: 2000, cur: 'THB', tail: 9, tail_cur: 'USD' } }).total, 2000 + 3 * 500)
 assert.equal(CARDS['ai-own'].opts[1].price.w, 'ai-own'); assert.equal(CARDS['ai-own'].opts[1].price.part, 'tail')
 // every buy card has options with a price rule
 for (const [id, c] of Object.entries(CARDS)) if (c.act === 'buy') assert.ok(c.opts.length && c.opts.every((o) => o.price), id)
 
 // the endpoint, with a stand-in database
 const rows = []
-const db = { prepare: (sql) => ({ bind: (...a) => ({ run: async () => { if (sql.startsWith('INSERT INTO svc_buy')) rows.push(a); return { meta: { changes: 1 } } },
+const tries = new Map()
+const db = { batch: async (list) => list.map((st) => { const k = st.a.join('|'), n = (tries.get(k) || 0) + 1; tries.set(k, n); return { results: [{ n }] } }),
+  prepare: (sql) => ({ bind: (...a) => ({ sql, a, run: async () => { if (sql.startsWith('INSERT INTO svc_buy')) rows.push(a); return { meta: { changes: 1 } } },
   first: async () => (rows[0] ? { ref: rows[0][0], card: rows[0][1], opt: rows[0][2], qty: rows[0][3], addon: 0, total: rows[0][5], due: rows[0][6], cur: rows[0][7], contact: rows[0][8], state: 'booked' } : null),
   all: async () => ({ results: [] }) }), all: async () => ({ results: [] }) }) }
 const told = []
@@ -101,6 +106,10 @@ const slipTry = () => onRequest({ env: { TASKS: db }, params: { path: ['slip'] }
   request: new Request('https://hongdam.net/api/buy/slip', { method: 'POST', headers: { origin: 'https://hongdam.net' }, body: (() => { const f = new FormData(); f.set('ref', 'HD-TRY000'); return f })() }) })
 for (let i = 0; i < 5; i++) assert.notEqual((await slipTry()).status, 429)
 assert.equal((await slipTry()).status, 429); assert.equal((await (await slipTry()).json()).why, 'tries')
+// no tries table, or D1 down: refused before SlipOK is asked
+const noTries = { prepare: () => ({ bind: () => ({}) }), batch: async () => { throw new Error('no such table: tries') } }
+assert.equal((await onRequest({ env: { TASKS: noTries }, params: { path: ['claim'] }, waitUntil: () => {},
+  request: new Request('https://hongdam.net/api/buy/claim', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: JSON.stringify({ ref: 'HD-TRY001', how: 'wise' }) }) })).status, 429)
 // a payment marked by the team counts as paid demand, under the order's own who
 const ins = []
 const db2 = { prepare: (sql) => ({ bind: (...a) => ({ run: async () => { ins.push([sql, a]); return { meta: { changes: 1 } } },
@@ -111,5 +120,10 @@ await onRequest({ env: { TASKS: db2, TASKS_ADMIN: 'k' }, params: { path: ['state
 await Promise.all(wait)
 const paid = ins.filter(([q, a]) => q.startsWith('INSERT INTO svc_order') && a[3] === 'paid').map(([, a]) => a[0]).sort()
 assert.deepEqual(paid, ['car-buy', 'dispute'])
+// the walk unreadable (D1 down): 503 with retry, no order (CodeRabbit on #53)
+const down = { prepare: () => { const st = { bind: () => st, all: async () => { throw new Error('D1 down') }, first: async () => { throw new Error('D1 down') }, run: async () => { throw new Error('D1 down') } }; return st } }
+const dr = await onRequest({ env: { TASKS: down }, params: {}, waitUntil: () => {},
+  request: new Request('https://hongdam.net/api/buy', { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://hongdam.net' }, body: JSON.stringify({ card: 'trades', opt: 'trades', contact: 'a@b.co' }) }) })
+assert.equal(dr.status, 503); assert.deepEqual(await dr.json(), { ok: false, why: 'price', retry: true })
 globalThis.fetch = realFetch
 console.log('buy ok')

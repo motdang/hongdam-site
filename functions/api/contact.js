@@ -11,6 +11,7 @@
  */
 
 import { record, whoHash } from '../_services.js'
+import { tryOnce } from '../_tries.js'
 
 const LIMITS = { name: 120, email: 200, line: 80, service: 200, page: 200, message: 4000 };
 
@@ -96,15 +97,10 @@ export async function onRequestPost({ request, env }) {
   return reply(200, { ok: true });
 }
 
-// At most three orders a day from one address count toward prices.
+// At most three form orders a day from one address count toward prices (atomic D1 counter, functions/_tries.js).
 async function counted(env, request) {
-  if (!env.RT_LIMIT) return true;
   const ip = request.headers.get("cf-connecting-ip") || "?";
-  const k = `svc:${ip}:${new Date().toISOString().slice(0, 10)}`;
-  const n = Number(await env.RT_LIMIT.get(k)) || 0;
-  if (n >= 3) return false;
-  await env.RT_LIMIT.put(k, String(n + 1), { expirationTtl: 2 * 86400 });
-  return true;
+  return tryOnce(env.TASKS, [["form:ip:" + ip, 3]]);
 }
 
 // A bare GET on the endpoint should not look like a broken page.

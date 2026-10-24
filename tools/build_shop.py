@@ -58,6 +58,23 @@ def money(n, cur="THB"):
     return ("US$" if cur == "USD" else "฿") + "{:,}".format(n)
 
 
+def amt_cls(cur):
+    """A price's mark (her ask 2026-10-24): a Thai flag before baht, a US flag and its own colour for US$ (shop.css)."""
+    return "amt amt-us" if cur == "USD" else "amt amt-th"
+
+
+def money_h(n, cur="THB"):
+    return '<span class="%s">%s</span>' % (amt_cls(cur), E(money(n, cur)))
+
+
+MONEY_RE = _re.compile(r"(US\$|฿)(\d[\d,]*(?:\.\d+)?)")
+
+
+def mark_money(html):
+    """฿ and US$ amounts in escaped running text, each in its mark."""
+    return MONEY_RE.sub(lambda m: '<span class="%s">%s%s</span>' % (amt_cls("USD" if m.group(1) == "US$" else "THB"), m.group(1), m.group(2)), html)
+
+
 def tr(d, lang):
     """A word in this language; English when a translation is missing (the build lists those)."""
     if isinstance(d, str):
@@ -124,8 +141,8 @@ def walk_num(sid, part, cur, fallback):
 
 
 def live_span(sid, part, cur, n):
-    return '<span data-live="services/%s"%s%s>%s</span>' % (
-        E(sid), ' data-part="tail"' if part == "tail" else "", ' data-cur="USD"' if cur == "USD" else "", E(money(n, cur)))
+    return '<span class="%s" data-live="services/%s"%s%s>%s</span>' % (
+        amt_cls(cur), E(sid), ' data-part="tail"' if part == "tail" else "", ' data-cur="USD"' if cur == "USD" else "", E(money(n, cur)))
 
 
 def price_rule(o):
@@ -153,7 +170,7 @@ def add_rule(c, lang=None):
     if lang:
         n = walk_num(a["i"], "price", "THB", a["fixed"])
         r["n"] = tr(a["n"], lang).replace("{price}", money(n))
-        r["nh"] = E(tr(a["n"], lang)).replace("{price}", live_span(a["i"], "price", "THB", n) if r.get("w") else E(money(n)))
+        r["nh"] = E(tr(a["n"], lang)).replace("{price}", live_span(a["i"], "price", "THB", n) if r.get("w") else money_h(n))
     return r
 
 
@@ -173,40 +190,51 @@ def opt_price(o, lang):
         s = E(tr(o["show"], lang))
         if "{price}" in s:
             n, t = walk_num(sid, "price", "THB", p["tier"][0]), walk_num(sid, "tail", "THB", p["tier"][2])
-            s = s.replace("{price}", live_span(sid, "price", "THB", n) if sid else E(money(n)))
-            s = s.replace("{tail}", live_span(sid, "tail", "THB", t) if sid else E(money(t)))
+            s = s.replace("{price}", live_span(sid, "price", "THB", n) if sid else money_h(n))
+            s = s.replace("{tail}", live_span(sid, "tail", "THB", t) if sid else money_h(t))
         return s, n, "THB"
     if p and "usd" in p:
         if sid:
             return live_span(sid, part, "USD", walk_num(sid, part, "USD", p["usd"])) + E(per), None, "USD"
-        return E(money(p["usd"], "USD") + per), None, "USD"
+        return money_h(p["usd"], "USD") + E(per), None, "USD"
     if p and "fixed" in p:
         if sid:
             n = walk_num(sid, part, "THB", p["fixed"])
             return live_span(sid, part, "THB", n) + E(per), n, "THB"
-        return E(money(p["fixed"]) + per), p["fixed"], "THB"
+        return money_h(p["fixed"]) + E(per), p["fixed"], "THB"
     if "pct" in it:
         v = LIVE.get("services/" + it["id"]) or "%d%%" % it["pct"]
         return '<span data-live="services/%s">%s</span>%s' % (E(it["id"]), E(v), E(per)), None, "PCT"
     if "baht" in it:
         v = LIVE.get("services/" + it["id"]) or money(it["baht"])
         n = int(v.replace("฿", "").replace(",", "")) if v.startswith("฿") else it["baht"]
-        return '<span data-live="services/%s">%s</span>%s' % (E(it["id"]), E(v), E(per)), n, "THB"
+        return '<span class="amt amt-th" data-live="services/%s">%s</span>%s' % (E(it["id"]), E(v), E(per)), n, "THB"
     if o.get("free"):
         return E(ui["free"]), 0, "THB"
     raise SystemExit("no price for option %s" % o["i"])
 
 
+# A rate per month or per hour is not a card's "from" price: ฿600 for an extra hour beside a ฿25,000 set-up
+# reads as the price of the job (CodeRabbit on #55). tools/seo.py reads the same options.
+TIME_UNITS = {"month", "hour"}
+
+
+def from_options(c):
+    """The options of a card that can stand as its "from" price: none priced per month or per hour.
+    Add-ons are never among them. Empty when every option runs by time."""
+    return [o for o in c.get("opts", []) if o.get("u") not in TIME_UNITS]
+
+
 def card_price(c, lang):
     ui = SHOP["ui"][lang]
     if c.get("pshow"):
-        return E(tr(c["pshow"], lang))
+        return mark_money(E(tr(c["pshow"], lang)))
     if c.get("live"):
         v = LIVE.get(c["live"], "")
-        return '<span data-live="%s">%s</span>' % (E(c["live"]), E(v))
+        return '<span%s data-live="%s">%s</span>' % (' class="amt amt-th"' if v.startswith("฿") else "", E(c["live"]), E(v))
     if c["act"] == "book":
         lowest = min(int(v.replace("฿", "").replace(",", "")) for k, v in LIVE.items() if k.startswith(c["min"] + "/") and v.startswith("฿") and v != "฿0") if any(k.startswith(c["min"] + "/") for k in LIVE) else c.get("from", 0)
-        return ui["from"].replace("{p}", '<span data-min="%s">%s</span>' % (E(c["min"]), E(money(lowest))))
+        return ui["from"].replace("{p}", '<span class="amt amt-th" data-min="%s">%s</span>' % (E(c["min"]), E(money(lowest))))
     if c["act"] == "open":
         return E(ui["free"])
     opts = c.get("opts", [])
@@ -216,11 +244,13 @@ def card_price(c, lang):
         if c["act"] == "list":
             return ""
         return opt_price(opts[0], lang)[0]
-    nums = [opt_price(o, lang) for o in opts]
-    thb = [n for _, n, cur in nums if cur == "THB" and n]
+    elig = from_options(c)
+    nums = [opt_price(o, lang) for o in (elig or opts)]
+    thb = sorted((n, h) for h, n, cur in nums if cur == "THB" and n)
     if not thb:
         return nums[0][0]
-    return ui["from"].replace("{p}", E(money(min(thb))))
+    # every option runs by time: the lowest, with its unit ("from ฿2,000 / month")
+    return ui["from"].replace("{p}", money_h(thb[0][0]) if elig else thb[0][1])
 
 
 def go_of(c, lang):
@@ -423,10 +453,10 @@ def know(lang, cat):
         host = urlsplit(u).netloc.removeprefix("www.")
         return ' <a class="src" href="%s" target="_blank" rel="noopener">%s</a>' % (E(quote(u, safe=":/?=&#%~+,;@!$*'()")), E(host))
     out = '<section class="know">\n<h2>%s</h2>\n<ul>%s</ul>\n' % (
-        E(ui["know"]), "".join("<li>%s%s</li>" % (E(tr(f["t"], lang)), src(f["src"])) for f in cat.get("facts", [])))
+        E(ui["know"]), "".join("<li>%s%s</li>" % (mark_money(E(tr(f["t"], lang))), src(f["src"])) for f in cat.get("facts", [])))
     if cat.get("costs"):
         out += '<h3>%s</h3>\n<table>%s</table>\n' % (E(ui["costs"]), "".join(
-            '<tr><th scope="row">%s</th><td>%s%s</td></tr>' % (E(tr(k["t"], lang)), E(tr(k["p"], lang)), src(k["src"])) for k in cat["costs"]))
+            '<tr><th scope="row">%s</th><td>%s%s</td></tr>' % (E(tr(k["t"], lang)), mark_money(E(tr(k["p"], lang))), src(k["src"])) for k in cat["costs"]))
     return out + '<p class="read">%s</p>\n</section>\n' % E(ui["read"].replace("{date}", SHOP.get("facts_read", "")))
 
 

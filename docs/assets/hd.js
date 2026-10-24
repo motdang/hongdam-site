@@ -19,7 +19,7 @@ window.hd = hd
 
 function send() {
   if (!queue.length) return
-  const body = JSON.stringify({ s: id, ev: queue.splice(0, 40) })
+  const body = JSON.stringify({ s: id, ev: queue.splice(0, 20) })
   try { if (navigator.sendBeacon && navigator.sendBeacon('/api/hit', new Blob([body], { type: 'text/plain' }))) return } catch { /* fall through */ }
   fetch('/api/hit', { method: 'POST', body, keepalive: true, headers: { 'content-type': 'text/plain' } }).catch(() => {})
 }

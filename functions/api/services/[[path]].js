@@ -2,7 +2,7 @@
  * /api/services — Shoup prices for the services list at hongdam.net/ and /th/.
  *
  *   GET  /api/services                       every walking service: price now, floor, ceiling, slots, orders this month, the walk
- *   POST /api/services/order {svc, note?}    an order the team took on LINE or the phone      Authorization: Bearer TASKS_ADMIN
+ *   POST /api/services/order {svc, note}     an order the team took on LINE or the phone; note = the customer   Authorization: Bearer TASKS_ADMIN
  *   POST /api/services/price {svc, baht}     the Desk bot's price for a service it walks (Grab)  Authorization: Bearer TASKS_ADMIN
  *
  * Orders through the page's form are recorded by /api/contact. GET answers any origin.
@@ -18,7 +18,11 @@ export async function onRequest({ request, env, params }) {
   const db = env.TASKS, now = Date.now()
   const path = (params.path || []).join('/')
   if (request.method === 'GET' && !path) {
-    return json({ page: 'https://hongdam.net/', rule: RULE, first_month: monthName(OPENED_MONTH), kinds: await prices(db, now) })
+    try {
+      return json({ page: 'https://hongdam.net/', rule: RULE, first_month: monthName(OPENED_MONTH), kinds: await prices(db, now) })
+    } catch {
+      return json({ error: 'Prices are not available just now.' }, 503)
+    }
   }
   if (request.method !== 'POST') return json({ error: 'No such route' }, 404)
   const key = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '')
@@ -30,7 +34,10 @@ export async function onRequest({ request, env, params }) {
 
   if (path === 'order') {
     if (s.walk === 'desk') return json({ error: 'The Desk bot counts this one' }, 400)
-    const ok = await record(db, svc, 'team:' + (clean(b.note, 60) || now), 'desk', now)
+    // One order per customer per service per month: the customer's name or LINE name is the identity (CodeRabbit on #53).
+    const who = clean(b.note, 60).toLowerCase()
+    if (!who) return json({ error: 'note: the customer\'s name or LINE name' }, 400)
+    const ok = await record(db, svc, 'team:' + who, 'desk', now)
     return json({ ok }, ok ? 200 : 500)
   }
   if (path === 'price') {

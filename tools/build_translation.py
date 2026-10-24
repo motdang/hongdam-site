@@ -226,6 +226,9 @@ PRICES = {
 }
 
 CSS = """
+  .amt{white-space:nowrap}
+  .prices i .amt{display:inline}
+  .amt-th::before{content:""; display:inline-block; width:1.1em; height:.74em; margin-right:.28em; vertical-align:-.04em; border-radius:1.5px; background:center/100% 100% no-repeat; box-shadow:0 0 0 1px color-mix(in oklab, var(--cream) 22%, transparent); background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E")}
   .sub{display:block; font-family:"Avenir Next","Segoe UI",system-ui,"Thonburi","Noto Sans Thai","Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text",sans-serif; font-size:.42em; color:var(--gold-deep); font-weight:500; margin-top:10px; letter-spacing:.04em}
   .switch{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 6px}
   .switch a{border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:16px}
@@ -279,8 +282,8 @@ def page(lang):
         for k, n in SWITCH)
     lis = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
     opts = lambda xs: "".join(f"<option>{e(x)}</option>" for x in xs)
-    tailspan = lambda r: e(r[2]).replace("{tail}", f'<span data-live="services/{r[3]}#tail">{e(_t(r[3]))}</span>') if len(r) > 3 and "{tail}" in r[2] else e(r[2])
-    prices = "".join(f"<div><span>{e(r[0])}</span><b{' data-live=' + chr(34) + 'services/' + r[3] + chr(34) if len(r) > 3 else ''}>{e(r[1])}</b><i>{tailspan(r)}</i></div>" for r in PRICES[lang])
+    tailspan = lambda r: e(r[2]).replace("{tail}", f'<span class="amt amt-th" data-live="services/{r[3]}#tail">{e(_t(r[3]))}</span>') if len(r) > 3 and "{tail}" in r[2] else e(r[2])
+    prices = "".join(f"<div><span>{e(r[0])}</span><b class=\"amt amt-th\"{' data-live=' + chr(34) + 'services/' + r[3] + chr(34) if len(r) > 3 else ''}>{e(r[1])}</b><i>{tailspan(r)}</i></div>" for r in PRICES[lang])
     steps = "".join(f"<div><b>{e(h)}</b><p>{e(p)}</p></div>" for h, p in t["how"])
     pairs = "".join(f"<span>{e(p)}</span>" for p in t["pairs"])
     msgs = {k: t[k] for k in ("s_need", "s_sending", "s_ok", "s_err")}

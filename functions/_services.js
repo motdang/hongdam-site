@@ -79,7 +79,10 @@ export async function allCounts(db) {
       if (!SERVICES[svc]) continue
       for (const [m, t] of Object.entries(months)) (out[svc] ||= {})[m] = countOf(SERVICES[svc].slots, t.v, t.u)
     }
-  } catch { /* no table yet: every month reads as no orders */ }
+  } catch (e) {
+    // A failed read is not zero demand: walking on it would step every price down (CodeRabbit on #53).
+    throw new Error('svc_order unreadable: ' + (e && e.message))
+  }
   return out
 }
 

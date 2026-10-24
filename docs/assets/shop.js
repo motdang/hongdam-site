@@ -12,6 +12,9 @@ const T = D.ui
 const $ = (s, r = document) => r.querySelector(s)
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
 const fmt = (n, cur = 'THB') => (cur === 'USD' ? 'US$' : '฿') + Number(n).toLocaleString('en-US')
+// A price in its mark (her ask 2026-10-24): Thai flag before baht, US flag and its own colour for US$ (shop.css .amt).
+const amtCls = (cur) => (cur === 'USD' ? 'amt amt-us' : 'amt amt-th')
+const amtH = (n, cur = 'THB') => `<span class="${amtCls(cur)}">${esc(fmt(n, cur))}</span>`
 const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v) } catch { return null } }
 
 // Doodle dingbats: core.js, then the glyphs of this page's group (tools/dingbats.mjs). Words and buttons work before they arrive.
@@ -64,7 +67,7 @@ if (D.front && D.lang === 'en' && !store('hd-lang')) {
 // Today's prices
 const live = {}
 // The walk's number for a price shown in cur, or undefined while the walk has none in that currency (functions/_shop.js walkNum).
-const walkNum = (k, part, cur) => !k ? undefined : part === 'tail' ? (k.tail > 0 ? k.tail : undefined)
+const walkNum = (k, part, cur) => !k ? undefined : part === 'tail' ? (k.tail > 0 && (k.tail_unit || 'THB') === cur ? k.tail : undefined)
   : (k.cur || 'THB') === cur && (k.price ?? k.baht) > 0 ? (k.price ?? k.baht) : undefined
 const walkOf = (id) => live.services && live.services[id]
 function liveText(root = document) {
@@ -208,13 +211,13 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
     if (ad) { ad.hidden = !on; if (!on) f.elements.addon.checked = false }
     if ($('.addq', root)) $('.addq', root).hidden = !(on && f.elements.addon.checked)
     if (opt.unit) { qty.max = opt.max || 99; $('.unit', root).textContent = opt.unitMany || '' }
-    card.opts.forEach((o) => { const e = $(`.oprice[data-o="${o.id}"]`, root); if (e && o.price.walk) e.textContent = fmt(base(o)) + (o.per || '') })
+    card.opts.forEach((o) => { const e = $(`.oprice[data-o="${o.id}"]`, root); if (e && o.price.walk) e.innerHTML = amtH(base(o)) + esc(o.per || '') })
     liveText(root)
     const c = cur(opt), t = totalOf(opt, n(), f.elements.addon && f.elements.addon.checked)
-    $('#total', root).textContent = fmt(t, c)
+    const tot = $('#total', root); tot.textContent = fmt(t, c); tot.className = amtCls(c)
     const h = $('#halfnote', root)
     h.hidden = !half(t, c)
-    if (half(t, c)) h.textContent = T.half.replace('{now}', fmt(Math.ceil(t / 2), c))
+    if (half(t, c)) h.innerHTML = esc(T.half).replace('{now}', amtH(Math.ceil(t / 2), c))
   }
   f.addEventListener('change', (e) => {
     if (e.target.name === 'opt') opt = card.opts.find((o) => o.id === e.target.value) || opt
@@ -235,7 +238,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
       j = await (await fetch('/api/buy', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({
         card: card.id, opt: opt.id, qty: n(), addon: f.elements.addon && f.elements.addon.checked ? (card.add.unit ? addN() : true) : false, contact, note: f.elements.note.value, lang: D.lang }) })).json()
     } catch { j = { ok: false, why: 'service' } }
-    if (!j.ok) { m.textContent = T.err[j.why] || T.err.service; return }
+    if (!j.ok) { m.textContent = (j.retry ? T.err.service : T.err[j.why]) || T.err.service; return }
     m.textContent = ''
     f.hidden = true
     pay(j)
@@ -248,7 +251,7 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
 function pay(j) {
   const box = $('#pay')
   box.hidden = false
-  const amount = fmt(j.due, j.cur)
+  const amount = amtH(j.due, j.cur)
   const qr = j.pay.promptpay ? qrToSvg(promptPayPayload({ payeeId: j.pay.promptpay, satang: j.due * 100, merchantName: 'NaNoBotCo', ref: j.ref }),
     { ecl: 'M', border: 4, scale: 6, dark: '#000', light: '#fff', title: `PromptPay ${j.due} THB` }) : ''
   box.innerHTML = `<h2>${esc(T.order)} ${esc(j.ref)}</h2>
@@ -256,7 +259,7 @@ function pay(j) {
 ${qr ? `<section class="way"><h3>${esc(T.pp)}</h3><div class="qr">${qr}</div><p>${esc(T.scan)}</p>
 <form id="sf" hidden><label class="field">${esc(T.slip)}<input type="file" name="slip" accept="image/*" required></label><button class="btn" type="submit">${esc(T.slipBtn)}</button></form>
 <p id="smsg" role="status"></p></section>` : ''}
-<section class="way"><h3>PayPal · Wise</h3><p>${esc(T.abroad.replace('{usd}', 'US$' + j.pay.usd).replace('{amount}', amount).replace('{ref}', j.ref))}</p>
+<section class="way"><h3>PayPal · Wise</h3><p>${esc(j.cur === 'USD' ? T.abroad.replace(/\s*[(（][^)）]*\{usd\}[^)）]*[)）]/, '') : T.abroad).replace('{usd}', amtH(j.pay.usd, 'USD')).replace('{amount}', amount).replace('{ref}', esc(j.ref))}</p>
 <p><a class="btn" href="${esc(j.pay.paypal)}" target="_blank" rel="noopener">PayPal</a> <a class="btn" href="${esc(j.pay.wise)}" target="_blank" rel="noopener">Wise</a></p>
 <p><button class="btn alt" type="button" data-claim="paypal">${esc(T.ipaid)} PayPal</button> <button class="btn alt" type="button" data-claim="wise">${esc(T.ipaid)} Wise</button></p>
 <p id="cmsg" role="status"></p></section>
