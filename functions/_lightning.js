@@ -1,8 +1,8 @@
 /**
  * Bitcoin by Lightning for Buy-button orders (her ask 2026-10-24: "hongdam should allow lightning payment").
  *
- * The Lightning Address in PAY.lightning (functions/_shop.js; LN_ADDRESS on the Pages project overrides it, and an
- * empty one turns Lightning off) receives the money. For each order the address's wallet is asked for a bill
+ * The Lightning Address in PAY.lightning (functions/_shop.js; empty turns Lightning off) receives the money. It is the
+ * one setting, so the pages built from it (tools/build_shop.py) and this API agree on whether Lightning is on. For each order the address's wallet is asked for a bill
  * (LNURL-pay, LUD-06 and LUD-16) for the amount due in sats at this minute's bitcoin price (Kraken, Coinbase as
  * the spare) and the day's exchange rate (functions/_fx.js). A bill whose amount differs from the one asked for is
  * refused. When the wallet's answer carries a verify address (LUD-21), the order is marked paid once that address
@@ -12,11 +12,11 @@
 import { PAY } from './_shop.js'
 
 /** The Lightning Address in use, or '' when Lightning is off. */
-export function lnAddress(env = {}) {
-  const a = String(env.LN_ADDRESS ?? PAY.lightning ?? '').trim().toLowerCase()
+export function lnAddress() {
+  const a = String(PAY.lightning ?? '').trim().toLowerCase()
   return /^[a-z0-9._+-]+@[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(a) ? a : ''
 }
-export const lnOn = (env) => !!lnAddress(env)
+export const lnOn = () => !!lnAddress()
 
 async function getJSON(url, opts = {}) {
   const r = await fetch(url, { signal: AbortSignal.timeout(6000), headers: { accept: 'application/json' }, ...opts })
@@ -50,7 +50,7 @@ export function satsFor(amount, cur, btc, rates) {
  * verify is '' when the wallet gives no way to check the payment.
  */
 export async function makeBill(env, { msat, comment }) {
-  const [user, host] = lnAddress(env).split('@')
+  const [user, host] = lnAddress().split('@')
   if (!host) return { error: 'off' }
   const meta = await getJSON(`https://${host}/.well-known/lnurlp/${encodeURIComponent(user)}`)
   if (meta.tag !== 'payRequest' || typeof meta.callback !== 'string') return { error: 'ln' }
