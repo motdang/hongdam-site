@@ -1305,6 +1305,14 @@ export const CARDS = {
     "max": 99
    },
    {
+    "id": "grant-manage",
+    "price": {
+     "walk": true
+    },
+    "unit": true,
+    "max": 12
+   },
+   {
     "id": "gifts-ready",
     "price": {
      "walk": true

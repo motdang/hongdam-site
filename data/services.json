@@ -3272,6 +3272,19 @@
      "d_th": "ใบสมัครหนึ่งฉบับ ค้นข้อมูลและเขียนตามแบบของแหล่งทุน"
     },
     {
+     "id": "grant-manage",
+     "en": "Grant management",
+     "th": "บริหารทุนที่ได้รับ",
+     "baht": 10000,
+     "floor": 6000,
+     "ceiling": 20000,
+     "slots": 3,
+     "p_en": "{price} a month per grant",
+     "p_th": "เดือนละ {price} ต่อทุน",
+     "d_en": "For a grant you have won: spending kept against the grant budget from your receipts, the funder's reporting dates on a calendar, and the interim and final reports written to the funder's form.",
+     "d_th": "สำหรับทุนที่ได้รับแล้ว บันทึกการใช้เงินเทียบงบของทุนจากใบเสร็จของคุณ ใส่กำหนดส่งรายงานของแหล่งทุนในปฏิทิน และเขียนรายงานระหว่างโครงการและรายงานปิดโครงการตามแบบของแหล่งทุน"
+    },
+    {
      "id": "findable",
      "en": "Collection findable online",
      "th": "ทำให้คอลเลกชันค้นเจอออนไลน์",

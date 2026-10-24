@@ -5507,13 +5507,13 @@
     "de": "Fördergelder und Grossspenden"
    },
    "l": {
-    "en": "Grant applications, a case for support, a funder calendar.",
-    "th": "ใบสมัครทุน เอกสารนำเสนอ ปฏิทินแหล่งทุน",
-    "my": "ထောက်ပံ့ငွေ လျှောက်လွှာ၊ အထောက်အပံ့ တောင်းခံစာ၊ ရန်ပုံငွေ ပြက္ခဒိန်။",
-    "zh": "基金申请、募捐说明书、资助方日历。",
-    "de": "Förderanträge, ein Spendenkonzept, ein Kalender der Geldgeber."
+    "en": "Grant applications, a case for support, reports to funders.",
+    "th": "ใบสมัครทุน เอกสารนำเสนอ รายงานถึงแหล่งทุน",
+    "my": "ထောက်ပံ့ငွေ လျှောက်လွှာ၊ အထောက်အပံ့ တောင်းခံစာ၊ ရန်ပုံငွေရှင်ထံ အစီရင်ခံစာ။",
+    "zh": "基金申请、募捐说明书、给资助方的报告。",
+    "de": "Förderanträge, ein Spendenkonzept, Berichte an Geldgeber."
    },
-   "kw": "grant grant writing proposal funder foundation major gifts fundraising strategy ทุน ขอทุน 基金 申请 资助",
+   "kw": "grant grant writing proposal funder foundation major gifts fundraising strategy ทุน ขอทุน 基金 申请 资助 grant management grant reporting post-award บริหารทุน รายงานทุน 基金管理 Förderverwaltung",
    "act": "buy",
    "opts": [
     {
@@ -5525,6 +5525,18 @@
       "zh": "一份基金申请",
       "de": "Ein Förderantrag"
      }
+    },
+    {
+     "i": "grant-manage",
+     "n": {
+      "en": "Grant management",
+      "th": "บริหารทุนที่ได้รับ",
+      "my": "ရရှိထားသော ထောက်ပံ့ငွေ စီမံခန့်ခွဲမှု",
+      "zh": "获批基金管理",
+      "de": "Verwaltung bewilligter Fördergelder"
+     },
+     "u": "month",
+     "max": 12
     },
     {
      "i": "gifts-ready",
