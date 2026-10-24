@@ -413,6 +413,7 @@ def front(lang):
     out += search_box(lang)
     pop = sorted((c for c in SHOP["cards"] if c.get("pop")), key=lambda c: c["pop"])
     out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
+    out += studio_band(lang)
     count = {}
     for c in SHOP["cards"]:
         count[c["cat"]] = count.get(c["cat"], 0) + 1
@@ -426,6 +427,26 @@ def front(lang):
     return out
 
 
+STUDIO_F = os.path.join(HERE, "data", "studio", "studio.json")
+STUDIO = json.load(open(STUDIO_F, encoding="utf-8")) if os.path.exists(STUDIO_F) else None
+
+
+def studio_band(lang, cat=None):
+    """Hongdam Studio, the tech side (tools/build_studio.py): a card on the front page, a line on the categories its
+    practices sell from."""
+    if not STUDIO or lang not in STUDIO["ui"]:
+        return ""
+    su = STUDIO["ui"][lang]
+    if cat:
+        if cat not in {p["cat"] for p in STUDIO["practices"]}:
+            return ""
+        return '<p class="lede"><a href="%s">%s →</a> %s</p>\n' % (url(lang, "studio/"), E(su["name"]), E(su["band"]))
+    return ('<h2>%s</h2>\n<ul class="cards"><li class="card" id="studio" style="--line:var(--c-web)">%s<h3>%s</h3><p class="l">%s</p>'
+            '<a class="btn" href="%s">%s</a></li></ul>\n' % (
+                E(su["name"]), job(["robot", "laptop", "wrench", "lock"], lang, name="job-studio"), E(su["h1"]), E(su["band"]),
+                url(lang, "studio/"), E(SHOP["ui"][lang]["open"])))
+
+
 def category(lang, cat):
     ui = SHOP["ui"][lang]
     name = tr(cat["n"], lang)
@@ -436,6 +457,7 @@ def category(lang, cat):
         cat["id"], db(door, play="loop") if door else '<span aria-hidden="true">%s</span>' % cat["emoji"], E(name), E(tr(cat["l"], lang)))
     if cat.get("note"):
         out += '<p><b>%s</b></p>\n' % E(tr(cat["note"], lang))
+    out += studio_band(lang, cat["id"])
     out += '<ul class="cards">%s</ul>\n' % "".join(card_html(c, lang) for c in SHOP["cards"] if c["cat"] == cat["id"])
     out += know(lang, cat)
     out += search_box(lang) + not_here(lang) + '</main>\n' + foot(lang, group=cat["id"])

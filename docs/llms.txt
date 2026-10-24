@@ -372,6 +372,21 @@ https://hongdam.net/api/services. GitHub, PHP fix and bot prices move each Monda
 bookings: /api/github, /api/php, /api/bots.
 <!-- SERVICES:END -->
 
+## Hongdam Studio
+
+Hongdam Studio is the tech side of Hongdam: vibe-coded apps finished and published, security, language models
+and machine learning, workflow automation. Page: https://hongdam.net/studio/ (and /th/, /my/, /zh/, /de/ before it).
+Prices are the shop's own cards and walk with them.
+
+- Last mile: Apps built with Lovable, Bolt, Replit or Cursor: read, fixed, tested and published on your own accounts. Services: Finish my vibe code (https://hongdam.net/buy/?c=vibe), Move to new hosting (https://hongdam.net/buy/?c=web-move), Website care (https://hongdam.net/buy/?c=web-care), Google and AI set-up (https://hongdam.net/buy/?c=web-found), Easier to read (https://hongdam.net/buy/?c=accessible), Standby copy of your site (https://hongdam.net/buy/?c=mirror), Search box for your site (https://hongdam.net/buy/?c=web-search), Let partners and AI read your WordPress (https://hongdam.net/buy/?c=wp-api).
+- Security: Chatbots attacked and fixed, PHP and WordPress patched, hacked sites cleaned, your domain's mail records set, devices read for evidence. Services: Fix PHP or WordPress (https://hongdam.net/php/), Chatbot attack test (https://hongdam.net/buy/?c=redteam), Test your chatbot yourself (https://hongdam.net/redteam), Hacked site cleanup (https://hongdam.net/buy/?c=sec-hacked), Stop fake emails in your name (https://hongdam.net/buy/?c=sec-mail), App tested on Thai phones (https://hongdam.net/buy/?c=app-test), Device forensics (https://hongdam.net/ask/?about=forensics).
+- Models: Language models picked by measurement: assistants that answer from your pages, an AI website builder on your own computer, big files cleaned by AI, prices that follow demand. Services: AI assistant under your name (https://hongdam.net/buy/?c=ai-assistant), Your own AI website builder (https://hongdam.net/buy/?c=ai-own), One LINE for many shops (https://hongdam.net/buy/?c=ai-line), Clean or sort a big file with AI (https://hongdam.net/buy/?c=ai-batch), Prices that follow demand (https://hongdam.net/buy/?c=demand-prices), Charge AI crawlers (https://hongdam.net/buy/?c=crawl-pay), A bot that gives your demo on Zoom (https://hongdam.net/ask/?about=demo-bot).
+- Automation: Jobs that run themselves: workflows in n8n, Make, Zapier or code; bots that find work or news; collectors that read the web into a table. Services: Automation (https://hongdam.net/buy/?c=ai-automation), Bots that find work or news (https://hongdam.net/bots/), Data collector (https://hongdam.net/buy/?c=data-crawl), Price watch (https://hongdam.net/buy/?c=price-watch), Visitor count: people and bots (https://hongdam.net/buy/?c=traffic), A question researched (https://hongdam.net/buy/?c=research).
+
+Notes from the bench, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
+JSON Feed https://hongdam.net/studio/feed.json. Each note lists its sources at the foot.
+
+
 ## The work
 
 The portfolio at https://hongdam.net/portfolio/ lists live work. The list below
@@ -574,4 +589,6 @@ Each page hides an easter egg near its foot: a small doodle egg. Tap it, or type
 - https://hongdam.net/tasks/graph/ — Everything connects.
 - https://hongdam.net/events/ — See you there.
 - any other page — Found one.
+- https://hongdam.net/studio/ — Shipped. The swan signed the commit.
+- https://hongdam.net/studio/notes/ — Another note off the bench.
 <!-- EGGS:END -->

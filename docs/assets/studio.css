@@ -1,0 +1,209 @@
+/* Hongdam Studio (hongdam.net/studio/): the black room inside the paper shop. Loaded after shop.css.
+   The room (.s-room) is dark in both modes; the reading floor follows the reader's light or dark setting.
+   Line colours (--line, the shop's category hues) mark borders, bars and dots; words stay in --fg and --mut. */
+
+:root:has(body.studio) {
+  --bg: #F6F5F1; --bg2: #FFFFFF; --fg: #0E0E10; --mut: #4A4950; --rule: #0E0E10; --acc: #0E0E10;
+  --faint: rgba(14, 14, 16, .14); --tint: rgba(14, 14, 16, .045);
+  --sig: #FF5A3C; --sig-t: #B8321A;
+  --room: #0E0E10; --room2: #17171B; --on: #F3F2EE; --on-mut: #ADACB3; --grid: rgba(243, 242, 238, .065);
+  --s-sans: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans Thai", Thonburi, "Noto Sans Myanmar", "Myanmar Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:has(body.studio) {
+  --bg: #111113; --bg2: #19191D; --fg: #F1F0EC; --mut: #B9B8BF; --rule: #F1F0EC; --acc: #F1F0EC;
+  --faint: rgba(241, 240, 236, .16); --tint: rgba(241, 240, 236, .06); --sig-t: #FF7A60;
+  --room: #08080A; --room2: #121215;
+} }
+
+body.studio { max-width: none; padding: 0; background: var(--bg); font-family: var(--s-sans) }
+body.studio header.top { margin: 0; padding-inline: max(1rem, calc((100vw - 68rem) / 2)) }
+.s-wrap { max-width: 68rem; margin-inline: auto; padding-inline: 1rem }
+@media (min-width: 48rem) { .s-wrap { padding-inline: 2rem } body.studio header.top { padding-inline: max(2rem, calc((100vw - 68rem) / 2)) } }
+
+/* ---------------------------------------------------------------- the room */
+.s-room { --fg: var(--on); --mut: var(--on-mut); --rule: var(--on); --faint: rgba(243, 242, 238, .16); --tint: rgba(243, 242, 238, .06);
+  --sig-t: #FF7A60; --db-look: ink; --lL: .76; --lC: .15;
+  position: relative; background-color: var(--room); color: var(--on);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 2.5rem 2.5rem; background-position: -1px -1px }
+.s-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.5rem; max-width: 68rem; margin: 0 auto; padding: .85rem 1rem;
+  border-bottom: 1px solid var(--faint) }
+@media (min-width: 48rem) { .s-bar { padding-inline: 2rem } }
+.s-name { margin-right: auto; text-decoration: none; font-size: 1.05rem; letter-spacing: -.01em }
+.s-name b { font-weight: 800 }
+.s-name span { font: 600 .74rem/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--sig-t); margin-left: .35rem }
+.s-bar ul { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; margin: 0; padding: 0; list-style: none }
+.s-bar a:not(.s-name) { display: inline-flex; align-items: center; min-height: 2.4rem; font: 600 .76rem/1 var(--mono); letter-spacing: .12em;
+  text-transform: uppercase; text-decoration: none; color: var(--on-mut) }
+:lang(th) .s-bar a:not(.s-name), :lang(my) .s-bar a:not(.s-name), :lang(zh) .s-bar a:not(.s-name) { font: 600 .95rem/1 var(--s-sans); letter-spacing: 0 }
+.s-bar a:hover, .s-bar a[aria-current] { color: var(--on) }
+.s-bar a[aria-current] { box-shadow: inset 0 -2px 0 var(--sig) }
+
+.s-hero { position: relative; padding-block: 3.2rem 2.6rem }
+.s-hero.s-short { padding-block: 2.4rem 2rem }
+.s-kicker { display: flex; align-items: center; gap: .6rem; margin: 0 0 1.4rem; font: 600 .78rem/1.3 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--on-mut) }
+.s-kicker::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--sig); box-shadow: 0 0 0 4px rgba(255, 90, 60, .18) }
+:lang(th) .s-kicker, :lang(my) .s-kicker, :lang(zh) .s-kicker { font: 600 .95rem/1.4 var(--s-sans); letter-spacing: .02em }
+body.studio h1, body.studio h2, body.studio h3 { text-transform: none }
+body.studio h1 { margin: 0; max-width: 15ch; font: 760 clamp(3.1rem, 13vw, 7.6rem)/.94 var(--s-sans); letter-spacing: -.05em; text-wrap: balance }
+body.studio :lang(th) h1, body.studio:lang(th) h1, body.studio :lang(my) h1, body.studio:lang(my) h1 { max-width: 20ch; font-size: clamp(2.3rem, 9vw, 4.8rem); line-height: 1.22; letter-spacing: -.01em }
+body.studio .s-short h1 { font-size: clamp(2.8rem, 10vw, 5.4rem) }
+.s-lede { max-width: 38rem; margin: 1.5rem 0 0; font-size: clamp(1.15rem, 2.4vw, 1.4rem); line-height: 1.5; color: var(--on-mut) }
+.s-cta { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.8rem 0 0 }
+.s-counts { margin: 2.4rem 0 0; padding-top: .9rem; border-top: 1px solid var(--faint); font: 500 .8rem/1.6 var(--mono); letter-spacing: .02em; color: var(--on-mut) }
+:lang(th) .s-counts, :lang(my) .s-counts { font: 500 .95rem/1.6 var(--s-sans) }
+.s-counts a { color: var(--on) }
+.s-swan { position: absolute; right: 1rem; top: 2.2rem; padding: 0; border: 0; background: none; color: inherit; cursor: pointer;
+  font-size: clamp(3.6rem, 13vw, 8.5rem); line-height: 0; transition: transform .5s var(--ease) }
+@media (min-width: 48rem) { .s-swan { right: 2rem } }
+.s-swan.dip { transform: translateY(.12em) rotate(-8deg) }
+@media (max-width: 30rem) { .s-front .s-hero h1 { max-width: 7.5ch } }
+
+/* ---------------------------------------------------------------- buttons */
+.s-btn { display: inline-flex; align-items: center; min-height: 2.75rem; padding: .55rem 1.15rem; border-radius: 6px;
+  background: var(--fg); color: var(--bg); font-weight: 700; text-decoration: none; letter-spacing: -.005em }
+.s-room .s-btn { background: var(--sig); color: #0E0E10 }
+.s-btn.alt { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg) }
+.s-room .s-btn.alt { color: var(--on); box-shadow: inset 0 0 0 1.5px var(--on) }
+.s-btn.line { background: #06C755; color: #0E0E10 }
+.s-btn:hover { filter: brightness(1.08) }
+
+/* ---------------------------------------------------------------- sections */
+.s-h { margin: 4.2rem 0 1.2rem; font: 760 clamp(1.8rem, 5vw, 2.7rem)/1.08 var(--s-sans); letter-spacing: -.035em; text-transform: none; color: var(--fg) }
+.s-h::before { content: ""; display: block; width: 2.4rem; height: 3px; margin-bottom: 1rem; background: var(--sig) }
+:lang(th) .s-h, :lang(my) .s-h { letter-spacing: 0; line-height: 1.3; font-size: clamp(1.6rem, 4.6vw, 2.3rem) }
+.s-sub { max-width: 40rem; margin: -.4rem 0 1.4rem; font-size: 1.1rem; color: var(--mut) }
+.s-small { font-size: .95rem; margin-top: -.8rem }
+.s-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: 1.4rem 0 0 }
+.s-links a:not(.s-btn) { color: var(--mut); font: 600 .82rem/1 var(--mono); letter-spacing: .06em }
+
+/* practices */
+.s-practices { display: grid; gap: 2.6rem 3rem; margin: 0; padding: 0; list-style: none }
+@media (min-width: 60rem) { .s-practices { grid-template-columns: 1fr 1fr } }
+.s-pr { padding-top: 1rem; border-top: 2px solid var(--fg); scroll-margin-top: 5rem }
+.s-idx { margin: 0; font: 600 .8rem/1 var(--mono); letter-spacing: .14em; color: var(--sig-t) }
+.s-pr h3 { margin: .55rem 0 .2rem; font: 740 clamp(1.5rem, 4vw, 1.95rem)/1.15 var(--s-sans); letter-spacing: -.03em }
+:lang(th) .s-pr h3, :lang(my) .s-pr h3 { letter-spacing: 0; line-height: 1.35 }
+.s-pl { margin: .3rem 0 1rem; color: var(--mut) }
+.job.s-line { margin-block: .4rem .2rem }
+.job.s-mini { --stop: 1.9rem; margin: 0 0 .6rem }
+
+/* service rows: the shop's cards, one line each, the shop's own prices */
+.s-svc { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--faint) }
+.s-row a { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "n p" "l g"; gap: .15rem 1rem; padding: .8rem .2rem;
+  border-bottom: 1px solid var(--faint); text-decoration: none }
+.s-row a:hover { background: var(--tint) }
+.s-rn { grid-area: n; font-weight: 680; letter-spacing: -.01em }
+.s-rl { grid-area: l; font-size: .93rem; color: var(--mut) }
+.s-rp { grid-area: p; justify-self: end; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap }
+.s-go { grid-area: g; align-self: end; justify-self: end; font: 700 .72rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--mut) }
+.s-go::after { content: " →" }
+:lang(th) .s-go, :lang(my) .s-go, :lang(zh) .s-go { font: 700 .9rem/1 var(--s-sans); letter-spacing: 0 }
+.s-row a:hover .s-go { color: var(--fg) }
+.s-rest { list-style: none } .s-rest .s-svc { border-top: 0 }
+.s-rest summary { display: flex; align-items: center; min-height: 2.8rem; padding: .3rem .2rem; border-bottom: 1px solid var(--faint); cursor: pointer;
+  font: 700 .76rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mut) }
+:lang(th) .s-rest summary, :lang(my) .s-rest summary, :lang(zh) .s-rest summary { font: 700 .95rem/1 var(--s-sans); letter-spacing: 0 }
+.s-rest summary::marker { content: "" } .s-rest summary::before { content: "+"; width: 1.2rem; font-size: 1rem } .s-rest details[open] summary::before { content: "−" }
+.s-more { margin: .8rem 0 0 } .s-more a { color: var(--mut); font-weight: 600 }
+.s-crew { margin-top: 1.6rem; max-width: 40rem }
+
+/* note cards */
+.s-notes { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none }
+@media (min-width: 52rem) { .s-notes:not(.s-all) { grid-template-columns: repeat(3, 1fr) } }
+.s-nc a { display: block; height: 100%; padding: 1.1rem 1.15rem 1.2rem; border: 1px solid var(--faint); border-top: 3px solid var(--line);
+  border-radius: 4px; background: var(--bg2); text-decoration: none; transition: transform .25s var(--ease), box-shadow .25s var(--ease) }
+.s-nc a:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .5) }
+.s-meta { margin: 0 0 .55rem; font: 600 .72rem/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mut) }
+.s-meta a { color: inherit }
+.s-beat::before { content: ""; display: inline-block; width: .5rem; height: .5rem; margin-right: .4rem; border-radius: 50%; background: var(--line); vertical-align: .05em }
+.s-nc h2, .s-nc h3 { margin: 0; font: 720 1.22rem/1.25 var(--s-sans); letter-spacing: -.02em; text-transform: none; color: var(--fg) }
+.s-all .s-nc h2 { font-size: clamp(1.25rem, 3vw, 1.55rem) }
+.s-th { margin: .35rem 0 0; color: var(--mut); font-size: .98rem; line-height: 1.55 }
+.s-dek { margin: .55rem 0 0; color: var(--mut); font-size: .98rem }
+.s-all { gap: 0 } .s-all .s-nc a { border-width: 0 0 1px; border-radius: 0; background: none; padding: 1.3rem .2rem; border-left: 3px solid var(--line); padding-left: 1rem }
+.s-all .s-nc a:hover { transform: none; box-shadow: none; background: var(--tint) }
+.s-nc[hidden] { display: none }
+.s-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.6rem 0 1rem }
+.s-chips a { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.4rem; padding: .3rem .9rem; border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--faint); text-decoration: none; font-weight: 600; font-size: .95rem }
+.s-chips a[data-beat]:not([data-beat=""])::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--line) }
+.s-chips a[aria-current] { background: var(--fg); color: var(--bg); box-shadow: none }
+
+/* work */
+.s-work { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none }
+@media (min-width: 44rem) { .s-work { grid-template-columns: 1fr 1fr } }
+.s-work a { display: block; height: 100%; padding: 1.15rem; border: 1px solid var(--faint); border-radius: 4px; background: var(--bg2); text-decoration: none }
+.s-work a:hover { box-shadow: inset 0 0 0 1.5px var(--fg) }
+.s-work h3 { margin: 0; font: 720 1.2rem/1.25 var(--s-sans); letter-spacing: -.02em }
+.s-work p { margin: .4rem 0 0; color: var(--mut); font-size: .98rem }
+.s-host { font: 600 .74rem/1 var(--mono) !important; letter-spacing: .08em; color: var(--mut) }
+
+/* who */
+.s-who { margin-top: 4.5rem; padding-block: .5rem 3.6rem }
+.s-who .s-h { color: var(--on) }
+.s-who blockquote { max-width: 54rem; margin: 0; padding-left: 1.2rem; border-left: 3px solid var(--sig) }
+.s-who blockquote p { margin: 0; font: 500 clamp(1.3rem, 3.4vw, 2rem)/1.42 var(--s-sans); letter-spacing: -.015em; color: var(--on) }
+:lang(th) .s-who blockquote p, :lang(my) .s-who blockquote p { line-height: 1.7; letter-spacing: 0 }
+
+/* ---------------------------------------------------------------- a note */
+.s-note { max-width: 44rem; margin: 2.4rem auto 0 }
+.s-note .s-meta { font-size: .76rem }
+body.studio .s-note h1 { max-width: none; font-size: clamp(2.1rem, 6.4vw, 3.5rem); line-height: 1.05; letter-spacing: -.04em }
+.s-note > .s-th { margin-top: .7rem; font-size: 1.15rem }
+.s-note > .s-dek { margin: 1rem 0 0; font-size: 1.25rem; line-height: 1.5; color: var(--mut) }
+.s-note > .job { margin: 1.4rem 0 .4rem }
+.s-body { font-size: 1.125rem; line-height: 1.72 }
+.s-body > p, .s-body > ul, .s-body > ol { margin: 1.05rem 0 }
+.s-body li + li { margin-top: .35rem }
+.s-body h2 { margin: 2.6rem 0 .6rem; font: 740 1.55rem/1.2 var(--s-sans); letter-spacing: -.025em; text-transform: none; color: var(--fg) }
+.s-body h3 { margin: 2rem 0 .4rem; font: 700 1.2rem/1.3 var(--s-sans); letter-spacing: -.015em }
+.s-body a { text-decoration-color: var(--line); text-decoration-thickness: 2px }
+.s-body code { padding: .08em .35em; border-radius: 4px; background: var(--tint); font: .9em/1 var(--mono) }
+.s-body blockquote { margin: 1.4rem 0; padding: .2rem 0 .2rem 1.1rem; border-left: 3px solid var(--line); color: var(--mut) }
+.s-body blockquote p { margin: 0 }
+.code { position: relative; margin: 1.4rem 0 }
+.code pre { margin: 0; padding: 1.05rem 1.1rem; overflow-x: auto; border-radius: 8px; background: #0E0E10; color: #EDECE8;
+  box-shadow: inset 0 0 0 1px rgba(243, 242, 238, .12); font: .86rem/1.6 var(--mono); tab-size: 2 }
+.code pre[data-lang]::before { content: attr(data-lang); display: block; margin-bottom: .55rem; font: 600 .68rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: #A9A8AE }
+.code pre code { padding: 0; background: none; font: inherit }
+.code .copy { position: absolute; top: .45rem; right: .45rem; min-height: 2.2rem; padding: .25rem .7rem; border: 0; border-radius: 5px;
+  background: #24242A; color: #EDECE8; font: 600 .72rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; cursor: pointer }
+.code .copy:hover { background: #33333A }
+sup.ref { line-height: 0 }
+sup.ref a { display: inline-block; min-width: 1.35em; padding: .1em .3em; border-radius: 4px; background: var(--tint); color: var(--fg); font: 700 .7rem/1.2 var(--mono); text-align: center; text-decoration: none }
+.tbl { margin: 1.4rem 0; overflow-x: auto }
+.s-body table { width: 100%; border-collapse: collapse; font-size: .97rem; font-variant-numeric: tabular-nums }
+.s-body th, .s-body td { padding: .55rem .6rem; border-bottom: 1px solid var(--faint); text-align: left; vertical-align: top }
+.s-body thead th { font: 700 .72rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mut); border-bottom: 2px solid var(--fg) }
+.s-body tbody th { font-weight: 650 }
+figure.chart { margin: 1.8rem 0; padding: 1.1rem 1.1rem .9rem; border: 1px solid var(--faint); border-radius: 6px; background: var(--bg2) }
+figure.chart caption { margin-bottom: .8rem; text-align: left; font: 700 .95rem/1.3 var(--s-sans); letter-spacing: -.01em }
+figure.chart .lo { font-weight: 500; color: var(--mut) }
+figure.chart table { width: 100%; border-collapse: collapse; font-size: .92rem }
+figure.chart th { width: 38%; padding: .32rem .7rem .32rem 0; border: 0; font-weight: 600; text-align: left }
+figure.chart td { padding: .32rem 0; border: 0 }
+figure.chart td { display: flex; align-items: center; gap: .5rem }
+.bar { flex: 0 0 auto; width: calc(var(--w) * .72); min-width: 3px; height: .95rem; border-radius: 2px; background: var(--line) }
+.v { font: 600 .82rem/1 var(--mono); white-space: nowrap }
+figure.chart figcaption { margin-top: .6rem; color: var(--mut); font-size: .88rem }
+.s-thsum { margin: 2.4rem 0 0; padding: 1.1rem 1.2rem; border-radius: 6px; background: var(--tint) }
+.s-thsum h2 { margin: 0 0 .4rem; font: 700 1rem/1.4 var(--s-sans); letter-spacing: 0; text-transform: none; color: var(--fg) }
+.s-thsum p { margin: 0; line-height: 1.75 }
+.s-src { margin-top: 2.6rem }
+.s-src h2, .s-buy h2 { margin: 0 0 .8rem; font: 700 .76rem/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--mut) }
+.s-src ol { margin: 0; padding-left: 1.5rem; font-size: .95rem }
+.s-src li { padding: .2rem 0; scroll-margin-top: 5rem }
+.s-src li:target { background: var(--tint); border-radius: 4px }
+.s-src .s-host { margin-left: .3rem }
+.s-buy { margin-top: 2.6rem }
+.s-pn { display: grid; gap: .8rem; margin-top: 2.8rem }
+@media (min-width: 40rem) { .s-pn { grid-template-columns: 1fr 1fr } .s-pn .s-new { grid-column: 2; text-align: right } }
+.s-pn a { display: block; padding: .9rem 1rem; border: 1px solid var(--faint); border-radius: 4px; text-decoration: none; font-weight: 650 }
+.s-pn a span { display: block; margin-bottom: .25rem; font: 600 .72rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mut) }
+
+/* the shop's footer and the rate box, on the wide Studio body */
+body.studio footer, body.studio .rate { max-width: 68rem; margin-inline: auto; padding-inline: 1rem }
+body.studio footer { margin-top: 4rem }
+@media (min-width: 48rem) { body.studio footer, body.studio .rate { padding-inline: 2rem } }
+@media (prefers-reduced-motion: reduce) { .s-nc a, .s-swan { transition: none } }

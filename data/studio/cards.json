@@ -1,0 +1,31 @@
+[
+ {
+  "out": "og/studio/front",
+  "kicker": "Hongdam Studio · Chiang Rai",
+  "title": "The last mile.",
+  "th": "งานเทคที่ค้างอยู่ เราปิดให้จบ",
+  "sub": "Vibe code finished · security · models · automation",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "lock"
+  ],
+  "hue": 258,
+  "hash": "e70194c766"
+ },
+ {
+  "out": "og/studio/notes",
+  "kicker": "Hongdam Studio · Notes",
+  "title": "Notes from the bench.",
+  "th": "บันทึกจากโต๊ะทำงาน",
+  "sub": "Models measured, holes found, fixes with their code.",
+  "line": [
+   "typewriter",
+   "page",
+   "send"
+  ],
+  "hue": 205,
+  "hash": "1452947977"
+ }
+]

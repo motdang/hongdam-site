@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title>Hongdam Studio notes</title>
+<subtitle>Models measured, holes found, fixes with their code, sources linked.</subtitle>
+<link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/"/>
+<link rel="self" href="https://hongdam.net/studio/feed.xml"/>
+<id>https://hongdam.net/studio/notes/</id>
+<updated>2026-10-24T06:00:00+07:00</updated>
+<icon>https://hongdam.net/assets/favicon.svg</icon>
+<author><name>Hongdam Studio</name><uri>https://hongdam.net/studio/</uri></author>
+</feed>
