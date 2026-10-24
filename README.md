@@ -9,6 +9,12 @@ uses `data/services.live.json`. The build stops when a price disagrees with its 
 node. `/services` redirects to `/` (`docs/_redirects`). Orders go to `/api/contact`, which
 takes an email address or a LINE ID. The portfolio is at `/portfolio/`.
 
+The pages outside the shop (your own builder, red team, market, bots, GitHub, translation, the task board and
+graph, events, portfolio, stats, invoices, 404) wear the shop's frame and look: `docs/assets/pages.css` on top of
+`shop.css`, and `tools/pages.py` for the head, top bar, heading with its dingbats, and footer. `data/pages.json` names
+each page's line colour, dingbats and link card; `data/pages/` holds the words of the pages kept by hand;
+`node tools/share_cards_pages.mjs <name>` draws a card, and `python3 tools/build_task_cards.py --all` the task cards.
+
 Prices walk monthly by Shoup's rule (her word 2026-10-15; monthly walk asked 2026-10-23): an item with
 `baht` (or `pct`, for sourcing) and its floor, ceiling and slots a month is written by the build into
 `functions/_services_data.js`; `functions/_services.js` walks it on the 1st, 00:00 Bangkok (over 80% of
@@ -72,10 +78,6 @@ controls (`disabled`, `aria-disabled="true"`) are left out, as WCAG leaves them 
   anything never pushed at all — `khwan`, `tel`, `michael-go-court`/legal
   material, `photo-mine`, `rusty-chandelier` (client-owned). None of these
   appear anywhere on the page.
-- **Hero graphics** are wichaa.net's own share-card art (`docs/assets/graphics/`
-  — moon complication, red spot dial, jovilabe, atlas), used as a parallax
-  background layer (JS `translateY` on scroll, `prefers-reduced-motion`
-  respected) plus a drifting animated-gradient backdrop.
 - **On the photo roll:** I didn't browse it. `photo-mine`'s own `BOTS.md` /
   `RABBIT_HOLES.md` document real passport, bank-card, financial, and medical
   hits mixed into that library — not something to page through for a business

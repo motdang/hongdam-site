@@ -1,0 +1,44 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Hongdam bots: Scout, Bot Bounty Desk, Earner",
+ "url": "https://hongdam.net/bots/",
+ "provider": {
+  "@type": "Organization",
+  "name": "Hongdam",
+  "url": "https://hongdam.net/"
+ },
+ "areaServed": "Worldwide",
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "Scout",
+   "price": "5000",
+   "priceCurrency": "THB"
+  },
+  {
+   "@type": "Offer",
+   "name": "Bot Bounty Desk",
+   "price": "10000",
+   "priceCurrency": "THB"
+  },
+  {
+   "@type": "Offer",
+   "name": "Earner",
+   "price": "30000",
+   "priceCurrency": "THB"
+  },
+  {
+   "@type": "Offer",
+   "name": "We run it, a month",
+   "price": "3000",
+   "priceCurrency": "THB"
+  },
+  {
+   "@type": "Offer",
+   "name": "A crew day on an impossible problem",
+   "price": "20000",
+   "priceCurrency": "THB"
+  }
+ ]
+}

@@ -1,162 +1,103 @@
-<!DOCTYPE html>
-<html lang="de" class="notranslate" translate="no">
+<!doctype html>
+<html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Übersetzung — Thai, Englisch, Burmesisch · Hongdam</title>
 <meta name="description" content="Hongdam übersetzt Dokumente, Geschäftstexte und Gespräche zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.">
-<meta name="theme-color" content="#171009">
-<meta name="color-scheme" content="dark">
-<link rel="icon" href="/assets/favicon.svg">
 <link rel="canonical" href="https://hongdam.net/translation/de/">
 <link rel="alternate" hreflang="en" href="https://hongdam.net/translation/">
 <link rel="alternate" hreflang="th" href="https://hongdam.net/translation/th/">
 <link rel="alternate" hreflang="my" href="https://hongdam.net/translation/my/">
 <link rel="alternate" hreflang="de" href="https://hongdam.net/translation/de/">
 <link rel="alternate" hreflang="x-default" href="https://hongdam.net/translation/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/shop.css?v=90dabd68">
+<link rel="stylesheet" href="/assets/pages.css?v=6df16afc">
+<meta name="theme-color" content="#F1EDE4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://hongdam.net/translation/de/">
+<meta property="og:site_name" content="Hongdam หงส์ดำ">
+<meta property="og:locale" content="de_DE">
 <meta property="og:title" content="Übersetzung — Thai, Englisch, Burmesisch · Hongdam">
 <meta property="og:description" content="Hongdam übersetzt Dokumente, Geschäftstexte und Gespräche zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.">
-<meta property="og:image" content="https://hongdam.net/og/translation.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Karte: Übersetzung zwischen Thai, Englisch und Burmesisch, Hongdam."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/translation.jpg"><meta name="twitter:image:alt" content="Karte: Übersetzung zwischen Thai, Englisch und Burmesisch, Hongdam.">
-<link rel="stylesheet" href="/assets/rt.css">
-<style>
-  .amt{white-space:nowrap}
-  .prices i .amt{display:inline}
-  .amt-th::before{content:""; display:inline-block; width:1.1em; height:.74em; margin-right:.28em; vertical-align:-.04em; border-radius:1.5px; background:center/100% 100% no-repeat; box-shadow:0 0 0 1px color-mix(in oklab, var(--cream) 22%, transparent); background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E")}
-  .sub{display:block; font-family:"Avenir Next","Segoe UI",system-ui,"Thonburi","Noto Sans Thai","Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text",sans-serif; font-size:.42em; color:var(--gold-deep); font-weight:500; margin-top:10px; letter-spacing:.04em}
-  .switch{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 6px}
-  .switch a{border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:16px}
-  .switch a[aria-current]{background:var(--gold); color:var(--lacquer); border-color:var(--gold)}
-  section{margin-top:52px}
-  h2{margin-bottom:16px}
-  .pairs{display:flex; flex-wrap:wrap; gap:12px}
-  .pairs span{background:var(--lacquer-2); border:1px solid var(--line); border-radius:10px; padding:12px 18px; font-size:20px; color:var(--gold)}
-  .prices{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; max-width:860px}
-  .prices div{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:18px}
-  .prices span{display:block; color:var(--cream); font-size:16px}
-  .prices b{display:block; font-family:Georgia,serif; font-size:30px; color:var(--gold); margin:4px 0}
-  .prices i{font-style:normal; color:var(--cream-dim); font-size:15px}
-  .note{margin-top:14px; max-width:62ch; color:var(--cream-dim); font-size:16px}
-  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
-  .col{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:20px}
-  .col h2{font-size:21px; color:var(--gold)}
-  .col ul{list-style:none}
-  .col li{padding:7px 0; border-top:1px solid var(--line); color:var(--cream-dim); font-size:16px}
-  .col li:first-child{border-top:0}
-  .stamp{display:grid; grid-template-columns:minmax(0,180px) 1fr; gap:24px; align-items:center; max-width:720px}
-  .stamp img{width:100%; height:auto; background:var(--cream); border-radius:50%; padding:6px}
-  .stamp p{color:var(--cream-dim)}
-  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; counter-reset:s}
-  .steps div{counter-increment:s; border-top:2px solid var(--gold-deep); padding-top:14px}
-  .steps b{display:block; color:var(--cream); font-size:18px}
-  .steps b::before{content:counter(s) ". "; color:var(--gold)}
-  .steps p{color:var(--cream-dim); font-size:16px; margin-top:4px}
-  form{max-width:640px; position:relative}
-  .row{display:grid; grid-template-columns:1fr 1fr; gap:0 16px}
-  .mail{margin-top:18px; font-size:16px; color:var(--cream-dim)}
-  footer{max-width:980px; margin:0 auto; padding:0 16px 48px; font-size:15px; color:var(--cream-dim)}
-  html[lang="my"] body{font-family:"Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text","Pyidaungsu",sans-serif; line-height:1.95; overflow-wrap:anywhere}
-  html[lang="my"] h1,html[lang="my"] h2{font-family:inherit; line-height:1.5}
-  html[lang="my"] label{text-transform:none; letter-spacing:0; font-size:15px}
-  @media (max-width:560px){.stamp{grid-template-columns:1fr}.stamp img{max-width:180px}.row{grid-template-columns:1fr}}
-</style>
-<meta name="google" content="notranslate">
-<meta name="robots" content="notranslate">
-<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Service",
- "name": "Übersetzung — Thai, Englisch, Burmesisch · Hongdam",
- "url": "https://hongdam.net/translation/de/",
- "serviceType": "Translation and interpreting",
- "inLanguage": "de",
- "availableLanguage": [
-  "th",
-  "en",
-  "my"
- ],
- "areaServed": [
-  "Chiang Rai Province",
-  "Chiang Mai Province",
-  "Thailand"
- ],
- "provider": {
-  "@id": "https://hongdam.net/#org"
- },
- "isPartOf": {
-  "@id": "https://hongdam.net/#site"
- }
-}
-</script>
+<meta property="og:url" content="https://hongdam.net/translation/de/">
+<meta property="og:image" content="https://hongdam.net/og/translation-de.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Hongdam · übersetzung, Thai · Englisch · Burmesisch — Übersetzen, Papier, Gestempelt, Fertig · hongdam.net">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Übersetzung — Thai, Englisch, Burmesisch · Hongdam">
+<meta name="twitter:description" content="Hongdam übersetzt Dokumente, Geschäftstexte und Gespräche zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.">
+<meta name="twitter:image" content="https://hongdam.net/og/translation-de.jpg">
+<meta name="twitter:image:alt" content="Hongdam · übersetzung, Thai · Englisch · Burmesisch — Übersetzen, Papier, Gestempelt, Fertig · hongdam.net">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Übersetzung — Thai, Englisch, Burmesisch · Hongdam","url":"https://hongdam.net/translation/de/","serviceType":"Translation and interpreting","inLanguage":"de","availableLanguage":["th","en","my"],"areaServed":["Chiang Rai Province","Chiang Mai Province","Thailand"],"provider":{"@id":"https://hongdam.net/#org"},"isPartOf":{"@id":"https://hongdam.net/#site"}}</script>
 </head>
-<body>
-<header class="top">
-  <a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-  <nav><a href="/translation/" aria-current="page">Translation</a><a href="/own">Own</a><a href="/redteam">Red team</a><a href="/market">Market</a></nav>
-</header>
+<body class="pg pg-translation" style="--line:var(--c-translate)">
+<header class="top"><a class="brand" href="/de/"><doodle-dingbat class="db mark" name="hongsa" play="loop" aria-hidden="true"></doodle-dingbat><span class="wm">Hongdam</span> <span class="wm-th" lang="th">หงส์ดำ</span></a><nav class="langs" aria-label="Sprache"><a href="/translation/" lang="en" hreflang="en" data-setlang="en">English</a> <a href="/translation/th/" lang="th" hreflang="th" data-setlang="th">ไทย</a> <a href="/translation/my/" lang="my" hreflang="my" data-setlang="my">မြန်မာ</a> <a href="/translation/de/" lang="de" hreflang="de" data-setlang="de" aria-current="true">Deutsch</a></nav><a class="line" href="https://line.me/R/ti/p/@964yxgnk">LINE</a></header>
 <main>
-  <h1>Übersetzung<span class="sub">Thai · Englisch · Burmesisch</span></h1>
-  <nav class="switch" aria-label="Language"><a href="/translation/" hreflang="en" lang="en">English</a><a href="/translation/th/" hreflang="th" lang="th">ไทย</a><a href="/translation/my/" hreflang="my" lang="my">မြန်မာ</a><a href="/translation/de/" hreflang="de" lang="de" aria-current="page">Deutsch</a></nav>
-  <p class="lede">Dokumente, Geschäftstexte und Gespräche, zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.</p>
+<p class="back"><a href="/de/translate/">← Übersetzung</a></p>
+<h1 class="cat-h"><doodle-dingbat class="db" name="translate" play="loop" aria-hidden="true"></doodle-dingbat><span>Übersetzung<small>Thai · Englisch · Burmesisch</small></span></h1>
+<div class="job page" role="img" aria-label="Papier, Übersetzen, Gestempelt, Fertig"><ol><li class="stop"><doodle-dingbat class="db" name="page" play="still" aria-hidden="true"></doodle-dingbat></li><li class="stop"><doodle-dingbat class="db" name="translate" play="still" aria-hidden="true"></doodle-dingbat></li><li class="stop"><doodle-dingbat class="db" name="stamp" play="still" aria-hidden="true"></doodle-dingbat></li><li class="stop"><doodle-dingbat class="db" name="done" play="still" aria-hidden="true"></doodle-dingbat></li></ol><span class="rider"><doodle-dingbat class="db" name="hongsa-stand" play="loop" aria-hidden="true"></doodle-dingbat></span></div>
+<p class="lede">Dokumente, Geschäftstexte und Gespräche, zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.</p>
 
-  <section>
-    <h2>Sprachen</h2>
-    <div class="pairs"><span>Thai ⇄ Englisch</span><span>Thai ⇄ Burmesisch</span><span>Englisch ⇄ Burmesisch</span></div>
-    <p class="note">Burmesisch kommt in Unicode-Myanmar-Schrift zurück. Eine Zawgyi-Fassung gibt es auf Wunsch, für Handys, die noch darauf eingestellt sind.</p>
-  </section>
+<section>
+  <h2>Sprachen</h2>
+  <div class="pairs"><span>Thai ⇄ Englisch</span><span>Thai ⇄ Burmesisch</span><span>Englisch ⇄ Burmesisch</span></div>
+  <p class="note">Burmesisch kommt in Unicode-Myanmar-Schrift zurück. Eine Zawgyi-Fassung gibt es auf Wunsch, für Handys, die noch darauf eingestellt sind.</p>
+</section>
 
-  <section class="cols">
-    <div class="col"><h2>Dokumente</h2><ul><li>Reisepass- und Ausweisseiten</li><li>Pink Card und Certificate of Identity (CI)</li><li>Hausregister (Tabien Baan)</li><li>Geburts-, Heirats- und Scheidungsurkunden</li><li>Polizeiliches Führungszeugnis</li><li>Bankschreiben und Kontoauszüge</li><li>Arbeitsverträge und Lohnabrechnungen</li><li>Unterlagen zur Arbeitserlaubnis</li><li>Zeugnisse und Diplome</li><li>Arztberichte und Atteste</li><li>Miet- und Pachtverträge</li><li>Schreiben von Ämtern, Schulen und Krankenhäusern</li></ul></div>
-    <div class="col"><h2>Geschäftliches</h2><ul><li>Speisekarten, Schilder und Preistafeln</li><li>Produktetiketten und Verpackungen</li><li>Aushänge, Betriebsregeln und Sicherheitsschilder, für burmesischsprachiges Personal</li><li>Verträge in zwei Sprachen nebeneinander</li><li>Websites und Apps, vom Studio gebaut oder übersetzt</li><li>Beiträge für LINE, Facebook und TikTok</li></ul></div>
-    <div class="col"><h2>Dolmetschen</h2><ul><li>Per Telefon oder Video, von überall</li><li>Persönlich in Chiang Rai und Chiang Mai</li><li>Einwanderungsbehörde und Arbeitsamt der Provinz</li><li>Besuche in Krankenhaus und Klinik</li><li>Polizei, Vermieter und Schulen</li><li>Vorstellungsgespräche und Schulungen fürs Personal</li></ul></div>
-  </section>
+<section class="cols">
+  <div class="col"><h2>Dokumente</h2><ul><li>Reisepass- und Ausweisseiten</li><li>Pink Card und Certificate of Identity (CI)</li><li>Hausregister (Tabien Baan)</li><li>Geburts-, Heirats- und Scheidungsurkunden</li><li>Polizeiliches Führungszeugnis</li><li>Bankschreiben und Kontoauszüge</li><li>Arbeitsverträge und Lohnabrechnungen</li><li>Unterlagen zur Arbeitserlaubnis</li><li>Zeugnisse und Diplome</li><li>Arztberichte und Atteste</li><li>Miet- und Pachtverträge</li><li>Schreiben von Ämtern, Schulen und Krankenhäusern</li></ul></div>
+  <div class="col"><h2>Geschäftliches</h2><ul><li>Speisekarten, Schilder und Preistafeln</li><li>Produktetiketten und Verpackungen</li><li>Aushänge, Betriebsregeln und Sicherheitsschilder, für burmesischsprachiges Personal</li><li>Verträge in zwei Sprachen nebeneinander</li><li>Websites und Apps, vom Studio gebaut oder übersetzt</li><li>Beiträge für LINE, Facebook und TikTok</li></ul></div>
+  <div class="col"><h2>Dolmetschen</h2><ul><li>Per Telefon oder Video, von überall</li><li>Persönlich in Chiang Rai und Chiang Mai</li><li>Einwanderungsbehörde und Arbeitsamt der Provinz</li><li>Besuche in Krankenhaus und Klinik</li><li>Polizei, Vermieter und Schulen</li><li>Vorstellungsgespräche und Schulungen fürs Personal</li></ul></div>
+</section>
 
-  <section>
-    <h2>Preise</h2>
-    <div class="prices"><div><span>Neue Übersetzung</span><b class="amt amt-th" data-live="services/lang-new">฿1,500</b><i>Bis 5 Seiten; danach <span class="amt amt-th" data-live="services/lang-new#tail">฿500</span> pro Seite.</i></div><div><span>Prüfung einer vorhandenen Übersetzung</span><b class="amt amt-th" data-live="services/lang-check">฿500</b><i>Bis 5 Seiten; danach <span class="amt amt-th" data-live="services/lang-check#tail">฿150</span> pro Seite.</i></div><div><span>Stempel</span><b class="amt amt-th" data-live="services/lang-stamp">฿100</b><i>Pro Seite.</i></div><div><span>Dolmetschen per Telefon oder Video</span><b class="amt amt-th" data-live="services/interp-phone">฿400</b><i>Pro 30 Minuten.</i></div><div><span>Dolmetschen vor Ort</span><b class="amt amt-th" data-live="services/interp-person">฿3,000</b><i>Bis 4 Stunden, in Chiang Rai oder Chiang Mai.</i></div><div><span>Dolmetschen vor Ort, ganzer Tag</span><b class="amt amt-th" data-live="services/interp-day">฿5,000</b><i>Bis 8 Stunden.</i></div></div>
-    <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="de" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
-    <script type="module" src="/pay/paybox.js"></script>
-  </section>
+<section>
+  <h2>Preise</h2>
+  <div class="prices"><div><span>Neue Übersetzung</span><b class="amt amt-th" data-live="services/lang-new">฿1,500</b><i>Bis 5 Seiten; danach <span class="amt amt-th" data-live="services/lang-new" data-part="tail">฿500</span> pro Seite.</i></div><div><span>Prüfung einer vorhandenen Übersetzung</span><b class="amt amt-th" data-live="services/lang-check">฿500</b><i>Bis 5 Seiten; danach <span class="amt amt-th" data-live="services/lang-check" data-part="tail">฿150</span> pro Seite.</i></div><div><span>Stempel</span><b class="amt amt-th" data-live="services/lang-stamp">฿100</b><i>Pro Seite.</i></div><div><span>Dolmetschen per Telefon oder Video</span><b class="amt amt-th" data-live="services/interp-phone">฿400</b><i>Pro 30 Minuten.</i></div><div><span>Dolmetschen vor Ort</span><b class="amt amt-th" data-live="services/interp-person">฿3,000</b><i>Bis 4 Stunden, in Chiang Rai oder Chiang Mai.</i></div><div><span>Dolmetschen vor Ort, ganzer Tag</span><b class="amt amt-th" data-live="services/interp-day">฿5,000</b><i>Bis 8 Stunden.</i></div></div>
+  <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="de" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{"new":[1500,5,500],"check":[500,5,150],"stamp":100}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
+  <script type="module" src="/pay/paybox.js"></script>
+</section>
 
-  <section>
-    <h2>Der Stempel</h2>
-    <div class="stamp">
-      <img src="/assets/stamp/hongdam-translation-stamp-red.svg" alt="Runder Übersetzungsstempel von Hongdam mit Feldern für Datum und Namen des Übersetzers und einem QR-Code." width="300" height="300" loading="lazy">
-      <p>Eine übersetzte Seite trägt den Hongdam-Stempel: das Datum, den Namen des Übersetzers und einen QR-Code, der hongdam.net/services öffnet. Wir beglaubigen nicht notariell. Auf Anfrage bestätigen wir, dass eine Übersetzung von uns ist.</p>
+<section>
+  <h2>Der Stempel</h2>
+  <div class="stamp">
+    <img src="/assets/stamp/hongdam-translation-stamp-red.svg" alt="Runder Übersetzungsstempel von Hongdam mit Feldern für Datum und Namen des Übersetzers und einem QR-Code." width="300" height="300" loading="lazy">
+    <p>Eine übersetzte Seite trägt den Hongdam-Stempel: das Datum, den Namen des Übersetzers und einen QR-Code, der hongdam.net/services öffnet. Wir beglaubigen nicht notariell. Auf Anfrage bestätigen wir, dass eine Übersetzung von uns ist.</p>
+  </div>
+</section>
+
+<section>
+  <h2>So geht es</h2>
+  <div class="steps"><div><b>Fotos</b><p>Ein Foto oder Scan jeder Seite. Ein Handyfoto genügt, wenn jede Zeile lesbar ist.</p></div><div><b>Preis</b><p>Nach der Tabelle oben, schriftlich, bevor die Arbeit beginnt.</p></div><div><b>Lieferung</b><p>Als PDF per E-Mail oder LINE, und auf Wunsch als gestempeltes Papier.</p></div></div>
+</section>
+
+<section id="quote">
+  <h2>Kontakt</h2>
+  <form id="f" action="/api/contact" method="post" novalidate>
+    <div class="row">
+      <label>Name<input name="name" type="text" autocomplete="name" maxlength="120"></label>
+      <label>E-Mail<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
     </div>
-  </section>
-
-  <section>
-    <h2>So geht es</h2>
-    <div class="steps"><div><b>Fotos</b><p>Ein Foto oder Scan jeder Seite. Ein Handyfoto genügt, wenn jede Zeile lesbar ist.</p></div><div><b>Preis</b><p>Nach der Tabelle oben, schriftlich, bevor die Arbeit beginnt.</p></div><div><b>Lieferung</b><p>Als PDF per E-Mail oder LINE, und auf Wunsch als gestempeltes Papier.</p></div></div>
-  </section>
-
-  <section id="quote">
-    <h2>Kontakt</h2>
-    <form id="f" action="/api/contact" method="post" novalidate>
-      <div class="row">
-        <label>Name<input name="name" type="text" autocomplete="name" maxlength="120"></label>
-        <label>E-Mail<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
-      </div>
-      <div class="row">
-        <label>Aus<select name="from"><option>Thai</option><option>Englisch</option><option>Burmesisch</option></select></label>
-        <label>In<select name="to"><option>Englisch</option><option>Thai</option><option>Burmesisch</option></select></label>
-      </div>
-      <div class="row">
-        <label>Was es ist<select name="kind"><option>Dokumente</option><option>Prüfung einer Übersetzung</option><option>Geschäftstext</option><option>Dolmetschen</option><option>Etwas anderes</option></select></label>
-        <label>Seiten, Wörter oder Stunden<input name="size" type="text" maxlength="80" placeholder="Zum Beispiel: 3 Seiten"></label>
-      </div>
-      <label>Sonst noch etwas<textarea name="notes" maxlength="3000" placeholder="Wofür die Dokumente sind und bis wann Sie sie brauchen."></textarea></label>
-      <div class="hp" aria-hidden="true"><label>Dieses Feld leer lassen<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
-      <button type="submit">Senden</button>
-      <p class="status" id="s" role="status" aria-live="polite"></p>
-    </form>
-    <p class="mail">Oder per E-Mail <a href="mailto:nan@motdang.net?subject=Translation">nan@motdang.net</a></p>
-  </section>
+    <div class="row">
+      <label>Aus<select name="from"><option>Thai</option><option>Englisch</option><option>Burmesisch</option></select></label>
+      <label>In<select name="to"><option>Englisch</option><option>Thai</option><option>Burmesisch</option></select></label>
+    </div>
+    <div class="row">
+      <label>Was es ist<select name="kind"><option>Dokumente</option><option>Prüfung einer Übersetzung</option><option>Geschäftstext</option><option>Dolmetschen</option><option>Etwas anderes</option></select></label>
+      <label>Seiten, Wörter oder Stunden<input name="size" type="text" maxlength="80" placeholder="Zum Beispiel: 3 Seiten"></label>
+    </div>
+    <label>Sonst noch etwas<textarea name="notes" maxlength="3000" placeholder="Wofür die Dokumente sind und bis wann Sie sie brauchen."></textarea></label>
+    <div class="hp" aria-hidden="true"><label>Dieses Feld leer lassen<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+    <button class="btn" type="submit">Senden</button>
+    <p class="status" id="s" role="status" aria-live="polite"></p>
+  </form>
+  <p class="mail">Oder per E-Mail <a href="mailto:nan@motdang.net?subject=Translation">nan@motdang.net</a></p>
+</section>
 </main>
-<footer><span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai · <a href="/">hongdam.net</a></footer>
 <script>
 (function () {
   var M = {"s_need": "Bitte eine E-Mail-Adresse.", "s_sending": "Wird gesendet…", "s_ok": "Gesendet. Der Preis kommt an diese Adresse.", "s_err": "Das liess sich gerade nicht senden. Schreiben Sie stattdessen an nan@motdang.net."};
@@ -178,7 +119,10 @@
   });
 })();
 </script>
-<script src="/ticker.js" defer></script>
-<script>fetch('/api/services').then(function(r){return r.ok?r.json():null}).then(function(j){if(!j)return;var by={};j.kinds.forEach(function(k){by[k.id]=k});document.querySelectorAll('[data-live^="services/"]').forEach(function(x){var a=x.getAttribute('data-live').slice(9).split('#'),k=by[a[0]];if(!k)return;var v=a[1]==='tail'?k.tail:k.price;if(v!=null)x.textContent='฿'+Number(v).toLocaleString('en-US')})}).catch(function(){})</script>
+<form id="rate" class="rate"><p>Wie gut ist diese Übersetzung?</p><p><button type="button" class="btn alt" data-score="good">Gut</button> <button type="button" class="btn alt" data-score="better">Geht besser</button></p>
+<div hidden><label class="field">Ihre Korrektur (darf leer bleiben)<textarea name="text" rows="3" maxlength="2000"></textarea></label><button class="btn" type="submit">Senden</button></div><p class="thanks" role="status" hidden>Danke. Das Team liest jede Antwort.</p></form>
+<footer><p>Bezahlen Sie mit PromptPay aus jeder thailändischen Bank-App oder von überall mit PayPal oder Wise.</p><p>Hongdam หงส์ดำ · Chiang Rai, Thailand · <a href="mailto:nan@motdang.net">nan@motdang.net</a> · <a href="https://line.me/R/ti/p/@964yxgnk">LINE @964yxgnk</a></p><p><a href="/portfolio/">Unsere Arbeiten</a> · <a href="/tasks">Einen Auftrag einstellen</a> · <a href="/llms.txt">llms.txt</a></p></footer>
+<script type="application/json" id="shop">{"lang": "de", "langs": ["en", "th", "my", "zh", "de"], "front": false, "home": "/de/", "lineUrl": "https://line.me/R/ti/p/@964yxgnk", "ui": {"title": "Hongdam — wir erledigen das für Sie · Chiang Rai", "desc": "Telefonate auf Thai, Handwerker gebucht, Übersetzungen, Websites, Versand und mehr. Auswählen, bezahlen, wir legen los.", "tagline": "Wir erledigen das für Sie. Auswählen, bezahlen, wir legen los.", "how": ["1 Auswählen", "2 Bezahlen", "3 Wir legen los"], "language": "Sprache", "search": "Was brauchen Sie?", "searchPh": "Klempner, Übersetzung, Website, Grab…", "popular": "Empfohlen", "cats": "Alles, was wir machen", "buy": "Kaufen", "book": "Buchen", "open": "Öffnen", "go": "Weiter", "free": "Kostenlos", "from": "ab {p}", "notHere": "Nicht dabei? Schreiben Sie uns, in jeder Sprache.", "askBtn": "Schreiben Sie uns", "askH": "Was brauchen Sie?", "askWhat": "Sagen Sie uns, was Sie brauchen, in jeder Sprache.", "send": "Senden", "asked": "Gesendet. Wir antworten Ihnen dort.", "home": "Alle Leistungen", "noresult": "Nichts gefunden. Schreiben Sie uns auf LINE.", "nocard": "Diese Leistung gibt es hier nicht. Wählen Sie eine aus der Liste.", "noscript": "Diese Seite braucht JavaScript. Oder schreiben Sie uns auf LINE.", "payMethods": "Bezahlen Sie mit PromptPay aus jeder thailändischen Bank-App oder von überall mit PayPal oder Wise.", "where": "Hongdam หงส์ดำ · Chiang Rai, Thailand", "portfolio": "Unsere Arbeiten", "tasks": "Einen Auftrag einstellen", "choose": "Auswählen", "qty": "Anzahl", "total": "Summe", "half": "Jetzt die Hälfte zahlen, {now}; den Rest, wenn es fertig ist.", "reach": "Ihre LINE-ID, Telefonnummer oder E-Mail", "note": "Was wir wissen sollten (darf leer bleiben)", "next": "Weiter zur Zahlung", "sending": "Wird gesendet…", "order": "Bestellung", "payNow": "Jetzt bezahlen", "payHalf": "Jetzt die Hälfte zahlen", "pp": "PromptPay · jede thailändische Bank-App", "scan": "Scannen Sie mit Ihrer Bank-App. Die App zeigt vor der Zahlung, wer das Geld erhält. Laden Sie dann den Beleg hoch.", "slip": "Ihr Zahlungsbeleg", "slipBtn": "Beleg senden", "checking": "Wird geprüft…", "paid": "Bezahlt. Bestellung", "abroad": "Aus dem Ausland: Zahlen Sie {amount} (etwa {usd}) per PayPal oder Wise. Schreiben Sie {ref} in den Verwendungszweck.", "ipaid": "Ich habe bezahlt per", "claimed": "Danke. Wir prüfen die Zahlung und melden uns dann. Bestellung", "msgUs": "Schreiben Sie uns auf LINE", "err": {"contact": "Bitte geben Sie Ihre LINE-ID, Telefonnummer oder E-Mail an.", "what": "Bitte sagen Sie, was Sie brauchen.", "limit": "Fünf Bestellungen am Tag pro Verbindung. Schreiben Sie uns auf LINE.", "card": "Wählen Sie eine Leistung aus der Liste.", "price": "Dieser Preis liess sich nicht berechnen. Schreiben Sie uns auf LINE.", "off": "Bestellen geht gerade nicht. Schreiben Sie uns auf LINE.", "service": "Wir sind nicht erreichbar. Versuchen Sie es noch einmal oder schreiben Sie uns auf LINE.", "nofile": "Wählen Sie zuerst das Bild des Belegs.", "unread": "Dieses Bild ist kein lesbarer Bankbeleg.", "amount": "Der Beleg zeigt einen anderen Betrag.", "receiver": "Der Beleg zeigt einen anderen Empfänger.", "used": "Mit diesem Beleg wurde schon bezahlt.", "late": "Dieser Beleg ist zu alt für die Prüfung.", "ref": "Diese Bestellnummer ist nicht von uns.", "state": "Diese Bestellung ist abgeschlossen. Schreiben Sie uns auf LINE.", "origin": "Bestellen Sie auf hongdam.net.", "body": "Etwas ist schiefgelaufen. Versuchen Sie es noch einmal.", "route": "Etwas ist schiefgelaufen. Versuchen Sie es noch einmal.", "tries": "Zu viele Versuche für diese Bestellung heute. Senden Sie uns den Beleg auf LINE."}, "know": "Gut zu wissen", "costs": "Was andere verlangen", "read": "Stand: {date}. Quellen öffnen sich in einem neuen Tab.", "rateQ": "Wie gut ist diese Übersetzung?", "rateGood": "Gut", "rateBetter": "Geht besser", "rateText": "Ihre Korrektur (darf leer bleiben)", "rateSend": "Senden", "rateThanks": "Danke. Das Team liest jede Antwort.", "tOrdered": "Bestellt", "tPaid": "Bezahlt", "tChecking": "Zahlung wird geprüft", "tStarted": "Begonnen", "tDone": "Fertig", "trackH": "Ihre Bestellung", "trackKeep": "Behalten Sie diese Seite: Sie zeigt, wo Ihre Bestellung steht.", "ladder": "Die Preise folgen der Nachfrage und ändern sich am 1. jedes Monats.", "priceNow": "Preis jetzt", "lo": "niedrig", "hi": "hoch", "slotsOpen": "{n} frei in diesem Monat"}, "cardsUrl": "/assets/shop-de.json?v=bd93db07", "group": "p-translation", "ladder": [10, 20, 30, 50, 100, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000, 10000, 12000, 15000, 20000, 25000, 30000, 40000, 50000, 60000, 80000, 100000, 150000, 200000], "track": [{"db": "send", "state": "booked"}, {"db": "coin", "state": "paid"}, {"db": "gears", "state": "started"}, {"db": "done", "state": "done"}], "master": [{"db": "manicule"}, {"db": "scan"}, {"db": "gears"}], "glyphs": {"telephone": "Telefon", "chat": "Gespräch", "nib": "Notizen", "home": "Zuhause", "wrench": "Reparatur", "calendar": "Gebucht", "translate": "Übersetzen", "eye": "Geprüft", "cart": "Einkauf", "scooter": "Unterwegs", "done": "Fertig", "page": "Papier", "pencil": "Ausgefüllt", "angry": "Ärger", "smile": "Erledigt", "thinking": "Frage", "lightbulb": "Plan", "stamp": "Gestempelt", "lock": "Gesichert", "key": "Angemeldet", "thumbs-up": "OK", "heart": "Fürsorge", "coin": "Preis", "wai": "Danke", "server": "Server", "laptop": "Website", "earth": "Online", "abacus": "Gezählt", "airplane": "Ausland", "balloon": "Ballon", "bell": "Hinweis", "bookmark": "Gespeichert", "camera": "Fotos", "check": "Geprüft", "chedi": "Tempel", "clap": "Team", "clock": "Stunden", "cloud": "Luft", "coffee": "Kaffee", "compass": "Route", "copy": "Tabellen", "crossed-fingers": "Glück", "crown": "Auszeichnung", "dice": "Spiel", "dna": "Labor", "envelope": "Post", "error": "Kaputt", "flag": "Schild", "frying-pan": "Kochen", "gear": "Test", "gears": "Wir legen los", "gift": "Geschenk", "hot": "Viel los", "khao-soi": "Mittagessen", "lantern": "Laternen", "laugh": "Spass", "leaf": "Palmblatt", "lightning": "Angriff", "link": "Link", "lotus": "Verdienst", "mailbox": "Posteingang", "megaphone": "Werbung", "mic": "Aufnahme", "moon": "Nacht", "muscle": "Muay Thai", "naga": "Yant", "noodles": "Speisekarte", "octopus": "GitHub", "orrery": "Horoskop", "paper-boat": "Verschickt", "parcel": "Paket", "party": "Feier", "passport": "Papiere", "phuang-malai": "Blumenkette", "pin": "Karte", "play": "Video", "power": "Bereit", "refresh": "Aktualisiert", "robot": "KI", "rocket": "Start", "save": "Sicherung", "scan": "Bezahlen", "scissors": "Schnitt", "search": "Suche", "send": "Bestellt", "share": "Geteilt", "skull": "Gehackt", "sleepy": "Ruhe", "songthaew": "Auto", "sound": "Vorlesen", "spade": "Karten", "sparkle": "Gesegnet", "spider": "Crawler", "spirit-house": "Geisterhaus", "sprout": "Hof", "star": "Gut gemacht", "star-struck": "Wow", "sun": "Tag", "sundial": "Guter Tag", "tuk-tuk": "Fahrt", "typewriter": "Abgetippt", "warning": "Problem", "wave": "Hallo", "wifi": "Auch offline", "manicule": "Auswählen"}, "db": {"core": "/assets/db/core.js?v=69775a4d", "groups": {"front": "/assets/db/front.js?v=280b5495", "care": "/assets/db/care.js?v=9087549d", "visa": "/assets/db/visa.js?v=c574e155", "fix": "/assets/db/fix.js?v=2f5808c2", "money": "/assets/db/money.js?v=99a6efad", "web": "/assets/db/web.js?v=5f3d2712", "stay": "/assets/db/stay.js?v=818ed184", "ai": "/assets/db/ai.js?v=e0068bab", "moving": "/assets/db/moving.js?v=c40a589a", "design": "/assets/db/design.js?v=7df356cb", "charity": "/assets/db/charity.js?v=33c7858a", "help": "/assets/db/help.js?v=b25c2784", "luck": "/assets/db/luck.js?v=e2216717", "translate": "/assets/db/translate.js?v=98b1d87a", "shop": "/assets/db/shop.js?v=aa582bd3", "ship": "/assets/db/ship.js?v=fe20a37a", "data": "/assets/db/data.js?v=2fe2c0d0", "merit": "/assets/db/merit.js?v=68cec8c0", "tours": "/assets/db/tours.js?v=98a4e793", "outsource": "/assets/db/outsource.js?v=52f04ad2", "weddings": "/assets/db/weddings.js?v=8814e37d", "p-404": "/assets/db/p-404.js?v=fff5748d", "p-own": "/assets/db/p-own.js?v=52145e9e", "p-redteam": "/assets/db/p-redteam.js?v=123369be", "p-market": "/assets/db/p-market.js?v=d211791e", "p-bots": "/assets/db/p-bots.js?v=e0298c2d", "p-github": "/assets/db/p-github.js?v=5f62d253", "p-translation": "/assets/db/p-translation.js?v=17ed3636", "p-tasks-graph": "/assets/db/p-tasks-graph.js?v=c9586ebf", "p-tasks": "/assets/db/p-tasks.js?v=100d6b0d", "p-events": "/assets/db/p-events.js?v=80b0777a", "p-stats": "/assets/db/p-stats.js?v=141836ec", "p-invoice": "/assets/db/p-invoice.js?v=8a06c874", "p-portfolio": "/assets/db/p-portfolio.js?v=f5577ffb"}}}</script>
+<script type="module" src="/assets/shop.js"></script>
 </body>
 </html>

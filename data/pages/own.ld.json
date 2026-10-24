@@ -1,0 +1,12 @@
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Your own builder · Hongdam",
+ "url": "https://hongdam.net/own/",
+ "isPartOf": {
+  "@id": "https://hongdam.net/#site"
+ },
+ "publisher": {
+  "@id": "https://hongdam.net/#org"
+ }
+}

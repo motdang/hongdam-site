@@ -1,7 +1,7 @@
 {
  "core": "core.js?v=69775a4d",
  "groups": {
-  "front": "front.js?v=e87d2dfa",
+  "front": "front.js?v=280b5495",
   "care": "care.js?v=9087549d",
   "visa": "visa.js?v=c574e155",
   "fix": "fix.js?v=2f5808c2",
@@ -21,6 +21,19 @@
   "merit": "merit.js?v=68cec8c0",
   "tours": "tours.js?v=98a4e793",
   "outsource": "outsource.js?v=52f04ad2",
-  "weddings": "weddings.js?v=423b8349"
+  "weddings": "weddings.js?v=8814e37d",
+  "p-404": "p-404.js?v=fff5748d",
+  "p-own": "p-own.js?v=52145e9e",
+  "p-redteam": "p-redteam.js?v=123369be",
+  "p-market": "p-market.js?v=d211791e",
+  "p-bots": "p-bots.js?v=e0298c2d",
+  "p-github": "p-github.js?v=5f62d253",
+  "p-translation": "p-translation.js?v=17ed3636",
+  "p-tasks-graph": "p-tasks-graph.js?v=c9586ebf",
+  "p-tasks": "p-tasks.js?v=100d6b0d",
+  "p-events": "p-events.js?v=80b0777a",
+  "p-stats": "p-stats.js?v=141836ec",
+  "p-invoice": "p-invoice.js?v=8a06c874",
+  "p-portfolio": "p-portfolio.js?v=f5577ffb"
  }
 }

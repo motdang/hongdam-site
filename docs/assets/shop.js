@@ -319,7 +319,8 @@ const trackLink = (ref) => `<p><a class="btn" href="${esc(location.pathname)}?re
 // The Buy page
 let buy = null
 async function startBuy() {
-  const root = $('#buy')
+  // only the Buy page (body.p-buy): the bots page has its own purchase section, also id="buy"
+  const root = document.body.classList.contains('p-buy') && $('#buy')
   if (!root) return null
   const P = new URLSearchParams(location.search)
   if (P.get('ref')) { await track(root, P.get('ref')); return null }
