@@ -372,7 +372,7 @@ def foot(lang, front=False, group=None, pay=True):
     ui = SHOP["ui"][lang]
     data = {"lang": lang, "langs": LANGS, "front": front, "home": url(lang), "lineUrl": LINE_URL,
             "ui": ui, "cardsUrl": "/assets/shop-%s.json?v=%s" % (lang, VERSION),
-            "group": group, "ladder": LADDER, "track": LOOKS["track"], "master": LOOKS["master"],
+            "group": group, "ladder": LADDER, "master": LOOKS["master"],
             "glyphs": {g: glyph_name(g, lang) for g in LOOKS["glyphs"]}, "ln": bool(LN)}
     if DBM:
         data["db"] = {"core": "/assets/db/" + DBM["core"], "groups": {g: "/assets/db/" + f for g, f in DBM["groups"].items()}}
