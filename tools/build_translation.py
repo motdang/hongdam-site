@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build the translation pages in three languages from one table.
+"""Build the translation pages in four languages from one table.
 
     python3 tools/build_translation.py
 
 Writes docs/translation/index.html (English), docs/translation/th/index.html
-(Thai) and docs/translation/my/index.html (Burmese). One source, so the three
-pages say the same thing.
+(Thai), docs/translation/my/index.html (Burmese) and docs/translation/de/index.html
+(German). One source, so the pages say the same thing.
 """
 
 from html import escape
@@ -28,8 +28,8 @@ _BOX = {"new": [_n(_p("lang-new")), 5, _n(_t("lang-new"))], "check": [_n(_p("lan
 DOCS = ROOT / "docs"
 ORIGIN = "https://hongdam.net"
 
-PAGES = {"en": "/translation/", "th": "/translation/th/", "my": "/translation/my/"}
-SWITCH = [("en", "English"), ("th", "ไทย"), ("my", "မြန်မာ")]
+PAGES = {"en": "/translation/", "th": "/translation/th/", "my": "/translation/my/", "de": "/translation/de/"}
+SWITCH = [("en", "English"), ("th", "ไทย"), ("my", "မြန်မာ"), ("de", "Deutsch")]
 
 W = {
     "en": {
@@ -200,10 +200,66 @@ W = {
         "s_ok": "ပို့ပြီးပါပြီ။ စျေးနှုန်းကို ထိုအီးမေးလ်သို့ ပြန်ပို့ပါမည်။", "s_err": "ယခု မပို့နိုင်ပါ။ nan@motdang.net သို့ အီးမေးလ် ပို့ပါ။",
         "or_mail": "သို့မဟုတ် အီးမေးလ်", "home": "hongdam.net",
     },
+    "de": {
+        "card": "translation",
+        "card_alt": "Karte: Übersetzung zwischen Thai, Englisch und Burmesisch, Hongdam.",
+        "title": "Übersetzung — Thai, Englisch, Burmesisch · Hongdam",
+        "desc": "Hongdam übersetzt Dokumente, Geschäftstexte und Gespräche zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.",
+        "h1": "Übersetzung",
+        "sub": "Thai · Englisch · Burmesisch",
+        "lede": "Dokumente, Geschäftstexte und Gespräche, zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.",
+        "pairs_h": "Sprachen",
+        "pairs": ["Thai ⇄ Englisch", "Thai ⇄ Burmesisch", "Englisch ⇄ Burmesisch"],
+        "pairs_note": "Burmesisch kommt in Unicode-Myanmar-Schrift zurück. Eine Zawgyi-Fassung gibt es auf Wunsch, für Handys, die noch darauf eingestellt sind.",
+        "papers_h": "Dokumente",
+        "papers": [
+            "Reisepass- und Ausweisseiten", "Pink Card und Certificate of Identity (CI)",
+            "Hausregister (Tabien Baan)", "Geburts-, Heirats- und Scheidungsurkunden",
+            "Polizeiliches Führungszeugnis", "Bankschreiben und Kontoauszüge",
+            "Arbeitsverträge und Lohnabrechnungen", "Unterlagen zur Arbeitserlaubnis",
+            "Zeugnisse und Diplome", "Arztberichte und Atteste",
+            "Miet- und Pachtverträge", "Schreiben von Ämtern, Schulen und Krankenhäusern",
+        ],
+        "biz_h": "Geschäftliches",
+        "biz": [
+            "Speisekarten, Schilder und Preistafeln", "Produktetiketten und Verpackungen",
+            "Aushänge, Betriebsregeln und Sicherheitsschilder, für burmesischsprachiges Personal",
+            "Verträge in zwei Sprachen nebeneinander", "Websites und Apps, vom Studio gebaut oder übersetzt",
+            "Beiträge für LINE, Facebook und TikTok",
+        ],
+        "talk_h": "Dolmetschen",
+        "talk": [
+            "Per Telefon oder Video, von überall",
+            "Persönlich in Chiang Rai und Chiang Mai",
+            "Einwanderungsbehörde und Arbeitsamt der Provinz",
+            "Besuche in Krankenhaus und Klinik",
+            "Polizei, Vermieter und Schulen",
+            "Vorstellungsgespräche und Schulungen fürs Personal",
+        ],
+        "stamp_h": "Der Stempel",
+        "stamp": "Eine übersetzte Seite trägt den Hongdam-Stempel: das Datum, den Namen des Übersetzers und einen QR-Code, der hongdam.net/services öffnet. Wir beglaubigen nicht notariell. Auf Anfrage bestätigen wir, dass eine Übersetzung von uns ist.",
+        "stamp_alt": "Runder Übersetzungsstempel von Hongdam mit Feldern für Datum und Namen des Übersetzers und einem QR-Code.",
+        "how_h": "So geht es",
+        "how": [
+            ("Fotos", "Ein Foto oder Scan jeder Seite. Ein Handyfoto genügt, wenn jede Zeile lesbar ist."),
+            ("Preis", "Nach der Tabelle oben, schriftlich, bevor die Arbeit beginnt."),
+            ("Lieferung", "Als PDF per E-Mail oder LINE, und auf Wunsch als gestempeltes Papier."),
+        ],
+        "form_h": "Kontakt",
+        "f_name": "Name", "f_email": "E-Mail", "f_from": "Aus", "f_to": "In",
+        "f_kind": "Was es ist", "f_kinds": ["Dokumente", "Prüfung einer Übersetzung", "Geschäftstext", "Dolmetschen", "Etwas anderes"],
+        "f_pages": "Seiten, Wörter oder Stunden", "f_pages_ph": "Zum Beispiel: 3 Seiten",
+        "f_msg": "Sonst noch etwas", "f_msg_ph": "Wofür die Dokumente sind und bis wann Sie sie brauchen.",
+        "f_send": "Senden", "f_hp": "Dieses Feld leer lassen",
+        "langs": ["Thai", "Englisch", "Burmesisch"],
+        "s_need": "Bitte eine E-Mail-Adresse.", "s_sending": "Wird gesendet…",
+        "s_ok": "Gesendet. Der Preis kommt an diese Adresse.", "s_err": "Das ließ sich gerade nicht senden. Schreiben Sie stattdessen an nan@motdang.net.",
+        "or_mail": "Oder per E-Mail", "home": "hongdam.net",
+    },
 }
 
 
-PRICE_H = {"en": "Prices", "th": "ราคา", "my": "စျေးနှုန်း"}
+PRICE_H = {"en": "Prices", "th": "ราคา", "my": "စျေးနှုန်း", "de": "Preise"}
 PRICES = {
     "en": [("New translation", _p("lang-new"), "Up to 5 pages; {tail} a page after that.", "lang-new"),
            ("Checking an existing translation", _p("lang-check"), "Up to 5 pages; {tail} a page after that.", "lang-check"),
@@ -223,6 +279,12 @@ PRICES = {
            ("စကားပြန်၊ ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့်", _p("interp-phone"), "မိနစ် ၃၀ လျှင်။", "interp-phone"),
            ("စကားပြန်၊ လူကိုယ်တိုင်", _p("interp-person"), "၄ နာရီအထိ၊ ချင်းရိုင်နှင့် ချင်းမိုင်တွင်။", "interp-person"),
            ("စကားပြန်၊ လူကိုယ်တိုင်၊ တစ်နေ့လုံး", _p("interp-day"), "၈ နာရီအထိ။", "interp-day")],
+    "de": [("Neue Übersetzung", _p("lang-new"), "Bis 5 Seiten; danach {tail} pro Seite.", "lang-new"),
+           ("Prüfung einer vorhandenen Übersetzung", _p("lang-check"), "Bis 5 Seiten; danach {tail} pro Seite.", "lang-check"),
+           ("Stempel", _p("lang-stamp"), "Pro Seite.", "lang-stamp"),
+           ("Dolmetschen per Telefon oder Video", _p("interp-phone"), "Pro 30 Minuten.", "interp-phone"),
+           ("Dolmetschen vor Ort", _p("interp-person"), "Bis 4 Stunden, in Chiang Rai oder Chiang Mai.", "interp-person"),
+           ("Dolmetschen vor Ort, ganzer Tag", _p("interp-day"), "Bis 8 Stunden.", "interp-day")],
 }
 
 CSS = """

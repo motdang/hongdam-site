@@ -12,7 +12,7 @@
   popular cards, and a door to each category page.
 - A category page per kind of work (listed below): cards, each with a name, a
   price, one line and one button.
-- Four languages: English at /, Thai at /th/, Burmese at /my/, Chinese at /zh/
+- Five languages: English at /, Thai at /th/, Burmese at /my/, Chinese at /zh/, German at /de/
   (the same path after the prefix, e.g. https://hongdam.net/th/web/).
 - Buy: https://hongdam.net/buy/?c=<card id> — pick the option, then pay by
   PromptPay QR, PayPal or Wise. An order's progress: https://hongdam.net/buy/?ref=<order number>.
@@ -22,7 +22,7 @@
 ## Machine-readable
 
 - The cards with their prices, options and search words, one file per language:
-  https://hongdam.net/assets/shop-en.json (and shop-th.json, shop-my.json, shop-zh.json).
+  https://hongdam.net/assets/shop-en.json (and shop-th.json, shop-my.json, shop-zh.json, shop-de.json).
 - Today's prices: https://hongdam.net/api/services — they move once a month with
   the orders taken (the walk is described under Services below).
 - The sitemap, each page with its other languages: https://hongdam.net/sitemap.xml
@@ -32,26 +32,26 @@
 <!-- SHOP:START -->
 ## The category pages
 
-- [Retirement & care](https://hongdam.net/care/) — Retiring here, care for older people, doctors and hard days. 11 cards, from ฿800. Also: ไทย https://hongdam.net/th/care/ · မြန်မာ https://hongdam.net/my/care/ · 中文 https://hongdam.net/zh/care/
-- [Visas & permits](https://hongdam.net/visa/) — Visas, work permits and companies, through Chiang Mai Visa Desk. 1 card. Also: ไทย https://hongdam.net/th/visa/ · မြန်မာ https://hongdam.net/my/visa/ · 中文 https://hongdam.net/zh/visa/
-- [Fix & protect](https://hongdam.net/fix/) — Patch servers, stop fake emails, test chatbots. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/fix/ · မြန်မာ https://hongdam.net/my/fix/ · 中文 https://hongdam.net/zh/fix/
-- [Money & books](https://hongdam.net/money/) — Payments, invoices and bookkeeping. 12 cards, from ฿150. Also: ไทย https://hongdam.net/th/money/ · မြန်မာ https://hongdam.net/my/money/ · 中文 https://hongdam.net/zh/money/
-- [Websites & apps](https://hongdam.net/web/) — Sites, LINE apps and fixes, in Thai and English. 19 cards, from ฿500. Also: ไทย https://hongdam.net/th/web/ · မြန်မာ https://hongdam.net/my/web/ · 中文 https://hongdam.net/zh/web/
-- [Hotels & homes](https://hongdam.net/stay/) — Booking sites, rentals found, houses checked before you buy. 9 cards, from ฿800. Also: ไทย https://hongdam.net/th/stay/ · မြန်မာ https://hongdam.net/my/stay/ · 中文 https://hongdam.net/zh/stay/
-- [AI & bots](https://hongdam.net/ai/) — AI helpers and bots that work for you. 10 cards, from ฿1,000. Also: ไทย https://hongdam.net/th/ai/ · မြန်မာ https://hongdam.net/my/ai/ · 中文 https://hongdam.net/zh/ai/
-- [Moving house abroad](https://hongdam.net/moving/) — Your home packed and shipped into or out of Thailand. 2 cards, from ฿800. Also: ไทย https://hongdam.net/th/moving/ · မြန်မာ https://hongdam.net/my/moving/ · 中文 https://hongdam.net/zh/moving/
-- [Design & writing](https://hongdam.net/design/) — Logos, videos, slides, posts and words. 14 cards, from ฿500. Also: ไทย https://hongdam.net/th/design/ · မြန်မာ https://hongdam.net/my/design/ · 中文 https://hongdam.net/zh/design/
-- [Charities & clubs](https://hongdam.net/charity/) — Giving pages, grants, volunteers and team tools. 10 cards, from ฿8,000. Also: ไทย https://hongdam.net/th/charity/ · မြန်မာ https://hongdam.net/my/charity/ · 中文 https://hongdam.net/zh/charity/
-- [Help in Thai](https://hongdam.net/help/) — Calls, repairs, errands and forms, done in Thai for you. 14 cards, from ฿300. Also: ไทย https://hongdam.net/th/help/ · မြန်မာ https://hongdam.net/my/help/ · 中文 https://hongdam.net/zh/help/
-- [Luck](https://hongdam.net/luck/) — Readings, auspicious dates and names, yant and amulets. 12 cards, from ฿500. Also: ไทย https://hongdam.net/th/luck/ · မြန်မာ https://hongdam.net/my/luck/ · 中文 https://hongdam.net/zh/luck/
-- [Translation](https://hongdam.net/translate/) — Documents, interpreters and web pages: Thai, English, Burmese. 8 cards, from ฿400. Also: ไทย https://hongdam.net/th/translate/ · မြန်မာ https://hongdam.net/my/translate/ · 中文 https://hongdam.net/zh/translate/
-- [Shops & restaurants](https://hongdam.net/shop/) — Grab, menus, signs and payments for your shop. 15 cards, from ฿250. Also: ไทย https://hongdam.net/th/shop/ · မြန်မာ https://hongdam.net/my/shop/ · 中文 https://hongdam.net/zh/shop/
-- [Shipping partners](https://hongdam.net/ship/) — Crafts and small parcels, sourced, packed and shipped. 4 cards, from ฿10,000. Also: ไทย https://hongdam.net/th/ship/ · မြန်မာ https://hongdam.net/my/ship/ · 中文 https://hongdam.net/zh/ship/
-- [Lists & research](https://hongdam.net/data/) — Customer lists, data collected, questions answered. 7 cards, from ฿1,200. Also: ไทย https://hongdam.net/th/data/ · မြန်မာ https://hongdam.net/my/data/ · 中文 https://hongdam.net/zh/data/
-- [Merit](https://hongdam.net/merit/) — Merit made for you, blessings, su khwan and Lanna weddings. 6 cards, from ฿300. Also: ไทย https://hongdam.net/th/merit/ · မြန်မာ https://hongdam.net/my/merit/ · 中文 https://hongdam.net/zh/merit/
-- [Tours & trips](https://hongdam.net/tours/) — Day tours, cars, guides, classes, lanterns and balloons. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/tours/ · မြန်မာ https://hongdam.net/my/tours/ · 中文 https://hongdam.net/zh/tours/
-- [Outsourcing](https://hongdam.net/outsource/) — An assistant, a Thai service desk, calls and data entry. 6 cards, from ฿500. Also: ไทย https://hongdam.net/th/outsource/ · မြန်မာ https://hongdam.net/my/outsource/ · 中文 https://hongdam.net/zh/outsource/
-- [Weddings & events](https://hongdam.net/weddings/) — Weddings planned, brides looked after, events run, pages for the day. 6 cards, from ฿5,000. Also: ไทย https://hongdam.net/th/weddings/ · မြန်မာ https://hongdam.net/my/weddings/ · 中文 https://hongdam.net/zh/weddings/
+- [Retirement & care](https://hongdam.net/care/) — Retiring here, care for older people, doctors and hard days. 11 cards, from ฿800. Also: ไทย https://hongdam.net/th/care/ · မြန်မာ https://hongdam.net/my/care/ · 中文 https://hongdam.net/zh/care/ · Deutsch https://hongdam.net/de/care/
+- [Visas & permits](https://hongdam.net/visa/) — Visas, work permits and companies, through Chiang Mai Visa Desk. 1 card. Also: ไทย https://hongdam.net/th/visa/ · မြန်မာ https://hongdam.net/my/visa/ · 中文 https://hongdam.net/zh/visa/ · Deutsch https://hongdam.net/de/visa/
+- [Fix & protect](https://hongdam.net/fix/) — Patch servers, stop fake emails, test chatbots. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/fix/ · မြန်မာ https://hongdam.net/my/fix/ · 中文 https://hongdam.net/zh/fix/ · Deutsch https://hongdam.net/de/fix/
+- [Money & books](https://hongdam.net/money/) — Payments, invoices and bookkeeping. 12 cards, from ฿150. Also: ไทย https://hongdam.net/th/money/ · မြန်မာ https://hongdam.net/my/money/ · 中文 https://hongdam.net/zh/money/ · Deutsch https://hongdam.net/de/money/
+- [Websites & apps](https://hongdam.net/web/) — Sites, LINE apps and fixes, in Thai and English. 19 cards, from ฿500. Also: ไทย https://hongdam.net/th/web/ · မြန်မာ https://hongdam.net/my/web/ · 中文 https://hongdam.net/zh/web/ · Deutsch https://hongdam.net/de/web/
+- [Hotels & homes](https://hongdam.net/stay/) — Booking sites, rentals found, houses checked before you buy. 9 cards, from ฿800. Also: ไทย https://hongdam.net/th/stay/ · မြန်မာ https://hongdam.net/my/stay/ · 中文 https://hongdam.net/zh/stay/ · Deutsch https://hongdam.net/de/stay/
+- [AI & bots](https://hongdam.net/ai/) — AI helpers and bots that work for you. 10 cards, from ฿1,000. Also: ไทย https://hongdam.net/th/ai/ · မြန်မာ https://hongdam.net/my/ai/ · 中文 https://hongdam.net/zh/ai/ · Deutsch https://hongdam.net/de/ai/
+- [Moving house abroad](https://hongdam.net/moving/) — Your home packed and shipped into or out of Thailand. 2 cards, from ฿800. Also: ไทย https://hongdam.net/th/moving/ · မြန်မာ https://hongdam.net/my/moving/ · 中文 https://hongdam.net/zh/moving/ · Deutsch https://hongdam.net/de/moving/
+- [Design & writing](https://hongdam.net/design/) — Logos, videos, slides, posts and words. 14 cards, from ฿500. Also: ไทย https://hongdam.net/th/design/ · မြန်မာ https://hongdam.net/my/design/ · 中文 https://hongdam.net/zh/design/ · Deutsch https://hongdam.net/de/design/
+- [Charities & clubs](https://hongdam.net/charity/) — Giving pages, grants, volunteers and team tools. 10 cards, from ฿8,000. Also: ไทย https://hongdam.net/th/charity/ · မြန်မာ https://hongdam.net/my/charity/ · 中文 https://hongdam.net/zh/charity/ · Deutsch https://hongdam.net/de/charity/
+- [Help in Thai](https://hongdam.net/help/) — Calls, repairs, errands and forms, done in Thai for you. 14 cards, from ฿300. Also: ไทย https://hongdam.net/th/help/ · မြန်မာ https://hongdam.net/my/help/ · 中文 https://hongdam.net/zh/help/ · Deutsch https://hongdam.net/de/help/
+- [Luck](https://hongdam.net/luck/) — Readings, auspicious dates and names, yant and amulets. 12 cards, from ฿500. Also: ไทย https://hongdam.net/th/luck/ · မြန်မာ https://hongdam.net/my/luck/ · 中文 https://hongdam.net/zh/luck/ · Deutsch https://hongdam.net/de/luck/
+- [Translation](https://hongdam.net/translate/) — Documents, interpreters and web pages: Thai, English, Burmese. 8 cards, from ฿400. Also: ไทย https://hongdam.net/th/translate/ · မြန်မာ https://hongdam.net/my/translate/ · 中文 https://hongdam.net/zh/translate/ · Deutsch https://hongdam.net/de/translate/
+- [Shops & restaurants](https://hongdam.net/shop/) — Grab, menus, signs and payments for your shop. 15 cards, from ฿250. Also: ไทย https://hongdam.net/th/shop/ · မြန်မာ https://hongdam.net/my/shop/ · 中文 https://hongdam.net/zh/shop/ · Deutsch https://hongdam.net/de/shop/
+- [Shipping partners](https://hongdam.net/ship/) — Crafts and small parcels, sourced, packed and shipped. 4 cards, from ฿10,000. Also: ไทย https://hongdam.net/th/ship/ · မြန်မာ https://hongdam.net/my/ship/ · 中文 https://hongdam.net/zh/ship/ · Deutsch https://hongdam.net/de/ship/
+- [Lists & research](https://hongdam.net/data/) — Customer lists, data collected, questions answered. 7 cards, from ฿1,200. Also: ไทย https://hongdam.net/th/data/ · မြန်မာ https://hongdam.net/my/data/ · 中文 https://hongdam.net/zh/data/ · Deutsch https://hongdam.net/de/data/
+- [Merit](https://hongdam.net/merit/) — Merit made for you, blessings, su khwan and Lanna weddings. 6 cards, from ฿300. Also: ไทย https://hongdam.net/th/merit/ · မြန်မာ https://hongdam.net/my/merit/ · 中文 https://hongdam.net/zh/merit/ · Deutsch https://hongdam.net/de/merit/
+- [Tours & trips](https://hongdam.net/tours/) — Day tours, cars, guides, classes, lanterns and balloons. 8 cards, from ฿1,500. Also: ไทย https://hongdam.net/th/tours/ · မြန်မာ https://hongdam.net/my/tours/ · 中文 https://hongdam.net/zh/tours/ · Deutsch https://hongdam.net/de/tours/
+- [Outsourcing](https://hongdam.net/outsource/) — An assistant, a Thai service desk, calls and data entry. 6 cards, from ฿500. Also: ไทย https://hongdam.net/th/outsource/ · မြန်မာ https://hongdam.net/my/outsource/ · 中文 https://hongdam.net/zh/outsource/ · Deutsch https://hongdam.net/de/outsource/
+- [Weddings & events](https://hongdam.net/weddings/) — Weddings planned, brides looked after, events run, pages for the day. 6 cards, from ฿5,000. Also: ไทย https://hongdam.net/th/weddings/ · မြန်မာ https://hongdam.net/my/weddings/ · 中文 https://hongdam.net/zh/weddings/ · Deutsch https://hongdam.net/de/weddings/
 <!-- SHOP:END -->
 
 <!-- SERVICES:START -->

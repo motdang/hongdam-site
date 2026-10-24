@@ -30,7 +30,7 @@ const json = (body, status = 200) => new Response(JSON.stringify(body), {
 const clean = (v, max) => (typeof v === 'string' ? v.replace(/\s+/g, ' ').trim().slice(0, max) : '')
 const ORIGINS = ['https://hongdam.net', 'https://www.hongdam.net', 'https://hongdam.pages.dev']
 const originOk = (o) => ORIGINS.includes(o) || /^http:\/\/(?:127\.0\.0\.1|localhost)(?::\d+)?$/.test(o)
-const LANGS = ['en', 'th', 'my', 'zh']
+const LANGS = ['en', 'th', 'my', 'zh', 'de']
 const money = (n, cur) => (cur === 'USD' ? 'US$' : '฿') + Number(n).toLocaleString('en-US')
 const code = (s) => '`' + String(s).replace(/`/g, '') + '`'
 const newRef = () => 'HD-' + crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6, '0').slice(-6)

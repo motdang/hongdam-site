@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Build hongdam.net's shop pages from data/shop.json (cards, words in four languages) and
+"""Build hongdam.net's shop pages from data/shop.json (cards, words in each language) and
 data/services.json (the price list, read only).
 
     python3 tools/build_shop.py
 
-Writes, for each language prefix ('' English, th/, my/, zh/): docs/<prefix>index.html (front
+Writes, for each language prefix ('' English, th/, my/, zh/, de/): docs/<prefix>index.html (front
 page), docs/<prefix><category>/index.html (one minisite per category), docs/<prefix>buy/ and
 docs/<prefix>ask/; and functions/_shop_data.js (cards and options for /api/buy). Lists every
 priced item in services.json that no card carries, so a new service is not left off the shop.
@@ -370,12 +370,12 @@ def foot(lang, front=False, group=None):
             % (E(ui["payMethods"]), E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j))
 
 
-RATE_LANGS = ("my", "zh")
+RATE_LANGS = ("my", "zh", "de")
 
 
 def rate_box(lang):
     """Her word 2026-10-24: the Burmese and Chinese pages go out with a way for readers to rate the
-    translation. shop.js posts the answer to /api/rate."""
+    translation; the German pages, written the same way, carry it too. shop.js posts the answer to /api/rate."""
     if lang not in RATE_LANGS:
         return ""
     ui = SHOP["ui"][lang]

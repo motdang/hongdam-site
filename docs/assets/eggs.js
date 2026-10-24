@@ -15,7 +15,7 @@ const fnv = (s) => { let h = 2166136261; for (const ch of s) { h ^= ch.codePoint
 function keyOf() {
   const b = doc.body && doc.body.dataset.egg
   if (b && DATA.pages[b]) return [b, b]
-  const p = location.pathname.replace(/^\/(th|my|zh)(?=\/)/, '').replace(/index\.html$/, '').replace(/^\/+|\/+$/g, '')
+  const p = location.pathname.replace(/^\/(th|my|zh|de)(?=\/)/, '').replace(/index\.html$/, '').replace(/^\/+|\/+$/g, '')
   if (!p) return ['front', 'front']
   const parts = p.split('/')
   for (let i = parts.length; i > 0; i--) {
