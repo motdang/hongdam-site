@@ -60,11 +60,14 @@ const shoot = async (name, html, dir = OUT) => {
   await tab.waitForTimeout(500)
   await tab.screenshot({ path: path.join(dir, name + '.jpg'), type: 'jpeg', quality: 86 })
 }
-// A service's name runs longer than a category's: the words shrink together until they clear the job line.
+// A service's name runs longer than a category's: the name shrinks first, so the Thai name and the line under it
+// stay readable in a feed; then all three, until they clear the job line. No word breaks.
 const FIT = `<style>.th,.sub{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.th{margin-top:10px}</style>
 <script>addEventListener('load',()=>{const h=document.querySelector('h1'),t=document.querySelector('.th'),s=document.querySelector('.sub'),l=document.querySelector('.line')
-for(let k=1;k>=.5;k-=.04){h.style.fontSize=104*k+'px';t.style.fontSize=Math.max(28,40*k)+'px';s.style.fontSize=Math.max(22,28*k)+'px'
-if(s.getBoundingClientRect().bottom<=l.getBoundingClientRect().top-18&&h.scrollWidth<=h.clientWidth)break}})</script>`
+const fits=()=>s.getBoundingClientRect().bottom<=l.getBoundingClientRect().top-18&&h.scrollWidth<=h.clientWidth
+const set=(a,b,c)=>{h.style.fontSize=a+'px';t.style.fontSize=b+'px';s.style.fontSize=c+'px'}
+for(let a=104;a>=64;a-=4){set(a,40,30);if(fits())return}
+for(let k=1;k>=.7;k-=.05){set(64*k,40*k,30*k);if(fits())return}})</script>`
 const svcPage = (c) => page(c.n.en, c.n.th || '', c.l.en, pic(c), HUE[c.cat] ?? 32, LOOKS.doors[c.cat] || 'hongsa', c.cat) + FIT
 const ui = SHOP.ui
 const only = process.argv.slice(2)
