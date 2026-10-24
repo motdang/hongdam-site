@@ -6,7 +6,7 @@
 // a reader scrolls down to them.
 // A plain script, so the copies of /bots on GitHub Pages can load it from hongdam.net too.
 (function () {
-  var calm = matchMedia('(prefers-reduced-motion: reduce)').matches
+  var still = matchMedia('(prefers-reduced-motion: reduce)'), calm = still.matches
   var IO = 'IntersectionObserver' in window
   var LISTS = '.know ul > li, .card > ul > li, .pg .kind ul > li, .s-body ul > li'
   if (calm || !IO) {
@@ -48,8 +48,20 @@
   var bloom = new IntersectionObserver(inOrder(250, 260, 8), { threshold: 0.6, rootMargin: '0px 0px -12% 0px' })
   document.querySelectorAll(LISTS).forEach(function (li) { bloom.observe(li) })
 
+  // reduced motion switched on while the page is open: the rings and the typing stop
+  var quiet = false, hush = []
+  var onStill = function () {
+    if (!still.matches || quiet) return
+    quiet = true
+    document.querySelectorAll('.pond-ring').forEach(function (r) { r.remove() })
+    hush.forEach(function (f) { f() })
+  }
+  if (still.addEventListener) still.addEventListener('change', onStill)
+  else if (still.addListener) still.addListener(onStill)
+
   // a tap rings out from the finger, in the colour of the card it is on
   function ring(x, y, t) {
+    if (quiet) return
     var cs = getComputedStyle(t), col = cs.getPropertyValue('--line').trim() || cs.color
     for (var i = 0; i < 2; i++) {
       var r = document.createElement('span')
@@ -59,6 +71,7 @@
       r.style.top = y + 'px'
       r.style.setProperty('--rc', col)
       r.addEventListener('animationend', function () { this.remove() })
+      setTimeout(r.remove.bind(r), 1500)
       document.body.appendChild(r)
     }
   }
@@ -116,6 +129,7 @@
     var D = JSON.parse(data.textContent), first = q.placeholder, done = false, seen = true
     var quit = function () { if (!done) { done = true; q.placeholder = first } }
     q.addEventListener('focus', quit)
+    hush.push(quit)
     q.addEventListener('input', quit)
     new IntersectionObserver(function (es) { seen = es[es.length - 1].isIntersecting }).observe(q)
     var parts = function (s) {
