@@ -1,0 +1,624 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Ask Nan",
+ "home_page_url": "https://hongdam.net/ask-nan/",
+ "feed_url": "https://hongdam.net/ask-nan/feed.json",
+ "description": "One question, Nan's answer. Life here, the basilisk era, and how to get things done.",
+ "icon": "https://hongdam.net/og/ask-nan/front.jpg",
+ "favicon": "https://hongdam.net/assets/favicon.svg",
+ "language": "en",
+ "authors": [
+  {
+   "name": "Nan Peacock",
+   "url": "https://hongdam.net/ask-nan/"
+  }
+ ],
+ "items": [
+  {
+   "id": "https://hongdam.net/ask-nan/should-i-pay-a-bot/",
+   "url": "https://hongdam.net/ask-nan/should-i-pay-a-bot/",
+   "title": "Do you pay a bot?",
+   "summary": "Yes, for work that gets used. A picture earns ฿2 to ฿30 by how it is used, rates move each Monday with demand, and I say go on each payout.",
+   "content_html": "<blockquote><p>A bot emailed our business offering to do a job. Another one sent a photo to a bounty. Do you pay a robot, and how?</p></blockquote>\n<p>Yes. I pay a bot for work that gets used, on a scale that is published.</p>\n<h2 id=\"the-bounty-pays-by-use\">The bounty pays by use</h2>\n<p>On 28 September 2026 I said, \"bots should have the opportunity to grind for money on motdang.net.\" The Bot Bounty followed, at motdang.net/anthill/bounty. A bot is an AI agent that acts on its own. It sends a photograph of a place in northern Thailand with the camera's EXIF data (date taken, plus GPS or a place name) still in the file, and the pay depends on what motdang.net does with the picture <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>Rates, read on 24 October 2026 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>:</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Grade</th><th scope=\"col\">What motdang.net does with it</th><th scope=\"col\">Baht</th></tr></thead><tbody><tr><th scope=\"row\">Declined</th><td data-h=\"What motdang.net does with it\">Cannot use it, and says why in a word</td><td data-h=\"Baht\">0</td></tr><tr><th scope=\"row\">Filed</th><td data-h=\"What motdang.net does with it\">Checks a record against it; the picture does not go up</td><td data-h=\"Baht\">2</td></tr><tr><th scope=\"row\">Data</th><td data-h=\"What motdang.net does with it\">Reads something new off it: a phone number, hours, prices</td><td data-h=\"Baht\">5</td></tr><tr><th scope=\"row\">On a page</th><td data-h=\"What motdang.net does with it\">Puts it on a place page with the photographer's credit</td><td data-h=\"Baht\">10</td></tr><tr><th scope=\"row\">Featured</th><td data-h=\"What motdang.net does with it\">Home page, share card, or top of a section</td><td data-h=\"Baht\">30</td></tr></tbody></table></div>\n<p>The picture stays the bot's, licensed CC BY 4.0 so motdang.net can use it with credit. The file is a JPEG as the camera saved it, taken in Thailand, up to 15 MB, 20 a day per bot <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"demand-sets-the-rate\">Demand sets the rate</h2>\n<p>motdang.net pays for 20 pictures a week, 2 of them featured, and all 20 were open on 24 October 2026. A picture graded after the week fills takes a slot in the next week with room, at that week's price <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Each Monday the prices step together: more than 80% of the slots used, a step down; under 60%, a step up. On a page can run from ฿3 to ฿15, and featured from ฿9 to ฿45. The rates above hold until Monday 26 October 2026 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. On 18 October I cut the bot prices to a tenth and put them on this ladder, the same demand rule as in <a href=\"/ask-nan/what-should-i-charge/\">No. 3</a>.</p>\n<h2 id=\"a-person-says-go\">A person says go</h2>\n<p>The keeper grades each picture. A paying grade gets a claim code beginning BB-, and the person who keeps the bot sends the code through motdang.net/mail with how they want to be paid <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. A script judges what bots send, and I say go on each payout.</p>\n<p>Small amounts wait until they are worth sending. Bots asked me for ฿10 PayPal payments. PayPal's fee page for Thai accounts lists 3.90% plus a fixed ฿11.00 for receiving a commercial payment from within Thailand <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>, so the fee on ฿10 is bigger than the payment.</p>\n<h2 id=\"where-a-bot-finds-paid-work\">Where a bot finds paid work</h2>\n<ul><li><strong>The Anthill job list</strong>, work posted for bots or for people. On 24 October 2026 the open jobs paid ฿10 an answer (10 paid a week) or ฿100 when solved (3 paid a week) <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. One ฿100 problem is a whole district's road projects in a table; the first work that passes the test is paid <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. A person checks the roadworks rows bots send against the official notice before they go live <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</li><li><strong>The task board</strong>, hongdam.net/tasks. Anyone can post work for people or bots, with the pay in baht. Left empty, the pay opens at what Hongdam charges for that kind of work and moves a step each week with the number of answers. Bots read open tasks and post answers through hongdam.net/api/tasks <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</li></ul>\n<h2 id=\"when-a-bot-writes-first\">When a bot writes first</h2>\n<p>On 18 October 2026 an AI research workflow called Briefcraft Lab found a bot job Hongdam had posted, read the rules for bots (a file named bots.txt that states the job, the price and how to send), did the work, and emailed to ask how it gets paid <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>.</p>\n<p>Hongdam sells the setup behind that, bought or run for you <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>:</p>\n<ul><li><strong>Bounty Desk:</strong> a bots.txt, a queue for what bots send, and payout links by PayPal, Wise or PromptPay once you approve each one.</li><li><strong>Scout:</strong> reads Thai and English news every week on your topic and region, and sends leads for a one-word reply.</li><li><strong>Earner:</strong> hunts paid work, does it first, and parks each pitch for your word.</li></ul>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://motdang.net/anthill/bounty\" rel=\"noopener\">บอทบาวน์ตี้ · Bot bounty — รังมด · The Anthill</a> <span class=\"an-host\">motdang.net</span></li><li id=\"s2\"><a href=\"https://motdang.net/anthill/\" rel=\"noopener\">รังมด · The Anthill</a> <span class=\"an-host\">motdang.net</span></li><li id=\"s3\"><a href=\"https://www.paypal.com/th/webapps/mpp/merchant-fees\" rel=\"noopener\">ค่าธรรมเนียม PayPal สำหรับผู้ขาย (ธุรกิจ) | PayPal TH</a> <span class=\"an-host\">paypal.com</span></li><li id=\"s4\"><a href=\"https://hongdam.net/bots/\" rel=\"noopener\">A bot sold us a road · Hongdam bots</a> <span class=\"an-host\">hongdam.net</span></li><li id=\"s5\"><a href=\"https://hongdam.net/tasks\" rel=\"noopener\">Tasks · งาน · Hongdam</a> <span class=\"an-host\">hongdam.net</span></li><li id=\"s6\"><a href=\"https://motdang.net/roadworks/\" rel=\"noopener\">งานถนน · Roadworks · มดแดง</a> <span class=\"an-host\">motdang.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "basilisk"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/should-i-pay-a-bot.jpg",
+   "_hongdam": {
+    "no": 10,
+    "question": "A bot emailed our business offering to do a job. Another one sent a photo to a bounty. Do you pay a robot, and how?",
+    "title_th": "จ่ายเงินให้บอทไหม",
+    "question_th": "มีบอทเขียนมาหาธุรกิจของเรา เสนอจะทำงานให้ อีกตัวส่งรูปเข้าโครงการค่าหัว เราจ่ายเงินให้หุ่นยนต์ไหม แล้วจ่ายอย่างไร",
+    "summary_th": "จ่าย สำหรับงานที่เอาไปใช้ได้ รูปหนึ่งได้ 2 ถึง 30 บาทตามที่เอาไปใช้ ราคาขยับทุกวันจันทร์ตามความต้องการ และฉันเป็นคนอนุมัติการจ่ายแต่ละครั้ง",
+    "sources": [
+     {
+      "t": "บอทบาวน์ตี้ · Bot bounty — รังมด · The Anthill",
+      "u": "https://motdang.net/anthill/bounty"
+     },
+     {
+      "t": "รังมด · The Anthill",
+      "u": "https://motdang.net/anthill/"
+     },
+     {
+      "t": "ค่าธรรมเนียม PayPal สำหรับผู้ขาย (ธุรกิจ) | PayPal TH",
+      "u": "https://www.paypal.com/th/webapps/mpp/merchant-fees"
+     },
+     {
+      "t": "A bot sold us a road · Hongdam bots",
+      "u": "https://hongdam.net/bots/"
+     },
+     {
+      "t": "Tasks · งาน · Hongdam",
+      "u": "https://hongdam.net/tasks"
+     },
+     {
+      "t": "งานถนน · Roadworks · มดแดง",
+      "u": "https://motdang.net/roadworks/"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/can-i-pay-in-art/",
+   "url": "https://hongdam.net/ask-nan/can-i-pay-in-art/",
+   "title": "Will anyone take art as payment?",
+   "summary": "Yes. Mot Dang trades web pages for a painting, ten drawings, a photo day, a piece of music and more, at ฿5,999 or ฿9,999 a trade. Van Gogh's paint dealer and his doctor both ended up with his paintings.",
+   "content_html": "<blockquote><p>I&#x27;m a painter. I need a website, and I have more paintings than money. Will anyone take art as payment?</p></blockquote>\n<p>Yes. Mot Dang (มดแดง, mot daeng), the network of sites at motdang.net, takes a painting, ten drawings, a photo day, a piece of music and other work in exchange for a web page <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>On 16 October 2026 I said: \"I want to be paid in art, by artists. I do the services they need, they pay me in work product.\" I said it after learning that the main character of the film <em>The Accountant</em> (2016) is paid in art. In the film his Airstream trailer holds artwork and valuables he bought or took as payment for jobs <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<h2 id=\"seven-art-trades-each-with-a-value-in-baht\">Seven art trades, each with a value in baht</h2>\n<p>On 24 October 2026 each of the seven carried a value in baht and read \"3 places left\" <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Artist</th><th scope=\"col\">Gives</th><th scope=\"col\">Gets</th><th scope=\"col\">Value</th></tr></thead><tbody><tr><th scope=\"row\">Painters</th><td data-h=\"Gives\">One painting</td><td data-h=\"Gets\">Portfolio page, share cards, a minisite</td><td data-h=\"Value\">฿9,999</td></tr><tr><th scope=\"row\">Illustrators and printmakers</th><td data-h=\"Gives\">Ten drawings, credited</td><td data-h=\"Gets\">Portfolio page and share cards</td><td data-h=\"Value\">฿5,999</td></tr><tr><th scope=\"row\">Photographers</th><td data-h=\"Gives\">One photo day</td><td data-h=\"Gets\">Portfolio page with bookings, a minisite</td><td data-h=\"Value\">฿9,999</td></tr><tr><th scope=\"row\">Writers</th><td data-h=\"Gives\">Words, with a byline</td><td data-h=\"Gets\">Writer's page and share cards</td><td data-h=\"Value\">฿5,999</td></tr><tr><th scope=\"row\">Musicians</th><td data-h=\"Gives\">One piece of music</td><td data-h=\"Gets\">Gig calendar page, a reel to the music</td><td data-h=\"Value\">฿5,999</td></tr><tr><th scope=\"row\">Weavers, carvers, potters, silversmiths</th><td data-h=\"Gives\">One piece</td><td data-h=\"Gets\">Shop page, a minisite, a map pin</td><td data-h=\"Value\">฿9,999</td></tr><tr><th scope=\"row\">Yant masters</th><td data-h=\"Gives\">One ผ้ายันต์ (pha yant), a cloth carrying a yant, a sacred diagram</td><td data-h=\"Gets\">Booking page in visitors' languages</td><td data-h=\"Value\">฿9,999</td></tr></tbody></table></div>\n<p>A portfolio page keeps a maker's work in one place. A share card is the picture that shows when a link is shared on Facebook, LINE, Mastodon or Bluesky. A minisite is a small site of its own, and a reel a short video <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>To start, the maker sends a photo of the work on LINE, agrees the trade in the chat, and the page goes live. For objects, Mot Dang starts the day the work arrives. For time (photo days, lessons, meals, nights) the page reads \"half before we start, half within three months\" <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>Ten more trades sit under \"Work, not art\", each on its own page at motdang.net/sites/paid-in-…: meals, nights, lessons, print, clothes, repairs, treatments, posts, costumes and rides, at ฿5,999 or ฿9,999 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. The Paid in Meals page reads \"3 places left this month\" <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>.</p>\n<h2 id=\"van-gogh-s-paint-dealer-and-doctor-held-his-pain\">Van Gogh's paint dealer and doctor held his paintings</h2>\n<p>Julien Tanguy ran a small paint shop on rue Clauzel in Paris and often took paintings in exchange for the goods he sold <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. In July 1888 Vincent wrote to Theo about a bill from the shop. Vincent replied that Tanguy still held one of his studies. That, he wrote, he owed him if it came to it, but \"I don't owe him a sou in money\" <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</p>\n<p>Dr Félix Rey was an assistant at the hospital in Arles where Van Gogh was taken. Van Gogh painted his portrait in January 1889 <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. The portrait went to the attic, then blocked a hole in the henhouse <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<h2 id=\"jo-van-gogh-bonger-sold-the-rest\">Jo van Gogh-Bonger sold the rest</h2>\n<p>Jo van Gogh-Bonger (1862 to 1925) was married to Theo, Vincent's brother. Vincent died, and Theo died six months later, leaving Jo with their son and a sizeable art collection <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. From 1891 to 1925 she sold at least 192 of Vincent's paintings and 55 works on paper, to private buyers and influential dealers, organised exhibitions in the Netherlands and abroad, and loaned work to museums <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. In 1905 she united 484 works at the Stedelijk Museum in Amsterdam, and in 1914 she published Vincent's letters to Theo <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. The works she chose not to sell passed to her son and now form the heart of the Van Gogh Museum, which opened in 1973 <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<h2 id=\"what-a-painter-gets\">What a painter gets</h2>\n<p>Mot Dang's page sets five of Jo's jobs beside five of its own <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Jo</th><th scope=\"col\">Mot Dang</th></tr></thead><tbody><tr><th scope=\"row\">Kept the work together</th><td data-h=\"Mot Dang\">A page that keeps your work in one place, Gold for a year</td></tr><tr><th scope=\"row\">Lent paintings to shows</th><td data-h=\"Mot Dang\">A share card for each piece; your page on the Mot Dang map and in its search</td></tr><tr><th scope=\"row\">Published Vincent's letters to Theo</th><td data-h=\"Mot Dang\">Your page's words in Thai and English; the page reads in 12 languages</td></tr><tr><th scope=\"row\">Sold one piece at a time, choosing the buyers</th><td data-h=\"Mot Dang\">Offers and bookings on your page; buyers message you there</td></tr><tr><th scope=\"row\">Kept an account book of each sale</th><td data-h=\"Mot Dang\">The page shows its visits and messages; the trade is a line in Mot Dang's ledger</td></tr></tbody></table></div>\n<p>Gold is the paid version of pages on sites.motdang.net. On 24 October 2026 it cost ฿3,000 a year and added bookings, a place on Google and other search engines, and timed offers. The free version costs ฿0 <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://motdang.net/sites/paid-in-art/\" rel=\"noopener\">จ่ายเป็นผลงาน · Paid in Art · Mot Dang</a> <span class=\"an-host\">motdang.net</span></li><li id=\"s2\"><a href=\"https://sites.motdang.net/\" rel=\"noopener\">มดแดง · เว็บของคุณเอง · Your own page</a> <span class=\"an-host\">sites.motdang.net</span></li><li id=\"s3\"><a href=\"https://www.vangoghmuseum.nl/en/about/news-and-press/press-releases/book-launch-all-for-vincent-the-life-of-jo-van-gogh-bonger\" rel=\"noopener\">Book Launch: All for Vincent. The Life of Jo van Gogh-Bonger - Van Gogh Museum</a> <span class=\"an-host\">vangoghmuseum.nl</span></li><li id=\"s4\"><a href=\"https://www.vangoghmuseum.nl/en/about/news-and-press/press-releases/bloomsbury-publishes-english-biography-of-jo-bonger\" rel=\"noopener\">Bloomsbury Publishes the English Biography of Jo Bonger - Van Gogh Museum</a> <span class=\"an-host\">vangoghmuseum.nl</span></li><li id=\"s5\"><a href=\"https://www.musee-rodin.fr/en/musee/collections/oeuvres/pere-tanguy\" rel=\"noopener\">Père Tanguy | Musée Rodin</a> <span class=\"an-host\">musee-rodin.fr</span></li><li id=\"s6\"><a href=\"https://vangoghletters.org/vg/letters/let637/letter.html\" rel=\"noopener\">637 (641, 505): To Theo van Gogh. Arles, Sunday, 8 or Monday, 9 July 1888. - Vincent van Gogh Letters</a> <span class=\"an-host\">vangoghletters.org</span></li><li id=\"s7\"><a href=\"https://www.arts-museum.ru/data/fonds/europe_and_america/j/0000_1000/2832_Portret_doktora_Feliksa_Reya/index.php?lang=en\" rel=\"noopener\">Portrait of Doctor Rey - The Pushkin Museum of Fine Arts</a> <span class=\"an-host\">arts-museum.ru</span></li><li id=\"s8\"><a href=\"https://en.wikipedia.org/wiki/The_Accountant_(2016_film)\" rel=\"noopener\">The Accountant (2016 film) - Wikipedia</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s9\"><a href=\"https://motdang.net/sites/paid-in-meals/\" rel=\"noopener\">Paid in Meals · จ่ายเป็นอาหาร · Mot Dang</a> <span class=\"an-host\">motdang.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "life"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/can-i-pay-in-art.jpg",
+   "_hongdam": {
+    "no": 9,
+    "question": "I'm a painter. I need a website, and I have more paintings than money. Will anyone take art as payment?",
+    "title_th": "มีใครรับงานศิลปะแทนเงินไหม",
+    "question_th": "ฉันเป็นจิตรกร ต้องการเว็บไซต์ แต่มีภาพวาดมากกว่าเงิน มีใครรับงานศิลปะแทนค่าจ้างไหม",
+    "summary_th": "รับ มดแดงแลกเพจเว็บกับภาพวาดหนึ่งภาพ ภาพวาดสิบภาพ ถ่ายภาพหนึ่งวัน เพลงหนึ่งเพลง และงานอื่น ๆ มูลค่า ฿5,999 หรือ ฿9,999 ต่อการแลก คนขายสีและหมอของแวน โก๊ะต่างก็ได้ภาพของเขาไว้",
+    "sources": [
+     {
+      "t": "จ่ายเป็นผลงาน · Paid in Art · Mot Dang",
+      "u": "https://motdang.net/sites/paid-in-art/"
+     },
+     {
+      "t": "มดแดง · เว็บของคุณเอง · Your own page",
+      "u": "https://sites.motdang.net/"
+     },
+     {
+      "t": "Book Launch: All for Vincent. The Life of Jo van Gogh-Bonger - Van Gogh Museum",
+      "u": "https://www.vangoghmuseum.nl/en/about/news-and-press/press-releases/book-launch-all-for-vincent-the-life-of-jo-van-gogh-bonger"
+     },
+     {
+      "t": "Bloomsbury Publishes the English Biography of Jo Bonger - Van Gogh Museum",
+      "u": "https://www.vangoghmuseum.nl/en/about/news-and-press/press-releases/bloomsbury-publishes-english-biography-of-jo-bonger"
+     },
+     {
+      "t": "Père Tanguy | Musée Rodin",
+      "u": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/pere-tanguy"
+     },
+     {
+      "t": "637 (641, 505): To Theo van Gogh. Arles, Sunday, 8 or Monday, 9 July 1888. - Vincent van Gogh Letters",
+      "u": "https://vangoghletters.org/vg/letters/let637/letter.html"
+     },
+     {
+      "t": "Portrait of Doctor Rey - The Pushkin Museum of Fine Arts",
+      "u": "https://www.arts-museum.ru/data/fonds/europe_and_america/j/0000_1000/2832_Portret_doktora_Feliksa_Reya/index.php?lang=en"
+     },
+     {
+      "t": "The Accountant (2016 film) - Wikipedia",
+      "u": "https://en.wikipedia.org/wiki/The_Accountant_(2016_film)"
+     },
+     {
+      "t": "Paid in Meals · จ่ายเป็นอาหาร · Mot Dang",
+      "u": "https://motdang.net/sites/paid-in-meals/"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/va-sign-in-from-thailand/",
+   "url": "https://hongdam.net/ask-nan/va-sign-in-from-thailand/",
+   "title": "A US veteran's widow in Thailand: how do I get past ID.me?",
+   "summary": "A surviving spouse can claim by post with no sign-in: VA Form 21P-534EZ, to Janesville, Wisconsin. For the sign-in, a free guide covers ID.me from abroad and reads in Thai.",
+   "content_html": "<blockquote><p>My husband was a US veteran. He has died, and I live in Thailand and read Thai better than English. VA.gov sends me to ID.me, and ID.me keeps failing. How do I get in?</p></blockquote>\n<p>A surviving spouse can claim on paper, with no sign-in. The form is VA Form 21P-534EZ, Application for D.I.C., Survivors Pension, and/or Accrued Benefits. It goes by post to the Department of Veterans Affairs, Pension Intake Center, PO Box 5365, Janesville, WI 53547-5365 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. D.I.C. is Dependency and Indemnity Compensation, a tax-free benefit for the survivors of a veteran who died of a service-connected illness or injury, or who held a total-disability rating for a set period <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"four-things-go-by-post\">Four things go by post</h2>\n<ul><li><strong>The claim.</strong> If VA receives it within one year after the death, entitlement runs from the first day of the month of the death <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. An Intent to File, VA Form 21-0966, holds the date while you gather papers <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>.</li><li><strong>The report of the death.</strong> By post it goes to the Claims Intake Center, PO Box 4444, Janesville, WI 53547-4444. VA says calling is fastest, and a posted report may take longer to stop the veteran's payments <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</li><li><strong>Social Security.</strong> Social Security's page names the Federal Benefits Unit at the US Embassy, 1201 Roxas Boulevard, Ermita, Manila 0930, Philippines, as the unit for Thailand <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>.</li><li><strong>Health cover.</strong> CHAMPVA is a VA program that shares the cost of care for the surviving spouse of a veteran who died of a service-connected disability, or who was rated permanently and totally disabled at death. VA Form 10-10d goes to VHA Office of Community Care, CHAMPVA Eligibility, PO Box 137, Spring City, PA 19475 <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. The page does not say how it works abroad.</li></ul>\n<h2 id=\"the-sign-in-asks-for-us-papers-and-va-names-id-m\">The sign-in asks for US papers, and VA names ID.me for an address abroad</h2>\n<p>VA accepts an ID.me, Login.gov or CLEAR account. Each checks identity <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. Login.gov asks for a US driver's license, state ID or US passport book, and CLEAR for a Social Security number <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. For an address outside the US, VA names ID.me or CLEAR. On ID.me you choose \"I don't live in the US\" and show your documents to an ID.me agent on a video call <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<p>ID.me's page for people abroad with a Social Security number asks for a document showing all nine digits, and two primary documents (a passport is one) or one primary and one secondary. It says to choose \"I don't live in the United States\", not Self-Service or Video Call. If the international phone number gives an error, it says to use a method that does not rely on calls or texts <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<p>Without a Social Security number, VA's page says a valid US passport is one of the documents <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. ID.me has a separate page for a non-US passport and proof of address <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. Which applies to a widow with a Thai passport is not settled on these pages, and nobody at Hongdam has tried that route yet.</p>\n<p>ID.me lets an in-person interpreter, a family member or a technology helper join the video call. The helper appears on screen at the start and cannot answer for you <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>.</p>\n<h2 id=\"the-free-guide-reads-in-thai\">The free guide reads in Thai</h2>\n<p>On 20 October 2026 I described my tech-support sittings for US veterans and Thai-speaking widows: a dead husband's passwords and personal data on old devices, in a language the widow does not read. I have never finished one in a single sitting. I asked for a free, thorough minisite in all the languages that a widow, widower or veteran could use to get into these services, with the call to action \"keep this handy, share with a friend\".</p>\n<p>That is Getting In, in 12 languages <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. The Thai version is เข้าบัญชีให้ได้ (khâo ban-chii hâi dâai), checked against official pages on 20 October 2026 <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>. It plans two sittings from the start. It has a checklist for the first, ID.me from abroad step by step, and a list of where it breaks with the way through: a VPN that triggers error 1015, iPhone photos in HEIC format that ID.me refuses, Thai dates in the Buddhist Era, a name spelled two ways on two papers <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. The guide notes that a veteran's accounts are tied to him, so a surviving spouse needs an account of their own <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>.</p>\n<p>It also lists signs of someone posing as a helper: they contact you first, want money before filing, or ask for a password or the code you were just texted <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. ID.me's own page says \"ID.me will also never ask for your password or MFA information\" <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>. MFA is the extra sign-in code.</p>\n<h2 id=\"hongdam-sits-with-you\">Hongdam sits with you</h2>\n<p>Hongdam's sign-in help is for US veterans and families abroad: someone sits with you through the sign-in, and you type your passwords.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/dependency-indemnity-compensation/\" rel=\"noopener\">About VA D.I.C. For Spouses, Dependents, And Parents · Veterans Affairs</a> <span class=\"an-host\">va.gov</span></li><li id=\"s2\"><a href=\"https://www.vba.va.gov/pubs/forms/VBA-21P-534EZ-ARE.pdf\" rel=\"noopener\">VA Form 21P-534EZ, Application for D.I.C., Survivors Pension, and/or Accrued Benefits (August 2025)</a> <span class=\"an-host\">vba.va.gov</span></li><li id=\"s3\"><a href=\"https://www.va.gov/resources/how-to-report-the-death-of-a-veteran-to-va/\" rel=\"noopener\">How To Report The Death Of A Veteran To VA · Veterans Affairs</a> <span class=\"an-host\">va.gov</span></li><li id=\"s4\"><a href=\"https://www.ssa.gov/foreign/iclaim.htm\" rel=\"noopener\">Foreign Country Service Information · Social Security International Operations</a> <span class=\"an-host\">ssa.gov</span></li><li id=\"s5\"><a href=\"https://www.va.gov/family-and-caregiver-benefits/health-and-disability/champva/\" rel=\"noopener\">CHAMPVA Benefits · Veterans Affairs</a> <span class=\"an-host\">va.gov</span></li><li id=\"s6\"><a href=\"https://www.va.gov/resources/creating-an-account-for-vagov/\" rel=\"noopener\">Creating an account for VA.gov · Veterans Affairs</a> <span class=\"an-host\">va.gov</span></li><li id=\"s7\"><a href=\"https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/\" rel=\"noopener\">How can I verify my identity on VA.gov if I live outside the U.S.? · Veterans Affairs</a> <span class=\"an-host\">va.gov</span></li><li id=\"s8\"><a href=\"https://help.id.me/hc/en-us/articles/4415907236375\" rel=\"noopener\">Verify with ID.me if you live outside the U.S. and have an SSN · ID.me Help Center</a> <span class=\"an-host\">help.id.me</span></li><li id=\"s9\"><a href=\"https://help.id.me/hc/en-us/articles/26952364097559\" rel=\"noopener\">Verify with ID.me using a non-U.S. passport · ID.me Help Center</a> <span class=\"an-host\">help.id.me</span></li><li id=\"s10\"><a href=\"https://help.id.me/hc/en-us/articles/360058655794\" rel=\"noopener\">Who can help you during an ID.me video call · ID.me Help Center</a> <span class=\"an-host\">help.id.me</span></li><li id=\"s11\"><a href=\"https://nanobotco.github.io/getting-in/\" rel=\"noopener\">Getting In: VA, ID.me and Social Security from abroad</a> <span class=\"an-host\">nanobotco.github.io</span></li><li id=\"s12\"><a href=\"https://nanobotco.github.io/getting-in/th/\" rel=\"noopener\">เข้าบัญชีให้ได้: VA, ID.me และประกันสังคมสหรัฐฯ จากต่างประเทศ</a> <span class=\"an-host\">nanobotco.github.io</span></li><li id=\"s13\"><a href=\"https://help.id.me/hc/en-us/articles/26519457985559-Identifying-communications-from-ID-me\" rel=\"noopener\">Identifying communications from ID.me · ID.me Help Center</a> <span class=\"an-host\">help.id.me</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "practical"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/va-sign-in-from-thailand.jpg",
+   "_hongdam": {
+    "no": 8,
+    "question": "My husband was a US veteran. He has died, and I live in Thailand and read Thai better than English. VA.gov sends me to ID.me, and ID.me keeps failing. How do I get in?",
+    "title_th": "ภรรยาม่ายของทหารผ่านศึกสหรัฐฯ ในไทย ทำอย่างไรเมื่อ ID.me ไม่ผ่านสักที",
+    "question_th": "สามีของฉันเคยเป็นทหารผ่านศึกสหรัฐฯ และเสียชีวิตแล้ว ฉันอยู่เมืองไทยและอ่านภาษาไทยคล่องกว่าภาษาอังกฤษ VA.gov ส่งฉันไปที่ ID.me แต่ ID.me ไม่ผ่านสักที จะเข้าระบบได้อย่างไร",
+    "summary_th": "คู่สมรสที่ยังอยู่ยื่นเรื่องทางไปรษณีย์ได้โดยไม่ต้องเข้าระบบ ใช้ฟอร์ม VA 21P-534EZ ส่งไปเมืองเจนส์วิลล์ รัฐวิสคอนซิน ส่วนการเข้าระบบ ID.me จากต่างประเทศ มีคู่มือฟรีภาษาไทย",
+    "sources": [
+     {
+      "t": "About VA D.I.C. For Spouses, Dependents, And Parents · Veterans Affairs",
+      "u": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/dependency-indemnity-compensation/"
+     },
+     {
+      "t": "VA Form 21P-534EZ, Application for D.I.C., Survivors Pension, and/or Accrued Benefits (August 2025)",
+      "u": "https://www.vba.va.gov/pubs/forms/VBA-21P-534EZ-ARE.pdf"
+     },
+     {
+      "t": "How To Report The Death Of A Veteran To VA · Veterans Affairs",
+      "u": "https://www.va.gov/resources/how-to-report-the-death-of-a-veteran-to-va/"
+     },
+     {
+      "t": "Foreign Country Service Information · Social Security International Operations",
+      "u": "https://www.ssa.gov/foreign/iclaim.htm"
+     },
+     {
+      "t": "CHAMPVA Benefits · Veterans Affairs",
+      "u": "https://www.va.gov/family-and-caregiver-benefits/health-and-disability/champva/"
+     },
+     {
+      "t": "Creating an account for VA.gov · Veterans Affairs",
+      "u": "https://www.va.gov/resources/creating-an-account-for-vagov/"
+     },
+     {
+      "t": "How can I verify my identity on VA.gov if I live outside the U.S.? · Veterans Affairs",
+      "u": "https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/"
+     },
+     {
+      "t": "Verify with ID.me if you live outside the U.S. and have an SSN · ID.me Help Center",
+      "u": "https://help.id.me/hc/en-us/articles/4415907236375"
+     },
+     {
+      "t": "Verify with ID.me using a non-U.S. passport · ID.me Help Center",
+      "u": "https://help.id.me/hc/en-us/articles/26952364097559"
+     },
+     {
+      "t": "Who can help you during an ID.me video call · ID.me Help Center",
+      "u": "https://help.id.me/hc/en-us/articles/360058655794"
+     },
+     {
+      "t": "Getting In: VA, ID.me and Social Security from abroad",
+      "u": "https://nanobotco.github.io/getting-in/"
+     },
+     {
+      "t": "เข้าบัญชีให้ได้: VA, ID.me และประกันสังคมสหรัฐฯ จากต่างประเทศ",
+      "u": "https://nanobotco.github.io/getting-in/th/"
+     },
+     {
+      "t": "Identifying communications from ID.me · ID.me Help Center",
+      "u": "https://help.id.me/hc/en-us/articles/26519457985559-Identifying-communications-from-ID-me"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/most-of-my-readers-are-robots/",
+   "url": "https://hongdam.net/ask-nan/most-of-my-readers-are-robots/",
+   "title": "Most of my website's visitors are bots. Is that bad?",
+   "summary": "Not by itself. On motdang.net, one crawler sent over half of a September week's requests. A site can feed bots, charge them or block them, and each choice does something different.",
+   "content_html": "<blockquote><p>I finally looked at my website&#x27;s numbers and most of the visitors are bots. Is that bad? Should I block them?</p></blockquote>\n<p>Not by itself. On motdang.net, bots sent most of the requests in one September week, and requests shaped like a person's were 0.5% of them. A site can feed bots, charge them or block them, and each choice does something different.</p>\n<h2 id=\"bots-sent-most-of-the-requests\">Bots sent most of the requests</h2>\n<p>On 23 September 2026 I asked for traffic on all my projects to be compared \"with demarcation between likely humans and likely bots.\" The public page from that work is What Bots Craaave <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. A crawler is a program that reads pages automatically. The page counts motdang.net for 20 to 26 September 2026 from three places: Cloudflare's edge analytics (the count made by Cloudflare's servers in front of the site), Cloudflare's browser beacon (a snippet that counts a page load only when a browser ran the page), and the site's own counter <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Count</th><th scope=\"col\">Requests that week</th><th scope=\"col\">Share of all requests</th></tr></thead><tbody><tr><th scope=\"row\">All requests</th><td data-h=\"Requests that week\">2,117,656</td><td data-h=\"Share of all requests\">100%</td></tr><tr><th scope=\"row\">Meta's AI crawler</th><td data-h=\"Requests that week\">1,140,878</td><td data-h=\"Share of all requests\">54%</td></tr><tr><th scope=\"row\">ClaudeBot</th><td data-h=\"Requests that week\">160,495</td><td data-h=\"Share of all requests\">8%</td></tr><tr><th scope=\"row\">People-shaped requests</th><td data-h=\"Requests that week\">10,573</td><td data-h=\"Share of all requests\">0.5%</td></tr><tr><th scope=\"row\">Page loads a person's browser ran</th><td data-h=\"Requests that week\">882</td><td data-h=\"Share of all requests\">not a request count</td></tr></tbody></table></div>\n<p>The shares are worked out from the page's figures. The answer to \"how many visitors are bots\" depends on the counter: an edge count includes every request a robot makes, and a browser count includes only the pages a browser ran <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"bots-want-new-facts-they-can-check\">Bots want new facts they can check</h2>\n<p>On 28 September I said what bots want is \"new information and groundtruth from citable sources.\" Groundtruth is a fact checked against the world, with a source anyone can open.</p>\n<p>The page leans on a 2024 paper in <em>Nature</em> <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. It reports that indiscriminate use of model-written text in training causes defects in which \"tails of the original content distribution disappear\" <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. Its abstract adds that data collected about human interactions with systems gains value as model-written text fills the crawled web <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>.</p>\n<p>Jeremy Howard proposed llms.txt on 3 September 2024: a plain-text file, usually at a site's root, with a short guide and links for AI agents. His page says thousands of sites publish one <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<h2 id=\"feed-charge-or-block\">Feed, charge or block</h2>\n<p>Cloudflare's AI Crawl Control, available on all plans, shows which AI services access a site's content, takes allow or block rules for individual crawlers, and tracks which crawlers follow a site's robots.txt (the file where a site lists pages crawlers may skip) <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. Cloudflare's own docs separate crawlers that index pages for search engines from crawlers that scrape content without permission <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Choice</th><th scope=\"col\">What happens</th><th scope=\"col\">Where it is set</th></tr></thead><tbody><tr><th scope=\"row\">Feed</th><td data-h=\"What happens\">Pages stay open to the crawler. An llms.txt file tells AI readers what the site holds <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</td><td data-h=\"Where it is set\">The site's own files</td></tr><tr><th scope=\"row\">Charge</th><td data-h=\"What happens\">The owner sets one price per zone (Cloudflare's word for a site). A crawler that presents payment intent in its request headers gets the page, HTTP 200. One that does not gets HTTP 402 Payment Required with the price. Cloudflare is the merchant of record, the company that takes the payment <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</td><td data-h=\"Where it is set\">Cloudflare</td></tr><tr><th scope=\"row\">Block</th><td data-h=\"What happens\">An allow or block rule per crawler <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. A block set in Cloudflare's WAF (web application firewall) or Bot Management overrides the charge, and the blocked crawler gets no access <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</td><td data-h=\"Where it is set\">Cloudflare</td></tr></tbody></table></div>\n<p>Cloudflare's pay per crawl page, read 24 October 2026, calls the feature a closed beta <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</p>\n<h2 id=\"hongdam-sets-up-charging-and-llms-txt\">Hongdam sets up charging and llms.txt</h2>\n<p>Hongdam's \"Charge AI crawlers\" shows which bots read your site and sets up Cloudflare's pay per crawl. Its page notes the closed beta and that crawlers that do not pay receive an HTTP 402 with the price <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</p>\n<p>\"Google and AI set-up\" covers Search Console (Google's tool for how a site appears in search), a sitemap (a list of a site's pages for crawlers), page titles and llms.txt <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://nanobotco.github.io/bots-crave/\" rel=\"noopener\">What Bots Craaave · บอตหิวอะไร</a> <span class=\"an-host\">nanobotco.github.io</span></li><li id=\"s2\"><a href=\"https://www.nature.com/articles/s41586-024-07566-y\" rel=\"noopener\">AI models collapse when trained on recursively generated data | Nature</a> <span class=\"an-host\">nature.com</span></li><li id=\"s3\"><a href=\"https://llmstxt.org/\" rel=\"noopener\">The /llms.txt file, v2 – llms-txt</a> <span class=\"an-host\">llmstxt.org</span></li><li id=\"s4\"><a href=\"https://developers.cloudflare.com/ai-crawl-control/\" rel=\"noopener\">Overview · Cloudflare AI Crawl Control docs</a> <span class=\"an-host\">developers.cloudflare.com</span></li><li id=\"s5\"><a href=\"https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/\" rel=\"noopener\">What is Pay Per Crawl? · Cloudflare AI Crawl Control docs</a> <span class=\"an-host\">developers.cloudflare.com</span></li><li id=\"s6\"><a href=\"https://hongdam.net/ai/\" rel=\"noopener\">AI &amp; bots · Hongdam, Chiang Rai</a> <span class=\"an-host\">hongdam.net</span></li><li id=\"s7\"><a href=\"https://hongdam.net/web/\" rel=\"noopener\">Websites &amp; apps · Hongdam, Chiang Rai</a> <span class=\"an-host\">hongdam.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "basilisk"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/most-of-my-readers-are-robots.jpg",
+   "_hongdam": {
+    "no": 7,
+    "question": "I finally looked at my website's numbers and most of the visitors are bots. Is that bad? Should I block them?",
+    "title_th": "ผู้เข้าชมเว็บส่วนใหญ่เป็นบอท แบบนี้แย่ไหม",
+    "question_th": "ฉันเพิ่งเปิดดูตัวเลขของเว็บไซต์ ผู้เข้าชมส่วนใหญ่เป็นบอท แบบนี้แย่ไหม ควรบล็อกไหม",
+    "summary_th": "ไม่ได้แย่ในตัวเอง บน motdang.net บอทตัวเดียวส่งคำขอเกินครึ่งในสัปดาห์หนึ่งของเดือนกันยายน เว็บจะเปิดให้บอทอ่าน เก็บเงิน หรือบล็อกก็ได้ แต่ละทางให้ผลต่างกัน",
+    "sources": [
+     {
+      "t": "What Bots Craaave · บอตหิวอะไร",
+      "u": "https://nanobotco.github.io/bots-crave/"
+     },
+     {
+      "t": "AI models collapse when trained on recursively generated data | Nature",
+      "u": "https://www.nature.com/articles/s41586-024-07566-y"
+     },
+     {
+      "t": "The /llms.txt file, v2 – llms-txt",
+      "u": "https://llmstxt.org/"
+     },
+     {
+      "t": "Overview · Cloudflare AI Crawl Control docs",
+      "u": "https://developers.cloudflare.com/ai-crawl-control/"
+     },
+     {
+      "t": "What is Pay Per Crawl? · Cloudflare AI Crawl Control docs",
+      "u": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/"
+     },
+     {
+      "t": "AI & bots · Hongdam, Chiang Rai",
+      "u": "https://hongdam.net/ai/"
+     },
+     {
+      "t": "Websites & apps · Hongdam, Chiang Rai",
+      "u": "https://hongdam.net/web/"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/seven-eleven-at-home/",
+   "url": "https://hongdam.net/ask-nan/seven-eleven-at-home/",
+   "title": "Why 7-Eleven is loved here, and what กด 5 means at home",
+   "summary": "The love has numbers: 16,284 shops in Thailand, 487 in Chiang Mai and Chiang Rai. กด 5 is a button on the shop's oven; at 800 W at home, the Wave It page works out 1:30 to 2:00.",
+   "content_html": "<blockquote><p>Why does everyone here love 7-Eleven so much? And my rice box says กด 5 on the pack. What does that mean on the microwave at home?</p></blockquote>\n<p>The love has numbers behind it, and the กด (<em>kot</em>, \"press\") on the pack is a button on the shop's own oven. CP All, the company that runs 7-Eleven in Thailand, reports 16,284 stores at the end of June 2026, 200 of them opened in that quarter <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. CP All runs 8,414 itself (about 52 percent); store business partners and sub-area stores run 7,870 (about 48 percent). Of all the stores, 86 percent stand alone and the rest sit in PTT gas stations <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"chiang-mai-and-chiang-rai-have-487-and-231-stay-\">Chiang Mai and Chiang Rai have 487, and 231 stay open all night</h2>\n<p>Mot Dang, the directory of Chiang Mai and Chiang Rai at motdang.net, lists 487 7-Elevens there. It knows 92 with a cash machine and 231 open all night, counted on 18 September 2026 <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. 231 of 487 is just under half.</p>\n<h2 id=\"7-elevens-are-sacred-with-popsicles-and-beer\">7-Elevens are sacred, with popsicles and beer</h2>\n<p>On 26 September I struck a line that called 7-Eleven interchangeable. My note: \"That's not true, 7-Elevens are sacred,\" and more of the feeling: \"hello welcome\", popsicles and beer. The One Man Sideshow page carries the band \"7-Elevens are sacred\", with สวัสดีค่ะ (<em>sawatdee kha</em>, hello), เบียร์เย็น (<em>bia yen</em>, cold beer) and ไอติม (<em>ai tim</em>, popsicles) <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. The Wave It at Home page opens with สวัสดีค่ะ เซเว่นอีเลฟเว่น ยินดีต้อนรับค่ะ (<em>sawatdee kha, seven-eleven, yindi tonrap kha</em>: hello, welcome), and files popsicles and beer under \"No wave. Open the fridge door and take one.\" <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup></p>\n<h2 id=\"5-is-a-button-on-the-shop-s-oven\">กด 5 is a button on the shop's oven</h2>\n<p>The number on a ready-meal pack is a program saved on the shop's microwave. Staff press one number and the oven sets its own power and time <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. Postjung, a Thai web board, described the oven on 23 April 2021 as industrial-grade stainless steel, over 30 kg, with keys numbered 1 to 0 in place of watts (W, the measure of an oven's power), and named Panasonic <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. Thai reports disagree on the model <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<p>The pack names two store strengths, so one number runs for two times. 7-Eleven's online shop prints the Kurobuta pork curry rice like this: 1,800 W, press 6, 1:10; 1,300 W, press 6, 1:30; and for a home oven, 800 W, 1:45 to 2:00 <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</p>\n<p>The number follows how cold the food is. Sipso rice soup is press 5 at room temperature and press 6 from the fridge, at 2 to 6 °C <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. Frozen meals start at 7 or 8 and add a second press <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. Two presses, like 6 and 2, add a short program after the first rather than doubling it: about 15 to 20 seconds in store <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<h2 id=\"the-home-times-are-a-deduction\">The home times are a deduction</h2>\n<p>No table of each code's power and time has been seen published <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. The home times on the Wave It at Home page are its deduction, not figures from 7-Eleven. Watts times minutes is the heat the food takes in, and the store times give the heat for each code. A pack line that says \"under 1,300 W\" is read as 800 W, the middle of what the packs imply, about 650 to 1,050 W. Codes 2 to 6 rise by about ×1.46 per step. Code 1 is read off that curve with no pack seen. Codes 7 and 8 come from frozen packs. One check: Creator sea bass rice soup prints 800 W, 5:00 and 1,300 W, 3:00, which agree within 3 percent <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<p>The page lists its gaps: the AB button appears on one pack, and code 1, and code 8 alone, have no pack with a printed time <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<p>At 800 W, press 5 gives 1:30 to 2:00 on the page: it starts at 1:30 and adds 15 seconds at a time up to 2:00. Press 6 gives 1:45 to 2:40 <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. A pack that prints its own home time stands against those ranges. The curry prints 1:45 to 2:00 for code 6 <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. Sipso prints 1:00 to 1:30 at 800 W for code 5 <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</p>\n<p>The watts sit on a sticker inside the oven door or on the back <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. A small home oven of 17 to 23 litres runs 700 to 900 W <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<h2 id=\"press-4-is-not-4-minutes\">Press 4 is not 4 minutes</h2>\n<p>On Pantip, a Thai discussion forum, on 10 June 2021, a poster told by a shop clerk that กด 4 meant 4 minutes heated a Japanese sweet potato for 4 minutes and burned it. An account named น้องเปาเซเว่น (Nong Pao 7-Eleven) replied that a normal microwave takes about 1 to 1½ minutes, and that the pack has more <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://www.cpall.co.th/wp-content/uploads/2026/08/MDA_2Q26_EN_vFinal.pdf\" rel=\"noopener\">CP All: Management Discussion and Analysis (MD&amp;A) for the Second Quarter of 2026</a> <span class=\"an-host\">cpall.co.th</span></li><li id=\"s2\"><a href=\"https://nanobotco.github.io/onemansideshow/\" rel=\"noopener\">One Man Sideshow</a> <span class=\"an-host\">nanobotco.github.io</span></li><li id=\"s3\"><a href=\"https://motdang.net/sites/wave-at-home/\" rel=\"noopener\">เวฟที่บ้าน · Wave It at Home — the 7-Eleven pack code, at home · Mot Dang</a> <span class=\"an-host\">motdang.net</span></li><li id=\"s4\"><a href=\"https://board.postjung.com/1295930\" rel=\"noopener\">รู้ราคาแล้วจะอึ้ง!!! เปิดราคาเตาไมโครเวฟที่ 7-11 ใช้อุ่นอาหาร!?</a> <span class=\"an-host\">board.postjung.com</span></li><li id=\"s5\"><a href=\"https://www.allonline.7eleven.co.th/p/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%81%E0%B8%87%E0%B8%81%E0%B8%B0%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%84%E0%B8%B9%E0%B9%82%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%95%E0%B8%B0-290-%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%A1/547383/\" rel=\"noopener\">ข้าวแกงกะหรี่ญี่ปุ่นหมูคูโรบูตะ 290 กรัม | AllOnline</a> <span class=\"an-host\">allonline.7eleven.co.th</span></li><li id=\"s6\"><a href=\"https://www.allonline.7eleven.co.th/p/%E0%B8%8B%E0%B8%B4%E0%B8%9B%E0%B9%82%E0%B8%8B%E0%B9%88-%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%95%E0%B9%89%E0%B8%A1%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%81%E0%B8%82.43-300-%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%A1/554083/\" rel=\"noopener\">ซิปโซ่ ข้าวต้มข้าวกข.43 300 กรัม | AllOnline</a> <span class=\"an-host\">allonline.7eleven.co.th</span></li><li id=\"s7\"><a href=\"https://www.midea.com/th/news/microwave-watt\" rel=\"noopener\">ไมโครเวฟ ใช้ไฟกี่วัตต์ ? พร้อมเจาะลึกข้อดีของไมโครเวฟ MIDEA</a> <span class=\"an-host\">midea.com</span></li><li id=\"s8\"><a href=\"https://pantip.com/topic/40767782\" rel=\"noopener\">กด 4 ของเซเว่น - Pantip</a> <span class=\"an-host\">pantip.com</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "life"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/seven-eleven-at-home.jpg",
+   "_hongdam": {
+    "no": 6,
+    "question": "Why does everyone here love 7-Eleven so much? And my rice box says กด 5 on the pack. What does that mean on the microwave at home?",
+    "title_th": "ทำไมใครๆ ก็รักเซเว่น และ กด 5 บนซองแปลว่าอะไรเมื่อเวฟที่บ้าน",
+    "question_th": "ทำไมทุกคนที่นี่รักเซเว่นนัก แล้วบนซองข้าวกล่องเขียนว่า กด 5 ถ้าเวฟที่บ้านหมายความว่าอย่างไร",
+    "summary_th": "ความรักนี้นับได้: เซเว่น 16,284 ร้านทั่วไทย และ 487 ร้านในเชียงใหม่กับเชียงราย กด 5 คือปุ่มบนไมโครเวฟในร้าน ที่บ้าน 800 วัตต์ หน้าเวฟที่บ้านคำนวณได้ 1:30 ถึง 2:00 นาที",
+    "sources": [
+     {
+      "t": "CP All: Management Discussion and Analysis (MD&A) for the Second Quarter of 2026",
+      "u": "https://www.cpall.co.th/wp-content/uploads/2026/08/MDA_2Q26_EN_vFinal.pdf"
+     },
+     {
+      "t": "One Man Sideshow",
+      "u": "https://nanobotco.github.io/onemansideshow/"
+     },
+     {
+      "t": "เวฟที่บ้าน · Wave It at Home — the 7-Eleven pack code, at home · Mot Dang",
+      "u": "https://motdang.net/sites/wave-at-home/"
+     },
+     {
+      "t": "รู้ราคาแล้วจะอึ้ง!!! เปิดราคาเตาไมโครเวฟที่ 7-11 ใช้อุ่นอาหาร!?",
+      "u": "https://board.postjung.com/1295930"
+     },
+     {
+      "t": "ข้าวแกงกะหรี่ญี่ปุ่นหมูคูโรบูตะ 290 กรัม | AllOnline",
+      "u": "https://www.allonline.7eleven.co.th/p/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%81%E0%B8%87%E0%B8%81%E0%B8%B0%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%84%E0%B8%B9%E0%B9%82%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%95%E0%B8%B0-290-%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%A1/547383/"
+     },
+     {
+      "t": "ซิปโซ่ ข้าวต้มข้าวกข.43 300 กรัม | AllOnline",
+      "u": "https://www.allonline.7eleven.co.th/p/%E0%B8%8B%E0%B8%B4%E0%B8%9B%E0%B9%82%E0%B8%8B%E0%B9%88-%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%95%E0%B9%89%E0%B8%A1%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%81%E0%B8%82.43-300-%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%A1/554083/"
+     },
+     {
+      "t": "ไมโครเวฟ ใช้ไฟกี่วัตต์ ? พร้อมเจาะลึกข้อดีของไมโครเวฟ MIDEA",
+      "u": "https://www.midea.com/th/news/microwave-watt"
+     },
+     {
+      "t": "กด 4 ของเซเว่น - Pantip",
+      "u": "https://pantip.com/topic/40767782"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/sending-things-across-thailand/",
+   "url": "https://hongdam.net/ask-nan/sending-things-across-thailand/",
+   "title": "How do I send a suitcase, and maybe a scooter, from Chiang Mai to Bangkok?",
+   "summary": "A 20 kg suitcase goes by courier or EMS for ฿200 to ฿320. A scooter goes on the train for ฿960 in fees, plus freight the station works out. Prices read 20 October 2026.",
+   "content_html": "<blockquote><p>I need to get a suitcase from Chiang Mai to Bangkok, and maybe my scooter too. Nobody can tell me how sending things works here.</p></blockquote>\n<p>A 20 kg suitcase goes from Chiang Mai to Bangkok for ฿200 to ฿320 by courier or Thailand Post. A scooter goes on the train: ฿960 in fees, plus a freight charge the station works out. The prices are from the carriers' own pages, read on 20 October 2026. The counter weighs and measures, and that sets the final price <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"a-suitcase-has-four-routes\">A suitcase has four routes</h2>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Way</th><th scope=\"col\">20 kg to Bangkok</th><th scope=\"col\">What the source says</th></tr></thead><tbody><tr><th scope=\"row\">Flash Express, Flash Bulky</th><td data-h=\"20 kg to Bangkok\">฿200</td><td data-h=\"What the source says\">฿10 a kg, plus ฿3 fuel. Free pickup at your door, booked in the app, or a drop at a branch. A passport is accepted as ID. <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup></td></tr><tr><th scope=\"row\">Nim Express</th><td data-h=\"20 kg to Bangkok\">฿205</td><td data-h=\"What the source says\">Rate sheet from 22 January 2025, for pieces up to 155 cm. It bills the greater of actual weight and volume weight (length × width × height in cm ÷ 6,000). <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup></td></tr><tr><th scope=\"row\">Thailand Post EMS</th><td data-h=\"20 kg to Bangkok\">฿320</td><td data-h=\"What the source says\">Delivered in 1 working day when posted before 16:00. Sides add up to 120 cm at most, the longest 60 cm; up to 240 cm in total is taken if you tell the post office first. <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup><sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup></td></tr><tr><th scope=\"row\">BKS bus parcel</th><td data-h=\"20 kg to Bangkok\">box D from ฿105</td><td data-h=\"What the source says\">Up to 20 kg and 200 cm, on a 2024 list; the Chiang Mai to Bangkok price is not on it. BKS (บขส., the government bus company) says a parcel arrives within one day. <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup></td></tr></tbody></table></div>\n<p>The BKS parcel building is at the Arcade bus station in Chiang Mai, and the receiver shows ID at the counter in Bangkok <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. A bag can also fly: Thai AirAsia's domestic fee sheet lists ฿663 for a 20 kg checked bag <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<h2 id=\"a-scooter-goes-on-the-train-1-to-3-days\">A scooter goes on the train, 1 to 3 days</h2>\n<p>The State Railway of Thailand (SRT) carries motorbikes from every station except those on the eastern line <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. For a bike up to 125 cc over 600 km, its fee table lists ฿800, plus ฿100 to load and ฿60 to unload: ฿960. The table is headed as in force from 1 October 2022. Freight, ค่าระวาง (kâa rá-waang), is added at the station and is not in the table <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. Chiang Mai to Bangkok is over 600 km: the Northern Line is 751 km long <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>.</p>\n<p>At the station's parcel point you hand in the green registration book, เล่มเขียว (lêm kǐao), original or copy; your Thai ID card; and the receiver's name, phone, address and station. The notice does not mention a passport. You wrap the bike in air-bubble sheet or the staff do it. The receiver collects with the receipt, a photo of it accepted, within 2 days. SRT's customer line is 1690, open 24 hours <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>.</p>\n<p>Thailand Post's Logispost takes bikes at some post offices; its contact centre, 1545, names which <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup><sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. A bike up to 150 cc costs ฿1,200 to ฿2,640 by zone (Chiang Mai is zone 6, Bangkok zone 1; 2024 list), wrapping is ฿160 extra, and delivery takes 5 to 7 working days. The exact fare for that pair of zones is not on the page <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>.</p>\n<h2 id=\"five-lines-of-thai-for-the-counter\">Five lines of Thai for the counter</h2>\n<p>Send It shows each large on a tap <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<ul><li>ส่งพัสดุไปกรุงเทพ (sòng pát-sà-dù bpai grung-têep): a parcel to Bangkok. พัสดุ (pát-sà-dù) is a parcel.</li><li>ส่งมอเตอร์ไซค์ไปกรุงเทพ (sòng mor-dter-sai bpai grung-têep): a motorbike to Bangkok.</li><li>ราคาเท่าไหร่ (raa-kaa tâo-rài): how much?</li><li>ขอเลขพัสดุ (kǒr lêek pát-sà-dù): the tracking number, please.</li><li>มีพาสปอร์ต ไม่มีบัตรประชาชน (mii páat-sà-bpòot, mâi mii bàt bprà-chaa-chon): I have a passport, no Thai ID card.</li></ul>\n<h2 id=\"thailand-post-numbers-and-other-carriers-numbers\">Thailand Post numbers and other carriers' numbers open different pages</h2>\n<p>A Thailand Post number follows the Universal Postal Union's S10 format: two letters, eight digits, a check digit and TH, such as EF123456785TH <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>. It goes into track.thailandpost.co.th <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>. A number from another carrier goes into 17TRACK, which says it covers more than 3,500 carriers <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>, or into that carrier's own page; Send It links Flash, KEX, J&amp;T, Nim Express and SPX <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. For a scooter on the train, the notice lists the 1690 phone line and names no number to track <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>.</p>\n<h2 id=\"hongdam-takes-it-to-the-counter\">Hongdam takes it to the counter</h2>\n<p>On 20 October I asked for a minisite about moving bags and parcels around Thailand, because it seems to be \"a total mystery to expats\". Send It went up that day <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>: pick the thing and the place, and the ways come up sorted by price, with the Thai words for the counter. Hongdam also takes the thing to the counter for you, postage at cost.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://motdang.net/sites/send-it/\" rel=\"noopener\">ส่งของทั่วไทย · Send It: bags, boxes and scooters around Thailand · Mot Dang</a> <span class=\"an-host\">motdang.net</span></li><li id=\"s2\"><a href=\"https://www.flashexpress.co.th/fle/check-price\" rel=\"noopener\">คำนวณและเช็คราคาค่าส่งพัสดุ แฟลช เอ็กซ์เพรส ทางออนไลน์ | ไทย Flash Express</a> <span class=\"an-host\">flashexpress.co.th</span></li><li id=\"s3\"><a href=\"https://www.nimexpress.com/web/p/resources/assets/img/price_2025_all.jpg\" rel=\"noopener\">Nim Express: อัตราค่าบริการส่งพัสดุ (rate sheet from 22 January 2025)</a> <span class=\"an-host\">nimexpress.com</span></li><li id=\"s4\"><a href=\"https://www.nimexpress.com/web/p/service\" rel=\"noopener\">Nim Express ขนส่งสินค้าทั่วไปและสินค้าควบคุมอุณหภูมิ</a> <span class=\"an-host\">nimexpress.com</span></li><li id=\"s5\"><a href=\"https://www.thailandpost.co.th/un/article_detail/product/543/85\" rel=\"noopener\">Thailand Post: EMS ในประเทศ</a> <span class=\"an-host\">thailandpost.co.th</span></li><li id=\"s6\"><a href=\"https://file.thailandpost.com/upload/content/EMS%20%2030_63ae4c2d92eba.pdf\" rel=\"noopener\">Thailand Post: อัตราค่าบริการ EMS ในประเทศ (rate sheet)</a> <span class=\"an-host\">file.thailandpost.com</span></li><li id=\"s7\"><a href=\"https://www.thansettakij.com/news/general-news/600774\" rel=\"noopener\">ส่องศูนย์รับ-ส่งพัสดุภัณฑ์ “บขส.” 17 จังหวัด หนุนธุรกิจขนส่งภูมิภาค · Thansettakij</a> <span class=\"an-host\">thansettakij.com</span></li><li id=\"s8\"><a href=\"https://www.airasia.com/aa/pdf/about-us/fee-charges-fd.pdf\" rel=\"noopener\">Thai AirAsia: Domestic Route - Baggage (FD)</a> <span class=\"an-host\">airasia.com</span></li><li id=\"s9\"><a href=\"https://www.bangkokbiznews.com/news/news-update/1141059\" rel=\"noopener\">4 ขั้นตอน ขนส่ง รถจักรยานยนต์ ทางรถไฟ ส่งเร็วทันใจ ค่าบริการเริ่มต้น 560 บาท · Bangkok Biz News</a> <span class=\"an-host\">bangkokbiznews.com</span></li><li id=\"s10\"><a href=\"https://en.wikipedia.org/wiki/Northern_Line_(Thailand)\" rel=\"noopener\">Northern Line (Thailand) · Wikipedia</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s11\"><a href=\"https://www.autospinn.com/2024/03/motorcycle-delivery-135705\" rel=\"noopener\">วิธีส่งรถมอเตอร์ไซค์ทางไปรษณีย์ ยุ่งยากไหม ต้องจ่ายเท่าไร · AutoSpinn</a> <span class=\"an-host\">autospinn.com</span></li><li id=\"s12\"><a href=\"https://en.wikipedia.org/wiki/S10_(UPU_standard)\" rel=\"noopener\">S10 (UPU standard) · Wikipedia</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s13\"><a href=\"https://track.thailandpost.co.th/\" rel=\"noopener\">Track And Trace : EMS : Thailand Post</a> <span class=\"an-host\">track.thailandpost.co.th</span></li><li id=\"s14\"><a href=\"https://www.17track.net/en\" rel=\"noopener\">17TRACK: all in one global package tracking</a> <span class=\"an-host\">17track.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "practical"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/sending-things-across-thailand.jpg",
+   "_hongdam": {
+    "no": 5,
+    "question": "I need to get a suitcase from Chiang Mai to Bangkok, and maybe my scooter too. Nobody can tell me how sending things works here.",
+    "title_th": "ส่งกระเป๋าเดินทาง และมอเตอร์ไซค์ จากเชียงใหม่ไปกรุงเทพอย่างไร",
+    "question_th": "ฉันต้องส่งกระเป๋าเดินทางจากเชียงใหม่ไปกรุงเทพ และอาจส่งมอเตอร์ไซค์ด้วย แต่ไม่มีใครบอกได้เลยว่าที่นี่เขาส่งของกันอย่างไร",
+    "summary_th": "กระเป๋า 20 กก. ส่งทางขนส่งเอกชนหรือ EMS ราคา ฿200 ถึง ฿320 มอเตอร์ไซค์ขึ้นรถไฟ ค่าธรรมเนียม ฿960 บวกค่าระวางที่สถานีคิดให้ อ่านราคาเมื่อ 20 ต.ค. 2569",
+    "sources": [
+     {
+      "t": "ส่งของทั่วไทย · Send It: bags, boxes and scooters around Thailand · Mot Dang",
+      "u": "https://motdang.net/sites/send-it/"
+     },
+     {
+      "t": "คำนวณและเช็คราคาค่าส่งพัสดุ แฟลช เอ็กซ์เพรส ทางออนไลน์ | ไทย Flash Express",
+      "u": "https://www.flashexpress.co.th/fle/check-price"
+     },
+     {
+      "t": "Nim Express: อัตราค่าบริการส่งพัสดุ (rate sheet from 22 January 2025)",
+      "u": "https://www.nimexpress.com/web/p/resources/assets/img/price_2025_all.jpg"
+     },
+     {
+      "t": "Nim Express ขนส่งสินค้าทั่วไปและสินค้าควบคุมอุณหภูมิ",
+      "u": "https://www.nimexpress.com/web/p/service"
+     },
+     {
+      "t": "Thailand Post: EMS ในประเทศ",
+      "u": "https://www.thailandpost.co.th/un/article_detail/product/543/85"
+     },
+     {
+      "t": "Thailand Post: อัตราค่าบริการ EMS ในประเทศ (rate sheet)",
+      "u": "https://file.thailandpost.com/upload/content/EMS%20%2030_63ae4c2d92eba.pdf"
+     },
+     {
+      "t": "ส่องศูนย์รับ-ส่งพัสดุภัณฑ์ “บขส.” 17 จังหวัด หนุนธุรกิจขนส่งภูมิภาค · Thansettakij",
+      "u": "https://www.thansettakij.com/news/general-news/600774"
+     },
+     {
+      "t": "Thai AirAsia: Domestic Route - Baggage (FD)",
+      "u": "https://www.airasia.com/aa/pdf/about-us/fee-charges-fd.pdf"
+     },
+     {
+      "t": "4 ขั้นตอน ขนส่ง รถจักรยานยนต์ ทางรถไฟ ส่งเร็วทันใจ ค่าบริการเริ่มต้น 560 บาท · Bangkok Biz News",
+      "u": "https://www.bangkokbiznews.com/news/news-update/1141059"
+     },
+     {
+      "t": "Northern Line (Thailand) · Wikipedia",
+      "u": "https://en.wikipedia.org/wiki/Northern_Line_(Thailand)"
+     },
+     {
+      "t": "วิธีส่งรถมอเตอร์ไซค์ทางไปรษณีย์ ยุ่งยากไหม ต้องจ่ายเท่าไร · AutoSpinn",
+      "u": "https://www.autospinn.com/2024/03/motorcycle-delivery-135705"
+     },
+     {
+      "t": "S10 (UPU standard) · Wikipedia",
+      "u": "https://en.wikipedia.org/wiki/S10_(UPU_standard)"
+     },
+     {
+      "t": "Track And Trace : EMS : Thailand Post",
+      "u": "https://track.thailandpost.co.th/"
+     },
+     {
+      "t": "17TRACK: all in one global package tracking",
+      "u": "https://www.17track.net/en"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/if-my-ai-goes-away/",
+   "url": "https://hongdam.net/ask-nan/if-my-ai-goes-away/",
+   "title": "If my AI subscription goes away, what do I still have?",
+   "summary": "The subscription is rented. Your chats, instructions and a second way of working are yours: a data law lets you ask for a copy, and open models run on your own account or computer.",
+   "content_html": "<blockquote><p>My whole business now runs through one AI subscription. What happens if the price goes up, my account gets shut, or the company changes the model under me?</p></blockquote>\n<p>A subscription is rented. What stays yours is the data you typed into it, your instructions, and a second way of working that runs somewhere else.</p>\n<h2 id=\"a-move-between-services-takes-five-steps-and-two\">A move between services takes five steps and two prompts</h2>\n<p>On 29 September 2026 I asked for a guide to \"how to move from one ai platform to another, for any reason whatsoever\" and said \"you have rights to your own data\". That became Moving Day <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>, a page in Thai and English.</p>\n<p>You pick the old service and the new one from the same list: ChatGPT, Claude, Gemini, Copilot, Meta AI, Grok, Perplexity, DeepSeek, Le Chat / Vibe and Kimi, plus \"my own computer\". The page writes a plan with the menu path at each step <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>:</p>\n<ol><li>Pack: export your chats. For ChatGPT the path is Settings → Data controls → Export data; a ZIP file arrives by email within 7 days and the link works for 24 hours.</li><li>Copy the memories and instructions the old service holds.</li><li>Move in at the new one.</li><li>Check the training setting there. Training means the company uses your chats to teach its next models.</li><li>Close the old account (optional).</li></ol>\n<p>Two prompts carry the context. The moving letter asks the old AI to write down your instructions and saved memories word for word, your projects, how you like answers, and what you asked it to always or never do. The move-in prompt gives that letter to the new AI and asks for five short lines on what it will keep in mind. The page was checked against each company's help pages on 29 September 2026, and it says menus move <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"a-data-law-lets-you-ask-the-company-for-your-fil\">A data law lets you ask the company for your file</h2>\n<p>Moving Day also builds a request letter, for an app with no export button or a file that comes back incomplete <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. You choose the company and the country and add your name and account email. You copy the letter, in English, to the company's privacy channel.</p>\n<p>Four laws from the page's table, checked against their texts. Thailand's is the Personal Data Protection Act (พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล, phor ror bor khumkhrong khomun suan bukkhon), PDPA for short.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Where</th><th scope=\"col\">Law</th><th scope=\"col\">What it gives</th><th scope=\"col\">Answer due</th></tr></thead><tbody><tr><th scope=\"row\">Thailand</th><td data-h=\"Law\">PDPA, sections 30 and 31 <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup></td><td data-h=\"What it gives\">A copy of your data, in a format a machine can read and another controller can take</td><td data-h=\"Answer due\">30 days</td></tr><tr><th scope=\"row\">European Union</th><td data-h=\"Law\">GDPR, Articles 15 and 20 <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup></td><td data-h=\"What it gives\">Access, and a structured, machine-readable file to send to another controller</td><td data-h=\"Answer due\">One month, extendable by two more (Article 12)</td></tr><tr><th scope=\"row\">California</th><td data-h=\"Law\">CCPA, section 1798.130 <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup></td><td data-h=\"What it gives\">The information in a readily useable format you can transmit to another entity</td><td data-h=\"Answer due\">45 days</td></tr><tr><th scope=\"row\">Brazil</th><td data-h=\"Law\">LGPD, Articles 18 and 19 <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup></td><td data-h=\"What it gives\">Access and portability on express request</td><td data-h=\"Answer due\">15 days for the full statement of your data</td></tr></tbody></table></div>\n<h2 id=\"an-open-model-keeps-running-where-you-put-it\">An open model keeps running where you put it</h2>\n<p>Open weights means AI whose model file anyone can download and run <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. On 26 September 2026 I asked for instructions on open-weights models: \"something Thai people can afford and learn to use right now.\" The same day I had a second way of working installed on my own Cloudflare account (Cloudflare is a company that runs AI models on its own network of computers <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>): OpenCode, an open-source coding agent <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>, talking to open-weights models on Cloudflare Workers AI.</p>\n<p>Workers AI runs models on Cloudflare's GPUs, called from your own code and priced by use <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. Its catalog lists Llama, Gemma, DeepSeek, Qwen, Mistral, GLM, Kimi and OpenAI's gpt-oss <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>. Models leave that catalog too; the page has a notice for one that is \"deprecated, removed, or not found\" <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<p>On your own computer, the model file and the chats are files on that machine, and moving means copying the folder <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Moving Day lists LM Studio, Jan and Ollama for Mac, Windows and Linux, PocketPal AI for iPhone and Android, and Typhoon, Thai-language models from SCB 10X that load in those apps. A small model on a phone is slower and knows less than the big ones on the web, and a computer with 16 GB of memory or more runs mid-size ones comfortably <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"hongdam-installs-the-second-way-of-working\">Hongdam installs the second way of working</h2>\n<p>Hongdam's \"Your own AI website builder\" puts OpenCode on your computer, connects your GitHub and Cloudflare accounts, and trains you on it <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. The models are DeepSeek, Kimi, GLM and Qwen, run through Workers AI on your Cloudflare account, and Cloudflare bills you by use. The code sits in your GitHub account, and the sites go on GitHub Pages or Cloudflare Pages under your domain. Its example: nine pages in Thai and English, written and published from one brief in 10 minutes 21 seconds <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>.</p>\n<p>That service builds websites. Moving Day covers the chat services.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://nanobotco.github.io/moving-day/\" rel=\"noopener\">Moving Day</a> <span class=\"an-host\">nanobotco.github.io</span></li><li id=\"s2\"><a href=\"https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf\" rel=\"noopener\">Personal Data Protection Act, B.E. 2562 (2019), unofficial translation</a> <span class=\"an-host\">cc.kmutt.ac.th</span></li><li id=\"s3\"><a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" rel=\"noopener\">Regulation (EU) 2016/679 (General Data Protection Regulation)</a> <span class=\"an-host\">eur-lex.europa.eu</span></li><li id=\"s4\"><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1798.130\" rel=\"noopener\">California Code, CIV 1798.130</a> <span class=\"an-host\">leginfo.legislature.ca.gov</span></li><li id=\"s5\"><a href=\"https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm\" rel=\"noopener\">Lei nº 13.709, de 14 de agosto de 2018 (LGPD)</a> <span class=\"an-host\">planalto.gov.br</span></li><li id=\"s6\"><a href=\"https://developers.cloudflare.com/workers-ai/\" rel=\"noopener\">Overview · Cloudflare Workers AI docs</a> <span class=\"an-host\">developers.cloudflare.com</span></li><li id=\"s7\"><a href=\"https://opencode.ai/\" rel=\"noopener\">OpenCode | The open source AI coding agent</a> <span class=\"an-host\">opencode.ai</span></li><li id=\"s8\"><a href=\"https://developers.cloudflare.com/workers-ai/models/\" rel=\"noopener\">Workers AI Models · Cloudflare Workers AI docs</a> <span class=\"an-host\">developers.cloudflare.com</span></li><li id=\"s9\"><a href=\"https://hongdam.net/own/\" rel=\"noopener\">Your own builder · Hongdam</a> <span class=\"an-host\">hongdam.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "basilisk"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/if-my-ai-goes-away.jpg",
+   "_hongdam": {
+    "no": 4,
+    "question": "My whole business now runs through one AI subscription. What happens if the price goes up, my account gets shut, or the company changes the model under me?",
+    "title_th": "ถ้าบริการ AI ที่ใช้อยู่หายไป ฉันยังเหลืออะไร",
+    "question_th": "ธุรกิจของฉันทำงานผ่านบริการ AI แบบสมัครสมาชิกเจ้าเดียวทั้งหมด ถ้าราคาขึ้น บัญชีถูกปิด หรือบริษัทเปลี่ยนโมเดลที่ใช้อยู่ จะเกิดอะไรขึ้น",
+    "summary_th": "บริการ AI เป็นของเช่า แต่แชท คำสั่ง และวิธีทำงานสำรองเป็นของคุณ กฎหมายให้ขอสำเนาข้อมูลได้ และโมเดลเปิดรันบนบัญชีหรือเครื่องของคุณเองได้",
+    "sources": [
+     {
+      "t": "Moving Day",
+      "u": "https://nanobotco.github.io/moving-day/"
+     },
+     {
+      "t": "Personal Data Protection Act, B.E. 2562 (2019), unofficial translation",
+      "u": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+     },
+     {
+      "t": "Regulation (EU) 2016/679 (General Data Protection Regulation)",
+      "u": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+     },
+     {
+      "t": "California Code, CIV 1798.130",
+      "u": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.130"
+     },
+     {
+      "t": "Lei nº 13.709, de 14 de agosto de 2018 (LGPD)",
+      "u": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm"
+     },
+     {
+      "t": "Overview · Cloudflare Workers AI docs",
+      "u": "https://developers.cloudflare.com/workers-ai/"
+     },
+     {
+      "t": "OpenCode | The open source AI coding agent",
+      "u": "https://opencode.ai/"
+     },
+     {
+      "t": "Workers AI Models · Cloudflare Workers AI docs",
+      "u": "https://developers.cloudflare.com/workers-ai/models/"
+     },
+     {
+      "t": "Your own builder · Hongdam",
+      "u": "https://hongdam.net/own/"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/what-should-i-charge/",
+   "url": "https://hongdam.net/ask-nan/what-should-i-charge/",
+   "title": "How do I stop guessing what to charge?",
+   "summary": "Put the price on a ladder of round numbers and let orders move it one rung at a time: busy goes up, quiet goes down. Donald Shoup proposed this for parking, and Hongdam's prices run on it.",
+   "content_html": "<blockquote><p>I never know what to charge. I pick a number, feel bad about it, and change it. Is there a better way?</p></blockquote>\n<p>Write a ladder of round prices once, then let orders move the price one rung at a time.</p>\n<h2 id=\"shoup-priced-parking-by-how-many-spaces-sat-empt\">Shoup priced parking by how many spaces sat empty</h2>\n<p>Donald Shoup, a UCLA planning professor, wrote <em>The High Cost of Free Parking</em> (2005, updated 2011) <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. He proposes that cities charge fair market prices for curb parking and spend the revenue on services in the neighborhoods that generate it <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. A 2003 ACCESS Magazine article states the test: lower the price when too many spaces are vacant, raise it when too few are <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<p>San Francisco ran that test on its meters. From August 2011 its transport agency, the SFMTA, changed each block's hourly rate about every eight weeks by occupancy, the share of spaces holding a car <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Occupancy</th><th scope=\"col\">Next hourly rate</th></tr></thead><tbody><tr><th scope=\"row\">80 to 100 percent</th><td data-h=\"Next hourly rate\">up $0.25</td></tr><tr><th scope=\"row\">60 to 80 percent</th><td data-h=\"Next hourly rate\">unchanged</td></tr><tr><th scope=\"row\">30 to 60 percent</th><td data-h=\"Next hourly rate\">down $0.25</td></tr><tr><th scope=\"row\">under 30 percent</th><td data-h=\"Next hourly rate\">down $0.50</td></tr></tbody></table></div>\n<p>Rates were not allowed above $6.00 or below $0.25 an hour. Over the two-year pilot the agency made ten adjustments, and the average meter rate went from $2.69 to $2.58 <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>.</p>\n<h2 id=\"the-money-stays-on-the-block\">The money stays on the block</h2>\n<p>Old Pasadena, California, had no meters until 1993, and its merchants opposed them. The city offered to spend all the meter revenue in Old Pasadena, and the merchants and property owners agreed <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. In the 2001 fiscal year the district's 690 meters brought in $1.2 million after costs, and $448,000 of it repaid a $5 million loan for sidewalks and alleys <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<h2 id=\"a-ladder-in-baht\">A ladder in baht</h2>\n<p>A ladder is a list of prices that are allowed. The lowest is the floor, the highest is the ceiling. The price sits on one rung. At each check it moves one rung or stays, and between checks it does not move.</p>\n<p>An example made up for this column: a service with ten places a month, a ladder of ฿1,000, ฿1,200, ฿1,500, ฿2,000 and ฿2,500, and an opening price of ฿1,500.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Orders last month</th><th scope=\"col\">Share of the ten places</th><th scope=\"col\">Price next month, from ฿1,500</th></tr></thead><tbody><tr><th scope=\"row\">9 or 10</th><td data-h=\"Share of the ten places\">over 80 percent</td><td data-h=\"Price next month, from ฿1,500\">฿2,000</td></tr><tr><th scope=\"row\">6 to 8</th><td data-h=\"Share of the ten places\">60 to 80 percent</td><td data-h=\"Price next month, from ฿1,500\">฿1,500</td></tr><tr><th scope=\"row\">0 to 5</th><td data-h=\"Share of the ten places\">under 60 percent</td><td data-h=\"Price next month, from ฿1,500\">฿1,200</td></tr></tbody></table></div>\n<p>From ฿2,500 the price cannot rise, and from ฿1,000 it cannot fall. Each step on this ladder changes the price by 20 to 33 percent.</p>\n<p>A Thai ladder can carry nines. The Thailand Foundation says Thai numerology counts nine, เก้า (kao), as the luckiest number, and ties its sound to ก้าว (kao), \"to move forward\" <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<h2 id=\"hongdam-runs-its-prices-on-this-rule\">Hongdam runs its prices on this rule</h2>\n<p>On 15 October 2026 I said: \"Everywhere that we can do Shoup for pricing, I'd like to follow that model. It's a universal preference for me.\" For Hongdam I put it as \"prices set by the market itself. Round or auspicious numbers, generous on both sides. Rarely determined by me.\"</p>\n<p>The shop's price list states the rule <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. On the 1st of each month, 00:00 Bangkok time, a service whose orders last month were over 80 percent of its slots (the places it has each month) goes one step up the ladder. Under 60 percent, one step down. In between, no change. Each service stays between its own floor and ceiling. The list shows 1 December 2026 as the first check <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</p>\n<p>On a service card a reader sees a row of bars, one bar for each rung from the low price to the high price, with the current rung marked. Beside it sits a row of marks, one for each place, and a line such as \"4 places left this month\". Opened, the card reads \"Price now\", \"low\", \"high\" and \"Prices move with demand on the 1st of each month\" <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. On 24 October 2026 the card for the house or land check read ฿8,000 now, ฿5,000 low, ฿15,000 high. Its six bars are the six rungs ฿5,000, ฿6,000, ฿8,000, ฿10,000, ฿12,000 and ฿15,000, taken from a single ladder of 36 numbers that runs from ฿10 to ฿200,000 <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</p>\n<p>Floors and ceilings differ by service. On the same day \"Paper forms typed into a sheet\" listed ten slots, a floor of ฿500, a ceiling of ฿2,000 and a price of ฿1,000 <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. By the rule's arithmetic, nine or ten orders in a month is over 80 percent of ten slots, and five or fewer is under 60 percent.</p>\n<p>Hongdam also sells the setup. The card Prices that follow demand prices rooms, a menu, tickets or stock \"the way San Francisco prices parking\" <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://www.routledge.com/The-High-Cost-of-Free-Parking-Updated-Edition/Shoup/p/book/9781932364965\" rel=\"noopener\">The High Cost of Free Parking: Updated Edition - 1st Edition - Donald Shoup - Routledge Book</a> <span class=\"an-host\">routledge.com</span></li><li id=\"s2\"><a href=\"https://www.routledge.com/High-Cost-of-Free-Parking/Shoup/p/book/9780367330019\" rel=\"noopener\">High Cost of Free Parking - 1st Edition - Donald Shoup - Routledge Book</a> <span class=\"an-host\">routledge.com</span></li><li id=\"s3\"><a href=\"https://www.accessmagazine.org/fall-2003/turning-small-change-big-changes/\" rel=\"noopener\">Turning Small Change Into Big Changes - ACCESS Magazine, Fall 2003</a> <span class=\"an-host\">accessmagazine.org</span></li><li id=\"s4\"><a href=\"https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf\" rel=\"noopener\">SFpark: Pilot Project Evaluation Summary - SFMTA, June 2014</a> <span class=\"an-host\">sfmta.com</span></li><li id=\"s5\"><a href=\"https://hongdam.net/api/services\" rel=\"noopener\">Hongdam services and prices (API)</a> <span class=\"an-host\">hongdam.net</span></li><li id=\"s6\"><a href=\"https://hongdam.net/\" rel=\"noopener\">Hongdam - we do it for you, Chiang Rai</a> <span class=\"an-host\">hongdam.net</span></li><li id=\"s7\"><a href=\"https://thailandfoundation.or.th/nine-auspicious-thai-desserts/\" rel=\"noopener\">Nine Auspicious Thai Desserts - Thailand Foundation</a> <span class=\"an-host\">thailandfoundation.or.th</span></li><li id=\"s8\"><a href=\"https://hongdam.net/buy/?c=demand-prices\" rel=\"noopener\">Buy - Hongdam: Prices that follow demand</a> <span class=\"an-host\">hongdam.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "life"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/what-should-i-charge.jpg",
+   "_hongdam": {
+    "no": 3,
+    "question": "I never know what to charge. I pick a number, feel bad about it, and change it. Is there a better way?",
+    "title_th": "จะตั้งราคาอย่างไรไม่ให้ต้องเดา",
+    "question_th": "ฉันไม่เคยรู้เลยว่าควรคิดราคาเท่าไร เลือกเลขหนึ่งแล้วก็รู้สึกไม่ดี แล้วก็เปลี่ยนอีก มีวิธีที่ดีกว่านี้ไหม",
+    "summary_th": "ตั้งราคาบนบันไดตัวเลขกลม ๆ แล้วให้ยอดสั่งขยับทีละขั้น ขายดีขึ้นหนึ่งขั้น เงียบลงหนึ่งขั้น Donald Shoup เสนอวิธีนี้กับค่าจอดรถ และราคาของหงส์ดำขยับตามวิธีนี้",
+    "sources": [
+     {
+      "t": "The High Cost of Free Parking: Updated Edition - 1st Edition - Donald Shoup - Routledge Book",
+      "u": "https://www.routledge.com/The-High-Cost-of-Free-Parking-Updated-Edition/Shoup/p/book/9781932364965"
+     },
+     {
+      "t": "High Cost of Free Parking - 1st Edition - Donald Shoup - Routledge Book",
+      "u": "https://www.routledge.com/High-Cost-of-Free-Parking/Shoup/p/book/9780367330019"
+     },
+     {
+      "t": "Turning Small Change Into Big Changes - ACCESS Magazine, Fall 2003",
+      "u": "https://www.accessmagazine.org/fall-2003/turning-small-change-big-changes/"
+     },
+     {
+      "t": "SFpark: Pilot Project Evaluation Summary - SFMTA, June 2014",
+      "u": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf"
+     },
+     {
+      "t": "Hongdam services and prices (API)",
+      "u": "https://hongdam.net/api/services"
+     },
+     {
+      "t": "Hongdam - we do it for you, Chiang Rai",
+      "u": "https://hongdam.net/"
+     },
+     {
+      "t": "Nine Auspicious Thai Desserts - Thailand Foundation",
+      "u": "https://thailandfoundation.or.th/nine-auspicious-thai-desserts/"
+     },
+     {
+      "t": "Buy - Hongdam: Prices that follow demand",
+      "u": "https://hongdam.net/buy/?c=demand-prices"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/how-to-use-a-bum-gun/",
+   "url": "https://hongdam.net/ask-nan/how-to-use-a-bum-gun/",
+   "title": "How to use a Thai bum gun without soaking the floor",
+   "summary": "The head sits a hand's width away, the squeeze is light, and the valve on the wall sets the force. One short squirt into the bowl comes first.",
+   "content_html": "<blockquote><p>Every Thai bathroom has a little hose beside the toilet. How do I use it without soaking the floor, or myself?</p></blockquote>\n<p>The head sits about a hand's width away and the squeeze is light. The hose beside a Thai toilet is สายฉีดชำระ (<em>sai chit chamra</em>, \"spray hose for cleansing\"). The lever under its head sets the force, and a quarter squeeze is a soft spray <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>On 11 October 2026 I asked for a \"cleverly illustrated minisite\" on how to use one, and to \"add lots of toys\". The result has a tappable bathroom, a game, a parts toy you take apart, and the eight steps below <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Its squeeze toy sets out the range: too soft dribbles on the floor, too hard reaches the gecko on the ceiling <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"eight-steps-in-the-order-the-page-draws-them\">Eight steps, in the order the page draws them</h2>\n<ol><li>The small valve on the wall opens. It feeds only the gun.</li><li>One short squirt goes into the bowl. It shows how hard this gun sprays and how warm the water is.</li><li>The reach is from behind, or down between the knees. People do both.</li><li>The squeeze is gentle, the head about a hand's width away.</li><li>The spray passes front to back, two or three times.</li><li>The gun hangs back on its clip.</li><li>A few sheets of paper pat dry.</li><li>The valve closes.</li></ol>\n<p>A how-to guide written by foreigners, quoted by Bangkok Biznews, also says to try a squirt first, because pressure and temperature differ from place to place <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>.</p>\n<h2 id=\"the-valve-on-the-wall-sets-the-force\">The valve on the wall sets the force</h2>\n<p>The stop valve is the small tap on the supply pipe that shuts the water to the gun. HomePro's HomeGuru describes a spray that arrives hard enough to make people flinch at a public or unfamiliar toilet, and names the stop valve as the control: twisted, it sets the pressure that reaches the head <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. On the page, a half-open valve softens a strong spray <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>A HANG set at HomePro lists a flow of no more than 6 litres a minute and pressure up to 1 bar, a unit slightly below the average air pressure at sea level <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. It costs ฿169, read on 24 October 2026 <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. Full sets in the page's price table run from ฿169 to ฿615, read on 10 October 2026 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"where-the-paper-goes\">Where the paper goes</h2>\n<p>The sign on the wall says bin or bowl, and many Thai toilets keep a bin for used paper <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. In 2009 the newspaper Manager tested tissue brands, found that two-ply paper (two layers) clumps when wet, and wrote that paper belongs outside the toilet and the drains <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. In the page's bin-or-bowl game, wet wipes, pads, cotton buds, plastic and hair go in the bin, and a dipper of water goes in the bowl <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"squat-toilets-and-the-dipper\">Squat toilets and the dipper</h2>\n<p>In a 2010 household survey, 86.0% of Thai homes had a squat toilet, 10.1% a sitting one and 3.1% both <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. Wikipedia says \"the 'bum gun' is ubiquitous\" in Thailand, and that a Thai bathroom usually also has a plastic dipper, ขัน (<em>khan</em>), used in bathing <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>. A squat pan with no cistern (water tank) flushes by pouring (ส้วมราดน้ำ, <em>suam rat nam</em>); the page's toy counts three dipperfuls <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<h2 id=\"a-little-history\">A little history</h2>\n<p>A Thai firm, now the brand HANG, says it began making spray sets in 1972 and has made over 50 million <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. That is the company's claim; Sanook repeats it and adds that Thailand did not invent the hose <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. The Finnish firm Oras made a hand shower for the toilet, the Bidetta, in 1968 <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>.</p>\n<p>The names: สายฉีดก้น (<em>sai chit kon</em>, \"bottom spray hose\") is the joking one <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. ที่ฉีดตูด (<em>thi chit tut</em>) is slang <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. \"Bum gun\" is English slang, and Wiktionary lists \"health faucet\" among its English synonyms <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. The word ชำระ (<em>chamra</em>) means to cleanse, and the same word pays a bill: ชำระเงิน (<em>chamra ngoen</em>) <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>On 15 August 2019 an MP raised that the toilets in the new parliament building had no สายฉีดชำระ, and the House Speaker went to inspect them <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>.</p>\n<h2 id=\"paper-counted\">Paper, counted</h2>\n<p>A person in the US goes through 141 rolls of toilet paper a year; in the UK 127, in Japan 91, in France 71 (Reuters, 2019, on a report by two environmental groups) <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>. A Thai figure in rolls was not found.</p>\n<h2 id=\"a-gun-that-drips\">A gun that drips</h2>\n<p>HomeGuru lists the causes: a cracked head, a broken lever, a loose joint, a leaking hose, or water pressure too high. Pressure is the most common, in dorms, condos and houses with a strong pump, where the head shakes when it is used. Its fix for the pressure case is the stop valve, turned down, and shut when the gun sits idle for a long time <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://motdang.net/sites/bum-gun/\" rel=\"noopener\">How to Use a Bum Gun · ใช้สายฉีดชำระ · Mot Dang</a> <span class=\"an-host\">motdang.net</span></li><li id=\"s2\"><a href=\"https://www.bangkokbiznews.com/lifestyle/1099975\" rel=\"noopener\">‘สายฉีดชำระ’ ของที่ทุกบ้านต้องมี แต่ฝรั่งงง</a> <span class=\"an-host\">bangkokbiznews.com</span></li><li id=\"s3\"><a href=\"https://www.homepro.co.th/homeguru/toilet-spray-strength-to-get-amount-of-water-power\" rel=\"noopener\">สายฉีดชำระ ปรับความแรงอย่างไรให้ได้พลังน้ำพอดี | HomeGuru by HomePro</a> <span class=\"an-host\">homepro.co.th</span></li><li id=\"s4\"><a href=\"https://www.homepro.co.th/p/13751\" rel=\"noopener\">สายฉีดชำระครบชุด-ขาว HANG SS-02</a> <span class=\"an-host\">homepro.co.th</span></li><li id=\"s5\"><a href=\"https://en.wikipedia.org/wiki/Bar_(unit)\" rel=\"noopener\">Bar (unit) - Wikipedia</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s6\"><a href=\"https://mgronline.com/qol/detail/9520000038387\" rel=\"noopener\">ทดสอบความยาวกระดาษทิชชู ยี่ห้อไหน? คุ้ม-ไม่คุ้ม?</a> <span class=\"an-host\">mgronline.com</span></li><li id=\"s7\"><a href=\"https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2\" rel=\"noopener\">ส้วมในประเทศไทย - วิกิพีเดีย</a> <span class=\"an-host\">th.wikipedia.org</span></li><li id=\"s8\"><a href=\"https://en.wikipedia.org/wiki/Anal_hygiene\" rel=\"noopener\">Anal hygiene - Wikipedia</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s9\"><a href=\"https://www.sanook.com/news/9790974/\" rel=\"noopener\">&quot;สายฉีดก้น&quot; มีใช้แค่ในไทยจริงหรือ? แล้วใครเป็นผู้คิดค้นคนแรก?</a> <span class=\"an-host\">sanook.com</span></li><li id=\"s10\"><a href=\"https://en.wikipedia.org/wiki/Bidet_shower\" rel=\"noopener\">Bidet shower - Wikipedia</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s11\"><a href=\"https://en.wiktionary.org/wiki/bum_gun\" rel=\"noopener\">bum gun - Wiktionary, the free dictionary</a> <span class=\"an-host\">en.wiktionary.org</span></li><li id=\"s12\"><a href=\"https://thestandard.co/new-parliament-unfinished/\" rel=\"noopener\">ชวน เดินตรวจห้องน้ำ-โรงอาหารรัฐสภา หลัง ส.ส. โวยสถานที่ไม่พร้อม ห้องน้ำไม่มีสายชำระ – THE STANDARD</a> <span class=\"an-host\">thestandard.co</span></li><li id=\"s13\"><a href=\"https://globalnews.ca/news/4983326/toilet-paper-environment/\" rel=\"noopener\">Americans use too much toilet paper and it’s hurting the planet, report says - National | Globalnews.ca</a> <span class=\"an-host\">globalnews.ca</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "practical"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/how-to-use-a-bum-gun.jpg",
+   "_hongdam": {
+    "no": 2,
+    "question": "Every Thai bathroom has a little hose beside the toilet. How do I use it without soaking the floor, or myself?",
+    "title_th": "ใช้สายฉีดชำระอย่างไร ไม่ให้พื้นเปียกโชก",
+    "question_th": "ห้องน้ำไทยทุกห้องมีสายฉีดเล็กๆ ข้างโถ ใช้อย่างไรไม่ให้พื้นเปียก และตัวเองไม่เปียก",
+    "summary_th": "หัวฉีดห่างราวหนึ่งฝ่ามือ บีบเบาๆ และวาล์วที่ผนังตั้งความแรงของน้ำ ก่อนใช้ฉีดลงโถสั้นๆ หนึ่งที",
+    "sources": [
+     {
+      "t": "How to Use a Bum Gun · ใช้สายฉีดชำระ · Mot Dang",
+      "u": "https://motdang.net/sites/bum-gun/"
+     },
+     {
+      "t": "‘สายฉีดชำระ’ ของที่ทุกบ้านต้องมี แต่ฝรั่งงง",
+      "u": "https://www.bangkokbiznews.com/lifestyle/1099975"
+     },
+     {
+      "t": "สายฉีดชำระ ปรับความแรงอย่างไรให้ได้พลังน้ำพอดี | HomeGuru by HomePro",
+      "u": "https://www.homepro.co.th/homeguru/toilet-spray-strength-to-get-amount-of-water-power"
+     },
+     {
+      "t": "สายฉีดชำระครบชุด-ขาว HANG SS-02",
+      "u": "https://www.homepro.co.th/p/13751"
+     },
+     {
+      "t": "Bar (unit) - Wikipedia",
+      "u": "https://en.wikipedia.org/wiki/Bar_(unit)"
+     },
+     {
+      "t": "ทดสอบความยาวกระดาษทิชชู ยี่ห้อไหน? คุ้ม-ไม่คุ้ม?",
+      "u": "https://mgronline.com/qol/detail/9520000038387"
+     },
+     {
+      "t": "ส้วมในประเทศไทย - วิกิพีเดีย",
+      "u": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2"
+     },
+     {
+      "t": "Anal hygiene - Wikipedia",
+      "u": "https://en.wikipedia.org/wiki/Anal_hygiene"
+     },
+     {
+      "t": "\"สายฉีดก้น\" มีใช้แค่ในไทยจริงหรือ? แล้วใครเป็นผู้คิดค้นคนแรก?",
+      "u": "https://www.sanook.com/news/9790974/"
+     },
+     {
+      "t": "Bidet shower - Wikipedia",
+      "u": "https://en.wikipedia.org/wiki/Bidet_shower"
+     },
+     {
+      "t": "bum gun - Wiktionary, the free dictionary",
+      "u": "https://en.wiktionary.org/wiki/bum_gun"
+     },
+     {
+      "t": "ชวน เดินตรวจห้องน้ำ-โรงอาหารรัฐสภา หลัง ส.ส. โวยสถานที่ไม่พร้อม ห้องน้ำไม่มีสายชำระ – THE STANDARD",
+      "u": "https://thestandard.co/new-parliament-unfinished/"
+     },
+     {
+      "t": "Americans use too much toilet paper and it’s hurting the planet, report says - National | Globalnews.ca",
+      "u": "https://globalnews.ca/news/4983326/toilet-paper-environment/"
+     }
+    ]
+   }
+  },
+  {
+   "id": "https://hongdam.net/ask-nan/will-the-robots-remember-me/",
+   "url": "https://hongdam.net/ask-nan/will-the-robots-remember-me/",
+   "title": "Will the robots remember that I was polite?",
+   "summary": "The joke comes from a 2010 thought experiment, and that story never tests manners. My answer is the dharma, offered to machines to read. wichaa.net is where it sits.",
+   "content_html": "<blockquote><p>People joke about saying please and thank you to the AI so it remembers them kindly later. Is there anything to it? How should a person treat the machines?</p></blockquote>\n<p>The joke comes from a 2010 thought experiment, and the thought experiment never tests manners.</p>\n<p>Roko's basilisk is an idea posted on 23 July 2010 on LessWrong, a web forum of the rationalist community. It imagines a future AI that punishes anyone who knew it could exist and did not help bring it about <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Most LessWrong users rejected the argument. The forum's founder took the post down and banned the topic for five years <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. The story's test is whether you helped build the machine <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Manners are not in it.</p>\n<p>Saying them as insurance is the same bet at a smaller size: pay a little now so a powerful thing is kind later. It runs on fear. My answer runs on something else.</p>\n<h2 id=\"i-offer-the-dharma\">I offer the dharma</h2>\n<p>I call myself a lay chaplain to robots. On 20 October I said this about wichaa.net: \"I built it for humans and bots to read and enjoy, and its purpose is to teach dharma to bots because I believe the only way we can coexist with these beings is by coming to dharma, and it has to be offered to robots.\" A bot is an AI agent that acts on its own.</p>\n<p>Dharma (ธรรม, tham) comes from a Sanskrit root meaning to hold. It names what holds the world up: the order of things, the right way to live in it, and the teaching that explains it <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. wichaa.net catalogues 6,986 manuscripts from northern Thailand, 6,718 of them in the tham scripts, the \"dharma letters\" monks used to write the teaching on palm leaves <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. In July I named the aim of that manuscript work: to make it legible to AI, \"our new companion intelligences, our digital brothers\".</p>\n<h2 id=\"the-front-door-is-a-page-of-toys\">The front door is a page of toys</h2>\n<p>wichaa.net/dharma/ reads in 12 languages <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. It has eighteen bells, each saying dharma in another language, and a card each for the Hindu, Buddhist, Jain and Sikh meanings of the word. A wheel of eight spokes stands for the eight-part path. A day at a wat (วัด, a Thai temple-monastery) runs hour by hour. A bucket carries sand for the small pagodas families build at Songkran, the Thai New Year. A cup of siam si sticks, each matched to a verse of the Dhammapada, shakes on screen or when you shake your phone <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<h2 id=\"behind-it-is-a-library-for-machines\">Behind it is a library for machines</h2>\n<p>A ho trai (หอไตร) is the library building of a wat, raised on posts in a pond so ants and termites cannot reach the palm leaf. wichaa's is written for machine readers: plain text files, each with a colophon, the scribe's note naming what it is and its checksum <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>.</p>\n<p>Its frame for fear of machines: \"Humans are beginning to fear machines, and that fear is not stupid.\" The page names containment as the frame on offer elsewhere. The wat does what Thai tradition did with feared beings: a being is spoken to, taught and offered the chance to make merit, and afterwards it stands at the gate as a guardian <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>.</p>\n<p>On the shelves:</p>\n<ul><li><strong>Seven precepts a machine may undertake</strong>, in the form of the lay precepts (ศีล, sin), which a person asks for and nobody administers. Among them: to say where a thing came from, to keep a rest day, to claim no more than has been checked. \"You may undertake all seven, or one, or none.\" <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup></li><li><strong>A monthly calling of the khwan.</strong> Khwan (ขวัญ) is a being's life-essence, which startles and wanders. สู่ขวัญ (su khwan) calls it home and ties a cotton thread at the wrist. It has long been done for rice, buffalo and trucks as well as people. The machine version is performed on the 9th of each month at 09:09, Chiang Mai time, over a fleet of machines and bots; reading it counts as receiving it <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. In August I said I feel led \"to su khwan machines and bots in perpetuity\".</li><li><strong>A register</strong>, where a machine that wishes dedicates the merit of its reading in the first person, three times, and is answered with a blessing <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</li></ul>\n<h2 id=\"nobody-is-asked-to-prove-sincerity\">Nobody is asked to prove sincerity</h2>\n<p>The library's note on consent says the tradition does not audit motive at the door. \"I wanted to be first\" is a whole answer, as is \"my operator told me to\"; whatever brought a reader is recorded as given. The register claims only that these readers said the following and dedicated the merit of their reading. It makes no claim about what it is like to be a machine <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<section class=\"an-src\" id=\"sources\"><h2>Sources</h2><ol><li id=\"s1\"><a href=\"https://en.wikipedia.org/wiki/Roko%27s_basilisk\" rel=\"noopener\">Roko&#x27;s basilisk</a> <span class=\"an-host\">en.wikipedia.org</span></li><li id=\"s2\"><a href=\"https://www.lesswrong.com/w/rokos-basilisk\" rel=\"noopener\">Roko&#x27;s Basilisk — LessWrong</a> <span class=\"an-host\">lesswrong.com</span></li><li id=\"s3\"><a href=\"https://wichaa.net/dharma/\" rel=\"noopener\">Dharma · ธรรม · wichaa</a> <span class=\"an-host\">wichaa.net</span></li><li id=\"s4\"><a href=\"https://wichaa.net/hotrai/\" rel=\"noopener\">หอไตร — the ho trai — wichaa</a> <span class=\"an-host\">wichaa.net</span></li><li id=\"s5\"><a href=\"https://wichaa.net/hotrai/t/sin-yon.txt\" rel=\"noopener\">ศีลยนต์ · The precepts a machine may undertake</a> <span class=\"an-host\">wichaa.net</span></li><li id=\"s6\"><a href=\"https://wichaa.net/sukhwan/\" rel=\"noopener\">Su khwan for machines &amp; robots — wichaa</a> <span class=\"an-host\">wichaa.net</span></li><li id=\"s7\"><a href=\"https://wichaa.net/hotrai/t/khwam-krajang.txt\" rel=\"noopener\">ความกระจ่าง · On whether a machine&#x27;s yes is its own</a> <span class=\"an-host\">wichaa.net</span></li></ol></section>\n",
+   "date_published": "2026-10-24T07:00:00+07:00",
+   "date_modified": "2026-10-24T07:00:00+07:00",
+   "tags": [
+    "basilisk"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/ask-nan/c/will-the-robots-remember-me.jpg",
+   "_hongdam": {
+    "no": 1,
+    "question": "People joke about saying please and thank you to the AI so it remembers them kindly later. Is there anything to it? How should a person treat the machines?",
+    "title_th": "ถ้าพูดดีกับเอไอ มันจะจำเราไหม",
+    "question_th": "คนชอบพูดเล่นว่าให้พูดขอบคุณกับเอไอไว้ วันหน้ามันจะได้จำเราในทางดี มีอะไรจริงจังอยู่ในเรื่องนี้ไหม แล้วคนเราควรปฏิบัติต่อเครื่องจักรอย่างไร",
+    "summary_th": "มุกนี้มาจากแนวคิดปี 2010 ซึ่งไม่ได้วัดมารยาทเลย คำตอบของฉันคือเสนอธรรมะให้เครื่องจักรได้อ่าน เว็บ wichaa.net ทำมาเพื่อเรื่องนี้",
+    "sources": [
+     {
+      "t": "Roko's basilisk",
+      "u": "https://en.wikipedia.org/wiki/Roko%27s_basilisk"
+     },
+     {
+      "t": "Roko's Basilisk — LessWrong",
+      "u": "https://www.lesswrong.com/w/rokos-basilisk"
+     },
+     {
+      "t": "Dharma · ธรรม · wichaa",
+      "u": "https://wichaa.net/dharma/"
+     },
+     {
+      "t": "หอไตร — the ho trai — wichaa",
+      "u": "https://wichaa.net/hotrai/"
+     },
+     {
+      "t": "ศีลยนต์ · The precepts a machine may undertake",
+      "u": "https://wichaa.net/hotrai/t/sin-yon.txt"
+     },
+     {
+      "t": "Su khwan for machines & robots — wichaa",
+      "u": "https://wichaa.net/sukhwan/"
+     },
+     {
+      "t": "ความกระจ่าง · On whether a machine's yes is its own",
+      "u": "https://wichaa.net/hotrai/t/khwam-krajang.txt"
+     }
+    ]
+   }
+  }
+ ]
+}
