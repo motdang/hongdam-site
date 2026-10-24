@@ -75,6 +75,29 @@ a.line::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; b
 .langs a { display: inline-flex; align-items: center; min-height: 2.4rem; padding: .3rem .85rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); text-decoration: none; font-size: .98rem }
 .langs a[aria-current] { background: var(--fg); color: var(--bg); box-shadow: none; font-weight: 700 }
 @media (min-width: 40rem) { .langs { order: 0; width: auto } }
+/* Folded on a phone (her ask 2026-10-24, "collapse to hamburger on first scroll"): shop.js adds .small once the page
+   scrolls, and .open while the menu button's panel shows the languages and the ฿ / $ / € switch. On a page with no
+   languages, shop.js puts the switch in .more, which takes no room of its own until it is the panel. */
+header.top .menu { display: none }
+header.top > .more { display: contents }
+@media (max-width: 39.99rem) {
+  header.top.small { padding-top: .4rem; padding-bottom: .4rem }
+  header.top.small .mark { font-size: 1.75rem }
+  header.top.small .wm-th, header.top.small > .langs, header.top.small > .more { display: none }
+  header.top.small.open > .langs, header.top.small.open > .more { display: flex; flex-wrap: wrap; gap: .35rem; position: absolute; top: 100%; left: 0; right: 0;
+    width: auto; padding: .7rem 1rem .85rem; background: var(--bg); border-bottom: 1px solid var(--rule) }
+  header.top.small .menu:not([hidden]) { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; padding: 0; border: 0; border-radius: 999px;
+    background: none; color: inherit; box-shadow: inset 0 0 0 1.5px var(--fg); cursor: pointer }
+  header.top.small.open .menu { background: var(--fg); color: var(--bg) }
+  header.top .menu i, header.top .menu i::before, header.top .menu i::after { display: block; width: 1.05rem; height: 2px; border-radius: 1px; background: currentColor }
+  header.top .menu i { position: relative }
+  header.top .menu i::before, header.top .menu i::after { content: ""; position: absolute; left: 0; top: -6px }
+  header.top .menu i::after { top: 6px }
+  header.top.open .menu i { background: transparent }
+  header.top.open .menu i::before { top: 0; transform: rotate(45deg) }
+  header.top.open .menu i::after { top: 0; transform: rotate(-45deg) }
+}
+@media (max-width: 22.5rem) { header.top.small .wm { font-size: 1.15rem } }
 
 h1 { margin: 1.7rem 0 1.3rem; font: var(--hd-w) clamp(2.15rem, 8.6vw, 3.5rem)/1.04 var(--font-d); letter-spacing: var(--hd-track); text-wrap: balance }
 :lang(th) h1, :lang(my) h1 { line-height: 1.3; letter-spacing: 0 }
