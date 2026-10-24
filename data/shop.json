@@ -93,7 +93,8 @@
     "route": "Something went wrong. Try again.",
     "tries": "Too many tries for this order today. Send your slip to us on LINE.",
     "paypal": "PayPal could not confirm this payment. Message us on LINE with your order number.",
-    "pending": "PayPal is still checking this payment. We message you when it clears."
+    "pending": "PayPal is still checking this payment. We message you when it clears.",
+    "ln": "Lightning is not answering. Try again in a minute, or pay another way."
    },
    "know": "Good to know",
    "costs": "What others charge",
@@ -108,7 +109,20 @@
    "cardNote": "On PayPal's page: a card, or your PayPal account. Then you come back here.",
    "cardBtn": "Pay {amount}",
    "cardBack": "Checking the payment with PayPal…",
-   "cardCancel": "The card payment was not finished. Message us on LINE to pay another way."
+   "cardCancel": "The card payment was not finished. Message us on LINE to pay another way.",
+   "payMethodsLn": "Pay with PromptPay from any Thai bank app, or PayPal, Wise or bitcoin Lightning from anywhere.",
+   "lnH": "Bitcoin · Lightning",
+   "lnNote": "From any Lightning wallet, anywhere. The bill is in sats, hundred-millionths of a bitcoin, at this minute's price.",
+   "lnBtn": "Pay {amount} in bitcoin",
+   "lnScan": "Scan with your Lightning wallet, or open your wallet on this phone.",
+   "lnOpen": "Open wallet",
+   "lnCopy": "Copy bill",
+   "lnCopied": "Copied",
+   "lnUntil": "This price holds until {time}.",
+   "lnWait": "Waiting for the payment…",
+   "lnOld": "This bill ran out. Press the button for a new one.",
+   "lnMore": "Bitcoin and baht in Thailand: offrampt.net",
+   "offrampt": "Crypto to baht"
   },
   "th": {
    "title": "หงส์ดำ — เราทำให้ · เชียงราย",
@@ -189,7 +203,8 @@
     "route": "มีบางอย่างผิดพลาด ลองอีกครั้ง",
     "tries": "วันนี้ลองกับคำสั่งซื้อนี้หลายครั้งแล้ว ส่งสลิปให้เราทาง LINE",
     "paypal": "PayPal ยืนยันการชำระเงินนี้ไม่ได้ ทักเราทางไลน์พร้อมเลขคำสั่งซื้อ",
-    "pending": "PayPal ยังตรวจการชำระเงินนี้อยู่ เราจะแจ้งเมื่อเรียบร้อย"
+    "pending": "PayPal ยังตรวจการชำระเงินนี้อยู่ เราจะแจ้งเมื่อเรียบร้อย",
+    "ln": "Lightning ไม่ตอบ ลองใหม่ในอีกสักครู่ หรือจ่ายทางอื่น"
    },
    "know": "ข้อมูลน่ารู้",
    "costs": "ค่าใช้จ่ายที่จ่ายให้ผู้อื่น",
@@ -204,7 +219,20 @@
    "cardNote": "ที่หน้าของ PayPal: ใช้บัตร หรือบัญชี PayPal แล้วจะกลับมาที่หน้านี้",
    "cardBtn": "จ่าย {amount}",
    "cardBack": "กำลังตรวจการชำระเงินกับ PayPal…",
-   "cardCancel": "ยังจ่ายด้วยบัตรไม่เสร็จ ทักเราทางไลน์เพื่อจ่ายด้วยวิธีอื่น"
+   "cardCancel": "ยังจ่ายด้วยบัตรไม่เสร็จ ทักเราทางไลน์เพื่อจ่ายด้วยวิธีอื่น",
+   "payMethodsLn": "จ่ายด้วยพร้อมเพย์จากแอปธนาคารไหนก็ได้ หรือ PayPal, Wise หรือบิตคอยน์ Lightning จากต่างประเทศ",
+   "lnH": "บิตคอยน์ · Lightning",
+   "lnNote": "จ่ายจากกระเป๋า Lightning ใดก็ได้ ที่ไหนก็ได้ ยอดเป็น sats (หนึ่งในร้อยล้านของบิตคอยน์) ตามราคา ณ นาทีนี้",
+   "lnBtn": "จ่าย {amount} เป็นบิตคอยน์",
+   "lnScan": "สแกนด้วยกระเป๋า Lightning หรือเปิดกระเป๋าในมือถือเครื่องนี้",
+   "lnOpen": "เปิดกระเป๋า",
+   "lnCopy": "คัดลอกบิล",
+   "lnCopied": "คัดลอกแล้ว",
+   "lnUntil": "ราคานี้ใช้ได้ถึง {time}",
+   "lnWait": "กำลังรอการชำระเงิน…",
+   "lnOld": "บิลนี้หมดเวลาแล้ว กดปุ่มเพื่อออกบิลใหม่",
+   "lnMore": "บิตคอยน์กับเงินบาทในไทย: offrampt.net",
+   "offrampt": "คริปโตเป็นเงินบาท"
   },
   "my": {
    "title": "Hongdam — ကျွန်ုပ်တို့ လုပ်ပေးပါသည် · ချင်းရိုင်",
@@ -285,7 +313,8 @@
     "route": "အမှားတစ်ခုရှိသည်။ ထပ်စမ်းပါ။",
     "tries": "ဒီနေ့ ဒီအော်ဒါအတွက် အကြိမ်များလွန်းပါပြီ။ စလစ်ကို LINE မှ ပို့ပါ။",
     "paypal": "PayPal က ဤငွေပေးချေမှုကို အတည်မပြုနိုင်ပါ။ အော်ဒါနံပါတ်နှင့်အတူ LINE တွင် ဆက်သွယ်ပါ။",
-    "pending": "PayPal က ဤငွေပေးချေမှုကို စစ်ဆေးနေဆဲဖြစ်သည်။ ပြီးလျှင် ကျွန်ုပ်တို့ ဆက်သွယ်ပါမည်။"
+    "pending": "PayPal က ဤငွေပေးချေမှုကို စစ်ဆေးနေဆဲဖြစ်သည်။ ပြီးလျှင် ကျွန်ုပ်တို့ ဆက်သွယ်ပါမည်။",
+    "ln": "Lightning က မတုံ့ပြန်ပါ။ တစ်မိနစ်အကြာတွင် ထပ်စမ်းပါ သို့မဟုတ် အခြားနည်းဖြင့် ပေးပါ။"
    },
    "know": "သိထားသင့်သည်",
    "costs": "အခြားသူများ ကောက်ခံသော စျေးနှုန်း",
@@ -300,7 +329,20 @@
    "cardNote": "PayPal စာမျက်နှာတွင် ကတ် သို့မဟုတ် PayPal အကောင့်ဖြင့် ပေးပါ။ ပြီးလျှင် ဤနေရာသို့ ပြန်ရောက်ပါမည်။",
    "cardBtn": "{amount} ပေးရန်",
    "cardBack": "PayPal နှင့် ငွေပေးချေမှုကို စစ်နေသည်…",
-   "cardCancel": "ကတ်ဖြင့် ပေးချေမှု မပြီးသေးပါ။ အခြားနည်းဖြင့် ပေးရန် LINE တွင် ဆက်သွယ်ပါ။"
+   "cardCancel": "ကတ်ဖြင့် ပေးချေမှု မပြီးသေးပါ။ အခြားနည်းဖြင့် ပေးရန် LINE တွင် ဆက်သွယ်ပါ။",
+   "payMethodsLn": "ထိုင်းဘဏ်အက်ပ်မှ PromptPay ဖြင့် သို့မဟုတ် နိုင်ငံခြားမှ PayPal၊ Wise၊ bitcoin Lightning ဖြင့် ပေးချေပါ။",
+   "lnH": "Bitcoin · Lightning",
+   "lnNote": "မည်သည့်နေရာမှမဆို Lightning wallet ဖြင့် ပေးနိုင်သည်။ ငွေပမာဏကို ယခုမိနစ်ဈေးဖြင့် sats (bitcoin ၏ သန်းတစ်ရာပုံ တစ်ပုံ) ဖြင့် ပြသည်။",
+   "lnBtn": "{amount} ကို bitcoin ဖြင့် ပေးရန်",
+   "lnScan": "Lightning wallet ဖြင့် စကင်ဖတ်ပါ သို့မဟုတ် ဤဖုန်းတွင် wallet ကို ဖွင့်ပါ။",
+   "lnOpen": "Wallet ဖွင့်ရန်",
+   "lnCopy": "ငွေတောင်းခံလွှာ ကူးရန်",
+   "lnCopied": "ကူးပြီး",
+   "lnUntil": "ဤဈေးနှုန်းသည် {time} အထိ အကျုံးဝင်သည်။",
+   "lnWait": "ငွေပေးချေမှုကို စောင့်နေသည်…",
+   "lnOld": "ဤငွေတောင်းခံလွှာ သက်တမ်းကုန်သွားပြီ။ အသစ်ရယူရန် ခလုတ်ကို နှိပ်ပါ။",
+   "lnMore": "ထိုင်းနိုင်ငံရှိ bitcoin နှင့် ဘတ်: offrampt.net",
+   "offrampt": "Crypto မှ ဘတ်သို့"
   },
   "zh": {
    "title": "Hongdam — 我们替您办 · 清莱",
@@ -381,7 +423,8 @@
     "route": "出了点问题，请重试。",
     "tries": "今天这笔订单尝试次数过多。请通过 LINE 把凭证发给我们。",
     "paypal": "PayPal 无法确认这笔付款。请在 LINE 告诉我们订单号。",
-    "pending": "PayPal 仍在核对这笔付款，到账后我们会通知你。"
+    "pending": "PayPal 仍在核对这笔付款，到账后我们会通知你。",
+    "ln": "闪电网络没有响应。请一分钟后再试，或换一种方式付款。"
    },
    "know": "须知",
    "costs": "第三方收费参考",
@@ -396,7 +439,20 @@
    "cardNote": "在 PayPal 页面用银行卡或 PayPal 账户付款，然后回到这里。",
    "cardBtn": "支付 {amount}",
    "cardBack": "正在向 PayPal 核对付款…",
-   "cardCancel": "银行卡付款没有完成。请在 LINE 联系我们，用其他方式付款。"
+   "cardCancel": "银行卡付款没有完成。请在 LINE 联系我们，用其他方式付款。",
+   "payMethodsLn": "可用任何泰国银行 App 的 PromptPay 付款，海外可用 PayPal、Wise 或比特币闪电网络。",
+   "lnH": "比特币 · 闪电网络",
+   "lnNote": "任何地方、任何闪电钱包都可以付款。金额以 sats（一亿分之一比特币）计，按此刻的价格。",
+   "lnBtn": "用比特币支付 {amount}",
+   "lnScan": "用闪电钱包扫码，或在这部手机上打开钱包。",
+   "lnOpen": "打开钱包",
+   "lnCopy": "复制账单",
+   "lnCopied": "已复制",
+   "lnUntil": "此价格有效至 {time}。",
+   "lnWait": "等待付款…",
+   "lnOld": "这张账单已过期。按按钮生成新账单。",
+   "lnMore": "泰国的比特币与泰铢：offrampt.net",
+   "offrampt": "加密货币换泰铢"
   },
   "de": {
    "title": "Hongdam — wir erledigen das für Sie · Chiang Rai",
@@ -477,7 +533,8 @@
     "route": "Etwas ist schiefgelaufen. Versuchen Sie es noch einmal.",
     "tries": "Zu viele Versuche für diese Bestellung heute. Senden Sie uns den Beleg auf LINE.",
     "paypal": "PayPal konnte diese Zahlung nicht bestätigen. Schreiben Sie uns auf LINE mit Ihrer Bestellnummer.",
-    "pending": "PayPal prüft diese Zahlung noch. Wir melden uns, sobald sie eingegangen ist."
+    "pending": "PayPal prüft diese Zahlung noch. Wir melden uns, sobald sie eingegangen ist.",
+    "ln": "Lightning antwortet nicht. Versuchen Sie es in einer Minute noch einmal oder zahlen Sie anders."
    },
    "know": "Gut zu wissen",
    "costs": "Was andere verlangen",
@@ -492,7 +549,20 @@
    "cardNote": "Auf der Seite von PayPal: mit Karte oder Ihrem PayPal-Konto. Danach kommen Sie hierher zurück.",
    "cardBtn": "{amount} zahlen",
    "cardBack": "Die Zahlung wird bei PayPal geprüft…",
-   "cardCancel": "Die Kartenzahlung wurde nicht abgeschlossen. Schreiben Sie uns auf LINE, um anders zu zahlen."
+   "cardCancel": "Die Kartenzahlung wurde nicht abgeschlossen. Schreiben Sie uns auf LINE, um anders zu zahlen.",
+   "payMethodsLn": "Bezahlen Sie mit PromptPay aus jeder thailändischen Bank-App oder von überall mit PayPal, Wise oder Bitcoin Lightning.",
+   "lnH": "Bitcoin · Lightning",
+   "lnNote": "Aus jeder Lightning-Wallet, von überall. Der Betrag steht in Sats, Hundertmillionsteln eines Bitcoins, zum Kurs dieser Minute.",
+   "lnBtn": "{amount} in Bitcoin zahlen",
+   "lnScan": "Scannen Sie mit Ihrer Lightning-Wallet oder öffnen Sie die Wallet auf diesem Telefon.",
+   "lnOpen": "Wallet öffnen",
+   "lnCopy": "Rechnung kopieren",
+   "lnCopied": "Kopiert",
+   "lnUntil": "Dieser Preis gilt bis {time}.",
+   "lnWait": "Warten auf die Zahlung…",
+   "lnOld": "Diese Rechnung ist abgelaufen. Drücken Sie den Knopf für eine neue.",
+   "lnMore": "Bitcoin und Baht in Thailand: offrampt.net",
+   "offrampt": "Krypto in Baht"
   }
  },
  "units": {
