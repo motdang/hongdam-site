@@ -50,6 +50,7 @@
    "where": "Hongdam หงส์ดำ · Chiang Rai, Thailand",
    "portfolio": "Our work",
    "tasks": "Post any job",
+   "llms": "For AI assistants",
    "choose": "Choose",
    "qty": "How many",
    "total": "Total",
@@ -138,6 +139,7 @@
    "where": "หงส์ดำ Hongdam · เชียงราย",
    "portfolio": "ผลงาน",
    "tasks": "ลงประกาศงาน",
+   "llms": "สำหรับผู้ช่วย AI",
    "choose": "เลือก",
    "qty": "จำนวน",
    "total": "รวม",
@@ -226,6 +228,7 @@
    "where": "Hongdam · ချင်းရိုင်၊ ထိုင်းနိုင်ငံ",
    "portfolio": "ကျွန်ုပ်တို့၏ လက်ရာ",
    "tasks": "အလုပ်တင်ရန်",
+   "llms": "AI လက်ထောက်များအတွက်",
    "choose": "ရွေးပါ",
    "qty": "အရေအတွက်",
    "total": "စုစုပေါင်း",
@@ -314,6 +317,7 @@
    "where": "Hongdam หงส์ดำ · 泰国清莱",
    "portfolio": "我们的作品",
    "tasks": "发布任务",
+   "llms": "供 AI 助手",
    "choose": "选择",
    "qty": "数量",
    "total": "合计",
@@ -402,6 +406,7 @@
    "where": "Hongdam หงส์ดำ · Chiang Rai, Thailand",
    "portfolio": "Unsere Arbeiten",
    "tasks": "Einen Auftrag einstellen",
+   "llms": "Für KI-Assistenten",
    "choose": "Auswählen",
    "qty": "Anzahl",
    "total": "Summe",
@@ -3093,11 +3098,11 @@
     "de": "Arzt- oder Zahnarztbesuch"
    },
    "l": {
-    "en": "Prices first, an interpreter at the visit: Defiant.",
-    "th": "ราคาก่อนตัดสินใจ มีล่ามไปด้วย: Defiant",
-    "my": "စျေးနှုန်းအရင်၊ စကားပြန်ပါ — Defiant။",
-    "zh": "先报价，看诊有翻译陪同：Defiant。",
-    "de": "Preise zuerst, ein Dolmetscher beim Termin: Defiant."
+    "en": "Defiant, medical visits in Chiang Mai: prices first, an interpreter at the visit.",
+    "th": "Defiant พาไปหาหมอที่เชียงใหม่ ราคาก่อนตัดสินใจ มีล่ามไปด้วย",
+    "my": "Defiant — ချင်းမိုင်တွင် ဆေးကုသမှု။ စျေးနှုန်းအရင်၊ စကားပြန်ပါ။",
+    "zh": "Defiant：清迈就医服务。先报价，看诊有翻译陪同。",
+    "de": "Defiant, Arztbesuche in Chiang Mai: Preise zuerst, ein Dolmetscher beim Termin."
    },
    "kw": "doctor dentist hospital clinic medical health surgery check-up หมอ โรงพยาบาล คลินิก ทันตแพทย์ ตรวจสุขภาพ 医生 医院 牙医 看病 体检",
    "act": "link",
@@ -3172,11 +3177,11 @@
     "de": "PHP oder WordPress reparieren"
    },
    "l": {
-    "en": "PHP2Shell patched on your site or server.",
-    "th": "แพตช์ PHP2Shell บนเว็บหรือเซิร์ฟเวอร์",
-    "my": "သင့်ဆိုက် သို့မဟုတ် ဆာဗာတွင် PHP2Shell ပြင်ဆင်။",
-    "zh": "为您的网站或服务器修补 PHP2Shell。",
-    "de": "PHP2Shell auf Ihrer Website oder Ihrem Server gepatcht."
+    "en": "The PHP2Shell security hole patched on your site or server.",
+    "th": "แพตช์ช่องโหว่ PHP2Shell บนเว็บหรือเซิร์ฟเวอร์",
+    "my": "သင့်ဆိုက် သို့မဟုတ် ဆာဗာတွင် PHP2Shell လုံခြုံရေးအပေါက်ကို ပြင်ဆင်။",
+    "zh": "为您的网站或服务器修补 PHP2Shell 安全漏洞。",
+    "de": "Die Sicherheitslücke PHP2Shell auf Ihrer Website oder Ihrem Server geschlossen."
    },
    "kw": "php wordpress patch update upgrade php 8.3 php 8.4 php2shell cve hack hacked server vps plugin แก้ php อัปเดต เว็บโดนแฮก 修补 升级 漏洞 被黑",
    "act": "book",
@@ -5052,11 +5057,11 @@
     "de": "Bewerbung um eine Auszeichnung"
    },
    "l": {
-    "en": "For a cyber-security award, from your work.",
-    "th": "สำหรับรางวัลความปลอดภัยไซเบอร์ จากผลงานของคุณ",
-    "my": "ဆိုက်ဘာလုံခြုံရေးဆုအတွက်၊ သင့်လက်ရာမှ။",
-    "zh": "网络安全奖项申报，基于您的业绩。",
-    "de": "Für eine Cybersecurity-Auszeichnung, aus Ihrer Arbeit erstellt."
+    "en": "We write your entry for a cyber-security award from your work.",
+    "th": "เราเขียนเอกสารส่งประกวดรางวัลความปลอดภัยไซเบอร์จากผลงานของคุณ",
+    "my": "သင့်လက်ရာမှ ဆိုက်ဘာလုံခြုံရေးဆုအတွက် ဝင်ရောက်စာကို ကျွန်ုပ်တို့ ရေးပေးသည်။",
+    "zh": "我们根据您的业绩撰写网络安全奖项申报材料。",
+    "de": "Wir schreiben Ihre Bewerbung für eine Cybersecurity-Auszeichnung aus Ihrer Arbeit."
    },
    "kw": "award entry nomination cyber security awards submission ประกวด รางวัล 奖项 申报",
    "act": "buy",

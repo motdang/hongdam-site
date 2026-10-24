@@ -371,9 +371,9 @@ def foot(lang, front=False, group=None, pay=True):
         data["db"] = {"core": "/assets/db/" + DBM["core"], "groups": {g: "/assets/db/" + f for g, f in DBM["groups"].items()}}
     j = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return rate_box(lang) + ('<footer>%s<p>%s · <a href="mailto:%s">%s</a> · <a href="%s">LINE @964yxgnk</a></p>'
-            '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · <a href="/llms.txt">llms.txt</a></p></footer>\n'
+            '<p><a href="/portfolio/">%s</a> · <a href="/tasks">%s</a> · %s: <a href="/llms.txt">llms.txt</a></p></footer>\n'
             '<script type="application/json" id="shop">%s</script>\n<script type="module" src="/assets/shop.js?v=%s"></script>\n</body>\n</html>\n'
-            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), j, JS_V))
+            % ('<p>%s</p>' % E(ui["payMethods"]) if pay else "", E(ui["where"]), MAIL, MAIL, LINE_URL, E(ui["portfolio"]), E(ui["tasks"]), E(ui["llms"]), j, JS_V))
 
 
 RATE_LANGS = ("my", "zh", "de")
