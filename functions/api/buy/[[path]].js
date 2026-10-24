@@ -11,7 +11,8 @@
  *                                                               (cur: the pay box's currency, used before 0011 is applied)
  *   POST /api/buy/card/done {ref, token}                        back from PayPal: held (state capturing), captured, checked → paid
  *   GET  /api/buy/HD-xxxxxx                                     the order tracker: card, option and state, nothing else
- *   POST /api/buy/state {ref, state: paid|started|done}         the team moves an order on   Authorization: Bearer TASKS_ADMIN
+ *   POST /api/buy/state {ref, state: paid|started|done, force?} the team moves an order on   Authorization: Bearer TASKS_ADMIN
+ *                                                               (force: true moves one held while PayPal captures)
  *
  * Each order mails ORDER_TO (or CONTACT_TO) and posts in #help-desk (DISCORD_TASKS), and counts as
  * demand for that service's monthly price walk. The cards in HERS go to Nan alone (PLAN_TO, else
@@ -207,19 +208,30 @@ async function card(ctx, b, now) {
   if (!['booked', 'claimed'].includes(o.state)) return json({ ok: false, why: 'state' })
   // the currency the pay box showed: kept in pay, or (before 0011) sent by the page and worked out again here
   let p = payOf(o)
+  if (p.pp && p.ppUrl) return json({ ok: true, url: p.ppUrl })   // one PayPal order per order: a second press gets the same link
   if (!o.pay && CURS.includes(b.cur) && b.cur !== o.cur) p = { ...p, ...(await payIn(env, o, b.cur)) }
   const back = `${new URL(request.url).origin}/${o.lang && o.lang !== 'en' ? o.lang + '/' : ''}buy/?ref=${ref}`
   let r
   try { r = await startCard(env, { ref, amount: p.due, cur: p.cur, what: `${CARDS[o.card]?.en || o.card} · ${ref}`, back }) } catch { r = { error: 'paypal' } }
   if (r.error) return json({ ok: false, why: 'paypal' }, 502)
-  await env.TASKS.prepare('UPDATE svc_buy SET pay = ? WHERE ref = ?').bind(JSON.stringify({ ...p, pp: r.id }), ref).run().catch(() => {})
+  // no link to PayPal unless this order keeps the PayPal order and the amount it asks for (CodeRabbit on #77)
+  let kept = null
+  try {
+    kept = await env.TASKS.prepare("UPDATE svc_buy SET pay = ? WHERE ref = ? AND state IN ('booked','claimed') AND (pay IS NULL OR json_extract(pay, '$.pp') IS NULL)")
+      .bind(JSON.stringify({ ...p, pp: r.id, ppUrl: r.url }), ref).run()
+  } catch { /* no column yet */ }
+  if (!kept) return json({ ok: false, why: 'off' }, 503)
+  if (kept.meta?.changes === 0) {   // two presses at once: the first one's link; this PayPal order is never shown
+    const again = payOf((await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()) || {})
+    return again.ppUrl ? json({ ok: true, url: again.ppUrl }) : json({ ok: false, why: 'state' })
+  }
   return json({ ok: true, url: r.url })
 }
 
 async function cardDone(ctx, b, now) {
   const { request, env } = ctx
   if (!cardOn(env)) return json({ ok: false, why: 'off' }, 503)
-  const ref = clean(b.ref, 12), tok = clean(b.token, 40)
+  const ref = clean(b.ref, 12)
   if (!REF.test(ref)) return json({ ok: false, why: 'ref' }, 404)
   if (!(await triesOk(env, 'cardok', request.headers.get('cf-connecting-ip') || '', ref, now))) return json({ ok: false, why: 'tries' }, 429)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
@@ -227,25 +239,27 @@ async function cardDone(ctx, b, now) {
   if (['paid', 'started', 'done'].includes(o.state)) return json({ ok: true, ref, state: o.state })
   if (!['booked', 'claimed', 'capturing'].includes(o.state)) return json({ ok: false, why: 'state' })
   const p = payOf(o)
-  const id = p.pp || (/^[A-Z0-9]{8,30}$/.test(tok) ? tok : '')   // the custom_id check below ties either to this order
+  const id = p.pp   // kept by /api/buy/card; the token in the return address is not trusted (CodeRabbit on #77)
   if (!id) return json({ ok: false, why: 'paypal' })
   // Held while PayPal captures (CodeRabbit on #76): a slip or the team cannot pay it meanwhile. A second return (a
   // reload) finds it held and captures again, which PayPal answers for an order it has captured already.
   if (o.state !== 'capturing') {
-    const h = await env.TASKS.prepare("UPDATE svc_buy SET state = 'capturing' WHERE ref = ? AND state IN ('booked','claimed')").bind(ref).run()
+    const h = await env.TASKS.prepare("UPDATE svc_buy SET state = 'capturing', pay = json_set(coalesce(pay, '{}'), '$.from', state) WHERE ref = ? AND state IN ('booked','claimed')").bind(ref).run()
     if (h?.meta?.changes === 0) return json({ ok: false, why: 'state' })
   }
   let r
-  try { r = await finishCard(env, id, { ref, amount: p.due, cur: p.cur }) } catch { r = { ok: false, why: 'paypal' } }
+  try { r = await finishCard(env, id, { ref, amount: p.due, cur: p.cur }) } catch { r = { ok: false, why: 'pending', final: false } }
   if (!r.ok) {
-    if (r.why !== 'pending') await env.TASKS.prepare("UPDATE svc_buy SET state = ? WHERE ref = ? AND state = 'capturing'").bind(o.state === 'claimed' ? 'claimed' : 'booked', ref).run().catch(() => {})
+    // let go only when PayPal said no money moved; an unknown result stays held until the buyer's next return or the team
+    if (r.final) await env.TASKS.prepare("UPDATE svc_buy SET state = coalesce(json_extract(pay, '$.from'), 'booked') WHERE ref = ? AND state = 'capturing'").bind(ref).run().catch(() => {})
+    if (r.mismatch) ctx.waitUntil(notify(env, o.card, `Order ${ref}: PayPal capture does not match`, [`PayPal captured ${r.capture} for another ref, amount or currency than ${money(p.due, p.cur)}. The order stays held: check PayPal, then refund or mark it paid with force.`, ...lineOf(o)], `Check PayPal: order ${ref}`))
     return json({ ok: false, why: r.why || 'paypal' })
   }
   const lines = [`Paid ${money(p.due, p.cur)} by card or PayPal on PayPal's page · capture ${r.capture}`, ...lineOf(o)]
   let u = null
   try { u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state = 'capturing'").bind('paypal ' + r.capture, ref).run() } catch { /* below */ }
   if (!u) {   // captured, not written down: the team records it by hand (POST /api/buy/state)
-    ctx.waitUntil(notify(env, o.card, `Order ${ref}: captured, not recorded`, ['PayPal captured this payment but the order could not be marked paid. Mark it paid:', ...lines], `Record by hand: ${money(p.due, p.cur)} · order ${ref}`))
+    ctx.waitUntil(notify(env, o.card, `Order ${ref}: captured, not recorded`, ['PayPal captured this payment but the order could not be marked paid. Mark it paid: POST /api/buy/state {ref, state: "paid", force: true}', ...lines], `Record by hand: ${money(p.due, p.cur)} · order ${ref}`))
     return json({ ok: false, why: 'pending' })
   }
   if (u.meta?.changes !== 0) ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(p.due, p.cur)} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
@@ -273,9 +287,11 @@ async function moved(ctx, b, now) {
   if (!REF.test(ref) || !state) return json({ ok: false, why: 'body' }, 400)
   const o = await env.TASKS.prepare('SELECT * FROM svc_buy WHERE ref = ?').bind(ref).first()
   if (!o || o.state === 'void') return json({ ok: false, why: 'ref' }, 404)
-  if (o.state === 'capturing') return json({ ok: false, why: 'busy', state: o.state }, 409)   // PayPal is capturing it: try in a minute
+  // held while PayPal captures: busy, unless the team says force (it has checked PayPal)
+  if (o.state === 'capturing' && b.force !== true) return json({ ok: false, why: 'busy', state: o.state }, 409)
   if (STEPS.indexOf(state) <= STEPS.indexOf(o.state)) return json({ ok: true, ref, state: o.state })
-  await env.TASKS.prepare('UPDATE svc_buy SET state = ? WHERE ref = ?').bind(state, ref).run()
+  const u = await env.TASKS.prepare('UPDATE svc_buy SET state = ? WHERE ref = ? AND state = ?').bind(state, ref, o.state).run()
+  if (u?.meta?.changes === 0) return json({ ok: false, why: 'busy' }, 409)   // it moved meanwhile (a capture, a slip): read it again
   if (STEPS.indexOf(o.state) < STEPS.indexOf('paid')) ctx.waitUntil(paidDemand(env.TASKS, o, now))
   const said = [`Marked ${state} ${new Date(now).toISOString().slice(0, 16)}Z`, ...lineOf(o)]
   ctx.waitUntil(HERS.has(o.card) ? mail(env, `Order ${ref} ${state}`, said.join('\n'), '', env.PLAN_TO || 'nan@motdang.net') : tell(env, `Order ${ref} ${state}`, said))
