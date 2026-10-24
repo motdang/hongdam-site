@@ -63,7 +63,9 @@ const ver = (s) => crypto.createHash('sha1').update(s).digest('hex').slice(0, 8)
 const LOOKS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/looks.json'), 'utf8'))
 // a card with no line of its own draws its door, the work starting, and done
 const pic = (c) => LOOKS.pics[c.id] || [LOOKS.doors[c.cat], 'gears', 'done'].filter(Boolean)
-const always = ['hongsa', 'hongsa-walk', 'hongsa-stand', 'search', ...LOOKS.master.map((m) => m.db), ...LOOKS.track.map((m) => m.db)]
+// the swans on every job line: walking, standing, their moves at a stop and at the end, and Dam (shop.js ride)
+const SWANS = ['hongsa', 'hongsa-walk', 'hongsa-stand', 'hongsa-idle', 'hongsa-peck', 'hongsa-hop', 'hongsa-flap', 'hongsa-honk', 'hongsa-bow', 'hongsa-look', 'hongsa-court', 'hongsa-nuzzle', 'duckling-walk', 'duckling-wait']
+const always = [...SWANS, 'search', ...LOOKS.master.map((m) => m.db), ...LOOKS.track.map((m) => m.db)]
 const groups = { front: [...always, ...Object.values(LOOKS.doors)] }
 for (const c of SHOP.cards) if (c.pop) groups.front.push(...pic(c))
 for (const cat of SHOP.cats) groups[cat.id] = [...always, ...(LOOKS.doors[cat.id] ? [LOOKS.doors[cat.id]] : []), ...SHOP.cards.filter((c) => c.cat === cat.id).flatMap(pic)]
