@@ -43,16 +43,17 @@ _BOLD = re.compile(r"\*\*(.+?)\*\*")
 _ITAL = re.compile(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])")
 
 
-def inline(s, n_sources=0):
-    """Escape, then mark up. Code spans are set aside first so nothing inside them is touched."""
-    keep = []
+def inline(s, n_sources=0, keep=None):
+    """Escape, then mark up. Code spans are set aside first so nothing inside them is touched; link text shares the
+    same set-aside list, so a code span inside a link comes back whole."""
+    keep = [] if keep is None else keep
 
     def stash(h):
         keep.append(h)
         return "\x00%d\x00" % (len(keep) - 1)
     s = _CODE.sub(lambda m: stash("<code>%s</code>" % E(m.group(1))), s)
     s = _LINK.sub(lambda m: stash('<a href="%s"%s>%s</a>' % (
-        E(m.group(2)), ' rel="noopener"' if m.group(2).startswith("http") else "", inline(m.group(1), n_sources))), s)
+        E(m.group(2)), ' rel="noopener"' if m.group(2).startswith("http") else "", inline(m.group(1), n_sources, keep))), s)
 
     def ref(m):
         n = int(m.group(1))
@@ -104,6 +105,8 @@ def html(body, n_sources=0):
             j = i + 1
             while j < len(lines) and not lines[j].startswith("```"):
                 j += 1
+            if j == len(lines):
+                raise ValueError("code fence opened on line %d is never closed" % (i + 1))
             code = "\n".join(lines[i + 1:j])
             if lang == "chart":
                 out.append(chart(code))
@@ -153,7 +156,8 @@ def html(body, n_sources=0):
             out.append('<div class="tbl"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (
                 "".join('<th scope="col">%s</th>' % inline(h, n_sources) for h in head),
                 "".join("<tr>%s</tr>" % "".join(
-                    ('<th scope="row">%s</th>' if k == 0 else '<td data-h="%s">%%s</td>' % E(M_plain(head[k]) if k < len(head) else "")) % inline(c, n_sources)
+                    ('<th scope="row">%s</th>' % inline(c, n_sources)) if k == 0 else
+                    ('<td data-h="%s">%s</td>' % (E(M_plain(head[k]) if k < len(head) else ""), inline(c, n_sources)))
                     for k, c in enumerate(r)) for r in rows)))
             continue
         if not ln.strip():
