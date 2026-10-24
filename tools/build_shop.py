@@ -428,6 +428,7 @@ def front(lang):
     pop = sorted((c for c in SHOP["cards"] if c.get("pop")), key=lambda c: c["pop"])
     out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
     out += studio_band(lang)
+    out += work_band(lang)
     count = {}
     for c in SHOP["cards"]:
         count[c["cat"]] = count.get(c["cat"], 0) + 1
@@ -459,6 +460,44 @@ def studio_band(lang, cat=None):
             '<a class="btn" href="%s">%s</a></li></ul>\n' % (
                 E(su["name"]), job(["robot", "laptop", "wrench", "lock"], lang, name="job-studio"), E(su["h1"]), E(su["band"]),
                 url(lang, "studio/"), E(SHOP["ui"][lang]["open"])))
+
+
+WORK_F = os.path.join(HERE, "data", "front_work.json")
+WORK = json.load(open(WORK_F, encoding="utf-8")) if os.path.exists(WORK_F) else None
+
+
+def work_band(lang):
+    """Her asks 2026-10-24 (data/front_work.json): the Rotary lice cartoon, a Mot Dang section with a few of its
+    videos, and what people say. The cartoon lives on Google Drive: its poster is a button that shop.js swaps for
+    Drive's player. A quote shows only once it is marked show."""
+    if not WORK or lang not in WORK["ui"]:
+        return ""
+    wu = WORK["ui"][lang]
+    out = '<h2>%s</h2>\n<div class="work">' % E(wu["work"])
+    for g in WORK["groups"]:
+        out += '<section class="wk" id="work-%s" style="--line:var(--c-%s)"><h3>%s</h3><p class="l">%s</p>' % (
+            g["id"], g["line"], E(tr(g["n"], lang)), E(tr(g["l"], lang)))
+        if g.get("drive"):
+            out += ('<button type="button" class="vid drive" data-src="%s" aria-label="%s: %s">'
+                    '<img src="%s" width="%d" height="%d" alt="%s" loading="lazy" decoding="async"><span class="play">%s</span></button>' % (
+                        E(g["drive"]), E(wu["play"]), E(tr(g["n"], lang)), E(g["poster"]), g["w"], g["h"], E(tr(g["alt"], lang)), E(wu["play"])))
+        if g.get("videos"):
+            out += '<ul class="reels">'
+            for v in g["videos"]:
+                name = E(tr(v["n"], lang))
+                out += ('<li><video controls playsinline preload="none" poster="%s" width="%d" height="%d" title="%s"><source src="%s" type="video/mp4"></video>'
+                        '<p><b>%s</b> <span>%s</span></p></li>' % (
+                            E(v["poster"]), v["w"], v["h"], name, E(v["src"]),
+                            '<a href="%s">%s</a>' % (E(v["go"]), name) if v.get("go") else name, E(tr(v["by"], lang))))
+            out += '</ul>'
+        out += '<p class="go"><a href="%s">%s →</a></p></section>' % (E(g["go"]), E(tr(g["goN"], lang)))
+    out += '</div>\n'
+    says = [q for q in WORK.get("quotes", []) if q.get("show")]
+    if says:
+        out += '<h2>%s</h2>\n<ul class="says">%s</ul>\n' % (E(wu["say"]), "".join(
+            '<li><blockquote lang="%s"><p>%s</p></blockquote><p class="who">%s</p></li>' % (q["lang"], E(q["q"]), E(tr(q["who"], lang)))
+            for q in says))
+    return out
 
 
 def category(lang, cat):

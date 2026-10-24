@@ -488,6 +488,25 @@ if (D.front && D.lang === 'en' && !store('hd-lang')) {
   if (want && want !== 'en') location.replace('/' + want + '/')
 }
 
+// Our work (front page): the Rotary cartoon lives on Google Drive. Its poster is a button; a press puts Drive's
+// player in its place, so the page loads no Google script until someone wants the film.
+document.querySelectorAll('.vid.drive').forEach((b) => b.addEventListener('click', () => {
+  const f = document.createElement('iframe')
+  f.src = b.dataset.src
+  f.title = b.getAttribute('aria-label')
+  f.allow = 'autoplay; fullscreen'
+  f.allowFullscreen = true
+  const box = document.createElement('div')
+  box.className = 'vid'
+  box.appendChild(f)
+  b.replaceWith(box)
+  f.focus()
+}, { once: true }))
+// one Mot Dang video plays at a time
+document.querySelectorAll('.reels video').forEach((v) => v.addEventListener('play', () => {
+  document.querySelectorAll('.reels video').forEach((o) => { if (o !== v) o.pause() })
+}))
+
 // Today's prices
 const live = {}
 // The walk's number for a price shown in cur, or undefined while the walk has none in that currency (functions/_shop.js walkNum).
