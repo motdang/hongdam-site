@@ -321,6 +321,53 @@
    "h1_th": "the black-swan studio, Chiang Rai",
    "sub_lang": "en",
    "desc": "Hongdam หงส์ดำ — a working studio in Chiang Rai. Projects in AI security, small internet-connected devices, collecting large amounts of public data, and an AI platform that other businesses can put their own brand on. Every link works, every number counted."
+  },
+  "questions": {
+   "path": "questions/",
+   "lang": "en",
+   "mark": "chat",
+   "stops": [
+    "chat",
+    "songthaew",
+    "manicule",
+    "done"
+   ],
+   "title": "Questions · Hongdam",
+   "h1": "Questions",
+   "h1_th": "คำถาม",
+   "desc": "",
+   "card": {
+    "en": {
+     "og": "og/questions.jpg",
+     "big": "questions",
+     "small": "คำถาม · Chiang Mai",
+     "sub": "Asked on a move to Chiang Mai. Each one opens its service."
+    },
+    "th": {
+     "og": "og/questions-th.jpg",
+     "big": "คำถาม",
+     "small": "ย้ายมาอยู่เชียงใหม่",
+     "sub": "กดคำถามเพื่อดูบริการที่ช่วยได้"
+    },
+    "my": {
+     "og": "og/questions-my.jpg",
+     "big": "မေးခွန်းများ",
+     "small": "ချင်းမိုင် · Chiang Mai",
+     "sub": "Questions from a move to Chiang Mai."
+    },
+    "zh": {
+     "og": "og/questions-zh.jpg",
+     "big": "问题",
+     "small": "搬到清迈 · Chiang Mai",
+     "sub": "点一个问题，看对应的服务。"
+    },
+    "de": {
+     "og": "og/questions-de.jpg",
+     "big": "fragen",
+     "small": "Umzug nach Chiang Mai",
+     "sub": "Jede Frage öffnet ihren Service."
+    }
+   }
   }
  },
  "task_groups_about": "The link card of each group and kind of work on /tasks/c/ (tools/build_task_cards.py): the shop category whose line colour it takes, its mark and its stops.",

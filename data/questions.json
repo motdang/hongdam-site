@@ -1,0 +1,2187 @@
+{
+ "about": "Questions asked on a move to Chiang Mai, 2025-26, without the asker's name (tools/build_questions.py). c: the shop card the question links to. q: the question in each language. ui: the words around them.",
+ "ui": {
+  "en": {
+   "h": "Questions",
+   "h1": "Questions",
+   "lede": "Asked on a move to Chiang Mai, 2025–26. Tap one for the service that handles it.",
+   "all": "All {n}",
+   "pause": "Pause",
+   "play": "Play",
+   "find": "Find a question",
+   "findPh": "sak yant, visa, sex toy…",
+   "of": "{k} of {n}",
+   "none": "Nothing like that here yet. Write to us below.",
+   "title": "Questions about living in Chiang Mai · Hongdam",
+   "desc": "{n} questions asked on a move to Chiang Mai, from khao soi and sak yant to sex toys and visa runs, each linked to the Hongdam service that handles it."
+  },
+  "th": {
+   "h": "คำถาม",
+   "h1": "คำถาม",
+   "lede": "จากการย้ายมาอยู่เชียงใหม่ ปี 2568–69 กดคำถามเพื่อดูบริการที่ช่วยได้",
+   "all": "ทั้งหมด {n} ข้อ",
+   "pause": "หยุด",
+   "play": "เล่นต่อ",
+   "find": "ค้นหาคำถาม",
+   "findPh": "สักยันต์ วีซ่า ข้าวซอย…",
+   "of": "{k} จาก {n} ข้อ",
+   "none": "ยังไม่มีคำถามแบบนี้ เขียนถึงเราด้านล่างได้เลย",
+   "title": "คำถามเรื่องการใช้ชีวิตในเชียงใหม่ · หงส์ดำ",
+   "desc": "{n} คำถามจากการย้ายมาอยู่เชียงใหม่ ตั้งแต่ข้าวซอยและสักยันต์ ไปจนถึงเซ็กซ์ทอยและการวิ่งวีซ่า แต่ละข้อลิงก์ไปยังบริการของหงส์ดำที่ช่วยได้"
+  },
+  "my": {
+   "h": "မေးခွန်းများ",
+   "h1": "မေးခွန်းများ",
+   "lede": "ချင်းမိုင်သို့ ပြောင်းရွှေ့စဉ် မေးခဲ့သော မေးခွန်းများ၊ 2025–26။ ကူညီပေးနိုင်သော ဝန်ဆောင်မှုကို ကြည့်ရန် မေးခွန်းကို နှိပ်ပါ။",
+   "all": "အားလုံး {n} ခု",
+   "pause": "ရပ်ရန်",
+   "play": "ဆက်ရန်",
+   "find": "မေးခွန်း ရှာရန်",
+   "findPh": "ဗီဇာ၊ ခေါက်ဆွဲ၊ sak yant…",
+   "of": "{n} ခုအနက် {k} ခု",
+   "none": "ဤကဲ့သို့ မေးခွန်း မရှိသေးပါ။ အောက်တွင် ကျွန်ုပ်တို့ထံ ရေးပို့ပါ။",
+   "title": "ချင်းမိုင်တွင် နေထိုင်ခြင်းဆိုင်ရာ မေးခွန်းများ · Hongdam",
+   "desc": "ချင်းမိုင်သို့ ပြောင်းရွှေ့စဉ် မေးခဲ့သော မေးခွန်း {n} ခု၊ တစ်ခုစီသည် ကူညီပေးနိုင်သော Hongdam ဝန်ဆောင်မှုသို့ ချိတ်ထားသည်။"
+  },
+  "zh": {
+   "h": "问题",
+   "h1": "问题",
+   "lede": "来自一次搬到清迈的经历，2025–26年。点一个问题，看对应的服务。",
+   "all": "全部 {n} 个",
+   "pause": "暂停",
+   "play": "继续",
+   "find": "查找问题",
+   "findPh": "刺符、签证、情趣用品…",
+   "of": "{n} 个中的 {k} 个",
+   "none": "这里还没有这样的问题。请在下方给我们留言。",
+   "title": "在清迈生活的问题 · Hongdam",
+   "desc": "搬到清迈时问过的 {n} 个问题，从咖喱面、刺符到情趣用品和签证，每一个都链接到 Hongdam 对应的服务。"
+  },
+  "de": {
+   "h": "Fragen",
+   "h1": "Fragen",
+   "lede": "Gestellt bei einem Umzug nach Chiang Mai, 2025–26. Tippe eine an für den passenden Service.",
+   "all": "Alle {n}",
+   "pause": "Anhalten",
+   "play": "Weiter",
+   "find": "Frage suchen",
+   "findPh": "Sak Yant, Visum, Sextoy…",
+   "of": "{k} von {n}",
+   "none": "So eine Frage gibt es hier noch nicht. Schreib uns unten.",
+   "title": "Fragen zum Leben in Chiang Mai · Hongdam",
+   "desc": "{n} Fragen von einem Umzug nach Chiang Mai, von Khao Soi und Sak Yant bis Sextoys und Visa-Runs, jede verlinkt mit dem passenden Hongdam-Service."
+  }
+ },
+ "qs": [
+  {
+   "c": "thai-lessons",
+   "q": {
+    "en": "How tf do people learn Thai?",
+    "th": "คนเขาเรียนภาษาไทยกันยังไงวะ",
+    "my": "ထိုင်းစကားကို လူတွေ ဘယ့်နှယ်လိုကြီး သင်ကြတာတုန်း",
+    "zh": "人们到底他妈的是怎么学会泰语的？",
+    "de": "Wie zur Hölle lernen Leute Thai?"
+   }
+  },
+  {
+   "c": "lang-leaves",
+   "q": {
+    "en": "What does Lanna mean?",
+    "th": "ล้านนาแปลว่าอะไร",
+    "my": "လန်နာ ဆိုတာ ဘာအဓိပ္ပာယ်လဲ",
+    "zh": "兰纳是什么意思？",
+    "de": "Was bedeutet Lanna?"
+   }
+  },
+  {
+   "c": "errand",
+   "q": {
+    "en": "Can I buy a dildo in Chiang Mai?",
+    "th": "ซื้อดิลโด้ในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ လီးအတု ဝယ်လို့ရလား",
+    "zh": "在清迈能买到假阳具吗？",
+    "de": "Kann ich in Chiang Mai einen Dildo kaufen?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "Is there any more typically Lanna dish than khao soi?",
+    "th": "มีอาหารจานไหนที่ล้านนาแท้ยิ่งกว่าข้าวซอยอีกไหม",
+    "my": "khao soi ထက် ပိုလန်နာဆန်တဲ့ ဟင်းလျာ ရှိသေးလား",
+    "zh": "有比泰北咖喱面更典型的兰纳菜吗？",
+    "de": "Gibt es ein typischeres Lanna-Gericht als Khao Soi?"
+   }
+  },
+  {
+   "c": "accident",
+   "q": {
+    "en": "Are Thai police bastards?",
+    "th": "ตำรวจไทยเป็นไอ้พวกสารเลวใช่ไหม",
+    "my": "ထိုင်းရဲတွေက ခွေးမသားတွေလား",
+    "zh": "泰国警察都是王八蛋吗？",
+    "de": "Sind die Polizisten in Thailand Bastarde?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Is cannabis legal in Thailand? How about kratom?",
+    "th": "กัญชาถูกกฎหมายในไทยไหม แล้วกระท่อมล่ะ",
+    "my": "ထိုင်းမှာ ဂန်ဂျာ တရားဝင်လား။ ကရက်တွမ်ကော",
+    "zh": "大麻在泰国合法吗？卡痛叶呢？",
+    "de": "Ist Cannabis in Thailand legal? Und Kratom?"
+   }
+  },
+  {
+   "c": "assistant",
+   "q": {
+    "en": "Can I hire a Thai assistant who does what ChatGPT does for me?",
+    "th": "จ้างผู้ช่วยคนไทยที่ทำงานแบบที่ ChatGPT ทำให้เราได้ไหม",
+    "my": "ChatGPT က ကိုယ့်အတွက် လုပ်ပေးသလို လုပ်ပေးမယ့် ထိုင်းလက်ထောက်တစ်ယောက် ငှားလို့ရလား",
+    "zh": "能不能雇个泰国助理，帮我做 ChatGPT 帮我做的那些事？",
+    "de": "Kann ich einen thailändischen Assistenten anstellen, der für mich das macht, was ChatGPT macht?"
+   }
+  },
+  {
+   "c": "drawn",
+   "q": {
+    "en": "Why is the old city in Chiang Mai nearly a perfect square?",
+    "th": "ทำไมเมืองเก่าเชียงใหม่ถึงเป็นสี่เหลี่ยมจัตุรัสเกือบเป๊ะ",
+    "my": "ချင်းမိုင်မြို့ဟောင်းက ဘာကြောင့် စတုရန်းပုံ ကွက်တိနီးပါး ဖြစ်နေတာလဲ",
+    "zh": "为什么清迈古城几乎是个完美的正方形？",
+    "de": "Warum ist die Altstadt von Chiang Mai fast ein perfektes Quadrat?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Are there couples sex therapists in Chiang Mai?",
+    "th": "เชียงใหม่มีนักบำบัดปัญหาเรื่องเซ็กซ์สำหรับคู่รักไหม",
+    "my": "ချင်းမိုင်မှာ စုံတွဲတွေအတွက် လိင်ဆက်ဆံရေး ကုထုံးပညာရှင် ရှိလား",
+    "zh": "清迈有做夫妻性治疗的治疗师吗？",
+    "de": "Gibt es in Chiang Mai Sexualtherapeuten für Paare?"
+   }
+  },
+  {
+   "c": "move",
+   "q": {
+    "en": "How do I ship stuff to my future self in Chiang Mai?",
+    "th": "จะส่งของไปให้ตัวเองในอนาคตที่เชียงใหม่ยังไง",
+    "my": "နောင်ချင်းမိုင်မှာ ရောက်နေမယ့် ကိုယ့်ဆီကို ပစ္စည်းတွေ ဘယ်လိုပို့ရမလဲ",
+    "zh": "我怎么把东西寄给未来在清迈的自己？",
+    "de": "Wie schicke ich Sachen an mein zukünftiges Ich in Chiang Mai?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "Will Thai people think I am fat?",
+    "th": "คนไทยจะคิดว่าเราอ้วนไหม",
+    "my": "ထိုင်းလူတွေက ကိုယ့်ကို ဝတယ်လို့ ထင်မလား",
+    "zh": "泰国人会觉得我胖吗？",
+    "de": "Werden Thais mich für dick halten?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Can I give a Thai glow-up clinic $2,000 and ask them to make me look fly as hell?",
+    "th": "ให้คลินิกเปลี่ยนลุคของไทย $2,000 แล้วสั่งให้ทำให้ดูปังโคตรๆ ได้ไหม",
+    "my": "ထိုင်းအလှကုဆေးခန်းတစ်ခုကို $2,000 ပေးပြီး ကိုယ့်ကို တအားကြည့်ကောင်း စတိုင်ကျအောင် လုပ်ပေးပါလို့ ပြောလို့ရလား",
+    "zh": "我能给泰国的变美诊所 $2,000，让他们把我整得酷毙了吗？",
+    "de": "Kann ich einer thailändischen Glow-up-Klinik $2,000 geben und sie bitten, mich verdammt cool aussehen zu lassen?"
+   }
+  },
+  {
+   "c": "amulet",
+   "q": {
+    "en": "What is with all the wooden dick decor in Thailand?",
+    "th": "ของตกแต่งเป็นควยไม้ที่มีเต็มไปหมดในไทยนี่มันอะไรกันวะ",
+    "my": "ထိုင်းမှာ သစ်သားလီးပုံ အလှဆင်ပစ္စည်းတွေ ဘာလို့ ဒီလောက်များတာလဲ",
+    "zh": "泰国到处都是木头大屌装饰，这是怎么回事？",
+    "de": "Was hat es mit all den hölzernen Schwänzen als Deko in Thailand auf sich?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "Can I get a decent bagel or pizza in Chiang Mai?",
+    "th": "หาเบเกิลหรือพิซซ่าที่ใช้ได้ในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ ဘေဂယ် ဒါမှမဟုတ် ပီဇာ ကောင်းကောင်း စားလို့ရလား",
+    "zh": "在清迈能吃到像样的贝果或披萨吗？",
+    "de": "Gibt es in Chiang Mai einen anständigen Bagel oder eine anständige Pizza?"
+   }
+  },
+  {
+   "c": "stay-check",
+   "q": {
+    "en": "Is it possible to own a traditional Lanna wooden house as a foreigner?",
+    "th": "คนต่างชาติเป็นเจ้าของบ้านไม้ล้านนาแบบดั้งเดิมได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ယောက်အနေနဲ့ လန်နာ ရိုးရာသစ်သားအိမ် ပိုင်လို့ရနိုင်လား",
+    "zh": "外国人有可能拥有一栋传统的兰纳木屋吗？",
+    "de": "Kann man als Ausländer ein traditionelles Lanna-Holzhaus besitzen?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Can I claim asylum in Thailand?",
+    "th": "ขอลี้ภัยในไทยได้ไหม",
+    "my": "ထိုင်းမှာ ခိုလှုံခွင့် လျှောက်လို့ရလား",
+    "zh": "我能在泰国申请庇护吗？",
+    "de": "Kann ich in Thailand Asyl beantragen?"
+   }
+  },
+  {
+   "c": "house-blessing",
+   "q": {
+    "en": "What do monks do for fun?",
+    "th": "พระเขาทำอะไรสนุกๆ กันบ้าง",
+    "my": "ဘုန်းကြီးတွေ ပျော်ဖို့ ဘာလုပ်ကြလဲ",
+    "zh": "僧人平时都怎么找乐子？",
+    "de": "Was machen Mönche zum Spass?"
+   }
+  },
+  {
+   "c": "call",
+   "q": {
+    "en": "Is it possible to buy a proper sex toy in Chiang Mai using a euphemism?",
+    "th": "ใช้คำเลี่ยงๆ แล้วซื้อเซ็กซ์ทอยดีๆ ในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ စကားလှလှသုံးပြီး လိင်ကစားစရာ ကောင်းကောင်း ဝယ်လို့ရနိုင်လား",
+    "zh": "用委婉的说法，在清迈能买到正经的性玩具吗？",
+    "de": "Kann ich in Chiang Mai ein richtiges Sexspielzeug kaufen, wenn ich einen Euphemismus benutze?"
+   }
+  },
+  {
+   "c": "name-pick",
+   "q": {
+    "en": "Should I give myself a Thai-sounding name?",
+    "th": "ควรตั้งชื่อที่ฟังดูเป็นไทยๆ ให้ตัวเองไหม",
+    "my": "ကိုယ့်ကိုယ်ကို ထိုင်းနာမည်လိုလို နာမည်တစ်ခု ပေးသင့်လား",
+    "zh": "我该给自己起个泰国味的名字吗？",
+    "de": "Soll ich mir einen thailändisch klingenden Namen geben?"
+   }
+  },
+  {
+   "c": "name-charm",
+   "q": {
+    "en": "What would be a good Thai nickname that keeps goblins and such away?",
+    "th": "ชื่อเล่นไทยชื่ออะไรดีที่กันภูตผีปีศาจอะไรพวกนั้นได้",
+    "my": "တစ္ဆေ၊ ဘီလူးတို့လို အကောင်တွေ ဝေးအောင် ထိုင်း ချစ်ခေါ်နာမည် ဘာပေးရင် ကောင်းမလဲ",
+    "zh": "起个什么样的泰语昵称，能让小妖怪之类的东西不敢靠近？",
+    "de": "Was wäre ein guter thailändischer Spitzname, der Kobolde und dergleichen fernhält?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "Are there relatively ethical strip shows in Chiang Mai?",
+    "th": "เชียงใหม่มีโชว์เปลื้องผ้าที่ค่อนข้างมีจริยธรรมไหม",
+    "my": "ချင်းမိုင်မှာ ပိုပြီး ကျင့်ဝတ်ကျတဲ့ အဝတ်ချွတ်ကပွဲတွေ ရှိလား",
+    "zh": "清迈有相对合乎伦理的脱衣舞表演吗？",
+    "de": "Gibt es in Chiang Mai halbwegs ethische Stripshows?"
+   }
+  },
+  {
+   "c": "lab-test",
+   "q": {
+    "en": "Can you get trichinosis from raw pig blood in Chiang Mai?",
+    "th": "กินเลือดหมูดิบในเชียงใหม่แล้วติดโรคไทรคิโนซิสได้ไหม",
+    "my": "ချင်းမိုင်မှာ ဝက်သွေးစိမ်း စားလို့ ထရိုင်ကီနိုဆစ် ရောဂါ ရနိုင်လား",
+    "zh": "在清迈吃生猪血会得旋毛虫病吗？",
+    "de": "Kann man sich in Chiang Mai durch rohes Schweineblut Trichinose holen?"
+   }
+  },
+  {
+   "c": "thai-lessons",
+   "q": {
+    "en": "How do I say \"not very sweet, not very spicy\" in Thai so I can order food safely?",
+    "th": "เวลาสั่งอาหารให้ปลอดภัย ประโยค \"not very sweet, not very spicy\" พูดเป็นภาษาไทยว่ายังไง",
+    "my": "စိတ်ချလက်ချ မှာနိုင်ဖို့ “not very sweet, not very spicy” ကို ထိုင်းလို ဘယ်လိုပြောရမလဲ",
+    "zh": "怎么用泰语说 “not very sweet, not very spicy”，这样点餐才不会踩雷？",
+    "de": "Wie sage ich \"not very sweet, not very spicy\" auf Thai, damit ich sicher Essen bestellen kann?"
+   }
+  },
+  {
+   "c": "accident",
+   "q": {
+    "en": "Do most Thai police you deal with accept gratuities?",
+    "th": "ตำรวจไทยส่วนใหญ่ที่เราเจอรับค่าน้ำร้อนน้ำชากันไหม",
+    "my": "ကိုယ်ဆက်ဆံရတဲ့ ထိုင်းရဲအများစုက လက်ဖက်ရည်ဖိုး လက်ခံလား",
+    "zh": "你接触过的泰国警察，大多数会收好处费吗？",
+    "de": "Nehmen die meisten thailändischen Polizisten, mit denen du zu tun hast, Trinkgelder an?"
+   }
+  },
+  {
+   "c": "sell-motdang",
+   "q": {
+    "en": "I loooove living in Thailand. How do I monetize it?",
+    "th": "รักการอยู่เมืองไทยมากกกก จะหาเงินจากมันได้ยังไง",
+    "my": "ထိုင်းမှာ နေရတာကို တအားချစ်တာပဲ။ ဒါကို ဘယ်လို ငွေရှာရမလဲ",
+    "zh": "我太太太爱住在泰国了。怎么把这件事变现？",
+    "de": "Ich liiiebe es, in Thailand zu leben. Wie mache ich das zu Geld?"
+   }
+  },
+  {
+   "c": "copy",
+   "q": {
+    "en": "Is it culturally weird to put up a campy, profane website that hates on America and kisses up to Thailand a bit?",
+    "th": "ทำเว็บไซต์สไตล์แคมป์ๆ ปากหมา ที่ด่าอเมริกาแล้วประจบเมืองไทยนิดๆ แปลกในทางวัฒนธรรมไหม",
+    "my": "အမေရိကန်ကို ကဲ့ရဲ့ပြီး ထိုင်းကို နည်းနည်းဖားတဲ့၊ ပျော်စရာကောင်းပြီး ဆဲဆိုစကားပါတဲ့ ဝက်ဘ်ဆိုက်တစ်ခု လုပ်တာ ယဉ်ကျေးမှုအရ ထူးဆန်းလား",
+    "zh": "做一个浮夸搞怪、满嘴脏话、黑美国又顺便给泰国拍点马屁的网站，在文化上会不会很怪？",
+    "de": "Ist es kulturell seltsam, eine überdrehte, vulgäre Website online zu stellen, die über Amerika herzieht und sich bei Thailand ein bisschen einschleimt?"
+   }
+  },
+  {
+   "c": "merit-you",
+   "q": {
+    "en": "Can I donate money and build a wat in Thailand?",
+    "th": "บริจาคเงินสร้างวัดในไทยได้ไหม",
+    "my": "ထိုင်းမှာ ငွေလှူပြီး ဘုန်းကြီးကျောင်းတစ်ကျောင်း ဆောက်လို့ရလား",
+    "zh": "我能捐钱在泰国建一座寺庙吗？",
+    "de": "Kann ich in Thailand Geld spenden und einen Wat bauen?"
+   }
+  },
+  {
+   "c": "car-guide",
+   "q": {
+    "en": "Does Chiang Mai have an unofficial red light district?",
+    "th": "เชียงใหม่มีย่านโคมแดงแบบไม่เป็นทางการไหม",
+    "my": "ချင်းမိုင်မှာ တရားဝင်မဟုတ်တဲ့ မီးနီရပ်ကွက် ရှိလား",
+    "zh": "清迈有没有非官方的红灯区？",
+    "de": "Gibt es in Chiang Mai ein inoffizielles Rotlichtviertel?"
+   }
+  },
+  {
+   "c": "thai-lessons",
+   "q": {
+    "en": "What is the coded language at massage places?",
+    "th": "ศัพท์ลับที่ใช้กันในร้านนวดมีอะไรบ้าง",
+    "my": "နှိပ်နယ်ဆိုင်တွေမှာ သုံးတဲ့ လျှို့ဝှက်စကားတွေက ဘာတွေလဲ",
+    "zh": "按摩店里的暗语是什么？",
+    "de": "Was ist die Codesprache in Massagesalons?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Is Thailand friendly to nonbinary expats?",
+    "th": "ไทยเป็นมิตรกับคนต่างชาติที่มาอยู่และเป็นนอนไบนารีไหม",
+    "my": "ထိုင်းက ကျား၊ မ ဘယ်ဘက်မှ မဟုတ်တဲ့ နိုင်ငံခြားနေသူတွေကို ဖော်ရွေလား",
+    "zh": "泰国对非二元性别的外籍人士友好吗？",
+    "de": "Ist Thailand freundlich zu nichtbinären Expats?"
+   }
+  },
+  {
+   "c": "lantern",
+   "q": {
+    "en": "Are sky lanterns illegal in Chiang Mai?",
+    "th": "โคมลอยผิดกฎหมายในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်မှာ မီးပုံးပျံလွှတ်တာ တရားမဝင်ဘူးလား",
+    "zh": "清迈放孔明灯违法吗？",
+    "de": "Sind Himmelslaternen in Chiang Mai illegal?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Can I invest in a bar in Thailand on a retirement visa?",
+    "th": "ลงทุนในบาร์ในไทยด้วยวีซ่าเกษียณได้ไหม",
+    "my": "အငြိမ်းစားဗီဇာနဲ့ ထိုင်းမှာ ဘားတစ်ဆိုင်မှာ ရင်းနှီးမြှုပ်နှံလို့ရလား",
+    "zh": "持退休签证能在泰国投资一家酒吧吗？",
+    "de": "Kann ich mit einem Rentnervisum in eine Bar in Thailand investieren?"
+   }
+  },
+  {
+   "c": "proposal",
+   "q": {
+    "en": "If you open a bar in Thailand, do you need bar girls?",
+    "th": "ถ้าเปิดบาร์ในไทยต้องมีสาวบาร์ไหม",
+    "my": "ထိုင်းမှာ ဘားဖွင့်ရင် ဘားမိန်းကလေးတွေ ထားရမှာလား",
+    "zh": "在泰国开酒吧，是不是一定得有陪酒女？",
+    "de": "Wenn man in Thailand eine Bar eröffnet, braucht man dann Bargirls?"
+   }
+  },
+  {
+   "c": "romanise",
+   "q": {
+    "en": "Is \"Porn\" a Thai first name?",
+    "th": "\"Porn\" เป็นชื่อต้นของคนไทยหรือเปล่า",
+    "my": "“Porn” က ထိုင်းလူတွေရဲ့ ကိုယ်ပိုင်နာမည် ဟုတ်လား",
+    "zh": "“Porn” 是泰国人的名字吗？",
+    "de": "Ist \"Porn\" ein thailändischer Vorname?"
+   }
+  },
+  {
+   "c": "thai-lessons",
+   "q": {
+    "en": "Are there any normal Thai sentences that sound spicy in English?",
+    "th": "มีประโยคภาษาไทยธรรมดาๆ ที่ฟังเป็นภาษาอังกฤษแล้วดูลามกบ้างไหม",
+    "my": "ထိုင်းလို ပုံမှန်ပြောတဲ့ ဝါကျတွေထဲမှာ အင်္ဂလိပ်လို ကြားရင် လိင်ဆန်သလို ကြားရတာတွေ ရှိလား",
+    "zh": "有没有一些很正常的泰语句子，用英语听起来却很色？",
+    "de": "Gibt es ganz normale Sätze auf Thai, die auf Englisch schlüpfrig klingen?"
+   }
+  },
+  {
+   "c": "lab-test",
+   "q": {
+    "en": "How high-risk is brushing my teeth with tap water in Chiang Mai?",
+    "th": "แปรงฟันด้วยน้ำประปาในเชียงใหม่เสี่ยงมากแค่ไหน",
+    "my": "ချင်းမိုင်မှာ ရေပိုက်ရေနဲ့ သွားတိုက်တာ အန္တရာယ်ဘယ်လောက်များလဲ",
+    "zh": "在清迈用自来水刷牙，风险有多高？",
+    "de": "Wie riskant ist es, in Chiang Mai die Zähne mit Leitungswasser zu putzen?"
+   }
+  },
+  {
+   "c": "compare",
+   "q": {
+    "en": "Can I buy a door sex swing in Thailand?",
+    "th": "ซื้อชิงช้าเซ็กซ์แบบแขวนประตูในไทยได้ไหม",
+    "my": "ထိုင်းမှာ တံခါးမှာချိတ်သုံးတဲ့ လိင်ဆက်ဆံရေးဒန်း ဝယ်လို့ရလား",
+    "zh": "在泰国能买到挂在门上的性爱秋千吗？",
+    "de": "Kann ich in Thailand eine Sexschaukel für die Tür kaufen?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Do doctors prescribe anabolic cycles in Thailand?",
+    "th": "หมอในไทยสั่งจ่ายคอร์สสเตียรอยด์อนาโบลิกให้ไหม",
+    "my": "ထိုင်းမှာ ဆရာဝန်တွေက အနာဘိုလစ် ကြွက်သားတက်ဆေး တစ်ကာလစာ ညွှန်းပေးလား",
+    "zh": "泰国医生会开合成代谢类固醇的疗程吗？",
+    "de": "Verschreiben Ärzte in Thailand Anabolika-Kuren?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "What are some things legal in the US but illegal in Thailand?",
+    "th": "มีอะไรบ้างที่ถูกกฎหมายในอเมริกาแต่ผิดกฎหมายในไทย",
+    "my": "အမေရိကန်မှာ တရားဝင်ပေမဲ့ ထိုင်းမှာ တရားမဝင်တာတွေ ဘာတွေရှိလဲ",
+    "zh": "有哪些事在美国合法，在泰国却违法？",
+    "de": "Was ist in den USA legal, in Thailand aber illegal?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "Which sucks more: jail in the US or in Thailand?",
+    "th": "คุกอเมริกากับคุกไทย อันไหนห่วยกว่ากัน",
+    "my": "အမေရိကန်က ထောင်နဲ့ ထိုင်းက ထောင် ဘယ်ဟာက ပိုဆိုးလဲ",
+    "zh": "坐牢的话，美国和泰国哪个更糟？",
+    "de": "Wo ist der Knast beschissener: in den USA oder in Thailand?"
+   }
+  },
+  {
+   "c": "tour-day",
+   "q": {
+    "en": "Any private hot springs near Chiang Mai where we can go nude?",
+    "th": "ใกล้เชียงใหม่มีบ่อน้ำพุร้อนส่วนตัวที่แก้ผ้าแช่ได้บ้างไหม",
+    "my": "ချင်းမိုင်အနီးမှာ အဝတ်ချွတ်ပြီး ဝင်လို့ရတဲ့ ပုဂ္ဂလိက ရေပူစမ်း ရှိလား",
+    "zh": "清迈附近有没有可以裸泡的私人温泉？",
+    "de": "Gibt es in der Nähe von Chiang Mai private heisse Quellen, in denen wir nackt baden können?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Are poppers legal in Thailand?",
+    "th": "ป๊อปเปอร์ถูกกฎหมายในไทยไหม",
+    "my": "ထိုင်းမှာ poppers တရားဝင်လား",
+    "zh": "poppers 在泰国合法吗？",
+    "de": "Sind Poppers in Thailand legal?"
+   }
+  },
+  {
+   "c": "sak-yant",
+   "q": {
+    "en": "Is there sak yant imagery that would be auspicious for me?",
+    "th": "มีลายสักยันต์แบบไหนที่เป็นมงคลกับตัวเราไหม",
+    "my": "sak yant ပုံစံတွေထဲက ကိုယ့်အတွက် မင်္ဂလာရှိမယ့် ပုံတွေ ရှိလား",
+    "zh": "有没有对我来说比较吉利的 Sak Yant 刺符图案？",
+    "de": "Gibt es Sak-Yant-Motive, die mir Glück bringen würden?"
+   }
+  },
+  {
+   "c": "sak-yant",
+   "q": {
+    "en": "As an AI, do you think it's silly to believe in sak yant?",
+    "th": "ในฐานะที่เป็น AI คิดว่าการเชื่อเรื่องสักยันต์มันไร้สาระไหม",
+    "my": "AI တစ်ခုအနေနဲ့ sak yant ကို ယုံကြည်တာ ရူးကြောင်ကြောင်ဆန်တယ်လို့ ထင်လား",
+    "zh": "作为 AI，你觉得相信 Sak Yant 刺符很傻吗？",
+    "de": "Findest du als KI es albern, an Sak Yant zu glauben?"
+   }
+  },
+  {
+   "c": "patterns",
+   "q": {
+    "en": "Where in Chiang Mai can I find references for old sak yant designs?",
+    "th": "ในเชียงใหม่หาแหล่งอ้างอิงลายสักยันต์โบราณได้ที่ไหน",
+    "my": "ချင်းမိုင်မှာ sak yant ပုံစံဟောင်းတွေရဲ့ ကိုးကားစရာတွေ ဘယ်မှာ ရှာလို့ရလဲ",
+    "zh": "在清迈去哪儿能找到老式 Sak Yant 刺符图案的参考资料？",
+    "de": "Wo finde ich in Chiang Mai Referenzmaterial für alte Sak-Yant-Designs?"
+   }
+  },
+  {
+   "c": "pha-yant",
+   "q": {
+    "en": "I want a sak yant built on chaos magick, egregores and mathematical forecasting. Can it be done?",
+    "th": "อยากได้สักยันต์ที่สร้างบน chaos magick, egregore และการพยากรณ์ด้วยคณิตศาสตร์ ทำได้ไหม",
+    "my": "chaos magick၊ egregore နဲ့ သင်္ချာနည်းနဲ့ ခန့်မှန်းတာတွေကို အခြေခံတဲ့ sak yant တစ်ခု လိုချင်တယ်။ လုပ်လို့ရလား",
+    "zh": "我想要一个以混沌魔法、集体意识体和数学预测为基础的 Sak Yant 刺符。能做出来吗？",
+    "de": "Ich möchte ein Sak Yant, das auf Chaosmagie, Egregoren und mathematischer Vorhersage aufbaut. Geht das?"
+   }
+  },
+  {
+   "c": "lab-test",
+   "q": {
+    "en": "Are things labelled \"Thai silk\" in Chiang Mai likely to be 100% mulberry silk?",
+    "th": "ของที่ติดป้ายว่า \"ผ้าไหมไทย\" ในเชียงใหม่ มีโอกาสเป็นไหมหม่อนแท้ 100% ไหม",
+    "my": "ချင်းမိုင်မှာ “Thai silk” လို့ တံဆိပ်ကပ်ထားတာတွေက 100% မာဘယ်ရီပိုးထည် ဖြစ်နိုင်လား",
+    "zh": "清迈标着“泰丝”的东西，很可能是 100% 桑蚕丝吗？",
+    "de": "Sind Sachen, die in Chiang Mai als \"Thai-Seide\" etikettiert sind, wahrscheinlich 100% Maulbeerseide?"
+   }
+  },
+  {
+   "c": "pharma",
+   "q": {
+    "en": "Who sells the most dick pills in Thailand? Pharmacists?",
+    "th": "ใครขายยาให้จู๋แข็งได้เยอะที่สุดในไทย เภสัชกรเหรอ",
+    "my": "ထိုင်းမှာ လီးတောင်ဆေးကို ဘယ်သူတွေက အများဆုံးရောင်းလဲ။ ဆေးဆိုင်တွေလား",
+    "zh": "泰国谁卖的壮阳药最多？药剂师吗？",
+    "de": "Wer verkauft in Thailand die meisten Potenzpillen? Apotheker?"
+   }
+  },
+  {
+   "c": "pharma",
+   "q": {
+    "en": "Why is tadalafil a thousand times pricier in Thailand than in India?",
+    "th": "ทำไมทาดาลาฟิลในไทยแพงกว่าอินเดียตั้งพันเท่า",
+    "my": "ထိုင်းမှာ tadalafil က အိန္ဒိယကထက် ဘာလို့ တစ်ထောင်ဆ ပိုဈေးကြီးတာလဲ",
+    "zh": "为什么他达拉非在泰国比在印度贵一千倍？",
+    "de": "Warum ist Tadalafil in Thailand tausendmal teurer als in Indien?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "What do ordinary Thai guys do about ED?",
+    "th": "ผู้ชายไทยทั่วไปเขาจัดการกับ ED กันยังไง",
+    "my": "သာမန်ထိုင်းယောက်ျားတွေက လီးမတောင်တဲ့ ပြဿနာအတွက် ဘာလုပ်ကြလဲ",
+    "zh": "普通泰国男人得了勃起障碍都怎么办？",
+    "de": "Was machen ganz normale Thai-Typen gegen Erektionsprobleme?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Can I get testosterone in Chiang Mai?",
+    "th": "หาเทสโทสเตอโรนในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ testosterone ရနိုင်လား",
+    "zh": "在清迈能搞到睾酮吗？",
+    "de": "Kann ich in Chiang Mai Testosteron bekommen?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Are abortions available in Thailand, surgical or medical?",
+    "th": "ในไทยทำแท้งได้ไหม ทั้งแบบผ่าตัดและแบบใช้ยา",
+    "my": "ထိုင်းမှာ ကိုယ်ဝန်ဖျက်ချတာ၊ ခွဲစိတ်နည်းဖြစ်ဖြစ် ဆေးနည်းဖြစ်ဖြစ် လုပ်လို့ရလား",
+    "zh": "泰国能做人工流产吗？手术的和药物的都有吗？",
+    "de": "Sind Abtreibungen in Thailand möglich, chirurgisch oder medikamentös?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "How much is top surgery in Thailand?",
+    "th": "ผ่าตัดหน้าอกแบบ top surgery ในไทยราคาเท่าไหร่",
+    "my": "ထိုင်းမှာ top surgery ဘယ်လောက်ကျလဲ",
+    "zh": "在泰国做 top surgery 要多少钱？",
+    "de": "Was kostet eine Top Surgery in Thailand?"
+   }
+  },
+  {
+   "c": "peptides",
+   "q": {
+    "en": "Are peptides available in Thailand? Any peptide clinics in Chiang Mai?",
+    "th": "ในไทยมีเปปไทด์ขายไหม ในเชียงใหม่มีคลินิกเปปไทด์ไหม",
+    "my": "ထိုင်းမှာ peptide တွေ ရနိုင်လား။ ချင်းမိုင်မှာ peptide ဆေးခန်းတွေ ရှိလား",
+    "zh": "泰国买得到多肽吗？清迈有没有多肽诊所？",
+    "de": "Gibt es in Thailand Peptide? Gibt es in Chiang Mai Peptid-Kliniken?"
+   }
+  },
+  {
+   "c": "pharma",
+   "q": {
+    "en": "Can I purchase a vial of botulinum toxin in Chiang Mai?",
+    "th": "ซื้อโบท็อกซ์ทั้งขวดในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ botulinum toxin ဆေးပုလင်းတစ်ပုလင်း ဝယ်လို့ရလား",
+    "zh": "在清迈能买到一小瓶肉毒素吗？",
+    "de": "Kann ich in Chiang Mai ein Fläschchen Botulinumtoxin kaufen?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Is IV ketamine available in Thailand for PTSD?",
+    "th": "ในไทยมีเคตามีนแบบ IV รักษา PTSD ไหม",
+    "my": "ထိုင်းမှာ PTSD အတွက် သွေးကြောထဲထိုးတဲ့ ketamine ရနိုင်လား",
+    "zh": "泰国能做静脉注射氯胺酮来治疗创伤后应激障碍吗？",
+    "de": "Ist intravenöses Ketamin in Thailand bei PTBS erhältlich?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Do magic mushrooms grow in Thailand?",
+    "th": "ในไทยมีเห็ดเมาขึ้นไหม",
+    "my": "ထိုင်းမှာ မက်ဂျစ်မှို ပေါက်လား",
+    "zh": "泰国会长神奇蘑菇吗？",
+    "de": "Wachsen in Thailand Magic Mushrooms?"
+   }
+  },
+  {
+   "c": "lab-test",
+   "q": {
+    "en": "I'm a little disappointed in the quality of Thai weed dispensaries. Suggestions?",
+    "th": "ผิดหวังกับคุณภาพร้านกัญชาในไทยนิดหน่อย มีอะไรแนะนำไหม",
+    "my": "ထိုင်းက ဂန်ဂျာဆိုင်တွေရဲ့ အရည်အသွေးကို နည်းနည်း စိတ်ပျက်တယ်။ အကြံပေးစရာ ရှိလား",
+    "zh": "泰国大麻店的质量让我有点失望。有什么推荐吗？",
+    "de": "Ich bin von der Qualität der Gras-Dispensaries in Thailand ein bisschen enttäuscht. Tipps?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Is there a menopause clinic in Chiang Mai for rejuvenation and longevity?",
+    "th": "เชียงใหม่มีคลินิกวัยทองที่ทำเรื่องฟื้นฟูร่างกายและอายุยืนไหม",
+    "my": "ချင်းမိုင်မှာ ရာသီပြတ်ချိန်အတွက် လန်းဆန်းပြန်ငယ်ပြီး အသက်ရှည်အောင် ကုပေးတဲ့ ဆေးခန်း ရှိလား",
+    "zh": "清迈有没有做回春和长寿养护的更年期诊所？",
+    "de": "Gibt es in Chiang Mai eine Menopause-Klinik für Verjüngung und Langlebigkeit?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "What is it like getting medical care in Thailand as a fat person?",
+    "th": "คนอ้วนไปรักษาพยาบาลในไทยจะเป็นยังไง",
+    "my": "ဝတဲ့သူတစ်ယောက်အနေနဲ့ ထိုင်းမှာ ဆေးကုသမှုခံယူရတာ ဘယ်လိုလဲ",
+    "zh": "胖人在泰国看病是什么体验？",
+    "de": "Wie ist es, in Thailand als dicker Mensch medizinisch versorgt zu werden?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "How do I navigate a great Thai clinic where little English is spoken but they do thousands of facelifts?",
+    "th": "จะรับมือยังไงกับคลินิกไทยเก่งๆ ที่พูดอังกฤษได้น้อยแต่ทำศัลยกรรมดึงหน้าเป็นพันๆ ราย",
+    "my": "အင်္ဂလိပ်စကား နည်းနည်းပဲ ပြောပေမဲ့ facelift ထောင်ချီလုပ်ထားတဲ့ ထိုင်းဆေးခန်းကောင်းတစ်ခုမှာ ဘယ်လိုကိုင်တွယ်သွားရမလဲ",
+    "zh": "有家泰国诊所很棒，做过几千例拉皮手术，但几乎没人会说英语，我该怎么跟他们打交道？",
+    "de": "Wie komme ich in einer tollen thailändischen Klinik zurecht, in der kaum Englisch gesprochen wird, die aber Tausende Facelifts macht?"
+   }
+  },
+  {
+   "c": "med-papers",
+   "q": {
+    "en": "If my Thai doctor prescribes it, can I carry three months' worth into the US?",
+    "th": "ถ้าหมอไทยสั่งยาให้ พกยาสำหรับสามเดือนเข้าอเมริกาได้ไหม",
+    "my": "ထိုင်းဆရာဝန်က ညွှန်းထားရင် သုံးလစာကို အမေရိကန်ထဲ သယ်သွားလို့ရလား",
+    "zh": "如果泰国医生给我开了药，我能带三个月的量入境美国吗？",
+    "de": "Wenn mein thailändischer Arzt es verschreibt, darf ich einen Vorrat für drei Monate in die USA mitnehmen?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Can I do influencer work in Thailand without a work visa if I'm subtle about it?",
+    "th": "ทำงานอินฟลูเอนเซอร์ในไทยโดยไม่มีวีซ่าทำงานได้ไหม ถ้าทำแบบเนียนๆ",
+    "my": "မသိမသာလုပ်ရင် အလုပ်ဗီဇာမရှိဘဲ ထိုင်းမှာ influencer အလုပ် လုပ်လို့ရလား",
+    "zh": "如果我低调一点，没有工作签证也能在泰国做网红吗？",
+    "de": "Kann ich in Thailand ohne Arbeitsvisum als Influencer arbeiten, wenn ich dabei dezent vorgehe?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Can I start a SMART visa business whose branding openly criticizes US policy?",
+    "th": "เปิดธุรกิจด้วยวีซ่า SMART ที่แบรนด์วิจารณ์นโยบายอเมริกาอย่างเปิดเผยได้ไหม",
+    "my": "အမေရိကန်မူဝါဒကို ပွင့်ပွင့်လင်းလင်း ဝေဖန်တဲ့ အမှတ်တံဆိပ်နဲ့ SMART ဗီဇာ စီးပွားရေးလုပ်ငန်းတစ်ခု စတင်လို့ရလား",
+    "zh": "我能用 SMART 签证开一家品牌公开批评美国政策的公司吗？",
+    "de": "Kann ich mit einem SMART-Visum ein Unternehmen gründen, dessen Branding offen die US-Politik kritisiert?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Can I become a Thai citizen if I try really hard?",
+    "th": "ถ้าพยายามสุดๆ จะได้สัญชาติไทยไหม",
+    "my": "အတော်ကြိုးစားရင် ထိုင်းနိုင်ငံသား ဖြစ်လို့ရလား",
+    "zh": "只要我够努力，能成为泰国公民吗？",
+    "de": "Kann ich thailändischer Staatsbürger werden, wenn ich mir richtig Mühe gebe?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Is there a visa to meditate in Thailand for six months?",
+    "th": "มีวีซ่าให้มานั่งสมาธิในไทยหกเดือนไหม",
+    "my": "ထိုင်းမှာ ခြောက်လ တရားထိုင်ဖို့ ဗီဇာ ရှိလား",
+    "zh": "有没有能在泰国禅修六个月的签证？",
+    "de": "Gibt es ein Visum, um sechs Monate lang in Thailand zu meditieren?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Same-day visa run at the Friendship Bridge is normal, right?",
+    "th": "วีซ่ารันไปกลับวันเดียวที่สะพานมิตรภาพเป็นเรื่องปกติใช่ไหม",
+    "my": "ချစ်ကြည်ရေးတံတားမှာ တစ်ရက်တည်း ဗီဇာအတွက် နယ်စပ်ကူးပြီး ပြန်လာတာ ပုံမှန်ပဲ မဟုတ်လား",
+    "zh": "在友谊大桥当天往返跑签证是常规操作吧？",
+    "de": "Ein Visa-Run an der Freundschaftsbrücke am selben Tag ist normal, oder?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Is \"freelancer\" a bad word in Thailand?",
+    "th": "\"ฟรีแลนซ์\" เป็นคำไม่ดีในไทยหรือเปล่า",
+    "my": "ထိုင်းမှာ “freelancer” ဆိုတာ ပြောလို့မကောင်းတဲ့ စကားလုံးလား",
+    "zh": "在泰国，“自由职业者”是个不好的词吗？",
+    "de": "Ist \"Freelancer\" in Thailand ein Unwort?"
+   }
+  },
+  {
+   "c": "visas",
+   "q": {
+    "en": "Can Americans own certain kinds of business outright in Thailand?",
+    "th": "ชาวอเมริกันเป็นเจ้าของธุรกิจบางประเภทในไทยได้เองเต็มตัวไหม",
+    "my": "အမေရိကန်တွေက ထိုင်းမှာ လုပ်ငန်းအချို့ကို တစ်ဦးတည်း အပြည့်အဝ ပိုင်လို့ရလား",
+    "zh": "美国人在泰国能全资拥有某些类型的企业吗？",
+    "de": "Dürfen Amerikaner in Thailand bestimmte Arten von Firmen vollständig besitzen?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Is there any good reason to claim asylum in Canada rather than quietly retire to Chiang Mai?",
+    "th": "มีเหตุผลดีๆ ไหมที่ต้องขอลี้ภัยในแคนาดา แทนที่จะเกษียณเงียบๆ ที่เชียงใหม่",
+    "my": "ချင်းမိုင်မှာ တိတ်တိတ်လေး အငြိမ်းစားယူမနေဘဲ ကနေဒါမှာ ခိုလှုံခွင့်တောင်းဖို့ ကောင်းတဲ့ အကြောင်းပြချက် တစ်ခုခု ရှိလား",
+    "zh": "有什么正当理由让我去加拿大申请庇护，而不是安安静静去清迈养老？",
+    "de": "Gibt es einen guten Grund, in Kanada Asyl zu beantragen, statt sich in aller Stille in Chiang Mai zur Ruhe zu setzen?"
+   }
+  },
+  {
+   "c": "thai-plan",
+   "q": {
+    "en": "Do I have Thai tax to pay if my only income is US disability payments?",
+    "th": "ต้องเสียภาษีไทยไหม ถ้ารายได้อย่างเดียวคือเงินช่วยเหลือผู้พิการจากอเมริกา",
+    "my": "ကိုယ့်ဝင်ငွေက အမေရိကန်က မသန်စွမ်းသူအကူအညီငွေ တစ်ခုတည်းဆိုရင် ထိုင်းအခွန် ပေးရလား",
+    "zh": "如果我唯一的收入是美国的伤残补助，还要交泰国的税吗？",
+    "de": "Muss ich in Thailand Steuern zahlen, wenn mein einziges Einkommen aus US-Invaliditätszahlungen besteht?"
+   }
+  },
+  {
+   "c": "thai-plan",
+   "q": {
+    "en": "Do living wills matter in Chiang Mai?",
+    "th": "พินัยกรรมชีวิตมีผลในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်မှာ living will လို့ခေါ်တဲ့ ဆေးကုသမှုဆိုင်ရာ ကြိုတင်ဆန္ဒစာတွေက အရေးပါလား",
+    "zh": "生前预嘱在清迈有用吗？",
+    "de": "Spielen Patientenverfügungen in Chiang Mai eine Rolle?"
+   }
+  },
+  {
+   "c": "legalise",
+   "q": {
+    "en": "Can someone serve me court papers in Thailand as easily as back home in the US?",
+    "th": "จะมีคนส่งหมายศาลให้เราในไทยได้ง่ายเหมือนที่อเมริกาไหม",
+    "my": "အမေရိကန်မှာလိုပဲ ထိုင်းမှာလည်း တစ်ယောက်ယောက်က ကိုယ့်ကို ရုံးစာတွေ အလွယ်တကူ ပေးအပ်လို့ရလား",
+    "zh": "在泰国，别人能像在美国老家一样轻松地向我送达法庭文件吗？",
+    "de": "Kann mir in Thailand jemand Gerichtsunterlagen so einfach zustellen wie zu Hause in den USA?"
+   }
+  },
+  {
+   "c": "legalise",
+   "q": {
+    "en": "How do I do a proof of service in a US court case from Chiang Mai?",
+    "th": "จะทำ proof of service ในคดีศาลอเมริกาจากเชียงใหม่ยังไง",
+    "my": "ချင်းမိုင်ကနေ အမေရိကန်ရုံးအမှုတစ်ခုအတွက် proof of service ကို ဘယ်လိုလုပ်ရမလဲ",
+    "zh": "我人在清迈，怎么在美国的法庭案子里提交送达证明？",
+    "de": "Wie mache ich von Chiang Mai aus einen Zustellungsnachweis in einem US-Gerichtsverfahren?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Can I appear at a US hearing by Zoom from Chiang Mai?",
+    "th": "เข้าร่วมการไต่สวนของศาลอเมริกาผ่าน Zoom จากเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်ကနေ Zoom နဲ့ အမေရိကန် ကြားနာပွဲတစ်ခုမှာ တက်ရောက်လို့ရလား",
+    "zh": "我能在清迈通过 Zoom 出席美国的听证会吗？",
+    "de": "Kann ich von Chiang Mai aus per Zoom an einer Anhörung in den USA teilnehmen?"
+   }
+  },
+  {
+   "c": "assistant",
+   "q": {
+    "en": "Do I still have time to file? It's 09:35 in Chiang Mai.",
+    "th": "ยังทันยื่นอยู่ไหม ตอนนี้ที่เชียงใหม่ 09:35",
+    "my": "တင်သွင်းဖို့ အချိန်ရှိသေးလား။ ချင်းမိုင်မှာ အခု 09:35 ဖြစ်နေပြီ",
+    "zh": "我还来得及递交吗？清迈现在是 09:35。",
+    "de": "Habe ich noch Zeit, es einzureichen? In Chiang Mai ist es 09:35."
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Can a US credit card company sue me while I live in Thailand?",
+    "th": "บริษัทบัตรเครดิตอเมริกาฟ้องเราได้ไหมตอนที่อยู่ไทย",
+    "my": "ထိုင်းမှာ နေနေတုန်း အမေရိကန်ခရက်ဒစ်ကတ်ကုမ္ပဏီတစ်ခုက တရားစွဲလို့ရလား",
+    "zh": "我住在泰国，美国的信用卡公司还能告我吗？",
+    "de": "Kann mich eine US-Kreditkartenfirma verklagen, während ich in Thailand lebe?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Can I legally start a poker school in Thailand?",
+    "th": "เปิดโรงเรียนสอนโป๊กเกอร์ในไทยแบบถูกกฎหมายได้ไหม",
+    "my": "ထိုင်းမှာ ပိုကာသင်တန်းကျောင်း တရားဝင်ဖွင့်လို့ရလား",
+    "zh": "我能在泰国合法开一所扑克学校吗？",
+    "de": "Darf ich in Thailand legal eine Pokerschule eröffnen?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "Where can I play live poker for money that's easy to get to from Chiang Mai?",
+    "th": "เล่นโป๊กเกอร์สดเอาเงินจริงที่ไหนได้บ้างที่เดินทางจากเชียงใหม่ไปง่าย",
+    "my": "ချင်းမိုင်ကနေ သွားရလွယ်ပြီး ပိုက်ဆံနဲ့ ပိုကာ တိုက်ရိုက်ကစားလို့ရတဲ့ နေရာ ဘယ်မှာလဲ",
+    "zh": "从清迈出发方便到达、能玩真钱现场扑克的地方在哪儿？",
+    "de": "Wo kann ich live um Geld Poker spielen, und zwar an einem Ort, der von Chiang Mai aus gut erreichbar ist?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "What are Thai gun laws like?",
+    "th": "กฎหมายอาวุธปืนของไทยเป็นยังไง",
+    "my": "ထိုင်းရဲ့ သေနတ်ဥပဒေတွေက ဘယ်လိုလဲ",
+    "zh": "泰国的枪支法律是什么样的？",
+    "de": "Wie sind die Waffengesetze in Thailand?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Is Meshtastic legal in Chiang Mai?",
+    "th": "Meshtastic ถูกกฎหมายในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်မှာ Meshtastic သုံးတာ တရားဝင်လား",
+    "zh": "在清迈用 Meshtastic 合法吗？",
+    "de": "Ist Meshtastic in Chiang Mai legal?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Are VPNs allowed in Thailand? Is internet use watched?",
+    "th": "ใช้ VPN ในไทยได้ไหม การใช้อินเทอร์เน็ตถูกจับตาดูอยู่ไหม",
+    "my": "ထိုင်းမှာ VPN သုံးခွင့်ရှိလား။ အင်တာနက်သုံးတာကို စောင့်ကြည့်လား",
+    "zh": "泰国允许用 VPN 吗？上网会被监控吗？",
+    "de": "Sind VPNs in Thailand erlaubt? Wird die Internetnutzung überwacht?"
+   }
+  },
+  {
+   "c": "social",
+   "q": {
+    "en": "Could I pay a Thai person to troll for me?",
+    "th": "จ้างคนไทยโทรลแทนได้ไหม",
+    "my": "ကိုယ့်အစား အွန်လိုင်းမှာ လူတွေကို ကလိဆော်ပေးဖို့ ထိုင်းလူတစ်ယောက်ကို ပိုက်ဆံပေးငှားလို့ရလား",
+    "zh": "我能花钱请个泰国人替我当网络喷子吗？",
+    "de": "Könnte ich jemanden aus Thailand dafür bezahlen, für mich zu trollen?"
+   }
+  },
+  {
+   "c": "payouts",
+   "q": {
+    "en": "Do highly qualified Thai contractors ever prefer to be paid off the books?",
+    "th": "ผู้รับเหมาไทยที่ฝีมือดีมากๆ มีบ้างไหมที่ชอบให้จ่ายเงินนอกระบบ",
+    "my": "အရည်အချင်းမြင့်တဲ့ ထိုင်းကန်ထရိုက်တာတွေက စာရင်းမဝင်ဘဲ ငွေပေးတာကို ပိုကြိုက်တာ ရှိလား",
+    "zh": "水平很高的泰国承包商，是不是有时更愿意不走账、私下结算？",
+    "de": "Ziehen hochqualifizierte thailändische Auftragnehmer es manchmal vor, schwarz bezahlt zu werden?"
+   }
+  },
+  {
+   "c": "staff-papers",
+   "q": {
+    "en": "How do I find ultra-reliable, sincere local staff?",
+    "th": "จะหาพนักงานท้องถิ่นที่ไว้ใจได้สุดๆ และจริงใจได้ยังไง",
+    "my": "အလွန်ယုံကြည်ရပြီး စေတနာကောင်းတဲ့ ဒေသခံ ဝန်ထမ်းတွေ ဘယ်လိုရှာရမလဲ",
+    "zh": "怎么才能找到超级靠谱、真诚的本地员工？",
+    "de": "Wie finde ich ultrazuverlässiges, aufrichtiges Personal vor Ort?"
+   }
+  },
+  {
+   "c": "care-visits",
+   "q": {
+    "en": "Can I hire a Thai nurse to manage our meds and supplements, about two hours a week?",
+    "th": "จ้างพยาบาลไทยมาจัดการยาและอาหารเสริมของเรา สัปดาห์ละประมาณสองชั่วโมงได้ไหม",
+    "my": "ကိုယ်တို့ရဲ့ ဆေးနဲ့ ဖြည့်စွက်စာတွေကို စီမံပေးဖို့ တစ်ပတ်ကို နှစ်နာရီလောက် ထိုင်းသူနာပြုတစ်ယောက် ငှားလို့ရလား",
+    "zh": "能不能雇个泰国护士帮我们管理药物和保健品，每周大概两个小时？",
+    "de": "Kann ich eine thailändische Pflegekraft anstellen, die sich um unsere Medikamente und Nahrungsergänzungsmittel kümmert, etwa zwei Stunden pro Woche?"
+   }
+  },
+  {
+   "c": "club-desk",
+   "q": {
+    "en": "What clubs do I need to join in Chiang Mai to broaden my influence?",
+    "th": "ต้องเข้าสโมสรอะไรบ้างในเชียงใหม่เพื่อขยายอิทธิพล",
+    "my": "ကိုယ့်သြဇာ ကျယ်ပြန့်လာအောင် ချင်းမိုင်မှာ ဘယ်ကလပ်တွေမှာ ဝင်သင့်လဲ",
+    "zh": "在清迈我该加入哪些俱乐部来扩大影响力？",
+    "de": "Welchen Clubs muss ich in Chiang Mai beitreten, um meinen Einfluss auszuweiten?"
+   }
+  },
+  {
+   "c": "leads",
+   "q": {
+    "en": "Where do you find the real power expats in Chiang Mai?",
+    "th": "ไปเจอคนต่างชาติที่มีอำนาจตัวจริงในเชียงใหม่ได้ที่ไหน",
+    "my": "ချင်းမိုင်မှာ တကယ်သြဇာရှိတဲ့ နိုင်ငံခြားနေသူတွေကို ဘယ်မှာ တွေ့လဲ",
+    "zh": "在清迈去哪儿能找到真正有实权的外国人？",
+    "de": "Wo findet man in Chiang Mai die wirklich mächtigen Expats?"
+   }
+  },
+  {
+   "c": "tap-card",
+   "q": {
+    "en": "Give me a two-week plan to take my Chiang Mai wasta to the next level.",
+    "th": "ช่วยวางแผนสองสัปดาห์ เพื่อยกระดับเส้นสายของเราในเชียงใหม่ไปอีกขั้นหน่อย",
+    "my": "ကိုယ့်ချင်းမိုင် wasta ကို နောက်အဆင့်တင်ဖို့ နှစ်ပတ်စီမံကိန်းတစ်ခု ပေးပါ",
+    "zh": "给我一个两周计划，把我在清迈的关系提升到下一个层次。",
+    "de": "Gib mir einen Plan für zwei Wochen, mit dem ich mein Wasta in Chiang Mai aufs nächste Level bringe."
+   }
+  },
+  {
+   "c": "club-desk",
+   "q": {
+    "en": "Are there Freemasons in Chiang Mai?",
+    "th": "เชียงใหม่มีฟรีเมสันไหม",
+    "my": "ချင်းမိုင်မှာ ဖရီးမေဆင်တွေ ရှိလား",
+    "zh": "清迈有共济会吗？",
+    "de": "Gibt es in Chiang Mai Freimaurer?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Are there Quakers in Thailand? Any meeting in Chiang Mai?",
+    "th": "ในไทยมีเควกเกอร์ไหม ที่เชียงใหม่มี Meeting บ้างหรือเปล่า",
+    "my": "ထိုင်းမှာ ကွေကာတွေ ရှိလား။ ချင်းမိုင်မှာ အစည်းအဝေး တစ်ခုခု ရှိလား",
+    "zh": "泰国有贵格会吗？清迈有聚会吗？",
+    "de": "Gibt es in Thailand Quäker? Gibt es in Chiang Mai ein Treffen?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "How do I meet Thai people with similar interests and independence, for friendship?",
+    "th": "จะรู้จักคนไทยที่สนใจอะไรคล้ายๆ กันและมีความเป็นอิสระ เพื่อเป็นเพื่อนกันได้ยังไง",
+    "my": "စိတ်ဝင်စားတာတူပြီး လွတ်လပ်တဲ့ ထိုင်းလူတွေနဲ့ သူငယ်ချင်းဖြစ်ဖို့ ဘယ်လိုတွေ့ရမလဲ",
+    "zh": "怎么结识兴趣相投、独立自主的泰国人做朋友？",
+    "de": "Wie lerne ich Thais mit ähnlichen Interessen und ähnlicher Unabhängigkeit kennen, um Freundschaften zu schliessen?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Are there dating apps for meeting Thai lesbians, not transactional?",
+    "th": "มีแอปหาคู่สำหรับเจอเลสเบี้ยนไทยไหม แบบที่ไม่ใช่ซื้อขายกัน",
+    "my": "ငွေပေးရတဲ့ ဆက်ဆံရေးမဟုတ်ဘဲ ထိုင်း လက်ျစ်ဘီယံတွေနဲ့ တွေ့ဖို့ ဒိတ်တင်းအက်ပ်တွေ ရှိလား",
+    "zh": "有没有能认识泰国女同、而且不涉及交易的交友软件？",
+    "de": "Gibt es Dating-Apps, über die man thailändische Lesben kennenlernt, ohne dass es transaktional ist?"
+   }
+  },
+  {
+   "c": "errand",
+   "q": {
+    "en": "I know they sell size 42 stripper heels in Chiang Mai. I need some for pole class. Where?",
+    "th": "รู้ว่าเชียงใหม่มีขายส้นสูงสไตล์สตริปเปอร์ไซส์ 42 อยากได้ไว้ใส่เรียนคลาสโพลแดนซ์ ที่ไหนขาย",
+    "my": "ချင်းမိုင်မှာ ဖိနပ်အရွယ်အစား 42 stripper ဒေါက်မြင့်ဖိနပ် ရောင်းတာ သိတယ်။ pole သင်တန်းအတွက် လိုတယ်။ ဘယ်မှာရလဲ",
+    "zh": "我知道清迈有卖 42 码的脱衣舞高跟鞋，我上钢管舞课要穿，去哪儿买？",
+    "de": "Ich weiss, dass sie in Chiang Mai Stripper-High-Heels in Grösse 42 verkaufen. Ich brauche welche für den Pole-Dance-Kurs. Wo?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "Can I wear Muay Thai shorts to my Thai pole class?",
+    "th": "ใส่กางเกงมวยไทยไปเรียนคลาสโพลแดนซ์ที่ไทยได้ไหม",
+    "my": "ထိုင်းမှာ တက်တဲ့ pole သင်တန်းကို ထိုင်းလက်ဝှေ့ဘောင်းဘီတို ဝတ်သွားလို့ရလား",
+    "zh": "我能穿泰拳短裤去泰国的钢管舞课吗？",
+    "de": "Kann ich zu meinem thailändischen Pole-Kurs Muay-Thai-Shorts anziehen?"
+   }
+  },
+  {
+   "c": "event-plan",
+   "q": {
+    "en": "Is it easy to find sexy neon clothes and body paint in northern Thailand?",
+    "th": "หาชุดนีออนเซ็กซี่ๆ กับบอดี้เพนท์ในภาคเหนือของไทยง่ายไหม",
+    "my": "မြောက်ပိုင်းထိုင်းမှာ ဆက်စီဆန်တဲ့ နီယွန်အဝတ်အစားနဲ့ ကိုယ်ပေါ်ရေးဆေးတွေ ရှာရလွယ်လား",
+    "zh": "在泰国北部容易买到性感的荧光服装和人体彩绘颜料吗？",
+    "de": "Ist es in Nordthailand leicht, sexy Neon-Klamotten und Bodypaint zu finden?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "Is there one place in Chiang Mai to do yoga, Pilates and pole?",
+    "th": "ในเชียงใหม่มีที่เดียวที่เล่นโยคะ พิลาทิส และโพลแดนซ์ได้ครบไหม",
+    "my": "ချင်းမိုင်မှာ ယောဂ၊ ပီလာတီးနဲ့ pole ကို တစ်နေရာတည်းမှာ လုပ်လို့ရတဲ့ နေရာ ရှိလား",
+    "zh": "清迈有没有一个地方能同时练瑜伽、普拉提和钢管舞？",
+    "de": "Gibt es in Chiang Mai einen einzigen Ort für Yoga, Pilates und Pole?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "What percent of Thai people could kick your ass with Muay Thai?",
+    "th": "คนไทยกี่เปอร์เซ็นต์ที่ใช้มวยไทยเตะก้นเราได้",
+    "my": "ထိုင်းလူ ဘယ်နှစ်ရာခိုင်နှုန်းက ထိုင်းလက်ဝှေ့နဲ့ မင်းကို ရိုက်ချနိုင်သလဲ",
+    "zh": "有百分之几的泰国人能用泰拳把你揍得满地找牙？",
+    "de": "Wie viel Prozent der Thais könnten dir mit Muay Thai in den Arsch treten?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "I'd like to watch excellent Muay Thai but I struggle with crowds. Thoughts?",
+    "th": "อยากดูมวยไทยระดับดีเยี่ยม แต่ทนที่คนเยอะๆ ไม่ค่อยไหว มีไอเดียไหม",
+    "my": "ထိုင်းလက်ဝှေ့ကောင်းကောင်း ကြည့်ချင်ပေမဲ့ လူစည်တဲ့နေရာမှာ အဆင်မပြေဘူး။ ဘယ်လိုအကြံပေးမလဲ",
+    "zh": "我想看高水平的泰拳比赛，但我受不了人多。有什么建议？",
+    "de": "Ich würde gern erstklassiges Muay Thai sehen, aber mit Menschenmengen komme ich schlecht klar. Was meinst du?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "Would it be very genteel to learn vegetable carving? Would it raise my social capital?",
+    "th": "การเรียนแกะสลักผักดูผู้ดีมากไหม แล้วจะเพิ่มทุนทางสังคมให้เราไหม",
+    "my": "ဟင်းသီးဟင်းရွက်ပန်းပုထုတာ သင်ယူရင် ယဉ်ကျေးသိမ်မွေ့တယ်လို့ အရမ်းထင်ကြမလား။ လူမှုအရင်းအနှီး တိုးလာမလား",
+    "zh": "学蔬菜雕刻会显得特别有教养吗？能提高我的社交资本吗？",
+    "de": "Wäre es sehr vornehm, Gemüseschnitzen zu lernen? Würde das mein soziales Kapital steigern?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "Can I learn German wheel in Chiang Mai?",
+    "th": "เรียน German wheel ในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ German wheel သင်လို့ရလား",
+    "zh": "在清迈能学德国轮吗？",
+    "de": "Kann ich in Chiang Mai Rhönrad lernen?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "Is there a polo club or horse racing in Chiang Mai?",
+    "th": "เชียงใหม่มีสโมสรโปโลหรือการแข่งม้าไหม",
+    "my": "ချင်းမိုင်မှာ ပိုလိုကလပ် ဒါမှမဟုတ် မြင်းပြိုင်ပွဲ ရှိလား",
+    "zh": "清迈有马球俱乐部或赛马吗？",
+    "de": "Gibt es in Chiang Mai einen Polo-Club oder Pferderennen?"
+   }
+  },
+  {
+   "c": "cartoons",
+   "q": {
+    "en": "What is Thai humor like?",
+    "th": "อารมณ์ขันแบบคนไทยเป็นยังไง",
+    "my": "ထိုင်းလူတွေရဲ့ ဟာသက ဘယ်လိုမျိုးလဲ",
+    "zh": "泰国人的幽默是什么样的？",
+    "de": "Wie ist thailändischer Humor so?"
+   }
+  },
+  {
+   "c": "copy",
+   "q": {
+    "en": "What are ten sayings that are Thai af?",
+    "th": "สิบคำพูดที่ไทยโคตรๆ มีอะไรบ้าง",
+    "my": "တအားကို ထိုင်းဆန်တဲ့ စကားပုံ ဆယ်ခုက ဘာတွေလဲ",
+    "zh": "有哪十句话最有泰国味儿？",
+    "de": "Was sind zehn Sprüche, die verdammt thailändisch sind?"
+   }
+  },
+  {
+   "c": "signs",
+   "q": {
+    "en": "How would you say \"American healthcare is bullshit\" in Thai?",
+    "th": "จะพูดประโยค \"American healthcare is bullshit\" เป็นภาษาไทยว่ายังไง",
+    "my": "“American healthcare is bullshit” ကို ထိုင်းလို ဘယ်လိုပြောမလဲ",
+    "zh": "用泰语怎么说 “American healthcare is bullshit”？",
+    "de": "Wie sagt man \"American healthcare is bullshit\" auf Thai?"
+   }
+  },
+  {
+   "c": "romanise",
+   "q": {
+    "en": "How do you write \"fucking magnets, how do they work\" in Thai script?",
+    "th": "\"fucking magnets, how do they work\" เขียนเป็นตัวอักษรไทยยังไง",
+    "my": "“fucking magnets, how do they work” ကို ထိုင်းစာလုံးနဲ့ ဘယ်လိုရေးမလဲ",
+    "zh": "“fucking magnets, how do they work” 用泰文怎么写？",
+    "de": "Wie schreibt man \"fucking magnets, how do they work\" in Thai-Schrift?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "Is there a Thai way to say \"blink twice if you need help\"?",
+    "th": "มีวิธีพูด \"blink twice if you need help\" แบบไทยๆ ไหม",
+    "my": "“blink twice if you need help” ကို ထိုင်းလို ပြောတဲ့နည်း ရှိလား",
+    "zh": "泰语里有没有 “blink twice if you need help” 的说法？",
+    "de": "Gibt es auf Thai eine Möglichkeit, \"blink twice if you need help\" zu sagen?"
+   }
+  },
+  {
+   "c": "dispute",
+   "q": {
+    "en": "What is \"Ploy's sick buffalo\" in Thai expat culture? Is it offensive?",
+    "th": "ในวัฒนธรรมฝรั่งที่มาอยู่ไทย \"Ploy's sick buffalo\" คืออะไร มันเป็นคำที่ล่วงเกินไหม",
+    "my": "ထိုင်းမှာ နေတဲ့ နိုင်ငံခြားသားတွေကြားမှာ “Ploy's sick buffalo” ဆိုတာ ဘာလဲ။ ရိုင်းတာလား",
+    "zh": "在泰国的外国人圈子里，“Ploy's sick buffalo” 是什么意思？算冒犯人吗？",
+    "de": "Was ist \"Ploy's sick buffalo\" in der Thai-Expat-Kultur? Ist das beleidigend?"
+   }
+  },
+  {
+   "c": "thai-lessons",
+   "q": {
+    "en": "Is there queer-coded speech in Thailand?",
+    "th": "ในไทยมีสำนวนหรือวิธีพูดที่เป็นรหัสของชาวเควียร์ไหม",
+    "my": "ထိုင်းမှာ queer ဆန်တယ်လို့ သိသာတဲ့ စကားပြောပုံမျိုး ရှိလား",
+    "zh": "泰国有没有酷儿圈特有的说话方式？",
+    "de": "Gibt es in Thailand eine queer codierte Ausdrucksweise?"
+   }
+  },
+  {
+   "c": "lang-pages",
+   "q": {
+    "en": "Can I use a gender-neutral particle in Thai?",
+    "th": "ใช้คำลงท้ายที่ไม่ระบุเพศในภาษาไทยได้ไหม",
+    "my": "ထိုင်းလို ကျား၊ မ မခွဲတဲ့ particle သုံးလို့ရလား",
+    "zh": "在泰语里我能用不分性别的语气词吗？",
+    "de": "Kann ich auf Thai eine geschlechtsneutrale Partikel verwenden?"
+   }
+  },
+  {
+   "c": "translate",
+   "q": {
+    "en": "Does Thai have one word for foreigners?",
+    "th": "ภาษาไทยมีคำเดียวที่ใช้เรียกชาวต่างชาติไหม",
+    "my": "ထိုင်းစကားမှာ နိုင်ငံခြားသားကို ခေါ်တဲ့ စကားလုံး တစ်လုံးတည်း ရှိလား",
+    "zh": "泰语里有没有一个统称外国人的词？",
+    "de": "Gibt es auf Thai ein einziges Wort für Ausländer?"
+   }
+  },
+  {
+   "c": "voice",
+   "q": {
+    "en": "How would Thai people write the 7-Eleven door chime?",
+    "th": "คนไทยจะเขียนเสียงกริ่งตอนเปิดประตูเซเว่นว่ายังไง",
+    "my": "ထိုင်းလူတွေက 7-Eleven တံခါးခေါင်းလောင်းသံကို ဘယ်လိုရေးမလဲ",
+    "zh": "泰国人会怎么写 7-Eleven 的开门提示音？",
+    "de": "Wie würden Thais den Türgong von 7-Eleven aufschreiben?"
+   }
+  },
+  {
+   "c": "lang-shan",
+   "q": {
+    "en": "What languages are somewhat intelligible if you know Thai?",
+    "th": "ถ้ารู้ภาษาไทย ภาษาอะไรที่พอฟังรู้เรื่องบ้าง",
+    "my": "ထိုင်းစကားတတ်ရင် တစ်ဝက်တစ်ပျက် နားလည်နိုင်တဲ့ ဘာသာစကားတွေ ဘာတွေရှိလဲ",
+    "zh": "懂泰语的话，哪些语言能听懂个大概？",
+    "de": "Welche Sprachen kann man halbwegs verstehen, wenn man Thai kann?"
+   }
+  },
+  {
+   "c": "romanise",
+   "q": {
+    "en": "In Thailand, do they say \"Hello Kritty\"?",
+    "th": "ในไทยเขาพูดว่า \"Hello Kritty\" กันไหม",
+    "my": "ထိုင်းမှာ “Hello Kritty” လို့ ပြောကြလား",
+    "zh": "在泰国，大家会说 “Hello Kritty” 吗？",
+    "de": "Sagt man in Thailand \"Hello Kritty\"?"
+   }
+  },
+  {
+   "c": "romanise",
+   "q": {
+    "en": "Is Trump 2 Square in Chiang Mai named after Donald Trump?",
+    "th": "Trump 2 Square ในเชียงใหม่ตั้งชื่อตามโดนัลด์ ทรัมป์หรือเปล่า",
+    "my": "ချင်းမိုင်က Trump 2 Square ကို ဒေါ်နယ်ထရမ့်ရဲ့ နာမည်ကို ယူပြီး ပေးထားတာလား",
+    "zh": "清迈的 Trump 2 Square 是以唐纳德·特朗普命名的吗？",
+    "de": "Ist der Trump 2 Square in Chiang Mai nach Donald Trump benannt?"
+   }
+  },
+  {
+   "c": "almanac-widget",
+   "q": {
+    "en": "How many \"years in the future\" is Thailand?",
+    "th": "ไทยอยู่ใน \"อนาคต\" ไปกี่ปี",
+    "my": "ထိုင်းက “နှစ်ဘယ်နှစ်နှစ် အနာဂတ်ကို” ရောက်နေတာလဲ",
+    "zh": "泰国比现在“超前”多少年？",
+    "de": "Wie viele \"Jahre in der Zukunft\" ist Thailand?"
+   }
+  },
+  {
+   "c": "date-pick",
+   "q": {
+    "en": "What is auspicious and inauspicious for New Year in Chiang Mai?",
+    "th": "ช่วงปีใหม่ที่เชียงใหม่ มีอะไรที่เป็นมงคลและไม่เป็นมงคลบ้าง",
+    "my": "ချင်းမိုင်မှာ နှစ်သစ်ကူးအတွက် မင်္ဂလာရှိတာနဲ့ ကံမကောင်းတာတွေက ဘာတွေလဲ",
+    "zh": "清迈过新年，哪些事吉利，哪些不吉利？",
+    "de": "Was bringt an Neujahr in Chiang Mai Glück und was Unglück?"
+   }
+  },
+  {
+   "c": "reading",
+   "q": {
+    "en": "What are the auspicious colours of the days?",
+    "th": "สีมงคลประจำวันมีอะไรบ้าง",
+    "my": "နေ့တိုင်းအတွက် မင်္ဂလာရှိတဲ့ အရောင်တွေက ဘာတွေလဲ",
+    "zh": "每天对应的吉祥颜色是什么？",
+    "de": "Was sind die Glücksfarben der Tage?"
+   }
+  },
+  {
+   "c": "reading",
+   "q": {
+    "en": "Is 48 an auspicious age to be in Thailand?",
+    "th": "อายุ 48 เป็นอายุมงคลสำหรับการอยู่ที่ไทยไหม",
+    "my": "ထိုင်းမှာ အသက် 48 က မင်္ဂလာရှိတဲ့ အသက်လား",
+    "zh": "在泰国，48 岁是个吉利的年龄吗？",
+    "de": "Ist 48 ein glückbringendes Alter, um in Thailand zu sein?"
+   }
+  },
+  {
+   "c": "bazi",
+   "q": {
+    "en": "Is I Ching more popular with locals or farang in Chiang Mai?",
+    "th": "ในเชียงใหม่ อี้จิงเป็นที่นิยมกับคนท้องถิ่นหรือฝรั่งมากกว่ากัน",
+    "my": "ချင်းမိုင်မှာ I Ching ကို ဒေသခံတွေက ပိုကြိုက်လား၊ နိုင်ငံခြားသားတွေက ပိုကြိုက်လား",
+    "zh": "在清迈，易经是本地人更爱用还是洋人更爱用？",
+    "de": "Ist das I Ging in Chiang Mai bei Einheimischen oder bei Farang beliebter?"
+   }
+  },
+  {
+   "c": "house-blessing",
+   "q": {
+    "en": "What is an auspicious housewarming gift for Thai people, and how many baht is right?",
+    "th": "ของขวัญขึ้นบ้านใหม่ที่เป็นมงคลสำหรับคนไทยคืออะไร ควรให้กี่บาทถึงจะเหมาะ",
+    "my": "ထိုင်းလူတွေအတွက် အိမ်သစ်ဝင်မင်္ဂလာလက်ဆောင် ဘာပေးရင် မင်္ဂလာရှိလဲ၊ ဘတ်ဘယ်လောက်ပေးရင် သင့်တော်လဲ",
+    "zh": "给泰国人送什么乔迁礼物吉利，送多少泰铢合适？",
+    "de": "Was ist ein glückbringendes Geschenk zur Hauseinweihung für Thais, und wie viele Baht sind richtig?"
+   }
+  },
+  {
+   "c": "merit-you",
+   "q": {
+    "en": "What is the best thing to do with lots of Thai coins?",
+    "th": "มีเหรียญไทยเยอะๆ ทำอะไรดีที่สุด",
+    "my": "ထိုင်းဒင်္ဂါးပြားတွေ အများကြီးရှိရင် ဘာလုပ်တာ အကောင်းဆုံးလဲ",
+    "zh": "手里有一大堆泰国硬币，怎么处理最好？",
+    "de": "Was macht man am besten mit vielen thailändischen Münzen?"
+   }
+  },
+  {
+   "c": "merit-dead",
+   "q": {
+    "en": "Did a Thai woman recently wake up on the way to her own funeral?",
+    "th": "มีผู้หญิงไทยฟื้นขึ้นมาระหว่างทางไปงานศพของตัวเองเมื่อไม่นานมานี้จริงไหม",
+    "my": "ထိုင်းအမျိုးသမီးတစ်ယောက်က မကြာသေးခင်က ကိုယ့်အသုဘသွားတဲ့လမ်းမှာ ပြန်နိုးလာတယ်ဆိုတာ ဟုတ်လား",
+    "zh": "最近是不是有个泰国女人在去自己葬礼的路上醒过来了？",
+    "de": "Ist vor Kurzem eine Thailänderin auf dem Weg zu ihrer eigenen Beerdigung aufgewacht?"
+   }
+  },
+  {
+   "c": "death-help",
+   "q": {
+    "en": "Are Thai people usually cremated or buried?",
+    "th": "คนไทยส่วนใหญ่เผาศพหรือฝังศพ",
+    "my": "ထိုင်းလူတွေကို အများအားဖြင့် မီးသင်္ဂြိုဟ်လား၊ မြေမြှုပ်လား",
+    "zh": "泰国人一般是火葬还是土葬？",
+    "de": "Werden Thais normalerweise eingeäschert oder beerdigt?"
+   }
+  },
+  {
+   "c": "stay-rent",
+   "q": {
+    "en": "Where should I not live in Chiang Mai if I don't want jet noise?",
+    "th": "ถ้าไม่อยากได้ยินเสียงเครื่องบินเจ็ต ไม่ควรอยู่แถวไหนในเชียงใหม่",
+    "my": "လေယာဉ်ဆူညံသံ မကြားချင်ရင် ချင်းမိုင်မှာ ဘယ်နေရာမှာ မနေသင့်လဲ",
+    "zh": "如果不想听到飞机噪音，清迈哪里不该住？",
+    "de": "Wo in Chiang Mai sollte ich nicht wohnen, wenn ich keinen Fluglärm will?"
+   }
+  },
+  {
+   "c": "stay-rent",
+   "q": {
+    "en": "Can you find me a short-term studio penthouse in Chiang Mai right now?",
+    "th": "ช่วยหาเพนต์เฮาส์ห้องสตูดิโอเช่าระยะสั้นในเชียงใหม่ตอนนี้ให้หน่อยได้ไหม",
+    "my": "ချင်းမိုင်မှာ ကာလတိုငှားလို့ရတဲ့ စတူဒီယို ပင့်ဟောက်စ်တစ်ခု အခု ရှာပေးနိုင်လား",
+    "zh": "你现在能帮我在清迈找个短租的单间顶层公寓吗？",
+    "de": "Kannst du mir sofort ein Studio-Penthouse zur Kurzzeitmiete in Chiang Mai finden?"
+   }
+  },
+  {
+   "c": "stay-rent",
+   "q": {
+    "en": "Is the 4th floor in Thailand the same as in the US?",
+    "th": "ชั้น 4 ในไทยกับในอเมริกาเหมือนกันไหม",
+    "my": "ထိုင်းမှာ 4 ထပ်က အမေရိကန်က 4 ထပ်နဲ့ အတူတူလား",
+    "zh": "泰国的 4 楼和美国的 4 楼一样吗？",
+    "de": "Ist das 4. Stockwerk in Thailand dasselbe wie in den USA?"
+   }
+  },
+  {
+   "c": "stay-rent",
+   "q": {
+    "en": "Is it true you should buy your realtor moo kata if they do a great job?",
+    "th": "จริงไหมที่ถ้านายหน้าขายบ้านทำงานดีเยี่ยม ควรเลี้ยงหมูกระทะเขา",
+    "my": "အိမ်ခြံမြေပွဲစားက အလုပ်ကောင်းကောင်းလုပ်ပေးရင် moo kata ဝယ်ကျွေးသင့်တယ်ဆိုတာ မှန်လား",
+    "zh": "听说房产中介干得特别好的话，应该请他们吃泰式烤肉火锅，是真的吗？",
+    "de": "Stimmt es, dass man seinem Immobilienmakler Moo Kata ausgeben sollte, wenn er einen tollen Job macht?"
+   }
+  },
+  {
+   "c": "stay-check",
+   "q": {
+    "en": "Do you need to pay cash up front to buy a house in Chiang Mai?",
+    "th": "ซื้อบ้านในเชียงใหม่ต้องจ่ายเงินสดล่วงหน้าไหม",
+    "my": "ချင်းမိုင်မှာ အိမ်ဝယ်ရင် ငွေသား ကြိုပေးရလား",
+    "zh": "在清迈买房必须一次性付清现金吗？",
+    "de": "Muss man für den Kauf eines Hauses in Chiang Mai im Voraus bar bezahlen?"
+   }
+  },
+  {
+   "c": "trades",
+   "q": {
+    "en": "Are termites a big problem in Lanna houses?",
+    "th": "ปลวกเป็นปัญหาใหญ่ในบ้านล้านนาไหม",
+    "my": "လန်နာအိမ်တွေမှာ ခြကျတာ ပြဿနာကြီးလား",
+    "zh": "白蚁在兰纳房子里是个大问题吗？",
+    "de": "Sind Termiten in Lanna-Häusern ein grosses Problem?"
+   }
+  },
+  {
+   "c": "trades",
+   "q": {
+    "en": "What can be done about cockroaches in Chiang Mai? I have a phobia.",
+    "th": "จะทำยังไงกับแมลงสาบในเชียงใหม่ได้บ้าง เป็นโรคกลัวด้วย",
+    "my": "ချင်းမိုင်မှာ ပိုးဟပ်တွေကို ဘာလုပ်လို့ရလဲ။ ကိုယ့်မှာ ကြောက်လွန်ရောဂါ ရှိတယ်",
+    "zh": "清迈的蟑螂怎么办？我有恐惧症。",
+    "de": "Was kann man in Chiang Mai gegen Kakerlaken tun? Ich habe eine Phobie."
+   }
+  },
+  {
+   "c": "call",
+   "q": {
+    "en": "Our AC died the day after we moved in. How do I ask the landlady, very politely, in Thai?",
+    "th": "แอร์เสียวันรุ่งขึ้นหลังย้ายเข้า จะบอกเจ้าของห้องที่เป็นผู้หญิงอย่างสุภาพมากๆ เป็นภาษาไทยยังไง",
+    "my": "ကိုယ်တို့ ပြောင်းဝင်ပြီး နောက်တစ်နေ့မှာ လေအေးစက် ပျက်သွားတယ်။ အိမ်ရှင်အမျိုးသမီးကို ထိုင်းလို အရမ်းယဉ်ကျေးကျေး ဘယ်လိုပြောရမလဲ",
+    "zh": "我们搬进来第二天空调就坏了。怎么用泰语很有礼貌地跟女房东说？",
+    "de": "Unsere Klimaanlage ist am Tag nach unserem Einzug kaputtgegangen. Wie frage ich die Vermieterin ganz höflich auf Thai?"
+   }
+  },
+  {
+   "c": "homehelp",
+   "q": {
+    "en": "Can a Thai housekeeper keep clothes organized in drawers, or is it clean but not pick up?",
+    "th": "แม่บ้านไทยจัดเสื้อผ้าใส่ลิ้นชักให้เป็นระเบียบได้ไหม หรือแค่ทำความสะอาดแต่ไม่เก็บของ",
+    "my": "ထိုင်းအိမ်ဖော်တစ်ယောက်က အဝတ်အစားတွေကို အံဆွဲထဲ စနစ်တကျ သိမ်းပေးနိုင်လား၊ သန့်ရှင်းရေးပဲလုပ်ပြီး မသိမ်းဘူးလား",
+    "zh": "泰国的家政阿姨能把衣服整整齐齐收进抽屉，还是只会打扫干净、不会收拾东西？",
+    "de": "Kann eine thailändische Haushaltshilfe Kleidung ordentlich in Schubladen einsortieren, oder wird nur geputzt, aber nicht aufgeräumt?"
+   }
+  },
+  {
+   "c": "rentals",
+   "q": {
+    "en": "Is there self storage in Chiang Mai?",
+    "th": "เชียงใหม่มีเซลฟ์สตอเรจไหม",
+    "my": "ချင်းမိုင်မှာ self storage ရှိလား",
+    "zh": "清迈有自助仓储吗？",
+    "de": "Gibt es in Chiang Mai Self-Storage?"
+   }
+  },
+  {
+   "c": "errand",
+   "q": {
+    "en": "Is a queen bed the same as a 5-foot bed in Thailand?",
+    "th": "เตียงควีนไซส์กับเตียง 5 ฟุตในไทยขนาดเดียวกันไหม",
+    "my": "ထိုင်းမှာ queen ကုတင်က 5 ပေ ကုတင်နဲ့ အတူတူလား",
+    "zh": "在泰国，queen 床和 5 英尺的床是一回事吗？",
+    "de": "Ist ein Queen-Bett in Thailand dasselbe wie ein 5-Fuss-Bett?"
+   }
+  },
+  {
+   "c": "street-survey",
+   "q": {
+    "en": "Are there mole people in Chiang Mai, like in Vegas?",
+    "th": "เชียงใหม่มีมนุษย์ตุ่นที่อาศัยอยู่ใต้ดินเหมือนที่ลาสเวกัสไหม",
+    "my": "လပ်စ်ဗေဂတ်စ်မှာလို ချင်းမိုင်မှာလည်း မြေအောက်မှာ နေတဲ့ လူတွေ ရှိလား",
+    "zh": "清迈有像拉斯维加斯那样的“鼹鼠人”吗？",
+    "de": "Gibt es in Chiang Mai Maulwurfsmenschen wie in Vegas?"
+   }
+  },
+  {
+   "c": "widget",
+   "q": {
+    "en": "Does it snow in Thailand?",
+    "th": "ที่ไทยมีหิมะตกไหม",
+    "my": "ထိုင်းမှာ နှင်းကျလား",
+    "zh": "泰国下雪吗？",
+    "de": "Schneit es in Thailand?"
+   }
+  },
+  {
+   "c": "clean-air",
+   "q": {
+    "en": "Is Chiang Mai lovely year-round?",
+    "th": "เชียงใหม่น่าอยู่ตลอดทั้งปีไหม",
+    "my": "ချင်းမိုင်က တစ်နှစ်ပတ်လုံး လှလား",
+    "zh": "清迈一年四季都那么宜人吗？",
+    "de": "Ist Chiang Mai das ganze Jahr über schön?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "Is Sihanoukville a good escape from Chiang Mai's smoke season?",
+    "th": "สีหนุวิลล์เป็นที่หนีฤดูหมอกควันของเชียงใหม่ได้ดีไหม",
+    "my": "ချင်းမိုင်ရဲ့ မီးခိုးမှုန်ရာသီကနေ ရှောင်ဖို့ Sihanoukville က ကောင်းလား",
+    "zh": "清迈的烟霾季，去西哈努克躲一躲好不好？",
+    "de": "Ist Sihanoukville ein guter Ort, um der Rauchsaison in Chiang Mai zu entkommen?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Should I worry more about rat lungworm or being lured to Myanmar as a digital slave?",
+    "th": "ควรกังวลเรื่องพยาธิปอดหนูมากกว่า หรือเรื่องถูกล่อไปเป็นทาสดิจิทัลที่เมียนมามากกว่ากัน",
+    "my": "rat lungworm ကိုပိုစိုးရိမ်သင့်လား၊ ဒါမှမဟုတ် ဒစ်ဂျစ်တယ်ကျွန်အဖြစ် မြန်မာနိုင်ငံကို ဖြားယောင်းခေါ်ဆောင်ခံရမှာကို ပိုစိုးရိမ်သင့်လား",
+    "zh": "我更该担心广州管圆线虫，还是被骗去缅甸当数字奴隶？",
+    "de": "Sollte ich mir mehr Sorgen um den Rattenlungenwurm machen oder darum, als digitaler Sklave nach Myanmar gelockt zu werden?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "What are the most dangerous organisms around Chiang Mai, ranked?",
+    "th": "สิ่งมีชีวิตที่อันตรายที่สุดรอบๆ เชียงใหม่มีอะไรบ้าง ช่วยเรียงอันดับให้หน่อย",
+    "my": "ချင်းမိုင်ပတ်ဝန်းကျင်မှာ အန္တရာယ်အရှိဆုံး သက်ရှိတွေက ဘာတွေလဲ၊ အဆင့်လိုက်စီပါ",
+    "zh": "清迈周边最危险的生物有哪些？按危险程度排个名。",
+    "de": "Was sind die gefährlichsten Lebewesen rund um Chiang Mai, als Rangliste?"
+   }
+  },
+  {
+   "c": "tour-day",
+   "q": {
+    "en": "Are there wild tigers in Thailand?",
+    "th": "ในไทยมีเสือโคร่งป่าไหม",
+    "my": "ထိုင်းမှာ တောကျား ရှိလား",
+    "zh": "泰国有野生老虎吗？",
+    "de": "Gibt es in Thailand wilde Tiger?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Can anyone in Thailand artificially inseminate a queen bee?",
+    "th": "ในไทยมีใครผสมเทียมผึ้งนางพญาได้ไหม",
+    "my": "ထိုင်းမှာ ပျားဘုရင်မကို လူလုပ်နည်းနဲ့ မျိုးအောင်စေနိုင်တဲ့ လူ ရှိလား",
+    "zh": "在泰国有人会给蜂王做人工授精吗？",
+    "de": "Kann in Thailand jemand eine Bienenkönigin künstlich besamen?"
+   }
+  },
+  {
+   "c": "tour-day",
+   "q": {
+    "en": "How do I recognize slime moulds around Chiang Mai?",
+    "th": "จะจำราเมือกรอบๆ เชียงใหม่ได้ยังไง",
+    "my": "ချင်းမိုင်ပတ်ဝန်းကျင်မှာ slime mould တွေကို ဘယ်လိုမှတ်မိရမလဲ",
+    "zh": "在清迈周边怎么认出黏菌？",
+    "de": "Wie erkenne ich Schleimpilze rund um Chiang Mai?"
+   }
+  },
+  {
+   "c": "etsy",
+   "q": {
+    "en": "Can I grow enough slime mould in Chiang Mai to sell cultures on Etsy?",
+    "th": "เลี้ยงราเมือกในเชียงใหม่ให้ได้เยอะพอจะขายเชื้อบน Etsy ได้ไหม",
+    "my": "ချင်းမိုင်မှာ slime mould ကို Etsy မှာ ရောင်းလို့ရလောက်အောင် လုံလောက်စွာ မွေးလို့ရလား",
+    "zh": "我能在清迈培养足够多的黏菌，拿到 Etsy 上卖菌种吗？",
+    "de": "Kann ich in Chiang Mai genug Schleimpilz züchten, um Kulturen auf Etsy zu verkaufen?"
+   }
+  },
+  {
+   "c": "etsy",
+   "q": {
+    "en": "What can I buy in Thailand and sell to Americans on eBay?",
+    "th": "ซื้ออะไรในไทยไปขายให้คนอเมริกันบน eBay ได้บ้าง",
+    "my": "ထိုင်းမှာ ဘာတွေဝယ်ပြီး eBay မှာ အမေရိကန်တွေကို ရောင်းလို့ရလဲ",
+    "zh": "在泰国买点什么，能拿到 eBay 上卖给美国人？",
+    "de": "Was kann ich in Thailand kaufen und auf eBay an Amerikaner verkaufen?"
+   }
+  },
+  {
+   "c": "partner",
+   "q": {
+    "en": "I mall-walk Chiang Mai and see this stuff at $20–30 retail. Surely there's an opportunity?",
+    "th": "เดินห้างในเชียงใหม่แล้วเห็นของแบบนี้ราคาปลีก $20–30 ต้องมีช่องทำเงินแน่ๆ ใช่ไหม",
+    "my": "ချင်းမိုင်မှာ ရှော့ပင်းမောလ်တွေ လျှောက်ကြည့်တဲ့အခါ ဒီပစ္စည်းတွေကို လက်လီ $20–30 နဲ့ တွေ့တယ်။ အခွင့်အလမ်း တစ်ခုခုတော့ ရှိမှာပေါ့",
+    "zh": "我在清迈逛商场，看到这种东西零售价才 $20–30。这里面肯定有商机吧？",
+    "de": "Ich bummle in Chiang Mai durch die Einkaufszentren und sehe dieses Zeug für $20–30 im Laden. Da steckt doch bestimmt eine Chance drin?"
+   }
+  },
+  {
+   "c": "vibe",
+   "q": {
+    "en": "A vibe-coded map app that finds great toilets in Chiang Mai: how do I build and ship it today?",
+    "th": "จะสร้างแอปแผนที่หาห้องน้ำดีๆ ในเชียงใหม่ด้วย vibe coding แล้วปล่อยใช้ให้ได้ภายในวันนี้ยังไง",
+    "my": "ချင်းမိုင်က ကောင်းတဲ့ အိမ်သာတွေကို ရှာပေးမယ့် vibe-coded မြေပုံအက်ပ်တစ်ခု၊ ဒီနေ့ပဲ ဘယ်လိုတည်ဆောက်ပြီး ထုတ်ပြန်ရမလဲ",
+    "zh": "做一个靠 vibe coding 写出来的地图 app，专门找清迈的好厕所：我今天怎么做出来并上线？",
+    "de": "Eine per Vibe Coding gebaute Karten-App, die tolle Toiletten in Chiang Mai findet: Wie baue ich sie und veröffentliche sie noch heute?"
+   }
+  },
+  {
+   "c": "ai-own",
+   "q": {
+    "en": "Can I run a 4090 on-prem in Chiang Mai, or rent a rack?",
+    "th": "ตั้งการ์ด 4090 รันเองในที่ของตัวเองที่เชียงใหม่ได้ไหม หรือต้องเช่าแร็ค",
+    "my": "ချင်းမိုင်မှာ 4090 ကို on-prem အဖြစ် ကိုယ်တိုင် run လို့ရလား၊ ဒါမှမဟုတ် rack ငှားလို့ရလား",
+    "zh": "我能在清迈自己架一块 4090，还是得租机架？",
+    "de": "Kann ich in Chiang Mai eine 4090 on-prem betreiben oder ein Rack mieten?"
+   }
+  },
+  {
+   "c": "lang-pages",
+   "q": {
+    "en": "What are definite cultural nopes for a website in Thai?",
+    "th": "เว็บไซต์ภาษาไทยมีอะไรที่ห้ามทำแน่ๆ ในแง่วัฒนธรรมบ้าง",
+    "my": "ထိုင်းလို ဝက်ဘ်ဆိုက်တစ်ခုအတွက် ယဉ်ကျေးမှုအရ လုံးဝမလုပ်သင့်တာတွေက ဘာတွေလဲ",
+    "zh": "泰语网站在文化上有哪些绝对不能碰的雷区？",
+    "de": "Was sind eindeutige kulturelle No-Gos für eine Website auf Thai?"
+   }
+  },
+  {
+   "c": "graphics",
+   "q": {
+    "en": "Is the elephant on my design appropriate and culturally correct?",
+    "th": "ช้างในงานออกแบบของเราเหมาะสมและถูกต้องตามวัฒนธรรมไหม",
+    "my": "ကိုယ့်ဒီဇိုင်းပေါ်က ဆင်ပုံက သင့်တော်ပြီး ယဉ်ကျေးမှုအရ မှန်ကန်လား",
+    "zh": "我设计里的大象合适吗？在文化上有没有问题？",
+    "de": "Ist der Elefant auf meinem Design angemessen und kulturell korrekt?"
+   }
+  },
+  {
+   "c": "graphics",
+   "q": {
+    "en": "Is pink culturally feminine in Thailand?",
+    "th": "ในวัฒนธรรมไทย สีชมพูเป็นสีของผู้หญิงไหม",
+    "my": "ထိုင်းမှာ ပန်းရောင်က ယဉ်ကျေးမှုအရ မိန်းမဆန်တဲ့ အရောင်လား",
+    "zh": "在泰国，粉色在文化上是女性的颜色吗？",
+    "de": "Gilt Pink in Thailand kulturell als weiblich?"
+   }
+  },
+  {
+   "c": "ads-run",
+   "q": {
+    "en": "Is it relatively easy to advertise on Facebook from Thailand to a US audience?",
+    "th": "ลงโฆษณาบน Facebook จากไทยไปหาผู้ชมในอเมริกาค่อนข้างง่ายไหม",
+    "my": "ထိုင်းကနေ Facebook မှာ အမေရိကန်ပရိသတ်ကို ကြော်ငြာတာ နှိုင်းယှဉ်ရင် လွယ်လား",
+    "zh": "在泰国给美国受众投 Facebook 广告，相对容易吗？",
+    "de": "Ist es relativ einfach, von Thailand aus auf Facebook für ein US-Publikum zu werben?"
+   }
+  },
+  {
+   "c": "fb-care",
+   "q": {
+    "en": "Do I need to post in Thai? Does anyone do a faceless feed?",
+    "th": "ต้องโพสต์เป็นภาษาไทยไหม มีใครทำฟีดแบบไม่โชว์หน้าบ้างไหม",
+    "my": "ထိုင်းလို တင်ရမလား။ မျက်နှာမပြဘဲ feed လုပ်တဲ့သူ ရှိလား",
+    "zh": "我需要用泰语发帖吗？有没有人做不露脸的账号？",
+    "de": "Muss ich auf Thai posten? Macht jemand einen gesichtslosen Feed?"
+   }
+  },
+  {
+   "c": "blood",
+   "q": {
+    "en": "How much is a colonoscopy in Chiang Mai?",
+    "th": "ส่องกล้องลำไส้ใหญ่ในเชียงใหม่ราคาเท่าไหร่",
+    "my": "ချင်းမိုင်မှာ colonoscopy ဘယ်လောက်ကျလဲ",
+    "zh": "清迈做结肠镜检查要多少钱？",
+    "de": "Was kostet eine Darmspiegelung in Chiang Mai?"
+   }
+  },
+  {
+   "c": "blood",
+   "q": {
+    "en": "Can I donate blood in Chiang Mai?",
+    "th": "บริจาคเลือดในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ သွေးလှူလို့ရလား",
+    "zh": "在清迈能献血吗？",
+    "de": "Kann ich in Chiang Mai Blut spenden?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Is TMS available in Chiang Mai for depression?",
+    "th": "เชียงใหม่มี TMS รักษาซึมเศร้าไหม",
+    "my": "ချင်းမိုင်မှာ စိတ်ဓာတ်ကျရောဂါအတွက် TMS ရနိုင်လား",
+    "zh": "清迈能做 TMS 治疗抑郁症吗？",
+    "de": "Ist TMS in Chiang Mai bei Depressionen erhältlich?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Can I get a sleep study in Thailand?",
+    "th": "ตรวจการนอนหลับในไทยได้ไหม",
+    "my": "ထိုင်းမှာ အိပ်စက်မှု စစ်ဆေးမှု လုပ်လို့ရလား",
+    "zh": "在泰国能做睡眠检查吗？",
+    "de": "Kann ich in Thailand eine Untersuchung im Schlaflabor machen lassen?"
+   }
+  },
+  {
+   "c": "specialist",
+   "q": {
+    "en": "Is there a one-stop clinic around Chiang Mai I can use as a hub for all my health needs?",
+    "th": "แถวเชียงใหม่มีคลินิกครบวงจรที่ใช้เป็นศูนย์กลางดูแลสุขภาพทุกเรื่องของเราไหม",
+    "my": "ချင်းမိုင်ပတ်ဝန်းကျင်မှာ ကိုယ့်ကျန်းမာရေးလိုအပ်ချက်အားလုံးအတွက် ဗဟိုအဖြစ် သုံးလို့ရတဲ့ တစ်နေရာတည်း ဆေးခန်း ရှိလား",
+    "zh": "清迈周边有没有一站式诊所，能当我所有健康需求的大本营？",
+    "de": "Gibt es in der Umgebung von Chiang Mai eine Klinik, die alles unter einem Dach bietet und die ich als Anlaufstelle für alle meine Gesundheitsfragen nutzen kann?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Should I get Thai health insurance?",
+    "th": "ควรทำประกันสุขภาพไทยไหม",
+    "my": "ထိုင်းကျန်းမာရေးအာမခံ ဝယ်သင့်လား",
+    "zh": "我该买泰国的健康保险吗？",
+    "de": "Sollte ich mir eine thailändische Krankenversicherung zulegen?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Is it possible hypervigilance is making me want to move to Thailand?",
+    "th": "เป็นไปได้ไหมว่าภาวะระแวดระวังภัยเกินปกติทำให้อยากย้ายไปอยู่ไทย",
+    "my": "အမြဲသတိကြီးနေတာကြောင့် ထိုင်းကို ပြောင်းချင်လာတာ ဖြစ်နိုင်လား",
+    "zh": "会不会是过度警觉让我想搬到泰国？",
+    "de": "Kann es sein, dass mich Hypervigilanz dazu bringt, nach Thailand ziehen zu wollen?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Is there anywhere in the world even better for me than Thailand, or did we nail it?",
+    "th": "ในโลกนี้มีที่ไหนเหมาะกับเรายิ่งกว่าไทยอีกไหม หรือว่าเราเลือกได้เป๊ะแล้ว",
+    "my": "ကမ္ဘာပေါ်မှာ ထိုင်းထက်တောင် ကိုယ့်အတွက် ပိုကောင်းတဲ့ နေရာ ရှိသေးလား၊ ဒါမှမဟုတ် ကိုယ်တို့ ကွက်တိရွေးမိပြီလား",
+    "zh": "世界上还有没有比泰国更适合我的地方，还是我们已经选到最好的了？",
+    "de": "Gibt es irgendwo auf der Welt einen noch besseren Ort für mich als Thailand, oder haben wir es perfekt getroffen?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Is Chiang Mai better for expats than Bangkok?",
+    "th": "เชียงใหม่ดีกว่ากรุงเทพสำหรับคนต่างชาติที่มาอยู่ไหม",
+    "my": "နိုင်ငံခြားနေသူတွေအတွက် ချင်းမိုင်က ဗန်ကောက်ထက် ပိုကောင်းလား",
+    "zh": "对外籍人士来说，清迈比曼谷好吗？",
+    "de": "Ist Chiang Mai für Expats besser als Bangkok?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "Do you think Chiang Rai might be an even better fit than Chiang Mai?",
+    "th": "คิดว่าเชียงรายอาจเหมาะกับเรายิ่งกว่าเชียงใหม่ไหม",
+    "my": "ချင်းရိုင်က ချင်းမိုင်ထက်တောင် ပိုသင့်တော်နိုင်တယ်လို့ ထင်လား",
+    "zh": "你觉得清莱会不会比清迈更适合我？",
+    "de": "Glaubst du, dass Chiang Rai noch besser passt als Chiang Mai?"
+   }
+  },
+  {
+   "c": "books",
+   "q": {
+    "en": "We ran through cash fast in our first month in Chiang Mai. That's a one-time thing, right?",
+    "th": "เดือนแรกที่เชียงใหม่เงินเราหมดเร็วมาก เป็นแค่ช่วงแรกครั้งเดียวใช่ไหม",
+    "my": "ချင်းမိုင်ရောက်ပြီး ပထမလမှာ ပိုက်ဆံတွေ အမြန်ကုန်သွားတယ်။ ဒါက တစ်ခါတည်းပဲ ဖြစ်မှာမလား",
+    "zh": "我们到清迈的第一个月钱花得飞快。这只是一次性的，对吧？",
+    "de": "Wir haben in unserem ersten Monat in Chiang Mai schnell unser ganzes Geld verbraten. Das war nur einmalig, oder?"
+   }
+  },
+  {
+   "c": "bank-account",
+   "q": {
+    "en": "Is Schwab better than Revolut and Wise in Thailand?",
+    "th": "Schwab ดีกว่า Revolut กับ Wise ในไทยไหม",
+    "my": "ထိုင်းမှာ Schwab က Revolut နဲ့ Wise ထက် ပိုကောင်းလား",
+    "zh": "在泰国，Schwab 比 Revolut 和 Wise 好用吗？",
+    "de": "Ist Schwab in Thailand besser als Revolut und Wise?"
+   }
+  },
+  {
+   "c": "books",
+   "q": {
+    "en": "What kind of receipts do I save for a VAT refund?",
+    "th": "ต้องเก็บใบเสร็จแบบไหนไว้ขอคืน VAT",
+    "my": "VAT ပြန်ရဖို့ ဘယ်လိုပြေစာတွေ သိမ်းထားရမလဲ",
+    "zh": "申请退增值税，要留哪些收据？",
+    "de": "Welche Art von Quittungen hebe ich für eine Mehrwertsteuer-Rückerstattung auf?"
+   }
+  },
+  {
+   "c": "car-guide",
+   "q": {
+    "en": "What do you call the red truck buses in Chiang Mai?",
+    "th": "ที่เชียงใหม่ รถบัสที่เป็นรถกระบะสีแดงๆ เขาเรียกว่าอะไร",
+    "my": "ချင်းမိုင်က အနီရောင် ထရပ်ကားဘတ်စ်တွေကို ဘယ်လိုခေါ်ကြလဲ",
+    "zh": "清迈那种红色的卡车巴士叫什么？",
+    "de": "Wie nennt man die roten Lastwagenbusse in Chiang Mai?"
+   }
+  },
+  {
+   "c": "rentals",
+   "q": {
+    "en": "How do I ride like a Grab driver from day one?",
+    "th": "จะขี่รถแบบคนขับ Grab ตั้งแต่วันแรกได้ยังไง",
+    "my": "Grab ယာဉ်မောင်းလို ပထမနေ့ကတည်းက ဘယ်လိုစီးရမလဲ",
+    "zh": "怎么从第一天起就骑得跟 Grab 司机一样？",
+    "de": "Wie fahre ich vom ersten Tag an wie ein Grab-Fahrer?"
+   }
+  },
+  {
+   "c": "vehicle",
+   "q": {
+    "en": "Is there a high-status scooter brand in Chiang Mai?",
+    "th": "ในเชียงใหม่มีสกูตเตอร์ยี่ห้อไหนที่ดูมีระดับบ้างไหม",
+    "my": "ချင်းမိုင်မှာ အဆင့်အတန်းမြင့်တဲ့ စကူတာ အမှတ်တံဆိပ် ရှိလား",
+    "zh": "清迈有没有显身份的踏板车品牌？",
+    "de": "Gibt es in Chiang Mai eine Roller-Marke mit hohem Status?"
+   }
+  },
+  {
+   "c": "vehicle",
+   "q": {
+    "en": "Can an agent in Chiang Mai help me buy a car on a short-stay visa?",
+    "th": "นายหน้าในเชียงใหม่ช่วยซื้อรถให้ได้ไหม ถ้าถือวีซ่าพำนักระยะสั้น",
+    "my": "ကာလတိုနေခွင့်ဗီဇာနဲ့ ကားဝယ်ဖို့ ချင်းမိုင်က အေးဂျင့်တစ်ယောက်က ကူညီနိုင်လား",
+    "zh": "我持短期停留签证，清迈的中介能帮我买车吗？",
+    "de": "Kann mir ein Agent in Chiang Mai dabei helfen, mit einem Visum für einen Kurzaufenthalt ein Auto zu kaufen?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "What's the ultimate multi-leg bus trip from Bangkok to Chiang Mai?",
+    "th": "เส้นทางนั่งรถทัวร์ต่อหลายต่อจากกรุงเทพไปเชียงใหม่ที่สุดยอดที่สุดคือแบบไหน",
+    "my": "ဗန်ကောက်ကနေ ချင်းမိုင်ကို ဘတ်စ်ကားအဆင့်ဆင့်ပြောင်းစီးပြီး သွားတဲ့ အကောင်းဆုံးခရီးစဉ်က ဘာလဲ",
+    "zh": "从曼谷到清迈，坐多段巴士的终极玩法是什么？",
+    "de": "Was ist die ultimative Busreise mit mehreren Etappen von Bangkok nach Chiang Mai?"
+   }
+  },
+  {
+   "c": "car-guide",
+   "q": {
+    "en": "Why is it so hard to get to Korat from Chiang Mai?",
+    "th": "ทำไมจากเชียงใหม่ไปโคราชถึงยากจัง",
+    "my": "ချင်းမိုင်ကနေ Korat ကို သွားဖို့ ဘာလို့ ဒီလောက်ခက်တာလဲ",
+    "zh": "为什么从清迈去呵叻这么难？",
+    "de": "Warum ist es so schwierig, von Chiang Mai nach Korat zu kommen?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "How do I get from Thailand to Kunming?",
+    "th": "จากไทยไปคุนหมิงยังไง",
+    "my": "ထိုင်းကနေ ကူမင်းကို ဘယ်လိုသွားရမလဲ",
+    "zh": "怎么从泰国去昆明？",
+    "de": "Wie komme ich von Thailand nach Kunming?"
+   }
+  },
+  {
+   "c": "tour-3d",
+   "q": {
+    "en": "What foods are great in Lampang?",
+    "th": "ลำปางมีอาหารอะไรเด็ดบ้าง",
+    "my": "Lampang မှာ ဘာစားစရာတွေ ကောင်းလဲ",
+    "zh": "南邦有什么好吃的？",
+    "de": "Was gibt es in Lampang Tolles zu essen?"
+   }
+  },
+  {
+   "c": "tour-3d",
+   "q": {
+    "en": "What is Chiang Rai like? Was it always like this?",
+    "th": "เชียงรายเป็นยังไง เป็นแบบนี้มาตลอดเลยเหรอ",
+    "my": "ချင်းရိုင်က ဘယ်လိုမျိုးလဲ။ အစကတည်းက ဒီလိုပဲလား",
+    "zh": "清莱是个什么样的地方？它一直都是这样吗？",
+    "de": "Wie ist Chiang Rai so? War es schon immer so?"
+   }
+  },
+  {
+   "c": "dispute",
+   "q": {
+    "en": "How are there sooo many used designer handbags for sale in Chiang Rai? Who buys and sells them?",
+    "th": "ทำไมเชียงรายมีกระเป๋าแบรนด์เนมมือสองขายเยอะมากกกก ใครซื้อใครขายกัน",
+    "my": "ချင်းရိုင်မှာ အသုံးပြုပြီးသား ဒီဇိုင်နာလက်ကိုင်အိတ်တွေ ဘယ်လိုလုပ်ပြီး ဒီလောက်ကို များနေတာလဲ။ ဘယ်သူတွေက ဝယ်ပြီး ဘယ်သူတွေက ရောင်းတာလဲ",
+    "zh": "清莱怎么会有那么那么多二手名牌包在卖？谁在买，谁在卖？",
+    "de": "Wie kommt es, dass in Chiang Rai sooo viele gebrauchte Designer-Handtaschen zum Verkauf stehen? Wer kauft und verkauft die?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "Do indigo shirts mean something in Chiang Mai or Chiang Rai?",
+    "th": "เสื้อสีครามในเชียงใหม่หรือเชียงรายมีความหมายอะไรไหม",
+    "my": "အင်ဒီဂိုရှပ်အင်္ကျီတွေက ချင်းမိုင် ဒါမှမဟုတ် ချင်းရိုင်မှာ အဓိပ္ပာယ်တစ်ခုခု ရှိလား",
+    "zh": "靛蓝色的衬衫在清迈或清莱有什么含义吗？",
+    "de": "Bedeuten Indigohemden in Chiang Mai oder Chiang Rai etwas?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "What is a sleep salon, and why do they only seem to exist in northern Thailand?",
+    "th": "\"Sleep salon\" คืออะไร แล้วทำไมดูเหมือนจะมีแค่ในภาคเหนือของไทย",
+    "my": "sleep salon ဆိုတာ ဘာလဲ၊ ဘာလို့ မြောက်ပိုင်းထိုင်းမှာပဲ ရှိသလိုဖြစ်နေတာလဲ",
+    "zh": "什么是睡眠沙龙，为什么好像只有泰国北部才有？",
+    "de": "Was ist ein Schlafsalon, und warum scheint es ihn nur in Nordthailand zu geben?"
+   }
+  },
+  {
+   "c": "interview",
+   "q": {
+    "en": "What is the ethnic make-up of Chiang Mai and Chiang Rai? Mostly Lanna?",
+    "th": "เชียงใหม่และเชียงรายมีกลุ่มชาติพันธุ์อะไรบ้าง ส่วนใหญ่เป็นคนล้านนาหรือเปล่า",
+    "my": "ချင်းမိုင်နဲ့ ချင်းရိုင်မှာ လူမျိုးစုဖွဲ့စည်းပုံက ဘယ်လိုလဲ။ လန်နာအများစုလား",
+    "zh": "清迈和清莱的民族构成是怎样的？主要是兰纳人吗？",
+    "de": "Wie ist die ethnische Zusammensetzung von Chiang Mai und Chiang Rai? Überwiegend Lanna?"
+   }
+  },
+  {
+   "c": "article",
+   "q": {
+    "en": "Why is a public school in Lampang called Ban Chiangrai?",
+    "th": "ทำไมโรงเรียนรัฐแห่งหนึ่งในลำปางถึงชื่อโรงเรียนบ้านเชียงราย",
+    "my": "Lampang က အစိုးရကျောင်းတစ်ကျောင်းကို Ban Chiangrai လို့ ဘာကြောင့် ခေါ်တာလဲ",
+    "zh": "为什么南邦有一所公立学校叫 Ban Chiangrai？",
+    "de": "Warum heisst eine öffentliche Schule in Lampang Ban Chiangrai?"
+   }
+  },
+  {
+   "c": "article",
+   "q": {
+    "en": "Besides Chiang Mai, do any cities still have moats?",
+    "th": "นอกจากเชียงใหม่ ยังมีเมืองไหนที่ยังมีคูเมืองอยู่ไหม",
+    "my": "ချင်းမိုင်ကလွဲရင် ကျုံးရှိသေးတဲ့ မြို့တွေ ရှိလား",
+    "zh": "除了清迈，还有哪些城市保留着护城河？",
+    "de": "Haben ausser Chiang Mai noch andere Städte einen Stadtgraben?"
+   }
+  },
+  {
+   "c": "article",
+   "q": {
+    "en": "Is Thailand considered a \"third world country\"?",
+    "th": "ไทยถือเป็น \"ประเทศโลกที่สาม\" ไหม",
+    "my": "ထိုင်းကို “တတိယကမ္ဘာနိုင်ငံ” လို့ သတ်မှတ်လား",
+    "zh": "泰国算是“第三世界国家”吗？",
+    "de": "Gilt Thailand als \"Dritte-Welt-Land\"?"
+   }
+  },
+  {
+   "c": "interview",
+   "q": {
+    "en": "Does Thailand have rednecks?",
+    "th": "เมืองไทยมีเรดเน็คไหม",
+    "my": "ထိုင်းမှာ “rednecks” တွေ ရှိလား",
+    "zh": "泰国有红脖子吗？",
+    "de": "Gibt es in Thailand Rednecks?"
+   }
+  },
+  {
+   "c": "lanna-wedding",
+   "q": {
+    "en": "Am I, as a white resident, expected to wear Thai national dress now and then?",
+    "th": "ในฐานะคนผิวขาวที่อาศัยอยู่ในไทย ถูกคาดหวังให้ใส่ชุดประจำชาติไทยบ้างเป็นครั้งคราวไหม",
+    "my": "ဒီမှာ နေတဲ့ လူဖြူတစ်ယောက်အနေနဲ့ ထိုင်းအမျိုးသားဝတ်စုံကို တစ်ခါတလေ ဝတ်ရမယ်လို့ မျှော်လင့်ခံရလား",
+    "zh": "作为白人居民，我是不是应该偶尔穿一下泰国民族服装？",
+    "de": "Wird von mir als weissem Einwohner erwartet, ab und zu die thailändische Nationaltracht zu tragen?"
+   }
+  },
+  {
+   "c": "wedding",
+   "q": {
+    "en": "What do married Thai people do to show they're married?",
+    "th": "คนไทยที่แต่งงานแล้วทำอะไรเพื่อให้คนอื่นรู้ว่าแต่งงานแล้ว",
+    "my": "အိမ်ထောင်ကျပြီးသား ထိုင်းလူတွေက အိမ်ထောင်ကျတာကို ဘယ်လိုပြကြလဲ",
+    "zh": "已婚的泰国人会怎么表明自己已婚？",
+    "de": "Was machen verheiratete Thais, um zu zeigen, dass sie verheiratet sind?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "Are elephant pants considered cheugy by Thai people?",
+    "th": "คนไทยมองว่ากางเกงช้างเชยไหม",
+    "my": "ဆင်ပုံဘောင်းဘီတွေကို ထိုင်းလူတွေက ခေတ်နောက်ကျပြီး ကြိုးစားလွန်းတယ်လို့ ထင်ကြလား",
+    "zh": "泰国人是不是觉得大象裤很土、不潮？",
+    "de": "Gelten Elefantenhosen bei Thais als cheugy?"
+   }
+  },
+  {
+   "c": "bride",
+   "q": {
+    "en": "Can I get custom lingerie and swimwear made in Chiang Mai?",
+    "th": "สั่งตัดลิงเจอรี่และชุดว่ายน้ำในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ အမှာချုပ် lingerie နဲ့ ရေကူးဝတ်စုံ ရနိုင်လား",
+    "zh": "在清迈能定做内衣和泳装吗？",
+    "de": "Kann ich in Chiang Mai massgeschneiderte Dessous und Bademode anfertigen lassen?"
+   }
+  },
+  {
+   "c": "compare",
+   "q": {
+    "en": "Best shirtmaker in Chiang Mai?",
+    "th": "ร้านตัดเสื้อเชิ้ตที่ดีที่สุดในเชียงใหม่คือร้านไหน",
+    "my": "ချင်းမိုင်က အကောင်းဆုံး ရှပ်အင်္ကျီချုပ်သူ ဘယ်သူလဲ",
+    "zh": "清迈最好的衬衫裁缝是哪家？",
+    "de": "Bester Hemdenschneider in Chiang Mai?"
+   }
+  },
+  {
+   "c": "interp",
+   "q": {
+    "en": "How do I explain a root smudge to my Thai hairdresser?",
+    "th": "จะอธิบาย root smudge ให้ช่างทำผมคนไทยเข้าใจยังไง",
+    "my": "root smudge ကို ကိုယ့်ထိုင်း ဆံပင်ပြင်ဆရာကို ဘယ်လိုရှင်းပြရမလဲ",
+    "zh": "怎么跟泰国发型师解释发根晕染？",
+    "de": "Wie erkläre ich meinem thailändischen Friseur einen Root Smudge?"
+   }
+  },
+  {
+   "c": "compare",
+   "q": {
+    "en": "Can I buy a pro bass fiddle in Chiang Mai? Any luthiers in Thailand?",
+    "th": "ซื้อดับเบิลเบสระดับโปรในเชียงใหม่ได้ไหม ในไทยมีช่างทำเครื่องสายไหม",
+    "my": "ချင်းမိုင်မှာ ပရော်ဖက်ရှင်နယ်သုံး ဘေ့စ်ဗိုင်အိုလင်ကြီး ဝယ်လို့ရလား။ ထိုင်းမှာ ကြိုးတူရိယာလုပ်တဲ့ ဆရာတွေ ရှိလား",
+    "zh": "在清迈能买到专业级的低音提琴吗？泰国有制琴师吗？",
+    "de": "Kann ich in Chiang Mai einen Profi-Kontrabass kaufen? Gibt es Geigenbauer in Thailand?"
+   }
+  },
+  {
+   "c": "form",
+   "q": {
+    "en": "Can I get a ham radio licence in Chiang Mai?",
+    "th": "ขอใบอนุญาตวิทยุสมัครเล่นในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ ham radio လိုင်စင် ရလို့ရလား",
+    "zh": "在清迈能考业余无线电执照吗？",
+    "de": "Kann ich in Chiang Mai eine Amateurfunklizenz bekommen?"
+   }
+  },
+  {
+   "c": "print",
+   "q": {
+    "en": "Can I get a custom deck of Zener cards printed in Thailand?",
+    "th": "สั่งพิมพ์ไพ่ Zener ตามแบบของเราเองในไทยได้ไหม",
+    "my": "ထိုင်းမှာ Zener ကတ်တစ်ထုပ်ကို အမှာပေးပုံနှိပ်လို့ရလား",
+    "zh": "在泰国能定制印刷一副齐纳卡牌吗？",
+    "de": "Kann ich in Thailand ein individuelles Zener-Kartenspiel drucken lassen?"
+   }
+  },
+  {
+   "c": "graphics",
+   "q": {
+    "en": "Can I sell a Moo Deng sticker without paying royalties?",
+    "th": "ขายสติกเกอร์หมูเด้งโดยไม่ต้องจ่ายค่าลิขสิทธิ์ได้ไหม",
+    "my": "Moo Deng စတစ်ကာကို မူပိုင်ခွင့်ကြေး မပေးဘဲ ရောင်းလို့ရလား",
+    "zh": "我能卖 Moo Deng 贴纸而不付版权费吗？",
+    "de": "Kann ich einen Moo-Deng-Sticker verkaufen, ohne Lizenzgebühren zu zahlen?"
+   }
+  },
+  {
+   "c": "move",
+   "q": {
+    "en": "Can I bring my cat to Thailand?",
+    "th": "พาแมวมาไทยได้ไหม",
+    "my": "ကိုယ့်ကြောင်ကို ထိုင်းကို ယူလာလို့ရလား",
+    "zh": "我能把我的猫带去泰国吗？",
+    "de": "Kann ich meine Katze nach Thailand mitnehmen?"
+   }
+  },
+  {
+   "c": "move",
+   "q": {
+    "en": "Can I get antique swords into Thailand?",
+    "th": "นำดาบโบราณเข้าไทยได้ไหม",
+    "my": "ရှေးဟောင်းဓားတွေကို ထိုင်းထဲ သယ်ဝင်လို့ရလား",
+    "zh": "我能把古董刀剑带进泰国吗？",
+    "de": "Kann ich antike Schwerter nach Thailand einführen?"
+   }
+  },
+  {
+   "c": "luggage",
+   "q": {
+    "en": "Can I send my extra bags from my Chiang Mai hotel to my Bangkok hotel?",
+    "th": "ส่งกระเป๋าส่วนเกินจากโรงแรมในเชียงใหม่ไปโรงแรมในกรุงเทพได้ไหม",
+    "my": "ကိုယ့်အပိုအိတ်တွေကို ချင်းမိုင်ဟိုတယ်ကနေ ဗန်ကောက်ဟိုတယ်ကို ပို့လို့ရလား",
+    "zh": "我能把多余的行李从清迈的酒店寄到曼谷的酒店吗？",
+    "de": "Kann ich meine zusätzlichen Taschen von meinem Hotel in Chiang Mai in mein Hotel in Bangkok schicken?"
+   }
+  },
+  {
+   "c": "form",
+   "q": {
+    "en": "What is my zip code in Thailand?",
+    "th": "รหัสไปรษณีย์ของเราในไทยคืออะไร",
+    "my": "ထိုင်းမှာ ကိုယ့်စာတိုက်ကုဒ်က ဘာလဲ",
+    "zh": "我在泰国的邮编是多少？",
+    "de": "Wie lautet meine Postleitzahl in Thailand?"
+   }
+  },
+  {
+   "c": "bank-account",
+   "q": {
+    "en": "Getting a Thai bank account is priority. Help?",
+    "th": "ต้องเปิดบัญชีธนาคารไทยให้ได้ก่อนเลย ช่วยหน่อยได้ไหม",
+    "my": "ထိုင်းဘဏ်အကောင့် ဖွင့်ရတာ ဦးစားပေးအရေးကြီးတာ။ ကူညီပါဦး",
+    "zh": "开一个泰国银行账户是头等大事，能帮帮我吗？",
+    "de": "Ein thailändisches Bankkonto hat bei mir Priorität. Kannst du mir helfen?"
+   }
+  },
+  {
+   "c": "experience",
+   "q": {
+    "en": "What are the most approachable insects to eat in Lanna and Isan?",
+    "th": "แมลงที่เริ่มลองกินได้ง่ายที่สุดในล้านนาและอีสานมีอะไรบ้าง",
+    "my": "လန်နာနဲ့ Isan မှာ စမ်းစားရတာ အလွယ်ဆုံး ပိုးကောင်တွေက ဘာတွေလဲ",
+    "zh": "在兰纳和伊森，最容易入口的食用昆虫有哪些？",
+    "de": "Welche essbaren Insekten sind in Lanna und Isan für Einsteiger am zugänglichsten?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "Why do Thai people think it's bad to mix durian and alcohol?",
+    "th": "ทำไมคนไทยถึงคิดว่าการกินทุเรียนปนกับเหล้าเป็นเรื่องไม่ดี",
+    "my": "ထိုင်းလူတွေက ဒူးရင်းနဲ့ အရက်ကို ရောစားတာ ဘာလို့ မကောင်းဘူးလို့ ထင်ကြတာလဲ",
+    "zh": "为什么泰国人觉得榴莲和酒不能混着吃？",
+    "de": "Warum glauben Thais, dass es schlecht ist, Durian und Alkohol zu mischen?"
+   }
+  },
+  {
+   "c": "errand",
+   "q": {
+    "en": "Can you get a greasy, sloppy dive burger in Chiang Mai?",
+    "th": "ในเชียงใหม่หาเบอร์เกอร์มันเยิ้มเลอะเทอะแบบร้านโทรมๆ ได้ไหม",
+    "my": "ချင်းမိုင်မှာ ဆီပေပြီး ပေရှုပ်တဲ့ ဆိုင်ညံ့ညံ့က ဘာဂါမျိုး စားလို့ရလား",
+    "zh": "清迈能吃到那种油腻腻、满手酱汁的路边小店汉堡吗？",
+    "de": "Gibt es in Chiang Mai einen fettigen, triefenden Spelunken-Burger?"
+   }
+  },
+  {
+   "c": "tour-day",
+   "q": {
+    "en": "Ovaltine pizza in Chiang Mai?!?!",
+    "th": "พิซซ่าโอวัลตินในเชียงใหม่?!?!",
+    "my": "ချင်းမိုင်မှာ Ovaltine ပီဇာ?!?!",
+    "zh": "清迈有阿华田披萨？！？！",
+    "de": "Ovaltine-Pizza in Chiang Mai?!?!"
+   }
+  },
+  {
+   "c": "errand",
+   "q": {
+    "en": "Can I buy kefir grains in Chiang Mai?",
+    "th": "ซื้อเม็ดเคฟีร์ในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှာ kefir အစေ့တွေ ဝယ်လို့ရလား",
+    "zh": "在清迈能买到开菲尔粒吗？",
+    "de": "Kann ich in Chiang Mai Kefirknollen kaufen?"
+   }
+  },
+  {
+   "c": "tour-day",
+   "q": {
+    "en": "What is a stereotypical women's lunch in Chiang Mai?",
+    "th": "มื้อเที่ยงของผู้หญิงในเชียงใหม่ตามภาพจำทั่วไปเป็นแบบไหน",
+    "my": "ချင်းမိုင်မှာ အမျိုးသမီးတွေရဲ့ ပုံစံကျ နေ့လည်စာဆိုတာ ဘာလဲ",
+    "zh": "清迈典型的女士午餐聚会是什么样的？",
+    "de": "Was ist ein stereotypisches Frauen-Lunch in Chiang Mai?"
+   }
+  },
+  {
+   "c": "tour-day",
+   "q": {
+    "en": "Is it possible to get a massage with a view in Chiang Mai, at every price point?",
+    "th": "นวดแบบมีวิวสวยๆ ในเชียงใหม่ได้ทุกช่วงราคาไหม",
+    "my": "ချင်းမိုင်မှာ ဈေးနှုန်းအဆင့်တိုင်းမှာ မြင်ကွင်းလှလှနဲ့ နှိပ်နယ်ခံလို့ ရနိုင်လား",
+    "zh": "在清迈，各种价位都能找到有风景的按摩吗？",
+    "de": "Kann man in Chiang Mai eine Massage mit Aussicht bekommen, in jeder Preisklasse?"
+   }
+  },
+  {
+   "c": "trip-plan",
+   "q": {
+    "en": "List 20 things around Chiang Mai you can dress up for on a Friday evening.",
+    "th": "ช่วยลิสต์ 20 อย่างรอบๆ เชียงใหม่ที่แต่งตัวสวยๆ ไปทำได้ในเย็นวันศุกร์",
+    "my": "သောကြာနေ့ညနေမှာ ချင်းမိုင်ပတ်ဝန်းကျင်မှာ ကောင်းကောင်းဝတ်စားဆင်ယင်ပြီး သွားလို့ရတာ 20 ခု စာရင်းပေးပါ",
+    "zh": "列出清迈周边 20 个周五晚上值得精心打扮去的活动。",
+    "de": "Zähl 20 Dinge rund um Chiang Mai auf, für die man sich am Freitagabend schick machen kann."
+   }
+  },
+  {
+   "c": "car-guide",
+   "q": {
+    "en": "Fun things to do in Chiang Mai with severe sciatica?",
+    "th": "มีอะไรสนุกๆ ให้ทำในเชียงใหม่บ้าง ถ้าปวดเส้นประสาทไซอาติกรุนแรง",
+    "my": "sciatica ပြင်းပြင်းထန်ထန်ဖြစ်နေရင် ချင်းမိုင်မှာ ပျော်စရာ ဘာတွေလုပ်လို့ရလဲ",
+    "zh": "严重坐骨神经痛的话，在清迈有什么好玩的？",
+    "de": "Was macht in Chiang Mai Spass, wenn man schlimmen Ischias hat?"
+   }
+  },
+  {
+   "c": "research",
+   "q": {
+    "en": "What kinds of ex-cons get picked up for the prison massage program in Chiang Mai?",
+    "th": "อดีตนักโทษประเภทไหนบ้างที่ได้รับคัดเลือกเข้าโครงการนวดของเรือนจำในเชียงใหม่",
+    "my": "ချင်းမိုင်က ထောင်နှိပ်နယ်အစီအစဉ်အတွက် ထောင်ကလွတ်လာသူ ဘယ်လိုလူမျိုးတွေကို ရွေးကြလဲ",
+    "zh": "什么样的出狱人员会被选进清迈的监狱按摩项目？",
+    "de": "Was für Ex-Knackis werden für das Gefängnis-Massageprogramm in Chiang Mai ausgewählt?"
+   }
+  },
+  {
+   "c": "assistant",
+   "q": {
+    "en": "What is it like to live in Thailand as an autistic adult?",
+    "th": "การใช้ชีวิตในไทยในฐานะผู้ใหญ่ที่เป็นออทิสติกเป็นยังไง",
+    "my": "အော်တစ်ဇင်ရှိတဲ့ လူကြီးတစ်ယောက်အနေနဲ့ ထိုင်းမှာ နေရတာ ဘယ်လိုလဲ",
+    "zh": "作为自闭症成年人，在泰国生活是什么感觉？",
+    "de": "Wie ist es, als autistischer Erwachsener in Thailand zu leben?"
+   }
+  },
+  {
+   "c": "retire",
+   "q": {
+    "en": "What will the hardest part of living in Chiang Mai be for me?",
+    "th": "ส่วนที่ยากที่สุดของการอยู่เชียงใหม่สำหรับเราจะเป็นอะไร",
+    "my": "ချင်းမိုင်မှာ နေရတာ ကိုယ့်အတွက် အခက်ဆုံးအပိုင်းက ဘာဖြစ်မလဲ",
+    "zh": "在清迈生活，对我来说最难的会是什么？",
+    "de": "Was wird für mich das Schwierigste am Leben in Chiang Mai sein?"
+   }
+  }
+ ]
+}
