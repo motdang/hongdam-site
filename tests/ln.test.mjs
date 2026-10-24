@@ -72,8 +72,9 @@ const call = async (env, method, path, body) => (await onRequest({ env, params: 
 const row = (ref) => sql.prepare('SELECT state, paid_ref, pay FROM svc_buy WHERE ref = ?').get(ref)
 
 const on = { TASKS }
-// off while there is no Lightning Address
-assert.equal(PAY.lightning, '')
+// off while there is no Lightning Address (the real one, if set, comes back at the end)
+const realAddress = PAY.lightning
+PAY.lightning = ''
 assert.equal((await call(on, 'GET')).ln, false)
 PAY.lightning = 'shop@ln.test'
 assert.equal((await call(on, 'GET')).ln, true)
@@ -144,3 +145,4 @@ assert.equal((await call(on, 'POST', ['claim'], { ref: o4.ref, how: 'lightning' 
 assert.equal(row(o4.ref).paid_ref, 'lightning')
 await Promise.all(told)
 console.log('lightning edges ok')
+PAY.lightning = realAddress
