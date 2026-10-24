@@ -2,6 +2,9 @@
    The look is Isotype (her pick 2026-10-23): paper, ink, flat colour, hard edges, riso dingbats.
    A job is a line with stops: doodle dingbats on a coloured line, the black swan riding it. */
 
+/* an element marked hidden stays hidden whatever display its class gives it (the Buy page's count and add-on) */
+[hidden] { display: none !important }
+
 /* ---------------------------------------------------------------- shared tokens */
 :root {
   color-scheme: light dark;
@@ -137,7 +140,9 @@ doodle-dingbat[name^="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[na
 .tip { position: absolute; z-index: 6; bottom: calc(100% + .3rem); left: 50%; width: max-content; max-width: 11rem; padding: .3rem .55rem .32rem; border-radius: 4px;
   background: var(--fg); color: var(--bg2); font: 650 .8rem/1.2 var(--sys); text-align: center; pointer-events: none;
   opacity: 0; transform: translate(-50%, .25rem); transition: opacity .16s, transform .16s var(--ease) }
+.tip::before { content: attr(data-n) }
 .tip small { display: block; margin-top: .1rem; font: 500 .7rem/1.2 var(--sys); opacity: .72 }
+.tip small::before { content: attr(data-s) }
 .tip::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -4px; border: 4px solid transparent; border-top-color: var(--fg) }
 .stop:first-child .tip { left: 0; transform: translate(0, .25rem) }
 .stop:first-child .tip::after { left: calc(var(--stop) / 2) }
@@ -169,6 +174,8 @@ doodle-dingbat[name^="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[na
   background: var(--bg2); box-shadow: var(--card-shadow) }
 .card .job { grid-column: 1 / -1; margin: 0 0 1.05rem }
 .card h3 { grid-column: 1; margin: 0; font: 680 1.14rem/1.3 var(--sys); letter-spacing: -.005em }
+.card h3 a { color: inherit; text-decoration: none }
+.card h3 a:hover, .card h3 a:focus-visible { text-decoration: underline; text-underline-offset: .18em }
 .card .price { grid-column: 2; max-width: 11rem; margin: 0; font: 700 1.14rem/1.3 var(--font-num); font-variant-numeric: tabular-nums; text-align: right; text-wrap: balance }
 .card .l { grid-column: 1 / -1; margin: .3rem 0 0; color: var(--mut) }
 .card > p:not(.price):not(.l) { grid-column: 1 / -1; margin: .3rem 0 0 }
@@ -179,6 +186,9 @@ doodle-dingbat[name^="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[na
 /* price ladder: the steps a price can take, today's lit; this month's bookings as dots */
 .ladder summary { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; list-style: none; cursor: pointer; font: 600 .82rem/1.2 var(--font-l); color: var(--mut) }
 .ladder summary::-webkit-details-marker { display: none }
+/* a ? says the meter opens; × closes it */
+.ladder summary::after { content: "?"; display: inline-grid; place-items: center; width: 1.1rem; height: 1.1rem; border-radius: 50%; box-shadow: inset 0 0 0 1.5px currentColor; font: 700 .72rem/1 var(--sys) }
+.ladder[open] summary::after { content: "×" }
 .ladder .bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 1.1rem }
 .ladder .bars i { width: 4px; border-radius: 1px; background: color-mix(in oklab, var(--fg) 20%, transparent) }
 .ladder .bars i.lo { background: color-mix(in oklab, var(--line, var(--fg)) 45%, transparent) }

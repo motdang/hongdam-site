@@ -17,6 +17,7 @@
   "en": {
    "title": "Hongdam — we do it for you · Chiang Rai",
    "desc": "Phone calls in Thai, repairs booked, translation, websites, shipping and more. Pick it, pay, we start.",
+   "lede": "Phone calls in Thai, repairs booked, translation, websites, shipping and more.",
    "tagline": "We do it for you. Pick it, pay, we start.",
    "how": [
     "1 Pick",
@@ -98,11 +99,12 @@
    "rateBetter": "Could be better",
    "rateText": "Your correction (you may leave this empty)",
    "rateSend": "Send",
-   "rateThanks": "Thank you. The team reads every one."
+   "rateThanks": "Thank you. Sent to the team."
   },
   "th": {
    "title": "หงส์ดำ — เราทำให้ · เชียงราย",
    "desc": "โทรแทน หาช่าง แปลเอกสาร ทำเว็บ ส่งของ และอีกมาก เลือก จ่าย แล้วเราเริ่มงาน",
+   "lede": "โทรแทน หาช่าง แปลเอกสาร ทำเว็บ ส่งของ และอีกมาก",
    "tagline": "เราทำให้ เลือก จ่าย แล้วเราเริ่มงาน",
    "how": [
     "1 เลือก",
@@ -184,11 +186,12 @@
    "rateBetter": "ปรับให้ดีขึ้นได้",
    "rateText": "คำแก้ของคุณ (เว้นว่างได้)",
    "rateSend": "ส่ง",
-   "rateThanks": "ขอบคุณ ทีมอ่านทุกข้อความ"
+   "rateThanks": "ขอบคุณ ส่งถึงทีมแล้ว"
   },
   "my": {
    "title": "Hongdam — ကျွန်ုပ်တို့ လုပ်ပေးပါသည် · ချင်းရိုင်",
    "desc": "ထိုင်းလို ဖုန်းခေါ်ပေးခြင်း၊ ပြင်ဆင်သူ ရှာပေးခြင်း၊ ဘာသာပြန်၊ ဝက်ဘ်ဆိုက်၊ ပို့ဆောင်ရေးနှင့် အခြား။ ရွေးပါ၊ ပေးချေပါ၊ ကျွန်ုပ်တို့ စတင်ပါမည်။",
+   "lede": "ထိုင်းလို ဖုန်းခေါ်ပေးခြင်း၊ ပြင်ဆင်သူ ရှာပေးခြင်း၊ ဘာသာပြန်၊ ဝက်ဘ်ဆိုက်၊ ပို့ဆောင်ရေးနှင့် အခြား။",
    "tagline": "ကျွန်ုပ်တို့ လုပ်ပေးပါသည်။ ရွေးပါ၊ ပေးချေပါ၊ ကျွန်ုပ်တို့ စတင်ပါမည်။",
    "how": [
     "1 ရွေးပါ",
@@ -270,11 +273,12 @@
    "rateBetter": "ပိုကောင်းနိုင်သည်",
    "rateText": "သင့်ပြင်ဆင်ချက် (ချန်ထားနိုင်သည်)",
    "rateSend": "ပို့ရန်",
-   "rateThanks": "ကျေးဇူးတင်ပါသည်။ အဖွဲ့က အားလုံးကို ဖတ်ပါသည်။"
+   "rateThanks": "ကျေးဇူးတင်ပါသည်။ အဖွဲ့ထံ ပို့ပြီးပါပြီ။"
   },
   "zh": {
    "title": "Hongdam — 我们替您办 · 清莱",
    "desc": "泰语代打电话、找师傅、翻译、网站、发货等。选好、付款，我们就开工。",
+   "lede": "泰语代打电话、找师傅、翻译、网站、发货等。",
    "tagline": "我们替您办。选好、付款，我们就开工。",
    "how": [
     "1 选择",
@@ -356,11 +360,12 @@
    "rateBetter": "可以更好",
    "rateText": "您的修改（可留空）",
    "rateSend": "发送",
-   "rateThanks": "谢谢。团队会逐条阅读。"
+   "rateThanks": "谢谢。已发送给团队。"
   },
   "de": {
    "title": "Hongdam — wir erledigen das für Sie · Chiang Rai",
    "desc": "Telefonate auf Thai, Handwerker gebucht, Übersetzungen, Websites, Versand und mehr. Auswählen, bezahlen, wir legen los.",
+   "lede": "Telefonate auf Thai, Handwerker gebucht, Übersetzungen, Websites, Versand und mehr.",
    "tagline": "Wir erledigen das für Sie. Auswählen, bezahlen, wir legen los.",
    "how": [
     "1 Auswählen",
@@ -442,7 +447,7 @@
    "rateBetter": "Geht besser",
    "rateText": "Ihre Korrektur (darf leer bleiben)",
    "rateSend": "Senden",
-   "rateThanks": "Danke. Das Team liest jede Antwort."
+   "rateThanks": "Danke. An das Team gesendet."
   }
  },
  "units": {

@@ -321,6 +321,7 @@ def page(lang):
     main = f"""<main>
 {F.lead("translation", lang, h1=t["h1"], sub=t["sub"], sub_lang=lang).rstrip()}
 <p class="lede">{e(t["lede"])}</p>
+<div class="go"><a class="btn" href="#prices">{e(PRICE_H[lang])}</a> <a class="btn alt" href="#quote">{e(t["form_h"])}</a> <small>{e(PRICES[lang][0][0])} <span class="amt amt-th" data-live="services/{PRICES[lang][0][3]}">{e(PRICES[lang][0][1])}</span></small></div>
 
 <section>
   <h2>{e(t["pairs_h"])}</h2>
@@ -334,7 +335,7 @@ def page(lang):
   <div class="col"><h2>{e(t["talk_h"])}</h2><ul>{lis(t["talk"])}</ul></div>
 </section>
 
-<section>
+<section id="prices">
   <h2>{e(PRICE_H[lang])}</h2>
   <div class="prices">{prices}</div>
   <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="{lang}" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{_json.dumps(_BOX, separators=(",", ":"))}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
