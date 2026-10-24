@@ -66,6 +66,11 @@ def inline(s, n_sources=0):
     return re.sub("\x00(\\d+)\x00", lambda m: keep[int(m.group(1))], s)
 
 
+def M_plain(s):
+    """A table heading as plain words, for the label a stacked cell shows on a phone."""
+    return re.sub(r"[*`]|\[(\d{1,2})\](?!\()", "", _LINK.sub(r"\1", s)).strip()
+
+
 def chart(spec):
     """A bar chart as a table: one row per bar, its length the value's share of the largest."""
     c = json.loads(spec)
@@ -148,7 +153,8 @@ def html(body, n_sources=0):
             out.append('<div class="tbl"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (
                 "".join('<th scope="col">%s</th>' % inline(h, n_sources) for h in head),
                 "".join("<tr>%s</tr>" % "".join(
-                    ('<th scope="row">%s</th>' if k == 0 else "<td>%s</td>") % inline(c, n_sources) for k, c in enumerate(r)) for r in rows)))
+                    ('<th scope="row">%s</th>' if k == 0 else '<td data-h="%s">%%s</td>' % E(M_plain(head[k]) if k < len(head) else "")) % inline(c, n_sources)
+                    for k, c in enumerate(r)) for r in rows)))
             continue
         if not ln.strip():
             flush()

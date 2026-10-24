@@ -57,7 +57,7 @@ body.studio .s-short h1 { font-size: clamp(2.8rem, 10vw, 5.4rem) }
   font-size: clamp(3.6rem, 13vw, 8.5rem); line-height: 0; transition: transform .5s var(--ease) }
 @media (min-width: 48rem) { .s-swan { right: 2rem } }
 .s-swan.dip { transform: translateY(.12em) rotate(-8deg) }
-@media (max-width: 30rem) { .s-front .s-hero h1 { max-width: 7.5ch } }
+@media (max-width: 30rem) { .s-front .s-hero h1 { max-width: 7.5ch } .s-front .s-kicker { padding-right: 5.2rem } }
 
 /* ---------------------------------------------------------------- buttons */
 .s-btn { display: inline-flex; align-items: center; min-height: 2.75rem; padding: .55rem 1.15rem; border-radius: 6px;
@@ -177,6 +177,16 @@ sup.ref a { display: inline-block; min-width: 1.35em; padding: .1em .3em; border
 .s-body th, .s-body td { padding: .55rem .6rem; border-bottom: 1px solid var(--faint); text-align: left; vertical-align: top }
 .s-body thead th { font: 700 .72rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mut); border-bottom: 2px solid var(--fg) }
 .s-body tbody th { font-weight: 650 }
+/* a table of three or more columns stacks on a phone: each row a block, each cell under its column's name */
+@media (max-width: 40rem) {
+  .tbl table:has(thead th:nth-child(3)) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%) }
+  .tbl table:has(thead th:nth-child(3)), .tbl table:has(thead th:nth-child(3)) tbody,
+  .tbl table:has(thead th:nth-child(3)) tr, .tbl table:has(thead th:nth-child(3)) th, .tbl table:has(thead th:nth-child(3)) td { display: block }
+  .tbl table:has(thead th:nth-child(3)) tr { padding: .7rem 0; border-bottom: 1px solid var(--faint) }
+  .tbl table:has(thead th:nth-child(3)) th, .tbl table:has(thead th:nth-child(3)) td { padding: .15rem 0; border: 0 }
+  .tbl table:has(thead th:nth-child(3)) tbody th { font-size: 1.02rem }
+  .tbl table:has(thead th:nth-child(3)) td::before { content: attr(data-h); display: block; margin-top: .3rem; font: 700 .68rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mut) }
+}
 figure.chart { margin: 1.8rem 0; padding: 1.1rem 1.1rem .9rem; border: 1px solid var(--faint); border-radius: 6px; background: var(--bg2) }
 figure.chart caption { margin-bottom: .8rem; text-align: left; font: 700 .95rem/1.3 var(--s-sans); letter-spacing: -.01em }
 figure.chart .lo { font-weight: 500; color: var(--mut) }
