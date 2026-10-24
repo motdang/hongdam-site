@@ -1,0 +1,30 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Pimp my GitHub",
+ "url": "https://hongdam.net/github/",
+ "provider": {
+  "@id": "https://hongdam.net/#org"
+ },
+ "areaServed": "Worldwide",
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "Profile",
+   "price": "3000",
+   "priceCurrency": "THB"
+  },
+  {
+   "@type": "Offer",
+   "name": "Profile and three repos",
+   "price": "10000",
+   "priceCurrency": "THB"
+  },
+  {
+   "@type": "Offer",
+   "name": "The whole account",
+   "price": "30000",
+   "priceCurrency": "THB"
+  }
+ ]
+}

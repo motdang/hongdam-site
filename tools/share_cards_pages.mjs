@@ -1,8 +1,12 @@
 #!/usr/bin/env node
-// Link-preview pictures (1200 × 630) for the pages tools/share_cards.mjs does not draw: Buy, Ask, the missing
-// page, the stats page and invoices in the Isotype look of the shop; and two client pages in their own look, by
-// ../../share-cards/render.mjs with the page's own photograph. Run after tools/build_shop.py.
-//   node tools/share_cards_pages.mjs
+// Link-preview pictures (1200 × 630) for the pages tools/share_cards.mjs does not draw: Buy, Ask, and every page
+// in data/pages.json (own, red team, market, bots, GitHub, translation in four languages, tasks, the task graph,
+// events, portfolio, stats, invoices, the missing page) in the Isotype look of the shop, each with its own mark and
+// stops; and two client pages in their own look, by ../../share-cards/render.mjs with the page's own photograph.
+//   node tools/share_cards_pages.mjs            all of them
+//   node tools/share_cards_pages.mjs own bots   only these (named by their file under docs/og/), no client pages
+//   node tools/share_cards_pages.mjs --jobs f   the cards listed in f, [[out, big, small, sub, stops, hue, mark], ...]
+//                                               (tools/build_task_cards.py), no client pages
 import fs from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
@@ -22,17 +26,19 @@ import { execFileSync } from 'node:child_process'
 const ROOT = path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), '..')
 const DOCS = path.join(ROOT, 'docs')
 const ALL = path.resolve(ROOT, '../../doodle-dingbats/dingbats.min.js')   // every glyph; only the card renderer loads it
+const PAGES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/pages.json'), 'utf8')).pages
+const HUE = Object.fromEntries([...fs.readFileSync(path.join(DOCS, 'assets/shop.css'), 'utf8').matchAll(/--c-([a-z]+): oklch\(var\(--lL\) var\(--lC\) (\d+)\)/g)].map((m) => [m[1], +m[2]]))
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
 const db = (g) => `<doodle-dingbat name="${esc(g)}" play="still"></doodle-dingbat>`
-const line = (stops, hue) => `<div class="line" style="--l:oklch(.6 .17 ${hue})">${stops.map((g) => `<span class="st">${db(g)}<i></i></span>`).join('')}<span class="sw">${db('hongsa-stand')}</span></div>`
+const line = (stops, hue) => `<div class="line" style="--l:${hue == null ? '#121212' : `oklch(.6 .17 ${hue})`}">${stops.map((g) => `<span class="st">${db(g)}<i></i></span>`).join('')}<span class="sw">${db('hongsa-stand')}</span></div>`
 
 // the same card as tools/share_cards.mjs draws for the front page and the categories
 const page = (big, small, sub, stops, hue, mark) => `<!doctype html><meta charset="utf-8">
 <style>
-*{box-sizing:border-box} body{margin:0;width:1200px;height:630px;background:#F1EDE4;color:#121212;font-family:Futura,"Futura PT",Jost,"Avenir Next","Noto Sans Thai",Thonburi,sans-serif;--db-look:riso}
+*{box-sizing:border-box} body{margin:0;width:1200px;height:630px;background:#F1EDE4;color:#121212;font-family:Futura,"Futura PT",Jost,"Avenir Next","Noto Sans Thai",Thonburi,"Noto Sans Myanmar","Myanmar Sangam MN",sans-serif;--db-look:riso}
 .f{position:absolute;inset:34px;border:4px solid #121212;box-shadow:12px 12px 0 #121212;background:#FFFDF8;padding:46px 54px}
-h1{margin:0;font-size:${big.length > 16 ? 76 : 104}px;line-height:.98;letter-spacing:-.035em;text-transform:lowercase;max-width:760px}
-.th{margin:14px 0 0;font:600 40px/1.2 Thonburi,"Noto Sans Thai",sans-serif;color:#4A4640}
+h1{margin:0;font-size:${big.length > 40 ? 52 : big.length > 26 ? 62 : big.length > 16 ? 76 : 104}px;line-height:${/[\u0E00-\u0E7F\u1000-\u109F]/.test(big) ? 1.3 : .98};letter-spacing:-.035em;text-transform:lowercase;max-width:760px}
+.th{margin:14px 0 0;max-width:760px;font:600 40px/1.3 Thonburi,"Noto Sans Thai","Noto Sans Myanmar","Myanmar Sangam MN",sans-serif;color:#4A4640}
 .sub{margin:18px 0 0;font-size:28px;color:#4A4640;max-width:700px}
 .mark{position:absolute;right:58px;top:40px;font-size:190px;line-height:0}
 .line{position:absolute;left:54px;right:300px;bottom:58px;height:120px;display:flex;justify-content:space-between;align-items:flex-start}
@@ -49,10 +55,17 @@ h1{margin:0;font-size:${big.length > 16 ? 76 : 104}px;line-height:.98;letter-spa
 const CARDS = [
   ['og/shop/buy', 'buy', 'ซื้อ · 购买', 'Pick it, pay, we start. PromptPay, PayPal or Wise.', ['send', 'coin', 'gears', 'done'], 145, 'cart'],
   ['og/shop/ask', 'write to us', 'เขียนถึงเรา · 给我们留言', 'Something not on the list? Write what you need.', ['chat', 'envelope', 'paper-boat'], 250, 'mailbox'],
-  ['og/404', 'not found', 'ไม่พบหน้านี้', 'No page at this address. The shop is one tap away.', ['footsteps', 'compass', 'search', 'home'], 60, 'hongsa'],
-  ['og/stats', 'stats', 'ตัวเลข', 'What people did on hongdam.net.', ['abacus', 'eye', 'check'], 300, 'abacus'],
-  ['og/invoice', 'invoice', 'ใบแจ้งหนี้', 'Hongdam · Chiang Rai, Thailand', ['page', 'coin', 'done'], 32, 'coin'],
 ]
+// every page in data/pages.json, one card per language where it has more than one
+for (const p of Object.values(PAGES)) {
+  for (const c of 'og' in p.card ? [p.card] : Object.values(p.card)) {
+    CARDS.push([c.og.replace(/\.jpg$/, ''), c.big, c.small, c.sub, p.stops, p.cat ? HUE[p.cat] : null, p.mark])
+  }
+}
+const JOBS = process.argv[2] === '--jobs' ? JSON.parse(fs.readFileSync(process.argv[3], 'utf8')) : null
+const ONLY = JOBS ? ['--jobs'] : process.argv.slice(2)
+if (JOBS) CARDS.splice(0, CARDS.length, ...JOBS)
+else if (ONLY.length) CARDS.splice(0, CARDS.length, ...CARDS.filter(([out]) => ONLY.includes(out.replace(/^og\/(shop\/)?/, ''))))
 
 const EXE = chromeExe()
 const browser = await chromium.launch({ executablePath: EXE })
@@ -67,6 +80,7 @@ for (const [out, ...a] of CARDS) {
 }
 fs.unlinkSync(tmp)
 await browser.close()
+if (ONLY.length) { console.log(CARDS.length, 'cards'); process.exit(0) }
 
 // Two client pages that borrowed their parent page's card, now each with its own, in that page's look.
 const KIT = path.resolve(ROOT, '../../share-cards')

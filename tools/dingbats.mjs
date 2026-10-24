@@ -69,6 +69,9 @@ const always = [...SWANS, 'search', ...LOOKS.master.map((m) => m.db), ...LOOKS.t
 const groups = { front: [...always, ...Object.values(LOOKS.doors)] }
 for (const c of SHOP.cards) if (c.pop) groups.front.push(...pic(c))
 for (const cat of SHOP.cats) groups[cat.id] = [...always, ...(LOOKS.doors[cat.id] ? [LOOKS.doors[cat.id]] : []), ...SHOP.cards.filter((c) => c.cat === cat.id).flatMap(pic)]
+// the pages outside the shop (data/pages.json, tools/pages.py): group p-<id>, the page's mark, its picture's stops and its other glyphs
+const PAGES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/pages.json'), 'utf8')).pages
+for (const [id, p] of Object.entries(PAGES)) groups['p-' + id] = [...always, p.mark, ...p.stops, ...(p.glyphs || [])]
 
 fs.mkdirSync(OUT, { recursive: true })
 for (const f of fs.readdirSync(OUT)) fs.unlinkSync(path.join(OUT, f))

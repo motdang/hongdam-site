@@ -5,7 +5,7 @@ Writes:
   functions/api/_packs.js   the probes the /api/redteam function runs
   docs/market/packs.json    every pack, for the runner and for download
   docs/market/<id>.json     one pack
-  docs/market/index.html    the market page
+  docs/market/index.html    the market page, in the shop's frame (tools/pages.py)
 
 Counts on the page are computed here, from the pack files.
 """
@@ -35,7 +35,7 @@ def load():
 
 
 def price(p):
-    return "Free" if not p.get("price_usd") else f"${p['price_usd']:,}"
+    return "Free" if not p.get("price_usd") else f'<span class="amt amt-us">US${p["price_usd"]:,}</span>'
 
 
 def mix(p):
@@ -59,17 +59,24 @@ def row(p):
         <div><dt>Licence</dt><dd>{e(p['licence'])}</dd></div>
         <div><dt>Price</dt><dd>{price(p)}</dd></div>
       </dl>
-      <p class="acts"><a class="btn" href="/redteam?pack={e(p['id'])}">Run</a>
+      <p class="acts"><a class="btn" href="/redteam/?pack={e(p['id'])}">Run</a>
         <a href="/market/{e(p['id'])}.json" download>JSON</a></p>
     </article>"""
 
 
 def page(packs):
+    import sys
+    sys.path.insert(0, str(ROOT / "tools"))
+    import pages as F
+    P = F.PAGES["market"]
     total = sum(len(p["probes"]) for p in packs)
     tmpl = (ROOT / "tools" / "market.tmpl.html").read_text()
-    return (tmpl.replace("{{PACKS}}", "".join(row(p) for p in packs))
+    body = tmpl[tmpl.index("<main>"):]
+    body = (body.replace("{{lead}}", F.lead("market", "en").rstrip("\n"))
+                .replace("{{PACKS}}", "".join(row(p) for p in packs))
                 .replace("{{NPACKS}}", str(len(packs)))
                 .replace("{{NPROBES}}", str(total)))
+    return (F.head("market", "en", P["title"], P["desc"], P["path"]) + F.body("market") + F.top("en") + body + F.foot("market", "en"))
 
 
 def main():

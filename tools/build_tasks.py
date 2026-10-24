@@ -88,7 +88,7 @@ def write_json(g):
 
 
 # ── the drawing ─────────────────────────────────────────────────────────────
-COL = {"robot": "#7fc8a0", "human": "#ff6a45", "both": "#e7be6a"}
+# a dot's colour comes from its class (by-robot, by-human, by-both) in docs/assets/pages.css, light and dark
 
 
 def svg(g):
@@ -126,17 +126,17 @@ def svg(g):
             rot = deg + 180 if flip else deg
             anchor = "end" if flip else "start"
             dx = -12 if flip else 12
-            parts.append(f'<a href="{href}"><circle cx="{x:.0f}" cy="{y:.0f}" r="7" fill="{COL[n["by"]]}"/>'
+            parts.append(f'<a href="{href}"><circle class="by-{n["by"]}" cx="{x:.0f}" cy="{y:.0f}" r="7"/>'
                          f'<text class="leaf" transform="translate({x:.0f},{y:.0f}) rotate({rot:.1f})" x="{dx}" dy="5" '
                          f'text-anchor="{anchor}">{e(n["en"])}</text><title>{e(n["th"])}</title></a>')
         else:
             deg = math.degrees(t)
             flip = 90 < (deg % 360) < 270
             rot = deg + 180 if flip else deg
-            parts.append(f'<a href="{href}"><circle class="root" cx="{x:.0f}" cy="{y:.0f}" r="14" fill="{COL[n["by"]]}"/>'
+            parts.append(f'<a href="{href}"><circle class="root by-{n["by"]}" cx="{x:.0f}" cy="{y:.0f}" r="14"/>'
                          f'<text class="root" transform="translate({x:.0f},{y:.0f}) rotate({rot:.1f})" x="{18 if flip else -18}" dy="7" '
                          f'text-anchor="{"start" if flip else "end"}">{e(n["en"])}</text><title>{e(n["th"])}</title></a>')
-    parts.append(f'<circle cx="{C}" cy="{C}" r="44" fill="#211710" stroke="#e7be6a"/>'
+    parts.append(f'<circle class="hub" cx="{C}" cy="{C}" r="44"/>'
                  f'<text class="leaf" x="{C}" y="{C + 6}" text-anchor="middle">งาน · Tasks</text>')
     js_pos = {k: [round(v[0]), round(v[1]), round(v[2], 3)] for k, v in pos.items()}
     return (f'<svg id="g" viewBox="-260 -60 {W + 520} {W + 120}" role="img" aria-label="Task graph">'
@@ -154,45 +154,20 @@ def write_page(g):
                       f' <i class="by-{k["by"]}">{k["by"]}</i></li>' for k in ks)
         groups.append(f'<section class="grp"><h2><a href="/tasks/c/{r["id"]}">{e(r["en"])}</a> <span lang="th">{e(r["th"])}</span></h2><ul>{lis}</ul></section>')
     n_cat = sum(1 for n in g["nodes"] if n.get("up"))
-    page = f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Task graph · Hongdam</title>
-<meta name="description" content="{len(roots)} groups and {n_cat} kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer, as a graph that grows when posters name new work.">
-<meta property="og:title" content="Task graph · กราฟงาน · Hongdam"><meta property="og:description" content="{len(roots)} groups and {n_cat} kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer.">
-<meta property="og:image" content="https://hongdam.net/og/tasks-graph.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Card: Task graph, the kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/tasks-graph.jpg"><meta name="twitter:image:alt" content="Card: Task graph, the kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer.">
-<meta property="og:type" content="website"><meta property="og:url" content="https://hongdam.net/tasks/graph/">
-<link rel="icon" href="/assets/favicon.svg"><link rel="canonical" href="https://hongdam.net/tasks/graph/">
-<link rel="alternate" type="application/json" href="/tasks/graph.json">
-<link rel="stylesheet" href="/assets/rt.css">
-<style>
- #g{{width:100%;height:auto;background:var(--lacquer-2);border:1px solid var(--line);border-radius:12px;touch-action:pinch-zoom}}
- #g line.up{{stroke:rgba(231,190,106,.28);stroke-width:1.5}}
- #g path.rel{{fill:none;stroke:rgba(127,200,160,.35);stroke-width:1.5;stroke-dasharray:6 6}}
- #g text.leaf{{fill:#cdbfa4;font-size:17px}} #g text.root{{fill:#e7be6a;font-size:21px;font-weight:700}}
- #g text.rootth{{fill:#c89a45;font-size:20px}} #g a:hover text{{fill:#f2e7d3}}
- #g .new circle{{fill:none;stroke:#f2e7d3;stroke-dasharray:4 3;stroke-width:2}} #g .new text{{fill:#f2e7d3;font-size:17px;font-style:italic}}
- .key{{display:flex;gap:18px;flex-wrap:wrap;font-size:15px;color:var(--cream-dim);margin:12px 0 28px}}
- .key b{{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}}
- .grps{{columns:280px;column-gap:28px}} .grp{{break-inside:avoid;margin-bottom:26px}}
- .grp h2{{font-size:20px;margin-bottom:6px}} .grp ul{{list-style:none}} .grp li{{font-size:15px;padding:3px 0;border-top:1px solid var(--line)}}
- .grp li span{{color:var(--cream-dim)}} .grp i{{font-style:normal;font-size:12px;letter-spacing:.08em;margin-left:4px}}
- .by-robot{{color:#7fc8a0}} .by-human{{color:#ff6a45}} .by-both{{color:#e7be6a}}
- .acts{{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}}
- #newlist{{color:var(--cream-dim);font-size:15px;margin:-10px 0 24px}}
- footer{{max-width:980px;margin:0 auto;padding:24px 16px 48px;color:var(--cream-dim);font-size:15px}}
-</style></head><body>
-<header class="top"><a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-<nav><a href="/tasks">Tasks</a><a href="/translation/">Translation</a><a href="/own">Own</a><a href="/market">Market</a></nav></header>
-<main>
-<h1>Task graph <span>กราฟงาน</span></h1>
+    import sys
+    sys.path.insert(0, str(ROOT / "tools"))
+    import pages as F
+    desc = f"{len(roots)} groups and {n_cat} kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer, as a graph that grows when posters name new work."
+    main = f"""<main>
+{F.lead("tasks-graph", "en", h1="Task graph", sub="กราฟงาน").rstrip()}
 <p class="lede">{len(roots)} groups, {n_cat} kinds of work. A dot opens its tasks.<br><span lang="th">{len(roots)} กลุ่ม {n_cat} ประเภทงาน แตะจุดเพื่อดูงาน</span></p>
-<div class="acts"><a class="btn" href="/tasks#post">Post a task · ลงงาน</a><a class="btn" href="/tasks#ours">Take a task · รับงาน</a></div>
+<div class="acts"><a class="btn" href="/tasks#post">Post a task · ลงงาน</a><a class="btn alt" href="/tasks#ours">Take a task · รับงาน</a></div>
 {drawing}
-<div class="key"><span><b style="background:#7fc8a0"></b>robot · บอท</span><span><b style="background:#ff6a45"></b>human · คน</span><span><b style="background:#e7be6a"></b>both · ทั้งสอง</span><span>- - related · เกี่ยวข้อง</span><span>◌ named by a poster · ผู้ลงงานตั้งชื่อ</span></div>
+<div class="key"><span><b class="by-robot"></b>robot · บอท</span><span><b class="by-human"></b>human · คน</span><span><b class="by-both"></b>both · ทั้งสอง</span><span>- - related · เกี่ยวข้อง</span><span>◌ named by a poster · ผู้ลงงานตั้งชื่อ</span></div>
 <p id="newlist"></p>
 <div class="grps">{''.join(groups)}</div>
+<p class="note"><a href="/tasks/graph.json">graph.json</a> · nodes and typed edges (part_of, answered_by, done_by, related)</p>
 </main>
-<footer><a href="/tasks/graph.json">graph.json</a> · nodes and typed edges (part_of, answered_by, done_by, related) · <span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai</footer>
 <script>
 (function () {{
   var P = {json.dumps(js_pos)}, NS = 'http://www.w3.org/2000/svg';
@@ -202,7 +177,7 @@ def write_page(g):
       var p = P[n.up] || [900, 900, 0], k = (seen[n.up] = (seen[n.up] || 0) + 1);
       var t = p[2] + 0.06 * k, x = 900 + 820 * Math.cos(t), y = 900 + 820 * Math.sin(t);
       var a = document.createElementNS(NS, 'a'); a.setAttribute('href', '/tasks/' + n.task); a.setAttribute('class', 'new');
-      a.innerHTML = '<line x1="' + p[0] + '" y1="' + p[1] + '" x2="' + x + '" y2="' + y + '" stroke="#f2e7d3" stroke-dasharray="4 4"/>' +
+      a.innerHTML = '<line x1="' + p[0] + '" y1="' + p[1] + '" x2="' + x + '" y2="' + y + '" stroke-dasharray="4 4"/>' +
         '<circle cx="' + x + '" cy="' + y + '" r="7"/>';
       var tx = document.createElementNS(NS, 'text'); tx.setAttribute('x', x + 12); tx.setAttribute('y', y + 5); tx.textContent = n.name;
       a.appendChild(tx); g.appendChild(a); names.push(n.name);
@@ -211,8 +186,10 @@ def write_page(g):
   }}).catch(function () {{}});
 }})();
 </script>
-</body></html>
 """
+    page = (F.head("tasks-graph", "en", "Task graph · Hongdam", desc, "tasks/graph/",
+                   extra='<link rel="alternate" type="application/json" href="/tasks/graph.json">') +
+            F.body("tasks-graph") + F.top("en") + main + F.foot("tasks-graph", "en"))
     (DOCS / "graph").mkdir(parents=True, exist_ok=True)
     (DOCS / "graph" / "index.html").write_text(page)
 
