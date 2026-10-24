@@ -116,7 +116,8 @@ const SW = { cx: 54, RN: -1, RF: -11, name: 'hongsa-go' }, DAM = { cx: 46, RN: 0
 
 // Footfalls from feet at n0, f0 (the body at X0) to standing at X1, each step about g0 long. all[i] = [0 near | 1 far, x]:
 // all[0] the foot behind, all[1] the one in front, then one per step. XB[k]: where the body is when footfall k + 1 lands.
-function footPlan(n0, f0, X0, X1, g0, B) {
+// w(x), when given, is the step's length there against the average: steps run longer where it goes faster.
+function footPlan(n0, f0, X0, X1, g0, B, w) {
   const rear = n0 < f0 ? 0 : 1, all = [[rear, rear ? f0 : n0], [1 - rear, rear ? n0 : f0]], p0 = all[1][1], mid = -(B.RN + B.RF) / 2
   let best = null
   for (let K = 1; K <= 90; K++) {
@@ -126,10 +127,17 @@ function footPlan(n0, f0, X0, X1, g0, B) {
     const from = K === 1 ? all[0][1] : K === 2 ? p0 : pP - g
     if (pL - from < 0.5) continue
     const sc = Math.abs((K > 1 ? g : pL - from) - g0)
-    if (!best || sc < best.sc) best = { sc, K, g, pL, last }
+    if (!best || sc < best.sc) best = { sc, K, g, pL, pP, last }
   }
   if (!best) return null
-  for (let k = 1; k < best.K; k++) all.push([k % 2 ? rear : 1 - rear, p0 + k * best.g])
+  let at = (k) => p0 + k * best.g
+  if (w && best.K > 2) {   // the same count of steps, spaced by w
+    const N = 64, xs = [], cum = [0]
+    for (let i = 0; i <= N; i++) xs.push(p0 + (best.pP - p0) * i / N)
+    for (let i = 1; i <= N; i++) cum.push(cum[i - 1] + (xs[i] - xs[i - 1]) / Math.max(0.3, w((xs[i] + xs[i - 1]) / 2)))
+    at = (k) => { const T = cum[N] * k / (best.K - 1); let i = 1; while (i < N && cum[i] < T) i++; return xs[i - 1] + (xs[i] - xs[i - 1]) * cl((T - cum[i - 1]) / ((cum[i] - cum[i - 1]) || 1), 0, 1) }
+  }
+  for (let k = 1; k < best.K; k++) all.push([k % 2 ? rear : 1 - rear, at(k)])
   all.push([best.last, best.pL])
   const XB = [X0]
   for (let k = 2; k < all.length; k++) XB.push((all[k][1] + all[k - 1][1]) / 2 + mid)
@@ -151,37 +159,53 @@ function feetAt(F, X, lift) {
   let k = 0
   while (k < XB.length - 2 && X > XB[k + 1]) k++
   const v = cl((X - XB[k]) / ((XB[k + 1] - XB[k]) || 1), 0, 1), st = all[k + 1], sw = all[k + 2], from = all[k][1], out = []
-  out[st[0]] = [st[1] - X, 0, 0, 0.45]
+  // her word 2026-10-24: "flappy pink/red feet". The planted foot slaps down wide and settles; the lifted one folds,
+  // hangs toes down and flops as it swings, and opens flat again to land
+  out[st[0]] = [st[1] - X, 0, 0, 1 + 0.25 * (1 - sm(sg(v, 0, 0.3)))]
   const len = sw[1] - from, b = bp(v)
-  out[sw[0]] = [from + len * sm(v) - X, lift * cl(Math.abs(len) / 20, 0.4, 1.5) * b, 0.5 * b, 0.3 + 0.15 * (1 - b)]
+  out[sw[0]] = [from + len * sm(v) - X, lift * cl(Math.abs(len) / 20, 0.4, 1.5) * b, 1.25 * Math.pow(b, 0.8) * (1 - sm(sg(v, 0.75, 1))) + 0.25 * Math.sin(TAU * 2 * v) * b, 1 - 0.85 * b]
   return { ft: out, v, k, side: st[0] ? -1 : 1 }
 }
-// speed that builds smoothly, holds and falls smoothly to a stop at D: [x, v, a] at t
-function trap(D, V, Tr) {
-  if (D < V * Tr) V = D / Tr
-  const Tc = D / V - Tr, T = 2 * Tr + Tc, w = Math.PI / Tr
-  const half = (t) => (t < Tr ? [V / 2 * (t - Math.sin(w * t) / w), V / 2 * (1 - Math.cos(w * t)), V * w / 2 * Math.sin(w * t)] : [V * Tr / 2 + V * (t - Tr), V, 0])
-  return { T, at: (t) => { t = cl(t, 0, T); if (t <= Tr + Tc) return half(t); const h = half(T - t); return [D - h[0], h[1], -h[2]] } }
+// The pace it wants at x on a leg of D: Vs, one for each stretch of the leg in turn, blended where they meet (her word
+// 2026-10-24: "Should go at different speeds, even on their own trip").
+const paceAt = (Vs, x, D) => { const n = Vs.length, f = x / D * n - 0.5, i = cl(Math.floor(f), 0, n - 1), j = Math.min(n - 1, i + 1); return f <= 0 ? Vs[0] : f >= n - 1 ? Vs[n - 1] : Vs[i] + (Vs[j] - Vs[i]) * sm(f - i) }
+// on foot: speed builds from a stand (A, units/s²), follows the pace it wants, and brakes (B) to stop at D;
+// [t, x, v, a] every 1/120 s, and vAt(x)
+function drive(D, Vs, A, B) {
+  const R = [], dt = 1 / 120
+  let x = 0, v = 0, t = 0
+  for (let k = 0; k < 6000; k++) {
+    const vt = Math.max(Math.min(paceAt(Vs, x, D), Math.sqrt(2 * B * Math.max(0, D - x))), D - x > 0.5 ? 5 : 0), a = cl((vt - v) / 0.2, -1.5 * B, A)
+    R.push([t, x, v, a])
+    v = Math.max(0, v + a * dt); x += v * dt; t += dt
+    if (D - x < 0.3 && v < 10) break
+  }
+  const k = D / Math.max(0.01, x); R.forEach((r) => { r[1] *= k; r[2] *= k; r[3] *= k }); R.push([t, D, 0, 0])
+  const vAt = (X) => { let lo = 0, hi = R.length - 1; while (hi - lo > 1) { const m = (lo + hi) >> 1; if (R[m][1] < X) lo = m; else hi = m } return R[lo][2] }
+  return { T: t, at: (tt) => samp(R, tt), vAt }
 }
 const samp = (R, t) => { const f = t * 120, i = cl(Math.floor(f), 0, R.length - 2), u = cl(f - i, 0, 1), A = R[i], B = R[i + 1] || A; return A.map((a, j) => a + (B[j] - a) * u) }
 
-// walking: the waddle rolls it onto each foot in turn and lifts it over the foot; hurrying, its neck reaches out and
-// its wings half open
+// walking: the waddle rolls it onto each foot in turn, lifts it over the foot, wags its tail and nods its head; its
+// steps run longer and quicker as it speeds up; hurrying, its neck reaches out and its wings half open
 function walkLeg(D, B, o) {
-  const F = footPlan(B.RN, B.RF, 0, D, o.g0, B), P = trap(D, o.V, o.Tr || 0.45)
+  const P = drive(D, o.Vs, o.A || 220, o.B || 160), vm = o.Vs.reduce((a, b) => a + b, 0) / o.Vs.length
+  const F = footPlan(B.RN, B.RF, 0, D, o.g0 * Math.pow(vm / 60, 0.35), B, (x) => Math.pow(Math.max(15, P.vAt(x)) / vm, 0.4))
   return { T: P.T, at(t) {
-    const [x, v, a] = P.at(t), f = F && feetAt(F, x, o.lift), hurry = o.hurry ? cl((v - 55) / 40, 0, 1) : 0
-    return { x, v, step: f ? f.k : 0, rig: { ft: f ? f.ft : null, bob: f ? o.bob * bp(f.v) : 0, roll: f ? o.roll * bp(f.v) * f.side : 0, tilt: 0.0006 * a,
-      hurry, wo: 0.5 * hurry, we: 0.55 + 0.12 * Math.sin(TAU * 7 * t), sway: f ? 0.07 * bp(f.v) * f.side - 0.0003 * a : 0 } }
+    const [, x, v, a] = P.at(t), f = F && feetAt(F, x, o.lift), hurry = o.hurry ? cl((v - 75) / 35, 0, 1) : 0, b = f ? bp(f.v) : 0
+    return { x, v, step: f ? f.k : 0, rig: { ft: f ? f.ft : null, bob: o.bob * b, roll: f ? o.roll * b * f.side : 0, tilt: 0.0006 * a, nod: f ? -0.8 * Math.sin(TAU * f.v) : 0,
+      hurry, sway: f ? 0.12 * b * f.side - 0.0003 * a : 0 } }
   } }
 }
 // swimming: each paddle stroke pushes, the water drags (more the faster it goes), so it surges and slows between
 // strokes; near the stop it stops paddling and glides in
+// strokes, harder and quicker where it wants to go faster
 function swimLeg(D, o) {
-  const f = o.f, b = 1.4, c = 0.004, b2 = 4.5, T0 = 2 * (b * o.V + c * o.V * o.V), dt = 1 / 120, R = []
+  const b = 1.4, c = 0.004, b2 = 4.5, dt = 1 / 120, R = []
   let x = 0, v = 0, ph = 0, t = 0, glide = false
   for (let i = 0; i < 6000; i++) {
     if (!glide && D - x <= Math.log(1 + c * v / b2) / c + 0.5) glide = true
+    const V = paceAt(o.Vs, x, D), T0 = 2 * (b * V + c * V * V), f = o.f * Math.pow(V / o.V0, 0.6)
     const cs = Math.cos(TAU * ph), a = (glide ? 0 : T0 * cs * cs) - (glide ? b2 : b) * v - c * v * v
     R.push([t, x, v, a, ph])
     v = Math.max(0, v + a * dt); x += v * dt; ph += (glide ? 0.3 : f) * dt; t += dt
@@ -196,9 +220,9 @@ function swimLeg(D, o) {
 // flying: a run with the wings beating hard (on water its feet slap the surface), off the ground once fast enough, low
 // and level with the neck straight out, wings set high to glide down, feet forward to land; on land it runs on a few
 // steps to a stop, on water it skis in on its feet and settles
-function flyLeg(D, water) {
+function flyLeg(D, water, pace = 1) {
   const d1 = cl(0.28 * D, 70, 140), d3 = cl(0.17 * D, 45, 80), xtd = D - d3, run = runPlan(d1, water ? 13 : 15, SW), d2 = xtd - run.xlo
-  const H = cl(0.07 * d2 + 12, 16, 30), Vto = 150, Vf = 230, Vl = 120, A1 = Vto * Vto / (2 * run.xlo), A3 = Vl * Vl / (2 * d3)
+  const H = cl(0.07 * d2 + 12, 16, 30), Vto = 150, Vf = 230 * pace, Vl = 120, A1 = Vto * Vto / (2 * run.xlo), A3 = Vl * Vl / (2 * d3)
   const out = water ? null : footPlan(xtd + 15, xtd + 9, xtd, D, 22, SW), lo = feetAt(run, run.xlo, 6).ft
   const flareAt = (x) => sm(sg(x, xtd - 0.38 * d2, xtd - 0.08 * d2))
   const R = [], dt = 1 / 120
@@ -300,12 +324,14 @@ function act(m, k, secs, at) {
     requestAnimationFrame(tick)
   })
 }
-// a leg for a body over D units: flight if asked, else a swim or a walk
-function legFor(m, D, kind) {
-  if (kind === 'fly') return flyLeg(D, m.water)
-  if (m.B === DAM) return m.water ? swimLeg(D, { V: 70, f: 2.6 }) : walkLeg(D, DAM, { g0: 9, V: 52, Tr: 0.3, lift: 5, bob: 2.4, roll: 0.13 })
-  if (m.water) return swimLeg(D, { V: D > 160 ? 120 : 95, f: D > 160 ? 1.7 : 1.45 })
-  return walkLeg(D, SW, { g0: D > 160 ? 25 : 20, V: D > 160 ? 95 : 65, lift: 8, bob: 2.4, roll: 0.08, hurry: true })
+// a leg for a body over D units: flight if asked, else a swim or a walk. Its pace changes on the way: one to three
+// stretches, each at a speed picked from R (a dawdle, a stroll, a trot, a hurry), times the swan's own pace
+function legFor(m, D, kind, R, pace) {
+  if (kind === 'fly') return flyLeg(D, m.water, 0.85 + 0.3 * R())
+  const k = D > 150 ? 2 + (R() < 0.5 ? 1 : 0) : 1 + (R() < 0.7 ? 1 : 0), pick = (list) => Array.from({ length: k }, () => list[Math.floor(R() * list.length)] * pace)
+  if (m.B === DAM) return m.water ? swimLeg(D, { Vs: pick([50, 70, 95]), f: 2.6, V0: 70 }) : walkLeg(D, DAM, { Vs: pick([32, 45, 60, 75]), g0: 9, A: 260, B: 200, lift: 5, bob: 2.6, roll: 0.15 })
+  if (m.water) return swimLeg(D, { Vs: pick([55, 85, 115, 150]), f: 1.55, V0: 100 })
+  return walkLeg(D, SW, { Vs: pick([30, 48, 68, 95, 120]), g0: 21, lift: 8, bob: 2.8, roll: 0.13, hurry: true })
 }
 
 async function ride(job) {
@@ -341,6 +367,7 @@ async function ride(job) {
     prev = m[0]
     return m
   })
+  const pace = 0.75 + 0.6 * R(), RD = rngOf('dam ' + lineKey(job, stops)), damPace = 0.8 + 0.4 * RD()   // each swan its own pace
   job.classList.add('riding', 'sim')
   job.dataset.end = end || 'stop'
   rider.style.left = spot(0)
@@ -357,7 +384,7 @@ async function ride(job) {
     dam = mover(job, rider.previousElementSibling, DAM, water)
   }
   // Dam sets off a moment after the swan, at its own pace, and gets there when it gets there
-  const follow = (L1) => { const d = dam; damGo = damGo.then(async () => { await sleep(250); const D = (L1 - d.L) / d.u(); if (D > 1) await go(d, legFor(d, D)); if (d.rider.isConnected) pose(d.el, water ? 'duckling-float' : 'duckling-wait') }) }
+  const follow = (L1) => { const d = dam; damGo = damGo.then(async () => { await sleep(250); const D = (L1 - d.L) / d.u(); if (D > 1) await go(d, legFor(d, D, '', RD, damPace)); if (d.rider.isConnected) pose(d.el, water ? 'duckling-float' : 'duckling-wait') }) }
   requestAnimationFrame(() => job.classList.add('go'))
   show(S, {}, performance.now())
   const endL = end === 'mate' ? job.clientWidth - 2 * rw : end === 'dam' ? job.clientWidth - rw - 0.8 * rem : null
@@ -382,7 +409,7 @@ async function ride(job) {
     job.dataset.legs = ((job.dataset.legs || '') + ' ' + (kind || (water ? 'swim' : 'walk'))).trim()   // for the checks, as data-end
     if (dam) follow(j === reach ? job.clientWidth - 1.95 * rem : L1 - 1.5 * rem)
     let next = i + 1
-    const ok = await go(S, legFor(S, D, kind), (L) => { while (next < j && L >= stopL(next) - 2) { play(next); if (kind) fx(stops[next], 'sway'); next++ } })
+    const ok = await go(S, legFor(S, D, kind, R, pace), (L) => { while (next < j && L >= stopL(next) - 2) { play(next); if (kind) fx(stops[next], 'sway'); next++ } })
     if (!ok) return
     i = j
     if (plan[j] === 'end') break
