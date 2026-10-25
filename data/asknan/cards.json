@@ -11,7 +11,22 @@
    "done"
   ],
   "hue": 32,
-  "hash": "99f64a8dc1"
+  "hash": "c302f1ae78"
+ },
+ {
+  "out": "og/ask-nan/c/water-pump-clicking",
+  "kicker": "Ask Nan · Column 11 · How-to guides",
+  "title": "A water pump that clicks on and off",
+  "th": "ปั๊มน้ำตัดต่อบ่อย เป็นอะไร แล้วจะบอกช่างว่าอย่างไร",
+  "sub": "A leak, or a tank out of air, and the Thai for the plumber",
+  "line": [
+   "wrench",
+   "home",
+   "gear",
+   "telephone"
+  ],
+  "hue": 32,
+  "hash": "36402284c3"
  },
  {
   "out": "og/ask-nan/c/should-i-pay-a-bot",
@@ -26,7 +41,7 @@
    "send"
   ],
   "hue": 205,
-  "hash": "2e6a3f9433"
+  "hash": "95043d3066"
  },
  {
   "out": "og/ask-nan/c/can-i-pay-in-art",
@@ -41,7 +56,7 @@
    "heart"
   ],
   "hue": 72,
-  "hash": "95e418240b"
+  "hash": "d5abc6755e"
  },
  {
   "out": "og/ask-nan/c/va-sign-in-from-thailand",
@@ -56,7 +71,7 @@
    "key"
   ],
   "hue": 32,
-  "hash": "3303a45407"
+  "hash": "1c4bb15913"
  },
  {
   "out": "og/ask-nan/c/most-of-my-readers-are-robots",
@@ -71,7 +86,7 @@
    "coin"
   ],
   "hue": 205,
-  "hash": "1447699150"
+  "hash": "645fb9f5d7"
  },
  {
   "out": "og/ask-nan/c/seven-eleven-at-home",
@@ -85,7 +100,7 @@
    "smile"
   ],
   "hue": 72,
-  "hash": "b634b2768a"
+  "hash": "bae147c1a3"
  },
  {
   "out": "og/ask-nan/c/sending-things-across-thailand",
@@ -99,7 +114,7 @@
    "send"
   ],
   "hue": 32,
-  "hash": "579642986d"
+  "hash": "dabf88d40f"
  },
  {
   "out": "og/ask-nan/c/if-my-ai-goes-away",
@@ -114,7 +129,7 @@
    "laptop"
   ],
   "hue": 205,
-  "hash": "cd36aa792b"
+  "hash": "5560ebbf46"
  },
  {
   "out": "og/ask-nan/c/what-should-i-charge",
@@ -128,7 +143,7 @@
    "clock"
   ],
   "hue": 72,
-  "hash": "2106d0e15b"
+  "hash": "fa8692f058"
  },
  {
   "out": "og/ask-nan/c/how-to-use-a-bum-gun",
@@ -142,7 +157,7 @@
    "smile"
   ],
   "hue": 32,
-  "hash": "86b2b95793"
+  "hash": "dc00554eb5"
  },
  {
   "out": "og/ask-nan/c/will-the-robots-remember-me",
@@ -157,6 +172,6 @@
    "chedi"
   ],
   "hue": 205,
-  "hash": "23e1c31ed3"
+  "hash": "7e6d82c656"
  }
 ]
