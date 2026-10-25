@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/deepseek-flash-1017-faster-not-shorter",
+  "kicker": "Hongdam Studio · AI models · 26 October 2026",
+  "title": "DeepSeek 1017: faster, not shorter",
+  "th": "DeepSeek V4.1 Flash 1017 บน Workers AI: เร็วกว่า 0731 ราว 40% ใช้โทเคนมากขึ้น 23% ค่าใช้จ่ายเท่าเดิม",
+  "sub": "60 runs on Workers AI against V4 Flash 0731",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "029ada3213"
+ },
+ {
   "out": "og/studio/n/supabase-public-key-open-tables",
   "kicker": "Hongdam Studio · Last mile · 24 October 2026",
   "title": "Can anyone read your database?",

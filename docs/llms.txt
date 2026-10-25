@@ -417,6 +417,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-10-26 · DeepSeek Flash 1017 on Workers AI: 40% faster than 0731, 23% more tokens, same bill — https://hongdam.net/studio/notes/deepseek-flash-1017-faster-not-shorter/
 - 2026-10-24 · 16,326 Supabase databases let anyone read their tables: check yours in two minutes — https://hongdam.net/studio/notes/supabase-public-key-open-tables/
 - 2026-10-24 · PHP2Shell: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two flaws that let attackers run code — https://hongdam.net/studio/notes/php2shell-fixed-releases-and-restart/
 - 2026-10-24 · One workflow, 30,000 runs a month: Zapier US$1,149, Make US$116, Cloudflare Workers US$5 — https://hongdam.net/studio/notes/automation-cost-per-run/
