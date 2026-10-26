@@ -16,8 +16,8 @@
  *   POST /api/buy/state {ref, state: paid|started|done, force?} the team moves an order on   Authorization: Bearer TASKS_ADMIN
  *                                                               (force: true moves one held while PayPal captures)
  *
- * Each order mails ORDER_TO (or CONTACT_TO) and posts in #help-desk (DISCORD_TASKS), and counts as
- * demand for that service's monthly price walk. The cards in HERS go to Nan alone (PLAN_TO, else
+ * Each order mails ORDER_TO (or CONTACT_TO), becomes a ticket on the Team Wheel (functions/_wheel.js; #help-desk,
+ * DISCORD_TASKS, only when the wheel does not take it), and counts as demand for that service's monthly price walk. The cards in HERS go to Nan alone (PLAN_TO, else
  * nan@motdang.net), by mail, never to #help-desk: her word 2026-10-24, "Send them to me", on the
  * ฿2,000 written plans, as CMVD sends its plans. POST answers hongdam.net, hongdam.pages.dev and
  * localhost. Bindings and secrets on the Pages project: TASKS (D1), RT_LIMIT, DISCORD_TASKS,
@@ -43,6 +43,7 @@ import { tryOnce, sweep } from '../../_tries.js'
 import { rates, conv, CURS } from '../../_fx.js'
 import { cardOn, startCard, finishCard } from '../../_paypal.js'
 import { lnOn, btcUsd, satsFor, makeBill, settled } from '../../_lightning.js'
+import { toWheel, shopDraft, trackUrl } from '../../_wheel.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -96,10 +97,29 @@ async function mail(env, subject, text, replyTo, only) {
 }
 
 export const HERS = new Set(['thai-plan'])
-/** An order's notice: #help-desk and ORDER_TO, or for her cards a mail to her alone. */
-const notify = (env, card, title, lines, subject, replyTo) => (HERS.has(card)
-  ? mail(env, subject, lines.join('\n'), replyTo, env.PLAN_TO || 'nan@motdang.net')
-  : Promise.all([tell(env, title, lines), mail(env, subject, lines.join('\n'), replyTo)]))
+/** An order's notice. Her cards: a mail to her alone. The rest: its ticket on the Team Wheel (w), or #help-desk when the
+ * wheel does not take it, and ORDER_TO. An alert (a capture or bill that does not match) goes to #help-desk as well. */
+async function notify(env, card, title, lines, subject, replyTo, w, alert = false) {
+  if (HERS.has(card)) return mail(env, subject, lines.join('\n'), replyTo, env.PLAN_TO || 'nan@motdang.net')
+  const took = w ? await toWheel(env, w) : false
+  await Promise.all([took && !alert ? null : tell(env, title, lines), mail(env, subject, lines.join('\n'), replyTo)])
+}
+
+const SITE = 'https://hongdam.net'
+const moneyLine = (o) => {
+  const p = payOf(o)
+  // ½: half now (from ฿10,000 / US$300); the buyer's own currency after it
+  return `${money(o.total, o.cur)}${o.due < o.total ? ` · ½ ${money(o.due, o.cur)}` : ''}${p.cur !== o.cur ? ` = ${money(p.due, p.cur)}` : ''}`
+}
+/** The order as its wheel ticket, with what changed (pay, how, line). The whole draft rides along, so an order the
+ * wheel missed when it was booked still lands, at its money. */
+const wheelOf = (o, extra = {}) => ({
+  ...shopDraft(o, {
+    cardName: CARDS[o.card]?.en || o.card, money: moneyLine(o), link: trackUrl(SITE, o.lang, o.ref),
+  }),
+  pay: ['paid', 'started', 'done'].includes(o.state) ? 'paid' : o.state === 'claimed' || o.state === 'capturing' ? 'claimed' : 'booked',
+  ...extra,
+})
 
 const lineOf = (o) => [
   `${CARDS[o.card]?.en || o.card} · ${o.opt}${o.qty > 1 ? ` × ${o.qty}` : ''}${o.addon ? ` + ${CARDS[o.card]?.add?.id || 'add-on'}${CARDS[o.card]?.add?.unit ? ` × ${o.addon} ${CARDS[o.card].add.unit}` : ''}` : ''}`,
@@ -146,7 +166,7 @@ async function order(ctx, b, now) {
   ctx.waitUntil(Promise.all([
     record(db, q.opt, await whoHash(contact), 'buy', now),
     q.addon && record(db, CARDS[card].add.id, await whoHash(contact), 'buy', now),
-    notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(p.due, p.cur)} due`, contact),
+    notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(p.due, p.cur)} due`, contact, wheelOf(o)),
   ]))
   // a slip is checked against the baht kept in pay: no PromptPay for a US$ price until 0011 is applied
   const thb = q.cur === 'THB' ? q.due : cols ? p.thb : 0
@@ -184,7 +204,7 @@ async function slip(ctx, now) {
   const u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state IN ('booked','claimed')").bind(r.transRef, ref).run()
   if (u?.meta?.changes === 0) return json({ ok: false, why: 'state' })
   const lines = [`Paid ${money(baht, 'THB')} by PromptPay · bank ref ${r.transRef}`, ...lineOf(o)]
-  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(baht, 'THB')} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
+  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(baht, 'THB')} · order ${ref}`, '', wheelOf(o, { pay: 'paid', how: 'promptpay', line: `💰 ${lines[0]}` })), paidDemand(env.TASKS, o, now)]))
   return json({ ok: true, ref, amount: baht })
 }
 
@@ -202,7 +222,7 @@ async function claim(ctx, b, now) {
   const lines = [how === 'lightning' && p.ln
     ? `Buyer says paid ${p.ln.sats.toLocaleString('en-US')} sats (${money(p.due, p.cur)}) by Lightning: check the wallet for payment hash ${p.ln.hash}`
     : `Buyer says paid ${money(p.due, p.cur)} by ${by}: check the account`, ...lineOf(o)]
-  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${by}: ${money(p.due, p.cur)} · order ${ref}`))
+  ctx.waitUntil(notify(env, o.card, `Order ${ref} says paid (${how})`, lines, `Check ${by}: ${money(p.due, p.cur)} · order ${ref}`, '', wheelOf(o, { pay: 'claimed', how, line: `❓ ${lines[0]}` })))
   return json({ ok: true, ref, state: 'claimed' })
 }
 
@@ -262,17 +282,17 @@ async function cardDone(ctx, b, now) {
   if (!r.ok) {
     // let go only when PayPal said no money moved; an unknown result stays held until the buyer's next return or the team
     if (r.final) await env.TASKS.prepare("UPDATE svc_buy SET state = coalesce(json_extract(pay, '$.from'), 'booked') WHERE ref = ? AND state = 'capturing'").bind(ref).run().catch(() => {})
-    if (r.mismatch) ctx.waitUntil(notify(env, o.card, `Order ${ref}: PayPal capture does not match`, [`PayPal captured ${r.capture} for another ref, amount or currency than ${money(p.due, p.cur)}. The order stays held: check PayPal, then refund or mark it paid with force.`, ...lineOf(o)], `Check PayPal: order ${ref}`))
+    if (r.mismatch) { const al = `PayPal captured ${r.capture} for another ref, amount or currency than ${money(p.due, p.cur)}. The order stays held: check PayPal, then refund or mark it paid with force.`; ctx.waitUntil(notify(env, o.card, `Order ${ref}: PayPal capture does not match`, [al, ...lineOf(o)], `Check PayPal: order ${ref}`, '', wheelOf(o, { line: `⚠️ ${al}` }), true)) }
     return json({ ok: false, why: r.why || 'paypal' })
   }
   const lines = [`Paid ${money(p.due, p.cur)} by card or PayPal on PayPal's page · capture ${r.capture}`, ...lineOf(o)]
   let u = null
   try { u = await env.TASKS.prepare("UPDATE svc_buy SET state = 'paid', paid_ref = ? WHERE ref = ? AND state = 'capturing'").bind('paypal ' + r.capture, ref).run() } catch { /* below */ }
   if (!u) {   // captured, not written down: the team records it by hand (POST /api/buy/state)
-    ctx.waitUntil(notify(env, o.card, `Order ${ref}: captured, not recorded`, ['PayPal captured this payment but the order could not be marked paid. Mark it paid: POST /api/buy/state {ref, state: "paid", force: true}', ...lines], `Record by hand: ${money(p.due, p.cur)} · order ${ref}`))
+    ctx.waitUntil(notify(env, o.card, `Order ${ref}: captured, not recorded`, ['PayPal captured this payment but the order could not be marked paid. Mark it paid: POST /api/buy/state {ref, state: "paid", force: true}', ...lines], `Record by hand: ${money(p.due, p.cur)} · order ${ref}`, '', wheelOf(o, { line: '⚠️ PayPal captured this payment, and the site could not mark it paid. NaN: 💰 Money is in on the wheel.' }), true))
     return json({ ok: false, why: 'pending' })
   }
-  if (u.meta?.changes !== 0) ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(p.due, p.cur)} · order ${ref}`), paidDemand(env.TASKS, o, now)]))
+  if (u.meta?.changes !== 0) ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${ref} paid`, lines, `Paid: ${money(p.due, p.cur)} · order ${ref}`, '', wheelOf(o, { pay: 'paid', how: 'card', line: `💰 ${lines[0]}` })), paidDemand(env.TASKS, o, now)]))
   return json({ ok: true, ref, state: 'paid' })
 }
 
@@ -327,7 +347,7 @@ async function lnCheck(ctx, b, now) {
   const p = payOf(o)
   if (!['booked', 'claimed'].includes(o.state) || !p.ln || !p.ln.verify) return json({ ok: true, ref, state: shown })
   const s = await settled(p.ln).catch(() => ({}))
-  if (s.mismatch) ctx.waitUntil(notify(env, o.card, `Order ${ref}: Lightning answer does not match`, [`The wallet says bill ${p.ln.hash} is paid, with a preimage or bill that does not match it. The order stays unpaid: check the wallet.`, ...lineOf(o)], `Check the Lightning wallet: order ${ref}`))
+  if (s.mismatch) { const al = `The wallet says bill ${p.ln.hash} is paid, with a preimage or bill that does not match it. The order stays unpaid: check the wallet.`; ctx.waitUntil(notify(env, o.card, `Order ${ref}: Lightning answer does not match`, [al, ...lineOf(o)], `Check the Lightning wallet: order ${ref}`, '', wheelOf(o, { line: `⚠️ ${al}` }), true)) }
   return s.paid ? lnPaid(ctx, o, p, now) : json({ ok: true, ref, state: shown, exp: p.ln.exp })
 }
 
@@ -340,10 +360,10 @@ async function lnPaid(ctx, o, p, now) {
     const now2 = await env.TASKS.prepare('SELECT state, paid_ref FROM svc_buy WHERE ref = ?').bind(o.ref).first()
     // paid by this bill already (a second page asking), or moved on by the team: nothing to add
     if (now2 && ['paid', 'started', 'done'].includes(now2.state)) return json({ ok: true, ref: o.ref, state: now2.state })
-    ctx.waitUntil(notify(env, o.card, `Order ${o.ref}: paid by Lightning while ${now2 ? now2.state : 'gone'}`, [`The Lightning bill was paid while the order was ${now2 ? now2.state : 'gone'}, so it is not marked paid. To record it: POST /api/buy/state {ref, state: "paid", force: true}`, ...lines], `Record by hand: Lightning · order ${o.ref}`))
+    ctx.waitUntil(notify(env, o.card, `Order ${o.ref}: paid by Lightning while ${now2 ? now2.state : 'gone'}`, [`The Lightning bill was paid while the order was ${now2 ? now2.state : 'gone'}, so it is not marked paid. To record it: POST /api/buy/state {ref, state: "paid", force: true}`, ...lines], `Record by hand: Lightning · order ${o.ref}`, '', wheelOf(o, { line: `⚠️ A Lightning bill for this order was paid while it was ${now2 ? now2.state : 'gone'}: it is not marked paid. NaN: 💰 Money is in on the wheel.` }), true))
     return json({ ok: false, why: 'pending' })
   }
-  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${o.ref} paid`, lines, `Paid: ${money(p.due, p.cur)} by Lightning · order ${o.ref}`), paidDemand(env.TASKS, o, now)]))
+  ctx.waitUntil(Promise.all([notify(env, o.card, `Order ${o.ref} paid`, lines, `Paid: ${money(p.due, p.cur)} by Lightning · order ${o.ref}`, '', wheelOf(o, { pay: 'paid', how: 'lightning', line: `💰 ${lines[0]}` })), paidDemand(env.TASKS, o, now)]))
   return json({ ok: true, ref: o.ref, state: 'paid' })
 }
 
@@ -381,8 +401,11 @@ async function moved(ctx, b, now) {
   const u = await env.TASKS.prepare('UPDATE svc_buy SET state = ? WHERE ref = ? AND state = ?').bind(state, ref, o.state).run()
   if (u?.meta?.changes === 0) return json({ ok: false, why: 'busy' }, 409)   // it moved meanwhile (a capture, a slip): read it again
   if (STEPS.indexOf(o.state) < STEPS.indexOf('paid')) ctx.waitUntil(paidDemand(env.TASKS, o, now))
+  // the Team Wheel moved it (its ticket's 🔨, ✅ or 💰): the ticket says so already
+  if (b.from === 'wheel') return json({ ok: true, ref, state })
   const said = [`Marked ${state} ${new Date(now).toISOString().slice(0, 16)}Z`, ...lineOf(o)]
-  ctx.waitUntil(HERS.has(o.card) ? mail(env, `Order ${ref} ${state}`, said.join('\n'), '', env.PLAN_TO || 'nan@motdang.net') : tell(env, `Order ${ref} ${state}`, said))
+  ctx.waitUntil(HERS.has(o.card) ? mail(env, `Order ${ref} ${state}`, said.join('\n'), '', env.PLAN_TO || 'nan@motdang.net')
+    : toWheel(env, wheelOf(o, { ...(state === 'paid' ? { pay: 'paid', how: 'team' } : {}), line: `🧾 Marked ${state} on hongdam.net` })).then((took) => took || tell(env, `Order ${ref} ${state}`, said)))
   return json({ ok: true, ref, state })
 }
 
