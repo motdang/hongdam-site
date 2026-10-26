@@ -1,0 +1,467 @@
+{
+ "langs": [
+  "en",
+  "th"
+ ],
+ "path": "studio/dj/",
+ "names": [
+  {
+   "id": "motdang",
+   "glyph": "ants",
+   "iso": "page",
+   "per": 10000,
+   "count": "motdang",
+   "href": "https://motdang.net/",
+   "host": "motdang.net",
+   "hue": 28,
+   "n": {
+    "en": "Mot Dang",
+    "th": "มดแดง"
+   },
+   "v": {
+    "en": "Find",
+    "th": "หา"
+   },
+   "l": {
+    "en": "Places in Chiang Mai and Chiang Rai, in Thai and English.",
+    "th": "สถานที่ในเชียงใหม่และเชียงราย ภาษาไทยและอังกฤษ"
+   },
+   "u": {
+    "en": "pages",
+    "th": "หน้า"
+   }
+  },
+  {
+   "id": "hongdam",
+   "glyph": "hongsa",
+   "iso": "cart",
+   "per": 20,
+   "count": "services",
+   "href": "/",
+   "host": "hongdam.net",
+   "hue": 300,
+   "n": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ"
+   },
+   "v": {
+    "en": "Do",
+    "th": "ทำให้"
+   },
+   "l": {
+    "en": "We do the work for you. Pick, pay, we start.",
+    "th": "เราทำงานให้คุณ เลือก จ่าย แล้วเราเริ่ม"
+   },
+   "u": {
+    "en": "services",
+    "th": "บริการ"
+   }
+  },
+  {
+   "id": "visa",
+   "glyph": "passport",
+   "iso": "stamp",
+   "per": 1,
+   "count": "cmvd",
+   "href": "https://chiangmaivisadesk.com/",
+   "host": "chiangmaivisadesk.com",
+   "hue": 240,
+   "n": {
+    "en": "Chiang Mai Visa Desk",
+    "th": "Chiang Mai Visa Desk"
+   },
+   "v": {
+    "en": "Stay",
+    "th": "อยู่ต่อ"
+   },
+   "l": {
+    "en": "Visas, work permits, company papers, translation.",
+    "th": "วีซ่า ใบอนุญาตทำงาน เอกสารบริษัท งานแปล"
+   },
+   "u": {
+    "en": "services",
+    "th": "บริการ"
+   }
+  },
+  {
+   "id": "studio",
+   "glyph": "laptop",
+   "iso": "server",
+   "per": 20,
+   "count": "repos",
+   "href": "/studio/",
+   "host": "hongdam.net/studio",
+   "hue": 160,
+   "n": {
+    "en": "Hongdam Studio",
+    "th": "Hongdam Studio"
+   },
+   "v": {
+    "en": "Build",
+    "th": "สร้าง"
+   },
+   "l": {
+    "en": "AI-written apps finished, security, AI models, automation.",
+    "th": "ปิดงานแอปที่ AI เขียน ความปลอดภัย โมเดล AI ระบบอัตโนมัติ"
+   },
+   "u": {
+    "en": "public code repositories",
+    "th": "คลังโค้ดสาธารณะ"
+   }
+  }
+ ],
+ "work": [
+  {
+   "img": "sites",
+   "href": "https://sites.motdang.net/",
+   "host": "sites.motdang.net",
+   "n": {
+    "en": "Shop websites",
+    "th": "เว็บร้านค้า"
+   },
+   "l": {
+    "en": "A shop online in five minutes.",
+    "th": "ร้านของคุณออนไลน์ในห้านาที"
+   },
+   "alt": {
+    "en": "Card: Your shop, drawn and online in five minutes. A drawn shopfront with a scooter.",
+    "th": "การ์ด: ร้านของคุณ วาดเสร็จและขึ้นเว็บในห้านาที ภาพวาดหน้าร้านกับรถสกูตเตอร์"
+   }
+  },
+  {
+   "img": "migrant",
+   "href": "https://chiangmaivisadesk.com/migrant-workers/",
+   "host": "chiangmaivisadesk.com",
+   "n": {
+    "en": "Migrant workers",
+    "th": "แรงงานข้ามชาติ"
+   },
+   "l": {
+    "en": "Work permits for people from Myanmar, Laos, Cambodia and Vietnam. English, Thai, Shan.",
+    "th": "ใบอนุญาตทำงานสำหรับคนจากเมียนมา ลาว กัมพูชา เวียดนาม ภาษาอังกฤษ ไทย ไทใหญ่"
+   },
+   "alt": {
+    "en": "Card: Migrant workers from Myanmar, Laos, Cambodia and Vietnam. Chiang Mai Visa Desk.",
+    "th": "การ์ด: แรงงานข้ามชาติจากเมียนมา ลาว กัมพูชา และเวียดนาม Chiang Mai Visa Desk"
+   }
+  },
+  {
+   "img": "gettingin",
+   "href": "https://nanobotco.github.io/getting-in/",
+   "host": "nanobotco.github.io",
+   "n": {
+    "en": "Getting In",
+    "th": "Getting In"
+   },
+   "l": {
+    "en": "US veterans' and widows' services from abroad. 12 languages, free.",
+    "th": "บริการของทหารผ่านศึกและคู่สมรสหม้ายชาวอเมริกัน จากต่างประเทศ 12 ภาษา ฟรี"
+   },
+   "alt": {
+    "en": "Card: Getting In. VA, ID.me, Social Security, from abroad. A gold key on dark blue.",
+    "th": "การ์ด: Getting In · VA, ID.me, Social Security จากต่างประเทศ กุญแจสีทองบนพื้นน้ำเงินเข้ม"
+   }
+  },
+  {
+   "img": "safety",
+   "href": "https://motdang.net/sites/safety/",
+   "host": "motdang.net",
+   "n": {
+    "en": "Safety First",
+    "th": "ปลอดภัยไว้ก่อน"
+   },
+   "l": {
+    "en": "Emergency numbers and rescue units in northern Thailand.",
+    "th": "เบอร์ฉุกเฉินและหน่วยกู้ภัยในภาคเหนือ"
+   },
+   "alt": {
+    "en": "Card: Safety First, Chiang Mai and Chiang Rai, with the emergency numbers 1669, 1784, 199 and 191.",
+    "th": "การ์ด: ปลอดภัยไว้ก่อน เชียงใหม่ เชียงราย เบอร์ฉุกเฉิน 1669 1784 199 และ 191"
+   }
+  },
+  {
+   "img": "cwsdpp",
+   "href": "https://sites.motdang.net/cwsdpp",
+   "host": "sites.motdang.net",
+   "n": {
+    "en": "Children's Water Safety",
+    "th": "ว่ายน้ำปลอดภัยสำหรับเด็ก"
+   },
+   "l": {
+    "en": "Survival swimming for about 750 children a year, with the Chiang Mai International Rotary Club.",
+    "th": "ว่ายน้ำเอาชีวิตรอด เด็กราว 750 คนต่อปี กับสโมสรโรตารีเชียงใหม่อินเตอร์เนชั่นแนล"
+   },
+   "alt": {
+    "en": "Card: Children's Water Safety. Survival swimming in Chiang Mai and Phrao, a cartoon behind the words.",
+    "th": "การ์ด: ว่ายน้ำปลอดภัยสำหรับเด็ก ว่ายน้ำเอาชีวิตรอดในเชียงใหม่และพร้าว มีภาพการ์ตูนอยู่ด้านหลัง"
+   }
+  },
+  {
+   "img": "paidart",
+   "href": "https://motdang.net/sites/paid-in-art/",
+   "host": "motdang.net",
+   "n": {
+    "en": "Paid in Art",
+    "th": "จ่ายเป็นผลงาน"
+   },
+   "l": {
+    "en": "Pay for a website with paintings, photos, music or meals.",
+    "th": "จ่ายค่าเว็บด้วยภาพวาด ภาพถ่าย ดนตรี หรืออาหาร"
+   },
+   "alt": {
+    "en": "Card: Paid in Art, over Van Gogh's The Starry Night, with a portrait in a circle.",
+    "th": "การ์ด: จ่ายเป็นผลงาน บนภาพ The Starry Night ของแวน โก๊ะ และภาพบุคคลในวงกลม"
+   }
+  },
+  {
+   "img": "lanna",
+   "href": "https://motdang.net/sites/lanna-craft/",
+   "host": "motdang.net",
+   "n": {
+    "en": "Lanna Craft",
+    "th": "ช่างล้านนา"
+   },
+   "l": {
+    "en": "Northern temples and ornament, drawn by math.",
+    "th": "วิหารและลวดลายล้านนา วาดด้วยคณิตศาสตร์"
+   },
+   "alt": {
+    "en": "Card: Nagas, gables and gold. A drawn Lanna temple hall under the sky over Chiang Mai.",
+    "th": "การ์ด: นาค หน้าบัน และทอง ภาพวาดวิหารล้านนาใต้ท้องฟ้าเชียงใหม่"
+   }
+  },
+  {
+   "img": "warp",
+   "href": "https://nanobotco.github.io/warp-and-weft/",
+   "host": "nanobotco.github.io",
+   "n": {
+    "en": "Warp and Weft",
+    "th": "เส้นยืนเส้นพุ่ง"
+   },
+   "l": {
+    "en": "Silk weaving, drawn by arithmetic.",
+    "th": "การทอผ้าไหม วาดด้วยเลขคณิต"
+   },
+   "alt": {
+    "en": "Card: Warp and Weft. Woven silk with rows of humped cattle.",
+    "th": "การ์ด: เส้นยืนเส้นพุ่ง ผ้าไหมทอลายวัวมีหนอกเรียงเป็นแถว"
+   }
+  },
+  {
+   "img": "swan",
+   "href": "/studio/black-swan/",
+   "host": "hongdam.net/studio",
+   "n": {
+    "en": "Black Swan Event?",
+    "th": "เหตุการณ์หงส์ดำ?"
+   },
+   "l": {
+    "en": "Write a prediction. Everyone votes.",
+    "th": "เขียนคำทำนาย ทุกคนโหวตได้"
+   },
+   "alt": {
+    "en": "Card: Black Swan Event? Hongdam Studio is all ears, with a photo of a bronze hongsa bird.",
+    "th": "การ์ด: เหตุการณ์หงส์ดำ? กับภาพถ่ายตุ้มหงส์สำริด"
+   }
+  }
+ ],
+ "crew": [
+  {
+   "who": "NaN",
+   "glyph": "feather",
+   "r": {
+    "en": "business development",
+    "th": "พัฒนาธุรกิจ"
+   }
+  },
+  {
+   "who": "Beer",
+   "glyph": "frangipani",
+   "r": {
+    "en": "director, operations",
+    "th": "กรรมการ ฝ่ายปฏิบัติการ"
+   }
+  },
+  {
+   "who": "Michael",
+   "glyph": "rooster",
+   "r": {
+    "en": "project manager",
+    "th": "ผู้จัดการโครงการ"
+   }
+  },
+  {
+   "who": "Marcus",
+   "glyph": "camera",
+   "r": {
+    "en": "pictures and video",
+    "th": "ภาพและวิดีโอ"
+   }
+  },
+  {
+   "who": "Hom",
+   "glyph": "coin",
+   "r": {
+    "en": "sales",
+    "th": "ฝ่ายขาย"
+   }
+  },
+  {
+   "who": "Wai Tun",
+   "glyph": "server",
+   "r": {
+    "en": "server code",
+    "th": "โค้ดฝั่งเซิร์ฟเวอร์"
+   }
+  },
+  {
+   "who": "DJ",
+   "glyph": "compass",
+   "you": true,
+   "r": {
+    "en": "advisor",
+    "th": "ที่ปรึกษา"
+   }
+  },
+  {
+   "who": {
+    "en": "Bots",
+    "th": "บอต"
+   },
+   "glyph": "robot",
+   "r": {
+    "en": "small paid jobs",
+    "th": "งานเล็กที่มีค่าจ้าง"
+   }
+  }
+ ],
+ "papers": [
+  {
+   "img": "plan",
+   "href": "https://motdang.github.io/business-plan/",
+   "host": "motdang.github.io",
+   "n": {
+    "en": "The plan",
+    "th": "แผนธุรกิจ"
+   },
+   "l": {
+    "en": "Every version of the business plan.",
+    "th": "แผนธุรกิจทุกฉบับ"
+   },
+   "alt": {
+    "en": "Card: motdang business plan. Every version of motdang's business plan in one place.",
+    "th": "การ์ด: แผนธุรกิจ motdang ทุกฉบับในที่เดียว"
+   }
+  },
+  {
+   "img": "days",
+   "href": "https://nanobotco.github.io/100-days/",
+   "host": "nanobotco.github.io",
+   "n": {
+    "en": "100 days",
+    "th": "100 วัน"
+   },
+   "l": {
+    "en": "Lessons from the first 100 days, counted from the code.",
+    "th": "บทเรียนจาก 100 วันแรก นับจากโค้ด"
+   },
+   "alt": {
+    "en": "Card: 100 Days of Vibe-Coding Insanity. 15 weeks, 15 lessons, counted from git, over a bar chart.",
+    "th": "การ์ด: 100 วัน 15 สัปดาห์ 15 บทเรียน นับจาก git บนกราฟแท่ง"
+   }
+  },
+  {
+   "img": "company",
+   "href": "https://motdang.net/sites/motdang/",
+   "host": "motdang.net",
+   "n": {
+    "en": "The company",
+    "th": "บริษัท"
+   },
+   "l": {
+    "en": "Registration, address, photos.",
+    "th": "ทะเบียน ที่อยู่ ภาพถ่าย"
+   },
+   "alt": {
+    "en": "Card: motdang.net Co., Ltd., Chiang Rai, 48–49 Thai Wiwat Alley, beside a photo of the shop row.",
+    "th": "การ์ด: บริษัท มดแดง.เน็ท จำกัด เชียงราย 48–49 ซอยไทยวิวัฒน์ ข้างภาพถ่ายแถวร้าน"
+   }
+  }
+ ],
+ "ui": {
+  "en": {
+   "title": "DJ, meet the company · Hongdam Studio",
+   "desc": "The company on one page, for DJ: four names, the work, the crew, the papers. Chiang Rai, Thailand.",
+   "kicker": "Hongdam Studio · for DJ",
+   "h1": "DJ, meet the company.",
+   "lede": "One company in Chiang Rai, Thailand. Four names.",
+   "gloss": [
+    [
+     "Mot Dang",
+     "มดแดง",
+     "red ant"
+    ],
+    [
+     "Hongdam",
+     "หงส์ดำ",
+     "black swan"
+    ]
+   ],
+   "seeWork": "The work",
+   "write": "Write to NaN",
+   "namesH": "Four names",
+   "each": "each",
+   "company": "All four: motdang.net Co., Ltd., a Thai limited company in Chiang Rai.",
+   "companyA": "Company page",
+   "workH": "The work",
+   "crewH": "The crew",
+   "you": "you",
+   "papersH": "Papers",
+   "talkH": "Talk",
+   "talkL": "NaN reads LINE and email.",
+   "email": "Email NaN",
+   "cardAlt": "Card: DJ, meet the company. Four names under one Thai company: Mot Dang, Hongdam, Chiang Mai Visa Desk, Hongdam Studio. hongdam.net/studio/dj",
+   "card": {
+    "title": "DJ, meet the company.",
+    "sub": "Mot Dang · Hongdam · Chiang Mai Visa Desk · Studio"
+   }
+  },
+  "th": {
+   "title": "DJ รู้จักบริษัทของเรา · Hongdam Studio",
+   "desc": "บริษัทในหน้าเดียว สำหรับ DJ: สี่ชื่อ ผลงาน ทีม และเอกสาร เชียงราย ประเทศไทย",
+   "kicker": "Hongdam Studio · สำหรับ DJ",
+   "h1": "DJ นี่คือบริษัทของเรา",
+   "lede": "บริษัทเดียวในเชียงราย ประเทศไทย มีสี่ชื่อ",
+   "gloss": [
+    [
+     "Mot Dang",
+     "มดแดง",
+     "red ant"
+    ],
+    [
+     "Hongdam",
+     "หงส์ดำ",
+     "black swan"
+    ]
+   ],
+   "seeWork": "ดูผลงาน",
+   "write": "เขียนถึง NaN",
+   "namesH": "สี่ชื่อ",
+   "each": "ละ",
+   "company": "ทั้งสี่ชื่ออยู่ใต้ บริษัท มดแดง.เน็ท จำกัด บริษัทจำกัดในเชียงราย",
+   "companyA": "หน้าบริษัท",
+   "workH": "ผลงาน",
+   "crewH": "ทีม",
+   "you": "คุณ",
+   "papersH": "เอกสาร",
+   "talkH": "คุยกัน",
+   "talkL": "NaN อ่าน LINE และอีเมล",
+   "email": "อีเมลถึง NaN",
+   "cardAlt": "การ์ด: DJ นี่คือบริษัทของเรา สี่ชื่อใต้บริษัทไทยหนึ่งบริษัท: มดแดง หงส์ดำ Chiang Mai Visa Desk และ Hongdam Studio · hongdam.net/th/studio/dj",
+   "card": {
+    "title": "DJ นี่คือบริษัทของเรา",
+    "sub": "มดแดง · หงส์ดำ · Chiang Mai Visa Desk · Studio"
+   }
+  }
+ }
+}

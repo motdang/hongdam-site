@@ -38,6 +38,14 @@ Her ask 2026-10-24: a Hongdam Studio minisite on black swans and black swan pred
 - Link-preview pictures: `node tools/blackswan_cards.mjs`.
 - Storage: `functions/api/swan/` (D1 tables in `migrations/0012_swan.sql`). A prediction naming the Thai royal family, or one Llama Guard flags, waits for the team (a note in #help-desk); `POST /api/swan/<id>/state {"state":"ok"}` with `Bearer TASKS_ADMIN` lists it, `GET /api/swan/held` shows the waiting ones. Three reports from three addresses take one off the list. Six new predictions a day from one address, 400 for the site. `node tests/swan.test.mjs`.
 
+## DJ, meet the company
+
+Her ask 2026-10-26: a Hongdam Studio minisite for DJ, her advisor, as a portfolio and introduction to the company, in few words. hongdam.net/studio/dj/ and /th/studio/dj/, noindex and out of the sitemap and llms.txt. Four names (Mot Dang, Hongdam, Chiang Mai Visa Desk, Hongdam Studio), each with an Isotype row: one picture for a fixed number, the last one cut to what is left, counted at build (Mot Dang pages and public repositories from `data/studio/counts.json`, shop services from `data/shop.json`, Visa Desk services from chiangmaivisadesk.com with `data/studio/dj.counts.json` as the fallback). Then the work and the papers as thumbnails of each site's own link-preview picture (`docs/studio/dj/img/`), and the crew.
+
+- Words: `data/studio/dj.json` → `python3 tools/build_dj.py`. Look: `docs/assets/dj.css`, `dj.js` (rows fill in as they come into view).
+- Dingbats: group p-dj, `DINGBATS_SRC=<doodle-dingbats>/src tools/group_dingbats.sh p-dj` (that group only).
+- Link-preview pictures: `node tools/dj_card.mjs`.
+
 ## Publishing
 
 Live at https://hongdam.net (Cloudflare Pages project `hongdam`). A merge to `main`
