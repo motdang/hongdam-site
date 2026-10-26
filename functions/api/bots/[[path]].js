@@ -11,7 +11,11 @@
 import { KINDS, prices, counts, slotWeek, weekStart, walk, OPENED } from '../../_bots.js'
 import { checkSlip } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { wheelOrTell, pageDraft } from '../../_wheel.js'
 
+// its ticket on the Team Wheel (functions/_wheel.js)
+const botDraft = (o) => pageDraft({ ...o, kind: 'bots', name: `Bots · ${KINDS[o.kind]?.en || o.kind}`, what: `${KINDS[o.kind]?.en || o.kind} for ${o.site}`,
+  link: 'https://hongdam.net/bots/', skill: 'backend', size: 'medium' })
 const json = (body, status = 200) => new Response(JSON.stringify(body, null, 1), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' },
 })
@@ -58,7 +62,7 @@ async function book(ctx, b, now) {
   const cost = pct ? `${pct}% of what it earns, first year, nothing to pay in advance` : `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}${price.monthly ? ' a month' : ''}`
   const lines = [`${KINDS[kind].en} for ${site}`, cost,
     `Slot from ${new Date(starts).toISOString().slice(0, 10)}`, `Contact: ${contact}`, note && `Note: ${note}`, `Ref ${ref}`].filter(Boolean)
-  ctx.waitUntil(Promise.all([tell(env, `Bots ${ref} · ${KINDS[kind].en}`, lines), mail(env, `Bots purchase ${ref} — ${KINDS[kind].en}`, lines.join('\n'), contact)]))
+  ctx.waitUntil(Promise.all([wheelOrTell(env, `Bots ${ref} · ${KINDS[kind].en}`, lines, botDraft({ ref, kind, site, baht: price.baht, usd: price.usd, cost, contact, note, slot: new Date(starts).toISOString().slice(0, 10) })), mail(env, `Bots purchase ${ref} — ${KINDS[kind].en}`, lines.join('\n'), contact)]))
   return json({ ok: true, ref, kind, site, baht: price.baht, usd: price.usd, pct, monthly: price.monthly, slot_from: new Date(starts).toISOString(),
     pay: pct ? { line: PAY.line } : { ...PAY, paypal: `${PAY.paypal}/${price.usd}USD` } })
 }
@@ -76,7 +80,7 @@ async function slip(ctx, now) {
   if (!r.ok) return json({ ok: false, why: r.why })
   await env.TASKS.prepare("UPDATE bot_order SET state = 'paid', paid_ref = ? WHERE ref = ?").bind(r.transRef, ref).run()
   const lines = [`Paid ฿${o.baht} by PromptPay`, `${o.kind} for ${o.site}`, `Bank reference ${r.transRef}`, `Ref ${ref}`]
-  ctx.waitUntil(Promise.all([tell(env, `Bots ${ref} paid · ${o.kind}`, lines), mail(env, `Paid: ฿${o.baht} · Bots ${ref}`, lines.join('\n'))]))
+  ctx.waitUntil(Promise.all([wheelOrTell(env, `Bots ${ref} paid · ${o.kind}`, lines, { ...botDraft(o), pay: 'paid', how: 'promptpay', line: `💰 ${lines[0]} · bank ref ${r.transRef}` }), mail(env, `Paid: ฿${o.baht} · Bots ${ref}`, lines.join('\n'))]))
   return json({ ok: true, ref, amount: o.baht, at: now })
 }
 
