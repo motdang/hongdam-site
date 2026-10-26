@@ -63,6 +63,12 @@ function pose(el, name, play = 'loop') {
 }
 // where a rider stands: at a share of the line, less an offset
 const spot = (f, less = '0rem') => `calc((100% - var(--rw)) * ${f} - ${less})`
+// a picture is a pencil sketch until the swan gets to it (pond.css .job .stop): reached, it is handed the painted look
+function paint(g) {
+  if (!g) return
+  const lk = getComputedStyle(g).getPropertyValue('--db-look').trim()
+  if (lk && g.getAttribute('look') !== lk) g.setAttribute('look', lk)
+}
 // a picture's answer to the swan: a CSS animation on the stop (shop.css .fx-…)
 function fx(stop, kind) {
   stop.classList.remove(...MOVES.map((m) => 'fx-' + m[1]))
@@ -344,12 +350,12 @@ async function ride(job) {
   const play = (i) => {   // a picture plays as the swan reaches it; the end of the line plays its tap reaction, the job done
     const s = stops[i], g = s && s.querySelector('doodle-dingbat')
     if (!s || played.has(i)) return
-    played.add(i); s.classList.add('hit')
+    played.add(i); s.classList.add('hit'); paint(g)
     if (i === n - 1 && g && g.__db) g.__db.onTap()
     else if (g) g.setAttribute('play', 'once')
   }
   job.style.setProperty('--dur', dur + 'ms')
-  if (calm.matches) { job.classList.add('go'); stops.slice(0, reach + 1).forEach((s) => s.classList.add('hit')); return }
+  if (calm.matches) { job.classList.add('go'); stops.slice(0, reach + 1).forEach((s) => { s.classList.add('hit'); paint(s.querySelector('doodle-dingbat')) }); return }
   if (!sw || !has('hongsa-go') || !has('hongsa-idle') || !(sw.__db && sw.__db.puppet)) {   // the plain walk: it waddles along the line, then stands at its stop and looks round
     if (sw && reach > 0) { sw.setAttribute('name', 'hongsa-walk'); setTimeout(() => sw.setAttribute('name', 'hongsa-stand'), dur) }
     requestAnimationFrame(() => job.classList.add('go'))
@@ -566,24 +572,27 @@ function foldTop() {
 }
 foldTop()
 
-// Our work (front page): the Rotary cartoon lives on Google Drive. Its poster is a button; a press puts Drive's
-// player in its place, so the page loads no Google script until someone wants the film.
-document.querySelectorAll('.vid.drive').forEach((b) => b.addEventListener('click', () => {
-  const f = document.createElement('iframe')
-  f.src = b.dataset.src
-  f.title = b.getAttribute('aria-label')
-  f.allow = 'autoplay; fullscreen'
-  f.allowFullscreen = true
-  const box = document.createElement('div')
-  box.className = 'vid'
-  box.appendChild(f)
-  b.replaceWith(box)
-  f.focus()
-}, { once: true }))
-// one Mot Dang video plays at a time
-document.querySelectorAll('.reels video').forEach((v) => v.addEventListener('play', () => {
-  document.querySelectorAll('.reels video').forEach((o) => { if (o !== v) o.pause() })
-}))
+// Our work (front page): one row of thumbnails (her ask 2026-10-24: "smaller interface with thumbnails"). A tap opens
+// the film over the page with its words and link; closing it stops the film. The Rotary cartoon lives on Google Drive,
+// so the page loads no Google script until someone opens it.
+const player = document.querySelector('dialog.player')
+if (player && player.showModal) {
+  const pv = $('.pv', player), go = $('.go a', player), desc = $('.desc', player)
+  document.querySelectorAll('.thumb').forEach((b) => b.addEventListener('click', () => {
+    const d = b.dataset
+    $('h3', player).textContent = d.n
+    desc.textContent = d.l || ''; desc.hidden = !d.l
+    go.href = d.go; go.textContent = d.gon + ' →'
+    let m
+    if (d.kind === 'drive') { m = document.createElement('iframe'); m.src = d.src; m.title = d.n; m.allow = 'autoplay; fullscreen'; m.allowFullscreen = true }
+    else { m = document.createElement('video'); m.src = d.src; m.poster = d.poster; m.controls = true; m.playsInline = true; m.autoplay = true; m.width = d.w; m.height = d.h }
+    pv.replaceChildren(m)
+    player.showModal()
+  }))
+  player.addEventListener('close', () => pv.replaceChildren())
+  $('.x', player).addEventListener('click', () => player.close())
+  player.addEventListener('click', (e) => { if (e.target === player) player.close() })   // a tap on the dark around it
+} else document.querySelectorAll('.thumb').forEach((b) => b.addEventListener('click', () => { location.href = b.dataset.src }))
 
 // Today's prices
 const live = {}
@@ -735,7 +744,7 @@ ${card.opts.length > 1 ? `<fieldset><legend>${esc(T.choose)}</legend>${card.opts
 <p id="odesc"></p>
 <div class="qtyrow" hidden><span class="lab">${esc(T.qty)}</span>
  <button type="button" class="step" data-d="-1" aria-label="−">−</button><input name="qty" type="number" inputmode="numeric" min="1" value="1" aria-label="${esc(T.qty)}"><button type="button" class="step" data-d="1" aria-label="+">+</button>
- <span class="unit"></span></div>
+ <span class="unit"></span><span class="qpads" aria-hidden="true"></span></div>
 ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <span>${card.add.nh || esc(card.add.n)}</span></label>${card.add.unit ? `
 <div class="qtyrow addq" hidden><span class="lab">${esc(T.qty)}</span><input name="addonQty" type="number" inputmode="numeric" min="1" max="${card.add.max || 8}" value="1" aria-label="${esc(card.add.unitMany || T.qty)}"> <span class="unit">${esc(card.add.unitMany || '')}</span></div>` : ''}` : ''}
 <p class="tot"><span>${esc(T.total)}</span> <b id="total" class="amt"></b></p><p id="halfnote" class="note" hidden></p>
@@ -757,6 +766,13 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
     if (ad) { ad.hidden = !on; if (!on) f.elements.addon.checked = false }
     if ($('.addq', root)) $('.addq', root).hidden = !(on && f.elements.addon.checked)
     if (opt.unit) { qty.max = opt.max || 99; $('.unit', root).textContent = opt.unitMany || '' }
+    // a pad for each hour or visit (twelve at most), dropping in as the count goes up (pond.css .qpads)
+    const qp = $('.qtyrow .qpads', root), want = opt.unit ? Math.min(n(), 12) : 0
+    if (qp) {
+      while (qp.children.length > want) qp.lastChild.remove()
+      while (qp.children.length < want) { const i = document.createElement('i'); if (qp.dataset.seen) i.className = 'in'; qp.appendChild(i) }
+      qp.dataset.seen = 1
+    }
     card.opts.forEach((o) => { const e = $(`.oprice[data-o="${o.id}"]`, root); if (e && o.price.walk) e.innerHTML = amtH(base(o)) + esc(o.per || '') })
     liveText(root)
     const c = cur(opt), t = totalOf(opt, n(), f.elements.addon && f.elements.addon.checked)
