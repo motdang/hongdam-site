@@ -1,11 +1,11 @@
-import { serviceCard } from '../functions/_middleware.js'
+import { serviceCard, noTranslateClass } from '../functions/_middleware.js'
 import { SHARE } from '../functions/_share_data.js'
 import assert from 'node:assert'
 import fs from 'node:fs'
 const at = (u) => serviceCard(new URL(u, 'https://hongdam.net'))
 // a service's Buy or Ask address, in any language, gets that service's card
 const en = at('/buy/?c=retire&o=retire-month')
-assert.match(en.title, /^Retiring in Thailand, handled · /)
+assert.equal(en.title, SHARE.retire.en[0])
 assert.equal(en.meta['og:url'], 'https://hongdam.net/buy/?c=retire')
 assert.equal(en.meta['og:image'], 'https://hongdam.net/og/svc/retire.jpg')
 assert.equal(en.meta['twitter:image'], en.meta['og:image'])
@@ -17,4 +17,8 @@ for (const u of ['/buy/', '/buy/?c=nope', '/buy/?c=constructor', '/buy/?c=retire
   assert.equal(at(u), null, u)
 // every picture named is on disk
 for (const [id, s] of Object.entries(SHARE)) assert.ok(fs.existsSync(new URL('../docs/' + s.i, import.meta.url)), id)
+// translate="no" and the notranslate class go on <html> once, beside any class it has
+assert.equal(noTranslateClass(null), 'notranslate')
+assert.equal(noTranslateClass('dark'), 'dark notranslate')
+assert.equal(noTranslateClass('notranslate'), 'notranslate')
 console.log('share cards ok')
