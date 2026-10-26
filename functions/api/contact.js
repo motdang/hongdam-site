@@ -72,7 +72,7 @@ export async function onRequestPost({ request, env }) {
   const ref = "Q-" + crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6, "0").slice(-6);
   const lang = (page.match(/^\/(th|my|zh|de)\//) || [])[1] || "en";
   const ask = askDraft({ ref, service, message, contact: email || "LINE " + line, lang, page: page ? new URL(request.url).origin + page : "" });
-  if (email && line) ask.notes = `Customer: ${email} · LINE ${line}${name ? ` · ${name}` : ""}`;
+  if (email && line) ask.notes = `👤 ✉️ ${email} · 💬 LINE ${line}${name ? ` · ${name}` : ""}`;
   else if (name) ask.notes = `${ask.notes} · ${name}`;
   const took = await toWheel(env, ask);
 

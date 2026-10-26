@@ -43,7 +43,7 @@ import { tryOnce, sweep } from '../../_tries.js'
 import { rates, conv, CURS } from '../../_fx.js'
 import { cardOn, startCard, finishCard } from '../../_paypal.js'
 import { lnOn, btcUsd, satsFor, makeBill, settled } from '../../_lightning.js'
-import { toWheel, shopDraft, optName, trackUrl } from '../../_wheel.js'
+import { toWheel, shopDraft, trackUrl } from '../../_wheel.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
@@ -108,14 +108,14 @@ async function notify(env, card, title, lines, subject, replyTo, w, alert = fals
 const SITE = 'https://hongdam.net'
 const moneyLine = (o) => {
   const p = payOf(o)
-  return `${money(o.total, o.cur)}${o.due < o.total ? ` · ${money(o.due, o.cur)} due now` : ''}${p.cur !== o.cur ? ` · they pay ${money(p.due, p.cur)}` : ''}`
+  // ½: half now (from ฿10,000 / US$300); the buyer's own currency after it
+  return `${money(o.total, o.cur)}${o.due < o.total ? ` · ½ ${money(o.due, o.cur)}` : ''}${p.cur !== o.cur ? ` = ${money(p.due, p.cur)}` : ''}`
 }
 /** The order as its wheel ticket, with what changed (pay, how, line). The whole draft rides along, so an order the
  * wheel missed when it was booked still lands, at its money. */
 const wheelOf = (o, extra = {}) => ({
   ...shopDraft(o, {
-    cardName: CARDS[o.card]?.en || o.card, addName: optName(CARDS[o.card]?.add?.id || ''),
-    money: moneyLine(o), link: trackUrl(SITE, o.lang, o.ref),
+    cardName: CARDS[o.card]?.en || o.card, money: moneyLine(o), link: trackUrl(SITE, o.lang, o.ref),
   }),
   pay: ['paid', 'started', 'done'].includes(o.state) ? 'paid' : o.state === 'claimed' || o.state === 'capturing' ? 'claimed' : 'booked',
   ...extra,
