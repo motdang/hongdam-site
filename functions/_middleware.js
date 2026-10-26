@@ -1,5 +1,5 @@
 /**
- * Every request to hongdam.net passes through here. Two jobs:
+ * Every request to hongdam.net passes through here. Four jobs:
  *
  * 1. THE EDGE COUNT. One row per request, in the blob order traffic-eye's
  *    src/collector.js uses, into the same `traffic_eye` dataset motdang.net
@@ -18,6 +18,10 @@
  *    page each; a link to one of them shows that service in a preview (her ask 2026-10-24): its name, line,
  *    price and picture from _share_data.js (tools/build_shop.py) replace the page's own in the head.
  *
+ * 4. NO GOOGLE TRANSLATE. Every HTML page gets translate="no" and class "notranslate" on <html> and
+ *    <meta name="google" content="notranslate"> in <head>, so Chrome offers no translation (her word
+ *    2026-10-26: "google translate needs to be turned off everywhere on hongdam.net").
+ *
  * THE CONTRACT
  * This runs on every request to a live site, so it must not be able to break
  * one. `next()` is called first; recording and the rewrite each sit in a
@@ -27,6 +31,12 @@ import { classify } from './_classify.js';
 import { SHARE } from './_share_data.js';
 
 const SCRIPTS = '<script type="module" src="/assets/hd.js"></script><script type="module" src="/assets/eggs.js"></script>';
+const NO_TRANSLATE = '<meta name="google" content="notranslate">';
+
+export function noTranslateClass(cls) {
+  const words = (cls || '').split(/\s+/).filter(Boolean);
+  return words.includes('notranslate') ? words.join(' ') : [...words, 'notranslate'].join(' ');
+}
 
 export async function onRequest(context) {
   const started = Date.now();
@@ -46,7 +56,13 @@ export async function onRequest(context) {
 function withScripts(request, response) {
   if (request.method !== 'GET' || (response.status !== 200 && response.status !== 404)) return response;
   if (!(response.headers.get('content-type') || '').includes('text/html')) return response;
-  const rw = new HTMLRewriter().on('body', { element(el) { el.append(SCRIPTS, { html: true }); } });
+  const rw = new HTMLRewriter()
+    .on('html', { element(el) {
+      el.setAttribute('translate', 'no');
+      el.setAttribute('class', noTranslateClass(el.getAttribute('class')));
+    } })
+    .on('head', { element(el) { el.append(NO_TRANSLATE, { html: true }); } })
+    .on('body', { element(el) { el.append(SCRIPTS, { html: true }); } });
   const card = serviceCard(new URL(request.url));
   if (card) {
     rw.on('title', { element(el) { el.setInnerContent(card.title); } })
