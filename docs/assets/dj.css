@@ -75,3 +75,20 @@
 .dj-talk { margin-top: 4.5rem; padding-block: .5rem 3.4rem }
 .dj-talk .s-h { color: var(--on) }
 .dj-talk .s-sub { color: var(--on-mut) }
+
+/* spares: each part, a count of its copies, what it costs a month, one picture per copy with its name */
+.dj-spares { display: grid; gap: .9rem; margin: 0; padding: 0; list-style: none }
+@media (min-width: 46rem) { .dj-spares { grid-template-columns: 1fr 1fr } }
+.dj-sp { padding: 1rem 1.1rem 1.05rem; border: 1px solid var(--faint); border-left: 4px solid var(--sig); border-radius: 6px; background: var(--bg2) }
+.dj-sph { display: flex; align-items: baseline; gap: .6rem }
+.dj-spn { font: 800 2.1rem/1 var(--s-sans); letter-spacing: -.04em; font-variant-numeric: tabular-nums; color: var(--fg) }
+.dj-sp h3 { margin: 0; font: 740 1.2rem/1.2 var(--s-sans); letter-spacing: -.02em; text-transform: none }
+:lang(th) .dj-sp h3 { letter-spacing: 0 }
+.dj-spc { margin-left: auto; font: 700 .82rem/1 var(--mono); color: var(--fg); white-space: nowrap }
+:lang(th) .dj-spc { font: 700 .95rem/1 var(--s-sans) }
+.dj-cp { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .55rem .7rem; margin: .8rem 0 0; padding: 0; list-style: none }
+.dj-cp li { display: flex; flex-direction: column; align-items: center; gap: .3rem; min-width: 2.6rem; max-width: 5.4rem; font-size: 2rem; line-height: 0; color: var(--fg) }
+.dj-cp span { font: 600 .7rem/1.2 var(--mono); color: var(--mut); text-align: center }
+:lang(th) .dj-cp span { font: 600 .85rem/1.3 var(--s-sans) }
+.dj-spl { margin: .75rem 0 0; color: var(--mut); font-size: .98rem }
+.dj-sptot { margin: 1.1rem 0 0; color: var(--mut); font-size: .98rem; max-width: 46rem }

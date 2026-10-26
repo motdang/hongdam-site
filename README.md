@@ -43,6 +43,7 @@ Her ask 2026-10-24: a Hongdam Studio minisite on black swans and black swan pred
 Her ask 2026-10-26: a Hongdam Studio minisite for DJ, her advisor, as a portfolio and introduction to the company, in few words. hongdam.net/studio/dj/ and /th/studio/dj/, noindex and out of the sitemap and llms.txt. Four names (Mot Dang, Hongdam, Chiang Mai Visa Desk, Hongdam Studio), each with an Isotype row: one picture for a fixed number, the last one cut to what is left, counted at build (Mot Dang pages and public repositories from `data/studio/counts.json`, shop services from `data/shop.json`, Visa Desk services from chiangmaivisadesk.com with `data/studio/dj.counts.json` as the fallback). Then the work and the papers as thumbnails of each site's own link-preview picture (`docs/studio/dj/img/`), and the crew.
 
 - Words: `data/studio/dj.json` → `python3 tools/build_dj.py`. Look: `docs/assets/dj.css`, `dj.js` (rows fill in as they come into view).
+- Spares (her word 2026-10-26, DJ asked about a single point of failure): each part of the company with its copies and its monthly cost. `eval "$(~/.claude/bin/cfenv)"; python3 tools/dj_spares.py` counts them (org admins and repositories from GitHub, R2 storage and requests from Cloudflare, open-model jobs from ~/.claude/state/ow.tsv, the server, box and Workers prices as bought) into `data/studio/dj.spares.json`; then rebuild.
 - Dingbats: group p-dj, `DINGBATS_SRC=<doodle-dingbats>/src tools/group_dingbats.sh p-dj` (that group only).
 - Link-preview pictures: `node tools/dj_card.mjs`.
 
