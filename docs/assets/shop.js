@@ -489,7 +489,12 @@ function way(job) {
 }
 
 // Language: a choice made by hand is kept; the English front page opens the phone's language once.
-document.querySelectorAll('[data-setlang]').forEach((a) => a.addEventListener('click', () => store('hd-lang', a.dataset.setlang)))
+// The language buttons carry the address's ?… and #… along, so /buy/?c=retire opens /th/buy/?c=retire, not an
+// empty Buy page (her report 2026-10-26). Read again on the click: the Buy page rewrites its address after PayPal.
+const langLinks = document.querySelectorAll('[data-setlang]')
+const carryAddress = () => langLinks.forEach((a) => { a.setAttribute('href', a.getAttribute('href').split(/[?#]/)[0] + location.search + location.hash) })
+carryAddress()
+langLinks.forEach((a) => a.addEventListener('click', () => { carryAddress(); store('hd-lang', a.dataset.setlang) }))
 if (D.front && D.lang === 'en' && !store('hd-lang')) {
   const want = (navigator.languages || [navigator.language || '']).map((x) => String(x).slice(0, 2).toLowerCase()).find((x) => D.langs.includes(x))
   if (want && want !== 'en') location.replace('/' + want + '/')
