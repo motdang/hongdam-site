@@ -88,6 +88,13 @@ if (fs.existsSync(BS_F)) {
   groups['p-blackswan'] = [...always, 'sound', 'sparkle', ...bs.size_glyphs, ...bs.quiz.map((q) => q.g)]
 }
 
+// DJ, meet the company (tools/build_dj.py, data/studio/dj.json): the four names, their Isotype pictures, the crew
+const DJ_F = path.join(ROOT, 'data/studio/dj.json')
+if (fs.existsSync(DJ_F)) {
+  const dj = JSON.parse(fs.readFileSync(DJ_F, 'utf8'))
+  groups['p-dj'] = [...always, ...dj.names.flatMap((n) => [n.glyph, n.iso]), ...dj.crew.map((p) => p.glyph)]
+}
+
 fs.mkdirSync(OUT, { recursive: true })
 for (const f of fs.readdirSync(OUT)) fs.unlinkSync(path.join(OUT, f))
 const core = minify(fs.readFileSync(path.join(SRC, 'core.js'), 'utf8'))
