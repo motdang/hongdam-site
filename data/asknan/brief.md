@@ -12,30 +12,38 @@ what it means. They read the column to get an answer they can use today.
 
 ## Where the questions come from
 
-Every column answers a question Nan, Hongdam or Mot Dang has already answered in published work: a minisite, a
-Hongdam service, a Studio note, a tool she built. The column retells that answer in her voice, with its sources. A
-question nobody has answered in our work waits until someone has.
+Every column answers a question Nan, Hongdam or Mot Dang has already answered in published work: a minisite, a Hongdam service, a Studio note, a tool she built. The column retells that answer in her voice, with its sources. A question nobody has answered in our work waits until someone has. The index page says the letters are written from questions Hongdam has already answered.
 
-The question is written the way a reader would ask it. No invented letter-writer: no name, no town, no sign-off
-("Confused in Chiang Mai"), no "Dear Nan". The index page says where the first questions came from.
+## Voice: an advice column, in plain English
 
-## Voice
+Her word, 2026-10-26: "more compelling headlines and blurbs. A little more clickbaity. Add a bit of agony aunt fun to my columns and make them easier for ESL to read, even though they're about serious tech subject quite often."
 
-Nan's. First person, spoken, plain. Short sentences. Warm, dry, funny when the subject is funny, never cute.
-Understood equally by someone with no shared culture, someone using a screen reader, and someone famous and busy: plain
-words, one thing at a time, nothing that talks down.
+Most readers read English as a second language, often through a translation app. Every part of a column is written for them first.
 
-"I" only for what is on the record: what she asked for, built, said or chose, given to you as a fact with its date.
-Never invent an anecdote, a feeling, a belief, a habit, a trip, a meal, a person she met, or a quote. When a sentence
-would need an invented "I", write it as a fact without "I". Her own words, when given to you in quotation marks, may be
-quoted as hers.
+**The headline** (title, 80 characters at most) is a hook: the most surprising fact in the answer, the reader's fear or wish, a number, or a question with a twist. "Press 4 is not 4 minutes: the 7-Eleven microwave code, explained." "Is your water pump haunted?" The column delivers what the headline promises in its first lines. Plain words a translation app keeps; no "you won't believe", no capitals for shouting. The Thai headline makes the same promise in Thai, not a word-for-word copy.
+
+**The blurb** (dek, 230 characters at most): two or three short sentences. The first teases, the rest give the answer. A reader who reads only the blurb still leaves with the answer.
+
+**The letter** (q): the page puts "Dear Nan," above it. The reader's problem in their own words, with a little feeling (embarrassed, worried, confused, fed up), in one to four short sentences. It ends with a pen-name in `from`: two to five plain words that name the problem, with a place in Thailand when it fits ("Wet Trousers in Chiang Mai", "Rich in Paint, Poor in Baht"). The pen-name never names or describes a real person.
+
+**The answer** opens "Dear <pen-name>," and answers the question in that sentence or the next. Warm, a little cheeky, on the reader's side. The fun comes from the situation and the facts (the gecko on the ceiling, the burned sweet potato), never from laughing at the reader. A sad or serious letter (a death, money trouble, health) gets warmth and no jokes. The last line is a short send-off: a fact or a picture the reader keeps, not a summary and not an order.
+
+**Plain English, all through:**
+
+- Sentences of 20 words or fewer, most under 15. One idea in each.
+- Everyday words. A word a learner may not know gets a short meaning the first time, and only one bracket in a sentence.
+- No idioms, slang or puns that a translation app would break. A headline may play with words only when its plain meaning still works.
+- A plain verb before a phrasal verb: "start" and "stop", not "cut in" and "cut out".
+- Numbers as digits. Prices with ฿ and the day they were checked.
+- Headings: short and plain, fun allowed.
+
+"I" only for what is on the record: what she asked for, built, said or chose, given to you as a fact with its date. Never invent an anecdote, a feeling, a belief, a habit, a trip, a meal, a person she met, or a quote. When a sentence would need an invented "I", write it as a fact without "I". Her own words, when given to you in quotation marks, may be quoted as hers. The letter-writer is the one who has feelings; Nan's answer has facts and warmth.
 
 ## Rules the columns meet
 
 Read ~/.claude/STYLE.md first and follow it in full. The ones a column hits most:
 
-- Answer first. The first sentence answers the question. No throat-clearing, no restating the question, no closing
-  summary, no sign-off line.
+- Answer first: "Dear <pen-name>," and then the answer. No throat-clearing, no restating the question, no closing summary.
 - Facts, not warnings. Her word: "I'm not a nanny, I don't make rules, just report facts." No "be careful", "make
   sure", "don't forget", "you should", "it's best to", no safety notes, no risk lines, no words like warning, risk,
   danger, scam, counterfeit. A how-to may list its steps, written as what happens or what is done ("The nozzle sits
@@ -67,8 +75,10 @@ a line of three dashes, then the body:
 {"no": 11, "date": "2026-11-01", "kind": "practical",
  "title": "The question, short, as a headline (80 characters at most)",
  "title_th": "The headline in Thai",
- "q": "The question as a reader asks it, one to three sentences, 400 characters at most.",
- "q_th": "The question in Thai",
+ "q": "The letter, without Dear Nan (the page adds it), one to four short sentences, 400 characters at most.",
+ "q_th": "The letter in Thai",
+ "from": "Pen-name, two to five plain words",
+ "from_th": "The pen-name in Thai",
  "dek": "The answer in one or two sentences, 230 characters at most.",
  "dek_th": "The same in Thai",
  "do": {"t": "Button words, 30 characters at most", "u": "https://… or /path/"},
@@ -85,7 +95,8 @@ Body.
 - cards: zero to three Hongdam shop cards this answer leads to, by id (data/shop.json). The page shows them with their
   live prices under the column.
 - line: two to four doodle dingbats about the subject, by name (data/looks.json "glyphs").
-- title_th, q_th, dek_th: Thai a Thai reader would write, by you, no machine translation tool. English product names
+- from, from_th: the letter's pen-name; the page shows it under the letter after a dash.
+- title_th, q_th, dek_th, from_th: Thai a Thai reader would write, by you, no machine translation tool. English product names
   stay in English.
 
 The body: 300 to 800 words (the check allows 250 to 1,000). Paragraphs, ## headings that state their finding, - and 1.
