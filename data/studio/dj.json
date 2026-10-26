@@ -424,7 +424,13 @@
    "card": {
     "title": "DJ, meet the company.",
     "sub": "Mot Dang · Hongdam · Chiang Mai Visa Desk · Studio"
-   }
+   },
+   "spH": "Spares",
+   "spL": "Two or more of each, for about ฿{total} a month.",
+   "spCost": "฿{n} a month",
+   "spFree": "฿0",
+   "spTotal": "Servers, storage, the edge and the open models: about ฿{total} a month (US${usd}), counted {day}. AI subscriptions are separate.",
+   "spSee": "Spares"
   },
   "th": {
    "title": "DJ รู้จักบริษัทของเรา · Hongdam Studio",
@@ -461,7 +467,316 @@
    "card": {
     "title": "DJ นี่คือบริษัทของเรา",
     "sub": "มดแดง · หงส์ดำ · Chiang Mai Visa Desk · Studio"
+   },
+   "spH": "สำรอง",
+   "spL": "อย่างละสองขึ้นไป ราว ฿{total} ต่อเดือน",
+   "spCost": "฿{n} ต่อเดือน",
+   "spFree": "฿0",
+   "spTotal": "เซิร์ฟเวอร์ ที่เก็บข้อมูล เครือข่าย และโมเดลเปิด: ราว ฿{total} ต่อเดือน (US${usd}) นับเมื่อ {day} ค่าสมาชิก AI แยกต่างหาก",
+   "spSee": "ตัวสำรอง"
+  }
+ },
+ "logins": {
+  "NaNoBotCo": "NaN",
+  "michaeljpeacock": "Michael",
+  "myatkaungthant-jpg": "Marcus",
+  "MartinSolo": "Wai Tun"
+ },
+ "spares": [
+  {
+   "id": "keys",
+   "cost": [],
+   "admins": true,
+   "n": {
+    "en": "Keys",
+    "th": "กุญแจ"
+   },
+   "l": {
+    "en": "Admin on all {repos} code repositories. A merge publishes without NaN.",
+    "th": "สิทธิ์ผู้ดูแลทั้ง {repos} คลังโค้ด รวมโค้ดแล้วเว็บขึ้นเอง ไม่ต้องรอ NaN"
+   }
+  },
+  {
+   "id": "code",
+   "cost": [],
+   "n": {
+    "en": "Code",
+    "th": "โค้ด"
+   },
+   "copies": [
+    [
+     "cloud",
+     {
+      "en": "GitHub",
+      "th": "GitHub"
+     }
+    ],
+    [
+     "server",
+     {
+      "en": "server",
+      "th": "เซิร์ฟเวอร์"
+     }
+    ],
+    [
+     "laptop",
+     {
+      "en": "laptop",
+      "th": "แล็ปท็อป"
+     }
+    ],
+    [
+     "parcel",
+     {
+      "en": "5 TB box",
+      "th": "กล่อง 5 TB"
+     }
+    ]
+   ],
+   "l": {
+    "en": "Copied to the 5 TB box every night.",
+    "th": "สำรองลงกล่อง 5 TB ทุกคืน"
+   }
+  },
+  {
+   "id": "builds",
+   "cost": [
+    "server"
+   ],
+   "n": {
+    "en": "Builds",
+    "th": "สร้างเว็บ"
+   },
+   "copies": [
+    [
+     "server",
+     {
+      "en": "server, Germany",
+      "th": "เซิร์ฟเวอร์ เยอรมนี"
+     }
+    ],
+    [
+     "laptop",
+     {
+      "en": "laptop",
+      "th": "แล็ปท็อป"
+     }
+    ]
+   ],
+   "l": {
+    "en": "If a build fails, the live site keeps its last good version.",
+    "th": "ถ้าสร้างไม่สำเร็จ เว็บที่ใช้อยู่ยังเป็นฉบับดีล่าสุด"
+   }
+  },
+  {
+   "id": "data",
+   "cost": [
+    "r2",
+    "box"
+   ],
+   "n": {
+    "en": "Data and photos",
+    "th": "ข้อมูลและภาพ"
+   },
+   "copies": [
+    [
+     "cloud",
+     {
+      "en": "Cloudflare R2",
+      "th": "Cloudflare R2"
+     }
+    ],
+    [
+     "parcel",
+     {
+      "en": "5 TB box",
+      "th": "กล่อง 5 TB"
+     }
+    ],
+    [
+     "earth",
+     {
+      "en": "Hugging Face",
+      "th": "Hugging Face"
+     }
+    ],
+    [
+     "save",
+     {
+      "en": "drive",
+      "th": "ฮาร์ดดิสก์"
+     }
+    ]
+   ],
+   "l": {
+    "en": "{r2_gb} GB in more than one country.",
+    "th": "{r2_gb} GB เก็บไว้มากกว่าหนึ่งประเทศ"
+   }
+  },
+  {
+   "id": "sites",
+   "cost": [
+    "workers"
+   ],
+   "n": {
+    "en": "Sites",
+    "th": "เว็บ"
+   },
+   "copies": [
+    [
+     "cloud",
+     {
+      "en": "Cloudflare",
+      "th": "Cloudflare"
+     }
+    ],
+    [
+     "page",
+     {
+      "en": "GitHub Pages",
+      "th": "GitHub Pages"
+     }
+    ]
+   ],
+   "l": {
+    "en": "Two hosts.",
+    "th": "สองผู้ให้บริการ"
+   }
+  },
+  {
+   "id": "ai",
+   "cost": [
+    "ow"
+   ],
+   "n": {
+    "en": "AI",
+    "th": "AI"
+   },
+   "copies": [
+    [
+     "robot",
+     {
+      "en": "Claude",
+      "th": "Claude"
+     }
+    ],
+    [
+     "robot",
+     {
+      "en": "DeepSeek",
+      "th": "DeepSeek"
+     }
+    ],
+    [
+     "robot",
+     {
+      "en": "Kimi",
+      "th": "Kimi"
+     }
+    ],
+    [
+     "robot",
+     {
+      "en": "GLM",
+      "th": "GLM"
+     }
+    ],
+    [
+     "robot",
+     {
+      "en": "Qwen",
+      "th": "Qwen"
+     }
+    ]
+   ],
+   "l": {
+    "en": "Open models run the same tools without Claude.",
+    "th": "โมเดลเปิดใช้เครื่องมือชุดเดียวกันได้ โดยไม่ต้องมี Claude"
+   }
+  },
+  {
+   "id": "money",
+   "cost": [],
+   "n": {
+    "en": "Money in",
+    "th": "รับเงิน"
+   },
+   "copies": [
+    [
+     "scan",
+     {
+      "en": "PromptPay",
+      "th": "PromptPay"
+     }
+    ],
+    [
+     "coin",
+     {
+      "en": "PayPal",
+      "th": "PayPal"
+     }
+    ],
+    [
+     "send",
+     {
+      "en": "Wise",
+      "th": "Wise"
+     }
+    ],
+    [
+     "lightning",
+     {
+      "en": "Lightning",
+      "th": "Lightning"
+     }
+    ]
+   ],
+   "l": {
+    "en": "Four ways to pay on hongdam.net.",
+    "th": "จ่ายได้สี่ทางบน hongdam.net"
+   }
+  },
+  {
+   "id": "talk",
+   "cost": [],
+   "n": {
+    "en": "Talk",
+    "th": "ช่องทางคุย"
+   },
+   "copies": [
+    [
+     "chat",
+     {
+      "en": "LINE",
+      "th": "LINE"
+     }
+    ],
+    [
+     "envelope",
+     {
+      "en": "email",
+      "th": "อีเมล"
+     }
+    ],
+    [
+     "megaphone",
+     {
+      "en": "Discord",
+      "th": "Discord"
+     }
+    ],
+    [
+     "gear",
+     {
+      "en": "Team Wheel",
+      "th": "Team Wheel"
+     }
+    ]
+   ],
+   "l": {
+    "en": "Work is written down as tickets on the Team Wheel.",
+    "th": "งานเขียนไว้เป็นตั๋วบน Team Wheel"
    }
   }
- }
+ ]
 }

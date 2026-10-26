@@ -92,7 +92,7 @@ if (fs.existsSync(BS_F)) {
 const DJ_F = path.join(ROOT, 'data/studio/dj.json')
 if (fs.existsSync(DJ_F)) {
   const dj = JSON.parse(fs.readFileSync(DJ_F, 'utf8'))
-  groups['p-dj'] = [...always, ...dj.names.flatMap((n) => [n.glyph, n.iso]), ...dj.crew.map((p) => p.glyph)]
+  groups['p-dj'] = [...always, 'key', ...dj.names.flatMap((n) => [n.glyph, n.iso]), ...dj.crew.map((p) => p.glyph), ...(dj.spares || []).flatMap((s) => (s.copies || []).map((c) => c[0]))]
 }
 
 fs.mkdirSync(OUT, { recursive: true })

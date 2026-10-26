@@ -6,7 +6,8 @@ of reading lots of words").
     python3 tools/build_dj.py          # the pages, English and Thai
     node tools/dj_card.mjs             # their link-preview pictures
 
-Reads data/studio/dj.json (words, the four names, the work, the crew, the papers), data/studio/counts.json
+Reads data/studio/dj.json (words, the four names, the spares, the work, the crew, the papers), data/studio/dj.spares.json
+(tools/dj_spares.py: admins, storage, monthly costs), data/studio/counts.json
 (tools/studio_counts.py: Mot Dang pages, public repositories) and data/shop.json (the services in the shop). The Visa
 Desk's services are counted from chiangmaivisadesk.com when the build runs; data/studio/dj.counts.json keeps the last
 count for a build without the network. Writes docs/studio/dj/ and docs/th/studio/dj/. The pages are noindex and stay
@@ -35,6 +36,7 @@ GROUP = "p-dj"
 _A = [os.path.join(DOCS, "assets", "dj." + x) for x in ("css", "js")]
 V = hashlib.sha1(b"".join(open(p, "rb").read() for p in _A if os.path.exists(p))).hexdigest()[:8]
 _CF = os.path.join(HERE, "data", "studio", "dj.counts.json")
+_SP = os.path.join(HERE, "data", "studio", "dj.spares.json")   # tools/dj_spares.py
 
 
 def ui(lang):
@@ -119,6 +121,30 @@ def work(lang):
         E(ui(lang)["workH"]), "".join(tile(w, lang) for w in D["work"])))
 
 
+def spares(lang):
+    """Each part of the company and its copies, with what the part costs a month (data/studio/dj.spares.json)."""
+    u, sp = ui(lang), json.load(open(_SP, encoding="utf-8"))
+    rate, usd = sp["usd_thb"], sp["usd"]
+    baht = lambda x: S.num(int(round(x * rate / 10.0) * 10), lang)  # noqa: E731
+    total = sum(usd.values())
+    order = list(D["logins"])
+    admins = sorted(sp["admins"], key=lambda a: order.index(a) if a in order else len(order))
+    rows = ""
+    for r in D["spares"]:
+        cps = [("key", D["logins"].get(a, a)) for a in admins] if r.get("admins") else [(g, tr(c, lang)) for g, c in r["copies"]]
+        cost = sum(usd[k] for k in r["cost"])
+        line = tr(r["l"], lang).replace("{repos}", S.num(sp["repos"], lang)).replace("{r2_gb}", S.num(sp["r2_gb"], lang))
+        rows += ('<li class="dj-sp" id="sp-%s"><div class="dj-sph"><b class="dj-spn">%d</b><h3>%s</h3><span class="dj-spc">%s</span></div>\n'
+                 '<ul class="dj-cp">%s</ul>\n<p class="dj-spl">%s</p></li>\n' % (
+                     r["id"], len(cps), E(tr(r["n"], lang)), E(u["spCost"].replace("{n}", baht(cost)) if cost else u["spFree"]),
+                     "".join('<li>%s<span>%s</span></li>' % (B.db(g), E(c)) for g, c in cps), E(line)))
+    tot = (u["spTotal"].replace("{total}", baht(total)).replace("{usd}", "%.0f" % total)
+           .replace("{day}", S.day(sp["day"], lang)))
+    return ('<section id="spares" class="s-wrap"><h2 class="s-h">%s</h2>\n<p class="s-sub">%s</p>\n<ol class="dj-spares">\n%s</ol>\n'
+            '<p class="dj-sptot">%s</p>\n</section>\n' % (
+                E(u["spH"]), E(u["spL"].replace("{total}", baht(total))), rows, E(tot)))
+
+
 def crew(lang):
     u = ui(lang)
     rows = ""
@@ -145,9 +171,9 @@ def hero(lang):
     u = ui(lang)
     gloss = "".join('<div><dt>%s</dt><dd><span lang="th">%s</span> = %s</dd></div>' % (E(a), E(b), E(c)) for a, b, c in u["gloss"])
     return ('<div class="s-room">\n%s<section class="s-hero s-wrap dj-hero">\n<p class="s-kicker">%s</p>\n<h1>%s</h1>\n<p class="s-lede">%s</p>\n'
-            '<dl class="dj-gloss">%s</dl>\n<p class="s-cta"><a class="s-btn" href="#work">%s</a> <a class="s-btn alt" href="mailto:%s">%s</a></p>\n'
+            '<dl class="dj-gloss">%s</dl>\n<p class="s-cta"><a class="s-btn" href="#work">%s</a> <a class="s-btn alt" href="#spares">%s</a> <a class="s-btn alt" href="mailto:%s">%s</a></p>\n'
             '<button class="s-swan" type="button" aria-label="Hongdam">%s</button>\n</section>\n</div>\n' % (
-                S.bar(lang), E(u["kicker"]), E(u["h1"]), E(u["lede"]), gloss, E(u["seeWork"]), B.MAIL, E(u["write"]), B.db("hongsa", play="loop")))
+                S.bar(lang), E(u["kicker"]), E(u["h1"]), E(u["lede"]), gloss, E(u["seeWork"]), E(u["spSee"]), B.MAIL, E(u["write"]), B.db("hongsa", play="loop")))
 
 
 def head(lang):
@@ -170,7 +196,7 @@ def foot(lang):
 
 def page(lang, c):
     out = head(lang) + '<body class="studio dj">\n' + S.top(lang, [(l, B.url(l, PATH)) for l in LANGS])
-    out += hero(lang) + '<main id="main">\n' + names(lang, c) + work(lang) + crew(lang) + papers(lang) + talk(lang) + '</main>\n'
+    out += hero(lang) + '<main id="main">\n' + names(lang, c) + spares(lang) + work(lang) + crew(lang) + papers(lang) + talk(lang) + '</main>\n'
     return out + foot(lang)
 
 
