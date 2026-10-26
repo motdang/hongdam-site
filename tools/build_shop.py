@@ -736,6 +736,7 @@ def main():
         write("assets/shop-%s.json" % lang, json.dumps(client_cards(lang), ensure_ascii=False, separators=(",", ":")))
     open(os.path.join(HERE, "functions", "_shop_data.js"), "w", encoding="utf-8").write(shop_js_data())
     open(os.path.join(HERE, "functions", "_share_data.js"), "w", encoding="utf-8").write(share_data_js())
+    import build_wheel; build_wheel.main()
     sitemap()
     print("%d pages · %d cards in %d categories · %d languages" % (n, len(SHOP["cards"]), len(SHOP["cats"]), len(LANGS)))
     if left:

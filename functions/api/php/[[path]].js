@@ -14,7 +14,11 @@ import { KINDS, allCounts, pricesFrom, prices, slotWeek, RULE } from '../../_php
 import { weekStart, bkk } from '../../_github.js'
 import { checkSlip } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { wheelOrTell, pageDraft } from '../../_wheel.js'
 
+// its ticket on the Team Wheel (functions/_wheel.js)
+const phpDraft = (o) => pageDraft({ ...o, kind: 'php', name: `PHP · ${o.site}`, what: `${KINDS[o.kind]?.en || o.kind}: ${o.site}${o.php ? ` (PHP ${o.php})` : ''}`,
+  link: 'https://hongdam.net/php/', skill: 'backend', size: 'medium' })
 const json = (body, status = 200) => new Response(JSON.stringify(body, null, 1), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
 })
@@ -88,7 +92,7 @@ async function book(ctx, b, now) {
   const starts = Math.max(now, weekStart(week))
   const lines = [`${KINDS[kind].en}: ${site}`, php && `PHP reported: ${php}`, `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}`,
     `Slot from ${bkk(starts)}`, `Contact: ${code(contact)}`, note && `Note: ${code(note)}`, `Ref ${ref}`].filter(Boolean)
-  ctx.waitUntil(Promise.all([tell(env, `PHP ${ref} · ${site}`, lines), mail(env, `PHP fix booking ${ref} — ${site}`, lines.join('\n'), contact)]))
+  ctx.waitUntil(Promise.all([wheelOrTell(env, `PHP ${ref} · ${site}`, lines, phpDraft({ ref, kind, site, php, baht: price.baht, usd: price.usd, contact, note, slot: bkk(starts) })), mail(env, `PHP fix booking ${ref} — ${site}`, lines.join('\n'), contact)]))
   return json({ ok: true, ref, kind, site, baht: price.baht, usd: price.usd, slot_from: new Date(starts).toISOString(),
     pay: { ...PAY, paypal: `${PAY.paypal}/${price.usd}USD` } })
 }
@@ -107,7 +111,7 @@ async function slip(ctx, now) {
   const u = await env.TASKS.prepare("UPDATE php_order SET state = 'paid', paid_ref = ? WHERE ref = ? AND state = 'booked'").bind(r.transRef, ref).run()
   if (u?.meta?.changes === 0) return json({ ok: false, why: 'state' })
   const lines = [`Paid ฿${o.baht} by PromptPay`, `${KINDS[o.kind]?.en || o.kind}: ${o.site}`, `Bank reference ${r.transRef}`, `Ref ${ref}`]
-  ctx.waitUntil(Promise.all([tell(env, `PHP ${ref} paid · ${o.site}`, lines), mail(env, `Paid: ฿${o.baht} · PHP ${ref}`, lines.join('\n'))]))
+  ctx.waitUntil(Promise.all([wheelOrTell(env, `PHP ${ref} paid · ${o.site}`, lines, { ...phpDraft(o), pay: 'paid', how: 'promptpay', line: `💰 ${lines[0]} · bank ref ${r.transRef}` }), mail(env, `Paid: ฿${o.baht} · PHP ${ref}`, lines.join('\n'))]))
   return json({ ok: true, ref, amount: o.baht, at: now })
 }
 

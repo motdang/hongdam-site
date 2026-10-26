@@ -11,7 +11,11 @@
 import { KINDS, prices, counts, slotWeek, weekStart, walk, OPENED } from '../../_github.js'
 import { checkSlip } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { wheelOrTell, pageDraft } from '../../_wheel.js'
 
+// its ticket on the Team Wheel (functions/_wheel.js)
+const ghDraft = (o) => pageDraft({ ...o, kind: 'github', name: `GitHub · ${KINDS[o.kind]?.en || o.kind}`, what: `${KINDS[o.kind]?.en || o.kind} for github.com/${o.login}`,
+  link: 'https://hongdam.net/github/', skill: 'frontend, content', size: o.kind === 'profile' ? 'small' : 'medium' })
 const json = (body, status = 200) => new Response(JSON.stringify(body, null, 1), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' },
 })
@@ -57,7 +61,7 @@ async function book(ctx, b, now) {
   const starts = Math.max(now, weekStart(week))
   const lines = [`${KINDS[kind].en} for github.com/${login}`, `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}`,
     `Slot from ${new Date(starts).toISOString().slice(0, 10)}`, `Contact: ${contact}`, note && `Note: ${note}`, `Ref ${ref}`].filter(Boolean)
-  ctx.waitUntil(Promise.all([tell(env, `GitHub ${ref} · ${login}`, lines), mail(env, `GitHub booking ${ref} — ${login}`, lines.join('\n'), contact)]))
+  ctx.waitUntil(Promise.all([wheelOrTell(env, `GitHub ${ref} · ${login}`, lines, ghDraft({ ref, kind, login, baht: price.baht, usd: price.usd, contact, note, slot: new Date(starts).toISOString().slice(0, 10) })), mail(env, `GitHub booking ${ref} — ${login}`, lines.join('\n'), contact)]))
   return json({ ok: true, ref, kind, login, baht: price.baht, usd: price.usd, slot_from: new Date(starts).toISOString(),
     pay: { ...PAY, paypal: `${PAY.paypal}/${price.usd}USD` } })
 }
@@ -74,7 +78,7 @@ async function slip(ctx, now) {
   if (!r.ok) return json({ ok: false, why: r.why })
   await env.TASKS.prepare("UPDATE gh_order SET state = 'paid', paid_ref = ? WHERE ref = ?").bind(r.transRef, ref).run()
   const lines = [`Paid ฿${o.baht} by PromptPay`, `github.com/${o.login}`, `Bank reference ${r.transRef}`, `Ref ${ref}`]
-  ctx.waitUntil(Promise.all([tell(env, `GitHub ${ref} paid · ${o.login}`, lines), mail(env, `Paid: ฿${o.baht} · GitHub ${ref}`, lines.join('\n'))]))
+  ctx.waitUntil(Promise.all([wheelOrTell(env, `GitHub ${ref} paid · ${o.login}`, lines, { ...ghDraft(o), pay: 'paid', how: 'promptpay', line: `💰 ${lines[0]} · bank ref ${r.transRef}` }), mail(env, `Paid: ฿${o.baht} · GitHub ${ref}`, lines.join('\n'))]))
   return json({ ok: true, ref, amount: o.baht, at: now })
 }
 
