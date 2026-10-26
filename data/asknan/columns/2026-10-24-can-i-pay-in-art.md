@@ -1,10 +1,12 @@
 {"no": 9, "date": "2026-10-24", "kind": "life",
- "title": "Will anyone take art as payment?",
- "title_th": "มีใครรับงานศิลปะแทนเงินไหม",
+ "title": "Van Gogh paid in paintings. So can you.",
+ "title_th": "แวนโก๊ะจ่ายด้วยภาพวาด คุณก็ทำได้",
  "q": "I'm a painter. I need a website, and I have more paintings than money. Will anyone take art as payment?",
  "q_th": "ฉันเป็นจิตรกร ต้องการเว็บไซต์ แต่มีภาพวาดมากกว่าเงิน มีใครรับงานศิลปะแทนค่าจ้างไหม",
- "dek": "Yes. Mot Dang, Hongdam's directory site, trades web pages for a painting, ten drawings, a day of photography, a piece of music and more, at ฿5,999 or ฿9,999 a trade. Van Gogh's paint dealer and his doctor both held his paintings.",
- "dek_th": "รับ มดแดง (เว็บรวมสถานที่ของหงส์ดำ) แลกเพจเว็บกับภาพวาดหนึ่งภาพ ภาพวาดสิบภาพ ถ่ายภาพหนึ่งวัน เพลงหนึ่งเพลง และงานอื่น ๆ มูลค่า ฿5,999 หรือ ฿9,999 ต่อการแลก คนขายสีและหมอของแวน โก๊ะต่างก็ได้ภาพของเขาไว้",
+ "from": "Rich in Paint, Poor in Baht",
+ "from_th": "สีเต็มบ้าน เงินไม่เต็มกระเป๋า",
+ "dek": "Mot Dang, Hongdam's directory site, trades a web page for one painting, ten drawings, a day of photos or a piece of music, worth ฿5,999 or ฿9,999. Van Gogh's paint dealer and his doctor both held his paintings.",
+ "dek_th": "มดแดง เว็บรวมสถานที่ของหงส์ดำ แลกหน้าเว็บกับภาพวาดหนึ่งภาพ ภาพลายเส้นสิบภาพ งานถ่ายภาพหนึ่งวัน หรือเพลงหนึ่งเพลง มูลค่า ฿5,999 หรือ ฿9,999 ร้านขายสีและหมอของแวนโก๊ะก็เคยถือภาพวาดของเขาไว้",
  "do": {"t": "See the art trades", "u": "https://motdang.net/sites/paid-in-art/"},
  "cards": ["paid-in-kind"],
  "line": ["nib", "star", "camera", "heart"],
@@ -19,15 +21,23 @@
   {"t": "The Accountant (2016 film) - Wikipedia", "u": "https://en.wikipedia.org/wiki/The_Accountant_(2016_film)"},
   {"t": "Paid in Meals · จ่ายเป็นอาหาร · Mot Dang", "u": "https://motdang.net/sites/paid-in-meals/"}
  ],
- "card": {"big": "Will anyone take art as payment?", "sub": "A painting for a web page, and how Van Gogh's circle did it."}}
+ "card": {"big": "Van Gogh paid in paintings", "sub": "So can you: a web page for one painting"}}
 ---
-Yes. Mot Dang (มดแดง, mot daeng), Hongdam's directory and network of sites at motdang.net, takes a painting, ten drawings, a day of photography, a piece of music and other work in exchange for a web page [1].
+Dear Rich in Paint,
 
-On 16 October 2026 I said: "I want to be paid in art, by artists. I do the services they need, they pay me in work product." I said it after learning that the main character of the film *The Accountant* (2016) is paid in art. In the film his Airstream trailer holds artwork and valuables he bought or took as payment for jobs [8].
+Yes. Van Gogh's paint seller took paintings in place of money, and Mot Dang (มดแดง, *mot daeng*) does too. Mot Dang is Hongdam's directory and group of websites at motdang.net. It trades a web page for a painting, ten drawings, a day of photography or a piece of music [1].
 
-## Seven art trades, each with a value in baht
+## Van Gogh's paint seller and his doctor
 
-On 24 October 2026 each of the seven carried a value in baht and read "3 places left" [1].
+Julien Tanguy had a small paint shop on rue Clauzel in Paris. He often took paintings in exchange for the things he sold [5]. In July 1888, Vincent van Gogh wrote to his brother Theo about a bill from the shop. Tanguy still held one of Vincent's studies, a practice painting. Vincent owed him that study, if it came to it. But, he wrote, "I don't owe him a sou in money" [6]. A sou was a small French coin.
+
+Dr Félix Rey was an assistant at the hospital in Arles where Van Gogh was taken. Van Gogh painted his portrait in January 1889. The portrait went to the attic. Later it filled a hole in the henhouse [7].
+
+## Seven art trades, each with a price
+
+On 16 October 2026 I said: "I want to be paid in art, by artists. I do the services they need, they pay me in work product." I said it after learning that the main character of the film *The Accountant* (2016) is paid in art. His Airstream trailer holds art and valuables, some taken as payment for jobs [8].
+
+On 24 October 2026 each one read "3 places left" [1].
 
 | Artist | Gives | Gets | Value |
 |---|---|---|---|
@@ -37,27 +47,25 @@ On 24 October 2026 each of the seven carried a value in baht and read "3 places 
 | Writers | Words, with the writer's name | Writer's page and share cards | ฿5,999 |
 | Musicians | One piece of music | Concert calendar page, a reel to the music | ฿5,999 |
 | Weavers, carvers, potters, silversmiths | One piece | Shop page, a minisite, a map pin | ฿9,999 |
-| Yant masters | One ผ้ายันต์ (pha yant), a cloth carrying a yant, a sacred diagram | Booking page in visitors' languages | ฿9,999 |
+| Yant masters | One ผ้ายันต์ (*pha yant*), a cloth with a sacred drawing | Booking page in visitors' languages | ฿9,999 |
 
-A portfolio page keeps a maker's work in one place. A share card is the picture that shows when a link is shared on Facebook, LINE (a chat app), Mastodon or Bluesky. A minisite is a small website of its own, and a reel is a short video [1].
+A portfolio page keeps a maker's work in one place. A share card is the picture that shows when someone shares a link on Facebook, LINE, Mastodon or Bluesky. A minisite is a small website of its own. A reel is a short video [1].
 
-To start, the maker sends a photo of the work on LINE, agrees the trade in the chat, and the page is published. For objects, Mot Dang starts the day the work arrives. For work paid in time (photo days, lessons, meals, nights) the page reads "half before we start, half within three months" [1].
+## How a trade starts
 
-Ten more trades are listed under "Work, not art", each on its own page at motdang.net/sites/paid-in-…: meals, nights, lessons, print, clothes, repairs, treatments, posts, costumes and rides, at ฿5,999 or ฿9,999 [1]. The Paid in Meals page reads "3 places left this month" [9].
+The maker sends a photo of the work on LINE, a chat app. The two sides agree on the trade in the chat. Then the page is published. For objects, Mot Dang starts on the day the work arrives [1].
 
-## Van Gogh's paint dealer and doctor held his paintings
-
-Julien Tanguy ran a small paint shop on rue Clauzel in Paris and often took paintings in exchange for the goods he sold [5]. In July 1888 Vincent van Gogh wrote to his brother Theo about a bill from the shop. He said Tanguy still held one of his studies (practice paintings). That, he wrote, he owed him if it came to it, but "I don't owe him a sou in money" (a sou was a small French coin) [6].
-
-Dr Félix Rey was an assistant at the hospital in Arles where Van Gogh was taken. Van Gogh painted his portrait in January 1889 [7]. The portrait went to the attic, then blocked a hole in the henhouse [7].
+There are 10 more trades under "Work, not art", such as meals, lessons, repairs and rides. Each has its own page, at ฿5,999 or ฿9,999 [1]. The Paid in Meals page reads "3 places left this month" [9].
 
 ## Jo van Gogh-Bonger sold the rest
 
-Jo van Gogh-Bonger (1862 to 1925) was married to Theo, Vincent's brother. Vincent died, and Theo died six months later, leaving Jo with their son and a sizeable art collection [3]. From 1891 to 1925 she sold at least 192 of Vincent's paintings and 55 works on paper, to private buyers and influential dealers, organised exhibitions in the Netherlands and in other countries, and loaned work to museums [3][4]. In 1905 she brought together 484 works at the Stedelijk Museum in Amsterdam, and in 1914 she published Vincent's letters to Theo [1][3]. The works she chose not to sell passed to her son and are the core of the Van Gogh Museum, which opened in 1973 [3].
+Jo van Gogh-Bonger (1862 to 1925) was Theo's wife. Vincent died, and Theo died six months later. Jo was left with their son and a large art collection [3].
+
+From 1891 to 1925 she sold at least 192 of Vincent's paintings and 55 works on paper. She set up shows in the Netherlands and in other countries, and lent work to museums [3][4]. In 1905 she brought 484 works together at the Stedelijk Museum in Amsterdam. In 1914 she published Vincent's letters to Theo [1][3]. The works she kept went to her son. They are the heart of the Van Gogh Museum, which opened in 1973 [3].
 
 ## What a painter gets
 
-Mot Dang's Paid in Art page sets five of Jo's jobs beside five of its own [1].
+Mot Dang's Paid in Art page sets 5 of Jo's jobs beside 5 of its own [1].
 
 | Jo | Mot Dang |
 |---|---|
@@ -67,4 +75,6 @@ Mot Dang's Paid in Art page sets five of Jo's jobs beside five of its own [1].
 | Sold one piece at a time, choosing the buyers | Offers and bookings on your page; buyers message you there |
 | Kept an account book of each sale | The page shows its visits and messages; the trade is a line in Mot Dang's ledger |
 
-Gold is the paid version of pages on sites.motdang.net. On 24 October 2026 it cost ฿3,000 a year and added bookings, a place on Google and other search engines, and offers with a time limit. The free version costs ฿0 [2].
+Gold is the paid version of pages on sites.motdang.net. On 24 October 2026 it cost ฿3,000 a year. It adds bookings, a place on Google and other search engines, and offers with a time limit. The free version costs ฿0 [2].
+
+Dr Rey's portrait once filled a hole in a henhouse. Your painting gets a web page.

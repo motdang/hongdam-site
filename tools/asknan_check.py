@@ -3,7 +3,8 @@
 
     python3 tools/asknan_check.py data/asknan/columns/2026-11-01-some-slug.md [--offline]
 
-Head: no, date (the file's), kind, title (80 at most), title_th, q (400 at most), q_th, dek (230 at most), dek_th,
+Head: no, date (the file's), kind, title (80 at most), title_th, q (400 at most), q_th, from (the letter's pen-name, 40
+at most), from_th, dek (230 at most), dek_th,
 line (2 to 4 dingbats), cards (0 to 3 shop cards), do (button words 30 at most, a link) or a card, sources (1 or
 more, https). Body: renders, 250 to 1,000 words, every [n] names a source and every source is cited. The words pass
 ~/.claude/bin/stylecheck.py, advice included. Nothing private: no addresses on the network, keys, paths on this Mac,
@@ -66,7 +67,7 @@ def check(path, offline=False):
         head, body = M.read(path)
     except Exception as e:  # noqa: BLE001
         return ["head: %s" % e]
-    for k in ("no", "date", "kind", "title", "title_th", "q", "q_th", "dek", "dek_th", "line", "sources"):
+    for k in ("no", "date", "kind", "title", "title_th", "q", "q_th", "from", "from_th", "dek", "dek_th", "line", "sources"):
         if not head.get(k):
             bad.append("head: %s is missing" % k)
     try:
@@ -87,7 +88,7 @@ def check(path, offline=False):
                 continue
             if oh.get("no") == head["no"]:
                 bad.append("no %d is taken by %s" % (head["no"], os.path.basename(other)))
-    for k, n in (("title", 80), ("q", 400), ("dek", 230)):
+    for k, n in (("title", 80), ("q", 400), ("from", 40), ("dek", 230)):
         if len(head.get(k, "")) > n:
             bad.append("%s longer than %d characters" % (k, n))
     if head.get("kind") and head["kind"] not in A["kinds"]:

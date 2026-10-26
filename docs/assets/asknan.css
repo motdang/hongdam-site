@@ -77,3 +77,6 @@
   .an-body .tbl table:has(thead th:nth-child(3)) th, .an-body .tbl table:has(thead th:nth-child(3)) td { padding: .15rem 0; border: 0 }
   .an-body .tbl table:has(thead th:nth-child(3)) td::before { content: attr(data-h); display: block; margin-top: .3rem; font: 700 .68rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mut) }
 }
+.an-q .an-dear { display: block; margin-bottom: .3rem; font-weight: 700 }
+.an-q .an-from { display: block; margin-top: .45rem; font-style: italic; font-weight: 600 }
+.an-q [lang="th"] .an-from { font-style: normal }

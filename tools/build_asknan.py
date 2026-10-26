@@ -231,9 +231,17 @@ def sources_html(c, lang="en"):
             k, E(s["u"]), E(s["t"]), E(src_host(s["u"]))) for k, s in enumerate(srcs, 1)))
 
 
+def letter(c, lang):
+    """The reader's letter: Dear Nan, the letter, and its pen-name after a dash."""
+    th = lang == "th"
+    q, frm = (c["q_th"], c.get("from_th")) if th else (c["q"], c.get("from"))
+    return '<span class="an-dear">%s</span> %s%s' % (
+        E(ui(lang)["dear"]), E(q), ' <span class="an-from">— %s</span>' % E(frm) if frm else "")
+
+
 def feed_body(c):
     """A feed entry: the question, the answer, and its sources, so the [n] marks have their list."""
-    return '<blockquote><p>%s</p></blockquote>\n%s\n%s' % (E(c["q"]), c["html"], sources_html(c))
+    return '<blockquote><p>%s</p></blockquote>\n%s\n%s' % (letter(c, "en"), c["html"], sources_html(c))
 
 
 def src_host(u):
@@ -264,7 +272,7 @@ def column_page(c, cs):
         E(no(c["no"], lang)), BASE, c["kind"], E(kind_label(c, lang)), c["date"], E(day(c["date"], lang)),
         E(u["minRead"].replace("{n}", str(c["min"]))))
     out += '<h1>%s</h1>\n<p class="an-tw" lang="th">%s</p>\n' % (E(c["title"]), E(c["title_th"]))
-    out += '<blockquote class="an-q"><p>%s</p><p lang="th">%s</p></blockquote>\n' % (E(c["q"]), E(c["q_th"]))
+    out += '<blockquote class="an-q"><p>%s</p><p lang="th">%s</p></blockquote>\n' % (letter(c, "en"), letter(c, "th"))
     out += B.job(c["line"], lang, cls="an-line") + "\n"
     do = c.get("do")
     first = CARDS.get((c.get("cards") or [None])[0])
@@ -323,7 +331,7 @@ def jsonfeed(cs):
               "content_html": feed_body(c), "date_published": stamp(c),
               "date_modified": c.get("updated", c["date"]) + "T07:00:00+07:00",
               "tags": [c["kind"]], "language": "en", "image": SITE + "/og/ask-nan/c/%s.jpg" % c["slug"],
-              "_hongdam": {"no": c["no"], "question": c["q"], "title_th": c["title_th"], "question_th": c["q_th"],
+              "_hongdam": {"no": c["no"], "question": c["q"], "title_th": c["title_th"], "question_th": c["q_th"], "from": c.get("from", ""), "from_th": c.get("from_th", ""),
                            "summary_th": c["dek_th"], "sources": c.get("sources", [])}}
              for c in cs[:FEED_N]]
     return json.dumps({"version": "https://jsonfeed.org/version/1.1", "title": "Ask Nan", "home_page_url": SITE + "/ask-nan/",
