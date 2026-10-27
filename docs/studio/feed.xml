@@ -5,9 +5,85 @@
 <link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/"/>
 <link rel="self" href="https://hongdam.net/studio/feed.xml"/>
 <id>https://hongdam.net/studio/notes/</id>
-<updated>2026-10-26T06:00:00+07:00</updated>
+<updated>2026-10-27T06:00:00+07:00</updated>
 <icon>https://hongdam.net/assets/favicon.svg</icon>
 <author><name>Hongdam Studio</name><uri>https://hongdam.net/studio/</uri></author>
+<entry>
+<title>Lovable&#x27;s agent tools have no rate limit: a Postgres cap that also stops double writes</title>
+<link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/lovable-agent-tools-no-rate-limit/"/>
+<id>tag:hongdam.net,2026-10-27:studio/lovable-agent-tools-no-rate-limit</id>
+<published>2026-10-27T06:00:00+07:00</published>
+<updated>2026-10-27T06:00:00+07:00</updated>
+<category term="last-mile" label="Last mile"/>
+<summary>Lovable&#x27;s docs say its agent tools have no rate limit or call quota and no call log. A Postgres function caps calls per user, records each call, and turns a retried write into a no-op. Tested 27 October 2026.</summary>
+<content type="html">&lt;p&gt;Lovable can turn a published app into an MCP server: MCP (Model Context Protocol) is the standard that lets an AI assistant such as ChatGPT or Claude call an app&#x27;s actions, which MCP calls tools &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. On 13 October 2026 Lovable added browser tools too, so an AI agent built into a browser can use the page a person has open, with that person&#x27;s session &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s2&quot; aria-label=&quot;source 2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Lovable&#x27;s own documentation, read today, answers three questions a founder should ask before switching this on &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Question&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Lovable&#x27;s answer &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Is there a rate limit or a call quota?&lt;/th&gt;&lt;td data-h=&quot;Lovable&amp;#x27;s answer&quot;&gt;&quot;Not today.&quot; Sign-in ties calls to a user but does not limit how often they call.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Can I see tool calls?&lt;/th&gt;&lt;td data-h=&quot;Lovable&amp;#x27;s answer&quot;&gt;No. Tool errors appear in the app&#x27;s logs; successful calls do not.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Does a tool call cost anything?&lt;/th&gt;&lt;td data-h=&quot;Lovable&amp;#x27;s answer&quot;&gt;No separate charge. It runs in your backend, and AI or backend usage counts against your app&#x27;s balance.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;The same page warns that an assistant may retry a call after a timeout, so a tool that creates something can create it twice, and it suggests a request identifier &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Three gaps, one cause: the app has no memory of who called what, when.&lt;/p&gt;
+&lt;h2 id=&quot;what-the-gap-costs-a-signed-in-user-s-assistant-&quot;&gt;What the gap costs: a signed-in user&#x27;s assistant can loop on your credits&lt;/h2&gt;
+&lt;p&gt;Sign-in is the default for agent integrations, and a public, no-login integration needs an explicit choice &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Sign-in does not help with volume. An assistant that misreads a task can call &lt;code&gt;summarize_document&lt;/code&gt; again and again in one session, and every call that uses an AI model spends your app&#x27;s balance. A retry after a timeout can place the same order twice. Neither shows up anywhere unless the tool fails.&lt;/p&gt;
+&lt;p&gt;The fix is one table and one function in the app&#x27;s Postgres database, called at the top of each tool that costs money or writes data.&lt;/p&gt;
+&lt;h2 id=&quot;the-fix-one-table-one-function-one-call-per-tool&quot;&gt;The fix: one table, one function, one call per tool&lt;/h2&gt;
+&lt;p&gt;This is for apps whose backend is a Supabase project, where &lt;code&gt;auth.uid()&lt;/code&gt; returns the ID of the signed-in caller &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s4&quot; aria-label=&quot;source 4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. Paste it into the Supabase SQL Editor:&lt;/p&gt;
+&lt;div class=&quot;code&quot;&gt;&lt;pre data-lang=&quot;sql&quot;&gt;&lt;code&gt;create table public.tool_calls (
+  id bigint generated always as identity primary key,
+  user_id uuid not null,
+  tool text not null,
+  request_id text,
+  called_at timestamptz not null default now(),
+  unique (user_id, tool, request_id)
+);
+create index tool_calls_recent on public.tool_calls (user_id, tool, called_at desc);
+alter table public.tool_calls enable row level security;
+
+create or replace function public.take_tool_call(
+  p_tool text, p_request_id text, p_limit int default 20, p_window interval default &amp;#x27;1 hour&amp;#x27;)
+returns text
+language plpgsql security definer set search_path = &amp;#x27;&amp;#x27;
+as $$
+declare
+  uid uuid := auth.uid();
+  n int;
+begin
+  if uid is null then return &amp;#x27;no-user&amp;#x27;; end if;
+  perform pg_advisory_xact_lock(hashtext(uid::text || p_tool));
+  if p_request_id is not null and exists (
+    select 1 from public.tool_calls
+    where user_id = uid and tool = p_tool and request_id = p_request_id) then
+    return &amp;#x27;repeat&amp;#x27;;
+  end if;
+  select count(*) into n from public.tool_calls
+  where user_id = uid and tool = p_tool and called_at &amp;gt; now() - p_window;
+  if n &amp;gt;= p_limit then return &amp;#x27;limited&amp;#x27;; end if;
+  insert into public.tool_calls (user_id, tool, request_id) values (uid, p_tool, p_request_id);
+  return &amp;#x27;ok&amp;#x27;;
+end $$;
+
+revoke execute on function public.take_tool_call from public, anon;
+grant execute on function public.take_tool_call to authenticated;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Line by line, for the parts that matter:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Row-level security on, no policies.&lt;/strong&gt; Row-level security (RLS) is the Postgres rule set that decides which rows each caller may read or write. With it on and no policy, the public and signed-in keys read nothing from &lt;code&gt;tool_calls&lt;/code&gt;; only the function writes there.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;&lt;code&gt;security definer&lt;/code&gt; with an empty &lt;code&gt;search_path&lt;/code&gt;.&lt;/strong&gt; The function runs with its owner&#x27;s rights, so it can write the table the caller cannot. Supabase&#x27;s docs require a pinned &lt;code&gt;search_path&lt;/code&gt; for such functions and recommend the empty one, with every table named by schema &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s3&quot; aria-label=&quot;source 3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The two last lines.&lt;/strong&gt; Supabase lets any role call a new function by default, including &lt;code&gt;anon&lt;/code&gt;, the role for requests with no user session &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s3&quot; aria-label=&quot;source 3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. The revoke and grant leave it to signed-in users only.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The advisory lock.&lt;/strong&gt; Two calls from the same user to the same tool wait for each other, so two parallel calls cannot both read &quot;19&quot; and both pass.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The request ID.&lt;/strong&gt; A second call with the same ID returns &lt;code&gt;repeat&lt;/code&gt; and writes nothing.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;In the tool&#x27;s code, before the work:&lt;/p&gt;
+&lt;div class=&quot;code&quot;&gt;&lt;pre data-lang=&quot;ts&quot;&gt;&lt;code&gt;const { data: verdict, error } = await supabase.rpc(&amp;#x27;take_tool_call&amp;#x27;, {
+  p_tool: &amp;#x27;summarize_document&amp;#x27;,
+  p_request_id: input.request_id ?? null,
+});
+if (error || verdict === &amp;#x27;no-user&amp;#x27;) return { error: &amp;#x27;Sign in first.&amp;#x27; };
+if (verdict === &amp;#x27;limited&amp;#x27;) return { error: &amp;#x27;Limit: 20 an hour. Try again later.&amp;#x27; };
+if (verdict === &amp;#x27;repeat&amp;#x27;) return { result: &amp;#x27;Already done for this request.&amp;#x27; };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The Supabase client here has to carry the user&#x27;s session, or &lt;code&gt;auth.uid()&lt;/code&gt; is empty and every call comes back &lt;code&gt;no-user&lt;/code&gt;. The request ID comes from the tool&#x27;s own input, described to the assistant as &quot;a unique ID for this request, the same on retries&quot;; for a tool where the same inputs mean the same job, a hash of the inputs works.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;tool_calls&lt;/code&gt; table is the missing call log: one row per allowed call, with user, tool and time. A query in the SQL Editor shows who calls what:&lt;/p&gt;
+&lt;div class=&quot;code&quot;&gt;&lt;pre data-lang=&quot;sql&quot;&gt;&lt;code&gt;select tool, user_id, count(*) as calls, max(called_at) as last
+from public.tool_calls
+where called_at &amp;gt; now() - interval &amp;#x27;1 day&amp;#x27;
+group by tool, user_id order by calls desc limit 20;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;tested-in-postgres-17-5-20-of-25-calls-through-r&quot;&gt;Tested in Postgres 17.5: 20 of 25 calls through, retries and anonymous calls stopped&lt;/h2&gt;
+&lt;p&gt;We ran the SQL above, unchanged, in PGlite, a build of Postgres that runs inside Node.js &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s5&quot; aria-label=&quot;source 5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, on 27 October 2026. Two stand-ins replaced what Supabase provides: the &lt;code&gt;anon&lt;/code&gt; and &lt;code&gt;authenticated&lt;/code&gt; roles, and an &lt;code&gt;auth.uid()&lt;/code&gt; that returns a test user ID.&lt;/p&gt;
+&lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Test&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;User A, 25 calls with new request IDs&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;20 &lt;code&gt;ok&lt;/code&gt;, 5 &lt;code&gt;limited&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;User A, request 3 sent again&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;&lt;code&gt;repeat&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;User B, first call&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;&lt;code&gt;ok&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;No signed-in user&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;&lt;code&gt;no-user&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;User A, calls aged 61 minutes, new call&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;&lt;code&gt;ok&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Can &lt;code&gt;anon&lt;/code&gt; execute the function?&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;no&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Can &lt;code&gt;authenticated&lt;/code&gt; execute it?&lt;/th&gt;&lt;td data-h=&quot;Result&quot;&gt;yes&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;figure class=&quot;chart&quot;&gt;&lt;table&gt;&lt;caption&gt;Milliseconds per check, median of 25 calls &lt;span class=&quot;lo&quot;&gt;· lower is better&lt;/span&gt;&lt;/caption&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Run 1&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;bar&quot; style=&quot;--w:69.4%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;v&quot;&gt;0.25 ms&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Run 2&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;bar&quot; style=&quot;--w:91.7%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;v&quot;&gt;0.33 ms&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Run 3&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;bar&quot; style=&quot;--w:91.7%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;v&quot;&gt;0.33 ms&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Run 4&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;bar&quot; style=&quot;--w:100.0%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;v&quot;&gt;0.36 ms&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;Run 5&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;bar&quot; style=&quot;--w:77.8%&quot;&gt;&lt;/span&gt;&lt;span class=&quot;v&quot;&gt;0.28 ms&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;figcaption&gt;Five runs of 25 calls, in-process Postgres on a laptop, 27 October 2026. A hosted database adds the network round trip on top.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The check itself is cheap. On a hosted database the cost is one round trip from the tool to Postgres, which the tool makes anyway to do its work.&lt;/p&gt;
+&lt;h2 id=&quot;three-things-to-set-per-tool&quot;&gt;Three things to set per tool&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;The limit and window.&lt;/strong&gt; 20 an hour suits an AI summary; a read-only lookup may need none. &lt;code&gt;p_limit&lt;/code&gt; and &lt;code&gt;p_window&lt;/code&gt; are arguments, so each tool sets its own.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Which tools get the check.&lt;/strong&gt; Lovable starts browser tools with ones that read or are easy to undo, and adds tools that delete, pay, send, publish or share only on request &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Those requested tools, and any tool that calls an AI model, are the ones to wrap first.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Apps on Lovable&#x27;s built-in backend.&lt;/strong&gt; The SQL is for Supabase projects. For the built-in backend, the same three parts (a per-user count in a time window, a request ID, a row per call) can be asked of Lovable in the project chat, then checked against the table above.&lt;/li&gt;&lt;/ul&gt;</content>
+</entry>
 <entry>
 <title>DeepSeek Flash 1017 on Workers AI: 40% faster than 0731, 23% more tokens, same bill</title>
 <link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/deepseek-flash-1017-faster-not-shorter/"/>
