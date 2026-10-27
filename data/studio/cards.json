@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/magento-polyshell-on-cisa-kev",
+  "kicker": "Hongdam Studio · Security · 28 October 2026",
+  "title": "Magento PolyShell: patch, then look",
+  "th": "ช่องโหว่ PolyShell ของ Magento เข้ารายชื่อช่องโหว่ที่ถูกโจมตีจริงของ CISA หลังการโจมตีครั้งแรก 7 เดือน",
+  "sub": "On CISA's exploited list since 27 October 2026",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "50b4273bf3"
+ },
+ {
   "out": "og/studio/n/lovable-agent-tools-no-rate-limit",
   "kicker": "Hongdam Studio · Last mile · 27 October 2026",
   "title": "Your app's AI tools have no limit",

@@ -417,6 +417,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-10-28 · Magento PolyShell joins CISA's exploited list, seven months after the first attacks — https://hongdam.net/studio/notes/magento-polyshell-on-cisa-kev/
 - 2026-10-27 · Lovable's agent tools have no rate limit: a Postgres cap that also stops double writes — https://hongdam.net/studio/notes/lovable-agent-tools-no-rate-limit/
 - 2026-10-26 · DeepSeek Flash 1017 on Workers AI: 40% faster than 0731, 23% more tokens, same bill — https://hongdam.net/studio/notes/deepseek-flash-1017-faster-not-shorter/
 - 2026-10-24 · 16,326 Supabase databases let anyone read their tables: check yours in two minutes — https://hongdam.net/studio/notes/supabase-public-key-open-tables/
