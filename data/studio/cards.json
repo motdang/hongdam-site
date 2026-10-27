@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/lovable-agent-tools-no-rate-limit",
+  "kicker": "Hongdam Studio · Last mile · 27 October 2026",
+  "title": "Your app's AI tools have no limit",
+  "th": "เครื่องมือเอเจนต์ของ Lovable ไม่มีการจำกัดจำนวนครั้ง: ตัวจำกัดใน Postgres ที่กันการเขียนซ้ำได้ด้วย",
+  "sub": "A per-user cap in Postgres, tested",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "5222e163c0"
+ },
+ {
   "out": "og/studio/n/deepseek-flash-1017-faster-not-shorter",
   "kicker": "Hongdam Studio · AI models · 26 October 2026",
   "title": "DeepSeek 1017: faster, not shorter",
