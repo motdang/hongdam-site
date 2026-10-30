@@ -1,0 +1,594 @@
+{
+ "about": "Crypto safety: plan for worse. A Hongdam Studio minisite (her ask 2026-10-30, the day after the Binance theft): what the news says, how bad it can get, four questions, the services with Buy. tools/build_crypto.py writes docs/<lang>/studio/crypto-safety/; node tools/crypto_card.mjs draws the link pictures. Words in one place per language; sources beside each line.",
+ "langs": [
+  "en",
+  "th",
+  "my",
+  "zh",
+  "de"
+ ],
+ "path": "studio/crypto-safety/",
+ "asof": "2026-10-30",
+ "cards": [
+  "crypto-safe"
+ ],
+ "offrampt": {
+  "en": "https://offrampt.net/frozen/",
+  "th": "https://offrampt.net/th/frozen/",
+  "my": "https://offrampt.net/frozen/",
+  "zh": "https://offrampt.net/frozen/",
+  "de": "https://offrampt.net/frozen/"
+ },
+ "today": [
+  {
+   "src": "https://thestandard.co/binance-hacked-billions-crypto-theft/",
+   "t": {
+    "en": "Binance, the biggest crypto exchange, says about US$6.3 billion was taken.",
+    "th": "Binance กระดานเทรดคริปโตที่ใหญ่ที่สุด ระบุว่าถูกขโมยไปราว 6,300 ล้านดอลลาร์สหรัฐ",
+    "my": "Binance၊ အကြီးဆုံး ခရစ်ပတိုကုန်သွယ်ရေးကုမ္ပဏီက အမေရိကန်ဒေါ်လာ 6.3 ဘီလီယံခန့် ယူသွားခံရတယ်လို့ ပြောတယ်။",
+    "zh": "全球最大的加密货币交易所币安（Binance）表示，约 63 亿美元被盗。",
+    "de": "Binance, die grösste Kryptobörse, sagt, rund 6,3 Milliarden US-Dollar seien gestohlen worden."
+   }
+  },
+  {
+   "src": "https://www.rte.ie/news/business/2026/1030/1597305-binance-bitcoin-world/",
+   "t": {
+    "en": "Its first check says it may have started with one engineer's hacked laptop. TRM Labs and Chainalysis, two firms that trace coins, name North Korea.",
+    "th": "การตรวจเบื้องต้นระบุว่าอาจเริ่มจากโน้ตบุ๊กของวิศวกรคนหนึ่งที่ถูกแฮก TRM Labs และ Chainalysis สองบริษัทที่ติดตามเหรียญ ชี้ว่าเป็นเกาหลีเหนือ",
+    "my": "ပထမစစ်ဆေးချက်အရ အင်ဂျင်နီယာတစ်ယောက်ရဲ့ ဟက်ခ်ခံရတဲ့ လက်ပ်တော့ကနေ စတင်ခဲ့တာ ဖြစ်နိုင်တယ်။ ဒင်္ဂါးတွေကို ခြေရာခံတဲ့ ကုမ္ပဏီနှစ်ခုဖြစ်တဲ့ TRM Labs နဲ့ Chainalysis က မြောက်ကိုရီးယားလို့ နာမည်တပ်တယ်။",
+    "zh": "初步调查显示，起点可能是一名工程师被黑的笔记本电脑。追踪加密货币的两家公司 TRM Labs 和 Chainalysis 指向朝鲜。",
+    "de": "Die erste Prüfung sagt, es begann vielleicht mit dem gehackten Laptop eines Ingenieurs. TRM Labs und Chainalysis, zwei Firmen, die Coins verfolgen, nennen Nordkorea."
+   }
+  },
+  {
+   "src": "https://www.rte.ie/news/business/2026/1030/1597305-binance-bitcoin-world/",
+   "t": {
+    "en": "Binance paused withdrawals and expects to restart them within 48 hours. It says it will pay back every loss.",
+    "th": "Binance หยุดการถอน และคาดว่าจะเปิดอีกครั้งภายใน 48 ชั่วโมง และบอกว่าจะชดใช้ความเสียหายทั้งหมด",
+    "my": "Binance က ငွေထုတ်တာတွေကို ရပ်ထားပြီး 48 နာရီအတွင်း ပြန်စဖို့ မျှော်လင့်တယ်။ ဆုံးရှုံးမှုအားလုံးကို ပြန်ပေးမယ်လို့ ပြောတယ်။",
+    "zh": "币安已暂停提币，预计 48 小时内恢复。币安表示会赔偿全部损失。",
+    "de": "Binance hat Auszahlungen gestoppt und will sie innert 48 Stunden wieder öffnen. Binance sagt, es ersetze jeden Verlust."
+   }
+  },
+  {
+   "src": "https://thestandard.co/binance-hacked-billions-crypto-theft/",
+   "t": {
+    "en": "Binance's emergency fund for users (SAFU) held about US$1 billion in 2024. Tether froze US$1.5 billion of USDT; Circle froze US$800 million.",
+    "th": "กองทุนฉุกเฉินของ Binance สำหรับผู้ใช้ (SAFU) มีราว 1,000 ล้านดอลลาร์ในปี 2567 Tether อายัด USDT 1,500 ล้านดอลลาร์ Circle อายัด 800 ล้านดอลลาร์",
+    "my": "Binance ရဲ့ အသုံးပြုသူတွေအတွက် အရေးပေါ်ရန်ပုံငွေ (SAFU) က 2024 မှာ အမေရိကန်ဒေါ်လာ 1 ဘီလီယံခန့် ရှိတယ်။ Tether က USDT အမေရိကန်ဒေါ်လာ 1.5 ဘီလီယံကို အေးခဲထားပြီး Circle က အမေရိကန်ဒေါ်လာ သန်း 800 ကို အေးခဲထားတယ်။",
+    "zh": "币安的用户应急基金（SAFU）在 2024 年约有 10 亿美元。Tether 冻结了 15 亿美元的 USDT，Circle 冻结了 8 亿美元。",
+    "de": "Der Notfallfonds von Binance für Nutzer (SAFU) hielt 2024 rund 1 Milliarde US-Dollar. Tether fror USDT im Wert von 1,5 Milliarden US-Dollar ein, Circle 800 Millionen."
+   }
+  },
+  {
+   "src": "https://www.thansettakij.com/finance/wealth-tech/672587",
+   "t": {
+    "en": "Binance TH, the exchange licensed in Thailand, paused crypto withdrawals for a security check.",
+    "th": "Binance TH กระดานเทรดที่ได้รับใบอนุญาตในไทย หยุดการถอนคริปโตชั่วคราวเพื่อตรวจระบบความปลอดภัย",
+    "my": "ထိုင်းနိုင်ငံမှာ လိုင်စင်ရထားတဲ့ ကုန်သွယ်ရေးကုမ္ပဏီ Binance TH က လုံခြုံရေးစစ်ဆေးမှုအတွက် ခရစ်ပတိုငွေထုတ်တာတွေကို ရပ်ထားတယ်။",
+    "zh": "在泰国持牌的交易所 Binance TH 暂停了加密货币提币，进行安全检查。",
+    "de": "Binance TH, die in Thailand zugelassene Börse, hat Krypto-Auszahlungen für eine Sicherheitsprüfung gestoppt."
+   }
+  },
+  {
+   "src": "https://www.thansettakij.com/finance/wealth-tech/672587",
+   "t": {
+    "en": "Thailand's SEC (the market regulator) has found no large effect on Thai customers' assets so far, and told licensed exchanges to check and report.",
+    "th": "ก.ล.ต. ยังไม่พบผลกระทบที่มีนัยสำคัญต่อทรัพย์สินของลูกค้าในไทย และสั่งให้ผู้ประกอบการที่ได้รับใบอนุญาตตรวจสอบและรายงาน",
+    "my": "ထိုင်းစျေးကွက်ထိန်းညှိရေးအဖွဲ့ (SEC) က ထိုင်းအသုံးပြုသူတွေရဲ့ ပိုင်ဆိုင်မှုအပေါ် ကြီးမားတဲ့သက်ရောက်မှု မတွေ့ရသေးဘူးလို့ ပြောပြီး လိုင်စင်ရ ကုန်သွယ်ရေးကုမ္ပ�anniတွေကို စစ်ဆေးပြီး အစီရင်ခံဖို့ ပြောထားတယ်။",
+    "zh": "泰国证券交易委员会（SEC，市场监管机构）目前未发现对泰国客户资产的重大影响，并要求持牌交易所检查并报告。",
+    "de": "Thailands Börsenaufsicht SEC hat bisher keine grosse Wirkung auf die Vermögen thailändischer Kunden gefunden und die zugelassenen Börsen angewiesen, zu prüfen und zu melden."
+   }
+  }
+ ],
+ "rungs": [
+  {
+   "n": {
+    "en": "Paused for weeks",
+    "th": "หยุดถอนหลายสัปดาห์",
+    "my": "သီတင်းပတ်တွေကြာအောင် ရပ်ထားခံရတယ်",
+    "zh": "暂停数周",
+    "de": "Wochenlang gesperrt"
+   },
+   "l": {
+    "en": "Your coins show on the screen, but you cannot move or sell them while the price falls.",
+    "th": "เห็นเหรียญบนหน้าจอ แต่โอนหรือขายไม่ได้ ขณะที่ราคาตก",
+    "my": "မင်းရဲ့ဒင်္ဂါးတွေက စခရင်ပေါ်မှာ ပေါ်နေပေမယ့် စျေးကျနေချိန်မှာ ရွှေ့လို့မရ၊ ရောင်းလို့မရဘူး။",
+    "zh": "币还显示在屏幕上，但价格下跌时您无法转出或卖出。",
+    "de": "Ihre Coins stehen auf dem Bildschirm, aber Sie können sie nicht bewegen oder verkaufen, während der Preis fällt."
+   }
+  },
+  {
+   "n": {
+    "en": "Paid back in part, years later",
+    "th": "ได้คืนบางส่วน หลายปีต่อมา",
+    "my": "နှစ်တွေကြာပြီးမှ တစ်စိတ်တစ်ပိုင်း ပြန်ရတယ်",
+    "zh": "多年后只赔一部分",
+    "de": "Teilweise zurück, Jahre später"
+   },
+   "l": {
+    "en": "Mt. Gox failed in 2014. Payments began in July 2024, and some customers are still waiting now.",
+    "th": "Mt. Gox ล้มในปี 2557 เริ่มจ่ายคืนเดือนกรกฎาคม 2567 และลูกค้าบางคนยังรออยู่จนถึงตอนนี้",
+    "my": "Mt. Gox က 2014 မှာ ပျက်သွားတယ်။ ပေးချေမှုတွေက 2024 ဇူလိုင်မှာ စခဲ့ပြီး အချို့အသုံးပြုသူတွေ အခုထိ စောင့်နေရတုန်းပဲ။",
+    "zh": "Mt. Gox 于 2014 年倒闭，2024 年 7 月才开始还款，至今仍有客户在等。",
+    "de": "Mt. Gox ging 2014 unter. Die Zahlungen begannen im Juli 2024, und manche Kunden warten noch heute."
+   },
+   "src": "https://decrypt.co/346053"
+  },
+  {
+   "n": {
+    "en": "Other exchanges slow down",
+    "th": "กระดานเทรดอื่นเริ่มถอนช้า",
+    "my": "တခြား ကုန်သွယ်ရေးကုမ္ပ�anniတွေ နှေးသွားတယ်",
+    "zh": "其他交易所也放慢",
+    "de": "Andere Börsen bremsen"
+   },
+   "l": {
+    "en": "Many people take money out at once. Exchanges, Thai ones too, slow or stop withdrawals. Zipmex, with many Thai users, stopped them in July 2022.",
+    "th": "คนจำนวนมากถอนเงินพร้อมกัน กระดานเทรดต่างๆ รวมถึงของไทย ถอนช้าลงหรือหยุดถอน Zipmex ซึ่งมีผู้ใช้ไทยมาก เคยหยุดถอนเมื่อกรกฎาคม 2565",
+    "my": "လူအများအပြား တစ်ပြိုင်နက် ငွေထုတ်ကြတယ်။ ကုန်သွယ်ရေးကုမ္ပ�anniတွေ၊ ထိုင်းက ကုမ္ပ�anniတွေပါ ငွေထုတ်တာကို နှေးစေ ဒါမှမဟုတ် ရပ်လိုက်တယ်။ ထိုင်းအသုံးပြုသူများတဲ့ Zipmex က 2022 ဇူလိုင်မှာ ရပ်ခဲ့တယ်။",
+    "zh": "很多人同时取钱，交易所（包括泰国的）放慢或停止提币。泰国用户很多的 Zipmex 在 2022 年 7 月就停过。",
+    "de": "Viele ziehen gleichzeitig Geld ab. Börsen, auch thailändische, bremsen oder stoppen Auszahlungen. Zipmex, mit vielen thailändischen Nutzern, tat das im Juli 2022."
+   },
+   "src": "https://www.reuters.com/technology/southeast-asian-crypto-exchange-zipmex-suspends-withdrawals-amid-crypto-turmoil-2022-07-21/"
+  },
+  {
+   "n": {
+    "en": "USDT stops being one dollar",
+    "th": "USDT ไม่เท่ากับหนึ่งดอลลาร์",
+    "my": "USDT က တစ်ဒေါ်လာမဟုတ်တော့ဘူး",
+    "zh": "USDT 不再等于一美元",
+    "de": "USDT ist keinen Dollar mehr wert"
+   },
+   "l": {
+    "en": "This week Tether froze US$1.5 billion of USDT. One company can stop any USDT address.",
+    "th": "สัปดาห์นี้ Tether อายัด USDT 1,500 ล้านดอลลาร์ บริษัทเดียวสั่งหยุดที่อยู่ USDT ไหนก็ได้",
+    "my": "ဒီသီတင်းပတ်မှာ Tether က USDT အမေရိကန်ဒေါ်လာ 1.5 ဘီလီယံကို အေးခဲထားတယ်။ ကုမ္ပဏီတစ်ခုက ဘယ် USDT လိပ်စာကိုမဆို ရပ်နိုင်တယ်။",
+    "zh": "这周 Tether 冻结了 15 亿美元的 USDT。一家公司就能冻结任何 USDT 地址。",
+    "de": "Diese Woche fror Tether USDT im Wert von 1,5 Milliarden US-Dollar ein. Eine einzige Firma kann jede USDT-Adresse sperren."
+   }
+  },
+  {
+   "n": {
+    "en": "Your bank account is frozen",
+    "th": "บัญชีธนาคารของคุณถูกอายัด",
+    "my": "မင်းရဲ့ဘဏ်အကောင့် အေးခဲခံရတယ်",
+    "zh": "您的银行账户被冻结",
+    "de": "Ihr Bankkonto wird gesperrt"
+   },
+   "l": {
+    "en": "Sell crypto to a stranger and the baht may be stolen money. Thai banks freeze the account that receives it.",
+    "th": "ขายคริปโตให้คนแปลกหน้า เงินบาทที่ได้อาจเป็นเงินที่ถูกขโมยมา ธนาคารไทยอายัดบัญชีที่รับเงินนั้น",
+    "my": "သူစိမ်းတစ်ယောက်ကို ခရစ်ပတိုရောင်းရင် ရတဲ့ဘတ်ငွေက ခိုးထားတဲ့ငွေ ဖြစ်နိုင်တယ်။ ထိုင်းဘဏ်တွေက လက်ခံတဲ့အကောင့်ကို အေးခဲလိုက်တယ်။",
+    "zh": "把加密货币卖给陌生人，收到的泰铢可能是赃款。泰国银行会冻结收款的账户。",
+    "de": "Verkaufen Sie Krypto an Fremde, kann das Baht-Geld gestohlen sein. Thailändische Banken sperren das Konto, das es empfängt."
+   },
+   "src": "https://www.keptbykrungsri.com/kept-tips/financial-safety/financial-scam-mule-account"
+  },
+  {
+   "n": {
+    "en": "Fake callers",
+    "th": "สายโทรหลอก",
+    "my": "အတုအယောင် ဖုန်းခေါ်သူတွေ",
+    "zh": "冒充者来电",
+    "de": "Falsche Anrufer"
+   },
+   "l": {
+    "en": "People pretend to be Binance or the police, or offer to get your coins back for a fee.",
+    "th": "มีคนแอบอ้างเป็น Binance หรือตำรวจ หรือเสนอเอาเหรียญคืนให้โดยเก็บค่าธรรมเนียม",
+    "my": "လူတွေက Binance ဒါမှမဟုတ် ရဲအယောင်ဆောင်ပြီး ဒါမှမဟုတ် အခကြေးငွေယူပြီး မင်းရဲ့ဒင်္ဂါးတွေ ပြန်ယူပေးမယ်လို့ ကမ်းလှမ်းတယ်။",
+    "zh": "有人冒充币安或警察，或者说收费帮您追回币。",
+    "de": "Leute geben sich als Binance oder Polizei aus oder bieten an, Ihre Coins gegen eine Gebühr zurückzuholen."
+   }
+  },
+  {
+   "n": {
+    "en": "Your own phone or laptop",
+    "th": "โทรศัพท์หรือโน้ตบุ๊กของคุณเอง",
+    "my": "မင်းရဲ့ကိုယ်ပိုင်ဖုန်း ဒါမှမဟုတ် လက်ပ်တော့",
+    "zh": "您自己的手机或电脑",
+    "de": "Ihr eigenes Handy oder Laptop"
+   },
+   "l": {
+    "en": "One laptop may have opened Binance. A photo of your recovery words or a reused password can empty your wallet, and nobody can pause it.",
+    "th": "โน้ตบุ๊กเครื่องเดียวอาจเปิดทางเข้า Binance รูปถ่ายคำกู้คืน หรือรหัสผ่านที่ใช้ซ้ำ ทำให้กระเป๋าเงินว่างได้ และไม่มีใครสั่งหยุดได้",
+    "my": "လက်ပ်တော့တစ်လုံးက Binance ကို ဖွင့်ပေးခဲ့တာ ဖြစ်နိုင်တယ်။ မင်းရဲ့ ပြန်ဖွင့်စကားလုံးတွေရဲ့ ဓာတ်ပုံ ဒါမှမဟုတ် ပြန်သုံးထားတဲ့ စကားဝှက်တစ်ခုက မင်းရဲ့ပိုက်ဆံအိတ်ကို ဗလာဖြစ်သွားစေနိုင်ပြီး ဘယ်သူမှ ရပ်လို့မရဘူး။",
+    "zh": "一台笔记本电脑可能就打开了币安的门。一张助记词照片或一个重复使用的密码，就能清空您的钱包，而且没人能暂停。",
+    "de": "Ein Laptop hat Binance vielleicht geöffnet. Ein Foto Ihrer Wiederherstellungswörter oder ein wiederverwendetes Passwort kann Ihre Wallet leeren, und niemand kann das stoppen."
+   }
+  },
+  {
+   "n": {
+    "en": "Your family cannot reach it",
+    "th": "ครอบครัวเข้าถึงไม่ได้",
+    "my": "မင်းရဲ့မိသားစု လက်လှမ်းမမီနိုင်ဘူး",
+    "zh": "家人拿不到",
+    "de": "Ihre Familie kommt nicht heran"
+   },
+   "l": {
+    "en": "You are in hospital. Does anyone in your family know where your coins are, and who might pretend to help?",
+    "th": "คุณอยู่โรงพยาบาล มีใครในครอบครัวรู้ไหมว่าเหรียญอยู่ที่ไหน และใครอาจแอบอ้างว่าจะช่วย",
+    "my": "မင်း ဆေးရုံတက်နေရတယ်။ မင်းရဲ့ဒင်္ဂါးတွေ ဘယ်မှာရှိမှန်း မိသားစုထဲက တစ်ယောက်ယောက် သိလား၊ ဘယ်သူက ကူညီပေးမယ့်အယောင်ဆောင်နိုင်သလဲ သိလား။",
+    "zh": "您住院了。家里有人知道您的币在哪里、谁可能假装来帮忙吗？",
+    "de": "Sie liegen im Spital. Weiss jemand in Ihrer Familie, wo Ihre Coins sind und wer vorgeben könnte zu helfen?"
+   }
+  }
+ ],
+ "questions": [
+  {
+   "on": "yes",
+   "svc": "crypto-wallet",
+   "q": {
+    "en": "Is most of your crypto on one exchange?",
+    "th": "คริปโตส่วนใหญ่ของคุณอยู่ในกระดานเทรดเดียวไหม",
+    "my": "မင်းရဲ့ ခရစ်ပတိုအများစုက ကုန်သွယ်ရေးကုမ္ပ�anniတစ်ခုတည်းပေါ်မှာလား။",
+    "zh": "您的加密货币大部分放在同一个交易所吗？",
+    "de": "Liegt der grösste Teil Ihrer Kryptos auf einer einzigen Börse?"
+   }
+  },
+  {
+   "on": "yes",
+   "svc": "crypto-check",
+   "q": {
+    "en": "Are your recovery words in a photo, a notes app, an email or a chat?",
+    "th": "คำกู้คืนของคุณอยู่ในรูปถ่าย แอปโน้ต อีเมล หรือแชตไหม",
+    "my": "မင်းရဲ့ ပြန်ဖွင့်စကားလုံးတွေက ဓာတ်ပုံထဲ၊ မှတ်စုအက်ပ်ထဲ၊ အီးမေးလ်ထဲ ဒါမှမဟုတ် စကားပြောခန်းထဲမှာလား။",
+    "zh": "您的助记词存在照片、备忘录、邮件或聊天里吗？",
+    "de": "Stehen Ihre Wiederherstellungswörter in einem Foto, einer Notiz-App, einer E-Mail oder einem Chat?"
+   }
+  },
+  {
+   "on": "no",
+   "svc": "crypto-family",
+   "q": {
+    "en": "If you were in hospital tomorrow, could your family reach your coins?",
+    "th": "ถ้าพรุ่งนี้คุณต้องเข้าโรงพยาบาล ครอบครัวเข้าถึงเหรียญของคุณได้ไหม",
+    "my": "မနက်ဖြန် မင်း ဆေးရုံတက်နေရရင် မင်းရဲ့မိသားစု မင်းရဲ့ဒင်္ဂါးတွေကို လက်လှမ်းမီနိုင်လား။",
+    "zh": "如果您明天住院，家人能拿到您的币吗？",
+    "de": "Wenn Sie morgen ins Spital müssten, käme Ihre Familie an Ihre Coins?"
+   }
+  },
+  {
+   "on": "yes",
+   "svc": "crypto-loss",
+   "q": {
+    "en": "Have you lost crypto to a thief or a fake offer?",
+    "th": "คุณเคยเสียคริปโตจากการขโมยหรือกลโกงไหม",
+    "my": "သူခိုး ဒါမှမဟုတ် အတုအယောင်ကမ်းလှမ်းမှုကြောင့် ခရစ်ပတိုဆုံးရှုံးဖူးလား။",
+    "zh": "您是否因盗窃或诈骗损失过加密货币？",
+    "de": "Haben Sie schon Krypto durch Diebstahl oder Betrug verloren?"
+   }
+  }
+ ],
+ "svc": {
+  "crypto-check": {
+   "en": "One hour on a video call: where your coins are, your phone, email, passwords and two-step logins, where your recovery words are, the tricks thieves are using now. A written plan.",
+   "th": "วิดีโอคอล 1 ชั่วโมง: เหรียญอยู่ที่ไหน โทรศัพท์ อีเมล รหัสผ่าน การยืนยันสองขั้นตอน ที่เก็บคำกู้คืน วิธีที่คนร้ายใช้ตอนนี้ ได้แผนเป็นลายลักษณ์อักษร",
+   "my": "ဗီဒီယိုခေါ်ဆိုမှုမှာ တစ်နာရီ - မင်းရဲ့ဒင်္ဂါးတွေ ဘယ်မှာရှိတယ်၊ မင်းရဲ့ဖုန်း၊ အီးမေးလ်၊ စကားဝှက်တွေနဲ့ နှစ်ဆင့်ဝင်ရောက်မှုတွေ၊ မင်းရဲ့ ပြန်ဖွင့်စကားလုံးတွေ ဘယ်မှာရှိတယ်၊ သူခိုးတွေ အခုသုံးနေတဲ့နည်းလမ်းတွေ။ ရေးထားတဲ့ အစီအစဉ်တစ်ခု။",
+   "zh": "一小时视频通话：您的币在哪里、手机、邮箱、密码和两步验证、助记词放在哪里、窃贼现在用的手法。附书面方案。",
+   "de": "Eine Stunde im Videoanruf: wo Ihre Coins liegen, Handy, E-Mail, Passwörter und Zwei-Schritt-Anmeldung, wo Ihre Wiederherstellungswörter sind, die Tricks, die Diebe gerade nutzen. Ein schriftlicher Plan."
+  },
+  "crypto-wallet": {
+   "en": "You buy a hardware wallet (a small device that keeps your keys off the internet) from its maker. We set it up with you on a call and send a small test amount first.",
+   "th": "คุณซื้อฮาร์ดแวร์วอลเล็ต (อุปกรณ์เล็กๆ ที่เก็บกุญแจไว้นอกอินเทอร์เน็ต) จากผู้ผลิต เราตั้งค่ากับคุณผ่านวิดีโอคอล และลองโอนจำนวนน้อยก่อน",
+   "my": "မင်းက ဟာ့ဒ်ဝဲပိုက်ဆံအိတ် (မင်းရဲ့သော့တွေကို အင်တာနက်ကနေ ခွာထားတဲ့ ကိရိယာလေး) ကို ထုတ်လုပ်သူဆီကနေ ဝယ်တယ်။ ကျွန်တော်တို့က မင်းနဲ့အတူ ခေါ်ဆိုမှုမှာ တပ်ဆင်ပေးပြီး ပမာဏအနည်းငယ် အရင်စမ်းပို့တယ်။",
+   "zh": "您从厂家购买硬件钱包（一个让私钥离开互联网的小设备）。我们通过通话和您一起设置，先转一小笔测试。",
+   "de": "Sie kaufen eine Hardware-Wallet (ein kleines Gerät, das Ihre Schlüssel vom Internet fernhält) beim Hersteller. Wir richten sie im Anruf mit Ihnen ein und senden zuerst einen kleinen Testbetrag."
+  },
+  "crypto-family": {
+   "en": "Who can reach your coins if you cannot, and how, written for your family, with the kinds of people and messages that pretend to help. Your recovery words stay out of it.",
+   "th": "ถ้าคุณเข้าถึงไม่ได้ ใครเข้าถึงเหรียญได้และทำอย่างไร เขียนให้ครอบครัว พร้อมแบบของคนและข้อความที่แอบอ้างว่าจะช่วย คำกู้คืนไม่อยู่ในแผน",
+   "my": "မင်း မလုပ်နိုင်တဲ့အခါ ဘယ်သူက မင်းရဲ့ဒင်္ဂါးတွေကို လက်လှမ်းမီနိုင်သလဲ၊ ဘယ်လိုလဲ ဆိုတာကို မင်းရဲ့မိသားစုအတွက် ရေးပေးထားပြီး ကူညီပေးမယ့်အယောင်ဆောင်တဲ့ လူအမျိုးအစားတွေနဲ့ မက်ဆေ့ချ်တွေကိုပါ ထည့်ရေးပေးတယ်။ မင်းရဲ့ ပြန်ဖွင့်စကားလုံးတွေကို မထည့်ဘူး။",
+   "zh": "如果您无法操作，谁能拿到您的币、怎么拿，写给家人看，并列出假装来帮忙的人和信息。助记词不写进去。",
+   "de": "Wer an Ihre Coins kommt, wenn Sie es nicht können, und wie: für Ihre Familie aufgeschrieben, mit den Leuten und Nachrichten, die vorgeben zu helfen. Ihre Wiederherstellungswörter bleiben draussen."
+  },
+  "crypto-loss": {
+   "en": "The timeline of what happened with each transaction, the police report, the complaint to Thailand's SEC and the claim to the exchange. Stolen coins rarely come back.",
+   "th": "ลำดับเหตุการณ์พร้อมทุกธุรกรรม แจ้งความตำรวจ ร้องเรียน ก.ล.ต. และคำขอถึงกระดานเทรด เหรียญที่ถูกขโมยไม่ค่อยได้คืน",
+   "my": "အရောင်းအဝယ်တစ်ခုချင်းစီရဲ့ ဖြစ်စဉ်အချိန်ဇယား၊ ရဲအစီရင်ခံစာ၊ ထိုင်း SEC ကို တိုင်ကြားချက်နဲ့ ကုန်သွယ်ရေးကုမ္ပ�anniကို တောင်းဆိုချက်။ ခိုးခံရတဲ့ဒင်္ဂါးတွေ ပြန်ရခဲတယ်။",
+   "zh": "整理每笔交易的时间线、报警材料、向泰国证交会的投诉以及向交易所的索赔。被盗的币很少能追回。",
+   "de": "Der Ablauf mit jeder Transaktion, die Anzeige bei der Polizei, die Beschwerde bei Thailands SEC und die Forderung an die Börse. Gestohlene Coins kommen selten zurück."
+  }
+ },
+ "how": [
+  {
+   "t": {
+    "en": "You keep your keys. On the call we see your screen; your recovery words stay off the camera and off every screen.",
+    "th": "กุญแจอยู่กับคุณ ในวิดีโอคอลเราเห็นหน้าจอของคุณ คำกู้คืนอยู่นอกกล้องและนอกทุกหน้าจอ",
+    "my": "မင်း မင်းရဲ့သော့တွေကို ကိုယ်တိုင်သိမ်းထားတယ်။ ခေါ်ဆိုမှုမှာ မင်းရဲ့စခရင်ကို ကျွန်တော်တို့ မြင်ရတယ်။ မင်းရဲ့ ပြန်ဖွင့်စကားလုံးတွေက ကင်မရာပေါ်မှာရော စခရင်တိုင်းပေါ်မှာပါ မပေါ်စေရဘူး။",
+    "zh": "钥匙在您手里。通话时我们看您的屏幕；助记词不出现在镜头前，也不出现在任何屏幕上。",
+    "de": "Sie behalten Ihre Schlüssel. Im Anruf sehen wir Ihren Bildschirm; Ihre Wiederherstellungswörter bleiben ausserhalb der Kamera und jedes Bildschirms."
+   }
+  },
+  {
+   "t": {
+    "en": "For a wallet set-up, the device comes from its maker's own shop, not from a marketplace seller.",
+    "th": "สำหรับการตั้งกระเป๋าเงิน อุปกรณ์มาจากร้านของผู้ผลิตเอง ไม่ใช่จากร้านค้าในตลาดออนไลน์",
+    "my": "ပိုက်ဆံအိတ်တပ်ဆင်မှုအတွက် ကိရိယာက ထုတ်လုပ်သူရဲ့ကိုယ်ပိုင်ဆိုင်ကနေ လာတယ်၊ စျေးကွက်ရောင်းချသူဆီကနေ မဟုတ်ဘူး။",
+    "zh": "设置钱包时，设备来自厂家自己的商店，而不是电商平台的卖家。",
+    "de": "Für die Einrichtung kommt das Gerät aus dem Shop des Herstellers, nicht von einem Marktplatz-Händler."
+   }
+  },
+  {
+   "t": {
+    "en": "This is about safety, not about what to buy or sell.",
+    "th": "เราคุยเรื่องความปลอดภัย ไม่ใช่เรื่องซื้อหรือขายอะไร",
+    "my": "ဒါက လုံခြုံရေးအကြောင်းပဲ၊ ဘာဝယ်ရမယ် ဘာရောင်းရမယ်ဆိုတာမဟုတ်ဘူး။",
+    "zh": "这里只谈安全，不谈买什么、卖什么。",
+    "de": "Es geht um Sicherheit, nicht darum, was Sie kaufen oder verkaufen sollen."
+   }
+  },
+  {
+   "src": "https://www.ic3.gov/PSA/2024/PSA240624",
+   "t": {
+    "en": "Stolen coins rarely come back. In one year, fake law firms that offered to get coins back took over US$9.9 million from people already robbed (FBI, June 2024).",
+    "th": "เหรียญที่ถูกขโมยไม่ค่อยได้คืน ในหนึ่งปี สำนักงานกฎหมายปลอมที่เสนอเอาเหรียญคืน เอาเงินไปกว่า 9.9 ล้านดอลลาร์จากคนที่ถูกขโมยมาแล้ว (FBI มิถุนายน 2567)",
+    "my": "ခိုးခံရတဲ့ဒင်္ဂါးတွေ ပြန်ရခဲတယ်။ တစ်နှစ်အတွင်း ဒင်္ဂါးပြန်ယူပေးမယ်လို့ ကမ်းလှမ်းတဲ့ အတုအယောင်ဥပဒေကုမ္ပ�anniတွေက အလစ်ခံရပြီးသားလူတွေဆီကနေ အမေရိကန်ဒေါ်လာ 9.9 သန်းကျော် ယူသွားတယ် (FBI၊ ဇွန် 2024)။",
+    "zh": "被盗的币很少能追回。一年内，声称能追回币的假律师事务所，从已经被盗过的人那里又拿走了超过 990 万美元（美国联邦调查局，2024 年 6 月）。",
+    "de": "Gestohlene Coins kommen selten zurück. In einem Jahr nahmen falsche Anwaltskanzleien, die versprachen, Coins zurückzuholen, Bestohlenen über 9,9 Millionen US-Dollar ab (FBI, Juni 2024)."
+   }
+  }
+ ],
+ "ui": {
+  "en": {
+   "title": "Crypto safety: plan for worse · Hongdam Studio",
+   "desc": "Binance lost about US$6.3 billion on 29 October 2026. Any exchange, phone or wallet can fail. A safety check, your own wallet, a plan for your family. From Chiang Rai, Thailand.",
+   "cardAlt": "Crypto safety: plan for worse. Eight steps, each worse than the last. Hongdam Studio, hongdam.net",
+   "card": {
+    "title": "Crypto safety: plan for worse",
+    "sub": "Any exchange, phone or wallet can fail."
+   },
+   "kicker": "Hongdam Studio · security",
+   "h1": "Crypto safety: plan for worse",
+   "lede": "On 29 October 2026, thieves took about US$6.3 billion from Binance, the biggest crypto exchange. It may have started with one engineer's laptop. Any exchange, phone or wallet can fail. We help you get ready before yours does.",
+   "gloss": [
+    [
+     "Exchange",
+     "a company that keeps your coins and trades them for you"
+    ],
+    [
+     "Wallet",
+     "where coins are kept; with your own wallet, only you hold the key"
+    ],
+    [
+     "Recovery words",
+     "12 or 24 words that open a wallet; whoever has them has the coins"
+    ]
+   ],
+   "btnBuy": "Book a safety check",
+   "btnLadder": "How bad can it get",
+   "todayH": "30 October 2026",
+   "todaySub": "The news today. Each line links to where it was said.",
+   "src": "source",
+   "ladderH": "How bad can it get",
+   "ladderSub": "Each step is worse than the one before. Plan for the last one.",
+   "checkH": "Four questions",
+   "checkSub": "Tap yes or no.",
+   "yes": "Yes",
+   "no": "No",
+   "resultH": "Start with",
+   "resultNone": "These four questions found no gap. A check each year finds the ones they miss.",
+   "again": "Start again",
+   "svcH": "What we do",
+   "svcSub": "On a video call, in Thai or English.",
+   "howH": "How we work",
+   "offH": "Which exchanges are paused now",
+   "offL": "Each exchange with the time and the source, and a calculator: how many months you could live if each place froze. On Offrampt, a free site about crypto in Thailand.",
+   "offBtn": "Open the board",
+   "talkH": "Talk to us first",
+   "talkL": "On LINE or by email, in Thai or English.",
+   "email": "Email",
+   "band": "Crypto safety: plan for worse",
+   "bandSub": "Binance lost US$6.3 billion. A check, your own wallet, a plan for your family.",
+   "bandGo": "Open"
+  },
+  "th": {
+   "title": "ความปลอดภัยคริปโต: เตรียมรับเรื่องที่แย่กว่านี้ · Hongdam Studio",
+   "desc": "Binance ถูกขโมยราว 6,300 ล้านดอลลาร์สหรัฐเมื่อ 29 ตุลาคม 2569 กระดานเทรด โทรศัพท์ หรือกระเป๋าเงินไหนก็ล้มได้ ตรวจความปลอดภัย ตั้งกระเป๋าเงินของคุณเอง แผนสำหรับครอบครัว จากเชียงราย",
+   "cardAlt": "ความปลอดภัยคริปโต: เตรียมรับเรื่องที่แย่กว่านี้ แปดขั้น แต่ละขั้นแย่กว่าขั้นก่อน Hongdam Studio, hongdam.net",
+   "card": {
+    "title": "ความปลอดภัยคริปโต: เตรียมรับเรื่องที่แย่กว่านี้",
+    "sub": "กระดานเทรด โทรศัพท์ หรือกระเป๋าเงินไหนก็ล้มได้"
+   },
+   "kicker": "Hongdam Studio · ความปลอดภัย",
+   "h1": "ความปลอดภัยคริปโต: เตรียมรับเรื่องที่แย่กว่านี้",
+   "lede": "วันที่ 29 ตุลาคม 2569 คนร้ายขโมยเงินราว 6,300 ล้านดอลลาร์สหรัฐจาก Binance กระดานเทรดคริปโตที่ใหญ่ที่สุด อาจเริ่มจากโน้ตบุ๊กของวิศวกรคนเดียว กระดานเทรด โทรศัพท์ หรือกระเป๋าเงินไหนก็ล้มได้ เราช่วยคุณเตรียมตัวก่อนที่ของคุณจะล้ม",
+   "gloss": [
+    [
+     "กระดานเทรด",
+     "บริษัทที่เก็บเหรียญและซื้อขายให้คุณ"
+    ],
+    [
+     "กระเป๋าเงิน (วอลเล็ต)",
+     "ที่เก็บเหรียญ ถ้าเป็นกระเป๋าเงินของคุณเอง มีแต่คุณที่ถือกุญแจ"
+    ],
+    [
+     "คำกู้คืน",
+     "คำ 12 หรือ 24 คำที่เปิดกระเป๋าเงิน ใครได้คำเหล่านี้ก็ได้เหรียญไป"
+    ]
+   ],
+   "btnBuy": "จองตรวจความปลอดภัย",
+   "btnLadder": "แย่ได้แค่ไหน",
+   "todayH": "30 ตุลาคม 2569",
+   "todaySub": "ข่าววันนี้ แต่ละบรรทัดลิงก์ไปยังแหล่งที่มา",
+   "src": "ที่มา",
+   "ladderH": "แย่ได้แค่ไหน",
+   "ladderSub": "แต่ละขั้นแย่กว่าขั้นก่อน วางแผนสำหรับขั้นสุดท้าย",
+   "checkH": "สี่คำถาม",
+   "checkSub": "แตะ ใช่ หรือ ไม่ใช่",
+   "yes": "ใช่",
+   "no": "ไม่ใช่",
+   "resultH": "เริ่มจาก",
+   "resultNone": "สี่คำถามนี้ไม่พบช่องโหว่ การตรวจปีละครั้งจะเจอสิ่งที่คำถามพลาด",
+   "again": "เริ่มใหม่",
+   "svcH": "เราทำอะไรให้",
+   "svcSub": "ผ่านวิดีโอคอล ภาษาไทยหรืออังกฤษ",
+   "howH": "วิธีทำงานของเรา",
+   "offH": "ตอนนี้กระดานเทรดไหนหยุดถอน",
+   "offL": "กระดานเทรดแต่ละแห่ง พร้อมเวลาและแหล่งที่มา และเครื่องคิด: ถ้าแต่ละที่ถูกแช่แข็ง คุณอยู่ได้กี่เดือน บน Offrampt เว็บไซต์ฟรีเรื่องคริปโตในไทย",
+   "offBtn": "เปิดตาราง",
+   "talkH": "คุยกับเราก่อน",
+   "talkL": "ทาง LINE หรืออีเมล ภาษาไทยหรืออังกฤษ",
+   "email": "อีเมล",
+   "band": "ความปลอดภัยคริปโต: เตรียมรับเรื่องที่แย่กว่านี้",
+   "bandSub": "Binance ถูกขโมย 6,300 ล้านดอลลาร์ ตรวจความปลอดภัย กระเป๋าเงินของคุณเอง แผนสำหรับครอบครัว",
+   "bandGo": "เปิด"
+  },
+  "my": {
+   "title": "ခရစ်ပတိုလုံခြုံရေး - အဆိုးဆုံးအတွက် အစီအစဉ် · Hongdam Studio",
+   "desc": "Binance က 2026 အောက်တိုဘာ 29 မှာ အမေရိကန်ဒေါ်လာ 6.3 ဘီလီယံခန့် ဆုံးရှုံးခဲ့တယ်။ ဘယ် ကုန်သွယ်ရေးကုမ္ပ�anni၊ ဖုန်း ဒါမှမဟုတ် ပိုက်ဆံအိတ်မဆို ပျက်နိုင်တယ်။ လုံခြုံရေးစစ်ဆေးမှု၊ မင်းရဲ့ကိုယ်ပိုင်ပိုက်ဆံအိတ်၊ မင်းရဲ့မိသားစုအတွက် အစီအစဉ်။ ထိုင်းနိုင်ငံ ချင်းရိုင်ကနေ။",
+   "cardAlt": "ခရစ်ပတိုလုံခြုံရေး - အဆိုးဆုံးအတွက် အစီအစဉ်။ ရှစ်ဆင့်၊ တစ်ဆင့်ချင်းစီက အရင်တစ်ခုထက် ပိုဆိုးတယ်။ Hongdam Studio၊ hongdam.net",
+   "card": {
+    "title": "ခရစ်ပတိုလုံခြုံရေး - အဆိုးဆုံးအတွက် အစီအစဉ်",
+    "sub": "ဘယ် ကုန်သွယ်ရေးကုမ္ပ�anni၊ ဖုန်း ဒါမှမဟုတ် ပိုက်ဆံအိတ်မဆို ပျက်နိုင်တယ်။"
+   },
+   "kicker": "Hongdam Studio · လုံခြုံရေး",
+   "h1": "ခရစ်ပတိုလုံခြုံရေး - အဆိုးဆုံးအတွက် အစီအစဉ်",
+   "lede": "2026 အောက်တိုဘာ 29 မှာ သူခိုးတွေက အကြီးဆုံး ခရစ်ပတိုကုန်သွယ်ရေးကုမ္ပ�anniဖြစ်တဲ့ Binance ကနေ အမေရိကန်ဒေါ်လာ 6.3 ဘီလီယံခန့် ယူသွားတယ်။ အင်ဂျင်နီယာတစ်ယောက်ရဲ့ လက်ပ်တော့ကနေ စတင်ခဲ့တာ ဖြစ်နိုင်တယ်။ ဘယ် ကုန်သွယ်ရေးကုမ္ပ�anni၊ ဖုန်း ဒါမှမဟုတ် ပိုက်ဆံအိတ်မဆို ပျက်နိုင်တယ်။ မင်းရဲ့ဟာ မပျက်ခင်မှာ အသင့်ပြင်ဖို့ ကျွန်တော်တို့ ကူညီတယ်။",
+   "gloss": [
+    [
+     "ကုန်သွယ်ရေးကုမ္ပ�anni",
+     "မင်းရဲ့ဒင်္ဂါးတွေကို သိမ်းထားပြီး မင်းအတွက် ရောင်းပေးဝယ်ပေးတဲ့ ကုမ္ပ�anniတစ်ခု"
+    ],
+    [
+     "ပိုက်ဆံအိတ်",
+     "ဒင်္ဂါးတွေ သိမ်းထားတဲ့နေရာ။ မင်းရဲ့ကိုယ်ပိုင်ပိုက်ဆံအိတ်နဲ့ဆိုရင် မင်းတစ်ယောက်တည်းကပဲ သော့ကို ကိုင်ထားတယ်။"
+    ],
+    [
+     "ပြန်ဖွင့်စကားလုံးတွေ",
+     "ပိုက်ဆံအိတ်ကို ဖွင့်တဲ့ စကားလုံး 12 လုံး ဒါမှမဟုတ် 24 လုံး။ ဘယ်သူက ရှိလဲ ဘယ်သူက ဒင်္ဂါးတွေကို ရတယ်။"
+    ]
+   ],
+   "btnBuy": "လုံခြုံရေးစစ်ဆေးမှု ကြိုတင်မှာယူ",
+   "btnLadder": "ဘယ်လောက်ထိ ဆိုးနိုင်လဲ",
+   "todayH": "2026 အောက်တိုဘာ 30",
+   "todaySub": "ဒီနေ့ သတင်း။ စာကြောင်းတစ်ကြောင်းချင်းစီက ဘယ်မှာပြောခဲ့တာကို လင့်ခ်ချိတ်ထားတယ်။",
+   "src": "ရင်းမြစ်",
+   "ladderH": "ဘယ်လောက်ထိ ဆိုးနိုင်လဲ",
+   "ladderSub": "အဆင့်တစ်ခုချင်းစီက အရင်တစ်ခုထက် ပိုဆိုးတယ်။ နောက်ဆုံးတစ်ခုအတွက် အစီအစဉ်ဆွဲပါ။",
+   "checkH": "မေးခွန်းလေးခု",
+   "checkSub": "ဟုတ်တယ် ဒါမှမဟုတ် မဟုတ်ဘူးကို နှိပ်ပါ။",
+   "yes": "ဟုတ်တယ်",
+   "no": "မဟုတ်ဘူး",
+   "resultH": "ဒီကနေ စတင်ပါ",
+   "resultNone": "ဒီမေးခွန်းလေးခုက ကွာဟချက် မတွေ့ဘူး။ တစ်နှစ်တစ်ကြိမ် စစ်ဆေးမှုက သူတို့ လွတ်သွားတာတွေကို တွေ့တယ်။",
+   "again": "ပြန်စတင်ပါ",
+   "svcH": "ကျွန်တော်တို့ ဘာလုပ်လဲ",
+   "svcSub": "ဗီဒီယိုခေါ်ဆိုမှုမှာ၊ ထိုင်း ဒါမှမဟုတ် အင်္ဂလိပ်လိုပဲ။",
+   "howH": "ကျွန်တော်တို့ ဘယ်လိုလုပ်လဲ",
+   "offH": "ဘယ် ကုန်သွယ်ရေးကုမ္ပ�anniတွေ အခု ရပ်ထားလဲ",
+   "offL": "ကုန်သွယ်ရေးကုမ္ပ�anniတစ်ခုချင်းစီရဲ့ အချိန်နဲ့ ရင်းမြစ်၊ ပြီးတော့ တွက်ချက်ကိရိယာ - တစ်နေရာချင်းစီ အေးခဲသွားရင် မင်း ဘယ်နှစ်လ ရှင်သန်နိုင်လဲ။ ထိုင်းနိုင်ငံက ခရစ်ပတိုအကြောင်း အခမဲ့ဝက်ဘ်ဆိုက် Offrampt ပေါ်မှာ။",
+   "offBtn": "ဘုတ်ဖွင့်ပါ",
+   "talkH": "ကျွန်တော်တို့ကို အရင်ပြောပါ",
+   "talkL": "LINE ပေါ်မှာ ဒါမှမဟုတ် အီးမေးလ်နဲ့၊ ထိုင်း ဒါမှမဟုတ် အင်္ဂလိပ်လိုပဲ။",
+   "email": "အီးမေးလ်",
+   "band": "ခရစ်ပတိုလုံခြုံရေး - အဆိုးဆုံးအတွက် အစီအစဉ်",
+   "bandSub": "Binance က အမေရိကန်ဒေါ်လာ 6.3 ဘီလီယံ ဆုံးရှုံးခဲ့တယ်။ စစ်ဆေးမှုတစ်ခု၊ မင်းရဲ့ကိုယ်ပိုင်ပိုက်ဆံအိတ်၊ မင်းရဲ့မိသားစုအတွက် အစီအစဉ်တစ်ခု။",
+   "bandGo": "ဖွင့်ပါ"
+  },
+  "zh": {
+   "title": "加密货币安全：为更坏的情况做准备 · Hongdam Studio",
+   "desc": "2026 年 10 月 29 日，币安被盗约 63 亿美元。任何交易所、手机或钱包都可能出事。安全检查、您自己的钱包、家人方案。来自泰国清莱。",
+   "cardAlt": "加密货币安全：为更坏的情况做准备。八步，一步比一步糟。Hongdam Studio，hongdam.net",
+   "card": {
+    "title": "加密货币安全：为更坏的情况做准备",
+    "sub": "任何交易所、手机或钱包都可能出事。"
+   },
+   "kicker": "Hongdam Studio · 安全",
+   "h1": "加密货币安全：为更坏的情况做准备",
+   "lede": "2026 年 10 月 29 日，窃贼从全球最大的加密货币交易所币安盗走约 63 亿美元。起点可能是一名工程师的笔记本电脑。任何交易所、手机或钱包都可能出事。我们帮您在出事之前做好准备。",
+   "gloss": [
+    [
+     "交易所",
+     "替您保管币并帮您买卖的公司"
+    ],
+    [
+     "钱包",
+     "存放币的地方；用自己的钱包，只有您拿着钥匙"
+    ],
+    [
+     "助记词",
+     "打开钱包的 12 或 24 个词；谁拿到它们，谁就拿到币"
+    ]
+   ],
+   "btnBuy": "预约安全检查",
+   "btnLadder": "最坏能多坏",
+   "todayH": "2026 年 10 月 30 日",
+   "todaySub": "今天的新闻。每一行都链接到原始出处。",
+   "src": "出处",
+   "ladderH": "最坏能多坏",
+   "ladderSub": "每一步都比上一步更糟。请按最后一步来准备。",
+   "checkH": "四个问题",
+   "checkSub": "点“是”或“否”。",
+   "yes": "是",
+   "no": "否",
+   "resultH": "先从这里开始",
+   "resultNone": "这四个问题没有发现漏洞。每年检查一次，能找到问题漏掉的地方。",
+   "again": "重新开始",
+   "svcH": "我们做什么",
+   "svcSub": "视频通话，泰语或英语。",
+   "howH": "我们怎么做",
+   "offH": "现在哪些交易所暂停了",
+   "offL": "每家交易所的状态，附时间和出处；还有一个计算器：如果每个地方都被冻结，您还能生活几个月。在 Offrampt 上，一个关于泰国加密货币的免费网站。",
+   "offBtn": "打开状态表",
+   "talkH": "先和我们聊聊",
+   "talkL": "通过 LINE 或电子邮件，泰语或英语。",
+   "email": "电子邮件",
+   "band": "加密货币安全：为更坏的情况做准备",
+   "bandSub": "币安被盗 63 亿美元。安全检查、您自己的钱包、家人方案。",
+   "bandGo": "打开"
+  },
+  "de": {
+   "title": "Krypto-Sicherheit: für Schlimmeres planen · Hongdam Studio",
+   "desc": "Binance verlor am 29. Oktober 2026 rund 6,3 Milliarden US-Dollar. Jede Börse, jedes Handy, jede Wallet kann versagen. Eine Sicherheitsprüfung, Ihre eigene Wallet, ein Plan für Ihre Familie. Aus Chiang Rai, Thailand.",
+   "cardAlt": "Krypto-Sicherheit: für Schlimmeres planen. Acht Stufen, jede schlimmer als die vorige. Hongdam Studio, hongdam.net",
+   "card": {
+    "title": "Krypto-Sicherheit: für Schlimmeres planen",
+    "sub": "Jede Börse, jedes Handy, jede Wallet kann versagen."
+   },
+   "kicker": "Hongdam Studio · Sicherheit",
+   "h1": "Krypto-Sicherheit: für Schlimmeres planen",
+   "lede": "Am 29. Oktober 2026 stahlen Diebe rund 6,3 Milliarden US-Dollar von Binance, der grössten Kryptobörse. Es begann vielleicht mit dem Laptop eines einzigen Ingenieurs. Jede Börse, jedes Handy, jede Wallet kann versagen. Wir helfen Ihnen, bereit zu sein, bevor es Ihre trifft.",
+   "gloss": [
+    [
+     "Börse",
+     "eine Firma, die Ihre Coins verwahrt und für Sie handelt"
+    ],
+    [
+     "Wallet",
+     "wo Coins liegen; bei Ihrer eigenen Wallet halten nur Sie den Schlüssel"
+    ],
+    [
+     "Wiederherstellungswörter",
+     "12 oder 24 Wörter, die eine Wallet öffnen; wer sie hat, hat die Coins"
+    ]
+   ],
+   "btnBuy": "Sicherheitsprüfung buchen",
+   "btnLadder": "Wie schlimm es werden kann",
+   "todayH": "30. Oktober 2026",
+   "todaySub": "Die Nachrichten von heute. Jede Zeile verlinkt die Quelle.",
+   "src": "Quelle",
+   "ladderH": "Wie schlimm es werden kann",
+   "ladderSub": "Jede Stufe ist schlimmer als die vorige. Planen Sie für die letzte.",
+   "checkH": "Vier Fragen",
+   "checkSub": "Tippen Sie Ja oder Nein.",
+   "yes": "Ja",
+   "no": "Nein",
+   "resultH": "Beginnen Sie mit",
+   "resultNone": "Diese vier Fragen fanden keine Lücke. Eine Prüfung pro Jahr findet, was sie übersehen.",
+   "again": "Neu beginnen",
+   "svcH": "Was wir tun",
+   "svcSub": "Im Videoanruf, auf Thai oder Englisch.",
+   "howH": "Wie wir arbeiten",
+   "offH": "Welche Börsen jetzt gesperrt sind",
+   "offL": "Jede Börse mit Zeit und Quelle, dazu ein Rechner: wie viele Monate Sie leben könnten, wenn jeder Ort einfröre. Auf Offrampt, einer kostenlosen Website über Krypto in Thailand.",
+   "offBtn": "Zur Übersicht",
+   "talkH": "Reden Sie zuerst mit uns",
+   "talkL": "Per LINE oder E-Mail, auf Thai oder Englisch.",
+   "email": "E-Mail",
+   "band": "Krypto-Sicherheit: für Schlimmeres planen",
+   "bandSub": "Binance verlor 6,3 Milliarden US-Dollar. Eine Prüfung, Ihre eigene Wallet, ein Plan für Ihre Familie.",
+   "bandGo": "Öffnen"
+  }
+ }
+}

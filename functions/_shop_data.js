@@ -256,6 +256,44 @@ export const CARDS = {
    }
   ]
  },
+ "crypto-safe": {
+  "act": "buy",
+  "en": "Crypto safety",
+  "opts": [
+   {
+    "id": "crypto-check",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "crypto-wallet",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "crypto-family",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   },
+   {
+    "id": "crypto-loss",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
  "mirror": {
   "act": "buy",
   "en": "Spare copy of your website",
