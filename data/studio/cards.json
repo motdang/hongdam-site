@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/link-cards-mastodon-bluesky",
+  "kicker": "Hongdam Studio · Last mile · 31 October 2026",
+  "title": "Why your link card is blank",
+  "th": "การ์ดลิงก์: Mastodon ทุกเซิร์ฟเวอร์ดึงหน้าเว็บเอง ส่วน Bluesky เก็บการ์ดไว้ในโพสต์ตายตัว",
+  "sub": "What Mastodon and Bluesky read, from their code",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "20eca8fca5"
+ },
+ {
   "out": "og/studio/n/thai-tokens-cost-by-model",
   "kicker": "Hongdam Studio · AI models · 30 October 2026",
   "title": "Thai costs up to 2.9× the tokens",
