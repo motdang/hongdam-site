@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/thai-tokens-cost-by-model",
+  "kicker": "Hongdam Studio · AI models · 30 October 2026",
+  "title": "Thai costs up to 2.9× the tokens",
+  "th": "ข้อความเดียวกัน ภาษาไทยใช้โทเคนมากกว่าภาษาอังกฤษ 1.46 เท่าบน DeepSeek และ 2.94 เท่าบน GLM-5.3",
+  "sub": "Same eight messages, six open models, Workers AI",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "0bd533ec32"
+ },
+ {
   "out": "og/studio/n/github-agentic-workflows-default-cap",
   "kicker": "Hongdam Studio · Automation · 29 October 2026",
   "title": "Agentic Workflows: US$50 a day",
