@@ -2490,6 +2490,71 @@
      "floor": 500,
      "ceiling": 1500,
      "slots": 25
+    },
+    {
+     "id": "crypto-check",
+     "en": "Crypto safety check, 1 hour",
+     "th": "ตรวจความปลอดภัยคริปโต 1 ชั่วโมง",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 8000,
+     "slots": 20,
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "One hour on a video call. We go through where your coins are, your phone, email, passwords and two-step logins (a code on your phone as well as the password), where your recovery words (the 12 or 24 words that open a wallet) are kept, and the tricks thieves are using now. You get a written plan in Thai or English.",
+     "d_th": "คุยผ่านวิดีโอคอล 1 ชั่วโมง ดูว่าเหรียญอยู่ที่ไหนบ้าง โทรศัพท์ อีเมล รหัสผ่าน การยืนยันสองขั้นตอน (รหัสในโทรศัพท์นอกจากรหัสผ่าน) ที่เก็บคำกู้คืน (คำ 12 หรือ 24 คำที่เปิดกระเป๋าเงิน) และวิธีที่คนร้ายใช้ตอนนี้ ได้แผนเป็นลายลักษณ์อักษร ภาษาไทยหรืออังกฤษ"
+    },
+    {
+     "id": "crypto-wallet",
+     "en": "Your own crypto wallet, set up with you",
+     "th": "ตั้งกระเป๋าเงินคริปโตของคุณเอง ไปด้วยกัน",
+     "baht": 3000,
+     "floor": 1500,
+     "ceiling": 6000,
+     "slots": 10,
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "You buy a hardware wallet (a small device that keeps your keys off the internet) from its maker's own shop. On a video call we set it up with you and move a small test amount first. Only you see the recovery words.",
+     "d_th": "คุณซื้อฮาร์ดแวร์วอลเล็ต (อุปกรณ์เล็กๆ ที่เก็บกุญแจไว้นอกอินเทอร์เน็ต) จากร้านของผู้ผลิตเอง เราตั้งค่ากับคุณผ่านวิดีโอคอล และลองโอนจำนวนน้อยก่อน คำกู้คืนมีคุณเห็นคนเดียว"
+    },
+    {
+     "id": "crypto-family",
+     "en": "Crypto family plan",
+     "th": "แผนคริปโตสำหรับครอบครัว",
+     "baht": 5000,
+     "floor": 3000,
+     "ceiling": 12000,
+     "slots": 8,
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "Who can reach your coins if you cannot, and how. We write the steps for your family in Thai or English, with the kinds of people and messages that pretend to help. Your recovery words stay out of the plan.",
+     "d_th": "ถ้าคุณเข้าถึงเหรียญไม่ได้ ใครเข้าถึงได้และทำอย่างไร เราเขียนขั้นตอนให้ครอบครัวเป็นภาษาไทยหรืออังกฤษ พร้อมแบบของคนและข้อความที่แอบอ้างว่าจะช่วย คำกู้คืนไม่อยู่ในแผน"
+    },
+    {
+     "id": "crypto-loss",
+     "en": "After a crypto loss: the paperwork",
+     "th": "หลังสูญเสียคริปโต: งานเอกสาร",
+     "baht": 4000,
+     "floor": 2500,
+     "ceiling": 8000,
+     "slots": 10,
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "We write the timeline of what happened with each transaction, and prepare the police report, the complaint to Thailand's SEC and the claim to the exchange. Stolen coins rarely come back; the fee is for the paperwork.",
+     "d_th": "เราเขียนลำดับเหตุการณ์พร้อมทุกธุรกรรม เตรียมแจ้งความตำรวจ เรื่องร้องเรียนถึง ก.ล.ต. และคำขอถึงกระดานเทรด เหรียญที่ถูกขโมยไม่ค่อยได้คืน ค่าบริการนี้เป็นค่างานเอกสาร"
+    },
+    {
+     "id": "crypto-device",
+     "en": "Staff laptop or phone checked for crypto theft",
+     "th": "ตรวจโน้ตบุ๊กหรือมือถือพนักงาน กันขโมยคริปโต",
+     "baht": 2000,
+     "floor": 1000,
+     "ceiling": 5000,
+     "slots": 30,
+     "p_en": "{price} a device",
+     "p_th": "เครื่องละ {price}",
+     "d_en": "The Binance theft of October 2026 may have started on one staff laptop. We check each work laptop or phone: updates, screen lock, disk encryption, password manager, two-step logins and apps that can read the screen or keyboard, then send a fake message asking for a password, as a test. A report for each device.",
+     "d_th": "การขโมยจาก Binance เดือนตุลาคม 2569 อาจเริ่มจากโน้ตบุ๊กของพนักงานเครื่องเดียว เราตรวจโน้ตบุ๊กหรือมือถือที่ใช้ทำงานทีละเครื่อง: อัปเดต ล็อกหน้าจอ เข้ารหัสดิสก์ ตัวจัดการรหัสผ่าน การยืนยันสองขั้นตอน และแอปที่อ่านหน้าจอหรือแป้นพิมพ์ได้ แล้วส่งข้อความปลอมที่ขอรหัสผ่านเป็นการทดสอบ มีรายงานทุกเครื่อง"
     }
    ]
   },

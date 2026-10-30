@@ -47,6 +47,14 @@ Her ask 2026-10-26: a Hongdam Studio minisite for DJ, her advisor, as a portfoli
 - Dingbats: group p-dj, `DINGBATS_SRC=<doodle-dingbats>/src tools/group_dingbats.sh p-dj` (that group only).
 - Link-preview pictures: `node tools/dj_card.mjs`.
 
+## Crypto safety: plan for worse
+
+Her ask 2026-10-30, the day after the Binance theft (about US$6.3 billion): a Hongdam minisite with a paid service, linked both ways with offrampt.net, planned for something worse than that day. hongdam.net/studio/crypto-safety/ (and /th/, /my/, /zh/, /de/): the news of the day with a source on each line, eight steps from a paused exchange to a family that cannot reach the coins, five yes-or-no questions that point to a service, the services with Buy, and a link to the exchange board and calculator at offrampt.net/frozen/. Two shop cards in Security: crypto-safe (safety check ฿3,000, your own wallet ฿3,000, family plan ฿5,000, after a loss ฿4,000) and crypto-team (฿2,000 a device); the five items walk monthly like the rest. The Studio front page carries a link band.
+
+- Words: `data/studio/crypto.json` → `python3 tools/build_crypto.py` (pages, sitemap and llms.txt blocks); `python3 tools/build_studio.py` for the band.
+- Look and questions: `docs/assets/crypto.css`, `crypto.js`. Dingbats: the fix group's bundle.
+- Link pictures: `DINGBATS_ALL=<doodle-dingbats>/dingbats.min.js node tools/crypto_card.mjs` (docs/og/studio/crypto-<lang>.jpg); the cards' Buy-link pictures: `node tools/share_cards.mjs crypto-safe crypto-team`.
+
 ## Publishing
 
 Live at https://hongdam.net (Cloudflare Pages project `hongdam`). A merge to `main`

@@ -1157,6 +1157,22 @@
     "zh": "个座位",
     "de": "Plätze"
    }
+  },
+  "device": {
+   "one": {
+    "en": "device",
+    "th": "เครื่อง",
+    "my": "ကိရိယာ",
+    "zh": "台设备",
+    "de": "Gerät"
+   },
+   "many": {
+    "en": "devices",
+    "th": "เครื่อง",
+    "my": "ကိရိယာတွေ",
+    "zh": "台设备",
+    "de": "Geräte"
+   }
   }
  },
  "cats": [
@@ -3395,6 +3411,96 @@
      "i": "sec-hacked",
      "u": "site",
      "max": 5
+    }
+   ]
+  },
+  {
+   "id": "crypto-safe",
+   "cat": "fix",
+   "n": {
+    "en": "Crypto safety",
+    "th": "ความปลอดภัยคริปโต",
+    "my": "ခရစ်ပတိုလုံခြုံရေး",
+    "zh": "加密货币安全",
+    "de": "Krypto-Sicherheit"
+   },
+   "l": {
+    "en": "Get ready for the day an exchange, your phone or your wallet fails: a check, your own wallet, a plan for your family.",
+    "th": "เตรียมพร้อมสำหรับวันที่กระดานเทรด โทรศัพท์ หรือกระเป๋าเงินของคุณล้ม: ตรวจความปลอดภัย กระเป๋าเงินของคุณเอง แผนสำหรับครอบครัว",
+    "my": "ကုန်သွယ်ရေးကုမ္ပ�anni၊ မင်းရဲ့ဖုန်း ဒါမှမဟုတ် မင်းရဲ့ပိုက်ဆံအိတ် ပျက်တဲ့နေ့အတွက် အသင့်ပြင်ထားပါ - စစ်ဆေးမှုတစ်ခု၊ မင်းရဲ့ကိုယ်ပိုင်ပိုက်ဆံအိတ်၊ မင်းရဲ့မိသားစုအတွက် အစီအစဉ်တစ်ခု။",
+    "zh": "为交易所、手机或钱包出事的那一天做好准备：安全检查、您自己的钱包、家人方案。",
+    "de": "Bereit für den Tag, an dem eine Börse, Ihr Handy oder Ihre Wallet versagt: eine Prüfung, Ihre eigene Wallet, ein Plan für Ihre Familie."
+   },
+   "kw": "crypto safety binance hack binance hacked withdrawals paused hardware wallet ledger trezor seed phrase recovery words self custody crypto inheritance crypto stolen crypto scam usdt frozen ความปลอดภัยคริปโต ฮาร์ดแวร์วอลเล็ต binance ถูกแฮก ถอนไม่ได้ มรดกคริปโต คริปโตโดนขโมย 加密货币安全 硬件钱包 助记词 币安 被盗 Krypto Sicherheit Hardware-Wallet",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "crypto-check",
+     "n": {
+      "en": "Safety check, 1 hour",
+      "th": "ตรวจความปลอดภัย 1 ชั่วโมง",
+      "my": "လုံခြုံရေးစစ်ဆေးမှု၊ 1 နာရီ",
+      "zh": "安全检查，1 小时",
+      "de": "Sicherheitsprüfung, 1 Stunde"
+     }
+    },
+    {
+     "i": "crypto-wallet",
+     "n": {
+      "en": "Your own wallet, set up with you",
+      "th": "ตั้งกระเป๋าเงินของคุณเอง ไปด้วยกัน",
+      "my": "မင်းရဲ့ကိုယ်ပိုင်ပိုက်ဆံအိတ်၊ မင်းနဲ့အတူ တပ်ဆင်ပေးတယ်",
+      "zh": "和您一起设置您自己的钱包",
+      "de": "Eigene Wallet, mit Ihnen eingerichtet"
+     }
+    },
+    {
+     "i": "crypto-family",
+     "n": {
+      "en": "Plan for your family",
+      "th": "แผนสำหรับครอบครัว",
+      "my": "မင်းရဲ့မိသားစုအတွက် အစီအစဉ်",
+      "zh": "家人方案",
+      "de": "Plan für Ihre Familie"
+     }
+    },
+    {
+     "i": "crypto-loss",
+     "n": {
+      "en": "After a loss: the paperwork",
+      "th": "หลังสูญเสีย: งานเอกสาร",
+      "my": "ဆုံးရှုံးပြီးနောက် - စာရွက်စာတမ်းတွေ",
+      "zh": "损失之后：文书工作",
+      "de": "Nach einem Verlust: die Unterlagen"
+     }
+    }
+   ],
+   "feat": true
+  },
+  {
+   "id": "crypto-team",
+   "cat": "fix",
+   "n": {
+    "en": "Staff laptops and phones checked",
+    "th": "ตรวจโน้ตบุ๊กและมือถือพนักงาน",
+    "my": "ဝန်ထမ်းတွေရဲ့ လက်ပ်တော့နဲ့ ဖုန်းတွေ စစ်ဆေးပြီးသား",
+    "zh": "员工电脑和手机安全检查",
+    "de": "Laptops und Handys des Teams geprüft"
+   },
+   "l": {
+    "en": "The Binance theft may have started on one staff laptop. We check each work device and test your team with a fake message that asks for a password.",
+    "th": "การขโมยจาก Binance อาจเริ่มจากโน้ตบุ๊กพนักงานเครื่องเดียว เราตรวจอุปกรณ์ทำงานทีละเครื่อง และทดสอบทีมด้วยข้อความปลอมที่ขอรหัสผ่าน",
+    "my": "Binance ခိုးမှုက ဝန်ထမ်းတစ်ယောက်ရဲ့ လက်ပ်တော့ပေါ်မှာ စတင်ခဲ့တာ ဖြစ်နိုင်တယ်။ ကျွန်တော်တို့က အလုပ်ကိရိယာတစ်ခုချင်းစီကို စစ်ဆေးပြီး မင်းရဲ့အဖွဲ့ကို စကားဝှက်တောင်းတဲ့ အတုအယောင်မက်ဆေ့ချ်နဲ့ စမ်းသပ်တယ်။",
+    "zh": "币安被盗可能始于一台员工笔记本电脑。我们逐台检查工作设备，并用一条索要密码的假信息测试您的团队。",
+    "de": "Der Binance-Diebstahl begann vielleicht auf einem einzigen Mitarbeiter-Laptop. Wir prüfen jedes Arbeitsgerät und testen Ihr Team mit einer gefälschten Nachricht, die nach einem Passwort fragt."
+   },
+   "kw": "staff laptop security company devices check phishing test phishing drill endpoint security business crypto security audit ตรวจความปลอดภัยคอมพิวเตอร์ บริษัท ทดสอบฟิชชิง 员工设备 安全检查 钓鱼测试 Phishing-Test Geräteprüfung",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "crypto-device",
+     "u": "device",
+     "max": 50
     }
    ]
   },

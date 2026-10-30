@@ -258,7 +258,7 @@ def front(lang, ns):
         E(B.SHOP["ui"][lang]["askBtn"]), notes_url, E(u["ctaNotes"]), B.share_btn(lang))
     out += '<p class="s-counts">%s</p>\n' % E(fill(u["counts"], lang, len(ns)))
     out += '<button class="s-swan" type="button" aria-label="Hongdam">%s</button>\n' % B.db("hongsa", play="loop")
-    out += '</section>\n</div>\n<main id="main">\n' + swan_band(lang)
+    out += '</section>\n</div>\n<main id="main">\n' + crypto_band(lang) + swan_band(lang)
     # practices
     out += '<section id="practices" class="s-wrap"><h2 class="s-h">%s</h2>\n<ol class="s-practices">\n' % E(u["practicesH"])
     for i, p in enumerate(S["practices"], 1):
@@ -299,6 +299,12 @@ def front(lang, ns):
         out += '<ul class="s-svc s-crew">%s</ul>\n' % svc_row(crew, lang)
     out += '</section>\n</main>\n' + foot(lang)
     return out
+
+
+def crypto_band(lang):
+    """The link to Crypto safety: plan for worse (tools/build_crypto.py), under the hero, above Black Swan."""
+    import build_crypto as CS
+    return '<link rel="stylesheet" href="/assets/crypto.css?v=%s">\n' % CS.V + CS.band(lang)
 
 
 def swan_band(lang):
