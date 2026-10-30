@@ -873,6 +873,11 @@
    "nib",
    "megaphone",
    "clap"
+  ],
+  "crypto-safe": [
+   "coin",
+   "eye",
+   "lock"
   ]
  },
  "master": [
