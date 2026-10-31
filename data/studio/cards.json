@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/week-supabase-grants-brotli-mistral",
+  "kicker": "Hongdam Studio · Weekly summary · 1 November 2026",
+  "title": "The week: six notes, four changes",
+  "th": "สรุปสัปดาห์ 26 ตุลาคม: Supabase เลิกเปิดตารางใหม่ให้ API อัตโนมัติ, Brotli เข้ารายชื่อช่องโหว่ที่ถูกโจมตีจริง, Mistral Large 4 ปล่อยเวต",
+  "sub": "Supabase grants, Brotli, PHP, Mistral Large 4",
+  "line": [
+   "typewriter",
+   "page",
+   "send"
+  ],
+  "hue": 322,
+  "hash": "f83c5cb50d"
+ },
+ {
   "out": "og/studio/n/link-cards-mastodon-bluesky",
   "kicker": "Hongdam Studio · Last mile · 31 October 2026",
   "title": "Why your link card is blank",
