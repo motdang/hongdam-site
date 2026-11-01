@@ -428,6 +428,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-11-02 · GLM-5.3 on Workers AI sent 155 replies with other customers' text, all with HTTP 200 — https://hongdam.net/studio/notes/glm-5-3-leak-canary-test/
 - 2026-11-01 · The week: Supabase stops exposing new tables, Brotli exploited, Mistral Large 4 weights — https://hongdam.net/studio/notes/week-supabase-grants-brotli-mistral/
 - 2026-10-31 · Link cards: each Mastodon server fetches your page, Bluesky freezes the card — https://hongdam.net/studio/notes/link-cards-mastodon-bluesky/
 - 2026-10-30 · Same text, Thai or English: 1.46 times the tokens on DeepSeek, 2.94 times on GLM-5.3 — https://hongdam.net/studio/notes/thai-tokens-cost-by-model/

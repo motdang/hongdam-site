@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/glm-5-3-leak-canary-test",
+  "kicker": "Hongdam Studio · AI models · 2 November 2026",
+  "title": "155 replies held other users' text",
+  "th": "GLM-5.3 บน Workers AI ส่งคำตอบ 155 ครั้งที่มีข้อความของลูกค้ารายอื่น ทุกครั้งตอบกลับด้วย HTTP 200",
+  "sub": "GLM-5.3 on Workers AI, 27 Aug to 9 Sep 2026",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "5a29c613f7"
+ },
+ {
   "out": "og/studio/n/week-supabase-grants-brotli-mistral",
   "kicker": "Hongdam Studio · Weekly summary · 1 November 2026",
   "title": "The week: six notes, four changes",
