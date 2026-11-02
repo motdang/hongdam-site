@@ -71,7 +71,19 @@ function withScripts(request, response) {
         if (v) el.setAttribute('content', v);
       } });
   }
-  return rw.transform(response);
+  return keepOffBeacon(request, rw.transform(response));
+}
+
+/* Cloudflare's Web Analytics script is added to pages at the edge and counts a visit wherever it runs,
+ * headless browsers included. A page sent to a machine, or to our own looking, carries no-transform,
+ * which keeps the script off it (2026-11-02). */
+export function keepOffBeacon(request, response) {
+  const { category } = classify(request.headers.get('user-agent') || '', { asn: request.cf?.asn, headers: request.headers });
+  const cc = response.headers.get('cache-control') || '';
+  if (category === 'human' || /no-transform/i.test(cc)) return response;
+  const out = new Response(response.body, response);
+  out.headers.set('cache-control', cc ? `${cc}, no-transform` : 'no-transform');
+  return out;
 }
 
 const SITE = 'https://hongdam.net';
