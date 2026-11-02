@@ -1,6 +1,6 @@
 /* Who is asking for the page — User-Agent → {category, agent}.
  *
- * PROVENANCE: a copy of mot-dang/publish/classify.js (its commit f4c765e89e), taken 2026-10-24, with mot-dang PR #45 (2026-11-02),
+ * PROVENANCE: a copy of mot-dang/publish/classify.js (its commit f4c765e89e), taken 2026-10-24, with mot-dang PRs #45 and #46 (2026-11-02),
  * which is itself traffic-eye/src/classify.js plus the network tells (cloud ASNs, a Chrome string
  * with no Sec-Fetch-Mode) and the Bluesky and Mastodon card fetchers. Used by _middleware.js for the
  * edge count and by api/hit for the page events. Keep the copies in step.
@@ -39,6 +39,12 @@ const SIGNATURES = [
   // Exa: a search engine whose readers are AI programs; it answers their
   // questions from what this bot reads (first seen here 6 Oct 2026).
   ['ai', 'ExaSearchBot', /\bExa(Search)?Bot\b/i],
+  // Named on their own bot pages, read 2026-11-02: Keenable's index answers AI
+  // agents (keenable.ai/bot); Reflection AI's crawler builds its models
+  // (reflection.ai/bot); ElevenLabs' may train its models (elevenlabs.io/docs/bots).
+  ['ai', 'KeenableBot', /KeenableBot/i],
+  ['ai', 'Reflectionbot', /Reflectionbot/i],
+  ['ai', 'ElevenlabsCrawler', /ElevenlabsCrawler/i],
   ['ai', 'Perplexity-User', /Perplexity-User/i],
   ['ai', 'Google-Extended', /Google-Extended/i],
   ['ai', 'Applebot-Extended', /Applebot-Extended/i],
