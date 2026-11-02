@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/npm-install-scripts-before-vercel",
+  "kicker": "Hongdam Studio · Last mile · 3 November 2026",
+  "title": "Your laptop installs before Vercel checks",
+  "th": "Vercel บล็อกแพ็กเกจ npm อันตรายตอน build แล้ว แต่ npm ที่มากับ Node ทุกรุ่น LTS ยังรันสคริปต์ติดตั้งของแพ็กเกจอยู่",
+  "sub": "Two .npmrc lines, tested on npm 10, 11, 12",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "a4ec29c324"
+ },
+ {
   "out": "og/studio/n/glm-5-3-leak-canary-test",
   "kicker": "Hongdam Studio · AI models · 2 November 2026",
   "title": "155 replies held other users' text",
