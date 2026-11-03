@@ -8453,6 +8453,40 @@
    }
   },
   {
+   "id": "retreat",
+   "cat": "tours",
+   "n": {
+    "en": "Board retreat, five nights",
+    "th": "สัมมนาคณะกรรมการ 5 คืน",
+    "my": "ဒါရိုက်တာအဖွဲ့ ငါးညခရီး",
+    "zh": "董事会静修，五晚",
+    "de": "Retreat für den Vorstand, fünf Nächte"
+   },
+   "l": {
+    "en": "Near Chiang Rai: mornings of questions only, then foraging, indigo and lanterns. A suite each; the resort bills rooms and meals.",
+    "th": "ใกล้เชียงราย ช่วงเช้าคุยกันด้วยคำถาม ช่วงบ่ายหาของป่า ย้อมคราม ทำโคม ห้องสวีทคนละห้อง ค่าห้องและอาหารรีสอร์ตเก็บเอง",
+    "my": "ချင်းရိုင်အနီး: မနက်ပိုင်း မေးခွန်းဖြင့်သာ ဆွေးနွေး၊ ညနေ တောထဲ အစားအစာရှာ၊ မဲနယ်ဆိုး၊ မီးအိမ်။ တစ်ဦးလျှင် suite တစ်ခန်း၊ အခန်းနှင့် အစားအစာကို resort က ကောက်ခံ။",
+    "zh": "清莱附近：上午只用提问来讨论，下午采集野菜、蓝染、做灯笼。每人一间套房；住宿和餐费由度假村收取。",
+    "de": "Bei Chiang Rai: Vormittage nur mit Fragen, dann Sammeln im Wald, Indigo und Laternen. Eine Suite pro Person; das Resort verrechnet Zimmer und Essen."
+   },
+   "kw": "board retreat offsite away day directors trustees governance nonprofit foundation family business school board facilitation intervision action learning troika forum clearness committee chiang rai lanna foraging indigo สัมมนา คณะกรรมการ เอาท์ติ้ง นอกสถานที่ 董事会 静修 团建 Vorstand Klausur",
+   "act": "link",
+   "href": {
+    "en": "/retreat/",
+    "th": "/th/retreat/",
+    "my": "/retreat/",
+    "zh": "/retreat/",
+    "de": "/retreat/"
+   },
+   "pshow": {
+    "en": "From ฿600,000 a board",
+    "th": "เริ่ม ฿600,000 ต่อคณะ",
+    "my": "฿600,000 မှစ၍ အဖွဲ့တစ်ဖွဲ့လျှင်",
+    "zh": "每个董事会 ฿600,000 起",
+    "de": "Ab ฿600,000 pro Vorstand"
+   }
+  },
+  {
    "id": "voice",
    "cat": "outsource",
    "n": {
