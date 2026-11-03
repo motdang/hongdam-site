@@ -95,6 +95,15 @@ if (fs.existsSync(DJ_F)) {
   groups['p-dj'] = [...always, 'key', ...dj.names.flatMap((n) => [n.glyph, n.iso]), ...dj.crew.map((p) => p.glyph), ...(dj.spares || []).flatMap((s) => (s.copies || []).map((c) => c[0]))]
 }
 
+// Board retreat (tools/build_retreat.py, data/retreat.json): every glyph the page names (its "g" fields) and the basket
+const RT_F = path.join(ROOT, 'data/retreat.json')
+if (fs.existsSync(RT_F)) {
+  const gs = []
+  const walk = (v) => { if (Array.isArray(v)) v.forEach(walk); else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) k === 'g' && typeof x === 'string' ? gs.push(x) : walk(x) }
+  walk(JSON.parse(fs.readFileSync(RT_F, 'utf8')))
+  groups['p-retreat'] = [...always, 'kratip', ...gs]
+}
+
 fs.mkdirSync(OUT, { recursive: true })
 for (const f of fs.readdirSync(OUT)) fs.unlinkSync(path.join(OUT, f))
 const core = minify(fs.readFileSync(path.join(SRC, 'core.js'), 'utf8'))

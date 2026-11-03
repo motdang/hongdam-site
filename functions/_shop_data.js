@@ -2638,6 +2638,10 @@ export const CARDS = {
   "act": "link",
   "en": "Lanna (northern Thai) honeymoon"
  },
+ "retreat": {
+  "act": "link",
+  "en": "Board retreat, five nights"
+ },
  "voice": {
   "act": "buy",
   "en": "Thai voice recording",
