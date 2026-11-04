@@ -1,0 +1,316 @@
+{
+ "id": "sec-mail",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Fake emails can carry your domain's name in the From line. SPF, DKIM and DMARC are the three records a receiving mail server uses to tell your mail from a fake.",
+  "th": "อีเมลปลอมอาจใช้ชื่อโดเมนของคุณในช่อง From เซิร์ฟเวอร์อีเมลฝั่งผู้รับใช้ระเบียน SPF, DKIM และ DMARC แยกอีเมลของคุณออกจากอีเมลปลอม",
+  "my": "အတုအီးမေးလ်များသည် From လိုင်းတွင် သင့်ဒိုမိန်းအမည်ကို သုံးနိုင်သည်။ လက်ခံသော မေးလ်ဆာဗာက သင့်မေးလ်ကို အတုမှ ခွဲခြားရန် SPF၊ DKIM နှင့် DMARC ဟူသော မှတ်တမ်းသုံးမျိုးကို သုံးသည်။",
+  "zh": "假邮件可以在发件人栏冒用您的域名。收件方的邮件服务器靠 SPF、DKIM 和 DMARC 这三条记录，分辨哪些是您的邮件、哪些是假的。",
+  "de": "Gefälschte E-Mails können den Namen Ihrer Domain im Absenderfeld tragen. Mit den drei Einträgen SPF, DKIM und DMARC unterscheidet ein empfangender Mailserver Ihre Post von einer Fälschung."
+ },
+ "n": {
+  "de": "Gefälschte E-Mails in Ihrem Namen stoppen"
+ },
+ "l": {
+  "de": "SPF, DKIM und DMARC Ihrer Domain gelesen, mit den Korrekturen."
+ },
+ "glyphs": [
+  "envelope",
+  "lock",
+  "scan"
+ ],
+ "steps": [
+  {
+   "db": "scan",
+   "t": {
+    "en": "We read your domain's SPF, DKIM and DMARC records.",
+    "th": "เราอ่านระเบียน SPF, DKIM และ DMARC ของโดเมนคุณ",
+    "my": "သင့်ဒိုမိန်း၏ SPF၊ DKIM နှင့် DMARC မှတ်တမ်းများကို ကျွန်ုပ်တို့ ဖတ်သည်။",
+    "zh": "我们读取您域名的 SPF、DKIM 和 DMARC 记录。",
+    "de": "Wir lesen die SPF-, DKIM- und DMARC-Einträge Ihrer Domain."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you send the domain name",
+    "th": "หลังคุณส่งชื่อโดเมน",
+    "my": "ဒိုမိန်းအမည် ပို့ပြီးနောက်",
+    "zh": "收到域名后",
+    "de": "Nach Eingang des Domainnamens"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "We tell you whether strangers can send mail as your domain.",
+    "th": "เราบอกคุณว่าคนอื่นส่งอีเมลในชื่อโดเมนของคุณได้หรือไม่",
+    "my": "သင့်ဒိုမိန်းအမည်ဖြင့် မသိသူများ မေးလ်ပို့နိုင်မပို့နိုင်ကို ကျွန်ုပ်တို့ ပြောပြသည်။",
+    "zh": "我们告诉您，陌生人能否以您的域名发送邮件。",
+    "de": "Wir sagen Ihnen, ob Fremde Post im Namen Ihrer Domain versenden können."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the records are read",
+    "th": "หลังอ่านระเบียนเสร็จ",
+    "my": "မှတ်တမ်းများ ဖတ်ပြီးနောက်",
+    "zh": "读完记录后",
+    "de": "Nach dem Lesen der Einträge"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get the exact records to fix them.",
+    "th": "คุณได้รับระเบียนที่ต้องแก้อย่างตรงจุด",
+    "my": "ပြင်ရန် လိုအပ်သော မှတ်တမ်းများကို အတိအကျ သင်ရရှိသည်။",
+    "zh": "您拿到用来修正的确切记录。",
+    "de": "Sie erhalten die genauen Einträge zur Korrektur."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the answer",
+    "th": "พร้อมคำตอบ",
+    "my": "အဖြေနှင့်အတူ",
+    "zh": "随结果一起",
+    "de": "Mit der Antwort"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "With the monthly option, we read your domain's DMARC reports and say what changed.",
+    "th": "ถ้าเลือกแบบรายเดือน เราอ่านรายงาน DMARC ของโดเมนคุณ และบอกสิ่งที่เปลี่ยน",
+    "my": "လစဉ်ရွေးချယ်မှုဖြင့် သင့်ဒိုမိန်း၏ DMARC အစီရင်ခံစာများကို ကျွန်ုပ်တို့ ဖတ်ပြီး ဘာပြောင်းသွားသည်ကို ပြောပြသည်။",
+    "zh": "选月度项目时，我们读取您域名的 DMARC 报告，并说明有什么变化。",
+    "de": "Bei der Monatsoption lesen wir die DMARC-Berichte Ihrer Domain und sagen, was sich geändert hat."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Monatlich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google asks all senders to Gmail accounts to use SPF or DKIM. Senders of more than 5,000 messages a day to Gmail need SPF, DKIM and DMARC. The rules began on February 1, 2024.",
+    "th": "Google กำหนดให้ผู้ส่งถึงบัญชี Gmail ใช้ SPF หรือ DKIM และผู้ส่งเกิน 5,000 ฉบับต่อวันถึง Gmail ต้องใช้ SPF, DKIM และ DMARC กฎนี้เริ่มใช้เมื่อ 1 กุมภาพันธ์ 2024",
+    "my": "Google က Gmail အကောင့်များသို့ ပို့သူအားလုံးကို SPF သို့မဟုတ် DKIM သုံးရန် လိုအပ်သည်။ တစ်ရက်လျှင် မက်ဆေ့ချ် 5,000 ထက်ပိုပြီး Gmail သို့ ပို့သူများသည် SPF၊ DKIM နှင့် DMARC သုံးရမည်။ ဤစည်းကမ်းများသည် 2024 ခုနှစ် ဖေဖော်ဝါရီ 1 ရက်မှ စတင်သည်။",
+    "zh": "Google 要求所有发往 Gmail 账户的发件人使用 SPF 或 DKIM。每天向 Gmail 发信超过 5,000 封的发件人，须使用 SPF、DKIM 和 DMARC。这些规定自 2024 年 2 月 1 日起实施。",
+    "de": "Google verlangt von allen Absendern an Gmail-Konten SPF oder DKIM. Wer täglich mehr als 5,000 Nachrichten an Gmail sendet, braucht SPF, DKIM und DMARC. Die Regeln gelten seit dem 1. Februar 2024."
+   },
+   "src": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "t": {
+    "en": "Bulk senders to Gmail also keep the spam rate in Postmaster Tools below 0.30% and support one-click unsubscribe in marketing mail.",
+    "th": "ผู้ส่งจำนวนมากถึง Gmail ต้องคุมอัตราสแปมใน Postmaster Tools ให้ต่ำกว่า 0.30% และอีเมลการตลาดต้องรองรับการยกเลิกรับด้วยคลิกเดียว",
+    "my": "Gmail သို့ အမြောက်အမြား ပို့သူများသည် Postmaster Tools ရှိ စပမ်းနှုန်းကို 0.30% အောက်တွင် ထားရပြီး ဈေးကွက်ရှာဖွေရေးမေးလ်တွင် တစ်ချက်နှိပ်ဖြင့် စာရင်းမှထွက်ခွင့် ပံ့ပိုးရမည်။",
+    "zh": "向 Gmail 大量发信的发件人，还须把 Postmaster Tools 里的垃圾邮件率控制在 0.30% 以下，营销邮件要支持一键退订。",
+    "de": "Wer in grossen Mengen an Gmail sendet, hält zudem die Spam-Rate in den Postmaster Tools unter 0.30% und bietet in Werbemails das Abmelden mit einem Klick an."
+   },
+   "src": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "t": {
+    "en": "Outlook.com's rules for domains sending more than 5,000 emails a day need SPF and DKIM to pass and a DMARC record of at least p=none. Since May 5, 2025, mail that does not meet them goes to the Junk folder.",
+    "th": "กฎของ Outlook.com สำหรับโดเมนที่ส่งเกิน 5,000 ฉบับต่อวัน กำหนดให้ SPF และ DKIM ผ่าน และมีระเบียน DMARC อย่างน้อย p=none ตั้งแต่ 5 พฤษภาคม 2025 อีเมลที่ไม่ตรงตามกฎจะไปที่โฟลเดอร์ Junk",
+    "my": "Outlook.com ၏ စည်းကမ်းအရ တစ်ရက်လျှင် အီးမေးလ် 5,000 ထက်ပိုပို့သော ဒိုမိန်းများသည် SPF နှင့် DKIM ကို အောင်မြင်စေပြီး DMARC မှတ်တမ်း အနည်းဆုံး p=none ရှိရမည်။ 2025 ခုနှစ် မေလ 5 ရက်မှစ၍ စည်းကမ်းမကိုက်သော မေးလ်များသည် Junk ဖိုလ်ဒါသို့ သွားသည်။",
+    "zh": "Outlook.com 对每天发信超过 5,000 封的域名要求：SPF 和 DKIM 通过，并有至少 p=none 的 DMARC 记录。自 2025 年 5 月 5 日起，不合规的邮件进入垃圾邮件文件夹（Junk）。",
+    "de": "Die Regeln von Outlook.com für Domains mit mehr als 5,000 E-Mails am Tag verlangen bestandenes SPF und DKIM sowie einen DMARC-Eintrag mit mindestens p=none. Seit dem 5. Mai 2025 landet Post, die sie nicht erfüllt, im Junk-Ordner."
+   },
+   "src": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlooks-new-requirements-for-high%E2%80%91volume-senders/4399730"
+  },
+  {
+   "t": {
+    "en": "Google's DMARC page lists three policies. none delivers the message and logs it in a daily report. quarantine sends it to spam. reject turns it away.",
+    "th": "หน้า DMARC ของ Google ระบุนโยบายสามแบบ none ส่งอีเมลถึงผู้รับและบันทึกในรายงานรายวัน quarantine ส่งเข้าสแปม reject ตีอีเมลกลับ",
+    "my": "Google ၏ DMARC စာမျက်နှာတွင် မူဝါဒ သုံးမျိုး ဖော်ပြသည်။ none က မေးလ်ကို ပို့ပေးပြီး နေ့စဉ်အစီရင်ခံစာတွင် မှတ်တမ်းတင်သည်။ quarantine က စပမ်းသို့ ပို့သည်။ reject က ပြန်ပယ်သည်။",
+    "zh": "Google 的 DMARC 页面列出三种策略：none 照常投递并记入每日报告；quarantine 放进垃圾邮件；reject 退回。",
+    "de": "Auf der DMARC-Seite von Google stehen drei Richtlinien: none stellt die Nachricht zu und protokolliert sie im Tagesbericht, quarantine legt sie in den Spam-Ordner, reject weist sie zurück."
+   },
+   "src": "https://knowledge.workspace.google.com/admin/security/set-up-dmarc"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork seller's Google Workspace set-up with DNS, SPF, DKIM and DMARC (3 days)",
+    "th": "ผู้ขายบน Fastwork ตั้งค่า Google Workspace พร้อม DNS, SPF, DKIM และ DMARC (3 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ Google Workspace တပ်ဆင်ခြင်း၊ DNS၊ SPF၊ DKIM နှင့် DMARC ပါ (3 ရက်)",
+    "zh": "Fastwork 上一位卖家的 Google Workspace 设置，含 DNS、SPF、DKIM 和 DMARC（3 天）",
+    "de": "Einrichtung von Google Workspace mit DNS, SPF, DKIM und DMARC durch eine Verkäuferperson auf Fastwork (3 Tage)"
+   },
+   "p": {
+    "en": "฿3,450",
+    "th": "฿3,450",
+    "my": "฿3,450",
+    "zh": "฿3,450",
+    "de": "฿3,450"
+   },
+   "src": "https://fastwork.co/user/prathan/it-solution-and-support-64204351"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller's email troubleshooting package: delivery failures, DNS, SPF, DKIM and DMARC (7 days)",
+    "th": "ผู้ขายบน Fastwork แพ็กเกจแก้ปัญหาอีเมล: ส่งไม่เข้า DNS, SPF, DKIM และ DMARC (7 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ အီးမေးလ်ပြဿနာ ဖြေရှင်းပက်ကေ့ဂျ်၊ ပို့မရခြင်း၊ DNS၊ SPF၊ DKIM နှင့် DMARC (7 ရက်)",
+    "zh": "Fastwork 上一位卖家的邮件故障处理套餐：投递失败、DNS、SPF、DKIM 和 DMARC（7 天）",
+    "de": "Paket zur Fehlerbehebung bei E-Mail einer Verkäuferperson auf Fastwork: Zustellprobleme, DNS, SPF, DKIM und DMARC (7 Tage)"
+   },
+   "p": {
+    "en": "฿1,500",
+    "th": "฿1,500",
+    "my": "฿1,500",
+    "zh": "฿1,500",
+    "de": "฿1,500"
+   },
+   "src": "https://fastwork.co/user/thaizone/it-solution-and-support-14670477"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a DMARC record do?",
+    "th": "ระเบียน DMARC ทำหน้าที่อะไร",
+    "my": "DMARC မှတ်တမ်းက ဘာလုပ်ပေးသလဲ။",
+    "zh": "DMARC 记录有什么作用？",
+    "de": "Was bewirkt ein DMARC-Eintrag?"
+   },
+   "a": {
+    "en": "A DMARC record is a TXT record in a domain's DNS. It tells receiving servers what to do with mail from the domain that fails SPF or DKIM checks, and where to send reports.",
+    "th": "ระเบียน DMARC เป็นระเบียนแบบ TXT ใน DNS ของโดเมน บอกเซิร์ฟเวอร์ผู้รับว่าจะทำอย่างไรกับอีเมลจากโดเมนที่ไม่ผ่านการตรวจ SPF หรือ DKIM และให้ส่งรายงานไปที่ไหน",
+    "my": "DMARC မှတ်တမ်းသည် ဒိုမိန်း၏ DNS ရှိ TXT မှတ်တမ်းတစ်ခု ဖြစ်သည်။ SPF သို့မဟုတ် DKIM စစ်ဆေးမှုမအောင်သော ဒိုမိန်းမေးလ်များကို လက်ခံသည့်ဆာဗာများ ဘာလုပ်ရမည်၊ အစီရင်ခံစာများ ဘယ်ကိုပို့ရမည်ကို ပြောပြသည်။",
+    "zh": "DMARC 记录是域名 DNS 里的一条 TXT 记录。它告诉收件服务器，该域名下通不过 SPF 或 DKIM 检查的邮件怎么处理，以及报告发到哪里。",
+    "de": "Ein DMARC-Eintrag ist ein TXT-Eintrag im DNS einer Domain. Er sagt empfangenden Servern, was mit Post der Domain geschehen soll, die die SPF- oder DKIM-Prüfung nicht besteht, und wohin Berichte gehen."
+   },
+   "src": "https://knowledge.workspace.google.com/admin/security/set-up-dmarc"
+  },
+  {
+   "q": {
+    "en": "Where do DMARC reports go?",
+    "th": "รายงาน DMARC ส่งไปที่ไหน",
+    "my": "DMARC အစီရင်ခံစာများ ဘယ်ကိုသွားသလဲ။",
+    "zh": "DMARC 报告发到哪里？",
+    "de": "Wohin gehen DMARC-Berichte?"
+   },
+   "a": {
+    "en": "To the address in the rua tag, written with mailto:. Google's page names a group or a dedicated mailbox, and says report volume can be high.",
+    "th": "ไปที่อีเมลในแท็ก rua เขียนโดยมี mailto: นำหน้า หน้าของ Google ระบุกลุ่มอีเมลหรือกล่องจดหมายเฉพาะ และระบุว่ารายงานอาจมีจำนวนมาก",
+    "my": "rua တက်ဂ်ထဲရှိ လိပ်စာသို့ သွားပြီး mailto: နှင့် ရေးရသည်။ Google ၏ စာမျက်နှာတွင် အုပ်စုတစ်ခု သို့မဟုတ် သီးသန့်မေးလ်ဘောက်စ်ကို ဖော်ပြပြီး အစီရင်ခံစာအရေအတွက် များနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "发到 rua 标签里的地址，写法带 mailto:。Google 的页面提到用一个群组或专用邮箱，并说报告数量可能很大。",
+    "de": "An die Adresse im Tag rua, geschrieben mit mailto:. Die Seite von Google nennt eine Gruppe oder ein eigenes Postfach und sagt, die Berichtsmenge könne hoch sein."
+   },
+   "src": "https://knowledge.workspace.google.com/admin/security/set-up-dmarc"
+  },
+  {
+   "q": {
+    "en": "Does a domain need DMARC to send to Gmail?",
+    "th": "โดเมนต้องมี DMARC เพื่อส่งถึง Gmail ไหม",
+    "my": "Gmail သို့ ပို့ရန် ဒိုမိန်းတွင် DMARC လိုပါသလား။",
+    "zh": "域名发信到 Gmail 必须有 DMARC 吗？",
+    "de": "Braucht eine Domain DMARC, um an Gmail zu senden?"
+   },
+   "a": {
+    "en": "For senders of more than 5,000 messages a day to Gmail, yes: SPF, DKIM and DMARC. For other senders, Google asks for SPF or DKIM.",
+    "th": "สำหรับผู้ส่งเกิน 5,000 ฉบับต่อวันถึง Gmail ต้องมี ได้แก่ SPF, DKIM และ DMARC ส่วนผู้ส่งรายอื่น Google กำหนดให้ใช้ SPF หรือ DKIM",
+    "my": "တစ်ရက်လျှင် မက်ဆေ့ချ် 5,000 ထက်ပိုပြီး Gmail သို့ ပို့သူများအတွက် လိုသည်၊ SPF၊ DKIM နှင့် DMARC။ အခြားပို့သူများကို Google က SPF သို့မဟုတ် DKIM ကို တောင်းသည်။",
+    "zh": "每天向 Gmail 发信超过 5,000 封的发件人需要：SPF、DKIM 和 DMARC。其他发件人，Google 要求 SPF 或 DKIM。",
+    "de": "Für Absender von mehr als 5,000 Nachrichten am Tag an Gmail ja: SPF, DKIM und DMARC. Von anderen Absendern verlangt Google SPF oder DKIM."
+   },
+   "src": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "q": {
+    "en": "What happens to mail from a domain that fails Outlook's rules?",
+    "th": "อีเมลจากโดเมนที่ไม่ตรงตามกฎของ Outlook จะเป็นอย่างไร",
+    "my": "Outlook ၏ စည်းကမ်းမကိုက်သော ဒိုမိန်းမှ မေးလ်များ ဘာဖြစ်သလဲ။",
+    "zh": "不符合 Outlook 规定的域名，邮件会怎样？",
+    "de": "Was geschieht mit Post einer Domain, die Outlooks Regeln nicht erfüllt?"
+   },
+   "a": {
+    "en": "Since May 5, 2025, Microsoft routes it to the Junk folder. Its post says rejection is planned for a later date, with the error 550 5.7.515.",
+    "th": "ตั้งแต่ 5 พฤษภาคม 2025 Microsoft ส่งอีเมลนั้นไปโฟลเดอร์ Junk โพสต์ของ Microsoft ระบุว่าวางแผนจะปฏิเสธอีเมลในวันหลัง โดยแจ้งข้อผิดพลาด 550 5.7.515",
+    "my": "2025 ခုနှစ် မေလ 5 ရက်မှစ၍ Microsoft က ထိုမေးလ်ကို Junk ဖိုလ်ဒါသို့ ပို့သည်။ Microsoft ၏ ပို့စ်တွင် နောက်ရက်တစ်ရက်၌ ပယ်ချရန် စီစဉ်ထားပြီး အမှားကုဒ် 550 5.7.515 ပြမည်ဟု ဆိုသည်။",
+    "zh": "自 2025 年 5 月 5 日起，Microsoft 把这类邮件送进垃圾邮件文件夹（Junk）。它的文章说，计划在以后某天直接拒收，错误代码为 550 5.7.515。",
+    "de": "Seit dem 5. Mai 2025 leitet Microsoft sie in den Junk-Ordner. Laut dem Beitrag ist die Abweisung für einen späteren Zeitpunkt geplant, mit dem Fehler 550 5.7.515."
+   },
+   "src": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlooks-new-requirements-for-high%E2%80%91volume-senders/4399730"
+  },
+  {
+   "q": {
+    "en": "How long do SPF and DKIM run before DMARC is turned on?",
+    "th": "SPF และ DKIM ทำงานนานเท่าไรก่อนเปิด DMARC",
+    "my": "DMARC မဖွင့်မီ SPF နှင့် DKIM ကို ဘယ်လောက်ကြာ အလုပ်လုပ်စေရသလဲ။",
+    "zh": "开启 DMARC 前，SPF 和 DKIM 要先运行多久？",
+    "de": "Wie lange laufen SPF und DKIM, bevor DMARC eingeschaltet wird?"
+   },
+   "a": {
+    "en": "Google's page says to turn on SPF or DKIM first and allow 48 hours for them to take effect before enabling DMARC.",
+    "th": "หน้าของ Google ระบุให้เปิด SPF หรือ DKIM ก่อน และรอ 48 ชั่วโมงให้มีผล แล้วจึงเปิด DMARC",
+    "my": "DMARC မဖွင့်မီ SPF သို့မဟုတ် DKIM ကို အရင်ဖွင့်ပြီး အကျိုးသက်ရောက်ရန် 48 နာရီ စောင့်ရသည်ဟု Google ၏ စာမျက်နှာတွင် ဆိုသည်။",
+    "zh": "Google 的页面写明：先开启 SPF 或 DKIM，等 48 小时生效后，再启用 DMARC。",
+    "de": "Laut der Seite von Google schaltet man zuerst SPF oder DKIM ein und wartet 48 Stunden, bis sie wirken, bevor man DMARC aktiviert."
+   },
+   "src": "https://knowledge.workspace.google.com/admin/security/set-up-dmarc"
+  }
+ ],
+ "related": [
+  "web-mail",
+  "sec-hacked",
+  "web-care",
+  "mirror",
+  "redteam",
+  "web-move"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google: email sender requirements",
+    "th": "Google: ข้อกำหนดสำหรับผู้ส่งอีเมล",
+    "my": "Google: အီးမေးလ်ပို့သူများအတွက် လိုအပ်ချက်များ",
+    "zh": "Google：发件人要求",
+    "de": "Google: Anforderungen an Absender"
+   },
+   "href": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "t": {
+    "en": "Microsoft: Outlook's requirements for high-volume senders",
+    "th": "Microsoft: ข้อกำหนดของ Outlook สำหรับผู้ส่งปริมาณมาก",
+    "my": "Microsoft: Outlook ၏ အမြောက်အမြားပို့သူများအတွက် လိုအပ်ချက်များ",
+    "zh": "Microsoft：Outlook 对大批量发件人的要求",
+    "de": "Microsoft: Outlooks Anforderungen an Absender mit hohem Volumen"
+   },
+   "href": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlooks-new-requirements-for-high%E2%80%91volume-senders/4399730"
+  }
+ ]
+}

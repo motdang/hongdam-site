@@ -1,0 +1,336 @@
+{
+ "id": "map-archive",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A charity with projects in many places can show them on one map. A tap on a place opens its page, with a link to give or to get in touch.",
+  "th": "องค์กรการกุศลที่มีโครงการหลายแห่งใส่ไว้บนแผนที่เดียวได้ แตะที่สถานที่แล้วเปิดหน้าของสถานที่นั้น พร้อมลิงก์บริจาคหรือติดต่อ",
+  "my": "နေရာများစွာတွင် စီမံကိန်းများရှိသော ပရဟိတအဖွဲ့သည် ၎င်းတို့ကို မြေပုံတစ်ခုတည်းပေါ်တွင် ပြနိုင်သည်။ နေရာတစ်ခုကို နှိပ်လျှင် ထိုနေရာ၏ စာမျက်နှာပွင့်ပြီး လှူရန် သို့မဟုတ် ဆက်သွယ်ရန် လင့်ခ်ပါသည်။",
+  "zh": "在多个地方有项目的慈善机构，可以把项目放在同一张地图上。点一下某个地点，就会打开它的页面，页面上有捐款或联系链接。",
+  "de": "Eine wohltätige Organisation mit Projekten an vielen Orten kann sie auf einer Karte zeigen. Ein Tipp auf einen Ort öffnet dessen Seite, mit einem Link zum Spenden oder zur Kontaktaufnahme."
+ },
+ "n": {
+  "de": "Karte Ihrer Projekte oder Orte"
+ },
+ "l": {
+  "de": "Eine Karte; ein Tipp auf einen Ort öffnet seine Seite."
+ },
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "We put your projects, schools, villages or trees on one map.",
+    "th": "วางโครงการ โรงเรียน หมู่บ้าน หรือต้นไม้ของคุณบนแผนที่เดียว",
+    "my": "သင့်စီမံကိန်းများ၊ ကျောင်းများ၊ ရွာများ သို့မဟုတ် သစ်ပင်များကို မြေပုံတစ်ခုတည်းပေါ်တွင် ထားပေးသည်။",
+    "zh": "把您的项目、学校、村庄或树木放在同一张地图上。",
+    "de": "Wir legen Ihre Projekte, Schulen, Dörfer oder Bäume auf eine Karte."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "A tap on a place opens a page for that place.",
+    "th": "แตะที่สถานที่แล้วเปิดหน้าของสถานที่นั้น",
+    "my": "နေရာတစ်ခုကို နှိပ်လျှင် ထိုနေရာအတွက် စာမျက်နှာတစ်ခု ပွင့်လာသည်။",
+    "zh": "点一下某个地点，就打开该地点的页面。",
+    "de": "Ein Tipp auf einen Ort öffnet eine Seite für diesen Ort."
+   },
+   "who": {
+    "en": "The map",
+    "th": "แผนที่",
+    "my": "မြေပုံ",
+    "zh": "地图",
+    "de": "Die Karte"
+   },
+   "time": {
+    "en": "Once it is live",
+    "th": "เมื่อเปิดใช้งาน",
+    "my": "တင်ပြီးသောအခါ",
+    "zh": "上线之后",
+    "de": "Sobald sie online ist"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "The page has a link to give or to get in touch.",
+    "th": "หน้านั้นมีลิงก์บริจาคหรือติดต่อ",
+    "my": "စာမျက်နှာတွင် လှူရန် သို့မဟုတ် ဆက်သွယ်ရန် လင့်ခ်ပါသည်။",
+    "zh": "页面上有捐款或联系的链接。",
+    "de": "Die Seite enthält einen Link zum Spenden oder zur Kontaktaufnahme."
+   },
+   "who": {
+    "en": "The page",
+    "th": "หน้าเว็บ",
+    "my": "စာမျက်နှာ",
+    "zh": "页面",
+    "de": "Die Seite"
+   },
+   "time": {
+    "en": "Once it is live",
+    "th": "เมื่อเปิดใช้งาน",
+    "my": "တင်ပြီးသောအခါ",
+    "zh": "上线之后",
+    "de": "Sobald sie online ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A Google My Maps map starts with one layer and can have up to 10. Layers group features, for example one layer for restaurants and another for coffee shops.",
+    "th": "แผนที่ใน Google My Maps เริ่มด้วยหนึ่งเลเยอร์ และมีได้สูงสุด 10 เลเยอร์ เลเยอร์ใช้จัดกลุ่มรายการบนแผนที่ เช่น เลเยอร์หนึ่งสำหรับร้านอาหาร อีกเลเยอร์สำหรับร้านกาแฟ",
+    "my": "Google My Maps မြေပုံတစ်ခုသည် အလွှာတစ်ခုဖြင့် စတင်ပြီး အလွှာ 10 ခုအထိ ထားနိုင်သည်။ အလွှာများဖြင့် မြေပုံပေါ်ရှိ အရာများကို အုပ်စုဖွဲ့နိုင်သည်။ ဥပမာ စားသောက်ဆိုင်များအတွက် အလွှာတစ်ခု၊ ကော်ဖီဆိုင်များအတွက် အခြားအလွှာတစ်ခု။",
+    "zh": "Google 我的地图（My Maps）的地图从 1 个图层开始，最多可有 10 个图层。图层用来给地图上的内容分组，例如一层放餐馆，另一层放咖啡店。",
+    "de": "Eine Karte in Google My Maps beginnt mit einer Ebene und kann bis zu 10 haben. Ebenen gruppieren Elemente, zum Beispiel eine Ebene für Restaurants und eine für Cafés."
+   },
+   "src": "https://support.google.com/mymaps/answer/3024933?hl=en&co=GENIE.Platform%3DDesktop"
+  },
+  {
+   "t": {
+    "en": "To embed a Google My Maps map on a website, the map must be public. The help page lists two sharing options: link sharing, which gives the URL to specific people, and public, which lets anyone find the map.",
+    "th": "การฝังแผนที่ Google My Maps ลงในเว็บไซต์ต้องตั้งแผนที่เป็นสาธารณะ หน้าช่วยเหลือระบุตัวเลือกการแชร์สองแบบ คือแชร์ผ่านลิงก์ ซึ่งให้ URL กับคนที่เลือก และสาธารณะ ซึ่งให้ทุกคนค้นเจอแผนที่ได้",
+    "my": "Google My Maps မြေပုံကို ဝက်ဘ်ဆိုက်တွင် ထည့်သွင်းရန် မြေပုံကို အများသုံးအဖြစ် သတ်မှတ်ထားရမည်။ အကူအညီစာမျက်နှာတွင် မျှဝေနည်း နှစ်မျိုး ဖော်ပြသည် - လင့်ခ်ဖြင့် မျှဝေခြင်း (သတ်မှတ်ထားသူများအား URL ပေးခြင်း) နှင့် အများသုံး (မည်သူမဆို မြေပုံကို ရှာတွေ့နိုင်ခြင်း)။",
+    "zh": "要把 Google 我的地图的地图嵌入网站，该地图必须设为公开。帮助页面列出两种分享方式：链接分享，把网址给指定的人；公开，让任何人都能找到这张地图。",
+    "de": "Um eine Karte aus Google My Maps in eine Website einzubetten, muss sie öffentlich sein. Die Hilfeseite nennt zwei Freigabearten: Freigabe per Link, bei der man die URL bestimmten Personen gibt, und öffentlich, wobei jeder die Karte finden kann."
+   },
+   "src": "https://support.google.com/mymaps/answer/3109452?hl=en&co=GENIE.Platform%3DDesktop"
+  },
+  {
+   "t": {
+    "en": "uMap is free, open-source software for maps on OpenStreetMap layers, and the maps can be put on your own website. A community maintains it, and OpenStreetMap groups in Germany, Switzerland and France host copies.",
+    "th": "uMap เป็นซอฟต์แวร์เปิดเผยซอร์สโค้ดที่ใช้ฟรี สำหรับทำแผนที่บนเลเยอร์ของ OpenStreetMap และนำแผนที่ไปใส่ในเว็บไซต์ของคุณได้ ชุมชนผู้ร่วมพัฒนาดูแลโครงการ และกลุ่ม OpenStreetMap ในเยอรมนี สวิตเซอร์แลนด์ และฝรั่งเศสให้บริการสำเนา",
+    "my": "uMap သည် OpenStreetMap အလွှာများပေါ်တွင် မြေပုံပြုလုပ်ရန် အခမဲ့ ပွင့်လင်းရင်းမြစ်ဆော့ဖ်ဝဲဖြစ်ပြီး မြေပုံများကို သင့်ကိုယ်ပိုင်ဝက်ဘ်ဆိုက်တွင် ထည့်နိုင်သည်။ အသိုင်းအဝိုင်းတစ်ခုက ထိန်းသိမ်းထားပြီး ဂျာမနီ၊ ဆွစ်ဇလန်နှင့် ပြင်သစ်ရှိ OpenStreetMap အဖွဲ့များက မိတ္တူများကို လက်ခံပေးထားသည်။",
+    "zh": "uMap 是免费的开源软件，用 OpenStreetMap 图层制作地图，做好的地图可以放到您自己的网站上。它由社区维护，德国、瑞士和法国的 OpenStreetMap 小组各托管一个副本。",
+    "de": "uMap ist freie Open-Source-Software für Karten auf OpenStreetMap-Ebenen, und die Karten lassen sich auf die eigene Website setzen. Eine Gemeinschaft pflegt sie, und OpenStreetMap-Gruppen in Deutschland, der Schweiz und Frankreich betreiben Kopien."
+   },
+   "src": "https://umap-project.org/"
+  },
+  {
+   "t": {
+    "en": "OpenStreetMap's tile policy allows its map tiles on a website when the OpenStreetMap credit is shown clearly on the map. It limits heavy use, may block access without notice and offers best-effort availability.",
+    "th": "นโยบายแผนที่ย่อยของ OpenStreetMap อนุญาตให้ใช้ภาพแผนที่บนเว็บไซต์เมื่อแสดงเครดิต OpenStreetMap ให้เห็นชัดบนแผนที่ จำกัดการใช้งานหนัก อาจบล็อกการเข้าถึงโดยไม่แจ้งล่วงหน้า และให้บริการตามกำลังที่ทำได้",
+    "my": "OpenStreetMap ၏ မြေပုံအပိုင်းများ မူဝါဒတွင် မြေပုံပေါ်၌ OpenStreetMap ၏ အသိအမှတ်ပြုချက်ကို ရှင်းရှင်းလင်းလင်း ပြထားလျှင် ဝက်ဘ်ဆိုက်တစ်ခုတွင် အသုံးပြုခွင့်ရှိသည်။ အသုံးလွန်ကဲမှုကို ကန့်သတ်ထားပြီး အသိပေးခြင်းမရှိဘဲ ပိတ်ပင်နိုင်သည်။ ဝန်ဆောင်မှုသည် ကြိုးစားရလေ့ရှိသော အဆင့်သာဖြစ်သည်။",
+    "zh": "OpenStreetMap 的图块政策允许在网站上使用其地图图块，条件是在地图上清楚标出 OpenStreetMap 的署名。它限制大量使用，可能不经通知就封锁访问，服务只是尽力而为。",
+    "de": "Die Kachel-Richtlinie von OpenStreetMap erlaubt die Nutzung ihrer Kartenkacheln auf einer Website, wenn der OpenStreetMap-Hinweis deutlich auf der Karte steht. Sie begrenzt starke Nutzung, kann den Zugriff ohne Vorankündigung sperren und bietet nur bestmögliche Verfügbarkeit."
+   },
+   "src": "https://operations.osmfoundation.org/policies/tiles/"
+  },
+  {
+   "t": {
+    "en": "Google says Maps Embed API usage is available at no charge. It needs an API key and has no per-second or per-day limits.",
+    "th": "Google ระบุว่าการใช้ Maps Embed API ไม่มีค่าใช้จ่าย ต้องใช้คีย์ API และไม่มีขีดจำกัดต่อวินาทีหรือต่อวัน",
+    "my": "Google က Maps Embed API ကို အခကြေးငွေမပေးဘဲ သုံးနိုင်သည်ဟု ဆိုသည်။ API key လိုအပ်ပြီး တစ်စက္ကန့်လျှင် သို့မဟုတ် တစ်ရက်လျှင် ကန့်သတ်ချက် မရှိပါ။",
+    "zh": "Google 说使用 Maps Embed API 不收费，需要 API 密钥，没有每秒或每天的次数限制。",
+    "de": "Google schreibt, die Nutzung der Maps Embed API sei kostenlos. Sie braucht einen API-Schlüssel und hat keine Grenzen pro Sekunde oder pro Tag."
+   },
+   "src": "https://developers.google.com/maps/documentation/embed/usage-and-billing"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Felt, an online map maker: monthly plans, billed yearly",
+    "th": "Felt เครื่องมือทำแผนที่ออนไลน์: แผนรายเดือน เมื่อจ่ายรายปี",
+    "my": "Felt အွန်လိုင်းမြေပုံပြုလုပ်ရေးကိရိယာ - လစဉ်အစီအစဉ်များ၊ တစ်နှစ်စာ ပေးချေလျှင်",
+    "zh": "Felt（在线地图工具）：按月计的套餐，按年付费",
+    "de": "Felt, ein Online-Kartenwerkzeug: Monatspläne, jährlich abgerechnet"
+   },
+   "p": {
+    "en": "US$0 Free (10k map views a month) · US$199 Team · US$599 Business. US 501(c)(3) nonprofits get 30% off.",
+    "th": "US$0 แบบฟรี (ดูแผนที่ 10k ครั้งต่อเดือน) · US$199 Team · US$599 Business องค์กรไม่แสวงกำไร 501(c)(3) ของสหรัฐฯ ลด 30%",
+    "my": "US$0 အခမဲ့ (တစ်လလျှင် မြေပုံကြည့်ရှုမှု 10k) · US$199 Team · US$599 Business။ အမေရိကန် 501(c)(3) အဖွဲ့အစည်းများသည် 30% လျှော့ဈေးရသည်။",
+    "zh": "US$0 免费版（每月 1 万次地图浏览）· US$199 Team · US$599 Business。美国 501(c)(3) 非营利组织享 7 折。",
+    "de": "US$0 Free (10k Kartenaufrufe im Monat) · US$199 Team · US$599 Business. US-Organisationen nach 501(c)(3) erhalten 30% Rabatt."
+   },
+   "src": "https://felt.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Mapbox web maps, by the number of map loads",
+    "th": "แผนที่เว็บของ Mapbox คิดตามจำนวนการโหลดแผนที่",
+    "my": "Mapbox ဝက်ဘ်မြေပုံများ၊ မြေပုံတင်ခြင်းအကြိမ်ရေအလိုက်",
+    "zh": "Mapbox 网页地图，按地图加载次数计",
+    "de": "Mapbox-Webkarten, nach Zahl der Kartenladevorgänge"
+   },
+   "p": {
+    "en": "Free up to 50,000 loads a month; US$5.00 per 1,000 loads from 50,001 to 100,000",
+    "th": "ฟรีถึง 50,000 ครั้งต่อเดือน; US$5.00 ต่อ 1,000 ครั้ง ตั้งแต่ 50,001 ถึง 100,000",
+    "my": "တစ်လလျှင် 50,000 အထိ အခမဲ့၊ 50,001 မှ 100,000 အထိ 1,000 လျှင် US$5.00",
+    "zh": "每月 50,000 次以内免费；第 50,001 至 100,000 次，每 1,000 次 US$5.00",
+    "de": "Bis 50,000 Aufrufe im Monat gratis; US$5.00 je 1,000 Aufrufe von 50,001 bis 100,000"
+   },
+   "src": "https://www.mapbox.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Google Maps Embed API, a map on your website",
+    "th": "Google Maps Embed API แผนที่บนเว็บไซต์ของคุณ",
+    "my": "Google Maps Embed API - သင့်ဝက်ဘ်ဆိုက်ပေါ်ရှိ မြေပုံ",
+    "zh": "Google Maps Embed API，网站上的地图",
+    "de": "Google Maps Embed API, eine Karte auf Ihrer Website"
+   },
+   "p": {
+    "en": "No charge",
+    "th": "ไม่มีค่าใช้จ่าย",
+    "my": "အခမဲ့",
+    "zh": "不收费",
+    "de": "Kostenlos"
+   },
+   "src": "https://developers.google.com/maps/documentation/embed/usage-and-billing"
+  },
+  {
+   "t": {
+    "en": "uMap, maps on OpenStreetMap layers",
+    "th": "uMap แผนที่บนเลเยอร์ของ OpenStreetMap",
+    "my": "uMap - OpenStreetMap အလွှာများပေါ်ရှိ မြေပုံများ",
+    "zh": "uMap，基于 OpenStreetMap 图层的地图",
+    "de": "uMap, Karten auf OpenStreetMap-Ebenen"
+   },
+   "p": {
+    "en": "Free",
+    "th": "ฟรี",
+    "my": "အခမဲ့",
+    "zh": "免费",
+    "de": "Kostenlos"
+   },
+   "src": "https://umap-project.org/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Is there a free tool to make a map of places?",
+    "th": "มีเครื่องมือฟรีสำหรับทำแผนที่สถานที่ไหม",
+    "my": "နေရာများ၏ မြေပုံပြုလုပ်ရန် အခမဲ့ကိရိယာ ရှိပါသလား။",
+    "zh": "有没有免费的工具来制作地点地图？",
+    "de": "Gibt es ein kostenloses Werkzeug für eine Karte von Orten?"
+   },
+   "a": {
+    "en": "uMap is free, open-source software. It builds maps on OpenStreetMap layers and lets you put them on your own website.",
+    "th": "uMap เป็นซอฟต์แวร์เปิดเผยซอร์สโค้ดที่ใช้ฟรี สร้างแผนที่บนเลเยอร์ของ OpenStreetMap และนำแผนที่ไปใส่ในเว็บไซต์ของคุณได้",
+    "my": "uMap သည် အခမဲ့ ပွင့်လင်းရင်းမြစ်ဆော့ဖ်ဝဲဖြစ်သည်။ OpenStreetMap အလွှာများပေါ်တွင် မြေပုံများ ပြုလုပ်ပေးပြီး သင့်ကိုယ်ပိုင်ဝက်ဘ်ဆိုက်တွင် ထည့်နိုင်သည်။",
+    "zh": "uMap 是免费的开源软件，用 OpenStreetMap 图层制作地图，并可把地图放到您自己的网站上。",
+    "de": "uMap ist freie Open-Source-Software. Sie erstellt Karten auf OpenStreetMap-Ebenen und lässt sie sich auf die eigene Website setzen."
+   },
+   "src": "https://umap-project.org/"
+  },
+  {
+   "q": {
+    "en": "Can a Google map go on my website for free?",
+    "th": "ใส่แผนที่ Google ในเว็บไซต์ของฉันได้ฟรีไหม",
+    "my": "Google မြေပုံကို ကျွန်ုပ်၏ ဝက်ဘ်ဆိုက်တွင် အခမဲ့ ထည့်နိုင်သလား။",
+    "zh": "Google 地图可以免费放到我的网站上吗？",
+    "de": "Kann eine Google-Karte kostenlos auf meine Website?"
+   },
+   "a": {
+    "en": "Google says Maps Embed API usage is available at no charge. It needs an API key, and it has no per-second or per-day limits.",
+    "th": "Google ระบุว่าการใช้ Maps Embed API ไม่มีค่าใช้จ่าย ต้องใช้คีย์ API และไม่มีขีดจำกัดต่อวินาทีหรือต่อวัน",
+    "my": "Google က Maps Embed API ကို အခကြေးငွေမပေးဘဲ သုံးနိုင်သည်ဟု ဆိုသည်။ API key လိုအပ်ပြီး တစ်စက္ကန့်လျှင် သို့မဟုတ် တစ်ရက်လျှင် ကန့်သတ်ချက် မရှိပါ။",
+    "zh": "Google 说使用 Maps Embed API 不收费，需要 API 密钥，没有每秒或每天的次数限制。",
+    "de": "Google schreibt, die Nutzung der Maps Embed API sei kostenlos. Sie braucht einen API-Schlüssel und hat keine Grenzen pro Sekunde oder pro Tag."
+   },
+   "src": "https://developers.google.com/maps/documentation/embed/usage-and-billing"
+  },
+  {
+   "q": {
+    "en": "How many layers can a Google My Maps map have?",
+    "th": "แผนที่ Google My Maps มีเลเยอร์ได้กี่ชั้น",
+    "my": "Google My Maps မြေပုံတစ်ခုတွင် အလွှာ ဘယ်နှစ်ခု ထားနိုင်သလဲ။",
+    "zh": "Google 我的地图的一张地图最多有几个图层？",
+    "de": "Wie viele Ebenen kann eine Karte in Google My Maps haben?"
+   },
+   "a": {
+    "en": "A map is created with one layer, and it can have up to 10. Google's help page gives the example of one layer for restaurants and another for coffee shops.",
+    "th": "แผนที่เริ่มด้วยหนึ่งเลเยอร์ และมีได้สูงสุด 10 เลเยอร์ หน้าช่วยเหลือของ Google ยกตัวอย่างเลเยอร์หนึ่งสำหรับร้านอาหาร และอีกเลเยอร์สำหรับร้านกาแฟ",
+    "my": "မြေပုံကို အလွှာတစ်ခုဖြင့် ဖန်တီးပြီး အလွှာ 10 ခုအထိ ထားနိုင်သည်။ Google ၏ အကူအညီစာမျက်နှာတွင် စားသောက်ဆိုင်များအတွက် အလွှာတစ်ခုနှင့် ကော်ဖီဆိုင်များအတွက် အခြားအလွှာတစ်ခုကို ဥပမာပေးထားသည်။",
+    "zh": "一张地图创建时有 1 个图层，最多可有 10 个。Google 的帮助页面举的例子是一层放餐馆，另一层放咖啡店。",
+    "de": "Eine Karte entsteht mit einer Ebene und kann bis zu 10 haben. Die Hilfeseite von Google nennt als Beispiel eine Ebene für Restaurants und eine für Cafés."
+   },
+   "src": "https://support.google.com/mymaps/answer/3024933?hl=en&co=GENIE.Platform%3DDesktop"
+  },
+  {
+   "q": {
+    "en": "Can the places be exported from Google My Maps?",
+    "th": "ส่งออกข้อมูลสถานที่จาก Google My Maps ได้ไหม",
+    "my": "Google My Maps မှ နေရာများကို ထုတ်ယူနိုင်သလား။",
+    "zh": "地点可以从 Google 我的地图导出吗？",
+    "de": "Lassen sich die Orte aus Google My Maps exportieren?"
+   },
+   "a": {
+    "en": "Yes. The help page says a map exports to KML or KMZ. Individual layers export to CSV, but whole maps do not.",
+    "th": "ได้ หน้าช่วยเหลือระบุว่าส่งออกแผนที่เป็นไฟล์ KML หรือ KMZ ได้ ส่วนเลเยอร์แต่ละชั้นส่งออกเป็น CSV ได้ แต่แผนที่ทั้งแผนที่ส่งออกเป็น CSV ไม่ได้",
+    "my": "ရနိုင်သည်။ အကူအညီစာမျက်နှာတွင် မြေပုံကို KML သို့မဟုတ် KMZ အဖြစ် ထုတ်ယူနိုင်သည်ဟု ဆိုသည်။ အလွှာတစ်ခုချင်းကို CSV အဖြစ် ထုတ်နိုင်သော်လည်း မြေပုံတစ်ခုလုံးကို မထုတ်နိုင်ပါ။",
+    "zh": "可以。帮助页面说，一张地图可导出为 KML 或 KMZ；单个图层可导出为 CSV，整张地图不能导出为 CSV。",
+    "de": "Ja. Die Hilfeseite sagt, eine Karte lasse sich als KML oder KMZ exportieren. Einzelne Ebenen gehen als CSV, ganze Karten nicht."
+   },
+   "src": "https://support.google.com/mymaps/answer/3109452?hl=en&co=GENIE.Platform%3DDesktop"
+  },
+  {
+   "q": {
+    "en": "What does Felt cost, and is there a nonprofit discount?",
+    "th": "Felt ราคาเท่าไร และมีส่วนลดสำหรับองค์กรไม่แสวงกำไรไหม",
+    "my": "Felt ဈေးဘယ်လောက်လဲ၊ ပရဟိတအဖွဲ့များအတွက် လျှော့ဈေးရှိသလား။",
+    "zh": "Felt 多少钱？非营利组织有折扣吗？",
+    "de": "Was kostet Felt, und gibt es einen Rabatt für Non-Profits?"
+   },
+   "a": {
+    "en": "Felt's free plan lets you make and annotate maps, share them publicly and get 10k map views a month. Team is US$199 and Business US$599 a month, billed yearly. US 501(c)(3) nonprofits get 30% off paid plans.",
+    "th": "แผนฟรีของ Felt ให้สร้างและใส่คำอธิบายบนแผนที่ แชร์แบบสาธารณะ และมีผู้ดูแผนที่ได้ 10k ครั้งต่อเดือน แผน Team ราคา US$199 และ Business US$599 ต่อเดือน เมื่อจ่ายรายปี องค์กรไม่แสวงกำไร 501(c)(3) ของสหรัฐฯ ลด 30% สำหรับแผนที่ต้องจ่ายเงิน",
+    "my": "Felt ၏ အခမဲ့အစီအစဉ်ဖြင့် မြေပုံများကို ဖန်တီးခြင်း၊ မှတ်ချက်ရေးခြင်း၊ အများသုံးအဖြစ် မျှဝေခြင်း ပြုလုပ်နိုင်ပြီး တစ်လလျှင် မြေပုံကြည့်ရှုမှု 10k ရသည်။ Team သည် တစ်လ US$199၊ Business သည် US$599 ဖြစ်ပြီး တစ်နှစ်စာ ပေးချေရသည်။ အမေရိကန် 501(c)(3) အဖွဲ့အစည်းများသည် ငွေပေးအစီအစဉ်များတွင် 30% လျှော့ဈေးရသည်။",
+    "zh": "Felt 的免费版可以制作并标注地图、公开分享，每月有 1 万次地图浏览。Team 每月 US$199，Business 每月 US$599，按年付费。美国 501(c)(3) 非营利组织购买付费套餐享 7 折。",
+    "de": "Felts Gratis-Tarif erlaubt es, Karten zu erstellen und zu beschriften, sie öffentlich zu teilen und 10k Kartenaufrufe im Monat zu erhalten. Team kostet US$199 und Business US$599 im Monat, jährlich abgerechnet. US-Organisationen nach 501(c)(3) erhalten 30% Rabatt auf bezahlte Tarife."
+   },
+   "src": "https://felt.com/pricing"
+  }
+ ],
+ "related": [
+  "giving",
+  "checkin",
+  "event-kit",
+  "drawn",
+  "help-page",
+  "grants"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google My Maps help: share, download or print your map",
+    "th": "ความช่วยเหลือ Google My Maps: แชร์ ดาวน์โหลด หรือพิมพ์แผนที่",
+    "my": "Google My Maps အကူအညီ - သင့်မြေပုံကို မျှဝေရန်၊ ဒေါင်းလုဒ်လုပ်ရန် သို့မဟုတ် ပရင့်ထုတ်ရန်",
+    "zh": "Google 我的地图帮助：分享、下载或打印地图",
+    "de": "Google-My-Maps-Hilfe: Karte teilen, herunterladen oder drucken"
+   },
+   "href": "https://support.google.com/mymaps/answer/3109452?hl=en&co=GENIE.Platform%3DDesktop"
+  },
+  {
+   "t": {
+    "en": "uMap: make maps on OpenStreetMap layers",
+    "th": "uMap: ทำแผนที่บนเลเยอร์ของ OpenStreetMap",
+    "my": "uMap - OpenStreetMap အလွှာများပေါ်တွင် မြေပုံပြုလုပ်ခြင်း",
+    "zh": "uMap：用 OpenStreetMap 图层制作地图",
+    "de": "uMap: Karten auf OpenStreetMap-Ebenen erstellen"
+   },
+   "href": "https://umap-project.org/"
+  }
+ ],
+ "glyphs": [
+  "pin",
+  "compass",
+  "earth"
+ ]
+}

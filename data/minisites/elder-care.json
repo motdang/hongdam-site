@@ -1,0 +1,829 @@
+{
+ "id": "elder-care",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Finding a care home or a caregiver takes calls, visits and comparing. Someone else shortlists, visits and compares the homes, or finds a caregiver, interviews with you and hires one.",
+  "th": "การหาบ้านพักผู้สูงอายุหรือผู้ดูแลต้องโทรสอบถาม ไปดูสถานที่ และเทียบกัน บริการนี้คัด ไปดู และเทียบบ้านพักให้ หรือหาผู้ดูแล สัมภาษณ์ร่วมกับคุณ แล้วจ้างให้",
+  "my": "စောင့်ရှောက်ရေးအိမ် သို့မဟုတ် စောင့်ရှောက်သူ ရှာရာတွင် ဖုန်းဆက်ရခြင်း၊ သွားကြည့်ရခြင်းနှင့် နှိုင်းယှဉ်ရခြင်းတို့ ပါဝင်သည်။ ဤဝန်ဆောင်မှုက အိမ်များကို ရွေး၊ သွားကြည့်၊ နှိုင်းယှဉ်ပေးသည်၊ သို့မဟုတ် စောင့်ရှောက်သူကို ရှာပြီး သင်နှင့်အတူ အင်တာဗျူးကာ ငှားပေးသည်။",
+  "zh": "找养老院或护工，要打电话、实地看、再比较。这项服务替您筛选、实地看并比较养老院，或者找到护工，与您一起面试后聘用。",
+  "de": "Ein Pflegeheim oder eine Pflegekraft zu finden heisst telefonieren, besichtigen und vergleichen. Dieser Service wählt Heime vor, besichtigt und vergleicht sie, oder findet eine Pflegekraft, führt das Gespräch mit Ihnen und stellt sie ein."
+ },
+ "n": {
+  "de": "Pflegeheim oder Pflegekraft"
+ },
+ "l": {
+  "de": "Pflegeheime vorausgewählt, besichtigt und verglichen, oder eine Pflegekraft eingestellt."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "Care homes are shortlisted",
+    "th": "คัดบ้านพักผู้สูงอายุ",
+    "my": "စောင့်ရှောက်ရေးအိမ်များကို ရွေးချယ်ခြင်း",
+    "zh": "筛选养老院",
+    "de": "Pflegeheime werden vorausgewählt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before any visit",
+    "th": "ก่อนไปดูสถานที่",
+    "my": "မည်သည့်နေရာကိုမျှ မသွားကြည့်မီ",
+    "zh": "实地看之前",
+    "de": "Vor der ersten Besichtigung"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "The shortlisted homes are visited",
+    "th": "ไปดูบ้านพักที่คัดไว้",
+    "my": "ရွေးထားသော အိမ်များကို သွားကြည့်ခြင်း",
+    "zh": "实地走访入围的养老院",
+    "de": "Die vorausgewählten Heime werden besichtigt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the shortlist",
+    "th": "หลังคัดรายชื่อ",
+    "my": "စာရင်းရွေးပြီးနောက်",
+    "zh": "筛选之后",
+    "de": "Nach der Vorauswahl"
+   }
+  },
+  {
+   "db": "abacus",
+   "t": {
+    "en": "The homes are compared",
+    "th": "เทียบบ้านพักที่ไปดูมา",
+    "my": "အိမ်များကို နှိုင်းယှဉ်ခြင်း",
+    "zh": "比较各家养老院",
+    "de": "Die Heime werden verglichen"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the visits",
+    "th": "หลังไปดูสถานที่",
+    "my": "သွားကြည့်ပြီးနောက်",
+    "zh": "走访之后",
+    "de": "Nach den Besichtigungen"
+   }
+  },
+  {
+   "db": "parcel",
+   "t": {
+    "en": "The move is arranged",
+    "th": "จัดการย้ายเข้า",
+    "my": "ပြောင်းရွှေ့မှုကို စီစဉ်ခြင်း",
+    "zh": "安排入住搬家",
+    "de": "Der Umzug wird organisiert"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After a home is chosen",
+    "th": "หลังเลือกบ้านพักได้แล้ว",
+    "my": "အိမ်ကို ရွေးပြီးနောက်",
+    "zh": "选定养老院之后",
+    "de": "Nachdem ein Heim gewählt ist"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "Or a caregiver is found, interviewed with you and hired",
+    "th": "หรือหาผู้ดูแล สัมภาษณ์ร่วมกับคุณ แล้วจ้าง",
+    "my": "သို့မဟုတ် စောင့်ရှောက်သူကို ရှာပြီး သင်နှင့်အတူ အင်တာဗျူးကာ ငှားခြင်း",
+    "zh": "或者找到护工，与您一起面试后聘用",
+    "de": "Oder eine Pflegekraft wird gefunden, zusammen mit Ihnen befragt und eingestellt"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "If you choose a caregiver instead of a home",
+    "th": "ถ้าเลือกผู้ดูแลแทนบ้านพัก",
+    "my": "အိမ်အစား စောင့်ရှောက်သူကို ရွေးလျှင်",
+    "zh": "如果您选择护工而不是养老院",
+    "de": "Wenn Sie statt eines Heims eine Pflegekraft wählen"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The care is paid to the home, and a caregiver's wage by the family",
+    "th": "ค่าดูแลจ่ายให้บ้านพัก ค่าจ้างผู้ดูแลครอบครัวจ่ายเอง",
+    "my": "စောင့်ရှောက်ခကို အိမ်သို့ ပေးရပြီး စောင့်ရှောက်သူ၏ လုပ်ခကို မိသားစုက ပေးသည်",
+    "zh": "护理费付给养老院，护工工资由家人支付",
+    "de": "Die Pflege wird dem Heim bezahlt, der Lohn einer Pflegekraft von der Familie"
+   },
+   "who": {
+    "en": "You or your family",
+    "th": "คุณหรือครอบครัว",
+    "my": "သင် သို့မဟုတ် မိသားစု",
+    "zh": "您或家人",
+    "de": "Sie oder Ihre Familie"
+   },
+   "time": {
+    "en": "Apart from Hongdam's price",
+    "th": "แยกจากราคาของหงส์ดำ",
+    "my": "ဟုန်ဒမ်၏ စျေးနှုန်းနှင့် သီးခြား",
+    "zh": "不含在鸿丹的价格内",
+    "de": "Getrennt vom Preis von Hongdam"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "58",
+   "t": {
+    "en": "Long-term and residential care places in Chiang Mai listed on Mot Dang",
+    "th": "สถานดูแลระยะยาวและบ้านพักผู้สูงอายุในเชียงใหม่ที่มดแดงรวบรวมไว้",
+    "my": "Mot Dang တွင် စာရင်းပြုစုထားသော ချင်းမိုင်ရှိ ရေရှည်စောင့်ရှောက်ရေးနှင့် နေထိုင်စောင့်ရှောက်ရေး နေရာများ",
+    "zh": "Mot Dang 收录的清迈长期照护与养老机构数量",
+    "de": "Einrichtungen für Langzeitpflege und Wohnen in Chiang Mai, die Mot Dang auflistet"
+   },
+   "src": "https://motdang.net/cm/medical/long-care/"
+  },
+  {
+   "n": "1,203",
+   "t": {
+    "en": "Care facilities for older people or people who depend on care, registered with the Department of Health Service Support in October 2026",
+    "th": "สถานดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิงที่จดทะเบียนกับกรมสนับสนุนบริการสุขภาพ เดือนตุลาคม 2569",
+    "my": "2026 အောက်တိုဘာတွင် ကျန်းမာရေးဝန်ဆောင်မှု ပံ့ပိုးရေးဦးစီးဌာနတွင် မှတ်ပုံတင်ထားသော သက်ကြီးရွယ်အို သို့မဟုတ် အားကိုးရသူများ စောင့်ရှောက်ရေးနေရာများ",
+    "zh": "2026年10月在卫生服务支持司（Department of Health Service Support）登记的老年人及需照护者照护机构",
+    "de": "Einrichtungen für ältere oder pflegebedürftige Menschen, im Oktober 2026 beim Department of Health Service Support registriert"
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  },
+  {
+   "n": "฿27,000–130,000",
+   "t": {
+    "en": "A month of care at one Chiang Mai home, on top of the room: shared care 3 to 4 hours a day up to one-to-one around the clock",
+    "th": "ค่าดูแลหนึ่งเดือนที่บ้านพักแห่งหนึ่งในเชียงใหม่ นอกเหนือจากค่าห้อง ตั้งแต่ดูแลร่วมกับผู้อื่น 3 ถึง 4 ชั่วโมงต่อวัน จนถึงตัวต่อตัวตลอด 24 ชั่วโมง",
+    "my": "ချင်းမိုင်ရှိ အိမ်တစ်ခုတွင် အခန်းခအပြင် တစ်လစာ စောင့်ရှောက်ခ - အခြားသူများနှင့် မျှဝေ၍ တစ်နေ့ 3 နာရီမှ 4 နာရီမှ တစ်ဦးချင်း 24 နာရီအထိ",
+    "zh": "清迈一家养老院房费之外一个月的护理费：从每天3至4小时的合住护理到一对一全天候",
+    "de": "Ein Monat Pflege in einem Heim in Chiang Mai, zusätzlich zum Zimmer: von gemeinsamer Betreuung 3 bis 4 Stunden am Tag bis zur Einzelbetreuung rund um die Uhr"
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "n": "2",
+   "t": {
+    "en": "Months paid in advance when a care home contract is signed",
+    "th": "จำนวนเดือนที่ต้องจ่ายล่วงหน้าเมื่อเซ็นสัญญากับบ้านพัก",
+    "my": "စောင့်ရှောက်ရေးအိမ်နှင့် စာချုပ်ချုပ်သည့်အခါ ကြိုတင်ပေးရသော လအရေအတွက်",
+    "zh": "与养老院签合同时预付的月数",
+    "de": "Monate, die beim Vertragsabschluss mit einem Heim im Voraus bezahlt werden"
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What does care cost a month?",
+   "th": "การดูแลเดือนละเท่าไหร่",
+   "my": "တစ်လ စောင့်ရှောက်မှု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+   "zh": "照护一个月要花多少",
+   "de": "Was kostet die Betreuung im Monat?"
+  },
+  "noscript": {
+   "en": "The cost calculator needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณค่าใช้จ่ายต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ကုန်ကျစရိတ်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "费用计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Kostenrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "sliders": [],
+   "choices": [
+    {
+     "id": "where",
+     "n": {
+      "en": "Where",
+      "th": "ที่ไหน",
+      "my": "နေရာ",
+      "zh": "在哪里",
+      "de": "Wo"
+     },
+     "options": [
+      {
+       "id": "home",
+       "n": {
+        "en": "At home, with a caregiver",
+        "th": "ที่บ้าน มีผู้ดูแล",
+        "my": "အိမ်တွင် စောင့်ရှောက်သူနှင့်",
+        "zh": "在家，由护工照顾",
+        "de": "Zu Hause, mit Pflegekraft"
+       }
+      },
+      {
+       "id": "carehome",
+       "n": {
+        "en": "Care home",
+        "th": "บ้านพักผู้สูงอายุ",
+        "my": "စောင့်ရှောက်ရေးအိမ်",
+        "zh": "养老院",
+        "de": "Seniorenheim"
+       }
+      },
+      {
+       "id": "nursing",
+       "n": {
+        "en": "Nursing home, nurses on site",
+        "th": "เนอร์สซิ่งโฮม มีพยาบาลประจำ",
+        "my": "သူနာပြုများ ရှိသော နာစင်းဟုမ်း",
+        "zh": "护理院，有护士驻场",
+        "de": "Pflegeheim, Pflegefachpersonen vor Ort"
+       }
+      }
+     ],
+     "start": "carehome"
+    },
+    {
+     "id": "help",
+     "n": {
+      "en": "How much help",
+      "th": "ต้องการความช่วยเหลือแค่ไหน",
+      "my": "အကူအညီ ဘယ်လောက်လိုသလဲ",
+      "zh": "需要多少帮助",
+      "de": "Wie viel Hilfe"
+     },
+     "options": [
+      {
+       "id": "light",
+       "n": {
+        "en": "Mostly independent",
+        "th": "ช่วยเหลือตัวเองได้เป็นส่วนใหญ่",
+        "my": "အများအားဖြင့် ကိုယ်တိုင်လုပ်နိုင်သည်",
+        "zh": "基本能自理",
+        "de": "Meist selbstständig"
+       }
+      },
+      {
+       "id": "daily",
+       "n": {
+        "en": "Needs daily help",
+        "th": "ต้องมีคนช่วยทุกวัน",
+        "my": "နေ့စဉ် အကူအညီ လိုသည်",
+        "zh": "每天需要帮助",
+        "de": "Braucht täglich Hilfe"
+       }
+      },
+      {
+       "id": "full",
+       "n": {
+        "en": "Bedbound or has dementia",
+        "th": "ติดเตียงหรือสมองเสื่อม",
+        "my": "အိပ်ရာထဲမှ မထနိုင်ခြင်း သို့မဟုတ် မေ့ရောဂါ (dementia) ရှိခြင်း",
+        "zh": "卧床或患有失智症",
+        "de": "Bettlägerig oder mit Demenz"
+       }
+      }
+     ],
+     "start": "daily"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Part-time caregiver at home, 8 hours a day",
+      "th": "ผู้ดูแลที่บ้านบางเวลา 8 ชั่วโมงต่อวัน",
+      "my": "အိမ်တွင် အချိန်ပိုင်း စောင့်ရှောက်သူ၊ တစ်နေ့ 8 နာရီ",
+      "zh": "家中兼职护工，每天8小时",
+      "de": "Pflegekraft zu Hause, Teilzeit, 8 Stunden am Tag"
+     },
+     "range": [
+      12500,
+      19900
+     ],
+     "when": {
+      "where": [
+       "home"
+      ],
+      "help": [
+       "light"
+      ]
+     },
+     "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+    },
+    {
+     "n": {
+      "en": "Caregiver or nurse at home, 16 hours a day to full-time",
+      "th": "ผู้ดูแลหรือพยาบาลที่บ้าน ตั้งแต่ 16 ชั่วโมงต่อวันถึงเต็มเวลา",
+      "my": "အိမ်တွင် စောင့်ရှောက်သူ သို့မဟုတ် သူနာပြု၊ တစ်နေ့ 16 နာရီမှ အချိန်ပြည့်အထိ",
+      "zh": "家中护工或护士，每天16小时至全职",
+      "de": "Pflegekraft oder Pflegefachperson zu Hause, 16 Stunden am Tag bis Vollzeit"
+     },
+     "range": [
+      25000,
+      37500
+     ],
+     "when": {
+      "where": [
+       "home"
+      ],
+      "help": [
+       "daily"
+      ]
+     },
+     "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+    },
+    {
+     "n": {
+      "en": "Full-time nurse, or live-in care from an agency",
+      "th": "พยาบาลเต็มเวลา หรือผู้ดูแลอยู่ประจำจากเอเจนซี่",
+      "my": "အချိန်ပြည့် သူနာပြု သို့မဟုတ် အေဂျင်စီမှ နေထိုင်စောင့်ရှောက်သူ",
+      "zh": "全职护士，或中介派来的24小时住家护工",
+      "de": "Pflegefachperson in Vollzeit oder rund um die Uhr betreuende Kraft einer Agentur"
+     },
+     "range": [
+      37500,
+      105000
+     ],
+     "when": {
+      "where": [
+       "home"
+      ],
+      "help": [
+       "full"
+      ]
+     },
+     "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+    },
+    {
+     "n": {
+      "en": "Standard room with breakfast, Chiang Mai care home",
+      "th": "ห้องมาตรฐานรวมอาหารเช้า บ้านพักผู้สูงอายุเชียงใหม่",
+      "my": "ချင်းမိုင် စောင့်ရှောက်ရေးအိမ်၊ စံအခန်းနှင့် နံနက်စာ",
+      "zh": "清迈养老院标准房，含早餐",
+      "de": "Standardzimmer mit Frühstück, Pflegeheim in Chiang Mai"
+     },
+     "range": [
+      67000,
+      73000
+     ],
+     "when": {
+      "where": [
+       "carehome"
+      ]
+     },
+     "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+    },
+    {
+     "n": {
+      "en": "Care on top of the room, 3 to 8 hours a day",
+      "th": "ค่าดูแลเพิ่มจากค่าห้อง 3 ถึง 8 ชั่วโมงต่อวัน",
+      "my": "အခန်းခအပြင် စောင့်ရှောက်ခ၊ တစ်နေ့ 3 နာရီမှ 8 နာရီ",
+      "zh": "房费之外的护理，每天3至8小时",
+      "de": "Pflege zusätzlich zum Zimmer, 3 bis 8 Stunden am Tag"
+     },
+     "range": [
+      27000,
+      44000
+     ],
+     "when": {
+      "where": [
+       "carehome"
+      ],
+      "help": [
+       "daily"
+      ]
+     },
+     "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+    },
+    {
+     "n": {
+      "en": "Care on top of the room, 16 hours a day to one-to-one around the clock",
+      "th": "ค่าดูแลเพิ่มจากค่าห้อง 16 ชั่วโมงต่อวันถึงตัวต่อตัว 24 ชั่วโมง",
+      "my": "အခန်းခအပြင် စောင့်ရှောက်ခ၊ တစ်နေ့ 16 နာရီမှ တစ်ဦးချင်း 24 နာရီအထိ",
+      "zh": "房费之外的护理，每天16小时至一对一全天候",
+      "de": "Pflege zusätzlich zum Zimmer, 16 Stunden am Tag bis Einzelbetreuung rund um die Uhr"
+     },
+     "range": [
+      88000,
+      130000
+     ],
+     "when": {
+      "where": [
+       "carehome"
+      ],
+      "help": [
+       "full"
+      ]
+     },
+     "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+    },
+    {
+     "n": {
+      "en": "Nursing package at a higher-end residence",
+      "th": "แพ็กเกจพยาบาลที่ที่พักระดับสูง",
+      "my": "အဆင့်မြင့် နေထိုင်ရာတွင် သူနာပြုပါဝင်သော အထုပ်",
+      "zh": "高端住所的护理套餐",
+      "de": "Pflegepaket in einer gehobenen Residenz"
+     },
+     "range": [
+      55000,
+      180000
+     ],
+     "when": {
+      "where": [
+       "nursing"
+      ]
+     },
+     "src": "https://www.chiangraitimes.com/expat-life/thailand-senior-care-costs/"
+    }
+   ],
+   "total": {
+    "en": "A month, all told",
+    "th": "รวมต่อเดือน",
+    "my": "တစ်လစာ စုစုပေါင်း",
+    "zh": "每月合计",
+    "de": "Ein Monat, alles zusammen"
+   },
+   "note": {
+    "en": "The care itself is paid to the home. A caregiver's wage is paid by the family.",
+    "th": "ค่าดูแลจ่ายให้สถานที่โดยตรง ค่าจ้างผู้ดูแลครอบครัวจ่ายเอง",
+    "my": "စောင့်ရှောက်ခကို အိမ်သို့ ပေးရသည်။ စောင့်ရှောက်သူ၏ လုပ်ခကို မိသားစုက ပေးသည်။",
+    "zh": "护理费付给养老院，护工工资由家人支付。",
+    "de": "Die Pflege selbst wird dem Heim bezahlt. Der Lohn einer Pflegekraft wird von der Familie bezahlt."
+   },
+   "oursLine": {
+    "en": "Care homes shortlisted, visited and compared by Hongdam:",
+    "th": "หงส์ดำ คัด ไปดู และเทียบบ้านพักให้:",
+    "my": "ဟုန်ဒမ်က စောင့်ရှောက်ရေးအိမ်များကို ရွေး၊ သွားကြည့်၊ နှိုင်းယှဉ်ပေးသည်:",
+    "zh": "鸿丹筛选、实地看并比较养老院：",
+    "de": "Pflegeheime von Hongdam vorausgewählt, besichtigt und verglichen:"
+   },
+   "oursFor": {
+    "where": {
+     "home": "caregiver-hire",
+     "carehome": "care-placement",
+     "nursing": "care-placement"
+    }
+   },
+   "oursLineFor": {
+    "where": {
+     "home": {
+      "en": "A caregiver found and hired by Hongdam:",
+      "th": "หงส์ดำหาและจ้างผู้ดูแลให้:",
+      "my": "ဟုန်ဒမ်က စောင့်ရှောက်သူကို ရှာပြီး ငှားပေးသည်:",
+      "zh": "鸿丹为您找到并聘请护工：",
+      "de": "Eine Betreuerin, gefunden und angestellt von Hongdam:"
+     }
+    }
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "Care facilities for older people or people who depend on care come under the Health Business Establishments Act 2016, its ministerial regulations and their operating licences. A 2020 ministerial regulation sets premises, safety and service standards.",
+    "th": "สถานดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิงอยู่ภายใต้พระราชบัญญัติสถานประกอบการเพื่อสุขภาพ พ.ศ. 2559 กฎกระทรวงที่เกี่ยวข้อง และใบอนุญาตประกอบกิจการ กฎกระทรวงปี พ.ศ. 2563 กำหนดมาตรฐานด้านสถานที่ ความปลอดภัย และบริการ",
+    "my": "သက်ကြီးရွယ်အို သို့မဟုတ် အားကိုးရသူများ စောင့်ရှောက်ရေးနေရာများသည် 2016 ကျန်းမာရေးလုပ်ငန်းဌာန ဥပဒေ၊ ၎င်း၏ ဝန်ကြီးဌာန စည်းမျဉ်းများနှင့် လုပ်ငန်းလိုင်စင်များ အောက်တွင် ရှိသည်။ 2020 ခုနှစ် ဝန်ကြီးဌာန စည်းမျဉ်းတစ်ခုက အဆောက်အအုံ၊ ဘေးကင်းရေးနှင့် ဝန်ဆောင်မှု စံနှုန်းများကို သတ်မှတ်ထားသည်။",
+    "zh": "老年人及需照护者的照护机构适用2016年《健康营业场所法》、其部长条例及经营许可证。2020年的一项部长条例规定了场地、安全和服务标准。",
+    "de": "Einrichtungen für ältere oder pflegebedürftige Menschen unterstehen dem Health Business Establishments Act 2016, den zugehörigen Ministerialverordnungen und ihren Betriebsbewilligungen. Eine Ministerialverordnung von 2020 legt Standards für Räume, Sicherheit und Leistungen fest."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  },
+  {
+   "t": {
+    "en": "1,203 care facilities were registered with the Department of Health Service Support in October 2026. The government announced on 11 October 2026 that the Ministry of Public Health directs on-site inspections of the registered facilities within two months. The checks cover premises, safety systems and qualified staff.",
+    "th": "เดือนตุลาคม 2569 มีสถานดูแล 1,203 แห่งจดทะเบียนกับกรมสนับสนุนบริการสุขภาพ รัฐบาลประกาศเมื่อ 11 ตุลาคม 2569 ให้กระทรวงสาธารณสุขลงตรวจหน้างานในสถานดูแลที่จดทะเบียนภายในสองเดือน โดยตรวจอาคารสถานที่ ระบบความปลอดภัย และบุคลากรที่มีคุณสมบัติ",
+    "my": "2026 အောက်တိုဘာတွင် စောင့်ရှောက်ရေးနေရာ 1,203 ခုကို ကျန်းမာရေးဝန်ဆောင်မှု ပံ့ပိုးရေးဦးစီးဌာနတွင် မှတ်ပုံတင်ထားသည်။ 2026 အောက်တိုဘာ 11 ရက်တွင် ပြည်သူ့ကျန်းမာရေးဝန်ကြီးဌာနက မှတ်ပုံတင်ထားသော နေရာများကို နှစ်လအတွင်း နေရာတွင်ပင် စစ်ဆေးရန် ညွှန်ကြားကြောင်း အစိုးရက ကြေညာခဲ့သည်။ စစ်ဆေးမှုတွင် အဆောက်အအုံ၊ ဘေးကင်းရေးစနစ်များနှင့် အရည်အချင်းပြည့်မီသော ဝန်ထမ်းများ ပါဝင်သည်။",
+    "zh": "2026年10月，有1,203家照护机构在卫生服务支持司登记。政府于2026年10月11日宣布，公共卫生部要求在两个月内对已登记的机构进行现场检查，内容包括场地、安全系统和合格的工作人员。",
+    "de": "Im Oktober 2026 waren 1,203 Einrichtungen beim Department of Health Service Support registriert. Die Regierung gab am 11. Oktober 2026 bekannt, dass das Gesundheitsministerium Kontrollen vor Ort in den registrierten Einrichtungen innerhalb von zwei Monaten anordnet. Geprüft werden Räume, Sicherheitssysteme und qualifiziertes Personal."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  },
+  {
+   "t": {
+    "en": "Thai law sets no minimum number of staff per resident for care facilities for older people.",
+    "th": "กฎหมายไทยไม่กำหนดอัตราขั้นต่ำของเจ้าหน้าที่ต่อผู้พักอาศัยสำหรับสถานดูแลผู้สูงอายุ",
+    "my": "ထိုင်းဥပဒေက သက်ကြီးရွယ်အို စောင့်ရှောက်ရေးနေရာများအတွက် နေထိုင်သူတစ်ဦးလျှင် ဝန်ထမ်းအနည်းဆုံး အရေအတွက်ကို မသတ်မှတ်ထားပါ။",
+    "zh": "泰国法律没有规定养老机构每位住户的最低员工配比。",
+    "de": "Das thailändische Recht legt für Einrichtungen für ältere Menschen keinen Mindestpersonalschlüssel pro Bewohner fest."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "Thailand separates day care, residential care and nursing-home services into different categories.",
+    "th": "ไทยแบ่งบริการเป็นศูนย์ดูแลตอนกลางวัน การดูแลแบบพักอาศัย และเนอร์สซิ่งโฮม เป็นคนละประเภท",
+    "my": "ထိုင်းတွင် နေ့လယ်စောင့်ရှောက်မှု၊ နေထိုင်စောင့်ရှောက်မှုနှင့် နာစင်းဟုမ်း ဝန်ဆောင်မှုတို့ကို အမျိုးအစား သီးခြားခွဲထားသည်။",
+    "zh": "泰国把日间照护、住宿照护和护理院服务分为不同类别。",
+    "de": "Thailand unterscheidet Tagesbetreuung, Wohnpflege und Pflegeheim-Leistungen als getrennte Kategorien."
+   },
+   "src": "https://www.chiangraitimes.com/expat-life/thailand-senior-care-costs/"
+  },
+  {
+   "t": {
+    "en": "A care home usually asks one month as a deposit, and some ask a fixed ฿20,000. On signing a contract, two months are paid in advance.",
+    "th": "บ้านพักมักเรียกมัดจำหนึ่งเดือน บางแห่งเรียกคงที่ ฿20,000 เมื่อเซ็นสัญญาต้องจ่ายล่วงหน้าสองเดือน",
+    "my": "စောင့်ရှောက်ရေးအိမ်များက များသောအားဖြင့် စရန်ငွေ တစ်လစာ တောင်းပြီး တချို့က သတ်မှတ်ပမာဏ ฿20,000 တောင်းသည်။ စာချုပ်ချုပ်သည့်အခါ နှစ်လစာကို ကြိုတင်ပေးရသည်။",
+    "zh": "养老院通常收一个月押金，有些收固定的฿20,000。签合同时预付两个月费用。",
+    "de": "Ein Heim verlangt meist einen Monat als Kaution, manche einen festen Betrag von ฿20,000. Beim Vertragsabschluss werden zwei Monate im Voraus bezahlt."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Chiang Mai care home, standard room with breakfast (Ban Sabai Village)",
+    "th": "บ้านพักผู้สูงอายุเชียงใหม่ ห้องมาตรฐาน รวมอาหารเช้า (Ban Sabai Village)",
+    "my": "ချင်းမိုင် စောင့်ရှောက်ရေးအိမ်၊ စံအခန်းနှင့် နံနက်စာ (Ban Sabai Village)",
+    "zh": "清迈养老院，标准房含早餐（Ban Sabai Village）",
+    "de": "Pflegeheim in Chiang Mai, Standardzimmer mit Frühstück (Ban Sabai Village)"
+   },
+   "p": {
+    "en": "฿67,000–73,000 a month",
+    "th": "เดือนละ ฿67,000–73,000",
+    "my": "တစ်လ ฿67,000–73,000",
+    "zh": "每月 ฿67,000–73,000",
+    "de": "฿67,000–73,000 im Monat"
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "Care at the same home, added to the room",
+    "th": "ค่าดูแลที่บ้านพักเดียวกัน เพิ่มจากค่าห้อง",
+    "my": "တူညီသော အိမ်တွင် အခန်းခအပြင် ထပ်ပေါင်းသော စောင့်ရှောက်ခ",
+    "zh": "同一家养老院在房费之外加收的护理费",
+    "de": "Pflege im selben Heim, zusätzlich zum Zimmer"
+   },
+   "p": {
+    "en": "฿27,000 (shared, 3 to 4 hours a day), ฿44,000 (up to 8 hours), ฿88,000 (up to 16 hours), ฿130,000 (one-to-one, 24 hours) a month",
+    "th": "เดือนละ ฿27,000 (ดูแลร่วมกับผู้อื่น 3 ถึง 4 ชั่วโมงต่อวัน) ฿44,000 (ไม่เกิน 8 ชั่วโมง) ฿88,000 (ไม่เกิน 16 ชั่วโมง) ฿130,000 (ตัวต่อตัว 24 ชั่วโมง)",
+    "my": "တစ်လ ฿27,000 (မျှဝေ၍ တစ်နေ့ 3 နာရီမှ 4 နာရီ)၊ ฿44,000 (8 နာရီအထိ)၊ ฿88,000 (16 နာရီအထိ)၊ ฿130,000 (တစ်ဦးချင်း 24 နာရီ)",
+    "zh": "每月 ฿27,000（合住护理，每天3至4小时）、฿44,000（最多8小时）、฿88,000（最多16小时）、฿130,000（一对一，24小时）",
+    "de": "฿27,000 (gemeinsame Betreuung, 3 bis 4 Stunden am Tag), ฿44,000 (bis 8 Stunden), ฿88,000 (bis 16 Stunden), ฿130,000 (Einzelbetreuung, 24 Stunden) im Monat"
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "Care homes across Thailand, by tier",
+    "th": "บ้านพักผู้สูงอายุทั่วไทย แยกตามระดับ",
+    "my": "ထိုင်းတစ်နိုင်ငံလုံးရှိ စောင့်ရှောက်ရေးအိမ်များ၊ အဆင့်အလိုက်",
+    "zh": "泰国各地养老院，按档次",
+    "de": "Pflegeheime in ganz Thailand, nach Stufe"
+   },
+   "p": {
+    "en": "฿12,000–18,000 basic shared room; ฿22,000–60,000 mid-range; ฿55,000–180,000 or more higher-end and nursing packages, a month",
+    "th": "เดือนละ ฿12,000–18,000 ห้องรวมแบบพื้นฐาน; ฿22,000–60,000 ระดับกลาง; ฿55,000–180,000 ขึ้นไป ระดับสูงและแพ็กเกจพยาบาล",
+    "my": "တစ်လ ฿12,000–18,000 အခြေခံ အခန်းမျှဝေ၊ ฿22,000–60,000 အလယ်အလတ်၊ ฿55,000–180,000 နှင့်အထက် အဆင့်မြင့်နှင့် သူနာပြုပါသော အထုပ်များ",
+    "zh": "每月 ฿12,000–18,000 基础合住房；฿22,000–60,000 中档；฿55,000–180,000 及以上为高端和护理套餐",
+    "de": "฿12,000–18,000 einfaches Mehrbettzimmer; ฿22,000–60,000 mittlere Stufe; ฿55,000–180,000 und mehr gehobene Häuser und Pflegepakete, im Monat"
+   },
+   "src": "https://www.chiangraitimes.com/expat-life/thailand-senior-care-costs/"
+  },
+  {
+   "t": {
+    "en": "Care Resort Chiang Mai, independent and assisted living",
+    "th": "แคร์ รีสอร์ท เชียงใหม่ แบบอยู่เองได้และแบบมีผู้ช่วยดูแล",
+    "my": "Care Resort Chiang Mai၊ ကိုယ်တိုင်နေထိုင်ခြင်းနှင့် အကူအညီဖြင့် နေထိုင်ခြင်း",
+    "zh": "清迈 Care Resort，自理居住与协助居住",
+    "de": "Care Resort Chiang Mai, selbstständiges und betreutes Wohnen"
+   },
+   "p": {
+    "en": "฿40,000–65,000 independent; ฿65,000–100,000 assisted, a month",
+    "th": "เดือนละ ฿40,000–65,000 แบบอยู่เองได้; ฿65,000–100,000 แบบมีผู้ช่วยดูแล",
+    "my": "တစ်လ ฿40,000–65,000 ကိုယ်တိုင်နေထိုင်၊ ฿65,000–100,000 အကူအညီဖြင့်နေထိုင်",
+    "zh": "每月 ฿40,000–65,000 自理居住；฿65,000–100,000 协助居住",
+    "de": "฿40,000–65,000 selbstständig; ฿65,000–100,000 betreut, im Monat"
+   },
+   "src": "https://www.thailandwithmonchai.com/blogs/navigating-senior-care-in-thailand-a-comprehensive-guide-for-expat-retirees"
+  },
+  {
+   "t": {
+    "en": "Agency caregiver (ElderThai)",
+    "th": "ผู้ดูแลจากเอเจนซี่ (ElderThai)",
+    "my": "အေဂျင်စီမှ စောင့်ရှောက်သူ (ElderThai)",
+    "zh": "中介护工（ElderThai）",
+    "de": "Pflegekraft einer Agentur (ElderThai)"
+   },
+   "p": {
+    "en": "฿1,200 for 4 hours, ฿2,200 for 8 hours, ฿3,000 for 24 hours; a helper hired privately about ฿30,000 a month",
+    "th": "฿1,200 ต่อ 4 ชั่วโมง ฿2,200 ต่อ 8 ชั่วโมง ฿3,000 ต่อ 24 ชั่วโมง; จ้างผู้ช่วยเองประมาณเดือนละ ฿30,000",
+    "my": "4 နာရီ ฿1,200၊ 8 နာရီ ฿2,200၊ 24 နာရီ ฿3,000၊ ကိုယ်တိုင် ငှားသော လက်ထောက်မှာ တစ်လ ฿30,000 ခန့်",
+    "zh": "4小时 ฿1,200，8小时 ฿2,200，24小时 ฿3,000；自己雇帮手约每月 ฿30,000",
+    "de": "฿1,200 für 4 Stunden, ฿2,200 für 8 Stunden, ฿3,000 für 24 Stunden; eine privat angestellte Hilfe etwa ฿30,000 im Monat"
+   },
+   "src": "https://www.elderthai.com"
+  },
+  {
+   "t": {
+    "en": "Nurse or carer at home, by hours a day",
+    "th": "พยาบาลหรือผู้ดูแลที่บ้าน ตามจำนวนชั่วโมงต่อวัน",
+    "my": "အိမ်တွင် သူနာပြု သို့မဟုတ် စောင့်ရှောက်သူ၊ တစ်နေ့ နာရီအလိုက်",
+    "zh": "家中护士或护工，按每天小时数",
+    "de": "Pflegefachperson oder Pflegekraft zu Hause, nach Stunden am Tag"
+   },
+   "p": {
+    "en": "฿12,500 for 8 hours, ฿25,000 for 16 hours, ฿37,500 full-time, a month",
+    "th": "เดือนละ ฿12,500 สำหรับ 8 ชั่วโมง ฿25,000 สำหรับ 16 ชั่วโมง ฿37,500 เต็มเวลา",
+    "my": "တစ်လ 8 နာရီ ฿12,500၊ 16 နာရီ ฿25,000၊ အချိန်ပြည့် ฿37,500",
+    "zh": "每月 8小时 ฿12,500，16小时 ฿25,000，全职 ฿37,500",
+    "de": "฿12,500 für 8 Stunden, ฿25,000 für 16 Stunden, ฿37,500 in Vollzeit, im Monat"
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a care home in Chiang Mai cost?",
+    "th": "บ้านพักคนชราในเชียงใหม่ราคาเท่าไหร่",
+    "my": "ချင်းမိုင်ရှိ စောင့်ရှောက်ရေးအိမ် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "清迈的养老院一个月要多少钱",
+    "de": "Was kostet ein Pflegeheim in Chiang Mai?"
+   },
+   "a": {
+    "en": "At Ban Sabai Village in Chiang Mai, a standard room with breakfast is ฿67,000 to ฿73,000 a month. Care is billed separately: ฿27,000 for shared care 3 to 4 hours a day, ฿130,000 for one-to-one care around the clock.",
+    "th": "ที่ Ban Sabai Village ในเชียงใหม่ ห้องมาตรฐานรวมอาหารเช้าเดือนละ ฿67,000 ถึง ฿73,000 ค่าดูแลคิดแยก ฿27,000 สำหรับดูแลร่วมกับผู้อื่น 3 ถึง 4 ชั่วโมงต่อวัน และ ฿130,000 สำหรับดูแลตัวต่อตัวตลอด 24 ชั่วโมง",
+    "my": "ချင်းမိုင်ရှိ Ban Sabai Village တွင် စံအခန်းနှင့် နံနက်စာမှာ တစ်လ ฿67,000 မှ ฿73,000 ဖြစ်သည်။ စောင့်ရှောက်ခကို သီးခြားတောင်းသည်၊ မျှဝေ၍ တစ်နေ့ 3 နာရီမှ 4 နာရီအတွက် ฿27,000၊ တစ်ဦးချင်း 24 နာရီအတွက် ฿130,000။",
+    "zh": "清迈 Ban Sabai Village 的标准房含早餐每月฿67,000至฿73,000。护理费另计：合住护理每天3至4小时฿27,000，一对一全天候护理฿130,000。",
+    "de": "Im Ban Sabai Village in Chiang Mai kostet ein Standardzimmer mit Frühstück ฿67,000 bis ฿73,000 im Monat. Die Pflege wird getrennt verrechnet: ฿27,000 für gemeinsame Betreuung 3 bis 4 Stunden am Tag, ฿130,000 für Einzelbetreuung rund um die Uhr."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "q": {
+    "en": "Does a care home in Thailand need a licence?",
+    "th": "บ้านพักผู้สูงอายุในไทยต้องมีใบอนุญาตไหม",
+    "my": "ထိုင်းတွင် စောင့်ရှောက်ရေးအိမ်သည် လိုင်စင် လိုအပ်သလား",
+    "zh": "泰国的养老院需要许可证吗",
+    "de": "Braucht ein Pflegeheim in Thailand eine Bewilligung?"
+   },
+   "a": {
+    "en": "Yes. Care facilities for older people come under the Health Business Establishments Act 2016 and its operating licences. 1,203 facilities were registered with the Department of Health Service Support in October 2026.",
+    "th": "ต้องมี สถานดูแลผู้สูงอายุอยู่ภายใต้พระราชบัญญัติสถานประกอบการเพื่อสุขภาพ พ.ศ. 2559 และใบอนุญาตประกอบกิจการ เดือนตุลาคม 2569 มี 1,203 แห่งจดทะเบียนกับกรมสนับสนุนบริการสุขภาพ",
+    "my": "လိုအပ်သည်။ သက်ကြီးရွယ်အို စောင့်ရှောက်ရေးနေရာများသည် 2016 ကျန်းမာရေးလုပ်ငန်းဌာန ဥပဒေနှင့် လုပ်ငန်းလိုင်စင်များ အောက်တွင် ရှိသည်။ 2026 အောက်တိုဘာတွင် နေရာ 1,203 ခုကို ကျန်းမာရေးဝန်ဆောင်မှု ပံ့ပိုးရေးဦးစီးဌာနတွင် မှတ်ပုံတင်ထားသည်။",
+    "zh": "需要。老年人照护机构适用2016年《健康营业场所法》及经营许可证。2026年10月，有1,203家机构在卫生服务支持司登记。",
+    "de": "Ja. Einrichtungen für ältere Menschen unterstehen dem Health Business Establishments Act 2016 und seinen Betriebsbewilligungen. Im Oktober 2026 waren 1,203 Einrichtungen beim Department of Health Service Support registriert."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  },
+  {
+   "q": {
+    "en": "Is there a care home for dementia in Chiang Mai?",
+    "th": "มีบ้านพักผู้สูงอายุสำหรับผู้ป่วยสมองเสื่อมในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်တွင် မေ့ရောဂါ (dementia) အတွက် စောင့်ရှောက်ရေးအိမ် ရှိသလား",
+    "zh": "清迈有照顾失智症患者的养老院吗",
+    "de": "Gibt es in Chiang Mai ein Pflegeheim für Menschen mit Demenz?"
+   },
+   "a": {
+    "en": "Care Resort Chiang Mai describes independent living with care, close care with on-site nursing, and a boutique memory care facility for serious Alzheimer's and other dementia. It gives prices on request and does not list them on its website.",
+    "th": "Care Resort Chiang Mai แจ้งว่ามีที่พักแบบอยู่เองพร้อมการดูแล การดูแลใกล้ชิดที่มีพยาบาลประจำ และศูนย์ดูแลผู้ป่วยความจำเสื่อมขนาดเล็กสำหรับอัลไซเมอร์ขั้นรุนแรงและสมองเสื่อมอื่นๆ ราคาแจ้งเมื่อสอบถาม ไม่ได้ลงไว้ในเว็บไซต์",
+    "my": "Care Resort Chiang Mai က စောင့်ရှောက်မှုပါသော ကိုယ်တိုင်နေထိုင်ခြင်း၊ နေရာတွင် သူနာပြုပါသော နီးကပ်စောင့်ရှောက်မှုနှင့် ပြင်းထန်သော Alzheimer's နှင့် အခြား dementia အတွက် အသေးစား မှတ်ဉာဏ်စောင့်ရှောက်ရေးနေရာကို ဖော်ပြထားသည်။ စျေးနှုန်းကို မေးမြန်းမှသာ ပေးပြီး ဝက်ဘ်ဆိုက်တွင် မဖော်ပြပါ။",
+    "zh": "清迈 Care Resort 介绍了带照护的自理居住、有护士驻场的贴身照护，以及面向严重阿尔茨海默病和其他失智症的小型记忆照护设施。价格需询问，网站上没有列出。",
+    "de": "Das Care Resort Chiang Mai beschreibt selbstständiges Wohnen mit Betreuung, enge Betreuung mit Pflegefachpersonen vor Ort und eine kleine Einrichtung für Gedächtnispflege bei schwerer Alzheimer-Krankheit und anderen Demenzformen. Die Preise nennt es auf Anfrage und führt sie auf seiner Website nicht auf."
+   },
+   "src": "https://www.careresortchiangmai.com"
+  },
+  {
+   "q": {
+    "en": "How much does a caregiver cost?",
+    "th": "ผู้ดูแลผู้สูงอายุรายเดือนราคาเท่าไหร่",
+    "my": "စောင့်ရှောက်သူ တစ်ဦး ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "请一名护工要多少钱",
+    "de": "Was kostet eine Pflegekraft?"
+   },
+   "a": {
+    "en": "ElderThai, an agency, lists ฿1,200 for 4 hours, ฿2,200 for 8 hours and ฿3,000 for 24-hour cover. On the same page, hiring a helper privately is about ฿30,000 a month.",
+    "th": "ElderThai เอเจนซี่แห่งหนึ่ง ระบุราคา ฿1,200 ต่อ 4 ชั่วโมง ฿2,200 ต่อ 8 ชั่วโมง และ ฿3,000 ต่อ 24 ชั่วโมง ในหน้าเดียวกันระบุว่าจ้างผู้ช่วยเองประมาณเดือนละ ฿30,000",
+    "my": "အေဂျင်စီတစ်ခုဖြစ်သော ElderThai က 4 နာရီ ฿1,200၊ 8 နာရီ ฿2,200 နှင့် 24 နာရီ စောင့်ရှောက်မှု ฿3,000 ဟု ဖော်ပြထားသည်။ ထိုစာမျက်နှာတွင်ပင် ကိုယ်တိုင် လက်ထောက်ငှားလျှင် တစ်လ ฿30,000 ခန့်ဟု ဆိုသည်။",
+    "zh": "中介机构 ElderThai 的报价是：4小时฿1,200，8小时฿2,200，24小时฿3,000。同一页面写明，自己雇帮手约每月฿30,000。",
+    "de": "Die Agentur ElderThai nennt ฿1,200 für 4 Stunden, ฿2,200 für 8 Stunden und ฿3,000 für 24 Stunden. Auf derselben Seite steht, dass eine privat angestellte Hilfe etwa ฿30,000 im Monat kostet."
+   },
+   "src": "https://www.elderthai.com"
+  },
+  {
+   "q": {
+    "en": "How much does care for a bedridden person cost?",
+    "th": "ดูแลผู้สูงอายุติดเตียงค่าใช้จ่ายเท่าไหร่",
+    "my": "အိပ်ရာထဲမှ မထနိုင်သူကို စောင့်ရှောက်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "照顾卧床老人要花多少钱",
+    "de": "Was kostet die Pflege einer bettlägerigen Person?"
+   },
+   "a": {
+    "en": "At home, one guide to Thailand puts a full-time nurse at around ฿37,500 a month, and an agency's live-in 24-hour care at ฿3,500 a day, which is well over ฿100,000 a month. At Ban Sabai Village, one-to-one care for 24 hours is ฿130,000 a month on top of the room.",
+    "th": "ที่บ้าน คู่มือเกี่ยวกับประเทศไทยเล่มหนึ่งระบุว่าพยาบาลเต็มเวลาประมาณเดือนละ ฿37,500 และผู้ดูแลอยู่ประจำ 24 ชั่วโมงจากเอเจนซี่วันละ ฿3,500 ซึ่งเกินเดือนละ ฿100,000 มาก ที่ Ban Sabai Village การดูแลตัวต่อตัว 24 ชั่วโมงเดือนละ ฿130,000 เพิ่มจากค่าห้อง",
+    "my": "အိမ်တွင် ထိုင်းနိုင်ငံအကြောင်း လမ်းညွှန်တစ်စောင်က အချိန်ပြည့် သူနာပြုကို တစ်လ ฿37,500 ခန့်၊ အေဂျင်စီ၏ နေထိုင်စောင့်ရှောက်မှု 24 နာရီကို တစ်ရက် ฿3,500 (တစ်လ ฿100,000 ကျော်ကျော်) ဟု ဖော်ပြသည်။ Ban Sabai Village တွင် တစ်ဦးချင်း 24 နာရီ စောင့်ရှောက်မှုမှာ အခန်းခအပြင် တစ်လ ฿130,000 ဖြစ်သည်။",
+    "zh": "在家护理方面，一份关于泰国的指南给出的价格是：全职护士约每月฿37,500，中介的24小时住家护理每天฿3,500，即每月远超฿100,000。在 Ban Sabai Village，一对一24小时护理在房费之外每月฿130,000。",
+    "de": "Zu Hause nennt ein Thailand-Ratgeber für eine Pflegefachperson in Vollzeit etwa ฿37,500 im Monat und für die rund um die Uhr betreuende Kraft einer Agentur ฿3,500 am Tag, also weit über ฿100,000 im Monat. Im Ban Sabai Village kostet die Einzelbetreuung rund um die Uhr ฿130,000 im Monat zusätzlich zum Zimmer."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "q": {
+    "en": "Is there a government care home in Chiang Mai?",
+    "th": "มีบ้านพักคนชราของรัฐในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်တွင် အစိုးရ စောင့်ရှောက်ရေးအိမ် ရှိသလား",
+    "zh": "清迈有政府办的养老院吗",
+    "de": "Gibt es in Chiang Mai ein staatliches Pflegeheim?"
+   },
+   "a": {
+    "en": "The Thammapakorn Social Welfare Development Center for Older Persons is in Chiang Mai, and its website carries the copyright of the Department of Older Persons. It links a fact-finding form for older persons who wish to use its services, and staff can be reached on 053-278573 and 053-281206.",
+    "th": "ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์ตั้งอยู่ที่เชียงใหม่ เว็บไซต์ของศูนย์ระบุลิขสิทธิ์ของกรมกิจการผู้สูงอายุ มีแบบสอบข้อเท็จจริงสำหรับผู้สูงอายุที่ประสงค์เข้าใช้บริการ และติดต่อเจ้าหน้าที่ได้ที่ 053-278573 และ 053-281206",
+    "my": "Thammapakorn ဟု ခေါ်သော သက်ကြီးရွယ်အိုများ လူမှုဖူလုံရေး ဖွံ့ဖြိုးရေးစင်တာသည် ချင်းမိုင်တွင် ရှိပြီး ၎င်း၏ ဝက်ဘ်ဆိုက်တွင် သက်ကြီးရွယ်အိုရေးရာဦးစီးဌာန၏ မူပိုင်ခွင့်ကို ဖော်ပြထားသည်။ ၎င်း၏ ဝန်ဆောင်မှုကို အသုံးပြုလိုသော သက်ကြီးရွယ်အိုများအတွက် အချက်အလက်စုံစမ်းစာရွက်ကို လင့်ခ်ချိတ်ထားပြီး ဝန်ထမ်းများကို 053-278573 နှင့် 053-281206 တွင် ဆက်သွယ်နိုင်သည်။",
+    "zh": "清迈有一所老年人社会福利发展中心（Thammapakorn），其网站标有老年人事务厅的版权。网站链接了一份供有意使用其服务的老年人填写的情况调查表，可拨打053-278573和053-281206联系工作人员。",
+    "de": "Das Thammapakorn Social Welfare Development Center for Older Persons befindet sich in Chiang Mai, und seine Website trägt das Urheberrecht des Department of Older Persons. Sie verlinkt ein Formular zur Erhebung der Verhältnisse für ältere Personen, die seine Leistungen nutzen möchten; das Personal ist unter 053-278573 und 053-281206 erreichbar."
+   },
+   "src": "https://thammapakorn.dop.go.th/en"
+  },
+  {
+   "q": {
+    "en": "What does a care home bill on top of the room?",
+    "th": "บ้านพักคิดค่าอะไรเพิ่มนอกจากค่าห้อง",
+    "my": "စောင့်ရှောက်ရေးအိမ်က အခန်းခအပြင် ဘာတွေ ထပ်တောင်းသလဲ",
+    "zh": "养老院除房费外还收哪些费用",
+    "de": "Was verrechnet ein Pflegeheim zusätzlich zum Zimmer?"
+   },
+   "a": {
+    "en": "Advertised starting prices usually cover a shared room and breakfast. Private rooms, nursing, lunch and dinner, transport and medical services are billed extra.",
+    "th": "ราคาเริ่มต้นที่โฆษณามักรวมห้องรวมกับอาหารเช้าเท่านั้น ห้องส่วนตัว พยาบาล อาหารกลางวันและเย็น การเดินทาง และบริการทางการแพทย์คิดเพิ่ม",
+    "my": "ကြော်ငြာထားသော စတင်စျေးနှုန်းများတွင် များသောအားဖြင့် မျှဝေအခန်းနှင့် နံနက်စာသာ ပါဝင်သည်။ သီးသန့်အခန်း၊ သူနာပြုစောင့်ရှောက်မှု၊ နေ့လယ်စာနှင့် ညစာ၊ ခရီးသွားလာရေးနှင့် ဆေးဘက်ဆိုင်ရာ ဝန်ဆောင်မှုတို့ကို ထပ်ဆောင်း၍ ကောက်သည်။",
+    "zh": "宣传的起步价通常只含合住房和早餐。单人房、护理、午餐和晚餐、交通以及医疗服务另外收费。",
+    "de": "Die beworbenen Einstiegspreise decken meist ein Mehrbettzimmer und das Frühstück. Einzelzimmer, Pflege, Mittag- und Abendessen, Transport und medizinische Leistungen werden zusätzlich verrechnet."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  }
+ ],
+ "related": [
+  "care-visits",
+  "retire",
+  "specialist",
+  "doctor",
+  "clean-air",
+  "death-help"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: long-term and residential care places in Chiang Mai",
+    "th": "มดแดง: สถานดูแลระยะยาวและบ้านพักผู้สูงอายุในเชียงใหม่",
+    "my": "Mot Dang - ချင်းမိုင်ရှိ ရေရှည်စောင့်ရှောက်ရေးနှင့် နေထိုင်စောင့်ရှောက်ရေး နေရာများ",
+    "zh": "Mot Dang：清迈的长期照护与养老机构",
+    "de": "Mot Dang: Einrichtungen für Langzeitpflege und Wohnen in Chiang Mai"
+   },
+   "href": "https://motdang.net/cm/medical/long-care/"
+  },
+  {
+   "t": {
+    "en": "Department of Older Persons: Thammapakorn center, Chiang Mai",
+    "th": "กรมกิจการผู้สูงอายุ: ศูนย์บ้านธรรมปกรณ์ เชียงใหม่",
+    "my": "သက်ကြီးရွယ်အိုရေးရာဦးစီးဌာန - ချင်းမိုင် Thammapakorn စင်တာ",
+    "zh": "老年人事务厅：清迈 Thammapakorn 中心",
+    "de": "Department of Older Persons: Zentrum Thammapakorn, Chiang Mai"
+   },
+   "href": "https://thammapakorn.dop.go.th/en"
+  },
+  {
+   "t": {
+    "en": "The Star: government orders checks on 1,203 elderly care facilities",
+    "th": "The Star: รัฐบาลสั่งตรวจสถานดูแลผู้สูงอายุ 1,203 แห่ง",
+    "my": "The Star - အစိုးရက သက်ကြီးစောင့်ရှောက်ရေးနေရာ 1,203 ခုကို စစ်ဆေးရန် ညွှန်ကြား",
+    "zh": "The Star：政府下令检查1,203家老年人照护机构",
+    "de": "The Star: Regierung ordnet Kontrollen in 1,203 Einrichtungen für ältere Menschen an"
+   },
+   "href": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  }
+ ],
+ "glyphs": [
+  "heart",
+  "home",
+  "wai"
+ ]
+}

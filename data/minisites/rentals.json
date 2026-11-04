@@ -1,0 +1,360 @@
+{
+ "id": "rentals",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People rent a car or scooter for a trip or a stay, and equipment or a venue for an event. Each shop or supplier sets its own price and terms.",
+  "th": "คนเช่ารถหรือมอเตอร์ไซค์เพื่อเที่ยวหรืออยู่ยาว และเช่าอุปกรณ์หรือสถานที่สำหรับงาน โดยแต่ละร้านหรือผู้ให้เช่ากำหนดราคาและเงื่อนไขเอง",
+  "my": "လူတွေက ခရီးသွားရန် သို့မဟုတ် နေထိုင်ရန် ကား၊ စကူတာ ငှားပြီး ပွဲအတွက် ပစ္စည်း သို့မဟုတ် နေရာ ငှားကြသည်။ ဆိုင်တစ်ခု သို့မဟုတ် ပေးသွင်းသူတစ်ဦးစီက ဈေးနှုန်းနှင့် စည်းကမ်းကို ကိုယ်ပိုင်သတ်မှတ်သည်။",
+  "zh": "人们租车或租摩托车用于旅行或长住，租设备或场地用于办活动。价格和条款由各家店或供应商自己定。",
+  "de": "Man mietet ein Auto oder einen Roller für eine Reise oder einen Aufenthalt und Technik oder einen Ort für eine Veranstaltung. Jeder Laden und jeder Anbieter legt Preis und Bedingungen selbst fest."
+ },
+ "n": {
+  "de": "Anmietung organisiert"
+ },
+ "l": {
+  "de": "Ein Auto, ein Roller, Veranstaltungstechnik oder ein Veranstaltungsort, gefunden und gebucht."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You give the dates and what you need: a car, a scooter, equipment or a venue.",
+    "th": "คุณบอกวันที่และสิ่งที่ต้องการ: รถ มอเตอร์ไซค์ อุปกรณ์ หรือสถานที่",
+    "my": "သင်က ရက်စွဲများနှင့် လိုအပ်သည်များကို ပေးသည် — ကား၊ စကူတာ၊ ပစ္စည်း သို့မဟုတ် နေရာ။",
+    "zh": "您说明日期和所需：汽车、摩托车、设备或场地。",
+    "de": "Sie nennen die Daten und was Sie brauchen: ein Auto, einen Roller, Technik oder einen Ort."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Shops or suppliers are found and compared for your dates.",
+    "th": "หาและเทียบร้านหรือผู้ให้เช่าตามวันที่ของคุณ",
+    "my": "သင့်ရက်စွဲများအတွက် ဆိုင်များ သို့မဟုတ် ပေးသွင်းသူများကို ရှာပြီး နှိုင်းယှဉ်သည်။",
+    "zh": "按您的日期找出并比较各家店或供应商。",
+    "de": "Läden oder Anbieter werden für Ihre Daten gefunden und verglichen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After your dates",
+    "th": "หลังได้วันที่ของคุณ",
+    "my": "သင့်ရက်စွဲရပြီးနောက်",
+    "zh": "收到日期后",
+    "de": "Nach Ihren Daten"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "The rental is booked for your dates.",
+    "th": "จองให้ตามวันที่ของคุณ",
+    "my": "သင့်ရက်စွဲများအတွက် ငှားရမ်းမှုကို ဘွတ်ကင်လုပ်သည်။",
+    "zh": "为您的日期订好租赁。",
+    "de": "Die Anmietung wird für Ihre Daten gebucht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When you pick one",
+    "th": "เมื่อคุณเลือกแล้ว",
+    "my": "သင်ရွေးပြီးသောအခါ",
+    "zh": "您选定之后",
+    "de": "Wenn Sie gewählt haben"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "You pay the rental, deposit and insurance to the shop or supplier.",
+    "th": "คุณจ่ายค่าเช่า มัดจำ และประกันให้ร้านหรือผู้ให้เช่าโดยตรง",
+    "my": "ငှားခ၊ စပေါ်ငွေနှင့် အာမခံကို ဆိုင် သို့မဟုတ် ပေးသွင်းသူထံ တိုက်ရိုက်ပေးသည်။",
+    "zh": "租金、押金和保险直接付给店家或供应商。",
+    "de": "Miete, Kaution und Versicherung zahlen Sie direkt an den Laden oder den Anbieter."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "On the shop's terms",
+    "th": "ตามเงื่อนไขของร้าน",
+    "my": "ဆိုင်၏ စည်းကမ်းအတိုင်း",
+    "zh": "按店家条款",
+    "de": "Zu den Bedingungen des Ladens"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Tourism Authority of Thailand lists three licences a foreigner can drive on: one issued under Thai law, an International Driving Permit, or a licence from an ASEAN member country shown with the domestic licence. It says that to rent a car or motorbike, you present a valid driving licence or permit.",
+    "th": "การท่องเที่ยวแห่งประเทศไทยระบุใบขับขี่ที่ชาวต่างชาติใช้ขับได้สามแบบ คือใบอนุญาตขับขี่ที่ออกตามกฎหมายไทย ใบขับขี่ระหว่างประเทศ (IDP) หรือใบขับขี่จากประเทศสมาชิกอาเซียนที่แสดงพร้อมใบขับขี่ของประเทศนั้น และระบุว่าการเช่ารถหรือมอเตอร์ไซค์ต้องแสดงใบขับขี่หรือ IDP ที่ยังใช้ได้",
+    "my": "ထိုင်းခရီးသွားလာရေးအာဏာပိုင် (TAT) က နိုင်ငံခြားသားများ မောင်းနှင်နိုင်သော လိုင်စင်သုံးမျိုး ဖော်ပြသည် — ထိုင်းဥပဒေအရ ထုတ်ပေးသော လိုင်စင်၊ နိုင်ငံတကာ ယာဉ်မောင်းလိုင်စင် (IDP) သို့မဟုတ် မိမိနိုင်ငံ လိုင်စင်နှင့်အတူ ပြသသော အာဆီယံအဖွဲ့ဝင်နိုင်ငံ လိုင်စင်။ ကား သို့မဟုတ် မော်တော်ဆိုင်ကယ် ငှားရန် သက်တမ်းရှိ လိုင်စင် သို့မဟုတ် IDP ပြရမည်ဟုလည်း ဆိုသည်။",
+    "zh": "泰国旅游局列出外国人可凭三种驾照驾驶：泰国法律下签发的驾照、国际驾驶许可（IDP），或东盟成员国驾照（连同本国驾照出示）。它写明，租汽车或摩托车须出示有效的驾照或 IDP。",
+    "de": "Die Tourism Authority of Thailand nennt drei Führerscheine, mit denen Ausländer fahren dürfen: einen nach thailändischem Recht ausgestellten, einen Internationalen Führerschein (IDP) oder den Führerschein eines ASEAN-Mitgliedstaats, zusammen mit dem Heimatführerschein vorgezeigt. Zum Mieten eines Autos oder Motorrads ist ein gültiger Führerschein oder IDP vorzuzeigen."
+   },
+   "src": "https://www.tatnews.org/?p=80727"
+  },
+  {
+   "t": {
+    "en": "TAT's page says motorbike riders and passengers must wear helmets. It also says that without proper documents for a rental vehicle, insurance cover may be void after an accident.",
+    "th": "หน้าของ ททท. ระบุว่าผู้ขับขี่และผู้โดยสารมอเตอร์ไซค์ต้องสวมหมวกกันน็อก และระบุว่าหากรถเช่าไม่มีเอกสารครบถ้วน ประกันอาจใช้ไม่ได้เมื่อเกิดอุบัติเหตุ",
+    "my": "TAT ၏ စာမျက်နှာတွင် မော်တော်ဆိုင်ကယ် စီးနင်းသူနှင့် ခရီးသည်များ ဦးထုပ်ဆောင်းရမည်ဟု ဆိုသည်။ ငှားရမ်းသော ယာဉ်အတွက် စာရွက်စာတမ်း မပြည့်စုံလျှင် မတော်တဆမှုဖြစ်ပြီးနောက် အာမခံ ပျက်ပြယ်နိုင်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "旅游局页面写明，摩托车骑手和乘客必须戴头盔；租用车辆如果文件不齐，发生事故后保险可能失效。",
+    "de": "Die Seite der TAT sagt, dass Fahrer und Mitfahrer von Motorrädern Helme tragen müssen. Sie sagt auch, dass der Versicherungsschutz nach einem Unfall verfallen kann, wenn die Papiere eines Mietfahrzeugs nicht in Ordnung sind."
+   },
+   "src": "https://www.tatnews.org/?p=80727"
+  },
+  {
+   "t": {
+    "en": "One Fastwork seller's Chiang Mai airport car rental holds ฿6,000 on a physical credit card in the driver's name (฿8,000 for an electric car). It takes no debit cards, cash or digital wallets. Drivers are 21 to 65 and have held a licence for at least 1 year.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ที่ให้เช่ารถที่สนามบินเชียงใหม่ กันวงเงิน ฿6,000 บนบัตรเครดิตตัวจริงที่เป็นชื่อผู้ขับ (รถไฟฟ้า ฿8,000) ไม่รับบัตรเดบิต เงินสด หรือกระเป๋าเงินดิจิทัล ผู้ขับอายุ 21–65 ปี และถือใบขับขี่มาแล้วอย่างน้อย 1 ปี",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ ချင်းမိုင်လေဆိပ် ကားငှားရမ်းမှုတွင် ယာဉ်မောင်းအမည်ပါ ကတ်အစစ်ဖြစ်သော ခရက်ဒစ်ကတ်ပေါ်တွင် ฿6,000 ကို ချိတ်ထားသည် (လျှပ်စစ်ကားအတွက် ฿8,000)။ ဒက်ဘစ်ကတ်၊ ငွေသား သို့မဟုတ် ဒစ်ဂျစ်တယ်ပိုက်ဆံအိတ်ကို လက်မခံပါ။ ယာဉ်မောင်းသည် အသက် 21 မှ 65 အတွင်းဖြစ်ပြီး လိုင်စင်ကို အနည်းဆုံး 1 နှစ် ကိုင်ထားဖူးရမည်။",
+    "zh": "Fastwork 上一位卖家的清迈机场租车，在驾驶人名下的实体信用卡上冻结 ฿6,000（电动车 ฿8,000），不收借记卡、现金和电子钱包。驾驶人年龄 21 至 65 岁，持照满 1 年。",
+    "de": "Bei der Flughafen-Autovermietung in Chiang Mai eines Verkäufers auf Fastwork werden ฿6,000 auf einer physischen Kreditkarte auf den Namen des Fahrers reserviert (฿8,000 bei einem Elektroauto). Debitkarten, Bargeld und digitale Wallets werden nicht genommen. Fahrer sind 21 bis 65 Jahre alt und haben den Führerschein seit mindestens 1 Jahr."
+   },
+   "src": "https://fastwork.co/user/asapofficial/car-rental-chiang-mai-airport-10948282"
+  },
+  {
+   "t": {
+    "en": "A Chiang Mai scooter guide says reputable shops usually include a helmet, and that a car licence from home may not cover the scooter category.",
+    "th": "คู่มือเช่ามอเตอร์ไซค์ในเชียงใหม่ฉบับหนึ่งระบุว่าร้านที่น่าเชื่อถือมักมีหมวกกันน็อกให้ และใบขับขี่รถยนต์จากต่างประเทศอาจไม่ครอบคลุมประเภทมอเตอร์ไซค์",
+    "my": "ချင်းမိုင် စကူတာငှားရမ်း လမ်းညွှန်တစ်ခုတွင် ယုံကြည်စိတ်ချရသော ဆိုင်များက များသောအားဖြင့် ဦးထုပ်ထည့်ပေးပြီး မိမိနိုင်ငံက ကားလိုင်စင်သည် စကူတာအမျိုးအစားကို မလွှမ်းခြုံနိုင်ဟု ဆိုသည်။",
+    "zh": "一份清迈租摩托车指南写道，口碑好的店通常附带头盔；本国的汽车驾照可能不涵盖摩托车类别。",
+    "de": "Ein Leitfaden zum Rollermieten in Chiang Mai sagt, seriöse Läden legen meist einen Helm bei, und ein Autoführerschein aus der Heimat deckt die Rollerklasse möglicherweise nicht ab."
+   },
+   "src": "https://monthlychiangmai.pages.dev/guides/renting-a-scooter/"
+  },
+  {
+   "t": {
+    "en": "Under Revenue Department Order Tor Por 4/2528 (English translation), a company or other juristic person that pays rent withholds income tax of 5% when the payee is an individual or a company doing business in Thailand, and 10% when the payee is a foundation or association that earns revenue.",
+    "th": "ตามคำสั่งกรมสรรพากรที่ ท.ป. 4/2528 (ฉบับแปลภาษาอังกฤษ) บริษัทหรือนิติบุคคลอื่นที่จ่ายค่าเช่าต้องหักภาษีเงินได้ ณ ที่จ่าย 5% เมื่อผู้รับเป็นบุคคลธรรมดาหรือบริษัทที่ประกอบกิจการในไทย และ 10% เมื่อผู้รับเป็นมูลนิธิหรือสมาคมที่ประกอบกิจการหารายได้",
+    "my": "ထိုင်းဝင်ငွေခွန်ဦးစီးဌာန (Revenue Department) အမိန့် Tor Por 4/2528 (အင်္ဂလိပ်ဘာသာပြန်) အရ ကုမ္ပဏီ သို့မဟုတ် အခြားဥပဒေပုဂ္ဂိုလ်တစ်ဦးက အငှားခပေးလျှင် လက်ခံသူသည် ပုဂ္ဂိုလ်တစ်ဦး သို့မဟုတ် ထိုင်းတွင် လုပ်ငန်းလုပ်ကိုင်သော ကုမ္ပဏီဖြစ်လျှင် 5%၊ ဝင်ငွေရှာသော ဖောင်ဒေးရှင်း သို့မဟုတ် အသင်းအဖွဲ့ဖြစ်လျှင် 10% ဝင်ငွေခွန် ဖြတ်တောက်ရသည်။",
+    "zh": "依据税务厅 Tor Por 4/2528 号令（英译本），公司或其他法人支付租金时，收款人为个人或在泰经营的公司的，预扣所得税 5%；收款人为有营收的基金会或协会的，预扣 10%。",
+    "de": "Nach der Anordnung Tor Por 4/2528 des Revenue Department (englische Übersetzung) behält eine Gesellschaft oder andere juristische Person bei Mietzahlungen 5 % Einkommensteuer ein, wenn der Empfänger eine Einzelperson oder ein in Thailand tätiges Unternehmen ist, und 10 %, wenn er eine Stiftung oder ein Verein mit Einnahmen ist."
+   },
+   "src": "https://www.rd.go.th/fileadmin/user_upload/kormor/eng/RDR_4.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Scooter, 110–125cc, in Chiang Mai (a rental guide)",
+    "th": "มอเตอร์ไซค์ 110–125 ซีซี ในเชียงใหม่ (จากคู่มือเช่า)",
+    "my": "ချင်းမိုင် စကူတာ 110–125cc (ငှားရမ်းလမ်းညွှန်တစ်ခု)",
+    "zh": "清迈 110–125cc 踏板摩托（一份租车指南）",
+    "de": "Roller, 110–125 ccm, in Chiang Mai (ein Mietleitfaden)"
+   },
+   "p": {
+    "en": "฿150–350 a day; ฿3,000–4,500 a month; cash deposit ฿2,000–5,000",
+    "th": "฿150–350 ต่อวัน ฿3,000–4,500 ต่อเดือน มัดจำเงินสด ฿2,000–5,000",
+    "my": "တစ်ရက် ฿150–350၊ တစ်လ ฿3,000–4,500၊ ငွေသားစပေါ်ငွေ ฿2,000–5,000",
+    "zh": "每天 ฿150–350；每月 ฿3,000–4,500；现金押金 ฿2,000–5,000",
+    "de": "฿150–350 pro Tag; ฿3,000–4,500 pro Monat; Barkaution ฿2,000–5,000"
+   },
+   "src": "https://monthlychiangmai.pages.dev/guides/renting-a-scooter/"
+  },
+  {
+   "t": {
+    "en": "Toyota Yaris Cross from Chiang Mai airport (a Fastwork seller's listing)",
+    "th": "Toyota Yaris Cross รับที่สนามบินเชียงใหม่ (ประกาศของผู้ขายบน Fastwork)",
+    "my": "ချင်းမိုင်လေဆိပ်မှ Toyota Yaris Cross (Fastwork ရောင်းသူတစ်ဦး၏ စာရင်း)",
+    "zh": "清迈机场取车的丰田 Yaris Cross（Fastwork 卖家的挂牌）",
+    "de": "Toyota Yaris Cross ab Flughafen Chiang Mai (Angebot eines Fastwork-Verkäufers)"
+   },
+   "p": {
+    "en": "From ฿1,350 a day, with SCDW collision cover; ฿6,000 held on a credit card",
+    "th": "เริ่ม ฿1,350 ต่อวัน รวมประกันความเสียหายจากการชน SCDW และกันวงเงินบัตรเครดิต ฿6,000",
+    "my": "တစ်ရက် ฿1,350 မှစ၍ SCDW တိုက်မိမှု အာမခံပါ၊ ခရက်ဒစ်ကတ်ပေါ်တွင် ฿6,000 ချိတ်ထားသည်",
+    "zh": "每天 ฿1,350 起，含 SCDW 碰撞保障；信用卡冻结 ฿6,000",
+    "de": "Ab ฿1,350 pro Tag, mit SCDW-Kollisionsschutz; ฿6,000 auf der Kreditkarte reserviert"
+   },
+   "src": "https://fastwork.co/user/asapofficial/car-rental-chiang-mai-airport-10948282"
+  },
+  {
+   "t": {
+    "en": "Sound system hire in Thailand (GigHeaven's listing)",
+    "th": "เช่าเครื่องเสียงในไทย (รายการของ GigHeaven)",
+    "my": "ထိုင်းနိုင်ငံ အသံစနစ်ငှားရမ်းခ (GigHeaven စာရင်း)",
+    "zh": "泰国音响租赁（GigHeaven 页面）",
+    "de": "Miete einer Beschallungsanlage in Thailand (Seite von GigHeaven)"
+   },
+   "p": {
+    "en": "US$100 for a basic speaker set to US$950 or more for a large system; average US$360",
+    "th": "US$100 สำหรับชุดลำโพงพื้นฐาน ถึง US$950 ขึ้นไปสำหรับระบบใหญ่ เฉลี่ย US$360",
+    "my": "အခြေခံ စပီကာအစုံ US$100 မှ စနစ်ကြီး US$950 နှင့်အထက်အထိ၊ ပျမ်းမျှ US$360",
+    "zh": "基础音箱组 US$100，大型系统 US$950 以上；平均 US$360",
+    "de": "US$100 für ein einfaches Lautsprecherset bis US$950 und mehr für eine grosse Anlage; Durchschnitt US$360"
+   },
+   "src": "https://www.gigheaven.com/search/sound-systems-pa-systems/thailand.html"
+  },
+  {
+   "t": {
+    "en": "Meeting and event rooms in Chiang Mai (Workin.space listing), before VAT",
+    "th": "ห้องประชุมและห้องจัดงานในเชียงใหม่ (รายการของ Workin.space) ก่อน VAT",
+    "my": "ချင်းမိုင် အစည်းအဝေးခန်းနှင့် ပွဲခန်း (Workin.space စာရင်း)၊ VAT မပါ",
+    "zh": "清迈会议室和活动场地（Workin.space 页面），未含增值税",
+    "de": "Sitzungs- und Veranstaltungsräume in Chiang Mai (Seite von Workin.space), ohne MwSt."
+   },
+   "p": {
+    "en": "From ฿1,060 a day for 3 people; from ฿6,642 a day for 21 or more",
+    "th": "เริ่ม ฿1,060 ต่อวัน สำหรับ 3 คน เริ่ม ฿6,642 ต่อวัน สำหรับ 21 คนขึ้นไป",
+    "my": "3 ဦးအတွက် တစ်ရက် ฿1,060 မှစ၍၊ 21 ဦးနှင့်အထက်အတွက် တစ်ရက် ฿6,642 မှစ၍",
+    "zh": "3 人用的每天 ฿1,060 起；21 人以上的每天 ฿6,642 起",
+    "de": "Ab ฿1,060 pro Tag für 3 Personen; ab ฿6,642 pro Tag für 21 und mehr"
+   },
+   "src": "https://book.workin.space/en/thailand/chiang-mai/meeting-room"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a scooter rental cost in Chiang Mai?",
+    "th": "เช่ามอเตอร์ไซค์ในเชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် စကူတာငှားခ ဘယ်လောက်လဲ။",
+    "zh": "清迈租摩托车多少钱？",
+    "de": "Was kostet ein Roller in Chiang Mai?"
+   },
+   "a": {
+    "en": "A Chiang Mai rental guide gives ฿150–350 a day for a 110–125cc scooter and ฿3,000–4,500 a month. The usual cash deposit is ฿2,000–5,000, and up to ฿10,000 for a premium bike.",
+    "th": "คู่มือเช่าในเชียงใหม่ระบุมอเตอร์ไซค์ 110–125 ซีซี ราคา ฿150–350 ต่อวัน และ ฿3,000–4,500 ต่อเดือน เงินมัดจำสดทั่วไป ฿2,000–5,000 และสูงถึง ฿10,000 สำหรับรถรุ่นพรีเมียม",
+    "my": "ချင်းမိုင်ငှားရမ်းလမ်းညွှန်တစ်ခုတွင် 110–125cc စကူတာအတွက် တစ်ရက် ฿150–350 နှင့် တစ်လ ฿3,000–4,500 ဟု ဖော်ပြထားသည်။ ပုံမှန် ငွေသားစပေါ်ငွေမှာ ฿2,000–5,000 ဖြစ်ပြီး ဈေးကြီးသော ဘိုက်အတွက် ฿10,000 အထိ ရှိသည်။",
+    "zh": "清迈一份租车指南给出：110–125cc 踏板车每天 ฿150–350，每月 ฿3,000–4,500。常见现金押金为 ฿2,000–5,000，高端车型最高 ฿10,000。",
+    "de": "Ein Mietleitfaden für Chiang Mai nennt für einen Roller mit 110–125 ccm ฿150–350 pro Tag und ฿3,000–4,500 pro Monat. Die übliche Barkaution beträgt ฿2,000–5,000, bei einem Premium-Modell bis ฿10,000."
+   },
+   "src": "https://monthlychiangmai.pages.dev/guides/renting-a-scooter/"
+  },
+  {
+   "q": {
+    "en": "Can I rent a scooter by the month in Chiang Mai?",
+    "th": "เช่ามอเตอร์ไซค์รายเดือนในเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်တွင် စကူတာကို လစဉ်ငှားနိုင်ပါသလား။",
+    "zh": "在清迈可以按月租摩托车吗？",
+    "de": "Kann man in Chiang Mai einen Roller monatsweise mieten?"
+   },
+   "a": {
+    "en": "Yes. The same guide lists ฿3,000–4,500 a month for 110–125cc scooters and up to about ฿6,600 for bigger or newer bikes.",
+    "th": "ได้ คู่มือเดียวกันระบุ ฿3,000–4,500 ต่อเดือนสำหรับมอเตอร์ไซค์ 110–125 ซีซี และสูงถึงประมาณ ฿6,600 สำหรับรุ่นใหญ่หรือใหม่กว่า",
+    "my": "ငှားနိုင်သည်။ ထိုလမ်းညွှန်တွင်ပင် 110–125cc စကူတာအတွက် တစ်လ ฿3,000–4,500 နှင့် ပိုကြီးသော သို့မဟုတ် ပိုသစ်သော ဘိုက်အတွက် ฿6,600 ခန့်အထိ ဖော်ပြထားသည်။",
+    "zh": "可以。同一份指南列出：110–125cc 踏板车每月 ฿3,000–4,500，更大或更新的车型最高约 ฿6,600。",
+    "de": "Ja. Derselbe Leitfaden nennt ฿3,000–4,500 pro Monat für Roller mit 110–125 ccm und bis etwa ฿6,600 für grössere oder neuere Modelle."
+   },
+   "src": "https://monthlychiangmai.pages.dev/guides/renting-a-scooter/"
+  },
+  {
+   "q": {
+    "en": "Can I rent a car in Chiang Mai without a credit card?",
+    "th": "เช่ารถในเชียงใหม่โดยไม่มีบัตรเครดิตได้ไหม",
+    "my": "ခရက်ဒစ်ကတ်မရှိဘဲ ချင်းမိုင်တွင် ကားငှားနိုင်ပါသလား။",
+    "zh": "没有信用卡能在清迈租车吗？",
+    "de": "Kann man in Chiang Mai ohne Kreditkarte ein Auto mieten?"
+   },
+   "a": {
+    "en": "Terms depend on the shop. One airport rental listing on Fastwork asks for a physical credit card in the driver's name for a ฿6,000 hold. It does not take debit cards, cash or digital wallets.",
+    "th": "ขึ้นอยู่กับเงื่อนไขของแต่ละร้าน ประกาศเช่ารถที่สนามบินรายหนึ่งบน Fastwork ขอบัตรเครดิตตัวจริงที่เป็นชื่อผู้ขับเพื่อกันวงเงิน ฿6,000 และไม่รับบัตรเดบิต เงินสด หรือกระเป๋าเงินดิจิทัล",
+    "my": "စည်းကမ်းများသည် ဆိုင်အလိုက် ကွာသည်။ Fastwork ပေါ်ရှိ လေဆိပ်ကားငှားရမ်းစာရင်းတစ်ခုက ယာဉ်မောင်းအမည်ပါ ကတ်အစစ်ဖြစ်သော ခရက်ဒစ်ကတ်ကို ฿6,000 ချိတ်ရန် တောင်းသည်။ ဒက်ဘစ်ကတ်၊ ငွေသား သို့မဟုတ် ဒစ်ဂျစ်တယ်ပိုက်ဆံအိတ်ကို လက်မခံပါ။",
+    "zh": "条款因店而异。Fastwork 上一个机场租车挂牌要求驾驶人名下的实体信用卡，冻结 ฿6,000；不收借记卡、现金和电子钱包。",
+    "de": "Die Bedingungen hängen vom Laden ab. Ein Flughafen-Mietangebot auf Fastwork verlangt eine physische Kreditkarte auf den Namen des Fahrers für eine Reservierung von ฿6,000. Debitkarten, Bargeld und digitale Wallets werden nicht genommen."
+   },
+   "src": "https://fastwork.co/user/asapofficial/car-rental-chiang-mai-airport-10948282"
+  },
+  {
+   "q": {
+    "en": "What licence does a visitor need to rent a car or scooter?",
+    "th": "ผู้มาเยือนต้องใช้ใบขับขี่แบบไหนเมื่อเช่ารถหรือมอเตอร์ไซค์",
+    "my": "ခရီးသွားတစ်ဦးက ကား သို့မဟုတ် စကူတာငှားရန် ဘယ်လိုလိုင်စင် လိုသလဲ။",
+    "zh": "游客租车或租摩托车需要什么驾照？",
+    "de": "Welchen Führerschein braucht ein Besucher zum Mieten eines Autos oder Rollers?"
+   },
+   "a": {
+    "en": "The Tourism Authority of Thailand lists a licence issued under Thai law, an International Driving Permit, or an ASEAN member country's licence shown with the domestic licence. To rent a car or motorbike, a valid licence or permit is presented.",
+    "th": "การท่องเที่ยวแห่งประเทศไทยระบุใบขับขี่ที่ออกตามกฎหมายไทย ใบขับขี่ระหว่างประเทศ (IDP) หรือใบขับขี่ของประเทศสมาชิกอาเซียนที่แสดงพร้อมใบขับขี่ของประเทศนั้น การเช่ารถหรือมอเตอร์ไซค์ต้องแสดงใบขับขี่หรือ IDP ที่ยังใช้ได้",
+    "my": "ထိုင်းခရီးသွားလာရေးအာဏာပိုင်က ထိုင်းဥပဒေအရ ထုတ်ပေးသော လိုင်စင်၊ နိုင်ငံတကာ ယာဉ်မောင်းလိုင်စင် (IDP) သို့မဟုတ် မိမိနိုင်ငံ လိုင်စင်နှင့်အတူ ပြသသော အာဆီယံအဖွဲ့ဝင်နိုင်ငံ လိုင်စင်ကို ဖော်ပြသည်။ ကား သို့မဟုတ် မော်တော်ဆိုင်ကယ် ငှားရန် သက်တမ်းရှိ လိုင်စင် သို့မဟုတ် IDP ကို ပြသရသည်။",
+    "zh": "泰国旅游局列出：泰国法律下签发的驾照、国际驾驶许可（IDP），或东盟成员国驾照（连同本国驾照出示）。租汽车或摩托车时出示有效的驾照或许可。",
+    "de": "Die Tourism Authority of Thailand nennt einen nach thailändischem Recht ausgestellten Führerschein, einen Internationalen Führerschein (IDP) oder den Führerschein eines ASEAN-Mitgliedstaats, zusammen mit dem Heimatführerschein vorgezeigt. Zum Mieten eines Autos oder Motorrads wird ein gültiger Führerschein oder IDP vorgezeigt."
+   },
+   "src": "https://www.tatnews.org/?p=80727"
+  },
+  {
+   "q": {
+    "en": "Does a company withhold tax when it pays rent?",
+    "th": "บริษัทต้องหักภาษี ณ ที่จ่ายเมื่อจ่ายค่าเช่าไหม",
+    "my": "ကုမ္ပဏီက အငှားခပေးလျှင် အခွန်ဖြတ်တောက်ရသလား။",
+    "zh": "公司付租金时要预扣税吗？",
+    "de": "Behält eine Firma Steuer ein, wenn sie Miete zahlt?"
+   },
+   "a": {
+    "en": "Yes. The Revenue Department's order sets 5% when the payee is an individual or a company doing business in Thailand, and 10% for a foundation or association that earns revenue.",
+    "th": "ต้องหัก คำสั่งกรมสรรพากรกำหนด 5% เมื่อผู้รับเป็นบุคคลธรรมดาหรือบริษัทที่ประกอบกิจการในไทย และ 10% สำหรับมูลนิธิหรือสมาคมที่ประกอบกิจการหารายได้",
+    "my": "ဖြတ်တောက်ရသည်။ ဝင်ငွေခွန်ဦးစီးဌာန၏ အမိန့်တွင် လက်ခံသူ ပုဂ္ဂိုလ်တစ်ဦး သို့မဟုတ် ထိုင်းတွင် လုပ်ငန်းလုပ်ကိုင်သော ကုမ္ပဏီဖြစ်လျှင် 5%၊ ဝင်ငွေရှာသော ဖောင်ဒေးရှင်း သို့မဟုတ် အသင်းအဖွဲ့ဖြစ်လျှင် 10% သတ်မှတ်ထားသည်။",
+    "zh": "要。税务厅的命令规定：收款人是个人或在泰经营的公司时为 5%，是有营收的基金会或协会时为 10%。",
+    "de": "Ja. Die Anordnung des Revenue Department legt 5 % fest, wenn der Empfänger eine Einzelperson oder ein in Thailand tätiges Unternehmen ist, und 10 % für eine Stiftung oder einen Verein mit Einnahmen."
+   },
+   "src": "https://www.rd.go.th/fileadmin/user_upload/kormor/eng/RDR_4.pdf"
+  }
+ ],
+ "related": [
+  "stay-rent",
+  "stay-booking",
+  "car-guide",
+  "vehicle",
+  "accident",
+  "event-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "TAT Newsroom: driving in Thailand, guidelines for visitors and foreigners",
+    "th": "ททท.: ขับรถในไทย แนวทางสำหรับนักท่องเที่ยวและชาวต่างชาติ",
+    "my": "TAT သတင်းဌာန: ထိုင်းတွင် ယာဉ်မောင်းခြင်း၊ ခရီးသွားနှင့် နိုင်ငံခြားသားများအတွက် လမ်းညွှန်",
+    "zh": "旅游局新闻室：在泰国驾驶，游客和外国人指南",
+    "de": "TAT Newsroom: Autofahren in Thailand, Hinweise für Touristen und Ausländer"
+   },
+   "href": "https://www.tatnews.org/?p=80727"
+  },
+  {
+   "t": {
+    "en": "Monthly Chiang Mai: renting a scooter in Chiang Mai",
+    "th": "Monthly Chiang Mai: คู่มือเช่ามอเตอร์ไซค์ในเชียงใหม่",
+    "my": "Monthly Chiang Mai: ချင်းမိုင်တွင် စကူတာငှားခြင်း",
+    "zh": "Monthly Chiang Mai：在清迈租摩托车",
+    "de": "Monthly Chiang Mai: einen Roller in Chiang Mai mieten"
+   },
+   "href": "https://monthlychiangmai.pages.dev/guides/renting-a-scooter/"
+  }
+ ],
+ "glyphs": [
+  "scooter",
+  "key",
+  "calendar"
+ ]
+}

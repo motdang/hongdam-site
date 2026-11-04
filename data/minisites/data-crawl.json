@@ -1,0 +1,326 @@
+{
+ "id": "data-crawl",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People want a data collector when a website or a set of files holds numbers they need in a table, and copying by hand takes too long.",
+  "th": "คนต้องการโปรแกรมเก็บข้อมูลเมื่อเว็บไซต์หรือไฟล์มีตัวเลขที่ต้องใช้ในตาราง และการคัดลอกด้วยมือใช้เวลานานเกินไป",
+  "my": "ဝဘ်ဆိုက် သို့မဟုတ် ဖိုင်များထဲက ကိန်းဂဏန်းတွေကို ဇယားတစ်ခုအဖြစ် လိုချင်ပြီး လက်ဖြင့်ကူးရတာ အချိန်များလွန်းသောအခါ လူတွေက ဒေတာ စုဆောင်းစနစ် လိုချင်ကြသည်။",
+  "zh": "网站或文件里有需要放进表格的数据，手工复制又太费时间，人们就会需要数据采集程序。",
+  "de": "Man braucht einen Datensammler, wenn eine Website oder mehrere Dateien Zahlen enthalten, die in eine Tabelle sollen, und das Abschreiben von Hand zu lange dauert."
+ },
+ "n": {
+  "de": "Datensammler"
+ },
+ "l": {
+  "de": "Liest Websites oder Dateien nach Zeitplan in eine Tabelle."
+ },
+ "glyphs": [
+  "spider",
+  "laptop",
+  "page"
+ ],
+ "steps": [
+  {
+   "db": "gears",
+   "t": {
+    "en": "A program is built to read your websites or files.",
+    "th": "สร้างโปรแกรมที่อ่านเว็บไซต์หรือไฟล์ของคุณ",
+    "my": "သင့်ဝဘ်ဆိုက် သို့မဟုတ် ဖိုင်များကို ဖတ်မည့် ပရိုဂရမ်တစ်ခု တည်ဆောက်သည်။",
+    "zh": "编写一个读取您的网站或文件的程序。",
+    "de": "Ein Programm wird gebaut, das Ihre Websites oder Dateien liest."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款之后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "The program reads them on a schedule.",
+    "th": "โปรแกรมอ่านข้อมูลตามรอบเวลา",
+    "my": "ပရိုဂရမ်က အချိန်ဇယားအတိုင်း ဖတ်သည်။",
+    "zh": "程序按计划定时读取。",
+    "de": "Das Programm liest sie nach Zeitplan."
+   },
+   "who": {
+    "en": "The program",
+    "th": "โปรแกรม",
+    "my": "ပရိုဂရမ်",
+    "zh": "程序",
+    "de": "Das Programm"
+   },
+   "time": {
+    "en": "On the schedule",
+    "th": "ตามรอบเวลา",
+    "my": "အချိန်ဇယားအတိုင်း",
+    "zh": "按计划",
+    "de": "Nach Zeitplan"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "What it reads becomes a clean table, map or page.",
+    "th": "สิ่งที่อ่านได้ถูกทำเป็นตาราง แผนที่ หรือหน้าเว็บที่เป็นระเบียบ",
+    "my": "ဖတ်ထားသည့်အရာများကို သပ်ရပ်သော ဇယား၊ မြေပုံ သို့မဟုတ် စာမျက်နှာအဖြစ် ပြောင်းသည်။",
+    "zh": "读到的内容变成整齐的表格、地图或网页。",
+    "de": "Was es liest, wird zu einer sauberen Tabelle, Karte oder Seite."
+   },
+   "who": {
+    "en": "The program",
+    "th": "โปรแกรม",
+    "my": "ပရိုဂရမ်",
+    "zh": "程序",
+    "de": "Das Programm"
+   },
+   "time": {
+    "en": "After each read",
+    "th": "หลังอ่านแต่ละครั้ง",
+    "my": "ဖတ်ပြီးတိုင်း",
+    "zh": "每次读取之后",
+    "de": "Nach jedem Lesen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A robots.txt file tells search engine crawlers which URLs they can access on a site. Google's page says it does not keep a page out of Google, and that it is up to the crawler to obey it.",
+    "th": "ไฟล์ robots.txt บอก crawler ของเสิร์ชเอนจินว่าเข้าถึง URL ใดในเว็บไซต์ได้ หน้าเว็บของ Google ระบุว่าไฟล์นี้ไม่ได้กันหน้าออกจาก Google และการทำตามเป็นเรื่องของ crawler แต่ละตัว",
+    "my": "robots.txt ဖိုင်က ရှာဖွေရေးအင်ဂျင်၏ crawler များကို ဝဘ်ဆိုက်ပေါ်ရှိ မည်သည့် URL များကို ဝင်ရောက်နိုင်သည်ကို ပြောပြသည်။ Google ၏ စာမျက်နှာက ထိုဖိုင်သည် စာမျက်နှာတစ်ခုကို Google ထဲမှ ဖယ်ထားခြင်း မဟုတ်ဟု ဆိုပြီး လိုက်နာမလိုက်နာမှာ crawler ပေါ်မူတည်သည်ဟု ဆိုသည်။",
+    "zh": "robots.txt 文件告诉搜索引擎爬虫可以访问网站上的哪些网址。Google 的页面说明，它不能把网页挡在 Google 之外，是否遵守由爬虫自己决定。",
+    "de": "Eine robots.txt-Datei sagt Crawlern von Suchmaschinen, welche URLs sie auf einer Website aufrufen dürfen. Laut Google hält sie eine Seite nicht aus Google heraus, und ob ein Crawler sie befolgt, liegt bei ihm."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  {
+   "t": {
+    "en": "RFC 9309, the standard for robots.txt, says its rules are not a form of access authorization. Crawlers are asked to follow them.",
+    "th": "RFC 9309 ซึ่งเป็นมาตรฐานของ robots.txt ระบุว่ากฎในไฟล์ไม่ใช่การอนุญาตให้เข้าถึง และเพียงขอให้ crawler ปฏิบัติตาม",
+    "my": "robots.txt စံနှုန်းဖြစ်သော RFC 9309 က ဖိုင်ထဲက စည်းမျဉ်းများသည် ဝင်ရောက်ခွင့်ပြုချက် မဟုတ်ဟု ဆိုသည်။ crawler များကို လိုက်နာရန် တောင်းဆိုရုံသာ ဖြစ်သည်။",
+    "zh": "robots.txt 的标准 RFC 9309 指出，其中的规则不是访问授权，只是请爬虫遵守。",
+    "de": "RFC 9309, der Standard für robots.txt, hält fest, dass seine Regeln keine Zugriffsberechtigung sind. Crawler werden nur gebeten, sie zu befolgen."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc9309.html"
+  },
+  {
+   "t": {
+    "en": "Thailand's Personal Data Protection Act (PDPA) covers information that identifies a natural person (Section 6). If a business collects it from a source other than the person, Section 25 asks for notice within 30 days and consent, unless an exception applies.",
+    "th": "พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (PDPA) ใช้กับข้อมูลที่ระบุตัวบุคคลธรรมดาได้ (มาตรา 6) หากธุรกิจเก็บข้อมูลนั้นจากแหล่งอื่นที่ไม่ใช่เจ้าของข้อมูล มาตรา 25 ให้แจ้งเจ้าของข้อมูลภายใน 30 วันและขอความยินยอม เว้นแต่มีข้อยกเว้น",
+    "my": "ထိုင်းကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (PDPA) သည် သဘာဝပုဂ္ဂိုလ်တစ်ဦးကို ဖော်ထုတ်နိုင်သော အချက်အလက်ကို ခြုံငုံသည် (ပုဒ်မ 6)။ လုပ်ငန်းတစ်ခုက ထိုပုဂ္ဂိုလ်ကိုယ်တိုင်မဟုတ်သော အရင်းအမြစ်မှ ရယူလျှင် ပုဒ်မ 25 အရ ခြွင်းချက်မရှိပါက ရက် 30 အတွင်း အကြောင်းကြားပြီး ခွင့်ပြုချက် ယူရသည်။",
+    "zh": "泰国《个人数据保护法》（PDPA）适用于能识别自然人的信息（第 6 条）。企业从本人以外的渠道收集这类信息时，第 25 条要求在 30 天内告知本人并取得同意，除非有例外。",
+    "de": "Das thailändische Datenschutzgesetz (PDPA) gilt für Angaben, die eine natürliche Person erkennbar machen (Section 6). Holt ein Unternehmen solche Angaben aus einer anderen Quelle als von der Person selbst, verlangt Section 25 die Information binnen 30 Tagen und die Zustimmung, ausser es gilt eine Ausnahme."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Google Maps Platform's terms (3.2.3) say a customer will not scrape Google Maps content for use outside the services, including copying and saving business names, addresses or user reviews.",
+    "th": "ข้อกำหนดของ Google Maps Platform (ข้อ 3.2.3) ระบุว่าลูกค้าจะไม่ดึงเนื้อหาของ Google Maps ไปใช้นอกบริการ รวมถึงการคัดลอกและบันทึกชื่อธุรกิจ ที่อยู่ หรือรีวิวของผู้ใช้",
+    "my": "Google Maps Platform ၏ စည်းမျဉ်း (3.2.3) အရ ဖောက်သည်သည် Google Maps အကြောင်းအရာကို ဝန်ဆောင်မှုပြင်ပတွင် အသုံးပြုရန် ကူးယူခြင်း မပြုရ။ လုပ်ငန်းအမည်၊ လိပ်စာ သို့မဟုတ် အသုံးပြုသူသုံးသပ်ချက်များကို ကူးပြီး သိမ်းခြင်းလည်း ပါဝင်သည်။",
+    "zh": "Google Maps Platform 条款（第 3.2.3 条）规定，客户不得为在服务之外使用而抓取 Google 地图内容，其中包括复制并保存商家名称、地址或用户评价。",
+    "de": "Die Bedingungen von Google Maps Platform (Ziffer 3.2.3) verbieten es Kunden, Inhalte von Google Maps zur Nutzung ausserhalb der Dienste auszulesen, darunter das Kopieren und Speichern von Firmennamen, Adressen oder Nutzerbewertungen."
+   },
+   "src": "https://cloud.google.com/maps-platform/terms"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork listing: data from web pages into a file (.txt, .csv or Word), one package, 3 days",
+    "th": "รายการบน Fastwork: เก็บข้อมูลจากหน้าเว็บเป็นไฟล์ (.txt, .csv หรือ Word) แพ็กเกจเดียว 3 วัน",
+    "my": "Fastwork စာရင်း: ဝဘ်စာမျက်နှာများမှ ဒေတာကို ဖိုင် (.txt၊ .csv သို့မဟုတ် Word) အဖြစ် ထုတ်ယူခြင်း၊ ပက်ကေ့ချ်တစ်ခု၊ ရက် 3 ရက်",
+    "zh": "Fastwork 服务页：把网页数据采集成文件（.txt、.csv 或 Word），单一套餐，3 天",
+    "de": "Fastwork-Angebot: Daten von Webseiten in eine Datei (.txt, .csv oder Word), ein Paket, 3 Tage"
+   },
+   "p": {
+    "en": "฿1,500",
+    "th": "฿1,500",
+    "my": "฿1,500",
+    "zh": "฿1,500",
+    "de": "฿1,500"
+   },
+   "src": "https://fastwork.co/user/aekkasit.s/web-scraping-69816230"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: data from websites, three packages, delivery in 1 to 2 days",
+    "th": "รายการบน Fastwork: ดึงข้อมูลจากเว็บไซต์ 3 แพ็กเกจ ส่งงานใน 1–2 วัน",
+    "my": "Fastwork စာရင်း: ဝဘ်ဆိုက်များမှ ဒေတာ ထုတ်ယူခြင်း၊ ပက်ကေ့ချ် 3 မျိုး၊ ရက် 1 မှ 2 အတွင်း ပို့ပေးသည်",
+    "zh": "Fastwork 服务页：从网站提取数据，三个套餐，1 至 2 天交付",
+    "de": "Fastwork-Angebot: Daten von Websites, drei Pakete, Lieferung in 1 bis 2 Tagen"
+   },
+   "p": {
+    "en": "฿1,990–3,990",
+    "th": "฿1,990–3,990",
+    "my": "฿1,990–3,990",
+    "zh": "฿1,990–3,990",
+    "de": "฿1,990–3,990"
+   },
+   "src": "https://fastwork.co/user/simpledev/web-scraping-78782168"
+  },
+  {
+   "t": {
+    "en": "Apify, a platform for running scrapers yourself: Starter plan (Free plan: US$0)",
+    "th": "Apify แพลตฟอร์มสำหรับรันตัวดึงข้อมูลด้วยตัวเอง: แพ็กเกจ Starter (แพ็กเกจ Free: US$0)",
+    "my": "Apify - scraper များကို ကိုယ်တိုင်လည်ပတ်စေသည့် ပလက်ဖောင်း: Starter အစီအစဉ် (Free အစီအစဉ်: US$0)",
+    "zh": "Apify，自行运行爬虫的平台：Starter 套餐（Free 套餐：US$0）",
+    "de": "Apify, Plattform, auf der Sie Scraper selbst betreiben: Tarif Starter (Tarif Free: US$0)"
+   },
+   "p": {
+    "en": "US$19 a month",
+    "th": "US$19 ต่อเดือน",
+    "my": "တစ်လလျှင် US$19",
+    "zh": "每月 US$19",
+    "de": "US$19 pro Monat"
+   },
+   "src": "https://apify.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Octoparse, a point-and-click scraping program: Standard plan, billed yearly (Free plan: 10 tasks)",
+    "th": "Octoparse โปรแกรมดึงข้อมูลแบบคลิก: แพ็กเกจ Standard จ่ายรายปี (แพ็กเกจ Free: 10 งาน)",
+    "my": "Octoparse - နှိပ်ရုံဖြင့် ဒေတာထုတ်ယူသည့် ပရိုဂရမ်: Standard အစီအစဉ်၊ တစ်နှစ်စာ ပေးချေ (Free အစီအစဉ်: လုပ်ငန်း 10 ခု)",
+    "zh": "Octoparse，点选式采集软件：Standard 套餐，按年付费（Free 套餐：10 个任务）",
+    "de": "Octoparse, Programm zum Auslesen per Mausklick: Tarif Standard, jährlich abgerechnet (Tarif Free: 10 Aufgaben)"
+   },
+   "p": {
+    "en": "From US$69 a month",
+    "th": "เริ่มต้น US$69 ต่อเดือน",
+    "my": "တစ်လလျှင် US$69 မှစ၍",
+    "zh": "每月 US$69 起",
+    "de": "ab US$69 pro Monat"
+   },
+   "src": "https://www.octoparse.com/pricing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can a website tell a crawler to stay away?",
+    "th": "เว็บไซต์บอกโปรแกรมรวบรวมข้อมูลไม่ให้เข้าได้ไหม",
+    "my": "ဝဘ်ဆိုက်တစ်ခုက crawler ကို မဝင်ရန် ပြောနိုင်ပါသလား။",
+    "zh": "网站能让爬虫别来吗？",
+    "de": "Kann eine Website Crawler fernhalten?"
+   },
+   "a": {
+    "en": "Yes. A site publishes a robots.txt file that lists the URLs a crawler may open. Google's page says it is up to the crawler to obey the file. Google also says the file does not keep a page out of Google.",
+    "th": "ได้ เว็บไซต์เผยแพร่ไฟล์ robots.txt ที่ระบุ URL ที่ crawler เปิดได้ หน้าเว็บของ Google ระบุว่าการทำตามไฟล์เป็นเรื่องของ crawler และไฟล์นี้ไม่ได้กันหน้าออกจาก Google",
+    "my": "ပြောနိုင်သည်။ ဝဘ်ဆိုက်က crawler ဖွင့်ခွင့်ရှိသော URL များကို စာရင်းပြုထားသည့် robots.txt ဖိုင်ကို ထုတ်ပြန်သည်။ Google စာမျက်နှာက ဖိုင်ကို လိုက်နာမလိုက်နာမှာ crawler ပေါ်မူတည်သည်ဟု ဆိုသည်။ ထိုဖိုင်သည် စာမျက်နှာတစ်ခုကို Google ထဲမှ ဖယ်ထားခြင်း မဟုတ်ဟုလည်း ဆိုသည်။",
+    "zh": "可以。网站发布 robots.txt 文件，列出爬虫可以打开的网址。Google 的页面说明，是否遵守由爬虫决定。该页面还说，这个文件不能把网页挡在 Google 之外。",
+    "de": "Ja. Eine Website veröffentlicht eine robots.txt-Datei mit den URLs, die ein Crawler öffnen darf. Laut Google liegt es beim Crawler, die Datei zu befolgen. Google sagt auch, dass die Datei eine Seite nicht aus Google heraushält."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  {
+   "q": {
+    "en": "What is the fine under Thailand's data protection law?",
+    "th": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลของไทยกำหนดโทษปรับเท่าไร",
+    "my": "ထိုင်း၏ ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေအရ ဒဏ်ငွေ ဘယ်လောက်လဲ။",
+    "zh": "泰国数据保护法的罚款是多少？",
+    "de": "Wie hoch ist das Bussgeld nach dem thailändischen Datenschutzgesetz?"
+   },
+   "a": {
+    "en": "Section 83 sets an administrative fine of up to ฿3 million for breaking Section 25 paragraph one, which covers collecting personal data from a source other than the person. Section 84 sets up to ฿5 million for collecting data such as health, religion or biometric data without explicit consent (Section 26).",
+    "th": "มาตรา 83 กำหนดโทษปรับทางปกครองสูงสุด ฿3 ล้าน สำหรับการฝ่าฝืนมาตรา 25 วรรคหนึ่ง ซึ่งว่าด้วยการเก็บข้อมูลส่วนบุคคลจากแหล่งอื่นที่ไม่ใช่เจ้าของข้อมูล มาตรา 84 กำหนดสูงสุด ฿5 ล้าน สำหรับการเก็บข้อมูลเช่นสุขภาพ ศาสนา หรือข้อมูลชีวภาพโดยไม่ได้รับความยินยอมโดยชัดแจ้ง (มาตรา 26)",
+    "my": "ပုဒ်မ 83 က ပုဒ်မ 25 စာပိုဒ်တစ်ကို ချိုးဖောက်လျှင် အုပ်ချုပ်ရေးဒဏ်ငွေ ฿3 သန်းအထိ သတ်မှတ်သည်။ ၎င်းသည် ပုဂ္ဂိုလ်ကိုယ်တိုင်မဟုတ်သော အရင်းအမြစ်မှ ကိုယ်ရေးအချက်အလက် စုဆောင်းခြင်းကို ခြုံငုံသည်။ ပုဒ်မ 84 က ကျန်းမာရေး၊ ဘာသာရေး သို့မဟုတ် ဇီဝမက်ထရစ် အချက်အလက်ကဲ့သို့ အချက်အလက်ကို ရှင်းရှင်းလင်းလင်း ခွင့်ပြုချက်မရဘဲ စုဆောင်းလျှင် ฿5 သန်းအထိ သတ်မှတ်သည် (ပုဒ်မ 26)။",
+    "zh": "第 83 条规定，违反第 25 条第一款（从本人以外的渠道收集个人数据）的，行政罚款最高 ฿300 万。第 84 条规定，未经明确同意收集健康、宗教或生物识别等数据的，最高 ฿500 万（第 26 条）。",
+    "de": "Section 83 setzt für Verstösse gegen Section 25 Absatz 1, also das Erheben personenbezogener Daten aus einer anderen Quelle als von der Person selbst, ein Verwaltungsbussgeld bis ฿3 Millionen fest. Section 84 setzt bis ฿5 Millionen fest für das Erheben von Daten wie Gesundheit, Religion oder biometrischen Daten ohne ausdrückliche Zustimmung (Section 26)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "q": {
+    "en": "Can a crawler copy business names from Google Maps?",
+    "th": "ดึงชื่อธุรกิจจาก Google Maps ได้ไหม",
+    "my": "Google Maps မှ လုပ်ငန်းအမည်များကို crawler ဖြင့် ကူးယူနိုင်ပါသလား။",
+    "zh": "爬虫能从 Google 地图复制商家名称吗？",
+    "de": "Darf ein Crawler Firmennamen aus Google Maps kopieren?"
+   },
+   "a": {
+    "en": "Google Maps Platform's terms say no. Section 3.2.3 lists copying and saving business names, addresses or user reviews among the things a customer will not do with Google Maps content.",
+    "th": "ข้อกำหนดของ Google Maps Platform ระบุว่าไม่ได้ ข้อ 3.2.3 ระบุการคัดลอกและบันทึกชื่อธุรกิจ ที่อยู่ หรือรีวิวของผู้ใช้ ไว้ในสิ่งที่ลูกค้าจะไม่ทำกับเนื้อหาของ Google Maps",
+    "my": "Google Maps Platform ၏ စည်းမျဉ်းက မရဟု ဆိုသည်။ ပုဒ်မခွဲ 3.2.3 တွင် လုပ်ငန်းအမည်၊ လိပ်စာ သို့မဟုတ် အသုံးပြုသူသုံးသပ်ချက်များကို ကူးပြီး သိမ်းခြင်းကို Google Maps အကြောင်းအရာဖြင့် ဖောက်သည်မပြုရသည့်အရာများထဲတွင် ထည့်ထားသည်။",
+    "zh": "Google Maps Platform 条款的答案是不可以。第 3.2.3 条把复制并保存商家名称、地址或用户评价，列为客户不得对 Google 地图内容做的事。",
+    "de": "Nach den Bedingungen von Google Maps Platform nicht. Ziffer 3.2.3 nennt das Kopieren und Speichern von Firmennamen, Adressen oder Nutzerbewertungen unter dem, was Kunden mit Inhalten von Google Maps nicht tun."
+   },
+   "src": "https://cloud.google.com/maps-platform/terms"
+  },
+  {
+   "q": {
+    "en": "How much does a web scraper cost in Thailand?",
+    "th": "รับทำ web scraping ในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် web scraper တစ်ခု၏ စျေးနှုန်း ဘယ်လောက်လဲ။",
+    "zh": "在泰国做一个网页数据采集程序要多少钱？",
+    "de": "Was kostet ein Web-Scraper in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork listing with 30 sales has three packages: ฿1,990, ฿2,990 and ฿3,990. The first two are delivered in 1 day and the third in 2 days.",
+    "th": "รายการหนึ่งบน Fastwork ที่ขายได้ 30 ครั้งมี 3 แพ็กเกจ คือ ฿1,990 ฿2,990 และ ฿3,990 สองแพ็กเกจแรกส่งงานใน 1 วัน แพ็กเกจที่สามใน 2 วัน",
+    "my": "ရောင်းချမှု 30 ရှိသော Fastwork စာရင်းတစ်ခုတွင် ပက်ကေ့ချ် 3 မျိုး ရှိသည်။ ฿1,990၊ ฿2,990 နှင့် ฿3,990 ဖြစ်သည်။ ပထမနှစ်မျိုးကို ရက် 1 ရက်၊ တတိယကို ရက် 2 ရက်အတွင်း ပို့သည်။",
+    "zh": "Fastwork 上一个已售 30 次的服务页有三个套餐：฿1,990、฿2,990 和 ฿3,990。前两个 1 天交付，第三个 2 天交付。",
+    "de": "Ein Fastwork-Angebot mit 30 Verkäufen hat drei Pakete: ฿1,990, ฿2,990 und ฿3,990. Die ersten beiden werden in 1 Tag geliefert, das dritte in 2 Tagen."
+   },
+   "src": "https://fastwork.co/user/simpledev/web-scraping-78782168"
+  },
+  {
+   "q": {
+    "en": "Is there a free web scraping tool?",
+    "th": "มีโปรแกรมดึงข้อมูลเว็บฟรีไหม",
+    "my": "အခမဲ့ web scraping ကိရိယာ ရှိပါသလား။",
+    "zh": "有免费的网页数据采集工具吗？",
+    "de": "Gibt es ein kostenloses Tool zum Auslesen von Websites?"
+   },
+   "a": {
+    "en": "Apify's pricing page lists a Free plan at US$0 with US$5 of platform usage a month. Unused credits expire at the end of each billing cycle.",
+    "th": "หน้าราคาของ Apify มีแพ็กเกจ Free ราคา US$0 พร้อมการใช้งานแพลตฟอร์ม US$5 ต่อเดือน เครดิตที่ใช้ไม่หมดจะหมดอายุเมื่อสิ้นรอบบิล",
+    "my": "Apify ၏ စျေးနှုန်းစာမျက်နှာတွင် US$0 ဖြစ်သော Free အစီအစဉ်ကို တစ်လလျှင် ပလက်ဖောင်းအသုံးပြုမှု US$5 နှင့်အတူ ဖော်ပြထားသည်။ မသုံးဖြစ်သော credit များသည် ငွေတောင်းခံသည့်ကာလ ပြီးဆုံးချိန်တွင် သက်တမ်းကုန်သည်။",
+    "zh": "Apify 的价格页列有 Free 套餐，价格 US$0，每月含 US$5 的平台用量。未用完的额度在计费周期结束时作废。",
+    "de": "Auf der Preisseite von Apify steht ein Tarif Free für US$0 mit US$5 Plattformnutzung im Monat. Nicht genutztes Guthaben verfällt am Ende des Abrechnungszeitraums."
+   },
+   "src": "https://apify.com/pricing"
+  }
+ ],
+ "related": [
+  "price-watch",
+  "leads",
+  "research",
+  "places-data",
+  "ai-batch",
+  "crawl-pay"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Search Central: introduction to robots.txt",
+    "th": "Google Search Central: แนะนำไฟล์ robots.txt",
+    "my": "Google Search Central: robots.txt မိတ်ဆက်",
+    "zh": "Google Search Central：robots.txt 简介",
+    "de": "Google Search Central: Einführung in robots.txt"
+   },
+   "href": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  {
+   "t": {
+    "en": "Apify: plans and prices",
+    "th": "Apify: แพ็กเกจและราคา",
+    "my": "Apify: အစီအစဉ်များနှင့် စျေးနှုန်းများ",
+    "zh": "Apify：套餐与价格",
+    "de": "Apify: Tarife und Preise"
+   },
+   "href": "https://apify.com/pricing"
+  }
+ ]
+}

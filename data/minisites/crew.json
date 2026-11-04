@@ -1,0 +1,299 @@
+{
+ "id": "crew",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People bring a hard problem with many parts, and a crew of AI agents can work on the parts at the same time.",
+  "th": "คนนำโจทย์ยากที่มีหลายส่วนมา และทีมเอเจนต์ AI ทำหลายส่วนพร้อมกันได้",
+  "my": "လူတွေက အပိုင်းများစွာပါသော ခက်ခဲသည့်ပြဿနာကို ယူလာပြီး AI agent အဖွဲ့က အပိုင်းများကို တစ်ပြိုင်နက် လုပ်ဆောင်နိုင်သည်။",
+  "zh": "人们带来由许多部分组成的难题，一组 AI 智能体可以同时处理这些部分。",
+  "de": "Man bringt ein schwieriges Problem mit vielen Teilen, und ein Team aus KI-Agenten kann die Teile gleichzeitig bearbeiten."
+ },
+ "n": {
+  "de": "Ein Teamtag für ein schwieriges Problem"
+ },
+ "l": {
+  "de": "Unser Team für einen Tag an dem, was Sie mitbringen."
+ },
+ "steps": [
+  {
+   "db": "thinking",
+   "t": {
+    "en": "You bring the problem.",
+    "th": "คุณนำโจทย์มา",
+    "my": "သင်က ပြဿနာကို ယူလာသည်။",
+    "zh": "您带来问题。",
+    "de": "Sie bringen das Problem mit."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ထိုနေ့မတိုင်မီ",
+    "zh": "当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "gears",
+   "t": {
+    "en": "The crew works on it for one day.",
+    "th": "ทีมทำงานกับโจทย์หนึ่งวัน",
+    "my": "အဖွဲ့က ထိုပြဿနာကို တစ်ရက်လုံး လုပ်ဆောင်သည်။",
+    "zh": "团队用一天时间处理它。",
+    "de": "Das Team arbeitet einen Tag daran."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "One day",
+    "th": "หนึ่งวัน",
+    "my": "တစ်ရက်",
+    "zh": "一天",
+    "de": "Ein Tag"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get in writing what we found, what we built and what comes next.",
+    "th": "คุณได้รับเป็นลายลักษณ์อักษรว่าเจออะไร สร้างอะไร และขั้นต่อไปคืออะไร",
+    "my": "သင်က ကျွန်ုပ်တို့ တွေ့ရှိသည့်အရာ၊ တည်ဆောက်သည့်အရာနှင့် နောက်ထပ်လုပ်ရမည့်အရာကို စာဖြင့် ရရှိသည်။",
+    "zh": "您会收到书面文件，写明我们发现了什么、做出了什么、下一步是什么。",
+    "de": "Sie erhalten schriftlich, was wir gefunden, was wir gebaut haben und was als Nächstes kommt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the day",
+    "th": "หลังวันงาน",
+    "my": "ထိုနေ့ပြီးနောက်",
+    "zh": "当天之后",
+    "de": "Nach dem Tag"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In CrewAI's documentation, a crew is a group of agents that work together on a set of tasks. A crew runs its tasks one after another by default.",
+    "th": "ในเอกสารของ CrewAI crew คือกลุ่มเอเจนต์ที่ทำงานร่วมกันกับชุดงาน โดยค่าเริ่มต้น crew ทำงานทีละงานต่อเนื่องกัน",
+    "my": "CrewAI စာတမ်းတွင် crew ဆိုသည်မှာ လုပ်ငန်းစုတစ်ခုအတွက် အတူလုပ်ဆောင်သော agent အုပ်စုတစ်ခု ဖြစ်သည်။ ပုံမှန်အားဖြင့် crew သည် လုပ်ငန်းများကို တစ်ခုပြီးတစ်ခု လုပ်ဆောင်သည်။",
+    "zh": "在 CrewAI 的文档里，crew（团队）是共同完成一组任务的一群智能体。默认情况下，crew 按顺序一个接一个地执行任务。",
+    "de": "In der Dokumentation von CrewAI ist eine Crew eine Gruppe von Agenten, die gemeinsam an einer Reihe von Aufgaben arbeiten. Standardmässig führt eine Crew ihre Aufgaben nacheinander aus."
+   },
+   "src": "https://docs.crewai.com/en/concepts/crews"
+  },
+  {
+   "t": {
+    "en": "Anthropic says agents use about 4 times more tokens than chat, and systems with several agents about 15 times more. Tokens are the pieces of text a model reads and writes.",
+    "th": "Anthropic ระบุว่าเอเจนต์ใช้โทเคนมากกว่าแชตราว 4 เท่า และระบบที่มีหลายเอเจนต์ใช้มากกว่าราว 15 เท่า โทเคนคือชิ้นส่วนข้อความที่โมเดลอ่านและเขียน",
+    "my": "Anthropic က agent များသည် chat ထက် token ကို 4 ဆခန့် ပိုသုံးပြီး agent များစွာပါသော စနစ်များက 15 ဆခန့် ပိုသုံးသည်ဟု ဆိုသည်။ token ဆိုသည်မှာ မော်ဒယ်က ဖတ်ပြီး ရေးသော စာသားအပိုင်းအစများ ဖြစ်သည်။",
+    "zh": "Anthropic 称，智能体消耗的 token 约为聊天的 4 倍，多智能体系统约为 15 倍。token 是模型读写的文本片段。",
+    "de": "Anthropic schreibt, Agenten verbrauchten etwa 4-mal so viele Tokens wie ein Chat und Systeme mit mehreren Agenten etwa 15-mal so viele. Tokens sind die Textstücke, die ein Modell liest und schreibt."
+   },
+   "src": "https://www.anthropic.com/engineering/multi-agent-research-system"
+  },
+  {
+   "t": {
+    "en": "Anthropic says systems with several agents suit breadth-first questions that follow several independent directions at once, and tasks that need heavy parallel work.",
+    "th": "Anthropic ระบุว่าระบบหลายเอเจนต์เหมาะกับคำถามแบบกว้างที่ตามหลายทางอิสระพร้อมกัน และงานที่ต้องทำขนานกันมาก",
+    "my": "Anthropic က agent များစွာပါသော စနစ်များသည် လွတ်လပ်သော လမ်းကြောင်းများစွာကို တစ်ပြိုင်နက် လိုက်သော ကျယ်ပြန့်သည့်မေးခွန်းများနှင့် အပြိုင်လုပ်ဆောင်မှုများသော အလုပ်များနှင့် သင့်တော်သည်ဟု ဆိုသည်။",
+    "zh": "Anthropic 称，多智能体系统适合同时沿多个相互独立的方向展开的广度型问题，以及需要大量并行工作的任务。",
+    "de": "Anthropic schreibt, Systeme mit mehreren Agenten eigneten sich für breit angelegte Fragen, die mehreren unabhängigen Richtungen gleichzeitig folgen, und für Aufgaben mit viel paralleler Arbeit."
+   },
+   "src": "https://www.anthropic.com/engineering/multi-agent-research-system"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork seller of AI cost-saving consulting, one-to-one or workshop style",
+    "th": "ผู้ขายบริการที่ปรึกษาเรื่องใช้ AI ลดต้นทุนบน Fastwork แบบตัวต่อตัวหรือเวิร์กช็อป",
+    "my": "Fastwork ရှိ ကုန်ကျစရိတ်လျှော့ရန် AI အကြံပေးဝန်ဆောင်မှု ရောင်းသူတစ်ဦး (တစ်ဦးချင်း သို့မဟုတ် workshop ပုံစံ)",
+    "zh": "Fastwork 上一位卖家提供用 AI 降本的咨询，一对一或工作坊形式",
+    "de": "Ein Anbieter auf Fastwork für Beratung zum Kostensparen mit KI, einzeln oder als Workshop"
+   },
+   "p": {
+    "en": "฿4,990 for 3 hours in 1 day; ฿9,500 for 6 hours in 2 days; ฿14,000 for 9 hours in 3 days",
+    "th": "฿4,990 สำหรับ 3 ชั่วโมง ภายใน 1 วัน; ฿9,500 สำหรับ 6 ชั่วโมง ภายใน 2 วัน; ฿14,000 สำหรับ 9 ชั่วโมง ภายใน 3 วัน",
+    "my": "฿4,990 — 3 နာရီ၊ 1 ရက်အတွင်း။ ฿9,500 — 6 နာရီ၊ 2 ရက်အတွင်း။ ฿14,000 — 9 နာရီ၊ 3 ရက်အတွင်း",
+    "zh": "3 小时（1 天内）฿4,990；6 小时（2 天内）฿9,500；9 小时（3 天内）฿14,000",
+    "de": "฿4,990 für 3 Stunden an 1 Tag; ฿9,500 für 6 Stunden an 2 Tagen; ฿14,000 für 9 Stunden an 3 Tagen"
+   },
+   "src": "https://fastwork.co/user/zarntastic/ai-consultant-22242477"
+  },
+  {
+   "t": {
+    "en": "A Fastwork developer's AI automation built for a business: analysis, workflow design, build and install, testing, a user guide",
+    "th": "นักพัฒนาบน Fastwork สร้างระบบ AI อัตโนมัติให้ธุรกิจ: วิเคราะห์ ออกแบบขั้นตอน พัฒนาและติดตั้ง ทดสอบ และคู่มือผู้ใช้",
+    "my": "Fastwork ရှိ developer တစ်ဦးက စီးပွားရေးလုပ်ငန်းအတွက် AI အလိုအလျောက်စနစ် တည်ဆောက်ပေးသည် — ခွဲခြမ်းစိတ်ဖြာမှု၊ အလုပ်စဉ်ဒီဇိုင်း၊ တည်ဆောက်တပ်ဆင်မှု၊ စမ်းသပ်မှုနှင့် အသုံးပြုသူလမ်းညွှန်",
+    "zh": "Fastwork 上一位开发者为企业搭建 AI 自动化：分析、流程设计、开发和安装、测试、用户手册",
+    "de": "Ein Entwickler auf Fastwork baut eine KI-Automatisierung für ein Unternehmen: Analyse, Ablaufentwurf, Entwicklung und Installation, Test, Benutzerhandbuch"
+   },
+   "p": {
+    "en": "฿7,500; 5 days, unlimited revisions, support for problems within 14 days after delivery",
+    "th": "฿7,500 ส่งใน 5 วัน แก้ได้ไม่จำกัด ดูแลปัญหาในการใช้งานภายใน 14 วันหลังส่งมอบ",
+    "my": "฿7,500၊ 5 ရက်၊ ပြင်ဆင်မှု အကန့်အသတ်မရှိ၊ ပို့ပြီး 14 ရက်အတွင်း အသုံးပြုရာတွင် ဖြစ်သော ပြဿနာများအတွက် ပံ့ပိုးမှု",
+    "zh": "฿7,500；5 天交付，修改次数不限，交付后 14 天内处理使用中出现的问题",
+    "de": "฿7,500; 5 Tage, unbegrenzte Korrekturen, Unterstützung bei Problemen bis 14 Tage nach der Lieferung"
+   },
+   "src": "https://fastwork.co/user/box_automation/ai-automation-12079856"
+  },
+  {
+   "t": {
+    "en": "Claude Sonnet 5.5, the model price for the work of one agent",
+    "th": "Claude Sonnet 5.5 ราคาโมเดลสำหรับงานของเอเจนต์หนึ่งตัว",
+    "my": "Claude Sonnet 5.5 — agent တစ်ခု၏ အလုပ်အတွက် မော်ဒယ်စျေးနှုန်း",
+    "zh": "Claude Sonnet 5.5，一个智能体工作的模型费用",
+    "de": "Claude Sonnet 5.5, der Modellpreis für die Arbeit eines Agenten"
+   },
+   "p": {
+    "en": "US$2 per million input tokens, US$10 per million output tokens",
+    "th": "US$2 ต่อโทเคนขาเข้า 1 ล้าน, US$10 ต่อโทเคนขาออก 1 ล้าน",
+    "my": "input token သန်းတစ်သန်းလျှင် US$2၊ output token သန်းတစ်သန်းလျှင် US$10",
+    "zh": "每百万输入 token US$2，每百万输出 token US$10",
+    "de": "US$2 pro Million Eingabe-Tokens, US$10 pro Million Ausgabe-Tokens"
+   },
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  {
+   "t": {
+    "en": "Claude Opus 5.5, the model price for a lead agent",
+    "th": "Claude Opus 5.5 ราคาโมเดลสำหรับเอเจนต์หัวหน้า",
+    "my": "Claude Opus 5.5 — ခေါင်းဆောင် agent အတွက် မော်ဒယ်စျေးနှုန်း",
+    "zh": "Claude Opus 5.5，主导智能体的模型费用",
+    "de": "Claude Opus 5.5, der Modellpreis für einen leitenden Agenten"
+   },
+   "p": {
+    "en": "US$4 per million input tokens, US$20 per million output tokens",
+    "th": "US$4 ต่อโทเคนขาเข้า 1 ล้าน, US$20 ต่อโทเคนขาออก 1 ล้าน",
+    "my": "input token သန်းတစ်သန်းလျှင် US$4၊ output token သန်းတစ်သန်းလျှင် US$20",
+    "zh": "每百万输入 token US$4，每百万输出 token US$20",
+    "de": "US$4 pro Million Eingabe-Tokens, US$20 pro Million Ausgabe-Tokens"
+   },
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How does a crew split the work?",
+    "th": "crew แบ่งงานกันอย่างไร",
+    "my": "crew က အလုပ်ကို ဘယ်လို ခွဲလုပ်သလဲ။",
+    "zh": "团队怎么分工？",
+    "de": "Wie teilt eine Crew die Arbeit auf?"
+   },
+   "a": {
+    "en": "CrewAI lists two ways. In the sequential process, tasks run one after another, in order. In the hierarchical process, a manager agent hands out the tasks and checks the results.",
+    "th": "CrewAI ระบุสองแบบ แบบเรียงลำดับ งานทำทีละงานตามลำดับ แบบลำดับชั้น เอเจนต์ผู้จัดการแจกงานและตรวจผล",
+    "my": "CrewAI က နည်းလမ်းနှစ်မျိုး ဖော်ပြသည်။ အစဉ်လိုက်နည်းတွင် လုပ်ငန်းများကို အစဉ်အတိုင်း တစ်ခုပြီးတစ်ခု လုပ်သည်။ အဆင့်ဆင့်နည်းတွင် မန်နေဂျာ agent က လုပ်ငန်းများ ခွဲဝေပြီး ရလဒ်များကို စစ်ဆေးသည်။",
+    "zh": "CrewAI 列出两种方式。顺序式：任务按次序一个接一个执行。层级式：由一个经理智能体分派任务并检查结果。",
+    "de": "CrewAI nennt zwei Wege. Im sequenziellen Ablauf laufen die Aufgaben der Reihe nach. Im hierarchischen Ablauf verteilt ein Manager-Agent die Aufgaben und prüft die Ergebnisse."
+   },
+   "src": "https://docs.crewai.com/en/concepts/crews"
+  },
+  {
+   "q": {
+    "en": "How many agents does a problem need?",
+    "th": "โจทย์หนึ่งต้องใช้เอเจนต์กี่ตัว",
+    "my": "ပြဿနာတစ်ခုအတွက် agent ဘယ်နှစ်ခု လိုသလဲ။",
+    "zh": "一个问题需要几个智能体？",
+    "de": "Wie viele Agenten braucht ein Problem?"
+   },
+   "a": {
+    "en": "Anthropic's guide: a simple fact-finding task takes 1 agent with 3 to 10 tool calls. A direct comparison takes 2 to 4 subagents with 10 to 15 calls each. Complex research takes more than 10 subagents with clearly divided duties.",
+    "th": "แนวทางของ Anthropic: งานหาข้อเท็จจริงง่ายๆ ใช้เอเจนต์ 1 ตัว เรียกเครื่องมือ 3–10 ครั้ง การเปรียบเทียบตรงๆ ใช้เอเจนต์ย่อย 2–4 ตัว ตัวละ 10–15 ครั้ง งานวิจัยซับซ้อนใช้เอเจนต์ย่อยมากกว่า 10 ตัวที่แบ่งหน้าที่ชัดเจน",
+    "my": "Anthropic ၏ လမ်းညွှန်ချက် — ရိုးရှင်းသော အချက်အလက်ရှာဖွေမှုတွင် agent 1 ခုနှင့် tool ခေါ်ဆိုမှု 3–10 ကြိမ် သုံးသည်။ တိုက်ရိုက်နှိုင်းယှဉ်မှုတွင် subagent 2–4 ခုနှင့် တစ်ခုလျှင် ခေါ်ဆိုမှု 10–15 ကြိမ် သုံးသည်။ ရှုပ်ထွေးသော သုတေသနတွင် တာဝန်ခွဲဝေမှု ရှင်းလင်းသော subagent 10 ခုထက်ပို သုံးသည်။",
+    "zh": "Anthropic 的指引：简单的事实查找用 1 个智能体，调用工具 3 到 10 次；直接对比用 2 到 4 个子智能体，各调用 10 到 15 次；复杂研究用 10 个以上分工明确的子智能体。",
+    "de": "Die Richtlinie von Anthropic: Eine einfache Faktensuche braucht 1 Agenten mit 3 bis 10 Werkzeugaufrufen. Ein direkter Vergleich braucht 2 bis 4 Subagenten mit je 10 bis 15 Aufrufen. Komplexe Recherche braucht mehr als 10 Subagenten mit klar aufgeteilten Aufgaben."
+   },
+   "src": "https://www.anthropic.com/engineering/multi-agent-research-system"
+  },
+  {
+   "q": {
+    "en": "Which problems does a crew not suit?",
+    "th": "โจทย์แบบไหนไม่เหมาะกับ crew",
+    "my": "ဘယ်လိုပြဿနာတွေက crew နှင့် မသင့်တော်သလဲ။",
+    "zh": "哪些问题不适合团队？",
+    "de": "Welche Probleme eignen sich nicht für eine Crew?"
+   },
+   "a": {
+    "en": "Anthropic names domains where all agents must share the same context or depend on each other a lot, and most coding tasks, which have fewer parts that can run in parallel. It adds that agents are not yet good at real-time coordination and delegation.",
+    "th": "Anthropic ระบุงานที่เอเจนต์ทุกตัวต้องใช้บริบทเดียวกันหรือพึ่งกันมาก และงานเขียนโค้ดส่วนใหญ่ซึ่งมีส่วนที่ทำขนานกันได้น้อยกว่า และเสริมว่าเอเจนต์ยังไม่เก่งเรื่องประสานงานและมอบหมายงานแบบเรียลไทม์",
+    "my": "Anthropic က agent အားလုံး တူညီသော ဆက်စပ်အကြောင်းအရာကို မျှဝေရသော သို့မဟုတ် တစ်ခုနှင့်တစ်ခု များစွာ မှီခိုရသော အလုပ်များနှင့် အပြိုင်လုပ်နိုင်သော အပိုင်းနည်းသည့် ကုဒ်ရေးအလုပ်အများစုကို ဖော်ပြသည်။ agent များသည် အချိန်နှင့်တစ်ပြေးညီ ပူးပေါင်းညှိနှိုင်းမှုနှင့် တာဝန်ခွဲဝေမှုတွင် မကောင်းသေးကြောင်းလည်း ဆိုသည်။",
+    "zh": "Anthropic 指出：所有智能体必须共用同一上下文或相互依赖很多的领域，以及可并行部分较少的大多数编程任务。它还写道，智能体目前不擅长实时协调和分派。",
+    "de": "Anthropic nennt Bereiche, in denen alle Agenten denselben Kontext teilen müssen oder stark voneinander abhängen, und die meisten Programmieraufgaben, die weniger parallel laufende Teile haben. Es fügt hinzu, dass Agenten Koordination und Delegation in Echtzeit noch nicht gut beherrschen."
+   },
+   "src": "https://www.anthropic.com/engineering/multi-agent-research-system"
+  },
+  {
+   "q": {
+    "en": "Is a crew better than one agent?",
+    "th": "crew ดีกว่าเอเจนต์ตัวเดียวไหม",
+    "my": "crew သည် agent တစ်ခုတည်းထက် ပိုကောင်းသလား။",
+    "zh": "团队比单个智能体更好吗？",
+    "de": "Ist eine Crew besser als ein einzelner Agent?"
+   },
+   "a": {
+    "en": "On Anthropic's own research test, a lead agent (Claude Opus 4) with subagents (Claude Sonnet 4) did 90.2% better than a single Claude Opus 4 agent.",
+    "th": "ในการทดสอบงานวิจัยภายในของ Anthropic เอเจนต์หัวหน้า (Claude Opus 4) ที่มีเอเจนต์ย่อย (Claude Sonnet 4) ทำได้ดีกว่าเอเจนต์ Claude Opus 4 ตัวเดียว 90.2%",
+    "my": "Anthropic ကိုယ်တိုင်၏ သုတေသနစမ်းသပ်မှုတွင် subagent များ (Claude Sonnet 4) ပါသော ခေါင်းဆောင် agent (Claude Opus 4) သည် Claude Opus 4 agent တစ်ခုတည်းထက် 90.2% ပိုကောင်းခဲ့သည်။",
+    "zh": "在 Anthropic 自己的研究测试中，带子智能体（Claude Sonnet 4）的主导智能体（Claude Opus 4）比单个 Claude Opus 4 智能体高出 90.2%。",
+    "de": "Im eigenen Forschungstest von Anthropic schnitt ein leitender Agent (Claude Opus 4) mit Subagenten (Claude Sonnet 4) um 90.2% besser ab als ein einzelner Claude-Opus-4-Agent."
+   },
+   "src": "https://www.anthropic.com/engineering/multi-agent-research-system"
+  }
+ ],
+ "related": [
+  "ai-own",
+  "ai-automation",
+  "ai-assistant",
+  "bots",
+  "thai-plan",
+  "redteam"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Anthropic: how a multi-agent research system was built",
+    "th": "Anthropic: วิธีสร้างระบบวิจัยแบบหลายเอเจนต์",
+    "my": "Anthropic - agent များစွာပါ သုတေသနစနစ်ကို မည်သို့ တည်ဆောက်ခဲ့သည်",
+    "zh": "Anthropic：多智能体研究系统是怎样搭建的",
+    "de": "Anthropic: Wie ein Forschungssystem mit mehreren Agenten gebaut wurde"
+   },
+   "href": "https://www.anthropic.com/engineering/multi-agent-research-system"
+  },
+  {
+   "t": {
+    "en": "CrewAI documentation: crews",
+    "th": "เอกสาร CrewAI: crew",
+    "my": "CrewAI စာတမ်း - crew များ",
+    "zh": "CrewAI 文档：crew（团队）",
+    "de": "CrewAI-Dokumentation: Crews"
+   },
+   "href": "https://docs.crewai.com/en/concepts/crews"
+  }
+ ],
+ "glyphs": [
+  "robot",
+  "gears",
+  "lightbulb"
+ ]
+}

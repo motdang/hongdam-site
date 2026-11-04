@@ -1,0 +1,292 @@
+{
+ "id": "idme",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "US veterans and their families in Thailand can sign in to VA.gov through ID.me, which asks for identity documents and a video call.",
+  "th": "ทหารผ่านศึกสหรัฐฯ และครอบครัวในไทยเข้าระบบ VA.gov ผ่าน ID.me ได้ ซึ่ง ID.me ขอเอกสารยืนยันตัวตนและวิดีโอคอล",
+  "my": "US စစ်မှုထမ်းဟောင်းများနှင့် ထိုင်းရှိ မိသားစုများသည် ID.me မှတစ်ဆင့် VA.gov သို့ ဝင်ရောက်နိုင်ပြီး ID.me က အထောက်အထားစာရွက်စာတမ်းများနှင့် ဗီဒီယိုခေါ်ဆိုမှုကို တောင်းသည်။",
+  "zh": "美国退伍军人及其在泰国的家属可以通过 ID.me 登录 VA.gov，ID.me 会要求出示身份文件并进行视频通话。",
+  "de": "US-Veteranen und ihre Familien in Thailand können sich über ID.me bei VA.gov anmelden; ID.me verlangt Ausweisdokumente und ein Videogespräch."
+ },
+ "n": {
+  "de": "Hilfe bei der Anmeldung bei ID.me, VA oder SSA"
+ },
+ "l": {
+  "de": "Für US-Veteranen und Familien im Ausland. Ihre Passwörter geben Sie selbst ein."
+ },
+ "steps": [
+  {
+   "db": "laptop",
+   "t": {
+    "en": "We sit with you, by video or in person.",
+    "th": "เรานั่งช่วยคุณ ทางวิดีโอหรือพบตัว",
+    "my": "ဗီဒီယိုဖြင့် သို့မဟုတ် ကိုယ်တိုင်တွေ့၍ သင့်နှင့်အတူ ထိုင်ပေးသည်။",
+    "zh": "我们陪您一起，视频或当面均可。",
+    "de": "Wir setzen uns mit Ihnen zusammen, per Video oder persönlich."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹 与您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "The sitting",
+    "th": "ครั้งที่นั่งช่วย",
+    "my": "အတူထိုင်သည့်အချိန်",
+    "zh": "陪同期间",
+    "de": "Die Sitzung"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "We stay with you through the sign-in and the forms.",
+    "th": "อยู่กับคุณตลอดการเข้าระบบและการกรอกฟอร์ม",
+    "my": "ဝင်ရောက်ခြင်းနှင့် ဖောင်ဖြည့်ခြင်းတစ်လျှောက် သင့်နှင့်အတူ ရှိနေသည်။",
+    "zh": "登录和填表的过程中，我们一直陪着您。",
+    "de": "Wir bleiben bei Ihnen durch die Anmeldung und die Formulare."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The sitting",
+    "th": "ครั้งที่นั่งช่วย",
+    "my": "အတူထိုင်သည့်အချိန်",
+    "zh": "陪同期间",
+    "de": "Die Sitzung"
+   }
+  },
+  {
+   "db": "lock",
+   "t": {
+    "en": "You type your own passwords.",
+    "th": "คุณพิมพ์รหัสผ่านเอง",
+    "my": "စကားဝှက်ကို သင်ကိုယ်တိုင် ရိုက်ထည့်သည်။",
+    "zh": "密码由您本人输入。",
+    "de": "Ihre Passwörter geben Sie selbst ein."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "The sitting",
+    "th": "ครั้งที่นั่งช่วย",
+    "my": "အတူထိုင်သည့်အချိန်",
+    "zh": "陪同期间",
+    "de": "Die Sitzung"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "For an address outside the US, VA.gov names two ways to verify: ID.me or CLEAR. On the ID.me screen there is an option for people who don't live in the US, and the check is a video call with an ID.me representative.",
+    "th": "สำหรับที่อยู่นอกสหรัฐฯ VA.gov ระบุวิธียืนยันตัวตนสองแบบ คือ ID.me หรือ CLEAR ในหน้าจอของ ID.me มีตัวเลือกสำหรับผู้ที่ไม่ได้อาศัยในสหรัฐฯ และการตรวจสอบทำผ่านวิดีโอคอลกับเจ้าหน้าที่ของ ID.me",
+    "my": "US ပြင်ပလိပ်စာအတွက် VA.gov က အတည်ပြုနည်း နှစ်မျိုး — ID.me သို့မဟုတ် CLEAR — ကို ဖော်ပြထားသည်။ ID.me မျက်နှာပြင်တွင် US တွင် မနေထိုင်သူများအတွက် ရွေးချယ်စရာ ရှိပြီး စစ်ဆေးမှုကို ID.me ကိုယ်စားလှယ်နှင့် ဗီဒီယိုခေါ်ဆိုမှုဖြင့် ပြုလုပ်သည်။",
+    "zh": "地址在美国以外时，VA.gov 列出两种核验方式：ID.me 或 CLEAR。ID.me 页面上有供不住在美国的人使用的选项，核验方式是与 ID.me 工作人员的视频通话。",
+    "de": "Für eine Adresse ausserhalb der USA nennt VA.gov zwei Wege der Bestätigung: ID.me oder CLEAR. Auf dem ID.me-Bildschirm gibt es eine Auswahl für Personen, die nicht in den USA wohnen, und die Prüfung läuft als Videogespräch mit einer Vertretung von ID.me."
+   },
+   "src": "https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/"
+  },
+  {
+   "t": {
+    "en": "VA.gov accepts ID.me from abroad; without a US Social Security number, ID.me with a US passport is the route.",
+    "th": "VA.gov ใช้ ID.me จากต่างประเทศได้ ถ้าไม่มีเลขประกันสังคมสหรัฐฯ ใช้ ID.me กับหนังสือเดินทางสหรัฐฯ",
+    "my": "VA.gov သည် နိုင်ငံခြားမှ ID.me ကို လက်ခံသည်; US လူမှုဖူလုံရေးနံပါတ် မရှိပါက US ပတ်စပို့နှင့် ID.me ကို သုံးရသည်။",
+    "zh": "VA.gov 接受海外用户使用 ID.me；没有美国社安号的，凭美国护照用 ID.me。",
+    "de": "VA.gov akzeptiert ID.me aus dem Ausland; ohne US-Sozialversicherungsnummer führt der Weg über ID.me mit US-Reisepass."
+   },
+   "src": "https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/"
+  },
+  {
+   "t": {
+    "en": "On the ID.me video call, the agent checks the original identity documents; copies or photos are not accepted. Calls are offered in over 240 languages, with a third-party interpreter for people who don't speak English.",
+    "th": "ในวิดีโอคอลของ ID.me เจ้าหน้าที่ตรวจเอกสารยืนยันตัวตนฉบับจริง ไม่รับสำเนาหรือรูปถ่าย มีบริการวิดีโอคอลมากกว่า 240 ภาษา โดยมีล่ามจากบุคคลที่สามสำหรับผู้ที่ไม่พูดอังกฤษ",
+    "my": "ID.me ဗီဒီယိုခေါ်ဆိုမှုတွင် ကိုယ်စားလှယ်က မူရင်းအထောက်အထားစာရွက်စာတမ်းများကို စစ်ဆေးသည်၊ မိတ္တူ သို့မဟုတ် ဓာတ်ပုံကို လက်မခံပါ။ ဗီဒီယိုခေါ်ဆိုမှုကို ဘာသာစကား 240 ကျော်ဖြင့် ပေးထားပြီး အင်္ဂလိပ်စကား မပြောသူများအတွက် ပြင်ပကုမ္ပဏီမှ စကားပြန် ရှိသည်။",
+    "zh": "在 ID.me 的视频通话中，工作人员核对身份文件原件，不接受复印件或照片。通话提供 240 多种语言，不讲英语的人有第三方口译员。",
+    "de": "Beim Videogespräch von ID.me prüft die Vertretung die Original-Ausweisdokumente; Kopien oder Fotos werden nicht akzeptiert. Gespräche gibt es in über 240 Sprachen, mit einer externen Dolmetschperson für Personen, die kein Englisch sprechen."
+   },
+   "src": "https://help.id.me/hc/en-us/articles/26952364097559-Verify-with-ID-me-using-a-non-U-S-passport"
+  },
+  {
+   "t": {
+    "en": "ID.me also takes a valid non-US passport together with a document that shows the international address, such as a bank statement or a utility bill.",
+    "th": "ID.me รับหนังสือเดินทางที่ไม่ใช่ของสหรัฐฯ ที่ยังไม่หมดอายุ พร้อมเอกสารที่แสดงที่อยู่ต่างประเทศ เช่น ใบแจ้งยอดบัญชีธนาคารหรือใบแจ้งค่าสาธารณูปโภค",
+    "my": "ID.me သည် သက်တမ်းကျန်သော US မဟုတ်သည့် ပတ်စပို့နှင့်အတူ နိုင်ငံခြားလိပ်စာကို ပြသသည့် စာရွက် (ဥပမာ ဘဏ်ထုတ်ပြန်ချက် သို့မဟုတ် ရေမီးဘီလ်) ကိုလည်း လက်ခံသည်။",
+    "zh": "ID.me 也接受有效的非美国护照，并配合显示海外地址的文件，如银行对账单或水电账单。",
+    "de": "ID.me nimmt auch einen gültigen nicht-amerikanischen Pass zusammen mit einem Dokument, das die Adresse im Ausland zeigt, etwa einen Kontoauszug oder eine Nebenkostenrechnung."
+   },
+   "src": "https://help.id.me/hc/en-us/articles/26952364097559-Verify-with-ID-me-using-a-non-U-S-passport"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Accredited VSO representative (Veterans Service Organization) helping with a VA claim",
+    "th": "ผู้แทนของ VSO (องค์กรบริการทหารผ่านศึก) ที่ได้รับรอง ช่วยเรื่องคำร้องกับ VA",
+    "my": "VA တောင်းဆိုမှုတွင် ကူညီသော အသိအမှတ်ပြု VSO (စစ်မှုထမ်းဟောင်းဝန်ဆောင်မှုအဖွဲ့အစည်း) ကိုယ်စားလှယ်",
+    "zh": "经认可的 VSO（退伍军人服务组织）代表协助办理 VA 申请",
+    "de": "Zugelassene VSO-Vertretung (Veterans Service Organization) bei einem VA-Antrag"
+   },
+   "p": {
+    "en": "Free",
+    "th": "ฟรี",
+    "my": "အခမဲ့",
+    "zh": "免费",
+    "de": "Kostenlos"
+   },
+   "src": "https://www.va.gov/disability/get-help-filing-claim/"
+  },
+  {
+   "t": {
+    "en": "Accredited attorney or claims agent helping with a VA claim",
+    "th": "ทนายความหรือตัวแทนเรื่องสิทธิประโยชน์ที่ได้รับรอง ช่วยเรื่องคำร้องกับ VA",
+    "my": "VA တောင်းဆိုမှုတွင် ကူညီသော အသိအမှတ်ပြု ရှေ့နေ သို့မဟုတ် တောင်းဆိုမှုကိုယ်စားလှယ်",
+    "zh": "经认可的律师或理赔代理人协助办理 VA 申请",
+    "de": "Zugelassene Anwältin, zugelassener Anwalt oder Claims Agent bei einem VA-Antrag"
+   },
+   "p": {
+    "en": "They can charge fees; the page gives no amount",
+    "th": "คิดค่าบริการได้ หน้าเว็บไม่ระบุจำนวน",
+    "my": "ကြေးယူနိုင်သည်၊ စာမျက်နှာတွင် ပမာဏ မဖော်ပြပါ",
+    "zh": "可以收费；页面未给出金额",
+    "de": "Sie dürfen Gebühren verlangen; die Seite nennt keinen Betrag"
+   },
+   "src": "https://www.va.gov/disability/get-help-filing-claim/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How do I verify with ID.me from overseas?",
+    "th": "อยู่ต่างประเทศ ยืนยันตัวตนกับ ID.me อย่างไร",
+    "my": "ပြည်ပမှ ID.me ဖြင့် အတည်ပြုရန် ဘယ်လိုလုပ်သလဲ။",
+    "zh": "人在海外，怎样通过 ID.me 核验身份？",
+    "de": "Wie bestätige ich meine Identität bei ID.me vom Ausland aus?"
+   },
+   "a": {
+    "en": "VA.gov says that with an address outside the US you can use ID.me or CLEAR. The ID.me screen has an option for people who don't live in the US. ID.me then asks for your identity documents on a video call with a representative.",
+    "th": "VA.gov ระบุว่า ถ้าที่อยู่อยู่นอกสหรัฐฯ ใช้ ID.me หรือ CLEAR ได้ ในหน้าจอของ ID.me มีตัวเลือกสำหรับผู้ที่ไม่ได้อาศัยในสหรัฐฯ จากนั้น ID.me ขอดูเอกสารยืนยันตัวตนผ่านวิดีโอคอลกับเจ้าหน้าที่",
+    "my": "VA.gov က လိပ်စာ US ပြင်ပတွင်ရှိလျှင် ID.me သို့မဟုတ် CLEAR ကို သုံးနိုင်သည်ဟု ဆိုသည်။ ID.me မျက်နှာပြင်တွင် US တွင် မနေထိုင်သူများအတွက် ရွေးချယ်စရာ ရှိသည်။ ထို့နောက် ID.me က ကိုယ်စားလှယ်နှင့် ဗီဒီယိုခေါ်ဆိုမှုတွင် အထောက်အထားစာရွက်စာတမ်းများ ပြသရန် တောင်းသည်။",
+    "zh": "VA.gov 写明，地址在美国以外时，可以用 ID.me 或 CLEAR。ID.me 的页面上有供不住在美国的人使用的选项。之后 ID.me 会要求在与工作人员的视频通话中出示身份文件。",
+    "de": "VA.gov schreibt, bei einer Adresse ausserhalb der USA lasse sich ID.me oder CLEAR verwenden. Auf dem ID.me-Bildschirm gibt es eine Auswahl für Personen, die nicht in den USA wohnen. ID.me verlangt dann, die Ausweisdokumente in einem Videogespräch mit einer Vertretung zu zeigen."
+   },
+   "src": "https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/"
+  },
+  {
+   "q": {
+    "en": "Can I use ID.me without a US Social Security number?",
+    "th": "ไม่มีเลขประกันสังคมสหรัฐฯ ใช้ ID.me ได้ไหม",
+    "my": "US လူမှုဖူလုံရေးနံပါတ် မရှိလျှင် ID.me သုံးနိုင်ပါသလား။",
+    "zh": "没有美国社会安全号码，可以用 ID.me 吗？",
+    "de": "Geht ID.me ohne US-Sozialversicherungsnummer?"
+   },
+   "a": {
+    "en": "VA.gov says that without a US Social Security number, ID.me is the way to verify. A valid US passport is one of the documents it asks for.",
+    "th": "VA.gov ระบุว่า ถ้าไม่มีเลขประกันสังคมสหรัฐฯ ทางยืนยันตัวตนคือ ID.me โดยหนังสือเดินทางสหรัฐฯ ที่ยังไม่หมดอายุเป็นหนึ่งในเอกสารที่ขอ",
+    "my": "VA.gov က US လူမှုဖူလုံရေးနံပါတ် မရှိလျှင် အတည်ပြုရန်လမ်းကြောင်းမှာ ID.me ဖြစ်သည်ဟု ဆိုသည်။ သက်တမ်းကျန်သော US ပတ်စပို့သည် တောင်းသည့်စာရွက်စာတမ်းများအနက် တစ်ခု ဖြစ်သည်။",
+    "zh": "VA.gov 写明，没有美国社会安全号码时，核验身份的途径是 ID.me，所要的文件中有一份是有效的美国护照。",
+    "de": "VA.gov schreibt, ohne US-Sozialversicherungsnummer führe der Weg über ID.me. Ein gültiger US-Reisepass gehört zu den verlangten Dokumenten."
+   },
+   "src": "https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/"
+  },
+  {
+   "q": {
+    "en": "Can a family member with a non-US passport verify?",
+    "th": "ญาติที่ถือหนังสือเดินทางที่ไม่ใช่ของสหรัฐฯ ยืนยันตัวตนได้ไหม",
+    "my": "US မဟုတ်သော ပတ်စပို့ကိုင်ဆောင်သည့် မိသားစုဝင် အတည်ပြုနိုင်ပါသလား။",
+    "zh": "持非美国护照的家人可以核验身份吗？",
+    "de": "Kann ein Familienmitglied mit einem nicht-amerikanischen Pass die Identität bestätigen?"
+   },
+   "a": {
+    "en": "ID.me's help page lists a valid non-US passport and a document that shows the international address, such as a bank statement or a utility bill. The person confirms they were never issued an SSN or ITIN, uploads both documents, then joins the video call with the originals in hand.",
+    "th": "หน้าช่วยเหลือของ ID.me ระบุหนังสือเดินทางที่ไม่ใช่ของสหรัฐฯ ที่ยังไม่หมดอายุ และเอกสารที่แสดงที่อยู่ต่างประเทศ เช่น ใบแจ้งยอดบัญชีธนาคารหรือใบแจ้งค่าสาธารณูปโภค ผู้ยืนยันตัวตนระบุว่าไม่เคยได้รับ SSN หรือ ITIN อัปโหลดเอกสารทั้งสองอย่าง แล้วเข้าวิดีโอคอลพร้อมเอกสารตัวจริง",
+    "my": "ID.me ၏ အကူအညီစာမျက်နှာတွင် သက်တမ်းကျန်သော US မဟုတ်သည့် ပတ်စပို့နှင့် နိုင်ငံခြားလိပ်စာ ပြသည့်စာရွက် (ဥပမာ ဘဏ်ထုတ်ပြန်ချက် သို့မဟုတ် ရေမီးဘီလ်) ကို ဖော်ပြထားသည်။ ထိုသူက SSN သို့မဟုတ် ITIN တစ်ခါမှ မထုတ်ပေးခဲ့ကြောင်း အတည်ပြုပြီး စာရွက်နှစ်ခုကို တင်ကာ မူရင်းစာရွက်များနှင့် ဗီဒီယိုခေါ်ဆိုမှုသို့ ဝင်သည်။",
+    "zh": "ID.me 的帮助页列出：有效的非美国护照，以及显示海外地址的文件，如银行对账单或水电账单。当事人确认从未获发 SSN 或 ITIN，上传两份文件，然后带着原件参加视频通话。",
+    "de": "Die Hilfeseite von ID.me nennt einen gültigen nicht-amerikanischen Pass und ein Dokument mit der Adresse im Ausland, etwa einen Kontoauszug oder eine Nebenkostenrechnung. Die Person bestätigt, nie eine SSN oder ITIN erhalten zu haben, lädt beide Dokumente hoch und nimmt dann mit den Originalen am Videogespräch teil."
+   },
+   "src": "https://help.id.me/hc/en-us/articles/26952364097559-Verify-with-ID-me-using-a-non-U-S-passport"
+  },
+  {
+   "q": {
+    "en": "What if ID.me verification is not working?",
+    "th": "ถ้ายืนยันตัวตนกับ ID.me ไม่ผ่านหรือใช้งานไม่ได้ ต้องทำอย่างไร",
+    "my": "ID.me အတည်ပြုခြင်း အလုပ်မလုပ်လျှင် ဘာလုပ်ရမလဲ။",
+    "zh": "ID.me 核验走不通怎么办？",
+    "de": "Was ist, wenn die Verifizierung bei ID.me nicht klappt?"
+   },
+   "a": {
+    "en": "ID.me's help page says that when benefits are blocked, the agency itself is the one to contact, since some agencies may require an SSN for identity verification.",
+    "th": "หน้าช่วยเหลือของ ID.me ระบุว่า เมื่อสิทธิประโยชน์ถูกบล็อก ผู้ที่ต้องติดต่อคือหน่วยงานนั้นโดยตรง เพราะบางหน่วยงานอาจต้องใช้ SSN ในการยืนยันตัวตน",
+    "my": "ID.me ၏ အကူအညီစာမျက်နှာက အကျိုးခံစားခွင့်များ ပိတ်ဆို့ခံရလျှင် ဆက်သွယ်ရမည့်နေရာမှာ သက်ဆိုင်ရာအေဂျင်စီကိုယ်တိုင် ဖြစ်သည်ဟု ဆိုသည်၊ အေဂျင်စီအချို့သည် အထောက်အထားအတည်ပြုရန် SSN လိုနိုင်သောကြောင့် ဖြစ်သည်။",
+    "zh": "ID.me 的帮助页写明，福利被拦下时，要联系的是相关机构本身，因为有些机构可能要求用 SSN 核验身份。",
+    "de": "Auf der Hilfeseite von ID.me steht, dass bei gesperrten Leistungen die Behörde selbst die Anlaufstelle ist, da manche Behörden eine SSN für die Identitätsprüfung verlangen."
+   },
+   "src": "https://help.id.me/hc/en-us/articles/26952364097559-Verify-with-ID-me-using-a-non-U-S-passport"
+  },
+  {
+   "q": {
+    "en": "Does help with a VA claim cost money?",
+    "th": "ความช่วยเหลือเรื่องคำร้องกับ VA มีค่าใช้จ่ายไหม",
+    "my": "VA တောင်းဆိုမှုအတွက် အကူအညီကို ပိုက်ဆံပေးရပါသလား။",
+    "zh": "办理 VA 申请的协助要花钱吗？",
+    "de": "Kostet die Hilfe bei einem VA-Antrag etwas?"
+   },
+   "a": {
+    "en": "VA.gov says the services of an accredited VSO representative on VA benefit claims are free. An accredited attorney or claims agent can charge fees.",
+    "th": "VA.gov ระบุว่า บริการของผู้แทน VSO ที่ได้รับรองในคำร้องขอสิทธิประโยชน์ของ VA ไม่มีค่าใช้จ่าย ส่วนทนายความหรือตัวแทนเรื่องสิทธิประโยชน์ที่ได้รับรองคิดค่าบริการได้",
+    "my": "VA.gov က VA အကျိုးခံစားခွင့်တောင်းဆိုမှုများတွင် အသိအမှတ်ပြု VSO ကိုယ်စားလှယ်၏ ဝန်ဆောင်မှုများသည် အခမဲ့ဖြစ်သည်ဟု ဆိုသည်။ အသိအမှတ်ပြု ရှေ့နေ သို့မဟုတ် တောင်းဆိုမှုကိုယ်စားလှယ်က ကြေးယူနိုင်သည်။",
+    "zh": "VA.gov 写明，经认可的 VSO 代表在 VA 福利申请上的服务免费；经认可的律师或理赔代理人可以收费。",
+    "de": "VA.gov schreibt, die Dienste einer zugelassenen VSO-Vertretung bei VA-Leistungsanträgen seien kostenlos. Eine zugelassene Anwältin, ein zugelassener Anwalt oder ein Claims Agent darf Gebühren verlangen."
+   },
+   "src": "https://www.va.gov/disability/get-help-filing-claim/"
+  }
+ ],
+ "related": [
+  "retire",
+  "legalise",
+  "form",
+  "call",
+  "bank-account",
+  "thai-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "VA.gov: verify your identity if you live outside the US",
+    "th": "VA.gov: การยืนยันตัวตนสำหรับผู้ที่อาศัยนอกสหรัฐฯ",
+    "my": "VA.gov: US ပြင်ပတွင် နေထိုင်သူများအတွက် ကိုယ်ပိုင်အထောက်အထား အတည်ပြုခြင်း",
+    "zh": "VA.gov：居住在美国以外时如何核验身份",
+    "de": "VA.gov: Identität bestätigen, wenn man ausserhalb der USA lebt"
+   },
+   "href": "https://www.va.gov/resources/how-can-i-verify-my-identity-on-vagov-if-i-live-outside-the-us/"
+  },
+  {
+   "t": {
+    "en": "ID.me help: verify with a non-US passport",
+    "th": "ศูนย์ช่วยเหลือ ID.me: ยืนยันตัวตนด้วยหนังสือเดินทางที่ไม่ใช่ของสหรัฐฯ",
+    "my": "ID.me အကူအညီ: US မဟုတ်သော ပတ်စပို့ဖြင့် အတည်ပြုခြင်း",
+    "zh": "ID.me 帮助：用非美国护照核验身份",
+    "de": "ID.me-Hilfe: Verifizierung mit einem nicht-amerikanischen Pass"
+   },
+   "href": "https://help.id.me/hc/en-us/articles/26952364097559-Verify-with-ID-me-using-a-non-U-S-passport"
+  }
+ ],
+ "glyphs": [
+  "laptop",
+  "passport",
+  "flag"
+ ]
+}

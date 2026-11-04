@@ -1,0 +1,302 @@
+{
+ "id": "web-move",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People move a site from Wix, WordPress or another host to a new one, and the domain and mail move too.",
+  "th": "คนย้ายเว็บจาก Wix, WordPress หรือโฮสต์อื่นไปโฮสต์ใหม่ และโดเมนกับอีเมลย้ายตามไปด้วย",
+  "my": "လူတွေက Wix၊ WordPress သို့မဟုတ် အခြား host မှ host အသစ်သို့ ဆိုက်ကို ရွှေ့ကြပြီး ဒိုမိန်းနှင့် မေးလ်ကိုလည်း အတူ ရွှေ့ကြသည်။",
+  "zh": "人们把网站从 Wix、WordPress 或别的主机迁到新主机，域名和邮箱也一起迁。",
+  "de": "Man zieht mit einer Website von Wix, WordPress oder einem anderen Host zu einem neuen Host um, und Domain und Mail ziehen mit."
+ },
+ "n": {
+  "de": "Umzug zu neuem Hosting"
+ },
+ "l": {
+  "de": "Website, Domain und E-Mail umgezogen, von Wix, WordPress oder anderen."
+ },
+ "steps": [
+  {
+   "db": "parcel",
+   "t": {
+    "en": "The site is moved to the new host.",
+    "th": "ย้ายเว็บไซต์ไปโฮสต์ใหม่",
+    "my": "ဆိုက်ကို host အသစ်သို့ ရွှေ့သည်။",
+    "zh": "把网站迁到新主机。",
+    "de": "Die Website zieht auf den neuen Host um."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "先",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "mailbox",
+   "t": {
+    "en": "The domain and mail move with it.",
+    "th": "ย้ายโดเมนและอีเมลตามไปด้วย",
+    "my": "ဒိုမိန်းနှင့် မေးလ်ကိုလည်း အတူ ရွှေ့သည်။",
+    "zh": "域名和邮箱一并迁过去。",
+    "de": "Domain und Mail ziehen mit."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "然后",
+    "de": "Dann"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "The pages are checked one by one.",
+    "th": "ตรวจทีละหน้า",
+    "my": "စာမျက်နှာများကို တစ်ခုချင်း စစ်ဆေးသည်။",
+    "zh": "逐页检查。",
+    "de": "Die Seiten werden eine nach der anderen geprüft."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "For a move to a new host with no URL changes, Google's page lists these steps: copy and test the site on a temporary hostname, lower the DNS TTL (how long other computers keep an old DNS answer) to a few hours at least a week ahead, then update the DNS records. Traffic shifts from the old server to the new one, and the old host can be shut down when traffic to it reaches zero.",
+    "th": "สำหรับการย้ายไปโฮสต์ใหม่โดยไม่เปลี่ยน URL หน้าของ Google ระบุขั้นตอนดังนี้ คัดลอกและทดสอบเว็บไซต์บนชื่อโฮสต์ชั่วคราว ลด DNS TTL (ระยะเวลาที่คอมพิวเตอร์เครื่องอื่นจำคำตอบ DNS เก่าไว้) เหลือไม่กี่ชั่วโมงล่วงหน้าอย่างน้อยหนึ่งสัปดาห์ แล้วจึงแก้ระเบียน DNS ทราฟฟิกจะย้ายจากเซิร์ฟเวอร์เก่าไปเซิร์ฟเวอร์ใหม่ และปิดโฮสต์เก่าได้เมื่อทราฟฟิกไปที่นั่นเหลือศูนย์",
+    "my": "URL မပြောင်းဘဲ host အသစ်သို့ ရွှေ့ခြင်းအတွက် Google ၏ စာမျက်နှာတွင် အဆင့်များကို ဖော်ပြသည်။ ဆိုက်ကို ယာယီ hostname ပေါ်တွင် ကူးယူစမ်းသပ်ပြီး DNS TTL (အခြားကွန်ပျူတာများက DNS အဖြေဟောင်းကို မှတ်ထားသည့်ကာလ) ကို အနည်းဆုံး တစ်ပတ်ကြိုတင်၍ နာရီအနည်းငယ်သို့ လျှော့ပါ၊ ထို့နောက် DNS မှတ်တမ်းများကို ပြင်ပါ။ traffic သည် ဆာဗာဟောင်းမှ ဆာဗာအသစ်သို့ ရွှေ့ပြောင်းပြီး ဆာဗာဟောင်းသို့ traffic သုညဖြစ်သောအခါ host ဟောင်းကို ပိတ်နိုင်သည်။",
+    "zh": "对于不改 URL 的主机迁移，Google 页面列出这些步骤：在临时主机名上复制并测试网站，至少提前一周把 DNS TTL（其他计算机保留旧 DNS 答复的时长）降到几个小时，然后更新 DNS 记录。流量从旧服务器转到新服务器，旧主机的流量降到零后即可关闭。",
+    "de": "Für einen Umzug auf einen neuen Host ohne URL-Änderung nennt Googles Seite diese Schritte: die Website auf einem vorläufigen Hostnamen kopieren und testen, die DNS-TTL (wie lange andere Rechner eine alte DNS-Antwort behalten) mindestens eine Woche vorher auf wenige Stunden senken, dann die DNS-Einträge aktualisieren. Der Verkehr wechselt vom alten zum neuen Server, und der alte Host kann abgeschaltet werden, wenn dorthin kein Verkehr mehr läuft."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes"
+  },
+  {
+   "t": {
+    "en": "WordPress's documentation says a move begins with a backup of the files and the database. If the database and the URL stay the same, the site moves by copying its files and database. If the address changes, the page lists nine steps in sequence.",
+    "th": "เอกสารของ WordPress ระบุว่าการย้ายเริ่มจากสำรองไฟล์และฐานข้อมูล ถ้าฐานข้อมูลและ URL เหมือนเดิม ก็ย้ายเว็บด้วยการคัดลอกไฟล์และฐานข้อมูล ถ้าที่อยู่เปลี่ยน หน้านี้ระบุเก้าขั้นตอนตามลำดับ",
+    "my": "WordPress ၏ စာတမ်းတွင် ရွှေ့ခြင်းကို ဖိုင်များနှင့် ဒေတာဘေ့စ်ကို အရန်သိမ်းခြင်းဖြင့် စတင်ရသည်ဟု ဆိုသည်။ ဒေတာဘေ့စ်နှင့် URL မပြောင်းလျှင် ဖိုင်များနှင့် ဒေတာဘေ့စ်ကို ကူးယူ၍ ဆိုက်ကို ရွှေ့သည်။ လိပ်စာ ပြောင်းလျှင် စာမျက်နှာတွင် အဆင့်ကိုးဆင့်ကို အစဉ်လိုက် ဖော်ပြထားသည်။",
+    "zh": "WordPress 文档写明，迁移从备份文件和数据库开始。数据库和 URL 不变时，复制文件和数据库即可迁移网站；地址变了，页面按顺序列出九个步骤。",
+    "de": "Laut der WordPress-Dokumentation beginnt ein Umzug mit einer Sicherung von Dateien und Datenbank. Bleiben Datenbank und URL gleich, zieht die Website um, indem man Dateien und Datenbank kopiert. Ändert sich die Adresse, nennt die Seite neun Schritte in fester Reihenfolge."
+   },
+   "src": "https://developer.wordpress.org/advanced-administration/upgrade/migrating/"
+  },
+  {
+   "t": {
+    "en": "Wix says a Wix site cannot be exported or hosted elsewhere, because it has to run on Wix's servers. A domain can be connected to a Wix site or managed with another provider.",
+    "th": "Wix ระบุว่าเว็บไซต์ Wix ส่งออกหรือโฮสต์ที่อื่นไม่ได้ เพราะต้องทำงานบนเซิร์ฟเวอร์ของ Wix โดเมนเชื่อมกับเว็บไซต์ Wix หรือจัดการกับผู้ให้บริการรายอื่นได้",
+    "my": "Wix သည် Wix ဆိုက်ကို အခြားနေရာသို့ export လုပ်၍ သို့မဟုတ် host လုပ်၍ မရဟု ဆိုသည်၊ ၎င်းသည် Wix ၏ ဆာဗာများပေါ်တွင် လည်ပတ်ရမည်ဖြစ်သောကြောင့် ဖြစ်သည်။ ဒိုမိန်းကို Wix ဆိုက်နှင့် ချိတ်နိုင်သလို အခြားဝန်ဆောင်မှုပေးသူနှင့်လည်း စီမံနိုင်သည်။",
+    "zh": "Wix 表示，Wix 网站不能导出或托管到别处，因为它必须在 Wix 的服务器上运行。域名可以连接到 Wix 网站，也可以交给别的服务商管理。",
+    "de": "Laut Wix lässt sich eine Wix-Website nicht exportieren oder anderswo hosten, weil sie auf den Servern von Wix laufen muss. Eine Domain lässt sich mit einer Wix-Website verbinden oder bei einem anderen Anbieter verwalten."
+   },
+   "src": "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere"
+  },
+  {
+   "t": {
+    "en": "Wix says a domain cannot be transferred within 60 days of its registration, of a change to the registrant's contact details, or of a previous transfer. The limit applies to transfers away from Wix too.",
+    "th": "Wix ระบุว่าโอนโดเมนไม่ได้ภายใน 60 วันหลังจดทะเบียน หลังเปลี่ยนข้อมูลติดต่อของผู้จดทะเบียน หรือหลังการโอนครั้งก่อน ข้อจำกัดนี้ใช้กับการโอนออกจาก Wix ด้วย",
+    "my": "Wix သည် ဒိုမိန်းကို မှတ်ပုံတင်ပြီးနောက်၊ မှတ်ပုံတင်သူ၏ ဆက်သွယ်ရန်အချက်အလက် ပြောင်းပြီးနောက် သို့မဟုတ် ယခင်လွှဲပြောင်းမှုပြီးနောက် ရက် 60 အတွင်း လွှဲပြောင်း၍ မရဟု ဆိုသည်။ ဤကန့်သတ်ချက်သည် Wix မှ ပြင်ပသို့ လွှဲပြောင်းခြင်းကိုလည်း သက်ရောက်သည်။",
+    "zh": "Wix 表示，域名在注册后、注册人联系信息变更后或上次转移后的 60 天内不能转移。这一限制同样适用于从 Wix 转出。",
+    "de": "Laut Wix lässt sich eine Domain innerhalb von 60 Tagen nach der Registrierung, nach einer Änderung der Kontaktdaten des Inhabers oder nach einem früheren Transfer nicht übertragen. Die Sperre gilt auch für Transfers weg von Wix."
+   },
+   "src": "https://support.wix.com/en/article/icanns-60-day-lock-policy"
+  },
+  {
+   "t": {
+    "en": "Microsoft's page says that when a domain's MX record changes to Microsoft 365, all new mail for the domain goes there, and existing mail stays at the previous email host unless it is moved.",
+    "th": "หน้าของ Microsoft ระบุว่าเมื่อเปลี่ยนระเบียน MX ของโดเมนไปที่ Microsoft 365 อีเมลใหม่ทั้งหมดของโดเมนจะไปที่นั่น ส่วนอีเมลเดิมยังอยู่ที่ผู้ให้บริการอีเมลเดิม เว้นแต่จะย้ายมา",
+    "my": "Microsoft ၏ စာမျက်နှာတွင် ဒိုမိန်း၏ MX မှတ်တမ်းကို Microsoft 365 သို့ ပြောင်းလိုက်သောအခါ ဒိုမိန်း၏ မေးလ်အသစ်အားလုံး ထိုနေရာသို့ ရောက်ပြီး ရှိပြီးသားမေးလ်များမှာ မရွှေ့လျှင် ယခင်မေးလ်ဝန်ဆောင်မှုပေးသူထံတွင်သာ ကျန်သည်ဟု ဆိုသည်။",
+    "zh": "微软页面写明，域名的 MX 记录改到 Microsoft 365 后，该域名之后的新邮件全部送到那里，已有邮件仍留在原来的邮件服务商那里，除非迁移。",
+    "de": "Laut Microsofts Seite geht, sobald der MX-Eintrag einer Domain auf Microsoft 365 zeigt, alle neue Mail der Domain dorthin; bestehende Mail bleibt beim bisherigen Mailanbieter, solange sie nicht übertragen wird."
+   },
+   "src": "https://learn.microsoft.com/en-us/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Seahawk Media, a Wix-to-WordPress move",
+    "th": "Seahawk Media บริการย้ายจาก Wix ไป WordPress",
+    "my": "Seahawk Media၊ Wix မှ WordPress သို့ ရွှေ့ခြင်း",
+    "zh": "Seahawk Media，从 Wix 迁到 WordPress",
+    "de": "Seahawk Media, ein Umzug von Wix zu WordPress"
+   },
+   "p": {
+    "en": "From US$499",
+    "th": "เริ่มต้น US$499",
+    "my": "US$499 မှစ၍",
+    "zh": "US$499 起",
+    "de": "Ab US$499"
+   },
+   "src": "https://seahawkmedia.com/services/wordpress-migration-services/wix-to-wordpress/"
+  },
+  {
+   "t": {
+    "en": "Kinsta, a hosting company, moving a site onto its hosting",
+    "th": "Kinsta ผู้ให้บริการโฮสติ้ง ย้ายเว็บมาไว้บนโฮสติ้งของตน",
+    "my": "Kinsta hosting ကုမ္ပဏီ၊ ဆိုက်ကို ၎င်း၏ hosting သို့ ရွှေ့ပေးခြင်း",
+    "zh": "主机商 Kinsta 把网站迁到自家主机上",
+    "de": "Kinsta, ein Hosting-Anbieter, zieht eine Website auf das eigene Hosting um"
+   },
+   "p": {
+    "en": "Free for its customers; the limit is the number of WordPress installations on the plan",
+    "th": "ไม่คิดค่าบริการสำหรับลูกค้าของตน จำนวนจำกัดตามจำนวน WordPress ที่ติดตั้งได้ในแพ็กเกจ",
+    "my": "၎င်း၏ ဖောက်သည်များအတွက် အခမဲ့၊ အကန့်အသတ်မှာ အစီအစဉ်ပေါ်ရှိ WordPress တပ်ဆင်မှုအရေအတွက်",
+    "zh": "对其客户免费；次数上限为套餐中 WordPress 安装的数量",
+    "de": "Für seine Kunden kostenlos; die Grenze ist die Zahl der WordPress-Installationen im Tarif"
+   },
+   "src": "https://kinsta.com/changelog/unlimited-free-migrations/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can I move a Wix site to another host?",
+    "th": "ย้ายเว็บ Wix ไปโฮสต์อื่นได้ไหม",
+    "my": "Wix ဆိုက်ကို အခြား host သို့ ရွှေ့နိုင်သလား။",
+    "zh": "Wix 网站能迁到别的主机吗？",
+    "de": "Lässt sich eine Wix-Website auf einen anderen Host verschieben?"
+   },
+   "a": {
+    "en": "Wix says a Wix site cannot be exported or hosted elsewhere, because it has to run on Wix's servers. Its page says the content you build belongs to you, and a domain can be connected to a Wix site or managed with another provider.",
+    "th": "Wix ระบุว่าเว็บไซต์ Wix ส่งออกหรือโฮสต์ที่อื่นไม่ได้ เพราะต้องทำงานบนเซิร์ฟเวอร์ของ Wix หน้านั้นระบุว่าเนื้อหาที่สร้างเป็นของคุณ และโดเมนเชื่อมกับเว็บไซต์ Wix หรือจัดการกับผู้ให้บริการรายอื่นได้",
+    "my": "Wix သည် Wix ဆိုက်ကို အခြားနေရာသို့ export လုပ်၍ သို့မဟုတ် host လုပ်၍ မရဟု ဆိုသည်၊ ၎င်းသည် Wix ၏ ဆာဗာများပေါ်တွင် လည်ပတ်ရမည်ဖြစ်သောကြောင့် ဖြစ်သည်။ ထိုစာမျက်နှာတွင် သင်တည်ဆောက်သော အကြောင်းအရာသည် သင့်ပိုင်ဆိုင်မှုဖြစ်ပြီး ဒိုမိန်းကို Wix ဆိုက်နှင့် ချိတ်နိုင်သလို အခြားဝန်ဆောင်မှုပေးသူနှင့်လည်း စီမံနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "Wix 表示，Wix 网站不能导出或托管到别处，因为它必须在 Wix 的服务器上运行。该页面说，您做出来的内容归您所有，域名可以连接到 Wix 网站，也可以交给别的服务商管理。",
+    "de": "Laut Wix lässt sich eine Wix-Website nicht exportieren oder anderswo hosten, weil sie auf den Servern von Wix laufen muss. Die Seite schreibt, die selbst erstellten Inhalte gehörten Ihnen, und eine Domain lasse sich mit einer Wix-Website verbinden oder bei einem anderen Anbieter verwalten."
+   },
+   "src": "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere"
+  },
+  {
+   "q": {
+    "en": "Is there a wait before a domain can move?",
+    "th": "ต้องรอก่อนย้ายโดเมนไหม",
+    "my": "ဒိုမိန်းကို မရွှေ့မီ စောင့်ရသလား။",
+    "zh": "域名转移前要等一段时间吗？",
+    "de": "Gibt es eine Wartezeit, bevor eine Domain umziehen kann?"
+   },
+   "a": {
+    "en": "Wix says a domain cannot be transferred within 60 days of its registration, of a change to the registrant's contact details, or of a previous transfer. The limit applies to transfers away from Wix as well, and Wix cannot change it. In the meantime the domain can stay in the Wix account and point to the external site.",
+    "th": "Wix ระบุว่าโอนโดเมนไม่ได้ภายใน 60 วันหลังจดทะเบียน หลังเปลี่ยนข้อมูลติดต่อของผู้จดทะเบียน หรือหลังการโอนครั้งก่อน ข้อจำกัดนี้ใช้กับการโอนออกจาก Wix ด้วย และ Wix เปลี่ยนไม่ได้ ระหว่างนั้นโดเมนอยู่ในบัญชี Wix และชี้ไปยังเว็บไซต์ภายนอกได้",
+    "my": "Wix သည် ဒိုမိန်းကို မှတ်ပုံတင်ပြီးနောက်၊ မှတ်ပုံတင်သူ၏ ဆက်သွယ်ရန်အချက်အလက် ပြောင်းပြီးနောက် သို့မဟုတ် ယခင်လွှဲပြောင်းမှုပြီးနောက် ရက် 60 အတွင်း လွှဲပြောင်း၍ မရဟု ဆိုသည်။ ဤကန့်သတ်ချက်သည် Wix မှ ပြင်ပသို့ လွှဲပြောင်းခြင်းကိုလည်း သက်ရောက်ပြီး Wix က မပြောင်းနိုင်ပါ။ ထိုအတောအတွင်း ဒိုမိန်းကို Wix အကောင့်ထဲတွင် ထားကာ ပြင်ပဆိုက်သို့ ညွှန်ထားနိုင်သည်။",
+    "zh": "Wix 表示，域名在注册后、注册人联系信息变更后或上次转移后的 60 天内不能转移。这一限制同样适用于从 Wix 转出，Wix 无法更改。在此期间，域名可留在 Wix 账户里，指向外部网站。",
+    "de": "Laut Wix lässt sich eine Domain innerhalb von 60 Tagen nach der Registrierung, nach einer Änderung der Kontaktdaten des Inhabers oder nach einem früheren Transfer nicht übertragen. Die Sperre gilt auch für Transfers weg von Wix, und Wix kann sie nicht ändern. Bis dahin kann die Domain im Wix-Konto bleiben und auf die externe Website zeigen."
+   },
+   "src": "https://support.wix.com/en/article/icanns-60-day-lock-policy"
+  },
+  {
+   "q": {
+    "en": "How is a WordPress site moved to a new server?",
+    "th": "ย้ายเว็บ WordPress ไปเซิร์ฟเวอร์ใหม่อย่างไร",
+    "my": "WordPress ဆိုက်ကို ဆာဗာအသစ်သို့ ဘယ်လိုရွှေ့သလဲ။",
+    "zh": "WordPress 网站怎样迁到新服务器？",
+    "de": "Wie zieht eine WordPress-Website auf einen neuen Server um?"
+   },
+   "a": {
+    "en": "WordPress's documentation starts with a backup of the files and the database. If the database and the URL stay the same, the files and the database are copied across. If the address changes, the page lists nine steps in sequence, including changing the URLs and the settings in wp-config.php.",
+    "th": "เอกสารของ WordPress เริ่มจากสำรองไฟล์และฐานข้อมูล ถ้าฐานข้อมูลและ URL เหมือนเดิม ก็คัดลอกไฟล์และฐานข้อมูลไป ถ้าที่อยู่เปลี่ยน หน้านี้ระบุเก้าขั้นตอนตามลำดับ รวมถึงการเปลี่ยน URL และค่าใน wp-config.php",
+    "my": "WordPress ၏ စာတမ်းသည် ဖိုင်များနှင့် ဒေတာဘေ့စ်ကို အရန်သိမ်းခြင်းဖြင့် စသည်။ ဒေတာဘေ့စ်နှင့် URL မပြောင်းလျှင် ဖိုင်များနှင့် ဒေတာဘေ့စ်ကို ကူးယူသည်။ လိပ်စာ ပြောင်းလျှင် စာမျက်နှာတွင် URL များနှင့် wp-config.php ရှိ ဆက်တင်များ ပြောင်းခြင်းအပါအဝင် အဆင့်ကိုးဆင့်ကို အစဉ်လိုက် ဖော်ပြထားသည်။",
+    "zh": "WordPress 文档先从备份文件和数据库讲起。数据库和 URL 不变时，把文件和数据库复制过去。地址变了，页面按顺序列出九个步骤，包括修改 URL 和 wp-config.php 里的设置。",
+    "de": "Die WordPress-Dokumentation beginnt mit einer Sicherung von Dateien und Datenbank. Bleiben Datenbank und URL gleich, werden Dateien und Datenbank kopiert. Ändert sich die Adresse, nennt die Seite neun Schritte in fester Reihenfolge, darunter das Ändern der URLs und der Einstellungen in wp-config.php."
+   },
+   "src": "https://developer.wordpress.org/advanced-administration/upgrade/migrating/"
+  },
+  {
+   "q": {
+    "en": "How does the switch to a new host happen?",
+    "th": "การสลับไปโฮสต์ใหม่เกิดขึ้นอย่างไร",
+    "my": "host အသစ်သို့ ပြောင်းခြင်းသည် ဘယ်လို ဖြစ်ပျက်သလဲ။",
+    "zh": "切换到新主机是怎么发生的？",
+    "de": "Wie läuft der Wechsel auf einen neuen Host ab?"
+   },
+   "a": {
+    "en": "In Google's steps, the DNS records are updated to point at the new host after the copy is tested. The TTL is lowered to a few hours at least a week ahead, and public DNS checking tools show whether ISPs worldwide have picked up the new settings. Traffic shifts from the old server to the new one.",
+    "th": "ตามขั้นตอนของ Google เมื่อทดสอบสำเนาแล้วจึงแก้ระเบียน DNS ให้ชี้ไปที่โฮสต์ใหม่ DNS TTL ถูกลดเหลือไม่กี่ชั่วโมงล่วงหน้าอย่างน้อยหนึ่งสัปดาห์ และเครื่องมือตรวจ DNS สาธารณะแสดงว่าผู้ให้บริการอินเทอร์เน็ตทั่วโลกรับค่าใหม่แล้วหรือยัง ทราฟฟิกย้ายจากเซิร์ฟเวอร์เก่าไปเซิร์ฟเวอร์ใหม่",
+    "my": "Google ၏ အဆင့်များတွင် ကူးယူထားသည်ကို စမ်းသပ်ပြီးနောက် DNS မှတ်တမ်းများကို host အသစ်သို့ ညွှန်စေရန် ပြင်သည်။ TTL ကို အနည်းဆုံး တစ်ပတ်ကြိုတင်၍ နာရီအနည်းငယ်သို့ လျှော့ထားပြီး လူသိရှင်ကြား DNS စစ်ဆေးကိရိယာများက ကမ္ဘာတစ်ဝန်းရှိ ISP များ ဆက်တင်အသစ်ကို ရယူပြီးမပြီး ပြသည်။ traffic သည် ဆာဗာဟောင်းမှ ဆာဗာအသစ်သို့ ရွှေ့ပြောင်းသည်။",
+    "zh": "按 Google 的步骤，测试完副本后，把 DNS 记录改为指向新主机。TTL 至少提前一周降到几个小时，公共 DNS 检测工具可以显示全球的网络服务商是否已采用新设置。流量从旧服务器转到新服务器。",
+    "de": "In Googles Schritten werden die DNS-Einträge nach dem Test der Kopie so geändert, dass sie auf den neuen Host zeigen. Die TTL wird mindestens eine Woche vorher auf wenige Stunden gesenkt, und öffentliche DNS-Prüfwerkzeuge zeigen, ob Provider weltweit die neuen Einstellungen übernommen haben. Der Verkehr wechselt vom alten zum neuen Server."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes"
+  },
+  {
+   "q": {
+    "en": "What does a Wix-to-WordPress move cost?",
+    "th": "ย้ายจาก Wix ไป WordPress ราคาเท่าไร",
+    "my": "Wix မှ WordPress သို့ ရွှေ့ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "从 Wix 迁到 WordPress 要多少钱？",
+    "de": "Was kostet ein Umzug von Wix zu WordPress?"
+   },
+   "a": {
+    "en": "Seahawk Media's page for the service says it starts at US$499.",
+    "th": "หน้าบริการของ Seahawk Media ระบุว่าเริ่มต้น US$499",
+    "my": "Seahawk Media ၏ ဝန်ဆောင်မှုစာမျက်နှာတွင် US$499 မှစသည်ဟု ဆိုသည်။",
+    "zh": "Seahawk Media 的服务页写明 US$499 起。",
+    "de": "Auf der Dienstleistungsseite von Seahawk Media steht, der Preis beginne bei US$499."
+   },
+   "src": "https://seahawkmedia.com/services/wordpress-migration-services/wix-to-wordpress/"
+  }
+ ],
+ "related": [
+  "site",
+  "web-mail",
+  "web-care",
+  "php",
+  "mirror",
+  "web-found"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google: changing your hosting",
+    "th": "Google: การเปลี่ยนโฮสติ้ง",
+    "my": "Google: hosting ပြောင်းခြင်း",
+    "zh": "Google：更换托管",
+    "de": "Google: Hosting wechseln"
+   },
+   "href": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes"
+  },
+  {
+   "t": {
+    "en": "WordPress: migrating to a new server",
+    "th": "WordPress: การย้ายไปเซิร์ฟเวอร์ใหม่",
+    "my": "WordPress: ဆာဗာအသစ်သို့ ရွှေ့ခြင်း",
+    "zh": "WordPress：迁移到新服务器",
+    "de": "WordPress: Umzug auf einen neuen Server"
+   },
+   "href": "https://developer.wordpress.org/advanced-administration/upgrade/migrating/"
+  }
+ ],
+ "glyphs": [
+  "parcel",
+  "server",
+  "link"
+ ]
+}

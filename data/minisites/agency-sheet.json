@@ -1,0 +1,336 @@
+{
+ "id": "agency-sheet",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "An agency's listings change often. A home that is sold or let stays on the list until someone removes it, and callers ask about homes that are gone.",
+  "th": "รายการทรัพย์ของนายหน้าเปลี่ยนบ่อย บ้านที่ขายหรือปล่อยเช่าไปแล้วยังค้างในรายการจนกว่าจะมีคนลบ ลูกค้าจึงโทรถามถึงบ้านที่ไม่มีแล้ว",
+  "my": "အေဂျင်စီ၏ စာရင်းများ မကြာခဏ ပြောင်းလဲသည်။ ရောင်းပြီး သို့မဟုတ် ငှားပြီးသော အိမ်သည် တစ်စုံတစ်ယောက်က မဖယ်မချင်း စာရင်းထဲတွင် ကျန်နေပြီး ဖုန်းဆက်သူများက မရှိတော့သော အိမ်အကြောင်း မေးမိကြသည်။",
+  "zh": "中介的房源变动频繁。已售或已租的房子会一直留在清单上，直到有人删除，来电的人就会问起已经没有的房子。",
+  "de": "Die Objekte einer Agentur ändern sich oft. Ein verkauftes oder vermietetes Haus bleibt auf der Liste, bis jemand es entfernt, und Anrufer fragen nach Häusern, die es nicht mehr gibt."
+ },
+ "n": {
+  "de": "Objektliste für eine Makleragentur"
+ },
+ "l": {
+  "de": "Ihre Objekte auf einer Liste, die veraltete Angebote aussortiert."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You send your listings.",
+    "th": "คุณส่งรายการทรัพย์ของคุณมา",
+    "my": "သင်၏ စာရင်းများကို ပို့သည်။",
+    "zh": "您把房源发来。",
+    "de": "Sie schicken Ihre Objekte."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "Your listings go on one sheet.",
+    "th": "รายการทรัพย์ของคุณอยู่รวมในตารางเดียว",
+    "my": "သင်၏ စာရင်းများကို ဇယားတစ်ခုတည်းတွင် စုထည့်သည်။",
+    "zh": "房源汇总到一张表里。",
+    "de": "Ihre Objekte kommen auf eine Liste."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you send them",
+    "th": "หลังคุณส่งมา",
+    "my": "သင်ပို့ပြီးနောက်",
+    "zh": "收到房源后",
+    "de": "Nach Ihrer Sendung"
+   }
+  },
+  {
+   "db": "refresh",
+   "t": {
+    "en": "The sheet drops stale offers by itself.",
+    "th": "ตารางตัดประกาศเก่าออกเอง",
+    "my": "ဇယားက ဟောင်းနွမ်းသော ကမ်းလှမ်းချက်များကို ကိုယ်တိုင် ဖယ်ရှားသည်။",
+    "zh": "表格自动删去过期的房源。",
+    "de": "Die Liste sortiert veraltete Angebote selbst aus."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "As long as the sheet runs",
+    "th": "ตราบที่ตารางทำงาน",
+    "my": "ဇယားလည်ပတ်နေသရွေ့",
+    "zh": "只要表格在运行",
+    "de": "Solange die Liste läuft"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "RE/MAX Thailand's page says the seller pays the sale commission: 3% of the price in Bangkok and most provinces, and 5% in resort areas such as Phuket, Pattaya, Hua Hin, Koh Samui and Krabi. An agent may propose an extra 1% for a 90-day exclusive listing.",
+    "th": "หน้าของ RE/MAX Thailand ระบุว่าผู้ขายเป็นผู้จ่ายค่านายหน้าการขาย คือ 3% ของราคาขายในกรุงเทพฯ และจังหวัดทั่วไป และ 5% ในพื้นที่ท่องเที่ยว เช่น ภูเก็ต พัทยา หัวหิน เกาะสมุย และกระบี่ นายหน้าอาจเสนอเพิ่มอีก 1% สำหรับสัญญาขายเฉพาะราย 90 วัน",
+    "my": "RE/MAX Thailand ၏ စာမျက်နှာအရ ရောင်းချမှု ကော်မရှင်ကို ရောင်းသူက ပေးသည် — ဘန်ကောက်နှင့် ပြည်နယ်အများစုတွင် ရောင်းဈေး၏ 3%၊ ဖူခက်၊ ပတ္တယာ၊ ဟွာဟင်၊ ကော့စမွီနှင့် ခရာဘီကဲ့သို့ ခရီးသွားဒေသများတွင် 5%။ အေးဂျင့်က 90 ရက် သီးသန့်စာရင်းသွင်းမှုအတွက် 1% ထပ်တိုးရန် အဆိုပြုနိုင်သည်။",
+    "zh": "RE/MAX Thailand 的页面写明，售房佣金由卖方支付：曼谷和一般府为成交价的 3%，普吉、芭堤雅、华欣、苏梅岛、甲米等旅游区为 5%。中介可提议为 90 天独家委托再加 1%。",
+    "de": "Laut der Seite von RE/MAX Thailand zahlt der Verkäufer die Verkaufsprovision: 3 % des Preises in Bangkok und den meisten Provinzen, 5 % in Urlaubsgebieten wie Phuket, Pattaya, Hua Hin, Koh Samui und Krabi. Ein Makler kann für ein 90-tägiges Alleinangebot 1 % zusätzlich vorschlagen."
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "t": {
+    "en": "The commission falls due when ownership passes at the Land Office, and generally not if the sale does not close. Brokerage carries 7% VAT on the commission: on a ฿10,000,000 sale at 3%, the commission is ฿300,000, VAT ฿21,000, total ฿321,000.",
+    "th": "ค่านายหน้าถึงกำหนดเมื่อโอนกรรมสิทธิ์ที่สำนักงานที่ดิน และโดยทั่วไปไม่เกิดขึ้นหากการขายไม่สำเร็จ บริการนายหน้ามี VAT 7% ที่คิดจากค่านายหน้า เช่น ขาย ฿10,000,000 ที่ 3% ค่านายหน้า ฿300,000 VAT ฿21,000 รวม ฿321,000",
+    "my": "ကော်မရှင်ကို မြေရုံးတွင် ပိုင်ဆိုင်မှု လွှဲပြောင်းသည့်အခါ ပေးရပြီး ရောင်းချမှု မပြီးစီးလျှင် ယေဘုယျအားဖြင့် မပေးရပါ။ ပွဲစားဝန်ဆောင်မှုတွင် ကော်မရှင်ပေါ် VAT 7% ပါသည် — ฿10,000,000 ရောင်းချမှုကို 3% နှုန်းဖြင့် ကော်မရှင် ฿300,000၊ VAT ฿21,000၊ စုစုပေါင်း ฿321,000။",
+    "zh": "佣金在土地局过户产权时到期，成交不成则一般不产生。经纪服务按佣金加收 7% 增值税：成交价 ฿10,000,000、佣金 3% 时，佣金 ฿300,000，增值税 ฿21,000，合计 ฿321,000。",
+    "de": "Die Provision wird fällig, wenn das Eigentum beim Landamt übergeht, und fällt bei einem gescheiterten Verkauf in der Regel nicht an. Auf die Provision kommen 7 % Mehrwertsteuer: Bei einem Verkauf für ฿10,000,000 zu 3 % sind das ฿300,000 Provision, ฿21,000 Steuer, zusammen ฿321,000."
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "t": {
+    "en": "PropertyScout says the landlord pays the commission on a rental, usually one month's rent, and that the service is free for tenants.",
+    "th": "PropertyScout ระบุว่าผู้ให้เช่าเป็นผู้จ่ายค่านายหน้าการเช่า ปกติเท่ากับค่าเช่าหนึ่งเดือน และผู้เช่าไม่เสียค่าบริการ",
+    "my": "PropertyScout က ငှားရမ်းမှုတွင် ကော်မရှင်ကို အိမ်ရှင်က ပေးပြီး များသောအားဖြင့် တစ်လစာ အိမ်လခ ဖြစ်ကာ ငှားရမ်းသူအတွက် ဝန်ဆောင်မှုက အခမဲ့ဖြစ်သည်ဟု ဆိုသည်။",
+    "zh": "PropertyScout 写明，租赁佣金由房东支付，通常为一个月租金，对租客免费。",
+    "de": "PropertyScout sagt, dass bei einer Vermietung der Vermieter die Provision zahlt, meist eine Monatsmiete, und dass der Dienst für Mieter kostenlos ist."
+   },
+   "src": "https://propertyscout.co.th/en/how-does-it-work/"
+  },
+  {
+   "t": {
+    "en": "House owners, landlords and hotel managers report a foreign guest or tenant to Immigration on form TM.30 within 24 hours of arrival. They file in person, through an authorised person, by registered mail or online.",
+    "th": "เจ้าบ้าน ผู้ให้เช่า และผู้จัดการโรงแรมแจ้งชาวต่างชาติที่เข้าพักต่อสำนักงานตรวจคนเข้าเมืองด้วยแบบ ตม.30 ภายใน 24 ชั่วโมงนับจากเวลาที่เข้าพัก แจ้งได้ด้วยตนเอง ผ่านผู้ได้รับมอบอำนาจ ทางไปรษณีย์ลงทะเบียน หรือทางอินเทอร์เน็ต",
+    "my": "အိမ်ပိုင်ရှင်၊ အိမ်ရှင်နှင့် ဟိုတယ်မန်နေဂျာတို့သည် နိုင်ငံခြားသား ဧည့်သည် သို့မဟုတ် ငှားရမ်းသူ ရောက်ရှိပြီး 24 နာရီအတွင်း TM.30 ပုံစံဖြင့် လူဝင်မှုကြီးကြပ်ရေးသို့ အကြောင်းကြားသည်။ ကိုယ်တိုင်၊ လွှဲအပ်ထားသူမှတစ်ဆင့်၊ မှတ်ပုံတင်စာတိုက်ဖြင့် သို့မဟုတ် အွန်လိုင်းမှ တင်သွင်းနိုင်သည်။",
+    "zh": "房主、房东和酒店经理须在外国人入住后 24 小时内，用 TM.30 表格向移民局报告。可本人到场、委托他人、挂号邮寄或网上申报。",
+    "de": "Hauseigentümer, Vermieter und Hotelleiter melden einen ausländischen Gast oder Mieter innerhalb von 24 Stunden nach der Ankunft mit dem Formular TM.30 bei der Einwanderungsbehörde. Die Meldung geht persönlich, über eine bevollmächtigte Person, per Einschreiben oder online."
+   },
+   "src": "https://www.immigration.go.th/en/?page_id=2799%2F"
+  },
+  {
+   "t": {
+    "en": "Landlords with three or more units cap deposit plus advance rent at three months' rent on monthly leases.",
+    "th": "ผู้ให้เช่าที่มีตั้งแต่สามห้องขึ้นไป เก็บเงินประกันรวมค่าเช่าล่วงหน้าได้ไม่เกินสามเดือน",
+    "my": "အခန်းသုံးခန်းနှင့်အထက် ရှိသော အိမ်ရှင်များ လစဉ်စာချုပ်တွင် စပေါ်နှင့် ကြိုငှားခကို သုံးလစာ အထိသာ ယူနိုင်သည်။",
+    "zh": "拥有三套及以上房产的房东，月租合同押金加预付租金不超过三个月。",
+    "de": "Vermieter mit drei oder mehr Einheiten dürfen bei Monatsmieten Kaution und Mietvorauszahlung zusammen auf höchstens drei Monatsmieten ansetzen."
+   },
+   "src": "https://www.tilleke.com/insights/thailand-strengthens-controls-on-residential-lease-contracts/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Sale commission, paid by the seller",
+    "th": "ค่านายหน้าการขาย ผู้ขายเป็นผู้จ่าย",
+    "my": "ရောင်းချမှု ကော်မရှင်၊ ရောင်းသူက ပေးသည်",
+    "zh": "售房佣金，由卖方支付",
+    "de": "Verkaufsprovision, vom Verkäufer gezahlt"
+   },
+   "p": {
+    "en": "3% of the price; 5% in resort areas",
+    "th": "3% ของราคาขาย 5% ในพื้นที่ท่องเที่ยว",
+    "my": "ရောင်းဈေး၏ 3%၊ ခရီးသွားဒေသများတွင် 5%",
+    "zh": "成交价的 3%；旅游区 5%",
+    "de": "3 % des Preises; 5 % in Urlaubsgebieten"
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "t": {
+    "en": "Extra for a 90-day exclusive listing, an agent's proposal",
+    "th": "ส่วนเพิ่มสำหรับสัญญาขายเฉพาะราย 90 วัน ที่นายหน้าเสนอ",
+    "my": "90 ရက် သီးသန့်စာရင်းသွင်းမှုအတွက် အပိုကြေး၊ အေးဂျင့်၏ အဆိုပြုချက်",
+    "zh": "90 天独家委托的加价，中介提议",
+    "de": "Aufschlag für ein 90-tägiges Alleinangebot, Vorschlag des Maklers"
+   },
+   "p": {
+    "en": "1% more",
+    "th": "เพิ่ม 1%",
+    "my": "1% ပိုပေးရ",
+    "zh": "再加 1%",
+    "de": "1 % mehr"
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "t": {
+    "en": "VAT on the commission",
+    "th": "VAT ของค่านายหน้า",
+    "my": "ကော်မရှင်ပေါ် VAT",
+    "zh": "佣金的增值税",
+    "de": "Mehrwertsteuer auf die Provision"
+   },
+   "p": {
+    "en": "7%",
+    "th": "7%",
+    "my": "7%",
+    "zh": "7%",
+    "de": "7 %"
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "t": {
+    "en": "Rental commission, paid by the landlord",
+    "th": "ค่านายหน้าการเช่า ผู้ให้เช่าเป็นผู้จ่าย",
+    "my": "ငှားရမ်းမှု ကော်မရှင်၊ အိမ်ရှင်က ပေးသည်",
+    "zh": "租赁佣金，由房东支付",
+    "de": "Vermietungsprovision, vom Vermieter gezahlt"
+   },
+   "p": {
+    "en": "Usually one month's rent",
+    "th": "ปกติเท่ากับค่าเช่าหนึ่งเดือน",
+    "my": "များသောအားဖြင့် တစ်လစာ အိမ်လခ",
+    "zh": "通常为一个月租金",
+    "de": "Meist eine Monatsmiete"
+   },
+   "src": "https://propertyscout.co.th/en/how-does-it-work/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Who pays the agent when a home is sold in Thailand?",
+    "th": "ใครเป็นผู้จ่ายค่านายหน้าเมื่อขายบ้านในไทย",
+    "my": "ထိုင်းတွင် အိမ်ရောင်းလျှင် အေးဂျင့်ကို ဘယ်သူ ပေးသလဲ။",
+    "zh": "在泰国卖房，佣金谁付？",
+    "de": "Wer zahlt den Makler, wenn in Thailand ein Haus verkauft wird?"
+   },
+   "a": {
+    "en": "The seller. RE/MAX Thailand's page says the seller is almost exclusively responsible for the commission, and that a buyer pays nothing unless the buyer signed a buyer's agency agreement.",
+    "th": "ผู้ขาย หน้าของ RE/MAX Thailand ระบุว่าผู้ขายเป็นผู้รับผิดชอบค่านายหน้าเกือบทั้งหมด และผู้ซื้อไม่ต้องจ่ายเว้นแต่เซ็นสัญญาตัวแทนฝั่งผู้ซื้อ",
+    "my": "ရောင်းသူက ပေးသည်။ RE/MAX Thailand ၏ စာမျက်နှာတွင် ကော်မရှင်ကို ရောင်းသူက နီးပါးအားလုံး ပေးရပြီး ဝယ်သူက ဝယ်သူကိုယ်စားလှယ်စာချုပ် မချုပ်ထားလျှင် ဘာမှမပေးရဟု ဆိုသည်။",
+    "zh": "卖方。RE/MAX Thailand 的页面写明，佣金几乎都由卖方承担；买方除非签了买方代理协议，否则不付佣金。",
+    "de": "Der Verkäufer. Die Seite von RE/MAX Thailand sagt, dass fast immer der Verkäufer die Provision trägt und ein Käufer nichts zahlt, ausser er hat einen Käufer-Maklervertrag unterschrieben."
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "q": {
+    "en": "How much commission does an agent take on a rental?",
+    "th": "นายหน้าเก็บค่านายหน้าการเช่าเท่าไร",
+    "my": "ငှားရမ်းမှုတွင် အေးဂျင့်က ကော်မရှင် ဘယ်လောက်ယူသလဲ။",
+    "zh": "租赁中介收多少佣金？",
+    "de": "Wie viel Provision nimmt ein Makler bei einer Vermietung?"
+   },
+   "a": {
+    "en": "PropertyScout says its commission is paid by the landlord, usually one monthly rent, and that the service is free for tenants and buyers.",
+    "th": "PropertyScout ระบุว่าค่านายหน้าจ่ายโดยผู้ให้เช่า ปกติเท่ากับค่าเช่าหนึ่งเดือน และบริการไม่คิดเงินผู้เช่าและผู้ซื้อ",
+    "my": "PropertyScout က ၎င်း၏ ကော်မရှင်ကို အိမ်ရှင်က ပေးပြီး များသောအားဖြင့် တစ်လစာ အိမ်လခဖြစ်ကာ ငှားရမ်းသူနှင့် ဝယ်သူအတွက် ဝန်ဆောင်မှုက အခမဲ့ဟု ဆိုသည်။",
+    "zh": "PropertyScout 写明，其佣金由房东支付，通常为一个月租金，对租客和买家免费。",
+    "de": "PropertyScout sagt, die Provision zahle der Vermieter, meist eine Monatsmiete, und der Dienst sei für Mieter und Käufer kostenlos."
+   },
+   "src": "https://propertyscout.co.th/en/how-does-it-work/"
+  },
+  {
+   "q": {
+    "en": "When is the sale commission paid?",
+    "th": "จ่ายค่านายหน้าการขายเมื่อไร",
+    "my": "ရောင်းချမှု ကော်မရှင်ကို ဘယ်အချိန် ပေးသလဲ။",
+    "zh": "售房佣金什么时候付？",
+    "de": "Wann wird die Verkaufsprovision gezahlt?"
+   },
+   "a": {
+    "en": "At the transfer at the Land Office, usually by cashier's cheque or bank transfer when the seller receives the proceeds. RE/MAX Thailand's page says it is paid to the brokerage company, not the individual agent, for a proper tax invoice.",
+    "th": "ตอนโอนกรรมสิทธิ์ที่สำนักงานที่ดิน มักจ่ายด้วยแคชเชียร์เช็คหรือโอนเงินในเวลาเดียวกับที่ผู้ขายได้รับเงิน หน้าของ RE/MAX Thailand ระบุว่าจ่ายให้บริษัทนายหน้า ไม่ใช่ตัวนายหน้าเป็นรายบุคคล เพื่อให้ได้ใบกำกับภาษีที่ถูกต้อง",
+    "my": "မြေရုံးတွင် ပိုင်ဆိုင်မှု လွှဲပြောင်းချိန်၌ ဖြစ်ပြီး များသောအားဖြင့် ရောင်းသူ ငွေရချိန်တွင်ပင် ဘဏ်ချက်လက်မှတ် သို့မဟုတ် ဘဏ်လွှဲဖြင့် ပေးသည်။ RE/MAX Thailand ၏ စာမျက်နှာတွင် အခွန်ပြေစာ မှန်ကန်စွာရရန် ပုဂ္ဂိုလ်ဖြစ်သော အေးဂျင့်ကို မဟုတ်ဘဲ ပွဲစားကုမ္ပဏီကို ပေးရသည်ဟု ဆိုသည်။",
+    "zh": "在土地局过户时付，通常在卖方收到价款的同时，用银行本票或转账支付。RE/MAX Thailand 的页面写明，佣金付给经纪公司而不是个别中介，以取得正规税务发票。",
+    "de": "Bei der Übertragung beim Landamt, meist per Bankscheck oder Überweisung, wenn der Verkäufer den Erlös erhält. Die Seite von RE/MAX Thailand sagt, die Zahlung gehe an die Maklerfirma und nicht an den einzelnen Makler, damit eine ordentliche Steuerrechnung entsteht."
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "q": {
+    "en": "Does the commission carry VAT?",
+    "th": "ค่านายหน้ามี VAT ไหม",
+    "my": "ကော်မရှင်တွင် VAT ပါသလား။",
+    "zh": "佣金要加增值税吗？",
+    "de": "Fällt auf die Provision Mehrwertsteuer an?"
+   },
+   "a": {
+    "en": "Yes. RE/MAX Thailand's page says brokerage services carry 7% VAT, on the commission and not on the property price. It gives the example of a ฿10,000,000 sale at 3%: ฿300,000 commission, ฿21,000 VAT.",
+    "th": "มี หน้าของ RE/MAX Thailand ระบุว่าบริการนายหน้ามี VAT 7% คิดจากค่านายหน้า ไม่ใช่จากราคาทรัพย์ ตัวอย่างขาย ฿10,000,000 ที่ 3% ค่านายหน้า ฿300,000 VAT ฿21,000",
+    "my": "ပါသည်။ RE/MAX Thailand ၏ စာမျက်နှာတွင် ပွဲစားဝန်ဆောင်မှုတွင် VAT 7% ပါပြီး ပစ္စည်းဈေးပေါ်မဟုတ်ဘဲ ကော်မရှင်ပေါ်တွင် ကောက်သည်ဟု ဆိုသည်။ ဥပမာအနေဖြင့် ฿10,000,000 ရောင်းချမှုကို 3% ဖြင့် ကော်မရှင် ฿300,000၊ VAT ฿21,000 ဟု ပေးထားသည်။",
+    "zh": "要。RE/MAX Thailand 的页面写明，经纪服务加收 7% 增值税，按佣金计，不按房价计。例子：成交价 ฿10,000,000、佣金 3%，佣金 ฿300,000，增值税 ฿21,000。",
+    "de": "Ja. Die Seite von RE/MAX Thailand sagt, Maklerleistungen tragen 7 % Mehrwertsteuer, auf die Provision und nicht auf den Immobilienpreis. Das Beispiel: ein Verkauf für ฿10,000,000 zu 3 %, ฿300,000 Provision, ฿21,000 Steuer."
+   },
+   "src": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "q": {
+    "en": "Who reports a foreign tenant to Immigration?",
+    "th": "ใครเป็นผู้แจ้งผู้เช่าชาวต่างชาติต่อสำนักงานตรวจคนเข้าเมือง",
+    "my": "နိုင်ငံခြားသား ငှားရမ်းသူကို လူဝင်မှုကြီးကြပ်ရေးသို့ ဘယ်သူ အကြောင်းကြားသလဲ။",
+    "zh": "谁向移民局报告外国租客？",
+    "de": "Wer meldet einen ausländischen Mieter bei der Einwanderungsbehörde?"
+   },
+   "a": {
+    "en": "The house owner, head of household, landlord or hotel manager, under section 38 of the 1979 Immigration Act. The report is on form TM.30, within 24 hours of the foreign person's arrival, at the local immigration office or, where there is none, the local police station.",
+    "th": "เจ้าบ้าน หัวหน้าครัวเรือน ผู้ให้เช่า หรือผู้จัดการโรงแรม ตามมาตรา 38 ของพระราชบัญญัติคนเข้าเมือง พ.ศ. 2522 แจ้งด้วยแบบ ตม.30 ภายใน 24 ชั่วโมงนับจากที่ชาวต่างชาติเข้าพัก ที่สำนักงานตรวจคนเข้าเมืองท้องถิ่น หากไม่มีให้แจ้งที่สถานีตำรวจท้องที่",
+    "my": "အိမ်ပိုင်ရှင်၊ အိမ်ထောင်စုခေါင်းဆောင်၊ အိမ်ရှင် သို့မဟုတ် ဟိုတယ်မန်နေဂျာက 1979 လူဝင်မှုကြီးကြပ်ရေးအက်ဥပဒေ ပုဒ်မ 38 အရ အကြောင်းကြားသည်။ နိုင်ငံခြားသား ရောက်ရှိပြီး 24 နာရီအတွင်း TM.30 ပုံစံဖြင့် ဒေသန္တရ လူဝင်မှုကြီးကြပ်ရေးရုံးသို့ တင်ပြပြီး ရုံးမရှိလျှင် ဒေသန္တရ ရဲစခန်းသို့ တင်ပြသည်။",
+    "zh": "按 1979 年《移民法》第 38 条，由房主、户主、房东或酒店经理报告。用 TM.30 表格，在外国人到达后 24 小时内，向当地移民局报告；没有移民局的地方，向当地警察局报告。",
+    "de": "Der Hauseigentümer, Haushaltsvorstand, Vermieter oder Hotelleiter, nach Abschnitt 38 des Einwanderungsgesetzes von 1979. Die Meldung erfolgt mit Formular TM.30 innerhalb von 24 Stunden nach der Ankunft der ausländischen Person, beim örtlichen Einwanderungsamt oder, wo es keines gibt, bei der örtlichen Polizeiwache."
+   },
+   "src": "https://www.immigration.go.th/en/?page_id=2799%2F"
+  }
+ ],
+ "related": [
+  "stay-check",
+  "npa-homes",
+  "stay-rent",
+  "letting",
+  "listing",
+  "wp-api"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "RE/MAX Thailand: how a real estate commission is paid in Thailand",
+    "th": "RE/MAX Thailand: การจ่ายค่านายหน้าอสังหาริมทรัพย์ในไทย",
+    "my": "RE/MAX Thailand: ထိုင်းတွင် အိမ်ခြံမြေ ကော်မရှင် ပေးပုံ",
+    "zh": "RE/MAX Thailand：泰国房产佣金如何支付",
+    "de": "RE/MAX Thailand: wie eine Immobilienprovision in Thailand gezahlt wird"
+   },
+   "href": "https://remaxthailand.prod.cms.realestateplatform.com/How-Real-Estate-Commission-is-Paid-in-Thailand"
+  },
+  {
+   "t": {
+    "en": "Immigration Bureau: notification of residence (TM.30)",
+    "th": "สำนักงานตรวจคนเข้าเมือง: การแจ้งที่พัก (ตม.30)",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန: နေထိုင်ရာ အကြောင်းကြားခြင်း (TM.30)",
+    "zh": "移民局：住宿报告（TM.30）",
+    "de": "Einwanderungsbehörde: Meldung der Unterkunft (TM.30)"
+   },
+   "href": "https://www.immigration.go.th/en/?page_id=2799%2F"
+  }
+ ],
+ "glyphs": [
+  "page",
+  "refresh",
+  "home"
+ ]
+}

@@ -1,0 +1,299 @@
+{
+ "id": "thai-lessons",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People learn Thai for daily life and work, and a short course in Thai is one of the studies the ED visa covers.",
+  "th": "คนเรียนภาษาไทยเพื่อใช้ในชีวิตประจำวันและการทำงาน และหลักสูตรระยะสั้นภาษาไทยเป็นหนึ่งในการศึกษาที่วีซ่า ED ครอบคลุม",
+  "my": "လူတွေက နေ့စဉ်ဘဝနှင့် အလုပ်အတွက် ထိုင်းဘာသာကို သင်ကြပြီး ထိုင်းဘာသာ သင်တန်းတိုတစ်ခုသည် ED ဗီဇာ ခွင့်ပြုသည့် ပညာသင်ကြားမှုများထဲက တစ်ခုဖြစ်သည်။",
+  "zh": "人们学泰语，为了日常生活和工作；泰语短期课程是 ED 签证涵盖的学习类型之一。",
+  "de": "Man lernt Thai für Alltag und Arbeit, und ein Kurzkurs in Thai gehört zu den Studien, die das ED-Visum abdeckt."
+ },
+ "n": {
+  "de": "Thai-Unterricht"
+ },
+ "l": {
+  "de": "Per Video oder persönlich in Chiang Rai oder Chiang Mai."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "You choose the hours, up to 40, and the way: video, or in person in Chiang Rai or Chiang Mai.",
+    "th": "คุณเลือกจำนวนชั่วโมง ไม่เกิน 40 ชั่วโมง และรูปแบบ คือทางวิดีโอ หรือพบตัวในเชียงรายหรือเชียงใหม่",
+    "my": "သင်က နာရီအရေအတွက် (40 အထိ) နှင့် ပုံစံကို ရွေးသည်၊ ဗီဒီယိုဖြင့် သို့မဟုတ် ချင်းရိုင်/ချင်းမိုင်တွင် လူကိုယ်တိုင်။",
+    "zh": "您选择课时（最多 40 小时）和方式：视频，或在清莱、清迈面授。",
+    "de": "Sie wählen die Stunden, bis 40, und die Form: per Video oder persönlich in Chiang Rai oder Chiang Mai."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "A teacher gives the Thai lesson, an hour at a time.",
+    "th": "ครูสอนภาษาไทยทีละหนึ่งชั่วโมง",
+    "my": "ဆရာ/ဆရာမက ထိုင်းဘာသာသင်ခန်းစာကို တစ်နာရီစီ သင်ပေးသည်။",
+    "zh": "老师一次上一小时的泰语课。",
+    "de": "Eine Lehrperson gibt die Thai-Lektion, jeweils eine Stunde."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "One hour",
+    "th": "ครั้งละหนึ่งชั่วโมง",
+    "my": "တစ်နာရီ",
+    "zh": "一小时",
+    "de": "Eine Stunde"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "The lessons add up to the hours you chose.",
+    "th": "บทเรียนรวมกันเท่ากับจำนวนชั่วโมงที่คุณเลือก",
+    "my": "သင်ခန်းစာများ ပေါင်းလျှင် သင်ရွေးခဲ့သော နာရီအရေအတွက်နှင့် ညီသည်။",
+    "zh": "各节课加起来等于您选的课时。",
+    "de": "Die Lektionen ergeben zusammen die gewählten Stunden."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "Until the last hour",
+    "th": "จนถึงชั่วโมงสุดท้าย",
+    "my": "နောက်ဆုံးနာရီအထိ",
+    "zh": "直到最后一小时",
+    "de": "Bis zur letzten Stunde"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Royal Thai Embassy in London lists, for an ED visa to study a short course in Thai or English, a letter from a Ministry of Education authority and a signed enrolment letter.",
+    "th": "สถานเอกอัครราชทูตไทยในลอนดอนระบุว่า วีซ่า ED สำหรับหลักสูตรระยะสั้นภาษาไทยหรืออังกฤษ ต้องมีหนังสือจากหน่วยงานของกระทรวงศึกษาธิการ และหนังสือลงทะเบียนเรียนที่ลงนามแล้ว",
+    "my": "လန်ဒန်ရှိ ထိုင်းသံရုံးက ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာ သင်တန်းတိုအတွက် ED ဗီဇာတွင် ပညာရေးဝန်ကြီးဌာန၏ အဖွဲ့အစည်းတစ်ခုထံမှ စာနှင့် လက်မှတ်ထိုးထားသော ကျောင်းအပ်စာတို့ လိုသည်ဟု ဖော်ပြသည်။",
+    "zh": "泰国驻伦敦大使馆列出，申请短期泰语或英语课程的 ED 签证，需要教育部下属机构的信函和已签署的入学函。",
+    "de": "Die Königlich Thailändische Botschaft in London nennt für ein ED-Visum zu einem Kurzkurs in Thai oder Englisch einen Brief einer Stelle des Bildungsministeriums und ein unterschriebenes Einschreibeschreiben."
+   },
+   "src": "https://london.thaiembassy.org/en/page/education-visa"
+  },
+  {
+   "t": {
+    "en": "The ED visa is valid for 90 days from issue and for a single entry; a stay runs up to 90 days from the date of entry, and extensions are at the immigration officer's discretion.",
+    "th": "วีซ่า ED มีอายุ 90 วันนับจากวันออก เข้าประเทศได้ครั้งเดียว พำนักได้ไม่เกิน 90 วันนับจากวันเข้า และการขยายระยะเวลาอยู่ในดุลยพินิจของเจ้าหน้าที่ตรวจคนเข้าเมือง",
+    "my": "ED ဗီဇာသည် ထုတ်ပေးသည့်နေ့မှ 90 ရက်တွင် တရားဝင်ပြီး ဝင်ခွင့်တစ်ကြိမ်သာဖြစ်သည်၊ ဝင်ရောက်သည့်နေ့မှ 90 ရက်အထိ နေထိုင်နိုင်ပြီး သက်တမ်းတိုးခြင်းကို လူဝင်မှုကြီးကြပ်ရေးအရာရှိက ဆုံးဖြတ်သည်။",
+    "zh": "ED 签证自签发起 90 天内有效，限单次入境；入境后可停留至多 90 天，延期由移民官员裁量。",
+    "de": "Das ED-Visum gilt 90 Tage ab Ausstellung für eine einmalige Einreise; der Aufenthalt dauert bis zu 90 Tage ab Einreise, Verlängerungen liegen im Ermessen der Einwanderungsbehörde."
+   },
+   "src": "https://london.thaiembassy.org/en/page/education-visa"
+  },
+  {
+   "t": {
+    "en": "TSL Chiang Mai, a language school, lists 80% attendance during a 90-day study period for its ED visa students.",
+    "th": "TSL เชียงใหม่ โรงเรียนสอนภาษา ระบุการเข้าเรียน 80% ในช่วงเรียน 90 วันสำหรับนักเรียนวีซ่า ED",
+    "my": "ဘာသာစကားကျောင်း TSL ချင်းမိုင်က ED ဗီဇာကျောင်းသားများအတွက် 90 ရက်သင်ကြားချိန်အတွင်း တက်ရောက်မှု 80% ကို ဖော်ပြထားသည်။",
+    "zh": "语言学校 TSL 清迈对其 ED 签证学生列出：90 天学习期内出勤 80%。",
+    "de": "TSL Chiang Mai, eine Sprachschule, nennt für ihre ED-Visum-Lernenden 80 % Anwesenheit in einer Studienperiode von 90 Tagen."
+   },
+   "src": "https://tslchiangmai.com/Education-Visa"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai group course, TSL Chiang Mai (language school)",
+    "th": "คอร์สกลุ่มภาษาไทย TSL เชียงใหม่ (โรงเรียนสอนภาษา)",
+    "my": "ထိုင်းဘာသာ အုပ်စုလိုက်သင်တန်း၊ TSL ချင်းမိုင် (ဘာသာစကားကျောင်း)",
+    "zh": "泰语小组课，TSL 清迈（语言学校）",
+    "de": "Thai-Gruppenkurs, TSL Chiang Mai (Sprachschule)"
+   },
+   "p": {
+    "en": "24 hours a month ฿3,600; 72 hours a month ฿9,900",
+    "th": "เดือนละ 24 ชั่วโมง ฿3,600 เดือนละ 72 ชั่วโมง ฿9,900",
+    "my": "တစ်လ 24 နာရီ ฿3,600၊ တစ်လ 72 နာရီ ฿9,900",
+    "zh": "每月 24 小时 ฿3,600；每月 72 小时 ฿9,900",
+    "de": "24 Stunden im Monat ฿3,600; 72 Stunden im Monat ฿9,900"
+   },
+   "src": "https://tslchiangmai.com/"
+  },
+  {
+   "t": {
+    "en": "Private Thai lessons, TSL Chiang Mai",
+    "th": "เรียนภาษาไทยตัวต่อตัว TSL เชียงใหม่",
+    "my": "ထိုင်းဘာသာ တစ်ဦးချင်းသင်ခန်းစာ၊ TSL ချင်းမိုင်",
+    "zh": "泰语一对一课，TSL 清迈",
+    "de": "Thai-Einzelunterricht, TSL Chiang Mai"
+   },
+   "p": {
+    "en": "30 hours ฿15,000 at the school (฿500 an hour); 30 hours online ฿13,500 (฿450 an hour)",
+    "th": "30 ชั่วโมง ฿15,000 ที่โรงเรียน (ชั่วโมงละ ฿500) 30 ชั่วโมงออนไลน์ ฿13,500 (ชั่วโมงละ ฿450)",
+    "my": "ကျောင်းတွင် 30 နာရီ ฿15,000 (တစ်နာရီ ฿500)၊ အွန်လိုင်း 30 နာရီ ฿13,500 (တစ်နာရီ ฿450)",
+    "zh": "学校面授 30 小时 ฿15,000（每小时 ฿500）；在线 30 小时 ฿13,500（每小时 ฿450）",
+    "de": "30 Stunden ฿15,000 an der Schule (฿500 pro Stunde); 30 Stunden online ฿13,500 (฿450 pro Stunde)"
+   },
+   "src": "https://tslchiangmai.com/"
+  },
+  {
+   "t": {
+    "en": "Thai for Foreigners 1, Chiang Mai Rajabhat University short course",
+    "th": "Thai for Foreigners 1 หลักสูตรระยะสั้น มหาวิทยาลัยราชภัฏเชียงใหม่",
+    "my": "Thai for Foreigners 1၊ ချင်းမိုင်ရာဇဘတ်တက္ကသိုလ် သင်တန်းတို",
+    "zh": "Thai for Foreigners 1，清迈拉查帕特大学（Rajabhat）短期课程",
+    "de": "Thai for Foreigners 1, Kurzkurs der Chiang Mai Rajabhat University"
+   },
+   "p": {
+    "en": "45 hours, ฿3,000 a person",
+    "th": "45 ชั่วโมง คนละ ฿3,000",
+    "my": "45 နာရီ၊ တစ်ဦးလျှင် ฿3,000",
+    "zh": "45 小时，每人 ฿3,000",
+    "de": "45 Stunden, ฿3,000 pro Person"
+   },
+   "src": "https://www.inter.cmru.ac.th/?p=8781"
+  },
+  {
+   "t": {
+    "en": "Thai tutors on Fastwork",
+    "th": "ครูสอนภาษาไทยบน Fastwork",
+    "my": "Fastwork ရှိ ထိုင်းဘာသာဆရာများ",
+    "zh": "Fastwork 上的泰语家教",
+    "de": "Thai-Lehrpersonen auf Fastwork"
+   },
+   "p": {
+    "en": "From about ฿300 an hour",
+    "th": "เริ่มต้นประมาณชั่วโมงละ ฿300",
+    "my": "တစ်နာရီ ฿300 ခန့်မှ စသည်",
+    "zh": "每小时约 ฿300 起",
+    "de": "ab etwa ฿300 pro Stunde"
+   },
+   "src": "https://fastwork.co/teaching-thai-foreigners"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much do Thai lessons cost in Chiang Mai?",
+    "th": "เรียนภาษาไทยในเชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် ထိုင်းဘာသာသင်ခ ဘယ်လောက်လဲ။",
+    "zh": "在清迈上泰语课要多少钱？",
+    "de": "Was kosten Thai-Lektionen in Chiang Mai?"
+   },
+   "a": {
+    "en": "TSL Chiang Mai lists private Thai lessons at ฿500 an hour at the school and ฿450 an hour online, bought as 30 hours, and a group course of 24 hours a month at ฿3,600.",
+    "th": "TSL เชียงใหม่ตั้งราคาเรียนภาษาไทยตัวต่อตัวชั่วโมงละ ฿500 ที่โรงเรียน และชั่วโมงละ ฿450 แบบออนไลน์ ซื้อเป็นชุด 30 ชั่วโมง และคอร์สกลุ่ม 24 ชั่วโมงต่อเดือนราคา ฿3,600",
+    "my": "TSL ချင်းမိုင်က တစ်ဦးချင်းထိုင်းဘာသာသင်ခန်းစာကို ကျောင်းတွင် တစ်နာရီ ฿500၊ အွန်လိုင်း တစ်နာရီ ฿450 ဖြင့် 30 နာရီစုံ ရောင်းချပြီး တစ်လ 24 နာရီ အုပ်စုလိုက်သင်တန်းကို ฿3,600 ဟု သတ်မှတ်သည်။",
+    "zh": "TSL 清迈标价：一对一泰语课学校面授每小时 ฿500，在线每小时 ฿450，按 30 小时一套出售；小组课每月 24 小时 ฿3,600。",
+    "de": "TSL Chiang Mai nennt für Thai-Einzelunterricht ฿500 pro Stunde an der Schule und ฿450 pro Stunde online, im Paket zu 30 Stunden, und für einen Gruppenkurs mit 24 Stunden im Monat ฿3,600."
+   },
+   "src": "https://tslchiangmai.com/"
+  },
+  {
+   "q": {
+    "en": "Can I get a visa to study Thai?",
+    "th": "ขอวีซ่าเพื่อเรียนภาษาไทยได้ไหม",
+    "my": "ထိုင်းဘာသာသင်ရန် ဗီဇာရနိုင်ပါသလား။",
+    "zh": "能办签证来学泰语吗？",
+    "de": "Kann ich ein Visum für ein Thai-Studium bekommen?"
+   },
+   "a": {
+    "en": "The Royal Thai Embassy in London lists a short course in Thai or English among the studies the ED visa covers. It asks for a letter from a Ministry of Education authority and a signed enrolment letter, and the visa is for a single entry.",
+    "th": "สถานเอกอัครราชทูตไทยในลอนดอนระบุหลักสูตรระยะสั้นภาษาไทยหรืออังกฤษไว้ในการศึกษาที่วีซ่า ED ครอบคลุม โดยขอหนังสือจากหน่วยงานของกระทรวงศึกษาธิการและหนังสือลงทะเบียนเรียนที่ลงนามแล้ว และวีซ่าเข้าประเทศได้ครั้งเดียว",
+    "my": "လန်ဒန်ရှိ ထိုင်းသံရုံးက ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာ သင်တန်းတိုကို ED ဗီဇာ ခွင့်ပြုသည့် ပညာသင်ကြားမှုများထဲ ထည့်ဖော်ပြထားသည်။ ပညာရေးဝန်ကြီးဌာန၏ အဖွဲ့အစည်းထံမှ စာနှင့် လက်မှတ်ထိုးထားသော ကျောင်းအပ်စာ တောင်းပြီး ဗီဇာသည် ဝင်ခွင့်တစ်ကြိမ်သာ ဖြစ်သည်။",
+    "zh": "泰国驻伦敦大使馆把泰语或英语短期课程列入 ED 签证涵盖的学习类型，要求教育部下属机构的信函和已签署的入学函，签证为单次入境。",
+    "de": "Die Königlich Thailändische Botschaft in London zählt einen Kurzkurs in Thai oder Englisch zu den Studien, die das ED-Visum abdeckt. Verlangt werden ein Brief einer Stelle des Bildungsministeriums und ein unterschriebenes Einschreibeschreiben; das Visum gilt für eine einmalige Einreise."
+   },
+   "src": "https://london.thaiembassy.org/en/page/education-visa"
+  },
+  {
+   "q": {
+    "en": "Can I learn Thai online?",
+    "th": "เรียนภาษาไทยออนไลน์ได้ไหม",
+    "my": "ထိုင်းဘာသာကို အွန်လိုင်းမှ သင်နိုင်ပါသလား။",
+    "zh": "能在线学泰语吗？",
+    "de": "Kann ich Thai online lernen?"
+   },
+   "a": {
+    "en": "Yes. TSL Chiang Mai sells private Thai lessons online, 30 hours for ฿13,500, which is ฿450 an hour.",
+    "th": "ได้ TSL เชียงใหม่ขายคอร์สภาษาไทยตัวต่อตัวแบบออนไลน์ 30 ชั่วโมง ฿13,500 หรือชั่วโมงละ ฿450",
+    "my": "ရနိုင်သည်။ TSL ချင်းမိုင်က တစ်ဦးချင်းထိုင်းဘာသာသင်ခန်းစာကို အွန်လိုင်းမှ 30 နာရီ ฿13,500 ဖြင့် ရောင်းချသည်၊ တစ်နာရီ ฿450 ဖြစ်သည်။",
+    "zh": "可以。TSL 清迈出售在线一对一泰语课，30 小时 ฿13,500，即每小时 ฿450。",
+    "de": "Ja. TSL Chiang Mai verkauft privaten Thai-Unterricht online, 30 Stunden für ฿13,500, das sind ฿450 pro Stunde."
+   },
+   "src": "https://tslchiangmai.com/"
+  },
+  {
+   "q": {
+    "en": "Are there short university Thai courses in Chiang Mai?",
+    "th": "มีหลักสูตรภาษาไทยระยะสั้นของมหาวิทยาลัยในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်တွင် တက္ကသိုလ်၏ ထိုင်းဘာသာ သင်တန်းတိုများ ရှိပါသလား။",
+    "zh": "清迈有大学开设的泰语短期课程吗？",
+    "de": "Gibt es Thai-Kurzkurse einer Universität in Chiang Mai?"
+   },
+   "a": {
+    "en": "Chiang Mai Rajabhat University lists Thai for Foreigners 1: 45 hours at ฿3,000 a person. Its table shows a minimum of 10 students.",
+    "th": "มหาวิทยาลัยราชภัฏเชียงใหม่ระบุหลักสูตร Thai for Foreigners 1 จำนวน 45 ชั่วโมง คนละ ฿3,000 ตารางระบุผู้เรียนขั้นต่ำ 10 คน",
+    "my": "ချင်းမိုင်ရာဇဘတ်တက္ကသိုလ်က Thai for Foreigners 1 ကို 45 နာရီ၊ တစ်ဦးလျှင် ฿3,000 ဟု ဖော်ပြထားသည်။ ၎င်း၏ ဇယားတွင် ကျောင်းသား အနည်းဆုံး 10 ဦး ဟု ဖော်ပြသည်။",
+    "zh": "清迈拉查帕特大学列出 Thai for Foreigners 1：45 小时，每人 ฿3,000，表中最低开班人数为 10 人。",
+    "de": "Die Chiang Mai Rajabhat University führt Thai for Foreigners 1 auf: 45 Stunden für ฿3,000 pro Person. Ihre Tabelle nennt mindestens 10 Teilnehmende."
+   },
+   "src": "https://www.inter.cmru.ac.th/?p=8781"
+  }
+ ],
+ "related": [
+  "interp",
+  "translate",
+  "call",
+  "visas",
+  "retire",
+  "bank-account"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Royal Thai Embassy, London: education visa (ED)",
+    "th": "สถานเอกอัครราชทูตไทยในลอนดอน: วีซ่านักเรียน (ED)",
+    "my": "လန်ဒန်ရှိ ထိုင်းသံရုံး: ပညာရေးဗီဇာ (ED)",
+    "zh": "泰国驻伦敦大使馆：教育签证（ED）",
+    "de": "Königlich Thailändische Botschaft London: Bildungsvisum (ED)"
+   },
+   "href": "https://london.thaiembassy.org/en/page/education-visa"
+  },
+  {
+   "t": {
+    "en": "TSL Chiang Mai: Thai courses and prices",
+    "th": "TSL เชียงใหม่: คอร์สภาษาไทยและราคา",
+    "my": "TSL ချင်းမိုင်: ထိုင်းဘာသာသင်တန်းများနှင့် ဈေးနှုန်းများ",
+    "zh": "TSL 清迈：泰语课程与价格",
+    "de": "TSL Chiang Mai: Thai-Kurse und Preise"
+   },
+   "href": "https://tslchiangmai.com/"
+  }
+ ],
+ "glyphs": [
+  "wai",
+  "chat",
+  "laptop"
+ ]
+}

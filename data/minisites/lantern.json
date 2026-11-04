@@ -1,0 +1,336 @@
+{
+ "id": "lantern",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "In November people go to Wat Phra That Hariphunchai in Lamphun for the lantern lights, and Chiang Mai sets rules on where sky lanterns can fly.",
+  "th": "เดือนพฤศจิกายนคนไปชมแสงโคมที่วัดพระธาตุหริภุญชัย จังหวัดลำพูน ส่วนเชียงใหม่กำหนดกฎว่าโคมลอยปล่อยได้ที่ไหน",
+  "my": "နိုဝင်ဘာလတွင် လူတွေသည် လမ်ဖွန်းရှိ ဝပ်ဖရတတ်ဟရိဖွန်ချိုင် ဘုရားသို့ မီးအိမ်အလင်းရောင်ကြည့်ရန် သွားကြပြီး ချင်းမိုင်တွင် ကောင်းကင်မီးအိမ်ကို ဘယ်နေရာမှာ လွှတ်နိုင်သည်ကို စည်းကမ်းသတ်မှတ်ထားသည်။",
+  "zh": "十一月，人们前往南奔的哈里奔猜佛塔寺赏灯；清迈对天灯可以在哪里放飞定有规定。",
+  "de": "Im November fahren Leute wegen der Laternen zum Wat Phra That Hariphunchai in Lamphun, und Chiang Mai legt fest, wo Himmelslaternen steigen dürfen."
+ },
+ "n": {
+  "de": "Laternennacht in Lamphun"
+ },
+ "l": {
+  "de": "November im Wat Phra That Hariphunchai: Fahrt, Abendessen, ein Guide."
+ },
+ "steps": [
+  {
+   "db": "songthaew",
+   "t": {
+    "en": "Transport takes you from Chiang Mai to Lamphun.",
+    "th": "รถพาคุณจากเชียงใหม่ไปลำพูน",
+    "my": "သင့်ကို ချင်းမိုင်မှ လမ်ဖွန်းသို့ ယာဉ်ဖြင့် ပို့ပေးသည်။",
+    "zh": "车从清迈把您送到南奔。",
+    "de": "Die Fahrt bringt Sie von Chiang Mai nach Lamphun."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the night",
+    "th": "ในคืนนั้น",
+    "my": "ထိုညတွင်",
+    "zh": "当晚",
+    "de": "Am Abend"
+   }
+  },
+  {
+   "db": "chedi",
+   "t": {
+    "en": "A guide goes with you at Wat Phra That Hariphunchai.",
+    "th": "ไกด์ไปกับคุณที่วัดพระธาตุหริภุญชัย",
+    "my": "ဝပ်ဖရတတ်ဟရိဖွန်ချိုင်တွင် ဧည့်လမ်းညွှန်တစ်ဦး သင်နှင့်အတူ လိုက်ပါသည်။",
+    "zh": "在哈里奔猜佛塔寺，有导游陪您同行。",
+    "de": "Im Wat Phra That Hariphunchai begleitet Sie ein Guide."
+   },
+   "who": {
+    "en": "Hongdam and a guide",
+    "th": "หงส์ดำและไกด์",
+    "my": "ဟုန်ဒမ်နှင့် ဧည့်လမ်းညွှန်",
+    "zh": "鸿丹和导游",
+    "de": "Hongdam und ein Guide"
+   },
+   "time": {
+    "en": "At the temple",
+    "th": "ที่วัด",
+    "my": "ဘုရားတွင်",
+    "zh": "在寺里",
+    "de": "Im Tempel"
+   }
+  },
+  {
+   "db": "noodles",
+   "t": {
+    "en": "Dinner is part of the seat.",
+    "th": "อาหารเย็นรวมอยู่ในราคาที่นั่ง",
+    "my": "ညစာသည် ထိုင်ခုံကြေးထဲတွင် ပါဝင်သည်။",
+    "zh": "晚餐包含在座位费里。",
+    "de": "Das Abendessen gehört zum Platz."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Over the evening",
+    "th": "ช่วงเย็น",
+    "my": "ညနေပိုင်း",
+    "zh": "傍晚",
+    "de": "Über den Abend"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Loy Krathong falls on Tuesday 24 November 2026. Chiang Mai's city Yi Peng festival runs 23 to 25 November, with the main lantern nights on 24 and 25 November.",
+    "th": "ลอยกระทงปี 2569 ตรงกับวันอังคารที่ 24 พฤศจิกายน เทศกาลยี่เป็งของเมืองเชียงใหม่จัดวันที่ 23 ถึง 25 พฤศจิกายน โดยคืนโคมหลักคือวันที่ 24 และ 25 พฤศจิกายน",
+    "my": "2026 ခုနှစ် လွိုင်ကရသုံးပွဲသည် အင်္ဂါနေ့ နိုဝင်ဘာ 24 ရက်တွင် ကျရောက်သည်။ ချင်းမိုင်မြို့၏ ယီပေါင်ပွဲတော်သည် နိုဝင်ဘာ 23 ရက်မှ 25 ရက်အထိ ကျင်းပပြီး မီးအိမ်ညအဓိကများမှာ နိုဝင်ဘာ 24 နှင့် 25 ရက်ဖြစ်သည်။",
+    "zh": "2026 年水灯节在 11 月 24 日，星期二。清迈市的易鹏节从 11 月 23 日到 25 日，主要的灯夜是 11 月 24 日和 25 日。",
+    "de": "Loy Krathong fällt 2026 auf Dienstag, den 24. November. Das Yi-Peng-Fest der Stadt Chiang Mai dauert vom 23. bis 25. November, die Haupt-Laternennächte sind der 24. und 25. November."
+   },
+   "src": "https://www.thaiholidayguide.com/events/loy-krathong/"
+  },
+  {
+   "t": {
+    "en": "Thai Holiday Guide lists sky lanterns and fireworks in Chiang Mai province only on 24 and 25 November, from 19:00 to 01:00. It lists none in Mueang Chiang Mai district, which holds the Old City.",
+    "th": "Thai Holiday Guide ระบุว่าในจังหวัดเชียงใหม่ปล่อยโคมลอยและจุดพลุได้เฉพาะวันที่ 24 และ 25 พฤศจิกายน เวลา 19:00 ถึง 01:00 น. และไม่อนุญาตในอำเภอเมืองเชียงใหม่ ซึ่งเป็นที่ตั้งของเมืองเก่า",
+    "my": "Thai Holiday Guide က ချင်းမိုင်ပြည်နယ်တွင် ကောင်းကင်မီးအိမ်နှင့် မီးရှူးမီးပန်းကို နိုဝင်ဘာ 24 နှင့် 25 ရက်၊ 19:00 မှ 01:00 အထိသာ ခွင့်ပြုသည်ဟု ဖော်ပြပြီး မြို့ဟောင်းပါဝင်သော မြို့တော်ခရိုင် (Mueang Chiang Mai) တွင် မခွင့်ပြုဟု ဆိုသည်။",
+    "zh": "Thai Holiday Guide 列出，清迈府内天灯和烟花只在 11 月 24 日和 25 日 19:00 至次日 01:00 可放，古城所在的清迈市区（Mueang）不可放。",
+    "de": "Thai Holiday Guide nennt Himmelslaternen und Feuerwerk in der Provinz Chiang Mai nur am 24. und 25. November, von 19:00 bis 01:00 Uhr. Im Bezirk Mueang Chiang Mai mit der Altstadt sind sie nicht erlaubt."
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "t": {
+    "en": "A release needs a district permit. Lanterns must carry the Thai community product mark 808/2552, stay in the air no more than seven minutes and have no firecrackers attached.",
+    "th": "การปล่อยโคมต้องได้รับอนุญาตจากอำเภอ โคมต้องมีเครื่องหมายมาตรฐานผลิตภัณฑ์ชุมชน มผช. 808/2552 ลอยอยู่ในอากาศไม่เกินเจ็ดนาที และไม่ติดประทัด",
+    "my": "မီးအိမ်လွှတ်ရန် ခရိုင်၏ ခွင့်ပြုချက် လိုသည်။ မီးအိမ်တွင် ထိုင်းအသိုင်းအဝိုင်းထုတ်ကုန် စံနှုန်း 808/2552 အမှတ်အသား ပါရမည်၊ လေထဲတွင် ခုနစ်မိနစ်ထက် မကျော်ရ၊ ပေါက်ကွဲပစ္စည်း မတွဲရ။",
+    "zh": "放灯需要县（区）级许可。天灯须带有泰国社区产品标准 808/2552 标志，升空不超过七分钟，且不得绑鞭炮。",
+    "de": "Für das Steigenlassen braucht es eine Bewilligung des Bezirks. Die Laternen tragen die thailändische Gemeinschaftsprodukt-Norm 808/2552, bleiben höchstens sieben Minuten in der Luft und haben keine Knallkörper dran."
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai's order for 5 and 6 November 2025 barred release in surveillance zones, including a flight-safety zone 15 km north and south of the airport. The penalty is up to five years in prison and a fine of up to ฿200,000. Release was allowed only at officially approved events, such as the CAD Yi Peng Sky Lantern Festival.",
+    "th": "คำสั่งของเชียงใหม่สำหรับวันที่ 5 และ 6 พฤศจิกายน 2568 ห้ามปล่อยโคมในเขตที่ทางการกำหนด รวมถึงเขตความปลอดภัยการบินรัศมี 15 กม. ทางเหนือและใต้ของสนามบิน โทษจำคุกไม่เกินห้าปีและปรับไม่เกิน ฿200,000 อนุญาตให้ปล่อยเฉพาะในงานที่ได้รับอนุญาตอย่างเป็นทางการ เช่น งาน CAD Yi Peng Sky Lantern Festival",
+    "my": "ချင်းမိုင်၏ 2025 နိုဝင်ဘာ 5 နှင့် 6 ရက်အတွက် အမိန့်သည် ကြီးကြပ်ရေးဇုန်များတွင် မီးအိမ်လွှတ်ခြင်းကို တားမြစ်ခဲ့ပြီး လေဆိပ်၏ မြောက်နှင့်တောင် 15 ကီလိုမီတာအထိ ပျံသန်းလုံခြုံရေးဇုန်လည်း ပါဝင်သည်။ ထောင်ငါးနှစ်အထိနှင့် ฿200,000 အထိ ဒဏ်ကြေး ချမှတ်နိုင်သည်။ တရားဝင်ခွင့်ပြုထားသော ပွဲများ (ဥပမာ CAD Yi Peng Sky Lantern Festival) တွင်သာ လွှတ်ခွင့်ရှိသည်။",
+    "zh": "清迈针对 2025 年 11 月 5 日和 6 日的命令，禁止在监控区放灯，其中包括机场南北各 15 公里的飞行安全区。违者最高可判五年监禁并处最高 ฿200,000 罚款。只有官方批准的活动（如 CAD 易鹏天灯节）才准放灯。",
+    "de": "Die Anordnung von Chiang Mai für den 5. und 6. November 2025 verbot das Steigenlassen in Überwachungszonen, darunter eine Flugsicherheitszone von 15 km nördlich und südlich des Flughafens. Es drohen bis zu fünf Jahre Haft und eine Busse von bis zu ฿200,000. Erlaubt war es nur bei amtlich bewilligten Anlässen wie dem CAD Yi Peng Sky Lantern Festival."
+   },
+   "src": "https://www.timeout.com/chiang-mai/news/yi-peng-lanterns-grounded-over-public-safety-concerns-101025"
+  },
+  {
+   "t": {
+    "en": "In 2025 the Lantern Festival of a Hundred Thousand Lights ran at Wat Phra That Hariphunchai from 18 September to 9 November, with a lantern lighting ceremony, Lanna music, a craft market and lantern workshops.",
+    "th": "ในปี 2568 เทศกาลโคมแสนดวงจัดที่วัดพระธาตุหริภุญชัยตั้งแต่ 18 กันยายนถึง 9 พฤศจิกายน มีพิธีจุดโคม ดนตรีล้านนา ตลาดงานฝีมือ และเวิร์กช็อปทำโคม",
+    "my": "2025 တွင် မီးအိမ်တစ်သိန်းပွဲတော်ကို ဝပ်ဖရတတ်ဟရိဖွန်ချိုင်၌ စက်တင်ဘာ 18 ရက်မှ နိုဝင်ဘာ 9 ရက်အထိ ကျင်းပခဲ့ပြီး မီးအိမ်ထွန်းညှိသည့် အခမ်းအနား၊ လန်နာ ဂီတ၊ လက်မှုပစ္စည်းဈေးနှင့် မီးအိမ်လုပ်သင်တန်းများ ပါဝင်သည်။",
+    "zh": "2025 年，十万灯节于 9 月 18 日至 11 月 9 日在哈里奔猜佛塔寺举行，有点灯仪式、兰纳音乐、手工艺市集和灯笼工作坊。",
+    "de": "2025 fand das Fest der Hunderttausend Laternen vom 18. September bis 9. November im Wat Phra That Hariphunchai statt, mit Laternen-Zeremonie, Lanna-Musik, Handwerksmarkt und Laternen-Workshops."
+   },
+   "src": "https://travel.lamphunpao.go.th/en/event-calendar/rnsl5mtjtfzl349pdxmvfhyq"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "CAD Yi Peng Sky Lantern Festival, Mae On, 24 and 25 November 2026 (the listing shows the tickets sold out)",
+    "th": "งาน CAD Yi Peng Sky Lantern Festival อำเภอแม่ออน 24 และ 25 พฤศจิกายน 2569 (รายการระบุว่าบัตรหมดแล้ว)",
+    "my": "CAD Yi Peng Sky Lantern Festival၊ မဲအွန်၊ 2026 နိုဝင်ဘာ 24 နှင့် 25 (လက်မှတ်ကုန်သွားပြီဟု ဖော်ပြထားသည်)",
+    "zh": "CAD 易鹏天灯节，湄安，2026 年 11 月 24 日和 25 日（页面显示门票已售罄）",
+    "de": "CAD Yi Peng Sky Lantern Festival, Mae On, 24. und 25. November 2026 (laut Eintrag ausverkauft)"
+   },
+   "p": {
+    "en": "฿4,900–16,900",
+    "th": "฿4,900–16,900",
+    "my": "฿4,900–16,900",
+    "zh": "฿4,900–16,900",
+    "de": "฿4,900–16,900"
+   },
+   "src": "https://www.thailandstarterkit.com/events/cad-yi-peng-sky-lantern-festival-2026-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "Sky of Wishes, Mungmana Farm, San Pa Tong, by ticket tier",
+    "th": "Sky of Wishes ที่ Mungmana Farm อำเภอสันป่าตอง ตามระดับบัตร",
+    "my": "Sky of Wishes၊ Mungmana Farm၊ ဆန်ပါတောင်း၊ လက်မှတ်အဆင့်အလိုက်",
+    "zh": "Sky of Wishes，Mungmana Farm，三帕东，按票档",
+    "de": "Sky of Wishes, Mungmana Farm, San Pa Tong, nach Ticketstufe"
+   },
+   "p": {
+    "en": "From ฿3,785; VIP ฿5,565; Premium ฿7,320; Elite ฿13,570",
+    "th": "เริ่ม ฿3,785; VIP ฿5,565; Premium ฿7,320; Elite ฿13,570",
+    "my": "฿3,785 မှစ၍၊ VIP ฿5,565၊ Premium ฿7,320၊ Elite ฿13,570",
+    "zh": "起价 ฿3,785；VIP ฿5,565；Premium ฿7,320；Elite ฿13,570",
+    "de": "Ab ฿3,785; VIP ฿5,565; Premium ฿7,320; Elite ฿13,570"
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "t": {
+    "en": "Yee Peng Lanna International, Thudongkasathan Lanna, San Sai (Klook price)",
+    "th": "Yee Peng Lanna International ที่ Thudongkasathan Lanna อำเภอสันทราย (ราคาบน Klook)",
+    "my": "Yee Peng Lanna International၊ Thudongkasathan Lanna၊ ဆန်ဆိုင် (Klook ဈေး)",
+    "zh": "Yee Peng Lanna International，Thudongkasathan Lanna，三赛（Klook 价格）",
+    "de": "Yee Peng Lanna International, Thudongkasathan Lanna, San Sai (Preis bei Klook)"
+   },
+   "p": {
+    "en": "From about US$178",
+    "th": "เริ่มประมาณ US$178",
+    "my": "US$178 ခန့်မှစ၍",
+    "zh": "约 US$178 起",
+    "de": "Ab etwa US$178"
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "t": {
+    "en": "Yeepeng Lanna Festival, Gassan Panorama Golf Club, Lamphun, 24 and 25 November: transfer from Central Festival, dinner, three lanterns and a krathong (GetYourGuide price)",
+    "th": "Yeepeng Lanna Festival ที่ Gassan Panorama Golf Club ลำพูน 24 และ 25 พฤศจิกายน: รถรับส่งจาก Central Festival อาหารเย็น โคมสามดวง และกระทงหนึ่งใบ (ราคาบน GetYourGuide)",
+    "my": "Yeepeng Lanna Festival၊ Gassan Panorama Golf Club၊ လမ်ဖွန်း၊ နိုဝင်ဘာ 24 နှင့် 25: Central Festival မှ ပို့ဆောင်ရေး၊ ညစာ၊ မီးအိမ်သုံးလုံးနှင့် ကရသုံးတစ်ခု (GetYourGuide ဈေး)",
+    "zh": "Yeepeng Lanna Festival，Gassan Panorama Golf Club，南奔，11 月 24 日和 25 日：从 Central Festival 接送、晚餐、三盏灯和一只水灯（GetYourGuide 价格）",
+    "de": "Yeepeng Lanna Festival, Gassan Panorama Golf Club, Lamphun, 24. und 25. November: Transfer ab Central Festival, Abendessen, drei Laternen und ein Krathong (Preis bei GetYourGuide)"
+   },
+   "p": {
+    "en": "From about US$133",
+    "th": "เริ่มประมาณ US$133",
+    "my": "US$133 ခန့်မှစ၍",
+    "zh": "约 US$133 起",
+    "de": "Ab etwa US$133"
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "When is the Yi Peng festival in 2026?",
+    "th": "ยี่เป็ง 2569 จัดวันไหน",
+    "my": "2026 ခုနှစ် ယီပေါင်ပွဲတော်သည် ဘယ်နေ့လဲ။",
+    "zh": "2026 年易鹏节是哪天？",
+    "de": "Wann ist das Yi-Peng-Fest 2026?"
+   },
+   "a": {
+    "en": "Loy Krathong falls on 24 November 2026. Chiang Mai's city festival runs 23 to 25 November, and the ticketed sky-lantern releases are on 24 and 25 November.",
+    "th": "ลอยกระทงปี 2569 ตรงกับวันที่ 24 พฤศจิกายน เทศกาลของเมืองเชียงใหม่จัดวันที่ 23 ถึง 25 พฤศจิกายน และงานปล่อยโคมลอยแบบมีบัตรจัดวันที่ 24 และ 25 พฤศจิกายน",
+    "my": "2026 လွိုင်ကရသုံးပွဲသည် နိုဝင်ဘာ 24 ရက်တွင် ကျရောက်သည်။ ချင်းမိုင်မြို့၏ ပွဲတော်သည် နိုဝင်ဘာ 23 မှ 25 ရက်အထိ ဖြစ်ပြီး လက်မှတ်ဖြင့် ကောင်းကင်မီးအိမ်လွှတ်ပွဲများမှာ နိုဝင်ဘာ 24 နှင့် 25 ရက်ဖြစ်သည်။",
+    "zh": "2026 年水灯节在 11 月 24 日。清迈市的节庆从 11 月 23 日到 25 日，凭票放天灯的活动在 11 月 24 日和 25 日。",
+    "de": "Loy Krathong fällt 2026 auf den 24. November. Das Stadtfest von Chiang Mai dauert vom 23. bis 25. November, und die Himmelslaternen-Anlässe mit Ticket finden am 24. und 25. November statt."
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "q": {
+    "en": "Where can you release sky lanterns in Chiang Mai?",
+    "th": "ปล่อยโคมลอยในเชียงใหม่ได้ที่ไหน",
+    "my": "ချင်းမိုင်တွင် ကောင်းကင်မီးအိမ်ကို ဘယ်နေရာမှာ လွှတ်နိုင်သလဲ။",
+    "zh": "在清迈哪里可以放天灯？",
+    "de": "Wo darf man in Chiang Mai Himmelslaternen steigen lassen?"
+   },
+   "a": {
+    "en": "Thai Holiday Guide lists none in Mueang Chiang Mai district, which holds the Old City. In the rest of the province it lists release on 24 and 25 November from 19:00 to 01:00, with a district permit. At ticketed events the organiser supplies the lanterns.",
+    "th": "Thai Holiday Guide ระบุว่าไม่อนุญาตในอำเภอเมืองเชียงใหม่ ซึ่งเป็นที่ตั้งของเมืองเก่า ส่วนที่เหลือของจังหวัดปล่อยได้วันที่ 24 และ 25 พฤศจิกายน เวลา 19:00 ถึง 01:00 น. โดยต้องได้รับอนุญาตจากอำเภอ ในงานที่ขายบัตร ผู้จัดงานเป็นผู้จัดหาโคมให้",
+    "my": "Thai Holiday Guide က မြို့ဟောင်းပါဝင်သော မြို့တော်ခရိုင် (Mueang Chiang Mai) တွင် မခွင့်ပြုဟု ဖော်ပြထားသည်။ ပြည်နယ်၏ ကျန်နေရာများတွင် နိုဝင်ဘာ 24 နှင့် 25 ရက်၊ 19:00 မှ 01:00 အထိ ခရိုင်ခွင့်ပြုချက်ဖြင့် လွှတ်နိုင်သည်ဟု ဆိုသည်။ လက်မှတ်ရောင်းသော ပွဲများတွင် စီစဉ်သူက မီးအိမ်များ ပေးသည်။",
+    "zh": "Thai Holiday Guide 列出，古城所在的清迈市区（Mueang）不可放。府内其余地区可在 11 月 24 日和 25 日 19:00 至次日 01:00 放，需县（区）许可。售票活动的天灯由主办方提供。",
+    "de": "Thai Holiday Guide nennt im Bezirk Mueang Chiang Mai mit der Altstadt keine Erlaubnis. Im Rest der Provinz sind Laternen am 24. und 25. November von 19:00 bis 01:00 Uhr mit Bezirksbewilligung aufgeführt. Bei Anlässen mit Ticket stellt der Veranstalter die Laternen."
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "q": {
+    "en": "How much are Yi Peng lantern festival tickets?",
+    "th": "บัตรงานปล่อยโคมยี่เป็งราคาเท่าไร",
+    "my": "ယီပေါင် မီးအိမ်ပွဲ လက်မှတ်များ ဘယ်လောက်လဲ။",
+    "zh": "易鹏天灯节门票多少钱？",
+    "de": "Was kosten Tickets für das Yi-Peng-Laternenfest?"
+   },
+   "a": {
+    "en": "Thai Holiday Guide lists the CAD festival in Mae On as sold out for 24 and 25 November 2026. It lists Sky of Wishes from ฿3,785, Chiangmai Wonderland from ฿2,230 without transport, and Yee Peng Lanna International from about US$178.",
+    "th": "Thai Holiday Guide ระบุว่างาน CAD ที่แม่ออนบัตรหมดสำหรับวันที่ 24 และ 25 พฤศจิกายน 2569 และระบุ Sky of Wishes เริ่ม ฿3,785 Chiangmai Wonderland เริ่ม ฿2,230 ไม่รวมรถ และ Yee Peng Lanna International เริ่มประมาณ US$178",
+    "my": "Thai Holiday Guide က မဲအွန်ရှိ CAD ပွဲသည် 2026 နိုဝင်ဘာ 24 နှင့် 25 အတွက် လက်မှတ်ကုန်သွားပြီဟု ဖော်ပြသည်။ Sky of Wishes ကို ฿3,785 မှစ၍၊ Chiangmai Wonderland ကို ပို့ဆောင်ရေးမပါ ฿2,230 မှစ၍၊ Yee Peng Lanna International ကို US$178 ခန့်မှစ၍ ဖော်ပြသည်။",
+    "zh": "Thai Holiday Guide 列出，湄安的 CAD 节在 2026 年 11 月 24 日和 25 日已售罄。它列出 Sky of Wishes 起价 ฿3,785，Chiangmai Wonderland 起价 ฿2,230（不含交通），Yee Peng Lanna International 约 US$178 起。",
+    "de": "Thai Holiday Guide führt das CAD-Fest in Mae On für den 24. und 25. November 2026 als ausverkauft. Es nennt Sky of Wishes ab ฿3,785, Chiangmai Wonderland ab ฿2,230 ohne Transport und Yee Peng Lanna International ab etwa US$178."
+   },
+   "src": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  },
+  {
+   "q": {
+    "en": "What is the lantern festival in Lamphun?",
+    "th": "เทศกาลโคมที่ลำพูนคืออะไร",
+    "my": "လမ်ဖွန်းရှိ မီးအိမ်ပွဲတော်သည် ဘာလဲ။",
+    "zh": "南奔的灯节是什么？",
+    "de": "Was ist das Laternenfest in Lamphun?"
+   },
+   "a": {
+    "en": "The Lamphun provincial tourism page lists the Lantern Festival of a Hundred Thousand Lights at Wat Phra That Hariphunchai, with dates 18 September to 9 November 2025. It lists a lantern lighting ceremony, Lanna music, a craft market, \"Light of Faith\" photo zones and paper-lantern and wish-writing workshops.",
+    "th": "หน้าท่องเที่ยวของจังหวัดลำพูนระบุเทศกาลโคมแสนดวงที่วัดพระธาตุหริภุญชัย วันที่ 18 กันยายนถึง 9 พฤศจิกายน 2568 มีพิธีจุดโคม ดนตรีล้านนา ตลาดงานฝีมือ จุดถ่ายภาพ \"แสงแห่งศรัทธา\" และเวิร์กช็อปทำโคมกระดาษกับเขียนคำอธิษฐาน",
+    "my": "လမ်ဖွန်းပြည်နယ်၏ ခရီးသွားစာမျက်နှာတွင် ဝပ်ဖရတတ်ဟရိဖွန်ချိုင်၌ မီးအိမ်တစ်သိန်းပွဲတော်ကို 2025 စက်တင်ဘာ 18 မှ နိုဝင်ဘာ 9 အထိဟု ဖော်ပြသည်။ မီးအိမ်ထွန်းညှိသည့် အခမ်းအနား၊ လန်နာ ဂီတ၊ လက်မှုပစ္စည်းဈေး၊ \"ယုံကြည်မှုအလင်းရောင်\" ဓာတ်ပုံနေရာများနှင့် စက္ကူမီးအိမ်၊ ဆုတောင်းရေးသင်တန်းများ ပါဝင်သည်။",
+    "zh": "南奔府旅游页面列出十万灯节在哈里奔猜佛塔寺举行，日期为 2025 年 9 月 18 日至 11 月 9 日。内容有点灯仪式、兰纳音乐、手工艺市集、“信仰之光”拍照点，以及纸灯和写愿望的工作坊。",
+    "de": "Die Tourismusseite der Provinz Lamphun führt das Fest der Hunderttausend Laternen im Wat Phra That Hariphunchai auf, mit den Daten 18. September bis 9. November 2025. Genannt werden eine Laternen-Zeremonie, Lanna-Musik, ein Handwerksmarkt, Fotozonen «Licht des Glaubens» sowie Workshops für Papierlaternen und Wunschschreiben."
+   },
+   "src": "https://travel.lamphunpao.go.th/en/event-calendar/rnsl5mtjtfzl349pdxmvfhyq"
+  },
+  {
+   "q": {
+    "en": "What is the penalty for releasing a sky lantern in a banned zone?",
+    "th": "ปล่อยโคมลอยในเขตห้ามมีโทษอย่างไร",
+    "my": "တားမြစ်ဇုန်တွင် ကောင်းကင်မီးအိမ်လွှတ်ပါက ဒဏ်ဘာလဲ။",
+    "zh": "在禁放区放天灯会受到什么处罚？",
+    "de": "Welche Strafe droht beim Steigenlassen einer Himmelslaterne in einer Sperrzone?"
+   },
+   "a": {
+    "en": "Time Out reports up to five years in prison and a fine of up to ฿200,000 under Chiang Mai's order for 5 and 6 November 2025.",
+    "th": "Time Out รายงานว่าตามคำสั่งของเชียงใหม่สำหรับวันที่ 5 และ 6 พฤศจิกายน 2568 โทษจำคุกไม่เกินห้าปีและปรับไม่เกิน ฿200,000",
+    "my": "Time Out က ချင်းမိုင်၏ 2025 နိုဝင်ဘာ 5 နှင့် 6 ရက်အတွက် အမိန့်အရ ထောင်ငါးနှစ်အထိနှင့် ฿200,000 အထိ ဒဏ်ကြေး ရှိသည်ဟု ဖော်ပြသည်။",
+    "zh": "Time Out 报道，按清迈 2025 年 11 月 5 日和 6 日的命令，最高可判五年监禁并处最高 ฿200,000 罚款。",
+    "de": "Time Out berichtet von bis zu fünf Jahren Haft und einer Busse von bis zu ฿200,000 nach der Anordnung von Chiang Mai für den 5. und 6. November 2025."
+   },
+   "src": "https://www.timeout.com/chiang-mai/news/yi-peng-lanterns-grounded-over-public-safety-concerns-101025"
+  }
+ ],
+ "related": [
+  "balloon",
+  "trip-plan",
+  "tour-day",
+  "car-guide",
+  "tour-3d",
+  "experience"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Lamphun province tourism: Lantern Festival of a Hundred Thousand Lights",
+    "th": "การท่องเที่ยวจังหวัดลำพูน: เทศกาลโคมแสนดวง",
+    "my": "လမ်ဖွန်းပြည်နယ် ခရီးသွားလာရေး: မီးအိမ်တစ်သိန်းပွဲတော်",
+    "zh": "南奔府旅游：十万灯节",
+    "de": "Tourismus Provinz Lamphun: Fest der Hunderttausend Laternen"
+   },
+   "href": "https://travel.lamphunpao.go.th/en/event-calendar/rnsl5mtjtfzl349pdxmvfhyq"
+  },
+  {
+   "t": {
+    "en": "Thai Holiday Guide: Yi Peng lantern festival, dates, permits and tickets",
+    "th": "Thai Holiday Guide: เทศกาลยี่เป็ง วันที่ ใบอนุญาต และบัตร",
+    "my": "Thai Holiday Guide: ယီပေါင်မီးအိမ်ပွဲတော်၊ ရက်စွဲ၊ ခွင့်ပြုချက်နှင့် လက်မှတ်",
+    "zh": "Thai Holiday Guide：易鹏灯节的日期、许可和门票",
+    "de": "Thai Holiday Guide: Yi-Peng-Laternenfest, Daten, Bewilligungen und Tickets"
+   },
+   "href": "https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/"
+  }
+ ],
+ "glyphs": [
+  "lantern",
+  "moon",
+  "chedi"
+ ]
+}

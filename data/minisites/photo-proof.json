@@ -1,0 +1,326 @@
+{
+ "id": "photo-proof",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A funder or a board asks for proof that work happened, and a photo with a time and a place is proof they can look at.",
+  "th": "ผู้ให้ทุนหรือคณะกรรมการขอหลักฐานว่างานเกิดขึ้น รูปที่มีเวลาและพิกัดเป็นหลักฐานที่เปิดดูได้",
+  "my": "ရန်ပုံငွေပေးသူ သို့မဟုတ် ဘုတ်အဖွဲ့က အလုပ်ဖြစ်ပျက်ခဲ့ကြောင်း အထောက်အထား တောင်းသည်။ အချိန်နှင့် နေရာပါသော ဓာတ်ပုံသည် ကြည့်နိုင်သော အထောက်အထားဖြစ်သည်။",
+  "zh": "出资方或理事会会要求证明工作做过，带有时间和地点的照片，是一份看得见的证明。",
+  "de": "Geldgeber oder ein Vorstand verlangen einen Nachweis, dass die Arbeit stattgefunden hat, und ein Foto mit Zeit und Ort ist ein Nachweis, den man ansehen kann."
+ },
+ "n": {
+  "de": "Fotonachweis aus dem Einsatz"
+ },
+ "l": {
+  "de": "Feldfotos über LINE, mit Zeit und Ort versehen und von zwei Personen geprüft."
+ },
+ "steps": [
+  {
+   "db": "camera",
+   "t": {
+    "en": "Field workers send photos on LINE.",
+    "th": "คนในพื้นที่ส่งรูปทางไลน์",
+    "my": "ကွင်းဆင်းလုပ်သူများက LINE မှတစ်ဆင့် ဓာတ်ပုံများ ပို့သည်။",
+    "zh": "现场人员通过 LINE 发送照片。",
+    "de": "Die Leute vor Ort senden Fotos über LINE."
+   },
+   "who": {
+    "en": "Field workers",
+    "th": "คนในพื้นที่",
+    "my": "ကွင်းဆင်းလုပ်သူများ",
+    "zh": "现场人员",
+    "de": "Mitarbeitende vor Ort"
+   },
+   "time": {
+    "en": "In the field",
+    "th": "ในพื้นที่",
+    "my": "ကွင်းဆင်းချိန်တွင်",
+    "zh": "在现场",
+    "de": "Im Einsatz"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "The photos are stamped with the time and the place.",
+    "th": "รูปมีเวลาและพิกัดกำกับ",
+    "my": "ဓာတ်ပုံများကို အချိန်နှင့် နေရာ တံဆိပ်ခတ်ထားသည်။",
+    "zh": "照片标上时间和地点。",
+    "de": "Die Fotos erhalten einen Stempel mit Zeit und Ort."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "As photos arrive",
+    "th": "เมื่อรูปส่งมา",
+    "my": "ဓာတ်ပုံရောက်လာသည့်အခါ",
+    "zh": "照片送达时",
+    "de": "Wenn Fotos eingehen"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "Two people check the photos. Photos that look wrong are flagged daily.",
+    "th": "ตรวจรูปโดยสองคน แจ้งรายการผิดปกติทุกวัน",
+    "my": "ဓာတ်ပုံများကို လူနှစ်ဦးက စစ်ဆေးသည်။ မှားနေပုံရသော ဓာတ်ပုံများကို နေ့စဉ် အလံပြသည်။",
+    "zh": "两个人检查照片，有问题的照片每天标出。",
+    "de": "Zwei Personen prüfen die Fotos. Auffällige Fotos werden täglich markiert."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Daily",
+    "th": "ทุกวัน",
+    "my": "နေ့စဉ်",
+    "zh": "每天",
+    "de": "Täglich"
+   }
+  },
+  {
+   "db": "save",
+   "t": {
+    "en": "An export of the data is made at the end.",
+    "th": "ส่งออกข้อมูลตอนจบ",
+    "my": "နောက်ဆုံးတွင် ဒေတာကို ထုတ်ယူ (export) ပေးသည်။",
+    "zh": "结束时导出数据。",
+    "de": "Am Ende gibt es einen Export der Daten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end of the season",
+    "th": "ตอนจบฤดูกาล",
+    "my": "ရာသီအဆုံးတွင်",
+    "zh": "季末",
+    "de": "Am Ende der Saison"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "North Carolina's Water Resources Development Grant Program asks grantees for geotagged digital photos as an alternative to a staff site visit, so the grant manager can check and overlay the photo locations in GIS software.",
+    "th": "โครงการทุนพัฒนาทรัพยากรน้ำของรัฐนอร์ทแคโรไลนาให้ผู้รับทุนส่งรูปดิจิทัลที่ติดพิกัดแทนการที่เจ้าหน้าที่ไปดูพื้นที่ เพื่อให้ผู้จัดการทุนตรวจและนำตำแหน่งรูปไปวางซ้อนในซอฟต์แวร์ GIS ได้",
+    "my": "North Carolina ပြည်နယ်၏ ရေအရင်းအမြစ်ဖွံ့ဖြိုးရေး ထောက်ပံ့ငွေအစီအစဉ်က ဝန်ထမ်းများ ကွင်းဆင်းကြည့်ရှုမည့်အစား တည်နေရာအမှတ်အသားပါသော ဒစ်ဂျစ်တယ်ဓာတ်ပုံများကို ထောက်ပံ့ငွေရသူထံမှ တောင်းသည်။ ထို့ကြောင့် ထောက်ပံ့ငွေမန်နေဂျာက ဓာတ်ပုံတည်နေရာများကို စစ်ဆေးပြီး GIS ဆော့ဖ်ဝဲပေါ်တွင် ထပ်၍ ကြည့်နိုင်သည်။",
+    "zh": "美国北卡罗来纳州的水资源开发资助项目，要求受助方提交带地理标记的数码照片，作为工作人员实地查看的替代；资助经理可在 GIS 软件中核对并叠加照片位置。",
+    "de": "Das Förderprogramm für Wasserressourcen des US-Bundesstaats North Carolina verlangt von Geförderten Digitalfotos mit Geodaten als Ersatz für einen Besuch vor Ort; die Fördermanagerin oder der Fördermanager prüft die Fotostandorte und legt sie in GIS-Software über eine Karte."
+   },
+   "src": "https://www.deq.nc.gov/geotagged-photo-guidance/open"
+  },
+  {
+   "t": {
+    "en": "The same guide asks for at least two photos, in opposite directions, at every photo location, and gives 2.5 to 5 MB as the usual file size for a photo.",
+    "th": "คู่มือเดียวกันขอรูปอย่างน้อยสองรูป คนละทิศ ที่จุดถ่ายแต่ละจุด และระบุขนาดไฟล์ทั่วไปของรูปที่ 2.5 ถึง 5 MB",
+    "my": "ထိုလမ်းညွှန်ချက်တွင်ပင် ဓာတ်ပုံရိုက်သည့်နေရာတိုင်းတွင် ဆန့်ကျင်ဘက်ဦးတည်ချက်နှစ်ခုဖြင့် အနည်းဆုံး ဓာတ်ပုံနှစ်ပုံ တောင်းထားပြီး ဓာတ်ပုံတစ်ပုံ၏ ပုံမှန်ဖိုင်အရွယ်အစားကို 2.5 မှ 5 MB အဖြစ် ဖော်ပြထားသည်။",
+    "zh": "同一份指南要求每个拍摄点至少拍两张、方向相反的照片，并给出每张照片通常的文件大小为 2.5 至 5 MB。",
+    "de": "Dieselbe Anleitung verlangt an jedem Aufnahmeort mindestens zwei Fotos in entgegengesetzte Richtungen und nennt 2.5 bis 5 MB als übliche Dateigrösse eines Fotos."
+   },
+   "src": "https://www.deq.nc.gov/geotagged-photo-guidance/open"
+  },
+  {
+   "t": {
+    "en": "The guide says the coordinates in a smartphone photo may be less accurate than those from a GPS camera. A photo with no GPS section showing latitude and longitude in its file details is most likely not geotagged.",
+    "th": "คู่มือระบุว่า พิกัดในรูปจากสมาร์ตโฟนอาจแม่นยำน้อยกว่ารูปจากกล้อง GPS และรูปที่ในรายละเอียดไฟล์ไม่มีส่วน GPS ที่แสดงละติจูดและลองจิจูด มักไม่ได้ติดพิกัด",
+    "my": "လမ်းညွှန်ချက်တွင် စမတ်ဖုန်းဓာတ်ပုံထဲရှိ ကိုဩဒိနိတ်များသည် GPS ကင်မရာမှ ရသည်ထက် တိကျမှုနည်းနိုင်သည်ဟု ဆိုသည်။ ဖိုင်အသေးစိတ်တွင် လတ္တီတွဒ်နှင့် လောင်ဂျီတွဒ်ပြသော GPS အပိုင်း မပါသည့် ဓာတ်ပုံသည် တည်နေရာအမှတ်အသား မပါဖွယ်များသည်။",
+    "zh": "指南写明：智能手机照片里的坐标，可能不如 GPS 相机的准确。文件详细信息里没有显示经纬度的 GPS 栏目的照片，多半没有地理标记。",
+    "de": "Die Anleitung hält fest, dass die Koordinaten in einem Smartphone-Foto weniger genau sein können als die einer GPS-Kamera. Ein Foto ohne GPS-Abschnitt mit Breiten- und Längengrad in den Dateieigenschaften trägt höchstwahrscheinlich keine Geodaten."
+   },
+   "src": "https://www.deq.nc.gov/geotagged-photo-guidance/open"
+  },
+  {
+   "t": {
+    "en": "Thailand's Personal Data Protection Act defines personal data as any information relating to a person that enables identification, directly or indirectly (Section 6).",
+    "th": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ให้ความหมายข้อมูลส่วนบุคคลว่า ข้อมูลใดๆ ที่เกี่ยวกับบุคคลซึ่งทำให้ระบุตัวบุคคลนั้นได้ ไม่ว่าทางตรงหรือทางอ้อม (มาตรา 6)",
+    "my": "ထိုင်းနိုင်ငံ၏ ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေက ကိုယ်ရေးအချက်အလက်ကို လူတစ်ဦးနှင့်ဆိုင်ပြီး ထိုသူကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ခွဲခြားသိနိုင်စေသော အချက်အလက်ဟု သတ်မှတ်သည် (ပုဒ်မ 6)။",
+    "zh": "泰国《个人数据保护法》把个人数据定义为：与某人有关、能直接或间接识别该人的任何信息（第 6 条）。",
+    "de": "Das thailändische Datenschutzgesetz definiert personenbezogene Daten als jede Information zu einer Person, die diese direkt oder indirekt erkennbar macht (Section 6)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Before or when it collects personal data, the data controller tells the person the purpose, the data collected and how long it is kept, who may receive it, and the controller's contact details (Section 23).",
+    "th": "ก่อนหรือขณะเก็บข้อมูลส่วนบุคคล ผู้ควบคุมข้อมูลแจ้งเจ้าของข้อมูลถึงวัตถุประสงค์ ข้อมูลที่เก็บและระยะเวลาเก็บ ผู้ที่อาจได้รับข้อมูล และช่องทางติดต่อของผู้ควบคุมข้อมูล (มาตรา 23)",
+    "my": "ကိုယ်ရေးအချက်အလက် မစုဆောင်းမီ သို့မဟုတ် စုဆောင်းချိန်တွင် ဒေတာထိန်းချုပ်သူက ထိုသူအား ရည်ရွယ်ချက်၊ စုဆောင်းသောအချက်အလက်နှင့် သိမ်းဆည်းမည့်ကာလ၊ လက်ခံနိုင်သူများ၊ ဒေတာထိန်းချုပ်သူ၏ ဆက်သွယ်ရန်အချက်အလက်တို့ကို အသိပေးသည် (ပုဒ်မ 23)။",
+    "zh": "收集个人数据前或收集时，数据控制者要告知当事人：目的、收集的数据和保存期限、可能的接收方，以及控制者的联系方式（第 23 条）。",
+    "de": "Vor oder bei der Erhebung personenbezogener Daten teilt die verantwortliche Stelle der Person den Zweck, die erhobenen Daten und die Aufbewahrungsdauer, mögliche Empfänger und ihre eigenen Kontaktdaten mit (Section 23)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Field data collection with questionnaires and photos of the work, a Fastwork listing",
+    "th": "เก็บข้อมูลภาคสนามพร้อมแบบสอบถามและถ่ายรูปงาน ประกาศบน Fastwork",
+    "my": "မေးခွန်းလွှာများနှင့် အလုပ်ဓာတ်ပုံများပါသော ကွင်းဆင်းဒေတာစုဆောင်းမှု၊ Fastwork စာရင်းတစ်ခု",
+    "zh": "含问卷和工作照片的现场数据采集，Fastwork 上的一则服务",
+    "de": "Datenerhebung im Feld mit Fragebogen und Fotos der Arbeit, ein Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "From ฿800; the final price depends on scope, number of questionnaires, place, travel and deadline",
+    "th": "เริ่มต้น ฿800 ราคาสุดท้ายขึ้นกับขอบเขตงาน จำนวนแบบสอบถาม สถานที่ ค่าเดินทาง และกำหนดส่ง",
+    "my": "฿800 မှ စတင်။ နောက်ဆုံးစျေးနှုန်းသည် အလုပ်အကျယ်၊ မေးခွန်းလွှာအရေအတွက်၊ နေရာ၊ ခရီးစရိတ်နှင့် နောက်ဆုံးရက်အပေါ် မူတည်သည်",
+    "zh": "฿800 起；最终价格取决于工作范围、问卷数量、地点、差旅和截止日期",
+    "de": "Ab ฿800; der Endpreis hängt von Umfang, Zahl der Fragebogen, Ort, Reise und Termin ab"
+   },
+   "src": "https://fastwork.co/user/natcyme/questionnaire-37742077"
+  },
+  {
+   "t": {
+    "en": "A field inspection app that records photos on site and makes PDF reports, a Fastwork listing, in three sizes",
+    "th": "แอปตรวจงานภาคสนามที่บันทึกรูปหน้างานและสร้างรายงาน PDF ประกาศบน Fastwork มี 3 ขนาด",
+    "my": "နေရာတွင် ဓာတ်ပုံမှတ်တမ်းတင်ပြီး PDF အစီရင်ခံစာ ထုတ်ပေးသော ကွင်းဆင်းစစ်ဆေးရေးအက်ပ်၊ Fastwork စာရင်းတစ်ခု၊ အရွယ်အစား 3 မျိုး",
+    "zh": "在现场记录照片并生成 PDF 报告的现场检查应用，Fastwork 上的一则服务，分三档",
+    "de": "App für Kontrollen im Feld, die Fotos vor Ort aufnimmt und PDF-Berichte erstellt, ein Angebot auf Fastwork, in drei Stufen"
+   },
+   "p": {
+    "en": "฿60,000 (one device, works offline, no GPS tags); ฿150,000 (iOS and Android, team roles, map and GPS tagging); ฿350,000 (adds a backend and a web admin)",
+    "th": "฿60,000 (เครื่องเดียว ใช้ออฟไลน์ได้ ไม่มีพิกัด GPS); ฿150,000 (iOS และ Android มีบทบาททีม ติดแผนที่และพิกัด GPS); ฿350,000 (เพิ่มหลังบ้านและเว็บแอดมิน)",
+    "my": "฿60,000 (စက်တစ်လုံး၊ အော့ဖ်လိုင်းသုံးနိုင်၊ GPS အမှတ်အသားမပါ); ฿150,000 (iOS နှင့် Android၊ အဖွဲ့ရာထူးများ၊ မြေပုံနှင့် GPS အမှတ်အသား); ฿350,000 (နောက်ကွယ်စနစ်နှင့် ဝက်ဘ်အက်ဒ်မင် ထပ်ပါ)",
+    "zh": "฿60,000（单台设备，可离线使用，无 GPS 标记）；฿150,000（iOS 和 Android，团队角色，地图和 GPS 标记）；฿350,000（增加后台和网页管理端）",
+    "de": "฿60,000 (ein Gerät, offline nutzbar, ohne GPS-Markierung); ฿150,000 (iOS und Android, Teamrollen, Karte und GPS-Markierung); ฿350,000 (mit Backend und Web-Verwaltung)"
+   },
+   "src": "https://fastwork.co/user/panudech_changthong/mobile-application-72786961"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can a photo show where and when it was taken?",
+    "th": "รูปถ่ายบอกได้ไหมว่าถ่ายที่ไหนและเมื่อไร",
+    "my": "ဓာတ်ပုံက ဘယ်နေရာ၊ ဘယ်အချိန်က ရိုက်သည်ကို ပြနိုင်ပါသလား။",
+    "zh": "照片能显示在哪里、什么时候拍的吗？",
+    "de": "Kann ein Foto zeigen, wo und wann es aufgenommen wurde?"
+   },
+   "a": {
+    "en": "A photo can carry its GPS coordinates when the phone's location setting is on. North Carolina's guide says most smartphones less than 5 years old can do this. On a computer, the file's Details tab shows a GPS section with latitude and longitude.",
+    "th": "รูปถ่ายเก็บพิกัด GPS ได้เมื่อเปิดการตั้งค่าตำแหน่งในโทรศัพท์ คู่มือของรัฐนอร์ทแคโรไลนาระบุว่าสมาร์ตโฟนส่วนใหญ่ที่มีอายุไม่ถึง 5 ปีทำได้ ในคอมพิวเตอร์ แท็บรายละเอียดของไฟล์แสดงส่วน GPS ที่มีละติจูดและลองจิจูด",
+    "my": "ဖုန်း၏ တည်နေရာဆက်တင်ကို ဖွင့်ထားလျှင် ဓာတ်ပုံတွင် GPS ကိုဩဒိနိတ်များ ပါနိုင်သည်။ North Carolina ၏ လမ်းညွှန်ချက်အရ အသက် 5 နှစ်အောက် စမတ်ဖုန်းအများစုက ပြုလုပ်နိုင်သည်။ ကွန်ပျူတာတွင် ဖိုင်၏ အသေးစိတ်တက်ဘ်၌ လတ္တီတွဒ်နှင့် လောင်ဂျီတွဒ်ပါသော GPS အပိုင်း ပြသည်။",
+    "zh": "手机的定位设置打开时，照片可以带上 GPS 坐标。北卡罗来纳州的指南写明，使用不到 5 年的智能手机大多可以做到。在电脑上，文件的“详细信息”标签页会显示含经纬度的 GPS 栏目。",
+    "de": "Ein Foto kann seine GPS-Koordinaten tragen, wenn die Ortungseinstellung des Telefons eingeschaltet ist. Laut Anleitung von North Carolina können das die meisten Smartphones, die weniger als 5 Jahre alt sind. Am Computer zeigt der Reiter «Details» der Datei einen GPS-Abschnitt mit Breiten- und Längengrad."
+   },
+   "src": "https://www.deq.nc.gov/geotagged-photo-guidance/open"
+  },
+  {
+   "q": {
+    "en": "How exact is the place in a phone photo?",
+    "th": "ตำแหน่งในรูปจากโทรศัพท์แม่นยำแค่ไหน",
+    "my": "ဖုန်းဓာတ်ပုံထဲက နေရာက ဘယ်လောက်တိကျသလဲ။",
+    "zh": "手机照片里的位置有多准？",
+    "de": "Wie genau ist der Ort in einem Handyfoto?"
+   },
+   "a": {
+    "en": "North Carolina's guide says the coordinates embedded in photos taken by smartphones may not be as accurate as those taken with a GPS-enabled camera. It does not give a distance.",
+    "th": "คู่มือของรัฐนอร์ทแคโรไลนาระบุว่า พิกัดที่ฝังในรูปจากสมาร์ตโฟนอาจไม่แม่นยำเท่ารูปจากกล้องที่มี GPS โดยไม่ได้ระบุระยะคลาดเคลื่อน",
+    "my": "North Carolina ၏ လမ်းညွှန်ချက်တွင် စမတ်ဖုန်းဖြင့်ရိုက်သော ဓာတ်ပုံထဲ ထည့်ထားသည့် ကိုဩဒိနိတ်များသည် GPS ပါကင်မရာဖြင့် ရိုက်သည်ကဲ့သို့ တိကျမှုမရှိနိုင်ဟု ဆိုသည်။ အကွာအဝေးကိုတော့ မဖော်ပြပါ။",
+    "zh": "北卡罗来纳州的指南写明，智能手机拍的照片里嵌入的坐标，可能不如带 GPS 的相机拍的准确。指南没有给出误差距离。",
+    "de": "Die Anleitung von North Carolina hält fest, dass die in Smartphone-Fotos eingebetteten Koordinaten weniger genau sein können als die einer Kamera mit GPS. Eine Distanz nennt sie nicht."
+   },
+   "src": "https://www.deq.nc.gov/geotagged-photo-guidance/open"
+  },
+  {
+   "q": {
+    "en": "Are photos of people personal data in Thailand?",
+    "th": "รูปถ่ายของคนเป็นข้อมูลส่วนบุคคลในไทยไหม",
+    "my": "ထိုင်းတွင် လူများ၏ ဓာတ်ပုံသည် ကိုယ်ရေးအချက်အလက် ဖြစ်ပါသလား။",
+    "zh": "在泰国，人的照片算个人数据吗？",
+    "de": "Sind Fotos von Personen in Thailand personenbezogene Daten?"
+   },
+   "a": {
+    "en": "The Personal Data Protection Act defines personal data as any information relating to a person that enables identification, directly or indirectly. It leaves out collection by a person for personal benefit or household activity only (Section 4). Before or when it collects data, a controller tells the person the purpose and how long it keeps the data (Section 23).",
+    "th": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคลให้ความหมายข้อมูลส่วนบุคคลว่าเป็นข้อมูลใดๆ ที่เกี่ยวกับบุคคลซึ่งทำให้ระบุตัวบุคคลนั้นได้ ไม่ว่าทางตรงหรือทางอ้อม และไม่ใช้กับการเก็บของบุคคลเพื่อประโยชน์ส่วนตนหรือกิจกรรมในครอบครัวเท่านั้น (มาตรา 4) ก่อนหรือขณะเก็บ ผู้ควบคุมข้อมูลแจ้งเจ้าของข้อมูลถึงวัตถุประสงค์และระยะเวลาเก็บ (มาตรา 23)",
+    "my": "ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေက ကိုယ်ရေးအချက်အလက်ကို လူတစ်ဦးနှင့်ဆိုင်ပြီး ထိုသူကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ခွဲခြားသိနိုင်စေသော အချက်အလက်ဟု သတ်မှတ်သည်။ လူတစ်ဦးက မိမိကိုယ်ကျိုး သို့မဟုတ် အိမ်တွင်းလုပ်ငန်းအတွက်သာ စုဆောင်းခြင်းကို ချန်လှပ်ထားသည် (ပုဒ်မ 4)။ စုဆောင်းမီ သို့မဟုတ် စုဆောင်းချိန်တွင် ဒေတာထိန်းချုပ်သူက ထိုသူအား ရည်ရွယ်ချက်နှင့် သိမ်းဆည်းမည့်ကာလကို အသိပေးသည် (ပုဒ်မ 23)။",
+    "zh": "《个人数据保护法》把个人数据定义为与某人有关、能直接或间接识别该人的任何信息。个人仅为自身利益或家庭活动而收集的情形不适用该法（第 4 条）。收集前或收集时，控制者要告知当事人目的和保存期限（第 23 条）。",
+    "de": "Das Datenschutzgesetz definiert personenbezogene Daten als jede Information zu einer Person, die diese direkt oder indirekt erkennbar macht. Es gilt nicht für das Erheben durch eine Person allein zum eigenen Nutzen oder für Tätigkeiten im Haushalt (Section 4). Vor oder bei der Erhebung teilt die verantwortliche Stelle der Person Zweck und Aufbewahrungsdauer mit (Section 23)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "q": {
+    "en": "What does it cost to hire someone to collect data in the field?",
+    "th": "จ้างคนไปเก็บข้อมูลภาคสนามราคาเท่าไร",
+    "my": "ကွင်းဆင်းဒေတာစုဆောင်းရန် လူငှားလျှင် ဘယ်လောက်ကျသလဲ။",
+    "zh": "雇人做现场数据采集要多少钱？",
+    "de": "Was kostet es, jemanden für die Datenerhebung im Feld anzustellen?"
+   },
+   "a": {
+    "en": "One Fastwork listing for field data collection starts at ฿800. It covers handing out and collecting questionnaires, checking them for completeness, photographing the work and summarising the findings. The final price depends on scope, number of questionnaires, place, travel and deadline.",
+    "th": "ประกาศหนึ่งบน Fastwork สำหรับเก็บข้อมูลภาคสนามเริ่มต้น ฿800 ครอบคลุมการแจกและเก็บแบบสอบถาม ตรวจความครบถ้วน ถ่ายรูปงาน และสรุปผล ราคาสุดท้ายขึ้นกับขอบเขตงาน จำนวนแบบสอบถาม สถานที่ ค่าเดินทาง และกำหนดส่ง",
+    "my": "ကွင်းဆင်းဒေတာစုဆောင်းမှုအတွက် Fastwork စာရင်းတစ်ခုသည် ฿800 မှ စသည်။ မေးခွန်းလွှာများ ဝေပေးခြင်းနှင့် ပြန်လည်စုဆောင်းခြင်း၊ ပြည့်စုံမှုစစ်ဆေးခြင်း၊ အလုပ်ဓာတ်ပုံရိုက်ခြင်းနှင့် တွေ့ရှိချက်အကျဉ်းချုပ်တို့ ပါသည်။ နောက်ဆုံးစျေးနှုန်းသည် အလုပ်အကျယ်၊ မေးခွန်းလွှာအရေအတွက်၊ နေရာ၊ ခရီးစရိတ်နှင့် နောက်ဆုံးရက်အပေါ် မူတည်သည်။",
+    "zh": "Fastwork 上一则现场数据采集服务起价 ฿800。内容包括发放和回收问卷、检查是否填全、拍摄工作照片和汇总发现。最终价格取决于工作范围、问卷数量、地点、差旅和截止日期。",
+    "de": "Ein Angebot auf Fastwork für die Datenerhebung im Feld beginnt bei ฿800. Es umfasst Verteilen und Einsammeln von Fragebogen, Prüfung auf Vollständigkeit, Fotos der Arbeit und eine Zusammenfassung der Ergebnisse. Der Endpreis hängt von Umfang, Zahl der Fragebogen, Ort, Reise und Termin ab."
+   },
+   "src": "https://fastwork.co/user/natcyme/questionnaire-37742077"
+  },
+  {
+   "q": {
+    "en": "What does a field inspection app cost?",
+    "th": "แอปตรวจงานภาคสนามราคาเท่าไร",
+    "my": "ကွင်းဆင်းစစ်ဆေးရေးအက်ပ် ဘယ်လောက်ကျသလဲ။",
+    "zh": "现场检查应用要多少钱？",
+    "de": "Was kostet eine App für Kontrollen im Feld?"
+   },
+   "a": {
+    "en": "One Fastwork listing for an inspection app with photos and PDF reports asks ฿60,000 for the basic one (one device, offline, 30 days), ฿150,000 for iOS and Android with GPS tagging (60 days) and ฿350,000 with a backend and web admin (90 days).",
+    "th": "ประกาศหนึ่งบน Fastwork สำหรับแอปตรวจงานที่มีรูปและรายงาน PDF ตั้งราคา ฿60,000 สำหรับแบบพื้นฐาน (เครื่องเดียว ออฟไลน์ 30 วัน) ฿150,000 สำหรับ iOS และ Android พร้อมพิกัด GPS (60 วัน) และ ฿350,000 พร้อมหลังบ้านและเว็บแอดมิน (90 วัน)",
+    "my": "ဓာတ်ပုံများနှင့် PDF အစီရင်ခံစာပါသော စစ်ဆေးရေးအက်ပ်အတွက် Fastwork စာရင်းတစ်ခုက အခြေခံပုံစံ (စက်တစ်လုံး၊ အော့ဖ်လိုင်း၊ ရက် 30) အတွက် ฿60,000၊ GPS အမှတ်အသားပါသော iOS နှင့် Android (ရက် 60) အတွက် ฿150,000၊ နောက်ကွယ်စနစ်နှင့် ဝက်ဘ်အက်ဒ်မင်ပါလျှင် (ရက် 90) ฿350,000 တောင်းသည်။",
+    "zh": "Fastwork 上一则带照片和 PDF 报告的检查应用服务，基础版（单台设备，离线，30 天）要价 ฿60,000，带 GPS 标记的 iOS 和 Android 版（60 天）฿150,000，带后台和网页管理端的版本（90 天）฿350,000。",
+    "de": "Ein Angebot auf Fastwork für eine Kontroll-App mit Fotos und PDF-Berichten verlangt ฿60,000 für die Basisstufe (ein Gerät, offline, 30 Tage), ฿150,000 für iOS und Android mit GPS-Markierung (60 Tage) und ฿350,000 mit Backend und Web-Verwaltung (90 Tage)."
+   },
+   "src": "https://fastwork.co/user/panudech_changthong/mobile-application-72786961"
+  }
+ ],
+ "related": [
+  "club-desk",
+  "findable",
+  "giving",
+  "street-survey",
+  "paybox",
+  "trade-photos"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "North Carolina: guidelines for taking geotagged digital photos",
+    "th": "รัฐนอร์ทแคโรไลนา: แนวทางการถ่ายรูปดิจิทัลที่ติดพิกัด",
+    "my": "North Carolina: တည်နေရာအမှတ်အသားပါသော ဒစ်ဂျစ်တယ်ဓာတ်ပုံရိုက်ရန် လမ်းညွှန်ချက်",
+    "zh": "北卡罗来纳州：拍摄带地理标记数码照片的指南",
+    "de": "North Carolina: Richtlinien für Digitalfotos mit Geodaten"
+   },
+   "href": "https://www.deq.nc.gov/geotagged-photo-guidance/open"
+  },
+  {
+   "t": {
+    "en": "Personal Data Protection Act B.E. 2562 (2019), unofficial English translation",
+    "th": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ฉบับแปลภาษาอังกฤษ (ไม่เป็นทางการ)",
+    "my": "ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေ ၂၀၁၉ (B.E. 2562)၊ အင်္ဂလိပ်ဘာသာပြန် (တရားဝင်မဟုတ်)",
+    "zh": "《个人数据保护法》2562 佛历（2019）英文译本（非官方）",
+    "de": "Datenschutzgesetz B.E. 2562 (2019), inoffizielle englische Übersetzung"
+   },
+   "href": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "glyphs": [
+  "camera",
+  "pin",
+  "eye"
+ ]
+}

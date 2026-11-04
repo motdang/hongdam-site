@@ -1,0 +1,319 @@
+{
+ "id": "specialist",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People looking for a dentist, clinic or specialist in Chiang Mai want English at the appointment, a price before the visit and a booking that fits their insurance.",
+  "th": "คนที่หาหมอฟัน คลินิก หรือแพทย์เฉพาะทางในเชียงใหม่ต้องการภาษาอังกฤษในการนัด ราคาก่อนไปพบ และการจองที่เข้ากับประกันของตน",
+  "my": "ချင်းမိုင်တွင် သွားဆရာဝန်၊ ဆေးခန်း သို့မဟုတ် အထူးကုဆရာဝန်ကို ရှာသူတွေက ချိန်းဆိုမှုတွင် အင်္ဂလိပ်စကား၊ မသွားမီ ဈေးနှုန်းနှင့် မိမိ၏ အာမခံနှင့် ကိုက်ညီသော ဘွတ်ကင်တို့ကို လိုချင်ကြသည်။",
+  "zh": "在清迈找牙医、诊所或专科医生的人，想要预约时有英语、就诊前知道价格，以及与自己保险相配的预约方式。",
+  "de": "Wer in Chiang Mai einen Zahnarzt, eine Klinik oder einen Facharzt sucht, will Englisch beim Termin, vor dem Besuch einen Preis und eine Buchung, die zur eigenen Versicherung passt."
+ },
+ "n": {
+  "de": "Zahnarzt, Klinik oder Facharzt, mit Begleitung"
+ },
+ "l": {
+  "de": "Gefunden und gebucht, und ein Dolmetscher begleitet Sie beim Termin."
+ },
+ "glyphs": [
+  "heart",
+  "chat",
+  "calendar"
+ ],
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "We find the clinic or specialist.",
+    "th": "หาคลินิกหรือแพทย์เฉพาะทางให้",
+    "my": "ဆေးခန်း သို့မဟုတ် အထူးကုဆရာဝန်ကို ရှာပေးသည်။",
+    "zh": "找到合适的诊所或专科医生。",
+    "de": "Wir suchen die Klinik oder den Facharzt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนวันนัด",
+    "my": "သွားရောက်မည့်နေ့မတိုင်မီ",
+    "zh": "就诊之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "We book the visit.",
+    "th": "จองนัดให้",
+    "my": "ချိန်းဆိုမှုကို ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "预约就诊。",
+    "de": "Wir buchen den Termin."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนวันนัด",
+    "my": "သွားရောက်မည့်နေ့မတိုင်မီ",
+    "zh": "就诊之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "An interpreter is there with you at the appointment.",
+    "th": "มีล่ามอยู่กับคุณที่นัดหมาย",
+    "my": "ချိန်းဆိုမှုတွင် စကားပြန်တစ်ဦး သင်နှင့်အတူ ရှိသည်။",
+    "zh": "预约当天有翻译陪着您。",
+    "de": "Ein Dolmetscher ist beim Termin bei Ihnen."
+   },
+   "who": {
+    "en": "Hongdam, you and the clinic",
+    "th": "หงส์ดำ คุณ และคลินิก",
+    "my": "ဟုန်ဒမ်၊ သင်နှင့် ဆေးခန်း",
+    "zh": "鸿丹、您和诊所",
+    "de": "Hongdam, Sie und die Klinik"
+   },
+   "time": {
+    "en": "Up to 4 hours",
+    "th": "ไม่เกิน 4 ชั่วโมง",
+    "my": "4 နာရီအထိ",
+    "zh": "最多 4 小时",
+    "de": "Bis zu 4 Stunden"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Expatica lists Bangkok Hospital Chiang Mai and Rajavej Chiang Mai Hospital for English-language care. Rajavej offers multilingual interpreter services, and both book online or by phone.",
+    "th": "Expatica ระบุโรงพยาบาลกรุงเทพเชียงใหม่และโรงพยาบาลราชเวชเชียงใหม่สำหรับการรักษาภาษาอังกฤษ ราชเวชมีบริการล่ามหลายภาษา และทั้งสองแห่งจองได้ทางออนไลน์หรือโทรศัพท์",
+    "my": "Expatica က အင်္ဂလိပ်ဘာသာဖြင့် ကုသမှုအတွက် ချင်းမိုင်ဘန်ကောက်ဆေးရုံနှင့် ချင်းမိုင်ရာဂျာဝေ့ဆေးရုံတို့ကို စာရင်းပြုထားသည်။ ရာဂျာဝေ့တွင် ဘာသာစကားစုံ စကားပြန်ဝန်ဆောင်မှု ရှိပြီး နှစ်ခုလုံးကို အွန်လိုင်း သို့မဟုတ် ဖုန်းဖြင့် ဘွတ်ကင်လုပ်နိုင်သည်။",
+    "zh": "Expatica 把清迈曼谷医院和清迈 Rajavej 医院列为可用英语就诊的医院。Rajavej 提供多语翻译服务，两家都可在线或电话预约。",
+    "de": "Expatica nennt das Bangkok Hospital Chiang Mai und das Rajavej Chiang Mai Hospital für Behandlung auf Englisch. Rajavej bietet mehrsprachige Dolmetscherdienste an, und beide nehmen Buchungen online oder telefonisch entgegen."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "English support varies between the doctor, the reception and the pharmacy, Expatica notes.",
+    "th": "Expatica ระบุว่าการสื่อสารภาษาอังกฤษต่างกันไปตามแพทย์ แผนกต้อนรับ และเภสัชกร",
+    "my": "ဆရာဝန်၊ ကြိုဆိုရေးနှင့် ဆေးခန်းတို့အကြား အင်္ဂလိပ်စကား ပံ့ပိုးမှု ကွာခြားနိုင်သည်ဟု Expatica က ဖော်ပြသည်။",
+    "zh": "Expatica 指出，医生、前台和药房之间的英语支持程度不一。",
+    "de": "Expatica hält fest, dass die Englischkenntnisse bei Ärztin oder Arzt, Empfang und Apotheke unterschiedlich sind."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "Private hospitals may ask foreign patients to show a passport and pay a deposit or a card hold before treatment. Some insurance plans pay the hospital directly; others need the patient to pay first and claim later.",
+    "th": "โรงพยาบาลเอกชนอาจขอดูหนังสือเดินทางและเรียกเงินมัดจำหรือกันวงเงินบัตรจากผู้ป่วยต่างชาติก่อนรักษา ประกันบางแบบจ่ายให้โรงพยาบาลโดยตรง บางแบบให้ผู้ป่วยจ่ายก่อนแล้วเบิกคืน",
+    "my": "ပုဂ္ဂလိကဆေးရုံများက နိုင်ငံခြားသားလူနာများအား မကုမီ ပတ်စပို့ပြပြီး စပေါ်ငွေ သို့မဟုတ် ကတ်ဖြင့် ကြိုတင်ကာထားခြင်း တောင်းနိုင်သည်။ အာမခံအချို့က ဆေးရုံသို့ တိုက်ရိုက်ပေးသည်၊ အချို့မှာ လူနာက အရင်ပေးပြီးမှ ပြန်တောင်းရသည်။",
+    "zh": "私立医院可能要求外国患者出示护照，并在治疗前交押金或刷卡冻结额度。有些保险直接向医院付款，有些要患者先付再索赔。",
+    "de": "Privatspitäler können von ausländischen Patientinnen und Patienten vor der Behandlung den Pass und eine Anzahlung oder eine Kartenreservation verlangen. Manche Versicherungen zahlen direkt ans Spital, andere verlangen, dass man zuerst zahlt und danach abrechnet."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "Lab work, imaging, medicines and ambulance fees come on top of the visit fee, and prices can change.",
+    "th": "ค่าตรวจแล็บ ภาพถ่ายทางการแพทย์ ยา และรถพยาบาลคิดเพิ่มจากค่าตรวจ และราคาเปลี่ยนแปลงได้",
+    "my": "ဓာတ်ခွဲစစ်ဆေးမှု၊ ဓာတ်ပုံရိုက်ခြင်း၊ ဆေးဝါးနှင့် လူနာတင်ကားခတို့ကို စစ်ဆေးကုသခအပြင် ထပ်ပေါင်းပြီး ဈေးနှုန်းများ ပြောင်းလဲနိုင်သည်။",
+    "zh": "化验、影像检查、药品和救护车费用在诊费之外另计，价格可能变动。",
+    "de": "Laborarbeiten, Bildgebung, Medikamente und Ambulanz kommen zur Visitengebühr hinzu, und die Preise können sich ändern."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital's dental price list gives ranges rather than fixed prices, and its prices are valid until 31 December 2026.",
+    "th": "รายการราคาทันตกรรมของโรงพยาบาลกรุงเทพแสดงเป็นช่วงราคา ไม่ใช่ราคาตายตัว และราคาใช้ได้ถึง 31 ธันวาคม ค.ศ. 2026",
+    "my": "ဘန်ကောက်ဆေးရုံ၏ သွားကုသမှုဈေးနှုန်းစာရင်းတွင် ပုံသေဈေးမဟုတ်ဘဲ ဈေးနှုန်းအပိုင်းအခြားများ ဖော်ပြထားပြီး ဈေးနှုန်းများသည် 2026 ခုနှစ် ဒီဇင်ဘာ 31 ရက်အထိ အသက်ဝင်သည်။",
+    "zh": "曼谷医院的牙科价目表给的是价格区间而非固定价格，价格有效期至 2026 年 12 月 31 日。",
+    "de": "Die Zahnpreisliste des Bangkok Hospital nennt Preisspannen statt Festpreisen, und die Preise gelten bis zum 31. Dezember 2026."
+   },
+   "src": "https://www.bangkokhospital.com/en/bangkok/package/dental-treatment-fees"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Specialist visit at a Thai public hospital",
+    "th": "พบแพทย์เฉพาะทางที่โรงพยาบาลรัฐ",
+    "my": "ထိုင်းအစိုးရဆေးရုံတွင် အထူးကုဆရာဝန်နှင့် ပြခြင်း",
+    "zh": "在泰国公立医院看专科",
+    "de": "Facharztbesuch in einem thailändischen öffentlichen Spital"
+   },
+   "p": {
+    "en": "฿300–500",
+    "th": "฿300–500",
+    "my": "฿300–500",
+    "zh": "฿300–500",
+    "de": "฿300–500"
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "Specialist visit at an international hospital",
+    "th": "พบแพทย์เฉพาะทางที่โรงพยาบาลนานาชาติ",
+    "my": "နိုင်ငံတကာဆေးရုံတွင် အထူးကုဆရာဝန်နှင့် ပြခြင်း",
+    "zh": "在国际医院看专科",
+    "de": "Facharztbesuch in einem internationalen Spital"
+   },
+   "p": {
+    "en": "฿2,000–4,000 and up",
+    "th": "฿2,000–4,000 ขึ้นไป",
+    "my": "฿2,000–4,000 နှင့် အထက်",
+    "zh": "฿2,000–4,000 起",
+    "de": "ab ฿2,000–4,000"
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "Dentist at Bangkok Hospital's headquarters, price list valid to 31 December 2026: check-up and planning; scaling and polishing; tooth extraction",
+    "th": "ทันตแพทย์ที่โรงพยาบาลกรุงเทพสำนักงานใหญ่ รายการราคาใช้ได้ถึง 31 ธันวาคม ค.ศ. 2026 ตรวจและวางแผน ขูดหินปูนและขัดฟัน ถอนฟัน",
+    "my": "ဘန်ကောက်ဆေးရုံ ဌာနချုပ်ရှိ သွားဆရာဝန်၊ ဈေးနှုန်းစာရင်း 2026 ခုနှစ် ဒီဇင်ဘာ 31 ရက်အထိ - စစ်ဆေးမှုနှင့် အစီအစဉ်ဆွဲခြင်း၊ သွားခြစ်ခြင်းနှင့် တိုက်ခြင်း၊ သွားနှုတ်ခြင်း",
+    "zh": "曼谷医院总院的牙医，价目表有效期至 2026 年 12 月 31 日：检查与制订方案；洗牙与抛光；拔牙",
+    "de": "Zahnarzt im Hauptsitz des Bangkok Hospital, Preisliste gültig bis 31. Dezember 2026: Untersuchung und Planung; Zahnstein entfernen und polieren; Zahnextraktion"
+   },
+   "p": {
+    "en": "฿350–850; ฿1,800–2,700; ฿1,600–3,800",
+    "th": "฿350–850; ฿1,800–2,700; ฿1,600–3,800",
+    "my": "฿350–850; ฿1,800–2,700; ฿1,600–3,800",
+    "zh": "฿350–850；฿1,800–2,700；฿1,600–3,800",
+    "de": "฿350–850; ฿1,800–2,700; ฿1,600–3,800"
+   },
+   "src": "https://www.bangkokhospital.com/en/bangkok/package/dental-treatment-fees"
+  },
+  {
+   "t": {
+    "en": "Teeth cleaning at Dental World, Chiang Mai (listing on a medical-travel site, prices updated March 2025)",
+    "th": "ขูดหินปูนที่ Dental World เชียงใหม่ (รายการในเว็บไซต์ท่องเที่ยวเชิงการแพทย์ ราคาปรับล่าสุดมีนาคม ค.ศ. 2025)",
+    "my": "ချင်းမိုင် Dental World တွင် သွားသန့်ရှင်းရေး (ဆေးခရီးသွားဝက်ဘ်ဆိုက်ပါ စာရင်း၊ ဈေးနှုန်း 2025 ခုနှစ် မတ်လတွင် ပြင်ဆင်ထားသည်)",
+    "zh": "清迈 Dental World 的洗牙（医疗旅游网站上的列表，价格更新于 2025 年 3 月）",
+    "de": "Zahnreinigung bei Dental World, Chiang Mai (Eintrag auf einer Medizintourismus-Seite, Preise von März 2025)"
+   },
+   "p": {
+    "en": "US$20–35",
+    "th": "US$20–35",
+    "my": "US$20–35",
+    "zh": "US$20–35",
+    "de": "US$20–35"
+   },
+   "src": "https://us-uk.bookimed.com/clinic/dental-world:-the-oral-health-center/procedure=teeth-cleaning/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Where can I find an English-speaking doctor in Chiang Mai?",
+    "th": "จะหาแพทย์ที่พูดภาษาอังกฤษในเชียงใหม่ได้ที่ไหน",
+    "my": "ချင်းမိုင်တွင် အင်္ဂလိပ်စကားပြောသော ဆရာဝန်ကို ဘယ်မှာ ရှာရမလဲ။",
+    "zh": "在清迈哪里能找到会说英语的医生？",
+    "de": "Wo finde ich in Chiang Mai einen englischsprachigen Arzt?"
+   },
+   "a": {
+    "en": "Expatica names Bangkok Hospital Chiang Mai, Rajavej Chiang Mai Hospital and Dr Artima Medical Clinic, a Thai and Australian qualified GP who consults in English and Thai. It adds that English support varies between the doctor, the reception and the pharmacy.",
+    "th": "Expatica ระบุโรงพยาบาลกรุงเทพเชียงใหม่ โรงพยาบาลราชเวชเชียงใหม่ และ Dr Artima Medical Clinic ซึ่งเป็นแพทย์ทั่วไปที่จบการศึกษาทั้งไทยและออสเตรเลีย ให้คำปรึกษาเป็นภาษาอังกฤษและไทย และระบุว่าการสื่อสารภาษาอังกฤษต่างกันไปตามแพทย์ แผนกต้อนรับ และเภสัชกร",
+    "my": "Expatica က ချင်းမိုင်ဘန်ကောက်ဆေးရုံ၊ ချင်းမိုင်ရာဂျာဝေ့ဆေးရုံနှင့် ထိုင်းနှင့် ဩစတြေးလျ အရည်အချင်းရှိ အထွေထွေဆရာဝန်ဖြစ်ပြီး အင်္ဂလိပ်နှင့် ထိုင်းဘာသာဖြင့် ကုသပေးသော Dr Artima Medical Clinic တို့ကို အမည်ဖော်ပြသည်။ ဆရာဝန်၊ ကြိုဆိုရေးနှင့် ဆေးဆိုင်အကြား အင်္ဂလိပ်စကား ပံ့ပိုးမှု ကွာခြားနိုင်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "Expatica 列出清迈曼谷医院、清迈 Rajavej 医院，以及 Dr Artima Medical Clinic，后者是具有泰国和澳大利亚资质的全科医生，用英语和泰语问诊。文中补充，医生、前台和药房的英语支持程度不一。",
+    "de": "Expatica nennt das Bangkok Hospital Chiang Mai, das Rajavej Chiang Mai Hospital und die Dr Artima Medical Clinic, eine in Thailand und Australien qualifizierte Hausärztin beziehungsweise ein solcher Hausarzt mit Sprechstunde auf Englisch und Thai. Dazu heisst es, die Englischkenntnisse seien bei Arzt, Empfang und Apotheke unterschiedlich."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "q": {
+    "en": "How much does a specialist visit cost in Chiang Mai?",
+    "th": "พบแพทย์เฉพาะทางที่เชียงใหม่ค่าตรวจเท่าไร",
+    "my": "ချင်းမိုင်တွင် အထူးကုဆရာဝန်နှင့် ပြရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "在清迈看专科要多少钱？",
+    "de": "Was kostet ein Facharztbesuch in Chiang Mai?"
+   },
+   "a": {
+    "en": "Expatica estimates about ฿300 to ฿500 for a specialist at a public hospital and ฿2,000 to ฿4,000 or more at an international hospital. Lab work, imaging and medicines are extra.",
+    "th": "Expatica ประมาณการว่าพบแพทย์เฉพาะทางที่โรงพยาบาลรัฐราว ฿300 ถึง ฿500 และที่โรงพยาบาลนานาชาติ ฿2,000 ถึง ฿4,000 ขึ้นไป ค่าแล็บ ภาพถ่ายทางการแพทย์ และยาคิดเพิ่ม",
+    "my": "Expatica က အစိုးရဆေးရုံတွင် အထူးကုဆရာဝန်နှင့် ပြရန် ခန့်မှန်း ฿300 မှ ฿500၊ နိုင်ငံတကာဆေးရုံတွင် ฿2,000 မှ ฿4,000 နှင့်အထက် ဟု ခန့်မှန်းသည်။ ဓာတ်ခွဲစစ်ဆေးမှု၊ ဓာတ်ပုံရိုက်ခြင်းနှင့် ဆေးဝါးတို့ ထပ်ပေါင်းသည်။",
+    "zh": "Expatica 估计，公立医院的专科约 ฿300 至 ฿500，国际医院为 ฿2,000 至 ฿4,000 或更高。化验、影像检查和药品另计。",
+    "de": "Expatica schätzt etwa ฿300 bis ฿500 für einen Facharzt im öffentlichen Spital und ฿2,000 bis ฿4,000 oder mehr im internationalen Spital. Labor, Bildgebung und Medikamente kommen dazu."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "q": {
+    "en": "How much does a dentist cost?",
+    "th": "ทันตแพทย์ราคาเท่าไร",
+    "my": "သွားဆရာဝန်ကို ပြရန် ဈေးဘယ်လောက်လဲ။",
+    "zh": "看牙医要多少钱？",
+    "de": "Was kostet ein Zahnarzt?"
+   },
+   "a": {
+    "en": "Bangkok Hospital's headquarters lists a check-up and planning at ฿350 to ฿850, scaling and polishing at ฿1,800 to ฿2,700, a tooth extraction at ฿1,600 to ฿3,800 and a composite filling at ฿2,000 to ฿6,300 a tooth. The prices are valid until 31 December 2026.",
+    "th": "โรงพยาบาลกรุงเทพสำนักงานใหญ่แสดงราคาตรวจและวางแผน ฿350 ถึง ฿850 ขูดหินปูนและขัดฟัน ฿1,800 ถึง ฿2,700 ถอนฟัน ฿1,600 ถึง ฿3,800 และอุดฟันด้วยคอมโพสิต ฿2,000 ถึง ฿6,300 ต่อซี่ ราคาใช้ได้ถึง 31 ธันวาคม ค.ศ. 2026",
+    "my": "ဘန်ကောက်ဆေးရုံ ဌာနချုပ်က စစ်ဆေးမှုနှင့် အစီအစဉ်ဆွဲခြင်း ฿350 မှ ฿850၊ သွားခြစ်ခြင်းနှင့် တိုက်ခြင်း ฿1,800 မှ ฿2,700၊ သွားနှုတ်ခြင်း ฿1,600 မှ ฿3,800၊ composite သွားဖာခြင်း သွားတစ်ချောင်းလျှင် ฿2,000 မှ ฿6,300 ဟု ဖော်ပြထားသည်။ ဈေးနှုန်းများသည် 2026 ခုနှစ် ဒီဇင်ဘာ 31 ရက်အထိ အသက်ဝင်သည်။",
+    "zh": "曼谷医院总院列出：检查与制订方案 ฿350 至 ฿850，洗牙与抛光 ฿1,800 至 ฿2,700，拔牙 ฿1,600 至 ฿3,800，树脂补牙每颗 ฿2,000 至 ฿6,300。价格有效期至 2026 年 12 月 31 日。",
+    "de": "Das Bangkok Hospital führt an seinem Hauptsitz eine Untersuchung samt Planung mit ฿350 bis ฿850 auf, Zahnstein entfernen und polieren mit ฿1,800 bis ฿2,700, eine Zahnextraktion mit ฿1,600 bis ฿3,800 und eine Kompositfüllung mit ฿2,000 bis ฿6,300 pro Zahn. Die Preise gelten bis zum 31. Dezember 2026."
+   },
+   "src": "https://www.bangkokhospital.com/en/bangkok/package/dental-treatment-fees"
+  },
+  {
+   "q": {
+    "en": "Do foreigners pay a deposit at a Chiang Mai hospital?",
+    "th": "ชาวต่างชาติต้องจ่ายเงินมัดจำที่โรงพยาบาลในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်ဆေးရုံတွင် နိုင်ငံခြားသားက စပေါ်ငွေ ပေးရသလား။",
+    "zh": "外国人在清迈的医院要交押金吗？",
+    "de": "Zahlen Ausländer in einem Spital in Chiang Mai eine Anzahlung?"
+   },
+   "a": {
+    "en": "Expatica says private hospitals may ask foreign patients to show a passport and pay a deposit or a card hold before treatment. Some insurers pay the hospital directly; others need the patient to pay first and claim later.",
+    "th": "Expatica ระบุว่าโรงพยาบาลเอกชนอาจขอดูหนังสือเดินทางและเรียกเงินมัดจำหรือกันวงเงินบัตรจากผู้ป่วยต่างชาติก่อนรักษา บริษัทประกันบางแห่งจ่ายให้โรงพยาบาลโดยตรง บางแห่งให้ผู้ป่วยจ่ายก่อนแล้วเบิกคืน",
+    "my": "ပုဂ္ဂလိကဆေးရုံများက နိုင်ငံခြားသားလူနာများအား မကုမီ ပတ်စပို့ပြပြီး စပေါ်ငွေ သို့မဟုတ် ကတ်ဖြင့် ကြိုတင်ကာထားခြင်း တောင်းနိုင်သည်ဟု Expatica က ဆိုသည်။ အာမခံကုမ္ပဏီအချို့က ဆေးရုံသို့ တိုက်ရိုက်ပေးပြီး အချို့မှာ လူနာက အရင်ပေးပြီးမှ ပြန်တောင်းရသည်။",
+    "zh": "Expatica 称，私立医院可能要求外国患者出示护照，并在治疗前交押金或刷卡冻结额度。有些保险公司直接向医院付款，有些要患者先付再索赔。",
+    "de": "Expatica schreibt, Privatspitäler könnten von ausländischen Patientinnen und Patienten vor der Behandlung den Pass und eine Anzahlung oder eine Kartenreservation verlangen. Manche Versicherer zahlen direkt ans Spital, andere verlangen, dass man zuerst zahlt und danach abrechnet."
+   },
+   "src": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  }
+ ],
+ "related": [
+  "blood",
+  "doctor",
+  "interp",
+  "translate",
+  "care-visits",
+  "retire"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Expatica: English-speaking doctors in Chiang Mai",
+    "th": "Expatica: แพทย์ที่พูดภาษาอังกฤษในเชียงใหม่",
+    "my": "Expatica: ချင်းမိုင်ရှိ အင်္ဂလိပ်စကားပြောသော ဆရာဝန်များ",
+    "zh": "Expatica：清迈会说英语的医生",
+    "de": "Expatica: Englischsprachige Ärzte in Chiang Mai"
+   },
+   "href": "https://www.expatica.com/th/health/primary-care/english-speaking-doctors-in-chiang-mai-2174244/"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital: dental treatment fees",
+    "th": "โรงพยาบาลกรุงเทพ: ราคาทันตกรรม",
+    "my": "ဘန်ကောက်ဆေးရုံ: သွားကုသမှုခများ",
+    "zh": "曼谷医院：牙科收费",
+    "de": "Bangkok Hospital: Zahnbehandlungspreise"
+   },
+   "href": "https://www.bangkokhospital.com/en/bangkok/package/dental-treatment-fees"
+  }
+ ]
+}

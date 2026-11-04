@@ -1,0 +1,299 @@
+{
+ "id": "research",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People bring a question when they need facts with sources in writing and do not have days to look for them.",
+  "th": "คนนำคำถามมาเมื่อต้องการข้อเท็จจริงพร้อมแหล่งที่มาเป็นลายลักษณ์อักษร แต่ไม่มีเวลาหลายวันไปค้นเอง",
+  "my": "အချက်အလက်များနှင့် ရင်းမြစ်များကို စာဖြင့် လိုချင်ပြီး ကိုယ်တိုင်ရှာရန် ရက်များစွာ မရှိသည့်အခါ လူတွေက မေးခွန်းတစ်ခု ယူလာကြသည်။",
+  "zh": "人们需要有出处的书面事实，又没有好几天时间自己去查，就会带着问题来。",
+  "de": "Man bringt eine Frage, wenn man Fakten mit Quellen schriftlich braucht und keine Tage zum Suchen hat."
+ },
+ "n": {
+  "de": "Eine Frage recherchiert"
+ },
+ "l": {
+  "de": "Schriftlich beantwortet, mit Quellen."
+ },
+ "glyphs": [
+  "search",
+  "page",
+  "lightbulb"
+ ],
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You send one question.",
+    "th": "คุณส่งคำถามหนึ่งข้อ",
+    "my": "သင်က မေးခွန်းတစ်ခု ပေးပို့သည်။",
+    "zh": "您发来一个问题。",
+    "de": "Sie senden eine Frage."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်းတွင်",
+    "zh": "一开始",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Your question is answered with up to ten facts.",
+    "th": "ตอบคำถามของคุณด้วยข้อเท็จจริงไม่เกินสิบข้อ",
+    "my": "သင့်မေးခွန်းကို အချက်အလက် ဆယ်ချက်အထိဖြင့် ဖြေသည်။",
+    "zh": "用最多十条事实回答您的问题。",
+    "de": "Ihre Frage wird mit bis zu zehn Fakten beantwortet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款之后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The answer comes in writing, with sources.",
+    "th": "คำตอบมาเป็นลายลักษณ์อักษร พร้อมแหล่งที่มา",
+    "my": "အဖြေကို စာဖြင့် ရင်းမြစ်များနှင့်အတူ ပို့ပေးသည်။",
+    "zh": "答复以书面形式交付，附出处。",
+    "de": "Die Antwort kommt schriftlich, mit Quellen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On delivery",
+    "th": "ตอนส่งมอบ",
+    "my": "ပို့ဆောင်ချိန်တွင်",
+    "zh": "交付时",
+    "de": "Bei der Lieferung"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Department of Business Development runs DBD DataWarehouse+, a search for Thai company data and financial statements.",
+    "th": "กรมพัฒนาธุรกิจการค้าให้บริการ DBD DataWarehouse+ สำหรับค้นข้อมูลนิติบุคคลไทยและงบการเงิน",
+    "my": "စီးပွားရေးဖွံ့ဖြိုးမှုဦးစီးဌာနက ထိုင်းကုမ္ပဏီအချက်အလက်နှင့် ဘဏ္ဍာရေးရှင်းတမ်းများ ရှာနိုင်သည့် DBD DataWarehouse+ ကို လုပ်ကိုင်သည်။",
+    "zh": "商业发展厅运营 DBD DataWarehouse+，可查泰国公司数据和财务报表。",
+    "de": "Das Department of Business Development betreibt DBD DataWarehouse+, eine Suche für Daten thailändischer Firmen und Jahresabschlüsse."
+   },
+   "src": "https://datawarehouse.dbd.go.th/"
+  },
+  {
+   "t": {
+    "en": "The Digital Government Development Agency runs data.go.th, Thailand's open government data platform. It offers data as previews, visualizations and APIs.",
+    "th": "สำนักงานพัฒนารัฐบาลดิจิทัลดูแล data.go.th ซึ่งเป็นแพลตฟอร์มข้อมูลเปิดภาครัฐของไทย ให้ข้อมูลทั้งแบบดูตัวอย่าง แผนภาพ และ API",
+    "my": "ဒစ်ဂျစ်တယ်အစိုးရဖွံ့ဖြိုးရေးအေဂျင်စီက ထိုင်းအစိုးရ၏ ပွင့်လင်းဒေတာပလက်ဖောင်း data.go.th ကို လုပ်ကိုင်သည်။ ဒေတာကို ကြိုကြည့်ခြင်း၊ ပုံဖော်ဖော်ပြခြင်းနှင့် API များအဖြစ် ပေးသည်။",
+    "zh": "数字政府发展局运营 data.go.th，这是泰国政府的开放数据平台，数据以预览、可视化和 API 形式提供。",
+    "de": "Die Digital Government Development Agency betreibt data.go.th, die Plattform für offene Regierungsdaten Thailands. Sie bietet Daten als Vorschau, Visualisierung und API an."
+   },
+   "src": "https://data.go.th/en"
+  },
+  {
+   "t": {
+    "en": "Thailand's PDPA lets a business collect personal data without consent for research or statistics, when safeguards for the person's rights and freedoms are in place and the Committee's notification is followed (Section 24 (1)).",
+    "th": "PDPA ของไทยให้ธุรกิจเก็บข้อมูลส่วนบุคคลโดยไม่ต้องขอความยินยอมได้เพื่อการวิจัยหรือสถิติ เมื่อมีมาตรการปกป้องสิทธิและเสรีภาพของเจ้าของข้อมูล และเป็นไปตามประกาศของคณะกรรมการ (มาตรา 24 (1))",
+    "my": "ထိုင်း PDPA က သုတေသန သို့မဟုတ် စာရင်းအင်းအတွက် ပုဂ္ဂိုလ်၏ အခွင့်အရေးနှင့် လွတ်လပ်ခွင့်ကို ကာကွယ်သည့် အစီအမံများ ရှိပြီး ကော်မတီ၏ ကြေညာချက်ကို လိုက်နာထားလျှင် ခွင့်ပြုချက်မရဘဲ ကိုယ်ရေးအချက်အလက် စုဆောင်းခွင့် ပေးသည် (ပုဒ်မ 24 (1))။",
+    "zh": "泰国 PDPA 允许为研究或统计目的，在已有保护本人权利和自由的措施并遵循委员会公告的前提下，不经同意收集个人数据（第 24 条 (1)）。",
+    "de": "Das thailändische PDPA erlaubt, personenbezogene Daten für Forschung oder Statistik ohne Zustimmung zu erheben, wenn Schutzmassnahmen für die Rechte und Freiheiten der Person bestehen und die Bekanntmachung des Ausschusses eingehalten wird (Section 24 (1))."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork listing with 32 sales: market research report as a PDF in 7 days, no customer survey",
+    "th": "รายการบน Fastwork ที่ขายได้ 32 ครั้ง: รายงานวิจัยตลาดเป็น PDF ใน 7 วัน ไม่รวมแบบสอบถามลูกค้า",
+    "my": "ရောင်းချမှု 32 ရှိသော Fastwork စာရင်း: ဈေးကွက်သုတေသနအစီရင်ခံစာကို PDF ဖြင့် ရက် 7 ရက်အတွင်း၊ ဖောက်သည်စစ်တမ်း မပါ",
+    "zh": "Fastwork 上已售 32 次的服务页：市场调研报告 PDF，7 天，不含客户问卷",
+    "de": "Fastwork-Angebot mit 32 Verkäufen: Marktforschungsbericht als PDF in 7 Tagen, ohne Kundenbefragung"
+   },
+   "p": {
+    "en": "฿5,000",
+    "th": "฿5,000",
+    "my": "฿5,000",
+    "zh": "฿5,000",
+    "de": "฿5,000"
+   },
+   "src": "https://fastwork.co/user/neracha/research-92964852"
+  },
+  {
+   "t": {
+    "en": "Same listing, full package: competitor analysis of 3 to 5 brands, 10 days, no customer survey or travel costs",
+    "th": "รายการเดียวกัน แพ็กเกจเต็ม: วิเคราะห์คู่แข่ง 3–5 แบรนด์ 10 วัน ไม่รวมแบบสอบถามลูกค้าและค่าเดินทาง",
+    "my": "တူညီသောစာရင်း၊ အပြည့်အစုံပက်ကေ့ချ်: ကုန်အမှတ်တံဆိပ် 3 မှ 5 ခုကို ပြိုင်ဘက်ခွဲခြမ်းစိတ်ဖြာမှု၊ ရက် 10 ရက်၊ ဖောက်သည်စစ်တမ်းနှင့် ခရီးစရိတ် မပါ",
+    "zh": "同一服务页的完整套餐：分析 3 至 5 个对手品牌，10 天，不含客户问卷和差旅费",
+    "de": "Dasselbe Angebot, Vollpaket: Konkurrenzanalyse von 3 bis 5 Marken, 10 Tage, ohne Kundenbefragung und Reisekosten"
+   },
+   "p": {
+    "en": "฿15,000",
+    "th": "฿15,000",
+    "my": "฿15,000",
+    "zh": "฿15,000",
+    "de": "฿15,000"
+   },
+   "src": "https://fastwork.co/user/neracha/research-92964852"
+  },
+  {
+   "t": {
+    "en": "Fastwork's market research page: services listed from",
+    "th": "หน้าวิจัยตลาดของ Fastwork: บริการเริ่มต้นที่",
+    "my": "Fastwork ၏ ဈေးကွက်သုတေသနစာမျက်နှာ: ဝန်ဆောင်မှုများ စတင်သည့်စျေး",
+    "zh": "Fastwork 市场调研页面：服务起价",
+    "de": "Marktforschungsseite von Fastwork: Dienste ab"
+   },
+   "p": {
+    "en": "฿500",
+    "th": "฿500",
+    "my": "฿500",
+    "zh": "฿500",
+    "de": "฿500"
+   },
+   "src": "https://fastwork.co/research/marketing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a market research job cost on Fastwork?",
+    "th": "งานวิจัยตลาดบน Fastwork ราคาเท่าไร",
+    "my": "Fastwork တွင် ဈေးကွက်သုတေသနလုပ်ငန်းတစ်ခု၏ စျေးနှုန်း ဘယ်လောက်လဲ။",
+    "zh": "在 Fastwork 上做一次市场调研要多少钱？",
+    "de": "Was kostet eine Marktforschung auf Fastwork?"
+   },
+   "a": {
+    "en": "One listing with 32 sales charges ฿5,000 for a PDF market report in 7 days and ฿15,000 for the full package, with competitor analysis of 3 to 5 brands, in 10 days.",
+    "th": "รายการหนึ่งที่ขายได้ 32 ครั้งคิด ฿5,000 สำหรับรายงานตลาดเป็น PDF ใน 7 วัน และ ฿15,000 สำหรับแพ็กเกจเต็มที่วิเคราะห์คู่แข่ง 3–5 แบรนด์ ใน 10 วัน",
+    "my": "ရောင်းချမှု 32 ရှိသော စာရင်းတစ်ခုက ဈေးကွက်အစီရင်ခံစာ PDF ကို ရက် 7 ရက်အတွင်း ပို့ရန် ฿5,000 နှင့် ကုန်အမှတ်တံဆိပ် 3 မှ 5 ခု ပြိုင်ဘက်ခွဲခြမ်းစိတ်ဖြာမှု ပါသော အပြည့်အစုံပက်ကေ့ချ်ကို ရက် 10 ရက်အတွင်း ပို့ရန် ฿15,000 တောင်းသည်။",
+    "zh": "一个已售 32 次的服务页，PDF 市场报告 7 天交付收费 ฿5,000；完整套餐含 3 至 5 个对手品牌的分析，10 天交付，收费 ฿15,000。",
+    "de": "Ein Angebot mit 32 Verkäufen verlangt ฿5,000 für einen Marktbericht als PDF in 7 Tagen und ฿15,000 für das Vollpaket mit Konkurrenzanalyse von 3 bis 5 Marken in 10 Tagen."
+   },
+   "src": "https://fastwork.co/user/neracha/research-92964852"
+  },
+  {
+   "q": {
+    "en": "What does a basic research package leave out?",
+    "th": "แพ็กเกจวิจัยพื้นฐานไม่รวมอะไรบ้าง",
+    "my": "အခြေခံသုတေသနပက်ကေ့ချ်တွင် ဘာတွေ မပါဝင်သလဲ။",
+    "zh": "基础调研套餐不包含什么？",
+    "de": "Was lässt ein Basispaket für Recherche weg?"
+   },
+   "a": {
+    "en": "On the same listing, the ฿5,000 package leaves out the customer survey. The ฿15,000 package leaves out the customer survey and travel costs.",
+    "th": "ในรายการเดียวกัน แพ็กเกจ ฿5,000 ไม่รวมแบบสอบถามลูกค้า แพ็กเกจ ฿15,000 ไม่รวมแบบสอบถามลูกค้าและค่าเดินทาง",
+    "my": "တူညီသောစာရင်းတွင် ฿5,000 ပက်ကေ့ချ်သည် ဖောက်သည်စစ်တမ်းကို မထည့်ပါ။ ฿15,000 ပက်ကေ့ချ်သည် ဖောက်သည်စစ်တမ်းနှင့် ခရီးစရိတ်ကို မထည့်ပါ။",
+    "zh": "在同一个服务页上，฿5,000 的套餐不含客户问卷；฿15,000 的套餐不含客户问卷和差旅费。",
+    "de": "Im selben Angebot enthält das Paket für ฿5,000 keine Kundenbefragung. Das Paket für ฿15,000 enthält weder Kundenbefragung noch Reisekosten."
+   },
+   "src": "https://fastwork.co/user/neracha/research-92964852"
+  },
+  {
+   "q": {
+    "en": "What is the lowest price for market research on Fastwork?",
+    "th": "งานวิจัยตลาดบน Fastwork ราคาต่ำสุดเท่าไร",
+    "my": "Fastwork တွင် ဈေးကွက်သုတေသနအတွက် အနိမ့်ဆုံးစျေး ဘယ်လောက်လဲ။",
+    "zh": "Fastwork 上市场调研的最低价是多少？",
+    "de": "Was ist der tiefste Preis für Marktforschung auf Fastwork?"
+   },
+   "a": {
+    "en": "Fastwork's market research page is titled with services starting at ฿500.",
+    "th": "หน้าวิจัยตลาดของ Fastwork ตั้งชื่อหน้าว่าบริการเริ่มต้น ฿500",
+    "my": "Fastwork ၏ ဈေးကွက်သုတေသနစာမျက်နှာ ခေါင်းစဉ်တွင် ဝန်ဆောင်မှုများ ฿500 မှ စသည်ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 市场调研页面的标题写明服务起价 ฿500。",
+    "de": "Die Marktforschungsseite von Fastwork trägt im Titel Dienste ab ฿500."
+   },
+   "src": "https://fastwork.co/research/marketing"
+  },
+  {
+   "q": {
+    "en": "How many datasets does data.go.th list?",
+    "th": "data.go.th มีชุดข้อมูลกี่ชุด",
+    "my": "data.go.th တွင် ဒေတာအစုံ ဘယ်နှစ်ခု ရှိသလဲ။",
+    "zh": "data.go.th 列出了多少个数据集？",
+    "de": "Wie viele Datensätze führt data.go.th?"
+   },
+   "a": {
+    "en": "The page lists 44,540 datasets, offered in various formats.",
+    "th": "หน้าเว็บแสดงชุดข้อมูล 44,540 ชุด ในหลายรูปแบบไฟล์",
+    "my": "စာမျက်နှာတွင် ဒေတာအစုံ 44,540 ခု ပါပြီး ဖိုင်ပုံစံ အမျိုးမျိုးဖြင့် ပေးသည်။",
+    "zh": "该页面列出 44,540 个数据集，提供多种格式。",
+    "de": "Die Seite führt 44,540 Datensätze in verschiedenen Formaten."
+   },
+   "src": "https://data.go.th/en"
+  },
+  {
+   "q": {
+    "en": "Which addresses does DBD DataWarehouse+ use?",
+    "th": "DBD DataWarehouse+ ใช้ที่อยู่เว็บอะไร",
+    "my": "DBD DataWarehouse+ က ဘယ်ဝဘ်လိပ်စာတွေ သုံးသလဲ။",
+    "zh": "DBD DataWarehouse+ 使用哪些网址？",
+    "de": "Welche Adressen nutzt DBD DataWarehouse+?"
+   },
+   "a": {
+    "en": "The page names dbd.go.th and datawarehouse.dbd.go.th as the official addresses. A separate link for account data and shareholder lists goes to shd.dbd.go.th.",
+    "th": "หน้าเว็บระบุ dbd.go.th และ datawarehouse.dbd.go.th เป็นที่อยู่ทางการ ลิงก์แยกสำหรับข้อมูลบัญชีและรายชื่อผู้ถือหุ้นไปที่ shd.dbd.go.th",
+    "my": "စာမျက်နှာက dbd.go.th နှင့် datawarehouse.dbd.go.th တို့ကို တရားဝင်လိပ်စာအဖြစ် ဖော်ပြထားသည်။ စာရင်းအချက်အလက်နှင့် ရှယ်ယာရှင်စာရင်းအတွက် သီးသန့်လင့်ခ်က shd.dbd.go.th သို့ သွားသည်။",
+    "zh": "该页面写明官方网址是 dbd.go.th 和 datawarehouse.dbd.go.th。账目数据和股东名单有单独的链接，指向 shd.dbd.go.th。",
+    "de": "Die Seite nennt dbd.go.th und datawarehouse.dbd.go.th als offizielle Adressen. Ein eigener Link für Kontendaten und Aktionärslisten führt zu shd.dbd.go.th."
+   },
+   "src": "https://datawarehouse.dbd.go.th/"
+  }
+ ],
+ "related": [
+  "data-crawl",
+  "leads",
+  "street-survey",
+  "article",
+  "places-data",
+  "thai-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Business Development: DBD DataWarehouse+",
+    "th": "กรมพัฒนาธุรกิจการค้า: DBD DataWarehouse+",
+    "my": "စီးပွားရေးဖွံ့ဖြိုးမှုဦးစီးဌာန: DBD DataWarehouse+",
+    "zh": "商业发展厅：DBD DataWarehouse+",
+    "de": "Department of Business Development: DBD DataWarehouse+"
+   },
+   "href": "https://datawarehouse.dbd.go.th/"
+  },
+  {
+   "t": {
+    "en": "Thailand's open government data platform, data.go.th",
+    "th": "แพลตฟอร์มข้อมูลเปิดภาครัฐของไทย data.go.th",
+    "my": "ထိုင်းအစိုးရ၏ ပွင့်လင်းဒေတာပလက်ဖောင်း data.go.th",
+    "zh": "泰国政府开放数据平台 data.go.th",
+    "de": "Thailands Plattform für offene Regierungsdaten, data.go.th"
+   },
+   "href": "https://data.go.th/en"
+  }
+ ]
+}

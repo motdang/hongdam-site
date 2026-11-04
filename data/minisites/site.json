@@ -1,0 +1,292 @@
+{
+ "id": "site",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People want a website in Thai and English, on an address of their own.",
+  "th": "คนอยากมีเว็บไซต์ภาษาไทยและอังกฤษบนที่อยู่เว็บของตัวเอง",
+  "my": "လူတွေက ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ကိုယ်ပိုင်ဝက်ဘ်လိပ်စာပေါ်တွင် ဝက်ဘ်ဆိုက် ရှိစေချင်ကြသည်။",
+  "zh": "人们想要一个泰英双语、用自己网址的网站。",
+  "de": "Man möchte eine Website auf Thai und Englisch unter einer eigenen Adresse."
+ },
+ "n": {
+  "de": "Website"
+ },
+ "l": {
+  "de": "Thai und Englisch, unter Ihrer eigenen Adresse."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You choose one page or a few, or a full website.",
+    "th": "คุณเลือกหน้าเดียวหรือไม่กี่หน้า หรือเว็บไซต์เต็ม",
+    "my": "စာမျက်နှာတစ်ခု သို့မဟုတ် အနည်းငယ်၊ ဒါမှမဟုတ် ဝက်ဘ်ဆိုက်အပြည့်ကို သင်ရွေးသည်။",
+    "zh": "您选一页或几页，或完整网站。",
+    "de": "Sie wählen eine Seite oder ein paar, oder eine komplette Website."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "一开始",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "The site is made in Thai and English.",
+    "th": "สร้างเว็บไซต์เป็นภาษาไทยและอังกฤษ",
+    "my": "ဝက်ဘ်ဆိုက်ကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ပြုလုပ်သည်။",
+    "zh": "网站做成泰英双语。",
+    "de": "Die Website wird auf Thai und Englisch gemacht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The build",
+    "th": "ช่วงสร้างเว็บ",
+    "my": "တည်ဆောက်ချိန်",
+    "zh": "制作期间",
+    "de": "Der Aufbau"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "It sits on your own address (your domain, like yourshop.com).",
+    "th": "ตั้งไว้บนที่อยู่ของคุณเอง (โดเมน เช่น yourshop.com)",
+    "my": "သင့်ကိုယ်ပိုင်လိပ်စာ (ဒိုမိန်း၊ ဥပမာ yourshop.com) ပေါ်တွင် တင်ထားသည်။",
+    "zh": "放在您自己的网址上（域名，如 yourshop.com）。",
+    "de": "Sie liegt unter Ihrer eigenen Adresse (Ihrer Domain, etwa yourshop.com)."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံးတွင်",
+    "zh": "最后",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google's page on multilingual sites gives each language version its own URL and ties them together with hreflang (a tag that says which page is which language). Each version lists itself and all the others, and the alternate URLs do not need to be on the same domain.",
+    "th": "หน้าของ Google เรื่องเว็บหลายภาษาให้แต่ละภาษามี URL ของตัวเอง และผูกเข้าด้วยกันด้วย hreflang (แท็กที่บอกว่าหน้าไหนเป็นภาษาอะไร) แต่ละเวอร์ชันระบุทั้งตัวเองและเวอร์ชันอื่นทั้งหมด และ URL ทางเลือกไม่จำเป็นต้องอยู่ในโดเมนเดียวกัน",
+    "my": "Google ၏ ဘာသာစကားစုံ ဝက်ဘ်ဆိုက်စာမျက်နှာတွင် ဘာသာစကားတစ်ခုချင်းကို ကိုယ်ပိုင် URL ပေးပြီး hreflang (ဘယ်စာမျက်နှာက ဘယ်ဘာသာစကားဟု ပြောသော tag) ဖြင့် ချိတ်ဆက်သည်။ ဗားရှင်းတစ်ခုချင်းသည် မိမိကိုယ်တိုင်နှင့် ကျန်ဗားရှင်းအားလုံးကို စာရင်းပြုရမည်ဖြစ်ပြီး အစားထိုး URL များသည် ဒိုမိန်းတူညီစရာ မလိုပါ။",
+    "zh": "Google 关于多语言网站的页面，让每个语言版本有自己的 URL，并用 hreflang（说明哪个页面是哪种语言的标签）把它们连起来。每个版本列出自己和其他所有版本，备用 URL 不必在同一个域名下。",
+    "de": "Googles Seite zu mehrsprachigen Websites gibt jeder Sprachversion eine eigene URL und verbindet sie mit hreflang (ein Tag, das sagt, welche Seite in welcher Sprache ist). Jede Version listet sich selbst und alle anderen, und die alternativen URLs müssen nicht auf derselben Domain liegen."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "t": {
+    "en": "The same Google page says localized versions of a page count as duplicates only if the main content stays untranslated.",
+    "th": "หน้าเดียวกันของ Google ระบุว่าเวอร์ชันแปลของหน้านับเป็นหน้าซ้ำก็ต่อเมื่อเนื้อหาหลักยังไม่ได้แปล",
+    "my": "ထိုတူညီသော Google စာမျက်နှာတွင် စာမျက်နှာ၏ ဘာသာပြန်ဗားရှင်းများကို အဓိကအကြောင်းအရာ မပြန်ရသေးမှသာ ထပ်နေသည်ဟု သတ်မှတ်သည်ဟု ဆိုသည်။",
+    "zh": "同一 Google 页面写明，页面的本地化版本只有在主要内容仍未翻译时才算重复。",
+    "de": "Dieselbe Google-Seite schreibt, lokalisierte Versionen einer Seite gelten nur dann als Duplikate, wenn der Hauptinhalt unübersetzt bleibt."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "t": {
+    "en": "THNIC lists .co.th as a domain for business, starting at ฿856 a year, and .in.th for individuals and personal brands.",
+    "th": "THNIC ระบุ .co.th เป็นโดเมนสำหรับธุรกิจ เริ่มต้นปีละ ฿856 และ .in.th สำหรับบุคคลทั่วไปและแบรนด์ส่วนตัว",
+    "my": "THNIC သည် .co.th ကို စီးပွားရေးလုပ်ငန်းအတွက် ဒိုမိန်းအဖြစ် တစ်နှစ် ฿856 မှစ၍ ဖော်ပြပြီး .in.th ကို တစ်ဦးချင်းနှင့် ကိုယ်ပိုင်ဘရန်းများအတွက်ဟု ဖော်ပြသည်။",
+    "zh": "THNIC 把 .co.th 列为商业用域名，每年 ฿856 起，.in.th 则面向个人和个人品牌。",
+    "de": "THNIC führt .co.th als Domain für Geschäfte auf, ab ฿856 im Jahr, und .in.th für Einzelpersonen und persönliche Marken."
+   },
+   "src": "https://www.thnic.co.th/"
+  },
+  {
+   "t": {
+    "en": "A Bangkok agency lists what its website packages include: a domain, 3 to 5 design proposals, responsive design, unlimited disk space and bandwidth, SSL, automatic backups, security optimizations and SEO.",
+    "th": "เอเจนซี่ในกรุงเทพฯ แห่งหนึ่งระบุสิ่งที่แพ็กเกจเว็บไซต์รวมไว้ ได้แก่ โดเมน แบบเสนอ 3 ถึง 5 แบบ การออกแบบที่รองรับทุกหน้าจอ พื้นที่และแบนด์วิดท์ไม่จำกัด SSL การสำรองข้อมูลอัตโนมัติ การปรับด้านความปลอดภัย และ SEO",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခုက ၎င်း၏ ဝက်ဘ်ဆိုက်ပက်ကေ့ချ်များတွင် ပါဝင်သည်များကို ဖော်ပြသည်။ ဒိုမိန်း၊ ဒီဇိုင်းအဆိုပြုချက် 3 မှ 5 ခု၊ မျက်နှာပြင်အရွယ်အစားအားလုံးနှင့် ကိုက်ညီသော ဒီဇိုင်း၊ အကန့်အသတ်မရှိ disk နှင့် bandwidth၊ SSL၊ အလိုအလျောက် အရန်သိမ်းခြင်း၊ လုံခြုံရေးပြင်ဆင်မှုများနှင့် SEO တို့ဖြစ်သည်။",
+    "zh": "曼谷一家代理机构列出其网站套餐包含的内容：域名、3 到 5 份设计方案、自适应设计、不限磁盘空间和流量、SSL、自动备份、安全优化和 SEO。",
+    "de": "Eine Agentur in Bangkok nennt, was ihre Website-Pakete enthalten: eine Domain, 3 bis 5 Designvorschläge, responsives Design, unbegrenzten Speicherplatz und Datenverkehr, SSL, automatische Backups, Sicherheitsoptimierung und SEO."
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A static website, Bangkok agency",
+    "th": "เว็บไซต์แบบเนื้อหาคงที่ เอเจนซี่ในกรุงเทพฯ",
+    "my": "တည်ငြိမ်သော (static) ဝက်ဘ်ဆိုက်၊ ဘန်ကောက်အေဂျင်စီ",
+    "zh": "静态网站，曼谷代理机构",
+    "de": "Eine statische Website, Agentur in Bangkok"
+   },
+   "p": {
+    "en": "From ฿14,900",
+    "th": "เริ่มต้น ฿14,900",
+    "my": "฿14,900 မှစ၍",
+    "zh": "฿14,900 起",
+    "de": "Ab ฿14,900"
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "A dynamic website with a content management system or e-commerce, same agency",
+    "th": "เว็บไซต์แบบไดนามิกที่มีระบบจัดการเนื้อหาหรืออีคอมเมิร์ซ เอเจนซี่เดียวกัน",
+    "my": "အကြောင်းအရာစီမံခန့်ခွဲမှုစနစ် သို့မဟုတ် အွန်လိုင်းရောင်းဝယ်ရေးပါသော dynamic ဝက်ဘ်ဆိုက်၊ အေဂျင်စီတူ",
+    "zh": "带内容管理系统或电商的动态网站，同一家代理机构",
+    "de": "Eine dynamische Website mit Redaktionssystem oder E-Commerce, dieselbe Agentur"
+   },
+   "p": {
+    "en": "From ฿29,900",
+    "th": "เริ่มต้น ฿29,900",
+    "my": "฿29,900 မှစ၍",
+    "zh": "฿29,900 起",
+    "de": "Ab ฿29,900"
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "A .co.th domain at THNIC",
+    "th": "โดเมน .co.th ที่ THNIC",
+    "my": "THNIC ရှိ .co.th ဒိုမိန်း",
+    "zh": "THNIC 的 .co.th 域名",
+    "de": "Eine .co.th-Domain bei THNIC"
+   },
+   "p": {
+    "en": "From ฿856 a year",
+    "th": "เริ่มต้นปีละ ฿856",
+    "my": "တစ်နှစ် ฿856 မှစ၍",
+    "zh": "每年 ฿856 起",
+    "de": "Ab ฿856 im Jahr"
+   },
+   "src": "https://www.thnic.co.th/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does web design cost in Thailand?",
+    "th": "ทำเว็บไซต์ในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် ဝက်ဘ်ဒီဇိုင်း ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "在泰国做网站要多少钱？",
+    "de": "Was kostet ein Webdesign in Thailand?"
+   },
+   "a": {
+    "en": "A Bangkok agency's packages page starts static websites at ฿14,900, and dynamic websites with a content management system or e-commerce at ฿29,900. It says prices could vary from ฿14,900 to ฿500,000.",
+    "th": "หน้าแพ็กเกจของเอเจนซี่ในกรุงเทพฯ แห่งหนึ่งเริ่มเว็บไซต์แบบเนื้อหาคงที่ที่ ฿14,900 และเว็บไซต์แบบไดนามิกที่มีระบบจัดการเนื้อหาหรืออีคอมเมิร์ซที่ ฿29,900 ระบุว่าราคาอาจอยู่ระหว่าง ฿14,900 ถึง ฿500,000",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခု၏ ပက်ကေ့ချ်စာမျက်နှာတွင် static ဝက်ဘ်ဆိုက်ကို ฿14,900 မှစ၍၊ အကြောင်းအရာစီမံခန့်ခွဲမှုစနစ် သို့မဟုတ် အွန်လိုင်းရောင်းဝယ်ရေးပါသော dynamic ဝက်ဘ်ဆိုက်ကို ฿29,900 မှစ၍ ဖော်ပြသည်။ ဈေးနှုန်းသည် ฿14,900 မှ ฿500,000 အထိ ကွာနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "曼谷一家代理机构的套餐页，静态网站 ฿14,900 起，带内容管理系统或电商的动态网站 ฿29,900 起。页面称价格可能在 ฿14,900 到 ฿500,000 之间。",
+    "de": "Auf der Paketseite einer Agentur in Bangkok beginnen statische Websites bei ฿14,900 und dynamische Websites mit Redaktionssystem oder E-Commerce bei ฿29,900. Die Seite schreibt, die Preise könnten von ฿14,900 bis ฿500,000 reichen."
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Can one website be in Thai and English?",
+    "th": "เว็บไซต์เดียวทำเป็นไทยและอังกฤษได้ไหม",
+    "my": "ဝက်ဘ်ဆိုက်တစ်ခုကို ထိုင်းနှင့် အင်္ဂလိပ်ဖြင့် လုပ်နိုင်သလား။",
+    "zh": "一个网站可以同时有泰文和英文吗？",
+    "de": "Kann eine Website auf Thai und Englisch sein?"
+   },
+   "a": {
+    "en": "Yes. Google's page on multilingual sites gives each language version its own URL, tied together with hreflang. It says localized versions count as duplicates only if the main content stays untranslated.",
+    "th": "ได้ หน้าของ Google เรื่องเว็บหลายภาษาให้แต่ละภาษามี URL ของตัวเอง ผูกเข้าด้วยกันด้วย hreflang และระบุว่าเวอร์ชันแปลนับเป็นหน้าซ้ำก็ต่อเมื่อเนื้อหาหลักยังไม่ได้แปล",
+    "my": "ရသည်။ Google ၏ ဘာသာစကားစုံ ဝက်ဘ်ဆိုက်စာမျက်နှာတွင် ဘာသာစကားတစ်ခုချင်းကို ကိုယ်ပိုင် URL ပေးပြီး hreflang ဖြင့် ချိတ်ဆက်သည်။ ဘာသာပြန်ဗားရှင်းများကို အဓိကအကြောင်းအရာ မပြန်ရသေးမှသာ ထပ်နေသည်ဟု သတ်မှတ်သည်ဟု ဆိုသည်။",
+    "zh": "可以。Google 关于多语言网站的页面，让每个语言版本有自己的 URL，并用 hreflang 连起来。页面写明，本地化版本只有在主要内容仍未翻译时才算重复。",
+    "de": "Ja. Googles Seite zu mehrsprachigen Websites gibt jeder Sprachversion eine eigene URL, verbunden mit hreflang. Lokalisierte Versionen gelten dort nur als Duplikate, wenn der Hauptinhalt unübersetzt bleibt."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "q": {
+    "en": "Which domain endings do Thai businesses and individuals use?",
+    "th": "ธุรกิจและบุคคลในไทยใช้โดเมนนามสกุลอะไรได้บ้าง",
+    "my": "ထိုင်းနိုင်ငံရှိ လုပ်ငန်းများနှင့် တစ်ဦးချင်းများ ဘယ်ဒိုမိန်းအဆုံးသတ်တွေ သုံးနိုင်သလဲ။",
+    "zh": "泰国的企业和个人可以用哪些域名后缀？",
+    "de": "Welche Domain-Endungen gibt es für Geschäfte und Einzelpersonen in Thailand?"
+   },
+   "a": {
+    "en": "THNIC lists .co.th as a domain for business, starting at ฿856 a year, and .in.th for individuals and personal brands.",
+    "th": "THNIC ระบุ .co.th เป็นโดเมนสำหรับธุรกิจ เริ่มต้นปีละ ฿856 และ .in.th สำหรับบุคคลทั่วไปและแบรนด์ส่วนตัว",
+    "my": "THNIC သည် .co.th ကို စီးပွားရေးလုပ်ငန်းအတွက် ဒိုမိန်းအဖြစ် တစ်နှစ် ฿856 မှစ၍ ဖော်ပြပြီး .in.th ကို တစ်ဦးချင်းနှင့် ကိုယ်ပိုင်ဘရန်းများအတွက်ဟု ဖော်ပြသည်။",
+    "zh": "THNIC 把 .co.th 列为商业用域名，每年 ฿856 起，.in.th 则面向个人和个人品牌。",
+    "de": "THNIC führt .co.th als Domain für Geschäfte auf, ab ฿856 im Jahr, und .in.th für Einzelpersonen und persönliche Marken."
+   },
+   "src": "https://www.thnic.co.th/"
+  },
+  {
+   "q": {
+    "en": "What does a website package include?",
+    "th": "แพ็กเกจเว็บไซต์มีอะไรรวมอยู่บ้าง",
+    "my": "ဝက်ဘ်ဆိုက်ပက်ကေ့ချ်တွင် ဘာတွေ ပါသလဲ။",
+    "zh": "网站套餐里包含什么？",
+    "de": "Was enthält ein Website-Paket?"
+   },
+   "a": {
+    "en": "One Bangkok agency lists a domain, 3 to 5 design proposals, responsive design, unlimited disk space and bandwidth, SSL, automatic backups, security optimizations and SEO. Its Basic package has 10 pages and 4 business email accounts, and its Standard package has 30 pages with a content management system.",
+    "th": "เอเจนซี่ในกรุงเทพฯ แห่งหนึ่งระบุโดเมน แบบเสนอ 3 ถึง 5 แบบ การออกแบบที่รองรับทุกหน้าจอ พื้นที่และแบนด์วิดท์ไม่จำกัด SSL การสำรองข้อมูลอัตโนมัติ การปรับด้านความปลอดภัย และ SEO แพ็กเกจ Basic มี 10 หน้าและอีเมลธุรกิจ 4 บัญชี ส่วน Standard มี 30 หน้าพร้อมระบบจัดการเนื้อหา",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခုက ဒိုမိန်း၊ ဒီဇိုင်းအဆိုပြုချက် 3 မှ 5 ခု၊ မျက်နှာပြင်အရွယ်အစားအားလုံးနှင့် ကိုက်ညီသော ဒီဇိုင်း၊ အကန့်အသတ်မရှိ disk နှင့် bandwidth၊ SSL၊ အလိုအလျောက် အရန်သိမ်းခြင်း၊ လုံခြုံရေးပြင်ဆင်မှုများနှင့် SEO တို့ကို ဖော်ပြသည်။ Basic ပက်ကေ့ချ်တွင် စာမျက်နှာ 10 ခုနှင့် စီးပွားရေးအီးမေးလ်အကောင့် 4 ခု၊ Standard တွင် စာမျက်နှာ 30 ခုနှင့် အကြောင်းအရာစီမံခန့်ခွဲမှုစနစ် ပါသည်။",
+    "zh": "曼谷一家代理机构列出：域名、3 到 5 份设计方案、自适应设计、不限磁盘空间和流量、SSL、自动备份、安全优化和 SEO。Basic 套餐有 10 页和 4 个企业邮箱，Standard 套餐有 30 页并带内容管理系统。",
+    "de": "Eine Agentur in Bangkok nennt eine Domain, 3 bis 5 Designvorschläge, responsives Design, unbegrenzten Speicherplatz und Datenverkehr, SSL, automatische Backups, Sicherheitsoptimierung und SEO. Das Paket Basic hat 10 Seiten und 4 Geschäfts-E-Mail-Konten, das Paket Standard 30 Seiten mit Redaktionssystem."
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  }
+ ],
+ "related": [
+  "copy",
+  "web-mail",
+  "web-found",
+  "web-care",
+  "web-sharecard",
+  "lang-pages"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "THNIC: .th domain names",
+    "th": "THNIC: ชื่อโดเมน .th",
+    "my": "THNIC: .th ဒိုမိန်းအမည်များ",
+    "zh": "THNIC：.th 域名",
+    "de": "THNIC: .th-Domainnamen"
+   },
+   "href": "https://www.thnic.co.th/"
+  },
+  {
+   "t": {
+    "en": "Google: managing multilingual and multi-regional sites",
+    "th": "Google: การจัดการเว็บไซต์หลายภาษาและหลายภูมิภาค",
+    "my": "Google: ဘာသာစကားစုံနှင့် ဒေသစုံ ဝက်ဘ်ဆိုက်များ စီမံခြင်း",
+    "zh": "Google：管理多语言和多地区网站",
+    "de": "Google: mehrsprachige und mehrregionale Websites verwalten"
+   },
+   "href": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  }
+ ],
+ "glyphs": [
+  "laptop",
+  "translate",
+  "link"
+ ]
+}

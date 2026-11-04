@@ -1,0 +1,282 @@
+{
+ "id": "tour-3d",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People book three days in the north to see Chiang Rai's temples, Doi Tung and the Mekong in one trip, with one car and one guide.",
+  "th": "คนจองทริปสามวันในภาคเหนือเพื่อชมวัด ดอยตุง และแม่น้ำโขงในเชียงรายในทริปเดียว ด้วยรถคันเดียวและไกด์คนเดียว",
+  "my": "လူတွေက မြောက်ပိုင်း သုံးရက်ခရီးကို ချင်းရိုင်ရှိ ဘုရားကျောင်းများ၊ ဒွိုင်တုံနှင့် မဲခေါင်မြစ်ကို တစ်ခရီးတည်းတွင် ကားတစ်စီး၊ ဧည့်လမ်းညွှန်တစ်ဦးဖြင့် ကြည့်ရှုရန် ကြိုတင်မှာကြသည်။",
+  "zh": "人们订三天北部游，一趟就能看清莱的寺庙、Doi Tung 山和湄公河，全程一辆车、一位导游。",
+  "de": "Man bucht drei Tage im Norden, um Tempel in Chiang Rai, den Doi Tung und den Mekong auf einer Reise zu sehen, mit einem Auto und einem Guide."
+ },
+ "n": {
+  "de": "Drei Tage im Norden"
+ },
+ "l": {
+  "de": "Zwei Nächte, Auto, Guide, Frühstück und zwei Mittagessen, pro Person."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "Your three days are set: dates, two nights in a twin room, a car and a guide.",
+    "th": "กำหนดสามวันของคุณ ทั้งวันที่ พักห้องคู่สองคืน รถ และไกด์",
+    "my": "သင်၏ သုံးရက်ကို သတ်မှတ်ပေးသည်၊ ရက်စွဲ၊ အိပ်ယာနှစ်လုံးပါ အခန်းတွင် နှစ်ညအိပ်ခြင်း၊ ကားနှင့် ဧည့်လမ်းညွှန်။",
+    "zh": "定下三天行程：日期、两晚双人间、车和导游。",
+    "de": "Ihre drei Tage stehen: Daten, zwei Nächte im Zweibettzimmer, ein Auto und ein Guide."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "compass",
+   "t": {
+    "en": "You travel three days by car with a guide. Breakfasts and two lunches are in the price.",
+    "th": "คุณเดินทางสามวันด้วยรถพร้อมไกด์ ราคารวมอาหารเช้าและอาหารกลางวันสองมื้อ",
+    "my": "သင်သည် ကားဖြင့် ဧည့်လမ်းညွှန်နှင့်အတူ သုံးရက် ခရီးသွားသည်။ နံနက်စာနှင့် နေ့လည်စာ နှစ်နပ်ကို ဈေးထဲတွင် ထည့်ထားသည်။",
+    "zh": "您乘车、带导游走三天。早餐和两顿午餐含在价格里。",
+    "de": "Sie reisen drei Tage mit dem Auto und einem Guide. Frühstück und zwei Mittagessen sind im Preis."
+   },
+   "who": {
+    "en": "Guide",
+    "th": "ไกด์",
+    "my": "ဧည့်လမ်းညွှန်",
+    "zh": "导游",
+    "de": "Guide"
+   },
+   "time": {
+    "en": "Three days",
+    "th": "สามวัน",
+    "my": "သုံးရက်",
+    "zh": "三天",
+    "de": "Drei Tage"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Entry fees and dinners are paid at cost.",
+    "th": "ค่าเข้าและอาหารเย็นคิดตามจริง",
+    "my": "ဝင်ကြေးနှင့် ညစာကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "门票和晚餐按实际费用支付。",
+    "de": "Eintritte und Abendessen werden zum Selbstkostenpreis bezahlt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "On the way",
+    "th": "ระหว่างทาง",
+    "my": "ခရီးလမ်းတွင်",
+    "zh": "途中",
+    "de": "Unterwegs"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A tour guide in Thailand must be a Thai national and licensed under the Tourism Business and Guide Act of 2008. The law on work by foreigners reserves the job for Thai people.",
+    "th": "มัคคุเทศก์ในไทยต้องเป็นคนสัญชาติไทยและได้รับอนุญาตตามพระราชบัญญัติธุรกิจนำเที่ยวและมัคคุเทศก์ พ.ศ. 2551 กฎหมายการทำงานของคนต่างด้าวสงวนอาชีพนี้ไว้สำหรับคนไทย",
+    "my": "ထိုင်းတွင် ဧည့်လမ်းညွှန်သည် ထိုင်းနိုင်ငံသား ဖြစ်ရမည်ဖြစ်ပြီး 2008 ခုနှစ် ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန် ဥပဒေအရ ခွင့်ပြုထားရမည်။ နိုင်ငံခြားသားလုပ်ငန်းဥပဒေက ဤအလုပ်ကို ထိုင်းလူမျိုးများအတွက်သာ သီးသန့်သတ်မှတ်ထားသည်။",
+    "zh": "在泰国，导游必须是泰国国民，并依 2008 年《旅游业务和导游法》获准。外国人工作法把这个职业留给泰国人。",
+    "de": "Ein Reiseleiter in Thailand muss thailändischer Staatsangehöriger sein und nach dem Gesetz über Tourismusbetriebe und Reiseleiter von 2008 zugelassen sein. Das Gesetz über die Arbeit von Ausländern behält den Beruf Thailändern vor."
+   },
+   "src": "https://so05.tci-thaijo.org/index.php/pacific/article/view/204920"
+  },
+  {
+   "t": {
+    "en": "The Department of Tourism's website has a lookup that shows whether a tour business or guide is registered.",
+    "th": "เว็บไซต์กรมการท่องเที่ยวมีระบบค้นหาที่แสดงว่าธุรกิจนำเที่ยวหรือมัคคุเทศก์จดทะเบียนไว้หรือไม่",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန၏ ဝက်ဘ်ဆိုက်တွင် ခရီးစဉ်စီစဉ်သည့်လုပ်ငန်း သို့မဟုတ် ဧည့်လမ်းညွှန် မှတ်ပုံတင်ထားခြင်း ရှိမရှိ ပြသသည့် ရှာဖွေရေးစနစ် ပါရှိသည်။",
+    "zh": "旅游厅网站有查询工具，显示旅游企业或导游是否已登记。",
+    "de": "Die Website des Tourismusamts (Department of Tourism) hat eine Suche, die zeigt, ob ein Reiseveranstalter oder Reiseleiter registriert ist."
+   },
+   "src": "https://www.dot.go.th/"
+  },
+  {
+   "t": {
+    "en": "One Chiang Mai operator's private 3-day, 2-night tour has a licensed English-speaking guide, private transport, lunches and entry fees to the White Temple, Black House, Doi Tung, the House of Opium Museum and a Mekong boat ride. Hotel nights and other meals are not in its price.",
+    "th": "ทัวร์ส่วนตัว 3 วัน 2 คืนของผู้ให้บริการในเชียงใหม่รายหนึ่งมีไกด์ที่มีใบอนุญาตพูดภาษาอังกฤษ รถส่วนตัว อาหารกลางวัน และค่าเข้าวัดร่องขุ่น บ้านดำ ดอยตุง พิพิธภัณฑ์หอฝิ่น และล่องเรือแม่น้ำโขง ราคาไม่รวมที่พักสองคืนและอาหารมื้ออื่น",
+    "my": "ချင်းမိုင်ရှိ ခရီးစဉ်စီစဉ်သူတစ်ဦး၏ သီးသန့် 3 ရက် 2 ညခရီးတွင် လိုင်စင်ရ အင်္ဂလိပ်စကားပြော ဧည့်လမ်းညွှန်၊ သီးသန့်ကား၊ နေ့လည်စာနှင့် ဝပ်ရုံခွန်၊ ဘန်းဒမ် (Black House)၊ ဒွိုင်တုံ၊ ဘိန်းပြတိုက်နှင့် မဲခေါင်မြစ် လှေစီးခရီး ဝင်ကြေးများ ပါသည်။ ဟိုတယ် နှစ်ညနှင့် အခြားအစားအစာများ ဈေးထဲ မပါ။",
+    "zh": "清迈一家旅行社的私人 3 天 2 晚团含持证英语导游、私人用车、午餐，以及白庙、黑屋、Doi Tung、鸦片博物馆的门票和湄公河游船。价格不含酒店两晚和其他餐食。",
+    "de": "Eine private Tour über 3 Tage und 2 Nächte eines Anbieters in Chiang Mai hat einen zugelassenen englischsprachigen Guide, privaten Transport, Mittagessen und Eintritte zum Weissen Tempel, zum Schwarzen Haus, nach Doi Tung, ins Opiummuseum und eine Bootsfahrt auf dem Mekong. Hotelnächte und andere Mahlzeiten sind nicht im Preis."
+   },
+   "src": "https://olsentours.com/chiang-rai-explorer-itinerary"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Private 3-day, 2-night tour from Chiang Mai with guide, transport, lunches and entries (hotel not included)",
+    "th": "ทัวร์ส่วนตัว 3 วัน 2 คืนจากเชียงใหม่ รวมไกด์ รถ อาหารกลางวัน และค่าเข้า (ไม่รวมที่พัก)",
+    "my": "ချင်းမိုင်မှ သီးသန့် 3 ရက် 2 ညခရီး၊ ဧည့်လမ်းညွှန်၊ ကား၊ နေ့လည်စာနှင့် ဝင်ကြေးပါ (ဟိုတယ်မပါ)",
+    "zh": "清迈出发的私人 3 天 2 晚团，含导游、用车、午餐和门票（不含酒店）",
+    "de": "Private Tour über 3 Tage und 2 Nächte ab Chiang Mai mit Guide, Transport, Mittagessen und Eintritten (ohne Hotel)"
+   },
+   "p": {
+    "en": "฿6,100–11,200 a person, by group size",
+    "th": "฿6,100–11,200 ต่อคน ตามจำนวนคนในกลุ่ม",
+    "my": "တစ်ဦး ฿6,100–11,200၊ လူအုပ်အရွယ်အလိုက်",
+    "zh": "每人 ฿6,100–11,200，按人数而定",
+    "de": "฿6,100–11,200 pro Person, je nach Gruppengrösse"
+   },
+   "src": "https://olsentours.com/chiang-rai-explorer-itinerary"
+  },
+  {
+   "t": {
+    "en": "White Temple (Wat Rong Khun), foreign visitor",
+    "th": "วัดร่องขุ่น ชาวต่างชาติ",
+    "my": "ဝပ်ရုံခွန်၊ နိုင်ငံခြားသား",
+    "zh": "白庙，外国游客",
+    "de": "Weisser Tempel (Wat Rong Khun), ausländische Besucher"
+   },
+   "p": {
+    "en": "฿200",
+    "th": "฿200",
+    "my": "฿200",
+    "zh": "฿200",
+    "de": "฿200"
+   },
+   "src": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  },
+  {
+   "t": {
+    "en": "Doi Inthanon National Park, foreign adult (listed June 2022)",
+    "th": "อุทยานแห่งชาติดอยอินทนนท์ ชาวต่างชาติผู้ใหญ่ (ราคาที่ระบุเมื่อมิถุนายน 2565)",
+    "my": "ဒွိုင်အင်းသနွန် အမျိုးသားဥယျာဉ်၊ နိုင်ငံခြား လူကြီး (2022 ဇွန်လ စာရင်းအရ)",
+    "zh": "茵他侬山国家公园，外国成人（2022 年 6 月所列）",
+    "de": "Nationalpark Doi Inthanon, ausländische Erwachsene (Stand Juni 2022)"
+   },
+   "p": {
+    "en": "฿300",
+    "th": "฿300",
+    "my": "฿300",
+    "zh": "฿300",
+    "de": "฿300"
+   },
+   "src": "https://www.thainationalparks.com/doi-inthanon-national-park"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a 3-day, 2-night tour of the north cost?",
+    "th": "ทัวร์ภาคเหนือ 3 วัน 2 คืนราคาเท่าไร",
+    "my": "မြောက်ပိုင်း 3 ရက် 2 ညခရီးစဉ် ဈေး ဘယ်လောက်လဲ။",
+    "zh": "北部 3 天 2 晚的团要多少钱？",
+    "de": "Was kostet eine Tour von 3 Tagen und 2 Nächten im Norden?"
+   },
+   "a": {
+    "en": "One Chiang Mai operator prices its private 3-day, 2-night Chiang Rai tour from ฿6,100 to ฿11,200 a person, depending on group size. The price has a licensed guide, transport, lunches and entry fees.",
+    "th": "ผู้ให้บริการในเชียงใหม่รายหนึ่งตั้งราคาทัวร์ส่วนตัวเชียงราย 3 วัน 2 คืนที่ ฿6,100–11,200 ต่อคน ตามจำนวนคนในกลุ่ม ราคารวมไกด์ที่มีใบอนุญาต รถ อาหารกลางวัน และค่าเข้า",
+    "my": "ချင်းမိုင်ရှိ ခရီးစဉ်စီစဉ်သူတစ်ဦးက ၎င်း၏ ချင်းရိုင် သီးသန့် 3 ရက် 2 ညခရီးစဉ်ကို လူအုပ်အရွယ်အလိုက် တစ်ဦး ฿6,100 မှ ฿11,200 အထိ သတ်မှတ်သည်။ ဈေးထဲတွင် လိုင်စင်ရ ဧည့်လမ်းညွှန်၊ ကား၊ နေ့လည်စာနှင့် ဝင်ကြေးများ ပါသည်။",
+    "zh": "清迈一家旅行社把清莱私人 3 天 2 晚团定价为每人 ฿6,100 至 ฿11,200，按人数而定。价格含持证导游、用车、午餐和门票。",
+    "de": "Ein Anbieter in Chiang Mai verlangt für seine private Chiang-Rai-Tour über 3 Tage und 2 Nächte ฿6,100 bis ฿11,200 pro Person, je nach Gruppengrösse. Im Preis sind ein zugelassener Guide, Transport, Mittagessen und Eintritte."
+   },
+   "src": "https://olsentours.com/chiang-rai-explorer-itinerary"
+  },
+  {
+   "q": {
+    "en": "Does a tour price include the hotel?",
+    "th": "ราคาทัวร์รวมที่พักไหม",
+    "my": "ခရီးစဉ်ဈေးထဲ ဟိုတယ် ပါသလား။",
+    "zh": "团费包含酒店吗？",
+    "de": "Ist das Hotel im Tourpreis enthalten?"
+   },
+   "a": {
+    "en": "It depends on the operator. The Olsen Tours listing leaves out the two nights in Chiang Rai and lists other meals as not included.",
+    "th": "ขึ้นกับผู้ให้บริการ รายการของ Olsen Tours ไม่รวมที่พักสองคืนในเชียงรายและไม่รวมอาหารมื้ออื่น",
+    "my": "ခရီးစဉ်စီစဉ်သူပေါ် မူတည်သည်။ Olsen Tours ၏ စာရင်းတွင် ချင်းရိုင်ရှိ နှစ်ညနေထိုင်စရိတ်ကို မထည့်ထားဘဲ အခြားအစားအစာများလည်း မပါဟု ဖော်ပြထားသည်။",
+    "zh": "因旅行社而异。Olsen Tours 的行程不含清莱两晚住宿，其他餐食也不含。",
+    "de": "Das hängt vom Anbieter ab. Im Angebot von Olsen Tours sind die zwei Nächte in Chiang Rai nicht enthalten, andere Mahlzeiten ebenfalls nicht."
+   },
+   "src": "https://olsentours.com/chiang-rai-explorer-itinerary"
+  },
+  {
+   "q": {
+    "en": "Can a foreign guide lead a tour in Thailand?",
+    "th": "ไกด์ต่างชาตินำเที่ยวในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသား ဧည့်လမ်းညွှန်က ထိုင်းတွင် ခရီးစဉ်ဦးဆောင်နိုင်ပါသလား။",
+    "zh": "外国导游可以在泰国带团吗？",
+    "de": "Darf ein ausländischer Guide in Thailand Touren führen?"
+   },
+   "a": {
+    "en": "No. A tour guide must be a Thai national and permitted under the Tourism Business and Guide Act of 2008. The law on work by foreigners reserves the job for Thai people.",
+    "th": "ไม่ได้ มัคคุเทศก์ต้องเป็นคนสัญชาติไทยและได้รับอนุญาตตามกฎหมายธุรกิจนำเที่ยวและมัคคุเทศก์ พ.ศ. 2551 กฎหมายการทำงานของคนต่างด้าวสงวนอาชีพนี้ไว้สำหรับคนไทย",
+    "my": "မရပါ။ ဧည့်လမ်းညွှန်သည် ထိုင်းနိုင်ငံသား ဖြစ်ရမည်ဖြစ်ပြီး 2008 ခုနှစ် ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန် ဥပဒေအရ ခွင့်ပြုထားရမည်။ နိုင်ငံခြားသားလုပ်ငန်းဥပဒေက ဤအလုပ်ကို ထိုင်းလူမျိုးများအတွက်သာ သီးသန့်သတ်မှတ်ထားသည်။",
+    "zh": "不可以。导游必须是泰国国民，并依 2008 年《旅游业务和导游法》获准；外国人工作法把这个职业留给泰国人。",
+    "de": "Nein. Ein Reiseleiter muss thailändischer Staatsangehöriger sein und nach dem Gesetz über Tourismusbetriebe und Reiseleiter von 2008 zugelassen sein. Das Gesetz über die Arbeit von Ausländern behält den Beruf Thailändern vor."
+   },
+   "src": "https://so05.tci-thaijo.org/index.php/pacific/article/view/204920"
+  },
+  {
+   "q": {
+    "en": "What do foreigners pay to enter the White Temple?",
+    "th": "ชาวต่างชาติเข้าวัดร่องขุ่นเสียเท่าไร",
+    "my": "နိုင်ငံခြားသားများ ဝပ်ရုံခွန်ဝင်ကြေး ဘယ်လောက်ပေးရသလဲ။",
+    "zh": "外国人进白庙要多少钱？",
+    "de": "Was zahlen Ausländer für den Eintritt zum Weissen Tempel?"
+   },
+   "a": {
+    "en": "฿200 a person since 1 January 2026, up from ฿100. Thai nationals enter free.",
+    "th": "คนละ ฿200 ตั้งแต่ 1 มกราคม 2569 เดิม ฿100 คนไทยเข้าฟรี",
+    "my": "2026 ဇန်နဝါရီ 1 မှစ၍ တစ်ဦး ฿200၊ ယခင် ฿100။ ထိုင်းနိုင်ငံသားများ အခမဲ့ ဝင်ခွင့်ရှိသည်။",
+    "zh": "自 2026 年 1 月 1 日起每人 ฿200，原为 ฿100。泰国国民免费。",
+    "de": "Seit dem 1. Januar 2026 ฿200 pro Person, vorher ฿100. Thailänder treten gratis ein."
+   },
+   "src": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  }
+ ],
+ "related": [
+  "trip-plan",
+  "tour-day",
+  "car-guide",
+  "honeymoon",
+  "balloon",
+  "rentals"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Olsen Tours: the private 3-day, 2-night Chiang Rai tour from Chiang Mai",
+    "th": "Olsen Tours: ทัวร์ส่วนตัวเชียงราย 3 วัน 2 คืนจากเชียงใหม่",
+    "my": "Olsen Tours: ချင်းမိုင်မှ ချင်းရိုင် သီးသန့် 3 ရက် 2 ညခရီးစဉ်",
+    "zh": "Olsen Tours：清迈出发的清莱私人 3 天 2 晚团",
+    "de": "Olsen Tours: private Chiang-Rai-Tour ab Chiang Mai über 3 Tage und 2 Nächte"
+   },
+   "href": "https://olsentours.com/chiang-rai-explorer-itinerary"
+  },
+  {
+   "t": {
+    "en": "Department of Tourism: tour business and guide registration",
+    "th": "กรมการท่องเที่ยว: ทะเบียนธุรกิจนำเที่ยวและมัคคุเทศก์",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန: ခရီးစဉ်လုပ်ငန်းနှင့် ဧည့်လမ်းညွှန် မှတ်ပုံတင်",
+    "zh": "旅游厅：旅游企业和导游登记",
+    "de": "Department of Tourism: Registrierung von Tourismusbetrieben und Reiseleitern"
+   },
+   "href": "https://www.dot.go.th/"
+  }
+ ],
+ "glyphs": [
+  "chedi",
+  "naga",
+  "camera"
+ ]
+}

@@ -1,0 +1,936 @@
+{
+ "id": "wedding",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A wedding is a budget, a timeline, vendors and a registration at the district office. Someone else keeps them in order and runs the day.",
+  "th": "งานแต่งมีทั้งงบประมาณ กำหนดการ ผู้ให้บริการ และการจดทะเบียนที่อำเภอ บริการนี้จัดเรื่องเหล่านี้ให้เป็นระเบียบและดูแลในวันงาน",
+  "my": "မင်္ဂလာဆောင်တစ်ခုတွင် ဘတ်ဂျက်၊ အချိန်ဇယား၊ ဝန်ဆောင်သူများနှင့် အမ်ဖိုးရုံး (ခရိုင်ရုံး) တွင် လက်ထပ်မှတ်ပုံတင်ခြင်းတို့ ပါဝင်သည်။ ဤဝန်ဆောင်မှုက ၎င်းတို့ကို စနစ်တကျ စီစဉ်ပေးပြီး မင်္ဂလာနေ့ကို ကိုင်တွယ်ပေးသည်။",
+  "zh": "一场婚礼包含预算、时间表、供应商，以及到县政府（amphoe）办理结婚登记。这项服务把这些事安排有序，并负责当天的现场执行。",
+  "de": "Eine Hochzeit besteht aus Budget, Zeitplan, Dienstleistern und der Eintragung beim Standesamt (Amphoe). Dieser Service ordnet das und leitet den Hochzeitstag."
+ },
+ "n": {
+  "de": "Hochzeitsplanung"
+ },
+ "l": {
+  "de": "Komplett, teilweise oder nur der Tag; Dienstleister zu den tatsächlichen Kosten."
+ },
+ "steps": [
+  {
+   "db": "abacus",
+   "t": {
+    "en": "Budget and timeline written",
+    "th": "จัดทำงบประมาณและกำหนดการ",
+    "my": "ဘတ်ဂျက်နှင့် အချိန်ဇယား ရေးဆွဲခြင်း",
+    "zh": "制定预算和时间表",
+    "de": "Budget und Zeitplan werden erstellt"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹 与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Before anything is booked",
+    "th": "ก่อนจองสิ่งใด",
+    "my": "မည်သည့်အရာမျှ မကြိုတင်မှာယူမီ",
+    "zh": "在预订任何事项之前",
+    "de": "Bevor etwas gebucht wird"
+   }
+  },
+  {
+   "db": "home",
+   "t": {
+    "en": "The venue",
+    "th": "สถานที่จัดงาน",
+    "my": "ပွဲကျင်းပမည့်နေရာ",
+    "zh": "场地",
+    "de": "Der Ort"
+   },
+   "who": {
+    "en": "Hongdam (full planning) or you",
+    "th": "หงส์ดำ (แบบครบวงจร) หรือคุณ",
+    "my": "ဟုန်ဒမ် (အပြည့်အစုံ စီစဉ်ခြင်း) သို့မဟုတ် သင်",
+    "zh": "鸿丹（全程策划）或您自己",
+    "de": "Hongdam (Komplettplanung) oder Sie"
+   },
+   "time": {
+    "en": "After the budget",
+    "th": "หลังกำหนดงบ",
+    "my": "ဘတ်ဂျက်သတ်မှတ်ပြီးနောက်",
+    "zh": "预算确定之后",
+    "de": "Nach dem Budget"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Vendors lined up, charged at cost",
+    "th": "จัดหาผู้ให้บริการ คิดค่าบริการตามจริง",
+    "my": "ဝန်ဆောင်သူများကို စီစဉ်ပေးပြီး အမှန်ကုန်ကျစရိတ်အတိုင်း ကောက်ခံခြင်း",
+    "zh": "安排供应商，费用按实际价格结算",
+    "de": "Dienstleister werden organisiert und zu den tatsächlichen Kosten verrechnet"
+   },
+   "who": {
+    "en": "Hongdam and the vendors",
+    "th": "หงส์ดำและผู้ให้บริการ",
+    "my": "ဟုန်ဒမ် နှင့် ဝန်ဆောင်သူများ",
+    "zh": "鸿丹 与供应商",
+    "de": "Hongdam und die Dienstleister"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့မတိုင်မီ",
+    "zh": "婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "The legal marriage is registered at the district office (amphoe), in full planning",
+    "th": "จดทะเบียนสมรสที่อำเภอ (แบบครบวงจร)",
+    "my": "အမ်ဖိုးရုံး (ခရိုင်ရုံး) တွင် ဥပဒေအရ လက်ထပ်မှတ်ပုံတင်ခြင်း (အပြည့်အစုံ စီစဉ်ခြင်းတွင်)",
+    "zh": "在县政府（amphoe）办理合法结婚登记（全程策划）",
+    "de": "Die rechtliche Eheschliessung wird beim Standesamt (Amphoe) eingetragen (Komplettplanung)"
+   },
+   "who": {
+    "en": "You and the district office",
+    "th": "คุณและอำเภอ",
+    "my": "သင်နှင့် အမ်ဖိုးရုံး",
+    "zh": "您与县政府",
+    "de": "Sie und das Standesamt"
+   },
+   "time": {
+    "en": "On a date set with the office",
+    "th": "ตามวันที่นัดกับอำเภอ",
+    "my": "ရုံးနှင့် သဘောတူသတ်မှတ်သည့်နေ့",
+    "zh": "与县政府约定的日期",
+    "de": "An einem mit dem Amt vereinbarten Datum"
+   }
+  },
+  {
+   "db": "party",
+   "t": {
+    "en": "The day runs to the timeline: vendors, timings and guests",
+    "th": "ดำเนินงานตามกำหนดการ ทั้งผู้ให้บริการ เวลา และแขก",
+    "my": "မင်္ဂလာနေ့ကို အချိန်ဇယားအတိုင်း ကိုင်တွယ်ခြင်း - ဝန်ဆောင်သူ၊ အချိန်နှင့် ဧည့်သည်များ",
+    "zh": "按时间表执行当天流程：供应商、时间与宾客",
+    "de": "Der Tag läuft nach dem Zeitplan: Dienstleister, Zeiten und Gäste"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The wedding day",
+    "th": "วันงานแต่ง",
+    "my": "မင်္ဂလာဆောင်နေ့",
+    "zh": "婚礼当天",
+    "de": "Am Hochzeitstag"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "50–150",
+   "t": {
+    "en": "Guests at a medium wedding, the most common size",
+    "th": "จำนวนแขกในงานแต่งขนาดกลาง ซึ่งเป็นขนาดที่จัดกันมากที่สุด",
+    "my": "အလတ်စား မင်္ဂလာဆောင်၏ ဧည့်သည်အရေအတွက် (အများဆုံး ကျင်းပသည့် အရွယ်အစား)",
+    "zh": "中型婚礼的宾客人数，也是最常见的规模",
+    "de": "Gäste bei einer mittelgrossen Hochzeit, der häufigsten Grösse"
+   },
+   "src": "https://www.ktc.co.th/article/knowledge/wedding-budget"
+  },
+  {
+   "n": "฿350–600",
+   "t": {
+    "en": "Starting price per guest: the middle half of the 58 Chiang Mai garden venues that list one",
+    "th": "ราคาเริ่มต้นต่อแขก: ครึ่งกลางของสถานที่จัดงานในสวน 58 แห่งในเชียงใหม่ที่ระบุราคา",
+    "my": "ဧည့်သည်တစ်ဦးလျှင် စတင်စျေး - စျေးနှုန်းဖော်ပြထားသော ချင်းမိုင် ဥယျာဉ်နေရာ 58 ခု၏ အလယ်ဝက်",
+    "zh": "每位宾客的起步价：清迈58个标明价格的花园场地中位于中间一半的价格",
+    "de": "Startpreis pro Gast: die mittlere Hälfte der 58 Gartenlocations in Chiang Mai mit Preisangabe"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/venues/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88/"
+  },
+  {
+   "n": "9",
+   "t": {
+    "en": "Monks usually invited to the morning ceremony",
+    "th": "จำนวนพระสงฆ์ที่มักนิมนต์มาในพิธีเช้า",
+    "my": "မနက်ပိုင်းအခမ်းအနားသို့ များသောအားဖြင့် ပင့်ဆောင်သည့် ရဟန်းအရေအတွက်",
+    "zh": "晨间仪式通常邀请的僧人人数",
+    "de": "Mönche, die meist zur Morgenzeremonie eingeladen werden"
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "n": "0.7 / 20.9",
+   "t": {
+    "en": "Rainy days in Chiang Mai: January against August",
+    "th": "จำนวนวันที่ฝนตกในเชียงใหม่: เดือนมกราคมเทียบกับเดือนสิงหาคม",
+    "my": "ချင်းမိုင်တွင် မိုးရွာသည့်ရက်များ - ဇန်နဝါရီလနှင့် ဩဂုတ်လ နှိုင်းယှဉ်ချက်",
+    "zh": "清迈的降雨日数：1月与8月对比",
+    "de": "Regentage in Chiang Mai: Januar im Vergleich zu August"
+   },
+   "src": "https://www.chiangmai.net/weather"
+  }
+ ],
+ "toy": {
+  "h": {
+   "en": "What your wedding costs",
+   "th": "งานแต่งของคุณจะมีค่าใช้จ่ายเท่าไหร่",
+   "my": "သင့်မင်္ဂလာဆောင် ကုန်ကျစရိတ်",
+   "zh": "您的婚礼要花多少",
+   "de": "Was Ihre Hochzeit kostet"
+  },
+  "noscript": {
+   "en": "The budget builder needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณงบต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ဘတ်ဂျက်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "预算计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Budgetrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "guests": {
+    "min": 20,
+    "max": 300,
+    "step": 10,
+    "start": 100
+   },
+   "venues": [
+    {
+     "id": "home",
+     "n": {
+      "en": "Home, with a caterer",
+      "th": "ที่บ้าน ใช้ผู้รับจัดเลี้ยง",
+      "my": "အိမ်တွင် စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူနှင့်",
+      "zh": "在家，请餐饮承办商",
+      "de": "Zu Hause, mit Caterer"
+     },
+     "per_head": [
+      110,
+      200
+     ],
+     "src": "https://wiangpingcatering.com/"
+    },
+    {
+     "id": "garden",
+     "n": {
+      "en": "Garden venue",
+      "th": "สถานที่จัดงานในสวน",
+      "my": "ဥယျာဉ်ပွဲကျင်းပရာနေရာ",
+      "zh": "花园场地",
+      "de": "Gartenlocation"
+     },
+     "per_head": [
+      350,
+      600
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/venues/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88/"
+    },
+    {
+     "id": "hotel",
+     "n": {
+      "en": "Resort banquet, set menu",
+      "th": "งานเลี้ยงรีสอร์ท แบบเซ็ตเมนู",
+      "my": "ရီဆော့ စားသောက်ပွဲ၊ ဆက်မီနူး",
+      "zh": "度假村宴会，套餐",
+      "de": "Resort-Bankett, Menü"
+     },
+     "per_head": [
+      1400,
+      1800
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    }
+   ],
+   "styles": [
+    {
+     "id": "thai",
+     "n": {
+      "en": "Thai",
+      "th": "แบบไทย",
+      "my": "ထိုင်းရိုးရာ",
+      "zh": "泰式",
+      "de": "Thailändisch"
+     }
+    },
+    {
+     "id": "western",
+     "n": {
+      "en": "Western",
+      "th": "แบบตะวันตก",
+      "my": "အနောက်တိုင်း",
+      "zh": "西式",
+      "de": "Westlich"
+     }
+    },
+    {
+     "id": "both",
+     "n": {
+      "en": "Thai and Western",
+      "th": "ไทยผสมตะวันตก",
+      "my": "ထိုင်းနှင့် အနောက်တိုင်း ရောစပ်",
+      "zh": "中西合璧",
+      "de": "Thailändisch und westlich"
+     }
+    }
+   ],
+   "items": [
+    {
+     "id": "photo",
+     "n": {
+      "en": "Photographer, one day",
+      "th": "ช่างภาพ หนึ่งวัน",
+      "my": "ဓာတ်ပုံဆရာ၊ တစ်ရက်",
+      "zh": "摄影师，一天",
+      "de": "Fotograf, ein Tag"
+     },
+     "range": [
+      8000,
+      15000
+     ],
+     "styles": [
+      "thai",
+      "western",
+      "both"
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+    },
+    {
+     "id": "makeup",
+     "n": {
+      "en": "Bride's hair and makeup",
+      "th": "ทำผมและแต่งหน้าเจ้าสาว",
+      "my": "သတို့သမီး ဆံပင်နှင့် မျက်နှာအလှပြင်",
+      "zh": "新娘发型与化妆",
+      "de": "Haare und Make-up der Braut"
+     },
+     "range": [
+      4000,
+      10000
+     ],
+     "styles": [
+      "thai",
+      "western",
+      "both"
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+    },
+    {
+     "id": "attire",
+     "n": {
+      "en": "Dress and suit hire for the couple",
+      "th": "เช่าชุดเจ้าสาวและเจ้าบ่าว",
+      "my": "စုံတွဲအတွက် ဝတ်စုံငှားရမ်းခြင်း",
+      "zh": "新人礼服租赁",
+      "de": "Miete von Kleid und Anzug für das Paar"
+     },
+     "range": [
+      4900,
+      9900
+     ],
+     "styles": [
+      "thai",
+      "western",
+      "both"
+     ],
+     "src": "https://fastwork.co/user/nassyluxuryshop/clothing-rental-17420616"
+    },
+    {
+     "id": "flowers",
+     "n": {
+      "en": "Flowers and decoration",
+      "th": "ดอกไม้และการตกแต่ง",
+      "my": "ပန်းနှင့် အလှဆင်ခြင်း",
+      "zh": "鲜花与布置",
+      "de": "Blumen und Dekoration"
+     },
+     "range": [
+      4500,
+      30000
+     ],
+     "styles": [
+      "thai",
+      "western",
+      "both"
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    },
+    {
+     "id": "mc",
+     "n": {
+      "en": "MC and running order",
+      "th": "พิธีกรและทีมรันคิว",
+      "my": "အခမ်းအနားမှူးနှင့် အစီအစဉ်ညှိနှိုင်းသူ",
+      "zh": "司仪与流程执行",
+      "de": "Moderation und Ablaufleitung"
+     },
+     "range": [
+      7500,
+      16000
+     ],
+     "styles": [
+      "thai",
+      "western",
+      "both"
+     ],
+     "src": "https://fastwork.co/user/jeng.woranitha/wedding-organizer-67468377"
+    },
+    {
+     "id": "music",
+     "n": {
+      "en": "Live music",
+      "th": "ดนตรีสด",
+      "my": "တိုက်ရိုက်ဂီတ",
+      "zh": "现场音乐",
+      "de": "Live-Musik"
+     },
+     "range": [
+      3000,
+      11000
+     ],
+     "styles": [
+      "thai",
+      "western",
+      "both"
+     ],
+     "src": "https://fastwork.co/user/chophakaarunsri.co/music-band-11528436"
+    },
+    {
+     "id": "monks",
+     "n": {
+      "en": "Monks' morning ceremony and offerings",
+      "th": "พิธีสงฆ์ตอนเช้าและเครื่องถวาย",
+      "my": "ရဟန်းများ၏ မနက်ပိုင်းအခမ်းအနားနှင့် လှူဒါန်းပစ္စည်းများ",
+      "zh": "僧人晨间仪式与供养",
+      "de": "Morgenzeremonie mit Mönchen und Gaben"
+     },
+     "range": [
+      20000,
+      100000
+     ],
+     "styles": [
+      "thai",
+      "both"
+     ],
+     "src": "https://www.ktc.co.th/article/knowledge/wedding-budget-planning"
+    }
+   ],
+   "months": [
+    {
+     "m": 1,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry",
+      "th": "เย็นและแห้ง",
+      "my": "အေးပြီး ခြောက်သွေ့သည်",
+      "zh": "凉爽干燥",
+      "de": "Kühl und trocken"
+     }
+    },
+    {
+     "m": 2,
+     "kind": "dry",
+     "t": {
+      "en": "Dry, getting warmer",
+      "th": "แห้ง อุ่นขึ้น",
+      "my": "ခြောက်သွေ့ပြီး ပိုပူလာသည်",
+      "zh": "干燥，渐渐变暖",
+      "de": "Trocken, wärmer werdend"
+     }
+    },
+    {
+     "m": 3,
+     "kind": "smoke",
+     "t": {
+      "en": "Smoky skies",
+      "th": "ท้องฟ้าหมอกควัน",
+      "my": "မီးခိုးမှုန်များ ဖုံးသောကောင်းကင်",
+      "zh": "烟霾天空",
+      "de": "Verrauchter Himmel"
+     }
+    },
+    {
+     "m": 4,
+     "kind": "smoke",
+     "t": {
+      "en": "Hot and smoky",
+      "th": "ร้อนและควันมาก",
+      "my": "ပူပြီး မီးခိုးများသည်",
+      "zh": "炎热有烟霾",
+      "de": "Heiss und verraucht"
+     }
+    },
+    {
+     "m": 5,
+     "kind": "rain",
+     "t": {
+      "en": "Rains begin",
+      "th": "ฝนเริ่มมา",
+      "my": "မိုးစတင်ရွာသည်",
+      "zh": "雨季开始",
+      "de": "Der Regen beginnt"
+     }
+    },
+    {
+     "m": 6,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 7,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 8,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 9,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 10,
+     "kind": "rain",
+     "t": {
+      "en": "Rain easing",
+      "th": "ฝนเริ่มซา",
+      "my": "မိုးနည်းလာသည်",
+      "zh": "雨量减少",
+      "de": "Der Regen lässt nach"
+     }
+    },
+    {
+     "m": 11,
+     "kind": "dry",
+     "t": {
+      "en": "Cool, mostly dry",
+      "th": "เย็น ฝนน้อย",
+      "my": "အေးပြီး မိုးနည်းသည်",
+      "zh": "凉爽，雨少",
+      "de": "Kühl, meist trocken"
+     }
+    },
+    {
+     "m": 12,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry",
+      "th": "เย็นและแห้ง",
+      "my": "အေးပြီး ခြောက်သွေ့သည်",
+      "zh": "凉爽干燥",
+      "de": "Kühl und trocken"
+     }
+    }
+   ],
+   "months_src": "https://tmd.go.th/info/%E0%B8%A4%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2",
+   "smoke_src": "https://www.iqair.com/newsroom/thailand-2021-burning-season",
+   "rain_src": "https://www.chiangmai.net/weather"
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "Most Thai provinces require a foreign partner to bring an affirmation of marital status from their embassy. The British Embassy in Bangkok issues it at an appointment: up to 52 a week, usually on Tuesdays and Thursdays, with waits of up to 3 weeks in peak periods.",
+    "th": "จังหวัดส่วนใหญ่ในไทยกำหนดให้คู่สมรสชาวต่างชาติต้องมีหนังสือรับรองสถานภาพการสมรสจากสถานทูตของตน สถานทูตอังกฤษในกรุงเทพฯ ออกเอกสารนี้โดยนัดหมาย สัปดาห์ละไม่เกิน 52 คิว ส่วนใหญ่วันอังคารและวันพฤหัสบดี ช่วงที่คนใช้บริการมากต้องรอนานถึง 3 สัปดาห์",
+    "my": "ထိုင်းပြည်နယ်အများစုတွင် နိုင်ငံခြားသားဘက်က မိမိသံရုံးမှ အိမ်ထောင်ရေးအခြေအနေ အတည်ပြုစာ (affirmation) ယူလာရန် လိုအပ်သည်။ ဘန်ကောက်ရှိ ဗြိတိသျှသံရုံးက ချိန်းဆိုမှုဖြင့် ထုတ်ပေးသည်။ တစ်ပတ်လျှင် ချိန်းဆိုမှု အများဆုံး 52 ခု၊ များသောအားဖြင့် အင်္ဂါနေ့နှင့် ကြာသပတေးနေ့တွင် ဖြစ်ပြီး လူများသည့်ကာလတွင် 3 ပတ်အထိ စောင့်ရသည်။",
+    "zh": "泰国大多数府要求外籍一方提供本国使馆出具的婚姻状况声明（affirmation）。英国驻曼谷大使馆通过预约办理：每周最多52个名额，通常在周二和周四，高峰期最长要等3周。",
+    "de": "Die meisten thailändischen Provinzen verlangen vom ausländischen Partner eine Bestätigung des Zivilstands (Affirmation) der eigenen Botschaft. Die Britische Botschaft in Bangkok stellt sie nach Terminvereinbarung aus: bis zu 52 pro Woche, meist dienstags und donnerstags, in Spitzenzeiten mit Wartezeiten von bis zu 3 Wochen."
+   },
+   "src": "https://www.gov.uk/guidance/confirm-youre-free-to-get-married-in-thailand"
+  },
+  {
+   "t": {
+    "en": "The affirmation and a certified passport copy are translated into Thai by a qualified translator, then legalised by the Thai Ministry of Foreign Affairs. Legalisation offices are in Bangkok, Chiang Mai, Pattaya, Phuket and Ubon Ratchathani, and the appointment is booked online.",
+    "th": "หนังสือรับรองสถานภาพและสำเนาหนังสือเดินทางที่รับรองแล้วต้องแปลเป็นภาษาไทยโดยผู้แปลที่มีคุณสมบัติ จากนั้นนำไปรับรองนิติกรณ์ที่กระทรวงการต่างประเทศ สำนักงานรับรองนิติกรณ์มีที่กรุงเทพฯ เชียงใหม่ พัทยา ภูเก็ต และอุบลราชธานี และจองคิวออนไลน์",
+    "my": "အတည်ပြုစာနှင့် အသိအမှတ်ပြု ပတ်စပို့မိတ္တူကို အရည်အချင်းပြည့်မီသော ဘာသာပြန်သူက ထိုင်းဘာသာသို့ ပြန်ဆိုပြီး ထိုင်းနိုင်ငံ နိုင်ငံခြားရေးဝန်ကြီးဌာနက တရားဝင်အတည်ပြု (legalise) ပေးသည်။ ဘန်ကောက်၊ ချင်းမိုင်၊ ပတ္တရား၊ ဖူးခက်နှင့် ဥဘုန်ရတ်ချသာနီတို့တွင် ရုံးများရှိပြီး ချိန်းဆိုမှုကို အွန်လိုင်းမှ ယူရသည်။",
+    "zh": "声明和经认证的护照复印件须由合格译员译成泰文，再送泰国外交部认证（legalisation）。认证办公室设在曼谷、清迈、芭堤雅、普吉和乌汶，预约在线办理。",
+    "de": "Die Bestätigung und eine beglaubigte Passkopie werden von einer qualifizierten Person ins Thailändische übersetzt und danach vom thailändischen Aussenministerium legalisiert. Legalisierungsstellen gibt es in Bangkok, Chiang Mai, Pattaya, Phuket und Ubon Ratchathani; der Termin wird online gebucht."
+   },
+   "src": "https://www.gov.uk/guidance/confirm-youre-free-to-get-married-in-thailand"
+  },
+  {
+   "t": {
+    "en": "The Luxembourg embassy's page lists Thai legalisation at ฿200 a stamp in about 2 working days, or ฿400 a stamp for same-day express service.",
+    "th": "สถานทูตลักเซมเบิร์กระบุว่า การรับรองนิติกรณ์ที่กระทรวงการต่างประเทศไทยคิดตราละ ฿200 ใช้เวลาราว 2 วันทำการ ส่วนบริการด่วนที่ได้ในวันเดียวคิดตราละ ฿400",
+    "my": "လူဇင်ဘတ်သံရုံး၏ စာမျက်နှာတွင် ထိုင်းနိုင်ငံ၌ တရားဝင်အတည်ပြုခြင်းကို တံဆိပ်တစ်ခုလျှင် ฿200 ဖြင့် လုပ်ငန်းရက် 2 ရက်ခန့် ကြာကြောင်း၊ တစ်ရက်တည်း အမြန်ဆောင်ရွက်ပါက တံဆိပ်တစ်ခုလျှင် ฿400 ဖြစ်ကြောင်း ဖော်ပြထားသည်။",
+    "zh": "卢森堡大使馆的网页列出：泰国外交部认证每个印章฿200，约需2个工作日；当日加急每个印章฿400。",
+    "de": "Die Webseite der luxemburgischen Botschaft nennt für die thailändische Legalisierung ฿200 pro Stempel bei rund 2 Arbeitstagen und ฿400 pro Stempel für die Expressabfertigung am selben Tag."
+   },
+   "src": "https://bangkok.mae.lu/en/service_citoyens/marriage.html"
+  },
+  {
+   "t": {
+    "en": "The marriage is registered at the district office (amphoe or khet) in the province named on the affirmation, which is valid only for the month and province stated when applying. The registrar issues two identical Thai marriage certificates. A religious ceremony alone has no legal effect.",
+    "th": "การจดทะเบียนสมรสทำที่อำเภอหรือสำนักงานเขตในจังหวัดที่ระบุในหนังสือรับรอง ซึ่งใช้ได้เฉพาะเดือนและจังหวัดที่ระบุตอนยื่นขอ นายทะเบียนออกทะเบียนสมรสภาษาไทยที่เหมือนกัน 2 ฉบับ พิธีทางศาสนาเพียงอย่างเดียวไม่มีผลทางกฎหมาย",
+    "my": "လက်ထပ်မှတ်ပုံတင်ခြင်းကို အတည်ပြုစာပေါ်တွင် ဖော်ပြထားသော ပြည်နယ်ရှိ အမ်ဖိုးရုံး (သို့မဟုတ် ခဲရုံး) တွင် ပြုလုပ်ရသည်။ အတည်ပြုစာသည် လျှောက်ထားစဉ်က ဖော်ပြသည့် လနှင့် ပြည်နယ်အတွက်သာ သက်တမ်းရှိသည်။ မှတ်ပုံတင်အရာရှိက တူညီသော ထိုင်းလက်ထပ်လက်မှတ် 2 စောင် ထုတ်ပေးသည်။ ဘာသာရေးအခမ်းအနား တစ်ခုတည်းသည် ဥပဒေအရ အကျိုးသက်ရောက်မှု မရှိပါ။",
+    "zh": "结婚登记在申明书所列府的县政府（amphoe）或区办事处（khet）办理；申明书仅在申请时所填的月份和府内有效。登记官签发两份内容相同的泰文结婚证。仅举行宗教仪式没有法律效力。",
+    "de": "Die Ehe wird beim Standesamt (Amphoe oder Khet) in der auf der Bestätigung genannten Provinz eingetragen; die Bestätigung gilt nur für den bei der Beantragung genannten Monat und die genannte Provinz. Das Amt stellt zwei gleichlautende thailändische Heiratsurkunden aus. Eine religiöse Zeremonie allein hat keine Rechtswirkung."
+   },
+   "src": "https://www.gov.uk/guidance/confirm-youre-free-to-get-married-in-thailand"
+  },
+  {
+   "t": {
+    "en": "The Thai Meteorological Department dates summer from mid-February to mid-May, the rainy season from mid-May to mid-October and winter from mid-October to mid-February.",
+    "th": "กรมอุตุนิยมวิทยากำหนดฤดูร้อนตั้งแต่กลางเดือนกุมภาพันธ์ถึงกลางเดือนพฤษภาคม ฤดูฝนตั้งแต่กลางเดือนพฤษภาคมถึงกลางเดือนตุลาคม และฤดูหนาวตั้งแต่กลางเดือนตุลาคมถึงกลางเดือนกุมภาพันธ์",
+    "my": "ထိုင်းမိုးလေဝသဌာနက နွေရာသီကို ဖေဖော်ဝါရီလလယ်မှ မေလလယ်အထိ၊ မိုးရာသီကို မေလလယ်မှ အောက်တိုဘာလလယ်အထိ၊ ဆောင်းရာသီကို အောက်တိုဘာလလယ်မှ ဖေဖော်ဝါရီလလယ်အထိ သတ်မှတ်ထားသည်။",
+    "zh": "泰国气象厅将夏季定为2月中旬至5月中旬，雨季为5月中旬至10月中旬，冬季为10月中旬至次年2月中旬。",
+    "de": "Der thailändische Wetterdienst legt den Sommer auf Mitte Februar bis Mitte Mai, die Regenzeit auf Mitte Mai bis Mitte Oktober und den Winter auf Mitte Oktober bis Mitte Februar."
+   },
+   "src": "https://tmd.go.th/info/%E0%B8%A4%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2"
+  },
+  {
+   "t": {
+    "en": "Agricultural burning in northern Thailand runs from December to April, and the smoke often lasts until Songkran, the Thai New Year. In Chiang Mai, March was the most polluted month from 2017 to 2021; its PM2.5 averaged 83.3 μg/m³ in 2021.",
+    "th": "ภาคเหนือของไทยมีการเผาในพื้นที่เกษตรตั้งแต่เดือนธันวาคมถึงเมษายน และควันมักค้างอยู่จนถึงสงกรานต์ ในเชียงใหม่ เดือนมีนาคมเป็นเดือนที่มลพิษสูงสุดระหว่างปี 2017 ถึง 2021 โดยค่า PM2.5 เฉลี่ยในปี 2021 อยู่ที่ 83.3 μg/m³",
+    "my": "ထိုင်းမြောက်ပိုင်းတွင် စိုက်ပျိုးရေးလုပ်ငန်း မီးရှို့မှုများသည် ဒီဇင်ဘာမှ ဧပြီလအထိ ဖြစ်ပြီး မီးခိုးမှုန်များသည် ထိုင်းနှစ်သစ်ကူး သင်္ကြန်အထိ ကျန်ရှိလေ့ရှိသည်။ ချင်းမိုင်တွင် 2017 မှ 2021 အတွင်း မတ်လသည် လေထုညစ်ညမ်းမှု အမြင့်ဆုံးလ ဖြစ်ခဲ့ပြီး 2021 တွင် PM2.5 ပျမ်းမျှ 83.3 μg/m³ ရှိသည်။",
+    "zh": "泰国北部的农业焚烧从12月持续到4月，烟霾常常延续到泰国新年宋干节。清迈在2017年至2021年间污染最重的月份是3月，2021年3月PM2.5平均值为83.3 μg/m³。",
+    "de": "Im Norden Thailands dauert das Abbrennen von Feldern von Dezember bis April, und der Rauch bleibt oft bis Songkran, dem thailändischen Neujahr. In Chiang Mai war der März von 2017 bis 2021 der am stärksten belastete Monat; die PM2.5-Werte lagen im März 2021 im Mittel bei 83.3 μg/m³."
+   },
+   "src": "https://www.iqair.com/newsroom/thailand-2021-burning-season"
+  },
+  {
+   "t": {
+    "en": "A traditional Thai wedding day starts with a morning ceremony for immediate family and close friends. It includes a blessing from usually nine monks, the groom's khan maak procession to the bride's house, the dowry (sin sod) presentation and the conch-shell water pouring (rod nam sang).",
+    "th": "งานแต่งแบบไทยดั้งเดิมเริ่มด้วยพิธีเช้าสำหรับญาติสนิทและเพื่อนสนิท มีการสวดถวายพรจากพระสงฆ์ซึ่งมักนิมนต์ 9 รูป ขบวนขันหมากของเจ้าบ่าวไปบ้านเจ้าสาว การแสดงสินสอด และพิธีรดน้ำสังข์",
+    "my": "ရိုးရာထိုင်းမင်္ဂလာနေ့သည် မိသားစုနီးစပ်သူများနှင့် မိတ်ဆွေရင်းချာများအတွက် မနက်ပိုင်းအခမ်းအနားဖြင့် စတင်သည်။ အခမ်းအနားတွင် များသောအားဖြင့် ရဟန်း 9 ပါး၏ ဆုတောင်းမေတ္တာပို့ခြင်း၊ သတို့သားက သတို့သမီးအိမ်သို့ ခန်းမက် (khan maak) စီတန်းလှည့်လည်ခြင်း၊ ဆင်ဆော့ (sin sod) ပေးအပ်ပြသခြင်းနှင့် ခရုခွံဖြင့် ရေလောင်းဆုတောင်းခြင်း (rod nam sang) တို့ ပါဝင်သည်။",
+    "zh": "传统泰式婚礼当天以晨间仪式开始，邀请直系亲属和密友参加：通常有9位僧人诵经祝福，新郎一方抬着槟榔托盘列队（khan maak）前往新娘家，当面呈上聘礼（sin sod），并举行海螺浇水祝福仪式（rod nam sang）。",
+    "de": "Ein traditioneller thailändischer Hochzeitstag beginnt mit einer Morgenzeremonie für die engste Familie und enge Freunde. Dazu gehören der Segen von meist neun Mönchen, der Khan-Maak-Umzug des Bräutigams zum Haus der Braut, die Übergabe der Brautgabe (Sin Sod) und das Wassergiessen aus der Muschel (Rod Nam Sang)."
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Planner fee as a share of the budget (Thai planners)",
+    "th": "ค่าวางแผนเป็นสัดส่วนของงบ (เวดดิ้งแพลนเนอร์ในไทย)",
+    "my": "စီစဉ်သူကြေးကို ဘတ်ဂျက်၏ အချိုးဖြင့် ယူခြင်း (ထိုင်းနိုင်ငံရှိ စီစဉ်သူများ)",
+    "zh": "策划费占预算的比例（泰国策划师）",
+    "de": "Honorar der Planer als Anteil am Budget (Thailand)"
+   },
+   "p": {
+    "en": "10–15% of the wedding budget; US$8,000 to US$35,000 for full destination planning",
+    "th": "10–15% ของงบงานแต่ง; US$8,000 ถึง US$35,000 สำหรับวางแผนจัดงานแต่งปลายทางแบบครบวงจร",
+    "my": "မင်္ဂလာဆောင်ဘတ်ဂျက်၏ 10–15%၊ ခရီးစဉ်မင်္ဂလာဆောင် အပြည့်အစုံ စီစဉ်ခြင်းအတွက် US$8,000 မှ US$35,000",
+    "zh": "婚礼预算的10–15%；全程目的地婚礼策划为US$8,000至US$35,000",
+    "de": "10–15% des Hochzeitsbudgets; US$8,000 bis US$35,000 für die vollständige Planung einer Destination Wedding"
+   },
+   "src": "https://thewed.com/planners/asia/thailand"
+  },
+  {
+   "t": {
+    "en": "Ready-made wedding package from a Chiang Mai planner (the one price shown on the directory page)",
+    "th": "แพ็กเกจงานแต่งสำเร็จรูปจากแพลนเนอร์ในเชียงใหม่ (รายเดียวที่แสดงราคาในหน้าไดเรกทอรี)",
+    "my": "ချင်းမိုင်ရှိ စီစဉ်သူတစ်ဦး၏ အသင့်ပါကေ့ချ် မင်္ဂလာဆောင် (ဒိုင်ရက်ထရီစာမျက်နှာတွင် စျေးနှုန်းပြထားသည့် တစ်ဦးတည်း)",
+    "zh": "清迈策划师的现成婚礼套餐（名录页面上仅此一家标价）",
+    "de": "Fertiges Hochzeitspaket einer Planerin in Chiang Mai (der einzige Preis auf der Verzeichnisseite)"
+   },
+   "p": {
+    "en": "฿30,000 to ฿65,000",
+    "th": "฿30,000 ถึง ฿65,000",
+    "my": "฿30,000 မှ ฿65,000",
+    "zh": "฿30,000至฿65,000",
+    "de": "฿30,000 bis ฿65,000"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/planners/"
+  },
+  {
+   "t": {
+    "en": "Day coordinator, listed on Fastwork",
+    "th": "ผู้ประสานงานวันงาน ที่ลงรายการบน Fastwork",
+    "my": "Fastwork တွင် စာရင်းသွင်းထားသော မင်္ဂလာနေ့ ညှိနှိုင်းစီစဉ်သူ",
+    "zh": "Fastwork 上的婚礼当天统筹",
+    "de": "Koordination am Hochzeitstag, auf Fastwork gelistet"
+   },
+   "p": {
+    "en": "฿5,000 for a Thai morning ceremony; ฿7,000 for an evening reception; ฿10,000 for both",
+    "th": "พิธีไทยตอนเช้า ฿5,000; งานเลี้ยงตอนเย็น ฿7,000; ทั้งเช้าและเย็น ฿10,000",
+    "my": "ထိုင်းနံနက်ပိုင်းအခမ်းအနား ฿5,000၊ ညနေစားသောက်ပွဲ ฿7,000၊ နှစ်ခုလုံး ฿10,000",
+    "zh": "泰式晨间仪式฿5,000；晚宴฿7,000；早晚两场฿10,000",
+    "de": "Thailändische Morgenzeremonie ฿5,000; Abendempfang ฿7,000; beides ฿10,000"
+   },
+   "src": "https://fastwork.co/user/vivinna/wedding-organizer-46328483"
+  },
+  {
+   "t": {
+    "en": "Wedding price per guest at Chiang Mai hotels and resorts (starting prices listed by 164 venues)",
+    "th": "ราคาจัดงานแต่งต่อแขกที่โรงแรมและรีสอร์ทในเชียงใหม่ (ราคาเริ่มต้นที่ 164 แห่งระบุไว้)",
+    "my": "ချင်းမိုင် ဟိုတယ်နှင့် ရီဆော့များတွင် ဧည့်သည်တစ်ဦးလျှင် မင်္ဂလာဆောင်စျေးနှုန်း (နေရာ 164 ခုက ဖော်ပြထားသော စတင်စျေး)",
+    "zh": "清迈酒店和度假村每位宾客的婚宴价格（164处场地标明的起步价）",
+    "de": "Hochzeitspreis pro Gast in Hotels und Resorts in Chiang Mai (von 164 Orten angegebene Startpreise)"
+   },
+   "p": {
+    "en": "The middle half start at ฿350 to ฿650; the median is ฿450; the highest start is ฿1,800",
+    "th": "ครึ่งกลางเริ่มที่ ฿350 ถึง ฿650; ค่ากลางคือ ฿450; ราคาเริ่มต้นสูงสุด ฿1,800",
+    "my": "အလယ်ဝက်သည် ฿350 မှ ฿650 ဖြင့် စတင်သည်၊ အလယ်တန်း ฿450၊ စတင်စျေး အမြင့်ဆုံး ฿1,800",
+    "zh": "中间一半的起步价为฿350至฿650；中位数为฿450；最高起步价为฿1,800",
+    "de": "Die mittlere Hälfte beginnt bei ฿350 bis ฿650; der Median liegt bei ฿450; der höchste Startpreis beträgt ฿1,800"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/venues/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%A1%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88/"
+  },
+  {
+   "t": {
+    "en": "Wedding photographer, one day (Chiang Mai, 42 listings with a range)",
+    "th": "ช่างภาพงานแต่ง หนึ่งวัน (เชียงใหม่ 42 รายที่ระบุช่วงราคา)",
+    "my": "မင်္ဂလာဓာတ်ပုံဆရာ၊ တစ်ရက် (ချင်းမိုင်၊ စျေးအပိုင်းအခြားပြထားသည့် 42 ဦး)",
+    "zh": "婚礼摄影师，一天（清迈，42家标明价格区间）",
+    "de": "Hochzeitsfotograf, ein Tag (Chiang Mai, 42 Einträge mit Preisspanne)"
+   },
+   "p": {
+    "en": "Median low ฿8,000 and median high ฿15,000; the lowest range starts at ฿2,000 and the highest ends at ฿100,000",
+    "th": "ค่ากลางของราคาต่ำสุดคือ ฿8,000 และของราคาสูงสุดคือ ฿15,000; ช่วงต่ำสุดเริ่มที่ ฿2,000 และช่วงสูงสุดไปถึง ฿100,000",
+    "my": "အနိမ့်ဆုံးစျေးများ၏ အလယ်တန်း ฿8,000၊ အမြင့်ဆုံးစျေးများ၏ အလယ်တန်း ฿15,000၊ အနိမ့်ဆုံးအပိုင်းအခြားသည် ฿2,000 မှ စပြီး အမြင့်ဆုံးသည် ฿100,000 အထိ ရှိသည်",
+    "zh": "最低价的中位数为฿8,000，最高价的中位数为฿15,000；最低的区间从฿2,000起，最高的区间到฿100,000",
+    "de": "Mittlerer Tiefstpreis ฿8,000 und mittlerer Höchstpreis ฿15,000; die niedrigste Spanne beginnt bei ฿2,000, die höchste endet bei ฿100,000"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+  },
+  {
+   "t": {
+    "en": "Bride's hair and makeup (Chiang Mai listings)",
+    "th": "ทำผมและแต่งหน้าเจ้าสาว (รายการในเชียงใหม่)",
+    "my": "သတို့သမီး ဆံပင်နှင့် မျက်နှာအလှပြင် (ချင်းမိုင် စာရင်းများ)",
+    "zh": "新娘发型与化妆（清迈商家）",
+    "de": "Haare und Make-up der Braut (Einträge in Chiang Mai)"
+   },
+   "p": {
+    "en": "฿4,000 for makeup and hair together (two listings); at a third, ฿7,500 for makeup and ฿2,500 for hair",
+    "th": "฿4,000 สำหรับแต่งหน้าพร้อมทำผม (2 ราย); อีกรายคิดแต่งหน้า ฿7,500 และทำผม ฿2,500",
+    "my": "အလှပြင်နှင့် ဆံပင် တစ်ပေါင်းတည်း ฿4,000 (စာရင်း 2 ခု)၊ တတိယတစ်ခုတွင် အလှပြင် ฿7,500 နှင့် ဆံပင် ฿2,500",
+    "zh": "化妆加发型合计฿4,000（两家）；第三家化妆฿7,500、发型฿2,500",
+    "de": "฿4,000 für Make-up und Haare zusammen (zwei Einträge); bei einem dritten ฿7,500 für Make-up und ฿2,500 für Haare"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a small wedding cost?",
+    "th": "จัดงานแต่งเล็กๆ งบเท่าไหร่",
+    "my": "မင်္ဂလာဆောင်အသေးစား ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "小型婚礼要花多少钱",
+    "de": "Was kostet eine kleine Hochzeit?"
+   },
+   "a": {
+    "en": "KTC's budget guide puts a small, simple wedding at ฿100,000 to ฿300,000 and a medium wedding at a hotel at ฿500,000 to ฿1,000,000. Its line for monks, khan maak trays and the engagement ceremony is ฿20,000 to ฿100,000.",
+    "th": "คู่มืองบงานแต่งของ KTC ประเมินงานแต่งเล็กๆ เรียบง่ายที่ ฿100,000 ถึง ฿300,000 และงานขนาดกลางในโรงแรมที่ ฿500,000 ถึง ฿1,000,000 ส่วนค่าพิธีการ เช่น พระสงฆ์ พานขันหมาก และพิธีหมั้น อยู่ที่ ฿20,000 ถึง ฿100,000",
+    "my": "KTC ၏ ဘတ်ဂျက်လမ်းညွှန်တွင် ရိုးရှင်းသော မင်္ဂလာဆောင်အသေးစားကို ฿100,000 မှ ฿300,000၊ ဟိုတယ်တွင် ကျင်းပသည့် အလတ်စားကို ฿500,000 မှ ฿1,000,000 အဖြစ် ခန့်မှန်းထားသည်။ ရဟန်းများ၊ ခန်းမက်ဗန်းများနှင့် စေ့စပ်ပွဲအတွက် ကုန်ကျစရိတ်မှာ ฿20,000 မှ ฿100,000 ဖြစ်သည်။",
+    "zh": "KTC的预算指南估计：简单的小型婚礼฿100,000至฿300,000，酒店中型婚礼฿500,000至฿1,000,000。其中僧人、槟榔托盘（khan maak）和订婚仪式的费用为฿20,000至฿100,000。",
+    "de": "Der Budgetratgeber von KTC rechnet für eine kleine, einfache Hochzeit mit ฿100,000 bis ฿300,000 und für eine mittelgrosse Hochzeit im Hotel mit ฿500,000 bis ฿1,000,000. Für Mönche, Khan-Maak-Tabletts und die Verlobungszeremonie nennt er ฿20,000 bis ฿100,000."
+   },
+   "src": "https://www.ktc.co.th/article/knowledge/wedding-budget-planning"
+  },
+  {
+   "q": {
+    "en": "How much does a wedding planner charge in Thailand?",
+    "th": "ค่าจ้างเวดดิ้งแพลนเนอร์ในไทยเท่าไหร่",
+    "my": "ထိုင်းနိုင်ငံတွင် မင်္ဂလာဆောင်စီစဉ်သူ ကြေး ဘယ်လောက်ယူသလဲ",
+    "zh": "泰国婚礼策划师收费多少",
+    "de": "Was verlangt ein Hochzeitsplaner in Thailand?"
+   },
+   "a": {
+    "en": "A directory of Thai planners says studios quote 10–15% of the overall wedding budget, and full destination planning runs US$8,000 to US$35,000. Partial planning and on-site coordination are billed as fixed-fee packages.",
+    "th": "ไดเรกทอรีเวดดิ้งแพลนเนอร์ในไทยระบุว่าสตูดิโอเสนอราคา 10–15% ของงบงานแต่งทั้งหมด และการวางแผนจัดงานแต่งปลายทางแบบครบวงจรอยู่ที่ US$8,000 ถึง US$35,000 ส่วนการวางแผนบางส่วนและการประสานงานหน้างานคิดเป็นแพ็กเกจราคาคงที่",
+    "my": "ထိုင်းစီစဉ်သူများ၏ လမ်းညွှန်စာရင်းတစ်ခုတွင် စတူဒီယိုများသည် မင်္ဂလာဆောင်ဘတ်ဂျက်စုစုပေါင်း၏ 10–15% ကို ကောက်ခံကြပြီး ခရီးစဉ်မင်္ဂလာဆောင် အပြည့်အစုံ စီစဉ်ခြင်းသည် US$8,000 မှ US$35,000 အထိ ရှိသည်ဟု ဆိုသည်။ တစ်စိတ်တစ်ပိုင်း စီစဉ်ခြင်းနှင့် နေရာတွင် ညှိနှိုင်းခြင်းတို့ကို သတ်မှတ်ကြေးပါကေ့ချ်ဖြင့် ကောက်ခံသည်။",
+    "zh": "一份泰国策划师名录称，策划工作室报价为整个婚礼预算的10–15%，全程目的地婚礼策划为US$8,000至US$35,000；部分策划和现场统筹按固定费用套餐收费。",
+    "de": "Ein Verzeichnis thailändischer Planer schreibt, Studios verlangten 10–15% des gesamten Hochzeitsbudgets, die vollständige Planung einer Destination Wedding koste US$8,000 bis US$35,000. Teilplanung und Koordination vor Ort werden als Pauschalpakete abgerechnet."
+   },
+   "src": "https://thewed.com/planners/asia/thailand"
+  },
+  {
+   "q": {
+    "en": "What does a destination wedding in Thailand cost?",
+    "th": "จัดงานแต่งงานแบบเดสทิเนชันในไทยราคาเท่าไหร่",
+    "my": "ထိုင်းနိုင်ငံတွင် ခရီးစဉ်မင်္ဂလာဆောင် (destination wedding) ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在泰国办目的地婚礼要多少钱",
+    "de": "Was kostet eine Destination Wedding in Thailand?"
+   },
+   "a": {
+    "en": "Anantara Chiang Mai Resort lists a Thai wedding at ฿189,000, with chairs for up to 100 guests and two nights in a suite for the couple. A Buddhist offering for nine monks adds ฿18,000, and a sit-down banquet is ฿1,400 to ฿1,800 a person. The brochure prices are valid from April 2024.",
+    "th": "อนันตรา เชียงใหม่ รีสอร์ท ระบุงานแต่งแบบไทยที่ ฿189,000 พร้อมเก้าอี้สำหรับแขกไม่เกิน 100 คน และห้องสวีท 2 คืนสำหรับบ่าวสาว การถวายสังฆทานแด่พระ 9 รูปคิดเพิ่ม ฿18,000 และงานเลี้ยงแบบนั่งโต๊ะคิดคนละ ฿1,400 ถึง ฿1,800 ราคาในโบรชัวร์มีผลตั้งแต่เดือนเมษายน 2024",
+    "my": "Anantara Chiang Mai Resort က ထိုင်းမင်္ဂလာဆောင်ကို ฿189,000 ဖြင့် ဖော်ပြထားပြီး ဧည့်သည် 100 အထိ ထိုင်ခုံများနှင့် စုံတွဲအတွက် စွီးခန်း 2 ညပါဝင်သည်။ ရဟန်း 9 ပါးအတွက် ဗုဒ္ဓဘာသာ လှူဒါန်းမှုကို ฿18,000 ထပ်ပေါင်းပြီး ထိုင်စားပွဲ ညစာစားပွဲမှာ တစ်ဦးလျှင် ฿1,400 မှ ฿1,800 ဖြစ်သည်။ ပရိုရှာစျေးနှုန်းများသည် 2024 ခုနှစ် ဧပြီလမှ စတင်သက်ရောက်သည်။",
+    "zh": "清迈 Anantara 度假村列出的泰式婚礼价格为฿189,000，含最多100位宾客的座椅和新人两晚套房。为9位僧人准备的供养另加฿18,000，坐席宴会每人฿1,400至฿1,800。该宣传册的价格自2024年4月起有效。",
+    "de": "Das Anantara Chiang Mai Resort nennt für eine thailändische Hochzeit ฿189,000, mit Stühlen für bis zu 100 Gäste und zwei Nächten in einer Suite für das Paar. Eine buddhistische Gabe für neun Mönche kostet ฿18,000 zusätzlich, ein Bankett am Tisch ฿1,400 bis ฿1,800 pro Person. Die Preise der Broschüre gelten ab April 2024."
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  },
+  {
+   "q": {
+    "en": "How does a foreigner marry in Thailand?",
+    "th": "คนต่างชาติแต่งงานในไทยต้องทำอย่างไร",
+    "my": "နိုင်ငံခြားသားတစ်ဦး ထိုင်းတွင် မည်သို့ လက်ထပ်ရသနည်း",
+    "zh": "外国人如何在泰国结婚",
+    "de": "Wie heiratet eine ausländische Person in Thailand?"
+   },
+   "a": {
+    "en": "The foreign partner gets an affirmation of marital status from their embassy, has it translated into Thai and legalised by the Ministry of Foreign Affairs, then marries at the district office (amphoe), which issues two Thai marriage certificates.",
+    "th": "คู่สมรสชาวต่างชาติขอหนังสือรับรองสถานภาพการสมรสจากสถานทูตของตน แปลเป็นภาษาไทยและนำไปรับรองนิติกรณ์ที่กระทรวงการต่างประเทศ จากนั้นจดทะเบียนสมรสที่อำเภอ ซึ่งออกทะเบียนสมรสภาษาไทย 2 ฉบับ",
+    "my": "နိုင်ငံခြားသားဘက်က မိမိသံရုံးမှ အိမ်ထောင်ရေးအခြေအနေ အတည်ပြုစာ ယူပြီး ထိုင်းဘာသာသို့ ပြန်ဆိုကာ နိုင်ငံခြားရေးဝန်ကြီးဌာနတွင် တရားဝင်အတည်ပြုစေပြီးနောက် အမ်ဖိုးရုံး (ခရိုင်ရုံး) တွင် လက်ထပ်သည်။ ထိုရုံးက ထိုင်းလက်ထပ်လက်မှတ် 2 စောင် ထုတ်ပေးသည်။",
+    "zh": "外籍一方先向本国使馆领取婚姻状况声明，译成泰文并经外交部认证，再到县政府（amphoe）登记结婚，县政府签发两份泰文结婚证。",
+    "de": "Die ausländische Person holt bei ihrer Botschaft eine Bestätigung des Zivilstands, lässt sie ins Thailändische übersetzen und vom Aussenministerium legalisieren und heiratet dann beim Standesamt (Amphoe), das zwei thailändische Heiratsurkunden ausstellt."
+   },
+   "src": "https://www.gov.uk/guidance/confirm-youre-free-to-get-married-in-thailand"
+  },
+  {
+   "q": {
+    "en": "Can the wedding be held at a temple?",
+    "th": "จัดงานแต่งที่วัดได้ไหม",
+    "my": "ဘုန်းကြီးကျောင်း (วัด) တွင် မင်္ဂလာဆောင် ကျင်းပနိုင်သလား",
+    "zh": "婚礼可以在寺庙举行吗",
+    "de": "Kann die Hochzeit in einem Tempel stattfinden?"
+   },
+   "a": {
+    "en": "Wat Ratchabophit in Bangkok announced on 16 September 2024 that it does not host wedding ceremonies in its grounds. It allows merit-making rites only, with no marriage registration, ring exchange or water pouring.",
+    "th": "วัดราชบพิธสถิตมหาสีมารามประกาศเมื่อวันที่ 16 กันยายน 2024 ว่าไม่อนุญาตให้ประกอบพิธีมงคลสมรสในพระอาราม อนุญาตเฉพาะพิธีบำเพ็ญกุศล โดยไม่มีการจดทะเบียนสมรส การสวมแหวน หรือการรดน้ำสังข์",
+    "my": "ဘန်ကောက်ရှိ ဝပ်ရတ်ချဘိုဖစ် (Wat Ratchabophit) က 2024 ခုနှစ် စက်တင်ဘာ 16 ရက်တွင် ကျောင်းဝင်းအတွင်း လက်ထပ်မင်္ဂလာပွဲ မကျင်းပနိုင်ကြောင်း ကြေညာခဲ့သည်။ ကုသိုလ်ပြုခြင်း အခမ်းအနားများကိုသာ ခွင့်ပြုပြီး လက်ထပ်မှတ်ပုံတင်ခြင်း၊ လက်စွပ်ဆင်ခြင်း၊ ရေလောင်းခြင်းတို့ မပါရပါ။",
+    "zh": "曼谷的拉查博碧寺（Wat Ratchabophit）于2024年9月16日宣布，寺内不举办婚礼仪式，只允许做功德的法事，不得进行结婚登记、交换戒指或浇水仪式。",
+    "de": "Das Wat Ratchabophit in Bangkok hat am 16. September 2024 bekannt gegeben, dass es auf seinem Gelände keine Hochzeitszeremonien durchführt. Erlaubt sind nur Verdienstriten, ohne Eheregistrierung, Ringtausch oder Wassergiessen."
+   },
+   "src": "https://thestandard.co/wat-rajabopit-strict-no-wedding-and-prewedding/"
+  },
+  {
+   "q": {
+    "en": "What does a wedding meal at home cost?",
+    "th": "จัดงานแต่งที่บ้าน ค่าอาหารเท่าไหร่",
+    "my": "အိမ်တွင် မင်္ဂလာဆောင် စားသောက်စရိတ် ဘယ်လောက်လဲ",
+    "zh": "在家办婚宴，餐费多少",
+    "de": "Was kostet das Hochzeitsessen zu Hause?"
+   },
+   "a": {
+    "en": "A Chiang Mai caterer lists a buffet from ฿110 a person, a khantoke dinner from ฿170 and a VIP set from ฿200. A Chinese-style table starts at ฿1,800, with table and chairs.",
+    "th": "ร้านรับจัดเลี้ยงในเชียงใหม่รายหนึ่งระบุบุฟเฟต์เริ่มที่ ฿110 ต่อท่าน ขันโตกเริ่มที่ ฿170 และสำรับ VIP เริ่มที่ ฿200 ส่วนโต๊ะจีนเริ่มที่ ฿1,800 ต่อโต๊ะ รวมโต๊ะและเก้าอี้",
+    "my": "ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူတစ်ဦးက ဘူဖေးကို တစ်ဦးလျှင် ฿110 မှ၊ ခန်တုတ် (khantoke) ညစာကို ฿170 မှ၊ VIP ဆက်ကို ฿200 မှ စတင်ဖော်ပြထားသည်။ တရုတ်စတိုင်စားပွဲမှာ စားပွဲနှင့် ထိုင်ခုံပါ ฿1,800 မှ စသည်။",
+    "zh": "清迈一家餐饮承办商的起价：自助餐每人฿110，坎托克（khantoke）晚餐每人฿170，VIP套餐每人฿200；中式圆桌每桌฿1,800起，含桌椅。",
+    "de": "Ein Caterer in Chiang Mai nennt ein Buffet ab ฿110 pro Person, ein Khantoke-Essen ab ฿170 und ein VIP-Menü ab ฿200. Ein Tisch nach chinesischer Art beginnt bei ฿1,800, mit Tisch und Stühlen."
+   },
+   "src": "https://wiangpingcatering.com/"
+  },
+  {
+   "q": {
+    "en": "Which months have the fewest rainy days in Chiang Mai?",
+    "th": "เชียงใหม่เดือนไหนฝนตกน้อยที่สุด",
+    "my": "ချင်းမိုင်တွင် မည်သည့်လများတွင် မိုးရွာသည့်ရက် အနည်းဆုံးလဲ",
+    "zh": "清迈哪几个月雨天最少",
+    "de": "In welchen Monaten regnet es in Chiang Mai am seltensten?"
+   },
+   "a": {
+    "en": "In the Thai Meteorological Department's 1981–2015 averages, Chiang Mai has 0.7 rainy days in January, 0.9 in February and 1.4 in December. August has 20.9.",
+    "th": "ค่าเฉลี่ยปี 1981–2015 ของกรมอุตุนิยมวิทยา เชียงใหม่มีวันฝนตก 0.7 วันในเดือนมกราคม 0.9 วันในเดือนกุมภาพันธ์ และ 1.4 วันในเดือนธันวาคม ส่วนเดือนสิงหาคมมี 20.9 วัน",
+    "my": "ထိုင်းမိုးလေဝသဌာန၏ 1981–2015 ပျမ်းမျှတန်ဖိုးများအရ ချင်းမိုင်တွင် မိုးရွာသည့်ရက် ဇန်နဝါရီလ 0.7 ရက်၊ ဖေဖော်ဝါရီလ 0.9 ရက်၊ ဒီဇင်ဘာလ 1.4 ရက် ရှိသည်။ ဩဂုတ်လတွင် 20.9 ရက် ရှိသည်။",
+    "zh": "按泰国气象厅1981–2015年的平均值，清迈1月有0.7个雨日，2月0.9个，12月1.4个；8月则有20.9个。",
+    "de": "Nach den Durchschnittswerten 1981–2015 des thailändischen Wetterdienstes hat Chiang Mai im Januar 0.7 Regentage, im Februar 0.9 und im Dezember 1.4. Der August hat 20.9."
+   },
+   "src": "https://www.chiangmai.net/weather"
+  },
+  {
+   "q": {
+    "en": "What is sin sod?",
+    "th": "สินสอดคืออะไร",
+    "my": "ဆင်ဆော့ (sin sod) ဆိုတာ ဘာလဲ",
+    "zh": "什么是 sin sod（聘礼）",
+    "de": "Was ist Sin Sod?"
+   },
+   "a": {
+    "en": "Sin sod is the dowry or bride price. The trays are carried to the bride's house in the groom's khan maak procession and shown to her family. Today it is often symbolic, and the bride's parents may return it to the couple.",
+    "th": "สินสอดคือของหมั้นหรือค่าสินสอดทองหมั้น ถาดสินสอดถูกนำไปบ้านเจ้าสาวในขบวนขันหมากของเจ้าบ่าวและแสดงให้ครอบครัวเจ้าสาวดู ปัจจุบันมักเป็นพิธีเชิงสัญลักษณ์ และพ่อแม่เจ้าสาวอาจคืนให้บ่าวสาว",
+    "my": "ဆင်ဆော့ (sin sod) ဆိုသည်မှာ သတို့သမီးမိသားစုထံ ပေးအပ်သော စုံတွဲလက်ထပ်ကြေး ဖြစ်သည်။ ထိုဗန်းများကို သတို့သားဘက်၏ ခန်းမက် (khan maak) စီတန်းလှည့်လည်ပွဲဖြင့် သတို့သမီးအိမ်သို့ သယ်ဆောင်ပြီး သူ့မိသားစုကို ပြသသည်။ ယနေ့ခေတ်တွင် သင်္ကေတသက်သက်သာ ဖြစ်လေ့ရှိပြီး သတို့သမီး၏ မိဘများက စုံတွဲထံ ပြန်ပေးနိုင်သည်။",
+    "zh": "Sin sod 即聘礼（彩礼）。托盘由新郎一方在 khan maak 队伍中抬到新娘家，向她的家人展示。如今多为象征性的，新娘的父母也可能把聘礼退还给新人。",
+    "de": "Sin Sod ist die Brautgabe. Die Tabletts werden im Khan-Maak-Umzug des Bräutigams zum Haus der Braut getragen und ihrer Familie gezeigt. Heute ist sie oft symbolisch, und die Eltern der Braut können sie dem Paar zurückgeben."
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  }
+ ],
+ "related": [
+  "lanna-wedding",
+  "bride",
+  "date-pick",
+  "legalise",
+  "translate",
+  "tribute"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thai Ministry of Foreign Affairs: legalising documents, with online booking",
+    "th": "กรมการกงสุล กระทรวงการต่างประเทศ: การรับรองนิติกรณ์เอกสารและการจองคิวออนไลน์",
+    "my": "ထိုင်းနိုင်ငံခြားရေးဝန်ကြီးဌာန - စာရွက်စာတမ်း တရားဝင်အတည်ပြုခြင်းနှင့် အွန်လိုင်း ချိန်းဆိုခြင်း",
+    "zh": "泰国外交部：文件认证与在线预约",
+    "de": "Thailändisches Aussenministerium: Dokumente legalisieren, mit Online-Termin"
+   },
+   "href": "https://consular.mfa.go.th/th/page/legalization?menu=5d68c88b15e39c160c008184"
+  },
+  {
+   "t": {
+    "en": "British Embassy guidance: confirming you are free to marry in Thailand",
+    "th": "คำแนะนำของสถานทูตอังกฤษ: การขอหนังสือรับรองสถานภาพเพื่อแต่งงานในไทย",
+    "my": "ဗြိတိသျှသံရုံး လမ်းညွှန် - ထိုင်းတွင် လက်ထပ်ခွင့်ရှိကြောင်း အတည်ပြုခြင်း",
+    "zh": "英国使馆指南：确认在泰国可以结婚",
+    "de": "Leitfaden der Britischen Botschaft: Ehefähigkeit für eine Heirat in Thailand bestätigen"
+   },
+   "href": "https://www.gov.uk/guidance/confirm-youre-free-to-get-married-in-thailand"
+  },
+  {
+   "t": {
+    "en": "Mot Dang: a Lanna honeymoon with a su khwan rite and an optional Lanna wedding",
+    "th": "มดแดง: ฮันนีมูนล้านนา พร้อมพิธีสู่ขวัญ และงานแต่งล้านนาตามต้องการ",
+    "my": "Mot Dang - လန်နာ ဟန်နီမွန်း၊ စုခွမ်း ဓလေ့ပြုလုပ်ခြင်းနှင့် လိုလျှင် လန်နာမင်္ဂလာပွဲ",
+    "zh": "Mot Dang：兰纳蜜月，含素昆（su khwan）仪式，可加办兰纳婚礼",
+    "de": "Mot Dang: Lanna-Flitterwochen mit Su-Khwan-Ritual und auf Wunsch einer Lanna-Hochzeit"
+   },
+   "href": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai wedding venues and vendors, with starting prices",
+    "th": "สถานที่และผู้ให้บริการงานแต่งในเชียงใหม่ พร้อมราคาเริ่มต้น",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်နေရာများနှင့် ဝန်ဆောင်သူများ၊ စတင်စျေးနှုန်းများနှင့်တကွ",
+    "zh": "清迈婚礼场地与供应商及起步价",
+    "de": "Hochzeitsorte und Dienstleister in Chiang Mai mit Startpreisen"
+   },
+   "href": "https://www.centerwedding.com/chiang-mai/"
+  }
+ ],
+ "glyphs": [
+  "phuang-malai",
+  "heart",
+  "party"
+ ]
+}

@@ -1,0 +1,336 @@
+{
+ "id": "clean-air",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Chiang Mai's air is worst from about February to April, and people want a sensor that shows indoor PM2.5 and a purifier that fits the room.",
+  "th": "อากาศเชียงใหม่แย่ที่สุดราวกุมภาพันธ์ถึงเมษายน คนจึงต้องการเครื่องวัดที่แสดงค่า PM2.5 ในบ้านและเครื่องฟอกอากาศที่เหมาะกับห้อง",
+  "my": "ချင်းမိုင်၏ လေထုသည် ဖေဖော်ဝါရီမှ ဧပြီလခန့်အထိ အဆိုးဆုံးဖြစ်ပြီး လူတွေက အိမ်တွင်း PM2.5 ကို ပြသော တိုင်းကိရိယာနှင့် အခန်းနှင့် ကိုက်ညီသော လေသန့်စက်ကို လိုချင်ကြသည်။",
+  "zh": "清迈的空气在二月到四月前后最差，人们想要一台显示室内 PM2.5 的检测仪，和一台与房间大小相配的净化器。",
+  "de": "Die Luft in Chiang Mai ist etwa von Februar bis April am schlechtesten, und man will einen Sensor, der das PM2,5 in der Wohnung zeigt, und einen Luftreiniger, der zum Raum passt."
+ },
+ "n": {
+  "de": "Saubere Luft zu Hause"
+ },
+ "l": {
+  "de": "Ein PM2,5-Sensor und ein passender Luftreiniger, aufgestellt, mit Filterplan."
+ },
+ "glyphs": [
+  "cloud",
+  "home",
+  "leaf"
+ ],
+ "steps": [
+  {
+   "db": "gear",
+   "t": {
+    "en": "We size a PM2.5 sensor and a purifier for up to 3 rooms.",
+    "th": "เลือกเครื่องวัด PM2.5 และเครื่องฟอกอากาศขนาดเหมาะกับไม่เกิน 3 ห้อง",
+    "my": "အခန်း 3 ခုအထိအတွက် PM2.5 တိုင်းကိရိယာနှင့် လေသန့်စက်ကို အရွယ်အစား ချိန်ညှိပေးသည်။",
+    "zh": "为最多 3 个房间选配 PM2.5 检测仪和净化器。",
+    "de": "Wir wählen für bis zu 3 Räume einen PM2,5-Sensor und einen passenden Luftreiniger."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before buying",
+    "th": "ก่อนซื้อ",
+    "my": "မဝယ်မီ",
+    "zh": "购买之前",
+    "de": "Vor dem Kauf"
+   }
+  },
+  {
+   "db": "home",
+   "t": {
+    "en": "We place them in your home.",
+    "th": "จัดวางที่บ้านของคุณ",
+    "my": "သင့်အိမ်တွင် နေရာချပေးသည်။",
+    "zh": "在您家中摆放到位。",
+    "de": "Wir stellen sie bei Ihnen zu Hause auf."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At your home",
+    "th": "ที่บ้านของคุณ",
+    "my": "သင့်အိမ်တွင်",
+    "zh": "在您家",
+    "de": "Bei Ihnen zu Hause"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "We write a filter plan.",
+    "th": "เขียนแผนเปลี่ยนไส้กรองให้",
+    "my": "ဖီလ်တာ အစီအစဉ်ကို ရေးပေးသည်။",
+    "zh": "写一份滤网更换计划。",
+    "de": "Wir schreiben einen Filterplan."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After placing",
+    "th": "หลังจัดวาง",
+    "my": "နေရာချပြီးနောက်",
+    "zh": "摆放之后",
+    "de": "Nach dem Aufstellen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Chiang Mai's burning season runs about February to April, with March the worst month, and the rains usually arrive in May. Open burning was banned from 1 January to 31 May 2026.",
+    "th": "ฤดูหมอกควันเชียงใหม่ราวกุมภาพันธ์ถึงเมษายน มีนาคมแย่ที่สุด และฝนมักมาในเดือนพฤษภาคม ปี ค.ศ. 2026 ห้ามเผาในที่โล่งตั้งแต่ 1 มกราคมถึง 31 พฤษภาคม",
+    "my": "ချင်းမိုင်၏ မီးရှို့ရာသီသည် ဖေဖော်ဝါရီမှ ဧပြီခန့်အထိ ဖြစ်ပြီး မတ်လ အဆိုးဆုံးဖြစ်ကာ မိုးသည် မေလတွင် များသောအားဖြင့် ရောက်သည်။ 2026 ခုနှစ် ဇန်နဝါရီ 1 ရက်မှ မေလ 31 ရက်အထိ ပွင့်လင်းမီးရှို့ခြင်းကို တားမြစ်ထားသည်။",
+    "zh": "清迈的烧荒季约在二月至四月，三月最严重，雨季通常在五月到来。2026 年 1 月 1 日至 5 月 31 日禁止露天焚烧。",
+    "de": "Die Brandsaison in Chiang Mai dauert etwa von Februar bis April, der März ist der schlimmste Monat, und der Regen setzt meist im Mai ein. Offenes Verbrennen war vom 1. Januar bis 31. Mai 2026 verboten."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "t": {
+    "en": "Thailand's daily PM2.5 limit is 37.5 µg/m³ and the WHO guideline is 15 µg/m³. On the morning of 1 April 2026 the 24-hour average was 80.3 at Suthep and 110.3 at Chang Phueak in Chiang Mai city, and 286.0 at Muang Na in Chiang Dao.",
+    "th": "เกณฑ์ PM2.5 รายวันของไทยคือ 37.5 µg/m³ และแนวทางขององค์การอนามัยโลกคือ 15 µg/m³ เช้าวันที่ 1 เมษายน ค.ศ. 2026 ค่าเฉลี่ย 24 ชั่วโมงอยู่ที่ 80.3 ที่สุเทพและ 110.3 ที่ช้างเผือกในเมืองเชียงใหม่ และ 286.0 ที่เมืองนะ อำเภอเชียงดาว",
+    "my": "ထိုင်းနိုင်ငံ၏ နေ့စဉ် PM2.5 ကန့်သတ်ချက်မှာ 37.5 µg/m³ ဖြစ်ပြီး ကမ္ဘာ့ကျန်းမာရေးအဖွဲ့၏ လမ်းညွှန်ချက်မှာ 15 µg/m³ ဖြစ်သည်။ 2026 ခုနှစ် ဧပြီ 1 ရက် နံနက်တွင် ချင်းမိုင်မြို့ရှိ Suthep တွင် 24 နာရီပျမ်းမျှ 80.3၊ Chang Phueak တွင် 110.3၊ Chiang Dao ရှိ Muang Na တွင် 286.0 ဖြစ်သည်။",
+    "zh": "泰国的 PM2.5 日限值为 37.5 µg/m³，世卫组织的指导值为 15 µg/m³。2026 年 4 月 1 日早晨，24 小时均值在清迈市的素贴（Suthep）为 80.3，在 Chang Phueak 为 110.3，在清道县的 Muang Na 为 286.0。",
+    "de": "Der thailändische Tagesgrenzwert für PM2,5 liegt bei 37.5 µg/m³, der Richtwert der WHO bei 15 µg/m³. Am Morgen des 1. April 2026 lag der 24-Stunden-Mittelwert in Suthep bei 80.3 und in Chang Phueak bei 110.3, beide in der Stadt Chiang Mai, und in Muang Na in Chiang Dao bei 286.0."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "t": {
+    "en": "The EPA's sizing table asks for a CADR of 130 for a room of 200 sq ft (about 19 m²) and 195 for 300 sq ft (about 28 m²), worked out for an 8-foot ceiling.",
+    "th": "ตารางเลือกขนาดของ EPA กำหนด CADR ขั้นต่ำ 130 สำหรับห้อง 200 ตารางฟุต (ราว 19 ตร.ม.) และ 195 สำหรับ 300 ตารางฟุต (ราว 28 ตร.ม.) คำนวณสำหรับเพดานสูง 8 ฟุต",
+    "my": "EPA ၏ အရွယ်အစားဇယားတွင် စတုရန်းပေ 200 (ခန့်မှန်း 19 စတုရန်းမီတာ) အခန်းအတွက် CADR 130၊ စတုရန်းပေ 300 (ခန့်မှန်း 28 စတုရန်းမီတာ)အတွက် 195 လိုအပ်ပြီး မျက်နှာကြက်အမြင့် 8 ပေဖြင့် တွက်ထားသည်။",
+    "zh": "美国环保署（EPA）的选型表要求：200 平方英尺（约 19 平方米）的房间 CADR 为 130，300 平方英尺（约 28 平方米）为 195，按 8 英尺层高计算。",
+    "de": "Die Grössentabelle der US-Umweltbehörde EPA verlangt für einen Raum von 200 sq ft (rund 19 m²) eine CADR von 130 und für 300 sq ft (rund 28 m²) eine von 195, berechnet für eine Raumhöhe von 8 Fuss."
+   },
+   "src": "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home"
+  },
+  {
+   "t": {
+    "en": "The EPA says manufacturers typically recommend replacing filters every 60 to 90 days. It says CADR covers particles only, and for gases it points to an activated carbon or other gas-removing filter.",
+    "th": "EPA ระบุว่าผู้ผลิตมักกำหนดรอบเปลี่ยนไส้กรองไว้ทุก 60 ถึง 90 วัน และ CADR ใช้กับอนุภาคเท่านั้น ส่วนก๊าซ EPA ระบุถึงไส้กรองคาร์บอนกัมมันต์หรือไส้กรองที่ดักก๊าซได้",
+    "my": "EPA က ထုတ်လုပ်သူများက ဖီလ်တာကို 60 ရက်မှ 90 ရက်တစ်ကြိမ် လဲရန် များသောအားဖြင့် သတ်မှတ်ကြသည်ဟု ဆိုသည်။ CADR သည် အမှုန်များအတွက်သာ ဖြစ်ပြီး ဓာတ်ငွေ့အတွက်မူ အသက်သွင်းထားသော ကာဗွန် သို့မဟုတ် ဓာတ်ငွေ့စစ်ထုတ်သော ဖီလ်တာကို ညွှန်းထားသည်။",
+    "zh": "美国环保署称，厂家通常建议每 60 至 90 天更换一次滤网。CADR 只针对颗粒物，针对气体则提到活性炭或其他除气体滤网。",
+    "de": "Die EPA schreibt, Hersteller empfählen in der Regel, die Filter alle 60 bis 90 Tage zu ersetzen. Die CADR gelte nur für Partikel, für Gase verweist die EPA auf einen Aktivkohle- oder anderen Gasfilter."
+   },
+   "src": "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home"
+  },
+  {
+   "t": {
+    "en": "Live PM2.5 readings come from IQAir, from Air4Thai (the Pollution Control Department's official network, which shows a 24-hour average) and from Chiang Mai University's DustBoy sensors, which show local changes in real time.",
+    "th": "ค่า PM2.5 แบบเรียลไทม์มาจาก IQAir, Air4Thai (เครือข่ายทางการของกรมควบคุมมลพิษ ซึ่งแสดงค่าเฉลี่ย 24 ชั่วโมง) และเซนเซอร์ DustBoy ของมหาวิทยาลัยเชียงใหม่ ซึ่งแสดงการเปลี่ยนแปลงในพื้นที่แบบเรียลไทม์",
+    "my": "တိုက်ရိုက် PM2.5 တန်ဖိုးများကို IQAir၊ Air4Thai (ညစ်ညမ်းမှုထိန်းချုပ်ရေးဦးစီးဌာန၏ တရားဝင်ကွန်ရက်ဖြစ်ပြီး 24 နာရီပျမ်းမျှ ပြသည်) နှင့် ချင်းမိုင်တက္ကသိုလ်၏ DustBoy အာရုံခံကိရိယာများမှ ရနိုင်ပြီး DustBoy က ဒေသတွင်း ပြောင်းလဲမှုကို အချိန်နှင့်တစ်ပြေးညီ ပြသသည်။",
+    "zh": "实时 PM2.5 读数来自 IQAir、Air4Thai（污染控制厅的官方监测网，显示 24 小时均值）以及清迈大学的 DustBoy 传感器，后者实时显示本地变化。",
+    "de": "Live-Werte für PM2,5 liefern IQAir, Air4Thai (das offizielle Netz des Pollution Control Department, das einen 24-Stunden-Mittelwert zeigt) und die DustBoy-Sensoren der Chiang Mai University, die lokale Änderungen in Echtzeit zeigen."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Xiaomi air purifiers at HomePro, by room size: 27 m²; 42 m²; 60 m²",
+    "th": "เครื่องฟอกอากาศ Xiaomi ที่โฮมโปร ตามขนาดห้อง 27 ตร.ม. 42 ตร.ม. 60 ตร.ม.",
+    "my": "HomePro ရှိ Xiaomi လေသန့်စက်များ၊ အခန်းအရွယ်အလိုက် - 27 စတုရန်းမီတာ၊ 42 စတုရန်းမီတာ၊ 60 စတုရန်းမီတာ",
+    "zh": "HomePro 的小米净化器，按房间面积：27 平方米；42 平方米；60 平方米",
+    "de": "Xiaomi-Luftreiniger bei HomePro nach Raumgrösse: 27 m²; 42 m²; 60 m²"
+   },
+   "p": {
+    "en": "฿2,990; ฿4,990; ฿8,990",
+    "th": "฿2,990; ฿4,990; ฿8,990",
+    "my": "฿2,990; ฿4,990; ฿8,990",
+    "zh": "฿2,990；฿4,990；฿8,990",
+    "de": "฿2,990; ฿4,990; ฿8,990"
+   },
+   "src": "https://www.homepro.co.th/c/SMA03?b=xiaomi"
+  },
+  {
+   "t": {
+    "en": "Replacement filters for Xiaomi purifiers at HomePro",
+    "th": "ไส้กรองสำหรับเครื่องฟอกอากาศ Xiaomi ที่โฮมโปร",
+    "my": "HomePro ရှိ Xiaomi လေသန့်စက်အတွက် အစားထိုး ဖီလ်တာများ",
+    "zh": "HomePro 的小米净化器替换滤网",
+    "de": "Ersatzfilter für Xiaomi-Luftreiniger bei HomePro"
+   },
+   "p": {
+    "en": "฿899–1,939",
+    "th": "฿899–1,939",
+    "my": "฿899–1,939",
+    "zh": "฿899–1,939",
+    "de": "฿899–1,939"
+   },
+   "src": "https://www.homepro.co.th/c/SMA03?b=xiaomi"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai University clean air room",
+    "th": "ห้องปลอดฝุ่นของมหาวิทยาลัยเชียงใหม่",
+    "my": "ချင်းမိုင်တက္ကသိုလ်၏ လေသန့်အခန်း",
+    "zh": "清迈大学洁净空气室",
+    "de": "Clean-Air-Raum der Chiang Mai University"
+   },
+   "p": {
+    "en": "About ฿3,600 per room",
+    "th": "ราว ฿3,600 ต่อห้อง",
+    "my": "အခန်းတစ်ခုလျှင် ခန့်မှန်း ฿3,600",
+    "zh": "每间约 ฿3,600",
+    "de": "Rund ฿3,600 pro Raum"
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "t": {
+    "en": "Suan Dok Hospital's do-it-yourself purifiers",
+    "th": "เครื่องฟอกอากาศทำเองของโรงพยาบาลสวนดอก",
+    "my": "ဆွမ်းဒေါက်ဆေးရုံ၏ ကိုယ်တိုင်လုပ်ယူသော လေသန့်စက်များ",
+    "zh": "Suan Dok 医院的自制净化器",
+    "de": "Do-it-yourself-Luftreiniger des Suan-Dok-Spitals"
+   },
+   "p": {
+    "en": "฿1,200–1,500 each",
+    "th": "เครื่องละ ฿1,200–1,500",
+    "my": "တစ်လုံးလျှင် ฿1,200–1,500",
+    "zh": "每台 ฿1,200–1,500",
+    "de": "je ฿1,200–1,500"
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "When is the burning season in Chiang Mai?",
+    "th": "ฤดูหมอกควันเชียงใหม่คือช่วงไหน",
+    "my": "ချင်းမိုင်၏ မီးရှို့ရာသီသည် ဘယ်အချိန်လဲ။",
+    "zh": "清迈的烧荒季是什么时候？",
+    "de": "Wann ist die Brandsaison in Chiang Mai?"
+   },
+   "a": {
+    "en": "About February to April, with March the worst month. The rains usually arrive in May. Open burning was banned from 1 January to 31 May 2026, outside designated fuel management zones.",
+    "th": "ราวกุมภาพันธ์ถึงเมษายน โดยมีนาคมแย่ที่สุด ฝนมักมาในเดือนพฤษภาคม ปี ค.ศ. 2026 ห้ามเผาในที่โล่งตั้งแต่ 1 มกราคมถึง 31 พฤษภาคม ยกเว้นเขตจัดการเชื้อเพลิงที่กำหนด",
+    "my": "ဖေဖော်ဝါရီမှ ဧပြီခန့်အထိ ဖြစ်ပြီး မတ်လ အဆိုးဆုံးဖြစ်သည်။ မိုးသည် မေလတွင် များသောအားဖြင့် ရောက်သည်။ 2026 ခုနှစ် ဇန်နဝါရီ 1 ရက်မှ မေလ 31 ရက်အထိ သတ်မှတ်ထားသော လောင်စာစီမံခန့်ခွဲရေးဇုန်များ ပြင်ပတွင် ပွင့်လင်းမီးရှို့ခြင်းကို တားမြစ်ထားသည်။",
+    "zh": "约在二月至四月，三月最严重。雨季通常在五月到来。2026 年 1 月 1 日至 5 月 31 日，指定燃料管理区以外禁止露天焚烧。",
+    "de": "Etwa von Februar bis April, der März ist der schlimmste Monat. Der Regen setzt meist im Mai ein. Offenes Verbrennen war vom 1. Januar bis 31. Mai 2026 ausserhalb der ausgewiesenen Brennstoffzonen verboten."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "q": {
+    "en": "What is Thailand's PM2.5 limit?",
+    "th": "เกณฑ์ PM2.5 ของไทยคือเท่าไร",
+    "my": "ထိုင်းနိုင်ငံ၏ PM2.5 ကန့်သတ်ချက်မှာ ဘယ်လောက်လဲ။",
+    "zh": "泰国的 PM2.5 限值是多少？",
+    "de": "Wie hoch ist der PM2,5-Grenzwert in Thailand?"
+   },
+   "a": {
+    "en": "The daily limit is 37.5 µg/m³, and the WHO guideline is 15 µg/m³. The page quotes Berkeley Earth's rule of thumb that 22 µg/m³ over a full day is roughly one cigarette.",
+    "th": "เกณฑ์รายวันคือ 37.5 µg/m³ และแนวทางขององค์การอนามัยโลกคือ 15 µg/m³ เว็บไซต์อ้างหลักคร่าว ๆ ของ Berkeley Earth ว่า 22 µg/m³ ตลอดทั้งวันเทียบเท่าบุหรี่ราวหนึ่งมวน",
+    "my": "နေ့စဉ်ကန့်သတ်ချက်မှာ 37.5 µg/m³ ဖြစ်ပြီး ကမ္ဘာ့ကျန်းမာရေးအဖွဲ့၏ လမ်းညွှန်ချက်မှာ 15 µg/m³ ဖြစ်သည်။ တစ်နေ့လုံး 22 µg/m³ သည် စီးကရက်တစ်လိပ်ခန့်နှင့် ညီမျှသည်ဟူသော Berkeley Earth ၏ အကြမ်းဖျင်းစည်းမျဉ်းကို စာမျက်နှာက ကိုးကားထားသည်။",
+    "zh": "日限值为 37.5 µg/m³，世卫组织指导值为 15 µg/m³。页面引用 Berkeley Earth 的经验法则：一整天 22 µg/m³ 大致相当于一支烟。",
+    "de": "Der Tagesgrenzwert liegt bei 37.5 µg/m³, der Richtwert der WHO bei 15 µg/m³. Die Seite zitiert die Faustregel von Berkeley Earth, wonach 22 µg/m³ über einen ganzen Tag ungefähr einer Zigarette entsprechen."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "q": {
+    "en": "What size air purifier do I need?",
+    "th": "ต้องใช้เครื่องฟอกอากาศขนาดเท่าไร",
+    "my": "လေသန့်စက်ကို ဘယ်လောက်အရွယ်အစား လိုသလဲ။",
+    "zh": "需要多大的空气净化器？",
+    "de": "Welche Grösse Luftreiniger brauche ich?"
+   },
+   "a": {
+    "en": "The EPA's table gives the minimum CADR for a room: 65 for 100 sq ft, 130 for 200, 195 for 300, 260 for 400, 325 for 500 and 390 for 600, for an 8-foot ceiling. For a higher ceiling it points to a cleaner sized for a larger area, and for an open plan it counts the whole space.",
+    "th": "ตารางของ EPA ให้ CADR ขั้นต่ำตามขนาดห้อง ได้แก่ 65 สำหรับ 100 ตารางฟุต 130 สำหรับ 200 195 สำหรับ 300 260 สำหรับ 400 325 สำหรับ 500 และ 390 สำหรับ 600 คำนวณสำหรับเพดานสูง 8 ฟุต หากเพดานสูงกว่านั้นให้ใช้เครื่องที่เหมาะกับพื้นที่ใหญ่ขึ้น และพื้นที่เปิดโล่งให้นับทั้งพื้นที่",
+    "my": "EPA ၏ ဇယားတွင် အခန်းအလိုက် အနည်းဆုံး CADR ကို ပေးထားသည် - စတုရန်းပေ 100 အတွက် 65၊ 200 အတွက် 130၊ 300 အတွက် 195၊ 400 အတွက် 260၊ 500 အတွက် 325၊ 600 အတွက် 390 ဖြစ်ပြီး မျက်နှာကြက်အမြင့် 8 ပေဖြင့် တွက်ထားသည်။ မျက်နှာကြက်ပိုမြင့်ပါက ပိုကြီးသောနေရာအတွက် အရွယ်အစားရှိသော စက်ကို ညွှန်းပြီး ပွင့်လင်းအခင်းအကျင်းတွင် နေရာတစ်ခုလုံးကို ထည့်တွက်သည်။",
+    "zh": "美国环保署的表格给出各房间面积的最低 CADR：100 平方英尺为 65，200 为 130，300 为 195，400 为 260，500 为 325，600 为 390，按 8 英尺层高计算。层高更高时，指引用面积更大的净化器；开放式空间则按整个空间计算。",
+    "de": "Die Tabelle der EPA nennt die minimale CADR je Raum: 65 für 100 sq ft, 130 für 200, 195 für 300, 260 für 400, 325 für 500 und 390 für 600, bei einer Raumhöhe von 8 Fuss. Bei höheren Decken verweist sie auf ein Gerät für eine grössere Fläche, und bei offenen Grundrissen zählt der ganze Raum."
+   },
+   "src": "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home"
+  },
+  {
+   "q": {
+    "en": "How often do air purifier filters change?",
+    "th": "ไส้กรองเครื่องฟอกอากาศเปลี่ยนบ่อยแค่ไหน",
+    "my": "လေသန့်စက်၏ ဖီလ်တာကို ဘယ်လောက်ခဏခဏ လဲရသလဲ။",
+    "zh": "空气净化器的滤网多久换一次？",
+    "de": "Wie oft wechselt man die Filter eines Luftreinigers?"
+   },
+   "a": {
+    "en": "The EPA says manufacturers typically recommend replacement every 60 to 90 days, and sooner when a filter looks heavily soiled at replacement. It says a dirty, overloaded filter does not work well.",
+    "th": "EPA ระบุว่าผู้ผลิตมักกำหนดรอบเปลี่ยนไว้ทุก 60 ถึง 90 วัน และเปลี่ยนถี่ขึ้นหากไส้กรองดูสกปรกมากเมื่อถึงเวลาเปลี่ยน ไส้กรองที่สกปรกและอุดตันทำงานได้ไม่ดี",
+    "my": "EPA က ထုတ်လုပ်သူများက 60 ရက်မှ 90 ရက်တစ်ကြိမ် လဲရန် များသောအားဖြင့် သတ်မှတ်ကြပြီး လဲချိန်တွင် ဖီလ်တာ အလွန်ညစ်ပေနေပါက ပိုမြန်မြန် လဲသည်ဟု ဆိုသည်။ ညစ်ပေပြီး ပိတ်ဆို့နေသော ဖီလ်တာသည် ကောင်းစွာ အလုပ်မလုပ်ဟုလည်း ဆိုသည်။",
+    "zh": "美国环保署称，厂家通常建议每 60 至 90 天更换一次，换下时若滤网很脏则更换得更勤。脏而堵塞的滤网效果不好。",
+    "de": "Die EPA schreibt, Hersteller empfählen in der Regel einen Wechsel alle 60 bis 90 Tage, und früher, wenn ein Filter beim Wechsel stark verschmutzt aussieht. Ein schmutziger, überlasteter Filter arbeite nicht gut."
+   },
+   "src": "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home"
+  },
+  {
+   "q": {
+    "en": "How much does an air purifier cost?",
+    "th": "เครื่องฟอกอากาศราคาเท่าไร",
+    "my": "လေသန့်စက်တစ်လုံး ဈေးဘယ်လောက်လဲ။",
+    "zh": "空气净化器多少钱？",
+    "de": "Was kostet ein Luftreiniger?"
+   },
+   "a": {
+    "en": "At HomePro, Xiaomi purifiers are listed at ฿2,990 for a 27 m² room, ฿4,990 for 42 m², ฿6,790 for 50 m², ฿8,990 for 60 m² and ฿15,990 for 108 m². Replacement filters run from ฿899 to ฿1,939.",
+    "th": "ที่โฮมโปร เครื่องฟอกอากาศ Xiaomi แสดงราคา ฿2,990 สำหรับห้อง 27 ตร.ม. ฿4,990 สำหรับ 42 ตร.ม. ฿6,790 สำหรับ 50 ตร.ม. ฿8,990 สำหรับ 60 ตร.ม. และ ฿15,990 สำหรับ 108 ตร.ม. ไส้กรองทดแทนราคา ฿899 ถึง ฿1,939",
+    "my": "HomePro တွင် Xiaomi လေသန့်စက်များကို 27 စတုရန်းမီတာအခန်းအတွက် ฿2,990၊ 42 စတုရန်းမီတာအတွက် ฿4,990၊ 50 စတုရန်းမီတာအတွက် ฿6,790၊ 60 စတုရန်းမီတာအတွက် ฿8,990၊ 108 စတုရန်းမီတာအတွက် ฿15,990 ဟု ဖော်ပြထားသည်။ အစားထိုးဖီလ်တာများမှာ ฿899 မှ ฿1,939 အထိ ရှိသည်။",
+    "zh": "HomePro 上小米净化器的标价：27 平方米房间 ฿2,990，42 平方米 ฿4,990，50 平方米 ฿6,790，60 平方米 ฿8,990，108 平方米 ฿15,990。替换滤网为 ฿899 至 ฿1,939。",
+    "de": "Bei HomePro stehen Xiaomi-Luftreiniger mit ฿2,990 für einen Raum von 27 m², ฿4,990 für 42 m², ฿6,790 für 50 m², ฿8,990 für 60 m² und ฿15,990 für 108 m². Ersatzfilter kosten ฿899 bis ฿1,939."
+   },
+   "src": "https://www.homepro.co.th/c/SMA03?b=xiaomi"
+  }
+ ],
+ "related": [
+  "elder-care",
+  "retire",
+  "widget",
+  "trades",
+  "there",
+  "compare"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Starter Kit: Chiang Mai burning season",
+    "th": "Thailand Starter Kit: ฤดูหมอกควันเชียงใหม่",
+    "my": "Thailand Starter Kit: ချင်းမိုင် မီးရှို့ရာသီ",
+    "zh": "Thailand Starter Kit：清迈烧荒季",
+    "de": "Thailand Starter Kit: Brandsaison in Chiang Mai"
+   },
+   "href": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "t": {
+    "en": "EPA: guide to air cleaners in the home",
+    "th": "EPA: คู่มือเครื่องฟอกอากาศในบ้าน",
+    "my": "EPA: အိမ်တွင်သုံး လေသန့်စက်များ လမ်းညွှန်",
+    "zh": "美国环保署：家用空气净化器指南",
+    "de": "EPA: Leitfaden zu Luftreinigern im Haushalt"
+   },
+   "href": "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home"
+  }
+ ]
+}

@@ -1,0 +1,918 @@
+{
+ "id": "house-blessing",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A house or shop blessing has several parts: monks, an altar, a ceremony master, offerings and a meal that ends by noon. Someone else lines them up.",
+  "th": "พิธีทำบุญบ้านหรือเปิดร้านมีหลายส่วน ได้แก่ พระสงฆ์ โต๊ะหมู่ มัคนายก เครื่องไทยธรรม และอาหารที่เสร็จก่อนเที่ยง บริการนี้จัดให้เข้าที่เข้าทาง",
+  "my": "အိမ် သို့မဟုတ် ဆိုင် မင်္ဂလာပြုလုပ်ခြင်းတွင် ရဟန်းများ၊ ဘုရားစင်၊ အခမ်းအနားမှူး၊ လှူဒါန်းပစ္စည်းများနှင့် မွန်းတည့်မတိုင်မီ ပြီးရသော ဆွမ်းတို့ ပါဝင်သည်။ ဤဝန်ဆောင်မှုက ၎င်းတို့ကို စနစ်တကျ စီစဉ်ပေးသည်။",
+  "zh": "新居或店铺祈福有几个部分：僧人、佛桌、仪式主持、供养品，以及中午前结束的斋饭。这项服务把它们安排妥当。",
+  "de": "Eine Segnung für Haus oder Geschäft hat mehrere Teile: Mönche, einen Altar, einen Zeremonienleiter, Gaben und ein Essen, das vor 12 Uhr endet. Dieser Service bringt sie in Ordnung."
+ },
+ "n": {
+  "de": "Segnung für Haus oder Geschäft"
+ },
+ "l": {
+  "de": "Neun Mönche eingeladen, die Zeremonie organisiert, ein Dolmetscher."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "Day and place settled",
+    "th": "กำหนดวันและสถานที่",
+    "my": "နေ့ရက်နှင့် နေရာ သတ်မှတ်ခြင်း",
+    "zh": "确定日期和地点",
+    "de": "Tag und Ort werden festgelegt"
+   },
+   "who": {
+    "en": "You, with Hongdam",
+    "th": "คุณ ร่วมกับหงส์ดำ",
+    "my": "သင်နှင့် ဟုန်ဒမ်",
+    "zh": "您与鸿丹",
+    "de": "Sie, mit Hongdam"
+   },
+   "time": {
+    "en": "Before the monks are invited",
+    "th": "ก่อนนิมนต์พระ",
+    "my": "ရဟန်းများ မပင့်မီ",
+    "zh": "邀请僧人之前",
+    "de": "Bevor die Mönche eingeladen werden"
+   }
+  },
+  {
+   "db": "wai",
+   "t": {
+    "en": "Nine monks invited",
+    "th": "นิมนต์พระสงฆ์เก้ารูป",
+    "my": "ရဟန်း ကိုးပါး ပင့်ဆောင်ခြင်း",
+    "zh": "邀请九位僧人",
+    "de": "Neun Mönche werden eingeladen"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲမတိုင်မီ",
+    "zh": "活动当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "lotus",
+   "t": {
+    "en": "Altar, seats and ceremony master arranged",
+    "th": "จัดโต๊ะหมู่ ที่นั่ง และมัคนายก",
+    "my": "ဘုရားစင်၊ ထိုင်ခုံများနှင့် အခမ်းအနားမှူး စီစဉ်ခြင်း",
+    "zh": "安排佛桌、座位和仪式主持",
+    "de": "Altar, Sitzplätze und Zeremonienleiter werden organisiert"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲမတိုင်မီ",
+    "zh": "活动当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Monks' food, offerings, envelopes and guests' food, charged at cost",
+    "th": "ค่าภัตตาหาร เครื่องไทยธรรม ซองปัจจัย และอาหารแขก คิดตามจริง",
+    "my": "ရဟန်းများ၏ ဆွမ်း၊ လှူဒါန်းပစ္စည်း၊ ငွေထည့်စာအိတ်နှင့် ဧည့်သည်များ၏ အစားအစာကို အမှန်အတိုင်း ကောက်ခံခြင်း",
+    "zh": "僧人的斋饭、供养品、供养金信封和宾客餐食按实际费用收取",
+    "de": "Essen für die Mönche, Gaben, Umschläge und Essen für die Gäste werden zu den tatsächlichen Kosten verrechnet"
+   },
+   "who": {
+    "en": "Hongdam and the vendors",
+    "th": "หงส์ดำและผู้ให้บริการ",
+    "my": "ဟုန်ဒမ်နှင့် ဝန်ဆောင်သူများ",
+    "zh": "鸿丹与供应商",
+    "de": "Hongdam und die Dienstleister"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲမတိုင်မီ",
+    "zh": "活动当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "A translator at the ceremony",
+    "th": "ล่ามประจำพิธี",
+    "my": "အခမ်းအနားတွင် စကားပြန်",
+    "zh": "仪式现场配翻译",
+    "de": "Ein Dolmetscher bei der Zeremonie"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the day",
+    "th": "ในวันงาน",
+    "my": "ပွဲနေ့တွင်",
+    "zh": "活动当天",
+    "de": "Am Tag selbst"
+   }
+  },
+  {
+   "db": "bell",
+   "t": {
+    "en": "The ceremony: chanting, lunch for the monks, holy water",
+    "th": "พิธี: สวดมนต์ ภัตตาหารเพล น้ำพระพุทธมนต์",
+    "my": "အခမ်းအနား - ရွတ်ဆိုခြင်း၊ ရဟန်းများအတွက် နေ့လယ်ဆွမ်း၊ ပရိတ်ရေ",
+    "zh": "仪式：诵经、供僧午斋、圣水",
+    "de": "Die Zeremonie: Rezitation, Mittagessen für die Mönche, geweihtes Wasser"
+   },
+   "who": {
+    "en": "The monks, you and your guests",
+    "th": "พระสงฆ์ คุณ และแขก",
+    "my": "ရဟန်းများ၊ သင်နှင့် သင့်ဧည့်သည်များ",
+    "zh": "僧人、您和您的宾客",
+    "de": "Die Mönche, Sie und Ihre Gäste"
+   },
+   "time": {
+    "en": "In the morning; lunch ends by noon",
+    "th": "ช่วงเช้า อาหารเสร็จก่อนเที่ยง",
+    "my": "နံနက်ပိုင်း၊ ဆွမ်းသည် မွန်းတည့်မတိုင်မီ ပြီးသည်",
+    "zh": "上午；午斋在中午前结束",
+    "de": "Am Vormittag; das Essen endet vor 12 Uhr"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "5, 7 or 9",
+   "t": {
+    "en": "Monks usually invited: an odd number",
+    "th": "จำนวนพระสงฆ์ที่มักนิมนต์ เป็นเลขคี่",
+    "my": "များသောအားဖြင့် ပင့်ဆောင်သည့် ရဟန်းအရေအတွက် (မကိန်း)",
+    "zh": "通常邀请的僧人人数（奇数）",
+    "de": "Mönche, die meist eingeladen werden (ungerade Zahl)"
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "n": "12:00",
+   "t": {
+    "en": "The time the monks' lunch ends; monks do not eat after noon",
+    "th": "เวลาที่ภัตตาหารเพลของพระสงฆ์เสร็จ พระสงฆ์ไม่ฉันอาหารหลังเที่ยง",
+    "my": "ရဟန်းများ၏ နေ့လယ်ဆွမ်း ပြီးရမည့်အချိန် (မွန်းလွဲပြီးနောက် ရဟန်းများ မစားရ)",
+    "zh": "僧人午斋结束的时间；僧人过了中午不进食",
+    "de": "Uhrzeit, zu der das Mittagessen der Mönche endet; nach 12 Uhr essen sie nicht mehr"
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "n": "฿18,000",
+   "t": {
+    "en": "Starting price of one Bangkok organiser's ceremony for nine monks, with their meal",
+    "th": "ราคาเริ่มต้นของผู้จัดงานรายหนึ่งในกรุงเทพฯ สำหรับพิธีสงฆ์เก้ารูปพร้อมภัตตาหาร",
+    "my": "ဘန်ကောက်ရှိ စီစဉ်သူတစ်ဦး၏ ရဟန်း ကိုးပါးအတွက် ဆွမ်းပါ အခမ်းအနား စတင်စျေး",
+    "zh": "曼谷一家策划者为九位僧人举办仪式（含斋饭）的起步价",
+    "de": "Startpreis eines Veranstalters in Bangkok für die Zeremonie mit neun Mönchen samt Essen"
+   },
+   "src": "https://fastwork.co/user/boonumpar/housewarming-26165471"
+  },
+  {
+   "n": "5,489",
+   "t": {
+    "en": "Threads on Pantip that mention inviting monks (นิมนต์พระ)",
+    "th": "กระทู้ใน Pantip ที่พูดถึงการนิมนต์พระ",
+    "my": "ရဟန်းပင့်ခြင်း (นิมนต์พระ) ကို ဖော်ပြသော Pantip ခေါင်းစဉ်များ",
+    "zh": "Pantip 上提到邀请僧人（นิมนต์พระ）的帖子",
+    "de": "Beiträge auf Pantip, die das Einladen von Mönchen (นิมนต์พระ) erwähnen"
+   },
+   "src": "https://pantip.com/search?q=%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B0"
+  }
+ ],
+ "toy": {
+  "kind": "event",
+  "h": {
+   "en": "What a blessing costs",
+   "th": "ทำบุญบ้านหรือเปิดร้าน ค่าใช้จ่ายเท่าไหร่",
+   "my": "မင်္ဂလာပွဲ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+   "zh": "祈福仪式要花多少",
+   "de": "Was eine Segnung kostet"
+  },
+  "noscript": {
+   "en": "The cost builder needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณค่าใช้จ่ายต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ကုန်ကျစရိတ်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "费用计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Kostenrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "guests": {
+    "min": 10,
+    "max": 150,
+    "step": 10,
+    "start": 30
+   },
+   "venues": [
+    {
+     "id": "home",
+     "n": {
+      "en": "At home, Thai set from a caterer",
+      "th": "ที่บ้าน ชุดอาหารไทยจากผู้รับจัดเลี้ยง",
+      "my": "အိမ်တွင် စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူ၏ ထိုင်းအစုံ",
+      "zh": "在家，请餐饮承办商送泰式套餐",
+      "de": "Zu Hause, Thai-Menü vom Caterer"
+     },
+     "per_head": [
+      110,
+      200
+     ],
+     "src": "https://wiangpingcatering.com/"
+    },
+    {
+     "id": "shop",
+     "n": {
+      "en": "At the shop, boxed meals",
+      "th": "ที่ร้าน ข้าวกล่อง",
+      "my": "ဆိုင်တွင် ထမင်းဘူး",
+      "zh": "在店里，盒饭",
+      "de": "Im Geschäft, Essensboxen"
+     },
+     "per_head": [
+      60,
+      130
+     ],
+     "src": "https://wiangpingcatering.com/2021/08/16/%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%81%e0%b8%a5%e0%b9%88%e0%b8%ad%e0%b8%87/"
+    },
+    {
+     "id": "restaurant",
+     "n": {
+      "en": "Buffet at a restaurant afterwards",
+      "th": "บุฟเฟต์ที่ร้านอาหารหลังพิธี",
+      "my": "အခမ်းအနားပြီးနောက် စားသောက်ဆိုင်တွင် ဘူဖေး",
+      "zh": "仪式后在餐厅吃自助餐",
+      "de": "Buffet danach in einem Restaurant"
+     },
+     "per_head": [
+      300,
+      900
+     ],
+     "src": "https://www.setandservecatering.com/blog/monk_ceremony_steps.html"
+    }
+   ],
+   "styles": [
+    {
+     "id": "nine",
+     "n": {
+      "en": "Nine monks, ceremony and meal",
+      "th": "พระเก้ารูป พิธีและภัตตาหาร",
+      "my": "ရဟန်း ကိုးပါး၊ အခမ်းအနားနှင့် ဆွမ်း",
+      "zh": "九位僧人，仪式加斋饭",
+      "de": "Neun Mönche, Zeremonie und Essen"
+     }
+    },
+    {
+     "id": "five",
+     "n": {
+      "en": "Five monks, ceremony and meal",
+      "th": "พระห้ารูป พิธีและภัตตาหาร",
+      "my": "ရဟန်း ငါးပါး၊ အခမ်းအနားနှင့် ဆွမ်း",
+      "zh": "五位僧人，仪式加斋饭",
+      "de": "Fünf Mönche, Zeremonie und Essen"
+     }
+    },
+    {
+     "id": "rite",
+     "n": {
+      "en": "Nine monks, ceremony only, no meal",
+      "th": "พระเก้ารูป เฉพาะพิธี ไม่มีอาหาร",
+      "my": "ရဟန်း ကိုးပါး၊ အခမ်းအနားသာ၊ ဆွမ်းမပါ",
+      "zh": "九位僧人，仅仪式，不含餐食",
+      "de": "Neun Mönche, nur die Zeremonie, ohne Essen"
+     },
+     "nofood": true
+    }
+   ],
+   "items": [
+    {
+     "id": "monks9",
+     "n": {
+      "en": "Meal for nine monks, boxed or khantoke tray",
+      "th": "ภัตตาหารพระเก้ารูป แบบกล่องหรือขันโตก",
+      "my": "ရဟန်း ကိုးပါးအတွက် ဆွမ်း၊ ဘူး သို့မဟုတ် ခန်တုပ်ဗန်း",
+      "zh": "九位僧人的斋饭，盒装或康托克托盘",
+      "de": "Essen für neun Mönche, Box oder Khantoke-Tablett"
+     },
+     "range": [
+      1170,
+      3330
+     ],
+     "styles": [
+      "nine"
+     ],
+     "src": "https://wiangpingcatering.com/2021/08/16/%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%aa%e0%b8%b3%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%9a%e0%b8%b8%e0%b8%84%e0%b8%84%e0%b8%a5-%e0%b8%9e%e0%b8%a3%e0%b8%b0%e0%b8%aa%e0%b8%87%e0%b8%86%e0%b9%8c/"
+    },
+    {
+     "id": "monks5",
+     "n": {
+      "en": "Meal for five monks, boxed or khantoke tray",
+      "th": "ภัตตาหารพระห้ารูป แบบกล่องหรือขันโตก",
+      "my": "ရဟန်း ငါးပါးအတွက် ဆွမ်း၊ ဘူး သို့မဟုတ် ခန်တုပ်ဗန်း",
+      "zh": "五位僧人的斋饭，盒装或康托克托盘",
+      "de": "Essen für fünf Mönche, Box oder Khantoke-Tablett"
+     },
+     "range": [
+      650,
+      1850
+     ],
+     "styles": [
+      "five"
+     ],
+     "src": "https://wiangpingcatering.com/2021/08/16/%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%aa%e0%b8%b3%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%9a%e0%b8%b8%e0%b8%84%e0%b8%84%e0%b8%a5-%e0%b8%9e%e0%b8%a3%e0%b8%b0%e0%b8%aa%e0%b8%87%e0%b8%86%e0%b9%8c/"
+    },
+    {
+     "id": "offer",
+     "n": {
+      "en": "Offerings: sangkhathan set and the monks' envelope",
+      "th": "เครื่องไทยธรรม: ชุดสังฆทานและซองปัจจัย",
+      "my": "လှူဒါန်းပစ္စည်း - သင်္ဃဒါန်အစုံနှင့် ရဟန်းများအတွက် ငွေထည့်စာအိတ်",
+      "zh": "供养品：僧伽布施套装和供养金信封",
+      "de": "Gaben: Sangkhathan-Set und Umschlag für die Mönche"
+     },
+     "range": [
+      1000,
+      5000
+     ],
+     "styles": [
+      "nine",
+      "five",
+      "rite"
+     ],
+     "src": "https://www.setandservecatering.com/blog/monk_ceremony_steps.html"
+    },
+    {
+     "id": "altar",
+     "n": {
+      "en": "Altar table, flowers and decoration",
+      "th": "โต๊ะหมู่ ดอกไม้ และการตกแต่ง",
+      "my": "ဘုရားစင်၊ ပန်းနှင့် အလှဆင်ခြင်း",
+      "zh": "佛桌、鲜花与布置",
+      "de": "Altar, Blumen und Dekoration"
+     },
+     "range": [
+      1000,
+      8000
+     ],
+     "styles": [
+      "nine",
+      "five",
+      "rite"
+     ],
+     "src": "https://www.setandservecatering.com/blog/monk_ceremony_steps.html"
+    },
+    {
+     "id": "tent",
+     "n": {
+      "en": "Tent and one table with 10 chairs, rented",
+      "th": "เต็นท์และโต๊ะพร้อมเก้าอี้ 10 ตัว แบบเช่า",
+      "my": "ငှားရမ်းသော တဲနှင့် ထိုင်ခုံ 10 ခုပါ စားပွဲတစ်လုံး",
+      "zh": "租用帐篷和一张配10把椅子的圆桌",
+      "de": "Zelt und ein Tisch mit 10 Stühlen, gemietet"
+     },
+     "range": [
+      900,
+      2000
+     ],
+     "styles": [
+      "nine",
+      "five"
+     ],
+     "src": "https://wiangpingcatering.com/2021/08/16/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%82%e0%b8%95%e0%b9%8a%e0%b8%b0-%e0%b9%80%e0%b8%81%e0%b9%89%e0%b8%b2%e0%b8%ad%e0%b8%b5%e0%b9%89-%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%99%e0%b8%97%e0%b9%8c/"
+    }
+   ],
+   "months": [
+    {
+     "m": 1,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry",
+      "th": "เย็นและแห้ง",
+      "my": "အေးပြီး ခြောက်သွေ့သည်",
+      "zh": "凉爽干燥",
+      "de": "Kühl und trocken"
+     }
+    },
+    {
+     "m": 2,
+     "kind": "smoke",
+     "t": {
+      "en": "Dry; the smoke season starts",
+      "th": "แห้ง ฤดูหมอกควันเริ่มต้น",
+      "my": "ခြောက်သွေ့သည်၊ မီးခိုးရာသီ စတင်သည်",
+      "zh": "干燥；烟霾季开始",
+      "de": "Trocken; die Rauchsaison beginnt"
+     }
+    },
+    {
+     "m": 3,
+     "kind": "smoke",
+     "t": {
+      "en": "Smoky skies; the worst month",
+      "th": "ท้องฟ้าหมอกควัน เป็นเดือนที่หนักที่สุด",
+      "my": "မီးခိုးမှုန်များ ဖုံးသောကောင်းကင်၊ အဆိုးဆုံးလ",
+      "zh": "烟霾天空；最严重的月份",
+      "de": "Verrauchter Himmel; der schlimmste Monat"
+     }
+    },
+    {
+     "m": 4,
+     "kind": "smoke",
+     "t": {
+      "en": "Hot and smoky",
+      "th": "ร้อนและควันมาก",
+      "my": "ပူပြီး မီးခိုးများသည်",
+      "zh": "炎热有烟霾",
+      "de": "Heiss und verraucht"
+     }
+    },
+    {
+     "m": 5,
+     "kind": "rain",
+     "t": {
+      "en": "Rains begin",
+      "th": "ฝนเริ่มมา",
+      "my": "မိုးစတင်ရွာသည်",
+      "zh": "雨季开始",
+      "de": "Der Regen beginnt"
+     }
+    },
+    {
+     "m": 6,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 7,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 8,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 9,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days",
+      "th": "ฝนตกบ่อย",
+      "my": "မိုးရွာသည့်ရက် များသည်",
+      "zh": "多数日子有雨",
+      "de": "An den meisten Tagen Regen"
+     }
+    },
+    {
+     "m": 10,
+     "kind": "rain",
+     "t": {
+      "en": "Rain easing",
+      "th": "ฝนเริ่มซา",
+      "my": "မိုးနည်းလာသည်",
+      "zh": "雨量减少",
+      "de": "Der Regen lässt nach"
+     }
+    },
+    {
+     "m": 11,
+     "kind": "dry",
+     "t": {
+      "en": "Cool, mostly dry",
+      "th": "เย็น ฝนน้อย",
+      "my": "အေးပြီး မိုးနည်းသည်",
+      "zh": "凉爽，雨少",
+      "de": "Kühl, meist trocken"
+     }
+    },
+    {
+     "m": 12,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry",
+      "th": "เย็นและแห้ง",
+      "my": "အေးပြီး ခြောက်သွေ့သည်",
+      "zh": "凉爽干燥",
+      "de": "Kühl und trocken"
+     }
+    }
+   ],
+   "months_src": "https://www.chiangmai.net/weather",
+   "smoke_src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/",
+   "rain_src": "https://www.chiangmai.net/weather"
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "A house blessing invites an odd number of monks, such as 5, 7 or 9. The host calls the temple first to confirm the date and the number of monks.",
+    "th": "พิธีทำบุญบ้านนิมนต์พระสงฆ์เป็นจำนวนคี่ เช่น 5 7 หรือ 9 รูป เจ้าภาพติดต่อวัดก่อนเพื่อยืนยันวันและจำนวนพระ",
+    "my": "အိမ်မင်္ဂလာပွဲတွင် ရဟန်းများကို မကိန်းဖြင့် ပင့်ဆောင်သည်၊ ဥပမာ 5၊ 7 သို့မဟုတ် 9 ပါး။ အိမ်ရှင်က ကျောင်းသို့ ကြိုတင်ဆက်သွယ်ပြီး နေ့ရက်နှင့် ရဟန်းအရေအတွက်ကို အတည်ပြုသည်။",
+    "zh": "新居祈福邀请奇数位僧人，例如5、7或9位。主人先联系寺庙，确认日期和僧人人数。",
+    "de": "Zu einer Segnung wird eine ungerade Zahl von Mönchen eingeladen, etwa 5, 7 oder 9. Der Gastgeber ruft zuerst den Tempel an und bestätigt Datum und Zahl der Mönche."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "t": {
+    "en": "The monks' lunch is held in the daytime, at about 11:00, and ends by 12:00. Theravada monks may not eat after noon.",
+    "th": "ภัตตาหารเพลของพระสงฆ์จัดช่วงกลางวัน ประมาณ 11.00 น. และเสร็จก่อน 12.00 น. เพราะพระสงฆ์เถรวาทไม่ฉันอาหารหลังเที่ยง",
+    "my": "ရဟန်းများ၏ နေ့လယ်ဆွမ်းကို နေ့အချိန်တွင် 11 နာရီခန့်၌ ကပ်ပြီး 12 နာရီမတိုင်မီ ပြီးသည်။ ထေရဝါဒရဟန်းများသည် မွန်းလွဲပြီးနောက် မစားရပါ။",
+    "zh": "僧人的午斋在白天举行，约11点开始，12点前结束。上座部僧人过了中午不进食。",
+    "de": "Das Mittagessen der Mönche findet tagsüber statt, gegen 11:00 Uhr, und endet um 12:00 Uhr. Theravada-Mönche essen nach 12 Uhr nicht mehr."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "t": {
+    "en": "The order: the monks arrive and chant; the host offers lunch to the Buddha statue and the monks; after the meal the host may present flowers, incense, candles or a sangkhathan set; the monks chant again and sanctify the space with holy water.",
+    "th": "ลำดับพิธี: พระสงฆ์มาถึงและสวดมนต์ เจ้าภาพถวายภัตตาหารแด่พระพุทธรูปและพระสงฆ์ หลังฉันเสร็จ เจ้าภาพอาจถวายดอกไม้ ธูป เทียน หรือชุดสังฆทาน พระสงฆ์สวดอีกครั้งและประพรมน้ำพระพุทธมนต์ในพื้นที่",
+    "my": "အစီအစဉ် - ရဟန်းများ ရောက်လာပြီး ရွတ်ဆိုကြသည်။ အိမ်ရှင်က ဘုရားရုပ်ပွားတော်နှင့် ရဟန်းများကို ဆွမ်းကပ်သည်။ ဆွမ်းစားပြီးနောက် ပန်း၊ အမွှေးတိုင်၊ ဖယောင်းတိုင် သို့မဟုတ် သင်္ဃဒါန်အစုံ လှူနိုင်သည်။ ရဟန်းများက ထပ်မံရွတ်ဆိုပြီး နေရာကို ပရိတ်ရေဖြင့် ဖျန်းသည်။",
+    "zh": "顺序：僧人到达并诵经；主人向佛像和僧人供斋；饭后主人可以献上鲜花、香、蜡烛或僧伽布施套装；僧人再次诵经，并用圣水洒净场地。",
+    "de": "Der Ablauf: Die Mönche kommen und rezitieren; der Gastgeber bietet der Buddha-Statue und den Mönchen das Mittagessen an; nach dem Essen kann er Blumen, Räucherstäbchen, Kerzen oder ein Sangkhathan-Set überreichen; die Mönche rezitieren erneut und weihen den Raum mit geweihtem Wasser."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "t": {
+    "en": "The host decorates the building with holy thread (sai sin) and circles it round a Buddha statue and the monks' seats. The monks write yantra in powder and press gold leaf at significant places, including on or above the front door.",
+    "th": "เจ้าภาพประดับอาคารด้วยสายสิญจน์และโยงล้อมพระพุทธรูปกับอาสนะของพระสงฆ์ พระสงฆ์เขียนยันต์ด้วยแป้งและปิดทองคำเปลวตามจุดสำคัญ รวมทั้งบนหรือเหนือประตูหน้า",
+    "my": "အိမ်ရှင်က အဆောက်အအုံကို ပရိတ်ကြိုး (sai sin) ဖြင့် ဆင်ယင်ပြီး ဘုရားရုပ်ပွားတော်နှင့် ရဟန်းများ၏ ထိုင်ခုံများကို ပတ်ရစ်ထားသည်။ ရဟန်းများက မှုန့်ဖြင့် ယန္တရား (yantra) ရေးပြီး ရှေ့တံခါးပေါ် သို့မဟုတ် တံခါးအထက်အပါအဝင် အရေးကြီးသောနေရာများတွင် ရွှေပြားကပ်သည်။",
+    "zh": "主人用圣线（sai sin）装饰建筑，并让圣线绕过佛像和僧人的座位。僧人用粉末书写经咒图（yantra），并在重要位置贴金箔，包括前门上或门上方。",
+    "de": "Der Gastgeber schmückt das Gebäude mit heiligem Faden (Sai Sin), der um eine Buddha-Statue und die Sitze der Mönche gelegt wird. Die Mönche zeichnen Yantra mit Pulver und kleben an wichtigen Stellen Blattgold an, auch an oder über der Haustür."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "t": {
+    "en": "In the North, the host also hires a ceremonial master to lead the proceedings. Business owners may hold the ceremony for new offices.",
+    "th": "ในภาคเหนือ เจ้าภาพยังจ้างมัคนายกมาดูแลพิธีด้วย เจ้าของธุรกิจอาจจัดพิธีนี้เมื่อเปิดสำนักงานใหม่",
+    "my": "မြောက်ပိုင်းဒေသတွင် အိမ်ရှင်က အခမ်းအနားကို ဦးဆောင်ရန် အခမ်းအနားမှူးကိုလည်း ငှားရမ်းသည်။ စီးပွားရေးလုပ်ငန်းရှင်များသည် ရုံးခန်းသစ်အတွက် ဤအခမ်းအနားကို ကျင်းပနိုင်သည်။",
+    "zh": "在泰国北部，主人还会请一位仪式主持（มัคนายก）来主持整个仪式。企业主也可以为新办公室举行这一仪式。",
+    "de": "Im Norden Thailands engagiert der Gastgeber zusätzlich einen Zeremonienleiter, der den Ablauf führt. Geschäftsinhaber können die Zeremonie auch für neue Büros abhalten."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai has 0.7 rainy days in January and 20.9 in August, on average over 1981–2015.",
+    "th": "เชียงใหม่มีวันฝนตกเฉลี่ย 0.7 วันในเดือนมกราคม และ 20.9 วันในเดือนสิงหาคม เฉลี่ยช่วงปี 1981–2015",
+    "my": "ချင်းမိုင်တွင် 1981–2015 ပျမ်းမျှ မိုးရွာသည့်ရက် ဇန်နဝါရီလ၌ 0.7 ရက်၊ ဩဂုတ်လ၌ 20.9 ရက် ရှိသည်။",
+    "zh": "清迈1981–2015年的平均降雨日数：1月0.7天，8月20.9天。",
+    "de": "Chiang Mai hat im Durchschnitt von 1981–2015 0.7 Regentage im Januar und 20.9 im August."
+   },
+   "src": "https://www.chiangmai.net/weather"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai's burning season runs roughly February to April, with March the worst month. The rains arrive in May, and open burning is banned outside designated zones from 1 January to 31 May 2026.",
+    "th": "ฤดูเผาในเชียงใหม่อยู่ราวเดือนกุมภาพันธ์ถึงเมษายน และเดือนมีนาคมหนักที่สุด ฝนมาในเดือนพฤษภาคม และห้ามเผาในที่โล่งนอกเขตที่กำหนด ตั้งแต่ 1 มกราคมถึง 31 พฤษภาคม 2026",
+    "my": "ချင်းမိုင်၏ မီးရှို့ရာသီသည် ဖေဖော်ဝါရီမှ ဧပြီအထိ ခန့်ဖြစ်ပြီး မတ်လသည် အဆိုးဆုံးလဖြစ်သည်။ မေလတွင် မိုးရွာပြီး သတ်မှတ်နယ်မြေပြင်ပ ပွင့်လင်းနေရာ မီးရှို့ခြင်းကို 2026 ဇန်နဝါရီ 1 ရက်မှ မေ 31 ရက်အထိ တားမြစ်ထားသည်။",
+    "zh": "清迈的烧荒季大约从2月到4月，3月最严重。雨季在5月到来；2026年1月1日至5月31日，指定区域之外禁止露天焚烧。",
+    "de": "Die Brandsaison in Chiang Mai dauert etwa von Februar bis April, der März ist der schlimmste Monat. Im Mai kommt der Regen; vom 1. Januar bis 31. Mai 2026 ist offenes Verbrennen ausserhalb bestimmter Zonen verboten."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Ceremony for nine monks: equipment, ceremony master, monk pick-up and drop-off, garland and sangkhathan set, no meal (one Bangkok organiser)",
+    "th": "พิธีสงฆ์เก้ารูป: อุปกรณ์ มัคนายก รับ-ส่งพระ พวงมาลัยและชุดสังฆทาน ไม่รวมอาหาร (ผู้จัดงานรายหนึ่งในกรุงเทพฯ)",
+    "my": "ရဟန်း ကိုးပါးအတွက် အခမ်းအနား - ပစ္စည်းကိရိယာ၊ အခမ်းအနားမှူး၊ ရဟန်းများ ပို့ဆောင်ကြိုဆိုခြင်း၊ ပန်းကုံးနှင့် သင်္ဃဒါန်အစုံ၊ ဆွမ်းမပါ (ဘန်ကောက်ရှိ စီစဉ်သူတစ်ဦး)",
+    "zh": "为九位僧人举办仪式：器具、仪式主持、接送僧人、花环和僧伽布施套装，不含餐食（曼谷一家策划者）",
+    "de": "Zeremonie für neun Mönche: Ausrüstung, Zeremonienleiter, Hin- und Rückfahrt der Mönche, Blumengirlande und Sangkhathan-Set, ohne Essen (ein Veranstalter in Bangkok)"
+   },
+   "p": {
+    "en": "฿12,000 (Bangkok area; an extra travel charge elsewhere)",
+    "th": "฿12,000 (กรุงเทพฯ และปริมณฑล ต่างจังหวัดมีค่าเดินทางเพิ่ม)",
+    "my": "฿12,000 (ဘန်ကောက်နှင့် အနီးဝန်းကျင်၊ အခြားဒေသတွင် ခရီးစရိတ် ထပ်တိုး)",
+    "zh": "฿12,000（曼谷及周边；其他地区另收差旅费）",
+    "de": "฿12,000 (Raum Bangkok; anderswo kommt eine Reisepauschale dazu)"
+   },
+   "src": "https://fastwork.co/user/boonumpar/housewarming-28007426"
+  },
+  {
+   "t": {
+    "en": "The same with the monks' meal; with a buffet for 11 guests and tent tables (same organiser)",
+    "th": "แบบเดียวกันพร้อมภัตตาหารพระ และแบบพร้อมบุฟเฟต์แขก 11 ท่านกับโต๊ะเต็นท์ (ผู้จัดงานรายเดียวกัน)",
+    "my": "အလားတူ ရဟန်းများ၏ ဆွမ်းပါ၊ နှင့် ဧည့်သည် 11 ဦးအတွက် ဘူဖေးနှင့် တဲစားပွဲပါ (အတူတူ စီစဉ်သူ)",
+    "zh": "同样的仪式，加上僧人斋饭；以及加上11位宾客的自助餐和帐篷桌椅（同一策划者）",
+    "de": "Dasselbe mit dem Essen der Mönche; und mit Buffet für 11 Gäste und Zelttischen (derselbe Veranstalter)"
+   },
+   "p": {
+    "en": "฿18,000; ฿22,000",
+    "th": "฿18,000; ฿22,000",
+    "my": "฿18,000; ฿22,000",
+    "zh": "฿18,000；฿22,000",
+    "de": "฿18,000; ฿22,000"
+   },
+   "src": "https://fastwork.co/user/boonumpar/housewarming-26165471"
+  },
+  {
+   "t": {
+    "en": "Meal for the monks from a Chiang Mai caterer: a khantoke tray per monk, or a boxed meal",
+    "th": "ภัตตาหารพระจากผู้รับจัดเลี้ยงในเชียงใหม่: ขันโตกต่อพระหนึ่งรูป หรือแบบกล่อง",
+    "my": "ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူထံမှ ရဟန်းများအတွက် ဆွမ်း - ရဟန်းတစ်ပါးလျှင် ခန်တုပ်ဗန်းတစ်ခု သို့မဟုတ် ဘူးထည့်ထားသော ဆွမ်း",
+    "zh": "清迈餐饮承办商供僧的餐食：每位僧人一个康托克托盘，或盒装",
+    "de": "Essen für die Mönche von einem Caterer in Chiang Mai: ein Khantoke-Tablett pro Mönch oder eine Essensbox"
+   },
+   "p": {
+    "en": "From ฿370 a tray; boxed ฿130 (3 dishes) or ฿170 (4 dishes, water)",
+    "th": "ขันโตกเริ่มที่ ฿370 ต่อรูป; แบบกล่อง ฿130 (3 อย่าง) หรือ ฿170 (4 อย่างและน้ำดื่ม)",
+    "my": "ဗန်းတစ်ခု ฿370 မှစ၊ ဘူး ฿130 (ဟင်း 3 မျိုး) သို့မဟုတ် ฿170 (ဟင်း 4 မျိုးနှင့် ရေ)",
+    "zh": "托盘起价฿370；盒装฿130（3道菜）或฿170（4道菜加饮用水）",
+    "de": "Tablett ab ฿370; Box ฿130 (3 Gerichte) oder ฿170 (4 Gerichte, Wasser)"
+   },
+   "src": "https://wiangpingcatering.com/2021/08/16/%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%aa%e0%b8%b3%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%9a%e0%b8%b8%e0%b8%84%e0%b8%84%e0%b8%a5-%e0%b8%9e%e0%b8%a3%e0%b8%b0%e0%b8%aa%e0%b8%87%e0%b8%86%e0%b9%8c/"
+  },
+  {
+   "t": {
+    "en": "Rental from a Chiang Mai caterer, for one job of 1–2 days: a round table with 10 chairs, a tent 3 × 3 m, a tent 4 × 8 m",
+    "th": "ค่าเช่าจากผู้รับจัดเลี้ยงในเชียงใหม่ ต่อหนึ่งงาน 1–2 วัน: โต๊ะกลมพร้อมเก้าอี้ 10 ตัว เต็นท์ 3 × 3 ม. เต็นท์ 4 × 8 ม.",
+    "my": "ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူထံမှ တစ်ပွဲ 1–2 ရက်အတွက် ငှားခ - ထိုင်ခုံ 10 ခုပါ စားပွဲဝိုင်း၊ 3 × 3 မီတာ တဲ၊ 4 × 8 မီတာ တဲ",
+    "zh": "清迈餐饮承办商的租金，每次活动1–2天：配10把椅子的圆桌、3 × 3米帐篷、4 × 8米帐篷",
+    "de": "Miete bei einem Caterer in Chiang Mai, pro Anlass 1–2 Tage: ein runder Tisch mit 10 Stühlen, ein Zelt 3 × 3 m, ein Zelt 4 × 8 m"
+   },
+   "p": {
+    "en": "Table set ฿200–500; tent ฿700–900; large tent ฿1,500; delivery and set-up free from ฿1,000",
+    "th": "ชุดโต๊ะ ฿200–500; เต็นท์ ฿700–900; เต็นท์ใหญ่ ฿1,500; ส่งและติดตั้งฟรีเมื่อสั่งตั้งแต่ ฿1,000",
+    "my": "စားပွဲအစုံ ฿200–500၊ တဲ ฿700–900၊ တဲကြီး ฿1,500၊ ฿1,000 မှစ၍ ပို့ဆောင်တပ်ဆင်ခ အခမဲ့",
+    "zh": "桌椅一套฿200–500；帐篷฿700–900；大帐篷฿1,500；满฿1,000免费送货和搭建",
+    "de": "Tischset ฿200–500; Zelt ฿700–900; grosses Zelt ฿1,500; Lieferung und Aufbau ab ฿1,000 gratis"
+   },
+   "src": "https://wiangpingcatering.com/2021/08/16/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%82%e0%b8%95%e0%b9%8a%e0%b8%b0-%e0%b9%80%e0%b8%81%e0%b9%89%e0%b8%b2%e0%b8%ad%e0%b8%b5%e0%b9%89-%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%99%e0%b8%97%e0%b9%8c/"
+  },
+  {
+   "t": {
+    "en": "Offerings (sangkhathan set and the monks' envelope) for a medium event: a Bangkok caterer's estimate",
+    "th": "เครื่องไทยธรรม (ชุดสังฆทานและซองปัจจัย) สำหรับงานขนาดกลาง: ประมาณการของผู้รับจัดเลี้ยงในกรุงเทพฯ",
+    "my": "အလတ်စားပွဲအတွက် လှူဒါန်းပစ္စည်း (သင်္ဃဒါန်အစုံနှင့် ရဟန်းများအတွက် ငွေထည့်စာအိတ်) - ဘန်ကောက်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူ၏ ခန့်မှန်းချက်",
+    "zh": "中型活动的供养品（僧伽布施套装和供养金信封）：曼谷一家餐饮承办商的估算",
+    "de": "Gaben (Sangkhathan-Set und Umschlag für die Mönche) bei einer mittelgrossen Feier: Schätzung eines Caterers in Bangkok"
+   },
+   "p": {
+    "en": "฿1,000–5,000",
+    "th": "฿1,000–5,000",
+    "my": "฿1,000–5,000",
+    "zh": "฿1,000–5,000",
+    "de": "฿1,000–5,000"
+   },
+   "src": "https://www.setandservecatering.com/blog/monk_ceremony_steps.html"
+  },
+  {
+   "t": {
+    "en": "One Bangkok household's bill in 2020: 5 monks and 40 guests",
+    "th": "ค่าใช้จ่ายของครอบครัวหนึ่งในกรุงเทพฯ ปี 2020: พระ 5 รูป แขก 40 คน",
+    "my": "2020 ခုနှစ်တွင် ဘန်ကောက်ရှိ မိသားစုတစ်စု၏ ကုန်ကျစရိတ် - ရဟန်း 5 ပါးနှင့် ဧည့်သည် 40 ဦး",
+    "zh": "2020年曼谷一户人家的开销：5位僧人，40位宾客",
+    "de": "Die Rechnung eines Haushalts in Bangkok im Jahr 2020: 5 Mönche und 40 Gäste"
+   },
+   "p": {
+    "en": "About ฿14,000: sangkhathan set ฿1,500, envelope ฿3,000, holy thread and anointing kit ฿89, helper ฿1,000, food and drink ฿8,436",
+    "th": "ประมาณ ฿14,000: ชุดสังฆทาน ฿1,500 ซองปัจจัย ฿3,000 สายสิญจน์และอุปกรณ์เจิม ฿89 คนช่วยงาน ฿1,000 อาหารและเครื่องดื่ม ฿8,436",
+    "my": "ခန့်မှန်း ฿14,000 - သင်္ဃဒါန်အစုံ ฿1,500၊ ငွေထည့်စာအိတ် ฿3,000၊ ပရိတ်ကြိုးနှင့် ဆီသုတ်ပစ္စည်း ฿89၊ အကူ ฿1,000၊ အစားအသောက် ฿8,436",
+    "zh": "约฿14,000：僧伽布施套装฿1,500，供养金信封฿3,000，圣线和涂油用具฿89，帮手฿1,000，餐食和饮料฿8,436",
+    "de": "Etwa ฿14,000: Sangkhathan-Set ฿1,500, Umschlag ฿3,000, heiliger Faden und Salbungsset ฿89, Helfer ฿1,000, Essen und Getränke ฿8,436"
+   },
+   "src": "https://www.sanook.com/women/220581/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How many monks do I invite?",
+    "th": "ต้องนิมนต์พระกี่รูป",
+    "my": "ရဟန်း ဘယ်နှစ်ပါး ပင့်ရမလဲ",
+    "zh": "要邀请几位僧人",
+    "de": "Wie viele Mönche lade ich ein?"
+   },
+   "a": {
+    "en": "The Thailand Foundation names an odd number, such as 5, 7 or 9. The host calls the temple first to confirm the date and the number of monks.",
+    "th": "Thailand Foundation ระบุจำนวนคี่ เช่น 5 7 หรือ 9 รูป เจ้าภาพติดต่อวัดก่อนเพื่อยืนยันวันและจำนวนพระ",
+    "my": "Thailand Foundation က မကိန်း ဥပမာ 5၊ 7 သို့မဟုတ် 9 ပါး ဟု ဖော်ပြသည်။ အိမ်ရှင်က ကျောင်းသို့ ကြိုတင်ဆက်သွယ်ပြီး နေ့ရက်နှင့် ရဟန်းအရေအတွက်ကို အတည်ပြုသည်။",
+    "zh": "Thailand Foundation 提到奇数，例如5、7或9位。主人先联系寺庙，确认日期和僧人人数。",
+    "de": "Die Thailand Foundation nennt eine ungerade Zahl, etwa 5, 7 oder 9. Der Gastgeber ruft zuerst den Tempel an und bestätigt Datum und Zahl der Mönche."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "q": {
+    "en": "What happens at the ceremony, in order?",
+    "th": "พิธีมีลำดับอย่างไร",
+    "my": "အခမ်းအနားတွင် အစီအစဉ်အတိုင်း ဘာတွေ ဖြစ်သလဲ",
+    "zh": "仪式按什么顺序进行",
+    "de": "Was geschieht bei der Zeremonie, der Reihe nach?"
+   },
+   "a": {
+    "en": "The monks arrive, sit and chant. The host offers lunch to the Buddha statue and the monks. After the meal the host may present flowers, incense, candles or a sangkhathan set. The monks chant again and sanctify the space with holy water.",
+    "th": "พระสงฆ์มาถึง นั่ง และสวดมนต์ เจ้าภาพถวายภัตตาหารแด่พระพุทธรูปและพระสงฆ์ หลังฉันเสร็จ เจ้าภาพอาจถวายดอกไม้ ธูป เทียน หรือชุดสังฆทาน พระสงฆ์สวดอีกครั้งและประพรมน้ำพระพุทธมนต์",
+    "my": "ရဟန်းများ ရောက်လာပြီး ထိုင်၍ ရွတ်ဆိုကြသည်။ အိမ်ရှင်က ဘုရားရုပ်ပွားတော်နှင့် ရဟန်းများကို ဆွမ်းကပ်သည်။ ဆွမ်းစားပြီးနောက် ပန်း၊ အမွှေးတိုင်၊ ဖယောင်းတိုင် သို့မဟုတ် သင်္ဃဒါန်အစုံ လှူနိုင်သည်။ ရဟန်းများက ထပ်မံရွတ်ဆိုပြီး နေရာကို ပရိတ်ရေဖြင့် ဖျန်းသည်။",
+    "zh": "僧人到达、就座并诵经。主人向佛像和僧人供斋。饭后，主人可以献上鲜花、香、蜡烛或僧伽布施套装。僧人再次诵经，并用圣水洒净场地。",
+    "de": "Die Mönche kommen, setzen sich und rezitieren. Der Gastgeber bietet der Buddha-Statue und den Mönchen das Mittagessen an. Nach dem Essen kann er Blumen, Räucherstäbchen, Kerzen oder ein Sangkhathan-Set überreichen. Die Mönche rezitieren erneut und weihen den Raum mit geweihtem Wasser."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "q": {
+    "en": "What time of day is the ceremony?",
+    "th": "พิธีจัดเวลาไหน",
+    "my": "အခမ်းအနားကို နေ့ဘယ်အချိန်တွင် ကျင်းပသလဲ",
+    "zh": "仪式在一天中的什么时间举行",
+    "de": "Zu welcher Tageszeit findet die Zeremonie statt?"
+   },
+   "a": {
+    "en": "KTC names two common times: 7:30 in the morning, or the monks' lunch at 10:30.",
+    "th": "KTC ระบุเวลาที่นิยมสองช่วง คือ 7.30 น. ตอนเช้า หรือช่วงเลี้ยงเพลที่ 10.30 น.",
+    "my": "KTC က အသုံးများသော အချိန်နှစ်ခု ဖော်ပြသည် - နံနက် 7:30 သို့မဟုတ် ရဟန်းများ၏ နေ့လယ်ဆွမ်း 10:30။",
+    "zh": "KTC 提到两个常见时间：早上7:30，或10:30的僧人午斋。",
+    "de": "KTC nennt zwei übliche Zeiten: 7:30 Uhr am Morgen oder das Mittagessen der Mönche um 10:30 Uhr."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/home-decoration/house-blessing-ceremony"
+  },
+  {
+   "q": {
+    "en": "What do I need to prepare?",
+    "th": "ต้องเตรียมอะไรบ้าง",
+    "my": "ဘာတွေ ပြင်ဆင်ရမလဲ",
+    "zh": "需要准备什么",
+    "de": "Was brauche ich?"
+   },
+   "a": {
+    "en": "KTC lists an altar table with a Buddha image, a sangkhathan set, the monks' envelope and daily necessities, a holy-water bowl with silver and gold leaf, flowers, incense, candles, food, drinking water, mats and chairs for guests.",
+    "th": "KTC ระบุโต๊ะหมู่บูชาพร้อมพระพุทธรูป ชุดสังฆทาน ซองปัจจัยและของใช้จำเป็นถวายพระ ขันน้ำมนต์ใบเงินใบทอง ดอกไม้ ธูป เทียน อาหาร น้ำดื่ม เสื่อ และเก้าอี้สำหรับแขก",
+    "my": "KTC က ဘုရားရုပ်ပွားတော်ပါ ဘုရားစင်၊ သင်္ဃဒါန်အစုံ၊ ရဟန်းများအတွက် ငွေထည့်စာအိတ်နှင့် နေ့စဉ်လိုအပ်သောပစ္စည်းများ၊ ရွှေပြားနှင့် ငွေပြားပါ ပရိတ်ရေခွက်၊ ပန်း၊ အမွှေးတိုင်၊ ဖယောင်းတိုင်၊ အစားအစာ၊ သောက်ရေ၊ ဧည့်သည်များအတွက် ဖျာနှင့် ထိုင်ခုံတို့ကို စာရင်းပြုထားသည်။",
+    "zh": "KTC 列出：带佛像的供佛桌、僧伽布施套装、僧人的信封和日用品、放有银箔和金箔的圣水碗、鲜花、香、蜡烛、食物、饮用水，以及供宾客用的席子和椅子。",
+    "de": "KTC nennt: einen Altartisch mit Buddha-Bild, ein Sangkhathan-Set, den Umschlag und Dinge des täglichen Bedarfs für die Mönche, eine Schale mit geweihtem Wasser samt Silber- und Goldblatt, Blumen, Räucherstäbchen, Kerzen, Essen, Trinkwasser sowie Matten und Stühle für die Gäste."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/home-decoration/house-blessing-ceremony"
+  },
+  {
+   "q": {
+    "en": "How much does a house blessing cost?",
+    "th": "ทำบุญขึ้นบ้านใหม่ค่าใช้จ่ายเท่าไหร่",
+    "my": "အိမ်မင်္ဂလာပွဲ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "新居祈福要花多少钱",
+    "de": "Was kostet die Segnung eines Hauses?"
+   },
+   "a": {
+    "en": "One Bangkok household budgeted about ฿14,000 in 2020 for 5 monks and 40 guests. Food and drink came to ฿8,436, the monks' envelope to ฿3,000 and the sangkhathan set to ฿1,500.",
+    "th": "ครอบครัวหนึ่งในกรุงเทพฯ ตั้งงบประมาณราว ฿14,000 ในปี 2020 สำหรับพระ 5 รูปและแขก 40 คน อาหารและเครื่องดื่ม ฿8,436 ซองปัจจัย ฿3,000 และชุดสังฆทาน ฿1,500",
+    "my": "ဘန်ကောက်ရှိ မိသားစုတစ်စုက 2020 ခုနှစ်တွင် ရဟန်း 5 ပါးနှင့် ဧည့်သည် 40 ဦးအတွက် ฿14,000 ခန့် ဘတ်ဂျက်ချထားသည်။ အစားအသောက် ฿8,436၊ ရဟန်းများအတွက် ငွေထည့်စာအိတ် ฿3,000၊ သင်္ဃဒါန်အစုံ ฿1,500 ကုန်ကျသည်။",
+    "zh": "曼谷一户人家2020年为5位僧人和40位宾客预算约฿14,000。餐食和饮料฿8,436，僧人的信封฿3,000，僧伽布施套装฿1,500。",
+    "de": "Ein Haushalt in Bangkok plante 2020 für 5 Mönche und 40 Gäste etwa ฿14,000 ein. Essen und Getränke kosteten ฿8,436, der Umschlag für die Mönche ฿3,000 und das Sangkhathan-Set ฿1,500."
+   },
+   "src": "https://www.sanook.com/women/220581/"
+  },
+  {
+   "q": {
+    "en": "How far ahead are the monks invited?",
+    "th": "นิมนต์พระล่วงหน้านานแค่ไหน",
+    "my": "ရဟန်းများကို ဘယ်လောက် ကြိုပင့်သလဲ",
+    "zh": "提前多久邀请僧人",
+    "de": "Wie weit im Voraus werden die Mönche eingeladen?"
+   },
+   "a": {
+    "en": "KTC puts the lead time at about one month.",
+    "th": "KTC ระบุว่าแจ้งนิมนต์พระล่วงหน้าประมาณ 1 เดือน",
+    "my": "KTC က ကြိုတင်ပင့်ဆောင်ချိန်ကို တစ်လခန့်ဟု ဖော်ပြသည်။",
+    "zh": "KTC 给出的提前期约为一个月。",
+    "de": "KTC gibt als Vorlauf etwa einen Monat an."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/home-decoration/house-blessing-ceremony"
+  },
+  {
+   "q": {
+    "en": "Which day is a good day?",
+    "th": "วันไหนดี",
+    "my": "ဘယ်နေ့က ကောင်းသလဲ",
+    "zh": "哪一天是好日子",
+    "de": "Welcher Tag ist ein guter Tag?"
+   },
+   "a": {
+    "en": "Many people look at the Chinese calendar, for example Thongchai days, says KTC. Others pick a weekend when relatives can come.",
+    "th": "KTC ระบุว่าหลายคนดูฤกษ์จากปฏิทินจีน เช่น วันธงไชย ส่วนบางบ้านเลือกวันหยุดสุดสัปดาห์ที่ญาติสะดวกมาร่วมงาน",
+    "my": "KTC အဆိုအရ လူများစွာက တရုတ်ပြက္ခဒိန်ကို ကြည့်ကြသည်၊ ဥပမာ Thongchai (ธงไชย) နေ့များ။ အချို့က ဆွေမျိုးများ လာနိုင်သည့် ပိတ်ရက်ကို ရွေးကြသည်။",
+    "zh": "KTC 写道，很多人参考中国历法，例如“ธงไชย”（Thongchai）日。也有人选亲戚方便来的周末。",
+    "de": "Laut KTC schauen viele auf den chinesischen Kalender, zum Beispiel auf Thongchai-Tage. Andere wählen ein Wochenende, an dem die Verwandten kommen können."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/home-decoration/house-blessing-ceremony"
+  },
+  {
+   "q": {
+    "en": "Do shops hold the ceremony too?",
+    "th": "ร้านค้าจัดพิธีนี้ด้วยหรือไม่",
+    "my": "ဆိုင်များလည်း ဤအခမ်းအနားကို ကျင်းပကြသလား",
+    "zh": "店铺也举行这个仪式吗",
+    "de": "Halten auch Geschäfte die Zeremonie ab?"
+   },
+   "a": {
+    "en": "The Thailand Foundation notes that business owners may hold the ceremony for new offices.",
+    "th": "Thailand Foundation ระบุว่าเจ้าของธุรกิจอาจจัดพิธีนี้เมื่อเปิดสำนักงานใหม่",
+    "my": "Thailand Foundation က စီးပွားရေးလုပ်ငန်းရှင်များသည် ရုံးခန်းသစ်အတွက် ဤအခမ်းအနားကို ကျင်းပနိုင်ကြောင်း ဖော်ပြသည်။",
+    "zh": "Thailand Foundation 提到，企业主可以为新办公室举行这一仪式。",
+    "de": "Die Thailand Foundation hält fest, dass Geschäftsinhaber die Zeremonie für neue Büros abhalten können."
+   },
+   "src": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  }
+ ],
+ "related": [
+  "spirit-house",
+  "su-khwan",
+  "merit-dead",
+  "date-pick",
+  "car-guide",
+  "translate"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Foundation: the Thai housewarming ceremony, step by step",
+    "th": "Thailand Foundation: พิธีขึ้นบ้านใหม่แบบไทย ทีละขั้น",
+    "my": "Thailand Foundation - ထိုင်းအိမ်သစ်မင်္ဂလာ အခမ်းအနား၊ အဆင့်ဆင့်",
+    "zh": "Thailand Foundation：泰式新居仪式，逐步介绍",
+    "de": "Thailand Foundation: die thailändische Einweihungszeremonie, Schritt für Schritt"
+   },
+   "href": "https://thailandfoundation.or.th/thai-housewarming-ceremony/"
+  },
+  {
+   "t": {
+    "en": "KTC: what to prepare for a house blessing",
+    "th": "KTC: ทำบุญบ้านต้องเตรียมอะไรบ้าง",
+    "my": "KTC - အိမ်မင်္ဂလာအတွက် ပြင်ဆင်ရမည့်အရာများ",
+    "zh": "KTC：新居祈福要准备什么",
+    "de": "KTC: was für die Segnung eines Hauses vorbereitet wird"
+   },
+   "href": "https://www.ktc.co.th/article/lifestyle/home-decoration/house-blessing-ceremony"
+  },
+  {
+   "t": {
+    "en": "Sanook: one household's housewarming, with its costs",
+    "th": "Sanook: ทำบุญขึ้นบ้านใหม่ของครอบครัวหนึ่ง พร้อมค่าใช้จ่าย",
+    "my": "Sanook - မိသားစုတစ်စု၏ အိမ်သစ်မင်္ဂလာပွဲနှင့် ကုန်ကျစရိတ်များ",
+    "zh": "Sanook：一户人家的新居仪式及开销",
+    "de": "Sanook: die Einweihung eines Haushalts, mit den Kosten"
+   },
+   "href": "https://www.sanook.com/women/220581/"
+  },
+  {
+   "t": {
+    "en": "Krua Wiangping, a Chiang Mai caterer: food sets, boxed meals, tent and table rental",
+    "th": "ครัวเวียงพิงค์ ผู้รับจัดเลี้ยงในเชียงใหม่: ชุดอาหาร ข้าวกล่อง และเช่าเต็นท์โต๊ะเก้าอี้",
+    "my": "ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူ Krua Wiangping - အစားအစာအစုံ၊ ထမင်းဘူးနှင့် တဲ၊ စားပွဲ ငှားရမ်းခြင်း",
+    "zh": "清迈餐饮承办商 Krua Wiangping：餐食套餐、盒饭、帐篷和桌椅租赁",
+    "de": "Krua Wiangping, ein Caterer in Chiang Mai: Menüs, Essensboxen, Zelt- und Tischmiete"
+   },
+   "href": "https://wiangpingcatering.com/"
+  }
+ ],
+ "glyphs": [
+  "home",
+  "wai",
+  "lotus"
+ ]
+}

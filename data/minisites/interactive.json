@@ -1,0 +1,302 @@
+{
+ "id": "interactive",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People ask for an interactive page when a subject is hard to explain in text, or when an event or a brand wants a game.",
+  "th": "คนขอหน้าเว็บโต้ตอบเมื่อเรื่องนั้นอธิบายด้วยตัวอักษรได้ยาก หรือเมื่องานหรือแบรนด์อยากได้เกม",
+  "my": "အကြောင်းအရာတစ်ခုကို စာဖြင့် ရှင်းပြရခက်သည့်အခါ သို့မဟုတ် ပွဲ သို့မဟုတ် အမှတ်တံဆိပ်တစ်ခုက ဂိမ်းလိုချင်သည့်အခါ လူတွေက အပြန်အလှန် စာမျက်နှာကို တောင်းဆိုကြသည်။",
+  "zh": "当一个主题很难用文字讲清楚，或者活动、品牌想要一个游戏时，人们会找人做互动网页。",
+  "de": "Man bestellt eine interaktive Seite, wenn sich ein Thema in Text schwer erklären lässt oder wenn ein Anlass oder eine Marke ein Spiel möchte."
+ },
+ "n": {
+  "de": "Interaktive Seite oder Spiel"
+ },
+ "l": {
+  "de": "Animationen, Erklärungen zum Ausprobieren, Spiele für Marken."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You choose a moving picture, an explainer or a game, and give the subject.",
+    "th": "คุณเลือกภาพเคลื่อนไหว สื่ออธิบาย หรือเกม และบอกหัวข้อ",
+    "my": "လှုပ်ရှားသောပုံ၊ ရှင်းပြချက် သို့မဟုတ် ဂိမ်းကို သင်ရွေးပြီး ခေါင်းစဉ်ကို ပေးသည်။",
+    "zh": "您选择动画、讲解页或游戏，并给出主题。",
+    "de": "Sie wählen ein bewegtes Bild, eine Erklärung oder ein Spiel und nennen das Thema."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "gears",
+   "t": {
+    "en": "The page is built to answer to scrolling or touch.",
+    "th": "สร้างหน้าเว็บให้ตอบสนองต่อการเลื่อนหรือการแตะ",
+    "my": "စာမျက်နှာကို ဆွဲချခြင်း သို့မဟုတ် ထိတွေ့ခြင်းကို တုံ့ပြန်စေရန် တည်ဆောက်သည်။",
+    "zh": "页面做成能对滚动或触摸做出反应。",
+    "de": "Die Seite wird so gebaut, dass sie auf Scrollen oder Berühren antwortet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "laptop",
+   "t": {
+    "en": "The finished page goes to you.",
+    "th": "ส่งหน้าเว็บที่เสร็จแล้วให้คุณ",
+    "my": "ပြီးစီးသော စာမျက်နှာကို သင့်ထံ ပို့ပေးသည်။",
+    "zh": "做好的页面交给您。",
+    "de": "Die fertige Seite geht an Sie."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "WCAG 2.2 success criterion 2.2.2 (Level A) asks for a way to pause, stop or hide moving information that starts automatically, lasts more than five seconds and sits beside other content.",
+    "th": "เกณฑ์ความสำเร็จ 2.2.2 (ระดับ A) ของ WCAG 2.2 กำหนดให้มีวิธีหยุดชั่วคราว หยุด หรือซ่อนข้อมูลที่เคลื่อนไหวซึ่งเริ่มเองโดยอัตโนมัติ ยาวเกินห้าวินาที และอยู่ข้างเนื้อหาอื่น",
+    "my": "WCAG 2.2 ၏ အောင်မြင်မှုစံနှုန်း 2.2.2 (အဆင့် A) က အလိုအလျောက် စတင်ပြီး ငါးစက္ကန့်ထက် ကြာကာ အခြားအကြောင်းအရာ၏ ဘေးတွင်ရှိသော လှုပ်ရှားနေသည့် အချက်အလက်ကို ရပ်နား၊ ရပ်တန့် သို့မဟုတ် ဖျောက်နိုင်သည့်နည်းလမ်း လိုအပ်သည်ဟု ဆိုသည်။",
+    "zh": "WCAG 2.2 的成功准则 2.2.2（A 级）要求：自动开始、持续超过五秒、且与其他内容并排呈现的动态信息，要有办法暂停、停止或隐藏。",
+    "de": "Das Erfolgskriterium 2.2.2 (Stufe A) der WCAG 2.2 verlangt eine Möglichkeit, bewegte Informationen anzuhalten, zu stoppen oder auszublenden, wenn sie automatisch beginnen, länger als fünf Sekunden dauern und neben anderen Inhalten stehen."
+   },
+   "src": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+  },
+  {
+   "t": {
+    "en": "Thai copyright lists computer programs with literary works. It does not cover ideas, methods, systems or concepts.",
+    "th": "ลิขสิทธิ์ไทยนับโปรแกรมคอมพิวเตอร์เป็นงานวรรณกรรม และไม่คุ้มครองความคิด วิธีการ ระบบ หรือแนวคิด",
+    "my": "ထိုင်းမူပိုင်ခွင့်သည် ကွန်ပျူတာပရိုဂရမ်ကို စာပေလက်ရာအဖြစ် ထည့်သွင်းသည်။ အတွေး၊ နည်းလမ်း၊ စနစ် သို့မဟုတ် အယူအဆများကို မပါဝင်ပါ။",
+    "zh": "泰国版权把计算机程序列为文学作品，不保护思想、方法、系统或概念。",
+    "de": "Das thailändische Urheberrecht zählt Computerprogramme zu den Sprachwerken. Ideen, Methoden, Systeme und Konzepte schützt es nicht."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "A Thai copyright assignment must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "การโอนลิขสิทธิ์ในไทยต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလကို သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "泰国的版权转让必须采用书面形式并写明期限；未写明期限的，期限为 10 年。",
+    "de": "Eine Abtretung des Urheberrechts in Thailand muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "Thai law defines personal data as data about a natural person that can identify that person, directly or indirectly.",
+    "th": "กฎหมายไทยให้ความหมายข้อมูลส่วนบุคคลว่าเป็นข้อมูลเกี่ยวกับบุคคลธรรมดาที่ทำให้ระบุตัวบุคคลนั้นได้ ทางตรงหรือทางอ้อม",
+    "my": "ထိုင်းဥပဒေက ကိုယ်ရေးကိုယ်တာဒေတာကို လူတစ်ဦးအကြောင်း ဒေတာတစ်ခုအဖြစ် သတ်မှတ်ပြီး ထိုလူကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ဖော်ထုတ်နိုင်သော ဒေတာဖြစ်သည်။",
+    "zh": "泰国法律把个人数据定义为与自然人有关、可直接或间接识别该人的数据。",
+    "de": "Das thailändische Recht definiert personenbezogene Daten als Daten über eine natürliche Person, die diese direkt oder indirekt identifizieren."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "t": {
+    "en": "Thailand has 67.8 million internet users, 94.7 percent of the population (DataReportal, late 2025).",
+    "th": "ไทยมีผู้ใช้อินเทอร์เน็ต 67.8 ล้านคน หรือ 94.7 เปอร์เซ็นต์ของประชากร (DataReportal ปลายปี 2025)",
+    "my": "ထိုင်းတွင် အင်တာနက်သုံးသူ 67.8 သန်း ရှိပြီး လူဦးရေ၏ 94.7 ရာခိုင်နှုန်း ဖြစ်သည် (DataReportal၊ 2025 နှောင်းပိုင်း)။",
+    "zh": "泰国有 6780 万网民，占人口的 94.7%（DataReportal，2025 年底）。",
+    "de": "Thailand hat 67.8 Millionen Internetnutzer, 94.7 Prozent der Bevölkerung (DataReportal, Ende 2025)."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Web games for events and campaigns from a Fastwork seller with 3 orders: three packages",
+    "th": "เกมเว็บสำหรับงานและแคมเปญจากผู้ขายบน Fastwork ที่มี 3 ออเดอร์ สามแพ็กเกจ",
+    "my": "အော်ဒါ 3 ခုရှိသော Fastwork ရောင်းသူထံမှ ပွဲနှင့် လှုပ်ရှားမှုအတွက် ဝက်ဘ်ဂိမ်းများ - ပက်ကေ့ချ် သုံးမျိုး",
+    "zh": "Fastwork 上有 3 笔订单的卖家的活动与营销网页游戏：三档套餐",
+    "de": "Web-Spiele für Anlässe und Kampagnen von einem Fastwork-Anbieter mit 3 Bestellungen: drei Pakete"
+   },
+   "p": {
+    "en": "฿5,000 for a mini game, 7 days; ฿15,000 for a campaign game with ranking and rewards, 15 days; ฿30,000 for a full interactive system, 30 days",
+    "th": "฿5,000 เกมขนาดเล็ก 7 วัน ฿15,000 เกมแคมเปญที่มีอันดับและรางวัล 15 วัน ฿30,000 ระบบโต้ตอบเต็มรูปแบบ 30 วัน",
+    "my": "ဂိမ်းသေး ฿5,000 (7 ရက်)၊ အဆင့်သတ်မှတ်ချက်နှင့် ဆုပါသော လှုပ်ရှားမှုဂိမ်း ฿15,000 (15 ရက်)၊ အပြည့်အစုံ အပြန်အလှန်စနစ် ฿30,000 (30 ရက်)",
+    "zh": "小游戏 ฿5,000，7 天；带排名和奖励的活动游戏 ฿15,000，15 天；完整互动系统 ฿30,000，30 天",
+    "de": "฿5,000 für ein Minispiel, 7 Tage; ฿15,000 für ein Kampagnenspiel mit Rangliste und Belohnungen, 15 Tage; ฿30,000 für ein volles interaktives System, 30 Tage"
+   },
+   "src": "https://fastwork.co/user/wimutti/game-development-53111025"
+  },
+  {
+   "t": {
+    "en": "Game work from a Fastwork developer with 24 orders",
+    "th": "งานเกมจากนักพัฒนาบน Fastwork ที่มี 24 ออเดอร์",
+    "my": "အော်ဒါ 24 ခုရှိသော Fastwork ဆော့ဖ်ဝဲရေးသူထံမှ ဂိမ်းအလုပ်",
+    "zh": "Fastwork 上有 24 笔订单的开发者的游戏开发",
+    "de": "Spielentwicklung von einem Fastwork-Entwickler mit 24 Bestellungen"
+   },
+   "p": {
+    "en": "฿3,000 to edit a project or fix a build (WebGL, apk, ipa), 2 days; from ฿4,000 for a playable game, 7 days",
+    "th": "฿3,000 แก้ไขโปรเจกต์หรือแก้บิลด์ (WebGL, apk, ipa) 2 วัน เริ่มต้น ฿4,000 สำหรับเกมที่เล่นได้ 7 วัน",
+    "my": "ပရောဂျက်တည်းဖြတ်ရန် သို့မဟုတ် build ပြင်ရန် (WebGL၊ apk၊ ipa) ฿3,000 (2 ရက်)၊ ကစားနိုင်သော ဂိမ်းတစ်ခုအတွက် ฿4,000 မှ စတင် (7 ရက်)",
+    "zh": "修改项目或修复构建（WebGL、apk、ipa）฿3,000，2 天；可玩游戏起价 ฿4,000，7 天",
+    "de": "฿3,000 für die Anpassung eines Projekts oder einen Build-Fix (WebGL, apk, ipa), 2 Tage; ab ฿4,000 für ein spielbares Spiel, 7 Tage"
+   },
+   "src": "https://fastwork.co/user/julalak88/game-development-19546450"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a web game for an event cost?",
+    "th": "เกมเว็บสำหรับงานอีเวนต์ราคาเท่าไร",
+    "my": "ပွဲတစ်ခုအတွက် ဝက်ဘ်ဂိမ်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "活动用的网页游戏要多少钱？",
+    "de": "Was kostet ein Web-Spiel für einen Anlass?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists a starter mini game at ฿5,000 in 7 days with 1 round of changes, a custom campaign game with ranking, missions and rewards at ฿15,000 in 15 days, and a full interactive system with a database and login at ฿30,000 in 30 days.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งลงเกมขนาดเล็กระดับเริ่มต้น ฿5,000 ใน 7 วัน แก้ไข 1 ครั้ง เกมแคมเปญที่มีอันดับ ภารกิจ และรางวัล ฿15,000 ใน 15 วัน และระบบโต้ตอบเต็มรูปแบบที่มีฐานข้อมูลและระบบล็อกอิน ฿30,000 ใน 30 วัน",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက အစပိုင်း ဂိမ်းသေးကို ฿5,000 (7 ရက်၊ ပြင်ဆင်မှု 1 ကြိမ်)၊ အဆင့်သတ်မှတ်ချက်၊ မစ်ရှင်နှင့် ဆုပါသော လှုပ်ရှားမှုဂိမ်းကို ฿15,000 (15 ရက်) နှင့် ဒေတာဘေ့စ်နှင့် လော့ဂ်အင်စနစ်ပါသော အပြည့်အစုံ အပြန်အလှန်စနစ်ကို ฿30,000 (30 ရက်) ဟု စာရင်းပြုထားသည်။",
+    "zh": "Fastwork 上一位卖家标价：入门小游戏 ฿5,000，7 天，含 1 次修改；带排名、任务和奖励的定制活动游戏 ฿15,000，15 天；带数据库和登录的完整互动系统 ฿30,000，30 天。",
+    "de": "Ein Fastwork-Anbieter nennt ein Einsteiger-Minispiel für ฿5,000 in 7 Tagen mit 1 Änderungsrunde, ein Kampagnenspiel mit Rangliste, Missionen und Belohnungen für ฿15,000 in 15 Tagen und ein volles interaktives System mit Datenbank und Login für ฿30,000 in 30 Tagen."
+   },
+   "src": "https://fastwork.co/user/wimutti/game-development-53111025"
+  },
+  {
+   "q": {
+    "en": "Do web games run on a phone?",
+    "th": "เกมเว็บเล่นบนมือถือได้ไหม",
+    "my": "ဝက်ဘ်ဂိမ်းများကို ဖုန်းတွင် ကစားနိုင်ပါသလား။",
+    "zh": "网页游戏能在手机上玩吗？",
+    "de": "Laufen Web-Spiele auf dem Handy?"
+   },
+   "a": {
+    "en": "The same Fastwork seller lists browser games for events that run on mobile and PC. Its custom campaign game runs on mobile, tablet and PC.",
+    "th": "ผู้ขายบน Fastwork รายเดียวกันลงเกมบนเบราว์เซอร์สำหรับงานที่เล่นได้บนมือถือและพีซี เกมแคมเปญแบบกำหนดเองเล่นได้บนมือถือ แท็บเล็ต และพีซี",
+    "my": "ထိုရောင်းသူကပင် ပွဲများအတွက် ဘရောက်ဇာဂိမ်းများကို မိုဘိုင်းနှင့် PC တွင် ကစားနိုင်သည်ဟု စာရင်းပြုထားသည်။ ၎င်း၏ အထူးပြုလုပ်သော လှုပ်ရှားမှုဂိမ်းကို မိုဘိုင်း၊ တက်ဘလက်နှင့် PC တွင် ကစားနိုင်သည်။",
+    "zh": "同一位 Fastwork 卖家列出可在手机和电脑上玩的活动浏览器游戏，其定制活动游戏可在手机、平板和电脑上运行。",
+    "de": "Derselbe Fastwork-Anbieter nennt Browser-Spiele für Anlässe, die auf Handy und PC laufen. Sein Kampagnenspiel läuft auf Handy, Tablet und PC."
+   },
+   "src": "https://fastwork.co/user/wimutti/game-development-53111025"
+  },
+  {
+   "q": {
+    "en": "What does an interactive explainer look like?",
+    "th": "สื่ออธิบายแบบโต้ตอบหน้าตาเป็นอย่างไร",
+    "my": "အပြန်အလှန် ရှင်းပြချက်က ဘယ်လိုပုံစံလဲ။",
+    "zh": "互动讲解页是什么样子？",
+    "de": "Wie sieht eine interaktive Erklärung aus?"
+   },
+   "a": {
+    "en": "Hongdam's page on the Golden Gate Bridge is drawn by arithmetic and shaded by the current sun, moon, fog and tide. A visitor can drag the picture, run a tide machine, play the foghorns, change the cable curve and tap rust spots to patch them. It is in English and Thai.",
+    "th": "หน้าสะพานโกลเดนเกตของหงส์ดำวาดด้วยการคำนวณ และลงเงาตามดวงอาทิตย์ ดวงจันทร์ หมอก และน้ำขึ้นน้ำลงในขณะนั้น ผู้เข้าชมลากภาพ เดินเครื่องจักรน้ำขึ้นน้ำลง ฟังแตรหมอก ปรับเส้นโค้งสายเคเบิล และแตะจุดสนิมเพื่ออุดได้ มีทั้งภาษาอังกฤษและไทย",
+    "my": "ဟုန်ဒမ်၏ Golden Gate တံတားစာမျက်နှာကို ဂဏန်းသင်္ချာဖြင့် ရေးဆွဲထားပြီး လက်ရှိ နေ၊ လ၊ မြူနှင့် ဒီရေအလိုက် အရိပ်ထည့်ထားသည်။ ဧည့်သည်က ပုံကို ဆွဲခြင်း၊ ဒီရေစက် လည်ပတ်စေခြင်း၊ မြူချန်နက်သံ ကစားခြင်း၊ ကေဘယ်လ်ကွေးကို ပြောင်းခြင်းနှင့် သံချေးအစက်များကို ထိ၍ ပြင်ခြင်းတို့ ပြုလုပ်နိုင်သည်။ အင်္ဂလိပ်နှင့် ထိုင်းဘာသာဖြင့် ရှိသည်။",
+    "zh": "鸿丹的金门大桥页面由算术绘制，按当时的太阳、月亮、雾和潮汐上色。访客可以拖动画面、运转潮汐机、听雾号、改变缆索弧度，并点按锈斑来修补。页面有英文和泰文。",
+    "de": "Hongdams Seite zur Golden Gate Bridge ist aus Arithmetik gezeichnet und nach der aktuellen Sonne, dem Mond, dem Nebel und der Tide schattiert. Besuchende können das Bild ziehen, eine Gezeitenmaschine laufen lassen, die Nebelhörner spielen, die Kabelkurve ändern und Roststellen antippen, um sie auszubessern. Sie ist auf Englisch und Thai."
+   },
+   "src": "https://nanobotco.github.io/golden-gate/"
+  },
+  {
+   "q": {
+    "en": "What does WCAG say about moving content on a page?",
+    "th": "WCAG ระบุอย่างไรเรื่องเนื้อหาที่เคลื่อนไหวบนหน้าเว็บ",
+    "my": "စာမျက်နှာပေါ်ရှိ လှုပ်ရှားသော အကြောင်းအရာအကြောင်း WCAG က ဘာပြောသလဲ။",
+    "zh": "WCAG 对页面上的动态内容有什么规定？",
+    "de": "Was sagen die WCAG zu bewegten Inhalten auf einer Seite?"
+   },
+   "a": {
+    "en": "Success criterion 2.2.2, Level A, covers moving, blinking or scrolling information that starts automatically, lasts more than five seconds and sits beside other content. It asks for a way for the user to pause, stop or hide it. It leaves out movement that is essential to the activity.",
+    "th": "เกณฑ์ความสำเร็จ 2.2.2 ระดับ A ครอบคลุมข้อมูลที่เคลื่อนไหว กะพริบ หรือเลื่อน ซึ่งเริ่มเองโดยอัตโนมัติ ยาวเกินห้าวินาที และอยู่ข้างเนื้อหาอื่น โดยให้ผู้ใช้มีวิธีหยุดชั่วคราว หยุด หรือซ่อน และไม่รวมการเคลื่อนไหวที่เป็นส่วนสำคัญของกิจกรรม",
+    "my": "အောင်မြင်မှုစံနှုန်း 2.2.2၊ အဆင့် A က အလိုအလျောက် စတင်ပြီး ငါးစက္ကန့်ထက်ကြာကာ အခြားအကြောင်းအရာ၏ ဘေးတွင်ရှိသော လှုပ်ရှား၊ မှိတ်တုတ်မှိတ်တုတ် သို့မဟုတ် ရွေ့လျားနေသော အချက်အလက်ကို ဖုံးအုပ်သည်။ အသုံးပြုသူက ရပ်နား၊ ရပ်တန့် သို့မဟုတ် ဖျောက်နိုင်သည့်နည်းလမ်း လိုအပ်သည်။ လှုပ်ရှားမှုမှာ လုပ်ဆောင်ချက်အတွက် မရှိမဖြစ်လျှင် ချန်လှပ်ထားသည်။",
+    "zh": "A 级成功准则 2.2.2 针对自动开始、持续超过五秒、且与其他内容并排的移动、闪烁或滚动信息，要求用户有办法暂停、停止或隐藏它。对活动本身必不可少的动态不在此列。",
+    "de": "Das Erfolgskriterium 2.2.2 der Stufe A betrifft bewegte, blinkende oder scrollende Informationen, die automatisch beginnen, länger als fünf Sekunden dauern und neben anderen Inhalten stehen. Es verlangt, dass Nutzende sie anhalten, stoppen oder ausblenden können. Bewegung, die für die Aktivität wesentlich ist, nimmt es aus."
+   },
+   "src": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+  },
+  {
+   "q": {
+    "en": "Who owns the code and art of a game?",
+    "th": "ใครเป็นเจ้าของโค้ดและภาพของเกม",
+    "my": "ဂိမ်းတစ်ခု၏ ကုဒ်နှင့် အနုပညာကို ဘယ်သူပိုင်သလဲ။",
+    "zh": "游戏的代码和美术归谁？",
+    "de": "Wem gehören Code und Grafik eines Spiels?"
+   },
+   "a": {
+    "en": "In Thailand copyright arises when a work is made, and computer programs are listed with literary works. A transfer of copyright must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน และโปรแกรมคอมพิวเตอร์นับเป็นงานวรรณกรรม การโอนลิขสิทธิ์ต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်ပြီး ကွန်ပျူတာပရိုဂရမ်ကို စာပေလက်ရာများနှင့်အတူ ထည့်သွင်းသည်။ မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，作品一经创作即享有版权，计算机程序与文学作品并列。版权转让必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk, und Computerprogramme zählen zu den Sprachwerken. Eine Abtretung muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "article",
+  "drawn",
+  "graphics",
+  "map-archive",
+  "web-sharecard",
+  "accessible"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "The Golden Gate Bridge, drawn by arithmetic (Hongdam)",
+    "th": "สะพานโกลเดนเกต วาดด้วยการคำนวณ (หงส์ดำ)",
+    "my": "Golden Gate တံတား၊ ဂဏန်းသင်္ချာဖြင့် ရေးဆွဲထားသည် (ဟုန်ဒမ်)",
+    "zh": "金门大桥，用算术绘制（鸿丹）",
+    "de": "Die Golden Gate Bridge, aus Arithmetik gezeichnet (Hongdam)"
+   },
+   "href": "https://nanobotco.github.io/golden-gate/"
+  },
+  {
+   "t": {
+    "en": "W3C: Pause, Stop, Hide (success criterion 2.2.2)",
+    "th": "W3C: หยุดชั่วคราว หยุด ซ่อน (เกณฑ์ 2.2.2)",
+    "my": "W3C - ရပ်နား၊ ရပ်တန့်၊ ဖျောက် (စံနှုန်း 2.2.2)",
+    "zh": "W3C：暂停、停止、隐藏（准则 2.2.2）",
+    "de": "W3C: Pause, Stop, Hide (Erfolgskriterium 2.2.2)"
+   },
+   "href": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+  }
+ ],
+ "glyphs": [
+  "dice",
+  "gears",
+  "laptop"
+ ]
+}

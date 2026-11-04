@@ -1,0 +1,275 @@
+{
+ "id": "traffic",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Site owners want to know how many visits come from people and how many from bots.",
+  "th": "เจ้าของเว็บไซต์อยากรู้ว่าการเข้าชมมาจากคนเท่าไรและจากบอทเท่าไร",
+  "my": "ဝဘ်ဆိုက်ပိုင်ရှင်များသည် ဝင်ကြည့်မှုများထဲက လူက မည်မျှ၊ ဘော့က မည်မျှ ဖြစ်သည်ကို သိလိုကြသည်။",
+  "zh": "网站主想知道，访问中有多少来自真人，有多少来自机器人。",
+  "de": "Wer eine Website betreibt, will wissen, wie viele Besuche von Menschen und wie viele von Bots stammen."
+ },
+ "n": {
+  "de": "Besucherzählung: Menschen und Bots"
+ },
+ "l": {
+  "de": "Die Besuche Ihrer Website pro Woche, aufgeteilt."
+ },
+ "glyphs": [
+  "eye",
+  "robot",
+  "earth"
+ ],
+ "steps": [
+  {
+   "db": "eye",
+   "t": {
+    "en": "Visits to your site are counted each week.",
+    "th": "นับยอดเข้าชมเว็บไซต์ของคุณรายสัปดาห์",
+    "my": "သင့်ဝဘ်ဆိုက်သို့ ဝင်ကြည့်မှုများကို အပတ်စဉ် ရေတွက်သည်။",
+    "zh": "每周统计您网站的访问量。",
+    "de": "Die Besuche Ihrer Website werden pro Woche gezählt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Each week",
+    "th": "ทุกสัปดาห์",
+    "my": "အပတ်စဉ်",
+    "zh": "每周",
+    "de": "Jede Woche"
+   }
+  },
+  {
+   "db": "robot",
+   "t": {
+    "en": "The visits are split into people and bots.",
+    "th": "แยกยอดเข้าชมเป็นคนและบอท",
+    "my": "ဝင်ကြည့်မှုများကို လူနှင့် ဘော့ဟူ၍ ခွဲသည်။",
+    "zh": "把访问分成真人和机器人。",
+    "de": "Die Besuche werden in Menschen und Bots aufgeteilt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Each week",
+    "th": "ทุกสัปดาห์",
+    "my": "အပတ်စဉ်",
+    "zh": "每周",
+    "de": "Jede Woche"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "You get the weekly numbers, people and bots apart.",
+    "th": "คุณได้รับตัวเลขรายสัปดาห์ แยกคนกับบอท",
+    "my": "လူနှင့် ဘော့ ခွဲထားသော အပတ်စဉ်ကိန်းဂဏန်းများကို သင် ရရှိသည်။",
+    "zh": "您收到每周数字，真人和机器人分开列出。",
+    "de": "Sie erhalten die Zahlen pro Woche, Menschen und Bots getrennt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Each week",
+    "th": "ทุกสัปดาห์",
+    "my": "အပတ်စဉ်",
+    "zh": "每周",
+    "de": "Jede Woche"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Cloudflare gives each request a bot score from 1 to 99. A score of 1 is automated, 2 to 29 is likely automated and 30 to 99 is likely human. Exact scores are for Enterprise customers with Bot Management; other customers see the groups.",
+    "th": "Cloudflare ให้คะแนนบอทแต่ละคำขอตั้งแต่ 1 ถึง 99 คะแนน 1 คือระบบอัตโนมัติ 2–29 น่าจะเป็นระบบอัตโนมัติ และ 30–99 น่าจะเป็นคน คะแนนละเอียดมีให้เฉพาะลูกค้า Enterprise ที่ใช้ Bot Management ลูกค้ารายอื่นเห็นเป็นกลุ่ม",
+    "my": "Cloudflare က တောင်းဆိုမှုတစ်ခုစီကို bot score 1 မှ 99 အထိ ပေးသည်။ 1 သည် အလိုအလျောက်၊ 2 မှ 29 သည် အလိုအလျောက်ဖြစ်နိုင်ခြေ များ၊ 30 မှ 99 သည် လူဖြစ်နိုင်ခြေ များသည်။ တိကျသော ရမှတ်များကို Bot Management ပါသော Enterprise ဖောက်သည်များသာ ရရှိပြီး အခြားဖောက်သည်များသည် အုပ်စုများကိုသာ မြင်ရသည်။",
+    "zh": "Cloudflare 给每个请求打 1 到 99 的机器人分数。1 为自动化，2 到 29 很可能是自动化，30 到 99 很可能是真人。具体分数只给使用 Bot Management 的 Enterprise 客户，其他客户看到的是分组。",
+    "de": "Cloudflare gibt jeder Anfrage einen Bot-Score von 1 bis 99. 1 heisst automatisiert, 2 bis 29 wahrscheinlich automatisiert, 30 bis 99 wahrscheinlich menschlich. Genaue Scores gibt es nur für Enterprise-Kunden mit Bot Management; andere Kunden sehen die Gruppen."
+   },
+   "src": "https://developers.cloudflare.com/bots/concepts/bot-score/"
+  },
+  {
+   "t": {
+    "en": "Imperva's 2026 Bad Bot Report says bots account for over 53% of all web traffic.",
+    "th": "รายงาน Bad Bot ปี 2026 ของ Imperva ระบุว่าบอทคิดเป็นกว่า 53% ของทราฟฟิกเว็บทั้งหมด",
+    "my": "Imperva ၏ 2026 Bad Bot အစီရင်ခံစာက ဘော့များသည် ဝဘ်ထရက်ဖစ်အားလုံး၏ 53% ကျော် ဖြစ်သည်ဟု ဆိုသည်။",
+    "zh": "Imperva 的 2026 年恶意机器人报告称，机器人占全部网络流量的 53% 以上。",
+    "de": "Der Bad Bot Report 2026 von Imperva sagt, Bots machten über 53% des gesamten Web-Verkehrs aus."
+   },
+   "src": "https://community-cybersec.thalesgroup.com/blogs/tim-chang/2026/05/05/the-2026-bad-bot-report-is-here"
+  },
+  {
+   "t": {
+    "en": "Plausible, a visit counter, excludes bots, referrer spam and data center traffic by default.",
+    "th": "Plausible เครื่องมือนับผู้เข้าชม ตัดบอท สแปมผู้อ้างอิง และทราฟฟิกจากดาต้าเซ็นเตอร์ออกโดยค่าเริ่มต้น",
+    "my": "လာရောက်သူရေတွက်ကိရိယာ Plausible သည် ဘော့များ၊ referrer spam နှင့် ဒေတာစင်တာမှ ထရက်ဖစ်ကို မူလအတိုင်း ဖယ်ထားသည်။",
+    "zh": "访问统计工具 Plausible 默认排除机器人、引荐垃圾流量和数据中心流量。",
+    "de": "Plausible, ein Besucherzähler, schliesst Bots, Referrer-Spam und Rechenzentrums-Verkehr standardmässig aus."
+   },
+   "src": "https://plausible.io/#pricing"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Web Analytics keeps unsampled data for 7 days. After that, the data is aggregated down to around 10%.",
+    "th": "Cloudflare Web Analytics เก็บข้อมูลที่ไม่ผ่านการสุ่มไว้ 7 วัน หลังจากนั้นข้อมูลจะถูกรวมให้เหลือราว 10%",
+    "my": "Cloudflare Web Analytics သည် နမူနာမယူထားသော ဒေတာကို ရက် 7 ရက် သိမ်းသည်။ ထိုနောက် ဒေတာကို 10% ခန့်အထိ ပေါင်းချုပ်သည်။",
+    "zh": "Cloudflare Web Analytics 保留未抽样数据 7 天，之后数据会汇总到约 10%。",
+    "de": "Cloudflare Web Analytics bewahrt Daten ohne Stichprobe 7 Tage auf. Danach werden sie auf etwa 10% zusammengefasst."
+   },
+   "src": "https://developers.cloudflare.com/web-analytics/faq/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Plausible, a visit counter that leaves bots out: Starter plan, up to 10,000 monthly pageviews (Growth US$14, Business US$19)",
+    "th": "Plausible เครื่องนับผู้เข้าชมที่ตัดบอทออก: แพ็กเกจ Starter ไม่เกิน 10,000 เพจวิวต่อเดือน (Growth US$14, Business US$19)",
+    "my": "Plausible - ဘော့များကို ဖယ်ထားသော လာရောက်သူရေတွက်ကိရိယာ: Starter အစီအစဉ်၊ တစ်လလျှင် စာမျက်နှာကြည့်မှု 10,000 အထိ (Growth US$14၊ Business US$19)",
+    "zh": "Plausible，不计机器人的访问统计工具：Starter 套餐，每月最多 10,000 次页面浏览（Growth US$14，Business US$19）",
+    "de": "Plausible, Besucherzähler ohne Bots: Tarif Starter, bis zu 10,000 Seitenaufrufe im Monat (Growth US$14, Business US$19)"
+   },
+   "p": {
+    "en": "US$9 a month",
+    "th": "US$9 ต่อเดือน",
+    "my": "တစ်လလျှင် US$9",
+    "zh": "每月 US$9",
+    "de": "US$9 pro Monat"
+   },
+   "src": "https://plausible.io/#pricing"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: Google Analytics and Google Tag Manager put on a site, with basic training, 2 days",
+    "th": "รายการบน Fastwork: ติดตั้ง Google Analytics และ Google Tag Manager บนเว็บไซต์ พร้อมสอนใช้งานเบื้องต้น 2 วัน",
+    "my": "Fastwork စာရင်း: ဝဘ်ဆိုက်တွင် Google Analytics နှင့် Google Tag Manager တပ်ဆင်ခြင်း၊ အခြေခံသင်တန်းပါ၊ ရက် 2 ရက်",
+    "zh": "Fastwork 服务页：在网站上安装 Google Analytics 和 Google Tag Manager，含基础培训，2 天",
+    "de": "Fastwork-Angebot: Google Analytics und Google Tag Manager auf einer Website eingerichtet, mit Grundschulung, 2 Tage"
+   },
+   "p": {
+    "en": "฿1,000",
+    "th": "฿1,000",
+    "my": "฿1,000",
+    "zh": "฿1,000",
+    "de": "฿1,000"
+   },
+   "src": "https://fastwork.co/user/kraus112/analytics-tracking-92813470"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: custom events set up in Google Tag Manager and sent to Google Analytics, 5 days",
+    "th": "รายการบน Fastwork: ตั้งค่า custom event ใน Google Tag Manager และส่งไป Google Analytics 5 วัน",
+    "my": "Fastwork စာရင်း: Google Tag Manager တွင် custom event များ သတ်မှတ်ပြီး Google Analytics သို့ ပို့ခြင်း၊ ရက် 5 ရက်",
+    "zh": "Fastwork 服务页：在 Google Tag Manager 设置自定义事件并发送到 Google Analytics，5 天",
+    "de": "Fastwork-Angebot: Custom Events in Google Tag Manager eingerichtet und an Google Analytics gesendet, 5 Tage"
+   },
+   "p": {
+    "en": "฿1,590",
+    "th": "฿1,590",
+    "my": "฿1,590",
+    "zh": "฿1,590",
+    "de": "฿1,590"
+   },
+   "src": "https://fastwork.co/user/kraus112/analytics-tracking-92813470"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a verified bot?",
+    "th": "verified bot คืออะไร",
+    "my": "verified bot ဆိုတာ ဘာလဲ။",
+    "zh": "什么是已验证机器人？",
+    "de": "Was ist ein Verified Bot?"
+   },
+   "a": {
+    "en": "Cloudflare calls a verified bot a bot or agent that it has confirmed is open about who it is and what it does. Examples are search engine crawlers, monitoring services and user-driven agents.",
+    "th": "Cloudflare เรียก verified bot ว่าเป็นบอทหรือเอเจนต์ที่ Cloudflare ยืนยันแล้วว่าเปิดเผยว่าตนเป็นใครและทำอะไร ตัวอย่างคือ crawler ของเสิร์ชเอนจิน บริการมอนิเตอร์ และเอเจนต์ที่ผู้ใช้สั่งงาน",
+    "my": "Cloudflare က verified bot ကို မိမိသည် မည်သူဖြစ်ပြီး ဘာလုပ်သည်ကို ပွင့်ပွင့်လင်းလင်း ပြောသည်ဟု Cloudflare က အတည်ပြုထားသော ဘော့ သို့မဟုတ် အေးဂျင့်ဟု ခေါ်သည်။ ဥပမာများမှာ ရှာဖွေရေးအင်ဂျင် crawler များ၊ စောင့်ကြည့်ရေးဝန်ဆောင်မှုများနှင့် အသုံးပြုသူ ညွှန်ကြားသော အေးဂျင့်များ ဖြစ်သည်။",
+    "zh": "Cloudflare 把已验证机器人定义为：Cloudflare 已确认其公开说明自己是谁、做什么的机器人或代理程序。例子有搜索引擎爬虫、监控服务和由用户驱动的代理程序。",
+    "de": "Cloudflare nennt einen Verified Bot einen Bot oder Agenten, von dem es bestätigt hat, dass er offenlegt, wer er ist und was er tut. Beispiele sind Crawler von Suchmaschinen, Überwachungsdienste und von Nutzern gesteuerte Agenten."
+   },
+   "src": "https://developers.cloudflare.com/bots/concepts/bot/verified-bots/"
+  },
+  {
+   "q": {
+    "en": "Does Google Analytics count bots?",
+    "th": "Google Analytics นับบอทไหม",
+    "my": "Google Analytics က ဘော့များကို ရေတွက်ပါသလား။",
+    "zh": "Google Analytics 会统计机器人吗？",
+    "de": "Zählt Google Analytics Bots?"
+   },
+   "a": {
+    "en": "Google Analytics excludes traffic from known bots and spiders automatically. Google's page says the exclusion cannot be turned off and that the amount of excluded bot traffic cannot be seen.",
+    "th": "Google Analytics ตัดทราฟฟิกจากบอทและสไปเดอร์ที่รู้จักออกโดยอัตโนมัติ หน้าเว็บของ Google ระบุว่าปิดการตัดนี้ไม่ได้ และดูไม่ได้ว่าตัดทราฟฟิกบอทไปเท่าไร",
+    "my": "Google Analytics က သိရှိပြီးသား ဘော့များနှင့် spider များမှ ထရက်ဖစ်ကို အလိုအလျောက် ဖယ်ထားသည်။ Google စာမျက်နှာက ဤဖယ်ထုတ်မှုကို ပိတ်၍မရဟု ဆိုပြီး ဖယ်ထုတ်ခဲ့သော ဘော့ထရက်ဖစ် ပမာဏကိုလည်း မမြင်ရဟု ဆိုသည်။",
+    "zh": "Google Analytics 自动排除已知机器人和蜘蛛的流量。Google 的页面说明，这项排除无法关闭，也看不到被排除的机器人流量有多少。",
+    "de": "Google Analytics schliesst den Verkehr bekannter Bots und Spider automatisch aus. Laut Google lässt sich der Ausschluss nicht abschalten, und die Menge des ausgeschlossenen Bot-Verkehrs ist nicht einsehbar."
+   },
+   "src": "https://support.google.com/analytics/answer/9888366"
+  },
+  {
+   "q": {
+    "en": "Can I count visits on a site that is not on Cloudflare?",
+    "th": "นับยอดเข้าชมเว็บไซต์ที่ไม่ได้อยู่บน Cloudflare ได้ไหม",
+    "my": "Cloudflare ပေါ်မှာ မရှိသော ဝဘ်ဆိုက်တစ်ခုရဲ့ ဝင်ကြည့်မှုကို ရေတွက်နိုင်ပါသလား။",
+    "zh": "网站不在 Cloudflare 上，也能统计访问量吗？",
+    "de": "Kann man die Besuche einer Website zählen, die nicht bei Cloudflare liegt?"
+   },
+   "a": {
+    "en": "Yes. Cloudflare's set-up page for Web Analytics adds the site by hostname, then gives a JavaScript snippet to put in the site's HTML pages before the closing body tag.",
+    "th": "ได้ หน้าตั้งค่า Web Analytics ของ Cloudflare ให้เพิ่มเว็บไซต์ด้วยชื่อโฮสต์ แล้วคัดลอกโค้ด JavaScript ไปวางในหน้า HTML ของเว็บก่อนแท็กปิด body",
+    "my": "နိုင်သည်။ Cloudflare ၏ Web Analytics ဆက်တင်စာမျက်နှာတွင် ဝဘ်ဆိုက်ကို hostname ဖြင့် ထည့်ပြီး ရလာသော JavaScript ကုဒ်ကို ဝဘ်ဆိုက်၏ HTML စာမျက်နှာများတွင် ပိတ်သည့် body tag မတိုင်မီ ထည့်ရသည်။",
+    "zh": "可以。Cloudflare 的 Web Analytics 设置页要求先按主机名添加网站，然后把给出的 JavaScript 代码放进网站 HTML 页面中结束 body 标签之前。",
+    "de": "Ja. Auf der Einrichtungsseite von Cloudflare Web Analytics fügt man die Website mit ihrem Hostnamen hinzu und setzt dann das angezeigte JavaScript-Snippet in die HTML-Seiten der Website, vor das schliessende Body-Tag."
+   },
+   "src": "https://developers.cloudflare.com/web-analytics/get-started/"
+  }
+ ],
+ "related": [
+  "data-crawl",
+  "crawl-pay",
+  "web-found",
+  "research",
+  "web-care",
+  "ai-automation"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Cloudflare Web Analytics documentation",
+    "th": "เอกสาร Cloudflare Web Analytics",
+    "my": "Cloudflare Web Analytics လမ်းညွှန်စာတမ်း",
+    "zh": "Cloudflare Web Analytics 文档",
+    "de": "Dokumentation zu Cloudflare Web Analytics"
+   },
+   "href": "https://developers.cloudflare.com/web-analytics/"
+  },
+  {
+   "t": {
+    "en": "Google Analytics Help: known bot traffic exclusion",
+    "th": "Google Analytics Help: การตัดทราฟฟิกบอทที่รู้จัก",
+    "my": "Google Analytics Help: သိရှိပြီးသား ဘော့ထရက်ဖစ် ဖယ်ထုတ်မှု",
+    "zh": "Google Analytics 帮助：排除已知机器人流量",
+    "de": "Google Analytics Hilfe: Ausschluss bekannten Bot-Verkehrs"
+   },
+   "href": "https://support.google.com/analytics/answer/9888366"
+  }
+ ]
+}

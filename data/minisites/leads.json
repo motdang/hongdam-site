@@ -1,0 +1,309 @@
+{
+ "id": "leads",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Teams that call or write to businesses start from a list: who fits, how to reach them, and where each name came from.",
+  "th": "ทีมที่โทรหรือเขียนถึงธุรกิจเริ่มจากรายชื่อ ว่าใครตรงเป้า ติดต่อทางไหน และแต่ละรายชื่อมาจากที่ใด",
+  "my": "လုပ်ငန်းများကို ဖုန်းခေါ်သည့် သို့မဟုတ် စာရေးသည့် အဖွဲ့များသည် စာရင်းတစ်ခုမှ စတင်ကြသည်။ မည်သူက ကိုက်ညီသည်၊ မည်သို့ ဆက်သွယ်ရမည်၊ နာမည်တစ်ခုစီ မည်သည့်နေရာမှ လာသည်ကို ဖော်ပြထားသည့် စာရင်း ဖြစ်သည်။",
+  "zh": "给企业打电话或写信的团队，要先有一份名单：谁合适、怎么联系、每个名字从哪里来。",
+  "de": "Wer Firmen anruft oder anschreibt, beginnt mit einer Liste: wer passt, wie man sie erreicht und woher jeder Name stammt."
+ },
+ "n": {
+  "de": "Kundenliste"
+ },
+ "l": {
+  "de": "Passende Firmen mit Telefon, E-Mail und Quelle."
+ },
+ "glyphs": [
+  "telephone",
+  "envelope",
+  "pin"
+ ],
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You give the brief: which businesses fit.",
+    "th": "คุณบอกโจทย์ว่าธุรกิจแบบไหนตรงเป้า",
+    "my": "ဘယ်လုပ်ငန်းမျိုး ကိုက်ညီသည်ကို သင်က ညွှန်ကြားချက်အဖြစ် ပေးသည်။",
+    "zh": "您给出要求：哪些企业合适。",
+    "de": "Sie geben den Auftrag an: welche Firmen passen."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်းတွင်",
+    "zh": "一开始",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Businesses that fit are listed, each with phone, email, address and source.",
+    "th": "รวบรวมธุรกิจที่ตรงเป้า แต่ละรายมีเบอร์โทร อีเมล ที่อยู่ และแหล่งที่มา",
+    "my": "ကိုက်ညီသော လုပ်ငန်းများကို စာရင်းပြုစုပြီး တစ်ခုစီတွင် ဖုန်း၊ အီးမေးလ်၊ လိပ်စာနှင့် ရင်းမြစ် ပါသည်။",
+    "zh": "列出合适的企业，每家附电话、邮箱、地址和来源。",
+    "de": "Passende Firmen werden gelistet, jede mit Telefon, E-Mail, Adresse und Quelle."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款之后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The list comes as a spreadsheet, ready to call. A business list has at least 100 rows.",
+    "th": "ส่งรายชื่อเป็นตาราง พร้อมโทร รายชื่อธุรกิจมีอย่างน้อย 100 แถว",
+    "my": "စာရင်းကို ဖုန်းခေါ်ရန် အဆင်သင့် ဇယားအဖြစ် ပို့ပေးသည်။ လုပ်ငန်းစာရင်းတွင် အနည်းဆုံး အတန်း 100 ပါသည်။",
+    "zh": "名单以表格交付，可直接打电话。企业名单至少 100 行。",
+    "de": "Die Liste kommt als Tabelle, bereit zum Anrufen. Eine Firmenliste hat mindestens 100 Zeilen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On delivery",
+    "th": "ตอนส่งมอบ",
+    "my": "ပို့ဆောင်ချိန်တွင်",
+    "zh": "交付时",
+    "de": "Bei der Lieferung"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "If a business collects personal data from a source other than the person, Section 25 of Thailand's PDPA asks for notice within 30 days and the person's consent, unless an exception applies.",
+    "th": "หากธุรกิจเก็บข้อมูลส่วนบุคคลจากแหล่งอื่นที่ไม่ใช่เจ้าของข้อมูล มาตรา 25 ของ PDPA ไทยให้แจ้งเจ้าของข้อมูลภายใน 30 วันและขอความยินยอม เว้นแต่มีข้อยกเว้น",
+    "my": "လုပ်ငန်းတစ်ခုက ပုဂ္ဂိုလ်ကိုယ်တိုင်မဟုတ်သော အရင်းအမြစ်မှ ကိုယ်ရေးအချက်အလက် စုဆောင်းလျှင် ထိုင်း PDPA ပုဒ်မ 25 အရ ခြွင်းချက်မရှိပါက ရက် 30 အတွင်း အကြောင်းကြားပြီး ထိုပုဂ္ဂိုလ်၏ ခွင့်ပြုချက် ယူရသည်။",
+    "zh": "企业从本人以外的渠道收集个人数据时，泰国 PDPA 第 25 条要求在 30 天内告知本人并取得同意，除非有例外。",
+    "de": "Holt ein Unternehmen personenbezogene Daten aus einer anderen Quelle als von der Person selbst, verlangt Section 25 des thailändischen PDPA die Information binnen 30 Tagen und die Zustimmung der Person, ausser es gilt eine Ausnahme."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Under Section 32, a person may object at any time to their data being collected, used or disclosed for direct marketing. After an objection, the business can no longer collect, use or disclose that data.",
+    "th": "ตามมาตรา 32 บุคคลคัดค้านได้ทุกเมื่อต่อการเก็บ ใช้ หรือเปิดเผยข้อมูลของตนเพื่อการตลาดแบบตรง หลังคัดค้านแล้ว ธุรกิจจะเก็บ ใช้ หรือเปิดเผยข้อมูลนั้นอีกไม่ได้",
+    "my": "ပုဒ်မ 32 အရ ပုဂ္ဂိုလ်တစ်ဦးသည် မိမိအချက်အလက်ကို တိုက်ရိုက်စျေးကွက်ရှာဖွေရေးအတွက် စုဆောင်းခြင်း၊ အသုံးပြုခြင်း၊ ထုတ်ဖော်ခြင်းကို အချိန်မရွေး ကန့်ကွက်နိုင်သည်။ ကန့်ကွက်ပြီးနောက် လုပ်ငန်းက ထိုအချက်အလက်ကို မစုဆောင်းရ၊ မသုံးရ၊ မထုတ်ဖော်ရတော့ပါ။",
+    "zh": "按第 32 条，个人可随时反对为直接营销而收集、使用或披露其数据。提出反对后，企业不得再收集、使用或披露这些数据。",
+    "de": "Nach Section 32 kann eine Person jederzeit der Erhebung, Nutzung oder Weitergabe ihrer Daten für Direktwerbung widersprechen. Nach dem Widerspruch darf das Unternehmen diese Daten nicht mehr erheben, nutzen oder weitergeben."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Section 83 sets an administrative fine of up to ฿3 million for breaking Section 25 paragraph one or Section 32 paragraph two.",
+    "th": "มาตรา 83 กำหนดโทษปรับทางปกครองสูงสุด ฿3 ล้าน สำหรับการฝ่าฝืนมาตรา 25 วรรคหนึ่ง หรือมาตรา 32 วรรคสอง",
+    "my": "ပုဒ်မ 83 က ပုဒ်မ 25 စာပိုဒ်တစ် သို့မဟုတ် ပုဒ်မ 32 စာပိုဒ်နှစ်ကို ချိုးဖောက်လျှင် အုပ်ချုပ်ရေးဒဏ်ငွေ ฿3 သန်းအထိ သတ်မှတ်သည်။",
+    "zh": "第 83 条规定，违反第 25 条第一款或第 32 条第二款的，行政罚款最高 ฿300 万。",
+    "de": "Section 83 setzt für Verstösse gegen Section 25 Absatz 1 oder Section 32 Absatz 2 ein Verwaltungsbussgeld bis ฿3 Millionen fest."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Google Maps Platform's terms (3.2.3) say a customer will not copy and save business names, addresses or user reviews from Google Maps content.",
+    "th": "ข้อกำหนดของ Google Maps Platform (ข้อ 3.2.3) ระบุว่าลูกค้าจะไม่คัดลอกและบันทึกชื่อธุรกิจ ที่อยู่ หรือรีวิวของผู้ใช้จากเนื้อหาของ Google Maps",
+    "my": "Google Maps Platform ၏ စည်းမျဉ်း (3.2.3) အရ ဖောက်သည်သည် Google Maps အကြောင်းအရာမှ လုပ်ငန်းအမည်၊ လိပ်စာ သို့မဟုတ် အသုံးပြုသူသုံးသပ်ချက်များကို ကူးပြီး မသိမ်းရ။",
+    "zh": "Google Maps Platform 条款（第 3.2.3 条）规定，客户不得从 Google 地图内容中复制并保存商家名称、地址或用户评价。",
+    "de": "Die Bedingungen von Google Maps Platform (Ziffer 3.2.3) verbieten es Kunden, Firmennamen, Adressen oder Nutzerbewertungen aus Inhalten von Google Maps zu kopieren und zu speichern."
+   },
+   "src": "https://cloud.google.com/maps-platform/terms"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Lusha, a contact-data tool: Pro plan, 600 credits a month (Free plan: 40 credits)",
+    "th": "Lusha เครื่องมือข้อมูลติดต่อ: แพ็กเกจ Pro 600 เครดิตต่อเดือน (แพ็กเกจ Free: 40 เครดิต)",
+    "my": "Lusha - ဆက်သွယ်ရန်အချက်အလက် ကိရိယာ: Pro အစီအစဉ်၊ တစ်လလျှင် credit 600 (Free အစီအစဉ်: credit 40)",
+    "zh": "Lusha，联系人数据工具：Pro 套餐，每月 600 点（Free 套餐：40 点）",
+    "de": "Lusha, Tool für Kontaktdaten: Tarif Pro, 600 Credits im Monat (Tarif Free: 40 Credits)"
+   },
+   "p": {
+    "en": "US$69.90 a month",
+    "th": "US$69.90 ต่อเดือน",
+    "my": "တစ်လလျှင် US$69.90",
+    "zh": "每月 US$69.90",
+    "de": "US$69.90 pro Monat"
+   },
+   "src": "https://www.lusha.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Lusha: Premium plan, 3,400 credits a month",
+    "th": "Lusha: แพ็กเกจ Premium 3,400 เครดิตต่อเดือน",
+    "my": "Lusha: Premium အစီအစဉ်၊ တစ်လလျှင် credit 3,400",
+    "zh": "Lusha：Premium 套餐，每月 3,400 点",
+    "de": "Lusha: Tarif Premium, 3,400 Credits im Monat"
+   },
+   "p": {
+    "en": "US$399.90 a month",
+    "th": "US$399.90 ต่อเดือน",
+    "my": "တစ်လလျှင် US$399.90",
+    "zh": "每月 US$399.90",
+    "de": "US$399.90 pro Monat"
+   },
+   "src": "https://www.lusha.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Hunter, an email finder: Starter plan, 2,000 credits a month, billed monthly (Free plan: 50 credits)",
+    "th": "Hunter เครื่องมือหาอีเมล: แพ็กเกจ Starter 2,000 เครดิตต่อเดือน จ่ายรายเดือน (แพ็กเกจ Free: 50 เครดิต)",
+    "my": "Hunter - အီးမေးလ်ရှာကိရိယာ: Starter အစီအစဉ်၊ တစ်လလျှင် credit 2,000၊ လစဉ်ပေးချေ (Free အစီအစဉ်: credit 50)",
+    "zh": "Hunter，邮箱查找工具：Starter 套餐，每月 2,000 点，按月付费（Free 套餐：50 点）",
+    "de": "Hunter, Tool zum Finden von E-Mail-Adressen: Tarif Starter, 2,000 Credits im Monat, monatlich abgerechnet (Tarif Free: 50 Credits)"
+   },
+   "p": {
+    "en": "US$49 a month",
+    "th": "US$49 ต่อเดือน",
+    "my": "တစ်လလျှင် US$49",
+    "zh": "每月 US$49",
+    "de": "US$49 pro Monat"
+   },
+   "src": "https://hunter.io/pricing"
+  },
+  {
+   "t": {
+    "en": "Hunter: Growth plan, 10,000 credits a month, billed monthly",
+    "th": "Hunter: แพ็กเกจ Growth 10,000 เครดิตต่อเดือน จ่ายรายเดือน",
+    "my": "Hunter: Growth အစီအစဉ်၊ တစ်လလျှင် credit 10,000၊ လစဉ်ပေးချေ",
+    "zh": "Hunter：Growth 套餐，每月 10,000 点，按月付费",
+    "de": "Hunter: Tarif Growth, 10,000 Credits im Monat, monatlich abgerechnet"
+   },
+   "p": {
+    "en": "US$149 a month",
+    "th": "US$149 ต่อเดือน",
+    "my": "တစ်လလျှင် US$149",
+    "zh": "每月 US$149",
+    "de": "US$149 pro Monat"
+   },
+   "src": "https://hunter.io/pricing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a contact-data tool cost?",
+    "th": "เครื่องมือหาข้อมูลติดต่อราคาเท่าไร",
+    "my": "ဆက်သွယ်ရန်အချက်အလက်ရှာသည့် ကိရိယာ၏ စျေးနှုန်းမှာ ဘယ်လောက်လဲ။",
+    "zh": "联系人数据工具收费多少？",
+    "de": "Was kostet ein Tool für Kontaktdaten?"
+   },
+   "a": {
+    "en": "Lusha lists a Free plan with 40 credits a month, Pro at US$69.90 a month with 600 credits, and Premium at US$399.90 a month with 3,400 credits. Its Scale plan has no listed price.",
+    "th": "Lusha มีแพ็กเกจ Free 40 เครดิตต่อเดือน Pro US$69.90 ต่อเดือน 600 เครดิต และ Premium US$399.90 ต่อเดือน 3,400 เครดิต แพ็กเกจ Scale ไม่แสดงราคา",
+    "my": "Lusha တွင် တစ်လလျှင် credit 40 ရသော Free အစီအစဉ်၊ တစ်လလျှင် US$69.90 နှင့် credit 600 ရသော Pro၊ တစ်လလျှင် US$399.90 နှင့် credit 3,400 ရသော Premium တို့ ရှိသည်။ Scale အစီအစဉ်တွင် စျေးနှုန်း မဖော်ပြထားပါ။",
+    "zh": "Lusha 有每月 40 点的 Free 套餐，Pro 套餐每月 US$69.90（600 点），Premium 套餐每月 US$399.90（3,400 点）。Scale 套餐未标价。",
+    "de": "Lusha führt einen Tarif Free mit 40 Credits im Monat, Pro für US$69.90 im Monat mit 600 Credits und Premium für US$399.90 im Monat mit 3,400 Credits. Für den Tarif Scale ist kein Preis angegeben."
+   },
+   "src": "https://www.lusha.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "What does an email finder cost?",
+    "th": "เครื่องมือหาอีเมลราคาเท่าไร",
+    "my": "အီးမေးလ်ရှာကိရိယာ၏ စျေးနှုန်းမှာ ဘယ်လောက်လဲ။",
+    "zh": "邮箱查找工具收费多少？",
+    "de": "Was kostet ein Tool zum Finden von E-Mail-Adressen?"
+   },
+   "a": {
+    "en": "Hunter lists a Free plan with 50 credits a month. Billed monthly, Starter is US$49 with 2,000 credits, Growth US$149 with 10,000 and Scale US$299 with 25,000. Billed yearly they are US$34, US$104 and US$209 a month.",
+    "th": "Hunter มีแพ็กเกจ Free 50 เครดิตต่อเดือน จ่ายรายเดือน Starter US$49 ได้ 2,000 เครดิต Growth US$149 ได้ 10,000 และ Scale US$299 ได้ 25,000 ถ้าจ่ายรายปีเป็น US$34 US$104 และ US$209 ต่อเดือน",
+    "my": "Hunter တွင် တစ်လလျှင် credit 50 ရသော Free အစီအစဉ် ရှိသည်။ လစဉ်ပေးချေလျှင် Starter သည် US$49 (credit 2,000)၊ Growth သည် US$149 (credit 10,000)၊ Scale သည် US$299 (credit 25,000) ဖြစ်သည်။ တစ်နှစ်စာပေးချေလျှင် တစ်လလျှင် US$34၊ US$104 နှင့် US$209 ဖြစ်သည်။",
+    "zh": "Hunter 有每月 50 点的 Free 套餐。按月付费时，Starter 为 US$49（2,000 点），Growth 为 US$149（10,000 点），Scale 为 US$299（25,000 点）。按年付费时分别为每月 US$34、US$104 和 US$209。",
+    "de": "Hunter führt einen Tarif Free mit 50 Credits im Monat. Bei monatlicher Abrechnung kostet Starter US$49 mit 2,000 Credits, Growth US$149 mit 10,000 und Scale US$299 mit 25,000. Bei jährlicher Abrechnung sind es US$34, US$104 und US$209 im Monat."
+   },
+   "src": "https://hunter.io/pricing"
+  },
+  {
+   "q": {
+    "en": "Who does Thailand's data protection law protect?",
+    "th": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลของไทยคุ้มครองใคร",
+    "my": "ထိုင်း၏ ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေက မည်သူ့ကို ကာကွယ်ပေးသလဲ။",
+    "zh": "泰国数据保护法保护谁？",
+    "de": "Wen schützt das thailändische Datenschutzgesetz?"
+   },
+   "a": {
+    "en": "Natural persons. Section 6 defines personal data as information that identifies a natural person, directly or indirectly. It leaves out information of the deceased.",
+    "th": "บุคคลธรรมดา มาตรา 6 ให้ความหมายข้อมูลส่วนบุคคลว่าเป็นข้อมูลที่ระบุตัวบุคคลธรรมดาได้ทางตรงหรือทางอ้อม โดยไม่รวมข้อมูลของผู้ถึงแก่กรรม",
+    "my": "သဘာဝပုဂ္ဂိုလ်များကို ကာကွယ်သည်။ ပုဒ်မ 6 က ကိုယ်ရေးအချက်အလက်ကို သဘာဝပုဂ္ဂိုလ်တစ်ဦးကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ဖော်ထုတ်နိုင်သော အချက်အလက်ဟု အဓိပ္ပာယ်ဖွင့်သည်။ သေဆုံးသူ၏ အချက်အလက်ကို မပါဝင်ပါ။",
+    "zh": "保护自然人。第 6 条把个人数据定义为能直接或间接识别自然人的信息，不包括已故者的信息。",
+    "de": "Natürliche Personen. Section 6 definiert personenbezogene Daten als Angaben, die eine natürliche Person direkt oder indirekt erkennbar machen. Angaben Verstorbener sind ausgenommen."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "q": {
+    "en": "Where can I look up a Thai company?",
+    "th": "ค้นข้อมูลบริษัทไทยได้ที่ไหน",
+    "my": "ထိုင်းကုမ္ပဏီတစ်ခုကို ဘယ်မှာ ရှာနိုင်သလဲ။",
+    "zh": "在哪里查泰国公司的信息？",
+    "de": "Wo kann man eine thailändische Firma nachschlagen?"
+   },
+   "a": {
+    "en": "The Department of Business Development runs DBD DataWarehouse+. Its menu lists juristic person data and financial statements, business types, foreign investment in Thai companies, business partners and statistics. The page names dbd.go.th and datawarehouse.dbd.go.th as the official addresses.",
+    "th": "กรมพัฒนาธุรกิจการค้าให้บริการ DBD DataWarehouse+ เมนูมีข้อมูลนิติบุคคลและงบการเงิน ประเภทธุรกิจ การลงทุนของต่างชาติในนิติบุคคลไทย คู่ค้า และสถิติ หน้าเว็บระบุ dbd.go.th และ datawarehouse.dbd.go.th เป็นที่อยู่ทางการ",
+    "my": "စီးပွားရေးဖွံ့ဖြိုးမှုဦးစီးဌာနက DBD DataWarehouse+ ကို လုပ်ကိုင်သည်။ မီနူးတွင် ဥပဒေပုဂ္ဂိုလ်အချက်အလက်နှင့် ဘဏ္ဍာရေးရှင်းတမ်း၊ လုပ်ငန်းအမျိုးအစား၊ ထိုင်းကုမ္ပဏီများတွင် နိုင်ငံခြားရင်းနှီးမြှုပ်နှံမှု၊ စီးပွားဖက်များနှင့် စာရင်းအင်းများ ပါသည်။ စာမျက်နှာက dbd.go.th နှင့် datawarehouse.dbd.go.th တို့ကို တရားဝင်လိပ်စာအဖြစ် ဖော်ပြထားသည်။",
+    "zh": "商业发展厅（DBD）运营 DBD DataWarehouse+。菜单列有法人数据与财务报表、行业类别、外资在泰国公司的投资、商业伙伴和统计。页面写明官方网址是 dbd.go.th 和 datawarehouse.dbd.go.th。",
+    "de": "Das Department of Business Development betreibt DBD DataWarehouse+. Das Menü führt Daten juristischer Personen und Jahresabschlüsse, Branchen, ausländische Beteiligungen an thailändischen Firmen, Geschäftspartner und Statistiken. Die Seite nennt dbd.go.th und datawarehouse.dbd.go.th als offizielle Adressen."
+   },
+   "src": "https://datawarehouse.dbd.go.th/"
+  }
+ ],
+ "related": [
+  "calls-out",
+  "data-crawl",
+  "research",
+  "places-data",
+  "newsletter",
+  "cs-desk"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Business Development: DBD DataWarehouse+",
+    "th": "กรมพัฒนาธุรกิจการค้า: DBD DataWarehouse+",
+    "my": "စီးပွားရေးဖွံ့ဖြိုးမှုဦးစီးဌာန: DBD DataWarehouse+",
+    "zh": "商业发展厅：DBD DataWarehouse+",
+    "de": "Department of Business Development: DBD DataWarehouse+"
+   },
+   "href": "https://datawarehouse.dbd.go.th/"
+  },
+  {
+   "t": {
+    "en": "Personal Data Protection Act 2019, English translation",
+    "th": "พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ฉบับแปลภาษาอังกฤษ",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ 2019 အင်္ဂလိပ်ဘာသာပြန်",
+    "zh": "《个人数据保护法》2019 年英文译本",
+    "de": "Datenschutzgesetz (PDPA) 2019, englische Übersetzung"
+   },
+   "href": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ]
+}

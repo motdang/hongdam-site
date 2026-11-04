@@ -1,0 +1,309 @@
+{
+ "id": "vibe",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People start an app or site with an AI tool (Lovable, Bolt, Replit, Cursor) and want it read through, fixed and published.",
+  "th": "คนเริ่มทำแอปหรือเว็บด้วยเครื่องมือ AI (Lovable, Bolt, Replit, Cursor) แล้วอยากให้มีคนอ่าน แก้ และเผยแพร่ให้",
+  "my": "လူတွေက AI ကိရိယာ (Lovable, Bolt, Replit, Cursor) ဖြင့် အက်ပ် သို့မဟုတ် ဆိုက်ကို စတင်ပြီး ဖတ်ရှု၊ ပြင်ဆင်၊ ထုတ်ဝေစေချင်ကြသည်။",
+  "zh": "有人用 AI 工具（Lovable、Bolt、Replit、Cursor）开了头做应用或网站，想把它审读、修好、上线。",
+  "de": "Man beginnt eine App oder Website mit einem KI-Werkzeug (Lovable, Bolt, Replit, Cursor) und möchte sie gelesen, repariert und veröffentlicht haben."
+ },
+ "n": {
+  "de": "Halbfertigen KI-Code fertigstellen"
+ },
+ "l": {
+  "de": "Lovable, Bolt, Replit, Cursor: gelesen, repariert, veröffentlicht."
+ },
+ "steps": [
+  {
+   "db": "eye",
+   "t": {
+    "en": "The app is read through. You get a written list of what is broken and which keys, logins or payments are exposed, each with its price.",
+    "th": "อ่านแอปทั้งหมด ได้รับรายการเป็นลายลักษณ์อักษรว่าอะไรพัง และคีย์ ล็อกอิน หรือการรับเงินใดเปิดโล่ง พร้อมราคาแต่ละข้อ",
+    "my": "အက်ပ်ကို ဖတ်ရှုသည်။ ပျက်နေသည်များနှင့် မည်သည့် key၊ login သို့မဟုတ် ငွေပေးချေမှုများ ဖွင့်ထားမိသည်ကို စာဖြင့်စာရင်းပြု၍ တစ်ခုချင်း ဈေးနှင့်တကွ ရရှိမည်။",
+    "zh": "通读应用。您拿到书面清单：哪里坏了，哪些密钥、登录或支付暴露在外，每项都标价。",
+    "de": "Die App wird durchgesehen. Sie erhalten schriftlich, was kaputt ist und welche Schlüssel, Logins oder Zahlungen offenliegen, jeweils mit Preis."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The read-through (its fee counts toward the finish)",
+    "th": "ช่วงอ่านโค้ด (ค่าตรวจหักจากค่าทำให้เสร็จ)",
+    "my": "ဖတ်ရှုချိန် (အခကြေးငွေကို ပြီးအောင်လုပ်ခထဲမှ နှုတ်သည်)",
+    "zh": "通读阶段（费用计入完成阶段）",
+    "de": "Die Durchsicht (ihre Gebühr wird auf die Fertigstellung angerechnet)"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "The fixes on the list are made and tests are added.",
+    "th": "แก้ตามรายการและเพิ่มการทดสอบ",
+    "my": "စာရင်းပါ ပြင်ဆင်မှုများကို လုပ်ဆောင်ပြီး စမ်းသပ်မှုများ ထပ်ထည့်သည်။",
+    "zh": "按清单修复，并加入测试。",
+    "de": "Die Korrekturen der Liste werden umgesetzt und Tests ergänzt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The finish: 15 hours of work; more hours in blocks agreed first",
+    "th": "ทำให้เสร็จ: งาน 15 ชั่วโมง ชั่วโมงเพิ่มตกลงเป็นช่วง ๆ ก่อนเริ่ม",
+    "my": "ပြီးအောင်လုပ်ခြင်း: အလုပ် 15 နာရီ၊ နာရီထပ်တိုးလျှင် မစမီ သဘောတူထားသော ကာလအလိုက်",
+    "zh": "完成阶段：15 小时工作；追加工时分段，开工前议定",
+    "de": "Die Fertigstellung: 15 Stunden Arbeit; weitere Stunden in Blöcken, die vorher vereinbart werden"
+   }
+  },
+  {
+   "db": "rocket",
+   "t": {
+    "en": "The app is published on your own accounts. What was found and fixed comes back as a list.",
+    "th": "เผยแพร่แอปบนบัญชีของคุณเอง ส่งรายการสิ่งที่เจอและที่แก้กลับให้",
+    "my": "အက်ပ်ကို သင့်ကိုယ်ပိုင်အကောင့်များပေါ်တွင် ထုတ်ဝေသည်။ တွေ့ရှိပြီး ပြင်ဆင်ခဲ့သည်များကို စာရင်းအဖြစ် ပြန်ပို့သည်။",
+    "zh": "应用发布在您自己的账户上。查出和修好的内容以清单交回。",
+    "de": "Die App wird auf Ihren eigenen Konten veröffentlicht. Was gefunden und repariert wurde, kommt als Liste zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံးတွင်",
+    "zh": "最后",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Lovable connects each project to a GitHub repository it creates. Changes made in Lovable sync to GitHub, and changes pushed to the active branch sync back. The repository can be cloned and worked on in a preferred editor, and paid plans can download the codebase.",
+    "th": "Lovable เชื่อมแต่ละโปรเจกต์กับที่เก็บโค้ด GitHub ที่มันสร้างให้ การเปลี่ยนแปลงใน Lovable ซิงก์ไป GitHub และสิ่งที่ผลักไปยังสาขาที่ใช้อยู่ซิงก์กลับ สามารถโคลนที่เก็บโค้ดมาทำงานต่อในโปรแกรมแก้โค้ดที่ชอบได้ และแพ็กเกจแบบชำระเงินดาวน์โหลดโค้ดทั้งหมดได้",
+    "my": "Lovable သည် ပရောဂျက်တစ်ခုချင်းကို ၎င်းဖန်တီးပေးသော GitHub repository နှင့် ချိတ်ဆက်သည်။ Lovable တွင် ပြောင်းလဲမှုများ GitHub သို့ sync ဖြစ်ပြီး active branch သို့ push လုပ်သည်များ ပြန် sync ဖြစ်သည်။ repository ကို clone လုပ်၍ ကိုယ်နှစ်သက်ရာ editor တွင် ဆက်လုပ်နိုင်ပြီး ငွေပေးအစီအစဉ်များတွင် codebase ကို ဒေါင်းလုဒ်လုပ်နိုင်သည်။",
+    "zh": "Lovable 把每个项目连到它创建的 GitHub 仓库。在 Lovable 里的改动同步到 GitHub，推送到当前分支的改动也同步回来。仓库可以克隆到本地，用自己习惯的编辑器继续做；付费套餐还能下载整个代码库。",
+    "de": "Lovable verbindet jedes Projekt mit einem GitHub-Repository, das es anlegt. Änderungen in Lovable werden nach GitHub synchronisiert, und Änderungen im aktiven Branch werden zurücksynchronisiert. Das Repository lässt sich klonen und im gewohnten Editor weiterbearbeiten; bezahlte Tarife können den Code zudem herunterladen."
+   },
+   "src": "https://docs.lovable.dev/integrations/github"
+  },
+  {
+   "t": {
+    "en": "Supabase's page says a table in an exposed schema without row level security (RLS, rules for who may read or change each row of a table) is readable and writable by any role with a grant on it. Once RLS is on, the API returns no data to a publishable key until policies are created.",
+    "th": "หน้าของ Supabase ระบุว่าตารางใน schema ที่เปิดให้เข้าถึงโดยไม่เปิด row level security (RLS คือกฎว่าใครอ่านหรือแก้แต่ละแถวของตารางได้) จะอ่านและเขียนได้โดยบทบาทใดก็ตามที่ได้รับสิทธิ์ เมื่อเปิด RLS แล้ว API จะไม่ส่งข้อมูลให้ publishable key จนกว่าจะสร้างนโยบาย",
+    "my": "Supabase ၏ စာမျက်နှာတွင် ဖွင့်ထားသော schema ရှိ table တစ်ခုကို row level security (RLS၊ table ၏ အတန်းတစ်ခုချင်းကို ဘယ်သူ ဖတ်/ပြင်နိုင်သည်ဟု သတ်မှတ်သော စည်းမျဉ်း) မဖွင့်ထားလျှင် grant ရထားသော role မည်သည့်အရာမဆို ဖတ်နိုင်၊ ရေးနိုင်သည်ဟု ဆိုသည်။ RLS ဖွင့်ပြီးနောက် policy များ မဖန်တီးမချင်း API သည် publishable key ကို ဒေတာ မပေးပါ။",
+    "zh": "Supabase 页面写明，暴露的 schema 里没有开启行级安全（RLS，规定谁能读或改表中每一行的规则）的表，任何拥有授权的角色都可读可写。开启 RLS 后，在创建策略之前，API 不会向 publishable key 返回数据。",
+    "de": "Laut Supabase ist eine Tabelle in einem freigegebenen Schema ohne Row Level Security (RLS, Regeln dafür, wer jede Zeile einer Tabelle lesen oder ändern darf) für jede Rolle mit einer Berechtigung les- und schreibbar. Ist RLS aktiv, liefert die API einem publishable key keine Daten, bis Richtlinien angelegt sind."
+   },
+   "src": "https://supabase.com/docs/guides/database/postgres/row-level-security"
+  },
+  {
+   "t": {
+    "en": "Stripe's page says secret API keys (codes that let software act on a Stripe account) belong in the server environment, never in source code and never embedded in apps. Publishable keys are safe to include in webpages and apps.",
+    "th": "หน้าของ Stripe ระบุว่าคีย์ลับ (secret API key คือรหัสที่ให้ซอฟต์แวร์ทำงานในบัญชี Stripe) อยู่ในสภาพแวดล้อมฝั่งเซิร์ฟเวอร์ ไม่ใส่ในซอร์สโค้ด และไม่ฝังในแอป ส่วน publishable key ใส่ในหน้าเว็บและแอปได้อย่างปลอดภัย",
+    "my": "Stripe ၏ စာမျက်နှာတွင် secret API key (ဆော့ဖ်ဝဲက Stripe အကောင့်ပေါ်တွင် လုပ်ဆောင်နိုင်စေသော ကုဒ်) များကို ဆာဗာဘက်ပတ်ဝန်းကျင်တွင် ထားရမည်ဖြစ်ပြီး source code ထဲ မထည့်ရ၊ အက်ပ်ထဲ မထည့်သွင်းရဟု ဆိုသည်။ publishable key များကို ဝက်ဘ်စာမျက်နှာနှင့် အက်ပ်များတွင် ထည့်ရန် ဘေးကင်းသည်။",
+    "zh": "Stripe 页面写明，密钥（secret API key，即让软件能在 Stripe 账户上操作的代码）属于服务器环境，不写进源代码，也不嵌入应用。publishable key 可以放在网页和应用中。",
+    "de": "Auf Stripes Seite steht, geheime API-Schlüssel (Codes, mit denen Software im Stripe-Konto handeln kann) gehörten in die Serverumgebung, nie in den Quellcode und nie eingebettet in Apps. Publishable keys dürfen in Webseiten und Apps stehen."
+   },
+   "src": "https://docs.stripe.com/keys-best-practices"
+  },
+  {
+   "t": {
+    "en": "Aibrify's page for Lovable apps lists these problems: a blank screen, sign-in failures, users seeing or changing other users' data, publishing failures, a live app that differs from the preview, data that does not save, tables without row-level security, and server-only keys exposed in the browser.",
+    "th": "หน้าของ Aibrify สำหรับแอป Lovable ระบุปัญหา ได้แก่ หน้าจอขาว ล็อกอินไม่ได้ ผู้ใช้เห็นหรือแก้ข้อมูลของผู้ใช้อื่น เผยแพร่ไม่ได้ แอปที่เผยแพร่แล้วต่างจากตัวอย่าง ข้อมูลไม่ถูกบันทึก ตารางที่ไม่มี row-level security และคีย์ที่ใช้ได้เฉพาะฝั่งเซิร์ฟเวอร์ถูกเปิดในเบราว์เซอร์",
+    "my": "Aibrify ၏ Lovable အက်ပ်စာမျက်နှာတွင် ပြဿနာများကို စာရင်းပြုထားသည်။ ဖန်သားပြင်ဖြူနေခြင်း၊ ဝင်ရောက်မှုမအောင်မြင်ခြင်း၊ အသုံးပြုသူများက အခြားသူ၏ဒေတာကို မြင်ရခြင်း သို့မဟုတ် ပြောင်းလဲနိုင်ခြင်း၊ ထုတ်ဝေမှုမအောင်မြင်ခြင်း၊ ထုတ်ဝေပြီးအက်ပ်သည် preview နှင့် ကွဲပြားခြင်း၊ ဒေတာမသိမ်းခြင်း၊ row-level security မရှိသော table များ၊ ဆာဗာသက်သက်သုံး key များ ဘရောက်ဇာတွင် ပေါ်နေခြင်း တို့ဖြစ်သည်။",
+    "zh": "Aibrify 针对 Lovable 应用的页面列出这些问题：白屏、登录失败、用户看到或改动他人的数据、发布失败、线上应用与预览不一致、数据保存不了、没有行级安全的表，以及只应在服务器端使用的密钥暴露在浏览器里。",
+    "de": "Auf Aibrifys Seite für Lovable-Apps stehen diese Probleme: ein leerer Bildschirm, Anmeldefehler, Nutzer, die Daten anderer sehen oder ändern, gescheiterte Veröffentlichungen, eine Live-App, die von der Vorschau abweicht, Daten, die nicht gespeichert werden, Tabellen ohne Row-Level-Security und nur für den Server gedachte Schlüssel, die im Browser offenliegen."
+   },
+   "src": "https://aibrify.com/fix/lovable"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Aibrify: a diagnosis within 24 hours, credited to the fix",
+    "th": "Aibrify: วินิจฉัยภายใน 24 ชั่วโมง หักจากค่าแก้",
+    "my": "Aibrify: 24 နာရီအတွင်း ရောဂါရှာဖွေခြင်း၊ ပြင်ဆင်ခထဲမှ နှုတ်သည်",
+    "zh": "Aibrify：24 小时内诊断，费用计入修复",
+    "de": "Aibrify: eine Diagnose innerhalb von 24 Stunden, auf die Reparatur angerechnet"
+   },
+   "p": {
+    "en": "US$100",
+    "th": "US$100",
+    "my": "US$100",
+    "zh": "US$100",
+    "de": "US$100"
+   },
+   "src": "https://aibrify.com/fix"
+  },
+  {
+   "t": {
+    "en": "Aibrify: one fix, chosen from the diagnosis",
+    "th": "Aibrify: แก้หนึ่งข้อ เลือกจากผลวินิจฉัย",
+    "my": "Aibrify: ရောဂါရှာဖွေမှုထဲမှ ရွေးချယ်သော ပြင်ဆင်မှုတစ်ခု",
+    "zh": "Aibrify：从诊断中选一项修复",
+    "de": "Aibrify: eine Reparatur, aus der Diagnose gewählt"
+   },
+   "p": {
+    "en": "US$100, or US$300 for a complex fix",
+    "th": "US$100 หรือ US$300 สำหรับข้อที่ซับซ้อน",
+    "my": "US$100၊ ရှုပ်ထွေးသော ပြင်ဆင်မှုအတွက် US$300",
+    "zh": "US$100，复杂的 US$300",
+    "de": "US$100, oder US$300 für eine aufwendige Reparatur"
+   },
+   "src": "https://aibrify.com/fix/lovable"
+  },
+  {
+   "t": {
+    "en": "Aibrify: a security check of the whole app",
+    "th": "Aibrify: ตรวจความปลอดภัยทั้งแอป",
+    "my": "Aibrify: အက်ပ်တစ်ခုလုံး၏ လုံခြုံရေးစစ်ဆေးမှု",
+    "zh": "Aibrify：整个应用的安全检查",
+    "de": "Aibrify: eine Sicherheitsprüfung der ganzen App"
+   },
+   "p": {
+    "en": "US$300",
+    "th": "US$300",
+    "my": "US$300",
+    "zh": "US$300",
+    "de": "US$300"
+   },
+   "src": "https://aibrify.com/fix"
+  },
+  {
+   "t": {
+    "en": "Aibrify: stabilising a shaky app",
+    "th": "Aibrify: ทำให้แอปที่ไม่นิ่งกลับมามั่นคง",
+    "my": "Aibrify: မတည်ငြိမ်သော အက်ပ်ကို တည်ငြိမ်စေခြင်း",
+    "zh": "Aibrify：让不稳定的应用稳定下来",
+    "de": "Aibrify: eine wacklige App stabilisieren"
+   },
+   "p": {
+    "en": "US$1,000",
+    "th": "US$1,000",
+    "my": "US$1,000",
+    "zh": "US$1,000",
+    "de": "US$1,000"
+   },
+   "src": "https://aibrify.com/fix"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can someone else fix an app built with Lovable?",
+    "th": "ให้คนอื่นแก้แอปที่สร้างด้วย Lovable ได้ไหม",
+    "my": "Lovable ဖြင့်ဆောက်ထားသော အက်ပ်ကို တခြားသူက ပြင်ပေးနိုင်သလား။",
+    "zh": "别人能修用 Lovable 做的应用吗？",
+    "de": "Kann jemand anderes eine mit Lovable gebaute App reparieren?"
+   },
+   "a": {
+    "en": "Lovable's GitHub page says each project can sync with a GitHub repository. The repository can be cloned and worked on in a preferred editor, and changes pushed to the active branch sync back into Lovable.",
+    "th": "หน้า GitHub ของ Lovable ระบุว่าแต่ละโปรเจกต์ซิงก์กับที่เก็บโค้ด GitHub ได้ โคลนที่เก็บโค้ดมาทำงานต่อในโปรแกรมแก้โค้ดที่ชอบได้ และสิ่งที่ผลักไปยังสาขาที่ใช้อยู่จะซิงก์กลับเข้า Lovable",
+    "my": "Lovable ၏ GitHub စာမျက်နှာတွင် ပရောဂျက်တစ်ခုချင်းသည် GitHub repository နှင့် sync လုပ်နိုင်သည်ဟု ဆိုသည်။ repository ကို clone လုပ်၍ နှစ်သက်ရာ editor တွင် ဆက်လုပ်နိုင်ပြီး active branch သို့ push လုပ်သည်များသည် Lovable ထဲသို့ ပြန် sync ဖြစ်သည်။",
+    "zh": "Lovable 的 GitHub 页面写明，每个项目都可以与一个 GitHub 仓库同步。仓库可以克隆下来，用习惯的编辑器继续做，推送到当前分支的改动会同步回 Lovable。",
+    "de": "Auf Lovables GitHub-Seite steht, dass sich jedes Projekt mit einem GitHub-Repository synchronisieren lässt. Das Repository lässt sich klonen und im gewohnten Editor weiterbearbeiten; Änderungen im aktiven Branch werden zurück nach Lovable synchronisiert."
+   },
+   "src": "https://docs.lovable.dev/integrations/github"
+  },
+  {
+   "q": {
+    "en": "Can anyone read a table when row level security is off?",
+    "th": "ถ้าไม่เปิด row level security ใครก็อ่านตารางได้ไหม",
+    "my": "row level security မဖွင့်ထားလျှင် မည်သူမဆို table ကို ဖတ်နိုင်သလား။",
+    "zh": "没开行级安全时，任何人都能读表吗？",
+    "de": "Kann jeder eine Tabelle lesen, wenn Row Level Security aus ist?"
+   },
+   "a": {
+    "en": "Supabase's page says a table in an exposed schema without RLS is readable and writable by any role with a grant on it. With RLS on, the API returns no data to a publishable key until policies are created.",
+    "th": "หน้าของ Supabase ระบุว่าตารางใน schema ที่เปิดให้เข้าถึงโดยไม่เปิด RLS อ่านและเขียนได้โดยบทบาทใดก็ตามที่ได้รับสิทธิ์ เมื่อเปิด RLS แล้ว API จะไม่ส่งข้อมูลให้ publishable key จนกว่าจะสร้างนโยบาย",
+    "my": "Supabase ၏ စာမျက်နှာတွင် ဖွင့်ထားသော schema ရှိ table တစ်ခုကို RLS မဖွင့်ထားလျှင် grant ရထားသော role မည်သည့်အရာမဆို ဖတ်နိုင်၊ ရေးနိုင်သည်ဟု ဆိုသည်။ RLS ဖွင့်ထားလျှင် policy များ မဖန်တီးမချင်း API သည် publishable key ကို ဒေတာ မပေးပါ။",
+    "zh": "Supabase 页面写明，暴露的 schema 里没有开启 RLS 的表，任何拥有授权的角色都可读可写。开启 RLS 后，在创建策略之前，API 不会向 publishable key 返回数据。",
+    "de": "Laut Supabase ist eine Tabelle in einem freigegebenen Schema ohne RLS für jede Rolle mit einer Berechtigung les- und schreibbar. Ist RLS aktiv, liefert die API einem publishable key keine Daten, bis Richtlinien angelegt sind."
+   },
+   "src": "https://supabase.com/docs/guides/database/postgres/row-level-security"
+  },
+  {
+   "q": {
+    "en": "Where does a payment key belong in an app?",
+    "th": "คีย์สำหรับรับเงินเก็บไว้ที่ไหนในแอป",
+    "my": "ငွေပေးချေမှု key ကို အက်ပ်တွင် ဘယ်နေရာထားရမလဲ။",
+    "zh": "收款用的密钥应该放在应用的哪里？",
+    "de": "Wohin gehört ein Zahlungsschlüssel in einer App?"
+   },
+   "a": {
+    "en": "Stripe's page says secret API keys belong in the server environment, never in source code and never embedded in apps. It says publishable keys are safe to include in webpages and apps.",
+    "th": "หน้าของ Stripe ระบุว่าคีย์ลับ (secret API key) อยู่ในสภาพแวดล้อมฝั่งเซิร์ฟเวอร์ ไม่ใส่ในซอร์สโค้ด และไม่ฝังในแอป ส่วน publishable key ใส่ในหน้าเว็บและแอปได้อย่างปลอดภัย",
+    "my": "Stripe ၏ စာမျက်နှာတွင် secret API key များကို ဆာဗာဘက်ပတ်ဝန်းကျင်တွင် ထားရမည်ဖြစ်ပြီး source code ထဲ မထည့်ရ၊ အက်ပ်ထဲ မထည့်သွင်းရဟု ဆိုသည်။ publishable key များကို ဝက်ဘ်စာမျက်နှာနှင့် အက်ပ်များတွင် ထည့်ရန် ဘေးကင်းသည်ဟု ဆိုသည်။",
+    "zh": "Stripe 页面写明，密钥（secret API key）属于服务器环境，不写进源代码，也不嵌入应用。publishable key 可以放在网页和应用中。",
+    "de": "Auf Stripes Seite steht, geheime API-Schlüssel gehörten in die Serverumgebung, nie in den Quellcode und nie eingebettet in Apps. Publishable keys dürfen in Webseiten und Apps stehen."
+   },
+   "src": "https://docs.stripe.com/keys-best-practices"
+  },
+  {
+   "q": {
+    "en": "How much does it cost to have an AI-built app fixed?",
+    "th": "ค่าแก้แอปที่สร้างด้วย AI เท่าไร",
+    "my": "AI ဖြင့်ဆောက်ထားသော အက်ပ်ကို ပြင်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "请人修 AI 做的应用要多少钱？",
+    "de": "Was kostet es, eine mit KI gebaute App reparieren zu lassen?"
+   },
+   "a": {
+    "en": "Aibrify's page lists a diagnosis at US$100, delivered within 24 hours and credited to the fix. A fix is usually US$100 or US$300, a security check of the whole app is US$300, and stabilising a shaky app is US$1,000.",
+    "th": "หน้าของ Aibrify ระบุค่าวินิจฉัย US$100 ส่งภายใน 24 ชั่วโมงและหักจากค่าแก้ ค่าแก้ต่อข้อมักเป็น US$100 หรือ US$300 ตรวจความปลอดภัยทั้งแอป US$300 และทำให้แอปที่ไม่นิ่งกลับมามั่นคง US$1,000",
+    "my": "Aibrify ၏ စာမျက်နှာတွင် ရောဂါရှာဖွေခ US$100 ဖြစ်ပြီး 24 နာရီအတွင်း ပို့ကာ ပြင်ဆင်ခထဲမှ နှုတ်သည်ဟု ဖော်ပြသည်။ ပြင်ဆင်မှုတစ်ခုလျှင် များသောအားဖြင့် US$100 သို့မဟုတ် US$300၊ အက်ပ်တစ်ခုလုံး လုံခြုံရေးစစ်ဆေးခ US$300၊ မတည်ငြိမ်သောအက်ပ်ကို တည်ငြိမ်စေခြင်း US$1,000 ဖြစ်သည်။",
+    "zh": "Aibrify 页面列出：诊断 US$100，24 小时内交付，费用计入修复。一项修复通常 US$100 或 US$300，整个应用的安全检查 US$300，让不稳定的应用稳定下来 US$1,000。",
+    "de": "Auf Aibrifys Seite steht eine Diagnose für US$100, geliefert innerhalb von 24 Stunden und auf die Reparatur angerechnet. Eine Reparatur kostet meist US$100 oder US$300, eine Sicherheitsprüfung der ganzen App US$300 und das Stabilisieren einer wackligen App US$1,000."
+   },
+   "src": "https://aibrify.com/fix"
+  }
+ ],
+ "related": [
+  "github",
+  "php",
+  "sec-hacked",
+  "app-test",
+  "merchant",
+  "web-care"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Lovable: GitHub integration",
+    "th": "Lovable: การเชื่อมต่อ GitHub",
+    "my": "Lovable: GitHub ချိတ်ဆက်မှု",
+    "zh": "Lovable：GitHub 集成",
+    "de": "Lovable: GitHub-Integration"
+   },
+   "href": "https://docs.lovable.dev/integrations/github"
+  },
+  {
+   "t": {
+    "en": "Supabase: Row Level Security",
+    "th": "Supabase: Row Level Security (ความปลอดภัยระดับแถว)",
+    "my": "Supabase: Row Level Security (အတန်းအဆင့် လုံခြုံရေး)",
+    "zh": "Supabase：行级安全",
+    "de": "Supabase: Row Level Security"
+   },
+   "href": "https://supabase.com/docs/guides/database/postgres/row-level-security"
+  }
+ ],
+ "glyphs": [
+  "robot",
+  "wrench",
+  "rocket"
+ ]
+}

@@ -1,0 +1,282 @@
+{
+ "id": "there",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People ask for someone at their place when a tradesperson, a landlord or a delivery comes and they want a Thai speaker there who knows the price that was agreed.",
+  "th": "คนขอให้มีคนไปอยู่ด้วยเมื่อช่าง เจ้าของบ้าน หรือคนส่งของมาที่บ้าน และอยากมีคนพูดไทยอยู่ตรงนั้นที่รู้ราคาที่ตกลงกันไว้",
+  "my": "ပြင်ဆင်သူ၊ အိမ်ရှင် သို့မဟုတ် ပို့ဆောင်သူ လာသောအခါ ထိုင်းစကားပြောနိုင်ပြီး သဘောတူထားသော စျေးကို သိသူတစ်ဦး ရှိစေလိုသဖြင့် လူတွေက သူတို့နေရာသို့ လူလာပေးရန် တောင်းကြသည်။",
+  "zh": "师傅、房东或送货人上门时，人们希望有一位会说泰语、知道已谈好价钱的人在场。",
+  "de": "Man bittet um jemanden vor Ort, wenn ein Handwerker, eine Vermieterin oder eine Lieferung kommt und man eine thailändisch sprechende Person dabeihaben will, die den vereinbarten Preis kennt."
+ },
+ "n": {
+  "de": "Jemand bei Ihnen vor Ort"
+ },
+ "l": {
+  "de": "Trifft den Handwerker oder Vermieter, übersetzt, prüft die Arbeit."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "You tell us the place and the time, in Chiang Rai or Chiang Mai.",
+    "th": "คุณบอกสถานที่และเวลา ในเชียงรายหรือเชียงใหม่",
+    "my": "ချင်းရိုင် သို့မဟုတ် ချင်းမိုင်ရှိ နေရာနှင့် အချိန်ကို သင်က ပြောပြသည်။",
+    "zh": "您告诉我们在清莱或清迈的地点和时间。",
+    "de": "Sie nennen uns den Ort und die Zeit, in Chiang Rai oder Chiang Mai."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนไปพบ",
+    "my": "မလာမီ",
+    "zh": "到场之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "home",
+   "t": {
+    "en": "We meet the tradesperson, landlord or delivery at your place and interpret.",
+    "th": "เราไปพบช่าง เจ้าของบ้าน หรือคนส่งของที่บ้านคุณ และเป็นล่าม",
+    "my": "ပြင်ဆင်သူ၊ အိမ်ရှင် သို့မဟုတ် ပို့ဆောင်သူကို သင့်နေရာတွင် တွေ့ပြီး စကားပြန်ပေးသည်။",
+    "zh": "我们在您的住处接待师傅、房东或送货人，并担任翻译。",
+    "de": "Wir treffen den Handwerker, die Vermieterin oder die Lieferung bei Ihnen und übersetzen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At your place, by the hour",
+    "th": "ที่บ้านคุณ คิดเป็นรายชั่วโมง",
+    "my": "သင့်နေရာတွင် နာရီအလိုက်",
+    "zh": "在您的住处，按小时",
+    "de": "Bei Ihnen, stundenweise"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "We check the work against the agreed price.",
+    "th": "เราตรวจงานเทียบกับราคาที่ตกลงไว้",
+    "my": "သဘောတူထားသော စျေးနှင့် အလုပ်ကို နှိုင်းယှဉ်စစ်ဆေးပေးသည်။",
+    "zh": "我们对照谈好的价钱检查工作。",
+    "de": "Wir prüfen die Arbeit gegen den vereinbarten Preis."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At your place",
+    "th": "ที่บ้านคุณ",
+    "my": "သင့်နေရာတွင်",
+    "zh": "在您的住处",
+    "de": "Bei Ihnen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A 2025 notification of the Consumer Protection Board's contract committee (B.E. 2568) covers residential building leasing. It says water and electricity charges must not exceed the rates set by the state, and the Board suggested landlords keep electricity to ฿4.88 a unit.",
+    "th": "ประกาศคณะกรรมการว่าด้วยสัญญาของ สคบ. เรื่อง ธุรกิจการให้เช่าอาคารเพื่ออยู่อาศัย พ.ศ. 2568 (ค.ศ. 2025) ระบุว่าค่าน้ำและค่าไฟต้องไม่เกินอัตราที่หน่วยงานรัฐกำหนด และ สคบ. เสนอให้ผู้ให้เช่าเก็บค่าไฟไม่เกิน ฿4.88 ต่อหน่วย",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့၏ စာချုပ်ကော်မတီ၏ 2025 (ဗုဒ္ဓသက္ကရာဇ် 2568) ကြေညာချက်သည် နေထိုင်ရန် အဆောက်အအုံ ငှားရမ်းခြင်းကို အကျုံးဝင်သည်။ ရေနှင့် မီးခကို နိုင်ငံတော်သတ်မှတ်ထားသော နှုန်းထက် မကျော်ရဟု ဆိုပြီး အိမ်ရှင်များက မီးခကို တစ်ယူနစ်လျှင် ฿4.88 အထိ ထားရှိရန် ဘုတ်အဖွဲ့က အကြံပြုသည်။",
+    "zh": "消费者保护委员会合同委员会 2025 年（佛历 2568）的公告涉及居住用建筑的出租。公告规定水电费不得超过国家规定的费率，该委员会还建议房东把电费控制在每度 ฿4.88。",
+    "de": "Eine Bekanntmachung des Vertragsausschusses des Konsumentenschutzrates von 2025 (B.E. 2568) betrifft die Vermietung von Wohngebäuden. Danach dürfen Wasser- und Stromgebühren die staatlich festgesetzten Sätze nicht übersteigen, und der Rat schlug Vermietern vor, den Strom bei ฿4.88 pro Einheit zu halten."
+   },
+   "src": "https://www.ocpb.go.th/news_view.php?nid=17393"
+  },
+  {
+   "t": {
+    "en": "A landlord who accommodates a foreigner on a temporary basis notifies immigration within 24 hours of the foreigner's arrival, on form TM.30.",
+    "th": "ผู้ให้เช่าที่ให้คนต่างด้าวพักอาศัยชั่วคราวแจ้งสำนักงานตรวจคนเข้าเมืองภายใน 24 ชั่วโมงนับจากที่คนต่างด้าวเข้าพัก โดยใช้แบบ ตม.30",
+    "my": "နိုင်ငံခြားသားကို ယာယီတည်းခိုစေသော အိမ်ရှင်သည် နိုင်ငံခြားသား ရောက်ရှိပြီး 24 နာရီအတွင်း TM.30 ပုံစံဖြင့် လူဝင်မှုကြီးကြပ်ရေးသို့ အကြောင်းကြားသည်။",
+    "zh": "临时接待外国人的房东，在外国人入住后 24 小时内用 TM.30 表格通知移民部门。",
+    "de": "Eine Vermieterin oder ein Vermieter, der einen Ausländer vorübergehend beherbergt, meldet dessen Ankunft innerhalb von 24 Stunden mit dem Formular TM.30 der Einwanderungsbehörde."
+   },
+   "src": "https://www.immigration.go.th/?p=14721"
+  },
+  {
+   "t": {
+    "en": "The Consumer Protection Board takes complaints through the OCPB Connect app and at the provincial hall or Damrongdhama Center of each province, and gives 1166 for advice.",
+    "th": "สำนักงานคณะกรรมการคุ้มครองผู้บริโภครับเรื่องร้องเรียนผ่านแอป OCPB Connect และที่ศาลากลางจังหวัดหรือศูนย์ดำรงธรรมของแต่ละจังหวัด และมีสายด่วน 1166 สำหรับขอคำปรึกษา",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့က OCPB Connect အက်ပ်မှတစ်ဆင့်လည်းကောင်း၊ ပြည်နယ်တစ်ခုချင်း၏ ခရိုင်ခန်းမ သို့မဟုတ် ဒမ်ရောင်ဒမ်မာစင်တာတွင်လည်းကောင်း တိုင်ကြားမှုများ လက်ခံပြီး အကြံဉာဏ်အတွက် 1166 ကို ပေးထားသည်။",
+    "zh": "消费者保护委员会通过 OCPB Connect 应用受理投诉，各府的府政厅或 Damrongdhama 中心也可受理，咨询电话是 1166。",
+    "de": "Der Konsumentenschutzrat nimmt Beschwerden über die App OCPB Connect und bei der Provinzverwaltung oder dem Damrongdhama-Zentrum jeder Provinz entgegen und nennt 1166 für Beratung."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Online interpreter on Fastwork: hourly package, half day up to 4 hours, full day up to 8 hours (the seller limits on-site work to Bangkok and nearby)",
+    "th": "ล่ามออนไลน์บน Fastwork: แพ็กเกจรายชั่วโมง ครึ่งวันไม่เกิน 4 ชั่วโมง เต็มวันไม่เกิน 8 ชั่วโมง (ผู้ขายจำกัดงานนอกสถานที่ในกรุงเทพฯ และพื้นที่ใกล้เคียง)",
+    "my": "Fastwork ပေါ်ရှိ အွန်လိုင်းစကားပြန်: နာရီအလိုက်ပက်ကေ့ချ်၊ နေ့ဝက် 4 နာရီအထိ၊ တစ်ရက်လုံး 8 နာရီအထိ (ရောင်းချသူက ပြင်ပနေရာအလုပ်ကို ဘန်ကောက်နှင့် အနီးအနားတွင်သာ ကန့်သတ်သည်)",
+    "zh": "Fastwork 上的在线口译：按小时套餐，半天最长 4 小时，全天最长 8 小时（卖家把上门口译限定在曼谷及附近）",
+    "de": "Online-Dolmetschen auf Fastwork: Stundenpaket, halber Tag bis 4 Stunden, ganzer Tag bis 8 Stunden (Einsätze vor Ort beschränkt der Anbieter auf Bangkok und Umgebung)"
+   },
+   "p": {
+    "en": "Hourly package from ฿800 · half day ฿2,500 · full day ฿5,000",
+    "th": "แพ็กเกจรายชั่วโมงเริ่มต้น ฿800 · ครึ่งวัน ฿2,500 · เต็มวัน ฿5,000",
+    "my": "နာရီအလိုက်ပက်ကေ့ချ် ฿800 မှ စ · နေ့ဝက် ฿2,500 · တစ်ရက်လုံး ฿5,000",
+    "zh": "按小时套餐 ฿800 起 · 半天 ฿2,500 · 全天 ฿5,000",
+    "de": "Stundenpaket ab ฿800 · halber Tag ฿2,500 · ganzer Tag ฿5,000"
+   },
+   "src": "https://fastwork.co/user/thaidoctranslation/translator-16388642"
+  },
+  {
+   "t": {
+    "en": "Personal assistant who schedules appointments and coordinates matters, on Fastwork; hourly, daily or monthly by agreement",
+    "th": "ผู้ช่วยส่วนตัวที่นัดหมายและประสานงานให้ บน Fastwork ตกลงเป็นรายชั่วโมง รายวัน หรือรายเดือน",
+    "my": "Fastwork ပေါ်ရှိ ချိန်းဆိုခြင်းနှင့် ညှိနှိုင်းပေးသော ကိုယ်ပိုင်လက်ထောက်: နာရီ၊ နေ့ သို့မဟုတ် လအလိုက် သဘောတူညီမှုဖြင့်",
+    "zh": "Fastwork 上负责约时间、协调事务的私人助理，按小时、按天或按月商定",
+    "de": "Persönliche Assistenz auf Fastwork, die Termine vereinbart und koordiniert; stunden-, tage- oder monatsweise nach Absprache"
+   },
+   "p": {
+    "en": "From ฿500",
+    "th": "เริ่มต้น ฿500",
+    "my": "စတင်ဈေး ฿500",
+    "zh": "起价 ฿500",
+    "de": "Ab ฿500"
+   },
+   "src": "https://fastwork.co/user/alldayproject/secretary-76652151"
+  },
+  {
+   "t": {
+    "en": "A Chiang Mai–Lamphun plumber on Fastwork: pipes and faucets, priced by a quote after the technician talks through the job",
+    "th": "ช่างประปาในเชียงใหม่–ลำพูนบน Fastwork: ท่อและก๊อกน้ำ ราคาตามใบเสนอราคาหลังช่างคุยรายละเอียดงาน",
+    "my": "Fastwork ပေါ်ရှိ ချင်းမိုင်–လမ်ဖွန် ပိုက်ဆရာ: ပိုက်နှင့် ရေပိုက်ခေါင်း၊ ဆရာက အလုပ်အသေးစိတ်ကို ပြောပြီးနောက် ကိုးတေးရှင်းဖြင့် စျေးသတ်မှတ်သည်",
+    "zh": "Fastwork 上清迈–南奔的水管工：管道和水龙头，师傅谈清工作内容后按报价收费",
+    "de": "Klempner in Chiang Mai–Lamphun auf Fastwork: Rohre und Wasserhähne, Preis nach Offerte, sobald die Fachperson den Auftrag besprochen hat"
+   },
+   "p": {
+    "en": "From ฿500",
+    "th": "เริ่มต้น ฿500",
+    "my": "စတင်ဈေး ฿500",
+    "zh": "起价 ฿500",
+    "de": "Ab ฿500"
+   },
+   "src": "https://fastwork.co/user/kayan.air/plumbing-17034578"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Does a landlord have to report a foreign tenant to immigration?",
+    "th": "เจ้าของบ้านต้องแจ้งตรวจคนเข้าเมืองเมื่อมีผู้เช่าเป็นชาวต่างชาติไหม",
+    "my": "နိုင်ငံခြားသား ငှားရမ်းသူရှိလျှင် အိမ်ရှင်က လူဝင်မှုကြီးကြပ်ရေးသို့ အကြောင်းကြားရပါသလား။",
+    "zh": "房东需要向移民局报告外国租客吗？",
+    "de": "Muss eine Vermieterin einen ausländischen Mieter der Einwanderungsbehörde melden?"
+   },
+   "a": {
+    "en": "The Immigration Bureau's page names landlords and house owners who accommodate foreign nationals on a temporary basis. The notice is due within 24 hours of arrival, to the local immigration office or, where there is none, the local police station.",
+    "th": "หน้าเว็บของสำนักงานตรวจคนเข้าเมืองระบุผู้ให้เช่าและเจ้าของบ้านที่ให้คนต่างด้าวพักอาศัยชั่วคราว ต้องแจ้งภายใน 24 ชั่วโมงนับจากเข้าพัก ที่สำนักงานตรวจคนเข้าเมืองท้องที่ หรือสถานีตำรวจท้องที่ในพื้นที่ที่ไม่มีสำนักงานตรวจคนเข้าเมือง",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန၏ စာမျက်နှာတွင် နိုင်ငံခြားသားကို ယာယီတည်းခိုစေသော အိမ်ရှင်များနှင့် အိမ်ပိုင်ရှင်များကို ဖော်ပြထားသည်။ ရောက်ရှိပြီး 24 နာရီအတွင်း ဒေသခံလူဝင်မှုကြီးကြပ်ရေးရုံးသို့ အကြောင်းကြားရပြီး ထိုရုံးမရှိလျှင် ဒေသခံရဲစခန်းသို့ ဖြစ်သည်။",
+    "zh": "移民局页面点名了临时接待外国人的房东和房主。须在入住后 24 小时内通知当地移民办公室；没有移民办公室的地方，通知当地警察局。",
+    "de": "Die Seite der Einwanderungsbehörde nennt Vermieter und Hauseigentümer, die Ausländer vorübergehend beherbergen. Die Meldung ist innerhalb von 24 Stunden nach der Ankunft fällig, bei der örtlichen Einwanderungsstelle oder, wo es keine gibt, beim örtlichen Polizeiposten."
+   },
+   "src": "https://www.immigration.go.th/?p=14721"
+  },
+  {
+   "q": {
+    "en": "Can a landlord charge any price for electricity and water?",
+    "th": "เจ้าของบ้านคิดค่าน้ำค่าไฟเท่าไรก็ได้หรือไม่",
+    "my": "အိမ်ရှင်က မီးခ၊ ရေခကို စျေးမည်မျှမဆို ကောက်နိုင်ပါသလား။",
+    "zh": "房东可以随意收水电费吗？",
+    "de": "Darf eine Vermieterin für Strom und Wasser jeden Preis verlangen?"
+   },
+   "a": {
+    "en": "The Consumer Protection Board's 2025 notification on residential leases says water and electricity charges must not exceed the rates set by the state. The Board suggested ฿4.88 a unit as the electricity cap.",
+    "th": "ประกาศของ สคบ. พ.ศ. 2568 (ค.ศ. 2025) เรื่องการเช่าอาคารเพื่ออยู่อาศัยระบุว่า ค่าน้ำและค่าไฟต้องไม่เกินอัตราที่รัฐกำหนด และ สคบ. เสนอให้ค่าไฟไม่เกิน ฿4.88 ต่อหน่วย",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့၏ 2025 နေထိုင်ရန်ငှားရမ်းခြင်း ကြေညာချက်က ရေနှင့် မီးခသည် နိုင်ငံတော်သတ်မှတ်ထားသော နှုန်းထက် မကျော်ရဟု ဆိုသည်။ မီးခကန့်သတ်ချက်အဖြစ် တစ်ယူနစ်လျှင် ฿4.88 ကို ဘုတ်အဖွဲ့က အကြံပြုသည်။",
+    "zh": "消费者保护委员会 2025 年关于居住用房出租的公告写明，水电费不得超过国家规定的费率，并建议电费上限为每度 ฿4.88。",
+    "de": "Die Bekanntmachung des Konsumentenschutzrates von 2025 zur Wohnungsmiete besagt, dass Wasser- und Stromgebühren die staatlich festgesetzten Sätze nicht übersteigen dürfen. Als Obergrenze für Strom schlug der Rat ฿4.88 pro Einheit vor."
+   },
+   "src": "https://www.ocpb.go.th/news_view.php?nid=17393"
+  },
+  {
+   "q": {
+    "en": "Where can I complain about a landlord?",
+    "th": "ร้องเรียนเจ้าของบ้านได้ที่ไหน",
+    "my": "အိမ်ရှင်အပေါ် တိုင်ကြားရန် ဘယ်မှာ ရပါသလဲ။",
+    "zh": "对房东的投诉可以向哪里提？",
+    "de": "Wo kann ich mich über eine Vermieterin beschweren?"
+   },
+   "a": {
+    "en": "The Consumer Protection Board's FAQ lists its hotline 1166, the OCPB Connect app, the website complaint system, and the provincial hall or Damrongdhama Center of a province. A foreigner can also submit a complaint personally in Bangkok, online or by post.",
+    "th": "หน้าคำถามที่พบบ่อยของ สคบ. ระบุสายด่วน 1166 แอป OCPB Connect ระบบร้องทุกข์ทางเว็บไซต์ และศาลากลางจังหวัดหรือศูนย์ดำรงธรรม ชาวต่างชาติยื่นเรื่องด้วยตนเองที่กรุงเทพฯ ทางออนไลน์ หรือทางไปรษณีย์ได้ด้วย",
+    "my": "OCPB ၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာတွင် 1166 ဟော့လိုင်း၊ OCPB Connect အက်ပ်၊ ဝက်ဘ်ဆိုက်တိုင်ကြားမှုစနစ်နှင့် ပြည်နယ်ခရိုင်ခန်းမ သို့မဟုတ် ဒမ်ရောင်ဒမ်မာစင်တာတို့ကို ဖော်ပြထားသည်။ နိုင်ငံခြားသားသည် ဘန်ကောက်တွင် ကိုယ်တိုင်၊ အွန်လိုင်း သို့မဟုတ် စာပို့ဖြင့်လည်း တိုင်ကြားနိုင်သည်။",
+    "zh": "OCPB 的常见问题页列出热线 1166、OCPB Connect 应用、网站投诉系统，以及府政厅或 Damrongdhama 中心。外国人也可以到曼谷亲自提交、在线提交或邮寄。",
+    "de": "Die FAQ-Seite des Konsumentenschutzrates nennt die Hotline 1166, die App OCPB Connect, das Beschwerdesystem auf der Website sowie die Provinzverwaltung oder das Damrongdhama-Zentrum. Ausländer können eine Beschwerde auch persönlich in Bangkok, online oder per Post einreichen."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "q": {
+    "en": "What does an interpreter cost?",
+    "th": "ล่ามคิดค่าบริการเท่าไร",
+    "my": "စကားပြန်ကြေး ဘယ်လောက်လဲ။",
+    "zh": "请口译员要多少钱？",
+    "de": "Was kostet eine Dolmetschperson?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists an online interpreter package from ฿800, ฿2,500 for a half day of up to 4 hours and ฿5,000 for a full day of up to 8 hours. The listing says on-site work is limited to Bangkok and nearby, with travel not included.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ระบุแพ็กเกจล่ามออนไลน์เริ่มต้น ฿800 ครึ่งวันไม่เกิน 4 ชั่วโมง ฿2,500 และเต็มวันไม่เกิน 8 ชั่วโมง ฿5,000 รายการระบุว่างานนอกสถานที่จำกัดในกรุงเทพฯ และพื้นที่ใกล้เคียง และไม่รวมค่าเดินทาง",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက အွန်လိုင်းစကားပြန်ပက်ကေ့ချ် ฿800 မှစ၍၊ 4 နာရီအထိ နေ့ဝက် ฿2,500 နှင့် 8 နာရီအထိ တစ်ရက်လုံး ฿5,000 တို့ကို ဖော်ပြထားသည်။ ပြင်ပနေရာအလုပ်ကို ဘန်ကောက်နှင့် အနီးအနားတွင်သာ ကန့်သတ်ပြီး ခရီးစရိတ် မပါဟု စာရင်းတွင် ဆိုသည်။",
+    "zh": "Fastwork 上一位卖家列出在线口译套餐 ฿800 起，半天（最长 4 小时）฿2,500，全天（最长 8 小时）฿5,000。商品页写明，上门口译仅限曼谷及附近，交通费另计。",
+    "de": "Ein Anbieter auf Fastwork nennt ein Online-Dolmetschpaket ab ฿800, ฿2,500 für einen halben Tag bis 4 Stunden und ฿5,000 für einen ganzen Tag bis 8 Stunden. Laut Angebot beschränkt sich der Einsatz vor Ort auf Bangkok und Umgebung, die Anreise ist nicht inbegriffen."
+   },
+   "src": "https://fastwork.co/user/thaidoctranslation/translator-16388642"
+  }
+ ],
+ "related": [
+  "call",
+  "trades",
+  "dispute",
+  "interp",
+  "stay-rent",
+  "errand"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Consumer Protection Board: residential lease rules and how to complain",
+    "th": "สคบ.: เกณฑ์การเช่าที่พักอาศัยและช่องทางร้องเรียน",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့: နေထိုင်ရန်ငှားရမ်းခြင်းစည်းမျဉ်းနှင့် တိုင်ကြားနည်း",
+    "zh": "消费者保护委员会：住宅租赁规则与投诉方式",
+    "de": "Konsumentenschutzrat: Regeln zur Wohnungsmiete und Beschwerdewege"
+   },
+   "href": "https://www.ocpb.go.th/news_view.php?nid=17393"
+  },
+  {
+   "t": {
+    "en": "Immigration Bureau: notification of residence (TM.30)",
+    "th": "สำนักงานตรวจคนเข้าเมือง: การแจ้งที่พักอาศัย (ตม.30)",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန: နေရပ်အကြောင်းကြားခြင်း (TM.30)",
+    "zh": "移民局：住宿通报（TM.30）",
+    "de": "Einwanderungsbehörde: Meldung der Unterkunft (TM.30)"
+   },
+   "href": "https://www.immigration.go.th/?p=14721"
+  }
+ ],
+ "glyphs": [
+  "home",
+  "eye",
+  "translate"
+ ]
+}

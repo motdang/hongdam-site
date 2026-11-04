@@ -1,0 +1,326 @@
+{
+ "id": "line-memory",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A person who joins a LINE group later cannot see the chat messages sent before, so the group answers the same questions again.",
+  "th": "คนที่เข้ากลุ่มไลน์ทีหลังมองไม่เห็นข้อความแชทที่ส่งไปก่อนหน้า กลุ่มจึงต้องตอบคำถามเดิมซ้ำอีก",
+  "my": "LINE အုပ်စုသို့ နောက်မှဝင်လာသူသည် ယခင်ပို့ထားသော ချတ်စာများကို မမြင်ရသဖြင့် အုပ်စုက မေးခွန်းတူများကို ထပ်ဖြေရသည်။",
+  "zh": "后加入 LINE 群的人看不到入群之前的聊天消息，群里只好把同样的问题再答一遍。",
+  "de": "Wer später in eine LINE-Gruppe kommt, sieht die früheren Chat-Nachrichten nicht, und die Gruppe beantwortet dieselben Fragen noch einmal."
+ },
+ "n": {
+  "de": "Gedächtnis für Ihre LINE-Gruppe"
+ },
+ "l": {
+  "de": "Neue Mitglieder erhalten, was die Gruppe schon gesagt hat."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "Your group's messages are kept, with the name of who said it and the date.",
+    "th": "เก็บข้อความของกลุ่มไว้ พร้อมชื่อผู้พูดและวันที่",
+    "my": "အုပ်စု၏ စာများကို ပြောသူအမည်နှင့် ရက်စွဲတို့နှင့်အတူ သိမ်းထားသည်။",
+    "zh": "群里的消息连同发言人和日期一起保存。",
+    "de": "Die Nachrichten Ihrer Gruppe werden mit dem Namen der Person und dem Datum aufbewahrt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "A new member asks a question and gets what the group already said.",
+    "th": "สมาชิกใหม่ถามคำถามและได้คำตอบจากสิ่งที่กลุ่มเคยคุยไว้",
+    "my": "အဖွဲ့ဝင်အသစ်က မေးလျှင် အုပ်စုက ယခင်ပြောခဲ့ပြီးသော အဖြေကို ရသည်။",
+    "zh": "新成员提问，得到群里以前说过的内容。",
+    "de": "Ein neues Mitglied fragt und erhält, was die Gruppe schon gesagt hat."
+   },
+   "who": {
+    "en": "The new member",
+    "th": "สมาชิกใหม่",
+    "my": "အဖွဲ့ဝင်အသစ်",
+    "zh": "新成员",
+    "de": "Das neue Mitglied"
+   },
+   "time": {
+    "en": "When they ask",
+    "th": "เมื่อถาม",
+    "my": "မေးသည့်အခါ",
+    "zh": "提问时",
+    "de": "Bei der Frage"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "Cases are handed out by town.",
+    "th": "แจกเรื่องให้ตามเมือง",
+    "my": "ကိစ္စများကို မြို့အလိုက် ခွဲဝေပေးသည်။",
+    "zh": "按城镇分派事项。",
+    "de": "Fälle werden nach Ort verteilt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "As cases come in",
+    "th": "เมื่อมีเรื่องเข้ามา",
+    "my": "ကိစ္စဝင်လာသည့်အခါ",
+    "zh": "有事项进来时",
+    "de": "Wenn Fälle eingehen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "LINE's help page says a person who joins a group can see the Note and Album posts made while the invitation was pending, but not the chat messages posted before they joined.",
+    "th": "หน้าช่วยเหลือของ LINE ระบุว่า คนที่เข้ากลุ่มเห็นโพสต์ใน Note และ Album ที่ลงไว้ระหว่างที่คำเชิญยังรออยู่ แต่ไม่เห็นข้อความแชทที่ส่งก่อนเข้ากลุ่ม",
+    "my": "LINE ၏ အကူအညီစာမျက်နှာတွင် အုပ်စုသို့ဝင်သူသည် ဖိတ်ကြားချက် စောင့်ဆိုင်းနေစဉ်အတွင်း တင်ထားသော Note နှင့် Album ပို့စ်များကို မြင်ရသော်လည်း ဝင်ခွင့်မရမီ ပို့ထားသော ချတ်စာများကို မမြင်ရဟု ဖော်ပြထားသည်။",
+    "zh": "LINE 帮助页写明：入群者可以看到邀请待处理期间发布的记事本（Note）和相册（Album）帖子，但看不到入群之前的聊天消息。",
+    "de": "Auf der Hilfeseite von LINE steht: Wer einer Gruppe beitritt, sieht die Note- und Album-Beiträge aus der Zeit, in der die Einladung offen war, aber nicht die Chat-Nachrichten, die vor dem Beitritt gesendet wurden."
+   },
+   "src": "https://help.line.me/line/smartphone/sp?contentId=20008159&lang=en"
+  },
+  {
+   "t": {
+    "en": "A LINE group holds up to 500 members, the creator included. With the setting \"Members join automatically\" on, the limit is 100.",
+    "th": "กลุ่ม LINE มีสมาชิกได้สูงสุด 500 คน รวมผู้สร้างกลุ่ม ถ้าเปิดการตั้งค่า \"สมาชิกเข้าร่วมอัตโนมัติ\" จะมีได้สูงสุด 100 คน",
+    "my": "LINE အုပ်စုတစ်ခုတွင် ဖန်တီးသူအပါအဝင် အဖွဲ့ဝင် 500 ဦးအထိ ရှိနိုင်သည်။ \"အဖွဲ့ဝင်များ အလိုအလျောက်ဝင်ရောက်ခြင်း\" ကို ဖွင့်ထားလျှင် 100 ဦးအထိသာ ရသည်။",
+    "zh": "一个 LINE 群最多 500 人，群主算在内。若开启“成员自动加入”，上限为 100 人。",
+    "de": "Eine LINE-Gruppe fasst bis zu 500 Mitglieder, die Gründerin oder den Gründer eingerechnet. Ist die Einstellung «Mitglieder treten automatisch bei» eingeschaltet, liegt die Grenze bei 100."
+   },
+   "src": "https://help.line.me/line/smartphone/sp?contentId=20008159&lang=en"
+  },
+  {
+   "t": {
+    "en": "After a person leaves a LINE group, they can no longer see its past posts, albums and notes. When a group is deleted, everything posted in it is deleted and cannot be restored.",
+    "th": "เมื่อออกจากกลุ่ม LINE จะดูโพสต์ อัลบั้ม และโน้ตเก่าของกลุ่มไม่ได้อีก เมื่อลบกลุ่ม ข้อมูลทั้งหมดที่โพสต์ไว้ในกลุ่มจะถูกลบและกู้คืนไม่ได้",
+    "my": "LINE အုပ်စုမှ ထွက်ပြီးနောက် အုပ်စု၏ ယခင်ပို့စ်များ၊ အယ်လ်ဘမ်များနှင့် မှတ်စုများကို မမြင်ရတော့ပါ။ အုပ်စုကို ဖျက်လိုက်လျှင် ၎င်းထဲတွင် တင်ထားသမျှ ဒေတာကို ဖျက်ပစ်ပြီး ပြန်ယူ၍ မရပါ။",
+    "zh": "离开 LINE 群后，就看不到群里过去的帖子、相册和记事本。群被删除后，群内发布的全部数据都会删除，无法恢复。",
+    "de": "Wer eine LINE-Gruppe verlässt, sieht deren frühere Beiträge, Alben und Notizen nicht mehr. Wird eine Gruppe gelöscht, werden alle darin veröffentlichten Daten gelöscht und lassen sich nicht wiederherstellen."
+   },
+   "src": "https://help.line.me/line/?contentId=20000420"
+  },
+  {
+   "t": {
+    "en": "Thailand's Personal Data Protection Act defines personal data as any information relating to a person that enables identification, directly or indirectly (Section 6).",
+    "th": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ให้ความหมายข้อมูลส่วนบุคคลว่า ข้อมูลใดๆ ที่เกี่ยวกับบุคคลซึ่งทำให้ระบุตัวบุคคลนั้นได้ ไม่ว่าทางตรงหรือทางอ้อม (มาตรา 6)",
+    "my": "ထိုင်းနိုင်ငံ၏ ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေက ကိုယ်ရေးအချက်အလက်ကို လူတစ်ဦးနှင့်ဆိုင်ပြီး ထိုသူကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ခွဲခြားသိနိုင်စေသော အချက်အလက်ဟု သတ်မှတ်သည် (ပုဒ်မ 6)။",
+    "zh": "泰国《个人数据保护法》把个人数据定义为：与某人有关、能直接或间接识别该人的任何信息（第 6 条）。",
+    "de": "Das thailändische Datenschutzgesetz definiert personenbezogene Daten als jede Information zu einer Person, die diese direkt oder indirekt erkennbar macht (Section 6)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "LINE Official Account, monthly plan in Thailand (prices exclude 7% VAT)",
+    "th": "LINE Official Account แพ็กเกจรายเดือนในไทย (ราคายังไม่รวม VAT 7%)",
+    "my": "ထိုင်းနိုင်ငံရှိ LINE Official Account လစဉ်အစီအစဉ် (စျေးနှုန်းတွင် VAT 7% မပါ)",
+    "zh": "LINE Official Account 泰国月套餐（价格不含 7% 增值税）",
+    "de": "LINE Official Account, Monatspaket in Thailand (Preise ohne 7 % MwSt.)"
+   },
+   "p": {
+    "en": "Free with 300 messages; Basic ฿1,280 a month with 15,000; Pro ฿1,780 a month with 35,000",
+    "th": "ฟรี 300 ข้อความ; เบสิก ฿1,280 ต่อเดือน 15,000 ข้อความ; โปร ฿1,780 ต่อเดือน 35,000 ข้อความ",
+    "my": "အခမဲ့ (စာ 300); Basic လစဉ် ฿1,280 (စာ 15,000); Pro လစဉ် ฿1,780 (စာ 35,000)",
+    "zh": "免费版 300 条消息；基础版每月 ฿1,280，15,000 条；专业版每月 ฿1,780，35,000 条",
+    "de": "Gratis mit 300 Nachrichten; Basic ฿1,280 im Monat mit 15,000; Pro ฿1,780 im Monat mit 35,000"
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features"
+  },
+  {
+   "t": {
+    "en": "LINE Official Account, a message beyond the plan's included amount",
+    "th": "LINE Official Account ข้อความที่เกินจำนวนในแพ็กเกจ",
+    "my": "LINE Official Account အစီအစဉ်တွင် ပါဝင်သည့်ပမာဏထက် ကျော်သော စာတစ်စောင်",
+    "zh": "LINE Official Account 超出套餐额度的每条消息",
+    "de": "LINE Official Account, eine Nachricht über die enthaltene Menge hinaus"
+   },
+   "p": {
+    "en": "฿0.1 on Basic; ฿0.06 on Pro",
+    "th": "เบสิก ฿0.1; โปร ฿0.06",
+    "my": "Basic ฿0.1; Pro ฿0.06",
+    "zh": "基础版 ฿0.1；专业版 ฿0.06",
+    "de": "Basic ฿0.1; Pro ฿0.06"
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features"
+  },
+  {
+   "t": {
+    "en": "A LINE chatbot with AI answers, a Fastwork listing: Starter answers questions and hands over to a person; Advanced adds orders and bookings; Operation adds a Google Sheet link and reports",
+    "th": "แชทบอท LINE ตอบด้วย AI ประกาศบน Fastwork: Starter ตอบคำถามและส่งต่อให้คน; Advanced เพิ่มรับออเดอร์และจองคิว; Operation เพิ่มเชื่อม Google Sheet และรายงาน",
+    "my": "AI ဖြင့်ဖြေသော LINE ချတ်ဘော့၊ Fastwork စာရင်းတစ်ခု: Starter က မေးခွန်းဖြေပြီး လူထံ လွှဲပေးသည်၊ Advanced က မှာယူမှုနှင့် ကြိုတင်ဘွတ်ကင်ထည့်ပေးသည်၊ Operation က Google Sheet ချိတ်ဆက်မှုနှင့် အစီရင်ခံစာထည့်ပေးသည်",
+    "zh": "带 AI 回答的 LINE 聊天机器人，Fastwork 上的一则服务：入门版回答问题并转给真人；进阶版增加接单和预约；运营版增加 Google 表格连接和报告",
+    "de": "LINE-Chatbot mit KI-Antworten, ein Angebot auf Fastwork: Starter beantwortet Fragen und übergibt an eine Person; Advanced ergänzt Bestellungen und Reservierungen; Operation ergänzt eine Google-Sheet-Anbindung und Berichte"
+   },
+   "p": {
+    "en": "฿15,000, ฿20,000 and ฿30,000",
+    "th": "฿15,000, ฿20,000 และ ฿30,000",
+    "my": "฿15,000, ฿20,000 နှင့် ฿30,000",
+    "zh": "฿15,000、฿20,000 和 ฿30,000",
+    "de": "฿15,000, ฿20,000 und ฿30,000"
+   },
+   "src": "https://fastwork.co/user/mos_lazyhardwork/chatbot-57678051"
+  },
+  {
+   "t": {
+    "en": "A LINE chatbot on LINE's Messaging API, a Fastwork listing, with the LINE Official Account set up, a server and hosting",
+    "th": "แชทบอท LINE บน Messaging API ของ LINE ประกาศบน Fastwork รวมตั้ง LINE Official Account เซิร์ฟเวอร์ และโฮสติ้ง",
+    "my": "LINE ၏ Messaging API ပေါ်ရှိ LINE ချတ်ဘော့၊ Fastwork စာရင်းတစ်ခု၊ LINE Official Account ဖွင့်ပေးခြင်း၊ ဆာဗာနှင့် ဟိုစ်စတင်းပါဝင်သည်",
+    "zh": "基于 LINE Messaging API 的 LINE 聊天机器人，Fastwork 上的一则服务，含 LINE Official Account 设置、服务器和托管",
+    "de": "LINE-Chatbot auf der Messaging API von LINE, ein Angebot auf Fastwork, mit Einrichtung des LINE Official Account, Server und Hosting"
+   },
+   "p": {
+    "en": "฿1,500 for a mini to medium project; ฿5,000 for a big one",
+    "th": "฿1,500 โครงการเล็กถึงกลาง; ฿5,000 โครงการใหญ่",
+    "my": "သေးငယ်မှ အလတ်စားစီမံကိန်း ฿1,500; ကြီးမားသည့်စီမံကိန်း ฿5,000",
+    "zh": "小到中型项目 ฿1,500；大型项目 ฿5,000",
+    "de": "฿1,500 für ein kleines bis mittleres Projekt; ฿5,000 für ein grosses"
+   },
+   "src": "https://fastwork.co/user/mu.dev/chatbot-32168494"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can a new member of a LINE group see the old messages?",
+    "th": "สมาชิกใหม่ของกลุ่มไลน์เห็นข้อความเก่าไหม",
+    "my": "LINE အုပ်စုအဖွဲ့ဝင်အသစ်က စာဟောင်းများကို မြင်ရပါသလား။",
+    "zh": "LINE 群的新成员能看到旧消息吗？",
+    "de": "Sieht ein neues Mitglied einer LINE-Gruppe die alten Nachrichten?"
+   },
+   "a": {
+    "en": "Not the chat messages from before the person joined. LINE's help page says a new member sees the Note and Album posts made while the invitation was pending, and no earlier chat messages.",
+    "th": "ไม่เห็นข้อความแชทที่ส่งก่อนเข้ากลุ่ม หน้าช่วยเหลือของ LINE ระบุว่า สมาชิกใหม่เห็นโพสต์ใน Note และ Album ที่ลงไว้ระหว่างที่คำเชิญยังรออยู่ แต่ไม่เห็นข้อความแชทก่อนหน้านั้น",
+    "my": "ဝင်ခွင့်မရမီ ပို့ထားသော ချတ်စာများကို မမြင်ရပါ။ LINE ၏ အကူအညီစာမျက်နှာတွင် အဖွဲ့ဝင်အသစ်သည် ဖိတ်ကြားချက် စောင့်ဆိုင်းနေစဉ်အတွင်း တင်ထားသော Note နှင့် Album ပို့စ်များကို မြင်ရပြီး ယခင်ချတ်စာများကို မမြင်ရဟု ဖော်ပြထားသည်။",
+    "zh": "看不到入群之前的聊天消息。LINE 帮助页写明，新成员能看到邀请待处理期间发布的记事本和相册帖子，看不到更早的聊天消息。",
+    "de": "Die Chat-Nachrichten aus der Zeit vor dem Beitritt nicht. Laut Hilfeseite von LINE sieht ein neues Mitglied die Note- und Album-Beiträge aus der Zeit der offenen Einladung, aber keine früheren Chat-Nachrichten."
+   },
+   "src": "https://help.line.me/line/smartphone/sp?contentId=20008159&lang=en"
+  },
+  {
+   "q": {
+    "en": "How many people fit in a LINE group?",
+    "th": "กลุ่มไลน์มีสมาชิกได้กี่คน",
+    "my": "LINE အုပ်စုတစ်ခုတွင် လူ ဘယ်နှစ်ဦး ဆန့်ပါသလဲ။",
+    "zh": "一个 LINE 群能容纳多少人？",
+    "de": "Wie viele Personen passen in eine LINE-Gruppe?"
+   },
+   "a": {
+    "en": "Up to 500 members, the creator included. With \"Members join automatically\" on, up to 100.",
+    "th": "สูงสุด 500 คน รวมผู้สร้างกลุ่ม ถ้าเปิด \"สมาชิกเข้าร่วมอัตโนมัติ\" สูงสุด 100 คน",
+    "my": "ဖန်တီးသူအပါအဝင် 500 ဦးအထိ။ \"အဖွဲ့ဝင်များ အလိုအလျောက်ဝင်ရောက်ခြင်း\" ကို ဖွင့်ထားလျှင် 100 ဦးအထိ။",
+    "zh": "最多 500 人，群主算在内。开启“成员自动加入”时，最多 100 人。",
+    "de": "Bis zu 500 Mitglieder, die Gründerin oder den Gründer eingerechnet. Bei eingeschaltetem «Mitglieder treten automatisch bei» bis zu 100."
+   },
+   "src": "https://help.line.me/line/smartphone/sp?contentId=20008159&lang=en"
+  },
+  {
+   "q": {
+    "en": "What happens to a group's history when someone leaves or the group is deleted?",
+    "th": "ประวัติของกลุ่มเป็นอย่างไร เมื่อมีคนออกหรือลบกลุ่ม",
+    "my": "တစ်ဦးထွက်သွားလျှင် သို့မဟုတ် အုပ်စုကို ဖျက်လျှင် အုပ်စု၏ မှတ်တမ်း ဘာဖြစ်သွားသလဲ။",
+    "zh": "有人退群或群被删除时，群的记录会怎样？",
+    "de": "Was geschieht mit dem Verlauf einer Gruppe, wenn jemand geht oder die Gruppe gelöscht wird?"
+   },
+   "a": {
+    "en": "A person who leaves can no longer see the past posts, albums and notes. LINE's help page says they stay for the members who remain. A deleted group loses everything posted in it, and it cannot be restored.",
+    "th": "คนที่ออกจากกลุ่มดูโพสต์ อัลบั้ม และโน้ตเก่าไม่ได้อีก หน้าช่วยเหลือของ LINE ระบุว่าสิ่งเหล่านี้ยังอยู่สำหรับสมาชิกที่เหลือ กลุ่มที่ถูกลบจะสูญเสียทุกอย่างที่โพสต์ไว้และกู้คืนไม่ได้",
+    "my": "ထွက်သွားသူသည် ယခင်ပို့စ်များ၊ အယ်လ်ဘမ်များနှင့် မှတ်စုများကို မမြင်ရတော့ပါ။ LINE ၏ အကူအညီစာမျက်နှာအရ ကျန်ရှိသော အဖွဲ့ဝင်များအတွက် ၎င်းတို့ ဆက်ရှိနေသည်။ ဖျက်လိုက်သော အုပ်စုသည် တင်ထားသမျှ ဆုံးရှုံးပြီး ပြန်ယူ၍ မရပါ။",
+    "zh": "退群的人再也看不到过去的帖子、相册和记事本。LINE 帮助页写明，这些内容对留下的成员仍然保留。被删除的群，群内发布的内容全部丢失，无法恢复。",
+    "de": "Wer geht, sieht die früheren Beiträge, Alben und Notizen nicht mehr. Laut Hilfeseite von LINE bleiben sie für die verbleibenden Mitglieder erhalten. Eine gelöschte Gruppe verliert alles, was darin veröffentlicht wurde, und lässt sich nicht wiederherstellen."
+   },
+   "src": "https://help.line.me/line/?contentId=20000420"
+  },
+  {
+   "q": {
+    "en": "What does a LINE Official Account cost in Thailand?",
+    "th": "LINE Official Account ในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် LINE Official Account ဘယ်လောက်ကျသလဲ။",
+    "zh": "LINE Official Account 在泰国收费多少？",
+    "de": "Was kostet ein LINE Official Account in Thailand?"
+   },
+   "a": {
+    "en": "LINE's Thai page lists three plans: Free with 300 messages, Basic at ฿1,280 a month with 15,000, and Pro at ฿1,780 a month with 35,000. A message beyond the plan costs ฿0.1 on Basic and ฿0.06 on Pro. The prices exclude 7% VAT.",
+    "th": "หน้าไทยของ LINE ระบุ 3 แพ็กเกจ ฟรี 300 ข้อความ เบสิก ฿1,280 ต่อเดือน 15,000 ข้อความ และโปร ฿1,780 ต่อเดือน 35,000 ข้อความ ข้อความที่เกินแพ็กเกจคิด ฿0.1 บนเบสิก และ ฿0.06 บนโปร ราคายังไม่รวม VAT 7%",
+    "my": "LINE ၏ ထိုင်းစာမျက်နှာတွင် အစီအစဉ် 3 ခု ဖော်ပြထားသည်: အခမဲ့ (စာ 300)၊ Basic လစဉ် ฿1,280 (စာ 15,000) နှင့် Pro လစဉ် ฿1,780 (စာ 35,000)။ အစီအစဉ်ထက်ကျော်သော စာတစ်စောင်လျှင် Basic တွင် ฿0.1၊ Pro တွင် ฿0.06 ကျသည်။ စျေးနှုန်းများတွင် VAT 7% မပါ။",
+    "zh": "LINE 的泰文页面列出三个套餐：免费版 300 条消息；基础版每月 ฿1,280，15,000 条；专业版每月 ฿1,780，35,000 条。超出套餐的每条消息，基础版 ฿0.1，专业版 ฿0.06。价格不含 7% 增值税。",
+    "de": "Die thailändische Seite von LINE nennt drei Pakete: Gratis mit 300 Nachrichten, Basic zu ฿1,280 im Monat mit 15,000 und Pro zu ฿1,780 im Monat mit 35,000. Eine Nachricht über das Paket hinaus kostet bei Basic ฿0.1 und bei Pro ฿0.06. Die Preise verstehen sich ohne 7 % MwSt."
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features"
+  },
+  {
+   "q": {
+    "en": "What does a LINE chatbot cost on Fastwork?",
+    "th": "แชทบอท LINE บน Fastwork ราคาเท่าไร",
+    "my": "Fastwork တွင် LINE ချတ်ဘော့ ဘယ်လောက်ကျသလဲ။",
+    "zh": "在 Fastwork 上做 LINE 聊天机器人多少钱？",
+    "de": "Was kostet ein LINE-Chatbot auf Fastwork?"
+   },
+   "a": {
+    "en": "One listing for a LINE Official Account chatbot with AI asks ฿15,000 for Starter, which answers questions and hands over to an admin, ฿20,000 for Advanced, which adds orders and bookings, and ฿30,000 for Operation, which adds a Google Sheet link, reports and 14 days of care.",
+    "th": "ประกาศหนึ่งบน Fastwork สำหรับแชทบอท LINE OA แบบ AI ตั้งราคา ฿15,000 สำหรับ Starter ที่ตอบคำถามและส่งต่อให้แอดมิน ฿20,000 สำหรับ Advanced ที่เพิ่มรับออเดอร์และจองคิว และ ฿30,000 สำหรับ Operation ที่เพิ่มเชื่อม Google Sheet รายงาน และดูแล 14 วัน",
+    "my": "Fastwork ရှိ AI ပါသော LINE OA ချတ်ဘော့ စာရင်းတစ်ခုက မေးခွန်းဖြေပြီး အက်ဒ်မင်ထံ လွှဲပေးသော Starter အတွက် ฿15,000၊ မှာယူမှုနှင့် ကြိုတင်ဘွတ်ကင် ထပ်ထည့်သော Advanced အတွက် ฿20,000၊ Google Sheet ချိတ်ဆက်မှု၊ အစီရင်ခံစာနှင့် ရက် 14 ကြာ ပြုစုမှု ထပ်ထည့်သော Operation အတွက် ฿30,000 တောင်းသည်။",
+    "zh": "Fastwork 上一则带 AI 的 LINE OA 聊天机器人服务：入门版 ฿15,000，回答问题并转给管理员；进阶版 ฿20,000，增加接单和预约；运营版 ฿30,000，增加 Google 表格连接、报告和 14 天维护。",
+    "de": "Ein Angebot auf Fastwork für einen LINE-OA-Chatbot mit KI verlangt ฿15,000 für Starter, der Fragen beantwortet und an eine Admin-Person übergibt, ฿20,000 für Advanced mit Bestellungen und Reservierungen und ฿30,000 für Operation mit Google-Sheet-Anbindung, Berichten und 14 Tagen Betreuung."
+   },
+   "src": "https://fastwork.co/user/mos_lazyhardwork/chatbot-57678051"
+  }
+ ],
+ "related": [
+  "club-desk",
+  "photo-proof",
+  "giving",
+  "cs-desk",
+  "call",
+  "web-sharecard"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "LINE Help: creating, joining and inviting others to groups",
+    "th": "ศูนย์ช่วยเหลือ LINE: การสร้าง เข้าร่วม และเชิญคนเข้ากลุ่ม",
+    "my": "LINE အကူအညီ: အုပ်စုဖန်တီးခြင်း၊ ဝင်ခြင်းနှင့် ဖိတ်ခေါ်ခြင်း",
+    "zh": "LINE 帮助：创建群、加入群和邀请他人",
+    "de": "LINE-Hilfe: Gruppen erstellen, beitreten und andere einladen"
+   },
+   "href": "https://help.line.me/line/smartphone/sp?contentId=20008159&lang=en"
+  },
+  {
+   "t": {
+    "en": "LINE for Business Thailand: Official Account plans (Thai)",
+    "th": "LINE for Business ประเทศไทย: แพ็กเกจ LINE Official Account",
+    "my": "LINE for Business ထိုင်း: LINE Official Account အစီအစဉ်များ (ထိုင်းဘာသာ)",
+    "zh": "LINE for Business 泰国：Official Account 套餐（泰文）",
+    "de": "LINE for Business Thailand: Pakete des Official Account (Thai)"
+   },
+   "href": "https://lineforbusiness.com/th/service/line-oa-features"
+  }
+ ],
+ "glyphs": [
+  "chat",
+  "search",
+  "bookmark"
+ ]
+}

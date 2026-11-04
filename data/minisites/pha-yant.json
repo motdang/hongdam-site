@@ -1,0 +1,282 @@
+{
+ "id": "pha-yant",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A yant is a sacred design. It is tattooed on skin, and it also appears on cloth, on metal amulets and above doorways.",
+  "th": "ยันต์คือลวดลายศักดิ์สิทธิ์ ใช้สักบนผิวหนัง และยังปรากฏบนผืนผ้า บนตะกรุดโลหะ และเหนือประตู",
+  "my": "ယန္တရား (yant) သည် မြင့်မြတ်သော ပုံစံတစ်မျိုးဖြစ်သည်။ အရေပြားပေါ်တွင် ထိုးကြပြီး အထည်၊ သတ္တုပြားလိပ် အကာအကွယ်ပစ္စည်းနှင့် တံခါးအပေါ်တွင်လည်း တွေ့ရသည်။",
+  "zh": "符（yant）是一种神圣的图案。它可以刺在皮肤上，也出现在布上、金属护身符上和门楣上。",
+  "de": "Ein Yant ist ein heiliges Muster. Es wird auf die Haut tätowiert und erscheint auch auf Stoff, auf Metall-Amuletten und über Türen."
+ },
+ "n": {
+  "de": "Pha Yant für Sie gezeichnet"
+ },
+ "l": {
+  "de": "Ein Yant-Tuch, von einem Ajarn mit Ihrem Namen und Geburtsdatum gezeichnet."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You send your name and birth date.",
+    "th": "คุณส่งชื่อและวันเกิดของคุณ",
+    "my": "သင့်အမည်နှင့် မွေးသက္ကရာဇ်ကို သင်ပေးပို့သည်။",
+    "zh": "您提供姓名和出生日期。",
+    "de": "Sie senden Ihren Namen und Ihr Geburtsdatum."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "After payment",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "An ajarn (a master) draws the yant cloth, about 55 by 45 cm, with your name and birth date.",
+    "th": "อาจารย์เขียนผ้ายันต์ขนาดประมาณ 55×45 ซม. พร้อมชื่อและวันเกิดของคุณ",
+    "my": "ဆရာ (ajarn) က ယန္တရားအထည်ကို အကြမ်းဖျင်း 55×45 စင်တီမီတာ အရွယ်ဖြင့် သင့်အမည်နှင့် မွေးသက္ကရာဇ်ပါ ရေးဆွဲပေးသည်။",
+    "zh": "阿赞（ajarn，师父）在约 55×45 厘米的布上绘制符，写上您的姓名和出生日期。",
+    "de": "Ein Ajarn (ein Meister) zeichnet das Yant-Tuch, etwa 55 mal 45 cm, mit Ihrem Namen und Geburtsdatum."
+   },
+   "who": {
+    "en": "The ajarn",
+    "th": "อาจารย์",
+    "my": "ဆရာ (ajarn)",
+    "zh": "阿赞（ajarn）",
+    "de": "Der Ajarn"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The ajarn's khan khru (an offering for the ajarn), if there is one, is charged at cost.",
+    "th": "ค่าขันครูของอาจารย์ (เครื่องบูชาอาจารย์) ถ้ามี คิดตามจริง",
+    "my": "ဆရာ၏ ခန်းခရူး (khan khru၊ ဆရာအတွက် ပူဇော်ပစ္စည်း) ရှိလျှင် ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်။",
+    "zh": "阿赞的 khan khru（ขันครู，给阿赞的供奉），如果有，按实际费用收取。",
+    "de": "Das Khan Khru des Ajarn (ein Opfer für den Ajarn) wird, falls es eines gibt, zum Selbstkostenpreis berechnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A yant is a design of geometric shapes, animals and sacred script. The word comes from the Sanskrit yantra, a sacred diagram. The same designs appear on cloth, on rolled metal amulets and over doorways.",
+    "th": "ยันต์คือลวดลายที่ประกอบด้วยรูปทรงเรขาคณิต สัตว์ และอักขระศักดิ์สิทธิ์ คำว่ายันต์มาจากคำสันสกฤต ยันตระ แปลว่าแผนภาพศักดิ์สิทธิ์ ลวดลายเดียวกันนี้ปรากฏบนผืนผ้า บนตะกรุดโลหะ และเหนือประตู",
+    "my": "ယန္တရား (yant) သည် ဂျီအိုမက်ထရီပုံစံများ၊ တိရစ္ဆာန်များနှင့် မြင့်မြတ်သောစာလုံးများဖြင့် ဖွဲ့စည်းထားသော ပုံစံဖြစ်သည်။ စကားလုံးသည် သင်္သကရိုက် yantra (မြင့်မြတ်သော ပုံကြမ်း) မှ လာသည်။ ထိုပုံစံများကို အထည်၊ လိပ်ထားသော သတ္တုပြား အကာအကွယ်ပစ္စည်းများနှင့် တံခါးအပေါ်တွင်လည်း တွေ့ရသည်။",
+    "zh": "符（yant）是由几何图形、动物和神圣文字组成的图案。这个词来自梵文 yantra，意思是神圣的图形。同样的图案也出现在布上、卷成筒的金属护身符上和门楣上。",
+    "de": "Ein Yant ist ein Muster aus geometrischen Formen, Tieren und heiliger Schrift. Das Wort kommt vom Sanskrit-Wort Yantra, einem heiligen Diagramm. Dieselben Muster erscheinen auf Stoff, auf gerollten Metall-Amuletten und über Türen."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "The guide calls an ajarn a lay master, often a former monk. Ajarns work from a shrine.",
+    "th": "คู่มือเรียกอาจารย์ว่าเป็นผู้ชำนาญที่ไม่ใช่พระ มักเป็นอดีตพระ อาจารย์ทำงานที่หิ้งหรือศาลบูชา",
+    "my": "ဤလမ်းညွှန်က ဆရာ (ajarn) ကို ရဟန်းမဟုတ်သော သာမန်လူဆရာ၊ ရဟန်းဟောင်း ဖြစ်လေ့ရှိသူအဖြစ် ဖော်ပြသည်။ ဆရာများသည် ဗိမာန်တစ်ခုတွင် အလုပ်လုပ်ကြသည်။",
+    "zh": "该指南称阿赞为在家的师父，常常是还俗的僧人。阿赞在神龛前工作。",
+    "de": "Der Führer nennt einen Ajarn einen Meister, der kein Mönch ist, oft ein früherer Mönch. Ajarns arbeiten an einem Schrein."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "In central Thailand a yantra is written in Khom script, which comes from Khmer script. Northern Thai yantras may use Shan, northern Thai or Tai Lu scripts.",
+    "th": "ในภาคกลางของไทย ยันต์เขียนด้วยอักษรขอม ซึ่งมาจากอักษรเขมร ยันต์ทางภาคเหนืออาจใช้อักษรไทใหญ่ อักษรล้านนา หรืออักษรไทลื้อ",
+    "my": "ထိုင်းအလယ်ပိုင်းတွင် ယန္တရားကို ခမာအက္ခရာမှ ဆင်းသက်လာသော Khom (ขอม) အက္ခရာဖြင့် ရေးသည်။ မြောက်ပိုင်းထိုင်း ယန္တရားများသည် ရှမ်း၊ မြောက်ပိုင်းထိုင်း သို့မဟုတ် တိုင်လူး အက္ခရာများကို သုံးနိုင်သည်။",
+    "zh": "在泰国中部，符用高棉体（Khom）文字书写，它源自高棉文。泰北的符可以用掸文、泰北文或傣仂文。",
+    "de": "In Zentralthailand wird ein Yantra in Khom-Schrift geschrieben, die von der Khmer-Schrift stammt. Nordthailändische Yantras können Shan-, nordthailändische oder Tai-Lü-Schrift verwenden."
+   },
+   "src": "https://en.wikipedia.org/wiki/Sak_Yant"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Offering set for the ajarn at Wat Bang Phra: flowers, incense, cigarettes",
+    "th": "ชุดเครื่องบูชาอาจารย์ที่วัดบางพระ: ดอกไม้ ธูป บุหรี่",
+    "my": "ဝပ်ဘန်ဖရ ဘုန်းကြီးကျောင်းတွင် ဆရာအတွက် ပူဇော်ပစ္စည်းအစုံ - ပန်း၊ အမွှေးတိုင်၊ ဆေးလိပ်",
+    "zh": "邦帕寺（Wat Bang Phra）给阿赞的供奉套装：花、香、香烟",
+    "de": "Opfer-Set für den Ajarn im Wat Bang Phra: Blumen, Räucherstäbchen, Zigaretten"
+   },
+   "p": {
+    "en": "฿100–150",
+    "th": "฿100–150",
+    "my": "฿100–150",
+    "zh": "฿100–150",
+    "de": "฿100–150"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Yant tattoo by a lay master, price agreed beforehand",
+    "th": "สักยันต์กับอาจารย์ที่ไม่ใช่พระ ตกลงราคากันก่อน",
+    "my": "သာမန်လူဆရာထံ ယန္တရားထိုးခြင်း၊ ကြိုတင်သဘောတူထားသော ဈေးနှုန်း",
+    "zh": "在家师父刺符，价格事先谈好",
+    "de": "Yant-Tätowierung bei einem Meister, der kein Mönch ist, Preis vorher vereinbart"
+   },
+   "p": {
+    "en": "Thousands of baht, up to ฿20,000",
+    "th": "หลายพันบาท สูงสุด ฿20,000",
+    "my": "ထောင်ပေါင်းများစွာ၊ အများဆုံး ฿20,000",
+    "zh": "数千泰铢，最高 ฿20,000",
+    "de": "Mehrere Tausend Baht, bis zu ฿20,000"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Yant tattoo in Chiang Mai town",
+    "th": "สักยันต์ในตัวเมืองเชียงใหม่",
+    "my": "ချင်းမိုင်မြို့တွင်း ယန္တရားထိုးခြင်း",
+    "zh": "清迈市区刺符",
+    "de": "Yant-Tätowierung in der Stadt Chiang Mai"
+   },
+   "p": {
+    "en": "฿2,000–3,500 an hour",
+    "th": "฿2,000–3,500 ต่อชั่วโมง",
+    "my": "တစ်နာရီ ฿2,000–3,500",
+    "zh": "每小时 ฿2,000–3,500",
+    "de": "฿2,000–3,500 pro Stunde"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a yant cloth?",
+    "th": "ผ้ายันต์คืออะไร",
+    "my": "ယန္တရားအထည် (pha yant) ဆိုတာ ဘာလဲ။",
+    "zh": "什么是符布？",
+    "de": "Was ist ein Yant-Tuch?"
+   },
+   "a": {
+    "en": "A yant is a sacred design, and a yant cloth carries it on cloth instead of skin. The guide says the same designs appear on cloth, on rolled metal amulets and over doorways, and that the tattoo is the most personal form.",
+    "th": "ยันต์คือลวดลายศักดิ์สิทธิ์ ผ้ายันต์คือยันต์ที่อยู่บนผืนผ้าแทนผิวหนัง คู่มือระบุว่าลวดลายเดียวกันปรากฏบนผ้า ตะกรุดโลหะ และเหนือประตู และการสักเป็นรูปแบบที่เป็นส่วนตัวที่สุด",
+    "my": "ယန္တရားသည် မြင့်မြတ်သော ပုံစံတစ်မျိုးဖြစ်ပြီး ယန္တရားအထည်ကတော့ ထိုပုံစံကို အရေပြားအစား အထည်ပေါ်တွင် ထားခြင်းဖြစ်သည်။ လမ်းညွှန်က ထိုပုံစံများသည် အထည်၊ လိပ်ထားသော သတ္တုပြား အကာအကွယ်ပစ္စည်းများနှင့် တံခါးအပေါ်တွင်လည်း တွေ့ရပြီး အရေပြားပေါ်ထိုးခြင်းသည် အကိုယ်ပိုင်ဆုံးပုံစံဟု ဆိုသည်။",
+    "zh": "符是一种神圣的图案，符布是把它画在布上，而不是刺在皮肤上。该指南说，同样的图案也出现在布上、卷成筒的金属护身符上和门楣上，其中刺青是最贴身的形式。",
+    "de": "Ein Yant ist ein heiliges Muster, und ein Yant-Tuch trägt es auf Stoff statt auf der Haut. Der Führer sagt, dieselben Muster erscheinen auf Stoff, auf gerollten Metall-Amuletten und über Türen, und die Tätowierung sei die persönlichste Form."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "q": {
+    "en": "What do people give the ajarn?",
+    "th": "คนถวายหรือมอบอะไรให้อาจารย์",
+    "my": "လူတွေက ဆရာကို ဘာတွေ ပူဇော်ကြသလဲ။",
+    "zh": "人们给阿赞供奉什么？",
+    "de": "Was geben die Leute dem Ajarn?"
+   },
+   "a": {
+    "en": "At Wat Bang Phra people buy an offering set of flowers, incense and cigarettes, at around ฿100–150 in recent reports. At an ajarn's shrine the offering is usually built into the price.",
+    "th": "ที่วัดบางพระ คนซื้อชุดเครื่องบูชาที่มีดอกไม้ ธูป และบุหรี่ ราคาราว ฿100–150 ตามรายงานล่าสุด ที่หิ้งหรือศาลของอาจารย์ มักรวมเครื่องบูชาไว้ในราคาแล้ว",
+    "my": "ဝပ်ဘန်ဖရတွင် လူတွေက ပန်း၊ အမွှေးတိုင်နှင့် ဆေးလိပ် ပါသော ပူဇော်ပစ္စည်းအစုံကို ဝယ်ကြပြီး မကြာသေးမီ အစီရင်ခံစာများအရ ဈေးနှုန်းမှာ ฿100–150 ခန့် ဖြစ်သည်။ ဆရာ၏ ဗိမာန်တွင် ပူဇော်ပစ္စည်းကို ဈေးနှုန်းထဲ ထည့်ထားလေ့ရှိသည်။",
+    "zh": "在邦帕寺，人们买一套花、香和香烟的供奉，近期报道的价格约 ฿100–150。在阿赞自己的神龛，供奉通常已含在价格里。",
+    "de": "Im Wat Bang Phra kaufen die Leute ein Opfer-Set aus Blumen, Räucherstäbchen und Zigaretten, laut neueren Berichten für etwa ฿100–150. Am Schrein eines Ajarn ist das Opfer meist im Preis enthalten."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "q": {
+    "en": "Can a woman hand something to a monk?",
+    "th": "ผู้หญิงยื่นของให้พระได้หรือไม่",
+    "my": "အမျိုးသမီးက ရဟန်းကို ပစ္စည်း လှမ်းပေးလို့ ရသလား။",
+    "zh": "女士可以把东西直接递给僧人吗？",
+    "de": "Darf eine Frau einem Mönch etwas reichen?"
+   },
+   "a": {
+    "en": "The Tourism Authority of Thailand writes that women are not allowed to touch a monk or his robes. A woman can give the item to a man to pass on, or put it down for the monk to pick up.",
+    "th": "การท่องเที่ยวแห่งประเทศไทยเขียนว่าผู้หญิงห้ามสัมผัสพระหรือจีวร ผู้หญิงฝากของให้ผู้ชายส่งต่อ หรือวางของไว้ให้พระหยิบเองได้",
+    "my": "ထိုင်းနိုင်ငံ ခရီးသွားလာရေးအာဏာပိုင်က အမျိုးသမီးများသည် ရဟန်း သို့မဟုတ် သင်္ကန်းကို မထိရဟု ရေးသားထားသည်။ အမျိုးသမီးက ပစ္စည်းကို အမျိုးသားတစ်ဦးထံ ပေး၍ လွှဲပေးစေနိုင်သည်၊ သို့မဟုတ် ရဟန်းကောက်ယူရန် ချထားနိုင်သည်။",
+    "zh": "泰国旅游局写道，女性不可以触碰僧人或他的袈裟。女性可以把东西交给一位男士转交，或放下来让僧人自己拿起。",
+    "de": "Die Tourismusbehörde von Thailand schreibt, Frauen dürften einen Mönch oder seine Robe nicht berühren. Eine Frau kann den Gegenstand einem Mann zum Weiterreichen geben oder ihn hinlegen, damit der Mönch ihn aufnimmt."
+   },
+   "src": "https://www.tatnews.org/2018/08/observing-temple-and-sacred-site-etiquette-while-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "What do ajarns charge for a sak yant tattoo?",
+    "th": "อาจารย์คิดค่าสักยันต์เท่าไร",
+    "my": "ဆရာများက ယန္တရားထိုးခြင်းအတွက် ဘယ်လောက် ကောက်သလဲ။",
+    "zh": "阿赞刺符收多少钱？",
+    "de": "Was verlangen Ajarns für eine Sak-Yant-Tätowierung?"
+   },
+   "a": {
+    "en": "The guide lists ฿2,000–3,500 an hour in Chiang Mai town, and from ฿5,400 for a small or medium design and ฿9,500 for a large one at a Bangkok ajarn. Lay masters in general ask thousands of baht, agreed beforehand, and elaborate pieces go up to ฿20,000.",
+    "th": "คู่มือระบุ ฿2,000–3,500 ต่อชั่วโมงในตัวเมืองเชียงใหม่ และที่อาจารย์ในกรุงเทพฯ เริ่มที่ ฿5,400 สำหรับลายเล็กหรือกลาง และ ฿9,500 สำหรับลายใหญ่ ส่วนอาจารย์ที่ไม่ใช่พระโดยทั่วไปคิดหลายพันบาท ตกลงราคากันก่อน และงานละเอียดสูงสุด ฿20,000",
+    "my": "လမ်းညွှန်က ချင်းမိုင်မြို့တွင် တစ်နာရီ ฿2,000–3,500 ဟု ဖော်ပြပြီး ဘန်ကောက်ရှိ ဆရာတစ်ဦးထံ အသေးစား သို့မဟုတ် အလတ်စားဒီဇိုင်း ฿5,400 မှစ၍၊ အကြီးစား ฿9,500 ဖြစ်သည်။ သာမန်လူ ဆရာများသည် ကြိုတင်သဘောတူထားသော ထောင်ပေါင်းများစွာ ကောက်ပြီး ရှုပ်ထွေးသော လက်ရာများမှာ ฿20,000 အထိ ရှိသည်။",
+    "zh": "该指南列出清迈市区每小时 ฿2,000–3,500；曼谷一位阿赞的小号或中号图案 ฿5,400 起，大号 ฿9,500。一般的在家师父要价数千泰铢，事先谈好，精细的作品最高 ฿20,000。",
+    "de": "Der Führer nennt ฿2,000–3,500 pro Stunde in der Stadt Chiang Mai und bei einem Ajarn in Bangkok ab ฿5,400 für ein kleines oder mittleres Motiv und ฿9,500 für ein grosses. Meister, die keine Mönche sind, verlangen im Allgemeinen mehrere Tausend Baht, vorher vereinbart, und aufwendige Arbeiten kosten bis zu ฿20,000."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  }
+ ],
+ "related": [
+  "name-charm",
+  "sak-yant",
+  "reading",
+  "amulet",
+  "merit-you",
+  "tap-card"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Sak yant guide on Visit Thailand Today",
+    "th": "คู่มือสักยันต์บน Visit Thailand Today",
+    "my": "Visit Thailand Today ၏ ယန္တရားထိုးလမ်းညွှန်",
+    "zh": "Visit Thailand Today 的刺符指南",
+    "de": "Sak-Yant-Führer auf Visit Thailand Today"
+   },
+   "href": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Tourism Authority of Thailand: temple and sacred-site etiquette",
+    "th": "การท่องเที่ยวแห่งประเทศไทย: มารยาทในวัดและสถานที่ศักดิ์สิทธิ์",
+    "my": "ထိုင်းနိုင်ငံ ခရီးသွားလာရေးအာဏာပိုင် - ဘုန်းကြီးကျောင်းနှင့် မြင့်မြတ်သောနေရာ ကျင့်ဝတ်",
+    "zh": "泰国旅游局：寺庙和圣地礼仪",
+    "de": "Tourismusbehörde von Thailand: Etikette in Tempeln und an heiligen Stätten"
+   },
+   "href": "https://www.tatnews.org/2018/08/observing-temple-and-sacred-site-etiquette-while-in-thailand/"
+  }
+ ],
+ "glyphs": [
+  "nib",
+  "lotus",
+  "wai"
+ ]
+}

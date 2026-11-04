@@ -1,0 +1,292 @@
+{
+ "id": "care-visits",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People with an older parent in Thailand want to know how the parent is, and a visitor can tell the family what was seen.",
+  "th": "คนที่มีพ่อแม่สูงอายุอยู่ในไทยอยากรู้ว่าท่านเป็นอย่างไร และคนไปเยี่ยมเล่าให้ครอบครัวฟังได้ว่าเห็นอะไร",
+  "my": "ထိုင်းနိုင်ငံတွင် သက်ကြီးရွယ်အိုမိဘရှိသူတွေက မိဘ ဘယ်လိုရှိနေသည်ကို သိချင်ကြပြီး သွားရောက်တွေ့ဆုံသူက မြင်ခဲ့ရသည်များကို မိသားစုအား ပြောပြနိုင်သည်။",
+  "zh": "父母年迈、住在泰国的人想知道老人过得怎样，上门探望的人可以把所见告诉家人。",
+  "de": "Wer einen älteren Elternteil in Thailand hat, will wissen, wie es ihm geht, und eine Besucherin oder ein Besucher kann der Familie berichten, was zu sehen war."
+ },
+ "n": {
+  "de": "Besuche bei einer älteren Person"
+ },
+ "l": {
+  "de": "Jemand schaut vorbei und schreibt der Familie, was zu sehen war."
+ },
+ "glyphs": [
+  "home",
+  "wai",
+  "pencil"
+ ],
+ "steps": [
+  {
+   "db": "home",
+   "t": {
+    "en": "A visitor calls on your parent.",
+    "th": "คนไปเยี่ยมผู้สูงอายุที่บ้านของท่าน",
+    "my": "သွားရောက်တွေ့ဆုံသူတစ်ဦးက သင့်မိဘထံ သွားရောက်သည်။",
+    "zh": "探望者上门看望您的父母。",
+    "de": "Eine Besucherin oder ein Besucher schaut bei Ihrem Elternteil vorbei."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The visit",
+    "th": "ในวันเยี่ยม",
+    "my": "သွားရောက်သည့်နေ့",
+    "zh": "探望当天",
+    "de": "Der Besuch"
+   }
+  },
+  {
+   "db": "wai",
+   "t": {
+    "en": "The visitor checks in and talks with them. The visitor is not a nurse and handles no medicine.",
+    "th": "ผู้ไปเยี่ยมแวะพูดคุยกับท่าน ไม่ใช่พยาบาลและไม่จัดการยา",
+    "my": "သွားရောက်တွေ့ဆုံသူက နှုတ်ဆက်ပြီး စကားပြောသည်။ သူသည် သူနာပြုမဟုတ်ဘဲ ဆေးဝါးကို မကိုင်တွယ်ပါ။",
+    "zh": "探望者上门问候并与老人交谈。探望者不是护士，也不处理药品。",
+    "de": "Die Besucherin oder der Besucher meldet sich und spricht mit ihnen. Sie sind keine Pflegefachperson und hantieren nicht mit Medikamenten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The visit",
+    "th": "ในวันเยี่ยม",
+    "my": "သွားရောက်သည့်နေ့",
+    "zh": "探望当天",
+    "de": "Der Besuch"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "We write the family what was seen.",
+    "th": "เขียนบอกครอบครัวว่าเห็นอะไร",
+    "my": "မြင်ခဲ့ရသည်များကို မိသားစုထံ ရေးပို့ပေးသည်။",
+    "zh": "把所见写给家人。",
+    "de": "Wir schreiben der Familie, was zu sehen war."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the visit",
+    "th": "หลังเยี่ยม",
+    "my": "သွားရောက်ပြီးနောက်",
+    "zh": "探望之后",
+    "de": "Nach dem Besuch"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "An elderly care home needs a health establishment licence from the Department of Health Service Support, and the person who manages it needs a separate licence. Running an unlicensed home carries up to six months in jail, a fine of up to ฿50,000, or both.",
+    "th": "บ้านพักผู้สูงอายุต้องมีใบอนุญาตสถานประกอบการเพื่อสุขภาพจากกรมสนับสนุนบริการสุขภาพ และผู้บริหารจัดการต้องมีใบอนุญาตแยกต่างหาก การเปิดบ้านพักโดยไม่มีใบอนุญาตมีโทษจำคุกไม่เกินหกเดือน ปรับไม่เกิน ฿50,000 หรือทั้งจำทั้งปรับ",
+    "my": "သက်ကြီးစောင့်ရှောက်ရေးအိမ်သည် ကျန်းမာရေးဝန်ဆောင်မှုထောက်ပံ့ရေးဦးစီးဌာန (Department of Health Service Support) ထံမှ ကျန်းမာရေးလုပ်ငန်းလိုင်စင် လိုအပ်ပြီး စီမံခန့်ခွဲသူသည် သီးခြားလိုင်စင် လိုအပ်သည်။ လိုင်စင်မရှိဘဲ အိမ်ဖွင့်ပါက ထောင်ဒဏ် ခြောက်လအထိ၊ ဒဏ်ငွေ ฿50,000 အထိ၊ သို့မဟုတ် နှစ်မျိုးလုံး ချမှတ်နိုင်သည်။",
+    "zh": "养老院须持有健康服务支持厅（DHSS）签发的健康场所执照，负责日常管理的人另需一份执照。无照经营养老院，最高可处六个月监禁、罚款 ฿50,000，或两者并罚。",
+    "de": "Ein Pflegeheim für ältere Menschen braucht eine Gesundheitsbetriebs-Lizenz des Department of Health Service Support, und die leitende Person braucht eine eigene Lizenz. Wer ein Heim ohne Lizenz betreibt, riskiert bis zu sechs Monate Haft, eine Busse bis ฿50,000 oder beides."
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "After the closure of a home in Kanchanaburi in October 2026, the department ordered inspections of its licensed elderly care homes within two months, about 1,200 homes.",
+    "th": "หลังมีการสั่งปิดบ้านพักแห่งหนึ่งในกาญจนบุรีเมื่อตุลาคม ค.ศ. 2026 กรมสั่งตรวจสอบบ้านพักผู้สูงอายุที่ได้รับใบอนุญาตภายในสองเดือน ราว 1,200 แห่ง",
+    "my": "2026 ခုနှစ် အောက်တိုဘာတွင် ကန်ချနာဘူရီရှိ အိမ်တစ်ခု ပိတ်သိမ်းခံရပြီးနောက် ဌာနက လိုင်စင်ရ သက်ကြီးစောင့်ရှောက်ရေးအိမ် ခန့်မှန်း 1,200 ခုကို နှစ်လအတွင်း စစ်ဆေးရန် အမိန့်ပေးသည်။",
+    "zh": "2026 年 10 月北碧府一家养老院被关停后，该厅下令在两个月内检查持照养老院，约 1,200 家。",
+    "de": "Nach der Schliessung eines Heims in Kanchanaburi im Oktober 2026 ordnete das Department Kontrollen seiner lizenzierten Pflegeheime innerhalb von zwei Monaten an, rund 1,200 Heime."
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "Thai law sets no minimum number of staff per resident in a care home.",
+    "th": "กฎหมายไทยไม่กำหนดอัตราขั้นต่ำของเจ้าหน้าที่ต่อผู้พักอาศัยในบ้านพักผู้สูงอายุ",
+    "my": "ထိုင်းဥပဒေတွင် သက်ကြီးစောင့်ရှောက်ရေးအိမ်၌ နေထိုင်သူတစ်ဦးလျှင် အနည်းဆုံး ဝန်ထမ်းအရေအတွက်ကို သတ်မှတ်ထားခြင်း မရှိပါ။",
+    "zh": "泰国法律没有规定养老院每位住户至少配备多少工作人员。",
+    "de": "Das thailändische Recht legt keine Mindestzahl an Personal pro Bewohnerin oder Bewohner in einem Pflegeheim fest."
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "The Department of Older Persons takes reports of abuse or neglect of an older person on the hotline 1300, open around the clock, or on its website.",
+    "th": "กรมกิจการผู้สูงอายุรับแจ้งเหตุการทารุณหรือทอดทิ้งผู้สูงอายุทางสายด่วน 1300 ตลอด 24 ชั่วโมง หรือทางเว็บไซต์ของกรม",
+    "my": "သက်ကြီးရွယ်အိုဆိုင်ရာဦးစီးဌာနက သက်ကြီးရွယ်အိုကို ညှဉ်းပန်းနှိပ်စက်ခြင်း သို့မဟုတ် စွန့်ပစ်ခြင်းအကြောင်း အစီရင်ခံချက်များကို ဟော့လိုင်း 1300 (ည နေ့ မပြတ်) သို့မဟုတ် ၎င်း၏ ဝက်ဘ်ဆိုက်မှ လက်ခံသည်။",
+    "zh": "老年人事务厅通过 24 小时热线 1300 或其网站，受理虐待或遗弃老年人的举报。",
+    "de": "Das Department of Older Persons nimmt Meldungen über Misshandlung oder Vernachlässigung älterer Menschen über die Hotline 1300, rund um die Uhr erreichbar, oder über seine Website entgegen."
+   },
+   "src": "https://thammapakorn.dop.go.th/en/faq"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Home care agency in Bangkok (ElderThai): a four-hour visit; an eight-hour day",
+    "th": "เอเจนซี่ดูแลผู้สูงอายุที่บ้านในกรุงเทพฯ (ElderThai) เยี่ยมสี่ชั่วโมง ดูแลแปดชั่วโมง",
+    "my": "ဘန်ကောက်ရှိ အိမ်စောင့်ရှောက်ရေးအေဂျင်စီ (ElderThai) - 4 နာရီ သွားရောက်ခြင်း၊ 8 နာရီ တစ်ရက်",
+    "zh": "曼谷居家护理机构（ElderThai）：四小时上门；八小时一天",
+    "de": "Pflegeagentur in Bangkok (ElderThai): ein Besuch von vier Stunden; ein Tag von acht Stunden"
+   },
+   "p": {
+    "en": "฿1,200; ฿2,200",
+    "th": "฿1,200; ฿2,200",
+    "my": "฿1,200; ฿2,200",
+    "zh": "฿1,200；฿2,200",
+    "de": "฿1,200; ฿2,200"
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "A nurse for care at home: full time; 8 hours a day; 16 hours a day",
+    "th": "พยาบาลดูแลที่บ้าน เต็มเวลา วันละ 8 ชั่วโมง วันละ 16 ชั่วโมง",
+    "my": "အိမ်တွင် စောင့်ရှောက်ရန် သူနာပြု - အချိန်ပြည့်၊ တစ်နေ့ 8 နာရီ၊ တစ်နေ့ 16 နာရီ",
+    "zh": "居家护理护士：全职；每天 8 小时；每天 16 小时",
+    "de": "Pflegefachperson für zu Hause: Vollzeit; 8 Stunden am Tag; 16 Stunden am Tag"
+   },
+   "p": {
+    "en": "฿37,500; ฿12,500; ฿25,000 a month",
+    "th": "฿37,500; ฿12,500; ฿25,000 ต่อเดือน",
+    "my": "တစ်လလျှင် ฿37,500; ฿12,500; ฿25,000",
+    "zh": "每月 ฿37,500；฿12,500；฿25,000",
+    "de": "฿37,500; ฿12,500; ฿25,000 im Monat"
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "Care home in Chiang Mai (Ban Sabai Village): standard room with breakfast, care on top",
+    "th": "บ้านพักผู้สูงอายุเชียงใหม่ (Ban Sabai Village) ห้องมาตรฐานพร้อมอาหารเช้า ค่าดูแลคิดเพิ่ม",
+    "my": "ချင်းမိုင်ရှိ စောင့်ရှောက်ရေးအိမ် (Ban Sabai Village) - မနက်စာပါ စံအခန်း၊ စောင့်ရှောက်ခ ထပ်ပေါင်း",
+    "zh": "清迈养老院（Ban Sabai Village）：含早餐的标准间，护理另计",
+    "de": "Pflegeheim in Chiang Mai (Ban Sabai Village): Standardzimmer mit Frühstück, Pflege zusätzlich"
+   },
+   "p": {
+    "en": "฿67,000–73,000 a month, care ฿27,000–130,000 more",
+    "th": "เดือนละ ฿67,000–73,000 ค่าดูแลเพิ่ม ฿27,000–130,000",
+    "my": "တစ်လ ฿67,000–73,000၊ စောင့်ရှောက်ခ ฿27,000–130,000 ထပ်",
+    "zh": "每月 ฿67,000–73,000，护理另加 ฿27,000–130,000",
+    "de": "฿67,000–73,000 im Monat, Pflege ฿27,000–130,000 zusätzlich"
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a caregiver cost in Thailand?",
+    "th": "จ้างผู้ดูแลผู้สูงอายุในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် စောင့်ရှောက်သူ ငှားရန် ဈေးဘယ်လောက်လဲ။",
+    "zh": "在泰国请护理员要多少钱？",
+    "de": "Was kostet eine Betreuungsperson in Thailand?"
+   },
+   "a": {
+    "en": "One Bangkok agency lists ฿1,200 for a four-hour visit, ฿2,200 for an eight-hour day and ฿3,500 a day for 24-hour live-in care. A full-time nurse costs around ฿37,500 a month. The page says agencies typically charge 1.5 to 2 times the cost of hiring a caregiver directly.",
+    "th": "เอเจนซี่แห่งหนึ่งในกรุงเทพฯ แสดงราคา ฿1,200 สำหรับเยี่ยมสี่ชั่วโมง ฿2,200 สำหรับแปดชั่วโมง และ ฿3,500 ต่อวันสำหรับดูแลอยู่ประจำ 24 ชั่วโมง พยาบาลเต็มเวลาประมาณ ฿37,500 ต่อเดือน เว็บไซต์ระบุว่าเอเจนซี่มักคิดราคา 1.5 ถึง 2 เท่าของการจ้างผู้ดูแลโดยตรง",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခုက 4 နာရီ သွားရောက်ခြင်း ฿1,200၊ 8 နာရီ တစ်ရက် ฿2,200 နှင့် 24 နာရီ အတူနေ စောင့်ရှောက်မှု တစ်ရက်လျှင် ฿3,500 ဟု ဖော်ပြသည်။ အချိန်ပြည့် သူနာပြု တစ်လလျှင် ฿37,500 ဝန်းကျင် ကျသည်။ အေဂျင်စီများက စောင့်ရှောက်သူကို တိုက်ရိုက်ငှားသည့်ဈေးထက် 1.5 မှ 2 ဆ ပုံမှန်တောင်းသည်ဟု စာမျက်နှာက ဆိုသည်။",
+    "zh": "曼谷一家机构的价目：四小时上门 ฿1,200，八小时一天 ฿2,200，24 小时住家护理每天 ฿3,500。全职护士每月约 ฿37,500。该页面称，机构收费通常是直接雇用护理员的 1.5 至 2 倍。",
+    "de": "Eine Agentur in Bangkok nennt ฿1,200 für einen Besuch von vier Stunden, ฿2,200 für einen Tag von acht Stunden und ฿3,500 pro Tag für die Betreuung rund um die Uhr im Haus. Eine Vollzeit-Pflegefachperson kostet rund ฿37,500 im Monat. Die Seite schreibt, Agenturen verlangten in der Regel das 1,5- bis 2-Fache der direkten Anstellung."
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "q": {
+    "en": "Does a care home in Thailand need a licence?",
+    "th": "บ้านพักผู้สูงอายุในไทยต้องมีใบอนุญาตไหม",
+    "my": "ထိုင်းနိုင်ငံရှိ သက်ကြီးစောင့်ရှောက်ရေးအိမ်သည် လိုင်စင် လိုသလား။",
+    "zh": "泰国的养老院需要执照吗？",
+    "de": "Braucht ein Pflegeheim in Thailand eine Lizenz?"
+   },
+   "a": {
+    "en": "Yes. It needs a health establishment licence from the Department of Health Service Support, and the manager needs a separate licence. A company registration certificate is not a licence. Thai law sets no minimum staff-to-resident ratio.",
+    "th": "ต้องมี บ้านพักผู้สูงอายุต้องมีใบอนุญาตสถานประกอบการเพื่อสุขภาพจากกรมสนับสนุนบริการสุขภาพ และผู้บริหารจัดการต้องมีใบอนุญาตแยกต่างหาก หนังสือรับรองการจดทะเบียนบริษัทไม่ใช่ใบอนุญาต กฎหมายไทยไม่กำหนดอัตราเจ้าหน้าที่ต่อผู้พักอาศัยขั้นต่ำ",
+    "my": "လိုသည်။ ကျန်းမာရေးဝန်ဆောင်မှုထောက်ပံ့ရေးဦးစီးဌာနထံမှ ကျန်းမာရေးလုပ်ငန်းလိုင်စင် လိုအပ်ပြီး စီမံခန့်ခွဲသူသည် သီးခြားလိုင်စင် လိုသည်။ ကုမ္ပဏီမှတ်ပုံတင်လက်မှတ်သည် လိုင်စင်မဟုတ်ပါ။ ထိုင်းဥပဒေတွင် နေထိုင်သူနှင့် ဝန်ထမ်း အနည်းဆုံးအချိုး သတ်မှတ်ထားခြင်း မရှိပါ။",
+    "zh": "需要。养老院须持有健康服务支持厅签发的健康场所执照，负责管理的人另需一份执照。公司注册证书不是执照。泰国法律没有规定工作人员与住户的最低比例。",
+    "de": "Ja. Es braucht eine Gesundheitsbetriebs-Lizenz des Department of Health Service Support, und die leitende Person braucht eine eigene Lizenz. Ein Handelsregisterauszug ist keine Lizenz. Das thailändische Recht legt kein Mindestverhältnis von Personal zu Bewohnern fest."
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "q": {
+    "en": "Who do I call if an older person in Thailand is neglected or abused?",
+    "th": "ถ้าผู้สูงอายุในไทยถูกทอดทิ้งหรือทารุณ แจ้งใครได้",
+    "my": "ထိုင်းနိုင်ငံတွင် သက်ကြီးရွယ်အိုတစ်ဦး စွန့်ပစ်ခံရခြင်း သို့မဟုတ် ညှဉ်းပန်းခံရခြင်းရှိပါက ဘယ်သူ့ကို ခေါ်ရမလဲ။",
+    "zh": "泰国的老人被遗弃或虐待，该打给谁？",
+    "de": "Wen rufe ich an, wenn ein älterer Mensch in Thailand vernachlässigt oder misshandelt wird?"
+   },
+   "a": {
+    "en": "The Department of Older Persons' Chiang Mai center says reports go to the MSDHS hotline 1300, open around the clock, or to the Department of Older Persons' website.",
+    "th": "ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุ เชียงใหม่ ของกรมกิจการผู้สูงอายุ ระบุว่าแจ้งได้ทางสายด่วน พม. 1300 ตลอด 24 ชั่วโมง หรือทางเว็บไซต์ของกรมกิจการผู้สูงอายุ",
+    "my": "သက်ကြီးရွယ်အိုဆိုင်ရာဦးစီးဌာန၏ ချင်းမိုင် ဌာနခွဲက အစီရင်ခံချက်များကို လူမှုဖွံ့ဖြိုးရေးနှင့် လူ့လုံခြုံရေးဝန်ကြီးဌာန ဟော့လိုင်း 1300 (ည နေ့ မပြတ်) သို့မဟုတ် သက်ကြီးရွယ်အိုဆိုင်ရာဦးစီးဌာန၏ ဝက်ဘ်ဆိုက်သို့ ပေးပို့နိုင်သည်ဟု ဆိုသည်။",
+    "zh": "老年人事务厅清迈中心称，举报可拨打社会发展与人类安全部热线 1300（全天 24 小时），或通过老年人事务厅网站提交。",
+    "de": "Das Zentrum des Department of Older Persons in Chiang Mai schreibt, Meldungen gingen an die MSDHS-Hotline 1300, rund um die Uhr erreichbar, oder über die Website des Department of Older Persons."
+   },
+   "src": "https://thammapakorn.dop.go.th/en/faq"
+  },
+  {
+   "q": {
+    "en": "How much is a care home in Chiang Mai?",
+    "th": "บ้านพักผู้สูงอายุในเชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်ရှိ သက်ကြီးစောင့်ရှောက်ရေးအိမ်ကို ဈေးဘယ်လောက်လဲ။",
+    "zh": "清迈的养老院要多少钱？",
+    "de": "Was kostet ein Pflegeheim in Chiang Mai?"
+   },
+   "a": {
+    "en": "Ban Sabai Village lists a standard room at ฿67,000 to ฿73,000 a month with breakfast, and care billed on top: ฿27,000 for shared care of 3 to 4 hours a day, ฿44,000 for up to 8 hours and ฿130,000 for one-on-one care around the clock. The page says signing can mean paying two months in advance.",
+    "th": "Ban Sabai Village แสดงราคาห้องมาตรฐาน ฿67,000 ถึง ฿73,000 ต่อเดือนพร้อมอาหารเช้า และคิดค่าดูแลเพิ่ม ได้แก่ ฿27,000 สำหรับการดูแลร่วม 3 ถึง 4 ชั่วโมงต่อวัน ฿44,000 สำหรับไม่เกิน 8 ชั่วโมง และ ฿130,000 สำหรับการดูแลตัวต่อตัวตลอด 24 ชั่วโมง เว็บไซต์ระบุว่าเมื่อทำสัญญาอาจต้องจ่ายล่วงหน้าสองเดือน",
+    "my": "Ban Sabai Village က မနက်စာပါ စံအခန်းကို တစ်လ ฿67,000 မှ ฿73,000 ဟု ဖော်ပြပြီး စောင့်ရှောက်ခကို ထပ်တွက်သည် - တစ်နေ့ 3 နာရီမှ 4 နာရီ မျှဝေစောင့်ရှောက်မှု ฿27,000၊ 8 နာရီအထိ ฿44,000၊ နေ့ညမပြတ် တစ်ဦးချင်း စောင့်ရှောက်မှု ฿130,000။ စာချုပ်ချုပ်ပါက နှစ်လစာ ကြိုပေးရနိုင်သည်ဟု စာမျက်နှာက ဆိုသည်။",
+    "zh": "Ban Sabai Village 标价：含早餐的标准间每月 ฿67,000 至 ฿73,000，护理另计：每天 3 至 4 小时的共享护理 ฿27,000，最多 8 小时 ฿44,000，全天一对一护理 ฿130,000。页面称，签约时可能要预付两个月。",
+    "de": "Ban Sabai Village führt ein Standardzimmer mit Frühstück zu ฿67,000 bis ฿73,000 im Monat auf, die Pflege kommt dazu: ฿27,000 für geteilte Pflege von 3 bis 4 Stunden am Tag, ฿44,000 für bis zu 8 Stunden und ฿130,000 für Einzelbetreuung rund um die Uhr. Laut Seite kann der Vertragsabschluss zwei Monate Vorauszahlung bedeuten."
+   },
+   "src": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  }
+ ],
+ "related": [
+  "elder-care",
+  "retire",
+  "blood",
+  "specialist",
+  "there",
+  "call"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Starter Kit: how to choose a retirement home in Thailand",
+    "th": "Thailand Starter Kit: เลือกบ้านพักผู้สูงอายุในไทย",
+    "my": "Thailand Starter Kit: ထိုင်းနိုင်ငံတွင် အငြိမ်းစားအိမ်ကို ရွေးချယ်ပုံ",
+    "zh": "Thailand Starter Kit：如何选择泰国的养老院",
+    "de": "Thailand Starter Kit: So wählt man ein Altersheim in Thailand"
+   },
+   "href": "https://www.thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "Department of Older Persons, Chiang Mai center: questions and answers",
+    "th": "ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุ เชียงใหม่: คำถามที่พบบ่อย",
+    "my": "သက်ကြီးရွယ်အိုဆိုင်ရာဦးစီးဌာန ချင်းမိုင်ဌာနခွဲ: မေးလေ့ရှိသောမေးခွန်းများ",
+    "zh": "老年人事务厅清迈中心：常见问题",
+    "de": "Department of Older Persons, Zentrum Chiang Mai: häufige Fragen"
+   },
+   "href": "https://thammapakorn.dop.go.th/en/faq"
+  }
+ ]
+}

@@ -1,0 +1,282 @@
+{
+ "id": "web-license",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People in another city or province want one of these sites for their own place.",
+  "th": "คนในเมืองหรือจังหวัดอื่นอยากได้เว็บแบบนี้สำหรับพื้นที่ของตัวเอง",
+  "my": "အခြားမြို့ သို့မဟုတ် ပြည်နယ်ရှိ လူများက ဤကဲ့သို့ ဆိုက်တစ်ခုကို မိမိနေရာအတွက် လိုချင်ကြသည်။",
+  "zh": "其他城市或府的人，想要这样一个属于自己地方的网站。",
+  "de": "Menschen in einer anderen Stadt oder Provinz möchten eine solche Website für ihren eigenen Ort."
+ },
+ "n": {
+  "de": "Unsere Seite, für Ihre Stadt"
+ },
+ "l": {
+  "de": "Chiang Mai Visa Desk und andere, lizenziert und eingerichtet."
+ },
+ "steps": [
+  {
+   "db": "compass",
+   "t": {
+    "en": "You pick one of our sites, such as Chiang Mai Visa Desk, and your city or province.",
+    "th": "คุณเลือกเว็บของเรา เช่น โต๊ะวีซ่าเชียงใหม่ และเมืองหรือจังหวัดของคุณ",
+    "my": "Chiang Mai Visa Desk ကဲ့သို့ ကျွန်ုပ်တို့၏ဆိုက်တစ်ခုနှင့် သင့်မြို့ သို့မဟုတ် ပြည်နယ်ကို သင်ရွေးသည်။",
+    "zh": "您选定我们的一个网站，如清迈签证服务台，以及您的城市或府。",
+    "de": "Sie wählen eine unserer Seiten, etwa Chiang Mai Visa Desk, und Ihre Stadt oder Provinz."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "一开始",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "key",
+   "t": {
+    "en": "The site is licensed to you.",
+    "th": "ให้สิทธิ์ใช้เว็บแก่คุณ",
+    "my": "ဆိုက်ကို သင့်အား လိုင်စင်ပေးသည်။",
+    "zh": "网站授权给您。",
+    "de": "Die Seite wird Ihnen lizenziert."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "然后",
+    "de": "Dann"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "It is set up for your city or province.",
+    "th": "ตั้งค่าสำหรับเมืองหรือจังหวัดของคุณ",
+    "my": "သင့်မြို့ သို့မဟုတ် ပြည်နယ်အတွက် ပြင်ဆင်သတ်မှတ်သည်။",
+    "zh": "按您的城市或府部署。",
+    "de": "Sie wird für Ihre Stadt oder Provinz eingerichtet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Chiang Mai Visa Desk describes itself as a site for work permits, company setup and visas in Chiang Mai, Northern Thailand. The site is in English, with a Thai version.",
+    "th": "โต๊ะวีซ่าเชียงใหม่ (Chiang Mai Visa Desk) แนะนำตัวเองว่าเป็นเว็บเรื่องใบอนุญาตทำงาน การจัดตั้งบริษัท และวีซ่า ในเชียงใหม่ ภาคเหนือของไทย เว็บเป็นภาษาอังกฤษ และมีฉบับภาษาไทย",
+    "my": "Chiang Mai Visa Desk သည် ထိုင်းမြောက်ပိုင်း ချင်းမိုင်ရှိ အလုပ်လုပ်ခွင့်ပါမစ်၊ ကုမ္ပဏီဖွဲ့စည်းခြင်းနှင့် ဗီဇာများဆိုင်ရာ ဆိုက်ဟု မိမိကိုယ်ကို မိတ်ဆက်သည်။ ဆိုက်သည် အင်္ဂလိပ်ဘာသာဖြင့်ဖြစ်ပြီး ထိုင်းဘာသာဗားရှင်းလည်း ရှိသည်။",
+    "zh": "清迈签证服务台（Chiang Mai Visa Desk）自称是一个讲泰国北部清迈的工作许可证、公司设立和签证的网站。网站是英文的，另有泰文版。",
+    "de": "Chiang Mai Visa Desk beschreibt sich als Website für Arbeitsbewilligungen, Firmengründung und Visa in Chiang Mai, Nordthailand. Die Seite ist auf Englisch, mit einer thailändischen Version."
+   },
+   "src": "https://chiangmaivisadesk.com/"
+  },
+  {
+   "t": {
+    "en": "THNIC lists .co.th as a domain for business, starting at ฿856 a year, and .in.th for individuals and personal brands.",
+    "th": "THNIC ระบุ .co.th เป็นโดเมนสำหรับธุรกิจ เริ่มต้นปีละ ฿856 และ .in.th สำหรับบุคคลทั่วไปและแบรนด์ส่วนตัว",
+    "my": "THNIC သည် .co.th ကို စီးပွားရေးလုပ်ငန်းအတွက် ဒိုမိန်းအဖြစ် တစ်နှစ် ฿856 မှစ၍ ဖော်ပြပြီး .in.th ကို တစ်ဦးချင်းနှင့် ကိုယ်ပိုင်ဘရန်းများအတွက်ဟု ဖော်ပြသည်။",
+    "zh": "THNIC 把 .co.th 列为商业用域名，每年 ฿856 起，.in.th 则面向个人和个人品牌。",
+    "de": "THNIC führt .co.th als Domain für Geschäfte auf, ab ฿856 im Jahr, und .in.th für Einzelpersonen und persönliche Marken."
+   },
+   "src": "https://www.thnic.co.th/"
+  },
+  {
+   "t": {
+    "en": "Google's page on multilingual sites gives each language version its own URL, tied together with hreflang (a tag that says which page is which language). The alternate URLs do not need to be on the same domain.",
+    "th": "หน้าของ Google เรื่องเว็บหลายภาษาให้แต่ละภาษามี URL ของตัวเอง ผูกเข้าด้วยกันด้วย hreflang (แท็กที่บอกว่าหน้าไหนเป็นภาษาอะไร) และ URL ทางเลือกไม่จำเป็นต้องอยู่ในโดเมนเดียวกัน",
+    "my": "Google ၏ ဘာသာစကားစုံ ဝက်ဘ်ဆိုက်စာမျက်နှာတွင် ဘာသာစကားတစ်ခုချင်းကို ကိုယ်ပိုင် URL ပေးပြီး hreflang (ဘယ်စာမျက်နှာက ဘယ်ဘာသာစကားဟု ပြောသော tag) ဖြင့် ချိတ်ဆက်သည်။ အစားထိုး URL များသည် ဒိုမိန်းတူညီစရာ မလိုပါ။",
+    "zh": "Google 关于多语言网站的页面，让每个语言版本有自己的 URL，并用 hreflang（说明哪个页面是哪种语言的标签）把它们连起来。备用 URL 不必在同一个域名下。",
+    "de": "Googles Seite zu mehrsprachigen Websites gibt jeder Sprachversion eine eigene URL und verbindet sie mit hreflang (ein Tag, das sagt, welche Seite in welcher Sprache ist). Die alternativen URLs müssen nicht auf derselben Domain liegen."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Building a new static website, Bangkok agency",
+    "th": "สร้างเว็บไซต์แบบเนื้อหาคงที่ใหม่ เอเจนซี่ในกรุงเทพฯ",
+    "my": "static ဝက်ဘ်ဆိုက်အသစ် တည်ဆောက်ခြင်း၊ ဘန်ကောက်အေဂျင်စီ",
+    "zh": "新建静态网站，曼谷代理机构",
+    "de": "Eine neue statische Website bauen lassen, Agentur in Bangkok"
+   },
+   "p": {
+    "en": "From ฿14,900",
+    "th": "เริ่มต้น ฿14,900",
+    "my": "฿14,900 မှစ၍",
+    "zh": "฿14,900 起",
+    "de": "Ab ฿14,900"
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Building a new dynamic website with a content management system or e-commerce, same agency",
+    "th": "สร้างเว็บไซต์แบบไดนามิกใหม่ที่มีระบบจัดการเนื้อหาหรืออีคอมเมิร์ซ เอเจนซี่เดียวกัน",
+    "my": "အကြောင်းအရာစီမံခန့်ခွဲမှုစနစ် သို့မဟုတ် အွန်လိုင်းရောင်းဝယ်ရေးပါသော dynamic ဝက်ဘ်ဆိုက်အသစ် တည်ဆောက်ခြင်း၊ အေဂျင်စီတူ",
+    "zh": "新建带内容管理系统或电商的动态网站，同一家代理机构",
+    "de": "Eine neue dynamische Website mit Redaktionssystem oder E-Commerce bauen lassen, dieselbe Agentur"
+   },
+   "p": {
+    "en": "From ฿29,900",
+    "th": "เริ่มต้น ฿29,900",
+    "my": "฿29,900 မှစ၍",
+    "zh": "฿29,900 起",
+    "de": "Ab ฿29,900"
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "A .co.th domain at THNIC",
+    "th": "โดเมน .co.th ที่ THNIC",
+    "my": "THNIC ရှိ .co.th ဒိုမိန်း",
+    "zh": "THNIC 的 .co.th 域名",
+    "de": "Eine .co.th-Domain bei THNIC"
+   },
+   "p": {
+    "en": "From ฿856 a year",
+    "th": "เริ่มต้นปีละ ฿856",
+    "my": "တစ်နှစ် ฿856 မှစ၍",
+    "zh": "每年 ฿856 起",
+    "de": "Ab ฿856 im Jahr"
+   },
+   "src": "https://www.thnic.co.th/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is the Chiang Mai Visa Desk site?",
+    "th": "เว็บโต๊ะวีซ่าเชียงใหม่คืออะไร",
+    "my": "Chiang Mai Visa Desk ဆိုက်ဆိုတာ ဘာလဲ။",
+    "zh": "清迈签证服务台网站是什么？",
+    "de": "Was ist die Website Chiang Mai Visa Desk?"
+   },
+   "a": {
+    "en": "Its page describes it as work permits, company setup and visas in Chiang Mai, Northern Thailand. The site is in English, with a Thai version.",
+    "th": "หน้าเว็บของโต๊ะวีซ่าเชียงใหม่แนะนำตัวว่าเป็นเรื่องใบอนุญาตทำงาน การจัดตั้งบริษัท และวีซ่า ในเชียงใหม่ ภาคเหนือของไทย เว็บเป็นภาษาอังกฤษ และมีฉบับภาษาไทย",
+    "my": "Chiang Mai Visa Desk ၏ စာမျက်နှာတွင် ထိုင်းမြောက်ပိုင်း ချင်းမိုင်ရှိ အလုပ်လုပ်ခွင့်ပါမစ်၊ ကုမ္ပဏီဖွဲ့စည်းခြင်းနှင့် ဗီဇာများဟု ဖော်ပြသည်။ ဆိုက်သည် အင်္ဂလိပ်ဘာသာဖြင့်ဖြစ်ပြီး ထိုင်းဘာသာဗားရှင်းလည်း ရှိသည်။",
+    "zh": "该网站的页面介绍为：泰国北部清迈的工作许可证、公司设立和签证。网站是英文的，另有泰文版。",
+    "de": "Die Seite beschreibt sich als Arbeitsbewilligungen, Firmengründung und Visa in Chiang Mai, Nordthailand. Die Website ist auf Englisch, mit einer thailändischen Version."
+   },
+   "src": "https://chiangmaivisadesk.com/"
+  },
+  {
+   "q": {
+    "en": "How much does a new website cost to build in Thailand?",
+    "th": "สร้างเว็บไซต์ใหม่ในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် ဝက်ဘ်ဆိုက်အသစ် တည်ဆောက်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "在泰国新建一个网站要多少钱？",
+    "de": "Was kostet es, in Thailand eine neue Website bauen zu lassen?"
+   },
+   "a": {
+    "en": "A Bangkok agency's packages page starts static websites at ฿14,900, and dynamic websites with a content management system or e-commerce at ฿29,900. It says prices could vary from ฿14,900 to ฿500,000.",
+    "th": "หน้าแพ็กเกจของเอเจนซี่ในกรุงเทพฯ แห่งหนึ่งเริ่มเว็บไซต์แบบเนื้อหาคงที่ที่ ฿14,900 และเว็บไซต์แบบไดนามิกที่มีระบบจัดการเนื้อหาหรืออีคอมเมิร์ซที่ ฿29,900 ระบุว่าราคาอาจอยู่ระหว่าง ฿14,900 ถึง ฿500,000",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခု၏ ပက်ကေ့ချ်စာမျက်နှာတွင် static ဝက်ဘ်ဆိုက်ကို ฿14,900 မှစ၍၊ အကြောင်းအရာစီမံခန့်ခွဲမှုစနစ် သို့မဟုတ် အွန်လိုင်းရောင်းဝယ်ရေးပါသော dynamic ဝက်ဘ်ဆိုက်ကို ฿29,900 မှစ၍ ဖော်ပြသည်။ ဈေးနှုန်းသည် ฿14,900 မှ ฿500,000 အထိ ကွာနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "曼谷一家代理机构的套餐页，静态网站 ฿14,900 起，带内容管理系统或电商的动态网站 ฿29,900 起。页面称价格可能在 ฿14,900 到 ฿500,000 之间。",
+    "de": "Auf der Paketseite einer Agentur in Bangkok beginnen statische Websites bei ฿14,900 und dynamische Websites mit Redaktionssystem oder E-Commerce bei ฿29,900. Die Seite schreibt, die Preise könnten von ฿14,900 bis ฿500,000 reichen."
+   },
+   "src": "https://digitalagencybangkok.com/web-design-packages-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Which domain endings do Thai businesses and individuals use?",
+    "th": "ธุรกิจและบุคคลในไทยใช้โดเมนนามสกุลอะไรได้บ้าง",
+    "my": "ထိုင်းနိုင်ငံရှိ လုပ်ငန်းများနှင့် တစ်ဦးချင်းများ ဘယ်ဒိုမိန်းအဆုံးသတ်တွေ သုံးနိုင်သလဲ။",
+    "zh": "泰国的企业和个人可以用哪些域名后缀？",
+    "de": "Welche Domain-Endungen gibt es für Geschäfte und Einzelpersonen in Thailand?"
+   },
+   "a": {
+    "en": "THNIC lists .co.th as a domain for business, starting at ฿856 a year, and .in.th for individuals and personal brands.",
+    "th": "THNIC ระบุ .co.th เป็นโดเมนสำหรับธุรกิจ เริ่มต้นปีละ ฿856 และ .in.th สำหรับบุคคลทั่วไปและแบรนด์ส่วนตัว",
+    "my": "THNIC သည် .co.th ကို စီးပွားရေးလုပ်ငန်းအတွက် ဒိုမိန်းအဖြစ် တစ်နှစ် ฿856 မှစ၍ ဖော်ပြပြီး .in.th ကို တစ်ဦးချင်းနှင့် ကိုယ်ပိုင်ဘရန်းများအတွက်ဟု ဖော်ပြသည်။",
+    "zh": "THNIC 把 .co.th 列为商业用域名，每年 ฿856 起，.in.th 则面向个人和个人品牌。",
+    "de": "THNIC führt .co.th als Domain für Geschäfte auf, ab ฿856 im Jahr, und .in.th für Einzelpersonen und persönliche Marken."
+   },
+   "src": "https://www.thnic.co.th/"
+  },
+  {
+   "q": {
+    "en": "Can a city website be in Thai and English?",
+    "th": "เว็บไซต์ของเมืองทำเป็นไทยและอังกฤษได้ไหม",
+    "my": "မြို့တစ်မြို့၏ ဝက်ဘ်ဆိုက်ကို ထိုင်းနှင့် အင်္ဂလိပ်ဖြင့် လုပ်နိုင်သလား။",
+    "zh": "城市网站可以做成泰英双语吗？",
+    "de": "Kann die Website einer Stadt auf Thai und Englisch sein?"
+   },
+   "a": {
+    "en": "Yes. Google's page on multilingual sites gives each language version its own URL, tied together with hreflang. The alternate URLs do not need to be on the same domain.",
+    "th": "ได้ หน้าของ Google เรื่องเว็บหลายภาษาให้แต่ละภาษามี URL ของตัวเอง ผูกเข้าด้วยกันด้วย hreflang และ URL ทางเลือกไม่จำเป็นต้องอยู่ในโดเมนเดียวกัน",
+    "my": "ရသည်။ Google ၏ ဘာသာစကားစုံ ဝက်ဘ်ဆိုက်စာမျက်နှာတွင် ဘာသာစကားတစ်ခုချင်းကို ကိုယ်ပိုင် URL ပေးပြီး hreflang ဖြင့် ချိတ်ဆက်သည်။ အစားထိုး URL များသည် ဒိုမိန်းတူညီစရာ မလိုပါ။",
+    "zh": "可以。Google 关于多语言网站的页面，让每个语言版本有自己的 URL，并用 hreflang 连起来。备用 URL 不必在同一个域名下。",
+    "de": "Ja. Googles Seite zu mehrsprachigen Websites gibt jeder Sprachversion eine eigene URL, verbunden mit hreflang. Die alternativen URLs müssen nicht auf derselben Domain liegen."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  }
+ ],
+ "related": [
+  "site",
+  "web-move",
+  "web-care",
+  "web-mail",
+  "web-found",
+  "copy"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Chiang Mai Visa Desk",
+    "th": "โต๊ะวีซ่าเชียงใหม่ (Chiang Mai Visa Desk)",
+    "my": "Chiang Mai Visa Desk",
+    "zh": "清迈签证服务台（Chiang Mai Visa Desk）",
+    "de": "Chiang Mai Visa Desk"
+   },
+   "href": "https://chiangmaivisadesk.com/"
+  },
+  {
+   "t": {
+    "en": "THNIC: .th domain names",
+    "th": "THNIC: ชื่อโดเมน .th",
+    "my": "THNIC: .th ဒိုမိန်းအမည်များ",
+    "zh": "THNIC：.th 域名",
+    "de": "THNIC: .th-Domainnamen"
+   },
+   "href": "https://www.thnic.co.th/"
+  }
+ ],
+ "glyphs": [
+  "copy",
+  "compass",
+  "key"
+ ]
+}

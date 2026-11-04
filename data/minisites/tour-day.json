@@ -1,0 +1,336 @@
+{
+ "id": "tour-day",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People hire a car and a guide for the day to reach the White Temple, Doi Inthanon and other sights that lie hours from town.",
+  "th": "คนเหมารถพร้อมไกด์ทั้งวันเพื่อไปวัดร่องขุ่น ดอยอินทนนท์ และสถานที่อื่นที่อยู่ห่างจากตัวเมืองหลายชั่วโมง",
+  "my": "လူတွေက ဝပ်ရုံခွန်၊ ဒွိုင်အင်းသနွန်နှင့် မြို့မှ နာရီပေါင်းများစွာ ကွာဝေးသည့် နေရာများသို့ ရောက်ရန် တစ်ရက်လုံး ကားနှင့် ဧည့်လမ်းညွှန် ငှားကြသည်။",
+  "zh": "人们包车并请导游一整天，去白庙、茵他侬山，以及离市区好几个小时车程的其他景点。",
+  "de": "Man mietet für einen Tag Auto und Guide, um den Weissen Tempel, den Doi Inthanon und andere Orte zu erreichen, die Stunden von der Stadt entfernt liegen."
+ },
+ "n": {
+  "de": "Private Tagestour"
+ },
+ "l": {
+  "de": "Auto, Treibstoff und ein lizenzierter Guide; Eintritte und Mittagessen zum Selbstkostenpreis."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "The car, fuel and a licensed guide are booked for the day.",
+    "th": "จองรถ น้ำมัน และไกด์ที่มีใบอนุญาตสำหรับหนึ่งวัน",
+    "my": "ကား၊ လောင်စာနှင့် လိုင်စင်ရ ဧည့်လမ်းညွှန်ကို တစ်ရက်စာ ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "为这一天订好车、油费和持证导游。",
+    "de": "Auto, Treibstoff und ein lizenzierter Guide werden für den Tag gebucht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันเที่ยว",
+    "my": "ခရီးမထွက်မီ",
+    "zh": "出发前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "compass",
+   "t": {
+    "en": "The car and guide take you to the sights in Chiang Rai or Chiang Mai.",
+    "th": "รถและไกด์พาไปชมสถานที่ในเชียงรายหรือเชียงใหม่",
+    "my": "ကားနှင့် ဧည့်လမ်းညွှန်က ချင်းရိုင် သို့မဟုတ် ချင်းမိုင်ရှိ ကြည့်ရှုစရာနေရာများသို့ ခေါ်ဆောင်သွားသည်။",
+    "zh": "车和导游带您游览清莱或清迈的景点。",
+    "de": "Auto und Guide bringen Sie zu den Sehenswürdigkeiten in Chiang Rai oder Chiang Mai."
+   },
+   "who": {
+    "en": "Hongdam and the guide",
+    "th": "หงส์ดำและไกด์",
+    "my": "ဟုန်ဒမ်နှင့် ဧည့်လမ်းညွှန်",
+    "zh": "鸿丹和导游",
+    "de": "Hongdam und der Guide"
+   },
+   "time": {
+    "en": "The day",
+    "th": "ในวันนั้น",
+    "my": "ထိုနေ့",
+    "zh": "当天",
+    "de": "Der Tag"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Entries, boat and lunch are paid at cost.",
+    "th": "ค่าเข้า ค่าเรือ และอาหารกลางวันคิดตามจริง",
+    "my": "ဝင်ခွင့်ကြေး၊ လှေခနှင့် နေ့လည်စာကို ကုန်ကျစရိတ်အတိုင်း ပေးချေရသည်။",
+    "zh": "门票、船费和午餐按实际费用结算。",
+    "de": "Eintritte, Boot und Mittagessen werden zum Selbstkostenpreis bezahlt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "During the day",
+    "th": "ระหว่างวัน",
+    "my": "နေ့အတွင်း",
+    "zh": "当天",
+    "de": "Während des Tages"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Tourism Business and Guide Act requires a tour guide to be a Thai national and licensed under the Act. Foreigners are barred from working as tour guides in Thailand.",
+    "th": "พ.ร.บ.ธุรกิจนำเที่ยวและมัคคุเทศก์กำหนดว่ามัคคุเทศก์ต้องเป็นคนสัญชาติไทยและได้รับใบอนุญาตตามกฎหมายนี้ ชาวต่างชาติถูกห้ามทำงานเป็นมัคคุเทศก์ในไทย",
+    "my": "ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန်ဥပဒေအရ ဧည့်လမ်းညွှန်သည် ထိုင်းနိုင်ငံသားဖြစ်ပြီး ဥပဒေအရ လိုင်စင်ရရမည်။ နိုင်ငံခြားသားများသည် ထိုင်းတွင် ဧည့်လမ်းညွှန်အလုပ် မလုပ်ရ။",
+    "zh": "《旅游业务与导游法》规定，导游须是泰国公民，并依该法获得许可。外国人不得在泰国从事导游工作。",
+    "de": "Das Gesetz über Tourismusbetriebe und Guides verlangt, dass ein Guide thailändischer Staatsangehöriger ist und nach dem Gesetz eine Bewilligung hat. Ausländer dürfen in Thailand nicht als Guide arbeiten."
+   },
+   "src": "https://so05.tci-thaijo.org/index.php/pacific/article/view/204920"
+  },
+  {
+   "t": {
+    "en": "The Department of Tourism's public guide lists a tour business licence (for a person or a company), a guide licence with renewal, and a tour leader registration.",
+    "th": "คู่มือประชาชนของกรมการท่องเที่ยวมีใบอนุญาตประกอบธุรกิจนำเที่ยว (บุคคลธรรมดาหรือนิติบุคคล) ใบอนุญาตเป็นมัคคุเทศก์พร้อมการต่ออายุ และการขึ้นทะเบียนเป็นผู้นำเที่ยว",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန၏ ပြည်သူ့လမ်းညွှန်တွင် ခရီးစဉ်စီစဉ်လုပ်ငန်းလိုင်စင် (လူပုဂ္ဂိုလ် သို့မဟုတ် ကုမ္ပဏီ)၊ သက်တမ်းတိုးနိုင်သော ဧည့်လမ်းညွှန်လိုင်စင်နှင့် ခရီးစဉ်ခေါင်းဆောင် မှတ်ပုံတင်ခြင်းတို့ကို ဖော်ပြထားသည်။",
+    "zh": "旅游局的民众指南列出：旅游业务执照（个人或公司）、导游执照及其续期，以及领队登记。",
+    "de": "Der Bürgerleitfaden des Tourismusamts (Department of Tourism) nennt eine Lizenz für Tourismusbetriebe (für eine Person oder eine Firma), eine Guide-Lizenz mit Erneuerung und eine Registrierung als Tourleiter."
+   },
+   "src": "https://www.dot.go.th/news/another/detail/3510"
+  },
+  {
+   "t": {
+    "en": "The Department of Tourism's site has a look-up page for licensed tour businesses, guides and tour leaders.",
+    "th": "เว็บไซต์กรมการท่องเที่ยวมีหน้าตรวจสอบใบอนุญาตธุรกิจนำเที่ยว มัคคุเทศก์ และผู้นำเที่ยว",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန၏ ဝက်ဘ်ဆိုက်တွင် လိုင်စင်ရ ခရီးစဉ်စီစဉ်လုပ်ငန်းများ၊ ဧည့်လမ်းညွှန်များနှင့် ခရီးစဉ်ခေါင်းဆောင်များကို ရှာဖွေသည့် စာမျက်နှာ ရှိသည်။",
+    "zh": "旅游局网站有查询持证旅游业务、导游和领队的页面。",
+    "de": "Auf der Website des Tourismusamts gibt es eine Abfrageseite für lizenzierte Tourismusbetriebe, Guides und Tourleiter."
+   },
+   "src": "https://www.dot.go.th/"
+  },
+  {
+   "t": {
+    "en": "From Chiang Mai, a Chiang Rai day trip is a round trip of about 6 hours on the road. Doi Inthanon is about 2 hours by car.",
+    "th": "จากเชียงใหม่ ทริปเชียงรายแบบเช้าไปเย็นกลับใช้เวลาอยู่บนถนนไป-กลับประมาณ 6 ชั่วโมง ส่วนดอยอินทนนท์ใช้เวลาขับรถประมาณ 2 ชั่วโมง",
+    "my": "ချင်းမိုင်မှ ချင်းရိုင်သို့ တစ်ရက်တည်းခရီးသည် သွားပြန် လမ်းပေါ်တွင် 6 နာရီခန့် ကြာသည်။ ဒွိုင်အင်းသနွန်သို့ ကားဖြင့် 2 နာရီခန့် ကြာသည်။",
+    "zh": "从清迈出发，清莱一日游往返在路上约 6 小时；茵他侬山驾车约 2 小时。",
+    "de": "Ab Chiang Mai dauert ein Tagesausflug nach Chiang Rai hin und zurück etwa 6 Stunden auf der Strasse. Zum Doi Inthanon fährt man etwa 2 Stunden."
+   },
+   "src": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  },
+  {
+   "t": {
+    "en": "Wat Rong Khun asks for modest dress: shoulders covered and hemlines past the knee. Sarongs are lent free at the entry points.",
+    "th": "วัดร่องขุ่นให้แต่งกายสุภาพ ปิดไหล่ และชายกระโปรงต้องยาวเลยเข่า มีผ้าถุงให้ยืมฟรีที่จุดเข้า",
+    "my": "ဝပ်ရုံခွန်တွင် ယဉ်ကျေးစွာ ဝတ်ဆင်ရန် ဆိုထားပြီး ပခုံးဖုံးရမည်၊ ဒူးအောက်ရောက်သော အဝတ်ဝတ်ရမည်။ ဝင်ပေါက်များတွင် ပုဆိုးကို အခမဲ့ ငှားပေးသည်။",
+    "zh": "白庙要求着装得体：遮住肩膀，下摆过膝，入口处免费借用纱笼。",
+    "de": "Der Wat Rong Khun verlangt dezente Kleidung: Schultern bedeckt, Saum unterhalb des Knies. Am Eingang werden Sarongs kostenlos geliehen."
+   },
+   "src": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "White Temple (Wat Rong Khun), foreign adult, from 1 January 2026",
+    "th": "วัดร่องขุ่น ชาวต่างชาติ ตั้งแต่ 1 มกราคม 2569",
+    "my": "ဝပ်ရုံခွန်၊ နိုင်ငံခြား လူကြီး၊ 2026 ဇန်နဝါရီ 1 ရက်မှစ၍",
+    "zh": "白庙，外国成人，自 2026 年 1 月 1 日起",
+    "de": "Weisser Tempel (Wat Rong Khun), ausländische Erwachsene, ab 1. Januar 2026"
+   },
+   "p": {
+    "en": "฿200",
+    "th": "฿200",
+    "my": "฿200",
+    "zh": "฿200",
+    "de": "฿200"
+   },
+   "src": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  },
+  {
+   "t": {
+    "en": "Doi Inthanon National Park, foreign adult (the listing is dated June 2022)",
+    "th": "อุทยานแห่งชาติดอยอินทนนท์ ชาวต่างชาติผู้ใหญ่ (รายการลงไว้มิถุนายน 2565)",
+    "my": "ဒွိုင်အင်းသနွန် အမျိုးသားဥယျာဉ်၊ နိုင်ငံခြား လူကြီး (စာရင်းကို 2022 ဇွန်တွင် ဖော်ပြထားသည်)",
+    "zh": "茵他侬山国家公园，外国成人（该页面列价日期为 2022 年 6 月）",
+    "de": "Doi-Inthanon-Nationalpark, ausländische Erwachsene (Eintrag von Juni 2022)"
+   },
+   "p": {
+    "en": "฿300; ฿150 for a child aged 3–14; ฿30 for a car",
+    "th": "฿300; เด็กอายุ 3–14 ปี ฿150; รถยนต์ ฿30",
+    "my": "฿300၊ အသက် 3–14 ကလေး ฿150၊ ကား ฿30",
+    "zh": "฿300；3–14 岁儿童 ฿150；汽车 ฿30",
+    "de": "฿300; ฿150 für ein Kind von 3–14; ฿30 für ein Auto"
+   },
+   "src": "https://www.thainationalparks.com/doi-inthanon-national-park"
+  },
+  {
+   "t": {
+    "en": "Private car with driver and fuel, about 9 hours, Chiang Mai to Chiang Rai (a Chiang Mai operator's page; entries and food are extra)",
+    "th": "เหมารถพร้อมคนขับและน้ำมัน ประมาณ 9 ชั่วโมง เชียงใหม่ไปเชียงราย (หน้าของผู้ให้บริการในเชียงใหม่ ค่าเข้าและอาหารไม่รวม)",
+    "my": "ဆက်ဆွယ်သူ ကားနှင့် ယာဉ်မောင်း၊ လောင်စာပါ၊ ချင်းမိုင်မှ ချင်းရိုင် 9 နာရီခန့် (ချင်းမိုင်ရှိ လုပ်ငန်းရှင်တစ်ဦး၏ စာမျက်နှာ၊ ဝင်ခွင့်ကြေးနှင့် အစားအသောက် မပါ)",
+    "zh": "包车含司机和油费，约 9 小时，清迈到清莱（清迈一家经营者的页面；门票和餐费另计）",
+    "de": "Privatauto mit Fahrer und Treibstoff, etwa 9 Stunden, Chiang Mai–Chiang Rai (Seite eines Anbieters in Chiang Mai; Eintritte und Essen extra)"
+   },
+   "p": {
+    "en": "฿4,200 a car for 1–3 people; ฿4,500 a van for 4–10 people",
+    "th": "฿4,200 ต่อรถเก๋ง 1–3 คน; ฿4,500 ต่อรถตู้ 4–10 คน",
+    "my": "ကား (1–3 ဦး) ฿4,200၊ ဗင်ကား (4–10 ဦး) ฿4,500",
+    "zh": "每辆车（1–3 人）฿4,200；每辆面包车（4–10 人）฿4,500",
+    "de": "฿4,200 pro Auto (1–3 Personen); ฿4,500 pro Van (4–10 Personen)"
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  },
+  {
+   "t": {
+    "en": "English-speaking guide added to that car, a day",
+    "th": "ไกด์พูดภาษาอังกฤษเพิ่มกับรถคันนั้น ต่อวัน",
+    "my": "ထိုကားနှင့်အတူ ထပ်ထည့်သော အင်္ဂလိပ်စကားပြော ဧည့်လမ်းညွှန်၊ တစ်ရက်",
+    "zh": "在该车之外加配英语导游，每天",
+    "de": "Englischsprachiger Guide zusätzlich zu diesem Auto, pro Tag"
+   },
+   "p": {
+    "en": "฿1,500",
+    "th": "฿1,500",
+    "my": "฿1,500",
+    "zh": "฿1,500",
+    "de": "฿1,500"
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Does a private tour guide in Thailand need a licence?",
+    "th": "ไกด์ส่วนตัวในไทยต้องมีใบอนุญาตไหม",
+    "my": "ထိုင်းတွင် ကိုယ်ပိုင် ဧည့်လမ်းညွှန်သည် လိုင်စင် လိုပါသလား။",
+    "zh": "泰国的私人导游需要执照吗？",
+    "de": "Braucht ein privater Guide in Thailand eine Lizenz?"
+   },
+   "a": {
+    "en": "Yes. A Thai law-journal article says the Tourism Business and Guide Act requires a guide to be a Thai national and permitted under the Act. It says foreigners are barred from guiding.",
+    "th": "ต้องมี บทความในวารสารกฎหมายไทยระบุว่า พ.ร.บ.ธุรกิจนำเที่ยวและมัคคุเทศก์กำหนดให้มัคคุเทศก์เป็นคนสัญชาติไทยและได้รับอนุญาตตามกฎหมายนี้ และชาวต่างชาติถูกห้ามทำงานเป็นไกด์",
+    "my": "လိုသည်။ ထိုင်းဥပဒေဂျာနယ်ဆောင်းပါးတစ်ပုဒ်က ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန်ဥပဒေအရ ဧည့်လမ်းညွှန်သည် ထိုင်းနိုင်ငံသားဖြစ်ပြီး ဥပဒေအရ ခွင့်ပြုချက်ရရမည်ဟု ဆိုသည်။ နိုင်ငံခြားသားများသည် ဧည့်လမ်းညွှန်အလုပ် မလုပ်ရဟုလည်း ဆိုသည်။",
+    "zh": "需要。一篇泰国法学期刊文章称，《旅游业务与导游法》要求导游是泰国公民并依该法获得许可，外国人不得从事导游工作。",
+    "de": "Ja. Ein thailändischer Rechtszeitschriften-Artikel schreibt, das Gesetz über Tourismusbetriebe und Guides verlange, dass ein Guide thailändischer Staatsangehöriger ist und nach dem Gesetz zugelassen. Ausländer dürften nicht als Guide arbeiten."
+   },
+   "src": "https://so05.tci-thaijo.org/index.php/pacific/article/view/204920"
+  },
+  {
+   "q": {
+    "en": "How can I look up a guide's or tour company's licence?",
+    "th": "ตรวจสอบใบอนุญาตของไกด์หรือบริษัททัวร์ได้ที่ไหน",
+    "my": "ဧည့်လမ်းညွှန် သို့မဟုတ် ခရီးစဉ်ကုမ္ပဏီ၏ လိုင်စင်ကို ဘယ်မှာ ရှာဖွေနိုင်သလဲ။",
+    "zh": "在哪里可以查导游或旅行社的执照？",
+    "de": "Wo kann man die Lizenz eines Guides oder Reiseveranstalters nachschlagen?"
+   },
+   "a": {
+    "en": "The Department of Tourism's site has a look-up page for tour businesses, guides and tour leaders.",
+    "th": "เว็บไซต์กรมการท่องเที่ยวมีหน้าตรวจสอบใบอนุญาตธุรกิจนำเที่ยว มัคคุเทศก์ และผู้นำเที่ยว",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန၏ ဝက်ဘ်ဆိုက်တွင် ခရီးစဉ်စီစဉ်လုပ်ငန်းများ၊ ဧည့်လမ်းညွှန်များနှင့် ခရီးစဉ်ခေါင်းဆောင်များအတွက် ရှာဖွေသည့် စာမျက်နှာ ရှိသည်။",
+    "zh": "旅游局网站有查询旅游业务、导游和领队的页面。",
+    "de": "Auf der Website des Tourismusamts gibt es eine Abfrageseite für Tourismusbetriebe, Guides und Tourleiter."
+   },
+   "src": "https://www.dot.go.th/"
+  },
+  {
+   "q": {
+    "en": "How long is a private day tour from Chiang Mai to Chiang Rai?",
+    "th": "ทัวร์ส่วนตัวเชียงใหม่ไปเชียงรายหนึ่งวันใช้เวลานานแค่ไหน",
+    "my": "ချင်းမိုင်မှ ချင်းရိုင်သို့ တစ်ရက် ကိုယ်ပိုင်ခရီးသည် ဘယ်လောက်ကြာသလဲ။",
+    "zh": "从清迈到清莱的私人一日游要多久？",
+    "de": "Wie lange dauert eine private Tagestour von Chiang Mai nach Chiang Rai?"
+   },
+   "a": {
+    "en": "A Chiang Mai operator's page lists about 9 hours, with pickup from 7:30 am or at the time asked for.",
+    "th": "หน้าของผู้ให้บริการในเชียงใหม่รายหนึ่งระบุประมาณ 9 ชั่วโมง รับตั้งแต่ 7:30 น. หรือตามเวลาที่ขอ",
+    "my": "ချင်းမိုင်ရှိ လုပ်ငန်းရှင်တစ်ဦး၏ စာမျက်နှာတွင် 9 နာရီခန့်ဟု ဖော်ပြပြီး နံနက် 7:30 မှ သို့မဟုတ် တောင်းဆိုသည့်အချိန်တွင် ကြိုသည်။",
+    "zh": "清迈一家经营者的页面写约 9 小时，早上 7:30 起接，或按要求的时间接。",
+    "de": "Die Seite eines Anbieters in Chiang Mai nennt etwa 9 Stunden, mit Abholung ab 7:30 Uhr oder zur gewünschten Zeit."
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  },
+  {
+   "q": {
+    "en": "How much is a private car and driver for a day trip to Chiang Rai?",
+    "th": "เหมารถพร้อมคนขับไปเชียงรายหนึ่งวันราคาเท่าไร",
+    "my": "ချင်းရိုင်သို့ တစ်ရက်ခရီးအတွက် ကိုယ်ပိုင်ကားနှင့် ယာဉ်မောင်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "包车带司机一日游清莱多少钱？",
+    "de": "Was kostet ein Privatauto mit Fahrer für einen Tagesausflug nach Chiang Rai?"
+   },
+   "a": {
+    "en": "A Chiang Mai operator lists ฿4,200 a car for 1–3 people and ฿4,500 a van for 4–10 people. That covers the driver, fuel, insurance and hotel pickup. Entries and food are extra, and a guide is ฿1,500 a day.",
+    "th": "ผู้ให้บริการในเชียงใหม่รายหนึ่งระบุ ฿4,200 ต่อรถเก๋ง 1–3 คน และ ฿4,500 ต่อรถตู้ 4–10 คน ราคานี้รวมคนขับ น้ำมัน ประกัน และรับส่งโรงแรม ค่าเข้าและอาหารไม่รวม ไกด์เพิ่ม ฿1,500 ต่อวัน",
+    "my": "ချင်းမိုင်ရှိ လုပ်ငန်းရှင်တစ်ဦးက ကား (1–3 ဦး) ฿4,200၊ ဗင်ကား (4–10 ဦး) ฿4,500 ဟု ဖော်ပြသည်။ ယာဉ်မောင်း၊ လောင်စာ၊ အာမခံနှင့် ဟိုတယ်ကြိုပို့ ပါဝင်သည်။ ဝင်ခွင့်ကြေးနှင့် အစားအသောက် မပါပါ၊ ဧည့်လမ်းညွှန်ကို တစ်ရက် ฿1,500 ဖြင့် ထပ်ထည့်နိုင်သည်။",
+    "zh": "清迈一家经营者列出：每辆车（1–3 人）฿4,200，每辆面包车（4–10 人）฿4,500，含司机、油费、保险和酒店接送。门票和餐费另计，导游每天 ฿1,500。",
+    "de": "Ein Anbieter in Chiang Mai nennt ฿4,200 pro Auto (1–3 Personen) und ฿4,500 pro Van (4–10 Personen). Das umfasst Fahrer, Treibstoff, Versicherung und Hotelabholung. Eintritte und Essen sind extra, ein Guide kostet ฿1,500 pro Tag."
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  },
+  {
+   "q": {
+    "en": "Can you visit Doi Inthanon on a day trip from Chiang Mai?",
+    "th": "ไปดอยอินทนนท์เช้าไปเย็นกลับจากเชียงใหม่ได้ไหม",
+    "my": "ချင်းမိုင်မှ ဒွိုင်အင်းသနွန်ကို တစ်ရက်တည်းခရီးဖြင့် သွားနိုင်ပါသလား။",
+    "zh": "从清迈可以一日游茵他侬山吗？",
+    "de": "Kann man von Chiang Mai aus den Doi Inthanon an einem Tag besuchen?"
+   },
+   "a": {
+    "en": "Thailand Highlights puts Doi Inthanon at about 2 hours by car and lists a day there: a hike, the King and Queen Pagodas, the Karen village of Maeklang Luang and Wachirathan Waterfall.",
+    "th": "Thailand Highlights ระบุว่าดอยอินทนนท์ใช้เวลาขับรถประมาณ 2 ชั่วโมง และให้โปรแกรมหนึ่งวันที่นั่น คือเดินป่า พระมหาธาตุเจดีย์นภเมทนีดลและนภพลภูมิสิริ หมู่บ้านกะเหรี่ยงแม่กลางหลวง และน้ำตกวชิรธาร",
+    "my": "Thailand Highlights က ဒွိုင်အင်းသနွန်သည် ကားဖြင့် 2 နာရီခန့်ဟု ဆိုပြီး ထိုနေရာတွင် တစ်ရက်စာအစီအစဉ်ကို ဖော်ပြသည်။ တောင်တက်လမ်းလျှောက်ခြင်း၊ ဘုရင်နှင့် ဘုရင်မ စေတီများ၊ ကရင်ရွာ Maeklang Luang နှင့် Wachirathan ရေတံခွန်။",
+    "zh": "Thailand Highlights 称茵他侬山驾车约 2 小时，并列出在那里的一天：徒步、国王和王后佛塔、克伦族村庄 Maeklang Luang 和 Wachirathan 瀑布。",
+    "de": "Thailand Highlights nennt den Doi Inthanon etwa 2 Autostunden entfernt und beschreibt dort einen Tag: eine Wanderung, die Königs- und Königinnen-Pagoden, das Karen-Dorf Maeklang Luang und den Wachirathan-Wasserfall."
+   },
+   "src": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  }
+ ],
+ "related": [
+  "trip-plan",
+  "car-guide",
+  "tour-3d",
+  "balloon",
+  "experience",
+  "lantern"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Tourism: public guide to tour business, guide and tour leader licences",
+    "th": "กรมการท่องเที่ยว: คู่มือประชาชน ธุรกิจนำเที่ยว มัคคุเทศก์ และผู้นำเที่ยว",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန: ခရီးစဉ်စီစဉ်လုပ်ငန်း၊ ဧည့်လမ်းညွှန်နှင့် ခရီးစဉ်ခေါင်းဆောင် လိုင်စင်များ ပြည်သူ့လမ်းညွှန်",
+    "zh": "旅游局：旅游业务、导游和领队执照民众指南",
+    "de": "Tourismusamt: Bürgerleitfaden zu Lizenzen für Tourismusbetriebe, Guides und Tourleiter"
+   },
+   "href": "https://www.dot.go.th/news/another/detail/3510"
+  },
+  {
+   "t": {
+    "en": "Chiang Rai Times: White Temple fee for foreign visitors from 1 January 2026",
+    "th": "Chiang Rai Times: ค่าเข้าวัดร่องขุ่นสำหรับชาวต่างชาติ ตั้งแต่ 1 มกราคม 2569",
+    "my": "Chiang Rai Times: နိုင်ငံခြားဧည့်သည်များအတွက် ဝပ်ရုံခွန် ဝင်ခွင့်ကြေး 2026 ဇန်နဝါရီ 1 မှစ၍",
+    "zh": "Chiang Rai Times：自 2026 年 1 月 1 日起白庙对外国游客收费",
+    "de": "Chiang Rai Times: Eintritt Weisser Tempel für ausländische Gäste ab 1. Januar 2026"
+   },
+   "href": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  }
+ ],
+ "glyphs": [
+  "songthaew",
+  "chedi",
+  "compass"
+ ]
+}

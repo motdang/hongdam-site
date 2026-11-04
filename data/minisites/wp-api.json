@@ -1,0 +1,292 @@
+{
+ "id": "wp-api",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A site with listings on WordPress gives partners and AI tools a way to pull them as data, so nobody copies pages by hand.",
+  "th": "เว็บ WordPress ที่มีรายการข้อมูล ให้พาร์ทเนอร์และเครื่องมือ AI ดึงเป็นข้อมูลได้ โดยไม่ต้องคัดลอกหน้าเว็บด้วยมือ",
+  "my": "WordPress ပေါ်တွင် စာရင်းများရှိသော ဝက်ဘ်ဆိုက်က မိတ်ဖက်များနှင့် AI ကိရိယာများကို ဒေတာအဖြစ် ထုတ်ယူခွင့်ပေးသဖြင့် စာမျက်နှာများကို လက်ဖြင့် ကူးရန် မလိုတော့ပါ။",
+  "zh": "把条目放在 WordPress 上的网站，可以让合作方和 AI 工具以数据形式获取，不用手工复制网页。",
+  "de": "Eine WordPress-Seite mit Einträgen lässt Partner und KI-Werkzeuge diese als Daten abrufen, ohne dass jemand Seiten von Hand kopiert."
+ },
+ "n": {
+  "de": "Partner und KI Ihr WordPress lesen lassen"
+ },
+ "l": {
+  "de": "Ein schreibgeschütztes API-Plugin für Ihre Einträge."
+ },
+ "glyphs": [
+  "gears",
+  "link",
+  "robot"
+ ],
+ "steps": [
+  {
+   "db": "gears",
+   "t": {
+    "en": "A read-only API plugin is made for your listings.",
+    "th": "ทำปลั๊กอิน API แบบอ่านอย่างเดียวสำหรับรายการของคุณ",
+    "my": "သင့်စာရင်းများအတွက် ဖတ်ရုံသက်သက် API plugin တစ်ခု ပြုလုပ်သည်။",
+    "zh": "为您的内容做一个只读 API 插件。",
+    "de": "Für Ihre Einträge wird ein schreibgeschütztes API-Plugin erstellt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "The plugin goes onto your WordPress.",
+    "th": "ติดตั้งปลั๊กอินบน WordPress ของคุณ",
+    "my": "plugin ကို သင့် WordPress ပေါ်တွင် တပ်ဆင်သည်။",
+    "zh": "把插件装到您的 WordPress 上。",
+    "de": "Das Plugin kommt auf Ihr WordPress."
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接下来",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "robot",
+   "t": {
+    "en": "Partners and AI tools pull your listings from it.",
+    "th": "พาร์ทเนอร์และเครื่องมือ AI ดึงรายการของคุณจากปลั๊กอิน",
+    "my": "မိတ်ဖက်များနှင့် AI ကိရိယာများက သင့်စာရင်းများကို ၎င်းမှ ထုတ်ယူသည်။",
+    "zh": "合作方和 AI 工具从中获取您的条目。",
+    "de": "Partner und KI-Werkzeuge rufen Ihre Einträge darüber ab."
+   },
+   "who": {
+    "en": "Partners and AI tools",
+    "th": "พาร์ทเนอร์และเครื่องมือ AI",
+    "my": "မိတ်ဖက်များနှင့် AI ကိရိယာများ",
+    "zh": "合作方和 AI 工具",
+    "de": "Partner und KI-Werkzeuge"
+   },
+   "time": {
+    "en": "Once it is installed",
+    "th": "เมื่อติดตั้งแล้ว",
+    "my": "တပ်ဆင်ပြီးသည့်အခါ",
+    "zh": "安装之后",
+    "de": "Sobald es installiert ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "WordPress has a REST API with endpoints for posts, pages, taxonomies and other built-in data types. Applications send and receive JSON at them to query, modify and create content.",
+    "th": "WordPress มี REST API ที่มี endpoint สำหรับโพสต์ หน้า หมวดหมู่ และข้อมูลพื้นฐานอื่น ๆ แอปส่งและรับ JSON ที่ endpoint เหล่านั้นเพื่อค้นหา แก้ไข และสร้างเนื้อหา",
+    "my": "WordPress တွင် ပို့စ်များ၊ စာမျက်နှာများ၊ taxonomy များနှင့် အခြား ပါဝင်ပြီးသား ဒေတာအမျိုးအစားများအတွက် endpoint ပါသော REST API ရှိသည်။ အက်ပ်များက ထို endpoint များတွင် JSON ပို့ယူပြီး အကြောင်းအရာကို ရှာဖွေ၊ ပြင်ဆင်၊ ဖန်တီးသည်။",
+    "zh": "WordPress 有一套 REST API，为文章、页面、分类法和其他内置数据类型提供端点。应用在这些端点收发 JSON，用来查询、修改和创建内容。",
+    "de": "WordPress hat eine REST-API mit Endpunkten für Beiträge, Seiten, Taxonomien und andere eingebaute Datentypen. Anwendungen senden und empfangen dort JSON, um Inhalte abzufragen, zu ändern und zu erstellen."
+   },
+   "src": "https://developer.wordpress.org/rest-api/"
+  },
+  {
+   "t": {
+    "en": "A request to /wp-json/wp/v2/posts returns a collection of posts; the defaults are 10 per page, status publish and context view.",
+    "th": "คำขอไปที่ /wp-json/wp/v2/posts ได้รายการโพสต์ ค่าเริ่มต้นคือ 10 โพสต์ต่อหน้า สถานะ publish และบริบท view",
+    "my": "/wp-json/wp/v2/posts သို့ တောင်းဆိုမှုက ပို့စ်များစုကို ပြန်ပေးသည် — မူလတန်ဖိုးများမှာ တစ်မျက်နှာ 10 ခု၊ status publish နှင့် context view ဖြစ်သည်။",
+    "zh": "向 /wp-json/wp/v2/posts 发出请求会返回文章集合；默认每页 10 篇，状态为 publish，上下文为 view。",
+    "de": "Eine Anfrage an /wp-json/wp/v2/posts liefert eine Sammlung von Beiträgen; die Standardwerte sind 10 pro Seite, Status publish und Kontext view."
+   },
+   "src": "https://developer.wordpress.org/rest-api/reference/posts/"
+  },
+  {
+   "t": {
+    "en": "WordPress 6.9 added the Abilities API, a registry where plugins, themes and core describe what they can do in a machine-readable form. The post of 10 November 2025 calls it groundwork for AI agents and automation tools.",
+    "th": "WordPress 6.9 เพิ่ม Abilities API เป็นทะเบียนที่ปลั๊กอิน ธีม และแกนหลักใช้อธิบายสิ่งที่ทำได้ในรูปแบบที่เครื่องอ่านได้ โพสต์เมื่อ 10 พฤศจิกายน 2025 เรียกว่าเป็นพื้นฐานสำหรับเอเจนต์ AI และเครื่องมืออัตโนมัติ",
+    "my": "WordPress 6.9 တွင် Abilities API ကို ထည့်သွင်းခဲ့သည်။ ၎င်းသည် plugin၊ theme နှင့် core တို့က မိမိတို့လုပ်ဆောင်နိုင်သည်များကို စက်ဖတ်နိုင်သော ပုံစံဖြင့် ဖော်ပြသည့် မှတ်ပုံတင်စာရင်းဖြစ်သည်။ 2025 နိုဝင်ဘာ 10 ရက်စွဲပါ ပို့စ်က ၎င်းကို AI အေးဂျင့်များနှင့် အလိုအလျောက်စနစ်ကိရိယာများအတွက် အခြေခံဟု ခေါ်သည်။",
+    "zh": "WordPress 6.9 新增 Abilities API，这是一个注册表，插件、主题和核心用机器可读的形式在其中描述自己能做什么。2025 年 11 月 10 日的文章称它是 AI 代理和自动化工具的基础。",
+    "de": "WordPress 6.9 brachte die Abilities API, ein Register, in dem Plugins, Themes und der Kern in maschinenlesbarer Form beschreiben, was sie können. Der Beitrag vom 10. November 2025 nennt sie die Grundlage für KI-Agenten und Automatisierungswerkzeuge."
+   },
+   "src": "https://make.wordpress.org/core/2025/11/10/abilities-api-in-wordpress-6-9/"
+  },
+  {
+   "t": {
+    "en": "The Abilities API's REST endpoints sit under wp-abilities/v1 and exist only for abilities registered with show_in_rest set to true. The post says they require an authenticated user.",
+    "th": "endpoint REST ของ Abilities API อยู่ใต้ wp-abilities/v1 และมีเฉพาะ ability ที่ลงทะเบียนโดยตั้ง show_in_rest เป็น true โพสต์ระบุว่าต้องมีผู้ใช้ที่ยืนยันตัวตนแล้ว",
+    "my": "Abilities API ၏ REST endpoint များသည် wp-abilities/v1 အောက်တွင်ရှိပြီး show_in_rest ကို true ထားကာ မှတ်ပုံတင်ထားသော ability များအတွက်သာ ရှိသည်။ ပို့စ်က ၎င်းတို့သည် အထောက်အထားစိစစ်ပြီးသူ တစ်ဦး လိုအပ်သည်ဟု ဆိုသည်။",
+    "zh": "Abilities API 的 REST 端点位于 wp-abilities/v1 之下，只对注册时把 show_in_rest 设为 true 的 ability 存在。文章指出，这些端点需要已认证的用户。",
+    "de": "Die REST-Endpunkte der Abilities API liegen unter wp-abilities/v1 und gibt es nur für Abilities, die mit show_in_rest = true registriert sind. Laut dem Beitrag braucht es einen authentifizierten Benutzer."
+   },
+   "src": "https://make.wordpress.org/core/2025/11/10/abilities-api-in-wordpress-6-9/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fix or customise a WordPress plugin or theme, Fastwork listing (448 sales)",
+    "th": "แก้ไขและปรับแต่งปลั๊กอินหรือธีม WordPress รายการบน Fastwork (ขายแล้ว 448 ครั้ง)",
+    "my": "Fastwork စာရင်း - WordPress plugin သို့မဟုတ် theme ပြင်ဆင်ခြင်း၊ စိတ်ကြိုက်ပြင်ခြင်း (ရောင်းပြီး 448 ကြိမ်)",
+    "zh": "Fastwork 上修复或定制 WordPress 插件、主题（已售 448 次）",
+    "de": "WordPress-Plugin oder -Theme reparieren oder anpassen, Angebot auf Fastwork (448 Verkäufe)"
+   },
+   "p": {
+    "en": "from ฿1,500, delivered in 3 days",
+    "th": "เริ่ม ฿1,500 ส่งมอบใน 3 วัน",
+    "my": "฿1,500 မှစ၍၊ 3 ရက်အတွင်း ပို့ဆောင်",
+    "zh": "฿1,500 起，3 天交付",
+    "de": "ab ฿1,500, Lieferung in 3 Tagen"
+   },
+   "src": "https://fastwork.co/user/pavarut05/wordpress-11365465"
+  },
+  {
+   "t": {
+    "en": "Custom plugin development, Codeable",
+    "th": "พัฒนาปลั๊กอินตามสั่ง Codeable",
+    "my": "Codeable - စိတ်ကြိုက် plugin ဖန်တီးမှု",
+    "zh": "Codeable 定制插件开发",
+    "de": "Individuelle Plugin-Entwicklung, Codeable"
+   },
+   "p": {
+    "en": "from US$960",
+    "th": "เริ่ม US$960",
+    "my": "US$960 မှစ၍",
+    "zh": "US$960 起",
+    "de": "ab US$960"
+   },
+   "src": "https://www.codeable.io/pricing/"
+  },
+  {
+   "t": {
+    "en": "WordPress expert's hourly rate, Codeable",
+    "th": "ค่าแรงรายชั่วโมงของผู้เชี่ยวชาญ WordPress บน Codeable",
+    "my": "Codeable WordPress ကျွမ်းကျင်သူ၏ တစ်နာရီခ",
+    "zh": "Codeable 上 WordPress 专家的时薪",
+    "de": "Stundensatz eines WordPress-Experten, Codeable"
+   },
+   "p": {
+    "en": "US$80–120 an hour, plus a 17.5% service fee",
+    "th": "ชั่วโมงละ US$80–120 บวกค่าบริการ 17.5%",
+    "my": "တစ်နာရီ US$80–120၊ ဝန်ဆောင်ခ 17.5% ထပ်",
+    "zh": "每小时 US$80–120，另加 17.5% 服务费",
+    "de": "US$80–120 pro Stunde, zuzüglich 17.5% Servicegebühr"
+   },
+   "src": "https://www.codeable.io/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Does WordPress already have an API?",
+    "th": "WordPress มี API อยู่แล้วหรือไม่",
+    "my": "WordPress တွင် API ရှိပြီးသားလား။",
+    "zh": "WordPress 本身有 API 吗？",
+    "de": "Hat WordPress schon eine API?"
+   },
+   "a": {
+    "en": "Yes, a REST API comes with WordPress. It provides endpoints for posts, pages, taxonomies and other built-in data types, and returns JSON.",
+    "th": "มี WordPress มี REST API มาให้ มี endpoint สำหรับโพสต์ หน้า หมวดหมู่ และข้อมูลพื้นฐานอื่น ๆ และส่งคืนเป็น JSON",
+    "my": "ရှိသည်။ WordPress နှင့်အတူ REST API ပါလာသည်။ ပို့စ်များ၊ စာမျက်နှာများ၊ taxonomy များနှင့် အခြား ပါဝင်ပြီးသား ဒေတာအမျိုးအစားများအတွက် endpoint များပေးပြီး JSON ပြန်ပေးသည်။",
+    "zh": "有。WordPress 自带 REST API，为文章、页面、分类法和其他内置数据类型提供端点，并返回 JSON。",
+    "de": "Ja, eine REST-API gehört zu WordPress. Sie bietet Endpunkte für Beiträge, Seiten, Taxonomien und andere eingebaute Datentypen und liefert JSON."
+   },
+   "src": "https://developer.wordpress.org/rest-api/"
+  },
+  {
+   "q": {
+    "en": "What is the WordPress Abilities API?",
+    "th": "WordPress Abilities API คืออะไร",
+    "my": "WordPress Abilities API ဆိုတာ ဘာလဲ။",
+    "zh": "WordPress Abilities API 是什么？",
+    "de": "Was ist die WordPress Abilities API?"
+   },
+   "a": {
+    "en": "It is a system in WordPress 6.9 where plugins, themes and core register what they do in a standard, machine-readable form. An ability takes a label, description, category, input and output schemas, an execute callback and a permission callback.",
+    "th": "เป็นระบบใน WordPress 6.9 ที่ปลั๊กอิน ธีม และแกนหลักลงทะเบียนสิ่งที่ทำได้ในรูปแบบมาตรฐานที่เครื่องอ่านได้ ability หนึ่งมีป้ายชื่อ คำอธิบาย หมวด สคีมาอินพุตและเอาต์พุต ฟังก์ชันที่รัน และฟังก์ชันตรวจสิทธิ์",
+    "my": "၎င်းသည် WordPress 6.9 ရှိ စနစ်တစ်ခုဖြစ်ပြီး plugin၊ theme နှင့် core တို့က မိမိတို့လုပ်ဆောင်သည်များကို စံနှုန်းနှင့် စက်ဖတ်နိုင်သော ပုံစံဖြင့် မှတ်ပုံတင်သည်။ ability တစ်ခုတွင် အညွှန်း၊ ဖော်ပြချက်၊ အမျိုးအစား၊ input နှင့် output schema များ၊ execute callback နှင့် permission callback တို့ လိုအပ်သည်။",
+    "zh": "这是 WordPress 6.9 中的一个系统，插件、主题和核心用标准的机器可读形式注册自己的功能。一个 ability 需要标签、描述、分类、输入和输出模式、执行回调和权限回调。",
+    "de": "Es ist ein System in WordPress 6.9, in dem Plugins, Themes und der Kern ihre Funktionen in einer standardisierten, maschinenlesbaren Form registrieren. Eine Ability braucht ein Label, eine Beschreibung, eine Kategorie, Ein- und Ausgabeschemata, einen Execute-Callback und einen Permission-Callback."
+   },
+   "src": "https://make.wordpress.org/core/2025/11/10/abilities-api-in-wordpress-6-9/"
+  },
+  {
+   "q": {
+    "en": "How does another app log in to the WordPress REST API?",
+    "th": "แอปอื่นล็อกอินเข้า WordPress REST API อย่างไร",
+    "my": "အခြားအက်ပ်တစ်ခုက WordPress REST API သို့ ဘယ်လို ဝင်ရောက်သလဲ။",
+    "zh": "其他应用怎样登录 WordPress REST API？",
+    "de": "Wie meldet sich eine andere App an der WordPress-REST-API an?"
+   },
+   "a": {
+    "en": "Cookie authentication is WordPress's standard method, for a logged-in user inside WordPress. For other apps, application passwords pass credentials over HTTPS with Basic Auth.",
+    "th": "การยืนยันตัวตนด้วยคุกกี้เป็นวิธีมาตรฐานของ WordPress สำหรับผู้ใช้ที่ล็อกอินอยู่ใน WordPress สำหรับแอปอื่น รหัสผ่านแอปพลิเคชันส่งข้อมูลรับรองผ่าน HTTPS ด้วย Basic Auth",
+    "my": "ကွတ်ကီးဖြင့် အထောက်အထားစိစစ်ခြင်းသည် WordPress အတွင်း ဝင်ရောက်ထားသော အသုံးပြုသူအတွက် WordPress ၏ စံနည်းလမ်းဖြစ်သည်။ အခြားအက်ပ်များအတွက် application password များက အထောက်အထားများကို HTTPS ပေါ်တွင် Basic Auth ဖြင့် ပို့သည်။",
+    "zh": "Cookie 认证是 WordPress 的标准方式，适用于在 WordPress 内已登录的用户。其他应用可用应用密码，通过 HTTPS 以 Basic Auth 传送凭据。",
+    "de": "Die Cookie-Authentifizierung ist die Standardmethode von WordPress, für angemeldete Benutzer innerhalb von WordPress. Andere Apps übergeben mit Anwendungspasswörtern ihre Zugangsdaten über HTTPS per Basic Auth."
+   },
+   "src": "https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/"
+  },
+  {
+   "q": {
+    "en": "How much does a custom WordPress plugin cost?",
+    "th": "ปลั๊กอิน WordPress แบบเขียนเองราคาเท่าไร",
+    "my": "စိတ်ကြိုက် WordPress plugin တစ်ခုသည် ဘယ်လောက်ကျသလဲ။",
+    "zh": "定制一个 WordPress 插件要多少钱？",
+    "de": "Was kostet ein individuelles WordPress-Plugin?"
+   },
+   "a": {
+    "en": "Codeable lists custom plugin development from US$960. Its experts bill US$80–120 an hour, and a 17.5% service fee is added on top of the estimate.",
+    "th": "Codeable ระบุพัฒนาปลั๊กอินตามสั่งเริ่ม US$960 ผู้เชี่ยวชาญคิดชั่วโมงละ US$80–120 และบวกค่าบริการ 17.5% จากราคาประเมิน",
+    "my": "Codeable က စိတ်ကြိုက် plugin ဖန်တီးမှုကို US$960 မှစ၍ ဖော်ပြသည်။ ကျွမ်းကျင်သူများက တစ်နာရီ US$80–120 ကောက်ခံပြီး ခန့်မှန်းကြေးအပေါ် ဝန်ဆောင်ခ 17.5% ထပ်ပေါင်းသည်။",
+    "zh": "Codeable 列出的定制插件开发从 US$960 起。专家时薪 US$80–120，在报价之上另加 17.5% 服务费。",
+    "de": "Codeable nennt für die individuelle Plugin-Entwicklung ab US$960. Die Experten rechnen US$80–120 pro Stunde ab, und auf den Kostenvoranschlag kommt eine Servicegebühr von 17.5%."
+   },
+   "src": "https://www.codeable.io/pricing/"
+  }
+ ],
+ "related": [
+  "web-care",
+  "php",
+  "site",
+  "directory",
+  "agency-sheet",
+  "ai-automation"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "WordPress REST API Handbook",
+    "th": "คู่มือ WordPress REST API",
+    "my": "WordPress REST API လက်စွဲ",
+    "zh": "WordPress REST API 手册",
+    "de": "WordPress REST API Handbook"
+   },
+   "href": "https://developer.wordpress.org/rest-api/"
+  },
+  {
+   "t": {
+    "en": "WordPress core blog: Abilities API in WordPress 6.9",
+    "th": "บล็อกแกนหลัก WordPress: Abilities API ใน WordPress 6.9",
+    "my": "WordPress core ဘလော့ဂ် - WordPress 6.9 ရှိ Abilities API",
+    "zh": "WordPress 核心博客：WordPress 6.9 中的 Abilities API",
+    "de": "WordPress-Core-Blog: Abilities API in WordPress 6.9"
+   },
+   "href": "https://make.wordpress.org/core/2025/11/10/abilities-api-in-wordpress-6-9/"
+  }
+ ]
+}

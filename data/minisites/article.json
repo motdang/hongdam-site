@@ -1,0 +1,319 @@
+{
+ "id": "article",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "An article that names its sources lets a reader check it, and a website or blog needs its articles written.",
+  "th": "บทความที่ระบุแหล่งที่มาให้ผู้อ่านตรวจสอบได้ และเว็บไซต์หรือบล็อกต้องมีคนเขียนบทความ",
+  "my": "ရင်းမြစ်များကို အမည်ဖော်ပြထားသော ဆောင်းပါးကို ဖတ်သူက စစ်ဆေးနိုင်ပြီး ဝက်ဘ်ဆိုက် သို့မဟုတ် ဘလော့ဂ်တစ်ခုတွင် ဆောင်းပါးများ ရေးသားရန် လိုသည်။",
+  "zh": "写明来源的文章，读者可以核对；网站或博客也需要有人来写文章。",
+  "de": "Ein Artikel, der seine Quellen nennt, lässt sich von Lesenden überprüfen, und eine Website oder ein Blog braucht geschriebene Artikel."
+ },
+ "n": {
+  "de": "Artikel"
+ },
+ "l": {
+  "de": "Ein Artikel oder eine Erklärseite, mit Quellen."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You give the subject.",
+    "th": "คุณบอกหัวข้อ",
+    "my": "ခေါင်းစဉ်ကို သင်ပေးသည်။",
+    "zh": "您给出主题。",
+    "de": "Sie nennen das Thema."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "The article or explainer page is written, with its sources.",
+    "th": "เขียนบทความหรือหน้าอธิบายพร้อมแหล่งที่มา",
+    "my": "ဆောင်းပါး သို့မဟုတ် ရှင်းပြစာမျက်နှာကို ရင်းမြစ်များနှင့်အတူ ရေးသားသည်။",
+    "zh": "撰写文章或讲解页，并附来源。",
+    "de": "Der Artikel oder die Erklärseite wird mit ihren Quellen geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "bookmark",
+   "t": {
+    "en": "It goes to you with the sources named.",
+    "th": "ส่งให้คุณพร้อมระบุแหล่งที่มา",
+    "my": "ရင်းမြစ်များကို အမည်ဖော်ပြပြီး သင့်ထံ ပို့ပေးသည်။",
+    "zh": "连同标明的来源一起交给您。",
+    "de": "Er geht mit den genannten Quellen an Sie."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google describes people-first content as content made primarily for people, not to manipulate search rankings.",
+    "th": "Google อธิบายเนื้อหาที่ยึดผู้อ่านเป็นหลักว่าเป็นเนื้อหาที่สร้างเพื่อผู้คนเป็นหลัก ไม่ใช่เพื่อปั่นอันดับค้นหา",
+    "my": "Google က လူကို ဦးစားပေးသော အကြောင်းအရာကို ရှာဖွေမှုအဆင့်ကို လှည့်ပတ်ရန်မဟုတ်ဘဲ လူများအတွက် အဓိကဖန်တီးထားသော အကြောင်းအရာဟု ဖော်ပြသည်။",
+    "zh": "Google 把以人为本的内容描述为主要为读者而作、而不是为了操纵搜索排名的内容。",
+    "de": "Google beschreibt nutzerorientierte Inhalte als Inhalte, die vor allem für Menschen und nicht zur Beeinflussung des Suchrankings entstehen."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "t": {
+    "en": "Google says that giving credit to other sources does not replace the need for original effort. It asks whether content that draws on other sources adds value beyond copying or rewriting them.",
+    "th": "Google ระบุว่าการให้เครดิตแหล่งอื่นไม่ได้แทนที่ความจำเป็นของความพยายามสร้างสรรค์ของตนเอง และถามว่าเนื้อหาที่อ้างอิงแหล่งอื่นเพิ่มคุณค่าเกินกว่าการคัดลอกหรือเรียบเรียงใหม่หรือไม่",
+    "my": "Google က အခြားရင်းမြစ်များကို အသိအမှတ်ပြုခြင်းသည် မူရင်းကြိုးပမ်းမှု၏ လိုအပ်ချက်ကို အစားမထိုးနိုင်ဟု ဆိုသည်။ အခြားရင်းမြစ်များကို ကိုးကားသော အကြောင်းအရာသည် ကူးယူခြင်း သို့မဟုတ် ပြန်ရေးခြင်းထက် တန်ဖိုးပိုထည့်သလားဟုလည်း မေးသည်။",
+    "zh": "Google 说明，给其他来源署名并不能取代原创的努力。它还会问：引用其他来源的内容，是否比单纯复制或改写增加了价值。",
+    "de": "Google sagt, die Nennung anderer Quellen ersetze nicht die eigene Leistung. Es fragt, ob ein Inhalt, der auf andere Quellen zurückgreift, mehr Wert bietet als Kopieren oder Umschreiben."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "t": {
+    "en": "Google asks that readers can tell who created the content, and it encourages bylines where readers expect them.",
+    "th": "Google ต้องการให้ผู้อ่านบอกได้ว่าใครเป็นผู้สร้างเนื้อหา และสนับสนุนให้ใส่ชื่อผู้เขียนในที่ที่ผู้อ่านคาดว่าจะเห็น",
+    "my": "Google က ဖတ်သူများက အကြောင်းအရာကို ဘယ်သူဖန်တီးသလဲဆိုသည်ကို သိနိုင်ရန် တောင်းဆိုပြီး ဖတ်သူများ မျှော်လင့်သည့်နေရာတွင် ရေးသူအမည်ထည့်ရန် အားပေးသည်။",
+    "zh": "Google 希望读者能看出内容出自谁手，并鼓励在读者期待的地方署上作者名。",
+    "de": "Google möchte, dass Lesende erkennen, wer den Inhalt verfasst hat, und befürwortet Autorenzeilen dort, wo Lesende sie erwarten."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "t": {
+    "en": "In Thailand, copyright arises when a work is made; registration is not needed.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်သည်; မှတ်ပုံတင်ရန် မလို။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "A Thai copyright assignment must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "การโอนลิขสิทธิ์ในไทยต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလကို သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "泰国的版权转让必须采用书面形式并写明期限；未写明期限的，期限为 10 年。",
+    "de": "Eine Abtretung des Urheberrechts in Thailand muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Articles from a Fastwork seller with 784 orders, 1 day and 1 round of changes each",
+    "th": "บทความจากผู้ขายบน Fastwork ที่มี 784 ออเดอร์ แต่ละแพ็กเกจ 1 วัน แก้ไข 1 ครั้ง",
+    "my": "အော်ဒါ 784 ခုရှိသော Fastwork ရောင်းသူထံမှ ဆောင်းပါးများ - တစ်မျိုးလျှင် 1 ရက်နှင့် ပြင်ဆင်မှု 1 ကြိမ်",
+    "zh": "Fastwork 上有 784 笔订单的卖家的文章：每档 1 天、修改 1 次",
+    "de": "Artikel von einem Fastwork-Anbieter mit 784 Bestellungen, je 1 Tag und 1 Änderungsrunde"
+   },
+   "p": {
+    "en": "฿400 for 500–600 words; ฿500 for 800–1,000 words",
+    "th": "฿400 สำหรับ 500–600 คำ ฿500 สำหรับ 800–1,000 คำ",
+    "my": "စကားလုံး 500–600 လျှင် ฿400၊ 800–1,000 လျှင် ฿500",
+    "zh": "500–600 词 ฿400；800–1,000 词 ฿500",
+    "de": "฿400 für 500–600 Wörter; ฿500 für 800–1000 Wörter"
+   },
+   "src": "https://fastwork.co/user/aeae1010/content-writing-59310186"
+  },
+  {
+   "t": {
+    "en": "Thai and English articles from a Fastwork seller with 391 orders, 3 days and 2 rounds of changes each",
+    "th": "บทความไทยและอังกฤษจากผู้ขายบน Fastwork ที่มี 391 ออเดอร์ แต่ละแพ็กเกจ 3 วัน แก้ไข 2 ครั้ง",
+    "my": "အော်ဒါ 391 ခုရှိသော Fastwork ရောင်းသူထံမှ ထိုင်းနှင့် အင်္ဂလိပ် ဆောင်းပါးများ - တစ်မျိုးလျှင် 3 ရက်နှင့် ပြင်ဆင်မှု 2 ကြိမ်",
+    "zh": "Fastwork 上有 391 笔订单的卖家的泰英文章：每档 3 天、修改 2 次",
+    "de": "Thai- und Englisch-Artikel von einem Fastwork-Anbieter mit 391 Bestellungen, je 3 Tage und 2 Änderungsrunden"
+   },
+   "p": {
+    "en": "฿590 for up to 300 words; ฿890 for up to 700; ฿1,290 for 1,000",
+    "th": "฿590 ไม่เกิน 300 คำ ฿890 ไม่เกิน 700 คำ ฿1,290 สำหรับ 1,000 คำ",
+    "my": "စကားလုံး 300 အထိ ฿590၊ 700 အထိ ฿890၊ 1,000 လျှင် ฿1,290",
+    "zh": "300 词以内 ฿590；700 词以内 ฿890；1,000 词 ฿1,290",
+    "de": "฿590 bis 300 Wörter; ฿890 bis 700; ฿1,290 für 1000"
+   },
+   "src": "https://fastwork.co/user/resumenara/content-writing-87881268"
+  },
+  {
+   "t": {
+    "en": "Freelance blog writers (Copyblogger)",
+    "th": "นักเขียนบล็อกอิสระ (Copyblogger)",
+    "my": "လွတ်လပ်သော ဘလော့ဂ်စာရေးသူများ (Copyblogger)",
+    "zh": "自由撰稿的博客作者（Copyblogger）",
+    "de": "Freiberufliche Blog-Autoren (Copyblogger)"
+   },
+   "p": {
+    "en": "US$15–40 an hour on average; US$500 a post is called the higher end",
+    "th": "เฉลี่ย US$15–40 ต่อชั่วโมง US$500 ต่อโพสต์ถือว่าเป็นช่วงราคาสูง",
+    "my": "ပျမ်းမျှ တစ်နာရီ US$15–40၊ ပို့စ်တစ်ခုလျှင် US$500 ကို ဈေးမြင့်ဘက်ဟု ဆိုသည်",
+    "zh": "平均每小时 US$15–40；每篇 US$500 被称为偏高一档",
+    "de": "Durchschnittlich US$15–40 pro Stunde; US$500 je Beitrag gelten als obere Preisklasse"
+   },
+   "src": "https://copyblogger.com/freelance-writing-rates/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does an SEO article cost in Thailand?",
+    "th": "บทความ SEO ราคาเท่าไรในไทย",
+    "my": "ထိုင်းတွင် SEO ဆောင်းပါးတစ်ပုဒ် ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国，一篇 SEO 文章要多少钱？",
+    "de": "Was kostet ein SEO-Artikel in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 784 orders lists an article of 500 to 600 words at ฿400 and one of 800 to 1,000 words at ฿500. An on-page package with meta title and description tags is ฿600.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 784 ออเดอร์ลงบทความ 500 ถึง 600 คำ ฿400 และ 800 ถึง 1,000 คำ ฿500 แพ็กเกจปรับหน้าเว็บที่มีแท็กชื่อและคำอธิบาย ฿600",
+    "my": "အော်ဒါ 784 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက စကားလုံး 500 မှ 600 ဆောင်းပါးကို ฿400 နှင့် 800 မှ 1,000 ဆောင်းပါးကို ฿500 ဟု စာရင်းပြုထားသည်။ meta title နှင့် description တက်ဂ်များပါသော on-page ပက်ကေ့ချ်မှာ ฿600 ဖြစ်သည်။",
+    "zh": "Fastwork 上一位有 784 笔订单的卖家标价：500 至 600 词的文章 ฿400，800 至 1,000 词的文章 ฿500；含 meta 标题和描述标签的页面优化套餐 ฿600。",
+    "de": "Ein Fastwork-Anbieter mit 784 Bestellungen nennt für einen Artikel von 500 bis 600 Wörtern ฿400 und für einen von 800 bis 1000 Wörtern ฿500. Ein On-Page-Paket mit Meta-Titel und -Beschreibung kostet ฿600."
+   },
+   "src": "https://fastwork.co/user/aeae1010/content-writing-59310186"
+  },
+  {
+   "q": {
+    "en": "How long does an article take?",
+    "th": "บทความใช้เวลานานเท่าไร",
+    "my": "ဆောင်းပါးတစ်ပုဒ် ဘယ်လောက်ကြာသလဲ။",
+    "zh": "写一篇文章要多久？",
+    "de": "Wie lange dauert ein Artikel?"
+   },
+   "a": {
+    "en": "The same Fastwork seller lists 1 day for each package, with the article as a Word file and a keyword check. Posting to WordPress and making images are options. A Thai and English seller with 391 orders lists 3 days.",
+    "th": "ผู้ขายบน Fastwork รายเดียวกันระบุ 1 วันในทุกแพ็กเกจ ส่งบทความเป็นไฟล์ Word พร้อมตรวจคีย์เวิร์ด การลงเว็บ WordPress และทำภาพเป็นตัวเลือก ผู้ขายไทยและอังกฤษที่มี 391 ออเดอร์ระบุ 3 วัน",
+    "my": "ထို Fastwork ရောင်းသူကပင် ပက်ကေ့ချ်တိုင်းကို 1 ရက်ဟု စာရင်းပြုထားပြီး ဆောင်းပါးကို Word ဖိုင်နှင့် keyword စစ်ဆေးမှုဖြင့် ပေးသည်။ WordPress သို့ တင်ပေးခြင်းနှင့် ပုံပြုလုပ်ခြင်းတို့မှာ ရွေးချယ်စရာများ ဖြစ်သည်။ အော်ဒါ 391 ခုရှိသော ထိုင်းနှင့် အင်္ဂလိပ် ရောင်းသူက 3 ရက်ဟု စာရင်းပြုထားသည်။",
+    "zh": "同一位 Fastwork 卖家每档都标 1 天，文章以 Word 文件交付并做关键词检查；发布到 WordPress 和制作配图为可选项。有 391 笔订单的泰英卖家标 3 天。",
+    "de": "Derselbe Fastwork-Anbieter nennt für jedes Paket 1 Tag, der Artikel kommt als Word-Datei mit Keyword-Prüfung. Das Einstellen in WordPress und Bilder sind Optionen. Ein Thai-/Englisch-Anbieter mit 391 Bestellungen nennt 3 Tage."
+   },
+   "src": "https://fastwork.co/user/aeae1010/content-writing-59310186"
+  },
+  {
+   "q": {
+    "en": "What does Google want from an article?",
+    "th": "Google ต้องการอะไรจากบทความ",
+    "my": "ဆောင်းပါးတစ်ပုဒ်ကနေ Google က ဘာလိုချင်သလဲ။",
+    "zh": "Google 对文章有什么期望？",
+    "de": "Was erwartet Google von einem Artikel?"
+   },
+   "a": {
+    "en": "Google's page on helpful content describes content made primarily for people. It asks whether the content shows first-hand expertise, whether it has easily verified factual errors, and whether readers can tell who created it.",
+    "th": "หน้าเนื้อหาที่เป็นประโยชน์ของ Google อธิบายเนื้อหาที่สร้างเพื่อผู้คนเป็นหลัก และถามว่าเนื้อหาแสดงความเชี่ยวชาญหรือไม่ มีข้อผิดพลาดด้านข้อเท็จจริงที่ตรวจพบได้ง่ายหรือไม่ และผู้อ่านบอกได้หรือไม่ว่าใครเป็นผู้สร้าง",
+    "my": "Google ၏ အသုံးဝင်သော အကြောင်းအရာစာမျက်နှာက လူများအတွက် အဓိကဖန်တီးထားသော အကြောင်းအရာကို ဖော်ပြသည်။ အကြောင်းအရာတွင် ကျွမ်းကျင်မှု ပြထားသလား၊ အလွယ်တကူ စစ်ဆေးနိုင်သော အချက်အလက်အမှားများ ရှိသလား၊ ဖတ်သူက ဖန်တီးသူကို သိနိုင်သလားဟု မေးသည်။",
+    "zh": "Google 关于有用内容的页面描述了主要为读者而作的内容，并会问：内容是否体现专业认识，有没有容易核实的事实错误，读者能否看出作者是谁。",
+    "de": "Googles Seite zu hilfreichen Inhalten beschreibt Inhalte, die vor allem für Menschen entstehen. Sie fragt, ob der Inhalt Fachwissen zeigt, ob er leicht überprüfbare Sachfehler enthält und ob Lesende erkennen, wer ihn verfasst hat."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "q": {
+    "en": "Does naming sources make an article helpful?",
+    "th": "การระบุแหล่งที่มาทำให้บทความเป็นประโยชน์หรือไม่",
+    "my": "ရင်းမြစ်များကို ဖော်ပြခြင်းက ဆောင်းပါးကို အသုံးဝင်စေသလား။",
+    "zh": "标明来源就能让文章有用吗？",
+    "de": "Macht die Nennung von Quellen einen Artikel hilfreich?"
+   },
+   "a": {
+    "en": "Google says that giving credit to other sources does not replace the need for original effort. It asks whether content that draws on other sources adds value beyond copying or rewriting them.",
+    "th": "Google ระบุว่าการให้เครดิตแหล่งอื่นไม่ได้แทนที่ความจำเป็นของความพยายามสร้างสรรค์ของตนเอง และถามว่าเนื้อหาที่อ้างอิงแหล่งอื่นเพิ่มคุณค่าเกินกว่าการคัดลอกหรือเรียบเรียงใหม่หรือไม่",
+    "my": "Google က အခြားရင်းမြစ်များကို အသိအမှတ်ပြုခြင်းသည် မူရင်းကြိုးပမ်းမှု၏ လိုအပ်ချက်ကို အစားမထိုးနိုင်ဟု ဆိုသည်။ အခြားရင်းမြစ်များကို ကိုးကားသော အကြောင်းအရာသည် ကူးယူခြင်း သို့မဟုတ် ပြန်ရေးခြင်းထက် တန်ဖိုးပိုထည့်သလားဟုလည်း မေးသည်။",
+    "zh": "Google 说明，给其他来源署名并不能取代原创的努力。它还会问：引用其他来源的内容，是否比单纯复制或改写增加了价值。",
+    "de": "Google sagt, die Nennung anderer Quellen ersetze nicht die eigene Leistung. Es fragt, ob ein Inhalt, der auf andere Quellen zurückgreift, mehr Wert bietet als Kopieren oder Umschreiben."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "q": {
+    "en": "How does copyright pass to the buyer in Thailand?",
+    "th": "ลิขสิทธิ์ตกเป็นของผู้ซื้อได้อย่างไรในไทย",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်သည် ဝယ်သူထံ ဘယ်လို ရောက်သွားသလဲ။",
+    "zh": "在泰国，版权如何转给买方？",
+    "de": "Wie geht das Urheberrecht in Thailand an den Käufer über?"
+   },
+   "a": {
+    "en": "In Thailand copyright arises when a work is made, and registration is not needed. A transfer of copyright to the buyer must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน การโอนลิขสิทธิ์ให้ผู้ซื้อต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်ပြီး မှတ်ပုံတင်ရန် မလိုပါ။ ဝယ်သူထံ မူပိုင်ခွင့် လွှဲပြောင်းရာတွင် စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。把版权转让给买方，必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig. Die Abtretung an den Käufer muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "copy",
+  "social",
+  "interactive",
+  "research",
+  "newsletter",
+  "grants"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Lanna Craft: a page on Lanna architecture and ornament, with a timeline, legends, a glossary and sources (Hongdam)",
+    "th": "ช่างล้านนา: หน้าเกี่ยวกับสถาปัตยกรรมและลายล้านนา มีเส้นเวลา ตำนาน อภิธานศัพท์ และแหล่งที่มา (หงส์ดำ)",
+    "my": "Lanna Craft - လန်နာ ဗိသုကာနှင့် အလှဆင်ပုံစံအကြောင်း စာမျက်နှာ၊ အချိန်ဇယား၊ ဒဏ္ဍာရီများ၊ ဝေါဟာရအဖွင့်နှင့် ရင်းမြစ်များပါ (ဟုန်ဒမ်)",
+    "zh": "Lanna Craft（ช่างล้านนา）：介绍兰纳建筑与纹饰的页面，有年表、传说、词汇表和来源（鸿丹）",
+    "de": "Lanna Craft: eine Seite über Lanna-Architektur und -Ornamente, mit Zeittafel, Legenden, Glossar und Quellen (Hongdam)"
+   },
+   "href": "https://motdang.net/sites/lanna-craft"
+  },
+  {
+   "t": {
+    "en": "Google: creating helpful, reliable, people-first content",
+    "th": "Google: การสร้างเนื้อหาที่เป็นประโยชน์ เชื่อถือได้ และยึดผู้อ่านเป็นหลัก",
+    "my": "Google - အသုံးဝင်ပြီး ယုံကြည်စိတ်ချရသော၊ လူကို ဦးစားပေးသည့် အကြောင်းအရာ ဖန်တီးခြင်း",
+    "zh": "Google：创作有用、可靠、以人为本的内容",
+    "de": "Google: hilfreiche, verlässliche, nutzerorientierte Inhalte erstellen"
+   },
+   "href": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  }
+ ],
+ "glyphs": [
+  "nib",
+  "bookmark",
+  "search"
+ ]
+}

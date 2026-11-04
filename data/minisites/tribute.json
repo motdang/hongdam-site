@@ -1,0 +1,248 @@
+{
+ "id": "tribute",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A wedding, an ordination or a memorial brings people together, and one page can hold the photos, video, times and map.",
+  "th": "งานแต่ง งานบวช หรืองานรำลึกรวมผู้คนไว้ด้วยกัน และหน้าเว็บหน้าเดียวเก็บรูป วิดีโอ กำหนดการ และแผนที่ได้",
+  "my": "မင်္ဂလာ၊ ရှင်ပြု သို့မဟုတ် အမှတ်တရပွဲသည် လူများကို စုစည်းပေးပြီး စာမျက်နှာတစ်ခုတည်းတွင် ဓာတ်ပုံ၊ ဗီဒီယို၊ အချိန်ဇယားနှင့် မြေပုံကို ထည့်နိုင်သည်။",
+  "zh": "婚礼、出家或纪念活动把人聚在一起，一个网页就能放下照片、视频、时间安排和地图。",
+  "de": "Eine Hochzeit, eine Mönchsweihe oder eine Trauerfeier bringt Menschen zusammen, und eine Seite kann Fotos, Video, Zeiten und Karte enthalten."
+ },
+ "n": {
+  "de": "Seite für Hochzeit, Mönchsweihe oder Trauerfeier"
+ },
+ "l": {
+  "de": "Fotos, Video, Zeiten und eine Karte, zum Teilen auf LINE."
+ },
+ "steps": [
+  {
+   "db": "camera",
+   "t": {
+    "en": "You send the photos, video, times and place of the event.",
+    "th": "ส่งรูป วิดีโอ กำหนดการ และสถานที่ของงานมาให้",
+    "my": "သင်က ပွဲ၏ ဓာတ်ပုံ၊ ဗီဒီယို၊ အချိန်များနှင့် နေရာကို ပို့ပေးသည်။",
+    "zh": "您发来活动的照片、视频、时间和地点。",
+    "de": "Sie senden die Fotos, das Video, die Zeiten und den Ort des Anlasses."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "We make the page in Thai and English, with the photos, video, times and a map.",
+    "th": "สร้างหน้าเว็บไทยและอังกฤษ พร้อมรูป วิดีโอ กำหนดการ และแผนที่",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ဓာတ်ပုံ၊ ဗီဒီယို၊ အချိန်များနှင့် မြေပုံပါသော စာမျက်နှာကို ပြုလုပ်ပေးသည်။",
+    "zh": "用泰语和英语做好网页，放入照片、视频、时间和地图。",
+    "de": "Wir erstellen die Seite auf Thai und Englisch, mit Fotos, Video, Zeiten und einer Karte."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the photos and times arrive",
+    "th": "หลังได้รับรูปและกำหนดการ",
+    "my": "ဓာတ်ပုံနှင့် အချိန်များ ရောက်ပြီးနောက်",
+    "zh": "收到照片和时间后",
+    "de": "Nach Eingang von Fotos und Zeiten"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "You share the page on LINE.",
+    "th": "แชร์หน้าเว็บทางไลน์",
+    "my": "သင်က စာမျက်နှာကို LINE တွင် မျှဝေသည်။",
+    "zh": "您把网页分享到 LINE。",
+    "de": "Sie teilen die Seite auf LINE."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "When the page is ready",
+    "th": "เมื่อหน้าเว็บพร้อม",
+    "my": "စာမျက်နှာ အဆင်သင့်ဖြစ်သောအခါ",
+    "zh": "网页做好后",
+    "de": "Wenn die Seite fertig ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A Zola wedding website holds the schedule, a photo and video gallery, travel and hotel details, directions, an RSVP (the guest's reply) and a registry link.",
+    "th": "เว็บไซต์งานแต่งของ Zola มีกำหนดการ แกลเลอรีรูปและวิดีโอ ข้อมูลการเดินทางและโรงแรม เส้นทาง การตอบรับ (RSVP คือคำตอบของแขก) และลิงก์รายการของขวัญ",
+    "my": "Zola ၏ မင်္ဂလာဝက်ဘ်ဆိုက်တွင် အချိန်ဇယား၊ ဓာတ်ပုံနှင့် ဗီဒီယို ပြခန်း၊ ခရီးသွားလာရေးနှင့် ဟိုတယ်အချက်အလက်၊ လမ်းညွှန်၊ RSVP (ဧည့်သည်၏ အဖြေ) နှင့် လက်ဆောင်စာရင်း လင့်ခ် ပါဝင်သည်။",
+    "zh": "Zola 婚礼网站包含流程表、照片和视频相册、出行与酒店信息、路线指引、回执（RSVP，即宾客的答复）和礼品清单链接。",
+    "de": "Eine Zola-Hochzeitswebsite enthält den Ablauf, eine Foto- und Videogalerie, Reise- und Hotelangaben, Wegbeschreibungen, eine RSVP (die Antwort der Gäste) und einen Link zur Geschenkliste."
+   },
+   "src": "https://www.zola.com/wedding-planning/website"
+  },
+  {
+   "t": {
+    "en": "A Joy wedding website holds a schedule, photos, travel details, an RSVP and a guest list that controls who sees what.",
+    "th": "เว็บไซต์งานแต่งของ Joy มีกำหนดการ รูป ข้อมูลการเดินทาง การตอบรับ (RSVP) และรายชื่อแขกที่กำหนดได้ว่าใครเห็นอะไร",
+    "my": "Joy ၏ မင်္ဂလာဝက်ဘ်ဆိုက်တွင် အချိန်ဇယား၊ ဓာတ်ပုံ၊ ခရီးသွားလာရေး အချက်အလက်၊ RSVP နှင့် ဘယ်သူ ဘာမြင်ရမည်ကို ထိန်းချုပ်သော ဧည့်သည်စာရင်း ပါဝင်သည်။",
+    "zh": "Joy 婚礼网站包含流程表、照片、出行信息、回执（RSVP）和宾客名单，名单可控制谁能看到什么。",
+    "de": "Eine Joy-Hochzeitswebsite enthält einen Ablauf, Fotos, Reiseangaben, eine RSVP und eine Gästeliste, die steuert, wer was sieht."
+   },
+   "src": "https://withjoy.com/wedding-website/"
+  },
+  {
+   "t": {
+    "en": "DataReportal counts 56 million monthly active LINE users in Thailand in late 2025, 78.2% of the population.",
+    "th": "DataReportal นับผู้ใช้ LINE ในไทยได้ 56 ล้านคนต่อเดือนในช่วงปลายปี 2568 คิดเป็น 78.2% ของประชากร",
+    "my": "DataReportal က 2025 နှောင်းပိုင်းတွင် ထိုင်းနိုင်ငံ၌ LINE အသုံးပြုသူ လစဉ် 56 သန်း ရှိသည်ဟု ရေတွက်ထားပြီး လူဦးရေ၏ 78.2% ဖြစ်သည်။",
+    "zh": "DataReportal 统计，2025 年底泰国 LINE 月活跃用户为 5,600 万，占人口的 78.2%。",
+    "de": "DataReportal zählt Ende 2025 in Thailand 56 Millionen monatlich aktive LINE-Nutzer, 78,2 % der Bevölkerung."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Zola wedding website",
+    "th": "เว็บไซต์งานแต่ง Zola",
+    "my": "Zola မင်္ဂလာဝက်ဘ်ဆိုက်",
+    "zh": "Zola 婚礼网站",
+    "de": "Zola-Hochzeitswebsite"
+   },
+   "p": {
+    "en": "Free to create and publish; a custom domain from US$17.99",
+    "th": "สร้างและเผยแพร่ฟรี โดเมนของตัวเองเริ่มที่ US$17.99",
+    "my": "ဖန်တီးခြင်းနှင့် ထုတ်ပြန်ခြင်း အခမဲ့၊ ကိုယ်ပိုင်ဒိုမိန်း US$17.99 မှစ",
+    "zh": "创建和发布免费；自定义域名 US$17.99 起",
+    "de": "Erstellen und Veröffentlichen kostenlos; eigene Domain ab US$17.99"
+   },
+   "src": "https://www.zola.com/wedding-planning/website"
+  },
+  {
+   "t": {
+    "en": "Joy wedding website",
+    "th": "เว็บไซต์งานแต่ง Joy",
+    "my": "Joy မင်္ဂလာဝက်ဘ်ဆိုက်",
+    "zh": "Joy 婚礼网站",
+    "de": "Joy-Hochzeitswebsite"
+   },
+   "p": {
+    "en": "Free, with RSVP tools, templates and hosting",
+    "th": "ฟรี รวมเครื่องมือ RSVP เทมเพลต และโฮสติ้ง",
+    "my": "အခမဲ့၊ RSVP ကိရိယာများ၊ ပုံစံများနှင့် ဟိုစတင် ပါဝင်",
+    "zh": "免费，含回执工具、模板和托管",
+    "de": "Kostenlos, mit RSVP-Werkzeugen, Vorlagen und Hosting"
+   },
+   "src": "https://withjoy.com/wedding-website/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What goes on a wedding website?",
+    "th": "เว็บไซต์งานแต่งมีอะไรบ้าง",
+    "my": "မင်္ဂလာဝက်ဘ်ဆိုက်တွင် ဘာတွေ ထည့်ရသလဲ။",
+    "zh": "婚礼网站上放什么？",
+    "de": "Was kommt auf eine Hochzeitswebsite?"
+   },
+   "a": {
+    "en": "Zola's wedding websites hold the schedule, photos and video, travel and hotel details, directions, an RSVP and a registry link.",
+    "th": "เว็บไซต์งานแต่งของ Zola มีกำหนดการ รูปและวิดีโอ ข้อมูลการเดินทางและโรงแรม เส้นทาง การตอบรับ (RSVP) และลิงก์รายการของขวัญ",
+    "my": "Zola ၏ မင်္ဂလာဝက်ဘ်ဆိုက်များတွင် အချိန်ဇယား၊ ဓာတ်ပုံနှင့် ဗီဒီယို၊ ခရီးသွားလာရေးနှင့် ဟိုတယ်အချက်အလက်၊ လမ်းညွှန်၊ RSVP နှင့် လက်ဆောင်စာရင်း လင့်ခ် ပါဝင်သည်။",
+    "zh": "Zola 的婚礼网站包含流程表、照片和视频、出行与酒店信息、路线指引、回执（RSVP）和礼品清单链接。",
+    "de": "Die Hochzeitswebsites von Zola enthalten den Ablauf, Fotos und Video, Reise- und Hotelangaben, Wegbeschreibungen, eine RSVP und einen Link zur Geschenkliste."
+   },
+   "src": "https://www.zola.com/wedding-planning/website"
+  },
+  {
+   "q": {
+    "en": "Is a wedding website free?",
+    "th": "เว็บไซต์งานแต่งฟรีไหม",
+    "my": "မင်္ဂလာဝက်ဘ်ဆိုက်သည် အခမဲ့လား။",
+    "zh": "婚礼网站免费吗？",
+    "de": "Ist eine Hochzeitswebsite kostenlos?"
+   },
+   "a": {
+    "en": "Zola says its wedding websites are free to create and publish. A custom domain costs from US$17.99.",
+    "th": "Zola ระบุว่าเว็บไซต์งานแต่งสร้างและเผยแพร่ได้ฟรี โดเมนของตัวเองเริ่มที่ US$17.99",
+    "my": "Zola က ၎င်း၏ မင်္ဂလာဝက်ဘ်ဆိုက်များကို ဖန်တီးခြင်းနှင့် ထုတ်ပြန်ခြင်း အခမဲ့ဟု ဆိုသည်။ ကိုယ်ပိုင်ဒိုမိန်းမှာ US$17.99 မှစသည်။",
+    "zh": "Zola 表示其婚礼网站创建和发布免费，自定义域名 US$17.99 起。",
+    "de": "Zola gibt an, dass seine Hochzeitswebsites kostenlos erstellt und veröffentlicht werden können. Eine eigene Domain kostet ab US$17.99."
+   },
+   "src": "https://www.zola.com/wedding-planning/website"
+  },
+  {
+   "q": {
+    "en": "Do guests in Thailand use LINE?",
+    "th": "แขกในไทยใช้ LINE ไหม",
+    "my": "ထိုင်းနိုင်ငံရှိ ဧည့်သည်များ LINE သုံးကြပါသလား။",
+    "zh": "泰国的客人用 LINE 吗？",
+    "de": "Nutzen Gäste in Thailand LINE?"
+   },
+   "a": {
+    "en": "Yes. DataReportal counts 56 million monthly active LINE users in Thailand in late 2025, 78.2% of the population.",
+    "th": "ใช้ DataReportal นับผู้ใช้ LINE ในไทยได้ 56 ล้านคนต่อเดือนในช่วงปลายปี 2568 คิดเป็น 78.2% ของประชากร",
+    "my": "သုံးကြသည်။ DataReportal က 2025 နှောင်းပိုင်းတွင် ထိုင်းနိုင်ငံ၌ LINE အသုံးပြုသူ လစဉ် 56 သန်း ရှိသည်ဟု ရေတွက်ထားပြီး လူဦးရေ၏ 78.2% ဖြစ်သည်။",
+    "zh": "用。DataReportal 统计，2025 年底泰国 LINE 月活跃用户为 5,600 万，占人口的 78.2%。",
+    "de": "Ja. DataReportal zählt Ende 2025 in Thailand 56 Millionen monatlich aktive LINE-Nutzer, 78,2 % der Bevölkerung."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  }
+ ],
+ "related": [
+  "wedding",
+  "bride",
+  "event-page",
+  "merit-dead",
+  "death-help",
+  "web-sharecard"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Zola: what a wedding website carries",
+    "th": "Zola: เว็บไซต์งานแต่งมีอะไรบ้าง",
+    "my": "Zola: မင်္ဂလာဝက်ဘ်ဆိုက်တွင် ပါဝင်သည့်အရာများ",
+    "zh": "Zola：婚礼网站的内容",
+    "de": "Zola: Was eine Hochzeitswebsite enthält"
+   },
+   "href": "https://www.zola.com/wedding-planning/website"
+  },
+  {
+   "t": {
+    "en": "Joy: wedding websites",
+    "th": "Joy: เว็บไซต์งานแต่ง",
+    "my": "Joy: မင်္ဂလာဝက်ဘ်ဆိုက်များ",
+    "zh": "Joy：婚礼网站",
+    "de": "Joy: Hochzeitswebsites"
+   },
+   "href": "https://withjoy.com/wedding-website/"
+  }
+ ],
+ "glyphs": [
+  "phuang-malai",
+  "lotus",
+  "chat"
+ ]
+}

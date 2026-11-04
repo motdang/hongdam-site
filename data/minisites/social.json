@@ -1,0 +1,258 @@
+{
+ "id": "social",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A business that posts on Facebook, Instagram, TikTok or LINE needs words and a picture for a post.",
+  "th": "ธุรกิจที่โพสต์บน Facebook, Instagram, TikTok หรือ LINE ต้องมีข้อความและภาพสำหรับโพสต์",
+  "my": "Facebook၊ Instagram၊ TikTok သို့မဟုတ် LINE တွင် ပို့စ်တင်သော စီးပွားရေးလုပ်ငန်းတစ်ခုသည် ပို့စ်တစ်ခုအတွက် စာသားနှင့် ပုံ လိုအပ်သည်။",
+  "zh": "在 Facebook、Instagram、TikTok 或 LINE 上发帖的商家，一条帖子需要文字和图片。",
+  "de": "Wer als Geschäft auf Facebook, Instagram, TikTok oder LINE postet, braucht für einen Beitrag Text und ein Bild."
+ },
+ "n": {
+  "de": "Social-Media-Beiträge"
+ },
+ "l": {
+  "de": "Facebook, Instagram, TikTok oder LINE, mit Bild."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You pick the site and the language: Thai, English or both.",
+    "th": "คุณเลือกเว็บที่จะโพสต์และภาษา: ไทย อังกฤษ หรือทั้งสอง",
+    "my": "သင်က ပို့စ်တင်မည့် ဆိုက်နှင့် ဘာသာစကား ရွေးသည်- ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် နှစ်မျိုးလုံး။",
+    "zh": "您选平台和语言：泰语、英语或两者。",
+    "de": "Sie wählen die Plattform und die Sprache: Thai, Englisch oder beides."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "We write the post.",
+    "th": "เขียนโพสต์",
+    "my": "ပို့စ်ကို ရေးသားပေးသည်။",
+    "zh": "撰写帖子。",
+    "de": "Wir schreiben den Beitrag."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per post",
+    "th": "ต่อหนึ่งโพสต์",
+    "my": "ပို့စ်တစ်ခုလျှင်",
+    "zh": "每条帖子",
+    "de": "Je Beitrag"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "We add its picture.",
+    "th": "ใส่ภาพประกอบของโพสต์",
+    "my": "ပို့စ်၏ ပုံကို ထည့်ပေးသည်။",
+    "zh": "配上帖子的图片。",
+    "de": "Wir fügen das Bild dazu."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per post",
+    "th": "ต่อหนึ่งโพสต์",
+    "my": "ပို့စ်တစ်ခုလျှင်",
+    "zh": "每条帖子",
+    "de": "Je Beitrag"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "DataReportal counts 56.6 million social media user identities in Thailand in October 2025, 79.1% of the population. The report notes the count may not be separate people.",
+    "th": "DataReportal นับตัวตนผู้ใช้โซเชียลมีเดียในไทยได้ 56.6 ล้านบัญชี ในเดือนตุลาคม 2568 คิดเป็น 79.1% ของประชากร รายงานระบุว่าตัวเลขนี้อาจไม่ใช่จำนวนคนที่ไม่ซ้ำกัน",
+    "my": "DataReportal က 2025 အောက်တိုဘာတွင် ထိုင်းနိုင်ငံ၌ ဆိုရှယ်မီဒီယာ အသုံးပြုသူ အမည်ခံ 56.6 သန်း ရှိသည်ဟု ရေတွက်ထားပြီး လူဦးရေ၏ 79.1% ဖြစ်သည်။ ထိုအရေအတွက်သည် လူတစ်ဦးချင်းစီ မဟုတ်နိုင်ကြောင်း အစီရင်ခံစာက ဖော်ပြသည်။",
+    "zh": "DataReportal 统计，2025 年 10 月泰国有 5,660 万个社交媒体用户身份，占人口的 79.1%。报告说明这一数字未必代表不重复的个人。",
+    "de": "DataReportal zählt im Oktober 2025 in Thailand 56,6 Millionen Social-Media-Nutzeridentitäten, 79,1 % der Bevölkerung. Der Bericht hält fest, dass die Zahl nicht unbedingt einzelne Personen abbildet."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "DataReportal's figures for late 2025: LINE has 56 million monthly active users in Thailand, Facebook reaches 51.5 million people with ads and Instagram 20.6 million.",
+    "th": "ตัวเลขของ DataReportal ช่วงปลายปี 2568: LINE มีผู้ใช้ต่อเดือน 56 ล้านคนในไทย Facebook เข้าถึงผ่านโฆษณา 51.5 ล้านคน และ Instagram 20.6 ล้านคน",
+    "my": "DataReportal ၏ 2025 နှောင်းပိုင်း ကိန်းဂဏန်းများ- ထိုင်းနိုင်ငံတွင် LINE အသုံးပြုသူ လစဉ် 56 သန်း ရှိပြီး Facebook က ကြော်ငြာဖြင့် 51.5 သန်း၊ Instagram က 20.6 သန်း လွှမ်းခြုံသည်။",
+    "zh": "DataReportal 2025 年底数据：LINE 在泰国月活跃用户 5,600 万，Facebook 广告触达 5,150 万人，Instagram 2,060 万人。",
+    "de": "Zahlen von DataReportal für Ende 2025: LINE hat in Thailand 56 Millionen monatlich aktive Nutzer, Facebook erreicht mit Werbung 51,5 Millionen Menschen, Instagram 20,6 Millionen."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "Meta's ad guide lists these for Instagram feed images: ratio 4:5, at least 1440 x 1800 pixels, JPG or PNG, up to 30 MB.",
+    "th": "คู่มือโฆษณาของ Meta ระบุสำหรับภาพในฟีด Instagram: สัดส่วน 4:5 อย่างน้อย 1440 x 1800 พิกเซล ไฟล์ JPG หรือ PNG ขนาดไม่เกิน 30 MB",
+    "my": "Meta ၏ ကြော်ငြာလမ်းညွှန်က Instagram ဖိဒ်ပုံများအတွက် အချိုး 4:5၊ အနည်းဆုံး 1440 x 1800 ပစ်ဇယ်၊ JPG သို့မဟုတ် PNG၊ 30 MB အထိဟု ဖော်ပြထားသည်။",
+    "zh": "Meta 广告指南对 Instagram 动态图片列出：比例 4:5，至少 1440 x 1800 像素，JPG 或 PNG，最大 30 MB。",
+    "de": "Der Werbeleitfaden von Meta nennt für Bilder im Instagram-Feed: Seitenverhältnis 4:5, mindestens 1440 x 1800 Pixel, JPG oder PNG, bis 30 MB."
+   },
+   "src": "https://www.facebook.com/business/ads-guide/image/instagram-feed"
+  },
+  {
+   "t": {
+    "en": "The same guide lists Facebook feed images as ratio 4:5, 1440 x 1800 pixels recommended, JPG or PNG, up to 30 MB.",
+    "th": "คู่มือเดียวกันระบุภาพในฟีด Facebook: สัดส่วน 4:5 แนะนำ 1440 x 1800 พิกเซล ไฟล์ JPG หรือ PNG ขนาดไม่เกิน 30 MB",
+    "my": "ထိုလမ်းညွှန်ကပင် Facebook ဖိဒ်ပုံများအတွက် အချိုး 4:5၊ 1440 x 1800 ပစ်ဇယ် အကြံပြု၊ JPG သို့မဟုတ် PNG၊ 30 MB အထိဟု ဖော်ပြထားသည်။",
+    "zh": "同一指南对 Facebook 动态图片列出：比例 4:5，建议 1440 x 1800 像素，JPG 或 PNG，最大 30 MB。",
+    "de": "Derselbe Leitfaden nennt für Bilder im Facebook-Feed: Seitenverhältnis 4:5, empfohlen 1440 x 1800 Pixel, JPG oder PNG, bis 30 MB."
+   },
+   "src": "https://www.facebook.com/business/ads-guide/image/facebook-feed"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Facebook content on Fastwork",
+    "th": "คอนเทนต์ Facebook บน Fastwork",
+    "my": "Fastwork ပေါ်ရှိ Facebook ကွန်တင့်",
+    "zh": "Fastwork 上的 Facebook 内容",
+    "de": "Facebook-Inhalte auf Fastwork"
+   },
+   "p": {
+    "en": "From ฿700",
+    "th": "เริ่มต้น ฿700",
+    "my": "฿700 မှစ",
+    "zh": "฿700 起",
+    "de": "Ab ฿700"
+   },
+   "src": "https://fastwork.co/content-marketing/facebook"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What size is a social media post picture?",
+    "th": "ภาพโพสต์โซเชียลมีขนาดเท่าไร",
+    "my": "ဆိုရှယ်မီဒီယာ ပို့စ်ပုံ အရွယ်အစား ဘယ်လောက်ရှိသလဲ။",
+    "zh": "社交媒体帖子的图片多大？",
+    "de": "Wie gross ist ein Bild für einen Social-Media-Beitrag?"
+   },
+   "a": {
+    "en": "Meta's ad guide lists a 4:5 ratio and 1440 x 1800 pixels for Instagram and Facebook feed images. The file is JPG or PNG, up to 30 MB.",
+    "th": "คู่มือโฆษณาของ Meta ระบุสัดส่วน 4:5 และ 1440 x 1800 พิกเซลสำหรับภาพในฟีด Instagram และ Facebook ไฟล์เป็น JPG หรือ PNG ขนาดไม่เกิน 30 MB",
+    "my": "Meta ၏ ကြော်ငြာလမ်းညွှန်က Instagram နှင့် Facebook ဖိဒ်ပုံများအတွက် အချိုး 4:5 နှင့် 1440 x 1800 ပစ်ဇယ်ဟု ဖော်ပြထားသည်။ ဖိုင်သည် JPG သို့မဟုတ် PNG ဖြစ်ပြီး 30 MB အထိ ရသည်။",
+    "zh": "Meta 广告指南对 Instagram 和 Facebook 动态图片列出比例 4:5、1440 x 1800 像素。文件为 JPG 或 PNG，最大 30 MB。",
+    "de": "Der Werbeleitfaden von Meta nennt für Bilder im Instagram- und Facebook-Feed das Seitenverhältnis 4:5 und 1440 x 1800 Pixel. Die Datei ist JPG oder PNG, bis 30 MB."
+   },
+   "src": "https://www.facebook.com/business/ads-guide/image/instagram-feed"
+  },
+  {
+   "q": {
+    "en": "Which social media do people use in Thailand?",
+    "th": "คนไทยใช้โซเชียลมีเดียอะไรบ้าง",
+    "my": "ထိုင်းနိုင်ငံသားများ ဆိုရှယ်မီဒီယာ ဘာတွေ သုံးကြသလဲ။",
+    "zh": "泰国人用哪些社交媒体？",
+    "de": "Welche sozialen Medien nutzen die Menschen in Thailand?"
+   },
+   "a": {
+    "en": "DataReportal counts 56 million monthly active LINE users in Thailand in late 2025. Facebook reaches 51.5 million people with ads, and Instagram reaches 20.6 million.",
+    "th": "DataReportal นับผู้ใช้ LINE ในไทยได้ 56 ล้านคนต่อเดือนในช่วงปลายปี 2568 Facebook เข้าถึงผ่านโฆษณา 51.5 ล้านคน และ Instagram 20.6 ล้านคน",
+    "my": "DataReportal က 2025 နှောင်းပိုင်းတွင် ထိုင်းနိုင်ငံ၌ LINE အသုံးပြုသူ လစဉ် 56 သန်း ရှိသည်ဟု ရေတွက်ထားသည်။ Facebook က ကြော်ငြာဖြင့် 51.5 သန်း၊ Instagram က 20.6 သန်း လွှမ်းခြုံသည်။",
+    "zh": "DataReportal 统计，2025 年底泰国 LINE 月活跃用户为 5,600 万。Facebook 广告触达 5,150 万人，Instagram 触达 2,060 万人。",
+    "de": "DataReportal zählt Ende 2025 in Thailand 56 Millionen monatlich aktive LINE-Nutzer. Facebook erreicht mit Werbung 51,5 Millionen Menschen, Instagram 20,6 Millionen."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "q": {
+    "en": "What does Facebook content cost in Thailand?",
+    "th": "คอนเทนต์ Facebook ในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် Facebook ကွန်တင့် ဈေး ဘယ်လောက်လဲ။",
+    "zh": "在泰国做 Facebook 内容要多少钱？",
+    "de": "Was kosten Facebook-Inhalte in Thailand?"
+   },
+   "a": {
+    "en": "Fastwork's page for Facebook content gives ฿700 as the starting price.",
+    "th": "หน้าคอนเทนต์ Facebook ของ Fastwork ระบุราคาเริ่มต้น ฿700",
+    "my": "Fastwork ၏ Facebook ကွန်တင့် စာမျက်နှာတွင် စတင်ဈေး ฿700 ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 的 Facebook 内容页面标明起步价为 ฿700。",
+    "de": "Die Fastwork-Seite für Facebook-Inhalte nennt ฿700 als Einstiegspreis."
+   },
+   "src": "https://fastwork.co/content-marketing/facebook"
+  },
+  {
+   "q": {
+    "en": "Can posts be scheduled for later?",
+    "th": "ตั้งเวลาโพสต์ไว้ล่วงหน้าได้ไหม",
+    "my": "ပို့စ်များကို နောက်ပိုင်း အချိန်သတ်မှတ်ထားနိုင်ပါသလား။",
+    "zh": "帖子可以定时发布吗？",
+    "de": "Lassen sich Beiträge für später planen?"
+   },
+   "a": {
+    "en": "Meta Business Suite lets a business create or schedule posts, stories and ads for its Facebook and Instagram accounts.",
+    "th": "Meta Business Suite ให้ธุรกิจสร้างหรือกำหนดเวลาเผยแพร่โพสต์ สตอรี่ และโฆษณาในบัญชี Facebook และ Instagram",
+    "my": "Meta Business Suite သည် စီးပွားရေးလုပ်ငန်းတစ်ခုအား ၎င်း၏ Facebook နှင့် Instagram အကောင့်များအတွက် ပို့စ်၊ စတိုရီနှင့် ကြော်ငြာများကို ဖန်တီးခြင်း သို့မဟုတ် အချိန်သတ်မှတ်ခြင်း ပြုလုပ်ခွင့်ပေးသည်။",
+    "zh": "Meta Business Suite 让商家为其 Facebook 和 Instagram 账户创建或定时发布帖子、快拍和广告。",
+    "de": "Mit Meta Business Suite kann ein Unternehmen Beiträge, Stories und Anzeigen für seine Facebook- und Instagram-Konten erstellen oder zeitlich planen."
+   },
+   "src": "https://www.facebook.com/business/tools/meta-business-suite"
+  }
+ ],
+ "related": [
+  "article",
+  "copy",
+  "video",
+  "fb-care",
+  "web-sharecard",
+  "ads-run"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Meta: image ad specs for the Instagram feed",
+    "th": "Meta: ข้อกำหนดภาพโฆษณาในฟีด Instagram",
+    "my": "Meta: Instagram ဖိဒ်အတွက် ကြော်ငြာပုံ သတ်မှတ်ချက်များ",
+    "zh": "Meta：Instagram 动态图片广告规格",
+    "de": "Meta: Bildspezifikationen für den Instagram-Feed"
+   },
+   "href": "https://www.facebook.com/business/ads-guide/image/instagram-feed"
+  },
+  {
+   "t": {
+    "en": "DataReportal: Digital 2026 Thailand",
+    "th": "DataReportal: Digital 2026 ประเทศไทย",
+    "my": "DataReportal: Digital 2026 ထိုင်းနိုင်ငံ",
+    "zh": "DataReportal：Digital 2026 泰国",
+    "de": "DataReportal: Digital 2026 Thailand"
+   },
+   "href": "https://datareportal.com/reports/digital-2026-thailand"
+  }
+ ],
+ "glyphs": [
+  "share",
+  "camera",
+  "thumbs-up"
+ ]
+}

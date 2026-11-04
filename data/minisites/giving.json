@@ -1,0 +1,845 @@
+{
+ "id": "giving",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A gift can reach a charity by card, PayPal, Wise or bank transfer, and the fees differ by route. A giving page puts the routes side by side for the donor's country and amount.",
+  "th": "เงินบริจาคไปถึงองค์กรได้ทางบัตร PayPal Wise หรือโอนผ่านธนาคาร และแต่ละทางมีค่าธรรมเนียมไม่เท่ากัน หน้ารับบริจาควางแต่ละทางเทียบกันตามประเทศและจำนวนเงินของผู้บริจาค",
+  "my": "လှူဒါန်းငွေသည် ကတ်၊ PayPal၊ Wise သို့မဟုတ် ဘဏ်လွှဲဖြင့် အဖွဲ့အစည်းထံ ရောက်နိုင်ပြီး လမ်းကြောင်းအလိုက် ကြေး မတူပါ။ လှူဒါန်းစာမျက်နှာက လှူဒါန်းသူ၏ နိုင်ငံနှင့် ငွေပမာဏအတွက် လမ်းကြောင်းများကို ဘေးချင်းယှဉ်၍ ပြသည်။",
+  "zh": "捐款可以通过银行卡、PayPal、Wise 或银行转账到达慈善机构，各条路径的费用不同。捐款页按捐款人所在国家和金额，把这些路径并排列出。",
+  "de": "Eine Spende kann per Karte, PayPal, Wise oder Banküberweisung bei der Organisation ankommen, und die Gebühren unterscheiden sich je nach Weg. Eine Spendenseite stellt die Wege nebeneinander, nach Land und Betrag des Spenders."
+ },
+ "n": {
+  "de": "Spendenseite für Ihre Organisation"
+ },
+ "l": {
+  "de": "Spender wählen ihr Land und sehen die günstigeren Wege zu spenden."
+ },
+ "steps": [
+  {
+   "db": "earth",
+   "t": {
+    "en": "The giving page is built",
+    "th": "สร้างหน้ารับบริจาค",
+    "my": "လှူဒါန်းစာမျက်နှာကို တည်ဆောက်ခြင်း",
+    "zh": "搭建捐款页",
+    "de": "Die Spendenseite wird gebaut"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "A donor picks a country and an amount",
+    "th": "ผู้บริจาคเลือกประเทศและจำนวนเงิน",
+    "my": "လှူဒါန်းသူက နိုင်ငံနှင့် ငွေပမာဏကို ရွေးချယ်သည်",
+    "zh": "捐款人选择国家和金额",
+    "de": "Der Spender wählt Land und Betrag"
+   },
+   "who": {
+    "en": "The donor",
+    "th": "ผู้บริจาค",
+    "my": "လှူဒါန်းသူ",
+    "zh": "捐款人",
+    "de": "Der Spender"
+   },
+   "time": {
+    "en": "When a gift is planned",
+    "th": "เมื่อตั้งใจจะบริจาค",
+    "my": "လှူရန် စီစဉ်သည့်အခါ",
+    "zh": "打算捐款时",
+    "de": "Wenn eine Spende geplant ist"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The page shows the cheaper ways to give, with tax-receipt answers",
+    "th": "หน้าเว็บแสดงช่องทางที่ถูกกว่า พร้อมคำตอบเรื่องใบลดหย่อนภาษี",
+    "my": "စာမျက်နှာက ပိုသက်သာသော လှူဒါန်းနည်းလမ်းများကို အခွန်ပြေစာဆိုင်ရာ အဖြေများနှင့်အတူ ပြသသည်",
+    "zh": "页面显示更省钱的捐款方式，并附税务收据的解答",
+    "de": "Die Seite zeigt die günstigeren Wege zu spenden, mit Antworten zur Spendenbescheinigung"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "As the donor chooses",
+    "th": "ขณะผู้บริจาคเลือก",
+    "my": "လှူဒါန်းသူ ရွေးချယ်နေစဉ်",
+    "zh": "捐款人选择时",
+    "de": "Während der Spender wählt"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The gift goes straight to the charity; Hongdam holds no money",
+    "th": "เงินบริจาคไปถึงองค์กรโดยตรง หงส์ดำไม่ถือเงิน",
+    "my": "လှူဒါန်းငွေသည် အဖွဲ့အစည်းထံ တိုက်ရိုက်ရောက်သည်။ ဟုန်ဒမ်က ငွေမကိုင်ပါ။",
+    "zh": "捐款直接到达慈善机构，鸿丹不经手资金",
+    "de": "Die Spende geht direkt an die Organisation; Hongdam hält kein Geld"
+   },
+   "who": {
+    "en": "The donor and the charity",
+    "th": "ผู้บริจาคและองค์กร",
+    "my": "လှူဒါန်းသူနှင့် အဖွဲ့အစည်း",
+    "zh": "捐款人和慈善机构",
+    "de": "Der Spender und die Organisation"
+   },
+   "time": {
+    "en": "At the gift",
+    "th": "เมื่อบริจาค",
+    "my": "လှူဒါန်းသည့်အခါ",
+    "zh": "捐款时",
+    "de": "Bei der Spende"
+   }
+  },
+  {
+   "db": "scan",
+   "t": {
+    "en": "Thai slips are read automatically and entered in a ledger",
+    "th": "อ่านสลิปไทยอัตโนมัติและลงสมุดบัญชี",
+    "my": "ထိုင်းငွေလွှဲစလစ်များကို အလိုအလျောက် ဖတ်ပြီး ငွေစာရင်းဇယားတွင် မှတ်သည်",
+    "zh": "自动读取泰国转账凭条并记入账簿",
+    "de": "Thailändische Überweisungsbelege werden automatisch gelesen und ins Kassenbuch eingetragen"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "As slips come in",
+    "th": "เมื่อมีสลิปเข้ามา",
+    "my": "စလစ်များ ဝင်လာသည့်အခါ",
+    "zh": "凭条到达时",
+    "de": "Sobald Belege eintreffen"
+   }
+  },
+  {
+   "db": "abacus",
+   "t": {
+    "en": "Board statements are written; the monthly option adds thank-yous and a monthly statement",
+    "th": "จัดทำรายงานสำหรับกรรมการ ส่วนแบบรายเดือนเพิ่มคำขอบคุณและรายงานประจำเดือน",
+    "my": "ဘုတ်အဖွဲ့အတွက် ရှင်းတမ်းများ ပြုစုသည်။ လစဉ်ထိန်းသိမ်းမှုတွင် ကျေးဇူးတင်စာနှင့် လစဉ်ရှင်းတမ်း ထပ်ပါသည်။",
+    "zh": "编制理事会报表；按月维护另有感谢信和月度报表",
+    "de": "Berichte für den Vorstand werden erstellt; die monatliche Pflege fügt Dankesschreiben und einen Monatsbericht hinzu"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After gifts come in",
+    "th": "หลังมีเงินบริจาคเข้ามา",
+    "my": "လှူဒါန်းငွေ ဝင်လာပြီးနောက်",
+    "zh": "捐款到账后",
+    "de": "Nach den Spenden"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "฿0",
+   "t": {
+    "en": "Fee on a gift sent through an e-Donation bank QR, as the Revenue Department's Q&A states",
+    "th": "ค่าธรรมเนียมของเงินบริจาคที่โอนผ่านคิวอาร์ e-Donation ของธนาคาร ตามคำถาม-คำตอบของกรมสรรพากร",
+    "my": "e-Donation ဘဏ် QR မှတစ်ဆင့် လှူဒါန်းငွေပို့ခြင်းအတွက် ကြေး၊ ဝင်ငွေခွန်ဦးစီးဌာန၏ မေးဆို-ဖြေဆိုချက်အရ",
+    "zh": "通过银行 e-Donation 二维码捐款的费用，依税务厅问答",
+    "de": "Gebühr für eine Spende über den e-Donation-QR einer Bank, laut den Fragen und Antworten des Revenue Department"
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "n": "10%",
+   "t": {
+    "en": "Cap on an individual's total deduction for gifts through e-Donation, as a share of net assessable income",
+    "th": "เพดานการหักลดหย่อนรวมของบุคคลธรรมดาสำหรับเงินบริจาคผ่าน e-Donation เทียบกับเงินได้พึงประเมินสุทธิ",
+    "my": "e-Donation မှတစ်ဆင့် လှူဒါန်းမှုအတွက် တစ်ဦးချင်း နုတ်ယူခွင့်စုစုပေါင်း ကန့်သတ်ချက်၊ အသားတင် အကဲဖြတ်ဝင်ငွေ၏ ရာခိုင်နှုန်း",
+    "zh": "个人通过 e-Donation 捐款的扣除总额上限，占应税净收入的比例",
+    "de": "Obergrenze für den gesamten Abzug einer Privatperson bei Spenden über e-Donation, als Anteil am steuerbaren Nettoeinkommen"
+   },
+   "src": "https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/thailand-extends-e-tax-and-e-donation-incentives"
+  },
+  {
+   "n": "4.40% + ฿11",
+   "t": {
+    "en": "PayPal Thailand's fee on a gift in baht from a sender outside Thailand",
+    "th": "ค่าธรรมเนียมของ PayPal ไทยสำหรับเงินบริจาคเป็นบาทจากผู้ส่งนอกประเทศไทย",
+    "my": "ထိုင်းနိုင်ငံပြင်ပမှ ပို့သူထံမှ ဘတ်ငွေ လှူဒါန်းမှုအတွက် PayPal ထိုင်း၏ ကြေး",
+    "zh": "PayPal 泰国对境外汇款人以泰铢捐款收取的费用",
+    "de": "Gebühr von PayPal Thailand auf eine Spende in Baht von einem Absender ausserhalb Thailands"
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "n": "฿200–500",
+   "t": {
+    "en": "Kasikornbank's fee on an incoming international transfer: 0.25% of the amount, from 1 October 2026",
+    "th": "ค่าธรรมเนียมรับโอนเงินระหว่างประเทศเข้าของธนาคารกสิกรไทย 0.25% ของยอด ตั้งแต่ 1 ตุลาคม 2569",
+    "my": "Kasikornbank ၏ ဝင်လာသော နိုင်ငံတကာငွေလွှဲအတွက် ကြေး - ပမာဏ၏ 0.25%၊ 2026 အောက်တိုဘာ 1 ရက်မှစ၍",
+    "zh": "开泰银行对汇入国际汇款收取的费用：金额的 0.25%，自 2026 年 10 月 1 日起",
+    "de": "Gebühr der Kasikornbank auf eine eingehende internationale Überweisung: 0.25% des Betrags, seit dem 1. Oktober 2026"
+   },
+   "src": "https://www.kasikornbank.com/en/rate/fee/chargesdoc/feesforinternationaltradeproducts_en.pdf"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "How much of a gift goes to fees on the way?",
+   "th": "เงินบริจาคเสียค่าธรรมเนียมระหว่างทางเท่าไหร่",
+   "my": "လှူဒါန်းငွေမှ လမ်းတစ်လျှောက် ကြေးအဖြစ် မည်မျှ ကုန်သွားသနည်း",
+   "zh": "一笔捐款在路上要付多少手续费",
+   "de": "Wie viel einer Spende geht unterwegs an Gebühren?"
+  },
+  "noscript": {
+   "en": "The fee calculator needs JavaScript. The fees on each route are listed below.",
+   "th": "เครื่องคำนวณค่าธรรมเนียมต้องใช้ JavaScript ค่าธรรมเนียมของแต่ละช่องทางแสดงไว้ด้านล่าง",
+   "my": "ကြေးတွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ လမ်းကြောင်းတစ်ခုချင်းစီ၏ ကြေးများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "手续费计算器需要 JavaScript。各条路径的费用列在下方。",
+   "de": "Der Gebührenrechner braucht JavaScript. Die Gebühren der einzelnen Wege stehen weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "gift",
+     "n": {
+      "en": "A gift",
+      "th": "จำนวนเงินบริจาค",
+      "my": "လှူဒါန်းငွေ",
+      "zh": "一笔捐款",
+      "de": "Eine Spende"
+     },
+     "min": 500,
+     "max": 50000,
+     "step": 500,
+     "start": 5000,
+     "money": true
+    }
+   ],
+   "choices": [
+    {
+     "id": "route",
+     "n": {
+      "en": "How it is sent",
+      "th": "ส่งด้วยวิธีใด",
+      "my": "ပို့သည့်နည်းလမ်း",
+      "zh": "怎么汇出",
+      "de": "Wie sie geschickt wird"
+     },
+     "options": [
+      {
+       "id": "platform",
+       "n": {
+        "en": "Fundraising platform (Taejai)",
+        "th": "แพลตฟอร์มระดมทุน (เทใจ)",
+        "my": "ရန်ပုံငွေကောက်ခံရေး ပလက်ဖောင်း (Taejai)",
+        "zh": "筹款平台（Taejai）",
+        "de": "Spendenplattform (Taejai)"
+       }
+      },
+      {
+       "id": "paypal",
+       "n": {
+        "en": "PayPal",
+        "th": "PayPal",
+        "my": "PayPal",
+        "zh": "PayPal",
+        "de": "PayPal"
+       }
+      },
+      {
+       "id": "wise",
+       "n": {
+        "en": "Wise",
+        "th": "Wise",
+        "my": "Wise",
+        "zh": "Wise",
+        "de": "Wise"
+       }
+      },
+      {
+       "id": "wire",
+       "n": {
+        "en": "Bank transfer from abroad",
+        "th": "โอนเงินผ่านธนาคารจากต่างประเทศ",
+        "my": "နိုင်ငံခြားမှ ဘဏ်လွှဲ",
+        "zh": "从国外银行转账",
+        "de": "Banküberweisung aus dem Ausland"
+       }
+      },
+      {
+       "id": "promptpay",
+       "n": {
+        "en": "PromptPay in Thailand",
+        "th": "พร้อมเพย์ในประเทศไทย",
+        "my": "ထိုင်းနိုင်ငံအတွင်း PromptPay",
+        "zh": "泰国境内 PromptPay",
+        "de": "PromptPay in Thailand"
+       }
+      }
+     ],
+     "start": "paypal"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Taejai service fee, 10% of the gift, added on top",
+      "th": "ค่าธรรมเนียมบริการของเทใจ 10% ของเงินบริจาค คิดเพิ่มจากยอด",
+      "my": "Taejai ဝန်ဆောင်မှုကြေး၊ လှူဒါန်းငွေ၏ 10%၊ ပမာဏအပေါ် ထပ်ပေါင်း",
+      "zh": "Taejai 服务费，占捐款的 10%，加在金额之上",
+      "de": "Servicegebühr von Taejai, 10% der Spende, obendrauf"
+     },
+     "pct": [
+      10,
+      10
+     ],
+     "per": [
+      "gift"
+     ],
+     "when": {
+      "route": [
+       "platform"
+      ]
+     },
+     "src": "https://linehoro.taejai.com/th/faq/"
+    },
+    {
+     "n": {
+      "en": "PayPal Thailand fee on a gift from outside Thailand, 4.40%",
+      "th": "ค่าธรรมเนียมของ PayPal ไทยสำหรับเงินบริจาคจากนอกประเทศไทย 4.40%",
+      "my": "ထိုင်းနိုင်ငံပြင်ပမှ လှူဒါန်းငွေအတွက် PayPal ထိုင်း၏ ကြေး 4.40%",
+      "zh": "PayPal 泰国对境外捐款收取的费用，4.40%",
+      "de": "Gebühr von PayPal Thailand auf eine Spende von ausserhalb Thailands, 4.40%"
+     },
+     "pct": [
+      4.4,
+      4.4
+     ],
+     "per": [
+      "gift"
+     ],
+     "when": {
+      "route": [
+       "paypal"
+      ]
+     },
+     "src": "https://www.paypal.com/th/business/paypal-business-fees"
+    },
+    {
+     "n": {
+      "en": "PayPal fixed fee on a gift in baht",
+      "th": "ค่าธรรมเนียมคงที่ของ PayPal สำหรับเงินบริจาคเป็นบาท",
+      "my": "ဘတ်ငွေ လှူဒါန်းမှုအတွက် PayPal ၏ သတ်မှတ်ကြေး",
+      "zh": "PayPal 对泰铢捐款收取的固定费用",
+      "de": "Fixe Gebühr von PayPal auf eine Spende in Baht"
+     },
+     "range": [
+      11,
+      11
+     ],
+     "when": {
+      "route": [
+       "paypal"
+      ]
+     },
+     "src": "https://www.paypal.com/th/business/paypal-business-fees"
+    },
+    {
+     "n": {
+      "en": "Wise fee, a share of the gift (US dollars, euros, pounds or Swiss francs sent)",
+      "th": "ค่าธรรมเนียมของ Wise ส่วนที่เป็นสัดส่วนของเงินบริจาค (ส่งเป็นดอลลาร์สหรัฐ ยูโร ปอนด์ หรือฟรังก์สวิส)",
+      "my": "Wise ကြေး၊ လှူဒါန်းငွေ၏ အချိုးအစားအပိုင်း (US ဒေါ်လာ၊ ယူရို၊ ပေါင် သို့မဟုတ် ဆွစ်ဖရန့် ပို့လျှင်)",
+      "zh": "Wise 的费用中按捐款比例收取的部分（以美元、欧元、英镑或瑞士法郎汇出）",
+      "de": "Gebühr von Wise, der Anteil an der Spende (gesendet in US-Dollar, Euro, Pfund oder Franken)"
+     },
+     "pct": [
+      0.53,
+      0.73
+     ],
+     "per": [
+      "gift"
+     ],
+     "when": {
+      "route": [
+       "wise"
+      ]
+     },
+     "src": "https://api.wise.com/v4/comparisons/?sourceCurrency=EUR&targetCurrency=THB&sendAmount=1000"
+    },
+    {
+     "n": {
+      "en": "Wise fee, the fixed part, by the currency sent",
+      "th": "ค่าธรรมเนียมของ Wise ส่วนคงที่ ตามสกุลเงินที่ส่ง",
+      "my": "Wise ကြေး၊ သတ်မှတ်ထားသည့်အပိုင်း၊ ပို့သည့်ငွေကြေးအလိုက်",
+      "zh": "Wise 费用中的固定部分，按汇出币种",
+      "de": "Gebühr von Wise, der feste Teil, je nach gesendeter Währung"
+     },
+     "range": [
+      68,
+      277
+     ],
+     "when": {
+      "route": [
+       "wise"
+      ]
+     },
+     "src": "https://api.wise.com/v4/comparisons/?sourceCurrency=EUR&targetCurrency=THB&sendAmount=1000"
+    },
+    {
+     "n": {
+      "en": "Kasikornbank fee on an incoming international transfer (0.25%, minimum ฿200, maximum ฿500)",
+      "th": "ค่าธรรมเนียมรับโอนเงินระหว่างประเทศเข้าของธนาคารกสิกรไทย (0.25% ขั้นต่ำ ฿200 สูงสุด ฿500)",
+      "my": "Kasikornbank ၏ ဝင်လာသော နိုင်ငံတကာငွေလွှဲကြေး (0.25%၊ အနည်းဆုံး ฿200၊ အများဆုံး ฿500)",
+      "zh": "开泰银行对汇入国际汇款收取的费用（0.25%，最低 ฿200，最高 ฿500）",
+      "de": "Gebühr der Kasikornbank auf eine eingehende internationale Überweisung (0.25%, mindestens ฿200, höchstens ฿500)"
+     },
+     "range": [
+      200,
+      200
+     ],
+     "when": {
+      "route": [
+       "wire"
+      ]
+     },
+     "src": "https://www.kasikornbank.com/en/rate/fee/chargesdoc/feesforinternationaltradeproducts_en.pdf"
+    },
+    {
+     "n": {
+      "en": "PromptPay transfer: free to ฿5,000, under ฿2 to ฿30,000, under ฿5 to ฿100,000",
+      "th": "ค่าโอนพร้อมเพย์: ไม่เสียค่าธรรมเนียมถึง ฿5,000 ไม่เกิน ฿2 ถึง ฿30,000 ไม่เกิน ฿5 ถึง ฿100,000",
+      "my": "PromptPay လွှဲခြင်း - ฿5,000 အထိ အခမဲ့၊ ฿30,000 အထိ ฿2 အောက်၊ ฿100,000 အထိ ฿5 အောက်",
+      "zh": "PromptPay 转账：฿5,000 以内免费，฿30,000 以内低于 ฿2，฿100,000 以内低于 ฿5",
+      "de": "PromptPay-Überweisung: bis ฿5,000 gratis, bis ฿30,000 unter ฿2, bis ฿100,000 unter ฿5"
+     },
+     "range": [
+      0,
+      5
+     ],
+     "when": {
+      "route": [
+       "promptpay"
+      ]
+     },
+     "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+    }
+   ],
+   "total": {
+    "en": "Fees on the gift",
+    "th": "ค่าธรรมเนียมของเงินบริจาค",
+    "my": "လှူဒါန်းငွေအတွက် ကြေးစုစုပေါင်း",
+    "zh": "这笔捐款的费用合计",
+    "de": "Gebühren auf die Spende"
+   },
+   "note": {
+    "en": "Rates are the ones each provider's page publishes. Wise publishes a fee as a fixed amount plus a share; the two Wise lines are read from its public quotes of 24 October 2026 for US dollars, euros, pounds and Swiss francs to baht, the low end from the cheapest and the high end from the dearest. Taejai adds its 10% on top of the amount a project needs. The sending bank's fee, a card issuer's foreign fee and PayPal's currency margin are not counted.",
+    "th": "อัตราเป็นตัวเลขที่หน้าของผู้ให้บริการแต่ละรายเผยแพร่ Wise เผยแพร่ค่าธรรมเนียมเป็นจำนวนคงที่บวกสัดส่วน สองบรรทัดของ Wise อ่านจากใบเสนอราคาสาธารณะวันที่ 24 ตุลาคม 2569 สำหรับดอลลาร์สหรัฐ ยูโร ปอนด์ และฟรังก์สวิสเป็นบาท ค่าต่ำสุดมาจากสกุลที่ถูกที่สุด ค่าสูงสุดมาจากสกุลที่แพงที่สุด เทใจคิด 10% เพิ่มจากยอดที่โครงการต้องการ ค่าธรรมเนียมของธนาคารผู้ส่ง ค่าธรรมเนียมต่างประเทศของผู้ออกบัตร และส่วนต่างอัตราแลกเปลี่ยนของ PayPal ไม่ได้นับรวม",
+    "my": "နှုန်းထားများသည် ဝန်ဆောင်သူတစ်ခုချင်းစီ၏ စာမျက်နှာက ထုတ်ပြန်ထားသည့်အတိုင်း ဖြစ်သည်။ Wise သည် ကြေးကို သတ်မှတ်ပမာဏနှင့် အချိုးအစား ပေါင်း၍ ထုတ်ပြန်သည်။ Wise စာကြောင်းနှစ်ကြောင်းကို US ဒေါ်လာ၊ ယူရို၊ ပေါင်နှင့် ဆွစ်ဖရန့်မှ ဘတ်သို့ 2026 အောက်တိုဘာ 24 ရက် အများပြည်သူ ဈေးနှုန်းကိုးကားချက်များမှ ဖတ်ယူထားပြီး အနိမ့်ဆုံးကို အသက်သာဆုံးမှလည်း အမြင့်ဆုံးကို အဈေးအကြီးဆုံးမှလည်း ယူထားသည်။ Taejai သည် စီမံကိန်း လိုအပ်သည့် ပမာဏအပေါ် 10% ထပ်ပေါင်းသည်။ ပို့သည့်ဘဏ်၏ ကြေး၊ ကတ်ထုတ်ပေးသူ၏ နိုင်ငံခြားကြေးနှင့် PayPal ၏ ငွေလဲနှုန်းကွာခြားချက်တို့ကို မထည့်တွက်ပါ။",
+    "zh": "费率取自各服务商页面公布的数字。Wise 把费用公布为固定金额加一个比例；Wise 的两行取自它在 2026 年 10 月 24 日公开的报价（美元、欧元、英镑、瑞士法郎兑泰铢），低值来自最便宜的一种，高值来自最贵的一种。Taejai 的 10% 加在项目所需金额之上。汇出银行的费用、发卡行的境外手续费和 PayPal 的汇率差价未计入。",
+    "de": "Die Sätze stammen von den Seiten der Anbieter. Wise veröffentlicht eine Gebühr als festen Betrag plus einen Anteil; die beiden Wise-Zeilen sind aus den öffentlichen Offerten vom 24. Oktober 2026 für US-Dollar, Euro, Pfund und Franken zu Baht gelesen, der tiefe Wert aus der günstigsten, der hohe aus der teuersten. Taejai schlägt seine 10% auf den Betrag auf, den ein Projekt braucht. Die Gebühr der sendenden Bank, die Auslandsgebühr eines Kartenherausgebers und die Währungsmarge von PayPal sind nicht eingerechnet."
+   },
+   "oursLine": {
+    "en": "Hongdam builds the giving page for:",
+    "th": "หงส์ดำสร้างหน้ารับบริจาคในราคา:",
+    "my": "ဟုန်ဒမ်က လှူဒါန်းစာမျက်နှာကို တည်ဆောက်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹搭建捐款页，价格：",
+    "de": "Hongdam baut die Spendenseite für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "The Revenue Department's e-Donation system takes in gifts to schools, places of worship, state hospitals and the public charities named in a Ministry of Finance notice. A receiving unit holds a 13-digit unit number and registers with its founding certificate, the signer's appointment and the signer's ID.",
+    "th": "ระบบบริจาคอิเล็กทรอนิกส์ (e-Donation) ของกรมสรรพากรรับข้อมูลการบริจาคของสถานศึกษา ศาสนสถาน สถานพยาบาลของรัฐ และองค์การสาธารณกุศลที่ประกาศกระทรวงการคลังกำหนด หน่วยรับบริจาคมีเลขประจำตัวหน่วยรับบริจาค 13 หลัก และลงทะเบียนด้วยหนังสือรับรองการจัดตั้ง หนังสือแต่งตั้งผู้มีอำนาจ และบัตรประจำตัวของผู้มีอำนาจลงนาม",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန၏ e-Donation စနစ်သည် ကျောင်းများ၊ ဘာသာရေးအဆောက်အအုံများ၊ အစိုးရဆေးရုံများနှင့် ဘဏ္ဍာရေးဝန်ကြီးဌာန ကြေညာချက်တွင် အမည်ပါသော ပြည်သူ့ကောင်းမှုအဖွဲ့အစည်းများထံ လှူဒါန်းမှုများကို လက်ခံသည်။ လှူဒါန်းငွေလက်ခံသည့် အဖွဲ့တွင် 13 လုံးပါ လက်ခံအဖွဲ့နံပါတ် ရှိပြီး တည်ထောင်မှုလက်မှတ်၊ လက်မှတ်ထိုးသူ၏ ခန့်အပ်စာနှင့် လက်မှတ်ထိုးသူ၏ ကတ်ပြားတို့ဖြင့် မှတ်ပုံတင်သည်။",
+    "zh": "税务厅的 e-Donation 系统接收对学校、宗教场所、公立医院，以及财政部公告所列公益机构的捐款记录。受捐单位持有 13 位的受捐单位编号，并凭设立证明、授权签署人的任命书和签署人身份证件登记。",
+    "de": "Das e-Donation-System des Revenue Department erfasst Spenden an Schulen, Kultstätten, staatliche Spitäler und die gemeinnützigen Organisationen, die eine Bekanntmachung des Finanzministeriums nennt. Eine Empfangsstelle hat eine 13-stellige Nummer und meldet sich mit der Gründungsbescheinigung, der Ernennung der zeichnungsberechtigten Person und deren Ausweis an."
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "t": {
+    "en": "From 1 January 2026, a gift to a temple, foundation, association or fund that gives the donor a deduction goes through e-Donation only, according to the Revenue Department's notice. The donor needs no paper receipt.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 การบริจาคให้วัด มูลนิธิ สมาคม และกองทุนที่ผู้บริจาคได้สิทธิลดหย่อน ต้องใช้ระบบ e-Donation ของกรมสรรพากรเท่านั้น ผู้บริจาคไม่ต้องเก็บหลักฐานการบริจาคที่เป็นกระดาษ",
+    "my": "2026 ဇန်နဝါရီ 1 ရက်မှစ၍ ဝင်ငွေခွန်ဦးစီးဌာန၏ ကြေညာချက်အရ ဘုန်းကြီးကျောင်း၊ ဖောင်ဒေးရှင်း၊ အသင်း သို့မဟုတ် ရန်ပုံငွေသို့ လှူဒါန်းပြီး နုတ်ယူခွင့်ရသည့် လှူဒါန်းမှုများကို e-Donation မှသာ ပြုလုပ်ရသည်။ လှူဒါန်းသူသည် စာရွက်ပြေစာ မလိုပါ။",
+    "zh": "自 2026 年 1 月 1 日起，按税务厅的通知，向寺庙、基金会、协会或基金捐款并可抵扣的，只能通过 e-Donation 办理。捐款人不需要纸质收据。",
+    "de": "Seit dem 1. Januar 2026 läuft eine Spende an einen Tempel, eine Stiftung, einen Verein oder einen Fonds, für die der Spender einen Abzug erhält, nach der Mitteilung des Revenue Department nur über e-Donation. Der Spender braucht keinen Papierbeleg."
+   },
+   "src": "https://thestandard.co/donation-tax-deduction-e-donation-2026/"
+  },
+  {
+   "t": {
+    "en": "Individual taxpayers may claim a double deduction for gifts made through e-Donation, within an overall limit of 10% of net assessable income. The extension covers gifts from 1 January 2025 to 31 December 2027 and awaits a Royal Decree, according to a Forvis Mazars note of 23 July 2026.",
+    "th": "บุคคลธรรมดาอาจหักลดหย่อนเงินบริจาคผ่าน e-Donation ได้สองเท่า ภายในเพดานรวม 10% ของเงินได้พึงประเมินสุทธิ มาตรการที่ขยายนี้ครอบคลุมเงินบริจาคตั้งแต่ 1 มกราคม 2568 ถึง 31 ธันวาคม 2570 และรอการออกพระราชกฤษฎีกา ตามบทความของ Forvis Mazars ลงวันที่ 23 กรกฎาคม 2569",
+    "my": "တစ်ဦးချင်း အခွန်ထမ်းများသည် e-Donation မှတစ်ဆင့် လှူဒါန်းသည့်ငွေအတွက် နှစ်ဆ နုတ်ယူခွင့်ကို ရနိုင်ပြီး အသားတင် အကဲဖြတ်ဝင်ငွေ၏ 10% စုစုပေါင်း ကန့်သတ်ချက်အတွင်း ဖြစ်သည်။ ဤတိုးမြှင့်မှုသည် 2025 ဇန်နဝါရီ 1 ရက်မှ 2027 ဒီဇင်ဘာ 31 ရက်အထိ လှူဒါန်းမှုများကို ကျုံးပြီး ဘုရင့်အမိန့်ထုတ်ပြန်ချက်ကို စောင့်ဆိုင်းနေသည်ဟု Forvis Mazars ၏ 2026 ဇူလိုင် 23 ရက် မှတ်စုက ဆိုသည်။",
+    "zh": "个人纳税人通过 e-Donation 捐款，可按两倍扣除，总额上限为应税净收入的 10%。据 Forvis Mazars 2026 年 7 月 23 日的文章，这项延期涵盖 2025 年 1 月 1 日至 2027 年 12 月 31 日的捐款，尚待王室法令颁布。",
+    "de": "Privatpersonen können Spenden über e-Donation doppelt abziehen, innerhalb einer Gesamtgrenze von 10% des steuerbaren Nettoeinkommens. Laut einem Beitrag von Forvis Mazars vom 23. Juli 2026 gilt die Verlängerung für Spenden vom 1. Januar 2025 bis 31. Dezember 2027 und wartet auf ein königliches Dekret."
+   },
+   "src": "https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/thailand-extends-e-tax-and-e-donation-incentives"
+  },
+  {
+   "t": {
+    "en": "A bank sends gift data to the Revenue Department for individual donors only, not for companies. The bank account is the receiving unit's own, opened by its signer and used for gifts only. After the donor agrees in the banking app, the record reaches e-Donation within two working days.",
+    "th": "ธนาคารส่งข้อมูลการบริจาคให้กรมสรรพากรเฉพาะผู้บริจาคที่เป็นบุคคลธรรมดา ไม่รวมนิติบุคคล บัญชีเป็นของหน่วยรับบริจาคเอง เปิดโดยผู้มีอำนาจลงนาม และใช้รับบริจาคเท่านั้น หลังผู้บริจาคแจ้งความประสงค์ในแอปธนาคาร ข้อมูลเข้าระบบ e-Donation ภายใน 2 วันทำการถัดไป",
+    "my": "ဘဏ်သည် လှူဒါန်းမှုအချက်အလက်ကို တစ်ဦးချင်းလှူဒါန်းသူများအတွက်သာ ဝင်ငွေခွန်ဦးစီးဌာနသို့ ပို့ပေးပြီး ကုမ္ပဏီများအတွက် မပို့ပါ။ ဘဏ်အကောင့်သည် လက်ခံသည့်အဖွဲ့၏ ကိုယ်ပိုင်ဖြစ်ပြီး လက်မှတ်ထိုးခွင့်ရှိသူက ဖွင့်ထားကာ လှူဒါန်းငွေလက်ခံရန်သာ သုံးသည်။ လှူဒါန်းသူက ဘဏ်အက်ပ်တွင် သဘောတူပြီးနောက် မှတ်တမ်းသည် အလုပ်ရက် 2 ရက်အတွင်း e-Donation သို့ ရောက်သည်။",
+    "zh": "银行只为个人捐款人向税务厅传送捐款数据，不含公司。银行账户是受捐单位自己的，由其签署人开立，只用于接收捐款。捐款人在手机银行里同意后，记录在两个工作日内进入 e-Donation。",
+    "de": "Eine Bank meldet Spenden nur für Privatpersonen an das Revenue Department, nicht für Firmen. Das Konto gehört der Empfangsstelle, wird von ihrer zeichnungsberechtigten Person eröffnet und dient nur Spenden. Stimmt der Spender in der Banking-App zu, erreicht der Eintrag e-Donation innerhalb von zwei Arbeitstagen."
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "t": {
+    "en": "IRS Publication 526 lists foreign organisations, other than certain Canadian, Israeli and Mexican charities, among those a US donor cannot deduct a gift to. A gift to a US charity for a programme run by a foreign charity is deductible when the gift is not earmarked for the foreign charity and the US charity approves the programme and keeps control of the funds.",
+    "th": "เอกสาร IRS Publication 526 ระบุว่าผู้บริจาคในสหรัฐฯ หักลดหย่อนเงินบริจาคให้องค์กรต่างประเทศไม่ได้ ยกเว้นองค์กรการกุศลบางแห่งในแคนาดา อิสราเอล และเม็กซิโก การบริจาคให้องค์กรการกุศลในสหรัฐฯ เพื่อโครงการที่องค์กรการกุศลต่างประเทศดำเนินการ หักลดหย่อนได้เมื่อไม่ได้ระบุให้ส่งต่อองค์กรต่างประเทศนั้น และองค์กรในสหรัฐฯ อนุมัติโครงการและควบคุมการใช้เงิน",
+    "my": "IRS Publication 526 တွင် အမေရိကန်လှူဒါန်းသူသည် ကနေဒါ၊ အစ္စရေးနှင့် မက္ကဆီကိုရှိ အချို့သော ပရဟိတအဖွဲ့များမှလွဲ၍ နိုင်ငံခြားအဖွဲ့အစည်းများသို့ လှူသည့်ငွေကို နုတ်ယူခွင့်မရှိဟု ဖော်ပြထားသည်။ နိုင်ငံခြားပရဟိတအဖွဲ့က လုပ်ဆောင်သည့် အစီအစဉ်အတွက် အမေရိကန်ပရဟိတအဖွဲ့သို့ လှူသည့်ငွေကို နိုင်ငံခြားအဖွဲ့ထံ သီးသန့်ထားခြင်း မရှိဘဲ အမေရိကန်အဖွဲ့က အစီအစဉ်ကို အတည်ပြုပြီး ငွေအသုံးပြုမှုကို ထိန်းချုပ်ထားလျှင် နုတ်ယူနိုင်သည်။",
+    "zh": "美国国税局第 526 号出版物写明，美国捐款人向外国机构捐款不可扣除，加拿大、以色列和墨西哥的部分慈善机构除外。向美国慈善机构捐款、用于外国慈善机构开展的项目，在捐款没有指定转给该外国机构、且美国机构批准项目并掌控资金时，可以扣除。",
+    "de": "Die IRS-Publikation 526 führt ausländische Organisationen, ausser bestimmten kanadischen, israelischen und mexikanischen Wohltätigkeitsorganisationen, unter denen auf, an die ein US-Spender nichts abziehen kann. Eine Spende an eine US-Organisation für ein Programm einer ausländischen Organisation ist abziehbar, wenn sie nicht für die ausländische Organisation zweckbestimmt ist und die US-Organisation das Programm genehmigt und die Mittel kontrolliert."
+   },
+   "src": "https://www.irs.gov/publications/p526"
+  },
+  {
+   "t": {
+    "en": "Wise pays baht out of a local Wise bank account in Thailand and uses the mid-market rate. Its Thailand page names Kasikornbank, Bangkok Bank and Siam Commercial Bank, with a limit per transfer.",
+    "th": "Wise จ่ายเงินบาทจากบัญชีธนาคารท้องถิ่นของ Wise ในประเทศไทย และใช้อัตราแลกเปลี่ยนกลางตลาด หน้าไทยของ Wise ระบุธนาคารกสิกรไทย ธนาคารกรุงเทพ และธนาคารไทยพาณิชย์ พร้อมวงเงินต่อรายการ",
+    "my": "Wise သည် ထိုင်းနိုင်ငံရှိ Wise ဒေသခံဘဏ်အကောင့်မှ ဘတ်ငွေ ထုတ်ပေးပြီး ဈေးကွက်ကြားအလယ်နှုန်းကို သုံးသည်။ ၎င်း၏ ထိုင်းစာမျက်နှာတွင် Kasikornbank၊ Bangkok Bank နှင့် Siam Commercial Bank တို့ကို ဖော်ပြထားပြီး ငွေလွှဲတစ်ခုလျှင် ကန့်သတ်ချက်ရှိသည်။",
+    "zh": "Wise 从其在泰国的本地银行账户支付泰铢，并使用中间市场汇率。其泰国页面列出开泰银行、盘谷银行和汇商银行，并注明每笔转账的限额。",
+    "de": "Wise zahlt Baht von einem lokalen Wise-Bankkonto in Thailand aus und rechnet zum Mittelkurs. Die Thailand-Seite nennt Kasikornbank, Bangkok Bank und Siam Commercial Bank, mit einer Grenze je Überweisung."
+   },
+   "src": "https://wise.com/ch/send-money/send-money-to-thailand"
+  },
+  {
+   "t": {
+    "en": "Omise's restricted-business page lists donations among restricted financial services, and lists charitable fund-raising among the activities that TrueMoney Wallet, Alipay and WeChat Pay prohibit. It lists registration records for charities among the licences it asks for.",
+    "th": "หน้ากิจการที่ถูกจำกัดของ Omise ระบุการรับบริจาคไว้ในบริการทางการเงินที่ถูกจำกัด และระบุการระดมทุนขององค์กรการกุศลไว้ในกิจกรรมที่ TrueMoney Wallet, Alipay และ WeChat Pay ห้าม พร้อมระบุหลักฐานการจดทะเบียนขององค์กรการกุศลไว้ในใบอนุญาตที่ขอ",
+    "my": "Omise ၏ ကန့်သတ်စီးပွားရေးစာမျက်နှာတွင် လှူဒါန်းမှုများကို ကန့်သတ်ငွေကြေးဝန်ဆောင်မှုများအထဲတွင် ဖော်ပြထားပြီး ပရဟိတ ရန်ပုံငွေစုဆောင်းမှုကို TrueMoney Wallet၊ Alipay နှင့် WeChat Pay တို့ တားမြစ်သည့် လုပ်ငန်းများအထဲတွင် ဖော်ပြထားသည်။ ပရဟိတအဖွဲ့များ၏ မှတ်ပုံတင်မှတ်တမ်းများကိုလည်း တောင်းသည့် လိုင်စင်စာရင်းတွင် ဖော်ပြထားသည်။",
+    "zh": "Omise 的受限业务页面把捐款列在受限金融服务中，把慈善筹款列在 TrueMoney Wallet、支付宝和微信支付禁止的业务中，并把慈善机构的登记记录列在它要求提供的证照之内。",
+    "de": "Die Seite zu eingeschränkten Geschäften von Omise führt Spenden unter den eingeschränkten Finanzdienstleistungen auf und das Spendensammeln von Wohltätigkeitsorganisationen unter den Tätigkeiten, die TrueMoney Wallet, Alipay und WeChat Pay untersagen. Die Eintragungsnachweise von Wohltätigkeitsorganisationen stehen unter den Bewilligungen, die Omise verlangt."
+   },
+   "src": "https://www.omise.co/en/restricted-businesses-omise"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "PayPal Thailand: receiving a payment",
+    "th": "PayPal ไทย: การรับเงิน",
+    "my": "PayPal ထိုင်း - ငွေလက်ခံခြင်း",
+    "zh": "PayPal 泰国：收款",
+    "de": "PayPal Thailand: eine Zahlung empfangen"
+   },
+   "p": {
+    "en": "3.90% from a sender in Thailand, 4.40% from outside, plus a fixed fee: ฿11 on baht, US$0.30 on dollars",
+    "th": "3.90% จากผู้ส่งในประเทศไทย 4.40% จากนอกประเทศ บวกค่าธรรมเนียมคงที่ ฿11 สำหรับเงินบาท US$0.30 สำหรับดอลลาร์",
+    "my": "ထိုင်းနိုင်ငံအတွင်းမှ ပို့သူထံမှ 3.90%၊ ပြင်ပမှ 4.40% နှင့် သတ်မှတ်ကြေး - ဘတ်ငွေအတွက် ฿11၊ ဒေါ်လာအတွက် US$0.30",
+    "zh": "境内汇款人 3.90%，境外 4.40%，另加固定费用：泰铢 ฿11，美元 US$0.30",
+    "de": "3.90% von einem Absender in Thailand, 4.40% von ausserhalb, plus eine feste Gebühr: ฿11 bei Baht, US$0.30 bei Dollar"
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "t": {
+    "en": "PayPal Thailand: withdrawing baht to a Thai bank account",
+    "th": "PayPal ไทย: การถอนเงินบาทเข้าบัญชีธนาคารไทย",
+    "my": "PayPal ထိုင်း - ဘတ်ငွေကို ထိုင်းဘဏ်အကောင့်သို့ ထုတ်ယူခြင်း",
+    "zh": "PayPal 泰国：把泰铢提到泰国银行账户",
+    "de": "PayPal Thailand: Baht auf ein thailändisches Bankkonto auszahlen"
+   },
+   "p": {
+    "en": "No fee from ฿5,000; ฿50 under ฿5,000, with no currency conversion",
+    "th": "ไม่มีค่าธรรมเนียมตั้งแต่ ฿5,000 ขึ้นไป ต่ำกว่า ฿5,000 คิด ฿50 เมื่อไม่มีการแปลงสกุลเงิน",
+    "my": "฿5,000 နှင့်အထက် ကြေးမရှိ၊ ฿5,000 အောက် ฿50၊ ငွေကြေးမလဲလျှင်",
+    "zh": "฿5,000 及以上免费；低于 ฿5,000 收 ฿50，不涉及货币兑换时",
+    "de": "Keine Gebühr ab ฿5,000; ฿50 unter ฿5,000, ohne Währungsumrechnung"
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "t": {
+    "en": "Wise: sending CHF 2,000 to Thailand",
+    "th": "Wise: การส่งเงิน CHF 2,000 ไปประเทศไทย",
+    "my": "Wise - CHF 2,000 ကို ထိုင်းနိုင်ငံသို့ ပို့ခြင်း",
+    "zh": "Wise：向泰国汇出 CHF 2,000",
+    "de": "Wise: CHF 2,000 nach Thailand senden"
+   },
+   "p": {
+    "en": "CHF 12.04 from a Wise balance, CHF 12.95 by bank transfer, at the mid-market rate",
+    "th": "CHF 12.04 จากยอดเงินใน Wise CHF 12.95 เมื่อโอนผ่านธนาคาร ที่อัตราแลกเปลี่ยนกลางตลาด",
+    "my": "Wise လက်ကျန်ငွေမှ CHF 12.04၊ ဘဏ်လွှဲဖြင့် CHF 12.95၊ ဈေးကွက်ကြားအလယ်နှုန်းဖြင့်",
+    "zh": "用 Wise 余额支付 CHF 12.04，银行转账 CHF 12.95，按中间市场汇率",
+    "de": "CHF 12.04 ab Wise-Guthaben, CHF 12.95 per Banküberweisung, zum Mittelkurs"
+   },
+   "src": "https://wise.com/ch/send-money/send-money-to-thailand"
+  },
+  {
+   "t": {
+    "en": "Kasikornbank: incoming international transfer",
+    "th": "ธนาคารกสิกรไทย: รับโอนเงินระหว่างประเทศเข้า",
+    "my": "Kasikornbank - ဝင်လာသော နိုင်ငံတကာငွေလွှဲ",
+    "zh": "开泰银行：汇入国际汇款",
+    "de": "Kasikornbank: eingehende internationale Überweisung"
+   },
+   "p": {
+    "en": "0.25% of the amount, minimum ฿200, maximum ฿500, from 1 October 2026",
+    "th": "0.25% ของยอด ขั้นต่ำ ฿200 สูงสุด ฿500 ตั้งแต่ 1 ตุลาคม 2569",
+    "my": "ပမာဏ၏ 0.25%၊ အနည်းဆုံး ฿200၊ အများဆုံး ฿500၊ 2026 အောက်တိုဘာ 1 ရက်မှစ၍",
+    "zh": "金额的 0.25%，最低 ฿200，最高 ฿500，自 2026 年 10 月 1 日起",
+    "de": "0.25% des Betrags, mindestens ฿200, höchstens ฿500, seit dem 1. Oktober 2026"
+   },
+   "src": "https://www.kasikornbank.com/en/rate/fee/chargesdoc/feesforinternationaltradeproducts_en.pdf"
+  },
+  {
+   "t": {
+    "en": "PromptPay transfer, standard fee table",
+    "th": "การโอนพร้อมเพย์ ตารางค่าธรรมเนียมมาตรฐาน",
+    "my": "PromptPay လွှဲခြင်း၊ စံကြေးဇယား",
+    "zh": "PromptPay 转账，标准费率表",
+    "de": "PromptPay-Überweisung, Standardgebührentabelle"
+   },
+   "p": {
+    "en": "Free to ฿5,000; under ฿2 to ฿30,000; under ฿5 to ฿100,000",
+    "th": "ไม่มีค่าธรรมเนียมถึง ฿5,000 ไม่เกิน ฿2 ถึง ฿30,000 ไม่เกิน ฿5 ถึง ฿100,000",
+    "my": "฿5,000 အထိ အခမဲ့၊ ฿30,000 အထိ ฿2 အောက်၊ ฿100,000 အထိ ฿5 အောက်",
+    "zh": "฿5,000 以内免费；฿30,000 以内低于 ฿2；฿100,000 以内低于 ฿5",
+    "de": "Bis ฿5,000 gratis; bis ฿30,000 unter ฿2; bis ฿100,000 unter ฿5"
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "t": {
+    "en": "Taejai, a Thai fundraising platform: service fee",
+    "th": "เทใจ แพลตฟอร์มระดมทุนไทย: ค่าธรรมเนียมบริการ",
+    "my": "Taejai ထိုင်း ရန်ပုံငွေကောက်ခံရေး ပလက်ဖောင်း - ဝန်ဆောင်မှုကြေး",
+    "zh": "泰国筹款平台 Taejai：服务费",
+    "de": "Taejai, eine thailändische Spendenplattform: Servicegebühr"
+   },
+   "p": {
+    "en": "10% of the gift, added on top of a project's target",
+    "th": "10% ของเงินบริจาค คิดเพิ่มจากยอดเป้าหมายของโครงการ",
+    "my": "လှူဒါန်းငွေ၏ 10%၊ စီမံကိန်းပစ်မှတ်ငွေအပေါ် ထပ်ပေါင်း",
+    "zh": "捐款的 10%，加在项目目标金额之上",
+    "de": "10% der Spende, obendrauf auf das Ziel eines Projekts"
+   },
+   "src": "https://linehoro.taejai.com/th/faq/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is e-Donation?",
+    "th": "ระบบรับบริจาค e-Donation คืออะไร",
+    "my": "e-Donation ဆိုတာ ဘာလဲ",
+    "zh": "e-Donation 是什么",
+    "de": "Was ist e-Donation?"
+   },
+   "a": {
+    "en": "e-Donation is the Revenue Department's system for recording gifts to schools, places of worship, state hospitals, public charities and other units the law names. A donor who claims a deduction keeps no paper proof, and can read the record on the department's site at any hour.",
+    "th": "e-Donation เป็นระบบของกรมสรรพากรที่บันทึกข้อมูลการบริจาคให้สถานศึกษา ศาสนสถาน สถานพยาบาลของรัฐ องค์การสาธารณกุศล และหน่วยรับบริจาคอื่นที่กฎหมายกำหนด ผู้บริจาคที่ใช้สิทธิลดหย่อนไม่ต้องเก็บหลักฐานกระดาษ และดูข้อมูลได้ตลอด 24 ชั่วโมงบนเว็บไซต์ของกรม",
+    "my": "e-Donation သည် ကျောင်းများ၊ ဘာသာရေးအဆောက်အအုံများ၊ အစိုးရဆေးရုံများ၊ ပြည်သူ့ကောင်းမှုအဖွဲ့အစည်းများနှင့် ဥပဒေက သတ်မှတ်သော အခြားလက်ခံအဖွဲ့များထံ လှူဒါန်းမှုကို မှတ်တမ်းတင်သည့် ဝင်ငွေခွန်ဦးစီးဌာန၏ စနစ်ဖြစ်သည်။ နုတ်ယူခွင့်တောင်းသော လှူဒါန်းသူသည် စာရွက်သက်သေ မသိမ်းရဘဲ ဌာန၏ ဝက်ဘ်ဆိုက်တွင် မည်သည့်နာရီမဆို မှတ်တမ်းကို ကြည့်နိုင်သည်။",
+    "zh": "e-Donation 是税务厅记录捐款的系统，涵盖学校、宗教场所、公立医院、公益机构以及法律规定的其他受捐单位。申请扣除的捐款人不必保存纸质凭证，可随时在税务厅网站查看记录。",
+    "de": "e-Donation ist das System des Revenue Department zur Erfassung von Spenden an Schulen, Kultstätten, staatliche Spitäler, gemeinnützige Organisationen und weitere gesetzlich genannte Stellen. Wer einen Abzug geltend macht, braucht keinen Papierbeleg und kann den Eintrag jederzeit auf der Website des Amts einsehen."
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "q": {
+    "en": "Does a gift through an e-Donation QR cost a fee?",
+    "th": "บริจาคผ่านคิวอาร์ e-Donation มีค่าธรรมเนียมไหม",
+    "my": "e-Donation QR မှတစ်ဆင့် လှူဒါန်းရာတွင် ကြေးကျသလား",
+    "zh": "通过 e-Donation 二维码捐款要收费吗",
+    "de": "Kostet eine Spende über einen e-Donation-QR eine Gebühr?"
+   },
+   "a": {
+    "en": "The Revenue Department's Q&A says a gift through the QR code in the e-Donation scheme carries no fee. A QR sign that counts carries the words e-Donation.",
+    "th": "คำถาม-คำตอบของกรมสรรพากรระบุว่า การบริจาคผ่านคิวอาร์ในโครงการ e-Donation ไม่มีค่าธรรมเนียมแต่อย่างใด แผ่นป้ายคิวอาร์ที่เข้าโครงการมีข้อความ e-Donation",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန၏ မေးဆို-ဖြေဆိုချက်တွင် e-Donation စီမံကိန်းရှိ QR ကုဒ်မှတစ်ဆင့် လှူဒါန်းခြင်းတွင် ကြေးမရှိဟု ဖော်ပြထားသည်။ စီမံကိန်းတွင် ပါဝင်သော QR ဆိုင်းဘုတ်တွင် e-Donation ဟူသော စာသား ပါသည်။",
+    "zh": "税务厅的问答写明，通过 e-Donation 项目中的二维码捐款不收取任何费用。属于该项目的二维码牌上印有 e-Donation 字样。",
+    "de": "Die Fragen und Antworten des Revenue Department halten fest, dass eine Spende über den QR-Code im e-Donation-Programm keine Gebühr kostet. Ein QR-Schild des Programms trägt das Wort e-Donation."
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "q": {
+    "en": "How does a donor claim the Thai deduction after a QR gift?",
+    "th": "ผู้บริจาคใช้สิทธิลดหย่อนภาษีหลังบริจาคผ่านคิวอาร์อย่างไร",
+    "my": "QR ဖြင့် လှူဒါန်းပြီးနောက် ထိုင်းအခွန်နုတ်ယူခွင့်ကို မည်သို့ တောင်းသနည်း",
+    "zh": "用二维码捐款后，捐款人怎样申请泰国税前扣除",
+    "de": "Wie macht ein Spender nach einer QR-Spende den thailändischen Abzug geltend?"
+   },
+   "a": {
+    "en": "After scanning the unit's QR code and entering the amount, the banking app asks whether to send the gift data to the Revenue Department. If the donor agrees, the record is in e-Donation within two working days. The donor reads it on the department's site with the same login as online tax filing.",
+    "th": "หลังสแกนคิวอาร์ของหน่วยรับบริจาคและใส่จำนวนเงิน แอปธนาคารจะถามว่าต้องการส่งข้อมูลการบริจาคให้กรมสรรพากรหรือไม่ ถ้าผู้บริจาคแจ้งความประสงค์ ข้อมูลจะเข้าระบบ e-Donation ภายใน 2 วันทำการถัดไป ผู้บริจาคดูข้อมูลบนเว็บไซต์ของกรมด้วยรหัสผู้ใช้เดียวกับการยื่นภาษีทางอินเทอร์เน็ต",
+    "my": "လက်ခံအဖွဲ့၏ QR ကုဒ်ကို စကင်ဖတ်ပြီး ငွေပမာဏထည့်ပြီးနောက် ဘဏ်အက်ပ်က လှူဒါန်းမှုအချက်အလက်ကို ဝင်ငွေခွန်ဦးစီးဌာနသို့ ပို့လိုမို့လား မေးသည်။ လှူဒါန်းသူက သဘောတူလျှင် မှတ်တမ်းသည် အလုပ်ရက် 2 ရက်အတွင်း e-Donation တွင် ရှိသည်။ လှူဒါန်းသူသည် အွန်လိုင်းအခွန်တင်သွင်းသည့် အကောင့်အတိုင်း ဌာန၏ ဝက်ဘ်ဆိုက်တွင် ကြည့်ရှုသည်။",
+    "zh": "扫描受捐单位的二维码并输入金额后，手机银行会询问是否把捐款数据发送给税务厅。捐款人同意后，记录在两个工作日内进入 e-Donation。捐款人用与网上报税相同的账号登录税务厅网站查看。",
+    "de": "Nach dem Scannen des QR-Codes der Empfangsstelle und der Eingabe des Betrags fragt die Banking-App, ob die Spendendaten an das Revenue Department gehen sollen. Stimmt der Spender zu, ist der Eintrag innerhalb von zwei Arbeitstagen in e-Donation. Der Spender liest ihn auf der Website des Amts mit demselben Login wie für die Steuererklärung online."
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "q": {
+    "en": "Which gifts count for the Thai deduction from 2026?",
+    "th": "การบริจาคแบบใดใช้สิทธิลดหย่อนภาษีได้ตั้งแต่ปี 2569",
+    "my": "2026 မှစ၍ ထိုင်းအခွန်နုတ်ယူခွင့်အတွက် မည်သည့်လှူဒါန်းမှုများ ရသနည်း",
+    "zh": "从 2026 年起，哪些捐款可以享受泰国税前扣除",
+    "de": "Welche Spenden zählen ab 2026 für den thailändischen Abzug?"
+   },
+   "a": {
+    "en": "From 1 January 2026, gifts to temples, foundations, associations, funds and other bodies that give a deduction go through the Revenue Department's e-Donation system only. This holds for individuals and for companies and partnerships.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 การบริจาคให้วัด มูลนิธิ สมาคม กองทุน และองค์กรอื่นที่ผู้บริจาคได้สิทธิหักลดหย่อน ต้องใช้ระบบ e-Donation ของกรมสรรพากรเท่านั้น ใช้กับทั้งบุคคลธรรมดาและบริษัทหรือห้างหุ้นส่วนนิติบุคคล",
+    "my": "2026 ဇန်နဝါရီ 1 ရက်မှစ၍ ဘုန်းကြီးကျောင်း၊ ဖောင်ဒေးရှင်း၊ အသင်း၊ ရန်ပုံငွေနှင့် နုတ်ယူခွင့်ပေးသော အခြားအဖွဲ့များသို့ လှူဒါန်းမှုများကို ဝင်ငွေခွန်ဦးစီးဌာန၏ e-Donation စနစ်မှသာ ပြုလုပ်ရသည်။ ၎င်းသည် တစ်ဦးချင်းများနှင့် ကုမ္ပဏီများ၊ ပူးတွဲလုပ်ငန်းများအတွက် အကျုံးဝင်သည်။",
+    "zh": "自 2026 年 1 月 1 日起，向寺庙、基金会、协会、基金及其他可抵扣的机构捐款，只能通过税务厅的 e-Donation 系统办理。个人以及公司和合伙企业都适用。",
+    "de": "Seit dem 1. Januar 2026 laufen Spenden an Tempel, Stiftungen, Vereine, Fonds und weitere Stellen, für die ein Abzug gilt, nur über das e-Donation-System des Revenue Department. Das gilt für Privatpersonen sowie für Firmen und Personengesellschaften."
+   },
+   "src": "https://thestandard.co/donation-tax-deduction-e-donation-2026/"
+  },
+  {
+   "q": {
+    "en": "Can a donor in the US deduct a gift to a Thai charity?",
+    "th": "ผู้บริจาคในสหรัฐฯ หักลดหย่อนเงินบริจาคให้องค์กรการกุศลไทยได้ไหม",
+    "my": "အမေရိကန်ရှိ လှူဒါန်းသူသည် ထိုင်းပရဟိတအဖွဲ့သို့ လှူသည့်ငွေကို နုတ်ယူနိုင်သလား",
+    "zh": "美国的捐款人向泰国慈善机构捐款可以抵税吗",
+    "de": "Kann ein Spender in den USA eine Spende an eine thailändische Organisation abziehen?"
+   },
+   "a": {
+    "en": "IRS Publication 526 does not allow a deduction for a gift to a foreign organisation, other than certain Canadian, Israeli and Mexican charities. A gift to a US charity for a programme run by a foreign charity is deductible when it is not earmarked for the foreign charity and the US charity approves the programme and keeps control of the funds.",
+    "th": "IRS Publication 526 ไม่ให้หักลดหย่อนเงินบริจาคให้องค์กรต่างประเทศ ยกเว้นองค์กรการกุศลบางแห่งในแคนาดา อิสราเอล และเม็กซิโก การบริจาคให้องค์กรการกุศลในสหรัฐฯ เพื่อโครงการที่องค์กรการกุศลต่างประเทศดำเนินการ หักลดหย่อนได้เมื่อไม่ได้ระบุให้ส่งต่อองค์กรต่างประเทศนั้น และองค์กรในสหรัฐฯ อนุมัติโครงการและควบคุมการใช้เงิน",
+    "my": "IRS Publication 526 အရ ကနေဒါ၊ အစ္စရေးနှင့် မက္ကဆီကိုရှိ အချို့သော ပရဟိတအဖွဲ့များမှလွဲ၍ နိုင်ငံခြားအဖွဲ့အစည်းသို့ လှူသည့်ငွေကို နုတ်ယူခွင့်မရှိပါ။ နိုင်ငံခြားပရဟိတအဖွဲ့က လုပ်ဆောင်သည့် အစီအစဉ်အတွက် အမေရိကန်ပရဟိတအဖွဲ့သို့ လှူသည့်ငွေကို နိုင်ငံခြားအဖွဲ့ထံ သီးသန့်ထားခြင်း မရှိဘဲ အမေရိကန်အဖွဲ့က အစီအစဉ်ကို အတည်ပြုပြီး ငွေကို ထိန်းချုပ်ထားလျှင် နုတ်ယူနိုင်သည်။",
+    "zh": "美国国税局第 526 号出版物不允许扣除向外国机构的捐款，加拿大、以色列和墨西哥的部分慈善机构除外。向美国慈善机构捐款、用于外国慈善机构开展的项目，在捐款没有指定转给该外国机构、且美国机构批准项目并掌控资金时，可以扣除。",
+    "de": "Nach der IRS-Publikation 526 ist eine Spende an eine ausländische Organisation nicht abziehbar, ausser an bestimmte kanadische, israelische und mexikanische Wohltätigkeitsorganisationen. Eine Spende an eine US-Organisation für ein Programm einer ausländischen Organisation ist abziehbar, wenn sie nicht für die ausländische Organisation zweckbestimmt ist und die US-Organisation das Programm genehmigt und die Mittel kontrolliert."
+   },
+   "src": "https://www.irs.gov/publications/p526"
+  },
+  {
+   "q": {
+    "en": "What does PayPal take when a charity in Thailand gets a gift?",
+    "th": "PayPal หักเท่าไหร่เมื่อองค์กรการกุศลในไทยได้รับเงินบริจาค",
+    "my": "ထိုင်းရှိ ပရဟိတအဖွဲ့ လှူဒါန်းငွေရလျှင် PayPal က မည်မျှ ယူသနည်း",
+    "zh": "泰国的慈善机构收到捐款时，PayPal 收多少",
+    "de": "Was nimmt PayPal, wenn eine Organisation in Thailand eine Spende erhält?"
+   },
+   "a": {
+    "en": "On PayPal Thailand's business fee page, a payment from a sender in Thailand costs 3.90% plus a fixed fee, and from a sender outside Thailand 4.40% plus a fixed fee. The fixed fee is ฿11 on baht, US$0.30 on dollars and £0.20 on pounds. The page lists no separate charity rate.",
+    "th": "ในหน้าค่าธรรมเนียมธุรกิจของ PayPal ไทย การรับเงินจากผู้ส่งในประเทศไทยคิด 3.90% บวกค่าธรรมเนียมคงที่ และจากผู้ส่งนอกประเทศไทยคิด 4.40% บวกค่าธรรมเนียมคงที่ ค่าธรรมเนียมคงที่คือ ฿11 สำหรับเงินบาท US$0.30 สำหรับดอลลาร์ และ £0.20 สำหรับปอนด์ หน้านี้ไม่ได้ระบุอัตราแยกสำหรับองค์กรการกุศล",
+    "my": "PayPal ထိုင်း၏ စီးပွားရေးကြေးစာမျက်နှာတွင် ထိုင်းနိုင်ငံအတွင်းမှ ပို့သူထံမှ ငွေလက်ခံလျှင် 3.90% နှင့် သတ်မှတ်ကြေး၊ ထိုင်းပြင်ပမှ ပို့သူထံမှ 4.40% နှင့် သတ်မှတ်ကြေး ကျသည်။ သတ်မှတ်ကြေးမှာ ဘတ်ငွေအတွက် ฿11၊ ဒေါ်လာအတွက် US$0.30၊ ပေါင်အတွက် £0.20 ဖြစ်သည်။ စာမျက်နှာတွင် ပရဟိတအဖွဲ့အတွက် သီးသန့်နှုန်း မဖော်ပြထားပါ။",
+    "zh": "在 PayPal 泰国的商家费用页面上，收取泰国境内汇款人的付款为 3.90% 加固定费用，境外汇款人为 4.40% 加固定费用。固定费用为：泰铢 ฿11，美元 US$0.30，英镑 £0.20。页面没有列出单独的慈善机构费率。",
+    "de": "Auf der Gebührenseite für Geschäftskunden von PayPal Thailand kostet eine Zahlung von einem Absender in Thailand 3.90% plus eine feste Gebühr, von einem Absender ausserhalb Thailands 4.40% plus eine feste Gebühr. Die feste Gebühr beträgt ฿11 bei Baht, US$0.30 bei Dollar und £0.20 bei Pfund. Einen eigenen Tarif für Wohltätigkeitsorganisationen nennt die Seite nicht."
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "q": {
+    "en": "What does a bank transfer from abroad cost the receiving charity?",
+    "th": "การรับโอนเงินจากต่างประเทศผ่านธนาคาร องค์กรผู้รับเสียค่าธรรมเนียมเท่าไหร่",
+    "my": "နိုင်ငံခြားမှ ဘဏ်လွှဲကို လက်ခံသည့် ပရဟိတအဖွဲ့ မည်မျှ ကုန်ကျသနည်း",
+    "zh": "国外银行转账汇入，接收的慈善机构要付多少费用",
+    "de": "Was kostet die empfangende Organisation eine Banküberweisung aus dem Ausland?"
+   },
+   "a": {
+    "en": "Kasikornbank's fee announcement, in force from 1 October 2026, sets 0.25% of an incoming international transfer, with a minimum of ฿200 and a maximum of ฿500. On a gift under ฿80,000 the minimum of ฿200 applies.",
+    "th": "ประกาศค่าธรรมเนียมของธนาคารกสิกรไทย มีผลตั้งแต่ 1 ตุลาคม 2569 กำหนดค่ารับโอนเงินระหว่างประเทศเข้าที่ 0.25% ของยอด ขั้นต่ำ ฿200 สูงสุด ฿500 สำหรับเงินบริจาคต่ำกว่า ฿80,000 ใช้ขั้นต่ำ ฿200",
+    "my": "Kasikornbank ၏ ကြေးကြေညာချက်သည် 2026 အောက်တိုဘာ 1 ရက်မှစ၍ အသက်ဝင်ပြီး ဝင်လာသော နိုင်ငံတကာငွေလွှဲကို ပမာဏ၏ 0.25%၊ အနည်းဆုံး ฿200၊ အများဆုံး ฿500 သတ်မှတ်သည်။ ฿80,000 အောက် လှူဒါန်းငွေတွင် အနည်းဆုံး ฿200 ကျသည်။",
+    "zh": "开泰银行自 2026 年 10 月 1 日起生效的收费公告，对汇入国际汇款收金额的 0.25%，最低 ฿200，最高 ฿500。低于 ฿80,000 的捐款按最低的 ฿200 收取。",
+    "de": "Die Gebührenmitteilung der Kasikornbank, in Kraft seit dem 1. Oktober 2026, setzt für eine eingehende internationale Überweisung 0.25% des Betrags fest, mindestens ฿200 und höchstens ฿500. Bei einer Spende unter ฿80,000 gilt das Minimum von ฿200."
+   },
+   "src": "https://www.kasikornbank.com/en/rate/fee/chargesdoc/feesforinternationaltradeproducts_en.pdf"
+  },
+  {
+   "q": {
+    "en": "What do online fundraising platforms take?",
+    "th": "แพลตฟอร์มระดมทุนออนไลน์หักค่าธรรมเนียมเท่าไหร่",
+    "my": "အွန်လိုင်း ရန်ပုံငွေကောက်ခံရေး ပလက်ဖောင်းများက မည်မျှ ယူသနည်း",
+    "zh": "网上筹款平台收多少费用",
+    "de": "Was nehmen Online-Spendenplattformen?"
+   },
+   "a": {
+    "en": "Taejai, a Thai platform, takes a 10% service fee. Its FAQ says the fee covers the website, online payment costs and the staff who screen and follow projects. Taejai adds the fee on top: a project that needs ฿10,000 shows ฿11,000.",
+    "th": "เทใจ แพลตฟอร์มของไทย คิดค่าธรรมเนียมบริการ 10% คำถามที่พบบ่อยของเทใจระบุว่าค่านี้ครอบคลุมเว็บไซต์ ค่าทำธุรกรรมออนไลน์ และเจ้าหน้าที่ที่คัดกรองและติดตามโครงการ เทใจคิดค่าธรรมเนียมเพิ่มจากยอด โครงการที่ต้องการ ฿10,000 จะแสดงยอด ฿11,000",
+    "my": "ထိုင်းပလက်ဖောင်း Taejai သည် ဝန်ဆောင်မှုကြေး 10% ယူသည်။ ၎င်း၏ မေးလေ့ရှိသောမေးခွန်းများတွင် ဤကြေးသည် ဝက်ဘ်ဆိုက်၊ အွန်လိုင်းငွေပေးချေမှုကုန်ကျစရိတ်နှင့် စီမံကိန်းများကို စိစစ်ခြေရာခံသည့် ဝန်ထမ်းများကို ကျုံးသည်ဟု ဆိုသည်။ Taejai သည် ကြေးကို ပမာဏအပေါ် ထပ်ပေါင်းသည် - ฿10,000 လိုအပ်သော စီမံကိန်းတွင် ฿11,000 ပြသည်။",
+    "zh": "泰国平台 Taejai 收取 10% 的服务费。其常见问题页写明，这笔费用用于网站、网上支付成本，以及审核和跟进项目的工作人员。Taejai 把费用加在金额之上：需要 ฿10,000 的项目显示为 ฿11,000。",
+    "de": "Taejai, eine thailändische Plattform, nimmt eine Servicegebühr von 10%. Laut ihrer FAQ deckt sie die Website, die Kosten der Online-Zahlung und die Mitarbeitenden, die Projekte prüfen und begleiten. Taejai schlägt die Gebühr obendrauf: Ein Projekt, das ฿10,000 braucht, zeigt ฿11,000."
+   },
+   "src": "https://linehoro.taejai.com/th/faq/"
+  }
+ ],
+ "related": [
+  "grants",
+  "event-kit",
+  "paybox",
+  "invoice",
+  "club-desk",
+  "findable"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Revenue Department: e-Donation questions and answers (Thai)",
+    "th": "กรมสรรพากร: คำถาม-คำตอบ ระบบบริจาคอิเล็กทรอนิกส์",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန - e-Donation မေးဆို-ဖြေဆိုချက် (ထိုင်းဘာသာ)",
+    "zh": "税务厅：e-Donation 问答（泰文）",
+    "de": "Revenue Department: Fragen und Antworten zu e-Donation (Thai)"
+   },
+   "href": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: PromptPay",
+    "th": "ธนาคารแห่งประเทศไทย: พร้อมเพย์",
+    "my": "ထိုင်းဗဟိုဘဏ် - PromptPay",
+    "zh": "泰国央行：PromptPay",
+    "de": "Bank of Thailand: PromptPay"
+   },
+   "href": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "t": {
+    "en": "PayPal Thailand: business fees",
+    "th": "PayPal ไทย: ค่าธรรมเนียมสำหรับธุรกิจ",
+    "my": "PayPal ထိုင်း - စီးပွားရေးကြေးများ",
+    "zh": "PayPal 泰国：商家费用",
+    "de": "PayPal Thailand: Gebühren für Geschäftskunden"
+   },
+   "href": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "t": {
+    "en": "IRS Publication 526: charitable contributions",
+    "th": "IRS Publication 526: เงินบริจาคเพื่อการกุศล",
+    "my": "IRS Publication 526 - ပရဟိတ လှူဒါန်းမှုများ",
+    "zh": "美国国税局第 526 号出版物：慈善捐款",
+    "de": "IRS-Publikation 526: Wohltätige Spenden"
+   },
+   "href": "https://www.irs.gov/publications/p526"
+  }
+ ],
+ "glyphs": [
+  "gift",
+  "heart",
+  "coin"
+ ]
+}

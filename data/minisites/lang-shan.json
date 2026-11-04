@@ -1,0 +1,265 @@
+{
+ "id": "lang-shan",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People put notices, forms and letters into Shan for readers who use it: an estimated 3.2 million speakers in Shan State.",
+  "th": "คนแปลประกาศ แบบฟอร์ม และจดหมายเป็นภาษาไทใหญ่ให้ผู้อ่านที่ใช้ภาษานี้ ซึ่งมีผู้พูดโดยประมาณ 3.2 ล้านคนในรัฐฉาน",
+  "my": "လူတွေက ရှမ်းဘာသာကို သုံးသူများအတွက် ကြေညာချက်၊ ပုံစံနှင့် စာများကို ရှမ်းဘာသာသို့ ပြန်ကြသည်၊ ရှမ်းပြည်နယ်တွင် ပြောသူ ခန့်မှန်းခြေ 3.2 သန်းရှိသည်။",
+  "zh": "人们把通知、表格和信件译成掸语，给使用它的读者看；掸邦估计有 320 万人说掸语。",
+  "de": "Man überträgt Aushänge, Formulare und Briefe ins Shan, für Leserinnen und Leser, die es nutzen: Im Shan-Staat sprechen es schätzungsweise 3.2 Millionen Menschen."
+ },
+ "n": {
+  "de": "Shan-Übersetzung"
+ },
+ "l": {
+  "de": "Ins Shan aus Thai, Englisch oder Burmesisch."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the text, in Thai, English or Burmese.",
+    "th": "คุณส่งข้อความ เป็นภาษาไทย อังกฤษ หรือพม่า",
+    "my": "ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် မြန်မာဘာသာဖြင့် စာသားကို ပို့သည်။",
+    "zh": "您发来文字，泰语、英语或缅甸语均可。",
+    "de": "Sie schicken den Text auf Thai, Englisch oder Burmesisch."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "We put the text into Shan.",
+    "th": "เราแปลข้อความเป็นภาษาไทใหญ่",
+    "my": "စာသားကို ရှမ်းဘာသာသို့ ပြန်ပေးသည်။",
+    "zh": "我们把文字译成掸语。",
+    "de": "Wir übertragen den Text ins Shan."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the text arrives",
+    "th": "หลังได้รับข้อความ",
+    "my": "စာသားရောက်ပြီးနောက်",
+    "zh": "收到文字后",
+    "de": "Nach Eingang des Textes"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The Shan text goes back to you.",
+    "th": "ส่งข้อความภาษาไทใหญ่กลับให้คุณ",
+    "my": "ရှမ်းစာသားကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "掸语文字回到您手中。",
+    "de": "Der Shan-Text geht an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံးအဆင့်",
+    "zh": "最后一步",
+    "de": "Am Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The BGN/PCGN romanisation paper says Shan is a Tai language spoken in Burma, with an estimated 3.2 million speakers in Shan State, and that its writing system is derived from Burmese.",
+    "th": "เอกสารการถอดอักษรโรมันของ BGN/PCGN ระบุว่าภาษาไทใหญ่เป็นภาษาตระกูลไท พูดในพม่า มีผู้พูดโดยประมาณ 3.2 ล้านคนในรัฐฉาน และระบบการเขียนพัฒนามาจากอักษรพม่า",
+    "my": "BGN/PCGN ၏ ရိုမန်အက္ခရာပြောင်းလဲမှု စာတမ်းတွင် ရှမ်းဘာသာသည် မြန်မာနိုင်ငံတွင် ပြောသော Tai ဘာသာစကားတစ်ခုဖြစ်ပြီး ရှမ်းပြည်နယ်တွင် ပြောသူ ခန့်မှန်းခြေ 3.2 သန်းရှိကာ ရေးထုံးသည် မြန်မာစာမှ ဆင်းသက်လာသည်ဟု ဆိုသည်။",
+    "zh": "BGN/PCGN 的罗马化文件写道，掸语是缅甸境内使用的一种 Tai（傣泰语支）语言，掸邦估计有 320 万人说，文字源自缅文。",
+    "de": "Das Romanisierungsdokument von BGN/PCGN schreibt, Shan sei eine in Burma gesprochene Tai-Sprache mit geschätzt 3.2 Millionen Sprecherinnen und Sprechern im Shan-Staat; ihr Schriftsystem leite sich vom Burmesischen ab."
+   },
+   "src": "https://assets.publishing.service.gov.uk/media/5ab4e5d6ed915d78bc234533/ROMANIZATION_OF_SHAN.pdf"
+  },
+  {
+   "t": {
+    "en": "Its table of modern Shan lists 20 consonant characters, and the paper notes 5 tones that the romanisation does not capture.",
+    "th": "ตารางอักษรไทใหญ่สมัยใหม่ในเอกสารนี้มีพยัญชนะ 20 ตัว และเอกสารระบุว่ามี 5 วรรณยุกต์ซึ่งการถอดอักษรโรมันไม่ได้แสดง",
+    "my": "စာတမ်းထဲက ခေတ်သစ်ရှမ်း ဇယားတွင် ဗျည်းအက္ခရာ 20 လုံးရှိပြီး ရိုမန်အက္ခရာပြောင်းလဲမှုက မဖော်ပြနိုင်သော အသံ 5 မျိုး ရှိသည်ဟု ဆိုသည်။",
+    "zh": "文件中的现代掸文表列出 20 个辅音字符，并指出有 5 个声调，罗马化未予体现。",
+    "de": "Die Tabelle zum modernen Shan listet 20 Konsonantenzeichen; das Dokument nennt 5 Töne, die die Romanisierung nicht abbildet."
+   },
+   "src": "https://assets.publishing.service.gov.uk/media/5ab4e5d6ed915d78bc234533/ROMANIZATION_OF_SHAN.pdf"
+  },
+  {
+   "t": {
+    "en": "Unicode puts the Shan letters, vowel signs and tone marks in its Myanmar block (U+1000–109F), beside Burmese, Mon and Karen letters.",
+    "th": "ยูนิโคดจัดอักษร สระ และเครื่องหมายวรรณยุกต์ของภาษาไทใหญ่ไว้ในบล็อก Myanmar (U+1000–109F) ร่วมกับอักษรพม่า มอญ และกะเหรี่ยง",
+    "my": "Unicode သည် ရှမ်းအက္ခရာ၊ သရနှင့် အသံမှတ်များကို မြန်မာ၊ မွန်နှင့် ကရင်အက္ခရာများနှင့်အတူ Myanmar block (U+1000–109F) ထဲ ထည့်ထားသည်။",
+    "zh": "Unicode 把掸文字母、元音符号和声调符号与缅文、孟文、克伦文字母一起放在缅甸文区块（U+1000–109F）。",
+    "de": "Unicode legt die Shan-Buchstaben, Vokalzeichen und Tonzeichen in den Block Myanmar (U+1000–109F), neben burmesische, Mon- und Karen-Buchstaben."
+   },
+   "src": "https://www.unicode.org/charts/PDF/U1000.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai–Shan and Burmese–Thai, a Fastwork seller",
+    "th": "แปลไทย–ไทใหญ่ และพม่า–ไทย ผู้ขายบน Fastwork",
+    "my": "ထိုင်း–ရှမ်းနှင့် မြန်မာ–ထိုင်း ဘာသာပြန်၊ Fastwork ရောင်းသူတစ်ဦး",
+    "zh": "泰语–掸语和缅甸语–泰语互译，Fastwork 卖家",
+    "de": "Thai–Shan und Burmesisch–Thai, ein Anbieter auf Fastwork"
+   },
+   "p": {
+    "en": "฿250–300 a page; English–Thai ฿200–250",
+    "th": "หน้าละ ฿250–300 อังกฤษ–ไทย หน้าละ ฿200–250",
+    "my": "တစ်မျက်နှာ ฿250–300၊ အင်္ဂလိပ်–ထိုင်း ฿200–250",
+    "zh": "每页 ฿250–300；英泰互译 ฿200–250",
+    "de": "฿250–300 pro Seite; Englisch–Thai ฿200–250"
+   },
+   "src": "https://fastwork.co/user/samzaa007/translation-94594682"
+  },
+  {
+   "t": {
+    "en": "Same listing, specialist documents (package)",
+    "th": "รายการเดียวกัน เอกสารเฉพาะทาง (แพ็กเกจ)",
+    "my": "တူညီသော စာရင်း၊ အထူးပြုစာရွက်စာတမ်းများ (ပက်ကေ့ဂျ်)",
+    "zh": "同一商品页，专业文件（套餐）",
+    "de": "Dieselbe Anzeige, Fachdokumente (Paket)"
+   },
+   "p": {
+    "en": "฿350, 2 days; general papers ฿250–300, 1 day",
+    "th": "฿350 ใช้เวลา 2 วัน เอกสารทั่วไป ฿250–300 ใช้เวลา 1 วัน",
+    "my": "฿350၊ 2 ရက်၊ ယေဘုယျစာရွက်များ ฿250–300၊ 1 ရက်",
+    "zh": "฿350，2 天；一般文件 ฿250–300，1 天",
+    "de": "฿350, 2 Tage; allgemeine Papiere ฿250–300, 1 Tag"
+   },
+   "src": "https://fastwork.co/user/samzaa007/translation-94594682"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What language family is Shan?",
+    "th": "ภาษาไทใหญ่อยู่ในตระกูลภาษาอะไร",
+    "my": "ရှမ်းဘာသာသည် ဘာသာစကားမိသားစုမည်သည့်အုပ်စုတွင် ပါသနည်း။",
+    "zh": "掸语属于哪个语系？",
+    "de": "Zu welcher Sprachfamilie gehört Shan?"
+   },
+   "a": {
+    "en": "The BGN/PCGN paper calls it a Tai language spoken in Burma. It says the writing system is derived from Burmese.",
+    "th": "เอกสาร BGN/PCGN ระบุว่าเป็นภาษาตระกูลไทที่พูดในพม่า และระบุว่าระบบการเขียนพัฒนามาจากอักษรพม่า",
+    "my": "BGN/PCGN စာတမ်းက ၎င်းကို မြန်မာနိုင်ငံတွင် ပြောသော Tai ဘာသာစကားဟု ခေါ်ပြီး ရေးထုံးသည် မြန်မာစာမှ ဆင်းသက်လာသည်ဟု ဆိုသည်။",
+    "zh": "BGN/PCGN 文件称它是缅甸境内使用的一种 Tai（傣泰语支）语言，文字源自缅文。",
+    "de": "Das BGN/PCGN-Dokument nennt es eine in Burma gesprochene Tai-Sprache. Das Schriftsystem leite sich vom Burmesischen ab."
+   },
+   "src": "https://assets.publishing.service.gov.uk/media/5ab4e5d6ed915d78bc234533/ROMANIZATION_OF_SHAN.pdf"
+  },
+  {
+   "q": {
+    "en": "How many people speak Shan?",
+    "th": "มีคนพูดภาษาไทใหญ่กี่คน",
+    "my": "ရှမ်းဘာသာကို လူဘယ်လောက် ပြောကြသလဲ။",
+    "zh": "有多少人说掸语？",
+    "de": "Wie viele Menschen sprechen Shan?"
+   },
+   "a": {
+    "en": "The BGN/PCGN paper gives an estimated 3.2 million speakers in Shan State. It takes the figure from the 16th edition of Ethnologue (2009).",
+    "th": "เอกสาร BGN/PCGN ให้ตัวเลขผู้พูดโดยประมาณ 3.2 ล้านคนในรัฐฉาน โดยอ้างจาก Ethnologue ฉบับที่ 16 (2009)",
+    "my": "BGN/PCGN စာတမ်းတွင် ရှမ်းပြည်နယ်၌ ပြောသူ ခန့်မှန်းခြေ 3.2 သန်း ဖော်ပြထားပြီး ထိုကိန်းဂဏန်းကို Ethnologue ဆယ့်ခြောက်ကြိမ်မြောက်ထုတ်ဝေမှု (2009) မှ ယူထားသည်။",
+    "zh": "BGN/PCGN 文件给出掸邦估计有 320 万人说掸语，数字取自《民族语》（Ethnologue）第 16 版（2009）。",
+    "de": "Das BGN/PCGN-Dokument nennt geschätzt 3.2 Millionen Sprecherinnen und Sprecher im Shan-Staat. Die Zahl stammt aus der 16. Ausgabe des Ethnologue (2009)."
+   },
+   "src": "https://assets.publishing.service.gov.uk/media/5ab4e5d6ed915d78bc234533/ROMANIZATION_OF_SHAN.pdf"
+  },
+  {
+   "q": {
+    "en": "Can Shan be typed on a computer?",
+    "th": "พิมพ์ภาษาไทใหญ่บนคอมพิวเตอร์ได้ไหม",
+    "my": "ရှမ်းဘာသာကို ကွန်ပျူတာပေါ်တွင် ရိုက်နိုင်ပါသလား။",
+    "zh": "掸语可以在电脑上输入吗？",
+    "de": "Kann man Shan am Computer schreiben?"
+   },
+   "a": {
+    "en": "Yes, in Unicode. Its Myanmar block (U+1000–109F) holds Shan letters, vowel signs and tone marks, beside Burmese, Mon and Karen letters.",
+    "th": "ได้ ใน Unicode บล็อก Myanmar (U+1000–109F) มีอักษร สระ และเครื่องหมายวรรณยุกต์ของภาษาไทใหญ่ ร่วมกับอักษรพม่า มอญ และกะเหรี่ยง",
+    "my": "ရနိုင်သည်၊ Unicode တွင်ဖြစ်သည်။ ၎င်း၏ Myanmar block (U+1000–109F) တွင် ရှမ်းအက္ခရာ၊ သရနှင့် အသံမှတ်များ ပါဝင်ပြီး မြန်မာ၊ မွန်နှင့် ကရင်အက္ခရာများလည်း ရှိသည်။",
+    "zh": "可以，用 Unicode。其缅甸文区块（U+1000–109F）收有掸文字母、元音符号和声调符号，以及缅文、孟文、克伦文字母。",
+    "de": "Ja, in Unicode. Der Block Myanmar (U+1000–109F) enthält Shan-Buchstaben, Vokalzeichen und Tonzeichen, daneben burmesische, Mon- und Karen-Buchstaben."
+   },
+   "src": "https://www.unicode.org/charts/PDF/U1000.pdf"
+  },
+  {
+   "q": {
+    "en": "How much does Shan translation cost?",
+    "th": "แปลภาษาไทใหญ่ราคาเท่าไร",
+    "my": "ရှမ်းဘာသာပြန်ခ ဘယ်လောက်လဲ။",
+    "zh": "掸语翻译要多少钱？",
+    "de": "Was kostet eine Übersetzung ins Shan?"
+   },
+   "a": {
+    "en": "A Fastwork seller lists Thai–Shan and Burmese–Thai at ฿250–300 a page and English–Thai at ฿200–250. Packages run ฿250 to ฿350, with 1 to 2 days and 2 revisions.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งตั้งราคาไทย–ไทใหญ่ และพม่า–ไทย หน้าละ ฿250–300 และอังกฤษ–ไทย หน้าละ ฿200–250 แพ็กเกจ ฿250 ถึง ฿350 ใช้เวลา 1 ถึง 2 วัน แก้ไขได้ 2 ครั้ง",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက ထိုင်း–ရှမ်းနှင့် မြန်မာ–ထိုင်းကို တစ်မျက်နှာ ฿250–300၊ အင်္ဂလိပ်–ထိုင်းကို ฿200–250 ဟု သတ်မှတ်သည်။ ပက်ကေ့ဂျ်များမှာ ฿250 မှ ฿350 အထိဖြစ်ပြီး 1 မှ 2 ရက်ကြာကာ ပြင်ဆင်မှု 2 ကြိမ် ပါသည်။",
+    "zh": "Fastwork 上一位卖家的泰语–掸语和缅甸语–泰语标价为每页 ฿250–300，英泰互译 ฿200–250；套餐 ฿250 至 ฿350，用时 1 至 2 天，含 2 次修改。",
+    "de": "Ein Anbieter auf Fastwork verlangt für Thai–Shan und Burmesisch–Thai ฿250–300 pro Seite und für Englisch–Thai ฿200–250. Die Pakete kosten ฿250 bis ฿350, dauern 1 bis 2 Tage und enthalten 2 Korrekturrunden."
+   },
+   "src": "https://fastwork.co/user/samzaa007/translation-94594682"
+  }
+ ],
+ "related": [
+  "translate",
+  "lang-pages",
+  "interp",
+  "lang-leaves",
+  "signs",
+  "subtitles"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "BGN/PCGN: romanisation of Shan (2011 system)",
+    "th": "BGN/PCGN: การถอดอักษรโรมันภาษาไทใหญ่ (ระบบ ค.ศ. 2011)",
+    "my": "BGN/PCGN: ရှမ်းဘာသာ ရိုမန်အက္ခရာပြောင်းလဲမှု (2011 စနစ်)",
+    "zh": "BGN/PCGN：掸语罗马化（2011 年方案）",
+    "de": "BGN/PCGN: Romanisierung des Shan (System 2011)"
+   },
+   "href": "https://assets.publishing.service.gov.uk/media/5ab4e5d6ed915d78bc234533/ROMANIZATION_OF_SHAN.pdf"
+  },
+  {
+   "t": {
+    "en": "Unicode chart: Myanmar block",
+    "th": "แผนภูมิ Unicode: บล็อก Myanmar",
+    "my": "Unicode ဇယား: Myanmar block",
+    "zh": "Unicode 字符表：缅甸文区块",
+    "de": "Unicode-Tabelle: Block Myanmar"
+   },
+   "href": "https://www.unicode.org/charts/PDF/U1000.pdf"
+  }
+ ],
+ "glyphs": [
+  "translate",
+  "nib",
+  "earth"
+ ]
+}

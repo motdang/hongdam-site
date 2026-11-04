@@ -1,0 +1,309 @@
+{
+ "id": "voice",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People need Thai lines spoken for an app, a video or a phone message. Sellers price them by the second, the minute or the word.",
+  "th": "คนต้องการเสียงพูดภาษาไทยสำหรับแอป วิดีโอ หรือข้อความโทรศัพท์ ผู้ขายคิดราคาตามวินาที นาที หรือจำนวนคำ",
+  "my": "လူတွေက အက်ပ်၊ ဗီဒီယို သို့မဟုတ် ဖုန်းမက်ဆေ့ချ်အတွက် ထိုင်းစကားကို အသံထွက်ဖတ်ပေးစေလိုကြသည်။ ရောင်းချသူတွေက စက္ကန့်၊ မိနစ် သို့မဟုတ် စကားလုံးအရေအတွက်အလိုက် ဈေးသတ်မှတ်ကြသည်။",
+  "zh": "有人需要用泰语为应用、视频或电话留言配音。卖家按秒、按分钟或按字数计价。",
+  "de": "Man braucht gesprochene thailändische Texte für eine App, ein Video oder eine Telefonansage. Anbieter rechnen nach Sekunden, Minuten oder Wörtern ab."
+ },
+ "n": {
+  "de": "Thailändische Sprachaufnahme"
+ },
+ "l": {
+  "de": "Thailändische Texte gelesen und aufgenommen, berechnet nach fertiger Minute."
+ },
+ "glyphs": [
+  "mic",
+  "sound",
+  "play"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the lines for your app or video.",
+    "th": "คุณส่งบทที่ต้องใช้กับแอปหรือวิดีโอ",
+    "my": "သင့်အက်ပ် သို့မဟုတ် ဗီဒီယိုအတွက် စာသားများကို သင်ပို့သည်။",
+    "zh": "您把用于应用或视频的台词发过来。",
+    "de": "Sie senden die Texte für Ihre App oder Ihr Video."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "mic",
+   "t": {
+    "en": "We read the Thai lines and record them.",
+    "th": "อ่านบทภาษาไทยและบันทึกเสียง",
+    "my": "ထိုင်းစာသားများကို ဖတ်ပြီး အသံသွင်းပေးသည်။",
+    "zh": "用泰语读出台词并录音。",
+    "de": "Wir lesen die thailändischen Texte und nehmen sie auf."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "While recording",
+    "th": "ระหว่างบันทึกเสียง",
+    "my": "အသံသွင်းနေစဉ်",
+    "zh": "录音时",
+    "de": "Bei der Aufnahme"
+   }
+  },
+  {
+   "db": "sound",
+   "t": {
+    "en": "You get the recording. It is priced by the finished minute.",
+    "th": "คุณได้รับไฟล์เสียง คิดราคาตามนาทีที่เสร็จ",
+    "my": "သင် အသံဖိုင်ကို ရရှိသည်။ ပြီးစီးသော မိနစ်အလိုက် ဈေးတွက်သည်။",
+    "zh": "您收到录音，按成品分钟计价。",
+    "de": "Sie erhalten die Aufnahme. Der Preis richtet sich nach der fertigen Minute."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per finished minute",
+    "th": "ต่อนาทีที่เสร็จ",
+    "my": "ပြီးစီးသော မိနစ်တစ်ခုလျှင်",
+    "zh": "每成品分钟",
+    "de": "Pro fertige Minute"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thai copyright law names a person who speaks or narrates a script as a performer (Section 4). A performer has exclusive rights to record a performance that is not yet recorded, and to copy a recording made without the performer's consent, or made with consent for a different purpose (Section 44).",
+    "th": "กฎหมายลิขสิทธิ์ไทยถือว่าผู้ที่พูดหรือบรรยายตามบทเป็นนักแสดง (มาตรา 4) นักแสดงมีสิทธิแต่ผู้เดียวในการบันทึกการแสดงที่ยังไม่ได้บันทึก และในการทำซ้ำสื่อบันทึกที่ทำขึ้นโดยไม่ได้รับความยินยอม หรือทำขึ้นโดยได้รับความยินยอมแต่เพื่อวัตถุประสงค์อื่น (มาตรา 44)",
+    "my": "ထိုင်းမူပိုင်ခွင့်ဥပဒေက စာသားအတိုင်း ပြောသူ သို့မဟုတ် ဖတ်ကြားသူကို ဖျော်ဖြေသူဟု သတ်မှတ်သည် (ပုဒ်မ 4)။ ဖျော်ဖြေသူသည် မသွင်းရသေးသော ဖျော်ဖြေမှုကို အသံသွင်းခြင်းအတွက်လည်းကောင်း၊ ခွင့်ပြုချက်မပါဘဲ ပြုလုပ်ထားသော အသံဖိုင်ကို သို့မဟုတ် ခွင့်ပြုချက်ဖြင့် ပြုလုပ်ထားသော်လည်း အခြားရည်ရွယ်ချက်အတွက် ပြုလုပ်ထားသော အသံဖိုင်ကို ကူးယူခြင်းအတွက်လည်းကောင်း သီးသန့်အခွင့်အရေး ရှိသည် (ပုဒ်မ 44)။",
+    "zh": "泰国著作权法把照稿说话或朗读的人称为表演者（第 4 条）。表演者对尚未录制的表演享有专有的录制权；对未经其同意制作的录制品，或经同意但用于其他目的的录制品，享有专有的复制权（第 44 条）。",
+    "de": "Das thailändische Urheberrecht nennt eine Person, die einen Text spricht oder vorträgt, einen ausübenden Künstler (Section 4). Ein ausübender Künstler hat das ausschliessliche Recht, eine noch nicht aufgezeichnete Darbietung aufzunehmen und eine Aufnahme zu vervielfältigen, die ohne seine Einwilligung oder mit Einwilligung für einen anderen Zweck entstanden ist (Section 44)."
+   },
+   "src": "https://ipthailand.go.th/images/26669/2566/laws/COPYRIGHT%20ACT%20B.E.%202537%20(1994).pdf"
+  },
+  {
+   "t": {
+    "en": "One Fastwork voice-over seller delivers WAV files at 48 kHz and 24 bit, or MP3, as agreed with the client.",
+    "th": "ผู้ขายบริการพากย์เสียงรายหนึ่งบน Fastwork ส่งงานเป็นไฟล์ WAV 48 kHz 24 bit หรือ MP3 ตามที่ตกลงกับลูกค้า",
+    "my": "Fastwork ရှိ အသံသွင်းရောင်းချသူတစ်ဦးက ဖောက်သည်နှင့် သဘောတူသည့်အတိုင်း WAV 48 kHz 24 bit သို့မဟုတ် MP3 ဖိုင်ဖြင့် ပို့ပေးသည်။",
+    "zh": "Fastwork 上有一位配音卖家，按与客户商定的方式交付 48 kHz、24 位的 WAV 文件或 MP3。",
+    "de": "Ein Sprecher-Anbieter auf Fastwork liefert WAV-Dateien mit 48 kHz und 24 Bit oder MP3, wie mit dem Kunden vereinbart."
+   },
+   "src": "https://fastwork.co/user/pamuvoice/voice-over-27038459"
+  },
+  {
+   "t": {
+    "en": "One Fastwork seller reads Thai scripts for ad spots, presentations, short audiobooks, announcements and phone systems (IVR). Editing of background music costs extra, from ฿1,500.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork รับอ่านบทภาษาไทยสำหรับสปอตโฆษณา งานนำเสนอ หนังสือเสียงสั้น ประกาศ และระบบตอบรับอัตโนมัติ (IVR) การตัดต่อเพลงประกอบคิดเพิ่ม เริ่มที่ ฿1,500",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက ကြော်ငြာ၊ တင်ပြချက်၊ အသံစာအုပ်တိုများ၊ ကြေညာချက်များနှင့် ဖုန်းအလိုအလျောက်ဖြေစနစ် (IVR) အတွက် ထိုင်းစာသားများကို ဖတ်ပေးသည်။ နောက်ခံတေးဂီတ တည်းဖြတ်ခြင်းကို ထပ်ဆောင်းကောက်ခံပြီး ฿1,500 မှ စသည်။",
+    "zh": "Fastwork 上有一位卖家为广告、演示文稿、短有声书、通知和电话语音系统（IVR）朗读泰语稿件。处理背景音乐的剪辑另收费，起价 ฿1,500。",
+    "de": "Ein Anbieter auf Fastwork liest thailändische Texte für Werbespots, Präsentationen, kurze Hörbücher, Durchsagen und Telefonsysteme (IVR). Das Schneiden von Hintergrundmusik kostet extra, ab ฿1,500."
+   },
+   "src": "https://fastwork.co/user/thanawuts/voice-over-73086100"
+  },
+  {
+   "t": {
+    "en": "One Fastwork seller sets three prices by use: a short Thai line up to 30 seconds, narration by the minute, and a 30-second advert. Edits are made on the same script after the buyer hears the first file.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคาสามแบบตามการใช้งาน คือประโยคสั้นไม่เกิน 30 วินาที งานบรรยายคิดเป็นนาที และสปอตโฆษณา 30 วินาที การแก้ไขทำภายใต้บทเดิมหลังผู้ว่าจ้างฟังไฟล์แรก",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက အသုံးပြုပုံအလိုက် ဈေးသုံးမျိုး သတ်မှတ်သည် - စက္ကန့် 30 အထိ ထိုင်းစာကြောင်းတို၊ မိနစ်အလိုက် ဖတ်ကြားချက်နှင့် စက္ကန့် 30 ကြော်ငြာ။ ဝယ်သူက ပထမဖိုင်ကို နားထောင်ပြီးနောက် မူလစာသားအတွင်း ပြင်ပေးသည်။",
+    "zh": "Fastwork 上有一位卖家按用途定了三种价格：30 秒内的泰语短句、按分钟计的旁白，以及 30 秒广告。买家听完第一个文件后，可在原稿范围内修改。",
+    "de": "Ein Anbieter auf Fastwork hat drei Preise je nach Verwendung: eine kurze thailändische Zeile bis 30 Sekunden, Sprechertext pro Minute und ein Werbespot von 30 Sekunden. Änderungen erfolgen am selben Text, nachdem der Kunde die erste Datei gehört hat."
+   },
+   "src": "https://fastwork.co/user/oou368/voice-over-46414899"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: a Thai line up to 30 seconds (characters, jingles, announcements, short videos)",
+    "th": "ผู้ขายบน Fastwork: ประโยคภาษาไทยไม่เกิน 30 วินาที (ตัวละคร จิงเกิล ประกาศ วิดีโอสั้น)",
+    "my": "Fastwork ရောင်းချသူ - စက္ကန့် 30 အထိ ထိုင်းစာကြောင်းတို (ဇာတ်ကောင်၊ ဂျင်းဂယ်၊ ကြေညာချက်၊ ဗီဒီယိုတို)",
+    "zh": "Fastwork 卖家：30 秒内的泰语短句（角色、广告歌、通知、短视频）",
+    "de": "Anbieter auf Fastwork: eine thailändische Zeile bis 30 Sekunden (Figuren, Jingles, Durchsagen, Kurzvideos)"
+   },
+   "p": {
+    "en": "from ฿600",
+    "th": "เริ่มที่ ฿600",
+    "my": "฿600 မှ စသည်",
+    "zh": "起价 ฿600",
+    "de": "ab ฿600"
+   },
+   "src": "https://fastwork.co/user/oou368/voice-over-46414899"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: narration for a presentation, documentary, e-book or company video",
+    "th": "ผู้ขายบน Fastwork: งานบรรยายสำหรับงานนำเสนอ สารคดี อีบุ๊ก หรือวิดีโอบริษัท",
+    "my": "Fastwork ရောင်းချသူ - တင်ပြချက်၊ မှတ်တမ်းရုပ်ရှင်၊ အီးဘွတ် သို့မဟုတ် ကုမ္ပဏီဗီဒီယိုအတွက် ဖတ်ကြားချက်",
+    "zh": "Fastwork 卖家：演示文稿、纪录片、电子书或公司视频的旁白",
+    "de": "Anbieter auf Fastwork: Sprechertext für Präsentation, Dokumentation, E-Book oder Firmenvideo"
+   },
+   "p": {
+    "en": "from ฿1,000 a minute",
+    "th": "เริ่มที่ ฿1,000 ต่อนาที",
+    "my": "မိနစ်တစ်ခုလျှင် ฿1,000 မှ စသည်",
+    "zh": "起价 ฿1,000 每分钟",
+    "de": "ab ฿1,000 pro Minute"
+   },
+   "src": "https://fastwork.co/user/oou368/voice-over-46414899"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: a 30-second advert spot",
+    "th": "ผู้ขายบน Fastwork: สปอตโฆษณา 30 วินาที",
+    "my": "Fastwork ရောင်းချသူ - စက္ကန့် 30 ကြော်ငြာ",
+    "zh": "Fastwork 卖家：30 秒广告",
+    "de": "Anbieter auf Fastwork: ein Werbespot von 30 Sekunden"
+   },
+   "p": {
+    "en": "from ฿2,500",
+    "th": "เริ่มที่ ฿2,500",
+    "my": "฿2,500 မှ စသည်",
+    "zh": "起价 ฿2,500",
+    "de": "ab ฿2,500"
+   },
+   "src": "https://fastwork.co/user/oou368/voice-over-46414899"
+  },
+  {
+   "t": {
+    "en": "Another Fastwork seller: a Thai script priced by the word",
+    "th": "ผู้ขายอีกรายบน Fastwork: บทภาษาไทยคิดตามจำนวนคำ",
+    "my": "အခြား Fastwork ရောင်းချသူ - ထိုင်းစာသားကို စကားလုံးအရေအတွက်အလိုက် ဈေးတွက်သည်",
+    "zh": "另一位 Fastwork 卖家：泰语稿件按字数计价",
+    "de": "Ein anderer Anbieter auf Fastwork: thailändischer Text nach Wörtern"
+   },
+   "p": {
+    "en": "฿699 for the first 300 words, then ฿1 a word",
+    "th": "300 คำแรก ฿699 จากนั้นคำละ ฿1",
+    "my": "ပထမစကားလုံး 300 အတွက် ฿699၊ ထို့နောက် တစ်လုံးလျှင် ฿1",
+    "zh": "前 300 字 ฿699，之后每字 ฿1",
+    "de": "฿699 für die ersten 300 Wörter, danach ฿1 pro Wort"
+   },
+   "src": "https://fastwork.co/user/thanawuts/voice-over-73086100"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a Thai voice-over cost?",
+    "th": "พากย์เสียงภาษาไทยราคาเท่าไร",
+    "my": "ထိုင်းအသံသွင်းခြင်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "泰语配音多少钱？",
+    "de": "Was kostet eine thailändische Sprachaufnahme?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists a Thai line up to 30 seconds from ฿600. The same seller prices narration from ฿1,000 a minute and a 30-second advert from ฿2,500.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคาประโยคภาษาไทยไม่เกิน 30 วินาทีเริ่มที่ ฿600 ผู้ขายรายเดียวกันคิดงานบรรยายเริ่มที่ ฿1,000 ต่อนาที และสปอตโฆษณา 30 วินาทีเริ่มที่ ฿2,500",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက စက္ကန့် 30 အထိ ထိုင်းစာကြောင်းတိုကို ฿600 မှ စတင်ဈေးသတ်မှတ်သည်။ ထိုရောင်းချသူက ဖတ်ကြားချက်ကို မိနစ်တစ်ခုလျှင် ฿1,000 မှလည်းကောင်း၊ စက္ကန့် 30 ကြော်ငြာကို ฿2,500 မှလည်းကောင်း ဈေးသတ်မှတ်သည်။",
+    "zh": "Fastwork 上一位卖家把 30 秒内的泰语短句标价 ฿600 起。同一位卖家的旁白每分钟 ฿1,000 起，30 秒广告 ฿2,500 起。",
+    "de": "Ein Anbieter auf Fastwork nennt für eine thailändische Zeile bis 30 Sekunden ab ฿600. Derselbe Anbieter verlangt für Sprechertext ab ฿1,000 pro Minute und für einen Werbespot von 30 Sekunden ab ฿2,500."
+   },
+   "src": "https://fastwork.co/user/oou368/voice-over-46414899"
+  },
+  {
+   "q": {
+    "en": "Is a voice-over priced by the word?",
+    "th": "พากย์เสียงคิดราคาตามจำนวนคำหรือไม่",
+    "my": "အသံသွင်းခြင်းကို စကားလုံးအရေအတွက်အလိုက် ဈေးတွက်သလား။",
+    "zh": "配音是按字数计价吗？",
+    "de": "Wird eine Sprachaufnahme nach Wörtern berechnet?"
+   },
+   "a": {
+    "en": "On one Fastwork listing, yes. A Thai script costs ฿699 for the first 300 words, then ฿1 a word. The seller lists 3 days for delivery.",
+    "th": "บนรายการหนึ่งของ Fastwork คิดตามคำ บทภาษาไทย 300 คำแรก ฿699 จากนั้นคำละ ฿1 ผู้ขายระบุเวลาส่งงาน 3 วัน",
+    "my": "Fastwork စာရင်းတစ်ခုတွင် ဟုတ်သည်။ ထိုင်းစာသား ပထမစကားလုံး 300 အတွက် ฿699 ဖြစ်ပြီး ထို့နောက် တစ်လုံးလျှင် ฿1 ဖြစ်သည်။ ရောင်းချသူက ပို့ဆောင်ချိန် 3 ရက်ဟု ဖော်ပြထားသည်။",
+    "zh": "在 Fastwork 的一条商品里是这样。泰语稿件前 300 字 ฿699，之后每字 ฿1。卖家标明交付时间为 3 天。",
+    "de": "Bei einem Angebot auf Fastwork ja. Ein thailändischer Text kostet ฿699 für die ersten 300 Wörter, danach ฿1 pro Wort. Der Anbieter nennt 3 Tage Lieferzeit."
+   },
+   "src": "https://fastwork.co/user/thanawuts/voice-over-73086100"
+  },
+  {
+   "q": {
+    "en": "How long does a Thai voice-over take, and how many edits come with it?",
+    "th": "พากย์เสียงภาษาไทยใช้เวลานานแค่ไหน และแก้ได้กี่ครั้ง",
+    "my": "ထိုင်းအသံသွင်းခြင်း ကြာချိန်ဘယ်လောက်ရှိပြီး ပြင်ခွင့် ဘယ်နှစ်ကြိမ်ရသလဲ။",
+    "zh": "泰语配音要多久，可以改几次？",
+    "de": "Wie lange dauert eine thailändische Sprachaufnahme, und wie viele Änderungen sind dabei?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists 1 day of work and 2 edits for its packages. Its work steps say 1 to 2 days after the price is agreed.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ระบุเวลาทำงาน 1 วันและแก้ไขได้ 2 ครั้งในแพ็กเกจของตน ขั้นตอนการทำงานระบุว่า 1 ถึง 2 วันหลังตกลงราคา",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက ၎င်း၏ပက်ကေ့ချ်များတွင် အလုပ်ချိန် 1 ရက်နှင့် ပြင်ခွင့် 2 ကြိမ် ဖော်ပြထားသည်။ အလုပ်လုပ်ငန်းအဆင့်များတွင် ဈေးနှုန်းသဘောတူပြီးနောက် 1 ရက်မှ 2 ရက်ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位卖家在其套餐中标明工作时间 1 天、可修改 2 次。其工作流程写明，谈妥价格后需要 1 到 2 天。",
+    "de": "Ein Anbieter auf Fastwork nennt für seine Pakete 1 Tag Arbeitszeit und 2 Änderungen. In seinen Arbeitsschritten stehen 1 bis 2 Tage nach der Preisabsprache."
+   },
+   "src": "https://fastwork.co/user/pamuvoice/voice-over-27038459"
+  },
+  {
+   "q": {
+    "en": "Does the speaker have rights in the recording?",
+    "th": "ผู้พากย์มีสิทธิในไฟล์เสียงหรือไม่",
+    "my": "အသံထွက်ဖတ်သူမှာ အသံသွင်းထားသောဖိုင်အပေါ် အခွင့်အရေး ရှိသလား။",
+    "zh": "配音者对录音有权利吗？",
+    "de": "Hat die sprechende Person Rechte an der Aufnahme?"
+   },
+   "a": {
+    "en": "The Thai Copyright Act gives a performer, including a person who narrates a script, exclusive rights to record the performance. It also covers copying a recording made without the performer's consent (Section 44).",
+    "th": "พ.ร.บ.ลิขสิทธิ์ของไทยให้นักแสดง รวมถึงผู้บรรยายตามบท มีสิทธิแต่ผู้เดียวในการบันทึกการแสดง และครอบคลุมการทำซ้ำสื่อบันทึกที่ทำขึ้นโดยไม่ได้รับความยินยอมของนักแสดงด้วย (มาตรา 44)",
+    "my": "ထိုင်းမူပိုင်ခွင့်ဥပဒေက စာသားအတိုင်း ဖတ်ကြားသူအပါအဝင် ဖျော်ဖြေသူကို ဖျော်ဖြေမှုကို အသံသွင်းရန် သီးသန့်အခွင့်အရေး ပေးထားသည်။ ဖျော်ဖြေသူ၏ ခွင့်ပြုချက်မပါဘဲ ပြုလုပ်ထားသော အသံဖိုင်ကို ကူးယူခြင်းကိုလည်း ပါဝင်သည် (ပုဒ်မ 44)။",
+    "zh": "泰国著作权法赋予表演者（包括照稿朗读的人）对表演进行录制的专有权利，也涵盖复制未经表演者同意而制作的录制品（第 44 条）。",
+    "de": "Das thailändische Urheberrecht gibt einem ausübenden Künstler, auch einer Person, die einen Text vorträgt, das ausschliessliche Recht, die Darbietung aufzunehmen. Es erfasst auch das Vervielfältigen einer Aufnahme, die ohne Einwilligung des Künstlers entstanden ist (Section 44)."
+   },
+   "src": "https://ipthailand.go.th/images/26669/2566/laws/COPYRIGHT%20ACT%20B.E.%202537%20(1994).pdf"
+  }
+ ],
+ "related": [
+  "subtitles",
+  "translate",
+  "lang-pages",
+  "calls-out",
+  "cs-desk",
+  "app-test"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Intellectual Property: Copyright Act, English text",
+    "th": "กรมทรัพย์สินทางปัญญา: พ.ร.บ.ลิขสิทธิ์ ฉบับภาษาอังกฤษ",
+    "my": "ဉာဏ်ပစ္စည်းဦးစီးဌာန - မူပိုင်ခွင့်ဥပဒေ အင်္ဂလိပ်စာ",
+    "zh": "知识产权厅：《著作权法》英文本",
+    "de": "Amt für geistiges Eigentum: Urheberrechtsgesetz, englischer Text"
+   },
+   "href": "https://ipthailand.go.th/images/26669/2566/laws/COPYRIGHT%20ACT%20B.E.%202537%20(1994).pdf"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a voice-over seller's prices by use",
+    "th": "Fastwork: ราคาพากย์เสียงของผู้ขายรายหนึ่งตามการใช้งาน",
+    "my": "Fastwork - ရောင်းချသူတစ်ဦး၏ အသုံးပြုပုံအလိုက် အသံသွင်းဈေးနှုန်းများ",
+    "zh": "Fastwork：一位配音卖家按用途列出的价格",
+    "de": "Fastwork: die Preise eines Sprecher-Anbieters nach Verwendung"
+   },
+   "href": "https://fastwork.co/user/oou368/voice-over-46414899"
+  }
+ ]
+}

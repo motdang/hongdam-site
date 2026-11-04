@@ -1,0 +1,309 @@
+{
+ "id": "paybox",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Sellers on LINE or a web page take PromptPay transfers, and each transfer slip is read by a person unless a machine reads it.",
+  "th": "ร้านที่ขายผ่านไลน์หรือเว็บรับโอนพร้อมเพย์ และสลิปแต่ละใบต้องมีคนอ่าน ถ้าไม่ใช้เครื่องตรวจให้",
+  "my": "LINE သို့မဟုတ် ဝဘ်စာမျက်နှာတွင် ရောင်းသူများသည် PromptPay ဖြင့် ငွေလွှဲလက်ခံပြီး စက်က မဖတ်ပေးလျှင် ငွေလွှဲစလစ်တစ်ခုချင်းကို လူတစ်ဦးက ဖတ်ရသည်။",
+  "zh": "在 LINE 或网页上卖东西的人用 PromptPay 收转账，每张转账凭证如果不用机器核对，就得有人逐张去看。",
+  "de": "Wer über LINE oder eine Webseite verkauft, nimmt PromptPay-Überweisungen an, und jeder Beleg wird von einer Person gelesen, solange keine Maschine das übernimmt."
+ },
+ "n": {
+  "de": "PromptPay-Zahlungen annehmen"
+ },
+ "l": {
+  "de": "Ein QR für den genauen Betrag; Belege maschinell geprüft."
+ },
+ "steps": [
+  {
+   "db": "scan",
+   "t": {
+    "en": "A PromptPay QR code for the exact amount goes on your site or LINE.",
+    "th": "คิวอาร์พร้อมเพย์ยอดตรงอยู่บนเว็บหรือไลน์ของคุณ",
+    "my": "ငွေပမာဏအတိအကျအတွက် PromptPay QR ကို သင့်ဝဘ်ဆိုက် သို့မဟုတ် LINE တွင် ထားသည်။",
+    "zh": "按准确金额生成的 PromptPay 二维码放在您的网站或 LINE 上。",
+    "de": "Ein PromptPay-QR-Code für den genauen Betrag kommt auf Ihre Seite oder in LINE."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "Payment slips are checked by machine.",
+    "th": "ตรวจสลิปการโอนด้วยเครื่องอัตโนมัติ",
+    "my": "ငွေလွှဲစလစ်များကို စက်ဖြင့် စစ်ဆေးသည်။",
+    "zh": "转账凭证由机器核对。",
+    "de": "Zahlungsbelege werden maschinell geprüft."
+   },
+   "who": {
+    "en": "Hongdam and SlipOK",
+    "th": "หงส์ดำและ SlipOK",
+    "my": "ဟုန်ဒမ်နှင့် SlipOK",
+    "zh": "鸿丹和 SlipOK",
+    "de": "Hongdam und SlipOK"
+   },
+   "time": {
+    "en": "With each payment",
+    "th": "เมื่อมีการจ่ายเงินแต่ละครั้ง",
+    "my": "ငွေပေးချေမှုတိုင်း",
+    "zh": "每次付款时",
+    "de": "Bei jeder Zahlung"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "SlipOK's fee, if any, is yours.",
+    "th": "ค่าบริการ SlipOK ถ้ามี คุณจ่ายเอง",
+    "my": "SlipOK ၏ ကြေး (ရှိလျှင်) ကို သင်ကိုယ်တိုင်ပေးရသည်။",
+    "zh": "SlipOK 的费用（如有）由您承担。",
+    "de": "Die Gebühr von SlipOK, falls es eine gibt, tragen Sie."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Monthly, on a paid plan",
+    "th": "รายเดือน ถ้าใช้แพ็กเกจที่มีค่าบริการ",
+    "my": "ကြေးပေးရသော အစီအစဉ်တွင် လစဉ်",
+    "zh": "若用付费套餐，按月",
+    "de": "Monatlich, bei einem bezahlten Paket"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Bank of Thailand says PromptPay has run since 2016. It moves money by citizen ID, mobile phone number or bank account number, and PromptPay for Corporate lets a business register to receive money from customers. Transfers up to ฿5,000 carry no fee; above that the fee is under ฿2 up to ฿30,000, under ฿5 up to ฿100,000 and under ฿10 above that.",
+    "th": "ธนาคารแห่งประเทศไทยระบุว่าพร้อมเพย์เปิดใช้ตั้งแต่ปี 2559 โอนเงินด้วยเลขบัตรประชาชน เบอร์มือถือ หรือเลขบัญชีธนาคาร และ PromptPay for Corporate ให้ธุรกิจลงทะเบียนรับเงินจากลูกค้า โอนไม่เกิน ฿5,000 ไม่มีค่าธรรมเนียม ส่วนที่สูงกว่านั้นต่ำกว่า ฿2 ถึง ฿30,000 ต่ำกว่า ฿5 ถึง ฿100,000 และต่ำกว่า ฿10 เมื่อสูงกว่านั้น",
+    "my": "ဘဏ်အော့ဖ်ထိုင်းက PromptPay ကို 2016 ခုနှစ်မှစ၍ အသုံးပြုနေသည်ဟု ဆိုသည်။ ၎င်းသည် နိုင်ငံသားမှတ်ပုံတင်နံပါတ်၊ မိုဘိုင်းဖုန်းနံပါတ် သို့မဟုတ် ဘဏ်စာရင်းနံပါတ်ဖြင့် ငွေလွှဲပြီး PromptPay for Corporate သည် လုပ်ငန်းတစ်ခုအား ဖောက်သည်များထံမှ ငွေလက်ခံရန် စာရင်းသွင်းခွင့်ပေးသည်။ ฿5,000 အထိ ငွေလွှဲရာတွင် ကြေးမရှိ၊ ထိုထက်များလျှင် ฿30,000 အထိ ฿2 အောက်၊ ฿100,000 အထိ ฿5 အောက်၊ ထိုထက်ကျော်လျှင် ฿10 အောက် ဖြစ်သည်။",
+    "zh": "泰国央行写明，PromptPay 自 2016 年运行，凭身份证号、手机号或银行账号转账；PromptPay for Corporate 让企业登记后向客户收款。฿5,000 以内的转账免费；超过后，至 ฿30,000 的收费低于 ฿2，至 ฿100,000 低于 ฿5，更高的低于 ฿10。",
+    "de": "Die Bank von Thailand schreibt, PromptPay laufe seit 2016. Geld wird per ID-Nummer, Handynummer oder Kontonummer bewegt, und PromptPay for Corporate lässt ein Unternehmen sich registrieren, um Geld von Kundschaft zu erhalten. Überweisungen bis ฿5,000 kosten nichts; darüber liegt die Gebühr bis ฿30,000 unter ฿2, bis ฿100,000 unter ฿5 und darüber unter ฿10."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "t": {
+    "en": "SCB lists signs of a fake transfer slip: letters or numbers in different fonts or thickness, a sender name or time that does not match, and a QR code that cannot be verified. It names the SCB EASY app, where a slip's QR code is scanned, and checkslip.scb.co.th.",
+    "th": "SCB ระบุสัญญาณของสลิปโอนเงินปลอม ได้แก่ ตัวอักษรหรือตัวเลขที่ฟอนต์หรือความหนาไม่เท่ากัน ชื่อผู้โอนหรือเวลาไม่ตรง และคิวอาร์ที่ตรวจไม่ผ่าน พร้อมระบุแอป SCB EASY ที่สแกนคิวอาร์บนสลิป และเว็บ checkslip.scb.co.th",
+    "my": "SCB က အတုငွေလွှဲစလစ်၏ လက္ခဏာများကို ဖော်ပြသည် — စာလုံး သို့မဟုတ် ဂဏန်းများ၏ ဖောင့် သို့မဟုတ် အထူ မတူခြင်း၊ ပေးပို့သူအမည် သို့မဟုတ် အချိန် မကိုက်ညီခြင်း၊ အတည်မပြုနိုင်သော QR ကုဒ်။ စလစ်ပေါ်ရှိ QR ကို စကင်ဖတ်သော SCB EASY အက်ပ်နှင့် checkslip.scb.co.th ကိုလည်း ဖော်ပြသည်။",
+    "zh": "SCB 列出假转账凭证的迹象：字母或数字的字体或粗细不一致、转账人姓名或时间对不上、二维码验证不通过；并提到可扫描凭证二维码的 SCB EASY 应用，以及 checkslip.scb.co.th。",
+    "de": "Die SCB nennt Zeichen eines gefälschten Überweisungsbelegs: Buchstaben oder Zahlen in abweichender Schrift oder Strichstärke, ein Absendername oder eine Zeit, die nicht passt, und ein QR-Code, der sich nicht verifizieren lässt. Sie nennt die App SCB EASY, in der der QR-Code eines Belegs gescannt wird, und checkslip.scb.co.th."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/tips-for-you/check-transfer-slip.html"
+  },
+  {
+   "t": {
+    "en": "SlipOK reads the QR code on a slip sent through a LINE group, a LINE Official Account, a website API or a WordPress plugin. It flags fake and duplicate slips, keeps a record of them, and lists slips from all banks.",
+    "th": "SlipOK อ่านคิวอาร์บนสลิปที่ส่งผ่านกลุ่มไลน์ LINE Official Account เว็บ API หรือปลั๊กอิน WordPress แจ้งสลิปปลอมและสลิปซ้ำ เก็บบันทึกไว้ และรองรับสลิปจากทุกธนาคาร",
+    "my": "SlipOK သည် LINE အုပ်စု၊ LINE Official Account၊ ဝဘ်ဆိုက် API သို့မဟုတ် WordPress ပလပ်ဂင်မှတစ်ဆင့် ပို့သော စလစ်ပေါ်ရှိ QR ကို ဖတ်သည်။ အတုနှင့် နှစ်ခါထပ်စလစ်များကို အလံပြပြီး မှတ်တမ်းသိမ်းကာ ဘဏ်အားလုံး၏ စလစ်များကို ထောက်ပံ့သည်ဟု ဆိုသည်။",
+    "zh": "SlipOK 读取通过 LINE 群、LINE 官方账号、网站 API 或 WordPress 插件发来的凭证二维码；标出假凭证和重复凭证，留存记录，并称支持所有银行的凭证。",
+    "de": "SlipOK liest den QR-Code eines Belegs, der über eine LINE-Gruppe, ein LINE Official Account, eine Website-API oder ein WordPress-Plugin eingeht. Es markiert gefälschte und doppelte Belege, führt ein Protokoll und nennt Belege aller Banken."
+   },
+   "src": "https://slipok.com"
+  },
+  {
+   "t": {
+    "en": "Under the Revenue Code amendment (No. 48) B.E. 2562, banks and e-payment providers report to the Revenue Department each year a person whose accounts together took 400 or more deposits or incoming transfers totalling ฿2,000,000 or more, or 3,000 or more, in the year. The department's Q&A says money received in an account is not all income, and the account holder can explain a transfer.",
+    "th": "ตามพระราชบัญญัติแก้ไขเพิ่มเติมประมวลรัษฎากร (ฉบับที่ 48) พ.ศ. 2562 ธนาคารและผู้ให้บริการเงินอิเล็กทรอนิกส์รายงานกรมสรรพากรทุกปีถึงผู้ที่ฝากหรือรับโอนเงินทุกบัญชีรวมกันตั้งแต่ 400 ครั้งและยอดรวมตั้งแต่ ฿2,000,000 หรือตั้งแต่ 3,000 ครั้งในปีนั้น เอกสารถาม-ตอบของกรมระบุว่าเงินที่รับเข้าบัญชีไม่ได้เป็นรายได้ทั้งหมด และเจ้าของบัญชีชี้แจงรายการโอนได้",
+    "my": "ထိုင်း Revenue Code ပြင်ဆင်ချက် (အမှတ် 48) ဗုဒ္ဓသက္ကရာဇ် 2562 (2019) အရ ဘဏ်များနှင့် အီလက်ထရောနစ်ငွေပေးချေမှုဝန်ဆောင်သူများသည် တစ်နှစ်အတွင်း စာရင်းအားလုံးပေါင်း ငွေသွင်း သို့မဟုတ် ငွေလွှဲလက်ခံမှု 400 ကြိမ်နှင့်အထက်၊ စုစုပေါင်း ฿2,000,000 နှင့်အထက်၊ သို့မဟုတ် 3,000 ကြိမ်နှင့်အထက် ရှိသူကို နှစ်စဉ် အခွန်ဦးစီးဌာနသို့ အစီရင်ခံသည်။ ဦးစီးဌာန၏ မေးဖြေတွင် စာရင်းထဲ လက်ခံရရှိသောငွေအားလုံးသည် ဝင်ငွေမဟုတ်ကြောင်းနှင့် စာရင်းပိုင်ရှင်က ငွေလွှဲမှုကို ရှင်းပြနိုင်ကြောင်း ဆိုသည်။",
+    "zh": "根据《税法典》修正案（第 48 号）佛历 2562 年（2019 年），银行和电子支付服务商每年向税务厅报告这样的人：全部账户在一年内共收到 400 次以上存款或转入且总额达 ฿2,000,000 以上，或收到 3,000 次以上。税务厅的问答写明，账户里收到的钱不全是收入，账户持有人可以说明某笔转账。",
+    "de": "Nach der Änderung (Nr. 48) des Revenue Code von B.E. 2562 (2019) melden Banken und Anbieter elektronischer Zahlungen dem Revenue Department jedes Jahr Personen, deren Konten zusammen im Jahr 400 oder mehr Einzahlungen oder eingehende Überweisungen im Gesamtwert von ฿2,000,000 oder mehr erhielten, oder 3,000 oder mehr. Laut den Fragen und Antworten des Amtes ist Geld auf einem Konto nicht ohne Weiteres Einkommen, und die Kontoinhaberin oder der Kontoinhaber kann eine Überweisung erläutern."
+   },
+   "src": "https://www.rd.go.th/fileadmin/download/Q&A_271162.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "SlipOK, slips checked by machine",
+    "th": "SlipOK ตรวจสลิปอัตโนมัติ",
+    "my": "SlipOK — စလစ်များကို စက်ဖြင့်စစ်ဆေးခြင်း",
+    "zh": "SlipOK 机器核对凭证",
+    "de": "SlipOK, Belege maschinell geprüft"
+   },
+   "p": {
+    "en": "Free for 100 slips a month; ฿350 for 500; ฿600 for 1,000; ฿1,000 for 2,000",
+    "th": "ฟรี 100 สลิปต่อเดือน; 500 สลิป ฿350; 1,000 สลิป ฿600; 2,000 สลิป ฿1,000",
+    "my": "တစ်လ စလစ် 100 အခမဲ့၊ 500 အတွက် ฿350၊ 1,000 အတွက် ฿600၊ 2,000 အတွက် ฿1,000",
+    "zh": "每月 100 张免费；500 张 ฿350；1,000 张 ฿600；2,000 张 ฿1,000",
+    "de": "100 Belege im Monat gratis; 500 für ฿350; 1,000 für ฿600; 2,000 für ฿1,000"
+   },
+   "src": "https://slipok.com"
+  },
+  {
+   "t": {
+    "en": "Payment gateway fee on a PromptPay QR payment (Omise)",
+    "th": "ค่าธรรมเนียมเกตเวย์ต่อการจ่ายผ่านพร้อมเพย์คิวอาร์ (Omise)",
+    "my": "PromptPay QR ငွေပေးချေမှုတစ်ခုချင်းရှိ ငွေပေးချေမှုဂိတ်ဝေကြေး (Omise)",
+    "zh": "PromptPay 二维码支付的支付网关费（Omise）",
+    "de": "Gateway-Gebühr für eine PromptPay-QR-Zahlung (Omise)"
+   },
+   "p": {
+    "en": "1.65% of each payment, plus 7% VAT",
+    "th": "1.65% ของการจ่ายแต่ละครั้ง บวก VAT 7%",
+    "my": "ငွေပေးချေမှုတစ်ခုလျှင် 1.65% နှင့် VAT 7% ထပ်ပေါင်း",
+    "zh": "每笔 1.65%，另加 7% 增值税",
+    "de": "1,65 % je Zahlung, plus 7 % MWST"
+   },
+   "src": "https://www.omise.co/pricing/thailand"
+  },
+  {
+   "t": {
+    "en": "Online payment set-up on a shop site, a Fastwork freelancer: card and PromptPay through Omise, Moneyspace or KBank",
+    "th": "ติดตั้งระบบชำระเงินบนเว็บร้านค้า โดยฟรีแลนซ์บน Fastwork: บัตรและพร้อมเพย์ผ่าน Omise, Moneyspace หรือ KBank",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦးမှ ဆိုင်ဝဘ်ဆိုက်တွင် အွန်လိုင်းငွေပေးချေမှုစနစ် ထည့်သွင်းခြင်း — Omise၊ Moneyspace သို့မဟုတ် KBank မှ ကတ်နှင့် PromptPay",
+    "zh": "Fastwork 自由职业者为店铺网站装在线支付：通过 Omise、Moneyspace 或 KBank 收卡和 PromptPay",
+    "de": "Online-Zahlung auf einer Shop-Seite durch Freelancer auf Fastwork: Karte und PromptPay über Omise, Moneyspace oder KBank"
+   },
+   "p": {
+    "en": "฿15,000, 14 days, 1 revision",
+    "th": "฿15,000 14 วัน แก้ไข 1 ครั้ง",
+    "my": "฿15,000၊ 14 ရက်၊ ပြင်ဆင်မှု 1 ကြိမ်",
+    "zh": "฿15,000，14 天，修改 1 次",
+    "de": "฿15,000, 14 Tage, 1 Überarbeitung"
+   },
+   "src": "https://fastwork.co/user/tanakater/web-development-62265586"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How is a transfer slip checked?",
+    "th": "ตรวจสอบสลิปโอนเงินอย่างไร",
+    "my": "ငွေလွှဲစလစ်ကို ဘယ်လို စစ်ဆေးသနည်း။",
+    "zh": "转账凭证怎样核对？",
+    "de": "Wie wird ein Überweisungsbeleg geprüft?"
+   },
+   "a": {
+    "en": "SCB names two ways: in the SCB EASY app, scan bill/QR payment and select the transfer slip to verify; or enter the reference code, origin account, amount and the image code on checkslip.scb.co.th.",
+    "th": "SCB ระบุสองวิธี ในแอป SCB EASY ให้สแกนบิล/คิวอาร์ แล้วเลือกสลิปที่ต้องการตรวจสอบ หรือกรอกรหัสอ้างอิง บัญชีต้นทาง จำนวนเงิน และรหัสรูปภาพบน checkslip.scb.co.th",
+    "my": "SCB က နည်းလမ်းနှစ်မျိုး ဖော်ပြသည် — SCB EASY အက်ပ်တွင် ဘီလ်/QR ငွေပေးချေမှုကို စကင်ဖတ်ပြီး စစ်လိုသော ငွေလွှဲစလစ်ကို ရွေးခြင်း၊ သို့မဟုတ် checkslip.scb.co.th တွင် ရည်ညွှန်းကုဒ်၊ မူလစာရင်း၊ ပမာဏနှင့် ပုံကုဒ်ကို ဖြည့်ခြင်း။",
+    "zh": "SCB 列出两种方式：在 SCB EASY 应用里扫描账单/二维码支付，再选择要核对的转账凭证；或在 checkslip.scb.co.th 填入参考码、转出账户、金额和页面上的图形验证码。",
+    "de": "Die SCB nennt zwei Wege: in der App SCB EASY «Scan bill/QR payment» wählen und den zu prüfenden Überweisungsbeleg auswählen, oder auf checkslip.scb.co.th den Referenzcode, das Ausgangskonto, den Betrag und den angezeigten Bildcode eingeben."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/tips-for-you/check-transfer-slip.html"
+  },
+  {
+   "q": {
+    "en": "How can a fake transfer slip be spotted?",
+    "th": "สลิปโอนเงินปลอมดูได้อย่างไร",
+    "my": "အတုငွေလွှဲစလစ်ကို ဘယ်လို သိနိုင်သနည်း။",
+    "zh": "怎样识别假转账凭证？",
+    "de": "Woran erkennt man einen gefälschten Überweisungsbeleg?"
+   },
+   "a": {
+    "en": "SCB, passing on police advice, lists letters or numbers in different fonts or thickness, a sender name or transfer time that does not match, and a QR code that cannot be verified when scanned. It adds that photos of slips posted on social media can be edited by others and used to deceive.",
+    "th": "SCB อ้างคำแนะนำของตำรวจ ระบุว่าตัวอักษรหรือตัวเลขที่ฟอนต์หรือความหนาไม่เท่ากัน ชื่อผู้โอนหรือเวลาโอนไม่ตรง และคิวอาร์ที่สแกนแล้วตรวจไม่ผ่าน เป็นสัญญาณของสลิปปลอม และระบุว่ารูปสลิปที่โพสต์บนโซเชียลมีเดียถูกนำไปแก้ไขเพื่อหลอกผู้อื่นได้",
+    "my": "SCB က ရဲ၏ အကြံပေးချက်ကို ကိုးကားပြီး စာလုံး သို့မဟုတ် ဂဏန်းများ၏ ဖောင့်နှင့် အထူ မတူခြင်း၊ ပေးပို့သူအမည် သို့မဟုတ် လွှဲချိန် မကိုက်ညီခြင်း၊ စကင်ဖတ်ပြီး အတည်မပြုနိုင်သော QR ကုဒ်တို့ကို ဖော်ပြသည်။ လူမှုကွန်ရက်တွင် တင်ထားသော စလစ်ပုံများကို အခြားသူများ ပြင်ဆင်၍ လိမ်လည်ရန် သုံးနိုင်ကြောင်းလည်း ဆိုသည်။",
+    "zh": "SCB 转述警方的提示，列出：字母或数字的字体或粗细不一致、转账人姓名或转账时间对不上、扫描后无法验证的二维码。它还提到，发在社交媒体上的凭证照片可能被他人改动，用来骗人。",
+    "de": "Die SCB gibt Hinweise der Polizei weiter: Buchstaben oder Zahlen in abweichender Schrift oder Strichstärke, ein Absendername oder eine Überweisungszeit, die nicht passt, und ein QR-Code, der sich beim Scannen nicht verifizieren lässt. Sie fügt an, dass Fotos von Belegen in sozialen Medien von anderen bearbeitet und zum Täuschen benutzt werden können."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/tips-for-you/check-transfer-slip.html"
+  },
+  {
+   "q": {
+    "en": "How does a shop take PromptPay?",
+    "th": "ร้านรับพร้อมเพย์ได้อย่างไร",
+    "my": "ဆိုင်တစ်ဆိုင်က PromptPay ကို ဘယ်လို လက်ခံသနည်း။",
+    "zh": "店铺怎样收 PromptPay？",
+    "de": "Wie nimmt ein Laden PromptPay an?"
+   },
+   "a": {
+    "en": "PromptPay links a citizen ID, a mobile phone number or a bank account number to a bank account. The Bank of Thailand lists PromptPay for Corporate, where a business registers to receive money from customers, and Thai QR Payment, where the buyer scans a code in a banking app. Transfers up to ฿5,000 carry no fee.",
+    "th": "พร้อมเพย์ผูกเลขบัตรประชาชน เบอร์มือถือ หรือเลขบัญชีเข้ากับบัญชีธนาคาร ธนาคารแห่งประเทศไทยระบุ PromptPay for Corporate ที่ให้ธุรกิจลงทะเบียนรับเงินจากลูกค้า และ Thai QR Payment ที่ผู้ซื้อสแกนคิวอาร์ในแอปธนาคาร โอนไม่เกิน ฿5,000 ไม่มีค่าธรรมเนียม",
+    "my": "PromptPay သည် နိုင်ငံသားမှတ်ပုံတင်နံပါတ်၊ မိုဘိုင်းဖုန်းနံပါတ် သို့မဟုတ် ဘဏ်စာရင်းနံပါတ်ကို ဘဏ်စာရင်းတစ်ခုနှင့် ချိတ်ဆက်သည်။ ဘဏ်အော့ဖ်ထိုင်းက လုပ်ငန်းတစ်ခုက ဖောက်သည်များထံမှ ငွေလက်ခံရန် စာရင်းသွင်းသော PromptPay for Corporate နှင့် ဝယ်သူက ဘဏ်အက်ပ်တွင် ကုဒ်ကို စကင်ဖတ်သော Thai QR Payment တို့ကို ဖော်ပြသည်။ ฿5,000 အထိ ငွေလွှဲရာတွင် ကြေးမရှိ။",
+    "zh": "PromptPay 把身份证号、手机号或银行账号与一个银行账户绑定。泰国央行列出 PromptPay for Corporate（企业登记后向客户收款）和 Thai QR Payment（买家在银行应用里扫码）。฿5,000 以内的转账免费。",
+    "de": "PromptPay verknüpft eine ID-Nummer, eine Handynummer oder eine Kontonummer mit einem Bankkonto. Die Bank von Thailand nennt PromptPay for Corporate, wo sich ein Unternehmen registriert, um Geld von Kundschaft zu erhalten, und Thai QR Payment, wo die Käuferin oder der Käufer in einer Banking-App einen Code scannt. Überweisungen bis ฿5,000 kosten nichts."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "q": {
+    "en": "What does a slip-checking service cost?",
+    "th": "บริการตรวจสลิปราคาเท่าไร",
+    "my": "စလစ်စစ်ဆေးမှုဝန်ဆောင်မှု ဘယ်လောက်ကျသနည်း။",
+    "zh": "核对凭证的服务多少钱？",
+    "de": "Was kostet ein Dienst zur Belegprüfung?"
+   },
+   "a": {
+    "en": "SlipOK lists a free plan of 100 slips a month for up to 2 shops, then ฿350 for 500 slips, ฿600 for 1,000, ฿1,000 for 2,000 and ฿2,580 for 6,000. Annual billing is about 30% cheaper than monthly, and a quote is offered above 200 slips a day.",
+    "th": "SlipOK มีแพ็กเกจฟรี 100 สลิปต่อเดือน สำหรับไม่เกิน 2 ร้าน แล้ว 500 สลิป ฿350 1,000 สลิป ฿600 2,000 สลิป ฿1,000 และ 6,000 สลิป ฿2,580 จ่ายรายปีถูกกว่ารายเดือนราว 30% และเสนอราคาเฉพาะเมื่อเกิน 200 สลิปต่อวัน",
+    "my": "SlipOK တွင် ဆိုင် 2 ဆိုင်အထိ တစ်လ စလစ် 100 အခမဲ့အစီအစဉ်ရှိပြီး ထို့နောက် 500 စလစ် ฿350၊ 1,000 စလစ် ฿600၊ 2,000 စလစ် ฿1,000၊ 6,000 စလစ် ฿2,580 ဖြစ်သည်။ နှစ်ချုပ်ပေးချေလျှင် လစဉ်ထက် 30% ခန့် သက်သာပြီး တစ်နေ့ စလစ် 200 ကျော်လျှင် စျေးနှုန်းကို သီးသန့်ပေးသည်။",
+    "zh": "SlipOK 列出免费套餐：每月 100 张，限 2 家店；之后 500 张 ฿350、1,000 张 ฿600、2,000 张 ฿1,000、6,000 张 ฿2,580。按年付比按月付约便宜 30%；每天超过 200 张另行报价。",
+    "de": "SlipOK führt ein kostenloses Paket mit 100 Belegen im Monat für bis zu 2 Läden auf, danach ฿350 für 500 Belege, ฿600 für 1,000, ฿1,000 für 2,000 und ฿2,580 für 6,000. Jahreszahlung ist etwa 30 % günstiger als monatliche, und über 200 Belegen am Tag gibt es eine Offerte."
+   },
+   "src": "https://slipok.com"
+  },
+  {
+   "q": {
+    "en": "Does the Revenue Department see money received by PromptPay?",
+    "th": "กรมสรรพากรเห็นเงินที่รับผ่านพร้อมเพย์หรือไม่",
+    "my": "PromptPay ဖြင့် လက်ခံသောငွေကို အခွန်ဦးစီးဌာနက မြင်ရပါသလား။",
+    "zh": "税务厅能看到通过 PromptPay 收到的钱吗？",
+    "de": "Sieht das Revenue Department Geld, das per PromptPay eingeht?"
+   },
+   "a": {
+    "en": "Banks and e-payment providers report a person to the Revenue Department when their accounts together took 400 or more deposits or incoming transfers totalling ฿2,000,000 or more, or 3,000 or more, in a year. The report holds the ID number, name, account numbers, the number of transfers and their total value. The department says money in an account is not all income.",
+    "th": "ธนาคารและผู้ให้บริการเงินอิเล็กทรอนิกส์รายงานกรมสรรพากรเมื่อบัญชีรวมกันมีการฝากหรือรับโอนตั้งแต่ 400 ครั้งและยอดรวมตั้งแต่ ฿2,000,000 หรือตั้งแต่ 3,000 ครั้งในหนึ่งปี รายงานมีเลขประจำตัวประชาชน ชื่อ เลขบัญชี จำนวนครั้ง และมูลค่ารวม กรมระบุว่าเงินที่เข้าบัญชีไม่ได้เป็นรายได้ทั้งหมด",
+    "my": "ဘဏ်များနှင့် အီလက်ထရောနစ်ငွေပေးချေမှုဝန်ဆောင်သူများသည် တစ်နှစ်အတွင်း စာရင်းများပေါင်း ငွေသွင်း သို့မဟုတ် ငွေလွှဲလက်ခံမှု 400 ကြိမ်နှင့်အထက် စုစုပေါင်း ฿2,000,000 နှင့်အထက်၊ သို့မဟုတ် 3,000 ကြိမ်နှင့်အထက် ရှိလျှင် ထိုသူကို အခွန်ဦးစီးဌာနသို့ အစီရင်ခံသည်။ အစီရင်ခံစာတွင် မှတ်ပုံတင်နံပါတ်၊ အမည်၊ စာရင်းနံပါတ်များ၊ ငွေလွှဲအကြိမ်ရေနှင့် စုစုပေါင်းတန်ဖိုး ပါသည်။ စာရင်းထဲဝင်သောငွေအားလုံးသည် ဝင်ငွေမဟုတ်ဟု ဦးစီးဌာနက ဆိုသည်။",
+    "zh": "一年内全部账户合计收到 400 次以上存款或转入且总额达 ฿2,000,000 以上，或收到 3,000 次以上时，银行和电子支付服务商会向税务厅报告此人。报告内容包括身份证号、姓名、账号、次数和总金额。税务厅表示，账户里的钱不全是收入。",
+    "de": "Banken und Anbieter elektronischer Zahlungen melden eine Person dem Revenue Department, wenn ihre Konten zusammen im Jahr 400 oder mehr Einzahlungen oder eingehende Überweisungen im Gesamtwert von ฿2,000,000 oder mehr erhielten, oder 3,000 oder mehr. Die Meldung enthält ID-Nummer, Name, Kontonummern, Anzahl der Überweisungen und Gesamtwert. Das Amt hält fest, dass Geld auf einem Konto nicht ohne Weiteres Einkommen ist."
+   },
+   "src": "https://www.rd.go.th/fileadmin/download/Q&A_271162.pdf"
+  }
+ ],
+ "related": [
+  "online-shop",
+  "ordering",
+  "stall-page",
+  "merchant",
+  "print",
+  "ads-run"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "SCB: how to check a transfer slip",
+    "th": "SCB: วิธีตรวจสลิปโอนเงิน",
+    "my": "SCB: ငွေလွှဲစလစ် စစ်ဆေးနည်း",
+    "zh": "SCB：如何核对转账凭证",
+    "de": "SCB: So wird ein Überweisungsbeleg geprüft"
+   },
+   "href": "https://www.scb.co.th/en/personal-banking/stories/tips-for-you/check-transfer-slip.html"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: PromptPay",
+    "th": "ธนาคารแห่งประเทศไทย: พร้อมเพย์",
+    "my": "ဘဏ်အော့ဖ်ထိုင်း: PromptPay",
+    "zh": "泰国央行：PromptPay",
+    "de": "Bank von Thailand: PromptPay"
+   },
+   "href": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "glyphs": [
+  "coin",
+  "scan",
+  "telephone"
+ ]
+}

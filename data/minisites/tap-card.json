@@ -1,0 +1,275 @@
+{
+ "id": "tap-card",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A person hands out a code instead of a card, and whoever scans it gets the name, numbers and links on one page.",
+  "th": "แทนที่จะยื่นนามบัตรกระดาษ ให้คนสแกนคิวอาร์แล้วเห็นชื่อ เบอร์ และลิงก์ในหน้าเดียว",
+  "my": "ကတ်ပေးမည့်အစား QR ကုဒ်ကို ပေးပြီး စကင်ဖတ်သူက အမည်၊ ဖုန်းနံပါတ်နှင့် လင့်ခ်များကို စာမျက်နှာတစ်ခုတည်းတွင် တွေ့ရသည်။",
+  "zh": "递出的是一个二维码而不是一张卡片，扫码的人在一页上看到姓名、电话和链接。",
+  "de": "Statt einer Karte übergibt man einen Code; wer ihn scannt, sieht Name, Nummern und Links auf einer Seite."
+ },
+ "n": {
+  "de": "Kontaktkarte auf einem QR-Code"
+ },
+ "l": {
+  "de": "Ihr Name, Ihre Nummern und Links auf einer Seite."
+ },
+ "glyphs": [
+  "scan",
+  "telephone",
+  "envelope"
+ ],
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You send your name, numbers and links.",
+    "th": "คุณส่งชื่อ เบอร์ และลิงก์",
+    "my": "သင့်အမည်၊ နံပါတ်များနှင့် လင့်ခ်များကို သင်က ပို့ပေးသည်။",
+    "zh": "您提供姓名、电话和链接。",
+    "de": "Sie senden Ihren Namen, Ihre Nummern und Links."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "They go on one page.",
+    "th": "รวมไว้ในหน้าเดียว",
+    "my": "၎င်းတို့ကို စာမျက်နှာတစ်ခုတည်းတွင် ထည့်သည်။",
+    "zh": "把它们放在同一页上。",
+    "de": "Sie kommen auf eine Seite."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接下来",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "scan",
+   "t": {
+    "en": "A QR code opens that page.",
+    "th": "คิวอาร์เปิดหน้านั้น",
+    "my": "QR ကုဒ်က ထိုစာမျက်နှာကို ဖွင့်ပေးသည်။",
+    "zh": "二维码打开这一页。",
+    "de": "Ein QR-Code öffnet diese Seite."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "DENSO WAVE says no licence is needed to use a QR Code that follows the JIS or ISO standards, and no licensing contract is required for commercial use. The word “QR Code” is its registered trademark; the code pattern is not.",
+    "th": "DENSO WAVE ระบุว่าการใช้คิวอาร์โค้ดที่เป็นไปตามมาตรฐาน JIS หรือ ISO ไม่ต้องขอใบอนุญาต และการใช้เชิงพาณิชย์ไม่ต้องทำสัญญาอนุญาตใช้สิทธิ คำว่า “QR Code” เป็นเครื่องหมายการค้าจดทะเบียนของบริษัท แต่ลวดลายของโค้ดไม่ใช่",
+    "my": "DENSO WAVE က JIS သို့မဟုတ် ISO စံနှုန်းများနှင့်ကိုက်ညီသော QR Code ကို သုံးရန် လိုင်စင်မလိုကြောင်းနှင့် စီးပွားဖြစ်သုံးရန် လိုင်စင်စာချုပ် မလိုကြောင်း ဆိုသည်။ “QR Code” ဟူသော စကားလုံးသည် ၎င်း၏ မှတ်ပုံတင်ထားသော ကုန်အမှတ်တံဆိပ်ဖြစ်ပြီး ကုဒ်ပုံစံမှာ မဟုတ်ပါ။",
+    "zh": "DENSO WAVE 表示，使用符合 JIS 或 ISO 标准的二维码无需许可，商业使用也无需签订许可合同。“QR Code”这个词是其注册商标，二维码图案不是。",
+    "de": "DENSO WAVE erklärt, dass für einen QR-Code nach JIS- oder ISO-Norm keine Lizenz nötig ist und auch für die kommerzielle Nutzung kein Lizenzvertrag verlangt wird. Das Wort «QR Code» ist seine eingetragene Marke, das Codemuster nicht."
+   },
+   "src": "https://www.qrcode.com/en/faq.html"
+  },
+  {
+   "t": {
+    "en": "On an iPhone, a person opens the Camera app, holds the device so the QR code appears, and taps the link that shows.",
+    "th": "บน iPhone เปิดแอปกล้อง ถือเครื่องให้เห็นคิวอาร์โค้ด แล้วแตะลิงก์ที่ขึ้นมา",
+    "my": "iPhone တွင် ကင်မရာအက်ပ်ကိုဖွင့်ကာ QR ကုဒ် ပေါ်လာအောင် ကိုင်ထားပြီး ပေါ်လာသော လင့်ခ်ကို နှိပ်သည်။",
+    "zh": "在 iPhone 上，打开相机应用，让二维码出现在取景框中，然后点按出现的链接。",
+    "de": "Auf einem iPhone öffnet man die Kamera-App, hält das Gerät so, dass der QR-Code erscheint, und tippt auf den angezeigten Link."
+   },
+   "src": "https://support.apple.com/en-mk/102680"
+  },
+  {
+   "t": {
+    "en": "vCard (RFC 6350, August 2011) is a data format for representing and exchanging information about individuals, such as name, delivery address, email address, telephone numbers, photograph and logo.",
+    "th": "vCard (RFC 6350 สิงหาคม 2011) เป็นรูปแบบข้อมูลสำหรับแสดงและแลกเปลี่ยนข้อมูลของบุคคล เช่น ชื่อ ที่อยู่สำหรับจัดส่ง อีเมล หมายเลขโทรศัพท์ รูปถ่าย และโลโก้",
+    "my": "vCard (RFC 6350၊ 2011 ဩဂုတ်) သည် လူပုဂ္ဂိုလ်များအကြောင်း အမည်၊ ပို့ဆောင်ရေးလိပ်စာ၊ အီးမေးလ်၊ ဖုန်းနံပါတ်များ၊ ဓာတ်ပုံနှင့် လိုဂို စသည့် အချက်အလက်များကို ဖော်ပြရန်နှင့် ဖလှယ်ရန် ဒေတာပုံစံဖြစ်သည်။",
+    "zh": "vCard（RFC 6350，2011 年 8 月）是表示和交换个人信息的数据格式，信息如姓名、投递地址、电子邮件、电话号码、照片和标志。",
+    "de": "vCard (RFC 6350, August 2011) ist ein Datenformat, um Angaben zu Personen darzustellen und auszutauschen, etwa Name, Zustelladresse, E-Mail-Adresse, Telefonnummern, Foto und Logo."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc6350"
+  },
+  {
+   "t": {
+    "en": "The tel URI scheme (RFC 3966, December 2004) describes resources identified by telephone numbers.",
+    "th": "รูปแบบ URI แบบ tel (RFC 3966 ธันวาคม 2004) อธิบายทรัพยากรที่ระบุด้วยหมายเลขโทรศัพท์",
+    "my": "tel URI စနစ် (RFC 3966၊ 2004 ဒီဇင်ဘာ) သည် ဖုန်းနံပါတ်ဖြင့် သတ်မှတ်ထားသော အရင်းအမြစ်များကို ဖော်ပြသည်။",
+    "zh": "tel URI 方案（RFC 3966，2004 年 12 月）描述以电话号码标识的资源。",
+    "de": "Das tel-URI-Schema (RFC 3966, Dezember 2004) beschreibt Ressourcen, die durch Telefonnummern bezeichnet werden."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc3966"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "HiHello, digital business card app",
+    "th": "HiHello แอปนามบัตรดิจิทัล",
+    "my": "HiHello - ဒစ်ဂျစ်တယ် ဘစ်ဇနက်ကတ် အက်ပ်",
+    "zh": "HiHello 电子名片应用",
+    "de": "HiHello, App für digitale Visitenkarten"
+   },
+   "p": {
+    "en": "Personal plan free with 2 cards; Professional US$6 a month billed yearly (US$8 monthly)",
+    "th": "แผน Personal ฟรี 2 นามบัตร แผน Professional US$6 ต่อเดือนเมื่อจ่ายรายปี (US$8 ถ้าจ่ายรายเดือน)",
+    "my": "Personal အစီအစဉ် အခမဲ့ ကတ် 2 ခု၊ Professional တစ်နှစ်စာပေးလျှင် တစ်လ US$6 (လစဉ်ပေးလျှင် US$8)",
+    "zh": "Personal 方案免费，含 2 张名片；Professional 按年付费每月 US$6（按月付费 US$8）",
+    "de": "Plan Personal kostenlos mit 2 Karten; Professional US$6 im Monat bei Jahreszahlung (US$8 monatlich)"
+   },
+   "src": "https://www.hihello.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Digital business card with QR code, Fastwork listing (page.company)",
+    "th": "นามบัตรดิจิทัลพร้อมคิวอาร์ รายการบน Fastwork (page.company)",
+    "my": "Fastwork စာရင်း - QR ပါ ဒစ်ဂျစ်တယ်ကတ် (page.company)",
+    "zh": "Fastwork 上带二维码的电子名片（page.company）",
+    "de": "Digitale Visitenkarte mit QR-Code, Angebot auf Fastwork (page.company)"
+   },
+   "p": {
+    "en": "from ฿500; ฿6,380 with a company-name link; ฿12,900 with a domain for one year",
+    "th": "เริ่ม ฿500 ฿6,380 พร้อมลิงก์ชื่อบริษัท ฿12,900 พร้อมโดเมนหนึ่งปี",
+    "my": "฿500 မှစ၍၊ ကုမ္ပဏီအမည်လင့်ခ်ပါလျှင် ฿6,380၊ ဒိုမိန်းတစ်နှစ်ပါလျှင် ฿12,900",
+    "zh": "฿500 起；含公司名链接 ฿6,380；含一年域名 ฿12,900",
+    "de": "ab ฿500; ฿6,380 mit Firmennamen-Link; ฿12,900 mit Domain für ein Jahr"
+   },
+   "src": "https://fastwork.co/user/ibizdev/linktree-creating-91203995"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Is there a free digital business card?",
+    "th": "มีนามบัตรดิจิทัลฟรีไหม",
+    "my": "အခမဲ့ ဒစ်ဂျစ်တယ်ဘစ်ဇနက်ကတ် ရှိပါသလား။",
+    "zh": "有免费的电子名片吗？",
+    "de": "Gibt es eine kostenlose digitale Visitenkarte?"
+   },
+   "a": {
+    "en": "HiHello's Personal plan is free and includes 2 digital business cards. They can be shared by QR, widget, email, SMS and WhatsApp, and added to Apple and Google Wallet.",
+    "th": "แผน Personal ของ HiHello ฟรีและมีนามบัตรดิจิทัล 2 ใบ แชร์ได้ทางคิวอาร์ วิดเจ็ต อีเมล SMS และ WhatsApp และเพิ่มลง Apple Wallet และ Google Wallet ได้",
+    "my": "HiHello ၏ Personal အစီအစဉ်သည် အခမဲ့ဖြစ်ပြီး ဒစ်ဂျစ်တယ်ကတ် 2 ခု ပါသည်။ QR၊ ဝစ်ဂျက်၊ အီးမေးလ်၊ SMS နှင့် WhatsApp ဖြင့် မျှဝေနိုင်ပြီး Apple Wallet နှင့် Google Wallet သို့ ထည့်နိုင်သည်။",
+    "zh": "HiHello 的 Personal 方案免费，含 2 张电子名片，可通过二维码、小组件、电子邮件、短信和 WhatsApp 分享，也可加入 Apple Wallet 和 Google Wallet。",
+    "de": "Der Plan Personal von HiHello ist kostenlos und enthält 2 digitale Visitenkarten. Sie lassen sich per QR, Widget, E-Mail, SMS und WhatsApp teilen und zu Apple Wallet und Google Wallet hinzufügen."
+   },
+   "src": "https://www.hihello.com/pricing"
+  },
+  {
+   "q": {
+    "en": "Does a QR code cost a licence fee?",
+    "th": "ต้องเสียค่าอนุญาตใช้คิวอาร์โค้ดไหม",
+    "my": "QR ကုဒ်အတွက် လိုင်စင်ကြေး ပေးရပါသလား။",
+    "zh": "使用二维码要付许可费吗？",
+    "de": "Kostet ein QR-Code eine Lizenzgebühr?"
+   },
+   "a": {
+    "en": "No. DENSO WAVE's FAQ answers that no licence is necessary for a QR Code that follows the JIS or ISO standards, and that commercial use needs no licensing contract.",
+    "th": "ไม่ต้อง คำถามที่พบบ่อยของ DENSO WAVE ตอบว่าคิวอาร์โค้ดที่เป็นไปตามมาตรฐาน JIS หรือ ISO ไม่ต้องขออนุญาต และการใช้เชิงพาณิชย์ไม่ต้องทำสัญญาอนุญาตใช้สิทธิ",
+    "my": "မပေးရပါ။ DENSO WAVE ၏ FAQ က JIS သို့မဟုတ် ISO စံနှုန်းနှင့်ကိုက်ညီသော QR Code အတွက် လိုင်စင်မလိုကြောင်းနှင့် စီးပွားဖြစ်အသုံးပြုမှုအတွက် လိုင်စင်စာချုပ် မလိုကြောင်း ဖြေထားသည်။",
+    "zh": "不要。DENSO WAVE 的常见问题解答写明，符合 JIS 或 ISO 标准的二维码无需许可，商业使用也无需许可合同。",
+    "de": "Nein. Laut den FAQ von DENSO WAVE ist für einen QR-Code nach JIS- oder ISO-Norm keine Lizenz nötig, und für die kommerzielle Nutzung braucht es keinen Lizenzvertrag."
+   },
+   "src": "https://www.qrcode.com/en/faq.html"
+  },
+  {
+   "q": {
+    "en": "How does someone open my card from the QR code?",
+    "th": "คนอื่นเปิดนามบัตรของฉันจากคิวอาร์ได้อย่างไร",
+    "my": "ကျွန်ုပ်၏ကတ်ကို QR ကုဒ်မှ အခြားသူတစ်ဦးက ဘယ်လိုဖွင့်သလဲ။",
+    "zh": "别人怎样从二维码打开我的名片？",
+    "de": "Wie öffnet jemand meine Karte über den QR-Code?"
+   },
+   "a": {
+    "en": "On an iPhone, Apple's support article says to open the Camera app or Code Scanner and hold the device so the QR code appears. Then the person taps the link to open the content.",
+    "th": "บน iPhone บทความสนับสนุนของ Apple บอกให้เปิดแอปกล้องหรือ Code Scanner แล้วถือเครื่องให้เห็นคิวอาร์โค้ด จากนั้นแตะลิงก์เพื่อเปิดเนื้อหา",
+    "my": "iPhone တွင် Apple ၏ ပံ့ပိုးမှုဆောင်းပါးက ကင်မရာအက်ပ် သို့မဟုတ် Code Scanner ကိုဖွင့်ကာ QR ကုဒ်ပေါ်လာအောင် ကိုင်ထားရန် ဆိုသည်။ ထို့နောက် လင့်ခ်ကိုနှိပ်၍ အကြောင်းအရာကို ဖွင့်သည်။",
+    "zh": "在 iPhone 上，Apple 的支持文章说明：打开相机应用或代码扫描器，让二维码出现在画面中，然后点按链接打开内容。",
+    "de": "Auf einem iPhone sagt der Support-Artikel von Apple: Kamera-App oder Code Scanner öffnen und das Gerät so halten, dass der QR-Code erscheint. Dann tippt man auf den Link, um den Inhalt zu öffnen."
+   },
+   "src": "https://support.apple.com/en-mk/102680"
+  },
+  {
+   "q": {
+    "en": "What is a vCard?",
+    "th": "vCard คืออะไร",
+    "my": "vCard ဆိုတာ ဘာလဲ။",
+    "zh": "vCard 是什么？",
+    "de": "Was ist eine vCard?"
+   },
+   "a": {
+    "en": "vCard is the data format defined in RFC 6350 for representing and exchanging information about individuals. It covers name, delivery address, email address, multiple telephone numbers, photograph, logo and audio clips.",
+    "th": "vCard คือรูปแบบข้อมูลที่กำหนดใน RFC 6350 สำหรับแสดงและแลกเปลี่ยนข้อมูลของบุคคล ครอบคลุมชื่อ ที่อยู่สำหรับจัดส่ง อีเมล หมายเลขโทรศัพท์หลายหมายเลข รูปถ่าย โลโก้ และคลิปเสียง",
+    "my": "vCard သည် RFC 6350 တွင် သတ်မှတ်ထားသော၊ လူပုဂ္ဂိုလ်များအကြောင်း အချက်အလက်ကို ဖော်ပြရန်နှင့် ဖလှယ်ရန် ဒေတာပုံစံဖြစ်သည်။ အမည်၊ ပို့ဆောင်ရေးလိပ်စာ၊ အီးမေးလ်၊ ဖုန်းနံပါတ်များစွာ၊ ဓာတ်ပုံ၊ လိုဂိုနှင့် အသံဖိုင်တို့ ပါဝင်သည်။",
+    "zh": "vCard 是 RFC 6350 定义的数据格式，用于表示和交换个人信息，涵盖姓名、投递地址、电子邮件、多个电话号码、照片、标志和音频片段。",
+    "de": "vCard ist das in RFC 6350 festgelegte Datenformat, um Angaben zu Personen darzustellen und auszutauschen. Es deckt Name, Zustelladresse, E-Mail-Adresse, mehrere Telefonnummern, Foto, Logo und Audioclips ab."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc6350"
+  }
+ ],
+ "related": [
+  "web-line",
+  "site",
+  "web-mail",
+  "graphics",
+  "online-shop",
+  "help-page"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Apple Support: scan a QR code with your iPhone or iPad",
+    "th": "Apple Support: สแกนคิวอาร์โค้ดด้วย iPhone หรือ iPad",
+    "my": "Apple Support - iPhone သို့မဟုတ် iPad ဖြင့် QR ကုဒ်ကို စကင်ဖတ်ခြင်း",
+    "zh": "Apple 支持：用 iPhone 或 iPad 扫描二维码",
+    "de": "Apple Support: QR-Code mit dem iPhone oder iPad scannen"
+   },
+   "href": "https://support.apple.com/en-mk/102680"
+  },
+  {
+   "t": {
+    "en": "QRcode.com (DENSO WAVE): QR Code FAQ",
+    "th": "QRcode.com (DENSO WAVE): คำถามที่พบบ่อยเรื่องคิวอาร์โค้ด",
+    "my": "QRcode.com (DENSO WAVE) - QR Code FAQ",
+    "zh": "QRcode.com（DENSO WAVE）：二维码常见问题",
+    "de": "QRcode.com (DENSO WAVE): FAQ zum QR-Code"
+   },
+   "href": "https://www.qrcode.com/en/faq.html"
+  }
+ ]
+}

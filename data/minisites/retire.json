@@ -1,0 +1,683 @@
+{
+ "id": "retire",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Retiring in Thailand is a home, a bank account, a phone, a hospital and insurance, each at its own office. This service sets them up in order and leaves you one person to call.",
+  "th": "การเกษียณในไทยคือบ้าน บัญชีธนาคาร โทรศัพท์ โรงพยาบาล และประกัน แต่ละอย่างอยู่คนละที่ บริการนี้จัดให้ครบตามลำดับ แล้วคุณมีคนเดียวให้โทรหา",
+  "my": "ထိုင်းနိုင်ငံတွင် အငြိမ်းစားယူခြင်းဆိုသည်မှာ နေအိမ်၊ ဘဏ်အကောင့်၊ ဖုန်း၊ ဆေးရုံနှင့် အာမခံ ဖြစ်ပြီး တစ်ခုစီ မတူညီသော ရုံးတွင် ရှိသည်။ ဤဝန်ဆောင်မှုက အစဉ်လိုက် စီစဉ်ပေးပြီး ဆက်သွယ်ရန် လူတစ်ဦးသာ ကျန်စေသည်။",
+  "zh": "在泰国养老，意味着住处、银行账户、电话、医院和保险，各在不同的地方办理。这项服务按顺序替您办好，之后您只需联系一个人。",
+  "de": "Ruhestand in Thailand heisst: eine Wohnung, ein Bankkonto, ein Telefon, ein Spital und eine Versicherung, jedes bei einer anderen Stelle. Dieser Dienst richtet alles der Reihe nach ein, danach rufen Sie eine einzige Person an."
+ },
+ "n": {
+  "de": "Ruhestand hier, für Sie organisiert"
+ },
+ "l": {
+  "de": "Visum, Bank, Telefon, Wohnung, Krankenhaus und Versicherung, danach eine Ansprechperson."
+ },
+ "steps": [
+  {
+   "db": "passport",
+   "t": {
+    "en": "The visa: retirement and care homes arrange it for their residents.",
+    "th": "วีซ่า: บ้านพักผู้เกษียณและบ้านพักผู้สูงอายุจัดการให้ผู้พักอาศัย",
+    "my": "ဗီဇာ: အငြိမ်းစားနေအိမ်နှင့် သက်ကြီးစောင့်ရှောက်ရေးနေအိမ်များက နေထိုင်သူများအတွက် စီစဉ်ပေးသည်။",
+    "zh": "签证：养老院和护理院为住户办理。",
+    "de": "Das Visum: Alters- und Pflegeheime erledigen es für ihre Bewohner."
+   },
+   "who": {
+    "en": "The home",
+    "th": "บ้านพัก",
+    "my": "နေအိမ်",
+    "zh": "养老院",
+    "de": "Das Heim"
+   },
+   "time": {
+    "en": "First",
+    "th": "ก่อนอื่น",
+    "my": "ပထမ",
+    "zh": "首先",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "A bank account",
+    "th": "บัญชีธนาคาร",
+    "my": "ဘဏ်အကောင့်",
+    "zh": "银行账户",
+    "de": "Ein Bankkonto"
+   },
+   "who": {
+    "en": "Hongdam, you and the bank",
+    "th": "หงส์ดำ คุณ และธนาคาร",
+    "my": "ဟုန်ဒမ်၊ သင်နှင့် ဘဏ်",
+    "zh": "鸿丹、您和银行",
+    "de": "Hongdam, Sie und die Bank"
+   },
+   "time": {
+    "en": "In the set-up",
+    "th": "ในขั้นเริ่มต้น",
+    "my": "စတင်စီစဉ်ချိန်တွင်",
+    "zh": "在安顿阶段",
+    "de": "In der Einrichtung"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "A phone line",
+    "th": "เบอร์โทรศัพท์",
+    "my": "ဖုန်းလိုင်း",
+    "zh": "手机号码",
+    "de": "Ein Telefonanschluss"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "In the set-up",
+    "th": "ในขั้นเริ่มต้น",
+    "my": "စတင်စီစဉ်ချိန်တွင်",
+    "zh": "在安顿阶段",
+    "de": "In der Einrichtung"
+   }
+  },
+  {
+   "db": "home",
+   "t": {
+    "en": "A housing shortlist, with rent at cost",
+    "th": "รายการที่พักให้เลือก ค่าเช่าคิดตามจริง",
+    "my": "နေအိမ်ရွေးချယ်စရာစာရင်း၊ အိမ်လခကို ကုန်ကျစရိတ်အတိုင်း",
+    "zh": "住处候选清单，房租按实收取",
+    "de": "Eine Kurzliste für die Wohnung, die Miete zu den tatsächlichen Kosten"
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำ และคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "In the set-up",
+    "th": "ในขั้นเริ่มต้น",
+    "my": "စတင်စီစဉ်ချိန်တွင်",
+    "zh": "在安顿阶段",
+    "de": "In der Einrichtung"
+   }
+  },
+  {
+   "db": "heart",
+   "t": {
+    "en": "Hospital registration, and insurance quotes from a licensed broker",
+    "th": "ลงทะเบียนโรงพยาบาล และใบเสนอราคาประกันจากนายหน้าที่มีใบอนุญาต",
+    "my": "ဆေးရုံတွင် မှတ်ပုံတင်ခြင်း၊ လိုင်စင်ရ ပွဲစားထံမှ အာမခံစျေးနှုန်းများ",
+    "zh": "医院登记，以及持牌经纪人给出的保险报价",
+    "de": "Anmeldung im Krankenhaus und Versicherungsofferten eines zugelassenen Maklers"
+   },
+   "who": {
+    "en": "Hongdam, the hospital and a licensed broker",
+    "th": "หงส์ดำ โรงพยาบาล และนายหน้าที่มีใบอนุญาต",
+    "my": "ဟုန်ဒမ်၊ ဆေးရုံနှင့် လိုင်စင်ရ ပွဲစား",
+    "zh": "鸿丹、医院和持牌经纪人",
+    "de": "Hongdam, das Krankenhaus und ein zugelassener Makler"
+   },
+   "time": {
+    "en": "In the set-up",
+    "th": "ในขั้นเริ่มต้น",
+    "my": "စတင်စီစဉ်ချိန်တွင်",
+    "zh": "在安顿阶段",
+    "de": "In der Einrichtung"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "One person to call: 4 hours of help a month, with renewal dates kept and a note ahead of each",
+    "th": "คนเดียวที่ติดต่อได้ ช่วย 4 ชั่วโมงต่อเดือน เก็บวันต่ออายุไว้ และแจ้งล่วงหน้าก่อนถึงวัน",
+    "my": "ဆက်သွယ်ရန် လူတစ်ဦး - တစ်လလျှင် 4 နာရီ အကူအညီ၊ သက်တမ်းတိုးရက်များကို မှတ်သားထားပြီး နေ့မတိုင်မီ အကြောင်းကြားသည်",
+    "zh": "一位专人对接：每月 4 小时协助，记下各项续期日期，并在到期前提醒",
+    "de": "Eine Ansprechperson: 4 Stunden Hilfe im Monat, die Verlängerungstermine werden geführt, mit einem Hinweis vor jedem"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "按月",
+    "de": "Monatlich"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "฿8,000–15,000",
+   "t": {
+    "en": "Rent a month for a 1-bedroom outside the centre of Chiang Mai (Numbeo contributors)",
+    "th": "ค่าเช่าห้อง 1 ห้องนอนนอกตัวเมืองเชียงใหม่ต่อเดือน (ผู้ร่วมให้ข้อมูล Numbeo)",
+    "my": "ချင်းမိုင်မြို့လယ်ပြင်ပ အိပ်ခန်းတစ်ခန်းတိုက်ခန်း လစဉ်ငှားခ (Numbeo ပံ့ပိုးသူများ)",
+    "zh": "清迈市中心以外一居室的月租（Numbeo 用户提供）",
+    "de": "Miete im Monat für 1 Schlafzimmer ausserhalb des Zentrums von Chiang Mai (Angaben bei Numbeo)"
+   },
+   "src": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+  },
+  {
+   "n": "฿399",
+   "t": {
+    "en": "A postpaid phone plan a month, before VAT (True)",
+    "th": "ค่าโทรศัพท์รายเดือน ก่อน VAT (ทรู)",
+    "my": "လစဉ် ဖုန်းအစီအစဉ်၊ VAT မပါ (True)",
+    "zh": "每月后付费电话套餐，未含增值税（True）",
+    "de": "Ein Handy-Abo im Monat, ohne MWST (True)"
+   },
+   "src": "https://www.true.th/en/postpaid/package/5g-super-max"
+  },
+  {
+   "n": "฿3,900",
+   "t": {
+    "en": "Lowest first-year premium in one long-stay health plan, up to age 50 (Chubb Samaggi)",
+    "th": "เบี้ยปีแรกต่ำสุดของประกันสุขภาพระยะยาวแผนหนึ่ง อายุไม่เกิน 50 (ชับบ์สามัคคี)",
+    "my": "နေထိုင်ချိန်ရှည် ကျန်းမာရေးအစီအစဉ်တစ်ခု၏ ပထမနှစ် အနိမ့်ဆုံး ပရီမီယံ၊ အသက် ၅၀ အထိ (Chubb Samaggi)",
+    "zh": "某长居健康险第一年最低保费，50 岁以下（Chubb Samaggi）",
+    "de": "Tiefste Jahresprämie im ersten Jahr einer Langzeit-Krankenversicherung, bis 50 Jahre (Chubb Samaggi)"
+   },
+   "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+  },
+  {
+   "n": "58",
+   "t": {
+    "en": "Long-term and residential care places in Chiang Mai listed on Mot Dang",
+    "th": "สถานดูแลระยะยาวและบ้านพักผู้สูงอายุในเชียงใหม่ที่มดแดงรวบรวมไว้",
+    "my": "Mot Dang တွင် စာရင်းပြုစုထားသော ချင်းမိုင်ရှိ ရေရှည်စောင့်ရှောက်ရေးနှင့် နေထိုင်စောင့်ရှောက်ရေး နေရာများ",
+    "zh": "Mot Dang 收录的清迈长期照护与养老机构数量",
+    "de": "Einrichtungen für Langzeitpflege und Wohnen in Chiang Mai, die Mot Dang auflistet"
+   },
+   "src": "https://motdang.net/cm/medical/long-care/"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What will my first year cost?",
+   "th": "ปีแรกของคุณจะมีค่าใช้จ่ายเท่าไหร่",
+   "my": "ပထမနှစ် ကုန်ကျစရိတ် ဘယ်လောက်ရှိမလဲ",
+   "zh": "第一年要花多少",
+   "de": "Was kostet das erste Jahr?"
+  },
+  "noscript": {
+   "en": "The first-year bill needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณปีแรกต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ပထမနှစ်ကုန်ကျစရိတ် တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "第一年费用计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Die Rechnung fürs erste Jahr braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "rent",
+     "n": {
+      "en": "Rent",
+      "th": "ค่าเช่า",
+      "my": "အိမ်လခ",
+      "zh": "房租",
+      "de": "Miete"
+     },
+     "min": 8000,
+     "max": 40000,
+     "step": 1000,
+     "start": 15000,
+     "unit": {
+      "en": "a month",
+      "th": "ต่อเดือน",
+      "my": "တစ်လလျှင်",
+      "zh": "每月",
+      "de": "pro Monat"
+     },
+     "money": true
+    }
+   ],
+   "choices": [
+    {
+     "id": "age",
+     "n": {
+      "en": "Your age",
+      "th": "อายุของคุณ",
+      "my": "သင့်အသက်",
+      "zh": "您的年龄",
+      "de": "Ihr Alter"
+     },
+     "options": [
+      {
+       "id": "a50",
+       "n": {
+        "en": "50–60",
+        "th": "50–60",
+        "my": "50–60",
+        "zh": "50–60",
+        "de": "50–60"
+       }
+      },
+      {
+       "id": "a61",
+       "n": {
+        "en": "61–70",
+        "th": "61–70",
+        "my": "61–70",
+        "zh": "61–70",
+        "de": "61–70"
+       }
+      },
+      {
+       "id": "a71",
+       "n": {
+        "en": "71–80",
+        "th": "71–80",
+        "my": "71–80",
+        "zh": "71–80",
+        "de": "71–80"
+       }
+      }
+     ],
+     "start": "a61"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Health insurance, Chubb Samaggi long-stay plan (net premium)",
+      "th": "ประกันสุขภาพ แผนพำนักระยะยาวของชับบ์สามัคคีประกันภัย (เบี้ยสุทธิ)",
+      "my": "ကျန်းမာရေးအာမခံ၊ Chubb Samaggi ၏ ရေရှည်နေထိုင်သူအစီအစဉ် (အသားတင်ကြေး)",
+      "zh": "健康保险，Chubb Samaggi 的长期居留计划（净保费）",
+      "de": "Krankenversicherung, Langaufenthaltsplan von Chubb Samaggi (Nettoprämie)"
+     },
+     "range": [
+      3900,
+      19300
+     ],
+     "when": {
+      "age": [
+       "a50"
+      ]
+     },
+     "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+    },
+    {
+     "n": {
+      "en": "Health insurance, Chubb Samaggi long-stay plan (net premium)",
+      "th": "ประกันสุขภาพ แผนพำนักระยะยาวของชับบ์สามัคคีประกันภัย (เบี้ยสุทธิ)",
+      "my": "ကျန်းမာရေးအာမခံ၊ Chubb Samaggi ၏ ရေရှည်နေထိုင်သူအစီအစဉ် (အသားတင်ကြေး)",
+      "zh": "健康保险，Chubb Samaggi 的长期居留计划（净保费）",
+      "de": "Krankenversicherung, Langaufenthaltsplan von Chubb Samaggi (Nettoprämie)"
+     },
+     "range": [
+      7700,
+      26400
+     ],
+     "when": {
+      "age": [
+       "a61"
+      ]
+     },
+     "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+    },
+    {
+     "n": {
+      "en": "Health insurance, Chubb Samaggi long-stay plan (net premium)",
+      "th": "ประกันสุขภาพ แผนพำนักระยะยาวของชับบ์สามัคคีประกันภัย (เบี้ยสุทธิ)",
+      "my": "ကျန်းမာရေးအာမခံ၊ Chubb Samaggi ၏ ရေရှည်နေထိုင်သူအစီအစဉ် (အသားတင်ကြေး)",
+      "zh": "健康保险，Chubb Samaggi 的长期居留计划（净保费）",
+      "de": "Krankenversicherung, Langaufenthaltsplan von Chubb Samaggi (Nettoprämie)"
+     },
+     "range": [
+      11400,
+      39600
+     ],
+     "when": {
+      "age": [
+       "a71"
+      ]
+     },
+     "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+    },
+    {
+     "n": {
+      "en": "Rent, 12 months",
+      "th": "ค่าเช่า 12 เดือน",
+      "my": "အိမ်လခ 12 လ",
+      "zh": "房租，12 个月",
+      "de": "Miete, 12 Monate"
+     },
+     "range": [
+      12,
+      12
+     ],
+     "per": [
+      "rent"
+     ],
+     "src": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+    },
+    {
+     "n": {
+      "en": "Phone plan, 12 months (True postpaid, before VAT)",
+      "th": "แพ็กเกจโทรศัพท์ 12 เดือน (ทรูรายเดือน ก่อน VAT)",
+      "my": "ဖုန်းပက်ကေ့ချ် 12 လ (True လစဉ်ပေးရန်၊ VAT မပါ)",
+      "zh": "手机套餐，12 个月（True 后付费，未含增值税）",
+      "de": "Handy-Abo, 12 Monate (True Postpaid, ohne MWST)"
+     },
+     "range": [
+      4788,
+      8388
+     ],
+     "src": "https://www.true.th/en/postpaid/package/5g-super-max"
+    }
+   ],
+   "total": {
+    "en": "Your first year in Thailand, spent",
+    "th": "ค่าใช้จ่ายปีแรกในไทย",
+    "my": "ထိုင်းနိုင်ငံတွင် ပထမနှစ် သုံးငွေ",
+    "zh": "在泰国第一年的花费",
+    "de": "Ihr erstes Jahr in Thailand, ausgegeben"
+   },
+   "oursLine": {
+    "en": "Hongdam sets it all up for:",
+    "th": "หงส์ดำตั้งต้นให้ทั้งหมดในราคา:",
+    "my": "ဟုန်ဒမ်က စီစဉ်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹全部安顿，收费：",
+    "de": "Hongdam richtet alles ein für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "Care facilities for older people or people who depend on care come under the Health Business Establishments Act 2016, its ministerial regulations and their operating licences. A 2020 ministerial regulation sets premises, safety and service standards.",
+    "th": "สถานดูแลผู้สูงอายุหรือผู้มีภาวะพึ่งพิงอยู่ภายใต้พระราชบัญญัติสถานประกอบการเพื่อสุขภาพ พ.ศ. 2559 กฎกระทรวงที่เกี่ยวข้อง และใบอนุญาตประกอบกิจการ กฎกระทรวงปี พ.ศ. 2563 กำหนดมาตรฐานด้านสถานที่ ความปลอดภัย และบริการ",
+    "my": "သက်ကြီးရွယ်အို သို့မဟုတ် အားကိုးရသူများ စောင့်ရှောက်ရေးနေရာများသည် 2016 ကျန်းမာရေးလုပ်ငန်းဌာန ဥပဒေ၊ ၎င်း၏ ဝန်ကြီးဌာန စည်းမျဉ်းများနှင့် လုပ်ငန်းလိုင်စင်များ အောက်တွင် ရှိသည်။ 2020 ခုနှစ် ဝန်ကြီးဌာန စည်းမျဉ်းတစ်ခုက အဆောက်အအုံ၊ ဘေးကင်းရေးနှင့် ဝန်ဆောင်မှု စံနှုန်းများကို သတ်မှတ်ထားသည်။",
+    "zh": "老年人及需照护者的照护机构适用2016年《健康营业场所法》、其部长条例及经营许可证。2020年的一项部长条例规定了场地、安全和服务标准。",
+    "de": "Einrichtungen für ältere oder pflegebedürftige Menschen unterstehen dem Health Business Establishments Act 2016, den zugehörigen Ministerialverordnungen und ihren Betriebsbewilligungen. Eine Ministerialverordnung von 2020 legt Standards für Räume, Sicherheit und Leistungen fest."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  },
+  {
+   "t": {
+    "en": "1,203 care facilities were registered with the Department of Health Service Support in October 2026. The government announced on 11 October 2026 that the Ministry of Public Health directs on-site inspections of the registered facilities within two months. The checks cover premises, safety systems and qualified staff.",
+    "th": "เดือนตุลาคม 2569 มีสถานดูแล 1,203 แห่งจดทะเบียนกับกรมสนับสนุนบริการสุขภาพ รัฐบาลประกาศเมื่อ 11 ตุลาคม 2569 ให้กระทรวงสาธารณสุขลงตรวจหน้างานในสถานดูแลที่จดทะเบียนภายในสองเดือน โดยตรวจอาคารสถานที่ ระบบความปลอดภัย และบุคลากรที่มีคุณสมบัติ",
+    "my": "2026 အောက်တိုဘာတွင် စောင့်ရှောက်ရေးနေရာ 1,203 ခုကို ကျန်းမာရေးဝန်ဆောင်မှု ပံ့ပိုးရေးဦးစီးဌာနတွင် မှတ်ပုံတင်ထားသည်။ 2026 အောက်တိုဘာ 11 ရက်တွင် ပြည်သူ့ကျန်းမာရေးဝန်ကြီးဌာနက မှတ်ပုံတင်ထားသော နေရာများကို နှစ်လအတွင်း နေရာတွင်ပင် စစ်ဆေးရန် ညွှန်ကြားကြောင်း အစိုးရက ကြေညာခဲ့သည်။ စစ်ဆေးမှုတွင် အဆောက်အအုံ၊ ဘေးကင်းရေးစနစ်များနှင့် အရည်အချင်းပြည့်မီသော ဝန်ထမ်းများ ပါဝင်သည်။",
+    "zh": "2026年10月，有1,203家照护机构在卫生服务支持司登记。政府于2026年10月11日宣布，公共卫生部要求在两个月内对已登记的机构进行现场检查，内容包括场地、安全系统和合格的工作人员。",
+    "de": "Im Oktober 2026 waren 1,203 Einrichtungen beim Department of Health Service Support registriert. Die Regierung gab am 11. Oktober 2026 bekannt, dass das Gesundheitsministerium Kontrollen vor Ort in den registrierten Einrichtungen innerhalb von zwei Monaten anordnet. Geprüft werden Räume, Sicherheitssysteme und qualifiziertes Personal."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/thai-government-orders-strict-checks-on-1203-elderly-care-facilities"
+  },
+  {
+   "t": {
+    "en": "Thailand separates day care, residential care and nursing-home services into different categories.",
+    "th": "ไทยแบ่งบริการเป็นศูนย์ดูแลตอนกลางวัน การดูแลแบบพักอาศัย และเนอร์สซิ่งโฮม เป็นคนละประเภท",
+    "my": "ထိုင်းတွင် နေ့လယ်စောင့်ရှောက်မှု၊ နေထိုင်စောင့်ရှောက်မှုနှင့် နာစင်းဟုမ်း ဝန်ဆောင်မှုတို့ကို အမျိုးအစား သီးခြားခွဲထားသည်။",
+    "zh": "泰国把日间照护、住宿照护和护理院服务分为不同类别。",
+    "de": "Thailand unterscheidet Tagesbetreuung, Wohnpflege und Pflegeheim-Leistungen als getrennte Kategorien."
+   },
+   "src": "https://www.chiangraitimes.com/expat-life/thailand-senior-care-costs/"
+  },
+  {
+   "t": {
+    "en": "A care home usually asks one month as a deposit, and some ask a fixed ฿20,000. On signing a contract, two months are paid in advance.",
+    "th": "บ้านพักมักเรียกมัดจำหนึ่งเดือน บางแห่งเรียกคงที่ ฿20,000 เมื่อเซ็นสัญญาต้องจ่ายล่วงหน้าสองเดือน",
+    "my": "စောင့်ရှောက်ရေးအိမ်များက များသောအားဖြင့် စရန်ငွေ တစ်လစာ တောင်းပြီး တချို့က သတ်မှတ်ပမာဏ ฿20,000 တောင်းသည်။ စာချုပ်ချုပ်သည့်အခါ နှစ်လစာကို ကြိုတင်ပေးရသည်။",
+    "zh": "养老院通常收一个月押金，有些收固定的฿20,000。签合同时预付两个月费用。",
+    "de": "Ein Heim verlangt meist einen Monat als Kaution, manche einen festen Betrag von ฿20,000. Beim Vertragsabschluss werden zwei Monate im Voraus bezahlt."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "t": {
+    "en": "KBank lists for a foreigner: a passport, a government ID from the home country (a national ID card, driver's licence or household registration), and a paper for the reason for the stay, such as a work permit or a school certificate.",
+    "th": "ธนาคารกสิกรไทยระบุเอกสารของชาวต่างชาติไว้ดังนี้ หนังสือเดินทาง เอกสารประจำตัวที่รัฐบาลประเทศของคุณออกให้ เช่น บัตรประจำตัวประชาชน ใบขับขี่ หรือทะเบียนบ้าน และเอกสารตามเหตุผลที่อยู่ในไทย เช่น ใบอนุญาตทำงานหรือหนังสือรับรองจากสถานศึกษา",
+    "my": "KBank က နိုင်ငံခြားသားအတွက် ပတ်စပို့၊ မိမိနိုင်ငံ အစိုးရထုတ်ပေးသော မှတ်ပုံတင်စာရွက်စာတမ်း (မှတ်ပုံတင်ကတ်၊ ယာဉ်မောင်းလိုင်စင် သို့မဟုတ် အိမ်ထောင်စုစာရင်း) နှင့် ထိုင်းတွင် နေထိုင်ရသည့် အကြောင်းရင်းနှင့်ဆိုင်သော စာရွက် (ဥပမာ အလုပ်လုပ်ခွင့်ပါမစ် သို့မဟုတ် ကျောင်းထောက်ခံစာ) တို့ကို ဖော်ပြထားသည်။",
+    "zh": "KBank 对外国人列出：护照、本国政府签发的身份证件（身份证、驾照或户口簿），以及与居留原因相符的文件，如工作许可证或学校证明。",
+    "de": "KBank nennt für Ausländer: Reisepass, einen amtlichen Ausweis des Heimatlandes (Identitätskarte, Führerausweis oder Haushaltsregister) und ein Papier zum Aufenthaltszweck, etwa eine Arbeitsbewilligung oder eine Schulbestätigung."
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "t": {
+    "en": "SCB's deposit FAQ lists an ID card for opening a savings account, and says a foreigner uses a passport and a work permit.",
+    "th": "คำถามที่พบบ่อยเรื่องเงินฝากของธนาคารไทยพาณิชย์ระบุว่า การเปิดบัญชีออมทรัพย์ใช้บัตรประจำตัว และชาวต่างชาติใช้หนังสือเดินทางพร้อมใบอนุญาตทำงาน",
+    "my": "SCB ၏ ငွေစာရင်းမေးလေ့ရှိသောမေးခွန်းများတွင် စုဆောင်းငွေစာရင်းဖွင့်ရန် မှတ်ပုံတင်ကတ်ကို ဖော်ပြထားပြီး နိုင်ငံခြားသားက ပတ်စပို့နှင့် အလုပ်လုပ်ခွင့်ပါမစ်ကို သုံးရသည်ဟု ဆိုသည်။",
+    "zh": "SCB 的存款常见问题列出开储蓄账户用身份证件，外国人用护照和工作许可证。",
+    "de": "In den Einlagen-FAQ der SCB steht für ein Sparkonto ein Ausweis; Ausländer legen Reisepass und Arbeitsbewilligung vor."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/faq/deposit-faq"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Health insurance, Chubb Samaggi's long-stay plan with a deductible: net premium for the first year, by age. Three plans with inpatient limits of ฿400,000 to ฿600,000, and deductibles of ฿100,000 or ฿200,000",
+    "th": "ประกันสุขภาพ แผนพำนักระยะยาวของชับบ์สามัคคีประกันภัยแบบมีส่วนร่วมจ่าย: เบี้ยสุทธิปีแรกตามอายุ มี 3 แผน วงเงินผู้ป่วยในตั้งแต่ ฿400,000 ถึง ฿600,000 ส่วนร่วมจ่าย ฿100,000 หรือ ฿200,000",
+    "my": "ကျန်းမာရေးအာမခံ၊ Chubb Samaggi ၏ ရေရှည်နေထိုင်သူအစီအစဉ် (ကိုယ်တိုင်ပေးရမည့်ပမာဏပါ) - ပထမနှစ် အသားတင်ကြေးကို အသက်အလိုက်။ အစီအစဉ်သုံးခု၊ ဆေးရုံတက်ကုသမှု ကန့်သတ်ငွေ ฿400,000 မှ ฿600,000၊ ကိုယ်တိုင်ပေးရမည့်ပမာဏ ฿100,000 သို့မဟုတ် ฿200,000",
+    "zh": "健康保险，Chubb Samaggi 附免赔额的长期居留计划：第一年净保费，按年龄。共三个计划，住院额度 ฿400,000 至 ฿600,000，免赔额 ฿100,000 或 ฿200,000",
+    "de": "Krankenversicherung, Langaufenthaltsplan von Chubb Samaggi mit Selbstbehalt: Nettoprämie für das erste Jahr, nach Alter. Drei Pläne mit stationärem Höchstbetrag von ฿400,000 bis ฿600,000 und Selbstbehalt von ฿100,000 oder ฿200,000"
+   },
+   "p": {
+    "en": "Up to 50: ฿3,900 to ฿11,900. Ages 51–60: ฿6,000 to ฿19,300. Ages 61–70: ฿7,700 to ฿26,400. Ages 71–80: ฿11,400 to ฿39,600",
+    "th": "ถึงอายุ 50: ฿3,900 ถึง ฿11,900 อายุ 51–60: ฿6,000 ถึง ฿19,300 อายุ 61–70: ฿7,700 ถึง ฿26,400 อายุ 71–80: ฿11,400 ถึง ฿39,600",
+    "my": "အသက် 50 အထိ ฿3,900 မှ ฿11,900၊ အသက် 51–60 ฿6,000 မှ ฿19,300၊ အသက် 61–70 ฿7,700 မှ ฿26,400၊ အသက် 71–80 ฿11,400 မှ ฿39,600",
+    "zh": "50 岁以下：฿3,900 至 ฿11,900；51–60 岁：฿6,000 至 ฿19,300；61–70 岁：฿7,700 至 ฿26,400；71–80 岁：฿11,400 至 ฿39,600",
+    "de": "Bis 50: ฿3,900 bis ฿11,900. 51–60 Jahre: ฿6,000 bis ฿19,300. 61–70 Jahre: ฿7,700 bis ฿26,400. 71–80 Jahre: ฿11,400 bis ฿39,600"
+   },
+   "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+  },
+  {
+   "t": {
+    "en": "Phone plan, postpaid (True 5G SUPER Max): the monthly price, before VAT",
+    "th": "แพ็กเกจโทรศัพท์รายเดือน (ทรู 5G SUPER Max): ราคาต่อเดือน ก่อน VAT",
+    "my": "ဖုန်းပက်ကေ့ချ် လစဉ်ပေးရန် (True 5G SUPER Max) - လစဉ်စျေးနှုန်း၊ VAT မပါ",
+    "zh": "手机后付费套餐（True 5G SUPER Max）：月费，未含增值税",
+    "de": "Handy-Abo mit Rechnung (True 5G SUPER Max): Monatspreis ohne MWST"
+   },
+   "p": {
+    "en": "From ฿399 (100 minutes, 20 GB) to ฿699 (300 minutes, 60 GB); unlimited 5G from ฿1,199",
+    "th": "ตั้งแต่ ฿399 (โทร 100 นาที เน็ต 20 GB) ถึง ฿699 (โทร 300 นาที เน็ต 60 GB) เน็ต 5G ไม่จำกัดเริ่มที่ ฿1,199",
+    "my": "฿399 (ဖုန်းခေါ် 100 မိနစ်၊ ဒေတာ 20 GB) မှ ฿699 (300 မိနစ်၊ 60 GB) အထိ၊ အကန့်အသတ်မဲ့ 5G ကို ฿1,199 မှ စတင်သည်",
+    "zh": "฿399（通话 100 分钟、流量 20 GB）至 ฿699（通话 300 分钟、流量 60 GB）；不限量 5G 套餐从 ฿1,199 起",
+    "de": "Von ฿399 (100 Minuten, 20 GB) bis ฿699 (300 Minuten, 60 GB); unbegrenztes 5G ab ฿1,199"
+   },
+   "src": "https://www.true.th/en/postpaid/package/5g-super-max"
+  },
+  {
+   "t": {
+    "en": "Rent for a 1-bedroom in Chiang Mai, a month (Numbeo, from its contributors' entries)",
+    "th": "ค่าเช่าห้องนอนเดียวในเชียงใหม่ ต่อเดือน (Numbeo จากข้อมูลที่ผู้ร่วมกรอก)",
+    "my": "ချင်းမိုင်တွင် အိပ်ခန်းတစ်ခန်း အိမ်လခ တစ်လ (Numbeo၊ ပါဝင်ရေးသူများ၏ အချက်အလက်)",
+    "zh": "清迈一居室月租（Numbeo，来自用户填报）",
+    "de": "Miete für eine Wohnung mit einem Schlafzimmer in Chiang Mai, pro Monat (Numbeo, aus Einträgen seiner Nutzer)"
+   },
+   "p": {
+    "en": "Outside the centre ฿8,000 to ฿15,000; in the centre ฿12,000 to ฿24,000",
+    "th": "นอกตัวเมือง ฿8,000 ถึง ฿15,000 ในตัวเมือง ฿12,000 ถึง ฿24,000",
+    "my": "မြို့လယ်ပြင်ပ ฿8,000 မှ ฿15,000၊ မြို့လယ် ฿12,000 မှ ฿24,000",
+    "zh": "市中心以外 ฿8,000 至 ฿15,000；市中心 ฿12,000 至 ฿24,000",
+    "de": "Ausserhalb des Zentrums ฿8,000 bis ฿15,000; im Zentrum ฿12,000 bis ฿24,000"
+   },
+   "src": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+  },
+  {
+   "t": {
+    "en": "A Chiang Mai agent's own page: full assistance with translation, a residence certificate, an ATM card",
+    "th": "หน้าบริการของตัวแทนในเชียงใหม่: ช่วยเหลือเต็มรูปแบบพร้อมแปล ใบรับรองถิ่นที่อยู่ บัตร ATM",
+    "my": "ချင်းမိုင်ရှိ ကိုယ်စားလှယ်တစ်ဦး၏ ကိုယ်ပိုင်စာမျက်နှာ: ဘာသာပြန်ပါ အပြည့်အစုံ အကူအညီ၊ နေထိုင်ကြောင်းလက်မှတ်၊ ATM ကတ်",
+    "zh": "清迈一家代办机构自己的页面：含翻译的全程协助、居住证明、ATM 卡",
+    "de": "Eigene Seite eines Vermittlers in Chiang Mai: volle Begleitung mit Übersetzung, Wohnsitzbestätigung, ATM-Karte"
+   },
+   "p": {
+    "en": "฿800 for the assistance, ฿500 for the residence certificate, ฿300 for the ATM card",
+    "th": "ค่าบริการช่วยเหลือ ฿800 ใบรับรองถิ่นที่อยู่ ฿500 บัตร ATM ฿300",
+    "my": "အကူအညီ ฿800၊ နေထိုင်ကြောင်းလက်မှတ် ฿500၊ ATM ကတ် ฿300",
+    "zh": "协助费 ฿800，居住证明 ฿500，ATM 卡 ฿300",
+    "de": "฿800 Betreuung, ฿500 Wohnsitzbestätigung, ฿300 ATM-Karte"
+   },
+   "src": "https://www.chiangmailocator.com/wiki-open-a-bank-account-in-thailand-p179"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a care home in Chiang Mai cost?",
+    "th": "บ้านพักคนชราในเชียงใหม่ราคาเท่าไหร่",
+    "my": "ချင်းမိုင်ရှိ စောင့်ရှောက်ရေးအိမ် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "清迈的养老院一个月要多少钱",
+    "de": "Was kostet ein Pflegeheim in Chiang Mai?"
+   },
+   "a": {
+    "en": "At Ban Sabai Village in Chiang Mai, a standard room with breakfast is ฿67,000 to ฿73,000 a month. Care is billed separately: ฿27,000 for shared care 3 to 4 hours a day, ฿130,000 for one-to-one care around the clock.",
+    "th": "ที่ Ban Sabai Village ในเชียงใหม่ ห้องมาตรฐานรวมอาหารเช้าเดือนละ ฿67,000 ถึง ฿73,000 ค่าดูแลคิดแยก ฿27,000 สำหรับดูแลร่วมกับผู้อื่น 3 ถึง 4 ชั่วโมงต่อวัน และ ฿130,000 สำหรับดูแลตัวต่อตัวตลอด 24 ชั่วโมง",
+    "my": "ချင်းမိုင်ရှိ Ban Sabai Village တွင် စံအခန်းနှင့် နံနက်စာမှာ တစ်လ ฿67,000 မှ ฿73,000 ဖြစ်သည်။ စောင့်ရှောက်ခကို သီးခြားတောင်းသည်၊ မျှဝေ၍ တစ်နေ့ 3 နာရီမှ 4 နာရီအတွက် ฿27,000၊ တစ်ဦးချင်း 24 နာရီအတွက် ฿130,000။",
+    "zh": "清迈 Ban Sabai Village 的标准房含早餐每月฿67,000至฿73,000。护理费另计：合住护理每天3至4小时฿27,000，一对一全天候护理฿130,000。",
+    "de": "Im Ban Sabai Village in Chiang Mai kostet ein Standardzimmer mit Frühstück ฿67,000 bis ฿73,000 im Monat. Die Pflege wird getrennt verrechnet: ฿27,000 für gemeinsame Betreuung 3 bis 4 Stunden am Tag, ฿130,000 für Einzelbetreuung rund um die Uhr."
+   },
+   "src": "https://thailandstarterkit.com/moving/retirement-home-thailand/"
+  },
+  {
+   "q": {
+    "en": "How much does a caregiver cost?",
+    "th": "ผู้ดูแลผู้สูงอายุรายเดือนราคาเท่าไหร่",
+    "my": "စောင့်ရှောက်သူ တစ်ဦး ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "请一名护工要多少钱",
+    "de": "Was kostet eine Pflegekraft?"
+   },
+   "a": {
+    "en": "ElderThai, an agency, lists ฿1,200 for 4 hours, ฿2,200 for 8 hours and ฿3,000 for 24-hour cover. On the same page, hiring a helper privately is about ฿30,000 a month.",
+    "th": "ElderThai เอเจนซี่แห่งหนึ่ง ระบุราคา ฿1,200 ต่อ 4 ชั่วโมง ฿2,200 ต่อ 8 ชั่วโมง และ ฿3,000 ต่อ 24 ชั่วโมง ในหน้าเดียวกันระบุว่าจ้างผู้ช่วยเองประมาณเดือนละ ฿30,000",
+    "my": "အေဂျင်စီတစ်ခုဖြစ်သော ElderThai က 4 နာရီ ฿1,200၊ 8 နာရီ ฿2,200 နှင့် 24 နာရီ စောင့်ရှောက်မှု ฿3,000 ဟု ဖော်ပြထားသည်။ ထိုစာမျက်နှာတွင်ပင် ကိုယ်တိုင် လက်ထောက်ငှားလျှင် တစ်လ ฿30,000 ခန့်ဟု ဆိုသည်။",
+    "zh": "中介机构 ElderThai 的报价是：4小时฿1,200，8小时฿2,200，24小时฿3,000。同一页面写明，自己雇帮手约每月฿30,000。",
+    "de": "Die Agentur ElderThai nennt ฿1,200 für 4 Stunden, ฿2,200 für 8 Stunden und ฿3,000 für 24 Stunden. Auf derselben Seite steht, dass eine privat angestellte Hilfe etwa ฿30,000 im Monat kostet."
+   },
+   "src": "https://www.elderthai.com"
+  },
+  {
+   "q": {
+    "en": "Is there a government care home in Chiang Mai?",
+    "th": "มีบ้านพักคนชราของรัฐในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်တွင် အစိုးရ စောင့်ရှောက်ရေးအိမ် ရှိသလား",
+    "zh": "清迈有政府办的养老院吗",
+    "de": "Gibt es in Chiang Mai ein staatliches Pflegeheim?"
+   },
+   "a": {
+    "en": "The Thammapakorn Social Welfare Development Center for Older Persons is in Chiang Mai, and its website carries the copyright of the Department of Older Persons. It links a fact-finding form for older persons who wish to use its services, and staff can be reached on 053-278573 and 053-281206.",
+    "th": "ศูนย์พัฒนาการจัดสวัสดิการสังคมผู้สูงอายุบ้านธรรมปกรณ์ตั้งอยู่ที่เชียงใหม่ เว็บไซต์ของศูนย์ระบุลิขสิทธิ์ของกรมกิจการผู้สูงอายุ มีแบบสอบข้อเท็จจริงสำหรับผู้สูงอายุที่ประสงค์เข้าใช้บริการ และติดต่อเจ้าหน้าที่ได้ที่ 053-278573 และ 053-281206",
+    "my": "Thammapakorn ဟု ခေါ်သော သက်ကြီးရွယ်အိုများ လူမှုဖူလုံရေး ဖွံ့ဖြိုးရေးစင်တာသည် ချင်းမိုင်တွင် ရှိပြီး ၎င်း၏ ဝက်ဘ်ဆိုက်တွင် သက်ကြီးရွယ်အိုရေးရာဦးစီးဌာန၏ မူပိုင်ခွင့်ကို ဖော်ပြထားသည်။ ၎င်း၏ ဝန်ဆောင်မှုကို အသုံးပြုလိုသော သက်ကြီးရွယ်အိုများအတွက် အချက်အလက်စုံစမ်းစာရွက်ကို လင့်ခ်ချိတ်ထားပြီး ဝန်ထမ်းများကို 053-278573 နှင့် 053-281206 တွင် ဆက်သွယ်နိုင်သည်။",
+    "zh": "清迈有一所老年人社会福利发展中心（Thammapakorn），其网站标有老年人事务厅的版权。网站链接了一份供有意使用其服务的老年人填写的情况调查表，可拨打053-278573和053-281206联系工作人员。",
+    "de": "Das Thammapakorn Social Welfare Development Center for Older Persons befindet sich in Chiang Mai, und seine Website trägt das Urheberrecht des Department of Older Persons. Sie verlinkt ein Formular zur Erhebung der Verhältnisse für ältere Personen, die seine Leistungen nutzen möchten; das Personal ist unter 053-278573 und 053-281206 erreichbar."
+   },
+   "src": "https://thammapakorn.dop.go.th/en"
+  },
+  {
+   "q": {
+    "en": "Can foreigners open a bank account in Thailand?",
+    "th": "ชาวต่างชาติเปิดบัญชีในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားများ ထိုင်းတွင် ဘဏ်အကောင့် ဖွင့်နိုင်ပါသလား။",
+    "zh": "外国人可以在泰国开银行账户吗？",
+    "de": "Können Ausländer in Thailand ein Bankkonto eröffnen?"
+   },
+   "a": {
+    "en": "Yes, with the papers a bank lists. KBank's page for opening an account is written for foreigners and residents of Thailand. It asks a foreigner for a passport and a paper for the reason for the stay, such as a work permit.",
+    "th": "ได้ ตามเอกสารที่ธนาคารกำหนด หน้าเปิดบัญชีของธนาคารกสิกรไทยเขียนไว้สำหรับชาวต่างชาติและผู้พำนักในไทย โดยขอหนังสือเดินทาง และเอกสารตามเหตุผลที่อยู่ในไทย เช่น ใบอนุญาตทำงาน",
+    "my": "ဖွင့်နိုင်သည်၊ ဘဏ်က သတ်မှတ်သော စာရွက်စာတမ်းများဖြင့် ဖြစ်သည်။ KBank ၏ အကောင့်ဖွင့်စာမျက်နှာသည် နိုင်ငံခြားသားနှင့် ထိုင်းတွင် နေထိုင်သူများအတွက် ရေးထားသည်။ နိုင်ငံခြားသားထံမှ ပတ်စပို့နှင့် ထိုင်းတွင်နေရသည့် အကြောင်းရင်းဆိုင်ရာ စာရွက် (ဥပမာ အလုပ်လုပ်ခွင့်ပါမစ်) တောင်းသည်။",
+    "zh": "可以，按银行列出的文件办理。KBank 的开户页面面向外国人和在泰居住者，向外国人要求护照，以及与居留原因相符的文件，如工作许可证。",
+    "de": "Ja, mit den Unterlagen, die die Bank nennt. Die Seite von KBank zur Kontoeröffnung richtet sich an Ausländer und Personen mit Wohnsitz in Thailand. Von Ausländern verlangt sie einen Reisepass und ein Papier zum Aufenthaltsgrund, etwa eine Arbeitsbewilligung."
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "q": {
+    "en": "How much does a month in Chiang Mai cost?",
+    "th": "ค่าใช้จ่ายต่อเดือนในเชียงใหม่ประมาณเท่าไร",
+    "my": "ချင်းမိုင်တွင် တစ်လ ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "在清迈一个月要花多少钱？",
+    "de": "Was kostet ein Monat in Chiang Mai?"
+   },
+   "a": {
+    "en": "Numbeo's contributors put a 1-bedroom outside the centre at ฿8,000 to ฿15,000 a month, and in the centre at ฿12,000 to ฿24,000.",
+    "th": "ข้อมูลจากผู้ให้ข้อมูลของ Numbeo ระบุค่าเช่าห้อง 1 ห้องนอนนอกใจกลางเมืองเดือนละ ฿8,000 ถึง ฿15,000 และในใจกลางเมือง ฿12,000 ถึง ฿24,000",
+    "my": "Numbeo တွင် ပါဝင်ရေးသားသူများ၏ အချက်အလက်အရ မြို့လယ်ပြင်ပရှိ အိပ်ခန်းတစ်ခန်းပါ အခန်း၏ လခသည် တစ်လ ฿8,000 မှ ฿15,000 ဖြစ်ပြီး မြို့လယ်တွင် ฿12,000 မှ ฿24,000 ဖြစ်သည်။",
+    "zh": "按 Numbeo 用户提供的数据，市中心以外的一居室月租为 ฿8,000 至 ฿15,000，市中心为 ฿12,000 至 ฿24,000。",
+    "de": "Nach den Einträgen der Numbeo-Mitwirkenden kostet eine 1-Zimmer-Wohnung ausserhalb des Zentrums ฿8,000 bis ฿15,000 im Monat, im Zentrum ฿12,000 bis ฿24,000."
+   },
+   "src": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+  },
+  {
+   "q": {
+    "en": "What does health insurance cost after 60?",
+    "th": "ประกันสุขภาพหลังอายุ 60 ราคาเท่าไร",
+    "my": "အသက် 60 ကျော်လျှင် ကျန်းမာရေးအာမခံ ဘယ်လောက်ကျသလဲ။",
+    "zh": "60 岁以后健康保险要多少钱？",
+    "de": "Was kostet die Krankenversicherung nach 60?"
+   },
+   "a": {
+    "en": "In Chubb Samaggi's long-stay plan with a deductible, the first-year net premium at ages 61–70 is ฿7,700 to ฿26,400, and at 71–80 it is ฿11,400 to ฿39,600, across three plans with inpatient limits of ฿400,000 to ฿600,000.",
+    "th": "แผนประกันพำนักระยะยาวแบบมีค่าความรับผิดส่วนแรกของชับบ์สามัคคี เบี้ยสุทธิปีแรกสำหรับอายุ 61–70 อยู่ที่ ฿7,700 ถึง ฿26,400 และอายุ 71–80 อยู่ที่ ฿11,400 ถึง ฿39,600 จากสามแผนที่มีวงเงินผู้ป่วยใน ฿400,000 ถึง ฿600,000",
+    "my": "Chubb Samaggi ၏ ကိုယ်တိုင်ခံစားငွေပါသော ရေရှည်နေထိုင်သူ အာမခံအစီအစဉ်တွင် ပထမနှစ် ပရီမီယံသည် အသက် 61–70 အတွက် ฿7,700 မှ ฿26,400၊ အသက် 71–80 အတွက် ฿11,400 မှ ฿39,600 ဖြစ်သည်။ အစီအစဉ် သုံးမျိုး၏ ဆေးရုံတက်ကုသစရိတ် အကန့်အသတ်မှာ ฿400,000 မှ ฿600,000 ဖြစ်သည်။",
+    "zh": "Chubb Samaggi 带自付额的长期居留保险，首年净保费在 61–70 岁为 ฿7,700 至 ฿26,400，71–80 岁为 ฿11,400 至 ฿39,600；三个方案的住院限额为 ฿400,000 至 ฿600,000。",
+    "de": "Im Long-Stay-Plan von Chubb Samaggi mit Selbstbehalt liegt die Nettoprämie im ersten Jahr mit 61–70 Jahren bei ฿7,700 bis ฿26,400, mit 71–80 Jahren bei ฿11,400 bis ฿39,600; die drei Pläne haben stationäre Limiten von ฿400,000 bis ฿600,000."
+   },
+   "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+  }
+ ],
+ "related": [
+  "bank-account",
+  "visas",
+  "stay-rent",
+  "doctor",
+  "elder-care",
+  "interp"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: long-term and residential care places in Chiang Mai",
+    "th": "มดแดง: สถานดูแลระยะยาวและบ้านพักผู้สูงอายุในเชียงใหม่",
+    "my": "Mot Dang - ချင်းမိုင်ရှိ ရေရှည်စောင့်ရှောက်ရေးနှင့် နေထိုင်စောင့်ရှောက်ရေး နေရာများ",
+    "zh": "Mot Dang：清迈的长期照护与养老机构",
+    "de": "Mot Dang: Einrichtungen für Langzeitpflege und Wohnen in Chiang Mai"
+   },
+   "href": "https://motdang.net/cm/medical/long-care/"
+  },
+  {
+   "t": {
+    "en": "KBank: papers a foreigner brings to open an account",
+    "th": "ธนาคารกสิกรไทย: เอกสารที่ชาวต่างชาติใช้เปิดบัญชี",
+    "my": "KBank: နိုင်ငံခြားသားက အကောင့်ဖွင့်ရန် ယူလာရသည့် စာရွက်များ",
+    "zh": "KBank：外国人开户所需文件",
+    "de": "KBank: Unterlagen für Ausländer bei der Kontoeröffnung"
+   },
+   "href": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "t": {
+    "en": "Numbeo: cost of living in Chiang Mai",
+    "th": "Numbeo: ค่าครองชีพในเชียงใหม่",
+    "my": "Numbeo: ချင်းမိုင် နေထိုင်စရိတ်",
+    "zh": "Numbeo：清迈生活成本",
+    "de": "Numbeo: Lebenskosten in Chiang Mai"
+   },
+   "href": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+  }
+ ],
+ "glyphs": [
+  "passport",
+  "home",
+  "sun"
+ ]
+}

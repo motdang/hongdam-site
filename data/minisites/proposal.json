@@ -1,0 +1,754 @@
+{
+ "id": "proposal",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A buyer, a partner, a bank, an investor or a visa office reads a document before it answers. A proposal or a business plan is that document, in Thai or English.",
+  "th": "ผู้ซื้อ พันธมิตร ธนาคาร นักลงทุน หรือสำนักงานวีซ่า อ่านเอกสารก่อนตอบรับ ข้อเสนอหรือแผนธุรกิจคือเอกสารนั้น เป็นภาษาไทยหรืออังกฤษ",
+  "my": "ဝယ်သူ၊ မိတ်ဖက်၊ ဘဏ်၊ ရင်းနှီးမြှုပ်နှံသူ သို့မဟုတ် ဗီဇာရုံးတို့သည် အဖြေမပေးမီ စာတမ်းတစ်ခု ဖတ်ကြသည်။ အဆိုပြုချက် သို့မဟုတ် စီးပွားရေးအစီအစဉ်သည် ထိုစာတမ်းဖြစ်ပြီး ထိုင်းဘာသာ သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် ရေးသည်။",
+  "zh": "买家、合作方、银行、投资人或签证办公室，在答复之前会先读一份文件。提案或商业计划书就是这份文件，用泰语或英语撰写。",
+  "de": "Käufer, Partner, Banken, Investoren und Visumsstellen lesen ein Dokument, bevor sie antworten. Ein Angebot oder ein Businessplan ist dieses Dokument, auf Thai oder Englisch."
+ },
+ "n": {
+  "de": "Angebot oder Businessplan"
+ },
+ "l": {
+  "de": "Für einen Käufer, einen Partner, eine Bank oder ein Visum."
+ },
+ "steps": [
+  {
+   "db": "manicule",
+   "t": {
+    "en": "You choose a proposal or a business plan, and Thai or English",
+    "th": "คุณเลือกข้อเสนอหรือแผนธุรกิจ และภาษาไทยหรืออังกฤษ",
+    "my": "သင်က အဆိုပြုချက် သို့မဟုတ် စီးပွားရေးအစီအစဉ်ကို ရွေးပြီး ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာကို ရွေးသည်",
+    "zh": "您选择提案或商业计划书，以及泰语或英语",
+    "de": "Sie wählen ein Angebot oder einen Businessplan, auf Thai oder Englisch"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The document is written for its reader: a buyer or partner, a bank, an investor or a visa office",
+    "th": "เขียนเอกสารสำหรับผู้อ่าน คือผู้ซื้อหรือพันธมิตร ธนาคาร นักลงทุน หรือสำนักงานวีซ่า",
+    "my": "စာတမ်းကို ဖတ်မည့်သူအတွက် ရေးသည် - ဝယ်သူ သို့မဟုတ် မိတ်ဖက်၊ ဘဏ်၊ ရင်းနှီးမြှုပ်နှံသူ သို့မဟုတ် ဗီဇာရုံး",
+    "zh": "按读者来写：买家或合作方、银行、投资人或签证办公室",
+    "de": "Das Dokument wird für seine Leser geschrieben: Käufer oder Partner, Bank, Investor oder Visumsbüro"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "abacus",
+   "t": {
+    "en": "In a business plan, the numbers are laid out",
+    "th": "ในแผนธุรกิจ ตัวเลขถูกจัดวางให้เห็นชัด",
+    "my": "စီးပွားရေးအစီအစဉ်တွင် ကိန်းဂဏန်းများကို ထင်ရှားစွာ ဖော်ပြသည်",
+    "zh": "商业计划书里，数字清楚列出",
+    "de": "Im Businessplan werden die Zahlen dargelegt"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "With the text",
+    "th": "พร้อมกับเนื้อหา",
+    "my": "စာသားနှင့်အတူ",
+    "zh": "与正文同步",
+    "de": "Mit dem Text"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The finished proposal or plan reaches you, in Thai or English",
+    "th": "ส่งข้อเสนอหรือแผนที่เสร็จแล้วให้คุณ เป็นภาษาไทยหรืออังกฤษ",
+    "my": "ပြီးစီးသော အဆိုပြုချက် သို့မဟုတ် အစီအစဉ်ကို သင့်ထံ ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် ပို့ပေးသည်",
+    "zh": "成稿的提案或计划书交到您手里，泰语或英语",
+    "de": "Das fertige Angebot oder der fertige Plan geht an Sie, auf Thai oder Englisch"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "8",
+   "t": {
+    "en": "Sections in the traditional business plan that the US Small Business Administration (SBA) describes, the kind lenders and investors commonly request",
+    "th": "ส่วนในแผนธุรกิจแบบดั้งเดิมที่ SBA (หน่วยงานธุรกิจขนาดเล็กของสหรัฐฯ) อธิบายไว้ ซึ่งผู้ให้กู้และนักลงทุนมักขอ",
+    "my": "အမေရိကန် စီးပွားရေးလုပ်ငန်းငယ်များ စီမံခန့်ခွဲရေးအဖွဲ့ (SBA) ဖော်ပြသော ရိုးရာစီးပွားရေးအစီအစဉ်၏ အပိုင်းအရေအတွက်၊ ချေးငွေပေးသူနှင့် ရင်းနှီးမြှုပ်နှံသူတို့ မကြာခဏ တောင်းသည့်အမျိုးအစား",
+    "zh": "美国小企业管理局（SBA）所述传统商业计划书的部分数量，贷款方和投资人通常会索要这种计划书",
+    "de": "Teile des klassischen Businessplans, den die US-Behörde für kleine Unternehmen (SBA) beschreibt und den Kreditgeber und Investoren üblicherweise verlangen"
+   },
+   "src": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+  },
+  {
+   "n": "12",
+   "t": {
+    "en": "Items the Thailand Board of Investment (BOI) lists for the pitch deck, its name for a startup business plan, in a Smart visa S application",
+    "th": "หัวข้อที่สำนักงานคณะกรรมการส่งเสริมการลงทุน (BOI) ระบุสำหรับ pitch deck ซึ่งเป็นชื่อที่ใช้เรียกแผนธุรกิจของสตาร์ตอัป ในการยื่น Smart visa S",
+    "my": "ထိုင်းနိုင်ငံ ရင်းနှီးမြှုပ်နှံမှုဘုတ်အဖွဲ့ (BOI) က Smart visa S လျှောက်လွှာအတွက် pitch deck (စတားတပ် စီးပွားရေးအစီအစဉ်ကို ခေါ်သည့်အမည်) တွင် ဖော်ပြထားသော အချက်အရေအတွက်",
+    "zh": "泰国投资促进委员会（BOI）在 Smart 签证 S 类申请中为 pitch deck（其对创业商业计划书的称呼）列出的项目数",
+    "de": "Punkte, die das thailändische Board of Investment (BOI) für das Pitch Deck, seinen Namen für einen Startup-Businessplan, im Antrag auf das Smart-Visum S aufführt"
+   },
+   "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "n": "11",
+   "t": {
+    "en": "Sections in Xero's template for a proposal to a prospective client",
+    "th": "ส่วนในแม่แบบข้อเสนอถึงลูกค้าที่คาดหวังของ Xero",
+    "my": "မျှော်လင့်ထားသော ဖောက်သည်ထံ အဆိုပြုချက်အတွက် Xero ၏ ပုံစံရှိ အပိုင်းအရေအတွက်",
+    "zh": "Xero 面向潜在客户的提案模板中的部分数量",
+    "de": "Teile in der Xero-Vorlage für ein Angebot an einen möglichen Kunden"
+   },
+   "src": "https://www.xero.com/hk/guides/write-a-business-proposal/"
+  },
+  {
+   "n": "3",
+   "t": {
+    "en": "Years of audited financial statements that one Siam Commercial Bank (SCB) SME loan page lists for a company",
+    "th": "จำนวนปีของงบการเงินที่ผ่านการตรวจสอบ ซึ่งหน้าสินเชื่อ SME หน้าหนึ่งของธนาคารไทยพาณิชย์ (SCB) ระบุสำหรับนิติบุคคล",
+    "my": "SCB (Siam Commercial Bank) ၏ SME ချေးငွေစာမျက်နှာတစ်ခုက ကုမ္ပဏီအတွက် ဖော်ပြသော စာရင်းစစ်ပြီး ဘဏ္ဍာရေးရှင်းတမ်း နှစ်အရေအတွက်",
+    "zh": "SCB（泰国汇商银行）一个中小企业贷款页面为公司列出的经审计财务报表年数",
+    "de": "Jahre geprüfter Jahresabschlüsse, die eine KMU-Kreditseite der Siam Commercial Bank (SCB) für ein Unternehmen aufführt"
+   },
+   "src": "https://www.scb.co.th/th/sme-banking/business-loan/secured-loan/sme-total-solution"
+  }
+ ],
+ "toy": {
+  "kind": "checklist",
+  "h": {
+   "en": "What does your plan already have?",
+   "th": "แผนของคุณมีอะไรอยู่แล้วบ้าง",
+   "my": "သင့်အစီအစဉ်တွင် ဘာတွေ ပါပြီးသားလဲ",
+   "zh": "您的计划书已经有什么",
+   "de": "Was hat Ihr Plan schon?"
+  },
+  "noscript": {
+   "en": "The ticking needs JavaScript. The parts a plan is made of are described in the facts below.",
+   "th": "การติ๊กต้องใช้ JavaScript ส่วนที่แผนประกอบด้วยอธิบายไว้ในข้อเท็จจริงด้านล่าง",
+   "my": "အမှန်ခြစ်ရန် JavaScript လိုအပ်သည်။ အစီအစဉ်ကို ဖွဲ့စည်းထားသော အပိုင်းများကို အောက်ပါ အချက်အလက်များတွင် ဖော်ပြထားသည်။",
+   "zh": "勾选功能需要 JavaScript。计划书由哪些部分组成，见下方的事实。",
+   "de": "Das Abhaken braucht JavaScript. Aus welchen Teilen ein Plan besteht, steht unten bei den Fakten."
+  },
+  "data": {
+   "items": [
+    {
+     "id": "summary",
+     "n": {
+      "en": "A one-page summary",
+      "th": "บทสรุปหนึ่งหน้า",
+      "my": "စာမျက်နှာတစ်မျက်နှာ အကျဉ်းချုပ်",
+      "zh": "一页摘要",
+      "de": "Eine Seite Zusammenfassung"
+     },
+     "why": {
+      "en": "Thailand's Board of Investment (BOI) lists a 1-page executive summary first in its Smart visa S pitch deck, and the SBA's plan opens with one.",
+      "th": "สำนักงานคณะกรรมการส่งเสริมการลงทุน (BOI) ระบุบทสรุปผู้บริหาร 1 หน้าเป็นข้อแรกของ pitch deck สำหรับ Smart visa S และแผนของ SBA ก็เริ่มด้วยส่วนนี้",
+      "my": "ထိုင်းနိုင်ငံ ရင်းနှီးမြှုပ်နှံမှုဘုတ်အဖွဲ့ (BOI) သည် Smart visa S pitch deck စာရင်း၏ ပထမဆုံးတွင် စာမျက်နှာ 1 မျက်နှာ အမှုဆောင်အကျဉ်းချုပ်ကို ဖော်ပြပြီး SBA ၏ အစီအစဉ်လည်း ၎င်းဖြင့် စသည်။",
+      "zh": "泰国投资促进委员会（BOI）在 Smart 签证 S 类的 pitch deck 清单中，把 1 页执行摘要列在第一项，SBA 的计划书也以它开头。",
+      "de": "Das Board of Investment (BOI) Thailands nennt in der Pitch-Deck-Liste für das Smart-Visum S zuerst eine einseitige Zusammenfassung, und auch der SBA-Plan beginnt damit."
+     },
+     "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+    },
+    {
+     "id": "market",
+     "n": {
+      "en": "The market and its trends",
+      "th": "ตลาดและแนวโน้ม",
+      "my": "ဈေးကွက်နှင့် လမ်းကြောင်းများ",
+      "zh": "市场与趋势",
+      "de": "Der Markt und seine Trends"
+     },
+     "why": {
+      "en": "The SBA's plan has a market analysis of the industry and the target market, and the BOI's list asks for the industry, the competition and the trends.",
+      "th": "แผนของ SBA มีการวิเคราะห์ตลาดของอุตสาหกรรมและกลุ่มเป้าหมาย และรายการของ BOI ขอคำอธิบายอุตสาหกรรม คู่แข่ง และแนวโน้ม",
+      "my": "SBA ၏ အစီအစဉ်တွင် လုပ်ငန်းနယ်ပယ်နှင့် ပစ်မှတ်ဈေးကွက်ကို ခွဲခြမ်းစိတ်ဖြာချက် ပါပြီး BOI ၏ စာရင်းက လုပ်ငန်းနယ်ပယ်၊ ပြိုင်ဘက်များနှင့် လမ်းကြောင်းများကို တောင်းသည်။",
+      "zh": "SBA 的计划书有关于行业和目标市场的市场分析，BOI 的清单则要求写明行业、竞争和趋势。",
+      "de": "Der SBA-Plan enthält eine Marktanalyse zu Branche und Zielmarkt; die BOI-Liste verlangt Branche, Wettbewerb und Trends."
+     },
+     "src": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+    },
+    {
+     "id": "customers",
+     "n": {
+      "en": "Who buys, and how you reach them",
+      "th": "ใครซื้อ และเข้าถึงอย่างไร",
+      "my": "ဝယ်သူက ဘယ်သူလဲ၊ ဘယ်လိုရောက်မလဲ",
+      "zh": "谁来买，怎样触达他们",
+      "de": "Wer kauft, und wie Sie die Käufer erreichen"
+     },
+     "why": {
+      "en": "The BOI's list asks who the target customers are, how the product is promoted and distributed, and how customers are brought to buy.",
+      "th": "รายการของ BOI ถามว่าลูกค้าเป้าหมายคือใคร โปรโมตและกระจายสินค้าอย่างไร และทำให้ลูกค้าซื้ออย่างไร",
+      "my": "BOI ၏ စာရင်းက ပစ်မှတ်ဖောက်သည်မှာ ဘယ်သူလဲ၊ ကုန်ပစ္စည်းကို ဘယ်လို ကြော်ငြာဖြန့်ချီမလဲ၊ ဖောက်သည်ကို ဘယ်လို ဝယ်စေမလဲ ဟု မေးသည်။",
+      "zh": "BOI 的清单问：目标客户是谁，产品如何推广和分销，怎样让客户购买。",
+      "de": "Die BOI-Liste fragt, wer die Zielkunden sind, wie das Produkt beworben und vertrieben wird und wie Kunden zum Kauf kommen."
+     },
+     "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+    },
+    {
+     "id": "competitors",
+     "n": {
+      "en": "Competitors, and how you differ",
+      "th": "คู่แข่ง และความแตกต่างของคุณ",
+      "my": "ပြိုင်ဘက်များနှင့် ကွဲပြားပုံ",
+      "zh": "竞争对手，以及您的不同之处",
+      "de": "Wettbewerber, und worin Sie sich unterscheiden"
+     },
+     "why": {
+      "en": "The BOI's list asks who the competitors are and how the business is different from them.",
+      "th": "รายการของ BOI ถามว่าคู่แข่งคือใคร และธุรกิจแตกต่างจากคู่แข่งอย่างไร",
+      "my": "BOI ၏ စာရင်းက ပြိုင်ဘက်တွေက ဘယ်သူတွေလဲ၊ လုပ်ငန်းက သူတို့နှင့် ဘယ်လို ကွာသလဲ ဟု မေးသည်။",
+      "zh": "BOI 的清单问：竞争对手是谁，业务与他们有何不同。",
+      "de": "Die BOI-Liste fragt, wer die Wettbewerber sind und wodurch sich das Unternehmen von ihnen unterscheidet."
+     },
+     "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+    },
+    {
+     "id": "team",
+     "n": {
+      "en": "The people who run it",
+      "th": "คนที่บริหารธุรกิจ",
+      "my": "လုပ်ငန်းကို ဦးဆောင်သူများ",
+      "zh": "运营业务的人",
+      "de": "Die Menschen, die es führen"
+     },
+     "why": {
+      "en": "The SBA's plan names who runs the company and what experience each leader has, and the BOI's list asks for the management team and the role of each person.",
+      "th": "แผนของ SBA ระบุว่าใครบริหารบริษัทและผู้นำแต่ละคนมีประสบการณ์อะไร รายการของ BOI ขอทีมผู้บริหารและบทบาทของแต่ละคน",
+      "my": "SBA ၏ အစီအစဉ်က ကုမ္ပဏီကို ဘယ်သူ စီမံသည်၊ ခေါင်းဆောင်တစ်ဦးစီတွင် ဘာအတွေ့အကြုံရှိသည် ကို ဖော်ပြပြီး BOI ၏ စာရင်းက စီမံခန့်ခွဲရေးအဖွဲ့နှင့် လူတစ်ဦးစီ၏ အခန်းကဏ္ဍကို တောင်းသည်။",
+      "zh": "SBA 的计划书写明谁在管理公司、每位负责人有什么经验；BOI 的清单要求写管理团队和每个人的角色。",
+      "de": "Der SBA-Plan nennt, wer das Unternehmen führt und welche Erfahrung jede Führungsperson hat, und die BOI-Liste verlangt das Managementteam und die Rolle jeder Person."
+     },
+     "src": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+    },
+    {
+     "id": "revenue",
+     "n": {
+      "en": "How the business makes money",
+      "th": "ธุรกิจหารายได้อย่างไร",
+      "my": "လုပ်ငန်းက ငွေဘယ်လိုရှာသလဲ",
+      "zh": "业务怎样赚钱",
+      "de": "Wie das Geschäft Geld verdient"
+     },
+     "why": {
+      "en": "The BOI's list asks how the business makes money, how much it receives on average and from whom.",
+      "th": "รายการของ BOI ถามว่าธุรกิจหารายได้อย่างไร ได้รับเงินเฉลี่ยเท่าไร และจากใคร",
+      "my": "BOI ၏ စာရင်းက လုပ်ငန်းက ငွေဘယ်လိုရှာသည်၊ ပျမ်းမျှ ဘယ်လောက်ရသည်၊ ဘယ်သူ့ဆီမှ ရသည် ဟု မေးသည်။",
+      "zh": "BOI 的清单问：业务怎样赚钱，平均收入多少，钱从谁那里来。",
+      "de": "Die BOI-Liste fragt, wie das Unternehmen Geld verdient, wie viel es im Durchschnitt einnimmt und von wem."
+     },
+     "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+    },
+    {
+     "id": "costs",
+     "n": {
+      "en": "Startup costs and monthly costs",
+      "th": "ต้นทุนเริ่มต้นและค่าใช้จ่ายรายเดือน",
+      "my": "စတင်ကုန်ကျစရိတ်နှင့် လစဉ်ကုန်ကျစရိတ်",
+      "zh": "启动成本与每月成本",
+      "de": "Startkosten und monatliche Kosten"
+     },
+     "why": {
+      "en": "The SBA says investors and lenders compare the costs with the projected revenue to judge whether the business can make a profit.",
+      "th": "SBA ระบุว่านักลงทุนและผู้ให้กู้นำต้นทุนไปเทียบกับรายได้ที่คาดไว้ เพื่อดูว่าธุรกิจทำกำไรได้หรือไม่",
+      "my": "SBA က ရင်းနှီးမြှုပ်နှံသူနှင့် ချေးငွေပေးသူတို့သည် လုပ်ငန်း အမြတ်ရနိုင်မရနိုင် ဆုံးဖြတ်ရန် ကုန်ကျစရိတ်ကို မျှော်မှန်းဝင်ငွေနှင့် နှိုင်းယှဉ်သည်ဟု ဆိုသည်။",
+      "zh": "SBA 说，投资人和贷款方把成本与预计收入对照，来判断业务能否盈利。",
+      "de": "Die SBA sagt, Investoren und Kreditgeber vergleichen die Kosten mit dem erwarteten Umsatz, um zu beurteilen, ob das Geschäft Gewinn machen kann."
+     },
+     "src": "https://www.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs"
+    },
+    {
+     "id": "ask",
+     "n": {
+      "en": "The amount asked, and what it is for",
+      "th": "วงเงินที่ขอ และใช้ทำอะไร",
+      "my": "တောင်းဆိုသည့် ပမာဏနှင့် အသုံးပြုမည့်ကိစ္စ",
+      "zh": "申请的金额及用途",
+      "de": "Der beantragte Betrag und wofür er ist"
+     },
+     "why": {
+      "en": "The SBA's funding request states how much funding is needed and what it is for, and the BOI's list has a funds-required line.",
+      "th": "คำขอเงินทุนของ SBA ระบุว่าต้องการเงินเท่าไรและใช้ทำอะไร และรายการของ BOI มีหัวข้อเงินทุนที่ต้องการ",
+      "my": "SBA ၏ ရန်ပုံငွေတောင်းခံမှုက ငွေမည်မျှ လိုပြီး အဘယ်အတွက်ဖြစ်ကြောင်း ဖော်ပြပြီး BOI ၏ စာရင်းတွင် လိုအပ်သော ရန်ပုံငွေ အပိုင်း ပါသည်။",
+      "zh": "SBA 的资金申请部分写明需要多少资金、用在哪里；BOI 的清单有一项“所需资金”。",
+      "de": "Der SBA-Teil Finanzierungsbedarf nennt, wie viel Geld nötig ist und wofür; die BOI-Liste hat einen Punkt zum benötigten Kapital."
+     },
+     "src": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+    },
+    {
+     "id": "repay",
+     "n": {
+      "en": "How the loan is repaid",
+      "th": "จะชำระคืนอย่างไร",
+      "my": "ချေးငွေကို ဘယ်လိုပြန်ဆပ်မလဲ",
+      "zh": "贷款怎样偿还",
+      "de": "Wie der Kredit zurückgezahlt wird"
+     },
+     "why": {
+      "en": "The Bank of Thailand says a long-term business loan is generally judged on the ability to repay from the business plan.",
+      "th": "ธนาคารแห่งประเทศไทยระบุว่า สินเชื่อระยะยาวเพื่อธุรกิจโดยทั่วไปพิจารณาจากความสามารถในการชำระหนี้จากแผนธุรกิจ",
+      "my": "ထိုင်းဗဟိုဘဏ်က ရေရှည်လုပ်ငန်းချေးငွေကို စီးပွားရေးအစီအစဉ်မှ ပြန်ဆပ်နိုင်စွမ်းဖြင့် ယေဘုယျအားဖြင့် စဉ်းစားသည်ဟု ဆိုသည်။",
+      "zh": "泰国央行说，长期经营贷款一般依据按商业计划还款的能力来评估。",
+      "de": "Die Bank of Thailand sagt, ein langfristiger Geschäftskredit wird im Allgemeinen nach der Fähigkeit beurteilt, aus dem Businessplan zurückzuzahlen."
+     },
+     "src": "https://www.bot.or.th/th/financial-innovation/sustainable-finance/household-and-sme/SME-financial-inclusion/sme-financial-products.html"
+    },
+    {
+     "id": "statements",
+     "n": {
+      "en": "Statements of the money so far",
+      "th": "งบการเงินและรายการเดินบัญชีที่ผ่านมา",
+      "my": "ယခုအထိ ငွေကြေးမှတ်တမ်းများ",
+      "zh": "迄今的财务报表",
+      "de": "Abschlüsse und Kontoauszüge bis heute"
+     },
+     "why": {
+      "en": "One SCB SME loan page asks a company for audited financial statements for 3 years and at least 6 months of statements from its main bank.",
+      "th": "หน้าสินเชื่อ SME หน้าหนึ่งของ SCB ขอให้บริษัทส่งงบการเงินที่ผ่านการตรวจสอบย้อนหลัง 3 ปี และรายการเดินบัญชีของธนาคารหลักย้อนหลัง 6 เดือน",
+      "my": "SCB ၏ SME ချေးငွေစာမျက်နှာတစ်ခုက ကုမ္ပဏီထံမှ 3 နှစ်စာ စာရင်းစစ်ပြီး ဘဏ္ဍာရေးရှင်းတမ်းနှင့် အဓိကဘဏ်၏ အနည်းဆုံး 6 လစာ ဘဏ်ရှင်းတမ်း တောင်းသည်။",
+      "zh": "SCB 的一个中小企业贷款页面要求公司提供经审计的 3 年财务报表和主往来银行至少 6 个月的对账单。",
+      "de": "Eine SCB-Seite zu KMU-Krediten verlangt von einem Unternehmen geprüfte Jahresabschlüsse für 3 Jahre und mindestens 6 Monate Kontoauszüge der Hausbank."
+     },
+     "src": "https://www.scb.co.th/th/sme-banking/business-loan/secured-loan/sme-total-solution"
+    }
+   ],
+   "result": [
+    {
+     "min": 0,
+     "t": {
+      "en": "Nothing is ticked yet. A plan for a bank, an investor or a visa office is made of parts like these ten.",
+      "th": "ยังไม่ได้ติ๊กข้อใด แผนสำหรับธนาคาร นักลงทุน หรือสำนักงานวีซ่า ประกอบด้วยส่วนต่าง ๆ แบบสิบข้อนี้",
+      "my": "မည်သည့်အချက်မျှ မခြစ်ရသေးပါ။ ဘဏ်၊ ရင်းနှီးမြှုပ်နှံသူ သို့မဟုတ် ဗီဇာရုံးအတွက် အစီအစဉ်ကို ဤဆယ်ချက်ကဲ့သို့ အပိုင်းများဖြင့် ဖွဲ့စည်းထားသည်။",
+      "zh": "还没有勾选任何一项。给银行、投资人或签证办公室的计划书，由类似这十项的部分组成。",
+      "de": "Noch nichts abgehakt. Ein Plan für eine Bank, einen Investor oder ein Visumsbüro besteht aus Teilen wie diesen zehn."
+     }
+    },
+    {
+     "min": 1,
+     "t": {
+      "en": "Some parts are in place. The list shows the ones still to write.",
+      "th": "มีบางส่วนแล้ว รายการด้านบนแสดงส่วนที่ยังต้องเขียน",
+      "my": "အချို့အပိုင်းများ ရှိပြီးဖြစ်သည်။ ရေးရန် ကျန်သေးသည့် အပိုင်းများကို စာရင်းတွင် ပြထားသည်။",
+      "zh": "已有部分内容。清单列出了还需要写的部分。",
+      "de": "Einige Teile sind da. Die Liste zeigt die, die noch fehlen."
+     }
+    },
+    {
+     "min": 4,
+     "t": {
+      "en": "Four to seven parts are ticked. The unticked parts are still to be written.",
+      "th": "ติ๊กแล้ว 4 ถึง 7 ข้อ ส่วนที่ยังไม่ได้ติ๊กยังต้องเขียน",
+      "my": "4 ချက်မှ 7 ချက်အထိ ခြစ်ထားသည်။ မခြစ်ရသေးသော အပိုင်းများကို ရေးရန် ကျန်သည်။",
+      "zh": "已勾选 4 到 7 项。没勾选的部分还有待撰写。",
+      "de": "Vier bis sieben Teile sind abgehakt. Die nicht abgehakten Teile sind noch zu schreiben."
+     }
+    },
+    {
+     "min": 8,
+     "t": {
+      "en": "Eight to ten parts are ticked. Most of the ten are in place.",
+      "th": "ติ๊กแล้ว 8 ถึง 10 ข้อ ส่วนใหญ่ของทั้งสิบข้อมีแล้ว",
+      "my": "8 ချက်မှ 10 ချက်အထိ ခြစ်ထားသည်။ ဆယ်ချက်အနက် အများစု ပါပြီးဖြစ်သည်။",
+      "zh": "已勾选 8 到 10 项。十项中的大部分已经具备。",
+      "de": "Acht bis zehn Teile sind abgehakt. Die meisten der zehn sind vorhanden."
+     }
+    }
+   ],
+   "oursLine": {
+    "en": "Hongdam writes it with you for:",
+    "th": "หงส์ดำเขียนร่วมกับคุณในราคา:",
+    "my": "ဟုန်ဒမ်က သင်နှင့်အတူ ရေးပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹与您一起撰写，价格：",
+    "de": "Hongdam schreibt es mit Ihnen für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "The US Small Business Administration (SBA) describes a traditional business plan in eight sections: executive summary, company description, market analysis, organization and management, service or product line, marketing and sales, funding request, and financial projections. It says lenders and investors commonly request this kind of plan.",
+    "th": "SBA (หน่วยงานธุรกิจขนาดเล็กของสหรัฐฯ) อธิบายแผนธุรกิจแบบดั้งเดิมไว้แปดส่วน ได้แก่ บทสรุปผู้บริหาร รายละเอียดบริษัท การวิเคราะห์ตลาด องค์กรและการบริหาร สายบริการหรือผลิตภัณฑ์ การตลาดและการขาย คำขอเงินทุน และประมาณการทางการเงิน และระบุว่าผู้ให้กู้และนักลงทุนมักขอแผนแบบนี้",
+    "my": "အမေရိကန် စီးပွားရေးလုပ်ငန်းငယ်များ စီမံခန့်ခွဲရေးအဖွဲ့ (SBA) က ရိုးရာစီးပွားရေးအစီအစဉ်ကို အပိုင်း ရှစ်ပိုင်း ဖော်ပြသည် - အမှုဆောင်အကျဉ်းချုပ်၊ ကုမ္ပဏီဖော်ပြချက်၊ ဈေးကွက်ခွဲခြမ်းစိတ်ဖြာမှု၊ အဖွဲ့အစည်းနှင့် စီမံခန့်ခွဲမှု၊ ဝန်ဆောင်မှု သို့မဟုတ် ကုန်ပစ္စည်းလိုင်း၊ ဈေးကွက်ရှာဖွေရေးနှင့် ရောင်းချရေး၊ ရန်ပုံငွေတောင်းခံမှုနှင့် ဘဏ္ဍာရေးခန့်မှန်းချက်။ ချေးငွေပေးသူနှင့် ရင်းနှီးမြှုပ်နှံသူတို့ ဤအစီအစဉ်မျိုးကို မကြာခဏ တောင်းသည်ဟု ဆိုသည်။",
+    "zh": "美国小企业管理局（SBA）把传统商业计划书分为八个部分：执行摘要、公司描述、市场分析、组织与管理、服务或产品线、营销与销售、资金申请、财务预测。它说，贷款方和投资人通常会索要这样的计划书。",
+    "de": "Die US-Behörde für kleine Unternehmen (SBA) beschreibt einen klassischen Businessplan in acht Teilen: Zusammenfassung, Unternehmensbeschreibung, Marktanalyse, Organisation und Führung, Dienstleistungs- oder Produktlinie, Marketing und Vertrieb, Finanzierungsbedarf und Finanzprognosen. Kreditgeber und Investoren verlangen diese Art Plan nach ihrer Aussage üblicherweise."
+   },
+   "src": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+  },
+  {
+   "t": {
+    "en": "The SBA's funding request section states how much funding the business needs over the next five years and what it is for. The financial projections back the request and aim to convince the reader that the business is stable and will succeed financially.",
+    "th": "ส่วนคำขอเงินทุนของ SBA ระบุว่าธุรกิจต้องการเงินเท่าไรในห้าปีข้างหน้าและจะใช้ทำอะไร ส่วนประมาณการทางการเงินสนับสนุนคำขอนั้น และมีเป้าหมายให้ผู้อ่านเชื่อว่าธุรกิจมั่นคงและจะประสบความสำเร็จทางการเงิน",
+    "my": "SBA ၏ ရန်ပုံငွေတောင်းခံမှုအပိုင်းတွင် လာမည့် ငါးနှစ်အတွင်း လုပ်ငန်းအတွက် ငွေမည်မျှ လိုအပ်ပြီး အဘယ်အတွက် သုံးမည်ကို ဖော်ပြသည်။ ဘဏ္ဍာရေးခန့်မှန်းချက်အပိုင်းက ထိုတောင်းဆိုချက်ကို ထောက်ခံပြီး လုပ်ငန်း တည်ငြိမ်၍ ငွေကြေးအရ အောင်မြင်မည်ဟု ဖတ်သူကို ယုံကြည်စေရန် ရည်ရွယ်သည်။",
+    "zh": "SBA 的资金申请部分写明未来五年业务需要多少资金，以及资金用在哪里。财务预测部分支撑这一申请，目的是让读者相信业务稳定并能在财务上成功。",
+    "de": "Im Teil Finanzierungsbedarf nennt der SBA-Leitfaden, wie viel Geld das Unternehmen in den nächsten fünf Jahren braucht und wofür. Die Finanzprognosen stützen den Antrag; sie sollen den Leser überzeugen, dass das Unternehmen stabil ist und finanziell Erfolg haben wird."
+   },
+   "src": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+  },
+  {
+   "t": {
+    "en": "The SBA's startup-cost page splits costs into one-time expenses and monthly expenses such as salaries, rent and utilities. It counts at least one year of monthly expenses, with five years ideal, and says investors and lenders compare the costs with projected revenue.",
+    "th": "หน้าต้นทุนเริ่มต้นของ SBA แบ่งค่าใช้จ่ายเป็นค่าใช้จ่ายครั้งเดียวกับค่าใช้จ่ายรายเดือน เช่น เงินเดือน ค่าเช่า และค่าสาธารณูปโภค นับค่าใช้จ่ายรายเดือนอย่างน้อยหนึ่งปี และห้าปีคือกรณีที่ดีที่สุด และระบุว่านักลงทุนและผู้ให้กู้นำต้นทุนไปเทียบกับรายได้ที่คาดไว้",
+    "my": "SBA ၏ စတင်ကုန်ကျစရိတ်စာမျက်နှာတွင် ကုန်ကျစရိတ်ကို တစ်ကြိမ်သုံး ကုန်ကျစရိတ်နှင့် လစာ၊ ငှားရမ်းခ၊ အသုံးအဆောင်ဘီလ် စသော လစဉ်ကုန်ကျစရိတ်ဟု ခွဲထားသည်။ လစဉ်ကုန်ကျစရိတ်ကို အနည်းဆုံး တစ်နှစ်စာ ရေတွက်ပြီး ငါးနှစ်စာမှာ အကောင်းဆုံးဖြစ်သည်။ ထို့အပြင် ရင်းနှီးမြှုပ်နှံသူနှင့် ချေးငွေပေးသူတို့က ကုန်ကျစရိတ်ကို မျှော်မှန်းဝင်ငွေနှင့် နှိုင်းယှဉ်သည်ဟု ဆိုသည်။",
+    "zh": "SBA 的创业成本页面把成本分为一次性支出和每月支出（如工资、租金、水电费）。它把每月支出至少算一年，算五年最理想，并说投资人和贷款方会把这些成本与预计收入对照。",
+    "de": "Die SBA-Seite zu Startkosten teilt die Kosten in einmalige Ausgaben und monatliche Ausgaben wie Löhne, Miete und Nebenkosten. Sie rechnet mindestens ein Jahr monatlicher Ausgaben, ideal sind fünf Jahre, und sagt, dass Investoren und Kreditgeber die Kosten mit dem erwarteten Umsatz vergleichen."
+   },
+   "src": "https://www.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs"
+  },
+  {
+   "t": {
+    "en": "The Bank of Thailand's page on SME financial products says a long-term business loan is generally judged on the value of the investment, the value of the collateral and the ability to repay from the business plan.",
+    "th": "หน้าผลิตภัณฑ์ทางการเงินสำหรับ SME ของธนาคารแห่งประเทศไทยระบุว่า สินเชื่อระยะยาวเพื่อธุรกิจโดยทั่วไปพิจารณาจากมูลค่าการลงทุน มูลค่าหลักประกัน และความสามารถในการชำระหนี้จากแผนธุรกิจ",
+    "my": "ထိုင်းဗဟိုဘဏ်၏ SME ဘဏ္ဍာရေးထုတ်ကုန်စာမျက်နှာတွင် ရေရှည်လုပ်ငန်းချေးငွေကို ရင်းနှီးမြှုပ်နှံမှုတန်ဖိုး၊ အပေါင်ပစ္စည်းတန်ဖိုးနှင့် စီးပွားရေးအစီအစဉ်မှ ပြန်ဆပ်နိုင်စွမ်းတို့ဖြင့် ယေဘုယျအားဖြင့် စဉ်းစားသည်ဟု ဖော်ပြသည်။",
+    "zh": "泰国央行的中小企业金融产品页面说，长期经营贷款一般依据投资价值、抵押品价值，以及按商业计划还款的能力来评估。",
+    "de": "Auf der Seite der Bank of Thailand zu Finanzprodukten für KMU steht, ein langfristiger Geschäftskredit wird im Allgemeinen nach dem Wert der Investition, dem Wert der Sicherheit und der Fähigkeit beurteilt, aus dem Businessplan zurückzuzahlen."
+   },
+   "src": "https://www.bot.or.th/th/financial-innovation/sustainable-finance/household-and-sme/SME-financial-inclusion/sme-financial-products.html"
+  },
+  {
+   "t": {
+    "en": "The Thailand Board of Investment (BOI) checklist for the Smart visa S (startup) asks for a pitch deck, which it also calls a startup business plan, covering 12 items. The list starts with a 1-page executive summary, runs through the management team, competition, marketing and sales strategy, financial plan and funds required, revenue model and growth strategy, and ends with the benefit to Thailand.",
+    "th": "รายการตรวจเอกสาร Smart visa S (สตาร์ตอัป) ของสำนักงานคณะกรรมการส่งเสริมการลงทุน (BOI) ขอ pitch deck ซึ่งเรียกอีกชื่อว่าแผนธุรกิจของสตาร์ตอัป และระบุหัวข้อไว้ 12 ข้อ เริ่มจากบทสรุปผู้บริหาร 1 หน้า ผ่านทีมผู้บริหาร คู่แข่ง กลยุทธ์การตลาดและการขาย แผนการเงินและเงินทุนที่ต้องการ โมเดลรายได้ และกลยุทธ์การเติบโต และจบด้วยประโยชน์ต่อประเทศไทย",
+    "my": "ထိုင်းနိုင်ငံ ရင်းနှီးမြှုပ်နှံမှုဘုတ်အဖွဲ့ (BOI) ၏ Smart visa S (စတားတပ်) စစ်ဆေးစာရင်းက pitch deck (စတားတပ် စီးပွားရေးအစီအစဉ်ဟုလည်း ခေါ်သည်) ကို တောင်းပြီး အချက် 12 ချက် ပါသည်။ စာရင်းသည် စာမျက်နှာ 1 မျက်နှာ အမှုဆောင်အကျဉ်းချုပ်ဖြင့် စပြီး စီမံခန့်ခွဲရေးအဖွဲ့၊ ပြိုင်ဘက်များ၊ ဈေးကွက်ရှာဖွေရေးနှင့် ရောင်းချရေးမဟာဗျူဟာ၊ ဘဏ္ဍာရေးအစီအစဉ်နှင့် လိုအပ်သော ရန်ပုံငွေ၊ ဝင်ငွေပုံစံနှင့် တိုးတက်ရေးမဟာဗျူဟာတို့ကို ဖြတ်သန်းပြီး ထိုင်းနိုင်ငံအတွက် အကျိုးကျေးဇူးဖြင့် အဆုံးသတ်သည်။",
+    "zh": "泰国投资促进委员会（BOI）的 Smart 签证 S 类（创业）清单要求提交 pitch deck（也称创业商业计划书），共 12 项。清单从 1 页执行摘要开始，依次是管理团队、竞争、营销与销售策略、财务计划与所需资金、收入模式和增长策略，最后是对泰国的益处。",
+    "de": "Die Checkliste des Board of Investment (BOI) Thailands für das Smart-Visum S (Startup) verlangt ein Pitch Deck, das sie auch Startup-Businessplan nennt, mit 12 Punkten. Die Liste beginnt mit einer einseitigen Zusammenfassung, geht über Managementteam, Wettbewerb, Marketing- und Vertriebsstrategie, Finanzplan und benötigtes Kapital, Ertragsmodell und Wachstumsstrategie und endet mit dem Nutzen für Thailand."
+   },
+   "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "t": {
+    "en": "Xero's guide calls a business proposal a formal document sent to a prospective client to win a project or make a sale. Its template has 11 sections, from a title page and executive summary to terms and conditions and a signature box.",
+    "th": "คู่มือของ Xero เรียกข้อเสนอทางธุรกิจว่าเอกสารทางการที่ส่งให้ลูกค้าที่คาดหวังเพื่อให้ได้โครงการหรือปิดการขาย แม่แบบมี 11 ส่วน ตั้งแต่หน้าปกและบทสรุปผู้บริหารไปจนถึงข้อกำหนดและเงื่อนไขและช่องลงนาม",
+    "my": "Xero ၏ လမ်းညွှန်က စီးပွားရေးအဆိုပြုချက်ကို ဖောက်သည်လောင်းထံ ပရောဂျက်ရရန် သို့မဟုတ် ရောင်းချရန် ပို့သည့် တရားဝင်စာတမ်းဟု ခေါ်သည်။ ၎င်း၏ ပုံစံတွင် ခေါင်းစဉ်စာမျက်နှာနှင့် အမှုဆောင်အကျဉ်းချုပ်မှ စည်းကမ်းချက်များနှင့် လက်မှတ်ထိုးကွက်အထိ အပိုင်း 11 ပိုင်း ရှိသည်။",
+    "zh": "Xero 的指南把商业提案定义为发给潜在客户、用来争取项目或促成销售的正式文件。它的模板有 11 个部分，从封面和执行摘要，到条款与条件和签名框。",
+    "de": "Der Leitfaden von Xero nennt ein Geschäftsangebot ein förmliches Dokument, das an einen möglichen Kunden geht, um ein Projekt oder einen Verkauf zu gewinnen. Die Vorlage hat 11 Teile, vom Titelblatt und der Zusammenfassung bis zu den Geschäftsbedingungen und einem Unterschriftsfeld."
+   },
+   "src": "https://www.xero.com/hk/guides/write-a-business-proposal/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Plan for a bank loan or an investor, from a Fastwork freelancer: a one-hour call and two plan sizes",
+    "th": "แผนสำหรับกู้ธนาคารหรือหานักลงทุน จากฟรีแลนซ์บน Fastwork: โทรปรึกษาหนึ่งชั่วโมงและแผนสองขนาด",
+    "my": "ဘဏ်ချေးငွေ သို့မဟုတ် ရင်းနှီးမြှုပ်နှံသူအတွက် အစီအစဉ်၊ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ - တစ်နာရီ ဖုန်းဆွေးနွေးမှုနှင့် အစီအစဉ်အရွယ်အစား နှစ်မျိုး",
+    "zh": "给银行贷款或投资人的计划书，来自 Fastwork 自由职业者：一小时电话咨询和两种规模的计划书",
+    "de": "Plan für einen Bankkredit oder einen Investor, von Freelancern auf Fastwork: ein einstündiges Gespräch und zwei Plangrössen"
+   },
+   "p": {
+    "en": "฿2,500 for the call; ฿10,000 for a plan for a loan up to ฿1,000,000 (10 days); ฿30,000 or more above that (20 days)",
+    "th": "฿2,500 สำหรับโทรปรึกษา ฿10,000 สำหรับแผนวงเงินไม่เกิน ฿1,000,000 (10 วัน) และ ฿30,000 ขึ้นไปสำหรับวงเงินที่สูงกว่า (20 วัน)",
+    "my": "ဖုန်းဆွေးနွေးမှု ฿2,500၊ ချေးငွေ ฿1,000,000 အထိအတွက် အစီအစဉ် ฿10,000 (10 ရက်)၊ ထို့ထက်ပိုလျှင် ฿30,000 နှင့်အထက် (20 ရက်)",
+    "zh": "电话咨询 ฿2,500；贷款额不超过 ฿1,000,000 的计划书 ฿10,000（10 天）；超过该额则 ฿30,000 起（20 天）",
+    "de": "฿2,500 für das Gespräch; ฿10,000 für einen Plan zu einem Kredit bis ฿1,000,000 (10 Tage); ab ฿30,000 darüber (20 Tage)"
+   },
+   "src": "https://fastwork.co/user/erdzzzja/business-11175152"
+  },
+  {
+   "t": {
+    "en": "Business plan for a bank or an investor, from a Fastwork freelancer: three packages",
+    "th": "แผนธุรกิจสำหรับธนาคารหรือนักลงทุน จากฟรีแลนซ์บน Fastwork: สามแพ็กเกจ",
+    "my": "ဘဏ် သို့မဟုတ် ရင်းနှီးမြှုပ်နှံသူအတွက် စီးပွားရေးအစီအစဉ်၊ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ - ပက်ကေ့ချ် သုံးမျိုး",
+    "zh": "给银行或投资人的商业计划书，来自 Fastwork 自由职业者：三个套餐",
+    "de": "Businessplan für eine Bank oder einen Investor, von Freelancern auf Fastwork: drei Pakete"
+   },
+   "p": {
+    "en": "฿1,999 for a call of up to 2 hours; ฿8,999 for 1–15 pages (10 days); ฿13,999 for a bank-loan plan of up to 25 pages (15 days)",
+    "th": "฿1,999 สำหรับโทรปรึกษาไม่เกิน 2 ชั่วโมง ฿8,999 สำหรับ 1–15 หน้า (10 วัน) ฿13,999 สำหรับแผนขอกู้ธนาคารไม่เกิน 25 หน้า (15 วัน)",
+    "my": "ဖုန်းဆွေးနွေးမှု 2 နာရီအထိ ฿1,999၊ 1–15 မျက်နှာ ฿8,999 (10 ရက်)၊ ဘဏ်ချေးငွေအတွက် 25 မျက်နှာအထိ ฿13,999 (15 ရက်)",
+    "zh": "最长 2 小时的电话咨询 ฿1,999；1–15 页 ฿8,999（10 天）；银行贷款计划书最多 25 页 ฿13,999（15 天）",
+    "de": "฿1,999 für ein Gespräch bis 2 Stunden; ฿8,999 für 1–15 Seiten (10 Tage); ฿13,999 für einen Bankkredit-Plan bis 25 Seiten (15 Tage)"
+   },
+   "src": "https://fastwork.co/user/namonamo23/business-45850337"
+  },
+  {
+   "t": {
+    "en": "Business plan that follows a financial institution's criteria, from a Fastwork freelancer: two packages",
+    "th": "แผนธุรกิจตามเกณฑ์สถาบันการเงิน จากฟรีแลนซ์บน Fastwork: สองแพ็กเกจ",
+    "my": "ငွေကြေးအဖွဲ့အစည်း၏ စံနှုန်းအတိုင်း စီးပွားရေးအစီအစဉ်၊ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ - ပက်ကေ့ချ် နှစ်မျိုး",
+    "zh": "按金融机构标准撰写的商业计划书，来自 Fastwork 自由职业者：两个套餐",
+    "de": "Businessplan nach den Kriterien eines Finanzinstituts, von Freelancern auf Fastwork: zwei Pakete"
+   },
+   "p": {
+    "en": "฿5,000 for an investment up to ฿3,000,000 (10 days); ฿10,000 for ฿3,000,000–5,000,000 (15 days); PDF, Word and Excel files",
+    "th": "฿5,000 สำหรับวงเงินลงทุนไม่เกิน ฿3,000,000 (10 วัน) ฿10,000 สำหรับ ฿3,000,000–5,000,000 (15 วัน) ได้ไฟล์ PDF, Word และ Excel",
+    "my": "ရင်းနှီးမြှုပ်နှံမှု ฿3,000,000 အထိ ฿5,000 (10 ရက်)၊ ฿3,000,000–5,000,000 အတွက် ฿10,000 (15 ရက်)၊ PDF၊ Word နှင့် Excel ဖိုင်များ",
+    "zh": "投资额不超过 ฿3,000,000 为 ฿5,000（10 天）；฿3,000,000–5,000,000 为 ฿10,000（15 天）；交付 PDF、Word 和 Excel 文件",
+    "de": "฿5,000 für eine Investition bis ฿3,000,000 (10 Tage); ฿10,000 für ฿3,000,000–5,000,000 (15 Tage); Dateien in PDF, Word und Excel"
+   },
+   "src": "https://fastwork.co/user/nrrtny/business-63917915"
+  },
+  {
+   "t": {
+    "en": "Full proposal for an event or PR activity, from a Fastwork freelancer: Word or Canva",
+    "th": "ข้อเสนอฉบับเต็มสำหรับงานอีเวนต์หรือกิจกรรม PR จากฟรีแลนซ์บน Fastwork: แบบ Word หรือ Canva",
+    "my": "ပွဲ သို့မဟုတ် PR လုပ်ဆောင်ချက်အတွက် အဆိုပြုချက်အပြည့်အစုံ၊ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ - Word သို့မဟုတ် Canva",
+    "zh": "活动或公关的完整提案，来自 Fastwork 自由职业者：Word 版或 Canva 版",
+    "de": "Vollständiges Angebot für eine Veranstaltung oder PR-Aktion, von Freelancern auf Fastwork: als Word oder Canva"
+   },
+   "p": {
+    "en": "฿10,000 in Word; ฿18,000 in Canva with a work plan; 7 days each, for events valued up to ฿1,000,000",
+    "th": "฿10,000 แบบ Word ฿18,000 แบบ Canva พร้อมแผนการทำงาน แบบละ 7 วัน สำหรับงานมูลค่าไม่เกิน ฿1,000,000",
+    "my": "Word ဖြင့် ฿10,000၊ Canva ဖြင့် လုပ်ငန်းစီမံချက်ပါ ฿18,000၊ တစ်မျိုးလျှင် 7 ရက်၊ တန်ဖိုး ฿1,000,000 အထိ ပွဲများအတွက်",
+    "zh": "Word 版 ฿10,000；Canva 版附工作计划 ฿18,000；各 7 天；适用于价值不超过 ฿1,000,000 的活动",
+    "de": "฿10,000 als Word; ฿18,000 als Canva mit Arbeitsplan; je 7 Tage, für Veranstaltungen bis ฿1,000,000 Wert"
+   },
+   "src": "https://fastwork.co/user/sarityeve/event-organizer-73093827"
+  },
+  {
+   "t": {
+    "en": "Proposal and terms-of-reference (TOR) papers for IT work, formatted and combined, from a Fastwork freelancer",
+    "th": "เอกสาร Proposal และ TOR สำหรับงานไอที จัดรูปแบบและรวมเล่ม จากฟรีแลนซ์บน Fastwork",
+    "my": "IT လုပ်ငန်းအတွက် Proposal နှင့် TOR (လုပ်ငန်းတာဝန်ဖော်ပြချက်) စာရွက်စာတမ်းများ၊ ပုံစံချပြီး ပေါင်းစည်းပေးခြင်း၊ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ",
+    "zh": "IT 项目的提案和职责范围（TOR）文件，排版并合订，来自 Fastwork 自由职业者",
+    "de": "Angebots- und Leistungsbeschreibungs-Unterlagen (TOR) für IT-Arbeiten, formatiert und zusammengeführt, von Freelancern auf Fastwork"
+   },
+   "p": {
+    "en": "฿1,500; 1 day; one round of revisions",
+    "th": "฿1,500 1 วัน แก้ไขได้ 1 ครั้ง",
+    "my": "฿1,500၊ 1 ရက်၊ ပြင်ဆင်မှု 1 ကြိမ်",
+    "zh": "฿1,500；1 天；修改一次",
+    "de": "฿1,500; 1 Tag; eine Überarbeitungsrunde"
+   },
+   "src": "https://fastwork.co/user/bcvvcvps/writing-translation-other-73590138"
+  },
+  {
+   "t": {
+    "en": "Proposal and report writing, from a Fastwork freelancer",
+    "th": "รับเขียน proposal และรายงาน จากฟรีแลนซ์บน Fastwork",
+    "my": "အဆိုပြုချက်နှင့် အစီရင်ခံစာ ရေးသားမှု၊ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ",
+    "zh": "撰写提案和报告，来自 Fastwork 自由职业者",
+    "de": "Angebote und Berichte schreiben, von Freelancern auf Fastwork"
+   },
+   "p": {
+    "en": "From ฿500; the listing says it is not a bound report or research paper",
+    "th": "เริ่มต้น ฿500 ประกาศระบุว่าไม่ใช่รายงานแบบรูปเล่มหรืองานวิจัย",
+    "my": "฿500 မှစတင်၊ စာရင်းတွင် စာအုပ်ချုပ် အစီရင်ခံစာ သို့မဟုတ် သုတေသနစာတမ်း မဟုတ်ကြောင်း ဖော်ပြထားသည်",
+    "zh": "起价 ฿500；该页说明不是装订成册的报告或研究论文",
+    "de": "Ab ฿500; laut Angebot kein gebundener Bericht und keine Forschungsarbeit"
+   },
+   "src": "https://fastwork.co/user/eikojang/content-writing-69708261"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a business plan writer hand over, and at what price?",
+    "th": "คนรับเขียนแผนธุรกิจส่งมอบอะไร และราคาเท่าไร",
+    "my": "စီးပွားရေးအစီအစဉ် ရေးသူက ဘာတွေ ပေးအပ်သလဲ၊ ဈေးဘယ်လောက်လဲ",
+    "zh": "代写商业计划书的人交付什么，价格多少",
+    "de": "Was liefert ein Businessplan-Autor, und zu welchem Preis?"
+   },
+   "a": {
+    "en": "One Fastwork freelancer lists a business plan that follows a financial institution's criteria. It comes as PDF, Word and Excel files, with a 30-minute call for a last check. The price is ฿5,000 for an investment up to ฿3,000,000 and ฿10,000 for ฿3,000,000–5,000,000. The buyer sends the business details and the loan amount.",
+    "th": "ฟรีแลนซ์รายหนึ่งบน Fastwork เสนอแผนธุรกิจตามเกณฑ์ของสถาบันการเงิน ส่งเป็นไฟล์ PDF, Word และ Excel พร้อมโทร 30 นาทีเพื่อตรวจครั้งสุดท้าย ราคา ฿5,000 สำหรับวงเงินลงทุนไม่เกิน ฿3,000,000 และ ฿10,000 สำหรับ ฿3,000,000–5,000,000 ผู้ซื้อส่งรายละเอียดธุรกิจและวงเงินที่ต้องการกู้ให้",
+    "my": "Fastwork ဖရီးလန်ဆာတစ်ဦးက ငွေကြေးအဖွဲ့အစည်း၏ စံနှုန်းအတိုင်း စီးပွားရေးအစီအစဉ်ကို တင်ထားသည်။ PDF၊ Word နှင့် Excel ဖိုင်များအဖြစ် ပို့ပြီး နောက်ဆုံးစစ်ရန် 30 မိနစ် ဖုန်းပြောဆိုမှု ပါသည်။ ဈေးနှုန်းမှာ ရင်းနှီးမြှုပ်နှံမှု ฿3,000,000 အထိ ฿5,000 နှင့် ฿3,000,000–5,000,000 အတွက် ฿10,000 ဖြစ်သည်။ ဝယ်သူက လုပ်ငန်းအသေးစိတ်နှင့် ချေးလိုသော ပမာဏကို ပေးပို့ရသည်။",
+    "zh": "Fastwork 上一位自由职业者提供按金融机构标准撰写的商业计划书，交付 PDF、Word 和 Excel 文件，并附 30 分钟电话做最后核对。投资额不超过 ฿3,000,000 收 ฿5,000，฿3,000,000–5,000,000 收 ฿10,000。买方提供业务资料和申请的贷款额。",
+    "de": "Ein Freelancer auf Fastwork bietet einen Businessplan nach den Kriterien eines Finanzinstituts an. Er kommt als PDF-, Word- und Excel-Dateien, mit einem 30-minütigen Gespräch zur letzten Prüfung. Der Preis beträgt ฿5,000 für eine Investition bis ฿3,000,000 und ฿10,000 für ฿3,000,000–5,000,000. Der Käufer schickt die Geschäftsangaben und den Kreditbetrag."
+   },
+   "src": "https://fastwork.co/user/nrrtny/business-63917915"
+  },
+  {
+   "q": {
+    "en": "How long does a business plan take to write?",
+    "th": "เขียนแผนธุรกิจใช้เวลานานเท่าไร",
+    "my": "စီးပွားရေးအစီအစဉ် ရေးရန် ကြာချိန် ဘယ်လောက်လဲ",
+    "zh": "写一份商业计划书要多久",
+    "de": "Wie lange dauert es, einen Businessplan zu schreiben?"
+   },
+   "a": {
+    "en": "One Fastwork freelancer lists 10 days for a plan of 1–15 pages (฿8,999, 1 revision) and 15 days for a bank-loan plan of up to 25 pages (฿13,999, 2 revisions). Both come as Word and PDF files.",
+    "th": "ฟรีแลนซ์รายหนึ่งบน Fastwork ระบุ 10 วันสำหรับแผน 1–15 หน้า (฿8,999 แก้ไข 1 ครั้ง) และ 15 วันสำหรับแผนขอกู้ธนาคารไม่เกิน 25 หน้า (฿13,999 แก้ไข 2 ครั้ง) ส่งเป็นไฟล์ Word และ PDF ทั้งสองแบบ",
+    "my": "Fastwork ဖရီးလန်ဆာတစ်ဦးက 1–15 မျက်နှာ အစီအစဉ်အတွက် 10 ရက် (฿8,999၊ ပြင်ဆင်မှု 1 ကြိမ်) နှင့် ဘဏ်ချေးငွေအတွက် 25 မျက်နှာအထိ အစီအစဉ်အတွက် 15 ရက် (฿13,999၊ ပြင်ဆင်မှု 2 ကြိမ်) ဟု ဖော်ပြထားသည်။ နှစ်မျိုးလုံး Word နှင့် PDF ဖိုင်များ ဖြစ်သည်။",
+    "zh": "Fastwork 上一位自由职业者标明：1–15 页的计划书 10 天（฿8,999，修改 1 次），最多 25 页的银行贷款计划书 15 天（฿13,999，修改 2 次）。两种都以 Word 和 PDF 文件交付。",
+    "de": "Ein Freelancer auf Fastwork nennt 10 Tage für einen Plan von 1–15 Seiten (฿8,999, 1 Überarbeitung) und 15 Tage für einen Bankkredit-Plan bis 25 Seiten (฿13,999, 2 Überarbeitungen). Beide kommen als Word- und PDF-Dateien."
+   },
+   "src": "https://fastwork.co/user/namonamo23/business-45850337"
+  },
+  {
+   "q": {
+    "en": "Where do the price and the terms go in a proposal?",
+    "th": "ราคาและเงื่อนไขอยู่ตรงไหนของข้อเสนอ",
+    "my": "အဆိုပြုချက်တွင် စျေးနှုန်းနှင့် စည်းကမ်းချက်များ ဘယ်နေရာမှာ ထားသလဲ",
+    "zh": "提案里价格和条款放在哪里",
+    "de": "Wo stehen Preis und Bedingungen in einem Angebot?"
+   },
+   "a": {
+    "en": "Xero's template puts \"Pricing and payment terms\" ninth, as a clear cost breakdown with options. \"Terms and conditions\" follows, then a call to action and a signature box. Before the price come the problem statement, the proposed solution, the value proposition, the qualifications, and the deliverables and timeline.",
+    "th": "แม่แบบของ Xero วางส่วนราคาและเงื่อนไขการชำระเงินเป็นส่วนที่เก้า เป็นรายละเอียดต้นทุนที่ชัดเจนพร้อมตัวเลือก ตามด้วยข้อกำหนดและเงื่อนไข แล้วจบด้วยการชวนให้ลงมือและช่องลงนาม ก่อนถึงราคามีส่วนปัญหาของลูกค้า แนวทางแก้ไข คุณค่าที่ได้ คุณสมบัติ และงานที่ส่งมอบพร้อมกำหนดเวลา",
+    "my": "Xero ၏ ပုံစံတွင် စျေးနှုန်းနှင့် ငွေပေးချေမှုစည်းကမ်းများကို ကိုးခုမြောက်အပိုင်းအဖြစ် ထားပြီး ရွေးချယ်စရာများပါသော ရှင်းလင်းသည့် ကုန်ကျစရိတ်ခွဲခြမ်းဖြစ်သည်။ ထို့နောက် စည်းကမ်းချက်များ လိုက်ပြီး လုပ်ဆောင်ရန်ခေါ်ဆိုချက်နှင့် လက်မှတ်ထိုးကွက်ဖြင့် အဆုံးသတ်သည်။ စျေးနှုန်းမတိုင်မီတွင် ဖောက်သည်၏ပြဿနာ၊ အဆိုပြုသည့် ဖြေရှင်းချက်၊ တန်ဖိုး၊ အရည်အချင်းများနှင့် ပေးအပ်မည့်အရာများနှင့် အချိန်ဇယား ရှိသည်။",
+    "zh": "Xero 的模板把“定价与付款条款”放在第九部分，是带选项的清晰成本明细。接下来是“条款与条件”，最后是行动号召和签名框。价格之前依次是问题陈述、拟议方案、价值主张、资质，以及交付物与时间表。",
+    "de": "Die Vorlage von Xero setzt «Preise und Zahlungsbedingungen» an neunte Stelle, als klare Kostenaufstellung mit Optionen. Danach folgen die allgemeinen Geschäftsbedingungen, dann ein Aufruf zum Handeln und ein Unterschriftsfeld. Vor dem Preis kommen Problemstellung, Lösungsvorschlag, Nutzenversprechen, Qualifikationen sowie Lieferumfang und Zeitplan."
+   },
+   "src": "https://www.xero.com/hk/guides/write-a-business-proposal/"
+  },
+  {
+   "q": {
+    "en": "Can I start with a call before the plan is written?",
+    "th": "เริ่มจากโทรปรึกษาก่อนเขียนแผนได้ไหม",
+    "my": "အစီအစဉ်မရေးမီ ဖုန်းဆွေးနွေးမှုဖြင့် စတင်နိုင်ပါသလား",
+    "zh": "可以先打电话咨询，再写计划书吗",
+    "de": "Kann ich mit einem Gespräch beginnen, bevor der Plan geschrieben wird?"
+   },
+   "a": {
+    "en": "One Fastwork freelancer sells a one-hour phone call on a bank-loan or investor plan for ฿2,500. The call covers whether the business is feasible, its strengths, an asset evaluation and other questions. The listing says the initial assessment is free.",
+    "th": "ฟรีแลนซ์รายหนึ่งบน Fastwork ขายโทรปรึกษาหนึ่งชั่วโมงเรื่องแผนธุรกิจกู้ธนาคารหรือหานักลงทุน ราคา ฿2,500 ครอบคลุมความเป็นไปได้ของธุรกิจ จุดแข็ง การประเมินทรัพย์สิน และคำถามอื่น ๆ ประกาศระบุว่าการประเมินเบื้องต้นไม่คิดเงิน",
+    "my": "Fastwork ဖရီးလန်ဆာတစ်ဦးက ဘဏ်ချေးငွေ သို့မဟုတ် ရင်းနှီးမြှုပ်နှံသူ အစီအစဉ်အတွက် တစ်နာရီ ဖုန်းဆွေးနွေးမှုကို ฿2,500 ဖြင့် ရောင်းသည်။ ဖုန်းဆွေးနွေးမှုတွင် လုပ်ငန်း ဖြစ်နိုင်ခြေ၊ အားသာချက်များ၊ ပိုင်ဆိုင်မှု တန်ဖိုးဖြတ်ခြင်းနှင့် အခြားမေးခွန်းများ ပါသည်။ ကနဦးအကဲဖြတ်မှုမှာ အခမဲ့ဖြစ်ကြောင်း စာရင်းတွင် ဆိုသည်။",
+    "zh": "Fastwork 上一位自由职业者以 ฿2,500 出售一小时电话咨询，内容是银行贷款或投资人计划书，涵盖业务可行性、优势、资产评估和其他问题。该页说明初步评估免费。",
+    "de": "Ein Freelancer auf Fastwork verkauft ein einstündiges Telefongespräch zu einem Bankkredit- oder Investorenplan für ฿2,500. Das Gespräch behandelt die Machbarkeit des Geschäfts, seine Stärken, eine Bewertung der Vermögenswerte und weitere Fragen. Laut Angebot ist die Ersteinschätzung kostenlos."
+   },
+   "src": "https://fastwork.co/user/erdzzzja/business-11175152"
+  },
+  {
+   "q": {
+    "en": "What does the BOI Smart visa checklist say about documents not in English?",
+    "th": "รายการตรวจเอกสาร Smart visa ของ BOI ระบุอะไรเกี่ยวกับเอกสารที่ไม่ใช่ภาษาอังกฤษ",
+    "my": "BOI Smart visa စစ်ဆေးစာရင်းက အင်္ဂလိပ်ဘာသာမဟုတ်သော စာရွက်စာတမ်းများအကြောင်း ဘာဆိုသလဲ",
+    "zh": "BOI 的 Smart 签证清单对非英文文件怎么说",
+    "de": "Was sagt die BOI-Checkliste für das Smart-Visum zu Unterlagen, die nicht auf Englisch sind?"
+   },
+   "a": {
+    "en": "The BOI checklist for the Smart visa S has the applicant confirm that documents not in English come with a certified translation. The checklist asks for a pitch deck, which it also calls a startup business plan, and lists 12 items for it.",
+    "th": "รายการตรวจเอกสาร Smart visa S ของ BOI ให้ผู้ยื่นยืนยันว่าเอกสารที่ไม่ใช่ภาษาอังกฤษมีคำแปลรับรองแนบมา รายการนี้ขอ pitch deck ซึ่งเรียกอีกชื่อว่าแผนธุรกิจของสตาร์ตอัป และระบุหัวข้อไว้ 12 ข้อ",
+    "my": "BOI ၏ Smart visa S စစ်ဆေးစာရင်းတွင် အင်္ဂလိပ်ဘာသာမဟုတ်သော စာရွက်စာတမ်းများနှင့်အတူ အတည်ပြုဘာသာပြန်ချက် ပါရှိကြောင်း လျှောက်ထားသူက အတည်ပြုရသည်။ စစ်ဆေးစာရင်းက pitch deck (စတားတပ် စီးပွားရေးအစီအစဉ်ဟုလည်း ခေါ်သည်) ကို တောင်းပြီး ၎င်းအတွက် အချက် 12 ချက် ဖော်ပြထားသည်။",
+    "zh": "BOI 的 Smart 签证 S 类清单要求申请人确认：非英文文件附有认证翻译件。清单要求提交 pitch deck（也称创业商业计划书），并为它列出 12 项内容。",
+    "de": "In der BOI-Checkliste für das Smart-Visum S bestätigt der Antragsteller, dass Unterlagen, die nicht auf Englisch sind, mit einer beglaubigten Übersetzung kommen. Die Checkliste verlangt ein Pitch Deck, das sie auch Startup-Businessplan nennt, und führt dafür 12 Punkte auf."
+   },
+   "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "q": {
+    "en": "What does a Thai bank ask a company to hand in with a loan application?",
+    "th": "ธนาคารไทยขอให้บริษัทส่งอะไรบ้างพร้อมคำขอสินเชื่อ",
+    "my": "ထိုင်းဘဏ်က ချေးငွေလျှောက်လွှာနှင့်အတူ ကုမ္ပဏီကို ဘာတွေ တင်ပြခိုင်းသလဲ",
+    "zh": "泰国银行要求公司随贷款申请提交什么",
+    "de": "Was verlangt eine thailändische Bank von einem Unternehmen mit dem Kreditantrag?"
+   },
+   "a": {
+    "en": "One Siam Commercial Bank (SCB) SME loan page lists, for a company: a company certificate from the Department of Business Development with the shareholder list, the memorandum of association, ID copies of the shareholders, directors and guarantors, audited financial statements for 3 years, at least 6 months of main-bank statements, consent for a credit bureau check, and a copy of the collateral title. The page is for firms with yearly sales of ฿75,000,000–500,000,000.",
+    "th": "หน้าสินเชื่อ SME หน้าหนึ่งของธนาคารไทยพาณิชย์ (SCB) ระบุสำหรับนิติบุคคล ได้แก่ หนังสือรับรองบริษัทจากกรมพัฒนาธุรกิจการค้าพร้อมบัญชีรายชื่อผู้ถือหุ้น หนังสือบริคณห์สนธิ สำเนาบัตรประชาชนและทะเบียนบ้านของผู้ถือหุ้น กรรมการ และผู้ค้ำประกัน งบการเงินที่ผ่านการตรวจสอบย้อนหลัง 3 ปี รายการเดินบัญชีของธนาคารหลักย้อนหลัง 6 เดือน หนังสือยินยอมให้ตรวจเครดิตบูโร และสำเนาเอกสารสิทธิหลักประกัน หน้านี้สำหรับกิจการที่มียอดขายต่อปี ฿75,000,000–500,000,000",
+    "my": "SCB (Siam Commercial Bank) ၏ SME ချေးငွေစာမျက်နှာတစ်ခုက ကုမ္ပဏီအတွက် ဖော်ပြသည်မှာ - စီးပွားရေးဖွံ့ဖြိုးရေးဦးစီးဌာန ထုတ်ပေးသော ကုမ္ပဏီမှတ်ပုံတင်လက်မှတ်နှင့် ရှယ်ယာရှင်စာရင်း၊ ကုမ္ပဏီဖွဲ့စည်းပုံစာချုပ်၊ ရှယ်ယာရှင်၊ ဒါရိုက်တာနှင့် အာမခံသူတို့၏ မှတ်ပုံတင်မိတ္တူများ၊ 3 နှစ်စာ စာရင်းစစ်ပြီး ဘဏ္ဍာရေးရှင်းတမ်း၊ အဓိကဘဏ်၏ အနည်းဆုံး 6 လစာ ဘဏ်ရှင်းတမ်း၊ ခရက်ဒစ်ဘူရိုစစ်ဆေးရန် သဘောတူစာနှင့် အပေါင်ပစ္စည်းပိုင်ဆိုင်မှုစာရွက်မိတ္တူ။ ဤစာမျက်နှာသည် နှစ်စဉ်ရောင်းရငွေ ฿75,000,000–500,000,000 ရှိသော လုပ်ငန်းများအတွက် ဖြစ်သည်။",
+    "zh": "SCB（泰国汇商银行）的一个中小企业贷款页面为公司列出：商业发展厅出具的公司证书及股东名册、公司章程大纲、股东、董事和担保人的身份证件复印件、经审计的 3 年财务报表、主往来银行至少 6 个月的对账单、同意查询征信的文件，以及抵押物权属文件复印件。该页面针对年销售额 ฿75,000,000–500,000,000 的企业。",
+    "de": "Eine KMU-Kreditseite der Siam Commercial Bank (SCB) nennt für ein Unternehmen: ein Handelsregister-Zertifikat des Handelsentwicklungsamts mit der Aktionärsliste, die Gründungsurkunde, Ausweiskopien der Aktionäre, Direktoren und Bürgen, geprüfte Jahresabschlüsse für 3 Jahre, mindestens 6 Monate Kontoauszüge der Hausbank, die Einwilligung zur Abfrage bei der Auskunftei und eine Kopie des Sicherheitentitels. Die Seite gilt für Firmen mit einem Jahresumsatz von ฿75,000,000–500,000,000."
+   },
+   "src": "https://www.scb.co.th/th/sme-banking/business-loan/secured-loan/sme-total-solution"
+  },
+  {
+   "q": {
+    "en": "How many years do the money numbers cover?",
+    "th": "ตัวเลขการเงินครอบคลุมกี่ปี",
+    "my": "ငွေကြေးကိန်းဂဏန်းများသည် နှစ်ဘယ်လောက်ကို ဖုံးအုပ်သလဲ",
+    "zh": "财务数字涵盖几年",
+    "de": "Wie viele Jahre decken die Finanzzahlen ab?"
+   },
+   "a": {
+    "en": "The SBA's startup-cost page counts at least one year of monthly expenses, with five years ideal. It names financial projections for the next five years as part of a loan request.",
+    "th": "หน้าต้นทุนเริ่มต้นของ SBA นับค่าใช้จ่ายรายเดือนอย่างน้อยหนึ่งปี และห้าปีคือกรณีที่ดีที่สุด และระบุประมาณการทางการเงินห้าปีข้างหน้าเป็นส่วนหนึ่งของคำขอสินเชื่อ",
+    "my": "SBA ၏ စတင်ကုန်ကျစရိတ်စာမျက်နှာတွင် လစဉ်ကုန်ကျစရိတ်ကို အနည်းဆုံး တစ်နှစ်စာ ရေတွက်ပြီး ငါးနှစ်စာမှာ အကောင်းဆုံးဖြစ်သည်။ နောက်ငါးနှစ်စာ ဘဏ္ဍာရေးခန့်မှန်းချက်ကို ချေးငွေတောင်းဆိုမှု၏ အစိတ်အပိုင်းအဖြစ် ဖော်ပြထားသည်။",
+    "zh": "SBA 的创业成本页面把每月支出至少算一年，算五年最理想。它把未来五年的财务预测列为贷款申请的一部分。",
+    "de": "Die SBA-Seite zu Startkosten rechnet mindestens ein Jahr monatlicher Ausgaben, ideal sind fünf Jahre. Finanzprognosen für die nächsten fünf Jahre führt sie als Teil eines Kreditantrags auf."
+   },
+   "src": "https://www.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs"
+  }
+ ],
+ "related": [
+  "decks",
+  "translate",
+  "books",
+  "bank-account",
+  "visas",
+  "copy"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "SBA: write your business plan",
+    "th": "SBA: เขียนแผนธุรกิจของคุณ",
+    "my": "SBA - သင့်စီးပွားရေးအစီအစဉ် ရေးသားခြင်း",
+    "zh": "SBA：撰写您的商业计划书",
+    "de": "SBA: Ihren Businessplan schreiben"
+   },
+   "href": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan"
+  },
+  {
+   "t": {
+    "en": "BOI Smart visa S: required documents and the pitch deck items",
+    "th": "BOI Smart visa S: เอกสารที่ต้องใช้และหัวข้อ pitch deck",
+    "my": "BOI Smart visa S - လိုအပ်သော စာရွက်စာတမ်းများနှင့် pitch deck အချက်များ",
+    "zh": "BOI Smart 签证 S 类：所需文件与 pitch deck 项目",
+    "de": "BOI Smart-Visum S: erforderliche Unterlagen und Pitch-Deck-Punkte"
+   },
+   "href": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: financial products for SMEs",
+    "th": "ธนาคารแห่งประเทศไทย: ผลิตภัณฑ์ทางการเงินสำหรับ SME",
+    "my": "ထိုင်းဗဟိုဘဏ် - SME အတွက် ဘဏ္ဍာရေးထုတ်ကုန်များ",
+    "zh": "泰国央行：中小企业金融产品",
+    "de": "Bank of Thailand: Finanzprodukte für KMU"
+   },
+   "href": "https://www.bot.or.th/th/financial-innovation/sustainable-finance/household-and-sme/SME-financial-inclusion/sme-financial-products.html"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai Visa Desk: visas, work permits and company setup",
+    "th": "Chiang Mai Visa Desk: วีซ่า ใบอนุญาตทำงาน และการจดบริษัท",
+    "my": "Chiang Mai Visa Desk - ဗီဇာ၊ အလုပ်လုပ်ခွင့်နှင့် ကုမ္ပဏီဖွင့်ခြင်း",
+    "zh": "清迈签证服务台：签证、工作许可和公司设立",
+    "de": "Chiang Mai Visa Desk: Visa, Arbeitserlaubnis und Firmengründung"
+   },
+   "href": "https://chiangmaivisadesk.com/"
+  }
+ ],
+ "glyphs": [
+  "page",
+  "lightbulb",
+  "coin"
+ ]
+}

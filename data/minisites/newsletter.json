@@ -1,0 +1,319 @@
+{
+ "id": "newsletter",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A newsletter goes to a list, and each issue has to be written and laid out before it is sent.",
+  "th": "จดหมายข่าวส่งถึงรายชื่อผู้รับ และแต่ละฉบับต้องเขียนและจัดหน้าก่อนส่ง",
+  "my": "သတင်းလွှာကို စာရင်းတစ်ခုသို့ ပို့ပြီး ထုတ်ဝေမှုတစ်ခုချင်းစီကို မပို့မီ ရေးသားကာ ပုံစံချရသည်။",
+  "zh": "电子报发给一份名单上的人，每一期发出前都要写好并排好版。",
+  "de": "Ein Newsletter geht an eine Liste, und jede Ausgabe muss vor dem Versand geschrieben und gesetzt werden."
+ },
+ "n": {
+  "de": "Newsletter"
+ },
+ "l": {
+  "de": "Geschrieben und gesetzt, fertig zum Versand."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You give the news for the issue.",
+    "th": "คุณให้ข่าวสารสำหรับฉบับนั้น",
+    "my": "ထုတ်ဝေမှုအတွက် သတင်းများကို သင်ပေးသည်။",
+    "zh": "您提供这一期的内容。",
+    "de": "Sie liefern die Neuigkeiten für die Ausgabe."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "The issue is written.",
+    "th": "เขียนจดหมายข่าวฉบับนั้น",
+    "my": "ထုတ်ဝေမှုကို ရေးသားသည်။",
+    "zh": "撰写这一期。",
+    "de": "Die Ausgabe wird geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "It is laid out and ready to send to your list.",
+    "th": "จัดหน้าและพร้อมส่งถึงรายชื่อของคุณ",
+    "my": "ပုံစံချပြီး သင့်စာရင်းသို့ ပို့ရန် အသင့်ဖြစ်သည်။",
+    "zh": "排好版，可直接发给您的名单。",
+    "de": "Sie wird gesetzt und ist bereit zum Versand an Ihre Liste."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Gmail asks senders of more than 5,000 messages a day to set up SPF, DKIM and DMARC for their domain.",
+    "th": "Gmail กำหนดให้ผู้ส่งที่ส่งเกิน 5,000 ข้อความต่อวันตั้งค่า SPF, DKIM และ DMARC สำหรับโดเมนของตน",
+    "my": "Gmail က တစ်နေ့လျှင် မက်ဆေ့ချ် 5,000 ကျော် ပို့သူများကို ၎င်းတို့၏ ဒိုမိန်းအတွက် SPF၊ DKIM နှင့် DMARC ထားရှိရန် တောင်းဆိုသည်။",
+    "zh": "Gmail 要求每天发送超过 5,000 封邮件的发件人，为自己的域名设置 SPF、DKIM 和 DMARC。",
+    "de": "Gmail verlangt von Absendern von mehr als 5,000 Nachrichten pro Tag, für ihre Domain SPF, DKIM und DMARC einzurichten."
+   },
+   "src": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "t": {
+    "en": "Gmail asks that marketing and subscribed messages support one-click unsubscribe and show a clear unsubscribe link in the body, and that the spam rate in Postmaster Tools stays below 0.30 percent.",
+    "th": "Gmail กำหนดให้ข้อความการตลาดและข้อความที่ผู้ใช้สมัครรับต้องรองรับการยกเลิกการรับด้วยคลิกเดียว และมีลิงก์ยกเลิกที่เห็นชัดในเนื้อหา และอัตราสแปมใน Postmaster Tools ต้องต่ำกว่า 0.30 เปอร์เซ็นต์",
+    "my": "Gmail က စျေးကွက်ရှာဖွေရေးနှင့် စာရင်းသွင်းထားသော မက်ဆေ့ချ်များတွင် တစ်ချက်နှိပ်ဖြင့် စာရင်းမှထွက်ခြင်းကို ပံ့ပိုးပြီး စာကိုယ်တွင် ရှင်းလင်းသော ထွက်ခွာလင့်ခ်ပါရန်နှင့် Postmaster Tools ရှိ စပမ်းနှုန်း 0.30 ရာခိုင်နှုန်းအောက်တွင်ရှိရန် တောင်းဆိုသည်။",
+    "zh": "Gmail 要求营销邮件和订阅邮件支持一键退订，并在正文中放显眼的退订链接，同时 Postmaster Tools 中的垃圾邮件率保持在 0.30% 以下。",
+    "de": "Gmail verlangt, dass Marketing- und Abonnement-Nachrichten die Abmeldung mit einem Klick unterstützen und im Text einen gut sichtbaren Abmeldelink zeigen und dass die Spam-Rate in den Postmaster Tools unter 0.30 Prozent bleibt."
+   },
+   "src": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "t": {
+    "en": "Thai law permits direct marketing by email if the recipient can easily opt out or unsubscribe.",
+    "th": "กฎหมายไทยอนุญาตให้ทำการตลาดทางตรงทางอีเมลได้ หากผู้รับยกเลิกการรับได้โดยง่าย",
+    "my": "ထိုင်းဥပဒေက လက်ခံသူက အလွယ်တကူ ထွက်ခွာ သို့မဟုတ် စာရင်းမှ ဖယ်ရှားနိုင်လျှင် အီးမေးလ်ဖြင့် တိုက်ရိုက်ဈေးကွက်ရှာဖွေခြင်းကို ခွင့်ပြုသည်။",
+    "zh": "泰国法律允许以电子邮件做直接营销，前提是收件人能轻松退订。",
+    "de": "Das thailändische Recht erlaubt Direktwerbung per E-Mail, wenn die Empfänger sich leicht abmelden können."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "t": {
+    "en": "Under Thai data protection law a request for consent must be made in writing or electronically, and a person can withdraw consent at any time.",
+    "th": "ตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลของไทย การขอความยินยอมต้องทำเป็นหนังสือหรือทางอิเล็กทรอนิกส์ และบุคคลถอนความยินยอมได้ทุกเมื่อ",
+    "my": "ထိုင်းဒေတာကာကွယ်ရေးဥပဒေအရ သဘောတူညီမှု တောင်းခံခြင်းကို စာဖြင့် သို့မဟုတ် အီလက်ထရောနစ်နည်းဖြင့် ပြုလုပ်ရမည်ဖြစ်ပြီး လူတစ်ဦးသည် မည်သည့်အချိန်တွင်မဆို သဘောတူညီမှုကို ပြန်လည်ရုပ်သိမ်းနိုင်သည်။",
+    "zh": "按泰国个人数据保护法，征求同意须采用书面或电子方式，个人可随时撤回同意。",
+    "de": "Nach dem thailändischen Datenschutzrecht muss die Einwilligung schriftlich oder elektronisch eingeholt werden, und jede Person kann sie jederzeit widerrufen."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "t": {
+    "en": "A Thai copyright assignment must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "การโอนลิขสิทธิ์ในไทยต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလကို သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "泰国的版权转让必须采用书面形式并写明期限；未写明期限的，期限为 10 年。",
+    "de": "Eine Abtretung des Urheberrechts in Thailand muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Freelance email writers (Copyblogger)",
+    "th": "นักเขียนอีเมลอิสระ (Copyblogger)",
+    "my": "လွတ်လပ်သော အီးမေးလ်စာရေးသူများ (Copyblogger)",
+    "zh": "自由撰稿的邮件作者（Copyblogger）",
+    "de": "Freiberufliche E-Mail-Texter (Copyblogger)"
+   },
+   "p": {
+    "en": "US$25–50 for a short email; US$150–500 for a longer one; about US$1,200 for 15 emails on a retainer",
+    "th": "US$25–50 สำหรับอีเมลสั้น US$150–500 สำหรับอีเมลยาว ประมาณ US$1,200 สำหรับ 15 ฉบับแบบรายเดือน",
+    "my": "အီးမေးလ်တိုတစ်ခု US$25–50၊ ရှည်သည့်တစ်ခု US$150–500၊ လစဉ်စာချုပ်ဖြင့် အီးမေးလ် 15 ခုလျှင် US$1,200 ခန့်",
+    "zh": "短邮件 US$25–50；较长邮件 US$150–500；按月包 15 封约 US$1,200",
+    "de": "US$25–50 für eine kurze E-Mail; US$150–500 für eine längere; rund US$1,200 für 15 E-Mails im Monatspaket"
+   },
+   "src": "https://copyblogger.com/freelance-writing-rates/"
+  },
+  {
+   "t": {
+    "en": "Newsletter guest writers (Beehiiv guide)",
+    "th": "นักเขียนรับเชิญสำหรับจดหมายข่าว (คู่มือ Beehiiv)",
+    "my": "သတင်းလွှာ ဧည့်စာရေးသူများ (Beehiiv လမ်းညွှန်)",
+    "zh": "电子报客座作者（Beehiiv 指南）",
+    "de": "Gastautoren für Newsletter (Beehiiv-Leitfaden)"
+   },
+   "p": {
+    "en": "US$0.07–0.20 a word",
+    "th": "US$0.07–0.20 ต่อคำ",
+    "my": "စကားလုံးတစ်လုံးလျှင် US$0.07–0.20",
+    "zh": "每词 US$0.07–0.20",
+    "de": "US$0.07–0.20 je Wort"
+   },
+   "src": "https://www.beehiiv.com/blog/email-newsletter-guest-writers"
+  },
+  {
+   "t": {
+    "en": "Email layout from a Fastwork seller with 5 orders",
+    "th": "จัดหน้าอีเมลจากผู้ขายบน Fastwork ที่มี 5 ออเดอร์",
+    "my": "အော်ဒါ 5 ခုရှိသော Fastwork ရောင်းသူထံမှ အီးမေးလ် ပုံစံချခြင်း",
+    "zh": "Fastwork 上有 5 笔订单的卖家的邮件排版",
+    "de": "E-Mail-Layout von einem Fastwork-Anbieter mit 5 Bestellungen"
+   },
+   "p": {
+    "en": "฿850 for one email from your text, 1 day; ฿1,200 with one designed image, 4 days; ฿2,200 for a campaign email with 3 images and a test send, 7 days; ฿4,500 for 3 emails, 12 days",
+    "th": "฿850 อีเมลหนึ่งฉบับจากข้อความของคุณ 1 วัน ฿1,200 รวมภาพออกแบบหนึ่งภาพ 4 วัน ฿2,200 อีเมลแคมเปญพร้อมภาพ 3 ภาพและส่งทดสอบ 7 วัน ฿4,500 สำหรับ 3 ฉบับ 12 วัน",
+    "my": "သင့်စာသားမှ အီးမေးလ်တစ်ခု ฿850 (1 ရက်)၊ ဒီဇိုင်းပုံ တစ်ပုံပါ ฿1,200 (4 ရက်)၊ ပုံ 3 ပုံနှင့် စမ်းသပ်ပို့မှုပါ လှုပ်ရှားမှုအီးမေးလ် ฿2,200 (7 ရက်)၊ အီးမေးလ် 3 ခု ฿4,500 (12 ရက်)",
+    "zh": "用您的文字排一封邮件 ฿850，1 天；含一张设计图 ฿1,200，4 天；含 3 张图和测试发送的活动邮件 ฿2,200，7 天；3 封 ฿4,500，12 天",
+    "de": "฿850 für eine E-Mail aus Ihrem Text, 1 Tag; ฿1,200 mit einem gestalteten Bild, 4 Tage; ฿2,200 für eine Kampagnen-E-Mail mit 3 Bildern und Testversand, 7 Tage; ฿4,500 für 3 E-Mails, 12 Tage"
+   },
+   "src": "https://fastwork.co/user/tangjaimarketing/email-marketing-23085730"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a newsletter writer charge?",
+    "th": "นักเขียนจดหมายข่าวคิดค่าเขียนเท่าไร",
+    "my": "သတင်းလွှာ စာရေးသူက ဘယ်လောက်ယူသလဲ။",
+    "zh": "电子报撰稿人收费多少？",
+    "de": "Was verlangt ein Newsletter-Autor?"
+   },
+   "a": {
+    "en": "Beehiiv's guide to newsletter guest writers says writers usually charge between US$0.07 and US$0.20 a word, depending on experience. Copyblogger lists freelance email writers at US$25–50 for shorter emails and US$150–500 for longer ones.",
+    "th": "คู่มือนักเขียนรับเชิญสำหรับจดหมายข่าวของ Beehiiv ระบุว่านักเขียนมักคิด US$0.07 ถึง US$0.20 ต่อคำ ขึ้นกับประสบการณ์ ส่วน Copyblogger ระบุนักเขียนอีเมลอิสระ US$25–50 สำหรับอีเมลสั้น และ US$150–500 สำหรับอีเมลยาว",
+    "my": "Beehiiv ၏ သတင်းလွှာ ဧည့်စာရေးသူလမ်းညွှန်က အတွေ့အကြုံပေါ်မူတည်၍ စာရေးသူများသည် စကားလုံးတစ်လုံးလျှင် US$0.07 မှ US$0.20 ကြား ယူလေ့ရှိသည်ဟု ဆိုသည်။ Copyblogger က လွတ်လပ်သော အီးမေးလ်စာရေးသူများကို အီးမေးလ်တိုလျှင် US$25–50 နှင့် ရှည်လျှင် US$150–500 ဟု စာရင်းပြုထားသည်။",
+    "zh": "Beehiiv 的电子报客座作者指南说，作者通常按每词 US$0.07 到 US$0.20 收费，视经验而定。Copyblogger 列出自由撰稿的邮件作者：短邮件 US$25–50，较长邮件 US$150–500。",
+    "de": "Der Beehiiv-Leitfaden für Newsletter-Gastautoren sagt, Autoren verlangten je nach Erfahrung meist zwischen US$0.07 und US$0.20 je Wort. Copyblogger nennt freiberufliche E-Mail-Texter mit US$25–50 für kürzere und US$150–500 für längere E-Mails."
+   },
+   "src": "https://www.beehiiv.com/blog/email-newsletter-guest-writers"
+  },
+  {
+   "q": {
+    "en": "How much does it cost to lay out an email newsletter?",
+    "th": "ค่าจัดหน้าจดหมายข่าวทางอีเมลเท่าไร",
+    "my": "အီးမေးလ်သတင်းလွှာ ပုံစံချရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "给电子邮件通讯排版要多少钱？",
+    "de": "Was kostet das Setzen eines E-Mail-Newsletters?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists laying out one email from your own text and images at ฿850. A new layout with one designed image is ฿1,200, a campaign email with 3 images and a test send is ฿2,200, and a set of 3 emails is ฿4,500.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งลงราคาจัดหน้าอีเมลหนึ่งฉบับจากข้อความและภาพของคุณ ฿850 เลย์เอาต์ใหม่พร้อมภาพออกแบบหนึ่งภาพ ฿1,200 อีเมลแคมเปญพร้อมภาพ 3 ภาพและส่งทดสอบ ฿2,200 และชุด 3 ฉบับ ฿4,500",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက သင့်စာသားနှင့်ပုံများမှ အီးမေးလ်တစ်ခု ပုံစံချခြင်းကို ฿850 ဟု စာရင်းပြုထားသည်။ ဒီဇိုင်းပုံ တစ်ပုံပါ ပုံစံသစ်မှာ ฿1,200၊ ပုံ 3 ပုံနှင့် စမ်းသပ်ပို့မှုပါ လှုပ်ရှားမှုအီးမေးလ်မှာ ฿2,200၊ အီးမေးလ် 3 ခုအစုမှာ ฿4,500 ဖြစ်သည်။",
+    "zh": "Fastwork 上一位卖家标价：用您自己的文字和图片排一封邮件 ฿850；新版式加一张设计图 ฿1,200；含 3 张图和测试发送的活动邮件 ฿2,200；一套 3 封 ฿4,500。",
+    "de": "Ein Fastwork-Anbieter nennt ฿850 für das Setzen einer E-Mail aus Ihrem Text und Ihren Bildern. Ein neues Layout mit einem gestalteten Bild kostet ฿1,200, eine Kampagnen-E-Mail mit 3 Bildern und Testversand ฿2,200 und ein Set mit 3 E-Mails ฿4,500."
+   },
+   "src": "https://fastwork.co/user/tangjaimarketing/email-marketing-23085730"
+  },
+  {
+   "q": {
+    "en": "What does Gmail ask of newsletter senders?",
+    "th": "Gmail กำหนดอะไรกับผู้ส่งจดหมายข่าว",
+    "my": "သတင်းလွှာ ပို့သူများကို Gmail က ဘာတွေ တောင်းဆိုသလဲ။",
+    "zh": "Gmail 对电子报发件人有什么要求？",
+    "de": "Was verlangt Gmail von Newsletter-Absendern?"
+   },
+   "a": {
+    "en": "For senders of more than 5,000 messages a day, Gmail asks for SPF, DKIM and DMARC on the sending domain, one-click unsubscribe with a clear unsubscribe link in the message, and a spam rate below 0.30 percent in Postmaster Tools.",
+    "th": "สำหรับผู้ส่งเกิน 5,000 ข้อความต่อวัน Gmail กำหนดให้มี SPF, DKIM และ DMARC บนโดเมนที่ใช้ส่ง การยกเลิกการรับด้วยคลิกเดียวพร้อมลิงก์ยกเลิกที่เห็นชัดในข้อความ และอัตราสแปมต่ำกว่า 0.30 เปอร์เซ็นต์ใน Postmaster Tools",
+    "my": "တစ်နေ့လျှင် မက်ဆေ့ချ် 5,000 ကျော် ပို့သူများအတွက် Gmail က ပို့သည့်ဒိုမိန်းတွင် SPF၊ DKIM နှင့် DMARC၊ မက်ဆေ့ချ်ထဲတွင် ရှင်းလင်းသော ထွက်ခွာလင့်ခ်ပါ တစ်ချက်နှိပ်စာရင်းမှထွက်ခြင်းနှင့် Postmaster Tools တွင် စပမ်းနှုန်း 0.30 ရာခိုင်နှုန်းအောက် ရှိရန် တောင်းဆိုသည်။",
+    "zh": "对每天发送超过 5,000 封邮件的发件人，Gmail 要求：发信域名设置 SPF、DKIM 和 DMARC，邮件中有显眼的退订链接并支持一键退订，Postmaster Tools 中的垃圾邮件率低于 0.30%。",
+    "de": "Von Absendern von mehr als 5,000 Nachrichten pro Tag verlangt Gmail SPF, DKIM und DMARC für die Absender-Domain, die Abmeldung mit einem Klick samt gut sichtbarem Abmeldelink in der Nachricht und eine Spam-Rate unter 0.30 Prozent in den Postmaster Tools."
+   },
+   "src": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "q": {
+    "en": "Can I email a newsletter to people in Thailand?",
+    "th": "ส่งจดหมายข่าวทางอีเมลให้คนในไทยได้ไหม",
+    "my": "ထိုင်းနိုင်ငံရှိ လူများထံ သတင်းလွှာကို အီးမေးလ်ပို့နိုင်ပါသလား။",
+    "zh": "我能给泰国的人发电子邮件通讯吗？",
+    "de": "Darf ich einen Newsletter an Personen in Thailand senden?"
+   },
+   "a": {
+    "en": "Linklaters' summary of Thai law says direct marketing by email is permitted if the recipient can easily opt out or unsubscribe. A person can also withdraw consent at any time.",
+    "th": "สรุปกฎหมายไทยของ Linklaters ระบุว่าอนุญาตให้ทำการตลาดทางตรงทางอีเมลได้ หากผู้รับยกเลิกการรับได้โดยง่าย และบุคคลถอนความยินยอมได้ทุกเมื่อ",
+    "my": "Linklaters ၏ ထိုင်းဥပဒေ အကျဉ်းချုပ်က လက်ခံသူက အလွယ်တကူ ထွက်ခွာ သို့မဟုတ် စာရင်းမှ ဖယ်ရှားနိုင်လျှင် အီးမေးလ်ဖြင့် တိုက်ရိုက်ဈေးကွက်ရှာဖွေခြင်းကို ခွင့်ပြုသည်ဟု ဆိုသည်။ လူတစ်ဦးသည် မည်သည့်အချိန်တွင်မဆို သဘောတူညီမှုကို ပြန်လည်ရုပ်သိမ်းနိုင်သည်။",
+    "zh": "Linklaters 对泰国法律的概述指出，收件人能轻松退订的前提下，允许以电子邮件做直接营销。个人也可以随时撤回同意。",
+    "de": "Die Zusammenfassung des thailändischen Rechts von Linklaters sagt, Direktwerbung per E-Mail sei erlaubt, wenn sich die Empfänger leicht abmelden können. Eine Person kann ihre Einwilligung auch jederzeit widerrufen."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "q": {
+    "en": "How does copyright pass to the buyer in Thailand?",
+    "th": "ลิขสิทธิ์ตกเป็นของผู้ซื้อได้อย่างไรในไทย",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်သည် ဝယ်သူထံ ဘယ်လို ရောက်သွားသလဲ။",
+    "zh": "在泰国，版权如何转给买方？",
+    "de": "Wie geht das Urheberrecht in Thailand an den Käufer über?"
+   },
+   "a": {
+    "en": "In Thailand copyright arises when a work is made, and registration is not needed. A transfer of copyright to the buyer must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน การโอนลิขสิทธิ์ให้ผู้ซื้อต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်ပြီး မှတ်ပုံတင်ရန် မလိုပါ။ ဝယ်သူထံ မူပိုင်ခွင့် လွှဲပြောင်းရာတွင် စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。把版权转让给买方，必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig. Die Abtretung an den Käufer muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "article",
+  "copy",
+  "graphics",
+  "social",
+  "web-mail",
+  "proposal"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google: email sender guidelines",
+    "th": "Google: แนวทางสำหรับผู้ส่งอีเมล",
+    "my": "Google - အီးမေးလ်ပို့သူ လမ်းညွှန်ချက်များ",
+    "zh": "Google：邮件发件人规范",
+    "de": "Google: Richtlinien für E-Mail-Absender"
+   },
+   "href": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "t": {
+    "en": "Linklaters: data protection in Thailand",
+    "th": "Linklaters: การคุ้มครองข้อมูลในไทย",
+    "my": "Linklaters - ထိုင်းနိုင်ငံ ဒေတာကာကွယ်ရေး",
+    "zh": "Linklaters：泰国的数据保护",
+    "de": "Linklaters: Datenschutz in Thailand"
+   },
+   "href": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  }
+ ],
+ "glyphs": [
+  "envelope",
+  "mailbox",
+  "send"
+ ]
+}

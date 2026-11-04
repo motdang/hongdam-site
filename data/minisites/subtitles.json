@@ -1,0 +1,299 @@
+{
+ "id": "subtitles",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People want the spoken words of a video in writing, or on the screen as subtitles, in Thai, English or Burmese.",
+  "th": "คนอยากได้คำพูดในวิดีโอเป็นตัวอักษร จะเป็นบทถอดความหรือซับไตเติลบนจอ เป็นภาษาไทย อังกฤษ หรือพม่า",
+  "my": "လူတွေက ဗီဒီယိုထဲက စကားပြောကို စာသားအဖြစ် သို့မဟုတ် ဖန်သားပြင်ပေါ်က စာတန်းထိုးအဖြစ် ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် မြန်မာဘာသာဖြင့် လိုချင်ကြသည်။",
+  "zh": "人们想把视频里说的话变成文字，可以是文字稿，也可以是画面上的字幕，语言为泰语、英语或缅甸语。",
+  "de": "Man möchte das gesprochene Wort eines Videos schriftlich haben, als Transkript oder als Untertitel im Bild, auf Thailändisch, Englisch oder Burmesisch."
+ },
+ "n": {
+  "de": "Untertitel und Transkripte"
+ },
+ "l": {
+  "de": "Ein Transkript oder eine Untertitel-Datei: Thailändisch, Englisch oder Burmesisch."
+ },
+ "glyphs": [
+  "sound",
+  "typewriter",
+  "play"
+ ],
+ "steps": [
+  {
+   "db": "send",
+   "t": {
+    "en": "You send the video or audio file and name the language: Thai, English or Burmese.",
+    "th": "คุณส่งไฟล์วิดีโอหรือเสียง และบอกภาษา ไทย อังกฤษ หรือพม่า",
+    "my": "သင်က ဗီဒီယို သို့မဟုတ် အသံဖိုင်ကို ပို့ပြီး ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် မြန်မာ ဘာသာစကားကို ပြောပြသည်။",
+    "zh": "您发来视频或音频文件，并说明语言：泰语、英语或缅甸语。",
+    "de": "Sie senden die Video- oder Audiodatei und nennen die Sprache: Thailändisch, Englisch oder Burmesisch."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "typewriter",
+   "t": {
+    "en": "We write out the spoken words.",
+    "th": "เราถอดคำพูดออกมาเป็นตัวอักษร",
+    "my": "ပြောထားသော စကားလုံးများကို ကျွန်ုပ်တို့ စာသားအဖြစ် ရေးသားသည်။",
+    "zh": "我们把说的话写成文字。",
+    "de": "Wir schreiben das gesprochene Wort auf."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the file arrives",
+    "th": "หลังได้รับไฟล์",
+    "my": "ဖိုင်ရောက်ပြီးနောက်",
+    "zh": "收到文件后",
+    "de": "Nach Eingang der Datei"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get a written transcript, or a subtitle file for your video.",
+    "th": "คุณได้รับบทถอดความ หรือไฟล์ซับไตเติลสำหรับวิดีโอ",
+    "my": "သင်က စာသားမှတ်တမ်း သို့မဟုတ် သင့်ဗီဒီယိုအတွက် စာတန်းထိုးဖိုင်ကို ရရှိသည်။",
+    "zh": "您拿到文字稿，或视频用的字幕文件。",
+    "de": "Sie erhalten ein schriftliches Transkript oder eine Untertitel-Datei für Ihr Video."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When it is done",
+    "th": "เมื่องานเสร็จ",
+    "my": "ပြီးစီးသောအခါ",
+    "zh": "完成时",
+    "de": "Wenn es fertig ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Netflix's Thai subtitle guide allows 35 characters a line and two lines at most. Tone marks and the vowels above or below a consonant are not counted.",
+    "th": "คู่มือซับไตเติลภาษาไทยของ Netflix กำหนดบรรทัดละไม่เกิน 35 ตัวอักษร และไม่เกิน 2 บรรทัด ไม่นับวรรณยุกต์และสระบนหรือสระล่าง",
+    "my": "Netflix ၏ ထိုင်းစာတန်းထိုး လမ်းညွှန်တွင် တစ်ကြောင်းလျှင် စာလုံး 35 လုံးအထိနှင့် အများဆုံး နှစ်ကြောင်းကို ခွင့်ပြုသည်။ ထိုင်းစာ၏ အသံနေအမှတ်အသားများ (tone marks) နှင့် ဗျည်းအပေါ်အောက်ရှိ သရများကို မရေတွက်ပါ။",
+    "zh": "Netflix 的泰语字幕指南规定每行 35 个字符，最多两行。声调符号以及辅音上方或下方的元音不计入。",
+    "de": "Der Thai-Untertitelleitfaden von Netflix erlaubt 35 Zeichen pro Zeile und höchstens zwei Zeilen. Tonzeichen sowie Vokale über oder unter einem Konsonanten zählen nicht mit."
+   },
+   "src": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/220448308-Thai-Timed-Text-Style-Guide"
+  },
+  {
+   "t": {
+    "en": "The same guide sets the reading speed at up to 17 characters a second for adult programs and up to 13 for children's programs.",
+    "th": "คู่มือเดียวกันกำหนดความเร็วในการอ่านไม่เกิน 17 ตัวอักษรต่อวินาทีสำหรับรายการผู้ใหญ่ และไม่เกิน 13 สำหรับรายการเด็ก",
+    "my": "ထိုလမ်းညွှန်တွင်ပင် ဖတ်ရမည့်အမြန်နှုန်းကို လူကြီးအစီအစဉ်အတွက် တစ်စက္ကန့်လျှင် စာလုံး 17 လုံးအထိ၊ ကလေးအစီအစဉ်အတွက် 13 လုံးအထိ သတ်မှတ်ထားသည်။",
+    "zh": "同一份指南把阅读速度定为：成人节目每秒最多 17 个字符，儿童节目最多 13 个。",
+    "de": "Derselbe Leitfaden legt die Lesegeschwindigkeit auf höchstens 17 Zeichen pro Sekunde für Sendungen für Erwachsene und höchstens 13 für Kindersendungen fest."
+   },
+   "src": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/220448308-Thai-Timed-Text-Style-Guide"
+  },
+  {
+   "t": {
+    "en": "For subtitles that add speaker names and sound labels (SDH), the limits rise to 20 characters a second for adult programs and 17 for children's programs. The line limit stays at 35.",
+    "th": "ซับที่ใส่ชื่อผู้พูดและป้ายบอกเสียง (SDH) เพิ่มขีดจำกัดเป็น 20 ตัวอักษรต่อวินาทีสำหรับรายการผู้ใหญ่ และ 17 สำหรับรายการเด็ก ส่วนบรรทัดละ 35 ตัวอักษรเท่าเดิม",
+    "my": "စကားပြောသူအမည်နှင့် အသံအညွှန်းများ ထည့်ထားသော စာတန်းထိုး (SDH) တွင် ကန့်သတ်ချက်ကို လူကြီးအစီအစဉ် တစ်စက္ကန့်လျှင် စာလုံး 20၊ ကလေးအစီအစဉ် 17 သို့ တိုးပေးသည်။ တစ်ကြောင်းလျှင် 35 လုံး ကန့်သတ်ချက်ကား မပြောင်းပါ။",
+    "zh": "带说话人姓名和声音标注的字幕（SDH）可放宽到：成人节目每秒 20 个字符，儿童节目 17 个。每行仍是 35 个字符。",
+    "de": "Bei Untertiteln mit Sprechernamen und Geräuschhinweisen (SDH) steigen die Grenzen auf 20 Zeichen pro Sekunde für Erwachsenensendungen und 17 für Kindersendungen. Die Zeilengrenze bleibt bei 35."
+   },
+   "src": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/220448308-Thai-Timed-Text-Style-Guide"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Rev, human transcription",
+    "th": "Rev ถอดความโดยคน",
+    "my": "Rev၊ လူသားဖြင့် စာသားမှတ်တမ်းရေးခြင်း",
+    "zh": "Rev 人工转写",
+    "de": "Rev, Transkription durch Menschen"
+   },
+   "p": {
+    "en": "US$1.99 a minute",
+    "th": "US$1.99 ต่อนาที",
+    "my": "တစ်မိနစ်လျှင် US$1.99",
+    "zh": "每分钟 US$1.99",
+    "de": "US$1.99 pro Minute"
+   },
+   "src": "https://www.rev.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Rev, foreign-language subtitles",
+    "th": "Rev ซับไตเติลภาษาต่างประเทศ",
+    "my": "Rev၊ နိုင်ငံခြားဘာသာစကား စာတန်းထိုး",
+    "zh": "Rev 外语字幕",
+    "de": "Rev, fremdsprachige Untertitel"
+   },
+   "p": {
+    "en": "US$6.49, US$10.49 or US$15.99 a minute, by language",
+    "th": "US$6.49, US$10.49 หรือ US$15.99 ต่อนาที ตามภาษา",
+    "my": "ဘာသာစကားအလိုက် တစ်မိနစ်လျှင် US$6.49၊ US$10.49 သို့မဟုတ် US$15.99",
+    "zh": "按语言，每分钟 US$6.49、US$10.49 或 US$15.99",
+    "de": "US$6.49, US$10.49 oder US$15.99 pro Minute, je nach Sprache"
+   },
+   "src": "https://www.rev.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Happy Scribe, human-made transcripts and subtitles",
+    "th": "Happy Scribe ถอดความและทำซับโดยคน",
+    "my": "Happy Scribe၊ လူသားလုပ်ဆောင်သော စာသားမှတ်တမ်းနှင့် စာတန်းထိုး",
+    "zh": "Happy Scribe 人工转写和字幕",
+    "de": "Happy Scribe, Transkripte und Untertitel von Menschen"
+   },
+   "p": {
+    "en": "From US$2.00 a minute",
+    "th": "เริ่มที่ US$2.00 ต่อนาที",
+    "my": "တစ်မိနစ်လျှင် US$2.00 မှစသည်",
+    "zh": "每分钟 US$2.00 起",
+    "de": "Ab US$2.00 pro Minute"
+   },
+   "src": "https://www.happyscribe.com/pricing"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller's subtitle listing, with an SRT file (270 sold)",
+    "th": "รายการรับทำซับไตเติลบน Fastwork พร้อมไฟล์ SRT (ขายแล้ว 270 ครั้ง)",
+    "my": "Fastwork ရှိ ရောင်းသူတစ်ဦး၏ စာတန်းထိုးစာရင်း၊ SRT ဖိုင်ပါ (270 ကြိမ် ရောင်းပြီး)",
+    "zh": "Fastwork 上一位卖家的字幕服务，含 SRT 文件（已售 270 次）",
+    "de": "Angebot einer Verkäuferperson auf Fastwork für Untertitel, mit SRT-Datei (270-mal verkauft)"
+   },
+   "p": {
+    "en": "฿300 up to 5 minutes, ฿500 for 5 to 10, ฿800 over 10",
+    "th": "วิดีโอไม่เกิน 5 นาที ฿300 · 5 ถึง 10 นาที ฿500 · เกิน 10 นาที ฿800",
+    "my": "5 မိနစ်အထိ ฿300၊ 5 မှ 10 မိနစ် ฿500၊ 10 မိနစ်ကျော် ฿800",
+    "zh": "5 分钟以内 ฿300，5 到 10 分钟 ฿500，超过 10 分钟 ฿800",
+    "de": "Bis 5 Minuten ฿300, 5 bis 10 Minuten ฿500, über 10 Minuten ฿800"
+   },
+   "src": "https://fastwork.co/user/frankpkim/subtitle-92118206"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How many characters fit on a Thai subtitle line?",
+    "th": "ซับไตเติลภาษาไทยหนึ่งบรรทัดใส่ได้กี่ตัวอักษร",
+    "my": "ထိုင်းစာတန်းထိုး တစ်ကြောင်းတွင် စာလုံး ဘယ်နှစ်လုံး ဆန့်သလဲ။",
+    "zh": "泰语字幕一行能放多少个字符？",
+    "de": "Wie viele Zeichen passen in eine Thai-Untertitelzeile?"
+   },
+   "a": {
+    "en": "Netflix's Thai guide allows 35 characters a line, in two lines at most. Tone marks and vowels above or below a consonant are not counted.",
+    "th": "คู่มือภาษาไทยของ Netflix กำหนดบรรทัดละไม่เกิน 35 ตัวอักษร และไม่เกิน 2 บรรทัด ไม่นับวรรณยุกต์และสระบนหรือสระล่าง",
+    "my": "Netflix ၏ ထိုင်းလမ်းညွှန်တွင် တစ်ကြောင်းလျှင် စာလုံး 35 လုံးအထိ၊ အများဆုံး နှစ်ကြောင်းကို ခွင့်ပြုသည်။ အသံနေအမှတ်အသားများနှင့် ဗျည်းအပေါ်အောက်ရှိ သရများကို မရေတွက်ပါ။",
+    "zh": "Netflix 的泰语指南规定每行 35 个字符，最多两行。声调符号以及辅音上方或下方的元音不计入。",
+    "de": "Der Thai-Leitfaden von Netflix erlaubt 35 Zeichen pro Zeile, höchstens in zwei Zeilen. Tonzeichen und Vokale über oder unter einem Konsonanten zählen nicht mit."
+   },
+   "src": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/220448308-Thai-Timed-Text-Style-Guide"
+  },
+  {
+   "q": {
+    "en": "How fast can viewers read subtitles?",
+    "th": "ผู้ชมอ่านซับไตเติลได้เร็วแค่ไหน",
+    "my": "ကြည့်သူများ စာတန်းထိုးကို ဘယ်လောက်မြန်မြန် ဖတ်နိုင်သလဲ။",
+    "zh": "观众读字幕能读多快？",
+    "de": "Wie schnell können Zuschauende Untertitel lesen?"
+   },
+   "a": {
+    "en": "Netflix's Thai guide sets up to 17 characters a second for adult programs and up to 13 for children's programs. Subtitles with speaker names and sound labels go up to 20 and 17.",
+    "th": "คู่มือภาษาไทยของ Netflix กำหนดไม่เกิน 17 ตัวอักษรต่อวินาทีสำหรับรายการผู้ใหญ่ และไม่เกิน 13 สำหรับรายการเด็ก ซับที่ใส่ชื่อผู้พูดและป้ายบอกเสียงเพิ่มเป็น 20 และ 17",
+    "my": "Netflix ၏ ထိုင်းလမ်းညွှန်တွင် လူကြီးအစီအစဉ်အတွက် တစ်စက္ကန့်လျှင် စာလုံး 17 လုံးအထိ၊ ကလေးအစီအစဉ်အတွက် 13 လုံးအထိ သတ်မှတ်ထားသည်။ စကားပြောသူအမည်နှင့် အသံအညွှန်းပါသော စာတန်းထိုးတွင် 20 နှင့် 17 အထိ ဖြစ်သည်။",
+    "zh": "Netflix 的泰语指南规定成人节目每秒最多 17 个字符，儿童节目最多 13 个。带说话人姓名和声音标注的字幕分别放宽到 20 和 17。",
+    "de": "Der Thai-Leitfaden von Netflix setzt höchstens 17 Zeichen pro Sekunde für Erwachsenensendungen und höchstens 13 für Kindersendungen. Mit Sprechernamen und Geräuschhinweisen sind es 20 und 17."
+   },
+   "src": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/220448308-Thai-Timed-Text-Style-Guide"
+  },
+  {
+   "q": {
+    "en": "What does a subtitle file cost on Fastwork?",
+    "th": "ไฟล์ซับไตเติลบน Fastwork ราคาเท่าไร",
+    "my": "Fastwork တွင် စာတန်းထိုးဖိုင် ဈေးဘယ်လောက်လဲ။",
+    "zh": "在 Fastwork 上做字幕文件要多少钱？",
+    "de": "Was kostet eine Untertitel-Datei auf Fastwork?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists ฿300 for a video up to 5 minutes, ฿500 for 5 to 10 minutes and ฿800 for longer ones. The listing says every package comes with an SRT file and a free transcription. It shows 270 sold.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคา ฿300 สำหรับวิดีโอไม่เกิน 5 นาที ฿500 สำหรับ 5 ถึง 10 นาที และ ฿800 สำหรับวิดีโอที่ยาวกว่านั้น รายการระบุว่าทุกแพ็กเกจมีไฟล์ SRT และการถอดความฟรี ขายแล้ว 270 ครั้ง",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက 5 မိနစ်အထိ ဗီဒီယိုကို ฿300၊ 5 မှ 10 မိနစ်ကို ฿500၊ ထိုထက်ရှည်လျှင် ฿800 ဟု သတ်မှတ်ထားသည်။ ပက်ကေ့ဂျ်တိုင်းတွင် SRT ဖိုင်နှင့် အခမဲ့ စာသားမှတ်တမ်း ပါသည်ဟု စာရင်းတွင် ဆိုသည်။ 270 ကြိမ် ရောင်းပြီးဖြစ်သည်။",
+    "zh": "Fastwork 上有一位卖家，5 分钟以内的视频 ฿300，5 到 10 分钟 ฿500，更长的 ฿800。页面写明每个套餐都含 SRT 文件和免费转写。已售 270 次。",
+    "de": "Eine Verkäuferperson auf Fastwork nennt ฿300 für ein Video bis 5 Minuten, ฿500 für 5 bis 10 Minuten und ฿800 für längere. Laut Angebot gehören zu jedem Paket eine SRT-Datei und eine kostenlose Transkription. Es zeigt 270 Verkäufe."
+   },
+   "src": "https://fastwork.co/user/frankpkim/subtitle-92118206"
+  },
+  {
+   "q": {
+    "en": "Can a machine write the transcript instead of a person?",
+    "th": "ให้เครื่องถอดความแทนคนได้ไหม",
+    "my": "လူအစား စက်က စာသားမှတ်တမ်း ရေးပေးနိုင်ပါသလား။",
+    "zh": "可以让机器代替人来写文字稿吗？",
+    "de": "Kann eine Maschine das Transkript statt eines Menschen schreiben?"
+   },
+   "a": {
+    "en": "Rev sells AI transcription inside monthly plans. Its Free plan has 45 AI minutes a month. Its Essentials plan is US$25.49 a seat a month, billed yearly, with 5,000 AI minutes.",
+    "th": "Rev ขายการถอดความด้วย AI ภายในแพ็กเกจรายเดือน แพ็กเกจ Free มี 45 นาที AI ต่อเดือน แพ็กเกจ Essentials ราคา US$25.49 ต่อที่นั่งต่อเดือน เมื่อจ่ายรายปี มี 5,000 นาที AI",
+    "my": "Rev က AI စာသားမှတ်တမ်းကို လစဉ်အစီအစဉ်များထဲတွင် ရောင်းသည်။ Free အစီအစဉ်တွင် တစ်လလျှင် AI မိနစ် 45 ပါသည်။ Essentials အစီအစဉ်မှာ တစ်နှစ်စာ ပေးချေလျှင် ထိုင်ခုံတစ်ခုလျှင် တစ်လ US$25.49 ဖြစ်ပြီး AI မိနစ် 5,000 ပါသည်။",
+    "zh": "Rev 把 AI 转写放在月度套餐里卖。Free 套餐每月含 45 分钟 AI 转写。Essentials 套餐按年付费，每个席位每月 US$25.49，含 5,000 分钟 AI 转写。",
+    "de": "Rev verkauft KI-Transkription in Monatspaketen. Das Paket Free enthält 45 KI-Minuten im Monat. Das Paket Essentials kostet US$25.49 pro Platz und Monat bei Jahreszahlung und enthält 5,000 KI-Minuten."
+   },
+   "src": "https://www.rev.com/pricing"
+  }
+ ],
+ "related": [
+  "video",
+  "translate",
+  "voice",
+  "typing",
+  "lang-shan",
+  "interview"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Netflix: Thai Timed Text Style Guide",
+    "th": "Netflix: คู่มือซับไตเติลภาษาไทย",
+    "my": "Netflix: ထိုင်းစာတန်းထိုး ပုံစံလမ်းညွှန်",
+    "zh": "Netflix：泰语字幕样式指南",
+    "de": "Netflix: Stilrichtlinien für Thai-Untertitel"
+   },
+   "href": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/220448308-Thai-Timed-Text-Style-Guide"
+  },
+  {
+   "t": {
+    "en": "Happy Scribe: prices for transcripts and subtitles",
+    "th": "Happy Scribe: ราคาบทถอดความและซับไตเติล",
+    "my": "Happy Scribe: စာသားမှတ်တမ်းနှင့် စာတန်းထိုး ဈေးနှုန်းများ",
+    "zh": "Happy Scribe：文字稿和字幕价格",
+    "de": "Happy Scribe: Preise für Transkripte und Untertitel"
+   },
+   "href": "https://www.happyscribe.com/pricing"
+  }
+ ]
+}

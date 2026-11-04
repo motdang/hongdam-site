@@ -272,7 +272,7 @@ function ladders(root = document) {
 }
 
 // Search, on any page that has the box: every language's words, whatever the page's language.
-const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
+const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${c.page ? `<a href="${esc(c.page)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
   (c.walk ? `<details class="ladder" data-svc="${esc(c.walk)}" hidden></details>` : '') +
   (c.go ? `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
 const q = $('#q')

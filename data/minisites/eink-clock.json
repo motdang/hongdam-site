@@ -1,0 +1,319 @@
+{
+ "id": "eink-clock",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A clock that shows the Lanna day gives a temple, a hotel or a home the northern date at a glance.",
+  "th": "นาฬิกาที่แสดงวันล้านนา ทำให้วัด โรงแรม หรือบ้านเห็นวันตามปฏิทินเหนือได้ในแวบเดียว",
+  "my": "လန်နာနေ့ကို ပြသသော နာရီက ဘုရားကျောင်း၊ ဟိုတယ် သို့မဟုတ် အိမ်တွင် မြောက်ပိုင်းပြက္ခဒိန်ရက်ကို တစ်ချက်ကြည့်ရုံဖြင့် မြင်ရစေသည်။",
+  "zh": "显示兰纳历日期的时钟，让寺庙、酒店或家里一眼就能看到北方历法的日子。",
+  "de": "Eine Uhr mit dem Lanna-Tag lässt einen Tempel, ein Hotel oder ein Zuhause das Datum des Nordens auf einen Blick sehen."
+ },
+ "n": {
+  "de": "Lanna-Almanach-Uhr"
+ },
+ "l": {
+  "de": "Solarbetriebene E-Ink-Uhr, die den Tag des Lanna-Kalenders zeigt."
+ },
+ "steps": [
+  {
+   "db": "home",
+   "t": {
+    "en": "You say where the clock goes: a temple, a hotel or a home.",
+    "th": "คุณบอกว่านาฬิกาจะอยู่ที่ไหน: วัด โรงแรม หรือบ้าน",
+    "my": "နာရီကို ဘယ်နေရာမှာ ထားမည်ကို သင်ပြောသည်။ ဘုရားကျောင်း၊ ဟိုတယ် သို့မဟုတ် အိမ်။",
+    "zh": "您说明时钟放在哪里：寺庙、酒店或家里。",
+    "de": "Sie sagen, wo die Uhr hängt: in einem Tempel, einem Hotel oder zu Hause."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ก่อนเริ่มทำ",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "gears",
+   "t": {
+    "en": "Hongdam builds a solar-powered clock with an e-ink screen.",
+    "th": "หงส์ดำสร้างนาฬิกาพลังแสงอาทิตย์ที่มีจอ e-ink",
+    "my": "ဟုန်ဒမ်က နေရောင်ခြည်စွမ်းအင်သုံး e-ink မျက်နှာပြင်ပါ နာရီကို တည်ဆောက်သည်။",
+    "zh": "鸿丹来做一台带电子墨水屏、靠太阳能供电的时钟。",
+    "de": "Hongdam baut eine solarbetriebene Uhr mit E-Ink-Bildschirm."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you say",
+    "th": "หลังคุณบอก",
+    "my": "သင်ပြောပြီးနောက်",
+    "zh": "您说明之后",
+    "de": "Nach Ihrer Angabe"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "The screen shows the Lanna calendar day.",
+    "th": "หน้าจอแสดงวันตามปฏิทินล้านนา",
+    "my": "မျက်နှာပြင်က လန်နာပြက္ခဒိန်ရက်ကို ပြသည်။",
+    "zh": "屏幕显示兰纳历的日子。",
+    "de": "Der Bildschirm zeigt den Tag des Lanna-Kalenders."
+   },
+   "who": {
+    "en": "The clock",
+    "th": "นาฬิกา",
+    "my": "နာရီ",
+    "zh": "时钟",
+    "de": "Die Uhr"
+   },
+   "time": {
+    "en": "In use",
+    "th": "เมื่อใช้งาน",
+    "my": "အသုံးပြုချိန်",
+    "zh": "使用时",
+    "de": "Im Gebrauch"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Waveshare's 7.5-inch e-paper display keeps showing its last picture for a long time with the power off. Its page says power is needed mainly to change the picture.",
+    "th": "จอ e-paper 7.5 นิ้วของ Waveshare แสดงภาพสุดท้ายค้างไว้ได้นานแม้ปิดไฟ หน้าสินค้าระบุว่าต้องใช้ไฟเป็นหลักตอนเปลี่ยนภาพ",
+    "my": "Waveshare ၏ 7.5 လက်မ e-paper မျက်နှာပြင်သည် ဓာတ်အားဖြတ်ထားသော်လည်း နောက်ဆုံးပုံကို အချိန်ကြာကြာ ဆက်ပြနေသည်။ ထုတ်ကုန်စာမျက်နှာတွင် ပုံပြောင်းချိန်တွင်သာ ဓာတ်အား အဓိကလိုသည်ဟု ဆိုသည်။",
+    "zh": "Waveshare 的 7.5 英寸电子纸屏断电后，能长时间保持最后一幅画面。产品页说，主要在换画面时才需要用电。",
+    "de": "Der 7,5-Zoll-E-Paper-Bildschirm von Waveshare zeigt sein letztes Bild bei abgeschaltetem Strom lange weiter. Die Produktseite schreibt, Strom brauche es hauptsächlich zum Wechseln des Bildes."
+   },
+   "src": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "t": {
+    "en": "The same page lists a black-and-white screen with 4 greys, 800 × 480 pixels, a full refresh in 4 seconds, 26.4 mW to refresh and under 0.01 µA on standby.",
+    "th": "หน้าเดียวกันระบุจอขาวดำ 4 ระดับสีเทา 800 × 480 พิกเซล รีเฟรชเต็มจอ 4 วินาที ใช้ไฟ 26.4 mW ตอนรีเฟรช และต่ำกว่า 0.01 µA ตอนสแตนด์บาย",
+    "my": "ထိုစာမျက်နှာတွင် မီးခိုးရောင် 4 အဆင့်ပါ အဖြူအမည်း မျက်နှာပြင်၊ 800 × 480 ပစ်ဆယ်၊ အပြည့်ပြန်လည်ပြင်ဆင်ချိန် 4 စက္ကန့်၊ ပြန်လည်ပြင်ဆင်ချိန် 26.4 mW နှင့် စတန်းဘိုင်းတွင် 0.01 µA အောက် ဟု ဖော်ပြထားသည်။",
+    "zh": "同一页写明：黑白屏，4 级灰度，800 × 480 像素，整屏刷新 4 秒，刷新功率 26.4 mW，待机电流低于 0.01 µA。",
+    "de": "Dieselbe Seite nennt einen Schwarz-Weiss-Bildschirm mit 4 Graustufen, 800 × 480 Pixel, 4 Sekunden für eine volle Aktualisierung, 26,4 mW beim Aktualisieren und unter 0,01 µA im Standby."
+   },
+   "src": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "t": {
+    "en": "Waveshare's solar power module takes a 6V to 24V solar panel and charges a 3.7V lithium battery. It gives 5V or 3.3V at up to 1A. The battery is not included.",
+    "th": "โมดูลพลังงานแสงอาทิตย์ของ Waveshare รับแผงโซลาร์ 6V ถึง 24V และชาร์จแบตเตอรี่ลิเทียม 3.7V จ่ายไฟ 5V หรือ 3.3V สูงสุด 1A แบตเตอรี่ไม่รวมมาให้",
+    "my": "Waveshare ၏ နေရောင်ခြည်စွမ်းအင် မော်ဂျူးသည် 6V မှ 24V နေရောင်ခြည်ပြား ကို လက်ခံပြီး 3.7V လီသီယမ်ဘက်ထရီကို အားသွင်းသည်။ 5V သို့မဟုတ် 3.3V ကို 1A အထိ ထုတ်ပေးသည်။ ဘက်ထရီ မပါပါ။",
+    "zh": "Waveshare 的太阳能电源模块可接 6V 至 24V 的太阳能板，给 3.7V 锂电池充电，输出 5V 或 3.3V，最大 1A。电池不含在内。",
+    "de": "Das Solarmodul von Waveshare nimmt ein 6-V- bis 24-V-Solarpanel und lädt einen 3,7-V-Lithiumakku. Es gibt 5 V oder 3,3 V bei bis zu 1 A ab. Der Akku ist nicht dabei."
+   },
+   "src": "https://www.waveshare.com/solar-power-manager.htm"
+  },
+  {
+   "t": {
+    "en": "Yi Peng falls on the full moon of the second month of the Lanna lunar calendar, usually in November. The Thailand Foundation says this is the 12th month of the central Thai lunar calendar.",
+    "th": "ยี่เป็งตรงกับวันเพ็ญเดือนยี่ของปฏิทินจันทรคติล้านนา ซึ่งมักอยู่ในเดือนพฤศจิกายน Thailand Foundation ระบุว่าตรงกับเดือน 12 ของปฏิทินจันทรคติไทยภาคกลาง",
+    "my": "Yi Peng ပွဲတော်သည် လန်နာ လတွက်ပြက္ခဒိန်၏ ဒုတိယလ လပြည့်နေ့တွင် ကျရောက်ပြီး များသောအားဖြင့် နိုဝင်ဘာလ ဖြစ်သည်။ Thailand Foundation က ၎င်းသည် ထိုင်းအလယ်ပိုင်း လတွက်ပြက္ခဒိန်၏ 12 လပိုင်း ဖြစ်သည်ဟု ဆိုသည်။",
+    "zh": "伊彭节（Yi Peng）在兰纳阴历二月的月圆日，通常在 11 月。Thailand Foundation 说，这一天是泰国中部阴历的十二月。",
+    "de": "Yi Peng fällt auf den Vollmond des zweiten Monats im Lanna-Mondkalender, meist im November. Die Thailand Foundation schreibt, das sei der 12. Monat im Mondkalender Zentralthailands."
+   },
+   "src": "https://thailandfoundation.or.th/518234-v2/"
+  },
+  {
+   "t": {
+    "en": "Pi Mai Mueang, the Lanna New Year, falls near Songkran, when the sun moves from Pisces into Aries in April. The official holiday is 13 to 15 April, and the first day, 13 April, is called Wan Sungkan Long.",
+    "th": "ปี๋ใหม่เมืองคือปีใหม่ล้านนา ตรงกับช่วงสงกรานต์ ซึ่งดวงอาทิตย์ย้ายจากราศีมีนเข้าราศีเมษในเดือนเมษายน วันหยุดทางการคือ 13 ถึง 15 เมษายน วันแรก 13 เมษายน เรียกว่าวันสังขานต์ล่อง",
+    "my": "Pi Mai Mueang ဟုခေါ်သော လန်နာနှစ်သစ်ကူးပွဲသည် သင်္ကြန်နီးပါး ကျရောက်ပြီး ဧပြီလတွင် နေသည် မိန်ရာသီမှ မိဿရာသီသို့ ပြောင်းချိန် ဖြစ်သည်။ တရားဝင်ပိတ်ရက်မှာ ဧပြီ 13 မှ 15 အထိ ဖြစ်ပြီး ပထမနေ့ ဧပြီ 13 ကို Wan Sungkan Long ဟု ခေါ်သည်။",
+    "zh": "兰纳新年 Pi Mai Mueang 在宋干节前后，4 月太阳从双鱼座进入白羊座的时候。官方假期是 4 月 13 日至 15 日，第一天 4 月 13 日叫 Wan Sungkan Long。",
+    "de": "Pi Mai Mueang, das Lanna-Neujahr, liegt nahe bei Songkran, wenn die Sonne im April von den Fischen in den Widder wechselt. Der offizielle Feiertag ist vom 13. bis 15. April, der erste Tag, der 13. April, heisst Wan Sungkan Long."
+   },
+   "src": "https://thailandfoundation.or.th/pi-mai-mueang-songkran-festival-of-northern-thailand/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Waveshare 7.5-inch e-paper display, 800 × 480",
+    "th": "จอ e-paper 7.5 นิ้ว 800 × 480 ของ Waveshare",
+    "my": "Waveshare 7.5 လက်မ e-paper မျက်နှာပြင်၊ 800 × 480",
+    "zh": "Waveshare 7.5 英寸电子纸屏，800 × 480",
+    "de": "Waveshare E-Paper-Bildschirm, 7,5 Zoll, 800 × 480"
+   },
+   "p": {
+    "en": "US$56.99",
+    "th": "US$56.99",
+    "my": "US$56.99",
+    "zh": "US$56.99",
+    "de": "US$56.99"
+   },
+   "src": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "t": {
+    "en": "Waveshare e-paper driver board with Wi-Fi and Bluetooth (display not included)",
+    "th": "บอร์ดขับ e-paper ของ Waveshare มี Wi-Fi และบลูทูธ (ไม่รวมจอ)",
+    "my": "Waveshare e-paper ဒရိုက်ဘာဘုတ်၊ Wi-Fi နှင့် ဘလူးတုသ်ပါ (မျက်နှာပြင် မပါ)",
+    "zh": "Waveshare 电子纸驱动板，带 Wi-Fi 和蓝牙（不含屏幕）",
+    "de": "Waveshare E-Paper-Treiberplatine mit WLAN und Bluetooth (Bildschirm nicht dabei)"
+   },
+   "p": {
+    "en": "US$14.99",
+    "th": "US$14.99",
+    "my": "US$14.99",
+    "zh": "US$14.99",
+    "de": "US$14.99"
+   },
+   "src": "https://www.waveshare.com/e-paper-esp32-driver-board.htm"
+  },
+  {
+   "t": {
+    "en": "Waveshare solar power module for a 6V to 24V panel (battery not included)",
+    "th": "โมดูลพลังงานแสงอาทิตย์ของ Waveshare สำหรับแผง 6V ถึง 24V (ไม่รวมแบตเตอรี่)",
+    "my": "Waveshare နေရောင်ခြည်စွမ်းအင် မော်ဂျူး၊ 6V မှ 24V ပြားအတွက် (ဘက်ထရီ မပါ)",
+    "zh": "Waveshare 太阳能电源模块，适用 6V 至 24V 太阳能板（不含电池）",
+    "de": "Waveshare-Solarmodul für ein 6-V- bis 24-V-Panel (Akku nicht dabei)"
+   },
+   "p": {
+    "en": "US$8.99",
+    "th": "US$8.99",
+    "my": "US$8.99",
+    "zh": "US$8.99",
+    "de": "US$8.99"
+   },
+   "src": "https://www.waveshare.com/solar-power-manager.htm"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Does an e-ink screen need power to hold the picture?",
+    "th": "จอ e-ink ต้องใช้ไฟเพื่อค้างภาพไว้ไหม",
+    "my": "e-ink မျက်နှာပြင်သည် ပုံကို ဆက်ပြထားရန် ဓာတ်အား လိုပါသလား။",
+    "zh": "电子墨水屏保持画面需要用电吗？",
+    "de": "Braucht ein E-Ink-Bildschirm Strom, um das Bild zu halten?"
+   },
+   "a": {
+    "en": "Waveshare's page for its 7.5-inch panel says it keeps the last content for a long time with the power down. It lists 26.4 mW to refresh and under 0.01 µA on standby.",
+    "th": "หน้าสินค้าจอ 7.5 นิ้วของ Waveshare ระบุว่าจอค้างภาพสุดท้ายไว้ได้นานเมื่อปิดไฟ ใช้ไฟ 26.4 mW ตอนรีเฟรช และต่ำกว่า 0.01 µA ตอนสแตนด์บาย",
+    "my": "Waveshare ၏ 7.5 လက်မ မျက်နှာပြင် စာမျက်နှာတွင် ဓာတ်အားဖြတ်ထားလျှင်လည်း နောက်ဆုံးအကြောင်းအရာကို အချိန်ကြာကြာ ဆက်ပြသည်ဟု ဆိုသည်။ ပြန်လည်ပြင်ဆင်ချိန် 26.4 mW နှင့် စတန်းဘိုင်းတွင် 0.01 µA အောက် ဟု ဖော်ပြထားသည်။",
+    "zh": "Waveshare 的 7.5 英寸屏产品页说，断电后能长时间保持最后的内容。页面列出刷新功率 26.4 mW，待机电流低于 0.01 µA。",
+    "de": "Die Produktseite des 7,5-Zoll-Bildschirms von Waveshare schreibt, er behalte den letzten Inhalt bei abgeschaltetem Strom lange. Sie nennt 26,4 mW beim Aktualisieren und unter 0,01 µA im Standby."
+   },
+   "src": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "q": {
+    "en": "How fast does an e-ink screen change?",
+    "th": "จอ e-ink เปลี่ยนภาพเร็วแค่ไหน",
+    "my": "e-ink မျက်နှာပြင် ပုံပြောင်းတာ ဘယ်လောက်မြန်သလဲ။",
+    "zh": "电子墨水屏换画面有多快？",
+    "de": "Wie schnell wechselt ein E-Ink-Bildschirm das Bild?"
+   },
+   "a": {
+    "en": "For Waveshare's 7.5-inch panel the page lists a full refresh in 4 seconds, a fast refresh in 1.5 seconds and a partial refresh in 0.4 seconds.",
+    "th": "สำหรับจอ 7.5 นิ้วของ Waveshare หน้าสินค้าระบุรีเฟรชเต็มจอ 4 วินาที รีเฟรชเร็ว 1.5 วินาที และรีเฟรชบางส่วน 0.4 วินาที",
+    "my": "Waveshare ၏ 7.5 လက်မ မျက်နှာပြင်အတွက် စာမျက်နှာတွင် အပြည့်ပြန်လည်ပြင်ဆင်ရန် 4 စက္ကန့်၊ မြန်ဆန်စွာ ပြန်လည်ပြင်ဆင်ရန် 1.5 စက္ကန့်၊ တစ်စိတ်တစ်ပိုင်း ပြန်လည်ပြင်ဆင်ရန် 0.4 စက္ကန့် ဟု ဖော်ပြထားသည်။",
+    "zh": "对 Waveshare 的 7.5 英寸屏，产品页列出：整屏刷新 4 秒，快速刷新 1.5 秒，局部刷新 0.4 秒。",
+    "de": "Für den 7,5-Zoll-Bildschirm von Waveshare nennt die Seite 4 Sekunden für eine volle, 1,5 Sekunden für eine schnelle und 0,4 Sekunden für eine teilweise Aktualisierung."
+   },
+   "src": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "q": {
+    "en": "What runs an e-ink clock?",
+    "th": "อะไรควบคุมนาฬิกา e-ink",
+    "my": "e-ink နာရီကို ဘာနဲ့ မောင်းသလဲ။",
+    "zh": "电子墨水时钟由什么驱动？",
+    "de": "Was steuert eine E-Ink-Uhr?"
+   },
+   "a": {
+    "en": "Waveshare's 7.5-inch panel fits the 40-pin header of a Raspberry Pi. Its page also lists Jetson Nano, Arduino and STM32 boards, over an SPI connection.",
+    "th": "จอ 7.5 นิ้วของ Waveshare เสียบกับขา 40 ขาของ Raspberry Pi ได้ หน้าสินค้ายังระบุบอร์ด Jetson Nano, Arduino และ STM32 ผ่านการเชื่อมต่อ SPI",
+    "my": "Waveshare ၏ 7.5 လက်မ မျက်နှာပြင်သည် Raspberry Pi ၏ 40-pin ခေါင်းတွင် တပ်၍ရသည်။ စာမျက်နှာတွင် SPI ချိတ်ဆက်မှုဖြင့် Jetson Nano၊ Arduino နှင့် STM32 ဘုတ်များကိုလည်း ဖော်ပြထားသည်။",
+    "zh": "Waveshare 的 7.5 英寸屏可插在树莓派的 40 针接口上。产品页还列出通过 SPI 连接的 Jetson Nano、Arduino 和 STM32 开发板。",
+    "de": "Der 7,5-Zoll-Bildschirm von Waveshare passt auf die 40-polige Leiste eines Raspberry Pi. Die Seite nennt auch Jetson-Nano-, Arduino- und STM32-Platinen über eine SPI-Verbindung."
+   },
+   "src": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "q": {
+    "en": "Can a clock run on a solar panel?",
+    "th": "นาฬิกาใช้แผงโซลาร์เป็นแหล่งไฟได้ไหม",
+    "my": "နာရီကို နေရောင်ခြည်ပြားဖြင့် မောင်းနိုင်ပါသလား။",
+    "zh": "时钟可以靠太阳能板供电吗？",
+    "de": "Kann eine Uhr mit einem Solarpanel laufen?"
+   },
+   "a": {
+    "en": "Waveshare sells a solar power module for 6V to 24V panels. It charges a 3.7V lithium battery and gives 5V or 3.3V at up to 1A. Its page calls it suited to solar-powered, low-power projects.",
+    "th": "Waveshare ขายโมดูลพลังงานแสงอาทิตย์สำหรับแผง 6V ถึง 24V ชาร์จแบตเตอรี่ลิเทียม 3.7V และจ่ายไฟ 5V หรือ 3.3V สูงสุด 1A หน้าสินค้าบอกว่าเหมาะกับงานที่ใช้พลังแสงอาทิตย์และกินไฟน้อย",
+    "my": "Waveshare က 6V မှ 24V ပြားများအတွက် နေရောင်ခြည်စွမ်းအင် မော်ဂျူး ရောင်းသည်။ 3.7V လီသီယမ်ဘက်ထရီကို အားသွင်းပြီး 5V သို့မဟုတ် 3.3V ကို 1A အထိ ထုတ်ပေးသည်။ စာမျက်နှာတွင် နေရောင်ခြည်သုံး၊ ဓာတ်အားနည်း စီမံကိန်းများနှင့် သင့်တော်သည်ဟု ဆိုသည်။",
+    "zh": "Waveshare 出售适用 6V 至 24V 太阳能板的太阳能电源模块。它给 3.7V 锂电池充电，输出 5V 或 3.3V，最大 1A。产品页说它适合太阳能供电的低功耗项目。",
+    "de": "Waveshare verkauft ein Solarmodul für 6-V- bis 24-V-Panels. Es lädt einen 3,7-V-Lithiumakku und gibt 5 V oder 3,3 V bei bis zu 1 A ab. Laut Seite eignet es sich für solarbetriebene Projekte mit geringem Verbrauch."
+   },
+   "src": "https://www.waveshare.com/solar-power-manager.htm"
+  },
+  {
+   "q": {
+    "en": "When is the Lanna New Year?",
+    "th": "ปีใหม่ล้านนาตรงกับวันไหน",
+    "my": "လန်နာနှစ်သစ်ကူးက ဘယ်နေ့လဲ။",
+    "zh": "兰纳新年是哪一天？",
+    "de": "Wann ist das Lanna-Neujahr?"
+   },
+   "a": {
+    "en": "The Thailand Foundation says Pi Mai Mueang falls near Songkran in April. The official holiday is 13 to 15 April, and 13 April, the first day, is Wan Sungkan Long.",
+    "th": "Thailand Foundation ระบุว่าปี๋ใหม่เมืองตรงกับช่วงสงกรานต์ในเดือนเมษายน วันหยุดทางการคือ 13 ถึง 15 เมษายน และวันแรก 13 เมษายน คือวันสังขานต์ล่อง",
+    "my": "Thailand Foundation က Pi Mai Mueang သည် ဧပြီလ သင်္ကြန်နီးပါး ကျရောက်သည်ဟု ဆိုသည်။ တရားဝင်ပိတ်ရက်မှာ ဧပြီ 13 မှ 15 အထိ ဖြစ်ပြီး ပထမနေ့ ဧပြီ 13 မှာ Wan Sungkan Long ဖြစ်သည်။",
+    "zh": "Thailand Foundation 说 Pi Mai Mueang 在 4 月宋干节前后。官方假期是 4 月 13 日至 15 日，第一天 4 月 13 日是 Wan Sungkan Long。",
+    "de": "Die Thailand Foundation schreibt, Pi Mai Mueang liege im April nahe bei Songkran. Der offizielle Feiertag ist vom 13. bis 15. April, und der 13. April, der erste Tag, ist Wan Sungkan Long."
+   },
+   "src": "https://thailandfoundation.or.th/pi-mai-mueang-songkran-festival-of-northern-thailand/"
+  }
+ ],
+ "related": [
+  "almanac-widget",
+  "reading",
+  "date-pick",
+  "guide-site",
+  "hotelpage",
+  "lanna-wedding"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Waveshare: 7.5-inch e-paper display page",
+    "th": "Waveshare: หน้าสินค้าจอ e-paper 7.5 นิ้ว",
+    "my": "Waveshare: 7.5 လက်မ e-paper မျက်နှာပြင် စာမျက်နှာ",
+    "zh": "Waveshare：7.5 英寸电子纸屏产品页",
+    "de": "Waveshare: Produktseite des 7,5-Zoll-E-Paper-Bildschirms"
+   },
+   "href": "https://www.waveshare.com/7.5inch-e-paper-hat.htm"
+  },
+  {
+   "t": {
+    "en": "Thailand Foundation: Pi Mai Mueang, the Lanna New Year",
+    "th": "Thailand Foundation: ปี๋ใหม่เมือง ปีใหม่ล้านนา",
+    "my": "Thailand Foundation: Pi Mai Mueang လန်နာနှစ်သစ်ကူးပွဲ",
+    "zh": "Thailand Foundation：Pi Mai Mueang，兰纳新年",
+    "de": "Thailand Foundation: Pi Mai Mueang, das Lanna-Neujahr"
+   },
+   "href": "https://thailandfoundation.or.th/pi-mai-mueang-songkran-festival-of-northern-thailand/"
+  }
+ ],
+ "glyphs": [
+  "clock",
+  "sun",
+  "calendar"
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "id": "etsy",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People sell crafts and other goods to buyers abroad on Etsy or eBay. Each site has its own fees.",
+  "th": "คนขายงานฝีมือและสินค้าอื่นให้ลูกค้าต่างประเทศผ่าน Etsy หรือ eBay และแต่ละเว็บมีค่าธรรมเนียมของตัวเอง",
+  "my": "လူတွေက လက်မှုပစ္စည်းနှင့် အခြားကုန်ပစ္စည်းများကို Etsy သို့မဟုတ် eBay မှတစ်ဆင့် ပြည်ပဝယ်သူများထံ ရောင်းကြသည်။ ဝက်ဘ်ဆိုက်တစ်ခုချင်းတွင် ကိုယ်ပိုင်ကြေးနှုန်းများ ရှိသည်။",
+  "zh": "有人通过 Etsy 或 eBay 把手工艺品等商品卖给海外买家。两个平台各有自己的收费。",
+  "de": "Man verkauft Handwerk und andere Waren über Etsy oder eBay an Kundschaft im Ausland. Jede Plattform hat ihre eigenen Gebühren."
+ },
+ "n": {
+  "de": "Etsy- oder eBay-Shop"
+ },
+ "l": {
+  "de": "Eröffnet und eingestellt, auf Wunsch für Sie geführt."
+ },
+ "steps": [
+  {
+   "db": "key",
+   "t": {
+    "en": "We open your Etsy or eBay account and set up shipping and payments.",
+    "th": "เปิดบัญชี Etsy หรือ eBay ของคุณ และตั้งค่าการส่งของและการรับเงิน",
+    "my": "သင့် Etsy သို့မဟုတ် eBay အကောင့်ကို ဖွင့်ပြီး ပစ္စည်းပို့ဆောင်မှုနှင့် ငွေလက်ခံမှုကို သတ်မှတ်ပေးသည်။",
+    "zh": "开好您的 Etsy 或 eBay 账户，并设置发货和收款。",
+    "de": "Wir eröffnen Ihr Etsy- oder eBay-Konto und richten Versand und Zahlungen ein."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "We list your first products, with photos and English words.",
+    "th": "ลงสินค้าชุดแรกของคุณ พร้อมรูปและคำบรรยายภาษาอังกฤษ",
+    "my": "သင့်ပထမဆုံး ကုန်ပစ္စည်းများကို ဓာတ်ပုံနှင့် အင်္ဂလိပ်ဘာသာ ဖော်ပြချက်များဖြင့် တင်ပေးသည်။",
+    "zh": "上架您的第一批商品，配上照片和英文说明。",
+    "de": "Wir stellen Ihre ersten Artikel ein, mit Fotos und englischen Texten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the account opens",
+    "th": "หลังเปิดบัญชี",
+    "my": "အကောင့်ဖွင့်ပြီးနောက်",
+    "zh": "账户开好后",
+    "de": "Nach der Kontoeröffnung"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "With the monthly option, we handle listings, messages and orders.",
+    "th": "หากเลือกแบบรายเดือน จะดูแลสินค้า ข้อความ และออเดอร์ให้",
+    "my": "လစဉ်ရွေးချယ်စရာကို ရွေးပါက စာရင်းများ၊ မက်ဆေ့ချ်များနှင့် အော်ဒါများကို စီမံပေးသည်။",
+    "zh": "选月度方案，由我们处理商品、留言和订单。",
+    "de": "Mit der Monatsoption betreuen wir Angebote, Nachrichten und Bestellungen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "按月",
+    "de": "Monatlich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Etsy lists Thailand among the countries where a seller takes Etsy Payments through a Payoneer account.",
+    "th": "Etsy ระบุว่าไทยอยู่ในกลุ่มประเทศที่ผู้ขายรับเงินผ่าน Etsy Payments โดยใช้บัญชี Payoneer",
+    "my": "Etsy က ထိုင်းနိုင်ငံကို ရောင်းသူများ Payoneer အကောင့်ဖြင့် Etsy Payments ကို လက်ခံသည့် နိုင်ငံများတွင် ဖော်ပြထားသည်။",
+    "zh": "Etsy 将泰国列为卖家通过 Payoneer 账户使用 Etsy Payments 收款的国家之一。",
+    "de": "Etsy führt Thailand unter den Ländern auf, in denen Verkäufer Etsy Payments über ein Payoneer-Konto nutzen."
+   },
+   "src": "https://help.etsy.com/hc/articles/115015710408"
+  },
+  {
+   "t": {
+    "en": "Etsy deposits US dollars only into the Payoneer account. Available funds go there each week, and a withdrawal to a bank usually takes 2–5 business days to show.",
+    "th": "Etsy โอนเงินเข้าบัญชี Payoneer เป็นดอลลาร์สหรัฐเท่านั้น เงินที่พร้อมจะเข้าบัญชีทุกสัปดาห์ และการถอนเข้าบัญชีธนาคารมักใช้เวลา 2–5 วันทำการ",
+    "my": "Etsy သည် Payoneer အကောင့်သို့ အမေရိကန်ဒေါ်လာဖြင့်သာ ငွေသွင်းသည်။ ထုတ်ယူနိုင်သောငွေသည် အပတ်စဉ် ထိုအကောင့်သို့ ရောက်ပြီး ဘဏ်သို့ ငွေထုတ်ပါက များသောအားဖြင့် လုပ်ငန်းရက် 2–5 ရက် ကြာသည်။",
+    "zh": "Etsy 只以美元存入 Payoneer 账户。可用款项每周转入，提现到银行通常需要 2–5 个工作日到账。",
+    "de": "Etsy zahlt nur in US-Dollar auf das Payoneer-Konto ein. Verfügbare Beträge gehen wöchentlich dorthin, und eine Auszahlung auf ein Bankkonto dauert in der Regel 2–5 Werktage."
+   },
+   "src": "https://help.etsy.com/hc/en-us/articles/16999319005207"
+  },
+  {
+   "t": {
+    "en": "Etsy's payment processing fee is a set rate plus a percent of the sale, and the rate and percent vary by country.",
+    "th": "ค่าธรรมเนียมการรับชำระเงินของ Etsy คืออัตราคงที่บวกเปอร์เซ็นต์ของยอดขาย และต่างกันไปตามประเทศ",
+    "my": "Etsy ၏ ငွေပေးချေမှု ဆောင်ရွက်ခသည် သတ်မှတ်ထားသော ပမာဏနှင့် ရောင်းချမှု၏ ရာခိုင်နှုန်းတစ်ခု ပေါင်းထားသော ကြေးဖြစ်ပြီး နိုင်ငံအလိုက် ကွာခြားသည်။",
+    "zh": "Etsy 的支付处理费由固定金额加销售额的一定比例构成，金额和比例因国家而异。",
+    "de": "Die Zahlungsabwicklungsgebühr von Etsy besteht aus einem festen Betrag plus einem Prozentsatz des Verkaufs und unterscheidet sich je nach Land."
+   },
+   "src": "https://help.etsy.com/hc/en-us/articles/360035902374-Etsy-Fee-Basics"
+  },
+  {
+   "t": {
+    "en": "eBay's page for sellers in South East Asia says payouts go to a bank account, or to a bank account through a Payoneer account. Funds can be paid out daily, weekly, fortnightly or monthly.",
+    "th": "หน้าสำหรับผู้ขายในเอเชียตะวันออกเฉียงใต้ของ eBay ระบุว่าเงินเข้าบัญชีธนาคาร หรือเข้าบัญชีธนาคารผ่านบัญชี Payoneer และจ่ายออกได้ทุกวัน ทุกสัปดาห์ ทุกสองสัปดาห์ หรือทุกเดือน",
+    "my": "eBay ၏ အရှေ့တောင်အာရှ ရောင်းသူများအတွက် စာမျက်နှာတွင် ငွေကို ဘဏ်အကောင့်သို့ ဖြစ်စေ၊ Payoneer အကောင့်မှတစ်ဆင့် ဘဏ်အကောင့်သို့ ဖြစ်စေ ပေးချေသည်ဟု ဖော်ပြထားသည်။ နေ့စဉ်၊ အပတ်စဉ်၊ နှစ်ပတ်တစ်ကြိမ် သို့မဟုတ် လစဉ် ပေးချေနိုင်သည်။",
+    "zh": "eBay 面向东南亚卖家的页面写明：款项可打入银行账户，或经 Payoneer 账户转入银行账户；可按日、周、双周或月结算。",
+    "de": "Die eBay-Seite für Verkäufer in Südostasien nennt als Auszahlung ein Bankkonto oder ein Bankkonto über ein Payoneer-Konto. Auszahlungen sind täglich, wöchentlich, alle zwei Wochen oder monatlich möglich."
+   },
+   "src": "https://export.ebay.com/sea-en/fees-regulations-policies/transactions/introducing-managed-payments/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Etsy fees on a sale",
+    "th": "ค่าธรรมเนียม Etsy เมื่อขายได้",
+    "my": "Etsy ရောင်းချမှုကြေးများ",
+    "zh": "Etsy 销售费用",
+    "de": "Etsy-Gebühren"
+   },
+   "p": {
+    "en": "US$0.20 a listing, plus 6.5% of the order",
+    "th": "US$0.20 ต่อรายการ บวก 6.5% ของออเดอร์",
+    "my": "စာရင်းတစ်ခု US$0.20 နှင့် အော်ဒါ၏ 6.5%",
+    "zh": "每条刊登 US$0.20，另加订单金额的 6.5%",
+    "de": "US$0.20 je Inserat, plus 6,5 % der Bestellung"
+   },
+   "src": "https://help.etsy.com/hc/en-us/articles/360035902374-Etsy-Fee-Basics"
+  },
+  {
+   "t": {
+    "en": "eBay fee on a sale (most categories)",
+    "th": "eBay ค่าธรรมเนียมการขาย (ส่วนใหญ่ของหมวด)",
+    "my": "eBay ရောင်းချမှုကြေး (အမျိုးအစားအများစု)",
+    "zh": "eBay 成交费（大多数类目）",
+    "de": "eBay, Verkaufsgebühr (die meisten Kategorien)"
+   },
+   "p": {
+    "en": "13.6% of the sale up to US$7,500, plus US$0.30 an order of US$10 or less and US$0.40 above that",
+    "th": "13.6% ของยอดขายไม่เกิน US$7,500 บวก US$0.30 ต่อออเดอร์ที่ไม่เกิน US$10 และ US$0.40 ต่อออเดอร์ที่เกินจากนั้น",
+    "my": "ရောင်းချမှု US$7,500 အထိ၏ 13.6% နှင့် US$10 သို့မဟုတ် ထိုထက်နည်းသော အော်ဒါလျှင် US$0.30၊ ထိုထက်များလျှင် US$0.40",
+    "zh": "成交额 US$7,500 以内部分收 13.6%，另加每单 US$0.30（订单 US$10 及以下）或 US$0.40（高于 US$10）",
+    "de": "13,6 % des Verkaufs bis US$7,500, plus US$0.30 je Bestellung bis US$10 und US$0.40 darüber"
+   },
+   "src": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822"
+  },
+  {
+   "t": {
+    "en": "eBay listings",
+    "th": "eBay ค่าลงสินค้า",
+    "my": "eBay စာရင်းတင်ကြေး",
+    "zh": "eBay 刊登费",
+    "de": "eBay, Inserate"
+   },
+   "p": {
+    "en": "First 250 a month free, then US$0.35 each",
+    "th": "250 รายการแรกต่อเดือนฟรี หลังจากนั้นรายการละ US$0.35",
+    "my": "တစ်လလျှင် ပထမ 250 စာရင်း အခမဲ့၊ ထို့နောက် တစ်ခုလျှင် US$0.35",
+    "zh": "每月前 250 条免费，之后每条 US$0.35",
+    "de": "Die ersten 250 im Monat kostenlos, danach US$0.35 je Inserat"
+   },
+   "src": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822"
+  },
+  {
+   "t": {
+    "en": "A freelancer on Fastwork opens an Etsy shop, one product listed",
+    "th": "ฟรีแลนซ์บน Fastwork เปิดร้าน Etsy ลงสินค้า 1 รายการ",
+    "my": "Fastwork ရှိ ဖရီးလန်ဆာက Etsy ဆိုင်ဖွင့်ပေးခြင်း၊ ကုန်ပစ္စည်း 1 ခု တင်",
+    "zh": "Fastwork 自由职业者开 Etsy 店，上架 1 件商品",
+    "de": "Freelancer auf Fastwork eröffnet einen Etsy-Shop, ein Artikel eingestellt"
+   },
+   "p": {
+    "en": "฿1,500; larger packages ฿3,000 and ฿4,500",
+    "th": "฿1,500 แพ็กเกจใหญ่ขึ้น ฿3,000 และ ฿4,500",
+    "my": "฿1,500; ပိုကြီးသော ပက်ကေ့ချ်များ ฿3,000 နှင့် ฿4,500",
+    "zh": "฿1,500；更大套餐 ฿3,000 和 ฿4,500",
+    "de": "฿1,500; grössere Pakete ฿3,000 und ฿4,500"
+   },
+   "src": "https://fastwork.co/user/benjy95/shop-registration-and-listing-25008941"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can I sell on Etsy from Thailand?",
+    "th": "ขายของบน Etsy จากไทยได้ไหม",
+    "my": "ထိုင်းမှ Etsy တွင် ရောင်းနိုင်ပါသလား။",
+    "zh": "能在泰国经营 Etsy 店吗？",
+    "de": "Kann ich von Thailand aus auf Etsy verkaufen?"
+   },
+   "a": {
+    "en": "Yes. Etsy lists Thailand among the countries where sellers take Etsy Payments. A seller in Thailand uses a Payoneer account for it.",
+    "th": "ได้ Etsy ระบุว่าไทยอยู่ในกลุ่มประเทศที่ผู้ขายรับเงินผ่าน Etsy Payments ผู้ขายในไทยใช้บัญชี Payoneer สำหรับการนี้",
+    "my": "ရောင်းနိုင်သည်။ Etsy က ထိုင်းနိုင်ငံကို ရောင်းသူများ Etsy Payments လက်ခံသည့် နိုင်ငံများတွင် ဖော်ပြထားသည်။ ထိုင်းရှိ ရောင်းသူသည် ထိုအတွက် Payoneer အကောင့်ကို အသုံးပြုသည်။",
+    "zh": "可以。Etsy 把泰国列在卖家可使用 Etsy Payments 的国家之中。泰国卖家通过 Payoneer 账户收款。",
+    "de": "Ja. Etsy führt Thailand unter den Ländern auf, in denen Verkäufer Etsy Payments nutzen. Verkäufer in Thailand verwenden dafür ein Payoneer-Konto."
+   },
+   "src": "https://help.etsy.com/hc/articles/115015710408"
+  },
+  {
+   "q": {
+    "en": "What does Etsy charge a seller?",
+    "th": "Etsy คิดค่าธรรมเนียมผู้ขายเท่าไร",
+    "my": "Etsy က ရောင်းသူထံမှ ဘာကြေး ကောက်ခံသလဲ။",
+    "zh": "Etsy 向卖家收哪些费用？",
+    "de": "Was verlangt Etsy von Verkäufern?"
+   },
+   "a": {
+    "en": "A listing costs a flat US$0.20. Etsy charges 6.5% of the total order amount. The payment processing fee is a set rate plus a percent, and it varies by country.",
+    "th": "ค่าลงสินค้า US$0.20 ต่อรายการ Etsy คิด 6.5% ของยอดออเดอร์ทั้งหมด ค่าธรรมเนียมการรับชำระเงินคืออัตราคงที่บวกเปอร์เซ็นต์ และต่างกันไปตามประเทศ",
+    "my": "စာရင်းတစ်ခုလျှင် US$0.20 ပုံသေ ကုန်ကျသည်။ Etsy က အော်ဒါစုစုပေါင်း၏ 6.5% ကောက်ခံသည်။ ငွေပေးချေမှု ဆောင်ရွက်ခသည် သတ်မှတ်ပမာဏနှင့် ရာခိုင်နှုန်းတစ်ခု ပေါင်းထားပြီး နိုင်ငံအလိုက် ကွာခြားသည်။",
+    "zh": "每条刊登固定 US$0.20。Etsy 收订单总额的 6.5%。支付处理费是固定金额加一定比例，因国家而异。",
+    "de": "Ein Inserat kostet pauschal US$0.20. Etsy berechnet 6,5 % des gesamten Bestellbetrags. Die Zahlungsabwicklungsgebühr besteht aus einem festen Betrag plus einem Prozentsatz und unterscheidet sich je nach Land."
+   },
+   "src": "https://help.etsy.com/hc/en-us/articles/360035902374-Etsy-Fee-Basics"
+  },
+  {
+   "q": {
+    "en": "How does Etsy money reach a Thai bank?",
+    "th": "เงินจาก Etsy เข้าบัญชีธนาคารไทยอย่างไร",
+    "my": "Etsy ငွေသည် ထိုင်းဘဏ်သို့ ဘယ်လို ရောက်သလဲ။",
+    "zh": "Etsy 的款项怎样到泰国银行？",
+    "de": "Wie kommt das Geld von Etsy auf ein thailändisches Bankkonto?"
+   },
+   "a": {
+    "en": "Etsy deposits US dollars into the seller's Payoneer account. The seller then withdraws to a local bank, which usually takes 2–5 business days. Payoneer may set a minimum for a withdrawal and may charge fees.",
+    "th": "Etsy โอนดอลลาร์สหรัฐเข้าบัญชี Payoneer ของผู้ขาย จากนั้นผู้ขายถอนเข้าธนาคารในประเทศ ซึ่งมักใช้เวลา 2–5 วันทำการ Payoneer อาจกำหนดยอดถอนขั้นต่ำและอาจคิดค่าธรรมเนียม",
+    "my": "Etsy သည် ရောင်းသူ၏ Payoneer အကောင့်သို့ အမေရိကန်ဒေါ်လာ သွင်းပေးသည်။ ထို့နောက် ရောင်းသူက ပြည်တွင်းဘဏ်သို့ ထုတ်ယူပြီး များသောအားဖြင့် လုပ်ငန်းရက် 2–5 ရက် ကြာသည်။ Payoneer က ငွေထုတ်ယူမှု အနည်းဆုံးပမာဏ သတ်မှတ်နိုင်ပြီး ကြေးကောက်နိုင်သည်။",
+    "zh": "Etsy 把美元存入卖家的 Payoneer 账户，卖家再提现到本地银行，通常需要 2–5 个工作日。Payoneer 可能设有最低提现额，也可能收费。",
+    "de": "Etsy zahlt US-Dollar auf das Payoneer-Konto des Verkäufers ein. Danach hebt der Verkäufer auf eine Bank im Inland ab, was in der Regel 2–5 Werktage dauert. Payoneer kann einen Mindestbetrag für Auszahlungen festlegen und Gebühren erheben."
+   },
+   "src": "https://help.etsy.com/hc/en-us/articles/16999319005207"
+  },
+  {
+   "q": {
+    "en": "What does eBay charge a seller?",
+    "th": "eBay คิดค่าธรรมเนียมผู้ขายเท่าไร",
+    "my": "eBay က ရောင်းသူထံမှ ဘာကြေး ကောက်ခံသလဲ။",
+    "zh": "eBay 向卖家收哪些费用？",
+    "de": "Was verlangt eBay von Verkäufern?"
+   },
+   "a": {
+    "en": "On eBay's selling fees page, for most categories, the first 250 listings a month are free and later ones cost US$0.35. The fee on a sale is 13.6% up to US$7,500, plus US$0.30 an order of US$10 or less, or US$0.40 above that.",
+    "th": "หน้าค่าธรรมเนียมผู้ขายของ eBay ระบุว่า สำหรับส่วนใหญ่ของหมวด 250 รายการแรกต่อเดือนฟรี รายการถัดไปรายการละ US$0.35 ค่าธรรมเนียมการขายคือ 13.6% ของยอดขายไม่เกิน US$7,500 บวก US$0.30 ต่อออเดอร์ที่ไม่เกิน US$10 หรือ US$0.40 ต่อออเดอร์ที่เกินจากนั้น",
+    "my": "eBay ၏ ရောင်းသူကြေးစာမျက်နှာအရ အမျိုးအစားအများစုတွင် တစ်လလျှင် ပထမ 250 စာရင်း အခမဲ့ဖြစ်ပြီး နောက်ပိုင်း တစ်ခုလျှင် US$0.35 ကျသည်။ ရောင်းချမှုကြေးသည် US$7,500 အထိ၏ 13.6% ဖြစ်ပြီး US$10 သို့မဟုတ် ထိုထက်နည်းသော အော်ဒါလျှင် US$0.30၊ ထိုထက်များလျှင် US$0.40 ထပ်ပေါင်းသည်။",
+    "zh": "按 eBay 的卖家费用页面，大多数类目每月前 250 条刊登免费，之后每条 US$0.35。成交费是 US$7,500 以内部分的 13.6%，另加每单 US$0.30（订单 US$10 及以下）或 US$0.40（高于 US$10）。",
+    "de": "Auf der Gebührenseite von eBay gilt für die meisten Kategorien: Die ersten 250 Inserate im Monat sind kostenlos, danach kostet jedes US$0.35. Die Verkaufsgebühr beträgt 13,6 % bis US$7,500, plus US$0.30 je Bestellung bis US$10 oder US$0.40 darüber."
+   },
+   "src": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822"
+  },
+  {
+   "q": {
+    "en": "How does eBay pay a seller?",
+    "th": "eBay จ่ายเงินให้ผู้ขายอย่างไร",
+    "my": "eBay က ရောင်းသူကို ငွေ ဘယ်လိုပေးသလဲ။",
+    "zh": "eBay 怎样向卖家付款？",
+    "de": "Wie zahlt eBay Verkäufern aus?"
+   },
+   "a": {
+    "en": "eBay's page for sellers in South East Asia says payouts go to a bank account, or to a bank account through a Payoneer account. Funds can be paid out daily, weekly, fortnightly or monthly. International fees apply when eBay converts currency, and they depend on the seller's country of residence.",
+    "th": "หน้าสำหรับผู้ขายในเอเชียตะวันออกเฉียงใต้ของ eBay ระบุว่าเงินเข้าบัญชีธนาคาร หรือเข้าบัญชีธนาคารผ่านบัญชี Payoneer จ่ายออกได้ทุกวัน ทุกสัปดาห์ ทุกสองสัปดาห์ หรือทุกเดือน มีค่าธรรมเนียมระหว่างประเทศเมื่อ eBay แปลงสกุลเงิน ซึ่งขึ้นอยู่กับประเทศที่ผู้ขายพำนัก",
+    "my": "eBay ၏ အရှေ့တောင်အာရှ ရောင်းသူများအတွက် စာမျက်နှာတွင် ငွေကို ဘဏ်အကောင့်သို့ ဖြစ်စေ၊ Payoneer အကောင့်မှတစ်ဆင့် ဘဏ်အကောင့်သို့ ဖြစ်စေ ပေးချေသည်ဟု ဖော်ပြထားသည်။ နေ့စဉ်၊ အပတ်စဉ်၊ နှစ်ပတ်တစ်ကြိမ် သို့မဟုတ် လစဉ် ပေးချေနိုင်သည်။ eBay က ငွေကြေးလဲလှယ်သောအခါ နိုင်ငံတကာကြေး ကျသင့်ပြီး ရောင်းသူနေထိုင်ရာနိုင်ငံအပေါ် မူတည်သည်။",
+    "zh": "eBay 面向东南亚卖家的页面写明：款项可打入银行账户，或经 Payoneer 账户转入银行账户；可按日、周、双周或月结算。eBay 兑换货币时会收取国际费用，费用取决于卖家居住的国家。",
+    "de": "Die eBay-Seite für Verkäufer in Südostasien nennt als Auszahlung ein Bankkonto oder ein Bankkonto über ein Payoneer-Konto. Auszahlungen sind täglich, wöchentlich, alle zwei Wochen oder monatlich möglich. Internationale Gebühren fallen an, wenn eBay Währungen umrechnet; sie hängen vom Wohnsitzland des Verkäufers ab."
+   },
+   "src": "https://export.ebay.com/sea-en/fees-regulations-policies/transactions/introducing-managed-payments/"
+  }
+ ],
+ "related": [
+  "online-shop",
+  "trade-photos",
+  "copy",
+  "bank-account",
+  "partner",
+  "ads-run"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Etsy Help: countries that take Etsy Payments",
+    "th": "ศูนย์ช่วยเหลือ Etsy: ประเทศที่รับ Etsy Payments ได้",
+    "my": "Etsy အကူအညီ: Etsy Payments လက်ခံနိုင်သည့် နိုင်ငံများ",
+    "zh": "Etsy 帮助：可使用 Etsy Payments 的国家",
+    "de": "Etsy-Hilfe: Länder mit Etsy Payments"
+   },
+   "href": "https://help.etsy.com/hc/articles/115015710408"
+  },
+  {
+   "t": {
+    "en": "eBay: selling fees",
+    "th": "eBay: ค่าธรรมเนียมผู้ขาย",
+    "my": "eBay: ရောင်းသူကြေးများ",
+    "zh": "eBay：卖家费用",
+    "de": "eBay: Verkaufsgebühren"
+   },
+   "href": "https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822"
+  }
+ ],
+ "glyphs": [
+  "cart",
+  "parcel",
+  "earth"
+ ]
+}

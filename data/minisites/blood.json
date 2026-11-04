@@ -1,0 +1,302 @@
+{
+ "id": "blood",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People book a blood test or a health check-up in Thailand, and Thai hospitals sell the check-up as a package with a price, a list of tests and an end date.",
+  "th": "คนจองตรวจเลือดหรือตรวจสุขภาพในไทย และโรงพยาบาลไทยขายการตรวจสุขภาพเป็นแพ็กเกจที่มีราคา รายการตรวจ และวันสิ้นสุด",
+  "my": "လူတွေက ထိုင်းနိုင်ငံတွင် သွေးစစ်ခြင်း သို့မဟုတ် ကျန်းမာရေးစစ်ဆေးမှုကို ဘွတ်ကင်လုပ်ကြပြီး ထိုင်းဆေးရုံများက ကျန်းမာရေးစစ်ဆေးမှုကို ဈေးနှုန်း၊ စစ်ဆေးမည့်စာရင်းနှင့် ကုန်ဆုံးရက်ပါသော ပက်ကေ့ချ်အဖြစ် ရောင်းသည်။",
+  "zh": "人们在泰国预约验血或体检，泰国医院把体检做成套餐出售，套餐有价格、检查项目清单和截止日期。",
+  "de": "Man bucht in Thailand einen Bluttest oder einen Check-up, und thailändische Spitäler verkaufen den Check-up als Paket mit Preis, Testliste und Enddatum."
+ },
+ "n": {
+  "de": "Bluttest oder Check-up gebucht"
+ },
+ "l": {
+  "de": "In einem lizenzierten Labor oder Krankenhaus, der Bericht übersetzt."
+ },
+ "glyphs": [
+  "heart",
+  "calendar",
+  "translate"
+ ],
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "We book the lab or hospital.",
+    "th": "จองแล็บหรือโรงพยาบาลให้",
+    "my": "ဓာတ်ခွဲခန်း သို့မဟုတ် ဆေးရုံကို ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "预约实验室或医院。",
+    "de": "Wir buchen das Labor oder das Spital."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันตรวจ",
+    "my": "စစ်ဆေးသည့်နေ့မတိုင်မီ",
+    "zh": "检查日之前",
+    "de": "Vor dem Termin"
+   }
+  },
+  {
+   "db": "heart",
+   "t": {
+    "en": "The lab or hospital draws and reads the blood. With the full checkup, someone from Hongdam is with you.",
+    "th": "แล็บหรือโรงพยาบาลเจาะและอ่านผลเลือด ถ้าเลือกตรวจสุขภาพเต็ม มีคนจากหงส์ดำไปด้วย",
+    "my": "ဓာတ်ခွဲခန်း သို့မဟုတ် ဆေးရုံက သွေးထုတ်ပြီး ရလဒ်ကို ဖတ်သည်။ ကျန်းမာရေး အပြည့်စစ်ဆေးမှုတွင် ဟုန်ဒမ် မှ တစ်ဦး အတူလိုက်သည်။",
+    "zh": "实验室或医院抽血并解读结果。选全面体检时，鸿丹 有人陪同。",
+    "de": "Das Labor oder das Spital nimmt das Blut ab und liest es aus. Beim kompletten Check-up ist jemand von Hongdam dabei."
+   },
+   "who": {
+    "en": "The lab or hospital",
+    "th": "แล็บหรือโรงพยาบาล",
+    "my": "ဓာတ်ခွဲခန်း သို့မဟုတ် ဆေးရုံ",
+    "zh": "实验室或医院",
+    "de": "Das Labor oder das Spital"
+   },
+   "time": {
+    "en": "The day",
+    "th": "วันตรวจ",
+    "my": "စစ်ဆေးသည့်နေ့",
+    "zh": "检查当天",
+    "de": "Der Tag"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "We translate the report.",
+    "th": "แปลรายงานผลให้",
+    "my": "အစီရင်ခံစာကို ဘာသာပြန်ပေးသည်။",
+    "zh": "翻译报告。",
+    "de": "Wir übersetzen den Bericht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When the report arrives",
+    "th": "เมื่อได้รับรายงาน",
+    "my": "အစီရင်ခံစာ ရောက်သည့်အခါ",
+    "zh": "报告到手后",
+    "de": "Wenn der Bericht eintrifft"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thai PBS reports that a blood sugar test needs at least 8 hours without food, and a lipid test 10 to 12 hours. Plain water is allowed, a point it takes from Phyathai Hospital.",
+    "th": "ไทยพีบีเอสรายงานว่าการตรวจน้ำตาลต้องงดอาหารอย่างน้อย 8 ชั่วโมง และการตรวจไขมันต้องงด 10 ถึง 12 ชั่วโมง ดื่มน้ำเปล่าได้ ซึ่งอ้างจากโรงพยาบาลพญาไท",
+    "my": "သွေးတွင်းသကြားစစ်ရန် အနည်းဆုံး 8 နာရီ အစာမစားဘဲနေရပြီး သွေးတွင်းအဆီစစ်ရန် 10 နာရီမှ 12 နာရီအထိ နေရသည်ဟု ထိုင်းပီဘီအက်စ်က ဖော်ပြသည်။ ရေသက်သက်သောက်ခွင့်ရှိသည်ဟု ဖာယာထိုင်းဆေးရုံကို ကိုးကားထားသည်။",
+    "zh": "泰国公共广播（Thai PBS）报道：验血糖需至少禁食 8 小时，验血脂需禁食 10 至 12 小时。可以喝白开水，这一点引自帕亚泰医院。",
+    "de": "Thai PBS berichtet, für einen Blutzuckertest brauche es mindestens 8 Stunden ohne Essen, für einen Fetttest 10 bis 12 Stunden. Reines Wasser ist erlaubt; das stützt sich auf das Phyathai-Spital."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/505030"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Mai asks for no food for at least 10 to 12 hours before its check-up, allows small sips of water, and asks for no alcohol for 24 hours.",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่กำหนดให้งดอาหารอย่างน้อย 10 ถึง 12 ชั่วโมงก่อนตรวจ จิบน้ำเล็กน้อยได้ และงดแอลกอฮอล์ 24 ชั่วโมง",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံက စစ်ဆေးမှုမတိုင်မီ အနည်းဆုံး 10 နာရီမှ 12 နာရီ အစာမစားရန်၊ ရေကို အနည်းငယ်သာ စုပ်သောက်ခွင့်ရှိကြောင်းနှင့် 24 နာရီ အရက်မသောက်ရန် သတ်မှတ်ထားသည်။",
+    "zh": "清迈曼谷医院要求体检前至少禁食 10 至 12 小时，可小口喝水，并要求 24 小时内不饮酒。",
+    "de": "Das Bangkok Hospital Chiang Mai verlangt vor dem Check-up mindestens 10 bis 12 Stunden ohne Essen, erlaubt kleine Schlucke Wasser und verlangt 24 Stunden ohne Alkohol."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "t": {
+    "en": "Its 16-item Essential Medical Program covers a physical exam, an EKG, a chest X-ray, a urine test and blood tests: a blood count, fasting sugar, HbA1c, cholesterol with HDL, LDL and triglyceride, uric acid, kidney and liver tests, vitamin D and hepatitis B tests.",
+    "th": "แพ็กเกจ Essential Medical Program 16 รายการของโรงพยาบาลนี้ประกอบด้วยการตรวจร่างกาย คลื่นไฟฟ้าหัวใจ เอกซเรย์ปอด ตรวจปัสสาวะ และตรวจเลือด ได้แก่ ความสมบูรณ์ของเม็ดเลือด น้ำตาลหลังอดอาหาร HbA1c คอเลสเตอรอลพร้อม HDL, LDL และไตรกลีเซอไรด์ กรดยูริก การทำงานของไตและตับ วิตามินดี และไวรัสตับอักเสบบี",
+    "my": "ဤဆေးရုံ၏ အမျိုးအစား 16 ခုပါ Essential Medical Program တွင် ကိုယ်ခန္ဓာစစ်ဆေးမှု၊ EKG၊ ရင်ဘတ် X-ray၊ ဆီးစစ်ခြင်းနှင့် သွေးစစ်ချက်များ ပါသည်။ ထိုသွေးစစ်ချက်များမှာ သွေးဆဲလ်ရေတွက်စစ်ခြင်း၊ အစာမစားဘဲ သွေးတွင်းသကြား၊ HbA1c၊ HDL၊ LDL၊ ထရိုင်ဂလစ်စရိုက်ပါ ကိုလက်စထရော၊ ယူရစ်အက်ဆစ်၊ ကျောက်ကပ်နှင့် အသည်း စစ်ဆေးမှု၊ ဗီတာမင်ဒီနှင့် အသည်းရောင်ဘီ စစ်ဆေးမှုတို့ ဖြစ်သည်။",
+    "zh": "该院 16 项的 Essential Medical Program 包括体格检查、心电图、胸部 X 光、尿检，以及这些血液检查：血常规、空腹血糖、糖化血红蛋白、胆固醇（含 HDL、LDL 和甘油三酯）、尿酸、肾功能和肝功能、维生素 D、乙肝检测。",
+    "de": "Das Paket Essential Medical Program mit 16 Positionen umfasst eine körperliche Untersuchung, ein EKG, ein Thoraxröntgen, einen Urintest und Bluttests: Blutbild, Nüchternzucker, HbA1c, Cholesterin mit HDL, LDL und Triglyzeriden, Harnsäure, Nieren- und Leberwerte, Vitamin D und Hepatitis-B-Tests."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "t": {
+    "en": "Hospital check-up prices in Thailand come as packages with an end date. The Essential Medical Program price at Bangkok Hospital Chiang Mai ends on 31 December 2026, and the visit can be made until 31 January 2027.",
+    "th": "ราคาตรวจสุขภาพของโรงพยาบาลในไทยเป็นแพ็กเกจที่มีวันสิ้นสุด ราคา Essential Medical Program ของโรงพยาบาลกรุงเทพเชียงใหม่สิ้นสุดวันที่ 31 ธันวาคม ค.ศ. 2026 และใช้สิทธิตรวจได้ถึง 31 มกราคม ค.ศ. 2027",
+    "my": "ထိုင်းဆေးရုံများ၏ ကျန်းမာရေးစစ်ဆေးမှုဈေးနှုန်းမှာ ကုန်ဆုံးရက်ပါသော ပက်ကေ့ချ်များဖြစ်သည်။ ချင်းမိုင်ဘန်ကောက်ဆေးရုံ၏ Essential Medical Program ဈေးနှုန်းသည် 2026 ခုနှစ် ဒီဇင်ဘာ 31 ရက်တွင် ကုန်ဆုံးပြီး 2027 ခုနှစ် ဇန်နဝါရီ 31 ရက်အထိ သွားရောက်စစ်ဆေးနိုင်သည်။",
+    "zh": "泰国医院的体检价格以套餐形式出现，并有截止日期。清迈曼谷医院 Essential Medical Program 的价格到 2026 年 12 月 31 日止，可在 2027 年 1 月 31 日前使用。",
+    "de": "Check-up-Preise thailändischer Spitäler gelten als Pakete mit Enddatum. Der Preis des Essential Medical Program im Bangkok Hospital Chiang Mai endet am 31. Dezember 2026, der Termin kann bis zum 31. Januar 2027 wahrgenommen werden."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "t": {
+    "en": "The Chiang Rai Times reports that Piyavate Hospital limits its listed classic package price to Thai nationals and foreign residents living or working in Thailand.",
+    "th": "เชียงรายไทมส์รายงานว่าโรงพยาบาลปิยะเวทกำหนดราคาแพ็กเกจคลาสสิกที่แสดงไว้สำหรับคนไทยและชาวต่างชาติที่อาศัยหรือทำงานในไทยเท่านั้น",
+    "my": "ပီယာဗေဒ်ဆေးရုံသည် ဖော်ပြထားသော classic ပက်ကေ့ချ်ဈေးနှုန်းကို ထိုင်းနိုင်ငံသားများနှင့် ထိုင်းတွင် နေထိုင်သော၊ အလုပ်လုပ်သော နိုင်ငံခြားသားများအတွက်သာ သတ်မှတ်ထားသည်ဟု ချင်းရိုင်းတိုင်းမ်စ်က ဖော်ပြသည်။",
+    "zh": "清莱时报（Chiang Rai Times）报道：Piyavate 医院标出的经典套餐价格，仅适用于泰国公民以及在泰国居住或工作的外国人。",
+    "de": "Die Chiang Rai Times berichtet, das Piyavate-Spital beschränke den angegebenen Preis seines Classic-Pakets auf thailändische Staatsangehörige und auf Ausländer, die in Thailand wohnen oder arbeiten."
+   },
+   "src": "https://www.chiangraitimes.com/health/health-checks-in-thailand/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Mai, Essential Medical Program, 16 items, men and women (price ends 31 December 2026)",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่ Essential Medical Program 16 รายการ ชายและหญิง (ราคาสิ้นสุด 31 ธันวาคม ค.ศ. 2026)",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံ၊ Essential Medical Program၊ အမျိုးအစား 16 ခု၊ အမျိုးသားနှင့် အမျိုးသမီး (ဈေးနှုန်း 2026 ခုနှစ် ဒီဇင်ဘာ 31 ရက်တွင် ကုန်ဆုံး)",
+    "zh": "清迈曼谷医院 Essential Medical Program，16 项，男女适用（价格至 2026 年 12 月 31 日）",
+    "de": "Bangkok Hospital Chiang Mai, Essential Medical Program, 16 Positionen, Frauen und Männer (Preis bis 31. Dezember 2026)"
+   },
+   "p": {
+    "en": "฿6,900 (listed down from ฿10,000)",
+    "th": "฿6,900 (ราคาเดิมที่แสดง ฿10,000)",
+    "my": "฿6,900 (မူလဈေး ฿10,000)",
+    "zh": "฿6,900（原标价 ฿10,000）",
+    "de": "฿6,900 (zuvor ฿10,000 angegeben)"
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Mai, Premium Check-up, 45 items, men over 40 (price valid until 15 December 2026)",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่ Premium Check-up 45 รายการ ชายอายุเกิน 40 ปี (ราคาใช้ได้ถึง 15 ธันวาคม ค.ศ. 2026)",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံ၊ Premium Check-up၊ အမျိုးအစား 45 ခု၊ အသက် 40 ကျော် အမျိုးသား (ဈေးနှုန်း 2026 ခုနှစ် ဒီဇင်ဘာ 15 ရက်အထိ)",
+    "zh": "清迈曼谷医院 Premium Check-up，45 项，40 岁以上男性（价格至 2026 年 12 月 15 日）",
+    "de": "Bangkok Hospital Chiang Mai, Premium Check-up, 45 Positionen, Männer über 40 (Preis bis 15. Dezember 2026)"
+   },
+   "p": {
+    "en": "฿19,900 (listed down from ฿34,307)",
+    "th": "฿19,900 (ราคาเดิมที่แสดง ฿34,307)",
+    "my": "฿19,900 (မူလဈေး ฿34,307)",
+    "zh": "฿19,900（原标价 ฿34,307）",
+    "de": "฿19,900 (zuvor ฿34,307 angegeben)"
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/premium-check-up-male-2026"
+  },
+  {
+   "t": {
+    "en": "Check-up packages at Bangkok Hospital, Bumrungrad and MedPark in 2026",
+    "th": "แพ็กเกจตรวจสุขภาพปี ค.ศ. 2026 ของโรงพยาบาลกรุงเทพ บำรุงราษฎร์ และเมดพาร์ค",
+    "my": "2026 ခုနှစ် ဘန်ကောက်ဆေးရုံ၊ ဘမ်ရွန်ဂရတ်နှင့် မက်ဒ်ပါ့ခ် ကျန်းမာရေးစစ်ဆေးမှု ပက်ကေ့ချ်များ",
+    "zh": "2026 年曼谷医院、康民医院和 MedPark 的体检套餐",
+    "de": "Check-up-Pakete von Bangkok Hospital, Bumrungrad und MedPark im Jahr 2026"
+   },
+   "p": {
+    "en": "From ฿5,500 to over ฿80,000",
+    "th": "ตั้งแต่ ฿5,500 ถึงกว่า ฿80,000",
+    "my": "฿5,500 မှ ฿80,000 ကျော်အထိ",
+    "zh": "从 ฿5,500 到 ฿80,000 以上",
+    "de": "Von ฿5,500 bis über ฿80,000"
+   },
+   "src": "https://www.chiangraitimes.com/health/health-checks-in-thailand/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Do I fast before a blood test, and can I drink water?",
+    "th": "ตรวจเลือดต้องงดอาหารไหม ดื่มน้ำได้หรือเปล่า",
+    "my": "သွေးမစစ်မီ အစာမစားဘဲ နေရသလား၊ ရေသောက်လို့ရသလား။",
+    "zh": "验血前要禁食吗？可以喝水吗？",
+    "de": "Muss ich vor einem Bluttest nüchtern sein, und darf ich Wasser trinken?"
+   },
+   "a": {
+    "en": "Thai PBS gives at least 8 hours without food for a blood sugar test and 10 to 12 hours for a lipid test. Plain water is allowed, citing Phyathai Hospital. Bangkok Hospital Chiang Mai lists 10 to 12 hours with small sips of water for its check-up.",
+    "th": "ไทยพีบีเอสระบุว่าตรวจน้ำตาลต้องงดอาหารอย่างน้อย 8 ชั่วโมง และตรวจไขมันต้องงด 10 ถึง 12 ชั่วโมง ดื่มน้ำเปล่าได้ ตามที่อ้างจากโรงพยาบาลพญาไท โรงพยาบาลกรุงเทพเชียงใหม่ระบุ 10 ถึง 12 ชั่วโมง จิบน้ำเล็กน้อยได้ สำหรับการตรวจสุขภาพของโรงพยาบาล",
+    "my": "ထိုင်းပီဘီအက်စ်က သွေးတွင်းသကြားစစ်ရန် အနည်းဆုံး 8 နာရီ၊ သွေးတွင်းအဆီစစ်ရန် 10 နာရီမှ 12 နာရီ အစာမစားရဟု ဖော်ပြပြီး ဖာယာထိုင်းဆေးရုံကို ကိုးကားကာ ရေသက်သက်သောက်ခွင့်ရှိသည်ဟု ဆိုသည်။ ချင်းမိုင်ဘန်ကောက်ဆေးရုံက ၎င်း၏ စစ်ဆေးမှုအတွက် 10 နာရီမှ 12 နာရီ ဖြစ်ပြီး ရေအနည်းငယ် စုပ်သောက်နိုင်သည်ဟု ဖော်ပြသည်။",
+    "zh": "Thai PBS 称，验血糖需至少禁食 8 小时，验血脂需 10 至 12 小时，可以喝白开水，引自帕亚泰医院。清迈曼谷医院对其体检写明禁食 10 至 12 小时，可小口喝水。",
+    "de": "Thai PBS nennt für einen Blutzuckertest mindestens 8 Stunden ohne Essen und für einen Fetttest 10 bis 12 Stunden. Reines Wasser sei erlaubt, mit Verweis auf das Phyathai-Spital. Das Bangkok Hospital Chiang Mai gibt für seinen Check-up 10 bis 12 Stunden an, kleine Schlucke Wasser sind erlaubt."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/505030"
+  },
+  {
+   "q": {
+    "en": "How much does a health check-up cost in Chiang Mai?",
+    "th": "ตรวจสุขภาพที่เชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် ကျန်းမာရေးစစ်ဆေးမှု ဈေးဘယ်လောက်လဲ။",
+    "zh": "清迈体检要多少钱？",
+    "de": "Was kostet ein Check-up in Chiang Mai?"
+   },
+   "a": {
+    "en": "Bangkok Hospital Chiang Mai lists its Essential Medical Program for men and women at ฿6,900, down from ฿10,000. The price is valid until 31 December 2026, and the service can be used until 31 January 2027.",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่แสดงราคา Essential Medical Program สำหรับชายและหญิงที่ ฿6,900 จากราคาเดิม ฿10,000 ราคาใช้ได้ถึง 31 ธันวาคม ค.ศ. 2026 และใช้สิทธิตรวจได้ถึง 31 มกราคม ค.ศ. 2027",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံက အမျိုးသားနှင့် အမျိုးသမီးအတွက် Essential Medical Program ကို မူလ ฿10,000 မှ ฿6,900 သို့ လျှော့ဈေးဖြင့် ဖော်ပြထားသည်။ ဈေးနှုန်းသည် 2026 ခုနှစ် ဒီဇင်ဘာ 31 ရက်အထိ ခိုင်လုံပြီး 2027 ခုနှစ် ဇန်နဝါရီ 31 ရက်အထိ သုံးနိုင်သည်။",
+    "zh": "清迈曼谷医院把男女通用的 Essential Medical Program 标价 ฿6,900，原价 ฿10,000。价格至 2026 年 12 月 31 日有效，服务可在 2027 年 1 月 31 日前使用。",
+    "de": "Das Bangkok Hospital Chiang Mai führt sein Essential Medical Program für Frauen und Männer mit ฿6,900, zuvor ฿10,000. Der Preis gilt bis zum 31. Dezember 2026, die Leistung kann bis zum 31. Januar 2027 genutzt werden."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "q": {
+    "en": "What does a basic check-up include?",
+    "th": "ตรวจสุขภาพพื้นฐานตรวจอะไรบ้าง",
+    "my": "အခြေခံ ကျန်းမာရေးစစ်ဆေးမှုတွင် ဘာတွေ ပါသလဲ။",
+    "zh": "基础体检包含哪些项目？",
+    "de": "Was enthält ein Basis-Check-up?"
+   },
+   "a": {
+    "en": "At Bangkok Hospital Chiang Mai the 16-item program has a physical exam, an EKG, a chest X-ray, a urine test, a report book and these blood tests: blood count, fasting sugar, HbA1c, cholesterol, HDL, LDL, triglyceride, uric acid, creatinine with GFR, liver (SGPT), vitamin D, HBsAg and HBsAb.",
+    "th": "แพ็กเกจ 16 รายการของโรงพยาบาลกรุงเทพเชียงใหม่ประกอบด้วยการตรวจร่างกาย คลื่นไฟฟ้าหัวใจ เอกซเรย์ปอด ตรวจปัสสาวะ สมุดรายงานผล และตรวจเลือด ได้แก่ ความสมบูรณ์ของเม็ดเลือด น้ำตาลหลังอดอาหาร HbA1c คอเลสเตอรอล HDL LDL ไตรกลีเซอไรด์ กรดยูริก ครีเอตินินพร้อม GFR ตับ (SGPT) วิตามินดี HBsAg และ HBsAb",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံ၏ အမျိုးအစား 16 ခုပါ ပက်ကေ့ချ်တွင် ကိုယ်ခန္ဓာစစ်ဆေးမှု၊ EKG၊ ရင်ဘတ် X-ray၊ ဆီးစစ်ခြင်း၊ အစီရင်ခံစာစာအုပ်နှင့် သွေးစစ်ချက်များ ဖြစ်သည့် သွေးဆဲလ်ရေတွက်စစ်ခြင်း၊ အစာမစားဘဲ သွေးတွင်းသကြား၊ HbA1c၊ ကိုလက်စထရော၊ HDL၊ LDL၊ ထရိုင်ဂလစ်စရိုက်၊ ယူရစ်အက်ဆစ်၊ GFR ပါ creatinine၊ အသည်း (SGPT)၊ ဗီတာမင်ဒီ၊ HBsAg နှင့် HBsAb တို့ ပါသည်။",
+    "zh": "清迈曼谷医院这个 16 项的套餐包含体格检查、心电图、胸部 X 光、尿检、一本报告册，以及这些血液检查：血常规、空腹血糖、糖化血红蛋白、胆固醇、HDL、LDL、甘油三酯、尿酸、肌酐及 GFR、肝功能（SGPT）、维生素 D、HBsAg 和 HBsAb。",
+    "de": "Im Bangkok Hospital Chiang Mai enthält das Paket mit 16 Positionen eine körperliche Untersuchung, ein EKG, ein Thoraxröntgen, einen Urintest, ein Berichtsheft und diese Bluttests: Blutbild, Nüchternzucker, HbA1c, Cholesterin, HDL, LDL, Triglyzeride, Harnsäure, Kreatinin mit GFR, Leber (SGPT), Vitamin D, HBsAg und HBsAb."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "q": {
+    "en": "Do foreigners pay more than Thais for a check-up?",
+    "th": "ชาวต่างชาติจ่ายแพงกว่าคนไทยไหมสำหรับตรวจสุขภาพ",
+    "my": "ကျန်းမာရေးစစ်ဆေးမှုအတွက် နိုင်ငံခြားသားက ထိုင်းလူမျိုးထက် ပိုပေးရသလား။",
+    "zh": "体检时外国人比泰国人付得更多吗？",
+    "de": "Zahlen Ausländer für einen Check-up mehr als Thailänder?"
+   },
+   "a": {
+    "en": "The terms of the Essential Medical Program at Bangkok Hospital Chiang Mai say its price applies to both Thai nationals and expatriates.",
+    "th": "เงื่อนไขของ Essential Medical Program ที่โรงพยาบาลกรุงเทพเชียงใหม่ระบุว่าราคาใช้ได้ทั้งกับคนไทยและชาวต่างชาติที่อาศัยในไทย",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံ၏ Essential Medical Program စည်းကမ်းချက်တွင် ဈေးနှုန်းသည် ထိုင်းနိုင်ငံသားများနှင့် ပြည်ပမှ ရောက်ရှိနေထိုင်သူများ နှစ်မျိုးလုံးအတွက် ဖြစ်သည်ဟု ဖော်ပြထားသည်။",
+    "zh": "清迈曼谷医院 Essential Medical Program 的条款写明，价格同时适用于泰国公民和外籍人士。",
+    "de": "Die Bedingungen des Essential Medical Program im Bangkok Hospital Chiang Mai halten fest, dass der Preis sowohl für thailändische Staatsangehörige als auch für Expats gilt."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  }
+ ],
+ "related": [
+  "specialist",
+  "doctor",
+  "med-papers",
+  "translate",
+  "interp",
+  "care-visits"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Mai: Essential Medical Program",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่: Essential Medical Program",
+    "my": "ချင်းမိုင်ဘန်ကောက်ဆေးရုံ: Essential Medical Program",
+    "zh": "清迈曼谷医院：Essential Medical Program",
+    "de": "Bangkok Hospital Chiang Mai: Essential Medical Program"
+   },
+   "href": "https://www.bangkokhospital.com/en/chiangmai/package/essential-medical-program-male-female-bcm"
+  },
+  {
+   "t": {
+    "en": "Thai PBS: fasting before a blood draw (Thai)",
+    "th": "ไทยพีบีเอส: งดดื่มน้ำก่อนเจาะเลือด จำเป็นหรือไม่",
+    "my": "ထိုင်းပီဘီအက်စ်: သွေးမထုတ်မီ အစာအရည် မစားမသောက်ခြင်း (ထိုင်းဘာသာ)",
+    "zh": "Thai PBS：抽血前的禁食禁水（泰语）",
+    "de": "Thai PBS: Nüchternheit vor der Blutentnahme (Thai)"
+   },
+   "href": "https://www.thaipbs.or.th/news/content/505030"
+  }
+ ]
+}

@@ -1,0 +1,319 @@
+{
+ "id": "copy",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A website in Thai and English needs the words for each page written in both languages.",
+  "th": "เว็บไซต์ภาษาไทยและอังกฤษต้องมีเนื้อหาของแต่ละหน้าที่เขียนไว้ทั้งสองภาษา",
+  "my": "ထိုင်းနှင့် အင်္ဂလိပ် ဝက်ဘ်ဆိုက်တွင် စာမျက်နှာတစ်ခုချင်းစီ၏ စာသားကို ဘာသာနှစ်မျိုးလုံးဖြင့် ရေးထားရန် လိုသည်။",
+  "zh": "泰英双语网站，每一页的文字都要有两种语言的版本。",
+  "de": "Eine Website auf Thai und Englisch braucht die Texte jeder Seite in beiden Sprachen."
+ },
+ "n": {
+  "de": "Texte für Ihre Website"
+ },
+ "l": {
+  "de": "Bis zu fünf Seiten, auf Thai und Englisch."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You tell Hongdam about the site and its pages, up to five.",
+    "th": "คุณเล่าให้หงส์ดำฟังเรื่องเว็บไซต์และหน้าต่างๆ ไม่เกินห้าหน้า",
+    "my": "သင်က ဝက်ဘ်ဆိုက်နှင့် စာမျက်နှာများအကြောင်း (ငါးမျက်နှာအထိ) ဟုန်ဒမ်ကို ပြောပြသည်။",
+    "zh": "您向鸿丹介绍网站和各页面，最多五页。",
+    "de": "Sie erzählen Hongdam von der Website und ihren Seiten, bis zu fünf."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "typewriter",
+   "t": {
+    "en": "The words for the pages are written in Thai and English.",
+    "th": "เขียนเนื้อหาของแต่ละหน้าเป็นภาษาไทยและอังกฤษ",
+    "my": "စာမျက်နှာများ၏ စာသားကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ရေးသားသည်။",
+    "zh": "各页面的文字用泰文和英文撰写。",
+    "de": "Die Texte der Seiten werden auf Thai und Englisch geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The words for the pages go back to you.",
+    "th": "เนื้อหาของแต่ละหน้าส่งกลับถึงคุณ",
+    "my": "စာမျက်နှာများ၏ စာသားကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "各页面的文字交还给您。",
+    "de": "Die Texte der Seiten gehen an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thailand has 67.8 million internet users, 94.7 percent of the population (DataReportal, late 2025).",
+    "th": "ไทยมีผู้ใช้อินเทอร์เน็ต 67.8 ล้านคน หรือ 94.7 เปอร์เซ็นต์ของประชากร (DataReportal ปลายปี 2025)",
+    "my": "ထိုင်းတွင် အင်တာနက်သုံးသူ 67.8 သန်း ရှိပြီး လူဦးရေ၏ 94.7 ရာခိုင်နှုန်း ဖြစ်သည် (DataReportal၊ 2025 နှောင်းပိုင်း)။",
+    "zh": "泰国有 6780 万网民，占人口的 94.7%（DataReportal，2025 年底）。",
+    "de": "Thailand hat 67.8 Millionen Internetnutzer, 94.7 Prozent der Bevölkerung (DataReportal, Ende 2025)."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "Google reads hreflang tags to find the language versions of a page. Each language version must list itself and all the other versions, or Google ignores the tags.",
+    "th": "Google อ่านแท็ก hreflang เพื่อหาหน้าฉบับภาษาอื่นของหน้านั้น แต่ละฉบับภาษาต้องระบุตัวเองและฉบับอื่นทั้งหมด ไม่เช่นนั้น Google จะไม่สนใจแท็ก",
+    "my": "Google သည် hreflang တက်ဂ်များကို ဖတ်ပြီး စာမျက်နှာတစ်ခု၏ ဘာသာစကားဗားရှင်းများကို ရှာသည်။ ဘာသာစကားဗားရှင်းတစ်ခုချင်းစီသည် မိမိကိုယ်ကိုနှင့် အခြားဗားရှင်းအားလုံးကို စာရင်းပြုထားရမည်၊ မဟုတ်ပါက Google က တက်ဂ်များကို လျစ်လျူရှုသည်။",
+    "zh": "Google 通过 hreflang 标签找出一个页面的各语言版本。每个语言版本必须列出自己和其他所有版本，否则 Google 会忽略这些标签。",
+    "de": "Google liest hreflang-Tags, um die Sprachversionen einer Seite zu finden. Jede Sprachversion muss sich selbst und alle anderen Versionen aufführen, sonst ignoriert Google die Tags."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "t": {
+    "en": "Google treats localized versions of a page as duplicates only if the main content of the page stays untranslated.",
+    "th": "Google ถือว่าหน้าฉบับภาษาอื่นเป็นหน้าซ้ำก็ต่อเมื่อเนื้อหาหลักของหน้ายังไม่ได้แปล",
+    "my": "Google သည် စာမျက်နှာ၏ ဘာသာစကားအလိုက် ဗားရှင်းများကို အဓိကအကြောင်းအရာ မဘာသာပြန်ရသေးမှသာ ထပ်နေသည်ဟု သတ်မှတ်သည်။",
+    "zh": "只有页面的主要内容仍未翻译时，Google 才把各本地化版本视为重复页面。",
+    "de": "Google betrachtet lokalisierte Versionen einer Seite nur dann als Duplikate, wenn der Hauptinhalt unübersetzt bleibt."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "t": {
+    "en": "Google describes people-first content as content made primarily for people, not to manipulate search rankings, and it asks that readers can tell who created the content.",
+    "th": "Google อธิบายเนื้อหาที่ยึดผู้อ่านเป็นหลักว่าเป็นเนื้อหาที่สร้างเพื่อผู้คนเป็นหลัก ไม่ใช่เพื่อปั่นอันดับค้นหา และให้ผู้อ่านบอกได้ว่าใครเป็นผู้สร้างเนื้อหา",
+    "my": "Google က လူကို ဦးစားပေးသော အကြောင်းအရာကို ရှာဖွေမှုအဆင့်ကို လှည့်ပတ်ရန်မဟုတ်ဘဲ လူများအတွက် အဓိကဖန်တီးထားသော အကြောင်းအရာဟု ဖော်ပြပြီး ဖတ်သူက ဖန်တီးသူ ဘယ်သူလဲဆိုသည်ကို သိနိုင်ရန် တောင်းဆိုသည်။",
+    "zh": "Google 把以人为本的内容描述为主要为读者而作、而不是为了操纵搜索排名，并希望读者能看出内容出自谁手。",
+    "de": "Google beschreibt nutzerorientierte Inhalte als Inhalte, die vor allem für Menschen und nicht zur Beeinflussung des Suchrankings entstehen, und möchte, dass Lesende erkennen, wer sie verfasst hat."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "t": {
+    "en": "A Thai copyright assignment must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "การโอนลิขสิทธิ์ในไทยต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလကို သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "泰国的版权转让必须采用书面形式并写明期限；未写明期限的，期限为 10 年。",
+    "de": "Eine Abtretung des Urheberrechts in Thailand muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai and English web content from a Fastwork seller with 391 orders: three packages, 3 days and 2 rounds of changes each",
+    "th": "เนื้อหาเว็บภาษาไทยและอังกฤษจากผู้ขายบน Fastwork ที่มี 391 ออเดอร์ สามแพ็กเกจ แต่ละแพ็กเกจ 3 วัน แก้ไข 2 ครั้ง",
+    "my": "အော်ဒါ 391 ခုရှိသော Fastwork ရောင်းသူထံမှ ထိုင်းနှင့် အင်္ဂလိပ် ဝက်ဘ်စာသား - ပက်ကေ့ချ် သုံးမျိုး၊ တစ်မျိုးလျှင် 3 ရက်နှင့် ပြင်ဆင်မှု နှစ်ကြိမ်",
+    "zh": "Fastwork 上有 391 笔订单的卖家提供的泰英网页文字：三档套餐，每档 3 天、修改 2 次",
+    "de": "Thai-/Englisch-Webtexte von einem Fastwork-Anbieter mit 391 Bestellungen: drei Pakete, je 3 Tage und 2 Änderungsrunden"
+   },
+   "p": {
+    "en": "฿590 for up to 300 words; ฿890 for up to 700; ฿1,290 for 1,000",
+    "th": "฿590 ไม่เกิน 300 คำ ฿890 ไม่เกิน 700 คำ ฿1,290 สำหรับ 1,000 คำ",
+    "my": "စကားလုံး 300 အထိ ฿590၊ 700 အထိ ฿890၊ 1,000 လျှင် ฿1,290",
+    "zh": "300 词以内 ฿590；700 词以内 ฿890；1,000 词 ฿1,290",
+    "de": "฿590 bis 300 Wörter; ฿890 bis 700; ฿1,290 für 1000"
+   },
+   "src": "https://fastwork.co/user/resumenara/content-writing-87881268"
+  },
+  {
+   "t": {
+    "en": "Website page copy in the UK (Whito price guide, 2026)",
+    "th": "เนื้อหาหน้าเว็บในสหราชอาณาจักร (คู่มือราคา Whito ปี 2026)",
+    "my": "ယူကေတွင် ဝက်ဘ်စာမျက်နှာ စာသား (Whito ဈေးနှုန်းလမ်းညွှန်၊ 2026)",
+    "zh": "英国网页文案（Whito 2026 年价格指南）",
+    "de": "Seitentexte für Websites in Grossbritannien (Preisleitfaden von Whito, 2026)"
+   },
+   "p": {
+    "en": "£200–600 a page; £1,000–5,000 for a site of 5 to 10 pages",
+    "th": "£200–600 ต่อหน้า £1,000–5,000 สำหรับเว็บ 5 ถึง 10 หน้า",
+    "my": "တစ်မျက်နှာလျှင် £200–600၊ စာမျက်နှာ 5 မှ 10 ရှိသော ဝက်ဘ်ဆိုက်လျှင် £1,000–5,000",
+    "zh": "每页 £200–600；5 至 10 页的网站 £1,000–5,000",
+    "de": "£200–600 je Seite; £1,000–5,000 für eine Website mit 5 bis 10 Seiten"
+   },
+   "src": "https://whito.co.uk/research/uk-copywriting-costs/"
+  },
+  {
+   "t": {
+    "en": "Freelance website writers (Copyblogger)",
+    "th": "นักเขียนอิสระสำหรับเว็บไซต์ (Copyblogger)",
+    "my": "ဝက်ဘ်ဆိုက်အတွက် လွတ်လပ်သော စာရေးသူများ (Copyblogger)",
+    "zh": "自由撰稿人写网页内容（Copyblogger）",
+    "de": "Freiberufliche Webtexter (Copyblogger)"
+   },
+   "p": {
+    "en": "US$100–200 for a short page; US$500–750 for a longer technical page",
+    "th": "US$100–200 สำหรับหน้าสั้น US$500–750 สำหรับหน้ายาวที่เป็นเทคนิค",
+    "my": "စာမျက်နှာတို US$100–200၊ နည်းပညာပိုင်းဆိုင်ရာ စာမျက်နှာရှည် US$500–750",
+    "zh": "短页 US$100–200；较长的技术类页面 US$500–750",
+    "de": "US$100–200 für eine kurze Seite; US$500–750 für eine längere technische Seite"
+   },
+   "src": "https://copyblogger.com/freelance-writing-rates/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does website copywriting cost in Thailand?",
+    "th": "ค่าเขียนเนื้อหาเว็บไซต์ในไทยเท่าไร",
+    "my": "ထိုင်းတွင် ဝက်ဘ်ဆိုက်စာသား ရေးသားခ ဘယ်လောက်လဲ။",
+    "zh": "在泰国，写网站文案要多少钱？",
+    "de": "Was kostet das Schreiben von Website-Texten in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 391 orders lists Thai and English content at ฿590 for up to 300 words, ฿890 for up to 700 words and ฿1,290 for 1,000 words. Each package takes 3 days and includes 2 rounds of changes.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 391 ออเดอร์ลงเนื้อหาไทยและอังกฤษไว้ ฿590 ไม่เกิน 300 คำ ฿890 ไม่เกิน 700 คำ และ ฿1,290 สำหรับ 1,000 คำ ทุกแพ็กเกจใช้เวลา 3 วัน แก้ไข 2 ครั้ง",
+    "my": "အော်ဒါ 391 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက ထိုင်းနှင့် အင်္ဂလိပ် စာသားကို စကားလုံး 300 အထိ ฿590၊ 700 အထိ ฿890 နှင့် 1,000 လျှင် ฿1,290 ဟု စာရင်းပြုထားသည်။ ပက်ကေ့ချ်တိုင်း 3 ရက်ကြာပြီး ပြင်ဆင်မှု နှစ်ကြိမ် ပါသည်။",
+    "zh": "Fastwork 上一位有 391 笔订单的卖家列出泰英文字价格：300 词以内 ฿590，700 词以内 ฿890，1,000 词 ฿1,290。每档 3 天，含 2 次修改。",
+    "de": "Ein Fastwork-Anbieter mit 391 Bestellungen führt Thai- und Englischtexte auf: ฿590 bis 300 Wörter, ฿890 bis 700 Wörter, ฿1,290 für 1000 Wörter. Jedes Paket dauert 3 Tage und enthält 2 Änderungsrunden."
+   },
+   "src": "https://fastwork.co/user/resumenara/content-writing-87881268"
+  },
+  {
+   "q": {
+    "en": "What does a UK copywriter charge for a website page?",
+    "th": "นักเขียนในสหราชอาณาจักรคิดค่าเนื้อหาหน้าเว็บเท่าไร",
+    "my": "ယူကေရှိ စာရေးသူက ဝက်ဘ်စာမျက်နှာတစ်ခုကို ဘယ်လောက်ယူသလဲ။",
+    "zh": "英国的文案撰稿人写一页网页收多少？",
+    "de": "Was verlangt ein britischer Texter für eine Website-Seite?"
+   },
+   "a": {
+    "en": "A 2026 UK price guide lists website page copy at £200–600 a page, and full website copy of 5 to 10 pages at £1,000–5,000.",
+    "th": "คู่มือราคาของสหราชอาณาจักรปี 2026 ระบุเนื้อหาหน้าเว็บ £200–600 ต่อหน้า และเนื้อหาทั้งเว็บ 5 ถึง 10 หน้า £1,000–5,000",
+    "my": "ယူကေ 2026 ဈေးနှုန်းလမ်းညွှန်တွင် ဝက်ဘ်စာမျက်နှာစာသားကို တစ်မျက်နှာလျှင် £200–600 နှင့် စာမျက်နှာ 5 မှ 10 ရှိသော ဝက်ဘ်ဆိုက်တစ်ခုလုံးကို £1,000–5,000 ဟု ဖော်ပြသည်။",
+    "zh": "英国 2026 年的价格指南列出：网页文案每页 £200–600，5 至 10 页的整站文案 £1,000–5,000。",
+    "de": "Ein britischer Preisleitfaden für 2026 nennt £200–600 je Seite und £1,000–5,000 für die Texte einer ganzen Website mit 5 bis 10 Seiten."
+   },
+   "src": "https://whito.co.uk/research/uk-copywriting-costs/"
+  },
+  {
+   "q": {
+    "en": "Can one site have pages in Thai and English?",
+    "th": "เว็บไซต์เดียวมีหน้าไทยและอังกฤษได้ไหม",
+    "my": "ဝက်ဘ်ဆိုက်တစ်ခုတည်းတွင် ထိုင်းနှင့် အင်္ဂလိပ် စာမျက်နှာများ ထားနိုင်ပါသလား။",
+    "zh": "一个网站可以同时有泰文页和英文页吗？",
+    "de": "Kann eine Website Seiten auf Thai und Englisch haben?"
+   },
+   "a": {
+    "en": "Yes. Google asks sites to use hreflang to tell it about the language versions of a page. Each version lists itself and all the others. Google treats translated versions as duplicates only when the main content stays untranslated.",
+    "th": "ได้ Google ให้เว็บไซต์ใช้ hreflang เพื่อบอกว่าหน้านั้นมีฉบับภาษาใดบ้าง แต่ละฉบับระบุตัวเองและฉบับอื่นทั้งหมด Google ถือว่าฉบับแปลเป็นหน้าซ้ำก็ต่อเมื่อเนื้อหาหลักยังไม่ได้แปล",
+    "my": "ရနိုင်သည်။ Google က စာမျက်နှာတစ်ခု၏ ဘာသာစကားဗားရှင်းများကို ပြောပြရန် hreflang သုံးရန် ဝက်ဘ်ဆိုက်များကို တောင်းဆိုသည်။ ဗားရှင်းတစ်ခုချင်းစီသည် မိမိကိုယ်နှင့် အခြားအားလုံးကို စာရင်းပြုသည်။ အဓိကအကြောင်းအရာ မဘာသာပြန်ရသေးမှသာ Google က ဘာသာပြန်ဗားရှင်းများကို ထပ်နေသည်ဟု သတ်မှတ်သည်။",
+    "zh": "可以。Google 要求网站用 hreflang 告知页面有哪些语言版本，每个版本列出自己和其他所有版本。只有主要内容仍未翻译时，Google 才把翻译版本视为重复页面。",
+    "de": "Ja. Google bittet darum, mit hreflang die Sprachversionen einer Seite anzugeben. Jede Version führt sich selbst und alle anderen auf. Übersetzte Versionen gelten nur als Duplikate, wenn der Hauptinhalt unübersetzt bleibt."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "q": {
+    "en": "What does Google look for in website text?",
+    "th": "Google มองหาอะไรในข้อความบนเว็บไซต์",
+    "my": "ဝက်ဘ်ဆိုက်စာသားတွင် Google က ဘာကို ရှာသလဲ။",
+    "zh": "Google 对网站文字看重什么？",
+    "de": "Worauf achtet Google bei Website-Texten?"
+   },
+   "a": {
+    "en": "Google's page on helpful content asks whether the text is written for people first, whether readers can tell who created it, and whether it shows expertise on the topic.",
+    "th": "หน้าเนื้อหาที่เป็นประโยชน์ของ Google ถามว่าข้อความเขียนเพื่อผู้อ่านเป็นอันดับแรกหรือไม่ ผู้อ่านบอกได้หรือไม่ว่าใครเป็นผู้เขียน และข้อความแสดงความรู้ในเรื่องนั้นหรือไม่",
+    "my": "Google ၏ အသုံးဝင်သော အကြောင်းအရာစာမျက်နှာက စာသားကို လူကို ဦးစားပေး ရေးထားသလား၊ ဖတ်သူက ဖန်တီးသူ ဘယ်သူလဲဆိုသည်ကို သိနိုင်သလား၊ ဘာသာရပ်ပိုင်း ကျွမ်းကျင်မှုကို ပြထားသလားဟု မေးသည်။",
+    "zh": "Google 关于有用内容的页面会问：文字是否首先为读者而写，读者能否看出作者是谁，以及是否体现了对该主题的专业认识。",
+    "de": "Googles Seite zu hilfreichen Inhalten fragt, ob der Text zuerst für Menschen geschrieben ist, ob Lesende erkennen, wer ihn verfasst hat, und ob er Fachwissen zum Thema zeigt."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+   "q": {
+    "en": "How does copyright pass to the buyer in Thailand?",
+    "th": "ลิขสิทธิ์ตกเป็นของผู้ซื้อได้อย่างไรในไทย",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်သည် ဝယ်သူထံ ဘယ်လို ရောက်သွားသလဲ။",
+    "zh": "在泰国，版权如何转给买方？",
+    "de": "Wie geht das Urheberrecht in Thailand an den Käufer über?"
+   },
+   "a": {
+    "en": "In Thailand copyright arises when a work is made, and registration is not needed. A transfer of copyright to the buyer must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน การโอนลิขสิทธิ์ให้ผู้ซื้อต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်ပြီး မှတ်ပုံတင်ရန် မလိုပါ။ ဝယ်သူထံ မူပိုင်ခွင့် လွှဲပြောင်းရာတွင် စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。把版权转让给买方，必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig. Die Abtretung an den Käufer muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "article",
+  "social",
+  "lang-pages",
+  "german",
+  "web-search",
+  "site"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google: tell Google about localized versions of your page",
+    "th": "Google: แจ้ง Google เรื่องหน้าฉบับภาษาอื่นของคุณ",
+    "my": "Google: သင့်စာမျက်နှာ၏ ဘာသာစကားဗားရှင်းများကို Google သို့ ပြောပြခြင်း",
+    "zh": "Google：向 Google 说明页面的本地化版本",
+    "de": "Google: Sprachversionen Ihrer Seite bei Google angeben"
+   },
+   "href": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a Thai and English content writing listing",
+    "th": "Fastwork: รายการรับเขียนเนื้อหาไทยและอังกฤษ",
+    "my": "Fastwork: ထိုင်းနှင့် အင်္ဂလိပ် စာသားရေးသားမှု စာရင်း",
+    "zh": "Fastwork：泰英内容撰写商品页",
+    "de": "Fastwork: ein Angebot für Thai- und Englischtexte"
+   },
+   "href": "https://fastwork.co/user/resumenara/content-writing-87881268"
+  }
+ ],
+ "glyphs": [
+  "typewriter",
+  "translate",
+  "laptop"
+ ]
+}

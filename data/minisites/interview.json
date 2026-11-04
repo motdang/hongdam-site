@@ -1,0 +1,302 @@
+{
+ "id": "interview",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A maker or an elder knows things that are not written down, and an interview records them with the person's consent.",
+  "th": "ช่างหรือผู้อาวุโสรู้เรื่องที่ไม่มีใครเขียนไว้ และการสัมภาษณ์บันทึกเรื่องเหล่านั้นไว้โดยได้รับความยินยอมจากผู้ให้สัมภาษณ์",
+  "my": "လက်မှုသမား သို့မဟုတ် သက်ကြီးတစ်ဦးက စာဖြင့်မရေးထားသည်များကို သိပြီး အင်တာဗျူးက ထိုသူ၏ ခွင့်ပြုချက်ဖြင့် ၎င်းတို့ကို မှတ်တမ်းတင်သည်။",
+  "zh": "手艺人或长者掌握着没有写下来的知识，访谈在对方同意之下把这些记录下来。",
+  "de": "Ein Handwerker oder eine ältere Person weiss Dinge, die nirgends aufgeschrieben sind, und ein Interview hält sie mit Einwilligung fest."
+ },
+ "n": {
+  "de": "Aufgezeichnetes Interview"
+ },
+ "l": {
+  "de": "Ein Handwerker oder ein älterer Mensch, mit Einwilligung, geschnitten, mit Namensnennung."
+ },
+ "steps": [
+  {
+   "db": "wai",
+   "t": {
+    "en": "You name the maker or elder to interview.",
+    "th": "คุณบอกชื่อช่างหรือผู้อาวุโสที่จะสัมภาษณ์",
+    "my": "အင်တာဗျူးမည့် လက်မှုသမား သို့မဟုတ် သက်ကြီးကို သင်အမည်ဖော်ပြသည်။",
+    "zh": "您指定要访谈的手艺人或长者。",
+    "de": "Sie nennen den Handwerker oder die ältere Person, die interviewt wird."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "mic",
+   "t": {
+    "en": "The interview is recorded with a consent form.",
+    "th": "บันทึกการสัมภาษณ์พร้อมใบยินยอม",
+    "my": "အင်တာဗျူးကို ခွင့်ပြုချက်ပုံစံဖြင့် မှတ်တမ်းတင်သည်။",
+    "zh": "访谈在有同意书的情况下录制。",
+    "de": "Das Interview wird mit einer Einwilligungserklärung aufgezeichnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "scissors",
+   "t": {
+    "en": "It is edited and given credits.",
+    "th": "ตัดต่อและใส่เครดิต",
+    "my": "တည်းဖြတ်ပြီး အသိအမှတ်ပြုစာများ ထည့်သွင်းသည်။",
+    "zh": "剪辑并加上署名字幕。",
+    "de": "Es wird geschnitten und mit Namensnennung versehen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Under Thai data protection law a request for consent must be made in writing or electronically, and a person can withdraw consent at any time.",
+    "th": "ตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลของไทย การขอความยินยอมต้องทำเป็นหนังสือหรือทางอิเล็กทรอนิกส์ และบุคคลถอนความยินยอมได้ทุกเมื่อ",
+    "my": "ထိုင်းဒေတာကာကွယ်ရေးဥပဒေအရ သဘောတူညီမှု တောင်းခံခြင်းကို စာဖြင့် သို့မဟုတ် အီလက်ထရောနစ်နည်းဖြင့် ပြုလုပ်ရမည်ဖြစ်ပြီး လူတစ်ဦးသည် မည်သည့်အချိန်တွင်မဆို သဘောတူညီမှုကို ပြန်လည်ရုပ်သိမ်းနိုင်သည်။",
+    "zh": "按泰国个人数据保护法，征求同意须采用书面或电子方式，个人可随时撤回同意。",
+    "de": "Nach dem thailändischen Datenschutzrecht muss die Einwilligung schriftlich oder elektronisch eingeholt werden, und jede Person kann sie jederzeit widerrufen."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "t": {
+    "en": "Thai law defines personal data as data about a natural person that can identify that person, directly or indirectly.",
+    "th": "กฎหมายไทยให้ความหมายข้อมูลส่วนบุคคลว่าเป็นข้อมูลเกี่ยวกับบุคคลธรรมดาที่ทำให้ระบุตัวบุคคลนั้นได้ ทางตรงหรือทางอ้อม",
+    "my": "ထိုင်းဥပဒေက ကိုယ်ရေးကိုယ်တာဒေတာကို လူတစ်ဦးအကြောင်း ဒေတာတစ်ခုအဖြစ် သတ်မှတ်ပြီး ထိုလူကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ဖော်ထုတ်နိုင်သော ဒေတာဖြစ်သည်။",
+    "zh": "泰国法律把个人数据定义为与自然人有关、可直接或间接识别该人的数据。",
+    "de": "Das thailändische Recht definiert personenbezogene Daten als Daten über eine natürliche Person, die diese direkt oder indirekt identifizieren."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "t": {
+    "en": "The Oral History Association lists getting and documenting the narrator's informed consent as a core step. It advises a signed legal release ideally when the interview is completed, and, when possible, a chance for the narrator to approve the oral history before public release.",
+    "th": "สมาคมประวัติศาสตร์บอกเล่า (Oral History Association) ระบุว่าการขอและบันทึกความยินยอมโดยได้รับข้อมูลของผู้ให้สัมภาษณ์เป็นขั้นหลัก และให้มีใบยินยอมทางกฎหมายที่ลงนามแล้ว โดยเหมาะที่สุดเมื่อสัมภาษณ์เสร็จ และเมื่อทำได้ ให้ผู้ให้สัมภาษณ์มีโอกาสอนุมัติก่อนเผยแพร่สู่สาธารณะ",
+    "my": "Oral History Association က ပြောဆိုသူ၏ သတင်းအချက်အလက်ပြည့်စုံသော ခွင့်ပြုချက်ကို ရယူ၍ မှတ်တမ်းတင်ခြင်းကို အဓိကအဆင့်အဖြစ် စာရင်းပြုထားသည်။ အင်တာဗျူးပြီးသည့်အချိန်တွင် လက်မှတ်ထိုးထားသော ဥပဒေရေးရာ ထုတ်ပြန်ခွင့်ပုံစံ ရလျှင် အကောင်းဆုံးဖြစ်ပြီး ဖြစ်နိုင်လျှင် အများပြည်သူသို့ မထုတ်ဝေမီ ပြောဆိုသူက ခွင့်ပြုနိုင်သည့် အခွင့်အရေး ပေးရန်လည်း ဖော်ပြသည်။",
+    "zh": "口述历史协会（Oral History Association）把取得并记录受访者的知情同意列为一个核心步骤，最好在访谈结束时取得已签署的法律授权书，并在可能时让受访者在公开发布前审定。",
+    "de": "Die Oral History Association nennt als Kernschritt, die informierte Einwilligung der erzählenden Person einzuholen und zu dokumentieren. Sie empfiehlt eine unterschriebene rechtliche Freigabe, am besten nach Ende des Interviews, und wenn möglich die Gelegenheit, dass die Person die Aufnahme vor der Veröffentlichung freigibt."
+   },
+   "src": "https://oralhistory.org/best-practices"
+  },
+  {
+   "t": {
+    "en": "Thai copyright in an audiovisual work lasts 50 years from creation or first publication. The moral rights of an author include the right to be identified as the author.",
+    "th": "ลิขสิทธิ์ของงานโสตทัศนวัสดุในไทยคุ้มครอง 50 ปีนับจากสร้างสรรค์หรือเผยแพร่ครั้งแรก สิทธิทางศีลธรรมของผู้สร้างสรรค์รวมถึงสิทธิให้ระบุชื่อว่าเป็นผู้สร้างสรรค์",
+    "my": "ထိုင်းတွင် အသံနှင့်ရုပ်ပုံ လက်ရာ၏ မူပိုင်ခွင့်သည် ဖန်တီးသည့်နေ့ သို့မဟုတ် ပထမဆုံး ထုတ်ဝေသည့်နေ့မှ 50 နှစ် ခံသည်။ ဖန်တီးသူ၏ ကိုယ်ကျင့်တရားဆိုင်ရာ အခွင့်အရေးတွင် ဖန်တီးသူအဖြစ် အမည်ဖော်ပြခံပိုင်ခွင့် ပါဝင်သည်။",
+    "zh": "在泰国，视听作品的版权自创作或首次发表起保护 50 年。作者的精神权利包括被署名为作者的权利。",
+    "de": "Das Urheberrecht an einem audiovisuellen Werk gilt in Thailand 50 Jahre ab Entstehung oder Erstveröffentlichung. Zu den Urheberpersönlichkeitsrechten gehört das Recht, als Urheber genannt zu werden."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "A Thai copyright assignment must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "การโอนลิขสิทธิ์ในไทยต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလကို သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "泰国的版权转让必须采用书面形式并写明期限；未写明期限的，期限为 10 年。",
+    "de": "Eine Abtretung des Urheberrechts in Thailand muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Filming from a Fastwork videographer with 75 orders; editing is an add-on",
+    "th": "ถ่ายทำจากช่างวิดีโอบน Fastwork ที่มี 75 ออเดอร์ การตัดต่อเป็นบริการเสริม",
+    "my": "အော်ဒါ 75 ခုရှိသော Fastwork ဗီဒီယိုရိုက်ကူးသူထံမှ ရိုက်ကူးခြင်း၊ တည်းဖြတ်ခြင်းမှာ ထပ်ဆောင်းဝန်ဆောင်မှု",
+    "zh": "Fastwork 上有 75 笔订单的摄像师的拍摄服务；剪辑为附加服务",
+    "de": "Dreh von einem Fastwork-Videografen mit 75 Bestellungen; der Schnitt ist ein Zusatz"
+   },
+   "p": {
+    "en": "฿4,500 for up to 5 hours; ฿7,000 for up to 8 hours with lighting; ฿5,500 to camera with a teleprompter, up to 5 hours",
+    "th": "฿4,500 ไม่เกิน 5 ชั่วโมง ฿7,000 ไม่เกิน 8 ชั่วโมงพร้อมไฟ ฿5,500 พูดเข้ากล้องพร้อมเทเลพรอมเตอร์ ไม่เกิน 5 ชั่วโมง",
+    "my": "5 နာရီအထိ ฿4,500၊ အလင်းရောင်ပါ 8 နာရီအထိ ฿7,000၊ တယ်လီပရောင်တာပါ ကင်မရာကို ကြည့်ပြောခြင်း 5 နာရီအထိ ฿5,500",
+    "zh": "最长 5 小时 ฿4,500；最长 8 小时含灯光 ฿7,000；对镜头口播加提词器，最长 5 小时 ฿5,500",
+    "de": "฿4,500 bis 5 Stunden; ฿7,000 bis 8 Stunden mit Licht; ฿5,500 für Sprechen in die Kamera mit Teleprompter, bis 5 Stunden"
+   },
+   "src": "https://fastwork.co/user/gemschu/videography-98218753"
+  },
+  {
+   "t": {
+    "en": "Filming and editing from a Fastwork team with 93 orders",
+    "th": "ถ่ายทำและตัดต่อจากทีมบน Fastwork ที่มี 93 ออเดอร์",
+    "my": "အော်ဒါ 93 ခုရှိသော Fastwork အဖွဲ့ထံမှ ရိုက်ကူးခြင်းနှင့် တည်းဖြတ်ခြင်း",
+    "zh": "Fastwork 上有 93 笔订单的团队的拍摄与剪辑",
+    "de": "Dreh und Schnitt von einem Fastwork-Team mit 93 Bestellungen"
+   },
+   "p": {
+    "en": "฿1,000 to edit footage you have, 2 days; ฿8,500 for a 6-hour shoot and a 2–3 minute clip, 3 days; ฿12,500 for a crew and one edited 2–3 minute clip, 4 days",
+    "th": "฿1,000 ตัดต่อฟุตเทจที่คุณมี 2 วัน ฿8,500 ถ่าย 6 ชั่วโมงและคลิป 2–3 นาที 3 วัน ฿12,500 ทีมงานและคลิปตัดต่อ 2–3 นาทีหนึ่งคลิป 4 วัน",
+    "my": "သင့်တွင်ရှိသော ဖိုင်ကို တည်းဖြတ်ရန် ฿1,000 (2 ရက်)၊ 6 နာရီ ရိုက်ကူးခြင်းနှင့် 2–3 မိနစ် ဗီဒီယိုတစ်ခု ฿8,500 (3 ရက်)၊ အဖွဲ့နှင့် တည်းဖြတ်ပြီး 2–3 မိနစ် ဗီဒီယိုတစ်ခု ฿12,500 (4 ရက်)",
+    "zh": "剪辑您已有的素材 ฿1,000，2 天；拍摄 6 小时加一条 2–3 分钟视频 ฿8,500，3 天；摄制组加一条剪辑好的 2–3 分钟视频 ฿12,500，4 天",
+    "de": "฿1,000 für den Schnitt von vorhandenem Material, 2 Tage; ฿8,500 für 6 Stunden Dreh und einen Clip von 2–3 Minuten, 3 Tage; ฿12,500 für ein Team und einen geschnittenen Clip von 2–3 Minuten, 4 Tage"
+   },
+   "src": "https://fastwork.co/user/tancinevdo592/videography-16091970"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to film a video interview in Thailand?",
+    "th": "ค่าถ่ายวิดีโอสัมภาษณ์ในไทยเท่าไร",
+    "my": "ထိုင်းတွင် ဗီဒီယိုအင်တာဗျူး ရိုက်ကူးရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "在泰国拍一段视频访谈要多少钱？",
+    "de": "Was kostet ein Videointerview in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork videographer with 75 orders lists ฿4,500 for up to 5 hours of shooting, ฿7,000 for up to 8 hours with LED lighting and ฿5,500 for up to 5 hours of speaking to camera with a teleprompter.",
+    "th": "ช่างวิดีโอบน Fastwork รายหนึ่งที่มี 75 ออเดอร์ลงราคา ฿4,500 สำหรับถ่ายไม่เกิน 5 ชั่วโมง ฿7,000 ไม่เกิน 8 ชั่วโมงพร้อมไฟ LED และ ฿5,500 สำหรับพูดเข้ากล้องพร้อมเทเลพรอมเตอร์ไม่เกิน 5 ชั่วโมง",
+    "my": "အော်ဒါ 75 ခုရှိသော Fastwork ဗီဒီယိုရိုက်ကူးသူတစ်ဦးက 5 နာရီအထိ ရိုက်ကူးရန် ฿4,500၊ LED အလင်းရောင်ပါ 8 နာရီအထိ ฿7,000 နှင့် တယ်လီပရောင်တာဖြင့် ကင်မရာကို ကြည့်ပြောခြင်း 5 နာရီအထိ ฿5,500 ဟု စာရင်းပြုထားသည်။",
+    "zh": "Fastwork 上一位有 75 笔订单的摄像师标价：最长 5 小时拍摄 ฿4,500；最长 8 小时含 LED 灯光 ฿7,000；对镜头口播加提词器最长 5 小时 ฿5,500。",
+    "de": "Ein Fastwork-Videograf mit 75 Bestellungen nennt ฿4,500 für bis zu 5 Stunden Dreh, ฿7,000 für bis zu 8 Stunden mit LED-Licht und ฿5,500 für bis zu 5 Stunden Sprechen in die Kamera mit Teleprompter."
+   },
+   "src": "https://fastwork.co/user/gemschu/videography-98218753"
+  },
+  {
+   "q": {
+    "en": "Is editing included in a shoot price?",
+    "th": "ราคาถ่ายทำรวมการตัดต่อไหม",
+    "my": "ရိုက်ကူးခ ဈေးနှုန်းတွင် တည်းဖြတ်ခ ပါသလား။",
+    "zh": "拍摄价格包含剪辑吗？",
+    "de": "Ist der Schnitt im Drehpreis enthalten?"
+   },
+   "a": {
+    "en": "On that Fastwork videographer's listing, editing is not included. It is done only as an add-on service when the client asks for it.",
+    "th": "ในรายการของช่างวิดีโอรายนั้นบน Fastwork ไม่รวมการตัดต่อ ตัดต่อให้เฉพาะเมื่อลูกค้าขอเป็นบริการเสริม",
+    "my": "ထို Fastwork ဗီဒီယိုရိုက်ကူးသူ၏ စာရင်းတွင် တည်းဖြတ်ခ မပါပါ။ ဖောက်သည်က တောင်းဆိုမှသာ ထပ်ဆောင်းဝန်ဆောင်မှုအဖြစ် လုပ်ပေးသည်။",
+    "zh": "在那位 Fastwork 摄像师的商品页上，剪辑不含在价格内，只有客户提出时才作为附加服务提供。",
+    "de": "Im Angebot dieses Fastwork-Videografen ist der Schnitt nicht enthalten. Er erfolgt nur als Zusatzleistung, wenn die Kundschaft ihn verlangt."
+   },
+   "src": "https://fastwork.co/user/gemschu/videography-98218753"
+  },
+  {
+   "q": {
+    "en": "Does the person interviewed sign anything?",
+    "th": "ผู้ให้สัมภาษณ์ต้องลงนามในเอกสารไหม",
+    "my": "အင်တာဗျူးခံရသူက ဘာမဆို လက်မှတ်ထိုးရသလား။",
+    "zh": "受访者要签署文件吗？",
+    "de": "Unterschreibt die interviewte Person etwas?"
+   },
+   "a": {
+    "en": "The Oral History Association's best practices list informed consent from the narrator, a formal record of the agreement before recording starts, and a signed legal release form, ideally when the interview is completed.",
+    "th": "แนวปฏิบัติของสมาคมประวัติศาสตร์บอกเล่าระบุให้มีความยินยอมโดยได้รับข้อมูลจากผู้ให้สัมภาษณ์ บันทึกข้อตกลงอย่างเป็นทางการก่อนเริ่มบันทึก และใบยินยอมทางกฎหมายที่ลงนามแล้ว โดยเหมาะที่สุดเมื่อสัมภาษณ์เสร็จ",
+    "my": "Oral History Association ၏ အကောင်းဆုံးအလေ့အထများတွင် ပြောဆိုသူ၏ သတင်းအချက်အလက်ပြည့်စုံသော ခွင့်ပြုချက်၊ မှတ်တမ်းမတင်မီ သဘောတူညီမှု၏ တရားဝင်မှတ်တမ်းနှင့် အင်တာဗျူးပြီးသည့်အချိန်တွင် လက်မှတ်ထိုးထားသော ဥပဒေရေးရာ ထုတ်ပြန်ခွင့်ပုံစံတို့ကို ဖော်ပြထားသည်။",
+    "zh": "口述历史协会的最佳实践列出：取得受访者的知情同意，在录音开始前正式记录该约定，以及最好在访谈结束时取得已签署的法律授权书。",
+    "de": "Die Best Practices der Oral History Association nennen die informierte Einwilligung der erzählenden Person, eine förmliche Aufzeichnung der Vereinbarung vor Beginn der Aufnahme und eine unterschriebene rechtliche Freigabe, am besten nach Ende des Interviews."
+   },
+   "src": "https://oralhistory.org/best-practices"
+  },
+  {
+   "q": {
+    "en": "Can a person take back consent after the interview?",
+    "th": "ผู้ให้สัมภาษณ์ถอนความยินยอมหลังสัมภาษณ์ได้ไหม",
+    "my": "အင်တာဗျူးပြီးနောက် သဘောတူညီမှုကို ပြန်ရုပ်သိမ်းနိုင်ပါသလား။",
+    "zh": "访谈之后，受访者可以撤回同意吗？",
+    "de": "Kann eine Person ihre Einwilligung nach dem Interview zurücknehmen?"
+   },
+   "a": {
+    "en": "Under Thai data protection law a person can withdraw consent at any time, and a request for consent must be made in writing or electronically. Thai law counts data that can identify a person, directly or indirectly, as personal data.",
+    "th": "ตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลของไทย บุคคลถอนความยินยอมได้ทุกเมื่อ และการขอความยินยอมต้องทำเป็นหนังสือหรือทางอิเล็กทรอนิกส์ กฎหมายไทยถือว่าข้อมูลที่ระบุตัวบุคคลได้ ทางตรงหรือทางอ้อม เป็นข้อมูลส่วนบุคคล",
+    "my": "ထိုင်းဒေတာကာကွယ်ရေးဥပဒေအရ လူတစ်ဦးသည် မည်သည့်အချိန်တွင်မဆို သဘောတူညီမှုကို ပြန်လည်ရုပ်သိမ်းနိုင်ပြီး သဘောတူညီမှု တောင်းခံခြင်းကို စာဖြင့် သို့မဟုတ် အီလက်ထရောနစ်နည်းဖြင့် ပြုလုပ်ရမည်။ ထိုင်းဥပဒေက လူတစ်ဦးကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ဖော်ထုတ်နိုင်သော ဒေတာကို ကိုယ်ရေးကိုယ်တာဒေတာအဖြစ် သတ်မှတ်သည်။",
+    "zh": "按泰国个人数据保护法，个人可随时撤回同意，征求同意须采用书面或电子方式。泰国法律把能直接或间接识别某人的数据视为个人数据。",
+    "de": "Nach dem thailändischen Datenschutzrecht kann eine Person die Einwilligung jederzeit widerrufen, und die Einwilligung muss schriftlich oder elektronisch eingeholt werden. Das thailändische Recht zählt Daten, die eine Person direkt oder indirekt identifizieren, zu den personenbezogenen Daten."
+   },
+   "src": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  },
+  {
+   "q": {
+    "en": "How long does copyright on an interview video last?",
+    "th": "ลิขสิทธิ์วิดีโอสัมภาษณ์คุ้มครองนานเท่าไร",
+    "my": "အင်တာဗျူးဗီဒီယိုတစ်ခု၏ မူပိုင်ခွင့်သည် ဘယ်လောက်ကြာ ခံသလဲ။",
+    "zh": "访谈视频的版权保护多久？",
+    "de": "Wie lange gilt das Urheberrecht an einem Interviewvideo?"
+   },
+   "a": {
+    "en": "In Thailand copyright in an audiovisual work lasts 50 years from creation or first publication. A transfer of copyright must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์ของงานโสตทัศนวัสดุคุ้มครอง 50 ปีนับจากสร้างสรรค์หรือเผยแพร่ครั้งแรก การโอนลิขสิทธิ์ต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် အသံနှင့်ရုပ်ပုံ လက်ရာ၏ မူပိုင်ခွင့်သည် ဖန်တီးသည့်နေ့ သို့မဟုတ် ပထမဆုံး ထုတ်ဝေသည့်နေ့မှ 50 နှစ် ခံသည်။ မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，视听作品的版权自创作或首次发表起保护 50 年。版权转让必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand gilt das Urheberrecht an einem audiovisuellen Werk 50 Jahre ab Entstehung oder Erstveröffentlichung. Eine Abtretung muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "video",
+  "subtitles",
+  "voice",
+  "translate",
+  "graphics",
+  "article"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Oral History Association: best practices",
+    "th": "สมาคมประวัติศาสตร์บอกเล่า: แนวปฏิบัติ",
+    "my": "Oral History Association - အကောင်းဆုံးအလေ့အထများ",
+    "zh": "口述历史协会：最佳实践",
+    "de": "Oral History Association: Best Practices"
+   },
+   "href": "https://oralhistory.org/best-practices"
+  },
+  {
+   "t": {
+    "en": "Linklaters: data protection in Thailand",
+    "th": "Linklaters: การคุ้มครองข้อมูลในไทย",
+    "my": "Linklaters - ထိုင်းနိုင်ငံ ဒေတာကာကွယ်ရေး",
+    "zh": "Linklaters：泰国的数据保护",
+    "de": "Linklaters: Datenschutz in Thailand"
+   },
+   "href": "https://www.linklaters.com/en/insights/data-protected/data-protected---thailand"
+  }
+ ],
+ "glyphs": [
+  "mic",
+  "camera",
+  "wai"
+ ]
+}

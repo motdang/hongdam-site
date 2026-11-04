@@ -1,0 +1,296 @@
+{
+ "id": "kh-books",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People who own a company in Cambodia want each month's income and costs recorded in Khmer for the tax office and in English for themselves.",
+  "th": "เจ้าของบริษัทในกัมพูชาอยากให้รายรับรายจ่ายรายเดือนบันทึกเป็นภาษาเขมรสำหรับสรรพากร และเป็นภาษาอังกฤษสำหรับตัวเอง",
+  "my": "ကမ္ဘောဒီးယားတွင် ကုမ္ပဏီပိုင်ဆိုင်သူများက လစဉ်ဝင်ငွေနှင့် ကုန်ကျစရိတ်ကို အခွန်ရုံးအတွက် ခမာဘာသာဖြင့်ရော မိမိအတွက် အင်္ဂလိပ်ဘာသာဖြင့်ပါ မှတ်တမ်းတင်စေလိုကြသည်။",
+  "zh": "在柬埔寨拥有公司的人，希望每月收支用高棉文记一份给税务部门，用英文记一份给自己看。",
+  "de": "Wer eine Firma in Kambodscha besitzt, möchte die monatlichen Einnahmen und Ausgaben auf Khmer für das Finanzamt und auf Englisch für sich selbst festgehalten haben."
+ },
+ "glyphs": [
+  "abacus",
+  "translate",
+  "earth"
+ ],
+ "steps": [
+  {
+   "db": "send",
+   "t": {
+    "en": "You send the month's receipts, invoices and bank lines.",
+    "th": "คุณส่งใบเสร็จ ใบแจ้งหนี้ และรายการเดินบัญชีของเดือน",
+    "my": "သင်က လအတွက် ပြေစာများ၊ ငွေတောင်းခံလွှာများနှင့် ဘဏ်စာရင်းမှတ်တမ်းများ ပို့သည်။",
+    "zh": "您把当月的收据、发票和银行流水发来。",
+    "de": "Sie schicken die Belege, Rechnungen und Bankzeilen des Monats."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Each month",
+    "th": "ทุกเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Jeden Monat"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "We record the month's income and costs in Khmer and English, up to 100 entries.",
+    "th": "บันทึกรายรับรายจ่ายของเดือนเป็นภาษาเขมรและอังกฤษ ไม่เกิน 100 รายการ",
+    "my": "လအတွက် ဝင်ငွေနှင့် ကုန်ကျစရိတ်ကို ခမာနှင့် အင်္ဂလိပ်ဘာသာဖြင့် စာရင်းသွင်းသည်၊ စာရင်း 100 ခုအထိ။",
+    "zh": "用高棉文和英文记录当月收支，最多 100 笔。",
+    "de": "Wir erfassen Einnahmen und Ausgaben des Monats auf Khmer und Englisch, bis zu 100 Buchungen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Each month",
+    "th": "ทุกเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Jeden Monat"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The books are ready for your accountant in Cambodia.",
+    "th": "บัญชีพร้อมส่งให้นักบัญชีของคุณในกัมพูชา",
+    "my": "စာရင်းများကို ကမ္ဘောဒီးယားရှိ သင့်စာရင်းကိုင်ထံ ပို့ရန် အဆင်သင့်ဖြစ်သည်။",
+    "zh": "账册备好，交给您在柬埔寨的会计。",
+    "de": "Die Bücher liegen für Ihren Buchhalter in Kambodscha bereit."
+   },
+   "who": {
+    "en": "Hongdam and your accountant",
+    "th": "หงส์ดำและนักบัญชีของคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင့်စာရင်းကိုင်",
+    "zh": "鸿丹和您的会计",
+    "de": "Hongdam und Ihr Buchhalter"
+   },
+   "time": {
+    "en": "After the month ends",
+    "th": "หลังจบเดือน",
+    "my": "လကုန်ပြီးနောက်",
+    "zh": "每月结束后",
+    "de": "Nach Monatsende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Emerhub's Cambodia page says accounts follow the Cambodian International Financial Reporting Standards (CIFRS), kept in Khmer and in riel.",
+    "th": "หน้ากัมพูชาของ Emerhub ระบุว่าบัญชีเป็นไปตามมาตรฐานการรายงานทางการเงินระหว่างประเทศของกัมพูชา (CIFRS) จัดทำเป็นภาษาเขมรและสกุลเงินเรียล",
+    "my": "Emerhub ၏ ကမ္ဘောဒီးယားစာမျက်နှာတွင် စာရင်းများသည် ကမ္ဘောဒီးယား နိုင်ငံတကာ ဘဏ္ဍာရေးအစီရင်ခံမှုစံနှုန်း (CIFRS) အတိုင်း ခမာဘာသာနှင့် ရီယဲလ်ငွေကြေးဖြင့် ထားရှိကြောင်း ဖော်ပြသည်။",
+    "zh": "Emerhub 的柬埔寨页面写道，账目依照柬埔寨国际财务报告准则（CIFRS）编制，用高棉文和瑞尔记账。",
+    "de": "Auf Emerhubs Kambodscha-Seite steht, die Buchführung folge den Cambodian International Financial Reporting Standards (CIFRS) und werde auf Khmer und in Riel geführt."
+   },
+   "src": "https://emerhub.com/cambodia/accounting/"
+  },
+  {
+   "t": {
+    "en": "PwC's Cambodia summary has monthly returns, such as withholding tax and the 1% prepayment of corporate income tax, filed by the 20th of the following month, moved to the next working day when the 20th falls on a weekend or public holiday.",
+    "th": "สรุปภาษีกัมพูชาของ PwC ระบุว่าแบบรายเดือน เช่น ภาษีหัก ณ ที่จ่ายและภาษีเงินได้นิติบุคคลชำระล่วงหน้า 1% ยื่นภายในวันที่ 20 ของเดือนถัดไป และเลื่อนเป็นวันทำการถัดไปเมื่อวันที่ 20 ตรงกับวันเสาร์อาทิตย์หรือวันหยุดราชการ",
+    "my": "PwC ၏ ကမ္ဘောဒီးယားအခွန်အကျဉ်းချုပ်တွင် ဖြတ်တောက်အခွန်နှင့် ကော်ပိုရိတ်ဝင်ငွေခွန် 1% ကြိုတင်ပေးချေမှုကဲ့သို့ လစဉ်ပြန်တမ်းများကို နောက်လ 20 ရက်နေ့တွင် တင်ပြရပြီး 20 ရက်နေ့သည် စနေ၊ တနင်္ဂနွေ သို့မဟုတ် အများပြည်သူ့အားလပ်ရက်ကျလျှင် နောက်လုပ်ငန်းဆောင်ရက်သို့ ရွှေ့သည်ဟု ဖော်ပြသည်။",
+    "zh": "普华永道的柬埔寨税务摘要写明，每月申报（如预扣税和 1% 的企业所得税预缴）在次月 20 日前提交，20 日遇周末或公共假日则顺延到下一个工作日。",
+    "de": "PwCs Kambodscha-Zusammenfassung nennt Monatserklärungen, etwa zur Quellensteuer und zur 1-%-Vorauszahlung der Körperschaftsteuer, bis zum 20. des Folgemonats, bei Wochenende oder Feiertag am nächsten Arbeitstag."
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/tax-administration"
+  },
+  {
+   "t": {
+    "en": "PwC's summary has the annual return for corporate income tax or minimum tax filed within three months of the tax year-end.",
+    "th": "สรุปของ PwC ระบุว่าแบบประจำปีของภาษีเงินได้นิติบุคคลหรือภาษีขั้นต่ำยื่นภายในสามเดือนหลังสิ้นปีภาษี",
+    "my": "PwC ၏ အကျဉ်းချုပ်တွင် ကော်ပိုရိတ်ဝင်ငွေခွန် သို့မဟုတ် အနည်းဆုံးအခွန်၏ နှစ်ပတ်လည်ပြန်တမ်းကို အခွန်နှစ်ကုန်ပြီး သုံးလအတွင်း တင်ပြရသည်ဟု ဖော်ပြသည်။",
+    "zh": "普华永道的摘要写明，企业所得税或最低税的年度申报在纳税年度结束后三个月内提交。",
+    "de": "PwCs Zusammenfassung nennt die Jahreserklärung für Körperschaftsteuer oder Mindeststeuer binnen drei Monaten nach Ende des Steuerjahres."
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/tax-administration"
+  },
+  {
+   "t": {
+    "en": "Cambodia's minimum tax of 1% of annual turnover no longer applies to enterprises that maintain proper accounting records from 1 January 2017, under the Law on Financial Management 2017, according to PwC.",
+    "th": "ภาษีขั้นต่ำของกัมพูชา 1% ของรายได้ประจำปีไม่ใช้กับกิจการที่เก็บบันทึกบัญชีที่เหมาะสมตั้งแต่ 1 มกราคม 2560 ตามกฎหมายการจัดการการเงิน พ.ศ. 2560 ตามที่ PwC ระบุ",
+    "my": "PwC ၏ အဆိုအရ ကမ္ဘောဒီးယား၏ နှစ်စဉ်ရောင်းအား 1% အနည်းဆုံးအခွန်ကို 2017 ဘဏ္ဍာရေးစီမံခန့်ခွဲမှုဥပဒေအရ 2017 ဇန်နဝါရီ 1 မှစ၍ သင့်လျော်သော စာရင်းမှတ်တမ်းများ ထားရှိသည့် လုပ်ငန်းများအတွက် မသက်ဆိုင်တော့ပါ။",
+    "zh": "据普华永道称，依 2017 年《财政管理法》，柬埔寨按年营业额 1% 计的最低税，自 2017 年 1 月 1 日起不再适用于保有规范会计记录的企业。",
+    "de": "Laut PwC gilt Kambodschas Mindeststeuer von 1 % des Jahresumsatzes nach dem Gesetz über das Finanzmanagement von 2017 seit dem 1. Januar 2017 nicht mehr für Unternehmen, die ordnungsgemässe Buchführungsunterlagen führen."
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/taxes-on-corporate-income"
+  },
+  {
+   "t": {
+    "en": "Emerhub's page says a nil return is required even in a month with no activity.",
+    "th": "หน้าของ Emerhub ระบุว่าต้องยื่นแบบศูนย์แม้ในเดือนที่ไม่มีกิจกรรม",
+    "my": "Emerhub ၏ စာမျက်နှာတွင် လှုပ်ရှားမှုမရှိသောလတွင်ပင် သုညပြန်တမ်း (nil return) တင်ရန် လိုအပ်သည်ဟု ဖော်ပြသည်။",
+    "zh": "Emerhub 的页面写明，即使当月没有业务，也要提交零申报表。",
+    "de": "Auf Emerhubs Seite steht, dass auch in einem Monat ohne Geschäftstätigkeit eine Nullmeldung nötig ist."
+   },
+   "src": "https://emerhub.com/cambodia/accounting/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "VAT in Cambodia",
+    "th": "ภาษีมูลค่าเพิ่มในกัมพูชา",
+    "my": "ကမ္ဘောဒီးယားရှိ VAT",
+    "zh": "柬埔寨增值税",
+    "de": "Mehrwertsteuer in Kambodscha"
+   },
+   "p": {
+    "en": "10% on most goods and services; exports are zero-rated",
+    "th": "10% ของสินค้าและบริการส่วนใหญ่ การส่งออกอัตราศูนย์",
+    "my": "ကုန်ပစ္စည်းနှင့် ဝန်ဆောင်မှု အများစုအပေါ် 10%၊ ပို့ကုန်များ သုည",
+    "zh": "大多数商品和服务 10%；出口零税率",
+    "de": "10 % auf die meisten Waren und Dienstleistungen; Exporte mit Nullsatz"
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/other-taxes"
+  },
+  {
+   "t": {
+    "en": "Corporate income tax in Cambodia (formerly tax on profit)",
+    "th": "ภาษีเงินได้นิติบุคคลในกัมพูชา (เดิมเรียกภาษีกำไร)",
+    "my": "ကမ္ဘောဒီးယားရှိ ကော်ပိုရိတ်ဝင်ငွေခွန် (အရင်က အမြတ်ခွန်)",
+    "zh": "柬埔寨企业所得税（原称利润税）",
+    "de": "Körperschaftsteuer in Kambodscha (früher Gewinnsteuer)"
+   },
+   "p": {
+    "en": "20% for medium and large taxpayers; 0% to 20% progressive for small ones",
+    "th": "20% สำหรับผู้เสียภาษีขนาดกลางและใหญ่ ขั้นบันได 0% ถึง 20% สำหรับขนาดเล็ก",
+    "my": "အလတ်စားနှင့် အကြီးစား အခွန်ထမ်း 20%၊ အသေးစား 0% မှ 20% အထိ တိုးနှုန်း",
+    "zh": "中型和大型纳税人 20%；小型纳税人 0% 至 20% 累进",
+    "de": "20 % für mittlere und grosse Steuerpflichtige; 0 % bis 20 % progressiv für kleine"
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/taxes-on-corporate-income"
+  },
+  {
+   "t": {
+    "en": "A Phnom Penh company-setup package (UnionSPACE): incorporation, a registered office address and one year of monthly accounting and tax filing",
+    "th": "แพ็กเกจจัดตั้งบริษัทในพนมเปญ (UnionSPACE): จดทะเบียน ที่อยู่สำนักงาน และบริการทำบัญชีและยื่นภาษีรายเดือนหนึ่งปี",
+    "my": "ဖနွမ်းပင်ရှိ ကုမ္ပဏီဖွဲ့စည်းမှုပက်ကေ့ချ် (UnionSPACE) - မှတ်ပုံတင်ခြင်း၊ မှတ်ပုံတင်ရုံးလိပ်စာနှင့် တစ်နှစ်စာ လစဉ်စာရင်းကိုင်နှင့် အခွန်တင်သွင်းမှု",
+    "zh": "金边公司设立套餐（UnionSPACE）：注册成立、注册办公地址，以及一年的月度记账和报税",
+    "de": "Ein Gründungspaket in Phnom Penh (UnionSPACE): Eintragung, eine Geschäftsadresse und ein Jahr monatliche Buchhaltung und Steuermeldung"
+   },
+   "p": {
+    "en": "US$13,050 in all",
+    "th": "US$13,050 รวมทั้งหมด",
+    "my": "စုစုပေါင်း US$13,050",
+    "zh": "合计 US$13,050",
+    "de": "US$13,050 insgesamt"
+   },
+   "src": "https://unionspace.co.th/ASEAN-Business-Gateway/company-registration-cambodia.php"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Which accounting standards does a Cambodian company use?",
+    "th": "บริษัทในกัมพูชาใช้มาตรฐานบัญชีอะไร",
+    "my": "ကမ္ဘောဒီးယားကုမ္ပဏီတစ်ခုက မည်သည့်စာရင်းကိုင်စံနှုန်းကို သုံးသနည်း",
+    "zh": "柬埔寨公司使用什么会计准则？",
+    "de": "Welche Rechnungslegungsstandards nutzt eine kambodschanische Firma?"
+   },
+   "a": {
+    "en": "Emerhub's page names the Cambodian International Financial Reporting Standards (CIFRS), with accounts kept in Khmer and in riel. It adds that US dollars are widely used in daily business.",
+    "th": "หน้าของ Emerhub ระบุมาตรฐานการรายงานทางการเงินระหว่างประเทศของกัมพูชา (CIFRS) โดยจัดทำบัญชีเป็นภาษาเขมรและสกุลเงินเรียล และเสริมว่าดอลลาร์สหรัฐใช้กันแพร่หลายในการค้าขายประจำวัน",
+    "my": "Emerhub ၏ စာမျက်နှာတွင် ကမ္ဘောဒီးယား နိုင်ငံတကာ ဘဏ္ဍာရေးအစီရင်ခံမှုစံနှုန်း (CIFRS) ကို ဖော်ပြပြီး စာရင်းများကို ခမာဘာသာနှင့် ရီယဲလ်ငွေကြေးဖြင့် ထားရှိသည်။ နေ့စဉ်စီးပွားရေးတွင် အမေရိကန်ဒေါ်လာကို တွင်ကျယ်စွာ သုံးကြောင်း ထပ်ဆိုသည်။",
+    "zh": "Emerhub 的页面点明柬埔寨国际财务报告准则（CIFRS），账目用高棉文和瑞尔记账。页面补充说，日常经营中美元被广泛使用。",
+    "de": "Emerhubs Seite nennt die Cambodian International Financial Reporting Standards (CIFRS), die Bücher werden auf Khmer und in Riel geführt. Sie fügt an, dass im Alltagsgeschäft weithin US-Dollar verwendet werden."
+   },
+   "src": "https://emerhub.com/cambodia/accounting/"
+  },
+  {
+   "q": {
+    "en": "When are tax returns due in Cambodia?",
+    "th": "ต้องยื่นแบบภาษีในกัมพูชาเมื่อไร",
+    "my": "ကမ္ဘောဒီးယားတွင် အခွန်ပြန်တမ်းများကို ဘယ်အချိန် တင်ရသနည်း",
+    "zh": "在柬埔寨，税务申报的截止日是什么时候？",
+    "de": "Wann sind Steuererklärungen in Kambodscha fällig?"
+   },
+   "a": {
+    "en": "PwC's summary has monthly returns filed by the 20th of the following month, moved to the next working day when the 20th falls on a weekend or public holiday. The annual return is filed within three months of the tax year-end.",
+    "th": "สรุปของ PwC ระบุว่าแบบรายเดือนยื่นภายในวันที่ 20 ของเดือนถัดไป และเลื่อนเป็นวันทำการถัดไปเมื่อวันที่ 20 ตรงกับวันเสาร์อาทิตย์หรือวันหยุดราชการ แบบประจำปียื่นภายในสามเดือนหลังสิ้นปีภาษี",
+    "my": "PwC ၏ အကျဉ်းချုပ်တွင် လစဉ်ပြန်တမ်းများကို နောက်လ 20 ရက်နေ့တွင် တင်ပြရပြီး 20 ရက်နေ့သည် စနေ၊ တနင်္ဂနွေ သို့မဟုတ် အများပြည်သူ့အားလပ်ရက်ကျလျှင် နောက်လုပ်ငန်းဆောင်ရက်သို့ ရွှေ့သည်။ နှစ်ပတ်လည်ပြန်တမ်းကို အခွန်နှစ်ကုန်ပြီး သုံးလအတွင်း တင်ပြသည်။",
+    "zh": "普华永道的摘要写明：月度申报在次月 20 日前提交，20 日遇周末或公共假日则顺延到下一个工作日；年度申报在纳税年度结束后三个月内提交。",
+    "de": "PwCs Zusammenfassung nennt Monatserklärungen bis zum 20. des Folgemonats, bei Wochenende oder Feiertag am nächsten Arbeitstag. Die Jahreserklärung folgt binnen drei Monaten nach Ende des Steuerjahres."
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/tax-administration"
+  },
+  {
+   "q": {
+    "en": "Does a Cambodian company need an audit?",
+    "th": "บริษัทในกัมพูชาต้องตรวจสอบบัญชีไหม",
+    "my": "ကမ္ဘောဒီးယားကုမ္ပဏီတစ်ခုသည် စာရင်းစစ်ခံရန် လိုသလား",
+    "zh": "柬埔寨公司需要审计吗？",
+    "de": "Braucht eine kambodschanische Firma eine Prüfung?"
+   },
+   "a": {
+    "en": "Emerhub says an audit is mandatory for qualified investment projects and public enterprises. Other companies need one when they meet two of three tests: turnover above 4 billion riel, assets above 3 billion riel, or more than 100 employees.",
+    "th": "Emerhub ระบุว่าโครงการลงทุนที่ได้รับสิทธิและรัฐวิสาหกิจต้องตรวจสอบบัญชี บริษัทอื่นต้องตรวจสอบเมื่อเข้าเกณฑ์สองในสามข้อ คือรายได้เกิน 4 พันล้านเรียล สินทรัพย์เกิน 3 พันล้านเรียล หรือมีพนักงานเกิน 100 คน",
+    "my": "Emerhub က အရည်အချင်းပြည့်မီသော ရင်းနှီးမြှုပ်နှံမှုစီမံကိန်းများနှင့် အများပိုင်လုပ်ငန်းများအတွက် စာရင်းစစ်ခြင်း မဖြစ်မနေလိုအပ်သည်ဟု ဆိုသည်။ အခြားကုမ္ပဏီများသည် စံနှုန်းသုံးခုအနက် နှစ်ခုနှင့် ကိုက်ညီလျှင် လိုအပ်သည် - ရောင်းအား ရီယဲ 4 ဘီလီယံကျော်၊ ပိုင်ဆိုင်မှု ရီယဲ 3 ဘီလီယံကျော်၊ သို့မဟုတ် ဝန်ထမ်း 100 ဦးကျော်။",
+    "zh": "Emerhub 称，合格投资项目和公共企业必须审计。其他公司在三项标准中满足两项时需要审计：营业额超过 40 亿瑞尔、资产超过 30 亿瑞尔，或员工超过 100 人。",
+    "de": "Emerhub sagt, eine Prüfung sei für qualifizierte Investitionsprojekte und öffentliche Unternehmen Pflicht. Andere Firmen brauchen sie, wenn zwei von drei Kriterien zutreffen: Umsatz über 4 Milliarden Riel, Vermögen über 3 Milliarden Riel oder mehr als 100 Mitarbeitende."
+   },
+   "src": "https://emerhub.com/cambodia/accounting/"
+  },
+  {
+   "q": {
+    "en": "What happens without proper accounting records in Cambodia?",
+    "th": "ถ้าไม่มีบันทึกบัญชีที่เหมาะสมในกัมพูชาจะเป็นอย่างไร",
+    "my": "ကမ္ဘောဒီးယားတွင် သင့်လျော်သော စာရင်းမှတ်တမ်း မရှိလျှင် ဘာဖြစ်သနည်း",
+    "zh": "在柬埔寨没有规范会计记录会怎样？",
+    "de": "Was geschieht in Kambodscha ohne ordnungsgemässe Buchführung?"
+   },
+   "a": {
+    "en": "PwC's summary describes a minimum tax of 1% of annual turnover, separate from corporate income tax. It says the tax no longer applies to enterprises that maintain proper accounting records from 1 January 2017, and notes that the law gives no definition of proper accounting records.",
+    "th": "สรุปของ PwC อธิบายภาษีขั้นต่ำ 1% ของรายได้ประจำปี แยกจากภาษีเงินได้นิติบุคคล และระบุว่าภาษีนี้ไม่ใช้กับกิจการที่เก็บบันทึกบัญชีที่เหมาะสมตั้งแต่ 1 มกราคม 2560 พร้อมหมายเหตุว่ากฎหมายยังไม่ให้คำนิยามของบันทึกบัญชีที่เหมาะสม",
+    "my": "PwC ၏ အကျဉ်းချုပ်က ကော်ပိုရိတ်ဝင်ငွေခွန်နှင့် သီးခြားဖြစ်သော နှစ်စဉ်ရောင်းအား 1% အနည်းဆုံးအခွန်ကို ဖော်ပြသည်။ 2017 ဇန်နဝါရီ 1 မှစ၍ သင့်လျော်သော စာရင်းမှတ်တမ်းများ ထားရှိသည့် လုပ်ငန်းများအတွက် ဤအခွန်မသက်ဆိုင်တော့ဟု ဆိုပြီး သင့်လျော်သော စာရင်းမှတ်တမ်းကို ဥပဒေက အဓိပ္ပာယ်ဖွင့်ဆိုမထားကြောင်း မှတ်ချက်ပြုသည်။",
+    "zh": "普华永道的摘要介绍了一项按年营业额 1% 计的最低税，与企业所得税分开。摘要称，自 2017 年 1 月 1 日起，该税不再适用于保有规范会计记录的企业，并注明法律没有给“规范会计记录”下定义。",
+    "de": "PwCs Zusammenfassung beschreibt eine Mindeststeuer von 1 % des Jahresumsatzes, getrennt von der Körperschaftsteuer. Sie gilt seit dem 1. Januar 2017 nicht mehr für Unternehmen, die ordnungsgemässe Buchführungsunterlagen führen, und PwC vermerkt, dass das Gesetz keine Definition dafür gibt."
+   },
+   "src": "https://taxsummaries.pwc.com/cambodia/corporate/taxes-on-corporate-income"
+  }
+ ],
+ "related": [
+  "books",
+  "staff-papers",
+  "payouts",
+  "assistant",
+  "translate",
+  "typing"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "PwC: tax administration in Cambodia",
+    "th": "PwC: การบริหารภาษีในกัมพูชา",
+    "my": "PwC - ကမ္ဘောဒီးယားရှိ အခွန်စီမံခန့်ခွဲမှု",
+    "zh": "普华永道：柬埔寨税务管理",
+    "de": "PwC: Steuerverwaltung in Kambodscha"
+   },
+   "href": "https://taxsummaries.pwc.com/cambodia/corporate/tax-administration"
+  },
+  {
+   "t": {
+    "en": "Emerhub: accounting in Cambodia",
+    "th": "Emerhub: การบัญชีในกัมพูชา",
+    "my": "Emerhub - ကမ္ဘောဒီးယားရှိ စာရင်းကိုင်",
+    "zh": "Emerhub：柬埔寨会计",
+    "de": "Emerhub: Buchhaltung in Kambodscha"
+   },
+   "href": "https://emerhub.com/cambodia/accounting/"
+  }
+ ]
+}

@@ -1,0 +1,782 @@
+{
+ "id": "stay-check",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "The paper that comes with land in Thailand records one of three things: ownership, a right of possession, or a permit to use the land. The land office charges its 2% transfer fee on an assessed price, a second number next to the asking price.",
+  "th": "เอกสารที่มากับที่ดินในไทยบันทึกสิ่งใดสิ่งหนึ่งในสามอย่าง คือ กรรมสิทธิ์ สิทธิครอบครอง หรือใบอนุญาตให้ใช้ที่ดิน สำนักงานที่ดินเก็บค่าธรรมเนียมการโอน 2% จากราคาประเมิน ซึ่งเป็นตัวเลขอีกตัวที่วางเทียบกับราคาที่ขอขาย",
+  "my": "ထိုင်းနိုင်ငံတွင် မြေနှင့်အတူပါလာသော စာရွက်စာတမ်းသည် ပိုင်ဆိုင်မှု၊ ကိုင်စွဲခွင့် သို့မဟုတ် မြေကို အသုံးပြုခွင့်ပါမစ် ဟူသော အရာသုံးမျိုးအနက် တစ်မျိုးကို မှတ်တမ်းတင်ထားသည်။ မြေရုံးသည် လွှဲပြောင်းခ 2% ကို အကဲဖြတ်တန်ဖိုးပေါ်တွင် ကောက်ခံပြီး ၎င်းသည် တောင်းဆိုထားသော စျေးနှုန်းဘေးတွင် ထားရမည့် ဒုတိယ ကိန်းဂဏန်း ဖြစ်သည်။",
+  "zh": "泰国土地附带的文件，记录的是三种情形之一：所有权、占有权，或土地使用许可。土地局按评估价收取 2% 的过户费，评估价是与要价并排的另一个数字。",
+  "de": "Das Papier, das in Thailand zu einem Grundstück gehört, hält eines von dreien fest: Eigentum, ein Besitzrecht oder eine Erlaubnis, das Land zu nutzen. Das Landamt erhebt seine Übertragungsgebühr von 2% auf den Schätzwert, eine zweite Zahl neben dem Angebotspreis."
+ },
+ "n": {
+  "de": "Haus oder Grundstück vor dem Kauf geprüft"
+ },
+ "l": {
+  "de": "Auszug vom Landamt, Preis im Vergleich zum Wert, ein schriftlicher Bericht."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "The land office record for the plot is read",
+    "th": "อ่านข้อมูลของแปลงที่ดินที่สำนักงานที่ดิน",
+    "my": "မြေကွက်အတွက် မြေရုံးမှတ်တမ်းကို ဖတ်ရှုခြင်း",
+    "zh": "查阅该地块在土地局的记录",
+    "de": "Der Eintrag des Grundstücks beim Landamt wird gelesen"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The assessed price is set against the asking price",
+    "th": "นำราคาประเมินมาเทียบกับราคาที่ขอขาย",
+    "my": "အကဲဖြတ်စျေးကို တောင်းဆိုထားသော စျေးနှင့် နှိုင်းယှဉ်ခြင်း",
+    "zh": "把评估价与要价对比",
+    "de": "Der Schätzwert wird dem Angebotspreis gegenübergestellt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the record",
+    "th": "หลังอ่านข้อมูลที่ดิน",
+    "my": "မှတ်တမ်းဖတ်ပြီးနောက်",
+    "zh": "查阅记录之后",
+    "de": "Nach dem Eintrag"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "The street and the neighbours are looked at",
+    "th": "ดูถนนและเพื่อนบ้าน",
+    "my": "လမ်းနှင့် အိမ်နီးချင်းများကို ကြည့်ရှုခြင်း",
+    "zh": "查看街道和邻居",
+    "de": "Strasse und Nachbarn werden angeschaut"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "随后",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "What was found goes into a written report",
+    "th": "สิ่งที่พบรวมไว้ในรายงานเป็นลายลักษณ์อักษร",
+    "my": "တွေ့ရှိချက်များကို စာဖြင့်ရေးသော အစီရင်ခံစာအဖြစ် ပြုစုခြင်း",
+    "zh": "调查所得写入书面报告",
+    "de": "Das Ergebnis kommt in einen schriftlichen Bericht"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "A lawyer's title check is a separate job",
+    "th": "การตรวจโฉนดโดยทนายเป็นงานแยกต่างหาก",
+    "my": "ရှေ့နေ၏ မြေပိုင်ဆိုင်မှု စစ်ဆေးခြင်းသည် သီးခြားအလုပ်တစ်ခု ဖြစ်သည်",
+    "zh": "律师的产权核查是另一项单独的工作",
+    "de": "Die Eigentumsprüfung durch einen Anwalt ist ein eigener Auftrag"
+   },
+   "who": {
+    "en": "A lawyer",
+    "th": "ทนายความ",
+    "my": "ရှေ့နေ",
+    "zh": "律师",
+    "de": "Ein Anwalt"
+   },
+   "time": {
+    "en": "Separate",
+    "th": "แยกต่างหาก",
+    "my": "သီးခြား",
+    "zh": "另行",
+    "de": "Getrennt"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "2%",
+   "t": {
+    "en": "Transfer fee at the land office, charged on the appraised value",
+    "th": "ค่าธรรมเนียมโอนที่สำนักงานที่ดิน คิดจากราคาประเมิน",
+    "my": "မြေရုံးတွင် လွှဲပြောင်းခ၊ အကဲဖြတ်တန်ဖိုးပေါ်တွင် ကောက်ခံသည်",
+    "zh": "土地局过户费，按评估价计收",
+    "de": "Übertragungsgebühr beim Landamt, berechnet auf den Schätzwert"
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "n": "3.3%",
+   "t": {
+    "en": "Specific business tax on a sale within 5 years of acquiring the property, on the higher of appraised value and sale price",
+    "th": "ภาษีธุรกิจเฉพาะเมื่อขายภายใน 5 ปีนับจากวันได้มา คิดจากราคาประเมินหรือราคาขาย แล้วแต่ราคาใดสูงกว่า",
+    "my": "ပိုင်ဆိုင်သည့်နေ့မှ 5 နှစ်အတွင်း ရောင်းချလျှင် အထူးလုပ်ငန်းခွန်၊ အကဲဖြတ်တန်ဖိုး သို့မဟုတ် ရောင်းစျေးထဲမှ ပိုမြင့်သည့်ပေါ်တွင်",
+    "zh": "取得后 5 年内出售的特定营业税，按评估价与成交价中较高者计算",
+    "de": "Spezielle Gewerbesteuer bei einem Verkauf innerhalb von 5 Jahren nach dem Erwerb, auf den höheren von Schätzwert und Verkaufspreis"
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "n": "49%",
+   "t": {
+    "en": "Largest share of a condominium building's unit area that foreigners may hold together",
+    "th": "สัดส่วนสูงสุดของพื้นที่ห้องชุดในอาคารที่คนต่างด้าวถือรวมกันได้",
+    "my": "ကွန်ဒိုအဆောက်အအုံတစ်ခု၏ အခန်းဧရိယာတွင် နိုင်ငံခြားသားများ ပေါင်းစပ်၍ ပိုင်ဆိုင်နိုင်သည့် အမြင့်ဆုံးအချိုး",
+    "zh": "外国人合计可持有的公寓楼单元面积上限",
+    "de": "Höchster Anteil an der Fläche der Einheiten eines Gebäudes, den Ausländer zusammen halten dürfen"
+   },
+   "src": "https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf"
+  }
+ ],
+ "toy": {
+  "kind": "picker",
+  "h": {
+   "en": "Which paper does the land have?",
+   "th": "ที่ดินแปลงนี้ถือเอกสารอะไร",
+   "my": "ဤမြေတွင် မည်သည့်စာရွက်စာတမ်း ပါသနည်း",
+   "zh": "这块地持有哪种文件？",
+   "de": "Welches Papier hat das Land?"
+  },
+  "noscript": {
+   "en": "The picker needs JavaScript. The fees, taxes and rules that apply to a sale are listed below.",
+   "th": "ตัวเลือกเอกสารต้องใช้ JavaScript ค่าธรรมเนียม ภาษี และกฎที่ใช้กับการขายแสดงไว้ด้านล่าง",
+   "my": "ရွေးချယ်ကိရိယာသည် JavaScript လိုအပ်သည်။ ရောင်းချမှုတွင် သက်ဆိုင်သည့် ကြေး၊ ခွန်နှင့် စည်းမျဉ်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "文件选择器需要 JavaScript。适用于买卖的费用、税项和规则列在下方。",
+   "de": "Die Auswahl braucht JavaScript. Die Gebühren, Steuern und Regeln für einen Verkauf stehen weiter unten."
+  },
+  "data": {
+   "q": {
+    "en": "Choose a paper to see what it records",
+    "th": "เลือกเอกสารเพื่อดูว่าบันทึกอะไร",
+    "my": "စာရွက်စာတမ်းတစ်ခုကို ရွေး၍ ၎င်းမှတ်တမ်းတင်ထားသည်ကို ကြည့်ပါ",
+    "zh": "选一种文件，看它记录了什么",
+    "de": "Wählen Sie ein Papier und sehen Sie, was es festhält"
+   },
+   "options": [
+    {
+     "id": "chanote",
+     "n": {
+      "en": "Chanote (Nor Sor 4 Jor)",
+      "th": "โฉนดที่ดิน (น.ส.4 จ.)",
+      "my": "Chanote (Nor Sor 4 Jor, โฉนดที่ดิน)",
+      "zh": "Chanote 地契（Nor Sor 4 Jor）",
+      "de": "Chanote (Nor Sor 4 Jor)"
+     },
+     "big": {
+      "en": "โฉนดที่ดิน",
+      "th": "โฉนดที่ดิน",
+      "my": "โฉนดที่ดิน",
+      "zh": "โฉนดที่ดิน",
+      "de": "โฉนดที่ดิน"
+     },
+     "t": {
+      "en": "The chanote is the Department of Lands' document of ownership. The Department calls its holder the holder of ownership (กรรมสิทธิ์), and co-owners are named together on one chanote. It carries a map and an area.",
+      "th": "โฉนดที่ดินคือเอกสารแสดงกรรมสิทธิ์ของกรมที่ดิน กรมที่ดินเรียกผู้ถือโฉนดว่าผู้ถือกรรมสิทธิ์ และผู้ถือกรรมสิทธิ์รวมระบุชื่อไว้ในโฉนดฉบับเดียวกัน โฉนดมีรูปแผนที่และเนื้อที่",
+      "my": "Chanote သည် မြေယာဦးစီးဌာန၏ ပိုင်ဆိုင်မှုပြ စာရွက်စာတမ်း ဖြစ်သည်။ ဌာနသည် ၎င်းကိုင်ဆောင်သူကို ပိုင်ဆိုင်မှု (กรรมสิทธิ์) ကိုင်ဆောင်သူဟု ခေါ်ပြီး ပူးတွဲပိုင်ရှင်များကို Chanote တစ်စောင်တည်းတွင် အမည်တွဲဖော်ပြသည်။ ၎င်းတွင် မြေပုံနှင့် ဧရိယာ ပါဝင်သည်။",
+      "zh": "地契（Chanote）是土地厅出具的所有权文件。土地厅称其持有人为所有权持有人（กรรมสิทธิ์），共有人的名字一并写在同一份地契上。地契载有地图和面积。",
+      "de": "Die Chanote ist die Eigentumsurkunde des Department of Lands. Das Department nennt ihren Inhaber den Inhaber des Eigentums (กรรมสิทธิ์); Miteigentümer stehen gemeinsam auf einer Chanote. Sie enthält eine Karte und eine Fläche."
+     },
+     "facts": [
+      {
+       "en": "The Department corrects the map or area on a chanote only when the neighbours have certified the boundary, or when the steps of section 69 bis for a neighbour who cannot be reached or does not sign have run.",
+       "th": "กรมที่ดินแก้ไขรูปแผนที่หรือเนื้อที่ในโฉนดได้ต่อเมื่อผู้มีสิทธิในที่ดินข้างเคียงรับรองแนวเขตแล้ว หรือได้ดำเนินการตามมาตรา 69 ทวิ ในกรณีที่ติดต่อผู้ข้างเคียงไม่ได้หรือผู้ข้างเคียงไม่ลงชื่อ",
+       "my": "ဌာနသည် Chanote ပါ မြေပုံ သို့မဟုတ် ဧရိယာကို ပြင်ဆင်ရာတွင် ကပ်လျက်မြေပိုင်ရှင်များက နယ်နိမိတ်ကို အသိအမှတ်ပြုပြီးမှသာ၊ သို့မဟုတ် ဆက်သွယ်၍မရသော သို့မဟုတ် လက်မှတ်မထိုးသော ကပ်လျက်ပိုင်ရှင်အတွက် ပုဒ်မ 69 bis ပါ အဆင့်များ ပြီးဆုံးမှသာ ပြုလုပ်သည်။",
+       "zh": "只有在邻地权利人确认了界线，或针对联系不上或不签字的邻居已走完第 69 条之二规定的程序后，土地厅才会更正地契上的地图或面积。",
+       "de": "Das Department berichtigt Karte oder Fläche auf einer Chanote nur, wenn die Nachbarn die Grenze bestätigt haben oder die Schritte nach Section 69 bis für einen Nachbarn, der nicht erreichbar ist oder nicht unterschreibt, durchlaufen sind."
+      },
+      {
+       "en": "A chanote issued in place of an NS3 ก. takes full legal effect (มีผลสมบูรณ์ตามกฎหมาย), and the NS3 ก. is cancelled.",
+       "th": "โฉนดที่ดินที่ออกแทน น.ส.3 ก. มีผลสมบูรณ์ตามกฎหมาย และ น.ส.3 ก. เดิมเป็นอันยกเลิก",
+       "my": "น.ส.3 ก. အစား ထုတ်ပေးသော Chanote သည် ဥပဒေအရ အပြည့်အဝ အကျိုးသက်ရောက်ပြီး (มีผลสมบูรณ์ตามกฎหมาย) မူလ น.ส.3 ก. ကို ပယ်ဖျက်သည်။",
+       "zh": "取代 น.ส.3 ก. 签发的地契具有完全法律效力（มีผลสมบูรณ์ตามกฎหมาย），原来的 น.ส.3 ก. 即被注销。",
+       "de": "Eine Chanote, die an die Stelle eines NS3 ก. tritt, hat volle Rechtswirkung (มีผลสมบูรณ์ตามกฎหมาย); das NS3 ก. wird aufgehoben."
+      }
+     ],
+     "src": "https://www.dol.go.th/media/813280899755020288/2026/01/CJdqE2utHbaThxipkzZXeKYy.pdf"
+    },
+    {
+     "id": "ns3k",
+     "n": {
+      "en": "Nor Sor 3 Gor (NS3 ก.)",
+      "th": "หนังสือรับรองการทำประโยชน์ (น.ส.3 ก.)",
+      "my": "Nor Sor 3 Gor (น.ส.3 ก.)",
+      "zh": "Nor Sor 3 Gor（น.ส.3 ก.）",
+      "de": "Nor Sor 3 Gor (น.ส.3 ก.)"
+     },
+     "big": {
+      "en": "น.ส.3 ก.",
+      "th": "น.ส.3 ก.",
+      "my": "น.ส.3 ก.",
+      "zh": "น.ส.3 ก.",
+      "de": "น.ส.3 ก."
+     },
+     "t": {
+      "en": "The NS3 ก. is a certificate of utilization (หนังสือรับรองการทำประโยชน์). The Department's answers call its holder the holder of a possession right (สิทธิครอบครอง), not of ownership. Its plot is drawn on an aerial photograph sheet.",
+      "th": "น.ส.3 ก. เป็นหนังสือรับรองการทำประโยชน์ คำตอบของกรมที่ดินเรียกผู้ถือว่าผู้ถือสิทธิครอบครอง ไม่ใช่ผู้ถือกรรมสิทธิ์ แปลงที่ดินปรากฏบนระวางรูปถ่ายทางอากาศ",
+      "my": "น.ส.3 ก. သည် အသုံးချမှု အသိအမှတ်ပြုလက်မှတ် (หนังสือรับรองการทำประโยชน์) ဖြစ်သည်။ ဌာန၏ အဖြေများက ၎င်းကိုင်ဆောင်သူကို ပိုင်ဆိုင်မှုကိုင်ဆောင်သူမဟုတ်ဘဲ ကိုင်စွဲခွင့် (สิทธิครอบครอง) ကိုင်ဆောင်သူဟု ခေါ်သည်။ မြေကွက်ကို လေကြောင်းဓာတ်ပုံ မြေပုံစာရွက်ပေါ်တွင် ရေးဆွဲထားသည်။",
+      "zh": "น.ส.3 ก. 是土地使用证明书（หนังสือรับรองการทำประโยชน์）。土地厅的答复称其持有人为占有权（สิทธิครอบครอง）持有人，而非所有权持有人。地块绘在航空照片图幅上。",
+      "de": "Das NS3 ก. ist eine Nutzungsbescheinigung (หนังสือรับรองการทำประโยชน์). In den Antworten des Department heisst sein Inhaber Inhaber eines Besitzrechts (สิทธิครอบครอง), nicht des Eigentums. Das Grundstück ist auf einem Luftbildblatt eingezeichnet."
+     },
+     "facts": [
+      {
+       "en": "A lost NS3 ก. is remade from the aerial photograph sheet, with no new survey on the ground.",
+       "th": "น.ส.3 ก. ที่สูญหายจัดทำขึ้นใหม่จากระวางรูปถ่ายทางอากาศ โดยไม่ต้องรังวัดใหม่ในพื้นที่",
+       "my": "ပျောက်ဆုံးသွားသော น.ส.3 ก. ကို လေကြောင်းဓာတ်ပုံမြေပုံစာရွက်မှ ပြန်လည်ပြုလုပ်ပြီး မြေပြင်တွင် စစ်တမ်းအသစ် မတိုင်းတာရပါ။",
+       "zh": "遗失的 น.ส.3 ก. 依据航空照片图幅重新制作，无需在现场重新测量。",
+       "de": "Ein verlorenes NS3 ก. wird anhand des Luftbildblatts neu erstellt, ohne neue Vermessung vor Ort."
+      },
+      {
+       "en": "Under section 58 ter of the Land Code the Department moves an NS3 ก. plot onto the UTM aerial photograph map sheets and issues a chanote to the person who holds the right in it.",
+       "th": "ตามมาตรา 58 ตรี แห่งประมวลกฎหมายที่ดิน กรมที่ดินย้ายรูปแปลง น.ส.3 ก. ลงในระวางแผนที่รูปถ่ายทางอากาศระบบพิกัดฉาก ยู ที เอ็ม และออกโฉนดที่ดินให้ผู้มีสิทธิใน น.ส.3 ก. นั้น",
+       "my": "မြေကုဒ် ပုဒ်မ 58 ter အရ ဌာနသည် น.ส.3 ก. မြေကွက်ကို UTM လေကြောင်းဓာတ်ပုံ မြေပုံစာရွက်များပေါ်သို့ ရွှေ့ပြီး ထိုစာရွက်ပါ အခွင့်အရေးကိုင်ဆောင်သူထံ Chanote ထုတ်ပေးသည်။",
+       "zh": "依《土地法典》第 58 条之三，土地厅把 น.ส.3 ก. 地块移到 UTM 航空照片图幅上，并向持有该权利的人签发地契。",
+       "de": "Nach Section 58 ter des Land Code überträgt das Department ein NS3-ก.-Grundstück auf die UTM-Luftbildkartenblätter und stellt der Person, die das Recht daran hält, eine Chanote aus."
+      },
+      {
+       "en": "The NS3 ก. is cancelled from the day the date for handing out the chanote is announced.",
+       "th": "น.ส.3 ก. เดิมเป็นอันยกเลิกตั้งแต่วันที่ประกาศกำหนดวันแจกโฉนดที่ดิน",
+       "my": "น.ส.3 ก. ကို Chanote ဝေငှမည့်နေ့ကို ကြေညာသည့်နေ့မှစ၍ ပယ်ဖျက်သည်။",
+       "zh": "自公告发放地契日期之日起，原 น.ส.3 ก. 即被注销。",
+       "de": "Das NS3 ก. gilt ab dem Tag als aufgehoben, an dem der Termin für die Ausgabe der Chanote bekanntgegeben wird."
+      }
+     ],
+     "src": "https://www.dol.go.th/media/813280899755020288/2026/01/CJdqE2utHbaThxipkzZXeKYy.pdf"
+    },
+    {
+     "id": "ns3",
+     "n": {
+      "en": "Nor Sor 3 (NS3)",
+      "th": "หนังสือรับรองการทำประโยชน์ (น.ส.3)",
+      "my": "Nor Sor 3 (น.ส.3)",
+      "zh": "Nor Sor 3（น.ส.3）",
+      "de": "Nor Sor 3 (น.ส.3)"
+     },
+     "big": {
+      "en": "น.ส.3",
+      "th": "น.ส.3",
+      "my": "น.ส.3",
+      "zh": "น.ส.3",
+      "de": "น.ส.3"
+     },
+     "t": {
+      "en": "The NS3 is a certificate of utilization (หนังสือรับรองการทำประโยชน์). Its map is a floating map (แผนที่รูปลอย), and the Department's answer says there is no evidence to check it against. To remake a lost NS3 the Department has an officer survey the plot on the ground.",
+      "th": "น.ส.3 เป็นหนังสือรับรองการทำประโยชน์ รูปแผนที่เป็นแผนที่รูปลอย และคำตอบของกรมที่ดินระบุว่าไม่มีหลักฐานให้ตรวจสอบ การจัดทำ น.ส.3 ที่สูญหายขึ้นใหม่ กรมที่ดินให้เจ้าหน้าที่ออกไปรังวัดตรวจสอบที่ดินนั้น",
+      "my": "น.ส.3 သည် အသုံးချမှု အသိအမှတ်ပြုလက်မှတ် (หนังสือรับรองการทำประโยชน์) ဖြစ်သည်။ ၎င်း၏ မြေပုံမှာ “မျောပေါ်ပုံ” (แผนที่รูปลอย) ဖြစ်ပြီး ဌာန၏ အဖြေတွင် ညှိနှိုင်းစစ်ဆေးစရာ အထောက်အထား မရှိဟု ဖော်ပြထားသည်။ ပျောက်ဆုံးသော น.ส.3 ကို ပြန်လည်ပြုလုပ်ရာတွင် ဌာနက အရာရှိတစ်ဦးကို မြေကွက်ကို မြေပြင်တွင် တိုင်းတာစေသည်။",
+      "zh": "น.ส.3 是土地使用证明书（หนังสือรับรองการทำประโยชน์）。它的地图是“浮图”（แผนที่รูปลอย），土地厅的答复说没有可供核对的依据。重新制作遗失的 น.ส.3 时，土地厅派官员到现场测量该地块。",
+      "de": "Das NS3 ist eine Nutzungsbescheinigung (หนังสือรับรองการทำประโยชน์). Seine Karte ist eine «schwebende Karte» (แผนที่รูปลอย); laut der Antwort des Department gibt es nichts, womit sie sich prüfen lässt. Für die Neuerstellung eines verlorenen NS3 lässt das Department das Grundstück von einem Beamten vor Ort vermessen."
+     },
+     "facts": [
+      {
+       "en": "The Department's answer on remaking a lost NS3 says its map is a floating map with no evidence to check it against, so the remake rests on a survey of the plot.",
+       "th": "คำตอบของกรมที่ดินเรื่องการทำ น.ส.3 ที่สูญหายขึ้นใหม่ระบุว่ารูปแผนที่เป็นแผนที่รูปลอย ไม่มีหลักฐานให้ตรวจสอบ จึงต้องอาศัยรูปแผนที่จากการรังวัดตรวจสอบ",
+       "my": "ပျောက်ဆုံးသော น.ส.3 ကို ပြန်လည်ပြုလုပ်ခြင်းဆိုင်ရာ ဌာန၏ အဖြေတွင် မြေပုံသည် ညှိနှိုင်းစစ်ဆေးစရာ အထောက်အထား မရှိသော မျောပေါ်ပုံဖြစ်သဖြင့် ပြန်လုပ်ရာတွင် မြေကွက်တိုင်းတာမှုကို အခြေခံသည်ဟု ဖော်ပြထားသည်။",
+       "zh": "土地厅关于重新制作遗失 น.ส.3 的答复说，其地图是没有核对依据的浮图，所以重新制作要靠对地块的测量。",
+       "de": "In der Antwort des Department zur Neuerstellung eines verlorenen NS3 steht, die Karte sei eine schwebende Karte ohne Prüfgrundlage; die Neuerstellung beruht deshalb auf einer Vermessung des Grundstücks."
+      },
+      {
+       "en": "For a certificate of the NS3 ก. form, the same remake uses the aerial photograph sheet and needs no survey.",
+       "th": "สำหรับหนังสือรับรองการทำประโยชน์แบบ น.ส.3 ก. ใช้รูปแผนที่จากระวางรูปถ่ายทางอากาศ โดยไม่ต้องรังวัด",
+       "my": "น.ส.3 ก. ပုံစံ လက်မှတ်အတွက်မူ ပြန်လုပ်ရာတွင် လေကြောင်းဓာတ်ပုံမြေပုံစာရွက်ကို သုံးပြီး တိုင်းတာရန် မလိုပါ။",
+       "zh": "对于 น.ส.3 ก. 样式的证明书，同样的重新制作使用航空照片图幅，无需测量。",
+       "de": "Bei einer Bescheinigung der Form NS3 ก. nutzt die Neuerstellung das Luftbildblatt und braucht keine Vermessung."
+      }
+     ],
+     "src": "https://www.dol.go.th/media/813280899755020288/2026/01/CJdqE2utHbaThxipkzZXeKYy.pdf"
+    },
+    {
+     "id": "sk1",
+     "n": {
+      "en": "Sor Kor 1 (ส.ค.1)",
+      "th": "ใบแจ้งการครอบครองที่ดิน (ส.ค.1)",
+      "my": "Sor Kor 1 (ส.ค.1)",
+      "zh": "Sor Kor 1（ส.ค.1）",
+      "de": "Sor Kor 1 (ส.ค.1)"
+     },
+     "big": {
+      "en": "ส.ค.1",
+      "th": "ส.ค.1",
+      "my": "ส.ค.1",
+      "zh": "ส.ค.1",
+      "de": "ส.ค.1"
+     },
+     "t": {
+      "en": "The ส.ค.1 is a notice of possession (ใบแจ้งการครอบครองที่ดิน) that dates from before 1954 (B.E. 2497). The Department of Lands says it is not an ownership certificate (โฉนด) issued by the state. It passes by handing over possession, without registration.",
+      "th": "ส.ค.1 คือใบแจ้งการครอบครองที่ดิน มีมาตั้งแต่ก่อนปี 2497 (ค.ศ. 1954) กรมที่ดินระบุว่าไม่ใช่หนังสือแสดงกรรมสิทธิ์ (โฉนด) ที่ทางราชการออกให้ โอนได้โดยส่งมอบการครอบครอง ไม่ต้องจดทะเบียน",
+      "my": "ส.ค.1 သည် 1954 (พ.ศ. 2497) မတိုင်မီကတည်းက ရှိခဲ့သော မြေကိုင်စွဲမှု အသိပေးစာ (ใบแจ้งการครอบครองที่ดิน) ဖြစ်သည်။ မြေယာဦးစီးဌာနက ၎င်းသည် နိုင်ငံတော်က ထုတ်ပေးသော ပိုင်ဆိုင်မှုလက်မှတ် (โฉนด) မဟုတ်ဟု ဆိုသည်။ မှတ်ပုံတင်ခြင်းမရှိဘဲ ကိုင်စွဲမှု လွှဲပေးခြင်းဖြင့် လက်ဆင့်ကမ်းသည်။",
+      "zh": "ส.ค.1 是土地占有通知书（ใบแจ้งการครอบครองที่ดิน），在 1954 年（佛历 2497 年）之前就已存在。土地厅说它不是国家签发的所有权证书（โฉนด）。它通过交付占有权转手，无需登记。",
+      "de": "Das ส.ค.1 ist eine Besitzanzeige (ใบแจ้งการครอบครองที่ดิน) aus der Zeit vor 1954 (B.E. 2497). Laut Department of Lands ist es keine vom Staat ausgestellte Eigentumsurkunde (โฉนด). Es geht durch die Übergabe des Besitzes weiter, ohne Eintragung."
+     },
+     "facts": [
+      {
+       "en": "A holder can use a ส.ค.1 to apply for a chanote.",
+       "th": "ผู้ถือ ส.ค.1 นำไปขอออกโฉนดที่ดินได้",
+       "my": "ส.ค.1 ကိုင်ဆောင်သူသည် Chanote လျှောက်ရာတွင် ၎င်းကို အသုံးပြုနိုင်သည်။",
+       "zh": "持有人可凭 ส.ค.1 申请地契。",
+       "de": "Ein Inhaber kann mit dem ส.ค.1 eine Chanote beantragen."
+      },
+      {
+       "en": "Since 9 February 2010 a court order confirming the right comes first.",
+       "th": "ตั้งแต่ 9 กุมภาพันธ์ 2553 (ค.ศ. 2010) ต้องมีคำสั่งศาลรับรองสิทธิก่อน",
+       "my": "2010 ဖေဖော်ဝါရီ 9 ရက်မှစ၍ အခွင့်အရေးကို အတည်ပြုသည့် တရားရုံးအမိန့် ရှိရန် ဦးစွာလိုအပ်သည်။",
+       "zh": "自 2010 年 2 月 9 日起，须先有法院确认该权利的裁定。",
+       "de": "Seit dem 9. Februar 2010 braucht es zuerst einen Gerichtsbeschluss, der das Recht bestätigt."
+      }
+     ],
+     "src": "https://www.dol.go.th/trat/cate-1769393600/news-1769396719/"
+    },
+    {
+     "id": "spk",
+     "n": {
+      "en": "Sor Por Kor 4-01 (ส.ป.ก. 4-01)",
+      "th": "หนังสืออนุญาตให้เข้าทำประโยชน์ (ส.ป.ก. 4-01)",
+      "my": "Sor Por Kor 4-01 (ส.ป.ก. 4-01)",
+      "zh": "Sor Por Kor 4-01（ส.ป.ก. 4-01）",
+      "de": "Sor Por Kor 4-01 (ส.ป.ก. 4-01)"
+     },
+     "big": {
+      "en": "ส.ป.ก. 4-01",
+      "th": "ส.ป.ก. 4-01",
+      "my": "ส.ป.ก. 4-01",
+      "zh": "ส.ป.ก. 4-01",
+      "de": "ส.ป.ก. 4-01"
+     },
+     "t": {
+      "en": "The ส.ป.ก. 4-01 is a permit to work land in a land reform area (หนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน). The Bueng Kan land reform office lists who may take over the right: a spouse, an adult child, a parent, a brother or sister, a grandchild, or a brother's or sister's child.",
+      "th": "ส.ป.ก. 4-01 คือหนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน สำนักงานการปฏิรูปที่ดินจังหวัดบึงกาฬระบุผู้ที่รับโอนสิทธิได้ ได้แก่ คู่สมรส บุตรที่บรรลุนิติภาวะ บิดามารดา พี่น้อง และหลาน",
+      "my": "ส.ป.ก. 4-01 သည် မြေပြုပြင်ပြောင်းလဲရေးဇုန်အတွင်း မြေကို အသုံးချခွင့်ပါမစ် (หนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน) ဖြစ်သည်။ Bueng Kan (บึงกาฬ) မြေပြုပြင်ပြောင်းလဲရေးရုံးက အခွင့်အရေးကို လွှဲယူနိုင်သူများကို စာရင်းပြုထားသည် - ဇနီး/ခင်ပွန်း၊ အရွယ်ရောက်ပြီးသားသား/သမီး၊ မိဘ၊ ညီအစ်ကို/မောင်နှမ၊ မြေးနှင့် ညီအစ်ကို/မောင်နှမ၏ သားသမီး။",
+      "zh": "ส.ป.ก. 4-01 是在土地改革区内耕作土地的许可（หนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน）。汶干（Bueng Kan）土地改革办公室列出了可承接该权利的人：配偶、成年子女、父母、兄弟姐妹、孙辈，以及兄弟姐妹的子女。",
+      "de": "Das ส.ป.ก. 4-01 ist eine Erlaubnis, Land in einem Landreformgebiet zu bearbeiten (หนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน). Das Landreformamt von Bueng Kan listet auf, wer das Recht übernehmen darf: Ehepartner, erwachsenes Kind, Elternteil, Bruder oder Schwester, Enkelkind und das Kind eines Bruders oder einer Schwester."
+     },
+     "facts": [
+      {
+       "en": "The list of children means adult children and leaves out adopted children.",
+       "th": "รายการบุตรหมายถึงบุตรที่บรรลุนิติภาวะ ไม่รวมบุตรบุญธรรม",
+       "my": "သားသမီးစာရင်းသည် အရွယ်ရောက်ပြီးသော သားသမီးများကို ဆိုလိုပြီး မွေးစားသားသမီးများ မပါဝင်ပါ။",
+       "zh": "子女指成年子女，不包括养子女。",
+       "de": "Mit Kindern sind erwachsene Kinder gemeint; Adoptivkinder gehören nicht dazu."
+      },
+      {
+       "en": "A transfer to a parent, a brother or sister, a grandchild or a brother's or sister's child comes with the reason it cannot go to a spouse or child first.",
+       "th": "การโอนให้บิดามารดา พี่น้อง หรือหลาน ต้องแสดงเหตุผลว่าเหตุใดจึงโอนให้คู่สมรสหรือบุตรก่อนไม่ได้",
+       "my": "မိဘ၊ ညီအစ်ကို မောင်နှမ၊ မြေး သို့မဟုတ် ညီအစ်ကို မောင်နှမ၏ သားသမီးထံ လွှဲပြောင်းရာတွင် ဇနီး/ခင်ပွန်း သို့မဟုတ် သားသမီးထံ အရင် မလွှဲနိုင်သည့် အကြောင်းရင်းကို တင်ပြရသည်။",
+       "zh": "转给父母、兄弟姐妹、孙辈或兄弟姐妹的子女时，须说明为何不能先转给配偶或子女。",
+       "de": "Bei einer Übertragung an Elternteil, Bruder, Schwester, Enkelkind oder das Kind eines Bruders oder einer Schwester wird der Grund genannt, warum sie nicht zuerst an Ehepartner oder Kind geht."
+      },
+      {
+       "en": "The same list of relatives applies when the holder dies.",
+       "th": "รายชื่อญาติชุดเดียวกันใช้เมื่อผู้ถือเสียชีวิต",
+       "my": "ကိုင်ဆောင်သူ ကွယ်လွန်လျှင်လည်း အလားတူ ဆွေမျိုးစာရင်းကို သုံးသည်။",
+       "zh": "持有人去世时适用同一份亲属名单。",
+       "de": "Beim Tod des Inhabers gilt dieselbe Liste von Verwandten."
+      }
+     ],
+     "src": "https://alro.go.th/uploads/org/buengkan/download/article/article_20180425184706.pdf"
+    }
+   ],
+   "start": "chanote",
+   "oursLine": {
+    "en": "Hongdam reads the land office record, sets the asking price against the assessed price and writes the report, for:",
+    "th": "หงส์ดำอ่านข้อมูลที่สำนักงานที่ดิน เทียบราคาที่ขอขายกับราคาประเมิน และเขียนรายงาน ในราคา:",
+    "my": "ဟုန်ဒမ်သည် မြေရုံးမှတ်တမ်းကို ဖတ်ပြီး တောင်းဆိုထားသော စျေးကို အကဲဖြတ်စျေးနှင့် နှိုင်းယှဉ်ကာ အစီရင်ခံစာ ရေးပေးသည် - စျေးနှုန်း:",
+    "zh": "鸿丹查阅土地局记录，把要价与评估价对比，并写出报告，价格：",
+    "de": "Hongdam liest den Eintrag beim Landamt, stellt den Angebotspreis dem Schätzwert gegenüber und schreibt den Bericht, für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "The land office charges 2% to register a transfer. The rate is applied to the appraised value (ราคาประเมินทุนทรัพย์).",
+    "th": "สำนักงานที่ดินเก็บค่าจดทะเบียนโอน 2% อัตรานี้คิดจากราคาประเมินทุนทรัพย์",
+    "my": "မြေရုံးသည် လွှဲပြောင်းမှတ်ပုံတင်ရန် 2% ကောက်ခံသည်။ ဤနှုန်းကို အကဲဖြတ်တန်ဖိုး (ราคาประเมินทุนทรัพย์) ပေါ်တွင် တွက်ချက်သည်။",
+    "zh": "土地局办理过户登记收取 2%。该比率按评估价（ราคาประเมินทุนทรัพย์）计算。",
+    "de": "Das Landamt erhebt 2% für die Eintragung einer Übertragung. Der Satz wird auf den Schätzwert (ราคาประเมินทุนทรัพย์) angewendet."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "t": {
+    "en": "A specific business tax of 3.3% applies to a sale within 5 years of acquiring the property, among other listed cases. It is worked out on the appraised value or the sale price, whichever is higher. A sale after 5 years is among the exemptions on the page.",
+    "th": "ภาษีธุรกิจเฉพาะ 3.3% ใช้กับการขายภายใน 5 ปีนับจากวันได้มาซึ่งทรัพย์สิน รวมถึงกรณีอื่นที่หน้าเว็บระบุ คิดจากราคาประเมินหรือราคาขาย แล้วแต่ราคาใดสูงกว่า การขายหลังครบ 5 ปีอยู่ในรายการที่ได้รับยกเว้นของหน้านี้",
+    "my": "အထူးလုပ်ငန်းခွန် 3.3% ကို ပိုင်ဆိုင်သည့်နေ့မှ 5 နှစ်အတွင်း ရောင်းချမှုတွင်လည်းကောင်း၊ စာရင်းတွင်ဖော်ပြထားသည့် အခြားကိစ္စများတွင်လည်းကောင်း ကောက်ခံသည်။ အကဲဖြတ်တန်ဖိုး သို့မဟုတ် ရောင်းစျေးထဲမှ ပိုမြင့်သည့်ပေါ်တွင် တွက်ချက်သည်။ 5 နှစ်ပြည့်ပြီးနောက် ရောင်းချမှုသည် ထိုစာမျက်နှာပါ ကင်းလွတ်ခွင့်များထဲတွင် ပါဝင်သည်။",
+    "zh": "特定营业税为 3.3%，适用于取得房产后 5 年内的出售，以及页面列出的其他情形。按评估价或成交价中较高者计算。满 5 年后的出售列在该页的免税情形中。",
+    "de": "Die spezielle Gewerbesteuer von 3.3% gilt für einen Verkauf innerhalb von 5 Jahren nach dem Erwerb sowie für weitere aufgelistete Fälle. Sie wird auf den Schätzwert oder den Verkaufspreis berechnet, je nachdem, was höher ist. Ein Verkauf nach 5 Jahren steht unter den Befreiungen auf der Seite."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "t": {
+    "en": "Stamp duty is ฿1 for every ฿200 of value, or part of ฿200 (0.5%), on a transfer made for payment.",
+    "th": "อากรแสตมป์ ฿1 ต่อทุก ฿200 หรือเศษของ ฿200 (0.5%) สำหรับการโอนที่มีค่าตอบแทน",
+    "my": "တံဆိပ်ခေါင်းခွန်မှာ တန်ဖိုး ฿200 (သို့မဟုတ် ฿200 အပိုင်းအစ) တိုင်းအတွက် ฿1 (0.5%) ဖြစ်ပြီး ကြေးပေးသည့် လွှဲပြောင်းမှုတွင် ကောက်ခံသည်။",
+    "zh": "印花税为每 ฿200 价值（不足 ฿200 按 ฿200 计）收 ฿1（0.5%），适用于有偿过户。",
+    "de": "Die Stempelsteuer beträgt ฿1 je ฿200 des Werts oder je angefangene ฿200 (0.5%) bei einer entgeltlichen Übertragung."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "t": {
+    "en": "The seller's income tax is withheld on the sale. For an individual, net income is divided by the years held (10 at most; a part year counts as one), taxed at the progressive rates, and multiplied back by the years. For a company the rate is 1% of the sale price or the appraised value, whichever is higher.",
+    "th": "ภาษีเงินได้ของผู้ขายถูกหัก ณ ที่จ่ายจากการขาย สำหรับบุคคลธรรมดา นำเงินได้สุทธิหารด้วยจำนวนปีที่ถือครอง (ไม่เกิน 10 ปี เศษของปีนับเป็นหนึ่งปี) คำนวณตามอัตราก้าวหน้า แล้วคูณด้วยจำนวนปีกลับ สำหรับนิติบุคคล อัตรา 1% ของราคาขายหรือราคาประเมิน แล้วแต่ราคาใดสูงกว่า",
+    "my": "ရောင်းသူ၏ ဝင်ငွေခွန်ကို ရောင်းချမှုတွင် နှုတ်ယူသည်။ လူပုဂ္ဂိုလ်အတွက် အသားတင်ဝင်ငွေကို ကိုင်ထားသည့်နှစ်အရေအတွက်ဖြင့် စားပြီး (အများဆုံး 10 နှစ်၊ နှစ်အပိုင်းအစကို တစ်နှစ်ဟု သတ်မှတ်) တိုးတက်မှုနှုန်းထားအတိုင်း ခွန်တွက်ကာ နှစ်အရေအတွက်ဖြင့် ပြန်မြှောက်သည်။ ကုမ္ပဏီအတွက် နှုန်းမှာ ရောင်းစျေး သို့မဟုတ် အကဲဖြတ်တန်ဖိုးထဲမှ ပိုမြင့်သည့်၏ 1% ဖြစ်သည်။",
+    "zh": "卖方的所得税在出售时预扣。个人的做法是：净收入除以持有年数（最多 10 年，不足一年按一年计），按累进税率计税，再乘回年数。公司的税率为售价或评估价中较高者的 1%。",
+    "de": "Die Einkommensteuer des Verkäufers wird beim Verkauf einbehalten. Bei einer Privatperson wird das Nettoeinkommen durch die Haltejahre geteilt (höchstens 10; ein angefangenes Jahr zählt als ein Jahr), nach den progressiven Sätzen besteuert und wieder mit den Jahren multipliziert. Bei einer Firma beträgt der Satz 1% des Verkaufspreises oder des Schätzwerts, je nachdem, was höher ist."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "t": {
+    "en": "The Department of Lands lists the ways a foreigner can acquire land, among them a home under section 96 bis of the Land Code and inheritance as a statutory heir under section 93.",
+    "th": "กรมที่ดินระบุช่องทางที่คนต่างด้าวจะได้มาซึ่งที่ดินไว้ เช่น ที่ดินเพื่อใช้เป็นที่อยู่อาศัยตามมาตรา 96 ทวิ แห่งประมวลกฎหมายที่ดิน และการได้รับมรดกในฐานะทายาทโดยธรรมตามมาตรา 93",
+    "my": "မြေယာဦးစီးဌာနသည် နိုင်ငံခြားသားတစ်ဦး မြေရနိုင်သည့် နည်းလမ်းများကို စာရင်းပြုစုထားပြီး ၎င်းတို့တွင် မြေကုဒ် (Land Code) ပုဒ်မ 96 bis အရ နေအိမ်အတွက်မြေနှင့် ပုဒ်မ 93 အရ ဥပဒေအရ အမွေခံအဖြစ် အမွေရခြင်းတို့ ပါဝင်သည်။",
+    "zh": "土地厅列出了外国人取得土地的途径，其中包括依《土地法典》第 96 条之二取得自住用地，以及依第 93 条作为法定继承人继承土地。",
+    "de": "Das Department of Lands führt die Wege auf, auf denen ein Ausländer Land erwerben kann, darunter Land für ein Wohnhaus nach Section 96 bis des Land Code und die Erbschaft als gesetzlicher Erbe nach Section 93."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/land-for-foreigners/"
+  },
+  {
+   "t": {
+    "en": "Foreigners, and companies the law treats as foreign, may together hold up to 49% of the unit area in a condominium building, measured when the building is registered (section 19 bis of the Condominium Act).",
+    "th": "คนต่างด้าวและนิติบุคคลที่กฎหมายถือว่าเป็นคนต่างด้าว ถือกรรมสิทธิ์ห้องชุดรวมกันได้ไม่เกิน 49% ของเนื้อที่ห้องชุดทั้งหมดในอาคารชุด วัดตามเนื้อที่ขณะขอจดทะเบียนอาคารชุด (มาตรา 19 ทวิ แห่ง พ.ร.บ.อาคารชุด)",
+    "my": "နိုင်ငံခြားသားများနှင့် ဥပဒေက နိုင်ငံခြားသားအဖြစ် သတ်မှတ်သည့် ကုမ္ပဏီများသည် ကွန်ဒိုအဆောက်အအုံတစ်ခု၏ အခန်းဧရိယာ၏ 49% အထိသာ ပေါင်းစပ်၍ ပိုင်ဆိုင်နိုင်ပြီး အဆောက်အအုံကို မှတ်ပုံတင်သည့်အချိန်တွင် တိုင်းတာသည် (ကွန်ဒိုမီနီယံ အက်ဥပဒေ ပုဒ်မ 19 bis)။",
+    "zh": "外国人以及法律视为外国人的公司，合计最多可持有一栋公寓楼单元总面积的 49%，以该楼登记时的面积为准（《公寓法》第 19 条之二）。",
+    "de": "Ausländer und Firmen, die das Gesetz als ausländisch behandelt, dürfen zusammen höchstens 49% der Fläche der Einheiten in einem Kondominiumsgebäude halten, gemessen bei der Registrierung des Gebäudes (Section 19 bis des Condominium Act)."
+   },
+   "src": "https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf"
+  },
+  {
+   "t": {
+    "en": "Section 19 of the Condominium Act names who may hold a unit: a foreigner permitted to reside under immigration law, a foreigner admitted under investment promotion law, and a foreigner who brings in foreign currency or draws on a foreign-currency or non-resident baht account.",
+    "th": "มาตรา 19 แห่ง พ.ร.บ.อาคารชุด ระบุผู้ที่ถือกรรมสิทธิ์ห้องชุดได้ เช่น คนต่างด้าวที่ได้รับอนุญาตให้มีถิ่นที่อยู่ตามกฎหมายคนเข้าเมือง คนต่างด้าวที่ได้รับอนุญาตเข้ามาตามกฎหมายส่งเสริมการลงทุน และคนต่างด้าวที่นำเงินตราต่างประเทศเข้ามาหรือถอนเงินจากบัญชีเงินบาทของผู้มีถิ่นที่อยู่นอกประเทศหรือบัญชีเงินฝากเงินตราต่างประเทศ",
+    "my": "ကွန်ဒိုမီနီယံ အက်ဥပဒေ ပုဒ်မ 19 တွင် အခန်းပိုင်ဆိုင်ခွင့်ရှိသူများကို အမည်ဖော်ပြထားသည် - လူဝင်မှုကြီးကြပ်ရေးဥပဒေအရ နေထိုင်ခွင့်ရသော နိုင်ငံခြားသား၊ ရင်းနှီးမြှုပ်နှံမှု မြှင့်တင်ရေးဥပဒေအရ ဝင်ခွင့်ရသော နိုင်ငံခြားသားနှင့် နိုင်ငံခြားငွေကြေး ယူဆောင်လာသော သို့မဟုတ် ပြည်ပနေထိုင်သူ၏ ဘတ်ငွေစာရင်း သို့မဟုတ် နိုင်ငံခြားငွေစာရင်းမှ ထုတ်ယူသော နိုင်ငံခြားသား တို့ဖြစ်သည်။",
+    "zh": "《公寓法》第 19 条列明可持有单元的人：依移民法获准居留的外国人、依投资促进法获准入境的外国人，以及带入外币、或从非居民泰铢账户或外币存款账户提款的外国人。",
+    "de": "Section 19 des Condominium Act nennt, wer eine Einheit halten darf: einen Ausländer mit Aufenthaltsbewilligung nach dem Einwanderungsgesetz, einen Ausländer, der nach dem Investitionsförderungsgesetz zugelassen ist, und einen Ausländer, der Fremdwährung einbringt oder von einem Baht-Konto eines Gebietsfremden oder einem Fremdwährungskonto abhebt."
+   },
+   "src": "https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Title deed check from a Bangkok law firm that names network lawyers in Chiang Mai",
+    "th": "ตรวจโฉนดที่ดินจากสำนักงานกฎหมายในกรุงเทพฯ ที่ระบุว่ามีทนายเครือข่ายในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ ကွန်ရက်ရှေ့နေများကို ဖော်ပြထားသည့် ဘန်ကောက်ရှိ ဥပဒေကုမ္ပဏီ၏ မြေစာချုပ် စစ်ဆေးခြင်း",
+    "zh": "曼谷一家律所（称在清迈有合作律师）的地契核查",
+    "de": "Prüfung der Eigentumsurkunde durch eine Anwaltskanzlei in Bangkok, die Partneranwälte in Chiang Mai nennt"
+   },
+   "p": {
+    "en": "from ฿3,900 on its service list; ฿4,900 on its menu",
+    "th": "เริ่มต้น ฿3,900 ในรายการบริการ ฿4,900 ในเมนู",
+    "my": "ဝန်ဆောင်မှုစာရင်းတွင် ฿3,900 မှစ၍၊ မီနူးတွင် ฿4,900",
+    "zh": "服务清单起价 ฿3,900；菜单标 ฿4,900",
+    "de": "ab ฿3,900 in der Leistungsliste; ฿4,900 im Menü"
+   },
+   "src": "https://www.thailawonline.com/th/property-guide-for-foreigners-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Property rights due diligence (title and encumbrance checks, transfer history, zoning), same firm",
+    "th": "ตรวจสอบสิทธิในทรัพย์สิน (ตรวจโฉนดและภาระผูกพัน ประวัติการโอน ผังเมือง) ที่สำนักงานเดียวกัน",
+    "my": "ပိုင်ဆိုင်မှုဆိုင်ရာ အသေးစိတ်စစ်ဆေးခြင်း (မြေစာချုပ်နှင့် ဝန်ထုပ်ဝန်ပိုးစစ်ဆေးမှု၊ လွှဲပြောင်းမှုမှတ်တမ်း၊ မြေအသုံးချမှုဇုန်) - ထိုကုမ္ပဏီတူ",
+    "zh": "产权尽职调查（产权与负担核查、过户历史、分区），同一律所",
+    "de": "Due Diligence zu den Eigentumsrechten (Prüfung von Eigentum und Belastungen, Übertragungsverlauf, Flächennutzung), dieselbe Kanzlei"
+   },
+   "p": {
+    "en": "from ฿30,000",
+    "th": "เริ่มต้น ฿30,000",
+    "my": "฿30,000 မှစ၍",
+    "zh": "起价 ฿30,000",
+    "de": "ab ฿30,000"
+   },
+   "src": "https://www.thailawonline.com/th/property-guide-for-foreigners-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Condo purchase package (contract review, foreign quota check, transfer, registration after purchase), same firm",
+    "th": "แพ็กเกจซื้อคอนโด (ตรวจสัญญา ตรวจโควตาต่างชาติ การโอน การจดทะเบียนหลังซื้อ) ที่สำนักงานเดียวกัน",
+    "my": "ကွန်ဒိုဝယ်ယူမှု ပက်ကေ့ချ် (စာချုပ်ဖတ်ရှုစစ်ဆေးခြင်း၊ နိုင်ငံခြားသားခွဲတမ်းစစ်ဆေးခြင်း၊ လွှဲပြောင်းခြင်း၊ ဝယ်ပြီးနောက် မှတ်ပုံတင်ခြင်း) - ထိုကုမ္ပဏီတူ",
+    "zh": "购买公寓套餐（审合同、核对外国人配额、过户、购后登记），同一律所",
+    "de": "Paket für den Kauf einer Eigentumswohnung (Vertragsprüfung, Prüfung der Ausländerquote, Übertragung, Eintragung nach dem Kauf), dieselbe Kanzlei"
+   },
+   "p": {
+    "en": "from ฿19,900",
+    "th": "เริ่มต้น ฿19,900",
+    "my": "฿19,900 မှစ၍",
+    "zh": "起价 ฿19,900",
+    "de": "ab ฿19,900"
+   },
+   "src": "https://www.thailawonline.com/th/property-guide-for-foreigners-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Lawyer consultation, same firm",
+    "th": "ปรึกษาทนายความ ที่สำนักงานเดียวกัน",
+    "my": "ရှေ့နေနှင့် အကြံဉာဏ်တောင်းခြင်း - ထိုကုမ္ပဏီတူ",
+    "zh": "律师咨询，同一律所",
+    "de": "Beratung durch einen Anwalt, dieselbe Kanzlei"
+   },
+   "p": {
+    "en": "฿2,000 an hour",
+    "th": "฿2,000 ต่อชั่วโมง",
+    "my": "တစ်နာရီ ฿2,000",
+    "zh": "每小时 ฿2,000",
+    "de": "฿2,000 pro Stunde"
+   },
+   "src": "https://www.thailawonline.com/th/property-guide-for-foreigners-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "A copy of a title deed from the land office, by freelancers on Fastwork",
+    "th": "สำเนาโฉนดที่ดินจากสำนักงานที่ดิน โดยฟรีแลนซ์บน Fastwork",
+    "my": "Fastwork ရှိ ဖရီးလန်ဆာများက မြေရုံးမှ မြေစာချုပ်မိတ္တူ ယူပေးခြင်း",
+    "zh": "Fastwork 上的自由职业者从土地局调取地契复印件",
+    "de": "Eine Kopie der Eigentumsurkunde vom Landamt, durch Freelancer auf Fastwork"
+   },
+   "p": {
+    "en": "from ฿500",
+    "th": "เริ่มต้น ฿500",
+    "my": "฿500 မှစ၍",
+    "zh": "起价 ฿500",
+    "de": "ab ฿500"
+   },
+   "src": "https://fastwork.co/title-deed-extraction"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can a foreigner buy land in Thailand?",
+    "th": "คนต่างชาติซื้อที่ดินในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦးသည် ထိုင်းတွင် မြေဝယ်နိုင်ပါသလား",
+    "zh": "外国人能在泰国买地吗",
+    "de": "Dürfen Ausländer in Thailand Land kaufen?"
+   },
+   "a": {
+    "en": "The Department of Lands lists the ways a foreigner can acquire land. They include land for a home under section 96 bis of the Land Code and inheritance as a statutory heir under section 93. A Thai with a foreign spouse, and a company in an investment-promoted project, have their own entries on the list.",
+    "th": "กรมที่ดินรวบรวมช่องทางที่คนต่างด้าวจะได้มาซึ่งที่ดินไว้ เช่น ที่ดินเพื่อใช้เป็นที่อยู่อาศัยตามมาตรา 96 ทวิ แห่งประมวลกฎหมายที่ดิน และการได้รับมรดกในฐานะทายาทโดยธรรมตามมาตรา 93 คนไทยที่มีคู่สมรสเป็นคนต่างด้าว และบริษัทในโครงการที่ได้รับส่งเสริมการลงทุน มีหัวข้อของตนเองในรายการเดียวกัน",
+    "my": "မြေယာဦးစီးဌာနသည် နိုင်ငံခြားသားတစ်ဦး မြေရနိုင်သည့် နည်းလမ်းများကို စာရင်းပြုစုထားသည်။ မြေကုဒ် ပုဒ်မ 96 bis အရ နေအိမ်အတွက်မြေနှင့် ပုဒ်မ 93 အရ ဥပဒေအရ အမွေခံအဖြစ် အမွေရခြင်းတို့ ပါဝင်သည်။ နိုင်ငံခြားသားအိမ်ထောင်ဖက်ရှိသော ထိုင်းနိုင်ငံသားနှင့် ရင်းနှီးမြှုပ်နှံမှုမြှင့်တင်ထားသော စီမံကိန်းရှိ ကုမ္ပဏီတို့အတွက်လည်း ထိုစာရင်းတွင် သီးခြားခေါင်းစဉ်များ ရှိသည်။",
+    "zh": "土地厅列出了外国人取得土地的途径，其中包括依《土地法典》第 96 条之二取得自住用地，以及依第 93 条作为法定继承人继承土地。配偶是外国人的泰国人、投资促进项目中的公司，在同一清单上各有条目。",
+    "de": "Das Department of Lands führt die Wege auf, auf denen ein Ausländer Land erwerben kann, darunter Land für ein Wohnhaus nach Section 96 bis des Land Code und die Erbschaft als gesetzlicher Erbe nach Section 93. Thailänder mit ausländischem Ehepartner und Firmen in geförderten Investitionsprojekten haben auf derselben Liste eigene Einträge."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/land-for-foreigners/"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner own a condominium unit?",
+    "th": "คนต่างชาติถือกรรมสิทธิ์ห้องชุดได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦးသည် ကွန်ဒိုအခန်း ပိုင်ဆိုင်နိုင်ပါသလား",
+    "zh": "外国人能拥有公寓单元吗",
+    "de": "Dürfen Ausländer eine Eigentumswohnung besitzen?"
+   },
+   "a": {
+    "en": "Yes, within a limit. Foreigners, and companies the law treats as foreign, may together hold up to 49% of the unit area in a building (section 19 bis of the Condominium Act). Section 19 names who may hold, among them a foreigner permitted to reside under immigration law and a foreigner who brings in foreign currency.",
+    "th": "ได้ ภายในเพดานที่กำหนด คนต่างด้าวและนิติบุคคลที่กฎหมายถือว่าเป็นคนต่างด้าวถือรวมกันได้ไม่เกิน 49% ของเนื้อที่ห้องชุดในอาคาร (มาตรา 19 ทวิ แห่ง พ.ร.บ.อาคารชุด) มาตรา 19 ระบุผู้ที่ถือได้ เช่น คนต่างด้าวที่ได้รับอนุญาตให้มีถิ่นที่อยู่ตามกฎหมายคนเข้าเมือง และคนต่างด้าวที่นำเงินตราต่างประเทศเข้ามา",
+    "my": "ပိုင်ဆိုင်နိုင်ပါသည်၊ ကန့်သတ်ချက်အတွင်းတွင်ဖြစ်သည်။ နိုင်ငံခြားသားများနှင့် ဥပဒေက နိုင်ငံခြားသားအဖြစ် သတ်မှတ်သည့် ကုမ္ပဏီများသည် အဆောက်အအုံတစ်ခု၏ အခန်းဧရိယာ 49% အထိ ပေါင်းစပ်၍ ပိုင်ဆိုင်နိုင်သည် (ကွန်ဒိုမီနီယံ အက်ဥပဒေ ပုဒ်မ 19 bis)။ ပုဒ်မ 19 တွင် ပိုင်ဆိုင်ခွင့်ရှိသူများကို ဖော်ပြထားပြီး လူဝင်မှုကြီးကြပ်ရေးဥပဒေအရ နေထိုင်ခွင့်ရသော နိုင်ငံခြားသားနှင့် နိုင်ငံခြားငွေကြေး ယူဆောင်လာသော နိုင်ငံခြားသား တို့ ပါဝင်သည်။",
+    "zh": "可以，但有上限。外国人以及法律视为外国人的公司，合计最多可持有一栋楼单元面积的 49%（《公寓法》第 19 条之二）。第 19 条列明可持有的人，其中有依移民法获准居留的外国人，以及带入外币的外国人。",
+    "de": "Ja, innerhalb einer Grenze. Ausländer und Firmen, die das Gesetz als ausländisch behandelt, dürfen zusammen höchstens 49% der Fläche der Einheiten eines Gebäudes halten (Section 19 bis des Condominium Act). Section 19 nennt, wer halten darf, darunter einen Ausländer mit Aufenthaltsbewilligung nach dem Einwanderungsgesetz und einen Ausländer, der Fremdwährung einbringt."
+   },
+   "src": "https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf"
+  },
+  {
+   "q": {
+    "en": "Does a land document show burdens on the plot?",
+    "th": "โฉนดแสดงภาระผูกพันบนที่ดินไหม",
+    "my": "မြေစာရွက်စာတမ်းတွင် မြေပေါ်ရှိ ဝန်ထုပ်ဝန်ပိုး (ภาระผูกพัน) ပါပါသလား",
+    "zh": "地契上会写明地块的负担吗",
+    "de": "Zeigt eine Landurkunde Belastungen des Grundstücks?"
+   },
+   "a": {
+    "en": "Yes, it can carry entries for burdens on the plot (ภาระผูกพัน). When a chanote is issued in place of an older document, section 59 quater of the Land Code has those entries, and any change of the right-holder during the issue, copied into it.",
+    "th": "ได้ หนังสือแสดงสิทธิในที่ดินมีรายการภาระผูกพันได้ เมื่อออกโฉนดที่ดินแทนหนังสือเดิม มาตรา 59 จัตวา แห่งประมวลกฎหมายที่ดินให้ยกรายการภาระผูกพันนั้น และรายการเปลี่ยนแปลงผู้มีสิทธิในที่ดินระหว่างการออก มาจดแจ้งไว้ในโฉนดที่ดินด้วย",
+    "my": "ပါနိုင်ပါသည်။ မြေစာရွက်စာတမ်းတစ်ခုတွင် မြေပေါ်ရှိ ဝန်ထုပ်ဝန်ပိုး (ภาระผูกพัน) မှတ်တမ်းများ ပါနိုင်သည်။ အစောပိုင်းစာရွက်စာတမ်းအစား Chanote ထုတ်ပေးသောအခါ မြေကုဒ် ပုဒ်မ 59 quater အရ ထိုမှတ်တမ်းများနှင့် ထုတ်ပေးနေစဉ်အတွင်း အခွင့်အရေးပိုင်ရှင် ပြောင်းလဲမှုများကို Chanote ထဲသို့ ကူးယူမှတ်တမ်းတင်သည်။",
+    "zh": "会。土地文件上可以有地块负担（ภาระผูกพัน）的登记事项。以地契取代较早的文件时，《土地法典》第 59 条之四规定，这些事项以及办理期间权利人的变更，会抄入新的地契。",
+    "de": "Ja, sie kann Einträge zu Belastungen des Grundstücks (ภาระผูกพัน) tragen. Wird eine Chanote anstelle einer älteren Urkunde ausgestellt, lässt Section 59 quater des Land Code diese Einträge und jeden Wechsel des Berechtigten während der Ausstellung in die Chanote übernehmen."
+   },
+   "src": "https://comment.ocs.go.th/main/download/dlf/pdf/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B9%87%E0%B8%88%E0%B8%97%E0%B8%B5%E0%B9%88%20%E0%B9%91%E0%B9%97%E0%B9%94-%E0%B9%92%E0%B9%95%E0%B9%93%E0%B9%94"
+  },
+  {
+   "q": {
+    "en": "What is the assessed price (ราคาประเมิน) used for?",
+    "th": "ราคาประเมินใช้ทำอะไร",
+    "my": "အကဲဖြတ်စျေး (ราคาประเมิน) ကို ဘာအတွက် သုံးသနည်း",
+    "zh": "评估价（ราคาประเมิน）用在哪里",
+    "de": "Wofür dient der Schätzwert (ราคาประเมิน)?"
+   },
+   "a": {
+    "en": "The land office applies its 2% transfer fee to the appraised value (ราคาประเมินทุนทรัพย์). The 3.3% specific business tax uses the appraised value or the sale price, whichever is higher.",
+    "th": "สำนักงานที่ดินคิดค่าธรรมเนียมการโอน 2% จากราคาประเมินทุนทรัพย์ ส่วนภาษีธุรกิจเฉพาะ 3.3% คิดจากราคาประเมินหรือราคาขาย แล้วแต่ราคาใดสูงกว่า",
+    "my": "မြေရုံးသည် လွှဲပြောင်းခ 2% ကို အကဲဖြတ်တန်ဖိုး (ราคาประเมินทุนทรัพย์) ပေါ်တွင် ကောက်ခံသည်။ အထူးလုပ်ငန်းခွန် 3.3% သည် အကဲဖြတ်တန်ဖိုး သို့မဟုတ် ရောင်းစျေးထဲမှ ပိုမြင့်သည့်ကို အသုံးပြုသည်။",
+    "zh": "土地局的 2% 过户费按评估价（ราคาประเมินทุนทรัพย์）计收。3.3% 的特定营业税按评估价或成交价中较高者计算。",
+    "de": "Das Landamt berechnet seine Übertragungsgebühr von 2% auf den Schätzwert (ราคาประเมินทุนทรัพย์). Die spezielle Gewerbesteuer von 3.3% richtet sich nach dem Schätzwert oder dem Verkaufspreis, je nachdem, was höher ist."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "q": {
+    "en": "Buying a second-hand house: which fees and taxes are on the sale?",
+    "th": "ซื้อบ้านมือสอง มีค่าธรรมเนียมและภาษีอะไรในการขาย",
+    "my": "ဒုတိယလက်ဆင့် အိမ်ဝယ်လျှင် ရောင်းချမှုတွင် မည်သည့်ကြေးနှင့် ခွန်များ ပါသနည်း",
+    "zh": "买二手房，买卖要付哪些费用和税",
+    "de": "Gebrauchtes Haus kaufen: welche Gebühren und Steuern fallen beim Verkauf an?"
+   },
+   "a": {
+    "en": "The Department of Lands' page lists a 2% transfer fee, stamp duty of ฿1 per ฿200, and a 3.3% specific business tax for a seller who acquired the property within 5 years. It also sets out the seller's withholding income tax.",
+    "th": "หน้าของกรมที่ดินระบุค่าธรรมเนียมการโอน 2% อากรแสตมป์ ฿1 ต่อ ฿200 และภาษีธุรกิจเฉพาะ 3.3% สำหรับผู้ขายที่ได้ทรัพย์สินมาภายใน 5 ปี และระบุภาษีเงินได้หัก ณ ที่จ่ายของผู้ขายด้วย",
+    "my": "မြေယာဦးစီးဌာန၏ စာမျက်နှာတွင် လွှဲပြောင်းခ 2%၊ တန်ဖိုး ฿200 လျှင် ฿1 နှုန်း တံဆိပ်ခေါင်းခွန်၊ ပိုင်ဆိုင်ပြီး 5 နှစ်အတွင်း ရောင်းသူအတွက် အထူးလုပ်ငန်းခွန် 3.3% တို့ကို ဖော်ပြထားသည်။ ရောင်းသူ၏ နှုတ်ယူသည့် ဝင်ငွေခွန်ကိုလည်း ဖော်ပြထားသည်။",
+    "zh": "土地厅页面列出 2% 过户费、每 ฿200 收 ฿1 的印花税，以及对取得房产不满 5 年的卖方征收的 3.3% 特定营业税。页面也写明了卖方的预扣所得税。",
+    "de": "Die Seite des Department of Lands nennt eine Übertragungsgebühr von 2%, Stempelsteuer von ฿1 je ฿200 und eine spezielle Gewerbesteuer von 3.3% für einen Verkäufer, der das Grundstück innerhalb von 5 Jahren erworben hat. Sie führt auch die einbehaltene Einkommensteuer des Verkäufers auf."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "q": {
+    "en": "Can a Nor Sor 3 Gor be changed into a chanote?",
+    "th": "น.ส.3 ก. เปลี่ยนเป็นโฉนดได้ไหม",
+    "my": "น.ส.3 ก. ကို Chanote သို့ ပြောင်းနိုင်ပါသလား",
+    "zh": "น.ส.3 ก. 能换成地契吗",
+    "de": "Kann ein Nor Sor 3 Gor in eine Chanote umgewandelt werden?"
+   },
+   "a": {
+    "en": "In the Department of Lands' survey project, an NS3 ก. on rice-field land is replaced by a chanote at no cost and without a boundary survey (รังวัดปักหลักเขต). The NS3 ก. is cancelled when the chanote is handed out.",
+    "th": "ในโครงการเดินสำรวจของกรมที่ดิน น.ส.3 ก. ของที่ดินที่เป็นที่นาเปลี่ยนเป็นโฉนดที่ดินได้โดยไม่เสียค่าใช้จ่ายและไม่ต้องรังวัดปักหลักเขต เมื่อแจกโฉนดที่ดิน น.ส.3 ก. เดิมเป็นอันยกเลิก",
+    "my": "မြေယာဦးစီးဌာန၏ မြေတိုင်းတာထုတ်ပေးရေးစီမံကိန်းတွင် စပါးခင်းမြေ၏ น.ส.3 ก. ကို ကုန်ကျစရိတ်မရှိဘဲ နယ်နိမိတ်တိုင်းတာခြင်း (รังวัดปักหลักเขต) မပြုဘဲ Chanote ဖြင့် အစားထိုးသည်။ Chanote ဝေငှသည့်အခါ น.ส.3 ก. ကို ပယ်ဖျက်သည်။",
+    "zh": "在土地厅的勘测发证项目中，稻田地块的 น.ส.3 ก. 可免费换成地契，不需要界线勘测（รังวัดปักหลักเขต）。发放地契时，原 น.ส.3 ก. 即被注销。",
+    "de": "Im Vermessungsprojekt des Department of Lands wird ein NS3 ก. auf Reisfeldland kostenlos und ohne Grenzvermessung (รังวัดปักหลักเขต) durch eine Chanote ersetzt. Bei der Ausgabe der Chanote wird das NS3 ก. aufgehoben."
+   },
+   "src": "https://www.dol.go.th/knowledge-land-department/land-title-issuance/title-issuance-survey-project/"
+  },
+  {
+   "q": {
+    "en": "Is a Sor Kor 1 (ส.ค.1) a title deed?",
+    "th": "ส.ค.1 คือโฉนดหรือไม่",
+    "my": "ส.ค.1 သည် မြေပိုင်ဆိုင်မှုလက်မှတ်ဖြစ်ပါသလား",
+    "zh": "ส.ค.1 是地契吗",
+    "de": "Ist ein Sor Kor 1 (ส.ค.1) eine Eigentumsurkunde?"
+   },
+   "a": {
+    "en": "No. The Department of Lands calls it a notice of possession from before 1954, not the ownership certificate (โฉนด) the state issues. A holder can use it to apply for a chanote, and since 9 February 2010 a court order confirming the right comes first.",
+    "th": "ไม่ใช่ กรมที่ดินระบุว่าเป็นใบแจ้งการครอบครองที่ดินที่มีมาตั้งแต่ก่อนปี 2497 (ค.ศ. 1954) ไม่ใช่หนังสือแสดงกรรมสิทธิ์ (โฉนด) ที่ทางราชการออกให้ ผู้ถือนำไปขอออกโฉนดได้ และตั้งแต่ 9 กุมภาพันธ์ 2553 ต้องมีคำสั่งศาลรับรองสิทธิก่อน",
+    "my": "မဟုတ်ပါ။ မြေယာဦးစီးဌာနက ၎င်းကို 1954 မတိုင်မီကတည်းက ရှိသော ကိုင်စွဲမှုအသိပေးစာဟု ခေါ်ပြီး နိုင်ငံတော်ထုတ်ပေးသည့် ပိုင်ဆိုင်မှုလက်မှတ် (โฉนด) မဟုတ်ဟု ဆိုသည်။ ကိုင်ဆောင်သူသည် Chanote လျှောက်ရာတွင် သုံးနိုင်ပြီး 2010 ဖေဖော်ဝါရီ 9 ရက်မှစ၍ အခွင့်အရေးကို အတည်ပြုသည့် တရားရုံးအမိန့်ကို ဦးစွာလိုအပ်သည်။",
+    "zh": "不是。土地厅称它是 1954 年之前就有的占有通知书，不是国家签发的所有权证书（โฉนด）。持有人可凭它申请地契，自 2010 年 2 月 9 日起须先有法院确认该权利的裁定。",
+    "de": "Nein. Das Department of Lands nennt es eine Besitzanzeige aus der Zeit vor 1954, keine vom Staat ausgestellte Eigentumsurkunde (โฉนด). Ein Inhaber kann damit eine Chanote beantragen; seit dem 9. Februar 2010 braucht es zuerst einen Gerichtsbeschluss, der das Recht bestätigt."
+   },
+   "src": "https://www.dol.go.th/trat/cate-1769393600/news-1769396719/"
+  },
+  {
+   "q": {
+    "en": "Who can take over a Sor Por Kor 4-01 plot?",
+    "th": "ใครรับโอนสิทธิในที่ดิน ส.ป.ก. 4-01 ได้บ้าง",
+    "my": "ส.ป.ก. 4-01 မြေကို မည်သူ လွှဲယူနိုင်သနည်း",
+    "zh": "谁能承接 ส.ป.ก. 4-01 地块",
+    "de": "Wer darf ein Grundstück mit ส.ป.ก. 4-01 übernehmen?"
+   },
+   "a": {
+    "en": "The Bueng Kan land reform office lists a spouse, an adult child, a parent, a brother or sister, a grandchild, and a brother's or sister's child. The permit is for working land in a land reform area. The same list applies when the holder dies.",
+    "th": "สำนักงานการปฏิรูปที่ดินจังหวัดบึงกาฬระบุ คู่สมรส บุตรที่บรรลุนิติภาวะ บิดามารดา พี่น้อง และหลาน ส.ป.ก. 4-01 เป็นหนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน รายชื่อญาติชุดเดียวกันใช้เมื่อผู้ถือเสียชีวิต",
+    "my": "Bueng Kan မြေပြုပြင်ပြောင်းလဲရေးရုံးက ဇနီး/ခင်ပွန်း၊ အရွယ်ရောက်ပြီးသားသား/သမီး၊ မိဘ၊ ညီအစ်ကို/မောင်နှမ၊ မြေးနှင့် ညီအစ်ကို/မောင်နှမ၏ သားသမီးတို့ကို စာရင်းပြုထားသည်။ ထိုပါမစ်သည် မြေပြုပြင်ပြောင်းလဲရေးဇုန်အတွင်း မြေကို အသုံးချရန် ဖြစ်သည်။ ကိုင်ဆောင်သူ ကွယ်လွန်လျှင်လည်း အလားတူစာရင်းကို သုံးသည်။",
+    "zh": "汶干（Bueng Kan）土地改革办公室列出：配偶、成年子女、父母、兄弟姐妹、孙辈，以及兄弟姐妹的子女。该许可用于在土地改革区内耕作土地。持有人去世时适用同一份名单。",
+    "de": "Das Landreformamt von Bueng Kan listet Ehepartner, erwachsenes Kind, Elternteil, Bruder oder Schwester, Enkelkind und das Kind eines Bruders oder einer Schwester auf. Die Erlaubnis gilt für die Bearbeitung von Land in einem Landreformgebiet. Beim Tod des Inhabers gilt dieselbe Liste."
+   },
+   "src": "https://alro.go.th/uploads/org/buengkan/download/article/article_20180425184706.pdf"
+  }
+ ],
+ "related": [
+  "npa-homes",
+  "stay-rent",
+  "there",
+  "translate",
+  "legalise",
+  "thai-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Lands: fees, taxes and duties (Thai)",
+    "th": "กรมที่ดิน: ค่าธรรมเนียม ภาษี และอากร",
+    "my": "မြေယာဦးစီးဌာန - ကြေး၊ ခွန်နှင့် အခွန်အခများ (ထိုင်းဘာသာ)",
+    "zh": "土地厅：费用、税项和印花税（泰文）",
+    "de": "Department of Lands: Gebühren, Steuern und Abgaben (Thai)"
+   },
+   "href": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "t": {
+    "en": "Department of Lands: land for foreigners, list of services (Thai)",
+    "th": "กรมที่ดิน: ที่ดินสำหรับคนต่างด้าว รายการบริการ",
+    "my": "မြေယာဦးစီးဌာန - နိုင်ငံခြားသားများအတွက် မြေ၊ ဝန်ဆောင်မှုစာရင်း (ထိုင်းဘာသာ)",
+    "zh": "土地厅：外国人土地事项，服务清单（泰文）",
+    "de": "Department of Lands: Land für Ausländer, Liste der Leistungen (Thai)"
+   },
+   "href": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/land-for-foreigners/"
+  },
+  {
+   "t": {
+    "en": "Condominium Act B.E. 2522 with ministerial regulations (Thai PDF, Department of Lands)",
+    "th": "พ.ร.บ.อาคารชุด พ.ศ. 2522 และกฎกระทรวงที่เกี่ยวข้อง (PDF กรมที่ดิน)",
+    "my": "ကွန်ဒိုမီနီယံ အက်ဥပဒေ พ.ศ. 2522 နှင့် ဝန်ကြီးဌာနစည်းမျဉ်းများ (ထိုင်း PDF၊ မြေယာဦးစီးဌာန)",
+    "zh": "《公寓法》佛历 2522 年及相关部颁条例（泰文 PDF，土地厅）",
+    "de": "Condominium Act B.E. 2522 mit Ministerialverordnungen (Thai, PDF, Department of Lands)"
+   },
+   "href": "https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf"
+  },
+  {
+   "t": {
+    "en": "Land Code vocabulary in Thai and English (PDF, Department of Lands)",
+    "th": "ศัพท์จากประมวลกฎหมายที่ดิน ไทย–อังกฤษ (PDF กรมที่ดิน)",
+    "my": "မြေကုဒ်ပါ စကားလုံးများ ထိုင်း–အင်္ဂလိပ် (PDF၊ မြေယာဦးစီးဌာန)",
+    "zh": "《土地法典》词汇，泰英对照（PDF，土地厅）",
+    "de": "Wortschatz aus dem Land Code auf Thai und Englisch (PDF, Department of Lands)"
+   },
+   "href": "https://www.dol.go.th/media/813280848056029184/2026/02/EBAF485hLGxjwntourvyDW2a.pdf"
+  }
+ ],
+ "glyphs": [
+  "home",
+  "page",
+  "stamp"
+ ]
+}

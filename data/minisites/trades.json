@@ -1,0 +1,282 @@
+{
+ "id": "trades",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People look for a plumber, an electrician or an air-con cleaner in Thai, and want the price before the work starts.",
+  "th": "คนหาช่างประปา ช่างไฟ หรือคนล้างแอร์เป็นภาษาไทย และอยากรู้ราคาก่อนเริ่มงาน",
+  "my": "လူတွေက ပိုက်ဆရာ၊ လျှပ်စစ်ဆရာ သို့မဟုတ် အဲယားကွန်းဆေးသူကို ထိုင်းလို ရှာကြပြီး အလုပ်မစမီ စျေးကို သိလိုကြသည်။",
+  "zh": "人们用泰语找水管工、电工或清洗空调的师傅，并想在开工前知道价钱。",
+  "de": "Man sucht auf Thai einen Klempner, einen Elektriker oder jemanden für die Reinigung der Klimaanlage und will den Preis vor Arbeitsbeginn kennen."
+ },
+ "n": {
+  "de": "Klempner, Elektriker, Klimaanlage: gebucht"
+ },
+ "l": {
+  "de": "Wir finden jemanden, holen zuerst den Preis ein, buchen den Termin."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "We find a tradesperson and explain the job in Thai.",
+    "th": "เราหาช่างและอธิบายงานเป็นภาษาไทย",
+    "my": "ပြင်ဆင်ရေးဆရာကို ရှာပြီး အလုပ်ကို ထိုင်းလို ရှင်းပြပေးသည်။",
+    "zh": "我们找到师傅，并用泰语把活儿讲清楚。",
+    "de": "Wir finden eine Fachperson und erklären den Auftrag auf Thai."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "We get the price before work starts and book the time.",
+    "th": "เราขอราคาก่อนเริ่มงานและนัดเวลา",
+    "my": "အလုပ်မစမီ စျေးကို မေးပြီး အချိန်ချိန်းပေးသည်။",
+    "zh": "开工前我们问好价钱，并约好时间。",
+    "de": "Wir holen den Preis vor Arbeitsbeginn ein und buchen den Termin."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the work",
+    "th": "ก่อนเริ่มงาน",
+    "my": "အလုပ်မစမီ",
+    "zh": "开工之前",
+    "de": "Vor der Arbeit"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "We follow up. You pay their bill to them.",
+    "th": "เราติดตามงานจนเสร็จ คุณจ่ายค่าช่างให้ช่างโดยตรง",
+    "my": "ဆက်လက်ဆက်သွယ်ပေးသည်။ သူတို့၏ ဘီလ်ကို သင်က သူတို့ထံ တိုက်ရိုက်ပေးချေသည်။",
+    "zh": "我们跟进到完工。师傅的账单由您直接付给师傅。",
+    "de": "Wir haken nach. Die Rechnung der Fachperson bezahlen Sie direkt an sie."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹 与您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "After the work",
+    "th": "หลังเสร็จงาน",
+    "my": "အလုပ်ပြီးနောက်",
+    "zh": "完工之后",
+    "de": "Nach der Arbeit"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Provincial Waterworks Authority (PWA) gives 1662 for a report of no water or low pressure; its page also links a report form.",
+    "th": "การประปาส่วนภูมิภาค (กปภ.) ระบุสายด่วน 1662 สำหรับแจ้งน้ำไม่ไหลหรือน้ำไหลอ่อน และมีลิงก์แบบฟอร์มแจ้งในหน้าเดียวกัน",
+    "my": "ပြည်နယ်ရေပေးဝေရေးအာဏာပိုင် (PWA) က ရေမလာခြင်း သို့မဟုတ် ရေဖိအားနည်းခြင်း တိုင်ကြားရန် 1662 ကို ပေးထားပြီး တိုင်ကြားဖောင်လင့်ခ်လည်း ရှိသည်။",
+    "zh": "省自来水局（PWA）提供 1662 用于报告停水或水压过低，页面上还附有报告表格的链接。",
+    "de": "Die Provincial Waterworks Authority (PWA) nennt 1662 für die Meldung von fehlendem Wasser oder zu niedrigem Druck; auf der Seite steht auch ein Link zu einem Meldeformular."
+   },
+   "src": "https://www.pwa.co.th/en/"
+  },
+  {
+   "t": {
+    "en": "The Provincial Electricity Authority (PEA) gives 1129 as its Contact Center number, with a live chat, and links a Power Outage Notification page.",
+    "th": "การไฟฟ้าส่วนภูมิภาค (กฟภ.) ระบุ 1129 เป็นเบอร์ศูนย์บริการ พร้อมแชตสด และมีลิงก์หน้าแจ้งไฟฟ้าขัดข้อง",
+    "my": "ပြည်နယ်လျှပ်စစ်ဌာန (PEA) က 1129 ကို ဆက်သွယ်ရေးစင်တာနံပါတ်အဖြစ် ပေးထားပြီး တိုက်ရိုက်စကားပြောခန်းနှင့် လျှပ်စစ်ပြတ်တောက်မှု အကြောင်းကြားစာမျက်နှာလင့်ခ် ပါသည်။",
+    "zh": "省电力局（PEA）提供 1129 作为联络中心号码，设有在线聊天，并链接了停电通报页面。",
+    "de": "Die Provincial Electricity Authority (PEA) nennt 1129 als Nummer ihres Contact Centers, mit Live-Chat und einem Link zur Seite für Stromausfallmeldungen."
+   },
+   "src": "https://www.pea.co.th/en"
+  },
+  {
+   "t": {
+    "en": "EGAT's page on five benefits of cleaning an air conditioner lists saving electricity and lowering costs as one of them.",
+    "th": "หน้า 5 ข้อดีของการล้างแอร์ของ กฟผ. ระบุว่าช่วยประหยัดไฟฟ้าและลดค่าใช้จ่ายเป็นข้อหนึ่ง",
+    "my": "EGAT ၏ အဲယားကွန်းဆေးခြင်း၏ အကျိုးကျေးဇူး ငါးချက်စာမျက်နှာတွင် လျှပ်စစ်ချွေတာပြီး ကုန်ကျစရိတ်လျှော့ပေးခြင်းကို တစ်ချက်အဖြစ် ဖော်ပြထားသည်။",
+    "zh": "泰国发电局（EGAT）介绍清洗空调五大好处的页面，把节省电费、降低开支列为其中一项。",
+    "de": "Die Seite der EGAT zu fünf Vorteilen der Klimaanlagen-Reinigung führt Stromsparen und tiefere Kosten als einen davon auf."
+   },
+   "src": "https://www.egat.co.th/home/save-energy-for-all-20220828/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Standard air-con cleaning in Chiang Mai–Lamphun by a Fastwork seller, priced by size",
+    "th": "ล้างแอร์มาตรฐานในเชียงใหม่–ลำพูนโดยผู้ขายบน Fastwork ราคาตามขนาด",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက ချင်းမိုင်–လမ်ဖွန်တွင် ပုံမှန်အဲယားကွန်းဆေးခြင်း၊ အရွယ်အစားအလိုက် စျေးသတ်မှတ်",
+    "zh": "Fastwork 卖家在清迈–南奔的标准空调清洗，按大小计价",
+    "de": "Standardreinigung von Klimaanlagen in Chiang Mai–Lamphun durch einen Anbieter auf Fastwork, Preis nach Grösse"
+   },
+   "p": {
+    "en": "9,000–12,000 BTU ฿500 · 18,000–24,000 BTU ฿600 · 25,000–36,000 BTU ฿700",
+    "th": "9,000–12,000 BTU ฿500 · 18,000–24,000 BTU ฿600 · 25,000–36,000 BTU ฿700",
+    "my": "9,000–12,000 BTU ฿500 · 18,000–24,000 BTU ฿600 · 25,000–36,000 BTU ฿700",
+    "zh": "9,000–12,000 BTU ฿500 · 18,000–24,000 BTU ฿600 · 25,000–36,000 BTU ฿700",
+    "de": "9,000–12,000 BTU ฿500 · 18,000–24,000 BTU ฿600 · 25,000–36,000 BTU ฿700"
+   },
+   "src": "https://fastwork.co/user/kayan.air/aircon-cleaning-24045829"
+  },
+  {
+   "t": {
+    "en": "A Chiang Mai–Lamphun plumber on Fastwork: pipes and faucets, priced by a quote after the technician talks through the job",
+    "th": "ช่างประปาในเชียงใหม่–ลำพูนบน Fastwork: ท่อและก๊อกน้ำ ราคาตามใบเสนอราคาหลังช่างคุยรายละเอียดงาน",
+    "my": "Fastwork ပေါ်ရှိ ချင်းမိုင်–လမ်ဖွန် ပိုက်ဆရာ: ပိုက်နှင့် ရေပိုက်ခေါင်း၊ ဆရာက အလုပ်အသေးစိတ်ကို ပြောပြီးနောက် ကိုးတေးရှင်းဖြင့် စျေးသတ်မှတ်သည်",
+    "zh": "Fastwork 上清迈–南奔的水管工：管道和水龙头，师傅谈清工作内容后按报价收费",
+    "de": "Klempner in Chiang Mai–Lamphun auf Fastwork: Rohre und Wasserhähne, Preis nach Offerte, sobald die Fachperson den Auftrag besprochen hat"
+   },
+   "p": {
+    "en": "From ฿500",
+    "th": "เริ่มต้น ฿500",
+    "my": "စတင်ဈေး ฿500",
+    "zh": "起价 ฿500",
+    "de": "Ab ฿500"
+   },
+   "src": "https://fastwork.co/user/kayan.air/plumbing-17034578"
+  },
+  {
+   "t": {
+    "en": "Electrician on Fastwork (serves Bangkok and nearby): sockets, switches, wiring and other electrical work",
+    "th": "ช่างไฟบน Fastwork (ให้บริการกรุงเทพฯ และปริมณฑล): ปลั๊ก สวิตช์ เดินสายไฟ และงานไฟฟ้าอื่น ๆ",
+    "my": "Fastwork ပေါ်ရှိ လျှပ်စစ်ဆရာ (ဘန်ကောက်နှင့် အနီးအနားတွင် ဝန်ဆောင်မှုပေး): ပလပ်ပေါက်၊ ခလုတ်၊ ကြိုးသွယ်ခြင်းနှင့် အခြား လျှပ်စစ်လုပ်ငန်းများ",
+    "zh": "Fastwork 上的电工（服务曼谷及周边）：插座、开关、布线及其他电气工作",
+    "de": "Elektriker auf Fastwork (Bangkok und Umgebung): Steckdosen, Schalter, Verkabelung und andere Elektroarbeiten"
+   },
+   "p": {
+    "en": "From ฿700",
+    "th": "เริ่มต้น ฿700",
+    "my": "စတင်ဈေး ฿700",
+    "zh": "起价 ฿700",
+    "de": "Ab ฿700"
+   },
+   "src": "https://fastwork.co/user/58powerservice/electrical-90737081"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does air-con cleaning cost in Chiang Mai?",
+    "th": "ล้างแอร์ในเชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် အဲယားကွန်းဆေးခြင်း ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "清迈洗空调要多少钱？",
+    "de": "Was kostet die Reinigung einer Klimaanlage in Chiang Mai?"
+   },
+   "a": {
+    "en": "One Fastwork seller in Chiang Mai–Lamphun lists a standard clean at ฿500 for 9,000 to 12,000 BTU, ฿600 for 18,000 to 24,000 BTU and ฿700 for 25,000 to 36,000 BTU. The listing gives one day for the job.",
+    "th": "ผู้ขายรายหนึ่งในเชียงใหม่–ลำพูนบน Fastwork ระบุล้างแอร์มาตรฐาน ฿500 สำหรับ 9,000–12,000 BTU ฿600 สำหรับ 18,000–24,000 BTU และ ฿700 สำหรับ 25,000–36,000 BTU รายการระบุระยะเวลา 1 วัน",
+    "my": "ချင်းမိုင်–လမ်ဖွန်ရှိ Fastwork ရောင်းချသူတစ်ဦးက ပုံမှန်ဆေးကြောခြင်းကို 9,000–12,000 BTU အတွက် ฿500၊ 18,000–24,000 BTU အတွက် ฿600၊ 25,000–36,000 BTU အတွက် ฿700 ဟု ဖော်ပြထားသည်။ စာရင်းတွင် အလုပ်တစ်ခုကို တစ်ရက်ဟု ဖော်ပြသည်။",
+    "zh": "清迈–南奔一位 Fastwork 卖家的标准清洗价格是：9,000–12,000 BTU ฿500，18,000–24,000 BTU ฿600，25,000–36,000 BTU ฿700。商品页写明做一次需要 1 天。",
+    "de": "Ein Anbieter in Chiang Mai–Lamphun auf Fastwork nennt für die Standardreinigung ฿500 bei 9,000 bis 12,000 BTU, ฿600 bei 18,000 bis 24,000 BTU und ฿700 bei 25,000 bis 36,000 BTU. Das Angebot gibt einen Tag für den Auftrag an."
+   },
+   "src": "https://fastwork.co/user/kayan.air/aircon-cleaning-24045829"
+  },
+  {
+   "q": {
+    "en": "How much does a plumber cost in Chiang Mai?",
+    "th": "ช่างประปาในเชียงใหม่คิดราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် ပိုက်ဆရာ ကြေး ဘယ်လောက်လဲ။",
+    "zh": "清迈请水管工要多少钱？",
+    "de": "Was kostet ein Klempner in Chiang Mai?"
+   },
+   "a": {
+    "en": "A Chiang Mai–Lamphun plumber on Fastwork lists ฿500 as the starting price for pipe and faucet repair or installation. The page gives no price table: the technician makes a quote after talking through the job with the customer.",
+    "th": "ช่างประปาในเชียงใหม่–ลำพูนบน Fastwork ระบุราคาเริ่มต้น ฿500 สำหรับซ่อมหรือติดตั้งท่อและก๊อกน้ำ หน้าเว็บไม่มีตารางราคา ช่างทำใบเสนอราคาหลังคุยรายละเอียดงานกับลูกค้า",
+    "my": "Fastwork ပေါ်ရှိ ချင်းမိုင်–လမ်ဖွန် ပိုက်ဆရာတစ်ဦးက ပိုက်နှင့် ရေပိုက်ခေါင်း ပြင်ခြင်း သို့မဟုတ် တပ်ဆင်ခြင်း၏ စတင်ဈေးကို ฿500 ဟု ဖော်ပြထားသည်။ စာမျက်နှာတွင် စျေးနှုန်းဇယား မရှိပါ — ဖောက်သည်နှင့် အလုပ်ကို ပြောပြီးနောက် ဆရာက ကိုးတေးရှင်း ပေးသည်။",
+    "zh": "Fastwork 上一位清迈–南奔的水管工，把管道和水龙头维修或安装的起价列为 ฿500。页面没有价目表：师傅与客户谈清工作内容后出报价。",
+    "de": "Ein Klempner in Chiang Mai–Lamphun auf Fastwork nennt ฿500 als Startpreis für die Reparatur oder den Einbau von Rohren und Wasserhähnen. Die Seite hat keine Preistabelle: Die Fachperson erstellt eine Offerte, nachdem sie den Auftrag mit der Kundschaft besprochen hat."
+   },
+   "src": "https://fastwork.co/user/kayan.air/plumbing-17034578"
+  },
+  {
+   "q": {
+    "en": "What number do I call when the water stops?",
+    "th": "น้ำไม่ไหล โทรเบอร์อะไร",
+    "my": "ရေမလာတော့လျှင် ဘယ်နံပါတ်ကို ခေါ်ရမလဲ။",
+    "zh": "停水了打哪个号码？",
+    "de": "Welche Nummer gilt, wenn das Wasser ausbleibt?"
+   },
+   "a": {
+    "en": "The Provincial Waterworks Authority's page gives 1662 for no water or low pressure, and a link to report online.",
+    "th": "หน้าเว็บของการประปาส่วนภูมิภาคระบุ 1662 สำหรับน้ำไม่ไหลหรือน้ำไหลอ่อน และมีลิงก์สำหรับแจ้งออนไลน์",
+    "my": "ပြည်နယ်ရေပေးဝေရေးအာဏာပိုင်၏ စာမျက်နှာတွင် ရေမလာခြင်း သို့မဟုတ် ဖိအားနည်းခြင်းအတွက် 1662 နှင့် အွန်လိုင်းတိုင်ကြားရန် လင့်ခ်ကို ပေးထားသည်။",
+    "zh": "省自来水局的页面给出 1662，用于停水或水压过低，并附有在线报告的链接。",
+    "de": "Die Seite der Provincial Waterworks Authority nennt 1662 für fehlendes Wasser oder niedrigen Druck und einen Link zur Online-Meldung."
+   },
+   "src": "https://www.pwa.co.th/en/"
+  },
+  {
+   "q": {
+    "en": "Who do I call about a power cut?",
+    "th": "ไฟดับ โทรหาใคร",
+    "my": "မီးပြတ်လျှင် ဘယ်သူ့ကို ခေါ်ရမလဲ။",
+    "zh": "停电了找谁？",
+    "de": "Wen rufe ich bei einem Stromausfall an?"
+   },
+   "a": {
+    "en": "The Provincial Electricity Authority's page gives 1129 as its Contact Center and links a Power Outage Notification page.",
+    "th": "หน้าเว็บของการไฟฟ้าส่วนภูมิภาคระบุ 1129 เป็นศูนย์บริการ และมีลิงก์หน้าแจ้งไฟฟ้าขัดข้อง",
+    "my": "ပြည်နယ်လျှပ်စစ်ဌာန၏ စာမျက်နှာတွင် 1129 ကို ဆက်သွယ်ရေးစင်တာအဖြစ် ပေးထားပြီး လျှပ်စစ်ပြတ်တောက်မှု အကြောင်းကြားစာမျက်နှာလင့်ခ် ပါသည်။",
+    "zh": "省电力局的页面把 1129 列为联络中心，并链接了停电通报页面。",
+    "de": "Die Seite der Provincial Electricity Authority nennt 1129 als Contact Center und verlinkt eine Seite für Stromausfallmeldungen."
+   },
+   "src": "https://www.pea.co.th/en"
+  }
+ ],
+ "related": [
+  "there",
+  "dispute",
+  "compare",
+  "call",
+  "move",
+  "clean-air"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Provincial Waterworks Authority: no water or low pressure",
+    "th": "การประปาส่วนภูมิภาค: น้ำไม่ไหลหรือน้ำไหลอ่อน",
+    "my": "ပြည်နယ်ရေပေးဝေရေးအာဏာပိုင်: ရေမလာခြင်း သို့မဟုတ် ရေဖိအားနည်းခြင်း",
+    "zh": "省自来水局：停水或水压过低",
+    "de": "Provincial Waterworks Authority: kein Wasser oder zu niedriger Druck"
+   },
+   "href": "https://www.pwa.co.th/en/"
+  },
+  {
+   "t": {
+    "en": "Provincial Electricity Authority: Contact Center 1129",
+    "th": "การไฟฟ้าส่วนภูมิภาค: ศูนย์บริการ 1129",
+    "my": "ပြည်နယ်လျှပ်စစ်ဌာန: ဆက်သွယ်ရေးစင်တာ 1129",
+    "zh": "省电力局：联络中心 1129",
+    "de": "Provincial Electricity Authority: Contact Center 1129"
+   },
+   "href": "https://www.pea.co.th/en"
+  }
+ ],
+ "glyphs": [
+  "wrench",
+  "lightning",
+  "key"
+ ]
+}

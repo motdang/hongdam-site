@@ -1,0 +1,807 @@
+{
+ "id": "grants",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Funders ask for different forms and set different dates. You get applications written to the funder's form, a case for support in English and Thai, and a calendar of funder deadlines.",
+  "th": "แหล่งทุนต้องการแบบฟอร์มและกำหนดส่งที่ต่างกัน คุณจะได้ใบสมัครทุนที่เขียนตามแบบของแหล่งทุน เอกสารนำเสนอภาษาอังกฤษและไทย และปฏิทินกำหนดส่งของแหล่งทุน",
+  "my": "ရန်ပုံငွေရှင်များသည် မတူညီသော ပုံစံများကို တောင်းဆိုပြီး မတူညီသော ရက်စွဲများကို သတ်မှတ်သည်။ သင်သည် ရန်ပုံငွေရှင်၏ ပုံစံအတိုင်း ရေးသားထားသော လျှောက်လွှာများ၊ အင်္ဂလိပ်နှင့် ထိုင်းဘာသာဖြင့် အထောက်အပံ့ တောင်းခံစာနှင့် ရန်ပုံငွေရှင်များ၏ နောက်ဆုံးရက် ပြက္ခဒိန်ကို ရရှိသည်။",
+  "zh": "资助方要求的表格不同，截止日期也不同。您会得到按资助方表格写成的申请、英文和泰文的募捐说明书，以及资助方截止日期的日历。",
+  "de": "Geldgeber verlangen verschiedene Formulare und setzen verschiedene Fristen. Sie erhalten Förderanträge im Formular des Geldgebers, ein Spendenkonzept auf Englisch und Thai und einen Kalender der Fristen."
+ },
+ "n": {
+  "de": "Fördergelder und Grossspenden"
+ },
+ "l": {
+  "de": "Förderanträge, ein Spendenkonzept, ein Kalender der Geldgeber."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "A written report names who funds work like yours, with their deadlines and fit",
+    "th": "รายงานเป็นลายลักษณ์อักษรระบุว่าใครให้ทุนงานแบบของคุณ พร้อมกำหนดส่งและความเหมาะสม",
+    "my": "ရေးသားထားသော အစီရင်ခံစာတွင် သင့်လုပ်ငန်းမျိုးကို ဘယ်သူများ ထောက်ပံ့သည်ကို နောက်ဆုံးရက်များနှင့် သင့်တော်မှုနှင့်အတူ ဖော်ပြသည်",
+    "zh": "书面报告列出谁资助与您类似的工作，并附上截止日期和契合度",
+    "de": "Ein schriftlicher Bericht nennt, wer Arbeit wie Ihre fördert, mit Fristen und Passung"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "A funder calendar lists the deadlines",
+    "th": "ปฏิทินแหล่งทุนระบุกำหนดส่ง",
+    "my": "ရန်ပုံငွေရှင် ပြက္ခဒိန်တွင် နောက်ဆုံးရက်များကို စာရင်းပြုစုထားသည်",
+    "zh": "资助方日历列出截止日期",
+    "de": "Ein Kalender der Geldgeber führt die Fristen auf"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the report",
+    "th": "หลังได้รายงาน",
+    "my": "အစီရင်ခံစာပြီးနောက်",
+    "zh": "报告完成后",
+    "de": "Nach dem Bericht"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The case for support is written in English and Thai",
+    "th": "เขียนเอกสารนำเสนอเป็นภาษาอังกฤษและไทย",
+    "my": "အထောက်အပံ့ တောင်းခံစာကို အင်္ဂလိပ်နှင့် ထိုင်းဘာသာဖြင့် ရေးသားသည်",
+    "zh": "用英文和泰文撰写募捐说明书",
+    "de": "Das Spendenkonzept wird auf Englisch und Thai verfasst"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接下来",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The application is researched and written to the funder's form",
+    "th": "ค้นข้อมูลและเขียนใบสมัครตามแบบของแหล่งทุน",
+    "my": "လျှောက်လွှာကို သုတေသနပြု၍ ရန်ပုံငွေရှင်၏ ပုံစံအတိုင်း ရေးသားသည်",
+    "zh": "调研后按资助方的表格撰写申请",
+    "de": "Der Antrag wird recherchiert und im Formular des Geldgebers verfasst"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "For the funder you pick",
+    "th": "สำหรับแหล่งทุนที่คุณเลือก",
+    "my": "သင်ရွေးသော ရန်ပုံငွေရှင်အတွက်",
+    "zh": "针对您选定的资助方",
+    "de": "Für den Geldgeber, den Sie wählen"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "65 of 1,256",
+   "t": {
+    "en": "Applications that won an award in 2025 from the Sumitomo Foundation's grant for Japan-related research",
+    "th": "ใบสมัครที่ได้รับทุนในปี 2568 จากทุนวิจัยที่เกี่ยวกับญี่ปุ่นของมูลนิธิสุมิโตโม",
+    "my": "2025 တွင် Sumitomo Foundation ၏ ဂျပန်နှင့်ဆိုင်သော သုတေသန ထောက်ပံ့ငွေကို ရရှိခဲ့သည့် လျှောက်လွှာများ",
+    "zh": "2025 年获得住友财团日本相关研究资助的申请数",
+    "de": "Anträge, die 2025 eine Förderung der Sumitomo Foundation für Japan-bezogene Forschung erhielten"
+   },
+   "src": "https://www.sumitomo.or.jp/e/Jare/japanrela.html"
+  },
+  {
+   "n": "£100,000",
+   "t": {
+    "en": "The most a large EMKP documentation grant pays, over up to two years",
+    "th": "จำนวนสูงสุดของทุนบันทึกข้อมูลขนาดใหญ่ของ EMKP ในช่วงไม่เกินสองปี",
+    "my": "EMKP မှတ်တမ်းတင်ထောက်ပံ့ငွေ အကြီးစား၏ အများဆုံးပမာဏ၊ နှစ်နှစ်အထိ ကာလအတွက်",
+    "zh": "EMKP 大额记录资助的上限，期限最长两年",
+    "de": "Der Höchstbetrag eines grossen Dokumentationszuschusses des EMKP, über bis zu zwei Jahre"
+   },
+   "src": "https://www.emkp.org/documentation-grants/"
+  },
+  {
+   "n": "A$21,000",
+   "t": {
+    "en": "The most the Australian Embassy's Direct Aid Program aims to fund for a project in Thailand, about ฿500,000 as at September 2026",
+    "th": "จำนวนสูงสุดที่ทุนสนับสนุนโดยตรงของสถานเอกอัครราชทูตออสเตรเลียตั้งเป้าให้ต่อโครงการในไทย ประมาณ ฿500,000 ณ เดือนกันยายน 2569",
+    "my": "ဩစတြေးလျသံရုံး၏ တိုက်ရိုက်အကူအညီ အစီအစဉ်က ထိုင်းနိုင်ငံရှိ စီမံကိန်းတစ်ခုလျှင် ထောက်ပံ့ရန် ရည်ရွယ်သော အများဆုံးပမာဏ၊ 2026 စက်တင်ဘာအချိန်တွင် ฿500,000 ခန့်",
+    "zh": "澳大利亚大使馆直接援助计划对泰国每个项目的资助目标上限，截至 2026 年 9 月约 ฿500,000",
+    "de": "Der Höchstbetrag, den das Direct Aid Program der Australischen Botschaft für ein Projekt in Thailand anstrebt, im September 2026 etwa ฿500,000"
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/DAP_2026-2027.html"
+  },
+  {
+   "n": "US$10,000",
+   "t": {
+    "en": "The most a Firebird Supplemental Research Grant pays, for recording equipment and the costs of collecting oral literature",
+    "th": "จำนวนสูงสุดของทุนวิจัยเสริมของ Firebird สำหรับอุปกรณ์บันทึกเสียงและค่าใช้จ่ายในการเก็บวรรณกรรมมุขปาฐะ",
+    "my": "Firebird ဖြည့်စွက်သုတေသန ထောက်ပံ့ငွေ၏ အများဆုံးပမာဏ၊ အသံသွင်းပစ္စည်းများနှင့် ပါးစပ်စာပေ စုဆောင်းစရိတ်များအတွက်",
+    "zh": "Firebird 补充研究资助的上限，用于录音设备和采集口头文学的费用",
+    "de": "Der Höchstbetrag eines Firebird Supplemental Research Grant, für Aufnahmegeräte und die Kosten der Erfassung mündlicher Literatur"
+   },
+   "src": "https://www.firebirdresearchgrants.org/firebird-foundation-supplemental-grant"
+  }
+ ],
+ "toy": {
+  "kind": "picker",
+  "h": {
+   "en": "Which funders open next?",
+   "th": "แหล่งทุนไหนเปิดรับเป็นรายถัดไป",
+   "my": "နောက်ထပ် ဘယ်ရန်ပုံငွေရှင်များ ဖွင့်မည်နည်း",
+   "zh": "接下来哪些资助方开放申请",
+   "de": "Welche Geldgeber öffnen als Nächste?"
+  },
+  "noscript": {
+   "en": "The funder picker needs JavaScript. Two of the funders, Firebird and Rufford, are in the answers below.",
+   "th": "ตัวเลือกแหล่งทุนต้องใช้ JavaScript แหล่งทุน 2 แห่ง คือ Firebird และ Rufford อยู่ในคำตอบด้านล่าง",
+   "my": "ရန်ပုံငွေရှင်ရွေးချယ်ကိရိယာသည် JavaScript လိုအပ်သည်။ ရန်ပုံငွေရှင် နှစ်ခုဖြစ်သော Firebird နှင့် Rufford ကို အောက်ပါအဖြေများတွင် ဖော်ပြထားသည်။",
+   "zh": "资助方选择器需要 JavaScript。其中两家，Firebird 和 Rufford，见下方的解答。",
+   "de": "Die Auswahl der Geldgeber braucht JavaScript. Zwei der Geldgeber, Firebird und Rufford, stehen in den Antworten weiter unten."
+  },
+  "data": {
+   "q": {
+    "en": "Pick a funder to see its date, what it funds and the usual size. Dates read on 24 October 2026.",
+    "th": "เลือกแหล่งทุนเพื่อดูกำหนดส่ง สิ่งที่ให้ทุน และขนาดทุนโดยทั่วไป วันที่ตรวจเมื่อ 24 ตุลาคม 2569",
+    "my": "ရန်ပုံငွေရှင်တစ်ခုကို ရွေး၍ ၎င်း၏ ရက်စွဲ၊ ထောက်ပံ့သည့်အရာနှင့် ပုံမှန်ပမာဏကို ကြည့်ပါ။ ရက်စွဲများကို 2026 အောက်တိုဘာ 24 ရက်တွင် ဖတ်ရှုခဲ့သည်။",
+    "zh": "选一家资助方，看它的日期、资助内容和一般金额。日期查阅于 2026 年 10 月 24 日。",
+    "de": "Wählen Sie einen Geldgeber und sehen Sie sein Datum, was er fördert und die übliche Höhe. Daten gelesen am 24. Oktober 2026."
+   },
+   "options": [
+    {
+     "id": "sumitomo",
+     "n": {
+      "en": "Sumitomo Foundation: Japan-related research",
+      "th": "มูลนิธิสุมิโตโม: งานวิจัยที่เกี่ยวกับญี่ปุ่น",
+      "my": "Sumitomo Foundation - ဂျပန်နှင့်ဆိုင်သော သုတေသန",
+      "zh": "住友财团：与日本相关的研究",
+      "de": "Sumitomo Foundation: Forschung mit Japanbezug"
+     },
+     "big": {
+      "en": "Closes 30 Oct 2026",
+      "th": "ปิดรับ 30 ต.ค. 2569",
+      "my": "2026 အောက်တိုဘာ 30 ပိတ်",
+      "zh": "2026年10月30日截止",
+      "de": "bis 30. Okt. 2026"
+     },
+     "t": {
+      "en": "The Sumitomo Foundation funds research in the social sciences or humanities that relates to Japan. Applicants are researchers of Asian, non-Japanese nationality who live outside Japan. The 2026 call runs from 1 September to 30 October 2026.",
+      "th": "มูลนิธิสุมิโตโมให้ทุนวิจัยด้านสังคมศาสตร์หรือมนุษยศาสตร์ที่เกี่ยวกับญี่ปุ่น ผู้สมัครเป็นนักวิจัยสัญชาติเอเชียที่ไม่ใช่ญี่ปุ่น และอาศัยอยู่นอกญี่ปุ่น รอบปี 2569 เปิดรับตั้งแต่ 1 กันยายน ถึง 30 ตุลาคม 2569",
+      "my": "Sumitomo Foundation သည် ဂျပန်နှင့်ဆိုင်သော လူမှုသိပ္ပံ သို့မဟုတ် လူ့ယဉ်ကျေးမှု ဘာသာရပ်များ သုတေသနကို ထောက်ပံ့သည်။ လျှောက်ထားသူများမှာ ဂျပန်နိုင်ငံသား မဟုတ်သော အာရှနိုင်ငံသား သုတေသီများဖြစ်ပြီး ဂျပန်ပြင်ပတွင် နေထိုင်သူများ ဖြစ်သည်။ 2026 ခေါ်ယူမှုသည် 2026 စက်တင်ဘာ 1 ရက်မှ အောက်တိုဘာ 30 ရက်အထိ ဖြစ်သည်။",
+      "zh": "住友财团资助与日本相关的社会科学或人文学科研究。申请人须是居住在日本以外、具亚洲国籍（非日本籍）的研究者。2026 年的征集从 9 月 1 日持续到 10 月 30 日。",
+      "de": "Die Sumitomo Foundation fördert Forschung in den Sozial- oder Geisteswissenschaften mit Bezug zu Japan. Antragstellende sind Forschende mit asiatischer, nicht japanischer Staatsangehörigkeit, die ausserhalb Japans leben. Die Ausschreibung 2026 läuft vom 1. September bis 30. Oktober 2026."
+     },
+     "facts": [
+      {
+       "en": "Total budget: ¥50,000,000 for 70 projects.",
+       "th": "งบประมาณรวม ¥50,000,000 สำหรับ 70 โครงการ",
+       "my": "စုစုပေါင်း ဘတ်ဂျက် - ¥50,000,000၊ စီမံကိန်း 70 ခုအတွက်။",
+       "zh": "总预算 ¥50,000,000，用于 70 个项目。",
+       "de": "Gesamtbudget: ¥50,000,000 für 70 Projekte."
+      },
+      {
+       "en": "Grant period: one year, April 2027 to March 2028, and up to two years in total on request in unavoidable cases.",
+       "th": "ระยะเวลาทุน 1 ปี ตั้งแต่เมษายน 2570 ถึงมีนาคม 2571 และขยายได้รวมไม่เกิน 2 ปีเมื่อร้องขอในกรณีจำเป็น",
+       "my": "ထောက်ပံ့ကာလ - တစ်နှစ်၊ 2027 ဧပြီမှ 2028 မတ်လအထိ ဖြစ်ပြီး ရှောင်လွှဲ၍မရသော အခြေအနေတွင် တောင်းဆိုပါက စုစုပေါင်း နှစ်နှစ်အထိ တိုးနိုင်သည်။",
+       "zh": "资助期为一年，2027 年 4 月至 2028 年 3 月；遇不可避免的情况，可申请延长，合计最长两年。",
+       "de": "Förderdauer: ein Jahr, April 2027 bis März 2028, auf Antrag in unvermeidbaren Fällen insgesamt bis zu zwei Jahre."
+      },
+      {
+       "en": "Applications are in English or Japanese.",
+       "th": "ยื่นใบสมัครเป็นภาษาอังกฤษหรือญี่ปุ่น",
+       "my": "လျှောက်လွှာကို အင်္ဂလိပ် သို့မဟုတ် ဂျပန်ဘာသာဖြင့် တင်သည်။",
+       "zh": "申请用英文或日文提交。",
+       "de": "Anträge werden auf Englisch oder Japanisch eingereicht."
+      }
+     ],
+     "src": "https://www.sumitomo.or.jp/e/Jare/japanrela.html"
+    },
+    {
+     "id": "emkp",
+     "n": {
+      "en": "Endangered Material Knowledge Programme (EMKP)",
+      "th": "โครงการ EMKP (Endangered Material Knowledge Programme)",
+      "my": "EMKP (Endangered Material Knowledge Programme) အစီအစဉ်",
+      "zh": "EMKP（Endangered Material Knowledge Programme）资助计划",
+      "de": "Endangered Material Knowledge Programme (EMKP)"
+     },
+     "big": {
+      "en": "Closes 1 Dec 2026",
+      "th": "ปิดรับ 1 ธ.ค. 2569",
+      "my": "2026 ဒီဇင်ဘာ 1 ပိတ်",
+      "zh": "2026年12月1日截止",
+      "de": "bis 1. Dez. 2026"
+     },
+     "t": {
+      "en": "EMKP gives grants to document material knowledge that is under threat and close to disappearing, such as the making, use and repair of objects, spaces, architecture, performances and environments. Small grants run up to one year and £20,000, and large grants up to two years and £100,000. Applicants of any nationality apply with a host institution.",
+      "th": "EMKP ให้ทุนบันทึกความรู้เชิงวัสดุที่ถูกคุกคามและใกล้สูญหาย เช่น การทำ การใช้ และการซ่อมวัตถุ พื้นที่ สถาปัตยกรรม การแสดง และสภาพแวดล้อม ทุนเล็กนานไม่เกิน 1 ปี วงเงินไม่เกิน £20,000 และทุนใหญ่นานไม่เกิน 2 ปี วงเงินไม่เกิน £100,000 ผู้สมัครสัญชาติใดก็ได้ ต้องสมัครผ่านสถาบันเจ้าภาพ",
+      "my": "EMKP သည် ခြိမ်းခြောက်ခံရပြီး ပျောက်ကွယ်လုနီးပါး ပစ္စည်းဆိုင်ရာ အသိပညာကို မှတ်တမ်းတင်ရန် ထောက်ပံ့ငွေပေးသည်။ ဥပမာ - ပစ္စည်းများ၊ နေရာများ၊ ဗိသုကာများ၊ ဖျော်ဖြေမှုများနှင့် ပတ်ဝန်းကျင်များကို ပြုလုပ်ခြင်း၊ အသုံးပြုခြင်းနှင့် ပြုပြင်ခြင်း။ အသေးစား ထောက်ပံ့ငွေသည် တစ်နှစ်အထိနှင့် £20,000 အထိ၊ အကြီးစားသည် နှစ်နှစ်အထိနှင့် £100,000 အထိ ဖြစ်သည်။ နိုင်ငံသားမည်သည်ဖြစ်စေ လျှောက်ထားသူများသည် လက်ခံထားသည့် အဖွဲ့အစည်း (host institution) တစ်ခုနှင့်အတူ လျှောက်ထားရသည်။",
+      "zh": "EMKP 资助记录那些受到威胁、濒临消失的物质知识，例如物品、空间、建筑、表演和环境的制作、使用与修缮。小额资助最长一年、最高 £20,000；大额资助最长两年、最高 £100,000。不限国籍，申请须通过一家主办机构。",
+      "de": "Das EMKP fördert die Dokumentation von materiellem Wissen, das bedroht ist und zu verschwinden droht, etwa das Herstellen, Benutzen und Instandsetzen von Gegenständen, Räumen, Bauwerken, Aufführungen und Umgebungen. Kleine Zuschüsse laufen bis zu einem Jahr und £20,000, grosse bis zu zwei Jahren und £100,000. Antragstellende jeder Nationalität bewerben sich über eine Trägerinstitution."
+     },
+     "facts": [
+      {
+       "en": "The 2026/2027 call closes at 12.00 GMT on 1 December 2026.",
+       "th": "รอบ 2026/2027 ปิดรับเวลา 12.00 น. GMT วันที่ 1 ธันวาคม 2569",
+       "my": "2026/2027 ခေါ်ယူမှုသည် 2026 ဒီဇင်ဘာ 1 ရက်၊ GMT 12.00 တွင် ပိတ်သည်။",
+       "zh": "2026/2027 年度的征集于 2026 年 12 月 1 日 GMT 12:00 截止。",
+       "de": "Die Ausschreibung 2026/2027 schliesst am 1. Dezember 2026 um 12.00 Uhr GMT."
+      },
+      {
+       "en": "Digital copies of the records go to the EMKP open-access repository, hosted by the British Museum.",
+       "th": "สำเนาดิจิทัลของบันทึกต้องส่งไปยังคลังข้อมูลเปิดของ EMKP ซึ่งโฮสต์โดยบริติชมิวเซียม",
+       "my": "မှတ်တမ်းများ၏ ဒစ်ဂျစ်တယ်မိတ္တူများကို British Museum က လက်ခံထားသော EMKP အများသုံး သိုလှောင်ရုံသို့ တင်ပေးရသည်။",
+       "zh": "记录的数字副本须上传到由大英博物馆托管的 EMKP 开放获取资料库。",
+       "de": "Digitale Kopien der Aufzeichnungen kommen in das frei zugängliche Repositorium des EMKP, das vom British Museum betrieben wird."
+      },
+      {
+       "en": "The programme sets no limit on where the work is carried out, and gives priority to places where research funding is limited.",
+       "th": "โครงการไม่จำกัดสถานที่ทำงาน และให้ความสำคัญกับพื้นที่ที่มีทุนวิจัยจำกัด",
+       "my": "အလုပ်ပြုလုပ်မည့်နေရာကို အစီအစဉ်က ကန့်သတ်မထားဘဲ သုတေသနရန်ပုံငွေ ကန့်သတ်ချက်ရှိသည့်နေရာများကို ဦးစားပေးသည်။",
+       "zh": "项目对工作地点没有限制，但优先考虑研究经费有限的地区。",
+       "de": "Das Programm schränkt den Ort der Arbeit nicht ein und bevorzugt Orte, an denen Forschungsgelder knapp sind."
+      }
+     ],
+     "src": "https://www.emkp.org/documentation-grants/"
+    },
+    {
+     "id": "firebird",
+     "n": {
+      "en": "Firebird Foundation for Anthropological Research",
+      "th": "มูลนิธิ Firebird เพื่อการวิจัยมานุษยวิทยา",
+      "my": "Firebird Foundation - မနုဿဗေဒ သုတေသနအတွက်",
+      "zh": "Firebird 人类学研究基金会",
+      "de": "Firebird Foundation für anthropologische Forschung"
+     },
+     "big": {
+      "en": "Closes 15 Jan 2027",
+      "th": "ปิดรับ 15 ม.ค. 2570",
+      "my": "2027 ဇန်နဝါရီ 15 ပိတ်",
+      "zh": "2027年1月15日截止",
+      "de": "bis 15. Jan. 2027"
+     },
+     "t": {
+      "en": "Firebird funds field research on disappearing oral literature and traditional ecological knowledge. The Supplemental Research Grant pays up to US$10,000 for recording equipment and the costs of collecting. The next window is 1 to 15 January 2027.",
+      "th": "Firebird ให้ทุนวิจัยภาคสนามเกี่ยวกับวรรณกรรมมุขปาฐะที่กำลังสูญหายและความรู้นิเวศวิทยาดั้งเดิม ทุนวิจัยเสริมให้ไม่เกิน US$10,000 สำหรับอุปกรณ์บันทึกเสียงและค่าใช้จ่ายในการเก็บข้อมูล ช่วงรับสมัครถัดไปคือ 1 ถึง 15 มกราคม 2570",
+      "my": "Firebird သည် ပျောက်ကွယ်လုနီးပါး ပါးစပ်စာပေနှင့် ရိုးရာ ဂေဟဗေဒ အသိပညာဆိုင်ရာ ကွင်းဆင်းသုတေသနကို ထောက်ပံ့သည်။ ဖြည့်စွက်သုတေသန ထောက်ပံ့ငွေသည် အသံသွင်းပစ္စည်းနှင့် စုဆောင်းစရိတ်များအတွက် US$10,000 အထိ ပေးသည်။ နောက်လျှောက်ထားနိုင်သည့်ကာလမှာ 2027 ဇန်နဝါရီ 1 ရက်မှ 15 ရက်အထိ ဖြစ်သည်။",
+      "zh": "Firebird 资助关于正在消失的口头文学和传统生态知识的田野研究。补充研究资助最高 US$10,000，用于录音设备和采集费用。下一个申请窗口是 2027 年 1 月 1 日至 15 日。",
+      "de": "Firebird fördert Feldforschung zu verschwindender mündlicher Literatur und traditionellem ökologischem Wissen. Der Supplemental Research Grant zahlt bis zu US$10,000 für Aufnahmegeräte und die Kosten der Erfassung. Das nächste Zeitfenster ist der 1. bis 15. Januar 2027."
+     },
+     "facts": [
+      {
+       "en": "Applications are reviewed twice a year, with deadlines on 15 January and 15 June.",
+       "th": "ตรวจใบสมัครปีละ 2 ครั้ง กำหนดส่งคือ 15 มกราคมและ 15 มิถุนายน",
+       "my": "လျှောက်လွှာများကို တစ်နှစ်လျှင် နှစ်ကြိမ် စိစစ်ပြီး နောက်ဆုံးရက်များမှာ ဇန်နဝါရီ 15 နှင့် ဇွန် 15 ဖြစ်သည်။",
+       "zh": "每年审核两次，截止日期为 1 月 15 日和 6 月 15 日。",
+       "de": "Anträge werden zweimal im Jahr geprüft, mit Fristen am 15. Januar und 15. Juni."
+      },
+      {
+       "en": "Applications are in English, and decisions come within three months of the deadline.",
+       "th": "ใบสมัครเป็นภาษาอังกฤษ และแจ้งผลภายในสามเดือนหลังกำหนดส่ง",
+       "my": "လျှောက်လွှာများကို အင်္ဂလိပ်ဘာသာဖြင့် တင်ပြီး ဆုံးဖြတ်ချက်ကို နောက်ဆုံးရက်မှ သုံးလအတွင်း ချမှတ်သည်။",
+       "zh": "申请须用英文，并在截止日期后三个月内作出决定。",
+       "de": "Anträge sind auf Englisch, und Entscheide fallen innerhalb von drei Monaten nach der Frist."
+      },
+      {
+       "en": "Ten percent of a grant is held until the final report and financial statement are received.",
+       "th": "เงินทุนร้อยละ 10 ถูกกันไว้จนกว่าจะได้รับรายงานฉบับสุดท้ายและงบการเงิน",
+       "my": "ထောက်ပံ့ငွေ၏ ဆယ်ရာခိုင်နှုန်းကို နောက်ဆုံးအစီရင်ခံစာနှင့် ဘဏ္ဍာရေးရှင်းတမ်း ရရှိသည်အထိ ထိန်းထားသည်။",
+       "zh": "拨款的百分之十扣留，直到收到最终报告和财务报表。",
+       "de": "Zehn Prozent eines Zuschusses werden zurückbehalten, bis der Schlussbericht und die Abrechnung vorliegen."
+      }
+     ],
+     "src": "https://www.firebirdresearchgrants.org/firebird-foundation-supplemental-grant"
+    },
+    {
+     "id": "rufford",
+     "n": {
+      "en": "Rufford Small Grants",
+      "th": "ทุนขนาดเล็ก Rufford",
+      "my": "Rufford ထောက်ပံ့ငွေသေးသေးလေးများ",
+      "zh": "Rufford 小额资助",
+      "de": "Rufford Small Grants"
+     },
+     "big": {
+      "en": "Rolling",
+      "th": "เปิดรับตลอดปี",
+      "my": "အချိန်မရွေး လက်ခံ",
+      "zh": "全年受理",
+      "de": "laufend"
+     },
+     "t": {
+      "en": "The Rufford Foundation funds nature conservation projects in emerging or developing economy countries. Grants range from £7,000 to £18,000 across four levels: first, second, booster and completion. It supports people early in a conservation career, mainly current MSc or PhD students and recent graduates.",
+      "th": "มูลนิธิ Rufford ให้ทุนโครงการอนุรักษ์ธรรมชาติในประเทศเศรษฐกิจเกิดใหม่หรือกำลังพัฒนา ทุนอยู่ระหว่าง £7,000 ถึง £18,000 แบ่งเป็น 4 ระดับ คือ ทุนแรก ทุนที่สอง ทุนเสริม และทุนปิดโครงการ สนับสนุนผู้ที่อยู่ในช่วงต้นของงานอนุรักษ์ ส่วนใหญ่เป็นนักศึกษาปริญญาโทหรือเอกและผู้จบการศึกษาใหม่",
+      "my": "Rufford Foundation သည် ပေါ်ထွန်းလာသော သို့မဟုတ် ဖွံ့ဖြိုးဆဲ စီးပွားရေးနိုင်ငံများရှိ သဘာဝထိန်းသိမ်းရေး စီမံကိန်းများကို ထောက်ပံ့သည်။ ထောက်ပံ့ငွေသည် အဆင့်လေးဆင့်ဖြင့် £7,000 မှ £18,000 အထိ ရှိပြီး 1st RSG၊ 2nd RSG၊ Booster Grant နှင့် Completion Grant တို့ ဖြစ်သည်။ ထိန်းသိမ်းရေးလုပ်ငန်း အစပိုင်းတွင် ရှိသူများ၊ အဓိကအားဖြင့် လက်ရှိ MSc သို့မဟုတ် PhD ကျောင်းသားများနှင့် ဘွဲ့ရခါစသူများကို ထောက်ပံ့သည်။",
+      "zh": "Rufford 基金会资助新兴或发展中经济体国家的自然保护项目。资助额为 £7,000 至 £18,000，分四个层级：首次资助、第二次资助、加力资助和结题资助。支持保护事业起步阶段的人，主要是在读的硕士或博士生和应届毕业生。",
+      "de": "Die Rufford Foundation fördert Naturschutzprojekte in Schwellen- und Entwicklungsländern. Die Beträge reichen von £7,000 bis £18,000 und verteilen sich auf vier Stufen: erste, zweite, Booster- und Abschlussförderung. Unterstützt werden Menschen am Anfang einer Naturschutzlaufbahn, vor allem Master- oder Doktoratsstudierende und frische Absolventinnen und Absolventen."
+     },
+     "facts": [
+      {
+       "en": "There are no deadlines, and applications go in at any time of year.",
+       "th": "ไม่มีกำหนดส่ง ยื่นใบสมัครได้ตลอดปี",
+       "my": "နောက်ဆုံးရက် မရှိပါ။ တစ်နှစ်ပတ်လုံး အချိန်မရွေး လျှောက်ထားနိုင်သည်။",
+       "zh": "没有截止日期，全年随时可以申请。",
+       "de": "Es gibt keine Fristen; Anträge sind zu jeder Zeit des Jahres möglich."
+      },
+      {
+       "en": "An unsuccessful applicant may apply again after 12 months.",
+       "th": "ผู้ที่ไม่ได้รับทุนสมัครใหม่ได้หลังผ่านไป 12 เดือน",
+       "my": "မအောင်မြင်သူသည် 12 လကြာပြီးနောက် ပြန်လည်လျှောက်ထားနိုင်သည်။",
+       "zh": "未获资助者可在 12 个月后再次申请。",
+       "de": "Wer abgelehnt wird, kann sich nach 12 Monaten erneut bewerben."
+      },
+      {
+       "en": "The project works in an eligible country with species considered threatened; undergraduate students are not funded.",
+       "th": "โครงการต้องทำงานในประเทศที่มีสิทธิ์ กับชนิดพันธุ์ที่ถูกจัดว่าถูกคุกคาม และไม่ให้ทุนนักศึกษาระดับปริญญาตรี",
+       "my": "စီမံကိန်းသည် အရည်အချင်းပြည့်မီသော နိုင်ငံတွင် ခြိမ်းခြောက်ခံနေရသည်ဟု သတ်မှတ်ထားသော မျိုးစိတ်များနှင့် လုပ်ကိုင်ရသည်။ ဘွဲ့ကြိုကျောင်းသားများကို မထောက်ပံ့ပါ။",
+       "zh": "项目须在符合条件的国家开展，涉及的物种须被视为受威胁；本科生不在资助之列。",
+       "de": "Das Projekt arbeitet in einem förderfähigen Land mit Arten, die als bedroht gelten; Bachelorstudierende werden nicht gefördert."
+      }
+     ],
+     "src": "https://apply.ruffordsmallgrants.org/"
+    },
+    {
+     "id": "dap",
+     "n": {
+      "en": "Australian Embassy Direct Aid Program, Thailand",
+      "th": "ทุนสนับสนุนโดยตรง สถานเอกอัครราชทูตออสเตรเลีย",
+      "my": "ထိုင်းရှိ ဩစတြေးလျသံရုံး၏ တိုက်ရိုက်အကူအညီ အစီအစဉ်",
+      "zh": "澳大利亚驻泰国大使馆直接援助计划",
+      "de": "Direct Aid Program der Australischen Botschaft in Thailand"
+     },
+     "big": {
+      "en": "Closed 22 Oct 2026",
+      "th": "ปิดรับแล้ว 22 ต.ค. 2569",
+      "my": "2026 အောက်တိုဘာ 22 ပိတ်ပြီး",
+      "zh": "2026年10月22日已截止",
+      "de": "geschlossen 22. Okt. 2026"
+     },
+     "t": {
+      "en": "The Direct Aid Program is a small grants scheme of the Australian Embassy in Thailand for projects that give direct benefit to people most in need in local Thai communities. Not-for-profit individuals, community groups and NGOs apply, and the embassy aims to fund projects up to A$21,000, about ฿500,000 as at September 2026. The 2026-2027 round closed at 8pm on 22 October 2026.",
+      "th": "ทุนสนับสนุนโดยตรง (Direct Aid Program) เป็นทุนขนาดเล็กของสถานเอกอัครราชทูตออสเตรเลียประจำประเทศไทย สำหรับโครงการที่ให้ประโยชน์โดยตรงแก่ผู้ที่ต้องการความช่วยเหลือมากที่สุดในชุมชนไทย บุคคลที่ไม่แสวงหากำไร กลุ่มชุมชน และองค์กรพัฒนาเอกชนสมัครได้ สถานทูตตั้งเป้าให้ทุนโครงการไม่เกิน A$21,000 ประมาณ ฿500,000 ณ เดือนกันยายน 2569 รอบ 2569-2570 ปิดรับเวลา 20.00 น. วันที่ 22 ตุลาคม 2569",
+      "my": "တိုက်ရိုက်အကူအညီ အစီအစဉ် (Direct Aid Program) သည် ထိုင်းနိုင်ငံရှိ ဩစတြေးလျသံရုံး၏ ထောက်ပံ့ငွေသေးသေးလေးများ အစီအစဉ်ဖြစ်ပြီး ဒေသတွင်း ထိုင်းရပ်ရွာများရှိ အကူအညီ အလိုအပ်ဆုံးသူများကို တိုက်ရိုက်အကျိုးပြုသည့် စီမံကိန်းများအတွက် ဖြစ်သည်။ အကျိုးအမြတ်မယူသော တစ်ဦးချင်းများ၊ ရပ်ရွာအုပ်စုများနှင့် NGO များ လျှောက်ထားနိုင်ပြီး သံရုံးသည် စီမံကိန်းများကို A$21,000 အထိ ထောက်ပံ့ရန် ရည်ရွယ်သည်။ ၎င်းသည် 2026 စက်တင်ဘာအချိန်တွင် ฿500,000 ခန့် ဖြစ်သည်။ 2026-2027 အကြိမ်သည် 2026 အောက်တိုဘာ 22 ရက် ည 8 နာရီတွင် ပိတ်ခဲ့သည်။",
+      "zh": "直接援助计划（Direct Aid Program）是澳大利亚驻泰国大使馆的小额资助计划，资助让泰国当地社区中最需要帮助的人直接受益的项目。非营利的个人、社区团体和非政府组织可以申请，大使馆的目标是资助不超过 A$21,000 的项目，截至 2026 年 9 月约合 ฿500,000。2026-2027 年度的申请已于 2026 年 10 月 22 日晚 8 点截止。",
+      "de": "Das Direct Aid Program ist ein Kleinzuschussprogramm der Australischen Botschaft in Thailand für Projekte, die den Bedürftigsten in thailändischen Gemeinden unmittelbar nützen. Gemeinnützige Einzelpersonen, Gemeindegruppen und NGOs bewerben sich; die Botschaft will Projekte bis A$21,000 fördern, im September 2026 etwa ฿500,000. Die Runde 2026-2027 schloss am 22. Oktober 2026 um 20 Uhr."
+     },
+     "facts": [
+      {
+       "en": "Priority sectors include community health, schools and education, environmental protection, gender equality and support for people with disabilities.",
+       "th": "สาขาที่ให้ความสำคัญ ได้แก่ สุขภาพชุมชน โรงเรียนและการศึกษา การคุ้มครองสิ่งแวดล้อม ความเท่าเทียมทางเพศ และการสนับสนุนผู้พิการ",
+       "my": "ဦးစားပေးကဏ္ဍများတွင် ရပ်ရွာကျန်းမာရေး၊ ကျောင်းများနှင့် ပညာရေး၊ ပတ်ဝန်းကျင်ကာကွယ်ရေး၊ ကျားမတန်းတူရေးနှင့် မသန်စွမ်းသူများအား ထောက်ပံ့ခြင်းတို့ ပါဝင်သည်။",
+       "zh": "优先领域包括社区健康、学校与教育、环境保护、性别平等和对残障人士的支持。",
+       "de": "Zu den Schwerpunkten zählen Gesundheit in den Gemeinden, Schulen und Bildung, Umweltschutz, Gleichstellung der Geschlechter und Unterstützung für Menschen mit Behinderungen."
+      },
+      {
+       "en": "Applications go through the SmartyGrants portal, in English or Thai, with two referees.",
+       "th": "ยื่นผ่านระบบ SmartyGrants เป็นภาษาอังกฤษหรือไทย พร้อมผู้รับรอง 2 คน",
+       "my": "လျှောက်လွှာများကို SmartyGrants ပေါ်တယ်မှတစ်ဆင့် အင်္ဂလိပ် သို့မဟုတ် ထိုင်းဘာသာဖြင့် ရည်ညွှန်းသူ နှစ်ဦးနှင့်အတူ တင်သည်။",
+       "zh": "通过 SmartyGrants 平台提交，可用英文或泰文，并附两名推荐人。",
+       "de": "Anträge laufen über das Portal SmartyGrants, auf Englisch oder Thai, mit zwei Referenzpersonen."
+      },
+      {
+       "en": "Running costs and administrative expenses, such as staff salaries and office rent, are not usually funded.",
+       "th": "ค่าดำเนินการและค่าบริหาร เช่น เงินเดือนเจ้าหน้าที่และค่าเช่าสำนักงาน โดยปกติไม่ได้รับทุน",
+       "my": "ဝန်ထမ်းလစာနှင့် ရုံးခန်းငှားခကဲ့သို့ လည်ပတ်စရိတ်နှင့် စီမံခန့်ခွဲစရိတ်များကို ပုံမှန်အားဖြင့် မထောက်ပံ့ပါ။",
+       "zh": "运营费用和行政开支，例如员工工资和办公室租金，通常不予资助。",
+       "de": "Laufende Kosten und Verwaltungsausgaben, etwa Gehälter und Büromiete, werden in der Regel nicht gefördert."
+      }
+     ],
+     "src": "https://thailand.embassy.gov.au/bkok/DAP_2026-2027.html"
+    }
+   ],
+   "start": "sumitomo",
+   "oursLine": {
+    "en": "Hongdam writes the applications and the case for support, and keeps the funder calendar, from:",
+    "th": "หงส์ดำเขียนใบสมัครทุนและเอกสารนำเสนอ และทำปฏิทินแหล่งทุน เริ่มต้น:",
+    "my": "ဟုန်ဒမ်သည် ထောက်ပံ့ငွေ လျှောက်လွှာများနှင့် အထောက်အပံ့ တောင်းခံစာကို ရေးသားပြီး ရန်ပုံငွေ ပြက္ခဒိန်ကို ထိန်းသိမ်းပေးသည့် စတင်ဈေး -",
+    "zh": "鸿丹撰写申请和募捐说明书，并维护资助方日历，起价：",
+    "de": "Hongdam schreibt die Förderanträge und das Spendenkonzept und führt den Kalender der Geldgeber, ab:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "A case for support, also called a case statement, holds the organisation's mission, vision and values. It answers who the organisation helps, what its track record is, what it plans and how it uses its money.",
+    "th": "เอกสารนำเสนอ (case for support) หรือ case statement ระบุพันธกิจ วิสัยทัศน์ และค่านิยมขององค์กร และตอบว่าองค์กรช่วยใคร มีผลงานอะไร วางแผนอะไร และใช้เงินอย่างไร",
+    "my": "အထောက်အပံ့ တောင်းခံစာ (case for support) သို့မဟုတ် case statement တွင် အဖွဲ့အစည်း၏ ရည်မှန်းချက်၊ အမြင်နှင့် တန်ဖိုးများ ပါဝင်သည်။ ဘယ်သူ့ကို ကူညီသည်၊ လုပ်ဆောင်ချက်မှတ်တမ်း ဘာလဲ၊ အစီအစဉ်ရှိသည်များနှင့် ငွေကို မည်သို့သုံးသည်တို့ကို ဖြေသည်။",
+    "zh": "募捐说明书（case for support，又称 case statement）写明机构的使命、愿景和价值观，并回答它帮助谁、有什么工作记录、有什么计划，以及资金怎么用。",
+    "de": "Ein Spendenkonzept (case for support, auch case statement) hält Mission, Vision und Werte der Organisation fest. Es beantwortet, wem sie hilft, welche Bilanz sie hat, was sie plant und wie sie ihr Geld einsetzt."
+   },
+   "src": "https://learning.candid.org/fundraising-case-statement/275393"
+  },
+  {
+   "t": {
+    "en": "Firebird reviews applications twice a year, with deadlines on 15 January and 15 June. A submission window opens two weeks before each deadline, and an application outside a window is not considered.",
+    "th": "Firebird ตรวจใบสมัครปีละ 2 ครั้ง กำหนดส่งคือ 15 มกราคมและ 15 มิถุนายน ช่วงรับสมัครเปิดล่วงหน้าสองสัปดาห์ก่อนกำหนดส่ง และใบสมัครที่ส่งนอกช่วงไม่ได้รับการพิจารณา",
+    "my": "Firebird သည် လျှောက်လွှာများကို တစ်နှစ်လျှင် နှစ်ကြိမ် စိစစ်ပြီး နောက်ဆုံးရက်များမှာ ဇန်နဝါရီ 15 နှင့် ဇွန် 15 ဖြစ်သည်။ လျှောက်ထားသည့်ကာလသည် နောက်ဆုံးရက်မတိုင်မီ နှစ်ပတ်အလိုတွင် ဖွင့်ပြီး ကာလပြင်ပတွင် တင်သော လျှောက်လွှာကို မစဉ်းစားပါ။",
+    "zh": "Firebird 每年审核两次申请，截止日期为 1 月 15 日和 6 月 15 日。提交窗口在截止日前两周开放，窗口之外提交的申请不予考虑。",
+    "de": "Firebird prüft Anträge zweimal im Jahr, mit Fristen am 15. Januar und 15. Juni. Ein Einreichfenster öffnet zwei Wochen vor der Frist, und ein Antrag ausserhalb des Fensters wird nicht berücksichtigt."
+   },
+   "src": "https://www.firebirdresearchgrants.org/"
+  },
+  {
+   "t": {
+    "en": "Firebird holds back ten percent of a grant until the final report and financial statement are received, and its funds are for direct research costs only.",
+    "th": "Firebird กันเงินทุนร้อยละ 10 ไว้จนกว่าจะได้รับรายงานฉบับสุดท้ายและงบการเงิน และเงินทุนใช้กับต้นทุนการวิจัยโดยตรงเท่านั้น",
+    "my": "Firebird သည် ထောက်ပံ့ငွေ၏ ဆယ်ရာခိုင်နှုန်းကို နောက်ဆုံးအစီရင်ခံစာနှင့် ဘဏ္ဍာရေးရှင်းတမ်း ရရှိသည်အထိ ထိန်းထားပြီး ရန်ပုံငွေကို တိုက်ရိုက်သုတေသနစရိတ်များအတွက်သာ သုံးရသည်။",
+    "zh": "Firebird 扣留拨款的百分之十，直到收到最终报告和财务报表；资金仅用于直接研究费用。",
+    "de": "Firebird behält zehn Prozent eines Zuschusses zurück, bis der Schlussbericht und die Abrechnung vorliegen, und seine Mittel sind nur für direkte Forschungskosten bestimmt."
+   },
+   "src": "https://www.firebirdresearchgrants.org/firebird-foundation-supplemental-grant"
+  },
+  {
+   "t": {
+    "en": "EMKP takes applicants of any nationality and academic background, if they apply with a host institution that provides independent financial and ethical oversight.",
+    "th": "EMKP รับผู้สมัครทุกสัญชาติและพื้นฐานการศึกษา หากสมัครร่วมกับสถาบันเจ้าภาพที่กำกับดูแลด้านการเงินและจริยธรรมได้อย่างเป็นอิสระ",
+    "my": "EMKP သည် နိုင်ငံသားနှင့် ပညာရေးနောက်ခံ မည်သည့်အမျိုးအစားဖြစ်စေ လျှောက်ထားသူများကို လက်ခံသည်။ သို့သော် ငွေကြေးနှင့် ကျင့်ဝတ်ဆိုင်ရာ ကြီးကြပ်မှုကို လွတ်လပ်စွာ ပေးနိုင်သည့် လက်ခံအဖွဲ့အစည်း (host institution) တစ်ခုနှင့်အတူ လျှောက်ထားရသည်။",
+    "zh": "EMKP 接受任何国籍和学术背景的申请人，条件是通过一家能提供独立财务和伦理监督的主办机构申请。",
+    "de": "Das EMKP nimmt Antragstellende jeder Nationalität und jedes akademischen Hintergrunds an, wenn sie sich über eine Trägerinstitution bewerben, die unabhängige finanzielle und ethische Aufsicht bietet."
+   },
+   "src": "https://www.emkp.org/documentation-grants/"
+  },
+  {
+   "t": {
+    "en": "The Australian Embassy's Direct Aid Program takes applications only through its SmartyGrants portal, and applications submitted after the closing time are not considered.",
+    "th": "ทุนสนับสนุนโดยตรงของสถานเอกอัครราชทูตออสเตรเลียรับใบสมัครผ่านระบบ SmartyGrants เท่านั้น และใบสมัครที่ส่งหลังเวลาปิดรับไม่ได้รับการพิจารณา",
+    "my": "ဩစတြေးလျသံရုံး၏ တိုက်ရိုက်အကူအညီ အစီအစဉ်သည် လျှောက်လွှာများကို SmartyGrants ပေါ်တယ်မှတစ်ဆင့်သာ လက်ခံပြီး ပိတ်ချိန်ပြီးမှ တင်သော လျှောက်လွှာများကို မစဉ်းစားပါ။",
+    "zh": "澳大利亚大使馆的直接援助计划只通过 SmartyGrants 平台接收申请，截止时间之后提交的申请不予考虑。",
+    "de": "Das Direct Aid Program der Australischen Botschaft nimmt Anträge nur über das Portal SmartyGrants an, und nach Ablauf der Frist eingereichte Anträge werden nicht berücksichtigt."
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/DAP_2026-2027.html"
+  },
+  {
+   "t": {
+    "en": "The Revenue Department's e-Donation system takes in gifts to schools, places of worship, state hospitals and the public charities named in a Ministry of Finance notice. A receiving unit holds a 13-digit unit number and registers with its founding certificate, the signer's appointment and the signer's ID.",
+    "th": "ระบบบริจาคอิเล็กทรอนิกส์ (e-Donation) ของกรมสรรพากรรับข้อมูลการบริจาคของสถานศึกษา ศาสนสถาน สถานพยาบาลของรัฐ และองค์การสาธารณกุศลที่ประกาศกระทรวงการคลังกำหนด หน่วยรับบริจาคมีเลขประจำตัวหน่วยรับบริจาค 13 หลัก และลงทะเบียนด้วยหนังสือรับรองการจัดตั้ง หนังสือแต่งตั้งผู้มีอำนาจ และบัตรประจำตัวของผู้มีอำนาจลงนาม",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန၏ e-Donation စနစ်သည် ကျောင်းများ၊ ဘာသာရေးအဆောက်အအုံများ၊ အစိုးရဆေးရုံများနှင့် ဘဏ္ဍာရေးဝန်ကြီးဌာန ကြေညာချက်တွင် အမည်ပါသော ပြည်သူ့ကောင်းမှုအဖွဲ့အစည်းများထံ လှူဒါန်းမှုများကို လက်ခံသည်။ လှူဒါန်းငွေလက်ခံသည့် အဖွဲ့တွင် 13 လုံးပါ လက်ခံအဖွဲ့နံပါတ် ရှိပြီး တည်ထောင်မှုလက်မှတ်၊ လက်မှတ်ထိုးသူ၏ ခန့်အပ်စာနှင့် လက်မှတ်ထိုးသူ၏ ကတ်ပြားတို့ဖြင့် မှတ်ပုံတင်သည်။",
+    "zh": "税务厅的 e-Donation 系统接收对学校、宗教场所、公立医院，以及财政部公告所列公益机构的捐款记录。受捐单位持有 13 位的受捐单位编号，并凭设立证明、授权签署人的任命书和签署人身份证件登记。",
+    "de": "Das e-Donation-System des Revenue Department erfasst Spenden an Schulen, Kultstätten, staatliche Spitäler und die gemeinnützigen Organisationen, die eine Bekanntmachung des Finanzministeriums nennt. Eine Empfangsstelle hat eine 13-stellige Nummer und meldet sich mit der Gründungsbescheinigung, der Ernennung der zeichnungsberechtigten Person und deren Ausweis an."
+   },
+   "src": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "t": {
+    "en": "IRS Publication 526 lists foreign organisations, other than certain Canadian, Israeli and Mexican charities, among those a US donor cannot deduct a gift to. A gift to a US charity for a programme run by a foreign charity is deductible when the gift is not earmarked for the foreign charity and the US charity approves the programme and keeps control of the funds.",
+    "th": "เอกสาร IRS Publication 526 ระบุว่าผู้บริจาคในสหรัฐฯ หักลดหย่อนเงินบริจาคให้องค์กรต่างประเทศไม่ได้ ยกเว้นองค์กรการกุศลบางแห่งในแคนาดา อิสราเอล และเม็กซิโก การบริจาคให้องค์กรการกุศลในสหรัฐฯ เพื่อโครงการที่องค์กรการกุศลต่างประเทศดำเนินการ หักลดหย่อนได้เมื่อไม่ได้ระบุให้ส่งต่อองค์กรต่างประเทศนั้น และองค์กรในสหรัฐฯ อนุมัติโครงการและควบคุมการใช้เงิน",
+    "my": "IRS Publication 526 တွင် အမေရိကန်လှူဒါန်းသူသည် ကနေဒါ၊ အစ္စရေးနှင့် မက္ကဆီကိုရှိ အချို့သော ပရဟိတအဖွဲ့များမှလွဲ၍ နိုင်ငံခြားအဖွဲ့အစည်းများသို့ လှူသည့်ငွေကို နုတ်ယူခွင့်မရှိဟု ဖော်ပြထားသည်။ နိုင်ငံခြားပရဟိတအဖွဲ့က လုပ်ဆောင်သည့် အစီအစဉ်အတွက် အမေရိကန်ပရဟိတအဖွဲ့သို့ လှူသည့်ငွေကို နိုင်ငံခြားအဖွဲ့ထံ သီးသန့်ထားခြင်း မရှိဘဲ အမေရိကန်အဖွဲ့က အစီအစဉ်ကို အတည်ပြုပြီး ငွေအသုံးပြုမှုကို ထိန်းချုပ်ထားလျှင် နုတ်ယူနိုင်သည်။",
+    "zh": "美国国税局第 526 号出版物写明，美国捐款人向外国机构捐款不可扣除，加拿大、以色列和墨西哥的部分慈善机构除外。向美国慈善机构捐款、用于外国慈善机构开展的项目，在捐款没有指定转给该外国机构、且美国机构批准项目并掌控资金时，可以扣除。",
+    "de": "Die IRS-Publikation 526 führt ausländische Organisationen, ausser bestimmten kanadischen, israelischen und mexikanischen Wohltätigkeitsorganisationen, unter denen auf, an die ein US-Spender nichts abziehen kann. Eine Spende an eine US-Organisation für ein Programm einer ausländischen Organisation ist abziehbar, wenn sie nicht für die ausländische Organisation zweckbestimmt ist und die US-Organisation das Programm genehmigt und die Mittel kontrolliert."
+   },
+   "src": "https://www.irs.gov/publications/p526"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Freelance grant writer, mid-level, in a July 2026 cost guide (Grantable)",
+    "th": "นักเขียนขอทุนฟรีแลนซ์ระดับกลาง ในคู่มือค่าใช้จ่ายเดือนกรกฎาคม 2569 (Grantable)",
+    "my": "အလယ်အလတ်အဆင့် ဖရီးလန်စ် ထောက်ပံ့ငွေရေးသူ၊ 2026 ဇူလိုင် ကုန်ကျစရိတ်လမ်းညွှန် (Grantable)",
+    "zh": "中级自由职业基金申请撰写人，见 2026 年 7 月的费用指南（Grantable）",
+    "de": "Freiberufliche Fachperson mittlerer Stufe, laut Kostenführer vom Juli 2026 (Grantable)"
+   },
+   "p": {
+    "en": "US$50–95 an hour; about US$75 is typical",
+    "th": "US$50–95 ต่อชั่วโมง โดยทั่วไปประมาณ US$75",
+    "my": "တစ်နာရီ US$50–95၊ ပုံမှန်အားဖြင့် US$75 ခန့်",
+    "zh": "每小时 US$50–95，常见约 US$75",
+    "de": "US$50–95 pro Stunde, typisch etwa US$75"
+   },
+   "src": "https://grantable.co/how-much-does-a-grant-writer-cost"
+  },
+  {
+   "t": {
+    "en": "A letter of inquiry to a foundation, written for you (Grantable)",
+    "th": "หนังสือสอบถามเบื้องต้นถึงมูลนิธิผู้ให้ทุน (letter of inquiry) ที่เขียนให้ (Grantable)",
+    "my": "ဖောင်ဒေးရှင်သို့ စုံစမ်းမေးမြန်းစာ (letter of inquiry) ကို ရေးပေးခြင်း (Grantable)",
+    "zh": "代写给基金会的意向咨询函（letter of inquiry）（Grantable）",
+    "de": "Anfragebrief (letter of inquiry) an eine Stiftung, für Sie geschrieben (Grantable)"
+   },
+   "p": {
+    "en": "US$400–1,200",
+    "th": "US$400–1,200",
+    "my": "US$400–1,200",
+    "zh": "US$400–1,200",
+    "de": "US$400–1,200"
+   },
+   "src": "https://grantable.co/how-much-does-a-grant-writer-cost"
+  },
+  {
+   "t": {
+    "en": "A foundation grant proposal, written for you (Grantable)",
+    "th": "ใบเสนอขอทุนจากมูลนิธิที่เขียนให้ (Grantable)",
+    "my": "ဖောင်ဒေးရှင်သို့ ထောက်ပံ့ငွေ လျှောက်လွှာတစ်စောင်ကို ရေးပေးခြင်း (Grantable)",
+    "zh": "代写给基金会的申请书（Grantable）",
+    "de": "Stiftungsantrag, für Sie geschrieben (Grantable)"
+   },
+   "p": {
+    "en": "US$1,500–5,000 a proposal",
+    "th": "US$1,500–5,000 ต่อฉบับ",
+    "my": "တစ်စောင်လျှင် US$1,500–5,000",
+    "zh": "每份 US$1,500–5,000",
+    "de": "US$1,500–5,000 pro Antrag"
+   },
+   "src": "https://grantable.co/how-much-does-a-grant-writer-cost"
+  },
+  {
+   "t": {
+    "en": "A monthly retainer for a grant writer (Grantable)",
+    "th": "ค่าจ้างรายเดือนประจำสำหรับนักเขียนขอทุน (Grantable)",
+    "my": "ထောက်ပံ့ငွေရေးသူအတွက် လစဉ် ကြိုတင်စာချုပ်ကြေး (Grantable)",
+    "zh": "基金申请撰写人的月度聘用费（Grantable）",
+    "de": "Monatliche Pauschale für eine Fachperson für Förderanträge (Grantable)"
+   },
+   "p": {
+    "en": "US$2,000–6,000 a month",
+    "th": "US$2,000–6,000 ต่อเดือน",
+    "my": "တစ်လလျှင် US$2,000–6,000",
+    "zh": "每月 US$2,000–6,000",
+    "de": "US$2,000–6,000 im Monat"
+   },
+   "src": "https://grantable.co/how-much-does-a-grant-writer-cost"
+  },
+  {
+   "t": {
+    "en": "Fastwork, an innovation consultant who helps with funding proposals (pincube): a one-hour online consultation",
+    "th": "Fastwork ที่ปรึกษานวัตกรรมที่ช่วยเรื่องข้อเสนอขอทุน (pincube): ให้คำปรึกษาออนไลน์ 1 ชั่วโมง",
+    "my": "Fastwork ရန်ပုံငွေ လျှောက်လွှာများတွင် ကူညီသော ဆန်းသစ်တီထွင်မှု အတိုင်ပင်ခံ (pincube): အွန်လိုင်းအကြံပေးမှု တစ်နာရီ",
+    "zh": "Fastwork 上帮忙写资金申请的创新顾问（pincube）：1 小时在线咨询",
+    "de": "Fastwork, Innovationsberatung mit Hilfe bei Förderanträgen (pincube): eine Stunde Online-Beratung"
+   },
+   "p": {
+    "en": "฿1,000",
+    "th": "฿1,000",
+    "my": "฿1,000",
+    "zh": "฿1,000",
+    "de": "฿1,000"
+   },
+   "src": "https://fastwork.co/user/pincube/business-15669468"
+  },
+  {
+   "t": {
+    "en": "Fastwork, the same consultant (pincube): up to 4 hours of consultation and a proposal document of up to 15 pages",
+    "th": "Fastwork ที่ปรึกษาคนเดียวกัน (pincube): ให้คำปรึกษาไม่เกิน 4 ชั่วโมง พร้อมเอกสารข้อเสนอโครงการไม่เกิน 15 หน้า",
+    "my": "Fastwork အတိုင်ပင်ခံတစ်ဦးတည်း (pincube): အကြံပေးမှု 4 နာရီအထိနှင့် စာမျက်နှာ 15 မျက်နှာအထိ စီမံကိန်းလျှောက်လွှာစာတမ်းတစ်ခု",
+    "zh": "Fastwork 上同一位顾问（pincube）：最多 4 小时咨询，外加一份不超过 15 页的申请文件",
+    "de": "Fastwork, dieselbe Beratung (pincube): bis zu 4 Stunden Beratung und ein Antragsdokument von bis zu 15 Seiten"
+   },
+   "p": {
+    "en": "฿5,500; ฿12,500 for up to 7 hours and a presentation of up to 20 pages",
+    "th": "฿5,500 ส่วน ฿12,500 ได้คำปรึกษาไม่เกิน 7 ชั่วโมง และสไลด์นำเสนอไม่เกิน 20 หน้า",
+    "my": "฿5,500၊ ฿12,500 တွင် အကြံပေးမှု 7 နာရီအထိနှင့် စာမျက်နှာ 20 မျက်နှာအထိ တင်ပြမှုစလိုက်ဒ်များ ပါဝင်သည်",
+    "zh": "฿5,500；฿12,500 含最多 7 小时咨询和一份不超过 20 页的演示文稿",
+    "de": "฿5,500; ฿12,500 für bis zu 7 Stunden und eine Präsentation von bis zu 20 Seiten"
+   },
+   "src": "https://fastwork.co/user/pincube/business-15669468"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does grant writing mean?",
+    "th": "การเขียนขอทุนคืออะไร",
+    "my": "ထောက်ပံ့ငွေ လျှောက်လွှာရေးခြင်းဆိုသည်မှာ ဘာလဲ",
+    "zh": "“写基金申请”是什么意思",
+    "de": "Was bedeutet Förderanträge schreiben?"
+   },
+   "a": {
+    "en": "Grant writing is preparing the application a funder asks for. The Sumitomo Foundation, for one, publishes an application guide, instructions and a form for its 2026 call, and takes applications in English or Japanese.",
+    "th": "การเขียนขอทุนคือการจัดทำใบสมัครตามที่แหล่งทุนกำหนด ตัวอย่างเช่น มูลนิธิสุมิโตโมเผยแพร่คู่มือการสมัคร คำแนะนำ และแบบฟอร์มสำหรับรอบปี 2569 และรับใบสมัครเป็นภาษาอังกฤษหรือญี่ปุ่น",
+    "my": "ထောက်ပံ့ငွေ လျှောက်လွှာရေးခြင်းဆိုသည်မှာ ရန်ပုံငွေရှင်တောင်းဆိုသော လျှောက်လွှာကို ပြင်ဆင်ခြင်း ဖြစ်သည်။ ဥပမာ Sumitomo Foundation သည် 2026 ခေါ်ယူမှုအတွက် လျှောက်လွှာလမ်းညွှန်၊ ညွှန်ကြားချက်များနှင့် ပုံစံကို ထုတ်ပြန်ပြီး အင်္ဂလိပ် သို့မဟုတ် ဂျပန်ဘာသာဖြင့် လက်ခံသည်။",
+    "zh": "写基金申请，就是准备资助方要求的申请材料。以住友财团为例，它为 2026 年的征集发布了申请指南、说明和表格，接受英文或日文申请。",
+    "de": "Förderanträge schreiben heisst, den Antrag vorzubereiten, den ein Geldgeber verlangt. Die Sumitomo Foundation etwa veröffentlicht für ihre Ausschreibung 2026 einen Leitfaden, Hinweise und ein Formular und nimmt Anträge auf Englisch oder Japanisch entgegen."
+   },
+   "src": "https://www.sumitomo.or.jp/e/Jare/japanrela.html"
+  },
+  {
+   "q": {
+    "en": "Are there grant writers for hire, and what do they charge?",
+    "th": "มีรับจ้างเขียนขอทุนไหม และคิดราคาเท่าไร",
+    "my": "ထောက်ပံ့ငွေ လျှောက်လွှာ ငှားရမ်းရေးသူများ ရှိပါသလား၊ ဘယ်လောက်ယူသနည်း",
+    "zh": "有没有可以雇用的基金申请撰写人？收费多少",
+    "de": "Gibt es Fachleute für Förderanträge zu mieten, und was kosten sie?"
+   },
+   "a": {
+    "en": "Yes. A cost guide dated July 2026 puts a mid-level freelance grant writer at US$50–95 an hour and a foundation proposal at US$1,500–5,000. The guide's publisher sells AI grant software, and the page calls its figures industry ranges, not quotes.",
+    "th": "มี คู่มือค่าใช้จ่ายฉบับเดือนกรกฎาคม 2569 ระบุว่านักเขียนขอทุนฟรีแลนซ์ระดับกลางคิด US$50–95 ต่อชั่วโมง และใบเสนอขอทุนจากมูลนิธิ US$1,500–5,000 ผู้เผยแพร่คู่มือขายซอฟต์แวร์ AI สำหรับเขียนขอทุน และหน้านี้ระบุว่าตัวเลขเป็นช่วงราคาในอุตสาหกรรม ไม่ใช่ราคาเสนอ",
+    "my": "ရှိသည်။ 2026 ဇူလိုင်ရက်စွဲပါ ကုန်ကျစရိတ်လမ်းညွှန်တစ်ခုအရ အလယ်အလတ်အဆင့် ဖရီးလန်စ် ထောက်ပံ့ငွေရေးသူသည် တစ်နာရီ US$50–95၊ ဖောင်ဒေးရှင်း လျှောက်လွှာတစ်စောင်သည် US$1,500–5,000 ဖြစ်သည်။ လမ်းညွှန်ထုတ်ဝေသူသည် AI ထောက်ပံ့ငွေရေးသားရေး ဆော့ဖ်ဝဲကို ရောင်းချပြီး ကိန်းဂဏန်းများကို လုပ်ငန်းနယ်ပယ်အတွင်း နှုန်းထားအကွာအဝေးများသာဖြစ်ပြီး ကိုးကားစျေးမဟုတ်ဟု စာမျက်နှာက ဆိုသည်။",
+    "zh": "有。2026 年 7 月的一份费用指南称，中级自由职业基金申请撰写人每小时 US$50–95，一份基金会申请书 US$1,500–5,000。该指南的发布方出售 AI 写作软件，页面称这些数字是行业区间，不是报价。",
+    "de": "Ja. Ein Kostenführer vom Juli 2026 nennt für eine freiberufliche Fachperson mittlerer Stufe US$50–95 pro Stunde und für einen Stiftungsantrag US$1,500–5,000. Der Herausgeber des Führers verkauft KI-Software für Förderanträge, und die Seite bezeichnet die Zahlen als Branchenspannen, nicht als Offerten."
+   },
+   "src": "https://grantable.co/how-much-does-a-grant-writer-cost"
+  },
+  {
+   "q": {
+    "en": "Where can I find a grant writer in Thailand?",
+    "th": "หาคนรับเขียนขอทุนในไทยได้ที่ไหน",
+    "my": "ထိုင်းနိုင်ငံတွင် ထောက်ပံ့ငွေ လျှောက်လွှာရေးသူကို ဘယ်မှာ ရှာနိုင်သနည်း",
+    "zh": "在泰国哪里能找到基金申请撰写人",
+    "de": "Wo finde ich in Thailand jemanden für Förderanträge?"
+   },
+   "a": {
+    "en": "Fastwork, a Thai freelance marketplace, lists consultants who help with funding proposals. One listing offers a one-hour online consultation for ฿1,000 and, for ฿5,500, up to 4 hours of consultation with a document of up to 15 pages.",
+    "th": "Fastwork ตลาดฟรีแลนซ์ไทย มีที่ปรึกษารับช่วยเขียนข้อเสนอขอทุน ประกาศหนึ่งเสนอให้คำปรึกษาออนไลน์ 1 ชั่วโมง ฿1,000 และราคา ฿5,500 ได้คำปรึกษาไม่เกิน 4 ชั่วโมง พร้อมเอกสารไม่เกิน 15 หน้า",
+    "my": "Fastwork ဆိုသည့် ထိုင်းဖရီးလန်စ်ဈေးကွက်တွင် ရန်ပုံငွေတောင်းခံစာများ ရေးရာတွင် ကူညီသော အတိုင်ပင်ခံများကို စာရင်းတင်ထားသည်။ ကြေညာတစ်ခုတွင် အွန်လိုင်းအကြံပေးမှု တစ်နာရီကို ฿1,000 ဖြင့်လည်းကောင်း၊ ฿5,500 ဖြင့် အကြံပေးမှု 4 နာရီအထိနှင့် စာမျက်နှာ 15 မျက်နှာအထိ စာတမ်းတစ်ခုကိုလည်းကောင်း ပေးသည်။",
+    "zh": "Fastwork 是泰国的自由职业者平台，上面有帮人写资金申请书的顾问。其中一则服务，1 小时在线咨询 ฿1,000；฿5,500 含最多 4 小时咨询和一份不超过 15 页的文件。",
+    "de": "Fastwork, ein thailändischer Marktplatz für Freiberufler, führt Beratende auf, die bei Förderanträgen helfen. Ein Angebot kostet ฿1,000 für eine Online-Beratung von einer Stunde und ฿5,500 für bis zu 4 Stunden Beratung mit einem Dokument von bis zu 15 Seiten."
+   },
+   "src": "https://fastwork.co/user/pincube/business-15669468"
+  },
+  {
+   "q": {
+    "en": "How should an application be written to win a grant?",
+    "th": "เขียนขอทุนยังไงให้ได้ทุน",
+    "my": "ရန်ပုံငွေရရန် လျှောက်လွှာကို မည်သို့ ရေးသင့်သနည်း",
+    "zh": "基金申请怎么写才能拿到资助",
+    "de": "Wie schreibt man einen Antrag, der eine Förderung erhält?"
+   },
+   "a": {
+    "en": "A funder's guidelines say what it checks. Firebird requires an itemised budget at current prices, caps indirect costs at 3%, and disqualifies an application whose letters of recommendation come inside the packet instead of directly from the recommender.",
+    "th": "แนวทางของแหล่งทุนบอกว่าแหล่งทุนตรวจอะไรบ้าง Firebird ต้องการงบประมาณแบบแยกรายการตามราคาปัจจุบัน จำกัดค่าใช้จ่ายทางอ้อมไม่เกิน 3% และตัดสิทธิ์ใบสมัครที่แนบจดหมายรับรองมาในชุดเอกสาร แทนที่จะให้ผู้รับรองส่งตรง",
+    "my": "ရန်ပုံငွေရှင်၏ လမ်းညွှန်ချက်များက သူတို့ စစ်ဆေးသည့်အရာကို ပြောပြသည်။ Firebird သည် လက်ရှိစျေးနှုန်းအတိုင်း အသေးစိတ် ခွဲခြားထားသော ဘတ်ဂျက်ကို တောင်းဆိုပြီး သွယ်ဝိုက်ကုန်ကျစရိတ်ကို 3% ဖြင့် ကန့်သတ်ထားသည်။ ထောက်ခံစာများကို ထောက်ခံသူထံမှ တိုက်ရိုက်မလာဘဲ လျှောက်လွှာထုပ်ထဲတွင် ထည့်ထားပါက လျှောက်လွှာကို အရည်အချင်းမပြည့်မီဟု သတ်မှတ်သည်။",
+    "zh": "资助方的指南说明它检查什么。Firebird 要求按现行价格列出明细预算，间接费用上限为 3%；推荐信若放在申请材料包里、而不是由推荐人直接寄送，申请即被取消资格。",
+    "de": "Die Richtlinien eines Geldgebers sagen, was er prüft. Firebird verlangt ein nach Posten aufgeschlüsseltes Budget zu aktuellen Preisen, begrenzt indirekte Kosten auf 3% und schliesst Anträge aus, deren Empfehlungsschreiben im Antragspaket liegen, statt direkt von der empfehlenden Person zu kommen."
+   },
+   "src": "https://www.firebirdresearchgrants.org/"
+  },
+  {
+   "q": {
+    "en": "Where can I see examples of funded projects?",
+    "th": "ดูตัวอย่างโครงการที่ได้ทุนได้ที่ไหน",
+    "my": "ထောက်ပံ့ငွေရခဲ့သော စီမံကိန်းနမူနာများကို ဘယ်မှာ ကြည့်နိုင်သနည်း",
+    "zh": "哪里能看到获得资助的项目范例",
+    "de": "Wo sehe ich Beispiele geförderter Projekte?"
+   },
+   "a": {
+    "en": "Some funders publish them. The Sumitomo Foundation lists the research projects it funded each year from 2010 to 2025, and posts its selection reviews for 2023, 2024 and 2025.",
+    "th": "แหล่งทุนบางแห่งเผยแพร่ไว้ มูลนิธิสุมิโตโมมีรายชื่อโครงการวิจัยที่ให้ทุนแต่ละปีตั้งแต่ปี 2553 ถึง 2568 และเผยแพร่บทสรุปผลการคัดเลือกของปี 2566 2567 และ 2568",
+    "my": "ရန်ပုံငွေရှင်အချို့က ထုတ်ပြန်ထားသည်။ Sumitomo Foundation သည် 2010 မှ 2025 အထိ နှစ်စဉ် ထောက်ပံ့ခဲ့သော သုတေသနစီမံကိန်းများကို စာရင်းပြုစုထားပြီး 2023၊ 2024 နှင့် 2025 အတွက် ရွေးချယ်မှု သုံးသပ်ချက်များကို တင်ထားသည်။",
+    "zh": "有些资助方会公布。住友财团列出了 2010 年至 2025 年每年获资助的研究项目，并发布 2023、2024 和 2025 年的评审回顾。",
+    "de": "Manche Geldgeber veröffentlichen sie. Die Sumitomo Foundation listet die Forschungsprojekte, die sie von 2010 bis 2025 jedes Jahr förderte, und stellt ihre Auswahlberichte für 2023, 2024 und 2025 ins Netz."
+   },
+   "src": "https://www.sumitomo.or.jp/e/Jare/japanrela.html"
+  },
+  {
+   "q": {
+    "en": "What is a case for support?",
+    "th": "เอกสารนำเสนอ (case for support) คืออะไร",
+    "my": "အထောက်အပံ့ တောင်းခံစာ (case for support) ဆိုသည်မှာ ဘာလဲ",
+    "zh": "什么是募捐说明书（case for support）",
+    "de": "Was ist ein Spendenkonzept (case for support)?"
+   },
+   "a": {
+    "en": "A case for support, also called a case statement, is the core document of a fundraising campaign, in Candid's words. It states the organisation's mission, vision and values, and answers who it helps, what its track record is, what it plans and how it uses its money.",
+    "th": "เอกสารนำเสนอ หรือ case statement เป็นเอกสารหลักของแคมเปญระดมทุน ตามที่ Candid ระบุ เอกสารนี้ระบุพันธกิจ วิสัยทัศน์ และค่านิยมขององค์กร และตอบว่าองค์กรช่วยใคร มีผลงานอะไร วางแผนอะไร และใช้เงินอย่างไร",
+    "my": "အထောက်အပံ့ တောင်းခံစာ သို့မဟုတ် case statement သည် Candid ၏ စကားအရ ရန်ပုံငွေစုဆောင်းမှုလှုပ်ရှားမှု၏ အဓိကစာတမ်း ဖြစ်သည်။ အဖွဲ့အစည်း၏ ရည်မှန်းချက်၊ အမြင်နှင့် တန်ဖိုးများကို ဖော်ပြပြီး ဘယ်သူ့ကို ကူညီသည်၊ လုပ်ဆောင်ချက်မှတ်တမ်း ဘာလဲ၊ အစီအစဉ်ရှိသည်များနှင့် ငွေကို မည်သို့သုံးသည်တို့ကို ဖြေသည်။",
+    "zh": "按 Candid 的说法，募捐说明书（case for support，又称 case statement）是募捐活动的核心文件。它写明机构的使命、愿景和价值观，并回答它帮助谁、有什么工作记录、有什么计划，以及资金怎么用。",
+    "de": "Ein Spendenkonzept (case for support, auch case statement) ist laut Candid das Kerndokument einer Spendenkampagne. Es hält Mission, Vision und Werte der Organisation fest und beantwortet, wem sie hilft, welche Bilanz sie hat, was sie plant und wie sie ihr Geld einsetzt."
+   },
+   "src": "https://learning.candid.org/fundraising-case-statement/275393"
+  },
+  {
+   "q": {
+    "en": "Is there a grant I can apply for at any time of year?",
+    "th": "มีทุนที่ยื่นได้ตลอดปีไหม",
+    "my": "တစ်နှစ်ပတ်လုံး အချိန်မရွေး လျှောက်နိုင်သော ထောက်ပံ့ငွေ ရှိပါသလား",
+    "zh": "有没有全年随时可以申请的资助",
+    "de": "Gibt es eine Förderung, für die man sich jederzeit bewerben kann?"
+   },
+   "a": {
+    "en": "The Rufford Foundation's small grants for nature conservation have no deadlines, and applications go in at any time of year. Grants range from £7,000 to £18,000, and an unsuccessful applicant may apply again after 12 months.",
+    "th": "ทุนขนาดเล็กด้านอนุรักษ์ธรรมชาติของมูลนิธิ Rufford ไม่มีกำหนดส่ง ยื่นใบสมัครได้ตลอดปี ทุนอยู่ระหว่าง £7,000 ถึง £18,000 และผู้ที่ไม่ได้รับทุนสมัครใหม่ได้หลังผ่านไป 12 เดือน",
+    "my": "Rufford Foundation ၏ သဘာဝထိန်းသိမ်းရေး ထောက်ပံ့ငွေသေးသေးလေးများတွင် နောက်ဆုံးရက် မရှိဘဲ တစ်နှစ်ပတ်လုံး အချိန်မရွေး လျှောက်ထားနိုင်သည်။ ထောက်ပံ့ငွေသည် £7,000 မှ £18,000 အထိ ရှိပြီး မအောင်မြင်သူသည် 12 လကြာပြီးနောက် ပြန်လျှောက်နိုင်သည်။",
+    "zh": "Rufford 基金会面向自然保护的小额资助没有截止日期，全年随时可以提交。资助额为 £7,000 至 £18,000，未获资助者可在 12 个月后再次申请。",
+    "de": "Die Kleinzuschüsse der Rufford Foundation für den Naturschutz haben keine Fristen; Anträge sind jederzeit möglich. Die Beträge reichen von £7,000 bis £18,000, und wer abgelehnt wird, kann sich nach 12 Monaten erneut bewerben."
+   },
+   "src": "https://apply.ruffordsmallgrants.org/"
+  },
+  {
+   "q": {
+    "en": "Which gifts count for the Thai deduction from 2026?",
+    "th": "การบริจาคแบบใดใช้สิทธิลดหย่อนภาษีได้ตั้งแต่ปี 2569",
+    "my": "2026 မှစ၍ ထိုင်းအခွန်နုတ်ယူခွင့်အတွက် မည်သည့်လှူဒါန်းမှုများ ရသနည်း",
+    "zh": "从 2026 年起，哪些捐款可以享受泰国税前扣除",
+    "de": "Welche Spenden zählen ab 2026 für den thailändischen Abzug?"
+   },
+   "a": {
+    "en": "From 1 January 2026, gifts to temples, foundations, associations, funds and other bodies that give a deduction go through the Revenue Department's e-Donation system only. This holds for individuals and for companies and partnerships.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 การบริจาคให้วัด มูลนิธิ สมาคม กองทุน และองค์กรอื่นที่ผู้บริจาคได้สิทธิหักลดหย่อน ต้องใช้ระบบ e-Donation ของกรมสรรพากรเท่านั้น ใช้กับทั้งบุคคลธรรมดาและบริษัทหรือห้างหุ้นส่วนนิติบุคคล",
+    "my": "2026 ဇန်နဝါရီ 1 ရက်မှစ၍ ဘုန်းကြီးကျောင်း၊ ဖောင်ဒေးရှင်း၊ အသင်း၊ ရန်ပုံငွေနှင့် နုတ်ယူခွင့်ပေးသော အခြားအဖွဲ့များသို့ လှူဒါန်းမှုများကို ဝင်ငွေခွန်ဦးစီးဌာန၏ e-Donation စနစ်မှသာ ပြုလုပ်ရသည်။ ၎င်းသည် တစ်ဦးချင်းများနှင့် ကုမ္ပဏီများ၊ ပူးတွဲလုပ်ငန်းများအတွက် အကျုံးဝင်သည်။",
+    "zh": "自 2026 年 1 月 1 日起，向寺庙、基金会、协会、基金及其他可抵扣的机构捐款，只能通过税务厅的 e-Donation 系统办理。个人以及公司和合伙企业都适用。",
+    "de": "Seit dem 1. Januar 2026 laufen Spenden an Tempel, Stiftungen, Vereine, Fonds und weitere Stellen, für die ein Abzug gilt, nur über das e-Donation-System des Revenue Department. Das gilt für Privatpersonen sowie für Firmen und Personengesellschaften."
+   },
+   "src": "https://thestandard.co/donation-tax-deduction-e-donation-2026/"
+  }
+ ],
+ "related": [
+  "giving",
+  "decks",
+  "proposal",
+  "event-kit",
+  "research",
+  "translate"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Candid: what is a case statement?",
+    "th": "Candid: case statement คืออะไร",
+    "my": "Candid - case statement ဆိုသည်မှာ ဘာလဲ",
+    "zh": "Candid：什么是 case statement",
+    "de": "Candid: Was ist ein case statement?"
+   },
+   "href": "https://learning.candid.org/fundraising-case-statement/275393"
+  },
+  {
+   "t": {
+    "en": "Revenue Department: e-Donation questions and answers (Thai)",
+    "th": "กรมสรรพากร: คำถาม-คำตอบ ระบบบริจาคอิเล็กทรอนิกส์",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန - e-Donation မေးဆို-ဖြေဆိုချက် (ထိုင်းဘာသာ)",
+    "zh": "税务厅：e-Donation 问答（泰文）",
+    "de": "Revenue Department: Fragen und Antworten zu e-Donation (Thai)"
+   },
+   "href": "https://epayapp.rd.go.th/rd-edonation/assets/portal/document/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A_V1.0_20220104.pdf"
+  },
+  {
+   "t": {
+    "en": "Grantable: how much a grant writer costs (2026)",
+    "th": "Grantable: นักเขียนขอทุนคิดราคาเท่าไร (2569)",
+    "my": "Grantable - ထောက်ပံ့ငွေရေးသူ၏ ကုန်ကျစရိတ် (2026)",
+    "zh": "Grantable：基金申请撰写人收费多少（2026）",
+    "de": "Grantable: Was Fachleute für Förderanträge kosten (2026)"
+   },
+   "href": "https://grantable.co/how-much-does-a-grant-writer-cost"
+  },
+  {
+   "t": {
+    "en": "Fastwork: innovation consultant for funding proposals (pincube)",
+    "th": "Fastwork: ที่ปรึกษาการสร้างนวัตกรรม ขอทุน/ประกวด (pincube)",
+    "my": "Fastwork - ထောက်ပံ့ငွေလျှောက်ရန် ဆန်းသစ်တီထွင်မှု အတိုင်ပင်ခံ (pincube)",
+    "zh": "Fastwork：创新与资金申请顾问（pincube）",
+    "de": "Fastwork: Innovationsberatung für Förderanträge (pincube)"
+   },
+   "href": "https://fastwork.co/user/pincube/business-15669468"
+  }
+ ],
+ "glyphs": [
+  "page",
+  "calendar",
+  "gift"
+ ]
+}

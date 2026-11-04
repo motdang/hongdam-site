@@ -1,0 +1,265 @@
+{
+ "id": "web-search",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A site with many pages needs a way to find one page, and Thai text has no spaces between words.",
+  "th": "เว็บที่มีหลายหน้าต้องมีทางค้นหาหน้าที่ต้องการ และตัวอักษรไทยไม่มีช่องว่างระหว่างคำ",
+  "my": "စာမျက်နှာများစွာရှိသော ဝက်ဘ်ဆိုက်တွင် လိုချင်သည့် စာမျက်နှာကို ရှာနိုင်သည့်နည်း လိုပြီး ထိုင်းစာတွင် စကားလုံးများကြားတွင် နေရာလွတ် မရှိပါ။",
+  "zh": "页面多的网站需要一个找到某一页的办法，而泰文的词与词之间没有空格。",
+  "de": "Eine Website mit vielen Unterseiten braucht eine Möglichkeit, eine bestimmte Seite zu finden, und Thai wird ohne Leerzeichen zwischen den Wörtern geschrieben."
+ },
+ "n": {
+  "de": "Suchfeld für Ihre Seite"
+ },
+ "l": {
+  "de": "Thai und Englisch, durchsucht Ihre Seiten."
+ },
+ "glyphs": [
+  "search",
+  "translate",
+  "page"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "Your pages are read into the search, in Thai and English.",
+    "th": "นำหน้าเว็บของคุณเข้าสู่ระบบค้นหา ทั้งไทยและอังกฤษ",
+    "my": "သင့်စာမျက်နှာများကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ရှာဖွေရေးထဲသို့ ထည့်သွင်းသည်။",
+    "zh": "把您的网页读入搜索，支持泰文和英文。",
+    "de": "Ihre Seiten werden in die Suche eingelesen, auf Thai und Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "The search box is set up over those pages.",
+    "th": "ตั้งช่องค้นหาครอบหน้าเหล่านั้น",
+    "my": "ထိုစာမျက်နှာများအပေါ်တွင် ရှာဖွေရေးအကွက်ကို တပ်ဆင်သည်။",
+    "zh": "在这些页面之上设置搜索框。",
+    "de": "Das Suchfeld wird über diesen Seiten eingerichtet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接下来",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "The box sits on your site and takes Thai or English.",
+    "th": "ช่องค้นหาอยู่บนเว็บของคุณ พิมพ์ได้ทั้งไทยและอังกฤษ",
+    "my": "ရှာဖွေရေးအကွက်က သင့်ဆိုက်ပေါ်တွင်ရှိပြီး ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဖြင့် ရိုက်ရှာနိုင်သည်။",
+    "zh": "搜索框放在您的网站上，可输入泰文或英文。",
+    "de": "Das Feld sitzt auf Ihrer Website und nimmt Thai oder Englisch an."
+   },
+   "who": {
+    "en": "Your page",
+    "th": "หน้าเว็บของคุณ",
+    "my": "သင့်စာမျက်နှာ",
+    "zh": "您的页面",
+    "de": "Ihre Seite"
+   },
+   "time": {
+    "en": "Once it is on",
+    "th": "เมื่อติดตั้งแล้ว",
+    "my": "တင်ပြီးသည့်အခါ",
+    "zh": "放上之后",
+    "de": "Sobald es steht"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thai, Chinese, Japanese, Lao, Khmer and Myanmar put no spaces between words, so splitting text on spaces gives the wrong words. Browsers offer Intl.Segmenter to split such text into words, available across browsers since April 2024.",
+    "th": "ภาษาไทย จีน ญี่ปุ่น ลาว เขมร และพม่าไม่เว้นวรรคระหว่างคำ การตัดคำด้วยช่องว่างจึงได้คำที่ผิด เบราว์เซอร์มี Intl.Segmenter สำหรับตัดคำ และใช้ได้ข้ามเบราว์เซอร์ตั้งแต่เมษายน 2024",
+    "my": "ထိုင်း၊ တရုတ်၊ ဂျပန်၊ လာအို၊ ခမာနှင့် မြန်မာစာတို့တွင် စကားလုံးကြားတွင် နေရာလွတ် မခြားပါ။ ထို့ကြောင့် နေရာလွတ်ဖြင့် ဖြတ်ပါက စကားလုံး မှားသွားသည်။ ဘရောက်ဇာများတွင် ထိုစာသားကို စကားလုံးခွဲရန် Intl.Segmenter ရှိပြီး 2024 ဧပြီလမှစ၍ ဘရောက်ဇာအများအပြားတွင် သုံးနိုင်သည်။",
+    "zh": "泰文、中文、日文、老挝文、高棉文和缅甸文的词与词之间不留空格，按空格切分会得到错误的词。浏览器提供 Intl.Segmenter 来把这类文字切成词，自 2024 年 4 月起各浏览器均可使用。",
+    "de": "Thai, Chinesisch, Japanisch, Laotisch, Khmer und Birmanisch setzen keine Leerzeichen zwischen die Wörter; wer an Leerzeichen trennt, erhält falsche Wörter. Browser bieten dafür Intl.Segmenter, seit April 2024 browserübergreifend verfügbar."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
+  },
+  {
+   "t": {
+    "en": "Google's Custom Search JSON API is closed to new customers; existing customers have until 1 January 2027 to move to another solution. Google names Vertex AI Search as an alternative for up to 50 domains.",
+    "th": "Custom Search JSON API ของ Google ปิดรับลูกค้าใหม่แล้ว ลูกค้าเดิมมีเวลาถึง 1 มกราคม 2027 เพื่อย้ายไปใช้ทางเลือกอื่น Google เสนอ Vertex AI Search เป็นทางเลือกสำหรับการค้นหาได้ถึง 50 โดเมน",
+    "my": "Google ၏ Custom Search JSON API သည် ဖောက်သည်အသစ်များအတွက် ပိတ်ထားပြီး လက်ရှိဖောက်သည်များက အခြားနည်းလမ်းသို့ ပြောင်းရန် 2027 ဇန်နဝါရီ 1 အထိ အချိန်ရှိသည်။ Google က Vertex AI Search ကို ဒိုမိန်း 50 အထိ ရှာဖွေရန် အခြားရွေးချယ်စရာအဖြစ် ဖော်ပြသည်။",
+    "zh": "Google 的 Custom Search JSON API 已不再接收新客户，现有客户须在 2027 年 1 月 1 日前改用其他方案。Google 把 Vertex AI Search 列为搜索最多 50 个域名的替代方案。",
+    "de": "Die Custom Search JSON API von Google steht Neukunden nicht mehr offen; bestehende Kunden haben bis zum 1. Januar 2027 Zeit, auf eine andere Lösung zu wechseln. Google nennt Vertex AI Search als Alternative für bis zu 50 Domains."
+   },
+   "src": "https://developers.google.com/custom-search/v1/overview"
+  },
+  {
+   "t": {
+    "en": "Pagefind, an independent open-source search library, works with any static HTML output and adds a static search bundle to the built files. It lists zero-config support for multilingual websites and runs without hosting any infrastructure.",
+    "th": "Pagefind เป็นไลบรารีค้นหาแบบสถิตโอเพนซอร์สที่ไม่ขึ้นกับผู้ใด ทำงานกับ HTML แบบสถิตได้ทุกแบบ และเพิ่มชุดค้นหาแบบสถิตเข้าไปในไฟล์ที่สร้างแล้ว หน้าเว็บระบุว่ารองรับเว็บหลายภาษาโดยไม่ต้องตั้งค่า และทำงานได้โดยไม่ต้องโฮสต์โครงสร้างพื้นฐานเอง",
+    "my": "Pagefind သည် လွတ်လပ်သော open-source ရှာဖွေရေး စာကြည့်တိုက်တစ်ခုဖြစ်ပြီး static HTML ထုတ်ကုန် မည်သည့်အမျိုးအစားနှင့်မဆို အလုပ်လုပ်ကာ တည်ဆောက်ပြီးသော ဖိုင်များထဲသို့ static ရှာဖွေရေးအစုအဝေးတစ်ခု ထည့်ပေးသည်။ ဘာသာစကားစုံ ဝက်ဘ်ဆိုက်များကို ပြင်ဆင်ရန်မလိုဘဲ ပံ့ပိုးကြောင်း ဖော်ပြပြီး ဆာဗာကဲ့သို့ အခြေခံအဆောက်အအုံ ကိုယ်တိုင် မထားဘဲ အလုပ်လုပ်သည်။",
+    "zh": "Pagefind 是一个独立的开源搜索库，适用于任何静态 HTML 输出，并在生成的文件中加入静态搜索包。页面列出对多语言网站的零配置支持，无需自行托管任何基础设施。",
+    "de": "Pagefind, eine unabhängige Open-Source-Suchbibliothek, funktioniert mit jeder statischen HTML-Ausgabe und legt ein statisches Suchpaket in die erzeugten Dateien. Sie nennt Zero-Config-Unterstützung für mehrsprachige Websites und läuft, ohne dass eine Infrastruktur betrieben werden muss."
+   },
+   "src": "https://pagefind.app/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Algolia, hosted site search",
+    "th": "Algolia ค้นหาบนเว็บแบบโฮสต์",
+    "my": "Algolia - ဟို့စ်လုပ်ထားသော ဆိုက်ရှာဖွေရေး",
+    "zh": "Algolia 托管站内搜索",
+    "de": "Algolia, gehostete Website-Suche"
+   },
+   "p": {
+    "en": "free up to 10,000 search requests a month and 50,000 records; Grow plan US$0.50 per 1,000 extra requests",
+    "th": "ฟรีถึง 10,000 คำค้นต่อเดือนและ 50,000 เรคอร์ด แผน Grow เพิ่ม 1,000 คำค้นละ US$0.50",
+    "my": "တစ်လ ရှာဖွေမှု 10,000 နှင့် မှတ်တမ်း 50,000 အထိ အခမဲ့၊ Grow အစီအစဉ်တွင် ပိုလာသော ရှာဖွေမှု 1,000 လျှင် US$0.50",
+    "zh": "每月 10,000 次搜索请求和 50,000 条记录免费；Grow 方案超出部分每 1,000 次 US$0.50",
+    "de": "kostenlos bis 10,000 Suchanfragen im Monat und 50,000 Datensätze; Plan Grow: US$0.50 pro 1,000 zusätzliche Anfragen"
+   },
+   "src": "https://www.algolia.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Google Custom Search JSON API (existing customers only)",
+    "th": "Google Custom Search JSON API (เฉพาะลูกค้าเดิม)",
+    "my": "Google Custom Search JSON API (လက်ရှိဖောက်သည်များသာ)",
+    "zh": "Google Custom Search JSON API（仅限现有客户）",
+    "de": "Google Custom Search JSON API (nur bestehende Kunden)"
+   },
+   "p": {
+    "en": "100 queries a day free; US$5 per 1,000 queries, up to 10,000 a day",
+    "th": "100 คำค้นต่อวันฟรี หลังจากนั้น 1,000 คำค้นละ US$5 สูงสุด 10,000 ต่อวัน",
+    "my": "တစ်ရက် ရှာဖွေမှု 100 အခမဲ့၊ ထို့နောက် 1,000 လျှင် US$5၊ တစ်ရက် 10,000 အထိ",
+    "zh": "每天 100 次查询免费；每 1,000 次 US$5，每天最多 10,000 次",
+    "de": "100 Anfragen pro Tag kostenlos; US$5 pro 1,000 Anfragen, bis 10,000 pro Tag"
+   },
+   "src": "https://developers.google.com/custom-search/v1/overview"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How do I add a search bar to my website?",
+    "th": "จะเพิ่มช่องค้นหาในเว็บไซต์ได้อย่างไร",
+    "my": "ကျွန်ုပ်၏ ဝက်ဘ်ဆိုက်တွင် ရှာဖွေရေးဘားကို ဘယ်လိုထည့်ရမလဲ။",
+    "zh": "怎样给我的网站加搜索栏？",
+    "de": "Wie füge ich meiner Website ein Suchfeld hinzu?"
+   },
+   "a": {
+    "en": "A static-site library such as Pagefind adds a search bundle to the built files, and the search runs in the visitor's browser. It needs no hosted search service.",
+    "th": "ไลบรารีสำหรับเว็บสถิตอย่าง Pagefind เพิ่มชุดค้นหาเข้าไปในไฟล์ที่สร้างแล้ว และการค้นหาทำงานในเบราว์เซอร์ของผู้เข้าชม โดยไม่ต้องมีบริการค้นหาที่โฮสต์ไว้",
+    "my": "Pagefind ကဲ့သို့ static ဆိုက်စာကြည့်တိုက်တစ်ခုက တည်ဆောက်ပြီးသော ဖိုင်များထဲသို့ ရှာဖွေရေးအစုအဝေးတစ်ခု ထည့်ပေးပြီး ရှာဖွေမှုကို ဧည့်သည်၏ ဘရောက်ဇာထဲတွင် လုပ်ဆောင်သည်။ ဟို့စ်လုပ်ထားသော ရှာဖွေရေးဝန်ဆောင်မှု မလိုပါ။",
+    "zh": "Pagefind 这类静态站点库会在生成的文件里加入搜索包，搜索在访客的浏览器中运行，不需要托管的搜索服务。",
+    "de": "Eine Bibliothek für statische Seiten wie Pagefind legt ein Suchpaket in die erzeugten Dateien, und die Suche läuft im Browser des Besuchers. Ein gehosteter Suchdienst ist dafür nicht nötig."
+   },
+   "src": "https://pagefind.app/"
+  },
+  {
+   "q": {
+    "en": "Can I use Google to search my own site?",
+    "th": "ใช้ Google ค้นหาในเว็บของตัวเองได้ไหม",
+    "my": "ကျွန်ုပ်၏ ဆိုက်ကို Google ဖြင့် ရှာဖွေနိုင်ပါသလား။",
+    "zh": "能用 Google 来搜索我自己的网站吗？",
+    "de": "Kann ich Google verwenden, um meine eigene Website zu durchsuchen?"
+   },
+   "a": {
+    "en": "Google's Custom Search JSON API is closed to new customers. Existing customers have until 1 January 2027 to move, and Google names Vertex AI Search for searching up to 50 domains.",
+    "th": "Custom Search JSON API ของ Google ปิดรับลูกค้าใหม่ ลูกค้าเดิมมีเวลาถึง 1 มกราคม 2027 เพื่อย้าย และ Google เสนอ Vertex AI Search สำหรับค้นหาได้ถึง 50 โดเมน",
+    "my": "Google ၏ Custom Search JSON API သည် ဖောက်သည်အသစ်များအတွက် ပိတ်ထားသည်။ လက်ရှိဖောက်သည်များက 2027 ဇန်နဝါရီ 1 အထိ ပြောင်းရန် အချိန်ရှိပြီး Google က ဒိုမိန်း 50 အထိ ရှာဖွေရန် Vertex AI Search ကို ဖော်ပြသည်။",
+    "zh": "Google 的 Custom Search JSON API 已不再接收新客户。现有客户可在 2027 年 1 月 1 日前迁移，Google 点名 Vertex AI Search 用于搜索最多 50 个域名。",
+    "de": "Die Custom Search JSON API von Google steht Neukunden nicht mehr offen. Bestehende Kunden haben bis zum 1. Januar 2027 Zeit zum Wechsel, und Google nennt Vertex AI Search für die Suche in bis zu 50 Domains."
+   },
+   "src": "https://developers.google.com/custom-search/v1/overview"
+  },
+  {
+   "q": {
+    "en": "Does site search work in Thai?",
+    "th": "ค้นหาในเว็บภาษาไทยได้ไหม",
+    "my": "ဆိုက်ရှာဖွေရေးသည် ထိုင်းဘာသာဖြင့် အလုပ်လုပ်ပါသလား။",
+    "zh": "站内搜索能搜泰文吗？",
+    "de": "Funktioniert die Suche auf der Website auf Thai?"
+   },
+   "a": {
+    "en": "Thai puts no spaces between words, so splitting text on spaces gives the wrong words. Browsers offer Intl.Segmenter to split Thai and other such languages into words, available across browsers since April 2024.",
+    "th": "ภาษาไทยไม่เว้นวรรคระหว่างคำ การตัดคำด้วยช่องว่างจึงได้คำผิด เบราว์เซอร์มี Intl.Segmenter สำหรับตัดคำภาษาไทยและภาษาอื่นแบบนี้ และใช้ได้ข้ามเบราว์เซอร์ตั้งแต่เมษายน 2024",
+    "my": "ထိုင်းစာတွင် စကားလုံးကြား နေရာလွတ်မခြားသဖြင့် နေရာလွတ်ဖြင့် ဖြတ်ပါက စကားလုံး မှားသွားသည်။ ဘရောက်ဇာများတွင် ထိုင်းနှင့် ထိုကဲ့သို့ ဘာသာစကားများကို စကားလုံးခွဲရန် Intl.Segmenter ရှိပြီး 2024 ဧပြီလမှစ၍ ဘရောက်ဇာအများအပြားတွင် သုံးနိုင်သည်။",
+    "zh": "泰文的词与词之间没有空格，按空格切分会得到错误的词。浏览器提供 Intl.Segmenter，可把泰文等语言切成词，自 2024 年 4 月起各浏览器均可使用。",
+    "de": "Thai setzt keine Leerzeichen zwischen die Wörter, wer an Leerzeichen trennt, erhält deshalb falsche Wörter. Browser bieten Intl.Segmenter, um Thai und ähnliche Sprachen in Wörter zu teilen; es ist seit April 2024 browserübergreifend verfügbar."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter"
+  },
+  {
+   "q": {
+    "en": "What does hosted site search cost?",
+    "th": "ค้นหาในเว็บแบบโฮสต์ราคาเท่าไร",
+    "my": "ဟို့စ်လုပ်ထားသော ဆိုက်ရှာဖွေရေးသည် ဘယ်လောက်ကျသလဲ။",
+    "zh": "托管的站内搜索要多少钱？",
+    "de": "Was kostet eine gehostete Website-Suche?"
+   },
+   "a": {
+    "en": "Algolia's free plan includes 10,000 search requests a month and 50,000 records. On its Grow plan, extra requests cost US$0.50 per 1,000 and extra records US$0.40 per 1,000.",
+    "th": "แผนฟรีของ Algolia มี 10,000 คำค้นต่อเดือนและ 50,000 เรคอร์ด แผน Grow คิดคำค้นส่วนเกิน 1,000 ละ US$0.50 และเรคอร์ดส่วนเกิน 1,000 ละ US$0.40",
+    "my": "Algolia ၏ အခမဲ့အစီအစဉ်တွင် တစ်လ ရှာဖွေမှု 10,000 နှင့် မှတ်တမ်း 50,000 ပါသည်။ Grow အစီအစဉ်တွင် ပိုလာသော ရှာဖွေမှု 1,000 လျှင် US$0.50၊ ပိုလာသော မှတ်တမ်း 1,000 လျှင် US$0.40 ဖြစ်သည်။",
+    "zh": "Algolia 的免费方案包含每月 10,000 次搜索请求和 50,000 条记录。Grow 方案中，超出的请求每 1,000 次 US$0.50，超出的记录每 1,000 条 US$0.40。",
+    "de": "Der Gratisplan von Algolia enthält 10,000 Suchanfragen im Monat und 50,000 Datensätze. Im Plan Grow kosten zusätzliche Anfragen US$0.50 pro 1,000 und zusätzliche Datensätze US$0.40 pro 1,000."
+   },
+   "src": "https://www.algolia.com/pricing"
+  }
+ ],
+ "related": [
+  "widget",
+  "directory",
+  "web-found",
+  "site",
+  "copy",
+  "web-care"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang search: one box over its sites, in Thai and English",
+    "th": "ค้นหาในมดแดง: ช่องค้นหาเดียวครอบคลุมเว็บของมดแดง ไทยและอังกฤษ",
+    "my": "Mot Dang ရှာဖွေရေး - Mot Dang ဆိုက်များအပေါ် ရှာဖွေရေးအကွက်တစ်ခု၊ ထိုင်းနှင့် အင်္ဂလိပ်",
+    "zh": "Mot Dang 搜索：覆盖其网站的一个搜索框，泰英双语",
+    "de": "Mot Dang-Suche: ein Suchfeld über seine Websites, auf Thai und Englisch"
+   },
+   "href": "https://motdang.net/search"
+  },
+  {
+   "t": {
+    "en": "Pagefind: static search for static sites",
+    "th": "Pagefind: การค้นหาแบบสถิตสำหรับเว็บสถิต",
+    "my": "Pagefind - static ဆိုက်များအတွက် static ရှာဖွေရေး",
+    "zh": "Pagefind：静态网站的静态搜索",
+    "de": "Pagefind: statische Suche für statische Websites"
+   },
+   "href": "https://pagefind.app/"
+  }
+ ]
+}

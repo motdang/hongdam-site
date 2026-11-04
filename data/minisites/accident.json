@@ -1,0 +1,865 @@
+{
+ "id": "accident",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "After a crash in Thailand, the police report, the insurer and the rental shop use Thai. The compulsory insurance pays up to ฿30,000 a person for treatment before fault is decided.",
+  "th": "หลังเกิดอุบัติเหตุในไทย บันทึกของตำรวจ บริษัทประกัน และร้านเช่ารถใช้ภาษาไทย พ.ร.บ.รถจ่ายค่ารักษาพยาบาลไม่เกิน ฿30,000 ต่อคน ก่อนที่จะตัดสินว่าใครผิด",
+  "my": "ထိုင်းနိုင်ငံတွင် မတော်တဆမှု ဖြစ်ပြီးနောက် ရဲမှတ်တမ်း၊ အာမခံကုမ္ပဏီနှင့် ငှားရမ်းသည့်ဆိုင်တို့သည် ထိုင်းစကားကို သုံးကြသည်။ မဖြစ်မနေ ယာဉ်အာမခံ (พ.ร.บ.) သည် အမှားရှိသူ မဆုံးဖြတ်မီ ဆေးကုသစရိတ်ကို တစ်ဦးလျှင် ฿30,000 အထိ ပေးသည်။",
+  "zh": "在泰国发生事故后，警方记录、保险公司和租车行都用泰语办事。强制险在认定谁有过错之前，每人先赔付最高 ฿30,000 的治疗费。",
+  "de": "Nach einem Unfall in Thailand arbeiten die Polizei, die Versicherung und der Verleih auf Thai. Die Pflichtversicherung zahlt die Behandlung bis ฿30,000 pro Person, bevor die Schuldfrage geklärt ist."
+ },
+ "n": {
+  "de": "Nach einem Unfall"
+ },
+ "l": {
+  "de": "Polizeiwache, Bericht übersetzt, Versicherung oder Verleih auf Thai."
+ },
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "Someone from Hongdam goes with you to the police station",
+    "th": "คนจากหงส์ดำไปกับคุณที่สถานีตำรวจ",
+    "my": "ဟုန်ဒမ်မှ တစ်ဦးက သင်နှင့်အတူ ရဲစခန်းသို့ လိုက်ပါသည်",
+    "zh": "鸿丹派人陪你去警局",
+    "de": "Jemand von Hongdam begleitet Sie zur Polizeiwache"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the station",
+    "th": "ที่สถานีตำรวจ",
+    "my": "ရဲစခန်းတွင်",
+    "zh": "在警局",
+    "de": "Auf der Wache"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "The police report is translated",
+    "th": "แปลบันทึกของตำรวจ",
+    "my": "ရဲမှတ်တမ်းကို ဘာသာပြန်သည်",
+    "zh": "翻译警方记录",
+    "de": "Der Polizeibericht wird übersetzt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Once it is written",
+    "th": "เมื่อเขียนบันทึกเสร็จ",
+    "my": "ရေးပြီးသည့်အခါ",
+    "zh": "记录写好后",
+    "de": "Sobald er geschrieben ist"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "The insurer is dealt with in Thai",
+    "th": "คุยกับบริษัทประกันเป็นภาษาไทย",
+    "my": "အာမခံကုမ္ပဏီနှင့် ထိုင်းလို ဆက်သွယ်သည်",
+    "zh": "用泰语对接保险公司",
+    "de": "Mit der Versicherung wird auf Thai verhandelt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the report",
+    "th": "หลังได้บันทึก",
+    "my": "မှတ်တမ်းရပြီးနောက်",
+    "zh": "拿到记录之后",
+    "de": "Nach dem Bericht"
+   }
+  },
+  {
+   "db": "key",
+   "t": {
+    "en": "The rental shop is dealt with in Thai",
+    "th": "คุยกับร้านเช่าเป็นภาษาไทย",
+    "my": "ငှားရမ်းသည့်ဆိုင်နှင့် ထိုင်းလို ဆက်သွယ်သည်",
+    "zh": "用泰语对接租车行",
+    "de": "Mit dem Verleih wird auf Thai verhandelt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "If the vehicle is rented",
+    "th": "เมื่อเป็นรถเช่า",
+    "my": "ယာဉ်ကို ငှားထားလျှင်",
+    "zh": "车辆是租来的时",
+    "de": "Bei einem Mietfahrzeug"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "A lawyer, if one is needed, is a separate job",
+    "th": "ทนายความ หากจำเป็น เป็นงานแยกต่างหาก",
+    "my": "လိုအပ်လျှင် ရှေ့နေသည် သီးခြားအလုပ် ဖြစ်သည်",
+    "zh": "如需律师，另算一项",
+    "de": "Ein Anwalt, falls nötig, ist ein eigener Auftrag"
+   },
+   "who": {
+    "en": "A lawyer",
+    "th": "ทนายความ",
+    "my": "ရှေ့နေ",
+    "zh": "律师",
+    "de": "Ein Anwalt"
+   },
+   "time": {
+    "en": "Separate",
+    "th": "แยกต่างหาก",
+    "my": "သီးခြား",
+    "zh": "另算",
+    "de": "Getrennt"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "฿30,000",
+   "t": {
+    "en": "Most the compulsory insurance pays per person for treatment before fault is decided",
+    "th": "วงเงินสูงสุดที่ พ.ร.บ.จ่ายค่ารักษาพยาบาลต่อคน ก่อนตัดสินว่าใครผิด",
+    "my": "အမှားရှိသူ မဆုံးဖြတ်မီ မဖြစ်မနေ ယာဉ်အာမခံမှ ဆေးကုသစရိတ်အတွက် တစ်ဦးလျှင် အများဆုံး ပေးသည့်ပမာဏ",
+    "zh": "强制险在认定过错之前，每人治疗费的赔付上限",
+    "de": "Höchstbetrag, den die Pflichtversicherung pro Person für die Behandlung zahlt, bevor die Schuldfrage geklärt ist"
+   },
+   "src": "https://www.thaipbs.or.th/news/content/507825"
+  },
+  {
+   "n": "฿500,000",
+   "t": {
+    "en": "Most it pays per person for death or total permanent disability once the driver is shown to be liable",
+    "th": "วงเงินสูงสุดต่อคนกรณีเสียชีวิตหรือทุพพลภาพถาวรสิ้นเชิง เมื่อพิสูจน์ได้ว่าผู้ขับขี่เป็นฝ่ายผิด",
+    "my": "ယာဉ်မောင်းတွင် တာဝန်ရှိကြောင်း သက်သေပြပြီးလျှင် သေဆုံးခြင်း သို့မဟုတ် လုံးဝ ထာဝရ မသန်စွမ်းခြင်းအတွက် တစ်ဦးလျှင် အများဆုံး ပေးသည့်ပမာဏ",
+    "zh": "证明驾驶人有责任后，死亡或完全永久伤残每人的赔付上限",
+    "de": "Höchstbetrag pro Person bei Tod oder vollständiger dauerhafter Invalidität, sobald die Haftung des Fahrers feststeht"
+   },
+   "src": "https://www.thaipbs.or.th/news/content/507825"
+  },
+  {
+   "n": "72",
+   "t": {
+    "en": "Hours a hospital treats a critical emergency patient from admission, with treatment not conditional on payment",
+    "th": "ชั่วโมงที่โรงพยาบาลรักษาผู้ป่วยฉุกเฉินวิกฤตนับจากรับเข้า โดยการรักษาไม่ผูกกับการจ่ายเงิน",
+    "my": "ဆေးရုံတက်ချိန်မှစ၍ ဆေးရုံက အရေးပေါ်အခြေအနေ ဆိုးရွားသည့် လူနာကို ကုသသည့် နာရီအရေအတွက်၊ ကုသမှုကို ငွေပေးချေမှုနှင့် အခြေမခံ",
+    "zh": "医院从入院起对危重急救患者治疗的小时数，治疗不以付款为条件",
+    "de": "Stunden ab Aufnahme, in denen ein Krankenhaus einen kritischen Notfallpatienten behandelt, ohne die Behandlung an eine Zahlung zu knüpfen"
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/thai-cabinet-revises-72-hour-emergency-care-rules-from-tuesday-sept-15"
+  },
+  {
+   "n": "83.8%",
+   "t": {
+    "en": "Share of Thailand's road deaths in 2021 who were motorcyclists (WHO)",
+    "th": "สัดส่วนผู้เสียชีวิตบนถนนของไทยในปี 2021 ที่เป็นผู้ขับขี่รถจักรยานยนต์ (WHO)",
+    "my": "2021 ခုနှစ်တွင် ထိုင်းလမ်းပေါ်သေဆုံးသူများထဲက ဆိုင်ကယ်စီးသူများ၏ အချိုး (WHO)",
+    "zh": "2021 年泰国道路交通死亡者中摩托车骑行者所占比例（WHO）",
+    "de": "Anteil der Verkehrstoten Thailands im Jahr 2021, die Motorradfahrer waren (WHO)"
+   },
+   "src": "https://www.who.int/thailand/our-work/road-safety"
+  }
+ ],
+ "toy": {
+  "kind": "picker",
+  "h": {
+   "en": "What happened?",
+   "th": "เกิดอะไรขึ้น",
+   "my": "ဘာဖြစ်ခဲ့သလဲ",
+   "zh": "发生了什么？",
+   "de": "Was ist geschehen?"
+  },
+  "noscript": {
+   "en": "The picker needs JavaScript. The amounts the compulsory insurance pays are listed below.",
+   "th": "ตัวเลือกต้องใช้ JavaScript จำนวนเงินที่ พ.ร.บ.จ่ายแสดงไว้ด้านล่าง",
+   "my": "ရွေးချယ်ကိရိယာသည် JavaScript လိုအပ်သည်။ မဖြစ်မနေ အာမခံမှ ပေးသည့် ပမာဏများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "选择器需要 JavaScript。强制险的赔付金额列在下方。",
+   "de": "Die Auswahl braucht JavaScript. Die Beträge, die die Pflichtversicherung zahlt, stehen weiter unten."
+  },
+  "data": {
+   "q": {
+    "en": "Choose what happened to see what it means",
+    "th": "เลือกเหตุการณ์ที่เกิดขึ้น เพื่อดูว่าหมายความว่าอย่างไร",
+    "my": "ဖြစ်ခဲ့သည်ကို ရွေး၍ ၎င်းအဓိပ္ပာယ်ကို ကြည့်ပါ",
+    "zh": "选一种情形，看它意味着什么",
+    "de": "Wählen Sie, was geschehen ist, und sehen Sie, was es bedeutet"
+   },
+   "options": [
+    {
+     "id": "moto-hurt",
+     "n": {
+      "en": "A motorcycle crash and you are hurt",
+      "th": "รถจักรยานยนต์ล้มหรือชน และคุณบาดเจ็บ",
+      "my": "ဆိုင်ကယ်မတော်တဆမှု ဖြစ်ပြီး သင် ဒဏ်ရာရသည်",
+      "zh": "摩托车事故，你受了伤",
+      "de": "Motorradunfall, und Sie sind verletzt"
+     },
+     "big": {
+      "en": "฿30,000",
+      "th": "฿30,000",
+      "my": "฿30,000",
+      "zh": "฿30,000",
+      "de": "฿30,000"
+     },
+     "t": {
+      "en": "The compulsory motor insurance (Por Ror Bor, พ.ร.บ.) pays actual treatment costs up to ฿30,000 per person before anyone decides who was at fault. For death or total permanent disability the amount at that stage is ฿35,000 per person.",
+      "th": "พ.ร.บ.รถ (ประกันภัยภาคบังคับ) จ่ายค่ารักษาพยาบาลตามจริงไม่เกิน ฿30,000 ต่อคน ก่อนที่จะมีการตัดสินว่าใครผิด กรณีเสียชีวิตหรือทุพพลภาพถาวรสิ้นเชิง ในขั้นนี้จ่าย ฿35,000 ต่อคน",
+      "my": "မဖြစ်မနေ မော်တော်ယာဉ်အာမခံ (Por Ror Bor, พ.ร.บ.) သည် အမှားရှိသူ မဆုံးဖြတ်မီ ဆေးကုသစရိတ် အမှန်ကို တစ်ဦးလျှင် ฿30,000 အထိ ပေးသည်။ သေဆုံးခြင်း သို့မဟုတ် လုံးဝ ထာဝရ မသန်စွမ်းခြင်းအတွက် ထိုအဆင့်တွင် တစ်ဦးလျှင် ฿35,000 ဖြစ်သည်။",
+      "zh": "强制汽车保险（Por Ror Bor，พ.ร.บ.）在认定谁有过错之前，按实际发生的治疗费每人赔付最高 ฿30,000。死亡或完全永久伤残，这一阶段每人赔付 ฿35,000。",
+      "de": "Die Pflichtversicherung für Fahrzeuge (Por Ror Bor, พ.ร.บ.) zahlt die tatsächlichen Behandlungskosten bis ฿30,000 pro Person, bevor jemand die Schuldfrage klärt. Bei Tod oder vollständiger dauerhafter Invalidität beträgt der Betrag in dieser Phase ฿35,000 pro Person."
+     },
+     "facts": [
+      {
+       "en": "Once the driver is shown to be liable, treatment costs are paid up to ฿80,000 per person, with the first ฿30,000 included.",
+       "th": "เมื่อพิสูจน์ได้ว่าผู้ขับขี่เป็นฝ่ายผิด จ่ายค่ารักษาพยาบาลไม่เกิน ฿80,000 ต่อคน รวม ฿30,000 แรกไว้แล้ว",
+       "my": "ယာဉ်မောင်းတွင် တာဝန်ရှိကြောင်း သက်သေပြပြီးသည့်အခါ ဆေးကုသစရိတ်ကို တစ်ဦးလျှင် ฿80,000 အထိ ပေးပြီး ပထမ ฿30,000 ပါဝင်ပြီးဖြစ်သည်။",
+       "zh": "一旦证明驾驶人有责任，治疗费每人最高赔付 ฿80,000，首笔 ฿30,000 已包含在内。",
+       "de": "Sobald die Haftung des Fahrers feststeht, werden Behandlungskosten bis ฿80,000 pro Person gezahlt; die ersten ฿30,000 sind darin enthalten."
+      },
+      {
+       "en": "A patient in hospital receives ฿200 a day for up to 20 days once liability is shown.",
+       "th": "ผู้ป่วยในได้รับวันละ ฿200 สูงสุด 20 วัน เมื่อพิสูจน์ความรับผิดได้แล้ว",
+       "my": "တာဝန်ရှိကြောင်း သက်သေပြပြီးလျှင် ဆေးရုံတက်လူနာသည် တစ်နေ့လျှင် ฿200 ဖြင့် 20 ရက်အထိ ရသည်။",
+       "zh": "证明责任后，住院病人每天可得 ฿200，最多 20 天。",
+       "de": "Ein stationärer Patient erhält ฿200 pro Tag, bis zu 20 Tage, sobald die Haftung feststeht."
+      }
+     ],
+     "src": "https://www.thaipbs.or.th/news/content/507825"
+    },
+    {
+     "id": "car-ok",
+     "n": {
+      "en": "A car crash, nobody hurt",
+      "th": "รถยนต์ชนกัน ไม่มีใครบาดเจ็บ",
+      "my": "ကားတိုက်မှု၊ ဘယ်သူမျှ မထိခိုက်",
+      "zh": "汽车相撞，没人受伤",
+      "de": "Autounfall, niemand verletzt"
+     },
+     "big": {
+      "en": "Harm to people",
+      "th": "ความเสียหายต่อบุคคล",
+      "my": "လူသားအပေါ် ထိခိုက်မှု",
+      "zh": "针对人身伤害",
+      "de": "Schaden an Personen"
+     },
+     "t": {
+      "en": "The compulsory insurance law protects people harmed by a vehicle. Its list of payments names treatment, funeral costs, compensation for loss of a limb or permanent disability, and other compensation within the cover limit. Each item is about a person.",
+      "th": "กฎหมายประกันภัยภาคบังคับคุ้มครองผู้ประสบภัยจากรถ รายการที่จ่ายได้แก่ ค่ารักษาพยาบาล ค่าปลงศพ ค่าทดแทนกรณีสูญเสียอวัยวะหรือทุพพลภาพถาวร และค่าสินไหมทดแทนอย่างอื่นตามวงเงินคุ้มครอง ทุกรายการเป็นเรื่องของตัวบุคคล",
+      "my": "မဖြစ်မနေ အာမခံဥပဒေသည် ယာဉ်ကြောင့် ထိခိုက်ခံရသူများကို ကာကွယ်ပေးသည်။ ပေးချေသည့်စာရင်းတွင် ဆေးကုသစရိတ်၊ ဈာပနစရိတ်၊ လက်ခြေ ဆုံးရှုံးခြင်း သို့မဟုတ် ထာဝရ မသန်စွမ်းခြင်းအတွက် လျော်ကြေးနှင့် အကာအကွယ်ပမာဏအတွင်း အခြားလျော်ကြေးတို့ ပါဝင်သည်။ စာရင်းထဲက အချက်တိုင်းသည် လူတစ်ဦးချင်းနှင့် သက်ဆိုင်သည်။",
+      "zh": "强制保险法保护因车辆受伤害的人。它列出的赔付项目有：治疗费、丧葬费、丧失肢体或永久伤残的补偿，以及保额内的其他赔偿。每一项都与人有关。",
+      "de": "Das Pflichtversicherungsgesetz schützt Menschen, die durch ein Fahrzeug zu Schaden kommen. Seine Liste der Leistungen nennt Behandlung, Bestattungskosten, Entschädigung für den Verlust eines Glieds oder dauerhafte Invalidität und weitere Entschädigung im Rahmen der Deckungsgrenze. Jeder Punkt betrifft eine Person."
+     },
+     "facts": [
+      {
+       "en": "A vehicle of any type must be insured under the Act, whether it runs on an engine, electricity or other power. Cars, motorcycles, lorries and trailers are on the list.",
+       "th": "รถทุกชนิดต้องทำประกันตามพระราชบัญญัตินี้ ไม่ว่าจะเดินด้วยเครื่องยนต์ ไฟฟ้า หรือพลังงานอื่น รถยนต์ รถจักรยานยนต์ รถบรรทุก และรถพ่วงอยู่ในรายการ",
+       "my": "ဤအက်ဥပဒေအရ ယာဉ်အမျိုးအစားမရွေး အာမခံထားရမည်၊ အင်ဂျင်၊ လျှပ်စစ် သို့မဟုတ် အခြားစွမ်းအင်ဖြင့် မောင်းသည်ဖြစ်စေ။ ကား၊ ဆိုင်ကယ်၊ ထရပ်ကားနှင့် ထရိုင်လာတို့ စာရင်းတွင် ပါသည်။",
+       "zh": "按该法，任何类型的车辆都须投保，不论以发动机、电力还是其他动力行驶。汽车、摩托车、货车和挂车都在清单上。",
+       "de": "Nach dem Gesetz muss ein Fahrzeug jeder Art versichert sein, ob es mit Motor, Strom oder anderer Kraft fährt. Autos, Motorräder, Lastwagen und Anhänger stehen auf der Liste."
+      },
+      {
+       "en": "The owner, the holder of title, a hire-purchase holder and a person who brings in a vehicle registered abroad must insure it.",
+       "th": "เจ้าของรถ ผู้ถือกรรมสิทธิ์ ผู้ครอบครองรถในฐานะผู้เช่าซื้อ และผู้นำรถที่จดทะเบียนในต่างประเทศเข้ามาใช้ในประเทศ มีหน้าที่ต้องทำประกัน",
+       "my": "ယာဉ်ပိုင်ရှင်၊ ပိုင်ဆိုင်မှုကိုင်ဆောင်သူ၊ ဝယ်ယူငှားရမ်းစနစ်ဖြင့် ကိုင်ဆောင်သူနှင့် ပြည်ပတွင် မှတ်ပုံတင်ထားသော ယာဉ်ကို ယူလာသူတို့သည် အာမခံထားရမည်။",
+       "zh": "车主、产权持有人、分期购车的占有人，以及把境外注册车辆带入泰国使用的人，都有投保义务。",
+       "de": "Der Eigentümer, der Titelinhaber, der Besitzer auf Ratenkauf und wer ein im Ausland zugelassenes Fahrzeug einführt, muss es versichern."
+      },
+      {
+       "en": "The Road Accident Victims Protection Co. insures motorcycles only under the Act, with branches across the country.",
+       "th": "บริษัท กลางคุ้มครองผู้ประสบภัยจากรถ จำกัด รับประกันเฉพาะรถจักรยานยนต์ตามพระราชบัญญัตินี้ และมีสาขาทั่วประเทศ",
+       "my": "ယာဉ်မတော်တဆမှု ထိခိုက်သူများ ကာကွယ်ရေး ကုမ္ပဏီ (Road Accident Victims Protection Co.) သည် ဤအက်ဥပဒေအရ ဆိုင်ကယ်ကိုသာ အာမခံပေးပြီး နိုင်ငံတစ်ဝန်း ဌာနခွဲများ ရှိသည်။",
+       "zh": "道路事故受害者保护公司（Road Accident Victims Protection Co.，บริษัท กลางคุ้มครองผู้ประสบภัยจากรถ）依该法只承保摩托车，在全国设有分支机构。",
+       "de": "Die Road Accident Victims Protection Co. versichert nach dem Gesetz nur Motorräder und hat Filialen im ganzen Land."
+      }
+     ],
+     "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+    },
+    {
+     "id": "pedestrian",
+     "n": {
+      "en": "Hit as a pedestrian",
+      "th": "ถูกรถชนขณะเดินเท้า",
+      "my": "လမ်းလျှောက်ရင်း ယာဉ်တိုက်ခံရသည်",
+      "zh": "作为行人被撞",
+      "de": "Als Fussgänger angefahren"
+     },
+     "big": {
+      "en": "7 days",
+      "th": "7 วัน",
+      "my": "7 ရက်",
+      "zh": "7 天",
+      "de": "7 Tage"
+     },
+     "t": {
+      "en": "The compulsory insurance protects a pedestrian as it protects an owner, a driver or a passenger. It does so whether or not the person was at fault, in or out of the vehicle.",
+      "th": "ประกันภัยภาคบังคับคุ้มครองคนเดินถนนเช่นเดียวกับเจ้าของรถ ผู้ขับขี่ และผู้โดยสาร ไม่ว่าผู้นั้นจะเป็นฝ่ายผิดหรือไม่ และไม่ว่าจะอยู่ในรถหรือนอกรถ",
+      "my": "မဖြစ်မနေ အာမခံသည် လမ်းသွားလမ်းလာကို ပိုင်ရှင်၊ ယာဉ်မောင်းနှင့် ခရီးသည်တို့ကဲ့သို့ ကာကွယ်ပေးသည်။ ထိုသူတွင် အမှားရှိသည်ဖြစ်စေ မရှိသည်ဖြစ်စေ၊ ယာဉ်ထဲတွင်ဖြစ်စေ ပြင်ပတွင်ဖြစ်စေ ကာကွယ်သည်။",
+      "zh": "强制保险对行人的保护，与对车主、驾驶人和乘客的保护相同。不论此人有无过错，也不论在车内还是车外。",
+      "de": "Die Pflichtversicherung schützt einen Fussgänger so wie einen Eigentümer, einen Fahrer oder einen Fahrgast. Das gilt unabhängig von der Schuld und ob die Person im oder ausserhalb des Fahrzeugs war."
+     },
+     "facts": [
+      {
+       "en": "Cover applies from the moment of the accident.",
+       "th": "ความคุ้มครองเริ่มทันทีที่ประสบภัย",
+       "my": "မတော်တဆမှု ဖြစ်ပွားသည့် ခဏမှစ၍ အကာအကွယ် ရရှိသည်။",
+       "zh": "事故发生的那一刻起即受保障。",
+       "de": "Der Schutz gilt ab dem Moment des Unfalls."
+      },
+      {
+       "en": "The Fund (กองทุนทดแทนผู้ประสบภัย) pays the initial amount when the vehicle was uninsured and the owner did not pay in full, when the driver drove off, or when the vehicle cannot be identified.",
+       "th": "กองทุนทดแทนผู้ประสบภัยจ่ายค่าเสียหายเบื้องต้น เมื่อรถไม่ได้ทำประกันและเจ้าของรถไม่จ่ายหรือจ่ายไม่ครบ เมื่อผู้ขับขี่หลบหนี หรือเมื่อไม่อาจทราบว่าเป็นรถคันใด",
+       "my": "ယာဉ်ကို အာမခံမထားဘဲ ပိုင်ရှင်က မပေး သို့မဟုတ် မပြည့်စုံစွာ ပေးသည့်အခါ၊ ယာဉ်မောင်း ထွက်ပြေးသွားသည့်အခါ သို့မဟုတ် မည်သည့်ယာဉ်မှန်း မသိနိုင်သည့်အခါ ရန်ပုံငွေ (กองทุนทดแทนผู้ประสบภัย) က အစပိုင်း လျော်ကြေးကို ပေးသည်။",
+       "zh": "如果车辆未投保且车主未付或未付足，或肇事者逃逸，或无法确定是哪辆车，由赔偿基金（กองทุนทดแทนผู้ประสบภัย）先行垫付初始赔偿。",
+       "de": "Der Fonds (กองทุนทดแทนผู้ประสบภัย) zahlt den Anfangsbetrag, wenn das Fahrzeug nicht versichert war und der Halter nicht oder nicht voll zahlt, wenn der Fahrer geflohen ist oder wenn sich das Fahrzeug nicht feststellen lässt."
+      },
+      {
+       "en": "The Fund pays within 7 days of receiving the request and complete papers.",
+       "th": "กองทุนจ่ายภายใน 7 วันนับแต่วันที่ได้รับคำร้องขอและเอกสารครบถ้วน",
+       "my": "တောင်းဆိုချက်နှင့် စာရွက်စာတမ်း ပြည့်စုံစွာ လက်ခံရရှိသည့်နေ့မှ 7 ရက်အတွင်း ရန်ပုံငွေက ပေးသည်။",
+       "zh": "基金在收到申请和齐全文件后 7 天内支付。",
+       "de": "Der Fonds zahlt innerhalb von 7 Tagen nach Eingang des Antrags und der vollständigen Unterlagen."
+      }
+     ],
+     "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+    },
+    {
+     "id": "other-hurt",
+     "n": {
+      "en": "The other side is hurt",
+      "th": "อีกฝ่ายบาดเจ็บ",
+      "my": "တစ်ဖက်လူ ဒဏ်ရာရသည်",
+      "zh": "对方受了伤",
+      "de": "Die Gegenseite ist verletzt"
+     },
+     "big": {
+      "en": "฿80,000",
+      "th": "฿80,000",
+      "my": "฿80,000",
+      "zh": "฿80,000",
+      "de": "฿80,000"
+     },
+     "t": {
+      "en": "Once the driver is shown to be liable, the compulsory insurance pays treatment costs up to ฿80,000 per person, with the first ฿30,000 included. For death or total permanent disability the limit is ฿500,000 per person.",
+      "th": "เมื่อพิสูจน์ได้ว่าผู้ขับขี่เป็นฝ่ายผิด พ.ร.บ.รถจ่ายค่ารักษาพยาบาลไม่เกิน ฿80,000 ต่อคน รวม ฿30,000 แรกไว้แล้ว กรณีเสียชีวิตหรือทุพพลภาพถาวรสิ้นเชิง วงเงินสูงสุด ฿500,000 ต่อคน",
+      "my": "ယာဉ်မောင်းတွင် တာဝန်ရှိကြောင်း သက်သေပြပြီးသည့်အခါ မဖြစ်မနေ အာမခံသည် ဆေးကုသစရိတ်ကို တစ်ဦးလျှင် ฿80,000 အထိ ပေးပြီး ပထမ ฿30,000 ပါဝင်ပြီးဖြစ်သည်။ သေဆုံးခြင်း သို့မဟုတ် လုံးဝ ထာဝရ မသန်စွမ်းခြင်းအတွက် ကန့်သတ်ချက်မှာ တစ်ဦးလျှင် ฿500,000 ဖြစ်သည်။",
+      "zh": "一旦证明驾驶人有责任，强制险赔付治疗费每人最高 ฿80,000，首笔 ฿30,000 已包含在内。死亡或完全永久伤残，每人限额 ฿500,000。",
+      "de": "Sobald die Haftung des Fahrers feststeht, zahlt die Pflichtversicherung Behandlungskosten bis ฿80,000 pro Person; die ersten ฿30,000 sind darin enthalten. Bei Tod oder vollständiger dauerhafter Invalidität liegt die Grenze bei ฿500,000 pro Person."
+     },
+     "facts": [
+      {
+       "en": "Both limits include the amount paid at the first stage (฿30,000 for treatment, ฿35,000 for death or disability). It is not added on top.",
+       "th": "วงเงินทั้งสองรวมเงินที่จ่ายในขั้นแรกไว้แล้ว (฿30,000 ค่ารักษาพยาบาล ฿35,000 กรณีเสียชีวิตหรือทุพพลภาพ) ไม่ได้บวกเพิ่ม",
+       "my": "ကန့်သတ်ချက် နှစ်ခုလုံးတွင် ပထမအဆင့်၌ ပေးပြီးသည့်ပမာဏ (ဆေးကုသစရိတ် ฿30,000၊ သေဆုံးခြင်း သို့မဟုတ် မသန်စွမ်းခြင်း ฿35,000) ပါဝင်ပြီးဖြစ်သည်။ ထပ်ပေါင်းခြင်း မဟုတ်ပါ။",
+       "zh": "两项限额都包含第一阶段已付的金额（治疗费 ฿30,000，死亡或伤残 ฿35,000），不是在其上另加。",
+       "de": "Beide Grenzen enthalten den in der ersten Phase gezahlten Betrag (฿30,000 für die Behandlung, ฿35,000 bei Tod oder Invalidität). Er wird nicht obendrauf gerechnet."
+      }
+     ],
+     "src": "https://www.thaipbs.or.th/news/content/507825"
+    },
+    {
+     "id": "hospital-bill",
+     "n": {
+      "en": "In hospital and the bill is coming",
+      "th": "อยู่โรงพยาบาลและค่ารักษากำลังจะมา",
+      "my": "ဆေးရုံတွင်ရှိပြီး ငွေတောင်းခံလွှာ လာတော့မည်",
+      "zh": "住进医院，账单将至",
+      "de": "Im Krankenhaus, und die Rechnung kommt"
+     },
+     "big": {
+      "en": "72 hours",
+      "th": "72 ชั่วโมง",
+      "my": "72 နာရီ",
+      "zh": "72 小时",
+      "de": "72 Stunden"
+     },
+     "t": {
+      "en": "A hospital treats a critical emergency patient until the patient is no longer in critical condition, and goes on treating the crisis until 72 hours from admission. Treatment cannot be made conditional on payment. A patient covered by motor vehicle accident protection, life insurance or non-life insurance uses that cover first.",
+      "th": "โรงพยาบาลรักษาผู้ป่วยฉุกเฉินวิกฤตจนพ้นขีดอันตราย และรักษาอาการวิกฤตต่อไปจนครบ 72 ชั่วโมงนับจากรับเข้า การรักษาผูกกับการจ่ายเงินไม่ได้ ผู้ป่วยที่มีความคุ้มครองจากกฎหมายคุ้มครองผู้ประสบภัยจากรถ ประกันชีวิต หรือประกันวินาศภัย ต้องใช้สิทธิเหล่านั้นก่อน",
+      "my": "ဆေးရုံသည် အရေးပေါ်အခြေအနေ ဆိုးရွားသည့် လူနာကို အန္တရာယ်ကင်းသည်အထိ ကုသပြီး ဆေးရုံတက်သည့်အချိန်မှ 72 နာရီပြည့်သည်အထိ အရေးပေါ်အခြေအနေကို ဆက်လက်ကုသသည်။ ကုသမှုကို ငွေပေးချေမှုနှင့် အခြေမခံနိုင်ပါ။ မော်တော်ယာဉ်မတော်တဆမှု ကာကွယ်ရေး၊ အသက်အာမခံ သို့မဟုတ် အသက်မဟုတ်သော အာမခံ ရှိသည့် လူနာသည် ထိုအကာအကွယ်ကို ဦးစွာ သုံးသည်။",
+      "zh": "医院对危重急救患者治疗至脱离危险，并对危象继续治疗，直到入院后 72 小时。治疗不能以付款为条件。已有机动车事故保护、人寿保险或非寿险保障的患者，先用这些保障。",
+      "de": "Ein Krankenhaus behandelt einen kritischen Notfallpatienten, bis er ausser Gefahr ist, und behandelt die Krise weiter, bis 72 Stunden ab Aufnahme vergangen sind. Die Behandlung darf nicht von einer Zahlung abhängig gemacht werden. Wer durch den Schutz für Verkehrsunfallopfer, eine Lebensversicherung oder eine Sachversicherung gedeckt ist, nutzt zuerst diesen Schutz."
+     },
+     "facts": [
+      {
+       "en": "A patient pays when refusing a transfer once no longer critical and a receiving hospital is available, or when choosing treatment at another facility.",
+       "th": "ผู้ป่วยจ่ายเองเมื่อปฏิเสธการส่งตัวหลังพ้นภาวะวิกฤตและมีสถานพยาบาลรองรับ หรือเมื่อเลือกรักษาที่สถานพยาบาลอื่น",
+       "my": "အရေးပေါ်အခြေအနေ မဆိုးတော့သည့်နောက် လက်ခံမည့် ဆေးရုံရှိနေပြီး လူနာက လွှဲပြောင်းမှုကို ငြင်းလျှင် သို့မဟုတ် အခြားဆေးရုံ၌ ကုသမှုကို ရွေးလျှင် လူနာကိုယ်တိုင် ပေးချေရသည်။",
+       "zh": "患者脱离危重状态后，若有接收机构而拒绝转院，或自行选择在其他机构治疗，则由患者自付。",
+       "de": "Der Patient zahlt selbst, wenn er nach dem Ende der kritischen Phase eine Verlegung ablehnt, obwohl eine aufnehmende Einrichtung bereit ist, oder wenn er die Behandlung in einer anderen Einrichtung wählt."
+      },
+      {
+       "en": "The hospital claims the first 72 hours from the National Health Security Office. It refunds fees within 30 days if an appeal to the National Institute for Emergency Medicine finds the patient met the critical emergency criteria.",
+       "th": "โรงพยาบาลเบิกค่ารักษา 72 ชั่วโมงแรกจากสำนักงานหลักประกันสุขภาพแห่งชาติ และคืนค่าใช้จ่ายภายใน 30 วัน หากการอุทธรณ์ต่อสถาบันการแพทย์ฉุกเฉินแห่งชาติพบว่าผู้ป่วยเข้าเกณฑ์ฉุกเฉินวิกฤต",
+       "my": "ဆေးရုံသည် ပထမ 72 နာရီအတွက် စရိတ်ကို အမျိုးသားကျန်းမာရေးအာမခံရုံး (NHSO) သို့ တောင်းခံသည်။ အမျိုးသားအရေးပေါ်ဆေးပညာအင်စတီကျူး (NIEM) သို့ အယူခံဝင်၍ လူနာသည် အရေးပေါ်အခြေအနေ ဆိုးရွားသည့် စံနှုန်းနှင့် ကိုက်ညီကြောင်း တွေ့ရှိလျှင် 30 ရက်အတွင်း ကြေးများကို ပြန်အမ်းသည်။",
+       "zh": "医院向国家健康保障局（NHSO）申领前 72 小时的费用；若向国家急救医学院（NIEM）申诉后认定患者符合危重急救标准，须在 30 天内退还已收费用。",
+       "de": "Das Krankenhaus rechnet die ersten 72 Stunden mit der National Health Security Office ab. Es erstattet Gebühren innerhalb von 30 Tagen, wenn ein Einspruch beim National Institute for Emergency Medicine ergibt, dass der Patient die Kriterien eines kritischen Notfalls erfüllte."
+      },
+      {
+       "en": "Costs after 72 hours are billed to the patient's fund, the agency concerned or the patient.",
+       "th": "ค่าใช้จ่ายหลัง 72 ชั่วโมงเรียกเก็บจากกองทุนของผู้ป่วย หน่วยงานที่เกี่ยวข้อง หรือตัวผู้ป่วย",
+       "my": "72 နာရီအပြီး စရိတ်များကို လူနာ၏ ရန်ပုံငွေ၊ သက်ဆိုင်ရာအဖွဲ့အစည်း သို့မဟုတ် လူနာထံ တောင်းခံသည်။",
+       "zh": "72 小时之后的费用，向患者所属基金、相关机构或患者本人收取。",
+       "de": "Kosten nach 72 Stunden werden dem Fonds des Patienten, der zuständigen Stelle oder dem Patienten in Rechnung gestellt."
+      }
+     ],
+     "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/thai-cabinet-revises-72-hour-emergency-care-rules-from-tuesday-sept-15"
+    },
+    {
+     "id": "police",
+     "n": {
+      "en": "The police want a statement",
+      "th": "ตำรวจขอให้ปากคำ",
+      "my": "ရဲက ထွက်ချက်တောင်းသည်",
+      "zh": "警方要做笔录",
+      "de": "Die Polizei will eine Aussage"
+     },
+     "big": {
+      "en": "Police report",
+      "th": "บันทึกตำรวจ",
+      "my": "ရဲမှတ်တမ်း",
+      "zh": "警方记录",
+      "de": "Polizeibericht"
+     },
+     "t": {
+      "en": "The police report is one of the papers a hospital asks for when it bills the compulsory insurance. Bangkok Hospital Chiang Mai asks for the original report.",
+      "th": "บันทึกของตำรวจเป็นเอกสารอย่างหนึ่งที่โรงพยาบาลขอเมื่อเรียกเก็บเงินจากประกันภัยภาคบังคับ โรงพยาบาลกรุงเทพเชียงใหม่ขอฉบับจริง",
+      "my": "ရဲမှတ်တမ်းသည် ဆေးရုံက မဖြစ်မနေ အာမခံသို့ ငွေတောင်းခံသည့်အခါ တောင်းသည့် စာရွက်စာတမ်းတစ်ခု ဖြစ်သည်။ ဘန်ကောက်ဆေးရုံ ချင်းမိုင်က မူရင်းမှတ်တမ်းကို တောင်းသည်။",
+      "zh": "办理强制险理赔时，医院会要求提供警方记录。曼谷医院清迈分院要求提供原件。",
+      "de": "Der Polizeibericht gehört zu den Unterlagen, die ein Krankenhaus verlangt, wenn es die Pflichtversicherung abrechnet. Das Bangkok Hospital Chiang Mai verlangt den Originalbericht."
+     },
+     "facts": [
+      {
+       "en": "The report shows the date, time, place, plate number, chassis number, and the names of the driver and passengers.",
+       "th": "บันทึกระบุวัน เวลา สถานที่ เลขทะเบียน เลขตัวถัง และชื่อผู้ขับขี่และผู้โดยสาร",
+       "my": "မှတ်တမ်းတွင် ရက်စွဲ၊ အချိန်၊ နေရာ၊ ယာဉ်နံပါတ်၊ ကိုယ်ထည်နံပါတ်နှင့် ယာဉ်မောင်းနှင့် ခရီးသည်များ၏ အမည်များ ပါရှိသည်။",
+       "zh": "记录写明日期、时间、地点、车牌号、车架号，以及驾驶人和乘客的姓名。",
+       "de": "Der Bericht nennt Datum, Uhrzeit, Ort, Kennzeichen, Fahrgestellnummer sowie die Namen von Fahrer und Mitfahrern."
+      },
+      {
+       "en": "The injured person also brings a copy of an ID card or driving licence; a copy of the policy, vehicle registration, purchase contract or tax sticker (any one); and the accident confirmation form from the hospital.",
+       "th": "ผู้บาดเจ็บยังนำสำเนาบัตรประชาชนหรือใบขับขี่ สำเนากรมธรรม์ ทะเบียนรถ สัญญาซื้อขาย หรือป้ายภาษี (อย่างใดอย่างหนึ่ง) และแบบยืนยันอุบัติเหตุจากโรงพยาบาลมาด้วย",
+       "my": "ထိခိုက်သူသည် မှတ်ပုံတင် သို့မဟုတ် ယာဉ်မောင်းလိုင်စင်မိတ္တူ၊ အာမခံလက်မှတ်၊ ယာဉ်မှတ်ပုံတင်၊ ဝယ်ယူစာချုပ် သို့မဟုတ် အခွန်တံဆိပ်မိတ္တူ (တစ်ခုခု) နှင့် ဆေးရုံမှ ပေးသည့် မတော်တဆမှု အတည်ပြုပုံစံတို့ကိုလည်း ယူလာရသည်။",
+       "zh": "伤者还须带身份证或驾照复印件；保单、行车登记、购车合同或税贴复印件（任一）；以及医院提供的事故确认表。",
+       "de": "Die verletzte Person bringt ausserdem die Kopie eines Ausweises oder Führerscheins mit; die Kopie der Police, des Fahrzeugscheins, des Kaufvertrags oder der Steuerplakette (eines davon); und das Unfallbestätigungsformular des Krankenhauses."
+      },
+      {
+       "en": "Bangkok Hospital Chiang Mai takes the compulsory insurance for an initial ฿30,000. With all the papers in, treatment comes without paying in advance.",
+       "th": "โรงพยาบาลกรุงเทพเชียงใหม่รับสิทธิประกันภัยภาคบังคับวงเงินเริ่มต้น ฿30,000 เมื่อยื่นเอกสารครบ รับการรักษาโดยไม่ต้องจ่ายล่วงหน้า",
+       "my": "ဘန်ကောက်ဆေးရုံ ချင်းမိုင်သည် မဖြစ်မနေ အာမခံကို အစပိုင်း ฿30,000 ဖြင့် လက်ခံသည်။ စာရွက်စာတမ်း ပြည့်စုံလျှင် ကြိုတင်မပေးဘဲ ကုသမှု ရနိုင်သည်။",
+       "zh": "曼谷医院清迈分院接受强制险，初始额度 ฿30,000。文件齐全即可先治疗、无需预付。",
+       "de": "Das Bangkok Hospital Chiang Mai nimmt die Pflichtversicherung mit einem Anfangsbetrag von ฿30,000 an. Mit vollständigen Unterlagen wird ohne Vorauszahlung behandelt."
+      }
+     ],
+     "src": "https://www.bangkokhospital.com/de/chiangmai/content/%e0%b8%81%e0%b8%a3%e0%b8%a1%e0%b8%98%e0%b8%a3%e0%b8%a3%e0%b8%a1%e0%b9%8c%e0%b8%84%e0%b8%b8%e0%b9%89%e0%b8%a1%e0%b8%84%e0%b8%a3%e0%b8%ad%e0%b8%87%e0%b8%9c%e0%b8%b9%e0%b9%89%e0%b8%9b%e0%b8%a3%e0%b8%b0-b"
+    },
+    {
+     "id": "money",
+     "n": {
+      "en": "The insurer or the other side wants money",
+      "th": "บริษัทประกันหรืออีกฝ่ายเรียกเงิน",
+      "my": "အာမခံကုမ္ပဏီ သို့မဟုတ် တစ်ဖက်လူက ငွေတောင်းသည်",
+      "zh": "保险公司或对方要钱",
+      "de": "Die Versicherung oder die Gegenseite will Geld"
+     },
+     "big": {
+      "en": "180 days",
+      "th": "180 วัน",
+      "my": "180 ရက်",
+      "zh": "180 天",
+      "de": "180 Tage"
+     },
+     "t": {
+      "en": "The injured person asks for the initial payment within 180 days of the harm. It is paid without waiting to prove who was at fault. Further compensation follows once liability is proved, up to the cover limit.",
+      "th": "ผู้ประสบภัยต้องร้องขอค่าเสียหายเบื้องต้นภายใน 180 วันนับแต่วันที่เกิดความเสียหาย จ่ายโดยไม่ต้องรอพิสูจน์ว่าใครผิด ค่าสินไหมทดแทนส่วนที่เกินจากนั้นจ่ายหลังพิสูจน์ความรับผิดได้ ตามวงเงินคุ้มครอง",
+      "my": "ထိခိုက်သူသည် ထိခိုက်ပြီး 180 ရက်အတွင်း အစပိုင်း လျော်ကြေးကို တောင်းဆိုရသည်။ အမှားရှိသူကို သက်သေမပြမီ စောင့်စရာမလိုဘဲ ပေးသည်။ ထို့ထက်ပိုသော လျော်ကြေးကို တာဝန်ရှိကြောင်း သက်သေပြပြီးမှ အကာအကွယ်ကန့်သတ်ချက်အထိ ပေးသည်။",
+      "zh": "受害人须在损害发生后 180 天内申请初始赔偿。它不必等证明谁有过错即可支付。超出部分的赔偿，在证明责任后按保额支付。",
+      "de": "Die verletzte Person beantragt den Anfangsbetrag innerhalb von 180 Tagen nach dem Schaden. Er wird gezahlt, ohne dass zuerst bewiesen sein muss, wer schuld war. Weitere Entschädigung folgt, sobald die Haftung bewiesen ist, bis zur Deckungsgrenze."
+     },
+     "facts": [
+      {
+       "en": "The Road Accident Victims Protection Co. takes requests and pays claims when the insurers or the Fund assign it to.",
+       "th": "บริษัท กลางคุ้มครองผู้ประสบภัยจากรถ จำกัด รับคำร้องขอและจ่ายค่าสินไหมทดแทนตามที่บริษัทประกันหรือสำนักงานกองทุนมอบหมาย",
+       "my": "ယာဉ်မတော်တဆမှု ထိခိုက်သူများ ကာကွယ်ရေး ကုမ္ပဏီ (Road Accident Victims Protection Co.) သည် အာမခံကုမ္ပဏီများ သို့မဟုတ် ရန်ပုံငွေရုံးက လွှဲအပ်သည့်အတိုင်း တောင်းဆိုချက်များကို လက်ခံပြီး လျော်ကြေးပေးသည်။",
+       "zh": "道路事故受害者保护公司按保险公司或基金办公室的委托，受理申请并支付赔偿。",
+       "de": "Die Road Accident Victims Protection Co. nimmt Anträge entgegen und zahlt Entschädigungen, wenn die Versicherer oder der Fonds sie damit beauftragen."
+      },
+      {
+       "en": "When the Fund pays because no initial payment was made, or too little, it claims the amount back from the vehicle owner or insurer. It adds 20% of the initial amount it paid, and can seize or freeze assets if the money is not repaid.",
+       "th": "เมื่อกองทุนจ่ายเพราะไม่มีการจ่ายค่าเสียหายเบื้องต้นหรือจ่ายไม่ครบ กองทุนไล่เบี้ยเอาคืนจากเจ้าของรถหรือบริษัทประกัน บวกเงินเพิ่มร้อยละ 20 ของค่าเสียหายเบื้องต้นที่จ่าย และมีสิทธิยึดหรืออายัดทรัพย์สินหากไม่ชำระคืน",
+       "my": "ကနဦးလျော်ကြေး မပေးခြင်း သို့မဟုတ် မပြည့်စုံစွာ ပေးခြင်းကြောင့် ရန်ပုံငွေက ပေးလိုက်ရလျှင် ယာဉ်ပိုင်ရှင် သို့မဟုတ် အာမခံကုမ္ပဏီထံမှ ပြန်ယူသည်။ ပေးထားသည့် ကနဦးပမာဏ၏ 20% ကို ထပ်ပေါင်းပြီး ပြန်မပေးလျှင် ပိုင်ဆိုင်မှုများကို သိမ်းဆည်း သို့မဟုတ် အသိမ်းခံရအောင် ပိတ်ပင်နိုင်သည်။",
+       "zh": "基金因未支付或未付足初始赔偿而垫付时，会向车主或保险公司追偿，另加所垫初始赔偿金额的 20% 作附加款；若不偿还，可查封或冻结财产。",
+       "de": "Zahlt der Fonds, weil kein oder zu wenig Anfangsbetrag gezahlt wurde, fordert er den Betrag vom Halter oder Versicherer zurück. Er schlägt 20% des gezahlten Anfangsbetrags auf und kann Vermögen pfänden oder sperren, wenn nicht zurückgezahlt wird."
+      }
+     ],
+     "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+    }
+   ],
+   "start": "moto-hurt",
+   "oursLine": {
+    "en": "Hongdam goes with you to the police station, has the report translated and deals with the insurer or rental shop in Thai, for:",
+    "th": "หงส์ดำไปกับคุณที่สถานีตำรวจ แปลบันทึก และคุยกับประกันหรือร้านเช่าเป็นภาษาไทย ในราคา:",
+    "my": "ဟုန်ဒမ်သည် သင်နှင့်အတူ ရဲစခန်းသို့ လိုက်ပါပြီး မှတ်တမ်းကို ဘာသာပြန်ကာ အာမခံကုမ္ပဏီ သို့မဟုတ် ငှားရမ်းသည့်ဆိုင်နှင့် ထိုင်းလို ဆက်သွယ်ပေးသည် - စျေးနှုန်း:",
+    "zh": "鸿丹陪你去警局、翻译记录，并用泰语对接保险公司或租车行，价格：",
+    "de": "Hongdam begleitet Sie zur Polizeiwache, lässt den Bericht übersetzen und verhandelt auf Thai mit der Versicherung oder dem Verleih, für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "The compulsory motor insurance pays actual treatment costs up to ฿30,000 per person before fault is decided. Once the driver is shown to be liable, the limit is ฿80,000 per person, with the first ฿30,000 included.",
+    "th": "พ.ร.บ.รถจ่ายค่ารักษาพยาบาลตามจริงไม่เกิน ฿30,000 ต่อคน ก่อนตัดสินว่าใครผิด เมื่อพิสูจน์ได้ว่าผู้ขับขี่เป็นฝ่ายผิด วงเงินคือ ฿80,000 ต่อคน รวม ฿30,000 แรกไว้แล้ว",
+    "my": "မဖြစ်မနေ မော်တော်ယာဉ်အာမခံသည် အမှားရှိသူ မဆုံးဖြတ်မီ ဆေးကုသစရိတ် အမှန်ကို တစ်ဦးလျှင် ฿30,000 အထိ ပေးသည်။ ယာဉ်မောင်းတွင် တာဝန်ရှိကြောင်း သက်သေပြပြီးလျှင် ကန့်သတ်ချက်မှာ တစ်ဦးလျှင် ฿80,000 ဖြစ်ပြီး ပထမ ฿30,000 ပါဝင်ပြီးဖြစ်သည်။",
+    "zh": "强制汽车保险在认定过错之前，按实际治疗费每人赔付最高 ฿30,000。证明驾驶人有责任后，限额为每人 ฿80,000，首笔 ฿30,000 已包含在内。",
+    "de": "Die Pflichtversicherung zahlt die tatsächlichen Behandlungskosten bis ฿30,000 pro Person, bevor die Schuldfrage geklärt ist. Sobald die Haftung des Fahrers feststeht, liegt die Grenze bei ฿80,000 pro Person; die ersten ฿30,000 sind darin enthalten."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/507825"
+  },
+  {
+   "t": {
+    "en": "For death or total permanent disability the compulsory insurance pays ฿35,000 per person before fault is decided, and up to ฿500,000 once liability is shown. A patient in hospital gets ฿200 a day for up to 20 days.",
+    "th": "กรณีเสียชีวิตหรือทุพพลภาพถาวรสิ้นเชิง พ.ร.บ.รถจ่าย ฿35,000 ต่อคน ก่อนตัดสินว่าใครผิด และไม่เกิน ฿500,000 เมื่อพิสูจน์ความรับผิดได้ ผู้ป่วยในได้รับวันละ ฿200 สูงสุด 20 วัน",
+    "my": "သေဆုံးခြင်း သို့မဟုတ် လုံးဝ ထာဝရ မသန်စွမ်းခြင်းအတွက် မဖြစ်မနေ အာမခံသည် အမှားရှိသူ မဆုံးဖြတ်မီ တစ်ဦးလျှင် ฿35,000 ပေးပြီး တာဝန်ရှိကြောင်း သက်သေပြပြီးလျှင် ฿500,000 အထိ ပေးသည်။ ဆေးရုံတက်လူနာသည် တစ်နေ့လျှင် ฿200 ဖြင့် 20 ရက်အထိ ရသည်။",
+    "zh": "死亡或完全永久伤残，强制险在认定过错之前每人赔付 ฿35,000，证明责任后最高 ฿500,000。住院病人每天可得 ฿200，最多 20 天。",
+    "de": "Bei Tod oder vollständiger dauerhafter Invalidität zahlt die Pflichtversicherung ฿35,000 pro Person, bevor die Schuldfrage geklärt ist, und bis ฿500,000, sobald die Haftung feststeht. Ein stationärer Patient erhält ฿200 pro Tag, bis zu 20 Tage."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/507825"
+  },
+  {
+   "t": {
+    "en": "The compulsory insurance covers any person harmed by a vehicle: owner, driver, passenger or pedestrian, in or out of the vehicle, whether or not at fault. Cover starts at the moment of the accident.",
+    "th": "ประกันภัยภาคบังคับคุ้มครองทุกคนที่ประสบภัยจากรถ ไม่ว่าจะเป็นเจ้าของรถ ผู้ขับขี่ ผู้โดยสาร หรือคนเดินถนน อยู่ในรถหรือนอกรถ และไม่ว่าจะเป็นฝ่ายผิดหรือไม่ ความคุ้มครองเริ่มทันทีที่ประสบภัย",
+    "my": "မဖြစ်မနေ အာမခံသည် ယာဉ်ကြောင့် ထိခိုက်ခံရသူ မည်သူ့ကိုမဆို ကာကွယ်သည် - ပိုင်ရှင်၊ ယာဉ်မောင်း၊ ခရီးသည် သို့မဟုတ် လမ်းသွားလမ်းလာ၊ ယာဉ်ထဲ သို့မဟုတ် ပြင်ပ၊ အမှားရှိသည်ဖြစ်စေ မရှိသည်ဖြစ်စေ။ မတော်တဆမှု ဖြစ်ပွားသည့် ခဏမှစ၍ အကာအကွယ် ရရှိသည်။",
+    "zh": "强制保险保障任何因车辆受到伤害的人：车主、驾驶人、乘客或行人，不论在车内还是车外，也不论有无过错。事故发生的那一刻起即受保障。",
+    "de": "Die Pflichtversicherung deckt jede Person, die durch ein Fahrzeug zu Schaden kommt: Eigentümer, Fahrer, Fahrgast oder Fussgänger, im oder ausserhalb des Fahrzeugs, unabhängig von der Schuld. Der Schutz gilt ab dem Moment des Unfalls."
+   },
+   "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "t": {
+    "en": "A request for the initial payment is made within 180 days of the harm. The initial payment comes without waiting for fault to be proved.",
+    "th": "การร้องขอค่าเสียหายเบื้องต้นต้องทำภายใน 180 วันนับแต่วันที่เกิดความเสียหาย และจ่ายโดยไม่ต้องรอพิสูจน์ความรับผิด",
+    "my": "အစပိုင်း လျော်ကြေးအတွက် တောင်းဆိုချက်ကို ထိခိုက်ပြီး 180 ရက်အတွင်း ပြုလုပ်ရသည်။ အမှားရှိသူကို သက်သေမပြမီ စောင့်စရာမလိုဘဲ ပေးသည်။",
+    "zh": "初始赔偿的申请须在损害发生后 180 天内提出。它不必等证明过错即可支付。",
+    "de": "Der Antrag auf den Anfangsbetrag wird innerhalb von 180 Tagen nach dem Schaden gestellt. Er wird gezahlt, ohne dass zuerst die Schuld bewiesen sein muss."
+   },
+   "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "t": {
+    "en": "The Fund pays within 7 days of a request with complete papers when the vehicle was uninsured, the driver drove off, or the vehicle cannot be identified.",
+    "th": "กองทุนทดแทนผู้ประสบภัยจ่ายภายใน 7 วันนับแต่ได้รับคำร้องขอและเอกสารครบถ้วน เมื่อรถไม่ได้ทำประกัน ผู้ขับขี่หลบหนี หรือไม่อาจทราบว่าเป็นรถคันใด",
+    "my": "ယာဉ်ကို အာမခံမထားသည့်အခါ၊ ယာဉ်မောင်း ထွက်ပြေးသွားသည့်အခါ သို့မဟုတ် ယာဉ်ကို မခွဲခြားနိုင်သည့်အခါ ရန်ပုံငွေက တောင်းဆိုချက်နှင့် စာရွက်စာတမ်း ပြည့်စုံစွာ လက်ခံရပြီး 7 ရက်အတွင်း ပေးသည်။",
+    "zh": "车辆未投保、肇事者逃逸或无法确定车辆时，基金在收到申请和齐全文件后 7 天内支付。",
+    "de": "Der Fonds zahlt innerhalb von 7 Tagen nach Eingang des Antrags mit vollständigen Unterlagen, wenn das Fahrzeug nicht versichert war, der Fahrer geflohen ist oder sich das Fahrzeug nicht feststellen lässt."
+   },
+   "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "t": {
+    "en": "Under the Cabinet's revised UCEP rules of 15 September 2026, a hospital treats a critical emergency patient until the patient is stable and for up to 72 hours from admission, with treatment not conditional on payment. Motor accident protection and insurance are used first.",
+    "th": "ตามกฎ UCEP ฉบับปรับปรุงของคณะรัฐมนตรี วันที่ 15 กันยายน 2026 โรงพยาบาลรักษาผู้ป่วยฉุกเฉินวิกฤตจนพ้นขีดอันตรายและนานสูงสุด 72 ชั่วโมงนับจากรับเข้า โดยการรักษาไม่ผูกกับการจ่ายเงิน ความคุ้มครองจากกฎหมายคุ้มครองผู้ประสบภัยจากรถและประกันใช้ก่อน",
+    "my": "ဝန်ကြီးအဖွဲ့၏ ပြင်ဆင်ထားသော UCEP စည်းမျဉ်း (2026 စက်တင်ဘာ 15) အရ ဆေးရုံသည် အရေးပေါ်အခြေအနေ ဆိုးရွားသည့် လူနာကို အန္တရာယ်ကင်းသည်အထိ၊ ဆေးရုံတက်ချိန်မှ 72 နာရီအထိ ကုသပြီး ကုသမှုကို ငွေပေးချေမှုနှင့် အခြေမခံပါ။ မော်တော်ယာဉ်မတော်တဆမှု ကာကွယ်ရေးနှင့် အာမခံကို ဦးစွာ သုံးသည်။",
+    "zh": "按内阁 2026 年 9 月 15 日修订的 UCEP 规则，医院对危重急救患者治疗至脱离危险，最长至入院后 72 小时，治疗不以付款为条件。机动车事故保护和保险先行使用。",
+    "de": "Nach den vom Kabinett am 15. September 2026 überarbeiteten UCEP-Regeln behandelt ein Krankenhaus einen kritischen Notfallpatienten, bis er ausser Gefahr ist, und bis zu 72 Stunden ab Aufnahme, ohne die Behandlung an eine Zahlung zu knüpfen. Der Schutz für Verkehrsunfallopfer und Versicherungen werden zuerst genutzt."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/thai-cabinet-revises-72-hour-emergency-care-rules-from-tuesday-sept-15"
+  },
+  {
+   "t": {
+    "en": "WHO estimates 18,218 road deaths in Thailand in 2021, an average of 50 a day, a rate of 25.4 per 100,000 people. Motorcyclists were 83.8% of all traffic deaths.",
+    "th": "WHO ประเมินว่าในปี 2021 ไทยมีผู้เสียชีวิตบนถนน 18,218 คน เฉลี่ยวันละ 50 คน อัตรา 25.4 ต่อประชากร 100,000 คน ผู้ขับขี่รถจักรยานยนต์คิดเป็น 83.8% ของผู้เสียชีวิตจากการจราจรทั้งหมด",
+    "my": "WHO ၏ ခန့်မှန်းချက်အရ 2021 ခုနှစ်တွင် ထိုင်းလမ်းပေါ် သေဆုံးသူ 18,218 ဦး ရှိပြီး ပျမ်းမျှ တစ်နေ့ 50 ဦး၊ လူ 100,000 လျှင် 25.4 ဦး ဖြစ်သည်။ ဆိုင်ကယ်စီးသူများသည် ယာဉ်ကြောင်းသေဆုံးသူအားလုံး၏ 83.8% ဖြစ်သည်။",
+    "zh": "WHO 估计 2021 年泰国有 18,218 人死于道路交通事故，平均每天 50 人，每 10 万人 25.4 人。摩托车骑行者占全部交通死亡人数的 83.8%。",
+    "de": "Die WHO schätzt 18,218 Verkehrstote in Thailand im Jahr 2021, im Schnitt 50 pro Tag, eine Rate von 25.4 pro 100,000 Einwohner. Motorradfahrer machten 83.8% aller Verkehrstoten aus."
+   },
+   "src": "https://www.who.int/thailand/our-work/road-safety"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai–English interpreter, online, by the hour, on a Fastwork listing",
+    "th": "ล่ามไทย–อังกฤษออนไลน์ รายชั่วโมง จากประกาศบน Fastwork",
+    "my": "Fastwork ကြော်ငြာတစ်ခုမှ ထိုင်း–အင်္ဂလိပ် အွန်လိုင်း စကားပြန်၊ တစ်နာရီချင်း",
+    "zh": "Fastwork 上的泰英在线口译，按小时计",
+    "de": "Thai–Englisch-Dolmetscher online, pro Stunde, in einem Fastwork-Angebot"
+   },
+   "p": {
+    "en": "฿800–1,000 an hour",
+    "th": "฿800–1,000 ต่อชั่วโมง",
+    "my": "တစ်နာရီလျှင် ฿800–1,000",
+    "zh": "每小时 ฿800–1,000",
+    "de": "฿800–1,000 pro Stunde"
+   },
+   "src": "https://fastwork.co/user/gridfb/translator-16388642"
+  },
+  {
+   "t": {
+    "en": "The same interpreter by the day, online: half day up to 4 hours, full day up to 8 hours. On-site work is by inquiry and travel is extra",
+    "th": "ล่ามคนเดียวกันรายวัน ออนไลน์: ครึ่งวันไม่เกิน 4 ชั่วโมง เต็มวันไม่เกิน 8 ชั่วโมง งานนอกสถานที่สอบถามได้ ค่าเดินทางคิดเพิ่ม",
+    "my": "ထိုစကားပြန်၏ နေ့စဉ်ဈေး၊ အွန်လိုင်း - နေ့တစ်ဝက် 4 နာရီအထိ၊ တစ်ရက်လုံး 8 နာရီအထိ။ ပြင်ပနေရာသွားရလျှင် မေးမြန်းရပြီး ခရီးစရိတ် ထပ်ပေါင်းသည်",
+    "zh": "同一位口译员按天计，在线：半天最多 4 小时，全天最多 8 小时。现场口译需询价，差旅费另计",
+    "de": "Derselbe Dolmetscher pro Tag, online: halber Tag bis 4 Stunden, ganzer Tag bis 8 Stunden. Einsatz vor Ort auf Anfrage, Reisekosten extra"
+   },
+   "p": {
+    "en": "฿2,500 half day; ฿5,000 full day",
+    "th": "฿2,500 ครึ่งวัน; ฿5,000 เต็มวัน",
+    "my": "နေ့တစ်ဝက် ฿2,500၊ တစ်ရက်လုံး ฿5,000",
+    "zh": "半天 ฿2,500；全天 ฿5,000",
+    "de": "฿2,500 halber Tag; ฿5,000 ganzer Tag"
+   },
+   "src": "https://fastwork.co/user/gridfb/translator-16388642"
+  },
+  {
+   "t": {
+    "en": "If someone dies: cremation, ashes released",
+    "th": "กรณีเสียชีวิต: ฌาปนกิจ ลอยอังคาร",
+    "my": "သေဆုံးပါက: မီးသင်္ဂြိုဟ်၊ ပြာ ဖြန့်",
+    "zh": "若有人身亡：火化并撒骨灰",
+    "de": "Im Todesfall: Einäscherung, Asche verstreut"
+   },
+   "p": {
+    "en": "฿31,000–41,000",
+    "th": "฿31,000–41,000",
+    "my": "฿31,000–41,000",
+    "zh": "฿31,000–41,000",
+    "de": "฿31,000–41,000"
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "t": {
+    "en": "If someone dies: repatriation of a body",
+    "th": "กรณีเสียชีวิต: ส่งร่างกลับประเทศ",
+    "my": "သေဆုံးပါက: အလောင်း ပြန်ပို့ခြင်း",
+    "zh": "若有人身亡：遗体运回",
+    "de": "Im Todesfall: Rückführung eines Leichnams"
+   },
+   "p": {
+    "en": "฿100,000–125,000",
+    "th": "฿100,000–125,000",
+    "my": "฿100,000–125,000",
+    "zh": "฿100,000–125,000",
+    "de": "฿100,000–125,000"
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does the compulsory insurance (Por Ror Bor) pay after a motorcycle accident?",
+    "th": "หลังอุบัติเหตุรถจักรยานยนต์ พ.ร.บ. จ่ายอะไรบ้าง",
+    "my": "ဆိုင်ကယ်မတော်တဆမှုအပြီး မဖြစ်မနေ အာမခံ (Por Ror Bor) က ဘာတွေ ပေးသလဲ",
+    "zh": "摩托车事故后，强制险（Por Ror Bor）赔什么？",
+    "de": "Was zahlt die Pflichtversicherung (Por Ror Bor) nach einem Motorradunfall?"
+   },
+   "a": {
+    "en": "It pays actual treatment costs up to ฿30,000 per person before fault is decided, and up to ฿80,000 once the driver is shown to be liable. For death or total permanent disability it pays ฿35,000 first and up to ฿500,000 once liability is shown.",
+    "th": "จ่ายค่ารักษาพยาบาลตามจริงไม่เกิน ฿30,000 ต่อคน ก่อนตัดสินว่าใครผิด และไม่เกิน ฿80,000 เมื่อพิสูจน์ได้ว่าผู้ขับขี่เป็นฝ่ายผิด กรณีเสียชีวิตหรือทุพพลภาพถาวรสิ้นเชิง จ่าย ฿35,000 ก่อน และไม่เกิน ฿500,000 เมื่อพิสูจน์ความรับผิดได้",
+    "my": "အမှားရှိသူ မဆုံးဖြတ်မီ ဆေးကုသစရိတ် အမှန်ကို တစ်ဦးလျှင် ฿30,000 အထိ ပေးပြီး ယာဉ်မောင်းတွင် တာဝန်ရှိကြောင်း သက်သေပြပြီးလျှင် ฿80,000 အထိ ပေးသည်။ သေဆုံးခြင်း သို့မဟုတ် လုံးဝ ထာဝရ မသန်စွမ်းခြင်းအတွက် ฿35,000 ကို ဦးစွာပေးပြီး တာဝန်ရှိကြောင်း သက်သေပြပြီးလျှင် ฿500,000 အထိ ပေးသည်။",
+    "zh": "在认定过错之前，按实际治疗费每人赔付最高 ฿30,000；证明驾驶人有责任后最高 ฿80,000。死亡或完全永久伤残，先赔 ฿35,000，证明责任后最高 ฿500,000。",
+    "de": "Sie zahlt die tatsächlichen Behandlungskosten bis ฿30,000 pro Person, bevor die Schuldfrage geklärt ist, und bis ฿80,000, sobald die Haftung des Fahrers feststeht. Bei Tod oder vollständiger dauerhafter Invalidität zahlt sie zuerst ฿35,000 und bis ฿500,000, sobald die Haftung feststeht."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/507825"
+  },
+  {
+   "q": {
+    "en": "Who does the compulsory insurance cover?",
+    "th": "พ.ร.บ. คุ้มครองใครบ้าง",
+    "my": "မဖြစ်မနေ အာမခံက ဘယ်သူတွေကို ကာကွယ်ပေးသလဲ",
+    "zh": "强制险保障哪些人？",
+    "de": "Wen deckt die Pflichtversicherung?"
+   },
+   "a": {
+    "en": "The Office of the Insurance Commission's summary says it covers any person harmed by a vehicle: an owner, a driver, a passenger or a pedestrian, in or out of the vehicle. It applies whether or not the person was at fault, from the moment of the accident.",
+    "th": "สรุปของสำนักงาน คปภ. ระบุว่าคุ้มครองทุกคนที่ประสบภัยจากรถ ได้แก่ เจ้าของรถ ผู้ขับขี่ ผู้โดยสาร หรือคนเดินถนน อยู่ในรถหรือนอกรถ ใช้ได้ไม่ว่าผู้นั้นจะเป็นฝ่ายผิดหรือไม่ นับจากวินาทีที่ประสบภัย",
+    "my": "အာမခံကော်မရှင်ရုံး (OIC) ၏ အကျဉ်းချုပ်အရ ယာဉ်ကြောင့် ထိခိုက်ခံရသူ မည်သူ့ကိုမဆို ကာကွယ်သည် - ပိုင်ရှင်၊ ယာဉ်မောင်း၊ ခရီးသည် သို့မဟုတ် လမ်းသွားလမ်းလာ၊ ယာဉ်ထဲ သို့မဟုတ် ပြင်ပ။ ထိုသူတွင် အမှားရှိသည်ဖြစ်စေ မရှိသည်ဖြစ်စေ၊ မတော်တဆမှု ဖြစ်ပွားသည့် ခဏမှစ၍ သက်ရောက်သည်။",
+    "zh": "保险委员会办公室（OIC）的摘要指出，它保障任何因车辆受到伤害的人：车主、驾驶人、乘客或行人，不论在车内还是车外。不论此人有无过错，自事故发生那一刻起适用。",
+    "de": "Die Zusammenfassung des Office of the Insurance Commission sagt, sie deckt jede Person, die durch ein Fahrzeug zu Schaden kommt: Eigentümer, Fahrer, Fahrgast oder Fussgänger, im oder ausserhalb des Fahrzeugs. Sie gilt unabhängig von der Schuld, ab dem Moment des Unfalls."
+   },
+   "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "q": {
+    "en": "How long is there to ask for the initial payment?",
+    "th": "ร้องขอค่าเสียหายเบื้องต้นได้ภายในกี่วัน",
+    "my": "အစပိုင်း လျော်ကြေးကို ဘယ်နှစ်ရက်အတွင်း တောင်းဆိုနိုင်သလဲ",
+    "zh": "初始赔偿要在多长时间内申请？",
+    "de": "Wie lange ist Zeit, den Anfangsbetrag zu beantragen?"
+   },
+   "a": {
+    "en": "180 days from the day of the harm. The initial payment is made without waiting to prove who was at fault.",
+    "th": "180 วันนับแต่วันที่เกิดความเสียหาย จ่ายค่าเสียหายเบื้องต้นโดยไม่ต้องรอพิสูจน์ว่าใครผิด",
+    "my": "ထိခိုက်သည့်နေ့မှ 180 ရက်။ အမှားရှိသူကို သက်သေမပြမီ စောင့်စရာမလိုဘဲ အစပိုင်း လျော်ကြေးကို ပေးသည်။",
+    "zh": "自损害发生之日起 180 天。初始赔偿不必等证明谁有过错即可支付。",
+    "de": "180 Tage ab dem Tag des Schadens. Der Anfangsbetrag wird gezahlt, ohne dass zuerst bewiesen sein muss, wer schuld war."
+   },
+   "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "q": {
+    "en": "What if the other vehicle drove off or had no insurance?",
+    "th": "ถ้ารถอีกคันหลบหนีหรือไม่มีประกันล่ะ",
+    "my": "တစ်ဖက်ယာဉ် ထွက်ပြေးသွားလျှင် သို့မဟုတ် အာမခံမရှိလျှင် ဘာဖြစ်မလဲ",
+    "zh": "如果对方车辆逃逸或没有投保呢？",
+    "de": "Was gilt, wenn das andere Fahrzeug geflohen oder nicht versichert war?"
+   },
+   "a": {
+    "en": "The Fund (กองทุนทดแทนผู้ประสบภัย) pays the initial amount. It pays within 7 days of receiving the request and complete papers, and can claim the money back from the vehicle owner or insurer.",
+    "th": "กองทุนทดแทนผู้ประสบภัยจ่ายค่าเสียหายเบื้องต้น โดยจ่ายภายใน 7 วันนับแต่ได้รับคำร้องขอและเอกสารครบถ้วน และไล่เบี้ยเอาคืนจากเจ้าของรถหรือบริษัทประกันได้",
+    "my": "ရန်ပုံငွေ (กองทุนทดแทนผู้ประสบภัย) က အစပိုင်း လျော်ကြေးကို ပေးသည်။ တောင်းဆိုချက်နှင့် စာရွက်စာတမ်း ပြည့်စုံစွာ လက်ခံရပြီး 7 ရက်အတွင်း ပေးကာ ယာဉ်ပိုင်ရှင် သို့မဟုတ် အာမခံကုမ္ပဏီထံမှ ပြန်ယူနိုင်သည်။",
+    "zh": "赔偿基金（กองทุนทดแทนผู้ประสบภัย）先行支付初始赔偿，在收到申请和齐全文件后 7 天内支付，并可向车主或保险公司追偿。",
+    "de": "Der Fonds (กองทุนทดแทนผู้ประสบภัย) zahlt den Anfangsbetrag. Er zahlt innerhalb von 7 Tagen nach Eingang des Antrags und der vollständigen Unterlagen und kann das Geld vom Halter oder Versicherer zurückfordern."
+   },
+   "src": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "q": {
+    "en": "Which papers does a hospital ask for in a compulsory-insurance claim?",
+    "th": "โรงพยาบาลขอเอกสารอะไรบ้างเมื่อเบิกจากประกันภัยภาคบังคับ",
+    "my": "မဖြစ်မနေ အာမခံ တောင်းဆိုမှုတွင် ဆေးရုံက ဘာစာရွက်စာတမ်းတွေ တောင်းသလဲ",
+    "zh": "按强制险理赔，医院要哪些文件？",
+    "de": "Welche Unterlagen verlangt ein Krankenhaus bei einem Anspruch aus der Pflichtversicherung?"
+   },
+   "a": {
+    "en": "Bangkok Hospital Chiang Mai lists the original police report; a copy of an ID card or driving licence; a copy of the policy, registration, purchase contract or tax sticker; and its accident confirmation form. A driver who is not the injured person, and the vehicle owner, have their own lists.",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่ระบุ บันทึกของตำรวจฉบับจริง สำเนาบัตรประชาชนหรือใบขับขี่ สำเนากรมธรรม์ ทะเบียนรถ สัญญาซื้อขาย หรือป้ายภาษี และแบบยืนยันอุบัติเหตุของโรงพยาบาล ผู้ขับขี่ที่ไม่ใช่ผู้บาดเจ็บและเจ้าของรถมีรายการเอกสารของตนเอง",
+    "my": "ဘန်ကောက်ဆေးရုံ ချင်းမိုင်က မူရင်းရဲမှတ်တမ်း၊ မှတ်ပုံတင် သို့မဟုတ် ယာဉ်မောင်းလိုင်စင်မိတ္တူ၊ အာမခံလက်မှတ်၊ ယာဉ်မှတ်ပုံတင်၊ ဝယ်ယူစာချုပ် သို့မဟုတ် အခွန်တံဆိပ်မိတ္တူနှင့် ဆေးရုံ၏ မတော်တဆမှု အတည်ပြုပုံစံတို့ကို ဖော်ပြသည်။ ထိခိုက်သူမဟုတ်သော ယာဉ်မောင်းနှင့် ယာဉ်ပိုင်ရှင်တို့တွင် ကိုယ်ပိုင်စာရင်း ရှိသည်။",
+    "zh": "曼谷医院清迈分院列出：警方记录原件；身份证或驾照复印件；保单、行车登记、购车合同或税贴复印件；以及医院的事故确认表。非伤者的驾驶人和车主各有自己的清单。",
+    "de": "Das Bangkok Hospital Chiang Mai nennt: den Originalbericht der Polizei; die Kopie eines Ausweises oder Führerscheins; die Kopie der Police, des Fahrzeugscheins, des Kaufvertrags oder der Steuerplakette; und sein Unfallbestätigungsformular. Ein Fahrer, der nicht die verletzte Person ist, und der Fahrzeughalter haben eigene Listen."
+   },
+   "src": "https://www.bangkokhospital.com/de/chiangmai/content/%e0%b8%81%e0%b8%a3%e0%b8%a1%e0%b8%98%e0%b8%a3%e0%b8%a3%e0%b8%a1%e0%b9%8c%e0%b8%84%e0%b8%b8%e0%b9%89%e0%b8%a1%e0%b8%84%e0%b8%a3%e0%b8%ad%e0%b8%87%e0%b8%9c%e0%b8%b9%e0%b9%89%e0%b8%9b%e0%b8%a3%e0%b8%b0-b"
+  },
+  {
+   "q": {
+    "en": "Will a hospital treat me before I pay?",
+    "th": "โรงพยาบาลรักษาก่อนโดยยังไม่จ่ายเงินไหม",
+    "my": "ငွေမပေးရသေးဘဲ ဆေးရုံက ကုသပေးမလား",
+    "zh": "我没付钱，医院会先治疗吗？",
+    "de": "Behandelt mich ein Krankenhaus, bevor ich zahle?"
+   },
+   "a": {
+    "en": "Under the revised UCEP rules of 15 September 2026, a hospital treats a critical emergency patient without making treatment conditional on payment, for up to 72 hours from admission. The patient pays in two cases: refusing a transfer once no longer critical, or choosing another facility.",
+    "th": "ตามกฎ UCEP ฉบับปรับปรุงวันที่ 15 กันยายน 2026 โรงพยาบาลรักษาผู้ป่วยฉุกเฉินวิกฤตโดยไม่ผูกกับการจ่ายเงิน นานสูงสุด 72 ชั่วโมงนับจากรับเข้า ผู้ป่วยจ่ายเองในสองกรณี คือปฏิเสธการส่งตัวหลังพ้นภาวะวิกฤต หรือเลือกรักษาที่สถานพยาบาลอื่น",
+    "my": "2026 စက်တင်ဘာ 15 ရက်နေ့ ပြင်ဆင်ထားသော UCEP စည်းမျဉ်းအရ ဆေးရုံသည် အရေးပေါ်အခြေအနေ ဆိုးရွားသည့် လူနာကို ဆေးရုံတက်ချိန်မှ 72 နာရီအထိ ကုသမှုကို ငွေပေးချေမှုနှင့် အခြေမခံဘဲ ကုသသည်။ လူနာက ကိုယ်တိုင်ပေးရသည့် ကိစ္စ နှစ်ခုရှိသည် - အရေးပေါ်အခြေအနေ မဆိုးတော့သည့်နောက် လွှဲပြောင်းမှုကို ငြင်းခြင်း သို့မဟုတ် အခြားဆေးရုံကို ရွေးခြင်း။",
+    "zh": "按 2026 年 9 月 15 日修订的 UCEP 规则，医院对危重急救患者治疗，最长至入院后 72 小时，不以付款为条件。患者自付的情形有两种：脱离危重状态后拒绝转院，或自行选择其他机构。",
+    "de": "Nach den überarbeiteten UCEP-Regeln vom 15. September 2026 behandelt ein Krankenhaus einen kritischen Notfallpatienten bis zu 72 Stunden ab Aufnahme, ohne die Behandlung an eine Zahlung zu knüpfen. Der Patient zahlt in zwei Fällen selbst: bei Ablehnung einer Verlegung nach der kritischen Phase oder bei Wahl einer anderen Einrichtung."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/thai-cabinet-revises-72-hour-emergency-care-rules-from-tuesday-sept-15"
+  },
+  {
+   "q": {
+    "en": "Which number calls an ambulance?",
+    "th": "โทรเรียกรถพยาบาลที่เบอร์อะไร",
+    "my": "လူနာတင်ယာဉ်ကို ဘယ်နံပါတ်ဖြင့် ခေါ်ရသလဲ",
+    "zh": "叫救护车打哪个号码？",
+    "de": "Welche Nummer ruft den Rettungswagen?"
+   },
+   "a": {
+    "en": "1669. The website of the National Institute for Emergency Medicine lists it for a medical emergency (เจ็บป่วยฉุกเฉิน โทร.1669).",
+    "th": "1669 เว็บไซต์ของสถาบันการแพทย์ฉุกเฉินแห่งชาติระบุเบอร์นี้สำหรับเจ็บป่วยฉุกเฉิน (เจ็บป่วยฉุกเฉิน โทร.1669)",
+    "my": "1669။ အမျိုးသားအရေးပေါ်ဆေးပညာအင်စတီကျူး၏ ဝက်ဘ်ဆိုက်တွင် ဆေးပညာဆိုင်ရာ အရေးပေါ်အတွက် ဤနံပါတ်ကို ဖော်ပြထားသည် (เจ็บป่วยฉุกเฉิน โทร.1669)။",
+    "zh": "1669。国家急救医学院的网站把它列为医疗急救号码（เจ็บป่วยฉุกเฉิน โทร.1669）。",
+    "de": "1669. Die Website des National Institute for Emergency Medicine nennt sie für einen medizinischen Notfall (เจ็บป่วยฉุกเฉิน โทร.1669)."
+   },
+   "src": "https://www.niems.go.th/"
+  },
+  {
+   "q": {
+    "en": "How many people die on Thai roads?",
+    "th": "ในไทยมีคนเสียชีวิตบนถนนปีละกี่คน",
+    "my": "ထိုင်းလမ်းပေါ်တွင် လူဘယ်နှဦး သေဆုံးသလဲ",
+    "zh": "泰国每年有多少人死于道路交通事故？",
+    "de": "Wie viele Menschen sterben auf Thailands Strassen?"
+   },
+   "a": {
+    "en": "WHO estimates 18,218 road deaths in 2021, an average of 50 a day. Motorcyclists were 83.8% of all traffic deaths.",
+    "th": "WHO ประเมินว่าปี 2021 มีผู้เสียชีวิตบนถนน 18,218 คน เฉลี่ยวันละ 50 คน ผู้ขับขี่รถจักรยานยนต์คิดเป็น 83.8% ของผู้เสียชีวิตจากการจราจรทั้งหมด",
+    "my": "WHO ၏ ခန့်မှန်းချက်အရ 2021 ခုနှစ်တွင် လမ်းပေါ် သေဆုံးသူ 18,218 ဦး ရှိပြီး ပျမ်းမျှ တစ်နေ့ 50 ဦး ဖြစ်သည်။ ဆိုင်ကယ်စီးသူများသည် ယာဉ်ကြောင်းသေဆုံးသူအားလုံး၏ 83.8% ဖြစ်သည်။",
+    "zh": "WHO 估计 2021 年有 18,218 人死于道路交通事故，平均每天 50 人。摩托车骑行者占全部交通死亡人数的 83.8%。",
+    "de": "Die WHO schätzt 18,218 Verkehrstote im Jahr 2021, im Schnitt 50 pro Tag. Motorradfahrer machten 83.8% aller Verkehrstoten aus."
+   },
+   "src": "https://www.who.int/thailand/our-work/road-safety"
+  }
+ ],
+ "related": [
+  "interp",
+  "doctor",
+  "rentals",
+  "dispute",
+  "translate",
+  "death-help"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Office of the Insurance Commission: summary of the compulsory motor insurance law (Thai PDF)",
+    "th": "สำนักงาน คปภ.: คำอธิบายสรุปสาระสำคัญ พ.ร.บ.คุ้มครองผู้ประสบภัยจากรถ (PDF)",
+    "my": "အာမခံကော်မရှင်ရုံး - မဖြစ်မနေ မော်တော်ယာဉ်အာမခံဥပဒေ အကျဉ်းချုပ် (ထိုင်း PDF)",
+    "zh": "保险委员会办公室：强制汽车保险法摘要（泰文 PDF）",
+    "de": "Office of the Insurance Commission: Zusammenfassung des Pflichtversicherungsgesetzes (Thai, PDF)"
+   },
+   "href": "https://oiceservice.oic.or.th/document/Law/file/12482/12482_c57822d1c139f388eaa13761b6dd6c07_1.pdf"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Mai: care after a car accident, 24 hours",
+    "th": "โรงพยาบาลกรุงเทพเชียงใหม่: การดูแลหลังอุบัติเหตุรถ 24 ชั่วโมง",
+    "my": "ဘန်ကောက်ဆေးရုံ ချင်းမိုင် - ကားမတော်တဆမှုအပြီး 24 နာရီ စောင့်ရှောက်မှု",
+    "zh": "曼谷医院清迈分院：车祸后 24 小时急救服务",
+    "de": "Bangkok Hospital Chiang Mai: Versorgung nach einem Autounfall, rund um die Uhr"
+   },
+   "href": "https://www.bangkokhospital.com/en/chiangmai/content/car-accident-emergency-care-24-hours-bcm"
+  },
+  {
+   "t": {
+    "en": "WHO Thailand: road safety",
+    "th": "WHO ประเทศไทย: ความปลอดภัยทางถนน",
+    "my": "WHO ထိုင်းနိုင်ငံ - လမ်းအန္တရာယ်ကင်းရှင်းရေး",
+    "zh": "世界卫生组织泰国办事处：道路安全",
+    "de": "WHO Thailand: Verkehrssicherheit"
+   },
+   "href": "https://www.who.int/thailand/our-work/road-safety"
+  },
+  {
+   "t": {
+    "en": "National Institute for Emergency Medicine (Thai)",
+    "th": "สถาบันการแพทย์ฉุกเฉินแห่งชาติ",
+    "my": "အမျိုးသားအရေးပေါ်ဆေးပညာအင်စတီကျူး (ထိုင်းဘာသာ)",
+    "zh": "国家急救医学院（泰文）",
+    "de": "National Institute for Emergency Medicine (Thai)"
+   },
+   "href": "https://www.niems.go.th/"
+  }
+ ],
+ "glyphs": [
+  "scooter",
+  "page",
+  "telephone"
+ ]
+}

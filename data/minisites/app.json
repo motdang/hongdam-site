@@ -1,0 +1,747 @@
+{
+ "id": "app",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A web app installs from the browser and an Android app from a file, so no store takes a registration fee or a share of sales. Either opens and saves with no signal.",
+  "th": "เว็บแอปติดตั้งจากเบราว์เซอร์ และแอป Android ติดตั้งจากไฟล์ จึงไม่ต้องผ่านสโตร์ ไม่มีค่าสมัครสโตร์และไม่มีส่วนแบ่งยอดขาย ทั้งสองแบบเปิดและบันทึกได้แม้ไม่มีสัญญาณ",
+  "my": "ဝက်ဘ်အက်ပ်ကို browser မှ ထည့်သွင်းပြီး Android အက်ပ်ကို ဖိုင်မှ ထည့်သွင်းသဖြင့် စတိုးမှ မှတ်ပုံတင်ကြေး သို့မဟုတ် ရောင်းရငွေအချိုး မယူပါ။ နှစ်မျိုးလုံး လိုင်းမရှိလည်း ဖွင့်၍ သိမ်းဆည်းနိုင်သည်။",
+  "zh": "网页应用从浏览器安装，安卓应用从文件安装，所以没有商店收注册费，也没有商店抽成。两种都能在没有信号时打开和保存。",
+  "de": "Eine Web-App wird über den Browser installiert, eine Android-App aus einer Datei. So fallen keine Registrierungsgebühr und kein Umsatzanteil an einen Store an. Beide öffnen und speichern ohne Empfang."
+ },
+ "n": {
+  "de": "Handy-App"
+ },
+ "l": {
+  "de": "Für Android oder den Browser; funktioniert ohne Empfang."
+ },
+ "steps": [
+  {
+   "db": "manicule",
+   "t": {
+    "en": "You choose the kind: a web app, an Android app, or your spreadsheet as an app",
+    "th": "คุณเลือกแบบ: เว็บแอป แอป Android หรือสเปรดชีตของคุณเป็นแอป",
+    "my": "သင်က အမျိုးအစား ရွေးသည် - ဝက်ဘ်အက်ပ်၊ Android အက်ပ် သို့မဟုတ် သင့်စာရင်းဇယားကို အက်ပ်အဖြစ်",
+    "zh": "您选择类型：网页应用、安卓应用，或把您的表格做成应用",
+    "de": "Sie wählen die Art: Web-App, Android-App oder Ihre Tabelle als App"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "laptop",
+   "t": {
+    "en": "Hongdam builds the app",
+    "th": "หงส์ดำสร้างแอป",
+    "my": "ဟုန်ဒမ်က အက်ပ်ကို တည်ဆောက်သည်",
+    "zh": "鸿丹开发应用",
+    "de": "Hongdam baut die App"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you choose",
+    "th": "หลังคุณเลือก",
+    "my": "သင်ရွေးပြီးနောက်",
+    "zh": "您选定之后",
+    "de": "Nach Ihrer Wahl"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "The app goes on the phone: a web app from the browser, an Android app from a file, no store",
+    "th": "ติดตั้งแอปบนมือถือ: เว็บแอปจากเบราว์เซอร์ แอป Android จากไฟล์ ไม่ผ่านสโตร์",
+    "my": "အက်ပ်ကို ဖုန်းတွင် ထည့်သွင်းသည် - ဝက်ဘ်အက်ပ်ကို browser မှ၊ Android အက်ပ်ကို ဖိုင်မှ၊ စတိုးမလို",
+    "zh": "应用装到手机上：网页应用从浏览器安装，安卓应用从文件安装，不经商店",
+    "de": "Die App kommt aufs Handy: die Web-App über den Browser, die Android-App aus einer Datei, ohne Store"
+   },
+   "who": {
+    "en": "You, on the phone",
+    "th": "คุณ บนมือถือของคุณ",
+    "my": "သင်၊ သင့်ဖုန်းတွင်",
+    "zh": "您，在手机上",
+    "de": "Sie, auf dem Handy"
+   },
+   "time": {
+    "en": "When it is built",
+    "th": "เมื่อสร้างเสร็จ",
+    "my": "တည်ဆောက်ပြီးသည့်အခါ",
+    "zh": "做好之后",
+    "de": "Sobald sie fertig ist"
+   }
+  },
+  {
+   "db": "wifi",
+   "t": {
+    "en": "The app opens and saves with no signal",
+    "th": "แอปเปิดและบันทึกได้แม้ไม่มีสัญญาณ",
+    "my": "လိုင်းမရှိလည်း အက်ပ်ကို ဖွင့်၍ သိမ်းဆည်းနိုင်သည်",
+    "zh": "没有信号时，应用也能打开和保存",
+    "de": "Die App öffnet und speichert auch ohne Empfang"
+   },
+   "who": {
+    "en": "The app",
+    "th": "แอป",
+    "my": "အက်ပ်",
+    "zh": "应用",
+    "de": "Die App"
+   },
+   "time": {
+    "en": "When the phone has no signal",
+    "th": "เมื่อมือถือไม่มีสัญญาณ",
+    "my": "ဖုန်းတွင် လိုင်းမရှိသည့်အခါ",
+    "zh": "手机没有信号时",
+    "de": "Wenn das Handy keinen Empfang hat"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "73.96%",
+   "t": {
+    "en": "Android's share of mobile operating systems in Thailand, September 2026",
+    "th": "ส่วนแบ่งของ Android ในระบบปฏิบัติการมือถือในไทย กันยายน 2569",
+    "my": "ထိုင်းနိုင်ငံရှိ မိုဘိုင်းစနစ်များတွင် Android ၏ အချိုး၊ 2026 စက်တင်ဘာ",
+    "zh": "2026 年 9 月安卓在泰国移动操作系统中的份额",
+    "de": "Anteil von Android an den mobilen Betriebssystemen in Thailand, September 2026"
+   },
+   "src": "https://gs.statcounter.com/os-market-share/mobile/thailand"
+  },
+  {
+   "n": "US$25",
+   "t": {
+    "en": "Google Play's developer registration fee, paid once",
+    "th": "ค่าสมัครนักพัฒนา Google Play จ่ายครั้งเดียว",
+    "my": "Google Play developer မှတ်ပုံတင်ကြေး၊ တစ်ကြိမ်တည်း ပေးရသည်",
+    "zh": "Google Play 开发者注册费，一次性支付",
+    "de": "Registrierungsgebühr für Entwickler bei Google Play, einmal zu zahlen"
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/6112435"
+  },
+  {
+   "n": "US$99",
+   "t": {
+    "en": "Apple Developer Program membership, a year",
+    "th": "ค่าสมาชิก Apple Developer Program ต่อปี",
+    "my": "Apple Developer Program အသင်းဝင်ကြေး၊ တစ်နှစ်လျှင်",
+    "zh": "Apple Developer Program 年费",
+    "de": "Mitgliedschaft im Apple Developer Program, im Jahr"
+   },
+   "src": "https://developer.apple.com/programs/"
+  },
+  {
+   "n": "15%",
+   "t": {
+    "en": "Google Play's service fee on the first US$1 million of a developer's revenue a year",
+    "th": "ค่าบริการของ Google Play สำหรับรายได้ส่วนแรก US$1 ล้านต่อปีของนักพัฒนา",
+    "my": "Google Play ၏ ဝန်ဆောင်မှုကြေး၊ developer တစ်ဦး၏ တစ်နှစ်ဝင်ငွေ ပထမ US$1 သန်းအတွက်",
+    "zh": "Google Play 对开发者每年收入前 US$1,000,000 收取的服务费",
+    "de": "Servicegebühr von Google Play auf die ersten US$1 Million Umsatz eines Entwicklers im Jahr"
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/112622"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What does the first year of an app cost?",
+   "th": "แอปปีแรกมีค่าใช้จ่ายเท่าไหร่",
+   "my": "အက်ပ်၏ ပထမနှစ်တွင် ကုန်ကျစရိတ် မည်မျှနည်း",
+   "zh": "应用的第一年要花多少钱",
+   "de": "Was kostet das erste Jahr einer App?"
+  },
+  "noscript": {
+   "en": "The first-year calculator needs JavaScript. The fees stores and hosts charge are listed below.",
+   "th": "เครื่องคำนวณปีแรกต้องใช้ JavaScript ค่าธรรมเนียมของสโตร์และโฮสติ้งแสดงไว้ด้านล่าง",
+   "my": "ပထမနှစ် တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ စတိုးများနှင့် ဟို့စ်တင်ကုမ္ပဏီများ ကောက်ခံသည့် ကြေးများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "第一年费用计算器需要 JavaScript。商店和托管服务收取的费用列在下方。",
+   "de": "Der Rechner für das erste Jahr braucht JavaScript. Was Stores und Hoster verlangen, steht weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "sales",
+     "n": {
+      "en": "Paid downloads and in-app purchases in a year",
+      "th": "ยอดขายแอปและการซื้อในแอปต่อปี",
+      "my": "တစ်နှစ်အတွင်း အက်ပ်ဝယ်ယူမှုနှင့် အက်ပ်အတွင်း ဝယ်ယူမှု",
+      "zh": "一年内的付费下载和应用内购买",
+      "de": "Bezahlte Downloads und In-App-Käufe im Jahr"
+     },
+     "min": 10000,
+     "max": 1000000,
+     "step": 10000,
+     "start": 100000,
+     "money": true
+    }
+   ],
+   "choices": [
+    {
+     "id": "where",
+     "n": {
+      "en": "Where it lives",
+      "th": "แอปอยู่ที่ไหน",
+      "my": "အက်ပ်ရှိမည့်နေရာ",
+      "zh": "应用放在哪里",
+      "de": "Wo die App liegt"
+     },
+     "options": [
+      {
+       "id": "web",
+       "n": {
+        "en": "In the browser, installable",
+        "th": "ในเบราว์เซอร์ ติดตั้งได้",
+        "my": "browser တွင် ထည့်သွင်းနိုင်သည်",
+        "zh": "在浏览器里，可安装",
+        "de": "Im Browser, installierbar"
+       }
+      },
+      {
+       "id": "play",
+       "n": {
+        "en": "Google Play",
+        "th": "Google Play",
+        "my": "Google Play",
+        "zh": "Google Play",
+        "de": "Google Play"
+       }
+      },
+      {
+       "id": "stores",
+       "n": {
+        "en": "Google Play and App Store",
+        "th": "Google Play และ App Store",
+        "my": "Google Play နှင့် App Store",
+        "zh": "Google Play 和 App Store",
+        "de": "Google Play und App Store"
+       }
+      }
+     ],
+     "start": "web"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Google Play developer registration, US$25 once (shown as ฿844 at ฿33.76 to the dollar)",
+      "th": "ค่าสมัครนักพัฒนา Google Play US$25 ครั้งเดียว (แสดงเป็น ฿844 ที่ ฿33.76 ต่อดอลลาร์)",
+      "my": "Google Play developer မှတ်ပုံတင်ကြေး၊ တစ်ကြိမ်တည်း US$25 (ဒေါ်လာတစ်ခုလျှင် ฿33.76 ဖြင့် ฿844 အဖြစ် ပြထားသည်)",
+      "zh": "Google Play 开发者注册费，一次性 US$25（按每美元 ฿33.76 折合 ฿844）",
+      "de": "Entwicklerregistrierung bei Google Play, einmalig US$25 (als ฿844 bei ฿33.76 je Dollar)"
+     },
+     "range": [
+      844,
+      844
+     ],
+     "when": {
+      "where": [
+       "play",
+       "stores"
+      ]
+     },
+     "src": "https://support.google.com/googleplay/android-developer/answer/6112435"
+    },
+    {
+     "n": {
+      "en": "Apple Developer Program, US$99 a year (shown as ฿3,343 at ฿33.76 to the dollar)",
+      "th": "Apple Developer Program US$99 ต่อปี (แสดงเป็น ฿3,343 ที่ ฿33.76 ต่อดอลลาร์)",
+      "my": "Apple Developer Program တစ်နှစ် US$99 (ဒေါ်လာတစ်ခုလျှင် ฿33.76 ဖြင့် ฿3,343 အဖြစ် ပြထားသည်)",
+      "zh": "Apple Developer Program 年费 US$99（按每美元 ฿33.76 折合 ฿3,343）",
+      "de": "Apple Developer Program, US$99 im Jahr (als ฿3,343 bei ฿33.76 je Dollar)"
+     },
+     "range": [
+      3343,
+      3343
+     ],
+     "when": {
+      "where": [
+       "stores"
+      ]
+     },
+     "src": "https://developer.apple.com/programs/"
+    },
+    {
+     "n": {
+      "en": "Google Play service fee, 15% of sales up to US$1 million a year",
+      "th": "ค่าบริการของ Google Play 15% ของยอดขายไม่เกิน US$1 ล้านต่อปี",
+      "my": "Google Play ဝန်ဆောင်မှုကြေး၊ တစ်နှစ် US$1 သန်းအထိ ရောင်းရငွေ၏ 15%",
+      "zh": "Google Play 服务费，每年 US$1,000,000 以内销售额的 15%",
+      "de": "Servicegebühr von Google Play, 15% des Umsatzes bis US$1 Million im Jahr"
+     },
+     "pct": [
+      15,
+      15
+     ],
+     "per": [
+      "sales"
+     ],
+     "when": {
+      "where": [
+       "play",
+       "stores"
+      ]
+     },
+     "src": "https://support.google.com/googleplay/android-developer/answer/112622"
+    },
+    {
+     "n": {
+      "en": "Apple commission in the Small Business Program, 15% of sales",
+      "th": "ค่าคอมมิชชั่นของ Apple ในโครงการ Small Business Program 15% ของยอดขาย",
+      "my": "Small Business Program တွင် Apple ကော်မရှင်၊ ရောင်းရငွေ၏ 15%",
+      "zh": "Apple 小型企业计划的佣金，销售额的 15%",
+      "de": "Provision von Apple im Small Business Program, 15% des Umsatzes"
+     },
+     "pct": [
+      15,
+      15
+     ],
+     "per": [
+      "sales"
+     ],
+     "when": {
+      "where": [
+       "stores"
+      ]
+     },
+     "src": "https://developer.apple.com/app-store/small-business-program/"
+    },
+    {
+     "n": {
+      "en": "Web hosting for a year (HostAtom, 7% VAT added)",
+      "th": "โฮสติ้งเว็บต่อปี (HostAtom บวกภาษีมูลค่าเพิ่ม 7%)",
+      "my": "ဝက်ဘ်ဟို့စ်တင် တစ်နှစ် (HostAtom၊ VAT 7% ပေါင်း)",
+      "zh": "网站托管，每年（HostAtom，加 7% 增值税）",
+      "de": "Webhosting im Jahr (HostAtom, plus 7% Mehrwertsteuer)"
+     },
+     "range": [
+      845,
+      2450
+     ],
+     "when": {
+      "where": [
+       "web"
+      ]
+     },
+     "src": "https://www.hostatom.com/wordpress-hosting"
+    },
+    {
+     "n": {
+      "en": "A .com or .co.th domain for a year (HostAtom, 7% VAT added)",
+      "th": "โดเมน .com หรือ .co.th ต่อปี (HostAtom บวกภาษีมูลค่าเพิ่ม 7%)",
+      "my": ".com သို့မဟုတ် .co.th ဒိုမိန်း တစ်နှစ် (HostAtom၊ VAT 7% ပေါင်း)",
+      "zh": ".com 或 .co.th 域名，每年（HostAtom，加 7% 增值税）",
+      "de": ".com- oder .co.th-Domain im Jahr (HostAtom, plus 7% Mehrwertsteuer)"
+     },
+     "range": [
+      482,
+      856
+     ],
+     "when": {
+      "where": [
+       "web"
+      ]
+     },
+     "src": "https://www.hostatom.com/domain"
+    }
+   ],
+   "total": {
+    "en": "Fees in the first year",
+    "th": "ค่าธรรมเนียมในปีแรก",
+    "my": "ပထမနှစ်တွင် ကြေးစုစုပေါင်း",
+    "zh": "第一年的费用合计",
+    "de": "Gebühren im ersten Jahr"
+   },
+   "note": {
+    "en": "Prices are the ones each page publishes. The two US dollar fees are shown in baht at ฿33.76 to the dollar, the mid-market rate Wise published on 24 October 2026. Hosting and domain prices are published before 7% VAT, and the lines add it. Google Play's 15% is for the first US$1 million of a developer's revenue a year, and Apple's 15% is for developers in its Small Business Program. Stores take their fees from sales, so the sales slider changes the store options only. Payment provider fees are not counted.",
+    "th": "ราคาเป็นตัวเลขที่แต่ละหน้าเผยแพร่ ค่าธรรมเนียมสองรายการที่เป็นดอลลาร์สหรัฐแสดงเป็นบาทที่ ฿33.76 ต่อดอลลาร์ ซึ่งเป็นอัตรากลางตลาดที่ Wise เผยแพร่เมื่อ 24 ตุลาคม 2569 ราคาโฮสติ้งและโดเมนเผยแพร่ก่อนภาษีมูลค่าเพิ่ม 7% และบรรทัดเหล่านี้บวกภาษีให้แล้ว 15% ของ Google Play ใช้กับรายได้ส่วนแรก US$1 ล้านต่อปีของนักพัฒนา และ 15% ของ Apple ใช้กับนักพัฒนาในโครงการ Small Business Program สโตร์หักค่าธรรมเนียมจากยอดขาย ตัวเลื่อนยอดขายจึงเปลี่ยนผลเฉพาะตัวเลือกสโตร์ ค่าธรรมเนียมของผู้ให้บริการรับชำระเงินไม่ได้นับรวม",
+    "my": "စျေးနှုန်းများသည် စာမျက်နှာတစ်ခုစီက ထုတ်ပြန်ထားသည့်အတိုင်း ဖြစ်သည်။ US ဒေါ်လာ ကြေးနှစ်ခုကို Wise က 2026 အောက်တိုဘာ 24 ရက်တွင် ထုတ်ပြန်ခဲ့သော ဒေါ်လာတစ်ခုလျှင် ฿33.76 ဟူသည့် ဈေးကွက်အလယ်နှုန်းဖြင့် ဘတ်ငွေအဖြစ် ပြထားသည်။ ဟို့စ်တင်နှင့် ဒိုမိန်းစျေးများကို VAT 7% မပါဘဲ ထုတ်ပြန်ထားသဖြင့် စာကြောင်းများတွင် ပေါင်းထည့်ထားသည်။ Google Play ၏ 15% သည် developer တစ်ဦး၏ တစ်နှစ်ဝင်ငွေ ပထမ US$1 သန်းအတွက် ဖြစ်ပြီး Apple ၏ 15% သည် Small Business Program ရှိ developer များအတွက် ဖြစ်သည်။ စတိုးများသည် ကြေးကို ရောင်းရငွေမှ ယူသဖြင့် ရောင်းရငွေ slider သည် စတိုးရွေးချယ်စရာများကိုသာ ပြောင်းလဲစေသည်။ ငွေပေးချေမှုဝန်ဆောင်သူ၏ ကြေးများကို မထည့်တွက်ပါ။",
+    "zh": "价格取自各页面公布的数字。两项美元费用按每美元 ฿33.76 折成泰铢，这是 Wise 在 2026 年 10 月 24 日公布的中间价。托管和域名的价格公布时未含 7% 增值税，各行已加上。Google Play 的 15% 适用于开发者每年收入的前 US$1,000,000，Apple 的 15% 适用于加入其小型企业计划的开发者。商店的费用从销售额中收取，所以销售额滑块只影响商店选项。支付服务商的费用未计入。",
+    "de": "Die Preise stammen von den jeweiligen Seiten. Die beiden Gebühren in US-Dollar sind mit ฿33.76 je Dollar in Baht gezeigt, dem Mittelkurs, den Wise am 24. Oktober 2026 veröffentlicht hat. Hosting- und Domainpreise werden ohne 7% Mehrwertsteuer veröffentlicht; die Zeilen rechnen sie dazu. Die 15% von Google Play gelten für die ersten US$1 Million Umsatz eines Entwicklers im Jahr, die 15% von Apple für Entwickler im Small Business Program. Die Stores nehmen ihre Gebühren vom Umsatz, deshalb ändert der Umsatzregler nur die Store-Optionen. Gebühren von Zahlungsanbietern sind nicht eingerechnet."
+   },
+   "oursLine": {
+    "en": "Hongdam builds your app for:",
+    "th": "หงส์ดำสร้างแอปของคุณในราคา:",
+    "my": "ဟုန်ဒမ်က သင့်အက်ပ်ကို တည်ဆောက်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹为您开发应用，价格：",
+    "de": "Hongdam baut Ihre App für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "A Progressive Web App is a web app that a supporting browser offers to install. Once installed, it gets an app icon on the device and can open as a standalone app, without browser buttons. It needs a web app manifest and an https address.",
+    "th": "Progressive Web App คือเว็บแอปที่เบราว์เซอร์ที่รองรับเสนอให้ติดตั้ง เมื่อติดตั้งแล้วจะมีไอคอนแอปบนเครื่อง และเปิดเป็นแอปเดี่ยวได้โดยไม่มีปุ่มของเบราว์เซอร์ ต้องมีไฟล์ web app manifest และที่อยู่แบบ https",
+    "my": "Progressive Web App ဆိုသည်မှာ ထောက်ပံ့သည့် browser က ထည့်သွင်းရန် ကမ်းလှမ်းသည့် ဝက်ဘ်အက်ပ် ဖြစ်သည်။ ထည့်သွင်းပြီးပါက စက်ပေါ်တွင် အက်ပ်အိုင်ကွန် ရရှိပြီး browser ခလုတ်များမပါဘဲ သီးခြားအက်ပ်အဖြစ် ဖွင့်နိုင်သည်။ web app manifest နှင့် https လိပ်စာ လိုအပ်သည်။",
+    "zh": "渐进式网页应用（PWA）是支持的浏览器会提示安装的网页应用。安装后，设备上会有应用图标，可以作为独立应用打开，没有浏览器的按钮。它需要一个 Web 应用清单和 https 地址。",
+    "de": "Eine Progressive Web App ist eine Web-App, die ein unterstützender Browser zur Installation anbietet. Nach der Installation hat sie ein App-Symbol auf dem Gerät und öffnet als eigenständige App, ohne Browser-Schaltflächen. Sie braucht ein Web-App-Manifest und eine https-Adresse."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable"
+  },
+  {
+   "t": {
+    "en": "A service worker lets a web app work without a connection. When it installs, it fetches pages, styles, scripts and images and adds them to a local cache. MDN says that in many situations the web app then works well even when the connection comes and goes.",
+    "th": "Service worker ทำให้เว็บแอปทำงานได้แม้ไม่มีการเชื่อมต่อ เมื่อติดตั้ง จะดึงหน้าเว็บ สไตล์ สคริปต์ และรูปภาพมาเก็บไว้ในแคชในเครื่อง MDN ระบุว่าในหลายสถานการณ์ เว็บแอปจะทำงานได้ดีแม้สัญญาณขาดๆ หายๆ",
+    "my": "Service worker သည် ဝက်ဘ်အက်ပ်ကို အင်တာနက်ချိတ်ဆက်မှုမရှိဘဲ အလုပ်လုပ်စေသည်။ ထည့်သွင်းချိန်တွင် စာမျက်နှာများ၊ style များ၊ script များနှင့် ပုံများကို ရယူပြီး စက်ထဲရှိ cache တွင် ထည့်သိမ်းသည်။ MDN က အခြေအနေများစွာတွင် ချိတ်ဆက်မှု ပြတ်ချင်းဖြတ်ချင်းဖြစ်နေလည်း ဝက်ဘ်အက်ပ်သည် ကောင်းမွန်စွာ အလုပ်လုပ်သည်ဟု ဆိုသည်။",
+    "zh": "Service Worker 让网页应用在没有网络连接时也能工作。它安装时会获取页面、样式、脚本和图片，存入本地缓存。MDN 说，在很多情况下，即使网络时断时续，网页应用也能运行良好。",
+    "de": "Ein Service Worker lässt eine Web-App ohne Verbindung arbeiten. Bei der Installation holt er Seiten, Stile, Skripte und Bilder und legt sie in einem lokalen Cache ab. Laut MDN läuft die Web-App dann in vielen Fällen auch bei unterbrochener Verbindung gut."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation"
+  },
+  {
+   "t": {
+    "en": "StatCounter puts Android at 73.96% and iOS at 26.01% of mobile operating systems in Thailand for September 2026.",
+    "th": "StatCounter ระบุว่าในเดือนกันยายน 2569 Android มีส่วนแบ่ง 73.96% และ iOS 26.01% ของระบบปฏิบัติการมือถือในไทย",
+    "my": "StatCounter အရ 2026 စက်တင်ဘာတွင် ထိုင်းနိုင်ငံရှိ မိုဘိုင်းစနစ်များ၏ Android သည် 73.96% နှင့် iOS သည် 26.01% ဖြစ်သည်။",
+    "zh": "StatCounter 显示，2026 年 9 月泰国移动操作系统中安卓占 73.96%，iOS 占 26.01%。",
+    "de": "Laut StatCounter liegt Android im September 2026 bei 73.96% und iOS bei 26.01% der mobilen Betriebssysteme in Thailand."
+   },
+   "src": "https://gs.statcounter.com/os-market-share/mobile/thailand"
+  },
+  {
+   "t": {
+    "en": "Thailand falls under the remaining markets on Google Play's fee page. There the service fee is 15% on the first US$1 million of a developer's revenue a year, and a higher rate above that. Auto-renewing subscriptions are 15%.",
+    "th": "ประเทศไทยอยู่ในกลุ่มตลาดที่เหลือในหน้าค่าธรรมเนียมของ Google Play ซึ่งค่าบริการคือ 15% ของรายได้ส่วนแรก US$1 ล้านต่อปีของนักพัฒนา และอัตราที่สูงกว่าเมื่อเกินจากนั้น การสมัครสมาชิกแบบต่ออายุอัตโนมัติคิด 15%",
+    "my": "ထိုင်းနိုင်ငံသည် Google Play ၏ ကြေးစာမျက်နှာရှိ ကျန်စျေးကွက်များ အုပ်စုတွင် ပါဝင်သည်။ ထိုအုပ်စုတွင် ဝန်ဆောင်မှုကြေးမှာ developer တစ်ဦး၏ တစ်နှစ်ဝင်ငွေ ပထမ US$1 သန်းအတွက် 15% ဖြစ်ပြီး ထိုထက်ကျော်လျှင် ပိုမြင့်သည့်နှုန်း ဖြစ်သည်။ အလိုအလျောက် သက်တမ်းတိုးသည့် စာရင်းသွင်းမှုများမှာ 15% ဖြစ်သည်။",
+    "zh": "在 Google Play 的费用页面上，泰国属于“其余市场”一组。该组的服务费是开发者每年收入前 US$1,000,000 的 15%，超过部分费率更高。自动续订的订阅为 15%。",
+    "de": "Auf der Gebührenseite von Google Play gehört Thailand zu den übrigen Märkten. Dort beträgt die Servicegebühr 15% auf die ersten US$1 Million Umsatz eines Entwicklers im Jahr, darüber gilt ein höherer Satz. Automatisch verlängerte Abos kosten 15%."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/112622"
+  },
+  {
+   "t": {
+    "en": "Apple's Small Business Program lowers its commission to 15% on paid apps and in-app purchases. Developers who made up to US$1 million in proceeds the year before, and developers new to the App Store, can qualify.",
+    "th": "โครงการ Small Business Program ของ Apple ลดค่าคอมมิชชั่นเหลือ 15% สำหรับแอปที่ต้องจ่ายเงินและการซื้อในแอป นักพัฒนาที่มีรายรับ (proceeds) ไม่เกิน US$1 ล้านในปีก่อน และนักพัฒนาใหม่ใน App Store มีสิทธิ์เข้าร่วมได้",
+    "my": "Apple ၏ Small Business Program သည် အခကြေးငွေပေးအက်ပ်များနှင့် အက်ပ်အတွင်း ဝယ်ယူမှုများအတွက် ကော်မရှင်ကို 15% သို့ လျှော့ပေးသည်။ ယခင်နှစ်တွင် proceeds US$1 သန်းအထိ ရခဲ့သည့် developer များနှင့် App Store သို့ အသစ်ဝင်လာသည့် developer များ အရည်အချင်းပြည့်မီနိုင်သည်။",
+    "zh": "Apple 的小型企业计划把付费应用和应用内购买的佣金降到 15%。上一年收益（proceeds）不超过 US$1,000,000 的开发者，以及刚进入 App Store 的开发者，可以符合资格。",
+    "de": "Das Small Business Program von Apple senkt die Provision auf bezahlte Apps und In-App-Käufe auf 15%. Entwickler mit bis zu US$1 Million Erlös im Vorjahr und Entwickler, die neu im App Store sind, können sich qualifizieren."
+   },
+   "src": "https://developer.apple.com/app-store/small-business-program/"
+  },
+  {
+   "t": {
+    "en": "From 30 September 2026, Google's developer verification protections begin for users in Brazil, Indonesia, Singapore and Thailand who install apps from participating stores on certified devices running Android 7 or later. Developers who distribute only outside Google Play register in the Android Developer Console.",
+    "th": "ตั้งแต่ 30 กันยายน 2569 มาตรการคุ้มครองการยืนยันตัวตนนักพัฒนาของ Google เริ่มใช้กับผู้ใช้ในบราซิล อินโดนีเซีย สิงคโปร์ และไทย ที่ติดตั้งแอปจากสโตร์ที่เข้าร่วมบนอุปกรณ์ที่ผ่านการรับรองซึ่งใช้ Android 7 ขึ้นไป นักพัฒนาที่แจกจ่ายแอปนอก Google Play เท่านั้นลงทะเบียนใน Android Developer Console",
+    "my": "2026 စက်တင်ဘာ 30 ရက်မှစ၍ Google ၏ developer verification အကာအကွယ်များသည် ဘရာဇီး၊ အင်ဒိုနီးရှား၊ စင်ကာပူနှင့် ထိုင်းနိုင်ငံရှိ အသုံးပြုသူများထဲမှ Android 7 နှင့်အထက် ဖြစ်သည့် အသိအမှတ်ပြုထားသော စက်များတွင် ပါဝင်သည့်စတိုးများမှ အက်ပ်ထည့်သွင်းသူများအတွက် စတင်သည်။ Google Play ပြင်ပတွင်သာ အက်ပ်ဖြန့်ဝေသည့် developer များသည် Android Developer Console တွင် မှတ်ပုံတင်ကြသည်။",
+    "zh": "自 2026 年 9 月 30 日起，Google 的开发者验证保护措施在巴西、印度尼西亚、新加坡和泰国开始，面向在运行 Android 7 或更高版本的认证设备上，从参与商店安装应用的用户。只在 Google Play 之外分发应用的开发者，在 Android Developer Console 中登记。",
+    "de": "Ab dem 30. September 2026 beginnen die Schutzmassnahmen der Entwicklerverifizierung von Google für Nutzer in Brasilien, Indonesien, Singapur und Thailand, die auf zertifizierten Geräten mit Android 7 oder neuer Apps aus teilnehmenden Stores installieren. Entwickler, die Apps nur ausserhalb von Google Play verteilen, registrieren sich in der Android Developer Console."
+   },
+   "src": "https://developer.android.com/developer-verification"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Website into an iOS and Android app, one Fastwork seller",
+    "th": "เปลี่ยนเว็บไซต์เป็นแอป iOS และ Android จากผู้ขายรายหนึ่งบน Fastwork",
+    "my": "Fastwork ရောင်းသူတစ်ဦးထံမှ ဝက်ဘ်ဆိုက်ကို iOS နှင့် Android အက်ပ်အဖြစ် ပြောင်းလဲခြင်း",
+    "zh": "Fastwork 一位卖家把网站做成 iOS 和安卓应用",
+    "de": "Website als iOS- und Android-App, ein Anbieter auf Fastwork"
+   },
+   "p": {
+    "en": "฿5,000 in 2 days; the listing says the app is published to the App Store and Play Store",
+    "th": "฿5,000 ใน 2 วัน รายการระบุว่าแอปถูกนำขึ้น App Store และ Play Store",
+    "my": "2 ရက်အတွင်း ฿5,000၊ အက်ပ်ကို App Store နှင့် Play Store သို့ တင်ပေးသည်ဟု စာရင်းတွင် ဖော်ပြထားသည်",
+    "zh": "2 天交付 ฿5,000；页面写明应用会上架 App Store 和 Play Store",
+    "de": "฿5,000 in 2 Tagen; laut Angebot wird die App im App Store und im Play Store veröffentlicht"
+   },
+   "src": "https://fastwork.co/user/jenarath/app-development-52886543"
+  },
+  {
+   "t": {
+    "en": "iOS and Android app, three packages from one Fastwork seller",
+    "th": "แอป iOS และ Android สามแพ็กเกจจากผู้ขายรายหนึ่งบน Fastwork",
+    "my": "Fastwork ရောင်းသူတစ်ဦးထံမှ iOS နှင့် Android အက်ပ်၊ ပက်ကေ့ချ် သုံးမျိုး",
+    "zh": "Fastwork 一位卖家的 iOS 和安卓应用：三个套餐",
+    "de": "iOS- und Android-App, drei Pakete eines Anbieters auf Fastwork"
+   },
+   "p": {
+    "en": "฿5,000 in 15 days; ฿50,000 in 60 days with an API; ฿150,000 in 90 days with an API and a web admin",
+    "th": "฿5,000 ใน 15 วัน ฿50,000 ใน 60 วัน พร้อม API ฿150,000 ใน 90 วัน พร้อม API และเว็บแอดมิน",
+    "my": "15 ရက်အတွင်း ฿5,000၊ 60 ရက်အတွင်း API ပါ ฿50,000၊ 90 ရက်အတွင်း API နှင့် ဝက်ဘ် admin ပါ ฿150,000",
+    "zh": "15 天交付 ฿5,000；60 天交付含 API 的 ฿50,000；90 天交付含 API 和网页后台的 ฿150,000",
+    "de": "฿5,000 in 15 Tagen; ฿50,000 in 60 Tagen mit API; ฿150,000 in 90 Tagen mit API und Web-Admin"
+   },
+   "src": "https://fastwork.co/user/kungpotato/mobile-application-32033560"
+  },
+  {
+   "t": {
+    "en": "Google Play developer registration",
+    "th": "ค่าสมัครนักพัฒนา Google Play",
+    "my": "Google Play developer မှတ်ပုံတင်ကြေး",
+    "zh": "Google Play 开发者注册费",
+    "de": "Entwicklerregistrierung bei Google Play"
+   },
+   "p": {
+    "en": "US$25, paid once",
+    "th": "US$25 จ่ายครั้งเดียว",
+    "my": "US$25၊ တစ်ကြိမ်တည်း ပေးရသည်",
+    "zh": "US$25，一次性支付",
+    "de": "US$25, einmal zu zahlen"
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/6112435"
+  },
+  {
+   "t": {
+    "en": "Apple Developer Program",
+    "th": "Apple Developer Program",
+    "my": "Apple Developer Program",
+    "zh": "Apple Developer Program",
+    "de": "Apple Developer Program"
+   },
+   "p": {
+    "en": "US$99 a year",
+    "th": "US$99 ต่อปี",
+    "my": "တစ်နှစ်လျှင် US$99",
+    "zh": "每年 US$99",
+    "de": "US$99 im Jahr"
+   },
+   "src": "https://developer.apple.com/programs/"
+  },
+  {
+   "t": {
+    "en": "Web hosting (HostAtom, Thailand)",
+    "th": "โฮสติ้งเว็บ (HostAtom ประเทศไทย)",
+    "my": "ဝက်ဘ်ဟို့စ်တင် (HostAtom၊ ထိုင်း)",
+    "zh": "网站托管（HostAtom，泰国）",
+    "de": "Webhosting (HostAtom, Thailand)"
+   },
+   "p": {
+    "en": "฿790 to ฿2,290 a year, plus 7% VAT",
+    "th": "฿790 ถึง ฿2,290 ต่อปี บวกภาษีมูลค่าเพิ่ม 7%",
+    "my": "တစ်နှစ် ฿790 မှ ฿2,290 နှင့် VAT 7%",
+    "zh": "每年 ฿790 至 ฿2,290，另加 7% 增值税",
+    "de": "฿790 bis ฿2,290 im Jahr, plus 7% Mehrwertsteuer"
+   },
+   "src": "https://www.hostatom.com/wordpress-hosting"
+  },
+  {
+   "t": {
+    "en": "Domain (HostAtom, Thailand)",
+    "th": "โดเมน (HostAtom ประเทศไทย)",
+    "my": "ဒိုမိန်း (HostAtom၊ ထိုင်း)",
+    "zh": "域名（HostAtom，泰国）",
+    "de": "Domain (HostAtom, Thailand)"
+   },
+   "p": {
+    "en": ".com ฿450 and .co.th ฿800 a year, plus 7% VAT",
+    "th": ".com ฿450 และ .co.th ฿800 ต่อปี บวกภาษีมูลค่าเพิ่ม 7%",
+    "my": "တစ်နှစ် .com ฿450 နှင့် .co.th ฿800၊ VAT 7% ထပ်",
+    "zh": "每年 .com ฿450、.co.th ฿800，另加 7% 增值税",
+    "de": ".com ฿450 und .co.th ฿800 im Jahr, plus 7% Mehrwertsteuer"
+   },
+   "src": "https://www.hostatom.com/domain"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does an app developer in Thailand charge?",
+    "th": "ทำแอปพลิเคชันราคาเท่าไหร่",
+    "my": "ထိုင်းနိုင်ငံတွင် အက်ပ်ရေးသူတစ်ဦးက ကြေးမည်မျှ ယူသနည်း",
+    "zh": "在泰国请人做应用要多少钱",
+    "de": "Was verlangt ein App-Entwickler in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists three iOS and Android app packages: ฿5,000 in 15 days, ฿50,000 in 60 days with an API, and ฿150,000 in 90 days with an API and a web admin. The packages differ in the API and the web admin.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork เสนอแอป iOS และ Android สามแพ็กเกจ ได้แก่ ฿5,000 ใน 15 วัน ฿50,000 ใน 60 วัน พร้อม API และ ฿150,000 ใน 90 วัน พร้อม API และเว็บแอดมิน ความต่างของแพ็กเกจอยู่ที่ API และเว็บแอดมิน",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက iOS နှင့် Android အက်ပ် ပက်ကေ့ချ် သုံးမျိုး တင်ထားသည် - 15 ရက်အတွင်း ฿5,000၊ 60 ရက်အတွင်း API ပါ ฿50,000 နှင့် 90 ရက်အတွင်း API နှင့် ဝက်ဘ် admin ပါ ฿150,000။ ပက်ကေ့ချ်များ ကွာခြားချက်မှာ API နှင့် ဝက်ဘ် admin ဖြစ်သည်။",
+    "zh": "Fastwork 上一位卖家列出三个 iOS 和安卓应用套餐：15 天交付 ฿5,000，60 天交付含 API 的 ฿50,000，90 天交付含 API 和网页后台的 ฿150,000。套餐的差别在于 API 和网页后台。",
+    "de": "Ein Anbieter auf Fastwork nennt drei Pakete für iOS- und Android-Apps: ฿5,000 in 15 Tagen, ฿50,000 in 60 Tagen mit API und ฿150,000 in 90 Tagen mit API und Web-Admin. Die Pakete unterscheiden sich durch die API und den Web-Admin."
+   },
+   "src": "https://fastwork.co/user/kungpotato/mobile-application-32033560"
+  },
+  {
+   "q": {
+    "en": "Is there a low-price way to get an app?",
+    "th": "มีวิธีทำแอปราคาถูกไหม",
+    "my": "စျေးသက်သာသည့် အက်ပ်ရယူနည်း ရှိပါသလား",
+    "zh": "有没有价格低的做应用的办法",
+    "de": "Gibt es einen günstigen Weg zu einer App?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists turning a website into an iOS and Android app for ฿5,000 in 2 days. The listing says the app is published to the App Store and Play Store.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork เสนอเปลี่ยนเว็บไซต์เป็นแอป iOS และ Android ในราคา ฿5,000 ใน 2 วัน รายการระบุว่าแอปถูกนำขึ้น App Store และ Play Store",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက ဝက်ဘ်ဆိုက်ကို iOS နှင့် Android အက်ပ်အဖြစ် 2 ရက်အတွင်း ฿5,000 ဖြင့် ပြောင်းပေးမည်ဟု တင်ထားသည်။ အက်ပ်ကို App Store နှင့် Play Store သို့ တင်ပေးသည်ဟု စာရင်းတွင် ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位卖家列出把网站做成 iOS 和安卓应用，2 天交付，价格 ฿5,000。页面写明应用会上架 App Store 和 Play Store。",
+    "de": "Ein Anbieter auf Fastwork nennt die Umwandlung einer Website in eine iOS- und Android-App für ฿5,000 in 2 Tagen. Laut Angebot wird die App im App Store und im Play Store veröffentlicht."
+   },
+   "src": "https://fastwork.co/user/jenarath/app-development-52886543"
+  },
+  {
+   "q": {
+    "en": "What is a Progressive Web App?",
+    "th": "Progressive Web App คืออะไร",
+    "my": "Progressive Web App ဆိုတာ ဘာလဲ",
+    "zh": "什么是渐进式网页应用",
+    "de": "Was ist eine Progressive Web App?"
+   },
+   "a": {
+    "en": "It is a web app that a supporting browser offers to install. Once installed, the app gets an icon on the device and can open as a standalone app, with no browser buttons. It needs a web app manifest and an https address.",
+    "th": "คือเว็บแอปที่เบราว์เซอร์ที่รองรับเสนอให้ติดตั้ง เมื่อติดตั้งแล้วแอปจะมีไอคอนบนเครื่องและเปิดเป็นแอปเดี่ยวได้โดยไม่มีปุ่มของเบราว์เซอร์ ต้องมีไฟล์ web app manifest และที่อยู่แบบ https",
+    "my": "ထောက်ပံ့သည့် browser က ထည့်သွင်းရန် ကမ်းလှမ်းသည့် ဝက်ဘ်အက်ပ် ဖြစ်သည်။ ထည့်သွင်းပြီးပါက အက်ပ်သည် စက်ပေါ်တွင် အိုင်ကွန်ရပြီး browser ခလုတ်များမပါဘဲ သီးခြားအက်ပ်အဖြစ် ဖွင့်နိုင်သည်။ web app manifest နှင့် https လိပ်စာ လိုအပ်သည်။",
+    "zh": "它是支持的浏览器会提示安装的网页应用。安装后，应用在设备上有图标，可以作为独立应用打开，没有浏览器的按钮。它需要一个 Web 应用清单和 https 地址。",
+    "de": "Das ist eine Web-App, die ein unterstützender Browser zur Installation anbietet. Nach der Installation hat die App ein Symbol auf dem Gerät und öffnet als eigenständige App, ohne Browser-Schaltflächen. Sie braucht ein Web-App-Manifest und eine https-Adresse."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable"
+  },
+  {
+   "q": {
+    "en": "Can an app work with no signal?",
+    "th": "แอปใช้ได้โดยไม่มีสัญญาณไหม",
+    "my": "လိုင်းမရှိဘဲ အက်ပ်အလုပ်လုပ်နိုင်ပါသလား",
+    "zh": "应用没有信号能用吗",
+    "de": "Kann eine App ohne Empfang arbeiten?"
+   },
+   "a": {
+    "en": "A web app works without a connection when it has a service worker. When the service worker installs, it fetches pages, styles, scripts and images and adds them to a local cache. MDN says that in many situations the web app then works well even when the connection comes and goes.",
+    "th": "เว็บแอปทำงานได้แม้ไม่มีการเชื่อมต่อเมื่อมี service worker ตอนติดตั้ง service worker จะดึงหน้าเว็บ สไตล์ สคริปต์ และรูปภาพมาเก็บในแคชในเครื่อง MDN ระบุว่าในหลายสถานการณ์ เว็บแอปจะทำงานได้ดีแม้สัญญาณขาดๆ หายๆ",
+    "my": "ဝက်ဘ်အက်ပ်တွင် service worker ရှိလျှင် ချိတ်ဆက်မှုမရှိဘဲ အလုပ်လုပ်နိုင်သည်။ service worker ထည့်သွင်းချိန်တွင် စာမျက်နှာများ၊ style များ၊ script များနှင့် ပုံများကို ရယူပြီး စက်ထဲရှိ cache တွင် ထည့်သိမ်းသည်။ MDN က အခြေအနေများစွာတွင် ချိတ်ဆက်မှု ပြတ်ချင်းဖြတ်ချင်းဖြစ်နေလည်း ဝက်ဘ်အက်ပ်သည် ကောင်းမွန်စွာ အလုပ်လုပ်သည်ဟု ဆိုသည်။",
+    "zh": "网页应用有了 Service Worker，就能在没有网络连接时工作。Service Worker 安装时会获取页面、样式、脚本和图片，存入本地缓存。MDN 说，在很多情况下，即使网络时断时续，网页应用也能运行良好。",
+    "de": "Eine Web-App arbeitet ohne Verbindung, wenn sie einen Service Worker hat. Bei der Installation holt der Service Worker Seiten, Stile, Skripte und Bilder und legt sie in einem lokalen Cache ab. Laut MDN läuft die Web-App dann in vielen Fällen auch bei unterbrochener Verbindung gut."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation"
+  },
+  {
+   "q": {
+    "en": "What does it cost to register as a developer on Google Play?",
+    "th": "สมัครเป็นนักพัฒนาบน Google Play เสียเท่าไหร่",
+    "my": "Google Play တွင် developer အဖြစ် မှတ်ပုံတင်ရန် ကုန်ကျစရိတ် မည်မျှနည်း",
+    "zh": "在 Google Play 注册成开发者要花多少钱",
+    "de": "Was kostet die Registrierung als Entwickler bei Google Play?"
+   },
+   "a": {
+    "en": "Google charges a one-time registration fee of US$25, payable by credit or debit card. If the identity information is found invalid, the fee is not refunded.",
+    "th": "Google เก็บค่าสมัครครั้งเดียว US$25 จ่ายด้วยบัตรเครดิตหรือบัตรเดบิต หากพบว่าข้อมูลยืนยันตัวตนไม่ถูกต้อง จะไม่คืนค่าสมัคร",
+    "my": "Google သည် တစ်ကြိမ်တည်း မှတ်ပုံတင်ကြေး US$25 ကောက်ခံပြီး ခရက်ဒစ် သို့မဟုတ် ဒက်ဘစ်ကတ်ဖြင့် ပေးနိုင်သည်။ ကိုယ်ရေးအချက်အလက် မမှန်ကန်ကြောင်း တွေ့ရှိပါက ကြေးကို ပြန်မအမ်းပါ။",
+    "zh": "Google 收取一次性注册费 US$25，可用信用卡或借记卡支付。如果身份信息被判定无效，注册费不退。",
+    "de": "Google verlangt eine einmalige Registrierungsgebühr von US$25, zahlbar mit Kredit- oder Debitkarte. Wenn die Identitätsangaben als ungültig gelten, wird die Gebühr nicht erstattet."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/6112435"
+  },
+  {
+   "q": {
+    "en": "What does Google Play keep from sales?",
+    "th": "Google Play หักเท่าไหร่จากยอดขาย",
+    "my": "Google Play က ရောင်းရငွေမှ မည်မျှ ယူသနည်း",
+    "zh": "Google Play 从销售额中抽多少",
+    "de": "Wie viel behält Google Play vom Umsatz?"
+   },
+   "a": {
+    "en": "For the remaining markets, which include Thailand, Google Play's page lists 15% on the first US$1 million of a developer's revenue a year, and a higher rate above that. Auto-renewing subscriptions are 15%.",
+    "th": "สำหรับตลาดที่เหลือ ซึ่งรวมถึงไทย หน้าของ Google Play ระบุ 15% ของรายได้ส่วนแรก US$1 ล้านต่อปีของนักพัฒนา และอัตราที่สูงกว่าเมื่อเกินจากนั้น การสมัครสมาชิกแบบต่ออายุอัตโนมัติคิด 15%",
+    "my": "ကျန်စျေးကွက်များအတွက်၊ ထိုင်းနိုင်ငံ ပါဝင်သည်၊ Google Play ၏ စာမျက်နှာတွင် developer တစ်ဦး၏ တစ်နှစ်ဝင်ငွေ ပထမ US$1 သန်းအတွက် 15% နှင့် ထိုထက်ကျော်လျှင် ပိုမြင့်သည့်နှုန်းကို ဖော်ပြထားသည်။ အလိုအလျောက် သက်တမ်းတိုးသည့် စာရင်းသွင်းမှုများမှာ 15% ဖြစ်သည်။",
+    "zh": "对包括泰国在内的其余市场，Google Play 的页面列出：开发者每年收入前 US$1,000,000 收 15%，超过部分费率更高。自动续订的订阅为 15%。",
+    "de": "Für die übrigen Märkte, zu denen Thailand gehört, nennt die Seite von Google Play 15% auf die ersten US$1 Million Umsatz eines Entwicklers im Jahr und darüber einen höheren Satz. Automatisch verlängerte Abos kosten 15%."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/112622"
+  },
+  {
+   "q": {
+    "en": "What does an Apple developer account cost?",
+    "th": "บัญชีนักพัฒนา Apple เสียเท่าไหร่",
+    "my": "Apple developer အကောင့်အတွက် ကုန်ကျစရိတ် မည်မျှနည်း",
+    "zh": "Apple 开发者账号要花多少钱",
+    "de": "Was kostet ein Apple-Entwicklerkonto?"
+   },
+   "a": {
+    "en": "Apple's Developer Program page lists a US$99 annual membership. The page shows the price in US dollars only.",
+    "th": "หน้า Apple Developer Program ระบุค่าสมาชิกรายปี US$99 หน้านี้แสดงราคาเป็นดอลลาร์สหรัฐเท่านั้น",
+    "my": "Apple Developer Program စာမျက်နှာတွင် နှစ်စဉ်အသင်းဝင်ကြေး US$99 ဟု ဖော်ပြထားသည်။ စာမျက်နှာတွင် စျေးနှုန်းကို US ဒေါ်လာဖြင့်သာ ပြထားသည်။",
+    "zh": "Apple Developer Program 页面列出年费 US$99。页面只以美元标价。",
+    "de": "Die Seite zum Apple Developer Program nennt eine Jahresmitgliedschaft von US$99. Die Seite zeigt den Preis nur in US-Dollar."
+   },
+   "src": "https://developer.apple.com/programs/"
+  },
+  {
+   "q": {
+    "en": "Where do developers register an Android app that is not on Google Play?",
+    "th": "นักพัฒนาลงทะเบียนแอป Android ที่ไม่อยู่บน Google Play ที่ไหน",
+    "my": "Google Play ပေါ်တွင် မရှိသည့် Android အက်ပ်ကို developer များ ဘယ်မှာ မှတ်ပုံတင်ကြသနည်း",
+    "zh": "不在 Google Play 上的安卓应用，开发者在哪里登记",
+    "de": "Wo registrieren Entwickler eine Android-App, die nicht bei Google Play liegt?"
+   },
+   "a": {
+    "en": "Google's developer verification page lists the Android Developer Console for developers who distribute apps only outside Google Play. A limited distribution account lets students, teachers and hobbyists share an app with up to 20 devices without a government ID or registration fee.",
+    "th": "หน้าการยืนยันตัวตนนักพัฒนาของ Google ระบุ Android Developer Console สำหรับนักพัฒนาที่แจกจ่ายแอปนอก Google Play เท่านั้น บัญชีแจกจ่ายแบบจำกัดให้นักเรียน ครู และผู้ทำเป็นงานอดิเรกแชร์แอปกับอุปกรณ์ได้สูงสุด 20 เครื่อง โดยไม่ต้องใช้บัตรประจำตัวที่รัฐออกให้หรือเสียค่าลงทะเบียน",
+    "my": "Google ၏ developer verification စာမျက်နှာတွင် Google Play ပြင်ပတွင်သာ အက်ပ်ဖြန့်ဝေသည့် developer များအတွက် Android Developer Console ကို ဖော်ပြထားသည်။ ကန့်သတ်ဖြန့်ဝေမှုအကောင့်ဖြင့် ကျောင်းသား၊ ဆရာနှင့် ဝါသနာအရ လုပ်သူများသည် အစိုးရထုတ် မှတ်ပုံတင် သို့မဟုတ် မှတ်ပုံတင်ကြေးမလိုဘဲ စက် 20 အထိ အက်ပ်ကို မျှဝေနိုင်သည်။",
+    "zh": "Google 的开发者验证页面列出：只在 Google Play 之外分发应用的开发者使用 Android Developer Console。受限分发账号让学生、教师和业余爱好者无需政府签发的身份证件，也无需注册费，就能把应用分享给最多 20 台设备。",
+    "de": "Die Seite zur Entwicklerverifizierung von Google nennt die Android Developer Console für Entwickler, die Apps nur ausserhalb von Google Play verteilen. Mit einem Konto für eingeschränkte Verteilung teilen Studierende, Lehrkräfte und Hobbyentwickler eine App mit bis zu 20 Geräten, ohne amtlichen Ausweis und ohne Registrierungsgebühr."
+   },
+   "src": "https://developer.android.com/developer-verification"
+  }
+ ],
+ "related": [
+  "site",
+  "web-line",
+  "vibe",
+  "online-shop",
+  "form",
+  "typing"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "MDN: making a Progressive Web App installable",
+    "th": "MDN: ทำให้ Progressive Web App ติดตั้งได้",
+    "my": "MDN - Progressive Web App ကို ထည့်သွင်းနိုင်စေခြင်း",
+    "zh": "MDN：让渐进式网页应用可安装",
+    "de": "MDN: eine Progressive Web App installierbar machen"
+   },
+   "href": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable"
+  },
+  {
+   "t": {
+    "en": "Google Play Console Help: service fees",
+    "th": "Google Play Console Help: ค่าบริการ",
+    "my": "Google Play Console Help - ဝန်ဆောင်မှုကြေးများ",
+    "zh": "Google Play Console 帮助：服务费",
+    "de": "Google Play Console Hilfe: Servicegebühren"
+   },
+   "href": "https://support.google.com/googleplay/android-developer/answer/112622"
+  },
+  {
+   "t": {
+    "en": "Android Developers: developer verification",
+    "th": "Android Developers: การยืนยันตัวตนนักพัฒนา",
+    "my": "Android Developers - developer verification",
+    "zh": "Android Developers：开发者验证",
+    "de": "Android Developers: Entwicklerverifizierung"
+   },
+   "href": "https://developer.android.com/developer-verification"
+  },
+  {
+   "t": {
+    "en": "Apple: App Store Small Business Program",
+    "th": "Apple: โครงการ App Store Small Business Program",
+    "my": "Apple - App Store Small Business Program",
+    "zh": "Apple：App Store 小型企业计划",
+    "de": "Apple: App Store Small Business Program"
+   },
+   "href": "https://developer.apple.com/app-store/small-business-program/"
+  }
+ ],
+ "glyphs": [
+  "telephone",
+  "wifi",
+  "gear"
+ ]
+}

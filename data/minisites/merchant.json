@@ -1,0 +1,320 @@
+{
+ "id": "merchant",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People look for this when a checkout will not take a payment, a payout is held, or PayPal or Stripe limits an account.",
+  "th": "คนมองหาบริการนี้เมื่อหน้าชำระเงินรับเงินไม่ได้ เงินที่รอโอนถูกกัก หรือ PayPal หรือ Stripe จำกัดบัญชี",
+  "my": "ငွေပေးချေရာစာမျက်နှာက ငွေမလက်ခံနိုင်ခြင်း၊ ထုတ်ယူရမည့်ငွေကို ဆိုင်းငံ့ထားခြင်း၊ သို့မဟုတ် PayPal၊ Stripe က အကောင့်ကို ကန့်သတ်ထားခြင်း ဖြစ်သောအခါ လူတွေက ဤဝန်ဆောင်မှုကို ရှာကြသည်။",
+  "zh": "结账页收不了款、待结算的款项被扣住，或者 PayPal、Stripe 限制了账户，人们就会找这项服务。",
+  "de": "Man sucht das, wenn eine Kasse keine Zahlung annimmt, eine Auszahlung zurückgehalten wird oder PayPal oder Stripe ein Konto einschränkt."
+ },
+ "glyphs": [
+  "coin",
+  "wrench",
+  "lock"
+ ],
+ "steps": [
+  {
+   "db": "eye",
+   "t": {
+    "en": "We find what is wrong and write it down.",
+    "th": "หาสาเหตุที่เสียและเขียนสรุปเป็นลายลักษณ์อักษร",
+    "my": "ချို့ယွင်းချက်ကို ရှာဖွေပြီး စာဖြင့် ရေးသားပေးသည်။",
+    "zh": "查出问题所在，写成书面诊断。",
+    "de": "Wir finden den Fehler und halten ihn schriftlich fest."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "We fix one gateway or one store and test it with a payment, or we prepare the papers for a new merchant account. The diagnosis fee counts toward the fix.",
+    "th": "แก้ระบบรับเงินหนึ่งระบบหรือร้านค้าหนึ่งร้านแล้วทดสอบด้วยการจ่ายเงิน หรือเตรียมเอกสารขอเปิดบัญชีร้านค้าใหม่ ค่าวินิจฉัยหักจากค่าแก้ไข",
+    "my": "ငွေပေးချေမှုစနစ်တစ်ခု သို့မဟုတ် ဆိုင်တစ်ဆိုင်ကို ပြင်ပြီး ငွေပေးချေမှုတစ်ခုဖြင့် စမ်းသပ်သည်။ သို့မဟုတ် ကုန်သည်အကောင့်အသစ်အတွက် စာရွက်စာတမ်းများ ပြင်ဆင်ပေးသည်။ ရောဂါရှာဖွေခကို ပြင်ဆင်ခထဲမှ နှုတ်ပေးသည်။",
+    "zh": "修好一个收款通道或一家店铺，并用一笔付款测试；或者备好申请新商户账户的文件。诊断费计入修复费。",
+    "de": "Wir reparieren ein Gateway oder einen Shop und testen es mit einer Zahlung, oder wir bereiten die Unterlagen für ein neues Händlerkonto vor. Die Diagnosegebühr wird an der Reparatur angerechnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the diagnosis",
+    "th": "หลังวินิจฉัย",
+    "my": "ရောဂါရှာဖွေပြီးနောက်",
+    "zh": "诊断之后",
+    "de": "Nach der Diagnose"
+   }
+  },
+  {
+   "db": "lock",
+   "t": {
+    "en": "A frozen or limited account: we prepare the documents. You file the appeal from your own account, and the provider decides. The form takes no passwords or card numbers.",
+    "th": "บัญชีถูกระงับหรือจำกัด: เราเตรียมเอกสาร คุณยื่นคำร้องจากบัญชีของคุณเอง และผู้ให้บริการเป็นผู้ตัดสิน แบบฟอร์มไม่ขอรหัสผ่านหรือเลขบัตร",
+    "my": "အကောင့် အေးခဲခြင်း သို့မဟုတ် ကန့်သတ်ခံရခြင်း - စာရွက်စာတမ်းများကို ကျွန်ုပ်တို့ ပြင်ဆင်ပေးသည်။ အယူခံကို သင့်ကိုယ်ပိုင်အကောင့်မှ သင်တင်ပြပြီး ဝန်ဆောင်မှုပေးသူက ဆုံးဖြတ်သည်။ ဖောင်တွင် စကားဝှက် သို့မဟုတ် ကတ်နံပါတ် မတောင်းပါ။",
+    "zh": "账户被冻结或受限：我们备好文件，由您在自己的账户里提交申诉，由服务商裁定。表单不要密码，也不要卡号。",
+    "de": "Bei einem gesperrten oder eingeschränkten Konto bereiten wir die Unterlagen vor. Sie reichen den Einspruch aus Ihrem eigenen Konto ein, und der Anbieter entscheidet. Das Formular fragt weder nach Passwörtern noch nach Kartennummern."
+   },
+   "who": {
+    "en": "Hongdam, you and the provider",
+    "th": "หงส์ดำ คุณ และผู้ให้บริการ",
+    "my": "ဟုန်ဒမ်၊ သင် နှင့် ဝန်ဆောင်မှုပေးသူ",
+    "zh": "鸿丹、您和服务商",
+    "de": "Hongdam, Sie und der Anbieter"
+   },
+   "time": {
+    "en": "For a frozen or limited account",
+    "th": "เฉพาะบัญชีที่ถูกระงับหรือจำกัด",
+    "my": "အကောင့် အေးခဲ/ကန့်သတ်ခံရလျှင်",
+    "zh": "账户被冻结或受限时",
+    "de": "Bei gesperrtem oder eingeschränktem Konto"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "PayPal says a limited account cannot do certain things, such as send or withdraw money. The steps to lift the limit are in the account's Resolution Center, and PayPal gives no set time for it, saying it depends on the case.",
+    "th": "PayPal ระบุว่าบัญชีที่ถูกจำกัดทำบางอย่างไม่ได้ เช่น ส่งหรือถอนเงิน ขั้นตอนปลดการจำกัดอยู่ใน Resolution Center ของบัญชี และ PayPal ไม่ระบุเวลาที่แน่นอน โดยบอกว่าขึ้นอยู่กับแต่ละกรณี",
+    "my": "PayPal က ကန့်သတ်ခံရသောအကောင့်သည် ငွေပို့ခြင်း၊ ငွေထုတ်ခြင်းကဲ့သို့ အချို့အရာများ မလုပ်နိုင်ဟု ဆိုသည်။ ကန့်သတ်ချက်ကို ဖယ်ရှားရန် အဆင့်များသည် အကောင့်၏ Resolution Center တွင်ရှိပြီး၊ အချိန်ကာလ သတ်မှတ်မထားဘဲ ကိစ္စအလိုက် ကွာခြားသည်ဟု PayPal က ဆိုသည်။",
+    "zh": "PayPal 说明，受限账户不能做某些事，比如汇款或提款。解除限制的步骤在账户的 Resolution Center 里；PayPal 不给固定时限，称视个案而定。",
+    "de": "PayPal schreibt, dass ein eingeschränktes Konto manches nicht kann, etwa Geld senden oder abheben. Die Schritte zum Aufheben stehen im Resolution Center des Kontos. PayPal nennt keine feste Dauer und sagt, sie hänge vom Fall ab."
+   },
+   "src": "https://www.paypal.com/us/cshelp/article/HELP535"
+  },
+  {
+   "t": {
+    "en": "When Stripe closes or rejects an account, it emails the reason and the Dashboard shows a red banner. A form linked in the email lets the account holder add information about the business and ask for another review.",
+    "th": "เมื่อ Stripe ปิดหรือปฏิเสธบัญชี จะส่งอีเมลแจ้งเหตุผล และแดชบอร์ดแสดงแถบสีแดง แบบฟอร์มที่ลิงก์ในอีเมลให้เจ้าของบัญชีเพิ่มข้อมูลธุรกิจและขอให้พิจารณาใหม่",
+    "my": "Stripe က အကောင့်ကို ပိတ်သည် သို့မဟုတ် ပယ်ချသည့်အခါ အကြောင်းရင်းကို အီးမေးလ်ဖြင့် ပို့ပြီး Dashboard ထိပ်တွင် အနီရောင်ဘားပြသည်။ အီးမေးလ်ထဲရှိ ဖောင်ဖြင့် အကောင့်ပိုင်ရှင်က လုပ်ငန်းအကြောင်း အချက်အလက်ထပ်ထည့်ပြီး ပြန်လည်သုံးသပ်ရန် တောင်းနိုင်သည်။",
+    "zh": "Stripe 关闭或拒绝一个账户时，会发邮件说明原因，后台顶部出现红色横幅。邮件里的表单让账户持有人补充业务信息，并要求再次审核。",
+    "de": "Schliesst oder lehnt Stripe ein Konto ab, nennt es den Grund per E-Mail, und das Dashboard zeigt ein rotes Banner. Über ein Formular in der E-Mail ergänzt der Kontoinhaber Angaben zum Geschäft und bittet um eine erneute Prüfung."
+   },
+   "src": "https://support.stripe.com/questions/why-was-my-stripe-account-closed"
+  },
+  {
+   "t": {
+    "en": "A Stripe reserve holds part of a business's funds for a set period. The account keeps taking payments, and the held funds are paid out when the reserve term ends.",
+    "th": "เงินสำรอง (reserve) ของ Stripe คือการกักเงินส่วนหนึ่งของธุรกิจไว้ตามระยะเวลาที่กำหนด บัญชียังรับเงินได้ และเงินที่กักจ่ายออกเมื่อครบกำหนด",
+    "my": "Stripe ၏ reserve ဆိုသည်မှာ လုပ်ငန်းတစ်ခု၏ ငွေအချို့ကို သတ်မှတ်ကာလတစ်ခုအထိ ထိန်းထားခြင်း ဖြစ်သည်။ အကောင့်က ငွေဆက်လက်လက်ခံနိုင်ပြီး ထိန်းထားသောငွေကို reserve ကာလ ပြီးဆုံးချိန်တွင် ပေးချေသည်။",
+    "zh": "Stripe 的准备金（reserve）是在一段设定的时间内扣留商户部分资金。账户仍可收款，扣留的资金在准备金期限结束时发放。",
+    "de": "Eine Stripe-Reserve hält einen Teil der Gelder eines Unternehmens für eine festgelegte Zeit zurück. Das Konto nimmt weiter Zahlungen an, und die zurückgehaltenen Gelder werden am Ende der Reservefrist ausgezahlt."
+   },
+   "src": "https://support.stripe.com/questions/reserves-frequently-asked-questions"
+  },
+  {
+   "t": {
+    "en": "The Bank of Thailand's PromptPay page lists Thai QR Payment: the payer scans a QR code in a mobile banking app.",
+    "th": "หน้าพร้อมเพย์ของธนาคารแห่งประเทศไทยระบุ Thai QR Payment คือผู้จ่ายสแกนคิวอาร์โค้ดผ่านแอปธนาคารบนมือถือ",
+    "my": "ထိုင်းနိုင်ငံ ဗဟိုဘဏ်၏ PromptPay စာမျက်နှာတွင် Thai QR Payment ကို ဖော်ပြထားသည် - ပေးချေသူက မိုဘိုင်းဘဏ်လုပ်ငန်းအက်ပ်ဖြင့် QR ကုဒ်ကို စကင်ဖတ်ပေးချေသည်။",
+    "zh": "泰国央行的 PromptPay 页面列出了 Thai QR Payment：付款人用手机银行应用扫描二维码付款。",
+    "de": "Die PromptPay-Seite der Bank of Thailand nennt Thai QR Payment: Der Zahler scannt einen QR-Code in einer Mobile-Banking-App."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Stripe in Thailand: a payment by domestic card",
+    "th": "Stripe ในไทย: จ่ายด้วยบัตรในประเทศ",
+    "my": "ထိုင်းနိုင်ငံရှိ Stripe - ပြည်တွင်းကတ်ဖြင့် ပေးချေမှု",
+    "zh": "Stripe 泰国：境内银行卡付款",
+    "de": "Stripe in Thailand: Zahlung mit inländischer Karte"
+   },
+   "p": {
+    "en": "3.65% + ฿10 a payment",
+    "th": "3.65% + ฿10 ต่อรายการ",
+    "my": "တစ်ကြိမ်လျှင် 3.65% + ฿10",
+    "zh": "每笔 3.65% + ฿10",
+    "de": "3.65 % + ฿10 pro Zahlung"
+   },
+   "src": "https://stripe.com/en-th/pricing"
+  },
+  {
+   "t": {
+    "en": "Stripe in Thailand: a PromptPay payment",
+    "th": "Stripe ในไทย: จ่ายด้วยพร้อมเพย์",
+    "my": "ထိုင်းနိုင်ငံရှိ Stripe - PromptPay ဖြင့် ပေးချေမှု",
+    "zh": "Stripe 泰国：PromptPay 付款",
+    "de": "Stripe in Thailand: PromptPay-Zahlung"
+   },
+   "p": {
+    "en": "1.65% a payment",
+    "th": "1.65% ต่อรายการ",
+    "my": "တစ်ကြိမ်လျှင် 1.65%",
+    "zh": "每笔 1.65%",
+    "de": "1.65 % pro Zahlung"
+   },
+   "src": "https://stripe.com/en-th/pricing"
+  },
+  {
+   "t": {
+    "en": "PayPal Thailand: a payment received from outside Thailand",
+    "th": "PayPal ประเทศไทย: รับเงินจากนอกประเทศไทย",
+    "my": "PayPal ထိုင်း - ထိုင်းပြင်ပမှ လက်ခံသောငွေ",
+    "zh": "PayPal 泰国：收到来自泰国境外的款项",
+    "de": "PayPal Thailand: Zahlung aus dem Ausland"
+   },
+   "p": {
+    "en": "4.40% + ฿11 a payment (3.90% + ฿11 inside Thailand)",
+    "th": "4.40% + ฿11 ต่อรายการ (ในประเทศ 3.90% + ฿11)",
+    "my": "တစ်ကြိမ်လျှင် 4.40% + ฿11 (ထိုင်းတွင်းမှ 3.90% + ฿11)",
+    "zh": "每笔 4.40% + ฿11（泰国境内 3.90% + ฿11）",
+    "de": "4.40 % + ฿11 pro Zahlung (3.90 % + ฿11 im Inland)"
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "t": {
+    "en": "Opn Payments (Omise): a payment by any card, or by PromptPay",
+    "th": "Opn Payments (Omise): จ่ายด้วยบัตรทุกชนิด หรือพร้อมเพย์",
+    "my": "Opn Payments (Omise) - ကတ်မည်သည့်အမျိုးအစားဖြင့်မဆို သို့မဟုတ် PromptPay ဖြင့် ပေးချေမှု",
+    "zh": "Opn Payments（Omise）：任意银行卡或 PromptPay 付款",
+    "de": "Opn Payments (Omise): Zahlung mit einer beliebigen Karte oder per PromptPay"
+   },
+   "p": {
+    "en": "3.65% for a card, 1.65% for PromptPay, plus 7% VAT",
+    "th": "บัตร 3.65% พร้อมเพย์ 1.65% บวกภาษีมูลค่าเพิ่ม 7%",
+    "my": "ကတ် 3.65%၊ PromptPay 1.65%၊ VAT 7% ထပ်ပေါင်း",
+    "zh": "银行卡 3.65%，PromptPay 1.65%，另加 7% 增值税",
+    "de": "Karte 3.65 %, PromptPay 1.65 %, plus 7 % MwSt."
+   },
+   "src": "https://www.omise.co/pricing/thailand"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "PayPal account limited: how long does it take to fix?",
+    "th": "บัญชี PayPal ถูกจำกัด ใช้เวลาแก้นานแค่ไหน",
+    "my": "PayPal အကောင့် ကန့်သတ်ခံရလျှင် ပြင်ရန် ကြာမည်လား",
+    "zh": "PayPal 账户被限制，要多久才能解决？",
+    "de": "PayPal-Konto eingeschränkt: Wie lange dauert die Lösung?"
+   },
+   "a": {
+    "en": "PayPal's help page gives no set time and says it depends on the complexity of the case. The steps are in the Resolution Center, or the bell icon on the Dashboard. If the account still shows a limit after the steps, PayPal has either reviewed it and emailed for more information, or is still reviewing what was sent.",
+    "th": "หน้าช่วยเหลือของ PayPal ไม่ระบุเวลาที่แน่นอน และบอกว่าขึ้นอยู่กับความซับซ้อนของแต่ละกรณี ขั้นตอนอยู่ใน Resolution Center หรือไอคอนกระดิ่งบนแดชบอร์ด หากทำตามขั้นตอนแล้วบัญชียังถูกจำกัด แสดงว่า PayPal ตรวจแล้วและส่งอีเมลขอข้อมูลเพิ่ม หรือยังตรวจสิ่งที่ส่งไปอยู่",
+    "my": "PayPal ၏ အကူအညီစာမျက်နှာတွင် သတ်မှတ်ချိန် မဖော်ပြဘဲ ကိစ္စ၏ ရှုပ်ထွေးမှုအပေါ် မူတည်သည်ဟု ဆိုသည်။ အဆင့်များသည် Resolution Center တွင် သို့မဟုတ် Dashboard ရှိ ခေါင်းလောင်းအိုင်ကွန်တွင် ရှိသည်။ အဆင့်များပြီးနောက်လည်း အကောင့်တွင် ကန့်သတ်ချက်ရှိနေသေးလျှင် PayPal က သုံးသပ်ပြီး အချက်အလက်ထပ်တောင်း၍ အီးမေးလ်ပို့ထားခြင်း သို့မဟုတ် ပို့ထားသည်များကို ဆက်လက်သုံးသပ်နေခြင်း ဖြစ်သည်။",
+    "zh": "PayPal 的帮助页没有给固定时间，称取决于个案的复杂程度。步骤在 Resolution Center 里，或点后台的铃铛图标。走完步骤后账户仍显示受限，说明 PayPal 已审核并发邮件索要更多资料，或仍在审核已提交的内容。",
+    "de": "Die Hilfeseite von PayPal nennt keine feste Dauer und sagt, sie hänge von der Komplexität des Falls ab. Die Schritte stehen im Resolution Center oder hinter dem Glockensymbol im Dashboard. Zeigt das Konto nach den Schritten weiter eine Einschränkung, hat PayPal es entweder geprüft und per E-Mail weitere Angaben verlangt, oder es prüft noch, was gesendet wurde."
+   },
+   "src": "https://www.paypal.com/us/cshelp/article/HELP535"
+  },
+  {
+   "q": {
+    "en": "Stripe account frozen or suspended: what happens?",
+    "th": "บัญชี Stripe ถูกระงับ จะเกิดอะไรขึ้น",
+    "my": "Stripe အကောင့် အေးခဲခြင်း သို့မဟုတ် ဆိုင်းငံ့ခံရလျှင် ဘာဖြစ်သနည်း",
+    "zh": "Stripe 账户被冻结或暂停，会怎样？",
+    "de": "Stripe-Konto gesperrt oder ausgesetzt: Was passiert?"
+   },
+   "a": {
+    "en": "Stripe emails the reason, and the Dashboard shows a red banner. If Stripe has misread the business, the form linked in the email opens the Dashboard, where the account holder adds information and asks for another review. Businesses on Stripe's restricted list are a category it cannot serve.",
+    "th": "Stripe ส่งอีเมลแจ้งเหตุผล และแดชบอร์ดแสดงแถบสีแดง หาก Stripe เข้าใจธุรกิจผิด แบบฟอร์มที่ลิงก์ในอีเมลจะพาไปที่แดชบอร์ด ซึ่งเจ้าของบัญชีเพิ่มข้อมูลและขอให้พิจารณาใหม่ ธุรกิจในรายการต้องห้ามของ Stripe เป็นประเภทที่ Stripe รองรับไม่ได้",
+    "my": "Stripe က အကြောင်းရင်းကို အီးမေးလ်ဖြင့် ပို့ပြီး Dashboard တွင် အနီရောင်ဘား ပြသည်။ Stripe က လုပ်ငန်းကို နားလည်မှားခဲ့လျှင် အီးမေးလ်ထဲရှိ ဖောင်က Dashboard သို့ ခေါ်သွားပြီး အကောင့်ပိုင်ရှင်က အချက်အလက်ထပ်ထည့်ကာ ပြန်လည်သုံးသပ်ရန် တောင်းနိုင်သည်။ Stripe ၏ ကန့်သတ်စာရင်းရှိ လုပ်ငန်းများကို Stripe က ဝန်ဆောင်မှု မပေးနိုင်ပါ။",
+    "zh": "Stripe 会发邮件说明原因，后台出现红色横幅。若 Stripe 误解了业务，邮件里的表单会打开后台，账户持有人在那里补充资料并要求再次审核。列入 Stripe 受限业务清单的行业，Stripe 无法提供服务。",
+    "de": "Stripe nennt den Grund per E-Mail, und das Dashboard zeigt ein rotes Banner. Hat Stripe das Geschäft falsch verstanden, öffnet das Formular in der E-Mail das Dashboard, wo der Kontoinhaber Angaben ergänzt und eine erneute Prüfung verlangt. Unternehmen auf Stripes Liste eingeschränkter Branchen kann Stripe nicht bedienen."
+   },
+   "src": "https://support.stripe.com/questions/why-was-my-stripe-account-closed"
+  },
+  {
+   "q": {
+    "en": "Can a shop in Thailand take PromptPay online?",
+    "th": "ร้านในไทยรับพร้อมเพย์ออนไลน์ได้ไหม",
+    "my": "ထိုင်းရှိ ဆိုင်တစ်ဆိုင်က PromptPay ကို အွန်လိုင်းမှ လက်ခံနိုင်ပါသလား",
+    "zh": "泰国的店铺能在线收 PromptPay 吗？",
+    "de": "Kann ein Shop in Thailand PromptPay online annehmen?"
+   },
+   "a": {
+    "en": "Yes, through a gateway that offers it. Stripe's Thailand pricing lists PromptPay at 1.65% a successful transfer, plus ฿10 for each refund.",
+    "th": "ได้ ผ่านระบบรับเงินที่รองรับ ราคาของ Stripe ในไทยระบุพร้อมเพย์ 1.65% ต่อการโอนที่สำเร็จ และ ฿10 ต่อการคืนเงินแต่ละครั้ง",
+    "my": "ရပါသည်၊ ၎င်းကို ပံ့ပိုးသော ငွေပေးချေမှုစနစ်မှတစ်ဆင့် ဖြစ်သည်။ ထိုင်းအတွက် Stripe ၏ ဈေးနှုန်းတွင် PromptPay ကို အောင်မြင်သော လွှဲငွေတစ်ခုလျှင် 1.65% နှင့် ငွေပြန်အမ်းတစ်ကြိမ်လျှင် ฿10 ဟု ဖော်ပြထားသည်။",
+    "zh": "可以，通过支持它的收款通道。Stripe 泰国的定价列出 PromptPay 每笔成功转账 1.65%，每次退款另收 ฿10。",
+    "de": "Ja, über ein Gateway, das es anbietet. Stripes Preisliste für Thailand nennt PromptPay mit 1.65 % pro erfolgreicher Überweisung, plus ฿10 für jede Rückerstattung."
+   },
+   "src": "https://stripe.com/en-th/pricing"
+  },
+  {
+   "q": {
+    "en": "Who decides on a limited or frozen account?",
+    "th": "ใครเป็นผู้ตัดสินเรื่องบัญชีที่ถูกจำกัดหรือถูกระงับ",
+    "my": "အကောင့် ကန့်သတ်ခံရခြင်း သို့မဟုတ် အေးခဲခြင်းကို ဘယ်သူက ဆုံးဖြတ်သနည်း",
+    "zh": "账户受限或被冻结，由谁裁定？",
+    "de": "Wer entscheidet über ein eingeschränktes oder gesperrtes Konto?"
+   },
+   "a": {
+    "en": "The provider. A PayPal limitation is lifted through the steps in the account's Resolution Center, and PayPal reviews what is sent. Hongdam prepares the documents for a frozen or limited account, you file the appeal from your own account, and the provider decides.",
+    "th": "ผู้ให้บริการเป็นผู้ตัดสิน การปลดการจำกัดของ PayPal ทำตามขั้นตอนใน Resolution Center ของบัญชี และ PayPal พิจารณาสิ่งที่ส่งไป หงส์ดำเตรียมเอกสารสำหรับบัญชีที่ถูกระงับหรือจำกัด คุณยื่นคำร้องจากบัญชีของคุณเอง และผู้ให้บริการเป็นผู้ตัดสิน",
+    "my": "ဝန်ဆောင်မှုပေးသူက ဆုံးဖြတ်သည်။ PayPal ၏ ကန့်သတ်ချက်ကို အကောင့်၏ Resolution Center ရှိ အဆင့်များဖြင့် ဖယ်ရှားပြီး PayPal က ပို့ထားသည်များကို သုံးသပ်သည်။ အကောင့် အေးခဲ သို့မဟုတ် ကန့်သတ်ခံရလျှင် ဟုန်ဒမ်က စာရွက်စာတမ်းများ ပြင်ဆင်ပေးပြီး သင်က သင့်ကိုယ်ပိုင်အကောင့်မှ အယူခံတင်ပြကာ ဝန်ဆောင်မှုပေးသူက ဆုံးဖြတ်သည်။",
+    "zh": "由服务商裁定。PayPal 的限制通过账户 Resolution Center 里的步骤解除，PayPal 审核提交的内容。账户被冻结或受限时，鸿丹备好文件，由您在自己的账户里提交申诉，服务商裁定。",
+    "de": "Der Anbieter. Eine PayPal-Einschränkung wird über die Schritte im Resolution Center des Kontos aufgehoben, und PayPal prüft, was gesendet wird. Bei einem gesperrten oder eingeschränkten Konto bereitet Hongdam die Unterlagen vor, Sie reichen den Einspruch aus Ihrem eigenen Konto ein, und der Anbieter entscheidet."
+   },
+   "src": "https://www.paypal.com/us/cshelp/article/HELP535"
+  },
+  {
+   "q": {
+    "en": "What does a Stripe dispute cost in Thailand?",
+    "th": "Stripe ในไทยคิดค่าธรรมเนียมข้อพิพาทเท่าไร",
+    "my": "ထိုင်းနိုင်ငံရှိ Stripe အငြင်းပွားမှု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "Stripe 泰国的拒付争议要收多少钱？",
+    "de": "Was kostet ein Stripe-Streitfall in Thailand?"
+   },
+   "a": {
+    "en": "฿500 for each dispute received, and ฿500 more for each dispute answered by hand, which Stripe refunds when the dispute is won. Smart Disputes costs 30% of the disputed amount for each dispute won.",
+    "th": "฿500 ต่อข้อพิพาทที่ได้รับ และอีก ฿500 ต่อข้อพิพาทที่ตอบเอง ซึ่ง Stripe คืนให้เมื่อชนะข้อพิพาท Smart Disputes คิด 30% ของยอดที่พิพาทสำหรับข้อพิพาทที่ชนะ",
+    "my": "ရရှိသော အငြင်းပွားမှုတစ်ခုလျှင် ฿500 ဖြစ်ပြီး လက်ဖြင့် ပြန်ဖြေသော အငြင်းပွားမှုတစ်ခုလျှင် ฿500 ထပ်ပေးရသည်။ အငြင်းပွားမှု အနိုင်ရလျှင် Stripe က ပြန်အမ်းသည်။ Smart Disputes သည် အနိုင်ရသော အငြင်းပွားမှုတစ်ခုလျှင် အငြင်းပွားငွေ၏ 30% ဖြစ်သည်။",
+    "zh": "每收到一笔争议收 ฿500，手动回应一笔争议再收 ฿500，赢得争议时 Stripe 退还这笔费用。Smart Disputes 对每笔赢下的争议收取争议金额的 30%。",
+    "de": "฿500 für jeden eingegangenen Streitfall und weitere ฿500 für jeden von Hand beantworteten, den Stripe zurückzahlt, wenn der Fall gewonnen wird. Smart Disputes kostet 30 % des strittigen Betrags für jeden gewonnenen Fall."
+   },
+   "src": "https://stripe.com/en-th/pricing"
+  }
+ ],
+ "related": [
+  "invoice",
+  "paybox",
+  "online-shop",
+  "bank-account",
+  "books",
+  "exchange"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "PayPal: how to remove a limitation from your account",
+    "th": "PayPal: วิธีปลดการจำกัดบัญชี",
+    "my": "PayPal - အကောင့်မှ ကန့်သတ်ချက်ကို ဖယ်ရှားနည်း",
+    "zh": "PayPal：如何解除账户限制",
+    "de": "PayPal: So heben Sie eine Einschränkung auf"
+   },
+   "href": "https://www.paypal.com/us/cshelp/article/HELP535"
+  },
+  {
+   "t": {
+    "en": "Stripe: why was my account closed?",
+    "th": "Stripe: ทำไมบัญชีของฉันถูกปิด",
+    "my": "Stripe - ကျွန်ုပ်အကောင့် ဘာကြောင့် ပိတ်ခံရသနည်း",
+    "zh": "Stripe：我的账户为什么被关闭？",
+    "de": "Stripe: Warum wurde mein Konto geschlossen?"
+   },
+   "href": "https://support.stripe.com/questions/why-was-my-stripe-account-closed"
+  }
+ ]
+}

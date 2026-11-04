@@ -1,0 +1,265 @@
+{
+ "id": "compare",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People set quotes side by side before they buy insurance, internet, a car, an appliance, a school place or a hospital package.",
+  "th": "คนวางใบเสนอราคาเทียบกันก่อนซื้อประกัน อินเทอร์เน็ต รถ เครื่องใช้ไฟฟ้า ที่เรียนโรงเรียน หรือแพ็กเกจโรงพยาบาล",
+  "my": "အာမခံ၊ အင်တာနက်၊ ကား၊ လျှပ်စစ်ပစ္စည်း၊ ကျောင်းနေရာ သို့မဟုတ် ဆေးရုံပက်ကေ့ချ် မဝယ်မီ လူတွေက စျေးနှုန်းတင်ပြချက်များကို ဘေးချင်းယှဉ်ကြည့်ကြသည်။",
+  "zh": "买保险、宽带、汽车、电器、学位或医院套餐之前，人们会把报价并排比较。",
+  "de": "Man stellt Angebote nebeneinander, bevor man eine Versicherung, einen Internetanschluss, ein Auto, ein Gerät, einen Schulplatz oder ein Spitalpaket kauft."
+ },
+ "n": {
+  "de": "Preisvergleich"
+ },
+ "l": {
+  "de": "Angebote eingeholt und nebeneinandergestellt; die Gebühr bleibt gleich, ob Sie kaufen oder nicht."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "You name the one thing you want to buy, or the suppliers your business needs.",
+    "th": "คุณบอกสิ่งที่จะซื้อหนึ่งอย่าง หรือผู้ขายที่ธุรกิจของคุณต้องการ",
+    "my": "သင်ဝယ်လိုသည့် ပစ္စည်းတစ်ခု သို့မဟုတ် သင့်လုပ်ငန်းလိုအပ်သော ပေးသွင်းသူများကို သင်က ပြောပြသည်။",
+    "zh": "您说明想买的一样东西，或企业需要的供应商。",
+    "de": "Sie nennen die eine Sache, die Sie kaufen wollen, oder die Lieferanten, die Ihr Geschäft braucht."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "We gather the quotes.",
+    "th": "เรารวบรวมใบเสนอราคา",
+    "my": "စျေးနှုန်းတင်ပြချက်များကို စုဆောင်းပေးသည်။",
+    "zh": "我们收集报价。",
+    "de": "Wir holen die Angebote ein."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The gathering",
+    "th": "ช่วงรวบรวม",
+    "my": "စုဆောင်းချိန်",
+    "zh": "收集期间",
+    "de": "Das Einholen"
+   }
+  },
+  {
+   "db": "abacus",
+   "t": {
+    "en": "We set the quotes side by side. The fee is the same whether or not you buy.",
+    "th": "เราจัดใบเสนอราคาเทียบกันให้ ค่าบริการเท่าเดิมไม่ว่าจะซื้อหรือไม่",
+    "my": "စျေးနှုန်းတင်ပြချက်များကို ဘေးချင်းယှဉ်၍ ပြပေးသည်။ ဝယ်သည်ဖြစ်စေ မဝယ်သည်ဖြစ်စေ ဝန်ဆောင်ခ အတူတူဖြစ်သည်။",
+    "zh": "我们把报价并排摆好。买不买都是同一个价。",
+    "de": "Wir stellen die Angebote nebeneinander. Die Gebühr bleibt gleich, ob Sie kaufen oder nicht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The comparison",
+    "th": "ช่วงเทียบราคา",
+    "my": "နှိုင်းယှဉ်ချိန်",
+    "zh": "比较期间",
+    "de": "Der Vergleich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "For holders of an O-A visa, the Immigration Bureau lists health insurance of at least US$100,000 or ฿3,000,000 for the whole stay.",
+    "th": "สำหรับผู้ถือวีซ่า O-A สำนักงานตรวจคนเข้าเมืองระบุประกันสุขภาพไม่ต่ำกว่า US$100,000 หรือ ฿3,000,000 ตลอดการพำนัก",
+    "my": "O-A ဗီဇာကိုင်ဆောင်သူများအတွက် လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာနက နေထိုင်သည့်ကာလတစ်ခုလုံးအတွက် အနည်းဆုံး US$100,000 သို့မဟုတ် ฿3,000,000 ရှိသော ကျန်းမာရေးအာမခံကို ဖော်ပြထားသည်။",
+    "zh": "对持 O-A 签证者，移民局列出整个停留期内保额至少 US$100,000 或 ฿3,000,000 的健康保险。",
+    "de": "Für Inhaber eines O-A-Visums nennt die Einwanderungsbehörde eine Krankenversicherung von mindestens US$100,000 oder ฿3,000,000 für den ganzen Aufenthalt."
+   },
+   "src": "https://bangkok.immigration.go.th/en/visa-extension/"
+  },
+  {
+   "t": {
+    "en": "EGAT's page on air conditioners names the No. 5 energy-saving label, which comes with stars.",
+    "th": "หน้าเว็บของ กฟผ. เรื่องแอร์ระบุถึงฉลากประหยัดไฟฟ้าเบอร์ 5 ติดดาวของเครื่องปรับอากาศ",
+    "my": "EGAT ၏ အဲယားကွန်းစာမျက်နှာတွင် ကြယ်ပါသော လျှပ်စစ်ချွေတာမှု အမှတ် 5 တံဆိပ်ကို ဖော်ပြထားသည်။",
+    "zh": "泰国发电局（EGAT）的空调页面点出了带星标的节能 5 号标签。",
+    "de": "Die Seite der EGAT zu Klimaanlagen nennt das Energiesparlabel Nr. 5, das mit Sternen versehen ist."
+   },
+   "src": "https://www.egat.co.th/home/save-energy-for-all-20220828/"
+  },
+  {
+   "t": {
+    "en": "The Thaiger's property guide says the 49% foreign quota is counted per building, and that the building's management entity gives written confirmation of it.",
+    "th": "คู่มืออสังหาริมทรัพย์ของ The Thaiger ระบุว่าโควตาต่างชาติ 49% นับเป็นรายอาคาร และนิติบุคคลอาคารชุดออกหนังสือยืนยันเป็นลายลักษณ์อักษร",
+    "my": "The Thaiger ၏ အိမ်ခြံမြေလမ်းညွှန်က နိုင်ငံခြားသား 49% အချိုးအစားကို အဆောက်အအုံတစ်ခုချင်းစီအလိုက် ရေတွက်ပြီး အဆောက်အအုံစီမံခန့်ခွဲရေးအဖွဲ့က စာဖြင့် အတည်ပြုပေးသည်ဟု ဆိုသည်။",
+    "zh": "The Thaiger 的房产指南写道，49% 的外国人配额按楼宇计算，并由楼宇管理方出具书面确认。",
+    "de": "Der Immobilienleitfaden von The Thaiger schreibt, die Ausländerquote von 49% werde pro Gebäude gerechnet und die Verwaltung des Gebäudes bestätige sie schriftlich."
+   },
+   "src": "https://thethaiger.com/legal/property/buying/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Product search with price comparison by a Fastwork seller (factory sourcing; the product price is not included)",
+    "th": "ค้นหาสินค้าและเทียบราคาโดยผู้ขายบน Fastwork (หาโรงงาน ไม่รวมค่าสินค้า)",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက ပစ္စည်းရှာဖွေပြီး စျေးနှိုင်းယှဉ်ပေးခြင်း (စက်ရုံရှာဖွေခြင်း၊ ကုန်ပစ္စည်းစျေး မပါ)",
+    "zh": "Fastwork 卖家提供的找货与比价（找工厂；不含货款）",
+    "de": "Produktsuche mit Preisvergleich durch einen Anbieter auf Fastwork (Fabriksuche; der Warenpreis ist nicht inbegriffen)"
+   },
+   "p": {
+    "en": "฿590 compares 2 factories · ฿1,200 compares 5 · ฿2,500 compares 10",
+    "th": "฿590 เทียบ 2 โรงงาน · ฿1,200 เทียบ 5 โรงงาน · ฿2,500 เทียบ 10 โรงงาน",
+    "my": "฿590 စက်ရုံ 2 ခု နှိုင်းယှဉ် · ฿1,200 စက်ရုံ 5 ခု · ฿2,500 စက်ရုံ 10 ခု",
+    "zh": "฿590 比较 2 家工厂 · ฿1,200 比较 5 家 · ฿2,500 比较 10 家",
+    "de": "฿590 vergleicht 2 Fabriken · ฿1,200 vergleicht 5 · ฿2,500 vergleicht 10"
+   },
+   "src": "https://fastwork.co/user/coachpaecn/item-finder-86106008"
+  },
+  {
+   "t": {
+    "en": "Sourcing with price comparison by a Fastwork seller: items found, three suppliers compared per item",
+    "th": "จัดหาสินค้าพร้อมเทียบราคาโดยผู้ขายบน Fastwork: หาสินค้า เทียบผู้ขาย 3 เจ้าต่อรายการ",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက ပစ္စည်းရှာပြီး စျေးနှိုင်းယှဉ်ပေးခြင်း — ပစ္စည်းတစ်ခုလျှင် ပေးသွင်းသူ 3 ဦး နှိုင်းယှဉ်",
+    "zh": "Fastwork 卖家提供的采购与比价：找货，每个品项比较 3 家供应商",
+    "de": "Beschaffung mit Preisvergleich durch einen Anbieter auf Fastwork: Artikel gesucht, pro Artikel drei Lieferanten verglichen"
+   },
+   "p": {
+    "en": "1–3 items ฿1,500 · 10 items ฿3,000",
+    "th": "1–3 รายการ ฿1,500 · 10 รายการ ฿3,000",
+    "my": "ပစ္စည်း 1–3 ခု ฿1,500 · 10 ခု ฿3,000",
+    "zh": "1–3 个品项 ฿1,500 · 10 个品项 ฿3,000",
+    "de": "1–3 Artikel ฿1,500 · 10 Artikel ฿3,000"
+   },
+   "src": "https://fastwork.co/user/oeepdmih/item-finder-18778099"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to have prices compared?",
+    "th": "จ้างเทียบราคาให้ราคาเท่าไร",
+    "my": "စျေးနှုန်းနှိုင်းယှဉ်ပေးရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "请人比价要花多少钱？",
+    "de": "Was kostet es, Preise vergleichen zu lassen?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists ฿590 to compare 2 factories, ฿1,200 for 5 and ฿2,500 for 10, and says the fee is a service fee, not included in the product price.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ระบุ ฿590 สำหรับเทียบ 2 โรงงาน ฿1,200 สำหรับ 5 โรงงาน และ ฿2,500 สำหรับ 10 โรงงาน และระบุว่าเป็นค่าดำเนินการ ไม่รวมราคาสินค้า",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက စက်ရုံ 2 ခု နှိုင်းယှဉ်ရန် ฿590၊ 5 ခုအတွက် ฿1,200၊ 10 ခုအတွက် ฿2,500 ဟု ဖော်ပြပြီး ၎င်းသည် ဝန်ဆောင်ခဖြစ်ကာ ကုန်ပစ္စည်းစျေးတွင် မပါဟု ဆိုသည်။",
+    "zh": "Fastwork 上一位卖家列价：比较 2 家工厂 ฿590、5 家 ฿1,200、10 家 ฿2,500，并说明这是服务费，不含货款。",
+    "de": "Ein Anbieter auf Fastwork nennt ฿590 für den Vergleich von 2 Fabriken, ฿1,200 für 5 und ฿2,500 für 10 und schreibt, es handle sich um eine Servicegebühr, die im Warenpreis nicht enthalten ist."
+   },
+   "src": "https://fastwork.co/user/coachpaecn/item-finder-86106008"
+  },
+  {
+   "q": {
+    "en": "What health insurance does a retirement extension need?",
+    "th": "ขอพำนักต่อกรณีเกษียณต้องมีประกันสุขภาพแบบไหน",
+    "my": "အငြိမ်းစားနေထိုင်ခွင့် သက်တမ်းတိုးရန် ဘယ်လို ကျန်းမာရေးအာမခံ လိုသလဲ။",
+    "zh": "退休延期居留需要什么样的健康保险？",
+    "de": "Welche Krankenversicherung braucht die Rentner-Verlängerung?"
+   },
+   "a": {
+    "en": "For holders of an O-A visa, the Immigration Bureau's page lists cover of at least US$100,000 or ฿3,000,000 for the whole stay. If insurance is denied, the page says a deposit of at least ฿3,000,000 may be required instead.",
+    "th": "สำหรับผู้ถือวีซ่า O-A หน้าเว็บของสำนักงานตรวจคนเข้าเมืองระบุวงเงินคุ้มครองไม่ต่ำกว่า US$100,000 หรือ ฿3,000,000 ตลอดการพำนัก หากไม่สามารถทำประกันได้ อาจต้องฝากเงินไม่ต่ำกว่า ฿3,000,000 แทน",
+    "my": "O-A ဗီဇာကိုင်ဆောင်သူများအတွက် လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန၏ စာမျက်နှာတွင် နေထိုင်သည့်ကာလတစ်ခုလုံးအတွက် အနည်းဆုံး US$100,000 သို့မဟုတ် ฿3,000,000 အာမခံအကာအကွယ်ကို ဖော်ပြထားသည်။ အာမခံ ငြင်းပယ်ခံရလျှင် ယင်းအစား အနည်းဆုံး ฿3,000,000 ငွေစာရင်း လိုနိုင်သည်ဟု စာမျက်နှာက ဆိုသည်။",
+    "zh": "对持 O-A 签证者，移民局页面列出整个停留期内保额至少 US$100,000 或 ฿3,000,000。页面还写明，若被拒保，可能改为要求存款至少 ฿3,000,000。",
+    "de": "Für Inhaber eines O-A-Visums nennt die Seite der Einwanderungsbehörde eine Deckung von mindestens US$100,000 oder ฿3,000,000 für den ganzen Aufenthalt. Wird die Versicherung verweigert, kann laut Seite stattdessen eine Einlage von mindestens ฿3,000,000 verlangt werden."
+   },
+   "src": "https://bangkok.immigration.go.th/en/visa-extension/"
+  },
+  {
+   "q": {
+    "en": "How do I compare air conditioners for electricity use?",
+    "th": "เทียบแอร์เรื่องค่าไฟดูจากอะไร",
+    "my": "အဲယားကွန်းများကို လျှပ်စစ်သုံးစွဲမှုအရ နှိုင်းယှဉ်ရာတွင် ဘာကိုကြည့်သလဲ။",
+    "zh": "比较空调的耗电量看什么？",
+    "de": "Woran erkennt man beim Vergleich von Klimageräten den Stromverbrauch?"
+   },
+   "a": {
+    "en": "EGAT's page names the No. 5 energy-saving label with stars on air conditioners.",
+    "th": "หน้าเว็บของ กฟผ. ระบุฉลากประหยัดไฟฟ้าเบอร์ 5 ติดดาวที่ตัวเครื่องปรับอากาศ",
+    "my": "EGAT ၏ စာမျက်နှာတွင် အဲယားကွန်းပေါ်ရှိ ကြယ်ပါသော လျှပ်စစ်ချွေတာမှု အမှတ် 5 တံဆိပ်ကို ဖော်ပြထားသည်။",
+    "zh": "泰国发电局（EGAT）的页面点出空调上带星标的节能 5 号标签。",
+    "de": "Die Seite der EGAT nennt das Energiesparlabel Nr. 5 mit Sternen auf Klimageräten."
+   },
+   "src": "https://www.egat.co.th/home/save-energy-for-all-20220828/"
+  },
+  {
+   "q": {
+    "en": "How do I find out a condo's foreign quota?",
+    "th": "ดูโควตาต่างชาติของคอนโดได้จากที่ไหน",
+    "my": "ကွန်ဒိုတစ်ခု၏ နိုင်ငံခြားသားအချိုးအစားကို ဘယ်လိုသိနိုင်သလဲ။",
+    "zh": "怎样了解一栋公寓楼的外国人配额？",
+    "de": "Wie erfährt man die Ausländerquote eines Kondominiums?"
+   },
+   "a": {
+    "en": "The Thaiger's property guide says the 49% foreign quota is counted per building, and that the building's management entity gives written confirmation of it.",
+    "th": "คู่มืออสังหาริมทรัพย์ของ The Thaiger ระบุว่าโควตาต่างชาติ 49% นับเป็นรายอาคาร และนิติบุคคลอาคารชุดออกหนังสือยืนยันเป็นลายลักษณ์อักษร",
+    "my": "The Thaiger ၏ အိမ်ခြံမြေလမ်းညွှန်က နိုင်ငံခြားသား 49% အချိုးအစားကို အဆောက်အအုံတစ်ခုချင်းစီအလိုက် ရေတွက်ပြီး အဆောက်အအုံစီမံခန့်ခွဲရေးအဖွဲ့က စာဖြင့် အတည်ပြုပေးသည်ဟု ဆိုသည်။",
+    "zh": "The Thaiger 的房产指南写道，49% 的外国人配额按楼宇计算，并由楼宇管理方出具书面确认。",
+    "de": "Der Immobilienleitfaden von The Thaiger schreibt, die Ausländerquote von 49% werde pro Gebäude gerechnet und die Verwaltung des Gebäudes bestätige sie schriftlich."
+   },
+   "src": "https://thethaiger.com/legal/property/buying/"
+  }
+ ],
+ "related": [
+  "errand",
+  "trades",
+  "vehicle",
+  "price-watch",
+  "research",
+  "stay-check"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Immigration Bureau: extension of stay, with the health insurance rule for O-A holders",
+    "th": "สำนักงานตรวจคนเข้าเมือง: การขอพำนักต่อ พร้อมเกณฑ์ประกันสุขภาพของผู้ถือวีซ่า O-A",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန: နေထိုင်ခွင့်သက်တမ်းတိုးခြင်း၊ O-A ကိုင်ဆောင်သူများအတွက် ကျန်းမာရေးအာမခံစည်းမျဉ်းနှင့်အတူ",
+    "zh": "移民局：延期居留，含 O-A 持有人的健康保险规定",
+    "de": "Einwanderungsbehörde: Aufenthaltsverlängerung, mit der Regel zur Krankenversicherung für O-A-Inhaber"
+   },
+   "href": "https://bangkok.immigration.go.th/en/visa-extension/"
+  },
+  {
+   "t": {
+    "en": "The Thaiger: buying property in Thailand as a foreigner",
+    "th": "The Thaiger: การซื้ออสังหาริมทรัพย์ในไทยของชาวต่างชาติ",
+    "my": "The Thaiger: နိုင်ငံခြားသားအဖြစ် ထိုင်းတွင် အိမ်ခြံမြေဝယ်ခြင်း",
+    "zh": "The Thaiger：外国人在泰国买房产",
+    "de": "The Thaiger: Immobilienkauf in Thailand als Ausländer"
+   },
+   "href": "https://thethaiger.com/legal/property/buying/"
+  }
+ ],
+ "glyphs": [
+  "abacus",
+  "coin",
+  "search"
+ ]
+}
