@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/n8n-3-npm-ends-timeouts-no-way-back",
+  "kicker": "Hongdam Studio · Automation · 5 November 2026",
+  "title": "n8n 3.0: Docker only, 60 s Code nodes",
+  "th": "n8n 3.0: เลิกติดตั้งผ่าน npm, Code node หมดเวลาที่ 1 นาที และย้อนกลับไป 2.x ไม่ได้",
+  "sub": "Beta 27 October, stable early December, no way back",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "60b2f2766f"
+ },
+ {
   "out": "og/studio/n/wordpress-upgrade-window-partial-vs-full",
   "kicker": "Hongdam Studio · Security · 4 November 2026",
   "title": "WordPress update: partial or full?",

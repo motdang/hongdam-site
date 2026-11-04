@@ -434,6 +434,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-11-05 · n8n 3.0: npm installs end, Code nodes time out at a minute, no way back to 2.x — https://hongdam.net/studio/notes/n8n-3-npm-ends-timeouts-no-way-back/
 - 2026-11-04 · WordPress's upgrade-window flaw: partial updates carry no installer, full ones do — https://hongdam.net/studio/notes/wordpress-upgrade-window-partial-vs-full/
 - 2026-11-03 · Vercel now blocks bad npm packages; the npm in every Node LTS still runs install scripts — https://hongdam.net/studio/notes/npm-install-scripts-before-vercel/
 - 2026-11-02 · GLM-5.3 on Workers AI sent 155 replies with other customers' text, all with HTTP 200 — https://hongdam.net/studio/notes/glm-5-3-leak-canary-test/
@@ -445,7 +446,6 @@ JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the 
 - 2026-10-27 · Lovable's agent tools have no rate limit: a Postgres cap that also stops double writes — https://hongdam.net/studio/notes/lovable-agent-tools-no-rate-limit/
 - 2026-10-26 · DeepSeek Flash 1017 on Workers AI: 40% faster than 0731, 23% more tokens, same bill — https://hongdam.net/studio/notes/deepseek-flash-1017-faster-not-shorter/
 - 2026-10-24 · 16,326 Supabase databases let anyone read their tables: check yours in two minutes — https://hongdam.net/studio/notes/supabase-public-key-open-tables/
-- 2026-10-24 · PHP2Shell: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two flaws that let attackers run code — https://hongdam.net/studio/notes/php2shell-fixed-releases-and-restart/
 
 ## The work
 
