@@ -15,6 +15,85 @@
  ],
  "items": [
   {
+   "id": "https://hongdam.net/studio/notes/wordpress-upgrade-window-partial-vs-full/",
+   "url": "https://hongdam.net/studio/notes/wordpress-upgrade-window-partial-vs-full/",
+   "title": "WordPress's upgrade-window flaw: partial updates carry no installer, full ones do",
+   "summary": "CVE-2026-119977 lets a stranger run code while WordPress unpacks a full update; CISA listed it on 3 November. Measured today: the automatic point update is a 50-file partial with no installer; a branch jump unpacks 3,338 files.",
+   "content_html": "<p>On 3 November 2026 CISA (the US government's cybersecurity agency) added CVE-2026-119977, a flaw in the WordPress core updater, to its Known Exploited Vulnerabilities catalog, the list of flaws it has evidence attackers use <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. US federal agencies have until 6 November to act <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. WordPress fixed the flaw on 28 October in 7.1.4 and in a release for every branch back to 4.7 <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. The flaw is a race: while WordPress unpacks a full update package, a complete copy of WordPress, installer included, sits for a few seconds in a folder the web server can serve, and a stranger who requests that installer in time can point the copy at a database they own <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup><sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<p>A CVE number is the public ID of one flaw. A race condition is a flaw that only works when an attacker's request lands between two steps of a program. A branch is a release line such as 7.1 or 6.8; a point release is a fix inside it.</p>\n<p>The window opens only when the update is a full package. Today we asked WordPress.org's update API which package it serves for each starting version and opened each zip <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>. The automatic point update inside a branch is a partial package of about 50 files with no installer in it. A jump between branches from the dashboard's Update now unpacks a complete copy, 3,338 files or more.</p>\n<h2 id=\"four-readers-rate-one-flaw-from-low-to-8-1\">Four readers rate one flaw from Low to 8.1</h2>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Who</th><th scope=\"col\">Rating</th><th scope=\"col\">Source</th></tr></thead><tbody><tr><th scope=\"row\">WordPress, in its GitHub advisory</th><td data-h=\"Rating\">Low</td><td data-h=\"Source\"><sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup></td></tr><tr><th scope=\"row\">Wordfence, the CVE numbering authority</th><td data-h=\"Rating\">8.1, High; over the network, high complexity, needs neither an account nor a click</td><td data-h=\"Source\"><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup></td></tr><tr><th scope=\"row\">NVD, the US vulnerability database</th><td data-h=\"Rating\">\"Undergoing Analysis\", no score on 4 November</td><td data-h=\"Source\"><sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup></td></tr><tr><th scope=\"row\">Patchstack</th><td data-h=\"Rating\">high complexity, would not \"call it practical to exploit\"</td><td data-h=\"Source\"><sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup></td></tr><tr><th scope=\"row\">CISA</th><td data-h=\"Rating\">exploitation active, not automatable</td><td data-h=\"Source\"><sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup></td></tr></tbody></table></div>\n<p>Wordfence put a firewall rule out on 28 October at 20:30 UTC, about three hours after the release, and saw the first matching request nine minutes later; in the first 21 hours it counted more than 18,500 requests aimed at staged <code>setup-config.php</code> paths, two of them polling small groups of sites for about 14.5 hours <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. Wordfence Free users get that rule on 27 November 2026 <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. The GitHub advisory went up on 29 October and the CVE record on 31 October <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</p>\n<h2 id=\"the-staged-copy-carries-the-installer-the-fix-hi\">The staged copy carries the installer; the fix hides the folder and blocks one promotion</h2>\n<p>In 7.1.3 the updater empties <code>wp-content/upgrade/</code>, <code>index.php</code> included, names a working folder after the package and unzips into it <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. A package downloaded from WordPress.org is saved under its own name plus six random characters, so the folder is <code>wordpress-7.1.4-</code> and six characters <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>. On a server that lists folders, the name is in the listing: the cleanup deletes any <code>index.php</code> in that folder, and the package ships none <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. The staged copy's <code>wp-admin/setup-config.php</code> is the ordinary installer: it takes a database host, name, user and password from whoever posts them and writes a <code>wp-config.php</code> beside itself <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup><sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. The CVE record calls the path predictable; Wordfence saw attackers try many folder and version name variations <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup><sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<p>The 7.1.4 code makes three changes <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup><sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>. The working folder gets 16 random characters on its name. <code>wp-content/upgrade/</code> gets an <code>index.php</code> that the cleanup now keeps. And <code>update-core.php</code> skips any <code>wp-config.php</code> found in the working folder when it copies files into the site. The updater copies <code>update-core.php</code> from the new package into place before it runs the update <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>, so the third guard is already in force on the update that brings a site to 7.1.4; the first two are not, because the unpacking runs under the old code.</p>\n<h2 id=\"the-automatic-point-update-carries-no-installer\">The automatic point update carries no installer</h2>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">From</th><th scope=\"col\">To</th><th scope=\"col\">Package</th><th scope=\"col\">Files</th><th scope=\"col\">Installer inside</th></tr></thead><tbody><tr><th scope=\"row\">7.1.3</th><td data-h=\"To\">7.1.4, automatic</td><td data-h=\"Package\">partial-3</td><td data-h=\"Files\">50</td><td data-h=\"Installer inside\">no</td></tr><tr><th scope=\"row\">7.1.2</th><td data-h=\"To\">7.1.4, automatic</td><td data-h=\"Package\">partial-2</td><td data-h=\"Files\">63</td><td data-h=\"Installer inside\">no</td></tr><tr><th scope=\"row\">7.0.7</th><td data-h=\"To\">7.0.8, automatic</td><td data-h=\"Package\">partial-7</td><td data-h=\"Files\">49</td><td data-h=\"Installer inside\">no</td></tr><tr><th scope=\"row\">7.0.7</th><td data-h=\"To\">7.1.4, dashboard Update now</td><td data-h=\"Package\">no-content</td><td data-h=\"Files\">3,338</td><td data-h=\"Installer inside\">yes</td></tr><tr><th scope=\"row\">any, reinstall or an edited core file</th><td data-h=\"To\">full or new-bundled</td><td data-h=\"Package\">3,782 or 3,733</td><td data-h=\"Files\">yes</td></tr></tbody></table></div>\n<p>Measured 4 November 2026: the API's offers for each version and the file list of each zip <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>. The chooser in the code takes the partial package when the API offers one for the exact installed version and the core files pass their checksum check; otherwise it takes new-bundled when the update crosses a bundled-theme version, otherwise no-content, otherwise full <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>. A site with an edited core file, common on a site that was hacked once, loses the partial route and unpacks the installer.</p>\n<p>How long the window stays open depends on the server. Unpacking the full 7.1.4 package (37.2 MB, 3,782 files) with Python's zipfile took 0.82 seconds, median of 5 runs, and copying the files 0.98 seconds, measured 4 November 2026 on an Apple laptop. A shared host is slower by an amount we do not know. Wordfence's lab saw seconds <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>\n<h2 id=\"a-third-of-sites-are-on-a-branch-older-than-7-1\">A third of sites are on a branch older than 7.1</h2>\n<figure class=\"chart\"><table><caption>Share of WordPress sites by branch</caption><tbody><tr><th scope=\"row\">7.1</th><td><span class=\"bar\" style=\"--w:100.0%\"></span><span class=\"v\">65.2%</span></td></tr><tr><th scope=\"row\">7.0</th><td><span class=\"bar\" style=\"--w:10.4%\"></span><span class=\"v\">6.8%</span></td></tr><tr><th scope=\"row\">6.9</th><td><span class=\"bar\" style=\"--w:9.8%\"></span><span class=\"v\">6.4%</span></td></tr><tr><th scope=\"row\">6.8</th><td><span class=\"bar\" style=\"--w:7.7%\"></span><span class=\"v\">5.0%</span></td></tr><tr><th scope=\"row\">6.7</th><td><span class=\"bar\" style=\"--w:3.8%\"></span><span class=\"v\">2.5%</span></td></tr><tr><th scope=\"row\">6.6 and older</th><td><span class=\"bar\" style=\"--w:21.6%\"></span><span class=\"v\">14.1%</span></td></tr></tbody></table><figcaption>WordPress.org statistics API, read 4 November 2026. Branches older than 7.1 add up to 34.8%; 4.6 and older, 0.96%, get no fix.</figcaption></figure>\n<p>Every branch from 4.7 up has its own fixed point release <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>, and for each version we asked about (7.1.3, 7.1.2, 7.0.7, 7.0.6, 6.8.11 and 6.8.10) the automatic update inside the branch is a partial package <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>. Sites on 4.6 and older, 0.96% in the same count, have no fix, and a jump to a fixed branch is a full package <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup><sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup><sup class=\"ref\"><a href=\"#s15\" aria-label=\"source 15\">15</a></sup>.</p>\n<h2 id=\"block-the-folder-then-update-then-look\">Block the folder, then update, then look</h2>\n<p>The updater reads and writes the folder through the file system, not over the web <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>, so a web rule on it does not touch the update. nginx, inside the server block and before the PHP location:</p>\n<div class=\"code\"><pre data-lang=\"nginx\"><code>location ^~ /wp-content/upgrade/ { deny all; }</code></pre></div>\n<p>Apache, in the site root's <code>.htaccess</code>, not inside the folder, which the updater empties <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup><sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>:</p>\n<div class=\"code\"><pre data-lang=\"apache\"><code>RedirectMatch 403 ^/wp-content/upgrade/</code></pre></div>\n<p>Check it:</p>\n<div class=\"code\"><pre data-lang=\"bash\"><code>curl -sI https://example.com/wp-content/upgrade/ | head -1</code></pre></div>\n<p>A 403 is the answer wanted. On a host where the server is out of reach, a rule at the firewall or CDN in front of the site that blocks the path does the same job, and the host's support can say whether the folder is already blocked. Then Dashboard › Updates, or <code>wp core version</code>, shows 7.1.4 or the branch's own fixed release <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<p>If the site ran a full update after 28 October without the block, the marks of an attempt are in the web log and on disk <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>:</p>\n<div class=\"code\"><pre data-lang=\"bash\"><code>grep &#x27;wp-content/upgrade/.*setup-config.php&#x27; access.log\nwp core verify-checksums\nwp user list --role=administrator --fields=ID,user_login,user_registered\nfind . -name &#x27;*.php&#x27; -newermt 2026-10-28 -not -path &#x27;./wp-content/cache/*&#x27;</code></pre></div>\n<p>A request to <code>setup-config.php</code> under the upgrade folder that got a 200 is the mark; the second step of the installer is a POST with database details. Wordfence lists the rest to look for: administrator accounts you did not make, plugins you did not install, PHP files you did not place <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>.</p>",
+   "date_published": "2026-11-04T06:00:00+07:00",
+   "tags": [
+    "security"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/studio/n/wordpress-upgrade-window-partial-vs-full.jpg",
+   "_hongdam": {
+    "title_th": "ช่องโหว่ช่วงอัปเดตของ WordPress: แพ็กเกจอัปเดตย่อยไม่มีตัวติดตั้ง แต่แพ็กเกจเต็มมี",
+    "summary_th": "CVE-2026-119977 เปิดให้คนนอกรันโค้ดได้ระหว่างที่ WordPress แตกไฟล์อัปเดตแบบเต็ม CISA ขึ้นบัญชีเมื่อ 3 พฤศจิกายน เราวัดวันนี้: อัปเดตอัตโนมัติในสายเดียวกันเป็นแพ็กเกจย่อย 50 ไฟล์ ไม่มีตัวติดตั้ง ส่วนการข้ามสายแตกไฟล์ 3,338 ไฟล์",
+    "sources": [
+     {
+      "t": "CISA Adds One Known Exploited Vulnerability to Catalog (3 November 2026)",
+      "u": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog"
+     },
+     {
+      "t": "CISA Known Exploited Vulnerabilities catalog, JSON feed, version 2026.11.03",
+      "u": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+     },
+     {
+      "t": "WordPress 7.1.4 Security Release (WordPress News)",
+      "u": "https://wordpress.org/news/2026/10/wordpress-7-1-4/"
+     },
+     {
+      "t": "GHSA-4w3m-c66w-69mg: A race condition during core updates that could lead to remote code execution",
+      "u": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-4w3m-c66w-69mg"
+     },
+     {
+      "t": "CVE-2026-119977 (CVE record, assigned by Wordfence)",
+      "u": "https://www.cve.org/CVERecord?id=CVE-2026-119977"
+     },
+     {
+      "t": "NVD: CVE-2026-119977",
+      "u": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
+     },
+     {
+      "t": "WordPress 7.1.4 Patches Unauthenticated Upgrade-Window RCE; Exploitation Attempts Detected After Release (Wordfence)",
+      "u": "https://www.wordfence.com/blog/2026/10/wordpress-7-1-4-security-release-rce/"
+     },
+     {
+      "t": "WordPress 7.1.4 Security Release (Patchstack)",
+      "u": "https://patchstack.com/articles/wordpress-7-1-4-security-release/"
+     },
+     {
+      "t": "wp-admin/includes/class-wp-upgrader.php, WordPress 7.1.3",
+      "u": "https://github.com/WordPress/WordPress/blob/7.1.3/wp-admin/includes/class-wp-upgrader.php"
+     },
+     {
+      "t": "wp-admin/includes/file.php, WordPress 7.1.3 (wp_tempnam)",
+      "u": "https://github.com/WordPress/WordPress/blob/7.1.3/wp-admin/includes/file.php"
+     },
+     {
+      "t": "wp-admin/includes/class-wp-upgrader.php, WordPress 7.1.4",
+      "u": "https://github.com/WordPress/WordPress/blob/7.1.4/wp-admin/includes/class-wp-upgrader.php"
+     },
+     {
+      "t": "wp-admin/includes/update-core.php, WordPress 7.1.4",
+      "u": "https://github.com/WordPress/WordPress/blob/7.1.4/wp-admin/includes/update-core.php"
+     },
+     {
+      "t": "wp-admin/includes/class-core-upgrader.php, WordPress 7.1.3",
+      "u": "https://github.com/WordPress/WordPress/blob/7.1.3/wp-admin/includes/class-core-upgrader.php"
+     },
+     {
+      "t": "WordPress.org core version-check API, version 1.7",
+      "u": "https://api.wordpress.org/core/version-check/1.7/?version=7.0.7"
+     },
+     {
+      "t": "WordPress.org statistics API: share of sites by WordPress version",
+      "u": "https://api.wordpress.org/stats/wordpress/1.0/"
+     }
+    ]
+   }
+  },
+  {
    "id": "https://hongdam.net/studio/notes/npm-install-scripts-before-vercel/",
    "url": "https://hongdam.net/studio/notes/npm-install-scripts-before-vercel/",
    "title": "Vercel now blocks bad npm packages; the npm in every Node LTS still runs install scripts",
