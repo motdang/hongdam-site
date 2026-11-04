@@ -46,8 +46,8 @@
 /* ---------------------------------------------------------------- the slab of numbers */
 .m-slab ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 2rem 0 0; padding: 0; list-style: none; border-top: 3px solid var(--fg) }
 @media (min-width: 44rem) { .m-slab ul { grid-template-columns: repeat(4, minmax(0, 1fr)) } }
-.m-slab li { padding: 1rem .9rem 1.1rem 0; border-bottom: 1px solid var(--rule) }
-.m-slab b { display: block; font: 700 clamp(1.9rem, 8.4vw, 2.7rem)/1 var(--font-num); letter-spacing: -.03em; font-variant-numeric: tabular-nums;
+.m-slab li { min-width: 0; padding: 1rem .9rem 1.1rem 0; border-bottom: 1px solid var(--rule) }
+.m-slab b { display: block; overflow-wrap: anywhere; font: 700 clamp(1.9rem, 8.4vw, 2.7rem)/1 var(--font-num); letter-spacing: -.03em; font-variant-numeric: tabular-nums;
   text-decoration: underline var(--line) .22em; text-underline-offset: .18em; text-decoration-skip-ink: none }
 .m-slab li > span { display: block; margin-top: .65rem; font-size: .95rem; line-height: 1.4; color: var(--mut) }
 
@@ -125,6 +125,7 @@
 .m-costs th, .m-costs td { padding: .7rem 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; font-weight: 400 }
 .m-costs td { width: 45%; padding-left: 1rem; text-align: right; overflow-wrap: anywhere; font-family: var(--font-num); font-variant-numeric: tabular-nums }
 .m-costs td .src { display: block; font-family: var(--sys) }
+.p-m .src { white-space: normal } .p-m .src, .m-costs th { overflow-wrap: anywhere }   /* a long source host (digitalagencybangkok.com) wraps instead of widening the page */
 .m-costs tr.ours th, .m-costs tr.ours td { font-weight: 700; border-bottom: 3px solid var(--line) }
 .m-faq details { border-top: 1px solid var(--rule) }
 .m-faq details:last-child { border-bottom: 1px solid var(--rule) }

@@ -333,8 +333,15 @@ def picture(p, k, lang, inner=""):
 def slab(lang, p):
     if not p.get("slab"):
         return ""
-    return '<section class="m-slab" aria-label="%s"><ul>%s</ul></section>\n' % (E(mu(lang, "numbers")), "".join(
-        '<li><b>%s</b><span>%s%s</span></li>' % (text(s["n"] if isinstance(s["n"], str) else t(s["n"], lang)), E(t(s["t"], lang)), src_link(s["src"], lang)) for s in p["slab"]))
+    def fit(n):
+        # a long number (฿1,800,000, ฿6,900–9,900) shrinks to stay inside its column on a phone, as the title does
+        k = len(n) + (1.5 if re.search(r"[฿£€$]", n) else 0)   # a currency mark draws a flag before the number
+        return ' style="font-size:calc(clamp(1.9rem, 8.4vw, 2.7rem) * %.2f)"' % (7.5 / k) if k > 7.5 else ""
+    rows = []
+    for s in p["slab"]:
+        n = s["n"] if isinstance(s["n"], str) else t(s["n"], lang)
+        rows.append('<li><b%s>%s</b><span>%s%s</span></li>' % (fit(n), text(n), E(t(s["t"], lang)), src_link(s["src"], lang)))
+    return '<section class="m-slab" aria-label="%s"><ul>%s</ul></section>\n' % (E(mu(lang, "numbers")), "".join(rows))
 
 
 def loc(o, lang):
