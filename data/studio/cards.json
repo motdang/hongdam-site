@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/wordpress-upgrade-window-partial-vs-full",
+  "kicker": "Hongdam Studio · Security · 4 November 2026",
+  "title": "WordPress update: partial or full?",
+  "th": "ช่องโหว่ช่วงอัปเดตของ WordPress: แพ็กเกจอัปเดตย่อยไม่มีตัวติดตั้ง แต่แพ็กเกจเต็มมี",
+  "sub": "CVE-2026-119977, on CISA's exploited list since 3 November 2026",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "04814c0003"
+ },
+ {
   "out": "og/studio/n/npm-install-scripts-before-vercel",
   "kicker": "Hongdam Studio · Last mile · 3 November 2026",
   "title": "Your laptop installs before Vercel checks",
