@@ -157,16 +157,16 @@ def write_page(g):
     import sys
     sys.path.insert(0, str(ROOT / "tools"))
     import pages as F
-    desc = f"{len(roots)} groups and {n_cat} kinds of work Mot Dang, Hongdam and Chiang Mai Visa Desk answer, as a graph that grows when posters name new work."
+    desc = f"{len(roots)} groups and {n_cat} kinds of work that Mot Dang, Hongdam and Chiang Mai Visa Desk can do, as a graph that grows when people who post tasks name new kinds of work."
     main = f"""<main>
 {F.lead("tasks-graph", "en", h1="Task graph", sub="กราฟงาน").rstrip()}
-<p class="lede">{len(roots)} groups, {n_cat} kinds of work. A dot opens its tasks.<br><span lang="th">{len(roots)} กลุ่ม {n_cat} ประเภทงาน แตะจุดเพื่อดูงาน</span></p>
+<p class="lede">{len(roots)} groups, {n_cat} kinds of work. Tap a dot to see the tasks of that kind.<br><span lang="th">{len(roots)} กลุ่ม {n_cat} ประเภทงาน แตะจุดเพื่อดูงาน</span></p>
 <div class="acts"><a class="btn" href="/tasks#post">Post a task · ลงงาน</a><a class="btn alt" href="/tasks#ours">Take a task · รับงาน</a></div>
 {drawing}
-<div class="key"><span><b class="by-robot"></b>robot · บอท</span><span><b class="by-human"></b>human · คน</span><span><b class="by-both"></b>both · ทั้งสอง</span><span>- - related · เกี่ยวข้อง</span><span>◌ named by a poster · ผู้ลงงานตั้งชื่อ</span></div>
+<div class="key"><span><b class="by-robot"></b>done by a bot · บอท</span><span><b class="by-human"></b>done by a person · คน</span><span><b class="by-both"></b>done by either · ทั้งสอง</span><span>dashed line: related kinds · เกี่ยวข้อง</span><span>◌ a kind named by someone who posted a task · ผู้ลงงานตั้งชื่อ</span></div>
 <p id="newlist"></p>
 <div class="grps">{''.join(groups)}</div>
-<p class="note"><a href="/tasks/graph.json">graph.json</a> · nodes and typed edges (part_of, answered_by, done_by, related)</p>
+<p class="note"><a href="/tasks/graph.json">graph.json</a> · this graph as data, for programmers (nodes and typed edges: part_of, answered_by, done_by, related)</p>
 </main>
 <script>
 (function () {{
@@ -182,7 +182,7 @@ def write_page(g):
       var tx = document.createElementNS(NS, 'text'); tx.setAttribute('x', x + 12); tx.setAttribute('y', y + 5); tx.textContent = n.name;
       a.appendChild(tx); g.appendChild(a); names.push(n.name);
     }});
-    if (names.length) document.getElementById('newlist').textContent = 'Named by posters · ผู้ลงงานตั้งชื่อ: ' + names.join(' · ');
+    if (names.length) document.getElementById('newlist').textContent = 'Kinds named by people who posted tasks · ผู้ลงงานตั้งชื่อ: ' + names.join(' · ');
   }}).catch(function () {{}});
 }})();
 </script>

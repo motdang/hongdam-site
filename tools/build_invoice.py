@@ -39,20 +39,20 @@ def page(inv):
     bill = "<br>".join(e(l) for l in inv["bill_to"])
     notes = "".join(f"<p>{e(n)}</p>" for n in inv.get("notes", []))
     ways = [f'<div class="way"><p><a class="btn big" href="{PAYPAL}" target="_blank" rel="noopener">Pay with PayPal</a></p>'
-            f'<p>Enter {money(total)} and reference <code>{e(inv["number"])}</code>.</p></div>']
+            f'<p>Enter {money(total)} and write <code>{e(inv["number"])}</code> as the reference.</p></div>']
     ln = inv.get("lightning")
     if ln:
         ways.append(
             f'<div class="way"><h3>Lightning</h3><div class="qr">{qr_svg("lightning:" + ln)}</div>'
-            f'<p>{money(total)} in sats at the day\'s rate, to</p>'
+            f'<p>{money(total)} in sats (small bitcoin units) at the exchange rate on the day you pay, to</p>'
             f'<p><code>{e(ln)}</code> <button data-copy="{e(ln)}">Copy</button></p>'
             f'<p><a class="btn alt" href="lightning:{e(ln)}">Open in a Lightning wallet</a></p></div>')
     ways.append(
         f'<div class="way"><h3>Bitcoin</h3><div class="qr">{qr_svg("bitcoin:" + BTC)}</div>'
-        f'<p>{money(total)} in BTC at the day\'s rate, to</p>'
+        f'<p>{money(total)} in BTC (bitcoin) at the exchange rate on the day you pay, to</p>'
         f'<p><code>{BTC}</code> <button data-copy="{BTC}">Copy</button></p></div>')
     ways.append(
-        f'<div class="way"><h3>Wise</h3><p>Card or bank, most currencies: '
+        f'<div class="way"><h3>Wise</h3><p>Pay by card or bank transfer, in most currencies: '
         f'<a href="{WISE}" target="_blank" rel="noopener">{WISE.removeprefix("https://")}</a></p></div>')
     import sys
     sys.path.insert(0, str(ROOT / "tools"))
@@ -62,10 +62,10 @@ def page(inv):
 {F.lead("invoice", "en", h1="Invoice " + inv["number"], sub="", with_back=False).rstrip()}
 <div class="inv-head">
   <div><p class="label">Bill to</p><p>{bill}</p></div>
-  <dl><dt>Issued</dt><dd>{e(inv["issued"])}</dd><dt>Due</dt><dd>{e(inv["due"])}</dd>
+  <dl><dt>Invoice date</dt><dd>{e(inv["issued"])}</dd><dt>Pay by</dt><dd>{e(inv["due"])}</dd>
   <dt>From</dt><dd>Hongdam · beer@motdang.net</dd></dl>
 </div>
-<table class="lines">{rows}<tr class="total"><td>Total due</td><td class="n">{money(total)}</td></tr></table>
+<table class="lines">{rows}<tr class="total"><td>Total to pay</td><td class="n">{money(total)}</td></tr></table>
 <div class="notes">{notes}</div>
 <section>
 <p class="label">Pay</p>

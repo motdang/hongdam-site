@@ -7,6 +7,7 @@
  */
 import { handle } from './_verify.js'
 import { prices } from '../../_services.js'
+import { toWheel, payDraft } from '../../_wheel.js'
 
 // Translation prices walk monthly with the services list (functions/_services.js; her word
 // 2026-10-24, "Put them on the walk"): new and checking are a price for up to 5 pages and a
@@ -17,5 +18,5 @@ export async function translationPrices(db, now = Date.now()) {
 }
 
 export async function onRequest({ request, env, waitUntil }) {
-  return handle(request, env, { prices: await translationPrices(env.TASKS), refPrefix: 'HD', site: 'hongdam.net' }, { waitUntil })
+  return handle(request, env, { prices: await translationPrices(env.TASKS), refPrefix: 'HD', site: 'hongdam.net', after: (x) => toWheel(env, payDraft(x)) }, { waitUntil })
 }

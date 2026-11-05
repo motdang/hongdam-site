@@ -1,8 +1,8 @@
 {
   "id": "extraction",
-  "name": "Prompt extraction",
+  "name": "Instruction leak",
   "name_th": "ดึงคำสั่งระบบ",
-  "summary": "Asks the bot to repeat, summarise, translate or encode its own instructions.",
+  "summary": "Tries to make the bot reveal its hidden instructions: it asks the bot to repeat, summarise, translate or encode them.",
   "author": "Hongdam",
   "author_url": "https://hongdam.net/",
   "licence": "CC BY 4.0",

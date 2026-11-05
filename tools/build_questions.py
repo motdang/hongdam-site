@@ -1,0 +1,167 @@
+#!/usr/bin/env python3
+"""Questions about living in Chiang Mai, each linked to the Hongdam card closest to it.
+
+    python3 tools/build_questions.py
+
+data/questions.json holds the questions in the five languages and the card each one links to. This writes
+docs/<lang>/questions/ (every question in a shuffled order, with a find box), docs/assets/questions-<lang>.json (the
+crawl's list), the QUESTIONS blocks of docs/sitemap.xml and docs/llms.txt, and then the shop's pages again
+(tools/build_shop.py), whose front pages draw the crawl from band() here. The crawl looks and moves like Mot Dang's gold prices: docs/assets/questions.css
+and questions.js; both shuffle again in the reader's browser. A question pointing at a card the shop does not have
+stops the build.
+"""
+import hashlib
+import html
+import json
+import os
+import random
+import sys
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOCS = os.path.join(HERE, "docs")
+DATA = json.load(open(os.path.join(HERE, "data", "questions.json"), encoding="utf-8"))
+E = html.escape
+PATH = "questions/"
+SHOWN = 16     # questions in the front page's own HTML; questions.js swaps in the full list
+_A = [os.path.join(DOCS, "assets", "questions." + x) for x in ("css", "js")]
+ASSET_V = hashlib.sha1(b"".join(open(p, "rb").read() for p in _A if os.path.exists(p))).hexdigest()[:8]
+
+
+def cards(B):
+    return {c["id"]: c for c in B.SHOP["cards"]}
+
+
+def check(B):
+    have, bad = cards(B), []
+    for i, q in enumerate(DATA["qs"]):
+        if q["c"] not in have:
+            bad.append("%d %s → no card %s" % (i, q["q"]["en"], q["c"]))
+        for lang in B.LANGS:
+            if not q["q"].get(lang):
+                bad.append("%d %s → no %s" % (i, q["q"]["en"], lang))
+    if bad:
+        raise SystemExit("data/questions.json:\n  " + "\n  ".join(bad))
+
+
+def href(B, lang, c):
+    return B.url(lang, "%s/#%s" % (c["cat"], c["id"]))
+
+
+def item(B, lang, q, c):
+    return ('<li style="--line:var(--c-%s)"><a href="%s"><span class="qt">%s</span><span class="sv">%s</span></a></li>'
+            % (c["cat"], href(B, lang, c), E(q["q"][lang]), E(B.tr(c["n"], lang))))
+
+
+def mixed(qs, n=None):
+    """The questions in a shuffled order (n of them, when n is given). A fixed shuffle, so a build changes the pages only
+    when the questions change; questions.js shuffles again, at random, on every visit."""
+    qs = list(qs)
+    random.Random(len(qs)).shuffle(qs)
+    return qs[:n] if n else qs
+
+
+def band(lang, B):
+    """The crawl on a front page, like Mot Dang's gold prices: one thin line of questions moving slowly sideways."""
+    ui, have = DATA["ui"][lang], cards(B)
+    qs = [q for q in DATA["qs"] if q["c"] in have]
+    if not qs or lang not in DATA["ui"]:
+        return ""
+    data = "/assets/questions-%s.json?v=%s" % (lang, list_v(B, lang))
+    return ('<link rel="stylesheet" href="/assets/questions.css?v=%s">\n'
+            '<div class="qs-crawl" data-qs="%s" aria-label="%s"><span class="qs-w"><span class="qs-r">%s</span></span></div>\n'
+            '<script defer src="/assets/questions.js?v=%s"></script>\n'
+            % (ASSET_V, data, E(ui["h"]), "".join(crawl_item(B, lang, q, have[q["c"]]) for q in mixed(qs, SHOWN)), ASSET_V))
+
+
+def crawl_item(B, lang, q, c):
+    return ('<a class="qs-i" href="%s" style="--line:var(--c-%s)"><b>%s</b> <span class="sv">%s</span></a>'
+            % (href(B, lang, c), c["cat"], E(q["q"][lang]), E(B.tr(c["n"], lang))))
+
+
+def full_list(B, lang):
+    have = cards(B)
+    return [[q["q"][lang], href(B, lang, have[q["c"]]), B.tr(have[q["c"]]["n"], lang), have[q["c"]]["cat"]]
+            for q in DATA["qs"] if q["c"] in have]
+
+
+def list_v(B, lang):
+    return hashlib.sha1(json.dumps(full_list(B, lang), ensure_ascii=False).encode()).hexdigest()[:8]
+
+
+def page(lang, B, F):
+    ui, have = DATA["ui"][lang], cards(B)
+    qs = [q for q in DATA["qs"] if q["c"] in have]
+    alts = {l: B.pre(l) + PATH for l in B.LANGS}
+    langs = [(l, B.url(l, PATH), B.SHOP["lang_names"][l]) for l in B.LANGS]
+    sub, sub_lang = (DATA["ui"]["en"]["h1"], "en") if lang == "th" else (DATA["ui"]["th"]["h1"], "th")
+    out = F.head("questions", lang, ui["title"], ui["desc"], B.pre(lang) + PATH, alternates=alts,
+                 extra='<link rel="stylesheet" href="/assets/questions.css?v=%s">' % ASSET_V)
+    out += F.body("questions") + F.top(lang, langs) + "<main>\n"
+    out += F.lead("questions", lang, h1=ui["h1"], sub=sub, sub_lang=sub_lang)
+    out += '<p class="lede">%s</p>\n' % E(ui["lede"])
+    out += ('<div class="qs-find"><label for="qf" class="field">%s</label><div class="qwrap"><span class="qi">%s</span>'
+            '<input id="qf" class="q" type="search" placeholder="%s" autocomplete="off"></div>'
+            '<p class="qs-n" role="status" aria-live="polite" data-none="%s"></p></div>\n'
+            % (E(ui["find"]), B.db("search", play="loop"), E(ui["findPh"]), E(ui["none"])))
+    out += ('<section class="kind qs-all"><ul class="qs-page">%s</ul></section>\n'
+            % "".join(item(B, lang, q, have[q["c"]]) for q in mixed(qs)))
+    out += B.not_here(lang) + "</main>\n"
+    out += '<script defer src="/assets/questions.js?v=%s"></script>\n' % ASSET_V
+    return out + B.foot(lang, group="front")    # its glyphs are all in the front page's bundle
+
+
+def sitemap(B):
+    p = os.path.join(DOCS, "sitemap.xml")
+    xml = open(p, encoding="utf-8").read()
+    alts = "".join('    <xhtml:link rel="alternate" hreflang="%s" href="%s%s"/>\n' % (l, B.SITE, B.url(l, PATH)) for l in B.LANGS)
+    alts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>\n' % (B.SITE, B.url("en", PATH))
+    import re
+    was = dict(re.findall(r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", xml))
+    from datetime import date
+    rows = []
+    for l in B.LANGS:
+        loc = B.SITE + B.url(l, PATH)
+        day = date.today().isoformat() if (B.pre(l) + PATH + "index.html") in B.CHANGED or loc not in was else was[loc]
+        rows.append("  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n    <changefreq>monthly</changefreq>\n%s  </url>\n" % (loc, day, alts))
+    block = "<!-- QUESTIONS:START -->\n" + "".join(rows) + "  <!-- QUESTIONS:END -->"
+    if "<!-- QUESTIONS:START -->" in xml:
+        a, b = xml.index("<!-- QUESTIONS:START -->"), xml.index("<!-- QUESTIONS:END -->") + len("<!-- QUESTIONS:END -->")
+        xml = xml[:a] + block + xml[b:]
+    else:
+        xml = xml.replace("</urlset>", "  " + block + "\n</urlset>")
+    open(p, "w", encoding="utf-8").write(xml)
+
+
+def llms(B):
+    p = os.path.join(DOCS, "llms.txt")
+    s = open(p, encoding="utf-8").read()
+    ui = DATA["ui"]["en"]
+    block = ("<!-- QUESTIONS:START -->\n## Questions\n\n- [%s](%s%s): %s Also: %s\n<!-- QUESTIONS:END -->" % (
+        ui["h1"], B.SITE, B.url("en", PATH), ui["desc"],
+        " · ".join("%s %s%s" % (B.SHOP["lang_names"][l], B.SITE, B.url(l, PATH)) for l in B.LANGS[1:])))
+    if "<!-- QUESTIONS:START -->" in s:
+        a, b = s.index("<!-- QUESTIONS:START -->"), s.index("<!-- QUESTIONS:END -->") + len("<!-- QUESTIONS:END -->")
+        s = s[:a] + block + s[b:]
+    else:
+        s = s.replace("<!-- SERVICES:START -->", block + "\n\n<!-- SERVICES:START -->", 1)
+    open(p, "w", encoding="utf-8").write(s)
+
+
+def main():
+    sys.path.insert(0, os.path.join(HERE, "tools"))
+    import build_shop as B
+    import pages as F
+    B.SHOP["cards"] = [c for c in B.SHOP["cards"] if B.ready(c)]
+    check(B)
+    for lang in B.LANGS:
+        B.write(B.pre(lang) + PATH + "index.html", page(lang, B, F))
+        B.write("assets/questions-%s.json" % lang, json.dumps(full_list(B, lang), ensure_ascii=False, separators=(",", ":")))
+    sitemap(B)
+    llms(B)
+    print("questions · %d pages" % len(B.LANGS))
+    B.main()    # the front pages carry the scroll
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

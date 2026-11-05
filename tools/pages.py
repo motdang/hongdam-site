@@ -63,7 +63,7 @@ def head(pid, lang, title, desc, path=None, alternates=None, noindex=False, ld=N
         out.append('<link rel="alternate" hreflang="x-default" href="%s/%s">' % (SITE, alternates.get("en", path)))
     out += ['<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">',
             '<link rel="stylesheet" href="/assets/shop.css?v=%s">' % B.CSS_V,
-            '<link rel="stylesheet" href="/assets/pages.css?v=%s">' % PCSS_V,
+            '<link rel="stylesheet" href="/assets/pages.css?v=%s">' % PCSS_V, B.POND_CSS,
             '<meta name="theme-color" content="#F1EDE4" media="(prefers-color-scheme: light)">',
             '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">',
             '<meta property="og:type" content="website">', '<meta property="og:site_name" content="Hongdam หงส์ดำ">',
@@ -103,13 +103,18 @@ def top(lang, langs=None):
             '%s<a class="line" href="%s">LINE</a></header>\n' % (B.url(lang), B.db("hongsa", "mark", "loop"), nav, B.LINE_URL))
 
 
+# The pages that sell a service: a Share button on the back row (her ask 2026-10-24).
+SELL = ("own", "redteam", "market", "bots", "github", "translation")
+
+
 def back(pid, lang):
-    """← the shop category the page belongs to (its cat in data/pages.json), or the front page."""
+    """← the shop category the page belongs to (its cat in data/pages.json), or the front page; Share on a page that sells."""
     cat = next((c for c in B.SHOP["cats"] if c["id"] == PAGES[pid].get("cat")), None)
     ui = B.SHOP["ui"][lang]
+    share = B.share_btn(lang) if pid in SELL else ""
     if cat:
-        return '<p class="back"><a href="%s">← %s</a></p>\n' % (B.url(lang, cat["id"] + "/"), E(B.tr(cat["n"], lang)))
-    return '<p class="back"><a href="%s">← %s</a></p>\n' % (B.url(lang), E(ui["home"]))
+        return '<p class="back"><a href="%s">← %s</a>%s</p>\n' % (B.url(lang, cat["id"] + "/"), E(B.tr(cat["n"], lang)), share)
+    return '<p class="back"><a href="%s">← %s</a>%s</p>\n' % (B.url(lang), E(ui["home"]), share)
 
 
 def lead(pid, lang, h1=None, sub=None, sub_lang="th", with_back=True, h1_html=None):
@@ -175,9 +180,9 @@ def frame_js():
                       "alt": card_alt(pid), "og": SITE + "/" + card(pid)["og"]}
     links = ('<meta name="color-scheme" content="light dark">'
              '<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">'
-             '<link rel="stylesheet" href="/assets/shop.css?v=%s"><link rel="stylesheet" href="/assets/pages.css?v=%s">'
+             '<link rel="stylesheet" href="/assets/shop.css?v=%s"><link rel="stylesheet" href="/assets/pages.css?v=%s">%s'
              '<meta name="theme-color" content="#F1EDE4" media="(prefers-color-scheme: light)">'
-             '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">' % (B.CSS_V, PCSS_V))
+             '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">' % (B.CSS_V, PCSS_V, B.POND_CSS))
     js = ("// Written by tools/pages.py: the shop's frame for the pages functions draw. Change it there.\n"
           "export const LINKS = %s\nexport const FRAME = %s\n" % (json.dumps(links, ensure_ascii=False), json.dumps(parts, ensure_ascii=False, indent=1)))
     open(os.path.join(HERE, "functions", "_frame.js"), "w", encoding="utf-8").write(js)

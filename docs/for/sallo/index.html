@@ -276,10 +276,10 @@ html[lang="th"] .sheet h3{text-transform:none;line-height:1.25;font-size:28px}
     </button>
     <div>
       <h1 id="h1">137 Pillars of Hope<span>18 Oct 2026</span></h1>
-      <p class="sub" id="heroSub">Organised by PCF and 137 Pillars House Chiang Mai, for Baan Unrak's children in Sangkhlaburi.</p>
+      <p class="sub" id="heroSub">Organised by PCF and 137 Pillars House Chiang Mai, for the children of Baan Unrak, a children's home in Sangkhlaburi.</p>
       <div class="acts">
         <a class="btn give" id="bandGive" href="https://philanthropyconnections.org/Join-Sallo-Become-a-lifeline-for-137-children-in-need#DonateNow-SalloHalfMarathonCampaign" rel="noopener">PCF's page for the 137 children</a>
-        <a class="btn ghost" id="toJourney" href="#journey">The journey</a>
+        <a class="btn ghost" id="toJourney" href="#journey">See the projects on the map</a>
       </div>
     </div>
   </div>
@@ -290,14 +290,14 @@ html[lang="th"] .sheet h3{text-transform:none;line-height:1.25;font-size:28px}
 <section class="journey" id="journey" aria-labelledby="jTitle">
   <div class="wrap">
     <div class="jhead">
-      <div><span class="kick" id="jKick">The journey</span><h2 id="jTitle">20 projects, 9 places</h2></div>
+      <div><span class="kick" id="jKick">A tour of the projects</span><h2 id="jTitle">20 projects, 9 places</h2></div>
       <button class="play" id="play" type="button" aria-pressed="false"><span aria-hidden="true" id="playGlyph">▶</span><span id="playTxt">Play</span></button>
     </div>
     <div class="tally" id="tally" role="group" aria-label="Projects by country"></div>
     <div class="stage">
       <div class="mapbox">
         <div id="map" role="application" aria-label="Map of PCF projects"></div>
-        <div class="mapnote" id="approx">Pins sit at town level.</div>
+        <div class="mapnote" id="approx">Pins show the town, not the exact place.</div>
       </div>
       <div class="railbox">
         <div class="rail" id="rail" tabindex="0" role="region" aria-label="Places"></div>
@@ -323,13 +323,13 @@ html[lang="th"] .sheet h3{text-transform:none;line-height:1.25;font-size:28px}
 
 <div class="twin">
   <section class="md" aria-labelledby="mdH">
-    <div><span class="kick" id="mdH">Mot Dang</span><p id="mdP">Mot Dang already maps northern Thailand and Phnom Penh.</p></div>
+    <div><span class="kick" id="mdH">Mot Dang</span><p id="mdP">Mot Dang is our online directory of places in northern Thailand and in Phnom Penh, Cambodia.</p></div>
     <a class="btn" id="mdBtn" href="https://motdang.net" rel="noopener">Open motdang.net</a>
   </section>
   <section class="ft" aria-labelledby="ftH">
     <span class="kick" id="ftK">Film</span>
-    <h2 id="ftH">Your footage</h2>
-    <p class="line" id="ftP">Send a clip from any partner project. NaN's team cuts it into a short film.</p>
+    <h2 id="ftH">Your video clips</h2>
+    <p class="line" id="ftP">Send a video clip from any partner project. NaN, who runs Hongdam, and the team edit it into a short film.</p>
     <!-- MARCUS: a cut of PCF partner-project footage could play in this frame -->
     <button class="frame" id="frame" type="button" aria-label="Film frame, tap for a clap">
       <img src="img/siemreap.jpg" alt="" loading="lazy">
@@ -343,7 +343,7 @@ html[lang="th"] .sheet h3{text-transform:none;line-height:1.25;font-size:28px}
 </div>
 
 <div class="cta">
-  <a class="btn give" id="coffee" href="mailto:nan@motdang.net?subject=Coffee%20this%20week%3F&body=Hi%20NaN%2C%20coffee%20this%20week%3F">Coffee this week?</a>
+  <a class="btn give" id="coffee" href="mailto:nan@motdang.net?subject=Coffee%20this%20week%3F&body=Hi%20NaN%2C%20coffee%20this%20week%3F">Email NaN about coffee</a>
 </div>
 
 <section class="src" id="sources" aria-labelledby="srcH">
@@ -450,12 +450,12 @@ var PINS = [
  {id:"demoso", c:"mm", ll:[97.159,19.538], refs:[1],
   place:{en:"Demoso", th:"Demoso"},
   region:{en:"Karenni State", th:"รัฐคาเรนนี"},
-  line:{en:"723 students and 41 teachers in Karenni IDP schools.", th:"นักเรียน 723 คน ครู 41 คน ในโรงเรียนผู้พลัดถิ่นคาเรนนี"},
-  note:{en:"Pin: Eastern Demoso Township, from the project page. Pin sits at Demoso town. Approximate.", th:"หมุด: เขต Demoso ตะวันออก ตามหน้าโครงการ หมุดอยู่ที่เมือง Demoso ตำแหน่งโดยประมาณ"},
+  line:{en:"723 students and 41 teachers in Karenni schools for displaced people (IDP schools).", th:"นักเรียน 723 คน ครู 41 คน ในโรงเรียนผู้พลัดถิ่นคาเรนนี"},
+  note:{en:"Pin: Eastern Demoso Township, from the project page. The pin is at Demoso town. Approximate.", th:"หมุด: เขต Demoso ตะวันออก ตามหน้าโครงการ หมุดอยู่ที่เมือง Demoso ตำแหน่งโดยประมาณ"},
   projects:[
    {u:"/project/support-karenni-idp-schools-humanitarian-assistance",
     n:{en:"Support Karenni IDP Schools & Humanitarian Assistance", th:"สนับสนุนโรงเรียนผู้พลัดถิ่นคาเรนนีและความช่วยเหลือด้านมนุษยธรรม"},
-    d:{en:"Care for teachers, school materials and food for students and teachers in Karenni IDP schools, with Friends Without Borders. 723 students, 41 teachers.", th:"ดูแลครู สื่อการสอน และอาหารให้นักเรียนและครูในโรงเรียนผู้พลัดถิ่นคาเรนนี ร่วมกับ Friends Without Borders นักเรียน 723 คน ครู 41 คน"},
+    d:{en:"Care for teachers, school materials and food for students and teachers in Karenni IDP schools (schools for people forced to leave their homes), with Friends Without Borders. 723 students, 41 teachers.", th:"ดูแลครู สื่อการสอน และอาหารให้นักเรียนและครูในโรงเรียนผู้พลัดถิ่นคาเรนนี ร่วมกับ Friends Without Borders นักเรียน 723 คน ครู 41 คน"},
     f:{en:"Since 2021 · €33,444", th:"ตั้งแต่ 2021 · €33,444"}}
   ]},
  {id:"bannaisoi", c:"th", ll:[97.8755,19.3814], refs:[1],
@@ -472,12 +472,12 @@ var PINS = [
  {id:"pianglung", c:"th", ll:[98.62,19.69], refs:[1],
   place:{en:"Piang Luang", th:"เพียงหลวง"},
   region:{en:"Chiang Mai", th:"เชียงใหม่"},
-  line:{en:"A boarding house for 23 Shan children in Koung Jor camp.", th:"บ้านพักเด็กไทใหญ่ 23 คนในค่าย Koung Jor"},
+  line:{en:"A boarding house for 23 Shan children in the Koung Jor refugee camp.", th:"บ้านพักเด็กไทใหญ่ 23 คนในค่ายผู้ลี้ภัย Koung Jor"},
   note:{en:"Pin: Piang Luang, from the project pages; province from the map. Approximate.", th:"หมุด: เพียงหลวง ตามหน้าโครงการ จังหวัดจากแผนที่ ตำแหน่งโดยประมาณ"},
   projects:[
    {u:"/boarding-house-shan-youth",
     n:{en:"Boarding House for Shan Youth", th:"บ้านพักเด็กเยาวชนไทใหญ่"},
-    d:{en:"A home at Koung Jor Shan Refugee Camp for displaced Shan children aged 4 to 18: help with local Thai schools, emotional support, evening lessons in English, Shan, Burmese and computers. 23 children.", th:"บ้านพักในค่ายผู้ลี้ภัยไทใหญ่ Koung Jor สำหรับเด็กไทใหญ่อายุ 4 ถึง 18 ปี ช่วยเรื่องเรียนโรงเรียนไทย ดูแลจิตใจ และสอนภาคค่ำ อังกฤษ ไทใหญ่ พม่า คอมพิวเตอร์ เด็ก 23 คน"},
+    d:{en:"A home at Koung Jor Shan Refugee Camp for displaced Shan children aged 4 to 18: help with Thai schools near the camp, emotional support, evening lessons in English, Shan, Burmese and computers. 23 children.", th:"บ้านพักในค่ายผู้ลี้ภัยไทใหญ่ Koung Jor สำหรับเด็กไทใหญ่อายุ 4 ถึง 18 ปี ช่วยเรื่องเรียนโรงเรียนไทย ดูแลจิตใจ และสอนภาคค่ำ อังกฤษ ไทใหญ่ พม่า คอมพิวเตอร์ เด็ก 23 คน"},
     f:{en:"Since 2012 · €16,280", th:"ตั้งแต่ 2012 · €16,280"}},
    {u:"/project/roof-renovation-for-koung-jor-nursery-school",
     n:{en:"Roof Renovation for Koung Jor Nursery School", th:"ซ่อมหลังคาโรงเรียนอนุบาล Koung Jor"},
@@ -517,8 +517,8 @@ var PINS = [
  {id:"siemreap", c:"kh", ll:[103.859,13.362], refs:[1],
   place:{en:"Siem Reap", th:"เสียมเรียบ"},
   region:{en:"Siem Reap Province", th:"จังหวัดเสียมเรียบ"},
-  line:{en:"Preschools, libraries and scholarships with KAKO: 90 preschoolers, 7 libraries.", th:"อนุบาล ห้องสมุด และทุน ร่วมกับ KAKO เด็กอนุบาล 90 คน ห้องสมุด 7 แห่ง"},
-  note:{en:"Pin: Siem Reap Province, partner KAKO. Pin sits at Siem Reap town; villages, including Takam in Puok District, are not pinned separately. Approximate.", th:"หมุด: จังหวัดเสียมเรียบ พันธมิตร KAKO หมุดอยู่ที่ตัวเมืองเสียมเรียบ ไม่ได้ปักแยกตามหมู่บ้าน รวมถึง Takam ในอำเภอ Puok ตำแหน่งโดยประมาณ"},
+  line:{en:"Preschools, libraries and scholarships with its partner KAKO: 90 preschoolers, 7 libraries.", th:"อนุบาล ห้องสมุด และทุน ร่วมกับ KAKO เด็กอนุบาล 90 คน ห้องสมุด 7 แห่ง"},
+  note:{en:"Pin: Siem Reap Province, partner KAKO. The pin is at Siem Reap town; villages, including Takam in Puok District, are not pinned separately. Approximate.", th:"หมุด: จังหวัดเสียมเรียบ พันธมิตร KAKO หมุดอยู่ที่ตัวเมืองเสียมเรียบ ไม่ได้ปักแยกตามหมู่บ้าน รวมถึง Takam ในอำเภอ Puok ตำแหน่งโดยประมาณ"},
   projects:[
    {u:"/project/preschools-in-cambodia",
     n:{en:"Preschools in Cambodia", th:"โรงเรียนอนุบาลในกัมพูชา"},
@@ -530,7 +530,7 @@ var PINS = [
     f:{en:"Since 2013 · €13,500", th:"ตั้งแต่ 2013 · €13,500"}},
    {u:"/project/stung-preah-srok-preschool",
     n:{en:"Stung Preah Srok Preschool", th:"โรงเรียนอนุบาล Stung Preah Srok"},
-    d:{en:"Support for a KAKO preschool now run by the Cambodian government: manageable class sizes, teacher training, salaries, materials, fruit and soymilk. 59 students.", th:"สนับสนุนโรงเรียนอนุบาลที่ KAKO ตั้งและรัฐบาลกัมพูชารับช่วงต่อ คุมขนาดห้อง อบรมครู เงินเดือน สื่อการสอน ผลไม้และนมถั่วเหลือง นักเรียน 59 คน"},
+    d:{en:"Support for a KAKO preschool that the Cambodian government runs: manageable class sizes, teacher training, salaries, materials, fruit and soymilk. 59 students.", th:"สนับสนุนโรงเรียนอนุบาลที่ KAKO ตั้งและรัฐบาลกัมพูชารับช่วงต่อ คุมขนาดห้อง อบรมครู เงินเดือน สื่อการสอน ผลไม้และนมถั่วเหลือง นักเรียน 59 คน"},
     f:{en:"Since 2015 · €5,060", th:"ตั้งแต่ 2015 · €5,060"}},
    {u:"/project/60-scholarships",
     n:{en:"60 Scholarships", th:"ทุนการศึกษา 60 ทุน"},
@@ -565,7 +565,7 @@ var SRC = [
  {url:"https://donorbox.org/events/960105", t:{en:"137 Pillars of Hope, 18 Oct 2026, event page.", th:"137 Pillars of Hope 18 ต.ค. 2026 หน้างาน"}},
  {url:P+"/Join-Sallo-Become-a-lifeline-for-137-children-in-need", t:{en:"PCF campaign page for the 137 children and the half-marathon, 20 Dec 2026.", th:"หน้าแคมเปญของ PCF เพื่อเด็ก 137 คนและงานวิ่งฮาล์ฟมาราธอน 20 ธ.ค. 2026"}},
  {url:"https://www.baanunrak.org/about_us", t:{en:"Baan Unrak, about us: the Children's Home is in Sangkhlaburi.", th:"บ้านอุ่นรัก เกี่ยวกับเรา: บ้านเด็กอยู่ที่สังขละบุรี"}},
- {url:"https://motdang.net", t:{en:"Mot Dang.", th:"หมดแดง"}}
+ {url:"https://motdang.net", t:{en:"Mot Dang.", th:"มดแดง"}}
 ];
 
 var T = {
@@ -574,22 +574,22 @@ var T = {
   brand:"Philanthropy Connections Foundation",
   of:"children of Baan Unrak",
   h1:'137 Pillars of Hope<span>18 Oct 2026</span>',
-  sub:"Organised by PCF and 137 Pillars House Chiang Mai, for Baan Unrak's children in Sangkhlaburi.",
-  give:"PCF's page for the 137 children", toJourney:"The journey",
-  jKick:"The journey",
+  sub:"Organised by PCF and 137 Pillars House Chiang Mai, for the children of Baan Unrak, a children's home in Sangkhlaburi.",
+  give:"PCF's page for the 137 children", toJourney:"See the projects on the map",
+  jKick:"A tour of the projects",
   jTitle:function(n,m){return n+" projects, "+m+" places";},
   play:"Play", pause:"Pause",
   tallyAria:"Projects by country",
   country:{th:"Thailand",kh:"Cambodia",mm:"Myanmar"},
   proj:function(n){return n===1?"1 project":n+" projects";},
   projBtn:"Projects",
-  approx:"Pins sit at town level.",
+  approx:"Pins show the town, not the exact place.",
   alsoS:function(n){return n+" more PCF pages name a place the map has not pinned";},
   bandK:"20 Dec 2026", bandH:"Half-marathon for the same 137 children", bandBtn:"PCF's campaign page",
-  mdH:"Mot Dang", mdP:"Mot Dang already maps northern Thailand and Phnom Penh.", mdBtn:"Open motdang.net",
-  ftK:"Film", ftH:"Your footage", ftP:"Send a clip from any partner project. NaN's team cuts it into a short film.", ftBtn:"Send a clip",
+  mdH:"Mot Dang", mdP:"Mot Dang is our online directory of places in northern Thailand and in Phnom Penh, Cambodia.", mdBtn:"Open motdang.net",
+  ftK:"Film", ftH:"Your video clips", ftP:"Send a video clip from any partner project. NaN, who runs Hongdam, and the team edit it into a short film.", ftBtn:"Send a clip",
   clap:"Film frame, tap for a clap",
-  coffee:"Coffee this week?",
+  coffee:"Email NaN about coffee",
   srcH:"Sources", phH:"Photographs, Wikimedia Commons",
   made:"Made for Sallo by NaN · Hongdam, Chiang Rai · ",
   close:"Close", pcfPage:"PCF's page", giveBtn:"Give", giveNote:"Give opens PCF's donate page.",
@@ -602,8 +602,8 @@ var T = {
   of:"เด็กของบ้านอุ่นรัก (Baan Unrak)",
   h1:'137 Pillars of Hope<span>18 ต.ค. 2026</span>',
   sub:"จัดโดย PCF และ 137 Pillars House เชียงใหม่ เพื่อเด็กของบ้านอุ่นรักที่สังขละบุรี",
-  give:"หน้าของ PCF เพื่อเด็ก 137 คน", toJourney:"การเดินทาง",
-  jKick:"การเดินทาง",
+  give:"หน้าของ PCF เพื่อเด็ก 137 คน", toJourney:"ดูโครงการบนแผนที่",
+  jKick:"ทัวร์ดูโครงการ",
   jTitle:function(n,m){return n+" โครงการ "+m+" แห่ง";},
   play:"เล่น", pause:"หยุด",
   tallyAria:"โครงการแยกตามประเทศ",
@@ -613,10 +613,10 @@ var T = {
   approx:"ตำแหน่งหมุดระดับเมือง",
   alsoS:function(n){return "อีก "+n+" หน้าของ PCF ระบุสถานที่ที่แผนที่ยังไม่ได้ปักหมุด";},
   bandK:"20 ธ.ค. 2026", bandH:"วิ่งฮาล์ฟมาราธอนเพื่อเด็ก 137 คนกลุ่มเดิม", bandBtn:"หน้าแคมเปญของ PCF",
-  mdH:"หมดแดง (Mot Dang)", mdP:"หมดแดงทำแผนที่ภาคเหนือของไทยและพนมเปญไว้แล้ว", mdBtn:"เปิด motdang.net",
-  ftK:"หนังสั้น", ftH:"ภาพของคุณ", ftP:"ส่งคลิปจากโครงการพันธมิตรของ PCF โครงการไหนก็ได้ ทีมของ NaN ตัดเป็นหนังสั้น", ftBtn:"ส่งคลิป",
+  mdH:"มดแดง (Mot Dang)", mdP:"มดแดงคือสมุดรายชื่อสถานที่ออนไลน์ของเรา ครอบคลุมภาคเหนือของไทยและพนมเปญในกัมพูชา", mdBtn:"เปิด motdang.net",
+  ftK:"หนังสั้น", ftH:"คลิปของคุณ", ftP:"ส่งคลิปจากโครงการพันธมิตรของ PCF โครงการไหนก็ได้ NaN ผู้ดูแล Hongdam และทีมตัดต่อเป็นหนังสั้น", ftBtn:"ส่งคลิป",
   clap:"เฟรมหนัง แตะเพื่อตีสเลท",
-  coffee:"กาแฟสัปดาห์นี้ไหม",
+  coffee:"ส่งอีเมลถึง NaN เรื่องกาแฟ",
   srcH:"แหล่งที่มา", phH:"ภาพถ่าย จาก Wikimedia Commons",
   made:"ทำให้ Sallo โดย NaN · หงส์ดำ เชียงราย · ",
   close:"ปิด", pcfPage:"หน้าของ PCF", giveBtn:"ร่วมให้", giveNote:"ปุ่มร่วมให้เปิดหน้าบริจาคของ PCF",

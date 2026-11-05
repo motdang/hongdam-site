@@ -52,7 +52,7 @@
 .pg main :where(input, textarea)::placeholder { color: var(--mut) }
 .pg main :where(input[type=radio], input[type=checkbox]) { width: 1.25rem; height: 1.25rem; margin: 0; accent-color: var(--fg); flex: none }
 .pg main :where(input[type=file]) { display: block; margin-top: .4rem; font: inherit; color: var(--fg) }
-.pg main :where(button:not(.btn, .step, .linkish, [data-copy])) {
+.pg main :where(button:not(.btn, .step, .linkish, .share, [data-copy])) {
   display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 2.9rem; padding: .6rem 1.3rem; border: 0; border-radius: var(--btn-r);
   background: var(--btn); color: var(--btn-fg); box-shadow: 3px 3px 0 var(--line, var(--acc)); font: 700 1rem/1.1 var(--sys); cursor: pointer }
 .pg main :where(button:disabled) { opacity: .5; cursor: default }

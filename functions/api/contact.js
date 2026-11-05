@@ -12,6 +12,7 @@
 
 import { record, whoHash } from '../_services.js'
 import { tryOnce } from '../_tries.js'
+import { toWheel, askDraft } from '../_wheel.js'
 
 const LIMITS = { name: 120, email: 200, line: 80, service: 200, page: 200, message: 4000 };
 
@@ -64,10 +65,18 @@ export async function onRequestPost({ request, env }) {
   if (message.length < 2)
     return reply(400, { ok: false, error: "Please say what you need." });
 
-  if (!env.RESEND_API_KEY || !env.CONTACT_TO)
+  if ((!env.RESEND_API_KEY || !env.CONTACT_TO) && !env.WHEEL_SHOP_KEY)
     return reply(500, { ok: false, error: "Mail is not configured yet." });
 
-  const res = await fetch("https://api.resend.com/emails", {
+  // the question's ticket on the Team Wheel (functions/_wheel.js) first, and the same ref on the mail
+  const ref = "Q-" + crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6, "0").slice(-6);
+  const lang = (page.match(/^\/(th|my|zh|de)\//) || [])[1] || "en";
+  const ask = askDraft({ ref, service, message, contact: email || "LINE " + line, lang, page: page ? new URL(request.url).origin + page : "" });
+  if (email && line) ask.notes = `👤 ✉️ ${email} · 💬 LINE ${line}${name ? ` · ${name}` : ""}`;
+  else if (name) ask.notes = `${ask.notes} · ${name}`;
+  const took = await toWheel(env, ask);
+
+  const res = env.RESEND_API_KEY && env.CONTACT_TO && await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
       authorization: `Bearer ${env.RESEND_API_KEY}`,
@@ -77,7 +86,7 @@ export async function onRequestPost({ request, env }) {
       from: env.CONTACT_FROM || "Hongdam <hongdam@send.motdang.net>",
       to: [env.CONTACT_TO],
       ...(email ? { reply_to: email } : {}),
-      subject: `hongdam.net — ${service ? service + " — " : ""}${name || email || "LINE " + line}`,
+      subject: `hongdam.net — ${ref} — ${service ? service + " — " : ""}${name || email || "LINE " + line}`,
       text: [
         `From: ${name || "(no name)"}${email ? ` <${email}>` : ""}`,
         ...(line ? [`LINE: ${line}`] : []),
@@ -89,10 +98,8 @@ export async function onRequestPost({ request, env }) {
     }),
   });
 
-  if (!res.ok) {
-    console.error("resend", res.status, await res.text());
-    return reply(502, { ok: false, error: "Could not send that just now." });
-  }
+  if (res && !res.ok) console.error("resend", res.status, await res.text());
+  if (!(res && res.ok) && !took) return reply(502, { ok: false, error: "Could not send that just now." });
   if (svc && (await counted(env, request))) await record(env.TASKS, svc, await whoHash(email || "line:" + line), "form");
   return reply(200, { ok: true });
 }

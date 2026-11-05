@@ -4,7 +4,7 @@
   "kicker": "Hongdam Studio · Chiang Rai",
   "title": "The last mile.",
   "th": "งานเทคที่ค้างอยู่ เราปิดให้จบ",
-  "sub": "Vibe code finished · security · models · automation",
+  "sub": "AI-written apps finished · security · AI models · automation",
   "line": [
    "robot",
    "laptop",
@@ -12,26 +12,183 @@
    "lock"
   ],
   "hue": 258,
-  "hash": "e70194c766"
+  "hash": "9feaea641f"
  },
  {
   "out": "og/studio/notes",
   "kicker": "Hongdam Studio · Notes",
-  "title": "Notes from the bench.",
-  "th": "บันทึกจากโต๊ะทำงาน",
-  "sub": "Models measured, holes found, fixes with their code.",
+  "title": "Notes on our work.",
+  "th": "บันทึกเกี่ยวกับงานของเรา",
+  "sub": "We test AI models, find security holes, publish fixes with code.",
   "line": [
    "typewriter",
    "page",
    "send"
   ],
   "hue": 205,
-  "hash": "1452947977"
+  "hash": "4aecbf3521"
+ },
+ {
+  "out": "og/studio/n/n8n-3-npm-ends-timeouts-no-way-back",
+  "kicker": "Hongdam Studio · Automation · 5 November 2026",
+  "title": "n8n 3.0: Docker only, 60 s Code nodes",
+  "th": "n8n 3.0: เลิกติดตั้งผ่าน npm, Code node หมดเวลาที่ 1 นาที และย้อนกลับไป 2.x ไม่ได้",
+  "sub": "Beta 27 October, stable early December, no way back",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "60b2f2766f"
+ },
+ {
+  "out": "og/studio/n/wordpress-upgrade-window-partial-vs-full",
+  "kicker": "Hongdam Studio · Security · 4 November 2026",
+  "title": "WordPress update: partial or full?",
+  "th": "ช่องโหว่ช่วงอัปเดตของ WordPress: แพ็กเกจอัปเดตย่อยไม่มีตัวติดตั้ง แต่แพ็กเกจเต็มมี",
+  "sub": "CVE-2026-119977, on CISA's exploited list since 3 November 2026",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "04814c0003"
+ },
+ {
+  "out": "og/studio/n/npm-install-scripts-before-vercel",
+  "kicker": "Hongdam Studio · Last mile · 3 November 2026",
+  "title": "Your laptop installs before Vercel checks",
+  "th": "Vercel บล็อกแพ็กเกจ npm อันตรายตอน build แล้ว แต่ npm ที่มากับ Node ทุกรุ่น LTS ยังรันสคริปต์ติดตั้งของแพ็กเกจอยู่",
+  "sub": "Two .npmrc lines, tested on npm 10, 11, 12",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "a4ec29c324"
+ },
+ {
+  "out": "og/studio/n/glm-5-3-leak-canary-test",
+  "kicker": "Hongdam Studio · AI models · 2 November 2026",
+  "title": "155 replies held other users' text",
+  "th": "GLM-5.3 บน Workers AI ส่งคำตอบ 155 ครั้งที่มีข้อความของลูกค้ารายอื่น ทุกครั้งตอบกลับด้วย HTTP 200",
+  "sub": "GLM-5.3 on Workers AI, 27 Aug to 9 Sep 2026",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "5a29c613f7"
+ },
+ {
+  "out": "og/studio/n/week-supabase-grants-brotli-mistral",
+  "kicker": "Hongdam Studio · Weekly summary · 1 November 2026",
+  "title": "The week: six notes, four changes",
+  "th": "สรุปสัปดาห์ 26 ตุลาคม: Supabase เลิกเปิดตารางใหม่ให้ API อัตโนมัติ, Brotli เข้ารายชื่อช่องโหว่ที่ถูกโจมตีจริง, Mistral Large 4 ปล่อยเวต",
+  "sub": "Supabase grants, Brotli, PHP, Mistral Large 4",
+  "line": [
+   "typewriter",
+   "page",
+   "send"
+  ],
+  "hue": 322,
+  "hash": "f83c5cb50d"
+ },
+ {
+  "out": "og/studio/n/link-cards-mastodon-bluesky",
+  "kicker": "Hongdam Studio · Last mile · 31 October 2026",
+  "title": "Why your link card is blank",
+  "th": "การ์ดลิงก์: Mastodon ทุกเซิร์ฟเวอร์ดึงหน้าเว็บเอง ส่วน Bluesky เก็บการ์ดไว้ในโพสต์ตายตัว",
+  "sub": "What Mastodon and Bluesky read, from their code",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "20eca8fca5"
+ },
+ {
+  "out": "og/studio/n/thai-tokens-cost-by-model",
+  "kicker": "Hongdam Studio · AI models · 30 October 2026",
+  "title": "Thai costs up to 2.9× the tokens",
+  "th": "ข้อความเดียวกัน ภาษาไทยใช้โทเคนมากกว่าภาษาอังกฤษ 1.46 เท่าบน DeepSeek และ 2.94 เท่าบน GLM-5.3",
+  "sub": "Same eight messages, six open models, Workers AI",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "0bd533ec32"
+ },
+ {
+  "out": "og/studio/n/github-agentic-workflows-default-cap",
+  "kicker": "Hongdam Studio · Automation · 29 October 2026",
+  "title": "Agentic Workflows: US$50 a day",
+  "th": "GitHub Agentic Workflows: เพดานค่าใช้จ่ายตั้งต้นคือ 50 ดอลลาร์ต่อวัน ต่อหนึ่งเวิร์กโฟลว์",
+  "sub": "The default cap, and the three lines that lower it",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "cdc9258e49"
+ },
+ {
+  "out": "og/studio/n/magento-polyshell-on-cisa-kev",
+  "kicker": "Hongdam Studio · Security · 28 October 2026",
+  "title": "Magento PolyShell: patch, then look",
+  "th": "ช่องโหว่ PolyShell ของ Magento เข้ารายชื่อช่องโหว่ที่ถูกโจมตีจริงของ CISA หลังการโจมตีครั้งแรก 7 เดือน",
+  "sub": "On CISA's exploited list since 27 October 2026",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "50b4273bf3"
+ },
+ {
+  "out": "og/studio/n/lovable-agent-tools-no-rate-limit",
+  "kicker": "Hongdam Studio · Last mile · 27 October 2026",
+  "title": "Your app's AI tools have no limit",
+  "th": "เครื่องมือเอเจนต์ของ Lovable ไม่มีการจำกัดจำนวนครั้ง: ตัวจำกัดใน Postgres ที่กันการเขียนซ้ำได้ด้วย",
+  "sub": "A per-user cap in Postgres, tested",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "5222e163c0"
+ },
+ {
+  "out": "og/studio/n/deepseek-flash-1017-faster-not-shorter",
+  "kicker": "Hongdam Studio · AI models · 26 October 2026",
+  "title": "DeepSeek 1017: faster, not shorter",
+  "th": "DeepSeek V4.1 Flash 1017 บน Workers AI: เร็วกว่า 0731 ราว 40% ใช้โทเคนมากขึ้น 23% ค่าใช้จ่ายเท่าเดิม",
+  "sub": "60 runs on Workers AI against V4 Flash 0731",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "029ada3213"
  },
  {
   "out": "og/studio/n/supabase-public-key-open-tables",
-  "kicker": "Hongdam Studio · Last mile · 24 Oct 2026",
-  "title": "Is your database open?",
+  "kicker": "Hongdam Studio · Last mile · 24 October 2026",
+  "title": "Can anyone read your database?",
   "th": "ฐานข้อมูล Supabase 16,326 แห่งเปิดให้ใครก็อ่านตารางได้ ตรวจแอปของคุณเองใน 2 นาที",
   "sub": "A two-minute check for Supabase apps",
   "line": [
@@ -41,11 +198,11 @@
    "send"
   ],
   "hue": 258,
-  "hash": "968215024f"
+  "hash": "8f2f1c1830"
  },
  {
   "out": "og/studio/n/php2shell-fixed-releases-and-restart",
-  "kicker": "Hongdam Studio · Security · 24 Oct 2026",
+  "kicker": "Hongdam Studio · Security · 24 October 2026",
   "title": "PHP2Shell: update, then restart",
   "th": "PHP2Shell: PHP 8.5.12, 8.4.27, 8.3.36 และ 8.2.35 ปิดช่องโหว่สั่งรันโค้ดจากระยะไกล 2 รายการ",
   "sub": "Two PHP flaws, fixed 21 October 2026",
@@ -55,13 +212,13 @@
    "lock"
   ],
   "hue": 292,
-  "hash": "e2c223c998"
+  "hash": "1af4e69b10"
  },
  {
   "out": "og/studio/n/automation-cost-per-run",
-  "kicker": "Hongdam Studio · Automation · 24 Oct 2026",
-  "title": "Zapier $1,149 or a Worker $5",
-  "th": "เวิร์กโฟลว์รับออเดอร์เดียวกัน 30,000 รอบต่อเดือน: Zapier 1,149 ดอลลาร์ Make 116 ดอลลาร์ Worker 5 ดอลลาร์",
+  "kicker": "Hongdam Studio · Automation · 24 October 2026",
+  "title": "Zapier $1,149 or Cloudflare $5",
+  "th": "เวิร์กโฟลว์รับออเดอร์เดียวกัน 30,000 รอบต่อเดือน: Zapier 1,149 ดอลลาร์ Make 116 ดอลลาร์ Cloudflare Workers 5 ดอลลาร์",
   "sub": "One order workflow, 30,000 runs a month",
   "line": [
    "gears",
@@ -69,6 +226,6 @@
    "done"
   ],
   "hue": 225,
-  "hash": "d64eb1c4cc"
+  "hash": "74c8117648"
  }
 ]

@@ -1,0 +1,25 @@
+/* Questions (tools/build_questions.py): the crawl on the front pages and the list at /questions/.
+   The crawl is Mot Dang's gold-price line: small type moving slowly sideways; a dot in each question's category colour. */
+
+.qs-crawl { display: flex; max-width: 100%; overflow: hidden; margin: -.6rem 0 1.4rem; font: .8rem/1.6 var(--mono); color: var(--mut); white-space: nowrap }
+.qs-w { flex: 1; min-width: 0; overflow: hidden }
+.qs-r { display: inline-block }
+.qs-i { margin-right: 2.4rem; color: inherit; text-decoration: none }
+.qs-i::before { content: ""; display: inline-block; width: .5em; height: .5em; margin-right: .45em; border-radius: 50%; background: var(--line, var(--fg)); vertical-align: .08em }
+.qs-i b { font-weight: 600; color: var(--fg) }
+.qs-i:hover, .qs-i:focus-visible { text-decoration: underline; text-underline-offset: .2em }
+@media (prefers-reduced-motion: no-preference) { .qs-crawl.go .qs-r { animation: qs-crawl var(--qd, 400s) linear infinite }
+  .qs-crawl.go:hover .qs-r, .qs-crawl.go:focus-within .qs-r { animation-play-state: paused } }
+@media (prefers-reduced-motion: reduce) { .qs-w { overflow-x: auto } }
+@keyframes qs-crawl { to { transform: translateX(-50%) } }
+
+/* the page */
+.qs-find { margin: 0 0 1.6rem }
+.qs-n { min-height: 1.5em; margin: .5rem 0 0; color: var(--mut); font-size: .95rem }
+.qs-page { margin: 0 }
+.qs-page li { margin: 0 0 .75rem }
+.qs-page a { text-decoration: none }
+.qs-page .qt { display: block; overflow-wrap: anywhere }
+.qs-page .sv { display: block; margin-top: .15rem; color: var(--mut); font-size: .9rem }
+.qs-page .sv::after { content: " →" }
+.qs-page a:hover .qt, .qs-page a:focus-visible .qt { text-decoration: underline; text-underline-offset: .18em }

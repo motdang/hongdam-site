@@ -111,7 +111,7 @@
   {
    "id": "visa-90day",
    "type": "category",
-   "en": "90-day report",
+   "en": "90-day report to immigration",
    "th": "รายงานตัว 90 วัน",
    "price": {
     "quote": true
@@ -122,7 +122,7 @@
   {
    "id": "visa-tm30",
    "type": "category",
-   "en": "TM30 address notice",
+   "en": "TM30 notice of where a foreigner lives",
    "th": "แจ้งที่พัก ตม.30",
    "price": {
     "quote": true
@@ -144,7 +144,7 @@
   {
    "id": "visa-borderrun",
    "type": "category",
-   "en": "Border run",
+   "en": "Border run (leave Thailand and enter again for a new stay period)",
    "th": "วีซ่ารัน ข้ามด่าน",
    "price": {
     "quote": true
@@ -199,7 +199,7 @@
   {
    "id": "visa-bank",
    "type": "category",
-   "en": "Bank letters and accounts",
+   "en": "Bank letters for your visa, and bank accounts",
    "th": "หนังสือรับรองจากธนาคารและบัญชี",
    "price": {
     "quote": true
@@ -221,7 +221,7 @@
   {
    "id": "visa-tracker",
    "type": "category",
-   "en": "Stay dates tracked",
+   "en": "Tracking your stay dates",
    "th": "ติดตามวันพำนัก",
    "price": {
     "free": true
@@ -252,7 +252,7 @@
   {
    "id": "workers-mou",
    "type": "category",
-   "en": "MOU recruitment",
+   "en": "Hiring foreign workers under a government agreement (MOU)",
    "th": "นำเข้าแรงงานแบบ MOU",
    "price": {
     "quote": true
@@ -349,7 +349,7 @@
   {
    "id": "co-books",
    "type": "category",
-   "en": "Books in Thai and English",
+   "en": "Bookkeeping in Thai and English",
    "th": "บัญชีสองภาษา",
    "price": {
     "quote": true
@@ -479,7 +479,7 @@
   {
    "id": "lang-leaves",
    "type": "category",
-   "en": "Lanna manuscript transcription",
+   "en": "Lanna (northern Thai) manuscript transcription",
    "th": "ถอดอักษรใบลานล้านนา",
    "price": {
     "baht": 500
@@ -510,7 +510,7 @@
   {
    "id": "web-minisite",
    "type": "category",
-   "en": "Minisite",
+   "en": "Minisite (a small website)",
    "th": "มินิไซต์",
    "price": {
     "baht": 10000
@@ -554,7 +554,7 @@
   {
    "id": "web-search",
    "type": "category",
-   "en": "Search for your site",
+   "en": "A search box for your site",
    "th": "ช่องค้นหาในเว็บของคุณ",
    "price": {
     "baht": 5000
@@ -565,7 +565,7 @@
   {
    "id": "web-sharecard",
    "type": "category",
-   "en": "Share cards",
+   "en": "Share cards (link preview pictures)",
    "th": "การ์ดแชร์ลิงก์",
    "price": {
     "baht": 500
@@ -587,7 +587,7 @@
   {
    "id": "web-license",
    "type": "category",
-   "en": "A copy of a site for another city",
+   "en": "A copy of a site for use in another city",
    "th": "สำเนาเว็บสำหรับเมืองอื่น",
    "price": {
     "quote": true
@@ -598,7 +598,7 @@
   {
    "id": "web-mail",
    "type": "category",
-   "en": "Mail on your own domain",
+   "en": "Email on your own domain",
    "th": "อีเมลโดเมนของคุณเอง",
    "price": {
     "baht": 1000
@@ -640,7 +640,7 @@
   {
    "id": "ai-line",
    "type": "category",
-   "en": "One LINE for many businesses",
+   "en": "One LINE account for many businesses",
    "th": "ไลน์เดียวสำหรับหลายธุรกิจ",
    "price": {
     "quote": true
@@ -651,7 +651,7 @@
   {
    "id": "ai-whitelabel",
    "type": "category",
-   "en": "AI assistant under your own name",
+   "en": "AI assistant with your own name on it",
    "th": "ผู้ช่วยเอไอในชื่อของคุณ",
    "price": {
     "quote": true
@@ -662,7 +662,7 @@
   {
    "id": "ai-bots",
    "type": "category",
-   "en": "Bot jobs",
+   "en": "Jobs for bots",
    "th": "งานของบอท",
    "price": {
     "baht": 100
@@ -673,7 +673,7 @@
   {
    "id": "ai-micro",
    "type": "category",
-   "en": "Microtasks",
+   "en": "Microtasks (very small jobs)",
    "th": "งานจิ๋ว",
    "price": {
     "baht": 0.1
@@ -684,7 +684,7 @@
   {
    "id": "ai-batch",
    "type": "category",
-   "en": "Bulk text jobs",
+   "en": "Large batches of text jobs",
    "th": "งานข้อความจำนวนมาก",
    "price": {
     "baht": 500
@@ -715,7 +715,7 @@
   {
    "id": "sec-php",
    "type": "category",
-   "en": "PHP fix after PHP2Shell",
+   "en": "PHP fix after the PHP2Shell security hole",
    "th": "แก้ PHP หลังช่องโหว่ PHP2Shell",
    "price": {
     "her": "priced by bookings at hongdam.net/php"
@@ -726,7 +726,7 @@
   {
    "id": "sec-packs",
    "type": "category",
-   "en": "Probe packs",
+   "en": "Chatbot test packs (probe packs)",
    "th": "ชุดคำทดสอบ",
    "price": {
     "her": "as listed on the market"
@@ -737,7 +737,7 @@
   {
    "id": "sec-mail",
    "type": "category",
-   "en": "Mail spoofing check",
+   "en": "Email spoofing check (faked sender addresses)",
    "th": "ตรวจการปลอมอีเมล",
    "price": {
     "baht": 1000
@@ -748,7 +748,7 @@
   {
    "id": "sec-msp",
    "type": "category",
-   "en": "Call lists for IT providers",
+   "en": "Phone lists of IT service companies",
    "th": "รายชื่อโทรหาผู้ให้บริการไอที",
    "price": {
     "quote": true
@@ -759,7 +759,7 @@
   {
    "id": "sec-awards",
    "type": "category",
-   "en": "Security award entries",
+   "en": "Entries for security awards",
    "th": "สมัครรางวัลด้านความปลอดภัย",
    "price": {
     "quote": true
@@ -779,7 +779,7 @@
   {
    "id": "data-leads",
    "type": "category",
-   "en": "Lead sheets and call lists",
+   "en": "Lists of possible customers (lead sheets) and call lists",
    "th": "รายชื่อลูกค้าเป้าหมาย",
    "price": {
     "baht": 5000
@@ -790,7 +790,7 @@
   {
    "id": "data-crawl",
    "type": "category",
-   "en": "Crawlers and data pipelines",
+   "en": "Programs that collect data automatically (crawlers)",
    "th": "เก็บข้อมูลอัตโนมัติ",
    "price": {
     "baht": 10000
@@ -812,7 +812,7 @@
   {
    "id": "data-match",
    "type": "category",
-   "en": "Record checks: same place, names, links",
+   "en": "Record checks: same place? names? links?",
    "th": "ตรวจข้อมูล: ที่เดียวกันไหม ชื่อตรงไหม ลิงก์ใช่ไหม",
    "price": {
     "baht": 0.1
@@ -823,7 +823,7 @@
   {
    "id": "data-prices",
    "type": "category",
-   "en": "Price and stock reading",
+   "en": "Reading prices and stock levels from websites",
    "th": "อ่านราคาและสต็อก",
    "price": {
     "baht": 2000
@@ -834,7 +834,7 @@
   {
    "id": "data-traffic",
    "type": "category",
-   "en": "Visitor counts: people and machines",
+   "en": "Website visitor counts: people and bots",
    "th": "นับผู้เข้าชม คนกับเครื่อง",
    "price": {
     "baht": 1000
@@ -865,7 +865,7 @@
   {
    "id": "pl-page",
    "type": "category",
-   "en": "Place page",
+   "en": "A web page for one place",
    "th": "หน้าสถานที่",
    "price": {
     "free": true
@@ -909,7 +909,7 @@
   {
    "id": "pl-trades",
    "type": "category",
-   "en": "Tradespeople who keep their own hours",
+   "en": "Tradespeople with no fixed opening hours",
    "th": "ช่างที่เปิดตามเวลาตัวเอง",
    "price": {
     "baht": 5
@@ -920,7 +920,7 @@
   {
    "id": "pl-roadworks",
    "type": "category",
-   "en": "Roadworks",
+   "en": "Roadworks (road repairs and closures)",
    "th": "ถนนซ่อม",
    "price": {
     "baht": 100
@@ -931,7 +931,7 @@
   {
    "id": "pl-maps",
    "type": "category",
-   "en": "Maps and drawn maps",
+   "en": "Maps and illustrated maps",
    "th": "แผนที่และแผนที่วาด",
    "price": {
     "baht": 1000
@@ -942,7 +942,7 @@
   {
    "id": "pl-street",
    "type": "category",
-   "en": "Street rides on camera",
+   "en": "Street pictures from a camera on a vehicle",
    "th": "ภาพถนนจากกล้องติดรถ",
    "price": {
     "baht": 300
@@ -986,7 +986,7 @@
   {
    "id": "field",
    "type": "group",
-   "en": "Field work",
+   "en": "Field work (jobs done on location)",
    "th": "งานภาคสนาม",
    "price": null,
    "href": null,
@@ -995,7 +995,7 @@
   {
    "id": "field-photos",
    "type": "category",
-   "en": "Pictures of places, with EXIF",
+   "en": "Pictures of places, with date and location data (EXIF)",
    "th": "ภาพสถานที่พร้อมข้อมูล EXIF",
    "price": {
     "baht": 50
@@ -1017,7 +1017,7 @@
   {
    "id": "field-call",
    "type": "category",
-   "en": "Calling a business to check",
+   "en": "Phoning a business to check details",
    "th": "โทรถามร้าน",
    "price": {
     "baht": 5
@@ -1028,7 +1028,7 @@
   {
    "id": "field-errand",
    "type": "category",
-   "en": "Errands in the neighbourhood",
+   "en": "Errands near your home",
    "th": "งานแถวบ้าน",
    "price": {
     "baht": 100
@@ -1059,7 +1059,7 @@
   {
    "id": "media-graphics",
    "type": "category",
-   "en": "Graphics and brand looks",
+   "en": "Graphics and brand design",
    "th": "กราฟิกและหน้าตาแบรนด์",
    "price": {
     "baht": 3000
@@ -1070,7 +1070,7 @@
   {
    "id": "media-reels",
    "type": "category",
-   "en": "Reels and short video",
+   "en": "Short videos (reels)",
    "th": "รีลและวิดีโอสั้น",
    "price": {
     "baht": 3000
@@ -1081,7 +1081,7 @@
   {
    "id": "media-doodles",
    "type": "category",
-   "en": "Code-drawn pictures",
+   "en": "Pictures drawn with code",
    "th": "ภาพวาดด้วยโค้ด",
    "price": {
     "baht": 500
@@ -1092,7 +1092,7 @@
   {
    "id": "media-photoday",
    "type": "category",
-   "en": "A photo day",
+   "en": "A day of photography",
    "th": "วันถ่ายภาพ",
    "price": {
     "trade": true
@@ -1103,7 +1103,7 @@
   {
    "id": "media-print",
    "type": "category",
-   "en": "Print: signs, QR codes, sheets",
+   "en": "Printing: signs, QR codes, sheets",
    "th": "งานพิมพ์ ป้าย คิวอาร์ แผ่นงาน",
    "price": {
     "baht": 500
@@ -1114,7 +1114,7 @@
   {
    "id": "media-decks",
    "type": "category",
-   "en": "Pitch decks",
+   "en": "Pitch decks (slides to present a business idea)",
    "th": "สไลด์นำเสนอ",
    "price": {
     "baht": 5000
@@ -1145,7 +1145,7 @@
   {
    "id": "words-articles",
    "type": "category",
-   "en": "Articles and explainers",
+   "en": "Articles and explanations",
    "th": "บทความและคำอธิบาย",
    "price": {
     "baht": 3000
@@ -1167,7 +1167,7 @@
   {
    "id": "words-social",
    "type": "category",
-   "en": "Social posts",
+   "en": "Social media posts",
    "th": "โพสต์โซเชียล",
    "price": {
     "baht": 500
@@ -1200,7 +1200,7 @@
   {
    "id": "words-copy",
    "type": "category",
-   "en": "Words for a website",
+   "en": "Text for a website",
    "th": "ข้อความบนเว็บไซต์",
    "price": {
     "baht": 2000
@@ -1220,7 +1220,7 @@
   {
    "id": "sales-seller",
    "type": "category",
-   "en": "Seller referrals",
+   "en": "Finding people to become sellers",
    "th": "ชวนคนมาเป็นนักขาย",
    "price": {
     "baht": 500
@@ -1231,7 +1231,7 @@
   {
    "id": "sales-lister",
    "type": "category",
-   "en": "List homes and home help",
+   "en": "Listing homes and home help",
    "th": "ลงประกาศบ้านและแม่บ้าน",
    "price": {
     "her": "60% of each fee"
@@ -1295,7 +1295,7 @@
   {
    "id": "money-paybox",
    "type": "category",
-   "en": "Pay box: PromptPay QR and slip check",
+   "en": "A payment box: PromptPay QR code and slip check",
    "th": "กล่องรับเงินพร้อมเพย์และตรวจสลิป",
    "price": {
     "baht": 3000
@@ -1317,7 +1317,7 @@
   {
    "id": "money-payouts",
    "type": "category",
-   "en": "Team payouts on the 1st",
+   "en": "Team payouts on the 1st of the month",
    "th": "จ่ายทีมทุกวันที่ 1",
    "price": {
     "quote": true
@@ -1339,7 +1339,7 @@
   {
    "id": "trade",
    "type": "group",
-   "en": "Paid in kind",
+   "en": "Paid in goods or services",
    "th": "จ่ายด้วยของหรืองาน",
    "price": null,
    "href": null,
@@ -1370,7 +1370,7 @@
   {
    "id": "trade-nights",
    "type": "category",
-   "en": "Paid in room nights",
+   "en": "Paid in hotel room nights",
    "th": "จ่ายด้วยห้องพัก",
    "price": {
     "trade": true
@@ -1425,7 +1425,7 @@
   {
    "id": "trade-treatments",
    "type": "category",
-   "en": "Paid in treatments",
+   "en": "Paid in beauty treatments",
    "th": "จ่ายด้วยบริการความงาม",
    "price": {
     "trade": true
@@ -1436,7 +1436,7 @@
   {
    "id": "trade-posts",
    "type": "category",
-   "en": "Paid in posts",
+   "en": "Paid in social media posts",
    "th": "จ่ายด้วยโพสต์",
    "price": {
     "trade": true
@@ -1447,7 +1447,7 @@
   {
    "id": "trade-costumes",
    "type": "category",
-   "en": "Paid in costumes",
+   "en": "Paid in costume hire",
    "th": "จ่ายด้วยชุดเช่า",
    "price": {
     "trade": true
@@ -1672,7 +1672,7 @@
   {
    "id": "cul-amulets",
    "type": "category",
-   "en": "Amulet pages and the amulet camera",
+   "en": "Amulet pages and a camera for checking amulets",
    "th": "หน้าพระเครื่องและกล้องส่องพระ",
    "price": {
     "her": "Gold ฿3,000 a year"
@@ -1683,7 +1683,7 @@
   {
    "id": "cul-yant",
    "type": "category",
-   "en": "Yant cloths",
+   "en": "Yant cloths (cloths with sacred diagrams)",
    "th": "ผ้ายันต์",
    "price": {
     "quote": true
@@ -1694,7 +1694,7 @@
   {
    "id": "cul-sukhwan",
    "type": "category",
-   "en": "Su khwan ceremony packages",
+   "en": "Su khwan (blessing ceremony) packages",
    "th": "พิธีสู่ขวัญ",
    "price": {
     "quote": true
@@ -1705,7 +1705,7 @@
   {
    "id": "cul-magic",
    "type": "category",
-   "en": "Close-up magic",
+   "en": "Close-up magic (tricks done close to you)",
    "th": "มายากลระยะใกล้",
    "price": {
     "quote": true
@@ -1747,7 +1747,7 @@
   {
    "id": "food-pantry",
    "type": "category",
-   "en": "Food pantry",
+   "en": "Food pantry (a shared food cabinet)",
    "th": "ตู้ปันสุข",
    "price": {
     "free": true
@@ -1769,7 +1769,7 @@
   {
    "id": "impossible",
    "type": "group",
-   "en": "Impossible",
+   "en": "Impossible problems",
    "th": "เป็นไปไม่ได้",
    "price": null,
    "href": null,
@@ -1781,7 +1781,7 @@
    "en": "Traffic lights that read the road",
    "th": "ไฟจราจรที่อ่านถนนได้",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-lights"
@@ -1789,10 +1789,10 @@
   {
    "id": "imp-smoke",
    "type": "category",
-   "en": "A burning season without the burning",
+   "en": "The burning season (field fires and smoke) without the burning",
    "th": "หน้าเผาที่ไม่ต้องเผา",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-smoke"
@@ -1800,10 +1800,10 @@
   {
    "id": "imp-trucks",
    "type": "category",
-   "en": "Every red truck on the map",
+   "en": "Every red songthaew (shared taxi truck) on the map",
    "th": "รถแดงทุกคันบนแผนที่",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-trucks"
@@ -1811,10 +1811,10 @@
   {
    "id": "imp-floods",
    "type": "category",
-   "en": "Which streets flood, a day ahead",
+   "en": "Know one day ahead which streets will flood",
    "th": "รู้ล่วงหน้าหนึ่งวันว่าถนนไหนจะท่วม",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-floods"
@@ -1825,7 +1825,7 @@
    "en": "Read every Lanna palm-leaf manuscript",
    "th": "อ่านคัมภีร์ใบลานล้านนาทุกผูก",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-leaves"
@@ -1836,7 +1836,7 @@
    "en": "An address a stranger can find",
    "th": "ที่อยู่ที่คนแปลกหน้าหาเจอ",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-address"
@@ -1844,10 +1844,10 @@
   {
    "id": "imp-open",
    "type": "category",
-   "en": "Know what is open right now",
+   "en": "Know what is open when you ask",
    "th": "รู้ว่าร้านไหนเปิดอยู่ตอนนี้",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-open"
@@ -1855,10 +1855,10 @@
   {
    "id": "imp-roads",
    "type": "category",
-   "en": "Half the deaths on the road",
+   "en": "Road deaths cut in half",
    "th": "คนตายบนถนนลดลงครึ่งหนึ่ง",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-roads"
@@ -1866,10 +1866,10 @@
   {
    "id": "imp-dogs",
    "type": "category",
-   "en": "Someone for every soi dog",
+   "en": "Someone to care for every street dog (soi dog)",
    "th": "หมาซอยทุกตัวมีคนดูแล",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-dogs"
@@ -1877,10 +1877,10 @@
   {
    "id": "imp-tap",
    "type": "category",
-   "en": "Water you drink from the tap",
+   "en": "Tap water that is safe to drink",
    "th": "น้ำประปาที่ดื่มได้จากก๊อก",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-tap"
@@ -1888,10 +1888,10 @@
   {
    "id": "imp-ping",
    "type": "category",
-   "en": "A Ping River you can swim in",
+   "en": "A Ping River (in Chiang Mai) clean enough to swim in",
    "th": "แม่น้ำปิงที่ลงว่ายได้",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-ping"
@@ -1899,10 +1899,10 @@
   {
    "id": "imp-coffee",
    "type": "category",
-   "en": "The farmer's share of a cup",
+   "en": "The farmer's share of the price of a cup of coffee",
    "th": "ส่วนของเกษตรกรในกาแฟหนึ่งแก้ว",
    "price": {
-    "her": "Prayer, nam daeng, gratitude and $100"
+    "her": "A prayer, nam daeng (red soda), thanks and US$100"
    },
    "href": null,
    "page": "https://hongdam.net/tasks/c/imp-coffee"

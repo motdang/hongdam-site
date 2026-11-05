@@ -54,6 +54,8 @@ export async function handle(request, env, opts, { fetcher = fetch, waitUntil = 
     `฿${baht} for ${choice.svc === 'check' ? 'checking a translation' : 'a new translation'}, ` +
     `${Math.floor(Number(choice.pages)) || 1} page(s)${choice.stamp ? ', stamped' : ''}.\n` +
     `Reference given to the payer: ${ref}\nBank reference: ${r.transRef}\nConfirmed by SlipOK on ${opts.site}.`)
-  if (waitUntil) waitUntil(m); else await m
+  // the site's own next step for a paid translation (hongdam.net: its ticket on the Team Wheel)
+  const a = opts.after ? opts.after({ ref, baht, choice, transRef: r.transRef }).catch(() => {}) : null
+  if (waitUntil) { waitUntil(m); if (a) waitUntil(a) } else await Promise.all([m, a])
   return json({ ok: true, ref, amount: baht })
 }

@@ -53,7 +53,7 @@ h1{margin:0;font-size:${big.length > 40 ? 52 : big.length > 26 ? 62 : big.length
 <script src="file://${ALL}"></script>`
 
 const CARDS = [
-  ['og/shop/buy', 'buy', 'ซื้อ · 购买', 'Pick it, pay, we start. PromptPay, PayPal or Wise.', ['send', 'coin', 'gears', 'done'], 145, 'cart'],
+  ['og/shop/buy', 'buy', 'ซื้อ · 购买', 'Pick a service, pay, and we start. PromptPay, PayPal or Wise.', ['send', 'coin', 'gears', 'done'], 145, 'cart'],
   ['og/shop/ask', 'write to us', 'เขียนถึงเรา · 给我们留言', 'Something not on the list? Write what you need.', ['chat', 'envelope', 'paper-boat'], 250, 'mailbox'],
 ]
 // every page in data/pages.json, one card per language where it has more than one
@@ -87,7 +87,7 @@ const KIT = path.resolve(ROOT, '../../share-cards')
 const jobs = [
   { out: path.join(DOCS, 'for/cca/give/og.jpg'), title: 'Giving desk', sub: 'Gifts from anywhere · รับเงินบริจาคจากทุกที่', kicker: 'Cultural Crossroads Asia',
     url: 'hongdam.net/for/cca/give/', image: path.join(DOCS, 'for/cca/img/weaver.jpg'), accent: '#1d2b8f' },
-  { out: path.join(DOCS, 'for/eveline/demo/og.jpg'), title: '34 schools, one province', sub: 'The page to edit · FERC, Chiang Mai', kicker: 'For Eveline Willi',
+  { out: path.join(DOCS, 'for/eveline/demo/og.jpg'), title: '34 schools in Chiang Mai province', sub: 'The page to edit · FERC, Chiang Mai', kicker: 'For Eveline Willi',
     url: 'hongdam.net/for/eveline/demo/', image: path.join(DOCS, 'for/eveline/img/school.jpg'), focus: '50% 40%' },
 ]
 const jf = path.join(DOCS, 'og', '_jobs.json')

@@ -25,6 +25,36 @@ rows in `svc_order` (D1 hongdam-tasks, `migrations/0006_services.sql`): the page
 Hongdam Desk bot (hongdam-desk/grab.py), which posts its price to `/api/services/price`.
 `node tests/services.test.mjs`; `node tools/services_sim.mjs` runs a year under four demands.
 
+Baht, dollars or euros (her ask 2026-10-24): `docs/assets/cur.js` adds a ฿ / $ / € switch to the top bar and shows every `.amt` price in the reader's currency, rounded up to a whole unit, at the day's rate from `/api/fx` (European Central Bank reference rates through frankfurter.dev, open.er-api.com as the spare; `functions/_fx.js`). A first visit opens in baht in Thailand and its neighbours, euros in Europe, dollars elsewhere. `/api/buy` takes `pay` (THB, USD or EUR) and asks for the same converted amount; the column `svc_buy.pay` (`migrations/0011_pay.sql`) keeps it and the baht for PromptPay. Card or PayPal on PayPal's own page (`functions/_paypal.js`, `POST /api/buy/card`) is on once `PAYPAL_CLIENT_ID` and `PAYPAL_SECRET` are set on the Pages project; a payment counts only when PayPal reports it COMPLETED for the order's ref, amount and currency. `node tests/fx.test.mjs`, `node tests/card.test.mjs`.
+
+Bitcoin by Lightning (her ask 2026-10-24): on while `PAY.lightning` in `functions/_shop.js` holds a Lightning Address (empty turns it off). The Buy page asks `POST /api/buy/ln` for a bill from that address's wallet (LNURL-pay) for the amount due, in sats at the bitcoin price from Kraken (Coinbase as the spare) and the day's exchange rate; the bill is kept on the order in `pay.ln`. When the wallet gives a verify address (LUD-21), `POST /api/buy/ln/check` and the order page mark the order paid once the wallet reports the bill settled with a preimage that hashes to its payment hash; the buyer can also press "I paid by Lightning", and the team checks the wallet. A bill is kept until it runs out. With an address set, `tools/build_shop.py` names Lightning in the pay line of the footer and the Buy form (rebuild the pages). The footer links offrampt.net, crypto to baht in Thailand, and so does the Lightning box. `node tests/ln.test.mjs`.
+
+## Black Swan Event? Hongdam Studio is all ears
+
+Her ask 2026-10-24: a Hongdam Studio minisite on black swans and black swan predictions, with toys and prediction storage, very shareable, in few words with each one explained, for second-language readers and short attention. hongdam.net/studio/black-swan/ (and /th/, /my/, /zh/, /de/): her photo of a bronze hongsa (CC BY 4.0, credit Nan Peacock; the licence is also in the files' EXIF and XMP and in the page's ImageObject JSON-LD), four toys (count white swans until a black one comes; a swan meter, likely × big; 100 days with one huge day; black swan or not, with everyone's votes), a form that saves a prediction with its odds, size and check date, and the list of predictions with votes (will it happen, then after the check month, did it happen). Each prediction has a short page, hongdam.net/swan/<id> (`functions/swan/[id].js`), whose link preview carries the prediction as its title and an odds picture (`docs/og/swan/o0–o4.jpg`); the page also makes a 1080 × 1350 picture of the prediction to share or save.
+
+- Words: `data/blackswan.json` → `python3 tools/build_blackswan.py` (pages, the /swan/<id> template at `studio/black-swan/one/`, sitemap and llms.txt blocks); the Studio front pages carry a link band (`tools/build_studio.py` swan_band).
+- Toys, form, list, picture: `docs/assets/blackswan.js`, `blackswan.css`. Dingbats: group p-blackswan, `DINGBATS_SRC=<doodle-dingbats>/src tools/blackswan_dingbats.sh` (that group only).
+- Link-preview pictures: `node tools/blackswan_cards.mjs`.
+- Storage: `functions/api/swan/` (D1 tables in `migrations/0012_swan.sql`). A prediction naming the Thai royal family, or one Llama Guard flags, waits for the team (a note in #help-desk); `POST /api/swan/<id>/state {"state":"ok"}` with `Bearer TASKS_ADMIN` lists it, `GET /api/swan/held` shows the waiting ones. Three reports from three addresses take one off the list. Six new predictions a day from one address, 400 for the site. `node tests/swan.test.mjs`.
+
+## DJ, meet the company
+
+Her ask 2026-10-26: a Hongdam Studio minisite for DJ, her advisor, as a portfolio and introduction to the company, in few words. hongdam.net/studio/dj/ and /th/studio/dj/, noindex and out of the sitemap and llms.txt. Four names (Mot Dang, Hongdam, Chiang Mai Visa Desk, Hongdam Studio), each with an Isotype row: one picture for a fixed number, the last one cut to what is left, counted at build (Mot Dang pages and public repositories from `data/studio/counts.json`, shop services from `data/shop.json`, Visa Desk services from chiangmaivisadesk.com with `data/studio/dj.counts.json` as the fallback). Then the work and the papers as thumbnails of each site's own link-preview picture (`docs/studio/dj/img/`), and the crew.
+
+- Words: `data/studio/dj.json` → `python3 tools/build_dj.py`. Look: `docs/assets/dj.css`, `dj.js` (rows fill in as they come into view).
+- Spares (her word 2026-10-26, DJ asked about a single point of failure): each part of the company with its copies and its monthly cost. `eval "$(~/.claude/bin/cfenv)"; python3 tools/dj_spares.py` counts them (org admins and repositories from GitHub, R2 storage and requests from Cloudflare, open-model jobs from ~/.claude/state/ow.tsv, the server, box and Workers prices as bought) into `data/studio/dj.spares.json`; then rebuild.
+- Dingbats: group p-dj, `DINGBATS_SRC=<doodle-dingbats>/src tools/group_dingbats.sh p-dj` (that group only).
+- Link-preview pictures: `node tools/dj_card.mjs`.
+
+## Crypto safety: plan for worse
+
+Her ask 2026-10-30, the day after the Binance theft (about US$6.3 billion): a Hongdam minisite with a paid service, linked both ways with offrampt.net, planned for something worse than that day. hongdam.net/studio/crypto-safety/ (and /th/, /my/, /zh/, /de/): the news of the day with a source on each line, eight steps from a paused exchange to a family that cannot reach the coins, four yes-or-no questions that point to a service, the services with Buy, and a link to the exchange board and calculator at offrampt.net/frozen/. One shop card in Security, crypto-safe: safety check ฿3,000, your own wallet ฿3,000, family plan ฿5,000, after a loss ฿4,000; the four items walk monthly like the rest. The Studio front page carries a link band.
+
+- Words: `data/studio/crypto.json` → `python3 tools/build_crypto.py` (pages, sitemap and llms.txt blocks); `python3 tools/build_studio.py` for the band.
+- Look and questions: `docs/assets/crypto.css`, `crypto.js`. Dingbats: the fix group's bundle.
+- Link pictures: `DINGBATS_ALL=<doodle-dingbats>/dingbats.min.js node tools/crypto_card.mjs` (docs/og/studio/crypto-<lang>.jpg); the card's Buy-link picture: `node tools/share_cards.mjs crypto-safe`.
+
 ## Publishing
 
 Live at https://hongdam.net (Cloudflare Pages project `hongdam`). A merge to `main`

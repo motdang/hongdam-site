@@ -1,7 +1,18 @@
 {
- "og/studio/front": "e70194c766",
- "og/studio/notes": "1452947977",
- "og/studio/n/supabase-public-key-open-tables": "968215024f",
- "og/studio/n/php2shell-fixed-releases-and-restart": "e2c223c998",
- "og/studio/n/automation-cost-per-run": "d64eb1c4cc"
+ "og/studio/front": "9feaea641f",
+ "og/studio/notes": "4aecbf3521",
+ "og/studio/n/supabase-public-key-open-tables": "8f2f1c1830",
+ "og/studio/n/php2shell-fixed-releases-and-restart": "1af4e69b10",
+ "og/studio/n/automation-cost-per-run": "74c8117648",
+ "og/studio/n/deepseek-flash-1017-faster-not-shorter": "029ada3213",
+ "og/studio/n/lovable-agent-tools-no-rate-limit": "5222e163c0",
+ "og/studio/n/magento-polyshell-on-cisa-kev": "50b4273bf3",
+ "og/studio/n/github-agentic-workflows-default-cap": "cdc9258e49",
+ "og/studio/n/thai-tokens-cost-by-model": "0bd533ec32",
+ "og/studio/n/link-cards-mastodon-bluesky": "20eca8fca5",
+ "og/studio/n/week-supabase-grants-brotli-mistral": "f83c5cb50d",
+ "og/studio/n/glm-5-3-leak-canary-test": "5a29c613f7",
+ "og/studio/n/npm-install-scripts-before-vercel": "a4ec29c324",
+ "og/studio/n/wordpress-upgrade-window-partial-vs-full": "04814c0003",
+ "og/studio/n/n8n-3-npm-ends-timeouts-no-way-back": "60b2f2766f"
 }

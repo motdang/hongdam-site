@@ -293,18 +293,18 @@ h1 em{background:rgba(22,11,4,.62);display:inline-block;padding:0 .18em;border-r
       </div>
       <div class="mapcol">
         <div id="map" role="application" aria-label="Map of the 137 Pillars House grounds"></div>
-        <div class="chip" id="chip" data-i="chip">Tap the map to drop a pin</div>
+        <div class="chip" id="chip" data-i="chip">Tap the map to put a pin</div>
         <div class="place-card" id="placeCard" hidden></div>
       </div>
       <div class="gcard" id="prompt">
         <div class="layerbar">
           <button type="button" class="layer" id="layerBtn" aria-pressed="true"><span data-i="layer">Trees</span> <b id="count" hidden>0</b></button>
         </div>
-        <h3 data-i="pH">Drop a pin where a tree stands</h3>
-        <p class="hint" data-i="pHint">Amber, if a tree stands out in your memory, tap the map where it stands. Drag a pin to move it.</p>
+        <h3 data-i="pH">Put a pin where a tree stands</h3>
+        <p class="hint" data-i="pHint">Amber, if you remember a tree, tap the map where it stands. Drag a pin to move it.</p>
         <ol class="pins" id="pins"></ol>
         <div class="row">
-          <a class="btn gold" id="send" href="#" aria-disabled="true" data-i="send">Send the pins to NaN</a>
+          <a class="btn gold" id="send" href="#" aria-disabled="true" data-i="send">Send the pins to NaN, who runs Hongdam</a>
           <button type="button" class="btn small" id="undo" data-i="undo">Undo</button>
           <button type="button" class="btn small" id="clear" data-i="clear">Clear</button>
         </div>
@@ -316,7 +316,7 @@ h1 em{background:rgba(22,11,4,.62);display:inline-block;padding:0 .18em;border-r
 <section id="studio" class="sec studio" aria-labelledby="s-h">
   <div class="sw">
     <h2 id="s-h" data-i="sH">For Jake</h2>
-    <p class="sub" data-i="s1">Drawn explainers put a technical subject on the screen and let the reader move it. Two of ours.</p>
+    <p class="sub" data-i="s1">An explainer is a page with drawings that teach one technical subject, and the reader can move the parts. Here are two of ours.</p>
     <div class="tiles">
       <a class="tile" href="https://nanobotco.github.io/golden-gate/" target="_blank" rel="noopener" id="t1">
         <img src="img/golden-gate.jpg" width="1000" height="667" alt="">
@@ -335,7 +335,7 @@ h1 em{background:rgba(22,11,4,.62);display:inline-block;padding:0 .18em;border-r
   <div class="in">
     <span class="kicker" data-i="lk">Amber and Jake</span>
     <h2 data-i="lh">Lunch at The Algonquin</h2>
-    <a class="btn gold" id="lunch" href="mailto:nan@motdang.net?subject=Lunch%20at%20The%20Algonquin%20this%20week%3F" data-i="lunch">This week?</a>
+    <a class="btn gold" id="lunch" href="mailto:nan@motdang.net?subject=Lunch%20at%20The%20Algonquin%20this%20week%3F" data-i="lunch">Email NaN about lunch</a>
   </div>
   <!-- MARCUS: optional drawn menu card or table setting for the lunch band -->
   <p class="bcred" id="bandCred"></p>
@@ -414,8 +414,8 @@ var E=[
      b:'หลุยส์ ลีโอโนเวนส์ ได้รับแต่งตั้งเป็นผู้จัดการบริษัทบอร์เนียวคนแรกในเชียงใหม่ และเป็นคนแรกที่อยู่ในบ้านไม้สัก'},
  src:['phyl']},
 {id:'1888',y:'1888',diff:true,ph:'thaphae',pos:'50% 50%',
- en:{t:'A 100-year lease near Wat Ket',line:'Four teak houses go up on the east bank. One becomes the headquarters.',
-     b:'The company obtains a 100-year lease on a large plot near Wat Ket, on the east bank of the Ping River, and sends Louis Leonowens to set up a branch. He builds four teak houses. One becomes the company headquarters.'},
+ en:{t:'A 100-year lease near Wat Ket',line:'Four teak houses are built on the east bank. One becomes the headquarters.',
+     b:'The company obtains a 100-year lease on a large plot near Wat Ket, on the east bank of the Ping River, and sends Louis Leonowens to open a branch. He builds four teak houses. One becomes the company headquarters.'},
  th:{t:'สัญญาเช่า 100 ปีใกล้วัดเกต',line:'บ้านไม้สักสี่หลังขึ้นที่ฝั่งตะวันออก หลังหนึ่งเป็นที่ทำการใหญ่',
      b:'บริษัทได้สัญญาเช่า 100 ปีสำหรับที่ดินผืนใหญ่ใกล้วัดเกต ฝั่งตะวันออกของแม่น้ำปิง และส่งหลุยส์ ลีโอโนเวนส์มาตั้งสาขา เขาสร้างบ้านไม้สักสี่หลัง หลังหนึ่งเป็นที่ทำการใหญ่ของบริษัท'},
  src:['ccl']},
@@ -428,14 +428,14 @@ var E=[
      note:'หน้าประวัติของโรงแรมบอกว่าบ้านถูกย้ายจากฝั่งตะวันตกของแม่น้ำปิงมาอยู่ในพื้นที่ของบริษัท โดยไม่ระบุปี'},
  src:['jdp','lux','att','hot']},
 {id:'1941',y:'1941',diff:false,ph:'japan',pos:'50% 69%',
- en:{t:'The war reaches the house',line:'In December Japan seizes the company’s Chiang Mai assets.',
+ en:{t:'The Second World War',line:'In December Japan seizes the company’s Chiang Mai property.',
      b:'In December, Japan seizes the Borneo Company’s Chiang Mai assets, this house among them. William Bain and David Fleming McFie are arrested and held in Bangkok until the war ends.'},
  th:{t:'สงครามมาถึงบ้านหลังนี้',line:'เดือนธันวาคม ญี่ปุ่นยึดทรัพย์สินของบริษัทในเชียงใหม่',
      b:'เดือนธันวาคม ญี่ปุ่นยึดทรัพย์สินของบริษัทบอร์เนียวในเชียงใหม่ รวมทั้งบ้านหลังนี้ วิลเลียม เบน และเดวิด เฟลมมิง แมกฟี ถูกจับและคุมขังที่กรุงเทพฯ จนสงครามสิ้นสุด'},
  src:['hot']},
 {id:'bain',y:'1945+',ys:true,diff:false,ph:'museum',pos:'50% 38%',
  en:{t:'The Bain family',line:'William Bain buys the headquarters. His son Jack counts the pillars: 137.',
-     b:'The company sells its Chiang Mai headquarters to William Bain, a Scot who rose to Managing Director. His son Jack joins the company and raises his family on the grounds. Jack counts the pillars: 137. He also founds the Wat Ket museum.',
+     b:'The company sells its Chiang Mai headquarters to William Bain, a Scot (a person from Scotland) who became Managing Director. His son Jack joins the company and raises his family on the grounds. Jack counts the pillars: 137. He also founds the Wat Ket museum.',
      note:'No source gives the year of the sale. Locals call the house Baan Dam, the “Black House”. The hotel’s brand story calls it Baan Borneo.'},
  th:{t:'ครอบครัวเบน',line:'วิลเลียม เบน ซื้อที่ทำการใหญ่ แจ็กบุตรชายนับเสาได้ 137 ต้น',
      b:'บริษัทขายที่ทำการใหญ่ในเชียงใหม่ให้วิลเลียม เบน ชาวสกอตที่เติบโตขึ้นเป็นกรรมการผู้จัดการ แจ็ก เบน บุตรชายเข้าทำงานในบริษัทและเลี้ยงครอบครัวในบริเวณบ้าน แจ็กนับเสาได้ 137 ต้น และก่อตั้งพิพิธภัณฑ์วัดเกต',
@@ -459,7 +459,7 @@ var E=[
  src:['jdp','brand','phyl','att']},
 {id:'2026',y:'2026',diff:false,ph:'viharn',pos:'50% 55%',
  en:{t:'137 Pillars of Hope',line:'18 October, 5 to 10 pm: a charity dinner for the 137 children at Baan Unrak.',
-     b:'18 October, 5 to 10 pm. Philanthropy Connections Foundation and the hotel hold a charity dinner for the 137 children at Baan Unrak. An art exhibition, live and silent auctions, live music and a buffet fill the evening.'},
+     b:'18 October, 5 to 10 pm. Philanthropy Connections Foundation and the hotel hold a charity dinner for the 137 children at Baan Unrak. The evening has an art exhibition, live and silent auctions (where bids are written down), live music and a buffet.'},
  th:{t:'137 Pillars of Hope',line:'18 ตุลาคม 17.00 ถึง 22.00 น. งานเลี้ยงการกุศลเพื่อเด็ก 137 คนที่ Baan Unrak',
      b:'18 ตุลาคม 17.00 ถึง 22.00 น. Philanthropy Connections Foundation และโรงแรมจัดงานเลี้ยงการกุศลเพื่อเด็ก 137 คนที่ Baan Unrak มีนิทรรศการศิลปะ การประมูลทั้งแบบเปิดและแบบเงียบ ดนตรีสด และบุฟเฟต์'},
  src:['don']}
@@ -469,7 +469,7 @@ var TABLE={
  en:{h:'Sources differ on the first years',rows:[
    ['1886','Hotel history page: Borneo Company opens its Chiang Mai office; Leonowens is Superintendent.'],
    ['1887','Phyl On The Go: Leonowens becomes first company manager.'],
-   ['1888','Chiang Mai CityLife: 100-year lease near Wat Ket; Leonowens sets up the branch.'],
+   ['1888','Chiang Mai CityLife: 100-year lease near Wat Ket; Leonowens opens the branch.'],
    ['1889','Journal des Palaces, The Luxury Editor: the “original 1889 structure”.']]},
  th:{h:'แหล่งข้อมูลไม่ตรงกันในช่วงปีแรก ๆ',rows:[
    ['1886','หน้าประวัติโรงแรม: บริษัทบอร์เนียวเปิดสำนักงานเชียงใหม่ ลีโอโนเวนส์เป็นผู้กำกับดูแล'],
@@ -482,17 +482,17 @@ var TABLE={
 var T={
 en:{kicker:'Made for Amber and Jake Mooney',eyebrow:'Chiang Mai · 1883 to 2026',h1a:'137 Pillars House',h1b:'then and now',
  mH:'The grounds',place:'137 Pillars House, Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai.',
- chip:'Tap the map to drop a pin',layer:'Trees',pH:'Drop a pin where a tree stands',
- pHint:'Amber, if a tree stands out in your memory, tap the map where it stands. Drag a pin to move it.',
- send:'Send the pins to NaN',undo:'Undo',clear:'Clear',
- sH:'For Jake',s1:'Drawn explainers put a technical subject on the screen and let the reader move it. Two of ours.',
+ chip:'Tap the map to put a pin',layer:'Trees',pH:'Put a pin where a tree stands',
+ pHint:'Amber, if you remember a tree, tap the map where it stands. Drag a pin to move it.',
+ send:'Send the pins to NaN, who runs Hongdam',undo:'Undo',clear:'Clear',
+ sH:'For Jake',s1:'An explainer is a page with drawings that teach one technical subject, and the reader can move the parts. Here are two of ours.',
  open:'Open',tnote:'Screenshots of nanobotco.github.io/golden-gate and /warp-and-weft, NaN’s own pages.',
- lk:'Amber and Jake',lh:'Lunch at The Algonquin',lunch:'This week?',
+ lk:'Amber and Jake',lh:'Lunch at The Algonquin',lunch:'Email NaN about lunch',
  srcH:'Sources',
  foot:'Made for Amber and Jake Mooney by NaN · Hongdam, Chiang Rai · <a href="mailto:nan@motdang.net">nan@motdang.net</a>',
  cc:'Map data © OpenStreetMap contributors. Tiles: OpenFreeMap.',
  source:'Source',sources:'Sources',diffLabel:'Sources differ',detail:'Detail',close:'Close',
- hotelT:'137 Pillars House',hotelB:'The building OpenStreetMap tags as the hotel. Address: Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai. 30 suites.',hotelS:'Sources 1, 4, 9',
+ hotelT:'137 Pillars House',hotelB:'The building that OpenStreetMap (an open online map) marks as the hotel. Address: Soi Nha Wat Kaet 1, Wat Ket, Chiang Mai. 30 suites.',hotelS:'Sources 1, 4, 9',
  musT:'Wat Ket Karam museum',musB:'A short walk from the hotel. Jack Bain founded it, according to Journal des Palaces and Chiang Mai CityLife.',musS:'Sources 3, 4, 9',
  pin:'Pin',lab1:'137 Pillars House',lab2:'Wat Ket Karam museum',
  mapFail:'The map did not load. The filmstrip above works without it.',earlier:'Earlier',later:'Later'},
@@ -500,10 +500,10 @@ th:{kicker:'ทำให้ แอมเบอร์และเจค มูน
  mH:'บริเวณบ้าน',place:'137 Pillars House ซอยหน้าวัดเกตุ 1 ตำบลวัดเกต เชียงใหม่',
  chip:'แตะแผนที่เพื่อปักหมุด',layer:'ต้นไม้',pH:'ปักหมุดตรงที่ต้นไม้ยืนอยู่',
  pHint:'แอมเบอร์คะ ถ้ามีต้นไม้ต้นไหนที่ยังจำได้ แตะบนแผนที่ตรงที่มันยืนอยู่ ลากหมุดเพื่อย้ายได้',
- send:'ส่งหมุดให้ NaN',undo:'ย้อนกลับ',clear:'ล้าง',
- sH:'สำหรับเจค',s1:'ภาพวาดอธิบายวางเรื่องเทคนิคไว้บนหน้าจอ แล้วให้ผู้อ่านขยับเอง สองชิ้นของเรา',
+ send:'ส่งหมุดให้ NaN ผู้ดูแล Hongdam',undo:'ย้อนกลับ',clear:'ล้าง',
+ sH:'สำหรับเจค',s1:'ภาพวาดอธิบายคือหน้าเว็บที่ใช้ภาพวาดสอนเรื่องเทคนิคหนึ่งเรื่อง และผู้อ่านขยับส่วนต่าง ๆ ได้เอง นี่คือสองชิ้นของเรา',
  open:'เปิด',tnote:'ภาพหน้าจอของ nanobotco.github.io/golden-gate และ /warp-and-weft หน้าเว็บของ NaN เอง',
- lk:'แอมเบอร์และเจค',lh:'มื้อกลางวันที่ The Algonquin',lunch:'สัปดาห์นี้ไหม',
+ lk:'แอมเบอร์และเจค',lh:'มื้อกลางวันที่ The Algonquin',lunch:'ส่งอีเมลถึง NaN เรื่องมื้อกลางวัน',
  srcH:'ที่มา',
  foot:'ทำให้ แอมเบอร์และเจค มูนีย์ โดย NaN · หงส์ดำ เชียงราย · <a href="mailto:nan@motdang.net">nan@motdang.net</a>',
  cc:'ข้อมูลแผนที่ © OpenStreetMap contributors ชุดแผนที่: OpenFreeMap',

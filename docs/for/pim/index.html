@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Your Chiang Mai, on Mot Dang</title>
-<meta name="description" content="196 Citylife pieces fill a map of Chiang Mai, year by year, each with its Mot Dang page. Four videos to play. Made for Pim.">
+<meta name="description" content="196 Citylife articles fill a map of Chiang Mai, year by year, each with its Mot Dang page. Four videos to play. Made for Pim.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Your Chiang Mai, on Mot Dang">
-<meta property="og:description" content="196 Citylife pieces fill a map of Chiang Mai, year by year. Made for Pim.">
+<meta property="og:description" content="196 Citylife articles fill a map of Chiang Mai, year by year. Made for Pim.">
 <meta property="og:url" content="https://hongdam.net/for/pim/">
 <meta property="og:image" content="https://hongdam.net/for/pim/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Card: Your Chiang Mai, on Mot Dang, made for Pim, Hongdam">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image:alt" content="Card: Your Chiang Mai, on Mot Dang, made for Pim, Hongdam">
@@ -230,7 +230,7 @@ footer a{color:var(--mute)}
 <div class="hero" id="hero">
   <div id="map" role="img" aria-label="Map of Chiang Mai with the Citylife pieces"></div>
   <div class="title" id="title">
-    <p class="kick" data-i="kick">For Pim</p>
+    <p class="kick" data-i="kick">For Pim, editor at Chiang Mai Citylife</p>
     <h1 data-i="h1">Your Chiang Mai, on <mark>Mot Dang</mark></h1>
   </div>
   <div class="yearbig" id="yearbig" aria-hidden="true">2014</div>
@@ -255,14 +255,14 @@ footer a{color:var(--mute)}
   <section id="videos">
     <p class="sk" data-i="vk">From the Citylife channel</p>
     <h2 class="sh" data-i="vh">Your videos</h2>
-    <p class="sd" data-i="vp">Tap a tile. It plays here.</p>
+    <p class="sd" data-i="vp">Tap a picture. The video plays on this page.</p>
     <ul class="vids" id="vids"></ul>
     <p class="note" data-i="vnote"></p>
   </section>
 
   <section id="kinds">
-    <p class="sk" data-i="kk">The map, by kind</p>
-    <h2 class="sh" data-i="kh">Pick a kind</h2>
+    <p class="sk" data-i="kk">The map, by type of place</p>
+    <h2 class="sh" data-i="kh">Pick a type of place</h2>
     <p class="sd" data-i="kp">Tap one. The pins light up on the map.</p>
     <div class="kinds" id="kinds-grid"></div>
   </section>
@@ -272,7 +272,7 @@ footer a{color:var(--mute)}
 <div class="band" id="band1" style="background-image:url(img/lanterns.jpg)">
   <div class="in">
     <p class="bk" data-i="bk">Chiang Mai</p>
-    <p class="bg" data-i="bg"><em>196</em> pieces.<br>One city.</p>
+    <p class="bg" data-i="bg"><em>196</em> articles.<br>One city.</p>
   </div>
   <div class="cred" id="cred1"></div>
 </div>
@@ -295,9 +295,9 @@ footer a{color:var(--mute)}
 <div class="band cta" id="band2" style="background-image:url(img/gate.jpg)">
   <div class="in">
     <p class="bk" data-i="ck">Chiang Mai</p>
-    <p class="bg" data-i="ch">The rest is easier over a table.</p>
-    <a class="btn gold" id="coffee" href="#" data-i="coffee">Coffee this week?</a>
-    <div class="sig">NaN</div>
+    <p class="bg" data-i="ch">The rest is easier to explain when we meet.</p>
+    <a class="btn gold" id="coffee" href="#" data-i="coffee">Email NaN about coffee</a>
+    <div class="sig" data-i="sig">NaN, who runs Hongdam</div>
   </div>
   <div class="cred" id="cred3"></div>
 </div>
@@ -331,7 +331,7 @@ const CAT = {
 const GROUPS = ['food','stay','spa','shops','health','more'];
 const GMAP = {food:'food', hotel:'stay', massage:'spa', shopping:'shops', medical:'health'};
 const GNAME = {
-  food:['Food','อาหาร'], stay:['Stay','ที่พัก'], spa:['Spa','สปา'], shops:['Shops','ร้านค้า'], health:['Health','สุขภาพ'], more:['More','อื่น ๆ']
+  food:['Food','อาหาร'], stay:['Places to stay','ที่พัก'], spa:['Spa','สปา'], shops:['Shops','ร้านค้า'], health:['Health','สุขภาพ'], more:['Other','อื่น ๆ']
 };
 const PHOTOS = {
   lanterns:{en:'Hanging lanterns at Tha Phae Gate, Chiang Mai, 2008', th:'โคมแขวนที่ประตูท่าแพ เชียงใหม่ ปี 2008', by:'Random username 083794703875938', lic:'CC0', licurl:'https://creativecommons.org/publicdomain/zero/1.0/', src:'https://commons.wikimedia.org/wiki/File:%E0%B9%82%E0%B8%84%E0%B8%A1%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9E_%E0%B9%91_-_Hanging_lanterns_(khom_khwaen)_at_Tha_Phae_Gate_1.jpg'},
@@ -340,25 +340,25 @@ const PHOTOS = {
 };
 const T = {
   en:{
-    kick:'For Pim',
+    kick:'For Pim, editor at Chiang Mai Citylife',
     h1:'Your Chiang Mai, on <mark>Mot Dang</mark>',
-    clab:'Citylife pieces on the map', clab_cat:'{c} on the map',
+    clab:'Citylife articles on the map', clab_cat:'{c} on the map',
     chint:'Tap any pin',
     play:'Play', replay:'Replay', pause:'Pause',
     all:'All',
     from:'Citylife · written up {y}',
-    cl:'Read the piece', md:'Mot Dang page', close:'Close',
-    vk:'From the Citylife channel', vh:'Your videos', vp:'Tap a tile. It plays here.',
+    cl:'Read the article', md:'Mot Dang page', close:'Close',
+    vk:'From the Citylife channel', vh:'Your videos', vp:'Tap a picture. The video plays on this page.',
     ago:['6 months ago','11 months ago','1 year ago','3 years ago'],
     onmd:'On Mot Dang', yt:'YouTube',
-    vnote:'On Mot Dang, a video could sit on its place page, under the Citylife piece.',
-    kk:'The map, by kind', kh:'Pick a kind', kp:'Tap one. The pins light up on the map.',
-    bk:'Chiang Mai', bg:'<em>{n}</em> pieces.<br>One city.',
+    vnote:'On Mot Dang (our online directory of places), a video could be shown on its place page, under the Citylife article.',
+    kk:'The map, by type of place', kh:'Pick a type of place', kp:'Tap one. The pins light up on the map.',
+    bk:'Chiang Mai', bg:'<em>{n}</em> articles.<br>One city.',
     mk:'On Mot Dang',
-    mq:'A place page carries a line: <em>“This place in Chiang Mai Citylife”</em>, with the year and a link to your piece.',
-    mline:'This place in Chiang Mai Citylife — written up in {y}', mread:'Read the piece',
+    mq:'A place page on Mot Dang shows a line like this: <em>“This place in Chiang Mai Citylife”</em>, with the year and a link to your article.',
+    mline:'This place in Chiang Mai Citylife — written up in {y}', mread:'Read the article',
     mseen:'See that page',
-    ck:'Chiang Mai', ch:'The rest is easier over a table.', coffee:'Coffee this week?',
+    ck:'Chiang Mai', ch:'The rest is easier to explain when we meet.', coffee:'Email NaN about coffee', sig:'NaN, who runs Hongdam',
     srch:'Sources',
     s1:'Pieces and years: Mot Dang place data, matched by name and position against <a href="https://www.chiangmaicitylife.com/citylife-places/" target="_blank" rel="noopener">Citylife’s place pages</a> on 21 Sep 2026; the year is the year Citylife published the page. The file holds 208 matches; {n} are confirmed on the live Mot Dang place pages, read on 19 Oct 2026.',
     s2:'Pin positions and kinds: Mot Dang place records, built from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> and <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a>. Three pins lie outside Chiang Mai city, one of them in Chiang Rai.',
@@ -371,7 +371,7 @@ const T = {
     title:'Your Chiang Mai, on Mot Dang', mapl:'Map of Chiang Mai with the Citylife pieces'
   },
   th:{
-    kick:'สำหรับพิม',
+    kick:'สำหรับพิม บรรณาธิการ Chiang Mai Citylife',
     h1:'เชียงใหม่ของพิม บน<mark>มดแดง</mark>',
     clab:'บทความ Citylife บนแผนที่', clab_cat:'{c} บนแผนที่',
     chint:'แตะหมุดได้เลย',
@@ -379,7 +379,7 @@ const T = {
     all:'ทั้งหมด',
     from:'Citylife · เขียนถึงเมื่อปี {y}',
     cl:'อ่านบทความ', md:'หน้ามดแดง', close:'ปิด',
-    vk:'จากช่อง Citylife', vh:'วิดีโอของพิม', vp:'แตะที่ภาพ แล้วเล่นตรงนี้ได้เลย',
+    vk:'จากช่อง Citylife', vh:'วิดีโอของพิม', vp:'แตะที่ภาพ แล้ววิดีโอจะเล่นในหน้านี้',
     ago:['6 เดือนที่แล้ว','11 เดือนที่แล้ว','1 ปีที่แล้ว','3 ปีที่แล้ว'],
     onmd:'ในมดแดง', yt:'YouTube',
     vnote:'ในมดแดง วิดีโอวางไว้ในหน้าสถานที่ ใต้บทความของ Citylife ได้',
@@ -389,7 +389,7 @@ const T = {
     mq:'หน้าสถานที่มีบรรทัดหนึ่งว่า <em>“ที่นี่ในนิตยสาร Chiang Mai Citylife”</em> พร้อมปีและลิงก์ไปบทความของพิม',
     mline:'ที่นี่ในนิตยสาร Chiang Mai Citylife — บทความปี {y}', mread:'อ่านบทความ',
     mseen:'ดูหน้านั้น',
-    ck:'เชียงใหม่', ch:'ที่เหลือ เล่าให้ฟังข้างโต๊ะดีกว่า', coffee:'กาแฟสัปดาห์นี้ไหม?',
+    ck:'เชียงใหม่', ch:'ที่เหลือ เล่าให้ฟังตอนเจอกันดีกว่า', coffee:'ส่งอีเมลถึง NaN เรื่องกาแฟ', sig:'NaN ผู้ดูแล Hongdam',
     srch:'ที่มา',
     s1:'บทความและปี: ข้อมูลสถานที่ของมดแดง จับคู่ด้วยชื่อและตำแหน่งกับ<a href="https://www.chiangmaicitylife.com/citylife-places/" target="_blank" rel="noopener">หน้าสถานที่ของ Citylife</a> เมื่อ 21 ก.ย. 2026 ปีคือปีที่ Citylife เผยแพร่หน้านั้น ไฟล์มี 208 คู่ ยืนยันบนหน้าสถานที่ของมดแดงจริง {n} แห่ง อ่านเมื่อ 19 ต.ค. 2026',
     s2:'ตำแหน่งหมุดและหมวด: ข้อมูลสถานที่ของมดแดง สร้างจาก <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> และ <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a> มีสามหมุดอยู่นอกตัวเมืองเชียงใหม่ หนึ่งในนั้นอยู่ที่เชียงราย',
