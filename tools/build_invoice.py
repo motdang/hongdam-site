@@ -63,24 +63,23 @@ def baht_ways(inv, total):
     """PromptPay QR + slip upload, checked by SlipOK through /api/pay/invoice."""
     return [f'''<div class="way"><h3>PromptPay</h3><div class="qr">{qr_svg(promptpay(inv["promptpay"], total))}</div>
 <p>Scan with any Thai banking app. The amount, {money(total)}, fills itself in, and the app shows the name the money goes to before you pay.</p>
-<form id="slipf" data-slug="{e(inv["slug"])}" hidden><p><label>After paying, upload the payment slip (the receipt) from your banking app:<br>
+<form id="slipf" data-slug="{e(inv["slug"])}"><p><label>After paying, upload the payment slip (the receipt) from your banking app:<br>
 <input type="file" name="slip" accept="image/*" required></label></p>
 <p><button type="submit" class="btn big">Check my payment</button></p><p class="msg" role="status" aria-live="polite"></p></form>
-<p id="slipmail">Then email the slip to <a href="mailto:{e(inv["mail"])}?subject={e(inv["number"])}">{e(inv["mail"])}</a> with <code>{e(inv["number"])}</code> in the subject.</p>
+<p>Or email the slip to <a href="mailto:{e(inv["mail"])}?subject={e(inv["number"])}">{e(inv["mail"])}</a> with <code>{e(inv["number"])}</code> in the subject.</p>
 </div>''']
 
 
 SLIP_JS = """
-(()=>{const f=document.getElementById('slipf'),api='/api/pay/invoice',slug=f&&f.dataset.slug;if(!f)return;
+(()=>{const f=document.getElementById('slipf'),api='/api/pay/invoice';if(!f)return;const slug=f.dataset.slug;
 const E={nofile:'Choose the picture of your payment slip first.',unread:'We cannot read a bank slip in that picture.',
 amount:'The slip shows a different amount.',receiver:'The slip shows a different receiver.',used:'That slip was already used for a payment.',
-late:'That slip is too old to check.',service:'The slip check is not answering. Try again in a minute, or email the slip.',ref:'We do not have this invoice.'};
-fetch(api+'?slug='+encodeURIComponent(slug)).then(r=>r.json()).then(j=>{if(!j.on)return;f.hidden=false;
-document.getElementById('slipmail').hidden=true;
+late:'That slip is too old to check.',service:'The slip check is not answering. Try again in a minute, or email the slip.',
+off:'The slip check is off right now. Please email the slip.',ref:'We do not have this invoice.'};
 f.onsubmit=async ev=>{ev.preventDefault();const m=f.querySelector('.msg'),file=f.slip.files[0];
 if(!file){m.textContent=E.nofile;return}m.textContent='Checking…';const fd=new FormData();fd.append('slug',slug);fd.append('slip',file);
 try{const r=await(await fetch(api,{method:'POST',body:fd})).json();
-m.textContent=r.ok?'Paid. Thank you. Hongdam has the payment for '+r.ref+'.':(E[r.why]||E.unread)}catch{m.textContent=E.service}}}).catch(()=>{})})();
+m.textContent=r.ok?'Paid. Thank you. Hongdam has the payment for '+r.ref+'.':(E[r.why]||E.unread)}catch{m.textContent=E.service}}})();
 """
 
 
