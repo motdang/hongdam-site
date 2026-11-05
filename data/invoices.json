@@ -4,19 +4,51 @@
     "number": "RTP-002",
     "issued": "14 October 2026",
     "due": "28 October 2026",
-    "bill_to": ["Red Team Partners Ltd", "Company no. 09923929, London", "Attn: Zia Bharwani"],
+    "bill_to": [
+      "Red Team Partners Ltd",
+      "Company no. 09923929, London",
+      "Attn: Zia Bharwani"
+    ],
     "items": [
-      {"name": "Cyber Security Awards prospects: Product + Leader",
-       "detail": "401 prospects (202 Leader, 199 Product) at US$2 a line. Delivered 7 Oct 2026.",
-       "amount": 802},
-      {"name": "RTP batch 2",
-       "detail": "100 named decision-makers. Delivered 10 Oct 2026.",
-       "amount": 0}
+      {
+        "name": "Cyber Security Awards prospects: Product + Leader",
+        "detail": "401 prospects (202 Leader, 199 Product) at US$2 a line. Delivered 7 Oct 2026.",
+        "amount": 802
+      },
+      {
+        "name": "RTP batch 2",
+        "detail": "100 named decision-makers. Delivered 10 Oct 2026.",
+        "amount": 0
+      }
     ],
     "notes": [
       "Once this is paid, one more revision round on Product and Leader is included.",
       "Thank you for paying RTP-001 (US$50, 30 Sep 2026)."
     ],
     "lightning": ""
+  },
+  {
+    "slug": "hd-ferc-2026-01-dc3800dd",
+    "number": "HD-FERC-2026-01",
+    "currency": "THB",
+    "issued": "The day the agreement is signed",
+    "due": "14 days after that",
+    "bill_to": [
+      "Foundation for the Education of Rural Children (FERC)",
+      "Chiang Mai, Thailand",
+      "Attn: Alberto Cosi, Treasurer"
+    ],
+    "items": [
+      {
+        "name": "Closing FERC's accounts with Myriad USA, Myriad Australia and every.org",
+        "detail": "And bringing the balances home. Service agreement with motdang.net Co., Ltd., trading as Hongdam. Paid once.",
+        "amount": 9000
+      }
+    ],
+    "notes": [
+      "If FERC withholds tax on this payment, please send the withholding certificate (50 Tawi) to beer@motdang.net."
+    ],
+    "promptpay": "0988239210",
+    "mail": "beer@motdang.net"
   }
 ]
