@@ -1,0 +1,309 @@
+{
+ "id": "translate",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People translate passports, contracts and certificates for visas, banks and weddings, and offices set their own rules for the translation they accept.",
+  "th": "คนแปลหนังสือเดินทาง สัญญา และใบรับรองเพื่อใช้กับวีซ่า ธนาคาร และงานแต่งงาน และหน่วยงานต่าง ๆ กำหนดเงื่อนไขของตนเองว่ารับคำแปลแบบใด",
+  "my": "လူတွေက ပတ်စပို့၊ စာချုပ်နှင့် လက်မှတ်များကို ဗီဇာ၊ ဘဏ်နှင့် မင်္ဂလာဆောင်အတွက် ဘာသာပြန်ကြပြီး ဘာသာပြန်ကို လက်ခံမည့် စည်းမျဉ်းကို ရုံးများက ကိုယ်စီ သတ်မှတ်ကြသည်။",
+  "zh": "人们翻译护照、合同和证书，用于签证、银行和婚礼；接受什么样的译文，各机构自己定规矩。",
+  "de": "Man lässt Pässe, Verträge und Urkunden übersetzen, für Visa, Banken und Hochzeiten, und die Ämter legen selbst fest, welche Übersetzung sie annehmen."
+ },
+ "n": {
+  "de": "Dokumentenübersetzung"
+ },
+ "l": {
+  "de": "Thai, Englisch, Burmesisch, Chinesisch. Pässe, Verträge, Urkunden."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the pages: a passport, a contract, a certificate.",
+    "th": "คุณส่งเอกสาร เช่น หนังสือเดินทาง สัญญา หรือใบรับรอง",
+    "my": "သင်က ပတ်စပို့၊ စာချုပ်၊ လက်မှတ် စသော စာရွက်များကို ပို့သည်။",
+    "zh": "您发来文件，如护照、合同、证书。",
+    "de": "Sie schicken die Unterlagen: Pass, Vertrag, Urkunde."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "We translate them between Thai, English, Burmese or Chinese.",
+    "th": "เราแปลระหว่างไทย อังกฤษ พม่า หรือจีน",
+    "my": "ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ သို့မဟုတ် တရုတ်ဘာသာများအကြား ဘာသာပြန်ပေးသည်။",
+    "zh": "我们在泰、英、缅、中之间翻译。",
+    "de": "Wir übersetzen zwischen Thai, Englisch, Burmesisch oder Chinesisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the pages arrive",
+    "th": "หลังได้รับเอกสาร",
+    "my": "စာရွက်များရောက်ပြီးနောက်",
+    "zh": "收到文件后",
+    "de": "Nach Eingang der Unterlagen"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "If you ask, the translator's stamp goes on the pages: the date, the translator's name and a QR code. We don't notarize.",
+    "th": "ถ้าคุณขอ จะประทับตราผู้แปลบนหน้าเอกสาร ประกอบด้วยวันที่ ชื่อผู้แปล และคิวอาร์โค้ด เราไม่รับรองโนตารี",
+    "my": "တောင်းဆိုလျှင် စာမျက်နှာများပေါ်တွင် ဘာသာပြန်သူ၏ တံဆိပ် ထုရိုက်ပေးသည်၊ ရက်စွဲ၊ ဘာသာပြန်သူအမည်နှင့် QR ကုဒ်ပါသည်။ နိုတာရီ မလုပ်ပါ။",
+    "zh": "您提出要求时，在页面上加盖译者章：日期、译者姓名和二维码。我们不办理公证。",
+    "de": "Auf Wunsch kommt der Stempel des Übersetzers auf die Seiten: Datum, Name des Übersetzers und ein QR-Code. Wir führen keine notarielle Beglaubigung durch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On request",
+    "th": "เมื่อขอ",
+    "my": "တောင်းဆိုလျှင်",
+    "zh": "按需",
+    "de": "Auf Wunsch"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thailand joins the Apostille Convention on 28 February 2027.",
+    "th": "ไทยเข้าร่วมอนุสัญญาอะโพสทิลล์ มีผล 28 กุมภาพันธ์ 2570",
+    "my": "ထိုင်းနိုင်ငံသည် 2027 ဖေဖော်ဝါရီ 28 တွင် Apostille စာချုပ်တွင် ပါဝင်မည်။",
+    "zh": "泰国自 2027 年 2 月 28 日起适用海牙认证公约。",
+    "de": "Thailand tritt am 28. Februar 2027 dem Apostille-Übereinkommen bei."
+   },
+   "src": "https://www.mfa.go.th/en/content/apostille-convention-eng"
+  },
+  {
+   "t": {
+    "en": "An agency certifies a translation with a signed letter and its seal; no government body checks it.",
+    "th": "สำนักงานแปลรับรองคำแปลด้วยหนังสือลงนามและตราประทับ ไม่มีหน่วยงานรัฐตรวจ",
+    "my": "ဘာသာပြန်ကုမ္ပဏီက လက်မှတ်ထိုးစာနှင့် တံဆိပ်ဖြင့် အတည်ပြုသည်; အစိုးရက မစစ်ပါ။",
+    "zh": "翻译公司以签字信函和公章认证译文，政府不审核。",
+    "de": "Eine Agentur beglaubigt eine Übersetzung mit unterschriebenem Schreiben und Stempel; keine Behörde prüft sie."
+   },
+   "src": "https://sawadeetranslations.com/guides/how-to-get-a-certified-translation-in-thailand-the-complete-guide/"
+  },
+  {
+   "t": {
+    "en": "For Ministry of Foreign Affairs legalisation, the translator signs a certification line and, since 10 February 2026, attaches an ID copy.",
+    "th": "รับรองที่กระทรวงการต่างประเทศ ผู้แปลลงนามรับรอง และตั้งแต่ 10 กุมภาพันธ์ 2569 แนบสำเนาบัตร",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာန အတည်ပြုရန် ဘာသာပြန်သူ လက်မှတ်ထိုးပြီး 2026 ဖေဖော်ဝါရီ 10 မှစ၍ ID မိတ္တူ တွဲရသည်။",
+    "zh": "外交部认证时，译者签署证明，2026 年 2 月 10 日起须附身份证复印件。",
+    "de": "Für die Legalisation beim Aussenministerium unterschreibt der Übersetzer eine Beglaubigungszeile und fügt seit dem 10. Februar 2026 eine Ausweiskopie bei."
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "t": {
+    "en": "A legalised translation is a certified translation that the Ministry of Foreign Affairs has stamped; the agency guide calls it the only stamp on its list that a government body issues.",
+    "th": "คำแปลที่ผ่านการรับรองจากกระทรวงการต่างประเทศ คือคำแปลรับรองที่กระทรวงการต่างประเทศประทับตราแล้ว คู่มือของสำนักงานแปลระบุว่าเป็นตราเดียวในรายการที่หน่วยงานรัฐเป็นผู้ออก",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာနက တံဆိပ်ခတ်ပေးထားသော အတည်ပြုဘာသာပြန်ကို legalised translation ဟု ခေါ်သည်။ ကုမ္ပဏီ၏ လမ်းညွှန်တွင် စာရင်းပါ တံဆိပ်များအနက် အစိုးရအဖွဲ့အစည်းက ထုတ်ပေးသည့် တစ်ခုတည်းဟု ဆိုသည်။",
+    "zh": "经外交部认证的译文，是外交部加盖了章的认证译文；翻译公司的指南称，这是其清单中唯一由政府机构签发的章。",
+    "de": "Eine legalisierte Übersetzung ist eine beglaubigte Übersetzung, die das Aussenministerium gestempelt hat; der Leitfaden der Agentur nennt es den einzigen Stempel auf seiner Liste, den eine Behörde ausstellt."
+   },
+   "src": "https://sawadeetranslations.com/guides/how-to-get-a-certified-translation-in-thailand-the-complete-guide/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Certified translation at a Bangkok agency",
+    "th": "แปลรับรองที่สำนักงานในกรุงเทพฯ",
+    "my": "ဘန်ကောက် ကုမ္ပဏီတွင် အတည်ပြုဘာသာပြန်",
+    "zh": "曼谷翻译公司认证翻译",
+    "de": "Beglaubigte Übersetzung bei einer Agentur in Bangkok"
+   },
+   "p": {
+    "en": "฿700–950 a page",
+    "th": "หน้าละ ฿700–950",
+    "my": "တစ်မျက်နှာ ฿700–950",
+    "zh": "每页 ฿700–950",
+    "de": "฿700–950 pro Seite"
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Standard translation, Thai and English, at a Bangkok agency",
+    "th": "แปลทั่วไปไทย–อังกฤษที่สำนักงานแปลในกรุงเทพฯ",
+    "my": "ဘန်ကောက်ရှိ ဘာသာပြန်ကုမ္ပဏီတွင် ထိုင်း–အင်္ဂလိပ် ပုံမှန်ဘာသာပြန်",
+    "zh": "曼谷翻译公司的泰英标准翻译",
+    "de": "Standardübersetzung Thai–Englisch bei einer Agentur in Bangkok"
+   },
+   "p": {
+    "en": "From ฿1.5 a word",
+    "th": "เริ่มต้นคำละ ฿1.5",
+    "my": "စကားလုံးတစ်လုံး ฿1.5 မှ စသည်",
+    "zh": "每词 ฿1.5 起",
+    "de": "ab ฿1.5 pro Wort"
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Thai–English translation, a top-selling Fastwork seller",
+    "th": "แปลไทย–อังกฤษ ผู้ขายยอดนิยมบน Fastwork",
+    "my": "ထိုင်း–အင်္ဂလိပ် ဘာသာပြန်၊ Fastwork ရှိ အရောင်းရဆုံး ရောင်းသူတစ်ဦး",
+    "zh": "泰英翻译，Fastwork 上的热销卖家",
+    "de": "Übersetzung Thai–Englisch, ein meistverkaufter Anbieter auf Fastwork"
+   },
+   "p": {
+    "en": "Packages ฿250 (general), ฿350 (official or specialist), ฿400 (websites); priced by word count",
+    "th": "แพ็กเกจ ฿250 (ทั่วไป) ฿350 (ราชการหรือเฉพาะทาง) ฿400 (เว็บไซต์) คิดตามจำนวนคำ",
+    "my": "ပက်ကေ့ဂျ် ฿250 (ယေဘုယျ)၊ ฿350 (အစိုးရ သို့မဟုတ် အထူးပြု)၊ ฿400 (ဝက်ဘ်ဆိုက်)၊ စကားလုံးအရေအတွက်ဖြင့် တွက်သည်",
+    "zh": "套餐 ฿250（一般）、฿350（官方或专业）、฿400（网站），按字数计价",
+    "de": "Pakete ฿250 (allgemein), ฿350 (amtlich oder Fach), ฿400 (Webseiten); nach Wortzahl berechnet"
+   },
+   "src": "https://fastwork.co/user/jeepster/translation-25775476"
+  },
+  {
+   "t": {
+    "en": "Ministry of Foreign Affairs legalisation",
+    "th": "รับรองเอกสารกระทรวงการต่างประเทศ",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာန အတည်ပြု",
+    "zh": "外交部认证",
+    "de": "Legalisation beim Aussenministerium"
+   },
+   "p": {
+    "en": "฿200, ฿400 express",
+    "th": "฿200 ด่วน ฿400",
+    "my": "฿200၊ အမြန် ฿400",
+    "zh": "฿200，加急 ฿400",
+    "de": "฿200, ฿400 Express"
+   },
+   "src": "https://thailandstarterkit.com/legal/legalization-in-thailand/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a certified translation cost in Thailand?",
+    "th": "แปลรับรองในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် အတည်ပြုဘာသာပြန်ခ ဘယ်လောက်လဲ။",
+    "zh": "泰国认证翻译多少钱？",
+    "de": "Was kostet eine beglaubigte Übersetzung in Thailand?"
+   },
+   "a": {
+    "en": "A Bangkok agency lists certified Thai–English translation at ฿700, ฿800 or ฿950 a page, by tier. Standard translation starts at ฿1.5 a word. Government and embassy fees are charged on top.",
+    "th": "สำนักงานแปลในกรุงเทพฯ แห่งหนึ่งตั้งราคาแปลรับรองไทย–อังกฤษหน้าละ ฿700 ฿800 หรือ ฿950 ตามระดับ การแปลทั่วไปเริ่มต้นคำละ ฿1.5 ส่วนค่าธรรมเนียมของรัฐและสถานทูตคิดเพิ่มต่างหาก",
+    "my": "ဘန်ကောက်ရှိ ဘာသာပြန်ကုမ္ပဏီတစ်ခုက ထိုင်း–အင်္ဂလိပ် အတည်ပြုဘာသာပြန်ကို အဆင့်အလိုက် တစ်မျက်နှာ ฿700၊ ฿800 သို့မဟုတ် ฿950 ဟု သတ်မှတ်သည်။ ပုံမှန်ဘာသာပြန်သည် စကားလုံးတစ်လုံး ฿1.5 မှ စသည်။ အစိုးရနှင့် သံရုံးကြေးများကို သီးခြားတောင်းသည်။",
+    "zh": "曼谷一家翻译公司按等级标价泰英认证翻译每页 ฿700、฿800 或 ฿950；标准翻译每词 ฿1.5 起。政府和使馆费用另计。",
+    "de": "Eine Agentur in Bangkok nennt für beglaubigte Übersetzungen Thai–Englisch je nach Stufe ฿700, ฿800 oder ฿950 pro Seite. Die Standardübersetzung beginnt bei ฿1.5 pro Wort. Gebühren von Behörden und Botschaften kommen dazu."
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "What is a certified translation?",
+    "th": "แปลรับรองคืออะไร",
+    "my": "အတည်ပြုဘာသာပြန်ဆိုတာ ဘာလဲ။",
+    "zh": "什么是认证翻译？",
+    "de": "Was ist eine beglaubigte Übersetzung?"
+   },
+   "a": {
+    "en": "At an agency it is a translation with a signed statement that it is complete and accurate, carrying the company's seal. The agency's guide says this is not verification by any government body.",
+    "th": "ที่สำนักงานแปล คือคำแปลที่มีหนังสือลงนามยืนยันว่าครบถ้วนและถูกต้อง พร้อมตราประทับของบริษัท คู่มือของสำนักงานแปลระบุว่านี่ไม่ใช่การตรวจสอบโดยหน่วยงานรัฐ",
+    "my": "ကုမ္ပဏီတစ်ခုတွင် ၎င်းသည် ပြည့်စုံမှန်ကန်ကြောင်း လက်မှတ်ထိုးထားသော ထုတ်ပြန်ချက်နှင့် ကုမ္ပဏီတံဆိပ်ပါသော ဘာသာပြန်ဖြစ်သည်။ ကုမ္ပဏီ၏ လမ်းညွှန်တွင် ၎င်းသည် အစိုးရအဖွဲ့အစည်းတစ်ခုက စစ်ဆေးခြင်း မဟုတ်ဟု ဆိုသည်။",
+    "zh": "在翻译公司，它是附有签字声明（称译文完整、准确）并盖有公司章的译文。该公司的指南写明，这不是政府机构的核验。",
+    "de": "Bei einer Agentur ist es eine Übersetzung mit unterschriebener Erklärung, sie sei vollständig und richtig, und mit dem Stempel der Firma. Der Leitfaden der Agentur hält fest, dass keine Behörde die Übersetzung prüft."
+   },
+   "src": "https://sawadeetranslations.com/guides/how-to-get-a-certified-translation-in-thailand-the-complete-guide/"
+  },
+  {
+   "q": {
+    "en": "When does Thailand join the Apostille Convention?",
+    "th": "ไทยเข้าร่วมอนุสัญญาอะโพสทิลล์เมื่อใด",
+    "my": "ထိုင်းနိုင်ငံ Apostille စာချုပ်တွင် ဘယ်တော့ ပါဝင်မလဲ။",
+    "zh": "泰国何时加入海牙认证公约？",
+    "de": "Wann tritt Thailand dem Apostille-Übereinkommen bei?"
+   },
+   "a": {
+    "en": "The Ministry of Foreign Affairs says the accession takes full effect on 28 February 2027. Thailand deposited its instrument of accession on 30 June 2026, and an eight-month objection period runs before that date.",
+    "th": "กระทรวงการต่างประเทศระบุว่าการเข้าร่วมมีผลสมบูรณ์วันที่ 28 กุมภาพันธ์ 2570 ไทยยื่นภาคยานุวัติสารเมื่อวันที่ 30 มิถุนายน 2569 และมีช่วงคัดค้านแปดเดือนก่อนถึงวันดังกล่าว",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာနက ပါဝင်မှုသည် 2027 ဖေဖော်ဝါရီ 28 တွင် အပြည့်အဝ အာဏာတည်မည်ဟု ဆိုသည်။ ထိုင်းနိုင်ငံသည် 2026 ဇွန် 30 တွင် ပါဝင်ကြောင်း စာတမ်းကို အပ်နှံခဲ့ပြီး ထိုရက်မတိုင်မီ ရှစ်လကြာ ကန့်ကွက်ချိန် ရှိသည်။",
+    "zh": "外交部称，加入将于 2027 年 2 月 28 日全面生效。泰国于 2026 年 6 月 30 日交存加入书，在该日期之前有八个月的异议期。",
+    "de": "Laut Aussenministerium wird der Beitritt am 28. Februar 2027 voll wirksam. Thailand hinterlegte seine Beitrittsurkunde am 30. Juni 2026; bis zu diesem Datum läuft eine Einspruchsfrist von acht Monaten."
+   },
+   "src": "https://www.mfa.go.th/en/content/apostille-convention-eng"
+  },
+  {
+   "q": {
+    "en": "Do visa and marriage papers need a translation?",
+    "th": "เอกสารวีซ่าและจดทะเบียนสมรสต้องแปลไหม",
+    "my": "ဗီဇာနှင့် လက်ထပ်စာရွက်များကို ဘာသာပြန်ရန် လိုပါသလား။",
+    "zh": "签证和结婚材料需要翻译吗？",
+    "de": "Brauchen Visa- und Heiratsunterlagen eine Übersetzung?"
+   },
+   "a": {
+    "en": "An agency guide lists visa and immigration applications and marriage registration in Thailand among the papers that commonly need a certified translation. It adds that an authority sets its own specific requirements.",
+    "th": "คู่มือของสำนักงานแปลระบุว่าการยื่นวีซ่าและตรวจคนเข้าเมือง กับการจดทะเบียนสมรสในไทย อยู่ในเอกสารที่มักต้องใช้คำแปลรับรอง และเสริมว่าหน่วยงานกำหนดข้อกำหนดเฉพาะของตนเอง",
+    "my": "ကုမ္ပဏီ၏ လမ်းညွှန်တွင် ဗီဇာနှင့် လူဝင်မှုကြီးကြပ်ရေး လျှောက်လွှာများနှင့် ထိုင်းတွင် လက်ထပ်မှတ်ပုံတင်ခြင်းတို့ကို အတည်ပြုဘာသာပြန် မကြာခဏ လိုသည့် စာရွက်များထဲ ထည့်ဖော်ပြထားသည်။ ဌာနတစ်ခုက ကိုယ်ပိုင်လိုအပ်ချက်များကို သတ်မှတ်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "翻译公司的指南把签证和移民申请、在泰国登记结婚列为常需认证翻译的材料，并补充说各机关自订具体要求。",
+    "de": "Ein Leitfaden der Agentur zählt Visa- und Einwanderungsanträge und die Eheschliessung in Thailand zu den Unterlagen, die häufig eine beglaubigte Übersetzung brauchen. Er fügt an, dass eine Behörde ihre eigenen Anforderungen festlegt."
+   },
+   "src": "https://sawadeetranslations.com/guides/how-to-get-a-certified-translation-in-thailand-the-complete-guide/"
+  }
+ ],
+ "related": [
+  "interp",
+  "german",
+  "lang-pages",
+  "romanise",
+  "lang-shan",
+  "visas"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Ministry of Foreign Affairs: Apostille Convention",
+    "th": "กระทรวงการต่างประเทศ: อนุสัญญาอะโพสทิลล์",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာန: Apostille စာချုပ်",
+    "zh": "外交部：海牙认证公约",
+    "de": "Aussenministerium: Apostille-Übereinkommen"
+   },
+   "href": "https://www.mfa.go.th/en/content/apostille-convention-eng"
+  },
+  {
+   "t": {
+    "en": "Department of Consular Affairs: legalisation by post",
+    "th": "กรมการกงสุล: บริการรับรองเอกสารทางไปรษณีย์",
+    "my": "ကောင်စစ်ဝန်ရေးရာဦးစီးဌာန: စာတိုက်မှ စာရွက်စာတမ်း အတည်ပြုခြင်း",
+    "zh": "领事司：邮寄办理文件认证",
+    "de": "Konsularabteilung: Legalisation auf dem Postweg"
+   },
+   "href": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  }
+ ],
+ "glyphs": [
+  "translate",
+  "page",
+  "stamp"
+ ]
+}

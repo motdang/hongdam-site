@@ -1,0 +1,764 @@
+{
+ "id": "decks",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "An investor, a buyer or a grant panel looks through your slides before it replies. A pitch deck is that set of slides, in Thai or English.",
+  "th": "นักลงทุน ผู้ซื้อ หรือคณะกรรมการทุน ดูสไลด์ของคุณก่อนตอบรับ สไลด์นำเสนอคือชุดสไลด์นั้น เป็นภาษาไทยหรืออังกฤษ",
+  "my": "ရင်းနှီးမြှုပ်နှံသူ၊ ဝယ်သူ သို့မဟုတ် ထောက်ပံ့ငွေကော်မတီသည် အဖြေမပေးမီ သင့်ဆလိုက်များကို ကြည့်ရှုသည်။ တင်ပြချက်ဆလိုက်သည် ထိုဆလိုက်အစုဖြစ်ပြီး ထိုင်းဘာသာ သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် ပြုလုပ်သည်။",
+  "zh": "投资人、买家或评审委员会，在答复之前会先看您的幻灯片。路演幻灯片就是这一套幻灯片，用泰语或英语制作。",
+  "de": "Investoren, Käufer oder eine Förderjury sehen sich Ihre Folien an, bevor sie antworten. Die Pitch-Folien sind dieser Foliensatz, auf Thai oder Englisch."
+ },
+ "n": {
+  "de": "Pitch-Folien"
+ },
+ "l": {
+  "de": "Für Investoren, Käufer oder eine Förderjury."
+ },
+ "steps": [
+  {
+   "db": "manicule",
+   "t": {
+    "en": "You choose who the slides are for (investors, a buyer or a grant panel) and Thai or English",
+    "th": "คุณเลือกว่าสไลด์สำหรับใคร (นักลงทุน ผู้ซื้อ หรือคณะกรรมการทุน) และเลือกภาษาไทยหรืออังกฤษ",
+    "my": "သင်က ဆလိုက်များကို ဘယ်သူ့အတွက် လုပ်မည်ကို (ရင်းနှီးမြှုပ်နှံသူ၊ ဝယ်သူ သို့မဟုတ် ထောက်ပံ့ငွေကော်မတီ) နှင့် ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာကို ရွေးသည်",
+    "zh": "您选择幻灯片给谁看（投资人、买家或评审委员会），以及泰语或英语",
+    "de": "Sie wählen, für wen die Folien sind (Investoren, Käufer oder eine Förderjury), und Thai oder Englisch"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The slides are laid out for that reader",
+    "th": "จัดวางสไลด์สำหรับผู้อ่านคนนั้น",
+    "my": "ထိုဖတ်သူအတွက် ဆလိုက်များကို စီစဉ်သည်",
+    "zh": "按这位读者的需要来安排幻灯片",
+    "de": "Die Folien werden für diesen Leser aufgebaut"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The slides are designed one after another, in the language you chose",
+    "th": "ออกแบบสไลด์ทีละแผ่น ในภาษาที่คุณเลือก",
+    "my": "ဆလိုက်များကို တစ်ခုပြီးတစ်ခု သင်ရွေးသော ဘာသာဖြင့် ဒီဇိုင်းလုပ်သည်",
+    "zh": "按您选的语言，一张接一张地设计幻灯片",
+    "de": "Die Folien werden nacheinander gestaltet, in der Sprache, die Sie gewählt haben"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "然后",
+    "de": "Dann"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The finished slides reach you, in Thai or English",
+    "th": "ส่งสไลด์ที่เสร็จแล้วให้คุณ เป็นภาษาไทยหรืออังกฤษ",
+    "my": "ပြီးစီးသော ဆလိုက်များကို သင့်ထံ ပို့သည်၊ ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့်",
+    "zh": "做好的幻灯片交到您手上，泰语或英语",
+    "de": "Die fertigen Folien gehen an Sie, auf Thai oder Englisch"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "12",
+   "t": {
+    "en": "Items the Thailand Board of Investment (BOI) lists for the pitch deck in a Smart visa S (startup) application",
+    "th": "รายการที่สำนักงานคณะกรรมการส่งเสริมการลงทุน (BOI) กำหนดให้มีใน pitch deck สำหรับสมาร์ทวีซ่า S (สตาร์ทอัพ)",
+    "my": "ထိုင်းရင်းနှီးမြှုပ်နှံမှုဘုတ်အဖွဲ့ (BOI) က Smart visa S (စတားတပ်) လျှောက်လွှာ၏ pitch deck အတွက် စာရင်းပေးထားသည့် အချက်များ",
+    "zh": "泰国投资促进委员会（BOI）在 Smart 签证 S 类（初创企业）申请中，对路演文件列出的事项",
+    "de": "Punkte, die die thailändische Investitionsbehörde (BOI) für das Pitch-Deck im Antrag auf das Smart-Visum S (Start-up) aufführt"
+   },
+   "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "n": "<3",
+   "t": {
+    "en": "Minutes: the time investors spend reviewing a pitch deck, in DocSend's data",
+    "th": "นาที: เวลาที่นักลงทุนใช้ดู pitch deck ตามข้อมูลของ DocSend",
+    "my": "မိနစ် - ရင်းနှီးမြှုပ်နှံသူများ pitch deck ကို ကြည့်ရှုရန် အသုံးပြုသည့် အချိန်၊ DocSend ၏ ဒေတာအရ",
+    "zh": "分钟：投资人浏览一份路演文件所用的时间（DocSend 的数据）",
+    "de": "Minuten, die Investoren laut DocSend-Daten mit einem Pitch-Deck verbringen"
+   },
+   "src": "https://www.dropbox.com/resources/docsend-pitch-deck-research"
+  },
+  {
+   "n": "10",
+   "t": {
+    "en": "Slides in Guy Kawasaki's 10/20/30 rule, with 20 minutes and text no smaller than 30 points",
+    "th": "จำนวนสไลด์ตามกฎ 10/20/30 ของ Guy Kawasaki พร้อมเวลา 20 นาที และตัวอักษรไม่เล็กกว่า 30 พอยต์",
+    "my": "Guy Kawasaki ၏ 10/20/30 စည်းမျဉ်းတွင် ဆလိုက် အရေအတွက်၊ အချိန် 20 မိနစ်နှင့် စာသားသည် 30 ပွိုင့်ထက် မသေးငယ်ရ",
+    "zh": "Guy Kawasaki 的 10/20/30 规则中的幻灯片张数，另有 20 分钟、文字不小于 30 磅",
+    "de": "Folien in Guy Kawasakis 10/20/30-Regel, dazu 20 Minuten und Schrift nicht kleiner als 30 Punkt"
+   },
+   "src": "https://www.cbsnews.com/news/improve-your-powerpoint-presentations-with-guy-kawasakis-10-20-30-rule/"
+  },
+  {
+   "n": "฿1,500",
+   "t": {
+    "en": "Starting price of one Fastwork freelancer's pitch deck of up to 25 pages, with 4 days and 2 revisions",
+    "th": "ราคาเริ่มต้น pitch deck ไม่เกิน 25 หน้า ของฟรีแลนซ์รายหนึ่งบน Fastwork ส่งใน 4 วัน แก้ได้ 2 ครั้ง",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး၏ pitch deck (စာမျက်နှာ 25 အထိ) စတင်စျေးနှုန်း၊ ရက် 4 ရက်၊ ပြင်ဆင်မှု 2 ကြိမ်",
+    "zh": "Fastwork 上一位自由职业者的路演文件起步价：最多 25 页，4 天，修改 2 次",
+    "de": "Startpreis eines Pitch-Decks bis 25 Seiten bei einer Freelancerin oder einem Freelancer auf Fastwork, 4 Tage, 2 Korrekturrunden"
+   },
+   "src": "https://fastwork.co/user/v.tanyavee/presentation-10741719"
+  }
+ ],
+ "toy": {
+  "kind": "checklist",
+  "h": {
+   "en": "What does your deck already have?",
+   "th": "สไลด์ของคุณมีอะไรอยู่แล้วบ้าง",
+   "my": "သင့်ဆလိုက်တွင် ဘာတွေ ပါပြီးသားလဲ",
+   "zh": "您的幻灯片已经有什么",
+   "de": "Was haben Ihre Folien schon?"
+  },
+  "noscript": {
+   "en": "The ticking needs JavaScript. The slides a deck is made of are described in the facts below.",
+   "th": "การติ๊กต้องใช้ JavaScript สไลด์ที่ pitch deck ประกอบด้วยอธิบายไว้ในข้อเท็จจริงด้านล่าง",
+   "my": "အမှန်ခြစ်ရန် JavaScript လိုအပ်သည်။ pitch deck ကို ဖွဲ့စည်းထားသော ဆလိုက်များကို အောက်ပါ အချက်အလက်များတွင် ဖော်ပြထားသည်။",
+   "zh": "勾选功能需要 JavaScript。路演文件由哪些幻灯片组成，见下方的事实。",
+   "de": "Das Abhaken braucht JavaScript. Aus welchen Folien ein Pitch-Deck besteht, steht unten bei den Fakten."
+  },
+  "data": {
+   "items": [
+    {
+     "id": "title",
+     "n": {
+      "en": "The name and one line on what you do",
+      "th": "ชื่อและประโยคเดียวที่บอกว่าคุณทำอะไร",
+      "my": "အမည်နှင့် သင်ဘာလုပ်သည်ကို တစ်ကြောင်းတည်း",
+      "zh": "名称，以及一句话说明您做什么",
+      "de": "Der Name und ein Satz dazu, was Sie tun"
+     },
+     "why": {
+      "en": "Y Combinator's seed deck template opens with a title page that holds the company name and a one-line description of what it does.",
+      "th": "แม่แบบสไลด์ระดับ seed ของ Y Combinator เปิดด้วยหน้าชื่อ ซึ่งมีชื่อบริษัทและคำอธิบายหนึ่งบรรทัดว่าทำอะไร",
+      "my": "Y Combinator ၏ seed deck နမူနာသည် ကုမ္ပဏီအမည်နှင့် ဘာလုပ်သည်ကို တစ်ကြောင်းတည်း ဖော်ပြသော ခေါင်းစဉ်စာမျက်နှာဖြင့် စသည်။",
+      "zh": "Y Combinator 的种子轮模板以标题页开头，页上写公司名称和一句话的业务说明。",
+      "de": "Die Seed-Vorlage von Y Combinator beginnt mit einer Titelfolie, auf der der Firmenname und eine einzeilige Beschreibung stehen."
+     },
+     "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+    },
+    {
+     "id": "problem",
+     "n": {
+      "en": "The problem you solve",
+      "th": "ปัญหาที่คุณแก้",
+      "my": "သင်ဖြေရှင်းပေးသော ပြဿနာ",
+      "zh": "您解决的问题",
+      "de": "Das Problem, das Sie lösen"
+     },
+     "why": {
+      "en": "Sequoia's outline describes the customer's pain, how it is handled today, and where current solutions fall short.",
+      "th": "โครงร่างของ Sequoia ให้อธิบายความเจ็บปวดของลูกค้า วิธีที่แก้กันอยู่ทุกวันนี้ และจุดที่วิธีปัจจุบันยังไม่ตอบโจทย์",
+      "my": "Sequoia ၏ ဖွဲ့စည်းပုံတွင် ဖောက်သည်၏ ဒုက္ခ၊ ယခုအချိန်တွင် ၎င်းကို ကိုင်တွယ်နေပုံနှင့် လက်ရှိဖြေရှင်းနည်းများ ချို့တဲ့သည့်နေရာကို ဖော်ပြသည်။",
+      "zh": "Sequoia 的提纲要写客户的痛点、现在是怎么解决的，以及现有方案不足在哪里。",
+      "de": "Sequoias Gliederung beschreibt den Schmerz des Kunden, wie er heute gelöst wird und wo die heutigen Lösungen zu kurz greifen."
+     },
+     "src": "https://www.sequoiacap.com/article/writing-a-business-plan/"
+    },
+    {
+     "id": "solution",
+     "n": {
+      "en": "What you do about it, in few words",
+      "th": "สิ่งที่คุณทำเพื่อแก้ ด้วยคำน้อยที่สุด",
+      "my": "သင်ဘာလုပ်ပေးသည်ကို စကားလုံးအနည်းဆုံးဖြင့်",
+      "zh": "您的解决办法，用最少的字",
+      "de": "Was Sie dagegen tun, in wenigen Worten"
+     },
+     "why": {
+      "en": "Y Combinator says to explain what you do very clearly, in as few words as possible, and to describe the concrete benefits.",
+      "th": "Y Combinator บอกให้อธิบายสิ่งที่คุณทำให้ชัดเจนที่สุด ด้วยคำให้น้อยที่สุด และบอกประโยชน์ที่เป็นรูปธรรม",
+      "my": "Y Combinator က သင်ဘာလုပ်သည်ကို ရှင်းရှင်းလင်းလင်း စကားလုံးအနည်းဆုံးဖြင့် ရှင်းပြပြီး ရလာမည့် အကျိုးကျေးဇူးများကို ဖော်ပြရန် ဆိုသည်။",
+      "zh": "Y Combinator 说，要把您做的事讲得很清楚，字越少越好，并写出具体的好处。",
+      "de": "Y Combinator sagt, man solle klar erklären, was man tut, mit so wenigen Worten wie möglich, und den konkreten Nutzen beschreiben."
+     },
+     "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+    },
+    {
+     "id": "whynow",
+     "n": {
+      "en": "Why now",
+      "th": "ทำไมต้องตอนนี้",
+      "my": "ဘာကြောင့် ယခုအချိန်လဲ",
+      "zh": "为什么是现在",
+      "de": "Warum jetzt"
+     },
+     "why": {
+      "en": "DocSend's pre-seed data from 2020 shows that decks which raised money more often put their product and Why now sections early.",
+      "th": "ข้อมูล pre-seed ปี 2020 ของ DocSend ชี้ว่า deck ที่ระดมทุนได้มักวางส่วนผลิตภัณฑ์และส่วน “ทำไมต้องตอนนี้” ไว้ก่อน",
+      "my": "DocSend ၏ 2020 pre-seed ဒေတာအရ ငွေရသည့် deck များသည် ထုတ်ကုန်အပိုင်းနှင့် “ဘာကြောင့် ယခုအချိန်” အပိုင်းကို အစောပိုင်းတွင် ထားလေ့ရှိသည်။",
+      "zh": "DocSend 2020 年的 pre-seed 数据显示，融到资的 deck 更常把产品部分和“为什么是现在”部分放在前面。",
+      "de": "Die Pre-Seed-Daten von DocSend aus 2020 zeigen: Decks, die Geld einwarben, setzten den Produktteil und das «Warum jetzt» öfter früh an."
+     },
+     "src": "https://www.dropbox.com/resources/docsend-pitch-deck-research"
+    },
+    {
+     "id": "traction",
+     "n": {
+      "en": "Numbers so far (traction)",
+      "th": "ตัวเลขที่ทำได้แล้ว (traction)",
+      "my": "ယခုအထိ ရလဒ်ကိန်းဂဏန်းများ (traction)",
+      "zh": "目前已有的成绩（traction）",
+      "de": "Bisherige Zahlen (Traction)"
+     },
+     "why": {
+      "en": "Y Combinator says to show traction if you have it, with numbers that are clear and meaningful.",
+      "th": "Y Combinator บอกให้แสดง traction ถ้ามี โดยให้ตัวเลขชัดเจนและมีความหมาย",
+      "my": "Y Combinator က traction ရှိလျှင် ပြရန်၊ ကိန်းဂဏန်းများကို ရှင်းလင်းပြီး အဓိပ္ပာယ်ရှိစေရန် ဆိုသည်။",
+      "zh": "Y Combinator 说，有 traction 就展示出来，数字要清楚、有意义。",
+      "de": "Y Combinator sagt: Wer Traction hat, zeigt sie, mit Zahlen, die klar und aussagekräftig sind."
+     },
+     "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+    },
+    {
+     "id": "money",
+     "n": {
+      "en": "How the business makes money",
+      "th": "ธุรกิจหารายได้อย่างไร",
+      "my": "စီးပွားရေးလုပ်ငန်းက ငွေဘယ်လိုရသလဲ",
+      "zh": "生意怎么赚钱",
+      "de": "Wie das Geschäft Geld verdient"
+     },
+     "why": {
+      "en": "The BOI's list asks how the startup makes money, how much it receives on average and from whom.",
+      "th": "รายการของ BOI ถามว่าสตาร์ทอัพหารายได้อย่างไร ได้เงินเฉลี่ยเท่าไร และได้จากใคร",
+      "my": "BOI ၏ စာရင်းတွင် စတားတပ်က ငွေဘယ်လိုရသည်၊ ပျမ်းမျှ ဘယ်လောက်ရသည်၊ ဘယ်သူ့ဆီမှ ရသည်ကို မေးထားသည်။",
+      "zh": "BOI 的清单问：初创企业怎么赚钱、平均收到多少钱、钱从谁那里来。",
+      "de": "Die BOI-Liste fragt, wie das Start-up Geld verdient, wie viel es im Durchschnitt erhält und von wem."
+     },
+     "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+    },
+    {
+     "id": "market",
+     "n": {
+      "en": "The market, and how big it is",
+      "th": "ตลาด และตลาดใหญ่แค่ไหน",
+      "my": "ဈေးကွက်နှင့် ဈေးကွက် ဘယ်လောက်ကြီးသလဲ",
+      "zh": "市场，以及它有多大",
+      "de": "Der Markt und wie gross er ist"
+     },
+     "why": {
+      "en": "Y Combinator's template asks what the market is, whether it will be big, and how much money the company will make.",
+      "th": "แม่แบบของ Y Combinator ถามว่าตลาดคืออะไร จะใหญ่ไหม และบริษัทจะได้เงินเท่าไร",
+      "my": "Y Combinator ၏ နမူနာတွင် ဈေးကွက်ဆိုသည်မှာ ဘာလဲ၊ ကြီးမည်လား၊ ကုမ္ပဏီက ငွေဘယ်လောက်ရမလဲ ဟု မေးထားသည်။",
+      "zh": "Y Combinator 的模板问：市场是什么，会不会很大，公司能赚多少钱。",
+      "de": "Die Vorlage von Y Combinator fragt: Was ist der Markt, wird er gross, und wie viel Geld verdient das Unternehmen?"
+     },
+     "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+    },
+    {
+     "id": "competition",
+     "n": {
+      "en": "Competitors, and how you differ",
+      "th": "คู่แข่ง และคุณต่างจากเขาอย่างไร",
+      "my": "ယှဉ်ပြိုင်သူများနှင့် သင် ဘယ်လိုကွာသလဲ",
+      "zh": "竞争对手，以及您有何不同",
+      "de": "Wettbewerber, und worin Sie sich unterscheiden"
+     },
+     "why": {
+      "en": "The BOI's list asks who the competitors are and how the business is different from them.",
+      "th": "รายการของ BOI ถามว่าคู่แข่งคือใคร และธุรกิจต่างจากเขาอย่างไร",
+      "my": "BOI ၏ စာရင်းတွင် ယှဉ်ပြိုင်သူများ ဘယ်သူတွေလဲ၊ လုပ်ငန်းက သူတို့နှင့် ဘယ်လိုကွာသလဲ ဟု မေးထားသည်။",
+      "zh": "BOI 的清单问：竞争对手是谁，这门生意与他们有什么不同。",
+      "de": "Die BOI-Liste fragt, wer die Wettbewerber sind und wie sich das Geschäft von ihnen unterscheidet."
+     },
+     "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+    },
+    {
+     "id": "team",
+     "n": {
+      "en": "The founders and their roles",
+      "th": "ผู้ก่อตั้งและบทบาทของแต่ละคน",
+      "my": "တည်ထောင်သူများနှင့် သူတို့၏ တာဝန်",
+      "zh": "创始人及各自的分工",
+      "de": "Die Gründer und ihre Rollen"
+     },
+     "why": {
+      "en": "Y Combinator says the team slide is about the founders and what makes them well suited to the problem, not about advisors.",
+      "th": "Y Combinator บอกว่าสไลด์ทีมเป็นเรื่องของผู้ก่อตั้งและสิ่งที่ทำให้เหมาะกับปัญหานี้ ไม่ใช่เรื่องของที่ปรึกษา",
+      "my": "Y Combinator က အဖွဲ့ဆလိုက်သည် တည်ထောင်သူများနှင့် သူတို့က ပြဿနာနှင့် ဘာကြောင့် ကိုက်ညီသည်ကို ပြောရန်ဖြစ်ပြီး အကြံပေးများအကြောင်း မဟုတ်ဟု ဆိုသည်။",
+      "zh": "Y Combinator 说，团队页讲的是创始人，以及他们为什么适合解决这个问题，不是讲顾问。",
+      "de": "Y Combinator sagt, die Team-Folie handle von den Gründern und davon, was sie für das Problem geeignet macht, nicht von Beratern."
+     },
+     "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+    },
+    {
+     "id": "ask",
+     "n": {
+      "en": "The amount asked, and what it buys",
+      "th": "จำนวนเงินที่ขอ และเงินนั้นซื้ออะไรได้",
+      "my": "တောင်းသည့်ငွေပမာဏနှင့် ထိုငွေဖြင့် ဘာရမလဲ",
+      "zh": "要多少钱，以及这笔钱能办成什么",
+      "de": "Der gesuchte Betrag und was er bewirkt"
+     },
+     "why": {
+      "en": "Y Combinator's last slide tells the investor how much money you need and what it gets you.",
+      "th": "สไลด์สุดท้ายของ Y Combinator บอกนักลงทุนว่าต้องการเงินเท่าไร และเงินนั้นทำอะไรได้",
+      "my": "Y Combinator ၏ နောက်ဆုံးဆလိုက်သည် ရင်းနှီးမြှုပ်နှံသူကို ငွေဘယ်လောက်လိုပြီး ထိုငွေဖြင့် ဘာရမည်ကို ပြောပြသည်။",
+      "zh": "Y Combinator 的最后一页告诉投资人：需要多少钱，这笔钱能换来什么。",
+      "de": "Die letzte Folie bei Y Combinator sagt dem Investor, wie viel Geld man braucht und was es bringt."
+     },
+     "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+    }
+   ],
+   "result": [
+    {
+     "min": 0,
+     "t": {
+      "en": "Nothing is ticked yet. A pitch deck is made of slides like these ten.",
+      "th": "ยังไม่ได้ติ๊กข้อใด pitch deck ประกอบด้วยสไลด์แบบสิบข้อนี้",
+      "my": "မည်သည့်အချက်မျှ မခြစ်ရသေးပါ။ pitch deck ကို ဤဆယ်ချက်ကဲ့သို့ ဆလိုက်များဖြင့် ဖွဲ့စည်းထားသည်။",
+      "zh": "还没有勾选任何一项。路演文件由类似这十张的幻灯片组成。",
+      "de": "Noch nichts abgehakt. Ein Pitch-Deck besteht aus Folien wie diesen zehn."
+     }
+    },
+    {
+     "min": 1,
+     "t": {
+      "en": "One to four slides are ticked. The list shows the ones still to make.",
+      "th": "ติ๊กแล้ว 1 ถึง 4 ข้อ รายการแสดงสไลด์ที่ยังต้องทำ",
+      "my": "1 ချက်မှ 4 ချက်အထိ ခြစ်ထားသည်။ ပြုလုပ်ရန် ကျန်သေးသော ဆလိုက်များကို စာရင်းတွင် ပြထားသည်။",
+      "zh": "已勾选 1 到 4 项。清单列出了还要做的幻灯片。",
+      "de": "Eine bis vier Folien sind abgehakt. Die Liste zeigt die, die noch fehlen."
+     }
+    },
+    {
+     "min": 5,
+     "t": {
+      "en": "Five to eight slides are ticked. The unticked ones are still to be made.",
+      "th": "ติ๊กแล้ว 5 ถึง 8 ข้อ สไลด์ที่ยังไม่ได้ติ๊กยังต้องทำ",
+      "my": "5 ချက်မှ 8 ချက်အထိ ခြစ်ထားသည်။ မခြစ်ရသေးသော ဆလိုက်များကို ပြုလုပ်ရန် ကျန်သည်။",
+      "zh": "已勾选 5 到 8 项。没勾选的幻灯片还有待制作。",
+      "de": "Fünf bis acht Folien sind abgehakt. Die nicht abgehakten sind noch zu machen."
+     }
+    },
+    {
+     "min": 9,
+     "t": {
+      "en": "Nine or ten slides are ticked. Nearly all ten are in place.",
+      "th": "ติ๊กแล้ว 9 หรือ 10 ข้อ เกือบครบทั้งสิบข้อแล้ว",
+      "my": "9 ချက် သို့မဟုတ် 10 ချက် ခြစ်ထားသည်။ ဆယ်ချက်လုံးနီးပါး ပါပြီးဖြစ်သည်။",
+      "zh": "已勾选 9 或 10 项。十项几乎都具备了。",
+      "de": "Neun oder zehn Folien sind abgehakt. Fast alle zehn sind vorhanden."
+     }
+    }
+   ],
+   "oursLine": {
+    "en": "Hongdam designs the slides for:",
+    "th": "หงส์ดำออกแบบสไลด์ให้ในราคา:",
+    "my": "ဟုန်ဒမ်က ဆလိုက်များကို ဒီဇိုင်းလုပ်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹为您设计幻灯片，价格：",
+    "de": "Hongdam gestaltet die Folien für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "The Thailand Board of Investment (BOI) lists a pitch deck, which it also calls a startup business plan, among the documents for the Smart visa S (startup). Its sheet names 12 items for the deck, from a 1-page executive summary and the management team to the revenue model, the growth strategy and Thailand's benefit.",
+    "th": "สำนักงานคณะกรรมการส่งเสริมการลงทุน (BOI) ระบุ pitch deck ซึ่งเรียกอีกชื่อว่าแผนธุรกิจสตาร์ทอัพ ไว้ในเอกสารสำหรับสมาร์ทวีซ่า S (สตาร์ทอัพ) แผ่นรายการกำหนด 12 ข้อสำหรับ deck ตั้งแต่บทสรุปผู้บริหาร 1 หน้าและทีมผู้บริหาร ไปจนถึงรูปแบบรายได้ กลยุทธ์การเติบโต และประโยชน์ต่อประเทศไทย",
+    "my": "ထိုင်းရင်းနှီးမြှုပ်နှံမှုဘုတ်အဖွဲ့ (BOI) သည် Smart visa S (စတားတပ်) အတွက် စာရွက်စာတမ်းများထဲတွင် startup business plan ဟုလည်း ခေါ်သော pitch deck ကို ထည့်သွင်းထားသည်။ ၎င်း၏စာရွက်တွင် deck အတွက် အချက် 12 ချက်ကို ဖော်ပြထားပြီး စာမျက်နှာတစ်မျက်နှာ အနှစ်ချုပ်နှင့် စီမံခန့်ခွဲရေးအဖွဲ့မှ စ၍ ဝင်ငွေပုံစံ၊ ကြီးထွားမှုနည်းဗျူဟာနှင့် ထိုင်းနိုင်ငံအတွက် အကျိုးကျေးဇူးအထိ ပါသည်။",
+    "zh": "泰国投资促进委员会（BOI）在 Smart 签证 S 类（初创企业）的文件清单里列了路演文件，也称初创企业商业计划书。清单为这份文件列出 12 项内容：从 1 页的执行摘要、管理团队，到收入模式、增长策略和对泰国的益处。",
+    "de": "Die thailändische Investitionsbehörde (BOI) führt unter den Unterlagen für das Smart-Visum S (Start-up) ein Pitch-Deck auf, das sie auch Start-up-Businessplan nennt. Ihr Blatt nennt 12 Punkte für das Deck: von einer einseitigen Zusammenfassung und dem Management-Team bis zum Erlösmodell, der Wachstumsstrategie und dem Nutzen für Thailand."
+   },
+   "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "t": {
+    "en": "Y Combinator's seed deck template runs: title, problem, solution, traction, what makes the team special, business model, market, team, and the ask. One slide per topic is ideal in the template, and three is the most it expects.",
+    "th": "แม่แบบ seed deck ของ Y Combinator เรียงเป็น: หน้าชื่อ ปัญหา วิธีแก้ traction จุดที่ทำให้ทีมพิเศษ โมเดลธุรกิจ ตลาด ทีม และจำนวนเงินที่ขอ แม่แบบถือว่าหัวข้อละ 1 สไลด์ดีที่สุด และมากสุดที่คาดไว้คือ 3 สไลด์",
+    "my": "Y Combinator ၏ seed deck နမူနာသည် ခေါင်းစဉ်စာမျက်နှာ၊ ပြဿနာ၊ ဖြေရှင်းချက်၊ traction၊ အဖွဲ့ကို ထူးခြားစေသည့်အချက်၊ စီးပွားရေးပုံစံ၊ ဈေးကွက်၊ အဖွဲ့နှင့် တောင်းဆိုသည့်ငွေ အစဉ်လိုက်ဖြစ်သည်။ နမူနာတွင် ခေါင်းစဉ်တစ်ခုလျှင် ဆလိုက်တစ်ခုက အကောင်းဆုံးဖြစ်ပြီး သုံးခုထက် မများရန် မျှော်လင့်သည်။",
+    "zh": "Y Combinator 的种子轮模板依次是：标题页、问题、解决办法、traction、团队的独到之处、商业模式、市场、团队、融资需求。模板里每个话题最好 1 页，最多不超过 3 页。",
+    "de": "Die Seed-Vorlage von Y Combinator folgt dieser Reihenfolge: Titel, Problem, Lösung, Traction, was das Team besonders macht, Geschäftsmodell, Markt, Team und der gesuchte Betrag. Eine Folie je Thema ist in der Vorlage ideal, mehr als drei erwartet sie nicht."
+   },
+   "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+  },
+  {
+   "t": {
+    "en": "Sequoia Capital's outline for writing a business plan names 10 sections: company purpose, problem, solution, why now, market potential, competition, business model, team, financials and vision.",
+    "th": "โครงร่างการเขียนแผนธุรกิจของ Sequoia Capital มี 10 หัวข้อ: จุดมุ่งหมายของบริษัท ปัญหา วิธีแก้ ทำไมต้องตอนนี้ ศักยภาพของตลาด คู่แข่ง โมเดลธุรกิจ ทีม การเงิน และวิสัยทัศน์",
+    "my": "Sequoia Capital ၏ စီးပွားရေးအစီအစဉ်ရေးသားရန် ဖွဲ့စည်းပုံတွင် အပိုင်း 10 ခု ပါသည် - ကုမ္ပဏီ၏ ရည်ရွယ်ချက်၊ ပြဿနာ၊ ဖြေရှင်းချက်၊ ဘာကြောင့် ယခုအချိန်၊ ဈေးကွက်အလားအလာ၊ ယှဉ်ပြိုင်သူ၊ စီးပွားရေးပုံစံ၊ အဖွဲ့၊ ဘဏ္ဍာရေးနှင့် အနာဂတ်မြင်ကွင်း။",
+    "zh": "Sequoia Capital 撰写商业计划书的提纲有 10 个部分：公司宗旨、问题、解决办法、为什么是现在、市场潜力、竞争、商业模式、团队、财务和愿景。",
+    "de": "Sequoia Capitals Gliederung für einen Businessplan nennt 10 Teile: Unternehmenszweck, Problem, Lösung, Warum jetzt, Marktpotenzial, Wettbewerb, Geschäftsmodell, Team, Finanzen und Vision."
+   },
+   "src": "https://www.sequoiacap.com/article/writing-a-business-plan/"
+  },
+  {
+   "t": {
+    "en": "DocSend's data shows investors spend less than 3 minutes reviewing a pitch deck. DocSend tracks how decks are shared and viewed on its platform, and joins that data to founders' fundraising outcomes.",
+    "th": "ข้อมูลของ DocSend ชี้ว่านักลงทุนใช้เวลาดู pitch deck น้อยกว่า 3 นาที DocSend ติดตามว่า deck ถูกแชร์และเปิดดูอย่างไรบนแพลตฟอร์มของตน และนำข้อมูลนั้นมาเทียบกับผลการระดมทุนของผู้ก่อตั้ง",
+    "my": "DocSend ၏ ဒေတာအရ ရင်းနှီးမြှုပ်နှံသူများသည် pitch deck တစ်ခုကို ကြည့်ရန် 3 မိနစ်အောက် အသုံးပြုသည်။ DocSend က ၎င်း၏ပလက်ဖောင်းပေါ်တွင် deck များကို မည်သို့ မျှဝေပြီး ကြည့်ကြောင်း မှတ်သားကာ ထိုဒေတာကို တည်ထောင်သူများ၏ ရန်ပုံငွေရှာဖွေမှုရလဒ်များနှင့် ပေါင်းစပ်သည်။",
+    "zh": "DocSend 的数据显示，投资人浏览一份路演文件不到 3 分钟。DocSend 记录文件在其平台上怎样被分享和查看，并把这些数据与创始人的融资结果对应起来。",
+    "de": "Laut DocSend-Daten verbringen Investoren weniger als 3 Minuten mit einem Pitch-Deck. DocSend erfasst, wie Decks auf seiner Plattform geteilt und angesehen werden, und verbindet diese Daten mit dem Finanzierungsergebnis der Gründer."
+   },
+   "src": "https://www.dropbox.com/resources/docsend-pitch-deck-research"
+  },
+  {
+   "t": {
+    "en": "In DocSend's 2020 pre-seed data, investors spent over four minutes on decks that raised money and one minute 30 seconds on decks that did not. None of the decks that raised money in its dataset had a table of contents, and they more often put the product and Why now sections early.",
+    "th": "ข้อมูล pre-seed ปี 2020 ของ DocSend: นักลงทุนใช้เวลากว่า 4 นาทีกับ deck ที่ระดมทุนได้ และ 1 นาที 30 วินาทีกับ deck ที่ระดมไม่ได้ ในชุดข้อมูลนี้ไม่มี deck ที่ระดมทุนได้เล่มใดมีสารบัญ และ deck เหล่านั้นมักวางส่วนผลิตภัณฑ์กับ “ทำไมต้องตอนนี้” ไว้ก่อน",
+    "my": "DocSend ၏ 2020 pre-seed ဒေတာတွင် ရင်းနှီးမြှုပ်နှံသူများသည် ငွေရခဲ့သော deck များကို 4 မိနစ်ကျော်၊ မရခဲ့သော deck များကို 1 မိနစ် 30 စက္ကန့် ကြည့်ခဲ့သည်။ ဒေတာအစုထဲရှိ ငွေရခဲ့သော deck များတွင် မာတိကာ မပါပါ။ ထို deck များသည် ထုတ်ကုန်အပိုင်းနှင့် “ဘာကြောင့် ယခုအချိန်” အပိုင်းကို အစောပိုင်းတွင် ထားလေ့ရှိသည်။",
+    "zh": "在 DocSend 2020 年的 pre-seed 数据里，投资人在融到资的文件上花了 4 分多钟，在没融到资的文件上只花 1 分 30 秒。数据集中融到资的文件都没有目录，并且更常把产品部分和“为什么是现在”放在前面。",
+    "de": "In den Pre-Seed-Daten von DocSend aus 2020 verbrachten Investoren über vier Minuten mit Decks, die Geld einwarben, und eine Minute 30 Sekunden mit den anderen. Keines der erfolgreichen Decks im Datensatz hatte ein Inhaltsverzeichnis, und sie stellten den Produktteil und das «Warum jetzt» öfter nach vorn."
+   },
+   "src": "https://www.dropbox.com/resources/docsend-pitch-deck-research"
+  },
+  {
+   "t": {
+    "en": "CBS News describes Guy Kawasaki's 10/20/30 rule: 10 slides, no more than 20 minutes, and text no smaller than 30 points. The reason given for 10 is that people cannot take in more than ten ideas in one sitting.",
+    "th": "CBS News อธิบายกฎ 10/20/30 ของ Guy Kawasaki ไว้ว่า สไลด์ 10 แผ่น ไม่เกิน 20 นาที และตัวอักษรไม่เล็กกว่า 30 พอยต์ เหตุผลของเลข 10 คือคนรับแนวคิดเกินสิบอย่างในการนั่งฟังครั้งเดียวไม่ไหว",
+    "my": "CBS News က Guy Kawasaki ၏ 10/20/30 စည်းမျဉ်းကို ဤသို့ ဖော်ပြသည် - ဆလိုက် 10 ခု၊ 20 မိနစ်ထက် မပိုရ၊ စာသားကို 30 ပွိုင့်ထက် မသေးရ။ 10 ခု ဖြစ်ရခြင်း အကြောင်းမှာ လူတို့သည် တစ်ကြိမ်ထိုင်ရာတွင် အယူအဆ ဆယ်ခုထက် မပို၍ ခံယူနိုင်သောကြောင့် ဟု ဆိုသည်။",
+    "zh": "CBS News 这样介绍 Guy Kawasaki 的 10/20/30 规则：10 张幻灯片，不超过 20 分钟，文字不小于 30 磅。文中给 10 张的理由是：人一次坐下来最多接受十个概念。",
+    "de": "CBS News beschreibt Guy Kawasakis 10/20/30-Regel so: 10 Folien, höchstens 20 Minuten, Schrift nicht kleiner als 30 Punkt. Für die 10 nennt der Artikel den Grund, dass Menschen in einer Sitzung nicht mehr als zehn Konzepte aufnehmen."
+   },
+   "src": "https://www.cbsnews.com/news/improve-your-powerpoint-presentations-with-guy-kawasakis-10-20-30-rule/"
+  },
+  {
+   "t": {
+    "en": "In Thailand, copyright arises when a work is made; registration is not needed.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်သည်; မှတ်ပုံတင်ရန် မလို။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Pitch deck, presentation or proposal in Thai and English, from a Fastwork freelancer: four packages",
+    "th": "pitch deck พรีเซนเทชัน หรือข้อเสนอ ภาษาไทยและอังกฤษ จากฟรีแลนซ์บน Fastwork: 4 แพ็กเกจ",
+    "my": "pitch deck၊ တင်ပြချက် သို့မဟုတ် အဆိုပြုချက်၊ ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာ၊ Fastwork ဖရီးလန်စာတစ်ဦးထံမှ - ပက်ကေ့ဂျ် 4 မျိုး",
+    "zh": "路演文件、演示文稿或提案（泰英双语），Fastwork 自由职业者：4 个套餐",
+    "de": "Pitch-Deck, Präsentation oder Angebot auf Thai und Englisch, von einer Freelancerin oder einem Freelancer auf Fastwork: vier Pakete"
+   },
+   "p": {
+    "en": "฿4,600 (7 days, 1 revision); ฿6,500 (10 days, 2); ฿9,100 (14 days, 3); ฿11,700 (14 days, 4, with a strategy video call)",
+    "th": "฿4,600 (7 วัน แก้ 1 ครั้ง); ฿6,500 (10 วัน แก้ 2 ครั้ง); ฿9,100 (14 วัน แก้ 3 ครั้ง); ฿11,700 (14 วัน แก้ 4 ครั้ง พร้อมวิดีโอคอลเรื่องกลยุทธ์)",
+    "my": "฿4,600 (ရက် 7၊ ပြင်ဆင်မှု 1 ကြိမ်); ฿6,500 (ရက် 10၊ 2 ကြိမ်); ฿9,100 (ရက် 14၊ 3 ကြိမ်); ฿11,700 (ရက် 14၊ 4 ကြိမ်၊ ဗျူဟာ ဗီဒီယိုကော်လ်ပါ)",
+    "zh": "฿4,600（7 天，修改 1 次）；฿6,500（10 天，2 次）；฿9,100（14 天，3 次）；฿11,700（14 天，4 次，含一次策略视频通话）",
+    "de": "฿4,600 (7 Tage, 1 Korrektur); ฿6,500 (10 Tage, 2); ฿9,100 (14 Tage, 3); ฿11,700 (14 Tage, 4, mit Strategie-Videocall)"
+   },
+   "src": "https://fastwork.co/user/mingbrrk/presentation-94429304"
+  },
+  {
+   "t": {
+    "en": "Pitch deck or business presentation of up to 25 pages, from a Fastwork freelancer",
+    "th": "pitch deck หรือพรีเซนเทชันธุรกิจ ไม่เกิน 25 หน้า จากฟรีแลนซ์บน Fastwork",
+    "my": "စာမျက်နှာ 25 အထိ pitch deck သို့မဟုတ် စီးပွားရေးတင်ပြချက်၊ Fastwork ဖရီးလန်စာတစ်ဦးထံမှ",
+    "zh": "最多 25 页的路演文件或商务演示，Fastwork 自由职业者",
+    "de": "Pitch-Deck oder Business-Präsentation bis 25 Seiten, von einer Freelancerin oder einem Freelancer auf Fastwork"
+   },
+   "p": {
+    "en": "From ฿1,500; 4 days; 2 revisions; 38 sold",
+    "th": "เริ่ม ฿1,500; 4 วัน; แก้ 2 ครั้ง; ขายได้ 38 ครั้ง",
+    "my": "฿1,500 မှ စသည်; ရက် 4; ပြင်ဆင်မှု 2 ကြိမ်; ရောင်းပြီး 38 ကြိမ်",
+    "zh": "฿1,500 起；4 天；修改 2 次；已售 38 单",
+    "de": "Ab ฿1,500; 4 Tage; 2 Korrekturen; 38-mal verkauft"
+   },
+   "src": "https://fastwork.co/user/v.tanyavee/presentation-10741719"
+  },
+  {
+   "t": {
+    "en": "Slides in Canva Pro for a thesis, research or project talk, from a Fastwork freelancer: three packs",
+    "th": "สไลด์ใน Canva Pro สำหรับวิทยานิพนธ์ งานวิจัย หรือโปรเจกต์ จากฟรีแลนซ์บน Fastwork: 3 แพ็ก",
+    "my": "Canva Pro ဖြင့် စာတမ်း၊ သုတေသန သို့မဟုတ် ပရောဂျက် တင်ပြချက် ဆလိုက်များ၊ Fastwork ဖရီးလန်စာတစ်ဦးထံမှ - ပက်ခ် 3 မျိုး",
+    "zh": "用 Canva Pro 做论文、研究或项目汇报的幻灯片，Fastwork 自由职业者：3 个套餐",
+    "de": "Folien in Canva Pro für Abschlussarbeit, Forschung oder Projekt, von einer Freelancerin oder einem Freelancer auf Fastwork: drei Pakete"
+   },
+   "p": {
+    "en": "฿800 for 1–10 pages (3 days); ฿1,600 for 11–20 (4 days); ฿2,400 for 21–30 (5 days); PDF and a Canva Pro link; 412 sold",
+    "th": "฿800 สำหรับ 1–10 หน้า (3 วัน); ฿1,600 สำหรับ 11–20 หน้า (4 วัน); ฿2,400 สำหรับ 21–30 หน้า (5 วัน); ได้ไฟล์ PDF และลิงก์ Canva Pro; ขายได้ 412 ครั้ง",
+    "my": "စာမျက်နှာ 1–10 အတွက် ฿800 (ရက် 3); 11–20 အတွက် ฿1,600 (ရက် 4); 21–30 အတွက် ฿2,400 (ရက် 5); PDF နှင့် Canva Pro လင့်ခ်; ရောင်းပြီး 412 ကြိမ်",
+    "zh": "1–10 页 ฿800（3 天）；11–20 页 ฿1,600（4 天）；21–30 页 ฿2,400（5 天）；交付 PDF 和 Canva Pro 链接；已售 412 单",
+    "de": "฿800 für 1–10 Seiten (3 Tage); ฿1,600 für 11–20 (4 Tage); ฿2,400 für 21–30 (5 Tage); PDF und Canva-Pro-Link; 412-mal verkauft"
+   },
+   "src": "https://fastwork.co/user/bubblebi/presentation-21944688"
+  },
+  {
+   "t": {
+    "en": "Canva Pro",
+    "th": "Canva Pro",
+    "my": "Canva Pro",
+    "zh": "Canva Pro",
+    "de": "Canva Pro"
+   },
+   "p": {
+    "en": "฿230 a month",
+    "th": "เดือนละ ฿230",
+    "my": "တစ်လ ฿230",
+    "zh": "每月 ฿230",
+    "de": "฿230 im Monat"
+   },
+   "src": "https://www.canva.com/th_th/pricing/"
+  },
+  {
+   "t": {
+    "en": "Pitch, slide software: the plans",
+    "th": "Pitch โปรแกรมทำสไลด์: แพ็กเกจ",
+    "my": "Pitch ဆလိုက်ဆော့ဖ်ဝဲ - အစီအစဉ်များ",
+    "zh": "Pitch 幻灯片软件：各套餐",
+    "de": "Pitch, Folien-Software: die Tarife"
+   },
+   "p": {
+    "en": "Free: €0 for 1–5 seats; Plus: €10 a month, billed yearly, 1 seat; Team: €15 a month, billed yearly, 1–25 seats",
+    "th": "ฟรี: €0 สำหรับ 1–5 ที่นั่ง; Plus: €10 ต่อเดือน เรียกเก็บรายปี 1 ที่นั่ง; Team: €15 ต่อเดือน เรียกเก็บรายปี 1–25 ที่นั่ง",
+    "my": "အခမဲ့ - 1–5 ထိုင်ခုံအတွက် €0; Plus - တစ်လ €10၊ နှစ်စဉ်ကောက်ခံ၊ ထိုင်ခုံ 1; Team - တစ်လ €15၊ နှစ်စဉ်ကောက်ခံ၊ ထိုင်ခုံ 1–25",
+    "zh": "免费：1–5 个席位 €0；Plus：每月 €10，按年付，1 个席位；Team：每月 €15，按年付，1–25 个席位",
+    "de": "Gratis: €0 für 1–5 Plätze; Plus: €10 im Monat, jährlich abgerechnet, 1 Platz; Team: €15 im Monat, jährlich abgerechnet, 1–25 Plätze"
+   },
+   "src": "https://pitch.com/pricing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How many slides does a pitch deck have?",
+    "th": "pitch deck มีกี่สไลด์",
+    "my": "pitch deck တွင် ဆလိုက် ဘယ်နှစ်ခု ရှိသလဲ",
+    "zh": "路演文件一般有多少张幻灯片",
+    "de": "Wie viele Folien hat ein Pitch-Deck?"
+   },
+   "a": {
+    "en": "DocSend says most pitch decks are roughly 20 pages long, with about 50 words per slide. It sorts the content into 12 sections in four buckets: an overview, money, product-market fit and the ask. It also says investors typically give a deck a couple of minutes or less.",
+    "th": "DocSend ระบุว่า pitch deck ส่วนใหญ่ยาวราว 20 หน้า สไลด์ละราว 50 คำ และแบ่งเนื้อหาเป็น 12 ส่วนใน 4 กลุ่ม คือภาพรวม เงิน ความเหมาะของสินค้ากับตลาด และการขอเงิน DocSend ยังระบุว่านักลงทุนมักให้เวลากับ deck สองสามนาทีหรือน้อยกว่า",
+    "my": "DocSend က pitch deck အများစုသည် စာမျက်နှာ 20 ခန့် ရှည်ပြီး ဆလိုက်တစ်ခုလျှင် စကားလုံး 50 ခန့် ပါသည်ဟု ဆိုသည်။ အကြောင်းအရာကို အပိုင်း 12 ခုအဖြစ် အုပ်စု 4 ခုခွဲသည် - အနှစ်ချုပ်၊ ငွေကြေး၊ ထုတ်ကုန်နှင့် ဈေးကွက် ကိုက်ညီမှုနှင့် တောင်းဆိုမှု။ ရင်းနှီးမြှုပ်နှံသူများသည် deck တစ်ခုကို ပုံမှန်အားဖြင့် မိနစ်အနည်းငယ် သို့မဟုတ် ထိုထက်နည်းနည်းသာ ကြည့်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "DocSend 说，多数路演文件约 20 页，每页约 50 个词。它把内容分成 12 个部分、4 组：概览、赚钱与财务、产品与市场的契合，以及融资需求。它还说，投资人通常只给一份文件几分钟甚至更少的时间。",
+    "de": "DocSend sagt, die meisten Pitch-Decks seien etwa 20 Seiten lang, mit rund 50 Wörtern je Folie. Es teilt den Inhalt in 12 Teile und vier Gruppen: Überblick, Geld, Produkt-Markt-Passung und die Bitte um Geld. Investoren widmen einem Deck laut DocSend meist nur ein paar Minuten oder weniger."
+   },
+   "src": "https://www.dropbox.com/resources/docsend-pitch-deck-research"
+  },
+  {
+   "q": {
+    "en": "How long do investors look at a pitch deck?",
+    "th": "นักลงทุนดู pitch deck นานแค่ไหน",
+    "my": "ရင်းနှီးမြှုပ်နှံသူများ pitch deck ကို ဘယ်လောက်ကြာကြာ ကြည့်သလဲ",
+    "zh": "投资人会看一份路演文件多久",
+    "de": "Wie lange sehen sich Investoren ein Pitch-Deck an?"
+   },
+   "a": {
+    "en": "A TechCrunch report on DocSend's data, dated 22 September 2022, says a founder has just under three minutes on average to earn a meeting. It puts the time investors spent on decks that failed to raise money at 2 minutes 13 seconds. Product and business model were the sections that held investors longest.",
+    "th": "รายงานของ TechCrunch ลงวันที่ 22 กันยายน 2022 เรื่องข้อมูลของ DocSend ระบุว่า ผู้ก่อตั้งมีเวลาเฉลี่ยเกือบสามนาทีเพื่อให้ได้นัดพบ และระบุว่านักลงทุนใช้เวลา 2 นาที 13 วินาทีกับ deck ที่ระดมทุนไม่สำเร็จ ส่วนผลิตภัณฑ์และโมเดลธุรกิจเป็นส่วนที่รั้งนักลงทุนไว้นานที่สุด",
+    "my": "DocSend ၏ ဒေတာအကြောင်း TechCrunch ၏ 2022 စက်တင်ဘာ 22 ရက်စွဲပါ အစီရင်ခံစာတွင် တည်ထောင်သူတစ်ဦးသည် တွေ့ဆုံခွင့်ရရန် ပျမ်းမျှ သုံးမိနစ်နီးပါးသာ ရသည်ဟု ဆိုသည်။ ငွေမရခဲ့သော deck များကို ရင်းနှီးမြှုပ်နှံသူများ ကြည့်ခဲ့သည့်အချိန်ကို 2 မိနစ် 13 စက္ကန့်ဟု ဖော်ပြသည်။ ထုတ်ကုန်နှင့် စီးပွားရေးပုံစံ အပိုင်းများက ရင်းနှီးမြှုပ်နှံသူများကို အကြာဆုံး ထိန်းထားနိုင်သည်။",
+    "zh": "TechCrunch 2022 年 9 月 22 日关于 DocSend 数据的报道说，创始人平均只有不到三分钟的时间来争取一次会面。报道称，投资人在没融到资的文件上花了 2 分 13 秒。产品和商业模式这两部分最能留住投资人。",
+    "de": "Ein TechCrunch-Bericht vom 22. September 2022 über DocSend-Daten sagt, Gründer hätten im Schnitt knapp drei Minuten, um ein Treffen zu bekommen. Bei Decks, die kein Geld einwarben, verbrachten Investoren 2 Minuten 13 Sekunden. Produkt und Geschäftsmodell hielten Investoren am längsten."
+   },
+   "src": "https://techcrunch.com/2022/09/22/science-of-pitch-decks/amp"
+  },
+  {
+   "q": {
+    "en": "Why does the 10/20/30 rule set a text size?",
+    "th": "ทำไมกฎ 10/20/30 จึงกำหนดขนาดตัวอักษร",
+    "my": "10/20/30 စည်းမျဉ်းတွင် စာလုံးအရွယ်အစားကို ဘာကြောင့် သတ်မှတ်သလဲ",
+    "zh": "为什么 10/20/30 规则要规定字号",
+    "de": "Warum legt die 10/20/30-Regel eine Schriftgrösse fest?"
+   },
+   "a": {
+    "en": "CBS News calls 30 points the smallest size text should appear anywhere in the deck. Its reason is that smaller text tempts a presenter to put the whole story on the slides and read from them. It adds that a 20-minute pitch in a one-hour slot leaves nearly 40 minutes for questions.",
+    "th": "CBS News ระบุว่า 30 พอยต์คือขนาดตัวอักษรที่เล็กที่สุดที่ปรากฏได้ในทุกหน้าของ deck เหตุผลคือถ้าตัวอักษรเล็กกว่านี้ ผู้นำเสนอมักใส่เรื่องทั้งหมดลงบนสไลด์แล้วอ่านตาม บทความเพิ่มว่าการนำเสนอ 20 นาทีในช่วงเวลา 1 ชั่วโมง เหลือเวลาเกือบ 40 นาทีสำหรับคำถาม",
+    "my": "CBS News က 30 ပွိုင့်သည် deck တစ်ခုလုံးတွင် စာသား၏ အသေးဆုံးအရွယ်အစား ဖြစ်သည်ဟု ဆိုသည်။ အကြောင်းမှာ စာလုံးသေးလျှင် တင်ပြသူက ဇာတ်လမ်းတစ်ခုလုံးကို ဆလိုက်ပေါ်တင်ပြီး ဖတ်ချင်လာတတ်သောကြောင့် ဖြစ်သည်။ တစ်နာရီအချိန်ကာလတွင် 20 မိနစ် တင်ပြလျှင် မေးခွန်းများအတွက် 40 မိနစ်နီးပါး ကျန်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "CBS News 把 30 磅称为整份文件里文字最小的字号。理由是字再小，讲者就容易把整个故事塞进幻灯片，然后照着念。文章还说，一小时的时段里讲 20 分钟，可留出近 40 分钟答疑。",
+    "de": "CBS News nennt 30 Punkt die kleinste Grösse, in der Text irgendwo im Deck erscheinen sollte. Der Grund: Kleinerer Text verleitet dazu, die ganze Geschichte auf die Folien zu packen und sie abzulesen. Der Artikel fügt hinzu, dass ein 20-minütiger Vortrag in einer Stunde knapp 40 Minuten für Fragen lässt."
+   },
+   "src": "https://www.cbsnews.com/news/improve-your-powerpoint-presentations-with-guy-kawasakis-10-20-30-rule/"
+  },
+  {
+   "q": {
+    "en": "What goes on the problem and solution slides?",
+    "th": "สไลด์ปัญหาและสไลด์วิธีแก้มีอะไรอยู่บ้าง",
+    "my": "ပြဿနာဆလိုက်နှင့် ဖြေရှင်းချက်ဆလိုက်တွင် ဘာတွေ ထည့်သလဲ",
+    "zh": "问题页和解决办法页里写什么",
+    "de": "Was steht auf den Folien zu Problem und Lösung?"
+   },
+   "a": {
+    "en": "Sequoia's outline asks the problem section to describe the customer's pain, how it is handled today and where current solutions fall short. The solution section explains the main insight behind the product, why its value proposition is distinctive and durable, and where it goes next.",
+    "th": "โครงร่างของ Sequoia ให้ส่วนปัญหาอธิบายความเจ็บปวดของลูกค้า วิธีที่แก้กันอยู่ทุกวันนี้ และจุดที่วิธีปัจจุบันยังไม่ตอบโจทย์ ส่วนวิธีแก้อธิบายข้อคิดหลักเบื้องหลังผลิตภัณฑ์ เหตุที่คุณค่าที่เสนอนั้นโดดเด่นและยั่งยืน และก้าวต่อไปของผลิตภัณฑ์",
+    "my": "Sequoia ၏ ဖွဲ့စည်းပုံတွင် ပြဿနာအပိုင်းက ဖောက်သည်၏ ဒုက္ခ၊ ယခုအချိန်တွင် ကိုင်တွယ်နေပုံနှင့် လက်ရှိဖြေရှင်းနည်းများ ချို့တဲ့သည့်နေရာကို ဖော်ပြရန် ဖြစ်သည်။ ဖြေရှင်းချက်အပိုင်းက ထုတ်ကုန်နောက်ကွယ်ရှိ အဓိကအမြင်၊ ၎င်း၏တန်ဖိုးသည် ထူးခြားပြီး ခိုင်မြဲရခြင်းအကြောင်းနှင့် နောက်တစ်ဆင့် ဘယ်သို့ရောက်မည်ကို ရှင်းပြသည်။",
+    "zh": "Sequoia 的提纲要求“问题”部分写客户的痛点、现在是怎么解决的，以及现有方案不足在哪里；“解决办法”部分讲产品背后的主要洞见、价值主张为什么独特而持久，以及下一步去向。",
+    "de": "Sequoias Gliederung verlangt im Teil Problem den Schmerz des Kunden, den heutigen Umgang damit und die Schwächen heutiger Lösungen. Der Teil Lösung erklärt die Haupteinsicht hinter dem Produkt, warum sein Wertversprechen eigenständig und dauerhaft ist und wohin es sich entwickelt."
+   },
+   "src": "https://www.sequoiacap.com/article/writing-a-business-plan/"
+  },
+  {
+   "q": {
+    "en": "Does a seed deck need a fancy design?",
+    "th": "seed deck ต้องออกแบบหวือหวาไหม",
+    "my": "seed deck ကို ဆန်းကျယ်စွာ ဒီဇိုင်းလုပ်ရန် လိုသလား",
+    "zh": "种子轮的路演文件需要花哨的设计吗",
+    "de": "Braucht ein Seed-Deck ein aufwendiges Design?"
+   },
+   "a": {
+    "en": "Y Combinator calls its seed deck template intentionally simple in design. It tells founders to strive for clarity and concision and to focus on narrative. It points to a piece by Kevin Hale on how to design decks well.",
+    "th": "Y Combinator เรียกแม่แบบ seed deck ของตนว่าเรียบง่ายโดยตั้งใจ บอกให้ผู้ก่อตั้งมุ่งความชัดเจนและกระชับ และเน้นที่เรื่องราว พร้อมชี้ไปยังบทความของ Kevin Hale ว่าด้วยการออกแบบ deck ให้ดี",
+    "my": "Y Combinator က ၎င်း၏ seed deck နမူနာကို ရည်ရွယ်ချက်ရှိရှိ ရိုးရှင်းစွာ ဒီဇိုင်းလုပ်ထားသည်ဟု ခေါ်သည်။ တည်ထောင်သူများအား ရှင်းလင်းပြီး တိုတောင်းစေရန်နှင့် ဇာတ်ကြောင်းကို အာရုံစိုက်ရန် ဆိုသည်။ deck ကို ကောင်းကောင်း ဒီဇိုင်းလုပ်ပုံအကြောင်း Kevin Hale ၏ ဆောင်းပါးကိုလည်း ညွှန်ပြထားသည်။",
+    "zh": "Y Combinator 称自己的种子轮模板在设计上有意保持简单。它要求创始人追求清晰简洁，把重心放在叙事上。它还指向 Kevin Hale 写的一篇谈如何把 deck 设计好的文章。",
+    "de": "Y Combinator nennt seine Seed-Vorlage bewusst schlicht im Design. Gründer sollen nach Klarheit und Kürze streben und die Erzählung in den Mittelpunkt stellen. Die Seite verweist auf einen Text von Kevin Hale darüber, wie man Decks gut gestaltet."
+   },
+   "src": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+  },
+  {
+   "q": {
+    "en": "What does the BOI Smart visa S sheet say about a pitch deck?",
+    "th": "เอกสารสมาร์ทวีซ่า S ของ BOI พูดถึง pitch deck ว่าอย่างไร",
+    "my": "BOI ၏ Smart visa S စာရွက်က pitch deck အကြောင်း ဘာပြောထားသလဲ",
+    "zh": "BOI 的 Smart 签证 S 类文件清单怎么说路演文件",
+    "de": "Was sagt das BOI-Blatt zum Smart-Visum S über ein Pitch-Deck?"
+   },
+   "a": {
+    "en": "The sheet lists a pitch deck as document 5 of its required documents. It names 12 items for the deck, among them the competition, the marketing and sales strategy and the revenue model. The applicant also confirms that documents not in English come with a certified translation.",
+    "th": "แผ่นรายการระบุ pitch deck เป็นเอกสารข้อ 5 ในเอกสารที่ต้องใช้ และกำหนด 12 ข้อสำหรับ deck เช่น คู่แข่ง กลยุทธ์การตลาดและการขาย และรูปแบบรายได้ ผู้ยื่นยังยืนยันด้วยว่าเอกสารที่ไม่ใช่ภาษาอังกฤษมาพร้อมคำแปลรับรอง",
+    "my": "စာရွက်တွင် pitch deck ကို လိုအပ်သော စာရွက်စာတမ်းများအနက် အမှတ် 5 အဖြစ် ဖော်ပြထားသည်။ deck အတွက် အချက် 12 ချက်ပါပြီး ယှဉ်ပြိုင်သူ၊ ဈေးကွက်ရှာဖွေရေးနှင့် ရောင်းချရေးနည်းဗျူဟာနှင့် ဝင်ငွေပုံစံတို့ ပါဝင်သည်။ အင်္ဂလိပ်ဘာသာမဟုတ်သော စာရွက်စာတမ်းများကို အတည်ပြုဘာသာပြန်နှင့်အတူ တင်ပြထားကြောင်း လျှောက်ထားသူက အတည်ပြုရသည်။",
+    "zh": "清单把路演文件列为所需文件的第 5 项，并为它列出 12 项内容，其中有竞争情况、营销与销售策略和收入模式。申请人还要确认，非英文文件附有经认证的翻译。",
+    "de": "Das Blatt führt ein Pitch-Deck als Dokument 5 der erforderlichen Unterlagen auf. Es nennt 12 Punkte für das Deck, darunter den Wettbewerb, die Marketing- und Verkaufsstrategie und das Erlösmodell. Die antragstellende Person bestätigt ausserdem, dass Unterlagen, die nicht auf Englisch sind, mit einer beglaubigten Übersetzung kommen."
+   },
+   "src": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  },
+  {
+   "q": {
+    "en": "Who writes the content of a pitch deck?",
+    "th": "ใครเขียนเนื้อหาของ pitch deck",
+    "my": "pitch deck ၏ အကြောင်းအရာကို ဘယ်သူ ရေးသလဲ",
+    "zh": "路演文件的内容由谁来写",
+    "de": "Wer schreibt den Inhalt eines Pitch-Decks?"
+   },
+   "a": {
+    "en": "One Fastwork seller of pitch decks sets the split by package. Small is 100% from the buyer's brief. Medium is 70% brief and 30% team input. Large and XL are 50% brief and 50% or more team input. The process starts with a call about the details and the brief.",
+    "th": "ผู้ขาย pitch deck รายหนึ่งบน Fastwork กำหนดสัดส่วนตามแพ็กเกจ Small มาจากบรีฟของผู้ซื้อ 100% Medium เป็นบรีฟ 70% และข้อมูลจากทีม 30% Large และ XL เป็นบรีฟ 50% และข้อมูลจากทีม 50% ขึ้นไป ขั้นตอนเริ่มด้วยการโทรคุยรายละเอียดและบรีฟ",
+    "my": "Fastwork ရှိ pitch deck ရောင်းသူတစ်ဦးက ပက်ကေ့ဂျ်အလိုက် အချိုးအစားကို သတ်မှတ်ထားသည်။ Small သည် ဝယ်သူ၏ brief မှ 100% ဖြစ်သည်။ Medium သည် brief 70% နှင့် အဖွဲ့၏ ပါဝင်မှု 30% ဖြစ်သည်။ Large နှင့် XL သည် brief 50% နှင့် အဖွဲ့၏ ပါဝင်မှု 50% သို့မဟုတ် ထိုထက်ပို၍ ဖြစ်သည်။ လုပ်ငန်းစဉ်ကို အသေးစိတ်နှင့် brief အကြောင်း ဖုန်းပြောဆိုခြင်းဖြင့် စသည်။",
+    "zh": "Fastwork 上一位路演文件卖家按套餐划分分工。Small 套餐 100% 来自买家的需求说明。Medium 是 70% 需求说明加 30% 团队投入。Large 和 XL 是 50% 需求说明加 50% 或更多的团队投入。流程从一通谈细节和需求的电话开始。",
+    "de": "Ein Fastwork-Anbieter für Pitch-Decks legt die Aufteilung je Paket fest. Small stammt zu 100 % aus dem Briefing des Käufers. Medium besteht aus 70 % Briefing und 30 % Beitrag des Teams. Large und XL bestehen aus 50 % Briefing und 50 % oder mehr Beitrag des Teams. Der Ablauf beginnt mit einem Gespräch über Details und Briefing."
+   },
+   "src": "https://fastwork.co/user/mingbrrk/presentation-94429304"
+  },
+  {
+   "q": {
+    "en": "Is there a free tool for making slides?",
+    "th": "มีโปรแกรมทำสไลด์ฟรีไหม",
+    "my": "ဆလိုက်လုပ်ရန် အခမဲ့ကိရိယာ ရှိသလား",
+    "zh": "有没有免费的幻灯片工具",
+    "de": "Gibt es ein kostenloses Werkzeug für Folien?"
+   },
+   "a": {
+    "en": "Pitch's free plan costs €0 for 1–5 seats. It includes unlimited presentations, custom templates, basic sharing links, 2 external guests and 100 AI credits that do not renew once used. The Plus plan is €10 a month, billed yearly.",
+    "th": "แพ็กเกจฟรีของ Pitch ราคา €0 สำหรับ 1–5 ที่นั่ง มีงานนำเสนอไม่จำกัด แม่แบบที่กำหนดเอง ลิงก์แชร์พื้นฐาน แขกภายนอก 2 คน และเครดิต AI 100 หน่วยที่ไม่ต่ออายุเมื่อใช้หมด แพ็กเกจ Plus เดือนละ €10 เรียกเก็บรายปี",
+    "my": "Pitch ၏ အခမဲ့အစီအစဉ်သည် ထိုင်ခုံ 1–5 ခုအတွက် €0 ဖြစ်သည်။ ကန့်သတ်ချက်မရှိ တင်ပြချက်များ၊ ကိုယ်ပိုင်နမူနာများ၊ အခြေခံမျှဝေလင့်ခ်များ၊ ပြင်ပဧည့်သည် 2 ဦးနှင့် သုံးပြီးပါက မပြန်လည်ရတော့သော AI ခရက်ဒစ် 100 ပါဝင်သည်။ Plus အစီအစဉ်မှာ တစ်လ €10 ဖြစ်ပြီး နှစ်စဉ်ကောက်ခံသည်။",
+    "zh": "Pitch 的免费套餐 1–5 个席位收费 €0，包括不限数量的演示文稿、自定义模板、基础分享链接、2 位外部访客，以及用完不再续的 100 个 AI 点数。Plus 套餐每月 €10，按年付。",
+    "de": "Der Gratis-Tarif von Pitch kostet €0 für 1–5 Plätze. Er enthält unbegrenzt viele Präsentationen, eigene Vorlagen, einfache Freigabelinks, 2 externe Gäste und 100 KI-Credits, die sich nach dem Verbrauch nicht erneuern. Der Tarif Plus kostet €10 im Monat, jährlich abgerechnet."
+   },
+   "src": "https://pitch.com/pricing"
+  }
+ ],
+ "related": [
+  "proposal",
+  "graphics",
+  "translate",
+  "grants",
+  "copy",
+  "awards"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Sequoia Capital: writing a business plan",
+    "th": "Sequoia Capital: การเขียนแผนธุรกิจ",
+    "my": "Sequoia Capital - စီးပွားရေးအစီအစဉ်ရေးသားခြင်း",
+    "zh": "Sequoia Capital：撰写商业计划书",
+    "de": "Sequoia Capital: einen Businessplan schreiben"
+   },
+   "href": "https://www.sequoiacap.com/article/writing-a-business-plan/"
+  },
+  {
+   "t": {
+    "en": "Y Combinator: how to build your seed round pitch deck",
+    "th": "Y Combinator: วิธีสร้าง pitch deck สำหรับรอบ seed",
+    "my": "Y Combinator - seed round pitch deck တည်ဆောက်ပုံ",
+    "zh": "Y Combinator：如何制作种子轮路演文件",
+    "de": "Y Combinator: so baut man das Pitch-Deck für die Seed-Runde"
+   },
+   "href": "https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck"
+  },
+  {
+   "t": {
+    "en": "DocSend: pitch deck research",
+    "th": "DocSend: งานวิจัยเรื่อง pitch deck",
+    "my": "DocSend - pitch deck သုတေသန",
+    "zh": "DocSend：路演文件研究",
+    "de": "DocSend: Forschung zu Pitch-Decks"
+   },
+   "href": "https://www.dropbox.com/resources/docsend-pitch-deck-research"
+  },
+  {
+   "t": {
+    "en": "BOI Smart visa S: required documents and the pitch deck items",
+    "th": "BOI สมาร์ทวีซ่า S: เอกสารที่ต้องใช้และรายการใน pitch deck",
+    "my": "BOI Smart visa S - လိုအပ်သော စာရွက်စာတမ်းများနှင့် pitch deck အချက်များ",
+    "zh": "BOI Smart 签证 S 类：所需文件和路演文件事项",
+    "de": "BOI Smart-Visum S: erforderliche Unterlagen und die Punkte des Pitch-Decks"
+   },
+   "href": "https://smart-visa.boi.go.th/document/Checklist_Smart_S.pdf"
+  }
+ ],
+ "glyphs": [
+  "laptop",
+  "rocket",
+  "lightbulb"
+ ]
+}

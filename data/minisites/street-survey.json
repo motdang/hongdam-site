@@ -1,0 +1,306 @@
+{
+ "id": "street-survey",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People ask for a street or a market to be listed shop by shop: the sign, the name and the place on a map.",
+  "th": "คนที่อยากรู้ว่าถนนหรือตลาดมีร้านอะไรบ้าง ต้องการรายการทีละร้าน: ป้าย ชื่อ และตำแหน่งบนแผนที่",
+  "my": "လမ်း သို့မဟုတ် ဈေးတစ်ခုကို ဆိုင်တစ်ဆိုင်ချင်း စာရင်းလိုချင်သူများရှိသည် — ဆိုင်းဘုတ်၊ အမည်နှင့် မြေပုံပေါ်ရှိ နေရာ။",
+  "zh": "有人想把一条街或一个市场逐家店列出来：店招、店名，以及在地图上的位置。",
+  "de": "Man möchte eine Strasse oder einen Markt Laden für Laden aufgelistet haben: das Schild, den Namen und die Stelle auf der Karte."
+ },
+ "n": {
+  "de": "Fotoerhebung einer Strasse"
+ },
+ "l": {
+  "de": "Ladenschilder einer Strasse oder eines Markts, fotografiert und kartiert."
+ },
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "You name the street or the market.",
+    "th": "คุณบอกชื่อถนนหรือตลาด",
+    "my": "သင်က လမ်း သို့မဟုတ် ဈေး၏ အမည်ကို ပြောပြသည်။",
+    "zh": "您告诉我们街道或市场的名称。",
+    "de": "Sie nennen die Strasse oder den Markt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "We photograph the shop signs.",
+    "th": "ถ่ายภาพป้ายร้าน",
+    "my": "ဆိုင်းဘုတ်များကို ဓာတ်ပုံရိုက်သည်။",
+    "zh": "拍下店招。",
+    "de": "Wir fotografieren die Ladenschilder."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the street or in the market",
+    "th": "ที่ถนนหรือในตลาด",
+    "my": "လမ်းပေါ် သို့မဟုတ် ဈေးထဲတွင်",
+    "zh": "在街上或市场里",
+    "de": "Auf der Strasse oder im Markt"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "We read the signs and write the names down.",
+    "th": "อ่านป้ายและจดชื่อร้านไว้",
+    "my": "ဆိုင်းဘုတ်များကို ဖတ်ပြီး အမည်များကို ရေးမှတ်သည်။",
+    "zh": "读店招，把店名记下来。",
+    "de": "Wir lesen die Schilder und schreiben die Namen auf."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the photos",
+    "th": "หลังถ่ายภาพ",
+    "my": "ဓာတ်ပုံရိုက်ပြီးနောက်",
+    "zh": "拍照之后",
+    "de": "Nach den Fotos"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "We put the shops on a map.",
+    "th": "ลงตำแหน่งร้านบนแผนที่",
+    "my": "ဆိုင်များကို မြေပုံပေါ်တွင် ထည့်သည်။",
+    "zh": "把这些店标到地图上。",
+    "de": "Wir tragen die Läden auf einer Karte ein."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thailand charges a signboard tax by the script on the sign. A report on the rates from 1 January 2021 gives ฿5 per 500 square centimetres for Thai letters only, ฿26 for Thai mixed with foreign letters or pictures, and ฿50 for no Thai letters or Thai placed below foreign letters.",
+    "th": "ไทยเก็บภาษีป้ายตามตัวอักษรบนป้าย รายงานข่าวเรื่องอัตราตั้งแต่ 1 มกราคม 2021 (2564) ระบุ ฿5 ต่อ 500 ตารางเซนติเมตรสำหรับป้ายอักษรไทยล้วน ฿26 สำหรับอักษรไทยปนอักษรต่างประเทศหรือรูปภาพ และ ฿50 สำหรับป้ายที่ไม่มีอักษรไทยหรือมีอักษรไทยอยู่ใต้อักษรต่างประเทศ",
+    "my": "ထိုင်းနိုင်ငံသည် ဆိုင်းဘုတ်ပေါ်ရှိ စာလုံးအလိုက် ဆိုင်းဘုတ်အခွန် ကောက်ခံသည်။ 2021 ဇန်နဝါရီ 1 ရက်မှ စတင်သော နှုန်းထားများအကြောင်း သတင်းတစ်ခုအရ စတုရန်းစင်တီမီတာ 500 လျှင် ထိုင်းစာသီးသန့်ဆိုင်းဘုတ်အတွက် ฿5၊ ထိုင်းစာနှင့် နိုင်ငံခြားစာ သို့မဟုတ် ပုံ ရောပါလျှင် ฿26၊ ထိုင်းစာမပါလျှင် သို့မဟုတ် ထိုင်းစာကို နိုင်ငံခြားစာအောက်တွင် ထားလျှင် ฿50 ဖြစ်သည်။",
+    "zh": "泰国按招牌上的文字征收招牌税。一篇报道列出自 2021 年 1 月 1 日起的税率，每 500 平方厘米：纯泰文 ฿5，泰文与外文或图案混用 ฿26，没有泰文或泰文在外文下方 ฿50。",
+    "de": "Thailand erhebt eine Schildersteuer nach der Schrift auf dem Schild. Ein Bericht zu den Sätzen ab 1. Januar 2021 nennt je 500 Quadratzentimeter ฿5 für Schilder nur mit thailändischer Schrift, ฿26 für thailändische Schrift gemischt mit fremder Schrift oder Bildern und ฿50 ohne thailändische Schrift oder mit thailändischer Schrift unter der fremden."
+   },
+   "src": "https://www.nationthailand.com/news/30398742"
+  },
+  {
+   "t": {
+    "en": "The Department of Business Development's DataWarehouse+ site is a search service for registered companies and other juristic persons (legal entities). It lists company information and financial statements, business types and area-based data. The site is in Thai.",
+    "th": "เว็บ DBD DataWarehouse+ ของกรมพัฒนาธุรกิจการค้าเป็นบริการค้นข้อมูลนิติบุคคล มีข้อมูลนิติบุคคลและงบการเงิน ข้อมูลประเภทธุรกิจ และข้อมูลตามพื้นที่ เว็บนี้เป็นภาษาไทย",
+    "my": "ထိုင်းနိုင်ငံ စီးပွားရေးလုပ်ငန်းဖွံ့ဖြိုးရေးဦးစီးဌာန (DBD) ၏ DataWarehouse+ ဝက်ဘ်ဆိုက်သည် မှတ်ပုံတင်ထားသော ကုမ္ပဏီများနှင့် အခြားဥပဒေကြောင်းအရ ပုဂ္ဂိုလ်များ (juristic person) အကြောင်း ရှာဖွေရေးဝန်ဆောင်မှု ဖြစ်သည်။ ကုမ္ပဏီအချက်အလက်နှင့် ဘဏ္ဍာရေးရှင်းတမ်း၊ လုပ်ငန်းအမျိုးအစားနှင့် ဒေသအလိုက် အချက်အလက်များ ပါသည်။ ဆိုက်သည် ထိုင်းဘာသာဖြင့်သာ ရှိသည်။",
+    "zh": "泰国商业发展厅（DBD）的 DataWarehouse+ 网站是查询已注册公司等法人（juristic person）信息的服务，列有法人信息和财务报表、行业类别信息以及按地区划分的数据。网站是泰文的。",
+    "de": "Die Website DataWarehouse+ des Department of Business Development (DBD) ist ein Suchdienst für eingetragene Firmen und andere juristische Personen. Sie führt Firmenangaben und Jahresabschlüsse, Angaben zur Branche und Daten nach Gebiet auf. Die Website ist auf Thailändisch."
+   },
+   "src": "https://datawarehouse.dbd.go.th/"
+  },
+  {
+   "t": {
+    "en": "Mot Dang, a guide to Chiang Mai and Chiang Rai, has a map page. Its footer says the pins and ground data come from OpenStreetMap. The site links to its raw data and a public API.",
+    "th": "มดแดงเป็นคู่มือเชียงใหม่และเชียงราย มีหน้าแผนที่ ท้ายหน้าบอกว่าหมุดและข้อมูลพื้นดินมาจาก OpenStreetMap และมีลิงก์ไปยังข้อมูลดิบและ API สาธารณะ",
+    "my": "Mot Dang သည် ချင်းမိုင်နှင့် ချင်းရိုင်လမ်းညွှန် ဖြစ်ပြီး မြေပုံစာမျက်နှာ ပါသည်။ စာမျက်နှာအောက်ခြေတွင် pin များနှင့် မြေပြင်ဒေတာသည် OpenStreetMap မှ ဖြစ်ကြောင်း ရေးထားသည်။ ဆိုက်တွင် ဒေတာအကြမ်းနှင့် အများသုံး API သို့ လင့်ခ်များ ပါသည်။",
+    "zh": "Mot Dang 是清迈和清莱的指南，有地图页面。页脚写明图钉和地面数据来自 OpenStreetMap。网站链接到原始数据和公开 API。",
+    "de": "Mot Dang, ein Führer für Chiang Mai und Chiang Rai, hat eine Kartenseite. Laut Fusszeile stammen die Markierungen und die Bodendaten von OpenStreetMap. Die Seite verlinkt auf Rohdaten und eine öffentliche API."
+   },
+   "src": "https://motdang.net/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork seller's survey of shopfronts, advertising signs and land in Lamphun, with photos and video clips",
+    "th": "ผู้ขายบน Fastwork รับสำรวจหน้าร้าน ป้ายโฆษณา และที่ดินในลำพูน พร้อมภาพถ่ายและคลิปวิดีโอ",
+    "my": "Fastwork ရှိ ရောင်းသူတစ်ဦး၏ လမ်ဖွန်းရှိ ဆိုင်ရှေ့၊ ကြော်ငြာဆိုင်းဘုတ်နှင့် မြေကွက် စစ်တမ်း (ဓာတ်ပုံနှင့် ဗီဒီယိုတိုများပါ)",
+    "zh": "Fastwork 上一位卖家在南奔勘察店面、广告招牌和土地，附照片和视频片段",
+    "de": "Ein Anbieter auf Fastwork erkundet in Lamphun Ladenfronten, Werbeschilder und Grundstücke, mit Fotos und Videoclips"
+   },
+   "p": {
+    "en": "฿1,500: 15 photos taken on site with a GPS stamp and the time, short clips in the morning, at noon and in the evening; 2 days, 2 revisions",
+    "th": "฿1,500: ภาพถ่ายหน้างาน 15 ภาพ ประทับ GPS และเวลา คลิปสั้นช่วงเช้า เที่ยง เย็น ส่งใน 2 วัน แก้ได้ 2 ครั้ง",
+    "my": "฿1,500: နေရာတွင် ရိုက်သော ဓာတ်ပုံ 15 ပုံ (GPS နှင့် အချိန်တံဆိပ်ပါ)၊ မနက်၊ နေ့လယ်၊ ညနေ ဗီဒီယိုတိုများ၊ 2 ရက်၊ ပြင်ဆင်မှု 2 ကြိမ်",
+    "zh": "฿1,500：现场照片 15 张，带 GPS 和时间戳；早、中、晚各有短视频；2 天交付，可修改 2 次",
+    "de": "฿1,500: 15 Fotos vor Ort mit GPS-Stempel und Uhrzeit, kurze Videos am Morgen, Mittag und Abend; 2 Tage, 2 Korrekturen"
+   },
+   "src": "https://fastwork.co/user/aran_nonyaso/lifestyle-other-79923905"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller's field survey of competitor shops in Chiang Mai",
+    "th": "ผู้ขายบน Fastwork รับสำรวจร้านคู่แข่งภาคสนามในเชียงใหม่",
+    "my": "Fastwork ရှိ ရောင်းသူတစ်ဦး၏ ချင်းမိုင်ရှိ ပြိုင်ဘက်ဆိုင်များ နေရာတွင် စစ်တမ်း",
+    "zh": "Fastwork 上一位卖家在清迈对竞争店铺做实地调查",
+    "de": "Ein Anbieter auf Fastwork untersucht in Chiang Mai Konkurrenzläden vor Ort"
+   },
+   "p": {
+    "en": "฿700 for 1 shop with a PDF summary; ฿2,000 for 3 shops with a PDF each and a PDF that compares them; 2 days, 3 revisions",
+    "th": "฿700 สำหรับ 1 ร้าน พร้อมสรุป PDF; ฿2,000 สำหรับ 3 ร้าน พร้อม PDF ร้านละไฟล์และ PDF เปรียบเทียบ 1 ไฟล์ ส่งใน 2 วัน แก้ได้ 3 ครั้ง",
+    "my": "฿700 — ဆိုင် 1 ဆိုင်၊ PDF အကျဉ်းချုပ်ပါ။ ฿2,000 — ဆိုင် 3 ဆိုင်၊ ဆိုင်တစ်ဆိုင်လျှင် PDF တစ်ခုနှင့် နှိုင်းယှဉ်သော PDF တစ်ခုပါ။ 2 ရက်၊ ပြင်ဆင်မှု 3 ကြိမ်",
+    "zh": "฿700：1 家店，附 PDF 摘要；฿2,000：3 家店，每家一份 PDF，另有一份对比 PDF；2 天交付，可修改 3 次",
+    "de": "฿700 für 1 Laden mit einer PDF-Zusammenfassung; ฿2,000 für 3 Läden mit je einer PDF und einer PDF, die sie vergleicht; 2 Tage, 3 Korrekturen"
+   },
+   "src": "https://fastwork.co/user/waivez/research-79534291"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller who visits shops across Thailand and collects prices, promotions and stock",
+    "th": "ผู้ขายบน Fastwork ที่ไปเยี่ยมร้านทั่วประเทศและเก็บข้อมูลราคา โปรโมชัน และสต็อก",
+    "my": "Fastwork ရှိ ရောင်းသူတစ်ဦးသည် တစ်နိုင်ငံလုံးရှိ ဆိုင်များသို့ သွားပြီး စျေးနှုန်း၊ ပရိုမိုးရှင်းနှင့် စတော့ အချက်အလက် စုဆောင်းသည်",
+    "zh": "Fastwork 上一位卖家走访全国各地的店铺，收集价格、促销和库存信息",
+    "de": "Ein Anbieter auf Fastwork besucht Läden in ganz Thailand und erfasst Preise, Aktionen und Lagerbestand"
+   },
+   "p": {
+    "en": "From ฿2,000; a market report, a spreadsheet and a summary, with photos as proof if asked",
+    "th": "เริ่มที่ ฿2,000: รายงานตลาด ตาราง Excel หรือ Google Sheet และสรุป พร้อมภาพถ่ายเป็นหลักฐานถ้าต้องการ",
+    "my": "฿2,000 မှ စတင်: ဈေးကွက်အစီရင်ခံစာ၊ စာရင်းဇယားနှင့် အကျဉ်းချုပ်၊ လိုလျှင် သက်သေဓာတ်ပုံများပါ",
+    "zh": "起价 ฿2,000：市场报告、电子表格和摘要，需要时附照片作凭证",
+    "de": "Ab ฿2,000: ein Marktbericht, eine Tabelle und eine Zusammenfassung, auf Wunsch mit Fotos als Beleg"
+   },
+   "src": "https://fastwork.co/user/koranat.phannorit/research-40466881"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What comes back from a shop survey?",
+    "th": "การสำรวจร้านค้าส่งอะไรกลับมา",
+    "my": "ဆိုင်စစ်တမ်းမှ ဘာတွေ ပြန်ရသလဲ။",
+    "zh": "店铺调查会交回什么？",
+    "de": "Was kommt bei einer Ladenerhebung zurück?"
+   },
+   "a": {
+    "en": "A Fastwork seller in Lamphun lists 15 photos taken on site with a GPS stamp and the time of each photo, and short video clips in the morning, at noon and in the evening. The listing shows a sample of the GPS position on Google Maps.",
+    "th": "ผู้ขายบน Fastwork ในลำพูนระบุภาพถ่ายหน้างาน 15 ภาพ ที่ประทับ GPS และเวลาถ่ายแต่ละภาพ กับคลิปวิดีโอสั้นช่วงเช้า เที่ยง และเย็น ประกาศมีตัวอย่างตำแหน่ง GPS บน Google Maps",
+    "my": "လမ်ဖွန်းရှိ Fastwork ရောင်းသူတစ်ဦးက နေရာတွင် ရိုက်သော ဓာတ်ပုံ 15 ပုံ (တစ်ပုံချင်းတွင် GPS နှင့် ရိုက်ချိန်တံဆိပ်ပါ) နှင့် မနက်၊ နေ့လယ်၊ ညနေ ဗီဒီယိုတိုများကို ဖော်ပြထားသည်။ ကြော်ငြာတွင် GPS တည်နေရာ နမူနာကို Google Maps ပေါ်တွင် ပြထားသည်။",
+    "zh": "南奔的一位 Fastwork 卖家列出：现场照片 15 张，每张带 GPS 和拍摄时间；另有早、中、晚三个时段的短视频。该页面还在 Google 地图上展示了 GPS 位置示例。",
+    "de": "Ein Anbieter auf Fastwork in Lamphun nennt 15 Fotos vor Ort mit GPS-Stempel und der Zeit jedes Fotos sowie kurze Videos am Morgen, Mittag und Abend. Das Angebot zeigt ein Beispiel der GPS-Position auf Google Maps."
+   },
+   "src": "https://fastwork.co/user/aran_nonyaso/lifestyle-other-79923905"
+  },
+  {
+   "q": {
+    "en": "How much does a shop survey cost?",
+    "th": "สำรวจร้านค้าราคาเท่าไร",
+    "my": "ဆိုင်စစ်တမ်းတစ်ခု ဘယ်လောက်ကျသလဲ။",
+    "zh": "店铺调查要多少钱？",
+    "de": "Was kostet eine Ladenerhebung?"
+   },
+   "a": {
+    "en": "A Chiang Mai seller on Fastwork lists a survey of one competitor shop for ฿700 and of three shops for ฿2,000. The three-shop package returns a PDF for each shop and one PDF that compares them. Delivery is 2 days.",
+    "th": "ผู้ขายในเชียงใหม่บน Fastwork ระบุราคาสำรวจร้านคู่แข่ง 1 ร้าน ฿700 และ 3 ร้าน ฿2,000 แพ็กเกจ 3 ร้านส่ง PDF ร้านละไฟล์ และ PDF เปรียบเทียบอีก 1 ไฟล์ ส่งใน 2 วัน",
+    "my": "Fastwork ရှိ ချင်းမိုင်ရောင်းသူတစ်ဦးက ပြိုင်ဘက်ဆိုင် 1 ဆိုင် စစ်တမ်းကို ฿700၊ 3 ဆိုင်ကို ฿2,000 ဖော်ပြထားသည်။ 3 ဆိုင်ပက်ကေ့ချ်တွင် ဆိုင်တစ်ဆိုင်လျှင် PDF တစ်ခုနှင့် နှိုင်းယှဉ်သော PDF တစ်ခု ပြန်ပို့သည်။ 2 ရက်အတွင်း ပို့သည်။",
+    "zh": "Fastwork 上一位清迈卖家的报价：调查 1 家竞争店铺 ฿700，3 家 ฿2,000。3 家的套餐每家交一份 PDF，另有一份对比 PDF。2 天交付。",
+    "de": "Ein Anbieter in Chiang Mai auf Fastwork nennt ฿700 für die Erhebung eines Konkurrenzladens und ฿2,000 für drei Läden. Das Paket für drei Läden liefert je eine PDF und eine PDF, die sie vergleicht. Die Lieferzeit beträgt 2 Tage."
+   },
+   "src": "https://fastwork.co/user/waivez/research-79534291"
+  },
+  {
+   "q": {
+    "en": "Does the script on a sign matter?",
+    "th": "อักษรบนป้ายมีผลไหม",
+    "my": "ဆိုင်းဘုတ်ပေါ်ရှိ စာလုံးက အရေးပါသလား။",
+    "zh": "招牌上的文字有影响吗？",
+    "de": "Spielt die Schrift auf einem Schild eine Rolle?"
+   },
+   "a": {
+    "en": "In Thailand it sets the signboard tax. A report on the rates from 1 January 2021 puts Thai letters only at ฿5 per 500 square centimetres, and no Thai letters or Thai below foreign letters at ฿50.",
+    "th": "ในไทยอักษรบนป้ายกำหนดภาษีป้าย รายงานข่าวเรื่องอัตราตั้งแต่ 1 มกราคม 2021 (2564) ระบุป้ายอักษรไทยล้วน ฿5 ต่อ 500 ตารางเซนติเมตร และป้ายที่ไม่มีอักษรไทยหรือมีอักษรไทยอยู่ใต้อักษรต่างประเทศ ฿50",
+    "my": "ထိုင်းနိုင်ငံတွင် ၎င်းက ဆိုင်းဘုတ်အခွန်ကို သတ်မှတ်သည်။ 2021 ဇန်နဝါရီ 1 ရက်မှ စတင်သော နှုန်းထားများအကြောင်း သတင်းတစ်ခုအရ ထိုင်းစာသီးသန့်ကို စတုရန်းစင်တီမီတာ 500 လျှင် ฿5၊ ထိုင်းစာမပါခြင်း သို့မဟုတ် ထိုင်းစာကို နိုင်ငံခြားစာအောက်တွင် ထားခြင်းကို ฿50 ဟု ဖော်ပြသည်။",
+    "zh": "在泰国，它决定招牌税。一篇报道列出自 2021 年 1 月 1 日起的税率：纯泰文每 500 平方厘米 ฿5，没有泰文或泰文在外文下方 ฿50。",
+    "de": "In Thailand bestimmt sie die Schildersteuer. Ein Bericht zu den Sätzen ab 1. Januar 2021 nennt für Schilder nur mit thailändischer Schrift ฿5 je 500 Quadratzentimeter und ohne thailändische Schrift oder mit thailändischer Schrift unter der fremden ฿50."
+   },
+   "src": "https://www.nationthailand.com/news/30398742"
+  },
+  {
+   "q": {
+    "en": "Where can a business named on a sign be looked up?",
+    "th": "ธุรกิจที่เห็นชื่อบนป้ายค้นได้ที่ไหน",
+    "my": "ဆိုင်းဘုတ်ပေါ်ရှိ လုပ်ငန်းအမည်ကို ဘယ်မှာ ရှာနိုင်သလဲ။",
+    "zh": "招牌上的店名可以在哪里查？",
+    "de": "Wo lässt sich ein Geschäft nachschlagen, dessen Name auf einem Schild steht?"
+   },
+   "a": {
+    "en": "The Department of Business Development's DataWarehouse+ is a Thai-language search service for registered companies and other juristic persons. It lists company information and financial statements, business types and area-based data. The page gives datawarehouse.dbd.go.th, or online services on dbd.go.th, as the official way in.",
+    "th": "DBD DataWarehouse+ ของกรมพัฒนาธุรกิจการค้าเป็นบริการค้นข้อมูลนิติบุคคลภาษาไทย มีข้อมูลนิติบุคคลและงบการเงิน ข้อมูลประเภทธุรกิจ และข้อมูลตามพื้นที่ หน้าเว็บระบุว่าทางเข้าที่เป็นทางการคือ datawarehouse.dbd.go.th หรือบริการออนไลน์บน dbd.go.th",
+    "my": "DBD ၏ DataWarehouse+ သည် မှတ်ပုံတင်ထားသော ကုမ္ပဏီများနှင့် အခြားဥပဒေကြောင်းအရ ပုဂ္ဂိုလ်များအတွက် ထိုင်းဘာသာဖြင့် ရှာဖွေရေးဝန်ဆောင်မှု ဖြစ်သည်။ ကုမ္ပဏီအချက်အလက်နှင့် ဘဏ္ဍာရေးရှင်းတမ်း၊ လုပ်ငန်းအမျိုးအစားနှင့် ဒေသအလိုက် အချက်အလက်များ ပါသည်။ တရားဝင်ဝင်ပေါက်မှာ datawarehouse.dbd.go.th သို့မဟုတ် dbd.go.th ရှိ အွန်လိုင်းဝန်ဆောင်မှု ဖြစ်ကြောင်း စာမျက်နှာက ဖော်ပြသည်။",
+    "zh": "DBD 的 DataWarehouse+ 是查询已注册公司等法人的泰文服务，列有法人信息和财务报表、行业类别信息以及按地区划分的数据。页面注明官方入口是 datawarehouse.dbd.go.th，或 dbd.go.th 上的在线服务。",
+    "de": "DataWarehouse+ des Department of Business Development ist ein thailändischsprachiger Suchdienst für eingetragene Firmen und andere juristische Personen. Er führt Firmenangaben und Jahresabschlüsse, Angaben zur Branche und Daten nach Gebiet auf. Als offiziellen Zugang nennt die Seite datawarehouse.dbd.go.th oder die Online-Dienste auf dbd.go.th."
+   },
+   "src": "https://datawarehouse.dbd.go.th/"
+  }
+ ],
+ "related": [
+  "research",
+  "data-crawl",
+  "leads",
+  "photo-proof",
+  "directory",
+  "trade-photos"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: a guide to Chiang Mai and Chiang Rai, with a map and raw data",
+    "th": "มดแดง: คู่มือเชียงใหม่และเชียงราย มีแผนที่และข้อมูลดิบ",
+    "my": "Mot Dang: ချင်းမိုင်နှင့် ချင်းရိုင်လမ်းညွှန်၊ မြေပုံနှင့် ဒေတာအကြမ်းပါ",
+    "zh": "Mot Dang：清迈和清莱指南，有地图和原始数据",
+    "de": "Mot Dang: ein Führer für Chiang Mai und Chiang Rai, mit Karte und Rohdaten"
+   },
+   "href": "https://motdang.net/"
+  },
+  {
+   "t": {
+    "en": "Department of Business Development: DataWarehouse+ (in Thai)",
+    "th": "กรมพัฒนาธุรกิจการค้า: DBD DataWarehouse+",
+    "my": "စီးပွားရေးလုပ်ငန်းဖွံ့ဖြိုးရေးဦးစီးဌာန - DataWarehouse+ (ထိုင်းဘာသာ)",
+    "zh": "商业发展厅：DataWarehouse+（泰文）",
+    "de": "Department of Business Development: DataWarehouse+ (auf Thailändisch)"
+   },
+   "href": "https://datawarehouse.dbd.go.th/"
+  }
+ ],
+ "glyphs": [
+  "camera",
+  "pin",
+  "eye"
+ ]
+}

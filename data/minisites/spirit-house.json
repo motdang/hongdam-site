@@ -1,0 +1,333 @@
+{
+ "id": "spirit-house",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People set up a spirit house when they move into a new home or open a shop. A ceremony, usually led by a Brahman priest, invites the spirits to live in it.",
+  "th": "คนตั้งศาลพระภูมิเมื่อย้ายเข้าบ้านใหม่หรือเปิดร้าน มีพิธีที่มักมีพราหมณ์เป็นผู้ทำ เพื่ออัญเชิญพระภูมิขึ้นศาล",
+  "my": "လူများသည် အိမ်သစ်သို့ ပြောင်းရွှေ့သည့်အခါ သို့မဟုတ် ဆိုင်ဖွင့်သည့်အခါ နတ်ကွန်း တည်ကြသည်။ ပုဏ္ဏားဆရာက ဦးဆောင်လေ့ရှိသော အခမ်းအနားဖြင့် နတ်များကို နတ်ကွန်းတွင် နေထိုင်ရန် ဖိတ်ကြားသည်။",
+  "zh": "搬进新家或开新店时，人们会安置土地神龛。仪式通常由婆罗门祭司主持，邀请神灵入住。",
+  "de": "Wer in ein neues Haus zieht oder einen Laden eröffnet, stellt ein Geisterhaus auf. Eine Zeremonie, meist von einem Brahmanenpriester geleitet, lädt die Geister ein, darin zu wohnen."
+ },
+ "n": {
+  "de": "Geisterhaus aufgestellt"
+ },
+ "l": {
+  "de": "Gemeinsam ausgewählt, aufgestellt und gesegnet; Kosten zum Selbstkostenpreis."
+ },
+ "steps": [
+  {
+   "db": "spirit-house",
+   "t": {
+    "en": "We choose the spirit house with you.",
+    "th": "เลือกศาลพระภูมิด้วยกันกับคุณ",
+    "my": "နတ်ကွန်းကို သင်နှင့်အတူ ရွေးချယ်သည်။",
+    "zh": "和您一起挑选神龛。",
+    "de": "Wir wählen das Geisterhaus gemeinsam mit Ihnen aus."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันตั้งศาล",
+    "my": "တည်မည့်နေ့မတိုင်မီ",
+    "zh": "安置日之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "We book the spirit house maker and the officiant, the person who leads the ceremony.",
+    "th": "จองช่างทำศาลและผู้ทำพิธี",
+    "my": "နတ်ကွန်းပြုလုပ်သူနှင့် အခမ်းအနားကို ဦးဆောင်သူကို ကြိုတင်ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "预约制作神龛的师傅和主持仪式的人。",
+    "de": "Wir buchen den Hersteller des Geisterhauses und die Zeremonienleitung."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันตั้งศาล",
+    "my": "တည်မည့်နေ့မတိုင်မီ",
+    "zh": "安置日之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "We arrange the day.",
+    "th": "จัดวันให้",
+    "my": "နေ့ရက်ကို စီစဉ်ပေးသည်။",
+    "zh": "安排好日子。",
+    "de": "Wir legen den Tag fest."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันตั้งศาล",
+    "my": "တည်မည့်နေ့မတိုင်မီ",
+    "zh": "安置日之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "sparkle",
+   "t": {
+    "en": "The spirit house is placed and blessed. The house and the ceremony are paid at cost.",
+    "th": "ตั้งศาลและทำพิธี ค่าศาลและค่าพิธีคิดตามจริง",
+    "my": "နတ်ကွန်းကို တည်ပြီး ကောင်းချီးပေးသည်။ နတ်ကွန်းနှင့် အခမ်းအနားကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "安置神龛并举行祝福仪式。神龛和仪式的费用按实际费用计。",
+    "de": "Das Geisterhaus wird aufgestellt und gesegnet. Haus und Zeremonie werden zum Selbstkostenpreis berechnet."
+   },
+   "who": {
+    "en": "The officiant",
+    "th": "ผู้ทำพิธี",
+    "my": "အခမ်းအနားဆောင်ရွက်သူ",
+    "zh": "主持仪式的人",
+    "de": "Die Zeremonienleitung"
+   },
+   "time": {
+    "en": "On the day",
+    "th": "ในวันตั้งศาล",
+    "my": "တည်သည့်နေ့",
+    "zh": "当天",
+    "de": "Am Tag"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A Shopee Thailand blog puts north-east first for a spirit house, then east, then south-east, and names west and south as forbidden. The house stands on the ground, not inside the home, and on the roof if there is no ground. It is away from a toilet, does not face the front door and does not sit under the eaves.",
+    "th": "บล็อกของ Shopee ระบุว่าทิศที่ดีที่สุดสำหรับศาลพระภูมิคือตะวันออกเฉียงเหนือ รองลงมาคือตะวันออก และตะวันออกเฉียงใต้ ส่วนทิศตะวันตกและทิศใต้เป็นทิศต้องห้าม ศาลตั้งบนพื้นดิน ไม่ตั้งในบ้าน ถ้าไม่มีพื้นดินตั้งบนดาดฟ้าได้ อยู่ห่างจากห้องน้ำ ไม่หันหน้าเข้าประตูหน้าบ้าน และไม่ตั้งใต้ชายคา",
+    "my": "Shopee ၏ ဘလော့ဂ်တွင် နတ်ကွန်းအတွက် အကောင်းဆုံးဦးတည်ရာမှာ အရှေ့မြောက်ဖြစ်ပြီး ထို့နောက် အရှေ့၊ ထို့နောက် အရှေ့တောင်ဖြစ်သည်ဟု ဆိုသည်။ အနောက်နှင့် တောင်ကို တားမြစ်ထားသည်ဟုလည်း ဖော်ပြသည်။ နတ်ကွန်းကို မြေပေါ်တွင် တည်ပြီး အိမ်ထဲတွင် မတည်ပါ။ မြေမရှိပါက ခေါင်မိုးပေါ်တွင် တည်နိုင်သည်။ အိမ်သာနှင့် ဝေးရာတွင်ဖြစ်ပြီး အိမ်ရှေ့တံခါးကို မမျက်နှာမူပါ၊ ခေါင်မိုးစွန်းအောက်တွင်လည်း မတည်ပါ။",
+    "zh": "Shopee 泰国的博客把东北列为神龛的最佳朝向，其次是东，再次是东南，西和南是禁用方位。神龛设在地面上，不设在屋内；没有地面时可设在屋顶。它远离厕所，不正对大门，也不放在屋檐下。",
+    "de": "Ein Blog von Shopee Thailand nennt Nordosten als beste Richtung für ein Geisterhaus, dann Osten, dann Südosten; Westen und Süden gelten als verboten. Das Haus steht auf dem Boden, nicht im Wohnhaus, und auf dem Dach, wenn es keinen Boden gibt. Es liegt fern von einer Toilette, schaut nicht zur Haustür und steht nicht unter dem Dachvorsprung."
+   },
+   "src": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  },
+  {
+   "t": {
+    "en": "The same blog gives a time window for each weekday: Sunday 06:09–08:19, Monday 08:29–10:39, Tuesday 06:39–08:09, Wednesday 08:39–10:19, Thursday 10:49–11:39, Friday 06:19–08:09, Saturday 08:49–10:49. It bars some weekdays in some lunar months. It does not bar Sunday, which it calls a strong day.",
+    "th": "บล็อกเดียวกันระบุช่วงเวลาของแต่ละวัน: อาทิตย์ 06:09–08:19 น. จันทร์ 08:29–10:39 น. อังคาร 06:39–08:09 น. พุธ 08:39–10:19 น. พฤหัสบดี 10:49–11:39 น. ศุกร์ 06:19–08:09 น. เสาร์ 08:49–10:49 น. และมีบางวันที่ต้องห้ามในบางเดือนทางจันทรคติ ส่วนวันอาทิตย์ไม่ต้องห้าม เพราะถือว่าเป็นวันที่มีพลังแรง",
+    "my": "ထိုဘလော့ဂ်တွင် ရက်သတ္တပတ်နေ့တိုင်းအတွက် အချိန်ကာလကို ဖော်ပြသည် - တနင်္ဂနွေ 06:09–08:19၊ တနင်္လာ 08:29–10:39၊ အင်္ဂါ 06:39–08:09၊ ဗုဒ္ဓဟူး 08:39–10:19၊ ကြာသပတေး 10:49–11:39၊ သောကြာ 06:19–08:09၊ စနေ 08:49–10:49။ လပြက္ခဒိန်ပါ လအချို့တွင် ရက်သတ္တပတ်နေ့အချို့ကို တားမြစ်ထားသည်။ တနင်္ဂနွေကို မတားမြစ်ပါ၊ အားကောင်းသောနေ့ဟု ခေါ်သည်။",
+    "zh": "同一博客列出每个星期几的时间段：周日 06:09–08:19，周一 08:29–10:39，周二 06:39–08:09，周三 08:39–10:19，周四 10:49–11:39，周五 06:19–08:09，周六 08:49–10:49。某些农历月份禁用某几个星期几。周日不禁，博客称它是力量强的一天。",
+    "de": "Derselbe Blog nennt für jeden Wochentag ein Zeitfenster: Sonntag 06:09–08:19, Montag 08:29–10:39, Dienstag 06:39–08:09, Mittwoch 08:39–10:19, Donnerstag 10:49–11:39, Freitag 06:19–08:09, Samstag 08:49–10:49. In manchen Mondmonaten sind bestimmte Wochentage gesperrt. Der Sonntag ist es nicht; der Blog nennt ihn einen starken Tag."
+   },
+   "src": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  },
+  {
+   "t": {
+    "en": "Thaiger says a religious ceremony, usually led by a Brahman priest, invites the spirits to live in the house, after the house is positioned and decorated. It lists places that rule a spot out: the shadow of the building, the left side of a door, facing a toilet and facing a road. Ideally the house faces north or north-east.",
+    "th": "Thaiger ระบุว่ามีพิธีทางศาสนา ซึ่งมักมีพราหมณ์เป็นผู้ทำ เพื่ออัญเชิญวิญญาณให้มาอยู่ในศาล หลังจากวางศาลและตกแต่งแล้ว และระบุตำแหน่งที่ไม่ใช้ ได้แก่ เงาของอาคาร ด้านซ้ายของประตู หันหน้าเข้าห้องน้ำ และหันหน้าเข้าถนน ทิศที่เหมาะคือเหนือหรือตะวันออกเฉียงเหนือ",
+    "my": "Thaiger က ပုဏ္ဏားဆရာက ဦးဆောင်လေ့ရှိသော ဘာသာရေးအခမ်းအနားဖြင့် နတ်ကွန်းကို နေရာချပြီး အလှဆင်ပြီးနောက် နတ်များကို အဲဒီအိမ်တွင် နေထိုင်ရန် ဖိတ်ကြားသည်ဟု ဆိုသည်။ မသုံးသော နေရာများကိုလည်း ဖော်ပြသည် - အဆောက်အအုံ၏ အရိပ်၊ တံခါး၏ ဘယ်ဘက်၊ အိမ်သာကို မျက်နှာမူခြင်း၊ လမ်းကို မျက်နှာမူခြင်း။ အကောင်းဆုံးမှာ မြောက် သို့မဟုတ် အရှေ့မြောက်ဘက် မျက်နှာမူခြင်းဖြစ်သည်။",
+    "zh": "Thaiger 说，在神龛摆放并装饰好之后，会举行一场宗教仪式，通常由婆罗门祭司主持，邀请神灵入住。它还列出不宜选的位置：建筑物的阴影里、门的左侧、正对厕所和正对马路。神龛最好朝北或东北。",
+    "de": "Thaiger schreibt, nachdem das Haus aufgestellt und geschmückt ist, lade eine religiöse Zeremonie, meist von einem Brahmanenpriester geleitet, die Geister ein, darin zu wohnen. Als ungeeignete Stellen nennt die Seite den Schatten des Gebäudes, die linke Seite einer Tür sowie den Blick auf eine Toilette oder auf eine Strasse. Ideal ist eine Ausrichtung nach Norden oder Nordosten."
+   },
+   "src": "https://thethaiger.com/guides/best-of/lifestyle/spirit-houses-in-thai-culture"
+  },
+  {
+   "t": {
+    "en": "Shopee's blog lists a standard offering of 25 items, among them a pig's head, a boiled chicken, a duck, a steamed fish, five kinds of sweets in pairs of plates, two pineapples, two hands of bananas, a bottle of liquor and a pair of bai si trays topped with an egg. It also lists a vegetarian set of 20 items.",
+    "th": "บล็อกของ Shopee ระบุของเซ่นแบบปกติ 25 รายการ เช่น หัวหมู ไก่ต้ม เป็ด ปลานึ่ง ขนมห้าอย่างอย่างละสองจาน สับปะรดสองผล กล้วยสองหวี เหล้าหนึ่งขวด และบายศรีปากชามยอดไข่หนึ่งคู่ และมีชุดมังสวิรัติ 20 รายการ",
+    "my": "Shopee ၏ ဘလော့ဂ်တွင် ပုံမှန်ပူဇော်ပစ္စည်း 25 မျိုးကို ဖော်ပြသည် - ဝက်ခေါင်း၊ ကြက်ပြုတ်၊ ဘဲ၊ ငါးပေါင်း၊ အချိုမုန့် ငါးမျိုး (တစ်မျိုးလျှင် ပန်းကန်နှစ်ချပ်)၊ နာနတ်သီးနှစ်လုံး၊ ငှက်ပျောနှစ်ဖီး၊ အရက်တစ်ပုလင်းနှင့် ကြက်ဥတင်ထားသော bai si ဗန်း တစ်စုံ။ သက်သတ်လွတ်အစုံ 20 မျိုးကိုလည်း ဖော်ပြသည်။",
+    "zh": "Shopee 的博客列出标准供品 25 样，包括猪头、白煮鸡、鸭、清蒸鱼、五种甜点（每种两盘）、两个菠萝、两把香蕉、一瓶酒，以及一对顶上放鸡蛋的 bai si 供盘。它还列出 20 样的素食供品。",
+    "de": "Der Blog von Shopee führt ein Standardopfer mit 25 Gaben auf, darunter einen Schweinekopf, ein gekochtes Huhn, eine Ente, einen gedämpften Fisch, fünf Sorten Süssigkeiten auf je zwei Tellern, zwei Ananas, zwei Bananenstauden, eine Flasche Schnaps und ein Paar Bai-Si-Schalen mit einem Ei obenauf. Er führt auch ein vegetarisches Set mit 20 Gaben auf."
+   },
+   "src": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Spirit house set with two tables in front, from one seller's Yellow Pages listings",
+    "th": "ชุดศาลพระภูมิพร้อมโต๊ะหน้าศาลสองตัว จากรายการของร้านหนึ่งใน Yellow Pages",
+    "my": "Yellow Pages ရှိ ဆိုင်တစ်ဆိုင်၏ စာရင်းအရ အရှေ့ဘက် စားပွဲနှစ်လုံးပါ နတ်ကွန်းအစုံ",
+    "zh": "黄页上某卖家的神龛套装，前面附两张供桌",
+    "de": "Geisterhaus-Set mit zwei Tischen davor, aus den Yellow-Pages-Einträgen eines Anbieters"
+   },
+   "p": {
+    "en": "฿10,900 (เสามังกร, dragon pillar) · ฿12,900 (เสาพญานาค, naga pillar) · ฿17,900 (medium)",
+    "th": "฿10,900 (เสามังกร) · ฿12,900 (เสาพญานาค) · ฿17,900 (ขนาดกลาง)",
+    "my": "฿10,900 (เสามังกร) · ฿12,900 (เสาพญานาค) · ฿17,900 (အလတ်စား)",
+    "zh": "฿10,900（เสามังกร，龙柱）· ฿12,900（เสาพญานาค，那伽柱）· ฿17,900（中号）",
+    "de": "฿10,900 (เสามังกร, Drachensäule) · ฿12,900 (เสาพญานาค, Naga-Säule) · ฿17,900 (mittelgross)"
+   },
+   "src": "https://www.yellowpages.co.th/en/heading/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4"
+  },
+  {
+   "t": {
+    "en": "Set-up of a medium spirit house and a grandparents' shrine (ศาลตายาย), officiant included and travel not, a Fastwork listing",
+    "th": "ตั้งศาลพระภูมิและศาลตายายชุดกลาง รวมผู้ทำพิธี ไม่รวมค่าเดินทาง จากรายการบน Fastwork",
+    "my": "Fastwork စာရင်းတစ်ခု - အလတ်စား နတ်ကွန်းနှင့် အဖိုးအဖွားနတ်ကွန်း (ศาลตายาย) တည်ခြင်း၊ အခမ်းအနားဆောင်ရွက်သူပါပြီး ခရီးစရိတ်မပါ",
+    "zh": "Fastwork 上的一则报价：安置中号神龛和外祖父母神龛（ศาลตายาย），含主持仪式的人，不含交通费",
+    "de": "Ein Fastwork-Eintrag: Aufstellen eines mittleren Geisterhauses und eines Grosseltern-Schreins (ศาลตายาย), Zeremonienleitung inbegriffen, Reise nicht"
+   },
+   "p": {
+    "en": "฿15,999",
+    "th": "฿15,999",
+    "my": "฿15,999",
+    "zh": "฿15,999",
+    "de": "฿15,999"
+   },
+   "src": "https://fastwork.co/user/bb13022513/feng-shui-34639090"
+  },
+  {
+   "t": {
+    "en": "Moving a spirit house in Chiang Mai, ceremony and move, a classified listing posted about a year ago",
+    "th": "ย้ายศาลพระภูมิในเชียงใหม่ พร้อมพิธีและการย้าย ประกาศที่ลงไว้ราวหนึ่งปีก่อน",
+    "my": "ချင်းမိုင်တွင် နတ်ကွန်းရွှေ့ခြင်း၊ အခမ်းအနားနှင့် ရွှေ့ပြောင်းမှုအပါအဝင်၊ လွန်ခဲ့သည့် တစ်နှစ်ခန့်က တင်ထားသော ကြော်ငြာ",
+    "zh": "清迈迁移神龛，含仪式和搬迁，约一年前发布的分类广告",
+    "de": "Umzug eines Geisterhauses in Chiang Mai, mit Zeremonie und Transport, eine vor etwa einem Jahr aufgegebene Kleinanzeige"
+   },
+   "p": {
+    "en": "฿5,000 to start; the listing says it depends on the number of monks and the arrangement",
+    "th": "เริ่มต้น ฿5,000 ขึ้นกับจำนวนพระและลักษณะการจัด ตามที่ประกาศระบุ",
+    "my": "฿5,000 မှ စသည်။ ဘုန်းကြီးအရေအတွက်နှင့် စီစဉ်ပုံပေါ် မူတည်သည်ဟု ကြော်ငြာတွင် ဆိုသည်",
+    "zh": "฿5,000 起；广告称视僧人人数和安排而定",
+    "de": "Ab ฿5,000; laut Anzeige je nach Zahl der Mönche und Aufbau"
+   },
+   "src": "https://www.ennxo.com/product/993584"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Which way should a spirit house face?",
+    "th": "ตั้งศาลพระภูมิหันหน้าไปทางไหน",
+    "my": "နတ်ကွန်းကို မည်သည့်ဘက်သို့ မျက်နှာမူရသလဲ။",
+    "zh": "神龛朝哪个方向？",
+    "de": "In welche Richtung schaut ein Geisterhaus?"
+   },
+   "a": {
+    "en": "A Shopee Thailand blog puts north-east first, then east, then south-east. It names west and south as forbidden.",
+    "th": "บล็อกของ Shopee ระบุทิศตะวันออกเฉียงเหนือเป็นทิศที่ดีที่สุด รองลงมาคือตะวันออก และตะวันออกเฉียงใต้ และระบุว่าทิศตะวันตกและทิศใต้เป็นทิศต้องห้าม",
+    "my": "Shopee ၏ ဘလော့ဂ်က အရှေ့မြောက်ကို ပထမ၊ ထို့နောက် အရှေ့၊ ထို့နောက် အရှေ့တောင်ဟု ဖော်ပြသည်။ အနောက်နှင့် တောင်ကို တားမြစ်ထားသည်ဟု ဆိုသည်။",
+    "zh": "Shopee 泰国的博客把东北列在第一位，其次是东，再次是东南，并说西和南是禁用方位。",
+    "de": "Ein Blog von Shopee Thailand nennt zuerst Nordosten, dann Osten, dann Südosten. Westen und Süden gelten dort als verboten."
+   },
+   "src": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  },
+  {
+   "q": {
+    "en": "Which day and time suit a spirit house?",
+    "th": "ตั้งศาลพระภูมิวันไหนเวลาไหนดี",
+    "my": "နတ်ကွန်းတည်ရန် ဘယ်နေ့၊ ဘယ်အချိန် သင့်တော်သလဲ။",
+    "zh": "哪一天、什么时间安置神龛合适？",
+    "de": "Welcher Tag und welche Zeit passen für ein Geisterhaus?"
+   },
+   "a": {
+    "en": "The blog gives a time window for each weekday, for example Sunday 06:09–08:19 and Saturday 08:49–10:49. It bars Thursday and Saturday in lunar months 1, 5 and 9, Wednesday and Friday in months 2, 6 and 10, Tuesday in months 3, 7 and 11, and Monday in months 4 and 8.",
+    "th": "บล็อกระบุช่วงเวลาของแต่ละวัน เช่น วันอาทิตย์ 06:09–08:19 น. และวันเสาร์ 08:49–10:49 น. และห้ามวันพฤหัสบดีกับวันเสาร์ในเดือน 1 5 และ 9 ห้ามวันพุธกับวันศุกร์ในเดือน 2 6 และ 10 ห้ามวันอังคารในเดือน 3 7 และ 11 และห้ามวันจันทร์ในเดือน 4 และ 8",
+    "my": "ဘလော့ဂ်တွင် ရက်သတ္တပတ်နေ့တိုင်းအတွက် အချိန်ကာလကို ဖော်ပြသည်။ ဥပမာ တနင်္ဂနွေ 06:09–08:19 နှင့် စနေ 08:49–10:49။ လပြက္ခဒိန် လ 1၊ 5၊ 9 တွင် ကြာသပတေးနှင့် စနေ၊ လ 2၊ 6၊ 10 တွင် ဗုဒ္ဓဟူးနှင့် သောကြာ၊ လ 3၊ 7၊ 11 တွင် အင်္ဂါ၊ လ 4 နှင့် 8 တွင် တနင်္လာကို တားမြစ်ထားသည်။",
+    "zh": "博客列出每个星期几的时间段，例如周日 06:09–08:19、周六 08:49–10:49。农历 1、5、9 月禁周四和周六，2、6、10 月禁周三和周五，3、7、11 月禁周二，4 月和 8 月禁周一。",
+    "de": "Der Blog nennt für jeden Wochentag ein Zeitfenster, etwa Sonntag 06:09–08:19 und Samstag 08:49–10:49. Gesperrt sind Donnerstag und Samstag in den Mondmonaten 1, 5 und 9, Mittwoch und Freitag in den Monaten 2, 6 und 10, Dienstag in den Monaten 3, 7 und 11 und Montag in den Monaten 4 und 8."
+   },
+   "src": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  },
+  {
+   "q": {
+    "en": "How much does a spirit house cost?",
+    "th": "ศาลพระภูมิราคาเท่าไร",
+    "my": "နတ်ကွန်း ဈေးဘယ်လောက်လဲ။",
+    "zh": "神龛多少钱？",
+    "de": "Was kostet ein Geisterhaus?"
+   },
+   "a": {
+    "en": "On Yellow Pages one seller lists a dragon-pillar set with two front tables at ฿10,900, a naga-pillar set at ฿12,900 and a medium set at ฿17,900. These are listings for the shrine and its tables.",
+    "th": "ใน Yellow Pages ร้านหนึ่งลงชุดศาลพระภูมิเสามังกรพร้อมโต๊ะหน้าศาลสองตัวไว้ ฿10,900 ชุดเสาพญานาค ฿12,900 และชุดขนาดกลาง ฿17,900 รายการเหล่านี้เป็นราคาตัวศาลและโต๊ะ",
+    "my": "Yellow Pages တွင် ဆိုင်တစ်ဆိုင်က အရှေ့စားပွဲနှစ်လုံးပါ เสามังกร အစုံကို ฿10,900၊ เสาพญานาค အစုံကို ฿12,900 နှင့် အလတ်စားအစုံကို ฿17,900 ဟု စာရင်းတင်ထားသည်။ ၎င်းတို့သည် နတ်ကွန်းနှင့် စားပွဲများအတွက် စာရင်းများဖြစ်သည်။",
+    "zh": "在黄页上，一个卖家列出：前带两张供桌的龙柱套装 ฿10,900，那伽柱套装 ฿12,900，中号套装 ฿17,900。这些是神龛和供桌的报价。",
+    "de": "Auf Yellow Pages führt ein Anbieter ein Set mit Drachensäule und zwei Tischen davor für ฿10,900, ein Naga-Säulen-Set für ฿12,900 und ein mittleres Set für ฿17,900. Das sind Einträge für den Schrein und seine Tische."
+   },
+   "src": "https://www.yellowpages.co.th/en/heading/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4"
+  },
+  {
+   "q": {
+    "en": "How many incense sticks go to a spirit house?",
+    "th": "ศาลพระภูมิจุดธูปกี่ดอก",
+    "my": "နတ်ကွန်းအတွက် အမွှေးတိုင် ဘယ်နှစ်တိုင် ထွန်းရသလဲ။",
+    "zh": "给神龛上几炷香？",
+    "de": "Wie viele Räucherstäbchen gehören zu einem Geisterhaus?"
+   },
+   "a": {
+    "en": "Thairath's article of 9 September 2024 gives 9 incense sticks for a spirit house. For a grandparents' shrine (ศาลตายาย) it gives 5 sticks and 2 candles.",
+    "th": "บทความของไทยรัฐเมื่อ 9 กันยายน 2567 ระบุว่าศาลพระภูมิจุดธูป 9 ดอก ส่วนศาลตายายจุดธูป 5 ดอกและเทียน 2 เล่ม",
+    "my": "ထိုင်းရတ်၏ 2024 ခုနှစ် စက်တင်ဘာ 9 ရက် ဆောင်းပါးတွင် နတ်ကွန်းအတွက် အမွှေးတိုင် 9 တိုင်ဟု ဖော်ပြသည်။ အဖိုးအဖွားနတ်ကွန်း (ศาลตายาย) အတွက် အမွှေးတိုင် 5 တိုင်နှင့် ဖယောင်းတိုင် 2 တိုင်ဟု ဖော်ပြသည်။",
+    "zh": "《泰叻报》2024 年 9 月 9 日的文章写明，神龛上香 9 炷；外祖父母神龛（ศาลตายาย）上香 5 炷，点蜡烛 2 支。",
+    "de": "Der Artikel von Thairath vom 9. September 2024 nennt 9 Räucherstäbchen für ein Geisterhaus. Für einen Grosseltern-Schrein (ศาลตายาย) nennt er 5 Stäbchen und 2 Kerzen."
+   },
+   "src": "https://www.thairath.co.th/horoscope/belief/2813365"
+  },
+  {
+   "q": {
+    "en": "Who performs the ceremony?",
+    "th": "ใครเป็นผู้ทำพิธีตั้งศาล",
+    "my": "အခမ်းအနားကို ဘယ်သူက ဆောင်ရွက်သလဲ။",
+    "zh": "谁来主持仪式？",
+    "de": "Wer führt die Zeremonie durch?"
+   },
+   "a": {
+    "en": "Shopee's blog says a Brahman priest is invited to inspect the site and set the shrine up. It says a Brahman priest also holds the rite when a spirit house is removed.",
+    "th": "บล็อกของ Shopee ระบุว่าเชิญพราหมณ์มาตรวจสถานที่และตั้งศาล และพราหมณ์ยังเป็นผู้ทำพิธีเมื่อถอนศาลด้วย",
+    "my": "Shopee ၏ ဘလော့ဂ်တွင် နေရာကို စစ်ဆေးပြီး နတ်ကွန်းတည်ပေးရန် ပုဏ္ဏားဆရာကို ပင့်ကြသည်ဟု ဆိုသည်။ နတ်ကွန်းကို ဖယ်ရှားသည့်အခါလည်း ပုဏ္ဏားဆရာက အခမ်းအနားကို ဆောင်ရွက်သည်ဟု ဆိုသည်။",
+    "zh": "Shopee 的博客说，会请婆罗门祭司来查看场地并安置神龛；拆除神龛时，也由婆罗门祭司举行仪式。",
+    "de": "Der Blog von Shopee sagt, ein Brahmanenpriester werde eingeladen, den Ort anzusehen und den Schrein aufzustellen. Auch beim Abbau eines Geisterhauses halte ein Brahmanenpriester die Zeremonie."
+   },
+   "src": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  }
+ ],
+ "related": [
+  "house-blessing",
+  "date-pick",
+  "su-khwan",
+  "merit-you",
+  "stay-check",
+  "lanna-wedding"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Shopee blog: spirit house times, directions and rules",
+    "th": "บล็อก Shopee: ฤกษ์ตั้งศาลพระภูมิ ทิศ และหลักปฏิบัติ",
+    "my": "Shopee ဘလော့ဂ်: နတ်ကွန်းတည်ရန် အချိန်၊ ဦးတည်ရာနှင့် စည်းကမ်းများ",
+    "zh": "Shopee 博客：安置神龛的时间、方向和规矩",
+    "de": "Shopee-Blog: Zeiten, Richtungen und Regeln für ein Geisterhaus"
+   },
+   "href": "https://shopee.co.th/blog/how-set-up-thai-spirit-house"
+  },
+  {
+   "t": {
+    "en": "Thaiger: spirit houses in Thai culture",
+    "th": "Thaiger: ศาลพระภูมิในวัฒนธรรมไทย",
+    "my": "Thaiger: ထိုင်းယဉ်ကျေးမှုတွင် နတ်ကွန်းများ",
+    "zh": "Thaiger：泰国文化中的神龛",
+    "de": "Thaiger: Geisterhäuser in der thailändischen Kultur"
+   },
+   "href": "https://thethaiger.com/guides/best-of/lifestyle/spirit-houses-in-thai-culture"
+  }
+ ],
+ "glyphs": [
+  "spirit-house",
+  "home",
+  "sparkle"
+ ]
+}

@@ -1,0 +1,730 @@
+{
+ "id": "graphics",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A name on a sign, a post and a page reads as one business when the logo and colours match.",
+  "th": "ชื่อบนป้าย โพสต์ และหน้าเว็บ ดูเป็นธุรกิจเดียวกันเมื่อโลโก้และสีตรงกัน",
+  "my": "ဆိုင်းဘုတ်၊ ပို့စ်နှင့် စာမျက်နှာပေါ်ရှိ အမည်သည် လိုဂိုနှင့် အရောင်တူလျှင် စီးပွားရေးတစ်ခုတည်းအဖြစ် မြင်ရသည်။",
+  "zh": "招牌、帖子和网页上的名字，只要标志和配色一致，看起来就是同一家生意。",
+  "de": "Ein Name auf Schild, Beitrag und Webseite wirkt wie ein einziger Betrieb, wenn Logo und Farben übereinstimmen."
+ },
+ "n": {
+  "de": "Logo und Markenauftritt"
+ },
+ "l": {
+  "de": "Ein Logo, Farben und Bilder für Beiträge und Schilder."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The logo is drawn",
+    "th": "วาดโลโก้",
+    "my": "လိုဂိုကို ရေးဆွဲခြင်း",
+    "zh": "绘制标志",
+    "de": "Das Logo wird gezeichnet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "sparkle",
+   "t": {
+    "en": "The colours are set",
+    "th": "กำหนดสี",
+    "my": "အရောင်များ သတ်မှတ်ခြင်း",
+    "zh": "确定配色",
+    "de": "Die Farben werden festgelegt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the logo",
+    "th": "พร้อมกับโลโก้",
+    "my": "လိုဂိုနှင့်အတူ",
+    "zh": "与标志一起",
+    "de": "Zusammen mit dem Logo"
+   }
+  },
+  {
+   "db": "share",
+   "t": {
+    "en": "Pictures for posts are made",
+    "th": "ทำภาพสำหรับโพสต์",
+    "my": "ပို့စ်အတွက် ပုံများ ပြုလုပ်ခြင်း",
+    "zh": "制作用于帖子的图片",
+    "de": "Bilder für Beiträge werden gemacht"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Once the colours are set",
+    "th": "เมื่อกำหนดสีแล้ว",
+    "my": "အရောင်များ သတ်မှတ်ပြီးသည့်အခါ",
+    "zh": "配色确定后",
+    "de": "Sobald die Farben stehen"
+   }
+  },
+  {
+   "db": "flag",
+   "t": {
+    "en": "Pictures for signs are made",
+    "th": "ทำภาพสำหรับป้าย",
+    "my": "ဆိုင်းဘုတ်အတွက် ပုံများ ပြုလုပ်ခြင်း",
+    "zh": "制作用于招牌的图片",
+    "de": "Bilder für Schilder werden gemacht"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the posts",
+    "th": "พร้อมกับโพสต์",
+    "my": "ပို့စ်များနှင့်အတူ",
+    "zh": "与帖子的图片一起",
+    "de": "Zusammen mit den Beiträgen"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "Pictures for pages are made",
+    "th": "ทำภาพสำหรับหน้าเว็บ",
+    "my": "စာမျက်နှာများအတွက် ပုံများ ပြုလုပ်ခြင်း",
+    "zh": "制作用于网页的图片",
+    "de": "Bilder für Webseiten werden gemacht"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the posts and signs",
+    "th": "พร้อมกับโพสต์และป้าย",
+    "my": "ပို့စ်နှင့် ဆိုင်းဘုတ်များနှင့်အတူ",
+    "zh": "与帖子、招牌的图片一起",
+    "de": "Zusammen mit Beiträgen und Schildern"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "2,733",
+   "t": {
+    "en": "orders on one Fastwork logo listing",
+    "th": "ออเดอร์ของรายการออกแบบโลโก้หนึ่งรายการบน Fastwork",
+    "my": "Fastwork ရှိ လိုဂိုဒီဇိုင်း စာရင်းတစ်ခု၏ အော်ဒါများ",
+    "zh": "Fastwork 上一个标志设计商品的订单数",
+    "de": "Bestellungen für ein Logo-Angebot auf Fastwork"
+   },
+   "src": "https://fastwork.co/user/bomhihi/logo-design-14592163"
+  },
+  {
+   "n": "465",
+   "t": {
+    "en": "orders on one Fastwork listing for social media images",
+    "th": "ออเดอร์ของรายการออกแบบภาพโซเชียลมีเดียหนึ่งรายการบน Fastwork",
+    "my": "Fastwork ရှိ လူမှုကွန်ရက်ပုံ ဒီဇိုင်း စာရင်းတစ်ခု၏ အော်ဒါများ",
+    "zh": "Fastwork 上一个社交媒体图片商品的订单数",
+    "de": "Bestellungen für ein Angebot für Social-Media-Bilder auf Fastwork"
+   },
+   "src": "https://fastwork.co/user/eatwee/social-media-banner-35428969"
+  },
+  {
+   "n": "104",
+   "t": {
+    "en": "orders on one Fastwork listing for sign and vinyl banner design",
+    "th": "ออเดอร์ของรายการออกแบบป้ายไวนิลหนึ่งรายการบน Fastwork",
+    "my": "Fastwork ရှိ ဗိုင်နိုင်းဆိုင်းဘုတ် ဒီဇိုင်း စာရင်းတစ်ခု၏ အော်ဒါများ",
+    "zh": "Fastwork 上一个招牌和喷绘横幅设计商品的订单数",
+    "de": "Bestellungen für ein Angebot für Schilder- und Vinylbanner-Design auf Fastwork"
+   },
+   "src": "https://fastwork.co/user/taeeee/vinyl-printing-41735765"
+  },
+  {
+   "n": {
+    "en": "16 months",
+    "th": "16 เดือน",
+    "my": "16 လ",
+    "zh": "16 个月",
+    "de": "16 Monate"
+   },
+   "t": {
+    "en": "from filing a Thai trademark to the certificate, in the Department of Intellectual Property's guide",
+    "th": "ตั้งแต่ยื่นจดเครื่องหมายการค้าไทยจนได้หนังสือสำคัญ ตามคู่มือของกรมทรัพย์สินทางปัญญา",
+    "my": "ထိုင်းကုန်အမှတ်တံဆိပ် လျှောက်ထားသည့်နေ့မှ လက်မှတ်ရသည်အထိ ထိုင်းဉာဏ်ပစ္စည်းဦးစီးဌာန၏ လမ်းညွှန်အရ",
+    "zh": "按泰国知识产权厅指南，从提交泰国商标申请到取得证书",
+    "de": "von der Anmeldung einer thailändischen Marke bis zur Urkunde, laut Leitfaden des Amts für geistiges Eigentum"
+   },
+   "src": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What do a logo, colours and pictures cost elsewhere?",
+   "th": "โลโก้ สี และภาพ ที่อื่นคิดเท่าไหร่",
+   "my": "လိုဂို၊ အရောင်နှင့် ပုံများကို တခြားနေရာတွင် ဘယ်လောက်ယူသနည်း",
+   "zh": "标志、配色和图片，别处收多少钱",
+   "de": "Was kosten Logo, Farben und Bilder anderswo?"
+  },
+  "noscript": {
+   "en": "The cost sheet needs JavaScript. The prices freelancers list are below.",
+   "th": "ตารางราคาต้องใช้ JavaScript ราคาที่ฟรีแลนซ์ลงไว้แสดงด้านล่าง",
+   "my": "ဈေးနှုန်းဇယားသည် JavaScript လိုအပ်သည်။ ဖရီးလန်ဆာများ တင်ထားသော ဈေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "价格表需要 JavaScript。自由职业者列出的价格在下方。",
+   "de": "Die Preisübersicht braucht JavaScript. Die Preise der Freelancer stehen weiter unten."
+  },
+  "data": {
+   "sliders": [],
+   "choices": [
+    {
+     "id": "package",
+     "n": {
+      "en": "What you need",
+      "th": "ต้องการอะไร",
+      "my": "လိုအပ်သည့်အရာ",
+      "zh": "您需要什么",
+      "de": "Was Sie brauchen"
+     },
+     "options": [
+      {
+       "id": "logo",
+       "n": {
+        "en": "Logo only",
+        "th": "โลโก้อย่างเดียว",
+        "my": "လိုဂိုသာ",
+        "zh": "只要标志",
+        "de": "Nur das Logo"
+       }
+      },
+      {
+       "id": "colours",
+       "n": {
+        "en": "Logo and colours",
+        "th": "โลโก้และสี",
+        "my": "လိုဂိုနှင့် အရောင်",
+        "zh": "标志和配色",
+        "de": "Logo und Farben"
+       }
+      },
+      {
+       "id": "full",
+       "n": {
+        "en": "Full look: logo, colours, pictures",
+        "th": "ครบชุด: โลโก้ สี ภาพ",
+        "my": "အပြည့်အစုံ - လိုဂို၊ အရောင်၊ ပုံများ",
+        "zh": "完整形象：标志、配色、图片",
+        "de": "Ganzer Auftritt: Logo, Farben, Bilder"
+       }
+      }
+     ],
+     "start": "full"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "New logo, 3 options to choose from (Fastwork seller, 726 orders)",
+      "th": "โลโก้ใหม่ ให้เลือก 3 แบบ (ผู้ขายบน Fastwork 726 ออเดอร์)",
+      "my": "လိုဂိုအသစ်၊ ရွေးချယ်ရန် ပုံစံ 3 မျိုး (Fastwork ရောင်းသူ၊ အော်ဒါ 726)",
+      "zh": "新标志，3 个方案可选（Fastwork 卖家，726 笔订单）",
+      "de": "Neues Logo, 3 Entwürfe zur Auswahl (Fastwork-Anbieter, 726 Bestellungen)"
+     },
+     "range": [
+      2650,
+      2650
+     ],
+     "when": {
+      "package": [
+       "logo"
+      ]
+     },
+     "save": false,
+     "src": "https://fastwork.co/user/paitoon148/logo-design-49939124"
+    },
+    {
+     "n": {
+      "en": "New logo with colour codes, fonts and a short brand guide (same seller)",
+      "th": "โลโก้ใหม่พร้อมโค้ดสี ฟอนต์ และไกด์แบรนด์แบบย่อ (ผู้ขายรายเดียวกัน)",
+      "my": "လိုဂိုအသစ်၊ အရောင်ကုဒ်၊ ဖောင့်နှင့် ဘရန်းလမ်းညွှန်အတိုချုပ် (ရောင်းသူတစ်ဦးတည်း)",
+      "zh": "新标志，附色号、字体和简版品牌指南（同一卖家）",
+      "de": "Neues Logo mit Farbcodes, Schriften und einem kurzen Markenleitfaden (derselbe Anbieter)"
+     },
+     "range": [
+      3950,
+      3950
+     ],
+     "when": {
+      "package": [
+       "colours",
+       "full"
+      ]
+     },
+     "save": false,
+     "src": "https://fastwork.co/user/paitoon148/logo-design-49939124"
+    },
+    {
+     "n": {
+      "en": "Pictures for posts: one image, up to a Facebook set of 4 (Fastwork designer, 465 orders)",
+      "th": "ภาพสำหรับโพสต์: 1 ชิ้น ไปจนถึงชุด Facebook 4 ชิ้น (ดีไซเนอร์บน Fastwork 465 ออเดอร์)",
+      "my": "ပို့စ်အတွက် ပုံများ - ပုံတစ်ပုံမှ Facebook ပုံ 4 ပုံအစုံအထိ (Fastwork ဒီဇိုင်နာ၊ အော်ဒါ 465)",
+      "zh": "帖子图片：1 张起，到 4 张的 Facebook 套图（Fastwork 设计师，465 笔订单）",
+      "de": "Bilder für Beiträge: ein Bild bis zu einem Facebook-Set mit 4 (Fastwork-Designer, 465 Bestellungen)"
+     },
+     "range": [
+      1000,
+      2550
+     ],
+     "when": {
+      "package": [
+       "full"
+      ]
+     },
+     "save": false,
+     "src": "https://fastwork.co/user/eatwee/social-media-banner-35428969"
+    },
+    {
+     "n": {
+      "en": "Sign artwork: a vinyl banner, sticker or roll-up, up to a cut-out or billboard sign (Fastwork seller, 95 orders)",
+      "th": "ภาพสำหรับป้าย: ไวนิล สติกเกอร์ หรือโรลอัพ ไปจนถึงป้ายคัตเอาต์หรือบิลบอร์ด (ผู้ขายบน Fastwork 95 ออเดอร์)",
+      "my": "ဆိုင်းဘုတ်အတွက် ပုံ - ဗိုင်နိုင်း၊ စတစ်ကာ သို့မဟုတ် Roll-Up မှ Cutout သို့မဟုတ် Billboard ဆိုင်းဘုတ်အထိ (Fastwork ရောင်းသူ၊ အော်ဒါ 95)",
+      "zh": "招牌图稿：从喷绘横幅、贴纸或易拉宝，到立体造型牌或大型广告牌（Fastwork 卖家，95 笔订单）",
+      "de": "Schilder-Entwurf: Vinylbanner, Aufkleber oder Roll-up, bis zum ausgeschnittenen Schild oder zur Plakatwand (Fastwork-Anbieter, 95 Bestellungen)"
+     },
+     "range": [
+      2000,
+      3000
+     ],
+     "when": {
+      "package": [
+       "full"
+      ]
+     },
+     "save": false,
+     "src": "https://fastwork.co/user/kfidea/sign-printing-55119290"
+    }
+   ],
+   "total": {
+    "en": "Elsewhere, for the same parts",
+    "th": "ที่อื่น สำหรับส่วนเดียวกัน",
+    "my": "တခြားနေရာတွင် အပိုင်းတူများအတွက်",
+    "zh": "在别处做同样的部分",
+    "de": "Anderswo, für dieselben Teile"
+   },
+   "note": {
+    "en": "A line is one Fastwork seller's package price, read from the listing linked. Sign production and delivery are not counted: the sign seller's page quotes them apart.",
+    "th": "แต่ละบรรทัดคือราคาแพ็กเกจของผู้ขายหนึ่งรายบน Fastwork ตามหน้ารายการที่ลิงก์ไว้ ค่าผลิตและค่าส่งป้ายไม่ได้นับรวม หน้าของผู้ขายงานป้ายแจ้งราคาส่วนนี้แยกต่างหาก",
+    "my": "စာကြောင်းတစ်ကြောင်းစီသည် ချိတ်ဆက်ထားသော စာရင်းမှ Fastwork ရောင်းသူတစ်ဦး၏ ပက်ကေ့ချ်ဈေးဖြစ်သည်။ ဆိုင်းဘုတ် ထုတ်လုပ်ခနှင့် ပို့ဆောင်ခကို မထည့်တွက်ပါ၊ ဆိုင်းဘုတ်ရောင်းသူ၏ စာမျက်နှာက သီးခြားဈေးပေးသည်။",
+    "zh": "每一行是一位 Fastwork 卖家的套餐价格，取自所附商品页面。招牌的制作费和运费未计入，招牌卖家的页面另行报价。",
+    "de": "Eine Zeile ist der Paketpreis eines Fastwork-Anbieters, gelesen von der verlinkten Seite. Herstellung und Lieferung der Schilder sind nicht eingerechnet: Die Seite des Schilder-Anbieters nennt sie gesondert."
+   },
+   "oursLine": {
+    "en": "Hongdam makes the logo, colours and a set of pictures for:",
+    "th": "หงส์ดำทำโลโก้ สี และชุดภาพให้ในราคา:",
+    "my": "ဟုန်ဒမ်က လိုဂို၊ အရောင်နှင့် ပုံအစုံကို ပြုလုပ်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹制作标志、配色和一套图片，价格：",
+    "de": "Hongdam macht Logo, Farben und ein Bilderset für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "In Thailand, copyright arises when a work is made; registration is not needed.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်သည်; မှတ်ပုံတင်ရန် မလို။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "Thai trademarks go to whoever files first, not whoever used the mark first.",
+    "th": "เครื่องหมายการค้าในไทยเป็นของผู้ยื่นจดก่อน ไม่ใช่ผู้ใช้ก่อน",
+    "my": "ထိုင်းကုန်အမှတ်တံဆိပ်သည် အရင်သုံးသူမဟုတ်ဘဲ အရင်လျှောက်သူ၏ ဖြစ်သည်။",
+    "zh": "泰国商标归先申请者所有，而非先使用者。",
+    "de": "Thailändische Marken gehören dem, der zuerst anmeldet, nicht dem, der sie zuerst benutzt hat."
+   },
+   "src": "https://harris-sliwoski.com/blog/registering-a-trademark-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "A registered Thai trademark lasts 10 years from filing and renews for 10 more.",
+    "th": "เครื่องหมายการค้าที่จดแล้วมีอายุ 10 ปีนับจากวันยื่น ต่ออายุได้ครั้งละ 10 ปี",
+    "my": "မှတ်ပုံတင်ထားသော ထိုင်းကုန်အမှတ်တံဆိပ်သည် လျှောက်သည့်နေ့မှ 10 နှစ် ခံပြီး 10 နှစ်စီ သက်တမ်းတိုးနိုင်သည်။",
+    "zh": "泰国注册商标自申请日起有效 10 年，可续展 10 年。",
+    "de": "Eine eingetragene thailändische Marke gilt 10 Jahre ab Anmeldung und lässt sich um weitere 10 Jahre verlängern."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "The Department of Intellectual Property's service guide lists a filing fee of ฿1,000 an item, for up to 5 items in a class, and ฿9,000 for a class of more than 5 items. Once the mark is accepted, the fee is ฿600 an item, or ฿5,400 for a class of more than 5 items.",
+    "th": "คู่มือการให้บริการของกรมทรัพย์สินทางปัญญาระบุค่ายื่นคำขอรายการละ ฿1,000 สำหรับสินค้าไม่เกิน 5 รายการในหนึ่งจำพวก และ ฿9,000 ต่อจำพวกเมื่อเกิน 5 รายการ เมื่อรับจดทะเบียน ค่าธรรมเนียมรายการละ ฿600 หรือ ฿5,400 ต่อจำพวกเมื่อเกิน 5 รายการ",
+    "my": "ထိုင်းဉာဏ်ပစ္စည်းဦးစီးဌာန၏ ဝန်ဆောင်မှုလမ်းညွှန်တွင် လျှောက်လွှာကြေးကို အမျိုးအစားတစ်ခုရှိ ပစ္စည်း 5 ခုအထိ တစ်ခုလျှင် ฿1,000၊ 5 ခုထက်များလျှင် အမျိုးအစားတစ်ခုလျှင် ฿9,000 ဟု ဖော်ပြထားသည်။ အမှတ်တံဆိပ်ကို လက်ခံပြီးသည့်အခါ ကြေးမှာ တစ်ခုလျှင် ฿600၊ ပစ္စည်း 5 ခုထက်များလျှင် အမျိုးအစားတစ်ခုလျှင် ฿5,400 ဖြစ်သည်။",
+    "zh": "泰国知识产权厅的办事指南列出：申请费每项 ฿1,000，同一类别最多 5 项；超过 5 项的类别为 ฿9,000。商标获准注册时，每项 ฿600；超过 5 项的类别为 ฿5,400。",
+    "de": "Der Leitfaden des thailändischen Amts für geistiges Eigentum nennt eine Anmeldegebühr von ฿1,000 je Position für bis zu 5 Positionen in einer Klasse und ฿9,000 für eine Klasse mit mehr als 5 Positionen. Sobald die Marke angenommen ist, betragen die Gebühren ฿600 je Position oder ฿5,400 für eine Klasse mit mehr als 5 Positionen."
+   },
+   "src": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  },
+  {
+   "t": {
+    "en": "The same guide lists 16 months from filing to certificate: 6 months to examine the mark, 5 for the registrar's decision, 2 to prepare the announcement and a 60-day public announcement.",
+    "th": "คู่มือเดียวกันระบุระยะเวลารวม 16 เดือนจากการยื่นคำขอถึงหนังสือสำคัญ คือตรวจสอบเครื่องหมาย 6 เดือน นายทะเบียนพิจารณา 5 เดือน จัดทำรายละเอียดการประกาศ 2 เดือน และประกาศโฆษณา 60 วัน",
+    "my": "ထိုလမ်းညွှန်တွင် လျှောက်ထားသည့်နေ့မှ လက်မှတ်ရသည်အထိ 16 လဟု ဖော်ပြထားသည် - အမှတ်တံဆိပ်စစ်ဆေးရန် 6 လ၊ မှတ်ပုံတင်အရာရှိ၏ ဆုံးဖြတ်ချက်အတွက် 5 လ၊ ကြေညာချက်ပြင်ဆင်ရန် 2 လနှင့် လူထုကြေညာချက် 60 ရက်။",
+    "zh": "同一份指南列出从提交申请到取得证书共 16 个月：审查商标 6 个月，注册官作出决定 5 个月，准备公告 2 个月，公开公告 60 天。",
+    "de": "Derselbe Leitfaden nennt 16 Monate von der Anmeldung bis zur Urkunde: 6 Monate für die Prüfung der Marke, 5 für die Entscheidung des Registerführers, 2 für die Vorbereitung der Bekanntmachung und 60 Tage öffentliche Bekanntmachung."
+   },
+   "src": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  },
+  {
+   "t": {
+    "en": "A Thai print shop's FAQ asks for AI, PDF, PNG or JPG files at high resolution.",
+    "th": "คำถามที่พบบ่อยของร้านพิมพ์ไทยแห่งหนึ่งแนะนำไฟล์ AI, PDF, PNG หรือ JPG ความละเอียดสูง",
+    "my": "ထိုင်းပုံနှိပ်ဆိုင်တစ်ဆိုင်၏ မေးလေ့ရှိသောမေးခွန်းများတွင် ကြည်လင်ပြတ်သားမှုမြင့်သော AI၊ PDF၊ PNG သို့မဟုတ် JPG ဖိုင်များကို တောင်းဆိုထားသည်။",
+    "zh": "一家泰国印刷店的常见问题页要求提供高分辨率的 AI、PDF、PNG 或 JPG 文件。",
+    "de": "Die FAQ einer thailändischen Druckerei nennt AI-, PDF-, PNG- oder JPG-Dateien in hoher Auflösung."
+   },
+   "src": "https://page.line.me/eng2799i/faq/1874422122264012"
+  },
+  {
+   "t": {
+    "en": "A Fastwork logo listing hands over the source file (.ai), a PNG with a clear background and a JPG. Its packages also list a print file at 300 dpi.",
+    "th": "รายการออกแบบโลโก้บน Fastwork รายการหนึ่งส่งมอบไฟล์ต้นฉบับ (.ai) ไฟล์ PNG พื้นใส และไฟล์ JPG แพ็กเกจยังระบุไฟล์ความละเอียดสูงสำหรับงานพิมพ์ 300 dpi",
+    "my": "Fastwork ရှိ လိုဂိုဒီဇိုင်း စာရင်းတစ်ခုသည် မူရင်းဖိုင် (.ai)၊ နောက်ခံကြည်သော PNG နှင့် JPG ကို ပေးအပ်သည်။ ပက်ကေ့ချ်များတွင် 300 dpi ပုံနှိပ်ဖိုင်ကိုလည်း ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上的一个标志设计商品交付源文件（.ai）、透明底 PNG 和 JPG。其套餐还列出 300 dpi 的印刷文件。",
+    "de": "Ein Logo-Angebot auf Fastwork liefert die Quelldatei (.ai), ein PNG mit transparentem Hintergrund und ein JPG. Die Pakete nennen ausserdem eine Druckdatei mit 300 dpi."
+   },
+   "src": "https://fastwork.co/user/paitoon148/logo-design-49939124"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Logo from a Fastwork seller with 2,733 orders",
+    "th": "โลโก้จากผู้ขายบน Fastwork ที่มี 2,733 ออเดอร์",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (အော်ဒါ 2,733) ထံမှ လိုဂို",
+    "zh": "Fastwork 上有 2,733 笔订单的卖家的标志",
+    "de": "Logo von einem Fastwork-Anbieter mit 2,733 Bestellungen"
+   },
+   "p": {
+    "en": "฿1,900 in 2 days; ฿2,500 in 3 days with a company stamp and business card",
+    "th": "฿1,900 ใน 2 วัน; ฿2,500 ใน 3 วัน พร้อมตรายางบริษัทและนามบัตร",
+    "my": "2 ရက်အတွင်း ฿1,900; 3 ရက်အတွင်း ฿2,500 (ကုမ္ပဏီ ရော်ဘာတံဆိပ်နှင့် လုပ်ငန်းကတ်ပါ)",
+    "zh": "2 天交付 ฿1,900；3 天交付 ฿2,500，含公司印章和名片",
+    "de": "฿1,900 in 2 Tagen; ฿2,500 in 3 Tagen mit Firmenstempel und Visitenkarte"
+   },
+   "src": "https://fastwork.co/user/bomhihi/logo-design-14592163"
+  },
+  {
+   "t": {
+    "en": "Logo from a Fastwork seller with 726 orders: three packages",
+    "th": "โลโก้จากผู้ขายบน Fastwork ที่มี 726 ออเดอร์: สามแพ็กเกจ",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (အော်ဒါ 726) ထံမှ လိုဂို - ပက်ကေ့ချ် သုံးမျိုး",
+    "zh": "Fastwork 上有 726 笔订单的卖家的标志：三个套餐",
+    "de": "Logo von einem Fastwork-Anbieter mit 726 Bestellungen: drei Pakete"
+   },
+   "p": {
+    "en": "฿1,500 to change an old logo, 1 day; ฿2,650 for a new logo, 3 days; ฿3,950 with a short brand guide, 5 days",
+    "th": "฿1,500 แก้โลโก้เดิม 1 วัน; ฿2,650 โลโก้ใหม่ 3 วัน; ฿3,950 พร้อมไกด์แบรนด์แบบย่อ 5 วัน",
+    "my": "฿1,500 လိုဂိုဟောင်းကို ပြင်ရန် 1 ရက်; ฿2,650 လိုဂိုအသစ် 3 ရက်; ฿3,950 ဘရန်းလမ်းညွှန်အတိုချုပ်နှင့် 5 ရက်",
+    "zh": "฿1,500 修改旧标志，1 天；฿2,650 新标志，3 天；฿3,950 含简版品牌指南，5 天",
+    "de": "฿1,500 für die Änderung eines alten Logos, 1 Tag; ฿2,650 für ein neues Logo, 3 Tage; ฿3,950 mit kurzem Markenleitfaden, 5 Tage"
+   },
+   "src": "https://fastwork.co/user/paitoon148/logo-design-49939124"
+  },
+  {
+   "t": {
+    "en": "Logo and brand book from a Fastwork studio with 364 orders: three packages",
+    "th": "โลโก้และแบรนด์บุ๊กจากสตูดิโอบน Fastwork ที่มี 364 ออเดอร์: สามแพ็กเกจ",
+    "my": "Fastwork စတူဒီယိုတစ်ခု (အော်ဒါ 364) ထံမှ လိုဂိုနှင့် Brand Book - ပက်ကေ့ချ် သုံးမျိုး",
+    "zh": "Fastwork 上有 364 笔订单的工作室的标志和品牌手册：三个套餐",
+    "de": "Logo und Brand Book von einem Fastwork-Studio mit 364 Bestellungen: drei Pakete"
+   },
+   "p": {
+    "en": "฿7,500 for a logo, 3 days; ฿9,500 with a 9-page brand book, 5 days; ฿19,500 with a 30-page brand book, 10 days",
+    "th": "฿7,500 โลโก้ 3 วัน; ฿9,500 พร้อมแบรนด์บุ๊ก 9 หน้า 5 วัน; ฿19,500 พร้อมแบรนด์บุ๊ก 30 หน้า 10 วัน",
+    "my": "฿7,500 လိုဂို 3 ရက်; ฿9,500 Brand Book 9 မျက်နှာနှင့် 5 ရက်; ฿19,500 Brand Book 30 မျက်နှာနှင့် 10 ရက်",
+    "zh": "฿7,500 标志，3 天；฿9,500 含 9 页品牌手册，5 天；฿19,500 含 30 页品牌手册，10 天",
+    "de": "฿7,500 für ein Logo, 3 Tage; ฿9,500 mit 9-seitigem Brand Book, 5 Tage; ฿19,500 mit 30-seitigem Brand Book, 10 Tage"
+   },
+   "src": "https://fastwork.co/user/paintsmith/logo-design-11440364"
+  },
+  {
+   "t": {
+    "en": "Social media images from a Fastwork designer with 465 orders",
+    "th": "ภาพโซเชียลมีเดียจากดีไซเนอร์บน Fastwork ที่มี 465 ออเดอร์",
+    "my": "Fastwork ဒီဇိုင်နာတစ်ဦး (အော်ဒါ 465) ထံမှ လူမှုကွန်ရက်ပုံများ",
+    "zh": "Fastwork 上有 465 笔订单的设计师的社交媒体图片",
+    "de": "Social-Media-Bilder von einem Fastwork-Designer mit 465 Bestellungen"
+   },
+   "p": {
+    "en": "฿1,000 for one image, 3 days; ฿2,550 for a Facebook set of 4, 3 days; ฿6,990 for 10 website banners, 5 days",
+    "th": "฿1,000 ภาพเดียว 3 วัน; ฿2,550 ชุด Facebook 4 ชิ้น 3 วัน; ฿6,990 แบนเนอร์เว็บไซต์ 10 ชิ้น 5 วัน",
+    "my": "฿1,000 ပုံတစ်ပုံ 3 ရက်; ฿2,550 Facebook ပုံ 4 ပုံအစုံ 3 ရက်; ฿6,990 ဝက်ဘ်ဆိုက်ဘန်နာ 10 ခု 5 ရက်",
+    "zh": "฿1,000 一张图，3 天；฿2,550 4 张的 Facebook 套图，3 天；฿6,990 10 张网站横幅，5 天",
+    "de": "฿1,000 für ein Bild, 3 Tage; ฿2,550 für ein Facebook-Set mit 4, 3 Tage; ฿6,990 für 10 Website-Banner, 5 Tage"
+   },
+   "src": "https://fastwork.co/user/eatwee/social-media-banner-35428969"
+  },
+  {
+   "t": {
+    "en": "Sign artwork from a Fastwork seller with 95 orders",
+    "th": "งานออกแบบป้ายจากผู้ขายบน Fastwork ที่มี 95 ออเดอร์",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (အော်ဒါ 95) ထံမှ ဆိုင်းဘုတ်ဒီဇိုင်း",
+    "zh": "Fastwork 上有 95 笔订单的卖家的招牌图稿",
+    "de": "Schilder-Entwurf von einem Fastwork-Anbieter mit 95 Bestellungen"
+   },
+   "p": {
+    "en": "฿2,000 for a vinyl banner, sticker, roll-up or J-flag, 3 days; ฿3,000 for a cut-out or billboard sign, 5 days; production is quoted apart",
+    "th": "฿2,000 ไวนิล สติกเกอร์ โรลอัพ หรือธงญี่ปุ่น 3 วัน; ฿3,000 ป้ายคัตเอาต์หรือบิลบอร์ด 5 วัน; ค่าผลิตแจ้งแยก",
+    "my": "฿2,000 ဗိုင်နိုင်း၊ စတစ်ကာ၊ Roll-Up သို့မဟုတ် J-flag 3 ရက်; ฿3,000 Cutout သို့မဟုတ် Billboard ဆိုင်းဘုတ် 5 ရက်; ထုတ်လုပ်ခကို သီးခြားဈေးပေးသည်",
+    "zh": "฿2,000 喷绘横幅、贴纸、易拉宝或日式旗，3 天；฿3,000 立体造型牌或大型广告牌，5 天；制作费另报价",
+    "de": "฿2,000 für ein Vinylbanner, einen Aufkleber, ein Roll-up oder eine J-Flag, 3 Tage; ฿3,000 für ein ausgeschnittenes Schild oder eine Plakatwand, 5 Tage; die Herstellung wird gesondert angeboten"
+   },
+   "src": "https://fastwork.co/user/kfidea/sign-printing-55119290"
+  },
+  {
+   "t": {
+    "en": "Thai trademark, government fees",
+    "th": "ค่าธรรมเนียมจดเครื่องหมายการค้าไทย",
+    "my": "ထိုင်းကုန်အမှတ်တံဆိပ် အစိုးရအခကြေး",
+    "zh": "泰国商标官费",
+    "de": "Thailändische Marke, Amtsgebühren"
+   },
+   "p": {
+    "en": "฿1,000 an item to file, up to 5 items in a class; ฿600 an item once the mark is accepted",
+    "th": "ยื่นคำขอรายการละ ฿1,000 ไม่เกิน 5 รายการต่อจำพวก; รับจดทะเบียนรายการละ ฿600",
+    "my": "လျှောက်ရန် တစ်ခုလျှင် ฿1,000၊ အမျိုးအစားတစ်ခုလျှင် 5 ခုအထိ; လက်ခံပြီးသည့်အခါ တစ်ခုလျှင် ฿600",
+    "zh": "申请每项 ฿1,000，同一类别最多 5 项；获准注册后每项 ฿600",
+    "de": "฿1,000 je Position für die Anmeldung, bis zu 5 Positionen in einer Klasse; ฿600 je Position, sobald die Marke angenommen ist"
+   },
+   "src": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a logo cost?",
+    "th": "ออกแบบโลโก้ราคาเท่าไหร่",
+    "my": "လိုဂိုဒီဇိုင်းတစ်ခု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "做一个标志要多少钱",
+    "de": "Was kostet ein Logo?"
+   },
+   "a": {
+    "en": "One Fastwork studio with 2,158 orders lists a logo at ฿4,900, with 3 designs to choose from and 3 rounds of changes. The same page lists ฿5,900 with a business card and ฿7,900 with a product label.",
+    "th": "สตูดิโอหนึ่งบน Fastwork ที่มี 2,158 ออเดอร์ลงโลโก้ไว้ที่ ฿4,900 ให้เลือก 3 แบบ และแก้ไขได้ 3 ครั้ง หน้าเดียวกันลง ฿5,900 พร้อมนามบัตร และ ฿7,900 พร้อมฉลากสินค้า",
+    "my": "Fastwork စတူဒီယိုတစ်ခု (အော်ဒါ 2,158) က လိုဂိုကို ฿4,900 ဖြင့် တင်ထားပြီး ရွေးချယ်ရန် ပုံစံ 3 မျိုးနှင့် ပြင်ဆင်မှု 3 ကြိမ် ပါသည်။ ထိုစာမျက်နှာတွင် လုပ်ငန်းကတ်ပါလျှင် ฿5,900၊ ကုန်ပစ္စည်းတံဆိပ်ပါလျှင် ฿7,900 ဟုလည်း တင်ထားသည်။",
+    "zh": "Fastwork 上一家有 2,158 笔订单的工作室把标志定价为 ฿4,900，含 3 个方案可选和 3 轮修改。同一页还列出：加名片 ฿5,900，加产品标签 ฿7,900。",
+    "de": "Ein Fastwork-Studio mit 2,158 Bestellungen nennt ein Logo für ฿4,900, mit 3 Entwürfen zur Auswahl und 3 Änderungsrunden. Dieselbe Seite nennt ฿5,900 mit Visitenkarte und ฿7,900 mit Produktetikett."
+   },
+   "src": "https://fastwork.co/user/jaranya.studio/logo-design-4176"
+  },
+  {
+   "q": {
+    "en": "What does a brand identity package hold?",
+    "th": "แพ็กเกจ Brand Identity มีอะไรบ้าง",
+    "my": "Brand Identity ပက်ကေ့ချ်တွင် ဘာတွေ ပါသလဲ",
+    "zh": "品牌形象套餐包含什么",
+    "de": "Was enthält ein Paket für die Markenidentität?"
+   },
+   "a": {
+    "en": "One Fastwork studio lists a 9-page brand book at ฿9,500: the concept, the logo in its forms, a colour palette and typography, with mockups, a business card and a stamp design. Its ฿19,500 package lists a 30-page brand book with a logo guideline, colour, typography, graphic elements and a moodboard.",
+    "th": "สตูดิโอหนึ่งบน Fastwork ลงแบรนด์บุ๊ก 9 หน้าไว้ที่ ฿9,500 ประกอบด้วยคอนเซ็ปต์ โลโก้หลายรูปแบบ พาเลตต์สี และตัวอักษร พร้อมม็อกอัพ นามบัตร และแบบตรายาง แพ็กเกจ ฿19,500 ลงแบรนด์บุ๊ก 30 หน้า พร้อมไกด์โลโก้ สี ตัวอักษร องค์ประกอบกราฟิก และมูดบอร์ด",
+    "my": "Fastwork စတူဒီယိုတစ်ခုက Brand Book 9 မျက်နှာကို ฿9,500 ဖြင့် တင်ထားသည်။ ၎င်းတွင် အယူအဆ၊ လိုဂိုပုံစံများ၊ အရောင်စဉ်နှင့် စာလုံးပုံစံတို့ပါပြီး mockup၊ လုပ်ငန်းကတ်နှင့် ရော်ဘာတံဆိပ်ဒီဇိုင်းလည်း ပါသည်။ ฿19,500 ပက်ကေ့ချ်တွင် Brand Book 30 မျက်နှာနှင့် လိုဂိုလမ်းညွှန်၊ အရောင်၊ စာလုံးပုံစံ၊ ဂရပ်ဖစ်ဒြပ်စင်များနှင့် moodboard ပါသည်။",
+    "zh": "Fastwork 上一家工作室把 9 页品牌手册定价为 ฿9,500：含概念、标志的各种形式、色板和字体，另有效果图、名片和印章设计。其 ฿19,500 套餐列出 30 页品牌手册，含标志规范、色彩、字体、图形元素和情绪板。",
+    "de": "Ein Fastwork-Studio nennt ein 9-seitiges Brand Book für ฿9,500: das Konzept, das Logo in seinen Formen, eine Farbpalette und die Typografie, dazu Mockups, eine Visitenkarte und einen Stempelentwurf. Das Paket zu ฿19,500 nennt ein 30-seitiges Brand Book mit Logo-Richtlinie, Farbe, Typografie, Grafikelementen und Moodboard."
+   },
+   "src": "https://fastwork.co/user/paintsmith/logo-design-11440364"
+  },
+  {
+   "q": {
+    "en": "How long does a logo take?",
+    "th": "ออกแบบโลโก้ใช้เวลากี่วัน",
+    "my": "လိုဂိုတစ်ခု ပြုလုပ်ရန် ဘယ်လောက်ကြာသလဲ",
+    "zh": "做一个标志要几天",
+    "de": "Wie lange dauert ein Logo?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 726 orders lists 1 day to change an old logo, 3 days for a new logo with 3 options to choose from, and 5 days for a logo with a short brand guide.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ที่มี 726 ออเดอร์ระบุว่า แก้โลโก้เดิม 1 วัน โลโก้ใหม่ให้เลือก 3 แบบ 3 วัน และโลโก้พร้อมไกด์แบรนด์แบบย่อ 5 วัน",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (အော်ဒါ 726) က လိုဂိုဟောင်းပြင်ရန် 1 ရက်၊ ရွေးချယ်ရန် ပုံစံ 3 မျိုးပါသော လိုဂိုအသစ်အတွက် 3 ရက်၊ ဘရန်းလမ်းညွှန်အတိုချုပ်ပါသော လိုဂိုအတွက် 5 ရက် ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位有 726 笔订单的卖家列出：修改旧标志 1 天，3 个方案可选的新标志 3 天，含简版品牌指南的标志 5 天。",
+    "de": "Ein Fastwork-Anbieter mit 726 Bestellungen nennt 1 Tag für die Änderung eines alten Logos, 3 Tage für ein neues Logo mit 3 Entwürfen zur Auswahl und 5 Tage für ein Logo mit kurzem Markenleitfaden."
+   },
+   "src": "https://fastwork.co/user/paitoon148/logo-design-49939124"
+  },
+  {
+   "q": {
+    "en": "Which file types does a printer ask for?",
+    "th": "ร้านพิมพ์ขอไฟล์อะไร",
+    "my": "ပုံနှိပ်ဆိုင်က ဖိုင်အမျိုးအစား ဘာတောင်းသလဲ",
+    "zh": "印刷厂要什么格式的文件",
+    "de": "Welche Dateitypen verlangt eine Druckerei?"
+   },
+   "a": {
+    "en": "A Thai box printer's FAQ names AI as the logo file type. It lists AI, PDF or EPS at high resolution for printing, and for an AI file it asks for fonts turned into outlines and linked pictures embedded.",
+    "th": "คำถามที่พบบ่อยของโรงพิมพ์กล่องแห่งหนึ่งในไทยระบุไฟล์โลโก้เป็นประเภท AI และสำหรับงานพิมพ์ระบุไฟล์ AI, PDF หรือ EPS ความละเอียดสูง ส่วนไฟล์ AI ขอให้แปลงฟอนต์เป็น outline และฝังรูปที่ลิงก์ไว้",
+    "my": "ထိုင်းဘူးခွံပုံနှိပ်ဆိုင်တစ်ဆိုင်၏ မေးလေ့ရှိသောမေးခွန်းများတွင် လိုဂိုဖိုင်အမျိုးအစားကို AI ဟု ဖော်ပြထားသည်။ ပုံနှိပ်ရန် ကြည်လင်ပြတ်သားမှုမြင့်သော AI၊ PDF သို့မဟုတ် EPS ကို ဖော်ပြပြီး AI ဖိုင်အတွက် ဖောင့်များကို outline ပြောင်းထားရန်နှင့် ချိတ်ထားသောပုံများကို ထည့်သွင်းထားရန် တောင်းဆိုသည်။",
+    "zh": "一家泰国包装盒印刷厂的常见问题页把标志文件类型写作 AI。印刷用文件列为高分辨率的 AI、PDF 或 EPS；AI 文件要求字体转为轮廓、链接的图片嵌入。",
+    "de": "Die FAQ einer thailändischen Schachteldruckerei nennt AI als Dateityp für das Logo. Für den Druck nennt sie AI, PDF oder EPS in hoher Auflösung; bei einer AI-Datei verlangt sie in Pfade umgewandelte Schriften und eingebettete verknüpfte Bilder."
+   },
+   "src": "https://page.line.me/rigidboxs/faq/1162362884298219"
+  },
+  {
+   "q": {
+    "en": "How much does it cost to register a logo as a trademark in Thailand?",
+    "th": "จดเครื่องหมายการค้าโลโก้ในไทย เสียค่าธรรมเนียมเท่าไหร่",
+    "my": "ထိုင်းနိုင်ငံတွင် လိုဂိုကို ကုန်အမှတ်တံဆိပ်အဖြစ် မှတ်ပုံတင်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在泰国把标志注册为商标要多少钱",
+    "de": "Was kostet es, ein Logo in Thailand als Marke einzutragen?"
+   },
+   "a": {
+    "en": "The Department of Intellectual Property's service guide lists ฿1,000 an item to file, for up to 5 items in a class, and ฿9,000 for a class of more than 5 items. When the mark is accepted, the fee is ฿600 an item, or ฿5,400 for a class of more than 5 items.",
+    "th": "คู่มือการให้บริการของกรมทรัพย์สินทางปัญญาระบุค่ายื่นคำขอรายการละ ฿1,000 สำหรับสินค้าไม่เกิน 5 รายการในหนึ่งจำพวก และ ฿9,000 ต่อจำพวกเมื่อเกิน 5 รายการ เมื่อรับจดทะเบียน ค่าธรรมเนียมรายการละ ฿600 หรือ ฿5,400 ต่อจำพวกเมื่อเกิน 5 รายการ",
+    "my": "ထိုင်းဉာဏ်ပစ္စည်းဦးစီးဌာန၏ ဝန်ဆောင်မှုလမ်းညွှန်တွင် လျှောက်ရန် အမျိုးအစားတစ်ခုရှိ ပစ္စည်း 5 ခုအထိ တစ်ခုလျှင် ฿1,000၊ 5 ခုထက်များလျှင် အမျိုးအစားတစ်ခုလျှင် ฿9,000 ဟု ဖော်ပြထားသည်။ အမှတ်တံဆိပ်ကို လက်ခံသည့်အခါ ကြေးမှာ တစ်ခုလျှင် ฿600၊ ပစ္စည်း 5 ခုထက်များလျှင် အမျိုးအစားတစ်ခုလျှင် ฿5,400 ဖြစ်သည်။",
+    "zh": "泰国知识产权厅的办事指南列出：申请每项 ฿1,000，同一类别最多 5 项；超过 5 项的类别为 ฿9,000。商标获准注册时，每项 ฿600；超过 5 项的类别为 ฿5,400。",
+    "de": "Der Leitfaden des thailändischen Amts für geistiges Eigentum nennt ฿1,000 je Position für die Anmeldung, für bis zu 5 Positionen in einer Klasse, und ฿9,000 für eine Klasse mit mehr als 5 Positionen. Wenn die Marke angenommen ist, betragen die Gebühren ฿600 je Position oder ฿5,400 für eine Klasse mit mehr als 5 Positionen."
+   },
+   "src": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  },
+  {
+   "q": {
+    "en": "How long does it take to register a trademark in Thailand?",
+    "th": "จดเครื่องหมายการค้าในไทยใช้เวลานานแค่ไหน",
+    "my": "ထိုင်းနိုင်ငံတွင် ကုန်အမှတ်တံဆိပ် မှတ်ပုံတင်ရန် ဘယ်လောက်ကြာသလဲ",
+    "zh": "在泰国注册商标要多久",
+    "de": "Wie lange dauert die Markeneintragung in Thailand?"
+   },
+   "a": {
+    "en": "The Department of Intellectual Property's guide lists 16 months in all. Examining the mark takes 6 months, the registrar's decision 5, preparing the announcement 2, and the public announcement runs 60 days.",
+    "th": "คู่มือของกรมทรัพย์สินทางปัญญาระบุระยะเวลารวม 16 เดือน ตรวจสอบเครื่องหมาย 6 เดือน นายทะเบียนพิจารณา 5 เดือน จัดทำรายละเอียดการประกาศ 2 เดือน และประกาศโฆษณา 60 วัน",
+    "my": "ထိုင်းဉာဏ်ပစ္စည်းဦးစီးဌာန၏ လမ်းညွှန်တွင် စုစုပေါင်း 16 လဟု ဖော်ပြထားသည်။ အမှတ်တံဆိပ်စစ်ဆေးရန် 6 လ၊ မှတ်ပုံတင်အရာရှိ၏ ဆုံးဖြတ်ချက်အတွက် 5 လ၊ ကြေညာချက်ပြင်ဆင်ရန် 2 လ ယူပြီး လူထုကြေညာချက်မှာ 60 ရက် ကြာသည်။",
+    "zh": "泰国知识产权厅的指南列出总共 16 个月：审查商标 6 个月，注册官作出决定 5 个月，准备公告 2 个月，公开公告为期 60 天。",
+    "de": "Der Leitfaden des thailändischen Amts für geistiges Eigentum nennt insgesamt 16 Monate. Die Prüfung der Marke dauert 6 Monate, die Entscheidung des Registerführers 5, die Vorbereitung der Bekanntmachung 2, und die öffentliche Bekanntmachung läuft 60 Tage."
+   },
+   "src": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  },
+  {
+   "q": {
+    "en": "How much do pictures for social media posts cost?",
+    "th": "ออกแบบภาพโพสต์โซเชียลราคาเท่าไหร่",
+    "my": "လူမှုကွန်ရက်ပို့စ်အတွက် ပုံများ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "做社交媒体帖子的图片要多少钱",
+    "de": "Was kosten Bilder für Social-Media-Beiträge?"
+   },
+   "a": {
+    "en": "One Fastwork designer with 465 orders lists a social media image at ฿1,000 (a jpg, 3 changes), a Facebook set of 4 at ฿2,550, and a set of 10 website banners at ฿6,990. Delivery runs 3 to 5 days.",
+    "th": "ดีไซเนอร์หนึ่งบน Fastwork ที่มี 465 ออเดอร์ลงภาพโซเชียลมีเดียไว้ที่ ฿1,000 (ไฟล์ jpg แก้ไขได้ 3 ครั้ง) ชุด Facebook 4 ชิ้น ฿2,550 และชุดแบนเนอร์เว็บไซต์ 10 ชิ้น ฿6,990 ส่งมอบใน 3 ถึง 5 วัน",
+    "my": "Fastwork ဒီဇိုင်နာတစ်ဦး (အော်ဒါ 465) က လူမှုကွန်ရက်ပုံကို ฿1,000 (jpg၊ ပြင်ဆင်မှု 3 ကြိမ်)၊ Facebook ပုံ 4 ပုံအစုံကို ฿2,550၊ ဝက်ဘ်ဆိုက်ဘန်နာ 10 ခုအစုံကို ฿6,990 ဖြင့် တင်ထားသည်။ ပို့ဆောင်ချိန်မှာ 3 ရက်မှ 5 ရက်ဖြစ်သည်။",
+    "zh": "Fastwork 上一位有 465 笔订单的设计师列出：一张社交媒体图片 ฿1,000（jpg，可改 3 次），4 张的 Facebook 套图 ฿2,550，10 张网站横幅 ฿6,990。交付需 3 至 5 天。",
+    "de": "Ein Fastwork-Designer mit 465 Bestellungen nennt ein Social-Media-Bild für ฿1,000 (ein JPG, 3 Änderungen), ein Facebook-Set mit 4 für ฿2,550 und ein Set mit 10 Website-Bannern für ฿6,990. Die Lieferung dauert 3 bis 5 Tage."
+   },
+   "src": "https://fastwork.co/user/eatwee/social-media-banner-35428969"
+  },
+  {
+   "q": {
+    "en": "How much does sign artwork cost?",
+    "th": "ออกแบบป้ายร้านราคาเท่าไหร่",
+    "my": "ဆိုင်းဘုတ်ဒီဇိုင်း ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "招牌图稿要多少钱",
+    "de": "Was kostet ein Schilder-Entwurf?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 95 orders lists sign design at ฿2,000 for a vinyl banner, sticker, roll-up or J-flag, and ฿3,000 for a cut-out or billboard sign. A price covers one design with up to 3 changes. Production is quoted apart.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ที่มี 95 ออเดอร์ลงงานออกแบบป้ายไว้ที่ ฿2,000 สำหรับไวนิล สติกเกอร์ โรลอัพ หรือธงญี่ปุ่น และ ฿3,000 สำหรับป้ายคัตเอาต์หรือบิลบอร์ด ราคานี้ครอบคลุมหนึ่งแบบ แก้ไขได้ไม่เกิน 3 ครั้ง ค่าผลิตแจ้งแยก",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (အော်ဒါ 95) က ဗိုင်နိုင်း၊ စတစ်ကာ၊ Roll-Up သို့မဟုတ် J-flag အတွက် ဆိုင်းဘုတ်ဒီဇိုင်းကို ฿2,000၊ Cutout သို့မဟုတ် Billboard ဆိုင်းဘုတ်အတွက် ฿3,000 ဖြင့် တင်ထားသည်။ ဈေးတစ်ခုတွင် ဒီဇိုင်းတစ်ခုနှင့် ပြင်ဆင်မှု 3 ကြိမ်အထိ ပါသည်။ ထုတ်လုပ်ခကို သီးခြားဈေးပေးသည်။",
+    "zh": "Fastwork 上一位有 95 笔订单的卖家列出：喷绘横幅、贴纸、易拉宝或日式旗的设计 ฿2,000，立体造型牌或大型广告牌 ฿3,000。每个价格含一个设计，最多修改 3 次。制作费另报价。",
+    "de": "Ein Fastwork-Anbieter mit 95 Bestellungen nennt für den Entwurf eines Vinylbanners, Aufklebers, Roll-ups oder einer J-Flag ฿2,000 und für ein ausgeschnittenes Schild oder eine Plakatwand ฿3,000. Ein Preis gilt für einen Entwurf mit bis zu 3 Änderungen. Die Herstellung wird gesondert angeboten."
+   },
+   "src": "https://fastwork.co/user/kfidea/sign-printing-55119290"
+  }
+ ],
+ "related": [
+  "social",
+  "interactive",
+  "patterns",
+  "trade-photos",
+  "site",
+  "fb-care"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Intellectual Property: trademark registration service guide",
+    "th": "กรมทรัพย์สินทางปัญญา: คู่มือการให้บริการจดทะเบียนเครื่องหมายการค้า",
+    "my": "ထိုင်းဉာဏ်ပစ္စည်းဦးစီးဌာန - ကုန်အမှတ်တံဆိပ်မှတ်ပုံတင် ဝန်ဆောင်မှုလမ်းညွှန်",
+    "zh": "泰国知识产权厅：商标注册办事指南",
+    "de": "Amt für geistiges Eigentum: Leitfaden zur Markeneintragung"
+   },
+   "href": "https://webnew.ipthailand.go.th/wp-content/uploads/2026/05/1.TM_CitizenGuide.pdf"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a logo listing with its packages and files",
+    "th": "Fastwork: รายการออกแบบโลโก้พร้อมแพ็กเกจและไฟล์",
+    "my": "Fastwork - ပက်ကေ့ချ်နှင့် ဖိုင်များပါသော လိုဂိုဒီဇိုင်း စာရင်း",
+    "zh": "Fastwork：附套餐和文件的标志设计商品页",
+    "de": "Fastwork: ein Logo-Angebot mit Paketen und Dateien"
+   },
+   "href": "https://fastwork.co/user/paitoon148/logo-design-49939124"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a sign design listing",
+    "th": "Fastwork: รายการออกแบบป้าย",
+    "my": "Fastwork - ဆိုင်းဘုတ်ဒီဇိုင်း စာရင်း",
+    "zh": "Fastwork：招牌设计商品页",
+    "de": "Fastwork: ein Angebot für Schilder-Entwürfe"
+   },
+   "href": "https://fastwork.co/user/kfidea/sign-printing-55119290"
+  },
+  {
+   "t": {
+    "en": "iprint ido: file types for printing (LINE FAQ)",
+    "th": "iprint ido: ไฟล์ที่ใช้พิมพ์ (คำถามที่พบบ่อยบน LINE)",
+    "my": "iprint ido - ပုံနှိပ်ရန် ဖိုင်အမျိုးအစားများ (LINE မေးလေ့ရှိသောမေးခွန်းများ)",
+    "zh": "iprint ido：印刷用文件类型（LINE 常见问题）",
+    "de": "iprint ido: Dateitypen für den Druck (LINE-FAQ)"
+   },
+   "href": "https://page.line.me/eng2799i/faq/1874422122264012"
+  }
+ ],
+ "glyphs": [
+  "pencil",
+  "sparkle",
+  "flag"
+ ]
+}

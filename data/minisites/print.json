@@ -1,0 +1,319 @@
+{
+ "id": "print",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A print shop works from a file, and the file fixes the size, the text and the QR code on the sign.",
+  "th": "ร้านพิมพ์ทำงานจากไฟล์ และไฟล์กำหนดขนาด ข้อความ และคิวอาร์โค้ดบนป้าย",
+  "my": "ပုံနှိပ်ဆိုင်သည် ဖိုင်မှ အလုပ်လုပ်ပြီး ဆိုင်းဘုတ်ပေါ်ရှိ အရွယ်အစား၊ စာသားနှင့် QR ကုဒ်ကို ဖိုင်က သတ်မှတ်သည်။",
+  "zh": "印刷店按文件印刷，招牌的尺寸、文字和二维码都由文件决定。",
+  "de": "Eine Druckerei arbeitet nach einer Datei, und die Datei legt Grösse, Text und QR-Code auf dem Schild fest."
+ },
+ "n": {
+  "de": "Schilder und QR-Ständer zum Drucken"
+ },
+ "l": {
+  "de": "Tischschilder, QR-Ständer, Preistafeln, Handzettel."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You say what each sign, stand, board or sheet shows.",
+    "th": "คุณบอกว่าป้าย ป้ายคิวอาร์ ป้ายราคา หรือใบปลิวแต่ละชิ้นต้องมีอะไร",
+    "my": "ဆိုင်းဘုတ်၊ QR စင်၊ ဈေးနှုန်းဘုတ် သို့မဟုတ် စာရွက်တစ်ခုစီတွင် ဘာပါရမည်ကို သင်ပြောသည်။",
+    "zh": "您说明每块牌、立牌、价目板或单页要放什么。",
+    "de": "Sie sagen, was jedes Schild, jeder Ständer, jede Tafel und jedes Blatt zeigt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "typewriter",
+   "t": {
+    "en": "The sign, stand, board or sheet is set up as a file ready to print.",
+    "th": "จัดป้ายนั้นเป็นไฟล์พร้อมพิมพ์",
+    "my": "ဆိုင်းဘုတ်၊ စင်၊ ဘုတ် သို့မဟုတ် စာရွက်ကို ပုံနှိပ်ရန်အဆင်သင့် ဖိုင်အဖြစ် ပြင်ဆင်သည်။",
+    "zh": "把牌、立牌、价目板或单页排成可直接印刷的文件。",
+    "de": "Schild, Ständer, Tafel oder Blatt wird als druckfertige Datei aufgebaut."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per sign, stand, board or sheet",
+    "th": "ต่อป้าย ป้ายคิวอาร์ ป้ายราคา หรือใบปลิวหนึ่งชิ้น",
+    "my": "ဆိုင်းဘုတ်၊ စင်၊ ဘုတ် သို့မဟုတ် စာရွက်တစ်ခုလျှင်",
+    "zh": "每块牌、立牌、价目板或单页",
+    "de": "Je Schild, Ständer, Tafel oder Blatt"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The print file comes back to you.",
+    "th": "ส่งไฟล์พร้อมพิมพ์กลับให้คุณ",
+    "my": "ပုံနှိပ်ရန်ဖိုင်ကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "把可印刷的文件交还给您。",
+    "de": "Die Druckdatei geht an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When it is done",
+    "th": "เมื่อทำเสร็จ",
+    "my": "ပြီးသည့်အခါ",
+    "zh": "完成时",
+    "de": "Wenn sie fertig ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Gogoprint's table tent comes in two sizes, 23 × 13 cm across and 13 × 23 cm upright, on 260 or 300 gsm (grams per square metre) art card, glossy or matte.",
+    "th": "ป้ายตั้งโต๊ะของ Gogoprint มีสองขนาด คือแนวนอน 23 x 13 ซม. และแนวตั้ง 13 x 23 ซม. พิมพ์บนกระดาษอาร์ตการ์ด 260 หรือ 300 แกรม (gsm คือกรัมต่อตารางเมตร) แบบมันหรือด้าน",
+    "my": "Gogoprint ၏ စားပွဲဆိုင်းဘုတ် (table tent) သည် အရွယ်နှစ်မျိုးရှိသည် — အလျားလိုက် 23 x 13 စင်တီမီတာနှင့် ဒေါင်လိုက် 13 x 23 စင်တီမီတာ။ 260 သို့မဟုတ် 300 gsm (စတုရန်းမီတာလျှင် ဂရမ်) အာ့ကတ်ပေါ်တွင် အရောင်တောက် သို့မဟုတ် မှိန်ဖြင့် ပုံနှိပ်သည်။",
+    "zh": "Gogoprint 的桌牌有两种尺寸：横版 23 x 13 厘米，竖版 13 x 23 厘米，用 260 或 300 gsm（每平方米克重）铜版卡纸，亮面或哑面。",
+    "de": "Den Tischaufsteller von Gogoprint gibt es in zwei Grössen, quer 23 x 13 cm und hoch 13 x 23 cm, auf Kunstdruckkarton mit 260 oder 300 gsm (Gramm pro Quadratmeter), glänzend oder matt."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "t": {
+    "en": "Gogoprint's table tent page says uploading a print-ready PDF is free, and a file in another format, such as JPEG, PNG, PSD or AI, adds a ฿50 conversion fee. Its design service starts from ฿200.",
+    "th": "หน้าป้ายตั้งโต๊ะของ Gogoprint ระบุว่าอัปโหลดไฟล์ PDF พร้อมพิมพ์ฟรี ส่วนไฟล์ชนิดอื่น เช่น JPEG PNG PSD หรือ AI มีค่าแปลงไฟล์ ฿50 และบริการออกแบบเริ่มที่ ฿200",
+    "my": "Gogoprint ၏ table tent စာမျက်နှာတွင် ပုံနှိပ်ရန်အဆင်သင့် PDF ဖိုင် တင်ခြင်းမှာ အခမဲ့ဖြစ်ပြီး JPEG၊ PNG၊ PSD သို့မဟုတ် AI ကဲ့သို့ အခြားပုံစံဖိုင်အတွက် ဖိုင်ပြောင်းခ ฿50 ထပ်တိုးသည်ဟု ဆိုသည်။ ၎င်း၏ ဒီဇိုင်းဝန်ဆောင်မှုသည် ฿200 မှ စသည်။",
+    "zh": "Gogoprint 桌牌页面写明，上传可直接印刷的 PDF 免费；JPEG、PNG、PSD 或 AI 等其他格式加收 ฿50 转换费。其设计服务 ฿200 起。",
+    "de": "Auf der Tischaufsteller-Seite von Gogoprint steht, dass das Hochladen einer druckfertigen PDF-Datei gratis ist. Eine Datei in einem anderen Format, etwa JPEG, PNG, PSD oder AI, kostet ฿50 Umwandlungsgebühr. Der Designservice beginnt bei ฿200."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "t": {
+    "en": "The website qrcode.com says a QR Code needs a margin around it, and that module size (one square dot of the code) depends on the printer and the reading device. It says distorted or decorated codes may not scan.",
+    "th": "เว็บไซต์ qrcode.com ระบุว่าต้องเว้นขอบรอบคิวอาร์โค้ด และขนาดโมดูล (จุดสี่เหลี่ยมหนึ่งจุดของโค้ด) ขึ้นกับเครื่องพิมพ์และอุปกรณ์ที่อ่าน และระบุว่าโค้ดที่บิดเบี้ยวหรือตกแต่งอาจสแกนไม่ได้",
+    "my": "qrcode.com ဝက်ဘ်ဆိုက်က QR ကုဒ်ပတ်လည်တွင် အနားသတ်လွတ် လိုအပ်ပြီး module အရွယ် (ကုဒ်၏ လေးထောင့်အစက်တစ်စက်) သည် ပုံနှိပ်စက်နှင့် ဖတ်သည့်ကိရိယာအပေါ် မူတည်သည်ဟု ဆိုသည်။ ပုံပျက်သော သို့မဟုတ် အလှဆင်ထားသော ကုဒ်များကို စကင်ဖတ်၍ မရနိုင်ဟုလည်း ဆိုသည်။",
+    "zh": "二维码官网 qrcode.com 写明，二维码四周需要留白；模块（二维码里的一个小方块）的大小取决于打印机和读码设备。变形或加了装饰的码可能扫不出来。",
+    "de": "Die Website qrcode.com schreibt, dass um einen QR-Code ein Rand nötig ist und dass die Modulgrösse (ein Quadrat des Codes) vom Drucker und vom Lesegerät abhängt. Verzerrte oder verzierte Codes lassen sich möglicherweise nicht scannen."
+   },
+   "src": "https://www.qrcode.com/en/howto/generate.html"
+  },
+  {
+   "t": {
+    "en": "In February 2024 the Department of Internal Trade told vendors to post clear signs showing the quantity and price of products. Street-market food stalls and made-to-order restaurants were the main targets.",
+    "th": "เดือนกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ค้าให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน โดยเน้นร้านอาหารในตลาดนัดและร้านอาหารตามสั่ง",
+    "my": "2024 ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက ကုန်ပစ္စည်းအရေအတွက်နှင့် ဈေးနှုန်းကို ရှင်းရှင်းလင်းလင်း ဆိုင်းဘုတ်တင်ပြရန် ရောင်းချသူများကို ညွှန်ကြားခဲ့သည်။ ဈေးတန်းရှိ အစားအစာဆိုင်များနှင့် မှာတိုင်းချက်ဆိုင်များကို အဓိကထားသည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求商家清楚张贴商品数量和价格的牌子，主要针对街市里的小吃摊和点餐小馆。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade die Händler auf, Schilder mit Menge und Preis der Waren deutlich anzubringen. Genannt wurden vor allem Essensstände auf Strassenmärkten und Restaurants, die auf Bestellung kochen."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "t": {
+    "en": "Gogoprint's vinyl banner is outdoor vinyl at 360 gsm, printed on one side, in preset sizes from 30 × 90 cm to 100 × 400 cm, with hemming only or hemming with eyelets.",
+    "th": "ป้ายไวนิลของ Gogoprint เป็นไวนิลกลางแจ้ง 360 แกรม พิมพ์ด้านหน้าด้านเดียว มีขนาดสำเร็จรูปตั้งแต่ 30 x 90 ซม. ถึง 100 x 400 ซม. และเลือกเย็บขอบอย่างเดียวหรือเย็บขอบพร้อมตาไก่",
+    "my": "Gogoprint ၏ vinyl banner သည် 360 gsm ပြင်ပသုံး vinyl ဖြစ်ပြီး တစ်ဖက်တည်း ပုံနှိပ်သည်။ အသင့်အရွယ်အစားများမှာ 30 x 90 စင်တီမီတာမှ 100 x 400 စင်တီမီတာအထိ ရှိပြီး အနားချုပ်သာ သို့မဟုတ် အနားချုပ်နှင့် ကွင်း (eyelet) ပါသည်။",
+    "zh": "Gogoprint 的喷绘布（vinyl banner）是 360 gsm 户外用乙烯基布，单面印刷，预设尺寸从 30 × 90 厘米到 100 × 400 厘米，可只锁边，或锁边加打孔环。",
+    "de": "Das Vinylbanner von Gogoprint besteht aus Outdoor-Vinyl mit 360 gsm, wird einseitig bedruckt, gibt es in festen Grössen von 30 × 90 cm bis 100 × 400 cm und hat nur einen Saum oder einen Saum mit Ösen."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Table tents printed, 23 × 13 cm (Gogoprint)",
+    "th": "ป้ายตั้งโต๊ะ 23 x 13 ซม. พิมพ์ (Gogoprint)",
+    "my": "စားပွဲဆိုင်းဘုတ် (table tent) 23 x 13 စင်တီမီတာ ပုံနှိပ်ခြင်း (Gogoprint)",
+    "zh": "印刷桌牌 23 × 13 厘米（Gogoprint）",
+    "de": "Tischaufsteller gedruckt, 23 × 13 cm (Gogoprint)"
+   },
+   "p": {
+    "en": "฿2,225 for 100; ฿14,600 for 1,000",
+    "th": "฿2,225 ต่อ 100 ชิ้น ฿14,600 ต่อ 1,000 ชิ้น",
+    "my": "100 ခုလျှင် ฿2,225၊ 1,000 ခုလျှင် ฿14,600",
+    "zh": "100 张 ฿2,225；1,000 张 ฿14,600",
+    "de": "฿2,225 für 100; ฿14,600 für 1,000"
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "t": {
+    "en": "Vinyl banner (Gogoprint), the listed starting price",
+    "th": "ป้ายไวนิล (Gogoprint) ราคาเริ่มต้นที่ระบุ",
+    "my": "Vinyl banner (Gogoprint)၊ စာရင်းပါ စတင်ဈေး",
+    "zh": "喷绘布横幅（Gogoprint），挂牌起步价",
+    "de": "Vinylbanner (Gogoprint), der angegebene Einstiegspreis"
+   },
+   "p": {
+    "en": "From ฿200 a piece",
+    "th": "เริ่ม ฿200 ต่อชิ้น",
+    "my": "တစ်ခု ฿200 မှစ၍",
+    "zh": "每张 ฿200 起",
+    "de": "Ab ฿200 pro Stück"
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5.html"
+  },
+  {
+   "t": {
+    "en": "Design service (Gogoprint)",
+    "th": "บริการออกแบบ (Gogoprint)",
+    "my": "ဒီဇိုင်းဝန်ဆောင်မှု (Gogoprint)",
+    "zh": "设计服务（Gogoprint）",
+    "de": "Designservice (Gogoprint)"
+   },
+   "p": {
+    "en": "From ฿200",
+    "th": "เริ่ม ฿200",
+    "my": "฿200 မှစ၍",
+    "zh": "฿200 起",
+    "de": "Ab ฿200"
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a QR table sign cost to print?",
+    "th": "ป้ายคิวอาร์ตั้งโต๊ะพิมพ์ราคาเท่าไร",
+    "my": "QR စားပွဲဆိုင်းဘုတ် ပုံနှိပ်ခ ဘယ်လောက်လဲ။",
+    "zh": "打印二维码桌牌多少钱？",
+    "de": "Was kostet es, ein QR-Tischschild drucken zu lassen?"
+   },
+   "a": {
+    "en": "Gogoprint lists table tents of 23 × 13 cm at ฿2,225 for 100 (฿22.25 each), ฿9,670 for 500 and ฿14,600 for 1,000.",
+    "th": "Gogoprint ระบุป้ายตั้งโต๊ะ 23 x 13 ซม. ราคา ฿2,225 ต่อ 100 ชิ้น (ชิ้นละ ฿22.25) ฿9,670 ต่อ 500 ชิ้น และ ฿14,600 ต่อ 1,000 ชิ้น",
+    "my": "Gogoprint တွင် 23 x 13 စင်တီမီတာ စားပွဲဆိုင်းဘုတ် 100 ခုလျှင် ฿2,225 (တစ်ခု ฿22.25)၊ 500 ခုလျှင် ฿9,670 နှင့် 1,000 ခုလျှင် ฿14,600 ဟု ဖော်ပြထားသည်။",
+    "zh": "Gogoprint 列出 23 × 13 厘米桌牌：100 张 ฿2,225（每张 ฿22.25），500 张 ฿9,670，1,000 张 ฿14,600。",
+    "de": "Gogoprint führt Tischaufsteller von 23 × 13 cm mit ฿2,225 für 100 (฿22.25 pro Stück), ฿9,670 für 500 und ฿14,600 für 1,000 auf."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "q": {
+    "en": "What size is a table tent?",
+    "th": "ป้ายตั้งโต๊ะมีขนาดเท่าไร",
+    "my": "စားပွဲဆိုင်းဘုတ် (table tent) အရွယ်အစား ဘယ်လောက်လဲ။",
+    "zh": "桌牌有多大？",
+    "de": "Wie gross ist ein Tischaufsteller?"
+   },
+   "a": {
+    "en": "Gogoprint's table tent is 23 × 13 cm across, its popular size, or 13 × 23 cm upright. The paper is 260 or 300 gsm art card.",
+    "th": "ป้ายตั้งโต๊ะของ Gogoprint มีแนวนอน 23 x 13 ซม. ซึ่งเป็นขนาดยอดนิยม หรือแนวตั้ง 13 x 23 ซม. กระดาษเป็นอาร์ตการ์ด 260 หรือ 300 แกรม",
+    "my": "Gogoprint ၏ စားပွဲဆိုင်းဘုတ်သည် လူကြိုက်များသော အလျားလိုက် 23 x 13 စင်တီမီတာ သို့မဟုတ် ဒေါင်လိုက် 13 x 23 စင်တီမီတာ ဖြစ်သည်။ စက္ကူမှာ 260 သို့မဟုတ် 300 gsm အာ့ကတ် ဖြစ်သည်။",
+    "zh": "Gogoprint 的桌牌有横版 23 × 13 厘米（热门尺寸）和竖版 13 × 23 厘米。纸张为 260 或 300 gsm 铜版卡纸。",
+    "de": "Der Tischaufsteller von Gogoprint misst quer 23 × 13 cm, die beliebte Grösse, oder hoch 13 × 23 cm. Das Papier ist Kunstdruckkarton mit 260 oder 300 gsm."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "q": {
+    "en": "Does a QR code need a margin around it?",
+    "th": "คิวอาร์โค้ดต้องเว้นขอบรอบไหม",
+    "my": "QR ကုဒ်ပတ်လည်တွင် အနားသတ်လွတ် လိုသလား။",
+    "zh": "二维码四周需要留白吗？",
+    "de": "Braucht ein QR-Code einen Rand?"
+   },
+   "a": {
+    "en": "Yes. The website qrcode.com says a margin is required around a QR Code. It does not give a width on that page, and it says the module size depends on the printer and the reading device.",
+    "th": "ต้องเว้น เว็บไซต์ qrcode.com ระบุว่าต้องมีขอบรอบคิวอาร์โค้ด แต่หน้านั้นไม่ได้ระบุความกว้าง และระบุว่าขนาดโมดูลขึ้นกับเครื่องพิมพ์และอุปกรณ์ที่อ่าน",
+    "my": "လိုသည်။ qrcode.com ဝက်ဘ်ဆိုက်က QR ကုဒ်ပတ်လည်တွင် အနားသတ်လွတ် လိုအပ်သည်ဟု ဆိုသည်။ ထိုစာမျက်နှာတွင် အကျယ်ကို မဖော်ပြထားဘဲ module အရွယ်သည် ပုံနှိပ်စက်နှင့် ဖတ်သည့်ကိရိယာအပေါ် မူတည်သည်ဟု ဆိုသည်။",
+    "zh": "要。qrcode.com 写明二维码四周需要留白，该页面没有给出宽度，并写明模块大小取决于打印机和读码设备。",
+    "de": "Ja. Die Website qrcode.com sagt, dass um einen QR-Code ein Rand nötig ist. Eine Breite nennt die Seite nicht, und sie sagt, die Modulgrösse hänge vom Drucker und vom Lesegerät ab."
+   },
+   "src": "https://www.qrcode.com/en/howto/generate.html"
+  },
+  {
+   "q": {
+    "en": "Must a stall show its prices on a sign?",
+    "th": "แผงต้องติดป้ายราคาไหม",
+    "my": "ဈေးဆိုင်က ဈေးနှုန်းကို ဆိုင်းဘုတ်တင်ပြရမလား။",
+    "zh": "摊位必须张贴价目牌吗？",
+    "de": "Muss ein Stand seine Preise auf einem Schild zeigen?"
+   },
+   "a": {
+    "en": "In February 2024 the Department of Internal Trade told vendors to post clear signs with the quantity and price of products, and named street-market food stalls and made-to-order restaurants as the main targets.",
+    "th": "เดือนกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ค้าให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน โดยเน้นร้านอาหารในตลาดนัดและร้านอาหารตามสั่ง",
+    "my": "2024 ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက ကုန်ပစ္စည်းအရေအတွက်နှင့် ဈေးနှုန်းကို ရှင်းရှင်းလင်းလင်း ဆိုင်းဘုတ်တင်ပြရန် ရောင်းချသူများကို ညွှန်ကြားခဲ့ပြီး ဈေးတန်းရှိ အစားအစာဆိုင်များနှင့် မှာတိုင်းချက်ဆိုင်များကို အဓိကထားသည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求商家清楚张贴商品数量和价格的牌子，并点名街市里的小吃摊和点餐小馆为主要对象。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade die Händler auf, Schilder mit Menge und Preis der Waren deutlich anzubringen, und nannte Essensstände auf Strassenmärkten und Restaurants, die auf Bestellung kochen, als Hauptziel."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "q": {
+    "en": "What file does a print shop take?",
+    "th": "ร้านพิมพ์รับไฟล์แบบไหน",
+    "my": "ပုံနှိပ်ဆိုင်က ဘယ်လိုဖိုင်ကို လက်ခံသလဲ။",
+    "zh": "印刷店收什么文件？",
+    "de": "Welche Datei nimmt eine Druckerei an?"
+   },
+   "a": {
+    "en": "On Gogoprint, a print-ready PDF uploads free. A JPEG, PNG, PSD or AI file adds a ฿50 conversion fee, and the design service starts from ฿200.",
+    "th": "ที่ Gogoprint ไฟล์ PDF พร้อมพิมพ์อัปโหลดฟรี ไฟล์ JPEG PNG PSD หรือ AI มีค่าแปลงไฟล์ ฿50 และบริการออกแบบเริ่มที่ ฿200",
+    "my": "Gogoprint တွင် ပုံနှိပ်ရန်အဆင်သင့် PDF ဖိုင်ကို အခမဲ့ တင်နိုင်သည်။ JPEG၊ PNG၊ PSD သို့မဟုတ် AI ဖိုင်အတွက် ဖိုင်ပြောင်းခ ฿50 ထပ်တိုးပြီး ဒီဇိုင်းဝန်ဆောင်မှုသည် ฿200 မှ စသည်။",
+    "zh": "在 Gogoprint，可直接印刷的 PDF 免费上传；JPEG、PNG、PSD 或 AI 文件加收 ฿50 转换费，设计服务 ฿200 起。",
+    "de": "Bei Gogoprint lässt sich eine druckfertige PDF-Datei gratis hochladen. Eine JPEG-, PNG-, PSD- oder AI-Datei kostet ฿50 Umwandlungsgebühr, und der Designservice beginnt bei ฿200."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  }
+ ],
+ "related": [
+  "signs",
+  "stall-page",
+  "paybox",
+  "trade-photos",
+  "graphics",
+  "grab"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Gogoprint: table tents, sizes and prices",
+    "th": "Gogoprint: ป้ายตั้งโต๊ะ ขนาดและราคา",
+    "my": "Gogoprint: စားပွဲဆိုင်းဘုတ်များ၊ အရွယ်အစားနှင့် ဈေးနှုန်း",
+    "zh": "Gogoprint：桌牌的尺寸和价格",
+    "de": "Gogoprint: Tischaufsteller, Grössen und Preise"
+   },
+   "href": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "t": {
+    "en": "qrcode.com: making a QR Code",
+    "th": "qrcode.com: การสร้างคิวอาร์โค้ด",
+    "my": "qrcode.com: QR ကုဒ် ပြုလုပ်ခြင်း",
+    "zh": "qrcode.com：制作二维码",
+    "de": "qrcode.com: einen QR-Code erstellen"
+   },
+   "href": "https://www.qrcode.com/en/howto/generate.html"
+  }
+ ],
+ "glyphs": [
+  "page",
+  "scan",
+  "typewriter"
+ ]
+}

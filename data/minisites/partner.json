@@ -1,0 +1,319 @@
+{
+ "id": "partner",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A seller who ships crafts and small parcels out of Thailand needs an agreement with a shipping partner, a product list with tariff codes, and carrier accounts.",
+  "th": "ผู้ขายงานฝีมือและพัสดุเล็กที่ส่งของออกจากไทยต้องมีข้อตกลงกับพาร์ทเนอร์ขนส่ง รายการสินค้าพร้อมพิกัดศุลกากร และบัญชีขนส่ง",
+  "my": "လက်မှုပစ္စည်းနှင့် ပါဆယ်ငယ်များကို ထိုင်းမှ ပို့သည့် ရောင်းသူသည် ပို့ဆောင်ရေးမိတ်ဖက်နှင့် သဘောတူညီချက်၊ အကောက်ခွန်ကုဒ်ပါသော ကုန်စာရင်းနှင့် ကူရီယာအကောင့်များ လိုအပ်သည်။",
+  "zh": "从泰国寄出手工艺品和小包裹的卖家，需要与发货合作伙伴签协议、做带关税编码的商品清单，并开通快递账户。",
+  "de": "Wer Kunsthandwerk und kleine Pakete aus Thailand versendet, braucht eine Vereinbarung mit einem Versandpartner, eine Produktliste mit Zolltarifnummern und Kurierkonten."
+ },
+ "n": {
+  "de": "Versandpartner werden"
+ },
+ "l": {
+  "de": "Vereinbarung, Produktliste, Papiere und Kurierkonten."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "We write the agreement with you.",
+    "th": "เขียนข้อตกลงร่วมกับคุณ",
+    "my": "သင်နှင့်အတူ သဘောတူညီချက်ကို ရေးဆွဲသည်။",
+    "zh": "与您一起拟定协议。",
+    "de": "Wir setzen die Vereinbarung mit Ihnen auf."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "We list your products with their tariff codes and write the packing spec.",
+    "th": "ทำรายการสินค้าพร้อมพิกัดศุลกากร และเขียนมาตรฐานการแพ็ก",
+    "my": "သင့်ကုန်ပစ္စည်းများကို အကောက်ခွန်ကုဒ်များနှင့်တကွ စာရင်းပြုစုပြီး ထုပ်ပိုးမှုစံနှုန်းကို ရေးသားသည်။",
+    "zh": "列出商品及其关税编码，并写好包装规格。",
+    "de": "Wir listen Ihre Produkte mit ihren Zolltarifnummern auf und schreiben die Verpackungsvorgabe."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the agreement",
+    "th": "หลังตกลง",
+    "my": "သဘောတူပြီးနောက်",
+    "zh": "协议之后",
+    "de": "Nach der Vereinbarung"
+   }
+  },
+  {
+   "db": "parcel",
+   "t": {
+    "en": "We prepare export paperwork templates and set up the carrier accounts.",
+    "th": "เตรียมแม่แบบเอกสารส่งออกและตั้งบัญชีขนส่ง",
+    "my": "ပို့ကုန်စာရွက်စာတမ်း ပုံစံများ ပြင်ဆင်ပြီး ကူရီယာအကောင့်များ ဖွင့်ပေးသည်။",
+    "zh": "准备出口文件模板，并开好快递账户。",
+    "de": "Wir bereiten Vorlagen für die Exportpapiere vor und richten die Kurierkonten ein."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the first parcel",
+    "th": "ก่อนพัสดุแรก",
+    "my": "ပထမပါဆယ်မပို့မီ",
+    "zh": "第一个包裹之前",
+    "de": "Vor dem ersten Paket"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "From 1 January 2026, Thailand ends its ฿1,500 duty-free limit on goods bought online from abroad. Duty is charged on top of the 7% VAT.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 ไทยยกเลิกเพดานปลอดอากร ฿1,500 สำหรับสินค้าที่ซื้อออนไลน์จากต่างประเทศ โดยเสียอากรเพิ่มจากภาษีมูลค่าเพิ่ม 7%",
+    "my": "2026 ဇန်နဝါရီ 1 မှစ၍ ထိုင်းက ပြည်ပမှ အွန်လိုင်းဝယ်သည့် ကုန်ပစ္စည်းများအတွက် အခွန်ကင်းလွတ်ခွင့် ฿1,500 ကန့်သတ်ချက်ကို ရုပ်သိမ်းသည်။ VAT 7% အပြင် အကောက်ခွန် ထပ်ကောက်သည်။",
+    "zh": "自 2026 年 1 月 1 日起，泰国取消网购进口货物 ฿1,500 的免税额度，在 7% 增值税之外另征关税。",
+    "de": "Seit 1. Januar 2026 hebt Thailand die Zollfreigrenze von ฿1,500 für online im Ausland gekaufte Waren auf. Der Zoll kommt zur Mehrwertsteuer von 7 % hinzu."
+   },
+   "src": "https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/thailand-e-commerce-import-duty-2026"
+  },
+  {
+   "t": {
+    "en": "From 29 August 2025, goods worth US$800 or less from all countries lose duty-free de minimis entry into the United States and pay duties, taxes and fees.",
+    "th": "ตั้งแต่ 29 สิงหาคม 2568 สินค้ามูลค่าไม่เกิน US$800 จากทุกประเทศไม่ได้รับสิทธิ์นำเข้าสหรัฐฯ แบบ de minimis ปลอดอากรอีกต่อไป และต้องเสียอากร ภาษี และค่าธรรมเนียม",
+    "my": "2025 သြဂုတ် 29 မှစ၍ နိုင်ငံအားလုံးမှ တန်ဖိုး US$800 နှင့်အောက် ကုန်ပစ္စည်းများသည် အမေရိကန်သို့ de minimis အခွန်ကင်းဝင်ခွင့် ဆုံးရှုံးပြီး အကောက်ခွန်၊ အခွန်နှင့် ကြေးများ ပေးရသည်။",
+    "zh": "自 2025 年 8 月 29 日起，所有国家价值 US$800 及以下的货物不再享受美国 de minimis 免税入境，须缴关税、税款和费用。",
+    "de": "Seit 29. August 2025 verlieren Waren aus allen Ländern im Wert von US$800 oder weniger die zollfreie De-minimis-Einfuhr in die USA und unterliegen Zöllen, Steuern und Gebühren."
+   },
+   "src": "https://www.cbp.gov/sites/default/files/2025-08/factsheet_suspension_of_duty-free_de_minimis_treatment.pdf"
+  },
+  {
+   "t": {
+    "en": "Don Mueang Airport's customs page lists Buddha images, art objects and antiques as restricted goods that need a Fine Arts Department permit, shown at Customs. Food, medicine and cosmetics need a permit from the FDA.",
+    "th": "หน้าศุลกากรของท่าอากาศยานดอนเมืองระบุว่าพระพุทธรูป วัตถุศิลปะ และโบราณวัตถุเป็นสินค้าควบคุมที่ต้องมีใบอนุญาตจากกรมศิลปากร และต้องแสดงต่อศุลกากร อาหาร ยา และเครื่องสำอางต้องมีใบอนุญาตจาก อย.",
+    "my": "ဒွန်မွေ့ဝေဘာ လေဆိပ်၏ အကောက်ခွန်စာမျက်နှာတွင် ဗုဒ္ဓရုပ်ပွားများ၊ အနုပညာပစ္စည်းများနှင့် ရှေးဟောင်းပစ္စည်းများကို Fine Arts Department ခွင့်ပြုချက်လိုသော ကန့်သတ်ကုန်များအဖြစ် ဖော်ပြထားပြီး ခွင့်ပြုချက်ကို အကောက်ခွန်တွင် ပြသရသည်။ အစားအစာ၊ ဆေးဝါးနှင့် အလှကုန်များအတွက် FDA ခွင့်ပြုချက် လိုသည်။",
+    "zh": "廊曼机场海关页面把佛像、艺术品和古董列为受限货物，须持艺术厅许可，并在海关出示。食品、药品和化妆品需药监局（FDA）许可。",
+    "de": "Die Zollseite des Flughafens Don Mueang führt Buddha-Figuren, Kunstgegenstände und Antiquitäten als beschränkte Waren auf, die eine Genehmigung des Fine Arts Department brauchen und beim Zoll vorgezeigt werden. Lebensmittel, Medikamente und Kosmetika brauchen eine Genehmigung der FDA."
+   },
+   "src": "https://donmueang.airportthai.co.th/service/airport-guide/detail/Restricted_and_Prohibited_Items_DMK"
+  },
+  {
+   "t": {
+    "en": "For general goods leaving Thailand by land, Thai Customs asks for an electronic export declaration, an invoice and a packing list, plus a permit if the goods are controlled. A customs broker can file for the exporter.",
+    "th": "สำหรับสินค้าทั่วไปที่ส่งออกทางบก ศุลกากรให้ยื่นใบขนสินค้าขาออกทางอิเล็กทรอนิกส์ พร้อมบัญชีราคาสินค้าและบัญชีรายละเอียดบรรจุหีบห่อ และใบอนุญาตหากเป็นสินค้าควบคุม ตัวแทนออกของสามารถยื่นแทนผู้ส่งออกได้",
+    "my": "ထိုင်းမှ ကုန်းလမ်းဖြင့် ထွက်သည့် ယေဘုယျကုန်ပစ္စည်းများအတွက် ထိုင်းအကောက်ခွန်က အီလက်ထရောနစ် ပို့ကုန်ကြေငြာစာ၊ ငွေတောင်းခံလွှာနှင့် ထုပ်ပိုးစာရင်း၊ ထိန်းချုပ်ကုန်ဖြစ်လျှင် ခွင့်ပြုချက်ကို တောင်းသည်။ အကောက်ခွန်ပွဲစားက ပို့ကုန်သည်ကိုယ်စား တင်သွင်းနိုင်သည်။",
+    "zh": "对经陆路出境的一般货物，泰国海关要求电子出口报关单、发票和装箱单，受管制货物另需许可证。报关行可代出口商申报。",
+    "de": "Für allgemeine Waren, die Thailand auf dem Landweg verlassen, verlangt der thailändische Zoll eine elektronische Ausfuhrdeklaration, eine Rechnung und eine Packliste, bei kontrollierten Waren zusätzlich eine Genehmigung. Ein Zollagent kann für den Exporteur anmelden."
+   },
+   "src": "https://www.customs.go.th/cont_strc_simple.php?xleft_menu=menu_business_160421_02_160421_02_160914_01&ini_menu=menu_business_160421_02&ini_content=business_160426_02_160914_02_160914_01&root_left_menu=menu_business_160421_02_160421_02&lang=th&left_menu=menu_business_160421_02_160421_02"
+  },
+  {
+   "t": {
+    "en": "Flash Fulfillment runs five warehouses in Bangkok with 50,000 m². It ships with Flash Express and connects to Shopee, TikTok Shop, Lazada and Tokopedia. Prices are given on request.",
+    "th": "Flash Fulfillment มีคลังสินค้าห้าแห่งในกรุงเทพฯ รวม 50,000 ตร.ม. ส่งผ่าน Flash Express และเชื่อมกับ Shopee, TikTok Shop, Lazada และ Tokopedia ราคาแจ้งเมื่อสอบถาม",
+    "my": "Flash Fulfillment တွင် ဘန်ကောက်၌ ဂိုဒေါင်ငါးခု စုစုပေါင်း စတုရန်းမီတာ 50,000 ရှိသည်။ Flash Express ဖြင့် ပို့ပြီး Shopee၊ TikTok Shop၊ Lazada နှင့် Tokopedia တို့နှင့် ချိတ်ဆက်သည်။ ဈေးနှုန်းကို မေးမြန်းမှသာ ပေးသည်။",
+    "zh": "Flash Fulfillment 在曼谷有五个仓库，共 50,000 平方米，通过 Flash Express 发货，并对接 Shopee、TikTok Shop、Lazada 和 Tokopedia。价格需询问。",
+    "de": "Flash Fulfillment betreibt fünf Lager in Bangkok mit zusammen 50,000 m². Es versendet mit Flash Express und ist mit Shopee, TikTok Shop, Lazada und Tokopedia verbunden. Preise gibt es auf Anfrage."
+   },
+   "src": "https://www.flashfulfillment.co.th/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Shopee Thailand, commission by category (non-Mall shops)",
+    "th": "Shopee ไทย ค่าคอมมิชชันตามหมวดสินค้า (ร้านทั่วไป)",
+    "my": "Shopee ထိုင်း၊ ကုန်ပစ္စည်းအမျိုးအစားအလိုက် ကော်မရှင် (Mall မဟုတ်သော ဆိုင်များ)",
+    "zh": "Shopee 泰国，按类目收佣金（非商城店铺）",
+    "de": "Shopee Thailand, Provision nach Kategorie (Shops ohne Mall)"
+   },
+   "p": {
+    "en": "7.49–17.12%, plus a 3.21% transaction fee",
+    "th": "7.49–17.12% บวกค่าธุรกรรม 3.21%",
+    "my": "7.49–17.12% နှင့် ငွေပေးချေမှုကြေး 3.21%",
+    "zh": "7.49–17.12%，另加 3.21% 交易费",
+    "de": "7.49–17.12 % plus 3.21 % Transaktionsgebühr"
+   },
+   "src": "https://flowaccount.com/blog/commission-fees-ecommerce-shopee-lazada-tiktok/"
+  },
+  {
+   "t": {
+    "en": "Lazada Thailand, marketplace service fee by category",
+    "th": "Lazada ไทย ค่าบริการมาร์เก็ตเพลสตามหมวดสินค้า",
+    "my": "Lazada ထိုင်း၊ ကုန်ပစ္စည်းအမျိုးအစားအလိုက် ဈေးကွက်ဝန်ဆောင်ခ",
+    "zh": "Lazada 泰国，按类目收平台服务费",
+    "de": "Lazada Thailand, Marktplatz-Servicegebühr nach Kategorie"
+   },
+   "p": {
+    "en": "6.96–17.12%, plus a 3.21% payment fee",
+    "th": "6.96–17.12% บวกค่าชำระเงิน 3.21%",
+    "my": "6.96–17.12% နှင့် ငွေပေးချေမှုကြေး 3.21%",
+    "zh": "6.96–17.12%，另加 3.21% 支付费",
+    "de": "6.96–17.12 % plus 3.21 % Zahlungsgebühr"
+   },
+   "src": "https://flowaccount.com/blog/commission-fees-ecommerce-shopee-lazada-tiktok/"
+  },
+  {
+   "t": {
+    "en": "TikTok Shop Thailand, marketing commission for general shops",
+    "th": "TikTok Shop ไทย ค่าคอมมิชชันการตลาดสำหรับร้านทั่วไป",
+    "my": "TikTok Shop ထိုင်း၊ ယေဘုယျဆိုင်များအတွက် စျေးကွက်ရှာဖွေရေး ကော်မရှင်",
+    "zh": "TikTok Shop 泰国，普通店铺的营销佣金",
+    "de": "TikTok Shop Thailand, Marketingprovision für allgemeine Shops"
+   },
+   "p": {
+    "en": "about 5.35–6.42%, plus a 3.21% transaction fee",
+    "th": "ประมาณ 5.35–6.42% บวกค่าธุรกรรม 3.21%",
+    "my": "ခန့် 5.35–6.42% နှင့် ငွေပေးချေမှုကြေး 3.21%",
+    "zh": "约 5.35–6.42%，另加 3.21% 交易费",
+    "de": "etwa 5.35–6.42 % plus 3.21 % Transaktionsgebühr"
+   },
+   "src": "https://flowaccount.com/blog/commission-fees-ecommerce-shopee-lazada-tiktok/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a fulfilment centre in Thailand?",
+    "th": "ศูนย์ฟุลฟิลเมนต์ในไทยคืออะไร",
+    "my": "ထိုင်းရှိ ဖူလ်ဖစ်လ်မန့် စင်တာဆိုတာ ဘာလဲ။",
+    "zh": "泰国的履约仓是什么？",
+    "de": "Was ist ein Fulfillment-Zentrum in Thailand?"
+   },
+   "a": {
+    "en": "Flash Fulfillment, one Thai operator, lists warehousing, order and inventory software, and shipping with Flash Express. Its five Bangkok warehouses connect to Shopee, TikTok Shop, Lazada and Tokopedia. It gives prices on request.",
+    "th": "Flash Fulfillment ผู้ให้บริการไทยรายหนึ่ง ระบุบริการคลังสินค้า ซอฟต์แวร์จัดการออเดอร์และสต๊อก และการส่งด้วย Flash Express คลังห้าแห่งในกรุงเทพฯ เชื่อมกับ Shopee, TikTok Shop, Lazada และ Tokopedia ราคาแจ้งเมื่อสอบถาม",
+    "my": "ထိုင်းလုပ်ငန်းရှင်တစ်ဦးဖြစ်သော Flash Fulfillment က ဂိုဒေါင်၊ အော်ဒါနှင့် စတော့ဆော့ဖ်ဝဲနှင့် Flash Express ဖြင့် ပို့ခြင်းတို့ကို ဖော်ပြသည်။ ဘန်ကောက်ရှိ ဂိုဒေါင်ငါးခုသည် Shopee၊ TikTok Shop၊ Lazada နှင့် Tokopedia တို့နှင့် ချိတ်ဆက်သည်။ ဈေးနှုန်းကို မေးမြန်းမှသာ ပေးသည်။",
+    "zh": "Flash Fulfillment 是泰国的一家运营商，其页面列出仓储、订单和库存软件，以及用 Flash Express 发货。曼谷的五个仓库对接 Shopee、TikTok Shop、Lazada 和 Tokopedia。价格需询问。",
+    "de": "Flash Fulfillment, ein thailändischer Anbieter, nennt Lagerhaltung, Software für Bestellungen und Bestand sowie Versand mit Flash Express. Die fünf Lager in Bangkok sind mit Shopee, TikTok Shop, Lazada und Tokopedia verbunden. Preise gibt es auf Anfrage."
+   },
+   "src": "https://www.flashfulfillment.co.th/"
+  },
+  {
+   "q": {
+    "en": "How much do Shopee and Lazada charge sellers in Thailand?",
+    "th": "Shopee และ Lazada เก็บค่าธรรมเนียมผู้ขายในไทยเท่าไร",
+    "my": "Shopee နှင့် Lazada က ထိုင်းရှိ ရောင်းသူများထံမှ ဘယ်လောက်ကောက်သလဲ။",
+    "zh": "Shopee 和 Lazada 向泰国卖家收多少费用？",
+    "de": "Was verlangen Shopee und Lazada von Verkäufern in Thailand?"
+   },
+   "a": {
+    "en": "FlowAccount's August 2026 comparison lists Shopee commissions of 7.49–17.12% for non-Mall shops and Lazada service fees of 6.96–17.12%, by category. Both add a 3.21% transaction or payment fee.",
+    "th": "บทความเปรียบเทียบของ FlowAccount เมื่อสิงหาคม 2569 ระบุค่าคอมมิชชัน Shopee 7.49–17.12% สำหรับร้านทั่วไป และค่าบริการ Lazada 6.96–17.12% ตามหมวดสินค้า ทั้งสองเพิ่มค่าธุรกรรมหรือค่าชำระเงิน 3.21%",
+    "my": "FlowAccount ၏ 2026 သြဂုတ် နှိုင်းယှဉ်ချက်တွင် Mall မဟုတ်သော ဆိုင်များအတွက် Shopee ကော်မရှင် 7.49–17.12% နှင့် Lazada ဝန်ဆောင်ခ 6.96–17.12% ကို ကုန်ပစ္စည်းအမျိုးအစားအလိုက် ဖော်ပြသည်။ နှစ်ခုလုံးတွင် ငွေပေးချေမှုကြေး 3.21% ထပ်ပေါင်းသည်။",
+    "zh": "FlowAccount 2026 年 8 月的对比列出：非商城店铺 Shopee 佣金 7.49–17.12%，Lazada 服务费 6.96–17.12%，均按类目。两者另加 3.21% 的交易费或支付费。",
+    "de": "Der Vergleich von FlowAccount vom August 2026 nennt bei Shopee Provisionen von 7.49–17.12 % für Shops ohne Mall und bei Lazada Servicegebühren von 6.96–17.12 %, jeweils nach Kategorie. Beide erheben zusätzlich 3.21 % Transaktions- oder Zahlungsgebühr."
+   },
+   "src": "https://flowaccount.com/blog/commission-fees-ecommerce-shopee-lazada-tiktok/"
+  },
+  {
+   "q": {
+    "en": "Do parcels from abroad pay duty in Thailand?",
+    "th": "พัสดุจากต่างประเทศต้องเสียอากรในไทยไหม",
+    "my": "ပြည်ပမှ ပါဆယ်များအတွက် ထိုင်းတွင် အကောက်ခွန် ပေးရပါသလား။",
+    "zh": "从国外寄来的包裹在泰国要交关税吗？",
+    "de": "Zahlen Pakete aus dem Ausland in Thailand Zoll?"
+   },
+   "a": {
+    "en": "Since 1 January 2026, goods bought online from abroad no longer have the ฿1,500 duty-free limit. Duty is charged on top of the 7% VAT.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 สินค้าที่ซื้อออนไลน์จากต่างประเทศไม่มีเพดานปลอดอากร ฿1,500 อีกต่อไป เสียอากรเพิ่มจากภาษีมูลค่าเพิ่ม 7%",
+    "my": "2026 ဇန်နဝါရီ 1 မှစ၍ ပြည်ပမှ အွန်လိုင်းဝယ်သည့် ကုန်ပစ္စည်းများတွင် အခွန်ကင်းလွတ်ခွင့် ฿1,500 ကန့်သတ်ချက် မရှိတော့ပါ။ VAT 7% အပြင် အကောက်ခွန် ထပ်ကောက်သည်။",
+    "zh": "自 2026 年 1 月 1 日起，网购的境外货物不再有 ฿1,500 的免税额度。在 7% 增值税之外另征关税。",
+    "de": "Seit 1. Januar 2026 gilt für online im Ausland gekaufte Waren die Zollfreigrenze von ฿1,500 nicht mehr. Der Zoll kommt zur Mehrwertsteuer von 7 % hinzu."
+   },
+   "src": "https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/thailand-e-commerce-import-duty-2026"
+  },
+  {
+   "q": {
+    "en": "Do parcels sent to the United States pay duty?",
+    "th": "พัสดุที่ส่งไปสหรัฐฯ ต้องเสียอากรไหม",
+    "my": "အမေရိကန်သို့ ပို့သည့် ပါဆယ်များအတွက် အကောက်ခွန် ပေးရပါသလား။",
+    "zh": "寄往美国的包裹要交关税吗？",
+    "de": "Zahlen Pakete in die USA Zoll?"
+   },
+   "a": {
+    "en": "Goods worth US$800 or less pay duties, taxes and fees from 29 August 2025. Postal shipments pay a percentage duty or a flat US$80 to US$200 an item; from 28 February 2026 only the percentage method is used.",
+    "th": "สินค้ามูลค่าไม่เกิน US$800 ต้องเสียอากร ภาษี และค่าธรรมเนียมตั้งแต่ 29 สิงหาคม 2568 พัสดุไปรษณีย์เสียอากรเป็นร้อยละของมูลค่า หรืออัตราเหมาตั้งแต่ US$80 ถึง US$200 ต่อชิ้น ตั้งแต่ 28 กุมภาพันธ์ 2569 ใช้เฉพาะวิธีร้อยละ",
+    "my": "US$800 နှင့်အောက် တန်ဖိုးရှိ ကုန်ပစ္စည်းများသည် 2025 သြဂုတ် 29 မှစ၍ အကောက်ခွန်၊ အခွန်နှင့် ကြေးများ ပေးရသည်။ စာတိုက်ပို့ဆောင်မှုများတွင် ရာခိုင်နှုန်းအကောက်ခွန် သို့မဟုတ် တစ်ခုလျှင် US$80 မှ US$200 အထိ အသေသတ်မှတ်ကြေးကို ပေးရပြီး 2026 ဖေဖော်ဝါရီ 28 မှစ၍ ရာခိုင်နှုန်းနည်းလမ်းကိုသာ သုံးသည်။",
+    "zh": "价值 US$800 及以下的货物自 2025 年 8 月 29 日起须缴关税、税款和费用。邮寄件按比例关税，或每件定额 US$80 至 US$200；自 2026 年 2 月 28 日起只用按比例的方法。",
+    "de": "Waren im Wert von US$800 oder weniger zahlen seit 29. August 2025 Zölle, Steuern und Gebühren. Postsendungen zahlen einen Prozentzoll oder pauschal US$80 bis US$200 pro Stück; ab 28. Februar 2026 gilt nur noch das Prozentverfahren."
+   },
+   "src": "https://www.cbp.gov/sites/default/files/2025-08/factsheet_suspension_of_duty-free_de_minimis_treatment.pdf"
+  },
+  {
+   "q": {
+    "en": "Can I ship a Buddha image out of Thailand?",
+    "th": "ส่งพระพุทธรูปออกนอกประเทศไทยได้ไหม",
+    "my": "ဗုဒ္ဓရုပ်ပွားကို ထိုင်းမှ ပို့နိုင်ပါသလား။",
+    "zh": "可以把佛像寄出泰国吗？",
+    "de": "Darf ich eine Buddha-Figur aus Thailand verschicken?"
+   },
+   "a": {
+    "en": "It needs a Fine Arts Department permit, shown at Customs. The airport's customs page lists Buddha images, art objects and antiques as restricted goods.",
+    "th": "ต้องมีใบอนุญาตจากกรมศิลปากรและแสดงต่อศุลกากร หน้าศุลกากรของท่าอากาศยานระบุพระพุทธรูป วัตถุศิลปะ และโบราณวัตถุเป็นสินค้าควบคุม",
+    "my": "Fine Arts Department ခွင့်ပြုချက် လိုပြီး အကောက်ခွန်တွင် ပြသရသည်။ လေဆိပ်၏ အကောက်ခွန်စာမျက်နှာတွင် ဗုဒ္ဓရုပ်ပွားများ၊ အနုပညာပစ္စည်းများနှင့် ရှေးဟောင်းပစ္စည်းများကို ကန့်သတ်ကုန်များအဖြစ် ဖော်ပြထားသည်။",
+    "zh": "需要艺术厅的许可，并在海关出示。机场海关页面把佛像、艺术品和古董列为受限货物。",
+    "de": "Es braucht eine Genehmigung des Fine Arts Department, die beim Zoll vorgezeigt wird. Die Zollseite des Flughafens führt Buddha-Figuren, Kunstgegenstände und Antiquitäten als beschränkte Waren auf."
+   },
+   "src": "https://donmueang.airportthai.co.th/service/airport-guide/detail/Restricted_and_Prohibited_Items_DMK"
+  }
+ ],
+ "related": [
+  "etsy",
+  "online-shop",
+  "trade-photos",
+  "partner-prices",
+  "move",
+  "luggage"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thai Customs: customs tariff search",
+    "th": "กรมศุลกากร: ค้นหาพิกัดอัตราศุลกากร",
+    "my": "ထိုင်းအကောက်ခွန်ဦးစီးဌာန: အကောက်ခွန်ကုဒ်နှင့် နှုန်းထား ရှာဖွေရေး",
+    "zh": "泰国海关：关税编码查询",
+    "de": "Thailändischer Zoll: Suche nach Zolltarifnummern"
+   },
+   "href": "https://www.customs.go.th/list_strc_link_image_with_infographic.php?ini_content=customs_tariff_service&lang=th&left_menu=nmenu_esevice_001"
+  },
+  {
+   "t": {
+    "en": "Thai Customs: export formalities for general goods",
+    "th": "กรมศุลกากร: พิธีการส่งออกสินค้าทั่วไป",
+    "my": "ထိုင်းအကောက်ခွန်ဦးစီးဌာန: ယေဘုယျကုန်ပစ္စည်း ပို့ကုန်လုပ်ငန်းစဉ်",
+    "zh": "泰国海关：一般货物出口手续",
+    "de": "Thailändischer Zoll: Ausfuhrformalitäten für allgemeine Waren"
+   },
+   "href": "https://www.customs.go.th/cont_strc_simple.php?xleft_menu=menu_business_160421_02_160421_02_160914_01&ini_menu=menu_business_160421_02&ini_content=business_160426_02_160914_02_160914_01&root_left_menu=menu_business_160421_02_160421_02&lang=th&left_menu=menu_business_160421_02_160421_02"
+  }
+ ],
+ "glyphs": [
+  "parcel",
+  "stamp",
+  "coin"
+ ]
+}

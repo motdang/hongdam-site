@@ -1,0 +1,788 @@
+{
+ "id": "ai-line",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A shop with its own LINE account has its own inbox and its own plan fee. One LINE Official Account can answer for several shops, hotels or branches, and chats get the replies of the right one.",
+  "th": "ร้านที่มีไลน์เป็นของตัวเองต้องมีกล่องข้อความและค่าแพ็กเกจของตัวเอง ไลน์ OA บัญชีเดียวตอบแทนได้หลายร้าน หลายโรงแรม หรือหลายสาขา และแชตจะได้คำตอบของร้านที่ถูกต้อง",
+  "my": "ကိုယ်ပိုင် LINE အကောင့်ရှိသော ဆိုင်တစ်ဆိုင်တွင် ကိုယ်ပိုင် စာဝင်ပုံးနှင့် ကိုယ်ပိုင် ပက်ကေ့ချ်ကြေး ရှိသည်။ LINE Official Account တစ်ခုတည်းက ဆိုင်၊ ဟိုတယ် သို့မဟုတ် ဆိုင်ခွဲ အများအပြားအတွက် ဖြေကြားနိုင်ပြီး chat များသည် မှန်ကန်သော ဆိုင်၏ ဖြေကြားချက်များကို ရသည်။",
+  "zh": "每家有自己 LINE 账号的店，都有自己的收件箱和自己的套餐费。一个 LINE 官方账号可以替多家店、酒店或分店作答，聊天会得到对应那家店的回复。",
+  "de": "Ein Geschäft mit eigenem LINE-Konto hat einen eigenen Posteingang und eine eigene Tarifgebühr. Ein LINE Official Account kann für mehrere Geschäfte, Hotels oder Filialen antworten, und die Chats erhalten die Antworten des richtigen Geschäfts."
+ },
+ "n": {
+  "de": "Ein LINE-Konto für viele Geschäfte"
+ },
+ "l": {
+  "de": "Ein LINE-Konto antwortet für mehrere Unternehmen."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The shops or branches are listed, each with its own replies",
+    "th": "ทำรายชื่อร้านหรือสาขา พร้อมคำตอบของแต่ละแห่ง",
+    "my": "ဆိုင် သို့မဟုတ် ဆိုင်ခွဲများကို စာရင်းပြုစုပြီး တစ်ခုချင်းစီ၏ ကိုယ်ပိုင် ဖြေကြားချက်များ ထည့်သည်",
+    "zh": "列出各家店或分店，并写好各自的回复",
+    "de": "Die Geschäfte oder Filialen werden aufgelistet, jedes mit seinen eigenen Antworten"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "最先",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "One LINE Official Account is set up to answer for all of them",
+    "th": "ตั้งไลน์ OA บัญชีเดียวให้ตอบแทนทุกแห่ง",
+    "my": "LINE Official Account တစ်ခုကို ၎င်းတို့အားလုံးအတွက် ဖြေကြားရန် တည်ဆောက်သည်",
+    "zh": "设置一个 LINE 官方账号，替它们全部作答",
+    "de": "Ein LINE Official Account wird so eingerichtet, dass er für alle antwortet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the list",
+    "th": "หลังทำรายชื่อ",
+    "my": "စာရင်းပြီးနောက်",
+    "zh": "列表之后",
+    "de": "Nach der Liste"
+   }
+  },
+  {
+   "db": "compass",
+   "t": {
+    "en": "Chats are routed to the right shop's replies",
+    "th": "แชตถูกส่งไปยังคำตอบของร้านที่ถูกต้อง",
+    "my": "chat များကို မှန်ကန်သော ဆိုင်၏ ဖြေကြားချက်များသို့ လမ်းကြောင်းလွှဲပေးသည်",
+    "zh": "聊天被分流到对应那家店的回复",
+    "de": "Chats werden zu den Antworten des richtigen Geschäfts geleitet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When a customer writes",
+    "th": "เมื่อลูกค้าส่งข้อความ",
+    "my": "ဖောက်သည် စာရေးသောအခါ",
+    "zh": "顾客发来消息时",
+    "de": "Wenn eine Kundin oder ein Kunde schreibt"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "LINE's plan fee for the one account is paid to LINE",
+    "th": "ค่าแพ็กเกจของ LINE สำหรับบัญชีเดียวจ่ายให้ LINE",
+    "my": "အကောင့်တစ်ခုအတွက် LINE ၏ ပက်ကေ့ချ်ကြေးကို LINE သို့ ပေးရသည်",
+    "zh": "这一个账号的 LINE 套餐费付给 LINE",
+    "de": "Die Tarifgebühr von LINE für das eine Konto geht an LINE"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Apart from Hongdam's price",
+    "th": "แยกจากราคาของหงส์ดำ",
+    "my": "ဟုန်ဒမ်၏ စျေးနှုန်းနှင့် သီးခြား",
+    "zh": "另计，不含鸿丹的价格",
+    "de": "Getrennt vom Preis von Hongdam"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "56M",
+   "t": {
+    "en": "Monthly LINE users in Thailand, late 2025",
+    "th": "ผู้ใช้ LINE รายเดือนในไทย ปลายปี 2568",
+    "my": "ထိုင်းနိုင်ငံရှိ LINE လစဉ်အသုံးပြုသူများ၊ 2025 နှောင်းပိုင်း",
+    "zh": "泰国 LINE 月活跃用户，2025 年底",
+    "de": "Monatlich aktive LINE-Nutzende in Thailand, Ende 2025"
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "n": "300",
+   "t": {
+    "en": "Free messages a month on a LINE Official Account",
+    "th": "ข้อความฟรีต่อเดือนของ LINE Official Account",
+    "my": "LINE Official Account တစ်ခုတွင် တစ်လ အခမဲ့ မက်ဆေ့ချ်",
+    "zh": "LINE 官方账号每月的免费消息",
+    "de": "Gratisnachrichten im Monat bei einem LINE Official Account"
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "n": "฿1,280",
+   "t": {
+    "en": "A month for LINE's Basic plan: 15,000 messages, before VAT",
+    "th": "แพ็กเกจเบสิกของ LINE ต่อเดือน ได้ 15,000 ข้อความ ยังไม่รวม VAT",
+    "my": "LINE ၏ Basic ပက်ကေ့ချ် တစ်လစာ - မက်ဆေ့ချ် 15,000၊ VAT မပါ",
+    "zh": "LINE 的 Basic 套餐每月费用：15,000 条消息，不含增值税",
+    "de": "Im Monat für den Tarif Basic von LINE: 15,000 Nachrichten, ohne MwSt."
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "n": "฿1,780",
+   "t": {
+    "en": "A month for LINE's Pro plan: 35,000 messages, before VAT",
+    "th": "แพ็กเกจโปรของ LINE ต่อเดือน ได้ 35,000 ข้อความ ยังไม่รวม VAT",
+    "my": "LINE ၏ Pro ပက်ကေ့ချ် တစ်လစာ - မက်ဆေ့ချ် 35,000၊ VAT မပါ",
+    "zh": "LINE 的 Pro 套餐每月费用：35,000 条消息，不含增值税",
+    "de": "Im Monat für den Tarif Pro von LINE: 35,000 Nachrichten, ohne MwSt."
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What do LINE accounts cost a month, one per shop or one for all?",
+   "th": "ไลน์ OA เดือนละเท่าไหร่ ร้านละบัญชี หรือบัญชีเดียวสำหรับทุกร้าน",
+   "my": "LINE အကောင့်များ တစ်လ ကုန်ကျစရိတ် မည်မျှနည်း၊ ဆိုင်တစ်ဆိုင်လျှင် တစ်ခုစီလား၊ အားလုံးအတွက် တစ်ခုတည်းလား",
+   "zh": "LINE 账号一个月多少钱：每家店一个，还是大家共用一个",
+   "de": "Was kosten LINE-Konten im Monat: eines pro Geschäft oder eines für alle?"
+  },
+  "noscript": {
+   "en": "The calculator needs JavaScript. LINE's plan prices are listed below.",
+   "th": "เครื่องคิดเลขต้องใช้ JavaScript ราคาแพ็กเกจของ LINE แสดงไว้ด้านล่าง",
+   "my": "တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ LINE ၏ ပက်ကေ့ချ်စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "计算器需要 JavaScript。LINE 的套餐价格列在下方。",
+   "de": "Der Rechner braucht JavaScript. Die Tarifpreise von LINE stehen weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "shops",
+     "n": {
+      "en": "Shops or branches",
+      "th": "จำนวนร้านหรือสาขา",
+      "my": "ဆိုင် သို့မဟုတ် ဆိုင်ခွဲ အရေအတွက်",
+      "zh": "店或分店的数量",
+      "de": "Zahl der Geschäfte oder Filialen"
+     },
+     "min": 2,
+     "max": 30,
+     "step": 1,
+     "start": 8,
+     "unit": {
+      "en": "shops",
+      "th": "ร้าน",
+      "my": "ဆိုင်",
+      "zh": "家",
+      "de": "Geschäfte"
+     },
+     "money": false
+    }
+   ],
+   "choices": [
+    {
+     "id": "own",
+     "n": {
+      "en": "One account per shop: messages one shop sends a month",
+      "th": "ร้านละหนึ่งบัญชี: ข้อความที่หนึ่งร้านส่งต่อเดือน",
+      "my": "ဆိုင်တစ်ဆိုင်လျှင် အကောင့်တစ်ခု - ဆိုင်တစ်ဆိုင်က တစ်လတွင် ပို့သော မက်ဆေ့ချ်",
+      "zh": "每家店一个账号：一家店每月发送的消息",
+      "de": "Ein Konto pro Geschäft: Nachrichten, die ein Geschäft im Monat sendet"
+     },
+     "options": [
+      {
+       "id": "free",
+       "n": {
+        "en": "Up to 300 (Free plan)",
+        "th": "ไม่เกิน 300 (แพ็กเกจฟรี)",
+        "my": "300 အထိ (Free ပက်ကေ့ချ်)",
+        "zh": "最多 300 条（Free 套餐）",
+        "de": "Bis 300 (Tarif Free)"
+       }
+      },
+      {
+       "id": "basic",
+       "n": {
+        "en": "Up to 15,000 (Basic plan)",
+        "th": "ไม่เกิน 15,000 (แพ็กเกจเบสิก)",
+        "my": "15,000 အထိ (Basic ပက်ကေ့ချ်)",
+        "zh": "最多 15,000 条（Basic 套餐）",
+        "de": "Bis 15,000 (Tarif Basic)"
+       }
+      },
+      {
+       "id": "pro",
+       "n": {
+        "en": "Up to 35,000 (Pro plan)",
+        "th": "ไม่เกิน 35,000 (แพ็กเกจโปร)",
+        "my": "35,000 အထိ (Pro ပက်ကေ့ချ်)",
+        "zh": "最多 35,000 条（Pro 套餐）",
+        "de": "Bis 35,000 (Tarif Pro)"
+       }
+      }
+     ],
+     "start": "basic"
+    },
+    {
+     "id": "shared",
+     "n": {
+      "en": "One shared account: messages all the shops send together in a month",
+      "th": "บัญชีเดียวร่วมกัน: ข้อความที่ทุกร้านส่งรวมกันต่อเดือน",
+      "my": "မျှဝေသုံး အကောင့်တစ်ခု - ဆိုင်အားလုံး ပေါင်းပို့သော တစ်လစာ မက်ဆေ့ချ်",
+      "zh": "共用一个账号：所有店一个月合计发送的消息",
+      "de": "Ein gemeinsames Konto: Nachrichten, die alle Geschäfte zusammen im Monat senden"
+     },
+     "options": [
+      {
+       "id": "free",
+       "n": {
+        "en": "Up to 300 (Free plan)",
+        "th": "ไม่เกิน 300 (แพ็กเกจฟรี)",
+        "my": "300 အထိ (Free ပက်ကေ့ချ်)",
+        "zh": "最多 300 条（Free 套餐）",
+        "de": "Bis 300 (Tarif Free)"
+       }
+      },
+      {
+       "id": "basic",
+       "n": {
+        "en": "Up to 15,000 (Basic plan)",
+        "th": "ไม่เกิน 15,000 (แพ็กเกจเบสิก)",
+        "my": "15,000 အထိ (Basic ပက်ကေ့ချ်)",
+        "zh": "最多 15,000 条（Basic 套餐）",
+        "de": "Bis 15,000 (Tarif Basic)"
+       }
+      },
+      {
+       "id": "pro",
+       "n": {
+        "en": "Up to 35,000 (Pro plan)",
+        "th": "ไม่เกิน 35,000 (แพ็กเกจโปร)",
+        "my": "35,000 အထိ (Pro ပက်ကေ့ချ်)",
+        "zh": "最多 35,000 条（Pro 套餐）",
+        "de": "Bis 35,000 (Tarif Pro)"
+       }
+      }
+     ],
+     "start": "pro"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "A Free plan for each shop, ฿0 a month",
+      "th": "แพ็กเกจฟรีของแต่ละร้าน ฿0 ต่อเดือน",
+      "my": "ဆိုင်တစ်ဆိုင်စီအတွက် Free ပက်ကေ့ချ်၊ တစ်လ ฿0",
+      "zh": "每家店各一个 Free 套餐，每月 ฿0",
+      "de": "Ein Tarif Free pro Geschäft, ฿0 im Monat"
+     },
+     "range": [
+      0,
+      0
+     ],
+     "per": [
+      "shops"
+     ],
+     "when": {
+      "own": [
+       "free"
+      ]
+     },
+     "save": true,
+     "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "n": {
+      "en": "A Basic plan for each shop, ฿1,280 a month",
+      "th": "แพ็กเกจเบสิกของแต่ละร้าน ร้านละ ฿1,280 ต่อเดือน",
+      "my": "ဆိုင်တစ်ဆိုင်စီအတွက် Basic ပက်ကေ့ချ်၊ တစ်လ ฿1,280",
+      "zh": "每家店各一个 Basic 套餐，每月 ฿1,280",
+      "de": "Ein Tarif Basic pro Geschäft, ฿1,280 im Monat"
+     },
+     "range": [
+      1280,
+      1280
+     ],
+     "per": [
+      "shops"
+     ],
+     "when": {
+      "own": [
+       "basic"
+      ]
+     },
+     "save": true,
+     "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "n": {
+      "en": "A Pro plan for each shop, ฿1,780 a month",
+      "th": "แพ็กเกจโปรของแต่ละร้าน ร้านละ ฿1,780 ต่อเดือน",
+      "my": "ဆိုင်တစ်ဆိုင်စီအတွက် Pro ပက်ကေ့ချ်၊ တစ်လ ฿1,780",
+      "zh": "每家店各一个 Pro 套餐，每月 ฿1,780",
+      "de": "Ein Tarif Pro pro Geschäft, ฿1,780 im Monat"
+     },
+     "range": [
+      1780,
+      1780
+     ],
+     "per": [
+      "shops"
+     ],
+     "when": {
+      "own": [
+       "pro"
+      ]
+     },
+     "save": true,
+     "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "n": {
+      "en": "One Free plan for the shared account, ฿0 a month",
+      "th": "แพ็กเกจฟรีหนึ่งบัญชีร่วม ฿0 ต่อเดือน",
+      "my": "မျှဝေအကောင့်အတွက် Free ပက်ကေ့ချ် တစ်ခု၊ တစ်လ ฿0",
+      "zh": "共用账号一个 Free 套餐，每月 ฿0",
+      "de": "Ein Tarif Free für das gemeinsame Konto, ฿0 im Monat"
+     },
+     "range": [
+      0,
+      0
+     ],
+     "when": {
+      "shared": [
+       "free"
+      ]
+     },
+     "save": false,
+     "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "n": {
+      "en": "One Basic plan for the shared account, ฿1,280 a month",
+      "th": "แพ็กเกจเบสิกหนึ่งบัญชีร่วม ฿1,280 ต่อเดือน",
+      "my": "မျှဝေအကောင့်အတွက် Basic ပက်ကေ့ချ် တစ်ခု၊ တစ်လ ฿1,280",
+      "zh": "共用账号一个 Basic 套餐，每月 ฿1,280",
+      "de": "Ein Tarif Basic für das gemeinsame Konto, ฿1,280 im Monat"
+     },
+     "range": [
+      1280,
+      1280
+     ],
+     "when": {
+      "shared": [
+       "basic"
+      ]
+     },
+     "save": false,
+     "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "n": {
+      "en": "One Pro plan for the shared account, ฿1,780 a month",
+      "th": "แพ็กเกจโปรหนึ่งบัญชีร่วม ฿1,780 ต่อเดือน",
+      "my": "မျှဝေအကောင့်အတွက် Pro ပက်ကေ့ချ် တစ်ခု၊ တစ်လ ฿1,780",
+      "zh": "共用账号一个 Pro 套餐，每月 ฿1,780",
+      "de": "Ein Tarif Pro für das gemeinsame Konto, ฿1,780 im Monat"
+     },
+     "range": [
+      1780,
+      1780
+     ],
+     "when": {
+      "shared": [
+       "pro"
+      ]
+     },
+     "save": false,
+     "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    }
+   ],
+   "flip": true,
+   "total": {
+    "en": "Kept in a month",
+    "th": "ที่ประหยัดได้ใน 1 เดือน",
+    "my": "တစ်လတွင် ချွေတာရသည့် ပမာဏ",
+    "zh": "一个月省下的钱",
+    "de": "In einem Monat gespart"
+   },
+   "note": {
+    "en": "A minus means the shared account costs more. LINE publishes plan prices before 7% VAT, and the lines do not add it. Messages past a plan's amount cost ฿0.10 each on Basic and ฿0.06 each on Pro, and are not counted here.",
+    "th": "เครื่องหมายลบหมายถึงบัญชีร่วมมีค่าใช้จ่ายมากกว่า LINE ประกาศราคาแพ็กเกจก่อน VAT 7% และบรรทัดข้างบนไม่ได้บวก VAT ข้อความที่เกินจำนวนในแพ็กเกจคิดข้อความละ ฿0.10 บนเบสิก และ ฿0.06 บนโปร และไม่ได้นับรวมไว้ที่นี่",
+    "my": "အနုတ်ပြသည်မှာ မျှဝေအကောင့်က ပိုကုန်သည်ဟု ဆိုလိုသည်။ LINE သည် ပက်ကေ့ချ်စျေးနှုန်းများကို VAT 7% မပါဘဲ ကြေညာထားပြီး အထက်ပါ လိုင်းများတွင် VAT မပေါင်းထားပါ။ ပက်ကေ့ချ်ပါ အရေအတွက်ကို ကျော်သော မက်ဆေ့ချ်များသည် Basic တွင် တစ်စောင်လျှင် ฿0.10၊ Pro တွင် ฿0.06 ကျသင့်ပြီး ဤနေရာတွင် မထည့်ရေတွက်ထားပါ။",
+    "zh": "负号表示共用账号花得更多。LINE 公布的套餐价格不含 7% 增值税，上面各行也没有加。超出套餐额度的消息，Basic 每条 ฿0.10，Pro 每条 ฿0.06，这里没有计入。",
+    "de": "Ein Minus heisst, dass das gemeinsame Konto mehr kostet. LINE nennt die Tarifpreise ohne 7% MwSt., und die Zeilen rechnen sie nicht dazu. Nachrichten über die Menge eines Tarifs hinaus kosten bei Basic ฿0.10 und bei Pro ฿0.06 pro Stück und sind hier nicht eingerechnet."
+   },
+   "oursLine": {
+    "en": "Hongdam builds the one LINE and its routing for:",
+    "th": "หงส์ดำสร้างไลน์บัญชีเดียวและการส่งแชตไปยังร้านที่ถูกต้องให้:",
+    "my": "ဟုန်ဒမ်က LINE တစ်ခုနှင့် chat များကို မှန်ကန်သော ဆိုင်သို့ လမ်းကြောင်းလွှဲပေးမှုကို တည်ဆောက်ပေးသည်:",
+    "zh": "鸿丹搭建这一个 LINE 和聊天分流：",
+    "de": "Hongdam baut das eine LINE und die Weiterleitung der Chats für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "LINE had 56 million monthly active users in Thailand in late 2025, which is 78.2% of the population. In October 2025, 82.6% of Thailand's internet users were active LINE users.",
+    "th": "LINE มีผู้ใช้งานรายเดือน 56 ล้านคนในประเทศไทยช่วงปลายปี 2568 คิดเป็น 78.2% ของประชากร ในเดือนตุลาคม 2568 ผู้ใช้อินเทอร์เน็ตไทย 82.6% เป็นผู้ใช้ LINE ที่ใช้งานอยู่",
+    "my": "2025 နှောင်းပိုင်းတွင် ထိုင်းနိုင်ငံ၌ LINE လစဉ်တက်ကြွအသုံးပြုသူ 56 သန်း ရှိပြီး လူဦးရေ၏ 78.2% ဖြစ်သည်။ 2025 အောက်တိုဘာတွင် ထိုင်းအင်တာနက်သုံးစွဲသူ၏ 82.6% သည် LINE ကို တက်ကြွစွာ သုံးသည်။",
+    "zh": "2025 年底，LINE 在泰国有 5,600 万月活跃用户，占人口的 78.2%。2025 年 10 月，泰国 82.6% 的互联网用户是 LINE 活跃用户。",
+    "de": "Ende 2025 hatte LINE in Thailand 56 Millionen monatlich aktive Nutzende, das sind 78.2% der Bevölkerung. Im Oktober 2025 nutzten 82.6% der Internetnutzenden in Thailand LINE aktiv."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "A LINE Official Account in Thailand has three plans: Free with 300 messages a month, Basic at ฿1,280 with 15,000 messages, and Pro at ฿1,780 with 35,000. Prices are before 7% VAT. Extra messages cost ฿0.10 each on Basic and ฿0.06 each on Pro.",
+    "th": "LINE Official Account ในประเทศไทยมีสามแพ็กเกจ คือ ฟรี ส่งได้ 300 ข้อความต่อเดือน เบสิก ฿1,280 ได้ 15,000 ข้อความ และโปร ฿1,780 ได้ 35,000 ข้อความ ราคายังไม่รวม VAT 7% ข้อความเพิ่มคิดข้อความละ ฿0.10 บนเบสิก และข้อความละ ฿0.06 บนโปร",
+    "my": "ထိုင်းနိုင်ငံရှိ LINE Official Account တွင် ပက်ကေ့ချ် သုံးမျိုး ရှိသည်။ Free သည် တစ်လ မက်ဆေ့ချ် 300၊ Basic သည် ฿1,280 ဖြင့် 15,000၊ Pro သည် ฿1,780 ဖြင့် 35,000။ စျေးနှုန်းများတွင် VAT 7% မပါ။ ပိုသော မက်ဆေ့ချ်ကို Basic တွင် တစ်စောင်လျှင် ฿0.10၊ Pro တွင် တစ်စောင်လျှင် ฿0.06 ကျသင့်သည်။",
+    "zh": "泰国的 LINE 官方账号有三个套餐：Free 每月 300 条消息；Basic ฿1,280，含 15,000 条；Pro ฿1,780，含 35,000 条。价格不含 7% 增值税。超出的消息，Basic 每条 ฿0.10，Pro 每条 ฿0.06。",
+    "de": "Ein LINE Official Account in Thailand hat drei Tarife: Free mit 300 Nachrichten im Monat, Basic für ฿1,280 mit 15,000 Nachrichten und Pro für ฿1,780 mit 35,000. Die Preise verstehen sich ohne 7% MwSt. Zusätzliche Nachrichten kosten bei Basic ฿0.10 pro Stück und bei Pro ฿0.06."
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "t": {
+    "en": "LINE counts messages by the number of people who get them. One message sent to five people counts as five. Reply messages are not counted. Push, multicast, broadcast and narrowcast messages are counted.",
+    "th": "LINE นับข้อความตามจำนวนคนที่ได้รับ ข้อความเดียวที่ส่งถึงห้าคนนับเป็นห้าข้อความ ข้อความตอบกลับ (reply) ไม่นับ ข้อความ push, multicast, broadcast และ narrowcast นับ",
+    "my": "LINE သည် မက်ဆေ့ချ်ကို လက်ခံသူ အရေအတွက်ဖြင့် ရေတွက်သည်။ ငါးဦးထံ ပို့သော မက်ဆေ့ချ်တစ်စောင်ကို ငါးစောင်ဟု ရေတွက်သည်။ ပြန်ကြားစာ (reply) များကို မရေတွက်ပါ။ push၊ multicast၊ broadcast နှင့် narrowcast မက်ဆေ့ချ်များကို ရေတွက်သည်။",
+    "zh": "LINE 按收到消息的人数计数。一条消息发给五个人，算五条。回复消息（reply）不计数。推送（push）、多播（multicast）、广播（broadcast）和窄播（narrowcast）消息都计数。",
+    "de": "LINE zählt Nachrichten nach der Zahl der Personen, die sie erhalten. Eine Nachricht an fünf Personen zählt als fünf. Antwortnachrichten (Reply) zählen nicht. Push-, Multicast-, Broadcast- und Narrowcast-Nachrichten zählen."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/pricing/"
+  },
+  {
+   "t": {
+    "en": "LINE sends a webhook event to the bot server's address when someone adds the account or sends it a message. The event gives the sender's user ID, and its destination field gives the ID of the bot that received it.",
+    "th": "เมื่อมีคนเพิ่มบัญชีเป็นเพื่อนหรือส่งข้อความถึงบัญชี LINE จะส่งเหตุการณ์ (webhook) ไปที่ที่อยู่ของเซิร์ฟเวอร์บอต เหตุการณ์ระบุ user ID ของผู้ส่ง และฟิลด์ destination ระบุ ID ของบอตที่รับข้อความ",
+    "my": "တစ်စုံတစ်ယောက်က အကောင့်ကို ဖော်ထည့်သောအခါ သို့မဟုတ် မက်ဆေ့ချ်ပို့သောအခါ LINE သည် bot ဆာဗာ၏ လိပ်စာသို့ webhook event ပို့သည်။ event တွင် ပို့သူ၏ user ID ပါပြီး destination ကွက်တွင် လက်ခံသည့် bot ၏ ID ပါသည်။",
+    "zh": "有人添加账号为好友或给账号发消息时，LINE 会向机器人服务器的地址发送一个 webhook 事件。事件里有发送者的用户 ID，destination 字段则是接收消息的机器人的 ID。",
+    "de": "Wenn jemand das Konto hinzufügt oder ihm schreibt, schickt LINE ein Webhook-Ereignis an die Adresse des Bot-Servers. Das Ereignis nennt die Nutzer-ID der Absenderin oder des Absenders, und das Feld destination nennt die ID des Bots, der es erhalten hat."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/receiving-messages/"
+  },
+  {
+   "t": {
+    "en": "A rich menu is a menu in a LINE chat. The Messaging API can set a rich menu for one user. That user sees it instead of the account's default rich menu.",
+    "th": "Rich menu คือเมนูในแชตของ LINE Messaging API ตั้ง rich menu ให้ผู้ใช้เป็นรายคนได้ ผู้ใช้คนนั้นจะเห็นเมนูนี้แทน rich menu เริ่มต้นของบัญชี",
+    "my": "Rich menu ဆိုသည်မှာ LINE chat ထဲရှိ မီနူးဖြစ်သည်။ Messaging API ဖြင့် အသုံးပြုသူတစ်ဦးချင်းအတွက် rich menu သတ်မှတ်နိုင်သည်။ ထိုအသုံးပြုသူက အကောင့်၏ မူလ rich menu အစား ၎င်းကို မြင်ရသည်။",
+    "zh": "Rich menu 是 LINE 聊天里的菜单。Messaging API 可以为单个用户设置 rich menu，该用户看到的是它，而不是账号的默认 rich menu。",
+    "de": "Ein Rich Menu ist ein Menü im LINE-Chat. Die Messaging API kann ein Rich Menu für eine einzelne Person festlegen. Diese Person sieht es anstelle des Standard-Rich-Menus des Kontos."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/using-rich-menus/"
+  },
+  {
+   "t": {
+    "en": "A link in the form line.me/R/oaMessage/ followed by the account's ID opens a chat with that account with text already typed in. It works in LINE for iOS and Android, not in LINE for PC.",
+    "th": "ลิงก์รูปแบบ line.me/R/oaMessage/ ตามด้วย ID ของบัญชี เปิดแชตกับบัญชีนั้นพร้อมข้อความที่พิมพ์ไว้แล้ว ใช้ได้ใน LINE บน iOS และ Android แต่ไม่ใช่ LINE บนพีซี",
+    "my": "line.me/R/oaMessage/ ပုံစံ link နောက်တွင် အကောင့် ID ထည့်ပါက စာသား ရိုက်ထားပြီးသား ထိုအကောင့်နှင့် chat ကို ဖွင့်ပေးသည်။ iOS နှင့် Android အတွက် LINE တွင် အလုပ်လုပ်ပြီး PC အတွက် LINE တွင် မလုပ်ပါ။",
+    "zh": "形如 line.me/R/oaMessage/ 加账号 ID 的链接，会打开与该账号的聊天，并预先填好文字。它适用于 iOS 和 Android 版 LINE，不适用于电脑版 LINE。",
+    "de": "Ein Link der Form line.me/R/oaMessage/ gefolgt von der ID des Kontos öffnet einen Chat mit diesem Konto, mit bereits eingetipptem Text. Er funktioniert in LINE für iOS und Android, nicht in LINE für PC."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/using-line-url-scheme/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "LINE Official Account plans, per account",
+    "th": "แพ็กเกจ LINE Official Account ต่อหนึ่งบัญชี",
+    "my": "LINE Official Account ပက်ကေ့ချ်များ၊ အကောင့်တစ်ခုလျှင်",
+    "zh": "LINE 官方账号套餐，按每个账号",
+    "de": "LINE-Official-Account-Tarife, pro Konto"
+   },
+   "p": {
+    "en": "Basic ฿1,280 a month; Pro ฿1,780 a month, before 7% VAT",
+    "th": "เบสิก ฿1,280 ต่อเดือน โปร ฿1,780 ต่อเดือน ยังไม่รวม VAT 7%",
+    "my": "Basic တစ်လ ฿1,280၊ Pro တစ်လ ฿1,780၊ VAT 7% မပါ",
+    "zh": "Basic 每月 ฿1,280；Pro 每月 ฿1,780；不含 7% 增值税",
+    "de": "Basic ฿1,280 im Monat; Pro ฿1,780 im Monat, ohne 7% MwSt."
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "t": {
+    "en": "LINE Official Account extra messages, past a plan's amount",
+    "th": "ข้อความเพิ่มของ LINE Official Account เกินจำนวนในแพ็กเกจ",
+    "my": "LINE Official Account ၏ ပိုသော မက်ဆေ့ချ်များ၊ ပက်ကေ့ချ်ပါ အရေအတွက်ကို ကျော်လျှင်",
+    "zh": "LINE 官方账号的额外消息，超出套餐额度的部分",
+    "de": "Zusätzliche Nachrichten beim LINE Official Account, über die Menge des Tarifs hinaus"
+   },
+   "p": {
+    "en": "฿0.10 each on Basic; ฿0.06 each on Pro",
+    "th": "เบสิกข้อความละ ฿0.10 โปรข้อความละ ฿0.06",
+    "my": "Basic တွင် တစ်စောင်လျှင် ฿0.10၊ Pro တွင် တစ်စောင်လျှင် ฿0.06",
+    "zh": "Basic 每条 ฿0.10；Pro 每条 ฿0.06",
+    "de": "Basic ฿0.10 pro Stück; Pro ฿0.06 pro Stück"
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller, 36 sold: a chatbot for one LINE OA. The first package has FAQ answers, menus and a handoff to a human admin; the next adds orders and bookings; the third adds Google Sheets and calendar links (5, 8 and 12 days)",
+    "th": "ผู้ขายบน Fastwork ขายได้ 36 ครั้ง: แชทบอทสำหรับ LINE OA หนึ่งบัญชี แพ็กเกจแรกมีคำตอบคำถามที่พบบ่อย เมนู และส่งต่อให้แอดมินที่เป็นคน แพ็กเกจที่สองเพิ่มออเดอร์และการจอง แพ็กเกจที่สามเพิ่มการเชื่อม Google Sheets และปฏิทิน (5, 8 และ 12 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (ရောင်းချမှု 36 ကြိမ်) - LINE OA တစ်ခုအတွက် chatbot။ ပထမ ပက်ကေ့ချ်တွင် မေးလေ့ရှိသော မေးခွန်းဖြေချက်များ၊ မီနူးများနှင့် လူ admin ထံ လွှဲပေးခြင်း ပါသည်၊ ဒုတိယတွင် အော်ဒါနှင့် ဘွတ်ကင် ထပ်ပါသည်၊ တတိယတွင် Google Sheets နှင့် ပြက္ခဒိန် ချိတ်ဆက်မှု ထပ်ပါသည် (5 ရက်၊ 8 ရက်၊ 12 ရက်)",
+    "zh": "Fastwork 上一位卖家，已售 36 次：针对一个 LINE OA 的聊天机器人。第一档有常见问题回答、菜单和转给真人管理员；第二档加订单与预订；第三档加 Google Sheets 和日历连接（5 天、8 天、12 天）",
+    "de": "Eine Verkäuferin oder ein Verkäufer auf Fastwork, 36 Mal verkauft: ein Chatbot für ein LINE OA. Das erste Paket hat Antworten auf häufige Fragen, Menüs und die Übergabe an einen Menschen als Admin; das zweite fügt Bestellungen und Buchungen hinzu; das dritte Verbindungen zu Google Sheets und Kalender (5, 8 und 12 Tage)"
+   },
+   "p": {
+    "en": "฿15,000, ฿20,000 or ฿30,000",
+    "th": "฿15,000 ฿20,000 หรือ ฿30,000",
+    "my": "฿15,000၊ ฿20,000 သို့မဟုတ် ฿30,000",
+    "zh": "฿15,000、฿20,000 或 ฿30,000",
+    "de": "฿15,000, ฿20,000 oder ฿30,000"
+   },
+   "src": "https://fastwork.co/user/mos_lazyhardwork/chatbot-57678051"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller, 10 sold: a LINE chatbot with Rich Menu pages and auto replies. The next package adds a database or API link; the top one adds booking and ordering and Flex Messages (3, 5 and 7 days)",
+    "th": "ผู้ขายบน Fastwork ขายได้ 10 ครั้ง: แชทบอท LINE พร้อมหน้า Rich Menu และตอบกลับอัตโนมัติ แพ็กเกจถัดไปเพิ่มการเชื่อมฐานข้อมูลหรือ API แพ็กเกจสูงสุดเพิ่มระบบจองและสั่งซื้อ และ Flex Message (3, 5 และ 7 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (ရောင်းချမှု 10 ကြိမ်) - Rich Menu စာမျက်နှာများနှင့် အလိုအလျောက်ပြန်ကြားချက်ပါသော LINE chatbot။ နောက်ပက်ကေ့ချ်တွင် ဒေတာဘေ့စ် သို့မဟုတ် API ချိတ်ဆက်မှု ထပ်ပါသည်၊ အမြင့်ဆုံးတွင် ဘွတ်ကင်နှင့် မှာယူမှုစနစ်နှင့် Flex Message ထပ်ပါသည် (3 ရက်၊ 5 ရက်၊ 7 ရက်)",
+    "zh": "Fastwork 上一位卖家，已售 10 次：带 Rich Menu 页面和自动回复的 LINE 聊天机器人。下一档加数据库或 API 连接；最高档加预订与点单系统和 Flex Message（3 天、5 天、7 天）",
+    "de": "Eine Verkäuferin oder ein Verkäufer auf Fastwork, 10 Mal verkauft: ein LINE-Chatbot mit Rich-Menu-Seiten und automatischen Antworten. Das nächste Paket fügt eine Datenbank- oder API-Verbindung hinzu; das oberste ein Buchungs- und Bestellsystem und Flex Messages (3, 5 und 7 Tage)"
+   },
+   "p": {
+    "en": "฿3,000, ฿6,000 or ฿12,000",
+    "th": "฿3,000 ฿6,000 หรือ ฿12,000",
+    "my": "฿3,000၊ ฿6,000 သို့မဟုတ် ฿12,000",
+    "zh": "฿3,000、฿6,000 或 ฿12,000",
+    "de": "฿3,000, ฿6,000 oder ฿12,000"
+   },
+   "src": "https://fastwork.co/user/thinnakorn.dev/chatbot-18886796"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller, 88 sold: a chatbot for LINE, Facebook or Discord built with Node.js and Firebase, with the code files, a hosting server and a database (5 days)",
+    "th": "ผู้ขายบน Fastwork ขายได้ 88 ครั้ง: แชทบอทสำหรับ LINE, Facebook หรือ Discord เขียนด้วย Node.js และ Firebase ได้ไฟล์โค้ด เซิร์ฟเวอร์โฮสต์ และฐานข้อมูล (5 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (ရောင်းချမှု 88 ကြိမ်) - Node.js နှင့် Firebase ဖြင့် ရေးသော LINE၊ Facebook သို့မဟုတ် Discord chatbot၊ ကုဒ်ဖိုင်များ၊ hosting ဆာဗာနှင့် ဒေတာဘေ့စ် ပါသည် (5 ရက်)",
+    "zh": "Fastwork 上一位卖家，已售 88 次：用 Node.js 和 Firebase 做的 LINE、Facebook 或 Discord 聊天机器人，含代码文件、托管服务器和数据库（5 天）",
+    "de": "Eine Verkäuferin oder ein Verkäufer auf Fastwork, 88 Mal verkauft: ein Chatbot für LINE, Facebook oder Discord mit Node.js und Firebase, mit den Code-Dateien, einem Hosting-Server und einer Datenbank (5 Tage)"
+   },
+   "p": {
+    "en": "฿1,500",
+    "th": "฿1,500",
+    "my": "฿1,500",
+    "zh": "฿1,500",
+    "de": "฿1,500"
+   },
+   "src": "https://fastwork.co/user/job428/chatbot-84725984"
+  },
+  {
+   "t": {
+    "en": "A worker on the Chiang Rai minimum wage",
+    "th": "ลูกจ้างที่ได้ค่าจ้างขั้นต่ำในเชียงราย",
+    "my": "ချင်းရိုင်းအနည်းဆုံးလုပ်ခဖြင့် လုပ်သော အလုပ်သမား",
+    "zh": "按清莱最低工资标准的一名员工",
+    "de": "Eine Arbeitskraft zum Mindestlohn in Chiang Rai"
+   },
+   "p": {
+    "en": "฿352 a day",
+    "th": "฿352 ต่อวัน",
+    "my": "တစ်ရက်လျှင် ฿352",
+    "zh": "每天 ฿352",
+    "de": "฿352 pro Tag"
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Is a LINE chatbot free?",
+    "th": "แชทบอทไลน์ฟรีไหม",
+    "my": "LINE chatbot သည် အခမဲ့ ဖြစ်သလား",
+    "zh": "LINE 聊天机器人免费吗",
+    "de": "Ist ein LINE-Chatbot gratis?"
+   },
+   "a": {
+    "en": "A chatbot's reply messages are not counted toward a plan's message amount. Push, multicast, broadcast and narrowcast messages are counted, one for each person who gets them. On a plan without extra messages, an account that goes past its amount cannot send, and LINE returns an error. Plans that sell extra messages bill them per message.",
+    "th": "ข้อความตอบกลับ (reply) ของแชทบอทไม่นับรวมในจำนวนข้อความของแพ็กเกจ ข้อความ push, multicast, broadcast และ narrowcast นับตามจำนวนคนที่ได้รับ แพ็กเกจที่ไม่มีข้อความเพิ่ม ถ้าบัญชีส่งเกินจำนวนจะส่งไม่ได้และ LINE ตอบกลับเป็นข้อผิดพลาด แพ็กเกจที่ขายข้อความเพิ่มจะคิดเงินเป็นรายข้อความ",
+    "my": "chatbot ၏ ပြန်ကြားစာ (reply) မက်ဆေ့ချ်များကို ပက်ကေ့ချ်၏ မက်ဆေ့ချ်အရေအတွက်ထဲ မထည့်ရေတွက်ပါ။ push၊ multicast၊ broadcast နှင့် narrowcast မက်ဆေ့ချ်များကို လက်ခံသူတစ်ဦးလျှင် တစ်စောင်ဟု ရေတွက်သည်။ ပိုသော မက်ဆေ့ချ် မပါသည့် ပက်ကေ့ချ်တွင် အကောင့်က အရေအတွက်ကို ကျော်လျှင် မပို့နိုင်တော့ဘဲ LINE က error ပြန်ပေးသည်။ ပိုသော မက်ဆေ့ချ်များ ရောင်းသော ပက်ကေ့ချ်များတွင် စာတစ်စောင်စီအလိုက် ကြေးကောက်သည်။",
+    "zh": "聊天机器人的回复消息（reply）不计入套餐的消息额度。推送（push）、多播、广播和窄播消息会计数，每个收到的人算一条。在没有额外消息的套餐上，账号超出额度就发不出去，LINE 返回错误。出售额外消息的套餐按条收费。",
+    "de": "Antwortnachrichten (Reply) eines Chatbots zählen nicht zur Nachrichtenmenge eines Tarifs. Push-, Multicast-, Broadcast- und Narrowcast-Nachrichten zählen, eine pro Person, die sie erhält. Bei einem Tarif ohne Zusatznachrichten kann ein Konto nach Überschreiten seiner Menge nicht mehr senden, und LINE gibt einen Fehler zurück. Tarife mit Zusatznachrichten rechnen diese pro Nachricht ab."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/pricing/"
+  },
+  {
+   "q": {
+    "en": "How much does a LINE Official Account cost a month?",
+    "th": "LINE Official Account เดือนละเท่าไหร่",
+    "my": "LINE Official Account တစ်လ ကုန်ကျစရိတ် မည်မျှလဲ",
+    "zh": "LINE 官方账号一个月多少钱",
+    "de": "Was kostet ein LINE Official Account im Monat?"
+   },
+   "a": {
+    "en": "The Free plan costs nothing and has 300 messages a month. Basic is ฿1,280 a month for 15,000 messages. Pro is ฿1,780 a month for 35,000. Prices are before 7% VAT. Extra messages cost ฿0.10 each on Basic and ฿0.06 each on Pro.",
+    "th": "แพ็กเกจฟรีไม่มีค่าใช้จ่าย ส่งได้ 300 ข้อความต่อเดือน เบสิกเดือนละ ฿1,280 ได้ 15,000 ข้อความ โปรเดือนละ ฿1,780 ได้ 35,000 ข้อความ ราคายังไม่รวม VAT 7% ข้อความเพิ่มคิดข้อความละ ฿0.10 บนเบสิก และ ฿0.06 บนโปร",
+    "my": "Free ပက်ကေ့ချ်သည် အခမဲ့ဖြစ်ပြီး တစ်လ မက်ဆေ့ချ် 300 ပါသည်။ Basic သည် တစ်လ ฿1,280 ဖြင့် မက်ဆေ့ချ် 15,000။ Pro သည် တစ်လ ฿1,780 ဖြင့် 35,000။ စျေးနှုန်းများတွင် VAT 7% မပါ။ ပိုသော မက်ဆေ့ချ်ကို Basic တွင် တစ်စောင်လျှင် ฿0.10၊ Pro တွင် ฿0.06 ကျသင့်သည်။",
+    "zh": "Free 套餐免费，每月 300 条消息。Basic 每月 ฿1,280，含 15,000 条。Pro 每月 ฿1,780，含 35,000 条。价格不含 7% 增值税。额外的消息，Basic 每条 ฿0.10，Pro 每条 ฿0.06。",
+    "de": "Der Tarif Free kostet nichts und hat 300 Nachrichten im Monat. Basic kostet ฿1,280 im Monat für 15,000 Nachrichten. Pro kostet ฿1,780 im Monat für 35,000. Die Preise verstehen sich ohne 7% MwSt. Zusätzliche Nachrichten kosten bei Basic ฿0.10 und bei Pro ฿0.06 pro Stück."
+   },
+   "src": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "q": {
+    "en": "What is the LINE Messaging API?",
+    "th": "LINE Messaging API คืออะไร",
+    "my": "LINE Messaging API ဆိုသည်မှာ အဘယ်နည်း",
+    "zh": "LINE Messaging API 是什么",
+    "de": "Was ist die LINE Messaging API?"
+   },
+   "a": {
+    "en": "It lets a bot server work with a LINE Official Account. A bot can send reply messages to people who added the account, send messages at any time, receive events through a webhook and set rich menus. LINE says you can start with it for free.",
+    "th": "เป็นช่องทางให้เซิร์ฟเวอร์บอททำงานกับ LINE Official Account บอทตอบกลับคนที่เพิ่มบัญชีเป็นเพื่อนได้ ส่งข้อความเมื่อไรก็ได้ รับเหตุการณ์ผ่าน webhook และตั้ง rich menu ได้ LINE ระบุว่าเริ่มใช้ได้ฟรี",
+    "my": "၎င်းသည် bot ဆာဗာတစ်ခုကို LINE Official Account နှင့် အလုပ်လုပ်စေသည်။ bot က အကောင့်ကို ဖော်ထည့်ထားသူများထံ ပြန်ကြားစာ ပို့နိုင်သည်၊ အချိန်မရွေး မက်ဆေ့ချ်ပို့နိုင်သည်၊ webhook မှတစ်ဆင့် event လက်ခံနိုင်သည်၊ rich menu သတ်မှတ်နိုင်သည်။ LINE က အခမဲ့ စတင်နိုင်သည်ဟု ဆိုသည်။",
+    "zh": "它让机器人服务器与 LINE 官方账号对接。机器人可以向添加了账号的人发送回复消息，随时发送消息，通过 webhook 接收事件，并设置 rich menu。LINE 说明可以免费开始使用。",
+    "de": "Sie lässt einen Bot-Server mit einem LINE Official Account zusammenarbeiten. Ein Bot kann Antwortnachrichten an Personen senden, die das Konto hinzugefügt haben, jederzeit Nachrichten senden, Ereignisse über einen Webhook empfangen und Rich Menus festlegen. LINE sagt, der Start sei gratis."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/overview/"
+  },
+  {
+   "q": {
+    "en": "What is a LINE chatbot webhook?",
+    "th": "webhook ของแชทบอทไลน์คืออะไร",
+    "my": "LINE chatbot webhook ဆိုသည်မှာ အဘယ်နည်း",
+    "zh": "LINE 聊天机器人的 webhook 是什么",
+    "de": "Was ist der Webhook eines LINE-Chatbots?"
+   },
+   "a": {
+    "en": "A webhook is an address on the bot's server. LINE sends an HTTP POST with the event to it. The server returns a 2xx code. If it does not, and redelivery is on, LINE sends the event again. LINE may stop sending if the server fails to receive them for a long time.",
+    "th": "webhook คือที่อยู่บนเซิร์ฟเวอร์ของบอท LINE ส่ง HTTP POST พร้อมเหตุการณ์มาที่นั่น เซิร์ฟเวอร์ตอบกลับด้วยรหัส 2xx ถ้าไม่ตอบและเปิดการส่งซ้ำไว้ LINE จะส่งเหตุการณ์นั้นอีกครั้ง LINE อาจหยุดส่งถ้าเซิร์ฟเวอร์รับไม่ได้เป็นเวลานาน",
+    "my": "webhook ဆိုသည်မှာ bot ဆာဗာပေါ်ရှိ လိပ်စာတစ်ခုဖြစ်သည်။ LINE က event နှင့်အတူ HTTP POST ကို ထိုလိပ်စာသို့ ပို့သည်။ ဆာဗာက 2xx ကုဒ် ပြန်ပေးသည်။ မပေးပြီး ပြန်ပို့ခြင်းကို ဖွင့်ထားလျှင် LINE က event ကို ထပ်ပို့သည်။ ဆာဗာက အချိန်ကြာမြင့်စွာ မလက်ခံနိုင်လျှင် LINE က ပို့ခြင်းကို ရပ်နိုင်သည်။",
+    "zh": "Webhook 是机器人服务器上的一个地址。LINE 把事件用 HTTP POST 发到这个地址。服务器返回 2xx 状态码。如果没有返回，且开启了重发，LINE 会再发一次该事件。服务器长时间收不到时，LINE 可能停止发送。",
+    "de": "Ein Webhook ist eine Adresse auf dem Server des Bots. LINE schickt das Ereignis per HTTP POST dorthin. Der Server gibt einen 2xx-Code zurück. Tut er das nicht und ist die Wiederzustellung eingeschaltet, sendet LINE das Ereignis erneut. LINE kann das Senden einstellen, wenn der Server lange nichts empfängt."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/receiving-messages/"
+  },
+  {
+   "q": {
+    "en": "Can one LINE account show a different menu to different customers?",
+    "th": "ไลน์บัญชีเดียวแสดงเมนูต่างกันให้ลูกค้าแต่ละคนได้ไหม",
+    "my": "LINE အကောင့်တစ်ခုက ဖောက်သည်တစ်ဦးချင်းစီကို မတူသော မီနူး ပြနိုင်သလား",
+    "zh": "一个 LINE 账号能给不同顾客显示不同的菜单吗",
+    "de": "Kann ein LINE-Konto verschiedenen Kundinnen und Kunden verschiedene Menüs zeigen?"
+   },
+   "a": {
+    "en": "Yes, with rich menus. The Messaging API can set a rich menu for one user. Friends see the default rich menu unless a user is linked to a rich menu of their own.",
+    "th": "ได้ ด้วย rich menu Messaging API ตั้ง rich menu ให้ผู้ใช้เป็นรายคนได้ เพื่อนที่เพิ่มบัญชีจะเห็น rich menu เริ่มต้น เว้นแต่ผู้ใช้คนนั้นถูกผูกกับ rich menu ของตัวเอง",
+    "my": "ရသည်၊ rich menu ဖြင့်။ Messaging API ဖြင့် အသုံးပြုသူတစ်ဦးချင်းအတွက် rich menu သတ်မှတ်နိုင်သည်။ အသုံးပြုသူတစ်ဦးကို ကိုယ်ပိုင် rich menu နှင့် မချိတ်ထားလျှင် မူလ rich menu ကို မြင်ရသည်။",
+    "zh": "可以，用 rich menu。Messaging API 可以为单个用户设置 rich menu。除非用户被关联了自己的 rich menu，否则好友看到的是默认的 rich menu。",
+    "de": "Ja, mit Rich Menus. Die Messaging API kann ein Rich Menu für eine einzelne Person festlegen. Freundinnen und Freunde sehen das Standard-Rich-Menu, ausser sie sind mit einem eigenen Rich Menu verknüpft."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/using-rich-menus/"
+  },
+  {
+   "q": {
+    "en": "Can a link open a LINE chat with a message already typed?",
+    "th": "ลิงก์เปิดแชต LINE พร้อมข้อความที่พิมพ์ไว้แล้วได้ไหม",
+    "my": "link ဖြင့် စာသား ရိုက်ထားပြီးသား LINE chat ကို ဖွင့်နိုင်သလား",
+    "zh": "一个链接能打开 LINE 聊天并预先填好文字吗",
+    "de": "Kann ein Link einen LINE-Chat mit vorgetipptem Text öffnen?"
+   },
+   "a": {
+    "en": "Yes. The address is line.me/R/oaMessage/ followed by the account's ID, then a ? and the text. The ID and the text are percent-encoded. It works in LINE for iOS and Android, not in LINE for PC.",
+    "th": "ได้ ที่อยู่คือ line.me/R/oaMessage/ ตามด้วย ID ของบัญชี แล้วตามด้วย ? และข้อความ ID และข้อความต้องเข้ารหัสแบบ percent-encoding ใช้ได้ใน LINE บน iOS และ Android ไม่ใช่ LINE บนพีซี",
+    "my": "ရသည်။ လိပ်စာသည် line.me/R/oaMessage/ နောက်တွင် အကောင့် ID၊ ထို့နောက် ? နှင့် စာသား ဖြစ်သည်။ ID နှင့် စာသားကို percent-encode ပြုလုပ်ရသည်။ iOS နှင့် Android အတွက် LINE တွင် အလုပ်လုပ်ပြီး PC အတွက် LINE တွင် မလုပ်ပါ။",
+    "zh": "可以。地址是 line.me/R/oaMessage/ 加账号 ID，再加 ? 和文字。ID 和文字要做百分号编码。它适用于 iOS 和 Android 版 LINE，不适用于电脑版 LINE。",
+    "de": "Ja. Die Adresse lautet line.me/R/oaMessage/ gefolgt von der ID des Kontos, dann ein ? und der Text. ID und Text sind prozentkodiert. Der Link funktioniert in LINE für iOS und Android, nicht in LINE für PC."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/using-line-url-scheme/"
+  },
+  {
+   "q": {
+    "en": "How much does a LINE chatbot cost on Fastwork?",
+    "th": "แชทบอทไลน์บน Fastwork ราคาเท่าไหร่",
+    "my": "Fastwork တွင် LINE chatbot ဘယ်လောက်ကျသလဲ",
+    "zh": "Fastwork 上做 LINE 聊天机器人多少钱",
+    "de": "Was kostet ein LINE-Chatbot auf Fastwork?"
+   },
+   "a": {
+    "en": "One Fastwork seller, with 36 sold, lists a LINE OA chatbot at ฿15,000 for 5 days, ฿20,000 for 8 days and ฿30,000 for 12 days. The first package answers FAQs and prices and passes the chat to a human admin when the bot cannot answer.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ขายได้ 36 ครั้ง ลงแชทบอท LINE OA ราคา ฿15,000 ใน 5 วัน ฿20,000 ใน 8 วัน และ ฿30,000 ใน 12 วัน แพ็กเกจแรกตอบคำถามที่พบบ่อยและราคา และส่งแชตต่อให้แอดมินที่เป็นคนเมื่อบอทตอบไม่ได้",
+    "my": "Fastwork ရောင်းသူတစ်ဦး (ရောင်းချမှု 36 ကြိမ်) က LINE OA chatbot ကို 5 ရက်အတွက် ฿15,000၊ 8 ရက်အတွက် ฿20,000၊ 12 ရက်အတွက် ฿30,000 ဖြင့် ကြော်ငြာထားသည်။ ပထမ ပက်ကေ့ချ်က မေးလေ့ရှိသော မေးခွန်းများနှင့် စျေးနှုန်းများကို ဖြေပြီး bot မဖြေနိုင်သောအခါ chat ကို လူ admin သို့ လွှဲပေးသည်။",
+    "zh": "Fastwork 上一位卖家（已售 36 次）标价：LINE OA 聊天机器人 5 天 ฿15,000，8 天 ฿20,000，12 天 ฿30,000。第一档回答常见问题和价格，机器人答不了时把聊天转给真人管理员。",
+    "de": "Eine Verkäuferin oder ein Verkäufer auf Fastwork (36 Mal verkauft) bietet einen LINE-OA-Chatbot für ฿15,000 in 5 Tagen, ฿20,000 in 8 Tagen und ฿30,000 in 12 Tagen an. Das erste Paket beantwortet häufige Fragen und Preise und übergibt den Chat an einen Menschen als Admin, wenn der Bot nicht antworten kann."
+   },
+   "src": "https://fastwork.co/user/mos_lazyhardwork/chatbot-57678051"
+  }
+ ],
+ "related": [
+  "ai-assistant",
+  "cs-desk",
+  "web-line",
+  "ai-automation",
+  "hotelpage",
+  "ordering"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "LINE for Business Thailand: Official Account plans and message prices",
+    "th": "LINE for Business ประเทศไทย: แพ็กเกจและราคาข้อความของ Official Account",
+    "my": "LINE for Business ထိုင်း - Official Account ပက်ကေ့ချ်များနှင့် မက်ဆေ့ချ်စျေးနှုန်းများ",
+    "zh": "LINE for Business 泰国：官方账号套餐与消息价格",
+    "de": "LINE for Business Thailand: Tarife und Nachrichtenpreise des Official Account"
+   },
+   "href": "https://lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "t": {
+    "en": "LINE Developers: Messaging API pricing and how messages are counted",
+    "th": "LINE Developers: ราคา Messaging API และวิธีนับข้อความ",
+    "my": "LINE Developers - Messaging API စျေးနှုန်းနှင့် မက်ဆေ့ချ်ရေတွက်ပုံ",
+    "zh": "LINE Developers：Messaging API 的价格与消息计数方式",
+    "de": "LINE Developers: Preise der Messaging API und wie Nachrichten gezählt werden"
+   },
+   "href": "https://developers.line.biz/en/docs/messaging-api/pricing/"
+  },
+  {
+   "t": {
+    "en": "LINE Developers: receiving messages through a webhook",
+    "th": "LINE Developers: การรับข้อความผ่าน webhook",
+    "my": "LINE Developers - webhook မှတစ်ဆင့် မက်ဆေ့ချ်လက်ခံခြင်း",
+    "zh": "LINE Developers：通过 webhook 接收消息",
+    "de": "LINE Developers: Nachrichten über einen Webhook empfangen"
+   },
+   "href": "https://developers.line.biz/en/docs/messaging-api/receiving-messages/"
+  },
+  {
+   "t": {
+    "en": "LINE Developers: using rich menus",
+    "th": "LINE Developers: การใช้ rich menu",
+    "my": "LINE Developers - rich menu အသုံးပြုခြင်း",
+    "zh": "LINE Developers：使用 rich menu",
+    "de": "LINE Developers: Rich Menus verwenden"
+   },
+   "href": "https://developers.line.biz/en/docs/messaging-api/using-rich-menus/"
+  }
+ ],
+ "glyphs": [
+  "chat",
+  "compass",
+  "home"
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "id": "lang-leaves",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Palm-leaf and folded-paper manuscripts in Tai Tham script, also called Lanna script, come out as text in Thai letters that more people can read.",
+  "th": "ใบลานและพับสาอักษรธรรมล้านนา ซึ่ง Unicode เรียกอีกชื่อว่าอักษร Lanna เมื่อปริวรรตเป็นอักษรไทยแล้วคนอ่านได้มากขึ้น",
+  "my": "Tai Tham အက္ခရာ (လန်နာအက္ခရာဟုလည်း ခေါ်သည်) ဖြင့် ရေးထားသည့် ပေရွက်နှင့် ခေါက်စက္ကူစာမူများကို ပိုမိုများပြားသော လူများ ဖတ်နိုင်သည့် ထိုင်းအက္ခရာစာသားအဖြစ် ရေးပေးသည်။",
+  "zh": "用兰纳文（Tai Tham）写成的贝叶经和折叠纸本，转写成泰文字母后，能让更多人读懂。",
+  "de": "Palmblatt- und Faltpapierhandschriften in Tai-Tham-Schrift, auch Lanna-Schrift genannt, werden in thailändischen Buchstaben ausgeschrieben, damit mehr Menschen sie lesen können."
+ },
+ "n": {
+  "de": "Lanna-Palmblatthandschrift gelesen"
+ },
+ "l": {
+  "de": "Tai-Tham-Schrift in thailändische Buchstaben übertragen."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You share the manuscript, leaf by leaf.",
+    "th": "คุณส่งต้นฉบับให้ทีละใบลาน",
+    "my": "သင်က စာမူကို ပေရွက်တစ်ရွက်ချင်းစီ ပေးပို့သည်။",
+    "zh": "您逐片提供手稿。",
+    "de": "Sie geben die Handschrift weiter, Blatt für Blatt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "A reader writes each leaf out in Thai script.",
+    "th": "ผู้อ่านปริวรรตแต่ละใบลานเป็นอักษรไทย",
+    "my": "ဖတ်သူက ပေရွက်တစ်ရွက်ချင်းစီကို ထိုင်းအက္ခရာဖြင့် ရေးပေးသည်။",
+    "zh": "识读者把每片贝叶转写成泰文。",
+    "de": "Eine Leserin schreibt jedes Blatt in thailändischer Schrift aus."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Leaf by leaf",
+    "th": "ทีละใบลาน",
+    "my": "ပေရွက်တစ်ရွက်ချင်း",
+    "zh": "逐片进行",
+    "de": "Blatt für Blatt"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "You get the text in Thai letters.",
+    "th": "คุณได้รับข้อความเป็นอักษรไทย",
+    "my": "သင်သည် ထိုင်းအက္ခရာဖြင့် ရေးထားသော စာသားကို ရရှိသည်။",
+    "zh": "您拿到泰文字母写成的文本。",
+    "de": "Sie erhalten den Text in thailändischen Buchstaben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံးအဆင့်",
+    "zh": "最后一步",
+    "de": "Am Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Unicode's chart for the Tai Tham block says the script is also known as Lanna as well as Old Tai Lue, and is used for the Khuen, Northern Thai and Tai Lue languages.",
+    "th": "แผนภูมิ Unicode ของบล็อก Tai Tham ระบุว่าอักษรนี้เรียกอีกชื่อว่า Lanna และ Old Tai Lue ใช้เขียนภาษาขึน คำเมือง และไทลื้อ",
+    "my": "Unicode ၏ Tai Tham block ဇယားတွင် ဤအက္ခရာကို Lanna နှင့် Old Tai Lue ဟုလည်း ခေါ်ပြီး Khuen၊ မြောက်ပိုင်းထိုင်းနှင့် Tai Lue ဘာသာစကားများအတွက် သုံးသည်ဟု ဖော်ပြသည်။",
+    "zh": "Unicode 的 Tai Tham 区块字符表写道，该文字又称 Lanna 和 Old Tai Lue，用于 Khuen、北部泰语和 Tai Lue（傣仂语）。",
+    "de": "Die Zeichentabelle von Unicode zum Block Tai Tham hält fest, dass die Schrift auch als Lanna und als Alt-Tai-Lue bekannt ist und für Khuen, Nordthai und Tai Lue dient."
+   },
+   "src": "https://www.unicode.org/charts/PDF/U1A20.pdf"
+  },
+  {
+   "t": {
+    "en": "The Digital Library of Northern Thai Manuscripts lists four collections online; the largest, from a 1987–1991 Chiang Mai University project, has 3,914 manuscripts and 159,564 images.",
+    "th": "ห้องสมุดดิจิทัลต้นฉบับล้านนา (Digital Library of Northern Thai Manuscripts) มีสี่คอลเลกชันออนไลน์ คอลเลกชันใหญ่สุดมาจากโครงการของมหาวิทยาลัยเชียงใหม่ปี 1987–1991 มี 3,914 ต้นฉบับ และ 159,564 ภาพ",
+    "my": "မြောက်ပိုင်းထိုင်းစာမူများ ဒစ်ဂျစ်တယ်စာကြည့်တိုက် (Digital Library of Northern Thai Manuscripts) တွင် အွန်လိုင်းစုစည်းမှု လေးခု ရှိပြီး အကြီးဆုံးသည် ချင်းမိုင်တက္ကသိုလ်၏ 1987–1991 စီမံကိန်းမှ ဖြစ်ကာ စာမူ 3,914 ခုနှင့် ဓာတ်ပုံ 159,564 ပုံ ပါသည်။",
+    "zh": "北部泰语手稿数字图书馆在线有四个馆藏；最大的一个来自清迈大学 1987–1991 年的项目，有 3,914 份手稿和 159,564 张图像。",
+    "de": "Die Digitale Bibliothek nordthailändischer Handschriften führt vier Sammlungen online; die grösste, aus einem Projekt der Universität Chiang Mai von 1987–1991, umfasst 3,914 Handschriften und 159,564 Bilder."
+   },
+   "src": "https://digital.crossasia.org/digital-library-of-northern-thai-manuscripts-about/?lang=en"
+  },
+  {
+   "t": {
+    "en": "Its texts are in Northern Thai (Lan Na), Tai Khuen, Tai Lue, Lao, Shan, Burmese and Pali, on subjects such as traditional law, customs, astrology, history, medicine and Jataka stories.",
+    "th": "ข้อความในคลังเป็นภาษาล้านนา ไทขึน ไทลื้อ ลาว ไทใหญ่ พม่า และบาลี ในหัวข้อเช่นกฎหมายจารีต ประเพณี โหราศาสตร์ ประวัติศาสตร์ การแพทย์ และชาดก",
+    "my": "စာမူများတွင် မြောက်ပိုင်းထိုင်း (Lan Na)၊ Tai Khuen၊ Tai Lue၊ လာအို၊ ရှမ်း၊ မြန်မာနှင့် ပါဠိဘာသာများ ပါဝင်ပြီး ရိုးရာဥပဒေ၊ ဓလေ့ထုံးစံ၊ ဗေဒင်၊ သမိုင်း၊ ဆေးပညာနှင့် ဇာတ်တော်များ စသည့် ခေါင်းစဉ်များ ရှိသည်။",
+    "zh": "文本使用北部泰语（兰纳）、Tai Khuen、Tai Lue、老挝语、掸语、缅甸语和巴利语，涉及传统法律、习俗、占星、历史、医药和本生经故事。",
+    "de": "Die Texte sind auf Nordthai (Lan Na), Tai Khuen, Tai Lue, Lao, Shan, Burmesisch und Pali verfasst; Themen sind unter anderem überliefertes Recht, Bräuche, Astrologie, Geschichte, Medizin und Jataka-Geschichten."
+   },
+   "src": "https://digital.crossasia.org/digital-library-of-northern-thai-manuscripts-about/?lang=en"
+  },
+  {
+   "t": {
+    "en": "A Fastwork transcriber describes transcription as turning a leaf's letters into Thai letters while keeping the leaf's own spelling, which differs from translating it into present-day Thai. The listing counts two pages to a leaf and 200 to 400 words to a page.",
+    "th": "ผู้รับถ่ายถอดบน Fastwork รายหนึ่งอธิบายว่าการถ่ายถอดคือการเปลี่ยนตัวอักษรในใบลานเป็นอักษรไทยโดยคงอักขรวิธีเดิมของใบลาน ไม่ใช่การแปลเป็นภาษาไทยปัจจุบัน และนับ 1 ใบลานมี 2 หน้า 1 หน้ามีประมาณ 200–400 คำ",
+    "my": "Fastwork ရှိ ကူးယူရေးသားသူတစ်ဦးက ကူးယူခြင်းဆိုသည်မှာ ပေရွက်၏ မူလစာလုံးပေါင်းကို ထိန်းထားပြီး ထိုင်းအက္ခရာသို့ ပြောင်းရေးခြင်းဖြစ်ပြီး ယနေ့ထိုင်းဘာသာသို့ ဘာသာပြန်ခြင်း မဟုတ်ဟု ရှင်းပြသည်။ ပေရွက်တစ်ရွက်တွင် မျက်နှာ 2 ခုရှိပြီး တစ်မျက်နှာလျှင် စကားလုံး 200 မှ 400 ခန့်ရှိသည်ဟု ရေတွက်သည်။",
+    "zh": "Fastwork 上一位转写者解释说，转写是把贝叶经上的文字换成泰文字母、保留经文原有拼写，不同于译成现代泰语；该页面按每片贝叶 2 面、每面约 200 至 400 词计。",
+    "de": "Ein Transkribierer auf Fastwork beschreibt das Übertragen so: Die Buchstaben eines Blattes werden in thailändische Buchstaben gesetzt, die Schreibweise des Blattes bleibt, und es wird nicht ins heutige Thai übersetzt. Die Anzeige zählt zwei Seiten pro Blatt und 200 bis 400 Wörter pro Seite."
+   },
+   "src": "https://fastwork.co/user/jameskon/translation-48828611"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Palm-leaf transcription into Thai letters (Tai Tham, Khom, Tham Isan, Thai Noi), a Fastwork seller",
+    "th": "ถ่ายถอดใบลานเป็นอักษรไทย (ธรรมล้านนา ขอม ธรรมอีสาน ไทยน้อย) ผู้ขายบน Fastwork",
+    "my": "ပေရွက်ကို ထိုင်းအက္ခရာသို့ ကူးယူရေးသားခြင်း (Tai Tham၊ ခမာ၊ Tham Isan၊ Thai Noi)၊ Fastwork ရောင်းသူတစ်ဦး",
+    "zh": "贝叶经转写为泰文（兰纳文、高棉文、伊森文、小泰文），Fastwork 卖家",
+    "de": "Palmblatt-Transkription in thailändische Buchstaben (Tai Tham, Khom, Tham Isan, Thai Noi), ein Anbieter auf Fastwork"
+   },
+   "p": {
+    "en": "฿300 a leaf page; a leaf has two pages",
+    "th": "หน้าใบลานละ ฿300 ใบลานหนึ่งใบมี 2 หน้า",
+    "my": "ပေရွက်မျက်နှာတစ်ခုလျှင် ฿300၊ ပေရွက်တစ်ရွက်တွင် မျက်နှာ 2 ခု ရှိသည်",
+    "zh": "每个贝叶页面 ฿300；一片贝叶有两面",
+    "de": "฿300 pro Blattseite; ein Blatt hat zwei Seiten"
+   },
+   "src": "https://fastwork.co/user/jameskon/translation-48828611"
+  },
+  {
+   "t": {
+    "en": "If the Thai text is then put into English: standard translation at a Bangkok agency",
+    "th": "ถ้าจะแปลข้อความภาษาไทยนั้นเป็นอังกฤษต่อ: แปลทั่วไปที่สำนักงานแปลในกรุงเทพฯ",
+    "my": "ထိုင်းစာသားကို ထို့နောက် အင်္ဂလိပ်သို့ ပြန်လိုလျှင်: ဘန်ကောက်ရှိ ဘာသာပြန်ကုမ္ပဏီတွင် ပုံမှန်ဘာသာပြန်",
+    "zh": "如果之后要把泰文文本译成英文：曼谷翻译公司的标准翻译",
+    "de": "Wenn der thailändische Text danach ins Englische übersetzt wird: Standardübersetzung bei einer Agentur in Bangkok"
+   },
+   "p": {
+    "en": "From ฿1.5 a word",
+    "th": "เริ่มต้นคำละ ฿1.5",
+    "my": "စကားလုံးတစ်လုံး ฿1.5 မှ စသည်",
+    "zh": "每词 ฿1.5 起",
+    "de": "ab ฿1.5 pro Wort"
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is Tai Tham script?",
+    "th": "อักษรธรรมล้านนาคืออะไร",
+    "my": "Tai Tham အက္ခရာဆိုတာ ဘာလဲ။",
+    "zh": "什么是兰纳文（Tai Tham）？",
+    "de": "Was ist die Tai-Tham-Schrift?"
+   },
+   "a": {
+    "en": "Unicode's chart says Tai Tham is also known as Lanna and as Old Tai Lue, and is used for the Khuen, Northern Thai and Tai Lue languages. Its Unicode block runs from U+1A20 to U+1AAF.",
+    "th": "แผนภูมิ Unicode ระบุว่า Tai Tham เรียกอีกชื่อว่า Lanna และ Old Tai Lue ใช้เขียนภาษาขึน คำเมือง และไทลื้อ บล็อกใน Unicode อยู่ที่ U+1A20 ถึง U+1AAF",
+    "my": "Unicode ဇယားတွင် Tai Tham ကို Lanna နှင့် Old Tai Lue ဟုလည်း ခေါ်ပြီး Khuen၊ မြောက်ပိုင်းထိုင်းနှင့် Tai Lue ဘာသာစကားများအတွက် သုံးသည်ဟု ဆိုသည်။ ၎င်း၏ Unicode block သည် U+1A20 မှ U+1AAF အထိဖြစ်သည်။",
+    "zh": "Unicode 字符表写道，Tai Tham 又称 Lanna 和 Old Tai Lue，用于 Khuen、北部泰语和 Tai Lue；其 Unicode 区块范围为 U+1A20 至 U+1AAF。",
+    "de": "Laut Unicode-Tabelle ist Tai Tham auch als Lanna und als Alt-Tai-Lue bekannt und dient für Khuen, Nordthai und Tai Lue. Der Unicode-Block reicht von U+1A20 bis U+1AAF."
+   },
+   "src": "https://www.unicode.org/charts/PDF/U1A20.pdf"
+  },
+  {
+   "q": {
+    "en": "Is transcribing a leaf the same as translating it?",
+    "th": "การถ่ายถอดใบลานเหมือนการแปลไหม",
+    "my": "ပေရွက်ကို ကူးယူရေးသားခြင်းနှင့် ဘာသာပြန်ခြင်း အတူတူပဲလား။",
+    "zh": "转写贝叶经和翻译它是一回事吗？",
+    "de": "Ist das Übertragen eines Blattes dasselbe wie Übersetzen?"
+   },
+   "a": {
+    "en": "A Fastwork transcriber says no: transcription changes the leaf's letters into Thai letters and keeps the leaf's spelling, so the result can be turned back into the original letters. Translation into present-day Thai is a different job.",
+    "th": "ผู้รับถ่ายถอดบน Fastwork รายหนึ่งตอบว่าไม่เหมือน การถ่ายถอดคือเปลี่ยนตัวอักษรในใบลานเป็นอักษรไทยและคงอักขรวิธีเดิม ผลงานจึงแปลงกลับเป็นอักษรเดิมได้ การแปลเป็นภาษาไทยปัจจุบันเป็นงานอีกอย่างหนึ่ง",
+    "my": "Fastwork ရှိ ကူးယူရေးသားသူတစ်ဦးက မတူဟု ဆိုသည်၊ ကူးယူခြင်းသည် ပေရွက်ပေါ်က အက္ခရာများကို ထိုင်းအက္ခရာသို့ ပြောင်းပြီး ပေရွက်၏ စာလုံးပေါင်းကို ထိန်းထားသောကြောင့် ရလဒ်ကို မူလအက္ခရာသို့ ပြန်ပြောင်းနိုင်သည်။ ယနေ့ထိုင်းဘာသာသို့ ဘာသာပြန်ခြင်းမှာ အခြားအလုပ်တစ်ခု ဖြစ်သည်။",
+    "zh": "Fastwork 上一位转写者说不是一回事：转写把贝叶经上的文字换成泰文字母并保留原有拼写，所以结果可以还原成原来的文字。译成现代泰语是另一项工作。",
+    "de": "Ein Transkribierer auf Fastwork sagt nein: Beim Übertragen werden die Buchstaben des Blattes in thailändische Buchstaben gesetzt und die Schreibweise des Blattes bleibt, sodass sich das Ergebnis in die Originalbuchstaben zurückführen lässt. Das Übersetzen ins heutige Thai ist eine andere Arbeit."
+   },
+   "src": "https://fastwork.co/user/jameskon/translation-48828611"
+  },
+  {
+   "q": {
+    "en": "How many northern Thai manuscripts are online?",
+    "th": "มีต้นฉบับล้านนาออนไลน์กี่ฉบับ",
+    "my": "မြောက်ပိုင်းထိုင်းစာမူ အွန်လိုင်းတွင် ဘယ်လောက်ရှိသလဲ။",
+    "zh": "网上有多少北部泰语手稿？",
+    "de": "Wie viele nordthailändische Handschriften sind online?"
+   },
+   "a": {
+    "en": "The Digital Library of Northern Thai Manuscripts lists four collections of 3,914, 1,051, 991 and 181 manuscripts. The page says some texts appear in more than one collection.",
+    "th": "ห้องสมุดดิจิทัลต้นฉบับล้านนามีสี่คอลเลกชัน จำนวน 3,914 1,051 991 และ 181 ต้นฉบับ หน้าเว็บระบุว่าบางข้อความปรากฏในมากกว่าหนึ่งคอลเลกชัน",
+    "my": "မြောက်ပိုင်းထိုင်းစာမူများ ဒစ်ဂျစ်တယ်စာကြည့်တိုက်တွင် စာမူ 3,914၊ 1,051၊ 991 နှင့် 181 ပါသော စုစည်းမှု လေးခု ရှိသည်။ စာသားအချို့သည် စုစည်းမှုတစ်ခုထက်ပိုပြီး ပါဝင်သည်ဟု စာမျက်နှာက ဆိုသည်။",
+    "zh": "北部泰语手稿数字图书馆有四个馆藏，分别为 3,914、1,051、991 和 181 份手稿。页面写明，部分文本出现在不止一个馆藏中。",
+    "de": "Die Digitale Bibliothek nordthailändischer Handschriften führt vier Sammlungen mit 3,914, 1,051, 991 und 181 Handschriften. Die Seite hält fest, dass einige Texte in mehr als einer Sammlung vorkommen."
+   },
+   "src": "https://digital.crossasia.org/digital-library-of-northern-thai-manuscripts-about/?lang=en"
+  },
+  {
+   "q": {
+    "en": "How much does a palm-leaf transcription cost?",
+    "th": "ถ่ายถอดใบลานราคาเท่าไร",
+    "my": "ပေရွက်ကူးယူရေးသားခ ဘယ်လောက်လဲ။",
+    "zh": "贝叶经转写要多少钱？",
+    "de": "Was kostet die Transkription eines Palmblatts?"
+   },
+   "a": {
+    "en": "A Fastwork transcriber lists ฿300 for a leaf page, and a leaf has two pages. The listing gives 7 days of work, Word and PDF files, and about 6 days for a 24-page manuscript, weekends not counted.",
+    "th": "ผู้รับถ่ายถอดบน Fastwork รายหนึ่งตั้งราคาหน้าใบลานละ ฿300 และใบลานหนึ่งใบมี 2 หน้า ระบุระยะเวลาทำงาน 7 วัน ส่งไฟล์ Word และ PDF และคัมภีร์ 24 หน้าใช้เวลาประมาณ 6 วัน ไม่รวมวันเสาร์อาทิตย์",
+    "my": "Fastwork ရှိ ကူးယူရေးသားသူတစ်ဦးက ပေရွက်မျက်နှာတစ်ခုလျှင် ฿300 ဟု သတ်မှတ်ပြီး ပေရွက်တစ်ရွက်တွင် မျက်နှာ 2 ခုရှိသည်။ အလုပ်လုပ်ချိန် 7 ရက်၊ Word နှင့် PDF ဖိုင်များ ပေးပို့ပြီး မျက်နှာ 24 ခုပါ စာမူအတွက် စနေ၊ တနင်္ဂနွေမပါ 6 ရက်ခန့် ကြာသည်။",
+    "zh": "Fastwork 上一位转写者标价每个贝叶页面 ฿300，一片贝叶有两面。页面写明工期 7 天，交付 Word 和 PDF 文件，24 页的手稿约需 6 天，周末不计。",
+    "de": "Ein Transkribierer auf Fastwork verlangt ฿300 pro Blattseite, und ein Blatt hat zwei Seiten. Die Anzeige nennt 7 Tage Arbeitszeit, Word- und PDF-Dateien und etwa 6 Tage für ein Manuskript mit 24 Seiten, Wochenenden nicht mitgezählt."
+   },
+   "src": "https://fastwork.co/user/jameskon/translation-48828611"
+  }
+ ],
+ "related": [
+  "romanise",
+  "lang-shan",
+  "translate",
+  "lang-pages",
+  "reading",
+  "thai-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Digital Library of Northern Thai Manuscripts (CrossAsia)",
+    "th": "ห้องสมุดดิจิทัลต้นฉบับล้านนา (CrossAsia)",
+    "my": "မြောက်ပိုင်းထိုင်းစာမူများ ဒစ်ဂျစ်တယ်စာကြည့်တိုက် (CrossAsia)",
+    "zh": "北部泰语手稿数字图书馆（CrossAsia）",
+    "de": "Digitale Bibliothek nordthailändischer Handschriften (CrossAsia)"
+   },
+   "href": "https://digital.crossasia.org/digital-library-of-northern-thai-manuscripts-about/?lang=en"
+  },
+  {
+   "t": {
+    "en": "Unicode chart: Tai Tham block",
+    "th": "แผนภูมิ Unicode: บล็อก Tai Tham",
+    "my": "Unicode ဇယား: Tai Tham block",
+    "zh": "Unicode 字符表：Tai Tham 区块",
+    "de": "Unicode-Tabelle: Block Tai Tham"
+   },
+   "href": "https://www.unicode.org/charts/PDF/U1A20.pdf"
+  }
+ ],
+ "glyphs": [
+  "leaf",
+  "nib",
+  "page"
+ ]
+}

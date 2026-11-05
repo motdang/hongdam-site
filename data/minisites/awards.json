@@ -1,0 +1,302 @@
+{
+ "id": "awards",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A cyber-security award is decided from a written entry, so the entry has to say what the work was and show the evidence.",
+  "th": "รางวัลด้านความปลอดภัยไซเบอร์ตัดสินจากเอกสารที่ส่งเข้าประกวด เอกสารจึงต้องบอกว่างานคืออะไรและแสดงหลักฐาน",
+  "my": "ဆိုက်ဘာလုံခြုံရေးဆုကို ရေးသားတင်သွင်းသော ဝင်ရောက်စာဖြင့် ဆုံးဖြတ်သောကြောင့် ထိုစာတွင် လုပ်ငန်းက ဘာလဲဆိုသည်ကို ပြောပြီး သက်သေအထောက်အထားကို ပြရမည်။",
+  "zh": "网络安全奖项根据书面申报材料评定，所以材料要写明做了什么工作，并附上证据。",
+  "de": "Über eine Auszeichnung für Cybersicherheit entscheidet die schriftliche Bewerbung. Sie muss sagen, was die Arbeit war, und die Belege zeigen."
+ },
+ "n": {
+  "de": "Bewerbung um eine Auszeichnung"
+ },
+ "l": {
+  "de": "Für eine Cybersecurity-Auszeichnung, aus Ihrer Arbeit erstellt."
+ },
+ "steps": [
+  {
+   "db": "parcel",
+   "t": {
+    "en": "You send your work and its evidence.",
+    "th": "คุณส่งผลงานและหลักฐานของคุณ",
+    "my": "သင့်လက်ရာနှင့် သက်သေအထောက်အထားကို သင်ပို့ပေးသည်။",
+    "zh": "您提供业绩和证据材料。",
+    "de": "Sie schicken Ihre Arbeit und die Belege."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "Hongdam writes the entry from that work and evidence.",
+    "th": "หงส์ดำเขียนเอกสารส่งประกวดจากผลงานและหลักฐานนั้น",
+    "my": "ဟုန်ဒမ်က ထိုလက်ရာနှင့် သက်သေများမှ ဝင်ရောက်စာကို ရေးသားသည်။",
+    "zh": "鸿丹根据这些业绩和证据撰写申报材料。",
+    "de": "Hongdam schreibt die Bewerbung aus dieser Arbeit und diesen Belegen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "The written entry goes back to you.",
+    "th": "เอกสารที่เขียนเสร็จส่งกลับถึงคุณ",
+    "my": "ရေးပြီးသော ဝင်ရောက်စာကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "写好的申报材料交还给您。",
+    "de": "Die fertige Bewerbung geht an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The SC Awards FAQ lists an entry fee of US$400 at the early-bird rate and US$625 at the standard rate, per entry.",
+    "th": "คำถามที่พบบ่อยของ SC Awards ระบุค่าสมัครรายการละ US$400 ในช่วงก่อนกำหนด และ US$625 ในอัตราปกติ",
+    "my": "SC Awards ၏ မေးလေ့ရှိသောမေးခွန်းများတွင် ဝင်ရောက်ခကို တစ်ခုလျှင် US$400 (စောစီးဝင်ရောက်သူနှုန်း) နှင့် US$625 (ပုံမှန်နှုန်း) ဟု ဖော်ပြထားသည်။",
+    "zh": "SC Awards 的常见问题页列出每份申报的报名费：早鸟价 US$400，标准价 US$625。",
+    "de": "Die FAQ der SC Awards nennt eine Gebühr je Bewerbung von US$400 (Frühbucher) und US$625 (Standard)."
+   },
+   "src": "https://scawards.secure-platform.com/a/page/FAQs"
+  },
+  {
+   "t": {
+    "en": "The Cybersecurity Excellence Awards are open to cybersecurity organizations and professionals worldwide. An entry has a summary of under 300 words, three reasons it stands out, up to three images and supporting evidence.",
+    "th": "รางวัล Cybersecurity Excellence Awards เปิดรับองค์กรและผู้เชี่ยวชาญด้านความปลอดภัยไซเบอร์ทั่วโลก เอกสารมีบทสรุปไม่ถึง 300 คำ เหตุผลสามข้อที่โดดเด่น ภาพไม่เกินสามภาพ และหลักฐานประกอบ",
+    "my": "Cybersecurity Excellence Awards သည် ကမ္ဘာတစ်ဝန်းရှိ ဆိုက်ဘာလုံခြုံရေး အဖွဲ့အစည်းများနှင့် ကျွမ်းကျင်သူများအတွက် ဖွင့်ထားသည်။ ဝင်ရောက်စာတွင် စကားလုံး 300 အောက် အနှစ်ချုပ်၊ ထူးခြားသည့် အကြောင်းရင်း သုံးခု၊ ပုံ သုံးပုံအထိနှင့် အထောက်အထားများ ပါသည်။",
+    "zh": "Cybersecurity Excellence Awards 面向全球的网络安全机构和从业者。申报内容包括不足 300 词的摘要、三条突出理由、最多三张图片和佐证材料。",
+    "de": "Die Cybersecurity Excellence Awards stehen Organisationen und Fachleuten für Cybersicherheit weltweit offen. Eine Bewerbung besteht aus einer Zusammenfassung unter 300 Wörtern, drei Gründen, warum sie auffällt, bis zu drei Bildern und Belegen."
+   },
+   "src": "https://cybersecurity-excellence-awards.com/"
+  },
+  {
+   "t": {
+    "en": "Practitioner judges at the Cybersecurity Excellence Awards assess innovation, impact and leadership. The site gives 27 February 2027 as the date entries close.",
+    "th": "ผู้ตัดสินที่เป็นผู้ปฏิบัติงานในสายนี้ของ Cybersecurity Excellence Awards ประเมินนวัตกรรม ผลกระทบ และความเป็นผู้นำ เว็บไซต์ระบุวันปิดรับผลงานคือ 27 กุมภาพันธ์ 2027",
+    "my": "Cybersecurity Excellence Awards ၏ လုပ်ငန်းခွင်ကျွမ်းကျင်သူ ဒိုင်လူကြီးများက တီထွင်ဆန်းသစ်မှု၊ သက်ရောက်မှုနှင့် ဦးဆောင်မှုကို အကဲဖြတ်သည်။ ဝက်ဘ်ဆိုက်တွင် ဝင်ရောက်စာ ပိတ်ရက်ကို 2027 ခုနှစ် ဖေဖော်ဝါရီ 27 ရက်ဟု ဖော်ပြထားသည်။",
+    "zh": "Cybersecurity Excellence Awards 由业内从业者担任评委，评审创新、影响力和领导力。网站给出的报名截止日期是 2027 年 2 月 27 日。",
+    "de": "Die Jury der Cybersecurity Excellence Awards besteht aus Fachleuten aus der Praxis und bewertet Innovation, Wirkung und Führung. Die Website nennt den 27. Februar 2027 als Einsendeschluss."
+   },
+   "src": "https://cybersecurity-excellence-awards.com/"
+  },
+  {
+   "t": {
+    "en": "The SC Awards 2024 entry kit lists vendors and providers with current operations in the US or Canada as eligible. It asks for an image with an entry, at least 1000 pixels wide, and a logo alone does not count.",
+    "th": "ชุดข้อมูลการสมัคร SC Awards ปี 2024 ระบุว่าผู้ขายและผู้ให้บริการที่ดำเนินงานอยู่ในสหรัฐฯ หรือแคนาดามีสิทธิ์สมัคร และต้องแนบภาพกว้างอย่างน้อย 1000 พิกเซลมากับผลงาน โลโก้อย่างเดียวไม่นับ",
+    "my": "SC Awards 2024 ဝင်ရောက်ခွင့်ပစ္စည်းအစုတွင် အမေရိကန် သို့မဟုတ် ကနေဒါ၌ လက်ရှိ လုပ်ငန်းလည်ပတ်နေသော ရောင်းချသူနှင့် ဝန်ဆောင်မှုပေးသူများ အရည်အချင်းပြည့်မီသည်ဟု ဖော်ပြထားသည်။ ဝင်ရောက်စာနှင့်အတူ အနည်းဆုံး ပစ်ဆယ် 1000 ကျယ်သော ပုံတစ်ပုံ လိုပြီး လိုဂိုတစ်ခုတည်းကို လက်မခံပါ။",
+    "zh": "SC Awards 2024 申报手册列出的参选资格是在美国或加拿大有现行业务的厂商和服务商。每份申报要附一张宽度至少 1000 像素的图片，只有标志不算。",
+    "de": "Das Bewerbungsheft der SC Awards 2024 nennt Anbieter und Dienstleister mit laufendem Geschäft in den USA oder Kanada als teilnahmeberechtigt. Zur Bewerbung gehört ein Bild von mindestens 1000 Pixeln Breite, ein Logo allein zählt nicht."
+   },
+   "src": "https://openwater-os.secure-platform.com/quicklyuploadfiles/file/2024_SC-Awards_Entry-Kit.pdf"
+  },
+  {
+   "t": {
+    "en": "One UK award writer asks for figures, customer feedback and third-party proof, and for at least four weeks before the closing date.",
+    "th": "ผู้เขียนเอกสารประกวดรางวัลรายหนึ่งในสหราชอาณาจักรขอตัวเลข คำติชมจากลูกค้า และหลักฐานจากบุคคลที่สาม และขอเวลาอย่างน้อยสี่สัปดาห์ก่อนวันปิดรับ",
+    "my": "ယူကေရှိ ဆုဝင်ရောက်စာ ရေးသားသူတစ်ဦးက ကိန်းဂဏန်းများ၊ ဖောက်သည်အကြံပြုချက်နှင့် ပြင်ပလူတစ်ဦး၏ သက်သေကို တောင်းပြီး ပိတ်ရက်မတိုင်မီ အနည်းဆုံး လေးပတ် လိုသည်ဟု ဆိုသည်။",
+    "zh": "英国一家奖项申报撰稿机构要求提供数据、客户反馈和第三方证明，并要求在截止日前至少四周开始。",
+    "de": "Ein britischer Schreibdienst für Award-Bewerbungen verlangt Zahlen, Kundenrückmeldungen und Belege Dritter und mindestens vier Wochen vor Einsendeschluss."
+   },
+   "src": "https://augustawards.com/business-award-entry-writing"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Award entry writing from Azendia, UK: research, a discovery call, copywriting, two rounds of edits, proofreading and submission",
+    "th": "บริการเขียนเอกสารประกวดรางวัลจาก Azendia สหราชอาณาจักร ได้แก่ การค้นคว้า การคุยปรึกษา การเขียน การแก้ไขสองรอบ การพิสูจน์อักษร และการส่งผลงาน",
+    "my": "ယူကေ Azendia ၏ ဆုဝင်ရောက်စာ ရေးသားမှု - သုတေသန၊ ဆွေးနွေးခေါ်ဆိုမှု၊ ရေးသားမှု၊ ပြင်ဆင်မှု နှစ်ကြိမ်၊ စာတိုက်စစ်ဆေးမှုနှင့် တင်သွင်းမှု",
+    "zh": "英国 Azendia 的奖项申报撰写服务：调研、沟通电话、文案撰写、两轮修改、校对和提交",
+    "de": "Bewerbungsschreiben bei Azendia, Grossbritannien: Recherche, Erstgespräch, Texten, zwei Korrekturrunden, Lektorat und Einreichung"
+   },
+   "p": {
+    "en": "From £1,200 for one award, plus the award's entry fee",
+    "th": "เริ่ม £1,200 ต่อหนึ่งรางวัล บวกค่าสมัครของรางวัล",
+    "my": "ဆုတစ်ခုလျှင် £1,200 မှ စတင်ပြီး ဆု၏ ဝင်ရောက်ခ ထပ်ပေါင်းသည်",
+    "zh": "单个奖项起价 £1,200，另加奖项的报名费",
+    "de": "Ab £1,200 für eine Auszeichnung, plus die Teilnahmegebühr der Auszeichnung"
+   },
+   "src": "https://azendia.com/award-writing-services/"
+  },
+  {
+   "t": {
+    "en": "Entry fee to the SC Awards, per entry",
+    "th": "ค่าสมัคร SC Awards ต่อหนึ่งรายการ",
+    "my": "SC Awards ဝင်ရောက်ခ၊ တစ်ခုလျှင်",
+    "zh": "SC Awards 每份申报的报名费",
+    "de": "Teilnahmegebühr der SC Awards, je Bewerbung"
+   },
+   "p": {
+    "en": "US$400 early bird; US$625 standard",
+    "th": "US$400 ช่วงก่อนกำหนด US$625 อัตราปกติ",
+    "my": "US$400 စောစီးနှုန်း၊ US$625 ပုံမှန်နှုန်း",
+    "zh": "早鸟价 US$400，标准价 US$625",
+    "de": "US$400 Frühbucher, US$625 Standard"
+   },
+   "src": "https://scawards.secure-platform.com/a/page/FAQs"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does an award entry writer do?",
+    "th": "ผู้เขียนเอกสารประกวดรางวัลทำอะไรบ้าง",
+    "my": "ဆုဝင်ရောက်စာ ရေးသားသူက ဘာလုပ်ပေးသလဲ။",
+    "zh": "奖项申报撰稿人做什么？",
+    "de": "Was macht ein Schreibdienst für Award-Bewerbungen?"
+   },
+   "a": {
+    "en": "One UK writer lists background research, a one-hour discovery call, award entry copywriting, two rounds of edits, a follow-up call as required, proofreading and submission of the entry.",
+    "th": "ผู้เขียนรายหนึ่งในสหราชอาณาจักรระบุบริการไว้ดังนี้ ค้นคว้าข้อมูลเบื้องต้น คุยปรึกษาหนึ่งชั่วโมง เขียนเอกสารประกวด แก้ไขสองรอบ โทรติดตามเมื่อจำเป็น พิสูจน์อักษร และส่งผลงาน",
+    "my": "ယူကေရှိ ရေးသားသူတစ်ဦးက နောက်ခံသုတေသန၊ တစ်နာရီ ဆွေးနွေးခေါ်ဆိုမှု၊ ဆုဝင်ရောက်စာ ရေးသားမှု၊ ပြင်ဆင်မှု နှစ်ကြိမ်၊ လိုအပ်လျှင် နောက်ဆက်တွဲ ခေါ်ဆိုမှု၊ စာတိုက်စစ်ဆေးမှုနှင့် ဝင်ရောက်စာ တင်သွင်းမှုတို့ကို ဖော်ပြသည်။",
+    "zh": "英国一家撰稿机构列出的服务有：背景调研、一小时沟通电话、申报文案撰写、两轮修改、必要时的跟进电话、校对和提交申报。",
+    "de": "Ein britischer Dienst nennt Hintergrundrecherche, ein einstündiges Erstgespräch, das Texten der Bewerbung, zwei Korrekturrunden, bei Bedarf ein Folgegespräch, Lektorat und die Einreichung."
+   },
+   "src": "https://azendia.com/award-writing-services/"
+  },
+  {
+   "q": {
+    "en": "What does it cost to enter a cyber-security award?",
+    "th": "การสมัครรางวัลด้านความปลอดภัยไซเบอร์มีค่าใช้จ่ายเท่าไร",
+    "my": "ဆိုက်ဘာလုံခြုံရေးဆုတစ်ခုကို ဝင်ရောက်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "参加网络安全奖项的报名费是多少？",
+    "de": "Was kostet die Teilnahme an einer Cybersecurity-Auszeichnung?"
+   },
+   "a": {
+    "en": "The SC Awards FAQ lists US$400 per entry at the early-bird rate and US$625 per entry at the standard rate. The Cybersecurity Excellence Awards send entrants to a separate fees page.",
+    "th": "คำถามที่พบบ่อยของ SC Awards ระบุ US$400 ต่อรายการในช่วงก่อนกำหนด และ US$625 ต่อรายการในอัตราปกติ ส่วน Cybersecurity Excellence Awards ให้ไปดูหน้าค่าธรรมเนียมแยกต่างหาก",
+    "my": "SC Awards ၏ မေးလေ့ရှိသောမေးခွန်းများတွင် စောစီးနှုန်းအနေဖြင့် တစ်ခုလျှင် US$400 နှင့် ပုံမှန်နှုန်းအနေဖြင့် တစ်ခုလျှင် US$625 ဟု ဖော်ပြထားသည်။ Cybersecurity Excellence Awards က ကြေးနှုန်းကို သီးခြားစာမျက်နှာတွင် ကြည့်ရန် ညွှန်ထားသည်။",
+    "zh": "SC Awards 常见问题页列出：早鸟价每份 US$400，标准价每份 US$625。Cybersecurity Excellence Awards 把报名者引到单独的费用页面。",
+    "de": "Die FAQ der SC Awards nennt US$400 je Bewerbung zum Frühbucherpreis und US$625 je Bewerbung zum Standardpreis. Die Cybersecurity Excellence Awards verweisen auf eine eigene Gebührenseite."
+   },
+   "src": "https://scawards.secure-platform.com/a/page/FAQs"
+  },
+  {
+   "q": {
+    "en": "What does a cyber-security award entry contain?",
+    "th": "เอกสารส่งประกวดรางวัลด้านความปลอดภัยไซเบอร์มีอะไรบ้าง",
+    "my": "ဆိုက်ဘာလုံခြုံရေးဆု ဝင်ရောက်စာတွင် ဘာတွေ ပါသလဲ။",
+    "zh": "网络安全奖项的申报材料包含什么？",
+    "de": "Was enthält die Bewerbung für eine Cybersecurity-Auszeichnung?"
+   },
+   "a": {
+    "en": "The Cybersecurity Excellence Awards ask for a summary of under 300 words, three reasons the entry stands out, up to three images and supporting evidence. Judges assess innovation, impact and leadership.",
+    "th": "Cybersecurity Excellence Awards ขอบทสรุปไม่ถึง 300 คำ เหตุผลสามข้อที่ผลงานโดดเด่น ภาพไม่เกินสามภาพ และหลักฐานประกอบ ผู้ตัดสินประเมินนวัตกรรม ผลกระทบ และความเป็นผู้นำ",
+    "my": "Cybersecurity Excellence Awards က စကားလုံး 300 အောက် အနှစ်ချုပ်၊ ဝင်ရောက်စာ ထူးခြားသည့် အကြောင်းရင်း သုံးခု၊ ပုံ သုံးပုံအထိနှင့် အထောက်အထားများကို တောင်းသည်။ ဒိုင်လူကြီးများက တီထွင်ဆန်းသစ်မှု၊ သက်ရောက်မှုနှင့် ဦးဆောင်မှုကို အကဲဖြတ်သည်။",
+    "zh": "Cybersecurity Excellence Awards 要求提交不足 300 词的摘要、三条突出理由、最多三张图片和佐证材料。评委评审创新、影响力和领导力。",
+    "de": "Die Cybersecurity Excellence Awards verlangen eine Zusammenfassung unter 300 Wörtern, drei Gründe, warum die Bewerbung auffällt, bis zu drei Bilder und Belege. Die Jury bewertet Innovation, Wirkung und Führung."
+   },
+   "src": "https://cybersecurity-excellence-awards.com/"
+  },
+  {
+   "q": {
+    "en": "Can a company in Thailand enter a cyber-security award?",
+    "th": "บริษัทในไทยสมัครรางวัลด้านความปลอดภัยไซเบอร์ได้ไหม",
+    "my": "ထိုင်းနိုင်ငံရှိ ကုမ္ပဏီတစ်ခုက ဆိုက်ဘာလုံခြုံရေးဆုကို ဝင်ရောက်နိုင်ပါသလား။",
+    "zh": "泰国的公司可以参加网络安全奖项吗？",
+    "de": "Kann sich eine Firma in Thailand um eine Cybersecurity-Auszeichnung bewerben?"
+   },
+   "a": {
+    "en": "Some awards are open to it. The Cybersecurity Excellence Awards say they are open to cybersecurity organizations and professionals worldwide, with no country limit listed.",
+    "th": "บางรางวัลเปิดรับ Cybersecurity Excellence Awards ระบุว่าเปิดรับองค์กรและผู้เชี่ยวชาญด้านความปลอดภัยไซเบอร์ทั่วโลก และไม่ได้ระบุข้อจำกัดเรื่องประเทศ",
+    "my": "ဆုအချို့က လက်ခံသည်။ Cybersecurity Excellence Awards က ကမ္ဘာတစ်ဝန်းရှိ ဆိုက်ဘာလုံခြုံရေး အဖွဲ့အစည်းနှင့် ကျွမ်းကျင်သူများအတွက် ဖွင့်ထားသည်ဟု ဆိုပြီး နိုင်ငံအကန့်အသတ် မဖော်ပြပါ။",
+    "zh": "有些奖项接受。Cybersecurity Excellence Awards 表示面向全球的网络安全机构和从业者，没有列出国家限制。",
+    "de": "Manche Auszeichnungen stehen offen. Die Cybersecurity Excellence Awards nennen sich offen für Organisationen und Fachleute für Cybersicherheit weltweit, eine Länderbeschränkung steht dort nicht."
+   },
+   "src": "https://cybersecurity-excellence-awards.com/"
+  },
+  {
+   "q": {
+    "en": "How much time does an award writer ask for?",
+    "th": "ผู้เขียนเอกสารประกวดรางวัลขอเวลานานเท่าไร",
+    "my": "ဆုဝင်ရောက်စာ ရေးသားသူက အချိန် ဘယ်လောက် တောင်းသလဲ။",
+    "zh": "奖项申报撰稿机构要求多少时间？",
+    "de": "Wie viel Zeit verlangt ein Schreibdienst für Award-Bewerbungen?"
+   },
+   "a": {
+    "en": "One UK award writer asks for at least four weeks before the closing date, and says most of that time goes to finding and checking evidence.",
+    "th": "ผู้เขียนเอกสารประกวดรางวัลรายหนึ่งในสหราชอาณาจักรขอเวลาอย่างน้อยสี่สัปดาห์ก่อนวันปิดรับ และบอกว่าเวลาส่วนใหญ่ใช้ไปกับการหาและตรวจหลักฐาน",
+    "my": "ယူကေရှိ ဆုဝင်ရောက်စာ ရေးသားသူတစ်ဦးက ပိတ်ရက်မတိုင်မီ အနည်းဆုံး လေးပတ် လိုသည်ဟု ဆိုပြီး ထိုအချိန်အများစုမှာ သက်သေများ ရှာဖွေစစ်ဆေးရာတွင် ကုန်သည်ဟု ဆိုသည်။",
+    "zh": "英国一家奖项申报撰稿机构要求在截止日前至少四周开始，并说明其中大部分时间用于查找和核对证据。",
+    "de": "Ein britischer Schreibdienst verlangt mindestens vier Wochen vor Einsendeschluss und sagt, die meiste Zeit gehe für das Finden und Prüfen der Belege auf."
+   },
+   "src": "https://augustawards.com/business-award-entry-writing"
+  }
+ ],
+ "related": [
+  "proposal",
+  "decks",
+  "graphics",
+  "article",
+  "video",
+  "research"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Cybersecurity Excellence Awards: how to enter",
+    "th": "Cybersecurity Excellence Awards: วิธีสมัคร",
+    "my": "Cybersecurity Excellence Awards: ဝင်ရောက်ပုံ",
+    "zh": "Cybersecurity Excellence Awards：如何报名",
+    "de": "Cybersecurity Excellence Awards: so melden Sie sich an"
+   },
+   "href": "https://cybersecurity-excellence-awards.com/"
+  },
+  {
+   "t": {
+    "en": "SC Awards: questions and entry fees",
+    "th": "SC Awards: คำถามที่พบบ่อยและค่าสมัคร",
+    "my": "SC Awards: မေးလေ့ရှိသောမေးခွန်းနှင့် ဝင်ရောက်ခ",
+    "zh": "SC Awards：常见问题与报名费",
+    "de": "SC Awards: Fragen und Teilnahmegebühren"
+   },
+   "href": "https://scawards.secure-platform.com/a/page/FAQs"
+  }
+ ],
+ "glyphs": [
+  "star",
+  "nib",
+  "crown"
+ ]
+}

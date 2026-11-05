@@ -1,0 +1,292 @@
+{
+ "id": "price-watch",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Shops watch competitors' prices and stock to set their own, and opening each page by hand every day takes time.",
+  "th": "ร้านค้าดูราคาและสต็อกของคู่แข่งเพื่อตั้งราคาของตัวเอง และการเปิดดูทีละหน้าด้วยมือทุกวันใช้เวลามาก",
+  "my": "ဆိုင်များသည် မိမိစျေးနှုန်းသတ်မှတ်ရန် ပြိုင်ဘက်များ၏ စျေးနှုန်းနှင့် စတော့ကို ကြည့်ကြပြီး စာမျက်နှာတစ်ခုချင်းကို နေ့တိုင်း လက်ဖြင့်ဖွင့်ကြည့်ရခြင်းက အချိန်ကုန်သည်။",
+  "zh": "商店查看对手的价格和库存，来定自己的价格。每天手动一页一页打开，很费时间。",
+  "de": "Geschäfte beobachten Preise und Lagerbestand der Konkurrenz, um ihre eigenen Preise zu setzen. Jede Seite täglich von Hand zu öffnen kostet Zeit."
+ },
+ "n": {
+  "de": "Preisbeobachtung"
+ },
+ "l": {
+  "de": "Preise und Lagerbestand der Konkurrenz, täglich, in einer Tabelle."
+ },
+ "glyphs": [
+  "coin",
+  "eye",
+  "cart"
+ ],
+ "steps": [
+  {
+   "db": "cart",
+   "t": {
+    "en": "You name up to 3 shops or markets and up to 50 items.",
+    "th": "คุณระบุร้านหรือตลาดไม่เกิน 3 แห่ง และไม่เกิน 50 รายการ",
+    "my": "ဆိုင် သို့မဟုတ် ဈေးအများဆုံး 3 ခုနှင့် ပစ္စည်းအများဆုံး 50 ကို သင်က သတ်မှတ်ပေးသည်။",
+    "zh": "您指定最多 3 家商店或市场，最多 50 件商品。",
+    "de": "Sie nennen bis zu 3 Geschäfte oder Märkte und bis zu 50 Artikel."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်းတွင်",
+    "zh": "一开始",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "Prices and stock are read daily.",
+    "th": "อ่านราคาและสต็อกทุกวัน",
+    "my": "စျေးနှုန်းနှင့် စတော့ကို နေ့စဉ် ဖတ်သည်။",
+    "zh": "每天读取价格和库存。",
+    "de": "Preise und Lagerbestand werden täglich gelesen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Daily",
+    "th": "ทุกวัน",
+    "my": "နေ့စဉ်",
+    "zh": "每天",
+    "de": "Täglich"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "They are written into a sheet.",
+    "th": "บันทึกลงในตาราง",
+    "my": "ယင်းတို့ကို စာရင်းဇယားထဲ ရေးသွင်းသည်။",
+    "zh": "写进一张表格。",
+    "de": "Sie werden in eine Tabelle geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Daily",
+    "th": "ทุกวัน",
+    "my": "နေ့စဉ်",
+    "zh": "每天",
+    "de": "Täglich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Price2Spy's Premium plan lists up to 8 price checks per day. Its price is on request.",
+    "th": "แพ็กเกจ Premium ของ Price2Spy ระบุว่าเช็กราคาได้สูงสุด 8 ครั้งต่อวัน ราคาแจ้งเมื่อสอบถาม",
+    "my": "Price2Spy ၏ Premium အစီအစဉ်တွင် တစ်ရက်လျှင် စျေးနှုန်းစစ်ဆေးမှု အများဆုံး 8 ကြိမ် ဖော်ပြထားသည်။ စျေးနှုန်းကို မေးမြန်းမှသာ ပြောသည်။",
+    "zh": "Price2Spy 的 Premium 套餐标明每天最多 8 次价格检查，价格需询问。",
+    "de": "Der Tarif Premium von Price2Spy nennt bis zu 8 Preisprüfungen pro Tag. Der Preis ist auf Anfrage."
+   },
+   "src": "https://www.price2spy.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Prisync sells three plans in each of three pricing models (URL based, channel based, hybrid). The plans track up to 100, 1,000 or 5,000 products.",
+    "th": "Prisync มี 3 แพ็กเกจในแต่ละรูปแบบราคา 3 แบบ (ตาม URL ตามช่องทาง และแบบผสม) แพ็กเกจติดตามสินค้าได้ไม่เกิน 100, 1,000 หรือ 5,000 รายการ",
+    "my": "Prisync တွင် စျေးနှုန်းပုံစံ 3 မျိုး (URL အခြေပြု၊ ချန်နယ်အခြေပြု၊ ရောစပ်) တစ်ခုစီအတွက် အစီအစဉ် 3 ခု ရှိသည်။ အစီအစဉ်များသည် ကုန်ပစ္စည်း 100၊ 1,000 သို့မဟုတ် 5,000 အထိ စောင့်ကြည့်သည်။",
+    "zh": "Prisync 有三种计价模式（按网址、按渠道、混合），每种有三个套餐，分别可跟踪最多 100、1,000 或 5,000 件商品。",
+    "de": "Prisync verkauft in drei Preismodellen (nach URL, nach Kanal, hybrid) je drei Tarife. Die Tarife verfolgen bis zu 100, 1,000 oder 5,000 Produkte."
+   },
+   "src": "https://prisync.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "A robots.txt file tells search engine crawlers which URLs they can access on a site. Google's page says it is up to the crawler to obey it.",
+    "th": "ไฟล์ robots.txt บอก crawler ของเสิร์ชเอนจินว่าเข้าถึง URL ใดในเว็บไซต์ได้ หน้าเว็บของ Google ระบุว่าการทำตามเป็นเรื่องของ crawler แต่ละตัว",
+    "my": "robots.txt ဖိုင်က ရှာဖွေရေးအင်ဂျင်၏ crawler များကို ဝဘ်ဆိုက်ပေါ်ရှိ မည်သည့် URL များကို ဝင်ရောက်နိုင်သည်ကို ပြောပြသည်။ Google ၏ စာမျက်နှာက လိုက်နာမလိုက်နာမှာ crawler ပေါ်မူတည်သည်ဟု ဆိုသည်။",
+    "zh": "robots.txt 文件告诉搜索引擎爬虫可以访问网站上的哪些网址。Google 的页面说明，是否遵守由爬虫自己决定。",
+    "de": "Eine robots.txt-Datei sagt Crawlern von Suchmaschinen, welche URLs sie auf einer Website aufrufen dürfen. Laut Google liegt es beim Crawler, sie zu befolgen."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  {
+   "t": {
+    "en": "RFC 9309, the standard for robots.txt, says its rules are not a form of access authorization. Crawlers are asked to follow them.",
+    "th": "RFC 9309 ซึ่งเป็นมาตรฐานของ robots.txt ระบุว่ากฎในไฟล์ไม่ใช่การอนุญาตให้เข้าถึง และเพียงขอให้ crawler ปฏิบัติตาม",
+    "my": "robots.txt စံနှုန်းဖြစ်သော RFC 9309 က ဖိုင်ထဲက စည်းမျဉ်းများသည် ဝင်ရောက်ခွင့်ပြုချက် မဟုတ်ဟု ဆိုသည်။ crawler များကို လိုက်နာရန် တောင်းဆိုရုံသာ ဖြစ်သည်။",
+    "zh": "robots.txt 的标准 RFC 9309 指出，其中的规则不是访问授权，只是请爬虫遵守。",
+    "de": "RFC 9309, der Standard für robots.txt, hält fest, dass seine Regeln keine Zugriffsberechtigung sind. Crawler werden nur gebeten, sie zu befolgen."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc9309.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Prisync, a price tracking tool: URL based Professional plan, up to 100 products",
+    "th": "Prisync เครื่องมือติดตามราคา: แพ็กเกจ Professional แบบตาม URL ไม่เกิน 100 รายการ",
+    "my": "Prisync - စျေးနှုန်းစောင့်ကြည့်ကိရိယာ: URL အခြေပြု Professional အစီအစဉ်၊ ကုန်ပစ္စည်း 100 အထိ",
+    "zh": "Prisync，价格跟踪工具：按网址计价的 Professional 套餐，最多 100 件商品",
+    "de": "Prisync, Tool zur Preisverfolgung: Tarif Professional nach URL, bis zu 100 Produkte"
+   },
+   "p": {
+    "en": "US$99 a month",
+    "th": "US$99 ต่อเดือน",
+    "my": "တစ်လလျှင် US$99",
+    "zh": "每月 US$99",
+    "de": "US$99 pro Monat"
+   },
+   "src": "https://prisync.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Prisync: URL based Premium plan, up to 1,000 products",
+    "th": "Prisync: แพ็กเกจ Premium แบบตาม URL ไม่เกิน 1,000 รายการ",
+    "my": "Prisync: URL အခြေပြု Premium အစီအစဉ်၊ ကုန်ပစ္စည်း 1,000 အထိ",
+    "zh": "Prisync：按网址计价的 Premium 套餐，最多 1,000 件商品",
+    "de": "Prisync: Tarif Premium nach URL, bis zu 1,000 Produkte"
+   },
+   "p": {
+    "en": "US$199 a month",
+    "th": "US$199 ต่อเดือน",
+    "my": "တစ်လလျှင် US$199",
+    "zh": "每月 US$199",
+    "de": "US$199 pro Monat"
+   },
+   "src": "https://prisync.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: data pulled from a site such as Shopee, one package, 2 days",
+    "th": "รายการบน Fastwork: ดึงข้อมูลจากเว็บ เช่น Shopee แพ็กเกจเดียว 2 วัน",
+    "my": "Fastwork စာရင်း: Shopee ကဲ့သို့ ဝဘ်ဆိုက်မှ ဒေတာထုတ်ယူခြင်း၊ ပက်ကေ့ချ်တစ်ခု၊ ရက် 2 ရက်",
+    "zh": "Fastwork 服务页：从 Shopee 等网站提取数据，单一套餐，2 天",
+    "de": "Fastwork-Angebot: Daten von einer Website wie Shopee, ein Paket, 2 Tage"
+   },
+   "p": {
+    "en": "฿1,500",
+    "th": "฿1,500",
+    "my": "฿1,500",
+    "zh": "฿1,500",
+    "de": "฿1,500"
+   },
+   "src": "https://fastwork.co/user/sudlit/web-scraping-98476481"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does price monitoring software cost?",
+    "th": "ซอฟต์แวร์ติดตามราคาคู่แข่งราคาเท่าไร",
+    "my": "စျေးနှုန်းစောင့်ကြည့်ဆော့ဖ်ဝဲ၏ စျေးနှုန်းမှာ ဘယ်လောက်လဲ။",
+    "zh": "价格监控软件收费多少？",
+    "de": "Was kostet Software zur Preisbeobachtung?"
+   },
+   "a": {
+    "en": "Prisync lists, per month, US$99, US$199 and US$399 for its URL based plans (100, 1,000 and 5,000 products), US$199, US$399 and US$599 for channel based plans, and US$299, US$599 and US$799 for hybrid plans.",
+    "th": "Prisync แสดงราคาต่อเดือน แบบตาม URL คือ US$99 US$199 และ US$399 (100, 1,000 และ 5,000 รายการ) แบบตามช่องทางคือ US$199 US$399 และ US$599 และแบบผสมคือ US$299 US$599 และ US$799",
+    "my": "Prisync က တစ်လလျှင် URL အခြေပြု အစီအစဉ်များအတွက် US$99၊ US$199 နှင့် US$399 (ကုန်ပစ္စည်း 100၊ 1,000 နှင့် 5,000)၊ ချန်နယ်အခြေပြု အစီအစဉ်များအတွက် US$199၊ US$399 နှင့် US$599၊ ရောစပ်အစီအစဉ်များအတွက် US$299၊ US$599 နှင့် US$799 ဖော်ပြထားသည်။",
+    "zh": "Prisync 每月标价：按网址计价的套餐为 US$99、US$199 和 US$399（100、1,000 和 5,000 件商品），按渠道计价的为 US$199、US$399 和 US$599，混合模式为 US$299、US$599 和 US$799。",
+    "de": "Prisync nennt pro Monat US$99, US$199 und US$399 für die Tarife nach URL (100, 1,000 und 5,000 Produkte), US$199, US$399 und US$599 für die Tarife nach Kanal und US$299, US$599 und US$799 für die hybriden Tarife."
+   },
+   "src": "https://prisync.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "What alerts does a price tool send?",
+    "th": "เครื่องมือติดตามราคาแจ้งอะไรให้บ้าง",
+    "my": "စျေးနှုန်းကိရိယာက မည်သည့် သတိပေးချက်များ ပို့သလဲ။",
+    "zh": "价格工具会发哪些提醒？",
+    "de": "Welche Benachrichtigungen schickt ein Preis-Tool?"
+   },
+   "a": {
+    "en": "Price2Spy's Starter plan lists daily price change alerts and up to 10 competitors. Its Basic plan lists instant price change alerts.",
+    "th": "แพ็กเกจ Starter ของ Price2Spy ระบุการแจ้งเมื่อราคาเปลี่ยนรายวันและคู่แข่งไม่เกิน 10 ราย แพ็กเกจ Basic ระบุการแจ้งเมื่อราคาเปลี่ยนทันที",
+    "my": "Price2Spy ၏ Starter အစီအစဉ်တွင် စျေးနှုန်းပြောင်းလဲမှု နေ့စဉ်သတိပေးချက်နှင့် ပြိုင်ဘက် 10 ဦးအထိ ဖော်ပြထားသည်။ Basic အစီအစဉ်တွင် စျေးနှုန်းပြောင်းလဲမှု ချက်ချင်းသတိပေးချက် ဖော်ပြထားသည်။",
+    "zh": "Price2Spy 的 Starter 套餐标明每日价格变动提醒和最多 10 个竞争对手；Basic 套餐标明价格变动即时提醒。",
+    "de": "Der Tarif Starter von Price2Spy nennt tägliche Meldungen über Preisänderungen und bis zu 10 Konkurrenten. Der Tarif Basic nennt sofortige Meldungen über Preisänderungen."
+   },
+   "src": "https://www.price2spy.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "Can a site block a price reader?",
+    "th": "เว็บไซต์ปิดกั้นโปรแกรมอ่านราคาได้ไหม",
+    "my": "ဝဘ်ဆိုက်တစ်ခုက စျေးနှုန်းဖတ်ပရိုဂရမ်ကို တားနိုင်ပါသလား။",
+    "zh": "网站能挡住价格读取程序吗？",
+    "de": "Kann eine Website ein Programm zum Auslesen von Preisen sperren?"
+   },
+   "a": {
+    "en": "A site can publish a robots.txt file that lists the URLs a crawler may open. Google's page says it is up to the crawler to obey the file.",
+    "th": "เว็บไซต์เผยแพร่ไฟล์ robots.txt ที่ระบุ URL ที่ crawler เปิดได้ หน้าเว็บของ Google ระบุว่าการทำตามไฟล์เป็นเรื่องของ crawler",
+    "my": "ဝဘ်ဆိုက်က crawler ဖွင့်ခွင့်ရှိသော URL များကို စာရင်းပြုထားသည့် robots.txt ဖိုင်ကို ထုတ်ပြန်နိုင်သည်။ Google စာမျက်နှာက ဖိုင်ကို လိုက်နာမလိုက်နာမှာ crawler ပေါ်မူတည်သည်ဟု ဆိုသည်။",
+    "zh": "网站可以发布 robots.txt 文件，列出爬虫可以打开的网址。Google 的页面说明，是否遵守由爬虫决定。",
+    "de": "Eine Website kann eine robots.txt-Datei veröffentlichen, die die URLs nennt, die ein Crawler öffnen darf. Laut Google liegt es beim Crawler, die Datei zu befolgen."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  {
+   "q": {
+    "en": "What does a freelancer charge to pull data from a site?",
+    "th": "ฟรีแลนซ์คิดเท่าไรสำหรับการดึงข้อมูลจากเว็บ",
+    "my": "ဝဘ်ဆိုက်မှ ဒေတာထုတ်ယူရန် ဖရီးလန်စာက ဘယ်လောက်တောင်းသလဲ။",
+    "zh": "自由职业者从网站提取数据收多少钱？",
+    "de": "Was verlangt ein Freelancer für das Auslesen von Daten einer Website?"
+   },
+   "a": {
+    "en": "One Fastwork listing with 99 sales charges ฿1,500 for one package, delivered in 3 days. The buyer picks the file format, such as .txt, .csv or Word.",
+    "th": "รายการหนึ่งบน Fastwork ที่ขายได้ 99 ครั้งคิด ฿1,500 สำหรับแพ็กเกจเดียว ส่งงานใน 3 วัน ผู้ซื้อเลือกรูปแบบไฟล์ได้ เช่น .txt, .csv หรือ Word",
+    "my": "ရောင်းချမှု 99 ရှိသော Fastwork စာရင်းတစ်ခုက ပက်ကေ့ချ်တစ်ခုအတွက် ฿1,500 တောင်းပြီး ရက် 3 ရက်အတွင်း ပို့သည်။ ဝယ်သူက .txt၊ .csv သို့မဟုတ် Word ကဲ့သို့ ဖိုင်ပုံစံကို ရွေးနိုင်သည်။",
+    "zh": "Fastwork 上一个已售 99 次的服务页，单一套餐收费 ฿1,500，3 天交付。买家可选文件格式，如 .txt、.csv 或 Word。",
+    "de": "Ein Fastwork-Angebot mit 99 Verkäufen verlangt ฿1,500 für ein Paket, geliefert in 3 Tagen. Die Käuferin oder der Käufer wählt das Dateiformat, etwa .txt, .csv oder Word."
+   },
+   "src": "https://fastwork.co/user/aekkasit.s/web-scraping-69816230"
+  }
+ ],
+ "related": [
+  "data-crawl",
+  "research",
+  "restaurant-desk",
+  "demand-prices",
+  "compare",
+  "ai-automation"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Prisync: plans and prices",
+    "th": "Prisync: แพ็กเกจและราคา",
+    "my": "Prisync: အစီအစဉ်များနှင့် စျေးနှုန်းများ",
+    "zh": "Prisync：套餐与价格",
+    "de": "Prisync: Tarife und Preise"
+   },
+   "href": "https://prisync.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Price2Spy: plans and prices",
+    "th": "Price2Spy: แพ็กเกจและราคา",
+    "my": "Price2Spy: အစီအစဉ်များနှင့် စျေးနှုန်းများ",
+    "zh": "Price2Spy：套餐与价格",
+    "de": "Price2Spy: Tarife und Preise"
+   },
+   "href": "https://www.price2spy.com/pricing/"
+  }
+ ]
+}

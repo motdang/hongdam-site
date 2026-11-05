@@ -1,0 +1,275 @@
+{
+ "id": "form",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Government and bank forms come in Thai, and people want them filled in with the English written beside the boxes.",
+  "th": "แบบฟอร์มของทางราชการและธนาคารเป็นภาษาไทย คนจึงอยากให้มีคนกรอกให้ พร้อมคำอังกฤษกำกับข้างช่อง",
+  "my": "အစိုးရနှင့် ဘဏ်ဖောင်များသည် ထိုင်းဘာသာဖြစ်သဖြင့် ဖောင်ကွက်များဘေးတွင် အင်္ဂလိပ်လို ရေးထားပေးပြီး ဖြည့်ပေးစေလိုကြသည်။",
+  "zh": "政府和银行的表格是泰文的，人们希望有人代填，并在格子旁标上英文。",
+  "de": "Formulare von Behörden und Banken sind auf Thai, und man möchte sie ausgefüllt haben, mit dem Englischen neben den Feldern."
+ },
+ "n": {
+  "de": "Thailändisches Formular ausgefüllt"
+ },
+ "l": {
+  "de": "Ausgefüllt, mit englischen Beschriftungen an den Feldern."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send us the form and what goes in it.",
+    "th": "คุณส่งแบบฟอร์มและข้อมูลที่ต้องใส่ให้เรา",
+    "my": "ဖောင်နှင့် ထည့်ရမည့်အချက်အလက်များကို သင်က ပေးပို့သည်။",
+    "zh": "您把表格和要填的内容发给我们。",
+    "de": "Sie schicken uns das Formular und die Angaben dazu."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "We fill it in, in Thai, with an English label on the fields.",
+    "th": "เรากรอกเป็นภาษาไทย พร้อมติดป้ายภาษาอังกฤษที่ช่อง",
+    "my": "ထိုင်းဘာသာဖြင့် ဖြည့်ပေးပြီး ဖောင်ကွက်များတွင် အင်္ဂလိပ်လို တံဆိပ်ကပ်ပေးသည်။",
+    "zh": "我们用泰文填写，并在栏位旁标上英文说明。",
+    "de": "Wir füllen es auf Thai aus und beschriften die Felder auf Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The filling-in",
+    "th": "ช่วงกรอกฟอร์ม",
+    "my": "ဖြည့်သည့်ကာလ",
+    "zh": "填写期间",
+    "de": "Das Ausfüllen"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "We mark the places you sign, and you sign.",
+    "th": "เราทำเครื่องหมายตรงที่คุณต้องเซ็น แล้วคุณเซ็น",
+    "my": "သင် လက်မှတ်ထိုးရမည့်နေရာများကို အမှတ်အသားပြုပေးပြီး သင်က လက်မှတ်ထိုးသည်။",
+    "zh": "我们标出需要您签名的地方，由您签名。",
+    "de": "Wir markieren die Stellen, an denen Sie unterschreiben, und Sie unterschreiben."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹 与您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "The signing",
+    "th": "ตอนเซ็น",
+    "my": "လက်မှတ်ထိုးချိန်",
+    "zh": "签名时",
+    "de": "Die Unterschrift"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Under section 38 of the Immigration Act, house owners, heads of household, landlords and hotel managers who accommodate a foreigner on a temporary basis notify immigration within 24 hours of the foreigner's arrival, on form TM.30. The notice goes in person, through an authorised person, by registered mail or over the internet.",
+    "th": "ตามมาตรา 38 แห่งพระราชบัญญัติคนเข้าเมือง เจ้าของบ้าน หัวหน้าครัวเรือน ผู้ให้เช่า และผู้จัดการโรงแรมที่ให้คนต่างด้าวพักอาศัยชั่วคราว แจ้งสำนักงานตรวจคนเข้าเมืองภายใน 24 ชั่วโมงนับจากที่คนต่างด้าวเข้าพัก โดยใช้แบบ ตม.30 แจ้งได้ด้วยตนเอง ผ่านผู้ได้รับมอบอำนาจ ทางไปรษณีย์ลงทะเบียน หรือทางอินเทอร์เน็ต",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဥပဒေ ပုဒ်မ 38 အရ နိုင်ငံခြားသားကို ယာယီတည်းခိုစေသော အိမ်ပိုင်ရှင်၊ အိမ်ထောင်စုခေါင်းဆောင်၊ အိမ်ရှင်နှင့် ဟိုတယ်မန်နေဂျာများသည် နိုင်ငံခြားသား ရောက်ရှိပြီး 24 နာရီအတွင်း TM.30 ပုံစံဖြင့် လူဝင်မှုကြီးကြပ်ရေးသို့ အကြောင်းကြားသည်။ ကိုယ်တိုင်၊ ကိုယ်စားလှယ်ဖြင့်၊ မှတ်ပုံတင်စာပို့ဖြင့် သို့မဟုတ် အင်တာနက်ဖြင့် အကြောင်းကြားနိုင်သည်။",
+    "zh": "依据《移民法》第 38 条，临时接待外国人的房主、户主、房东和酒店经理，在外国人入住后 24 小时内用 TM.30 表格通知移民部门。可本人前往、委托授权人、挂号邮寄或通过互联网办理。",
+    "de": "Nach § 38 des Einwanderungsgesetzes melden Hauseigentümer, Haushaltsvorstände, Vermieter und Hotelleiter, die einen Ausländer vorübergehend beherbergen, dessen Ankunft innerhalb von 24 Stunden mit dem Formular TM.30 der Einwanderungsbehörde. Die Meldung erfolgt persönlich, durch eine bevollmächtigte Person, per Einschreiben oder über das Internet."
+   },
+   "src": "https://www.immigration.go.th/?p=14721"
+  },
+  {
+   "t": {
+    "en": "A foreigner who stays in Thailand more than 90 days reports their address every 90 days, from 15 days before to 7 days after the due date. The report is made online, in person, by registered post or by sending someone else with the notice.",
+    "th": "คนต่างด้าวที่อยู่ในไทยเกิน 90 วันต้องแจ้งที่พักทุก 90 วัน แจ้งได้ตั้งแต่ก่อนครบกำหนด 15 วันถึงหลังครบกำหนด 7 วัน ทางออนไลน์ ด้วยตนเอง ทางไปรษณีย์ลงทะเบียน หรือมอบให้ผู้อื่นนำหนังสือไปแจ้ง",
+    "my": "ထိုင်းတွင် 90 ရက်ကျော် နေထိုင်သော နိုင်ငံခြားသားသည် 90 ရက်တစ်ကြိမ် နေရပ်လိပ်စာကို အစီရင်ခံရသည်။ သတ်မှတ်ရက်မတိုင်မီ 15 ရက်မှ သတ်မှတ်ရက်ကျော်ပြီး 7 ရက်အထိ ဖြစ်ပြီး အွန်လိုင်း၊ ကိုယ်တိုင်၊ မှတ်ပုံတင်စာပို့ဖြင့် သို့မဟုတ် အခြားသူကို စာနှင့်အတူ ပို့၍ အစီရင်ခံနိုင်သည်။",
+    "zh": "在泰国停留超过 90 天的外国人，每 90 天报告一次住址，可在到期日前 15 天至到期日后 7 天内办理，方式有在线、本人到场、挂号邮寄，或委托他人带着通知书去办。",
+    "de": "Wer als Ausländer länger als 90 Tage in Thailand bleibt, meldet seine Adresse alle 90 Tage, von 15 Tagen vor bis 7 Tage nach dem Fälligkeitsdatum. Die Meldung erfolgt online, persönlich, per Einschreiben oder durch eine andere Person, die die Mitteilung überbringt."
+   },
+   "src": "https://www.immigration.go.th/?page_id=1648"
+  },
+  {
+   "t": {
+    "en": "Online 90-day reports stop working after a passport change; the report is then made in person or by an authorised person.",
+    "th": "หลังเปลี่ยนหนังสือเดินทาง รายงานตัว 90 วันออนไลน์ใช้ไม่ได้ ต้องไปเองหรือมอบอำนาจ",
+    "my": "ပတ်စပို့ ပြောင်းပြီးနောက် 90 ရက် အွန်လိုင်းအစီရင်ခံခြင်း မရတော့ပါ; ကိုယ်တိုင် သို့မဟုတ် ကိုယ်စားလှယ်ဖြင့် သွားရသည်။",
+    "zh": "换护照后无法在线办 90 天报到，需本人或委托人到场。",
+    "de": "Die Online-90-Tage-Meldung funktioniert nach einem Passwechsel nicht mehr; dann erfolgt die Meldung persönlich oder durch eine bevollmächtigte Person."
+   },
+   "src": "https://www.immigration.go.th/?page_id=1648"
+  },
+  {
+   "t": {
+    "en": "The Immigration Bureau's page lists a fine of ฿2,000 for a late 90-day report, which is then made in person.",
+    "th": "หน้าเว็บของสำนักงานตรวจคนเข้าเมืองระบุค่าปรับ ฿2,000 สำหรับการแจ้ง 90 วันล่าช้า ซึ่งต้องไปแจ้งด้วยตนเอง",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန၏ စာမျက်နှာတွင် 90 ရက်အစီရင်ခံမှု နောက်ကျလျှင် ဒဏ်ကြေး ฿2,000 ကို ဖော်ပြထားပြီး ထိုအခါ ကိုယ်တိုင်သွား၍ အစီရင်ခံရသည်။",
+    "zh": "移民局页面列出，90 天报到逾期的罚款为 ฿2,000，逾期的报到须本人到场办理。",
+    "de": "Auf der Seite der Einwanderungsbehörde steht für eine verspätete 90-Tage-Meldung eine Busse von ฿2,000; die Meldung erfolgt dann persönlich."
+   },
+   "src": "https://www.immigration.go.th/?page_id=1648"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "TM30 online registration by a Fastwork freelancer: one accommodation, priced by the number of guests",
+    "th": "ลงทะเบียน TM30 ออนไลน์โดยฟรีแลนซ์บน Fastwork: ที่พักหนึ่งแห่ง ราคาตามจำนวนผู้เข้าพัก",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦးက TM.30 ကို အွန်လိုင်းမှတ်ပုံတင်ပေးခြင်း — တည်းခိုရာတစ်ခု၊ ဧည့်သည်အရေအတွက်အလိုက်",
+    "zh": "Fastwork 自由职业者代办 TM30 在线登记：一处住所，按住客人数计价",
+    "de": "TM30-Online-Registrierung durch eine Freelancerin oder einen Freelancer auf Fastwork: eine Unterkunft, nach Zahl der Gäste"
+   },
+   "p": {
+    "en": "1 guest ฿250 · 2 guests ฿500 · 3–4 guests ฿700 · 5–10 guests ฿1,000",
+    "th": "ผู้เข้าพัก 1 คน ฿250 · 2 คน ฿500 · 3–4 คน ฿700 · 5–10 คน ฿1,000",
+    "my": "ဧည့်သည် 1 ဦး ฿250 · 2 ဦး ฿500 · 3–4 ဦး ฿700 · 5–10 ဦး ฿1,000",
+    "zh": "1 人 ฿250 · 2 人 ฿500 · 3–4 人 ฿700 · 5–10 人 ฿1,000",
+    "de": "1 Gast ฿250 · 2 Gäste ฿500 · 3–4 Gäste ฿700 · 5–10 Gäste ฿1,000"
+   },
+   "src": "https://fastwork.co/user/ffuxkdayss/representative-90398423"
+  },
+  {
+   "t": {
+    "en": "Renewal or re-registration of a stay, same Fastwork listing",
+    "th": "ต่ออายุหรือลงทะเบียนใหม่สำหรับการพำนัก รายการเดียวกันบน Fastwork",
+    "my": "နေထိုင်မှု သက်တမ်းတိုး သို့မဟုတ် ပြန်လည်မှတ်ပုံတင်ခြင်း၊ တူညီသော Fastwork စာရင်း",
+    "zh": "续期或重新登记住宿，同一 Fastwork 商品",
+    "de": "Verlängerung oder erneute Registrierung eines Aufenthalts, dasselbe Fastwork-Angebot"
+   },
+   "p": {
+    "en": "฿200",
+    "th": "฿200",
+    "my": "฿200",
+    "zh": "฿200",
+    "de": "฿200"
+   },
+   "src": "https://fastwork.co/user/ffuxkdayss/representative-90398423"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can I file the TM30 online?",
+    "th": "ลงทะเบียน ตม.30 ออนไลน์ได้ไหม",
+    "my": "TM.30 ကို အွန်လိုင်းမှ တင်နိုင်ပါသလား။",
+    "zh": "TM30 可以在线办理吗？",
+    "de": "Kann ich das TM30 online einreichen?"
+   },
+   "a": {
+    "en": "Yes. The Immigration Bureau lists four ways to notify: in person, through an authorised person, by registered mail or via the internet. The internet route has its own list of papers on the same page.",
+    "th": "ได้ สำนักงานตรวจคนเข้าเมืองระบุวิธีแจ้งสี่แบบ คือ ด้วยตนเอง ผ่านผู้ได้รับมอบอำนาจ ทางไปรษณีย์ลงทะเบียน หรือทางอินเทอร์เน็ต วิธีทางอินเทอร์เน็ตมีรายการเอกสารของตัวเองอยู่ในหน้าเดียวกัน",
+    "my": "ရသည်။ လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာနက အကြောင်းကြားနည်း လေးမျိုးကို ဖော်ပြထားသည် — ကိုယ်တိုင်၊ ကိုယ်စားလှယ်ဖြင့်၊ မှတ်ပုံတင်စာပို့ဖြင့် သို့မဟုတ် အင်တာနက်ဖြင့်။ အင်တာနက်နည်းအတွက် လိုအပ်သော စာရွက်စာတမ်းစာရင်းကို ထိုစာမျက်နှာတွင် သီးခြားဖော်ပြထားသည်။",
+    "zh": "可以。移民局列出四种通知方式：本人前往、委托授权人、挂号邮寄、通过互联网。网络办理在同一页面上另列了所需文件。",
+    "de": "Ja. Die Einwanderungsbehörde nennt vier Wege der Meldung: persönlich, durch eine bevollmächtigte Person, per Einschreiben oder über das Internet. Für den Internetweg führt dieselbe Seite eine eigene Liste der Unterlagen auf."
+   },
+   "src": "https://www.immigration.go.th/?p=14721"
+  },
+  {
+   "q": {
+    "en": "Who files the TM30, the landlord or the foreigner?",
+    "th": "ใครเป็นผู้แจ้ง ตม.30 เจ้าของที่พักหรือคนต่างด้าว",
+    "my": "TM.30 ကို ဘယ်သူ တင်သလဲ — အိမ်ရှင်လား၊ နိုင်ငံခြားသားလား။",
+    "zh": "TM30 由谁来报，房东还是外国人？",
+    "de": "Wer reicht das TM30 ein, die Vermieterin oder der Ausländer?"
+   },
+   "a": {
+    "en": "The page names house owners, heads of household, landlords and managers of hotels who accommodate foreign nationals on a temporary basis. The deadline is 24 hours from the foreigner's arrival.",
+    "th": "หน้าเว็บระบุเจ้าของบ้าน หัวหน้าครัวเรือน ผู้ให้เช่า และผู้จัดการโรงแรมที่ให้คนต่างด้าวพักอาศัยชั่วคราว กำหนดเวลาคือ 24 ชั่วโมงนับจากที่คนต่างด้าวเข้าพัก",
+    "my": "စာမျက်နှာတွင် နိုင်ငံခြားသားကို ယာယီတည်းခိုစေသော အိမ်ပိုင်ရှင်၊ အိမ်ထောင်စုခေါင်းဆောင်၊ အိမ်ရှင်နှင့် ဟိုတယ်မန်နေဂျာများကို ဖော်ပြထားသည်။ နိုင်ငံခြားသား ရောက်ရှိပြီး 24 နာရီအတွင်း ဖြစ်သည်။",
+    "zh": "页面写的是临时接待外国人的房主、户主、房东和酒店经理。期限是外国人入住后 24 小时内。",
+    "de": "Die Seite nennt Hauseigentümer, Haushaltsvorstände, Vermieter und Hotelleiter, die Ausländer vorübergehend beherbergen. Die Frist beträgt 24 Stunden ab der Ankunft."
+   },
+   "src": "https://www.immigration.go.th/?p=14721"
+  },
+  {
+   "q": {
+    "en": "When is the 90-day report possible, and can someone else make it?",
+    "th": "รายงานตัว 90 วันทำได้ช่วงไหน และให้คนอื่นไปแจ้งแทนได้ไหม",
+    "my": "90 ရက်အစီရင်ခံခြင်းကို ဘယ်အချိန်မှာ လုပ်နိုင်သလဲ၊ အခြားသူက လုပ်ပေးနိုင်ပါသလား။",
+    "zh": "90 天报到什么时候办，可以让别人代办吗？",
+    "de": "Wann ist die 90-Tage-Meldung möglich, und kann jemand anderes sie machen?"
+   },
+   "a": {
+    "en": "The report comes every 90 days, with a window from 15 days before to 7 days after the due date. The page lists an online route, going in person, registered mail, and sending another person with the notice.",
+    "th": "ต้องแจ้งทุก 90 วัน ช่วงที่แจ้งได้คือก่อนครบกำหนด 15 วันถึงหลังครบกำหนด 7 วัน หน้าเว็บระบุทางออนไลน์ ไปด้วยตนเอง ทางไปรษณีย์ลงทะเบียน และมอบให้ผู้อื่นนำหนังสือไปแจ้ง",
+    "my": "အစီရင်ခံမှုကို 90 ရက်တစ်ကြိမ် ပြုလုပ်ရပြီး သတ်မှတ်ရက်မတိုင်မီ 15 ရက်မှ သတ်မှတ်ရက်ကျော်ပြီး 7 ရက်အထိ ကာလ ရှိသည်။ စာမျက်နှာတွင် အွန်လိုင်းလမ်းကြောင်း၊ ကိုယ်တိုင်သွားခြင်း၊ မှတ်ပုံတင်စာပို့ခြင်းနှင့် အခြားသူကို စာနှင့်အတူ ပို့ခြင်းတို့ကို ဖော်ပြထားသည်။",
+    "zh": "每 90 天一次，可在到期日前 15 天至到期日后 7 天内办理。页面列出在线、本人前往、挂号邮寄，以及请他人带着通知书去办。",
+    "de": "Die Meldung kommt alle 90 Tage, mit einem Zeitfenster von 15 Tagen vor bis 7 Tage nach dem Fälligkeitsdatum. Die Seite nennt den Online-Weg, das persönliche Erscheinen, das Einschreiben und eine andere Person, die die Mitteilung überbringt."
+   },
+   "src": "https://www.immigration.go.th/?page_id=1648"
+  },
+  {
+   "q": {
+    "en": "What changes after a passport change?",
+    "th": "หลังเปลี่ยนหนังสือเดินทาง รายงานตัว 90 วันเปลี่ยนไปอย่างไร",
+    "my": "ပတ်စပို့ပြောင်းပြီးနောက် 90 ရက်အစီရင်ခံမှု ဘာပြောင်းသလဲ။",
+    "zh": "换护照后，90 天报到有什么变化？",
+    "de": "Was ändert sich nach einem Passwechsel?"
+   },
+   "a": {
+    "en": "The online 90-day report is not supported after a passport change. The report is then made in person at the immigration office for the area where the foreigner lives, by the foreigner or a representative. Online reporting resumes at the next scheduled date.",
+    "th": "หลังเปลี่ยนหนังสือเดินทาง รายงานตัว 90 วันออนไลน์ใช้ไม่ได้ ต้องแจ้งด้วยตนเองหรือมอบอำนาจที่สำนักงานตรวจคนเข้าเมืองตามเขตพื้นที่ที่พักอาศัย แล้วจึงกลับมาแจ้งออนไลน์ได้ในรอบถัดไป",
+    "my": "ပတ်စပို့ပြောင်းပြီးနောက် 90 ရက် အွန်လိုင်းအစီရင်ခံမှု မရတော့ပါ။ နိုင်ငံခြားသား နေထိုင်ရာဒေသရှိ လူဝင်မှုကြီးကြပ်ရေးရုံးတွင် ကိုယ်တိုင် သို့မဟုတ် ကိုယ်စားလှယ်ဖြင့် အစီရင်ခံရပြီး နောက်တစ်ကြိမ်သတ်မှတ်ရက်မှစ၍ အွန်လိုင်းပြန်သုံးနိုင်သည်။",
+    "zh": "换护照后，在线 90 天报到无法使用，须由本人或委托人到住所所在辖区的移民办公室办理，下一个周期起可恢复在线办理。",
+    "de": "Nach einem Passwechsel funktioniert die Online-Meldung nicht. Sie erfolgt dann persönlich im Einwanderungsbüro des Wohnorts, durch den Ausländer oder eine vertretende Person, und ab dem nächsten Termin ist wieder die Online-Meldung möglich."
+   },
+   "src": "https://www.immigration.go.th/?page_id=1648"
+  }
+ ],
+ "related": [
+  "visas",
+  "thai-plan",
+  "call",
+  "errand",
+  "translate",
+  "bank-account"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Immigration Bureau: notification of residence (TM.30)",
+    "th": "สำนักงานตรวจคนเข้าเมือง: การแจ้งที่พักอาศัย (ตม.30)",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန: နေရပ်အကြောင်းကြားခြင်း (TM.30)",
+    "zh": "移民局：住宿通报（TM.30）",
+    "de": "Einwanderungsbehörde: Meldung der Unterkunft (TM.30)"
+   },
+   "href": "https://www.immigration.go.th/?p=14721"
+  },
+  {
+   "t": {
+    "en": "Immigration Bureau: 90-day report of address",
+    "th": "สำนักงานตรวจคนเข้าเมือง: การรายงานตัว 90 วัน",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန: 90 ရက် လိပ်စာအစီရင်ခံခြင်း",
+    "zh": "移民局：90 天住址报告",
+    "de": "Einwanderungsbehörde: 90-Tage-Meldung der Adresse"
+   },
+   "href": "https://www.immigration.go.th/?page_id=1648"
+  }
+ ],
+ "glyphs": [
+  "pencil",
+  "page",
+  "typewriter"
+ ]
+}

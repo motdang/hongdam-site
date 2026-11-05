@@ -1,0 +1,309 @@
+{
+ "id": "luggage",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People send a suitcase or a scooter to another city so they can travel without it. Couriers, Thailand Post and the State Railway each set their own weight and price.",
+  "th": "คนส่งกระเป๋าหรือมอเตอร์ไซค์ไปอีกเมืองเพื่อเดินทางตัวเปล่า ขนส่งเอกชน ไปรษณีย์ไทย และการรถไฟฯ ต่างตั้งน้ำหนักและราคาของตัวเอง",
+  "my": "လူတွေက ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာကို နောက်မြို့တစ်မြို့သို့ ကြိုပို့ပြီး လက်ဗလာနှင့် ခရီးသွားကြသည်။ ကူရီယာကုမ္ပဏီများ၊ ထိုင်းစာတိုက်နှင့် ထိုင်းမီးရထားတို့က အလေးချိန်နှင့် ဈေးနှုန်းကို ကိုယ်စီ သတ်မှတ်သည်။",
+  "zh": "人们把行李箱或摩托车先寄到另一座城市，自己轻装出行。快递公司、泰国邮政和泰国国家铁路各有各的重量限制和价格。",
+  "de": "Man schickt einen Koffer oder einen Roller in eine andere Stadt voraus, um ohne ihn zu reisen. Kurierdienste, Thailand Post und die Thailändische Staatsbahn haben je eigene Gewichtsgrenzen und Preise."
+ },
+ "n": {
+  "de": "Gepäck oder Roller verschickt"
+ },
+ "l": {
+  "de": "Quer durch Thailand per Kurier oder Zug; Porto zum Selbstkostenpreis."
+ },
+ "steps": [
+  {
+   "db": "scooter",
+   "t": {
+    "en": "We pick up your luggage or scooter.",
+    "th": "รับกระเป๋าหรือมอเตอร์ไซค์ของคุณ",
+    "my": "သင့်ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာကို လာယူသည်။",
+    "zh": "上门取您的行李或摩托车。",
+    "de": "Wir holen Ihr Gepäck oder Ihren Roller ab."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the pickup day",
+    "th": "วันรับของ",
+    "my": "လာယူသည့်နေ့",
+    "zh": "取件当天",
+    "de": "Am Abholtag"
+   }
+  },
+  {
+   "db": "parcel",
+   "t": {
+    "en": "We pack it and book a courier or the train. You pay the postage at cost.",
+    "th": "แพ็กและจองขนส่งหรือรถไฟ คุณจ่ายค่าส่งตามจริง",
+    "my": "ထုပ်ပိုးပြီး ကူရီယာ သို့မဟုတ် ရထားကို ကြိုတင်မှာပေးသည်။ စာပို့ခကို ကုန်ကျစရိတ်အတိုင်း သင်ပေးရသည်။",
+    "zh": "打包并订快递或火车。邮费按实际费用由您支付。",
+    "de": "Wir packen es ein und buchen einen Kurier oder den Zug. Das Porto zahlen Sie zum Selbstkostenpreis."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before it leaves",
+    "th": "ก่อนส่งออก",
+    "my": "မထွက်ခွာမီ",
+    "zh": "发出前",
+    "de": "Vor dem Versand"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "We follow it to the door.",
+    "th": "ติดตามจนถึงหน้าประตูปลายทาง",
+    "my": "တံခါးဝအထိ လိုက်လံစောင့်ကြည့်သည်။",
+    "zh": "跟踪直到送到门口。",
+    "de": "Wir verfolgen es bis zur Haustür."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Until it arrives",
+    "th": "จนของถึง",
+    "my": "ပစ္စည်းရောက်သည်အထိ",
+    "zh": "直到送达",
+    "de": "Bis zur Ankunft"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The State Railway of Thailand carries motorcycles by train. The fee starts at ฿560, and the bike reaches the destination station in 1 to 3 days. The sender brings the registration book or a copy and an ID card, and gives the recipient's name, phone, address and station.",
+    "th": "การรถไฟแห่งประเทศไทยรับขนส่งรถจักรยานยนต์ทางรถไฟ ค่าบริการเริ่มต้น ฿560 รถถึงสถานีปลายทางภายใน 1–3 วัน ผู้ส่งนำสมุดคู่มือจดทะเบียนหรือสำเนาทะเบียนรถและบัตรประชาชนมา และแจ้งชื่อ เบอร์โทร ที่อยู่ และสถานีปลายทางของผู้รับ",
+    "my": "ထိုင်းမီးရထားအဖွဲ့က မော်တော်ဆိုင်ကယ်ကို ရထားဖြင့် ပို့ပေးသည်။ ကြေးသည် ฿560 မှ စသည်။ ဆိုင်ကယ်သည် ပန်းတိုင်ဘူတာသို့ 1 ရက်မှ 3 ရက်အတွင်း ရောက်သည်။ ပို့သူက ယာဉ်မှတ်ပုံတင်စာအုပ် သို့မဟုတ် မိတ္တူနှင့် မှတ်ပုံတင်ကတ်ကို ယူလာပြီး လက်ခံသူ၏ အမည်၊ ဖုန်း၊ လိပ်စာနှင့် ဘူတာကို ပေးရသည်။",
+    "zh": "泰国国家铁路可用火车运摩托车。费用 ฿560 起，车 1 至 3 天到达目的地车站。寄件人带行车登记簿或复印件和身份证，并提供收件人的姓名、电话、地址和车站。",
+    "de": "Die Thailändische Staatsbahn befördert Motorräder im Zug. Die Gebühr beginnt bei ฿560, und das Motorrad erreicht den Zielbahnhof in 1 bis 3 Tagen. Die absendende Person bringt das Fahrzeugbuch oder eine Kopie und einen Ausweis mit und nennt Name, Telefon, Adresse und Bahnhof des Empfängers."
+   },
+   "src": "https://www.bangkokbiznews.com/news/news-update/1141059"
+  },
+  {
+   "t": {
+    "en": "The bike is wrapped in air bubble film, by the sender or with the staff's help. A bike not collected is kept at the station for up to 2 days.",
+    "th": "ห่อรถด้วยแอร์บับเบิ้ล ผู้ส่งทำเองหรือให้เจ้าหน้าที่ช่วยก็ได้ รถที่ผู้รับมารับไม่ทันสถานีรับฝากได้ไม่เกิน 2 วัน",
+    "my": "ဆိုင်ကယ်ကို လေပူဖောင်းပလပ်စတစ်ဖြင့် ထုပ်ပိုးသည်၊ ပို့သူကိုယ်တိုင် သို့မဟုတ် ဝန်ထမ်းအကူအညီဖြင့် လုပ်နိုင်သည်။ မလာယူသော ဆိုင်ကယ်ကို ဘူတာတွင် 2 ရက်အထိ သိမ်းထားသည်။",
+    "zh": "摩托车用气泡膜包裹，可自己包，也可请工作人员帮忙。无人及时来取的车，车站最多代存 2 天。",
+    "de": "Das Motorrad wird in Luftpolsterfolie gewickelt, von der absendenden Person oder mit Hilfe des Personals. Ein nicht abgeholtes Motorrad bleibt bis zu 2 Tage am Bahnhof."
+   },
+   "src": "https://www.bangkokbiznews.com/news/news-update/1141059"
+  },
+  {
+   "t": {
+    "en": "Thailand Post announced EMS Jumbo in March 2023. It takes parcels of 30 to 200 kg to every province, islands included, in 2 to 4 days, with boxes under 200 cm on each side. Loss or damage pays up to ฿5,000 an item, and insurance up to ฿200,000 is optional.",
+    "th": "ไปรษณีย์ไทยประกาศบริการ EMS Jumbo เมื่อมีนาคม 2566 รับพัสดุ 30–200 กก. ส่งทุกจังหวัดรวมเกาะห่างไกลใน 2–4 วัน กล่องแต่ละด้านต้องไม่เกิน 200 ซม. สูญหายหรือเสียหายชดเชยไม่เกิน ฿5,000 ต่อชิ้น และซื้อประกันเพิ่มได้ไม่เกิน ฿200,000",
+    "my": "ထိုင်းစာတိုက်က 2023 မတ်လတွင် EMS Jumbo ကို ကြေညာခဲ့သည်။ 30 မှ 200 ကီလိုဂရမ် ပါဆယ်များကို ကျွန်းများအပါအဝင် ပြည်နယ်/တိုင်းအားလုံးသို့ 2 မှ 4 ရက်အတွင်း ပို့ပေးပြီး သေတ္တာတစ်ဖက်ချင်း 200 စင်တီမီတာအောက် ဖြစ်ရမည်။ ပျောက်ဆုံး သို့မဟုတ် ပျက်စီးလျှင် တစ်ခုလျှင် ฿5,000 အထိ လျော်ပြီး ฿200,000 အထိ အာမခံကို ရွေးချယ်ဝယ်နိုင်သည်။",
+    "zh": "泰国邮政于 2023 年 3 月宣布 EMS Jumbo，可寄 30 至 200 公斤的包裹，含海岛在内送达各府，2 至 4 天，箱子每边小于 200 厘米。丢失或损坏最高赔 ฿5,000 一件，另可选购最高 ฿200,000 的保险。",
+    "de": "Thailand Post kündigte EMS Jumbo im März 2023 an. Der Dienst nimmt Pakete von 30 bis 200 kg an, in jede Provinz, Inseln eingeschlossen, in 2 bis 4 Tagen, mit Kartons unter 200 cm pro Seite. Bei Verlust oder Schaden zahlt er bis zu ฿5,000 pro Stück, eine Versicherung bis ฿200,000 ist wählbar."
+   },
+   "src": "https://www.nationthailand.com/business/corporate/40025393"
+  },
+  {
+   "t": {
+    "en": "Thailand Post's March 2023 EMS Jumbo release lists motorcycles up to 400 cc among the items it carries, not big-bike shaped, and puts boxed items by weight from ฿200 for the first 30 kg.",
+    "th": "ข่าวประชาสัมพันธ์ EMS Jumbo ของไปรษณีย์ไทยเมื่อมีนาคม 2566 ระบุรถจักรยานยนต์ไม่เกิน 400 ซีซี ที่ไม่ใช่ทรงบิ๊กไบค์ อยู่ในสิ่งของที่รับส่ง และคิดค่าบริการของที่เป็นกล่องตามน้ำหนักเริ่มต้น ฿200 สำหรับ 30 กก.แรก",
+    "my": "ထိုင်းစာတိုက်၏ 2023 မတ်လ EMS Jumbo ထုတ်ပြန်ချက်တွင် ဘစ်ဘိုက်ပုံစံမဟုတ်သော 400 စီစီအထိ မော်တော်ဆိုင်ကယ်များကို သယ်ပို့သည့် ပစ္စည်းများတွင် ဖော်ပြထားပြီး သေတ္တာထည့်ပစ္စည်းများကို အလေးချိန်အလိုက် ပထမ 30 ကီလိုအတွက် ฿200 မှ စ၍ ကောက်သည်။",
+    "zh": "泰国邮政 2023 年 3 月的 EMS Jumbo 新闻稿把 400cc 以内、非大排量车型的摩托车列入承运物品，箱装货物按重量计费，前 30 公斤 ฿200 起。",
+    "de": "Die Mitteilung von Thailand Post zu EMS Jumbo vom März 2023 nennt Motorräder bis 400 ccm, nicht in Big-Bike-Form, unter den beförderten Gütern und berechnet Kartons nach Gewicht ab ฿200 für die ersten 30 kg."
+   },
+   "src": "https://ryt9.com/en/prg/266195"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Motorcycle by State Railway train",
+    "th": "รถจักรยานยนต์ทางรถไฟ การรถไฟแห่งประเทศไทย",
+    "my": "ထိုင်းမီးရထားဖြင့် မော်တော်ဆိုင်ကယ်",
+    "zh": "国家铁路火车运摩托车",
+    "de": "Motorrad im Zug der Staatsbahn"
+   },
+   "p": {
+    "en": "from ฿560",
+    "th": "เริ่ม ฿560",
+    "my": "฿560 မှ စ၍",
+    "zh": "฿560 起",
+    "de": "ab ฿560"
+   },
+   "src": "https://www.bangkokbiznews.com/news/news-update/1141059"
+  },
+  {
+   "t": {
+    "en": "Thailand Post EMS Jumbo, boxed items by weight (announced March 2023)",
+    "th": "ไปรษณีย์ไทย EMS Jumbo ของที่เป็นกล่องตามน้ำหนัก (ประกาศมีนาคม 2566)",
+    "my": "ထိုင်းစာတိုက် EMS Jumbo၊ သေတ္တာထည့်ပစ္စည်း အလေးချိန်အလိုက် (2023 မတ်လ ကြေညာချက်)",
+    "zh": "泰国邮政 EMS Jumbo，箱装货物按重量计（2023 年 3 月公布）",
+    "de": "Thailand Post EMS Jumbo, Kartons nach Gewicht (angekündigt im März 2023)"
+   },
+   "p": {
+    "en": "from ฿200 for the first 30 kg, plus ฿6 a kg",
+    "th": "เริ่ม ฿200 สำหรับ 30 กก.แรก บวก ฿6 ต่อกก.",
+    "my": "ပထမ 30 ကီလိုအတွက် ฿200 မှ စ၍၊ ထို့နောက် တစ်ကီလို ฿6 ထပ်ပေါင်း",
+    "zh": "前 30 公斤 ฿200 起，另加每公斤 ฿6",
+    "de": "ab ฿200 für die ersten 30 kg, dazu ฿6 pro kg"
+   },
+   "src": "https://ryt9.com/en/prg/266195"
+  },
+  {
+   "t": {
+    "en": "Flash Express Flash Bulky, parcels of 5 to 100 kg (reported February 2022)",
+    "th": "Flash Express บริการ Flash Bulky พัสดุ 5–100 กก. (รายงานเมื่อกุมภาพันธ์ 2565)",
+    "my": "Flash Express Flash Bulky၊ 5 မှ 100 ကီလိုဂရမ် ပါဆယ်များ (2022 ဖေဖော်ဝါရီ သတင်းအရ)",
+    "zh": "Flash Express 的 Flash Bulky，5 至 100 公斤的包裹（2022 年 2 月报道）",
+    "de": "Flash Express Flash Bulky, Pakete von 5 bis 100 kg (gemeldet im Februar 2022)"
+   },
+   "p": {
+    "en": "from ฿50",
+    "th": "เริ่ม ฿50",
+    "my": "฿50 မှ စ၍",
+    "zh": "฿50 起",
+    "de": "ab ฿50"
+   },
+   "src": "https://thestandard.co/flash-express-send-large-parcels/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can I send a motorbike by train in Thailand?",
+    "th": "ส่งมอเตอร์ไซค์ทางรถไฟในไทยได้ไหม",
+    "my": "ထိုင်းတွင် ဆိုင်ကယ်ကို ရထားဖြင့် ပို့နိုင်ပါသလား။",
+    "zh": "在泰国可以用火车托运摩托车吗？",
+    "de": "Kann ich in Thailand ein Motorrad im Zug verschicken?"
+   },
+   "a": {
+    "en": "Yes. The State Railway of Thailand takes motorcycles at the parcel point of a station. The fee starts at ฿560, and the bike arrives in 1 to 3 days.",
+    "th": "ได้ การรถไฟแห่งประเทศไทยรับรถจักรยานยนต์ที่จุดรับส่งพัสดุของสถานี ค่าบริการเริ่มต้น ฿560 และรถถึงภายใน 1–3 วัน",
+    "my": "ရပါသည်။ ထိုင်းမီးရထားအဖွဲ့က ဘူတာ၏ ပါဆယ်လက်ခံသည့်နေရာတွင် မော်တော်ဆိုင်ကယ်ကို လက်ခံသည်။ ကြေးသည် ฿560 မှ စပြီး ဆိုင်ကယ်သည် 1 မှ 3 ရက်အတွင်း ရောက်သည်။",
+    "zh": "可以。泰国国家铁路在车站的包裹收发点受理摩托车。费用 ฿560 起，车 1 至 3 天送到。",
+    "de": "Ja. Die Thailändische Staatsbahn nimmt Motorräder an der Paketstelle eines Bahnhofs an. Die Gebühr beginnt bei ฿560, und das Motorrad kommt in 1 bis 3 Tagen an."
+   },
+   "src": "https://www.bangkokbiznews.com/news/news-update/1141059"
+  },
+  {
+   "q": {
+    "en": "What papers does a motorbike need to go by train?",
+    "th": "ส่งมอเตอร์ไซค์ทางรถไฟต้องใช้เอกสารอะไร",
+    "my": "ဆိုင်ကယ်ကို ရထားဖြင့် ပို့ရန် ဘာစာရွက်စာတမ်းတွေ လိုသလဲ။",
+    "zh": "用火车托运摩托车要带什么文件？",
+    "de": "Welche Papiere braucht ein Motorrad für den Zugversand?"
+   },
+   "a": {
+    "en": "The registration book or a copy, the sender's ID card, and the recipient's name, phone, address and destination station. If someone else owns the bike, the owner's ID papers are needed.",
+    "th": "สมุดคู่มือจดทะเบียนหรือสำเนาทะเบียนรถ บัตรประชาชนของผู้ส่ง และชื่อ เบอร์โทร ที่อยู่ และสถานีปลายทางของผู้รับ ถ้าผู้ส่งไม่ใช่เจ้าของรถ ต้องมีเอกสารประจำตัวของเจ้าของรถ",
+    "my": "ယာဉ်မှတ်ပုံတင်စာအုပ် သို့မဟုတ် မိတ္တူ၊ ပို့သူ၏ မှတ်ပုံတင်ကတ်၊ လက်ခံသူ၏ အမည်၊ ဖုန်း၊ လိပ်စာနှင့် ပန်းတိုင်ဘူတာတို့ ဖြစ်သည်။ ဆိုင်ကယ်ပိုင်ရှင်က အခြားသူဖြစ်လျှင် ပိုင်ရှင်၏ မှတ်ပုံတင်စာရွက်စာတမ်းများ လိုသည်။",
+    "zh": "行车登记簿或复印件、寄件人的身份证，以及收件人的姓名、电话、地址和目的地车站。车若属于别人，还要有车主的身份证件。",
+    "de": "Das Fahrzeugbuch oder eine Kopie, der Ausweis der absendenden Person sowie Name, Telefon, Adresse und Zielbahnhof des Empfängers. Gehört das Motorrad einer anderen Person, werden deren Ausweispapiere verlangt."
+   },
+   "src": "https://www.bangkokbiznews.com/news/news-update/1141059"
+  },
+  {
+   "q": {
+    "en": "Can Thailand Post send a motorbike?",
+    "th": "ไปรษณีย์ไทยส่งมอเตอร์ไซค์ได้ไหม",
+    "my": "ထိုင်းစာတိုက်က ဆိုင်ကယ် ပို့ပေးနိုင်ပါသလား။",
+    "zh": "泰国邮政可以寄摩托车吗？",
+    "de": "Kann Thailand Post ein Motorrad verschicken?"
+   },
+   "a": {
+    "en": "Its EMS Jumbo service lists motorcycles up to 400 cc, not big-bike shaped, among the items it carries. Boxed items of 30 to 200 kg start at ฿200.",
+    "th": "บริการ EMS Jumbo ระบุรถจักรยานยนต์ไม่เกิน 400 ซีซี ที่ไม่ใช่ทรงบิ๊กไบค์ อยู่ในสิ่งของที่รับส่ง ของที่เป็นกล่อง 30–200 กก. เริ่ม ฿200",
+    "my": "၎င်း၏ EMS Jumbo ဝန်ဆောင်မှုတွင် ဘစ်ဘိုက်ပုံစံမဟုတ်သော 400 စီစီအထိ မော်တော်ဆိုင်ကယ်များကို သယ်ပို့သည့် ပစ္စည်းများတွင် ဖော်ပြထားသည်။ 30 မှ 200 ကီလိုဂရမ် သေတ္တာထည့်ပစ္စည်းများသည် ฿200 မှ စသည်။",
+    "zh": "其 EMS Jumbo 服务把 400cc 以内、非大排量车型的摩托车列入承运物品。30 至 200 公斤的箱装货物 ฿200 起。",
+    "de": "Sein Dienst EMS Jumbo nennt Motorräder bis 400 ccm, nicht in Big-Bike-Form, unter den beförderten Gütern. Kartons von 30 bis 200 kg beginnen bei ฿200."
+   },
+   "src": "https://ryt9.com/en/prg/266195"
+  },
+  {
+   "q": {
+    "en": "How heavy a parcel can a courier take?",
+    "th": "ขนส่งเอกชนรับพัสดุหนักได้เท่าไร",
+    "my": "ကူရီယာက ပါဆယ် အလေးချိန် ဘယ်လောက်အထိ လက်ခံသလဲ။",
+    "zh": "快递可以寄多重的包裹？",
+    "de": "Wie schwer darf ein Paket für einen Kurier sein?"
+   },
+   "a": {
+    "en": "Flash Express's Flash Bulky takes parcels of 5 to 100 kg, with fees from ฿50, according to a February 2022 report.",
+    "th": "บริการ Flash Bulky ของ Flash Express รับพัสดุ 5–100 กก. ค่าบริการเริ่ม ฿50 ตามรายงานเมื่อกุมภาพันธ์ 2565",
+    "my": "Flash Express ၏ Flash Bulky သည် 5 မှ 100 ကီလိုဂရမ် ပါဆယ်များကို လက်ခံပြီး ကြေးသည် ฿50 မှ စသည်ဟု 2022 ဖေဖော်ဝါရီ သတင်းတွင် ဖော်ပြသည်။",
+    "zh": "据 2022 年 2 月的报道，Flash Express 的 Flash Bulky 受理 5 至 100 公斤的包裹，费用 ฿50 起。",
+    "de": "Flash Bulky von Flash Express nimmt laut einem Bericht vom Februar 2022 Pakete von 5 bis 100 kg an, mit Gebühren ab ฿50."
+   },
+   "src": "https://thestandard.co/flash-express-send-large-parcels/"
+  },
+  {
+   "q": {
+    "en": "What happens if EMS Jumbo loses or breaks a parcel?",
+    "th": "ถ้า EMS Jumbo ทำพัสดุหายหรือเสียหายจะเป็นอย่างไร",
+    "my": "EMS Jumbo က ပါဆယ်ကို ပျောက်ဆုံး သို့မဟုတ် ပျက်စီးစေလျှင် ဘာဖြစ်မလဲ။",
+    "zh": "EMS Jumbo 弄丢或损坏包裹会怎样？",
+    "de": "Was geschieht, wenn EMS Jumbo ein Paket verliert oder beschädigt?"
+   },
+   "a": {
+    "en": "In its March 2023 announcement, Thailand Post set compensation at up to ฿5,000 an item for loss or damage. Insurance up to ฿200,000 is optional.",
+    "th": "ในประกาศเมื่อมีนาคม 2566 ไปรษณีย์ไทยกำหนดค่าชดเชยสูญหายหรือเสียหายไม่เกิน ฿5,000 ต่อชิ้น และซื้อประกันเพิ่มได้ไม่เกิน ฿200,000",
+    "my": "2023 မတ်လ ကြေညာချက်တွင် ထိုင်းစာတိုက်က ပျောက်ဆုံး သို့မဟုတ် ပျက်စီးမှုအတွက် လျော်ကြေးကို တစ်ခုလျှင် ฿5,000 အထိ သတ်မှတ်ခဲ့သည်။ ฿200,000 အထိ အာမခံကို ရွေးချယ်ဝယ်နိုင်သည်။",
+    "zh": "泰国邮政在 2023 年 3 月的公告中规定，丢失或损坏最高赔 ฿5,000 一件。另可选购最高 ฿200,000 的保险。",
+    "de": "In ihrer Ankündigung vom März 2023 legte Thailand Post für Verlust oder Schaden eine Entschädigung von bis zu ฿5,000 pro Stück fest. Eine Versicherung bis ฿200,000 ist wählbar."
+   },
+   "src": "https://www.nationthailand.com/business/corporate/40025393"
+  }
+ ],
+ "related": [
+  "move",
+  "vehicle",
+  "rentals",
+  "errand",
+  "car-guide",
+  "there"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Bangkok Biznews: sending a motorcycle by State Railway train",
+    "th": "กรุงเทพธุรกิจ: ส่งรถจักรยานยนต์ทางรถไฟของการรถไฟแห่งประเทศไทย",
+    "my": "Bangkok Biznews: ထိုင်းမီးရထားဖြင့် မော်တော်ဆိုင်ကယ် ပို့ခြင်း",
+    "zh": "Bangkok Biznews：用国家铁路火车托运摩托车",
+    "de": "Bangkok Biznews: Motorrad im Zug der Staatsbahn verschicken"
+   },
+   "href": "https://www.bangkokbiznews.com/news/news-update/1141059"
+  },
+  {
+   "t": {
+    "en": "The Nation: Thailand Post launches EMS Jumbo for parcels up to 200 kg",
+    "th": "The Nation: ไปรษณีย์ไทยเปิดบริการ EMS Jumbo สำหรับพัสดุไม่เกิน 200 กก.",
+    "my": "The Nation: ထိုင်းစာတိုက်က 200 ကီလိုအထိ ပါဆယ်များအတွက် EMS Jumbo ဖွင့်လှစ်",
+    "zh": "The Nation：泰国邮政推出可寄 200 公斤的 EMS Jumbo",
+    "de": "The Nation: Thailand Post startet EMS Jumbo für Pakete bis 200 kg"
+   },
+   "href": "https://www.nationthailand.com/business/corporate/40025393"
+  }
+ ],
+ "glyphs": [
+  "parcel",
+  "scooter",
+  "send"
+ ]
+}

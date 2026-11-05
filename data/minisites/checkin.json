@@ -1,0 +1,292 @@
+{
+ "id": "checkin",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A volunteer programme needs a list of who signed up and who came, and the list can start on the volunteer's phone.",
+  "th": "โครงการอาสาสมัครต้องมีรายชื่อคนที่ลงชื่อและคนที่มา และรายชื่อนี้เริ่มจากมือถือของอาสาสมัครได้",
+  "my": "စေတနာ့ဝန်ထမ်းစီမံကိန်းတစ်ခုတွင် စာရင်းသွင်းသူများနှင့် ရောက်လာသူများ၏ စာရင်း လိုအပ်ပြီး ထိုစာရင်းကို စေတနာ့ဝန်ထမ်း၏ ဖုန်းမှ စတင်နိုင်သည်။",
+  "zh": "志愿者项目需要一份名单，记下谁报了名、谁来了，这份名单可以从志愿者的手机开始记。",
+  "de": "Ein Freiwilligenprogramm braucht eine Liste, wer sich angemeldet hat und wer gekommen ist, und die Liste kann auf dem Handy der Freiwilligen beginnen."
+ },
+ "n": {
+  "de": "Anmeldung und Check-in für Freiwillige"
+ },
+ "l": {
+  "de": "Vom Handy aus, mit einer öffentlichen Seite."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "A public page for the programme is made.",
+    "th": "สร้างหน้าเว็บสาธารณะของโครงการ",
+    "my": "စီမံကိန်းအတွက် အများမြင်စာမျက်နှာတစ်ခု ပြုလုပ်ပေးသည်။",
+    "zh": "为项目建一个公开页面。",
+    "de": "Für das Programm wird eine öffentliche Seite erstellt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "Volunteers sign up from their phones.",
+    "th": "อาสาสมัครลงชื่อจากมือถือ",
+    "my": "စေတနာ့ဝန်ထမ်းများက ဖုန်းမှ စာရင်းသွင်းသည်။",
+    "zh": "志愿者用手机报名。",
+    "de": "Freiwillige melden sich per Handy an."
+   },
+   "who": {
+    "en": "Volunteers",
+    "th": "อาสาสมัคร",
+    "my": "စေတနာ့ဝန်ထမ်းများ",
+    "zh": "志愿者",
+    "de": "Freiwillige"
+   },
+   "time": {
+    "en": "When they join",
+    "th": "เมื่อสมัคร",
+    "my": "ပါဝင်သည့်အခါ",
+    "zh": "加入时",
+    "de": "Bei der Anmeldung"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "Volunteers check in from their phones.",
+    "th": "อาสาสมัครเช็กอินจากมือถือ",
+    "my": "စေတနာ့ဝန်ထမ်းများက ဖုန်းမှ ရောက်ရှိကြောင်း အတည်ပြု (check in) လုပ်သည်။",
+    "zh": "志愿者用手机签到。",
+    "de": "Freiwillige checken per Handy ein."
+   },
+   "who": {
+    "en": "Volunteers",
+    "th": "อาสาสมัคร",
+    "my": "စေတနာ့ဝန်ထမ်းများ",
+    "zh": "志愿者",
+    "de": "Freiwillige"
+   },
+   "time": {
+    "en": "On the day",
+    "th": "ในวันทำงาน",
+    "my": "လုပ်ငန်းရက်တွင်",
+    "zh": "当天",
+    "de": "Am Einsatztag"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Before or when it collects personal data, the data controller tells the person the purpose, the data collected and how long it is kept, who may receive it, and the controller's contact details (Section 23).",
+    "th": "ก่อนหรือขณะเก็บข้อมูลส่วนบุคคล ผู้ควบคุมข้อมูลแจ้งเจ้าของข้อมูลถึงวัตถุประสงค์ ข้อมูลที่เก็บและระยะเวลาเก็บ ผู้ที่อาจได้รับข้อมูล และช่องทางติดต่อของผู้ควบคุมข้อมูล (มาตรา 23)",
+    "my": "ကိုယ်ရေးအချက်အလက် မစုဆောင်းမီ သို့မဟုတ် စုဆောင်းချိန်တွင် ဒေတာထိန်းချုပ်သူက ထိုသူအား ရည်ရွယ်ချက်၊ စုဆောင်းသောအချက်အလက်နှင့် သိမ်းဆည်းမည့်ကာလ၊ လက်ခံနိုင်သူများ၊ ဒေတာထိန်းချုပ်သူ၏ ဆက်သွယ်ရန်အချက်အလက်တို့ကို အသိပေးသည် (ပုဒ်မ 23)။",
+    "zh": "收集个人数据前或收集时，数据控制者要告知当事人：目的、收集的数据和保存期限、可能的接收方，以及控制者的联系方式（第 23 条）。",
+    "de": "Vor oder bei der Erhebung personenbezogener Daten teilt die verantwortliche Stelle der Person den Zweck, die erhobenen Daten und die Aufbewahrungsdauer, mögliche Empfänger und ihre eigenen Kontaktdaten mit (Section 23)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "For a child under ten, consent to the use of personal data comes from the holder of parental responsibility. For an older minor, the parent's consent is added when the act is not one the minor may do alone (Section 20).",
+    "th": "สำหรับเด็กอายุต่ำกว่า 10 ปี ความยินยอมให้ใช้ข้อมูลส่วนบุคคลมาจากผู้ใช้อำนาจปกครอง สำหรับผู้เยาว์ที่โตกว่านั้น ต้องมีความยินยอมของผู้ปกครองเพิ่ม เมื่อเป็นการที่ผู้เยาว์ทำเองคนเดียวไม่ได้ (มาตรา 20)",
+    "my": "အသက် 10 နှစ်အောက် ကလေးအတွက် ကိုယ်ရေးအချက်အလက်သုံးစွဲရန် ခွင့်ပြုချက်ကို မိဘအုပ်ထိန်းခွင့်ရှိသူထံမှ ယူသည်။ ထိုထက်ကြီးသော အရွယ်မရောက်သေးသူအတွက် မိမိတစ်ဦးတည်း မလုပ်နိုင်သည့် လုပ်ရပ်ဖြစ်လျှင် မိဘ၏ ခွင့်ပြုချက် ထပ်လိုသည် (ပုဒ်မ 20)။",
+    "zh": "对 10 岁以下的儿童，使用个人数据的同意由行使监护权的人作出。对年纪较大的未成年人，如果该行为不是未成年人可以独自作出的，则还需加上家长的同意（第 20 条）。",
+    "de": "Bei einem Kind unter zehn Jahren erteilt die Person mit elterlicher Sorge die Einwilligung zur Verwendung der Daten. Bei einer älteren minderjährigen Person kommt die Einwilligung der Eltern hinzu, wenn sie die Handlung nicht allein vornehmen darf (Section 20)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Health data, disability, religious beliefs, criminal records and biometric data are among the data that may not be collected without explicit consent from the person, apart from the exceptions the Act lists (Section 26).",
+    "th": "ข้อมูลสุขภาพ ความพิการ ความเชื่อทางศาสนา ประวัติอาชญากรรม และข้อมูลชีวภาพ อยู่ในข้อมูลที่เก็บไม่ได้หากไม่มีความยินยอมโดยชัดแจ้งจากเจ้าของข้อมูล ยกเว้นกรณีที่กฎหมายระบุ (มาตรา 26)",
+    "my": "ကျန်းမာရေးဒေတာ၊ မသန်စွမ်းမှု၊ ဘာသာရေးယုံကြည်မှု၊ ရာဇဝတ်မှတ်တမ်းနှင့် ဇီဝမက်ထရစ်ဒေတာတို့သည် အက်ဥပဒေပါ ခြွင်းချက်များမှလွဲ၍ ထိုသူ၏ ပြတ်သားသော ခွင့်ပြုချက်မရှိဘဲ မစုဆောင်းရသော ဒေတာများတွင် ပါဝင်သည် (ပုဒ်မ 26)။",
+    "zh": "健康数据、残疾情况、宗教信仰、犯罪记录和生物识别数据，属于未经当事人明确同意不得收集的数据，法律列出的例外情形除外（第 26 条）。",
+    "de": "Gesundheitsdaten, Behinderung, religiöse Überzeugungen, Strafregister und biometrische Daten gehören zu den Daten, die ohne ausdrückliche Einwilligung der Person nicht erhoben werden dürfen, ausser in den vom Gesetz genannten Ausnahmen (Section 26)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "The Act sets an administrative fine of up to ฿1,000,000 for a data controller that does not give the Section 23 notice (Section 82).",
+    "th": "พระราชบัญญัติกำหนดโทษปรับทางปกครองไม่เกิน ฿1,000,000 สำหรับผู้ควบคุมข้อมูลที่ไม่แจ้งตามมาตรา 23 (มาตรา 82)",
+    "my": "အက်ဥပဒေက ပုဒ်မ 23 အရ အသိမပေးသော ဒေတာထိန်းချုပ်သူအား စီမံခန်ခွဲမှုဒဏ်ငွေ ฿1,000,000 အထိ သတ်မှတ်ထားသည် (ပုဒ်မ 82)။",
+    "zh": "法律对不履行第 23 条告知义务的数据控制者，规定了最高 ฿1,000,000 的行政罚款（第 82 条）。",
+    "de": "Das Gesetz sieht für eine verantwortliche Stelle, die die Mitteilung nach Section 23 unterlässt, eine Verwaltungsbusse bis zu ฿1,000,000 vor (Section 82)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "An online form in Google Forms or Microsoft Forms, built for you, a Fastwork listing: up to 20 questions, delivered by link and QR code",
+    "th": "แบบฟอร์มออนไลน์ใน Google Forms หรือ Microsoft Forms ที่ทำให้ ประกาศบน Fastwork: ไม่เกิน 20 คำถาม ส่งเป็นลิงก์และ QR code",
+    "my": "Google Forms သို့မဟုတ် Microsoft Forms ဖြင့် ပြုလုပ်ပေးသော အွန်လိုင်းဖောင်၊ Fastwork စာရင်းတစ်ခု: မေးခွန်း 20 အထိ၊ လင့်ခ်နှင့် QR ကုဒ်ဖြင့် ပေးပို့သည်",
+    "zh": "用 Google Forms 或 Microsoft Forms 代做的在线表单，Fastwork 上的一则服务：最多 20 个问题，以链接和二维码交付",
+    "de": "Online-Formular in Google Forms oder Microsoft Forms, für Sie erstellt, ein Angebot auf Fastwork: bis zu 20 Fragen, geliefert als Link und QR-Code"
+   },
+   "p": {
+    "en": "฿400; ฿5 for each question beyond 20; ฿150 more for delivery in 1 day",
+    "th": "฿400; ฿5 ต่อคำถามที่เกิน 20; ฿150 เพิ่มสำหรับส่งใน 1 วัน",
+    "my": "฿400; 20 ထက်ကျော်သော မေးခွန်းတစ်ခုလျှင် ฿5; ရက် 1 အတွင်းပို့လျှင် ฿150 ထပ်ပေး",
+    "zh": "฿400；超过 20 个的每个问题 ฿5；1 天内交付另加 ฿150",
+    "de": "฿400; ฿5 für jede Frage über 20; ฿150 mehr bei Lieferung innert 1 Tag"
+   },
+   "src": "https://fastwork.co/user/boomlittle/questionnaire-20628740"
+  },
+  {
+   "t": {
+    "en": "An event registration site with a QR ticket and a check-in scanner for staff on mobile, a Fastwork listing",
+    "th": "เว็บลงทะเบียนงานพร้อมตั๋ว QR และตัวสแกนเช็กอินบนมือถือสำหรับทีมงาน ประกาศบน Fastwork",
+    "my": "QR လက်မှတ်နှင့် ဝန်ထမ်းများအတွက် ဖုန်းပေါ်ရှိ check-in စကင်နာပါသော အစီအစဉ်စာရင်းသွင်းဝက်ဘ်ဆိုက်၊ Fastwork စာရင်းတစ်ခု",
+    "zh": "带二维码票和手机签到扫描器的活动报名网站，Fastwork 上的一则服务",
+    "de": "Anmeldeseite für einen Anlass mit QR-Ticket und Check-in-Scanner für das Personal auf dem Handy, ein Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "From ฿9,000",
+    "th": "เริ่มต้น ฿9,000",
+    "my": "฿9,000 မှ စတင်",
+    "zh": "฿9,000 起",
+    "de": "Ab ฿9,000"
+   },
+   "src": "https://fastwork.co/user/webgen/web-development-35556764"
+  },
+  {
+   "t": {
+    "en": "A check-in and check-out system on LINE LIFF with an admin back office, a Fastwork listing; the buyer brings a server",
+    "th": "ระบบเช็กอินเช็กเอาต์บน LINE LIFF พร้อมหลังบ้านสำหรับแอดมิน ประกาศบน Fastwork (ผู้ซื้อต้องมีเซิร์ฟเวอร์เอง)",
+    "my": "LINE LIFF ပေါ်ရှိ check-in၊ check-out စနစ်နှင့် အက်ဒ်မင်နောက်ကွယ်စနစ်၊ Fastwork စာရင်းတစ်ခု (ဝယ်သူက ဆာဗာကိုယ်တိုင်ပေးရသည်)",
+    "zh": "LINE LIFF 上的签到签退系统，带管理后台，Fastwork 上的一则服务（买方自备服务器）",
+    "de": "Check-in- und Check-out-System auf LINE LIFF mit Admin-Bereich, ein Angebot auf Fastwork; die Käuferseite bringt einen Server mit"
+   },
+   "p": {
+    "en": "฿9,500; delivery in 7 days",
+    "th": "฿9,500; ส่งงานใน 7 วัน",
+    "my": "฿9,500; ရက် 7 အတွင်း ပို့သည်",
+    "zh": "฿9,500；7 天交付",
+    "de": "฿9,500; Lieferung innert 7 Tagen"
+   },
+   "src": "https://fastwork.co/user/gkstudio/mobile-application-63030920"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a volunteer sign-up form cost to have built?",
+    "th": "ให้คนทำแบบฟอร์มลงชื่ออาสาสมัครให้ ราคาเท่าไร",
+    "my": "စေတနာ့ဝန်ထမ်း စာရင်းသွင်းဖောင် ပြုလုပ်ခိုင်းလျှင် ဘယ်လောက်ကျသလဲ။",
+    "zh": "请人做一份志愿者报名表要多少钱？",
+    "de": "Was kostet es, ein Anmeldeformular für Freiwillige erstellen zu lassen?"
+   },
+   "a": {
+    "en": "One Fastwork listing builds a Google Form or Microsoft Form for ฿400. It covers up to 20 questions, delivery by link and QR code in 3 days, and one free revision. Each question beyond 20 costs ฿5.",
+    "th": "ประกาศหนึ่งบน Fastwork สร้าง Google Form หรือ Microsoft Form ให้ในราคา ฿400 ได้ไม่เกิน 20 คำถาม ส่งเป็นลิงก์และ QR code ใน 3 วัน แก้ไขฟรี 1 ครั้ง คำถามที่เกิน 20 คิดข้อละ ฿5",
+    "my": "Fastwork စာရင်းတစ်ခုက Google Form သို့မဟုတ် Microsoft Form ကို ฿400 ဖြင့် ပြုလုပ်ပေးသည်။ မေးခွန်း 20 အထိ၊ ရက် 3 အတွင်း လင့်ခ်နှင့် QR ကုဒ်ဖြင့် ပို့ပေးခြင်းနှင့် အခမဲ့ ပြင်ခွင့် 1 ကြိမ် ပါသည်။ 20 ထက်ကျော်သော မေးခွန်းတစ်ခုလျှင် ฿5 ကျသည်။",
+    "zh": "Fastwork 上有一则服务，以 ฿400 代做 Google 表单或 Microsoft 表单：最多 20 个问题，3 天内以链接和二维码交付，含一次免费修改。超过 20 个的每个问题 ฿5。",
+    "de": "Ein Angebot auf Fastwork erstellt ein Google- oder Microsoft-Formular für ฿400. Es umfasst bis zu 20 Fragen, Lieferung als Link und QR-Code in 3 Tagen und eine kostenlose Überarbeitung. Jede Frage über 20 kostet ฿5."
+   },
+   "src": "https://fastwork.co/user/boomlittle/questionnaire-20628740"
+  },
+  {
+   "q": {
+    "en": "What does a QR check-in system cost?",
+    "th": "ระบบเช็กอินด้วย QR ราคาเท่าไร",
+    "my": "QR check-in စနစ် ဘယ်လောက်ကျသလဲ။",
+    "zh": "二维码签到系统要多少钱？",
+    "de": "Was kostet ein QR-Check-in-System?"
+   },
+   "a": {
+    "en": "One Fastwork listing for an event registration system starts at ฿9,000. It lists a QR ticket sent after sign-up, a check-in scanner for staff on mobile, and a dashboard with the number of check-ins and an Excel or CSV export.",
+    "th": "ประกาศหนึ่งบน Fastwork สำหรับระบบลงทะเบียนงาน เริ่มต้น ฿9,000 ระบุตั๋ว QR ที่ส่งหลังลงทะเบียน ตัวสแกนเช็กอินบนมือถือสำหรับทีมงาน และแดชบอร์ดที่แสดงจำนวนเช็กอินพร้อมส่งออก Excel หรือ CSV",
+    "my": "Fastwork ရှိ အစီအစဉ်စာရင်းသွင်းစနစ် စာရင်းတစ်ခုသည် ฿9,000 မှ စသည်။ စာရင်းသွင်းပြီးနောက် ပို့သော QR လက်မှတ်၊ ဝန်ထမ်းများအတွက် ဖုန်းပေါ်ရှိ check-in စကင်နာ၊ check-in အရေအတွက်ပြသော ဒက်ရှ်ဘုတ်နှင့် Excel သို့မဟုတ် CSV ထုတ်ယူမှုတို့ကို ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一则活动报名系统的服务，起价 ฿9,000。列出的内容有：报名后发送的二维码票、工作人员用的手机签到扫描器，以及显示签到人数并可导出 Excel 或 CSV 的后台面板。",
+    "de": "Ein Angebot auf Fastwork für ein Anmeldesystem beginnt bei ฿9,000. Es nennt ein QR-Ticket nach der Anmeldung, einen Check-in-Scanner für das Personal auf dem Handy und eine Übersicht mit der Zahl der Check-ins samt Excel- oder CSV-Export."
+   },
+   "src": "https://fastwork.co/user/webgen/web-development-35556764"
+  },
+  {
+   "q": {
+    "en": "What must a sign-up form tell volunteers about their data?",
+    "th": "แบบฟอร์มลงชื่อต้องแจ้งอะไรเกี่ยวกับข้อมูลของอาสาสมัคร",
+    "my": "စာရင်းသွင်းဖောင်က စေတနာ့ဝန်ထမ်းများ၏ အချက်အလက်အကြောင်း ဘာတွေ အသိပေးရသလဲ။",
+    "zh": "报名表要向志愿者说明他们数据的哪些事项？",
+    "de": "Was muss ein Anmeldeformular den Freiwilligen zu ihren Daten mitteilen?"
+   },
+   "a": {
+    "en": "Section 23 of Thailand's Personal Data Protection Act lists the purpose, the data collected and how long it is kept, who may receive it, the controller's contact details and the person's rights. The notice comes before or at the time of collection.",
+    "th": "มาตรา 23 ของพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคลระบุวัตถุประสงค์ ข้อมูลที่เก็บและระยะเวลาเก็บ ผู้ที่อาจได้รับข้อมูล ช่องทางติดต่อของผู้ควบคุมข้อมูล และสิทธิของเจ้าของข้อมูล โดยแจ้งก่อนหรือขณะเก็บข้อมูล",
+    "my": "ထိုင်းနိုင်ငံ၏ ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေ ပုဒ်မ 23 တွင် ရည်ရွယ်ချက်၊ စုဆောင်းသောအချက်အလက်နှင့် သိမ်းဆည်းမည့်ကာလ၊ လက်ခံနိုင်သူများ၊ ဒေတာထိန်းချုပ်သူ၏ ဆက်သွယ်ရန်အချက်အလက်နှင့် ထိုသူ၏ အခွင့်အရေးများကို စာရင်းပြုထားသည်။ အသိပေးချက်ကို စုဆောင်းမီ သို့မဟုတ် စုဆောင်းချိန်တွင် ပေးသည်။",
+    "zh": "泰国《个人数据保护法》第 23 条列出：目的、收集的数据和保存期限、可能的接收方、控制者的联系方式，以及当事人的权利。告知在收集之前或收集时作出。",
+    "de": "Section 23 des thailändischen Datenschutzgesetzes nennt den Zweck, die erhobenen Daten und die Aufbewahrungsdauer, mögliche Empfänger, die Kontaktdaten der verantwortlichen Stelle und die Rechte der Person. Die Mitteilung erfolgt vor oder bei der Erhebung."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "q": {
+    "en": "Can a form ask about health or religion?",
+    "th": "แบบฟอร์มถามเรื่องสุขภาพหรือศาสนาได้ไหม",
+    "my": "ဖောင်တွင် ကျန်းမာရေး သို့မဟုတ် ဘာသာရေးအကြောင်း မေးနိုင်ပါသလား။",
+    "zh": "表单可以问健康或宗教方面的问题吗？",
+    "de": "Darf ein Formular nach Gesundheit oder Religion fragen?"
+   },
+   "a": {
+    "en": "Section 26 bars collecting health data and religious beliefs without explicit consent from the person. It lists exceptions, among them preventing harm to a person's life, body or health and the lawful activities of a foundation, association or other non-profit body with a political, religious, philosophical or trade union purpose, for its members and regular contacts, when it does not pass the data outside the body.",
+    "th": "มาตรา 26 ห้ามเก็บข้อมูลสุขภาพและความเชื่อทางศาสนาโดยไม่มีความยินยอมโดยชัดแจ้งจากเจ้าของข้อมูล และมีข้อยกเว้น เช่น เพื่อป้องกันอันตรายต่อชีวิต และกิจกรรมที่ชอบด้วยกฎหมายของมูลนิธิ สมาคม หรือองค์กรไม่แสวงหากำไรที่มีวัตถุประสงค์ทางการเมือง ศาสนา ปรัชญา หรือสหภาพแรงงาน สำหรับสมาชิกและผู้ติดต่อสม่ำเสมอ โดยไม่เปิดเผยข้อมูลออกนอกองค์กร",
+    "my": "ပုဒ်မ 26 က ကျန်းမာရေးဒေတာနှင့် ဘာသာရေးယုံကြည်မှုကို ထိုသူ၏ ပြတ်သားသော ခွင့်ပြုချက်မရှိဘဲ စုဆောင်းခြင်းကို တားမြစ်သည်။ ခြွင်းချက်များတွင် အသက်အန္တရာယ် ကာကွယ်ရန်နှင့် နိုင်ငံရေး၊ ဘာသာရေး၊ ဒဿနိကဗေဒ သို့မဟုတ် အလုပ်သမားသမဂ္ဂ ရည်ရွယ်ချက်ရှိသော ဖောင်ဒေးရှင်း၊ အသင်း သို့မဟုတ် အကျိုးအမြတ်မယူသော အဖွဲ့အစည်းတစ်ခု၏ အဖွဲ့ဝင်များနှင့် ပုံမှန်ဆက်သွယ်သူများအတွက် တရားဝင်လုပ်ငန်းများ ပါဝင်ပြီး ထိုအဖွဲ့အစည်းပြင်ပသို့ ဒေတာ မပို့မှသာ ဖြစ်သည်။",
+    "zh": "第 26 条禁止在没有当事人明确同意的情况下收集健康数据和宗教信仰。条文列出例外，其中有保护生命安全，以及具有政治、宗教、哲学或工会目的的基金会、协会或其他非营利机构，为其成员和经常联系的人所进行的合法活动，条件是不把数据传到机构之外。",
+    "de": "Section 26 verbietet es, Gesundheitsdaten und religiöse Überzeugungen ohne ausdrückliche Einwilligung der Person zu erheben. Das Gesetz nennt Ausnahmen, darunter die Abwehr einer Lebensgefahr und die rechtmässige Tätigkeit einer Stiftung, eines Vereins oder einer anderen gemeinnützigen Stelle mit politischem, religiösem, philosophischem oder gewerkschaftlichem Zweck für ihre Mitglieder und regelmässigen Kontakte, sofern sie die Daten nicht ausserhalb der Stelle weitergibt."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "related": [
+  "giving",
+  "map-archive",
+  "event-kit",
+  "stall-page",
+  "lang-pages",
+  "cartoons"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Personal Data Protection Act B.E. 2562 (2019), unofficial English translation",
+    "th": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ฉบับแปลภาษาอังกฤษ (ไม่เป็นทางการ)",
+    "my": "ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေ ၂၀၁၉ (B.E. 2562)၊ အင်္ဂလိပ်ဘာသာပြန် (တရားဝင်မဟုတ်)",
+    "zh": "《个人数据保护法》2562 佛历（2019）英文译本（非官方）",
+    "de": "Datenschutzgesetz B.E. 2562 (2019), inoffizielle englische Übersetzung"
+   },
+   "href": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Fastwork: an event registration system with QR ticket and check-in scanner",
+    "th": "Fastwork: ระบบลงทะเบียนงานพร้อมตั๋ว QR และตัวสแกนเช็กอิน",
+    "my": "Fastwork: QR လက်မှတ်နှင့် check-in စကင်နာပါသော အစီအစဉ်စာရင်းသွင်းစနစ်",
+    "zh": "Fastwork：带二维码票和签到扫描器的活动报名系统",
+    "de": "Fastwork: Anmeldesystem für Anlässe mit QR-Ticket und Check-in-Scanner"
+   },
+   "href": "https://fastwork.co/user/webgen/web-development-35556764"
+  }
+ ],
+ "glyphs": [
+  "telephone",
+  "scan",
+  "page"
+ ]
+}

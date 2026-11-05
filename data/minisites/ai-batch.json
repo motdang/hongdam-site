@@ -1,0 +1,316 @@
+{
+ "id": "ai-batch",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People have files with thousands of rows to clean, sort or summarise, and AI companies run bulk jobs at half the usual price.",
+  "th": "คนมีไฟล์หลายพันแถวที่ต้องทำความสะอาด จัดเรียง หรือสรุป และบริษัท AI รับงานเป็นชุดใหญ่ในราคาครึ่งหนึ่งของราคาปกติ",
+  "my": "လူတွေမှာ တန်းထောင်ချီပါသော ဖိုင်များကို သန့်စင်၊ စီ သို့မဟုတ် အကျဉ်းချုပ်ရန် လိုအပ်ပြီး AI ကုမ္ပဏီများက အစုလိုက်အလုပ်များကို ပုံမှန်စျေး၏ တစ်ဝက်ဖြင့် လုပ်ပေးသည်။",
+  "zh": "人们有成千上万行的文件要清理、排序或汇总，而 AI 公司接批量任务只收平时一半的价格。",
+  "de": "Man hat Dateien mit Tausenden Zeilen, die bereinigt, sortiert oder zusammengefasst werden sollen, und KI-Firmen führen Stapelaufträge zum halben Preis aus."
+ },
+ "n": {
+  "de": "Grosse Datei mit KI bereinigen oder sortieren"
+ },
+ "l": {
+  "de": "Tausende Zeilen bereinigt, sortiert oder zusammengefasst."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the spreadsheet or text file.",
+    "th": "คุณส่งไฟล์ตารางหรือไฟล์ข้อความ",
+    "my": "သင်က စာရင်းဇယားဖိုင် သို့မဟုတ် စာသားဖိုင်ကို ပို့ပေးသည်။",
+    "zh": "您发来电子表格或文本文件。",
+    "de": "Sie schicken die Tabelle oder Textdatei."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "robot",
+   "t": {
+    "en": "We run the file through an AI model to clean, sort, extract or summarise it.",
+    "th": "ส่งไฟล์ผ่านโมเดล AI เพื่อทำความสะอาด จัดเรียง ดึงข้อมูล หรือสรุป",
+    "my": "ဖိုင်ကို AI မော်ဒယ်ဖြင့် လုပ်ဆောင်ပြီး သန့်စင်၊ စီ၊ ထုတ်ယူ သို့မဟုတ် အကျဉ်းချုပ်သည်။",
+    "zh": "把文件交给 AI 模型，清理、排序、提取或汇总。",
+    "de": "Wir lassen die Datei von einem KI-Modell bereinigen, sortieren, auswerten oder zusammenfassen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The job",
+    "th": "ระหว่างงาน",
+    "my": "အလုပ်ပြုလုပ်စဉ်",
+    "zh": "处理期间",
+    "de": "Die Arbeit"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "You get the finished file.",
+    "th": "คุณได้รับไฟล์ที่เสร็จแล้ว",
+    "my": "သင်က ပြီးစီးသော ဖိုင်ကို ရရှိသည်။",
+    "zh": "您收到处理好的文件。",
+    "de": "Sie erhalten die fertige Datei."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ตอนจบงาน",
+    "my": "အဆုံးတွင်",
+    "zh": "完成时",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Anthropic's Message Batches API charges 50% of the standard API price. Most batches finish within 1 hour. A batch that does not finish within 24 hours expires.",
+    "th": "Message Batches API ของ Anthropic คิดราคา 50% ของราคา API ปกติ งานชุดส่วนใหญ่เสร็จภายใน 1 ชั่วโมง งานชุดที่ไม่เสร็จใน 24 ชั่วโมงจะหมดอายุ",
+    "my": "Anthropic ၏ Message Batches API သည် ပုံမှန် API စျေး၏ 50% ကို ကောက်ခံသည်။ အစုလိုက်အလုပ်အများစုမှာ 1 နာရီအတွင်း ပြီးသည်။ 24 နာရီအတွင်း မပြီးသော အစုသည် သက်တမ်းကုန်သည်။",
+    "zh": "Anthropic 的 Message Batches API 按标准 API 价格的 50% 收费。大多数批次在 1 小时内完成。24 小时内未完成的批次会过期。",
+    "de": "Die Message Batches API von Anthropic berechnet 50% des normalen API-Preises. Die meisten Stapel sind innerhalb von 1 Stunde fertig. Ein Stapel, der nicht innerhalb von 24 Stunden fertig wird, verfällt."
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "t": {
+    "en": "An Anthropic batch holds up to 100,000 requests or 256 MB. Anthropic stores a batch's requests and results for up to 29 days after the batch is created.",
+    "th": "งานชุดของ Anthropic รับได้สูงสุด 100,000 คำขอ หรือ 256 MB Anthropic เก็บคำขอและผลลัพธ์ของงานชุดไว้ได้นานสูงสุด 29 วันหลังสร้างงานชุด",
+    "my": "Anthropic အစုတစ်ခုတွင် တောင်းဆိုမှု 100,000 သို့မဟုတ် 256 MB အထိ ပါနိုင်သည်။ Anthropic သည် အစုတစ်ခု၏ တောင်းဆိုမှုများနှင့် ရလဒ်များကို အစုဖန်တီးပြီးနောက် 29 ရက်အထိ သိမ်းထားသည်။",
+    "zh": "Anthropic 的一个批次最多含 100,000 个请求或 256 MB。Anthropic 在批次创建后最长 29 天内保存其请求和结果。",
+    "de": "Ein Stapel bei Anthropic fasst bis zu 100,000 Anfragen oder 256 MB. Anthropic speichert die Anfragen und Ergebnisse eines Stapels bis zu 29 Tage nach dessen Erstellung."
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "t": {
+    "en": "OpenAI's Batch API gives a 50% discount compared with its synchronous calls, and a batch completes within 24 hours. A batch file holds up to 50,000 requests and 200 MB.",
+    "th": "Batch API ของ OpenAI ลดราคา 50% เมื่อเทียบกับการเรียกแบบรอผลทันที และงานชุดเสร็จภายใน 24 ชั่วโมง ไฟล์งานชุดหนึ่งรับได้สูงสุด 50,000 คำขอและ 200 MB",
+    "my": "OpenAI ၏ Batch API သည် ချက်ချင်းဖြေသော ခေါ်ဆိုမှုများထက် 50% လျှော့ပေးပြီး အစုတစ်ခုသည် 24 နာရီအတွင်း ပြီးသည်။ အစုဖိုင်တစ်ခုတွင် တောင်းဆိုမှု 50,000 နှင့် 200 MB အထိ ပါနိုင်သည်။",
+    "zh": "OpenAI 的 Batch API 比同步调用便宜 50%，批次在 24 小时内完成。一个批次文件最多含 50,000 个请求和 200 MB。",
+    "de": "Die Batch API von OpenAI gibt 50% Rabatt gegenüber den synchronen Aufrufen, und ein Stapel wird innerhalb von 24 Stunden abgeschlossen. Eine Stapeldatei fasst bis zu 50,000 Anfragen und 200 MB."
+   },
+   "src": "https://developers.openai.com/api/docs/guides/batch"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork Excel seller, 649 sold: basic tables, standard formulas, custom forms and lookups",
+    "th": "ผู้ขายงาน Excel บน Fastwork ขายแล้ว 649 ครั้ง: ตารางพื้นฐาน สูตรมาตรฐาน แบบฟอร์มและสูตรค้นหาตามสั่ง",
+    "my": "Fastwork ရှိ Excel ရောင်းသူတစ်ဦး၊ 649 ကြိမ်ရောင်းပြီး — အခြေခံဇယား၊ စံဖော်မြူလာ၊ မှာယူလုပ်ဆောင်သော ဖောင်များနှင့် lookup",
+    "zh": "Fastwork 上一位 Excel 卖家，已售 649 次：基础表格、标准公式、定制表单和查找公式",
+    "de": "Ein Excel-Anbieter auf Fastwork, 649-mal verkauft: einfache Tabellen, Standardformeln, eigene Formulare und Nachschlagen"
+   },
+   "p": {
+    "en": "฿300 for basic tables, 1 day; ฿500 with standard formulas, 2 days, data cleaning before the formulas included; ฿750 with advanced formulas, 3 days; 3 revisions each",
+    "th": "฿300 ตารางพื้นฐาน 1 วัน; ฿500 สูตรมาตรฐาน 2 วัน รวมทำความสะอาดข้อมูลก่อนใส่สูตร; ฿750 สูตรขั้นสูง 3 วัน; แก้ได้ 3 ครั้งทุกแพ็กเกจ",
+    "my": "฿300 — အခြေခံဇယား၊ 1 ရက်။ ฿500 — စံဖော်မြူလာ၊ 2 ရက်၊ ဖော်မြူလာမတိုင်မီ ဒေတာသန့်စင်ခြင်း ပါ။ ฿750 — အဆင့်မြင့်ဖော်မြူလာ၊ 3 ရက်။ ပက်ကေ့ချ်တိုင်း ပြင်ဆင်မှု 3 ကြိမ်",
+    "zh": "฿300 基础表格，1 天；฿500 标准公式，2 天，含公式前的数据清理；฿750 高级公式，3 天；各套餐均可修改 3 次",
+    "de": "฿300 für einfache Tabellen, 1 Tag; ฿500 mit Standardformeln, 2 Tage, Datenbereinigung vor den Formeln inbegriffen; ฿750 mit erweiterten Formeln, 3 Tage; jeweils 3 Korrekturen"
+   },
+   "src": "https://fastwork.co/user/newcleuz/typing-and-data-entry-69065550"
+  },
+  {
+   "t": {
+    "en": "A Fastwork data-cleaning seller: duplicates removed, missing values handled, dates, numbers, phone numbers and categories made uniform, files merged, with a before-and-after report",
+    "th": "ผู้ขายบริการทำความสะอาดข้อมูลบน Fastwork: ลบข้อมูลซ้ำ จัดการค่าที่ขาด ทำวันที่ ตัวเลข เบอร์โทร และหมวดให้เป็นรูปแบบเดียวกัน รวมไฟล์ พร้อมรายงานก่อน–หลัง",
+    "my": "Fastwork ရှိ ဒေတာသန့်စင်ရေး ရောင်းသူတစ်ဦး — ထပ်နေသည်များ ဖယ်ရှားခြင်း၊ ပျောက်နေသောတန်ဖိုးများ ကိုင်တွယ်ခြင်း၊ ရက်စွဲ၊ ဂဏန်း၊ ဖုန်းနံပါတ်နှင့် အမျိုးအစားများကို ပုံစံတူအောင်လုပ်ခြင်း၊ ဖိုင်များ ပေါင်းခြင်း၊ မတိုင်မီ/နောက် အစီရင်ခံစာပါ",
+    "zh": "Fastwork 上一位数据清理卖家：删除重复项、处理缺失值、统一日期、数字、电话号码和类别格式、合并文件，并附清理前后对比报告",
+    "de": "Ein Anbieter für Datenbereinigung auf Fastwork: Duplikate entfernt, fehlende Werte behandelt, Daten, Zahlen, Telefonnummern und Kategorien vereinheitlicht, Dateien zusammengeführt, mit Vorher-nachher-Bericht"
+   },
+   "p": {
+    "en": "From ฿1,000; the quote depends on the size and complexity of the data, after a sample file",
+    "th": "เริ่มที่ ฿1,000 ราคาขึ้นกับขนาดและความซับซ้อนของข้อมูล หลังดูไฟล์ตัวอย่าง",
+    "my": "฿1,000 မှ စတင်၊ နမူနာဖိုင်ကြည့်ပြီးနောက် ဒေတာ၏ အရွယ်အစားနှင့် ရှုပ်ထွေးမှုအလိုက် စျေးပြောသည်",
+    "zh": "起价 ฿1,000；看过样本文件后，按数据的大小和复杂程度报价",
+    "de": "Ab ฿1,000; das Angebot hängt nach einer Beispieldatei von Umfang und Komplexität der Daten ab"
+   },
+   "src": "https://fastwork.co/user/yanacharita/data-analyst-70590552"
+  },
+  {
+   "t": {
+    "en": "Claude Sonnet 5.5 by batch (tokens are the pieces of text a model reads and writes)",
+    "th": "Claude Sonnet 5.5 แบบงานชุด (โทเคนคือชิ้นส่วนข้อความที่โมเดลอ่านและเขียน)",
+    "my": "Claude Sonnet 5.5 အစုလိုက် (token ဆိုသည်မှာ မော်ဒယ်က ဖတ်ပြီး ရေးသော စာသားအပိုင်းအစများ ဖြစ်သည်)",
+    "zh": "Claude Sonnet 5.5 批量调用（token 是模型读写的文本片段）",
+    "de": "Claude Sonnet 5.5 im Stapel (Tokens sind die Textstücke, die ein Modell liest und schreibt)"
+   },
+   "p": {
+    "en": "US$1 per million input tokens, US$5 per million output tokens",
+    "th": "US$1 ต่อโทเคนขาเข้า 1 ล้าน, US$5 ต่อโทเคนขาออก 1 ล้าน",
+    "my": "input token သန်းတစ်သန်းလျှင် US$1၊ output token သန်းတစ်သန်းလျှင် US$5",
+    "zh": "每百万输入 token US$1，每百万输出 token US$5",
+    "de": "US$1 pro Million Eingabe-Tokens, US$5 pro Million Ausgabe-Tokens"
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "t": {
+    "en": "Claude Haiku 5.5 by batch, for prompts up to 100,000 tokens",
+    "th": "Claude Haiku 5.5 แบบงานชุด สำหรับคำสั่งไม่เกิน 100,000 โทเคน",
+    "my": "Claude Haiku 5.5 အစုလိုက်၊ token 100,000 အထိ prompt များအတွက်",
+    "zh": "Claude Haiku 5.5 批量调用，提示词不超过 100,000 token",
+    "de": "Claude Haiku 5.5 im Stapel, für Prompts bis 100,000 Tokens"
+   },
+   "p": {
+    "en": "US$0.05 per million input tokens, US$0.25 per million output tokens",
+    "th": "US$0.05 ต่อโทเคนขาเข้า 1 ล้าน, US$0.25 ต่อโทเคนขาออก 1 ล้าน",
+    "my": "input token သန်းတစ်သန်းလျှင် US$0.05၊ output token သန်းတစ်သန်းလျှင် US$0.25",
+    "zh": "每百万输入 token US$0.05，每百万输出 token US$0.25",
+    "de": "US$0.05 pro Million Eingabe-Tokens, US$0.25 pro Million Ausgabe-Tokens"
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How long does a bulk AI job take?",
+    "th": "งาน AI ชุดใหญ่ใช้เวลานานแค่ไหน",
+    "my": "AI အစုလိုက်အလုပ်တစ်ခု ဘယ်လောက်ကြာသလဲ။",
+    "zh": "AI 批量任务要多久？",
+    "de": "Wie lange dauert ein KI-Stapelauftrag?"
+   },
+   "a": {
+    "en": "Anthropic says most batches finish in less than 1 hour. Results are available when all requests are done or after 24 hours, whichever comes first, and a batch that is not done in 24 hours expires.",
+    "th": "Anthropic ระบุว่างานชุดส่วนใหญ่เสร็จใน 1 ชั่วโมง ผลลัพธ์ใช้ได้เมื่อทุกคำขอเสร็จ หรือหลัง 24 ชั่วโมง แล้วแต่อย่างใดมาก่อน และงานชุดที่ไม่เสร็จใน 24 ชั่วโมงจะหมดอายุ",
+    "my": "Anthropic က အစုလိုက်အလုပ်အများစုသည် 1 နာရီအောက်တွင် ပြီးသည်ဟု ဆိုသည်။ တောင်းဆိုမှုအားလုံး ပြီးသည့်အခါ သို့မဟုတ် 24 နာရီပြီးနောက် (အရင်ဖြစ်သည့်အတိုင်း) ရလဒ်ကို ရနိုင်ပြီး 24 နာရီအတွင်း မပြီးသော အစုသည် သက်တမ်းကုန်သည်။",
+    "zh": "Anthropic 称大多数批次在 1 小时内完成。所有请求完成后，或 24 小时后（以先到者为准）即可取得结果；24 小时内未完成的批次会过期。",
+    "de": "Anthropic schreibt, die meisten Stapel seien in weniger als 1 Stunde fertig. Die Ergebnisse stehen bereit, wenn alle Anfragen erledigt sind oder nach 24 Stunden, je nachdem, was zuerst eintritt; ein Stapel, der in 24 Stunden nicht fertig wird, verfällt."
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "q": {
+    "en": "How does OpenAI price a bulk job?",
+    "th": "OpenAI คิดราคางานชุดใหญ่อย่างไร",
+    "my": "OpenAI က အစုလိုက်အလုပ်ကို ဘယ်လို စျေးသတ်မှတ်သလဲ။",
+    "zh": "OpenAI 的批量任务怎么收费？",
+    "de": "Wie bepreist OpenAI einen Stapelauftrag?"
+   },
+   "a": {
+    "en": "OpenAI lists a 50% discount compared with its synchronous API. Each batch completes within 24 hours, and often sooner. A batch file holds up to 50,000 requests and 200 MB.",
+    "th": "OpenAI ระบุส่วนลด 50% เมื่อเทียบกับ API แบบรอผลทันที แต่ละงานชุดเสร็จภายใน 24 ชั่วโมงและมักเร็วกว่านั้น ไฟล์งานชุดหนึ่งรับได้สูงสุด 50,000 คำขอและ 200 MB",
+    "my": "OpenAI က ချက်ချင်းဖြေသော API ထက် 50% လျှော့ပေးကြောင်း ဖော်ပြသည်။ အစုတစ်ခုစီသည် 24 နာရီအတွင်း ပြီးပြီး မကြာခဏ ပိုမြန်သည်။ အစုဖိုင်တစ်ခုတွင် တောင်းဆိုမှု 50,000 နှင့် 200 MB အထိ ပါနိုင်သည်။",
+    "zh": "OpenAI 标明比其同步 API 便宜 50%。每个批次在 24 小时内完成，往往更快。一个批次文件最多含 50,000 个请求和 200 MB。",
+    "de": "OpenAI nennt einen Rabatt von 50% gegenüber der synchronen API. Jeder Stapel wird innerhalb von 24 Stunden abgeschlossen, oft früher. Eine Stapeldatei fasst bis zu 50,000 Anfragen und 200 MB."
+   },
+   "src": "https://developers.openai.com/api/docs/guides/batch"
+  },
+  {
+   "q": {
+    "en": "How big can a bulk job be?",
+    "th": "งานชุดใหญ่ได้ใหญ่แค่ไหน",
+    "my": "အစုလိုက်အလုပ်တစ်ခု ဘယ်လောက်ကြီးနိုင်သလဲ။",
+    "zh": "批量任务最大能多大？",
+    "de": "Wie gross darf ein Stapelauftrag sein?"
+   },
+   "a": {
+    "en": "At Anthropic, a batch is limited to 100,000 requests or 256 MB, whichever is reached first. At OpenAI the limit is 50,000 requests and 200 MB for the input file.",
+    "th": "ที่ Anthropic งานชุดหนึ่งจำกัดที่ 100,000 คำขอ หรือ 256 MB แล้วแต่อย่างใดถึงก่อน ที่ OpenAI ไฟล์นำเข้าจำกัดที่ 50,000 คำขอและ 200 MB",
+    "my": "Anthropic တွင် အစုတစ်ခုကို တောင်းဆိုမှု 100,000 သို့မဟုတ် 256 MB (အရင်ရောက်သည့်အတိုင်း) ဖြင့် ကန့်သတ်သည်။ OpenAI တွင် input ဖိုင်အတွက် ကန့်သတ်ချက်မှာ တောင်းဆိုမှု 50,000 နှင့် 200 MB ဖြစ်သည်။",
+    "zh": "在 Anthropic，一个批次上限是 100,000 个请求或 256 MB，以先达到者为准。在 OpenAI，输入文件上限是 50,000 个请求和 200 MB。",
+    "de": "Bei Anthropic ist ein Stapel auf 100,000 Anfragen oder 256 MB begrenzt, je nachdem, was zuerst erreicht wird. Bei OpenAI liegt die Grenze für die Eingabedatei bei 50,000 Anfragen und 200 MB."
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "q": {
+    "en": "How long is the data kept?",
+    "th": "ข้อมูลถูกเก็บไว้นานแค่ไหน",
+    "my": "ဒေတာကို ဘယ်လောက်ကြာ သိမ်းထားသလဲ။",
+    "zh": "数据会保存多久？",
+    "de": "Wie lange werden die Daten aufbewahrt?"
+   },
+   "a": {
+    "en": "Anthropic stores a batch's requests and results for up to 29 days after the batch is created. A batch can be deleted at any time after processing, and an unfinished batch is cancelled first.",
+    "th": "Anthropic เก็บคำขอและผลลัพธ์ของงานชุดไว้ได้นานสูงสุด 29 วันหลังสร้างงานชุด ลบงานชุดได้ทุกเมื่อหลังประมวลผลเสร็จ และงานชุดที่ยังไม่เสร็จต้องยกเลิกก่อน",
+    "my": "Anthropic သည် အစုတစ်ခု၏ တောင်းဆိုမှုများနှင့် ရလဒ်များကို အစုဖန်တီးပြီးနောက် 29 ရက်အထိ သိမ်းထားသည်။ လုပ်ဆောင်ပြီးနောက် အချိန်မရွေး အစုကို ဖျက်နိုင်ပြီး မပြီးသေးသော အစုကို အရင်ဖျက်သိမ်းရသည်။",
+    "zh": "Anthropic 在批次创建后最长 29 天内保存其请求和结果。处理完成后可随时删除批次；未完成的批次要先取消。",
+    "de": "Anthropic speichert die Anfragen und Ergebnisse eines Stapels bis zu 29 Tage nach dessen Erstellung. Ein Stapel kann nach der Verarbeitung jederzeit gelöscht werden; ein laufender Stapel wird zuerst abgebrochen."
+   },
+   "src": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "q": {
+    "en": "What does data cleaning cover?",
+    "th": "การทำความสะอาดข้อมูลครอบคลุมอะไรบ้าง",
+    "my": "ဒေတာသန့်စင်ခြင်းတွင် ဘာတွေ ပါသလဲ။",
+    "zh": "数据清理包括什么？",
+    "de": "Was umfasst Datenbereinigung?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists duplicates removed, missing values handled, and dates, numbers, phone numbers and categories made uniform. The same listing covers merging several files and a report that compares the data before and after.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ระบุว่ามีการลบข้อมูลซ้ำ จัดการค่าที่ขาด และทำวันที่ ตัวเลข เบอร์โทร และหมวดให้เป็นรูปแบบเดียวกัน ประกาศเดียวกันยังรวมการรวมหลายไฟล์ และรายงานเปรียบเทียบข้อมูลก่อนและหลัง",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက ထပ်နေသည်များ ဖယ်ရှားခြင်း၊ ပျောက်နေသောတန်ဖိုးများ ကိုင်တွယ်ခြင်းနှင့် ရက်စွဲ၊ ဂဏန်း၊ ဖုန်းနံပါတ်၊ အမျိုးအစားများကို ပုံစံတူအောင်လုပ်ခြင်းကို ဖော်ပြထားသည်။ ထိုကြော်ငြာတွင် ဖိုင်များစွာ ပေါင်းခြင်းနှင့် ဒေတာကို မတိုင်မီ/နောက် နှိုင်းယှဉ်သော အစီရင်ခံစာလည်း ပါသည်။",
+    "zh": "Fastwork 上一位卖家列出：删除重复项、处理缺失值，并统一日期、数字、电话号码和类别的格式。同一页面还包括合并多个文件，以及对比清理前后数据的报告。",
+    "de": "Ein Anbieter auf Fastwork nennt: Duplikate entfernt, fehlende Werte behandelt, Daten, Zahlen, Telefonnummern und Kategorien vereinheitlicht. Dasselbe Angebot umfasst das Zusammenführen mehrerer Dateien und einen Bericht, der die Daten vorher und nachher vergleicht."
+   },
+   "src": "https://fastwork.co/user/yanacharita/data-analyst-70590552"
+  }
+ ],
+ "related": [
+  "ai-automation",
+  "ai-assistant",
+  "typing",
+  "data-crawl",
+  "research",
+  "leads"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Anthropic: batch processing with the Message Batches API",
+    "th": "Anthropic: การประมวลผลเป็นชุดด้วย Message Batches API",
+    "my": "Anthropic - Message Batches API ဖြင့် အစုလိုက်လုပ်ဆောင်ခြင်း",
+    "zh": "Anthropic：用 Message Batches API 批量处理",
+    "de": "Anthropic: Stapelverarbeitung mit der Message Batches API"
+   },
+   "href": "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
+  },
+  {
+   "t": {
+    "en": "OpenAI: the Batch API guide",
+    "th": "OpenAI: คู่มือ Batch API",
+    "my": "OpenAI - Batch API လမ်းညွှန်",
+    "zh": "OpenAI：Batch API 指南",
+    "de": "OpenAI: Anleitung zur Batch API"
+   },
+   "href": "https://developers.openai.com/api/docs/guides/batch"
+  }
+ ],
+ "glyphs": [
+  "robot",
+  "page",
+  "sparkle"
+ ]
+}

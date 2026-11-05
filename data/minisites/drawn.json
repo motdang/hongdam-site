@@ -1,0 +1,309 @@
+{
+ "id": "drawn",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People ask for a drawn map or picture when a photograph or a paragraph does not show a place or an idea.",
+  "th": "คนขอแผนที่หรือภาพวาดเมื่อภาพถ่ายหรือข้อความไม่สามารถแสดงสถานที่หรือความคิดได้",
+  "my": "ဓာတ်ပုံ သို့မဟုတ် စာပိုဒ်တစ်ခုက နေရာ သို့မဟုတ် အတွေးတစ်ခုကို မပြနိုင်သည့်အခါ လူတွေက ရေးဆွဲထားသော မြေပုံ သို့မဟုတ် ပုံကို တောင်းဆိုကြသည်။",
+  "zh": "当照片或一段文字展现不了一个地方或一个想法时，人们会找人画地图或插图。",
+  "de": "Man bestellt eine gezeichnete Karte oder Grafik, wenn ein Foto oder ein Absatz einen Ort oder eine Idee nicht zeigt."
+ },
+ "n": {
+  "de": "Gezeichnete Karte oder Grafik"
+ },
+ "l": {
+  "de": "Zoombare Karten, Diagramme und Cartoons, in Code gezeichnet."
+ },
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "You say what to draw: a picture or diagram, or a map of your venue or town.",
+    "th": "คุณบอกว่าจะให้วาดอะไร ภาพหรือแผนภาพ หรือแผนที่สถานที่หรือเมืองของคุณ",
+    "my": "ဘာကို ရေးဆွဲမလဲဆိုသည်ကို သင်ပြောပြသည် - ပုံ သို့မဟုတ် ပုံကြမ်း၊ ဒါမှမဟုတ် သင့်နေရာ သို့မဟုတ် မြို့၏ မြေပုံ။",
+    "zh": "您说明要画什么：一幅图或图解，或者您的场地或城镇的地图。",
+    "de": "Sie sagen, was gezeichnet werden soll: ein Bild oder Diagramm oder eine Karte Ihres Veranstaltungsorts oder Ihrer Stadt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "It is drawn in code, as a still or a moving picture.",
+    "th": "วาดด้วยโค้ด เป็นภาพนิ่งหรือภาพเคลื่อนไหว",
+    "my": "ကုဒ်ဖြင့် ရေးဆွဲသည်၊ ငြိမ်သော သို့မဟုတ် လှုပ်ရှားသော ပုံအဖြစ်။",
+    "zh": "用代码绘制，静态或动态皆可。",
+    "de": "Es wird in Code gezeichnet, als Standbild oder als bewegtes Bild."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "compass",
+   "t": {
+    "en": "The picture goes to you. A venue map comes online, to zoom and tap, and as a print.",
+    "th": "ส่งภาพให้คุณ แผนที่สถานที่ส่งเป็นออนไลน์ที่ซูมและแตะได้ และเป็นฉบับพิมพ์",
+    "my": "ပုံကို သင့်ထံ ပို့ပေးသည်။ နေရာမြေပုံကို အွန်လိုင်းတွင် ချဲ့ကြည့်၍ ထိတွေ့နိုင်သော ပုံစံနှင့် ပုံနှိပ်ပုံစံ နှစ်မျိုးဖြင့် ပေးသည်။",
+    "zh": "图片交给您。场地地图提供在线版（可缩放、可点按）和印刷版。",
+    "de": "Das Bild geht an Sie. Eine Karte Ihres Ortes kommt online, zum Zoomen und Antippen, und als Druck."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In Thailand, copyright arises when a work is made; registration is not needed.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်သည်; မှတ်ပုံတင်ရန် မလို။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "Under Thai copyright, the author has the right to be named as the author and to stop a change that harms the author's reputation.",
+    "th": "ตามกฎหมายลิขสิทธิ์ไทย ผู้สร้างสรรค์มีสิทธิ์ให้ระบุชื่อว่าเป็นผู้สร้างสรรค์ และห้ามการดัดแปลงหรือบิดเบือนที่ทำให้ชื่อเสียงเสียหาย",
+    "my": "ထိုင်းမူပိုင်ခွင့်အရ ဖန်တီးသူသည် မိမိကို ဖန်တီးသူအဖြစ် အမည်ဖော်ပြခံပိုင်ခွင့်နှင့် ဂုဏ်သတင်းကို ထိခိုက်စေသော ပြောင်းလဲမှုကို တားမြစ်ပိုင်ခွင့် ရှိသည်။",
+    "zh": "按泰国版权法，作者有权署名，也有权阻止损害其声誉的歪曲或修改。",
+    "de": "Nach thailändischem Urheberrecht darf die Urheberin oder der Urheber als solche genannt werden und eine Änderung untersagen, die den Ruf schädigt."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "OpenStreetMap data is licensed under the Open Data Commons Open Database License (ODbL). Anyone who uses it gives credit to OpenStreetMap by showing its attribution notice.",
+    "th": "ข้อมูล OpenStreetMap ใช้สัญญาอนุญาต Open Data Commons Open Database License (ODbL) ผู้ที่นำไปใช้ให้เครดิต OpenStreetMap โดยแสดงข้อความแสดงที่มา",
+    "my": "OpenStreetMap ဒေတာကို Open Data Commons Open Database License (ODbL) ဖြင့် ခွင့်ပြုထားသည်။ ၎င်းကို သုံးသူတိုင်း အရင်းအမြစ်ဖော်ပြချက်ကို ပြသခြင်းဖြင့် OpenStreetMap ကို အသိအမှတ်ပြုရသည်။",
+    "zh": "OpenStreetMap 的数据采用 Open Data Commons 开放数据库许可（ODbL）。使用者要显示其署名声明，向 OpenStreetMap 署名。",
+    "de": "Die Daten von OpenStreetMap stehen unter der Open Data Commons Open Database License (ODbL). Wer sie nutzt, nennt OpenStreetMap, indem er den Quellenhinweis anzeigt."
+   },
+   "src": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "t": {
+    "en": "A Fastwork map-drawing listing hands over the original source files and 300 dpi high-resolution files for print, with commercial use rights.",
+    "th": "รายการวาดแผนที่บน Fastwork รายหนึ่งส่งมอบไฟล์ต้นฉบับและไฟล์ความละเอียดสูง 300 dpi สำหรับพิมพ์ พร้อมสิทธิ์ใช้เชิงพาณิชย์",
+    "my": "Fastwork မြေပုံရေးဆွဲမှု စာရင်းတစ်ခုက မူလဖိုင်များနှင့် ပုံနှိပ်ရန် 300 dpi ကြည်လင်ပြတ်သားမှုမြင့်ဖိုင်များကို စီးပွားရေးသုံးခွင့်နှင့်အတူ ပေးအပ်သည်။",
+    "zh": "Fastwork 上一个绘制地图的商品页交付原始源文件和用于印刷的 300 dpi 高分辨率文件，并含商用权。",
+    "de": "Ein Fastwork-Angebot für gezeichnete Karten liefert die Originaldateien und hochauflösende Dateien mit 300 dpi für den Druck, mit Recht zur kommerziellen Nutzung."
+   },
+   "src": "https://fastwork.co/user/artdaysuni/map-design-31324887"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Map drawing from a Fastwork seller with 519 orders: three packages, up to 15 places, 5 changes",
+    "th": "วาดแผนที่จากผู้ขายบน Fastwork ที่มี 519 ออเดอร์ สามแพ็กเกจ ไม่เกิน 15 สถานที่ แก้ไข 5 ครั้ง",
+    "my": "အော်ဒါ 519 ခုရှိသော Fastwork ရောင်းသူထံမှ မြေပုံရေးဆွဲခြင်း - ပက်ကေ့ချ် သုံးမျိုး၊ နေရာ 15 ခုအထိ၊ ပြင်ဆင်မှု 5 ကြိမ်",
+    "zh": "Fastwork 上有 519 笔订单的卖家的地图绘制：三档套餐，最多 15 个地点，修改 5 次",
+    "de": "Kartenzeichnung von einem Fastwork-Anbieter mit 519 Bestellungen: drei Pakete, bis zu 15 Orte, 5 Änderungen"
+   },
+   "p": {
+    "en": "฿1,900 for line art, 5 days; ฿2,700 for a 3D isometric map, 5 days; ฿6,500 for both, 7 days",
+    "th": "฿1,900 ภาพลายเส้น 5 วัน ฿2,700 แผนที่ 3D ไอโซเมตริก 5 วัน ฿6,500 ทั้งสองแบบ 7 วัน",
+    "my": "လိုင်းအာ့တ် ฿1,900 (5 ရက်)၊ 3D အိုင်ဆိုမက်ထရစ် မြေပုံ ฿2,700 (5 ရက်)၊ နှစ်မျိုးလုံး ฿6,500 (7 ရက်)",
+    "zh": "线稿 ฿1,900，5 天；3D 等距地图 ฿2,700，5 天；两种都要 ฿6,500，7 天",
+    "de": "฿1,900 für Strichzeichnung, 5 Tage; ฿2,700 für eine isometrische 3D-Karte, 5 Tage; ฿6,500 für beides, 7 Tage"
+   },
+   "src": "https://fastwork.co/user/artdaysuni/map-design-31324887"
+  },
+  {
+   "t": {
+    "en": "Graphic map from a Fastwork seller with 247 orders: a map, route or floor plan with up to 10 places",
+    "th": "แผนที่กราฟิกจากผู้ขายบน Fastwork ที่มี 247 ออเดอร์ แผนที่ เส้นทาง หรือผังพื้นที่ ไม่เกิน 10 สถานที่",
+    "my": "အော်ဒါ 247 ခုရှိသော Fastwork ရောင်းသူထံမှ ဂရပ်ဖစ်မြေပုံ - မြေပုံ၊ လမ်းကြောင်း သို့မဟုတ် ကြမ်းပြင်ပုံ၊ နေရာ 10 ခုအထိ",
+    "zh": "Fastwork 上有 247 笔订单的卖家的平面图形地图：地图、路线或平面图，最多 10 个地点",
+    "de": "Grafische Karte von einem Fastwork-Anbieter mit 247 Bestellungen: Karte, Route oder Grundriss mit bis zu 10 Orten"
+   },
+   "p": {
+    "en": "฿600, 2 days",
+    "th": "฿600 ใน 2 วัน",
+    "my": "฿600 (2 ရက်)",
+    "zh": "฿600，2 天",
+    "de": "฿600, 2 Tage"
+   },
+   "src": "https://fastwork.co/user/bunnyboom/map-design-63563134"
+  },
+  {
+   "t": {
+    "en": "Infographic from a Fastwork seller with 247 orders, 3 changes included",
+    "th": "อินโฟกราฟิกจากผู้ขายบน Fastwork ที่มี 247 ออเดอร์ รวมแก้ไข 3 ครั้ง",
+    "my": "အော်ဒါ 247 ခုရှိသော Fastwork ရောင်းသူထံမှ အင်ဖိုဂရပ်ဖစ်၊ ပြင်ဆင်မှု 3 ကြိမ်ပါ",
+    "zh": "Fastwork 上有 247 笔订单的卖家的信息图，含 3 次修改",
+    "de": "Infografik von einem Fastwork-Anbieter mit 247 Bestellungen, 3 Änderungen inklusive"
+   },
+   "p": {
+    "en": "฿1,000, 1 day",
+    "th": "฿1,000 ใน 1 วัน",
+    "my": "฿1,000 (1 ရက်)",
+    "zh": "฿1,000，1 天",
+    "de": "฿1,000, 1 Tag"
+   },
+   "src": "https://fastwork.co/user/viwatj4ck/infographics-62245016"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does an illustrated map cost?",
+    "th": "แผนที่วาดมือราคาเท่าไร",
+    "my": "ရေးဆွဲထားသော မြေပုံ ဘယ်လောက်ကျသလဲ။",
+    "zh": "手绘插画地图要多少钱？",
+    "de": "Was kostet eine illustrierte Karte?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 519 orders lists a hand-drawn line-art map at ฿1,900 for up to 15 places, a 3D isometric map at ฿2,700 and a map in both styles at ฿6,500. Changes beyond the 5 included cost ฿200–300 each.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 519 ออเดอร์ลงแผนที่ภาพวาดลายเส้นไม่เกิน 15 สถานที่ ฿1,900 แผนที่ 3D ไอโซเมตริก ฿2,700 และแผนที่ที่มีทั้งสองแบบ ฿6,500 แก้ไขเกิน 5 ครั้งที่รวมไว้ ครั้งละ ฿200–300",
+    "my": "အော်ဒါ 519 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက နေရာ 15 ခုအထိ လက်ဖြင့်ဆွဲသော လိုင်းအာ့တ် မြေပုံကို ฿1,900၊ 3D အိုင်ဆိုမက်ထရစ် မြေပုံကို ฿2,700 နှင့် နှစ်မျိုးလုံးပါ မြေပုံကို ฿6,500 ဟု စာရင်းပြုထားသည်။ ပါဝင်သော 5 ကြိမ်ထက် ပိုပြင်လျှင် တစ်ကြိမ်လျှင် ฿200–300 ဖြစ်သည်။",
+    "zh": "Fastwork 上一位有 519 笔订单的卖家标价：最多 15 个地点的手绘线稿地图 ฿1,900，3D 等距地图 ฿2,700，两种风格都有的地图 ฿6,500。超出含有的 5 次修改后，每次 ฿200–300。",
+    "de": "Ein Fastwork-Anbieter mit 519 Bestellungen nennt für eine handgezeichnete Strichkarte mit bis zu 15 Orten ฿1,900, für eine isometrische 3D-Karte ฿2,700 und für eine Karte in beiden Stilen ฿6,500. Änderungen über die 5 inbegriffenen hinaus kosten ฿200–300 je Runde."
+   },
+   "src": "https://fastwork.co/user/artdaysuni/map-design-31324887"
+  },
+  {
+   "q": {
+    "en": "Can a map be drawn from OpenStreetMap data?",
+    "th": "วาดแผนที่จากข้อมูล OpenStreetMap ได้ไหม",
+    "my": "OpenStreetMap ဒေတာမှ မြေပုံကို ရေးဆွဲနိုင်ပါသလား။",
+    "zh": "可以根据 OpenStreetMap 的数据画地图吗？",
+    "de": "Kann man eine Karte aus OpenStreetMap-Daten zeichnen?"
+   },
+   "a": {
+    "en": "OpenStreetMap says its data is open data under the ODbL. Anyone who uses it gives credit by showing its attribution notice and makes clear that the data is under the ODbL.",
+    "th": "OpenStreetMap ระบุว่าข้อมูลเป็นข้อมูลเปิดภายใต้ ODbL ผู้ที่นำไปใช้ให้เครดิตโดยแสดงข้อความแสดงที่มา และระบุให้ชัดว่าข้อมูลอยู่ภายใต้ ODbL",
+    "my": "OpenStreetMap က ၎င်း၏ ဒေတာသည် ODbL အောက်ရှိ ဖွင့်လှစ်ဒေတာဖြစ်သည်ဟု ဆိုသည်။ ၎င်းကို သုံးသူတိုင်း အရင်းအမြစ်ဖော်ပြချက်ကို ပြသခြင်းဖြင့် အသိအမှတ်ပြုပြီး ဒေတာသည် ODbL အောက်တွင်ရှိကြောင်း ရှင်းလင်းစွာ ဖော်ပြရသည်။",
+    "zh": "OpenStreetMap 说明其数据是 ODbL 许可下的开放数据。使用者要显示署名声明来署名，并表明数据适用 ODbL。",
+    "de": "OpenStreetMap sagt, seine Daten seien offene Daten unter der ODbL. Wer sie nutzt, nennt die Quelle mit dem Quellenhinweis und macht deutlich, dass die Daten unter der ODbL stehen."
+   },
+   "src": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "q": {
+    "en": "What files does a map artist hand over?",
+    "th": "ช่างวาดแผนที่ส่งมอบไฟล์อะไรบ้าง",
+    "my": "မြေပုံရေးဆွဲသူက ဘယ်ဖိုင်တွေ ပေးအပ်သလဲ။",
+    "zh": "地图绘制者交付哪些文件？",
+    "de": "Welche Dateien liefert eine Kartenzeichnerin oder ein Kartenzeichner?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 247 orders lists a map at ฿600 with up to 10 place details, delivered in 2 days as a .jpg for the first draft and the final, with .ai (Illustrator) files.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 247 ออเดอร์ลงแผนที่ราคา ฿600 รายละเอียดสถานที่ไม่เกิน 10 แห่ง ส่งใน 2 วัน เป็นไฟล์ .jpg สำหรับร่างแรกและฉบับสุดท้าย พร้อมไฟล์ .ai (Illustrator)",
+    "my": "အော်ဒါ 247 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက နေရာအသေးစိတ် 10 ခုအထိ မြေပုံကို ฿600 ဖြင့် စာရင်းပြုထားပြီး 2 ရက်အတွင်း ပထမစာတမ်းနှင့် နောက်ဆုံးစာတမ်းကို .jpg ဖိုင်ဖြင့်၊ .ai (Illustrator) ဖိုင်များနှင့်အတူ ပို့ပေးသည်။",
+    "zh": "Fastwork 上一位有 247 笔订单的卖家标价 ฿600，最多 10 个地点信息，2 天交付，初稿和终稿为 .jpg，另附 .ai（Illustrator）文件。",
+    "de": "Ein Fastwork-Anbieter mit 247 Bestellungen nennt ฿600 für eine Karte mit bis zu 10 Ortsangaben, geliefert in 2 Tagen als .jpg für Entwurf und Endfassung, mit .ai-Dateien (Illustrator)."
+   },
+   "src": "https://fastwork.co/user/bunnyboom/map-design-63563134"
+  },
+  {
+   "q": {
+    "en": "How much does an infographic cost?",
+    "th": "อินโฟกราฟิกราคาเท่าไร",
+    "my": "အင်ဖိုဂရပ်ဖစ် ဘယ်လောက်ကျသလဲ။",
+    "zh": "信息图要多少钱？",
+    "de": "Was kostet eine Infografik?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 247 orders lists an infographic at ฿1,000, delivered in 1 day in Ai, JPG, PNG and PDF files with 3 changes. Each extra change is ฿100.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 247 ออเดอร์ลงอินโฟกราฟิกราคา ฿1,000 ส่งใน 1 วัน เป็นไฟล์ Ai, JPG, PNG และ PDF แก้ไข 3 ครั้ง แก้ไขเพิ่มครั้งละ ฿100",
+    "my": "အော်ဒါ 247 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက အင်ဖိုဂရပ်ဖစ်တစ်ခုကို ฿1,000 ဖြင့် စာရင်းပြုထားပြီး 1 ရက်အတွင်း Ai၊ JPG၊ PNG နှင့် PDF ဖိုင်များဖြင့် ပြင်ဆင်မှု 3 ကြိမ်ပါ ပို့ပေးသည်။ ထပ်ပြင်လျှင် တစ်ကြိမ်လျှင် ฿100 ဖြစ်သည်။",
+    "zh": "Fastwork 上一位有 247 笔订单的卖家标价：一张信息图 ฿1,000，1 天交付，提供 Ai、JPG、PNG 和 PDF 文件，含 3 次修改，多改一次 ฿100。",
+    "de": "Ein Fastwork-Anbieter mit 247 Bestellungen nennt für eine Infografik ฿1,000, geliefert in 1 Tag als Ai-, JPG-, PNG- und PDF-Dateien mit 3 Änderungen. Jede weitere Änderung kostet ฿100."
+   },
+   "src": "https://fastwork.co/user/viwatj4ck/infographics-62245016"
+  },
+  {
+   "q": {
+    "en": "How does copyright pass to the buyer in Thailand?",
+    "th": "ลิขสิทธิ์ตกเป็นของผู้ซื้อได้อย่างไรในไทย",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်သည် ဝယ်သူထံ ဘယ်လို ရောက်သွားသလဲ။",
+    "zh": "在泰国，版权如何转给买方？",
+    "de": "Wie geht das Urheberrecht in Thailand an den Käufer über?"
+   },
+   "a": {
+    "en": "In Thailand copyright arises when a work is made, and registration is not needed. A transfer of copyright to the buyer must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน การโอนลิขสิทธิ์ให้ผู้ซื้อต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်ပြီး မှတ်ပုံတင်ရန် မလိုပါ။ ဝယ်သူထံ မူပိုင်ခွင့် လွှဲပြောင်းရာတွင် စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。把版权转让给买方，必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig. Die Abtretung an den Käufer muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "cartoons",
+  "interactive",
+  "map-archive",
+  "guide-site",
+  "graphics",
+  "help-page"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Map Doodles: 250 hand-drawn marks on a world map",
+    "th": "Map Doodles: เครื่องหมายวาดมือ 250 ชิ้นบนแผนที่โลก",
+    "my": "Map Doodles - ကမ္ဘာ့မြေပုံပေါ်ရှိ လက်ဖြင့်ဆွဲ သင်္ကေတ 250",
+    "zh": "Map Doodles：世界地图上的 250 个手绘标记",
+    "de": "Map Doodles: 250 handgezeichnete Zeichen auf einer Weltkarte"
+   },
+   "href": "https://motdang.net/sites/map-doodles/"
+  },
+  {
+   "t": {
+    "en": "OpenStreetMap: copyright and licence",
+    "th": "OpenStreetMap: ลิขสิทธิ์และสัญญาอนุญาต",
+    "my": "OpenStreetMap - မူပိုင်ခွင့်နှင့် လိုင်စင်",
+    "zh": "OpenStreetMap：版权与许可",
+    "de": "OpenStreetMap: Urheberrecht und Lizenz"
+   },
+   "href": "https://www.openstreetmap.org/copyright"
+  }
+ ],
+ "glyphs": [
+  "compass",
+  "pencil",
+  "pin"
+ ]
+}

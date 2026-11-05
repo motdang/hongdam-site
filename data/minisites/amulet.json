@@ -1,0 +1,333 @@
+{
+ "id": "amulet",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Amulets are small sacred objects that people wear for protection or luck. The price of one depends on its maker, age and scarcity, and forgeries are common.",
+  "th": "พระเครื่องเป็นวัตถุศักดิ์สิทธิ์ขนาดเล็กที่คนพกพาไว้เพื่อความคุ้มครองหรือโชคลาภ ราคาขึ้นกับผู้สร้าง อายุ และความหายาก และของเลียนแบบมีอยู่มาก",
+  "my": "ဆောင်ဖွယ်ရုပ်တုများသည် ကာကွယ်မှု သို့မဟုတ် ကံကောင်းရန် ဆောင်ထားသော မြင့်မြတ်သည့် အသေးစား ပစ္စည်းများ ဖြစ်သည်။ စျေးနှုန်းမှာ ပြုလုပ်သူ၊ အသက်အရွယ်နှင့် ရှားပါးမှုပေါ် မူတည်ပြီး အတုအပများလည်း များသည်။",
+  "zh": "佛牌是随身佩戴、用来求保护或好运的小型圣物。价格看制作者、年代和稀有程度，仿品也很多。",
+  "de": "Amulette sind kleine heilige Gegenstände, die man zum Schutz oder für Glück trägt. Der Preis hängt von Hersteller, Alter und Seltenheit ab, und Fälschungen sind häufig."
+ },
+ "n": {
+  "de": "Amulette"
+ },
+ "l": {
+  "de": "Eine Einschätzung nach Ihren Fotos, oder eines für Sie auf einem Markt gefunden."
+ },
+ "steps": [
+  {
+   "db": "camera",
+   "t": {
+    "en": "For an opinion, you send photos of the amulet.",
+    "th": "ถ้าต้องการความเห็น คุณส่งรูปพระเครื่องมา",
+    "my": "အကြံပြုချက်လိုလျှင် ဆောင်ဖွယ်ရုပ်တု၏ ဓာတ်ပုံများကို သင်ပို့သည်။",
+    "zh": "要意见的话，您发来佛牌的照片。",
+    "de": "Für eine Einschätzung senden Sie Fotos des Amuletts."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ก่อนเริ่มทำ",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Hongdam says what the amulet is and what similar ones sell for. It is an opinion, not a certificate.",
+    "th": "หงส์ดำบอกว่าพระเครื่องเป็นรุ่นใด และราคาที่ใกล้เคียงซื้อขายกัน เป็นความเห็น ไม่ใช่ใบรับรอง",
+    "my": "ဟုန်ဒမ်က ဆောင်ဖွယ်ရုပ်တုသည် မည်သည့်အမျိုးအစားဖြစ်ကြောင်းနှင့် အလားတူများ ဘယ်လောက်ဖြင့် ရောင်းသည်ကို ပြောပြသည်။ ၎င်းမှာ အမြင်တစ်ခုသာ ဖြစ်ပြီး လက်မှတ် မဟုတ်ပါ။",
+    "zh": "鸿丹说明这是哪一种佛牌，以及相近的佛牌卖多少钱。这是意见，不是证书。",
+    "de": "Hongdam sagt, um welches Amulett es sich handelt und für wie viel ähnliche verkauft werden. Das ist eine Einschätzung, kein Zertifikat."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the photos",
+    "th": "หลังได้รูป",
+    "my": "ဓာတ်ပုံရပြီးနောက်",
+    "zh": "收到照片之后",
+    "de": "Nach den Fotos"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "For a find, Hongdam looks at a market in Chiang Mai or Chiang Rai and sends photos before you pay for the amulet.",
+    "th": "ถ้าให้หา หงส์ดำหาที่ตลาดในเชียงใหม่หรือเชียงราย และส่งรูปให้ดูก่อนคุณจ่ายค่าพระ",
+    "my": "ရှာပေးစေလိုလျှင် ဟုန်ဒမ်က ချင်းမိုင် သို့မဟုတ် ချင်းရိုင်းရှိ ဈေးတစ်ခုတွင် ရှာပြီး ဆောင်ဖွယ်ရုပ်တုအတွက် သင်မပေးမီ ဓာတ်ပုံများ ပို့ပေးသည်။",
+    "zh": "要代找的话，鸿丹在清迈或清莱的市场寻找，并在您付佛牌的钱之前把照片发给您。",
+    "de": "Für eine Suche sieht sich Hongdam auf einem Markt in Chiang Mai oder Chiang Rai um und sendet Fotos, bevor Sie das Amulett bezahlen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before you pay",
+    "th": "ก่อนคุณจ่าย",
+    "my": "သင်မပေးမီ",
+    "zh": "您付款之前",
+    "de": "Vor Ihrer Zahlung"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The amulet is paid at cost. Haggling is extra, by the hour. Shipping is extra.",
+    "th": "ค่าพระจ่ายตามราคาจริง การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่าส่งแยก",
+    "my": "ဆောင်ဖွယ်ရုပ်တုကို အရင်းအတိုင်း ပေးရသည်။ စျေးဆစ်ခြင်းမှာ အပို ဖြစ်ပြီး နာရီအလိုက် တွက်သည်။ ပို့ဆောင်ခ သီးခြား။",
+    "zh": "佛牌按成本价付款。议价另收费，按小时计。运费另计。",
+    "de": "Das Amulett wird zum Einkaufspreis bezahlt. Verhandeln kostet extra, nach Stunden. Der Versand kostet extra."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Phuket101 reports that amulets are exempt from Thailand's export licence for Buddha images. Small images, roughly under 12 cm and up to five pieces, pass in practice. Larger images need a licence from the Fine Arts Department.",
+    "th": "Phuket101 รายงานว่าพระเครื่องได้รับยกเว้นจากใบอนุญาตส่งออกพระพุทธรูปของไทย พระขนาดเล็กราวไม่เกิน 12 ซม. ไม่เกินห้าองค์ ผ่านได้ในทางปฏิบัติ ส่วนองค์ใหญ่กว่านั้นต้องมีใบอนุญาตจากกรมศิลปากร",
+    "my": "Phuket101 က ဆောင်ဖွယ်ရုပ်တုများကို ထိုင်းနိုင်ငံ၏ ဘုရားရုပ်ပွား ပို့ကုန်လိုင်စင်မှ ကင်းလွတ်ခွင့်ပေးသည်ဟု ဖော်ပြသည်။ 12 စင်တီမီတာခန့်အောက် ငါးခုအထိ အသေးစား ရုပ်ပွားများမှာ လက်တွေ့တွင် ဖြတ်သန်းနိုင်သည်။ ထိုထက်ကြီးသော ရုပ်ပွားများအတွက် အနုပညာဦးစီးဌာနထံမှ လိုင်စင်လိုသည်။",
+    "zh": "Phuket101 报道，佛牌不受泰国佛像出口许可证的约束。约 12 厘米以下、不超过五件的小佛像，实际上可放行。更大的佛像需要艺术厅的许可证。",
+    "de": "Phuket101 berichtet, Amulette seien von der thailändischen Ausfuhrlizenz für Buddhabilder ausgenommen. Kleine Bilder, etwa unter 12 cm und bis zu fünf Stück, werden in der Praxis durchgelassen. Grössere brauchen eine Lizenz des Fine Arts Department."
+   },
+   "src": "https://www.phuket101.net/buying-a-buddha-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "For an export licence the form is Sor Kor 6, with two photos of each piece, a passport copy, the receipt and the piece itself. In Bangkok the Office of National Museums takes about two days. Provincial museums take closer to a week.",
+    "th": "ใบอนุญาตส่งออกใช้แบบ Sor Kor 6 พร้อมรูปถ่ายสองรูปต่อชิ้น สำเนาหนังสือเดินทาง ใบเสร็จ และตัวชิ้นงาน ในกรุงเทพฯ สำนักการพิพิธภัณฑ์แห่งชาติใช้เวลาราวสองวัน พิพิธภัณฑ์ในต่างจังหวัดใช้เวลาใกล้หนึ่งสัปดาห์",
+    "my": "ပို့ကုန်လိုင်စင်အတွက် ပုံစံမှာ Sor Kor 6 ဖြစ်ပြီး အပိုင်းတစ်ခုလျှင် ဓာတ်ပုံ နှစ်ပုံ၊ ပတ်စပို့မိတ္တူ၊ ဘောက်ချာနှင့် အရာဝတ္ထုကိုယ်တိုင် လိုသည်။ ဘန်ကောက်တွင် Office of National Museums က နှစ်ရက်ခန့် ကြာသည်။ ပြည်နယ်ပြတိုက်များတွင် တစ်ပတ်နီးပါး ကြာသည်။",
+    "zh": "出口许可证用 Sor Kor 6 表格，每件需两张照片，另需护照复印件、收据和实物。曼谷的国家博物馆办公室约需两天，各府博物馆接近一周。",
+    "de": "Für eine Ausfuhrlizenz dient das Formular Sor Kor 6, mit zwei Fotos je Stück, einer Passkopie, der Quittung und dem Stück selbst. In Bangkok braucht das Office of National Museums etwa zwei Tage, die Museen der Provinzen eher eine Woche."
+   },
+   "src": "https://www.phuket101.net/buying-a-buddha-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Thai people say chao phra (เช่าพระ), which means renting or inviting, not buying, a Buddha image.",
+    "th": "คนไทยเรียกการได้พระมาว่า เช่าพระ ซึ่งหมายถึงการเช่าหรืออาราธนา ไม่ใช่การซื้อพระพุทธรูป",
+    "my": "ထိုင်းလူမျိုးများက ဘုရားရုပ်ပွားကို ဝယ်သည်ဟု မပြောဘဲ chao phra (เช่าพระ) ဟု ပြောကြသည်။ ၎င်းအဓိပ္ပာယ်မှာ ငှားရမ်းခြင်း သို့မဟုတ် ဖိတ်ကြားခြင်း ဖြစ်သည်။",
+    "zh": "泰国人不说“买”佛像，而说 chao phra（เช่าพระ），意思是“租”或“请”。",
+    "de": "Thailänder sagen nicht, sie kauften ein Buddhabild. Sie sagen chao phra (เช่าพระ), das heisst mieten oder einladen."
+   },
+   "src": "https://www.phuket101.net/buying-a-buddha-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Wikipedia says an amulet's value depends on its look, scarcity, maker, age and reputed powers. It says forgeries are common and rare originals often need an expert's check.",
+    "th": "Wikipedia ระบุว่ามูลค่าของพระเครื่องขึ้นกับรูปลักษณ์ ความหายาก ผู้สร้าง อายุ และพุทธคุณที่เล่าขาน ของเลียนแบบมีมาก และของแท้ที่หายากมักต้องให้ผู้เชี่ยวชาญตรวจ",
+    "my": "Wikipedia က ဆောင်ဖွယ်ရုပ်တု၏ တန်ဖိုးသည် ပုံပန်းသဏ္ဍာန်၊ ရှားပါးမှု၊ ပြုလုပ်သူ၊ အသက်အရွယ်နှင့် ကျော်ကြားသော စွမ်းအားတို့အပေါ် မူတည်သည်ဟု ဆိုသည်။ အတုအပများ များပြီး ရှားပါးသော မူရင်းများကို ကျွမ်းကျင်သူက စစ်ဆေးရလေ့ရှိသည်ဟု ဆိုသည်။",
+    "zh": "维基百科说，佛牌的价值取决于外观、稀有程度、制作者、年代和传说中的灵力。它还说仿品很多，稀有的原件往往要专家鉴定。",
+    "de": "Wikipedia schreibt, der Wert eines Amuletts hänge von Aussehen, Seltenheit, Hersteller, Alter und der ihm zugeschriebenen Kraft ab. Fälschungen seien häufig, und seltene Originale brauchten oft die Prüfung eines Experten."
+   },
+   "src": "https://en.wikipedia.org/wiki/Thai_Buddha_amulet"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork seller who finds an amulet for you: the finding fee, plus a share of the amulet's value",
+    "th": "ผู้ขายบน Fastwork ที่หาพระเครื่องให้: ค่าหา บวกส่วนแบ่งจากมูลค่าพระ",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက ဆောင်ဖွယ်ရုပ်တု ရှာပေးခြင်း: ရှာဖွေခ အပြင် ရုပ်တု၏တန်ဖိုး၏ ရာခိုင်နှုန်း",
+    "zh": "Fastwork 上帮您找佛牌的卖家：找牌费，外加佛牌价值的一部分",
+    "de": "Ein Verkäufer auf Fastwork, der ein Amulett für Sie sucht: Suchgebühr plus ein Anteil am Wert des Amuletts"
+   },
+   "p": {
+    "en": "฿500 plus 5% of the amulet's value",
+    "th": "฿500 บวก 5% ของมูลค่าพระ",
+    "my": "฿500 နှင့် ရုပ်တုတန်ဖိုး၏ 5%",
+    "zh": "฿500 加佛牌价值的 5%",
+    "de": "฿500 plus 5% des Amulettwerts"
+   },
+   "src": "https://fastwork.co/user/nonthaiamulet/item-finder-81041922"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller who rents an amulet for you and checks it",
+    "th": "ผู้ขายบน Fastwork ที่เช่าพระเครื่องให้และตรวจพระให้",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက ဆောင်ဖွယ်ရုပ်တုကို သင့်အတွက် ငှားပေးပြီး စစ်ဆေးပေးသည်",
+    "zh": "Fastwork 上替您请佛牌并查验的卖家",
+    "de": "Ein Verkäufer auf Fastwork, der ein Amulett für Sie mietet und prüft"
+   },
+   "p": {
+    "en": "From ฿300",
+    "th": "เริ่มที่ ฿300",
+    "my": "฿300 မှ စသည်",
+    "zh": "฿300 起",
+    "de": "ab ฿300"
+   },
+   "src": "https://fastwork.co/user/somchai.chantarit/lifestyle-other-11958435"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller who looks at an amulet to say whether it is an original or a fake",
+    "th": "ผู้ขายบน Fastwork ที่ดูพระเครื่องว่าแท้หรือเก๊",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက ဆောင်ဖွယ်ရုပ်တုကို ကြည့်ပြီး မူရင်းလော အတုလော ပြောပေးသည်",
+    "zh": "Fastwork 上看佛牌并判断真假的卖家",
+    "de": "Ein Verkäufer auf Fastwork, der ein Amulett ansieht und sagt, ob es ein Original oder eine Fälschung ist"
+   },
+   "p": {
+    "en": "฿50 an amulet in the listing text; the listing starts at ฿100",
+    "th": "องค์ละ ฿50 ตามข้อความประกาศ ประกาศเริ่มที่ ฿100",
+    "my": "ဆောင်ဖွယ်ရုပ်တုတစ်ခုလျှင် ฿50 (ကြော်ငြာစာသားအရ)၊ ကြော်ငြာစျေး ฿100 မှ စသည်",
+    "zh": "按列表文字，每尊 ฿50；列表起价 ฿100",
+    "de": "฿50 pro Amulett laut Anzeigentext; die Anzeige beginnt bei ฿100"
+   },
+   "src": "https://fastwork.co/user/tp3k0f98/lifestyle-other-20975838"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Why do Thai people say they rent an amulet?",
+    "th": "ทำไมคนไทยบอกว่าเช่าพระเครื่อง",
+    "my": "ဘာကြောင့် ထိုင်းလူမျိုးတွေက ဆောင်ဖွယ်ရုပ်တုကို ငှားတယ်လို့ ပြောကြသလဲ။",
+    "zh": "泰国人为什么说“租”佛牌？",
+    "de": "Warum sagen Thailänder, sie mieteten ein Amulett?"
+   },
+   "a": {
+    "en": "Phuket101 says Thai people do not call it buying a Buddha image. They say chao phra, which means renting or inviting. The page says the image is not treated as merchandise, and the language reflects that.",
+    "th": "Phuket101 ระบุว่าคนไทยไม่เรียกว่าซื้อพระพุทธรูป แต่พูดว่าเช่าพระ ซึ่งหมายถึงเช่าหรืออาราธนา และบอกว่าพระไม่ถือเป็นสินค้า ภาษาที่ใช้จึงสะท้อนเรื่องนี้",
+    "my": "Phuket101 က ထိုင်းလူမျိုးများသည် ဘုရားရုပ်ပွားကို ဝယ်သည်ဟု မခေါ်ဘဲ chao phra ဟု ပြောကြသည်ဟု ဆိုသည်။ ၎င်းအဓိပ္ပာယ်မှာ ငှားရမ်းခြင်း သို့မဟုတ် ဖိတ်ကြားခြင်း ဖြစ်သည်။ ရုပ်ပွားကို ကုန်ပစ္စည်းအဖြစ် မမြင်သဖြင့် ဘာသာစကားက ထိုအချက်ကို ထင်ဟပ်သည်ဟု ဆိုသည်။",
+    "zh": "Phuket101 说，泰国人不把这叫“买”佛像，而说 chao phra，意思是“租”或“请”。该页说佛像不被当作商品，用语也反映了这一点。",
+    "de": "Phuket101 schreibt, Thailänder sagten nicht, sie kauften ein Buddhabild. Sie sagten chao phra, das heisst mieten oder einladen. Das Bild werde nicht als Ware behandelt, und die Sprache spiegle das."
+   },
+   "src": "https://www.phuket101.net/buying-a-buddha-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Can I take an amulet out of Thailand?",
+    "th": "เอาพระเครื่องออกนอกประเทศไทยได้ไหม",
+    "my": "ဆောင်ဖွယ်ရုပ်တုကို ထိုင်းနိုင်ငံပြင်ပသို့ ယူသွားနိုင်ပါသလား။",
+    "zh": "佛牌可以带出泰国吗？",
+    "de": "Darf ich ein Amulett aus Thailand ausführen?"
+   },
+   "a": {
+    "en": "Phuket101 says amulets are exempt from the export licence for Buddha images. It says images roughly under 12 cm, up to five pieces, pass in practice, and larger ones need a licence from the Fine Arts Department.",
+    "th": "Phuket101 ระบุว่าพระเครื่องได้รับยกเว้นจากใบอนุญาตส่งออกพระพุทธรูป พระขนาดไม่เกิน 12 ซม. ไม่เกินห้าองค์ ผ่านได้ในทางปฏิบัติ ส่วนองค์ใหญ่กว่านั้นต้องมีใบอนุญาตจากกรมศิลปากร",
+    "my": "Phuket101 က ဆောင်ဖွယ်ရုပ်တုများသည် ဘုရားရုပ်ပွား ပို့ကုန်လိုင်စင်မှ ကင်းလွတ်သည်ဟု ဆိုသည်။ 12 စင်တီမီတာခန့်အောက် ငါးခုအထိ ရုပ်ပွားများမှာ လက်တွေ့တွင် ဖြတ်သန်းနိုင်ပြီး ပိုကြီးသည်များအတွက် အနုပညာဦးစီးဌာနထံမှ လိုင်စင်လိုသည်ဟု ဆိုသည်။",
+    "zh": "Phuket101 说，佛牌不受佛像出口许可证约束。约 12 厘米以下、不超过五件的佛像实际上可放行，更大的需要艺术厅的许可证。",
+    "de": "Phuket101 schreibt, Amulette seien von der Ausfuhrlizenz für Buddhabilder ausgenommen. Bilder unter etwa 12 cm, bis zu fünf Stück, gingen in der Praxis durch; grössere brauchten eine Lizenz des Fine Arts Department."
+   },
+   "src": "https://www.phuket101.net/buying-a-buddha-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Are there fake Thai amulets?",
+    "th": "มีพระเครื่องปลอมไหม",
+    "my": "ထိုင်းဆောင်ဖွယ်ရုပ်တု အတု ရှိပါသလား။",
+    "zh": "有假的泰国佛牌吗？",
+    "de": "Gibt es gefälschte thailändische Amulette?"
+   },
+   "a": {
+    "en": "Wikipedia says forgeries are common. It says rare originals often need an expert's check, and collectors usually specialise in one type or one temple.",
+    "th": "Wikipedia ระบุว่าของเลียนแบบมีมาก ของแท้ที่หายากมักต้องให้ผู้เชี่ยวชาญตรวจ และนักสะสมมักเชี่ยวชาญเฉพาะแบบหรือเฉพาะวัด",
+    "my": "Wikipedia က အတုအပများ များသည်ဟု ဆိုသည်။ ရှားပါးသော မူရင်းများကို ကျွမ်းကျင်သူက စစ်ဆေးရလေ့ရှိပြီး စုဆောင်းသူများက အမျိုးအစားတစ်မျိုး သို့မဟုတ် ဘုရားကျောင်းတစ်ခုတွင် ကျွမ်းကျင်လေ့ရှိသည်ဟု ဆိုသည်။",
+    "zh": "维基百科说仿品很多。稀有的原件往往要专家鉴定，收藏者通常只专攻某一类或某一座寺庙的佛牌。",
+    "de": "Wikipedia schreibt, Fälschungen seien häufig. Seltene Originale brauchten oft die Prüfung eines Experten, und Sammler spezialisierten sich meist auf einen Typ oder einen Tempel."
+   },
+   "src": "https://en.wikipedia.org/wiki/Thai_Buddha_amulet"
+  },
+  {
+   "q": {
+    "en": "What decides the price of a Thai amulet?",
+    "th": "อะไรเป็นตัวกำหนดราคาพระเครื่อง",
+    "my": "ထိုင်းဆောင်ဖွယ်ရုပ်တုရဲ့ စျေးကို ဘာက ဆုံးဖြတ်သလဲ။",
+    "zh": "什么决定泰国佛牌的价格？",
+    "de": "Was bestimmt den Preis eines thailändischen Amuletts?"
+   },
+   "a": {
+    "en": "Wikipedia lists its look, scarcity, maker, age and reputed powers.",
+    "th": "Wikipedia ระบุรูปลักษณ์ ความหายาก ผู้สร้าง อายุ และพุทธคุณที่เล่าขาน",
+    "my": "Wikipedia က ပုံပန်းသဏ္ဍာန်၊ ရှားပါးမှု၊ ပြုလုပ်သူ၊ အသက်အရွယ်နှင့် ကျော်ကြားသော စွမ်းအားတို့ကို ဖော်ပြသည်။",
+    "zh": "维基百科列出：外观、稀有程度、制作者、年代和传说中的灵力。",
+    "de": "Wikipedia nennt Aussehen, Seltenheit, Hersteller, Alter und die zugeschriebene Kraft."
+   },
+   "src": "https://en.wikipedia.org/wiki/Thai_Buddha_amulet"
+  },
+  {
+   "q": {
+    "en": "What does an agent charge to find an amulet?",
+    "th": "ตัวแทนคิดค่าหาพระเครื่องเท่าไร",
+    "my": "ဆောင်ဖွယ်ရုပ်တု ရှာပေးသည့် ကိုယ်စားလှယ်က ဘယ်လောက် ယူသလဲ။",
+    "zh": "代找佛牌的中介收多少钱？",
+    "de": "Was verlangt ein Vermittler für die Suche nach einem Amulett?"
+   },
+   "a": {
+    "en": "One Fastwork listing for finding an amulet is ฿500, plus 5% of the amulet's value.",
+    "th": "ประกาศหนึ่งบน Fastwork สำหรับจัดหาพระเครื่องคิด ฿500 บวก 5% ของมูลค่าพระ",
+    "my": "ဆောင်ဖွယ်ရုပ်တု ရှာပေးခြင်းအတွက် Fastwork ကြော်ငြာတစ်ခုမှာ ฿500 နှင့် ရုပ်တုတန်ဖိုး၏ 5% ဖြစ်သည်။",
+    "zh": "Fastwork 上一则代找佛牌的服务是 ฿500，外加佛牌价值的 5%。",
+    "de": "Eine Anzeige auf Fastwork für die Suche nach einem Amulett verlangt ฿500 plus 5% des Amulettwerts."
+   },
+   "src": "https://fastwork.co/user/nonthaiamulet/item-finder-81041922"
+  }
+ ],
+ "related": [
+  "name-charm",
+  "pha-yant",
+  "sak-yant",
+  "reading",
+  "lucky-number",
+  "luggage"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Phuket101: buying a Buddha image and the export licence",
+    "th": "Phuket101: การเช่าพระพุทธรูปและใบอนุญาตส่งออก",
+    "my": "Phuket101: ဘုရားရုပ်ပွား ဝယ်ခြင်းနှင့် ပို့ကုန်လိုင်စင်",
+    "zh": "Phuket101：请佛像与出口许可证",
+    "de": "Phuket101: Buddhabilder kaufen und die Ausfuhrlizenz"
+   },
+   "href": "https://www.phuket101.net/buying-a-buddha-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Wikipedia: Thai Buddha amulet",
+    "th": "Wikipedia: พระเครื่องไทย",
+    "my": "Wikipedia: ထိုင်းဗုဒ္ဓ ဆောင်ဖွယ်ရုပ်တု",
+    "zh": "维基百科：泰国佛牌",
+    "de": "Wikipedia: Thailändisches Buddha-Amulett"
+   },
+   "href": "https://en.wikipedia.org/wiki/Thai_Buddha_amulet"
+  }
+ ],
+ "glyphs": [
+  "lotus",
+  "camera",
+  "search"
+ ]
+}

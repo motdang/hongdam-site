@@ -1,0 +1,360 @@
+{
+ "id": "npa-homes",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Banks in Thailand sell homes, condos and land they took over from borrowers, and each bank sets its own way to bid.",
+  "th": "ธนาคารในไทยขายบ้าน คอนโด และที่ดินที่รับโอนมาจากลูกหนี้ และแต่ละธนาคารมีวิธียื่นซื้อของตัวเอง",
+  "my": "ထိုင်းနိုင်ငံရှိ ဘဏ်များသည် ချေးငွေယူသူများထံမှ သိမ်းယူထားသော အိမ်၊ ကွန်ဒိုနှင့် မြေများကို ရောင်းချကြပြီး ဘဏ်တစ်ခုစီက ဝယ်ယူရန် ကမ်းလှမ်းပုံကို ကိုယ်ပိုင်သတ်မှတ်ထားသည်။",
+  "zh": "泰国的银行把从借款人手中收回的房屋、公寓和土地拿出来卖，各家银行的出价方式不同。",
+  "de": "Banken in Thailand verkaufen Häuser, Eigentumswohnungen und Grundstücke, die sie von Kreditnehmern übernommen haben, und jede Bank legt die Art des Bietens selbst fest."
+ },
+ "n": {
+  "de": "Immobilien aus Bankverkäufen gefunden"
+ },
+ "l": {
+  "de": "Bis zu 10 Häuser, Eigentumswohnungen oder Grundstücke, die Banken verkaufen, passend für Sie, mit Anleitung zum Bieten."
+ },
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "You give your area, budget and title type.",
+    "th": "คุณบอกพื้นที่ งบประมาณ และประเภทโฉนดที่ต้องการ",
+    "my": "သင်ရွေးသော ဧရိယာ၊ ဘတ်ဂျက်နှင့် ပိုင်ဆိုင်မှုစာရွက်အမျိုးအစားကို ပေးသည်။",
+    "zh": "您说明所在区域、预算和产权证类型。",
+    "de": "Sie nennen Gebiet, Budget und Art der Eigentumsurkunde."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Up to 10 homes, condos or plots that banks are selling are matched to you.",
+    "th": "คัดบ้าน คอนโด หรือที่ดินที่ธนาคารขาย ไม่เกิน 10 รายการ ให้ตรงกับที่คุณต้องการ",
+    "my": "ဘဏ်များ ရောင်းနေသော အိမ်၊ ကွန်ဒို သို့မဟုတ် မြေ 10 ခုအထိကို သင်နှင့် ကိုက်ညီအောင် ရွေးပေးသည်။",
+    "zh": "从银行在售的房屋、公寓或土地中，按您的要求筛出最多 10 项。",
+    "de": "Aus den Angeboten der Banken werden bis zu 10 Häuser, Eigentumswohnungen oder Grundstücke für Sie ausgewählt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After your answers",
+    "th": "หลังคุณบอกความต้องการ",
+    "my": "သင်ဖြေပြီးနောက်",
+    "zh": "收到您的答复后",
+    "de": "Nach Ihren Angaben"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Each one comes with the bank's price and how to bid.",
+    "th": "แต่ละรายการมาพร้อมราคาของธนาคารและวิธียื่นซื้อ",
+    "my": "တစ်ခုစီတွင် ဘဏ်၏ ဈေးနှုန်းနှင့် ဝယ်ယူရန် လျှောက်ထားပုံ ပါလာသည်။",
+    "zh": "每一项都附银行的标价和出价方式。",
+    "de": "Zu jedem gehören der Preis der Bank und die Anleitung zum Bieten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the list",
+    "th": "พร้อมรายการ",
+    "my": "စာရင်းနှင့်အတူ",
+    "zh": "与清单一起",
+    "de": "Mit der Liste"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "You send the offer to the bank, by that bank's rules.",
+    "th": "คุณยื่นข้อเสนอซื้อต่อธนาคารตามกติกาของธนาคารนั้น",
+    "my": "သင်က ထိုဘဏ်၏ စည်းကမ်းအတိုင်း ဘဏ်သို့ ဝယ်ယူမည့် ကမ်းလှမ်းချက်ကို တင်သည်။",
+    "zh": "您按该银行的规则向银行递交出价。",
+    "de": "Sie reichen das Gebot nach den Regeln der Bank bei dieser ein."
+   },
+   "who": {
+    "en": "You and the bank",
+    "th": "คุณและธนาคาร",
+    "my": "သင်နှင့် ဘဏ်",
+    "zh": "您和银行",
+    "de": "Sie und die Bank"
+   },
+   "time": {
+    "en": "After you pick one",
+    "th": "หลังคุณเลือกแล้ว",
+    "my": "သင်ရွေးပြီးနောက်",
+    "zh": "选定之后",
+    "de": "Nach Ihrer Wahl"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "KBank takes offers on its NPA website only. A weekly round closes on Thursday at 12:00. The bid deposit is 1% of the offer, up to ฿200,000, and the result comes by SMS within 5 working days after the round closes.",
+    "th": "ธนาคารกสิกรไทยรับข้อเสนอซื้อผ่านเว็บไซต์ทรัพย์สินรอการขายเท่านั้น ระบบปิดรอบทุกวันพฤหัสบดีเวลา 12:00 น. เงินประกันการเสนอซื้อคือ 1% ของราคาที่เสนอ สูงสุดไม่เกิน ฿200,000 และแจ้งผลทาง SMS ภายใน 5 วันทำการหลังปิดรอบ",
+    "my": "KBank သည် ၎င်း၏ NPA ဝက်ဘ်ဆိုက်မှတစ်ဆင့်သာ ဝယ်ယူရန် ကမ်းလှမ်းချက်များကို လက်ခံသည်။ အပတ်စဉ် ကမ်းလှမ်းချိန်ကို ကြာသပတေးနေ့ 12:00 တွင် ပိတ်သည်။ ကမ်းလှမ်းငွေအာမခံသည် ကမ်းလှမ်းသည့်ဈေး၏ 1% ဖြစ်ပြီး ฿200,000 အထိသာ ဖြစ်သည်။ ရလဒ်ကို အပတ်ပိတ်ပြီး အလုပ်ရက် 5 ရက်အတွင်း SMS ဖြင့် အကြောင်းကြားသည်။",
+    "zh": "KBank 只通过自己的 NPA 网站接收出价。每周一轮，周四 12:00 截止。出价保证金为出价的 1%，最高 ฿200,000；截止后 5 个工作日内用短信通知结果。",
+    "de": "KBank nimmt Gebote nur über die eigene NPA-Website an. Die wöchentliche Runde endet donnerstags um 12:00 Uhr. Die Bietkaution beträgt 1 % des Gebots, höchstens ฿200,000, und das Ergebnis kommt innerhalb von 5 Arbeitstagen nach Rundenschluss per SMS."
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "t": {
+    "en": "After an approval, the KBank buyer signs the sale agreement and pays a 10% deposit within 15 days of the notice. The transfer follows within 30 days of the agreement.",
+    "th": "เมื่อได้รับอนุมัติขาย ผู้ซื้อกับธนาคารกสิกรไทยทำสัญญาจะซื้อจะขายและวางเงินมัดจำ 10% ของราคาอนุมัติขายภายใน 15 วันนับจากวันที่ในหนังสือแจ้งผล และโอนกรรมสิทธิ์ภายใน 30 วันนับจากวันทำสัญญา",
+    "my": "ရောင်းချခွင့်ပြုချက်ရပြီးနောက် KBank ၏ ဝယ်သူသည် အကြောင်းကြားစာရက်မှ 15 ရက်အတွင်း ရောင်းဝယ်ရန်ကတိစာချုပ် ချုပ်ပြီး စပေါ်ငွေ 10% ပေးသည်။ ပိုင်ဆိုင်မှု လွှဲပြောင်းခြင်းသည် စာချုပ်ချုပ်သည့်နေ့မှ 30 ရက်အတွင်း ဖြစ်သည်။",
+    "zh": "获批后，买方与 KBank 签订买卖协议，并在通知日起 15 天内付 10% 定金；过户在协议签订后 30 天内进行。",
+    "de": "Nach der Zusage unterzeichnet der Käufer bei KBank den Kaufvertrag und zahlt innerhalb von 15 Tagen nach dem Bescheid 10 % Anzahlung. Die Übertragung folgt innerhalb von 30 Tagen nach dem Vertrag."
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "t": {
+    "en": "SCB's NPA page says approval takes 3–5 working days. The buyer pays a 20% deposit when the agreement is signed and transfers ownership within 45 days. Without the deposit, the transfer is within 30 days of the agreement.",
+    "th": "หน้า NPA ของ SCB ระบุว่าธนาคารใช้เวลาพิจารณา 3–5 วันทำการ ผู้ซื้อวางเงินมัดจำ 20% ในวันทำสัญญาและโอนกรรมสิทธิ์ภายใน 45 วัน หากไม่วางเงินมัดจำ ต้องโอนภายใน 30 วันนับจากวันทำสัญญา",
+    "my": "SCB ၏ NPA စာမျက်နှာတွင် အတည်ပြုရန် အလုပ်ရက် 3–5 ရက် ကြာသည်ဟု ဖော်ပြထားသည်။ ဝယ်သူသည် စာချုပ်ချုပ်သည့်နေ့တွင် စပေါ်ငွေ 20% ပေးပြီး 45 ရက်အတွင်း ပိုင်ဆိုင်မှု လွှဲပြောင်းသည်။ စပေါ်ငွေမပေးလျှင် စာချုပ်ချုပ်သည့်နေ့မှ 30 ရက်အတွင်း လွှဲပြောင်းရသည်။",
+    "zh": "SCB 的 NPA 页面写明，审批需 3–5 个工作日。买方在签约当天付 20% 定金，45 天内过户；不付定金的，须在签约后 30 天内过户。",
+    "de": "Laut der NPA-Seite von SCB dauert die Prüfung 3–5 Arbeitstage. Der Käufer zahlt bei Vertragsschluss 20 % Anzahlung und überträgt das Eigentum innerhalb von 45 Tagen. Ohne Anzahlung erfolgt die Übertragung innerhalb von 30 Tagen nach dem Vertrag."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/home-car/npa-home"
+  },
+  {
+   "t": {
+    "en": "KBank sells only properties it has already won at auction. For a property still announced for court auction, KBank's questions page sends the buyer to the Legal Execution Department.",
+    "th": "ธนาคารกสิกรไทยขายเฉพาะทรัพย์ที่ธนาคารประมูลซื้อมาแล้ว ส่วนทรัพย์ที่อยู่ระหว่างประกาศขายทอดตลาด หน้าคำถามที่พบบ่อยของธนาคารให้ติดต่อกรมบังคับคดี",
+    "my": "KBank သည် လေလံတင်၍ ၎င်းကိုယ်တိုင် ဝယ်ယူပြီးသော ပစ္စည်းများကိုသာ ရောင်းသည်။ တရားရုံးလေလံ ကြေညာနေဆဲ ပစ္စည်းအတွက် ဘဏ်၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာက အရေးယူဆောင်ရွက်ရေးဦးစီးဌာန (Legal Execution Department) သို့ ညွှန်ပြသည်။",
+    "zh": "KBank 只卖自己已拍得的房产。仍在法院拍卖公告中的房产，KBank 的常见问题页指引买家去法律执行厅（Legal Execution Department）。",
+    "de": "KBank verkauft nur Objekte, die es bereits selbst ersteigert hat. Für ein Objekt, das noch zur Zwangsversteigerung ausgeschrieben ist, verweist die FAQ-Seite von KBank an das Legal Execution Department (Vollstreckungsamt)."
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "t": {
+    "en": "Foreigners cannot own land in Thailand; they can lease it for up to 30 years.",
+    "th": "ชาวต่างชาติถือครองที่ดินในไทยไม่ได้ เช่าได้ไม่เกิน 30 ปี",
+    "my": "နိုင်ငံခြားသားများ ထိုင်းတွင် မြေပိုင်ခွင့်မရှိ; နှစ် 30 အထိ ငှားနိုင်သည်။",
+    "zh": "外国人不能在泰国拥有土地，可租用最长 30 年。",
+    "de": "Ausländer dürfen in Thailand kein Land besitzen; sie können es bis zu 30 Jahre pachten."
+   },
+   "src": "https://www.thailandlawonline.com/thai-real-estate-law/ownership-and-buying-real-estate-in-thailand"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Land office transfer fee",
+    "th": "ค่าธรรมเนียมโอนที่สำนักงานที่ดิน",
+    "my": "မြေရုံး လွှဲပြောင်းခ",
+    "zh": "土地局过户费",
+    "de": "Übertragungsgebühr beim Landamt"
+   },
+   "p": {
+    "en": "2% of assessed value",
+    "th": "2% ของราคาประเมิน",
+    "my": "အကဲဖြတ်တန်ဖိုး၏ 2%",
+    "zh": "评估价的 2%",
+    "de": "2 % des Schätzwerts"
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "t": {
+    "en": "Bid deposit at KBank",
+    "th": "เงินประกันการเสนอซื้อ ธนาคารกสิกรไทย",
+    "my": "KBank ကမ်းလှမ်းငွေအာမခံ",
+    "zh": "KBank 出价保证金",
+    "de": "Bietkaution bei KBank"
+   },
+   "p": {
+    "en": "1% of the offer, up to ฿200,000",
+    "th": "1% ของราคาที่เสนอ สูงสุด ฿200,000",
+    "my": "ကမ်းလှမ်းဈေး၏ 1%၊ ฿200,000 အထိ",
+    "zh": "出价的 1%，最高 ฿200,000",
+    "de": "1 % des Gebots, höchstens ฿200,000"
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "t": {
+    "en": "Deposit at KBank when the agreement is signed",
+    "th": "เงินมัดจำเมื่อทำสัญญา ธนาคารกสิกรไทย",
+    "my": "စာချုပ်ချုပ်သည့်အခါ KBank စပေါ်ငွေ",
+    "zh": "KBank 签约时的定金",
+    "de": "Anzahlung bei KBank bei Vertragsschluss"
+   },
+   "p": {
+    "en": "10% of the approved price",
+    "th": "10% ของราคาอนุมัติขาย",
+    "my": "အတည်ပြုရောင်းဈေး၏ 10%",
+    "zh": "批准售价的 10%",
+    "de": "10 % des genehmigten Preises"
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "t": {
+    "en": "Deposit at SCB when the agreement is signed",
+    "th": "เงินมัดจำเมื่อทำสัญญา SCB",
+    "my": "စာချုပ်ချုပ်သည့်အခါ SCB စပေါ်ငွေ",
+    "zh": "SCB 签约时的定金",
+    "de": "Anzahlung bei SCB bei Vertragsschluss"
+   },
+   "p": {
+    "en": "20% of the approved price",
+    "th": "20% ของราคาอนุมัติขาย",
+    "my": "အတည်ပြုရောင်းဈေး၏ 20%",
+    "zh": "批准售价的 20%",
+    "de": "20 % des genehmigten Preises"
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/home-car/npa-home"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is an NPA property?",
+    "th": "ทรัพย์ NPA คืออะไร",
+    "my": "NPA ပစ္စည်းဆိုသည်မှာ ဘာလဲ။",
+    "zh": "什么是 NPA 房产？",
+    "de": "Was ist eine NPA-Immobilie?"
+   },
+   "a": {
+    "en": "NPA stands for non-performing asset. It is a property a lender fully owns. The lender took it from a borrower who did not pay, received it by agreement in place of the debt, or bought it back at a Legal Execution Department auction. KTC's article lists these three routes.",
+    "th": "NPA ย่อมาจาก Non-Performing Asset หรือทรัพย์สินรอการขาย คือทรัพย์ที่สถาบันการเงินเป็นเจ้าของกรรมสิทธิ์โดยสมบูรณ์ ได้มาจากการยึดทรัพย์ลูกหนี้ที่ผิดนัดชำระ จากการที่ลูกหนี้โอนทรัพย์ชำระหนี้ หรือจากการซื้อคืนในการขายทอดตลาดของกรมบังคับคดี บทความของ KTC ระบุสามทางนี้",
+    "my": "NPA သည် Non-Performing Asset ၏ အတိုကောက်ဖြစ်သည်။ ချေးသူက အပြည့်အဝ ပိုင်ဆိုင်ထားသော ပစ္စည်းဖြစ်သည်။ ပြန်မဆပ်သော ချေးငွေယူသူထံမှ သိမ်းယူခြင်း၊ ကြွေးမြီအစား သဘောတူညီမှုဖြင့် လက်ခံခြင်း သို့မဟုတ် အရေးယူဆောင်ရွက်ရေးဦးစီးဌာန၏ လေလံတွင် ပြန်ဝယ်ခြင်းဖြင့် ရရှိသည်။ KTC ဆောင်းပါးက ဤလမ်းကြောင်းသုံးခုကို ဖော်ပြသည်။",
+    "zh": "NPA 即不良资产（Non-Performing Asset）。这是贷款机构完全拥有产权的房产，来源有三：从违约借款人手中收回、借款人以房抵债，或在法律执行厅的拍卖中买回。KTC 的文章列出了这三条途径。",
+    "de": "NPA steht für Non-Performing Asset. Das ist ein Objekt, das dem Kreditgeber voll gehört. Er hat es einem säumigen Kreditnehmer abgenommen, per Vereinbarung statt der Schuld erhalten oder bei einer Versteigerung des Legal Execution Department zurückgekauft. Der Artikel von KTC nennt diese drei Wege."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/home-decoration/what-is-npa-property"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner buy a condo that a bank sells?",
+    "th": "ชาวต่างชาติซื้อคอนโดที่ธนาคารขายได้ไหม",
+    "my": "နိုင်ငံခြားသားက ဘဏ်ရောင်းသော ကွန်ဒိုကို ဝယ်နိုင်ပါသလား။",
+    "zh": "外国人能买银行出售的公寓吗？",
+    "de": "Kann ein Ausländer eine Eigentumswohnung kaufen, die eine Bank verkauft?"
+   },
+   "a": {
+    "en": "A foreigner may own condo units freehold up to 49% of a building's floor area. The rule for land is in the facts above.",
+    "th": "ชาวต่างชาติถือกรรมสิทธิ์ห้องชุดได้ไม่เกิน 49% ของพื้นที่อาคาร ส่วนกฎเรื่องที่ดินอยู่ในข้อมูลด้านบน",
+    "my": "နိုင်ငံခြားသားများသည် အဆောက်အအုံ ကြမ်းပြင်ဧရိယာ 49% အထိ ကွန်ဒိုကို ပိုင်ဆိုင်နိုင်သည်။ မြေဆိုင်ရာ စည်းကမ်းကို အထက်ပါ အချက်အလက်များတွင် ဖော်ပြထားသည်။",
+    "zh": "外国人可永久产权持有公寓，上限为楼宇面积的 49%。土地的规定见上面的事实。",
+    "de": "Ausländer dürfen Eigentumswohnungen als volles Eigentum besitzen, bis zu 49 % der Wohnfläche eines Gebäudes. Die Regel für Land steht oben bei den Fakten."
+   },
+   "src": "https://thethaiger.com/legal/property/buying/"
+  },
+  {
+   "q": {
+    "en": "What does the Land Office charge on a transfer?",
+    "th": "สำนักงานที่ดินเก็บอะไรบ้างเมื่อโอน",
+    "my": "လွှဲပြောင်းရာတွင် မြေရုံးက ဘာတွေ ကောက်ခံသလဲ။",
+    "zh": "过户时土地局收哪些费用？",
+    "de": "Was verlangt das Landamt bei einer Übertragung?"
+   },
+   "a": {
+    "en": "The Department of Lands' fee page gives a registration fee of 2% of the assessed value for land and for condos. Stamp duty is ฿1 for each ฿200, which is 0.5%. Specific business tax is 3.3% and applies to some sales, such as a sale within 5 years of acquiring the property.",
+    "th": "หน้าค่าธรรมเนียมของกรมที่ดินระบุค่าธรรมเนียมจดทะเบียน 2% ของราคาประเมิน ทั้งที่ดินและห้องชุด อากรแสตมป์ ฿1 ต่อทุก ฿200 คือ 0.5% ภาษีธุรกิจเฉพาะ 3.3% ใช้กับการขายบางกรณี เช่น ขายภายใน 5 ปีนับจากได้มา",
+    "my": "မြေစာရင်းဦးစီးဌာန၏ ကြေးနှုန်းစာမျက်နှာတွင် မြေနှင့် ကွန်ဒိုအတွက် မှတ်ပုံတင်ကြေး အကဲဖြတ်တန်ဖိုး၏ 2% ဟု ဖော်ပြထားသည်။ တံဆိပ်ခေါင်းခွန်မှာ ฿200 လျှင် ฿1 ဖြစ်ပြီး 0.5% ဖြစ်သည်။ အထူးလုပ်ငန်းခွန်မှာ 3.3% ဖြစ်ပြီး ပစ္စည်းရပြီး 5 နှစ်အတွင်း ရောင်းချခြင်းကဲ့သို့ အချို့သော ရောင်းချမှုများတွင် သက်ရောက်သည်။",
+    "zh": "土地厅的收费页面写明，土地和公寓的登记费为评估价的 2%。印花税为每 ฿200 收 ฿1，即 0.5%。特定营业税为 3.3%，适用于部分买卖，例如取得后 5 年内出售。",
+    "de": "Auf der Gebührenseite des Department of Lands steht eine Registrierungsgebühr von 2 % des Schätzwerts für Land und Eigentumswohnungen. Die Stempelsteuer beträgt ฿1 je ฿200, also 0,5 %. Die spezielle Gewerbesteuer beträgt 3,3 % und gilt für manche Verkäufe, etwa bei einem Verkauf innerhalb von 5 Jahren nach dem Erwerb."
+   },
+   "src": "https://www.dol.go.th/dol-services/public-service-manual/land-registration/fees-taxes-duties/"
+  },
+  {
+   "q": {
+    "en": "Does the buyer pay the bank's taxes?",
+    "th": "ผู้ซื้อต้องจ่ายภาษีของธนาคารไหม",
+    "my": "ဝယ်သူက ဘဏ်၏ အခွန်များကို ပေးရသလား။",
+    "zh": "买方要付银行的税吗？",
+    "de": "Zahlt der Käufer die Steuern der Bank?"
+   },
+   "a": {
+    "en": "KBank's questions page lists the bank as the payer of its corporate income tax and its specific business tax. The buyer pays the transfer fee. A buyer with a KBank loan also pays the mortgage registration fee, the stamp duty on the loan and fire insurance. The valuation fee is waived for a KBank loan.",
+    "th": "หน้าคำถามที่พบบ่อยของธนาคารกสิกรไทยระบุว่าธนาคารเป็นผู้จ่ายภาษีเงินได้นิติบุคคลและภาษีธุรกิจเฉพาะ ผู้ซื้อจ่ายค่าธรรมเนียมการโอน ผู้ซื้อที่กู้กับธนาคารกสิกรไทยจ่ายค่าจดจำนอง อากรแสตมป์ของวงเงินกู้ และเบี้ยประกันอัคคีภัยด้วย ค่าประเมินทรัพย์ได้รับการยกเว้นสำหรับสินเชื่อของธนาคารกสิกรไทย",
+    "my": "KBank ၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာတွင် ဘဏ်သည် ၎င်း၏ ကော်ပိုရေးရှင်းဝင်ငွေခွန်နှင့် အထူးလုပ်ငန်းခွန်ကို ပေးသည်ဟု ဖော်ပြထားသည်။ ဝယ်သူက လွှဲပြောင်းကြေးကို ပေးသည်။ KBank ချေးငွေရသော ဝယ်သူသည် ပေါင်နှံမှတ်ပုံတင်ကြေး၊ ချေးငွေပေါ် တံဆိပ်ခေါင်းခွန်နှင့် မီးအာမခံကိုလည်း ပေးသည်။ KBank ချေးငွေအတွက် ပစ္စည်းတန်ဖိုးအကဲဖြတ်ခကို ကင်းလွတ်ခွင့်ပေးသည်။",
+    "zh": "KBank 的常见问题页列明，银行自己缴纳企业所得税和特定营业税，买方付过户费。向 KBank 贷款的买方还要付抵押登记费、贷款印花税和火险；KBank 贷款免评估费。",
+    "de": "Auf der FAQ-Seite von KBank zahlt die Bank ihre Körperschaftsteuer und ihre spezielle Gewerbesteuer. Der Käufer zahlt die Übertragungsgebühr. Wer ein Darlehen bei KBank aufnimmt, zahlt zusätzlich die Hypothekeneintragung, die Stempelsteuer auf das Darlehen und die Feuerversicherung. Die Schätzgebühr entfällt bei einem KBank-Darlehen."
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "q": {
+    "en": "What if someone lives in the property?",
+    "th": "ถ้ามีคนอาศัยอยู่ในทรัพย์จะทำอย่างไร",
+    "my": "ပစ္စည်းထဲတွင် လူနေထိုင်နေလျှင် ဘာဖြစ်မလဲ။",
+    "zh": "房子里还住着人怎么办？",
+    "de": "Was gilt, wenn jemand im Objekt wohnt?"
+   },
+   "a": {
+    "en": "KBank's questions page marks such a property as one with a user. Once the bank owns it, the bank negotiates or files an eviction suit. If a suit is open and the bank sells the property as it stands, the bank ends the suit and the buyer carries on the eviction.",
+    "th": "หน้าคำถามที่พบบ่อยของธนาคารกสิกรไทยระบุทรัพย์แบบนี้ว่า \"มีผู้ใช้ประโยชน์\" เมื่อธนาคารเป็นเจ้าของแล้ว ธนาคารจะเจรจาหรือฟ้องขับไล่ หากมีคดีค้างอยู่และธนาคารอนุมัติขายตามสภาพ ธนาคารจะยุติการขับไล่ทั้งหมด และผู้ซื้อเป็นผู้ดำเนินการขับไล่ต่อเอง",
+    "my": "KBank ၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာတွင် ထိုသို့သော ပစ္စည်းကို \"အသုံးပြုသူရှိသည်\" ဟု မှတ်သားထားသည်။ ဘဏ်က ပိုင်ဆိုင်ပြီးနောက် ညှိနှိုင်းသည် သို့မဟုတ် နေရာရှင်းလင်းရန် တရားစွဲသည်။ အမှုဖွင့်ထားစဉ် ဘဏ်က ပစ္စည်းကို ရှိရင်းစွဲအတိုင်း ရောင်းလျှင် ဘဏ်က အမှုကို ရပ်ပြီး ဝယ်သူက နေရာရှင်းလင်းမှုကို ဆက်လုပ်ရသည်။",
+    "zh": "KBank 的常见问题页把这类房产标为“有使用人”。银行取得产权后，会协商或起诉迁出。若诉讼未了而银行按现状出售，银行终止诉讼，由买方自己继续办理迁出。",
+    "de": "Die FAQ-Seite von KBank kennzeichnet ein solches Objekt als eines mit Nutzer. Gehört es der Bank, verhandelt sie oder erhebt Räumungsklage. Läuft eine Klage und verkauft die Bank das Objekt im jetzigen Zustand, beendet sie die Klage, und der Käufer führt die Räumung selbst weiter."
+   },
+   "src": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  }
+ ],
+ "related": [
+  "stay-check",
+  "stay-rent",
+  "bank-account",
+  "translate",
+  "move",
+  "agency-sheet"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "KBank: questions about buying a bank-sale property (PDF, in Thai)",
+    "th": "ธนาคารกสิกรไทย: คำถามที่พบบ่อยเรื่องซื้อทรัพย์สินรอการขาย (PDF)",
+    "my": "KBank: ဘဏ်ရောင်းပစ္စည်း ဝယ်ယူခြင်းဆိုင်ရာ မေးလေ့ရှိသောမေးခွန်းများ (PDF၊ ထိုင်းဘာသာ)",
+    "zh": "KBank：购买银行出售房产的常见问题（PDF，泰文）",
+    "de": "KBank: häufige Fragen zum Kauf einer Bankimmobilie (PDF, auf Thai)"
+   },
+   "href": "https://support.linebk.com/SiteCollectionDocuments/assets/PFS/page/faq/npa-faq-220621.pdf"
+  },
+  {
+   "t": {
+    "en": "SCB: buying an NPA home",
+    "th": "SCB: ขั้นตอนซื้อบ้าน NPA",
+    "my": "SCB: NPA အိမ် ဝယ်ယူပုံ",
+    "zh": "SCB：购买 NPA 房产的步骤",
+    "de": "SCB: Kauf einer NPA-Immobilie"
+   },
+   "href": "https://www.scb.co.th/en/personal-banking/stories/home-car/npa-home"
+  }
+ ],
+ "glyphs": [
+  "home",
+  "coin",
+  "key"
+ ]
+}

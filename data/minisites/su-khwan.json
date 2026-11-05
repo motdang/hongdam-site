@@ -1,0 +1,326 @@
+{
+ "id": "su-khwan",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People hold a su khwan to call the khwan, a person's life essence, back after a fright, an illness or a long journey.",
+  "th": "คนทำพิธีสู่ขวัญเพื่อเรียกขวัญ ซึ่งอยู่กับตัวคนมาแต่เกิด ให้กลับมาหลังตกใจ เจ็บป่วย หรือเดินทางไกล",
+  "my": "ကြောက်လန့်ပြီးနောက်၊ ဖျားနာပြီးနောက် သို့မဟုတ် ခရီးရှည်သွားပြီးနောက် လူ၏ အသက်၏ အနှစ်သာရဖြစ်သည့် ခွမ်ကို ပြန်ခေါ်ရန် လူများသည် ဆူခွမ် အခမ်းအနား ပြုလုပ်ကြသည်။",
+  "zh": "受惊、生病或长途旅行之后，人们举行招魂礼，把魂（khwan，人的生命精魂）叫回来。",
+  "de": "Nach einem Schreck, einer Krankheit oder einer langen Reise hält man eine Su-Khwan-Zeremonie, um die Khwan, die Lebenskraft eines Menschen, zurückzurufen."
+ },
+ "n": {
+  "de": "Su-Khwan-Zeremonie"
+ },
+ "l": {
+  "de": "Ein Mo Khwan gefunden, die Zeremonie organisiert, mit Dolmetscher."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "We find a mo khwan, the person who calls the khwan.",
+    "th": "หาหมอขวัญ ผู้เรียกขวัญ",
+    "my": "မော်ခွမ် (ခွမ်ကို ခေါ်သူ) ကို ရှာဖွေပေးသည်။",
+    "zh": "找一位摩坤（mo khwan），也就是招魂的人。",
+    "de": "Wir finden einen Mo Khwan, die Person, die die Khwan ruft."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันพิธี",
+    "my": "ပွဲနေ့မတိုင်မီ",
+    "zh": "仪式之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "gift",
+   "t": {
+    "en": "We arrange the ceremony. The bai si tray, the offerings and the mo khwan's khan khru, his offering to his teachers, are paid at cost.",
+    "th": "จัดพิธี ค่าบายศรี เครื่องบูชา และขันครูของหมอขวัญคิดตามจริง",
+    "my": "အခမ်းအနားကို စီစဉ်ပေးသည်။ bai si ဗန်း၊ ပူဇော်ပစ္စည်းများနှင့် မော်ခွမ်၏ ဆရာများအား ကပ်လှူသော khan khru ကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "安排仪式。bai si 供盘、供品，以及摩坤供奉师父的 khan khru，按实际费用计。",
+    "de": "Wir richten die Zeremonie aus. Das Bai-Si-Tablett, die Opfergaben und das Khan Khru des Mo Khwan, seine Gabe an seine Lehrer, werden zum Selbstkostenpreis berechnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันพิธี",
+    "my": "ပွဲနေ့မတိုင်မီ",
+    "zh": "仪式之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "A translator tells you what is said.",
+    "th": "ล่ามบอกคุณว่ากล่าวอะไรในพิธี",
+    "my": "စကားပြန်က ပြောသမျှကို သင့်အား ဘာသာပြန်ပေးသည်။",
+    "zh": "翻译把所念的内容告诉您。",
+    "de": "Eine Dolmetscherin oder ein Dolmetscher übersetzt, was gesagt wird."
+   },
+   "who": {
+    "en": "A translator",
+    "th": "ล่าม",
+    "my": "စကားပြန်",
+    "zh": "翻译",
+    "de": "Dolmetscher/in"
+   },
+   "time": {
+    "en": "At the ceremony",
+    "th": "ในพิธี",
+    "my": "အခမ်းအနားတွင်",
+    "zh": "仪式当中",
+    "de": "Bei der Zeremonie"
+   }
+  },
+  {
+   "db": "phuang-malai",
+   "t": {
+    "en": "The mo khwan calls the khwan and ties white thread on your wrists.",
+    "th": "หมอขวัญเรียกขวัญและผูกด้ายสีขาวที่ข้อมือของคุณ",
+    "my": "မော်ခွမ်က ခွမ်ကို ခေါ်ပြီး သင့်လက်ကောက်ဝတ်များတွင် ချည်ဖြူ ချည်ပေးသည်။",
+    "zh": "摩坤把魂叫回来，并把白线系在您的手腕上。",
+    "de": "Der Mo Khwan ruft die Khwan und bindet weissen Faden um Ihre Handgelenke."
+   },
+   "who": {
+    "en": "The mo khwan",
+    "th": "หมอขวัญ",
+    "my": "မော်ခွမ်",
+    "zh": "摩坤",
+    "de": "Der Mo Khwan"
+   },
+   "time": {
+    "en": "10 to 15 minutes",
+    "th": "10–15 นาที",
+    "my": "မိနစ် 10 မှ 15",
+    "zh": "10 至 15 分钟",
+    "de": "10 bis 15 Minuten"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Khwan is the life essence a person is born with, and Lanna counts 32. A fright, an illness, a fall or a long journey can make it wander. The khwan rite calls it back.",
+    "th": "ขวัญคือสิ่งที่อยู่กับตัวคนมาแต่เกิด ชาวล้านนานับว่ามี 32 ขวัญ เมื่อตกใจ เจ็บป่วย หกล้ม หรือเดินทางไกล ขวัญอาจหนีหาย พิธีสู่ขวัญเรียกขวัญกลับมา",
+    "my": "ခွမ်ဆိုသည်မှာ လူတစ်ဦးက မွေးရာပါ ပါလာသော အသက်၏ အနှစ်သာရဖြစ်ပြီး လန်နာတွင် 32 ခု ရေတွက်သည်။ ကြောက်လန့်ခြင်း၊ ဖျားနာခြင်း၊ လဲကျခြင်း သို့မဟုတ် ခရီးရှည်သွားခြင်းတို့ကြောင့် ခွမ် ပျောက်ဆုံးသွားနိုင်သည်။ ခွမ် အခမ်းအနားက ၎င်းကို ပြန်ခေါ်သည်။",
+    "zh": "魂（khwan）是人与生俱来的生命精魂，兰纳传统数作32个。受到惊吓、生病、跌倒或长途旅行，都可能让魂走失。招魂礼把魂叫回来。",
+    "de": "Khwan ist die Lebenskraft, mit der ein Mensch geboren wird; die Lanna zählen 32. Ein Schreck, eine Krankheit, ein Sturz oder eine lange Reise können sie wandern lassen. Der Khwan-Ritus ruft sie zurück."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "A mo khwan calls the khwan: usually an older man who was ordained as a monk and left the robe. He reads the call over the finished tray, then ties white cotton thread on the wrists, left first. The thread stays on for about 3 days, until it greys.",
+    "th": "หมอขวัญเป็นผู้เรียกขวัญ มักเป็นชายสูงวัยที่เคยบวชเป็นพระแล้วลาสิกขา ท่านอ่านบทเรียกขวัญเหนือขันที่จัดเสร็จ แล้วผูกด้ายฝ้ายดิบสีขาวที่ข้อมือ เริ่มจากข้างซ้าย ด้ายอยู่บนข้อมือราว 3 วันจนออกเทา",
+    "my": "မော်ခွမ် (mo khwan) က ခွမ်ကို ခေါ်သည်။ များသောအားဖြင့် ရဟန်းဝတ်ခဲ့ဖူးပြီး လူထွက်လာသော အသက်ကြီးသူ ယောက်ျား ဖြစ်တတ်သည်။ ပြင်ဆင်ပြီးသော ဗန်းပေါ်တွင် ခေါ်စာကို ရွတ်ပြီးနောက် လက်ကောက်ဝတ်များတွင် ဝါဂွမ်းအဖြူချည်ကို ဘယ်ဘက်မှ စတင်ချည်ပေးသည်။ ချည်ကြိုးသည် မီးခိုးရောင်ဖြစ်သည်အထိ 3 ရက်ခန့် ရှိနေသည်။",
+    "zh": "招魂由“摩坤”（mo khwan）进行，通常是曾出家后还俗的年长男子。他对着布置好的供盘念诵招魂词，再把白色棉线系在手腕上，先系左手。棉线戴3天左右，直到变灰。",
+    "de": "Ein Mo Khwan ruft die Khwan: meist ein älterer Mann, der als Mönch ordiniert war und die Robe wieder abgelegt hat. Er liest den Ruf über dem fertigen Tablett und bindet dann weissen Baumwollfaden um die Handgelenke, zuerst links. Der Faden bleibt etwa 3 Tage, bis er grau wird."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "The northern khwan tray, khan bai si, is a silver or lacquer bowl on a footed stand. It holds tiers of banana leaf folded into points, a ball of steamed sticky rice, a peeled boiled egg, a banana, flowers, incense, candles and white cotton thread for the wrists.",
+    "th": "ขันใบสีแบบล้านนาคือสะหลุง ซึ่งเป็นขันเงินหรือขันลงรักตั้งบนฐาน ใส่ใบตองพับเป็นปลายแหลมเรียงเป็นชั้น ข้าวเหนียวนึ่งปั้นเป็นก้อน ไข่ต้มปอกเปลือก กล้วย ดอกไม้ ธูป เทียน และด้ายฝ้ายดิบสีขาวสำหรับผูกข้อมือ",
+    "my": "မြောက်ပိုင်း ခွမ်ဗန်း ခန်ဘိုင်ဆီ (khan bai si) သည် ခြေထောက်ပါသော အောက်ခံပေါ်တွင် တင်ထားသည့် ငွေ သို့မဟုတ် ယွန်းထည်ပန်းကန် ဖြစ်သည်။ ထိုပန်းကန်ထဲတွင် ချွန်ချွန်ခေါက်ထားသော ငှက်ပျောရွက်အလွှာများ၊ ကောက်ညှင်းပေါင်းလုံး၊ အခွံခွာထားသော ကြက်ဉပြုတ်၊ ငှက်ပျောသီး၊ ပန်း၊ အမွှေးတိုင်၊ ဖယောင်းတိုင်နှင့် လက်ကောက်ဝတ်ချည်ရန် ဝါဂွမ်းအဖြူချည်တို့ ထည့်ထားသည်။",
+    "zh": "北方的招魂供盘叫 khan bai si，是放在底座上的银碗或漆碗，里面有层层折成尖角的香蕉叶、一团糯米饭、一个剥壳水煮蛋、一根香蕉、鲜花、香、蜡烛，以及系手腕用的白色棉线。",
+    "de": "Das nordthailändische Khwan-Tablett, Khan Bai Si, ist eine silberne oder lackierte Schale auf einem Fuss. Darin stehen gestufte, spitz gefaltete Bananenblätter, ein Ball gedämpfter Klebreis, ein geschältes gekochtes Ei, eine Banane, Blumen, Räucherstäbchen, Kerzen und weisser Baumwollfaden für die Handgelenke."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "A 2023 article in the Journal of Humanities of Naresuan University defines su khwan as calling the khwan back into the patient's body. It says northern and Isan Thai people use the rite to care for, prevent and treat illness of body and mind.",
+    "th": "บทความในวารสารมนุษยศาสตร์ มหาวิทยาลัยนเรศวร ปี 2566 ให้ความหมายของการสู่ขวัญว่าเป็นการเรียกขวัญให้กลับมาสู่ร่างกายของผู้ป่วย และระบุว่าคนภาคเหนือและอีสานใช้พิธีนี้ดูแล ป้องกัน และรักษาความเจ็บป่วยทางกายและทางใจ",
+    "my": "Naresuan တက္ကသိုလ် လူ့ရေးရာဂျာနယ်တွင် 2023 ခုနှစ် ဆောင်းပါးတစ်ပုဒ်က ဆူခွမ်ကို လူနာ၏ ကိုယ်ထဲသို့ ခွမ်ကို ပြန်ခေါ်ခြင်းဟု အဓိပ္ပာယ်ဖွင့်ဆိုသည်။ မြောက်ပိုင်းနှင့် အီဆန်ဒေသက ထိုင်းလူမျိုးများသည် ကိုယ်ခန္ဓာနှင့် စိတ်၏ ရောဂါများကို စောင့်ရှောက်ရန်၊ ကာကွယ်ရန်နှင့် ကုသရန် ဤအခမ်းအနားကို အသုံးပြုကြသည်ဟု ဆိုသည်။",
+    "zh": "《那黎宣大学人文学报》2023 年的一篇文章把“招魂”（su khwan）定义为把魂叫回病人身体里，并说泰国北部和伊森地区的人用这种仪式来照护、预防和治疗身心的疾病。",
+    "de": "Ein Artikel von 2023 im Journal of Humanities der Naresuan-Universität definiert Su Khwan als das Zurückrufen der Khwan in den Körper des Patienten. Er schreibt, die Menschen im Norden und in Isan Thailands nutzten das Ritual, um Krankheiten von Körper und Geist zu pflegen, zu verhüten und zu behandeln."
+   },
+   "src": "https://so03.tci-thaijo.org/index.php/jhnu/article/view/267757"
+  },
+  {
+   "t": {
+    "en": "Mot Dang's page gives a rule for the thread: tie the left hand, the khwan comes; tie the right hand, the khwan stays. The thread is untied, not cut.",
+    "th": "หน้าของ Mot Dang ระบุหลักเรื่องด้ายว่า ผูกมือซ้าย ขวัญมา ผูกมือขวา ขวัญอยู่ และให้แก้ด้ายออก ไม่ตัด",
+    "my": "Mot Dang ၏ စာမျက်နှာတွင် ချည်ကြိုးဆိုင်ရာ စည်းမျဉ်းကို ဖော်ပြသည် - ဘယ်လက်ကို ချည်လျှင် ခွမ်လာသည်၊ ညာလက်ကို ချည်လျှင် ခွမ်နေသည်။ ချည်ကြိုးကို ဖြတ်မထားဘဲ ဖြေသည်။",
+    "zh": "Mot Dang 的页面写出系线的规矩：系左手，魂来；系右手，魂留。线是解开的，不是剪断的。",
+    "de": "Die Seite von Mot Dang nennt eine Regel für den Faden: Links gebunden, kommt die Khwan; rechts gebunden, bleibt die Khwan. Der Faden wird gelöst, nicht durchgeschnitten."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Package from a Fastwork seller who organises ordination events: a 5-tier bai si, 2 mo khwan and an adapted pi phat ensemble, delivered in 30 days; the listing's own starting price is also shown",
+    "th": "แพ็กเกจจากผู้ขายบน Fastwork ที่รับจัดงานบวช: บายศรีหลัก 5 ชั้น หมอขวัญ 2 คน และปี่พาทย์ประยุกต์ ส่งมอบใน 30 วัน และมีราคาเริ่มต้นของรายการแสดงไว้ด้วย",
+    "my": "ရှင်ပြုပွဲများ စီစဉ်ပေးသော Fastwork ရောင်းသူတစ်ဦး၏ အစုံ - 5 ထပ် bai si၊ မော်ခွမ် 2 ဦးနှင့် ခေတ်နှင့်ညီအောင် ပြုပြင်ထားသော pi phat တူရိယာအဖွဲ့၊ ရက် 30 အတွင်း ပို့ဆောင်ပေးသည်။ စာရင်း၏ စမှတ်ဈေးကိုလည်း ပြထားသည်",
+    "zh": "承办出家仪式的 Fastwork 卖家的套餐：5 层 bai si、2 位摩坤、一个改编的 pi phat 乐队，30 天交付；页面同时标出起步价",
+    "de": "Paket eines Fastwork-Anbieters, der Ordinationsfeiern ausrichtet: ein fünfstöckiges Bai Si, 2 Mo Khwan und ein angepasstes Pi-Phat-Ensemble, Lieferung in 30 Tagen; der Einstiegspreis des Eintrags steht ebenfalls dort"
+   },
+   "p": {
+    "en": "฿45,000 for the package; ฿6,500 starting price",
+    "th": "฿45,000 ต่อแพ็กเกจ ราคาเริ่มต้น ฿6,500",
+    "my": "အစုံအတွက် ฿45,000၊ စမှတ်ဈေး ฿6,500",
+    "zh": "套餐 ฿45,000；起步价 ฿6,500",
+    "de": "฿45,000 für das Paket; ab ฿6,500"
+   },
+   "src": "https://fastwork.co/user/meenpun/event-organizer-65118165"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer's listing that offers bai si and banana-leaf work among other jobs",
+    "th": "รายการของฟรีแลนซ์บน Fastwork ที่รับงานบายศรีและงานใบตองรวมกับงานอื่น",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး၏ စာရင်း - အခြားအလုပ်များနှင့်အတူ bai si နှင့် ငှက်ပျောရွက်လက်မှုလုပ်ငန်းကိုလည်း လက်ခံသည်",
+    "zh": "Fastwork 自由职业者的报价，其中包含 bai si 和香蕉叶手工等工作",
+    "de": "Eintrag einer Fastwork-Freelancerin oder eines Freelancers, der unter anderem Bai-Si- und Bananenblatt-Arbeiten anbietet"
+   },
+   "p": {
+    "en": "Starting price ฿900",
+    "th": "ราคาเริ่มต้น ฿900",
+    "my": "စမှတ်ဈေး ฿900",
+    "zh": "起步价 ฿900",
+    "de": "Einstiegspreis ฿900"
+   },
+   "src": "https://fastwork.co/user/panisara26/hangout-54501138"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What happens at the ceremony?",
+    "th": "ในพิธีสู่ขวัญมีขั้นตอนอย่างไร",
+    "my": "အခမ်းအနားတွင် ဘာတွေဖြစ်သလဲ။",
+    "zh": "仪式上会发生什么？",
+    "de": "Was geschieht bei der Zeremonie?"
+   },
+   "a": {
+    "en": "Mot Dang's page says the mo khwan first honours his teachers. He then chants the call with a little Pali, names the places each khwan may have wandered and asks them to return. Guests sit before the tray with their palms joined. The call takes 10 to 15 minutes.",
+    "th": "หน้าของ Mot Dang ระบุว่าหมอขวัญไหว้ครูก่อน แล้วเรียกขวัญด้วยบทที่มีภาษาบาลีเล็กน้อย เอ่ยถึงที่ที่ขวัญแต่ละดวงอาจหลงไป และขอให้กลับมา แขกนั่งประนมมือหน้าขัน การเรียกขวัญใช้เวลา 10–15 นาที",
+    "my": "Mot Dang ၏ စာမျက်နှာတွင် မော်ခွမ်သည် ဦးစွာ မိမိ၏ ဆရာများကို ရိုသေကိုးကွယ်သည်ဟု ဆိုသည်။ ထို့နောက် ပါဠိစကားအနည်းငယ်ပါသော ခေါ်စာကို ရွတ်ဆိုပြီး ခွမ်တစ်ခုချင်း လွင့်ပါးနိုင်သည့် နေရာများကို ခေါ်ကာ ပြန်လာရန် တောင်းဆိုသည်။ ဧည့်သည်များက ဗန်းရှေ့တွင် လက်အုပ်ချီ၍ ထိုင်ကြသည်။ ခေါ်ခြင်းသည် မိနစ် 10 မှ 15 ကြာသည်။",
+    "zh": "Mot Dang 的页面说，摩坤先向师父致敬，再用带少量巴利语的礼貌语调念诵招魂词，点出每一个魂可能走失到的地方，请它们回来。宾客双手合十坐在供盘前。招魂约需 10 至 15 分钟。",
+    "de": "Die Seite von Mot Dang sagt, der Mo Khwan ehre zuerst seine Lehrer. Dann rezitiere er den Ruf mit etwas Pali, nenne die Orte, an die jede Khwan gewandert sein kann, und bitte sie zurückzukehren. Die Gäste sitzen mit gefalteten Händen vor dem Tablett. Der Ruf dauert 10 bis 15 Minuten."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "q": {
+    "en": "How long does the thread stay on?",
+    "th": "ด้ายที่ข้อมืออยู่ได้นานแค่ไหน",
+    "my": "လက်ကောက်ဝတ်ရှိ ချည်ကြိုး ဘယ်လောက်ကြာအောင် ထားသလဲ။",
+    "zh": "手腕上的线要戴多久？",
+    "de": "Wie lange bleibt der Faden am Handgelenk?"
+   },
+   "a": {
+    "en": "Mot Dang's page says about 3 days, until the thread greys. It says the thread is untied rather than cut.",
+    "th": "หน้าของ Mot Dang ระบุว่าราว 3 วันจนด้ายออกเทา และให้แก้ด้ายออกแทนการตัด",
+    "my": "Mot Dang ၏ စာမျက်နှာတွင် ချည်ကြိုး မီးခိုးရောင်ဖြစ်သည်အထိ 3 ရက်ခန့်ဟု ဆိုသည်။ ချည်ကြိုးကို ဖြတ်မည့်အစား ဖြေသည်ဟုလည်း ဆိုသည်။",
+    "zh": "Mot Dang 的页面说约 3 天，直到线变灰；线是解开的，不是剪断的。",
+    "de": "Die Seite von Mot Dang nennt etwa 3 Tage, bis der Faden grau wird. Der Faden werde gelöst statt durchgeschnitten."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "q": {
+    "en": "What does a ceremony cost?",
+    "th": "พิธีบายศรีสู่ขวัญราคาเท่าไร",
+    "my": "အခမ်းအနားတစ်ခု ဈေးဘယ်လောက်လဲ။",
+    "zh": "一场仪式多少钱？",
+    "de": "Was kostet eine Zeremonie?"
+   },
+   "a": {
+    "en": "A Fastwork seller who organises ordination events lists a package at ฿45,000: a 5-tier bai si, 2 mo khwan and an adapted pi phat ensemble, delivered in 30 days. The same listing shows a starting price of ฿6,500.",
+    "th": "ผู้ขายบน Fastwork ที่รับจัดงานบวชรายหนึ่งลงแพ็กเกจไว้ ฿45,000 ได้แก่ บายศรีหลัก 5 ชั้น หมอขวัญ 2 คน และปี่พาทย์ประยุกต์ ส่งมอบใน 30 วัน รายการเดียวกันแสดงราคาเริ่มต้น ฿6,500",
+    "my": "ရှင်ပြုပွဲများ စီစဉ်ပေးသော Fastwork ရောင်းသူတစ်ဦးက အစုံကို ฿45,000 ဖြင့် စာရင်းတင်ထားသည် - 5 ထပ် bai si၊ မော်ခွမ် 2 ဦးနှင့် ခေတ်နှင့်ညီအောင် ပြုပြင်ထားသော pi phat တူရိယာအဖွဲ့၊ ရက် 30 အတွင်း ပို့ဆောင်သည်။ ထိုစာရင်းတွင် စမှတ်ဈေး ฿6,500 ကိုလည်း ပြထားသည်။",
+    "zh": "一位承办出家仪式的 Fastwork 卖家把套餐标价 ฿45,000：5 层 bai si、2 位摩坤、一个改编的 pi phat 乐队，30 天交付。同一页面还显示起步价 ฿6,500。",
+    "de": "Ein Fastwork-Anbieter, der Ordinationsfeiern ausrichtet, führt ein Paket für ฿45,000: ein fünfstöckiges Bai Si, 2 Mo Khwan und ein angepasstes Pi-Phat-Ensemble, Lieferung in 30 Tagen. Derselbe Eintrag zeigt einen Einstiegspreis von ฿6,500."
+   },
+   "src": "https://fastwork.co/user/meenpun/event-organizer-65118165"
+  },
+  {
+   "q": {
+    "en": "Is a bai si part of a northern Thai wedding?",
+    "th": "บายศรีเป็นส่วนหนึ่งของงานแต่งงานแบบภาคเหนือไหม",
+    "my": "မြောက်ပိုင်း ထိုင်းမင်္ဂလာဆောင်တွင် bai si ပါသလား။",
+    "zh": "泰北婚礼里有 bai si 吗？",
+    "de": "Gehört ein Bai Si zu einer nordthailändischen Hochzeit?"
+   },
+   "a": {
+    "en": "TAT News describes the northern style: after the wedding, both parties host a 'Bai Sri' ritual in which the bride's and groom's hands are tied. Coins are placed in the 'Bai Sri' bowls for prosperity.",
+    "th": "TAT News บรรยายแบบภาคเหนือว่า หลังพิธีแต่งงาน ทั้งสองฝ่ายจัดพิธีบายศรี โดยมีการผูกมือเจ้าบ่าวเจ้าสาว และใส่เหรียญลงในขันบายศรีเพื่อความเจริญรุ่งเรือง",
+    "my": "TAT News က မြောက်ပိုင်းပုံစံကို ဖော်ပြသည် - မင်္ဂလာဆောင်ပြီးနောက် နှစ်ဖက်စလုံးက 'Bai Sri' အခမ်းအနားကို ကျင်းပပြီး သတို့သား သတို့သမီး၏ လက်များကို ချည်ကြသည်။ ကံကောင်းရန် 'Bai Sri' ပန်းကန်များတွင် ဒင်္ဂါးပြားများ ထည့်သည်။",
+    "zh": "TAT News 描述北部风格：婚礼之后，双方家庭举行 “Bai Sri” 仪式，新郎新娘的手被系在一起，硬币放进 “Bai Sri” 碗里，寓意兴旺。",
+    "de": "TAT News beschreibt den nördlichen Stil: Nach der Hochzeit richten beide Seiten ein „Bai Sri“-Ritual aus, bei dem die Hände von Braut und Bräutigam verbunden werden. Münzen kommen für Wohlstand in die „Bai Sri“-Schalen."
+   },
+   "src": "https://www.tatnews.org/four-regions-and-a-wedding-guide-to-weddings-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Is the Lao baci a similar ceremony?",
+    "th": "พิธีบาซีของลาวเป็นพิธีคล้ายกันไหม",
+    "my": "လာအိုနိုင်ငံ၏ baci သည် ဆင်တူသော အခမ်းအနားလား။",
+    "zh": "老挝的 baci 是类似的仪式吗？",
+    "de": "Ist das laotische Baci eine ähnliche Zeremonie?"
+   },
+   "a": {
+    "en": "The Laotian Times, reprinted by The Star on 12 May 2023, describes the baci as a ritual Lao people have practised for thousands of years. It gives the name sou khuan, meaning calling of the soul, and says white cotton strings are tied on wrists while blessings are prayed.",
+    "th": "Laotian Times ซึ่ง The Star นำมาลงซ้ำเมื่อ 12 พฤษภาคม 2023 บรรยายบาซีว่าเป็นพิธีที่ชาวลาวปฏิบัติมานับพันปี ใช้ชื่อ sou khuan แปลว่าการเรียกขวัญ และระบุว่ามีการผูกด้ายฝ้ายสีขาวที่ข้อมือพร้อมอวยพร",
+    "my": "Laotian Times ကို The Star က 2023 ခုနှစ် မေလ 12 ရက်တွင် ပြန်လည်ဖော်ပြခဲ့ပြီး baci ကို လာအိုလူမျိုးများ နှစ်ပေါင်းထောင်ချီ ကျင့်သုံးလာသော အခမ်းအနားဟု ဖော်ပြသည်။ sou khuan ဟူသော အမည်ကိုလည်း ပေးထားပြီး ကောင်းချီးစကားများ ရွတ်ဆိုစဉ် လက်ကောက်ဝတ်များတွင် ဝါဂွမ်းချည်ဖြူ ချည်ကြသည်ဟု ဆိုသည်။",
+    "zh": "老挝时报，经 The Star 于 2023 年 5 月 12 日转载，把 baci 描述为老挝人实行了数千年的仪式，名称为 sou khuan，意思是招魂，并说在祝福声中把白色棉线系在手腕上。",
+    "de": "Die Laotian Times, am 12. Mai 2023 von The Star nachgedruckt, beschreibt das Baci als ein Ritual, das Laoten seit Tausenden von Jahren pflegen. Sie nennt den Namen sou khuan, „Rufen der Seele“, und schreibt, weisse Baumwollfäden würden unter Segenswünschen um die Handgelenke gebunden."
+   },
+   "src": "https://www.thestar.com.my/aseanplus/aseanplus-news/2023/05/12/laos-seeks-unesco-intangible-cultural-heritage-listing-for-baci-ceremony"
+  }
+ ],
+ "related": [
+  "lanna-wedding",
+  "honeymoon",
+  "house-blessing",
+  "spirit-house",
+  "experience",
+  "interp"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: a Lanna honeymoon with a su khwan rite",
+    "th": "Mot Dang: ฮันนีมูนล้านนาพร้อมพิธีสู่ขวัญ",
+    "my": "Mot Dang: ဆူခွမ်အခမ်းအနားပါသော လန်နာ ဟန်နီမွန်း",
+    "zh": "Mot Dang：含招魂礼的兰纳蜜月",
+    "de": "Mot Dang: eine Lanna-Hochzeitsreise mit Su-Khwan-Ritus"
+   },
+   "href": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "Naresuan University Journal of Humanities: healing through su khwan rituals",
+    "th": "วารสารมนุษยศาสตร์ มหาวิทยาลัยนเรศวร: การรักษาโรคด้วยพิธีกรรมการสู่ขวัญ",
+    "my": "Naresuan တက္ကသိုလ် လူ့ရေးရာဂျာနယ်: ဆူခွမ်အခမ်းအနားများဖြင့် ကုသခြင်း",
+    "zh": "那黎宣大学人文学报：通过招魂仪式治疗疾病",
+    "de": "Journal of Humanities der Naresuan-Universität: Heilung durch Su-Khwan-Rituale"
+   },
+   "href": "https://so03.tci-thaijo.org/index.php/jhnu/article/view/267757"
+  }
+ ],
+ "glyphs": [
+  "lotus",
+  "phuang-malai",
+  "wai"
+ ]
+}

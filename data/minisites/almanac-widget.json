@@ -1,0 +1,302 @@
+{
+ "id": "almanac-widget",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People put a Lanna calendar or a fortune calculator on a site so visitors can look up a day or a reading there. The north keeps its own months and its own good and bad days.",
+  "th": "คนใส่ปฏิทินล้านนาหรือเครื่องคำนวณดวงไว้บนเว็บ เพื่อให้ผู้เข้าชมดูวันหรือดูดวงได้ที่นั่น ภาคเหนือมีเดือนของตัวเอง และมีวันดีวันเสียของตัวเอง",
+  "my": "လန်နာပြက္ခဒိန် သို့မဟုတ် ဗေဒင်တွက်စက်ကို ဝက်ဘ်ဆိုက်ပေါ်တွင် တင်ထားခြင်းဖြင့် လာရောက်ကြည့်ရှုသူများက ထိုနေရာတွင်ပင် ရက်ကို ကြည့်နိုင်သည်၊ ဗေဒင်ကို တွက်နိုင်သည်။ မြောက်ပိုင်းတွင် ကိုယ်ပိုင်လများနှင့် ကိုယ်ပိုင် ရက်ကောင်း ရက်ဆိုးများ ရှိသည်။",
+  "zh": "有人把兰纳历或算命计算器放在网站上，让访客直接在那里查日子、算命。北方有自己的月份，也有自己的吉日和凶日。",
+  "de": "Man stellt einen Lanna-Kalender oder einen Glücksrechner auf die Website, damit Besucher dort einen Tag nachschlagen oder eine Deutung berechnen können. Der Norden hat eigene Monate und eigene gute und schlechte Tage."
+ },
+ "n": {
+  "de": "Almanach- oder Glücksrechner für Ihre Website"
+ },
+ "l": {
+  "de": "Lanna-Kalender, Bazi oder I Ging auf Ihrer eigenen Website."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You choose the tool: a Lanna calendar, a Bazi calculator or an I Ching calculator.",
+    "th": "คุณเลือกเครื่องมือ: ปฏิทินล้านนา เครื่องคำนวณปาจื้อ หรือเครื่องคำนวณอี้จิง",
+    "my": "သင်က ကိရိယာကို ရွေးသည်။ လန်နာပြက္ခဒိန်၊ Bazi တွက်စက် သို့မဟုတ် I Ching တွက်စက်။",
+    "zh": "您选工具：兰纳历、八字计算器或易经计算器。",
+    "de": "Sie wählen das Werkzeug: Lanna-Kalender, Bazi-Rechner oder I-Ging-Rechner."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ก่อนเริ่มทำ",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "gears",
+   "t": {
+    "en": "Hongdam builds the calculator.",
+    "th": "หงส์ดำสร้างเครื่องคำนวณ",
+    "my": "ဟုန်ဒမ်က တွက်စက်ကို တည်ဆောက်သည်။",
+    "zh": "鸿丹来做这个计算器。",
+    "de": "Hongdam baut den Rechner."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you choose",
+    "th": "หลังคุณเลือก",
+    "my": "သင်ရွေးပြီးနောက်",
+    "zh": "您选定之后",
+    "de": "Nach Ihrer Wahl"
+   }
+  },
+  {
+   "db": "laptop",
+   "t": {
+    "en": "The tool runs on your own site.",
+    "th": "เครื่องมืออยู่บนเว็บของคุณเอง",
+    "my": "ကိရိယာသည် သင့်ကိုယ်ပိုင် ဝက်ဘ်ဆိုက်ပေါ်တွင် အလုပ်လုပ်သည်။",
+    "zh": "工具在您自己的网站上运行。",
+    "de": "Das Werkzeug läuft auf Ihrer eigenen Website."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "When it is built",
+    "th": "เมื่อสร้างเสร็จ",
+    "my": "ပြီးစီးသောအခါ",
+    "zh": "做好之后",
+    "de": "Wenn es fertig ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Lanna calendar is the northern calendar for finding auspicious times. A good time is called มื้อจั๋นวันดี in northern speech. Sanook says its 2569 (2026) edition marks good and bad days for the 12 months.",
+    "th": "ปฏิทินล้านนาเป็นปฏิทินพื้นเมืองทางภาคเหนือ ใช้ดูฤกษ์งามยามดี คำเหนือเรียกว่า มื้อจั๋นวันดี Sanook ระบุว่าฉบับปี 2569 (ค.ศ. 2026) ทำเครื่องหมายวันดีและวันร้ายของทั้ง 12 เดือน",
+    "my": "လန်နာပြက္ခဒိန်သည် မြောက်ပိုင်းဒေသ၏ ပြက္ခဒိန်ဖြစ်ပြီး မင်္ဂလာအချိန်ကောင်း ရှာရန် သုံးသည်။ မြောက်ပိုင်းစကားဖြင့် အချိန်ကောင်းကို มื้อจั๋นวันดี ဟု ခေါ်သည်။ Sanook က ၎င်း၏ 2569 (2026) ထုတ်ဝေမှုတွင် 12 လစာ ရက်ကောင်း ရက်ဆိုးများကို မှတ်သားထားသည်ဟု ဆိုသည်။",
+    "zh": "兰纳历是泰国北部的地方历法，用来找吉时。北方话把吉时叫作 มื้อจั๋นวันดี。Sanook 说，2569 年（2026 年）版标出了 12 个月的吉日和凶日。",
+    "de": "Der Lanna-Kalender ist der Kalender des Nordens, um günstige Zeiten zu finden. Eine gute Zeit heisst dort มื้อจั๋นวันดี. Sanook schreibt, die Ausgabe 2569 (2026) markiere gute und schlechte Tage für die 12 Monate."
+   },
+   "src": "https://www.sanook.com/horoscope/319931/"
+  },
+  {
+   "t": {
+    "en": "Sanook lists good days such as วันไชยโชค, วันสิทธิโชค and วันมหาสิทธิโชค. They suit starting an auspicious event, buying a house or a car, or a new venture. วันเสีย is a bad day, and Sanook says auspicious events of any kind are left out on it.",
+    "th": "Sanook ลงวันดีไว้ เช่น วันไชยโชค วันสิทธิโชค และวันมหาสิทธิโชค เหมาะกับการเริ่มงานมงคล ซื้อบ้าน ซื้อรถ หรือเริ่มกิจการใหม่ ส่วนวันเสียเป็นวันร้าย Sanook ระบุว่าวันนั้นเว้นจากงานมงคลทุกรูปแบบ",
+    "my": "Sanook တွင် ไชยโชค၊ สิทธิโชค နှင့် มหาสิทธิโชค ကဲ့သို့ ရက်ကောင်းများကို စာရင်းပြုထားသည်။ ၎င်းတို့သည် မင်္ဂလာအစီအစဉ် စတင်ရန်၊ အိမ် သို့မဟုတ် ကား ဝယ်ရန်၊ လုပ်ငန်းအသစ် စတင်ရန် သင့်တော်သည်။ วันเสีย သည် ရက်ဆိုး ဖြစ်ပြီး ထိုနေ့တွင် မင်္ဂလာအစီအစဉ် မည်သည့်အမျိုးအစားမှ မလုပ်ကြောင်း Sanook က ဆိုသည်။",
+    "zh": "Sanook 列出的吉日有 วันไชยโชค、วันสิทธิโชค、วันมหาสิทธิโชค，适合开办喜庆活动、买房买车或开展新事业。วันเสีย 是凶日，Sanook 说这一天不办任何喜庆活动。",
+    "de": "Sanook nennt gute Tage wie วันไชยโชค, วันสิทธิโชค und วันมหาสิทธิโชค. Sie passen zum Beginn eines festlichen Anlasses, zum Kauf eines Hauses oder Autos oder zu einem neuen Vorhaben. วันเสีย ist ein schlechter Tag; laut Sanook entfallen an ihm festliche Anlässe jeder Art."
+   },
+   "src": "https://www.sanook.com/horoscope/319931/"
+  },
+  {
+   "t": {
+    "en": "Yi Peng falls on the full moon of the second month of the Lanna lunar calendar, usually in November. The Thailand Foundation says this is the 12th month of the central Thai lunar calendar.",
+    "th": "ยี่เป็งตรงกับวันเพ็ญเดือนยี่ของปฏิทินจันทรคติล้านนา ซึ่งมักอยู่ในเดือนพฤศจิกายน Thailand Foundation ระบุว่าตรงกับเดือน 12 ของปฏิทินจันทรคติไทยภาคกลาง",
+    "my": "Yi Peng ပွဲတော်သည် လန်နာ လတွက်ပြက္ခဒိန်၏ ဒုတိယလ လပြည့်နေ့တွင် ကျရောက်ပြီး များသောအားဖြင့် နိုဝင်ဘာလ ဖြစ်သည်။ Thailand Foundation က ၎င်းသည် ထိုင်းအလယ်ပိုင်း လတွက်ပြက္ခဒိန်၏ 12 လပိုင်း ဖြစ်သည်ဟု ဆိုသည်။",
+    "zh": "伊彭节（Yi Peng）在兰纳阴历二月的月圆日，通常在 11 月。Thailand Foundation 说，这一天是泰国中部阴历的十二月。",
+    "de": "Yi Peng fällt auf den Vollmond des zweiten Monats im Lanna-Mondkalender, meist im November. Die Thailand Foundation schreibt, das sei der 12. Monat im Mondkalender Zentralthailands."
+   },
+   "src": "https://thailandfoundation.or.th/518234-v2/"
+  },
+  {
+   "t": {
+    "en": "The Hong Kong Observatory publishes a table of Gregorian and Chinese lunar dates for 1901 to 2100. It also publishes the same data as open data that a program can read.",
+    "th": "หอดูดาวฮ่องกงเผยแพร่ตารางเทียบวันที่สากลกับวันที่ปฏิทินจันทรคติจีนตั้งแต่ปี 1901 ถึง 2100 และเผยแพร่ข้อมูลชุดเดียวกันเป็นข้อมูลเปิดที่โปรแกรมอ่านได้",
+    "my": "Hong Kong Observatory က 1901 မှ 2100 အထိ အနောက်တိုင်းပြက္ခဒိန်နှင့် တရုတ်လတွက်ပြက္ခဒိန် ရက်စွဲများ နှိုင်းယှဉ်ဇယားကို ထုတ်ပြန်ထားသည်။ ထိုအချက်အလက်ကိုပင် ပရိုဂရမ်က ဖတ်နိုင်သော ပွင့်လင်းဒေတာအဖြစ်လည်း ထုတ်ပြန်သည်။",
+    "zh": "香港天文台发布 1901 年至 2100 年的公历与农历对照表，同样的数据也以开放数据形式提供，程序可以直接读取。",
+    "de": "Das Hong Kong Observatory veröffentlicht eine Tabelle gregorianischer und chinesischer Mondkalender-Daten von 1901 bis 2100. Dieselben Daten gibt es auch als offene Daten, die ein Programm lesen kann."
+   },
+   "src": "https://www.hko.gov.hk/en/gts/time/conversion.htm"
+  },
+  {
+   "t": {
+    "en": "The Yijing (I Ching) has 8 trigrams, which are symbols of three lines, and 64 hexagrams, which are symbols of six lines. Straight lines stand for yang and broken lines for yin.",
+    "th": "อี้จิงมีสัญลักษณ์สามเส้น 8 แบบ และสัญลักษณ์หกเส้น 64 แบบ เส้นตรงแทนหยางและเส้นขาดแทนหยิน",
+    "my": "I Ching တွင် မျဉ်းသုံးကြောင်းပါ သင်္ကေတ 8 မျိုးနှင့် မျဉ်းခြောက်ကြောင်းပါ သင်္ကေတ 64 မျိုး ရှိသည်။ မျဉ်းဖြောင့်က ယန်းကို၊ မျဉ်းပြတ်က ယင်ကို ကိုယ်စားပြုသည်။",
+    "zh": "易经有 8 个三爻符号（八卦）和 64 个六爻符号（六十四卦）。实线代表阳，断线代表阴。",
+    "de": "Das Yijing (I Ging) kennt 8 Trigramme, also Zeichen aus drei Linien, und 64 Hexagramme, also Zeichen aus sechs Linien. Durchgezogene Linien stehen für Yang, unterbrochene für Yin."
+   },
+   "src": "https://plato.stanford.edu/archives/sum2019/entries/chinese-change/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork developer's web application; the price follows the size of the job",
+    "th": "เว็บแอปพลิเคชันจากนักพัฒนาบน Fastwork ราคาขึ้นกับขนาดงาน",
+    "my": "Fastwork ရှိ ဆော့ဖ်ဝဲလ်ရေးသားသူတစ်ဦး၏ ဝက်ဘ်အက်ပ်၊ အလုပ်ပမာဏအလိုက် စျေးနှုန်း",
+    "zh": "Fastwork 上开发者做的网页应用，价格按工作量定",
+    "de": "Web-Anwendung eines Entwicklers auf Fastwork; der Preis richtet sich nach dem Umfang"
+   },
+   "p": {
+    "en": "From ฿4,000",
+    "th": "เริ่มที่ ฿4,000",
+    "my": "฿4,000 မှ စသည်",
+    "zh": "฿4,000 起",
+    "de": "ab ฿4,000"
+   },
+   "src": "https://fastwork.co/user/supakpong/web-development-40939396"
+  },
+  {
+   "t": {
+    "en": "Another Fastwork developer's new website, with or without a database",
+    "th": "เว็บไซต์ใหม่จากนักพัฒนาอีกรายบน Fastwork มีฐานข้อมูลหรือไม่มีก็ได้",
+    "my": "Fastwork ရှိ အခြားဆော့ဖ်ဝဲလ်ရေးသားသူတစ်ဦး၏ ဝက်ဘ်ဆိုက်အသစ်၊ ဒေတာဘေ့စ်ပါ သို့မဟုတ် မပါ",
+    "zh": "Fastwork 上另一位开发者做的新网站，可有数据库，也可没有",
+    "de": "Neue Website eines anderen Entwicklers auf Fastwork, mit oder ohne Datenbank"
+   },
+   "p": {
+    "en": "฿17,000",
+    "th": "฿17,000",
+    "my": "฿17,000",
+    "zh": "฿17,000",
+    "de": "฿17,000"
+   },
+   "src": "https://fastwork.co/user/napatdev/web-development-49793118"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is the Lanna calendar?",
+    "th": "ปฏิทินล้านนาคืออะไร",
+    "my": "လန်နာပြက္ခဒိန်ဆိုတာ ဘာလဲ။",
+    "zh": "兰纳历是什么？",
+    "de": "Was ist der Lanna-Kalender?"
+   },
+   "a": {
+    "en": "Sanook calls it a native calendar of the north. It is used to find auspicious times, such as for a housewarming, a wedding, an ordination or the day a new car is collected.",
+    "th": "Sanook ว่าเป็นปฏิทินพื้นเมืองทางภาคเหนือ ใช้ดูฤกษ์งามยามดี เช่น วันขึ้นบ้านใหม่ วันแต่งงาน วันบวช และวันออกรถ",
+    "my": "Sanook က ၎င်းကို မြောက်ပိုင်းဒေသ၏ ဒေသခံပြက္ခဒိန်ဟု ဆိုသည်။ အိမ်ထူးသွင်းပွဲ၊ မင်္ဂလာဆောင်၊ ရဟန်းခံပွဲ၊ ကားအသစ်ယူသည့်နေ့ ကဲ့သို့ အချိန်ကောင်း ရှာရန် သုံးသည်။",
+    "zh": "Sanook 称它是北方的地方历法，用来选吉时，比如入新居、婚礼、出家和提新车的日子。",
+    "de": "Sanook nennt ihn einen einheimischen Kalender des Nordens. Man nutzt ihn, um günstige Zeiten zu finden, etwa für den Einzug, eine Hochzeit, eine Ordination oder die Abholung eines neuen Autos."
+   },
+   "src": "https://www.sanook.com/horoscope/319931/"
+  },
+  {
+   "q": {
+    "en": "How is a Lanna month different from a Thai month?",
+    "th": "เดือนล้านนาต่างจากเดือนไทยอย่างไร",
+    "my": "လန်နာလနှင့် ထိုင်းလ ဘာကွာသလဲ။",
+    "zh": "兰纳历的月份和泰国中部的月份有什么不同？",
+    "de": "Wie unterscheidet sich ein Lanna-Monat von einem thailändischen Monat?"
+   },
+   "a": {
+    "en": "The same full moon has two numbers. Yi Peng is the full moon of the Lanna second month. The Thailand Foundation says that night is the 12th month in the central Thai lunar calendar.",
+    "th": "วันเพ็ญเดียวกันมีเลขเดือนสองแบบ ยี่เป็งคือวันเพ็ญเดือนยี่ของล้านนา Thailand Foundation ระบุว่าคืนนั้นเป็นเดือน 12 ในปฏิทินจันทรคติไทยภาคกลาง",
+    "my": "လပြည့်နေ့တစ်ခုတည်းမှာ လနံပါတ် နှစ်မျိုး ရှိသည်။ Yi Peng သည် လန်နာ၏ ဒုတိယလ လပြည့်နေ့ ဖြစ်သည်။ Thailand Foundation က ထိုညသည် ထိုင်းအလယ်ပိုင်း လတွက်ပြက္ခဒိန်၏ 12 လပိုင်း ဖြစ်သည်ဟု ဆိုသည်။",
+    "zh": "同一个月圆日有两种月份编号。伊彭节在兰纳历二月的月圆日。Thailand Foundation 说，那一夜在泰国中部阴历里是十二月。",
+    "de": "Derselbe Vollmond trägt zwei Monatszahlen. Yi Peng ist der Vollmond des zweiten Lanna-Monats. Die Thailand Foundation schreibt, in Zentralthailands Mondkalender sei diese Nacht der 12. Monat."
+   },
+   "src": "https://thailandfoundation.or.th/518234-v2/"
+  },
+  {
+   "q": {
+    "en": "Which days are good or bad in the Lanna calendar?",
+    "th": "ปฏิทินล้านนามีวันดีวันเสียอะไรบ้าง",
+    "my": "လန်နာပြက္ခဒိန်တွင် ဘယ်ရက်တွေက ရက်ကောင်း ရက်ဆိုးလဲ။",
+    "zh": "兰纳历里哪些是吉日，哪些是凶日？",
+    "de": "Welche Tage im Lanna-Kalender sind gut oder schlecht?"
+   },
+   "a": {
+    "en": "Sanook lists good days such as วันไชยโชค, วันสิทธิโชค, วันมหาสิทธิโชค and วันหัวเรียงหมอน, which suits a wedding. Its bad days are วันเสีย, วันมัจจุ, วันวอดวาย and วันไหม้.",
+    "th": "Sanook ลงวันดี เช่น วันไชยโชค วันสิทธิโชค วันมหาสิทธิโชค และวันหัวเรียงหมอนที่เหมาะกับงานแต่ง ส่วนวันร้ายคือ วันเสีย วันมัจจุ วันวอดวาย และวันไหม้",
+    "my": "Sanook တွင် ไชยโชค၊ สิทธิโชค၊ มหาสิทธิโชค နှင့် မင်္ဂလာဆောင်နှင့် သင့်တော်သော วันหัวเรียงหมอน တို့ကို ရက်ကောင်းအဖြစ် စာရင်းပြုထားသည်။ ရက်ဆိုးများမှာ วันเสีย၊ วันมัจจุ၊ วันวอดวาย နှင့် วันไหม้ တို့ ဖြစ်သည်။",
+    "zh": "Sanook 列出的吉日有 วันไชยโชค、วันสิทธิโชค、วันมหาสิทธิโชค，以及适合办婚礼的 วันหัวเรียงหมอน。凶日是 วันเสีย、วันมัจจุ、วันวอดวาย 和 วันไหม้。",
+    "de": "Sanook nennt als gute Tage วันไชยโชค, วันสิทธิโชค, วันมหาสิทธิโชค und วันหัวเรียงหมอน, der für eine Hochzeit passt. Schlechte Tage sind วันเสีย, วันมัจจุ, วันวอดวาย und วันไหม้."
+   },
+   "src": "https://www.sanook.com/horoscope/319931/"
+  },
+  {
+   "q": {
+    "en": "Can a website show the Chinese lunar date?",
+    "th": "เว็บแสดงวันที่ปฏิทินจันทรคติจีนได้ไหม",
+    "my": "ဝက်ဘ်ဆိုက်တစ်ခုက တရုတ်လတွက်ရက်စွဲကို ပြနိုင်ပါသလား။",
+    "zh": "网站可以显示农历日期吗？",
+    "de": "Kann eine Website das chinesische Mondkalender-Datum zeigen?"
+   },
+   "a": {
+    "en": "The Hong Kong Observatory publishes a conversion table for 1901 to 2100 and the same data as open data. A program can read the open data.",
+    "th": "หอดูดาวฮ่องกงเผยแพร่ตารางเทียบวันที่ตั้งแต่ปี 1901 ถึง 2100 และเผยแพร่ข้อมูลชุดเดียวกันเป็นข้อมูลเปิด โปรแกรมอ่านข้อมูลเปิดนี้ได้",
+    "my": "Hong Kong Observatory က 1901 မှ 2100 အထိ နှိုင်းယှဉ်ဇယားကို ထုတ်ပြန်ထားပြီး ထိုအချက်အလက်ကိုပင် ပွင့်လင်းဒေတာအဖြစ်လည်း ထုတ်ပြန်သည်။ ပရိုဂရမ်က ထိုပွင့်လင်းဒေတာကို ဖတ်နိုင်သည်။",
+    "zh": "香港天文台发布 1901 年至 2100 年的对照表，同样的数据也以开放数据形式提供，程序可以读取这些开放数据。",
+    "de": "Das Hong Kong Observatory veröffentlicht eine Umrechnungstabelle für 1901 bis 2100 und dieselben Daten als offene Daten. Ein Programm kann die offenen Daten lesen."
+   },
+   "src": "https://www.hko.gov.hk/en/gts/time/conversion.htm"
+  },
+  {
+   "q": {
+    "en": "What does an I Ching calculator work from?",
+    "th": "เครื่องคำนวณอี้จิงใช้อะไรเป็นฐาน",
+    "my": "I Ching တွက်စက်သည် ဘာကို အခြေခံသလဲ။",
+    "zh": "易经计算器以什么为依据？",
+    "de": "Worauf stützt sich ein I-Ging-Rechner?"
+   },
+   "a": {
+    "en": "The Yijing text. The Stanford Encyclopedia of Philosophy says its first layer is the 8 trigrams and 64 hexagrams. Its second layer is the hexagram and line statements, attributed to King Wen and the Duke of Zhou in the 11th century BCE.",
+    "th": "ตัวบทอี้จิง สารานุกรมปรัชญาแห่งสแตนฟอร์ดระบุว่าชั้นแรกคือสัญลักษณ์สามเส้น 8 แบบและหกเส้น 64 แบบ ชั้นที่สองคือคำอธิบายแต่ละสัญลักษณ์และแต่ละเส้น ที่เล่ากันว่าเป็นของพระเจ้าโจวเหวินหวางและโจวกง (ศตวรรษที่ 11 ก่อน ค.ศ.)",
+    "my": "I Ching စာသားဖြစ်သည်။ Stanford Encyclopedia of Philosophy က ပထမအလွှာမှာ သင်္ကေတ 8 မျိုးနှင့် 64 မျိုး ဖြစ်သည်ဟု ဆိုသည်။ ဒုတိယအလွှာမှာ သင်္ကေတနှင့် မျဉ်းတစ်ကြောင်းချင်းစီ၏ ဖော်ပြချက်များ ဖြစ်ပြီး ဘီစီ 11 ရာစုက King Wen နှင့် Duke of Zhou တို့ ရေးသည်ဟု ဆိုကြသည်။",
+    "zh": "是《易经》的文本。斯坦福哲学百科全书说，它的第一层是 8 个三爻符号和 64 个六爻符号，第二层是各卦和各爻的说明，传为公元前 11 世纪的周文王和周公所作。",
+    "de": "Der Yijing-Text. Die Stanford Encyclopedia of Philosophy schreibt, seine erste Schicht seien die 8 Trigramme und 64 Hexagramme. Die zweite Schicht sind die Aussagen zu Hexagrammen und Linien, die König Wen und dem Herzog von Zhou im 11. Jahrhundert v. Chr. zugeschrieben werden."
+   },
+   "src": "https://plato.stanford.edu/archives/sum2019/entries/chinese-change/"
+  }
+ ],
+ "related": [
+  "eink-clock",
+  "bazi",
+  "reading",
+  "date-pick",
+  "widget",
+  "site"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Foundation: Yi Peng and the Lanna lunar calendar",
+    "th": "Thailand Foundation: ยี่เป็งและปฏิทินจันทรคติล้านนา",
+    "my": "Thailand Foundation: Yi Peng နှင့် လန်နာ လတွက်ပြက္ခဒိန်",
+    "zh": "Thailand Foundation：伊彭节与兰纳阴历",
+    "de": "Thailand Foundation: Yi Peng und der Lanna-Mondkalender"
+   },
+   "href": "https://thailandfoundation.or.th/518234-v2/"
+  },
+  {
+   "t": {
+    "en": "Hong Kong Observatory: Gregorian-lunar calendar conversion table",
+    "th": "หอดูดาวฮ่องกง: ตารางเทียบวันที่สากลกับปฏิทินจันทรคติ",
+    "my": "Hong Kong Observatory: အနောက်တိုင်း-လတွက် ပြက္ခဒိန် နှိုင်းယှဉ်ဇယား",
+    "zh": "香港天文台：公历与农历对照表",
+    "de": "Hong Kong Observatory: Umrechnungstabelle gregorianisch-chinesischer Mondkalender"
+   },
+   "href": "https://www.hko.gov.hk/en/gts/time/conversion.htm"
+  }
+ ],
+ "glyphs": [
+  "calendar",
+  "moon",
+  "laptop"
+ ]
+}

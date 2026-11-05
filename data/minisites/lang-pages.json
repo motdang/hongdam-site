@@ -1,0 +1,292 @@
+{
+ "id": "lang-pages",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People have a Thai or English page read by a second pair of eyes for spelling, grammar and word order before it goes up.",
+  "th": "คนให้อีกคนอ่านหน้าเว็บภาษาไทยหรืออังกฤษ เพื่อดูการสะกด ไวยากรณ์ และลำดับคำ ก่อนเผยแพร่",
+  "my": "လူတွေက ထိုင်း သို့မဟုတ် အင်္ဂလိပ်စာမျက်နှာကို မတင်မီ စာလုံးပေါင်း၊ သဒ္ဒါနှင့် စကားလုံးအစီအစဉ်ကို နောက်တစ်ယောက်က ဖတ်စစ်စေကြသည်။",
+  "zh": "人们在网页发布前，请另一个人通读泰语或英语页面，查拼写、语法和语序。",
+  "de": "Man lässt eine thailändische oder englische Seite vor der Veröffentlichung von einer zweiten Person auf Rechtschreibung, Grammatik und Wortstellung lesen."
+ },
+ "n": {
+  "de": "Website-Übersetzung geprüft"
+ },
+ "l": {
+  "de": "Eine thailändische oder englische Seite gelesen und korrigiert."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the page text, in Thai or English, up to 400 words.",
+    "th": "คุณส่งข้อความของหน้าเว็บ ภาษาไทยหรืออังกฤษ ไม่เกิน 400 คำ",
+    "my": "ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် စာမျက်နှာစာသားကို ပို့သည်၊ စကားလုံး 400 အထိ။",
+    "zh": "您发来页面文字，泰语或英语，最多 400 词。",
+    "de": "Sie schicken den Text der Seite auf Thai oder Englisch, bis 400 Wörter."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "We read the page and write the fixes into the text.",
+    "th": "เราอ่านหน้าเว็บและเขียนคำแก้ลงในข้อความ",
+    "my": "စာမျက်နှာကို ဖတ်ပြီး ပြင်ဆင်ချက်များကို စာသားထဲတွင် ရေးထည့်ပေးသည်။",
+    "zh": "我们通读页面，把修改写进文字里。",
+    "de": "Wir lesen die Seite und schreiben die Korrekturen in den Text."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the page arrives",
+    "th": "หลังได้รับหน้าเว็บ",
+    "my": "စာမျက်နှာရောက်ပြီးနောက်",
+    "zh": "收到页面后",
+    "de": "Nach Eingang der Seite"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The page comes back to you with the fixes in it.",
+    "th": "ส่งหน้าเว็บที่มีคำแก้กลับให้คุณ",
+    "my": "ပြင်ဆင်ချက်များပါသော စာမျက်နှာကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "带有修改的页面回到您手中。",
+    "de": "Die Seite geht mit den Korrekturen an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံးအဆင့်",
+    "zh": "最后一步",
+    "de": "Am Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The W3C advises a language attribute on the html tag to declare the default language of the text in a page; other elements inherit it, and mixed-language content gets its own attribute on the element around it.",
+    "th": "W3C ระบุให้ใส่แอตทริบิวต์ภาษาที่แท็ก html เพื่อประกาศภาษาหลักของข้อความในหน้า องค์ประกอบอื่นสืบทอดค่านี้ และเนื้อหาที่ผสมหลายภาษาให้ใส่แอตทริบิวต์ที่องค์ประกอบที่ครอบเนื้อหานั้น",
+    "my": "W3C က စာမျက်နှာရှိ စာသား၏ မူလဘာသာစကားကို ကြေညာရန် html tag တွင် ဘာသာစကား attribute ထည့်ရန် ဆိုသည်၊ အခြား element များက ၎င်းကို အမွေဆက်ခံပြီး ဘာသာစကားစုံပါသော အကြောင်းအရာတွင် ၎င်းကို ဝန်းရံထားသော element ပေါ်၌ သီးခြား attribute ထည့်သည်။",
+    "zh": "W3C 建议在 html 标签上设置语言属性，声明页面文字的默认语言；其他元素继承该值，混合语言的内容则在其外层元素上另设属性。",
+    "de": "Das W3C empfiehlt, am html-Tag ein Sprachattribut zu setzen, das die Standardsprache des Seitentextes angibt; andere Elemente erben es, und gemischtsprachige Inhalte erhalten ein eigenes Attribut am umgebenden Element."
+   },
+   "src": "https://www.w3.org/International/questions/qa-html-language-declarations"
+  },
+  {
+   "t": {
+    "en": "Google says it does not use hreflang or the HTML lang attribute to detect the language of a page; its algorithms do.",
+    "th": "Google ระบุว่าไม่ใช้ hreflang หรือแอตทริบิวต์ lang ของ HTML เพื่อตรวจจับภาษาของหน้า แต่ใช้อัลกอริทึมของตนเอง",
+    "my": "Google က စာမျက်နှာ၏ ဘာသာစကားကို သိရန် hreflang သို့မဟုတ် HTML lang attribute ကို မသုံးဘဲ ၎င်း၏ အယ်လဂိုရီသမ်များကို သုံးသည်ဟု ဆိုသည်။",
+    "zh": "Google 称，它不靠 hreflang 或 HTML 的 lang 属性判断页面语言，而是由自己的算法判断。",
+    "de": "Google schreibt, es erkenne die Sprache einer Seite nicht an hreflang oder am HTML-Attribut lang, sondern mit eigenen Algorithmen."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "t": {
+    "en": "An English proofreader on Fastwork lists what a check covers: grammatical structure, word order, punctuation, spelling, formatting, comments and suggestions, and paragraph flow.",
+    "th": "ผู้ตรวจภาษาอังกฤษบน Fastwork รายหนึ่งระบุขอบเขตการตรวจ ได้แก่ โครงสร้างไวยากรณ์ ลำดับคำ เครื่องหมายวรรคตอน การสะกด การจัดรูปแบบ ความเห็นและข้อเสนอแนะ และการไหลของย่อหน้า",
+    "my": "Fastwork ရှိ အင်္ဂလိပ်စာစစ်သူတစ်ဦးက စစ်ဆေးမှုတွင် ပါဝင်သည်များကို ဖော်ပြထားသည်၊ သဒ္ဒါဖွဲ့စည်းပုံ၊ စကားလုံးအစီအစဉ်၊ ပုဒ်ဖြတ်ပုဒ်ရပ်၊ စာလုံးပေါင်း၊ ပုံစံချခြင်း၊ မှတ်ချက်နှင့် အကြံပြုချက်များ၊ စာပိုဒ်စီးဆင်းမှု။",
+    "zh": "Fastwork 上一位英语校对者列出校对范围：语法结构、语序、标点、拼写、格式、批注与建议、段落衔接。",
+    "de": "Ein englischsprachiger Korrektor auf Fastwork nennt den Umfang einer Prüfung: grammatische Struktur, Wortstellung, Zeichensetzung, Rechtschreibung, Formatierung, Anmerkungen und Vorschläge sowie Absatzfluss."
+   },
+   "src": "https://fastwork.co/user/peteredit/proofreading-77667559"
+  },
+  {
+   "t": {
+    "en": "A Thai proofreader on Fastwork limits the check to misspelt words, spacing and marks, and takes originals in Thai only.",
+    "th": "ผู้พิสูจน์อักษรภาษาไทยบน Fastwork รายหนึ่งตรวจเฉพาะคำสะกดผิด การเว้นวรรค และเครื่องหมาย และรับเฉพาะต้นฉบับภาษาไทย",
+    "my": "Fastwork ရှိ ထိုင်းစာစစ်သူတစ်ဦးက စစ်ဆေးမှုကို စာလုံးပေါင်းမှားသောစကားလုံး၊ နေရာခြားမှုနှင့် အမှတ်အသားများသာ ကန့်သတ်ပြီး ထိုင်းဘာသာမူရင်းကိုသာ လက်ခံသည်။",
+    "zh": "Fastwork 上一位泰语校对者只检查错别字、空格和符号，只接收泰语原稿。",
+    "de": "Ein thailändischer Korrektor auf Fastwork beschränkt die Prüfung auf falsch geschriebene Wörter, Abstände und Zeichen und nimmt nur Originale auf Thai an."
+   },
+   "src": "https://fastwork.co/user/fangyouxun/proofreading-97648702"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai proofreading, a Fastwork seller (spelling, spacing, marks)",
+    "th": "พิสูจน์อักษรภาษาไทย ผู้ขายบน Fastwork (การสะกด การเว้นวรรค เครื่องหมาย)",
+    "my": "ထိုင်းစာစစ်ဆေးခြင်း၊ Fastwork ရောင်းသူတစ်ဦး (စာလုံးပေါင်း၊ နေရာခြားမှု၊ အမှတ်အသား)",
+    "zh": "泰语校对，Fastwork 卖家（拼写、空格、符号）",
+    "de": "Thai-Korrektur, ein Anbieter auf Fastwork (Rechtschreibung, Abstände, Zeichen)"
+   },
+   "p": {
+    "en": "฿10 an A4 page, ฿5 an A5 page",
+    "th": "หน้า A4 ละ ฿10 หน้า A5 ละ ฿5",
+    "my": "A4 တစ်မျက်နှာ ฿10၊ A5 တစ်မျက်နှာ ฿5",
+    "zh": "A4 每页 ฿10，A5 每页 ฿5",
+    "de": "฿10 pro A4-Seite, ฿5 pro A5-Seite"
+   },
+   "src": "https://fastwork.co/user/fangyouxun/proofreading-97648702"
+  },
+  {
+   "t": {
+    "en": "English proofreading, a Fastwork seller",
+    "th": "ตรวจภาษาอังกฤษ ผู้ขายบน Fastwork",
+    "my": "အင်္ဂလိပ်စာစစ်ဆေးခြင်း၊ Fastwork ရောင်းသူတစ်ဦး",
+    "zh": "英语校对，Fastwork 卖家",
+    "de": "Englisch-Korrektur, ein Anbieter auf Fastwork"
+   },
+   "p": {
+    "en": "Packages from ฿500 (manuscript) and ฿1,000 (research paper), priced by word count",
+    "th": "แพ็กเกจเริ่มต้น ฿500 (ต้นฉบับ) และ ฿1,000 (งานวิจัย) คิดตามจำนวนคำ",
+    "my": "ပက်ကေ့ဂျ် ฿500 (စာမူ) နှင့် ฿1,000 (သုတေသနစာတမ်း) မှ စ၍ စကားလုံးအရေအတွက်ဖြင့် တွက်သည်",
+    "zh": "套餐 ฿500（稿件）和 ฿1,000（研究论文）起，按字数计价",
+    "de": "Pakete ab ฿500 (Manuskript) und ฿1,000 (Forschungsarbeit), nach Wortzahl berechnet"
+   },
+   "src": "https://fastwork.co/user/peteredit/proofreading-77667559"
+  },
+  {
+   "t": {
+    "en": "Standard translation with a second native speaker's proofreading, at a Bangkok agency",
+    "th": "แปลทั่วไปพร้อมการพิสูจน์อักษรโดยเจ้าของภาษาคนที่สอง ที่สำนักงานแปลในกรุงเทพฯ",
+    "my": "ဘန်ကောက်ရှိ ဘာသာပြန်ကုမ္ပဏီတွင် ဒုတိယ မူရင်းစကားပြောသူ၏ စာစစ်ပါသော ပုံမှန်ဘာသာပြန်",
+    "zh": "曼谷翻译公司的标准翻译，含第二位母语者校对",
+    "de": "Standardübersetzung mit Korrektur durch eine zweite Muttersprachlerin, bei einer Agentur in Bangkok"
+   },
+   "p": {
+    "en": "From ฿1.5 a word",
+    "th": "เริ่มต้นคำละ ฿1.5",
+    "my": "စကားလုံးတစ်လုံး ฿1.5 မှ စသည်",
+    "zh": "每词 ฿1.5 起",
+    "de": "ab ฿1.5 pro Wort"
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does proofreading cost in Thailand?",
+    "th": "พิสูจน์อักษรในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် စာစစ်ခ ဘယ်လောက်လဲ။",
+    "zh": "在泰国校对要多少钱？",
+    "de": "Was kostet ein Korrektorat in Thailand?"
+   },
+   "a": {
+    "en": "A Fastwork seller proofs Thai text at ฿10 for an A4 page in font size 16 and ฿5 for an A5 page. The check covers misspelt words, spacing and marks.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งพิสูจน์อักษรภาษาไทยหน้า A4 ฟอนต์ 16 ละ ฿10 และหน้า A5 ละ ฿5 โดยตรวจคำสะกดผิด การเว้นวรรค และเครื่องหมาย",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက ထိုင်းစာကို A4 စာမျက်နှာ (ဖောင့် 16) တစ်မျက်နှာ ฿10 နှင့် A5 တစ်မျက်နှာ ฿5 ဖြင့် စစ်ဆေးပေးသည်။ စာလုံးပေါင်းမှားသောစကားလုံး၊ နေရာခြားမှုနှင့် အမှတ်အသားများကို စစ်သည်။",
+    "zh": "Fastwork 上一位卖家校对泰语文字，16 号字的 A4 页每页 ฿10，A5 页每页 ฿5，检查错别字、空格和符号。",
+    "de": "Ein Anbieter auf Fastwork korrigiert Thai-Text für ฿10 pro A4-Seite in Schriftgrösse 16 und ฿5 pro A5-Seite. Geprüft werden falsch geschriebene Wörter, Abstände und Zeichen."
+   },
+   "src": "https://fastwork.co/user/fangyouxun/proofreading-97648702"
+  },
+  {
+   "q": {
+    "en": "How do I mark a page as Thai or English?",
+    "th": "ทำอย่างไรให้หน้าเว็บระบุว่าเป็นภาษาไทยหรืออังกฤษ",
+    "my": "စာမျက်နှာကို ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဟု ဘယ်လိုအမှတ်အသားပြုရမလဲ။",
+    "zh": "怎样标明页面是泰语还是英语？",
+    "de": "Wie kennzeichne ich eine Seite als Thai oder Englisch?"
+   },
+   "a": {
+    "en": "The W3C says to put a language attribute on the html tag, as in <html lang=\"en\"> for English. Other elements inherit it, and content in another language gets its own attribute. Subtags come from the IANA Language Subtag Registry.",
+    "th": "W3C ระบุให้ใส่แอตทริบิวต์ภาษาที่แท็ก html เช่น <html lang=\"en\"> สำหรับภาษาอังกฤษ องค์ประกอบอื่นสืบทอดค่านี้ และเนื้อหาในอีกภาษาหนึ่งให้ใส่แอตทริบิวต์ของตนเอง รหัสย่อยภาษามาจาก IANA Language Subtag Registry",
+    "my": "W3C က html tag တွင် ဘာသာစကား attribute ထည့်ရန် ဆိုသည်၊ အင်္ဂလိပ်အတွက် <html lang=\"en\"> ကဲ့သို့။ အခြား element များက ၎င်းကို အမွေဆက်ခံပြီး အခြားဘာသာစကားဖြင့်ရေးသော အကြောင်းအရာတွင် ကိုယ်ပိုင် attribute ထည့်သည်။ ဘာသာစကား subtag များသည် IANA Language Subtag Registry မှ လာသည်။",
+    "zh": "W3C 说，在 html 标签上设置语言属性，如英语写 <html lang=\"en\">。其他元素继承该值，另一种语言的内容另设属性。语言子标签取自 IANA 语言子标签注册表。",
+    "de": "Das W3C schreibt, am html-Tag ein Sprachattribut zu setzen, etwa <html lang=\"en\"> für Englisch. Andere Elemente erben es, und Inhalte in einer anderen Sprache erhalten ein eigenes Attribut. Die Subtags stammen aus dem IANA Language Subtag Registry."
+   },
+   "src": "https://www.w3.org/International/questions/qa-html-language-declarations"
+  },
+  {
+   "q": {
+    "en": "Does Google read the lang attribute of a page?",
+    "th": "Google อ่านแอตทริบิวต์ lang ของหน้าเว็บไหม",
+    "my": "Google က စာမျက်နှာ၏ lang attribute ကို ဖတ်ပါသလား။",
+    "zh": "Google 会读取页面的 lang 属性吗？",
+    "de": "Liest Google das lang-Attribut einer Seite?"
+   },
+   "a": {
+    "en": "Google says it does not use hreflang or the HTML lang attribute to detect the language of a page. It uses algorithms for that, and it uses hreflang to match a page to its localized versions.",
+    "th": "Google ระบุว่าไม่ใช้ hreflang หรือแอตทริบิวต์ lang ของ HTML เพื่อตรวจจับภาษาของหน้า แต่ใช้อัลกอริทึม ส่วน hreflang ใช้จับคู่หน้ากับเวอร์ชันภาษาอื่นของหน้านั้น",
+    "my": "စာမျက်နှာ၏ ဘာသာစကားကို သိရန် Google သည် hreflang သို့မဟုတ် HTML lang attribute ကို မသုံးဘဲ အယ်လဂိုရီသမ်ကို သုံးသည်ဟု ဆိုသည်။ hreflang ကိုမူ စာမျက်နှာကို ၎င်း၏ ဒေသဆိုင်ရာ ဗားရှင်းများနှင့် တွဲရန် သုံးသည်။",
+    "zh": "Google 称，它不靠 hreflang 或 HTML 的 lang 属性判断页面语言，而是用算法；hreflang 用来把页面和它的本地化版本对应起来。",
+    "de": "Google schreibt, es erkenne die Sprache einer Seite nicht an hreflang oder am HTML-Attribut lang, sondern mit Algorithmen. hreflang dient dazu, eine Seite ihren lokalisierten Fassungen zuzuordnen."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "q": {
+    "en": "Does a proofread rewrite my text?",
+    "th": "การพิสูจน์อักษรเขียนข้อความของฉันใหม่ไหม",
+    "my": "စာစစ်ခြင်းက ကျွန်ုပ်၏ စာသားကို ပြန်ရေးပေးပါသလား။",
+    "zh": "校对会重写我的文字吗？",
+    "de": "Schreibt ein Korrektorat meinen Text um?"
+   },
+   "a": {
+    "en": "An English proofreader on Fastwork states that it gives comments and suggestions and does not offer paraphrasing or rewriting.",
+    "th": "ผู้ตรวจภาษาอังกฤษบน Fastwork รายหนึ่งระบุว่าให้ความเห็นและข้อเสนอแนะ และไม่รับเรียบเรียงใหม่หรือเขียนใหม่",
+    "my": "Fastwork ရှိ အင်္ဂလိပ်စာစစ်သူတစ်ဦးက မှတ်ချက်နှင့် အကြံပြုချက်များ ပေးပြီး စာသားကို ပြန်ရေးခြင်း၊ ပြောင်းရေးခြင်း မလုပ်ပေးဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位英语校对者写明，提供批注与建议，不提供改写或重写。",
+    "de": "Ein englischsprachiger Korrektor auf Fastwork gibt an, Anmerkungen und Vorschläge zu liefern und nicht umzuschreiben oder neu zu formulieren."
+   },
+   "src": "https://fastwork.co/user/peteredit/proofreading-77667559"
+  }
+ ],
+ "related": [
+  "german",
+  "translate",
+  "lang-shan",
+  "copy",
+  "site",
+  "web-found"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "W3C: declaring the language of a page",
+    "th": "W3C: การประกาศภาษาของหน้าเว็บ",
+    "my": "W3C: စာမျက်နှာ၏ ဘာသာစကားကို ကြေညာခြင်း",
+    "zh": "W3C：声明页面语言",
+    "de": "W3C: Sprache einer Seite deklarieren"
+   },
+   "href": "https://www.w3.org/International/questions/qa-html-language-declarations"
+  },
+  {
+   "t": {
+    "en": "Google Search Central: localized versions of a page",
+    "th": "Google Search Central: หน้าเว็บหลายเวอร์ชันภาษา",
+    "my": "Google Search Central: စာမျက်နှာ၏ ဒေသဆိုင်ရာ ဗားရှင်းများ",
+    "zh": "Google Search Central：页面的本地化版本",
+    "de": "Google Search Central: lokalisierte Versionen einer Seite"
+   },
+   "href": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  }
+ ],
+ "glyphs": [
+  "page",
+  "pencil",
+  "eye"
+ ]
+}

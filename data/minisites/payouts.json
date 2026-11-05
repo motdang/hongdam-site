@@ -1,0 +1,313 @@
+{
+ "id": "payouts",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People who pay a team by the job want one list on the 1st of what each person is owed, and a way to pay each one.",
+  "th": "คนที่จ่ายเงินทีมตามงานอยากได้รายการเดียวในวันที่ 1 ว่าแต่ละคนได้เท่าไร และมีวิธีจ่ายให้แต่ละคน",
+  "my": "အဖွဲ့ကို အလုပ်အလိုက် ပေးချေသူများက လဆန်း 1 ရက်နေ့တွင် တစ်ဦးချင်း ပေးရမည့်ငွေကို စာရင်းတစ်ခုတည်းဖြင့် သိလိုပြီး တစ်ဦးချင်းစီကို ပေးချေရန်နည်းလမ်းလည်း လိုသည်။",
+  "zh": "按活计付钱给团队的人，希望每月 1 号拿到一张清单，写明每个人该得多少，并有办法付给每个人。",
+  "de": "Wer ein Team nach Aufträgen bezahlt, möchte am 1. eine Liste, was jede Person bekommt, und einen Weg, jede einzelne zu bezahlen."
+ },
+ "glyphs": [
+  "coin",
+  "calendar",
+  "scan"
+ ],
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "On the 1st we work out what each person on your team is owed from the month's jobs.",
+    "th": "วันที่ 1 คำนวณยอดที่แต่ละคนในทีมได้จากงานของเดือน",
+    "my": "လဆန်း 1 ရက်နေ့တွင် အဖွဲ့ဝင်တစ်ဦးချင်းစီ လအတွင်းလုပ်ငန်းများမှ ရထိုက်သည့်ငွေကို တွက်ချက်ပေးသည်။",
+    "zh": "每月 1 号算出团队里每个人按当月活计该得的金额。",
+    "de": "Am 1. rechnen wir aus, was jede Person in Ihrem Team für die Aufträge des Monats bekommt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the 1st",
+    "th": "วันที่ 1",
+    "my": "လဆန်း 1 ရက်",
+    "zh": "每月 1 号",
+    "de": "Am 1."
+   }
+  },
+  {
+   "db": "scan",
+   "t": {
+    "en": "We make a PromptPay QR code for each payment.",
+    "th": "ทำคิวอาร์พร้อมเพย์สำหรับแต่ละรายการจ่าย",
+    "my": "ငွေပေးချေမှုတစ်ခုချင်းစီအတွက် PromptPay QR ကုဒ် ပြုလုပ်ပေးသည်။",
+    "zh": "为每笔付款生成一个 PromptPay 收款码。",
+    "de": "Wir erstellen für jede Zahlung einen PromptPay-QR-Code."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the 1st",
+    "th": "วันที่ 1",
+    "my": "လဆန်း 1 ရက်",
+    "zh": "每月 1 号",
+    "de": "Am 1."
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "You pay each person by scanning their code in your banking app.",
+    "th": "คุณจ่ายให้แต่ละคนโดยสแกนคิวอาร์ในแอปธนาคารของคุณ",
+    "my": "သင်က သင့်ဘဏ်အက်ပ်ဖြင့် QR ကုဒ်ကို စကင်ဖတ်ကာ တစ်ဦးချင်းစီကို ပေးချေသည်။",
+    "zh": "您在手机银行里扫码，逐个付款。",
+    "de": "Sie bezahlen jede Person, indem Sie ihren Code in Ihrer Banking-App scannen."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "After the list",
+    "th": "หลังได้รายการ",
+    "my": "စာရင်းရပြီးနောက်",
+    "zh": "拿到清单后",
+    "de": "Nach der Liste"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In the Labor Protection Act (Council of State translation, 2008), wages calculated by the month, day, hour or piece are paid at least once a month, unless otherwise agreed for the employee's benefit. When an employer ends the employment, the wages due are paid within three days.",
+    "th": "ในพระราชบัญญัติคุ้มครองแรงงาน (ฉบับแปลของสำนักงานคณะกรรมการกฤษฎีกา ปี 2551) ค่าจ้างที่คิดเป็นรายเดือน รายวัน รายชั่วโมง หรือตามผลงาน จ่ายอย่างน้อยเดือนละหนึ่งครั้ง เว้นแต่ตกลงกันเป็นอย่างอื่นเพื่อประโยชน์ของลูกจ้าง เมื่อนายจ้างเลิกจ้าง ค่าจ้างที่ถึงกำหนดจ่ายภายในสามวัน",
+    "my": "အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေ (Council of State ၏ 2008 ဘာသာပြန်) တွင် လစဉ်၊ နေ့စဉ်၊ နာရီအလိုက် သို့မဟုတ် လုပ်ငန်းခွဲအလိုက် တွက်ချက်သော လုပ်ခကို အနည်းဆုံး တစ်လတစ်ကြိမ် ပေးရပြီး ဝန်ထမ်းအကျိုးအတွက် အခြားနည်းဖြင့် သဘောတူထားလျှင် ချွင်းချက်ဖြစ်သည်။ အလုပ်ရှင်က အလုပ်ထုတ်လိုက်လျှင် ရထိုက်သောလုပ်ခကို သုံးရက်အတွင်း ပေးသည်။",
+    "zh": "《劳动保护法》（国务委员会 Council of State 2008 年英译本）规定，按月、日、小时或计件计算的工资至少每月支付一次，但为员工利益另有约定的除外。雇主终止雇佣时，应得工资在三天内付清。",
+    "de": "Im Labor Protection Act (englische Übersetzung des Council of State, 2008) wird Lohn, der nach Monat, Tag, Stunde oder Stück berechnet wird, mindestens einmal im Monat gezahlt, sofern nichts anderes zugunsten des Arbeitnehmers vereinbart ist. Beendet der Arbeitgeber das Arbeitsverhältnis, wird der fällige Lohn innerhalb von drei Tagen gezahlt."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "The same Act has wages paid in Thai currency and at the employee's workplace, unless the employee consents to payment by bill or in foreign currency, or at another place or by other means.",
+    "th": "พระราชบัญญัติฉบับเดียวกันกำหนดให้จ่ายค่าจ้างเป็นเงินไทยและที่สถานที่ทำงานของลูกจ้าง เว้นแต่ลูกจ้างยินยอมให้จ่ายเป็นตั๋วหรือเงินตราต่างประเทศ หรือจ่ายที่อื่นหรือโดยวิธีอื่น",
+    "my": "ထိုအက်ဥပဒေတွင်ပင် လုပ်ခကို ထိုင်းငွေကြေးဖြင့် ဝန်ထမ်း၏ အလုပ်ခွင်၌ ပေးရပြီး ဝန်ထမ်းက ငွေတောင်းခံလွှာ သို့မဟုတ် နိုင်ငံခြားငွေကြေးဖြင့် ပေးချေခြင်း၊ သို့မဟုတ် အခြားနေရာ သို့မဟုတ် အခြားနည်းဖြင့် ပေးချေခြင်းကို သဘောတူလျှင် ချွင်းချက်ဖြစ်သည်။",
+    "zh": "该法还规定，工资以泰铢在员工的工作地点支付，但员工同意以票据或外币支付、或在其他地点或以其他方式支付的除外。",
+    "de": "Dasselbe Gesetz sieht vor, dass Lohn in thailändischer Währung und am Arbeitsplatz des Arbeitnehmers gezahlt wird, ausser der Arbeitnehmer stimmt einer Zahlung per Wechsel oder in Fremdwährung, an einem anderen Ort oder auf andere Weise zu."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "A PromptPay transfer up to ฿5,000 is free. Above that it costs under ฿2 up to ฿30,000, under ฿5 up to ฿100,000 and under ฿10 beyond, and the Bank of Thailand notes that most banks have waived fees for digital payments since 2018.",
+    "th": "โอนพร้อมเพย์ไม่เกิน ฿5,000 ไม่มีค่าธรรมเนียม เกินจากนั้นถึง ฿30,000 ต่ำกว่า ฿2 ถึง ฿100,000 ต่ำกว่า ฿5 และเกินกว่านั้นต่ำกว่า ฿10 ธนาคารแห่งประเทศไทยระบุว่าตั้งแต่ปี 2561 ธนาคารส่วนใหญ่ยกเว้นค่าธรรมเนียมการชำระเงินดิจิทัล",
+    "my": "PromptPay လွှဲငွေ ฿5,000 အထိ အခမဲ့ဖြစ်သည်။ ထို့ထက်ကျော်လျှင် ฿30,000 အထိ ฿2 အောက်၊ ฿100,000 အထိ ฿5 အောက်၊ ထို့နောက် ฿10 အောက် ကုန်ကျပြီး 2018 ခုနှစ်မှစ၍ ဘဏ်အများစုက ဒစ်ဂျစ်တယ်ငွေပေးချေမှုကြေးကို ဖယ်ထားကြောင်း ထိုင်းနိုင်ငံ ဗဟိုဘဏ်က ဖော်ပြသည်။",
+    "zh": "PromptPay 转账 ฿5,000 以内免费；超过后至 ฿30,000 低于 ฿2，至 ฿100,000 低于 ฿5，再往上低于 ฿10。泰国央行注明，自 2018 年起多数银行已免收数字支付费用。",
+    "de": "Eine PromptPay-Überweisung bis ฿5,000 ist kostenlos. Darüber kostet sie bis ฿30,000 unter ฿2, bis ฿100,000 unter ฿5 und darüber unter ฿10; die Bank of Thailand vermerkt, dass die meisten Banken seit 2018 auf Gebühren für digitale Zahlungen verzichten."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "t": {
+    "en": "Under the Social Security Act (Council of State translation), an employer remits its own and its employees' contributions within the fifteenth day of the month after the deduction. A late remittance carries a surcharge of 2% a month.",
+    "th": "ตามพระราชบัญญัติประกันสังคม (ฉบับแปลของสำนักงานคณะกรรมการกฤษฎีกา) นายจ้างนำส่งเงินสมทบส่วนของตนและของลูกจ้างภายในวันที่ 15 ของเดือนถัดจากเดือนที่หัก การนำส่งล่าช้ามีเงินเพิ่มร้อยละ 2 ต่อเดือน",
+    "my": "လူမှုဖူလုံရေးအက်ဥပဒေ (Council of State ၏ ဘာသာပြန်) အရ အလုပ်ရှင်သည် မိမိအပိုင်းနှင့် ဝန်ထမ်းအပိုင်း ကြေးငွေများကို နှုတ်ယူသည့်လ၏ နောက်လ 15 ရက်နေ့အတွင်း ပေးသွင်းသည်။ နောက်ကျပေးသွင်းလျှင် တစ်လလျှင် 2% အပိုကြေး ရှိသည်။",
+    "zh": "依《社会保障法》（国务委员会 Council of State 英译本），雇主在扣款当月的次月 15 日之内，缴纳自己和员工两部分的供款。逾期缴纳，每月加收 2% 的附加费。",
+    "de": "Nach dem Social Security Act (englische Übersetzung des Council of State) führt der Arbeitgeber seine eigenen und die Beiträge seiner Angestellten bis zum 15. des Monats nach dem Abzug ab. Eine verspätete Abführung kostet einen Zuschlag von 2 % im Monat."
+   },
+   "src": "https://www.sso.go.th/wpr/assets/upload/files_storage/sso_th/6aece18d294cfea419d4b4ad946bc368.pdf"
+  },
+  {
+   "t": {
+    "en": "From 1 January 2026, social security takes 5% each from employer and employee on wages up to ฿17,500.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 ประกันสังคมหักฝ่ายละ 5% จากค่าจ้างไม่เกิน ฿17,500",
+    "my": "2026 ဇန်နဝါရီ 1 မှစ၍ လူမှုဖူလုံရေးသည် ฿17,500 အထိ လုပ်ခမှ အလုပ်ရှင်နှင့် ဝန်ထမ်းထံ 5% စီ ယူသည်။",
+    "zh": "自 2026 年 1 月 1 日起，社保按工资（上限 ฿17,500）雇主和雇员各扣 5%。",
+    "de": "Ab 1. Januar 2026 erhebt die Sozialversicherung je 5 % von Arbeitgeber und Arbeitnehmer auf Löhne bis ฿17,500."
+   },
+   "src": "https://austchamthailand.com/resources/news/hlb-thailand-social-security-contribution-changes-2026"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork accountant's payroll service with payslips, social security and withholding tax",
+    "th": "บริการเงินเดือนของนักบัญชีบน Fastwork พร้อมสลิป ประกันสังคม และภาษีหัก ณ ที่จ่าย",
+    "my": "Fastwork စာရင်းကိုင်တစ်ဦး၏ လစာဝန်ဆောင်မှု - လစာစလစ်၊ လူမှုဖူလုံရေးနှင့် ဖြတ်တောက်အခွန်ပါ",
+    "zh": "Fastwork 上会计的薪资服务，含工资单、社保和预扣税",
+    "de": "Lohnabrechnungsdienst eines Buchhalters auf Fastwork mit Lohnabrechnungen, Sozialversicherung und Quellensteuer"
+   },
+   "p": {
+    "en": "฿1,500–2,000 a month for up to 5 employees, ฿2,500–3,500 for up to 10",
+    "th": "฿1,500–2,000 ต่อเดือน พนักงานไม่เกิน 5 คน ฿2,500–3,500 ไม่เกิน 10 คน",
+    "my": "တစ်လလျှင် ဝန်ထမ်း 5 ဦးအထိ ฿1,500–2,000၊ 10 ဦးအထိ ฿2,500–3,500",
+    "zh": "每月：最多 5 名员工 ฿1,500–2,000，最多 10 名 ฿2,500–3,500",
+    "de": "฿1,500–2,000 pro Monat für bis zu 5 Mitarbeitende, ฿2,500–3,500 für bis zu 10"
+   },
+   "src": "https://fastwork.co/user/thanawonp/accounting-and-finance-97479026"
+  },
+  {
+   "t": {
+    "en": "A Fastwork HR consultant's monthly payroll: payslips, an Excel pay file, social security and PND 1 filing",
+    "th": "เงินเดือนรายเดือนจากที่ปรึกษา HR บน Fastwork: สลิปเงินเดือน ไฟล์ Excel คำนวณเงินเดือน ยื่นประกันสังคมและ ภ.ง.ด.1",
+    "my": "Fastwork HR အကြံပေးတစ်ဦး၏ လစဉ်လစာဝန်ဆောင်မှု - လစာစလစ်၊ Excel လစာဖိုင်၊ လူမှုဖူလုံရေးနှင့် PND 1 တင်သွင်းခြင်း",
+    "zh": "Fastwork 上 HR 顾问的月度薪资服务：工资单、Excel 算薪文件、社保和 PND 1 申报",
+    "de": "Monatliche Lohnabrechnung einer HR-Beraterin auf Fastwork: Lohnabrechnungen, Excel-Datei, Sozialversicherung und PND-1-Meldung"
+   },
+   "p": {
+    "en": "฿1,000 a month",
+    "th": "฿1,000 ต่อเดือน",
+    "my": "တစ်လလျှင် ฿1,000",
+    "zh": "每月 ฿1,000",
+    "de": "฿1,000 pro Monat"
+   },
+   "src": "https://fastwork.co/user/sa2ov3wu/payroll-outsourcing-17075301"
+  },
+  {
+   "t": {
+    "en": "A PromptPay transfer",
+    "th": "โอนพร้อมเพย์",
+    "my": "PromptPay လွှဲငွေ",
+    "zh": "PromptPay 转账",
+    "de": "Eine PromptPay-Überweisung"
+   },
+   "p": {
+    "en": "Free up to ฿5,000, under ฿2 up to ฿30,000",
+    "th": "ฟรีไม่เกิน ฿5,000 ต่ำกว่า ฿2 ถึง ฿30,000",
+    "my": "฿5,000 အထိ အခမဲ့၊ ฿30,000 အထိ ฿2 အောက်",
+    "zh": "฿5,000 以内免费，至 ฿30,000 低于 ฿2",
+    "de": "Gratis bis ฿5,000, unter ฿2 bis ฿30,000"
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How often must staff be paid in Thailand?",
+    "th": "ต้องจ่ายค่าจ้างพนักงานในไทยบ่อยแค่ไหน",
+    "my": "ထိုင်းနိုင်ငံတွင် ဝန်ထမ်းများကို ဘယ်နှစ်ကြိမ် ပေးရသနည်း",
+    "zh": "在泰国，员工工资多久发一次？",
+    "de": "Wie oft müssen Mitarbeitende in Thailand bezahlt werden?"
+   },
+   "a": {
+    "en": "At least once a month for wages calculated by the month, day, hour or piece, unless otherwise agreed for the employee's benefit. This is Section 70 of the Labor Protection Act.",
+    "th": "อย่างน้อยเดือนละหนึ่งครั้งสำหรับค่าจ้างที่คิดเป็นรายเดือน รายวัน รายชั่วโมง หรือตามผลงาน เว้นแต่ตกลงกันเป็นอย่างอื่นเพื่อประโยชน์ของลูกจ้าง นี่คือมาตรา 70 ของพระราชบัญญัติคุ้มครองแรงงาน",
+    "my": "လစဉ်၊ နေ့စဉ်၊ နာရီအလိုက် သို့မဟုတ် လုပ်ငန်းခွဲအလိုက် တွက်ချက်သော လုပ်ခကို အနည်းဆုံး တစ်လတစ်ကြိမ် ဖြစ်ပြီး ဝန်ထမ်းအကျိုးအတွက် အခြားနည်းဖြင့် သဘောတူထားလျှင် ချွင်းချက်ဖြစ်သည်။ ၎င်းမှာ အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေ ပုဒ်မ 70 ဖြစ်သည်။",
+    "zh": "按月、日、小时或计件计算的工资，至少每月一次，但为员工利益另有约定的除外。这是《劳动保护法》第 70 条。",
+    "de": "Mindestens einmal im Monat für Lohn, der nach Monat, Tag, Stunde oder Stück berechnet wird, sofern nichts anderes zugunsten des Arbeitnehmers vereinbart ist. So steht es in Section 70 des Labor Protection Act."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "q": {
+    "en": "Can staff be paid in cash or by bank transfer?",
+    "th": "จ่ายค่าจ้างเป็นเงินสดหรือโอนผ่านธนาคารได้ไหม",
+    "my": "ဝန်ထမ်းများကို ငွေသားဖြင့်ဖြစ်စေ ဘဏ်လွှဲဖြင့်ဖြစ်စေ ပေးနိုင်သလား",
+    "zh": "工资可以发现金或银行转账吗？",
+    "de": "Dürfen Mitarbeitende bar oder per Banküberweisung bezahlt werden?"
+   },
+   "a": {
+    "en": "The Labor Protection Act has wages paid in Thai currency at the employee's workplace. The employee's consent opens other places and other means, and payment by bill or in foreign currency.",
+    "th": "พระราชบัญญัติคุ้มครองแรงงานกำหนดให้จ่ายค่าจ้างเป็นเงินไทยที่สถานที่ทำงานของลูกจ้าง การยินยอมของลูกจ้างเปิดทางให้จ่ายที่อื่นหรือโดยวิธีอื่น รวมถึงจ่ายเป็นตั๋วหรือเงินตราต่างประเทศ",
+    "my": "အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေတွင် လုပ်ခကို ထိုင်းငွေကြေးဖြင့် ဝန်ထမ်း၏ အလုပ်ခွင်၌ ပေးရသည်။ ဝန်ထမ်း၏ သဘောတူညီချက်ဖြင့် အခြားနေရာများ၊ အခြားနည်းလမ်းများနှင့် ငွေတောင်းခံလွှာ သို့မဟုတ် နိုင်ငံခြားငွေကြေးဖြင့် ပေးချေခြင်းကို ခွင့်ပြုသည်။",
+    "zh": "《劳动保护法》规定工资以泰铢在员工的工作地点支付。员工同意后，可以在其他地点、以其他方式支付，也可以用票据或外币支付。",
+    "de": "Das Labor Protection Act sieht vor, dass Lohn in thailändischer Währung am Arbeitsplatz gezahlt wird. Mit Zustimmung des Arbeitnehmers sind andere Orte und andere Zahlungsweisen möglich, auch per Wechsel oder in Fremdwährung."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "q": {
+    "en": "When is social security paid in?",
+    "th": "ต้องนำส่งประกันสังคมเมื่อไร",
+    "my": "လူမှုဖူလုံရေးကြေးကို ဘယ်အချိန် ပေးသွင်းရသနည်း",
+    "zh": "社保供款什么时候缴？",
+    "de": "Wann werden die Sozialversicherungsbeiträge abgeführt?"
+   },
+   "a": {
+    "en": "An employer remits its own and its employees' contributions within the fifteenth day of the month after the deduction, with a surcharge of 2% a month on a late remittance.",
+    "th": "นายจ้างนำส่งเงินสมทบส่วนของตนและของลูกจ้างภายในวันที่ 15 ของเดือนถัดจากเดือนที่หัก หากนำส่งล่าช้ามีเงินเพิ่มร้อยละ 2 ต่อเดือน",
+    "my": "အလုပ်ရှင်သည် မိမိအပိုင်းနှင့် ဝန်ထမ်းအပိုင်း ကြေးငွေများကို နှုတ်ယူသည့်လ၏ နောက်လ 15 ရက်နေ့အတွင်း ပေးသွင်းပြီး နောက်ကျပေးသွင်းလျှင် တစ်လလျှင် 2% အပိုကြေး ရှိသည်။",
+    "zh": "雇主在扣款当月的次月 15 日之内缴纳自己和员工两部分的供款，逾期缴纳每月加收 2% 附加费。",
+    "de": "Der Arbeitgeber führt seine eigenen und die Beiträge seiner Angestellten bis zum 15. des Monats nach dem Abzug ab, bei Verspätung mit einem Zuschlag von 2 % im Monat."
+   },
+   "src": "https://www.sso.go.th/wpr/assets/upload/files_storage/sso_th/6aece18d294cfea419d4b4ad946bc368.pdf"
+  },
+  {
+   "q": {
+    "en": "What does a PromptPay transfer cost?",
+    "th": "โอนพร้อมเพย์มีค่าธรรมเนียมเท่าไร",
+    "my": "PromptPay လွှဲငွေ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "PromptPay 转账要手续费吗？",
+    "de": "Was kostet eine PromptPay-Überweisung?"
+   },
+   "a": {
+    "en": "Up to ฿5,000 it is free. From ฿5,000 to ฿30,000 it costs under ฿2, to ฿100,000 under ฿5, and above that under ฿10. The Bank of Thailand adds that since 2018 most banks have waived fees for digital payments.",
+    "th": "ไม่เกิน ฿5,000 ไม่มีค่าธรรมเนียม ตั้งแต่ ฿5,000 ถึง ฿30,000 ต่ำกว่า ฿2 ถึง ฿100,000 ต่ำกว่า ฿5 และเกินกว่านั้นต่ำกว่า ฿10 ธนาคารแห่งประเทศไทยระบุเพิ่มว่าตั้งแต่ปี 2561 ธนาคารส่วนใหญ่ยกเว้นค่าธรรมเนียมการชำระเงินดิจิทัล",
+    "my": "฿5,000 အထိ အခမဲ့ဖြစ်သည်။ ฿5,000 မှ ฿30,000 အထိ ฿2 အောက်၊ ฿100,000 အထိ ฿5 အောက်၊ ထို့ထက်ကျော်လျှင် ฿10 အောက် ကုန်ကျသည်။ 2018 ခုနှစ်မှစ၍ ဘဏ်အများစုက ဒစ်ဂျစ်တယ်ငွေပေးချေမှုကြေးကို ဖယ်ထားကြောင်း ထိုင်းနိုင်ငံ ဗဟိုဘဏ်က ထပ်ဆိုသည်။",
+    "zh": "฿5,000 以内免费；฿5,000 至 ฿30,000 低于 ฿2，至 ฿100,000 低于 ฿5，再往上低于 ฿10。泰国央行补充说，自 2018 年起多数银行已免收数字支付费用。",
+    "de": "Bis ฿5,000 ist sie kostenlos. Von ฿5,000 bis ฿30,000 kostet sie unter ฿2, bis ฿100,000 unter ฿5 und darüber unter ฿10. Die Bank of Thailand fügt an, dass die meisten Banken seit 2018 auf Gebühren für digitale Zahlungen verzichten."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "q": {
+    "en": "What does a payroll service cost in Thailand?",
+    "th": "บริการทำเงินเดือนในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် လစာဝန်ဆောင်မှု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在泰国，薪资外包服务要多少钱？",
+    "de": "Was kostet ein Lohnabrechnungsdienst in Thailand?"
+   },
+   "a": {
+    "en": "One accountant on Fastwork lists ฿1,500–2,000 a month for up to 5 employees and ฿2,500–3,500 for up to 10. The package covers salary calculation, payslips, social security contributions, a monthly payroll report, and withholding tax and filing support.",
+    "th": "นักบัญชีรายหนึ่งบน Fastwork ระบุ ฿1,500–2,000 ต่อเดือนสำหรับพนักงานไม่เกิน 5 คน และ ฿2,500–3,500 สำหรับไม่เกิน 10 คน แพ็กเกจครอบคลุมการคำนวณเงินเดือน สลิปเงินเดือน เงินสมทบประกันสังคม รายงานเงินเดือนรายเดือน และภาษีหัก ณ ที่จ่ายพร้อมการช่วยยื่น",
+    "my": "Fastwork ပေါ်ရှိ စာရင်းကိုင်တစ်ဦးက ဝန်ထမ်း 5 ဦးအထိ တစ်လလျှင် ฿1,500–2,000၊ 10 ဦးအထိ ฿2,500–3,500 ဟု ဖော်ပြသည်။ ပက်ကေ့ချ်တွင် လစာတွက်ချက်ခြင်း၊ လစာစလစ်၊ လူမှုဖူလုံရေးကြေး၊ လစဉ်လစာအစီရင်ခံစာနှင့် ဖြတ်တောက်အခွန်နှင့် တင်သွင်းရေးအကူအညီ ပါဝင်သည်။",
+    "zh": "Fastwork 上一位会计列出：最多 5 名员工每月 ฿1,500–2,000，最多 10 名每月 ฿2,500–3,500。套餐含算薪、工资单、社保供款、月度薪资报告，以及预扣税和申报支持。",
+    "de": "Ein Buchhalter auf Fastwork nennt ฿1,500–2,000 im Monat für bis zu 5 Mitarbeitende und ฿2,500–3,500 für bis zu 10. Das Paket umfasst Lohnberechnung, Lohnabrechnungen, Sozialversicherungsbeiträge, einen monatlichen Lohnbericht sowie Quellensteuer und Hilfe bei der Meldung."
+   },
+   "src": "https://fastwork.co/user/thanawonp/accounting-and-finance-97479026"
+  }
+ ],
+ "related": [
+  "staff-papers",
+  "books",
+  "kh-books",
+  "bank-account",
+  "paybox",
+  "teamboard"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Social Security Act B.E. 2533, English translation",
+    "th": "พระราชบัญญัติประกันสังคม พ.ศ. 2533 ฉบับแปลภาษาอังกฤษ",
+    "my": "လူမှုဖူလုံရေးအက်ဥပဒေ B.E. 2533 အင်္ဂလိပ်ဘာသာပြန်",
+    "zh": "《社会保障法》B.E. 2533 英译本",
+    "de": "Social Security Act B.E. 2533, englische Übersetzung"
+   },
+   "href": "https://www.sso.go.th/wpr/assets/upload/files_storage/sso_th/6aece18d294cfea419d4b4ad946bc368.pdf"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: PromptPay",
+    "th": "ธนาคารแห่งประเทศไทย: พร้อมเพย์",
+    "my": "ထိုင်းနိုင်ငံ ဗဟိုဘဏ် - PromptPay",
+    "zh": "泰国央行：PromptPay",
+    "de": "Bank of Thailand: PromptPay"
+   },
+   "href": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ]
+}

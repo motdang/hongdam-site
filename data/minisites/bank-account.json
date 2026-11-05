@@ -1,0 +1,336 @@
+{
+ "id": "bank-account",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People open a Thai account for rent, bills, pay or the ฿800,000 retirement deposit, and banks set their own rules for foreigners.",
+  "th": "คนเปิดบัญชีไทยเพื่อจ่ายค่าเช่า จ่ายบิล รับเงินเดือน หรือฝากเงิน ฿800,000 สำหรับวีซ่าเกษียณ และธนาคารตั้งเงื่อนไขของตัวเองสำหรับชาวต่างชาติ",
+  "my": "လူတွေက ထိုင်းအကောင့်ကို အိမ်လခ၊ ဘီလ်၊ လစာ သို့မဟုတ် အငြိမ်းစားဗီဇာအတွက် ฿800,000 ငွေသွင်းရန် ဖွင့်ကြပြီး နိုင်ငံခြားသားများအတွက် စည်းကမ်းကို ဘဏ်တစ်ခုချင်းက ကိုယ်ပိုင်သတ်မှတ်သည်။",
+  "zh": "人们开泰国账户，是为了付房租、交账单、收工资，或存入退休签证所需的 ฿800,000。对外国人的规定，银行自己定。",
+  "de": "Man eröffnet ein thailändisches Konto für Miete, Rechnungen, Lohn oder die ฿800,000 für das Rentnervisum, und die Banken legen ihre Regeln für Ausländer selbst fest."
+ },
+ "n": {
+  "de": "Thailändisches Bankkonto eröffnet"
+ },
+ "l": {
+  "de": "Die Bank passend zu Ihrem Visum, die Unterlagen bereit, eine thailändisch sprechende Person mit Ihnen am Schalter."
+ },
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "We pick the bank and branch for your visa.",
+    "th": "เลือกธนาคารและสาขาที่เหมาะกับวีซ่าของคุณ",
+    "my": "သင့်ဗီဇာနှင့် ကိုက်ညီသော ဘဏ်နှင့် ဘဏ်ခွဲကို ရွေးချယ်သည်။",
+    "zh": "按您的签证选好银行和分行。",
+    "de": "Wir wählen Bank und Filiale passend zu Ihrem Visum."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนไปธนาคาร",
+    "my": "ဘဏ်သို့ မသွားမီ",
+    "zh": "去银行之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "passport",
+   "t": {
+    "en": "We make your papers ready.",
+    "th": "เตรียมเอกสารของคุณให้พร้อม",
+    "my": "သင့်စာရွက်စာတမ်းများကို အဆင်သင့်ပြင်ဆင်ပေးသည်။",
+    "zh": "备好您的文件。",
+    "de": "Wir bereiten Ihre Unterlagen vor."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนไปธนาคาร",
+    "my": "ဘဏ်သို့ မသွားမီ",
+    "zh": "去银行之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "A Thai speaker goes with you to the counter. The bank decides.",
+    "th": "มีคนพูดไทยไปด้วยที่เคาน์เตอร์ ธนาคารเป็นผู้พิจารณา",
+    "my": "ကောင်တာတွင် ထိုင်းစကားပြောသူ တစ်ဦး သင်နှင့်အတူ ရှိသည်။ ဘဏ်က ဆုံးဖြတ်သည်။",
+    "zh": "柜台有会说泰语的人陪着您。银行来决定。",
+    "de": "Eine thailändisch sprechende Person geht mit Ihnen an den Schalter. Die Bank entscheidet."
+   },
+   "who": {
+    "en": "Hongdam, you and the bank",
+    "th": "หงส์ดำ คุณ และธนาคาร",
+    "my": "ဟုန်ဒမ်၊ သင်နှင့် ဘဏ်",
+    "zh": "鸿丹、您和银行",
+    "de": "Hongdam, Sie und die Bank"
+   },
+   "time": {
+    "en": "The visit",
+    "th": "วันที่ไปธนาคาร",
+    "my": "ဘဏ်သို့ သွားသည့်နေ့",
+    "zh": "去银行那天",
+    "de": "Der Besuch"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "KBank lists for a foreigner: a passport, a Non-Immigrant visa of any type, a government ID from the home country (a national ID card, driver's licence or household registration), and a paper for the reason for the stay, such as a work permit or a school certificate.",
+    "th": "ธนาคารกสิกรไทยระบุเอกสารของชาวต่างชาติไว้ดังนี้ หนังสือเดินทาง วีซ่า Non-Immigrant ประเภทใดก็ได้ เอกสารประจำตัวที่รัฐบาลประเทศของคุณออกให้ เช่น บัตรประจำตัวประชาชน ใบขับขี่ หรือทะเบียนบ้าน และเอกสารตามเหตุผลที่อยู่ในไทย เช่น ใบอนุญาตทำงานหรือหนังสือรับรองจากสถานศึกษา",
+    "my": "KBank က နိုင်ငံခြားသားအတွက် ပတ်စပို့၊ အမျိုးအစားမရွေး Non-Immigrant ဗီဇာ၊ မိမိနိုင်ငံ အစိုးရထုတ်ပေးသော မှတ်ပုံတင်စာရွက်စာတမ်း (မှတ်ပုံတင်ကတ်၊ ယာဉ်မောင်းလိုင်စင် သို့မဟုတ် အိမ်ထောင်စုစာရင်း) နှင့် ထိုင်းတွင် နေထိုင်ရသည့် အကြောင်းရင်းနှင့်ဆိုင်သော စာရွက် (ဥပမာ အလုပ်လုပ်ခွင့်ပါမစ် သို့မဟုတ် ကျောင်းထောက်ခံစာ) တို့ကို ဖော်ပြထားသည်။",
+    "zh": "KBank 对外国人列出：护照、任意类型的非移民签证、本国政府签发的身份证件（身份证、驾照或户口簿），以及与居留原因相符的文件，如工作许可证或学校证明。",
+    "de": "KBank nennt für Ausländer: Reisepass, ein Non-Immigrant-Visum jeder Art, einen amtlichen Ausweis des Heimatlandes (Identitätskarte, Führerausweis oder Haushaltsregister) und ein Papier zum Aufenthaltszweck, etwa eine Arbeitsbewilligung oder eine Schulbestätigung."
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "t": {
+    "en": "KBank's page says accounts are not opened for holders of a visitor visa or another visa meant for travel, such as visa on arrival, visa-free entry or the Destination Thailand Visa (DTV). It may ask for more papers.",
+    "th": "หน้าเว็บของธนาคารกสิกรไทยระบุว่า ไม่เปิดบัญชีให้ผู้ถือวีซ่านักท่องเที่ยวหรือวีซ่าประเภทเดินทางท่องเที่ยวอื่น เช่น วีซ่าเมื่อเดินทางถึง (Visa on Arrival) ฟรีวีซ่า และวีซ่า DTV (Destination Thailand Visa) และธนาคารอาจขอเอกสารเพิ่ม",
+    "my": "KBank ၏ စာမျက်နှာတွင် ခရီးသွားဗီဇာ သို့မဟုတ် ရောက်ရှိချိန်ဗီဇာ (Visa on Arrival)၊ ဗီဇာကင်းလွတ်ဝင်ခွင့်၊ Destination Thailand Visa (DTV) ကဲ့သို့ ခရီးသွားရန် ဗီဇာကိုင်ဆောင်သူများအတွက် အကောင့်မဖွင့်ပေးဟု ဖော်ပြထားပြီး ဘဏ်က စာရွက်စာတမ်း ထပ်တောင်းနိုင်သည်။",
+    "zh": "KBank 的页面写明，持旅游签证或其他以旅行为目的的签证（如落地签、免签入境、泰国目的地签证 DTV）者不予开户；银行可能要求补充文件。",
+    "de": "Auf der Seite von KBank steht, dass für Inhaber eines Touristenvisums oder eines anderen Reisevisums, etwa Visum bei Ankunft, visumfreie Einreise oder das Destination Thailand Visa (DTV), keine Konten eröffnet werden. Die Bank kann weitere Unterlagen verlangen."
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "t": {
+    "en": "SCB's deposit FAQ lists an ID card for opening a savings account, and says a foreigner uses a passport and a work permit.",
+    "th": "คำถามที่พบบ่อยเรื่องเงินฝากของธนาคารไทยพาณิชย์ระบุว่า การเปิดบัญชีออมทรัพย์ใช้บัตรประจำตัว และชาวต่างชาติใช้หนังสือเดินทางพร้อมใบอนุญาตทำงาน",
+    "my": "SCB ၏ ငွေစာရင်းမေးလေ့ရှိသောမေးခွန်းများတွင် စုဆောင်းငွေစာရင်းဖွင့်ရန် မှတ်ပုံတင်ကတ်ကို ဖော်ပြထားပြီး နိုင်ငံခြားသားက ပတ်စပို့နှင့် အလုပ်လုပ်ခွင့်ပါမစ်ကို သုံးရသည်ဟု ဆိုသည်။",
+    "zh": "SCB 的存款常见问题列出开储蓄账户用身份证件，外国人用护照和工作许可证。",
+    "de": "In den Einlagen-FAQ der SCB steht für ein Sparkonto ein Ausweis; Ausländer legen Reisepass und Arbeitsbewilligung vor."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/faq/deposit-faq"
+  },
+  {
+   "t": {
+    "en": "Bangkok Bank's page for its statement savings account lists a citizen ID card for Thai nationals. For foreigners it says to contact any branch.",
+    "th": "หน้าบัญชีออมทรัพย์แบบสเตทเมนต์ (Statement Savings Account) ของธนาคารกรุงเทพระบุบัตรประชาชนสำหรับคนไทย ส่วนชาวต่างชาติให้ติดต่อสาขาใดก็ได้ของธนาคาร",
+    "my": "ဘန်ကောက်ဘဏ်၏ Statement Savings Account စာမျက်နှာတွင် ထိုင်းနိုင်ငံသားအတွက် နိုင်ငံသားမှတ်ပုံတင်ကတ်ကို ဖော်ပြပြီး နိုင်ငံခြားသားများကို မည်သည့်ဘဏ်ခွဲသို့မဆို ဆက်သွယ်ရန် ဆိုထားသည်။",
+    "zh": "曼谷银行 Statement Savings Account 页面为泰国公民列出身份证；外国人则请联系任一分行。",
+    "de": "Auf der Seite der Bangkok Bank zum Statement Savings Account steht für thailändische Staatsangehörige die Identitätskarte. Für Ausländer verweist die Seite auf eine beliebige Filiale."
+   },
+   "src": "https://www.bangkokbank.com/en/Personal/Save-And-Invest/Save/Statement-Savings-Account"
+  },
+  {
+   "t": {
+    "en": "An extension of stay for retirement (age 50 or over, Non-Immigrant visa) has one route through a deposit of ฿800,000 or more in a commercial bank in Thailand. The deposit stays in the account at least 2 months before filing and 3 months after permission. The papers include a deposit certificate from the bank and a copy of the bank account.",
+    "th": "การขอพำนักต่อกรณีเกษียณ (อายุ 50 ปีขึ้นไป ถือวีซ่า Non-Immigrant) มีเกณฑ์หนึ่งคือมีเงินฝาก ฿800,000 ขึ้นไปในธนาคารพาณิชย์ในประเทศไทย เงินต้องอยู่ในบัญชีอย่างน้อย 2 เดือนก่อนยื่นคำขอ และอย่างน้อย 3 เดือนหลังได้รับอนุญาต เอกสารมีหนังสือรับรองเงินฝากจากธนาคารและสำเนาบัญชีธนาคาร",
+    "my": "အငြိမ်းစားအတွက် နေထိုင်ခွင့်သက်တမ်းတိုးခြင်း (အသက် 50 နှင့်အထက်၊ Non-Immigrant ဗီဇာ) တွင် ထိုင်းနိုင်ငံရှိ စီးပွားရေးဘဏ်တစ်ခုတွင် ฿800,000 နှင့်အထက် ငွေစာရင်းထားရှိခြင်းသည် စံနှုန်းတစ်ခုဖြစ်သည်။ ငွေသည် လျှောက်ထားမီ အနည်းဆုံး 2 လနှင့် ခွင့်ပြုပြီးနောက် အနည်းဆုံး 3 လ စာရင်းထဲတွင် ရှိနေရသည်။ စာရွက်စာတမ်းများတွင် ဘဏ်ထုတ်ပေးသော ငွေစာရင်းထောက်ခံစာနှင့် ဘဏ်စာရင်း မိတ္တူ ပါဝင်သည်။",
+    "zh": "退休延期居留（年满 50 岁，持非移民签证）有一条途径是在泰国商业银行存入 ฿800,000 或以上。款项须在申请前至少存满 2 个月，获批后至少再留 3 个月。材料包括银行出具的存款证明和银行账户复印件。",
+    "de": "Bei der Verlängerung des Aufenthalts für Rentner (ab 50 Jahren, Non-Immigrant-Visum) besteht ein Weg in einer Einlage von ฿800,000 oder mehr bei einer Geschäftsbank in Thailand. Das Geld liegt mindestens 2 Monate vor dem Antrag und 3 Monate nach der Bewilligung auf dem Konto. Zu den Unterlagen gehören eine Einlagenbestätigung der Bank und eine Kopie des Bankkontos."
+   },
+   "src": "https://bangkok.immigration.go.th/en/visa-extension/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Opening deposit at KBank (savings account)",
+    "th": "เงินฝากแรกเปิดบัญชีออมทรัพย์ ธนาคารกสิกรไทย",
+    "my": "KBank စုဆောင်းငွေစာရင်း ဖွင့်ရန် ကနဦးငွေသွင်း",
+    "zh": "KBank 储蓄账户开户首存",
+    "de": "Einlage bei der Kontoeröffnung, KBank (Sparkonto)"
+   },
+   "p": {
+    "en": "No minimum deposit",
+    "th": "ไม่มีขั้นต่ำ",
+    "my": "အနည်းဆုံးပမာဏ မသတ်မှတ်",
+    "zh": "无最低额",
+    "de": "Kein Minimum"
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "t": {
+    "en": "Opening deposit at Bangkok Bank (statement savings account)",
+    "th": "เงินฝากแรกเปิดบัญชีออมทรัพย์แบบสเตทเมนต์ ธนาคารกรุงเทพ",
+    "my": "ဘန်ကောက်ဘဏ် Statement Savings Account ဖွင့်ရန် ကနဦးငွေသွင်း",
+    "zh": "曼谷银行 Statement Savings 账户开户首存",
+    "de": "Einlage bei der Kontoeröffnung, Bangkok Bank (Statement Savings Account)"
+   },
+   "p": {
+    "en": "฿500",
+    "th": "฿500",
+    "my": "฿500",
+    "zh": "฿500",
+    "de": "฿500"
+   },
+   "src": "https://www.bangkokbank.com/en/Personal/Save-And-Invest/Save/Statement-Savings-Account"
+  },
+  {
+   "t": {
+    "en": "Debit card: SCB LET'S PLUS, open to foreigners with a work permit or papers showing more than one year of residence",
+    "th": "บัตรเดบิต SCB LET'S PLUS (ชาวต่างชาติต้องมีใบอนุญาตทำงาน หรือเอกสารแสดงว่าพำนักในไทยเกิน 1 ปี)",
+    "my": "SCB LET'S PLUS ဒက်ဘစ်ကတ် (နိုင်ငံခြားသားသည် အလုပ်လုပ်ခွင့်ပါမစ် သို့မဟုတ် 1 နှစ်ကျော် နေထိုင်ကြောင်း စာရွက် လိုသည်)",
+    "zh": "SCB LET'S PLUS 借记卡（外国人需有工作许可证，或有居住满一年以上的证明）",
+    "de": "Debitkarte SCB LET'S PLUS (Ausländer brauchen eine Arbeitsbewilligung oder Belege für mehr als ein Jahr Aufenthalt)"
+   },
+   "p": {
+    "en": "฿100 to issue, then ฿599 a year, which includes accident insurance",
+    "th": "ค่าออกบัตร ฿100 ค่ารายปี ฿599 รวมประกันอุบัติเหตุ",
+    "my": "ထုတ်ပေးခ ฿100၊ နှစ်စဉ်ကြေး ฿599 (မတော်တဆထိခိုက်မှု အာမခံပါ)",
+    "zh": "工本费 ฿100，年费 ฿599（含意外险）",
+    "de": "฿100 Ausstellung, dann ฿599 im Jahr, inklusive Unfallversicherung"
+   },
+   "src": "https://www.scb.co.th/content/media/personal-banking/product-sales-sheet/debit-cards/let-scb-plus-en.pdf"
+  },
+  {
+   "t": {
+    "en": "A Chiang Mai agent's own page: full assistance with translation, a residence certificate, an ATM card",
+    "th": "หน้าบริการของตัวแทนในเชียงใหม่: ช่วยเหลือเต็มรูปแบบพร้อมแปล ใบรับรองถิ่นที่อยู่ บัตร ATM",
+    "my": "ချင်းမိုင်ရှိ ကိုယ်စားလှယ်တစ်ဦး၏ ကိုယ်ပိုင်စာမျက်နှာ: ဘာသာပြန်ပါ အပြည့်အစုံ အကူအညီ၊ နေထိုင်ကြောင်းလက်မှတ်၊ ATM ကတ်",
+    "zh": "清迈一家代办机构自己的页面：含翻译的全程协助、居住证明、ATM 卡",
+    "de": "Eigene Seite eines Vermittlers in Chiang Mai: volle Begleitung mit Übersetzung, Wohnsitzbestätigung, ATM-Karte"
+   },
+   "p": {
+    "en": "฿800 for the assistance, ฿500 for the residence certificate, ฿300 for the ATM card",
+    "th": "ค่าบริการช่วยเหลือ ฿800 ใบรับรองถิ่นที่อยู่ ฿500 บัตร ATM ฿300",
+    "my": "အကူအညီ ฿800၊ နေထိုင်ကြောင်းလက်မှတ် ฿500၊ ATM ကတ် ฿300",
+    "zh": "协助费 ฿800，居住证明 ฿500，ATM 卡 ฿300",
+    "de": "฿800 Betreuung, ฿500 Wohnsitzbestätigung, ฿300 ATM-Karte"
+   },
+   "src": "https://www.chiangmailocator.com/wiki-open-a-bank-account-in-thailand-p179"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can foreigners open a bank account in Thailand?",
+    "th": "ชาวต่างชาติเปิดบัญชีในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားများ ထိုင်းတွင် ဘဏ်အကောင့် ဖွင့်နိုင်ပါသလား။",
+    "zh": "外国人可以在泰国开银行账户吗？",
+    "de": "Können Ausländer in Thailand ein Bankkonto eröffnen?"
+   },
+   "a": {
+    "en": "Yes, with the papers a bank lists. KBank's page for opening an account is written for foreigners and residents of Thailand. It asks a foreigner for a passport, a Non-Immigrant visa of any type, and a paper for the reason for the stay, such as a work permit.",
+    "th": "ได้ ตามเอกสารที่ธนาคารกำหนด หน้าเปิดบัญชีของธนาคารกสิกรไทยเขียนไว้สำหรับชาวต่างชาติและผู้พำนักในไทย โดยขอหนังสือเดินทาง วีซ่า Non-Immigrant ประเภทใดก็ได้ และเอกสารตามเหตุผลที่อยู่ในไทย เช่น ใบอนุญาตทำงาน",
+    "my": "ဖွင့်နိုင်သည်၊ ဘဏ်က သတ်မှတ်သော စာရွက်စာတမ်းများဖြင့် ဖြစ်သည်။ KBank ၏ အကောင့်ဖွင့်စာမျက်နှာသည် နိုင်ငံခြားသားနှင့် ထိုင်းတွင် နေထိုင်သူများအတွက် ရေးထားသည်။ နိုင်ငံခြားသားထံမှ ပတ်စပို့၊ အမျိုးအစားမရွေး Non-Immigrant ဗီဇာနှင့် ထိုင်းတွင်နေရသည့် အကြောင်းရင်းဆိုင်ရာ စာရွက် (ဥပမာ အလုပ်လုပ်ခွင့်ပါမစ်) တောင်းသည်။",
+    "zh": "可以，按银行列出的文件办理。KBank 的开户页面面向外国人和在泰居住者，向外国人要求护照、任意类型的非移民签证，以及与居留原因相符的文件，如工作许可证。",
+    "de": "Ja, mit den Unterlagen, die die Bank nennt. Die Seite von KBank zur Kontoeröffnung richtet sich an Ausländer und Personen mit Wohnsitz in Thailand. Von Ausländern verlangt sie einen Reisepass, ein Non-Immigrant-Visum jeder Art und ein Papier zum Aufenthaltsgrund, etwa eine Arbeitsbewilligung."
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "q": {
+    "en": "What do foreigners need to open a Thai bank account?",
+    "th": "ชาวต่างชาติเปิดบัญชีธนาคารต้องใช้อะไรบ้าง",
+    "my": "နိုင်ငံခြားသားများ ထိုင်းဘဏ်အကောင့်ဖွင့်ရန် ဘာလိုသလဲ။",
+    "zh": "外国人开泰国银行账户需要什么？",
+    "de": "Was brauchen Ausländer für ein thailändisches Bankkonto?"
+   },
+   "a": {
+    "en": "The Thai Visa Services guide lists a passport valid for at least 6 months, a Non-Immigrant visa, proof of a Thai address (a rental contract, a utility bill or a residence certificate from Immigration), a Thai phone number for the codes in banking apps, and an opening deposit of ฿500 to ฿5,000. It says requirements vary by bank and branch.",
+    "th": "คู่มือของ Thai Visa Services ระบุหนังสือเดินทางที่มีอายุเหลืออย่างน้อย 6 เดือน วีซ่า Non-Immigrant หลักฐานที่อยู่ในไทย (สัญญาเช่า ใบแจ้งค่าสาธารณูปโภค หรือใบรับรองถิ่นที่อยู่จากสำนักงานตรวจคนเข้าเมือง) เบอร์โทรไทยสำหรับรับรหัสในแอปธนาคาร และเงินฝากแรกเปิดบัญชี ฿500 ถึง ฿5,000 และระบุว่าเงื่อนไขต่างกันตามธนาคารและสาขา",
+    "my": "Thai Visa Services ၏ လမ်းညွှန်တွင် သက်တမ်း အနည်းဆုံး 6 လ ကျန်သော ပတ်စပို့၊ Non-Immigrant ဗီဇာ၊ ထိုင်းတွင် နေထိုင်ကြောင်း အထောက်အထား (အိမ်ငှားစာချုပ်၊ ရေမီးဘီလ် သို့မဟုတ် လူဝင်မှုကြီးကြပ်ရေးမှ နေထိုင်ကြောင်းလက်မှတ်)၊ ဘဏ်အက်ပ်ကုဒ်များ လက်ခံရန် ထိုင်းဖုန်းနံပါတ်နှင့် ฿500 မှ ฿5,000 အထိ ကနဦးငွေသွင်း တို့ကို ဖော်ပြထားသည်။ လိုအပ်ချက်များသည် ဘဏ်နှင့် ဘဏ်ခွဲအလိုက် ကွာသည်ဟု ဆိုသည်။",
+    "zh": "Thai Visa Services 的指南列出：有效期至少 6 个月的护照、非移民签证、泰国地址证明（租约、水电账单或移民局出具的居住证明）、用于接收银行 App 验证码的泰国手机号，以及 ฿500 至 ฿5,000 的开户首存。指南称，要求因银行和分行而异。",
+    "de": "Der Leitfaden von Thai Visa Services nennt einen Reisepass mit mindestens 6 Monaten Gültigkeit, ein Non-Immigrant-Visum, einen Nachweis der Adresse in Thailand (Mietvertrag, Nebenkostenrechnung oder Wohnsitzbestätigung der Einwanderungsbehörde), eine thailändische Telefonnummer für die Codes der Banking-Apps und eine Einlage von ฿500 bis ฿5,000 bei der Eröffnung. Er schreibt, die Anforderungen unterscheiden sich je nach Bank und Filiale."
+   },
+   "src": "https://www.thai-visa-services.com/guides/opening-bank-account-thailand"
+  },
+  {
+   "q": {
+    "en": "Can I open a Thai bank account on a visitor visa or a DTV?",
+    "th": "วีซ่านักท่องเที่ยวหรือวีซ่า DTV เปิดบัญชีธนาคารกสิกรได้ไหม",
+    "my": "ခရီးသွားဗီဇာ သို့မဟုတ် DTV ဖြင့် ထိုင်းဘဏ်အကောင့် ဖွင့်နိုင်ပါသလား။",
+    "zh": "持旅游签证或 DTV 可以开泰国银行账户吗？",
+    "de": "Kann ich mit einem Touristenvisum oder einem DTV ein thailändisches Bankkonto eröffnen?"
+   },
+   "a": {
+    "en": "KBank's page says accounts are not opened for holders of a visitor visa or another visa meant for travel, such as visa on arrival, visa-free entry or the Destination Thailand Visa (DTV). It says more information is available at a KBank branch, and that it may ask for more papers.",
+    "th": "หน้าเว็บของธนาคารกสิกรไทยระบุว่า ไม่เปิดบัญชีให้ผู้ถือวีซ่านักท่องเที่ยวหรือวีซ่าประเภทเดินทางท่องเที่ยวอื่น เช่น Visa on Arrival ฟรีวีซ่า และวีซ่า DTV (Destination Thailand Visa) ข้อมูลเพิ่มเติมสอบถามได้ที่สาขา และธนาคารอาจขอเอกสารเพิ่ม",
+    "my": "KBank ၏ စာမျက်နှာတွင် ခရီးသွားဗီဇာ သို့မဟုတ် ရောက်ရှိချိန်ဗီဇာ (Visa on Arrival)၊ ဗီဇာကင်းလွတ်ဝင်ခွင့်၊ Destination Thailand Visa (DTV) ကဲ့သို့ ခရီးသွားရန် ဗီဇာကိုင်ဆောင်သူများအတွက် အကောင့်မဖွင့်ပေးဟု ဖော်ပြထားသည်။ ပိုမိုသိရှိရန် ဘဏ်ခွဲတွင် ရနိုင်သည်ဟု ဆိုပြီး စာရွက်စာတမ်း ထပ်တောင်းနိုင်ကြောင်း ဖော်ပြထားသည်။",
+    "zh": "KBank 的页面写明，持旅游签证或其他以旅行为目的的签证（如落地签、免签入境、泰国目的地签证 DTV）者不予开户。页面说更多信息可到 KBank 分行了解，银行可能要求补充文件。",
+    "de": "Auf der Seite von KBank steht, dass für Inhaber eines Touristenvisums oder eines anderen Reisevisums, etwa Visum bei Ankunft, visumfreie Einreise oder das Destination Thailand Visa (DTV), keine Konten eröffnet werden. Weitere Auskünfte gibt es laut Seite in einer KBank-Filiale, und die Bank kann zusätzliche Unterlagen verlangen."
+   },
+   "src": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "q": {
+    "en": "Which Thai bank is best for foreigners?",
+    "th": "ธนาคารไหนเหมาะกับชาวต่างชาติที่สุด",
+    "my": "နိုင်ငံခြားသားများအတွက် ထိုင်းဘဏ်ဘယ်ဟာ အကောင်းဆုံးလဲ။",
+    "zh": "哪家泰国银行最适合外国人？",
+    "de": "Welche thailändische Bank ist für Ausländer die beste?"
+   },
+   "a": {
+    "en": "The Thai Visa Services guide says Bangkok Bank is widely considered the most foreigner-friendly, with English-speaking staff at main branches in Silom, Sukhumvit and Chiang Mai. It says KBank generally asks for a Non-Immigrant visa and a work permit or residence certificate, and SCB tends to be stricter. It says branch managers have discretion, so branches differ.",
+    "th": "คู่มือของ Thai Visa Services ระบุว่า ธนาคารกรุงเทพเป็นธนาคารที่คนทั่วไปมองว่าเป็นมิตรกับชาวต่างชาติมากที่สุด สาขาหลักที่สีลม สุขุมวิท และเชียงใหม่มีเจ้าหน้าที่พูดอังกฤษ ส่วนกสิกรไทยโดยทั่วไปขอวีซ่า Non-Immigrant พร้อมใบอนุญาตทำงานหรือใบรับรองถิ่นที่อยู่ และไทยพาณิชย์มักเข้มกว่า คู่มือบอกว่าผู้จัดการสาขามีดุลยพินิจ จึงต่างกันไปตามสาขา",
+    "my": "Thai Visa Services ၏ လမ်းညွှန်တွင် ဘန်ကောက်ဘဏ်ကို နိုင်ငံခြားသားနှင့် အဆင်ပြေဆုံးဟု ကျယ်ကျယ်ပြန့်ပြန့် သတ်မှတ်ကြသည်ဟု ဆိုပြီး ဆီလုံ၊ ဆုခုမ်ဝစ်နှင့် ချင်းမိုင်ရှိ ဘဏ်ခွဲကြီးများတွင် အင်္ဂလိပ်စကားပြောဝန်ထမ်းရှိသည်ဟု ဖော်ပြထားသည်။ KBank က Non-Immigrant ဗီဇာနှင့် အလုပ်လုပ်ခွင့်ပါမစ် သို့မဟုတ် နေထိုင်ကြောင်းလက်မှတ်ကို များသောအားဖြင့် တောင်းပြီး SCB သည် ပိုတင်းကျပ်လေ့ရှိသည်။ ဘဏ်ခွဲမန်နေဂျာများတွင် ဆုံးဖြတ်ပိုင်ခွင့်ရှိသဖြင့် ဘဏ်ခွဲအလိုက် ကွာသည်။",
+    "zh": "Thai Visa Services 的指南称，曼谷银行被普遍视为对外国人最友好的银行，在是隆、素坤逸和清迈的主要分行有会说英语的职员。指南说 KBank 一般要求非移民签证加工作许可证或居住证明，SCB 往往更严。指南还说分行经理有裁量权，所以各分行不同。",
+    "de": "Der Leitfaden von Thai Visa Services nennt die Bangkok Bank die Bank, die allgemein als am ausländerfreundlichsten gilt, mit englischsprachigem Personal in den Hauptfilialen in Silom, Sukhumvit und Chiang Mai. KBank verlange in der Regel ein Non-Immigrant-Visum sowie eine Arbeitsbewilligung oder Wohnsitzbestätigung, die SCB sei tendenziell strenger. Filialleiter haben laut Leitfaden Ermessen, deshalb unterscheiden sich die Filialen."
+   },
+   "src": "https://www.thai-visa-services.com/guides/opening-bank-account-thailand"
+  },
+  {
+   "q": {
+    "en": "Why do retirees open a Thai bank account?",
+    "th": "ทำไมผู้เกษียณต้องเปิดบัญชีธนาคารไทย",
+    "my": "အငြိမ်းစားယူသူများ ထိုင်းဘဏ်အကောင့် ဘာကြောင့် ဖွင့်ကြသလဲ။",
+    "zh": "退休人士为什么要开泰国银行账户？",
+    "de": "Warum eröffnen Rentner ein thailändisches Bankkonto?"
+   },
+   "a": {
+    "en": "The Immigration Bureau's retirement extension of stay has a route that rests on a deposit of ฿800,000 or more in a commercial bank in Thailand, held at least 2 months before filing and 3 months after permission. The papers include a deposit certificate from that bank.",
+    "th": "การขอพำนักต่อกรณีเกษียณของสำนักงานตรวจคนเข้าเมืองมีเกณฑ์หนึ่งที่ใช้เงินฝาก ฿800,000 ขึ้นไปในธนาคารพาณิชย์ในประเทศไทย โดยเงินอยู่ในบัญชีอย่างน้อย 2 เดือนก่อนยื่นคำขอ และอย่างน้อย 3 เดือนหลังได้รับอนุญาต เอกสารมีหนังสือรับรองเงินฝากจากธนาคารนั้น",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန၏ အငြိမ်းစား နေထိုင်ခွင့်သက်တမ်းတိုးခြင်းတွင် ထိုင်းနိုင်ငံရှိ စီးပွားရေးဘဏ်တစ်ခုတွင် ฿800,000 နှင့်အထက် ငွေစာရင်းထားရှိခြင်းအပေါ် အခြေခံသော လမ်းကြောင်းတစ်ခု ရှိသည်။ ငွေသည် လျှောက်ထားမီ အနည်းဆုံး 2 လနှင့် ခွင့်ပြုပြီးနောက် အနည်းဆုံး 3 လ စာရင်းထဲတွင် ရှိနေရသည်။ စာရွက်စာတမ်းများတွင် ထိုဘဏ်မှ ငွေစာရင်းထောက်ခံစာ ပါဝင်သည်။",
+    "zh": "泰国移民局的退休延期居留有一条途径，依据是在泰国商业银行存入 ฿800,000 或以上，款项在申请前至少存满 2 个月，获批后至少再留 3 个月。材料包括该银行出具的存款证明。",
+    "de": "Bei der Verlängerung des Aufenthalts für Rentner hat die Einwanderungsbehörde einen Weg, der auf einer Einlage von ฿800,000 oder mehr bei einer Geschäftsbank in Thailand beruht. Das Geld liegt mindestens 2 Monate vor dem Antrag und 3 Monate nach der Bewilligung auf dem Konto. Zu den Unterlagen gehört eine Einlagenbestätigung dieser Bank."
+   },
+   "src": "https://bangkok.immigration.go.th/en/visa-extension/"
+  }
+ ],
+ "related": [
+  "retire",
+  "form",
+  "translate",
+  "interp",
+  "books",
+  "thai-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "KBank: papers a foreigner brings to open an account",
+    "th": "ธนาคารกสิกรไทย: เอกสารที่ชาวต่างชาติใช้เปิดบัญชี",
+    "my": "KBank: နိုင်ငံခြားသားက အကောင့်ဖွင့်ရန် ယူလာရသည့် စာရွက်များ",
+    "zh": "KBank：外国人开户所需文件",
+    "de": "KBank: Unterlagen für Ausländer bei der Kontoeröffnung"
+   },
+   "href": "https://support.linebk.com/EN/Personal/Account/Pages/Savings.aspx"
+  },
+  {
+   "t": {
+    "en": "Immigration Bureau: extension of stay for retirement",
+    "th": "สำนักงานตรวจคนเข้าเมือง: การขอพำนักต่อกรณีเกษียณ",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးဦးစီးဌာန: အငြိမ်းစားနေထိုင်ခွင့် သက်တမ်းတိုး",
+    "zh": "移民局：退休延期居留",
+    "de": "Einwanderungsbehörde: Aufenthaltsverlängerung für Rentner"
+   },
+   "href": "https://bangkok.immigration.go.th/en/visa-extension/"
+  }
+ ],
+ "glyphs": [
+  "coin",
+  "passport",
+  "chat"
+ ]
+}

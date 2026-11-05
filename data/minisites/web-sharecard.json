@@ -1,0 +1,292 @@
+{
+ "id": "web-sharecard",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "When a link is posted on LINE, Facebook, X, Bluesky or Mastodon, the picture and title next to it are what people see.",
+  "th": "เมื่อโพสต์ลิงก์ใน LINE, Facebook, X, Bluesky หรือ Mastodon รูปและหัวข้อข้างลิงก์คือสิ่งที่คนเห็น",
+  "my": "LINE၊ Facebook၊ X၊ Bluesky သို့မဟုတ် Mastodon တွင် လင့်ခ်တစ်ခု တင်သောအခါ ၎င်းဘေးရှိ ပုံနှင့် ခေါင်းစဉ်ကို လူတွေ မြင်ရသည်။",
+  "zh": "链接发到 LINE、Facebook、X、Bluesky 或 Mastodon 时，旁边的图片和标题就是人们看到的东西。",
+  "de": "Wird ein Link auf LINE, Facebook, X, Bluesky oder Mastodon gepostet, sehen die Leute das Bild und den Titel daneben."
+ },
+ "n": {
+  "de": "Vorschaubild für Links"
+ },
+ "l": {
+  "de": "Was andere sehen, wenn Ihr Link geteilt wird."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the pages that need a preview. The price is per page.",
+    "th": "คุณส่งหน้าที่ต้องการภาพตัวอย่าง คิดราคาต่อหน้า",
+    "my": "ကြိုတင်ကြည့်ပုံ လိုသော စာမျက်နှာများကို သင်ပို့သည်။ ဈေးနှုန်းမှာ စာမျက်နှာတစ်ခုချင်း ဖြစ်သည်။",
+    "zh": "您把需要预览图的页面发来。按页计价。",
+    "de": "Sie senden die Seiten, die eine Vorschau brauchen. Der Preis gilt pro Seite."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "一开始",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "A picture and a title are made for each page.",
+    "th": "สร้างรูปและหัวข้อสำหรับแต่ละหน้า",
+    "my": "စာမျက်နှာတစ်ခုချင်းအတွက် ပုံနှင့် ခေါင်းစဉ် ပြုလုပ်သည်။",
+    "zh": "为每个页面做一张图和一个标题。",
+    "de": "Für jede Seite werden ein Bild und ein Titel gemacht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The making",
+    "th": "ช่วงทำ",
+    "my": "ပြုလုပ်ချိန်",
+    "zh": "制作期间",
+    "de": "Die Herstellung"
+   }
+  },
+  {
+   "db": "share",
+   "t": {
+    "en": "They are set on the page, so they show when the page is posted on LINE, Facebook, X, Bluesky or Mastodon.",
+    "th": "ตั้งไว้บนหน้านั้น เพื่อให้ขึ้นเมื่อโพสต์หน้าใน LINE, Facebook, X, Bluesky หรือ Mastodon",
+    "my": "စာမျက်နှာပေါ်တွင် သတ်မှတ်ထားသဖြင့် LINE၊ Facebook၊ X၊ Bluesky သို့မဟုတ် Mastodon တွင် စာမျက်နှာကို တင်သောအခါ ပေါ်လာသည်။",
+    "zh": "设在页面上，页面发到 LINE、Facebook、X、Bluesky 或 Mastodon 时就会显示。",
+    "de": "Sie werden auf der Seite gesetzt und erscheinen, wenn die Seite auf LINE, Facebook, X, Bluesky oder Mastodon gepostet wird."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံးတွင်",
+    "zh": "最后",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Open Graph protocol lists four required properties for a page: og:title, og:type, og:image and og:url. The og:image property is the URL of an image that represents the page. A companion property, og:image:alt, describes the image.",
+    "th": "Open Graph protocol ระบุคุณสมบัติที่จำเป็นของหน้าไว้สี่อย่าง คือ og:title, og:type, og:image และ og:url og:image คือ URL ของภาพที่เป็นตัวแทนของหน้า ส่วน og:image:alt เป็นคุณสมบัติคู่กันที่อธิบายภาพ",
+    "my": "Open Graph protocol သည် စာမျက်နှာတစ်ခုအတွက် မဖြစ်မနေ property လေးခုကို ဖော်ပြသည်။ og:title၊ og:type၊ og:image နှင့် og:url တို့ဖြစ်သည်။ og:image သည် စာမျက်နှာကို ကိုယ်စားပြုသော ပုံ၏ URL ဖြစ်သည်။ og:image:alt မှာ ပုံကို ဖော်ပြသော တွဲဖက် property ဖြစ်သည်။",
+    "zh": "Open Graph 协议为页面列出四个必填属性：og:title、og:type、og:image 和 og:url。og:image 是代表该页面的图片的 URL；og:image:alt 是配套属性，用来描述这张图片。",
+    "de": "Das Open-Graph-Protokoll nennt vier Pflichtangaben für eine Seite: og:title, og:type, og:image und og:url. og:image ist die URL eines Bildes, das die Seite vertritt. og:image:alt ist eine zugehörige Eigenschaft, die das Bild beschreibt."
+   },
+   "src": "https://ogp.me/"
+  },
+  {
+   "t": {
+    "en": "Meta's sharing page lists og:image:width and og:image:height, the image width and height in pixels, and says setting them helps the image load properly the first time it is shared. It lists image/jpeg, image/gif and image/png as the image types.",
+    "th": "หน้าการแชร์ของ Meta ระบุ og:image:width และ og:image:height คือความกว้างและความสูงของภาพเป็นพิกเซล และระบุว่าการตั้งค่านี้ช่วยให้ภาพโหลดถูกต้องตั้งแต่แชร์ครั้งแรก พร้อมชนิดภาพ image/jpeg, image/gif และ image/png",
+    "my": "Meta ၏ မျှဝေမှုစာမျက်နှာတွင် og:image:width နှင့် og:image:height (ပုံ၏ အကျယ်နှင့် အမြင့်၊ pixel ဖြင့်) ကို ဖော်ပြပြီး ၎င်းတို့ကို သတ်မှတ်ခြင်းက ပုံကို ပထမဆုံး မျှဝေချိန်မှာပင် မှန်ကန်စွာ တင်နိုင်စေသည်ဟု ဆိုသည်။ ပုံအမျိုးအစားများအဖြစ် image/jpeg၊ image/gif နှင့် image/png ကို ဖော်ပြသည်။",
+    "zh": "Meta 的分享页面列出 og:image:width 和 og:image:height（图片的宽和高，单位像素），并说设置它们有助于图片在第一次被分享时正确加载。图片类型列为 image/jpeg、image/gif 和 image/png。",
+    "de": "Metas Seite zum Teilen nennt og:image:width und og:image:height, Breite und Höhe des Bildes in Pixeln, und schreibt, mit diesen Angaben lade das Bild schon beim ersten Teilen richtig. Als Bildtypen nennt sie image/jpeg, image/gif und image/png."
+   },
+   "src": "https://developers.facebook.com/docs/sharing/webmasters"
+  },
+  {
+   "t": {
+    "en": "Meta's page says images are cached by URL and are not updated unless the URL changes. Its Sharing Debugger triggers a scrape of the page and shows the meta tags the crawler reads and any errors it finds.",
+    "th": "หน้าของ Meta ระบุว่าภาพถูกแคชตาม URL และจะไม่อัปเดตเว้นแต่ URL เปลี่ยน Sharing Debugger ของ Meta สั่งดึงข้อมูลหน้าใหม่และแสดงเมตาแท็กที่ตัวรวบรวมข้อมูลอ่านได้ พร้อมข้อผิดพลาดที่พบ",
+    "my": "Meta ၏ စာမျက်နှာတွင် ပုံများကို URL အလိုက် cache လုပ်ထားပြီး URL မပြောင်းလျှင် မပြောင်းလဲဟု ဆိုသည်။ ၎င်း၏ Sharing Debugger သည် စာမျက်နှာကို ပြန်ဖတ်စေပြီး crawler ဖတ်သော meta tag များကို တွေ့ရှိသော အမှားများနှင့်တကွ ပြသသည်။",
+    "zh": "Meta 的页面写明，图片按 URL 缓存，除非 URL 变化否则不会更新。它的 Sharing Debugger 会重新抓取页面，并显示爬虫读取到的 meta 标签，以及发现的错误。",
+    "de": "Laut Metas Seite werden Bilder nach URL zwischengespeichert und nur aktualisiert, wenn sich die URL ändert. Der Sharing Debugger stösst einen neuen Abruf der Seite an und zeigt die Meta-Tags, die der Crawler liest, samt gefundenen Fehlern."
+   },
+   "src": "https://developers.facebook.com/docs/sharing/webmasters"
+  },
+  {
+   "t": {
+    "en": "Mastodon's documentation describes a preview card as a rich preview of a linked URL, generated using OpenGraph tags, with the title and description of the linked resource and a preview thumbnail.",
+    "th": "เอกสารของ Mastodon อธิบายว่า preview card คือตัวอย่างของ URL ที่ลิงก์ สร้างจาก OpenGraph tag มีหัวข้อและคำอธิบายของหน้าที่ลิงก์ และภาพย่อ",
+    "my": "Mastodon ၏ စာတမ်းတွင် preview card ကို လင့်ခ်ချိတ်ထားသော URL ၏ ကြိုတင်ကြည့်ရှုမှုအဖြစ် ဖော်ပြပြီး OpenGraph tag များဖြင့် ဖန်တီးကာ လင့်ခ်ထားသော စာမျက်နှာ၏ ခေါင်းစဉ်၊ ဖော်ပြချက်နှင့် thumbnail ပါဝင်သည်ဟု ဆိုသည်။",
+    "zh": "Mastodon 文档把预览卡片描述为所链接 URL 的丰富预览，由 OpenGraph 标签生成，含被链接页面的标题、描述和预览缩略图。",
+    "de": "Die Mastodon-Dokumentation beschreibt eine Vorschaukarte als Vorschau einer verlinkten URL, erzeugt aus OpenGraph-Tags, mit Titel und Beschreibung der verlinkten Ressource und einem Vorschaubild."
+   },
+   "src": "https://docs.joinmastodon.org/entities/PreviewCard/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Bannerbear, an image service (one image render takes one credit)",
+    "th": "Bannerbear บริการสร้างภาพ (เรนเดอร์ภาพหนึ่งภาพใช้ 1 เครดิต)",
+    "my": "Bannerbear ပုံဖန်တီးမှုဝန်ဆောင်မှု (ပုံတစ်ပုံ render လုပ်ရန် credit 1 ခု သုံးသည်)",
+    "zh": "Bannerbear 图片生成服务（渲染一张图用 1 个点数）",
+    "de": "Bannerbear, ein Bilddienst (ein Bild zu rendern braucht einen Credit)"
+   },
+   "p": {
+    "en": "US$49, US$149 and US$299 a month, with 1,000, 10,000 and 50,000 credits",
+    "th": "US$49, US$149 และ US$299 ต่อเดือน พร้อม 1,000, 10,000 และ 50,000 เครดิต",
+    "my": "တစ်လ US$49၊ US$149 နှင့် US$299၊ credit 1,000၊ 10,000 နှင့် 50,000 အသီးသီးပါ",
+    "zh": "每月 US$49、US$149 和 US$299，分别含 1,000、10,000 和 50,000 点数",
+    "de": "US$49, US$149 und US$299 im Monat, mit 1,000, 10,000 und 50,000 Credits"
+   },
+   "src": "https://www.bannerbear.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "opengraph.io, a link preview service (a basic call takes 1 credit, a screenshot 20)",
+    "th": "opengraph.io บริการภาพตัวอย่างลิงก์ (เรียกใช้พื้นฐาน 1 เครดิต ภาพหน้าจอ 20 เครดิต)",
+    "my": "opengraph.io လင့်ခ်ကြိုတင်ကြည့်ပုံဝန်ဆောင်မှု (အခြေခံခေါ်ယူမှု credit 1၊ screenshot credit 20)",
+    "zh": "opengraph.io 链接预览服务（基础调用 1 个点数，截图 20 个）",
+    "de": "opengraph.io, ein Dienst für Link-Vorschauen (ein einfacher Aufruf braucht 1 Credit, ein Screenshot 20)"
+   },
+   "p": {
+    "en": "US$25, US$100 and US$250 a month, with 50,000, 250,000 and 1,000,000 credits",
+    "th": "US$25, US$100 และ US$250 ต่อเดือน พร้อม 50,000, 250,000 และ 1,000,000 เครดิต",
+    "my": "တစ်လ US$25၊ US$100 နှင့် US$250၊ credit 50,000၊ 250,000 နှင့် 1,000,000 အသီးသီးပါ",
+    "zh": "每月 US$25、US$100 和 US$250，分别含 50,000、250,000 和 1,000,000 点数",
+    "de": "US$25, US$100 und US$250 im Monat, mit 50,000, 250,000 und 1,000,000 Credits"
+   },
+   "src": "https://www.opengraph.io/pricing"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is an Open Graph image?",
+    "th": "Open Graph image คืออะไร",
+    "my": "Open Graph image ဆိုတာ ဘာလဲ။",
+    "zh": "什么是 Open Graph 图片？",
+    "de": "Was ist ein Open-Graph-Bild?"
+   },
+   "a": {
+    "en": "It is the image set in a page's og:image property, a URL for an image that represents the page. The Open Graph protocol lists og:title, og:type, og:image and og:url as the four required properties for a page.",
+    "th": "คือภาพที่ตั้งไว้ในคุณสมบัติ og:image ของหน้า เป็น URL ของภาพที่เป็นตัวแทนของหน้า Open Graph protocol ระบุ og:title, og:type, og:image และ og:url เป็นคุณสมบัติที่จำเป็นสี่อย่างของหน้า",
+    "my": "၎င်းသည် စာမျက်နှာ၏ og:image property တွင် သတ်မှတ်ထားသော ပုံဖြစ်ပြီး စာမျက်နှာကို ကိုယ်စားပြုသော ပုံ၏ URL ဖြစ်သည်။ Open Graph protocol သည် og:title၊ og:type၊ og:image နှင့် og:url ကို စာမျက်နှာတစ်ခုအတွက် မဖြစ်မနေ property လေးခုအဖြစ် ဖော်ပြသည်။",
+    "zh": "它是页面 og:image 属性里设置的图片，即代表该页面的图片的 URL。Open Graph 协议把 og:title、og:type、og:image 和 og:url 列为页面的四个必填属性。",
+    "de": "Es ist das Bild, das in der Eigenschaft og:image einer Seite gesetzt ist, die URL eines Bildes, das die Seite vertritt. Das Open-Graph-Protokoll nennt og:title, og:type, og:image und og:url als die vier Pflichtangaben einer Seite."
+   },
+   "src": "https://ogp.me/"
+  },
+  {
+   "q": {
+    "en": "Why does an old preview picture stay after the picture is changed?",
+    "th": "ทำไมภาพตัวอย่างเก่ายังอยู่หลังเปลี่ยนภาพ",
+    "my": "ပုံပြောင်းပြီးနောက် ကြိုတင်ကြည့်ပုံဟောင်း ဘာကြောင့် ကျန်နေသလဲ။",
+    "zh": "换了图片，为什么预览还是旧图？",
+    "de": "Warum bleibt das alte Vorschaubild, nachdem das Bild geändert wurde?"
+   },
+   "a": {
+    "en": "Meta's page says images are cached by URL and are not updated unless the URL changes. To show a new image, the page publishes it under a new URL.",
+    "th": "หน้าของ Meta ระบุว่าภาพถูกแคชตาม URL และจะไม่อัปเดตเว้นแต่ URL เปลี่ยน การแสดงภาพใหม่จึงต้องเผยแพร่ภาพนั้นภายใต้ URL ใหม่",
+    "my": "Meta ၏ စာမျက်နှာတွင် ပုံများကို URL အလိုက် cache လုပ်ထားပြီး URL မပြောင်းလျှင် မပြောင်းလဲဟု ဆိုသည်။ ပုံအသစ်ပြရန် ထိုပုံကို URL အသစ်အောက်တွင် ထုတ်ပြန်ရသည်။",
+    "zh": "Meta 的页面写明，图片按 URL 缓存，除非 URL 变化否则不会更新。要显示新图片，就要把它发布在新的 URL 下。",
+    "de": "Laut Metas Seite werden Bilder nach URL zwischengespeichert und nur aktualisiert, wenn sich die URL ändert. Um ein neues Bild zu zeigen, wird es unter einer neuen URL veröffentlicht."
+   },
+   "src": "https://developers.facebook.com/docs/sharing/webmasters"
+  },
+  {
+   "q": {
+    "en": "Which file types can a link preview image be?",
+    "th": "ภาพตัวอย่างลิงก์เป็นไฟล์ชนิดใดได้บ้าง",
+    "my": "လင့်ခ်ကြိုတင်ကြည့်ပုံသည် ဖိုင်အမျိုးအစား ဘာတွေ ဖြစ်နိုင်သလဲ။",
+    "zh": "链接预览图可以是哪些文件类型？",
+    "de": "Welche Dateitypen kann ein Link-Vorschaubild haben?"
+   },
+   "a": {
+    "en": "Meta's sharing page lists image/jpeg, image/gif and image/png as the types for og:image:type. It also lists the image width and height in pixels, which it says help the image load properly the first time it is shared.",
+    "th": "หน้าการแชร์ของ Meta ระบุ image/jpeg, image/gif และ image/png เป็นชนิดของ og:image:type และระบุความกว้างความสูงของภาพเป็นพิกเซล ซึ่งช่วยให้ภาพโหลดถูกต้องตั้งแต่แชร์ครั้งแรก",
+    "my": "Meta ၏ မျှဝေမှုစာမျက်နှာတွင် og:image:type အတွက် image/jpeg၊ image/gif နှင့် image/png ကို ဖော်ပြသည်။ ပုံ၏ အကျယ်နှင့် အမြင့်ကို pixel ဖြင့်လည်း ဖော်ပြပြီး ၎င်းတို့က ပုံကို ပထမဆုံး မျှဝေချိန်မှာပင် မှန်ကန်စွာ တင်နိုင်စေသည်ဟု ဆိုသည်။",
+    "zh": "Meta 的分享页面把 image/jpeg、image/gif 和 image/png 列为 og:image:type 的类型。它还列出以像素计的图片宽和高，并说这有助于图片在第一次被分享时正确加载。",
+    "de": "Auf Metas Seite zum Teilen stehen image/jpeg, image/gif und image/png als Typen für og:image:type. Dazu nennt sie Breite und Höhe des Bildes in Pixeln, die laut Seite helfen, dass das Bild schon beim ersten Teilen richtig lädt."
+   },
+   "src": "https://developers.facebook.com/docs/sharing/webmasters"
+  },
+  {
+   "q": {
+    "en": "Where does a Mastodon link preview come from?",
+    "th": "ตัวอย่างลิงก์บน Mastodon มาจากไหน",
+    "my": "Mastodon လင့်ခ်ကြိုတင်ကြည့်ရှုမှုသည် ဘယ်ကလာသလဲ။",
+    "zh": "Mastodon 上的链接预览从哪里来？",
+    "de": "Woher kommt eine Link-Vorschau auf Mastodon?"
+   },
+   "a": {
+    "en": "Mastodon's documentation says a preview card is generated using OpenGraph tags from the linked URL. It carries the title and description of the linked resource and a preview thumbnail.",
+    "th": "เอกสารของ Mastodon ระบุว่า preview card สร้างจาก OpenGraph tag ของ URL ที่ลิงก์ มีหัวข้อและคำอธิบายของหน้าที่ลิงก์ และภาพย่อ",
+    "my": "Mastodon ၏ စာတမ်းတွင် preview card ကို လင့်ခ်ချိတ်ထားသော URL ၏ OpenGraph tag များဖြင့် ဖန်တီးသည်ဟု ဆိုသည်။ ၎င်းတွင် လင့်ခ်ထားသော စာမျက်နှာ၏ ခေါင်းစဉ်၊ ဖော်ပြချက်နှင့် thumbnail ပါသည်။",
+    "zh": "Mastodon 文档写明，预览卡片由所链接 URL 的 OpenGraph 标签生成，带有被链接页面的标题、描述和预览缩略图。",
+    "de": "Laut der Mastodon-Dokumentation wird eine Vorschaukarte aus den OpenGraph-Tags der verlinkten URL erzeugt. Sie trägt Titel und Beschreibung der verlinkten Ressource und ein Vorschaubild."
+   },
+   "src": "https://docs.joinmastodon.org/entities/PreviewCard/"
+  },
+  {
+   "q": {
+    "en": "How much do tools that make share images cost?",
+    "th": "เครื่องมือสร้างภาพแชร์ราคาเท่าไร",
+    "my": "မျှဝေရန်ပုံ ဖန်တီးသည့်ကိရိယာများ ဈေး ဘယ်လောက်လဲ။",
+    "zh": "生成分享图的工具要多少钱？",
+    "de": "Was kosten Werkzeuge, die Bilder zum Teilen erzeugen?"
+   },
+   "a": {
+    "en": "Bannerbear's pricing page lists US$49, US$149 and US$299 a month, in US dollars, with 1,000, 10,000 and 50,000 credits. One image render takes one credit, and the cost rises with the number of formats and the scale.",
+    "th": "หน้าราคาของ Bannerbear ระบุ US$49, US$149 และ US$299 ต่อเดือน เป็นดอลลาร์สหรัฐ พร้อม 1,000, 10,000 และ 50,000 เครดิต เรนเดอร์ภาพหนึ่งภาพใช้ 1 เครดิต และเครดิตที่ใช้เพิ่มตามจำนวนรูปแบบไฟล์และสเกล",
+    "my": "Bannerbear ၏ ဈေးနှုန်းစာမျက်နှာတွင် US ဒေါ်လာဖြင့် တစ်လ US$49၊ US$149 နှင့် US$299 ဟု ဖော်ပြပြီး credit 1,000၊ 10,000 နှင့် 50,000 အသီးသီးပါသည်။ ပုံတစ်ပုံ render လုပ်ရန် credit 1 ခု သုံးပြီး ဖိုင်ပုံစံအရေအတွက်နှင့် scale အလိုက် ပိုကုန်သည်။",
+    "zh": "Bannerbear 的价格页以美元列出每月 US$49、US$149 和 US$299，分别含 1,000、10,000 和 50,000 点数。渲染一张图用 1 个点数，格式越多、缩放越大，用得越多。",
+    "de": "Auf Bannerbears Preisseite stehen US$49, US$149 und US$299 im Monat, in US-Dollar, mit 1,000, 10,000 und 50,000 Credits. Ein Bild zu rendern braucht einen Credit, und der Verbrauch steigt mit der Zahl der Formate und dem Massstab."
+   },
+   "src": "https://www.bannerbear.com/pricing/"
+  }
+ ],
+ "related": [
+  "web-found",
+  "site",
+  "social",
+  "graphics",
+  "tap-card",
+  "tribute"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "The Open Graph protocol",
+    "th": "Open Graph protocol",
+    "my": "Open Graph protocol",
+    "zh": "Open Graph 协议",
+    "de": "Das Open-Graph-Protokoll"
+   },
+   "href": "https://ogp.me/"
+  },
+  {
+   "t": {
+    "en": "Meta: sharing for webmasters",
+    "th": "Meta: การแชร์สำหรับผู้ดูแลเว็บ",
+    "my": "Meta: ဝက်ဘ်မာစတာများအတွက် မျှဝေမှု",
+    "zh": "Meta：面向网站管理员的分享说明",
+    "de": "Meta: Teilen für Webmaster"
+   },
+   "href": "https://developers.facebook.com/docs/sharing/webmasters"
+  }
+ ],
+ "glyphs": [
+  "share",
+  "camera",
+  "link"
+ ]
+}

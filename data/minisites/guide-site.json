@@ -1,0 +1,309 @@
+{
+ "id": "guide-site",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A town, a hotel or a guesthouse gives visitors a page of where to go, eat and walk, with a route they follow on their own.",
+  "th": "เมือง โรงแรม หรือเกสต์เฮาส์ให้ผู้มาเยือนมีหน้าบอกว่าไปไหน กินอะไร เดินทางไหน พร้อมเส้นทางที่เดินตามเองได้",
+  "my": "မြို့၊ ဟိုတယ် သို့မဟုတ် တည်းခိုခန်းတစ်ခုက ဧည့်သည်များအား ဘယ်သွားရမည်၊ ဘာစားရမည်၊ ဘယ်လမ်းလျှောက်ရမည်ကို စာမျက်နှာတစ်ခုတွင် ပြပေးပြီး ကိုယ်တိုင်လိုက်လျှောက်နိုင်သည့် လမ်းကြောင်းလည်း ပါသည်။",
+  "zh": "城镇、酒店或民宿给访客一个页面，写明去哪玩、吃什么、怎么走，附一条可以自己跟着走的路线。",
+  "de": "Ein Ort, ein Hotel oder eine Pension gibt Gästen eine Seite mit Zielen, Esslokalen und Spaziergängen, samt einer Route, der sie auf eigene Faust folgen."
+ },
+ "n": {
+  "de": "Reiseführer-Seite für Ihren Ort oder Ihr Hotel"
+ },
+ "l": {
+  "de": "Wo man hingeht, isst und spazieren geht, mit Routenkarte."
+ },
+ "glyphs": [
+  "compass",
+  "chedi",
+  "pin"
+ ],
+ "steps": [
+  {
+   "db": "typewriter",
+   "t": {
+    "en": "Where to go, eat and walk is written up, in Thai and English.",
+    "th": "เขียนที่เที่ยว ที่กิน และทางเดิน ทั้งไทยและอังกฤษ",
+    "my": "သွားရန်၊ စားရန်၊ လမ်းလျှောက်ရန် နေရာများကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ရေးသားသည်။",
+    "zh": "用泰文和英文写好去哪玩、吃什么、怎么走。",
+    "de": "Wo man hingeht, isst und spaziert, wird auf Thai und Englisch beschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "compass",
+   "t": {
+    "en": "A self-guided route is set on a map.",
+    "th": "กำหนดเส้นทางเที่ยวเองบนแผนที่",
+    "my": "ကိုယ်တိုင်လိုက်နိုင်သော လမ်းကြောင်းကို မြေပုံပေါ်တွင် သတ်မှတ်သည်။",
+    "zh": "在地图上设好可自助游的路线。",
+    "de": "Eine Route für die Erkundung auf eigene Faust wird auf der Karte festgelegt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接下来",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "earth",
+   "t": {
+    "en": "The guide goes online for your town or hotel.",
+    "th": "เว็บไกด์ของเมืองหรือโรงแรมของคุณขึ้นออนไลน์",
+    "my": "သင့်မြို့ သို့မဟုတ် ဟိုတယ်အတွက် လမ်းညွှန်ကို အွန်လိုင်းတင်သည်။",
+    "zh": "您的城镇或酒店的导览上线。",
+    "de": "Der Reiseführer für Ihren Ort oder Ihr Hotel geht online."
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Bernama reported on 6 January 2026 that Thailand received 32,974,321 foreign visitors in 2025.",
+    "th": "Bernama รายงานเมื่อ 6 มกราคม 2026 ว่าปี 2025 ไทยมีนักท่องเที่ยวต่างชาติ 32,974,321 คน",
+    "my": "Bernama က 2026 ဇန်နဝါရီ 6 တွင် ထိုင်းနိုင်ငံသို့ 2025 ခုနှစ်၌ နိုင်ငံခြားခရီးသည် 32,974,321 ဦး ရောက်ရှိခဲ့ကြောင်း ဖော်ပြခဲ့သည်။",
+    "zh": "Bernama 于 2026 年 1 月 6 日报道，泰国 2025 年接待外国游客 32,974,321 人。",
+    "de": "Bernama berichtete am 6. Januar 2026, dass Thailand 2025 insgesamt 32,974,321 ausländische Besucher empfing."
+   },
+   "src": "https://www.bernama.com/en/news.php?id=2509419"
+  },
+  {
+   "t": {
+    "en": "The White Temple in Chiang Rai (Wat Rong Khun) charges a foreign adult ฿200.",
+    "th": "วัดร่องขุ่นในเชียงรายเก็บค่าเข้าชมชาวต่างชาติผู้ใหญ่ ฿200",
+    "my": "ချင်းရိုင်ရှိ ဝပ်ရုံခွန် (ဘုရားဖြူ) တွင် နိုင်ငံခြားလူကြီးတစ်ဦးလျှင် ฿200 ကောက်ခံသည်။",
+    "zh": "清莱白庙（龙昆寺）对外国成人收费 ฿200。",
+    "de": "Der Weisse Tempel in Chiang Rai (Wat Rong Khun) verlangt von ausländischen Erwachsenen ฿200."
+   },
+   "src": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai's burning season runs about February to April; open burning was banned from 1 January to 31 May 2026.",
+    "th": "ฤดูหมอกควันเชียงใหม่ราวกุมภาพันธ์ถึงเมษายน ปี 2569 ห้ามเผาในที่โล่ง 1 มกราคมถึง 31 พฤษภาคม",
+    "my": "ချင်းမိုင် မီးရှို့ရာသီ ဖေဖော်ဝါရီမှ ဧပြီခန့်; 2026 ဇန်နဝါရီ 1 မှ မေ 31 အထိ ပွင့်လင်းမီးရှို့ခြင်း တားမြစ်ထားသည်။",
+    "zh": "清迈烧荒季约在二月至四月；2026 年 1 月 1 日至 5 月 31 日禁止露天焚烧。",
+    "de": "Die Brandsaison in Chiang Mai dauert etwa von Februar bis April; offenes Verbrennen war vom 1. Januar bis 31. Mai 2026 verboten."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai's 2025 order barred lantern release in six zones, with up to five years in prison or ฿200,000.",
+    "th": "ปี 2568 เชียงใหม่ห้ามปล่อยโคมในหกเขต โทษจำคุกไม่เกินห้าปีหรือปรับ ฿200,000",
+    "my": "2025 ချင်းမိုင် အမိန့်က ဇုန်ခြောက်ခုတွင် မီးအိမ်လွှတ်ခြင်းကို တားမြစ်ပြီး ထောင်ငါးနှစ် သို့မဟုတ် ฿200,000 အထိ။",
+    "zh": "清迈 2025 年禁令在六个区域禁放天灯，最高监禁五年或罚 ฿200,000。",
+    "de": "Eine Anordnung von Chiang Mai aus dem Jahr 2025 verbot das Steigenlassen von Laternen in sechs Zonen, mit bis zu fünf Jahren Haft oder ฿200,000."
+   },
+   "src": "https://www.timeout.com/chiang-mai/news/yi-peng-lanterns-grounded-over-public-safety-concerns-101025"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Google Maps, map on your page (Maps JavaScript API)",
+    "th": "Google Maps แผนที่บนหน้าเว็บ (Maps JavaScript API)",
+    "my": "Google Maps - သင့်စာမျက်နှာပေါ်ရှိ မြေပုံ (Maps JavaScript API)",
+    "zh": "Google 地图：网页上的地图（Maps JavaScript API）",
+    "de": "Google Maps, Karte auf Ihrer Seite (Maps JavaScript API)"
+   },
+   "p": {
+    "en": "10,000 map loads a month free, then US$7 per 1,000",
+    "th": "โหลดแผนที่ 10,000 ครั้งต่อเดือนฟรี หลังจากนั้น 1,000 ครั้งละ US$7",
+    "my": "တစ်လ မြေပုံဖွင့်ခြင်း 10,000 အခမဲ့၊ ထို့နောက် 1,000 လျှင် US$7",
+    "zh": "每月 10,000 次地图加载免费，之后每 1,000 次 US$7",
+    "de": "10,000 Kartenladungen im Monat kostenlos, danach US$7 pro 1,000"
+   },
+   "src": "https://developers.google.com/maps/billing-and-pricing/pricing"
+  },
+  {
+   "t": {
+    "en": "Website for a tour or travel business, Fastwork listing (6 pages, 14 days)",
+    "th": "เว็บไซต์บริษัททัวร์หรือธุรกิจท่องเที่ยว รายการบน Fastwork (6 หน้า 14 วัน)",
+    "my": "Fastwork စာရင်း - ခရီးသွားကုမ္ပဏီ ဝက်ဘ်ဆိုက် (6 မျက်နှာ၊ 14 ရက်)",
+    "zh": "Fastwork 上的旅行社网站服务（6 页，14 天）",
+    "de": "Website für Reiseveranstalter, Angebot auf Fastwork (6 Seiten, 14 Tage)"
+   },
+   "p": {
+    "en": "from ฿9,900",
+    "th": "เริ่ม ฿9,900",
+    "my": "฿9,900 မှစ၍",
+    "zh": "฿9,900 起",
+    "de": "ab ฿9,900"
+   },
+   "src": "https://fastwork.co/user/aizen7/web-development-39587317"
+  },
+  {
+   "t": {
+    "en": "Website design and development by WordPress experts, Codeable",
+    "th": "ออกแบบและพัฒนาเว็บไซต์โดยผู้เชี่ยวชาญ WordPress ของ Codeable",
+    "my": "Codeable WordPress ကျွမ်းကျင်သူများ၏ ဝက်ဘ်ဆိုက်ဒီဇိုင်းနှင့် ဖန်တီးမှု",
+    "zh": "Codeable 的 WordPress 专家做网站设计与开发",
+    "de": "Website-Gestaltung und -Entwicklung durch WordPress-Experten, Codeable"
+   },
+   "p": {
+    "en": "from US$2,500",
+    "th": "เริ่ม US$2,500",
+    "my": "US$2,500 မှစ၍",
+    "zh": "US$2,500 起",
+    "de": "ab US$2,500"
+   },
+   "src": "https://www.codeable.io/pricing/"
+  },
+  {
+   "t": {
+    "en": ".co.th domain",
+    "th": ".co.th โดเมน",
+    "my": ".co.th ဒိုမိန်း",
+    "zh": ".co.th 域名",
+    "de": ".co.th-Domain"
+   },
+   "p": {
+    "en": "from ฿856 a year",
+    "th": "เริ่มปีละ ฿856",
+    "my": "တစ်နှစ် ฿856 မှစ၍",
+    "zh": "每年 ฿856 起",
+    "de": "ab ฿856 im Jahr"
+   },
+   "src": "https://www.thnic.co.th/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can I use OpenStreetMap for a map for visitors on my site?",
+    "th": "ใช้ OpenStreetMap ทำแผนที่ท่องเที่ยวบนเว็บของฉันได้ไหม",
+    "my": "ကျွန်ုပ်၏ဆိုက်ရှိ ခရီးသွားမြေပုံအတွက် OpenStreetMap ကို သုံးနိုင်ပါသလား။",
+    "zh": "我的网站能用 OpenStreetMap 做游览地图吗？",
+    "de": "Kann ich OpenStreetMap für eine Karte für Besucher auf meiner Website nutzen?"
+   },
+   "a": {
+    "en": "The OpenStreetMap tile servers serve apps and websites on conditions: attribution on the map, an accurate Referer header and no bulk downloading. The policy adds that the servers run on donations and sponsorship, with limited capacity.",
+    "th": "เซิร์ฟเวอร์แผ่นแผนที่ของ OpenStreetMap ให้บริการแอปและเว็บไซต์ตามเงื่อนไข คือแสดงการอ้างอิงบนแผนที่ ส่ง Referer ที่ถูกต้อง และไม่ดาวน์โหลดจำนวนมาก นโยบายระบุเพิ่มว่าเซิร์ฟเวอร์ดำเนินการด้วยเงินบริจาคและการสนับสนุน ความจุจึงจำกัด",
+    "my": "OpenStreetMap မြေပုံအချပ်ဆာဗာများသည် အက်ပ်နှင့် ဝက်ဘ်ဆိုက်များကို အခြေအနေများဖြင့် ဝန်ဆောင်ပေးသည် — မြေပုံပေါ်တွင် အရင်းအမြစ်ဖော်ပြချက်၊ မှန်ကန်သော Referer header နှင့် အစုလိုက်ဒေါင်းလုဒ် မလုပ်ခြင်း။ မူဝါဒတွင် ဆာဗာများကို လှူဒါန်းငွေနှင့် ပံ့ပိုးမှုဖြင့် လည်ပတ်ပြီး စွမ်းရည် ကန့်သတ်ချက်ရှိကြောင်းလည်း ပါသည်။",
+    "zh": "OpenStreetMap 的瓦片服务器向应用和网站提供服务，条件是：在地图上署名、提供准确的 Referer 头、不批量下载。政策还写明，服务器靠捐款和赞助运转，容量有限。",
+    "de": "Die Kachelserver von OpenStreetMap bedienen Apps und Websites unter Bedingungen: Namensnennung auf der Karte, ein korrekter Referer-Header und kein Massen-Download. Die Richtlinie hält zudem fest, dass die Server über Spenden und Sponsoring finanziert werden und ihre Kapazität begrenzt ist."
+   },
+   "src": "https://operations.osmfoundation.org/policies/tiles/"
+  },
+  {
+   "q": {
+    "en": "What does a Google map on my site cost?",
+    "th": "แผนที่ Google บนเว็บของฉันราคาเท่าไร",
+    "my": "ကျွန်ုပ်၏ဆိုက်ပေါ်ရှိ Google မြေပုံသည် ဘယ်လောက်ကျသလဲ။",
+    "zh": "我网站上的 Google 地图要多少钱？",
+    "de": "Was kostet eine Google-Karte auf meiner Website?"
+   },
+   "a": {
+    "en": "Google Maps Platform gives 10,000 free map loads a month for the Maps JavaScript API, then US$7 per 1,000. Static Maps is free for the first 10,000, then US$2 per 1,000. The page was last updated on 2026-10-21.",
+    "th": "Google Maps Platform ให้โหลดแผนที่ Maps JavaScript API ฟรี 10,000 ครั้งต่อเดือน หลังจากนั้น 1,000 ครั้งละ US$7 Static Maps ฟรี 10,000 ครั้งแรก แล้ว 1,000 ครั้งละ US$2 หน้านี้อัปเดตล่าสุดเมื่อ 2026-10-21",
+    "my": "Google Maps Platform သည် Maps JavaScript API အတွက် တစ်လ မြေပုံဖွင့်ခြင်း 10,000 အခမဲ့ပေးပြီး ထို့နောက် 1,000 လျှင် US$7 ဖြစ်သည်။ Static Maps သည် ပထမ 10,000 အခမဲ့ပြီး 1,000 လျှင် US$2 ဖြစ်သည်။ စာမျက်နှာကို 2026-10-21 တွင် နောက်ဆုံးပြင်ဆင်ခဲ့သည်။",
+    "zh": "Google Maps Platform 对 Maps JavaScript API 每月提供 10,000 次免费地图加载，之后每 1,000 次 US$7。Static Maps 前 10,000 次免费，之后每 1,000 次 US$2。该页面最后更新于 2026-10-21。",
+    "de": "Google Maps Platform gibt für die Maps JavaScript API 10,000 kostenlose Kartenladungen im Monat, danach US$7 pro 1,000. Static Maps ist für die ersten 10,000 kostenlos, danach US$2 pro 1,000. Die Seite wurde zuletzt am 2026-10-21 aktualisiert."
+   },
+   "src": "https://developers.google.com/maps/billing-and-pricing/pricing"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner work as a tour guide in Thailand?",
+    "th": "ชาวต่างชาติทำงานเป็นมัคคุเทศก์ในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦးသည် ထိုင်းတွင် ဧည့်လမ်းညွှန်အဖြစ် အလုပ်လုပ်နိုင်ပါသလား။",
+    "zh": "外国人可以在泰国做导游吗？",
+    "de": "Darf ein Ausländer in Thailand als Reiseleiter arbeiten?"
+   },
+   "a": {
+    "en": "Thai law bars foreigners from working as tour guides, as Khaosod English reported in March 2023.",
+    "th": "กฎหมายไทยห้ามชาวต่างชาติทำงานเป็นมัคคุเทศก์ ตามที่ Khaosod English รายงานเมื่อมีนาคม 2023",
+    "my": "ထိုင်းဥပဒေက နိုင်ငံခြားသားများကို ဧည့်လမ်းညွှန်အဖြစ် အလုပ်လုပ်ခွင့် မပြုပါ၊ Khaosod English က 2023 မတ်လတွင် ဖော်ပြခဲ့သည်။",
+    "zh": "泰国法律禁止外国人从事导游工作，Khaosod English 于 2023 年 3 月作了报道。",
+    "de": "Das thailändische Recht verbietet Ausländern die Arbeit als Reiseleiter, wie Khaosod English im März 2023 berichtete."
+   },
+   "src": "https://www.khaosodenglish.com/news/2023/03/30/foreigners-are-prohibited-from-working-as-tour-guides-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Can a guide link open Google Maps directions?",
+    "th": "ลิงก์ในเว็บไกด์เปิดเส้นทางใน Google Maps ได้ไหม",
+    "my": "လမ်းညွှန်ဆိုက်ရှိ လင့်ခ်တစ်ခုက Google Maps လမ်းကြောင်းကို ဖွင့်ပေးနိုင်ပါသလား။",
+    "zh": "导览页面的链接能打开 Google 地图的路线吗？",
+    "de": "Kann ein Link im Reiseführer die Route in Google Maps öffnen?"
+   },
+   "a": {
+    "en": "Maps URLs build a cross-platform link that launches Google Maps for a search, directions, a map or Street View. The page says no Google API key is needed.",
+    "th": "Maps URLs สร้างลิงก์ข้ามแพลตฟอร์มเพื่อเปิด Google Maps ไปยังการค้นหา เส้นทาง แผนที่ หรือ Street View หน้านั้นระบุว่าไม่ต้องมี Google API key",
+    "my": "Maps URL များက ရှာဖွေခြင်း၊ လမ်းညွှန်ချက်၊ မြေပုံ သို့မဟုတ် Street View အတွက် Google Maps ကို ဖွင့်ပေးသည့် ပလက်ဖောင်းစုံသုံး လင့်ခ်တစ်ခု တည်ဆောက်ပေးသည်။ Google API key မလိုကြောင်း စာမျက်နှာတွင် ဖော်ပြထားသည်။",
+    "zh": "Maps URLs 生成跨平台链接，可打开 Google 地图的搜索、路线、地图或街景。该页面写明不需要 Google API 密钥。",
+    "de": "Maps URLs erzeugen einen plattformübergreifenden Link, der Google Maps für eine Suche, eine Route, eine Karte oder Street View öffnet. Die Seite hält fest, dass kein Google-API-Schlüssel nötig ist."
+   },
+   "src": "https://developers.google.com/maps/documentation/urls/get-started"
+  }
+ ],
+ "related": [
+  "directory",
+  "web-search",
+  "car-guide",
+  "tour-day",
+  "drawn",
+  "stay-booking"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang route planner: pick up to 9 stops, see each leg on foot or by scooter, share the trip as one link",
+    "th": "ตัววางแผนเส้นทางของมดแดง: เลือกได้ถึง 9 จุด ดูระยะแต่ละช่วงเดินหรือขี่มอเตอร์ไซค์ แชร์ทั้งทริปเป็นลิงก์เดียว",
+    "my": "Mot Dang လမ်းကြောင်းစီစဉ်ကိရိယာ - မှတ်တိုင် 9 ခုအထိ ရွေးပါ၊ ခြေလျင် သို့မဟုတ် စကူတာဖြင့် အပိုင်းတစ်ခုချင်းစီကို ကြည့်ပါ၊ ခရီးစဉ်တစ်ခုလုံးကို လင့်ခ်တစ်ခုတည်းဖြင့် မျှဝေပါ",
+    "zh": "Mot Dang 路线规划：最多选 9 个站点，查看每一段步行或骑摩托的距离，整趟行程以一条链接分享",
+    "de": "Mot Dang-Routenplaner: bis zu 9 Stopps wählen, jede Etappe zu Fuss oder mit dem Roller sehen, die Tour als einen Link teilen"
+   },
+   "href": "https://motdang.net/plan"
+  },
+  {
+   "t": {
+    "en": "OpenStreetMap: tile usage policy",
+    "th": "OpenStreetMap: นโยบายการใช้แผ่นแผนที่",
+    "my": "OpenStreetMap - မြေပုံအချပ် အသုံးပြုမူဝါဒ",
+    "zh": "OpenStreetMap：瓦片使用政策",
+    "de": "OpenStreetMap: Richtlinie zur Nutzung der Kacheln"
+   },
+   "href": "https://operations.osmfoundation.org/policies/tiles/"
+  }
+ ]
+}

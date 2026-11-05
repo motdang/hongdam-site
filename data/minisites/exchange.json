@@ -1,0 +1,252 @@
+{
+ "id": "exchange",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People who run a money changer want customers to see today's buy and sell rates before they walk in.",
+  "th": "คนที่เปิดร้านแลกเงินอยากให้ลูกค้าเห็นอัตราซื้อขายของวันนี้ก่อนเดินเข้าร้าน",
+  "my": "ငွေလဲကောင်တာ ဖွင့်သူများက ဖောက်သည်များ ဆိုင်ထဲမဝင်မီ ယနေ့ ဝယ်နှုန်းနှင့် ရောင်းနှုန်းကို မြင်စေလိုသည်။",
+  "zh": "开换汇柜台的人，希望客户进门之前就能看到今天的买入价和卖出价。",
+  "de": "Wer einen Geldwechsel betreibt, möchte, dass Kunden die heutigen Ankaufs- und Verkaufskurse sehen, bevor sie hereinkommen."
+ },
+ "glyphs": [
+  "coin",
+  "earth",
+  "refresh"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "We build a page of your counter's buy and sell rates.",
+    "th": "ทำหน้าอัตราซื้อขายของเคาน์เตอร์คุณ",
+    "my": "သင့်ကောင်တာ၏ ဝယ်နှုန်း၊ ရောင်းနှုန်းများပါသော စာမျက်နှာ တည်ဆောက်ပေးသည်။",
+    "zh": "为您的柜台做一页买入价和卖出价。",
+    "de": "Wir bauen eine Seite mit den Ankaufs- und Verkaufskursen Ihres Schalters."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款之后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You change a rate.",
+    "th": "คุณเปลี่ยนอัตรา",
+    "my": "သင်က နှုန်းတစ်ခုကို ပြောင်းသည်။",
+    "zh": "您改动一个汇率。",
+    "de": "Sie ändern einen Kurs."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Any time of day",
+    "th": "เมื่อไรก็ได้",
+    "my": "အချိန်မရွေး",
+    "zh": "随时",
+    "de": "Jederzeit"
+   }
+  },
+  {
+   "db": "refresh",
+   "t": {
+    "en": "The page shows the new rate.",
+    "th": "หน้าแสดงอัตราใหม่",
+    "my": "စာမျက်နှာတွင် နှုန်းအသစ် ပြသည်။",
+    "zh": "页面显示新汇率。",
+    "de": "Die Seite zeigt den neuen Kurs."
+   },
+   "who": {
+    "en": "The page",
+    "th": "หน้าเว็บ",
+    "my": "စာမျက်နှာ",
+    "zh": "页面",
+    "de": "Die Seite"
+   },
+   "time": {
+    "en": "When you change it",
+    "th": "เมื่อคุณเปลี่ยน",
+    "my": "သင်ပြောင်းသောအခါ",
+    "zh": "改动之后",
+    "de": "Wenn Sie ändern"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In the Bank of Thailand's notice on authorized money changers (English translation, as amended), an applicant applies to the Minister of Finance through the Bank of Thailand, in March, June, September or December.",
+    "th": "ตามประกาศของธนาคารแห่งประเทศไทยว่าด้วยบุคคลรับอนุญาตแลกเปลี่ยนเงิน (ฉบับแปลภาษาอังกฤษ ที่แก้ไขเพิ่มเติม) ผู้สมัครยื่นคำขอต่อรัฐมนตรีว่าการกระทรวงการคลังผ่านธนาคารแห่งประเทศไทย ในเดือนมีนาคม มิถุนายน กันยายน หรือธันวาคม",
+    "my": "ထိုင်းနိုင်ငံ ဗဟိုဘဏ်၏ ခွင့်ပြုချက်ရ ငွေလဲသူများဆိုင်ရာ အသိပေးချက် (အင်္ဂလိပ်ဘာသာပြန်၊ ပြင်ဆင်ချက်များပါ) တွင် လျှောက်ထားသူသည် ဗဟိုဘဏ်မှတစ်ဆင့် ဘဏ္ဍာရေးဝန်ကြီးထံ မတ်လ၊ ဇွန်လ၊ စက်တင်ဘာလ သို့မဟုတ် ဒီဇင်ဘာလတွင် လျှောက်ထားသည်။",
+    "zh": "泰国央行关于授权货币兑换商的通知（英译本，含修订）规定，申请人通过泰国央行向财政部长申请，申请期为 3 月、6 月、9 月或 12 月。",
+    "de": "In der Mitteilung der Bank of Thailand zu zugelassenen Geldwechslern (englische Übersetzung, mit Änderungen) beantragt ein Bewerber die Erlaubnis beim Finanzminister über die Bank of Thailand, im März, Juni, September oder Dezember."
+   },
+   "src": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "t": {
+    "en": "The same notice has an authorized money changer display its permit, its daily buying and selling rates for each currency it buys or sells, and the words \"Authorized Money Changer License No.\" in conspicuous places in the office.",
+    "th": "ประกาศฉบับเดียวกันกำหนดให้บุคคลรับอนุญาตแลกเปลี่ยนเงินแสดงใบอนุญาต อัตราซื้อและขายรายวันของแต่ละสกุลเงินที่ซื้อหรือขาย และข้อความ \"Authorized Money Changer License No.\" ไว้ในที่เห็นได้ชัดเจนในสำนักงาน",
+    "my": "ထိုအသိပေးချက်တွင်ပင် ခွင့်ပြုချက်ရ ငွေလဲသူသည် ၎င်း၏ ခွင့်ပြုမိန့်၊ ဝယ်သည့် သို့မဟုတ် ရောင်းသည့် ငွေကြေးတစ်မျိုးချင်းစီ၏ နေ့စဉ်ဝယ်နှုန်းနှင့် ရောင်းနှုန်း၊ \"Authorized Money Changer License No.\" စာသားတို့ကို ရုံးခန်း၏ ထင်ရှားသောနေရာတွင် ဖော်ပြထားရသည်။",
+    "zh": "同一通知要求授权货币兑换商在办公场所的显眼位置展示其许可证、所买卖每种货币的每日买入价和卖出价，以及“Authorized Money Changer License No.”字样。",
+    "de": "Dieselbe Mitteilung sieht vor, dass ein zugelassener Geldwechsler seine Erlaubnis, seine täglichen Ankaufs- und Verkaufskurse für jede gehandelte Währung und die Worte «Authorized Money Changer License No.» an gut sichtbaren Stellen im Büro aushängt."
+   },
+   "src": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "t": {
+    "en": "It has the rates for foreign banknotes quoted in line with the average buying and selling rates of authorized juristic persons published by the Bank of Thailand.",
+    "th": "ประกาศกำหนดให้อัตราซื้อขายธนบัตรต่างประเทศเสนอให้สอดคล้องกับอัตราซื้อขายเฉลี่ยของนิติบุคคลรับอนุญาตที่ธนาคารแห่งประเทศไทยประกาศ",
+    "my": "ထိုအသိပေးချက်တွင် နိုင်ငံခြားဘဏ်ငွေစက္ကူများ၏ ဝယ်နှုန်းနှင့် ရောင်းနှုန်းကို ထိုင်းနိုင်ငံ ဗဟိုဘဏ်က ထုတ်ပြန်သော ခွင့်ပြုချက်ရ ဥပဒေပုဂ္ဂိုလ်များ၏ ပျမ်းမျှဝယ်နှုန်း၊ ရောင်းနှုန်းနှင့် ကိုက်ညီစွာ ကိုးကားရသည်။",
+    "zh": "通知要求外币现钞的买卖价格，与泰国央行公布的授权法人机构平均买入价和卖出价保持一致。",
+    "de": "Die Mitteilung sieht vor, dass die Kurse für ausländische Banknoten im Einklang mit den von der Bank of Thailand veröffentlichten durchschnittlichen Ankaufs- und Verkaufskursen zugelassener juristischer Personen gestellt werden."
+   },
+   "src": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "t": {
+    "en": "On 19 August 2026 the Bank of Thailand published draft principles for money changer licensing, with comments open to 18 September 2026. Tilleke & Gibbins reports that they include a pause on new applications through 2027.",
+    "th": "เมื่อวันที่ 19 สิงหาคม 2569 ธนาคารแห่งประเทศไทยเผยแพร่ร่างหลักการอนุญาตร้านแลกเงิน รับความเห็นถึง 18 กันยายน 2569 Tilleke & Gibbins รายงานว่ามีการหยุดรับคำขอใหม่ตลอดปี 2570",
+    "my": "2026 ဩဂုတ်လ 19 ရက်နေ့တွင် ထိုင်းနိုင်ငံ ဗဟိုဘဏ်က ငွေလဲသူလိုင်စင်ဆိုင်ရာ မူကြမ်းမူများကို ထုတ်ပြန်ခဲ့ပြီး 2026 စက်တင်ဘာ 18 အထိ မှတ်ချက်များ လက်ခံသည်။ ၎င်းတွင် 2027 တစ်နှစ်လုံး လျှောက်လွှာအသစ်များ ရပ်နားခြင်း ပါဝင်ကြောင်း Tilleke & Gibbins က သတင်းပို့သည်။",
+    "zh": "2026 年 8 月 19 日，泰国央行公布了货币兑换商许可的原则草案，征求意见至 2026 年 9 月 18 日。Tilleke & Gibbins 报道称，草案包括 2027 年全年暂停受理新申请。",
+    "de": "Am 19. August 2026 veröffentlichte die Bank of Thailand Entwurfsgrundsätze für die Zulassung von Geldwechslern, mit Stellungnahmen bis zum 18. September 2026. Tilleke & Gibbins berichtet, sie enthielten einen Stopp neuer Anträge während des ganzen Jahres 2027."
+   },
+   "src": "https://www.tilleke.com/insights/thailand-proposes-overhaul-of-licensing-framework-for-money-changers"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork freelancer's one-page site (domain and hosting not included)",
+    "th": "เว็บหน้าเดียวจากฟรีแลนซ์ Fastwork (ไม่รวมโดเมนและโฮสติ้ง)",
+    "my": "Fastwork ဖရီးလန်စာ၏ တစ်မျက်နှာတည်းဝက်ဘ်ဆိုက် (ဒိုမိန်းနှင့် ဟိုစ်တင် မပါ)",
+    "zh": "Fastwork 自由职业者做的单页网站（不含域名和主机）",
+    "de": "Einseitige Website eines Fastwork-Freelancers (ohne Domain und Hosting)"
+   },
+   "p": {
+    "en": "฿1,500 for one page, ฿3,500 for three to five pages",
+    "th": "฿1,500 หนึ่งหน้า ฿3,500 สามถึงห้าหน้า",
+    "my": "တစ်မျက်နှာ ฿1,500၊ သုံးမှငါးမျက်နှာ ฿3,500",
+    "zh": "单页 ฿1,500，三到五页 ฿3,500",
+    "de": "฿1,500 für eine Seite, ฿3,500 für drei bis fünf Seiten"
+   },
+   "src": "https://fastwork.co/user/poommer/web-development-45714980"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Does a money changer in Thailand have to show its rates?",
+    "th": "ร้านแลกเงินในไทยต้องแสดงอัตราแลกเปลี่ยนไหม",
+    "my": "ထိုင်းနိုင်ငံရှိ ငွေလဲကောင်တာတစ်ခုက ၎င်း၏နှုန်းများကို ပြသရသလား",
+    "zh": "泰国的换汇柜台必须公示汇率吗？",
+    "de": "Muss ein Geldwechsler in Thailand seine Kurse zeigen?"
+   },
+   "a": {
+    "en": "The Bank of Thailand's notice has an authorized money changer display its permit and its daily buying and selling rates for each currency it buys or sells, in conspicuous places in the office.",
+    "th": "ประกาศของธนาคารแห่งประเทศไทยกำหนดให้บุคคลรับอนุญาตแลกเปลี่ยนเงินแสดงใบอนุญาตและอัตราซื้อขายรายวันของแต่ละสกุลเงินที่ซื้อหรือขาย ไว้ในที่เห็นได้ชัดเจนในสำนักงาน",
+    "my": "ထိုင်းနိုင်ငံ ဗဟိုဘဏ်၏ အသိပေးချက်တွင် ခွင့်ပြုချက်ရ ငွေလဲသူသည် ၎င်း၏ ခွင့်ပြုမိန့်နှင့် ဝယ်သည့် သို့မဟုတ် ရောင်းသည့် ငွေကြေးတစ်မျိုးချင်းစီ၏ နေ့စဉ်ဝယ်နှုန်း၊ ရောင်းနှုန်းကို ရုံးခန်း၏ ထင်ရှားသောနေရာတွင် ဖော်ပြထားရသည်။",
+    "zh": "泰国央行的通知要求授权货币兑换商在办公场所的显眼位置展示许可证，以及所买卖每种货币的每日买入价和卖出价。",
+    "de": "Die Mitteilung der Bank of Thailand sieht vor, dass ein zugelassener Geldwechsler seine Erlaubnis und seine täglichen Ankaufs- und Verkaufskurse für jede gehandelte Währung an gut sichtbaren Stellen im Büro aushängt."
+   },
+   "src": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "q": {
+    "en": "Who can open a money changer in Thailand?",
+    "th": "ใครเปิดร้านแลกเงินในไทยได้บ้าง",
+    "my": "ထိုင်းနိုင်ငံတွင် ငွေလဲကောင်တာကို ဘယ်သူ ဖွင့်နိုင်သနည်း",
+    "zh": "谁可以在泰国开换汇柜台？",
+    "de": "Wer darf in Thailand einen Geldwechsel eröffnen?"
+   },
+   "a": {
+    "en": "The notice lists a hotel known to foreign guests; a company with ฿10 million paid-up capital in a business such as a large department store or a travel company; a company with ฿1 million capital whose owners and directors are Thai; a duty-free shop; a state body; and Thai-owned sole proprietorships and partnerships at the border or in areas set for tourism businesses.",
+    "th": "ประกาศระบุโรงแรมที่เป็นที่รู้จักในหมู่แขกต่างชาติ นิติบุคคลทุนชำระแล้ว ฿10 ล้านที่ทำธุรกิจ เช่น ห้างสรรพสินค้าขนาดใหญ่หรือบริษัทนำเที่ยว นิติบุคคลทุน ฿1 ล้านที่ผู้ถือหุ้นและกรรมการเป็นคนไทย ร้านค้าปลอดอากร หน่วยงานรัฐ และกิจการเจ้าของคนเดียวหรือห้างหุ้นส่วนของคนไทยที่ตั้งอยู่ในเขตชายแดนหรือพื้นที่ท่องเที่ยวที่กำหนด",
+    "my": "အသိပေးချက်တွင် နိုင်ငံခြားဧည့်သည်များ သိကျွမ်းသော ဟိုတယ်၊ ကုန်တိုက်ကြီး သို့မဟုတ် ခရီးသွားကုမ္ပဏီကဲ့သို့ လုပ်ငန်းလုပ်သည့် စာရင်းဝင်ရင်းနှီးငွေ ฿10 သန်းရှိ ကုမ္ပဏီ၊ ပိုင်ရှင်နှင့် ဒါရိုက်တာများ ထိုင်းနိုင်ငံသားဖြစ်သော ရင်းနှီးငွေ ฿1 သန်းရှိ ကုမ္ပဏီ၊ အခွန်ကင်းလွတ်ဆိုင်၊ ဌာနဆိုင်ရာအစိုးရအဖွဲ့အစည်းနှင့် နယ်စပ် သို့မဟုတ် သတ်မှတ်ခရီးသွားဒေသရှိ ထိုင်းပိုင် တစ်ဦးတည်းပိုင်လုပ်ငန်းနှင့် မိတ်ဖက်လုပ်ငန်းများကို စာရင်းပြုထားသည်။",
+    "zh": "通知列出：外国客人熟知的酒店；实缴资本 ฿1,000 万、经营大型百货商场或旅行社等业务的公司；实缴资本 ฿100 万、股东和董事均为泰国人的公司；免税店；国家机构；以及位于边境或指定旅游区、由泰国人拥有的独资企业和合伙企业。",
+    "de": "Die Mitteilung nennt ein bei ausländischen Gästen bekanntes Hotel; eine Gesellschaft mit ฿10 Millionen eingezahltem Kapital in einem Geschäft wie einem grossen Kaufhaus oder einem Reisebüro; eine Gesellschaft mit ฿1 Million Kapital, deren Inhaber und Direktoren Thailänder sind; einen Duty-free-Shop; eine staatliche Stelle; sowie Einzelunternehmen und Personengesellschaften in thailändischem Besitz an der Grenze oder in festgelegten Tourismusgebieten."
+   },
+   "src": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "q": {
+    "en": "Does a customer show ID at a money changer?",
+    "th": "ลูกค้าต้องแสดงบัตรที่ร้านแลกเงินไหม",
+    "my": "ငွေလဲကောင်တာတွင် ဖောက်သည်က မှတ်ပုံတင်ပြရသလား",
+    "zh": "在换汇柜台，客户要出示证件吗？",
+    "de": "Zeigt ein Kunde beim Geldwechsler einen Ausweis?"
+   },
+   "a": {
+    "en": "For a purchase of foreign banknotes worth ฿50,000 or more, the notice has the money changer ask the customer for a copy of an identity document, such as an identification card, a passport or an affidavit.",
+    "th": "สำหรับการซื้อธนบัตรต่างประเทศมูลค่า ฿50,000 ขึ้นไป ประกาศกำหนดให้ร้านแลกเงินขอสำเนาเอกสารระบุตัวตนจากลูกค้า เช่น บัตรประชาชน หนังสือเดินทาง หรือคำรับรอง",
+    "my": "နိုင်ငံခြားဘဏ်ငွေစက္ကူ ฿50,000 နှင့်အထက် တန်ဖိုးဝယ်ယူမှုအတွက် ငွေလဲသူက ဖောက်သည်ထံမှ မှတ်ပုံတင်ကတ်၊ နိုင်ငံကူးလက်မှတ် သို့မဟုတ် ကျမ်းကျိန်လွှာကဲ့သို့ ကိုယ်ရေးအထောက်အထား စာရွက်ပုံတူကို တောင်းရန် အသိပေးချက်က သတ်မှတ်ထားသည်။",
+    "zh": "买入价值 ฿50,000 及以上的外币现钞时，通知要求兑换商向客户索取身份证件副本，例如身份证、护照或宣誓书。",
+    "de": "Beim Ankauf ausländischer Banknoten im Wert von ฿50,000 oder mehr lässt sich der Geldwechsler laut Mitteilung eine Kopie eines Ausweisdokuments geben, etwa Ausweis, Pass oder eidesstattliche Erklärung."
+   },
+   "src": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "q": {
+    "en": "What does an exchange-rate display board cost?",
+    "th": "ป้ายแสดงอัตราแลกเปลี่ยนราคาเท่าไร",
+    "my": "ငွေလဲနှုန်းပြဘုတ်တစ်ခု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "汇率显示屏多少钱？",
+    "de": "Was kostet eine Kurstafel?"
+   },
+   "a": {
+    "en": "Indian suppliers list currency display boards on IndiaMART from ₹1,200 to ₹32,000 a piece, 28 boards in all. The listings that give a currency count show from 4 to 12 currencies.",
+    "th": "ผู้ขายอินเดียลงป้ายแสดงอัตราแลกเปลี่ยนบน IndiaMART ตั้งแต่ ₹1,200 ถึง ₹32,000 ต่อชิ้น รวม 28 รายการ รายการที่ระบุจำนวนสกุลเงินแสดงได้ตั้งแต่ 4 ถึง 12 สกุล",
+    "my": "အိန္ဒိယအရောင်းသူများက IndiaMART ပေါ်တွင် ငွေကြေးပြဘုတ်များကို တစ်ခုလျှင် ₹1,200 မှ ₹32,000 အထိ စုစုပေါင်း 28 ခု စာရင်းတင်ထားသည်။ ငွေကြေးအရေအတွက် ဖော်ပြထားသော စာရင်းများတွင် ငွေကြေး 4 မှ 12 မျိုးအထိ ပြသည်။",
+    "zh": "印度供应商在 IndiaMART 上列出的货币显示屏，每块 ₹1,200 至 ₹32,000，共 28 款。写明币种数量的款式可显示 4 至 12 种货币。",
+    "de": "Indische Anbieter listen auf IndiaMART Währungstafeln von ₹1,200 bis ₹32,000 pro Stück, insgesamt 28 Tafeln. Die Angebote mit Angabe der Währungszahl zeigen 4 bis 12 Währungen."
+   },
+   "src": "https://m.indiamart.com/impcat/currency-display-boards.html"
+  }
+ ],
+ "related": [
+  "exchange-system",
+  "invoice",
+  "merchant",
+  "bank-account",
+  "print",
+  "web-sharecard"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Bank of Thailand: rules and practices for authorized money changers",
+    "th": "ธนาคารแห่งประเทศไทย: หลักเกณฑ์และวิธีปฏิบัติสำหรับบุคคลรับอนุญาตแลกเปลี่ยนเงิน",
+    "my": "ထိုင်းနိုင်ငံ ဗဟိုဘဏ် - ခွင့်ပြုချက်ရ ငွေလဲသူများအတွက် စည်းမျဉ်းနှင့် လုပ်ထုံးလုပ်နည်း",
+    "zh": "泰国央行：授权货币兑换商的规则与做法",
+    "de": "Bank of Thailand: Regeln und Praxis für zugelassene Geldwechsler"
+   },
+   "href": "https://www.bot.or.th/content/dam/bot/documents/en/our-roles/financial-markets/foreign-exchange-regulations/laws-and-regulations/E_BOTMC.pdf"
+  },
+  {
+   "t": {
+    "en": "Tilleke & Gibbins: the 2026 draft on money changer licensing",
+    "th": "Tilleke & Gibbins: ร่างปี 2569 ว่าด้วยการอนุญาตร้านแลกเงิน",
+    "my": "Tilleke & Gibbins - ငွေလဲသူလိုင်စင်ဆိုင်ရာ 2026 မူကြမ်း",
+    "zh": "Tilleke & Gibbins：2026 年换汇商许可草案",
+    "de": "Tilleke & Gibbins: der Entwurf von 2026 zur Zulassung von Geldwechslern"
+   },
+   "href": "https://www.tilleke.com/insights/thailand-proposes-overhaul-of-licensing-framework-for-money-changers"
+  }
+ ]
+}

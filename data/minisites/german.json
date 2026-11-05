@@ -1,0 +1,275 @@
+{
+ "id": "german",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People put a web page into German for guests and buyers, and Swiss spelling writes ss where Germany writes ß.",
+  "th": "คนแปลหน้าเว็บเป็นภาษาเยอรมันสำหรับแขกและลูกค้า และการสะกดแบบสวิสเขียน ss ในที่ที่เยอรมนีเขียน ß",
+  "my": "လူတွေက ဧည့်သည်နှင့် ဝယ်သူများအတွက် ဝက်ဘ်စာမျက်နှာကို ဂျာမန်ဘာသာသို့ ပြန်ကြပြီး ဂျာမနီက ß ရေးသည့်နေရာတွင် ဆွစ်စာလုံးပေါင်းက ss ရေးသည်။",
+  "zh": "人们把网页译成德语，给客人和买家看；德国写 ß 的地方，瑞士拼写写 ss。",
+  "de": "Man überträgt eine Webseite ins Deutsche für Gäste und Kundschaft, und die Schweizer Schreibung setzt ss, wo Deutschland das Eszett schreibt."
+ },
+ "n": {
+  "de": "Deutsche Seiten, Schweizer Rechtschreibung"
+ },
+ "l": {
+  "de": "Eine Webseite ins Deutsche übertragen, bis 300 Wörter."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the web page text, up to 300 words a page.",
+    "th": "คุณส่งข้อความของหน้าเว็บ ไม่เกิน 300 คำต่อหน้า",
+    "my": "သင်က ဝက်ဘ်စာမျက်နှာ၏ စာသားကို ပို့သည်၊ တစ်မျက်နှာလျှင် စကားလုံး 300 အထိ။",
+    "zh": "您发来网页文字，每页最多 300 词。",
+    "de": "Sie schicken den Text der Webseite, bis 300 Wörter pro Seite."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "We put the text into German with Swiss spelling.",
+    "th": "เราแปลข้อความเป็นภาษาเยอรมันด้วยการสะกดแบบสวิส",
+    "my": "စာသားကို ဆွစ်စာလုံးပေါင်းဖြင့် ဂျာမန်ဘာသာသို့ ပြန်ပေးသည်။",
+    "zh": "我们用瑞士拼写把文字译成德语。",
+    "de": "Wir übertragen den Text ins Deutsche, in Schweizer Schreibung."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the text arrives",
+    "th": "หลังได้รับข้อความ",
+    "my": "စာသားရောက်ပြီးနောက်",
+    "zh": "收到文字后",
+    "de": "Nach Eingang des Textes"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The German text goes back to you.",
+    "th": "ส่งข้อความภาษาเยอรมันกลับให้คุณ",
+    "my": "ဂျာမန်စာသားကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "德语文字回到您手中。",
+    "de": "Der deutsche Text geht an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံးအဆင့်",
+    "zh": "最后一步",
+    "de": "Am Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Swiss Federal Chancellery's spelling guide says the ß has gradually gone from Swiss writing since the 1930s, and a double s stands in its place, as in Strasse and reissen.",
+    "th": "คู่มือการสะกดคำของ Bundeskanzlei (Federal Chancellery) ของสวิตเซอร์แลนด์ ระบุว่าอักษร ß ค่อย ๆ หายไปจากการเขียนแบบสวิสตั้งแต่ทศวรรษ 1930 และใช้ s สองตัวแทน เช่น Strasse และ reissen",
+    "my": "ဆွစ်ဇာလန် Bundeskanzlei (Federal Chancellery) ၏ စာလုံးပေါင်းလမ်းညွှန်တွင် ß သည် 1930 ခုနှစ်များမှ စ၍ ဆွစ်စာရေးနည်းမှ တဖြည်းဖြည်း ပျောက်ကွယ်သွားပြီး ၎င်းနေရာတွင် s နှစ်လုံး ရေးသည်ဟု ဆိုသည်၊ ဥပမာ Strasse နှင့် reissen။",
+    "zh": "瑞士联邦总理府（Bundeskanzlei）的拼写指南写道，ß 自 1930 年代起在瑞士书写中逐渐消失，改用双写的 s，如 Strasse 和 reissen。",
+    "de": "Der Rechtschreibleitfaden der Bundeskanzlei hält fest: Das Eszett ist in der Schweiz seit den 1930er-Jahren nach und nach verschwunden, an seine Stelle tritt das Doppel-s, etwa in Strasse und reissen."
+   },
+   "src": "https://www.bk.admin.ch/dam/de/sd-web/GApRW2tzdhqZ/rechtschreibleitfaden-2017.pdf"
+  },
+  {
+   "t": {
+    "en": "The guide, written for federal texts, says text taken over from the EU or another German-speaking country has to follow the Swiss rules, and the ß can be replaced with ss by Find and Replace.",
+    "th": "คู่มือซึ่งเขียนสำหรับเอกสารของรัฐบาลกลาง ระบุว่าข้อความที่รับมาจากสหภาพยุโรปหรือประเทศอื่นที่ใช้ภาษาเยอรมันต้องใช้กฎการสะกดของสวิส และเปลี่ยน ß เป็น ss ได้ด้วยคำสั่งค้นหาและแทนที่",
+    "my": "ဖက်ဒရယ်စာများအတွက် ရေးထားသော လမ်းညွှန်တွင် ဥရောပသမဂ္ဂ သို့မဟုတ် ဂျာမန်စကားပြောသော အခြားနိုင်ငံမှ စာသားကို ယူလျှင် ဆွစ်စည်းမျဉ်းအတိုင်း ရေးရမည်ဟု ဆိုပြီး ß ကို ရှာ၍ အစားထိုးခြင်း (Find and Replace) ဖြင့် ss သို့ ပြောင်းနိုင်သည်။",
+    "zh": "这份为联邦文本编写的指南写道，取自欧盟或其他德语国家的文本须遵守瑞士规则，ß 可用“查找替换”换成 ss。",
+    "de": "Der Leitfaden, geschrieben für Texte des Bundes, hält fest: Texte aus der EU oder aus anderen deutschsprachigen Ländern sind den Schweizer Regeln anzupassen, und das Eszett lässt sich mit «Suchen-Ersetzen» durch ss ersetzen."
+   },
+   "src": "https://www.bk.admin.ch/dam/de/sd-web/GApRW2tzdhqZ/rechtschreibleitfaden-2017.pdf"
+  },
+  {
+   "t": {
+    "en": "The guide names word pairs that Swiss spelling writes alike: Masse and Maße, Busse and Buße, Flosse and Floße.",
+    "th": "คู่มือระบุคู่คำที่การสะกดแบบสวิสเขียนเหมือนกัน ได้แก่ Masse กับ Maße, Busse กับ Buße, Flosse กับ Floße",
+    "my": "ဆွစ်စာလုံးပေါင်းက အတူတူရေးသော စကားလုံးစုံများကို လမ်းညွှန်က ဖော်ပြသည်၊ Masse နှင့် Maße၊ Busse နှင့် Buße၊ Flosse နှင့် Floße။",
+    "zh": "指南列出了瑞士拼写写成同形的词对：Masse 与 Maße、Busse 与 Buße、Flosse 与 Floße。",
+    "de": "Der Leitfaden nennt Wortpaare, die in der Schweiz gleich geschrieben werden, weil das Eszett fehlt: je zwei Wörter als Masse, als Busse und als Flosse."
+   },
+   "src": "https://www.bk.admin.ch/dam/de/sd-web/GApRW2tzdhqZ/rechtschreibleitfaden-2017.pdf"
+  },
+  {
+   "t": {
+    "en": "Google's guide to localised pages uses Swiss German as an example: hreflang=\"de-CH\" marks the Swiss German version of a page.",
+    "th": "คู่มือหน้าเว็บหลายภาษาของ Google ใช้ภาษาเยอรมันแบบสวิสเป็นตัวอย่าง โดย hreflang=\"de-CH\" ระบุเวอร์ชันภาษาเยอรมันสวิสของหน้า",
+    "my": "Google ၏ ဒေသဆိုင်ရာ စာမျက်နှာ လမ်းညွှန်တွင် ဆွစ်ဂျာမန်ကို ဥပမာအဖြစ် သုံးထားပြီး hreflang=\"de-CH\" သည် စာမျက်နှာ၏ ဆွစ်ဂျာမန်ဗားရှင်းကို ဖော်ပြသည်။",
+    "zh": "Google 的多语言页面指南以瑞士德语为例：hreflang=\"de-CH\" 标明页面的瑞士德语版本。",
+    "de": "Die Google-Anleitung zu lokalisierten Seiten nennt Deutsch für die Schweiz als Beispiel: hreflang=\"de-CH\" kennzeichnet die Schweizer Fassung einer Seite."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "German and Thai, a freelancer on Fastwork",
+    "th": "แปลเยอรมัน–ไทย ฟรีแลนซ์บน Fastwork",
+    "my": "ဂျာမန်–ထိုင်း နှစ်ဖက်ဘာသာပြန်၊ Fastwork ရှိ ဖရီးလန်ဆာတစ်ဦး",
+    "zh": "德泰互译，Fastwork 上的一位自由译者",
+    "de": "Deutsch–Thai, Freelancer auf Fastwork"
+   },
+   "p": {
+    "en": "฿400 a page; longer texts ฿2.5 a word",
+    "th": "หน้าละ ฿400 ข้อความที่ยาวกว่านั้นคำละ ฿2.5",
+    "my": "တစ်မျက်နှာ ฿400၊ ပိုရှည်လျှင် စကားလုံးတစ်လုံး ฿2.5",
+    "zh": "每页 ฿400；更长的文本每词 ฿2.5",
+    "de": "฿400 pro Seite; längere Texte ฿2.5 pro Wort"
+   },
+   "src": "https://fastwork.co/user/bossaheha/translation-87514982"
+  },
+  {
+   "t": {
+    "en": "Standard translation, Thai and English, at a Bangkok agency; other language pairs start higher",
+    "th": "แปลทั่วไปไทย–อังกฤษที่สำนักงานแปลในกรุงเทพฯ คู่ภาษาอื่นเริ่มต้นสูงกว่า",
+    "my": "ဘန်ကောက်ရှိ ဘာသာပြန်ကုမ္ပဏီတွင် ထိုင်း–အင်္ဂလိပ် ပုံမှန်ဘာသာပြန်၊ အခြားဘာသာစကားအတွဲများ ဈေးပိုမြင့်သည်",
+    "zh": "曼谷翻译公司的泰英标准翻译；其他语言组合起价更高",
+    "de": "Standardübersetzung Thai–Englisch bei einer Agentur in Bangkok; andere Sprachpaare beginnen höher"
+   },
+   "p": {
+    "en": "From ฿1.5 a word",
+    "th": "เริ่มต้นคำละ ฿1.5",
+    "my": "စကားလုံးတစ်လုံး ฿1.5 မှ စသည်",
+    "zh": "每词 ฿1.5 起",
+    "de": "ab ฿1.5 pro Wort"
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is Swiss German spelling?",
+    "th": "การสะกดภาษาเยอรมันแบบสวิสคืออะไร",
+    "my": "ဆွစ်ဂျာမန် စာလုံးပေါင်းဆိုတာ ဘာလဲ။",
+    "zh": "什么是瑞士德语拼写？",
+    "de": "Was ist die Schweizer Rechtschreibung?"
+   },
+   "a": {
+    "en": "It is German written without the ß: a double s stands in its place, as in Strasse. The Swiss Federal Chancellery's guide says the ß has been going from Swiss writing since the 1930s.",
+    "th": "คือภาษาเยอรมันที่เขียนโดยไม่ใช้ ß โดยใช้ s สองตัวแทน เช่น Strasse คู่มือของ Bundeskanzlei ของสวิตเซอร์แลนด์ระบุว่า ß ค่อย ๆ หายไปจากการเขียนแบบสวิสตั้งแต่ทศวรรษ 1930",
+    "my": "ß မပါဘဲ ရေးသော ဂျာမန်ဘာသာဖြစ်ပြီး ၎င်းနေရာတွင် s နှစ်လုံး ရေးသည်၊ ဥပမာ Strasse။ ဆွစ်ဇာလန် Bundeskanzlei ၏ လမ်းညွှန်အရ ß သည် 1930 ခုနှစ်များမှ စ၍ ဆွစ်စာရေးနည်းမှ တဖြည်းဖြည်း ပျောက်ကွယ်လာသည်။",
+    "zh": "就是不用 ß 的德语：用双写的 s 代替，例如 Strasse。瑞士联邦总理府的指南写道，ß 自 1930 年代起在瑞士书写中逐渐消失。",
+    "de": "Es ist Deutsch ohne Eszett: An seine Stelle tritt das Doppel-s, etwa in Strasse. Laut Leitfaden der Bundeskanzlei ist das Eszett in der Schweiz seit den 1930er-Jahren nach und nach verschwunden."
+   },
+   "src": "https://www.bk.admin.ch/dam/de/sd-web/GApRW2tzdhqZ/rechtschreibleitfaden-2017.pdf"
+  },
+  {
+   "q": {
+    "en": "Can I use German text from Germany on a Swiss page?",
+    "th": "ใช้ข้อความภาษาเยอรมันจากเยอรมนีบนหน้าเว็บสวิสได้ไหม",
+    "my": "ဂျာမနီမှ ဂျာမန်စာသားကို ဆွစ်စာမျက်နှာတွင် သုံးနိုင်ပါသလား။",
+    "zh": "德国的德语文本能用在瑞士页面上吗？",
+    "de": "Kann ich deutschen Text aus Deutschland auf einer Schweizer Seite verwenden?"
+   },
+   "a": {
+    "en": "The Federal Chancellery's guide, written for federal texts, says text from another German-speaking country has to be adapted to Swiss spelling, and a plain copy and paste does not do. It adds that the ß can be replaced with ss by Find and Replace.",
+    "th": "คู่มือของ Bundeskanzlei ซึ่งเขียนสำหรับเอกสารของรัฐบาลกลาง ระบุว่าข้อความจากประเทศอื่นที่ใช้ภาษาเยอรมันต้องปรับให้เข้ากับการสะกดแบบสวิส การคัดลอกแล้ววางตรง ๆ ใช้ไม่ได้ และเปลี่ยน ß เป็น ss ได้ด้วยคำสั่งค้นหาและแทนที่",
+    "my": "ဖက်ဒရယ်စာများအတွက် ရေးထားသော Bundeskanzlei လမ်းညွှန်တွင် ဂျာမန်စကားပြောသော အခြားနိုင်ငံမှ စာသားကို ဆွစ်စာလုံးပေါင်းနှင့် ကိုက်အောင် ပြင်ရမည်ဟု ဆိုသည်၊ ထို့ကြောင့် ကော်ပီကူးပြီး ထည့်ရုံဖြင့် မရပါ။ ß ကို Find and Replace ဖြင့် ss သို့ ပြောင်းနိုင်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "联邦总理府为联邦文本编写的指南写道，来自其他德语国家的文本须调整为瑞士拼写，直接复制粘贴不行；ß 可用“查找替换”换成 ss。",
+    "de": "Der Leitfaden der Bundeskanzlei, geschrieben für Texte des Bundes, hält fest: Texte aus anderen deutschsprachigen Ländern sind an die Schweizer Rechtschreibung anzupassen, ein einfaches Copy-Paste geht nicht. Das Eszett lässt sich mit «Suchen-Ersetzen» durch ss ersetzen."
+   },
+   "src": "https://www.bk.admin.ch/dam/de/sd-web/GApRW2tzdhqZ/rechtschreibleitfaden-2017.pdf"
+  },
+  {
+   "q": {
+    "en": "How do I mark a page as Swiss German for Google?",
+    "th": "ทำอย่างไรให้ Google รู้ว่าหน้านี้เป็นภาษาเยอรมันแบบสวิส",
+    "my": "Google အတွက် စာမျက်နှာကို ဆွစ်ဂျာမန်ဟု ဘယ်လိုအမှတ်အသားပြုရမလဲ။",
+    "zh": "怎样向 Google 标明页面是瑞士德语？",
+    "de": "Wie kennzeichne ich eine Seite für Google als Schweizer Deutsch?"
+   },
+   "a": {
+    "en": "Google's guide to localised pages shows hreflang=\"de-CH\" for a Swiss German version. It also says Google does not use hreflang or the HTML lang attribute to detect the language of a page; it uses its own algorithms for that.",
+    "th": "คู่มือหน้าเว็บหลายภาษาของ Google แสดง hreflang=\"de-CH\" สำหรับเวอร์ชันเยอรมันแบบสวิส และระบุว่า Google ไม่ใช้ hreflang หรือแอตทริบิวต์ lang ของ HTML เพื่อตรวจจับภาษาของหน้า แต่ใช้อัลกอริทึมของตนเอง",
+    "my": "Google ၏ လမ်းညွှန်တွင် ဆွစ်ဂျာမန်ဗားရှင်းအတွက် hreflang=\"de-CH\" ကို ပြထားသည်။ စာမျက်နှာ၏ ဘာသာစကားကို သိရန် Google သည် hreflang သို့မဟုတ် HTML lang attribute ကို မသုံးဘဲ ကိုယ်ပိုင် အယ်လဂိုရီသမ်ဖြင့် ဆုံးဖြတ်သည်ဟု ဆိုသည်။",
+    "zh": "Google 的指南用 hreflang=\"de-CH\" 标示瑞士德语版本，并写明 Google 不靠 hreflang 或 HTML 的 lang 属性判断页面语言，而是用自己的算法。",
+    "de": "Die Google-Anleitung zeigt hreflang=\"de-CH\" für eine Schweizer Fassung. Sie hält ausserdem fest, dass Google die Sprache einer Seite nicht an hreflang oder am HTML-Attribut lang erkennt, sondern mit eigenen Algorithmen."
+   },
+   "src": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  },
+  {
+   "q": {
+    "en": "How much does a German translation cost in Thailand?",
+    "th": "แปลเยอรมันในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် ဂျာမန်ဘာသာပြန်ခ ဘယ်လောက်လဲ။",
+    "zh": "在泰国德语翻译要多少钱？",
+    "de": "Was kostet eine Übersetzung ins Deutsche in Thailand?"
+   },
+   "a": {
+    "en": "A Fastwork freelancer lists German and Thai, both ways, at ฿400 a page and ฿2.5 a word for longer texts. The seller says the price is higher because German is hard and few people learn it.",
+    "th": "ฟรีแลนซ์บน Fastwork รายหนึ่งตั้งราคาแปลเยอรมัน–ไทยทั้งสองทางหน้าละ ฿400 และข้อความที่ยาวกว่านั้นคำละ ฿2.5 ผู้ขายบอกว่าราคาสูงกว่าปกติเพราะภาษาเยอรมันยากและมีคนเรียนน้อย",
+    "my": "Fastwork ရှိ ဖရီးလန်ဆာတစ်ဦးက ဂျာမန်–ထိုင်း နှစ်ဖက်ဘာသာပြန်ကို တစ်မျက်နှာ ฿400 နှင့် ပိုရှည်လျှင် စကားလုံးတစ်လုံး ฿2.5 ဟု သတ်မှတ်သည်။ ဂျာမန်ဘာသာသည် ခက်ပြီး သင်ယူသူနည်းသဖြင့် ဈေးမြင့်သည်ဟု ရောင်းသူက ဆိုသည်။",
+    "zh": "Fastwork 上一位自由译者的德泰互译标价为每页 ฿400，更长文本每词 ฿2.5。卖家说价格偏高，因为德语难学、学的人少。",
+    "de": "Ein Freelancer auf Fastwork verlangt für Deutsch und Thai, in beiden Richtungen, ฿400 pro Seite und ฿2.5 pro Wort bei längeren Texten. Der Preis sei höher, weil Deutsch schwierig sei und wenige es lernten, schreibt der Anbieter."
+   },
+   "src": "https://fastwork.co/user/bossaheha/translation-87514982"
+  }
+ ],
+ "related": [
+  "translate",
+  "lang-pages",
+  "romanise",
+  "signs",
+  "copy",
+  "site"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Swiss Federal Chancellery: guide to German spelling",
+    "th": "Bundeskanzlei ของสวิตเซอร์แลนด์: คู่มือการสะกดภาษาเยอรมัน",
+    "my": "ဆွစ်ဇာလန် Bundeskanzlei: ဂျာမန်စာလုံးပေါင်း လမ်းညွှန်",
+    "zh": "瑞士联邦总理府：德语拼写指南",
+    "de": "Schweizerische Bundeskanzlei: Leitfaden zur deutschen Rechtschreibung"
+   },
+   "href": "https://www.bk.admin.ch/bk/de/home/dokumentation/sprachen/hilfsmittel-textredaktion/leitfaden-zur-deutschen-rechtschreibung.html"
+  },
+  {
+   "t": {
+    "en": "Google Search Central: localized versions of a page",
+    "th": "Google Search Central: หน้าเว็บหลายเวอร์ชันภาษา",
+    "my": "Google Search Central: စာမျက်နှာ၏ ဒေသဆိုင်ရာ ဗားရှင်းများ",
+    "zh": "Google Search Central：页面的本地化版本",
+    "de": "Google Search Central: lokalisierte Versionen einer Seite"
+   },
+   "href": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+  }
+ ],
+ "glyphs": [
+  "translate",
+  "page",
+  "flag"
+ ]
+}

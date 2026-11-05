@@ -1,0 +1,336 @@
+{
+ "id": "accessible",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Readers with low vision, older readers and people who use a screen reader (software that reads a page aloud) need pages built so they can read them.",
+  "th": "ผู้อ่านที่สายตาเลือนราง ผู้สูงอายุ และผู้ใช้โปรแกรมอ่านหน้าจอ (ซอฟต์แวร์ที่อ่านหน้าเว็บออกเสียง) ต้องการหน้าเว็บที่สร้างให้อ่านได้",
+  "my": "အမြင်အာရုံ မှုန်ဝါးသူများ၊ သက်ကြီးရွယ်အိုများနှင့် screen reader (စာမျက်နှာကို အသံထွက်ဖတ်ပေးသော ဆော့ဖ်ဝဲ) သုံးသူတို့သည် ဖတ်နိုင်အောင် တည်ဆောက်ထားသော စာမျက်နှာများ လိုအပ်သည်။",
+  "zh": "视力低下的读者、年长读者和使用读屏软件（把页面念出来的软件）的人，需要能读得下去的页面。",
+  "de": "Menschen mit Sehschwäche, ältere Lesende und Nutzer von Screenreadern (Software, die eine Seite vorliest) brauchen Seiten, die sich lesen lassen."
+ },
+ "n": {
+  "de": "Leichter lesbar"
+ },
+ "l": {
+  "de": "Kontrast, grosse Schrift, Vorlesen, Screenreader: geprüft, mit Liste der Korrekturen."
+ },
+ "steps": [
+  {
+   "db": "laptop",
+   "t": {
+    "en": "Up to 5 pages are opened on phone and desktop.",
+    "th": "เปิดหน้าเว็บไม่เกิน 5 หน้าบนมือถือและคอมพิวเตอร์",
+    "my": "စာမျက်နှာ 5 ခုအထိကို ဖုန်းနှင့် ကွန်ပျူတာတို့တွင် ဖွင့်ကြည့်သည်။",
+    "zh": "最多 5 个页面在手机和电脑上打开查看。",
+    "de": "Bis zu 5 Seiten werden auf Telefon und Computer geöffnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမအဆင့်",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "They are checked for contrast, large print, read-aloud and screen readers.",
+    "th": "ตรวจความชัดของสี ตัวอักษรใหญ่ การอ่านออกเสียง และโปรแกรมอ่านหน้าจอ",
+    "my": "အရောင်ကွာခြားမှု၊ စာလုံးကြီး၊ အသံထွက်ဖတ်ခြင်းနှင့် screen reader တို့ကို စစ်ဆေးသည်။",
+    "zh": "检查对比度、大字、朗读和读屏。",
+    "de": "Sie werden auf Kontrast, grosse Schrift, Vorlesen und Screenreader geprüft."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The check",
+    "th": "ช่วงตรวจ",
+    "my": "စစ်ဆေးချိန်",
+    "zh": "检查期间",
+    "de": "Die Prüfung"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "A written list of fixes comes back.",
+    "th": "ส่งรายการสิ่งที่ต้องแก้เป็นลายลักษณ์อักษรกลับมา",
+    "my": "ပြင်ရန်စာရင်းကို စာဖြင့် ပြန်ပို့သည်။",
+    "zh": "书面的修改清单交到您手上。",
+    "de": "Eine schriftliche Liste der Korrekturen kommt zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံးတွင်",
+    "zh": "最后",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "WCAG 2.2, the W3C's Web Content Accessibility Guidelines, is the latest version. It was published on 5 October 2023 and updated on 12 December 2024. Its testable rules sit at three levels: A, AA and AAA. WCAG 2.0 and 2.1 remain valid standards.",
+    "th": "WCAG 2.2 (Web Content Accessibility Guidelines ของ W3C) เป็นเวอร์ชันล่าสุด เผยแพร่เมื่อ 5 ตุลาคม 2023 และปรับปรุงเมื่อ 12 ธันวาคม 2024 เกณฑ์ที่ทดสอบได้แบ่งเป็นสามระดับ คือ A, AA และ AAA ส่วน WCAG 2.0 และ 2.1 ยังเป็นมาตรฐานที่ใช้ได้",
+    "my": "WCAG 2.2 (W3C ၏ Web Content Accessibility Guidelines) သည် နောက်ဆုံးဗားရှင်းဖြစ်ပြီး 2023 အောက်တိုဘာ 5 တွင် ထုတ်ပြန်ကာ 2024 ဒီဇင်ဘာ 12 တွင် ပြင်ဆင်သည်။ စမ်းသပ်နိုင်သော စံနှုန်းများကို A၊ AA နှင့် AAA ဟူ၍ အဆင့်သုံးခု ခွဲထားသည်။ WCAG 2.0 နှင့် 2.1 တို့လည်း အသုံးပြုနိုင်သော စံနှုန်းများအဖြစ် ရှိနေဆဲဖြစ်သည်။",
+    "zh": "WCAG 2.2（W3C 的《网页内容无障碍指南》）是最新版本，2023 年 10 月 5 日发布，2024 年 12 月 12 日更新。可测试的成功标准分 A、AA、AAA 三级。WCAG 2.0 和 2.1 仍是有效标准。",
+    "de": "WCAG 2.2, die Web Content Accessibility Guidelines des W3C, ist die neueste Version; sie erschien am 5. Oktober 2023 und wurde am 12. Dezember 2024 aktualisiert. Die prüfbaren Kriterien liegen auf drei Stufen: A, AA und AAA. WCAG 2.0 und 2.1 bleiben gültige Standards."
+   },
+   "src": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+  },
+  {
+   "t": {
+    "en": "WCAG asks for a contrast ratio of at least 4.5:1 between text and its background, and 3:1 for large text. Large text is 18 point, or 14 point bold, which is about 24 and 18.5 pixels.",
+    "th": "WCAG กำหนดอัตราส่วนความต่างสีระหว่างตัวอักษรกับพื้นหลังอย่างน้อย 4.5:1 และ 3:1 สำหรับตัวอักษรขนาดใหญ่ ตัวอักษรขนาดใหญ่คือ 18 พอยต์ หรือ 14 พอยต์ตัวหนา ราว 24 และ 18.5 พิกเซล",
+    "my": "WCAG သည် စာသားနှင့် နောက်ခံအကြား အရောင်ကွာခြားမှုအချိုး အနည်းဆုံး 4.5:1 နှင့် စာလုံးကြီးအတွက် 3:1 ကို သတ်မှတ်သည်။ စာလုံးကြီးဆိုသည်မှာ 18 point သို့မဟုတ် 14 point ထူ ဖြစ်ပြီး pixel ခန့် 24 နှင့် 18.5 ဖြစ်သည်။",
+    "zh": "WCAG 要求文字与背景的对比度至少 4.5:1，大字为 3:1。大字指 18 磅，或 14 磅粗体，约合 24 像素和 18.5 像素。",
+    "de": "WCAG verlangt zwischen Text und Hintergrund ein Kontrastverhältnis von mindestens 4.5:1, bei grosser Schrift 3:1. Grosse Schrift ist 18 Punkt oder 14 Punkt fett, etwa 24 und 18.5 Pixel."
+   },
+   "src": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+  },
+  {
+   "t": {
+    "en": "WCAG asks that text can be resized up to 200 percent without assistive technology and without loss of content or functionality. Browser zoom counts as one way to do it.",
+    "th": "WCAG กำหนดให้ขยายขนาดตัวอักษรได้ถึง 200 เปอร์เซ็นต์โดยไม่ต้องใช้เทคโนโลยีช่วยเหลือ และเนื้อหาหรือการใช้งานไม่หายไป การซูมของเบราว์เซอร์นับเป็นวิธีหนึ่ง",
+    "my": "WCAG သည် အထောက်အကူပြုနည်းပညာ မသုံးဘဲ စာသားကို 200 ရာခိုင်နှုန်းအထိ ချဲ့နိုင်ပြီး အကြောင်းအရာ သို့မဟုတ် လုပ်ဆောင်ချက် မပျောက်ရန် သတ်မှတ်သည်။ ဘရောက်ဇာ zoom သည် ထိုနည်းလမ်းတစ်ခု ဖြစ်သည်။",
+    "zh": "WCAG 要求文字不借助辅助技术即可放大到 200%，且内容和功能不丢失。浏览器缩放算作一种方式。",
+    "de": "WCAG verlangt, dass sich Text ohne Hilfstechnik auf 200 Prozent vergrössern lässt, ohne dass Inhalt oder Funktion verloren gehen. Der Browser-Zoom gilt als eine Möglichkeit."
+   },
+   "src": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html"
+  },
+  {
+   "t": {
+    "en": "WCAG asks that images and other non-text content have a text alternative that serves the same purpose. Pure decoration is hidden from assistive technology, because alternative text on it distracts people who use screen readers.",
+    "th": "WCAG กำหนดให้ภาพและเนื้อหาที่ไม่ใช่ตัวอักษรมีข้อความทดแทนที่ทำหน้าที่เทียบเท่ากัน ภาพตกแต่งล้วน ๆ ซ่อนจากเทคโนโลยีช่วยเหลือ เพราะข้อความทดแทนบนภาพเหล่านี้รบกวนผู้ใช้โปรแกรมอ่านหน้าจอ",
+    "my": "WCAG သည် ပုံများနှင့် စာမဟုတ်သော အကြောင်းအရာများတွင် ရည်ရွယ်ချက်တူသော စာသားအစားထိုးချက် ရှိရန် သတ်မှတ်သည်။ အလှဆင်ရုံသက်သက်ဖြစ်သော အရာများကို အထောက်အကူပြုနည်းပညာမှ ဖျောက်ထားသည်၊ ထိုအရာများပေါ်ရှိ အစားထိုးစာသားက screen reader သုံးသူများကို နှောင့်ယှက်သောကြောင့် ဖြစ်သည်။",
+    "zh": "WCAG 要求图片等非文字内容有作用相当的文字替代。纯装饰内容对辅助技术隐藏，因为给它们加替代文字会干扰使用读屏软件的人。",
+    "de": "WCAG verlangt für Bilder und anderen Nicht-Text-Inhalt eine Textalternative mit gleichem Zweck. Reine Dekoration wird vor Hilfstechnik verborgen, weil Alternativtext dort Screenreader-Nutzer stört."
+   },
+   "src": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html"
+  },
+  {
+   "t": {
+    "en": "Lighthouse scores accessibility as a weighted average of pass-or-fail audits such as button and link names, ARIA attributes, color contrast, image alt text, form labels, heading order and the page language. Manual audits are not part of the score.",
+    "th": "Lighthouse ให้คะแนนการเข้าถึงเป็นค่าเฉลี่ยถ่วงน้ำหนักของรายการตรวจแบบผ่านหรือไม่ผ่าน เช่น ชื่อของปุ่มและลิงก์ แอตทริบิวต์ ARIA ความต่างสี ข้อความทดแทนของภาพ ป้ายกำกับของฟอร์ม ลำดับหัวข้อ และภาษาของหน้า การตรวจแบบทำมือไม่นับรวมในคะแนน",
+    "my": "Lighthouse သည် ခလုတ်နှင့် လင့်ခ်အမည်များ၊ ARIA attribute များ၊ အရောင်ကွာခြားမှု၊ ပုံ alt စာသား၊ ဖောင်အညွှန်းများ၊ ခေါင်းစဉ်အစီအစဉ်နှင့် စာမျက်နှာဘာသာစကား ကဲ့သို့ အောင်/ကျ စစ်ဆေးမှုများ၏ အလေးပေးပျမ်းမျှဖြင့် accessibility ကို ရမှတ်ပေးသည်။ လက်ဖြင့် စစ်ဆေးမှုများသည် ရမှတ်တွင် မပါပါ။",
+    "zh": "Lighthouse 把无障碍得分算作若干通过/不通过审核项的加权平均，项目如按钮和链接名称、ARIA 属性、颜色对比度、图片替代文字、表单标签、标题顺序和页面语言。人工审核项不计入得分。",
+    "de": "Lighthouse bewertet Barrierefreiheit als gewichteten Durchschnitt von Bestanden-oder-nicht-Prüfungen, etwa Namen von Schaltflächen und Links, ARIA-Attribute, Farbkontrast, Alternativtext von Bildern, Formularbeschriftungen, Reihenfolge der Überschriften und Seitensprache. Manuelle Prüfungen zählen nicht zur Punktzahl."
+   },
+   "src": "https://developer.chrome.com/docs/lighthouse/accessibility/scoring"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Accessible.org audit report, by page or screen",
+    "th": "รายงานตรวจสอบจาก Accessible.org คิดต่อหน้าหรือหน้าจอ",
+    "my": "Accessible.org စစ်ဆေးမှုအစီရင်ခံစာ၊ စာမျက်နှာ သို့မဟုတ် မျက်နှာပြင်တစ်ခုချင်း",
+    "zh": "Accessible.org 审核报告，按页面或屏幕计",
+    "de": "Prüfbericht von Accessible.org, pro Seite oder Bildschirm"
+   },
+   "p": {
+    "en": "US$100–250 for a primary page, US$25–100 for a light page",
+    "th": "US$100–250 ต่อหน้าหลัก และ US$25–100 ต่อหน้าเบา",
+    "my": "အဓိကစာမျက်နှာ US$100–250၊ ပေါ့ပါးသောစာမျက်နှာ US$25–100",
+    "zh": "主要页面 US$100–250，简易页面 US$25–100",
+    "de": "US$100–250 für eine Hauptseite, US$25–100 für eine einfache Seite"
+   },
+   "src": "https://accessible.org/pricing/"
+  },
+  {
+   "t": {
+    "en": "Accessible.org, a typical website audit",
+    "th": "Accessible.org การตรวจสอบเว็บไซต์ทั่วไป",
+    "my": "Accessible.org၊ ဝက်ဘ်ဆိုက်စစ်ဆေးမှု ပုံမှန်",
+    "zh": "Accessible.org，一般网站审核",
+    "de": "Accessible.org, eine übliche Website-Prüfung"
+   },
+   "p": {
+    "en": "US$1,250–2,750 for most audits",
+    "th": "US$1,250–2,750 สำหรับการตรวจส่วนใหญ่",
+    "my": "စစ်ဆေးမှုအများစုအတွက် US$1,250–2,750",
+    "zh": "多数审核 US$1,250–2,750",
+    "de": "US$1,250–2,750 für die meisten Prüfungen"
+   },
+   "src": "https://accessible.org/pricing/"
+  },
+  {
+   "t": {
+    "en": "A flat-rate boutique firm (DigitalA11Y), as listed in TestParty's 2026 cost guide",
+    "th": "บริษัทเฉพาะทางแบบราคาเหมา (DigitalA11Y) ตามที่ระบุในคู่มือราคาปี 2026 ของ TestParty",
+    "my": "TestParty ၏ 2026 ကုန်ကျစရိတ်လမ်းညွှန်တွင် ဖော်ပြထားသည့် ပုံသေဈေးနှုန်း ကုမ္ပဏီငယ် (DigitalA11Y)",
+    "zh": "TestParty 2026 年费用指南列出的一家定价制精品公司（DigitalA11Y）",
+    "de": "Ein Pauschalpreis-Anbieter (DigitalA11Y), wie in TestPartys Kostenleitfaden 2026 aufgeführt"
+   },
+   "p": {
+    "en": "US$1,500–5,000",
+    "th": "US$1,500–5,000",
+    "my": "US$1,500–5,000",
+    "zh": "US$1,500–5,000",
+    "de": "US$1,500–5,000"
+   },
+   "src": "https://testparty.ai/blog/accessibility-audit-cost-2026"
+  },
+  {
+   "t": {
+    "en": "Automated scans: WAVE, axe DevTools, Lighthouse",
+    "th": "การสแกนอัตโนมัติ: WAVE, axe DevTools, Lighthouse",
+    "my": "အလိုအလျောက် စကင်န်များ: WAVE, axe DevTools, Lighthouse",
+    "zh": "自动扫描：WAVE、axe DevTools、Lighthouse",
+    "de": "Automatische Scans: WAVE, axe DevTools, Lighthouse"
+   },
+   "p": {
+    "en": "US$0",
+    "th": "US$0",
+    "my": "US$0",
+    "zh": "US$0",
+    "de": "US$0"
+   },
+   "src": "https://testparty.ai/blog/accessibility-audit-cost-2026"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is an accessibility audit?",
+    "th": "การตรวจสอบการเข้าถึงเว็บคืออะไร",
+    "my": "accessibility စစ်ဆေးမှုဆိုတာ ဘာလဲ။",
+    "zh": "什么是无障碍审核？",
+    "de": "Was ist eine Barrierefreiheitsprüfung?"
+   },
+   "a": {
+    "en": "The W3C describes a first review called Easy Checks. It covers the page title, text alternatives for images, headings, contrast, text resizing, keyboard access, forms and moving content. The page says a page could pass these checks and still have significant barriers, and it points to the WCAG-EM method and to involving users for a thorough evaluation.",
+    "th": "W3C อธิบายการตรวจเบื้องต้นชื่อ Easy Checks ครอบคลุมชื่อหน้า ข้อความทดแทนของภาพ หัวข้อ ความต่างสี การขยายตัวอักษร การใช้แป้นพิมพ์ ฟอร์ม และเนื้อหาที่เคลื่อนไหว หน้านี้ระบุว่าหน้าเว็บอาจผ่านการตรวจเหล่านี้แต่ยังมีอุปสรรคสำคัญ และชี้ไปที่วิธี WCAG-EM กับการให้ผู้ใช้มีส่วนร่วมสำหรับการประเมินอย่างละเอียด",
+    "my": "W3C သည် Easy Checks ဟု ခေါ်သော ကနဦးစစ်ဆေးမှုကို ဖော်ပြသည်။ စာမျက်နှာခေါင်းစဉ်၊ ပုံများ၏ စာသားအစားထိုးချက်၊ ခေါင်းစဉ်များ၊ အရောင်ကွာခြားမှု၊ စာလုံးချဲ့ခြင်း၊ ကီးဘုတ်သုံးစွဲမှု၊ ဖောင်များနှင့် လှုပ်ရှားနေသော အကြောင်းအရာတို့ ပါဝင်သည်။ စာမျက်နှာသည် ဤစစ်ဆေးမှုများ အောင်နိုင်ပါသော်လည်း အရေးပါသော အတားအဆီးများ ရှိနေနိုင်ကြောင်း ဆိုပြီး အသေးစိတ်အကဲဖြတ်ရန် WCAG-EM နည်းလမ်းနှင့် အသုံးပြုသူများ ပါဝင်စေခြင်းကို ညွှန်းသည်။",
+    "zh": "W3C 介绍了一种初步审核，叫 Easy Checks，涵盖页面标题、图片的文字替代、标题层级、对比度、文字缩放、键盘操作、表单和动态内容。该页面写明，一个页面可能通过这些检查，却仍有明显障碍；要做全面评估，它指向 WCAG-EM 方法和让用户参与。",
+    "de": "Das W3C beschreibt eine erste Durchsicht namens Easy Checks. Sie umfasst Seitentitel, Textalternativen für Bilder, Überschriften, Kontrast, Textvergrösserung, Tastaturbedienung, Formulare und bewegte Inhalte. Die Seite schreibt, eine Seite könne diese Prüfungen bestehen und trotzdem erhebliche Barrieren haben; für eine gründliche Bewertung verweist sie auf die WCAG-EM-Methode und auf die Einbeziehung von Nutzern."
+   },
+   "src": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+  },
+  {
+   "q": {
+    "en": "How much does a website accessibility audit cost?",
+    "th": "ตรวจสอบการเข้าถึงเว็บไซต์ราคาเท่าไร",
+    "my": "ဝက်ဘ်ဆိုက် accessibility စစ်ဆေးမှု ဈေး ဘယ်လောက်လဲ။",
+    "zh": "网站无障碍审核要多少钱？",
+    "de": "Was kostet eine Barrierefreiheitsprüfung für eine Website?"
+   },
+   "a": {
+    "en": "Accessible.org's pricing page gives US$1,250 to US$2,750 for most website audits. It prices a primary page or screen at US$100 to US$250 and a light one at US$25 to US$100.",
+    "th": "หน้าราคาของ Accessible.org ระบุ US$1,250 ถึง US$2,750 สำหรับการตรวจเว็บไซต์ส่วนใหญ่ หน้าหรือหน้าจอหลักคิด US$100 ถึง US$250 และหน้าเบาคิด US$25 ถึง US$100",
+    "my": "Accessible.org ၏ ဈေးနှုန်းစာမျက်နှာတွင် ဝက်ဘ်ဆိုက်စစ်ဆေးမှုအများစုအတွက် US$1,250 မှ US$2,750 ဟု ဖော်ပြသည်။ အဓိကစာမျက်နှာ သို့မဟုတ် မျက်နှာပြင်ကို US$100 မှ US$250၊ ပေါ့ပါးသည့်တစ်ခုကို US$25 မှ US$100 ဟု သတ်မှတ်သည်။",
+    "zh": "Accessible.org 的价格页给出：多数网站审核为 US$1,250 至 US$2,750。主要页面或屏幕每个 US$100 至 US$250，简易的 US$25 至 US$100。",
+    "de": "Auf der Preisseite von Accessible.org stehen US$1,250 bis US$2,750 für die meisten Website-Prüfungen. Eine Hauptseite oder ein Bildschirm kostet dort US$100 bis US$250, eine einfache Seite US$25 bis US$100."
+   },
+   "src": "https://accessible.org/pricing/"
+  },
+  {
+   "q": {
+    "en": "Is there a free accessibility checker?",
+    "th": "มีเครื่องมือตรวจการเข้าถึงเว็บฟรีไหม",
+    "my": "အခမဲ့ accessibility စစ်ဆေးသည့်ကိရိယာ ရှိသလား။",
+    "zh": "有免费的无障碍检测工具吗？",
+    "de": "Gibt es ein kostenloses Prüfwerkzeug für Barrierefreiheit?"
+   },
+   "a": {
+    "en": "TestParty's cost guide lists WAVE, axe DevTools and Lighthouse as automated scans that cost US$0.",
+    "th": "คู่มือราคาของ TestParty ระบุว่า WAVE, axe DevTools และ Lighthouse เป็นการสแกนอัตโนมัติที่มีค่าใช้จ่าย US$0",
+    "my": "TestParty ၏ ကုန်ကျစရိတ်လမ်းညွှန်တွင် WAVE၊ axe DevTools နှင့် Lighthouse တို့ကို ကုန်ကျစရိတ် US$0 ရှိသော အလိုအလျောက်စကင်န်များအဖြစ် ဖော်ပြထားသည်။",
+    "zh": "TestParty 的费用指南把 WAVE、axe DevTools 和 Lighthouse 列为费用为 US$0 的自动扫描。",
+    "de": "In TestPartys Kostenleitfaden stehen WAVE, axe DevTools und Lighthouse als automatische Scans für US$0."
+   },
+   "src": "https://testparty.ai/blog/accessibility-audit-cost-2026"
+  },
+  {
+   "q": {
+    "en": "What contrast does WCAG require?",
+    "th": "WCAG กำหนดความต่างสีไว้เท่าไร",
+    "my": "WCAG က အရောင်ကွာခြားမှု ဘယ်လောက် လိုသလဲ။",
+    "zh": "WCAG 对对比度有什么要求？",
+    "de": "Welchen Kontrast verlangt WCAG?"
+   },
+   "a": {
+    "en": "At least 4.5:1 between text and its background, and 3:1 for large text. Large text is 18 point, or 14 point bold, which is about 24 and 18.5 pixels.",
+    "th": "อย่างน้อย 4.5:1 ระหว่างตัวอักษรกับพื้นหลัง และ 3:1 สำหรับตัวอักษรขนาดใหญ่ ตัวอักษรขนาดใหญ่คือ 18 พอยต์ หรือ 14 พอยต์ตัวหนา ราว 24 และ 18.5 พิกเซล",
+    "my": "စာသားနှင့် နောက်ခံအကြား အနည်းဆုံး 4.5:1 ဖြစ်ပြီး စာလုံးကြီးအတွက် 3:1 ဖြစ်သည်။ စာလုံးကြီးဆိုသည်မှာ 18 point သို့မဟုတ် 14 point ထူ ဖြစ်ပြီး pixel ခန့် 24 နှင့် 18.5 ဖြစ်သည်။",
+    "zh": "文字与背景之间至少 4.5:1，大字为 3:1。大字指 18 磅，或 14 磅粗体，约合 24 像素和 18.5 像素。",
+    "de": "Mindestens 4.5:1 zwischen Text und Hintergrund, bei grosser Schrift 3:1. Grosse Schrift ist 18 Punkt oder 14 Punkt fett, etwa 24 und 18.5 Pixel."
+   },
+   "src": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+  },
+  {
+   "q": {
+    "en": "What does a WCAG audit report contain?",
+    "th": "รายงานตรวจ WCAG มีอะไรบ้าง",
+    "my": "WCAG စစ်ဆေးမှုအစီရင်ခံစာတွင် ဘာတွေ ပါသလဲ။",
+    "zh": "WCAG 审核报告里有什么？",
+    "de": "Was steht in einem WCAG-Prüfbericht?"
+   },
+   "a": {
+    "en": "Accessible.org's Technical Audit Report is an Excel file with detailed findings. Its FAQ says it lists the WCAG criteria affected and the information needed to act on each issue.",
+    "th": "Technical Audit Report ของ Accessible.org เป็นไฟล์ Excel ที่มีผลตรวจโดยละเอียด คำถามที่พบบ่อยของเว็บนั้นระบุว่ารายงานแสดงเกณฑ์ WCAG ที่เกี่ยวข้อง และข้อมูลที่ต้องใช้เพื่อแก้แต่ละปัญหา",
+    "my": "Accessible.org ၏ Technical Audit Report သည် အသေးစိတ်တွေ့ရှိချက်များပါသော Excel ဖိုင်ဖြစ်သည်။ ၎င်း၏ FAQ တွင် သက်ရောက်သည့် WCAG စံနှုန်းများနှင့် ပြဿနာတစ်ခုချင်းကို ဆောင်ရွက်ရန် လိုသော အချက်အလက်များ ပါသည်ဟု ဆိုသည်။",
+    "zh": "Accessible.org 的 Technical Audit Report 是一份含详细发现的 Excel 文件。其常见问题页写明，报告列出受影响的 WCAG 标准，以及处理每个问题所需的信息。",
+    "de": "Der Technical Audit Report von Accessible.org ist eine Excel-Datei mit detaillierten Befunden. Laut den FAQ nennt er die betroffenen WCAG-Kriterien und die Angaben, die zum Beheben jedes Problems nötig sind."
+   },
+   "src": "https://accessible.org/pricing/"
+  }
+ ],
+ "related": [
+  "site",
+  "lang-pages",
+  "copy",
+  "web-care",
+  "web-search",
+  "web-found"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "W3C: Easy Checks, a first review of web accessibility",
+    "th": "W3C: Easy Checks การตรวจเบื้องต้นด้านการเข้าถึงเว็บ",
+    "my": "W3C: Easy Checks၊ ဝက်ဘ် accessibility ကနဦးစစ်ဆေးမှု",
+    "zh": "W3C：Easy Checks，网页无障碍初步审核",
+    "de": "W3C: Easy Checks, eine erste Durchsicht der Barrierefreiheit"
+   },
+   "href": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+  },
+  {
+   "t": {
+    "en": "W3C: Web Content Accessibility Guidelines (WCAG)",
+    "th": "W3C: แนวทางการเข้าถึงเนื้อหาเว็บ (WCAG)",
+    "my": "W3C: ဝက်ဘ်အကြောင်းအရာ accessibility လမ်းညွှန် (WCAG)",
+    "zh": "W3C：网页内容无障碍指南（WCAG）",
+    "de": "W3C: Web Content Accessibility Guidelines (WCAG)"
+   },
+   "href": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+  }
+ ],
+ "glyphs": [
+  "eye",
+  "sound",
+  "laptop"
+ ]
+}

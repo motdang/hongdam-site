@@ -1,0 +1,292 @@
+{
+ "id": "web-care",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A site needs updates and backups, and someone told when it goes down.",
+  "th": "เว็บไซต์ต้องมีการอัปเดตและสำรองข้อมูล และต้องมีคนรู้เมื่อเว็บล่ม",
+  "my": "ဝက်ဘ်ဆိုက်တစ်ခုသည် အပ်ဒိတ်နှင့် အရန်သိမ်းခြင်း လိုပြီး ကျသွားသည့်အခါ သိရှိမည့်သူ လိုအပ်သည်။",
+  "zh": "网站需要更新和备份，宕机时也要有人知道。",
+  "de": "Eine Website braucht Updates und Backups, und jemanden, der erfährt, wenn sie ausfällt."
+ },
+ "n": {
+  "de": "Website-Pflege"
+ },
+ "l": {
+  "de": "Updates, Backups, eine Ausfallwarnung und 2 Stunden Reparaturen im Monat."
+ },
+ "steps": [
+  {
+   "db": "refresh",
+   "t": {
+    "en": "Your site is updated and backed up.",
+    "th": "อัปเดตและสำรองข้อมูลเว็บไซต์ของคุณ",
+    "my": "သင့်ဆိုက်ကို အပ်ဒိတ်လုပ်ပြီး အရန်သိမ်းသည်။",
+    "zh": "更新并备份您的网站。",
+    "de": "Ihre Website wird aktualisiert und gesichert."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Monatlich"
+   }
+  },
+  {
+   "db": "bell",
+   "t": {
+    "en": "An alert goes out when the site goes down.",
+    "th": "แจ้งเมื่อเว็บล่ม",
+    "my": "ဆိုက်ကျသွားသည့်အခါ သတိပေးသည်။",
+    "zh": "网站宕机时发出提醒。",
+    "de": "Wenn die Website ausfällt, geht eine Warnung raus."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When the site goes down",
+    "th": "เมื่อเว็บล่ม",
+    "my": "ဆိုက်ကျသွားသည့်အခါ",
+    "zh": "网站宕机时",
+    "de": "Wenn die Website ausfällt"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "2 hours of fixes a month, and a monthly report.",
+    "th": "งานแก้ 2 ชั่วโมงต่อเดือน และรายงานรายเดือน",
+    "my": "တစ်လ ပြင်ဆင်ချိန် 2 နာရီနှင့် လစဉ်အစီရင်ခံစာ။",
+    "zh": "每月 2 小时修改，外加月度报告。",
+    "de": "2 Stunden Reparaturen im Monat und ein Monatsbericht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Monatlich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "WordPress's documentation says a backup has two parts, the database and the files, and both are needed to restore a typical WordPress site fully.",
+    "th": "เอกสารของ WordPress ระบุว่าการสำรองข้อมูลมีสองส่วน คือฐานข้อมูลและไฟล์ และต้องมีทั้งสองส่วนจึงจะกู้เว็บ WordPress ทั่วไปกลับมาได้เต็มรูปแบบ",
+    "my": "WordPress ၏ စာတမ်းတွင် အရန်သိမ်းခြင်းတွင် ဒေတာဘေ့စ်နှင့် ဖိုင်များ ဟူ၍ အပိုင်းနှစ်ပိုင်း ရှိပြီး ပုံမှန် WordPress ဆိုက်ကို အပြည့်အဝ ပြန်လည်ရယူရန် နှစ်ခုလုံး လိုအပ်သည်ဟု ဆိုသည်။",
+    "zh": "WordPress 文档写明，备份分两部分：数据库和文件，要完整恢复一个常见的 WordPress 网站，两部分都需要。",
+    "de": "Laut der WordPress-Dokumentation besteht eine Sicherung aus zwei Teilen, Datenbank und Dateien, und beide braucht es, um eine übliche WordPress-Website vollständig wiederherzustellen."
+   },
+   "src": "https://developer.wordpress.org/advanced-administration/security/backup/"
+  },
+  {
+   "t": {
+    "en": "The same page gives these guidelines: back up the database regularly and before an upgrade; once a week for smaller websites with fewer posts; daily for high-activity websites with a lot of posts.",
+    "th": "หน้าเดียวกันให้แนวทางไว้ว่า สำรองฐานข้อมูลสม่ำเสมอและก่อนอัปเกรด สัปดาห์ละครั้งสำหรับเว็บเล็กที่มีโพสต์ไม่มาก และทุกวันสำหรับเว็บที่ใช้งานหนักและมีโพสต์จำนวนมาก",
+    "my": "ထိုတူညီသော စာမျက်နှာတွင် လမ်းညွှန်ချက်များ ပေးထားသည်။ ဒေတာဘေ့စ်ကို ပုံမှန်နှင့် အဆင့်မြှင့်မီ အရန်သိမ်းခြင်း၊ ပို့စ်နည်းသော ဆိုက်သေးများအတွက် တစ်ပတ်တစ်ကြိမ်၊ ပို့စ်များစွာရှိပြီး လှုပ်ရှားမှုများသော ဆိုက်များအတွက် နေ့စဉ်။",
+    "zh": "同一页面给出的参考做法：定期备份数据库，升级前也备份；文章较少的小网站每周一次；文章多、活跃度高的网站每天一次。",
+    "de": "Dieselbe Seite nennt diese Richtwerte: die Datenbank regelmässig und vor einem Upgrade sichern; bei kleineren Websites mit wenigen Beiträgen einmal pro Woche; bei sehr aktiven Websites mit vielen Beiträgen täglich."
+   },
+   "src": "https://developer.wordpress.org/advanced-administration/security/backup/"
+  },
+  {
+   "t": {
+    "en": "The CA/Browser Forum's ballot SC-081v3 sets out a cut in the maximum life of public TLS certificates (the certificates behind https) from 398 days to 47 days, starting in March 2026 and concluding in March 2029.",
+    "th": "ballot SC-081v3 ของ CA/Browser Forum กำหนดให้ลดอายุสูงสุดของใบรับรอง TLS สาธารณะ (ใบรับรองที่อยู่เบื้องหลัง https) จาก 398 วันเหลือ 47 วัน เริ่มมีนาคม 2026 และสิ้นสุดมีนาคม 2029",
+    "my": "CA/Browser Forum ၏ ballot SC-081v3 သည် အများသုံး TLS လက်မှတ်များ (https နောက်ကွယ်ရှိ လက်မှတ်များ) ၏ အများဆုံးသက်တမ်းကို ရက် 398 မှ ရက် 47 သို့ 2026 မတ်လတွင် စ၍ 2029 မတ်လတွင် ပြီးဆုံးအောင် လျှော့ချရန် သတ်မှတ်သည်။",
+    "zh": "CA/Browser Forum 的投票案 SC-081v3 规定，公共 TLS 证书（https 背后的证书）的最长有效期从 398 天缩短到 47 天，2026 年 3 月开始，2029 年 3 月完成。",
+    "de": "Der Beschluss SC-081v3 des CA/Browser Forum sieht vor, die maximale Laufzeit öffentlicher TLS-Zertifikate (der Zertifikate hinter https) von 398 Tagen auf 47 Tage zu kürzen, beginnend im März 2026 und abgeschlossen im März 2029."
+   },
+   "src": "https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/"
+  },
+  {
+   "t": {
+    "en": "A Bangkok agency's managed hosting and maintenance page lists regular updates, daily backups stored off-site, uptime monitoring, malware scans, spam filters, brute-force protection and a support team. It gives no price.",
+    "th": "หน้าบริการโฮสติ้งและดูแลเว็บของเอเจนซี่ในกรุงเทพฯ แห่งหนึ่งระบุ การอัปเดตสม่ำเสมอ การสำรองข้อมูลรายวันเก็บนอกสถานที่ การเฝ้าดูเวลาทำงานของเว็บ การสแกนมัลแวร์ ตัวกรองสแปม การป้องกันการเดารหัสผ่าน และทีมช่วยเหลือ หน้านั้นไม่ระบุราคา",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခု၏ စီမံခန့်ခွဲသော hosting နှင့် ထိန်းသိမ်းမှုစာမျက်နှာတွင် ပုံမှန်အပ်ဒိတ်များ၊ ဆိုက်ပြင်ပတွင် သိမ်းသော နေ့စဉ်အရန်သိမ်းမှု၊ အွန်လိုင်းရှိမရှိ စောင့်ကြည့်မှု၊ malware စကင်န်၊ စပမ်းစစ်ထုတ်ကိရိယာများ၊ brute-force ကာကွယ်မှုနှင့် အကူအညီအဖွဲ့တို့ကို ဖော်ပြသည်။ ဈေးနှုန်း မဖော်ပြပါ။",
+    "zh": "曼谷一家代理机构的托管与维护页面列出：定期更新、异地存放的每日备份、在线时间监控、恶意软件扫描、垃圾信息过滤、暴力破解防护和支持团队。页面没有给出价格。",
+    "de": "Die Seite einer Agentur in Bangkok zu verwaltetem Hosting und Wartung nennt regelmässige Updates, tägliche Backups an einem anderen Ort, Überwachung der Erreichbarkeit, Malware-Scans, Spamfilter, Schutz vor Brute-Force-Angriffen und ein Support-Team. Einen Preis nennt sie nicht."
+   },
+   "src": "https://asiamediastudio.com/services/website/web-hosting-and-maintenance"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Aibrify care plan: hosting, monitoring, updates and one small change",
+    "th": "แผนดูแลของ Aibrify: โฮสติ้ง การเฝ้าดู อัปเดต และแก้เล็ก ๆ หนึ่งอย่าง",
+    "my": "Aibrify ထိန်းသိမ်းမှုအစီအစဉ်: hosting၊ စောင့်ကြည့်မှု၊ အပ်ဒိတ်နှင့် ပြောင်းလဲမှုငယ်တစ်ခု",
+    "zh": "Aibrify 维护方案：托管、监控、更新和一次小改动",
+    "de": "Pflegeplan von Aibrify: Hosting, Überwachung, Updates und eine kleine Änderung"
+   },
+   "p": {
+    "en": "US$49 a month",
+    "th": "US$49 ต่อเดือน",
+    "my": "တစ်လ US$49",
+    "zh": "每月 US$49",
+    "de": "US$49 im Monat"
+   },
+   "src": "https://aibrify.com/fix"
+  },
+  {
+   "t": {
+    "en": "Aibrify care plan: 4 hours of changes, next-business-day response",
+    "th": "แผนดูแลของ Aibrify: แก้ไข 4 ชั่วโมง ตอบภายในวันทำการถัดไป",
+    "my": "Aibrify ထိန်းသိမ်းမှုအစီအစဉ်: ပြောင်းလဲမှု 4 နာရီ၊ နောက်လုပ်ငန်းရက်တွင် တုံ့ပြန်",
+    "zh": "Aibrify 维护方案：4 小时修改，下一个工作日回复",
+    "de": "Pflegeplan von Aibrify: 4 Stunden Änderungen, Antwort am nächsten Werktag"
+   },
+   "p": {
+    "en": "US$149 a month",
+    "th": "US$149 ต่อเดือน",
+    "my": "တစ်လ US$149",
+    "zh": "每月 US$149",
+    "de": "US$149 im Monat"
+   },
+   "src": "https://aibrify.com/fix"
+  },
+  {
+   "t": {
+    "en": "UptimeRobot down alerts, Free plan: 50 monitors checked every 5 minutes",
+    "th": "UptimeRobot แจ้งเมื่อเว็บล่ม แพ็กเกจฟรี: 50 รายการ ตรวจทุก 5 นาที",
+    "my": "UptimeRobot ဆိုက်ကျသတိပေးမှု၊ အခမဲ့အစီအစဉ်: monitor 50 ခု၊ 5 မိနစ်တစ်ကြိမ် စစ်သည်",
+    "zh": "UptimeRobot 宕机提醒，免费套餐：50 个监控项，每 5 分钟检测一次",
+    "de": "UptimeRobot-Ausfallwarnungen, Free-Tarif: 50 Monitore, alle 5 Minuten geprüft"
+   },
+   "p": {
+    "en": "US$0; the Solo plan with 10 monitors is US$9 a month with annual billing",
+    "th": "US$0 แพ็กเกจ Solo 10 รายการ US$9 ต่อเดือน เมื่อชำระรายปี",
+    "my": "US$0၊ monitor 10 ခုပါ Solo အစီအစဉ်မှာ နှစ်စဉ်ငွေပေးချေလျှင် တစ်လ US$9",
+    "zh": "US$0；10 个监控项的 Solo 套餐按年付费时每月 US$9",
+    "de": "US$0; der Tarif Solo mit 10 Monitoren kostet US$9 im Monat bei jährlicher Zahlung"
+   },
+   "src": "https://uptimerobot.com/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How often does WordPress say to back up a site?",
+    "th": "WordPress ระบุว่าสำรองเว็บบ่อยแค่ไหน",
+    "my": "WordPress က ဆိုက်ကို ဘယ်လောက်မကြာခဏ အရန်သိမ်းရန် ဆိုသလဲ။",
+    "zh": "WordPress 说网站多久备份一次？",
+    "de": "Wie oft empfiehlt WordPress, eine Website zu sichern?"
+   },
+   "a": {
+    "en": "Its documentation says to back up the database regularly and before an upgrade. For smaller websites with fewer posts it gives once a week, and for high-activity websites with a lot of posts, daily.",
+    "th": "เอกสารของ WordPress ระบุให้สำรองฐานข้อมูลสม่ำเสมอและก่อนอัปเกรด เว็บเล็กที่มีโพสต์ไม่มากสัปดาห์ละครั้ง และเว็บที่ใช้งานหนักและมีโพสต์จำนวนมากทุกวัน",
+    "my": "WordPress ၏ စာတမ်းတွင် ဒေတာဘေ့စ်ကို ပုံမှန်နှင့် အဆင့်မြှင့်မီ အရန်သိမ်းရန် ဆိုသည်။ ပို့စ်နည်းသော ဆိုက်သေးများအတွက် တစ်ပတ်တစ်ကြိမ်၊ ပို့စ်များစွာရှိပြီး လှုပ်ရှားမှုများသော ဆိုက်များအတွက် နေ့စဉ်ဟု ပေးထားသည်။",
+    "zh": "WordPress 文档写明，要定期备份数据库，升级前也要备份。文章较少的小网站给的是每周一次，文章多、活跃度高的网站是每天一次。",
+    "de": "Die Dokumentation schreibt, die Datenbank regelmässig und vor einem Upgrade zu sichern. Für kleinere Websites mit wenigen Beiträgen nennt sie einmal pro Woche, für sehr aktive Websites mit vielen Beiträgen täglich."
+   },
+   "src": "https://developer.wordpress.org/advanced-administration/security/backup/"
+  },
+  {
+   "q": {
+    "en": "What does website maintenance include?",
+    "th": "การดูแลเว็บไซต์รวมอะไรบ้าง",
+    "my": "ဝက်ဘ်ဆိုက်ထိန်းသိမ်းမှုတွင် ဘာတွေ ပါသလဲ။",
+    "zh": "网站维护包括什么？",
+    "de": "Was gehört zur Website-Wartung?"
+   },
+   "a": {
+    "en": "One Bangkok agency's page lists regular updates, daily backups stored off-site, uptime monitoring, malware scans, spam filters, brute-force protection and a support team. The page gives no price.",
+    "th": "หน้าของเอเจนซี่ในกรุงเทพฯ แห่งหนึ่งระบุ การอัปเดตสม่ำเสมอ การสำรองข้อมูลรายวันเก็บนอกสถานที่ การเฝ้าดูเวลาทำงานของเว็บ การสแกนมัลแวร์ ตัวกรองสแปม การป้องกันการเดารหัสผ่าน และทีมช่วยเหลือ หน้านั้นไม่ระบุราคา",
+    "my": "ဘန်ကောက်ရှိ အေဂျင်စီတစ်ခု၏ စာမျက်နှာတွင် ပုံမှန်အပ်ဒိတ်များ၊ ဆိုက်ပြင်ပတွင် သိမ်းသော နေ့စဉ်အရန်သိမ်းမှု၊ အွန်လိုင်းရှိမရှိ စောင့်ကြည့်မှု၊ malware စကင်န်၊ စပမ်းစစ်ထုတ်ကိရိယာများ၊ brute-force ကာကွယ်မှုနှင့် အကူအညီအဖွဲ့တို့ကို ဖော်ပြသည်။ ဈေးနှုန်း မဖော်ပြပါ။",
+    "zh": "曼谷一家代理机构的页面列出：定期更新、异地存放的每日备份、在线时间监控、恶意软件扫描、垃圾信息过滤、暴力破解防护和支持团队。页面没有给出价格。",
+    "de": "Die Seite einer Agentur in Bangkok nennt regelmässige Updates, tägliche Backups an einem anderen Ort, Überwachung der Erreichbarkeit, Malware-Scans, Spamfilter, Schutz vor Brute-Force-Angriffen und ein Support-Team. Einen Preis nennt sie nicht."
+   },
+   "src": "https://asiamediastudio.com/services/website/web-hosting-and-maintenance"
+  },
+  {
+   "q": {
+    "en": "How much does website maintenance cost a month?",
+    "th": "ดูแลเว็บไซต์รายเดือนราคาเท่าไร",
+    "my": "ဝက်ဘ်ဆိုက်ထိန်းသိမ်းမှု တစ်လ ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "网站维护每月多少钱？",
+    "de": "Was kostet die Website-Wartung im Monat?"
+   },
+   "a": {
+    "en": "Aibrify's page lists a care plan after a fix at US$49 a month, covering hosting, monitoring, updates and one small change. A plan with 4 hours of changes and next-business-day response is US$149 a month.",
+    "th": "หน้าของ Aibrify ระบุแผนดูแลหลังแก้เสร็จ US$49 ต่อเดือน ครอบคลุมโฮสติ้ง การเฝ้าดู อัปเดต และแก้เล็ก ๆ หนึ่งอย่าง แผนที่มีการแก้ไข 4 ชั่วโมงและตอบภายในวันทำการถัดไป US$149 ต่อเดือน",
+    "my": "Aibrify ၏ စာမျက်နှာတွင် ပြင်ဆင်ပြီးနောက် ထိန်းသိမ်းမှုအစီအစဉ်ကို တစ်လ US$49 ဟု ဖော်ပြပြီး hosting၊ စောင့်ကြည့်မှု၊ အပ်ဒိတ်နှင့် ပြောင်းလဲမှုငယ်တစ်ခု ပါဝင်သည်။ ပြောင်းလဲမှု 4 နာရီနှင့် နောက်လုပ်ငန်းရက်တွင် တုံ့ပြန်မည့် အစီအစဉ်မှာ တစ်လ US$149 ဖြစ်သည်။",
+    "zh": "Aibrify 的页面列出修复之后的维护方案：每月 US$49，含托管、监控、更新和一次小改动；含 4 小时修改和下一个工作日回复的方案每月 US$149。",
+    "de": "Auf Aibrifys Seite steht ein Pflegeplan nach einer Reparatur für US$49 im Monat, mit Hosting, Überwachung, Updates und einer kleinen Änderung. Ein Plan mit 4 Stunden Änderungen und Antwort am nächsten Werktag kostet US$149 im Monat."
+   },
+   "src": "https://aibrify.com/fix"
+  },
+  {
+   "q": {
+    "en": "How can a site owner be told when the site goes down?",
+    "th": "เจ้าของเว็บจะรู้ได้อย่างไรเมื่อเว็บล่ม",
+    "my": "ဆိုက်ပိုင်ရှင်က ဆိုက်ကျသွားသည်ကို ဘယ်လို သိနိုင်သလဲ။",
+    "zh": "站长怎样才能在网站宕机时收到通知？",
+    "de": "Wie erfährt der Betreiber, dass die Website ausgefallen ist?"
+   },
+   "a": {
+    "en": "UptimeRobot's Free plan checks up to 50 monitors every 5 minutes at US$0 a month, with alerts and 5 integrations. Its Solo plan, with 10 monitors, is US$9 a month with annual billing.",
+    "th": "แพ็กเกจฟรีของ UptimeRobot ตรวจได้ถึง 50 รายการทุก 5 นาที ราคา US$0 ต่อเดือน มีการแจ้งเมื่อเว็บล่มและการเชื่อมต่อ 5 รายการ แพ็กเกจ Solo ที่มี 10 รายการ ราคา US$9 ต่อเดือน เมื่อชำระรายปี",
+    "my": "UptimeRobot ၏ အခမဲ့အစီအစဉ်သည် monitor 50 ခုအထိ 5 မိနစ်တစ်ကြိမ် စစ်ပေးပြီး တစ်လ US$0 ဖြစ်ကာ သတိပေးချက်များနှင့် integration 5 ခု ပါသည်။ monitor 10 ခုပါ Solo အစီအစဉ်မှာ နှစ်စဉ်ငွေပေးချေလျှင် တစ်လ US$9 ဖြစ်သည်။",
+    "zh": "UptimeRobot 的免费套餐每 5 分钟检测最多 50 个监控项，每月 US$0，含提醒和 5 个集成。10 个监控项的 Solo 套餐按年付费时每月 US$9。",
+    "de": "Der Free-Tarif von UptimeRobot prüft bis zu 50 Monitore alle 5 Minuten für US$0 im Monat, mit Warnungen und 5 Integrationen. Der Tarif Solo mit 10 Monitoren kostet US$9 im Monat bei jährlicher Zahlung."
+   },
+   "src": "https://uptimerobot.com/pricing/"
+  }
+ ],
+ "related": [
+  "mirror",
+  "sec-hacked",
+  "php",
+  "site",
+  "web-move",
+  "traffic"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "WordPress: backups",
+    "th": "WordPress: การสำรองข้อมูล",
+    "my": "WordPress: အရန်သိမ်းခြင်း",
+    "zh": "WordPress：备份",
+    "de": "WordPress: Sicherungen"
+   },
+   "href": "https://developer.wordpress.org/advanced-administration/security/backup/"
+  },
+  {
+   "t": {
+    "en": "UptimeRobot: plans and prices",
+    "th": "UptimeRobot: แพ็กเกจและราคา",
+    "my": "UptimeRobot: အစီအစဉ်များနှင့် ဈေးနှုန်းများ",
+    "zh": "UptimeRobot：套餐与价格",
+    "de": "UptimeRobot: Tarife und Preise"
+   },
+   "href": "https://uptimerobot.com/pricing/"
+  }
+ ],
+ "glyphs": [
+  "wrench",
+  "bell",
+  "save"
+ ]
+}

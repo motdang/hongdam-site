@@ -1,0 +1,292 @@
+{
+ "id": "call",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People ask for a call in Thai when they need an answer from a shop, clinic, office or landlord and would rather have it written down.",
+  "th": "คนขอให้โทรเป็นภาษาไทยเมื่ออยากได้คำตอบจากร้านค้า คลินิก หน่วยงาน หรือเจ้าของบ้าน และอยากได้เป็นข้อความที่เขียนไว้",
+  "my": "ဆိုင်၊ ဆေးခန်း၊ ရုံး သို့မဟုတ် အိမ်ရှင်ထံမှ အဖြေလိုပြီး စာဖြင့်ရေးထားသည်ကို လိုလားသောအခါ လူတွေက ထိုင်းလို ဖုန်းခေါ်ပေးရန် တောင်းကြသည်။",
+  "zh": "需要从商店、诊所、机关或房东那里得到答复，又希望有书面记录时，人们会请人用泰语打电话。",
+  "de": "Man bittet um einen Anruf auf Thai, wenn man von einem Geschäft, einer Klinik, einem Amt oder einer Vermieterin eine Antwort braucht und sie lieber schriftlich hat."
+ },
+ "n": {
+  "de": "Telefonat auf Thai"
+ },
+ "l": {
+  "de": "Wir rufen für Sie an, wen Sie wollen, und schreiben auf, was gesagt wurde."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You tell us who to call and what you want to know.",
+    "th": "คุณบอกว่าจะให้โทรหาใครและอยากรู้อะไร",
+    "my": "ဘယ်သူ့ကို ခေါ်ရမည်နှင့် ဘာသိလိုကြောင်း သင်က ပြောပြသည်။",
+    "zh": "您告诉我们打给谁、想问什么。",
+    "de": "Sie sagen uns, wen wir anrufen und was Sie wissen möchten."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "We call the shop, office, clinic, landlord or whoever it is.",
+    "th": "เราโทรหาร้าน หน่วยงาน คลินิก เจ้าของบ้าน หรือคนที่คุณระบุ",
+    "my": "ဆိုင်၊ ရုံး၊ ဆေးခန်း၊ အိမ်ရှင် သို့မဟုတ် သင်ပြောသူထံ ကျွန်ုပ်တို့ ဖုန်းခေါ်သည်။",
+    "zh": "我们给商店、机关、诊所、房东或您指定的人打电话。",
+    "de": "Wir rufen das Geschäft, das Amt, die Klinik, die Vermieterin oder wen immer Sie nennen an."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Up to 15 minutes a call",
+    "th": "ครั้งละไม่เกิน 15 นาที",
+    "my": "တစ်ကြိမ်လျှင် 15 မိနစ်အထိ",
+    "zh": "每通最长 15 分钟",
+    "de": "Bis zu 15 Minuten pro Anruf"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "We write you what they said.",
+    "th": "เราสรุปเป็นข้อความว่าเขาพูดอะไร",
+    "my": "ပြောသမျှကို သင့်အတွက် ရေးပေးသည်။",
+    "zh": "我们把对方的话写给您。",
+    "de": "Wir schreiben Ihnen auf, was gesagt wurde."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the call",
+    "th": "หลังโทร",
+    "my": "ဖုန်းခေါ်ပြီးနောက်",
+    "zh": "通话之后",
+    "de": "Nach dem Anruf"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Ministry of Foreign Affairs lists 191 for general emergencies, 1155 for the “Tourist Police”, 199 for fire and rescue and 1669 for emergency medical services.",
+    "th": "กระทรวงการต่างประเทศระบุเบอร์ 191 สำหรับเหตุฉุกเฉินทั่วไป 1155 ตำรวจท่องเที่ยว 199 ดับเพลิงและกู้ภัย และ 1669 บริการการแพทย์ฉุกเฉิน",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာနက အရေးပေါ်ယေဘုယျ 191၊ “Tourist Police” (ခရီးသွားရဲ) 1155၊ မီးသတ်နှင့် ကယ်ဆယ်ရေး 199 နှင့် အရေးပေါ်ဆေးဝန်ဆောင်မှု 1669 တို့ကို ဖော်ပြထားသည်။",
+    "zh": "外交部列出：一般紧急情况 191，“Tourist Police”（旅游警察）1155，消防救援 199，紧急医疗服务 1669。",
+    "de": "Das Aussenministerium nennt 191 für allgemeine Notfälle, 1155 für die «Tourist Police», 199 für Feuerwehr und Rettung und 1669 für den medizinischen Notdienst."
+   },
+   "src": "https://www.mfa.go.th/en/content/eq2"
+  },
+  {
+   "t": {
+    "en": "The Office of the Consumer Protection Board takes advice and complaints on 1166. Its FAQ page says a foreigner can also submit a complaint personally at its Complaint Center in Bangkok, online or by post.",
+    "th": "สำนักงานคณะกรรมการคุ้มครองผู้บริโภค (สคบ.) รับปรึกษาและร้องเรียนที่สายด่วน 1166 หน้าคำถามที่พบบ่อยระบุว่า ชาวต่างชาติยื่นเรื่องด้วยตนเองที่ศูนย์รับเรื่องร้องเรียนในกรุงเทพฯ ทางออนไลน์ หรือทางไปรษณีย์ได้เช่นกัน",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့ရုံး (OCPB) က အကြံဉာဏ်နှင့် တိုင်ကြားမှုများကို 1166 တွင် လက်ခံသည်။ ၎င်း၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာတွင် နိုင်ငံခြားသားသည် ဘန်ကောက်ရှိ တိုင်ကြားမှုစင်တာတွင် ကိုယ်တိုင်၊ အွန်လိုင်း သို့မဟုတ် စာပို့ဖြင့်လည်း တိုင်ကြားနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "消费者保护委员会办公室（OCPB）在 1166 受理咨询和投诉。其常见问题页写明，外国人也可以到曼谷的投诉中心亲自提交、在线提交或邮寄。",
+    "de": "Das Amt des Konsumentenschutzrates (OCPB) nimmt Beratung und Beschwerden unter 1166 entgegen. Laut seiner FAQ-Seite können auch Ausländer eine Beschwerde persönlich im Beschwerdezentrum in Bangkok, online oder per Post einreichen."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "t": {
+    "en": "The Provincial Waterworks Authority (PWA) gives 1662 for a report of no water or low pressure; its page also links a report form.",
+    "th": "การประปาส่วนภูมิภาค (กปภ.) ระบุสายด่วน 1662 สำหรับแจ้งน้ำไม่ไหลหรือน้ำไหลอ่อน และมีลิงก์แบบฟอร์มแจ้งในหน้าเดียวกัน",
+    "my": "ပြည်နယ်ရေပေးဝေရေးအာဏာပိုင် (PWA) က ရေမလာခြင်း သို့မဟုတ် ရေဖိအားနည်းခြင်း တိုင်ကြားရန် 1662 ကို ပေးထားပြီး တိုင်ကြားဖောင်လင့်ခ်လည်း ရှိသည်။",
+    "zh": "省自来水局（PWA）提供 1662 用于报告停水或水压过低，页面上还附有报告表格的链接。",
+    "de": "Die Provincial Waterworks Authority (PWA) nennt 1662 für die Meldung von fehlendem Wasser oder zu niedrigem Druck; auf der Seite steht auch ein Link zu einem Meldeformular."
+   },
+   "src": "https://www.pwa.co.th/en/"
+  },
+  {
+   "t": {
+    "en": "The Provincial Electricity Authority (PEA) gives 1129 as its Contact Center number, with a live chat, and links a Power Outage Notification page.",
+    "th": "การไฟฟ้าส่วนภูมิภาค (กฟภ.) ระบุ 1129 เป็นเบอร์ศูนย์บริการ พร้อมแชตสด และมีลิงก์หน้าแจ้งไฟฟ้าขัดข้อง",
+    "my": "ပြည်နယ်လျှပ်စစ်ဌာန (PEA) က 1129 ကို ဆက်သွယ်ရေးစင်တာနံပါတ်အဖြစ် ပေးထားပြီး တိုက်ရိုက်စကားပြောခန်းနှင့် လျှပ်စစ်ပြတ်တောက်မှု အကြောင်းကြားစာမျက်နှာလင့်ခ် ပါသည်။",
+    "zh": "省电力局（PEA）提供 1129 作为联络中心号码，设有在线聊天，并链接了停电通报页面。",
+    "de": "Die Provincial Electricity Authority (PEA) nennt 1129 als Nummer ihres Contact Centers, mit Live-Chat und einem Link zur Seite für Stromausfallmeldungen."
+   },
+   "src": "https://www.pea.co.th/en"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Answering calls, scheduling appointments and general coordination on a client's behalf, on Fastwork",
+    "th": "รับโทรแทน นัดหมาย และประสานงานทั่วไปแทนลูกค้า บน Fastwork",
+    "my": "Fastwork ပေါ်တွင် ဖောက်သည်ကိုယ်စား ဖုန်းကိုင်ခြင်း၊ ချိန်းဆိုခြင်းနှင့် ယေဘုယျ ညှိနှိုင်းပေးခြင်း",
+    "zh": "Fastwork 上替客户接电话、约时间和一般协调",
+    "de": "Anrufe entgegennehmen, Termine vereinbaren und allgemein koordinieren im Auftrag, auf Fastwork"
+   },
+   "p": {
+    "en": "From ฿300",
+    "th": "เริ่มต้น ฿300",
+    "my": "စတင်ဈေး ฿300",
+    "zh": "起价 ฿300",
+    "de": "Ab ฿300"
+   },
+   "src": "https://fastwork.co/user/0ge2tu1k/counseling-78704491"
+  },
+  {
+   "t": {
+    "en": "Online interpreter on Fastwork (Thai, English, Chinese, Japanese): hourly package, half day up to 4 hours, full day up to 8 hours",
+    "th": "ล่ามออนไลน์บน Fastwork (ไทย อังกฤษ จีน ญี่ปุ่น): แพ็กเกจรายชั่วโมง ครึ่งวันไม่เกิน 4 ชั่วโมง เต็มวันไม่เกิน 8 ชั่วโมง",
+    "my": "Fastwork ပေါ်ရှိ အွန်လိုင်းစကားပြန် (ထိုင်း၊ အင်္ဂလိပ်၊ တရုတ်၊ ဂျပန်): နာရီအလိုက်ပက်ကေ့ချ်၊ နေ့ဝက် 4 နာရီအထိ၊ တစ်ရက်လုံး 8 နာရီအထိ",
+    "zh": "Fastwork 上的在线口译（泰、英、中、日）：按小时套餐，半天最长 4 小时，全天最长 8 小时",
+    "de": "Online-Dolmetschen auf Fastwork (Thai, Englisch, Chinesisch, Japanisch): Stundenpaket, halber Tag bis 4 Stunden, ganzer Tag bis 8 Stunden"
+   },
+   "p": {
+    "en": "Hourly package from ฿800 · half day ฿2,500 · full day ฿5,000",
+    "th": "แพ็กเกจรายชั่วโมงเริ่มต้น ฿800 · ครึ่งวัน ฿2,500 · เต็มวัน ฿5,000",
+    "my": "နာရီအလိုက်ပက်ကေ့ချ် ฿800 မှ စ · နေ့ဝက် ฿2,500 · တစ်ရက်လုံး ฿5,000",
+    "zh": "按小时套餐 ฿800 起 · 半天 ฿2,500 · 全天 ฿5,000",
+    "de": "Stundenpaket ab ฿800 · halber Tag ฿2,500 · ganzer Tag ฿5,000"
+   },
+   "src": "https://fastwork.co/user/thaidoctranslation/translator-16388642"
+  },
+  {
+   "t": {
+    "en": "Personal assistant who schedules appointments and coordinates matters, on Fastwork; hourly, daily or monthly by agreement",
+    "th": "ผู้ช่วยส่วนตัวที่นัดหมายและประสานงานให้ บน Fastwork ตกลงเป็นรายชั่วโมง รายวัน หรือรายเดือน",
+    "my": "Fastwork ပေါ်ရှိ ချိန်းဆိုခြင်းနှင့် ညှိနှိုင်းပေးသော ကိုယ်ပိုင်လက်ထောက်: နာရီ၊ နေ့ သို့မဟုတ် လအလိုက် သဘောတူညီမှုဖြင့်",
+    "zh": "Fastwork 上负责约时间、协调事务的私人助理，按小时、按天或按月商定",
+    "de": "Persönliche Assistenz auf Fastwork, die Termine vereinbart und koordiniert; stunden-, tage- oder monatsweise nach Absprache"
+   },
+   "p": {
+    "en": "From ฿500",
+    "th": "เริ่มต้น ฿500",
+    "my": "စတင်ဈေး ฿500",
+    "zh": "起价 ฿500",
+    "de": "Ab ฿500"
+   },
+   "src": "https://fastwork.co/user/alldayproject/secretary-76652151"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can someone call a Thai office for me?",
+    "th": "ให้คนโทรหาหน่วยงานไทยแทนเราได้ไหม",
+    "my": "ထိုင်းရုံးတစ်ခုကို ကျွန်ုပ်ကိုယ်စား တစ်ယောက်ယောက်က ဖုန်းခေါ်ပေးနိုင်ပါသလား။",
+    "zh": "能请人替我给泰国的机关打电话吗？",
+    "de": "Kann jemand für mich bei einem thailändischen Amt anrufen?"
+   },
+   "a": {
+    "en": "Fastwork lists sellers who answer calls, schedule appointments and coordinate for a client. One listing shows a starting price of ฿300.",
+    "th": "Fastwork มีผู้ขายที่รับโทรแทน นัดหมาย และประสานงานให้ลูกค้า รายการหนึ่งระบุราคาเริ่มต้น ฿300",
+    "my": "Fastwork တွင် ဖောက်သည်ကိုယ်စား ဖုန်းကိုင်ခြင်း၊ ချိန်းဆိုခြင်းနှင့် ညှိနှိုင်းပေးခြင်းများ လုပ်သော ရောင်းချသူများ ရှိသည်။ စာရင်းတစ်ခုတွင် စတင်ဈေး ฿300 ဟု ပြထားသည်။",
+    "zh": "Fastwork 上有卖家替客户接电话、约时间和协调事务，其中一条商品的起价是 ฿300。",
+    "de": "Auf Fastwork bieten Anbieter an, Anrufe entgegenzunehmen, Termine zu vereinbaren und für Kunden zu koordinieren. Ein Angebot nennt einen Startpreis von ฿300."
+   },
+   "src": "https://fastwork.co/user/0ge2tu1k/counseling-78704491"
+  },
+  {
+   "q": {
+    "en": "What number do I call when the water stops?",
+    "th": "น้ำไม่ไหล โทรเบอร์อะไร",
+    "my": "ရေမလာတော့လျှင် ဘယ်နံပါတ်ကို ခေါ်ရမလဲ။",
+    "zh": "停水了打哪个号码？",
+    "de": "Welche Nummer gilt, wenn das Wasser ausbleibt?"
+   },
+   "a": {
+    "en": "The Provincial Waterworks Authority's page gives 1662 for no water or low pressure, and a link to report online.",
+    "th": "หน้าเว็บของการประปาส่วนภูมิภาคระบุ 1662 สำหรับน้ำไม่ไหลหรือน้ำไหลอ่อน และมีลิงก์สำหรับแจ้งออนไลน์",
+    "my": "ပြည်နယ်ရေပေးဝေရေးအာဏာပိုင်၏ စာမျက်နှာတွင် ရေမလာခြင်း သို့မဟုတ် ဖိအားနည်းခြင်းအတွက် 1662 နှင့် အွန်လိုင်းတိုင်ကြားရန် လင့်ခ်ကို ပေးထားသည်။",
+    "zh": "省自来水局的页面给出 1662，用于停水或水压过低，并附有在线报告的链接。",
+    "de": "Die Seite der Provincial Waterworks Authority nennt 1662 für fehlendes Wasser oder niedrigen Druck und einen Link zur Online-Meldung."
+   },
+   "src": "https://www.pwa.co.th/en/"
+  },
+  {
+   "q": {
+    "en": "What number reaches the electricity authority?",
+    "th": "ติดต่อการไฟฟ้าส่วนภูมิภาคได้ที่เบอร์อะไร",
+    "my": "လျှပ်စစ်ဌာနကို ဘယ်နံပါတ်ဖြင့် ဆက်သွယ်နိုင်သလဲ။",
+    "zh": "哪个号码能联系电力局？",
+    "de": "Unter welcher Nummer erreicht man die Elektrizitätsbehörde?"
+   },
+   "a": {
+    "en": "The Provincial Electricity Authority's page gives 1129 as the PEA Contact Center, and a live chat for 1129.",
+    "th": "หน้าเว็บของการไฟฟ้าส่วนภูมิภาคระบุ 1129 เป็นศูนย์บริการของ กฟภ. และมีแชตสดสำหรับ 1129",
+    "my": "ပြည်နယ်လျှပ်စစ်ဌာန၏ စာမျက်နှာတွင် 1129 ကို PEA ဆက်သွယ်ရေးစင်တာအဖြစ် ပေးထားပြီး 1129 အတွက် တိုက်ရိုက်စကားပြောခန်းလည်း ရှိသည်။",
+    "zh": "省电力局的页面把 1129 列为 PEA 联络中心，并设有对应 1129 的在线聊天。",
+    "de": "Die Seite der Provincial Electricity Authority nennt 1129 als PEA Contact Center und einen Live-Chat dazu."
+   },
+   "src": "https://www.pea.co.th/en"
+  },
+  {
+   "q": {
+    "en": "How do I make a consumer complaint by phone?",
+    "th": "ร้องเรียนผู้บริโภคทางโทรศัพท์ทำอย่างไร",
+    "my": "စားသုံးသူ တိုင်ကြားမှုကို ဖုန်းဖြင့် ဘယ်လိုလုပ်သလဲ။",
+    "zh": "怎样通过电话投诉消费问题？",
+    "de": "Wie reiche ich eine Konsumentenbeschwerde per Telefon ein?"
+   },
+   "a": {
+    "en": "The Office of the Consumer Protection Board gives 1166. Complaints also go through its OCPB Connect app and at the provincial hall or Damrongdhama Center of a province.",
+    "th": "สำนักงานคณะกรรมการคุ้มครองผู้บริโภคระบุสายด่วน 1166 ร้องเรียนได้ผ่านแอป OCPB Connect และที่ศาลากลางจังหวัดหรือศูนย์ดำรงธรรมของจังหวัดด้วย",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့ရုံးက 1166 ကို ပေးထားသည်။ OCPB Connect အက်ပ်မှတစ်ဆင့်လည်းကောင်း၊ ပြည်နယ်တစ်ခု၏ ခရိုင်ခန်းမ သို့မဟုတ် ဒမ်ရောင်ဒမ်မာ (Damrongdhama) စင်တာတွင်လည်းကောင်း တိုင်ကြားနိုင်သည်။",
+    "zh": "消费者保护委员会办公室给出 1166。也可通过其 OCPB Connect 应用，或到府政厅、Damrongdhama 中心投诉。",
+    "de": "Das Amt des Konsumentenschutzrates nennt 1166. Beschwerden gehen auch über die App OCPB Connect und bei der Provinzverwaltung oder dem Damrongdhama-Zentrum einer Provinz."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  }
+ ],
+ "related": [
+  "dispute",
+  "there",
+  "errand",
+  "interp",
+  "form",
+  "assistant"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Ministry of Foreign Affairs: emergency numbers for foreign nationals",
+    "th": "กระทรวงการต่างประเทศ: เบอร์ฉุกเฉินสำหรับชาวต่างชาติ",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာန: နိုင်ငံခြားသားများအတွက် အရေးပေါ်နံပါတ်များ",
+    "zh": "外交部：外国人紧急联系电话",
+    "de": "Aussenministerium: Notrufnummern für Ausländer"
+   },
+   "href": "https://www.mfa.go.th/en/content/eq2"
+  },
+  {
+   "t": {
+    "en": "OCPB: frequently asked questions and complaint channels",
+    "th": "สคบ.: คำถามที่พบบ่อยและช่องทางร้องเรียน",
+    "my": "OCPB: မေးလေ့ရှိသောမေးခွန်းများနှင့် တိုင်ကြားနည်းလမ်းများ",
+    "zh": "OCPB：常见问题与投诉渠道",
+    "de": "OCPB: häufige Fragen und Beschwerdewege"
+   },
+   "href": "https://www.ocpb.go.th/faqs.php"
+  }
+ ],
+ "glyphs": [
+  "telephone",
+  "chat",
+  "translate"
+ ]
+}

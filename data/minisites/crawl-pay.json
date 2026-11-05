@@ -1,0 +1,302 @@
+{
+ "id": "crawl-pay",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "AI companies send bots to read websites, and Cloudflare lets a site owner set a price for each read.",
+  "th": "บริษัท AI ส่งบอทมาอ่านเว็บไซต์ และ Cloudflare ให้เจ้าของเว็บตั้งราคาต่อการอ่านแต่ละครั้งได้",
+  "my": "AI ကုမ္ပဏီများက ဝက်ဘ်ဆိုက်များကို ဖတ်ရန် ဘော့များ စေလွှတ်ပြီး Cloudflare က ဆိုက်ပိုင်ရှင်အား ဖတ်သည့်အကြိမ်တိုင်းအတွက် စျေးသတ်မှတ်ခွင့် ပေးသည်။",
+  "zh": "AI 公司派机器人去读网站，Cloudflare 让网站主人给每次读取定价。",
+  "de": "KI-Firmen schicken Bots, die Websites lesen, und Cloudflare lässt Website-Betreiber einen Preis für jeden Abruf festlegen."
+ },
+ "n": {
+  "de": "KI-Crawler zur Kasse bitten"
+ },
+ "l": {
+  "de": "Sehen Sie, welche Bots Ihre Seite lesen; Cloudflare Pay-per-Crawl eingerichtet."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "We look at which bots read your site.",
+    "th": "ดูว่าบอทไหนอ่านเว็บของคุณ",
+    "my": "မည်သည့်ဘော့များ သင့်ဝက်ဘ်ဆိုက်ကို ဖတ်သည်ကို ကြည့်သည်။",
+    "zh": "查看哪些机器人在读您的网站。",
+    "de": "Wir sehen nach, welche Bots Ihre Seite lesen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "gear",
+   "t": {
+    "en": "We set up Cloudflare's pay-per-crawl for your site.",
+    "th": "ตั้งค่า pay-per-crawl ของ Cloudflare ให้เว็บของคุณ",
+    "my": "သင့်ဝက်ဘ်ဆိုက်အတွက် Cloudflare ၏ pay-per-crawl ကို ပြင်ဆင်ပေးသည်။",
+    "zh": "为您的网站设置 Cloudflare 的按次付费爬取。",
+    "de": "Wir richten Cloudflares Pay-per-Crawl für Ihre Seite ein."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Second",
+    "th": "ขั้นที่สอง",
+    "my": "ဒုတိယ",
+    "zh": "第二步",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "A bot that does not pay gets an answer with a price.",
+    "th": "บอทที่ไม่จ่ายเงินจะได้คำตอบพร้อมราคา",
+    "my": "မပေးချေသော ဘော့သည် စျေးနှုန်းပါသော အဖြေကို ရသည်။",
+    "zh": "不付费的机器人会收到带价格的回复。",
+    "de": "Ein Bot, der nicht zahlt, bekommt eine Antwort mit einem Preis."
+   },
+   "who": {
+    "en": "Cloudflare",
+    "th": "Cloudflare",
+    "my": "Cloudflare",
+    "zh": "Cloudflare",
+    "de": "Cloudflare"
+   },
+   "time": {
+    "en": "From then on",
+    "th": "ต่อจากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "此后",
+    "de": "Von da an"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Cloudflare's pay per crawl is in closed beta. The page points to a signup page, and Enterprise customers can contact their account executive.",
+    "th": "pay per crawl ของ Cloudflare อยู่ในเบต้าปิด หน้าเว็บชี้ไปยังหน้าลงทะเบียน และลูกค้า Enterprise ติดต่อผู้ดูแลบัญชีของตนได้",
+    "my": "Cloudflare ၏ pay per crawl သည် ပိတ်ထားသော beta တွင် ရှိသည်။ စာမျက်နှာက စာရင်းသွင်းရန်စာမျက်နှာသို့ ညွှန်ပြပြီး Enterprise ဖောက်သည်များသည် ၎င်းတို့၏ အကောင့်မန်နေဂျာကို ဆက်သွယ်နိုင်သည်။",
+    "zh": "Cloudflare 的按次付费爬取（pay per crawl）处于封闭测试。页面指向报名页，企业版（Enterprise）客户可联系自己的客户经理。",
+    "de": "Cloudflares Pay per Crawl ist in geschlossener Beta. Die Seite verweist auf eine Anmeldeseite, und Enterprise-Kunden können ihren Account Executive kontaktieren."
+   },
+   "src": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/"
+  },
+  {
+   "t": {
+    "en": "A crawler that does not pay receives an HTTP 402 Payment Required answer that includes the price. A crawler that sends its payment intent in the request headers gets a normal answer, HTTP 200.",
+    "th": "บอทที่ไม่จ่ายเงินจะได้คำตอบ HTTP 402 Payment Required (ต้องชำระเงิน) พร้อมราคา บอทที่ส่งเจตนาจ่ายเงินมาในส่วนหัวของคำขอจะได้คำตอบปกติ HTTP 200",
+    "my": "မပေးချေသော crawler သည် စျေးနှုန်းပါသော HTTP 402 Payment Required (ငွေပေးချေရန် လိုသည်) အဖြေကို ရသည်။ တောင်းဆိုမှု header တွင် ပေးချေလိုကြောင်း ပို့သော crawler သည် ပုံမှန်အဖြေ HTTP 200 ကို ရသည်။",
+    "zh": "不付费的爬虫会收到带价格的 HTTP 402 Payment Required（需要付款）回复。在请求头里表明付款意愿的爬虫，会收到正常回复 HTTP 200。",
+    "de": "Ein Crawler, der nicht zahlt, erhält die Antwort HTTP 402 Payment Required (Zahlung erforderlich) mit dem Preis. Ein Crawler, der seine Zahlungsabsicht in den Anfrage-Headern mitschickt, erhält die normale Antwort HTTP 200."
+   },
+   "src": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/"
+  },
+  {
+   "t": {
+    "en": "The site owner sets the price. The Cloudflare post describes a flat price per request across the whole site, and the owner can let chosen crawlers in free of charge.",
+    "th": "เจ้าของเว็บเป็นผู้ตั้งราคา บทความของ Cloudflare อธิบายราคาเดียวต่อคำขอทั่วทั้งเว็บ และเจ้าของให้บอทที่เลือกเข้าได้โดยไม่คิดเงิน",
+    "my": "စျေးနှုန်းကို ဆိုက်ပိုင်ရှင်က သတ်မှတ်သည်။ Cloudflare ဆောင်းပါးက ဆိုက်တစ်ခုလုံးအတွက် တောင်းဆိုမှုတစ်ခုလျှင် စျေးတစ်မျိုးတည်းကို ဖော်ပြပြီး ပိုင်ရှင်သည် ရွေးထားသော crawler များကို အခမဲ့ ဝင်ခွင့်ပြုနိုင်သည်။",
+    "zh": "价格由网站主人设定。Cloudflare 的文章写到全站每次请求一个统一价格，主人也可以让选定的爬虫免费进入。",
+    "de": "Den Preis legt der Website-Betreiber fest. Der Beitrag von Cloudflare beschreibt einen Einheitspreis pro Anfrage für die ganze Seite, und der Betreiber kann ausgewählte Crawler kostenlos einlassen."
+   },
+   "src": "https://blog.cloudflare.com/introducing-pay-per-crawl/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare acts as the Merchant of Record for pay per crawl. A WAF or Bot Management rule that blocks a crawler overrides the charge, so that crawler gets no access.",
+    "th": "Cloudflare ทำหน้าที่เป็น Merchant of Record (ผู้ขายตามกฎหมายที่รับชำระเงิน) ของ pay per crawl กฎ WAF หรือ Bot Management ที่บล็อกบอทจะมีผลเหนือการเก็บเงิน บอทนั้นจึงเข้าไม่ได้",
+    "my": "Cloudflare သည် pay per crawl အတွက် Merchant of Record (ငွေလက်ခံသော တရားဝင်ရောင်းသူ) အဖြစ် ဆောင်ရွက်သည်။ crawler တစ်ခုကို ပိတ်ဆို့သော WAF သို့မဟုတ် Bot Management စည်းမျဉ်းသည် ငွေကောက်ခံမှုကို ကျော်လွန်သဖြင့် ထို crawler မဝင်နိုင်ပါ။",
+    "zh": "Cloudflare 在按次付费爬取中担任 Merchant of Record（收款的法定商户）。屏蔽某个爬虫的 WAF 或 Bot Management 规则优先于收费，该爬虫无法访问。",
+    "de": "Cloudflare ist beim Pay per Crawl der Merchant of Record (der rechtliche Verkäufer, der das Geld einzieht). Eine WAF- oder Bot-Management-Regel, die einen Crawler sperrt, geht der Gebühr vor, sodass dieser Crawler keinen Zugang hat."
+   },
+   "src": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare's AI Crawl Control shows which AI services access a site, sets allow or block rules for individual crawlers, and tracks robots.txt compliance. It works on all Cloudflare plans.",
+    "th": "AI Crawl Control ของ Cloudflare แสดงว่าบริการ AI ใดเข้าเว็บ ตั้งกฎอนุญาตหรือบล็อกแยกตามบอท และติดตามว่าบอทปฏิบัติตาม robots.txt หรือไม่ ใช้ได้กับทุกแพ็กเกจของ Cloudflare",
+    "my": "Cloudflare ၏ AI Crawl Control သည် မည်သည့် AI ဝန်ဆောင်မှုများ ဆိုက်ကို ဝင်ရောက်သည်ကို ပြပြီး crawler တစ်ခုချင်းစီအတွက် ခွင့်ပြု သို့မဟုတ် ပိတ်ဆို့စည်းမျဉ်း သတ်မှတ်ကာ robots.txt လိုက်နာမှုကို စောင့်ကြည့်သည်။ Cloudflare အစီအစဉ်အားလုံးတွင် အလုပ်လုပ်သည်။",
+    "zh": "Cloudflare 的 AI Crawl Control 显示哪些 AI 服务在访问网站，可对单个爬虫设置允许或屏蔽规则，并跟踪 robots.txt 遵守情况。所有 Cloudflare 套餐都可用。",
+    "de": "Cloudflares AI Crawl Control zeigt, welche KI-Dienste auf eine Seite zugreifen, legt Erlauben- oder Sperren-Regeln für einzelne Crawler fest und verfolgt die Einhaltung von robots.txt. Es funktioniert in allen Cloudflare-Tarifen."
+   },
+   "src": "https://developers.cloudflare.com/ai-crawl-control/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Cloudflare Free plan",
+    "th": "Cloudflare แพ็กเกจ Free",
+    "my": "Cloudflare Free အစီအစဉ်",
+    "zh": "Cloudflare Free 套餐",
+    "de": "Cloudflare-Tarif Free"
+   },
+   "p": {
+    "en": "US$0 a month",
+    "th": "เดือนละ US$0",
+    "my": "တစ်လ US$0",
+    "zh": "每月 US$0",
+    "de": "US$0 im Monat"
+   },
+   "src": "https://www.cloudflare.com/plans/network-cdn/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Pro plan",
+    "th": "Cloudflare แพ็กเกจ Pro",
+    "my": "Cloudflare Pro အစီအစဉ်",
+    "zh": "Cloudflare Pro 套餐",
+    "de": "Cloudflare-Tarif Pro"
+   },
+   "p": {
+    "en": "US$20 a month billed yearly, US$25 billed monthly",
+    "th": "เดือนละ US$20 จ่ายรายปี หรือ US$25 จ่ายรายเดือน",
+    "my": "တစ်လ US$20 (နှစ်စဉ်ပေး) သို့မဟုတ် US$25 (လစဉ်ပေး)",
+    "zh": "每月 US$20（按年付）或 US$25（按月付）",
+    "de": "US$20 im Monat bei Jahreszahlung, US$25 bei Monatszahlung"
+   },
+   "src": "https://www.cloudflare.com/plans/network-cdn/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Business plan",
+    "th": "Cloudflare แพ็กเกจ Business",
+    "my": "Cloudflare Business အစီအစဉ်",
+    "zh": "Cloudflare Business 套餐",
+    "de": "Cloudflare-Tarif Business"
+   },
+   "p": {
+    "en": "US$200 a month billed yearly, US$250 billed monthly",
+    "th": "เดือนละ US$200 จ่ายรายปี หรือ US$250 จ่ายรายเดือน",
+    "my": "တစ်လ US$200 (နှစ်စဉ်ပေး) သို့မဟုတ် US$250 (လစဉ်ပေး)",
+    "zh": "每月 US$200（按年付）或 US$250（按月付）",
+    "de": "US$200 im Monat bei Jahreszahlung, US$250 bei Monatszahlung"
+   },
+   "src": "https://www.cloudflare.com/plans/network-cdn/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does Cloudflare pay per crawl cost?",
+    "th": "pay per crawl ของ Cloudflare ราคาเท่าไร",
+    "my": "Cloudflare pay per crawl ဘယ်လောက်ကျသလဲ။",
+    "zh": "Cloudflare 按次付费爬取多少钱？",
+    "de": "Was kostet Cloudflares Pay per Crawl?"
+   },
+   "a": {
+    "en": "The introduction post gives no price and shows only a placeholder, USD XX.XX. The site owner sets the price per request.",
+    "th": "บทความแนะนำไม่ระบุราคา มีเพียงตัวอย่างแทนที่ USD XX.XX เจ้าของเว็บเป็นผู้ตั้งราคาต่อคำขอ",
+    "my": "နိဒါန်းဆောင်းပါးတွင် စျေးနှုန်းမပါဘဲ နေရာယူစာသား USD XX.XX သာ ပြထားသည်။ တောင်းဆိုမှုတစ်ခုလျှင် စျေးကို ဆိုက်ပိုင်ရှင်က သတ်မှတ်သည်။",
+    "zh": "介绍文章没有给出价格，只写了占位符 USD XX.XX。每次请求的价格由网站主人设定。",
+    "de": "Der Einführungsbeitrag nennt keinen Preis und zeigt nur den Platzhalter USD XX.XX. Den Preis pro Anfrage legt der Website-Betreiber fest."
+   },
+   "src": "https://blog.cloudflare.com/introducing-pay-per-crawl/"
+  },
+  {
+   "q": {
+    "en": "Can anyone use pay per crawl?",
+    "th": "ใครๆ ก็ใช้ pay per crawl ได้ไหม",
+    "my": "မည်သူမဆို pay per crawl သုံးနိုင်သလား။",
+    "zh": "任何人都能用按次付费爬取吗？",
+    "de": "Kann jeder Pay per Crawl nutzen?"
+   },
+   "a": {
+    "en": "Not yet. Cloudflare describes it as a closed beta. Site owners and crawler operators sign up through Cloudflare's pay per crawl signup page, and Enterprise customers can contact their account executive.",
+    "th": "ยังไม่ได้ Cloudflare ระบุว่าเป็นเบต้าปิด เจ้าของเว็บและผู้ดูแลบอทสมัครผ่านหน้าลงทะเบียน pay per crawl ของ Cloudflare และลูกค้า Enterprise ติดต่อผู้ดูแลบัญชีของตนได้",
+    "my": "မရသေးပါ။ Cloudflare က ၎င်းကို ပိတ်ထားသော beta ဟု ဖော်ပြသည်။ ဆိုက်ပိုင်ရှင်များနှင့် crawler လုပ်ကိုင်သူများသည် Cloudflare ၏ pay per crawl စာရင်းသွင်းစာမျက်နှာမှ စာရင်းသွင်းပြီး Enterprise ဖောက်သည်များသည် ၎င်းတို့၏ အကောင့်မန်နေဂျာကို ဆက်သွယ်နိုင်သည်။",
+    "zh": "还不行。Cloudflare 称其为封闭测试。网站主人和爬虫运营者通过 Cloudflare 的 pay per crawl 报名页申请，企业版客户可联系自己的客户经理。",
+    "de": "Noch nicht. Cloudflare beschreibt es als geschlossene Beta. Website-Betreiber und Crawler-Betreiber melden sich über die Pay-per-Crawl-Anmeldeseite von Cloudflare an, und Enterprise-Kunden können ihren Account Executive kontaktieren."
+   },
+   "src": "https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/"
+  },
+  {
+   "q": {
+    "en": "What choices does a site owner have for each bot?",
+    "th": "เจ้าของเว็บเลือกอะไรได้บ้างกับบอทแต่ละตัว",
+    "my": "ဆိုက်ပိုင်ရှင်သည် ဘော့တစ်ခုချင်းစီအတွက် ဘာတွေ ရွေးနိုင်သလဲ။",
+    "zh": "网站主人对每个机器人有哪些选择？",
+    "de": "Welche Wahl hat ein Website-Betreiber für einen Bot?"
+   },
+   "a": {
+    "en": "Three. Allow gives free access. Charge asks for the price set for the whole domain, and works even for a crawler that has no billing relationship with Cloudflare yet. Block denies access, with no way to pay.",
+    "th": "สามทาง อนุญาตคือเข้าได้ฟรี คิดเงินคือเรียกราคาที่ตั้งไว้ทั้งโดเมน ใช้ได้แม้กับบอทที่ยังไม่มีความสัมพันธ์ด้านการเรียกเก็บเงินกับ Cloudflare บล็อกคือไม่ให้เข้าและจ่ายเงินไม่ได้",
+    "my": "သုံးမျိုး။ ခွင့်ပြုခြင်းသည် အခမဲ့ ဝင်ခွင့်ပေးသည်။ ငွေကောက်ခြင်းသည် ဒိုမိန်းတစ်ခုလုံးအတွက် သတ်မှတ်ထားသော စျေးကို တောင်းပြီး Cloudflare နှင့် ငွေကောက်ခံရေး ဆက်ဆံရေး မရှိသေးသော crawler အတွက်ပင် အလုပ်လုပ်သည်။ ပိတ်ဆို့ခြင်းသည် ငွေပေးချေခွင့်မရှိဘဲ ဝင်ခွင့်ကို ငြင်းပယ်သည်။",
+    "zh": "共三种。允许：免费访问。收费：按整个域名设定的价格收费，即使爬虫与 Cloudflare 还没有计费关系也适用。屏蔽：拒绝访问，没有付款的途径。",
+    "de": "Drei. Erlauben gibt freien Zugang. Berechnen verlangt den für die ganze Domain festgelegten Preis und funktioniert auch bei einem Crawler, der noch keine Abrechnungsbeziehung zu Cloudflare hat. Sperren verweigert den Zugang, ohne Möglichkeit zu zahlen."
+   },
+   "src": "https://blog.cloudflare.com/introducing-pay-per-crawl/"
+  },
+  {
+   "q": {
+    "en": "How can I see which bots follow my robots.txt?",
+    "th": "ดูได้อย่างไรว่าบอทไหนทำตาม robots.txt ของฉัน",
+    "my": "ကျွန်ုပ်၏ robots.txt ကို ဘော့ဘယ်ဟာတွေ လိုက်နာသည်ကို ဘယ်လိုကြည့်နိုင်သလဲ။",
+    "zh": "怎么看哪些机器人遵守我的 robots.txt？",
+    "de": "Wie sehe ich, welche Bots meiner robots.txt folgen?"
+   },
+   "a": {
+    "en": "Cloudflare's AI Crawl Control has a dashboard of crawler activity and monitors robots.txt compliance. It shows which crawlers follow the directives, and rules can be created to enforce them. The page says it works on all Cloudflare plans.",
+    "th": "AI Crawl Control ของ Cloudflare มีแดชบอร์ดแสดงกิจกรรมของบอท และตรวจสอบการปฏิบัติตาม robots.txt แสดงว่าบอทไหนทำตามคำสั่ง และสร้างกฎบังคับใช้ได้ หน้าเว็บระบุว่าใช้ได้กับทุกแพ็กเกจของ Cloudflare",
+    "my": "Cloudflare ၏ AI Crawl Control တွင် crawler လှုပ်ရှားမှု dashboard ရှိပြီး robots.txt လိုက်နာမှုကို စောင့်ကြည့်သည်။ မည်သည့် crawler များ ညွှန်ကြားချက်ကို လိုက်နာသည်ကို ပြပြီး ၎င်းတို့ကို အတင်းလိုက်နာစေရန် စည်းမျဉ်းများ ဖန်တီးနိုင်သည်။ Cloudflare အစီအစဉ်အားလုံးတွင် အလုပ်လုပ်သည်ဟု စာမျက်နှာက ဖော်ပြသည်။",
+    "zh": "Cloudflare 的 AI Crawl Control 有显示爬虫活动的面板，并监控 robots.txt 的遵守情况。它显示哪些爬虫遵守指令，也可以创建规则来强制执行。页面称所有 Cloudflare 套餐都可用。",
+    "de": "Cloudflares AI Crawl Control hat ein Dashboard mit der Crawler-Aktivität und überwacht die Einhaltung von robots.txt. Es zeigt, welche Crawler den Vorgaben folgen, und es lassen sich Regeln zur Durchsetzung anlegen. Laut der Seite funktioniert es in allen Cloudflare-Tarifen."
+   },
+   "src": "https://developers.cloudflare.com/ai-crawl-control/"
+  }
+ ],
+ "related": [
+  "bots",
+  "traffic",
+  "ai-assistant",
+  "ai-own",
+  "web-license",
+  "directory"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Cloudflare blog: introducing pay per crawl",
+    "th": "บล็อก Cloudflare: แนะนำ pay per crawl",
+    "my": "Cloudflare ဘလော့ - pay per crawl နိဒါန်း",
+    "zh": "Cloudflare 博客：pay per crawl 介绍",
+    "de": "Cloudflare-Blog: Einführung von Pay per Crawl"
+   },
+   "href": "https://blog.cloudflare.com/introducing-pay-per-crawl/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare docs: AI Crawl Control",
+    "th": "เอกสาร Cloudflare: AI Crawl Control",
+    "my": "Cloudflare စာတမ်း - AI Crawl Control",
+    "zh": "Cloudflare 文档：AI Crawl Control",
+    "de": "Cloudflare-Dokumentation: AI Crawl Control"
+   },
+   "href": "https://developers.cloudflare.com/ai-crawl-control/"
+  }
+ ],
+ "glyphs": [
+  "spider",
+  "coin",
+  "lock"
+ ]
+}

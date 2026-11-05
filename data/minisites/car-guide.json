@@ -1,0 +1,326 @@
+{
+ "id": "car-guide",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People hire a car and driver to get around the north without driving, or a licensed guide to explain the sights in their own language.",
+  "th": "คนจ้างรถพร้อมคนขับเพื่อเที่ยวภาคเหนือโดยไม่ต้องขับเอง หรือจ้างไกด์ที่มีใบอนุญาตเพื่ออธิบายสถานที่ท่องเที่ยวเป็นภาษาของตัวเอง",
+  "my": "လူတွေက ကိုယ်တိုင်မမောင်းဘဲ မြောက်ပိုင်းကို လှည့်လည်ရန် ကားနှင့်ယာဉ်မောင်း ငှားကြပြီး မိမိဘာသာစကားဖြင့် နေရာများကို ရှင်းပြပေးရန် လိုင်စင်ရ ဧည့်လမ်းညွှန် ငှားကြသည်။",
+  "zh": "人们包车配司机，是为了在北部出行不必自己开车；请持证导游，是为了用自己的语言听讲解。",
+  "de": "Man mietet ein Auto mit Fahrer, um im Norden nicht selbst zu fahren, oder einen zugelassenen Guide, der die Sehenswürdigkeiten in der eigenen Sprache erklärt."
+ },
+ "n": {
+  "de": "Auto, Fahrer oder Guide für einen Tag"
+ },
+ "l": {
+  "de": "Neun Stunden mit Fahrer oder ein zugelassener Guide für acht."
+ },
+ "steps": [
+  {
+   "db": "compass",
+   "t": {
+    "en": "You pick a car and driver for nine hours, or a guide for eight, in English, Chinese, Japanese, Korean or another language.",
+    "th": "คุณเลือกรถพร้อมคนขับเก้าชั่วโมง หรือไกด์แปดชั่วโมง ภาษาอังกฤษ จีน ญี่ปุ่น เกาหลี หรือภาษาอื่น",
+    "my": "သင်သည် ကားနှင့် ယာဉ်မောင်း ကိုးနာရီ သို့မဟုတ် ဧည့်လမ်းညွှန် ရှစ်နာရီကို အင်္ဂလိပ်၊ တရုတ်၊ ဂျပန်၊ ကိုးရီးယား သို့မဟုတ် အခြားဘာသာဖြင့် ရွေးသည်။",
+    "zh": "您选 9 小时的车和司机，或 8 小时的导游，语言可选英、中、日、韩或其他。",
+    "de": "Sie wählen Auto und Fahrer für neun Stunden oder einen Guide für acht, auf Englisch, Chinesisch, Japanisch, Koreanisch oder in einer anderen Sprache."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่ง",
+    "my": "မှာယူချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "Your driver or guide is booked for the day you chose.",
+    "th": "จองคนขับหรือไกด์ให้ในวันที่คุณเลือก",
+    "my": "သင်ရွေးသည့်နေ့အတွက် ယာဉ်မောင်း သို့မဟုတ် ဧည့်လမ်းညွှန်ကို ကြိုတင်မှာပေးသည်။",
+    "zh": "为您选定的日子订好司机或导游。",
+    "de": "Für den gewählten Tag sind Fahrer oder Guide gebucht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันเดินทาง",
+    "my": "ခရီးသွားမည့်နေ့မတိုင်မီ",
+    "zh": "出行前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "songthaew",
+   "t": {
+    "en": "Your day runs nine hours with the driver, fuel and tolls included, or eight with the guide. Overtime and parking, or the guide's meals and entries, are paid at cost.",
+    "th": "วันของคุณยาวเก้าชั่วโมงกับคนขับ รวมน้ำมันและทางด่วน หรือแปดชั่วโมงกับไกด์ ค่าล่วงเวลาและที่จอด หรือค่าอาหารและค่าเข้าของไกด์ คิดตามจริง",
+    "my": "သင့်နေ့သည် ယာဉ်မောင်းနှင့် ကိုးနာရီ (လောင်စာဆီနှင့် လမ်းကြေးပါ) သို့မဟုတ် ဧည့်လမ်းညွှန်နှင့် ရှစ်နာရီ ဖြစ်သည်။ အချိန်ပိုကြေး၊ ကားရပ်ကြေး၊ သို့မဟုတ် ဧည့်လမ်းညွှန်၏ အစားအသောက်နှင့် ဝင်ကြေးကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "一天为司机 9 小时（含油费和过路费），或导游 8 小时。超时费、停车费，或导游的餐费和门票，按实际费用支付。",
+    "de": "Ihr Tag dauert neun Stunden mit Fahrer, Benzin und Maut inklusive, oder acht mit Guide. Überstunden und Parkgebühren, oder Essen und Eintritte des Guides, werden zum Selbstkostenpreis bezahlt."
+   },
+   "who": {
+    "en": "Driver or guide",
+    "th": "คนขับหรือไกด์",
+    "my": "ယာဉ်မောင်း သို့မဟုတ် ဧည့်လမ်းညွှန်",
+    "zh": "司机或导游",
+    "de": "Fahrer oder Guide"
+   },
+   "time": {
+    "en": "9 hours with a driver, 8 with a guide",
+    "th": "9 ชั่วโมงกับคนขับ 8 ชั่วโมงกับไกด์",
+    "my": "ယာဉ်မောင်းနှင့် 9 နာရီ၊ ဧည့်လမ်းညွှန်နှင့် 8 နာရီ",
+    "zh": "司机 9 小时，导游 8 小时",
+    "de": "9 Stunden mit Fahrer, 8 mit Guide"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A tour guide in Thailand must be a Thai national and licensed under the Tourism Business and Guide Act of 2008. The law on work by foreigners reserves the job for Thai people.",
+    "th": "มัคคุเทศก์ในไทยต้องเป็นคนสัญชาติไทยและได้รับอนุญาตตามพระราชบัญญัติธุรกิจนำเที่ยวและมัคคุเทศก์ พ.ศ. 2551 กฎหมายการทำงานของคนต่างด้าวสงวนอาชีพนี้ไว้สำหรับคนไทย",
+    "my": "ထိုင်းတွင် ဧည့်လမ်းညွှန်သည် ထိုင်းနိုင်ငံသား ဖြစ်ရမည်ဖြစ်ပြီး 2008 ခုနှစ် ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန် ဥပဒေအရ ခွင့်ပြုထားရမည်။ နိုင်ငံခြားသားလုပ်ငန်းဥပဒေက ဤအလုပ်ကို ထိုင်းလူမျိုးများအတွက်သာ သီးသန့်သတ်မှတ်ထားသည်။",
+    "zh": "在泰国，导游必须是泰国国民，并依 2008 年《旅游业务和导游法》获准。外国人工作法把这个职业留给泰国人。",
+    "de": "Ein Reiseleiter in Thailand muss thailändischer Staatsangehöriger sein und nach dem Gesetz über Tourismusbetriebe und Reiseleiter von 2008 zugelassen sein. Das Gesetz über die Arbeit von Ausländern behält den Beruf Thailändern vor."
+   },
+   "src": "https://so05.tci-thaijo.org/index.php/pacific/article/view/204920"
+  },
+  {
+   "t": {
+    "en": "The Department of Tourism's website has a lookup that shows whether a tour business or guide is registered.",
+    "th": "เว็บไซต์กรมการท่องเที่ยวมีระบบค้นหาที่แสดงว่าธุรกิจนำเที่ยวหรือมัคคุเทศก์จดทะเบียนไว้หรือไม่",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန၏ ဝက်ဘ်ဆိုက်တွင် ခရီးစဉ်စီစဉ်သည့်လုပ်ငန်း သို့မဟုတ် ဧည့်လမ်းညွှန် မှတ်ပုံတင်ထားခြင်း ရှိမရှိ ပြသသည့် ရှာဖွေရေးစနစ် ပါရှိသည်။",
+    "zh": "旅游厅网站有查询工具，显示旅游企业或导游是否已登记。",
+    "de": "Die Website des Tourismusamts (Department of Tourism) hat eine Suche, die zeigt, ob ein Reiseveranstalter oder Reiseleiter registriert ist."
+   },
+   "src": "https://www.dot.go.th/"
+  },
+  {
+   "t": {
+    "en": "On one Chiang Mai listing for a licensed English-speaking guide, the price covers up to 6 hours of the guide. Transport, food, drinks and entrance fees are not in it, and the traveller pays the guide's own costs when the guide joins meals, activities or transport.",
+    "th": "ในรายการหนึ่งที่เชียงใหม่สำหรับไกด์ที่มีใบอนุญาตพูดภาษาอังกฤษ ราคาคือค่าไกด์ไม่เกิน 6 ชั่วโมง ไม่รวมรถ อาหาร เครื่องดื่ม และค่าเข้า และผู้เที่ยวจ่ายค่าใช้จ่ายของไกด์เมื่อไกด์ร่วมมื้ออาหาร กิจกรรม หรือการเดินทาง",
+    "my": "ချင်းမိုင်ရှိ လိုင်စင်ရ အင်္ဂလိပ်စကားပြော ဧည့်လမ်းညွှန် စာရင်းတစ်ခုတွင် ဈေးနှုန်းသည် ဧည့်လမ်းညွှန် 6 နာရီအထိ ဖြစ်သည်။ ကားစရိတ်၊ အစားအသောက်၊ အဖျော်ယမကာနှင့် ဝင်ကြေးတို့ မပါ။ ဧည့်လမ်းညွှန်က အစားအသောက်၊ လှုပ်ရှားမှု သို့မဟုတ် ခရီးသွားရာတွင် ပါလာလျှင် သူ့စရိတ်ကို ခရီးသည်က ပေးရသည်။",
+    "zh": "清迈一家持证英语导游的挂牌价覆盖最多 6 小时的导游服务，不含交通、餐饮和门票；导游随行用餐、参加活动或乘车时，其费用由游客承担。",
+    "de": "In einem Angebot für einen zugelassenen englischsprachigen Guide in Chiang Mai deckt der Preis bis zu 6 Stunden des Guides. Transport, Essen, Getränke und Eintritte sind nicht enthalten, und die Reisenden tragen die Kosten des Guides, wenn er bei Mahlzeiten, Aktivitäten oder Fahrten dabei ist."
+   },
+   "src": "https://www.wheresidewalksend.com/travel/hire-a-guide-in-chiang-mai-full-day/"
+  },
+  {
+   "t": {
+    "en": "One Chiang Mai listing for a full-day car hire with an English-speaking driver includes 9 hours and fuel. An extra hour costs ฿300. It seats up to 9 people, in a car or minibus.",
+    "th": "รายการเช่ารถพร้อมคนขับพูดภาษาอังกฤษแบบเต็มวันในเชียงใหม่รายการหนึ่ง รวม 9 ชั่วโมงและน้ำมัน ชั่วโมงที่เกินคิด ฿300 ต่อชั่วโมง นั่งได้ไม่เกิน 9 คน ในรถเก๋งหรือรถตู้เล็ก",
+    "my": "ချင်းမိုင်ရှိ အင်္ဂလိပ်စကားပြော ယာဉ်မောင်းဖြင့် တစ်နေ့လုံး ကားငှားရမ်းသည့် စာရင်းတစ်ခုတွင် 9 နာရီနှင့် လောင်စာဆီ ပါသည်။ ပိုသည့် တစ်နာရီလျှင် ฿300။ ကား သို့မဟုတ် မီနီဘတ်စ်ဖြင့် လူ 9 ဦးအထိ စီးနိုင်သည်။",
+    "zh": "清迈一份配英语司机的全天包车挂牌含 9 小时和油费，超时每小时 ฿300，小轿车或小巴最多坐 9 人。",
+    "de": "Ein Angebot für einen Tag mit Auto und englischsprachigem Fahrer in Chiang Mai umfasst 9 Stunden und das Benzin. Eine weitere Stunde kostet ฿300. Es bietet Platz für bis zu 9 Personen, im Auto oder Minibus."
+   },
+   "src": "https://www.pelago.com/en/activity/psaulmqh5-full-day-car-hire-with-private-english-speaking-driver-chiang-mai/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Full-day car hire with an English-speaking driver in Chiang Mai, 9 hours",
+    "th": "เช่ารถพร้อมคนขับพูดภาษาอังกฤษเต็มวันในเชียงใหม่ 9 ชั่วโมง",
+    "my": "ချင်းမိုင်တွင် အင်္ဂလိပ်စကားပြော ယာဉ်မောင်းနှင့် တစ်နေ့လုံး ကားငှားခြင်း၊ 9 နာရီ",
+    "zh": "清迈配英语司机全天包车，9 小时",
+    "de": "Tag mit Auto und englischsprachigem Fahrer in Chiang Mai, 9 Stunden"
+   },
+   "p": {
+    "en": "from US$166.53",
+    "th": "เริ่ม US$166.53",
+    "my": "US$166.53 မှ စ၍",
+    "zh": "US$166.53 起",
+    "de": "ab US$166.53"
+   },
+   "src": "https://www.pelago.com/en/activity/psaulmqh5-full-day-car-hire-with-private-english-speaking-driver-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "Each hour beyond the 9 on that listing",
+    "th": "ชั่วโมงที่เกิน 9 ชั่วโมงในรายการนั้น",
+    "my": "ထိုစာရင်းတွင် 9 နာရီထက် ပိုသည့် တစ်နာရီ",
+    "zh": "该挂牌中超过 9 小时的部分",
+    "de": "Jede Stunde nach den 9 in diesem Angebot"
+   },
+   "p": {
+    "en": "฿300 an hour",
+    "th": "฿300 ต่อชั่วโมง",
+    "my": "တစ်နာရီ ฿300",
+    "zh": "每小时 ฿300",
+    "de": "฿300 pro Stunde"
+   },
+   "src": "https://www.pelago.com/en/activity/psaulmqh5-full-day-car-hire-with-private-english-speaking-driver-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "Licensed English-speaking guide in Chiang Mai, up to 6 hours (transport not included)",
+    "th": "ไกด์ที่มีใบอนุญาตพูดภาษาอังกฤษในเชียงใหม่ ไม่เกิน 6 ชั่วโมง (ไม่รวมรถ)",
+    "my": "ချင်းမိုင်တွင် လိုင်စင်ရ အင်္ဂလိပ်စကားပြော ဧည့်လမ်းညွှန်၊ 6 နာရီအထိ (ကားမပါ)",
+    "zh": "清迈持证英语导游，最多 6 小时（不含用车）",
+    "de": "Zugelassener englischsprachiger Guide in Chiang Mai, bis 6 Stunden (ohne Transport)"
+   },
+   "p": {
+    "en": "from US$120",
+    "th": "เริ่ม US$120",
+    "my": "US$120 မှ စ၍",
+    "zh": "US$120 起",
+    "de": "ab US$120"
+   },
+   "src": "https://www.wheresidewalksend.com/travel/hire-a-guide-in-chiang-mai-full-day/"
+  },
+  {
+   "t": {
+    "en": "White Temple (Wat Rong Khun), foreign visitor",
+    "th": "วัดร่องขุ่น ชาวต่างชาติ",
+    "my": "ဝပ်ရုံခွန်၊ နိုင်ငံခြားသား",
+    "zh": "白庙，外国游客",
+    "de": "Weisser Tempel (Wat Rong Khun), ausländische Besucher"
+   },
+   "p": {
+    "en": "฿200",
+    "th": "฿200",
+    "my": "฿200",
+    "zh": "฿200",
+    "de": "฿200"
+   },
+   "src": "https://www.chiangraitimes.com/chiang-rai-guide/wat-rong-khun-raises-fee/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much is a car with a driver in Chiang Mai for a day?",
+    "th": "เช่ารถพร้อมคนขับในเชียงใหม่หนึ่งวันราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် ယာဉ်မောင်းနှင့် ကား တစ်နေ့ငှားရန် ဈေး ဘယ်လောက်လဲ။",
+    "zh": "清迈包车配司机一天多少钱？",
+    "de": "Was kostet ein Auto mit Fahrer in Chiang Mai für einen Tag?"
+   },
+   "a": {
+    "en": "One Chiang Mai listing prices a full day of 9 hours with an English-speaking driver from US$166.53, fuel included. An extra hour is ฿300.",
+    "th": "รายการหนึ่งในเชียงใหม่ตั้งราคาเต็มวัน 9 ชั่วโมงพร้อมคนขับพูดภาษาอังกฤษเริ่มที่ US$166.53 รวมน้ำมัน ชั่วโมงที่เกินคิด ฿300",
+    "my": "ချင်းမိုင်ရှိ စာရင်းတစ်ခုက အင်္ဂလိပ်စကားပြော ယာဉ်မောင်းနှင့် တစ်နေ့လုံး 9 နာရီကို လောင်စာဆီပါ US$166.53 မှ စ၍ သတ်မှတ်သည်။ ပိုသည့် တစ်နာရီလျှင် ฿300။",
+    "zh": "清迈一份挂牌给出配英语司机 9 小时全天价，US$166.53 起，含油费，超时每小时 ฿300。",
+    "de": "Ein Angebot in Chiang Mai nennt für einen ganzen Tag von 9 Stunden mit englischsprachigem Fahrer ab US$166.53, Benzin inbegriffen. Eine weitere Stunde kostet ฿300."
+   },
+   "src": "https://www.pelago.com/en/activity/psaulmqh5-full-day-car-hire-with-private-english-speaking-driver-chiang-mai/"
+  },
+  {
+   "q": {
+    "en": "How much does a licensed tour guide cost in Chiang Mai?",
+    "th": "จ้างไกด์ที่มีใบอนุญาตในเชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် လိုင်စင်ရ ဧည့်လမ်းညွှန် ငှားရန် ဈေး ဘယ်လောက်လဲ။",
+    "zh": "清迈请持证导游要多少钱？",
+    "de": "Was kostet ein zugelassener Guide in Chiang Mai?"
+   },
+   "a": {
+    "en": "One Chiang Mai listing for a licensed English-speaking guide starts at US$120 for up to 6 hours. Transport is paid separately.",
+    "th": "รายการหนึ่งในเชียงใหม่สำหรับไกด์ที่มีใบอนุญาตพูดภาษาอังกฤษเริ่มที่ US$120 ไม่เกิน 6 ชั่วโมง ค่ารถจ่ายแยก",
+    "my": "ချင်းမိုင်ရှိ လိုင်စင်ရ အင်္ဂလိပ်စကားပြော ဧည့်လမ်းညွှန် စာရင်းတစ်ခုသည် 6 နာရီအထိ US$120 မှ စသည်။ ကားစရိတ်ကို သီးခြားပေးရသည်။",
+    "zh": "清迈一份持证英语导游的挂牌 6 小时以内 US$120 起，交通另付。",
+    "de": "Ein Angebot für einen zugelassenen englischsprachigen Guide in Chiang Mai beginnt bei US$120 für bis zu 6 Stunden. Der Transport wird getrennt bezahlt."
+   },
+   "src": "https://www.wheresidewalksend.com/travel/hire-a-guide-in-chiang-mai-full-day/"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner work as a tour guide in Thailand?",
+    "th": "ชาวต่างชาติทำงานเป็นไกด์ในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦး ထိုင်းတွင် ဧည့်လမ်းညွှန်အလုပ် လုပ်နိုင်ပါသလား။",
+    "zh": "外国人可以在泰国做导游吗？",
+    "de": "Darf ein Ausländer in Thailand als Guide arbeiten?"
+   },
+   "a": {
+    "en": "No. A tour guide must be a Thai national and permitted under the Tourism Business and Guide Act of 2008. The law on work by foreigners reserves the job for Thai people.",
+    "th": "ไม่ได้ มัคคุเทศก์ต้องเป็นคนสัญชาติไทยและได้รับอนุญาตตามกฎหมายธุรกิจนำเที่ยวและมัคคุเทศก์ พ.ศ. 2551 กฎหมายการทำงานของคนต่างด้าวสงวนอาชีพนี้ไว้สำหรับคนไทย",
+    "my": "မရပါ။ ဧည့်လမ်းညွှန်သည် ထိုင်းနိုင်ငံသား ဖြစ်ရမည်ဖြစ်ပြီး 2008 ခုနှစ် ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန် ဥပဒေအရ ခွင့်ပြုထားရမည်။ နိုင်ငံခြားသားလုပ်ငန်းဥပဒေက ဤအလုပ်ကို ထိုင်းလူမျိုးများအတွက်သာ သီးသန့်သတ်မှတ်ထားသည်။",
+    "zh": "不可以。导游必须是泰国国民，并依 2008 年《旅游业务和导游法》获准；外国人工作法把这个职业留给泰国人。",
+    "de": "Nein. Ein Reiseleiter muss thailändischer Staatsangehöriger sein und nach dem Gesetz über Tourismusbetriebe und Reiseleiter von 2008 zugelassen sein. Das Gesetz über die Arbeit von Ausländern behält den Beruf Thailändern vor."
+   },
+   "src": "https://so05.tci-thaijo.org/index.php/pacific/article/view/204920"
+  },
+  {
+   "q": {
+    "en": "How does someone become a tour guide in Thailand?",
+    "th": "จะเป็นมัคคุเทศก์ในไทยต้องทำอย่างไร",
+    "my": "ထိုင်းတွင် ဧည့်လမ်းညွှန် ဖြစ်လာရန် ဘာလုပ်ရသလဲ။",
+    "zh": "怎样成为泰国导游？",
+    "de": "Wie wird man in Thailand Reiseleiter?"
+   },
+   "a": {
+    "en": "The Department of Tourism runs a knowledge and skills test for guides and training courses for guides and tour leaders. Its website lists a notice for applying to the guide test in November 2026.",
+    "th": "กรมการท่องเที่ยวจัดการทดสอบความรู้ความสามารถสำหรับผู้จะเป็นมัคคุเทศก์ และหลักสูตรอบรมมัคคุเทศก์และผู้นำเที่ยว เว็บไซต์มีประกาศรับสมัครสอบมัคคุเทศก์ประจำเดือนพฤศจิกายน 2569",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာနက ဧည့်လမ်းညွှန်ဖြစ်လိုသူများအတွက် အသိပညာနှင့် စွမ်းရည် စစ်ဆေးမှုနှင့် ဧည့်လမ်းညွှန်နှင့် ခရီးစဉ်ခေါင်းဆောင်များအတွက် သင်တန်းများ ကျင်းပသည်။ ၎င်း၏ ဝက်ဘ်ဆိုက်တွင် 2026 နိုဝင်ဘာ ဧည့်လမ်းညွှန်စစ်ဆေးမှု လျှောက်ထားရန် ကြေညာချက် ဖော်ပြထားသည်။",
+    "zh": "旅游厅为想当导游的人举办知识和能力测试，并为导游和领队开设培训课程。其网站列有 2026 年 11 月导游考试的报名公告。",
+    "de": "Das Department of Tourism führt für angehende Reiseleiter einen Wissens- und Fähigkeitstest durch und bietet Kurse für Reiseleiter und Tourenleiter an. Seine Website nennt eine Mitteilung zur Anmeldung für den Test im November 2026."
+   },
+   "src": "https://www.dot.go.th/"
+  },
+  {
+   "q": {
+    "en": "Who pays the guide's lunch and entry fees?",
+    "th": "ใครจ่ายค่าอาหารกลางวันและค่าเข้าของไกด์",
+    "my": "ဧည့်လမ်းညွှန်၏ နေ့လည်စာနှင့် ဝင်ကြေးကို ဘယ်သူ ပေးသလဲ။",
+    "zh": "导游的午餐和门票谁付？",
+    "de": "Wer zahlt Mittagessen und Eintritte des Guides?"
+   },
+   "a": {
+    "en": "The traveller. One Chiang Mai guide listing says a guide who joins meals, activities or transport has those costs paid by the traveller.",
+    "th": "ผู้เที่ยวเป็นผู้จ่าย รายการไกด์หนึ่งในเชียงใหม่ระบุว่า เมื่อไกด์ร่วมมื้ออาหาร กิจกรรม หรือการเดินทาง ผู้เที่ยวจ่ายค่าใช้จ่ายส่วนนั้น",
+    "my": "ခရီးသည်က ပေးရသည်။ ချင်းမိုင်ရှိ ဧည့်လမ်းညွှန်စာရင်းတစ်ခုက ဧည့်လမ်းညွှန်သည် အစားအသောက်၊ လှုပ်ရှားမှု သို့မဟုတ် ခရီးသွားရာတွင် ပါလာလျှင် ထိုစရိတ်များကို ခရီးသည်က ပေးရသည်ဟု ဆိုသည်။",
+    "zh": "游客付。清迈一份导游挂牌写明，导游随行用餐、参加活动或乘车时，这些费用由游客承担。",
+    "de": "Die Reisenden. Ein Angebot für einen Guide in Chiang Mai sagt, dass die Reisenden diese Kosten tragen, wenn der Guide bei Mahlzeiten, Aktivitäten oder Fahrten dabei ist."
+   },
+   "src": "https://www.wheresidewalksend.com/travel/hire-a-guide-in-chiang-mai-full-day/"
+  }
+ ],
+ "related": [
+  "tour-day",
+  "tour-3d",
+  "trip-plan",
+  "guide-site",
+  "rentals",
+  "interp"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Pelago: full-day car hire with an English-speaking driver in Chiang Mai",
+    "th": "Pelago: เช่ารถพร้อมคนขับพูดภาษาอังกฤษเต็มวันในเชียงใหม่",
+    "my": "Pelago: ချင်းမိုင်တွင် အင်္ဂလိပ်စကားပြော ယာဉ်မောင်းနှင့် တစ်နေ့လုံး ကားငှားခြင်း",
+    "zh": "Pelago：清迈配英语司机全天包车",
+    "de": "Pelago: Tag mit Auto und englischsprachigem Fahrer in Chiang Mai"
+   },
+   "href": "https://www.pelago.com/en/activity/psaulmqh5-full-day-car-hire-with-private-english-speaking-driver-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "Department of Tourism: tour business and guide registration",
+    "th": "กรมการท่องเที่ยว: ทะเบียนธุรกิจนำเที่ยวและมัคคุเทศก์",
+    "my": "ခရီးသွားလာရေးဦးစီးဌာန: ခရီးစဉ်လုပ်ငန်းနှင့် ဧည့်လမ်းညွှန် မှတ်ပုံတင်",
+    "zh": "旅游厅：旅游企业和导游登记",
+    "de": "Department of Tourism: Registrierung von Tourismusbetrieben und Reiseleitern"
+   },
+   "href": "https://www.dot.go.th/"
+  }
+ ],
+ "glyphs": [
+  "songthaew",
+  "compass",
+  "pin"
+ ]
+}

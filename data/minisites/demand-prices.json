@@ -1,0 +1,275 @@
+{
+ "id": "demand-prices",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People who sell rooms, meals or tickets want the price to go up when it is busy and down when it is quiet, as San Francisco does for parking.",
+  "th": "คนขายห้องพัก อาหาร หรือบัตร อยากให้ราคาขึ้นเมื่อคนมาก และลดลงเมื่อเงียบ เหมือนที่ซานฟรานซิสโกทำกับที่จอดรถ",
+  "my": "အခန်း၊ အစားအစာ သို့မဟုတ် လက်မှတ် ရောင်းသူများသည် လူများသောအခါ စျေးတက်ပြီး တိတ်ဆိတ်သောအခါ စျေးကျစေလိုကြသည် — ဆန်ဖရန်စစ္စကိုမြို့က ကားရပ်နားခကို လုပ်သကဲ့သို့ ဖြစ်သည်။",
+  "zh": "卖客房、餐食或门票的人，希望忙时涨价、闲时降价，就像旧金山给停车定价那样。",
+  "de": "Wer Zimmer, Essen oder Tickets verkauft, möchte, dass der Preis steigt, wenn viel los ist, und sinkt, wenn es ruhig ist, so wie San Francisco es beim Parken macht."
+ },
+ "n": {
+  "de": "Preise, die der Nachfrage folgen"
+ },
+ "l": {
+  "de": "Zimmer, Speisekarte oder Tickets: viel los, eine Stufe rauf; ruhig, eine runter."
+ },
+ "steps": [
+  {
+   "db": "cart",
+   "t": {
+    "en": "You send what you sell: rooms, menu, tickets or stock.",
+    "th": "คุณส่งสิ่งที่ขาย: ห้องพัก เมนู บัตร หรือสินค้า",
+    "my": "သင်က ရောင်းသည့်အရာကို ပို့ပေးသည် — အခန်း၊ မီနူး၊ လက်မှတ် သို့မဟုတ် ကုန်ပစ္စည်း။",
+    "zh": "您把要卖的东西发给我们：客房、菜单、门票或货品。",
+    "de": "Sie schicken, was Sie verkaufen: Zimmer, Speisekarte, Tickets oder Waren."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "We set the prices the way San Francisco prices parking.",
+    "th": "ตั้งราคาแบบที่ซานฟรานซิสโกตั้งราคาที่จอดรถ",
+    "my": "ဆန်ဖရန်စစ္စကိုမြို့ ကားရပ်နားခသတ်မှတ်ပုံအတိုင်း စျေးနှုန်းများ သတ်မှတ်သည်။",
+    "zh": "按旧金山给停车定价的办法来定价。",
+    "de": "Wir legen die Preise so fest, wie San Francisco das Parken bepreist."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you send the list",
+    "th": "หลังคุณส่งรายการ",
+    "my": "စာရင်းပို့ပြီးနောက်",
+    "zh": "收到清单之后",
+    "de": "Nach Ihrer Liste"
+   }
+  },
+  {
+   "db": "refresh",
+   "t": {
+    "en": "Busy goes up a step. Quiet goes down a step.",
+    "th": "ขายดีขึ้นหนึ่งขั้น เงียบลงหนึ่งขั้น",
+    "my": "လူများလျှင် တစ်ဆင့်တက်၊ တိတ်ဆိတ်လျှင် တစ်ဆင့်ကျ။",
+    "zh": "忙时涨一档，闲时降一档。",
+    "de": "Viel los: eine Stufe rauf. Ruhig: eine Stufe runter."
+   },
+   "who": {
+    "en": "Your prices",
+    "th": "ราคาของคุณ",
+    "my": "သင့်စျေးနှုန်းများ",
+    "zh": "您的价格",
+    "de": "Ihre Preise"
+   },
+   "time": {
+    "en": "As demand changes",
+    "th": "ตามความต้องการที่เปลี่ยนไป",
+    "my": "ဝယ်လိုအား ပြောင်းသည့်အတိုင်း",
+    "zh": "随需求变化",
+    "de": "Wenn sich die Nachfrage ändert"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "San Francisco's SFpark set a target of 60–80% occupancy for on-street meters. When average occupancy was 80–100%, the hourly rate rose US$0.25. At 60–80% it did not change. At 30–60% it fell US$0.25, and under 30% it fell US$0.50.",
+    "th": "โครงการ SFpark ของซานฟรานซิสโกตั้งเป้ามิเตอร์ริมถนนให้มีรถจอด 60–80% ของช่อง เมื่อเฉลี่ย 80–100% ค่าจอดต่อชั่วโมงขึ้น US$0.25 ที่ 60–80% ไม่เปลี่ยน ที่ 30–60% ลด US$0.25 และต่ำกว่า 30% ลด US$0.50",
+    "my": "ဆန်ဖရန်စစ္စကိုမြို့၏ SFpark သည် လမ်းဘေးမီတာများအတွက် နေရာ၏ 60–80% ကို ကားရပ်ထားစေရန် ပစ်မှတ်ထားသည်။ ပျမ်းမျှ 80–100% ဖြစ်လျှင် တစ်နာရီခ US$0.25 တက်သည်။ 60–80% တွင် မပြောင်းပါ။ 30–60% တွင် US$0.25 ကျပြီး 30% အောက်တွင် US$0.50 ကျသည်။",
+    "zh": "旧金山的 SFpark 给路边计时停车位定的目标是占用率 60–80%。平均占用率在 80–100% 时，每小时费率上调 US$0.25；60–80% 不变；30–60% 下调 US$0.25；低于 30% 下调 US$0.50。",
+    "de": "Das SFpark von San Francisco setzte für Strassenparkuhren eine Auslastung von 60–80% als Ziel. Bei durchschnittlich 80–100% stieg der Stundentarif um US$0.25. Bei 60–80% blieb er gleich. Bei 30–60% sank er um US$0.25 und unter 30% um US$0.50."
+   },
+   "src": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf"
+  },
+  {
+   "t": {
+    "en": "Hourly meter rates in SFpark could not go above US$6.00 or below US$0.25. They changed about every eight weeks from August 2011, and the city made ten changes through June 2013.",
+    "th": "ค่าจอดต่อชั่วโมงของมิเตอร์ใน SFpark สูงสุดไม่เกิน US$6.00 และต่ำสุดไม่ต่ำกว่า US$0.25 เปลี่ยนราคาประมาณทุก 8 สัปดาห์ตั้งแต่สิงหาคม 2011 และเมืองปรับราคา 10 ครั้งจนถึงมิถุนายน 2013",
+    "my": "SFpark ၏ မီတာတစ်နာရီခသည် US$6.00 ထက် မမြင့်နိုင်ဘဲ US$0.25 ထက် မနိမ့်နိုင်ပါ။ 2011 ဩဂုတ်မှစ၍ ရှစ်ပတ်ခန့်တစ်ကြိမ် ပြောင်းလဲပြီး 2013 ဇွန်လအထိ မြို့က ဆယ်ကြိမ် ပြောင်းလဲခဲ့သည်။",
+    "zh": "SFpark 的计时停车费每小时不得高于 US$6.00，也不得低于 US$0.25。自 2011 年 8 月起大约每八周调整一次，到 2013 年 6 月共调整十次。",
+    "de": "Die Stundentarife der Parkuhren im SFpark durften nicht über US$6.00 oder unter US$0.25 liegen. Sie änderten sich ab August 2011 etwa alle acht Wochen, und die Stadt nahm bis Juni 2013 zehn Änderungen vor."
+   },
+   "src": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf"
+  },
+  {
+   "t": {
+    "en": "For city garages, San Francisco changed hourly rates every three months. At 80–100% occupancy the rate rose US$0.50. At 40–80% it did not change. Under 40% it fell US$0.50.",
+    "th": "สำหรับลานจอดรถของเมือง ซานฟรานซิสโกปรับค่าจอดต่อชั่วโมงทุก 3 เดือน ที่ 80–100% ขึ้น US$0.50 ที่ 40–80% ไม่เปลี่ยน ต่ำกว่า 40% ลด US$0.50",
+    "my": "မြို့၏ ကားပါကင်အဆောက်အအုံများအတွက် ဆန်ဖရန်စစ္စကိုမြို့က တစ်နာရီခကို သုံးလတစ်ကြိမ် ပြောင်းသည်။ 80–100% တွင် US$0.50 တက်သည်။ 40–80% တွင် မပြောင်းပါ။ 40% အောက်တွင် US$0.50 ကျသည်။",
+    "zh": "对市属停车库，旧金山每三个月调整一次每小时费率：占用率 80–100% 上调 US$0.50；40–80% 不变；低于 40% 下调 US$0.50。",
+    "de": "Bei den städtischen Parkhäusern änderte San Francisco den Stundentarif alle drei Monate. Bei 80–100% Auslastung stieg er um US$0.50. Bei 40–80% blieb er gleich. Unter 40% sank er um US$0.50."
+   },
+   "src": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf"
+  },
+  {
+   "t": {
+    "en": "Donald Shoup, the professor who wrote the book on parking prices, aims for one or two open spaces on a block. That is about 85% occupancy, or one empty space on a block of eight. If too many spaces are empty the price goes down, and if none are empty it goes up.",
+    "th": "ศาสตราจารย์ Donald Shoup ผู้เขียนหนังสือเรื่องราคาที่จอดรถ ตั้งเป้าให้ถนนหนึ่งช่วงมีที่ว่างหนึ่งถึงสองช่อง ซึ่งคือรถจอดราว 85% หรือว่างหนึ่งช่องใน 8 ช่อง ถ้าว่างมากเกินไปราคาลง ถ้าไม่มีที่ว่างราคาขึ้น",
+    "my": "ကားရပ်နားခစျေးနှုန်းအကြောင်း စာအုပ်ရေးသော ပါမောက္ခ Donald Shoup သည် လမ်းတစ်ပိုင်းတွင် နေရာလွတ်တစ်ခု သို့မဟုတ် နှစ်ခုရှိစေရန် ရည်ရွယ်သည်။ ၎င်းမှာ 85% ခန့် ရပ်ထားခြင်း သို့မဟုတ် နေရာရှစ်ခုတွင် လွတ်တစ်ခု ဖြစ်သည်။ လွတ်နေသော နေရာများလွန်လျှင် စျေးကျပြီး မလွတ်လျှင် စျေးတက်သည်။",
+    "zh": "写过停车定价专著的教授 Donald Shoup，目标是让每段街区空出一两个车位，约合 85% 占用率，即八个车位空一个。空位太多，价格就降；一个空位也没有，价格就涨。",
+    "de": "Donald Shoup, der Professor, der das Buch über Parkpreise geschrieben hat, strebt einen oder zwei freie Plätze pro Strassenabschnitt an. Das sind etwa 85% Auslastung, also ein freier Platz bei acht. Sind zu viele Plätze leer, sinkt der Preis; ist keiner leer, steigt er."
+   },
+   "src": "https://www.cato-unbound.org/2011/04/04/donald-shoup/free-parking-or-free-markets/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Beyond, dynamic pricing software for rentals: Growth plan",
+    "th": "Beyond ซอฟต์แวร์ตั้งราคาตามความต้องการสำหรับที่พักให้เช่า: แพ็กเกจ Growth",
+    "my": "Beyond — ငှားရမ်းအိမ်ခန်းများအတွက် ဝယ်လိုအားအလိုက် စျေးသတ်မှတ်သော ဆော့ဖ်ဝဲ: Growth အစီအစဉ်",
+    "zh": "Beyond，出租房源的动态定价软件：Growth 套餐",
+    "de": "Beyond, Software für nachfrageabhängige Preise bei Mietobjekten: Tarif Growth"
+   },
+   "p": {
+    "en": "1% of bookings; the first US$5,000 in bookings is free",
+    "th": "1% ของยอดจอง ยอดจองส่วนแรก US$5,000 ไม่คิดค่าบริการ",
+    "my": "ဘွတ်ကင်၏ 1%၊ ပထမဘွတ်ကင် US$5,000 အတွက် အခမဲ့",
+    "zh": "订单金额的 1%，前 US$5,000 订单免费",
+    "de": "1% der Buchungen; die ersten US$5,000 an Buchungen sind frei"
+   },
+   "src": "https://beyondpricing.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Beyond, dynamic pricing software for rentals: Pro plan",
+    "th": "Beyond ซอฟต์แวร์ตั้งราคาตามความต้องการสำหรับที่พักให้เช่า: แพ็กเกจ Pro",
+    "my": "Beyond — ငှားရမ်းအိမ်ခန်းများအတွက် ဝယ်လိုအားအလိုက် စျေးသတ်မှတ်သော ဆော့ဖ်ဝဲ: Pro အစီအစဉ်",
+    "zh": "Beyond，出租房源的动态定价软件：Pro 套餐",
+    "de": "Beyond, Software für nachfrageabhängige Preise bei Mietobjekten: Tarif Pro"
+   },
+   "p": {
+    "en": "1.25% of bookings",
+    "th": "1.25% ของยอดจอง",
+    "my": "ဘွတ်ကင်၏ 1.25%",
+    "zh": "订单金额的 1.25%",
+    "de": "1,25% der Buchungen"
+   },
+   "src": "https://beyondpricing.com/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How often does a price that follows demand change?",
+    "th": "ราคาที่ขยับตามความต้องการเปลี่ยนบ่อยแค่ไหน",
+    "my": "ဝယ်လိုအားအလိုက် ပြောင်းသော စျေးနှုန်းသည် ဘယ်လောက်မကြာခဏ ပြောင်းသလဲ။",
+    "zh": "随需求浮动的价格多久变一次？",
+    "de": "Wie oft ändert sich ein Preis, der der Nachfrage folgt?"
+   },
+   "a": {
+    "en": "In San Francisco, meter rates changed about every eight weeks and garage rates every three months. Each change was one fixed step: US$0.25 or US$0.50 an hour.",
+    "th": "ที่ซานฟรานซิสโก ค่ามิเตอร์เปลี่ยนประมาณทุก 8 สัปดาห์ และค่าลานจอดรถเปลี่ยนทุก 3 เดือน แต่ละครั้งเปลี่ยนเป็นขั้นตายตัว คือ US$0.25 หรือ US$0.50 ต่อชั่วโมง",
+    "my": "ဆန်ဖရန်စစ္စကိုမြို့တွင် မီတာစျေးနှုန်းကို ရှစ်ပတ်ခန့်တစ်ကြိမ်၊ ပါကင်အဆောက်အအုံစျေးနှုန်းကို သုံးလတစ်ကြိမ် ပြောင်းသည်။ ပြောင်းလဲမှုတစ်ခုစီသည် သတ်မှတ်ထားသော တစ်ဆင့် ဖြစ်ပြီး တစ်နာရီလျှင် US$0.25 သို့မဟုတ် US$0.50 ဖြစ်သည်။",
+    "zh": "在旧金山，计时停车费大约每八周调整一次，停车库费率每三个月调整一次。每次调整都是固定的一档：每小时 US$0.25 或 US$0.50。",
+    "de": "In San Francisco änderten sich die Parkuhrtarife etwa alle acht Wochen und die Parkhaustarife alle drei Monate. Jede Änderung war eine feste Stufe: US$0.25 oder US$0.50 pro Stunde."
+   },
+   "src": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf"
+  },
+  {
+   "q": {
+    "en": "Did the prices in San Francisco go up?",
+    "th": "ราคาในซานฟรานซิสโกขึ้นไหม",
+    "my": "ဆန်ဖရန်စစ္စကိုမြို့တွင် စျေးနှုန်းများ တက်ခဲ့သလား။",
+    "zh": "旧金山的价格涨了吗？",
+    "de": "Sind die Preise in San Francisco gestiegen?"
+   },
+   "a": {
+    "en": "In the pilot areas the average meter rate fell US$0.11 an hour (4%) and the average garage rate fell US$0.42 an hour (12%), compared with control areas where nothing changed. The 60–80% target was met 31% more often, and the average search for a space was 5 minutes shorter (43%).",
+    "th": "ในพื้นที่ทดลอง ค่ามิเตอร์เฉลี่ยลดลง US$0.11 ต่อชั่วโมง (4%) และค่าลานจอดรถเฉลี่ยลดลง US$0.42 ต่อชั่วโมง (12%) เทียบกับพื้นที่ควบคุมที่ไม่เปลี่ยนอะไร ถึงเป้า 60–80% บ่อยขึ้น 31% และเวลาหาที่จอดเฉลี่ยสั้นลง 5 นาที (43%)",
+    "my": "စမ်းသပ်ဧရိယာများတွင် ပျမ်းမျှ မီတာစျေးနှုန်း တစ်နာရီလျှင် US$0.11 (4%) ကျပြီး ပါကင်အဆောက်အအုံစျေးနှုန်း US$0.42 (12%) ကျသည်၊ ဘာမျှမပြောင်းသော နှိုင်းယှဉ်ဧရိယာများနှင့် ယှဉ်လျှင် ဖြစ်သည်။ 60–80% ပစ်မှတ်ကို 31% ပိုမကြာခဏ ရခဲ့ပြီး နေရာရှာချိန် ပျမ်းမျှ 5 မိနစ် (43%) တိုသွားသည်။",
+    "zh": "在试点区域，与没有任何改变的对照区域相比，路边计时费率平均每小时下降 US$0.11（4%），停车库费率平均每小时下降 US$0.42（12%）。达到 60–80% 目标的次数多了 31%，找车位的平均时间缩短 5 分钟（43%）。",
+    "de": "In den Pilotgebieten sank der durchschnittliche Parkuhrtarif um US$0.11 pro Stunde (4%) und der durchschnittliche Parkhaustarif um US$0.42 pro Stunde (12%), verglichen mit Kontrollgebieten ohne Änderung. Das Ziel von 60–80% wurde 31% öfter erreicht, und die durchschnittliche Parkplatzsuche war 5 Minuten kürzer (43%)."
+   },
+   "src": "https://www.sfmta.com/node/12570"
+  },
+  {
+   "q": {
+    "en": "What does Shoup propose for the extra money?",
+    "th": "Shoup เสนอให้ใช้เงินส่วนที่เพิ่มมาทำอะไร",
+    "my": "Shoup က ပိုရသော ငွေအတွက် ဘာကို အဆိုပြုသလဲ။",
+    "zh": "Shoup 对多收的钱有什么提议？",
+    "de": "Was schlägt Shoup für das zusätzliche Geld vor?"
+   },
+   "a": {
+    "en": "Shoup proposes that a city dedicate the revenue to added public services in the neighbourhood where it is collected. His example is Old Pasadena, where over US$1 million a year in meter money went to new public services.",
+    "th": "Shoup เสนอให้เมืองนำรายได้ไปใช้กับบริการสาธารณะเพิ่มเติมในย่านที่เก็บเงิน ตัวอย่างของเขาคือ Old Pasadena ซึ่งเงินจากมิเตอร์เกิน US$1 ล้านต่อปีถูกนำไปใช้กับบริการสาธารณะใหม่",
+    "my": "Shoup က မြို့သည် ကောက်ခံသော ရပ်ကွက်တွင် အများပြည်သူဝန်ဆောင်မှု ထပ်တိုးရန် ဝင်ငွေကို သုံးစေလိုကြောင်း အဆိုပြုသည်။ သူ့ဥပမာမှာ Old Pasadena ဖြစ်ပြီး မီတာငွေ တစ်နှစ် US$1 သန်းကျော်ကို အများပြည်သူဝန်ဆောင်မှုအသစ်များတွင် သုံးခဲ့သည်။",
+    "zh": "Shoup 提议，城市把这笔收入专用于收费所在街区新增的公共服务。他举的例子是老帕萨迪纳：每年超过 US$100 万的停车计时收入用于新的公共服务。",
+    "de": "Shoup schlägt vor, dass eine Stadt die Einnahmen für zusätzliche öffentliche Dienste in dem Viertel einsetzt, in dem sie anfallen. Sein Beispiel ist Old Pasadena, wo über US$1 Million pro Jahr aus den Parkuhren in neue öffentliche Dienste floss."
+   },
+   "src": "https://www.cato-unbound.org/2011/04/04/donald-shoup/free-parking-or-free-markets/"
+  },
+  {
+   "q": {
+    "en": "Is there software that sets rental prices by demand?",
+    "th": "มีซอฟต์แวร์ที่ตั้งราคาที่พักให้เช่าตามความต้องการไหม",
+    "my": "ဝယ်လိုအားအလိုက် ငှားရမ်းစျေးသတ်မှတ်ပေးသော ဆော့ဖ်ဝဲ ရှိသလား။",
+    "zh": "有按需求给出租房源定价的软件吗？",
+    "de": "Gibt es Software, die Mietpreise nach Nachfrage festlegt?"
+   },
+   "a": {
+    "en": "Yes. Beyond sells dynamic pricing for rentals and charges a share of bookings: 1% on its Growth plan and 1.25% on Pro. Its Free plan has no booking fee, and dynamic pricing is not part of it.",
+    "th": "มี Beyond ขายการตั้งราคาตามความต้องการสำหรับที่พักให้เช่า และคิดเป็นส่วนของยอดจอง: แพ็กเกจ Growth 1% และ Pro 1.25% แพ็กเกจ Free ไม่มีค่าธรรมเนียมจอง และไม่รวมการตั้งราคาตามความต้องการ",
+    "my": "ရှိသည်။ Beyond သည် ငှားရမ်းအိမ်ခန်းများအတွက် ဝယ်လိုအားအလိုက် စျေးသတ်မှတ်မှုကို ရောင်းပြီး ဘွတ်ကင်၏ အစိတ်အပိုင်းတစ်ခုကို ယူသည် — Growth အစီအစဉ်တွင် 1%၊ Pro တွင် 1.25%။ Free အစီအစဉ်တွင် ဘွတ်ကင်ကြေးမရှိသော်လည်း ဝယ်လိုအားအလိုက် စျေးသတ်မှတ်မှု မပါပါ။",
+    "zh": "有。Beyond 出售出租房源的动态定价服务，按订单金额的一定比例收费：Growth 套餐 1%，Pro 套餐 1.25%。Free 套餐不收订单费，但不含动态定价。",
+    "de": "Ja. Beyond verkauft nachfrageabhängige Preise für Mietobjekte und verlangt einen Anteil der Buchungen: 1% im Tarif Growth und 1,25% im Tarif Pro. Der Tarif Free hat keine Buchungsgebühr, enthält aber keine nachfrageabhängigen Preise."
+   },
+   "src": "https://beyondpricing.com/pricing/"
+  }
+ ],
+ "related": [
+  "stay-booking",
+  "restaurant-desk",
+  "event-page",
+  "price-watch",
+  "ai-automation",
+  "ai-assistant"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "SFMTA: SFpark pilot project evaluation summary",
+    "th": "SFMTA: สรุปผลประเมินโครงการนำร่อง SFpark",
+    "my": "SFMTA - SFpark စမ်းသပ်စီမံကိန်း အကဲဖြတ်ချက် အကျဉ်းချုပ်",
+    "zh": "SFMTA：SFpark 试点项目评估摘要",
+    "de": "SFMTA: Zusammenfassung der Auswertung des SFpark-Pilotprojekts"
+   },
+   "href": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/04/sfpark_eval_summary_2014.pdf"
+  },
+  {
+   "t": {
+    "en": "Donald Shoup: Free Parking or Free Markets (Cato Unbound)",
+    "th": "Donald Shoup: ที่จอดรถฟรีหรือตลาดเสรี (Cato Unbound)",
+    "my": "Donald Shoup - Free Parking or Free Markets (Cato Unbound)",
+    "zh": "Donald Shoup：《免费停车还是自由市场》（Cato Unbound）",
+    "de": "Donald Shoup: Free Parking or Free Markets (Cato Unbound)"
+   },
+   "href": "https://www.cato-unbound.org/2011/04/04/donald-shoup/free-parking-or-free-markets/"
+  }
+ ],
+ "glyphs": [
+  "coin",
+  "sun",
+  "moon"
+ ]
+}

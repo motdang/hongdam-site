@@ -1,0 +1,909 @@
+{
+ "id": "event-plan",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A party, launch, company dinner or retreat is a budget, a venue, food, sound and a running order. Someone else keeps them in order and runs the day.",
+  "th": "งานปาร์ตี้ งานเปิดตัว งานเลี้ยงบริษัท หรือสัมมนา มีทั้งงบประมาณ สถานที่ อาหาร เครื่องเสียง และกำหนดการ บริการนี้จัดเรื่องเหล่านี้ให้เป็นระเบียบและดูแลในวันงาน",
+  "my": "ပါတီ၊ စတင်ပွဲ၊ ကုမ္ပဏီညစာ သို့မဟုတ် ခရီးထွက်ပွဲတစ်ခုတွင် ဘတ်ဂျက်၊ နေရာ၊ အစားအစာ၊ အသံစနစ်နှင့် အစီအစဉ်ဇယား ပါဝင်သည်။ ဤဝန်ဆောင်မှုက ၎င်းတို့ကို စနစ်တကျ စီစဉ်ပေးပြီး ပွဲနေ့ကို ကိုင်တွယ်ပေးသည်။",
+  "zh": "派对、发布会、公司晚宴或团建，涉及预算、场地、餐饮、音响和流程安排。这项服务把这些事安排有序，并负责当天的现场执行。",
+  "de": "Eine Feier, ein Launch, ein Firmenessen oder ein Retreat besteht aus Budget, Ort, Essen, Technik und Ablauf. Dieser Service ordnet das und leitet den Tag."
+ },
+ "n": {
+  "de": "Veranstaltungsplanung"
+ },
+ "l": {
+  "de": "Eine Feier, ein Launch, ein Firmenessen oder ein Retreat; Ort und Catering zum Selbstkostenpreis."
+ },
+ "steps": [
+  {
+   "db": "abacus",
+   "t": {
+    "en": "Budget and guest list written",
+    "th": "จัดทำงบประมาณและรายชื่อแขก",
+    "my": "ဘတ်ဂျက်နှင့် ဧည့်စာရင်း ရေးဆွဲခြင်း",
+    "zh": "列出预算和宾客名单",
+    "de": "Budget und Gästeliste werden erstellt"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹 与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Before anything is booked",
+    "th": "ก่อนจองสิ่งใด",
+    "my": "မည်သည့်အရာမျှ မကြိုတင်မှာယူမီ",
+    "zh": "在预订任何事项之前",
+    "de": "Bevor etwas gebucht wird"
+   }
+  },
+  {
+   "db": "home",
+   "t": {
+    "en": "The venue",
+    "th": "สถานที่จัดงาน",
+    "my": "ပွဲကျင်းပမည့်နေရာ",
+    "zh": "场地",
+    "de": "Der Ort"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹 与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "After the budget",
+    "th": "หลังกำหนดงบ",
+    "my": "ဘတ်ဂျက် သတ်မှတ်ပြီးနောက်",
+    "zh": "预算确定之后",
+    "de": "Nach dem Budget"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Catering and sound booked, charged at cost",
+    "th": "จองอาหารและเครื่องเสียง คิดตามจริง",
+    "my": "အစားအစာနှင့် အသံစနစ် မှာယူခြင်း၊ အမှန်အတိုင်း ကောက်ခံခြင်း",
+    "zh": "预订餐饮和音响，按实际费用结算",
+    "de": "Catering und Technik werden gebucht, zum Selbstkostenpreis abgerechnet"
+   },
+   "who": {
+    "en": "Hongdam and the vendors",
+    "th": "หงส์ดำ และผู้ให้บริการ",
+    "my": "ဟုန်ဒမ် နှင့် ဝန်ဆောင်သူများ",
+    "zh": "鸿丹 与供应商",
+    "de": "Hongdam und die Dienstleister"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲနေ့မတိုင်မီ",
+    "zh": "活动当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "Timings and running order set",
+    "th": "กำหนดเวลาและลำดับงาน",
+    "my": "အချိန်ဇယားနှင့် အစီအစဉ် သတ်မှတ်ခြင်း",
+    "zh": "确定时间安排和流程",
+    "de": "Zeiten und Ablauf werden festgelegt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲနေ့မတိုင်မီ",
+    "zh": "活动当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "party",
+   "t": {
+    "en": "The event runs to the plan",
+    "th": "งานดำเนินไปตามแผน",
+    "my": "ပွဲကို အစီအစဉ်အတိုင်း ကျင်းပခြင်း",
+    "zh": "活动按计划进行",
+    "de": "Der Anlass läuft nach Plan"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The day of the event",
+    "th": "วันงาน",
+    "my": "ပွဲနေ့",
+    "zh": "活动当天",
+    "de": "Am Tag der Veranstaltung"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "2,210,000",
+   "t": {
+    "en": "Domestic meeting, incentive, conference and exhibition travellers to Chiang Mai in 2017",
+    "th": "นักเดินทางไมซ์ชาวไทยที่มาเชียงใหม่ในปี 2560 (ค.ศ. 2017) ทั้งประชุม ท่องเที่ยวเพื่อรางวัล สัมมนา และแสดงสินค้า",
+    "my": "2017 ခုနှစ်တွင် ချင်းမိုင်သို့ ရောက်လာသော ပြည်တွင်း အစည်းအဝေး၊ ဆုလာဘ်ခရီး၊ ညီလာခံနှင့် ပြပွဲ ခရီးသွားများ",
+    "zh": "2017 年到访清迈的国内会奖旅游者（会议、奖励旅游、大会、展览）",
+    "de": "Inländische Reisende zu Tagungen, Incentives, Kongressen und Messen in Chiang Mai, 2017"
+   },
+   "src": "https://www.prnewswire.com/news-releases/tceb-pushes-chiang-mai-into-an-international-mice-city-300758840.html"
+  },
+  {
+   "n": "฿650",
+   "t": {
+    "en": "Full-day meeting package per person at a Chiang Mai hotel: lunch and two coffee breaks, net",
+    "th": "แพ็กเกจประชุมเต็มวันต่อคนที่โรงแรมในเชียงใหม่ รวมอาหารกลางวันและเบรก 2 ครั้ง ราคาสุทธิ",
+    "my": "ချင်းမိုင်ဟိုတယ်တစ်ခု၏ တစ်ရက်ပြည့် အစည်းအဝေးပက်ကေ့ချ် တစ်ဦးစာ - နေ့လည်စာနှင့် လက်ဖက်ရည်နားချိန် နှစ်ကြိမ်ပါ၊ net စျေး",
+    "zh": "清迈酒店全天会议套餐每人价格，含午餐和两次茶歇（净价）",
+    "de": "Ganztägiges Tagungspaket pro Person in einem Hotel in Chiang Mai: Mittagessen und zwei Kaffeepausen, netto"
+   },
+   "src": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+  },
+  {
+   "n": "30",
+   "t": {
+    "en": "Guests from which a Chiang Mai hotel package serves a buffet; groups of 10 to 29 get a set menu to share",
+    "th": "จำนวนแขกที่แพ็กเกจโรงแรมในเชียงใหม่เริ่มเสิร์ฟบุฟเฟต์ กลุ่ม 10–29 คนได้เซ็ตเมนูแบบแบ่งกันทาน",
+    "my": "ချင်းမိုင်ဟိုတယ်ပက်ကေ့ချ်တွင် ဘူဖေးစတင်ပေးသည့် ဧည့်သည်အရေအတွက်၊ 10 မှ 29 ဦးအုပ်စုများကို မျှဝေသုံးဆောင်ရသော ဆက်မီနူး ပေးသည်",
+    "zh": "清迈酒店套餐从这个人数起提供自助餐；10 至 29 人的团体用合餐套餐",
+    "de": "Ab so vielen Gästen gibt es im Hotelpaket in Chiang Mai ein Buffet; Gruppen von 10 bis 29 bekommen ein gemeinsames Menü"
+   },
+   "src": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+  },
+  {
+   "n": "0.7 / 20.9",
+   "t": {
+    "en": "Rainy days in Chiang Mai: January against August",
+    "th": "จำนวนวันที่ฝนตกในเชียงใหม่: เดือนมกราคมเทียบกับเดือนสิงหาคม",
+    "my": "ချင်းမိုင်တွင် မိုးရွာသည့်ရက်များ - ဇန်နဝါရီလနှင့် ဩဂုတ်လ နှိုင်းယှဉ်ချက်",
+    "zh": "清迈的降雨日数：1月与8月对比",
+    "de": "Regentage in Chiang Mai: Januar im Vergleich zu August"
+   },
+   "src": "https://www.chiangmai.net/weather"
+  }
+ ],
+ "toy": {
+  "kind": "event",
+  "h": {
+   "en": "What your event costs",
+   "th": "งานของคุณจะมีค่าใช้จ่ายเท่าไหร่",
+   "my": "သင့်ပွဲ ကုန်ကျစရိတ်",
+   "zh": "您的活动要花多少",
+   "de": "Was Ihr Anlass kostet"
+  },
+  "noscript": {
+   "en": "The budget builder needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณงบต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ဘတ်ဂျက်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "预算计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Budgetrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "guests": {
+    "min": 20,
+    "max": 500,
+    "step": 10,
+    "start": 60
+   },
+   "venues": [
+    {
+     "id": "office",
+     "n": {
+      "en": "Your office or yard, with a caterer",
+      "th": "ที่ออฟฟิศหรือลานของคุณ ใช้ผู้รับจัดเลี้ยง",
+      "my": "သင့်ရုံး သို့မဟုတ် ခြံဝင်းတွင် စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူနှင့်",
+      "zh": "在您的办公室或院子，请餐饮承办商",
+      "de": "Im Büro oder Hof, mit Caterer"
+     },
+     "per_head": [
+      110,
+      200
+     ],
+     "src": "https://wiangpingcatering.com/"
+    },
+    {
+     "id": "meeting",
+     "n": {
+      "en": "Hotel meeting room, package menu",
+      "th": "ห้องประชุมโรงแรม เมนูตามแพ็กเกจ",
+      "my": "ဟိုတယ် အစည်းအဝေးခန်း၊ ပက်ကေ့ချ် မီနူး",
+      "zh": "酒店会议室，套餐餐饮",
+      "de": "Hotel-Tagungsraum, Paketmenü"
+     },
+     "per_head": [
+      550,
+      700
+     ],
+     "src": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+    },
+    {
+     "id": "garden",
+     "n": {
+      "en": "Garden venue, set menu",
+      "th": "สถานที่จัดงานในสวน เซ็ตเมนู",
+      "my": "ဥယျာဉ်ပွဲကျင်းပရာနေရာ၊ ဆက်မီနူး",
+      "zh": "花园场地，套餐",
+      "de": "Gartenlocation, Menü"
+     },
+     "per_head": [
+      350,
+      650
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/venues/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88/"
+    },
+    {
+     "id": "riverside",
+     "n": {
+      "en": "Riverside resort, sit-down banquet",
+      "th": "รีสอร์ทริมแม่น้ำ งานเลี้ยงนั่งโต๊ะ",
+      "my": "မြစ်ကမ်းစပ် ရီဆော့၊ ထိုင်စားပွဲ",
+      "zh": "河畔度假村，坐席宴会",
+      "de": "Resort am Fluss, Bankett am Tisch"
+     },
+     "per_head": [
+      1400,
+      1800
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    }
+   ],
+   "styles": [
+    {
+     "id": "seminar",
+     "n": {
+      "en": "Seminar or meeting",
+      "th": "สัมมนาหรือประชุม",
+      "my": "ဆွေးနွေးပွဲ သို့မဟုတ် အစည်းအဝေး",
+      "zh": "研讨会或会议",
+      "de": "Seminar oder Tagung"
+     }
+    },
+    {
+     "id": "dinner",
+     "n": {
+      "en": "Dinner party",
+      "th": "งานเลี้ยงดินเนอร์",
+      "my": "ညစာစားပွဲ",
+      "zh": "晚宴",
+      "de": "Abendessen"
+     }
+    },
+    {
+     "id": "launch",
+     "n": {
+      "en": "Product launch",
+      "th": "งานเปิดตัวสินค้า",
+      "my": "ထုတ်ကုန် မိတ်ဆက်ပွဲ",
+      "zh": "产品发布会",
+      "de": "Produkt-Launch"
+     }
+    }
+   ],
+   "items": [
+    {
+     "id": "av",
+     "n": {
+      "en": "Sound system and a screen, hired",
+      "th": "เช่าระบบเสียงและจอภาพ",
+      "my": "အသံစနစ်နှင့် ဖန်သားပြင် ငှားရမ်းခြင်း",
+      "zh": "租用音响和屏幕",
+      "de": "Tonanlage und Bildschirm, gemietet"
+     },
+     "range": [
+      6000,
+      20000
+     ],
+     "styles": [
+      "seminar",
+      "launch"
+     ],
+     "src": "https://fastwork.co/user/karaoke/instrument-rental-41203900"
+    },
+    {
+     "id": "mc",
+     "n": {
+      "en": "MC and script, one day",
+      "th": "พิธีกรและสคริปต์ หนึ่งวัน",
+      "my": "အခမ်းအနားမှူးနှင့် စာကြမ်း၊ တစ်ရက်",
+      "zh": "司仪和主持稿，一天",
+      "de": "Moderation und Skript, ein Tag"
+     },
+     "range": [
+      2500,
+      5000
+     ],
+     "styles": [
+      "seminar",
+      "dinner",
+      "launch"
+     ],
+     "src": "https://fastwork.co/user/choerada/mc-92929697"
+    },
+    {
+     "id": "photo",
+     "n": {
+      "en": "Photographer, 2 to 10 hours",
+      "th": "ช่างภาพ 2 ถึง 10 ชั่วโมง",
+      "my": "ဓာတ်ပုံဆရာ၊ 2 မှ 10 နာရီ",
+      "zh": "摄影师，2 至 10 小时",
+      "de": "Fotograf, 2 bis 10 Stunden"
+     },
+     "range": [
+      1900,
+      4500
+     ],
+     "styles": [
+      "seminar",
+      "dinner",
+      "launch"
+     ],
+     "src": "https://fastwork.co/user/natapolsri/photography-26687642"
+    },
+    {
+     "id": "decor",
+     "n": {
+      "en": "Flowers, stands and backdrop, resort rates",
+      "th": "ดอกไม้ แท่นตั้ง และฉากหลัง ราคารีสอร์ท",
+      "my": "ပန်း၊ စင်များနှင့် နောက်ခံ၊ ရီဆော့ စျေးနှုန်း",
+      "zh": "鲜花、花架和背景板，度假村价格",
+      "de": "Blumen, Ständer und Kulisse, Resort-Preise"
+     },
+     "range": [
+      4500,
+      30000
+     ],
+     "styles": [
+      "dinner",
+      "launch"
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    },
+    {
+     "id": "music",
+     "n": {
+      "en": "DJ or live music, resort rates",
+      "th": "ดีเจหรือดนตรีสด ราคารีสอร์ท",
+      "my": "ဒီဂျေ သို့မဟုတ် တိုက်ရိုက်ဂီတ၊ ရီဆော့ စျေးနှုန်း",
+      "zh": "DJ 或现场音乐，度假村价格",
+      "de": "DJ oder Live-Musik, Resort-Preise"
+     },
+     "range": [
+      15000,
+      35000
+     ],
+     "styles": [
+      "dinner",
+      "launch"
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    }
+   ],
+   "months": [
+    {
+     "m": 1,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry; 1 rainy day",
+      "th": "เย็นและแห้ง ฝนตก 1 วัน",
+      "my": "အေးပြီး ခြောက်သွေ့သည်၊ မိုးရွာရက် 1 ရက်",
+      "zh": "凉爽干燥；雨天 1 天",
+      "de": "Kühl und trocken; 1 Regentag"
+     }
+    },
+    {
+     "m": 2,
+     "kind": "smoke",
+     "t": {
+      "en": "Dry and warmer, smoke season; 1 rainy day",
+      "th": "แห้งและอุ่นขึ้น ช่วงหมอกควัน ฝนตก 1 วัน",
+      "my": "ခြောက်သွေ့ပြီး ပိုပူလာသည်၊ မီးခိုးမှုန်ရာသီ၊ မိုးရွာရက် 1 ရက်",
+      "zh": "干燥渐热，烟霾季；雨天 1 天",
+      "de": "Trocken, wärmer, Rauchsaison; 1 Regentag"
+     }
+    },
+    {
+     "m": 3,
+     "kind": "smoke",
+     "t": {
+      "en": "Smoky skies, hot; 2 rainy days",
+      "th": "ท้องฟ้าหมอกควัน ร้อน ฝนตก 2 วัน",
+      "my": "မီးခိုးမှုန်ဖုံးသည့် ကောင်းကင်၊ ပူသည်၊ မိုးရွာရက် 2 ရက်",
+      "zh": "天空烟霾，炎热；雨天 2 天",
+      "de": "Verrauchter Himmel, heiss; 2 Regentage"
+     }
+    },
+    {
+     "m": 4,
+     "kind": "smoke",
+     "t": {
+      "en": "Hottest month, smoke season; 7 rainy days",
+      "th": "เดือนที่ร้อนที่สุด ช่วงหมอกควัน ฝนตก 7 วัน",
+      "my": "အပူဆုံးလ၊ မီးခိုးမှုန်ရာသီ၊ မိုးရွာရက် 7 ရက်",
+      "zh": "最热的月份，烟霾季；雨天 7 天",
+      "de": "Heissester Monat, Rauchsaison; 7 Regentage"
+     }
+    },
+    {
+     "m": 5,
+     "kind": "rain",
+     "t": {
+      "en": "Rains begin; 15 rainy days",
+      "th": "ฝนเริ่มมา ฝนตก 15 วัน",
+      "my": "မိုးစတင်ရွာသည်၊ မိုးရွာရက် 15 ရက်",
+      "zh": "雨季开始；雨天 15 天",
+      "de": "Der Regen beginnt; 15 Regentage"
+     }
+    },
+    {
+     "m": 6,
+     "kind": "rain",
+     "t": {
+      "en": "Rain; 17 rainy days",
+      "th": "ฝนตก ฝนตก 17 วัน",
+      "my": "မိုးရွာသည်၊ မိုးရွာရက် 17 ရက်",
+      "zh": "雨季；雨天 17 天",
+      "de": "Regenzeit; 17 Regentage"
+     }
+    },
+    {
+     "m": 7,
+     "kind": "rain",
+     "t": {
+      "en": "Rain; 19 rainy days",
+      "th": "ฝนตก ฝนตก 19 วัน",
+      "my": "မိုးရွာသည်၊ မိုးရွာရက် 19 ရက်",
+      "zh": "雨季；雨天 19 天",
+      "de": "Regenzeit; 19 Regentage"
+     }
+    },
+    {
+     "m": 8,
+     "kind": "rain",
+     "t": {
+      "en": "Wettest month; 21 rainy days",
+      "th": "เดือนที่ฝนมากที่สุด ฝนตก 21 วัน",
+      "my": "မိုးအများဆုံးလ၊ မိုးရွာရက် 21 ရက်",
+      "zh": "雨最多的月份；雨天 21 天",
+      "de": "Nassester Monat; 21 Regentage"
+     }
+    },
+    {
+     "m": 9,
+     "kind": "rain",
+     "t": {
+      "en": "Rain; 18 rainy days",
+      "th": "ฝนตก ฝนตก 18 วัน",
+      "my": "မိုးရွာသည်၊ မိုးရွာရက် 18 ရက်",
+      "zh": "雨季；雨天 18 天",
+      "de": "Regenzeit; 18 Regentage"
+     }
+    },
+    {
+     "m": 10,
+     "kind": "rain",
+     "t": {
+      "en": "Rain easing; 12 rainy days",
+      "th": "ฝนเริ่มซา ฝนตก 12 วัน",
+      "my": "မိုးနည်းလာသည်၊ မိုးရွာရက် 12 ရက်",
+      "zh": "雨量减少；雨天 12 天",
+      "de": "Der Regen lässt nach; 12 Regentage"
+     }
+    },
+    {
+     "m": 11,
+     "kind": "dry",
+     "t": {
+      "en": "Cool, mostly dry; 5 rainy days",
+      "th": "เย็น ฝนน้อย ฝนตก 5 วัน",
+      "my": "အေးပြီး မိုးနည်းသည်၊ မိုးရွာရက် 5 ရက်",
+      "zh": "凉爽，雨少；雨天 5 天",
+      "de": "Kühl, meist trocken; 5 Regentage"
+     }
+    },
+    {
+     "m": 12,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry; 1 rainy day",
+      "th": "เย็นและแห้ง ฝนตก 1 วัน",
+      "my": "အေးပြီး ခြောက်သွေ့သည်၊ မိုးရွာရက် 1 ရက်",
+      "zh": "凉爽干燥；雨天 1 天",
+      "de": "Kühl und trocken; 1 Regentag"
+     }
+    }
+   ],
+   "months_src": "https://www.chiangmai.net/weather",
+   "smoke_src": "https://www.iqair.com/newsroom/thailand-2021-burning-season",
+   "rain_src": "https://www.chiangmai.net/weather"
+  },
+  "labels": {
+   "style": {
+    "en": "Kind of event",
+    "th": "ประเภทงาน",
+    "my": "ပွဲအမျိုးအစား",
+    "zh": "活动类型",
+    "de": "Art des Anlasses"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "The Thailand Convention and Exhibition Bureau counts 2,210,000 domestic and 50,881 international meeting, incentive, conference and exhibition travellers in Chiang Mai for 2017. They brought ฿4,914.53 million and ฿4,700.38 million.",
+    "th": "ทีเส็บ (สำนักงานส่งเสริมการจัดประชุมและนิทรรศการ) นับนักเดินทางไมซ์ในเชียงใหม่ปี 2560 (ค.ศ. 2017) เป็นชาวไทย 2,210,000 คน และชาวต่างชาติ 50,881 คน สร้างรายได้ ฿4,914.53 ล้าน และ ฿4,700.38 ล้าน",
+    "my": "ထိုင်းညီလာခံနှင့်ပြပွဲဗျူရိုက 2017 ခုနှစ်တွင် ချင်းမိုင်သို့ ရောက်သော အစည်းအဝေး၊ ဆုလာဘ်ခရီး၊ ညီလာခံနှင့် ပြပွဲ ခရီးသွားများကို ပြည်တွင်း 2,210,000 ဦး၊ နိုင်ငံတကာ 50,881 ဦး ရေတွက်သည်။ ၎င်းတို့က ฿4,914.53 သန်းနှင့် ฿4,700.38 သန်း ရရှိစေသည်။",
+    "zh": "泰国会展局统计，2017 年到访清迈的会议、奖励旅游、大会和展览旅客中，国内 2,210,000 人，国际 50,881 人，分别带来 ฿4,914.53 百万和 ฿4,700.38 百万的收入。",
+    "de": "Das Thailändische Kongress- und Ausstellungsbüro zählt für 2017 in Chiang Mai 2,210,000 inländische und 50,881 internationale Reisende zu Tagungen, Incentives, Kongressen und Messen. Sie brachten ฿4,914.53 Millionen und ฿4,700.38 Millionen."
+   },
+   "src": "https://www.prnewswire.com/news-releases/tceb-pushes-chiang-mai-into-an-international-mice-city-300758840.html"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai has 18 venues and 51 meeting rooms certified under the Thailand MICE Venue Standard, in the Bureau's 2018 release.",
+    "th": "เชียงใหม่มีสถานที่ 18 แห่งและห้องประชุม 51 ห้องที่ผ่านมาตรฐานสถานที่จัดงานไมซ์ของไทย ตามประกาศของทีเส็บปี 2561 (ค.ศ. 2018)",
+    "my": "ထိုင်း MICE နေရာစံနှုန်းအရ အသိအမှတ်ပြုထားသော နေရာ 18 ခုနှင့် အစည်းအဝေးခန်း 51 ခန်း ချင်းမိုင်တွင် ရှိသည်ဟု ဗျူရို၏ 2018 ထုတ်ပြန်ချက်တွင် ဖော်ပြသည်။",
+    "zh": "据泰国会展局 2018 年的新闻稿，清迈有 18 个场地和 51 间会议室通过泰国会展场地标准认证。",
+    "de": "Laut der Mitteilung des Büros von 2018 hat Chiang Mai 18 Veranstaltungsorte und 51 Tagungsräume, die nach dem thailändischen MICE-Venue-Standard zertifiziert sind."
+   },
+   "src": "https://www.prnewswire.com/news-releases/tceb-pushes-chiang-mai-into-an-international-mice-city-300758840.html"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai has 0.7 rainy days in January and 20.9 in August on average. From May to October a month has 12 to 21 rainy days.",
+    "th": "เชียงใหม่มีฝนตกเฉลี่ย 0.7 วันในเดือนมกราคม และ 20.9 วันในเดือนสิงหาคม ตั้งแต่พฤษภาคมถึงตุลาคม เดือนหนึ่งมีวันฝนตก 12 ถึง 21 วัน",
+    "my": "ချင်းမိုင်တွင် ဇန်နဝါရီလ၌ မိုးရွာရက် ပျမ်းမျှ 0.7 ရက်၊ သြဂုတ်လ၌ 20.9 ရက် ရှိသည်။ မေလမှ အောက်တိုဘာလအထိ တစ်လလျှင် မိုးရွာရက် 12 မှ 21 ရက် ရှိသည်။",
+    "zh": "清迈 1 月平均有 0.7 个雨天，8 月有 20.9 个。5 月到 10 月，每月有 12 至 21 个雨天。",
+    "de": "Chiang Mai hat im Januar durchschnittlich 0,7 Regentage, im August 20,9. Von Mai bis Oktober hat ein Monat 12 bis 21 Regentage."
+   },
+   "src": "https://www.chiangmai.net/weather"
+  },
+  {
+   "t": {
+    "en": "Crop burning in northern Thailand runs from December to April. In Chiang Mai, PM2.5 averaged 42.5 µg/m³ in January 2021, 47.7 in February and 83.3 in March. March was the most polluted month from 2017 to 2021.",
+    "th": "การเผาพืชในภาคเหนือของไทยเกิดขึ้นตั้งแต่ธันวาคมถึงเมษายน ในเชียงใหม่ ค่า PM2.5 เฉลี่ย 42.5 µg/m³ ในมกราคม 2564 (ค.ศ. 2021), 47.7 ในกุมภาพันธ์ และ 83.3 ในมีนาคม มีนาคมเป็นเดือนที่มลพิษสูงที่สุดตั้งแต่ปี 2017 ถึง 2021",
+    "my": "ထိုင်းမြောက်ပိုင်းတွင် သီးနှံမီးရှို့ခြင်းသည် ဒီဇင်ဘာမှ ဧပြီလအထိ ဖြစ်သည်။ ချင်းမိုင်တွင် PM2.5 ပျမ်းမျှ 2021 ဇန်နဝါရီ၌ 42.5 µg/m³၊ ဖေဖော်ဝါရီ၌ 47.7၊ မတ်လ၌ 83.3 ဖြစ်သည်။ 2017 မှ 2021 အထိ မတ်လသည် ညစ်ညမ်းမှု အများဆုံးလ ဖြစ်သည်။",
+    "zh": "泰国北部的焚烧农作物从 12 月持续到 4 月。清迈 2021 年 1 月 PM2.5 平均 42.5 µg/m³，2 月 47.7，3 月 83.3。2017 至 2021 年间，3 月是污染最重的月份。",
+    "de": "Das Abbrennen von Feldern im Norden Thailands dauert von Dezember bis April. In Chiang Mai lag PM2.5 im Januar 2021 im Mittel bei 42,5 µg/m³, im Februar bei 47,7 und im März bei 83,3. Von 2017 bis 2021 war der März der am stärksten belastete Monat."
+   },
+   "src": "https://www.iqair.com/newsroom/thailand-2021-burning-season"
+  },
+  {
+   "t": {
+    "en": "Dusit Princess Chiang Mai serves a buffet in its meeting packages from 30 guests and a set menu to share for 10 to 29. Its terms list vinyl signage as an extra cost.",
+    "th": "โรงแรมดุสิต ปริ๊นเซส เชียงใหม่ เสิร์ฟบุฟเฟต์ในแพ็กเกจประชุมเมื่อมีแขกตั้งแต่ 30 คน และเซ็ตเมนูแบบแบ่งกันทานสำหรับ 10 ถึง 29 คน ข้อกำหนดระบุว่าป้ายไวนิลคิดเพิ่ม",
+    "my": "ဒူဆစ် ပရင်းဆက်စ် ချင်းမိုင်သည် ၎င်း၏ အစည်းအဝေးပက်ကေ့ချ်များတွင် ဧည့်သည် 30 ဦးမှစ၍ ဘူဖေး၊ 10 မှ 29 ဦးအတွက် မျှဝေသုံးဆောင်ရသော ဆက်မီနူး ပေးသည်။ စည်းကမ်းချက်များတွင် ဗီနိုင်းဆိုင်းဘုတ်ကို အပိုကုန်ကျစရိတ်အဖြစ် ဖော်ပြထားသည်။",
+    "zh": "Dusit Princess 清迈酒店的会议套餐在 30 位宾客起提供自助餐，10 至 29 人提供合餐套餐。条款中喷绘广告牌另计费用。",
+    "de": "Das Dusit Princess Chiang Mai serviert in seinen Tagungspaketen ab 30 Gästen ein Buffet und für 10 bis 29 Gäste ein gemeinsames Menü. Vinyl-Schilder werden in den Bedingungen als Zusatzkosten genannt."
+   },
+   "src": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+  },
+  {
+   "t": {
+    "en": "Alcohol sales stop on Buddhist holy days; hotels are exempt.",
+    "th": "วันพระใหญ่ห้ามขายเหล้า โรงแรมได้รับยกเว้น",
+    "my": "ဗုဒ္ဓဘာသာ ဥပုသ်နေ့များတွင် အရက်ရောင်းချမှု ရပ်သည်; ဟိုတယ်များ ကင်းလွတ်သည်။",
+    "zh": "佛教节日停售酒类，酒店除外。",
+    "de": "Der Alkoholverkauf ruht an buddhistischen Feiertagen; Hotels sind ausgenommen."
+   },
+   "src": "https://www.nationthailand.com/news/general/40069132"
+  },
+  {
+   "t": {
+    "en": "Anantara Chiang Mai Resort lists its banquet prices as net, with service charge and tax included, valid from April 2024.",
+    "th": "อนันตรา เชียงใหม่ รีสอร์ท แสดงราคางานเลี้ยงเป็นราคาสุทธิ รวมค่าบริการและภาษี ใช้ตั้งแต่เมษายน 2567 (ค.ศ. 2024)",
+    "my": "အနန္တရာ ချင်းမိုင် ရီဆော့သည် စားသောက်ပွဲစျေးနှုန်းများကို ဝန်ဆောင်ခနှင့် အခွန်ပါဝင်သော net စျေးအဖြစ် ဖော်ပြပြီး 2024 ဧပြီမှစ၍ သက်ဝင်သည်။",
+    "zh": "清迈 Anantara 度假村的宴会价格为净价，含服务费和税，自 2024 年 4 月起适用。",
+    "de": "Das Anantara Chiang Mai Resort nennt seine Bankettpreise netto, mit Service und Steuer, gültig ab April 2024."
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Hotel meeting packages, per person (Dusit Princess Chiang Mai, net)",
+    "th": "แพ็กเกจประชุมโรงแรมต่อคน (ดุสิต ปริ๊นเซส เชียงใหม่ ราคาสุทธิ)",
+    "my": "ဟိုတယ် အစည်းအဝေးပက်ကေ့ချ် တစ်ဦးလျှင် (ဒူဆစ် ပရင်းဆက်စ် ချင်းမိုင်၊ net စျေး)",
+    "zh": "酒店会议套餐每人价格（清迈 Dusit Princess，净价）",
+    "de": "Tagungspakete im Hotel pro Person (Dusit Princess Chiang Mai, netto)"
+   },
+   "p": {
+    "en": "฿550 half-day (lunch, one coffee break); ฿650 full-day (lunch, two coffee breaks); ฿700 cocktail night (six canapés, drinks for three hours)",
+    "th": "฿550 ครึ่งวัน (อาหารกลางวัน เบรก 1 ครั้ง); ฿650 เต็มวัน (อาหารกลางวัน เบรก 2 ครั้ง); ฿700 ค่ำคืนค็อกเทล (คานาเป้ 6 ชิ้น เครื่องดื่ม 3 ชั่วโมง)",
+    "my": "တစ်ဝက်နေ့ ฿550 (နေ့လည်စာ၊ လက်ဖက်ရည်နားချိန် တစ်ကြိမ်); တစ်ရက်ပြည့် ฿650 (နေ့လည်စာ၊ နားချိန် နှစ်ကြိမ်); ကော့တေးညစာ ฿700 (ကနာပေ ၆ မျိုး၊ သုံးနာရီစာ ယမကာ/အချိုရည်)",
+    "zh": "半天 ฿550（午餐、一次茶歇）；全天 ฿650（午餐、两次茶歇）；鸡尾酒之夜 ฿700（6 款小食、3 小时饮品）",
+    "de": "฿550 halbtags (Mittagessen, eine Kaffeepause); ฿650 ganztags (Mittagessen, zwei Kaffeepausen); ฿700 Cocktailabend (sechs Canapés, drei Stunden Getränke)"
+   },
+   "src": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+  },
+  {
+   "t": {
+    "en": "Riverside resort price list (Anantara Chiang Mai Resort, net, April 2024)",
+    "th": "รายการราคารีสอร์ทริมแม่น้ำ (อนันตรา เชียงใหม่ รีสอร์ท ราคาสุทธิ เมษายน 2567)",
+    "my": "မြစ်ကမ်းစပ် ရီဆော့ စျေးနှုန်းစာရင်း (အနန္တရာ ချင်းမိုင် ရီဆော့၊ net စျေး၊ 2024 ဧပြီ)",
+    "zh": "河畔度假村价目表（清迈 Anantara 度假村，净价，2024 年 4 月）",
+    "de": "Preisliste eines Resorts am Fluss (Anantara Chiang Mai Resort, netto, April 2024)"
+   },
+   "p": {
+    "en": "Sit-down banquet ฿1,400–1,800 a person; buffet ฿1,600–3,200; MC ฿20,000; DJ for two hours ฿25,000; backdrop from ฿30,000",
+    "th": "งานเลี้ยงนั่งโต๊ะ ฿1,400–1,800 ต่อคน; บุฟเฟต์ ฿1,600–3,200; พิธีกร ฿20,000; ดีเจ 2 ชั่วโมง ฿25,000; ฉากหลังเริ่มที่ ฿30,000",
+    "my": "ထိုင်စားပွဲ တစ်ဦးလျှင် ฿1,400–1,800; ဘူဖေး ฿1,600–3,200; အခမ်းအနားမှူး ฿20,000; ဒီဂျေ နှစ်နာရီ ฿25,000; နောက်ခံ ฿30,000 မှစ",
+    "zh": "坐席宴会每人 ฿1,400–1,800；自助餐 ฿1,600–3,200；司仪 ฿20,000；DJ 两小时 ฿25,000；背景板 ฿30,000 起",
+    "de": "Bankett am Tisch ฿1,400–1,800 pro Person; Buffet ฿1,600–3,200; Moderation ฿20,000; DJ für zwei Stunden ฿25,000; Kulisse ab ฿30,000"
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  },
+  {
+   "t": {
+    "en": "Sound system and screens, hired from a Fastwork seller",
+    "th": "เช่าระบบเสียงและจอภาพจากผู้ขายบน Fastwork",
+    "my": "Fastwork ရောင်းသူထံမှ အသံစနစ်နှင့် ဖန်သားပြင်များ ငှားရမ်းခြင်း",
+    "zh": "向 Fastwork 卖家租用音响和屏幕",
+    "de": "Tonanlage und Bildschirme, gemietet bei einem Fastwork-Anbieter"
+   },
+   "p": {
+    "en": "Sound system with operator from ฿5,000 a day (small set: 2 speakers, 2 mics, mixer); LED screens of 24 to 85 inches from ฿1,000 a day",
+    "th": "ระบบเสียงพร้อมคนควบคุมเริ่มที่ ฿5,000 ต่อวัน (ชุดเล็ก: ลำโพง 2 ตัว ไมค์ 2 ตัว มิกเซอร์); จอ LED ขนาด 24 ถึง 85 นิ้ว เริ่มที่ ฿1,000 ต่อวัน",
+    "my": "အသံစနစ်နှင့် လည်ပတ်သူ တစ်ရက် ฿5,000 မှစ (အသေးစား: စပီကာ 2 လုံး၊ မိုက် 2 လုံး၊ မစ်ဆာ); LED ဖန်သားပြင် 24 မှ 85 လက်မ တစ်ရက် ฿1,000 မှစ",
+    "zh": "含操作员的音响每天 ฿5,000 起（小套装：2 个音箱、2 支麦克风、调音台）；24 至 85 英寸 LED 屏幕每天 ฿1,000 起",
+    "de": "Tonanlage mit Bedienung ab ฿5,000 pro Tag (kleines Set: 2 Lautsprecher, 2 Mikrofone, Mischpult); LED-Bildschirme von 24 bis 85 Zoll ab ฿1,000 pro Tag"
+   },
+   "src": "https://fastwork.co/user/yamucha/workshop-organizer-54354707"
+  },
+  {
+   "t": {
+    "en": "Light and sound set for 50 to 100 guests (Fastwork seller)",
+    "th": "ชุดแสงสีเสียงสำหรับแขก 50 ถึง 100 คน (ผู้ขายบน Fastwork)",
+    "my": "ဧည့်သည် 50 မှ 100 အတွက် အလင်းရောင်နှင့် အသံ အစုံ (Fastwork ရောင်းသူ)",
+    "zh": "适合 50 至 100 位宾客的灯光音响套装（Fastwork 卖家）",
+    "de": "Licht- und Tonset für 50 bis 100 Gäste (Fastwork-Anbieter)"
+   },
+   "p": {
+    "en": "฿20,000 for one day, with a sound engineer, a lighting designer, transport, set-up and take-down",
+    "th": "฿20,000 ต่อหนึ่งวัน พร้อมวิศวกรเสียง ผู้ออกแบบแสง การขนส่ง การติดตั้ง และการรื้อถอน",
+    "my": "တစ်ရက် ฿20,000၊ အသံအင်ဂျင်နီယာ၊ အလင်းရောင်ဒီဇိုင်နာ၊ သယ်ယူပို့ဆောင်ရေး၊ တပ်ဆင်ခြင်းနှင့် ဖြုတ်သိမ်းခြင်း ပါဝင်သည်",
+    "zh": "一天 ฿20,000，含音响工程师、灯光设计师、运输、安装和拆卸",
+    "de": "฿20,000 für einen Tag, mit Tontechniker, Lichtdesigner, Transport, Aufbau und Abbau"
+   },
+   "src": "https://fastwork.co/user/karaoke/instrument-rental-41203900"
+  },
+  {
+   "t": {
+    "en": "MC, listed on Fastwork",
+    "th": "พิธีกร ที่ลงไว้บน Fastwork",
+    "my": "အခမ်းအနားမှူး၊ Fastwork တွင် ဖော်ပြထားသည်",
+    "zh": "司仪，Fastwork 上的报价",
+    "de": "Moderation, auf Fastwork gelistet"
+   },
+   "p": {
+    "en": "฿2,500 for a booth MC (4–6 hours); ฿5,000 for a seminar or event MC (6–8 hours), script written to the client's needs",
+    "th": "฿2,500 สำหรับพิธีกรยืนบูท (4–6 ชั่วโมง); ฿5,000 สำหรับพิธีกรงานสัมมนาและอีเวนต์ (6–8 ชั่วโมง) เขียนสคริปต์ตามความต้องการของลูกค้า",
+    "my": "ဆိုင်ခန်းရှေ့ အခမ်းအနားမှူး ฿2,500 (4–6 နာရီ); ဆွေးနွေးပွဲ သို့မဟုတ် ပွဲအခမ်းအနားမှူး ฿5,000 (6–8 နာရီ)၊ ဖောက်သည်လိုအပ်ချက်အတိုင်း စာကြမ်းရေးပေးသည်",
+    "zh": "展位司仪 ฿2,500（4–6 小时）；研讨会或活动司仪 ฿5,000（6–8 小时），主持稿按客户需求撰写",
+    "de": "฿2,500 für Moderation am Stand (4–6 Stunden); ฿5,000 für Seminar- oder Event-Moderation (6–8 Stunden), Skript nach Wunsch des Kunden"
+   },
+   "src": "https://fastwork.co/user/choerada/mc-92929697"
+  },
+  {
+   "t": {
+    "en": "Event photographer, listed on Fastwork (41 orders, rated 4.8)",
+    "th": "ช่างภาพงานอีเวนต์ ที่ลงไว้บน Fastwork (41 ออเดอร์ คะแนน 4.8)",
+    "my": "ပွဲ ဓာတ်ပုံဆရာ၊ Fastwork တွင် ဖော်ပြထားသည် (မှာယူမှု 41 ကြိမ်၊ အဆင့် 4.8)",
+    "zh": "活动摄影师，Fastwork 上的报价（41 单，评分 4.8）",
+    "de": "Eventfotograf, auf Fastwork gelistet (41 Aufträge, Bewertung 4,8)"
+   },
+   "p": {
+    "en": "฿1,900 for up to 2 hours; ฿3,000 for a half day; ฿4,500 for up to 10 hours; unlimited photos",
+    "th": "฿1,900 สำหรับไม่เกิน 2 ชั่วโมง; ฿3,000 ครึ่งวัน; ฿4,500 ไม่เกิน 10 ชั่วโมง; ไม่จำกัดจำนวนภาพ",
+    "my": "2 နာရီအထိ ฿1,900; တစ်ဝက်နေ့ ฿3,000; 10 နာရီအထိ ฿4,500; ဓာတ်ပုံအရေအတွက် အကန့်အသတ်မရှိ",
+    "zh": "2 小时内 ฿1,900；半天 ฿3,000；10 小时内 ฿4,500；照片数量不限",
+    "de": "฿1,900 für bis zu 2 Stunden; ฿3,000 halbtags; ฿4,500 für bis zu 10 Stunden; Fotos unbegrenzt"
+   },
+   "src": "https://fastwork.co/user/natapolsri/photography-26687642"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a hotel meeting cost per person in Chiang Mai?",
+    "th": "ประชุมที่โรงแรมในเชียงใหม่ ราคาต่อคนเท่าไหร่",
+    "my": "ချင်းမိုင်ဟိုတယ်တွင် အစည်းအဝေးတစ်ခု တစ်ဦးလျှင် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在清迈酒店开会，每人要花多少钱",
+    "de": "Was kostet eine Tagung im Hotel in Chiang Mai pro Person?"
+   },
+   "a": {
+    "en": "Dusit Princess Chiang Mai lists ฿550 net per person for a half day with lunch and one coffee break, and ฿650 for a full day with lunch and two coffee breaks. The room alone is ฿5,000 net for four hours. The offer runs to 31 December 2026.",
+    "th": "โรงแรมดุสิต ปริ๊นเซส เชียงใหม่ ระบุ ฿550 สุทธิต่อคนสำหรับครึ่งวัน รวมอาหารกลางวันและเบรก 1 ครั้ง และ ฿650 สำหรับเต็มวัน รวมอาหารกลางวันและเบรก 2 ครั้ง ค่าห้องอย่างเดียว ฿5,000 สุทธิสำหรับ 4 ชั่วโมง ข้อเสนอนี้ใช้ได้ถึง 31 ธันวาคม 2569 (ค.ศ. 2026)",
+    "my": "ဒူဆစ် ပရင်းဆက်စ် ချင်းမိုင်က တစ်ဝက်နေ့ (နေ့လည်စာနှင့် လက်ဖက်ရည်နားချိန် တစ်ကြိမ်) တစ်ဦးလျှင် ฿550 net၊ တစ်ရက်ပြည့် (နေ့လည်စာနှင့် နားချိန် နှစ်ကြိမ်) ฿650 ဟု ဖော်ပြသည်။ အခန်းတစ်ခုတည်းမှာ လေးနာရီ ฿5,000 net ဖြစ်သည်။ ဤကမ်းလှမ်းချက်သည် 2026 ဒီဇင်ဘာ 31 အထိ ဖြစ်သည်။",
+    "zh": "清迈 Dusit Princess 酒店标价：半天含午餐和一次茶歇，每人净价 ฿550；全天含午餐和两次茶歇，每人 ฿650。只租会议室，4 小时净价 ฿5,000。该优惠至 2026 年 12 月 31 日。",
+    "de": "Das Dusit Princess Chiang Mai nennt ฿550 netto pro Person für einen halben Tag mit Mittagessen und einer Kaffeepause und ฿650 für einen ganzen Tag mit Mittagessen und zwei Kaffeepausen. Der Raum allein kostet ฿5,000 netto für vier Stunden. Das Angebot gilt bis zum 31. Dezember 2026."
+   },
+   "src": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+  },
+  {
+   "q": {
+    "en": "What does a banquet at a riverside resort in Chiang Mai cost?",
+    "th": "งานเลี้ยงที่รีสอร์ทริมแม่น้ำในเชียงใหม่ ราคาเท่าไหร่",
+    "my": "ချင်းမိုင် မြစ်ကမ်းစပ် ရီဆော့တွင် စားသောက်ပွဲ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在清迈河畔度假村办宴会要花多少钱",
+    "de": "Was kostet ein Bankett in einem Resort am Fluss in Chiang Mai?"
+   },
+   "a": {
+    "en": "Anantara Chiang Mai Resort lists a sit-down banquet at ฿1,400–1,800 a person and a buffet at ฿1,600–3,200. A coffee break of six canapés is ฿650 a person. Prices are net, with service charge and tax, from April 2024.",
+    "th": "อนันตรา เชียงใหม่ รีสอร์ท ระบุงานเลี้ยงนั่งโต๊ะ ฿1,400–1,800 ต่อคน และบุฟเฟต์ ฿1,600–3,200 เบรกคานาเป้ 6 ชิ้น ฿650 ต่อคน ราคาสุทธิ รวมค่าบริการและภาษี ตั้งแต่เมษายน 2567 (ค.ศ. 2024)",
+    "my": "အနန္တရာ ချင်းမိုင် ရီဆော့က ထိုင်စားပွဲ တစ်ဦးလျှင် ฿1,400–1,800၊ ဘူဖေး ฿1,600–3,200 ဟု ဖော်ပြသည်။ ကနာပေ ၆ မျိုးပါ နားချိန်မှာ တစ်ဦးလျှင် ฿650 ဖြစ်သည်။ စျေးနှုန်းများသည် ဝန်ဆောင်ခနှင့် အခွန်ပါသော net စျေး ဖြစ်ပြီး 2024 ဧပြီမှစ၍ ဖြစ်သည်။",
+    "zh": "清迈 Anantara 度假村标价：坐席宴会每人 ฿1,400–1,800，自助餐 ฿1,600–3,200。6 款小食的茶歇每人 ฿650。价格为净价，含服务费和税，自 2024 年 4 月起。",
+    "de": "Das Anantara Chiang Mai Resort nennt ein Bankett am Tisch für ฿1,400–1,800 pro Person und ein Buffet für ฿1,600–3,200. Eine Kaffeepause mit sechs Canapés kostet ฿650 pro Person. Die Preise sind netto, mit Service und Steuer, ab April 2024."
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  },
+  {
+   "q": {
+    "en": "How much does an MC cost for a seminar or company dinner?",
+    "th": "พิธีกรงานสัมมนาหรืองานเลี้ยงบริษัท ราคาเท่าไหร่",
+    "my": "ဆွေးနွေးပွဲ သို့မဟုတ် ကုမ္ပဏီညစာအတွက် အခမ်းအနားမှူး ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "研讨会或公司晚宴的司仪要花多少钱",
+    "de": "Was kostet eine Moderation für ein Seminar oder ein Firmenessen?"
+   },
+   "a": {
+    "en": "A Fastwork seller lists ฿5,000 for a seminar or event MC working 6 to 8 hours, with the script written to the client's needs. A booth MC is ฿2,500 for 4 to 6 hours. The seller says the price changes with the place and the time.",
+    "th": "ผู้ขายบน Fastwork ระบุ ฿5,000 สำหรับพิธีกรงานสัมมนาหรืออีเวนต์ 6 ถึง 8 ชั่วโมง เขียนสคริปต์ตามความต้องการของลูกค้า พิธีกรยืนบูท ฿2,500 สำหรับ 4 ถึง 6 ชั่วโมง ผู้ขายระบุว่าราคาปรับตามสถานที่และช่วงเวลา",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက ဆွေးနွေးပွဲ သို့မဟုတ် ပွဲအခမ်းအနားမှူး 6 မှ 8 နာရီအတွက် ฿5,000 ဟု ဖော်ပြပြီး ဖောက်သည်လိုအပ်ချက်အတိုင်း စာကြမ်းရေးပေးသည်။ ဆိုင်ခန်းရှေ့ အခမ်းအနားမှူး 4 မှ 6 နာရီအတွက် ฿2,500 ဖြစ်သည်။ နေရာနှင့် အချိန်အလိုက် စျေးနှုန်း ပြောင်းနိုင်သည်ဟု ရောင်းသူက ဆိုသည်။",
+    "zh": "Fastwork 卖家标价：研讨会或活动司仪工作 6 至 8 小时 ฿5,000，主持稿按客户需求撰写；展位司仪 4 至 6 小时 ฿2,500。卖家说明价格随地点和时间调整。",
+    "de": "Ein Fastwork-Anbieter nennt ฿5,000 für eine Seminar- oder Event-Moderation von 6 bis 8 Stunden, das Skript wird nach Wunsch des Kunden geschrieben. Eine Moderation am Stand kostet ฿2,500 für 4 bis 6 Stunden. Der Anbieter sagt, der Preis ändert sich mit Ort und Zeit."
+   },
+   "src": "https://fastwork.co/user/choerada/mc-92929697"
+  },
+  {
+   "q": {
+    "en": "How much is a photographer for a company event?",
+    "th": "ช่างภาพงานบริษัท ราคาเท่าไหร่",
+    "my": "ကုမ္ပဏီပွဲအတွက် ဓာတ်ပုံဆရာ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "公司活动的摄影师要花多少钱",
+    "de": "Was kostet ein Fotograf für einen Firmenanlass?"
+   },
+   "a": {
+    "en": "A Fastwork photographer lists ฿1,900 for up to 2 hours, ฿3,000 for a half day and ฿4,500 for up to 10 hours, with unlimited photos. Files arrive through Google Drive. An event in another province is charged as a full-day flat rate.",
+    "th": "ช่างภาพบน Fastwork ระบุ ฿1,900 สำหรับไม่เกิน 2 ชั่วโมง ฿3,000 ครึ่งวัน และ ฿4,500 ไม่เกิน 10 ชั่วโมง ไม่จำกัดจำนวนภาพ ส่งไฟล์ผ่าน Google Drive งานต่างจังหวัดคิดเป็นอัตราเหมาเต็มวัน",
+    "my": "Fastwork ဓာတ်ပုံဆရာတစ်ဦးက 2 နာရီအထိ ฿1,900၊ တစ်ဝက်နေ့ ฿3,000၊ 10 နာရီအထိ ฿4,500 ဟု ဖော်ပြပြီး ဓာတ်ပုံအရေအတွက် အကန့်အသတ်မရှိပါ။ ဖိုင်များကို Google Drive မှ ပို့သည်။ အခြားပြည်နယ်ရှိ ပွဲကို တစ်ရက်ပြည့် အပိုင်စျေးဖြင့် ကောက်ခံသည်။",
+    "zh": "Fastwork 摄影师标价：2 小时内 ฿1,900，半天 ฿3,000，10 小时内 ฿4,500，照片数量不限。文件通过 Google Drive 交付。外府的活动按全天统一价收费。",
+    "de": "Ein Fastwork-Fotograf nennt ฿1,900 für bis zu 2 Stunden, ฿3,000 halbtags und ฿4,500 für bis zu 10 Stunden, Fotos unbegrenzt. Die Dateien kommen über Google Drive. Ein Anlass in einer anderen Provinz wird zum Tagespauschalpreis berechnet."
+   },
+   "src": "https://fastwork.co/user/natapolsri/photography-26687642"
+  },
+  {
+   "q": {
+    "en": "What does sound and light cost for 50 to 100 guests?",
+    "th": "แสงสีเสียงสำหรับแขก 50 ถึง 100 คน ราคาเท่าไหร่",
+    "my": "ဧည့်သည် 50 မှ 100 အတွက် အသံနှင့် အလင်းရောင် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "50 至 100 位宾客的灯光音响要花多少钱",
+    "de": "Was kosten Ton und Licht für 50 bis 100 Gäste?"
+   },
+   "a": {
+    "en": "A Fastwork seller lists a small light and sound set at ฿20,000 for one day, for 50 to 100 people. It comes with a sound engineer, a lighting designer, transport, set-up and take-down.",
+    "th": "ผู้ขายบน Fastwork ระบุชุดแสงสีเสียงขนาดเล็ก ฿20,000 ต่อวัน สำหรับ 50 ถึง 100 คน พร้อมวิศวกรเสียง ผู้ออกแบบแสง การขนส่ง การติดตั้ง และการรื้อถอน",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက အလင်းရောင်နှင့် အသံ အစုံငယ်ကို လူ 50 မှ 100 အတွက် တစ်ရက် ฿20,000 ဟု ဖော်ပြသည်။ အသံအင်ဂျင်နီယာ၊ အလင်းရောင်ဒီဇိုင်နာ၊ သယ်ယူပို့ဆောင်ရေး၊ တပ်ဆင်ခြင်းနှင့် ဖြုတ်သိမ်းခြင်း ပါဝင်သည်။",
+    "zh": "Fastwork 卖家标价：适合 50 至 100 人的小型灯光音响套装，一天 ฿20,000，含音响工程师、灯光设计师、运输、安装和拆卸。",
+    "de": "Ein Fastwork-Anbieter nennt ein kleines Licht- und Tonset für ฿20,000 pro Tag, für 50 bis 100 Personen. Es kommt mit Tontechniker, Lichtdesigner, Transport, Aufbau und Abbau."
+   },
+   "src": "https://fastwork.co/user/karaoke/instrument-rental-41203900"
+  },
+  {
+   "q": {
+    "en": "Which months have the fewest rainy days in Chiang Mai?",
+    "th": "เดือนไหนในเชียงใหม่ฝนตกน้อยที่สุด",
+    "my": "ချင်းမိုင်တွင် မည်သည့်လများ မိုးရွာရက် အနည်းဆုံးလဲ",
+    "zh": "清迈哪几个月雨天最少",
+    "de": "Welche Monate haben in Chiang Mai die wenigsten Regentage?"
+   },
+   "a": {
+    "en": "January has 0.7 rainy days on average, February 0.9, December 1.4 and March 2.3. August has 20.9. The figures are Thai Meteorological Department data for 1981 to 2015.",
+    "th": "เดือนมกราคมมีฝนตกเฉลี่ย 0.7 วัน กุมภาพันธ์ 0.9 วัน ธันวาคม 1.4 วัน และมีนาคม 2.3 วัน ส่วนสิงหาคมมี 20.9 วัน เป็นข้อมูลของกรมอุตุนิยมวิทยา ช่วงปี 1981 ถึง 2015",
+    "my": "ဇန်နဝါရီတွင် မိုးရွာရက် ပျမ်းမျှ 0.7 ရက်၊ ဖေဖော်ဝါရီ 0.9၊ ဒီဇင်ဘာ 1.4၊ မတ်လ 2.3 ရက် ရှိသည်။ သြဂုတ်လတွင် 20.9 ရက် ရှိသည်။ ဤကိန်းဂဏန်းများသည် ထိုင်းမိုးလေဝသဌာန၏ 1981 မှ 2015 ဒေတာ ဖြစ်သည်။",
+    "zh": "1 月平均 0.7 个雨天，2 月 0.9，12 月 1.4，3 月 2.3；8 月为 20.9。数据来自泰国气象局 1981 至 2015 年的记录。",
+    "de": "Der Januar hat im Mittel 0,7 Regentage, der Februar 0,9, der Dezember 1,4 und der März 2,3. Der August hat 20,9. Die Zahlen stammen vom Thailändischen Wetterdienst für 1981 bis 2015."
+   },
+   "src": "https://www.chiangmai.net/weather"
+  },
+  {
+   "q": {
+    "en": "When is the smoke season in Chiang Mai?",
+    "th": "ช่วงหมอกควันในเชียงใหม่คือเดือนไหน",
+    "my": "ချင်းမိုင်တွင် မီးခိုးမှုန်ရာသီက ဘယ်အချိန်လဲ",
+    "zh": "清迈的烟霾季是什么时候",
+    "de": "Wann ist in Chiang Mai die Rauchsaison?"
+   },
+   "a": {
+    "en": "Crop burning in northern Thailand runs from December to April. In Chiang Mai, PM2.5 averaged 42.5 µg/m³ in January 2021, 47.7 in February and 83.3 in March. The WHO annual target is 10.",
+    "th": "การเผาพืชในภาคเหนือของไทยเกิดขึ้นตั้งแต่ธันวาคมถึงเมษายน ในเชียงใหม่ ค่า PM2.5 เฉลี่ย 42.5 µg/m³ ในมกราคม 2564 (ค.ศ. 2021), 47.7 ในกุมภาพันธ์ และ 83.3 ในมีนาคม เป้าหมายรายปีขององค์การอนามัยโลกคือ 10",
+    "my": "ထိုင်းမြောက်ပိုင်းတွင် သီးနှံမီးရှို့ခြင်းသည် ဒီဇင်ဘာမှ ဧပြီလအထိ ဖြစ်သည်။ ချင်းမိုင်တွင် PM2.5 ပျမ်းမျှ 2021 ဇန်နဝါရီ၌ 42.5 µg/m³၊ ဖေဖော်ဝါရီ၌ 47.7၊ မတ်လ၌ 83.3 ဖြစ်သည်။ ကမ္ဘာ့ကျန်းမာရေးအဖွဲ့၏ နှစ်စဉ်ပစ်မှတ်မှာ 10 ဖြစ်သည်။",
+    "zh": "泰国北部的焚烧农作物从 12 月持续到 4 月。清迈 2021 年 1 月 PM2.5 平均 42.5 µg/m³，2 月 47.7，3 月 83.3。世界卫生组织的年度目标值是 10。",
+    "de": "Das Abbrennen von Feldern im Norden Thailands dauert von Dezember bis April. In Chiang Mai lag PM2.5 im Januar 2021 im Mittel bei 42,5 µg/m³, im Februar bei 47,7 und im März bei 83,3. Der Jahreszielwert der WHO beträgt 10."
+   },
+   "src": "https://www.iqair.com/newsroom/thailand-2021-burning-season"
+  },
+  {
+   "q": {
+    "en": "Is alcohol sold on Buddhist holy days in Thailand?",
+    "th": "วันพระใหญ่ในไทยขายเหล้าได้ไหม",
+    "my": "ထိုင်းနိုင်ငံတွင် ဗုဒ္ဓဘာသာ ဥပုသ်နေ့များ၌ အရက်ရောင်းသလား",
+    "zh": "泰国佛教节日可以卖酒吗",
+    "de": "Wird an buddhistischen Feiertagen in Thailand Alkohol verkauft?"
+   },
+   "a": {
+    "en": "Alcohol sales stop on Buddhist holy days. Hotels are exempt.",
+    "th": "วันพระใหญ่ห้ามขายเหล้า โรงแรมได้รับยกเว้น",
+    "my": "ဗုဒ္ဓဘာသာ ဥပုသ်နေ့များတွင် အရက်ရောင်းချမှု ရပ်သည်။ ဟိုတယ်များ ကင်းလွတ်သည်။",
+    "zh": "佛教节日停售酒类，酒店除外。",
+    "de": "An buddhistischen Feiertagen ruht der Alkoholverkauf. Hotels sind ausgenommen."
+   },
+   "src": "https://www.nationthailand.com/news/general/40069132"
+  }
+ ],
+ "related": [
+  "event-page",
+  "rentals",
+  "interp",
+  "magic",
+  "house-blessing",
+  "wedding"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Dusit Princess Chiang Mai: meeting packages with prices",
+    "th": "ดุสิต ปริ๊นเซส เชียงใหม่: แพ็กเกจประชุมพร้อมราคา",
+    "my": "ဒူဆစ် ပရင်းဆက်စ် ချင်းမိုင်: စျေးနှုန်းပါ အစည်းအဝေးပက်ကေ့ချ်များ",
+    "zh": "清迈 Dusit Princess 酒店：会议套餐与价格",
+    "de": "Dusit Princess Chiang Mai: Tagungspakete mit Preisen"
+   },
+   "href": "https://dusit.com/dusitprincess-chiangmai/specialoffers/meetings-package"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai weather by month: rainfall, rainy days and temperatures",
+    "th": "สภาพอากาศเชียงใหม่รายเดือน: ปริมาณฝน วันฝนตก และอุณหภูมิ",
+    "my": "ချင်းမိုင် လအလိုက် မိုးလေဝသ - မိုးရေချိန်၊ မိုးရွာရက်နှင့် အပူချိန်",
+    "zh": "清迈各月天气：降雨量、雨天数和气温",
+    "de": "Wetter in Chiang Mai nach Monat: Niederschlag, Regentage und Temperaturen"
+   },
+   "href": "https://www.chiangmai.net/weather"
+  },
+  {
+   "t": {
+    "en": "Anantara Chiang Mai Resort: banquet, bar and decoration price list (April 2024)",
+    "th": "อนันตรา เชียงใหม่ รีสอร์ท: รายการราคางานเลี้ยง บาร์ และการตกแต่ง (เมษายน 2567)",
+    "my": "အနန္တရာ ချင်းမိုင် ရီဆော့: စားသောက်ပွဲ၊ ဘားနှင့် အလှဆင် စျေးနှုန်းစာရင်း (2024 ဧပြီ)",
+    "zh": "清迈 Anantara 度假村：宴会、酒吧与布置价目表（2024 年 4 月）",
+    "de": "Anantara Chiang Mai Resort: Preisliste für Bankett, Bar und Dekoration (April 2024)"
+   },
+   "href": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  }
+ ],
+ "glyphs": [
+  "mic",
+  "party",
+  "calendar"
+ ]
+}

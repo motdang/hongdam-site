@@ -1,0 +1,309 @@
+{
+ "id": "bazi",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People ask for a Bazi chart, which is worked out from the year, month, day and hour of birth, or for an I Ching reading of one question.",
+  "th": "คนขอดวงปาจื้อ ซึ่งคำนวณจากปี เดือน วัน และเวลาเกิด หรือขอให้อ่านอี้จิงสำหรับคำถามหนึ่งข้อ",
+  "my": "လူတွေက မွေးသည့်နှစ်၊ လ၊ ရက်၊ နာရီမှ တွက်ထားသော Bazi ဇာတာ သို့မဟုတ် မေးခွန်းတစ်ခုအတွက် I Ching ဟောစာကို တောင်းကြသည်။",
+  "zh": "人们请人排八字（按出生的年、月、日、时推算），或为一个问题起一卦易经。",
+  "de": "Man lässt sich ein Bazi-Horoskop erstellen, das aus Jahr, Monat, Tag und Stunde der Geburt berechnet wird, oder eine I-Ging-Deutung zu einer Frage."
+ },
+ "n": {
+  "de": "Bazi- oder I-Ging-Deutung"
+ },
+ "l": {
+  "de": "Vier Säulen oder eine geworfene Frage, auf Englisch oder Chinesisch."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "You send your birth date and time for Bazi, or your question for I Ching.",
+    "th": "คุณส่งวันและเวลาเกิดสำหรับปาจื้อ หรือส่งคำถามสำหรับอี้จิง",
+    "my": "Bazi အတွက် မွေးသက္ကရာဇ်နှင့် မွေးချိန်ကို၊ I Ching အတွက် သင့်မေးခွန်းကို ပေးပို့သည်။",
+    "zh": "八字请提供出生日期和时间；易经请提供您的问题。",
+    "de": "Für Bazi senden Sie Geburtsdatum und Geburtszeit, für das I Ging Ihre Frage."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "After payment",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "dice",
+   "t": {
+    "en": "We work out your four pillars and your ten-year luck pillars, or we cast and read your question.",
+    "th": "คำนวณสี่เสาและวัยจรสิบปีของคุณ หรือตั้งคำถามแล้วอ่านคำทำนายอี้จิง",
+    "my": "သင့်တိုင်လေးတိုင်နှင့် ဆယ်နှစ်တစ်ကြိမ် ကံကြမ္မာတိုင်များကို တွက်ပေးသည်၊ သို့မဟုတ် မေးခွန်းကို ပစ်ပြီး ဖတ်ပေးသည်။",
+    "zh": "排出您的四柱和十年大运，或为您的问题起卦并解读。",
+    "de": "Wir berechnen Ihre vier Säulen und Ihre Zehn-Jahres-Glückssäulen, oder wir werfen und lesen Ihre Frage."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get it written in English or in Chinese.",
+    "th": "คุณได้รับผลที่เขียนเป็นภาษาอังกฤษหรือภาษาจีน",
+    "my": "အင်္ဂလိပ်လို သို့မဟုတ် တရုတ်လို ရေးသားထားသော ရလဒ်ကို ရရှိသည်။",
+    "zh": "您收到英文或中文书面结果。",
+    "de": "Sie erhalten es schriftlich auf Englisch oder auf Chinesisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A Bazi chart has four pillars: year, month, day and hour. Each pillar is one Heavenly Stem and one Earthly Branch, so the chart has eight characters. There are ten stems and twelve branches.",
+    "th": "ดวงปาจื้อมีสี่เสา คือ ปี เดือน วัน และยาม แต่ละเสาประกอบด้วยก้านฟ้า (天干) หนึ่งตัวและกิ่งดิน (地支) หนึ่งตัว รวมเป็นแปดตัวอักษร มีก้านฟ้าสิบตัวและกิ่งดินสิบสองตัว",
+    "my": "Bazi ဇာတာတွင် တိုင်လေးတိုင် ရှိသည် - နှစ်၊ လ၊ ရက်၊ နာရီ။ တိုင်တစ်တိုင်စီတွင် ကောင်းကင်ပင်စည် (Heavenly Stem) တစ်ခုနှင့် မြေကိုင်း (Earthly Branch) တစ်ခု ပါသဖြင့် စုစုပေါင်း အက္ခရာ ရှစ်လုံး ရှိသည်။ ပင်စည် ဆယ်ခုနှင့် ကိုင်း တစ်ဆယ့်နှစ်ခု ရှိသည်။",
+    "zh": "八字有四柱：年柱、月柱、日柱和时柱。每一柱由一个天干和一个地支组成，所以共有八个字。天干有十个，地支有十二个。",
+    "de": "Ein Bazi-Horoskop hat vier Säulen: Jahr, Monat, Tag und Stunde. Jede Säule besteht aus einem Himmelsstamm und einem Erdzweig, das Horoskop hat also acht Zeichen. Es gibt zehn Stämme und zwölf Zweige."
+   },
+   "src": "https://en.wikipedia.org/wiki/Four_Pillars_of_Destiny"
+  },
+  {
+   "t": {
+    "en": "The hour pillar is set by one of twelve double-hours. Each double-hour belongs to one Earthly Branch and lasts about two hours.",
+    "th": "เสายามกำหนดจากชั่วยามจีนหนึ่งในสิบสองช่วง แต่ละช่วงตรงกับกิ่งดินหนึ่งตัวและยาวประมาณสองชั่วโมง",
+    "my": "နာရီတိုင်ကို နှစ်နာရီစီရှိသော အချိန်ကာလ 12 ခုအနက် တစ်ခုက သတ်မှတ်သည်။ ထိုကာလတစ်ခုစီသည် မြေကိုင်းတစ်ခုနှင့် သက်ဆိုင်ပြီး နှစ်နာရီခန့် ကြာသည်။",
+    "zh": "时柱由十二个时辰中的一个决定。每个时辰对应一个地支，约两小时。",
+    "de": "Die Stundensäule wird von einer der zwölf Doppelstunden bestimmt. Jede Doppelstunde gehört zu einem Erdzweig und dauert etwa zwei Stunden."
+   },
+   "src": "https://en.wikipedia.org/wiki/Four_Pillars_of_Destiny"
+  },
+  {
+   "t": {
+    "en": "The I Ching has 64 hexagrams. A hexagram is six stacked lines, each broken (yin) or unbroken (yang), and two trigrams of three lines make one hexagram.",
+    "th": "อี้จิงมี 64 กว้า (เฮกซะแกรม) แต่ละกว้าเป็นเส้นหกเส้นซ้อนกัน เส้นแต่ละเส้นเป็นเส้นขาด (หยิน) หรือเส้นต่อเนื่อง (หยาง) และไตรแกรมสามเส้นสองชุดประกอบเป็นหนึ่งกว้า",
+    "my": "I Ching တွင် ဟက်ဆာဂရမ် (hexagram) 64 ခု ရှိသည်။ ဟက်ဆာဂရမ်တစ်ခုသည် ထပ်ထားသော မျဉ်းခြောက်ကြောင်းဖြစ်ပြီး မျဉ်းတစ်ကြောင်းစီသည် ကျိုးသော (ယင်) သို့မဟုတ် မကျိုးသော (ယန်) ဖြစ်သည်။ မျဉ်းသုံးကြောင်းပါ ထရိုင်ဂရမ် နှစ်ခုက ဟက်ဆာဂရမ်တစ်ခုကို ဖွဲ့စည်းသည်။",
+    "zh": "易经有 64 卦。每一卦由六根叠起来的线组成，每根线是断线（阴）或连线（阳），两个三画卦合成一卦。",
+    "de": "Das I Ging hat 64 Hexagramme. Ein Hexagramm besteht aus sechs übereinanderliegenden Linien, jede unterbrochen (Yin) oder durchgehend (Yang), und zwei Trigramme aus je drei Linien bilden ein Hexagramm."
+   },
+   "src": "https://en.wikipedia.org/wiki/I_Ching"
+  },
+  {
+   "t": {
+    "en": "A hexagram is cast with yarrow stalks, which give six numbers from 6 to 9, or with coins. The coin method became widely used in the Tang dynasty and is still used today.",
+    "th": "การตั้งกว้าทำด้วยก้านยาร์โรว์ (yarrow) ซึ่งให้เลขหกตัวค่า 6 ถึง 9 หรือทำด้วยเหรียญ วิธีเหรียญใช้กันแพร่หลายในสมัยราชวงศ์ถังและยังใช้อยู่ในปัจจุบัน",
+    "my": "ဟက်ဆာဂရမ်ကို yarrow (ပန်းမြက်မျိုး) ရိုးများဖြင့် ပစ်သည်၊ ၎င်းက 6 မှ 9 အထိ ဂဏန်း ခြောက်လုံး ပေးသည်။ ဒါမှမဟုတ် ဒင်္ဂါးများဖြင့် ပစ်သည်။ ဒင်္ဂါးနည်းကို ထန်မင်းဆက်ခေတ်တွင် ကျယ်ကျယ်ပြန့်ပြန့် သုံးခဲ့ပြီး ယနေ့တိုင် သုံးနေဆဲဖြစ်သည်။",
+    "zh": "起卦用蓍草（得出六个 6 到 9 的数字）或铜钱。铜钱法在唐代开始广泛使用，至今仍在用。",
+    "de": "Ein Hexagramm wird mit Schafgarbenstängeln geworfen, die sechs Zahlen von 6 bis 9 ergeben, oder mit Münzen. Die Münzmethode wurde in der Tang-Zeit weit verbreitet und wird noch heute benutzt."
+   },
+   "src": "https://en.wikipedia.org/wiki/I_Ching"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: Chinese chart reading, first-time package (a 2–3 hour online session) or repeat package (a document on the coming year)",
+    "th": "ผู้ขายบน Fastwork: ดูดวงจีน แพ็กเกจลูกค้าใหม่ (คุยออนไลน์ 2–3 ชั่วโมง) หรือแพ็กเกจลูกค้าเก่า (เอกสารเรื่องปีที่จะมาถึง)",
+    "my": "Fastwork ရောင်းသူ - တရုတ်ဇာတာဟော၊ ပထမဆုံးဝယ်သူ ပက်ကေ့ချ် (အွန်လိုင်း 2–3 နာရီ) သို့မဟုတ် ထပ်ဝယ်သူ ပက်ကေ့ချ် (လာမည့်နှစ်အကြောင်း စာရွက်စာတမ်း)",
+    "zh": "Fastwork 卖家：中国命理解读，新客套餐（2–3 小时线上会谈）或老客套餐（来年影响文件）",
+    "de": "Anbieter auf Fastwork: chinesische Horoskopdeutung, Paket für Erstkunden (Online-Sitzung von 2–3 Stunden) oder für Stammkunden (Dokument zum kommenden Jahr)"
+   },
+   "p": {
+    "en": "฿899 first time, ฿499 repeat",
+    "th": "฿899 ลูกค้าใหม่ ฿499 ลูกค้าเก่า",
+    "my": "ပထမဆုံးဝယ်သူ ฿899၊ ထပ်ဝယ်သူ ฿499",
+    "zh": "新客 ฿899，老客 ฿499",
+    "de": "฿899 für Erstkunden, ฿499 für Stammkunden"
+   },
+   "src": "https://fastwork.co/user/aromajame/horoscope-50349773"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: Bazi reading as a PDF, ready in 1 day. Basic: element, lucky colours, careers. Extended: adds strengths, weaknesses and partner traits",
+    "th": "ผู้ขายบน Fastwork: ปาจื้อเป็นไฟล์ PDF ส่งภายใน 1 วัน แพ็กเกจพื้นฐาน: ธาตุ สีมงคล อาชีพที่เหมาะ แพ็กเกจขยาย: เพิ่มจุดแข็ง จุดอ่อน และลักษณะคู่ครอง",
+    "my": "Fastwork ရောင်းသူ - Bazi ဟောစာ PDF ဖြင့် 1 ရက်အတွင်း။ အခြေခံ - ဓာတ်၊ ကံကောင်းသောအရောင်၊ သင့်တော်သောအလုပ်။ တိုးချဲ့ - အားသာချက်၊ အားနည်းချက်နှင့် ဘဝဖော်၏ လက္ခဏာများ ထပ်ပါသည်",
+    "zh": "Fastwork 卖家：八字解读，PDF 文件，1 天交付。基础版：五行、幸运色、适合的职业；扩展版：增加优缺点和伴侣特点",
+    "de": "Anbieter auf Fastwork: Bazi-Deutung als PDF, in 1 Tag. Basis: Element, Glücksfarben, Berufe. Erweitert: dazu Stärken, Schwächen und Eigenschaften des Partners"
+   },
+   "p": {
+    "en": "฿333 basic, ฿555 extended",
+    "th": "฿333 พื้นฐาน ฿555 ขยาย",
+    "my": "အခြေခံ ฿333၊ တိုးချဲ့ ฿555",
+    "zh": "基础版 ฿333，扩展版 ฿555",
+    "de": "฿333 Basis, ฿555 erweitert"
+   },
+   "src": "https://fastwork.co/user/tytan622/horoscope-19384716?badges=&position=1&productSlug=horoscope-84659761&q=%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%A7%E0%B8%87&username=darento"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: Chinese reading, the chart explained and analysed, ready in 1 day",
+    "th": "ผู้ขายบน Fastwork: ดูดวงจีน อธิบายและวิเคราะห์ดวงรายบุคคล ส่งภายใน 1 วัน",
+    "my": "Fastwork ရောင်းသူ - တရုတ်ဇာတာဟော၊ ဇာတာကို ရှင်းပြပြီး ခွဲခြမ်းစိတ်ဖြာပေးသည်၊ 1 ရက်အတွင်း",
+    "zh": "Fastwork 卖家：中国命理解读，讲解并分析命盘，1 天交付",
+    "de": "Anbieter auf Fastwork: chinesische Deutung, das Horoskop erklärt und analysiert, in 1 Tag"
+   },
+   "p": {
+    "en": "฿799",
+    "th": "฿799",
+    "my": "฿799",
+    "zh": "฿799",
+    "de": "฿799"
+   },
+   "src": "https://fastwork.co/user/charles639/horoscope-36267097"
+  },
+  {
+   "t": {
+    "en": "Fastwork's Chinese astrology page: a basic chart reading",
+    "th": "หน้าดูดวงจีนของ Fastwork: ตรวจดวงพื้นฐาน",
+    "my": "Fastwork တရုတ်ဗေဒင်စာမျက်နှာ - အခြေခံ ဇာတာစစ်ဆေးခြင်း",
+    "zh": "Fastwork 中国命理页面：基本的命盘查看",
+    "de": "Fastwork-Seite für chinesische Astrologie: eine einfache Horoskopprüfung"
+   },
+   "p": {
+    "en": "From ฿100",
+    "th": "เริ่ม ฿100",
+    "my": "฿100 မှစ၍",
+    "zh": "฿100 起",
+    "de": "Ab ฿100"
+   },
+   "src": "https://fastwork.co/horoscope/chinese"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What are luck pillars?",
+    "th": "วัยจรสิบปีคืออะไร",
+    "my": "ကံကြမ္မာတိုင်များ ဆိုတာ ဘာလဲ။",
+    "zh": "什么是大运？",
+    "de": "Was sind Glückssäulen?"
+   },
+   "a": {
+    "en": "Luck pillars, also called major luck cycles (大運, dàyùn), are ten-year periods that add more stem-and-branch influences to the birth chart. Their start and direction are worked out from the month pillar and depend on the person's gender and on whether the year stem is yin or yang.",
+    "th": "วัยจรสิบปี (大運 ต้าอวิ้น) คือช่วงสิบปีที่เพิ่มอิทธิพลของก้านฟ้ากิ่งดินเข้ามาในดวงกำเนิด จุดเริ่มและทิศทางคำนวณจากเสาเดือน และขึ้นกับเพศของบุคคลและว่าก้านฟ้าของปีเกิดเป็นหยินหรือหยาง",
+    "my": "ကံကြမ္မာတိုင်များ (大運, dàyùn) ဟုလည်း ခေါ်သော ဆယ်နှစ်ကာလများသည် မွေးဇာတာထဲသို့ ပင်စည်နှင့် ကိုင်း၏ သက်ရောက်မှု ထပ်ထည့်ပေးသည်။ ၎င်းတို့၏ စတင်ချိန်နှင့် ဦးတည်ချက်ကို လတိုင်မှ တွက်ပြီး လူ၏ ကျား/မနှင့် မွေးနှစ်ပင်စည်၏ ယင်/ယန်ပေါ် မူတည်သည်။",
+    "zh": "大运（大運，dàyùn）是十年一段的时期，会在命盘上叠加更多天干地支的影响。起运的时间和方向按月柱推算，并取决于当事人的性别和年干是阴还是阳。",
+    "de": "Glückssäulen, auch grosse Glückszyklen (大運, dàyùn) genannt, sind Zehn-Jahres-Abschnitte, die dem Geburtshoroskop weitere Einflüsse von Stämmen und Zweigen hinzufügen. Beginn und Richtung werden aus der Monatssäule berechnet und hängen vom Geschlecht der Person und davon ab, ob der Jahresstamm Yin oder Yang ist."
+   },
+   "src": "https://en.wikipedia.org/wiki/Four_Pillars_of_Destiny"
+  },
+  {
+   "q": {
+    "en": "What do the four pillars stand for?",
+    "th": "สี่เสาแทนอะไรบ้าง",
+    "my": "တိုင်လေးတိုင်က ဘာတွေကို ကိုယ်စားပြုသလဲ။",
+    "zh": "四柱各代表什么？",
+    "de": "Wofür stehen die vier Säulen?"
+   },
+   "a": {
+    "en": "The year pillar stands for ancestry and early life. The month pillar stands for parents, upbringing and the base of a career. The day pillar stands for the self and the spouse, and its stem is the Day Master, the reference point for the whole chart. The hour pillar stands for children, later life and the inner self.",
+    "th": "เสาปีแทนบรรพบุรุษและช่วงต้นของชีวิต เสาเดือนแทนพ่อแม่ การเลี้ยงดู และรากฐานการงาน เสาวันแทนตัวตนและคู่สมรส ก้านฟ้าของเสาวันคือเจ้าวัน (Day Master) จุดอ้างอิงของทั้งดวง เสายามแทนบุตร ช่วงปลายชีวิต และตัวตนภายใน",
+    "my": "နှစ်တိုင်သည် ဘိုးဘွားမျိုးရိုးနှင့် ငယ်ရွယ်စဉ်ဘဝကို ကိုယ်စားပြုသည်။ လတိုင်သည် မိဘများ၊ ပျိုးထောင်ပေးမှုနှင့် အလုပ်အကိုင်၏ အခြေခံကို ကိုယ်စားပြုသည်။ ရက်တိုင်သည် မိမိကိုယ်တိုင်နှင့် ဇနီး/ခင်ပွန်းကို ကိုယ်စားပြုပြီး ၎င်း၏ ပင်စည်သည် ဇာတာတစ်ခုလုံး၏ ကိုးကားမှတ်တိုင် ဖြစ်သော Day Master ဖြစ်သည်။ နာရီတိုင်သည် သားသမီးများ၊ နောက်ပိုင်းဘဝနှင့် အတွင်းစိတ်ကို ကိုယ်စားပြုသည်။",
+    "zh": "年柱代表祖先和早年生活。月柱代表父母、成长环境和事业的根基。日柱代表自己和配偶，它的天干是日主，是整张命盘的参照点。时柱代表子女、晚年和内在的自我。",
+    "de": "Die Jahressäule steht für die Vorfahren und die frühen Lebensjahre. Die Monatssäule steht für Eltern, Erziehung und die Grundlage des Berufs. Die Tagessäule steht für das Selbst und den Ehepartner; ihr Stamm ist der Tagesmeister, der Bezugspunkt des ganzen Horoskops. Die Stundensäule steht für Kinder, die späteren Jahre und das Innere."
+   },
+   "src": "https://en.wikipedia.org/wiki/Four_Pillars_of_Destiny"
+  },
+  {
+   "q": {
+    "en": "What does a seller need to read Bazi?",
+    "th": "ผู้ขายต้องใช้อะไรในการดูปาจื้อ",
+    "my": "Bazi ဟောရန် ရောင်းသူက ဘာတွေ လိုအပ်သလဲ။",
+    "zh": "卖家排八字需要什么？",
+    "de": "Was braucht ein Anbieter, um Bazi zu deuten?"
+   },
+   "a": {
+    "en": "One Fastwork seller asks for the date of birth, the exact time of birth, which the listing calls important for accuracy, the place of birth, used to adjust the time zone, and gender.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ขอวันเกิด เวลาเกิดที่แน่นอนซึ่งประกาศระบุว่าสำคัญต่อความแม่นยำ สถานที่เกิดซึ่งใช้ปรับเขตเวลา และเพศ",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက မွေးသက္ကရာဇ်၊ တိကျသော မွေးချိန် (တိကျမှန်ကန်မှုအတွက် အရေးကြီးသည်ဟု စာတွင်ဆိုသည်)၊ အချိန်ဇုန်ညှိရန် အသုံးပြုသော မွေးရာဇာတိနှင့် ကျား/မ ကို တောင်းသည်။",
+    "zh": "Fastwork 上一位卖家要求提供出生日期、准确的出生时间（该商品页称这对准确度很重要）、用来调整时区的出生地点，以及性别。",
+    "de": "Ein Anbieter auf Fastwork fragt nach Geburtsdatum, genauer Geburtszeit (laut Angebot wichtig für die Genauigkeit), Geburtsort (zur Anpassung der Zeitzone) und Geschlecht."
+   },
+   "src": "https://fastwork.co/user/tytan622/horoscope-19384716?badges=&position=1&productSlug=horoscope-84659761&q=%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%A7%E0%B8%87&username=darento"
+  },
+  {
+   "q": {
+    "en": "How long is a Chinese chart session?",
+    "th": "การดูดวงจีนใช้เวลานานแค่ไหน",
+    "my": "တရုတ်ဇာတာဟောခြင်း ဘယ်လောက်ကြာသလဲ။",
+    "zh": "中国命理解读要多久？",
+    "de": "Wie lange dauert eine chinesische Horoskopsitzung?"
+   },
+   "a": {
+    "en": "The first-time package of one Fastwork seller is an online session of 2 to 3 hours with a reading document. The repeat package is a document about the coming year's influences.",
+    "th": "แพ็กเกจสำหรับลูกค้าใหม่ของผู้ขายรายหนึ่งบน Fastwork เป็นการพูดคุยออนไลน์ 2–3 ชั่วโมง พร้อมเอกสารดูดวง แพ็กเกจลูกค้าเก่าเป็นเอกสารเรื่องอิทธิพลของปีที่จะมาถึง",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ ပထမဆုံးဝယ်သူ ပက်ကေ့ချ်သည် အွန်လိုင်းအစည်းအဝေး 2 မှ 3 နာရီနှင့် ဟောစာစာရွက်စာတမ်း ပါသည်။ ထပ်ဝယ်သူ ပက်ကေ့ချ်မှာ လာမည့်နှစ်၏ သက်ရောက်မှုများအကြောင်း စာရွက်စာတမ်းဖြစ်သည်။",
+    "zh": "Fastwork 上一位卖家的新客套餐是 2 至 3 小时的线上会谈，附一份解读文件。老客套餐是一份讲来年影响的文件。",
+    "de": "Das Paket für Erstkunden eines Anbieters auf Fastwork ist eine Online-Sitzung von 2 bis 3 Stunden mit einem Deutungsdokument. Das Paket für Stammkunden ist ein Dokument über die Einflüsse des kommenden Jahres."
+   },
+   "src": "https://fastwork.co/user/aromajame/horoscope-50349773"
+  }
+ ],
+ "related": [
+  "reading",
+  "date-pick",
+  "name-pick",
+  "lucky-number",
+  "almanac-widget",
+  "translate"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang horoscope page: the Chinese twelve-year zodiac with day pillars",
+    "th": "หน้าดวงของ Mot Dang: นักษัตรจีนสิบสองปีพร้อมเสาประจำวัน",
+    "my": "Mot Dang ဗေဒင်စာမျက်နှာ - တရုတ်တစ်ဆယ့်နှစ်နှစ်သံသရာနှင့် နေ့တိုင်များ",
+    "zh": "Mot Dang 星运页面：中国十二生肖与日柱",
+    "de": "Horoskopseite von Mot Dang: der chinesische Zwölf-Jahres-Tierkreis mit Tagessäulen"
+   },
+   "href": "https://motdang.net/horoscope.html"
+  },
+  {
+   "t": {
+    "en": "Four Pillars of Destiny on Wikipedia",
+    "th": "วิกิพีเดีย: สี่เสาแห่งโชคชะตา (Four Pillars of Destiny)",
+    "my": "ဝီကီပီဒီးယား - Four Pillars of Destiny",
+    "zh": "维基百科：四柱命理（Four Pillars of Destiny）",
+    "de": "Four Pillars of Destiny auf Wikipedia"
+   },
+   "href": "https://en.wikipedia.org/wiki/Four_Pillars_of_Destiny"
+  }
+ ],
+ "glyphs": [
+  "coin",
+  "dice",
+  "moon"
+ ]
+}

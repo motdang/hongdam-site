@@ -1,0 +1,258 @@
+{
+ "id": "merit-you",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People have merit made in their name at a wat when they live far away or cannot go, and they get photos or a video.",
+  "th": "คนฝากทำบุญที่วัดในชื่อของตนเมื่ออยู่ไกลหรือไปเองไม่ได้ และได้รับรูปหรือวิดีโอเป็นหลักฐาน",
+  "my": "ဝေးကွာနေသူများ သို့မဟုတ် မသွားနိုင်သူများသည် မိမိအမည်ဖြင့် ဘုန်းကြီးကျောင်းတွင် ကုသိုလ်ပြုခိုင်းကြပြီး ဓာတ်ပုံ သို့မဟုတ် ဗီဒီယိုရရှိကြသည်။",
+  "zh": "住得远或去不了寺庙的人，会请人以自己的名义在寺里做功德，并收到照片或视频。",
+  "de": "Wer weit weg wohnt oder nicht selbst gehen kann, lässt im eigenen Namen in einem Wat Verdienst erwerben und erhält Fotos oder ein Video."
+ },
+ "n": {
+  "de": "Verdienst für Sie erworben"
+ },
+ "l": {
+  "de": "Im Wat in Ihrem Namen, mit Fotos oder Video und Datum."
+ },
+ "steps": [
+  {
+   "db": "gift",
+   "t": {
+    "en": "You pick what to give: food for monks at dawn, a sangkhathan set, robes, an image or a donation, or native fish.",
+    "th": "คุณเลือกสิ่งที่จะถวาย ได้แก่ ใส่บาตรตอนเช้า ชุดสังฆทาน ผ้าไตร พระพุทธรูป หรือปัจจัย หรือปล่อยปลาพันธุ์พื้นเมือง",
+    "my": "သင်လှူလိုသည့်အရာကို ရွေးချယ်သည်။ နံနက်ပိုင်း ဘုန်းကြီးများအတွက် ဆွမ်း၊ သင်္ဃဒါန်အစုံ၊ သင်္ကန်း၊ ရုပ်ပွားတော် သို့မဟုတ် အလှူငွေ၊ သို့မဟုတ် ဒေသခံငါး လွှတ်ခြင်း။",
+    "zh": "您选择要布施的内容：清晨供养僧人的食物、僧伽布施套装、僧衣、佛像或捐款，或者放生本地鱼。",
+    "de": "Sie wählen, was Sie geben: Essen für Mönche im Morgengrauen, ein Sangkhathan-Set, Roben, ein Bild oder eine Spende, oder heimische Fische zum Freilassen."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันทำบุญ",
+    "my": "ကုသိုလ်ပြုမည့်နေ့မတိုင်မီ",
+    "zh": "做功德之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "wai",
+   "t": {
+    "en": "We make the offering in your name, at a wat or, for fish, in permitted water.",
+    "th": "ถวายหรือปล่อยในชื่อของคุณที่วัด หรือในแหล่งน้ำที่อนุญาตสำหรับการปล่อยปลา",
+    "my": "သင့်အမည်ဖြင့် ဘုန်းကြီးကျောင်းတွင် လှူဒါန်းပေးသည်။ ငါးဖြစ်ပါက ခွင့်ပြုထားသော ရေလမ်းကြောင်းတွင် လွှတ်ပေးသည်။",
+    "zh": "以您的名义，在寺庙里布施；放生则在允许的水域进行。",
+    "de": "Wir bringen die Gabe in Ihrem Namen dar, in einem Wat oder, bei Fischen, in erlaubtem Gewässer."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "On the day",
+    "th": "ในวันที่ทำบุญ",
+    "my": "ကုသိုလ်ပြုသည့်နေ့",
+    "zh": "当天",
+    "de": "Am Tag"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "We send photos or a video, with the date.",
+    "th": "ส่งรูปหรือวิดีโอพร้อมวันที่ให้คุณ",
+    "my": "ရက်စွဲပါသော ဓာတ်ပုံများ သို့မဟုတ် ဗီဒီယိုကို ပို့ပေးသည်။",
+    "zh": "把带日期的照片或视频发给您。",
+    "de": "Wir schicken Fotos oder ein Video mit Datum."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After",
+    "th": "หลังทำบุญ",
+    "my": "ပြီးနောက်",
+    "zh": "之后",
+    "de": "Danach"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thairath reported on 24 July 2026 that shoppers buy smaller sangkhathan sets or buy the items to assemble their own, and that ready-made sets prepared by temples cost less than shop sets. The Department of Internal Trade requires a seller to show a set's price and list each item with its size, weight and price.",
+    "th": "ไทยรัฐรายงานเมื่อ 24 กรกฎาคม 2569 ว่าผู้ซื้อหันไปซื้อชุดสังฆทานขนาดเล็กลง หรือซื้อของมาจัดเอง และชุดที่วัดจัดเตรียมไว้ราคาถูกกว่าชุดตามร้าน กรมการค้าภายในกำหนดให้ผู้ขายแสดงราคาของชุดและรายการสินค้าแต่ละอย่างพร้อมขนาด น้ำหนัก และราคา",
+    "my": "ထိုင်းရတ်သည် 2026 ခုနှစ် ဇူလိုင် 24 ရက်တွင် ဝယ်သူများက သင်္ဃဒါန်အစုံ သေးသေးများကို ဝယ်ကြခြင်း သို့မဟုတ် ပစ္စည်းများကို ဝယ်၍ မိမိဘာသာ စီစဉ်ကြခြင်းကို ဖော်ပြခဲ့သည်။ ဘုန်းကြီးကျောင်းများ ပြင်ဆင်ထားသော အစုံများသည် ဆိုင်ရှိ အစုံများထက် ဈေးသက်သာသည်။ ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက ရောင်းသူသည် အစုံ၏ ဈေးနှုန်းနှင့် ပစ္စည်းတစ်ခုချင်း၏ အရွယ်အစား၊ အလေးချိန်၊ ဈေးနှုန်းတို့ကို ဖော်ပြရမည်ဟု သတ်မှတ်သည်။",
+    "zh": "《泰叻报》2026 年 7 月 24 日报道，买家改买较小的僧伽布施套装，或自己买东西配齐；寺庙准备的现成套装比商店的便宜。内贸厅规定卖家要标明套装的价格，并逐项列出物品的尺寸、重量和价格。",
+    "de": "Thairath berichtete am 24. Juli 2026, dass Käufer kleinere Sangkhathan-Sets kaufen oder die Teile selbst zusammenstellen, und dass fertige Sets von Tempeln weniger kosten als Sets aus dem Laden. Das Department of Internal Trade verlangt, dass ein Verkäufer den Preis eines Sets nennt und jeden Artikel mit Grösse, Gewicht und Preis aufführt."
+   },
+   "src": "https://www.thairath.co.th/news/governmentpolicy/2948411"
+  },
+  {
+   "t": {
+    "en": "The Thai Buddhist teaching on merit names giving, keeping precepts and training the mind as ways to make merit. Sharing merit with others, such as dedicating it and pouring water, is another. The page lists ten kinds in all.",
+    "th": "คำสอนทางพุทธศาสนาเรื่องการทำบุญระบุการให้ทาน การรักษาศีล และการฝึกจิตเป็นวิธีทำบุญ การอุทิศส่วนกุศลให้ผู้อื่น เช่น การกรวดน้ำ เป็นอีกวิธีหนึ่ง หน้านี้ระบุไว้ทั้งหมดสิบประการ",
+    "my": "ကုသိုလ်နှင့်ပတ်သက်သော ထိုင်းဗုဒ္ဓဘာသာ သင်ကြားချက်တွင် ဒါန၊ သီလနှင့် စိတ်ကို လေ့ကျင့်ခြင်းတို့ကို ကုသိုလ်ပြုနည်းများအဖြစ် ဖော်ပြသည်။ အမျှဝေခြင်း၊ ရေသွန်းခြင်းကဲ့သို့ အခြားသူများနှင့် ကုသိုလ်ကို မျှဝေခြင်းလည်း တစ်နည်းဖြစ်သည်။ ထိုစာမျက်နှာတွင် စုစုပေါင်း ဆယ်မျိုး ဖော်ပြထားသည်။",
+    "zh": "泰国佛教关于功德的教导，把布施、持戒和修心列为做功德的方式；与他人分享功德，如回向和浇水，是另一种方式。该页面共列出十种。",
+    "de": "Die thailändisch-buddhistische Lehre nennt Geben, das Einhalten von Geboten und die Schulung des Geistes als Wege, Verdienst zu erwerben. Verdienst mit anderen zu teilen, etwa durch Widmung und Wasserausgiessen, ist ein weiterer. Die Seite führt insgesamt zehn Arten auf."
+   },
+   "src": "https://www.trueplookpanya.com/dhamma/content/89141"
+  },
+  {
+   "t": {
+    "en": "The Department of Fisheries names native species, such as Thai silver barb and Siamese mud carp, for release.",
+    "th": "กรมประมงแนะนำปลาพื้นเมือง เช่น ปลาตะเพียนขาวและปลาสร้อยขาว สำหรับการปล่อย",
+    "my": "ငါးလုပ်ငန်းဦးစီးဌာနက ထိုင်းငါးဖယ်ဖြူ စသည့် ဒေသခံမျိုးစိတ်များကို လွှတ်ရန် ဖော်ပြသည်။",
+    "zh": "渔业厅列出本地鱼种供放生，如泰国银鲃和暹罗泥鲮。",
+    "de": "Das Department of Fisheries nennt einheimische Arten zum Freilassen, etwa die Silberbarbe und den Siam-Schlammkarpfen."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/508767"
+  },
+  {
+   "t": {
+    "en": "Releasing non-native fish carries up to two years in prison or ฿2 million.",
+    "th": "การปล่อยปลาต่างถิ่นมีโทษจำคุกไม่เกินสองปีหรือปรับ ฿2 ล้าน",
+    "my": "ဒေသခံမဟုတ်သော ငါးလွှတ်ခြင်းသည် ထောင်နှစ်နှစ် သို့မဟုတ် ฿2 သန်းအထိ။",
+    "zh": "放生外来鱼种最高可判两年监禁或罚 ฿200 万。",
+    "de": "Wer nicht heimische Fische freilässt, riskiert bis zu zwei Jahre Haft oder ฿2 Millionen."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/508767"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Sangkhathan set (a set of everyday goods offered to monks), per set",
+    "th": "ชุดสังฆทาน (ชุดของใช้ที่ถวายพระ) ต่อชุด",
+    "my": "သင်္ဃဒါန် အစုံ (ဘုန်းကြီးများကို လှူသော နေ့စဉ်သုံးပစ္စည်းအစုံ)၊ တစ်စုံလျှင်",
+    "zh": "僧伽布施套装（供养僧人的日用品一套），每套",
+    "de": "Sangkhathan-Set (Alltagsgüter, die Mönchen dargebracht werden), pro Set"
+   },
+   "p": {
+    "en": "฿40–4,500",
+    "th": "฿40–4,500",
+    "my": "฿40–4,500",
+    "zh": "฿40–4,500",
+    "de": "฿40–4,500"
+   },
+   "src": "https://www.thairath.co.th/news/governmentpolicy/2948411"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can merit be given to someone else?",
+    "th": "ส่งต่อบุญให้ผู้อื่นได้ไหม",
+    "my": "ကုသိုလ်ကို အခြားသူထံ မျှဝေနိုင်သလား။",
+    "zh": "功德可以分给别人吗？",
+    "de": "Kann man Verdienst an andere weitergeben?"
+   },
+   "a": {
+    "en": "Thai Buddhist teaching counts sharing merit with others as one of ten kinds of merit-making. Plook Dharma's page calls it pattidanamai and gives dedicating merit and pouring water as examples.",
+    "th": "คำสอนของพุทธศาสนาในไทยนับการอุทิศส่วนกุศลให้ผู้อื่นเป็นหนึ่งในสิบวิธีทำบุญ หน้าของ Plook Dharma เรียกว่าปัตติทานมัย และยกตัวอย่างการอุทิศบุญและการกรวดน้ำ",
+    "my": "ထိုင်းဗုဒ္ဓဘာသာ သင်ကြားချက်တွင် အခြားသူများနှင့် ကုသိုလ်မျှဝေခြင်းကို ကုသိုလ်ပြုနည်း ဆယ်မျိုးအနက် တစ်မျိုးအဖြစ် သတ်မှတ်သည်။ Plook Dharma စာမျက်နှာက ၎င်းကို ပတ္တိဒါနမယ ဟုခေါ်ပြီး အမျှဝေခြင်းနှင့် ရေသွန်းခြင်းကို ဥပမာပေးသည်။",
+    "zh": "泰国佛教教导把与他人分享功德列为十种做功德方式之一。Plook Dharma 的页面称之为 pattidanamai，并以回向和浇水为例。",
+    "de": "Die thailändisch-buddhistische Lehre zählt das Teilen von Verdienst mit anderen zu den zehn Arten, Verdienst zu erwerben. Die Seite von Plook Dharma nennt es pattidanamai und gibt Widmung und Wasserausgiessen als Beispiele."
+   },
+   "src": "https://www.trueplookpanya.com/dhamma/content/89141"
+  },
+  {
+   "q": {
+    "en": "How much is a sangkhathan set?",
+    "th": "ชุดสังฆทานราคาเท่าไร",
+    "my": "သင်္ဃဒါန်အစုံ ဈေးဘယ်လောက်လဲ။",
+    "zh": "僧伽布施套装多少钱？",
+    "de": "Was kostet ein Sangkhathan-Set?"
+   },
+   "a": {
+    "en": "Thairath reported on 24 July 2026 that sets sell from ฿40 to ฿4,500 a set, depending on the goods packed. Prices were stable against the same period a year earlier.",
+    "th": "ไทยรัฐรายงานเมื่อ 24 กรกฎาคม 2569 ว่าชุดสังฆทานราคาตั้งแต่ ฿40 ถึง ฿4,500 ต่อชุด ขึ้นกับสินค้าที่ใส่ในชุด ราคาคงที่เมื่อเทียบกับช่วงเดียวกันของปีก่อน",
+    "my": "ထိုင်းရတ်သည် 2026 ခုနှစ် ဇူလိုင် 24 ရက်တွင် အစုံများကို ထည့်ထားသောပစ္စည်းအလိုက် တစ်စုံလျှင် ฿40 မှ ฿4,500 အထိ ရောင်းချကြောင်း ဖော်ပြခဲ့သည်။ ယခင်နှစ် ထိုကာလနှင့် ယှဉ်လျှင် ဈေးနှုန်း မပြောင်းလဲပါ။",
+    "zh": "《泰叻报》2026 年 7 月 24 日报道，套装依所装物品不同，每套售价 ฿40 至 ฿4,500，与上年同期相比价格持平。",
+    "de": "Thairath berichtete am 24. Juli 2026, Sets kosteten je nach Inhalt ฿40 bis ฿4,500 pro Set. Die Preise blieben gegenüber dem Vorjahreszeitraum stabil."
+   },
+   "src": "https://www.thairath.co.th/news/governmentpolicy/2948411"
+  },
+  {
+   "q": {
+    "en": "Can a gift to a temple be deducted from tax?",
+    "th": "บริจาคให้วัดลดหย่อนภาษีได้ไหม",
+    "my": "ဘုန်းကြီးကျောင်းသို့ လှူဒါန်းမှုကို အခွန်လျှော့ချနိုင်သလား။",
+    "zh": "捐给寺庙的钱可以抵税吗？",
+    "de": "Kann man eine Spende an einen Tempel von der Steuer absetzen?"
+   },
+   "a": {
+    "en": "For tax year 2569, Thairath says a person deducts only cash gifts made through e-Donation, up to 10% of income after expenses and allowances. A temple counts only when it is legally established in Thailand.",
+    "th": "ปีภาษี 2569 ไทยรัฐระบุว่าลดหย่อนได้เฉพาะเงินบริจาคที่ทำผ่านระบบ e-Donation ไม่เกิน 10% ของเงินได้หลังหักค่าใช้จ่ายและค่าลดหย่อน และวัดต้องเป็นวัดที่จัดตั้งถูกต้องตามกฎหมายในไทย",
+    "my": "2569 ခုနှစ် အခွန်နှစ်အတွက် ထိုင်းရတ်က ကိုယ်တိုင်သည် e-Donation စနစ်မှတစ်ဆင့် လှူသော ငွေသားလှူဒါန်းမှုကိုသာ ကုန်ကျစရိတ်နှင့် လျှော့ချငွေများ နုတ်ပြီးနောက် ဝင်ငွေ၏ 10% အထိ လျှော့ချနိုင်သည်ဟု ဆိုသည်။ ဘုန်းကြီးကျောင်းသည် ထိုင်းတွင် ဥပဒေနှင့်အညီ တည်ထောင်ထားသည့် ကျောင်းဖြစ်မှသာ ရသည်။",
+    "zh": "泰叻报说，2569 年税年中，个人只能抵扣通过 e-Donation 系统捐出的现金，上限为扣除费用和免税额后收入的 10%。寺庙须是在泰国依法设立的才算。",
+    "de": "Thairath schreibt, für das Steuerjahr 2569 setze man nur Bargeldspenden über e-Donation ab, bis zu 10% des Einkommens nach Ausgaben und Freibeträgen. Ein Tempel zählt nur, wenn er in Thailand rechtmässig eingetragen ist."
+   },
+   "src": "https://www.thairath.co.th/money/personal_finance/financial_planning/2920015"
+  },
+  {
+   "q": {
+    "en": "Which fish can be released, and what is the penalty for the wrong ones?",
+    "th": "ปล่อยปลาชนิดไหนได้ และปล่อยชนิดที่ไม่ถูกต้องมีโทษอย่างไร",
+    "my": "ဘယ်ငါးမျိုးကို လွှတ်နိုင်ပြီး မှားယွင်းသော ငါးမျိုးကို လွှတ်ပါက ပြစ်ဒဏ်ဘာလဲ။",
+    "zh": "可以放生哪些鱼？放错了有什么处罚？",
+    "de": "Welche Fische darf man freilassen, und was droht bei den falschen?"
+   },
+   "a": {
+    "en": "The Department of Fisheries names native Thai species, among them ปลาตะเพียน (Thai silver barb), ปลาช่อน, ปลาหมอไทย and ปลาสร้อยขาว. Under the Fisheries Emergency Decree B.E. 2558, releasing a non-native species carries up to 2 years in prison, a fine of up to ฿2,000,000, or both.",
+    "th": "กรมประมงแนะนำปลาพื้นเมืองของไทย เช่น ปลาตะเพียน ปลาช่อน ปลาหมอไทย และปลาสร้อยขาว ตามพระราชกำหนดการประมง พ.ศ. 2558 การปล่อยสัตว์น้ำต่างถิ่นมีโทษจำคุกไม่เกิน 2 ปี ปรับไม่เกิน ฿2,000,000 หรือทั้งจำทั้งปรับ",
+    "my": "ငါးလုပ်ငန်းဦးစီးဌာနက ปลาตะเพียน၊ ปลาช่อน၊ ปลาหมอไทย နှင့် ปลาสร้อยขาว စသည့် ထိုင်းဒေသခံငါးများကို ဖော်ပြသည်။ ထိုင်းငါးလုပ်ငန်း အရေးပေါ်အမိန့် B.E. 2558 အရ ဒေသခံမဟုတ်သော မျိုးစိတ်ကို လွှတ်ခြင်းသည် ထောင်ဒဏ် 2 နှစ်အထိ၊ ငွေဒဏ် ฿2,000,000 အထိ သို့မဟုတ် နှစ်မျိုးလုံး ချမှတ်နိုင်သည်။",
+    "zh": "渔业厅列出泰国本地鱼种，包括 ปลาตะเพียน（泰国银鲃）、ปลาช่อน、ปลาหมอไทย 和 ปลาสร้อยขาว。依据 B.E. 2558 年《渔业紧急法令》，放生外来物种最高可判 2 年监禁、罚款 ฿2,000,000，或两者并罚。",
+    "de": "Das Department of Fisheries nennt einheimische thailändische Arten, darunter ปลาตะเพียน (Silberbarbe), ปลาช่อน, ปลาหมอไทย und ปลาสร้อยขาว. Nach dem Fisheries Emergency Decree B.E. 2558 drohen für das Freilassen einer nicht heimischen Art bis zu 2 Jahre Haft, eine Busse bis ฿2,000,000 oder beides."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/508767"
+  }
+ ],
+ "related": [
+  "merit-dead",
+  "house-blessing",
+  "spirit-house",
+  "su-khwan",
+  "pha-yant",
+  "date-pick"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thai PBS: releasing fish for merit, the species the Department of Fisheries names",
+    "th": "Thai PBS: การปล่อยปลาทำบุญ ชนิดที่กรมประมงแนะนำ",
+    "my": "Thai PBS: ကုသိုလ်အတွက် ငါးလွှတ်ခြင်း၊ ငါးလုပ်ငန်းဦးစီးဌာနက ဖော်ပြသော မျိုးစိတ်များ",
+    "zh": "Thai PBS：放生做功德，渔业厅列出的鱼种",
+    "de": "Thai PBS: Fische für Verdienst freilassen – die vom Fischereiamt genannten Arten"
+   },
+   "href": "https://www.thaipbs.or.th/news/content/508767"
+  },
+  {
+   "t": {
+    "en": "Plook Dharma: how merit-making and giving differ",
+    "th": "Plook Dharma: ทำบุญ กับ ทำทาน ต่างกันอย่างไร",
+    "my": "Plook Dharma: ကုသိုလ်ပြုခြင်းနှင့် ဒါနပြုခြင်း ကွာခြားပုံ",
+    "zh": "Plook Dharma：做功德与布施有何不同",
+    "de": "Plook Dharma: Wie sich Verdienst erwerben und Geben unterscheiden"
+   },
+   "href": "https://www.trueplookpanya.com/dhamma/content/89141"
+  }
+ ],
+ "glyphs": [
+  "lotus",
+  "wai",
+  "camera"
+ ]
+}

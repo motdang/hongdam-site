@@ -1,0 +1,360 @@
+{
+ "id": "sak-yant",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "To Thais a sak yant carries protection, luck or charm. Visitors who want one from a master in the north have an interpreter beside them.",
+  "th": "สำหรับคนไทย ยันต์สักให้การคุ้มครอง โชคลาภ หรือเสน่ห์ ผู้มาเยือนที่อยากสักกับอาจารย์ในภาคเหนือจะมีล่ามอยู่ข้างๆ",
+  "my": "ထိုင်းလူမျိုးများအတွက် ယန္တရားတက်တူးသည် ကာကွယ်မှု၊ ကံကောင်းမှု သို့မဟုတ် ဆွဲဆောင်မှုကို ယူဆောင်လာသည်။ မြောက်ပိုင်းရှိ ဆရာထံ ထိုးလိုသော လာရောက်လည်ပတ်သူများ၏ ဘေးတွင် စကားပြန်တစ်ဦး ရှိသည်။",
+  "zh": "对泰国人来说，刺符带来保护、好运或魅力。想找北方法师刺符的访客，身边有口译员陪同。",
+  "de": "Für Thailänder bringt ein Sak Yant Schutz, Glück oder Anziehungskraft. Wer im Norden zu einem Ajarn gehen möchte, hat einen Dolmetscher an der Seite."
+ },
+ "n": {
+  "de": "Sak Yant, abseits der üblichen Wege"
+ },
+ "l": {
+  "de": "Ein Ajarn oder Mönch in Ihrer Nähe im Norden, angefragt und besucht, mit Dolmetscher."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "Hongdam finds an ajarn or a monk near where you are in the north, and asks for you.",
+    "th": "หงส์ดำหาอาจารย์หรือพระในภาคเหนือใกล้ที่คุณอยู่ และติดต่อขอให้",
+    "my": "ဟုန်ဒမ်က သင်ရှိရာနီးရှိ မြောက်ပိုင်းမှ ဆရာ (ajarn) သို့မဟုတ် ရဟန်းကို ရှာပြီး သင့်အတွက် မေးမြန်းသည်။",
+    "zh": "鸿丹在您所在地附近的北部找法师（ajarn）或僧人，并替您联系。",
+    "de": "Hongdam sucht einen Ajarn oder Mönch in Ihrer Nähe im Norden und fragt für Sie an."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนวันไป",
+    "my": "သွားရောက်မည့်နေ့မတိုင်မီ",
+    "zh": "拜访之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "Hongdam arranges the day of the visit.",
+    "th": "หงส์ดำนัดวันที่ไป",
+    "my": "ဟုန်ဒမ်က သွားရောက်မည့်နေ့ကို စီစဉ်သည်။",
+    "zh": "鸿丹安排拜访的日期。",
+    "de": "Hongdam vereinbart den Tag des Besuchs."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the visit",
+    "th": "ก่อนวันไป",
+    "my": "သွားရောက်မည့်နေ့မတိုင်မီ",
+    "zh": "拜访之前",
+    "de": "Vor dem Besuch"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "An interpreter sits beside you for up to 4 hours. The ajarn chooses the yant and may say no.",
+    "th": "ล่ามอยู่ข้างคุณไม่เกิน 4 ชั่วโมง อาจารย์เป็นผู้เลือกยันต์และอาจไม่รับ",
+    "my": "စကားပြန်တစ်ဦးက သင့်ဘေးတွင် 4 နာရီအထိ ရှိသည်။ ဆရာက ယန္တရားကို ရွေးပြီး ငြင်းပယ်နိုင်သည်။",
+    "zh": "口译员陪在您身边，最长 4 小时。由法师选定符，也可能不接。",
+    "de": "Ein Dolmetscher sitzt bis zu 4 Stunden neben Ihnen. Der Ajarn wählt das Yant und kann ablehnen."
+   },
+   "who": {
+    "en": "An interpreter, you and the ajarn",
+    "th": "ล่าม คุณ และอาจารย์",
+    "my": "စကားပြန်၊ သင်နှင့် ဆရာ",
+    "zh": "口译员、您和法师",
+    "de": "Dolmetscher, Sie und der Ajarn"
+   },
+   "time": {
+    "en": "The visit, up to 4 hours",
+    "th": "วันไป ไม่เกิน 4 ชั่วโมง",
+    "my": "သွားရောက်သည့်နေ့၊ 4 နာရီအထိ",
+    "zh": "拜访当天，最长 4 小时",
+    "de": "Der Besuch, bis zu 4 Stunden"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "You pay the ajarn for the yant and the offering directly. Transport is at cost.",
+    "th": "คุณจ่ายค่ายันต์และเครื่องไหว้ครูให้อาจารย์โดยตรง ค่าเดินทางคิดตามจริง",
+    "my": "သင်က ယန္တရားနှင့် ပူဇော်ပစ္စည်းအတွက် ဆရာကို တိုက်ရိုက် ပေးသည်။ ခရီးစရိတ်မှာ အရင်းအတိုင်း ဖြစ်သည်။",
+    "zh": "符的费用和供养直接付给法师。交通费按实际计。",
+    "de": "Sie bezahlen den Ajarn für das Yant und die Opfergabe direkt. Der Transport wird zum Selbstkostenpreis berechnet."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the visit",
+    "th": "ที่วันไป",
+    "my": "သွားရောက်သည့်နေ့တွင်",
+    "zh": "拜访当天",
+    "de": "Beim Besuch"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A sak yant is a sacred tattoo tapped into the skin by hand by a monk or a lay master, an ajarn, and then blessed. The Visit Thailand Today guide says a person does not need to be Thai or Buddhist.",
+    "th": "สักยันต์คือรอยสักศักดิ์สิทธิ์ที่พระหรืออาจารย์ฆราวาสสักด้วยมือ แล้วทำพิธีปลุกเสก คู่มือ Visit Thailand Today ระบุว่าไม่จำเป็นต้องเป็นคนไทยหรือชาวพุทธ",
+    "my": "ယန္တရားထိုးခြင်း (sak yant) သည် ရဟန်း သို့မဟုတ် လူဝတ်ကြောင်ဆရာ (ajarn) တစ်ဦးက လက်ဖြင့် အရေပြားထဲ ထိုးနှက်ပြီး ကောင်းချီးပေးသော မြင့်မြတ်သည့် တက်တူး ဖြစ်သည်။ Visit Thailand Today လမ်းညွှန်က ထိုင်းလူမျိုး သို့မဟုတ် ဗုဒ္ဓဘာသာဝင် ဖြစ်ရန် မလိုဟု ဆိုသည်။",
+    "zh": "刺符是由僧人或在家法师（ajarn）用手工一下下敲进皮肤、再加持的神圣纹身。Visit Thailand Today 的指南说，不必是泰国人或佛教徒。",
+    "de": "Ein Sak Yant ist ein heiliges Tattoo, das ein Mönch oder ein weltlicher Meister, ein Ajarn, von Hand in die Haut klopft und anschliessend segnet. Der Führer von Visit Thailand Today schreibt, man müsse weder Thai noch Buddhist sein."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "At Wat Bang Phra in Nakhon Pathom the monk chooses the design, usually the Gao Yord on the upper back for a first tattoo. People are called in groups of about 20.",
+    "th": "ที่วัดบางพระ จังหวัดนครปฐม พระเป็นผู้เลือกลาย ส่วนมากเป็นลายเก้ายอดที่หลังส่วนบนสำหรับรอยสักแรก และเรียกเข้าทีละกลุ่มราว 20 คน",
+    "my": "Nakhon Pathom ရှိ Wat Bang Phra တွင် ရဟန်းက ဒီဇိုင်းကို ရွေးပေးသည်။ ပထမဆုံးအကြိမ်အတွက် ကျောအပေါ်ပိုင်းတွင် Gao Yord ကို ထိုးလေ့ရှိသည်။ လူများကို 20 ဦးခန့် အုပ်စုလိုက် ခေါ်သည်။",
+    "zh": "在那空巴吞府的邦帕寺（Wat Bang Phra），由僧人选定图案，首次通常是上背部的 Gao Yord。人们按约 20 人一组被叫进去。",
+    "de": "Im Wat Bang Phra in Nakhon Pathom wählt der Mönch das Motiv, bei der ersten Tätowierung meist das Gao Yord auf dem oberen Rücken. Die Leute werden in Gruppen von etwa 20 aufgerufen."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "A monk may not touch a woman. At Wat Bang Phra women are tattooed with a glove and transparent ink. On temple trips booked through the Sak Yant Chiang Mai office, women are tattooed by an ajarn.",
+    "th": "พระไม่แตะต้องผู้หญิง ที่วัดบางพระสักให้ผู้หญิงโดยใช้ถุงมือและหมึกใส ส่วนทริปไปวัดที่จองผ่านสำนัก Sak Yant Chiang Mai ผู้หญิงสักกับอาจารย์",
+    "my": "ရဟန်းသည် အမျိုးသမီးကို မထိရ။ Wat Bang Phra တွင် အမျိုးသမီးများကို လက်အိတ်နှင့် ကြည်လင်သောမှင်ဖြင့် ထိုးသည်။ Sak Yant Chiang Mai ရုံးမှတစ်ဆင့် ကြိုတင်မှာယူသော ဘုရားကျောင်းခရီးများတွင် အမျိုးသမီးများကို ဆရာ (ajarn) က ထိုးသည်။",
+    "zh": "僧人不碰女性。在邦帕寺，女性用手套和透明墨水刺符。通过 Sak Yant Chiang Mai 办事处预订的寺庙行程里，女性由法师（ajarn）刺。",
+    "de": "Ein Mönch darf eine Frau nicht berühren. Im Wat Bang Phra werden Frauen mit Handschuh und durchsichtiger Tinte tätowiert. Auf Tempelfahrten über das Büro Sak Yant Chiang Mai tätowiert eine Frau ein Ajarn."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Most masters ask a person to keep the five Buddhist precepts: no killing, stealing, sexual misconduct, lying or intoxication. Many add their own rules. Breaking them is believed to weaken the blessing.",
+    "th": "อาจารย์ส่วนใหญ่ขอให้ถือศีลห้า คือ ไม่ฆ่า ไม่ลักทรัพย์ ไม่ประพฤติผิดในกาม ไม่พูดเท็จ ไม่เสพของมึนเมา และหลายท่านมีข้อห้ามของตัวเองเพิ่ม เชื่อกันว่าการผิดข้อห้ามทำให้พลังที่ปลุกเสกอ่อนลง",
+    "my": "ဆရာအများစုက ဗုဒ္ဓဘာသာ ငါးပါးသီလကို စောင့်ထိန်းရန် တောင်းဆိုကြသည်။ သတ်ခြင်း၊ ခိုးခြင်း၊ ကာမချို့ယွင်းခြင်း၊ လိမ်ညာခြင်း၊ မူးယစ်ခြင်းတို့ မပြုရ။ အများအပြားက ကိုယ်ပိုင်စည်းကမ်းများ ထပ်ထည့်ကြသည်။ ချိုးဖောက်လျှင် ကောင်းချီးအား အားနည်းသွားသည်ဟု ယုံကြည်ကြသည်။",
+    "zh": "大多数法师要求遵守佛教五戒：不杀生、不偷盗、不邪淫、不妄语、不饮酒。许多法师还加上自己的规矩。人们相信破戒会削弱加持。",
+    "de": "Die meisten Meister verlangen die fünf buddhistischen Gebote: nicht töten, nicht stehlen, keine sexuellen Verfehlungen, nicht lügen, keine Rauschmittel. Viele fügen eigene Regeln hinzu. Ein Bruch soll den Segen schwächen."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Thai health rules reported in January 2020 require tattooists to hold a yearly medical certificate. It shows they do not carry hepatitis B or C or tuberculosis.",
+    "th": "กฎสาธารณสุขของไทยที่รายงานในเดือนมกราคม 2563 (ค.ศ. 2020) กำหนดให้ช่างสักมีใบรับรองแพทย์จากการตรวจสุขภาพประจำปี ที่แสดงว่าไม่เป็นพาหะไวรัสตับอักเสบบีหรือซี หรือวัณโรค",
+    "my": "2020 ဇန်နဝါရီလတွင် ဖော်ပြခဲ့သော ထိုင်းကျန်းမာရေးစည်းမျဉ်းများအရ တက်တူးထိုးသူများသည် နှစ်စဉ် ဆေးစစ်လက်မှတ် ရှိရမည်။ ထိုလက်မှတ်က ၎င်းတို့တွင် အသည်းရောင်ရောဂါ B သို့မဟုတ် C နှင့် တီဘီရောဂါ မရှိကြောင်း ပြသည်။",
+    "zh": "2020 年 1 月报道的泰国卫生规定要求纹身师持有每年一次体检的医疗证明，证明其不携带乙肝、丙肝或肺结核。",
+    "de": "Im Januar 2020 gemeldete thailändische Gesundheitsregeln verlangen von Tätowierern ein jährliches ärztliches Zeugnis. Es zeigt, dass sie weder Hepatitis B oder C noch Tuberkulose tragen."
+   },
+   "src": "https://www.news.cn/english/asiapacific/2020-01/03/c_138676828.htm"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Wat Bang Phra, where monks tattoo: an offering set of flowers, incense and cigarettes",
+    "th": "วัดบางพระ ที่พระเป็นผู้สัก: ชุดเครื่องไหว้ ดอกไม้ ธูป และบุหรี่",
+    "my": "Wat Bang Phra၊ ရဟန်းများ ထိုးပေးသည့်နေရာ: ပန်း၊ အမွှေးတိုင်နှင့် ဆေးလိပ် ပါသော ပူဇော်ပစ္စည်းအစုံ",
+    "zh": "邦帕寺，由僧人刺符：一套供养品，含鲜花、香和香烟",
+    "de": "Wat Bang Phra, wo Mönche tätowieren: ein Opferset aus Blumen, Räucherstäbchen und Zigaretten"
+   },
+   "p": {
+    "en": "฿100 to ฿150",
+    "th": "฿100 ถึง ฿150",
+    "my": "฿100 မှ ฿150",
+    "zh": "฿100 至 ฿150",
+    "de": "฿100 bis ฿150"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Sak Yant Chiang Mai office, in town, offering included",
+    "th": "สำนัก Sak Yant Chiang Mai ในตัวเมือง รวมเครื่องไหว้แล้ว",
+    "my": "Sak Yant Chiang Mai ရုံး၊ မြို့တွင်း၊ ပူဇော်ပစ္စည်း ပါဝင်",
+    "zh": "Sak Yant Chiang Mai 办事处，市内，含供养",
+    "de": "Büro Sak Yant Chiang Mai, in der Stadt, Opfergabe inbegriffen"
+   },
+   "p": {
+    "en": "฿2,000 to ฿3,500 an hour",
+    "th": "฿2,000 ถึง ฿3,500 ต่อชั่วโมง",
+    "my": "တစ်နာရီ ฿2,000 မှ ฿3,500",
+    "zh": "每小时 ฿2,000 至 ฿3,500",
+    "de": "฿2,000 bis ฿3,500 pro Stunde"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "The same office's temple trip, plus the monk's offering",
+    "th": "ทริปไปวัดของสำนักเดียวกัน ยังไม่รวมเครื่องไหว้พระ",
+    "my": "ထိုရုံး၏ ဘုရားကျောင်းခရီး၊ ရဟန်းအတွက် ပူဇော်ပစ္စည်း သီးခြား",
+    "zh": "同一办事处的寺庙行程，僧人的供养另计",
+    "de": "Die Tempelfahrt desselben Büros, die Opfergabe für den Mönch kommt dazu"
+   },
+   "p": {
+    "en": "฿3,500 for the first person, ฿2,000 for each extra one",
+    "th": "฿3,500 สำหรับคนแรก คนต่อไปคนละ ฿2,000",
+    "my": "ပထမလူအတွက် ฿3,500၊ ထပ်တိုးတစ်ဦးလျှင် ฿2,000",
+    "zh": "第一位 ฿3,500，每多一位 ฿2,000",
+    "de": "฿3,500 für die erste Person, ฿2,000 für jede weitere"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "A Bangkok lay master's own list, small or medium and large design; elaborate work by a well-known master",
+    "th": "ราคาของอาจารย์ฆราวาสในกรุงเทพฯ ลายเล็กหรือกลางและลายใหญ่ งานละเอียดของอาจารย์ชื่อดัง",
+    "my": "ဘန်ကောက်ရှိ လူဝတ်ကြောင်ဆရာတစ်ဦး၏ ကိုယ်ပိုင်စာရင်း၊ အသေး သို့မဟုတ် အလတ်နှင့် အကြီး၊ နာမည်ကြီးဆရာ၏ ရှုပ်ထွေးသောလက်ရာ",
+    "zh": "曼谷一位在家法师自己的价目表：小号或中号、大号图案；名师的复杂作品",
+    "de": "Die eigene Liste eines weltlichen Meisters in Bangkok: kleines oder mittleres und grosses Motiv; aufwendige Arbeit eines bekannten Meisters"
+   },
+   "p": {
+    "en": "฿5,400 and ฿9,500; up to ฿20,000",
+    "th": "฿5,400 และ ฿9,500 งานละเอียดสูงสุด ฿20,000",
+    "my": "฿5,400 နှင့် ฿9,500၊ ရှုပ်ထွေးသောလက်ရာ ฿20,000 အထိ",
+    "zh": "฿5,400 和 ฿9,500；复杂作品最高 ฿20,000",
+    "de": "฿5,400 und ฿9,500; bis zu ฿20,000"
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a sak yant cost in Thailand?",
+    "th": "สักยันต์ในไทยราคาเท่าไร",
+    "my": "ထိုင်းမှာ ယန္တရားထိုးရတာ ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国刺符要多少钱？",
+    "de": "Was kostet ein Sak Yant in Thailand?"
+   },
+   "a": {
+    "en": "The Visit Thailand Today guide lists an offering set of about ฿100 to ฿150 at Wat Bang Phra. It lists ฿2,000 to ฿3,500 an hour in Chiang Mai town, offering included. Lay masters charge thousands of baht, and elaborate pieces can reach ฿20,000.",
+    "th": "คู่มือ Visit Thailand Today ระบุชุดเครื่องไหว้ราว ฿100 ถึง ฿150 ที่วัดบางพระ ในตัวเมืองเชียงใหม่ ฿2,000 ถึง ฿3,500 ต่อชั่วโมง รวมเครื่องไหว้ อาจารย์ฆราวาสคิดหลายพันบาท และงานละเอียดอาจถึง ฿20,000",
+    "my": "Visit Thailand Today လမ်းညွှန်က Wat Bang Phra တွင် ပူဇော်ပစ္စည်းအစုံ ฿100 မှ ฿150 ခန့်ဟု ဖော်ပြသည်။ ချင်းမိုင်မြို့တွင်း တစ်နာရီ ฿2,000 မှ ฿3,500 ဖြစ်ပြီး ပူဇော်ပစ္စည်း ပါဝင်သည်။ လူဝတ်ကြောင်ဆရာများက ဘတ်ထောင်ချီ ယူပြီး ရှုပ်ထွေးသောလက်ရာများမှာ ฿20,000 အထိ ရောက်နိုင်သည်။",
+    "zh": "Visit Thailand Today 的指南列出：邦帕寺一套供养品约 ฿100 至 ฿150；清迈市内每小时 ฿2,000 至 ฿3,500，含供养。在家法师收几千泰铢，复杂作品可达 ฿20,000。",
+    "de": "Der Führer von Visit Thailand Today nennt im Wat Bang Phra ein Opferset für etwa ฿100 bis ฿150. In der Stadt Chiang Mai nennt er ฿2,000 bis ฿3,500 pro Stunde, Opfergabe inbegriffen. Weltliche Meister verlangen mehrere tausend Baht, aufwendige Stücke können ฿20,000 erreichen."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "q": {
+    "en": "Can a woman get a sak yant from a monk?",
+    "th": "ผู้หญิงสักยันต์กับพระได้ไหม",
+    "my": "အမျိုးသမီးက ရဟန်းထံမှ ယန္တရားထိုးလို့ရပါသလား။",
+    "zh": "女性可以让僧人刺符吗？",
+    "de": "Kann eine Frau ein Sak Yant von einem Mönch bekommen?"
+   },
+   "a": {
+    "en": "The guide says a monk may not touch a woman. At Wat Bang Phra women are tattooed with a glove and transparent ink. On Chiang Mai temple trips women are tattooed by an ajarn.",
+    "th": "คู่มือระบุว่าพระไม่แตะต้องผู้หญิง ที่วัดบางพระสักให้ผู้หญิงโดยใช้ถุงมือและหมึกใส ส่วนทริปไปวัดจากเชียงใหม่ ผู้หญิงสักกับอาจารย์",
+    "my": "လမ်းညွှန်က ရဟန်းသည် အမျိုးသမီးကို မထိရဟု ဆိုသည်။ Wat Bang Phra တွင် အမျိုးသမီးများကို လက်အိတ်နှင့် ကြည်လင်သောမှင်ဖြင့် ထိုးသည်။ ချင်းမိုင်မှ ဘုရားကျောင်းခရီးများတွင် အမျိုးသမီးများကို ဆရာ (ajarn) က ထိုးသည်။",
+    "zh": "指南说僧人不碰女性。在邦帕寺，女性用手套和透明墨水刺符；清迈的寺庙行程里，女性由法师（ajarn）刺。",
+    "de": "Der Führer schreibt, ein Mönch dürfe eine Frau nicht berühren. Im Wat Bang Phra werden Frauen mit Handschuh und durchsichtiger Tinte tätowiert; auf Tempelfahrten ab Chiang Mai tätowiert sie ein Ajarn."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "q": {
+    "en": "Who chooses the design?",
+    "th": "ใครเป็นคนเลือกลาย",
+    "my": "ဒီဇိုင်းကို ဘယ်သူက ရွေးသလဲ။",
+    "zh": "图案由谁选？",
+    "de": "Wer wählt das Motiv?"
+   },
+   "a": {
+    "en": "At Wat Bang Phra the monk chooses the design, usually the Gao Yord on the upper back for a first tattoo. The guide says there is no say over the design there.",
+    "th": "ที่วัดบางพระ พระเป็นผู้เลือกลาย ส่วนมากเป็นลายเก้ายอดที่หลังส่วนบนสำหรับรอยสักแรก คู่มือระบุว่าที่นั่นเลือกลายเองไม่ได้",
+    "my": "Wat Bang Phra တွင် ရဟန်းက ဒီဇိုင်းကို ရွေးပေးသည်။ ပထမဆုံးအကြိမ်အတွက် ကျောအပေါ်ပိုင်းတွင် Gao Yord ကို ထိုးလေ့ရှိသည်။ ထိုနေရာတွင် ဒီဇိုင်းကို ကိုယ်တိုင် ရွေးခွင့်မရှိဟု လမ်းညွှန်က ဆိုသည်။",
+    "zh": "在邦帕寺，由僧人选定图案，首次通常是上背部的 Gao Yord。指南说在那里对图案没有发言权。",
+    "de": "Im Wat Bang Phra wählt der Mönch das Motiv, bei der ersten Tätowierung meist das Gao Yord auf dem oberen Rücken. Der Führer schreibt, man habe dort kein Mitspracherecht beim Motiv."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "q": {
+    "en": "Do I need to be Buddhist or Thai?",
+    "th": "ต้องเป็นชาวพุทธหรือคนไทยไหม",
+    "my": "ဗုဒ္ဓဘာသာဝင် သို့မဟုတ် ထိုင်းလူမျိုး ဖြစ်ရပါသလား။",
+    "zh": "必须是佛教徒或泰国人吗？",
+    "de": "Muss ich Buddhist oder Thai sein?"
+   },
+   "a": {
+    "en": "No. The guide says foreigners are now much of the queue at Wat Bang Phra, and the masters expect the rules to be kept like anyone else's. Most masters ask for the five Buddhist precepts.",
+    "th": "ไม่ต้อง คู่มือระบุว่าตอนนี้ชาวต่างชาติเป็นสัดส่วนมากของคิวที่วัดบางพระ และอาจารย์คาดหวังให้ถือข้อห้ามเหมือนคนอื่น อาจารย์ส่วนใหญ่ขอให้ถือศีลห้า",
+    "my": "မလိုပါ။ လမ်းညွှန်က ယခုအခါ Wat Bang Phra တွင် တန်းစီသူများ၏ အများစုမှာ နိုင်ငံခြားသားများ ဖြစ်ပြီး ဆရာများက အခြားသူများကဲ့သို့ပင် စည်းကမ်းများကို စောင့်ထိန်းမည်ဟု မျှော်လင့်ကြသည်ဟု ဆိုသည်။ ဆရာအများစုက ငါးပါးသီလကို တောင်းဆိုကြသည်။",
+    "zh": "不必。指南说，现在邦帕寺排队的人里外国人占了很大一部分，法师期望他们和其他人一样守规矩。大多数法师要求守五戒。",
+    "de": "Nein. Der Führer schreibt, Ausländer stellten heute einen grossen Teil der Warteschlange im Wat Bang Phra, und die Meister erwarteten, dass sie die Regeln wie alle anderen einhalten. Die meisten Meister verlangen die fünf buddhistischen Gebote."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "q": {
+    "en": "When is the Wai Khru festival at Wat Bang Phra?",
+    "th": "งานไหว้ครูวัดบางพระจัดเมื่อไร",
+    "my": "Wat Bang Phra ၏ Wai Khru ပွဲတော်က ဘယ်တော့လဲ။",
+    "zh": "邦帕寺的拜师节（Wai Khru）是什么时候？",
+    "de": "Wann ist das Wai-Khru-Fest im Wat Bang Phra?"
+   },
+   "a": {
+    "en": "Once a year, on a Saturday in March set by the lunar calendar. The guide gives 7 March for 2026. Thousands of devotees come to have their tattoos re-blessed. The temple announces each year's date in Thai.",
+    "th": "ปีละครั้ง ในวันเสาร์หนึ่งของเดือนมีนาคมที่กำหนดตามปฏิทินจันทรคติ คู่มือระบุวันที่ 7 มีนาคมสำหรับปี 2026 ผู้ศรัทธานับพันมาให้ปลุกเสกรอยสักซ้ำ วัดประกาศวันที่ของแต่ละปีเป็นภาษาไทย",
+    "my": "တစ်နှစ်လျှင် တစ်ကြိမ်၊ လတွက်ပြက္ခဒိန်ဖြင့် သတ်မှတ်သော မတ်လ စနေနေ့တစ်နေ့တွင် ဖြစ်သည်။ 2026 အတွက် မတ်လ 7 ရက်ဟု လမ်းညွှန်က ဆိုသည်။ ကိုးကွယ်သူ ထောင်ပေါင်းများစွာ လာရောက်ကာ ၎င်းတို့၏ တက်တူးကို ကောင်းချီးပြန်ခံယူကြသည်။ ဘုရားကျောင်းက နှစ်စဉ်ရက်စွဲကို ထိုင်းဘာသာဖြင့် ကြေညာသည်။",
+    "zh": "每年一次，在 3 月的某个星期六，按农历定。指南给出 2026 年是 3 月 7 日。成千上万的信众来重新加持自己的纹身。寺庙用泰语公布每年的日期。",
+    "de": "Einmal im Jahr, an einem Samstag im März, nach dem Mondkalender. Der Führer nennt für 2026 den 7. März. Tausende Gläubige kommen, um ihre Tattoos neu segnen zu lassen. Der Tempel gibt das Datum jedes Jahres auf Thai bekannt."
+   },
+   "src": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  }
+ ],
+ "related": [
+  "pha-yant",
+  "name-charm",
+  "amulet",
+  "date-pick",
+  "interp",
+  "car-guide"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Visit Thailand Today: sak yant meaning, rules and cost",
+    "th": "Visit Thailand Today: ความหมาย กฎ และราคาของสักยันต์",
+    "my": "Visit Thailand Today: ယန္တရားထိုးခြင်း၏ အဓိပ္ပာယ်၊ စည်းကမ်းနှင့် ကုန်ကျစရိတ်",
+    "zh": "Visit Thailand Today：刺符的含义、规矩与费用",
+    "de": "Visit Thailand Today: Bedeutung, Regeln und Kosten des Sak Yant"
+   },
+   "href": "https://www.visitthailandtoday.com/guides/sak-yant-thailand"
+  },
+  {
+   "t": {
+    "en": "Tourism Authority of Thailand newsroom: temple and sacred site etiquette",
+    "th": "ห้องข่าวการท่องเที่ยวแห่งประเทศไทย: มารยาทในวัดและสถานที่ศักดิ์สิทธิ์",
+    "my": "ထိုင်းခရီးသွားလာရေးအာဏာပိုင် သတင်းစာမျက်နှာ: ဘုရားကျောင်းနှင့် မြင့်မြတ်သောနေရာ ကျင့်ဝတ်",
+    "zh": "泰国旅游局新闻室：寺庙与圣地礼仪",
+    "de": "Newsroom der Tourism Authority of Thailand: Etikette in Tempeln und an heiligen Stätten"
+   },
+   "href": "https://www.tatnews.org/2018/08/observing-temple-and-sacred-site-etiquette-while-in-thailand/"
+  }
+ ],
+ "glyphs": [
+  "wai",
+  "pin",
+  "translate"
+ ]
+}

@@ -1,0 +1,313 @@
+{
+ "id": "invoice",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A customer abroad needs an invoice they can open and pay online, and PayPal and Wise each take that payment their own way.",
+  "th": "ลูกค้าต่างประเทศต้องการใบแจ้งหนี้ที่เปิดดูและจ่ายออนไลน์ได้ และ PayPal กับ Wise ต่างมีวิธีรับเงินของตัวเอง",
+  "my": "နိုင်ငံခြားရှိ ဖောက်သည်ကို အွန်လိုင်းမှ ဖွင့်ကြည့်ပြီး ပေးချေနိုင်သော ငွေတောင်းခံလွှာ လိုအပ်ပြီး PayPal နှင့် Wise တို့က ငွေကို မိမိတို့နည်းလမ်းအလိုက် လက်ခံသည်။",
+  "zh": "海外客户需要一张能打开并在线付款的账单，PayPal 和 Wise 各有各的收款方式。",
+  "de": "Ein Kunde im Ausland braucht eine Rechnung, die er öffnen und online bezahlen kann, und PayPal und Wise nehmen die Zahlung auf je eigene Weise an."
+ },
+ "glyphs": [
+  "page",
+  "earth",
+  "coin"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "We make the invoice page for your customer abroad.",
+    "th": "ทำหน้าใบแจ้งหนี้สำหรับลูกค้าต่างประเทศของคุณ",
+    "my": "သင့်နိုင်ငံခြားဖောက်သည်အတွက် ငွေတောင်းခံလွှာစာမျက်နှာ ပြုလုပ်ပေးသည်။",
+    "zh": "为您的海外客户做好账单页。",
+    "de": "Wir erstellen die Rechnungsseite für Ihren Kunden im Ausland."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款之后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "You send the page's address to your customer.",
+    "th": "คุณส่งลิงก์หน้านี้ให้ลูกค้า",
+    "my": "သင်က စာမျက်နှာလင့်ခ်ကို ဖောက်သည်ထံ ပို့သည်။",
+    "zh": "您把页面链接发给客户。",
+    "de": "Sie schicken Ihrem Kunden die Adresse der Seite."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "When you bill",
+    "th": "เมื่อคุณเรียกเก็บเงิน",
+    "my": "ငွေတောင်းခံသည့်အခါ",
+    "zh": "开账单时",
+    "de": "Wenn Sie abrechnen"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Your customer pays by PayPal or Wise.",
+    "th": "ลูกค้าจ่ายผ่าน PayPal หรือ Wise",
+    "my": "ဖောက်သည်က PayPal သို့မဟုတ် Wise ဖြင့် ပေးချေသည်။",
+    "zh": "客户通过 PayPal 或 Wise 付款。",
+    "de": "Ihr Kunde bezahlt über PayPal oder Wise."
+   },
+   "who": {
+    "en": "Your customer",
+    "th": "ลูกค้าของคุณ",
+    "my": "သင့်ဖောက်သည်",
+    "zh": "您的客户",
+    "de": "Ihr Kunde"
+   },
+   "time": {
+    "en": "Online",
+    "th": "ออนไลน์",
+    "my": "အွန်လိုင်းတွင်",
+    "zh": "在线",
+    "de": "Online"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Wise's invoicing article says invoices from a Wise Business account are free to send. It lists no fee for requesting or receiving money by bank transfer or via Wise, except on USD domestic and Swift wires and CAD Swift payments. A customer can pay by card up to the equivalent of 10,000 GBP, at a fee that depends on the card.",
+    "th": "บทความเรื่องใบแจ้งหนี้ของ Wise ระบุว่าส่งใบแจ้งหนี้จากบัญชี Wise Business ได้ฟรี และไม่ระบุค่าธรรมเนียมการขอหรือรับเงินผ่านการโอนธนาคารหรือผ่าน Wise ยกเว้นการโอน USD ในประเทศและ Swift และการจ่าย CAD ผ่าน Swift ลูกค้าจ่ายด้วยบัตรได้ไม่เกินเทียบเท่า 10,000 GBP โดยค่าธรรมเนียมขึ้นอยู่กับบัตรที่ใช้",
+    "my": "Wise ၏ ငွေတောင်းခံလွှာဆိုင်ရာ ဆောင်းပါးက Wise Business အကောင့်မှ ငွေတောင်းခံလွှာများ ပို့ခြင်း အခမဲ့ဖြစ်သည်ဟု ဆိုသည်။ ဘဏ်လွှဲ သို့မဟုတ် Wise မှတစ်ဆင့် ငွေတောင်းခံခြင်း၊ လက်ခံခြင်းအတွက် ကြေးမဖော်ပြဘဲ USD ပြည်တွင်းနှင့် Swift လွှဲငွေများ၊ CAD Swift ငွေပေးချေမှုများသာ ချွင်းချက်ဖြစ်သည်။ ဖောက်သည်က ကတ်ဖြင့် 10,000 GBP နှင့်ညီမျှသည့် ပမာဏအထိ ပေးချေနိုင်ပြီး ကြေးသည် ကတ်အပေါ် မူတည်သည်။",
+    "zh": "Wise 的发票文章说，Wise Business 账户开发票免费。通过银行转账或 Wise 请求、收款未列手续费，美元境内转账与 Swift 电汇以及加元 Swift 付款除外。客户可用银行卡付款，上限约合 10,000 英镑，费用取决于所用的卡。",
+    "de": "Laut Wises Artikel zu Rechnungen ist der Versand aus einem Wise-Business-Konto kostenlos. Für das Anfordern und Empfangen von Geld per Banküberweisung oder über Wise nennt Wise keine Gebühr, ausser bei USD-Inlands- und Swift-Überweisungen und bei CAD-Swift-Zahlungen. Per Karte zahlt ein Kunde bis zum Gegenwert von 10,000 GBP, die Gebühr hängt von der Karte ab."
+   },
+   "src": "https://wise.com/gb/blog/create-invoices-with-wise"
+  },
+  {
+   "t": {
+    "en": "PayPal Thailand's fee page lists a withdrawal to a Thai bank account as free for ฿5,000 or more and ฿50 under ฿5,000, when no currency conversion is involved.",
+    "th": "หน้าค่าธรรมเนียมของ PayPal ประเทศไทยระบุว่าถอนเข้าบัญชีธนาคารไทยตั้งแต่ ฿5,000 ขึ้นไปไม่มีค่าธรรมเนียม ต่ำกว่า ฿5,000 คิด ฿50 เมื่อไม่มีการแปลงสกุลเงิน",
+    "my": "PayPal ထိုင်းနိုင်ငံ၏ ကြေးစာမျက်နှာတွင် ငွေကူးပြောင်းခြင်းမပါလျှင် ထိုင်းဘဏ်အကောင့်သို့ ထုတ်ယူရာ၌ ฿5,000 နှင့်အထက်ဆိုလျှင် အခမဲ့၊ ฿5,000 အောက်ဆိုလျှင် ฿50 ဟု ဖော်ပြထားသည်။",
+    "zh": "PayPal 泰国的费率页列明：提现到泰国银行账户，在不涉及货币兑换时，฿5,000 及以上免费，不足 ฿5,000 收 ฿50。",
+    "de": "Auf der Gebührenseite von PayPal Thailand kostet eine Auszahlung auf ein thailändisches Bankkonto ab ฿5,000 nichts und darunter ฿50, sofern keine Währung umgerechnet wird."
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "t": {
+    "en": "A Thai tax resident who brings foreign income into Thailand from 1 January 2024 pays Thai personal income tax on it, whatever the tax year it was earned in. A later instruction (DI 162/2566) says this does not apply to income earned before 1 January 2024.",
+    "th": "ผู้มีถิ่นที่อยู่ทางภาษีของไทยที่นำเงินได้จากต่างประเทศเข้ามาในไทยตั้งแต่ 1 มกราคม 2567 เสียภาษีเงินได้บุคคลธรรมดาของไทยจากเงินได้นั้น ไม่ว่าจะได้รับในปีภาษีใด คำสั่งกรมสรรพากรฉบับต่อมา (ป.162/2566) ระบุว่าไม่ใช้กับเงินได้ที่เกิดขึ้นก่อน 1 มกราคม 2567",
+    "my": "ထိုင်းအခွန်နေထိုင်သူတစ်ဦးက 2024 ဇန်နဝါရီ 1 မှစ၍ နိုင်ငံခြားဝင်ငွေကို ထိုင်းနိုင်ငံသို့ ယူလာလျှင် ၎င်းဝင်ငွေရရှိခဲ့သည့် အခွန်နှစ်ကို မခွဲခြားဘဲ ထိုင်းပုဂ္ဂိုလ်ရေးဝင်ငွေခွန် ပေးရသည်။ နောက်ပိုင်းညွှန်ကြားချက် (DI 162/2566) က 2024 ဇန်နဝါရီ 1 မတိုင်မီ ရရှိသော ဝင်ငွေများတွင် မသက်ဆိုင်ဟု ဆိုသည်။",
+    "zh": "泰国税务居民自 2024 年 1 月 1 日起把境外收入汇入泰国，须就这笔收入缴泰国个人所得税，不论它属于哪个纳税年度。后来的一份指令（DI 162/2566）说明，这不适用于 2024 年 1 月 1 日之前取得的收入。",
+    "de": "Wer in Thailand steuerlich ansässig ist und ab dem 1. Januar 2024 Einkommen aus dem Ausland nach Thailand bringt, zahlt darauf thailändische Einkommensteuer, unabhängig vom Steuerjahr, in dem es erzielt wurde. Eine spätere Anweisung (DI 162/2566) sagt, dass dies nicht für Einkommen gilt, das vor dem 1. Januar 2024 erzielt wurde."
+   },
+   "src": "https://kpmg.com/xx/en/home/insights/2023/12/flash-alert-2023-238.html"
+  },
+  {
+   "t": {
+    "en": "A Thai VAT registrant's tax invoice shows the words \"Tax invoice\", the seller's name, address and tax ID, the buyer's name and address, a description with value and quantity, the VAT amount and the date.",
+    "th": "ใบกำกับภาษีของผู้ประกอบการที่จดภาษีมูลค่าเพิ่มในไทยมีคำว่า \"ใบกำกับภาษี\" ชื่อ ที่อยู่ และเลขประจำตัวผู้เสียภาษีของผู้ขาย ชื่อและที่อยู่ของผู้ซื้อ รายการพร้อมมูลค่าและจำนวน ภาษีมูลค่าเพิ่ม และวันที่ออก",
+    "my": "VAT မှတ်ပုံတင်ထားသော ထိုင်းလုပ်ငန်းတစ်ခု၏ အခွန်ငွေတောင်းခံလွှာတွင် \"Tax invoice\" စာလုံး၊ ရောင်းသူ၏ အမည်၊ လိပ်စာ၊ အခွန်အိုင်ဒီ၊ ဝယ်သူ၏ အမည်၊ လိပ်စာ၊ တန်ဖိုးနှင့် အရေအတွက်ပါသော ဖော်ပြချက်၊ VAT ပမာဏနှင့် ရက်စွဲတို့ ပါသည်။",
+    "zh": "泰国增值税登记商户开具的税务发票载明“Tax invoice”字样、卖方的名称、地址和税号、买方的名称和地址、含金额和数量的品名、增值税额以及日期。",
+    "de": "Die Steuerrechnung eines in Thailand mehrwertsteuerpflichtigen Unternehmens trägt die Worte «Tax invoice», Name, Adresse und Steuernummer des Verkäufers, Name und Adresse des Käufers, eine Beschreibung mit Wert und Menge, den Mehrwertsteuerbetrag und das Datum."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  },
+  {
+   "t": {
+    "en": "Services rendered in Thailand and used outside Thailand are zero-rated for VAT, under rules the Director-General sets.",
+    "th": "บริการที่ทำในไทยและใช้ประโยชน์นอกประเทศไทยเสียภาษีมูลค่าเพิ่มอัตราศูนย์ ตามหลักเกณฑ์ที่อธิบดีกำหนด",
+    "my": "ထိုင်းနိုင်ငံတွင် ဆောင်ရွက်ပြီး ထိုင်းပြင်ပတွင် အသုံးပြုသည့် ဝန်ဆောင်မှုများကို ညွှန်ကြားရေးမှူးချုပ်သတ်မှတ်သည့် စည်းမျဉ်းများအရ VAT သုည (zero-rated) နှုန်းထားဖြင့် ကောက်ခံသည်။",
+    "zh": "在泰国提供、在泰国境外使用的服务，按税务局局长规定的规则适用增值税零税率。",
+    "de": "Dienstleistungen, die in Thailand erbracht und ausserhalb Thailands genutzt werden, unterliegen der Mehrwertsteuer zum Nullsatz, nach Regeln, die der Generaldirektor festlegt."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "PayPal Thailand: a payment received on a request for payment (a commercial transaction)",
+    "th": "PayPal ประเทศไทย: รับเงินตามคำขอชำระเงิน (ธุรกรรมเชิงพาณิชย์)",
+    "my": "PayPal ထိုင်း - ငွေပေးချေရန် တောင်းခံမှုအရ လက်ခံသောငွေ (စီးပွားဖြစ်ငွေလွှဲ)",
+    "zh": "PayPal 泰国：按收款请求收到的款项（商业交易）",
+    "de": "PayPal Thailand: Zahlung auf eine Zahlungsaufforderung (gewerbliche Transaktion)"
+   },
+   "p": {
+    "en": "4.40% + ฿11 from outside Thailand, 3.90% + ฿11 inside",
+    "th": "4.40% + ฿11 จากนอกประเทศ 3.90% + ฿11 ในประเทศ",
+    "my": "ထိုင်းပြင်ပမှ 4.40% + ฿11၊ ထိုင်းတွင်းမှ 3.90% + ฿11",
+    "zh": "境外来款 4.40% + ฿11，境内 3.90% + ฿11",
+    "de": "4.40 % + ฿11 aus dem Ausland, 3.90 % + ฿11 im Inland"
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "t": {
+    "en": "Wise: an invoice paid by bank transfer or via Wise",
+    "th": "Wise: ใบแจ้งหนี้ที่จ่ายด้วยการโอนธนาคารหรือผ่าน Wise",
+    "my": "Wise - ဘဏ်လွှဲ သို့မဟုတ် Wise ဖြင့် ပေးချေသော ငွေတောင်းခံလွှာ",
+    "zh": "Wise：通过银行转账或 Wise 支付的账单",
+    "de": "Wise: Rechnung, per Banküberweisung oder über Wise bezahlt"
+   },
+   "p": {
+    "en": "No fee listed; a card payment's fee depends on the card",
+    "th": "ไม่ระบุค่าธรรมเนียม ส่วนการจ่ายด้วยบัตรขึ้นอยู่กับบัตร",
+    "my": "ကြေးမဖော်ပြ၊ ကတ်ဖြင့်ပေးလျှင် ကတ်အလိုက်",
+    "zh": "未列手续费；银行卡付款的费用取决于卡",
+    "de": "Keine Gebühr genannt; bei Kartenzahlung hängt sie von der Karte ab"
+   },
+   "src": "https://wise.com/gb/blog/create-invoices-with-wise"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer's billing documents: quotation, invoice, receipt",
+    "th": "ฟรีแลนซ์ Fastwork ทำเอกสารวางบิล: ใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จ",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး၏ ငွေတောင်းခံစာရွက်စာတမ်းများ - ဈေးနှုန်းလွှာ၊ ငွေတောင်းခံလွှာ၊ ပြေစာ",
+    "zh": "Fastwork 自由职业者做账单文件：报价单、发票、收据",
+    "de": "Abrechnungsunterlagen eines Fastwork-Freelancers: Angebot, Rechnung, Quittung"
+   },
+   "p": {
+    "en": "฿250 a set, ฿1,500 a week, ฿5,000 a month",
+    "th": "฿250 ต่อชุด ฿1,500 ต่อสัปดาห์ ฿5,000 ต่อเดือน",
+    "my": "တစ်စုံလျှင် ฿250၊ တစ်ပတ်လျှင် ฿1,500၊ တစ်လလျှင် ฿5,000",
+    "zh": "每套 ฿250，每周 ฿1,500，每月 ฿5,000",
+    "de": "฿250 pro Satz, ฿1,500 pro Woche, ฿5,000 pro Monat"
+   },
+   "src": "https://fastwork.co/user/diadear_/typing-and-data-entry-17279412"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer's one-page site (domain and hosting not included)",
+    "th": "เว็บหน้าเดียวจากฟรีแลนซ์ Fastwork (ไม่รวมโดเมนและโฮสติ้ง)",
+    "my": "Fastwork ဖရီးလန်စာ၏ တစ်မျက်နှာတည်းဝက်ဘ်ဆိုက် (ဒိုမိန်းနှင့် ဟိုစ်တင် မပါ)",
+    "zh": "Fastwork 自由职业者做的单页网站（不含域名和主机）",
+    "de": "Einseitige Website eines Fastwork-Freelancers (ohne Domain und Hosting)"
+   },
+   "p": {
+    "en": "฿1,500 for one page, ฿3,500 for three to five pages",
+    "th": "฿1,500 หนึ่งหน้า ฿3,500 สามถึงห้าหน้า",
+    "my": "တစ်မျက်နှာ ฿1,500၊ သုံးမှငါးမျက်နှာ ฿3,500",
+    "zh": "单页 ฿1,500，三到五页 ฿3,500",
+    "de": "฿1,500 für eine Seite, ฿3,500 für drei bis fünf Seiten"
+   },
+   "src": "https://fastwork.co/user/poommer/web-development-45714980"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a PayPal invoice cost in Thailand?",
+    "th": "ใบแจ้งหนี้ PayPal ในไทยมีค่าธรรมเนียมเท่าไร",
+    "my": "PayPal ငွေတောင်းခံလွှာ ထိုင်းတွင် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在泰国用 PayPal 开账单要多少钱？",
+    "de": "Was kostet eine PayPal-Rechnung in Thailand?"
+   },
+   "a": {
+    "en": "PayPal Thailand's fee page lists no separate invoicing fee. A payment received on a request for payment counts as a commercial transaction: 3.90% + ฿11 from inside Thailand and 4.40% + ฿11 from outside.",
+    "th": "หน้าค่าธรรมเนียมของ PayPal ประเทศไทยไม่ระบุค่าธรรมเนียมใบแจ้งหนี้แยกต่างหาก การรับเงินตามคำขอชำระเงินนับเป็นธุรกรรมเชิงพาณิชย์ 3.90% + ฿11 จากในประเทศ และ 4.40% + ฿11 จากต่างประเทศ",
+    "my": "PayPal ထိုင်း၏ ကြေးစာမျက်နှာတွင် ငွေတောင်းခံလွှာအတွက် သီးသန့်ကြေး မဖော်ပြပါ။ ငွေပေးချေရန် တောင်းခံမှုအရ လက်ခံသောငွေကို စီးပွားဖြစ်ငွေလွှဲအဖြစ် သတ်မှတ်ပြီး ထိုင်းတွင်းမှ 3.90% + ฿11၊ ပြင်ပမှ 4.40% + ฿11 ဖြစ်သည်။",
+    "zh": "PayPal 泰国的费率页没有单列账单费用。按收款请求收到的款项算商业交易：境内 3.90% + ฿11，境外 4.40% + ฿11。",
+    "de": "Die Gebührenseite von PayPal Thailand nennt keine eigene Rechnungsgebühr. Eine Zahlung auf eine Zahlungsaufforderung gilt als gewerbliche Transaktion: 3.90 % + ฿11 aus Thailand und 4.40 % + ฿11 aus dem Ausland."
+   },
+   "src": "https://www.paypal.com/th/business/paypal-business-fees"
+  },
+  {
+   "q": {
+    "en": "What does a Wise invoice cost?",
+    "th": "ใบแจ้งหนี้ Wise มีค่าใช้จ่ายเท่าไร",
+    "my": "Wise ငွေတောင်းခံလွှာ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "用 Wise 开账单要多少钱？",
+    "de": "Was kostet eine Wise-Rechnung?"
+   },
+   "a": {
+    "en": "Wise's invoicing article says sending invoices is free and lists no fee for receiving money by bank transfer or via Wise, with exceptions for USD wires and CAD Swift. A card payment carries a fee that depends on the card, up to the equivalent of 10,000 GBP per transfer.",
+    "th": "บทความของ Wise ระบุว่าส่งใบแจ้งหนี้ได้ฟรีและไม่ระบุค่าธรรมเนียมรับเงินผ่านการโอนธนาคารหรือผ่าน Wise ยกเว้นการโอน USD แบบ wire และ CAD Swift การจ่ายด้วยบัตรมีค่าธรรมเนียมตามบัตร และจ่ายได้ไม่เกินเทียบเท่า 10,000 GBP ต่อรายการ",
+    "my": "Wise ၏ ဆောင်းပါးက ငွေတောင်းခံလွှာ ပို့ခြင်း အခမဲ့ဖြစ်ပြီး ဘဏ်လွှဲ သို့မဟုတ် Wise မှတစ်ဆင့် ငွေလက်ခံခြင်းအတွက် ကြေးမဖော်ပြဘဲ USD wire နှင့် CAD Swift တို့သာ ချွင်းချက်ဖြစ်သည်ဟု ဆိုသည်။ ကတ်ဖြင့် ပေးချေမှုတွင် ကတ်အလိုက် ကြေးရှိပြီး တစ်ကြိမ်လျှင် 10,000 GBP နှင့်ညီမျှသည့် ပမာဏအထိ ဖြစ်သည်။",
+    "zh": "Wise 的文章说，开发票免费；通过银行转账或 Wise 收款未列手续费，美元电汇和加元 Swift 除外。银行卡付款的费用取决于卡，每笔上限约合 10,000 英镑。",
+    "de": "Wises Artikel sagt, der Versand von Rechnungen sei kostenlos, und nennt keine Gebühr für den Empfang per Banküberweisung oder über Wise, mit Ausnahmen für USD-Überweisungen und CAD-Swift. Eine Kartenzahlung kostet je nach Karte etwas und geht bis zum Gegenwert von 10,000 GBP pro Überweisung."
+   },
+   "src": "https://wise.com/gb/blog/create-invoices-with-wise"
+  },
+  {
+   "q": {
+    "en": "Is money from abroad taxed in Thailand?",
+    "th": "เงินที่รับจากต่างประเทศต้องเสียภาษีในไทยไหม",
+    "my": "နိုင်ငံခြားမှ ရသောငွေကို ထိုင်းတွင် အခွန်ကောက်သလား",
+    "zh": "来自海外的款项要在泰国交税吗？",
+    "de": "Wird Geld aus dem Ausland in Thailand besteuert?"
+   },
+   "a": {
+    "en": "For a Thai tax resident, KPMG's alert says foreign income brought into Thailand from 1 January 2024 is subject to Thai personal income tax, whatever the tax year it was earned in. A later instruction leaves out income earned before that date.",
+    "th": "สำหรับผู้มีถิ่นที่อยู่ทางภาษีของไทย บทความของ KPMG ระบุว่าเงินได้จากต่างประเทศที่นำเข้ามาในไทยตั้งแต่ 1 มกราคม 2567 ต้องเสียภาษีเงินได้บุคคลธรรมดาของไทย ไม่ว่าจะได้รับในปีภาษีใด คำสั่งฉบับต่อมาไม่รวมเงินได้ที่เกิดก่อนวันนั้น",
+    "my": "ထိုင်းအခွန်နေထိုင်သူအတွက် KPMG ၏ သတိပေးစာက 2024 ဇန်နဝါရီ 1 မှစ၍ ထိုင်းသို့ ယူလာသော နိုင်ငံခြားဝင်ငွေသည် ရရှိသည့် အခွန်နှစ်ကို မခွဲခြားဘဲ ထိုင်းပုဂ္ဂိုလ်ရေးဝင်ငွေခွန် ပေးရမည်ဟု ဆိုသည်။ နောက်ပိုင်းညွှန်ကြားချက်က ထိုရက်မတိုင်မီ ရရှိသောဝင်ငွေကို ချန်လှပ်ထားသည်။",
+    "zh": "对泰国税务居民，毕马威的快讯写道，2024 年 1 月 1 日起汇入泰国的境外收入须缴泰国个人所得税，不论属于哪个纳税年度。后来的一份指令把该日期之前取得的收入排除在外。",
+    "de": "Für in Thailand steuerlich Ansässige schreibt der Hinweis von KPMG, dass ab dem 1. Januar 2024 nach Thailand gebrachtes Auslandseinkommen der thailändischen Einkommensteuer unterliegt, unabhängig vom Steuerjahr. Eine spätere Anweisung nimmt Einkommen aus der Zeit davor aus."
+   },
+   "src": "https://kpmg.com/xx/en/home/insights/2023/12/flash-alert-2023-238.html"
+  },
+  {
+   "q": {
+    "en": "Does an invoice to a customer abroad carry VAT?",
+    "th": "ใบแจ้งหนี้ถึงลูกค้าต่างประเทศมีภาษีมูลค่าเพิ่มไหม",
+    "my": "နိုင်ငံခြားဖောက်သည်သို့ ငွေတောင်းခံလွှာတွင် VAT ပါသလား",
+    "zh": "开给海外客户的账单要加增值税吗？",
+    "de": "Enthält eine Rechnung an einen Kunden im Ausland Mehrwertsteuer?"
+   },
+   "a": {
+    "en": "Services rendered in Thailand and used outside Thailand are zero-rated, under rules the Director-General sets. A business registers for VAT within 30 days after its turnover passes ฿1.8 million.",
+    "th": "บริการที่ทำในไทยและใช้ประโยชน์นอกประเทศไทยเสียภาษีมูลค่าเพิ่มอัตราศูนย์ ตามหลักเกณฑ์ที่อธิบดีกำหนด ธุรกิจจดทะเบียนภาษีมูลค่าเพิ่มภายใน 30 วันหลังรายได้เกิน ฿1.8 ล้าน",
+    "my": "ထိုင်းနိုင်ငံတွင် ဆောင်ရွက်ပြီး ထိုင်းပြင်ပတွင် အသုံးပြုသည့် ဝန်ဆောင်မှုများကို ညွှန်ကြားရေးမှူးချုပ်သတ်မှတ်သည့် စည်းမျဉ်းများအရ VAT သုည နှုန်းထားဖြင့် ကောက်ခံသည်။ ဝင်ငွေ ฿1.8 သန်း ကျော်ပြီး ရက် 30 အတွင်း လုပ်ငန်းသည် VAT မှတ်ပုံတင်ရသည်။",
+    "zh": "在泰国提供、在泰国境外使用的服务，按税务局局长规定的规则适用零税率。营业额超过 ฿180 万后 30 天内，企业登记增值税。",
+    "de": "Dienstleistungen, die in Thailand erbracht und ausserhalb Thailands genutzt werden, unterliegen dem Nullsatz, nach Regeln, die der Generaldirektor festlegt. Ein Unternehmen meldet sich binnen 30 Tagen zur Mehrwertsteuer an, wenn sein Umsatz ฿1.8 Millionen übersteigt."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  }
+ ],
+ "related": [
+  "merchant",
+  "books",
+  "bank-account",
+  "exchange",
+  "online-shop",
+  "paybox"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Wise: create invoices and get paid",
+    "th": "Wise: สร้างใบแจ้งหนี้และรับเงิน",
+    "my": "Wise - ငွေတောင်းခံလွှာ ပြုလုပ်ပြီး ငွေလက်ခံခြင်း",
+    "zh": "Wise：开账单并收款",
+    "de": "Wise: Rechnungen erstellen und bezahlt werden"
+   },
+   "href": "https://wise.com/gb/blog/create-invoices-with-wise"
+  },
+  {
+   "t": {
+    "en": "Revenue Department: VAT in Thailand",
+    "th": "กรมสรรพากร: ภาษีมูลค่าเพิ่มในไทย",
+    "my": "ထိုင်းအခွန်ဦးစီးဌာန - ထိုင်းနိုင်ငံ VAT",
+    "zh": "泰国税务局：增值税",
+    "de": "Steuerbehörde Thailands: Mehrwertsteuer"
+   },
+   "href": "https://www.rd.go.th/english/6043.html"
+  }
+ ]
+}

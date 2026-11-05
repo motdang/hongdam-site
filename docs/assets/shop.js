@@ -650,7 +650,7 @@ function ladders(root = document) {
 }
 
 // Search, on any page that has the box: every language's words, whatever the page's language.
-const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${c.go ? `<a href="${esc(c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
+const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${(c.page || c.go) ? `<a href="${esc(c.page || c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
   (c.walk ? `<details class="ladder" data-svc="${esc(c.walk)}" hidden></details>` : '') +
   (c.go ? shareHtml(c) + `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
 // the card's Share button, as tools/build_shop.py share_btn() writes it; assets/share.js does the sharing

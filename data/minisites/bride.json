@@ -1,0 +1,831 @@
+{
+ "id": "bride",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A bride's day has a dress, hair and makeup, fittings, a photographer and a schedule. Someone else books and arranges them.",
+  "th": "วันของเจ้าสาวมีทั้งชุด ผมและหน้า การลองชุด ช่างภาพ และตารางเวลา บริการนี้จองและจัดเรื่องเหล่านี้ให้",
+  "my": "သတို့သမီး၏ နေ့တွင် ဝတ်စုံ၊ ဆံပင်နှင့် မျက်နှာအလှပြင်ခြင်း၊ စမ်းဝတ်ခြင်း၊ ဓာတ်ပုံဆရာနှင့် အချိန်ဇယားတို့ ပါဝင်သည်။ ဤဝန်ဆောင်မှုက ၎င်းတို့ကို မှာယူပြီး စီစဉ်ပေးသည်။",
+  "zh": "新娘的一天包括礼服、发型化妆、试衣、摄影师和日程。这项服务负责预订并安排这些事项。",
+  "de": "Der Tag der Braut besteht aus Kleid, Haaren und Make-up, Anproben, Fotograf und Ablauf. Dieser Service bucht und ordnet das."
+ },
+ "n": {
+  "de": "Braut-Concierge"
+ },
+ "l": {
+  "de": "Kleid, Haare, Make-up, Anproben, Fotograf und der Ablauf Ihres Tages."
+ },
+ "steps": [
+  {
+   "db": "crown",
+   "t": {
+    "en": "The dress is chosen and booked, hired or bought",
+    "th": "เลือกและจองชุด จะเช่าหรือซื้อก็ได้",
+    "my": "ဝတ်စုံကို ရွေးချယ်ပြီး မှာယူခြင်း (ငှားရမ်းခြင်း သို့မဟုတ် ဝယ်ယူခြင်း)",
+    "zh": "选定并预订礼服，租或买均可",
+    "de": "Das Kleid wird ausgesucht und gebucht, gemietet oder gekauft"
+   },
+   "who": {
+    "en": "Hongdam, with you and the shop",
+    "th": "หงส์ดำ ร่วมกับคุณและร้านชุด",
+    "my": "ဟုန်ဒမ်၊ သင်နှင့် ဝတ်စုံဆိုင်",
+    "zh": "鸿丹，与您和礼服店",
+    "de": "Hongdam, mit Ihnen und dem Geschäft"
+   },
+   "time": {
+    "en": "First",
+    "th": "เป็นขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "scissors",
+   "t": {
+    "en": "Fittings are booked",
+    "th": "จองคิวลองชุด",
+    "my": "စမ်းဝတ်ခြင်းအတွက် ရက်ချိန်းယူခြင်း",
+    "zh": "预约试衣",
+    "de": "Die Anproben werden gebucht"
+   },
+   "who": {
+    "en": "Hongdam, the shop or tailor",
+    "th": "หงส์ดำ ร้านชุดหรือช่างตัดเย็บ",
+    "my": "ဟုန်ဒမ်၊ ဆိုင် သို့မဟုတ် ချုပ်ဆရာ",
+    "zh": "鸿丹，礼服店或裁缝",
+    "de": "Hongdam, das Geschäft oder die Schneiderei"
+   },
+   "time": {
+    "en": "In the weeks before the day",
+    "th": "ในสัปดาห์ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့မတိုင်မီ သီတင်းပတ်များတွင်",
+    "zh": "婚礼前的几周",
+    "de": "In den Wochen vor dem Tag"
+   }
+  },
+  {
+   "db": "sparkle",
+   "t": {
+    "en": "The hair and makeup artist is booked",
+    "th": "จองช่างทำผมและแต่งหน้า",
+    "my": "ဆံပင်နှင့် မျက်နှာအလှပြင် ဆရာကို ရက်ချိန်းယူခြင်း",
+    "zh": "预订发型化妆师",
+    "de": "Der Termin für Haare und Make-up wird gebucht"
+   },
+   "who": {
+    "en": "Hongdam, the artist",
+    "th": "หงส์ดำ ช่างแต่งหน้าทำผม",
+    "my": "ဟုန်ဒမ်၊ အလှပြင်ဆရာ",
+    "zh": "鸿丹，化妆师",
+    "de": "Hongdam, die Stylistin oder der Stylist"
+   },
+   "time": {
+    "en": "Ahead of the day",
+    "th": "ล่วงหน้าก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့မတိုင်မီ ကြိုတင်၍",
+    "zh": "在婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "The photographer is booked",
+    "th": "จองช่างภาพ",
+    "my": "ဓာတ်ပုံဆရာကို ရက်ချိန်းယူခြင်း",
+    "zh": "预订摄影师",
+    "de": "Der Fotograf wird gebucht"
+   },
+   "who": {
+    "en": "Hongdam, the photographer",
+    "th": "หงส์ดำ ช่างภาพ",
+    "my": "ဟုန်ဒမ်၊ ဓာတ်ပုံဆရာ",
+    "zh": "鸿丹，摄影师",
+    "de": "Hongdam, der Fotograf"
+   },
+   "time": {
+    "en": "Ahead of the day",
+    "th": "ล่วงหน้าก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့မတိုင်မီ ကြိုတင်၍",
+    "zh": "在婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The vendors' fees are charged at cost",
+    "th": "ค่าบริการของผู้ให้บริการคิดตามจริง",
+    "my": "ဝန်ဆောင်သူများ၏ ဝန်ဆောင်ခကို အမှန်ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်",
+    "zh": "供应商费用按实际成本收取",
+    "de": "Die Gebühren der Dienstleister werden zum Selbstkostenpreis berechnet"
+   },
+   "who": {
+    "en": "The vendors",
+    "th": "ผู้ให้บริการ",
+    "my": "ဝန်ဆောင်သူများ",
+    "zh": "供应商",
+    "de": "Die Dienstleister"
+   },
+   "time": {
+    "en": "Per vendor",
+    "th": "ตามแต่ละราย",
+    "my": "ဝန်ဆောင်သူ တစ်ဦးချင်းအလိုက်",
+    "zh": "按供应商分别计",
+    "de": "Je Dienstleister"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "Your schedule for the day is set",
+    "th": "จัดตารางเวลาของคุณในวันงาน",
+    "my": "မင်္ဂလာနေ့အတွက် သင့်အချိန်ဇယားကို သတ်မှတ်ပေးသည်",
+    "zh": "安排您当天的日程",
+    "de": "Der Zeitplan Ihres Tages wird festgelegt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "For the wedding day",
+    "th": "สำหรับวันงาน",
+    "my": "မင်္ဂလာနေ့အတွက်",
+    "zh": "为婚礼当天",
+    "de": "Für den Hochzeitstag"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "฿3,500–28,000",
+   "t": {
+    "en": "Starting prices to hire a bridal gown at Chiang Mai shops",
+    "th": "ราคาเริ่มต้นสำหรับเช่าชุดเจ้าสาวที่ร้านในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ ဆိုင်များတွင် သတို့သမီးဂါဝန် ငှားရမ်းရန် စတင်စျေးနှုန်း",
+    "zh": "清迈店铺的婚纱租赁起步价",
+    "de": "Startpreise für die Miete eines Brautkleids in Chiang Mai"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "n": "2",
+   "t": {
+    "en": "Wedding outfits a couple prepares at the least",
+    "th": "จำนวนชุดแต่งงานอย่างน้อยที่คู่บ่าวสาวต้องเตรียม",
+    "my": "စုံတွဲတစ်တွဲ အနည်းဆုံး ပြင်ဆင်ရသည့် မင်္ဂလာဝတ်စုံအရေအတွက်",
+    "zh": "新人至少要准备的礼服套数",
+    "de": "Hochzeitsoutfits, die ein Paar mindestens vorbereitet"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "n": "฿4,000",
+   "t": {
+    "en": "Hair and makeup together for the bride, listed by two Chiang Mai artists",
+    "th": "ทำผมและแต่งหน้าเจ้าสาวรวมกัน ตามที่ช่างในเชียงใหม่ 2 รายระบุไว้",
+    "my": "သတို့သမီး ဆံပင်နှင့် မျက်နှာအလှပြင် ပေါင်း - ချင်းမိုင်ရှိ အလှပြင်ဆရာ 2 ဦး ဖော်ပြထားသည့် စျေး",
+    "zh": "新娘发型加化妆合计，两位清迈化妆师标明的价格",
+    "de": "Haare und Make-up der Braut zusammen, bei zwei Artists in Chiang Mai angegeben"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+  },
+  {
+   "n": "฿8,500–17,500",
+   "t": {
+    "en": "Photographer for one day: median low and median high of the 36 Chiang Mai listings that give a range",
+    "th": "ช่างภาพหนึ่งวัน: ค่ามัธยฐานของราคาต่ำและราคาสูงจาก 36 รายในเชียงใหม่ที่ระบุเป็นช่วง",
+    "my": "ဓာတ်ပုံဆရာ တစ်ရက် - စျေးနှုန်းအပိုင်းအခြား ဖော်ပြသည့် ချင်းမိုင် 36 ဦး၏ အနိမ့်နှင့် အမြင့် အလယ်တန်ဖိုး",
+    "zh": "摄影师一天：清迈36家标明价格区间者的低价中位数与高价中位数",
+    "de": "Fotograf für einen Tag: Median der unteren und der oberen Preise von 36 Anbietern in Chiang Mai mit Preisspanne"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What the bride's day costs",
+   "th": "วันของเจ้าสาวมีค่าใช้จ่ายเท่าไหร่",
+   "my": "သတို့သမီး၏ နေ့ ကုန်ကျစရိတ်",
+   "zh": "新娘这一天要花多少",
+   "de": "Was der Tag der Braut kostet"
+  },
+  "noscript": {
+   "en": "The cost builder needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณค่าใช้จ่ายต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ကုန်ကျစရိတ်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "费用计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Kostenrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "sliders": [],
+   "choices": [
+    {
+     "id": "ceremony",
+     "n": {
+      "en": "Ceremony",
+      "th": "พิธี",
+      "my": "အခမ်းအနား",
+      "zh": "仪式",
+      "de": "Zeremonie"
+     },
+     "options": [
+      {
+       "id": "thai",
+       "n": {
+        "en": "Thai morning",
+        "th": "พิธีเช้าแบบไทย",
+        "my": "ထိုင်းရိုးရာ မနက်ပိုင်း",
+        "zh": "泰式晨间仪式",
+        "de": "Thailändischer Morgen"
+       }
+      },
+      {
+       "id": "western",
+       "n": {
+        "en": "Western evening",
+        "th": "งานเย็นแบบตะวันตก",
+        "my": "အနောက်တိုင်း ညနေပိုင်း",
+        "zh": "西式晚宴",
+        "de": "Westlicher Abend"
+       }
+      },
+      {
+       "id": "both",
+       "n": {
+        "en": "Both",
+        "th": "ทั้งสองแบบ",
+        "my": "နှစ်မျိုးလုံး",
+        "zh": "两者都办",
+        "de": "Beides"
+       }
+      }
+     ],
+     "start": "both"
+    },
+    {
+     "id": "dress",
+     "n": {
+      "en": "Western gown",
+      "th": "ชุดเจ้าสาวตะวันตก",
+      "my": "အနောက်တိုင်း ဂါဝန်",
+      "zh": "西式婚纱",
+      "de": "Westliches Brautkleid"
+     },
+     "options": [
+      {
+       "id": "hire",
+       "n": {
+        "en": "Hire",
+        "th": "เช่า",
+        "my": "ငှားရမ်းမည်",
+        "zh": "租",
+        "de": "Mieten"
+       }
+      },
+      {
+       "id": "buy",
+       "n": {
+        "en": "Buy or have made",
+        "th": "ซื้อหรือสั่งตัด",
+        "my": "ဝယ်ယူ သို့မဟုတ် တိုင်းချုပ်",
+        "zh": "购买或定制",
+        "de": "Kaufen oder anfertigen"
+       }
+      }
+     ],
+     "start": "hire"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Western gown, hired",
+      "th": "ชุดเจ้าสาวตะวันตก แบบเช่า",
+      "my": "အနောက်တိုင်း ဂါဝန်၊ ငှားရမ်း",
+      "zh": "西式婚纱，租用",
+      "de": "Westliches Brautkleid, gemietet"
+     },
+     "range": [
+      3500,
+      28000
+     ],
+     "per": [],
+     "when": {
+      "ceremony": [
+       "western",
+       "both"
+      ],
+      "dress": [
+       "hire"
+      ]
+     },
+     "save": false,
+     "src": "https://www.centerwedding.com/chiang-mai/salon/"
+    },
+    {
+     "n": {
+      "en": "Western gown, bought or made to measure",
+      "th": "ชุดเจ้าสาวตะวันตก แบบซื้อหรือสั่งตัด",
+      "my": "အနောက်တိုင်း ဂါဝန်၊ ဝယ်ယူ သို့မဟုတ် တိုင်းချုပ်",
+      "zh": "西式婚纱，购买或量身定做",
+      "de": "Westliches Brautkleid, gekauft oder nach Mass gefertigt"
+     },
+     "range": [
+      10000,
+      100000
+     ],
+     "per": [],
+     "when": {
+      "ceremony": [
+       "western",
+       "both"
+      ],
+      "dress": [
+       "buy"
+      ]
+     },
+     "save": false,
+     "src": "https://www.centerwedding.com/chiang-mai/salon/"
+    },
+    {
+     "n": {
+      "en": "Thai outfit for the morning, hired (starting price)",
+      "th": "ชุดไทยสำหรับพิธีเช้า แบบเช่า (ราคาเริ่มต้น)",
+      "my": "မနက်ပိုင်းအတွက် ထိုင်းဝတ်စုံ၊ ငှားရမ်း (စတင်စျေး)",
+      "zh": "晨间仪式的泰式礼服，租用（起步价）",
+      "de": "Thailändisches Outfit für den Morgen, gemietet (Startpreis)"
+     },
+     "range": [
+      1200,
+      1200
+     ],
+     "per": [],
+     "when": {
+      "ceremony": [
+       "thai",
+       "both"
+      ]
+     },
+     "save": false,
+     "src": "https://www.centerwedding.com/chiang-mai/salon/"
+    },
+    {
+     "n": {
+      "en": "Hair and makeup, first look",
+      "th": "ทำผมและแต่งหน้า ลุคแรก",
+      "my": "ဆံပင်နှင့် မျက်နှာအလှပြင်၊ ပထမပုံစံ",
+      "zh": "发型与化妆，第一个造型",
+      "de": "Haare und Make-up, erster Look"
+     },
+     "range": [
+      4000,
+      10000
+     ],
+     "per": [],
+     "save": false,
+     "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+    },
+    {
+     "n": {
+      "en": "Hair and makeup, second look",
+      "th": "ทำผมและแต่งหน้า ลุคที่สอง",
+      "my": "ဆံပင်နှင့် မျက်နှာအလှပြင်၊ ဒုတိယပုံစံ",
+      "zh": "发型与化妆，第二个造型",
+      "de": "Haare und Make-up, zweiter Look"
+     },
+     "range": [
+      4000,
+      10000
+     ],
+     "per": [],
+     "when": {
+      "ceremony": [
+       "both"
+      ]
+     },
+     "save": false,
+     "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+    },
+    {
+     "n": {
+      "en": "Photographer, one day",
+      "th": "ช่างภาพ หนึ่งวัน",
+      "my": "ဓာတ်ပုံဆရာ၊ တစ်ရက်",
+      "zh": "摄影师，一天",
+      "de": "Fotograf, ein Tag"
+     },
+     "range": [
+      8500,
+      17500
+     ],
+     "per": [],
+     "save": false,
+     "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+    },
+    {
+     "n": {
+      "en": "Bride's flowers: bouquet or hand garland",
+      "th": "ดอกไม้เจ้าสาว: ช่อดอกไม้หรือมาลัยมือ",
+      "my": "သတို့သမီး ပန်း - ပန်းစည်း သို့မဟုတ် လက်ကိုင်ပန်းကုံး",
+      "zh": "新娘花饰：花束或手持花环",
+      "de": "Blumen der Braut: Strauss oder Handgirlande"
+     },
+     "range": [
+      1500,
+      2500
+     ],
+     "per": [],
+     "save": false,
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    }
+   ],
+   "total": {
+    "en": "Listed prices for the bride's day",
+    "th": "ราคาตามที่ระบุไว้สำหรับวันของเจ้าสาว",
+    "my": "သတို့သမီးနေ့အတွက် ဖော်ပြထားသော စျေးနှုန်းများ၏ စုစုပေါင်း",
+    "zh": "新娘这一天的标价合计",
+    "de": "Angegebene Preise für den Tag der Braut"
+   },
+   "note": {
+    "en": "Hire prices are starting prices. Buying is shown from ฿10,000 to ฿100,000; the source says tens of thousands up to hundreds of thousands. The second look uses the hair and makeup range again. Fittings and alterations are not in the total.",
+    "th": "ราคาเช่าคือราคาเริ่มต้น การซื้อแสดงที่ ฿10,000 ถึง ฿100,000 โดยแหล่งข้อมูลระบุว่าหลักหมื่นไปจนถึงหลักแสน ลุคที่สองใช้ช่วงราคาทำผมและแต่งหน้าซ้ำอีกครั้ง ค่าลองชุดและแก้ชุดไม่รวมในยอด",
+    "my": "ငှားရမ်းခများသည် စတင်စျေးနှုန်းများ ဖြစ်သည်။ ဝယ်ယူခြင်းကို ฿10,000 မှ ฿100,000 အထိ ပြထားပြီး အရင်းအမြစ်က သောင်းချီမှ သိန်းချီအထိ ဟု ဆိုသည်။ ဒုတိယပုံစံတွင် ဆံပင်နှင့် မျက်နှာအလှပြင် စျေးနှုန်းအပိုင်းအခြားကို ထပ်သုံးထားသည်။ စမ်းဝတ်ခြင်းနှင့် ပြင်ဆင်ခြင်းကို စုစုပေါင်းတွင် မထည့်ပါ။",
+    "zh": "租赁价为起步价。购买按 ฿10,000 至 ฿100,000 显示；来源写的是几万到几十万。第二个造型再次使用发型化妆的价格区间。试衣与改衣不计入合计。",
+    "de": "Mietpreise sind Startpreise. Der Kauf ist mit ฿10,000 bis ฿100,000 angesetzt; die Quelle nennt einige Zehntausend bis mehrere Hunderttausend. Der zweite Look nimmt die Spanne für Haare und Make-up noch einmal. Anproben und Änderungen sind nicht in der Summe."
+   },
+   "oursLine": {
+    "en": "On top of the vendors' fees, Hongdam books and schedules these for:",
+    "th": "นอกจากค่าบริการของผู้ให้บริการ หงส์ดำจองและจัดตารางเรื่องเหล่านี้ให้ในราคา:",
+    "my": "ဝန်ဆောင်သူများ၏ ဝန်ဆောင်ခအပြင် ဟုန်ဒမ် က ဤအရာများကို မှာယူပြီး အချိန်ဇယားချပေးသည့် စျေး -",
+    "zh": "在供应商费用之外，鸿丹 预订并安排这些事项的收费：",
+    "de": "Zusätzlich zu den Gebühren der Dienstleister bucht und plant Hongdam das für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "In a Thai wedding the morning ceremonies are in Thai traditional style, and the bride and groom usually wear Thai traditional dress. The evening reception is Western: a suit and a white gown.",
+    "th": "งานแต่งแบบไทยมีพิธีเช้าตามประเพณีไทย เจ้าบ่าวเจ้าสาวมักสวมชุดไทย ส่วนงานเลี้ยงเย็นเป็นแบบตะวันตก เจ้าบ่าวสวมสูท เจ้าสาวสวมชุดสีขาว",
+    "my": "ထိုင်းမင်္ဂလာဆောင်တွင် မနက်ပိုင်းအခမ်းအနားများကို ထိုင်းရိုးရာပုံစံဖြင့် ကျင်းပပြီး သတို့သားသတို့သမီးတို့သည် များသောအားဖြင့် ထိုင်းရိုးရာဝတ်စုံ ဝတ်ဆင်ကြသည်။ ညနေပိုင်း ညစာစားပွဲသည် အနောက်တိုင်းပုံစံ ဖြစ်ပြီး ဝတ်ကုတ်နှင့် အဖြူရောင် ဂါဝန်ကို ဝတ်ဆင်သည်။",
+    "zh": "泰式婚礼的晨间仪式按泰国传统举行，新郎新娘通常穿泰式传统服装。晚间的宴会是西式的：西装和白色婚纱。",
+    "de": "Bei einer thailändischen Hochzeit finden die Morgenzeremonien nach thailändischer Tradition statt, und Braut und Bräutigam tragen meist thailändische Tracht. Der Abendempfang ist westlich: Anzug und weisses Kleid."
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "t": {
+    "en": "A Chiang Mai wedding directory says a couple prepares at least two wedding outfits. More changes are fine.",
+    "th": "ไดเรกทอรีงานแต่งในเชียงใหม่ระบุว่าคู่บ่าวสาวต้องเตรียมชุดแต่งงานอย่างน้อย 2 ชุด และจะเปลี่ยนหลายชุดกว่านั้นก็ได้",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်လမ်းညွှန်တစ်ခုက စုံတွဲတစ်တွဲသည် မင်္ဂလာဝတ်စုံ အနည်းဆုံး 2 စုံ ပြင်ဆင်ရမည်ဟု ဆိုသည်။ ထို့ထက်ပို၍ ပြောင်းလဲဝတ်ဆင်လည်း ရသည်။",
+    "zh": "清迈一家婚礼名录网站说，新人至少要准备两套婚礼服装，想多换几套也可以。",
+    "de": "Ein Hochzeitsverzeichnis für Chiang Mai nennt mindestens zwei Hochzeitsoutfits pro Paar. Mehr Wechsel sind in Ordnung."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai shops offer a dress three ways: ready-made hire, hire made to measure (เช่าตัด), and buying made to measure (ตัดซื้อ).",
+    "th": "ร้านชุดในเชียงใหม่ให้บริการสามแบบ ได้แก่ เช่าชุดสำเร็จ เช่าตัด และตัดซื้อ",
+    "my": "ချင်းမိုင်ရှိ ဝတ်စုံဆိုင်များတွင် ဝတ်စုံကို သုံးနည်းဖြင့် ရနိုင်သည် - အသင့်ဝတ်စုံ ငှားရမ်းခြင်း၊ တိုင်းချုပ်၍ ငှားရမ်းခြင်း (เช่าตัด) နှင့် တိုင်းချုပ်၍ ဝယ်ယူခြင်း (ตัดซื้อ)။",
+    "zh": "清迈的礼服店有三种方式：租现成礼服、量身定制后租用（เช่าตัด），以及量身定制后购买（ตัดซื้อ）。",
+    "de": "Geschäfte in Chiang Mai bieten ein Kleid auf drei Arten an: fertig mieten, nach Mass anfertigen und mieten (เช่าตัด) oder nach Mass anfertigen und kaufen (ตัดซื้อ)."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Azazie, a dress retailer, says a bride typically has 2–3 fittings, and that most wedding dress alterations take 6–10 weeks from the first fitting to the final pickup. Heel height affects the hem length.",
+    "th": "Azazie ผู้ขายชุดเจ้าสาว ระบุว่าเจ้าสาวมักลองชุด 2–3 ครั้ง และการแก้ชุดแต่งงานส่วนใหญ่ใช้เวลา 6–10 สัปดาห์ นับจากการลองครั้งแรกจนถึงรับชุด ความสูงของส้นรองเท้ามีผลต่อความยาวชายกระโปรง",
+    "my": "ဝတ်စုံရောင်းချသူ Azazie က သတို့သမီးတစ်ဦးသည် များသောအားဖြင့် 2–3 ကြိမ် စမ်းဝတ်ရပြီး မင်္ဂလာဝတ်စုံ ပြင်ဆင်မှု အများစုသည် ပထမအကြိမ် စမ်းဝတ်ချိန်မှ ဝတ်စုံပြန်ယူချိန်အထိ 6–10 ပတ်ကြာသည်ဟု ဆိုသည်။ ဖိနပ်ဒေါက်အမြင့်သည် ဝတ်စုံအောက်စွန်း အရှည်ကို ထိခိုက်သည်။",
+    "zh": "婚纱零售商 Azazie 说，新娘通常要试衣 2–3 次，大多数婚纱改衣从第一次试衣到最后取衣需要 6–10 周。鞋跟高度会影响裙摆长度。",
+    "de": "Der Kleiderhändler Azazie sagt, eine Braut hat meist 2–3 Anproben, und die meisten Änderungen am Hochzeitskleid dauern von der ersten Anprobe bis zur Abholung 6–10 Wochen. Die Absatzhöhe beeinflusst die Saumlänge."
+   },
+   "src": "https://www.azazie.com/blog/how-long-does-it-take-to-alter-a-wedding-dress-and-what-to-expect/"
+  },
+  {
+   "t": {
+    "en": "Makeup artist Val Garland tells Hello! magazine that some makeup artists are booked up to a year ahead, and suggests a trial about three months before the wedding. Hair stylist Sam McKnight suggests a hair trial about three months ahead, once the dress is known.",
+    "th": "Val Garland ช่างแต่งหน้าบอกกับนิตยสาร Hello! ว่าช่างแต่งหน้าบางคนถูกจองล่วงหน้านานถึงหนึ่งปี และระบุช่วงทดลองแต่งหน้าไว้ที่ราว 3 เดือนก่อนงาน Sam McKnight ช่างทำผม ระบุช่วงทดลองทำผมไว้ที่ราว 3 เดือนล่วงหน้า เมื่อรู้ชุดแล้ว",
+    "my": "အလှပြင်ဆရာ Val Garland က Hello! မဂ္ဂဇင်းသို့ အလှပြင်ဆရာအချို့မှာ တစ်နှစ်အထိ ကြိုတင်၍ ရက်ပြည့်နေတတ်ကြောင်း ပြောပြီး မင်္ဂလာမတိုင်မီ 3 လခန့်တွင် စမ်းပြင်ရန် အကြံပြုသည်။ ဆံပင်ဒီဇိုင်နာ Sam McKnight က ဝတ်စုံ သိပြီးနောက် 3 လခန့် ကြိုတင်၍ ဆံပင်စမ်းပြင်ရန် အကြံပြုသည်။",
+    "zh": "化妆师 Val Garland 对《Hello!》杂志说，有些化妆师要提前一年预订，并建议在婚礼前约三个月试妆。发型师 Sam McKnight 建议在定好礼服后，约提前三个月试做发型。",
+    "de": "Die Make-up-Artistin Val Garland sagt dem Magazin Hello!, einige Make-up-Artists seien bis zu einem Jahr im Voraus ausgebucht, und rät zu einem Probetermin etwa drei Monate vor der Hochzeit. Der Friseur Sam McKnight rät zu einer Haarprobe etwa drei Monate vorher, sobald das Kleid feststeht."
+   },
+   "src": "https://www.hellomagazine.com/hfm/beauty-trends/677598/bridal-beauty-timeline"
+  },
+  {
+   "t": {
+    "en": "Of the 31 hair and makeup artists on a Chiang Mai wedding directory, 3 list a price.",
+    "th": "จากช่างแต่งหน้าทำผม 31 รายในไดเรกทอรีงานแต่งเชียงใหม่ มี 3 รายที่ระบุราคา",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်လမ်းညွှန်ရှိ ဆံပင်နှင့် မျက်နှာအလှပြင်ဆရာ 31 ဦးအနက် 3 ဦးသာ စျေးနှုန်း ဖော်ပြထားသည်။",
+    "zh": "清迈婚礼名录上的31位发型化妆师中，有3位标明价格。",
+    "de": "Von den 31 Haar- und Make-up-Artists in einem Hochzeitsverzeichnis für Chiang Mai geben 3 einen Preis an."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Bridal gown hire at Chiang Mai shops (starting prices)",
+    "th": "เช่าชุดเจ้าสาวที่ร้านในเชียงใหม่ (ราคาเริ่มต้น)",
+    "my": "ချင်းမိုင်ဆိုင်များတွင် သတို့သမီးဂါဝန် ငှားရမ်းခြင်း (စတင်စျေးနှုန်း)",
+    "zh": "清迈店铺租婚纱（起步价）",
+    "de": "Brautkleid mieten in Chiang Mai (Startpreise)"
+   },
+   "p": {
+    "en": "฿3,500 to ฿28,000 and up",
+    "th": "฿3,500 ถึง ฿28,000 ขึ้นไป",
+    "my": "฿3,500 မှ ฿28,000 နှင့် အထက်",
+    "zh": "฿3,500 至 ฿28,000 及以上",
+    "de": "฿3,500 bis ฿28,000 und mehr"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Thai outfit for the bride, hired",
+    "th": "เช่าชุดไทยสำหรับเจ้าสาว",
+    "my": "သတို့သမီးအတွက် ထိုင်းဝတ်စုံ ငှားရမ်းခြင်း",
+    "zh": "新娘泰式礼服租赁",
+    "de": "Thailändisches Outfit für die Braut, gemietet"
+   },
+   "p": {
+    "en": "From ฿1,200",
+    "th": "เริ่มต้น ฿1,200",
+    "my": "฿1,200 မှ စတင်",
+    "zh": "฿1,200 起",
+    "de": "Ab ฿1,200"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Bridal gown made to measure, hired or bought",
+    "th": "ชุดเจ้าสาวสั่งตัด แบบเช่าตัดหรือตัดซื้อ",
+    "my": "တိုင်းချုပ် သတို့သမီးဂါဝန်၊ ငှားရမ်းခြင်း သို့မဟုတ် ဝယ်ယူခြင်း",
+    "zh": "量身定制婚纱，租用或购买",
+    "de": "Brautkleid nach Mass, gemietet oder gekauft"
+   },
+   "p": {
+    "en": "From ฿10,000 to hundreds of thousands",
+    "th": "ตั้งแต่ ฿10,000 ไปจนถึงหลักแสน",
+    "my": "฿10,000 မှ သိန်းချီအထိ",
+    "zh": "从 ฿10,000 到数十万",
+    "de": "Von ฿10,000 bis zu mehreren Hunderttausend"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Bride's hair and makeup (Chiang Mai artists that list a price)",
+    "th": "ทำผมและแต่งหน้าเจ้าสาว (ช่างในเชียงใหม่ที่ระบุราคา)",
+    "my": "သတို့သမီး ဆံပင်နှင့် မျက်နှာအလှပြင်ခြင်း (စျေးနှုန်းဖော်ပြသော ချင်းမိုင် အလှပြင်ဆရာများ)",
+    "zh": "新娘发型与化妆（标明价格的清迈化妆师）",
+    "de": "Haare und Make-up der Braut (Artists in Chiang Mai mit Preisangabe)"
+   },
+   "p": {
+    "en": "฿4,000 for makeup and hair together at two artists; at a third, makeup from ฿7,500 and hair from ฿2,500",
+    "th": "฿4,000 สำหรับแต่งหน้าและทำผมรวมกัน 2 ราย อีก 1 รายคิดแต่งหน้าเริ่มต้น ฿7,500 และทำผมเริ่มต้น ฿2,500",
+    "my": "အလှပြင်ဆရာ 2 ဦးက မျက်နှာအလှပြင်နှင့် ဆံပင် ပေါင်း ฿4,000၊ တတိယတစ်ဦးက မျက်နှာအလှပြင် ฿7,500 မှစ၍ နှင့် ဆံပင် ฿2,500 မှစ၍",
+    "zh": "两位化妆师的化妆加发型合计 ฿4,000；第三位化妆 ฿7,500 起、发型 ฿2,500 起",
+    "de": "฿4,000 für Make-up und Haare zusammen bei zwei Artists; bei einer dritten Make-up ab ฿7,500 und Haare ab ฿2,500"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+  },
+  {
+   "t": {
+    "en": "Wedding photographer, one day (Chiang Mai, 36 listings with a range)",
+    "th": "ช่างภาพงานแต่ง หนึ่งวัน (เชียงใหม่ 36 รายที่ระบุเป็นช่วง)",
+    "my": "မင်္ဂလာဓာတ်ပုံဆရာ၊ တစ်ရက် (ချင်းမိုင်၊ စျေးအပိုင်းအခြား ဖော်ပြသူ 36 ဦး)",
+    "zh": "婚礼摄影师，一天（清迈，36家标明价格区间）",
+    "de": "Hochzeitsfotograf, ein Tag (Chiang Mai, 36 Angebote mit Preisspanne)"
+   },
+   "p": {
+    "en": "Median low ฿8,500 and median high ฿17,500; the lowest range starts at ฿3,500 and the highest ends at ฿100,000",
+    "th": "ค่ามัธยฐานราคาต่ำ ฿8,500 และราคาสูง ฿17,500 ช่วงต่ำสุดเริ่มที่ ฿3,500 และช่วงสูงสุดจบที่ ฿100,000",
+    "my": "အနိမ့်၏ အလယ်တန်ဖိုး ฿8,500 နှင့် အမြင့်၏ အလယ်တန်ဖိုး ฿17,500၊ အနိမ့်ဆုံးအပိုင်းအခြားသည် ฿3,500 မှ စပြီး အမြင့်ဆုံးသည် ฿100,000 တွင် ဆုံးသည်",
+    "zh": "低价中位数 ฿8,500，高价中位数 ฿17,500；最低区间起于 ฿3,500，最高区间止于 ฿100,000",
+    "de": "Median unten ฿8,500 und oben ฿17,500; die niedrigste Spanne beginnt bei ฿3,500, die höchste endet bei ฿100,000"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+  },
+  {
+   "t": {
+    "en": "Bride and groom outfit hire, listed on Fastwork",
+    "th": "เช่าชุดเจ้าสาวและเจ้าบ่าว ลงขายบน Fastwork",
+    "my": "သတို့သမီးနှင့် သတို့သား ဝတ်စုံငှားရမ်းခြင်း (Fastwork တွင် ဖော်ပြထား)",
+    "zh": "新娘新郎礼服租赁（Fastwork 上的刊登）",
+    "de": "Miete von Outfits für Braut und Bräutigam, auf Fastwork angeboten"
+   },
+   "p": {
+    "en": "฿4,900 for one wedding or Thai outfit per person; ฿9,900 for two per person",
+    "th": "฿4,900 สำหรับชุดแต่งงานหรือชุดไทยคนละ 1 ชุด ฿9,900 สำหรับคนละ 2 ชุด",
+    "my": "မင်္ဂလာဝတ်စုံ သို့မဟုတ် ထိုင်းဝတ်စုံ တစ်ဦးလျှင် 1 စုံအတွက် ฿4,900၊ တစ်ဦးလျှင် 2 စုံအတွက် ฿9,900",
+    "zh": "每人一套婚礼服或泰式礼服 ฿4,900；每人两套 ฿9,900",
+    "de": "฿4,900 für ein Hochzeits- oder thailändisches Outfit pro Person; ฿9,900 für zwei pro Person"
+   },
+   "src": "https://fastwork.co/user/nassyluxuryshop/clothing-rental-17420616"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Where can I hire a wedding dress in Chiang Mai?",
+    "th": "เช่าชุดเจ้าสาวในเชียงใหม่ได้ที่ไหน",
+    "my": "ချင်းမိုင်တွင် မင်္ဂလာဝတ်စုံ ဘယ်မှာ ငှားရမလဲ။",
+    "zh": "在清迈哪里可以租婚纱？",
+    "de": "Wo kann man in Chiang Mai ein Brautkleid mieten?"
+   },
+   "a": {
+    "en": "A Chiang Mai wedding directory lists dress and suit shops, boutiques and tailors: 20 on its first page. The shops offer ready-made hire, hire made to measure and buying made to measure.",
+    "th": "ไดเรกทอรีงานแต่งในเชียงใหม่รวมร้านชุดเจ้าสาวและชุดสูท บูติก และร้านตัดเย็บ แสดงไว้ 20 รายในหน้าแรก ร้านให้บริการเช่าชุดสำเร็จ เช่าตัด และตัดซื้อ",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်လမ်းညွှန်တစ်ခုတွင် ဝတ်စုံနှင့် ဝတ်ကုတ်ဆိုင်များ၊ ဘူတိတ်ဆိုင်များနှင့် ချုပ်ဆရာများကို ပထမစာမျက်နှာတွင် 20 ခု ဖော်ပြထားသည်။ ဆိုင်များတွင် အသင့်ဝတ်စုံ ငှားရမ်းခြင်း၊ တိုင်းချုပ်၍ ငှားရမ်းခြင်းနှင့် တိုင်းချုပ်၍ ဝယ်ယူခြင်း ရှိသည်။",
+    "zh": "清迈一家婚礼名录的第一页列出20家礼服和西装店、精品店和裁缝店。这些店提供现成礼服租赁、量身定制后租用，以及量身定制后购买。",
+    "de": "Ein Hochzeitsverzeichnis für Chiang Mai führt auf der ersten Seite 20 Geschäfte für Kleider und Anzüge, Boutiquen und Schneidereien auf. Die Geschäfte bieten fertige Kleider zur Miete, Anfertigung nach Mass zur Miete und Anfertigung nach Mass zum Kauf."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "q": {
+    "en": "Is it cheaper to hire or to buy a wedding dress?",
+    "th": "เช่าหรือซื้อชุดเจ้าสาว แบบไหนถูกกว่า",
+    "my": "မင်္ဂလာဝတ်စုံကို ငှားရမ်းခြင်းနှင့် ဝယ်ယူခြင်း ဘယ်ဟာ ပိုသက်သာသနည်း။",
+    "zh": "婚纱租还是买更便宜？",
+    "de": "Ist es günstiger, ein Hochzeitskleid zu mieten oder zu kaufen?"
+   },
+   "a": {
+    "en": "At Chiang Mai starting prices, a bridal gown to hire runs ฿3,500 to ฿28,000 and up, and a Thai outfit for the bride starts at ฿1,200. A gown made to measure, hired or bought, runs from ฿10,000 into the hundreds of thousands.",
+    "th": "ตามราคาเริ่มต้นในเชียงใหม่ ชุดเจ้าสาวแบบเช่าอยู่ที่ ฿3,500 ถึง ฿28,000 ขึ้นไป และชุดไทยของเจ้าสาวเริ่มที่ ฿1,200 ส่วนชุดสั่งตัด ไม่ว่าเช่าตัดหรือตัดซื้อ อยู่ที่ตั้งแต่ ฿10,000 ไปจนถึงหลักแสน",
+    "my": "ချင်းမိုင်၏ စတင်စျေးနှုန်းများအရ ငှားရမ်းရသော သတို့သမီးဂါဝန်သည် ฿3,500 မှ ฿28,000 နှင့် အထက်အထိ ရှိပြီး သတို့သမီးအတွက် ထိုင်းဝတ်စုံသည် ฿1,200 မှ စတင်သည်။ တိုင်းချုပ်ဂါဝန်ကို ငှားရမ်းသည်ဖြစ်စေ ဝယ်ယူသည်ဖြစ်စေ ฿10,000 မှ သိန်းချီအထိ ရှိသည်။",
+    "zh": "按清迈的起步价，租一件婚纱为 ฿3,500 至 ฿28,000 及以上，新娘的泰式礼服起租价为 ฿1,200。量身定制的婚纱，无论租还是买，从 ฿10,000 到数十万不等。",
+    "de": "Nach den Startpreisen in Chiang Mai kostet die Miete eines Brautkleids ฿3,500 bis ฿28,000 und mehr, ein thailändisches Outfit für die Braut ab ฿1,200. Ein Kleid nach Mass, gemietet oder gekauft, kostet von ฿10,000 bis zu mehreren Hunderttausend."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "q": {
+    "en": "How much does bridal makeup cost in Chiang Mai?",
+    "th": "ช่างแต่งหน้าเจ้าสาวราคาเท่าไหร่",
+    "my": "ချင်းမိုင်တွင် သတို့သမီး မျက်နှာအလှပြင်ခ ဘယ်လောက်ကျသလဲ။",
+    "zh": "清迈的新娘化妆多少钱？",
+    "de": "Was kostet ein Braut-Make-up in Chiang Mai?"
+   },
+   "a": {
+    "en": "Of 31 hair and makeup artists on a Chiang Mai wedding directory, 3 list a price. Two list ฿4,000 for makeup and hair together. The third lists bridal makeup from ฿7,500 and bridal hair from ฿2,500.",
+    "th": "ในไดเรกทอรีงานแต่งเชียงใหม่ ช่างแต่งหน้าทำผม 31 ราย มี 3 รายที่ระบุราคา 2 รายระบุ ฿4,000 สำหรับแต่งหน้าและทำผมรวมกัน อีก 1 รายระบุแต่งหน้าเจ้าสาวเริ่มต้น ฿7,500 และทำผมเจ้าสาวเริ่มต้น ฿2,500",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်လမ်းညွှန်ရှိ ဆံပင်နှင့် မျက်နှာအလှပြင်ဆရာ 31 ဦးအနက် 3 ဦးက စျေးနှုန်း ဖော်ပြထားသည်။ 2 ဦးက မျက်နှာအလှပြင်နှင့် ဆံပင် ပေါင်း ฿4,000 ဟု ဖော်ပြသည်။ ကျန်တစ်ဦးက သတို့သမီး မျက်နှာအလှပြင် ฿7,500 မှစ၍ နှင့် ဆံပင် ฿2,500 မှစ၍ ဟု ဖော်ပြသည်။",
+    "zh": "清迈一家婚礼名录上的31位发型化妆师中，有3位标明价格。两位标 ฿4,000（化妆加发型），第三位新娘化妆 ฿7,500 起、新娘发型 ฿2,500 起。",
+    "de": "Von 31 Haar- und Make-up-Artists in einem Hochzeitsverzeichnis für Chiang Mai geben 3 einen Preis an. Zwei nennen ฿4,000 für Make-up und Haare zusammen. Die dritte nennt Braut-Make-up ab ฿7,500 und Brautfrisur ab ฿2,500."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/stylists/"
+  },
+  {
+   "q": {
+    "en": "How far ahead is a makeup artist booked?",
+    "th": "ช่างแต่งหน้าเจ้าสาวถูกจองล่วงหน้านานแค่ไหน",
+    "my": "အလှပြင်ဆရာကို ဘယ်လောက်စောပြီး ကြိုတင်ချိန်းကြသနည်း။",
+    "zh": "化妆师要提前多久预订？",
+    "de": "Wie weit im Voraus werden Haare und Make-up gebucht?"
+   },
+   "a": {
+    "en": "Makeup artist Val Garland tells Hello! magazine that some makeup artists are booked up to a year ahead. She suggests a trial about three months before the wedding, in the morning, so the makeup is worn all day to see how it holds.",
+    "th": "Val Garland ช่างแต่งหน้า บอกกับนิตยสาร Hello! ว่าช่างแต่งหน้าบางคนถูกจองล่วงหน้านานถึงหนึ่งปี เธอระบุช่วงทดลองแต่งหน้าไว้ที่ราว 3 เดือนก่อนงาน ในช่วงเช้า เพื่อให้ได้เห็นว่าลุคอยู่ทนตลอดวัน",
+    "my": "အလှပြင်ဆရာ Val Garland က Hello! မဂ္ဂဇင်းသို့ အလှပြင်ဆရာအချို့မှာ တစ်နှစ်အထိ ကြိုတင်၍ ရက်ပြည့်နေတတ်ကြောင်း ပြောသည်။ သူမက မင်္ဂလာမတိုင်မီ 3 လခန့်တွင် မနက်ပိုင်း စမ်းပြင်ရန် အကြံပြုပြီး အလှပြင်ထားပုံကို တစ်နေ့လုံး ဝတ်ဆင်ကြည့်နိုင်စေရန်ဖြစ်သည်။",
+    "zh": "化妆师 Val Garland 对《Hello!》杂志说，有些化妆师要提前一年才排得上。她建议在婚礼前约三个月的上午试妆，这样可以带妆一整天，看看效果。",
+    "de": "Die Make-up-Artistin Val Garland sagt dem Magazin Hello!, einige Make-up-Artists seien bis zu einem Jahr im Voraus ausgebucht. Sie rät zu einem Probetermin am Vormittag, etwa drei Monate vor der Hochzeit, damit man das Make-up den ganzen Tag trägt und sieht, wie es hält."
+   },
+   "src": "https://www.hellomagazine.com/hfm/beauty-trends/677598/bridal-beauty-timeline"
+  },
+  {
+   "q": {
+    "en": "When should a wedding dress be altered?",
+    "th": "แก้ชุดเจ้าสาวเมื่อไหร่",
+    "my": "မင်္ဂလာဝတ်စုံကို ဘယ်အချိန်တွင် ပြင်ဆင်သင့်သနည်း။",
+    "zh": "婚纱什么时候改？",
+    "de": "Wann wird das Hochzeitskleid geändert?"
+   },
+   "a": {
+    "en": "Azazie lists the first fitting 8–10 weeks before the wedding, the second 4–6 weeks before and the last 1–2 weeks before. It books the seamstress at least 2–3 months before the wedding.",
+    "th": "Azazie ผู้ขายชุดเจ้าสาว ระบุการลองชุดครั้งแรก 8–10 สัปดาห์ก่อนงาน ครั้งที่สอง 4–6 สัปดาห์ก่อนงาน และครั้งสุดท้าย 1–2 สัปดาห์ก่อนงาน และระบุให้จองช่างเย็บอย่างน้อย 2–3 เดือนก่อนงาน",
+    "my": "ဝတ်စုံရောင်းချသူ Azazie က ပထမအကြိမ် စမ်းဝတ်ခြင်းကို မင်္ဂလာမတိုင်မီ 8–10 ပတ်၊ ဒုတိယအကြိမ်ကို 4–6 ပတ်၊ နောက်ဆုံးအကြိမ်ကို 1–2 ပတ် ဟု ဖော်ပြသည်။ ချုပ်ဆရာကိုလည်း မင်္ဂလာမတိုင်မီ အနည်းဆုံး 2–3 လအလိုတွင် ချိန်းရန် ဖော်ပြသည်။",
+    "zh": "婚纱零售商 Azazie 列出：第一次试衣在婚礼前 8–10 周，第二次在前 4–6 周，最后一次在前 1–2 周。它还写明，裁缝至少在婚礼前 2–3 个月预订。",
+    "de": "Der Kleiderhändler Azazie nennt die erste Anprobe 8–10 Wochen vor der Hochzeit, die zweite 4–6 Wochen davor und die letzte 1–2 Wochen davor. Die Schneiderin oder der Schneider wird dort mindestens 2–3 Monate vor der Hochzeit gebucht."
+   },
+   "src": "https://www.azazie.com/blog/how-long-does-it-take-to-alter-a-wedding-dress-and-what-to-expect/"
+  },
+  {
+   "q": {
+    "en": "What does a Lanna bride wear?",
+    "th": "ชุดเจ้าสาวล้านนาเป็นแบบไหน",
+    "my": "လန်နာ သတို့သမီး ဘာဝတ်သနည်း။",
+    "zh": "兰纳新娘穿什么？",
+    "de": "Was trägt eine Lanna-Braut?"
+   },
+   "a": {
+    "en": "Mot Dang's Su Khwan page lists a silk tube skirt with a teen jok hem as the bride's Lanna dress. The page offers it with an optional Lanna wedding at a teak house, on the first morning of a Chiang Rai honeymoon.",
+    "th": "หน้าสู่ขวัญของมดแดงระบุชุดล้านนาของเจ้าสาวเป็นผ้าถุงไหมที่มีตีนจก หน้านี้เสนอพิธีแต่งงานล้านนาที่บ้านไม้สัก เป็นตัวเลือกในเช้าวันแรกของฮันนีมูนที่เชียงราย",
+    "my": "Mot Dang ၏ Su Khwan စာမျက်နှာတွင် သတို့သမီး၏ လန်နာဝတ်စုံကို တီးဂျုပ် (teen jok) အနားစွန်းပါသော ပိုးထဘီ ဟု ဖော်ပြထားသည်။ ထိုစာမျက်နှာတွင် ချင်းရိုင် ဟန်နီမွန်း၏ ပထမနေ့မနက်တွင် ကျွန်းသစ်အိမ်၌ ရွေးချယ်စရာ လန်နာမင်္ဂလာဆောင်လည်း ပါသည်။",
+    "zh": "Mot Dang 的素昆（Su Khwan）页面写明新娘的兰纳服饰是带 teen jok（ตีนจก）裙边的丝质筒裙。该页面把它放在清莱蜜月第一天上午、在柚木屋举行的可选兰纳婚礼里。",
+    "de": "Auf Mot Dangs Su-Khwan-Seite besteht die Lanna-Tracht der Braut aus einem Schlauchrock aus Seide mit Teen-Jok-Saum. Die Seite bietet sie mit einer wählbaren Lanna-Hochzeit im Teakhaus am ersten Morgen der Flitterwochen in Chiang Rai an."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "q": {
+    "en": "How much does a wedding photographer cost in Chiang Mai?",
+    "th": "ช่างภาพงานแต่งในเชียงใหม่ราคาเท่าไหร่",
+    "my": "ချင်းမိုင်တွင် မင်္ဂလာဓာတ်ပုံဆရာ ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "清迈的婚礼摄影师多少钱？",
+    "de": "Was kostet ein Hochzeitsfotograf in Chiang Mai?"
+   },
+   "a": {
+    "en": "Of 64 photographers on a Chiang Mai wedding directory, 46 list a one-day price and 36 give a range. The median low is ฿8,500 and the median high ฿17,500. The lowest range starts at ฿3,500 and the highest ends at ฿100,000.",
+    "th": "ในไดเรกทอรีงานแต่งเชียงใหม่ ช่างภาพ 64 ราย มี 46 รายระบุราคาถ่ายงานหนึ่งวัน และ 36 รายระบุเป็นช่วง ค่ามัธยฐานของราคาต่ำคือ ฿8,500 และของราคาสูงคือ ฿17,500 ช่วงต่ำสุดเริ่มที่ ฿3,500 และช่วงสูงสุดจบที่ ฿100,000",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်လမ်းညွှန်ရှိ ဓာတ်ပုံဆရာ 64 ဦးအနက် 46 ဦးက တစ်ရက်စျေး ဖော်ပြပြီး 36 ဦးက စျေးနှုန်းအပိုင်းအခြား ဖော်ပြသည်။ အနိမ့်၏ အလယ်တန်ဖိုးမှာ ฿8,500 ဖြစ်ပြီး အမြင့်၏ အလယ်တန်ဖိုးမှာ ฿17,500 ဖြစ်သည်။ အနိမ့်ဆုံးအပိုင်းအခြားသည် ฿3,500 မှ စပြီး အမြင့်ဆုံးသည် ฿100,000 တွင် ဆုံးသည်။",
+    "zh": "清迈一家婚礼名录上的64位摄影师中，46位标明一天的价格，36位标明价格区间。低价中位数是 ฿8,500，高价中位数是 ฿17,500。最低区间起于 ฿3,500，最高区间止于 ฿100,000。",
+    "de": "Von 64 Fotografen in einem Hochzeitsverzeichnis für Chiang Mai nennen 46 einen Preis für einen Tag und 36 eine Preisspanne. Der Median der unteren Preise liegt bei ฿8,500, der der oberen bei ฿17,500. Die niedrigste Spanne beginnt bei ฿3,500, die höchste endet bei ฿100,000."
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+  },
+  {
+   "q": {
+    "en": "How much does a bride's bouquet cost?",
+    "th": "ช่อดอกไม้เจ้าสาวราคาเท่าไหร่",
+    "my": "သတို့သမီးပန်းစည်း ဘယ်လောက်ကျသနည်း။",
+    "zh": "新娘手捧花多少钱？",
+    "de": "Was kostet ein Brautstrauss?"
+   },
+   "a": {
+    "en": "The add-on list of Anantara Chiang Mai Resort has a bouquet at ฿1,500 and a hand garland at ฿2,500. Its ฿189,000 Western wedding package includes the bride's bouquet and two bridesmaids' corsages. The brochure prices are valid from April 2024.",
+    "th": "รายการบริการเสริมของอนันตรา เชียงใหม่ รีสอร์ท ระบุช่อดอกไม้ ฿1,500 และมาลัยมือ ฿2,500 แพ็กเกจงานแต่งแบบตะวันตกราคา ฿189,000 รวมช่อดอกไม้เจ้าสาวและดอกไม้ติดอกเพื่อนเจ้าสาว 2 ช่อ ราคาในโบรชัวร์ใช้ได้ตั้งแต่เมษายน 2024",
+    "my": "Anantara Chiang Mai Resort ၏ ထပ်ဆောင်းဝန်ဆောင်မှုစာရင်းတွင် ပန်းစည်းကို ฿1,500 နှင့် လက်ကိုင်ပန်းကုံးကို ฿2,500 ဟု ဖော်ပြထားသည်။ ၎င်း၏ ฿189,000 အနောက်တိုင်း မင်္ဂလာဆောင်အစီအစဉ်တွင် သတို့သမီးပန်းစည်းနှင့် သတို့သမီးအဖော် နှစ်ဦးအတွက် ရင်ထိုးပန်း ပါဝင်သည်။ ကတ်တလောက်ပါ စျေးနှုန်းများသည် 2024 ခုနှစ် ဧပြီလမှ စ၍ အသုံးပြုနိုင်သည်။",
+    "zh": "清迈安纳塔拉度假村的附加服务清单列出花束 ฿1,500、手持花环 ฿2,500。其 ฿189,000 西式婚礼套餐含新娘花束和两位伴娘的胸花。手册价格自 2024 年 4 月起有效。",
+    "de": "Die Zusatzleistungen des Anantara Chiang Mai Resort nennen einen Strauss für ฿1,500 und eine Handgirlande für ฿2,500. Das westliche Hochzeitspaket für ฿189,000 enthält den Brautstrauss und zwei Corsagen für Brautjungfern. Die Preise der Broschüre gelten ab April 2024."
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  }
+ ],
+ "related": [
+  "wedding",
+  "lanna-wedding",
+  "date-pick",
+  "tribute",
+  "event-plan",
+  "legalise"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Foundation: Thai wedding customs, including what the couple wears",
+    "th": "มูลนิธิไทยแลนด์: ประเพณีงานแต่งไทย รวมถึงชุดที่บ่าวสาวสวม",
+    "my": "Thailand Foundation - ထိုင်းမင်္ဂလာဆောင် ဓလေ့များ၊ စုံတွဲဝတ်ဆင်သည့် ဝတ်စုံ အပါအဝင်",
+    "zh": "Thailand Foundation：泰国婚礼习俗，包括新人的服饰",
+    "de": "Thailand Foundation: Thailändische Hochzeitsbräuche, auch was das Paar trägt"
+   },
+   "href": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai dress and suit shops, boutiques and tailors",
+    "th": "ร้านชุดเจ้าสาวและชุดสูท บูติก และร้านตัดเย็บในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ ဝတ်စုံနှင့် ဝတ်ကုတ်ဆိုင်များ၊ ဘူတိတ်ဆိုင်များနှင့် ချုပ်ဆရာများ",
+    "zh": "清迈的礼服和西装店、精品店与裁缝店",
+    "de": "Kleider- und Anzuggeschäfte, Boutiquen und Schneidereien in Chiang Mai"
+   },
+   "href": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai hair and makeup artists",
+    "th": "ช่างแต่งหน้าทำผมในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ ဆံပင်နှင့် မျက်နှာအလှပြင်ဆရာများ",
+    "zh": "清迈的发型化妆师",
+    "de": "Haar- und Make-up-Artists in Chiang Mai"
+   },
+   "href": "https://www.centerwedding.com/chiang-mai/stylists/"
+  },
+  {
+   "t": {
+    "en": "Mot Dang: a Lanna honeymoon with a su khwan rite and an optional Lanna wedding",
+    "th": "มดแดง: ฮันนีมูนล้านนา พร้อมพิธีสู่ขวัญ และงานแต่งล้านนาตามต้องการ",
+    "my": "Mot Dang - လန်နာ ဟန်နီမွန်း၊ စုခွမ်း ဓလေ့ပြုလုပ်ခြင်းနှင့် လိုလျှင် လန်နာမင်္ဂလာပွဲ",
+    "zh": "Mot Dang：兰纳蜜月，含素昆（su khwan）仪式，可加办兰纳婚礼",
+    "de": "Mot Dang: Lanna-Flitterwochen mit Su-Khwan-Ritual und auf Wunsch einer Lanna-Hochzeit"
+   },
+   "href": "https://motdang.net/sites/su-khwan"
+  }
+ ],
+ "glyphs": [
+  "sparkle",
+  "scissors",
+  "camera"
+ ]
+}

@@ -1,0 +1,336 @@
+{
+ "id": "grab",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Shops list on delivery apps to sell to people who order food at home, and each app has its own sign-up, papers and review time.",
+  "th": "ร้านอาหารลงแอปเดลิเวอรี่เพื่อขายให้คนที่สั่งอาหารมากินที่บ้าน และแต่ละแอปมีขั้นตอนสมัคร เอกสาร และระยะเวลาตรวจสอบของตัวเอง",
+  "my": "ဆိုင်များသည် အိမ်တွင် အစားအစာမှာယူသူများထံ ရောင်းချရန် ပို့ဆောင်ရေးအက်ပ်များပေါ် တင်ကြပြီး အက်ပ်တစ်ခုစီတွင် စာရင်းသွင်းပုံ၊ စာရွက်စာတမ်းနှင့် စစ်ဆေးချိန် ကိုယ်စီရှိသည်။",
+  "zh": "餐馆上外卖平台，是为了卖给在家点餐的人；每个平台的注册流程、所需文件和审核时间各不相同。",
+  "de": "Lokale stellen sich auf Lieferdienst-Apps, um an Leute zu verkaufen, die sich Essen nach Hause bestellen; jede App hat ihre eigene Anmeldung, eigene Unterlagen und eigene Prüfzeit."
+ },
+ "n": {
+  "de": "Grab, LINE MAN oder ShopeeFood für Ihren Laden"
+ },
+ "l": {
+  "de": "Anmeldung, Speisekartenfotos und -namen, Antworten auf Bewertungen."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "Your documents and the sign-up form are filled in with you.",
+    "th": "กรอกใบสมัครและเตรียมเอกสารไปพร้อมกับคุณ",
+    "my": "လျှောက်လွှာနှင့် စာရွက်စာတမ်းများကို သင်နှင့်အတူ ဖြည့်စွက်ပြင်ဆင်သည်။",
+    "zh": "和您一起填好申请表、备齐文件。",
+    "de": "Anmeldeformular und Unterlagen werden gemeinsam mit Ihnen ausgefüllt."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "Day one",
+    "th": "วันแรก",
+    "my": "ပထမနေ့",
+    "zh": "第一天",
+    "de": "Tag eins"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "The platform reviews the application.",
+    "th": "แพลตฟอร์มตรวจสอบใบสมัคร",
+    "my": "ပလက်ဖောင်းက လျှောက်လွှာကို စစ်ဆေးသည်။",
+    "zh": "平台审核申请。",
+    "de": "Die Plattform prüft den Antrag."
+   },
+   "who": {
+    "en": "Grab, LINE MAN or ShopeeFood",
+    "th": "Grab, LINE MAN หรือ ShopeeFood",
+    "my": "Grab၊ LINE MAN သို့မဟုတ် ShopeeFood",
+    "zh": "Grab、LINE MAN 或 ShopeeFood",
+    "de": "Grab, LINE MAN oder ShopeeFood"
+   },
+   "time": {
+    "en": "Grab: 3–5 working days; ShopeeFood: 7–10",
+    "th": "Grab 3–5 วันทำการ ShopeeFood 7–10 วันทำการ",
+    "my": "Grab အလုပ်ရက် 3–5 ရက်၊ ShopeeFood 7–10 ရက်",
+    "zh": "Grab 3–5 个工作日；ShopeeFood 7–10 个工作日",
+    "de": "Grab: 3–5 Werktage; ShopeeFood: 7–10"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "The first menu goes in: up to 40 items, photos fixed, names in Thai and English.",
+    "th": "ใส่เมนูแรกไม่เกิน 40 รายการ แต่งรูป และตั้งชื่อเมนูไทยและอังกฤษ",
+    "my": "ပထမမီနူးကို ထည့်သွင်းသည် — ပစ္စည်း 40 အထိ၊ ပုံများ ပြင်ဆင်ပြီး ထိုင်းနှင့် အင်္ဂလိပ်အမည်များဖြင့်။",
+    "zh": "录入首个菜单：最多 40 项，修好照片，菜名用泰文和英文。",
+    "de": "Die erste Speisekarte kommt hinein: bis zu 40 Gerichte, Fotos aufbereitet, Namen auf Thai und Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After approval",
+    "th": "หลังอนุมัติ",
+    "my": "အတည်ပြုပြီးနောက်",
+    "zh": "批准之后",
+    "de": "Nach der Zusage"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "For a Thai sole proprietor, Grab's merchant page lists a copy of the ID card (the applicant is 20 or older and the card is not expired) and a copy of a bank statement or passbook from Kasikorn, Krungthai or Krungsri. The account is a savings or a current account.",
+    "th": "สำหรับเจ้าของกิจการบุคคลธรรมดาชาวไทย หน้าสมัครร้านค้าของ Grab ระบุสำเนาบัตรประชาชน (ผู้สมัครอายุ 20 ปีขึ้นไป และบัตรยังไม่หมดอายุ) และสำเนารายการเดินบัญชีหรือสมุดบัญชีของธนาคารกสิกรไทย กรุงไทย หรือกรุงศรี โดยเป็นบัญชีออมทรัพย์หรือบัญชีกระแสรายวัน",
+    "my": "ထိုင်းနိုင်ငံသား တစ်ဦးတည်းပိုင် လုပ်ငန်းအတွက် Grab ၏ ကုန်သည်စာမျက်နှာတွင် မှတ်ပုံတင်ကတ်မိတ္တူ (လျှောက်ထားသူ အသက် 20 နှင့်အထက်ဖြစ်ပြီး ကတ်သက်တမ်း မကုန်ရ) နှင့် Kasikorn၊ Krungthai သို့မဟုတ် Krungsri ဘဏ်၏ စာရင်းရှင်းတမ်း သို့မဟုတ် စာအုပ်မိတ္တူကို ဖော်ပြထားသည်။ စာရင်းသည် ငွေစုစာရင်း သို့မဟုတ် လက်ရှိငွေစာရင်း (current account) ဖြစ်သည်။",
+    "zh": "对泰国个体经营者，Grab 商户页面列出：身份证复印件（申请人年满 20 岁，证件未过期），以及开泰银行（Kasikorn）、泰京银行（Krungthai）或大城银行（Krungsri）的流水单或存折复印件，账户为储蓄账户或活期账户。",
+    "de": "Für ein thailändisches Einzelunternehmen nennt die Händlerseite von Grab die Kopie der ID-Karte (Antragsteller ab 20 Jahren, Karte nicht abgelaufen) und die Kopie eines Kontoauszugs oder Sparbuchs von Kasikorn, Krungthai oder Krungsri. Das Konto ist ein Spar- oder ein Kontokorrentkonto."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "t": {
+    "en": "For a foreign owner, the same page lists a passport that is not expired, a work permit, a foreign business licence (FBL), proof of a Thai address such as a lease or bills, and the owner's bank account.",
+    "th": "สำหรับเจ้าของที่เป็นชาวต่างชาติ หน้าเดียวกันระบุหนังสือเดินทางที่ยังไม่หมดอายุ ใบอนุญาตทำงาน ใบอนุญาตประกอบธุรกิจของคนต่างด้าว (FBL) หลักฐานที่อยู่ในไทย เช่น สัญญาเช่าหรือใบแจ้งหนี้ค่าน้ำค่าไฟ และบัญชีธนาคารของเจ้าของ",
+    "my": "နိုင်ငံခြားသားပိုင်ရှင်အတွက် ထိုစာမျက်နှာတွင် သက်တမ်းမကုန်သော ပတ်စပို့၊ အလုပ်လုပ်ခွင့်ပါမစ်၊ နိုင်ငံခြားသားစီးပွားရေးလုပ်ငန်းလိုင်စင် (FBL)၊ ထိုင်းနိုင်ငံရှိ နေထိုင်ရာအထောက်အထား (ဥပမာ အိမ်ငှားစာချုပ် သို့မဟုတ် ဘီလ်များ) နှင့် ပိုင်ရှင်၏ ဘဏ်စာရင်းကို ဖော်ပြထားသည်။",
+    "zh": "对外国籍店主，同一页面列出：未过期的护照、工作许可证、外国人经营许可证（FBL）、泰国住址证明（如租约或账单），以及店主的银行账户。",
+    "de": "Für eine ausländische Inhaberin oder einen ausländischen Inhaber nennt dieselbe Seite einen gültigen Reisepass, eine Arbeitsbewilligung, die Geschäftsbewilligung für Ausländer (FBL), einen Nachweis der Adresse in Thailand wie einen Mietvertrag oder Rechnungen und das Bankkonto der Person."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "t": {
+    "en": "Grab's merchant page says the approval email with the e-contract comes in 3–5 working days after a website application. Its steps for an app application say 1–3 working days. After the contract is signed, the shop adds its menu, photos and details in the GrabMerchant app and unpauses the store.",
+    "th": "หน้าสมัครของ Grab ระบุว่าอีเมลอนุมัติพร้อมสัญญาอิเล็กทรอนิกส์ส่งให้ภายใน 3–5 วันทำการหลังสมัครทางเว็บไซต์ ส่วนขั้นตอนของการสมัครผ่านแอประบุ 1–3 วันทำการ หลังเซ็นสัญญา ร้านใส่เมนู รูป และรายละเอียดร้านในแอป GrabMerchant แล้วเปิดร้านให้รับออเดอร์",
+    "my": "Grab ၏ စာမျက်နှာတွင် ဝဘ်ဆိုက်မှ လျှောက်ထားပါက e-စာချုပ်ပါ အတည်ပြုအီးမေးလ်ကို အလုပ်ရက် 3–5 ရက်အတွင်း ပို့သည်ဟု ဆိုသည်။ အက်ပ်မှ လျှောက်ထားခြင်း၏ အဆင့်များတွင် အလုပ်ရက် 1–3 ရက်ဟု ဖော်ပြသည်။ စာချုပ်ကို လက်မှတ်ရေးထိုးပြီးနောက် ဆိုင်သည် GrabMerchant အက်ပ်တွင် မီနူး၊ ပုံများနှင့် အသေးစိတ်များ ထည့်ပြီး ဆိုင်ကို ပြန်ဖွင့်သည်။",
+    "zh": "Grab 商户页面写明，网站申请后 3–5 个工作日内发来附电子合同的批准邮件；通过应用申请的步骤里写的是 1–3 个工作日。合同签署后，店家在 GrabMerchant 应用里录入菜单、照片和店铺信息，并解除暂停。",
+    "de": "Laut der Händlerseite von Grab kommt die Zusage mit dem E-Vertrag nach einer Anmeldung über die Website innerhalb von 3–5 Werktagen. In den Schritten für die App-Anmeldung stehen 1–3 Werktage. Nach der Unterschrift trägt das Lokal in der GrabMerchant-App Speisekarte, Fotos und Angaben ein und hebt die Pause des Ladens auf."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "t": {
+    "en": "ShopeeFood's help centre says a shop applies in the Shopee Partner app, fills in its details, attaches documents and is verified with an ID card and a bank account. The system reviews and approves within 7–10 working days after the form is sent.",
+    "th": "ศูนย์ช่วยเหลือของ ShopeeFood ระบุว่าร้านสมัครผ่านแอป Shopee Partner กรอกข้อมูลและแนบเอกสาร แล้วยืนยันตัวตนด้วยบัตรประชาชนและบัญชีธนาคาร ระบบตรวจสอบและอนุมัติภายใน 7–10 วันทำการนับจากส่งแบบฟอร์ม",
+    "my": "ShopeeFood ၏ အကူအညီစင်တာတွင် ဆိုင်သည် Shopee Partner အက်ပ်မှ လျှောက်ထားပြီး အချက်အလက်များ ဖြည့်ကာ စာရွက်စာတမ်းများ တွဲပြီး မှတ်ပုံတင်ကတ်နှင့် ဘဏ်စာရင်းဖြင့် အတည်ပြုရသည်ဟု ဆိုသည်။ ပုံစံပို့ပြီးနောက် စနစ်က အလုပ်ရက် 7–10 ရက်အတွင်း စစ်ဆေးအတည်ပြုသည်။",
+    "zh": "ShopeeFood 帮助中心写明，店家通过 Shopee Partner 应用申请，填写资料并附上文件，用身份证和银行账户验证身份；表格提交后，系统在 7–10 个工作日内审核并批准。",
+    "de": "Laut dem Hilfecenter von ShopeeFood meldet sich ein Lokal in der App Shopee Partner an, füllt die Angaben aus, hängt Unterlagen an und bestätigt sich mit ID-Karte und Bankkonto. Das System prüft und genehmigt innerhalb von 7–10 Werktagen nach dem Absenden des Formulars."
+   },
+   "src": "https://help.shopee.co.th/portal/1/article/115806-[ShopeeFood-Partner]-%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2-ShopeeFood"
+  },
+  {
+   "t": {
+    "en": "Wongnai's page on joining LINE MAN GP through the Wongnai Merchant App, dated 27 August 2021, lists a copy of the ID card (age 20 or older) and a copy of a savings account book for a sole proprietor. A company adds a VAT registration copy (ภ.พ. 20) and a company certificate, and the account is in the company's name.",
+    "th": "หน้าของ Wongnai เรื่องการสมัคร LINE MAN GP ผ่านแอป Wongnai Merchant ลงวันที่ 27 สิงหาคม 2564 ระบุสำเนาบัตรประชาชน (อายุ 20 ปีขึ้นไป) และสำเนาสมุดบัญชีออมทรัพย์สำหรับบุคคลธรรมดา ส่วนบริษัทเพิ่มสำเนาใบทะเบียนภาษีมูลค่าเพิ่ม (ภ.พ. 20) และหนังสือรับรองบริษัท โดยบัญชีเป็นชื่อของบริษัท",
+    "my": "Wongnai Merchant အက်ပ်မှ LINE MAN GP သို့ ဝင်ရောက်ခြင်းအကြောင်း Wongnai ၏ စာမျက်နှာ (2021 ခုနှစ် ဩဂုတ်လ 27 ရက်စွဲ) တွင် တစ်ဦးတစ်ယောက်ပိုင်လုပ်ငန်းအတွက် မှတ်ပုံတင်ကတ်မိတ္တူ (အသက် 20 နှင့်အထက်) နှင့် စုငွေစာအုပ်မိတ္တူကို ဖော်ပြသည်။ ကုမ္ပဏီတစ်ခုက VAT မှတ်ပုံတင်မိတ္တူ (ภ.พ. 20) နှင့် ကုမ္ပဏီအသိအမှတ်ပြုလက်မှတ်ကို ထပ်ထည့်ပြီး စာရင်းသည် ကုမ္ပဏီအမည်ဖြင့် ဖြစ်သည်။",
+    "zh": "Wongnai 关于通过 Wongnai Merchant 应用加入 LINE MAN GP 的页面（日期为 2021 年 8 月 27 日）列出：个体经营者需身份证复印件（年满 20 岁）和储蓄存折复印件；公司另加增值税登记复印件（ภ.พ. 20）和公司证书，账户须以公司名义开立。",
+    "de": "Die Seite von Wongnai zum Beitritt zu LINE MAN GP über die Wongnai Merchant App (Datum: 27. August 2021) nennt für Einzelunternehmen die Kopie der ID-Karte (ab 20 Jahren) und die Kopie eines Sparbuchs. Eine Firma ergänzt die MWST-Registrierung (ภ.พ. 20) und das Firmenzertifikat, und das Konto lautet auf die Firma."
+   },
+   "src": "https://www.wongnai.com/business-owners/faq-how-to-gp-lineman"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Grab: sign-up fee and commission",
+    "th": "Grab: ค่าสมัครและค่าคอมมิชชั่น",
+    "my": "Grab: စာရင်းသွင်းကြေးနှင့် ကော်မရှင်",
+    "zh": "Grab：注册费和佣金",
+    "de": "Grab: Anmeldegebühr und Provision"
+   },
+   "p": {
+    "en": "No sign-up fee; up to 30% of the order value",
+    "th": "ไม่มีค่าสมัคร หักสูงสุด 30% ของมูลค่าออเดอร์",
+    "my": "စာရင်းသွင်းကြေး မရှိ၊ အော်ဒါတန်ဖိုး၏ 30% အထိ",
+    "zh": "无注册费；最高抽取订单金额的 30%",
+    "de": "Keine Anmeldegebühr; bis zu 30 % des Bestellwerts"
+   },
+   "src": "https://www.grab.com/th/en/merchant-blog/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/"
+  },
+  {
+   "t": {
+    "en": "Fast Marketing on Fastwork: a shop opened on delivery apps, menu and prices uploaded",
+    "th": "Fast Marketing บน Fastwork: เปิดร้านบนแอปเดลิเวอรี่ ลงเมนูและราคา",
+    "my": "Fastwork ပေါ်ရှိ Fast Marketing: ပို့ဆောင်ရေးအက်ပ်များတွင် ဆိုင်ဖွင့်၊ မီနူးနှင့် စျေးနှုန်း တင်ပေးခြင်း",
+    "zh": "Fastwork 上的 Fast Marketing：在外卖应用开店，上传菜单和价格",
+    "de": "Fast Marketing auf Fastwork: Laden auf Lieferdienst-Apps eröffnet, Speisekarte und Preise eingetragen"
+   },
+   "p": {
+    "en": "฿890 for 1 app, ฿1,500 for 2, ฿1,990 for 3; 3 days of work, then 5–7 working days for the apps' approval",
+    "th": "1 แอป ฿890 2 แอป ฿1,500 3 แอป ฿1,990 ทำงาน 3 วัน แล้วรออนุมัติจากแอป 5–7 วันทำการ",
+    "my": "အက်ပ် 1 ခု ฿890၊ 2 ခု ฿1,500၊ 3 ခု ฿1,990၊ အလုပ်လုပ်ချိန် 3 ရက်၊ ထို့နောက် အက်ပ်များ၏ အတည်ပြုချက် အလုပ်ရက် 5–7 ရက်",
+    "zh": "1 个应用 ฿890，2 个 ฿1,500，3 个 ฿1,990；工作 3 天，之后平台审批 5–7 个工作日",
+    "de": "฿890 für 1 App, ฿1,500 für 2, ฿1,990 für 3; 3 Tage Arbeit, danach 5–7 Werktage bis zur Zusage der Apps"
+   },
+   "src": "https://fastwork.co/user/linlawee/shop-registration-and-listing-21217132"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer: a shop opened on LINE MAN, Grab or ShopeeFood",
+    "th": "ฟรีแลนซ์บน Fastwork: เปิดร้านบน LINE MAN, Grab หรือ ShopeeFood",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး: LINE MAN၊ Grab သို့မဟုတ် ShopeeFood တွင် ဆိုင်ဖွင့်ပေးခြင်း",
+    "zh": "Fastwork 自由职业者：在 LINE MAN、Grab 或 ShopeeFood 开店",
+    "de": "Freelancer auf Fastwork: Laden auf LINE MAN, Grab oder ShopeeFood eröffnet"
+   },
+   "p": {
+    "en": "฿1,890 for one app, 3 days; ฿5,500 for two apps, 7 days",
+    "th": "1 แอป ฿1,890 3 วัน 2 แอป ฿5,500 7 วัน",
+    "my": "အက်ပ် 1 ခု ฿1,890 (3 ရက်)၊ 2 ခု ฿5,500 (7 ရက်)",
+    "zh": "1 个应用 ฿1,890，3 天；2 个应用 ฿5,500，7 天",
+    "de": "฿1,890 für eine App, 3 Tage; ฿5,500 für zwei Apps, 7 Tage"
+   },
+   "src": "https://fastwork.co/user/nawaaek/shop-registration-and-listing-63891112"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer: a menu update, or 5 menu photos edited",
+    "th": "ฟรีแลนซ์บน Fastwork: ปรับเมนู หรือแต่งรูปเมนู 5 รูป",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး: မီနူး အသစ်ပြင်ခြင်း သို့မဟုတ် မီနူးပုံ 5 ပုံ ပြင်ခြင်း",
+    "zh": "Fastwork 自由职业者：更新菜单，或修 5 张菜单照片",
+    "de": "Freelancer auf Fastwork: Speisekarte aktualisiert oder 5 Menüfotos bearbeitet"
+   },
+   "p": {
+    "en": "฿999 each, 2 days",
+    "th": "อย่างละ ฿999 2 วัน",
+    "my": "တစ်ခုလျှင် ฿999၊ 2 ရက်",
+    "zh": "各 ฿999，2 天",
+    "de": "je ฿999, 2 Tage"
+   },
+   "src": "https://fastwork.co/user/nawaaek/shop-registration-and-listing-63891112"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a restaurant need to sign up for GrabFood?",
+    "th": "ร้านอาหารต้องใช้อะไรบ้างในการสมัคร GrabFood",
+    "my": "GrabFood စာရင်းသွင်းရန် စားသောက်ဆိုင်တစ်ခုတွင် ဘာတွေ လိုအပ်သနည်း။",
+    "zh": "餐厅申请 GrabFood 需要什么？",
+    "de": "Was braucht ein Lokal für die Anmeldung bei GrabFood?"
+   },
+   "a": {
+    "en": "A Thai sole proprietor brings a copy of the ID card and a copy of a bank statement or passbook from Kasikorn, Krungthai or Krungsri. A Thai company brings its registration certificate, VAT certificate (PP20), shareholders' list, a committee member's ID card and a company bank account copy. Both lists are on Grab's merchant page.",
+    "th": "เจ้าของกิจการบุคคลธรรมดาชาวไทยใช้สำเนาบัตรประชาชนและสำเนารายการเดินบัญชีหรือสมุดบัญชีของธนาคารกสิกรไทย กรุงไทย หรือกรุงศรี ส่วนบริษัทไทยใช้หนังสือรับรองบริษัท ใบทะเบียนภาษีมูลค่าเพิ่ม (ภ.พ. 20) บัญชีรายชื่อผู้ถือหุ้น (บอจ.5) บัตรประชาชนของกรรมการ และสำเนาบัญชีธนาคารของบริษัท รายการทั้งสองอยู่ในหน้าสมัครร้านค้าของ Grab",
+    "my": "ထိုင်းနိုင်ငံသား တစ်ဦးတည်းပိုင်လုပ်ငန်းသည် မှတ်ပုံတင်ကတ်မိတ္တူနှင့် Kasikorn၊ Krungthai သို့မဟုတ် Krungsri ဘဏ်၏ စာရင်းရှင်းတမ်း သို့မဟုတ် စာအုပ်မိတ္တူကို ယူလာသည်။ ထိုင်းကုမ္ပဏီသည် ကုမ္ပဏီမှတ်ပုံတင်လက်မှတ်၊ VAT လက်မှတ် (PP20)၊ ရှယ်ယာရှင်စာရင်း၊ ကော်မတီအဖွဲ့ဝင်၏ မှတ်ပုံတင်ကတ်နှင့် ကုမ္ပဏီဘဏ်စာရင်းမိတ္တူကို ယူလာသည်။ စာရင်းနှစ်ခုစလုံးသည် Grab ၏ ကုန်သည်စာမျက်နှာတွင် ရှိသည်။",
+    "zh": "泰国个体经营者带身份证复印件，以及开泰银行、泰京银行或大城银行的流水单或存折复印件。泰国公司带公司注册证书、增值税证书（PP20）、股东名单、董事身份证和公司银行账户复印件。两份清单都在 Grab 的商户页面上。",
+    "de": "Ein thailändisches Einzelunternehmen legt die Kopie der ID-Karte und die Kopie eines Kontoauszugs oder Sparbuchs von Kasikorn, Krungthai oder Krungsri vor. Eine thailändische Firma legt Handelsregisterauszug, MWST-Zertifikat (PP20), Aktionärsliste, die ID-Karte eines Komiteemitglieds und die Kopie des Firmenkontos vor. Beide Listen stehen auf der Händlerseite von Grab."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "q": {
+    "en": "How much does GrabFood charge a restaurant?",
+    "th": "GrabFood หักค่าบริการร้านอาหารเท่าไร",
+    "my": "GrabFood က စားသောက်ဆိုင်ထံမှ ဘယ်လောက် ကောက်ခံသနည်း။",
+    "zh": "GrabFood 向餐厅收多少费用？",
+    "de": "Wie viel verlangt GrabFood von einem Lokal?"
+   },
+   "a": {
+    "en": "Grab's merchant blog, posted 9 August 2024, says there is no entry or sign-up fee, and that Grab keeps up to 30% of the order value. The post also mentions a monthly service fee as a share of sales and gives no rate for it.",
+    "th": "บล็อกร้านค้าของ Grab โพสต์เมื่อ 9 สิงหาคม 2567 ระบุว่าไม่มีค่าธรรมเนียมแรกเข้าหรือค่าสมัคร และ Grab หักสูงสุด 30% ของมูลค่าออเดอร์ โพสต์ยังกล่าวถึงค่าบริการรายเดือนที่คิดเป็นสัดส่วนของยอดขาย แต่ไม่ระบุอัตรา",
+    "my": "Grab ၏ ကုန်သည်ဘလော့ဂ် (2024 ခုနှစ် ဩဂုတ်လ 9 ရက်ပို့စ်) တွင် ဝင်ကြေး သို့မဟုတ် စာရင်းသွင်းကြေး မရှိဟုလည်းကောင်း၊ Grab သည် အော်ဒါတန်ဖိုး၏ 30% အထိ ယူသည်ဟုလည်းကောင်း ဆိုသည်။ ရောင်းအား၏ အချိုးအစားဖြင့် လစဉ်ဝန်ဆောင်ခရှိကြောင်း ဖော်ပြသော်လည်း နှုန်းထားကို မဖော်ပြပါ။",
+    "zh": "Grab 商户博客（2024 年 8 月 9 日发布）写明没有入驻费或注册费，Grab 最高抽取订单金额的 30%。该文还提到按销售额比例收取的月服务费，但没有给出比例。",
+    "de": "Der Händlerblog von Grab (Beitrag vom 9. August 2024) nennt keine Eintritts- oder Anmeldegebühr, und Grab behält bis zu 30 % des Bestellwerts. Der Beitrag erwähnt auch eine monatliche Servicegebühr als Anteil am Umsatz, ohne einen Satz anzugeben."
+   },
+   "src": "https://www.grab.com/th/en/merchant-blog/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/"
+  },
+  {
+   "q": {
+    "en": "How long does Grab take to approve a shop?",
+    "th": "Grab ใช้เวลาอนุมัติร้านนานแค่ไหน",
+    "my": "Grab က ဆိုင်ကို အတည်ပြုရန် ဘယ်လောက်ကြာသနည်း။",
+    "zh": "Grab 审批店铺要多久？",
+    "de": "Wie lange braucht Grab, um einen Laden zu genehmigen?"
+   },
+   "a": {
+    "en": "Grab's merchant page gives 3–5 working days for the approval email after a website application, and 1–3 working days in the steps for an app application. After the contract is signed, the GrabMerchant app guide arrives within 2 hours.",
+    "th": "หน้าสมัครของ Grab ระบุ 3–5 วันทำการสำหรับอีเมลอนุมัติหลังสมัครทางเว็บไซต์ และ 1–3 วันทำการในขั้นตอนของการสมัครผ่านแอป หลังเซ็นสัญญา คู่มือการใช้แอป GrabMerchant ส่งถึงภายใน 2 ชั่วโมง",
+    "my": "Grab ၏ ကုန်သည်စာမျက်နှာတွင် ဝဘ်ဆိုက်မှ လျှောက်ထားပါက အတည်ပြုအီးမေးလ်အတွက် အလုပ်ရက် 3–5 ရက်၊ အက်ပ်မှ လျှောက်ထားခြင်း၏ အဆင့်များတွင် အလုပ်ရက် 1–3 ရက် ဟု ဖော်ပြသည်။ စာချုပ်လက်မှတ်ရေးထိုးပြီး 2 နာရီအတွင်း GrabMerchant အက်ပ်အသုံးပြုနည်းလမ်းညွှန် ရောက်သည်။",
+    "zh": "Grab 商户页面写明，网站申请后批准邮件需 3–5 个工作日，应用申请的步骤里是 1–3 个工作日。签约后 2 小时内会收到 GrabMerchant 应用使用指南。",
+    "de": "Die Händlerseite von Grab nennt 3–5 Werktage bis zur Zusage nach einer Anmeldung über die Website und 1–3 Werktage in den Schritten für die App-Anmeldung. Nach der Unterschrift trifft die Anleitung zur GrabMerchant-App innerhalb von 2 Stunden ein."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner sign up a shop on Grab?",
+    "th": "ชาวต่างชาติสมัครร้านบน Grab ได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦးက Grab တွင် ဆိုင်စာရင်းသွင်းနိုင်ပါသလား။",
+    "zh": "外国人能在 Grab 上开店吗？",
+    "de": "Kann ein Ausländer einen Laden bei Grab anmelden?"
+   },
+   "a": {
+    "en": "Grab's merchant page lists papers for foreigners: a passport, a work permit, a foreign business licence (FBL), proof of a Thai address and the owner's bank account. A foreign-owned company brings the same company papers as a Thai one, plus the licence and the committee members' passports.",
+    "th": "หน้าสมัครของ Grab ระบุเอกสารสำหรับชาวต่างชาติ ได้แก่ หนังสือเดินทาง ใบอนุญาตทำงาน ใบอนุญาตประกอบธุรกิจของคนต่างด้าว (FBL) หลักฐานที่อยู่ในไทย และบัญชีธนาคารของเจ้าของ บริษัทที่มีชาวต่างชาติเป็นเจ้าของใช้เอกสารบริษัทชุดเดียวกับบริษัทไทย เพิ่ม FBL และหนังสือเดินทางของกรรมการ",
+    "my": "Grab ၏ ကုန်သည်စာမျက်နှာတွင် နိုင်ငံခြားသားများအတွက် စာရွက်စာတမ်းများ — ပတ်စပို့၊ အလုပ်လုပ်ခွင့်ပါမစ်၊ နိုင်ငံခြားသားစီးပွားရေးလုပ်ငန်းလိုင်စင် (FBL)၊ ထိုင်းနိုင်ငံရှိ နေထိုင်ရာအထောက်အထားနှင့် ပိုင်ရှင်၏ ဘဏ်စာရင်း — တို့ကို ဖော်ပြထားသည်။ နိုင်ငံခြားသားပိုင် ကုမ္ပဏီသည် ထိုင်းကုမ္ပဏီနှင့် တူသော ကုမ္ပဏီစာရွက်စာတမ်းများအပြင် လိုင်စင်နှင့် ကော်မတီအဖွဲ့ဝင်များ၏ ပတ်စပို့ကို ယူလာသည်။",
+    "zh": "Grab 商户页面列出了外国人所需文件：护照、工作许可证、外国人经营许可证（FBL）、泰国住址证明和店主的银行账户。外资公司提交与泰国公司相同的公司文件，另加许可证和董事护照。",
+    "de": "Die Händlerseite von Grab nennt für Ausländer einen Reisepass, eine Arbeitsbewilligung, die Geschäftsbewilligung für Ausländer (FBL), einen Nachweis der Adresse in Thailand und das Bankkonto der Inhaberin oder des Inhabers. Eine Firma in ausländischer Hand legt dieselben Firmenunterlagen vor wie eine thailändische, dazu die Bewilligung und die Pässe der Komiteemitglieder."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "q": {
+    "en": "How does a shop join LINE MAN?",
+    "th": "ร้านสมัครเข้า LINE MAN ได้อย่างไร",
+    "my": "ဆိုင်တစ်ဆိုင်က LINE MAN သို့ ဘယ်လို ဝင်ရောက်သနည်း။",
+    "zh": "店铺怎样加入 LINE MAN？",
+    "de": "Wie tritt ein Laden LINE MAN bei?"
+   },
+   "a": {
+    "en": "Wongnai's 2021 guide describes the steps: open the Wongnai Merchant App, tap the GP Partnership banner on the Home tab, press สมัคร LINE MAN GP and upload the papers. The papers are signed by hand. The guide gives no approval time or GP rate, and the page is dated 27 August 2021.",
+    "th": "คู่มือของ Wongnai ปี 2564 อธิบายขั้นตอนว่า เปิดแอป Wongnai Merchant กดแบนเนอร์ GP Partnership ในหน้า Home กด สมัคร LINE MAN GP แล้วอัปโหลดเอกสาร เอกสารเซ็นกำกับด้วยลายมือ คู่มือไม่ระบุระยะเวลาอนุมัติหรืออัตรา GP และหน้านี้ลงวันที่ 27 สิงหาคม 2564",
+    "my": "Wongnai ၏ 2021 လမ်းညွှန်တွင် အဆင့်များကို ဖော်ပြထားသည် — Wongnai Merchant အက်ပ်ကို ဖွင့်၊ Home တက်ဘ်ရှိ GP Partnership ဘန်နာကို နှိပ်၊ สมัคร LINE MAN GP ကို နှိပ်ပြီး စာရွက်စာတမ်းများ တင်သည်။ စာရွက်များကို လက်ဖြင့် လက်မှတ်ရေးထိုးသည်။ လမ်းညွှန်တွင် အတည်ပြုချိန်နှင့် GP နှုန်း မပါပါ၊ စာမျက်နှာသည် 2021 ခုနှစ် ဩဂုတ်လ 27 ရက်စွဲ ဖြစ်သည်။",
+    "zh": "Wongnai 2021 年的指南列出步骤：打开 Wongnai Merchant 应用，点首页的 GP Partnership 横幅，按 สมัคร LINE MAN GP 并上传文件；文件手写签名。指南没有给出审批时间和 GP 比例，页面日期为 2021 年 8 月 27 日。",
+    "de": "Die Anleitung von Wongnai aus dem Jahr 2021 beschreibt die Schritte: Wongnai Merchant App öffnen, auf dem Home-Tab das Banner GP Partnership antippen, สมัคร LINE MAN GP drücken und die Unterlagen hochladen. Die Unterlagen werden von Hand unterschrieben. Die Anleitung nennt weder eine Prüfzeit noch einen GP-Satz; die Seite trägt das Datum 27. August 2021."
+   },
+   "src": "https://www.wongnai.com/business-owners/faq-how-to-gp-lineman"
+  }
+ ],
+ "related": [
+  "restaurant-desk",
+  "trade-photos",
+  "signs",
+  "print",
+  "fb-care",
+  "ordering"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Grab: merchant sign-up, papers and steps",
+    "th": "Grab: สมัครร้านค้า เอกสาร และขั้นตอน",
+    "my": "Grab: ကုန်သည်စာရင်းသွင်းခြင်း၊ စာရွက်စာတမ်းနှင့် အဆင့်များ",
+    "zh": "Grab：商户注册、文件与步骤",
+    "de": "Grab: Händleranmeldung, Unterlagen und Schritte"
+   },
+   "href": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "t": {
+    "en": "ShopeeFood: how a shop applies",
+    "th": "ShopeeFood: วิธีสมัครร้านค้า",
+    "my": "ShopeeFood: ဆိုင်လျှောက်ထားပုံ",
+    "zh": "ShopeeFood：店铺如何申请",
+    "de": "ShopeeFood: So meldet sich ein Laden an"
+   },
+   "href": "https://help.shopee.co.th/portal/1/article/115806-[ShopeeFood-Partner]-%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2-ShopeeFood"
+  }
+ ],
+ "glyphs": [
+  "scooter",
+  "noodles",
+  "telephone"
+ ]
+}

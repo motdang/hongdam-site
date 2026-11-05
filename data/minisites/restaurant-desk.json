@@ -1,0 +1,336 @@
+{
+ "id": "restaurant-desk",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Prices on delivery apps and new reviews come in week after week, and an owner who runs a kitchen has little time to read them.",
+  "th": "ราคาบนแอปเดลิเวอรี่และรีวิวใหม่เข้ามาทุกสัปดาห์ แต่เจ้าของร้านที่ดูแลครัวอยู่แทบไม่มีเวลาไล่อ่าน",
+  "my": "ပို့ဆောင်ရေးအက်ပ်ပေါ်ရှိ စျေးနှုန်းများနှင့် သုံးသပ်ချက်အသစ်များ အပတ်စဉ် ဝင်လာပြီး မီးဖိုချောင်ကို ကိုယ်တိုင်ထိန်းသည့် ပိုင်ရှင်တွင် ထိုအရာများကို ဖတ်ရန် အချိန်နည်းသည်။",
+  "zh": "外卖平台上的价格和新评价每周都在更新，而要照看后厨的老板很少有时间逐条去看。",
+  "de": "Preise auf den Lieferdienst-Apps und neue Bewertungen kommen Woche für Woche herein, und wer eine Küche führt, hat wenig Zeit, sie zu lesen."
+ },
+ "n": {
+  "de": "Restaurant-Service"
+ },
+ "l": {
+  "de": "Preise der Konkurrenz und auf Grab, Speisekartenpreise, Antworten auf Bewertungen, wöchentlich."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "Competitors' prices and Grab prices are gathered on one page.",
+    "th": "รวมราคาของคู่แข่งและราคาบน Grab ไว้ในหน้าเดียว",
+    "my": "ပြိုင်ဘက်များ၏ စျေးနှုန်းနှင့် Grab ပေါ်ရှိ စျေးနှုန်းများကို စာမျက်နှာတစ်ခုတည်းတွင် စုစည်းသည်။",
+    "zh": "把竞争对手的价格和 Grab 上的价格汇总到一页。",
+    "de": "Preise der Konkurrenz und Preise auf Grab werden auf einer Seite zusammengestellt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Weekly",
+    "th": "รายสัปดาห์",
+    "my": "အပတ်စဉ်",
+    "zh": "每周",
+    "de": "Wöchentlich"
+   }
+  },
+  {
+   "db": "abacus",
+   "t": {
+    "en": "Menu prices are set to follow demand.",
+    "th": "ตั้งราคาเมนูให้ขยับตามความต้องการ",
+    "my": "မီနူးစျေးနှုန်းများကို ဝယ်လိုအားနှင့်အညီ ပြောင်းလဲအောင် သတ်မှတ်သည်။",
+    "zh": "菜单价格随需求浮动。",
+    "de": "Die Preise auf der Speisekarte folgen der Nachfrage."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Weekly",
+    "th": "รายสัปดาห์",
+    "my": "အပတ်စဉ်",
+    "zh": "每周",
+    "de": "Wöchentlich"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "Reviews are answered.",
+    "th": "ตอบรีวิว",
+    "my": "သုံးသပ်ချက်များကို ပြန်ဖြေသည်။",
+    "zh": "回复评价。",
+    "de": "Bewertungen werden beantwortet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Weekly",
+    "th": "รายสัปดาห์",
+    "my": "အပတ်စဉ်",
+    "zh": "每周",
+    "de": "Wöchentlich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Grab keeps up to 30% of the order value from a restaurant on GrabFood. Its merchant blog says there is no sign-up fee.",
+    "th": "Grab หักสูงสุด 30% ของมูลค่าออเดอร์จากร้านอาหารบน GrabFood และบล็อกร้านค้าของ Grab ระบุว่าไม่มีค่าสมัคร",
+    "my": "Grab သည် GrabFood ရှိ စားသောက်ဆိုင်ထံမှ အော်ဒါတန်ဖိုး၏ 30% အထိ ယူပြီး Grab ၏ ကုန်သည်ဘလော့ဂ်တွင် စာရင်းသွင်းကြေး မရှိဟု ဆိုသည်။",
+    "zh": "Grab 最高抽取 GrabFood 餐厅订单金额的 30%；其商户博客写明没有注册费。",
+    "de": "Grab behält von einem Lokal auf GrabFood bis zu 30 % des Bestellwerts. Im Händlerblog steht, dass es keine Anmeldegebühr gibt."
+   },
+   "src": "https://www.grab.com/th/en/merchant-blog/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/"
+  },
+  {
+   "t": {
+    "en": "Grab's merchant page says its service fee is deducted before payment, and payment follows within 1–2 business days.",
+    "th": "หน้าสมัครของ Grab ระบุว่าหักค่าบริการก่อนจ่ายเงิน และจ่ายเงินภายใน 1–2 วันทำการ",
+    "my": "Grab ၏ ကုန်သည်စာမျက်နှာတွင် ငွေမပေးမီ ဝန်ဆောင်ခကို နှုတ်ယူပြီး ငွေပေးချေမှုကို ရုံးဖွင့်ရက် 1–2 ရက်အတွင်း ပြုလုပ်သည်ဟု ဆိုသည်။",
+    "zh": "Grab 商户页面写明，服务费在付款前扣除，款项在 1–2 个工作日内到账。",
+    "de": "Laut der Händlerseite von Grab wird die Servicegebühr vor der Auszahlung abgezogen, und die Auszahlung folgt innerhalb von 1–2 Werktagen."
+   },
+   "src": "https://www.grab.com/th/en/merchant/food/"
+  },
+  {
+   "t": {
+    "en": "Google's help page says a business has to be verified before it replies to reviews. A reply shows publicly under the review, Google checks it first (usually within about 10 minutes, sometimes up to 30 days), and the reviewer is notified.",
+    "th": "หน้าช่วยเหลือของ Google ระบุว่าธุรกิจต้องยืนยันตัวตนก่อนจึงตอบรีวิวได้ คำตอบแสดงต่อสาธารณะใต้รีวิว Google ตรวจก่อน (ปกติภายในราว 10 นาที บางครั้งนานถึง 30 วัน) และผู้เขียนรีวิวจะได้รับแจ้ง",
+    "my": "Google ၏ အကူအညီစာမျက်နှာတွင် သုံးသပ်ချက်များကို မဖြေမီ လုပ်ငန်းကို အတည်ပြုရမည်ဟု ဆိုသည်။ ပြန်ကြားချက်သည် သုံးသပ်ချက်အောက်တွင် လူအများမြင်ရအောင် ပေါ်ပြီး Google က ဦးစွာ စစ်ဆေးသည် (များသောအားဖြင့် 10 မိနစ်ခန့်၊ တစ်ခါတစ်ရံ 30 ရက်အထိ)။ သုံးသပ်ချက်ရေးသူကို အကြောင်းကြားသည်။",
+    "zh": "Google 帮助页面写明，商家须先通过验证才能回复评价。回复会公开显示在评价下方，Google 先审核（通常约 10 分钟，有时长达 30 天），并通知写评价的人。",
+    "de": "Auf der Hilfeseite von Google steht, dass ein Betrieb zuerst verifiziert sein muss, bevor er auf Bewertungen antwortet. Die Antwort erscheint öffentlich unter der Bewertung, Google prüft sie zuerst (meist innerhalb von rund 10 Minuten, manchmal bis zu 30 Tage), und die Verfasserin oder der Verfasser wird benachrichtigt."
+   },
+   "src": "https://support.google.com/business/answer/3474050?hl=en"
+  },
+  {
+   "t": {
+    "en": "In February 2024 the Department of Internal Trade told food vendors to show the quantity and price of each product on a sign. The same article says restaurants may not raise food prices for visitors from abroad, and gives the hotline 1569.",
+    "th": "เมื่อกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ขายอาหารให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน บทความเดียวกันระบุว่าร้านอาหารห้ามปรับขึ้นราคาอาหารกับนักท่องเที่ยวชาวต่างชาติ และให้สายด่วน 1569",
+    "my": "2024 ခုနှစ် ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက အစားအစာရောင်းသူများကို ကုန်ပစ္စည်းတစ်ခုစီ၏ အရေအတွက်နှင့် စျေးနှုန်းကို ဆိုင်းဘုတ်ပေါ်တွင် ပြသရန် ပြောကြားခဲ့သည်။ ထိုဆောင်းပါးတွင် စားသောက်ဆိုင်များသည် နိုင်ငံခြားမှ လာသူများအတွက် အစားအစာစျေးကို မြှင့်၍မရဟုလည်း ဆိုပြီး ဟော့လိုင်း 1569 ကို ပေးထားသည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求食品摊贩用牌子清楚标明每种商品的数量和价格。同一篇报道写明，餐厅不得对外国游客抬高餐价，并给出热线 1569。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade Anbieter von Speisen auf, Menge und Preis jedes Produkts deutlich auf einem Schild anzugeben. Im selben Artikel steht, dass Restaurants die Essenspreise für Gäste aus dem Ausland nicht erhöhen dürfen; genannt wird die Hotline 1569."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "t": {
+    "en": "Foodpanda stopped serving Thailand on 23 May 2025.",
+    "th": "Foodpanda ยุติให้บริการในไทยเมื่อ 23 พฤษภาคม 2568",
+    "my": "Foodpanda သည် 2025 မေ 23 တွင် ထိုင်း၌ ဝန်ဆောင်မှု ရပ်ခဲ့သည်။",
+    "zh": "Foodpanda 于 2025 年 5 月 23 日停止在泰国服务。",
+    "de": "Foodpanda hat den Dienst in Thailand am 23. Mai 2025 eingestellt."
+   },
+   "src": "https://thelowdown.momentum.asia/foodpanda-exits-thailand-after-13-years-what-happened%ef%bc%9f-impulso-e117"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Google Business Profile care from a Thai agency: profile set-up, over 20 photos, review replies, weekly Google posts",
+    "th": "ดูแล Google Business Profile โดยเอเจนซี่ไทย: ตั้งค่าโปรไฟล์ รูปมากกว่า 20 รูป ตอบรีวิว โพสต์ Google รายสัปดาห์",
+    "my": "ထိုင်းအေဂျင်စီတစ်ခု၏ Google Business Profile စောင့်ရှောက်မှု — ပရိုဖိုင်ပြင်ဆင်ခြင်း၊ ပုံ 20 ကျော်၊ သုံးသပ်ချက်ပြန်ဖြေခြင်း၊ အပတ်စဉ် Google ပို့စ်များ",
+    "zh": "泰国代理机构的 Google Business Profile 维护：设置资料、20 多张照片、回复评价、每周发 Google 动态",
+    "de": "Pflege des Google Business Profile durch eine thailändische Agentur: Profil, über 20 Fotos, Antworten auf Bewertungen, wöchentliche Google-Beiträge"
+   },
+   "p": {
+    "en": "From ฿1,900 a month; no binding contract; 30-day free trial",
+    "th": "เริ่ม ฿1,900 ต่อเดือน ไม่มีสัญญาผูกมัด ทดลองฟรี 30 วัน",
+    "my": "လစဉ် ฿1,900 မှစ၊ စာချုပ်ချည်နှောင်မှု မရှိ၊ 30 ရက် အခမဲ့စမ်းသုံးခွင့်",
+    "zh": "每月 ฿1,900 起；无合约；30 天免费试用",
+    "de": "ab ฿1,900 im Monat; kein bindender Vertrag; 30 Tage kostenlos testen"
+   },
+   "src": "https://www.loyalcloudcrm.com/google-map/"
+  },
+  {
+   "t": {
+    "en": "Google Maps work in a Thai price guide",
+    "th": "งาน Google Maps ในคู่มือราคาของไทย",
+    "my": "ထိုင်းစျေးနှုန်းလမ်းညွှန်တစ်ခုရှိ Google Maps လုပ်ငန်း",
+    "zh": "泰国价格指南中的 Google 地图服务",
+    "de": "Google-Maps-Arbeit in einem thailändischen Preisratgeber"
+   },
+   "p": {
+    "en": "฿1,500–5,000 once for a basic set-up; ฿5,000–30,000 a month for Google Maps SEO",
+    "th": "ตั้งค่าพื้นฐานครั้งเดียว ฿1,500–5,000 Google Maps SEO รายเดือน ฿5,000–30,000",
+    "my": "အခြေခံပြင်ဆင်မှု တစ်ကြိမ် ฿1,500–5,000၊ Google Maps SEO လစဉ် ฿5,000–30,000",
+    "zh": "基础设置一次性 ฿1,500–5,000；Google 地图 SEO 每月 ฿5,000–30,000",
+    "de": "฿1,500–5,000 einmalig für die Grundeinrichtung; ฿5,000–30,000 im Monat für Google-Maps-SEO"
+   },
+   "src": "https://www.knmasters.com/google-maps-pin-service-cost/"
+  },
+  {
+   "t": {
+    "en": "A Fastwork page admin: comments and inbox answered, 10:00–20:00",
+    "th": "แอดมินเพจบน Fastwork: ตอบคอมเมนต์และอินบ็อกซ์ 10:00–20:00",
+    "my": "Fastwork ရှိ စာမျက်နှာ အက်ဒမင်: comment နှင့် inbox ဖြေခြင်း၊ 10:00–20:00",
+    "zh": "Fastwork 页面管理员：回复评论和私信，10:00–20:00",
+    "de": "Seitenbetreuung auf Fastwork: Kommentare und Posteingang beantwortet, 10:00–20:00"
+   },
+   "p": {
+    "en": "฿6,000 for 30 days",
+    "th": "฿6,000 ต่อ 30 วัน",
+    "my": "30 ရက်လျှင် ฿6,000",
+    "zh": "30 天 ฿6,000",
+    "de": "฿6,000 für 30 Tage"
+   },
+   "src": "https://fastwork.co/user/nookkiee/shop-and-page-admin-18445507"
+  },
+  {
+   "t": {
+    "en": "Fast Marketing on Fastwork: a restaurant listed on delivery apps, menu and prices uploaded",
+    "th": "Fast Marketing บน Fastwork: ลงร้านบนแอปเดลิเวอรี่ พร้อมเมนูและราคา",
+    "my": "Fastwork ပေါ်ရှိ Fast Marketing: ပို့ဆောင်ရေးအက်ပ်များတွင် ဆိုင်တင်၊ မီနူးနှင့် စျေးနှုန်း တင်ပေးခြင်း",
+    "zh": "Fastwork 上的 Fast Marketing：餐厅上外卖应用，上传菜单和价格",
+    "de": "Fast Marketing auf Fastwork: Lokal auf Lieferdienst-Apps eingetragen, Speisekarte und Preise hochgeladen"
+   },
+   "p": {
+    "en": "฿890 for 1 app, ฿1,500 for 2, ฿1,990 for 3",
+    "th": "1 แอป ฿890 2 แอป ฿1,500 3 แอป ฿1,990",
+    "my": "အက်ပ် 1 ခု ฿890၊ 2 ခု ฿1,500၊ 3 ခု ฿1,990",
+    "zh": "1 个应用 ฿890，2 个 ฿1,500，3 个 ฿1,990",
+    "de": "฿890 für 1 App, ฿1,500 für 2, ฿1,990 für 3"
+   },
+   "src": "https://fastwork.co/user/linlawee/shop-registration-and-listing-21217132"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How does a restaurant reply to a Google review?",
+    "th": "ร้านอาหารตอบรีวิว Google ได้อย่างไร",
+    "my": "စားသောက်ဆိုင်က Google သုံးသပ်ချက်ကို ဘယ်လို ပြန်ဖြေသနည်း။",
+    "zh": "餐厅怎样回复 Google 评价？",
+    "de": "Wie antwortet ein Lokal auf eine Google-Bewertung?"
+   },
+   "a": {
+    "en": "Google's steps: on the Business Profile, select Read reviews, press Reply next to a review, write the text and press Reply. The business has to be verified first. The reply is public, and the reviewer is notified.",
+    "th": "ขั้นตอนของ Google: ในโปรไฟล์ธุรกิจ เลือก Read reviews กด Reply ข้างรีวิว พิมพ์ข้อความ แล้วกด Reply ธุรกิจต้องยืนยันตัวตนก่อน คำตอบแสดงต่อสาธารณะ และผู้เขียนรีวิวจะได้รับแจ้ง",
+    "my": "Google ၏ အဆင့်များ — Business Profile တွင် Read reviews ကို ရွေး၊ သုံးသပ်ချက်၏ ဘေးရှိ Reply ကို နှိပ်၊ စာသားရေးပြီး Reply ကို နှိပ်သည်။ လုပ်ငန်းကို ဦးစွာ အတည်ပြုထားရသည်။ ပြန်ကြားချက်သည် လူသိရှင်ကြား ပေါ်ပြီး သုံးသပ်ချက်ရေးသူကို အကြောင်းကြားသည်။",
+    "zh": "Google 的步骤：在商家资料中选“Read reviews”，点评价旁的“Reply”，写好文字再按“Reply”。商家须先通过验证。回复公开显示，写评价的人会收到通知。",
+    "de": "Die Schritte laut Google: im Unternehmensprofil «Read reviews» wählen, neben der Bewertung «Reply» drücken, den Text schreiben und nochmals «Reply» drücken. Der Betrieb muss zuerst verifiziert sein. Die Antwort ist öffentlich, und die Verfasserin oder der Verfasser wird benachrichtigt."
+   },
+   "src": "https://support.google.com/business/answer/3474050?hl=en"
+  },
+  {
+   "q": {
+    "en": "Can a restaurant delete a bad Google review?",
+    "th": "ร้านอาหารลบรีวิวแย่ๆ บน Google ได้ไหม",
+    "my": "စားသောက်ဆိုင်က Google ရှိ မကောင်းသော သုံးသပ်ချက်ကို ဖျက်နိုင်ပါသလား။",
+    "zh": "餐厅能删除 Google 上的差评吗？",
+    "de": "Kann ein Lokal eine schlechte Google-Bewertung löschen?"
+   },
+   "a": {
+    "en": "Google's page describes flagging a review that breaks its content policies. It does not say an owner can delete a review. An owner can delete their own reply.",
+    "th": "หน้าของ Google อธิบายการแจ้งรีวิวที่ผิดนโยบายเนื้อหา และไม่ได้ระบุว่าเจ้าของลบรีวิวได้ เจ้าของลบคำตอบของตัวเองได้",
+    "my": "Google ၏ စာမျက်နှာတွင် အကြောင်းအရာမူဝါဒကို ချိုးဖောက်သော သုံးသပ်ချက်ကို အလံပြခြင်းအကြောင်း ဖော်ပြထားသည်။ ပိုင်ရှင်က သုံးသပ်ချက်ကို ဖျက်နိုင်သည်ဟု မဆိုပါ။ ပိုင်ရှင်သည် မိမိ၏ ပြန်ကြားချက်ကို ဖျက်နိုင်သည်။",
+    "zh": "Google 的页面介绍的是举报违反内容政策的评价，没有说店主可以删除评价。店主可以删除自己的回复。",
+    "de": "Die Seite von Google beschreibt das Melden einer Bewertung, die gegen die Inhaltsrichtlinien verstösst. Dass eine Inhaberin oder ein Inhaber eine Bewertung löschen kann, steht dort nicht. Die eigene Antwort lässt sich löschen."
+   },
+   "src": "https://support.google.com/business/answer/3474050?hl=en"
+  },
+  {
+   "q": {
+    "en": "How much does Grab take from a restaurant?",
+    "th": "Grab หักเงินจากร้านอาหารเท่าไร",
+    "my": "Grab က စားသောက်ဆိုင်ထံမှ ဘယ်လောက် ယူသနည်း။",
+    "zh": "Grab 从餐厅抽成多少？",
+    "de": "Wie viel behält Grab von einem Lokal?"
+   },
+   "a": {
+    "en": "Grab's merchant blog, posted 9 August 2024, says Grab keeps up to 30% of the order value and charges no sign-up fee. The post also mentions a monthly service fee as a share of sales, with no rate.",
+    "th": "บล็อกร้านค้าของ Grab โพสต์เมื่อ 9 สิงหาคม 2567 ระบุว่า Grab หักสูงสุด 30% ของมูลค่าออเดอร์ และไม่คิดค่าสมัคร โพสต์ยังกล่าวถึงค่าบริการรายเดือนที่คิดเป็นสัดส่วนของยอดขาย โดยไม่ระบุอัตรา",
+    "my": "Grab ၏ ကုန်သည်ဘလော့ဂ် (2024 ခုနှစ် ဩဂုတ်လ 9 ရက်ပို့စ်) တွင် Grab သည် အော်ဒါတန်ဖိုး၏ 30% အထိ ယူပြီး စာရင်းသွင်းကြေး မယူဟု ဆိုသည်။ ရောင်းအားအချိုးအစားဖြင့် လစဉ်ဝန်ဆောင်ခကိုလည်း ဖော်ပြသော်လည်း နှုန်းထား မပါပါ။",
+    "zh": "Grab 商户博客（2024 年 8 月 9 日发布）写明 Grab 最高抽取订单金额的 30%，不收注册费；文中还提到按销售额比例收取的月服务费，但没有给出比例。",
+    "de": "Im Händlerblog von Grab (Beitrag vom 9. August 2024) steht, dass Grab bis zu 30 % des Bestellwerts behält und keine Anmeldegebühr verlangt. Erwähnt wird auch eine monatliche Servicegebühr als Anteil am Umsatz, ohne Satz."
+   },
+   "src": "https://www.grab.com/th/en/merchant-blog/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/"
+  },
+  {
+   "q": {
+    "en": "What does Google Business Profile care cost a month?",
+    "th": "ดูแล Google Business Profile รายเดือนราคาเท่าไร",
+    "my": "Google Business Profile စောင့်ရှောက်မှု လစဉ် ဘယ်လောက်ကျသနည်း။",
+    "zh": "Google Business Profile 维护每月多少钱？",
+    "de": "Was kostet die Pflege eines Google Business Profile im Monat?"
+   },
+   "a": {
+    "en": "One Thai agency lists a bundle from ฿1,900 a month: profile set-up, verification, over 20 photos, about 20 directory listings, a plan for requesting reviews, review replies, weekly Google posts and ranking reports. It lists no binding contract, 7 days' notice to cancel and a 30-day free trial.",
+    "th": "เอเจนซี่ไทยรายหนึ่งระบุแพ็กเกจเริ่ม ฿1,900 ต่อเดือน ได้แก่ ตั้งค่าโปรไฟล์ ยืนยันธุรกิจ รูปมากกว่า 20 รูป ลงทะเบียนไดเรกทอรีราว 20 แห่ง แผนขอรีวิวจากลูกค้า ตอบรีวิว โพสต์ Google รายสัปดาห์ และรายงานอันดับ ไม่มีสัญญาผูกมัด ยกเลิกแจ้งล่วงหน้า 7 วัน และทดลองฟรี 30 วัน",
+    "my": "ထိုင်းအေဂျင်စီတစ်ခုသည် လစဉ် ฿1,900 မှစသော အစုံလိုက်ကို ဖော်ပြထားသည် — ပရိုဖိုင်ပြင်ဆင်ခြင်း၊ အတည်ပြုခြင်း၊ ပုံ 20 ကျော်၊ လမ်းညွှန်စာရင်း 20 ခန့်၊ သုံးသပ်ချက်တောင်းခံရန် အစီအစဉ်၊ သုံးသပ်ချက်ပြန်ဖြေခြင်း၊ အပတ်စဉ် Google ပို့စ်များနှင့် အဆင့်အတန်းအစီရင်ခံစာများ။ စာချုပ်ချည်နှောင်မှု မရှိ၊ ပယ်ဖျက်ရန် 7 ရက်ကြိုပြော၊ 30 ရက် အခမဲ့စမ်းသုံးခွင့် ရှိသည်။",
+    "zh": "一家泰国代理机构列出每月 ฿1,900 起的套餐：设置资料、验证、20 多张照片、约 20 个目录收录、征集评价的方案、回复评价、每周 Google 动态和排名报告。无合约，取消须提前 7 天通知，另有 30 天免费试用。",
+    "de": "Eine thailändische Agentur führt ein Paket ab ฿1,900 im Monat auf: Profil einrichten, Verifizierung, über 20 Fotos, rund 20 Verzeichniseinträge, einen Plan für Bewertungsanfragen, Antworten auf Bewertungen, wöchentliche Google-Beiträge und Rankingberichte. Es gibt keinen bindenden Vertrag, 7 Tage Kündigungsfrist und 30 Tage kostenlosen Test."
+   },
+   "src": "https://www.loyalcloudcrm.com/google-map/"
+  },
+  {
+   "q": {
+    "en": "Must a restaurant put its prices on display?",
+    "th": "ร้านอาหารต้องแสดงราคาหรือไม่",
+    "my": "စားသောက်ဆိုင်က စျေးနှုန်းများကို ပြသရမည်လား။",
+    "zh": "餐厅必须标出价格吗？",
+    "de": "Muss ein Lokal seine Preise anschreiben?"
+   },
+   "a": {
+    "en": "In February 2024 the Department of Internal Trade told food vendors to show the quantity and price of each product on a sign, so a customer sees the price before buying. The same article gives its hotline, 1569, for reports about overpricing.",
+    "th": "เมื่อกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ขายอาหารให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน เพื่อให้ลูกค้าเห็นราคาก่อนซื้อ บทความเดียวกันให้สายด่วน 1569 สำหรับแจ้งเรื่องขายสินค้าราคาสูงเกินไป",
+    "my": "2024 ခုနှစ် ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက အစားအစာရောင်းသူများကို ဝယ်သူက မဝယ်မီ စျေးကြည့်နိုင်စေရန် ကုန်ပစ္စည်းတစ်ခုစီ၏ အရေအတွက်နှင့် စျေးနှုန်းကို ဆိုင်းဘုတ်ပေါ်တွင် ပြသရန် ပြောကြားခဲ့သည်။ ထိုဆောင်းပါးတွင် စျေးကြီးခြင်းဆိုင်ရာ တိုင်ကြားရန် ဟော့လိုင်း 1569 ကို ပေးထားသည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求食品摊贩用牌子标明每种商品的数量和价格，让顾客在买之前看到价格。同一篇报道给出举报价格过高的热线 1569。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade Anbieter von Speisen auf, Menge und Preis jedes Produkts auf einem Schild anzugeben, damit die Kundschaft den Preis vor dem Kauf sieht. Derselbe Artikel nennt die Hotline 1569 für Meldungen über überhöhte Preise."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  }
+ ],
+ "related": [
+  "grab",
+  "signs",
+  "trade-photos",
+  "ads-run",
+  "fb-care",
+  "price-watch"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Business Profile Help: read and reply to reviews",
+    "th": "ความช่วยเหลือ Google Business Profile: อ่านและตอบรีวิว",
+    "my": "Google Business Profile အကူအညီ: သုံးသပ်ချက်များ ဖတ်ခြင်းနှင့် ပြန်ဖြေခြင်း",
+    "zh": "Google Business Profile 帮助：查看并回复评价",
+    "de": "Google Business Profile Hilfe: Bewertungen lesen und beantworten"
+   },
+   "href": "https://support.google.com/business/answer/3474050?hl=en"
+  },
+  {
+   "t": {
+    "en": "Grab: what a restaurant pays and prepares to join",
+    "th": "Grab: ค่าใช้จ่ายและสิ่งที่ร้านต้องเตรียมเพื่อสมัคร",
+    "my": "Grab: ဆိုင်က ပေးရသည့်စရိတ်နှင့် ပြင်ဆင်ရမည့်အရာများ",
+    "zh": "Grab：餐厅要付的费用和入驻前要备的材料",
+    "de": "Grab: Was ein Lokal bezahlt und für den Beitritt vorbereitet"
+   },
+   "href": "https://www.grab.com/th/en/merchant-blog/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B9%87%E0%B8%9A%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/"
+  }
+ ],
+ "glyphs": [
+  "noodles",
+  "abacus",
+  "chat"
+ ]
+}

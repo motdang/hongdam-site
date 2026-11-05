@@ -1,0 +1,275 @@
+{
+ "id": "romanise",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A set of Thai names needs one English spelling, and the Royal Institute's system writes the sound of each Thai word, not its letters.",
+  "th": "ชุดชื่อภาษาไทยต้องมีการสะกดภาษาอังกฤษแบบเดียวกัน และระบบของราชบัณฑิตยสถานเขียนตามเสียงของคำไทย ไม่ใช่ตามตัวอักษร",
+  "my": "ထိုင်းအမည်စုတစ်ခုလုံးအတွက် အင်္ဂလိပ်စာလုံးပေါင်း တစ်မျိုးတည်း လိုပြီး ထိုင်း Royal Institute ၏ စနစ်သည် ထိုင်းစကားလုံး၏ အက္ခရာကို မဟုတ်ဘဲ အသံကို ရေးသည်။",
+  "zh": "一组泰文名称需要统一的英文拼写；泰国皇家学术院的体系按发音而不是按字母来写。",
+  "de": "Eine Reihe thailändischer Namen braucht eine einheitliche Schreibweise, und das System des Royal Institute schreibt den Klang eines Wortes, nicht seine Buchstaben."
+ },
+ "n": {
+  "de": "Thailändische Namen in lateinischer Schrift"
+ },
+ "l": {
+  "de": "Orte, Personen oder Produkte, eine einheitliche Schreibweise."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the list of Thai names: places, people or products.",
+    "th": "คุณส่งรายการชื่อภาษาไทย เช่น สถานที่ คน หรือสินค้า",
+    "my": "သင်က ထိုင်းအမည်စာရင်းကို ပို့သည်၊ နေရာ၊ လူ သို့မဟုတ် ကုန်ပစ္စည်းအမည်များ။",
+    "zh": "您发来泰文名称清单：地名、人名或产品名。",
+    "de": "Sie schicken die Liste der thailändischen Namen: Orte, Personen oder Produkte."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "typewriter",
+   "t": {
+    "en": "We write each name in Latin letters, in one spelling for the whole set.",
+    "th": "เราเขียนแต่ละชื่อเป็นอักษรโรมัน สะกดแบบเดียวกันทั้งชุด",
+    "my": "အမည်တစ်ခုချင်းစီကို လက်တင်အက္ခရာဖြင့် တစ်ခုလုံးတွင် စာလုံးပေါင်းတစ်မျိုးတည်း ရေးပေးသည်။",
+    "zh": "我们把每个名称写成拉丁字母，整套统一拼写。",
+    "de": "Wir schreiben jeden Namen in lateinischen Buchstaben, in einer einheitlichen Schreibweise für die ganze Reihe."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the list arrives",
+    "th": "หลังได้รับรายการ",
+    "my": "စာရင်းရောက်ပြီးနောက်",
+    "zh": "收到清单后",
+    "de": "Nach Eingang der Liste"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The list comes back to you in English letters.",
+    "th": "ส่งรายการที่เป็นอักษรอังกฤษกลับให้คุณ",
+    "my": "အင်္ဂလိပ်အက္ခရာဖြင့် ရေးထားသော စာရင်းကို သင့်ထံ ပြန်ပို့သည်။",
+    "zh": "用英文字母写成的清单回到您手中。",
+    "de": "Die Liste geht in lateinischen Buchstaben an Sie zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံးအဆင့်",
+    "zh": "最后一步",
+    "de": "Am Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In a paper Thailand gave to a UN conference on geographical names, the Royal Institute's transcription writes the sounds of Thai words whatever their spelling; tone marks, silencing marks and vowel length are left out.",
+    "th": "ในเอกสารที่ไทยเสนอต่อการประชุมสหประชาชาติว่าด้วยการกำหนดมาตรฐานชื่อภูมิศาสตร์ ระบบถอดอักษรของราชบัณฑิตยสถานเขียนตามเสียงของคำไทยโดยไม่คำนึงถึงตัวสะกดเดิม และไม่แสดงวรรณยุกต์ เครื่องหมายทัณฑฆาต หรือความยาวของสระ",
+    "my": "ထိုင်းနိုင်ငံက ကုလသမဂ္ဂ ပထဝီအမည်စံသတ်မှတ်ရေး ညီလာခံသို့ တင်သွင်းသော စာတမ်းတွင် Royal Institute ၏ အသံလိုက်ရေးနည်း (transcription) သည် မူလစာလုံးပေါင်းကို မထည့်သွင်းဘဲ ထိုင်းစကားလုံးများ၏ အသံကို ရေးသည်၊ အသံနေအသံထားမှတ်၊ အသံမထွက်မှတ်နှင့် သရရှည်တိုကို မဖော်ပြပါ။",
+    "zh": "泰国提交联合国地名标准化会议的文件写道，皇家学术院的转写法按发音书写泰语词，不管原拼写；声调符号、不发音符号和元音长短都略去。",
+    "de": "In einem Papier, das Thailand einer UN-Konferenz zur Normung geografischer Namen vorlegte, schreibt die Transkription des Royal Institute die Laute thailändischer Wörter unabhängig von der Originalschreibung; Tonzeichen, Zeichen für stumme Buchstaben und Vokallänge entfallen."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "t": {
+    "en": "The same paper says geographical names are not translated: Ko Si Chang, not Si Chang Island; Maenam Pa Sak, not Pa Sak River; Thanon Tha Phra, not Tha Phra Road.",
+    "th": "เอกสารเดียวกันระบุว่าชื่อทางภูมิศาสตร์ไม่แปล ให้ถอดอักษรตามกฎทั่วไป เช่น Ko Si Chang ไม่ใช่ Si Chang Island, Maenam Pa Sak ไม่ใช่ Pa Sak River, Thanon Tha Phra ไม่ใช่ Tha Phra Road",
+    "my": "ထိုစာတမ်းတွင် ပထဝီအမည်များကို မဘာသာပြန်ဟု ဆိုသည်၊ Ko Si Chang (Si Chang Island မဟုတ်)၊ Maenam Pa Sak (Pa Sak River မဟုတ်)၊ Thanon Tha Phra (Tha Phra Road မဟုတ်)။",
+    "zh": "同一文件写明地名不翻译：Ko Si Chang，不写 Si Chang Island；Maenam Pa Sak，不写 Pa Sak River；Thanon Tha Phra，不写 Tha Phra Road。",
+    "de": "Dasselbe Papier hält fest, dass geografische Namen nicht übersetzt werden: Ko Si Chang, nicht Si Chang Island; Maenam Pa Sak, nicht Pa Sak River; Thanon Tha Phra, nicht Tha Phra Road."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "t": {
+    "en": "A proper name that is itself a borrowed word is written as in the original, for example First Class Co.Ltd.; a borrowed word that is only part of a name is written as it sounds in Thai.",
+    "th": "ชื่อเฉพาะที่เป็นคำยืมให้เขียนตามต้นฉบับ เช่น First Class Co.Ltd. ส่วนคำยืมที่เป็นเพียงส่วนหนึ่งของชื่อให้ถอดตามเสียงอ่านภาษาไทย",
+    "my": "ကိုယ်ပိုင်အမည်ဖြစ်သော ချေးယူစကားလုံးကို မူရင်းအတိုင်း ရေးသည်၊ ဥပမာ First Class Co.Ltd.။ အမည်၏ တစ်စိတ်တစ်ပိုင်းသာဖြစ်သော ချေးယူစကားလုံးကို ထိုင်းအသံထွက်အတိုင်း ရေးသည်။",
+    "zh": "本身就是外来词的专有名称按原文书写，如 First Class Co.Ltd.；只是名称一部分的外来词按泰语读音转写。",
+    "de": "Ein Eigenname, der selbst ein Lehnwort ist, wird wie im Original geschrieben, etwa First Class Co.Ltd.; ein Lehnwort, das nur Teil eines Namens ist, wird nach der thailändischen Aussprache geschrieben."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "t": {
+    "en": "Its examples include Nai Somchai Khonching for a person, Wat Duang Khae for a temple and Rongrian Sattri Witthaya for a school.",
+    "th": "ตัวอย่างในเอกสารมี Nai Somchai Khonching สำหรับชื่อบุคคล Wat Duang Khae สำหรับวัด และ Rongrian Sattri Witthaya สำหรับโรงเรียน",
+    "my": "စာတမ်းထဲက ဥပမာများတွင် လူအမည်အတွက် Nai Somchai Khonching၊ ဘုရားကျောင်းအတွက် Wat Duang Khae နှင့် ကျောင်းအတွက် Rongrian Sattri Witthaya တို့ ပါသည်။",
+    "zh": "文件中的例子有：人名 Nai Somchai Khonching、寺庙 Wat Duang Khae、学校 Rongrian Sattri Witthaya。",
+    "de": "Zu den Beispielen des Papiers gehören Nai Somchai Khonching für eine Person, Wat Duang Khae für einen Tempel und Rongrian Sattri Witthaya für eine Schule."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai–English standard translation at a Bangkok agency, priced by the word",
+    "th": "แปลทั่วไปไทย–อังกฤษที่สำนักงานแปลในกรุงเทพฯ คิดเป็นรายคำ",
+    "my": "ဘန်ကောက်ရှိ ဘာသာပြန်ကုမ္ပဏီတွင် ထိုင်း–အင်္ဂလိပ် ပုံမှန်ဘာသာပြန်၊ စကားလုံးအလိုက် တွက်သည်",
+    "zh": "曼谷翻译公司的泰英标准翻译，按词计价",
+    "de": "Standardübersetzung Thai–Englisch bei einer Agentur in Bangkok, nach Wörtern berechnet"
+   },
+   "p": {
+    "en": "From ฿1.5 a word",
+    "th": "เริ่มต้นคำละ ฿1.5",
+    "my": "စကားလုံးတစ်လုံး ฿1.5 မှ စသည်",
+    "zh": "每词 ฿1.5 起",
+    "de": "ab ฿1.5 pro Wort"
+   },
+   "src": "https://sawadeetranslations.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Thai–English translation, a top-selling Fastwork seller, priced by word count",
+    "th": "แปลไทย–อังกฤษ ผู้ขายยอดนิยมบน Fastwork คิดตามจำนวนคำ",
+    "my": "ထိုင်း–အင်္ဂလိပ် ဘာသာပြန်၊ Fastwork ရှိ အရောင်းရဆုံး ရောင်းသူတစ်ဦး၊ စကားလုံးအရေအတွက်ဖြင့် တွက်သည်",
+    "zh": "泰英翻译，Fastwork 上的热销卖家，按字数计价",
+    "de": "Übersetzung Thai–Englisch, ein meistverkaufter Anbieter auf Fastwork, nach Wortzahl berechnet"
+   },
+   "p": {
+    "en": "Packages from ฿250",
+    "th": "แพ็กเกจเริ่มต้น ฿250",
+    "my": "ပက်ကေ့ဂျ်များ ฿250 မှ စသည်",
+    "zh": "套餐 ฿250 起",
+    "de": "Pakete ab ฿250"
+   },
+   "src": "https://fastwork.co/user/jeepster/translation-25775476"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How are Thai names written in English letters?",
+    "th": "ชื่อภาษาไทยเขียนเป็นอักษรอังกฤษอย่างไร",
+    "my": "ထိုင်းအမည်များကို အင်္ဂလိပ်အက္ခရာဖြင့် ဘယ်လိုရေးသလဲ။",
+    "zh": "泰文名称怎样写成英文字母？",
+    "de": "Wie schreibt man thailändische Namen in lateinischen Buchstaben?"
+   },
+   "a": {
+    "en": "In Thailand's paper to a UN conference, the Royal Institute's transcription writes how a word sounds, whatever its Thai spelling. Its example for a person is Nai Somchai Khonching.",
+    "th": "ในเอกสารที่ไทยเสนอต่อการประชุมสหประชาชาติ ระบบถอดอักษรของราชบัณฑิตยสถานเขียนตามเสียงอ่านของคำ ไม่ว่าสะกดเป็นไทยอย่างไร ตัวอย่างชื่อบุคคลคือ Nai Somchai Khonching",
+    "my": "ထိုင်းနိုင်ငံက ကုလသမဂ္ဂ ညီလာခံသို့ တင်သွင်းသော စာတမ်းတွင် Royal Institute ၏ အသံလိုက်ရေးနည်းသည် ထိုင်းစာလုံးပေါင်း မည်သို့ပင်ဖြစ်စေ စကားလုံး၏ အသံထွက်အတိုင်း ရေးသည်။ လူအမည်ဥပမာမှာ Nai Somchai Khonching ဖြစ်သည်။",
+    "zh": "在泰国提交联合国会议的文件中，皇家学术院的转写法按词的读音书写，不管泰文怎么拼。人名的例子是 Nai Somchai Khonching。",
+    "de": "In Thailands Papier an eine UN-Konferenz schreibt die Transkription des Royal Institute, wie ein Wort klingt, gleich wie es auf Thai geschrieben wird. Das Beispiel für eine Person lautet Nai Somchai Khonching."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "q": {
+    "en": "Does the English spelling show tone marks?",
+    "th": "การสะกดภาษาอังกฤษแสดงวรรณยุกต์ไหม",
+    "my": "အင်္ဂလိပ်စာလုံးပေါင်းတွင် အသံနေအသံထားမှတ်များ ပါပါသလား။",
+    "zh": "英文拼写会标出声调吗？",
+    "de": "Zeigt die englische Schreibweise Tonzeichen?"
+   },
+   "a": {
+    "en": "Not in the Royal Institute's transcription. The paper says a tone mark, a diacritic including a silencing mark, and vowel length are ignored; the sound is what gets written.",
+    "th": "ไม่แสดงในระบบถอดอักษรของราชบัณฑิตยสถาน เอกสารระบุว่าวรรณยุกต์ เครื่องหมายกำกับ รวมทั้งทัณฑฆาต และความยาวของสระ ไม่นำมาแสดง เขียนเฉพาะเสียง",
+    "my": "Royal Institute ၏ အသံလိုက်ရေးနည်းတွင် မပါပါ။ စာတမ်းတွင် အသံနေအသံထားမှတ်၊ အသံမထွက်မှတ်အပါအဝင် အမှတ်အသားများနှင့် သရရှည်တိုတို့ကို လျစ်လျူရှုသည်၊ အသံကိုသာ ရေးသည်ဟု ဆိုသည်။",
+    "zh": "皇家学术院的转写法不标声调。文件写明，声调符号、含不发音符号在内的附加符号以及元音长短都略去，只写读音。",
+    "de": "In der Transkription des Royal Institute nicht. Das Papier hält fest, dass Tonzeichen, diakritische Zeichen samt Zeichen für stumme Buchstaben und die Vokallänge unberücksichtigt bleiben; geschrieben wird der Laut."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "q": {
+    "en": "How are Thai place names written?",
+    "th": "ชื่อสถานที่ในไทยเขียนอย่างไร",
+    "my": "ထိုင်းနေရာအမည်များကို ဘယ်လိုရေးသလဲ။",
+    "zh": "泰国地名怎么写？",
+    "de": "Wie schreibt man thailändische Ortsnamen?"
+   },
+   "a": {
+    "en": "The paper says geographical names are not translated, and the general transcription rules apply to the whole name, as in Ko Si Chang and Thanon Tha Phra.",
+    "th": "เอกสารระบุว่าชื่อทางภูมิศาสตร์ไม่แปล และใช้กฎการถอดอักษรทั่วไปกับทั้งชื่อ เช่น Ko Si Chang และ Thanon Tha Phra",
+    "my": "စာတမ်းတွင် ပထဝီအမည်များကို မဘာသာပြန်ဘဲ အမည်တစ်ခုလုံးတွင် ယေဘုယျ အသံလိုက်ရေးနည်းစည်းမျဉ်းများကို သုံးသည်ဟု ဆိုသည်၊ ဥပမာ Ko Si Chang နှင့် Thanon Tha Phra။",
+    "zh": "文件写明地名不翻译，整个名称适用一般转写规则，如 Ko Si Chang、Thanon Tha Phra。",
+    "de": "Das Papier hält fest, dass geografische Namen nicht übersetzt werden; die allgemeinen Transkriptionsregeln gelten für den ganzen Namen, etwa bei Ko Si Chang und Thanon Tha Phra."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "q": {
+    "en": "Are company names with English words changed?",
+    "th": "ชื่อบริษัทที่มีคำอังกฤษถูกเปลี่ยนไหม",
+    "my": "အင်္ဂလိပ်စကားလုံးပါသော ကုမ္ပဏီအမည်များကို ပြောင်းပါသလား။",
+    "zh": "含英文词的公司名称会改写吗？",
+    "de": "Werden Firmennamen mit englischen Wörtern verändert?"
+   },
+   "a": {
+    "en": "The paper says a borrowed word that is a proper name is written as in the original, for example First Class Co.Ltd. A borrowed word that is only part of a name is written as it sounds in Thai.",
+    "th": "เอกสารระบุว่าคำยืมที่เป็นชื่อเฉพาะให้เขียนตามต้นฉบับ เช่น First Class Co.Ltd. ส่วนคำยืมที่เป็นเพียงส่วนหนึ่งของชื่อให้เขียนตามเสียงอ่านภาษาไทย",
+    "my": "စာတမ်းတွင် ကိုယ်ပိုင်အမည်ဖြစ်သော ချေးယူစကားလုံးကို မူရင်းအတိုင်း ရေးသည်ဟု ဆိုသည်၊ ဥပမာ First Class Co.Ltd.။ အမည်၏ တစ်စိတ်တစ်ပိုင်းသာဖြစ်သော ချေးယူစကားလုံးကို ထိုင်းအသံထွက်အတိုင်း ရေးသည်။",
+    "zh": "文件写明，本身是专有名称的外来词按原文书写，如 First Class Co.Ltd.；只是名称一部分的外来词按泰语读音书写。",
+    "de": "Das Papier hält fest, dass ein Lehnwort, das ein Eigenname ist, wie im Original geschrieben wird, etwa First Class Co.Ltd. Ein Lehnwort, das nur Teil eines Namens ist, wird nach der thailändischen Aussprache geschrieben."
+   },
+   "src": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  }
+ ],
+ "related": [
+  "translate",
+  "lang-pages",
+  "signs",
+  "map-archive",
+  "german",
+  "site"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "UN conference paper: principles of romanization for Thai script",
+    "th": "เอกสารการประชุมสหประชาชาติ: หลักการถอดอักษรไทยเป็นอักษรโรมัน",
+    "my": "ကုလသမဂ္ဂညီလာခံစာတမ်း: ထိုင်းအက္ခရာကို ရိုမန်အက္ခရာသို့ ပြောင်းရေးသည့် မူများ",
+    "zh": "联合国会议文件：泰文罗马化原则",
+    "de": "UN-Konferenzpapier: Grundsätze der Romanisierung der Thai-Schrift"
+   },
+   "href": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.41.pdf"
+  },
+  {
+   "t": {
+    "en": "Royal Society of Thailand",
+    "th": "สำนักงานราชบัณฑิตยสภา",
+    "my": "ထိုင်းတော်ဝင်အကယ်ဒမီ (Royal Society of Thailand)",
+    "zh": "泰国皇家学术院",
+    "de": "Royal Society of Thailand"
+   },
+   "href": "https://www.orst.go.th/"
+  }
+ ],
+ "glyphs": [
+  "pin",
+  "typewriter",
+  "page"
+ ]
+}

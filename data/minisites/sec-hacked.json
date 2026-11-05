@@ -1,0 +1,343 @@
+{
+ "id": "sec-hacked",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A hacked site can send visitors to spam pages, and Google can put “This site may be hacked” under it in search results.",
+  "th": "เว็บที่ถูกแฮกอาจพาผู้เข้าชมไปหน้าสแปม และ Google อาจแสดงข้อความ “This site may be hacked” ใต้ผลค้นหา",
+  "my": "ဟက်ခံရသော ဆိုက်သည် ဧည့်သည်များကို စပမ်းစာမျက်နှာများသို့ ပို့နိုင်ပြီး Google က ရှာဖွေမှုရလဒ်အောက်တွင် “This site may be hacked” ဟု ပြနိုင်သည်။",
+  "zh": "被黑的网站可能把访客带到垃圾页面，Google 也可能在搜索结果里标上 “This site may be hacked”。",
+  "de": "Eine gehackte Website kann Besucher auf Spam-Seiten leiten, und Google kann in den Suchergebnissen „This site may be hacked“ darunter setzen."
+ },
+ "n": {
+  "de": "Gehackte Website bereinigen"
+ },
+ "l": {
+  "de": "Schadsoftware entfernt, der Zugang geschlossen, ein schriftlicher Bericht."
+ },
+ "glyphs": [
+  "skull",
+  "wrench",
+  "lock"
+ ],
+ "steps": [
+  {
+   "db": "save",
+   "t": {
+    "en": "We make a backup of your site first.",
+    "th": "เราสำรองเว็บของคุณก่อน",
+    "my": "ပထမဦးစွာ သင့်ဆိုက်ကို ကျွန်ုပ်တို့ အရန်သိမ်းသည်။",
+    "zh": "我们先备份您的网站。",
+    "de": "Wir sichern Ihre Website zuerst."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "We remove malware and back doors, close the way in, and change passwords and keys.",
+    "th": "เราลบมัลแวร์และประตูหลัง ปิดช่องทางที่ถูกเจาะ และเปลี่ยนรหัสผ่านและคีย์",
+    "my": "မယ်လ်ဝဲနှင့် နောက်ဖေးတံခါးများကို ဖယ်ရှားပြီး ဝင်လမ်းကို ပိတ်ကာ စကားဝှက်နှင့် ကီးများကို ပြောင်းလဲသည်။",
+    "zh": "我们清除恶意软件和后门，堵上入口，更换密码和密钥。",
+    "de": "Wir entfernen Schadsoftware und Hintertüren, schliessen den Zugang und ändern Passwörter und Schlüssel."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the backup",
+    "th": "หลังสำรองเสร็จ",
+    "my": "အရန်သိမ်းပြီးနောက်",
+    "zh": "备份之后",
+    "de": "Nach der Sicherung"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "We ask Google to review the site.",
+    "th": "เรายื่นขอให้ Google ตรวจเว็บใหม่",
+    "my": "ဆိုက်ကို ပြန်လည်စစ်ဆေးရန် Google ကို ကျွန်ုပ်တို့ တောင်းဆိုသည်။",
+    "zh": "我们请 Google 重新审查网站。",
+    "de": "Wir bitten Google um eine neue Prüfung der Website."
+   },
+   "who": {
+    "en": "Hongdam, then Google",
+    "th": "หงส์ดำ แล้วจึงเป็น Google",
+    "my": "ဟုန်ဒမ်၊ ထို့နောက် Google",
+    "zh": "鸿丹，然后是 Google",
+    "de": "Hongdam, dann Google"
+   },
+   "time": {
+    "en": "After the cleanup",
+    "th": "หลังทำความสะอาดเสร็จ",
+    "my": "ရှင်းလင်းပြီးနောက်",
+    "zh": "清理之后",
+    "de": "Nach der Bereinigung"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get a written report.",
+    "th": "คุณได้รับรายงานเป็นลายลักษณ์อักษร",
+    "my": "သင်က စာဖြင့်ရေးသော အစီရင်ခံစာကို ရရှိသည်။",
+    "zh": "您拿到一份书面报告。",
+    "de": "Sie erhalten einen schriftlichen Bericht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ตอนท้ายงาน",
+    "my": "အဆုံးတွင်",
+    "zh": "最后",
+    "de": "Am Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google shows “This site may be hacked” when it believes a hacker changed existing pages on a site or added spam pages. The notice stays until the site owner acts.",
+    "th": "Google แสดง “This site may be hacked” เมื่อเชื่อว่าแฮกเกอร์แก้หน้าเดิมของเว็บหรือเพิ่มหน้าสแปม ข้อความนี้อยู่จนกว่าเจ้าของเว็บจะดำเนินการ",
+    "my": "ဟက်ကာတစ်ဦးက ဆိုက်ရှိ စာမျက်နှာအဟောင်းများကို ပြောင်းလဲခဲ့သည်၊ သို့မဟုတ် စပမ်းစာမျက်နှာများ ထည့်ခဲ့သည်ဟု Google ယုံကြည်သောအခါ “This site may be hacked” ကို ပြသည်။ ဆိုက်ပိုင်ရှင် ဆောင်ရွက်သည်အထိ ဤသတိပေးချက် ရှိနေသည်။",
+    "zh": "当 Google 认为黑客改动了网站原有页面或添加了垃圾页面时，会显示 “This site may be hacked”。在站长采取行动之前，这条提示一直保留。",
+    "de": "Google zeigt „This site may be hacked“, wenn es annimmt, dass ein Hacker bestehende Seiten geändert oder Spam-Seiten hinzugefügt hat. Der Hinweis bleibt, bis der Website-Inhaber handelt."
+   },
+   "src": "https://support.google.com/websearch/answer/190597"
+  },
+  {
+   "t": {
+    "en": "Google's page says a site is likely to be reinfected if the way in is not fixed.",
+    "th": "หน้าของ Google ระบุว่าเว็บมีแนวโน้มถูกเจาะซ้ำ หากไม่แก้ช่องทางที่ถูกเจาะเข้ามา",
+    "my": "ဝင်လမ်းကို မပြင်ပါက ဆိုက်သည် ထပ်မံ ကူးစက်ခံရဖွယ်ရှိသည်ဟု Google ၏ စာမျက်နှာတွင် ဆိုသည်။",
+    "zh": "Google 的页面写明，入口不修好，网站很可能再次被感染。",
+    "de": "Auf der Seite von Google steht, dass eine Website wahrscheinlich erneut befallen wird, wenn der Zugang nicht behoben ist."
+   },
+   "src": "https://support.google.com/websearch/answer/190597"
+  },
+  {
+   "t": {
+    "en": "Google takes the request for a new check in the Security Issues report in Search Console. For a site hacked with spam, the owner describes how each category was cleaned.",
+    "th": "Google รับคำขอตรวจใหม่จากรายงาน Security Issues ใน Search Console สำหรับเว็บที่ถูกแฮกด้วยสแปม เจ้าของเว็บอธิบายว่าทำความสะอาดแต่ละประเภทอย่างไร",
+    "my": "ပြန်လည်စစ်ဆေးရန် တောင်းဆိုချက်ကို Google က Search Console ရှိ Security Issues အစီရင်ခံစာတွင် လက်ခံသည်။ စပမ်းဖြင့် ဟက်ခံရသော ဆိုက်အတွက် ပိုင်ရှင်က အမျိုးအစားတစ်ခုချင်းစီကို မည်သို့ ရှင်းလင်းခဲ့သည်ကို ဖော်ပြရသည်။",
+    "zh": "复审请求在 Search Console 的 Security Issues 报告里提交。网站被垃圾内容入侵时，站长要说明每一类内容是怎么清理的。",
+    "de": "Die Anfrage für eine neue Prüfung geht im Bericht „Security Issues“ der Search Console ein. Bei einer mit Spam gehackten Website beschreibt der Inhaber, wie er jede Kategorie bereinigt hat."
+   },
+   "src": "https://web.dev/articles/request-a-review"
+  },
+  {
+   "t": {
+    "en": "Google's review after a malware infection takes a few days. A review of a site hacked with spam can take up to several weeks.",
+    "th": "Google ตรวจเว็บที่ติดมัลแวร์ภายในไม่กี่วัน ส่วนเว็บที่ถูกแฮกด้วยสแปมอาจใช้เวลาถึงหลายสัปดาห์",
+    "my": "မယ်လ်ဝဲ ကူးစက်ထားသော ဆိုက်ကို Google က ရက်အနည်းငယ်အတွင်း စစ်ဆေးသည်။ စပမ်းဖြင့် ဟက်ခံရသော ဆိုက်ကို စစ်ဆေးရာတွင် အပတ်များစွာအထိ ကြာနိုင်သည်။",
+    "zh": "恶意软件感染的复审需要几天。垃圾内容入侵的复审最长可能要几周。",
+    "de": "Die Prüfung nach einem Malware-Befall dauert einige Tage. Bei einer mit Spam gehackten Website kann sie bis zu mehreren Wochen dauern."
+   },
+   "src": "https://web.dev/articles/request-a-review"
+  },
+  {
+   "t": {
+    "en": "When Google finds the site clean, the flags in browsers and search go away within 72 hours.",
+    "th": "เมื่อ Google พบว่าเว็บสะอาด ข้อความแจ้งในเบราว์เซอร์และผลค้นหาจะหายไปภายใน 72 ชั่วโมง",
+    "my": "ဆိုက်သန့်ရှင်းကြောင်း Google တွေ့ရှိသောအခါ ဘရောက်ဇာနှင့် ရှာဖွေမှုရလဒ်ရှိ အသိပေးချက်များကို 72 နာရီအတွင်း ဖယ်ရှားသည်။",
+    "zh": "Google 确认网站干净后，浏览器和搜索中的提示会在 72 小时内消失。",
+    "de": "Stellt Google fest, dass die Website sauber ist, verschwinden die Hinweise in Browser und Suche innerhalb von 72 Stunden."
+   },
+   "src": "https://web.dev/articles/request-a-review"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Sucuri website security plans, with malware cleanup included",
+    "th": "แพ็กเกจความปลอดภัยเว็บของ Sucuri รวมการลบมัลแวร์",
+    "my": "Sucuri ၏ ဝက်ဘ်ဆိုက်လုံခြုံရေး အစီအစဉ်များ၊ မယ်လ်ဝဲရှင်းလင်းမှု ပါ",
+    "zh": "Sucuri 网站安全套餐，含恶意软件清理",
+    "de": "Sucuri-Sicherheitspakete für Websites, mit Malware-Bereinigung"
+   },
+   "p": {
+    "en": "US$229 (Basic), US$339 (Pro) or US$549 (Business) a year",
+    "th": "US$229 (Basic), US$339 (Pro) หรือ US$549 (Business) ต่อปี",
+    "my": "တစ်နှစ်လျှင် US$229 (Basic)၊ US$339 (Pro) သို့မဟုတ် US$549 (Business)",
+    "zh": "每年 US$229（Basic）、US$339（Pro）或 US$549（Business）",
+    "de": "US$229 (Basic), US$339 (Pro) oder US$549 (Business) im Jahr"
+   },
+   "src": "https://sucuri.net/website-security-platform/signup/"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller's WordPress malware cleanup: a backup first, clean core, themes and plugins, 3 months of support (1 day)",
+    "th": "ผู้ขายบน Fastwork ลบมัลแวร์ WordPress: สำรองก่อน เปลี่ยนคอร์ ธีม และปลั๊กอินเป็นไฟล์สะอาด ดูแลต่อ 3 เดือน (1 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ WordPress မယ်လ်ဝဲရှင်းလင်းမှု၊ အရင်အရန်သိမ်းပြီး core၊ theme နှင့် plugin များကို သန့်ရှင်းသောဖိုင်များဖြင့် အစားထိုး၊ 3 လ ဆက်လက်ပံ့ပိုးမှု (1 ရက်)",
+    "zh": "Fastwork 上一位卖家的 WordPress 恶意软件清理：先备份，换上干净的核心、主题和插件，含 3 个月支持（1 天）",
+    "de": "Malware-Bereinigung für WordPress durch eine Verkäuferperson auf Fastwork: erst eine Sicherung, saubere Core-Dateien, Themes und Plugins, 3 Monate Support (1 Tag)"
+   },
+   "p": {
+    "en": "฿2,500",
+    "th": "฿2,500",
+    "my": "฿2,500",
+    "zh": "฿2,500",
+    "de": "฿2,500"
+   },
+   "src": "https://fastwork.co/user/web9ball/technical-support-56632451"
+  },
+  {
+   "t": {
+    "en": "The same seller, cleanup plus help with Google Ads limits on a compromised site (7 days)",
+    "th": "ผู้ขายรายเดียวกัน ลบมัลแวร์พร้อมแนะนำเรื่องข้อจำกัด Google Ads ของเว็บที่ถูกเจาะ (7 วัน)",
+    "my": "ထိုရောင်းသူပင်၊ ရှင်းလင်းမှုနှင့်အတူ ထိုးဖောက်ခံရသော ဆိုက်၏ Google Ads ကန့်သတ်ချက်များအတွက် အကူအညီ (7 ရက်)",
+    "zh": "同一卖家：清理加上被入侵网站的 Google Ads 限制申诉指导（7 天）",
+    "de": "Dieselbe Verkäuferperson: Bereinigung plus Hilfe bei Google-Ads-Einschränkungen einer kompromittierten Website (7 Tage)"
+   },
+   "p": {
+    "en": "฿4,500",
+    "th": "฿4,500",
+    "my": "฿4,500",
+    "zh": "฿4,500",
+    "de": "฿4,500"
+   },
+   "src": "https://fastwork.co/user/web9ball/technical-support-56632451"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does “This site may be hacked” mean?",
+    "th": "“This site may be hacked” หมายความว่าอะไร",
+    "my": "“This site may be hacked” ဆိုသည်မှာ ဘာလဲ။",
+    "zh": "“This site may be hacked” 是什么意思？",
+    "de": "Was bedeutet „This site may be hacked“?"
+   },
+   "a": {
+    "en": "Google adds it to a result when it believes a hacker changed pages on the site or added spam pages. Google says a visit could lead to spam or malware.",
+    "th": "Google ใส่ข้อความนี้ในผลค้นหาเมื่อเชื่อว่าแฮกเกอร์แก้หน้าของเว็บหรือเพิ่มหน้าสแปม Google ระบุว่าการเข้าเว็บอาจนำไปสู่สแปมหรือมัลแวร์",
+    "my": "ဟက်ကာတစ်ဦးက ဆိုက်ရှိ စာမျက်နှာများကို ပြောင်းလဲခဲ့သည်၊ သို့မဟုတ် စပမ်းစာမျက်နှာများ ထည့်ခဲ့သည်ဟု Google ယုံကြည်သောအခါ ရလဒ်တွင် ဤစာကို ထည့်သည်။ ဝင်ကြည့်ပါက စပမ်း သို့မဟုတ် မယ်လ်ဝဲသို့ ရောက်နိုင်သည်ဟု Google က ဆိုသည်။",
+    "zh": "Google 认为黑客改动了网站页面或添加了垃圾页面时，会把这句话加在搜索结果上。Google 说，访问这样的网站可能被带到垃圾页面或恶意软件。",
+    "de": "Google fügt den Hinweis einem Ergebnis hinzu, wenn es annimmt, dass ein Hacker Seiten der Website geändert oder Spam-Seiten hinzugefügt hat. Google sagt, ein Besuch könne zu Spam oder Schadsoftware führen."
+   },
+   "src": "https://support.google.com/websearch/answer/190597"
+  },
+  {
+   "q": {
+    "en": "How does the label come off?",
+    "th": "ข้อความนี้หายไปได้อย่างไร",
+    "my": "ဤသတိပေးစာ ဘယ်လိုပျောက်သွားသလဲ။",
+    "zh": "这条提示怎样才会消失？",
+    "de": "Wie verschwindet der Hinweis?"
+   },
+   "a": {
+    "en": "Google says it stays until the site owner acts. Once the whole site is clean, the owner asks Google to check it from the Security Issues section of Search Console. After Google checks the fix, it removes the label.",
+    "th": "Google ระบุว่าข้อความอยู่จนกว่าเจ้าของเว็บจะดำเนินการ เมื่อเว็บสะอาดทั้งเว็บแล้ว เจ้าของขอให้ Google ตรวจจากส่วน Security Issues ใน Search Console หลัง Google ตรวจว่าแก้แล้ว ก็จะเอาข้อความออก",
+    "my": "ဆိုက်ပိုင်ရှင် ဆောင်ရွက်သည်အထိ ဤစာ ရှိနေသည်ဟု Google က ဆိုသည်။ ဆိုက်တစ်ခုလုံး သန့်ရှင်းပြီးသောအခါ ပိုင်ရှင်က Search Console ၏ Security Issues အပိုင်းမှ Google ကို စစ်ဆေးရန် တောင်းဆိုသည်။ ပြင်ဆင်မှုကို Google စစ်ဆေးပြီးနောက် ထိုစာကို ဖယ်ရှားသည်။",
+    "zh": "Google 说这条提示会保留到站长采取行动为止。整站清理干净后，站长在 Search Console 的 Security Issues 部分请 Google 检查。Google 确认已修复后，会撤下这条提示。",
+    "de": "Laut Google bleibt er, bis der Website-Inhaber handelt. Ist die ganze Website sauber, bittet er Google im Bereich „Security Issues“ der Search Console um eine Prüfung. Hat Google die Korrektur geprüft, entfernt es den Hinweis."
+   },
+   "src": "https://support.google.com/websearch/answer/190597"
+  },
+  {
+   "q": {
+    "en": "How long does Google take to review a cleaned site?",
+    "th": "Google ใช้เวลาตรวจเว็บที่ทำความสะอาดแล้วนานเท่าไร",
+    "my": "သန့်ရှင်းပြီးသော ဆိုက်ကို Google က စစ်ဆေးရာတွင် ဘယ်လောက်ကြာသလဲ။",
+    "zh": "Google 复审清理后的网站要多久？",
+    "de": "Wie lange prüft Google eine bereinigte Website?"
+   },
+   "a": {
+    "en": "A few days for a malware infection, and up to several weeks for a site hacked with spam. When the site passes, browser and search flags go away within 72 hours.",
+    "th": "ไม่กี่วันสำหรับเว็บที่ติดมัลแวร์ และอาจถึงหลายสัปดาห์สำหรับเว็บที่ถูกแฮกด้วยสแปม เมื่อเว็บผ่าน ข้อความแจ้งในเบราว์เซอร์และผลค้นหาจะหายภายใน 72 ชั่วโมง",
+    "my": "မယ်လ်ဝဲ ကူးစက်ခံရသော ဆိုက်အတွက် ရက်အနည်းငယ်၊ စပမ်းဖြင့် ဟက်ခံရသော ဆိုက်အတွက် အပတ်များစွာအထိ ကြာနိုင်သည်။ ဆိုက်အောင်မြင်လျှင် ဘရောက်ဇာနှင့် ရှာဖွေမှုရလဒ်ရှိ အသိပေးချက်များ 72 နာရီအတွင်း ပျောက်သွားသည်။",
+    "zh": "恶意软件感染需要几天，垃圾内容入侵最长可能要几周。网站通过后，浏览器和搜索中的提示在 72 小时内消失。",
+    "de": "Einige Tage bei einem Malware-Befall und bis zu mehreren Wochen bei einer mit Spam gehackten Website. Besteht die Website die Prüfung, verschwinden die Hinweise in Browser und Suche innerhalb von 72 Stunden."
+   },
+   "src": "https://web.dev/articles/request-a-review"
+  },
+  {
+   "q": {
+    "en": "Does malware removal cost extra?",
+    "th": "การลบมัลแวร์คิดเงินเพิ่มไหม",
+    "my": "မယ်လ်ဝဲရှင်းလင်းခြင်းအတွက် ငွေထပ်ပေးရပါသလား။",
+    "zh": "清除恶意软件要另外收费吗？",
+    "de": "Kostet die Malware-Entfernung extra?"
+   },
+   "a": {
+    "en": "At Sucuri it does not. Its page says unlimited manual cleanups are included on every plan. It estimates the first answer to a cleanup ticket at 30 hours on Basic, 12 on Pro and 6 on Business.",
+    "th": "ที่ Sucuri ไม่คิดเพิ่ม หน้าเว็บระบุว่าการทำความสะอาดด้วยมือไม่จำกัดครั้งรวมอยู่ในทุกแพ็กเกจ และประมาณเวลาตอบตั๋วขอลบมัลแวร์ครั้งแรกที่ 30 ชั่วโมงใน Basic, 12 ใน Pro และ 6 ใน Business",
+    "my": "Sucuri တွင် မလိုပါ။ အစီအစဉ်တိုင်းတွင် လက်ဖြင့် ရှင်းလင်းမှု အကန့်အသတ်မရှိ ပါဝင်သည်ဟု ၎င်း၏ စာမျက်နှာတွင် ဆိုသည်။ ရှင်းလင်းမှု လက်မှတ်အတွက် ပထမဆုံး အဖြေကို Basic တွင် 30 နာရီ၊ Pro တွင် 12၊ Business တွင် 6 အဖြစ် ခန့်မှန်းထားသည်။",
+    "zh": "Sucuri 不另收费。它的页面写明，每个套餐都含不限次数的人工清理。它估计清理工单的首次回复时间为：Basic 30 小时，Pro 12 小时，Business 6 小时。",
+    "de": "Bei Sucuri nicht. Laut der Seite sind unbegrenzte manuelle Bereinigungen in jedem Paket enthalten. Die erste Antwort auf ein Bereinigungs-Ticket wird auf 30 Stunden bei Basic, 12 bei Pro und 6 bei Business geschätzt."
+   },
+   "src": "https://sucuri.net/website-security-platform/signup/"
+  },
+  {
+   "q": {
+    "en": "What does a cleanup cost in Thailand?",
+    "th": "ลบมัลแวร์เว็บในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် မယ်လ်ဝဲရှင်းလင်းမှု ဈေးဘယ်လောက်လဲ။",
+    "zh": "在泰国清理被黑网站要多少钱？",
+    "de": "Was kostet eine Bereinigung in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller, with 125 sales, lists ฿2,500 for cleaning a WordPress site, with a backup first. It lists ฿4,500 for a compromised site with help on Google Ads limits.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ขายแล้ว 125 ครั้ง ตั้งราคา ฿2,500 สำหรับลบมัลแวร์เว็บ WordPress โดยสำรองก่อน และ ฿4,500 สำหรับเว็บที่ถูกเจาะพร้อมแนะนำเรื่องข้อจำกัด Google Ads",
+    "my": "Fastwork ရောင်းသူတစ်ဦးသည် 125 ကြိမ် ရောင်းပြီးဖြစ်ပြီး WordPress ဆိုက်ကို အရင်အရန်သိမ်းကာ ရှင်းလင်းခြင်းကို ฿2,500၊ ထိုးဖောက်ခံရသော ဆိုက်ကို Google Ads ကန့်သတ်ချက်အကူအညီနှင့်တကွ ฿4,500 ဟု သတ်မှတ်ထားသည်။",
+    "zh": "Fastwork 上有一位卖家已售 125 次，清理 WordPress 网站（先备份）标价 ฿2,500；被入侵网站加 Google Ads 限制指导标价 ฿4,500。",
+    "de": "Eine Verkäuferperson auf Fastwork mit 125 Verkäufen nennt ฿2,500 für die Bereinigung einer WordPress-Website, mit vorheriger Sicherung. Für eine kompromittierte Website mit Hilfe bei Google-Ads-Einschränkungen nennt sie ฿4,500."
+   },
+   "src": "https://fastwork.co/user/web9ball/technical-support-56632451"
+  }
+ ],
+ "related": [
+  "web-care",
+  "php",
+  "mirror",
+  "sec-mail",
+  "web-move",
+  "redteam"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Search Help: the “This site may be hacked” label",
+    "th": "ความช่วยเหลือของ Google Search: ข้อความ “This site may be hacked”",
+    "my": "Google Search အကူအညီ: “This site may be hacked” စာ",
+    "zh": "Google 搜索帮助：“This site may be hacked” 提示",
+    "de": "Google-Suchhilfe: der Hinweis „This site may be hacked“"
+   },
+   "href": "https://support.google.com/websearch/answer/190597"
+  },
+  {
+   "t": {
+    "en": "web.dev: how to request a review in Search Console",
+    "th": "web.dev: วิธียื่นขอตรวจใหม่ใน Search Console",
+    "my": "web.dev: Search Console တွင် ပြန်လည်စစ်ဆေးရန် တောင်းဆိုပုံ",
+    "zh": "web.dev：如何在 Search Console 提交复审请求",
+    "de": "web.dev: eine Überprüfung in der Search Console beantragen"
+   },
+   "href": "https://web.dev/articles/request-a-review"
+  }
+ ]
+}

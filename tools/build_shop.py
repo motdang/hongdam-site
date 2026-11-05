@@ -91,9 +91,26 @@ def tr(d, lang):
 
 
 MISSING = set()
-# Changes when the shop data changes, so a phone fetches the new card list.
+# Cards with a service page of their own (data/minisites/<id>.json, tools/build_minisites.py; her ask 2026-10-24):
+# the card's name opens that page, on the shop pages and in search results; the button still opens Buy.
+import glob as _glob
+_MUI_F = os.path.join(HERE, "data", "minisite_ui.json")
+_OWN = json.load(open(_MUI_F, encoding="utf-8")).get("own_pages", {}) if os.path.exists(_MUI_F) else {}
+MINI = {os.path.basename(f)[:-5] for f in _glob.glob(os.path.join(HERE, "data", "minisites", "*.json"))}
+
+
+def page_of(c, lang):
+    """The card's own page: an older page where one exists (/php/), else its service page in this language, else none."""
+    if c["id"] in _OWN:
+        return "/" + _OWN[c["id"]]
+    if c["id"] in MINI:
+        return url(lang if lang in LANGS else "en", "%s/%s/" % (c["cat"], c["id"]))
+    return ""
+
+
+# Changes when the shop data or the set of service pages changes, so a phone fetches the new card list.
 import hashlib
-VERSION = hashlib.sha1(json.dumps([SHOP, LIVE, LOOKS], sort_keys=True).encode()).hexdigest()[:8]
+VERSION = hashlib.sha1(json.dumps([SHOP, LIVE, LOOKS, sorted(MINI)], sort_keys=True).encode()).hexdigest()[:8]
 _CSS = os.path.join(DOCS, "assets", "shop.css")
 CSS_V = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(_CSS) else "0"
 # shop.js gets its own, so a browser holding yesterday's copy (kept 4 h) fetches the new one at once.
@@ -300,8 +317,9 @@ def share_btn(lang, href="", title="", need=""):
 def card_html(c, lang):
     go, btn = go_of(c, lang)
     pic = pic_of(c)
-    # the card's name opens what its button opens
-    name = '<a href="%s">%s</a>' % (E(go), E(tr(c["n"], lang))) if go else E(tr(c["n"], lang))
+    # the card's name opens its own page where it has one, else what its button opens
+    to = page_of(c, lang) or go
+    name = '<a href="%s">%s</a>' % (E(to), E(tr(c["n"], lang))) if to else E(tr(c["n"], lang))
     out = '<li class="card" id="%s" style="--line:var(--c-%s)">%s<h3>%s</h3><p class="price">%s</p><p class="l">%s</p>' % (
         E(c["id"]), E(c["cat"]), job(pic, lang, name="job-" + c["id"]) if pic else "", name, card_price(c, lang), E(tr(c["l"], lang)))
     if walks(c):
@@ -336,7 +354,7 @@ def client_cards(lang):
     for c in SHOP["cards"]:
         go, btn = go_of(c, lang)
         d = {"id": c["id"], "act": c["act"], "n": tr(c["n"], lang), "l": tr(c["l"], lang), "ph": card_price(c, lang),
-             "go": go, "btn": btn, "kw": search_words(c)}
+             "go": go, "btn": btn, "kw": search_words(c), "page": page_of(c, lang)}
         if c["act"] == "buy":
             d["opts"] = []
             for o in c["opts"]:

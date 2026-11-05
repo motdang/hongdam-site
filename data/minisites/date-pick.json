@@ -1,0 +1,309 @@
+{
+ "id": "date-pick",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People choose a date for a wedding, a move, an opening or a new car. In Thailand an astrologer often picks it from birth dates and a lunar calendar.",
+  "th": "คนเลือกวันสำหรับงานแต่ง ขึ้นบ้านใหม่ เปิดร้าน หรือออกรถ ในไทยโหรมักคำนวณฤกษ์จากวันเกิดและปฏิทินจันทรคติ",
+  "my": "လူတွေက မင်္ဂလာဆောင်၊ အိမ်ပြောင်း၊ ဆိုင်ဖွင့်ပွဲ သို့မဟုတ် ကားအသစ်အတွက် နေ့ရက်ကို ရွေးကြသည်။ ထိုင်းနိုင်ငံတွင် ဗေဒင်ဆရာက မွေးနေ့များနှင့် လပြက္ခဒိန်ကို အခြေခံ၍ ရွေးပေးလေ့ရှိသည်။",
+  "zh": "人们为婚礼、搬家、开业或新车挑选日子。在泰国，占星师常按生日和阴历来推算。",
+  "de": "Man wählt ein Datum für eine Hochzeit, einen Umzug, eine Eröffnung oder ein neues Auto. In Thailand rechnet ein Astrologe es oft aus den Geburtsdaten und einem Mondkalender aus."
+ },
+ "n": {
+  "de": "Glückverheissendes Datum"
+ },
+ "l": {
+  "de": "Zwei Daten für eine Hochzeit, einen Umzug, eine Eröffnung oder ein Auto."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "You say what the date is for: a wedding, a move, an opening or a new car.",
+    "th": "คุณบอกว่าต้องการฤกษ์สำหรับงานอะไร งานแต่ง ขึ้นบ้านใหม่ เปิดร้าน หรือออกรถ",
+    "my": "နေ့ရက်ကို ဘာအတွက် လိုသည်ကို သင်ပြောပြသည် - မင်္ဂလာဆောင်၊ အိမ်ပြောင်း၊ ဆိုင်ဖွင့် သို့မဟုတ် ကားအသစ်။",
+    "zh": "您说明日子用来做什么：婚礼、搬家、开业或新车。",
+    "de": "Sie sagen, wofür das Datum gilt: Hochzeit, Umzug, Eröffnung oder neues Auto."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "After payment",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "sundial",
+   "t": {
+    "en": "We pick two dates.",
+    "th": "เลือกฤกษ์สองวัน",
+    "my": "ရက်နှစ်ရက်ကို ရွေးပေးသည်။",
+    "zh": "选出两个日子。",
+    "de": "Wir wählen zwei Daten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get the two dates with the reasons, in English or in Thai.",
+    "th": "คุณได้รับฤกษ์สองวันพร้อมเหตุผล เป็นภาษาอังกฤษหรือภาษาไทย",
+    "my": "ရက်နှစ်ရက်ကို အကြောင်းရင်းများနှင့်အတူ အင်္ဂလိပ်လို သို့မဟုတ် ထိုင်းလို ရရှိသည်။",
+    "zh": "您收到两个日子和理由，用英文或泰文写成。",
+    "de": "Sie erhalten die zwei Daten mit den Gründen, auf Englisch oder auf Thailändisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Tourism Authority of Thailand writes that couples ask a monk or an astrologer for a lucky day. The couple's birthdays and times of birth are needed for the calculation, and astrologers use lunar calendars to fix wedding days.",
+    "th": "การท่องเที่ยวแห่งประเทศไทย (ททท.) เขียนว่าคู่บ่าวสาวขอให้พระหรือโหรเลือกวันมงคล ต้องใช้วันเกิดและเวลาเกิดของทั้งคู่ในการคำนวณ และโหรใช้ปฏิทินจันทรคติกำหนดวันแต่งงาน",
+    "my": "ထိုင်းနိုင်ငံ ခရီးသွားလာရေးအာဏာပိုင် (TAT) က စုံတွဲများသည် ကံကောင်းသောနေ့ကို ဘုန်းကြီး သို့မဟုတ် ဗေဒင်ဆရာထံ မေးကြောင်း ရေးသားထားသည်။ တွက်ချက်ရာတွင် စုံတွဲ၏ မွေးနေ့နှင့် မွေးချိန်ကို လိုအပ်ပြီး ဗေဒင်ဆရာများက မင်္ဂလာဆောင်နေ့ကို သတ်မှတ်ရာတွင် လပြက္ခဒိန်ကို သုံးသည်။",
+    "zh": "泰国旅游局（TAT）写道，新人请僧人或占星师选吉日。推算需要两人的生日和出生时间，占星师用阴历来定婚期。",
+    "de": "Die Tourismusbehörde von Thailand (TAT) schreibt, dass Paare einen Mönch oder einen Astrologen um einen glücklichen Tag bitten. Für die Berechnung braucht es die Geburtstage und Geburtszeiten des Paares, und Astrologen legen Hochzeitstage anhand von Mondkalendern fest."
+   },
+   "src": "https://www.tatnews.org/four-regions-and-a-wedding-guide-to-weddings-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Sanook's article on new-car dates for 2027 names two good days. Thongchai day (วันธงชัย) stands for victory and success and suits objects and places. Athibodi day (วันอธิบดี) stands for power and standing and suits matters of people. Until the evening of 16 April 2027, Monday is Thongchai day and Saturday is Athibodi day. After that, Thursday is Thongchai day and Sunday is Athibodi day.",
+    "th": "บทความฤกษ์ออกรถ 2570 ของ Sanook ระบุวันดีสองวัน วันธงชัยหมายถึงชัยชนะและความสำเร็จ ใช้กับสิ่งของและสถานที่ วันอธิบดีหมายถึงอำนาจและบารมี ใช้กับเรื่องของคน ก่อนค่ำวันที่ 16 เมษายน 2570 วันจันทร์เป็นวันธงชัยและวันเสาร์เป็นวันอธิบดี หลังจากนั้นวันพฤหัสบดีเป็นวันธงชัยและวันอาทิตย์เป็นวันอธิบดี",
+    "my": "Sanook ၏ 2027 ကားအသစ်ထုတ်ရက် ဆောင်းပါးတွင် ကောင်းသောနေ့ နှစ်ရက်ကို ဖော်ပြထားသည်။ ထောင်ချိုင်နေ့ (วันธงชัย) သည် အောင်ပွဲနှင့် အောင်မြင်မှုကို ကိုယ်စားပြုပြီး ပစ္စည်းများနှင့် နေရာများနှင့် သင့်တော်သည်။ အာထီဘော်ဒီနေ့ (วันอธิบดี) သည် အာဏာနှင့် ဂုဏ်သိက္ခာကို ကိုယ်စားပြုပြီး လူနှင့်ဆိုင်သော ကိစ္စများနှင့် သင့်တော်သည်။ 2027 ဧပြီ 16 ရက် ညနေအထိ တနင်္လာနေ့သည် ထောင်ချိုင်နေ့ ဖြစ်ပြီး စနေနေ့သည် အာထီဘော်ဒီနေ့ ဖြစ်သည်။ ထိုနောက် ကြာသပတေးနေ့သည် ထောင်ချိုင်နေ့၊ တနင်္ဂနွေနေ့သည် အာထီဘော်ဒီနေ့ ဖြစ်သည်။",
+    "zh": "Sanook 2027 年选新车日的文章列出两个吉日。通猜日（วันธงชัย）代表胜利与成功，适用于物品和场所。阿提波迪日（วันอธิบดี）代表权势与地位，适用于与人有关的事。到 2027 年 4 月 16 日傍晚为止，星期一是通猜日，星期六是阿提波迪日；此后，星期四是通猜日，星期日是阿提波迪日。",
+    "de": "Der Artikel von Sanook zu Auto-Terminen 2027 nennt zwei gute Tage. Der Thongchai-Tag (วันธงชัย) steht für Sieg und Erfolg und passt zu Gegenständen und Orten. Der Athibodi-Tag (วันอธิบดี) steht für Macht und Ansehen und passt zu Angelegenheiten von Personen. Bis zum Abend des 16. April 2027 ist der Montag ein Thongchai-Tag und der Samstag ein Athibodi-Tag. Danach ist der Donnerstag ein Thongchai-Tag und der Sonntag ein Athibodi-Tag."
+   },
+   "src": "https://www.sanook.com/horoscope/332910/"
+  },
+  {
+   "t": {
+    "en": "For a house-warming, Sanook's 2027 article weighs the ฤกษ์ of the day, the lunar day (ดิถี) and the banned days together. After 16 April 2027 it prefers Thursday and Sunday, and it names Tuesday and Wednesday as poor days.",
+    "th": "สำหรับฤกษ์ขึ้นบ้านใหม่ บทความ Sanook ปี 2570 ให้พิจารณาฤกษ์ของวัน ดิถี และวันต้องห้ามร่วมกัน หลังวันที่ 16 เมษายน 2570 บทความเลือกวันพฤหัสบดีและวันอาทิตย์ และระบุวันอังคารกับวันพุธว่าเป็นวันไม่ดี",
+    "my": "အိမ်ပြောင်းပွဲအတွက် Sanook ၏ 2027 ဆောင်းပါးက နေ့၏ မင်္ဂလာအချိန် (ฤกษ์)၊ လ၏ရက် (ดิถี) နှင့် တားမြစ်နေ့များကို အတူတကွ ထည့်တွက်သည်။ 2027 ဧပြီ 16 ရက်နောက်ပိုင်း ကြာသပတေးနှင့် တနင်္ဂနွေကို ဦးစားပေးပြီး အင်္ဂါနှင့် ဗုဒ္ဓဟူးကို မကောင်းသောနေ့များအဖြစ် ဖော်ပြသည်။",
+    "zh": "关于乔迁日，Sanook 2027 年的文章把当天的吉时（ฤกษ์）、太阴日（ดิถี）和禁忌日放在一起看。2027 年 4 月 16 日之后，它偏重星期四和星期日，并把星期二和星期三列为不好的日子。",
+    "de": "Für den Einzug in ein neues Haus wägt der Sanook-Artikel für 2027 das ฤกษ์ des Tages, den Mondtag (ดิถี) und die gesperrten Tage zusammen ab. Nach dem 16. April 2027 bevorzugt er Donnerstag und Sonntag und nennt Dienstag und Mittwoch als schlechte Tage."
+   },
+   "src": "https://www.sanook.com/horoscope/332914/"
+  },
+  {
+   "t": {
+    "en": "Wan phra, the Buddhist holy days, fall on the 8th and 15th day of the waxing moon and the 8th and 15th day of the waning moon in the Thai lunar month. The exact dates differ a little between calendars.",
+    "th": "วันพระตรงกับวันขึ้น 8 ค่ำ ขึ้น 15 ค่ำ แรม 8 ค่ำ และแรม 15 ค่ำ ของเดือนจันทรคติไทย วันที่แน่นอนอาจต่างกันเล็กน้อยตามปฏิทินที่ใช้",
+    "my": "ဗုဒ္ဓဘာသာ ဥပုသ်နေ့ (วันพระ) များသည် ထိုင်းလပြက္ခဒိန်လ၏ လဆန်း 8 ရက်၊ လဆန်း 15 ရက်၊ လဆုတ် 8 ရက်နှင့် လဆုတ် 15 ရက်တွင် ကျသည်။ တိကျသော ရက်စွဲများသည် ပြက္ခဒိန်အလိုက် အနည်းငယ် ကွာနိုင်သည်။",
+    "zh": "佛日（วันพระ）落在泰国阴历每月月盈的第 8 日和第 15 日，以及月亏的第 8 日和第 15 日。具体日期因历书不同略有差异。",
+    "de": "Wan Phra, die buddhistischen Feiertage, fallen im thailändischen Mondmonat auf den 8. und 15. Tag des zunehmenden Mondes und den 8. und 15. Tag des abnehmenden Mondes. Die genauen Daten weichen je nach Kalender etwas ab."
+   },
+   "src": "https://www.thaipbs.or.th/news/content/343221"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: general dates, 3 in a PDF, ready in 3 days",
+    "th": "ผู้ขายบน Fastwork: ฤกษ์ทั่วไป 3 วัน ส่งเป็นไฟล์ PDF ภายใน 3 วัน",
+    "my": "Fastwork ရောင်းသူ - အထွေထွေ ရက်ကောင်း 3 ရက်ကို PDF ဖြင့် 3 ရက်အတွင်း ပေးသည်",
+    "zh": "Fastwork 卖家：通用吉日 3 个，PDF 文件，3 天交付",
+    "de": "Anbieter auf Fastwork: allgemeine Daten, 3 in einem PDF, in 3 Tagen"
+   },
+   "p": {
+    "en": "฿1,000",
+    "th": "฿1,000",
+    "my": "฿1,000",
+    "zh": "฿1,000",
+    "de": "฿1,000"
+   },
+   "src": "https://fastwork.co/user/maemorgale/horoscope-33241640"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: wedding dates, 9 in all, in a PDF, ready in 3 days",
+    "th": "ผู้ขายบน Fastwork: ฤกษ์แต่งงาน รวม 9 วัน ส่งเป็นไฟล์ PDF ภายใน 3 วัน",
+    "my": "Fastwork ရောင်းသူ - မင်္ဂလာဆောင်ရက် စုစုပေါင်း 9 ရက်ကို PDF ဖြင့် 3 ရက်အတွင်း ပေးသည်",
+    "zh": "Fastwork 卖家：婚礼吉日共 9 个，PDF 文件，3 天交付",
+    "de": "Anbieter auf Fastwork: Hochzeitsdaten, 9 insgesamt, in einem PDF, in 3 Tagen"
+   },
+   "p": {
+    "en": "฿2,000",
+    "th": "฿2,000",
+    "my": "฿2,000",
+    "zh": "฿2,000",
+    "de": "฿2,000"
+   },
+   "src": "https://fastwork.co/user/maemorgale/horoscope-33241640"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: a table of dates to choose from, as a PDF and pictures, in 5 working days",
+    "th": "ผู้ขายบน Fastwork: ตารางฤกษ์ให้เลือก ส่งเป็นไฟล์ PDF และรูปภาพ ภายใน 5 วันทำการ",
+    "my": "Fastwork ရောင်းသူ - ရွေးချယ်ရန် ရက်ကောင်းဇယားကို PDF နှင့် ပုံများဖြင့် အလုပ်လုပ်ရက် 5 ရက်အတွင်း ပေးသည်",
+    "zh": "Fastwork 卖家：可选吉日表，PDF 和图片，5 个工作日交付",
+    "de": "Anbieter auf Fastwork: eine Tabelle mit Daten zur Auswahl, als PDF und Bilder, in 5 Werktagen"
+   },
+   "p": {
+    "en": "฿3,500",
+    "th": "฿3,500",
+    "my": "฿3,500",
+    "zh": "฿3,500",
+    "de": "฿3,500"
+   },
+   "src": "https://fastwork.co/user/goyauer/horoscope-38278100"
+  },
+  {
+   "t": {
+    "en": "Date lists in the Thai news (Thairath)",
+    "th": "รายการฤกษ์ในสื่อไทย (ไทยรัฐ)",
+    "my": "ထိုင်းသတင်းစာ (Thairath) ပါ ရက်ကောင်းစာရင်းများ",
+    "zh": "泰国媒体（Thairath）刊出的吉日列表",
+    "de": "Datumslisten in den thailändischen Nachrichten (Thairath)"
+   },
+   "p": {
+    "en": "No charge",
+    "th": "ไม่เสียค่าใช้จ่าย",
+    "my": "အခမဲ့",
+    "zh": "免费",
+    "de": "Kostenlos"
+   },
+   "src": "https://www.thairath.co.th/horoscope/belief/2886027"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Who picks the date for a Thai wedding?",
+    "th": "ใครเป็นคนเลือกวันแต่งงานแบบไทย",
+    "my": "ထိုင်းမင်္ဂလာဆောင်နေ့ကို ဘယ်သူက ရွေးသလဲ။",
+    "zh": "泰式婚礼的日子由谁来选？",
+    "de": "Wer wählt das Datum für eine thailändische Hochzeit?"
+   },
+   "a": {
+    "en": "The Thailand Foundation writes that Thai couples almost always ask an astrologer for a lucky date and time for the engagement and the wedding. Monks join the Buddhist blessing on the wedding day.",
+    "th": "Thailand Foundation เขียนว่าคู่บ่าวสาวไทยเกือบทุกคู่ขอให้โหรหาวันและเวลามงคลสำหรับงานหมั้นและงานแต่งงาน พระสงฆ์มาร่วมพิธีให้พรแบบพุทธในวันแต่งงาน",
+    "my": "Thailand Foundation က ထိုင်းစုံတွဲများသည် စေ့စပ်ပွဲနှင့် မင်္ဂလာဆောင်အတွက် ကံကောင်းသောနေ့နှင့် အချိန်ကို ဗေဒင်ဆရာထံ အမြဲလိုလို မေးကြောင်း ရေးသားထားသည်။ မင်္ဂလာဆောင်နေ့တွင် ဘုန်းကြီးများသည် ဗုဒ္ဓဘာသာ ကောင်းချီးပေးခြင်းတွင် ပါဝင်သည်။",
+    "zh": "Thailand Foundation 写道，泰国新人订婚和结婚几乎都会请占星师选吉日吉时。婚礼当天，僧人参加佛教祝福仪式。",
+    "de": "Die Thailand Foundation schreibt, dass thailändische Paare für Verlobung und Hochzeit fast immer einen Astrologen um ein glückliches Datum und eine glückliche Uhrzeit bitten. Mönche nehmen am Hochzeitstag an der buddhistischen Segnung teil."
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "q": {
+    "en": "What else counts when a new-car date is picked?",
+    "th": "นอกจากวันแล้ว ฤกษ์ออกรถดูอะไรอีก",
+    "my": "ကားအသစ်ထုတ်ရက် ရွေးရာတွင် ဘာတွေ ထည့်တွက်သလဲ။",
+    "zh": "挑选新车日子时还要看什么？",
+    "de": "Was zählt ausserdem, wenn ein Datum für ein neues Auto gewählt wird?"
+   },
+   "a": {
+    "en": "Sanook's 2027 article says the weekday is one part. The hour (ยาม), the ฤกษ์, the zodiac sign (ราศี), the lunar day (ดิถี) and the owner's birth date count as well.",
+    "th": "บทความของ Sanook ปี 2570 ระบุว่าวันในสัปดาห์เป็นเพียงส่วนหนึ่ง ยังมียาม ฤกษ์ ราศี ดิถี และวันเกิดของเจ้าของรถด้วย",
+    "my": "Sanook ၏ 2027 ဆောင်းပါးက ရက်သတ္တပတ်နေ့သည် အစိတ်အပိုင်းတစ်ခုသာ ဖြစ်ကြောင်း ဆိုသည်။ နာရီချိန် (ยาม)၊ မင်္ဂလာအချိန် (ฤกษ์)၊ ရာသီ (ราศี)၊ လ၏ရက် (ดิถี) နှင့် ကားပိုင်ရှင်၏ မွေးနေ့တို့လည်း ပါဝင်သည်။",
+    "zh": "Sanook 2027 年的文章说，星期几只是其中一部分，时辰（ยาม）、吉时（ฤกษ์）、星座（ราศี）、太阴日（ดิถี）和车主的生日也要算进去。",
+    "de": "Der Artikel von Sanook für 2027 sagt, der Wochentag sei nur ein Teil. Die Stunde (ยาม), das ฤกษ์, das Tierkreiszeichen (ราศี), der Mondtag (ดิถี) und das Geburtsdatum des Besitzers zählen ebenfalls."
+   },
+   "src": "https://www.sanook.com/horoscope/332910/"
+  },
+  {
+   "q": {
+    "en": "Where can I see wedding dates for 2027?",
+    "th": "ดูฤกษ์แต่งงาน 2570 ได้ที่ไหน",
+    "my": "2027 မင်္ဂလာဆောင်ရက်များကို ဘယ်မှာ ကြည့်နိုင်သလဲ။",
+    "zh": "在哪里能看到 2027 年的婚礼吉日？",
+    "de": "Wo sehe ich Hochzeitsdaten für 2027?"
+   },
+   "a": {
+    "en": "Thairath publishes a list of good wedding days for each month of 2027. January has the 1st, 3rd, 7th, 14th, 17th, 26th and 30th. The article also names a second way: choosing from the couple's horoscopes, using the birth day, month and year.",
+    "th": "ไทยรัฐลงรายการวันดีสำหรับงานแต่งรายเดือนของปี 2570 เดือนมกราคมมีวันที่ 1, 3, 7, 14, 17, 26 และ 30 บทความยังระบุอีกวิธีหนึ่งคือเลือกตามดวงชะตาของคู่บ่าวสาวจากวัน เดือน และปีเกิด",
+    "my": "Thairath က 2027 ခုနှစ်၏ လတိုင်းအတွက် မင်္ဂလာဆောင်ကောင်းရက်စာရင်းကို ဖော်ပြထားသည်။ ဇန်နဝါရီတွင် 1၊ 3၊ 7၊ 14၊ 17၊ 26 နှင့် 30 ရက်များ ပါသည်။ ဆောင်းပါးတွင် နောက်နည်းတစ်နည်းဖြစ်သော စုံတွဲ၏ မွေးသက္ကရာဇ် (ရက်၊ လ၊ နှစ်) အရ ဇာတာကြည့်၍ ရွေးခြင်းကိုလည်း ဖော်ပြထားသည်။",
+    "zh": "Thairath 按月刊出 2027 年的婚礼吉日。1 月有 1、3、7、14、17、26、30 日。文章还提到另一种办法：按新人的生日（日、月、年）看两人的命盘来选。",
+    "de": "Thairath veröffentlicht eine Liste guter Hochzeitstage für jeden Monat von 2027. Der Januar hat den 1., 3., 7., 14., 17., 26. und 30. Der Artikel nennt noch einen zweiten Weg: die Wahl nach den Horoskopen des Paares, aus Geburtstag, -monat und -jahr."
+   },
+   "src": "https://www.thairath.co.th/horoscope/belief/2886027"
+  },
+  {
+   "q": {
+    "en": "What does a seller need to work out a date?",
+    "th": "ผู้ขายต้องใช้ข้อมูลอะไรในการคำนวณฤกษ์",
+    "my": "ရက်ကောင်းတွက်ရန် ရောင်းသူက ဘာတွေ လိုအပ်သလဲ။",
+    "zh": "卖家推算日子需要什么资料？",
+    "de": "Was braucht ein Anbieter, um ein Datum zu berechnen?"
+   },
+   "a": {
+    "en": "One Fastwork seller asks for the birth date and birth time of the person, and of both partners for a wedding. The seller also asks for the months wanted, within 3 months, the Thai or Chinese ceremony style, the time of day preferred and an email address.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ขอวันเกิดและเวลาเกิดของเจ้าของงาน และของทั้งสองฝ่ายสำหรับงานแต่ง นอกจากนี้ยังขอช่วงเดือนที่ต้องการภายใน 3 เดือน รูปแบบพิธีแบบไทยหรือจีน ช่วงเวลาของวันที่ต้องการ และอีเมล",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက ပုဂ္ဂိုလ်၏ မွေးနေ့နှင့် မွေးချိန်ကို တောင်းသည်။ မင်္ဂလာဆောင်အတွက်ဆိုလျှင် နှစ်ဦးစလုံး၏ကို တောင်းသည်။ ထို့ပြင် 3 လအတွင်း လိုချင်သည့်လများ၊ ထိုင်း သို့မဟုတ် တရုတ်ပုံစံ အခမ်းအနား၊ နှစ်သက်သည့် နေ့အချိန်နှင့် အီးမေးလ်လိပ်စာကိုလည်း တောင်းသည်။",
+    "zh": "Fastwork 上有一位卖家要求提供当事人的出生日期和出生时间，婚礼则要两位新人的。还要求说明想要的月份（3 个月以内）、泰式或中式仪式、偏好的时段和电子邮箱。",
+    "de": "Ein Anbieter auf Fastwork fragt nach Geburtsdatum und Geburtszeit der Person, bei einer Hochzeit nach denen beider Partner. Gefragt sind auch die gewünschten Monate innerhalb von 3 Monaten, der thailändische oder chinesische Zeremonienstil, die bevorzugte Tageszeit und eine E-Mail-Adresse."
+   },
+   "src": "https://fastwork.co/user/goyauer/horoscope-38278100"
+  }
+ ],
+ "related": [
+  "reading",
+  "name-pick",
+  "wedding",
+  "lanna-wedding",
+  "house-blessing",
+  "vehicle"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang calendar: three months with moon phases and wan phra",
+    "th": "ปฏิทิน Mot Dang: สามเดือน พร้อมข้างขึ้นข้างแรมและวันพระ",
+    "my": "Mot Dang ပြက္ခဒိန် - သုံးလစာ၊ လဆန်းလဆုတ်နှင့် ဥပုသ်နေ့များ ပါဝင်သည်",
+    "zh": "Mot Dang 日历：三个月，含月相和佛日",
+    "de": "Mot-Dang-Kalender: drei Monate mit Mondphasen und Wan Phra"
+   },
+   "href": "https://motdang.net/calendar.html"
+  },
+  {
+   "t": {
+    "en": "Tourism Authority of Thailand: a guide to weddings in the four regions",
+    "th": "การท่องเที่ยวแห่งประเทศไทย: คู่มืองานแต่งงานในสี่ภาคของไทย",
+    "my": "ထိုင်းနိုင်ငံ ခရီးသွားလာရေးအာဏာပိုင် - ဒေသလေးခုရှိ မင်္ဂလာဆောင်လမ်းညွှန်",
+    "zh": "泰国旅游局：泰国四个地区的婚礼指南",
+    "de": "Tourismusbehörde von Thailand: ein Führer zu Hochzeiten in den vier Regionen"
+   },
+   "href": "https://www.tatnews.org/four-regions-and-a-wedding-guide-to-weddings-in-thailand/"
+  }
+ ],
+ "glyphs": [
+  "calendar",
+  "moon",
+  "sparkle"
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "id": "widget",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A business in Chiang Mai or Chiang Rai puts the weather, the PM2.5 number or this week's events on its own page, so visitors read them without leaving.",
+  "th": "ธุรกิจในเชียงใหม่หรือเชียงรายใส่อากาศ ค่า PM2.5 หรืองานสัปดาห์นี้ไว้ในหน้าเว็บของตัวเอง ผู้เข้าชมจึงอ่านได้โดยไม่ต้องออกจากหน้านั้น",
+  "my": "ချင်းမိုင် သို့မဟုတ် ချင်းရိုင်ရှိ လုပ်ငန်းတစ်ခုသည် ရာသီဥတု၊ PM2.5 တန်ဖိုး သို့မဟုတ် ဒီအပတ်ပွဲများကို ကိုယ့်စာမျက်နှာပေါ်တွင် ထားသဖြင့် ဧည့်သည်များက စာမျက်နှာမှ မထွက်ဘဲ ဖတ်နိုင်သည်။",
+  "zh": "清迈或清莱的商家把天气、PM2.5 数值或本周活动放在自己的网页上，访客不用离开页面就能看到。",
+  "de": "Ein Betrieb in Chiang Mai oder Chiang Rai zeigt das Wetter, den PM2,5-Wert oder die Veranstaltungen der Woche auf der eigenen Seite, damit Besucher sie lesen, ohne die Seite zu verlassen."
+ },
+ "n": {
+  "de": "Box für Wetter, Rauch oder Veranstaltungen"
+ },
+ "l": {
+  "de": "Auf Ihrer Seite: Wetter, PM2,5 oder Veranstaltungen in der Nähe."
+ },
+ "glyphs": [
+  "sun",
+  "cloud",
+  "calendar"
+ ],
+ "steps": [
+  {
+   "db": "gears",
+   "t": {
+    "en": "The box is made for the weather, PM2.5 or events nearby.",
+    "th": "ทำกล่องสำหรับอากาศ ค่า PM2.5 หรืองานใกล้ ๆ",
+    "my": "ရာသီဥတု၊ PM2.5 သို့မဟုတ် အနီးအနားပွဲများအတွက် အကွက်ကို ပြုလုပ်ပေးသည်။",
+    "zh": "做好显示天气、PM2.5 或附近活动的小组件。",
+    "de": "Die Box wird für Wetter, PM2,5 oder Veranstaltungen in der Nähe angefertigt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "The box goes onto your site.",
+    "th": "ติดกล่องบนเว็บของคุณ",
+    "my": "အကွက်ကို သင့်ဆိုက်ပေါ်တွင် တင်ပေးသည်။",
+    "zh": "把小组件放到您的网站上。",
+    "de": "Die Box kommt auf Ihre Website."
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Once it is made",
+    "th": "เมื่อทำเสร็จ",
+    "my": "ပြုလုပ်ပြီးသည့်အခါ",
+    "zh": "做好之后",
+    "de": "Sobald sie fertig ist"
+   }
+  },
+  {
+   "db": "sun",
+   "t": {
+    "en": "Visitors read the weather, PM2.5 or events on your page.",
+    "th": "ผู้เข้าชมอ่านอากาศ ค่า PM2.5 หรืองานบนหน้าเว็บของคุณ",
+    "my": "ဧည့်သည်များက သင့်စာမျက်နှာပေါ်တွင် ရာသီဥတု၊ PM2.5 သို့မဟုတ် ပွဲများကို ဖတ်ကြသည်။",
+    "zh": "访客在您的页面上看到天气、PM2.5 或活动。",
+    "de": "Besucher lesen Wetter, PM2,5 oder Veranstaltungen auf Ihrer Seite."
+   },
+   "who": {
+    "en": "Your page",
+    "th": "หน้าเว็บของคุณ",
+    "my": "သင့်စာမျက်နှာ",
+    "zh": "您的页面",
+    "de": "Ihre Seite"
+   },
+   "time": {
+    "en": "Once it is on",
+    "th": "เมื่อติดตั้งแล้ว",
+    "my": "တင်ပြီးသည့်အခါ",
+    "zh": "放上之后",
+    "de": "Sobald sie steht"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Chiang Mai's burning season runs about February to April; open burning was banned from 1 January to 31 May 2026.",
+    "th": "ฤดูหมอกควันเชียงใหม่ราวกุมภาพันธ์ถึงเมษายน ปี 2569 ห้ามเผาในที่โล่ง 1 มกราคมถึง 31 พฤษภาคม",
+    "my": "ချင်းမိုင် မီးရှို့ရာသီ ဖေဖော်ဝါရီမှ ဧပြီခန့်; 2026 ဇန်နဝါရီ 1 မှ မေ 31 အထိ ပွင့်လင်းမီးရှို့ခြင်း တားမြစ်ထားသည်။",
+    "zh": "清迈烧荒季约在二月至四月；2026 年 1 月 1 日至 5 月 31 日禁止露天焚烧。",
+    "de": "Die Brandsaison in Chiang Mai dauert etwa von Februar bis April; offenes Verbrennen war vom 1. Januar bis 31. Mai 2026 verboten."
+   },
+   "src": "https://thailandstarterkit.com/health/chiang-mai-burning-season-expats/"
+  },
+  {
+   "t": {
+    "en": "Open-Meteo's air-quality page lists PM2.5, a US AQI and a European AQI. It names two forecasts: CAMS Europe (0.1°, about 11 km, hourly) and CAMS global (0.4°, about 45 km, every 3 hours).",
+    "th": "หน้าคุณภาพอากาศของ Open-Meteo มีค่า PM2.5, US AQI และ European AQI และระบุแหล่งพยากรณ์สองแหล่ง คือ CAMS ยุโรป (0.1° ราว 11 กม. รายชั่วโมง) กับ CAMS ทั่วโลก (0.4° ราว 45 กม. ทุก 3 ชั่วโมง)",
+    "my": "Open-Meteo ၏ လေထုအရည်အသွေးစာမျက်နှာတွင် PM2.5၊ US AQI နှင့် European AQI ပါသည်။ ခန့်မှန်းချက်နှစ်မျိုး ဖော်ပြထားသည် — CAMS ဥရောပ (0.1°၊ ခန့်မှန်း 11 ကီလိုမီတာ၊ တစ်နာရီတစ်ကြိမ်) နှင့် CAMS ကမ္ဘာလုံး (0.4°၊ ခန့်မှန်း 45 ကီလိုမီတာ၊ 3 နာရီတစ်ကြိမ်)။",
+    "zh": "Open-Meteo 的空气质量页面列出 PM2.5、美国 AQI 和欧洲 AQI，并写明两个预报来源：CAMS 欧洲（0.1°，约 11 公里，每小时）和 CAMS 全球（0.4°，约 45 公里，每 3 小时）。",
+    "de": "Die Luftqualitätsseite von Open-Meteo listet PM2,5, einen US-AQI und einen europäischen AQI. Sie nennt zwei Prognosen: CAMS Europa (0,1°, etwa 11 km, stündlich) und CAMS global (0,4°, etwa 45 km, alle 3 Stunden)."
+   },
+   "src": "https://open-meteo.com/en/docs/air-quality-api"
+  },
+  {
+   "t": {
+    "en": "Open-Meteo's free API is for non-commercial use, with limits of 600 calls a minute, 5,000 an hour, 10,000 a day and 300,000 a month. Its three paid plans include commercial use.",
+    "th": "API ฟรีของ Open-Meteo ใช้ได้สำหรับงานที่ไม่ใช่เชิงพาณิชย์ จำกัด 600 ครั้งต่อนาที 5,000 ครั้งต่อชั่วโมง 10,000 ครั้งต่อวัน และ 300,000 ครั้งต่อเดือน แผนเสียเงินทั้งสามแผนรวมการใช้เชิงพาณิชย์",
+    "my": "Open-Meteo ၏ အခမဲ့ API သည် စီးပွားဖြစ်မဟုတ်သော အသုံးပြုမှုအတွက်ဖြစ်ပြီး တစ်မိနစ် 600 ကြိမ်၊ တစ်နာရီ 5,000 ကြိမ်၊ တစ်ရက် 10,000 ကြိမ်၊ တစ်လ 300,000 ကြိမ် ကန့်သတ်ထားသည်။ ပိုက်ဆံပေးအစီအစဉ်သုံးမျိုးတွင် စီးပွားဖြစ်အသုံးပြုခွင့် ပါဝင်သည်။",
+    "zh": "Open-Meteo 的免费 API 仅限非商业用途，限额为每分钟 600 次、每小时 5,000 次、每天 10,000 次、每月 300,000 次。三个付费方案包含商业用途。",
+    "de": "Die kostenlose API von Open-Meteo ist für nichtkommerzielle Nutzung gedacht, mit Limits von 600 Abrufen pro Minute, 5,000 pro Stunde, 10,000 pro Tag und 300,000 pro Monat. Die drei kostenpflichtigen Pläne schliessen kommerzielle Nutzung ein."
+   },
+   "src": "https://open-meteo.com/en/pricing"
+  },
+  {
+   "t": {
+    "en": "RFC 5545 (September 2009) defines the iCalendar data format for representing and exchanging calendaring and scheduling information, such as events.",
+    "th": "RFC 5545 (กันยายน 2009) กำหนดรูปแบบข้อมูล iCalendar สำหรับแสดงและแลกเปลี่ยนข้อมูลปฏิทินและการนัดหมาย เช่น กิจกรรม",
+    "my": "RFC 5545 (2009 စက်တင်ဘာ) သည် ပွဲများကဲ့သို့ ပြက္ခဒိန်နှင့် အချိန်ဇယားအချက်အလက်များကို ဖော်ပြရန်နှင့် ဖလှယ်ရန် iCalendar ဒေတာပုံစံကို သတ်မှတ်ထားသည်။",
+    "zh": "RFC 5545（2009 年 9 月）定义了 iCalendar 数据格式，用于表示和交换日历与日程信息，例如活动。",
+    "de": "RFC 5545 (September 2009) legt das Datenformat iCalendar fest, mit dem sich Kalender- und Terminangaben, etwa Veranstaltungen, darstellen und austauschen lassen."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc5545"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Open-Meteo, weather and air-quality data",
+    "th": "Open-Meteo ข้อมูลอากาศและคุณภาพอากาศ",
+    "my": "Open-Meteo - ရာသီဥတုနှင့် လေထုအရည်အသွေး ဒေတာ",
+    "zh": "Open-Meteo 天气与空气质量数据",
+    "de": "Open-Meteo, Wetter- und Luftqualitätsdaten"
+   },
+   "p": {
+    "en": "free for non-commercial use, up to 10,000 calls a day; paid plans of 1 million, 5 million or more than 50 million calls a month for commercial use",
+    "th": "ฟรีสำหรับงานที่ไม่ใช่เชิงพาณิชย์ สูงสุด 10,000 ครั้งต่อวัน แผนเสียเงิน 1 ล้าน 5 ล้าน หรือมากกว่า 50 ล้านครั้งต่อเดือน สำหรับใช้เชิงพาณิชย์",
+    "my": "စီးပွားဖြစ်မဟုတ်သော အသုံးပြုမှုအတွက် အခမဲ့၊ တစ်ရက် 10,000 ကြိမ်အထိ၊ စီးပွားဖြစ်အတွက် တစ်လ 1 သန်း၊ 5 သန်း သို့မဟုတ် 50 သန်းကျော် ကြိမ်ရှိသော ပိုက်ဆံပေးအစီအစဉ်များ",
+    "zh": "非商业用途免费，每天最多 10,000 次；商业用途为每月 100 万次、500 万次或超过 5,000 万次的付费方案",
+    "de": "kostenlos für nichtkommerzielle Nutzung, bis 10,000 Abrufe pro Tag; für kommerzielle Nutzung kostenpflichtige Pläne mit 1 Million, 5 Millionen oder über 50 Millionen Abrufen im Monat"
+   },
+   "src": "https://open-meteo.com/en/pricing"
+  },
+  {
+   "t": {
+    "en": "OpenWeather, One Call weather data",
+    "th": "OpenWeather ข้อมูลอากาศ One Call",
+    "my": "OpenWeather - One Call ရာသီဥတုဒေတာ",
+    "zh": "OpenWeather One Call 天气数据",
+    "de": "OpenWeather, Wetterdaten über One Call"
+   },
+   "p": {
+    "en": "first 1,000 calls a day free; £0.0012 a call after",
+    "th": "1,000 ครั้งแรกต่อวันฟรี หลังจากนั้นครั้งละ £0.0012",
+    "my": "တစ်ရက်လျှင် ပထမ 1,000 ကြိမ် အခမဲ့၊ ထို့နောက် တစ်ကြိမ်လျှင် £0.0012",
+    "zh": "每天前 1,000 次免费，之后每次 £0.0012",
+    "de": "die ersten 1,000 Abrufe pro Tag kostenlos, danach £0.0012 pro Abruf"
+   },
+   "src": "https://openweathermap.org/price"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Is there a free weather widget for a website?",
+    "th": "มีวิดเจ็ตอากาศฟรีสำหรับเว็บไหม",
+    "my": "ဝက်ဘ်ဆိုက်အတွက် အခမဲ့ ရာသီဥတု ဝစ်ဂျက် ရှိပါသလား။",
+    "zh": "有免费的网站天气小组件吗？",
+    "de": "Gibt es ein kostenloses Wetter-Widget für eine Website?"
+   },
+   "a": {
+    "en": "Open-Meteo's weather API is free for non-commercial use, up to 10,000 calls a day. Its paid plans cover commercial use, from 1 million calls a month.",
+    "th": "API อากาศของ Open-Meteo ใช้ฟรีสำหรับงานที่ไม่ใช่เชิงพาณิชย์ สูงสุด 10,000 ครั้งต่อวัน แผนเสียเงินครอบคลุมการใช้เชิงพาณิชย์ เริ่มที่ 1 ล้านครั้งต่อเดือน",
+    "my": "Open-Meteo ၏ ရာသီဥတု API သည် စီးပွားဖြစ်မဟုတ်သော အသုံးပြုမှုအတွက် တစ်ရက် 10,000 ကြိမ်အထိ အခမဲ့ဖြစ်သည်။ ပိုက်ဆံပေးအစီအစဉ်များသည် စီးပွားဖြစ်အသုံးပြုမှုကို လွှမ်းခြုံပြီး တစ်လ 1 သန်းကြိမ်မှ စသည်။",
+    "zh": "Open-Meteo 的天气 API 非商业用途免费，每天最多 10,000 次。付费方案涵盖商业用途，每月 100 万次起。",
+    "de": "Die Wetter-API von Open-Meteo ist für nichtkommerzielle Nutzung kostenlos, bis 10,000 Abrufe pro Tag. Die kostenpflichtigen Pläne decken kommerzielle Nutzung ab, ab 1 Million Abrufen im Monat."
+   },
+   "src": "https://open-meteo.com/en/pricing"
+  },
+  {
+   "q": {
+    "en": "Can a box show PM2.5 for my town?",
+    "th": "กล่องแสดง PM2.5 ของเมืองฉันได้ไหม",
+    "my": "အကွက်က ကျွန်ုပ်မြို့၏ PM2.5 ကို ပြနိုင်ပါသလား။",
+    "zh": "小组件能显示我所在城镇的 PM2.5 吗？",
+    "de": "Kann eine Box den PM2,5-Wert meiner Stadt zeigen?"
+   },
+   "a": {
+    "en": "Open-Meteo lists PM2.5 among its hourly air-quality variables, with a US AQI and a European AQI. Its global forecast comes on a grid of 0.4°, about 45 km.",
+    "th": "Open-Meteo มี PM2.5 อยู่ในตัวแปรรายชั่วโมงด้านคุณภาพอากาศ พร้อม US AQI และ European AQI พยากรณ์ทั่วโลกอยู่บนตารางกริด 0.4° ราว 45 กม.",
+    "my": "Open-Meteo သည် PM2.5 ကို တစ်နာရီချင်း လေထုအရည်အသွေး ကိန်းရှင်များထဲတွင် ဖော်ပြထားပြီး US AQI နှင့် European AQI လည်း ပါသည်။ ကမ္ဘာလုံးဆိုင်ရာ ခန့်မှန်းချက်သည် 0.4°၊ ခန့်မှန်း 45 ကီလိုမီတာ ဂရစ်ပေါ်တွင် ရှိသည်။",
+    "zh": "Open-Meteo 在每小时空气质量变量中列有 PM2.5，另有美国 AQI 和欧洲 AQI。其全球预报的网格为 0.4°，约 45 公里。",
+    "de": "Open-Meteo führt PM2,5 unter den stündlichen Luftqualitätsvariablen auf, dazu einen US-AQI und einen europäischen AQI. Die globale Prognose liegt auf einem Raster von 0,4°, etwa 45 km."
+   },
+   "src": "https://open-meteo.com/en/docs/air-quality-api"
+  },
+  {
+   "q": {
+    "en": "Can a box find the visitor's location by itself?",
+    "th": "กล่องหาตำแหน่งของผู้เข้าชมเองได้ไหม",
+    "my": "အကွက်က ဧည့်သည်၏ တည်နေရာကို ကိုယ်တိုင် ရှာနိုင်ပါသလား။",
+    "zh": "小组件能自己获取访客的位置吗？",
+    "de": "Kann die Box den Standort des Besuchers selbst ermitteln?"
+   },
+   "a": {
+    "en": "A page can read a visitor's position only in a secure context, which means HTTPS. The browser asks the visitor for permission first.",
+    "th": "หน้าเว็บอ่านตำแหน่งของผู้เข้าชมได้เฉพาะในบริบทที่ปลอดภัย คือ HTTPS และเบราว์เซอร์จะขออนุญาตผู้เข้าชมก่อน",
+    "my": "စာမျက်နှာတစ်ခုသည် လုံခြုံသော ပတ်ဝန်းကျင် (HTTPS) တွင်သာ ဧည့်သည်၏ တည်နေရာကို ဖတ်နိုင်သည်။ ဘရောက်ဇာက ဧည့်သည်ထံ ခွင့်ပြုချက်ကို အရင်တောင်းသည်။",
+    "zh": "网页只能在安全环境（即 HTTPS）下读取访客的位置，浏览器会先征求访客的许可。",
+    "de": "Eine Seite kann den Standort eines Besuchers nur in einem sicheren Kontext lesen, also über HTTPS. Der Browser fragt den Besucher vorher um Erlaubnis."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+  },
+  {
+   "q": {
+    "en": "What does PM2.5 mean?",
+    "th": "PM2.5 หมายถึงอะไร",
+    "my": "PM2.5 ဆိုသည်မှာ ဘာလဲ။",
+    "zh": "PM2.5 是什么意思？",
+    "de": "Was bedeutet PM2,5?"
+   },
+   "a": {
+    "en": "PM2.5 is fine particles in the air, 2.5 micrometres or less across. WHO says they penetrate the lungs and can enter the bloodstream.",
+    "th": "PM2.5 คืออนุภาคละเอียดในอากาศที่มีเส้นผ่านศูนย์กลางไม่เกิน 2.5 ไมโครเมตร WHO ระบุว่าเข้าสู่ปอดและเข้ากระแสเลือดได้",
+    "my": "PM2.5 သည် လေထဲရှိ အချင်း မိုက်ခရိုမီတာ 2.5 သို့မဟုတ် ထိုထက်ငယ်သော အမှုန်ကလေးများ ဖြစ်သည်။ WHO က ၎င်းတို့သည် အဆုတ်ထဲဝင်ပြီး သွေးထဲသို့ ရောက်နိုင်သည်ဟု ဆိုသည်။",
+    "zh": "PM2.5 是空气中直径不超过 2.5 微米的细颗粒物。WHO 指出，它们能穿过肺部并进入血液。",
+    "de": "PM2,5 sind feine Partikel in der Luft mit einem Durchmesser von höchstens 2,5 Mikrometern. Die WHO schreibt, dass sie in die Lunge eindringen und ins Blut gelangen können."
+   },
+   "src": "https://www.who.int/news-room/feature-stories/detail/what-are-the-who-air-quality-guidelines"
+  }
+ ],
+ "related": [
+  "web-search",
+  "web-care",
+  "site",
+  "clean-air",
+  "almanac-widget",
+  "web-found"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang widgets: weather and PM2.5 for the cities you pick, and what is on",
+    "th": "วิดเจ็ตมดแดง: อากาศและ PM2.5 ของเมืองที่คุณเลือก และงานในเมือง",
+    "my": "Mot Dang ဝစ်ဂျက်များ - သင်ရွေးသည့် မြို့များ၏ ရာသီဥတုနှင့် PM2.5 နှင့် ပွဲများ",
+    "zh": "Mot Dang 小组件：您选择城市的天气和 PM2.5，以及当地活动",
+    "de": "Mot Dang-Widgets: Wetter und PM2,5 für die gewählten Städte und was ansteht"
+   },
+   "href": "https://motdang.net/widgets"
+  },
+  {
+   "t": {
+    "en": "Open-Meteo: air-quality API documentation",
+    "th": "Open-Meteo: เอกสาร API คุณภาพอากาศ",
+    "my": "Open-Meteo - လေထုအရည်အသွေး API စာတမ်း",
+    "zh": "Open-Meteo：空气质量 API 文档",
+    "de": "Open-Meteo: Dokumentation der Luftqualitäts-API"
+   },
+   "href": "https://open-meteo.com/en/docs/air-quality-api"
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+ "id": "cartoons",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A health, charity or public campaign uses drawn panels to carry its message in pictures.",
+  "th": "แคมเปญสุขภาพ การกุศล หรือสาธารณะ ใช้การ์ตูนหลายช่องเล่าสารด้วยภาพ",
+  "my": "ကျန်းမာရေး၊ ပရဟိတ သို့မဟုတ် အများပြည်သူ လှုပ်ရှားမှုတစ်ခုသည် ၎င်း၏ သတင်းစကားကို ပုံများဖြင့် သယ်ဆောင်ရန် ရေးဆွဲထားသော ကွက်များကို သုံးသည်။",
+  "zh": "健康、公益或公共宣传活动用画好的分格，把信息用图画传达出去。",
+  "de": "Eine Gesundheits-, Wohltätigkeits- oder öffentliche Kampagne trägt ihre Botschaft mit gezeichneten Bildern."
+ },
+ "n": {
+  "de": "Kampagnen-Cartoons"
+ },
+ "l": {
+  "de": "Sechs Bilder für eine Gesundheits-, Wohltätigkeits- oder öffentliche Kampagne."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You give the campaign and its message.",
+    "th": "คุณบอกแคมเปญและสารที่จะสื่อ",
+    "my": "လှုပ်ရှားမှုနှင့် ၎င်း၏ သတင်းစကားကို သင်ပေးသည်။",
+    "zh": "您说明宣传活动和要传达的信息。",
+    "de": "Sie nennen die Kampagne und ihre Botschaft."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "Six panels are drawn for the campaign.",
+    "th": "วาดการ์ตูนหกช่องสำหรับแคมเปญ",
+    "my": "လှုပ်ရှားမှုအတွက် ကွက်ခြောက်ကွက်ကို ရေးဆွဲသည်။",
+    "zh": "为宣传活动绘制六格漫画。",
+    "de": "Für die Kampagne werden sechs Bilder gezeichnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The six panels go to you.",
+    "th": "ส่งการ์ตูนหกช่องให้คุณ",
+    "my": "ကွက်ခြောက်ကွက်ကို သင့်ထံ ပို့ပေးသည်။",
+    "zh": "六格漫画交给您。",
+    "de": "Die sechs Bilder gehen an Sie."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A 2025 scoping review of 34 randomized trials of graphic medicine, comic-style health material, reports mixed results with promising signs for patient engagement and knowledge, and says more effectiveness trials are needed.",
+    "th": "การทบทวนขอบเขตปี 2025 ของการทดลองแบบสุ่ม 34 เรื่องเกี่ยวกับสื่อสุขภาพแบบการ์ตูน (graphic medicine) รายงานผลที่ปะปนกัน โดยมีสัญญาณที่น่าพอใจด้านการมีส่วนร่วมของผู้ป่วยและความรู้ และระบุว่าต้องมีการทดลองด้านประสิทธิผลเพิ่มเติม",
+    "my": "2025 ခုနှစ် graphic medicine (ကာတွန်းပုံစံ ကျန်းမာရေးအချက်အလက်) နှင့်ပတ်သက်သော ကျပန်းစမ်းသပ်မှု 34 ခု၏ scoping review က ရလဒ်ရောထွေးပြီး လူနာပါဝင်မှုနှင့် အသိပညာအတွက် မျှော်လင့်ချက်ရှိသော လက္ခဏာများ ရှိသည်ဟု တင်ပြပြီး ထိရောက်မှု စမ်းသပ်မှု ထပ်မံလိုအပ်သည်ဟု ဆိုသည်။",
+    "zh": "2025 年一项针对 34 项漫画式健康材料（graphic medicine）随机试验的范围综述报告：结果不一，在患者参与度和知识方面有可喜迹象，并指出还需要更多效果试验。",
+    "de": "Eine Scoping-Review von 2025 zu 34 randomisierten Studien über Graphic Medicine, also gezeichnete Gesundheitsmaterialien, berichtet gemischte Ergebnisse mit vielversprechenden Zeichen bei Einbindung und Wissen und sagt, es brauche weitere Wirksamkeitsstudien."
+   },
+   "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12111626/"
+  },
+  {
+   "t": {
+    "en": "DataReportal counts 56 million monthly active LINE users in Thailand and puts Facebook's advertising reach at 51.5 million (late 2025), two places where a campaign is shared.",
+    "th": "DataReportal นับผู้ใช้ LINE รายเดือนในไทย 56 ล้านคน และระบุว่า Facebook เข้าถึงผู้ชมโฆษณา 51.5 ล้านคน (ปลายปี 2025) ซึ่งเป็นสองที่ที่แคมเปญถูกแชร์",
+    "my": "DataReportal က ထိုင်းနိုင်ငံ၌ LINE လစဉ်အသုံးပြုသူ 56 သန်းကို ရေတွက်ပြီး Facebook ၏ ကြော်ငြာအမြင်ရောက်မှုကို 51.5 သန်း (2025 နှောင်းပိုင်း) ဟု ဖော်ပြသည်။ ၎င်းတို့မှာ လှုပ်ရှားမှုတစ်ခုကို မျှဝေသည့်နေရာ နှစ်ခုဖြစ်သည်။",
+    "zh": "DataReportal 统计泰国 LINE 月活跃用户为 5600 万，Facebook 广告触达为 5150 万（2025 年底），这是宣传活动被分享的两个地方。",
+    "de": "DataReportal zählt in Thailand 56 Millionen monatlich aktive LINE-Nutzer und beziffert die Werbereichweite von Facebook auf 51.5 Millionen (Ende 2025), zwei Orte, an denen eine Kampagne geteilt wird."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "Under Thai copyright, the author has the right to be named as the author and to stop a change that harms the author's reputation.",
+    "th": "ตามกฎหมายลิขสิทธิ์ไทย ผู้สร้างสรรค์มีสิทธิ์ให้ระบุชื่อว่าเป็นผู้สร้างสรรค์ และห้ามการดัดแปลงหรือบิดเบือนที่ทำให้ชื่อเสียงเสียหาย",
+    "my": "ထိုင်းမူပိုင်ခွင့်အရ ဖန်တီးသူသည် မိမိကို ဖန်တီးသူအဖြစ် အမည်ဖော်ပြခံပိုင်ခွင့်နှင့် ဂုဏ်သတင်းကို ထိခိုက်စေသော ပြောင်းလဲမှုကို တားမြစ်ပိုင်ခွင့် ရှိသည်။",
+    "zh": "按泰国版权法，作者有权署名，也有权阻止损害其声誉的歪曲或修改。",
+    "de": "Nach thailändischem Urheberrecht darf die Urheberin oder der Urheber als solche genannt werden und eine Änderung untersagen, die den Ruf schädigt."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "A Thai copyright assignment must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "การโอนลิขสิทธิ์ในไทยต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့်ရေးပြီး ကာလကို သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "泰国的版权转让必须采用书面形式并写明期限；未写明期限的，期限为 10 年。",
+    "de": "Eine Abtretung des Urheberrechts in Thailand muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Cartoons from a Fastwork seller with 136 orders, 3 changes included",
+    "th": "การ์ตูนจากผู้ขายบน Fastwork ที่มี 136 ออเดอร์ รวมแก้ไข 3 ครั้ง",
+    "my": "အော်ဒါ 136 ခုရှိသော Fastwork ရောင်းသူထံမှ ကာတွန်းများ၊ ပြင်ဆင်မှု 3 ကြိမ်ပါ",
+    "zh": "Fastwork 上有 136 笔订单的卖家的漫画，含 3 次修改",
+    "de": "Cartoons von einem Fastwork-Anbieter mit 136 Bestellungen, 3 Änderungen inklusive"
+   },
+   "p": {
+    "en": "฿500 for 1 panel, 3 days; ฿700 for 2–4 panels, 7 days; ฿1,000 for 5–7 panels or an infographic, 8 days",
+    "th": "฿500 สำหรับ 1 ช่อง 3 วัน ฿700 สำหรับ 2–4 ช่อง 7 วัน ฿1,000 สำหรับ 5–7 ช่องหรืออินโฟกราฟิก 8 วัน",
+    "my": "ကွက် 1 ကွက် ฿500 (3 ရက်)၊ ကွက် 2–4 ကွက် ฿700 (7 ရက်)၊ ကွက် 5–7 ကွက် သို့မဟုတ် အင်ဖိုဂရပ်ဖစ် ฿1,000 (8 ရက်)",
+    "zh": "1 格 ฿500，3 天；2–4 格 ฿700，7 天；5–7 格或信息图 ฿1,000，8 天",
+    "de": "฿500 für 1 Bild, 3 Tage; ฿700 für 2–4 Bilder, 7 Tage; ฿1,000 für 5–7 Bilder oder eine Infografik, 8 Tage"
+   },
+   "src": "https://fastwork.co/user/nighty90/cartoon-drawing-98869702"
+  },
+  {
+   "t": {
+    "en": "Hand-drawn cartoons from a Fastwork seller with 105 orders; commercial use costs extra",
+    "th": "การ์ตูนวาดมือจากผู้ขายบน Fastwork ที่มี 105 ออเดอร์ การใช้เชิงพาณิชย์คิดเพิ่ม",
+    "my": "အော်ဒါ 105 ခုရှိသော Fastwork ရောင်းသူထံမှ လက်ဖြင့်ဆွဲ ကာတွန်းများ၊ စီးပွားရေးသုံးခွင့်မှာ ထပ်ပေါင်းသည်",
+    "zh": "Fastwork 上有 105 笔订单的卖家的手绘漫画，商用另收费",
+    "de": "Handgezeichnete Cartoons von einem Fastwork-Anbieter mit 105 Bestellungen; kommerzielle Nutzung kostet extra"
+   },
+   "p": {
+    "en": "฿1,500 for a character, 7 days; ฿2,500 for an illustration, 15 days",
+    "th": "฿1,500 สำหรับตัวละคร 7 วัน ฿2,500 สำหรับภาพประกอบ 15 วัน",
+    "my": "ဇာတ်ကောင်တစ်ခု ฿1,500 (7 ရက်)၊ သရုပ်ဖော်ပုံတစ်ပုံ ฿2,500 (15 ရက်)",
+    "zh": "角色设计 ฿1,500，7 天；插画 ฿2,500，15 天",
+    "de": "฿1,500 für eine Figur, 7 Tage; ฿2,500 für eine Illustration, 15 Tage"
+   },
+   "src": "https://fastwork.co/user/vitamyu/cartoon-drawing-18081196"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a comic strip commission cost?",
+    "th": "จ้างวาดการ์ตูนหลายช่องราคาเท่าไร",
+    "my": "ကာတွန်းကွက်ဆက်ကို မှာယူရန် ဘယ်လောက်ကျသလဲ။",
+    "zh": "委托画一组连环漫画要多少钱？",
+    "de": "Was kostet ein bestellter Comicstrip?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 136 orders lists a colour cartoon of 1 panel at ฿500, 2 to 4 panels at ฿700 and 5 to 7 panels or an infographic at ฿1,000. Each package includes 3 changes, with 1 or 2 characters, text and a simple background.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 136 ออเดอร์ลงการ์ตูนสี 1 ช่อง ฿500 2 ถึง 4 ช่อง ฿700 และ 5 ถึง 7 ช่องหรืออินโฟกราฟิก ฿1,000 ทุกแพ็กเกจรวมแก้ไข 3 ครั้ง มีตัวละคร 1 หรือ 2 ตัว ข้อความ และพื้นหลังเรียบง่าย",
+    "my": "အော်ဒါ 136 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက အရောင်ပါ ကာတွန်း 1 ကွက်ကို ฿500၊ 2 မှ 4 ကွက်ကို ฿700 နှင့် 5 မှ 7 ကွက် သို့မဟုတ် အင်ဖိုဂရပ်ဖစ်ကို ฿1,000 ဟု စာရင်းပြုထားသည်။ ပက်ကေ့ချ်တိုင်းတွင် ပြင်ဆင်မှု 3 ကြိမ်၊ ဇာတ်ကောင် 1 သို့မဟုတ် 2 ကောင်၊ စာသားနှင့် ရိုးရှင်းသော နောက်ခံ ပါသည်။",
+    "zh": "Fastwork 上一位有 136 笔订单的卖家标价：彩色漫画 1 格 ฿500，2 至 4 格 ฿700，5 至 7 格或信息图 ฿1,000。每档含 3 次修改，有 1 至 2 个角色、文字和简单背景。",
+    "de": "Ein Fastwork-Anbieter mit 136 Bestellungen nennt für einen farbigen Cartoon mit 1 Bild ฿500, mit 2 bis 4 Bildern ฿700 und mit 5 bis 7 Bildern oder einer Infografik ฿1,000. Jedes Paket enthält 3 Änderungen, 1 bis 2 Figuren, Text und einen einfachen Hintergrund."
+   },
+   "src": "https://fastwork.co/user/nighty90/cartoon-drawing-98869702"
+  },
+  {
+   "q": {
+    "en": "How long does a drawn comic take?",
+    "th": "การ์ตูนวาดมือใช้เวลานานเท่าไร",
+    "my": "ရေးဆွဲထားသော ကာတွန်းတစ်ခု ဘယ်လောက်ကြာသလဲ။",
+    "zh": "手绘漫画要画多久？",
+    "de": "Wie lange dauert ein gezeichneter Comic?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists 3 days for 1 panel, 7 days for 2 to 4 panels and 8 days for 5 to 7 panels. Another lists 7 days for a hand-drawn character and 15 days for an illustration, drawn in Procreate and delivered as digital files.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งระบุ 3 วันสำหรับ 1 ช่อง 7 วันสำหรับ 2 ถึง 4 ช่อง และ 8 วันสำหรับ 5 ถึง 7 ช่อง อีกรายระบุ 7 วันสำหรับตัวละครวาดมือ และ 15 วันสำหรับภาพประกอบ วาดใน Procreate และส่งเป็นไฟล์ดิจิทัล",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက 1 ကွက်အတွက် 3 ရက်၊ 2 မှ 4 ကွက်အတွက် 7 ရက်နှင့် 5 မှ 7 ကွက်အတွက် 8 ရက် ဟု စာရင်းပြုထားသည်။ နောက်တစ်ဦးက လက်ဖြင့်ဆွဲ ဇာတ်ကောင်အတွက် 7 ရက်နှင့် သရုပ်ဖော်ပုံအတွက် 15 ရက်ဟု ဖော်ပြပြီး Procreate တွင် ရေးဆွဲကာ ဒစ်ဂျစ်တယ်ဖိုင်များအဖြစ် ပို့ပေးသည်။",
+    "zh": "一位 Fastwork 卖家标：1 格 3 天，2 至 4 格 7 天，5 至 7 格 8 天。另一位标：手绘角色 7 天，插画 15 天，在 Procreate 中绘制，以数字文件交付。",
+    "de": "Ein Fastwork-Anbieter nennt 3 Tage für 1 Bild, 7 Tage für 2 bis 4 Bilder und 8 Tage für 5 bis 7 Bilder. Ein anderer nennt 7 Tage für eine handgezeichnete Figur und 15 Tage für eine Illustration, in Procreate gezeichnet und als digitale Dateien geliefert."
+   },
+   "src": "https://fastwork.co/user/vitamyu/cartoon-drawing-18081196"
+  },
+  {
+   "q": {
+    "en": "Do cartoons work in health campaigns?",
+    "th": "การ์ตูนได้ผลในแคมเปญสุขภาพไหม",
+    "my": "ကျန်းမာရေးလှုပ်ရှားမှုများတွင် ကာတွန်းများ အလုပ်ဖြစ်ပါသလား။",
+    "zh": "漫画在健康宣传中有效吗？",
+    "de": "Wirken Cartoons in Gesundheitskampagnen?"
+   },
+   "a": {
+    "en": "A 2025 scoping review of 34 randomized trials of comic-style health material reports mixed results. The authors describe promising efficacy for patient engagement and knowledge, and say more effectiveness trials are needed.",
+    "th": "การทบทวนขอบเขตปี 2025 ของการทดลองแบบสุ่ม 34 เรื่องเกี่ยวกับสื่อสุขภาพแบบการ์ตูนรายงานผลที่ปะปนกัน ผู้เขียนระบุว่ามีสัญญาณประสิทธิผลที่น่าพอใจด้านการมีส่วนร่วมของผู้ป่วยและความรู้ และระบุว่าต้องมีการทดลองด้านประสิทธิผลเพิ่มเติม",
+    "my": "ကာတွန်းပုံစံ ကျန်းမာရေးအချက်အလက် ကျပန်းစမ်းသပ်မှု 34 ခု၏ 2025 scoping review က ရလဒ်ရောထွေးသည်ဟု တင်ပြသည်။ စာရေးသူများက လူနာပါဝင်မှုနှင့် အသိပညာအတွက် မျှော်လင့်ချက်ရှိသော ထိရောက်မှုကို ဖော်ပြပြီး ထိရောက်မှု စမ်းသပ်မှု ထပ်မံလိုအပ်သည်ဟု ဆိုသည်။",
+    "zh": "2025 年一项针对 34 项漫画式健康材料随机试验的范围综述报告结果不一。作者认为在患者参与度和知识方面有可喜的效果迹象，并指出还需要更多效果试验。",
+    "de": "Eine Scoping-Review von 2025 zu 34 randomisierten Studien über gezeichnete Gesundheitsmaterialien berichtet gemischte Ergebnisse. Die Autorinnen und Autoren beschreiben eine vielversprechende Wirkung auf Einbindung und Wissen und sagen, es brauche weitere Wirksamkeitsstudien."
+   },
+   "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12111626/"
+  },
+  {
+   "q": {
+    "en": "Is commercial use included in a cartoon's price?",
+    "th": "ราคาการ์ตูนรวมสิทธิ์ใช้เชิงพาณิชย์ไหม",
+    "my": "ကာတွန်းဈေးနှုန်းတွင် စီးပွားရေးသုံးခွင့် ပါသလား။",
+    "zh": "漫画价格包含商用权吗？",
+    "de": "Ist die kommerzielle Nutzung im Preis eines Cartoons enthalten?"
+   },
+   "a": {
+    "en": "On one Fastwork seller's listing, using the work commercially costs extra, and so does an .ai file. The seller delivers digital files drawn by hand in Procreate.",
+    "th": "ในรายการของผู้ขายบน Fastwork รายหนึ่ง การนำงานไปใช้เชิงพาณิชย์คิดเพิ่ม และไฟล์ .ai ก็คิดเพิ่ม ผู้ขายส่งไฟล์ดิจิทัลที่วาดมือใน Procreate",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ စာရင်းတွင် လက်ရာကို စီးပွားရေးအတွက် သုံးလျှင် ထပ်ပေါင်းသည်၊ .ai ဖိုင်လည်း ထပ်ပေါင်းသည်။ ရောင်းသူက Procreate တွင် လက်ဖြင့်ဆွဲထားသော ဒစ်ဂျစ်တယ်ဖိုင်များကို ပို့ပေးသည်။",
+    "zh": "在一位 Fastwork 卖家的商品页上，作品用于商业用途要另付费，.ai 文件也要另付费。卖家交付在 Procreate 中手绘的数字文件。",
+    "de": "Im Angebot eines Fastwork-Anbieters kostet die kommerzielle Nutzung des Werks extra, ebenso eine .ai-Datei. Geliefert werden digitale Dateien, von Hand in Procreate gezeichnet."
+   },
+   "src": "https://fastwork.co/user/vitamyu/cartoon-drawing-18081196"
+  },
+  {
+   "q": {
+    "en": "How does copyright pass to the buyer in Thailand?",
+    "th": "ลิขสิทธิ์ตกเป็นของผู้ซื้อได้อย่างไรในไทย",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်သည် ဝယ်သူထံ ဘယ်လို ရောက်သွားသလဲ။",
+    "zh": "在泰国，版权如何转给买方？",
+    "de": "Wie geht das Urheberrecht in Thailand an den Käufer über?"
+   },
+   "a": {
+    "en": "In Thailand copyright arises when a work is made, and registration is not needed. A transfer of copyright to the buyer must be in writing and name a term. With no term written, it is 10 years.",
+    "th": "ในไทย ลิขสิทธิ์เกิดขึ้นเมื่อสร้างสรรค์งาน ไม่ต้องจดทะเบียน การโอนลิขสิทธิ์ให้ผู้ซื้อต้องทำเป็นหนังสือและระบุระยะเวลา ถ้าไม่ได้เขียนระยะเวลาไว้ จะเป็น 10 ปี",
+    "my": "ထိုင်းတွင် လက်ရာဖန်တီးချိန်၌ မူပိုင်ခွင့် ဖြစ်ပေါ်ပြီး မှတ်ပုံတင်ရန် မလိုပါ။ ဝယ်သူထံ မူပိုင်ခွင့် လွှဲပြောင်းရာတွင် စာဖြင့်ရေးပြီး ကာလ သတ်မှတ်ရမည်။ ကာလ မရေးထားလျှင် 10 နှစ်ဖြစ်သည်။",
+    "zh": "在泰国，作品一经创作即享有版权，无需登记。把版权转让给买方，必须采用书面形式并写明期限；未写明期限的，为 10 年。",
+    "de": "In Thailand entsteht das Urheberrecht mit dem Werk; eine Eintragung ist nicht nötig. Die Abtretung an den Käufer muss schriftlich erfolgen und eine Dauer nennen. Steht keine Dauer im Text, sind es 10 Jahre."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "related": [
+  "drawn",
+  "graphics",
+  "social",
+  "event-kit",
+  "checkin",
+  "video"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Scoping review of graphic medicine interventions (2025)",
+    "th": "การทบทวนขอบเขตเรื่องสื่อสุขภาพแบบการ์ตูน (2025)",
+    "my": "graphic medicine ဆိုင်ရာ scoping review (2025)",
+    "zh": "漫画式健康干预的范围综述（2025）",
+    "de": "Scoping-Review zu Graphic-Medicine-Interventionen (2025)"
+   },
+   "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12111626/"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a cartoon listing with 1-panel to 7-panel packages",
+    "th": "Fastwork: รายการการ์ตูนที่มีแพ็กเกจ 1 ถึง 7 ช่อง",
+    "my": "Fastwork - ကွက် 1 မှ 7 ကွက် ပက်ကေ့ချ်ပါ ကာတွန်းစာရင်း",
+    "zh": "Fastwork：有 1 至 7 格套餐的漫画商品页",
+    "de": "Fastwork: ein Cartoon-Angebot mit Paketen von 1 bis 7 Bildern"
+   },
+   "href": "https://fastwork.co/user/nighty90/cartoon-drawing-98869702"
+  }
+ ],
+ "glyphs": [
+  "laugh",
+  "pencil",
+  "megaphone"
+ ]
+}

@@ -1,0 +1,360 @@
+{
+ "id": "balloon",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Balloons fly in Chiang Mai only from November to February, and paramotors fly at dawn and late afternoon, when the air is calm.",
+  "th": "บอลลูนในเชียงใหม่บินเฉพาะพฤศจิกายนถึงกุมภาพันธ์ และพารามอเตอร์บินช่วงเช้าตรู่กับบ่ายแก่ เมื่ออากาศนิ่ง",
+  "my": "ချင်းမိုင်တွင် လေပူဖောင်းသည် နိုဝင်ဘာမှ ဖေဖော်ဝါရီအတွင်းသာ ပျံပြီး ပါရာမော်တာသည် လေငြိမ်သော နံနက်စောစောနှင့် ညနေပိုင်းတွင် ပျံသည်။",
+  "zh": "清迈的热气球只在 11 月到次年 2 月飞行，动力伞则在黎明和傍晚前后、空气平稳时起飞。",
+  "de": "Ballone fliegen in Chiang Mai nur von November bis Februar, und Paramotoren starten im Morgengrauen und am späten Nachmittag, wenn die Luft ruhig ist."
+ },
+ "n": {
+  "de": "Ballon- oder Paramotorflug"
+ },
+ "l": {
+  "de": "Mit Transfers gebucht, pro Person."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "The flight is booked.",
+    "th": "จองการบินให้",
+    "my": "ပျံသန်းမှုကို ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "预订飞行。",
+    "de": "Der Flug wird gebucht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the flight",
+    "th": "ก่อนบิน",
+    "my": "မပျံမီ",
+    "zh": "飞行前",
+    "de": "Vor dem Flug"
+   }
+  },
+  {
+   "db": "songthaew",
+   "t": {
+    "en": "Transfers are part of the booking.",
+    "th": "รถรับส่งรวมอยู่ในการจอง",
+    "my": "ပို့ဆောင်ရေးသည် ဘွတ်ကင်ထဲတွင် ပါဝင်သည်။",
+    "zh": "接送包含在预订里。",
+    "de": "Die Transfers gehören zur Buchung."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Flight day",
+    "th": "วันบิน",
+    "my": "ပျံသန်းမည့်နေ့",
+    "zh": "飞行当天",
+    "de": "Am Flugtag"
+   }
+  },
+  {
+   "db": "balloon",
+   "t": {
+    "en": "You fly: a shared basket for the balloon, or a tandem with a pilot for the paramotor.",
+    "th": "คุณบิน: บอลลูนเป็นตะกร้ารวม หรือพารามอเตอร์บินคู่กับนักบิน",
+    "my": "သင်ပျံသန်းသည်: လေပူဖောင်းတွင် မျှဝေသော ခြင်းတောင်း၊ ပါရာမော်တာတွင် ပိုင်လော့နှင့် နှစ်ဦးတွဲ။",
+    "zh": "起飞：热气球是共乘吊篮，动力伞是与飞行员双人同飞。",
+    "de": "Sie fliegen: im Ballon in einem gemeinsamen Korb, mit dem Paramotor zu zweit mit einem Piloten."
+   },
+   "who": {
+    "en": "The pilot",
+    "th": "นักบิน",
+    "my": "ပိုင်လော့",
+    "zh": "飞行员",
+    "de": "Der Pilot"
+   },
+   "time": {
+    "en": "The flight",
+    "th": "ตอนบิน",
+    "my": "ပျံသန်းချိန်",
+    "zh": "飞行时",
+    "de": "Der Flug"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "For the Chiang Rai balloon, festival entry is paid at cost.",
+    "th": "บอลลูนเชียงราย ค่าเข้างานคิดตามจริง",
+    "my": "ချင်းရိုင် လေပူဖောင်းအတွက် ပွဲဝင်ခွင့်ကြေးကို ကုန်ကျစရိတ်အတိုင်း ပေးချေရသည်။",
+    "zh": "清莱热气球的节庆门票按实际费用结算。",
+    "de": "Beim Ballon in Chiang Rai wird der Festivaleintritt zum Selbstkostenpreis bezahlt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the festival",
+    "th": "ที่งาน",
+    "my": "ပွဲတွင်",
+    "zh": "在节庆现场",
+    "de": "Am Festival"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Balloon Adventure Thailand flies from Horizon Village & Resort in Choeng Doi, Doi Saket, from November to February. The page lists about 45 to 60 minutes in the air, with hotel transfer, a certificate signed by the pilot, insurance and a champagne breakfast after landing.",
+    "th": "Balloon Adventure Thailand บินจาก Horizon Village & Resort ตำบลเชิงดอย อำเภอดอยสะเก็ด ช่วงพฤศจิกายนถึงกุมภาพันธ์ หน้าเว็บระบุว่าอยู่บนฟ้าราว 45 ถึง 60 นาที ราคารวมรถรับส่งโรงแรม ใบรับรองที่นักบินเซ็น ประกัน และอาหารเช้าพร้อมแชมเปญหลังลงจอด",
+    "my": "Balloon Adventure Thailand သည် နိုဝင်ဘာမှ ဖေဖော်ဝါရီအထိ ဒွိုင်ဆခက်၊ ချောင်းဒွိုင်ရှိ Horizon Village & Resort မှ ပျံသည်။ စာမျက်နှာတွင် ကောင်းကင်ပေါ် 45 မှ 60 မိနစ်ခန့် ဖော်ပြပြီး ဟိုတယ်ပို့ဆောင်ရေး၊ လေယာဉ်မှူးလက်မှတ်ထိုးထားသော လက်မှတ်၊ အာမခံနှင့် ဆင်းသက်ပြီးနောက် ရှန်ပိန်နံနက်စာ ပါဝင်သည်။",
+    "zh": "Balloon Adventure Thailand 在 11 月到 2 月间，从清迈府 Doi Saket 县 Choeng Doi 的 Horizon Village & Resort 起飞。页面写明空中约 45 到 60 分钟，含酒店接送、飞行员签名的证书、保险，以及落地后的香槟早餐。",
+    "de": "Balloon Adventure Thailand startet von November bis Februar beim Horizon Village & Resort in Choeng Doi, Doi Saket. Die Seite nennt etwa 45 bis 60 Minuten in der Luft, mit Hoteltransfer, einem vom Piloten unterschriebenen Zertifikat, Versicherung und Champagnerfrühstück nach der Landung."
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/balloon-adventure-thailand/"
+  },
+  {
+   "t": {
+    "en": "Balloon flights depend on wind and visibility, and the same page says a last-minute cancellation or reschedule is possible.",
+    "th": "การบินบอลลูนขึ้นอยู่กับลมและทัศนวิสัย และหน้าเดียวกันระบุว่าอาจยกเลิกหรือเลื่อนกะทันหันได้",
+    "my": "လေပူဖောင်းပျံသန်းမှုသည် လေနှင့် မြင်ကွင်းအပေါ် မူတည်ပြီး နောက်ဆုံးမိနစ်တွင် ဖျက်သိမ်းခြင်း သို့မဟုတ် ရက်ရွှေ့ခြင်း ဖြစ်နိုင်ကြောင်း ထိုစာမျက်နှာက ဆိုသည်။",
+    "zh": "热气球飞行取决于风和能见度；该页面说，临时取消或改期都有可能。",
+    "de": "Ballonflüge hängen von Wind und Sicht ab, und dieselbe Seite schreibt, dass eine Absage oder Verschiebung in letzter Minute möglich ist."
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/balloon-adventure-thailand/"
+  },
+  {
+   "t": {
+    "en": "Thai Holiday Guide gives November to January as the best window in Chiang Mai: cool, stable air and clear views. February to April is the burning season, when smoke haze cuts visibility. June to October is rainy.",
+    "th": "Thai Holiday Guide ระบุว่าพฤศจิกายนถึงมกราคมเป็นช่วงที่ดีที่สุดในเชียงใหม่ อากาศเย็นนิ่ง ทัศนียภาพชัด กุมภาพันธ์ถึงเมษายนเป็นฤดูเผา ควันหมอกลดทัศนวิสัย และมิถุนายนถึงตุลาคมเป็นหน้าฝน",
+    "my": "Thai Holiday Guide က ချင်းမိုင်တွင် နိုဝင်ဘာမှ ဇန်နဝါရီသည် အကောင်းဆုံးကာလ (အေးပြီး လေငြိမ်၊ မြင်ကွင်းကြည်လင်) ဖြစ်သည်ဟု ဆိုသည်။ ဖေဖော်ဝါရီမှ ဧပြီအထိ မီးရှို့ရာသီဖြစ်ပြီး မီးခိုးမြူက မြင်ကွင်းကို လျော့စေသည်။ ဇွန်မှ အောက်တိုဘာအထိ မိုးရာသီဖြစ်သည်။",
+    "zh": "Thai Holiday Guide 称清迈 11 月到 1 月最好：凉爽、气流稳、视野清晰。2 月到 4 月是烧荒季，烟霾降低能见度。6 月到 10 月是雨季。",
+    "de": "Thai Holiday Guide nennt November bis Januar als beste Zeit in Chiang Mai: kühle, ruhige Luft und klare Sicht. Von Februar bis April ist Brandrodungszeit, und Rauchdunst nimmt die Sicht. Juni bis Oktober ist Regenzeit."
+   },
+   "src": "https://www.thaiholidayguide.com/flying-over-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "Blue Sky Paramotor flies from Ban Mho, San Kamphaeng, about 40 minutes by car east of the Old City. Regular seats are for ages 5 to 80, with a 110 kg limit for one person. A flight is about 15 to 20 minutes in the air, and accident insurance is included.",
+    "th": "Blue Sky Paramotor บินที่ Ban Mho อำเภอสันกำแพง ห่างจากเมืองเก่าไปทางตะวันออกราว 40 นาทีทางรถ ที่นั่งปกติสำหรับอายุ 5 ถึง 80 ปี น้ำหนักไม่เกิน 110 กก. ต่อคน บินราว 15 ถึง 20 นาที และรวมประกันอุบัติเหตุ",
+    "my": "Blue Sky Paramotor သည် ချင်းမိုင်မြို့ဟောင်းမှ အရှေ့ဘက် ကားဖြင့် 40 မိနစ်ခန့်ကွာ ဆန်ကမ်ဖိန်ရှိ Ban Mho မှ ပျံသည်။ ပုံမှန်ထိုင်ခုံသည် အသက် 5 မှ 80 အတွက်ဖြစ်ပြီး တစ်ဦးလျှင် 110 ကီလိုဂရမ်အထိ ဖြစ်သည်။ ကောင်းကင်ပေါ် 15 မှ 20 မိနစ်ခန့် ကြာပြီး မတော်တဆထိခိုက်မှုအာမခံ ပါဝင်သည်။",
+    "zh": "Blue Sky Paramotor 在 San Kamphaeng 的 Ban Mho 起飞，位于古城以东，驾车约 40 分钟。普通座位适合 5 至 80 岁，单人体重上限 110 公斤。空中约 15 到 20 分钟，含意外险。",
+    "de": "Blue Sky Paramotor startet in Ban Mho, San Kamphaeng, rund 40 Autominuten östlich der Altstadt. Die normalen Sitze sind für Personen von 5 bis 80 Jahren, mit 110 kg Grenze pro Person. Ein Flug dauert etwa 15 bis 20 Minuten in der Luft, die Unfallversicherung ist inbegriffen."
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/blue-sky-paramotor-chiangmai/"
+  },
+  {
+   "t": {
+    "en": "The Singha Park Chiang Rai International Balloon Fiesta 2026 ran 11 to 15 February, with balloon events on 13 and 14 February and more than 30 balloons from 13 countries.",
+    "th": "งาน Singha Park Chiang Rai International Balloon Fiesta 2569 จัดวันที่ 11 ถึง 15 กุมภาพันธ์ มีกิจกรรมบอลลูนวันที่ 13 และ 14 กุมภาพันธ์ และมีบอลลูนกว่า 30 ลำจาก 13 ประเทศ",
+    "my": "2026 Singha Park Chiang Rai International Balloon Fiesta ကို ဖေဖော်ဝါရီ 11 မှ 15 ရက်အထိ ကျင်းပခဲ့ပြီး လေပူဖောင်းပွဲများမှာ ဖေဖော်ဝါရီ 13 နှင့် 14 ရက်ဖြစ်ကာ နိုင်ငံ 13 ခုမှ လေပူဖောင်း 30 ခုကျော် ပါဝင်သည်။",
+    "zh": "2026 年胜狮公园（Singha Park）清莱国际热气球节于 2 月 11 日至 15 日举行，热气球活动在 2 月 13 日和 14 日，有来自 13 个国家的 30 多个热气球。",
+    "de": "Die Singha Park Chiang Rai International Balloon Fiesta 2026 fand vom 11. bis 15. Februar statt, mit Ballonprogramm am 13. und 14. Februar und über 30 Ballonen aus 13 Ländern."
+   },
+   "src": "https://thethaiger.com/hot-news/events/singha-park-chiang-rai-celebrates-10th-anniversary-international-balloon-fiesta-with-grand-showcase-of-30-balloons-from-13-nations"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Balloon, Chiang Mai: Balloon Adventure Thailand, shared basket (listed July 2026)",
+    "th": "บอลลูนเชียงใหม่: Balloon Adventure Thailand ตะกร้ารวม (ราคาที่ลงไว้กรกฎาคม 2569)",
+    "my": "ချင်းမိုင် လေပူဖောင်း: Balloon Adventure Thailand၊ မျှဝေသော ခြင်းတောင်း (2026 ဇူလိုင်တွင် ဖော်ပြထားသောဈေး)",
+    "zh": "清迈热气球：Balloon Adventure Thailand，共乘吊篮（2026 年 7 月列价）",
+    "de": "Ballon, Chiang Mai: Balloon Adventure Thailand, gemeinsamer Korb (Preis von Juli 2026)"
+   },
+   "p": {
+    "en": "฿8,800 a person; ฿4,800 a child aged 5–11; ฿30,000 for a private basket for two",
+    "th": "฿8,800 ต่อคน; เด็กอายุ 5–11 ปี ฿4,800; ตะกร้าส่วนตัวสำหรับสองคน ฿30,000",
+    "my": "တစ်ဦး ฿8,800၊ အသက် 5–11 ကလေး ฿4,800၊ နှစ်ဦးသီးသန့် ခြင်းတောင်း ฿30,000",
+    "zh": "每人 ฿8,800；5–11 岁儿童 ฿4,800；双人私人吊篮 ฿30,000",
+    "de": "฿8,800 pro Person; ฿4,800 pro Kind von 5–11; ฿30,000 für einen privaten Korb für zwei"
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/balloon-adventure-thailand/"
+  },
+  {
+   "t": {
+    "en": "Paramotor tandem flight, Blue Sky Paramotor, Chiang Mai (listed July 2026)",
+    "th": "พารามอเตอร์บินคู่ Blue Sky Paramotor เชียงใหม่ (ราคาที่ลงไว้กรกฎาคม 2569)",
+    "my": "ပါရာမော်တာ နှစ်ဦးတွဲပျံသန်းမှု၊ Blue Sky Paramotor၊ ချင်းမိုင် (2026 ဇူလိုင်တွင် ဖော်ပြထားသောဈေး)",
+    "zh": "动力伞双人飞行，Blue Sky Paramotor，清迈（2026 年 7 月列价）",
+    "de": "Paramotor-Tandemflug, Blue Sky Paramotor, Chiang Mai (Preis von Juli 2026)"
+   },
+   "p": {
+    "en": "฿2,800; ฿3,900 for the sunrise or sunset slot",
+    "th": "฿2,800; ฿3,900 รอบพระอาทิตย์ขึ้นหรือตก",
+    "my": "฿2,800၊ နေထွက်ချိန် သို့မဟုတ် နေဝင်ချိန် ฿3,900",
+    "zh": "฿2,800；日出或日落时段 ฿3,900",
+    "de": "฿2,800; ฿3,900 für den Sonnenaufgang oder Sonnenuntergang"
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/blue-sky-paramotor-chiangmai/"
+  },
+  {
+   "t": {
+    "en": "Paramotor tandem at three other Chiang Mai operators: Upper in the Air ฿3,500–4,500, FlyingBird ฿3,100–5,700, SkyExtreme Thailand ฿4,300–4,900 with hotel transfer",
+    "th": "พารามอเตอร์บินคู่ของอีกสามผู้ให้บริการในเชียงใหม่: Upper in the Air ฿3,500–4,500, FlyingBird ฿3,100–5,700, SkyExtreme Thailand ฿4,300–4,900 รวมรถรับส่งโรงแรม",
+    "my": "ချင်းမိုင်ရှိ အခြားလုပ်ငန်းရှင်သုံးဦး၏ ပါရာမော်တာ နှစ်ဦးတွဲ: Upper in the Air ฿3,500–4,500၊ FlyingBird ฿3,100–5,700၊ SkyExtreme Thailand ฿4,300–4,900 (ဟိုတယ်ပို့ဆောင်ရေးပါ)",
+    "zh": "清迈另外三家经营者的动力伞双人飞行：Upper in the Air ฿3,500–4,500，FlyingBird ฿3,100–5,700，SkyExtreme Thailand ฿4,300–4,900（含酒店接送）",
+    "de": "Paramotor-Tandem bei drei weiteren Anbietern in Chiang Mai: Upper in the Air ฿3,500–4,500, FlyingBird ฿3,100–5,700, SkyExtreme Thailand ฿4,300–4,900 mit Hoteltransfer"
+   },
+   "p": {
+    "en": "฿3,100–5,700",
+    "th": "฿3,100–5,700",
+    "my": "฿3,100–5,700",
+    "zh": "฿3,100–5,700",
+    "de": "฿3,100–5,700"
+   },
+   "src": "https://www.thaiholidayguide.com/flying-over-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "Singha Park Balloon Fiesta 2026 entry, Chiang Rai",
+    "th": "บัตรเข้างาน Singha Park Balloon Fiesta 2569 เชียงราย",
+    "my": "Singha Park Balloon Fiesta 2026 ဝင်ခွင့်၊ ချင်းရိုင်",
+    "zh": "2026 年胜狮公园热气球节门票，清莱",
+    "de": "Eintritt Singha Park Balloon Fiesta 2026, Chiang Rai"
+   },
+   "p": {
+    "en": "฿350 a day; ฿999 for the early-bird 5-day pass; ฿4,000 a day for VIP; free for children under 100 cm",
+    "th": "฿350 ต่อวัน; ฿999 บัตร 5 วันราคาพิเศษ; VIP ฿4,000 ต่อวัน; เด็กสูงต่ำกว่า 100 ซม. เข้าฟรี",
+    "my": "တစ်ရက် ฿350၊ စောစီးဝယ် 5 ရက်ပါ ฿999၊ VIP တစ်ရက် ฿4,000၊ 100 စင်တီမီတာအောက် ကလေး အခမဲ့",
+    "zh": "每天 ฿350；早鸟 5 日通票 ฿999；VIP 每天 ฿4,000；身高 100 厘米以下儿童免费",
+    "de": "฿350 pro Tag; ฿999 für den Frühbucher-5-Tage-Pass; VIP ฿4,000 pro Tag; Kinder unter 100 cm gratis"
+   },
+   "src": "https://thethaiger.com/hot-news/events/singha-park-chiang-rai-celebrates-10th-anniversary-international-balloon-fiesta-with-grand-showcase-of-30-balloons-from-13-nations"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much is a hot air balloon ride in Chiang Mai?",
+    "th": "ขึ้นบอลลูนเชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် လေပူဖောင်းစီးရန် ဘယ်လောက်ကျသလဲ။",
+    "zh": "清迈坐热气球多少钱？",
+    "de": "Was kostet eine Heissluftballonfahrt in Chiang Mai?"
+   },
+   "a": {
+    "en": "Balloon Adventure Thailand lists ฿8,800 a person for a shared basket and ฿4,800 for a child aged 5 to 11. A private basket for two is ฿30,000. The prices were listed in July 2026. The ride comes with hotel transfer, a champagne breakfast and insurance.",
+    "th": "Balloon Adventure Thailand ระบุ ฿8,800 ต่อคนสำหรับตะกร้ารวม และ ฿4,800 สำหรับเด็กอายุ 5 ถึง 11 ปี ตะกร้าส่วนตัวสำหรับสองคน ฿30,000 ราคาที่ลงไว้ในกรกฎาคม 2569 ราคารวมรถรับส่งโรงแรม อาหารเช้าพร้อมแชมเปญ และประกัน",
+    "my": "Balloon Adventure Thailand က မျှဝေသော ခြင်းတောင်းအတွက် တစ်ဦး ฿8,800၊ အသက် 5 မှ 11 ကလေး ฿4,800 ဟု ဖော်ပြသည်။ နှစ်ဦးသီးသန့် ခြင်းတောင်းမှာ ฿30,000 ဖြစ်သည်။ ဈေးနှုန်းများကို 2026 ဇူလိုင်တွင် ဖော်ပြခဲ့သည်။ ဟိုတယ်ပို့ဆောင်ရေး၊ ရှန်ပိန်နံနက်စာနှင့် အာမခံ ပါဝင်သည်။",
+    "zh": "Balloon Adventure Thailand 列出共乘吊篮每人 ฿8,800，5 至 11 岁儿童 ฿4,800，双人私人吊篮 ฿30,000。价格为 2026 年 7 月所列。含酒店接送、香槟早餐和保险。",
+    "de": "Balloon Adventure Thailand nennt ฿8,800 pro Person für den gemeinsamen Korb und ฿4,800 für ein Kind von 5 bis 11 Jahren. Ein privater Korb für zwei kostet ฿30,000. Die Preise stammen von Juli 2026. Inbegriffen sind Hoteltransfer, Champagnerfrühstück und Versicherung."
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/balloon-adventure-thailand/"
+  },
+  {
+   "q": {
+    "en": "When can you fly in a hot air balloon in Chiang Mai?",
+    "th": "ขึ้นบอลลูนในเชียงใหม่ได้ช่วงไหน",
+    "my": "ချင်းမိုင်တွင် လေပူဖောင်းကို ဘယ်အချိန်စီးနိုင်သလဲ။",
+    "zh": "清迈什么时候可以坐热气球？",
+    "de": "Wann kann man in Chiang Mai Heissluftballon fahren?"
+   },
+   "a": {
+    "en": "Thai Holiday Guide says balloons fly only in the cool season, November to February. It lists Balloon Adventure Thailand with a 05:30 hotel pickup and a 06:40 launch, back by about 08:30.",
+    "th": "Thai Holiday Guide ระบุว่าบอลลูนบินเฉพาะหน้าหนาว พฤศจิกายนถึงกุมภาพันธ์ และระบุ Balloon Adventure Thailand รับจากโรงแรม 05:30 น. ปล่อยบอลลูน 06:40 น. กลับถึงประมาณ 08:30 น.",
+    "my": "Thai Holiday Guide က လေပူဖောင်းသည် အေးသောရာသီ နိုဝင်ဘာမှ ဖေဖော်ဝါရီအတွင်းသာ ပျံသည်ဟု ဆိုသည်။ Balloon Adventure Thailand ကို ဟိုတယ်ကြို 05:30၊ ပျံတက် 06:40၊ 08:30 ခန့်တွင် ပြန်ရောက်ဟု ဖော်ပြသည်။",
+    "zh": "Thai Holiday Guide 称热气球只在凉季（11 月到 2 月）飞行，并列出 Balloon Adventure Thailand 05:30 酒店接送、06:40 起飞、约 08:30 返回。",
+    "de": "Thai Holiday Guide schreibt, Ballone fliegen nur in der kühlen Zeit, von November bis Februar. Es nennt für Balloon Adventure Thailand die Hotelabholung um 05:30, den Start um 06:40 und die Rückkehr gegen 08:30."
+   },
+   "src": "https://www.thaiholidayguide.com/flying-over-chiang-mai/"
+  },
+  {
+   "q": {
+    "en": "How much is a paramotor flight in Chiang Mai?",
+    "th": "บินพารามอเตอร์เชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် ပါရာမော်တာပျံရန် ဘယ်လောက်ကျသလဲ။",
+    "zh": "清迈玩动力伞多少钱？",
+    "de": "Was kostet ein Paramotorflug in Chiang Mai?"
+   },
+   "a": {
+    "en": "Thai Holiday Guide lists Blue Sky Paramotor at ฿2,800 and ฿3,900 for sunrise or sunset, and Upper in the Air at ฿3,500 and ฿4,500. Flights are about 15 to 25 minutes.",
+    "th": "Thai Holiday Guide ระบุ Blue Sky Paramotor ฿2,800 และ ฿3,900 รอบพระอาทิตย์ขึ้นหรือตก และ Upper in the Air ฿3,500 และ ฿4,500 บินราว 15 ถึง 25 นาที",
+    "my": "Thai Holiday Guide က Blue Sky Paramotor ကို ฿2,800 နှင့် နေထွက်/နေဝင်ချိန် ฿3,900၊ Upper in the Air ကို ฿3,500 နှင့် ฿4,500 ဟု ဖော်ပြသည်။ ပျံသန်းချိန်မှာ 15 မှ 25 မိနစ်ခန့် ဖြစ်သည်။",
+    "zh": "Thai Holiday Guide 列出 Blue Sky Paramotor 为 ฿2,800，日出或日落 ฿3,900；Upper in the Air 为 ฿3,500 和 ฿4,500。飞行约 15 到 25 分钟。",
+    "de": "Thai Holiday Guide nennt Blue Sky Paramotor mit ฿2,800 und ฿3,900 bei Sonnenaufgang oder Sonnenuntergang sowie Upper in the Air mit ฿3,500 und ฿4,500. Die Flüge dauern etwa 15 bis 25 Minuten."
+   },
+   "src": "https://www.thaiholidayguide.com/flying-over-chiang-mai/"
+  },
+  {
+   "q": {
+    "en": "What is the weight limit for a paramotor flight in Chiang Mai?",
+    "th": "บินพารามอเตอร์เชียงใหม่จำกัดน้ำหนักเท่าไร",
+    "my": "ချင်းမိုင်တွင် ပါရာမော်တာပျံရန် အလေးချိန်ကန့်သတ်ချက်က ဘယ်လောက်လဲ။",
+    "zh": "清迈动力伞的体重上限是多少？",
+    "de": "Welche Gewichtsgrenze gilt beim Paramotorflug in Chiang Mai?"
+   },
+   "a": {
+    "en": "Blue Sky Paramotor lists 110 kg for one person on a regular seat, for ages 5 to 80. Children aged 3 to 5 can ride on a parent's lap for ฿1,500 if the combined weight is under 90 kg.",
+    "th": "Blue Sky Paramotor ระบุน้ำหนักไม่เกิน 110 กก. ต่อคนบนที่นั่งปกติ สำหรับอายุ 5 ถึง 80 ปี เด็กอายุ 3 ถึง 5 ปีนั่งบนตักผู้ปกครองได้ในราคา ฿1,500 หากน้ำหนักรวมไม่เกิน 90 กก.",
+    "my": "Blue Sky Paramotor က ပုံမှန်ထိုင်ခုံတွင် တစ်ဦးလျှင် 110 ကီလိုဂရမ်အထိ၊ အသက် 5 မှ 80 အတွက်ဟု ဖော်ပြသည်။ အသက် 3 မှ 5 ကလေးသည် မိဘ၏ ပေါင်ပေါ်တွင် ထိုင်၍ ฿1,500 ဖြင့် စီးနိုင်ပြီး ပေါင်းစပ်အလေးချိန် 90 ကီလိုဂရမ်အောက် ဖြစ်ရမည်။",
+    "zh": "Blue Sky Paramotor 列出普通座位单人上限 110 公斤，适合 5 至 80 岁。3 至 5 岁儿童可坐在家长腿上，收费 ฿1,500，合计体重须低于 90 公斤。",
+    "de": "Blue Sky Paramotor nennt 110 kg pro Person auf einem normalen Sitz, für Personen von 5 bis 80 Jahren. Kinder von 3 bis 5 Jahren können für ฿1,500 auf dem Schoss eines Elternteils mitfliegen, wenn das Gesamtgewicht unter 90 kg liegt."
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/blue-sky-paramotor-chiangmai/"
+  },
+  {
+   "q": {
+    "en": "Is there a balloon festival in Chiang Rai?",
+    "th": "เชียงรายมีงานบอลลูนไหม",
+    "my": "ချင်းရိုင်တွင် လေပူဖောင်းပွဲတော် ရှိပါသလား။",
+    "zh": "清莱有热气球节吗？",
+    "de": "Gibt es in Chiang Rai ein Ballonfestival?"
+   },
+   "a": {
+    "en": "Yes. The Singha Park Chiang Rai International Balloon Fiesta ran 11 to 15 February in 2026, its 10th edition, with more than 30 balloons from 13 countries. A regular ticket was ฿350 a day.",
+    "th": "มี งาน Singha Park Chiang Rai International Balloon Fiesta จัดวันที่ 11 ถึง 15 กุมภาพันธ์ 2569 เป็นครั้งที่ 10 มีบอลลูนกว่า 30 ลำจาก 13 ประเทศ บัตรปกติ ฿350 ต่อวัน",
+    "my": "ရှိသည်။ Singha Park Chiang Rai International Balloon Fiesta ကို 2026 ဖေဖော်ဝါရီ 11 မှ 15 အထိ ဆယ်ကြိမ်မြောက် ကျင်းပခဲ့ပြီး နိုင်ငံ 13 ခုမှ လေပူဖောင်း 30 ကျော် ပါဝင်သည်။ ပုံမှန်လက်မှတ်မှာ တစ်ရက် ฿350 ဖြစ်သည်။",
+    "zh": "有。2026 年第 10 届胜狮公园清莱国际热气球节在 2 月 11 日至 15 日举行，有来自 13 个国家的 30 多个热气球。普通票每天 ฿350。",
+    "de": "Ja. Die Singha Park Chiang Rai International Balloon Fiesta fand 2026 zum 10. Mal vom 11. bis 15. Februar statt, mit über 30 Ballonen aus 13 Ländern. Ein normales Ticket kostete ฿350 pro Tag."
+   },
+   "src": "https://thethaiger.com/hot-news/events/singha-park-chiang-rai-celebrates-10th-anniversary-international-balloon-fiesta-with-grand-showcase-of-30-balloons-from-13-nations"
+  }
+ ],
+ "related": [
+  "trip-plan",
+  "tour-day",
+  "tour-3d",
+  "lantern",
+  "experience",
+  "car-guide"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thai Holiday Guide: Balloon Adventure Thailand, Chiang Mai",
+    "th": "Thai Holiday Guide: Balloon Adventure Thailand เชียงใหม่",
+    "my": "Thai Holiday Guide: Balloon Adventure Thailand၊ ချင်းမိုင်",
+    "zh": "Thai Holiday Guide：清迈 Balloon Adventure Thailand",
+    "de": "Thai Holiday Guide: Balloon Adventure Thailand, Chiang Mai"
+   },
+   "href": "https://www.thaiholidayguide.com/attraction/balloon-adventure-thailand/"
+  },
+  {
+   "t": {
+    "en": "The Thaiger: Singha Park International Balloon Fiesta 2026",
+    "th": "The Thaiger: งาน Singha Park International Balloon Fiesta 2569",
+    "my": "The Thaiger: 2026 Singha Park နိုင်ငံတကာ လေပူဖောင်းပွဲတော်",
+    "zh": "The Thaiger：2026 年胜狮公园国际热气球节",
+    "de": "The Thaiger: Singha Park International Balloon Fiesta 2026"
+   },
+   "href": "https://thethaiger.com/hot-news/events/singha-park-chiang-rai-celebrates-10th-anniversary-international-balloon-fiesta-with-grand-showcase-of-30-balloons-from-13-nations"
+  }
+ ],
+ "glyphs": [
+  "balloon",
+  "sun",
+  "cloud"
+ ]
+}

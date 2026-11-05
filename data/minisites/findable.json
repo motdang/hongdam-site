@@ -1,0 +1,333 @@
+{
+ "id": "findable",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A search engine reads the description, the credit and the labels of a photo, and a collection without them gives it little to read.",
+  "th": "เครื่องมือค้นหาอ่านคำอธิบาย เครดิต และป้ายกำกับของรูป คอลเลกชันที่ไม่มีสิ่งเหล่านี้จึงมีให้อ่านน้อย",
+  "my": "ရှာဖွေရေးအင်ဂျင်များသည် ဓာတ်ပုံ၏ ဖော်ပြချက်၊ အသိအမှတ်ပြုချက်နှင့် တံဆိပ်များကို ဖတ်ပြီး ၎င်းတို့မပါသော စုဆောင်းမှုတွင် ဖတ်ရန် နည်းသွားသည်။",
+  "zh": "搜索引擎会读照片的说明、出处和标签，缺了这些，藏品留给它读的内容就很少。",
+  "de": "Eine Suchmaschine liest Beschreibung, Urhebernennung und Bezeichnungen eines Fotos, und einer Sammlung ohne sie bleibt wenig zu lesen."
+ },
+ "n": {
+  "de": "Sammlung online auffindbar"
+ },
+ "l": {
+  "de": "Fotobeschreibungen, Urhebernennung in den Dateien, Wikidata."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "Descriptions are written for your photos.",
+    "th": "เขียนคำอธิบายให้รูปของคุณ",
+    "my": "သင့်ဓာတ်ပုံများအတွက် ဖော်ပြချက်များ ရေးပေးသည်။",
+    "zh": "为您的照片写说明。",
+    "de": "Für Ihre Fotos werden Beschreibungen geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per 100 items",
+    "th": "ต่อ 100 ชิ้น",
+    "my": "ပစ္စည်း 100 လျှင်",
+    "zh": "每 100 件",
+    "de": "Pro 100 Objekte"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "The credit and the licence are put inside the photo files.",
+    "th": "ใส่เครดิตและสัญญาอนุญาตไว้ในไฟล์รูป",
+    "my": "အသိအမှတ်ပြုချက်နှင့် လိုင်စင်ကို ဓာတ်ပုံဖိုင်များထဲတွင် ထည့်သွင်းပေးသည်။",
+    "zh": "把出处和授权信息写进照片文件。",
+    "de": "Die Urhebernennung und die Lizenz werden in die Fotodateien geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Labels that search engines read are added.",
+    "th": "เพิ่มข้อมูลที่เครื่องมือค้นหาอ่านได้",
+    "my": "ရှာဖွေရေးအင်ဂျင်များ ဖတ်နိုင်သော တံဆိပ်များ ထည့်ပေးသည်။",
+    "zh": "加上搜索引擎能读的标签。",
+    "de": "Es werden Bezeichnungen ergänzt, die Suchmaschinen lesen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "Wikidata entries are made.",
+    "th": "สร้างรายการใน Wikidata",
+    "my": "Wikidata တွင် မှတ်တမ်းများ ပြုလုပ်ပေးသည်။",
+    "zh": "建立 Wikidata 条目。",
+    "de": "Es werden Wikidata-Einträge erstellt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google Images can show who made an image, how it may be used and its credit when the image carries licence metadata. The metadata goes in markup on the page or inside the file as IPTC photo metadata, which is added once per image.",
+    "th": "Google Images แสดงได้ว่าใครสร้างรูป ใช้รูปได้อย่างไร และเครดิตของรูป เมื่อรูปมีข้อมูลสัญญาอนุญาต ข้อมูลนี้ใส่ได้ในมาร์กอัปของหน้าเว็บ หรือฝังในไฟล์รูปเป็นข้อมูลภาพถ่าย IPTC ซึ่งใส่ครั้งเดียวต่อหนึ่งรูป",
+    "my": "ဓာတ်ပုံတွင် လိုင်စင်မက်တာဒေတာပါလျှင် Google Images က ဖန်တီးသူ၊ အသုံးပြုပုံနှင့် ခရက်ဒစ်ကို ပြနိုင်သည်။ ထိုဒေတာကို စာမျက်နှာပေါ်ရှိ markup တွင်ဖြစ်စေ၊ ဖိုင်ထဲတွင် ထည့်သွင်းသော IPTC ဓာတ်ပုံ metadata အဖြစ်ဖြစ်စေ ထည့်နိုင်ပြီး IPTC ကို ပုံတစ်ပုံလျှင် တစ်ကြိမ်သာ ထည့်ရသည်။",
+    "zh": "图片带有授权元数据时，Google 图片可以显示作者、使用方式和出处。元数据可以写在网页标记里，也可以作为 IPTC 照片元数据嵌入图片文件，后者每张图只需写一次。",
+    "de": "Google Bilder kann anzeigen, wer ein Bild gemacht hat, wie es genutzt werden darf und welche Urhebernennung gilt, wenn das Bild Lizenz-Metadaten trägt. Die Metadaten stehen in der Auszeichnung der Seite oder als IPTC-Fotometadaten in der Bilddatei, die man einmal pro Bild einträgt."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata"
+  },
+  {
+   "t": {
+    "en": "Google calls alt text the most important attribute for image metadata. File names give it only light clues, and it also reads the captions and the text around an image.",
+    "th": "Google เรียก alt text ว่าเป็นแอตทริบิวต์ที่สำคัญที่สุดของข้อมูลรูปภาพ ชื่อไฟล์ให้เบาะแสเพียงเล็กน้อย และ Google อ่านคำบรรยายและข้อความรอบรูปด้วย",
+    "my": "Google က alt text ကို ပုံ metadata အတွက် အရေးအကြီးဆုံး attribute ဟု ခေါ်သည်။ ဖိုင်အမည်က အရိပ်အမြွက်အနည်းငယ်သာ ပေးပြီး ပုံအညွှန်းစာသားနှင့် ပုံပတ်ဝန်းကျင်ရှိ စာသားကိုလည်း ဖတ်သည်။",
+    "zh": "Google 称替代文字（alt text）是图片元数据中最重要的属性。文件名只给出很少的线索，Google 还会读图片的说明文字和周围的文字。",
+    "de": "Google nennt den Alternativtext das wichtigste Attribut für Bildmetadaten. Dateinamen liefern nur schwache Hinweise, und Google liest auch Bildlegenden und den Text rund um ein Bild."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/google-images"
+  },
+  {
+   "t": {
+    "en": "A Wikidata item needs to meet one of three tests: a link to a page on Wikipedia or another Wikimedia project, a clearly identifiable entity that public sources describe, or a structural need in other items.",
+    "th": "รายการใน Wikidata ต้องผ่านอย่างน้อยหนึ่งในสามเกณฑ์ คือมีลิงก์ไปหน้าบน Wikipedia หรือโครงการอื่นของ Wikimedia เป็นสิ่งที่ระบุตัวตนได้ชัดเจนและมีแหล่งสาธารณะอธิบาย หรือเป็นสิ่งจำเป็นเชิงโครงสร้างต่อรายการอื่น",
+    "my": "Wikidata မှတ်တမ်းတစ်ခုသည် စံနှုန်းသုံးခုအနက် တစ်ခုကို ပြည့်မီရမည်: Wikipedia သို့မဟုတ် အခြား Wikimedia စီမံကိန်းတစ်ခုရှိ စာမျက်နှာသို့ လင့်ခ်၊ အများပြည်သူရင်းမြစ်များက ဖော်ပြထားသော ရှင်းလင်းစွာ ခွဲခြားသိနိုင်သည့် အရာ၊ သို့မဟုတ် အခြားမှတ်တမ်းများအတွက် ဖွဲ့စည်းပုံအရ လိုအပ်ချက်။",
+    "zh": "Wikidata 条目需满足三项条件之一：链接到维基百科或其他维基媒体项目的页面；是一个可清楚辨识、有公开来源描述的实体；或对其他条目有结构上的需要。",
+    "de": "Ein Wikidata-Eintrag muss eine von drei Bedingungen erfüllen: einen Link auf eine Seite in Wikipedia oder einem anderen Wikimedia-Projekt, eine klar bestimmbare Einheit, die öffentliche Quellen beschreiben, oder einen strukturellen Bedarf in anderen Einträgen."
+   },
+   "src": "https://www.wikidata.org/wiki/Wikidata:Notability"
+  },
+  {
+   "t": {
+    "en": "Thailand's Personal Data Protection Act allows personal data to be collected without consent to prepare historical documents or archives in the public interest, or for research or statistics, when suitable safeguards for the person's rights are in place and the Committee's notification is followed (Section 24).",
+    "th": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคลให้เก็บข้อมูลส่วนบุคคลโดยไม่ต้องขอความยินยอมได้ เพื่อจัดทำเอกสารประวัติศาสตร์หรือจดหมายเหตุเพื่อประโยชน์สาธารณะ หรือเพื่อการวิจัยหรือสถิติ เมื่อมีมาตรการคุ้มครองสิทธิและเสรีภาพของเจ้าของข้อมูลที่เหมาะสม และเป็นไปตามประกาศของคณะกรรมการ (มาตรา 24)",
+    "my": "ထိုင်းနိုင်ငံ၏ ကိုယ်ရေးကိုယ်တာအချက်အလက် ကာကွယ်ရေးအက်ဥပဒေက အများပြည်သူအကျိုးအတွက် သမိုင်းဝင်စာရွက်စာတမ်း သို့မဟုတ် မှတ်တမ်းဌာန ပြင်ဆင်ရန်၊ သို့မဟုတ် သုတေသန၊ စာရင်းအင်းအတွက် ထိုသူ၏ အခွင့်အရေးကို သင့်လျော်စွာ ကာကွယ်ထားပြီး ကော်မတီ၏ ထုတ်ပြန်ချက်ကို လိုက်နာပါက ခွင့်ပြုချက်မယူဘဲ ကိုယ်ရေးအချက်အလက် စုဆောင်းခွင့်ပြုသည် (ပုဒ်မ 24)။",
+    "zh": "泰国《个人数据保护法》允许在没有同意的情况下收集个人数据，用于编制公共利益的历史文件或档案，或用于研究、统计，条件是对当事人的权利有适当保障，并遵循委员会的公告（第 24 条）。",
+    "de": "Das thailändische Datenschutzgesetz erlaubt, personenbezogene Daten ohne Einwilligung zu erheben, um historische Dokumente oder Archive im öffentlichen Interesse zu erstellen oder für Forschung oder Statistik, wenn angemessene Schutzmassnahmen für die Rechte der Person bestehen und die Bekanntmachung des Ausschusses eingehalten wird (Section 24)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Omeka.net, hosted sites for collections, a year, taxes excluded",
+    "th": "Omeka.net เว็บไซต์คอลเลกชันแบบโฮสต์ ต่อปี ยังไม่รวมภาษี",
+    "my": "Omeka.net၊ စုဆောင်းမှုများအတွက် ဟိုစ့်လုပ်ထားသော ဝက်ဘ်ဆိုက်များ၊ တစ်နှစ်၊ အခွန်မပါ",
+    "zh": "Omeka.net 藏品托管网站，按年计，不含税",
+    "de": "Omeka.net, gehostete Sammlungsseiten, pro Jahr, ohne Steuern"
+   },
+   "p": {
+    "en": "Free for one site with limited themes and plugins; Plus US$35 (2 GB, 2 sites); Silver US$75 (5 GB, 5 sites); Gold US$350 (10 GB, 10 sites); Platinum US$1,000 (50 GB, unlimited sites)",
+    "th": "ฟรีสำหรับหนึ่งเว็บไซต์ ธีมและปลั๊กอินจำกัด; Plus US$35 (2 GB, 2 เว็บไซต์); Silver US$75 (5 GB, 5 เว็บไซต์); Gold US$350 (10 GB, 10 เว็บไซต์); Platinum US$1,000 (50 GB, เว็บไซต์ไม่จำกัด)",
+    "my": "ဝက်ဘ်ဆိုက်တစ်ခုအတွက် အခမဲ့ (ထီးမ်းနှင့် ပလပ်ဂင် အကန့်အသတ်ရှိ); Plus US$35 (2 GB၊ ဆိုက် 2 ခု); Silver US$75 (5 GB၊ ဆိုက် 5 ခု); Gold US$350 (10 GB၊ ဆိုက် 10 ခု); Platinum US$1,000 (50 GB၊ ဆိုက်အကန့်အသတ်မရှိ)",
+    "zh": "一个站点免费（主题和插件有限）；Plus US$35（2 GB，2 个站点）；Silver US$75（5 GB，5 个站点）；Gold US$350（10 GB，10 个站点）；Platinum US$1,000（50 GB，站点不限）",
+    "de": "Gratis für eine Seite mit begrenzten Themes und Plugins; Plus US$35 (2 GB, 2 Seiten); Silver US$75 (5 GB, 5 Seiten); Gold US$350 (10 GB, 10 Seiten); Platinum US$1,000 (50 GB, unbegrenzt viele Seiten)"
+   },
+   "src": "https://www.omeka.net/signup"
+  },
+  {
+   "t": {
+    "en": "Scanning a book to PDF or JPEG files, a Fastwork listing",
+    "th": "สแกนหนังสือเป็นไฟล์ PDF หรือ JPEG ประกาศบน Fastwork",
+    "my": "စာအုပ်ကို PDF သို့မဟုတ် JPEG ဖိုင်များအဖြစ် စကင်ဖတ်ခြင်း၊ Fastwork စာရင်းတစ်ခု",
+    "zh": "把书扫描成 PDF 或 JPEG 文件，Fastwork 上的一则服务",
+    "de": "Ein Buch als PDF- oder JPEG-Dateien einscannen, ein Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "฿0.75 a page, from ฿300; one day. The listing says the spine is cut to feed the pages.",
+    "th": "฿0.75 ต่อหน้า เริ่มต้น ฿300; 1 วัน ประกาศระบุว่าตัดสันหนังสือเพื่อป้อนหน้า",
+    "my": "စာမျက်နှာတစ်ခုလျှင် ฿0.75၊ ฿300 မှ စတင်; တစ်ရက်။ စာမျက်နှာများ ထည့်ရန် စာအုပ်ကျောကို ဖြတ်သည်ဟု စာရင်းတွင် ဖော်ပြထားသည်။",
+    "zh": "每页 ฿0.75，฿300 起；一天。服务说明写明，为送纸要切掉书脊。",
+    "de": "฿0.75 pro Seite, ab ฿300; ein Tag. Das Angebot hält fest, dass der Buchrücken abgeschnitten wird, um die Seiten einzuziehen."
+   },
+   "src": "https://fastwork.co/user/sarawuttxui7uic/print-delivery-40713278"
+  },
+  {
+   "t": {
+    "en": "On-page SEO for a WordPress site, with image tag work and structured data, a Fastwork listing",
+    "th": "ปรับ SEO ออนเพจสำหรับเว็บไซต์ WordPress รวมปรับแท็กรูปภาพและข้อมูลโครงสร้าง ประกาศบน Fastwork",
+    "my": "WordPress ဝက်ဘ်ဆိုက်အတွက် on-page SEO၊ ပုံ tag ပြင်ဆင်မှုနှင့် ဖွဲ့စည်းပုံဒေတာပါဝင်သည်၊ Fastwork စာရင်းတစ်ခု",
+    "zh": "WordPress 网站的页面内 SEO，含图片标签处理和结构化数据，Fastwork 上的一则服务",
+    "de": "On-Page-SEO für eine WordPress-Seite, mit Bild-Tags und strukturierten Daten, ein Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "฿2,990; 5 days",
+    "th": "฿2,990; 5 วัน",
+    "my": "฿2,990; ရက် 5",
+    "zh": "฿2,990；5 天",
+    "de": "฿2,990; 5 Tage"
+   },
+   "src": "https://fastwork.co/user/seoheroth/seo-51218523"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does Omeka cost for putting a collection online?",
+    "th": "Omeka ใช้ทำคอลเลกชันออนไลน์ราคาเท่าไร",
+    "my": "စုဆောင်းမှုကို အွန်လိုင်းတင်ရန် Omeka ဘယ်လောက်ကျသလဲ။",
+    "zh": "用 Omeka 把藏品放上网要多少钱？",
+    "de": "Was kostet Omeka, um eine Sammlung online zu stellen?"
+   },
+   "a": {
+    "en": "Omeka.net hosts sites. Its page lists a free plan for one site with limited themes and plugins, then US$35, US$75, US$350 and US$1,000 a year for larger plans, taxes excluded.",
+    "th": "Omeka.net โฮสต์เว็บไซต์ให้ หน้าของบริการระบุแพ็กเกจฟรีสำหรับหนึ่งเว็บไซต์ ธีมและปลั๊กอินจำกัด แล้วแพ็กเกจใหญ่ขึ้นปีละ US$35, US$75, US$350 และ US$1,000 ยังไม่รวมภาษี",
+    "my": "Omeka.net က ဝက်ဘ်ဆိုက်များကို ဟိုစ့်လုပ်ပေးသည်။ ၎င်း၏ စာမျက်နှာတွင် ဆိုက်တစ်ခုအတွက် ထီးမ်းနှင့် ပလပ်ဂင် အကန့်အသတ်ရှိသော အခမဲ့အစီအစဉ်တစ်ခု ဖော်ပြပြီး ပိုကြီးသောအစီအစဉ်များမှာ တစ်နှစ်လျှင် US$35၊ US$75၊ US$350 နှင့် US$1,000 ဖြစ်သည် (အခွန်မပါ)။",
+    "zh": "Omeka.net 提供站点托管。其页面列出一个仅限一个站点、主题和插件有限的免费方案，更大的方案每年 US$35、US$75、US$350 和 US$1,000，不含税。",
+    "de": "Omeka.net hostet Seiten. Die Seite nennt einen kostenlosen Plan für eine Seite mit begrenzten Themes und Plugins, danach grössere Pläne zu US$35, US$75, US$350 und US$1,000 im Jahr, ohne Steuern."
+   },
+   "src": "https://www.omeka.net/signup"
+  },
+  {
+   "q": {
+    "en": "What is Omeka S?",
+    "th": "Omeka S คืออะไร",
+    "my": "Omeka S ဆိုသည်မှာ ဘာလဲ။",
+    "zh": "Omeka S 是什么？",
+    "de": "Was ist Omeka S?"
+   },
+   "a": {
+    "en": "Omeka S is open-source software for institutions that connect digital cultural heritage collections with other online resources. One installation runs many sites, and it publishes items as linked open data. Its page states no price.",
+    "th": "Omeka S เป็นซอฟต์แวร์โอเพนซอร์สสำหรับสถาบันที่เชื่อมคอลเลกชันมรดกวัฒนธรรมดิจิทัลเข้ากับทรัพยากรออนไลน์อื่น การติดตั้งหนึ่งครั้งรันได้หลายเว็บไซต์ และเผยแพร่รายการเป็นลิงก์โอเพนดาตา หน้าของซอฟต์แวร์ไม่ระบุราคา",
+    "my": "Omeka S သည် ဒစ်ဂျစ်တယ်ယဉ်ကျေးမှုအမွေအနှစ် စုဆောင်းမှုများကို အခြားအွန်လိုင်းအရင်းအမြစ်များနှင့် ချိတ်ဆက်သော အဖွဲ့အစည်းများအတွက် open-source ဆော့ဖ်ဝဲဖြစ်သည်။ တပ်ဆင်မှုတစ်ခုတည်းဖြင့် ဆိုက်များစွာ လည်ပတ်နိုင်ပြီး ပစ္စည်းများကို linked open data အဖြစ် ထုတ်ဝေသည်။ ၎င်း၏ စာမျက်နှာတွင် စျေးနှုန်း မဖော်ပြပါ။",
+    "zh": "Omeka S 是开源软件，供机构把数字文化遗产藏品与其他在线资源连接起来。一次安装可运行多个站点，并把条目以关联开放数据的形式发布。其页面没有标价。",
+    "de": "Omeka S ist Open-Source-Software für Institutionen, die digitale Kulturerbe-Sammlungen mit anderen Online-Ressourcen verbinden. Eine Installation betreibt mehrere Seiten und veröffentlicht Objekte als Linked Open Data. Einen Preis nennt die Seite nicht."
+   },
+   "src": "https://omeka.org/s/"
+  },
+  {
+   "q": {
+    "en": "How do the credit and the licence stay with a photo?",
+    "th": "เครดิตและสัญญาอนุญาตติดไปกับรูปได้อย่างไร",
+    "my": "ခရက်ဒစ်နှင့် လိုင်စင်တို့သည် ဓာတ်ပုံနှင့်အတူ ဘယ်လို ရှိနေသလဲ။",
+    "zh": "出处和授权信息怎样跟着照片走？",
+    "de": "Wie bleiben Urhebernennung und Lizenz bei einem Foto?"
+   },
+   "a": {
+    "en": "They can sit inside the image file as IPTC photo metadata, so they travel with the file from page to page. Google's page says this is added once per image. For the Licensable badge, the licence field is required.",
+    "th": "ใส่ไว้ในไฟล์รูปเป็นข้อมูลภาพถ่าย IPTC ได้ ข้อมูลจึงตามไฟล์ไปทุกหน้า หน้าของ Google ระบุว่าใส่ครั้งเดียวต่อหนึ่งรูป และเครื่องหมาย Licensable ต้องมีช่องสัญญาอนุญาต",
+    "my": "၎င်းတို့ကို IPTC ဓာတ်ပုံ metadata အဖြစ် ပုံဖိုင်ထဲတွင် ထည့်နိုင်သဖြင့် ဖိုင်နှင့်အတူ စာမျက်နှာတစ်ခုမှ တစ်ခုသို့ လိုက်ပါသွားသည်။ Google ၏ စာမျက်နှာတွင် ပုံတစ်ပုံလျှင် တစ်ကြိမ်သာ ထည့်ရသည်ဟု ဆိုသည်။ Licensable တံဆိပ်အတွက် လိုင်စင်အကွက် လိုအပ်သည်။",
+    "zh": "它们可以作为 IPTC 照片元数据写在图片文件里，随文件在各个页面间流转。Google 的页面写明每张图只需写一次。要得到“可授权”（Licensable）标识，授权字段是必填的。",
+    "de": "Sie können als IPTC-Fotometadaten in der Bilddatei stehen und wandern so mit der Datei von Seite zu Seite. Laut Google-Seite trägt man sie einmal pro Bild ein. Für das Abzeichen «Licensable» ist das Lizenzfeld Pflicht."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata"
+  },
+  {
+   "q": {
+    "en": "What does Google read to know what a photo shows?",
+    "th": "Google อ่านอะไรเพื่อรู้ว่ารูปแสดงอะไร",
+    "my": "ဓာတ်ပုံက ဘာကိုပြသည်ကို သိရန် Google က ဘာကို ဖတ်သလဲ။",
+    "zh": "Google 靠读什么来了解一张照片的内容？",
+    "de": "Was liest Google, um zu wissen, was ein Foto zeigt?"
+   },
+   "a": {
+    "en": "Google's page names the alt text as the most important attribute, used along with computer vision and the content of the page. The file name gives light clues, and the captions and the text near the image add context.",
+    "th": "หน้าของ Google ระบุ alt text เป็นแอตทริบิวต์ที่สำคัญที่สุด ใช้ร่วมกับคอมพิวเตอร์วิทัศน์และเนื้อหาของหน้า ชื่อไฟล์ให้เบาะแสเล็กน้อย ส่วนคำบรรยายและข้อความใกล้รูปช่วยเพิ่มบริบท",
+    "my": "Google ၏ စာမျက်နှာက alt text ကို အရေးအကြီးဆုံး attribute အဖြစ် ဖော်ပြပြီး ကွန်ပျူတာအမြင်နည်းပညာနှင့် စာမျက်နှာပါအကြောင်းအရာတို့နှင့်အတူ သုံးသည်။ ဖိုင်အမည်က အရိပ်အမြွက်အနည်းငယ်ပေးပြီး ပုံအညွှန်းစာသားများနှင့် ပုံအနီးရှိ စာသားက အကြောင်းအရာထပ်ဖြည့်သည်။",
+    "zh": "Google 的页面把替代文字（alt text）列为最重要的属性，与计算机视觉和页面内容一起使用。文件名只提供很少的线索，说明文字和图片附近的文字补充上下文。",
+    "de": "Die Seite von Google nennt den Alternativtext als wichtigstes Attribut, zusammen mit Computer Vision und dem Inhalt der Seite. Der Dateiname liefert schwache Hinweise, und Legenden sowie der Text neben dem Bild ergänzen den Zusammenhang."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/google-images"
+  },
+  {
+   "q": {
+    "en": "Which things can have a Wikidata entry?",
+    "th": "อะไรบ้างที่มีรายการใน Wikidata ได้",
+    "my": "Wikidata မှတ်တမ်း ရှိနိုင်သည့် အရာများမှာ ဘာတွေလဲ။",
+    "zh": "哪些事物可以有 Wikidata 条目？",
+    "de": "Welche Dinge können einen Wikidata-Eintrag haben?"
+   },
+   "a": {
+    "en": "An item has to meet one of three tests on Wikidata's notability page. It has a link to a page on Wikipedia or another Wikimedia project. Or it is a clearly identifiable entity that can be described with serious, public references. Or it fills a structural need, such as making statements in other items more useful.",
+    "th": "รายการต้องผ่านหนึ่งในสามเกณฑ์ในหน้าความโดดเด่นของ Wikidata คือมีลิงก์ไปหน้าบน Wikipedia หรือโครงการอื่นของ Wikimedia หรือเป็นสิ่งที่ระบุตัวตนได้ชัดเจนและอธิบายได้ด้วยแหล่งอ้างอิงสาธารณะที่น่าเชื่อถือ หรือเติมเต็มความจำเป็นเชิงโครงสร้าง เช่น ทำให้ข้อความในรายการอื่นมีประโยชน์ขึ้น",
+    "my": "မှတ်တမ်းတစ်ခုသည် Wikidata ၏ ထင်ရှားမှုစာမျက်နှာပါ စံနှုန်းသုံးခုအနက် တစ်ခုကို ပြည့်မီရမည်။ Wikipedia သို့မဟုတ် အခြား Wikimedia စီမံကိန်းတစ်ခုရှိ စာမျက်နှာသို့ လင့်ခ်ရှိရမည်။ သို့မဟုတ် အများပြည်သူ ကိုးကားချက်ကောင်းများဖြင့် ဖော်ပြနိုင်သော ရှင်းလင်းစွာ ခွဲခြားသိနိုင်သည့် အရာဖြစ်ရမည်။ သို့မဟုတ် အခြားမှတ်တမ်းများရှိ ဖော်ပြချက်များကို ပိုအသုံးဝင်စေသကဲ့သို့ ဖွဲ့စည်းပုံအရ လိုအပ်ချက်ကို ဖြည့်ရမည်။",
+    "zh": "条目要满足 Wikidata 知名度（notability）页面上三项条件之一：有指向维基百科或其他维基媒体项目页面的链接；或是可清楚辨识、能用可靠的公开资料描述的实体；或满足结构上的需要，例如让其他条目里的陈述更有用。",
+    "de": "Ein Eintrag muss eine von drei Bedingungen auf der Relevanzseite von Wikidata erfüllen. Er hat einen Link auf eine Seite in Wikipedia oder einem anderen Wikimedia-Projekt. Oder er ist eine klar bestimmbare Einheit, die sich mit seriösen, öffentlichen Belegen beschreiben lässt. Oder er deckt einen strukturellen Bedarf, etwa indem er Aussagen in anderen Einträgen nützlicher macht."
+   },
+   "src": "https://www.wikidata.org/wiki/Wikidata:Notability"
+  }
+ ],
+ "related": [
+  "photo-proof",
+  "giving",
+  "grants",
+  "invoice",
+  "name-charm",
+  "data-crawl"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Search Central: image licence metadata",
+    "th": "Google Search Central: ข้อมูลสัญญาอนุญาตของรูปภาพ",
+    "my": "Google Search Central: ပုံလိုင်စင် metadata",
+    "zh": "Google Search Central：图片授权元数据",
+    "de": "Google Search Central: Lizenz-Metadaten für Bilder"
+   },
+   "href": "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata"
+  },
+  {
+   "t": {
+    "en": "Wikidata: notability",
+    "th": "Wikidata: เกณฑ์ความโดดเด่น",
+    "my": "Wikidata: ထင်ရှားမှုစံနှုန်း",
+    "zh": "Wikidata：知名度标准",
+    "de": "Wikidata: Relevanzkriterien"
+   },
+   "href": "https://www.wikidata.org/wiki/Wikidata:Notability"
+  }
+ ],
+ "glyphs": [
+  "camera",
+  "pencil",
+  "search"
+ ]
+}

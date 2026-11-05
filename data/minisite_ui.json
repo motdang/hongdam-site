@@ -1,0 +1,430 @@
+{
+ "about": "Words on the service minisites (tools/build_minisites.py), five languages. German is Swiss spelling (no ß), as on /for/eveline. de_shop holds the shop's own words in German for the parts of the shop frame a minisite shows, until German joins data/shop.json. When data/shop.json carries German (branch de-lang), its words win and these fill only gaps. own_pages: services that already have their own page; links point there and no minisite is written for them.",
+ "langs": [
+  "en",
+  "th",
+  "my",
+  "zh",
+  "de"
+ ],
+ "lang_names": {
+  "en": "English",
+  "th": "ไทย",
+  "my": "မြန်မာ",
+  "zh": "中文",
+  "de": "Deutsch"
+ },
+ "locale": {
+  "en": "en_US",
+  "th": "th_TH",
+  "my": "my_MM",
+  "zh": "zh_CN",
+  "de": "de_CH"
+ },
+ "m": {
+  "en": {
+   "numbers": "In numbers",
+   "try": "Try it",
+   "how": "How it goes",
+   "get": "What you get",
+   "others": "What others charge",
+   "ours": "Hongdam",
+   "asks": "What people ask",
+   "proof": "Done before",
+   "related": "Also from Hongdam",
+   "elsewhere": "Elsewhere",
+   "small": "Small print",
+   "read": "Sources read {date}.",
+   "line": "Ask on LINE",
+   "today": "Today's price",
+   "walk": "Prices here move with demand: when most of a month's places are taken, the price goes up a step; when few are, it comes down a step.",
+   "pics": "Pictures",
+   "all": "All services",
+   "cat": "More in {cat}",
+   "src": "source",
+   "who": "who",
+   "long": "how long"
+  },
+  "th": {
+   "numbers": "เป็นตัวเลข",
+   "try": "ลองดู",
+   "how": "ขั้นตอน",
+   "get": "สิ่งที่ได้",
+   "others": "ที่อื่นคิดเท่าไร",
+   "ours": "หงส์ดำ",
+   "asks": "คำถามที่คนถาม",
+   "proof": "งานที่เคยทำ",
+   "related": "บริการอื่นของหงส์ดำ",
+   "elsewhere": "ที่อื่น",
+   "small": "รายละเอียด",
+   "read": "อ่านแหล่งข้อมูลเมื่อ {date}",
+   "line": "ถามทางไลน์",
+   "today": "ราคาวันนี้",
+   "walk": "ราคาที่นี่ขึ้นลงตามความต้องการ เดือนไหนคิวเกือบเต็ม ราคาขึ้นหนึ่งขั้น เดือนไหนคิวว่าง ราคาลงหนึ่งขั้น",
+   "pics": "ภาพ",
+   "all": "บริการทั้งหมด",
+   "cat": "เพิ่มเติมใน{cat}",
+   "src": "ที่มา",
+   "who": "ใคร",
+   "long": "นานแค่ไหน"
+  },
+  "my": {
+   "numbers": "ကိန်းဂဏန်းဖြင့်",
+   "try": "စမ်းကြည့်ပါ",
+   "how": "လုပ်ပုံအဆင့်ဆင့်",
+   "get": "ရရှိမည့်အရာ",
+   "others": "အခြားသူများ ကောက်ခံသည့်ဈေး",
+   "ours": "ဟုန်ဒမ်",
+   "asks": "လူများ မေးသည့်မေးခွန်း",
+   "proof": "ယခင်က လုပ်ခဲ့သည်",
+   "related": "ဟုန်ဒမ်၏ အခြားဝန်ဆောင်မှု",
+   "elsewhere": "အခြားနေရာ",
+   "small": "အသေးစိတ်",
+   "read": "ရင်းမြစ်များကို {date} တွင် ဖတ်ခဲ့သည်။",
+   "line": "LINE ဖြင့် မေးပါ",
+   "today": "ယနေ့ဈေး",
+   "walk": "ဤနေရာရှိ ဈေးနှုန်းများသည် ဝယ်လိုအားနှင့်အညီ ပြောင်းသည်။ တစ်လ၏ နေရာအများစု ပြည့်လျှင် ဈေးတစ်ဆင့်တက်ပြီး နည်းလျှင် တစ်ဆင့်ကျသည်။",
+   "pics": "ဓာတ်ပုံများ",
+   "all": "ဝန်ဆောင်မှုအားလုံး",
+   "cat": "{cat} တွင် နောက်ထပ်",
+   "src": "ရင်းမြစ်",
+   "who": "မည်သူ",
+   "long": "ကြာချိန်"
+  },
+  "zh": {
+   "numbers": "数字一览",
+   "try": "试一试",
+   "how": "办理步骤",
+   "get": "您得到什么",
+   "others": "别家收费",
+   "ours": "鸿丹",
+   "asks": "大家常问",
+   "proof": "做过的案例",
+   "related": "鸿丹的其他服务",
+   "elsewhere": "其他地方",
+   "small": "细则",
+   "read": "资料来源读取于 {date}。",
+   "line": "用 LINE 咨询",
+   "today": "今日价格",
+   "walk": "这里的价格随需求变动：一个月的名额大多订满时，价格上调一级；订得少时，下调一级。",
+   "pics": "图片",
+   "all": "全部服务",
+   "cat": "{cat}的更多服务",
+   "src": "来源",
+   "who": "谁来做",
+   "long": "多久"
+  },
+  "de": {
+   "numbers": "In Zahlen",
+   "try": "Ausprobieren",
+   "how": "So läuft es",
+   "get": "Was Sie bekommen",
+   "others": "Was andere verlangen",
+   "ours": "Hongdam",
+   "asks": "Was Leute fragen",
+   "proof": "Schon gemacht",
+   "related": "Mehr von Hongdam",
+   "elsewhere": "Anderswo",
+   "small": "Kleingedrucktes",
+   "read": "Quellen gelesen am {date}.",
+   "line": "Auf LINE fragen",
+   "today": "Preis heute",
+   "walk": "Die Preise hier folgen der Nachfrage: Sind die meisten Plätze eines Monats vergeben, steigt der Preis um eine Stufe; sind es wenige, sinkt er um eine Stufe.",
+   "pics": "Bilder",
+   "all": "Alle Leistungen",
+   "cat": "Mehr unter {cat}",
+   "src": "Quelle",
+   "who": "wer",
+   "long": "wie lange"
+  }
+ },
+ "de_shop": {
+  "title": "Hongdam — wir erledigen es für Sie · Chiang Rai",
+  "language": "Sprache",
+  "search": "Was brauchen Sie?",
+  "searchPh": "Klempner, Übersetzung, Website, Grab…",
+  "buy": "Kaufen",
+  "book": "Buchen",
+  "open": "Öffnen",
+  "go": "Weiter",
+  "free": "Kostenlos",
+  "from": "ab {p}",
+  "notHere": "Nicht auf der Liste? Schreiben Sie uns, in jeder Sprache.",
+  "askBtn": "Schreiben Sie uns",
+  "home": "Alle Leistungen",
+  "noresult": "Nichts gefunden. Schreiben Sie uns auf LINE.",
+  "payMethods": "Bezahlen mit PromptPay aus jeder thailändischen Bank-App, oder mit PayPal oder Wise von überall.",
+  "where": "Hongdam หงส์ดำ · Chiang Rai, Thailand",
+  "portfolio": "Unsere Arbeiten",
+  "tasks": "Einen Auftrag einstellen",
+  "rateQ": "Wie ist diese Übersetzung?",
+  "rateGood": "Gut",
+  "rateBetter": "Geht besser",
+  "rateText": "Ihre Korrektur (darf leer bleiben)",
+  "rateSend": "Senden",
+  "rateThanks": "Danke. Das Team liest jede einzelne."
+ },
+ "de_units": {
+  "call": [
+   "Anruf",
+   "Anrufe"
+  ],
+  "job": [
+   "Auftrag",
+   "Aufträge"
+  ],
+  "hour": [
+   "Stunde",
+   "Stunden"
+  ],
+  "form": [
+   "Formular",
+   "Formulare"
+  ],
+  "page": [
+   "Seite",
+   "Seiten"
+  ],
+  "leaf": [
+   "Blatt",
+   "Blätter"
+  ],
+  "month": [
+   "Monat",
+   "Monate"
+  ],
+  "person": [
+   "Person",
+   "Personen"
+  ],
+  "day": [
+   "Tag",
+   "Tage"
+  ],
+  "item": [
+   "Artikel",
+   "Artikel"
+  ],
+  "visit": [
+   "Besuch",
+   "Besuche"
+  ],
+  "mailbox": [
+   "Postfach",
+   "Postfächer"
+  ],
+  "minute": [
+   "Minute",
+   "Minuten"
+  ],
+  "order": [
+   "Bestellung",
+   "Bestellungen"
+  ],
+  "row": [
+   "Zeile",
+   "Zeilen"
+  ],
+  "word": [
+   "Wort",
+   "Wörter"
+  ],
+  "product": [
+   "Produkt",
+   "Produkte"
+  ],
+  "photo": [
+   "Foto",
+   "Fotos"
+  ],
+  "post": [
+   "Beitrag",
+   "Beiträge"
+  ],
+  "platform": [
+   "Plattform",
+   "Plattformen"
+  ],
+  "shop": [
+   "Laden",
+   "Läden"
+  ],
+  "seat": [
+   "Platz",
+   "Plätze"
+  ],
+  "slot": [
+   "Termin",
+   "Termine"
+  ],
+  "pack": [
+   "Paket",
+   "Pakete"
+  ],
+  "number": [
+   "Nummer",
+   "Nummern"
+  ],
+  "name": [
+   "Name",
+   "Namen"
+  ],
+  "question": [
+   "Frage",
+   "Fragen"
+  ],
+  "language": [
+   "Sprache",
+   "Sprachen"
+  ],
+  "site": [
+   "Website",
+   "Websites"
+  ],
+  "room": [
+   "Zimmer",
+   "Zimmer"
+  ],
+  "box": [
+   "Karton",
+   "Kartons"
+  ],
+  "trip": [
+   "Fahrt",
+   "Fahrten"
+  ],
+  "lesson": [
+   "Lektion",
+   "Lektionen"
+  ],
+  "printout": [
+   "Druck",
+   "Drucke"
+  ]
+ },
+ "event": {
+  "en": {
+   "guests": "Guests",
+   "venue": "Where",
+   "style": "Ceremony",
+   "month": "Month",
+   "figure": "One figure stands for ten guests.",
+   "food": "Food and drink for {n}",
+   "total": "Vendors, all told",
+   "ours": "Hongdam plans it:",
+   "oursLine": "vendors at cost."
+  },
+  "th": {
+   "guests": "แขก",
+   "venue": "สถานที่",
+   "style": "พิธี",
+   "month": "เดือน",
+   "figure": "หนึ่งรูปคือแขกสิบคน",
+   "food": "อาหารและเครื่องดื่มสำหรับ {n} คน",
+   "total": "ค่าผู้ให้บริการรวม",
+   "ours": "หงส์ดำวางแผนให้:",
+   "oursLine": "ค่าผู้ให้บริการคิดตามจริง"
+  },
+  "my": {
+   "guests": "ဧည့်သည်",
+   "venue": "နေရာ",
+   "style": "အခမ်းအနား",
+   "month": "လ",
+   "figure": "ပုံတစ်ပုံသည် ဧည့်သည် ဆယ်ဦး ဖြစ်သည်။",
+   "food": "{n} ဦးအတွက် အစားအသောက်",
+   "total": "ဝန်ဆောင်သူခ စုစုပေါင်း",
+   "ours": "ဟုန်ဒမ်က စီစဉ်ပေးသည်:",
+   "oursLine": "ဝန်ဆောင်သူခ အမှန်အတိုင်း။"
+  },
+  "zh": {
+   "guests": "宾客",
+   "venue": "场地",
+   "style": "仪式",
+   "month": "月份",
+   "figure": "一个人形代表十位宾客。",
+   "food": "{n} 位宾客的餐饮",
+   "total": "供应商费用合计",
+   "ours": "鸿丹策划：",
+   "oursLine": "供应商费用实报。"
+  },
+  "de": {
+   "guests": "Gäste",
+   "venue": "Ort",
+   "style": "Zeremonie",
+   "month": "Monat",
+   "figure": "Eine Figur steht für zehn Gäste.",
+   "food": "Essen und Getränke für {n}",
+   "total": "Dienstleister, alles zusammen",
+   "ours": "Hongdam plant es:",
+   "oursLine": "Dienstleister zum Selbstkostenpreis."
+  }
+ },
+ "own_pages": {
+  "php": "php/",
+  "github": "github/",
+  "redteam": "redteam/",
+  "ai-own": "own/",
+  "bots": "bots/"
+ },
+ "bill": {
+  "en": {
+   "total": "All told",
+   "ours": "Hongdam:"
+  },
+  "th": {
+   "total": "รวมทั้งหมด",
+   "ours": "หงส์ดำ:"
+  },
+  "my": {
+   "total": "စုစုပေါင်း",
+   "ours": "ဟုန်ဒမ်:"
+  },
+  "zh": {
+   "total": "合计",
+   "ours": "鸿丹："
+  },
+  "de": {
+   "total": "Alles zusammen",
+   "ours": "Hongdam:"
+  }
+ },
+ "picker": {
+  "en": {
+   "ours": "Hongdam:"
+  },
+  "th": {
+   "ours": "หงส์ดำ:"
+  },
+  "my": {
+   "ours": "ဟုန်ဒမ်:"
+  },
+  "zh": {
+   "ours": "鸿丹："
+  },
+  "de": {
+   "ours": "Hongdam:"
+  }
+ },
+ "checklist": {
+  "en": {
+   "ours": "Hongdam:",
+   "count": "{n} of {all}"
+  },
+  "th": {
+   "ours": "หงส์ดำ:",
+   "count": "{n} จาก {all}"
+  },
+  "my": {
+   "ours": "ဟုန်ဒမ်:",
+   "count": "{all} ခုအနက် {n} ခု"
+  },
+  "zh": {
+   "ours": "鸿丹：",
+   "count": "{all} 项中有 {n} 项"
+  },
+  "de": {
+   "ours": "Hongdam:",
+   "count": "{n} von {all}"
+  }
+ }
+}

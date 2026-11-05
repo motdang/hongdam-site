@@ -1,0 +1,1242 @@
+{
+"retire": [
+"specialist",
+"care-visits",
+"death-help",
+"interp",
+"call",
+"compare"
+],
+"elder-care": [
+"clean-air",
+"specialist",
+"retire",
+"sak-yant",
+"thai-lessons",
+"npa-homes"
+],
+"lab-test": [
+"blood",
+"accident",
+"death-help",
+"app-test",
+"signs",
+"vehicle"
+],
+"death-help": [
+"retire",
+"lab-test",
+"blood",
+"thai-plan",
+"tribute",
+"merit-dead"
+],
+"blood": [
+"lab-test",
+"accident",
+"care-visits",
+"signs",
+"lang-pages",
+"research"
+],
+"accident": [
+"blood",
+"lab-test",
+"retire",
+"rentals",
+"luggage",
+"compare"
+],
+"specialist": [
+"retire",
+"blood",
+"care-visits",
+"interp",
+"there",
+"rentals"
+],
+"care-visits": [
+"retire",
+"blood",
+"death-help",
+"there",
+"accessible",
+"call"
+],
+"clean-air": [
+"elder-care",
+"retire",
+"accident",
+"widget",
+"spirit-house",
+"proposal"
+],
+"php": [
+"sec-hacked",
+"mirror",
+"redteam",
+"web-move",
+"wp-api",
+"web-care"
+],
+"redteam": [
+"app-test",
+"sec-mail",
+"mirror",
+"awards",
+"signs",
+"ai-line"
+],
+"sec-mail": [
+"sec-hacked",
+"redteam",
+"mirror",
+"web-mail",
+"ai-assistant",
+"accessible"
+],
+"sec-hacked": [
+"php",
+"sec-mail",
+"mirror",
+"web-care",
+"site",
+"widget"
+],
+"mirror": [
+"sec-hacked",
+"php",
+"redteam",
+"web-care",
+"demand-prices",
+"web-license"
+],
+"app-test": [
+"redteam",
+"mirror",
+"php",
+"call",
+"voice",
+"checkin"
+],
+"merchant": [
+"invoice",
+"exchange",
+"bank-account",
+"online-shop",
+"paybox",
+"web-line"
+],
+"invoice": [
+"merchant",
+"books",
+"exchange",
+"move",
+"leads",
+"online-shop"
+],
+"books": [
+"kh-books",
+"staff-papers",
+"invoice",
+"typing",
+"assistant",
+"web-search"
+],
+"bank-account": [
+"books",
+"exchange",
+"kh-books",
+"thai-plan",
+"errand",
+"etsy"
+],
+"staff-papers": [
+"payouts",
+"books",
+"kh-books",
+"assistant",
+"signs",
+"romanise"
+],
+"payouts": [
+"staff-papers",
+"books",
+"kh-books",
+"crew",
+"merit-dead",
+"traffic"
+],
+"kh-books": [
+"books",
+"staff-papers",
+"payouts",
+"assistant",
+"newsletter",
+"traffic"
+],
+"exchange": [
+"bank-account",
+"merchant",
+"invoice",
+"name-pick",
+"print",
+"web-sharecard"
+],
+"web-mail": [
+"web-found",
+"tap-card",
+"site",
+"sec-mail",
+"ai-assistant",
+"luggage"
+],
+"accessible": [
+"web-care",
+"wp-api",
+"vibe",
+"care-visits",
+"lang-pages",
+"sec-mail"
+],
+"vibe": [
+"tap-card",
+"github",
+"web-line",
+"app-test",
+"voice",
+"merchant"
+],
+"web-line": [
+"web-found",
+"web-sharecard",
+"tap-card",
+"online-shop",
+"grab",
+"ai-line"
+],
+"web-found": [
+"web-line",
+"web-search",
+"web-mail",
+"compare",
+"proposal",
+"ads-run"
+],
+"site": [
+"web-move",
+"web-care",
+"web-license",
+"wedding",
+"lang-pages",
+"thai-lessons"
+],
+"app": [
+"site",
+"web-line",
+"vibe",
+"online-shop",
+"form",
+"typing"
+],
+"web-move": [
+"site",
+"web-license",
+"wp-api",
+"php",
+"date-pick",
+"mirror"
+],
+"web-license": [
+"web-move",
+"site",
+"web-search",
+"ai-assistant",
+"tour-day",
+"ai-line"
+],
+"web-care": [
+"site",
+"wp-api",
+"github",
+"assistant",
+"mirror",
+"fb-care"
+],
+"web-sharecard": [
+"web-line",
+"tap-card",
+"vibe",
+"social",
+"tribute",
+"photo-proof"
+],
+"widget": [
+"web-search",
+"web-care",
+"site",
+"clean-air",
+"almanac-widget",
+"sec-hacked"
+],
+"web-search": [
+"widget",
+"directory",
+"web-found",
+"copy",
+"voice",
+"lang-shan"
+],
+"directory": [
+"web-search",
+"help-page",
+"guide-site",
+"street-survey",
+"club-desk",
+"stay-booking"
+],
+"guide-site": [
+"directory",
+"web-search",
+"help-page",
+"car-guide",
+"tour-day",
+"drawn"
+],
+"wp-api": [
+"web-care",
+"web-move",
+"site",
+"php",
+"agency-sheet",
+"ai-automation"
+],
+"github": [
+"site",
+"web-care",
+"vibe",
+"newsletter",
+"lang-leaves",
+"reading"
+],
+"help-page": [
+"directory",
+"guide-site",
+"tap-card",
+"giving",
+"stay-booking",
+"map-archive"
+],
+"tap-card": [
+"web-mail",
+"site",
+"web-line",
+"name-pick",
+"map-archive",
+"online-shop"
+],
+"stay-check": [
+"agency-sheet",
+"npa-homes",
+"stay-rent",
+"research",
+"amulet",
+"thai-plan"
+],
+"stay-booking": [
+"rentals",
+"stay-rent",
+"stay-check",
+"help-page",
+"directory",
+"giving"
+],
+"stay-rent": [
+"stay-check",
+"npa-homes",
+"rentals",
+"lang-pages",
+"move",
+"amulet"
+],
+"npa-homes": [
+"stay-check",
+"stay-rent",
+"agency-sheet",
+"thai-plan",
+"elder-care",
+"move"
+],
+"rentals": [
+"stay-rent",
+"stay-booking",
+"npa-homes",
+"car-guide",
+"accident",
+"luggage"
+],
+"agency-sheet": [
+"stay-check",
+"npa-homes",
+"stay-rent",
+"amulet",
+"wp-api",
+"web-license"
+],
+"ai-assistant": [
+"ai-line",
+"bots",
+"ai-own",
+"cs-desk",
+"assistant",
+"web-license"
+],
+"ai-line": [
+"ai-assistant",
+"bots",
+"ai-automation",
+"web-license",
+"web-line",
+"tour-3d"
+],
+"demand-prices": [
+"ai-own",
+"ai-automation",
+"ai-assistant",
+"restaurant-desk",
+"mirror",
+"event-page"
+],
+"ai-automation": [
+"bots",
+"ai-line",
+"ai-own",
+"wp-api",
+"print",
+"tap-card"
+],
+"ai-batch": [
+"ai-own",
+"ai-automation",
+"ai-assistant",
+"typing",
+"subtitles",
+"clean-air"
+],
+"crawl-pay": [
+"bots",
+"ai-assistant",
+"ai-own",
+"traffic",
+"web-license",
+"stay-booking"
+],
+"ai-own": [
+"ai-assistant",
+"bots",
+"crawl-pay",
+"site",
+"partner",
+"experience"
+],
+"bots": [
+"ai-automation",
+"crawl-pay",
+"ai-line",
+"data-crawl",
+"club-desk",
+"awards"
+],
+"crew": [
+"ai-own",
+"ai-automation",
+"ai-assistant",
+"payouts",
+"thai-plan",
+"redteam"
+],
+"move": [
+"luggage",
+"partner",
+"stay-rent",
+"invoice",
+"retire",
+"trades"
+],
+"luggage": [
+"move",
+"accident",
+"rentals",
+"web-mail",
+"newsletter",
+"wedding"
+],
+"awards": [
+"graphics",
+"decks",
+"proposal",
+"typing",
+"idme",
+"there"
+],
+"decks": [
+"proposal",
+"graphics",
+"article",
+"blood",
+"grants",
+"wedding"
+],
+"copy": [
+"article",
+"social",
+"patterns",
+"web-search",
+"lang-pages",
+"german"
+],
+"proposal": [
+"decks",
+"graphics",
+"article",
+"thai-plan",
+"bank-account",
+"retire"
+],
+"graphics": [
+"social",
+"interactive",
+"patterns",
+"trade-photos",
+"site",
+"fb-care"
+],
+"video": [
+"social",
+"interview",
+"graphics",
+"ads-run",
+"thai-lessons",
+"interp"
+],
+"drawn": [
+"cartoons",
+"social",
+"interactive",
+"map-archive",
+"guide-site",
+"pha-yant"
+],
+"interactive": [
+"article",
+"social",
+"graphics",
+"map-archive",
+"web-sharecard",
+"traffic"
+],
+"patterns": [
+"graphics",
+"copy",
+"decks",
+"print",
+"lanna-wedding",
+"signs"
+],
+"article": [
+"copy",
+"social",
+"interactive",
+"research",
+"map-archive",
+"grants"
+],
+"newsletter": [
+"graphics",
+"decks",
+"proposal",
+"lang-leaves",
+"reading",
+"thai-plan"
+],
+"interview": [
+"video",
+"graphics",
+"decks",
+"voice",
+"thai-lessons",
+"elder-care"
+],
+"cartoons": [
+"drawn",
+"graphics",
+"decks",
+"checkin",
+"blood",
+"event-kit"
+],
+"social": [
+"article",
+"copy",
+"video",
+"fb-care",
+"web-sharecard",
+"ads-run"
+],
+"giving": [
+"event-kit",
+"grants",
+"club-desk",
+"help-page",
+"stay-booking",
+"directory"
+],
+"grants": [
+"giving",
+"map-archive",
+"event-kit",
+"research",
+"proposal",
+"form"
+],
+"line-memory": [
+"club-desk",
+"photo-proof",
+"giving",
+"cs-desk",
+"call",
+"web-sharecard"
+],
+"checkin": [
+"giving",
+"map-archive",
+"event-kit",
+"stall-page",
+"lang-pages",
+"cartoons"
+],
+"photo-proof": [
+"club-desk",
+"findable",
+"giving",
+"street-survey",
+"paybox",
+"trade-photos"
+],
+"club-desk": [
+"line-memory",
+"giving",
+"photo-proof",
+"directory",
+"bots",
+"cs-desk"
+],
+"findable": [
+"photo-proof",
+"giving",
+"grants",
+"invoice",
+"name-charm",
+"data-crawl"
+],
+"map-archive": [
+"checkin",
+"event-kit",
+"grants",
+"article",
+"romanise",
+"drawn"
+],
+"event-kit": [
+"giving",
+"club-desk",
+"checkin",
+"event-page",
+"leads",
+"interactive"
+],
+"thai-plan": [
+"errand",
+"form",
+"call",
+"proposal",
+"bank-account",
+"lang-leaves"
+],
+"idme": [
+"call",
+"vehicle",
+"compare",
+"awards",
+"social",
+"fb-care"
+],
+"form": [
+"thai-plan",
+"call",
+"dispute",
+"date-pick",
+"web-search",
+"lang-shan"
+],
+"call": [
+"dispute",
+"there",
+"idme",
+"assistant",
+"thai-lessons",
+"retire"
+],
+"legalise": [
+"vehicle",
+"compare",
+"idme",
+"translate",
+"wedding",
+"elder-care"
+],
+"there": [
+"call",
+"dispute",
+"vehicle",
+"care-visits",
+"specialist",
+"awards"
+],
+"trades": [
+"dispute",
+"compare",
+"vehicle",
+"move",
+"balloon",
+"amulet"
+],
+"vehicle": [
+"dispute",
+"compare",
+"errand",
+"rentals",
+"luggage",
+"death-help"
+],
+"compare": [
+"errand",
+"vehicle",
+"trades",
+"retire",
+"accident",
+"tour-3d"
+],
+"dispute": [
+"vehicle",
+"call",
+"trades",
+"amulet",
+"exchange",
+"name-charm"
+],
+"errand": [
+"thai-plan",
+"compare",
+"dispute",
+"bank-account",
+"web-search",
+"web-license"
+],
+"date-pick": [
+"reading",
+"name-pick",
+"pha-yant",
+"tour-3d",
+"house-blessing",
+"web-move"
+],
+"name-pick": [
+"date-pick",
+"lucky-number",
+"pha-yant",
+"tap-card",
+"tour-3d",
+"grab"
+],
+"pha-yant": [
+"name-charm",
+"sak-yant",
+"reading",
+"merit-you",
+"drawn",
+"tap-card"
+],
+"reading": [
+"bazi",
+"pha-yant",
+"almanac-widget",
+"lang-leaves",
+"newsletter",
+"thai-plan"
+],
+"bazi": [
+"reading",
+"almanac-widget",
+"date-pick",
+"car-guide",
+"research",
+"translate"
+],
+"almanac-widget": [
+"eink-clock",
+"bazi",
+"reading",
+"widget",
+"lanna-wedding",
+"web-search"
+],
+"eink-clock": [
+"almanac-widget",
+"reading",
+"date-pick",
+"tour-day",
+"guide-site",
+"lanna-wedding"
+],
+"lucky-number": [
+"name-pick",
+"amulet",
+"almanac-widget",
+"retire",
+"web-license",
+"trade-photos"
+],
+"amulet": [
+"name-charm",
+"lucky-number",
+"reading",
+"stay-check",
+"agency-sheet",
+"street-survey"
+],
+"name-charm": [
+"pha-yant",
+"amulet",
+"sak-yant",
+"merit-dead",
+"luggage",
+"trade-photos"
+],
+"sak-yant": [
+"pha-yant",
+"name-charm",
+"almanac-widget",
+"thai-lessons",
+"elder-care",
+"balloon"
+],
+"german": [
+"lang-shan",
+"lang-pages",
+"romanise",
+"copy",
+"signs",
+"data-crawl"
+],
+"translate": [
+"lang-shan",
+"interp",
+"lang-pages",
+"signs",
+"staff-papers",
+"reading"
+],
+"interp": [
+"translate",
+"thai-lessons",
+"german",
+"retire",
+"car-guide",
+"specialist"
+],
+"lang-pages": [
+"lang-shan",
+"german",
+"lang-leaves",
+"copy",
+"site",
+"paybox"
+],
+"lang-shan": [
+"lang-pages",
+"german",
+"translate",
+"signs",
+"subtitles",
+"typing"
+],
+"romanise": [
+"lang-leaves",
+"lang-shan",
+"german",
+"map-archive",
+"staff-papers",
+"site"
+],
+"thai-lessons": [
+"interp",
+"lang-shan",
+"lang-pages",
+"balloon",
+"call",
+"sak-yant"
+],
+"lang-leaves": [
+"lang-shan",
+"romanise",
+"lang-pages",
+"reading",
+"newsletter",
+"thai-plan"
+],
+"online-shop": [
+"etsy",
+"paybox",
+"ordering",
+"merchant",
+"web-line",
+"romanise"
+],
+"ordering": [
+"online-shop",
+"restaurant-desk",
+"signs",
+"lanna-wedding",
+"checkin",
+"app-test"
+],
+"paybox": [
+"online-shop",
+"signs",
+"ads-run",
+"merchant",
+"lang-pages",
+"photo-proof"
+],
+"ads-run": [
+"fb-care",
+"etsy",
+"restaurant-desk",
+"social",
+"newsletter",
+"video"
+],
+"restaurant-desk": [
+"grab",
+"trade-photos",
+"ads-run",
+"demand-prices",
+"price-watch",
+"care-visits"
+],
+"grab": [
+"restaurant-desk",
+"trade-photos",
+"signs",
+"web-line",
+"checkin",
+"name-pick"
+],
+"trade-photos": [
+"grab",
+"etsy",
+"restaurant-desk",
+"street-survey",
+"photo-proof",
+"graphics"
+],
+"fb-care": [
+"ads-run",
+"grab",
+"stall-page",
+"social",
+"cs-desk",
+"web-care"
+],
+"signs": [
+"print",
+"grab",
+"stall-page",
+"lang-shan",
+"subtitles",
+"lang-pages"
+],
+"stall-page": [
+"print",
+"signs",
+"grab",
+"checkin",
+"research",
+"data-crawl"
+],
+"print": [
+"signs",
+"stall-page",
+"grab",
+"patterns",
+"ai-automation",
+"exchange"
+],
+"etsy": [
+"online-shop",
+"trade-photos",
+"grab",
+"bank-account",
+"partner",
+"care-visits"
+],
+"partner": [
+"move",
+"etsy",
+"ai-own",
+"proposal",
+"trade-photos",
+"luggage"
+],
+"data-crawl": [
+"price-watch",
+"research",
+"street-survey",
+"bots",
+"german",
+"typing"
+],
+"leads": [
+"data-crawl",
+"research",
+"street-survey",
+"cs-desk",
+"calls-out",
+"invoice"
+],
+"price-watch": [
+"data-crawl",
+"research",
+"street-survey",
+"restaurant-desk",
+"lang-shan",
+"photo-proof"
+],
+"research": [
+"street-survey",
+"data-crawl",
+"leads",
+"grants",
+"stay-check",
+"article"
+],
+"traffic": [
+"data-crawl",
+"research",
+"street-survey",
+"crawl-pay",
+"interactive",
+"assistant"
+],
+"street-survey": [
+"research",
+"data-crawl",
+"leads",
+"photo-proof",
+"directory",
+"trade-photos"
+],
+"merit-dead": [
+"merit-you",
+"house-blessing",
+"lanna-wedding",
+"tribute",
+"tour-3d",
+"payouts"
+],
+"house-blessing": [
+"spirit-house",
+"su-khwan",
+"merit-dead",
+"date-pick",
+"car-guide",
+"translate"
+],
+"spirit-house": [
+"house-blessing",
+"lanna-wedding",
+"su-khwan",
+"clean-air",
+"date-pick",
+"wedding"
+],
+"merit-you": [
+"merit-dead",
+"lanna-wedding",
+"house-blessing",
+"pha-yant",
+"tribute",
+"grab"
+],
+"lanna-wedding": [
+"su-khwan",
+"house-blessing",
+"merit-dead",
+"bride",
+"wedding",
+"lang-leaves"
+],
+"su-khwan": [
+"lanna-wedding",
+"house-blessing",
+"spirit-house",
+"rentals",
+"experience",
+"wedding"
+],
+"lantern": [
+"balloon",
+"car-guide",
+"tour-3d",
+"event-page",
+"stall-page",
+"spirit-house"
+],
+"trip-plan": [
+"tour-day",
+"tour-3d",
+"balloon",
+"thai-lessons",
+"call",
+"sak-yant"
+],
+"balloon": [
+"trip-plan",
+"tour-day",
+"tour-3d",
+"thai-lessons",
+"call",
+"sak-yant"
+],
+"experience": [
+"balloon",
+"trip-plan",
+"lantern",
+"ai-own",
+"su-khwan",
+"house-blessing"
+],
+"tour-day": [
+"trip-plan",
+"car-guide",
+"tour-3d",
+"web-license",
+"guide-site",
+"wedding"
+],
+"tour-3d": [
+"trip-plan",
+"tour-day",
+"car-guide",
+"merit-dead",
+"date-pick",
+"name-pick"
+],
+"car-guide": [
+"tour-day",
+"tour-3d",
+"trip-plan",
+"guide-site",
+"rentals",
+"interp"
+],
+"voice": [
+"subtitles",
+"typing",
+"calls-out",
+"web-search",
+"app-test",
+"lang-pages"
+],
+"calls-out": [
+"subtitles",
+"typing",
+"assistant",
+"leads",
+"web-search",
+"lang-shan"
+],
+"typing": [
+"subtitles",
+"calls-out",
+"assistant",
+"lang-shan",
+"books",
+"signs"
+],
+"cs-desk": [
+"assistant",
+"voice",
+"subtitles",
+"fb-care",
+"ai-assistant",
+"line-memory"
+],
+"assistant": [
+"cs-desk",
+"subtitles",
+"typing",
+"call",
+"ai-assistant",
+"staff-papers"
+],
+"subtitles": [
+"typing",
+"calls-out",
+"assistant",
+"lang-shan",
+"signs",
+"web-search"
+],
+"event-page": [
+"event-plan",
+"tribute",
+"wedding",
+"lantern",
+"event-kit",
+"interactive"
+],
+"wedding": [
+"event-plan",
+"tribute",
+"bride",
+"site",
+"tour-day",
+"lanna-wedding"
+],
+"tribute": [
+"wedding",
+"bride",
+"event-page",
+"merit-dead",
+"death-help",
+"web-sharecard"
+],
+"event-plan": [
+"wedding",
+"event-page",
+"bride",
+"rentals",
+"lantern",
+"payouts"
+],
+"bride": [
+"wedding",
+"tribute",
+"event-plan",
+"lanna-wedding",
+"date-pick",
+"data-crawl"
+]
+}

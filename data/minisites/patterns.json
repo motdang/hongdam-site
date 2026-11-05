@@ -1,0 +1,292 @@
+{
+ "id": "patterns",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Lanna and Thai ornament is drawn by hand, and a printer, a laser cutter, a sign maker or a tattoo artist needs it as a file.",
+  "th": "ลายล้านนาและลายไทยวาดด้วยมือ แต่โรงพิมพ์ ช่างเลเซอร์ ช่างทำป้าย หรือช่างสักต้องใช้เป็นไฟล์",
+  "my": "လန်နာနှင့် ထိုင်းအလှဆင်ပုံစံများကို လက်ဖြင့်ရေးဆွဲကြပြီး ပုံနှိပ်ဆိုင်၊ လေဆာဖြတ်သူ၊ ဆိုင်းဘုတ်လုပ်သူ သို့မဟုတ် တက်တူးဆရာတို့က ဖိုင်အဖြစ် လိုအပ်သည်။",
+  "zh": "兰纳和泰式纹样靠手绘，而印刷厂、激光切割师傅、招牌师傅或纹身师需要的是文件。",
+  "de": "Lanna- und thailändische Ornamente werden von Hand gezeichnet, und eine Druckerei, ein Laserschneider, ein Schilderhersteller oder eine Tätowiererin braucht sie als Datei."
+ },
+ "n": {
+  "de": "Lanna-Musterdateien"
+ },
+ "l": {
+  "de": "Bordüren und Muster für Druck, Laser, Schilder oder Tattoo."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You say what the pattern is for: print, laser cutting, a sign or tattoo flash.",
+    "th": "คุณบอกว่าจะใช้ลายทำอะไร พิมพ์ ตัดเลเซอร์ ป้าย หรือแบบสัก",
+    "my": "ပုံစံကို ဘာအတွက်သုံးမလဲဆိုသည်ကို သင်ပြောပြသည် - ပုံနှိပ်၊ လေဆာဖြတ်ခြင်း၊ ဆိုင်းဘုတ် သို့မဟုတ် တက်တူးပုံစံ။",
+    "zh": "您说明纹样的用途：印刷、激光切割、招牌或纹身稿。",
+    "de": "Sie sagen, wofür das Muster gedacht ist: Druck, Laserschnitt, ein Schild oder Tattoo-Vorlagen."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "lotus",
+   "t": {
+    "en": "Borders and patterns in Lanna and Thai ornament are made as files.",
+    "th": "ทำลายขอบและลวดลายแบบล้านนาและลายไทยเป็นไฟล์",
+    "my": "လန်နာနှင့် ထိုင်းအလှဆင်ပုံစံ အနားစွန်းနှင့် ပုံစံများကို ဖိုင်အဖြစ် ပြုလုပ်သည်။",
+    "zh": "把兰纳和泰式纹样的边框与图案做成文件。",
+    "de": "Bordüren und Muster im Lanna- und thailändischen Ornamentstil werden als Dateien angefertigt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "save",
+   "t": {
+    "en": "The files go to you.",
+    "th": "ส่งไฟล์ให้คุณ",
+    "my": "ဖိုင်များကို သင့်ထံ ပို့ပေးသည်။",
+    "zh": "文件交给您。",
+    "de": "Die Dateien gehen an Sie."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thai copyright lasts for the life of an identifiable author plus 50 years. For applied art it lasts 50 years from creation or first publication.",
+    "th": "ลิขสิทธิ์ในไทยคุ้มครองตลอดชีวิตของผู้สร้างสรรค์ที่ระบุตัวได้บวก 50 ปี สำหรับศิลปะประยุกต์คุ้มครอง 50 ปีนับจากสร้างสรรค์หรือเผยแพร่ครั้งแรก",
+    "my": "ထိုင်းမူပိုင်ခွင့်သည် အမည်သိသော ဖန်တီးသူ၏ အသက်ရှင်ချိန်နှင့် နောက်ထပ် 50 နှစ် ခံသည်။ အသုံးချ အနုပညာအတွက် ဖန်တီးသည့်နေ့ သို့မဟုတ် ပထမဆုံး ထုတ်ဝေသည့်နေ့မှ 50 နှစ် ခံသည်။",
+    "zh": "在泰国，可确认身份的作者的作品，版权保护至作者去世后 50 年；实用艺术作品自创作或首次发表起保护 50 年。",
+    "de": "Das Urheberrecht gilt in Thailand für das Leben einer bekannten Urheberin oder eines bekannten Urhebers plus 50 Jahre. Für angewandte Kunst gilt es 50 Jahre ab Entstehung oder Erstveröffentlichung."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "Thai copyright covers original works. It does not cover ideas, methods, systems or concepts.",
+    "th": "ลิขสิทธิ์ไทยคุ้มครองงานที่เป็นต้นฉบับ ไม่คุ้มครองความคิด วิธีการ ระบบ หรือแนวคิด",
+    "my": "ထိုင်းမူပိုင်ခွင့်သည် မူရင်းလက်ရာများကို အကာအကွယ်ပေးသည်။ အတွေး၊ နည်းလမ်း၊ စနစ် သို့မဟုတ် အယူအဆများကို မပါဝင်ပါ။",
+    "zh": "泰国版权保护原创作品，不保护思想、方法、系统或概念。",
+    "de": "Das thailändische Urheberrecht schützt Originalwerke. Ideen, Methoden, Systeme und Konzepte schützt es nicht."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "t": {
+    "en": "A Thai print shop's FAQ asks for AI, PDF, PNG or JPG files at high resolution.",
+    "th": "คำถามที่พบบ่อยของโรงพิมพ์ไทยแห่งหนึ่งขอไฟล์ AI, PDF, PNG หรือ JPG ความละเอียดสูง",
+    "my": "ထိုင်းပုံနှိပ်ဆိုင်တစ်ခု၏ မေးလေ့ရှိသောမေးခွန်းများတွင် ကြည်လင်ပြတ်သားမှုမြင့်သော AI၊ PDF၊ PNG သို့မဟုတ် JPG ဖိုင်များကို တောင်းသည်။",
+    "zh": "泰国一家印刷厂的常见问题页要求提供高分辨率的 AI、PDF、PNG 或 JPG 文件。",
+    "de": "Die FAQ einer thailändischen Druckerei verlangt AI-, PDF-, PNG- oder JPG-Dateien in hoher Auflösung."
+   },
+   "src": "https://page.line.me/eng2799i/faq/1874422122264012"
+  },
+  {
+   "t": {
+    "en": "A laser-cutting service recommends SVG files and also takes DXF, AI, EPS and PDF. It says simple pictures or drawings are not enough to make an object.",
+    "th": "บริการตัดเลเซอร์แห่งหนึ่งแนะนำไฟล์ SVG และรับ DXF, AI, EPS และ PDF ด้วย โดยระบุว่าภาพหรือภาพวาดธรรมดาไม่พอสำหรับสร้างชิ้นงาน",
+    "my": "လေဆာဖြတ်ဝန်ဆောင်မှုတစ်ခုက SVG ဖိုင်ကို အကြံပြုပြီး DXF၊ AI၊ EPS နှင့် PDF တို့ကိုလည်း လက်ခံသည်။ ရိုးရိုးပုံ သို့မဟုတ် ပုံဆွဲချက်များသည် အရာဝတ္ထုတစ်ခု ပြုလုပ်ရန် မလုံလောက်ဟု ဆိုသည်။",
+    "zh": "一家激光切割服务推荐 SVG 文件，也接受 DXF、AI、EPS 和 PDF，并说明普通图片或图画不足以制作成品。",
+    "de": "Ein Laserschneid-Dienst empfiehlt SVG-Dateien und nimmt auch DXF, AI, EPS und PDF an. Einfache Bilder oder Zeichnungen reichen laut Dienst nicht, um ein Objekt zu erstellen."
+   },
+   "src": "https://learn.sculpteo.com/en/how-to-upload-a-vector-file-for-laser-cutting-and-engraving"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai line art as vector files (AI) from a Fastwork seller with 96 orders, unlimited changes",
+    "th": "ลายเส้นไทยเป็นไฟล์เวกเตอร์ (AI) จากผู้ขายบน Fastwork ที่มี 96 ออเดอร์ แก้ไขไม่จำกัด",
+    "my": "အော်ဒါ 96 ခုရှိသော Fastwork ရောင်းသူထံမှ ထိုင်းလိုင်းအာ့တ်ကို ဗက်တာဖိုင် (AI) အဖြစ်၊ ပြင်ဆင်မှု အကန့်အသတ်မရှိ",
+    "zh": "Fastwork 上有 96 笔订单的卖家的泰式线稿矢量文件（AI），不限修改次数",
+    "de": "Thailändische Strichzeichnungen als Vektordateien (AI) von einem Fastwork-Anbieter mit 96 Bestellungen, unbegrenzte Änderungen"
+   },
+   "p": {
+    "en": "฿400 for a small piece, 4 days; ฿800 for medium detail, 7 days; ฿1,500 for a large detailed piece, 10 days",
+    "th": "฿400 ชิ้นเล็ก 4 วัน ฿800 รายละเอียดปานกลาง 7 วัน ฿1,500 ชิ้นใหญ่รายละเอียดมาก 10 วัน",
+    "my": "အသေးစား ฿400 (4 ရက်)၊ အသေးစိတ်အလယ်အလတ် ฿800 (7 ရက်)၊ အသေးစိတ်များသော အကြီးစား ฿1,500 (10 ရက်)",
+    "zh": "小件 ฿400，4 天；中等细节 ฿800，7 天；大幅精细作品 ฿1,500，10 天",
+    "de": "฿400 für ein kleines Stück, 4 Tage; ฿800 für mittleren Detailgrad, 7 Tage; ฿1,500 für ein grosses, detailreiches Stück, 10 Tage"
+   },
+   "src": "https://fastwork.co/user/narischa/vector-69499746"
+  },
+  {
+   "t": {
+    "en": "Thai pattern drawings from a Fastwork seller with 43 orders, 3 changes",
+    "th": "ลายไทยวาดมือจากผู้ขายบน Fastwork ที่มี 43 ออเดอร์ แก้ไข 3 ครั้ง",
+    "my": "အော်ဒါ 43 ခုရှိသော Fastwork ရောင်းသူထံမှ ထိုင်းပုံစံ ရေးဆွဲမှု၊ ပြင်ဆင်မှု 3 ကြိမ်",
+    "zh": "Fastwork 上有 43 笔订单的卖家的泰式图案绘制，含 3 次修改",
+    "de": "Thailändische Musterzeichnungen von einem Fastwork-Anbieter mit 43 Bestellungen, 3 Änderungen"
+   },
+   "p": {
+    "en": "฿800 for one-colour line art, 10 days; ฿3,600 for a coloured pattern at A4 or A3, 14 days",
+    "th": "฿800 ลายเส้นสีเดียว 10 วัน ฿3,600 ลายไทยลงสี ขนาด A4 หรือ A3 14 วัน",
+    "my": "တစ်ရောင်တည်း လိုင်းအာ့တ် ฿800 (10 ရက်)၊ A4 သို့မဟုတ် A3 အရွယ် အရောင်ဆိုးပုံစံ ฿3,600 (14 ရက်)",
+    "zh": "单色线稿 ฿800，10 天；A4 或 A3 彩色图案 ฿3,600，14 天",
+    "de": "฿800 für einfarbige Strichzeichnung, 10 Tage; ฿3,600 für ein farbiges Muster in A4 oder A3, 14 Tage"
+   },
+   "src": "https://fastwork.co/user/tinnanut/illustration-95134392"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a Thai pattern as a vector file cost?",
+    "th": "ไฟล์เวกเตอร์ลายไทยราคาเท่าไร",
+    "my": "ထိုင်းပုံစံကို ဗက်တာဖိုင်အဖြစ် ဘယ်လောက်ကျသလဲ။",
+    "zh": "泰式纹样做成矢量文件要多少钱？",
+    "de": "Was kostet ein thailändisches Muster als Vektordatei?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 96 orders lists Thai line art redrawn as an AI file at ฿400 for a small, low-detail piece, ฿800 for medium detail and ฿1,500 for a large detailed piece, with unlimited changes. Files come as .ai, .jpg or .png.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 96 ออเดอร์ลงงานวาดลายเส้นไทยใหม่เป็นไฟล์ AI ชิ้นเล็กรายละเอียดน้อย ฿400 รายละเอียดปานกลาง ฿800 และชิ้นใหญ่รายละเอียดมาก ฿1,500 แก้ไขไม่จำกัด ส่งเป็นไฟล์ .ai, .jpg หรือ .png",
+    "my": "အော်ဒါ 96 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက ထိုင်းလိုင်းအာ့တ်ကို AI ဖိုင်အဖြစ် ပြန်ဆွဲခြင်းကို အသေးစိတ်နည်းသော အသေးစား ฿400၊ အသေးစိတ်အလယ်အလတ် ฿800 နှင့် အသေးစိတ်များသော အကြီးစား ฿1,500 ဟု စာရင်းပြုထားပြီး ပြင်ဆင်မှု အကန့်အသတ်မရှိပါ။ ဖိုင်များကို .ai၊ .jpg သို့မဟုတ် .png ဖြင့် ပေးသည်။",
+    "zh": "Fastwork 上一位有 96 笔订单的卖家标价：把泰式线稿重绘为 AI 文件，细节少的小件 ฿400，中等细节 ฿800，大幅精细作品 ฿1,500，不限修改次数。文件格式为 .ai、.jpg 或 .png。",
+    "de": "Ein Fastwork-Anbieter mit 96 Bestellungen nennt für thailändische Strichzeichnungen, als AI-Datei neu gezeichnet, ฿400 für ein kleines Stück mit wenig Details, ฿800 für mittleren Detailgrad und ฿1,500 für ein grosses, detailreiches Stück, mit unbegrenzten Änderungen. Die Dateien kommen als .ai, .jpg oder .png."
+   },
+   "src": "https://fastwork.co/user/narischa/vector-69499746"
+  },
+  {
+   "q": {
+    "en": "What file does a printer or sign shop ask for?",
+    "th": "โรงพิมพ์หรือร้านทำป้ายขอไฟล์แบบไหน",
+    "my": "ပုံနှိပ်ဆိုင် သို့မဟုတ် ဆိုင်းဘုတ်ဆိုင်က ဘယ်ဖိုင်မျိုး တောင်းသလဲ။",
+    "zh": "印刷厂或招牌店要什么格式的文件？",
+    "de": "Welche Datei verlangt eine Druckerei oder ein Schilderhersteller?"
+   },
+   "a": {
+    "en": "A Thai print shop's LINE FAQ lists AI, PDF, PNG or JPG at high resolution. It also offers a free check of a file sent to the shop.",
+    "th": "คำถามที่พบบ่อยทาง LINE ของโรงพิมพ์ไทยแห่งหนึ่งระบุไฟล์ AI, PDF, PNG หรือ JPG ความละเอียดสูง และให้ส่งไฟล์มาตรวจฟรี",
+    "my": "ထိုင်းပုံနှိပ်ဆိုင်တစ်ခု၏ LINE မေးလေ့ရှိသောမေးခွန်းများတွင် ကြည်လင်ပြတ်သားမှုမြင့်သော AI၊ PDF၊ PNG သို့မဟုတ် JPG ကို ဖော်ပြထားသည်။ ဆိုင်သို့ ပို့သော ဖိုင်ကို အခမဲ့ စစ်ဆေးပေးမည်ဟုလည်း ဆိုသည်။",
+    "zh": "泰国一家印刷厂的 LINE 常见问题页列出高分辨率的 AI、PDF、PNG 或 JPG，并提供对发来的文件免费检查。",
+    "de": "Die LINE-FAQ einer thailändischen Druckerei nennt AI, PDF, PNG oder JPG in hoher Auflösung. Sie bietet auch eine kostenlose Prüfung einer eingesandten Datei an."
+   },
+   "src": "https://page.line.me/eng2799i/faq/1874422122264012"
+  },
+  {
+   "q": {
+    "en": "What file does a laser cutter need?",
+    "th": "เครื่องตัดเลเซอร์ต้องใช้ไฟล์แบบไหน",
+    "my": "လေဆာဖြတ်စက်က ဘယ်ဖိုင်မျိုး လိုသလဲ။",
+    "zh": "激光切割需要什么格式的文件？",
+    "de": "Welche Datei braucht ein Laserschneider?"
+   },
+   "a": {
+    "en": "A laser-cutting service says it highly recommends SVG and also takes DXF, AI, EPS and PDF. Each style has a colour code, and the service reads the colours set on the paths to suggest the matching style.",
+    "th": "บริการตัดเลเซอร์แห่งหนึ่งแนะนำ SVG เป็นอย่างยิ่ง และรับ DXF, AI, EPS และ PDF ด้วย แต่ละสไตล์มีรหัสสี และระบบอ่านสีที่ตั้งไว้บนเส้นเพื่อเสนอสไตล์ที่ตรงกัน",
+    "my": "လေဆာဖြတ်ဝန်ဆောင်မှုတစ်ခုက SVG ကို အထူးအကြံပြုပြီး DXF၊ AI၊ EPS နှင့် PDF တို့ကိုလည်း လက်ခံသည်ဟု ဆိုသည်။ ပုံစံတစ်ခုချင်းစီတွင် အရောင်ကုဒ်ရှိပြီး လမ်းကြောင်းများပေါ်တွင် သတ်မှတ်ထားသော အရောင်များကို ဖတ်၍ ကိုက်ညီသောပုံစံကို အကြံပြုသည်။",
+    "zh": "一家激光切割服务表示强烈推荐 SVG，也接受 DXF、AI、EPS 和 PDF。每种处理方式有各自的颜色代码，系统读取路径上设置的颜色来推荐对应方式。",
+    "de": "Ein Laserschneid-Dienst empfiehlt SVG nachdrücklich und nimmt auch DXF, AI, EPS und PDF an. Jeder Stil hat einen Farbcode, und der Dienst liest die auf den Pfaden gesetzten Farben, um den passenden Stil vorzuschlagen."
+   },
+   "src": "https://learn.sculpteo.com/en/how-to-upload-a-vector-file-for-laser-cutting-and-engraving"
+  },
+  {
+   "q": {
+    "en": "How long does copyright on a pattern last?",
+    "th": "ลิขสิทธิ์ของลวดลายคุ้มครองนานเท่าไร",
+    "my": "ပုံစံတစ်ခု၏ မူပိုင်ခွင့်သည် ဘယ်လောက်ကြာ ခံသလဲ။",
+    "zh": "图案的版权保护多久？",
+    "de": "Wie lange gilt das Urheberrecht an einem Muster?"
+   },
+   "a": {
+    "en": "In Thailand copyright lasts for the life of an identifiable author plus 50 years. For applied art it lasts 50 years from creation or first publication. Copyright covers a drawn work, not ideas, methods, systems or concepts.",
+    "th": "ในไทย ลิขสิทธิ์คุ้มครองตลอดชีวิตของผู้สร้างสรรค์ที่ระบุตัวได้บวก 50 ปี สำหรับศิลปะประยุกต์คุ้มครอง 50 ปีนับจากสร้างสรรค์หรือเผยแพร่ครั้งแรก ลิขสิทธิ์คุ้มครองงานที่วาดขึ้น ไม่คุ้มครองความคิด วิธีการ ระบบ หรือแนวคิด",
+    "my": "ထိုင်းတွင် မူပိုင်ခွင့်သည် အမည်သိသော ဖန်တီးသူ၏ အသက်ရှင်ချိန်နှင့် နောက်ထပ် 50 နှစ် ခံသည်။ အသုံးချ အနုပညာအတွက် ဖန်တီးသည့်နေ့ သို့မဟုတ် ပထမဆုံး ထုတ်ဝေသည့်နေ့မှ 50 နှစ် ခံသည်။ မူပိုင်ခွင့်သည် ရေးဆွဲထားသော လက်ရာကို အကာအကွယ်ပေးပြီး အတွေး၊ နည်းလမ်း၊ စနစ် သို့မဟုတ် အယူအဆများကို မပါဝင်ပါ။",
+    "zh": "在泰国，可确认身份的作者的作品，版权保护至作者去世后 50 年；实用艺术作品自创作或首次发表起保护 50 年。版权保护绘制出的作品，不保护思想、方法、系统或概念。",
+    "de": "In Thailand gilt das Urheberrecht für das Leben einer bekannten Urheberin oder eines bekannten Urhebers plus 50 Jahre. Für angewandte Kunst gilt es 50 Jahre ab Entstehung oder Erstveröffentlichung. Es schützt das gezeichnete Werk, nicht Ideen, Methoden, Systeme oder Konzepte."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  },
+  {
+   "q": {
+    "en": "What is a kranok?",
+    "th": "กนกคืออะไร",
+    "my": "ကနောက် (kranok) ဆိုတာ ဘာလဲ။",
+    "zh": "什么是 kranok（กนก）？",
+    "de": "Was ist ein Kranok?"
+   },
+   "a": {
+    "en": "Kranok is the flame-shaped ornament in Thai art. Hongdam's page Kranok, Drawn builds the flames from equations: sliders change the curl and the notches, and a visitor can draw a line that curls at its end and grows flames, then save the picture.",
+    "th": "กนกคือลายรูปเปลวไฟในศิลปะไทย หน้า \"กนก วาดด้วยคณิต\" ของหงส์ดำสร้างเปลวจากสมการ มีแถบเลื่อนปรับความม้วนและรอยหยัก ผู้เข้าชมวาดเส้นหนึ่งเส้นที่ม้วนที่ปลายและงอกเปลว แล้วบันทึกภาพได้",
+    "my": "ကနောက်သည် ထိုင်းအနုပညာရှိ မီးလျှံပုံ အလှဆင်ပုံစံဖြစ်သည်။ ဟုန်ဒမ်၏ \"Kranok, Drawn\" စာမျက်နှာက မီးလျှံများကို ညီမျှခြင်းများမှ တည်ဆောက်သည် - ရွေ့ကိရိယာများဖြင့် ကွေ့ခြင်းနှင့် ခွက်ခွက်များကို ပြောင်းနိုင်ပြီး ဧည့်သည်က အဆုံးတွင် ကွေ့ကာ မီးလျှံပေါက်သော မျဉ်းတစ်ကြောင်း ဆွဲပြီး ပုံကို သိမ်းနိုင်သည်။",
+    "zh": "Kranok（กนก）是泰国艺术中火焰形的纹样。鸿丹的《Kranok, Drawn》页面用方程生成火焰：滑块可调整卷曲和缺口，访客还能画一条末端卷曲并长出火焰的线，再保存图片。",
+    "de": "Kranok ist das flammenförmige Ornament der thailändischen Kunst. Hongdams Seite «Kranok, Drawn» baut die Flammen aus Gleichungen auf: Schieberegler ändern die Rundung und die Kerben, und Besuchende können eine Linie zeichnen, die sich am Ende kringelt und Flammen wachsen lässt, und das Bild speichern."
+   },
+   "src": "https://nanobotco.github.io/kranok/"
+  }
+ ],
+ "related": [
+  "graphics",
+  "drawn",
+  "print",
+  "signs",
+  "lanna-wedding",
+  "decks"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Kranok, Drawn: the flame ornament built from equations (Hongdam)",
+    "th": "กนก วาดด้วยคณิต: ลายเปลวสร้างจากสมการ (หงส์ดำ)",
+    "my": "Kranok, Drawn - ညီမျှခြင်းများမှ တည်ဆောက်ထားသော မီးလျှံပုံစံ (ဟုန်ဒမ်)",
+    "zh": "Kranok, Drawn：用方程生成的火焰纹样（鸿丹）",
+    "de": "Kranok, Drawn: das Flammenornament aus Gleichungen (Hongdam)"
+   },
+   "href": "https://nanobotco.github.io/kranok/"
+  },
+  {
+   "t": {
+    "en": "Sculpteo: uploading a vector file for laser cutting",
+    "th": "Sculpteo: การอัปโหลดไฟล์เวกเตอร์สำหรับตัดเลเซอร์",
+    "my": "Sculpteo - လေဆာဖြတ်ရန် ဗက်တာဖိုင် တင်ခြင်း",
+    "zh": "Sculpteo：上传矢量文件做激光切割",
+    "de": "Sculpteo: Vektordatei für den Laserschnitt hochladen"
+   },
+   "href": "https://learn.sculpteo.com/en/how-to-upload-a-vector-file-for-laser-cutting-and-engraving"
+  }
+ ],
+ "glyphs": [
+  "lotus",
+  "naga",
+  "lantern"
+ ]
+}

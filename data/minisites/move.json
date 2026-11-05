@@ -1,0 +1,360 @@
+{
+ "id": "move",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People who move house into or out of Thailand deal with movers, freight forwarders, an inventory of the goods and customs papers, some of them in Thai.",
+  "th": "คนที่ย้ายบ้านเข้าหรือออกจากไทยต้องติดต่อบริษัทขนย้าย ตัวแทนขนส่ง ทำรายการสิ่งของ และเอกสารศุลกากร ซึ่งบางส่วนเป็นภาษาไทย",
+  "my": "ထိုင်းနိုင်ငံ အဝင် သို့မဟုတ် အထွက် အိမ်ပြောင်းသူများသည် ပစ္စည်းရွှေ့ပြောင်းသည့်ကုမ္ပဏီများ၊ ကုန်စည်ပို့ဆောင်ရေးကိုယ်စားလှယ်များ၊ ပစ္စည်းစာရင်းနှင့် အကောက်ခွန်စာရွက်စာတမ်းများ (တချို့မှာ ထိုင်းဘာသာဖြင့်) ကို ကိုင်တွယ်ရသည်။",
+  "zh": "搬家进出泰国的人要和搬家公司、货运代理打交道，还要列物品清单、办海关文件，其中一部分是泰文的。",
+  "de": "Wer in Thailand ein- oder auszieht, hat mit Umzugsfirmen, Spediteuren, einer Inventarliste und Zollpapieren zu tun, teils auf Thai."
+ },
+ "n": {
+  "de": "Umzug ins Ausland"
+ },
+ "l": {
+  "de": "Umzugsfirmen und Fracht gefunden, Papiere erledigt, die Sendung bis zur Haustür verfolgt."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "We find movers and freight forwarders and compare their quotes in writing.",
+    "th": "หาบริษัทขนย้ายและตัวแทนขนส่ง แล้วเทียบใบเสนอราคาเป็นลายลักษณ์อักษร",
+    "my": "ပစ္စည်းရွှေ့ပြောင်းသည့်ကုမ္ပဏီများနှင့် ကုန်စည်ပို့ဆောင်ရေးကိုယ်စားလှယ်များကို ရှာပြီး ရေးသားထားသော စျေးနှုန်းများကို နှိုင်းယှဉ်သည်။",
+    "zh": "找搬家公司和货运代理，并对比他们的书面报价。",
+    "de": "Wir suchen Umzugsfirmen und Spediteure und vergleichen ihre schriftlichen Offerten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမအဆင့်",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "parcel",
+   "t": {
+    "en": "We book the packing and the pickup.",
+    "th": "นัดแพ็กของและวันรับของ",
+    "my": "ထုပ်ပိုးခြင်းနှင့် ပစ္စည်းလာယူသည့်နေ့ကို ကြိုတင်စီစဉ်ပေးသည်။",
+    "zh": "预约打包和上门取件。",
+    "de": "Wir buchen das Packen und die Abholung."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the pickup",
+    "th": "ก่อนวันรับของ",
+    "my": "လာယူမည့်နေ့မတိုင်မီ",
+    "zh": "取件前",
+    "de": "Vor der Abholung"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "We prepare the inventory and the customs papers for household goods, and make the calls in Thai.",
+    "th": "ทำรายการสิ่งของและเอกสารศุลกากรของใช้ในบ้าน และโทรประสานงานเป็นภาษาไทย",
+    "my": "အိမ်သုံးပစ္စည်းများအတွက် ပစ္စည်းစာရင်းနှင့် အကောက်ခွန်စာရွက်စာတမ်းများ ပြင်ဆင်ပြီး ထိုင်းဘာသာဖြင့် ဖုန်းဆက်ပေးသည်။",
+    "zh": "准备家庭物品清单和海关文件，并用泰语打电话沟通。",
+    "de": "Wir erstellen die Inventarliste und die Zollpapiere für den Hausrat und führen die Telefonate auf Thai."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the goods arrive",
+    "th": "ก่อนของถึง",
+    "my": "ပစ္စည်းမရောက်မီ",
+    "zh": "货到之前",
+    "de": "Bevor die Ware ankommt"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "We follow the shipment to your door.",
+    "th": "ติดตามการขนส่งจนถึงหน้าบ้านคุณ",
+    "my": "ပစ္စည်းပို့ဆောင်မှုကို သင့်အိမ်ရှေ့အထိ လိုက်လံစောင့်ကြည့်သည်။",
+    "zh": "跟踪货物，直到送到您家门口。",
+    "de": "Wir verfolgen die Sendung bis zu Ihrer Haustür."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Until it arrives",
+    "th": "จนของถึง",
+    "my": "ပစ္စည်းရောက်သည်အထိ",
+    "zh": "直到送达",
+    "de": "Bis zur Ankunft"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "People moving to Thailand import used household goods duty-free in reasonable amounts if owned and used before.",
+    "th": "ผู้ย้ายมาอยู่ไทยนำของใช้ในบ้านที่ใช้แล้วเข้ามาได้โดยไม่เสียอากรในปริมาณพอสมควร",
+    "my": "ထိုင်းသို့ ပြောင်းရွှေ့သူများ ယခင်က ပိုင်ဆိုင်သုံးစွဲခဲ့သော အိမ်သုံးပစ္စည်းကို သင့်တင့်သော ပမာဏဖြင့် အခွန်ကင်း တင်သွင်းနိုင်သည်။",
+    "zh": "移居泰国者可免税进口合理数量的旧家庭用品，须为此前所有并使用过的。",
+    "de": "Wer nach Thailand zieht, darf gebrauchten Hausrat in angemessener Menge zollfrei einführen, wenn er ihn vorher besessen und benutzt hat."
+   },
+   "src": "https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Household_Items_Import_Clearance_BKK"
+  },
+  {
+   "t": {
+    "en": "The goods arrive no earlier than one month before and no later than six months after the owner.",
+    "th": "ของต้องมาถึงไม่เกินหนึ่งเดือนก่อน และไม่เกินหกเดือนหลังเจ้าของมาถึง",
+    "my": "ပစ္စည်းများသည် ပိုင်ရှင် မရောက်မီ တစ်လထက် မစောဘဲ၊ ရောက်ပြီး ခြောက်လထက် မနောက်ရ။",
+    "zh": "物品须在本人抵达前一个月内至抵达后六个月内到达。",
+    "de": "Die Waren kommen frühestens einen Monat vor und spätestens sechs Monate nach dem Eigentümer an."
+   },
+   "src": "https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Household_Items_Import_Clearance_BKK"
+  },
+  {
+   "t": {
+    "en": "Duty-free appliances are one of each type per person, two per family.",
+    "th": "เครื่องใช้ไฟฟ้าปลอดอากรได้ชนิดละหนึ่งเครื่องต่อคน สองเครื่องต่อครอบครัว",
+    "my": "အခွန်ကင်း လျှပ်စစ်ပစ္စည်း အမျိုးအစားတစ်ခုလျှင် တစ်ဦး တစ်လုံး၊ မိသားစု နှစ်လုံး။",
+    "zh": "免税电器每种每人一台，每户两台。",
+    "de": "Zollfrei ist pro Gerätetyp eines pro Person, zwei pro Familie."
+   },
+   "src": "https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Household_Items_Import_Clearance_BKK"
+  },
+  {
+   "t": {
+    "en": "FIDI's Thailand customs guide, posted by Asian Tigers and updated 7 September 2024, lists duty-free entry for a foreign national with a one-year Non-Immigrant B visa and a one-year work permit, or a one-year Smart visa. It says holders of O, O-A, Elite and ED visas are not considered and pay duties.",
+    "th": "คู่มือศุลกากรนำเข้าไทยของ FIDI ที่ Asian Tigers เผยแพร่ (ปรับปรุง 7 กันยายน 2567) ระบุว่าของใช้ในบ้านปลอดอากรสำหรับชาวต่างชาติที่ถือวีซ่า Non-Immigrant B อายุหนึ่งปีพร้อมใบอนุญาตทำงานอายุหนึ่งปี หรือวีซ่า Smart อายุหนึ่งปี ผู้ถือวีซ่าประเภท O, O-A, Elite และ ED ไม่อยู่ในข่ายและต้องเสียอากร",
+    "my": "FIDI ၏ ထိုင်းတင်သွင်းကုန် အကောက်ခွန်လမ်းညွှန် (Asian Tigers တင်ထားသည်၊ 2024 စက်တင်ဘာ 7 ရက် နောက်ဆုံးပြင်) တွင် အခွန်ကင်းလွတ်ခွင့်ကို တစ်နှစ်သက်တမ်း Non-Immigrant B ဗီဇာနှင့် တစ်နှစ်သက်တမ်း အလုပ်လုပ်ခွင့်ပါမစ်ရှိသော နိုင်ငံခြားသား သို့မဟုတ် တစ်နှစ်သက်တမ်း Smart ဗီဇာရှိသူအတွက် ဖော်ပြထားသည်။ O၊ O-A၊ Elite နှင့် ED ဗီဇာကိုင်ဆောင်သူများကို မထည့်သွင်းဘဲ အကောက်ခွန်ပေးရသည်ဟု ဆိုသည်။",
+    "zh": "FIDI 的泰国进口海关指南（由 Asian Tigers 发布，2024 年 9 月 7 日更新）列出：持一年期 Non-Immigrant B 签证并有一年期工作许可证，或持一年期 Smart 签证的外国人可免税入境。持 O、O-A、Elite 和 ED 签证者不在其列，须缴税。",
+    "de": "Der Zollleitfaden von FIDI für Thailand, von Asian Tigers veröffentlicht (Stand 7. September 2024), nennt zollfreie Einfuhr für Ausländer mit einem einjährigen Non-Immigrant-B-Visum und einer einjährigen Arbeitsbewilligung oder mit einem einjährigen Smart-Visum. Inhaber von O-, O-A-, Elite- und ED-Visa werden nicht berücksichtigt und zahlen Zoll."
+   },
+   "src": "https://asiantigersgroup.com/wp-content/uploads/2025/07/import/THAILAND%20Import%20%20-%20FIDI%20Customs%20Guide.pdf"
+  },
+  {
+   "t": {
+    "en": "The same guide gives clearance as 3 to 5 working days for a full container and 5 to 7 for a shared container or air freight, with the papers in order. The bill of lading must read Used Household Goods & Personal Effects; Thai Customs fines about ฿1,500 when the marks are missing or incomplete.",
+    "th": "คู่มือเดียวกันระบุการตรวจปล่อย 3–5 วันทำการสำหรับตู้เต็ม และ 5–7 วันทำการสำหรับตู้รวมหรือทางอากาศ เมื่อเอกสารครบ ใบตราส่งต้องระบุ Used Household Goods & Personal Effects ศุลกากรปรับประมาณ ฿1,500 ถ้าไม่มีเครื่องหมายหรือไม่ครบ",
+    "my": "ထိုလမ်းညွှန်ကပင် စာရွက်စာတမ်းပြည့်စုံပါက ကွန်တိန်နာအပြည့်ကို ရှင်းလင်းရန် အလုပ်ရက် 3 မှ 5 ရက်၊ မျှဝေကွန်တိန်နာ သို့မဟုတ် လေကြောင်းကို အလုပ်ရက် 5 မှ 7 ရက် ကြာသည်ဟု ဆိုသည်။ ကုန်တင်လွှဲစာ (bill of lading) တွင် Used Household Goods & Personal Effects ဟု ရေးရမည်။ အမှတ်အသား မပါ သို့မဟုတ် မပြည့်စုံလျှင် ထိုင်းအကောက်ခွန်က ฿1,500 ခန့် ဒဏ်ရိုက်သည်။",
+    "zh": "同一指南称，文件齐备时，整箱清关需 3 至 5 个工作日，拼箱或空运需 5 至 7 个工作日。提单须写明 Used Household Goods & Personal Effects；唛头缺失或不全，泰国海关罚约 ฿1,500。",
+    "de": "Derselbe Leitfaden nennt für die Abfertigung 3 bis 5 Arbeitstage bei einem ganzen Container und 5 bis 7 bei Sammelcontainer oder Luftfracht, wenn die Papiere vollständig sind. Im Frachtbrief muss Used Household Goods & Personal Effects stehen; fehlen die Markierungen oder sind sie unvollständig, verhängt der thailändische Zoll eine Busse von etwa ฿1,500."
+   },
+   "src": "https://asiantigersgroup.com/wp-content/uploads/2025/07/import/THAILAND%20Import%20%20-%20FIDI%20Customs%20Guide.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "UK to Thailand, shared container",
+    "th": "อังกฤษไปไทย ตู้รวม",
+    "my": "UK မှ ထိုင်း၊ မျှဝေကွန်တိန်နာ",
+    "zh": "英国至泰国，拼箱",
+    "de": "Grossbritannien nach Thailand, Sammelcontainer"
+   },
+   "p": {
+    "en": "from about £1,250",
+    "th": "เริ่มราว £1,250",
+    "my": "£1,250 ခန့်မှစ၍",
+    "zh": "约 £1,250 起",
+    "de": "ab etwa £1,250"
+   },
+   "src": "https://www.pssremovals.com/container-shipping-to-thailand"
+  },
+  {
+   "t": {
+    "en": "UK to Thailand, three-bed house",
+    "th": "อังกฤษไปไทย บ้านสามห้องนอน",
+    "my": "UK မှ ထိုင်း၊ အိပ်ခန်းသုံးခန်း အိမ်",
+    "zh": "英国至泰国，三居室",
+    "de": "Grossbritannien nach Thailand, Haus mit drei Schlafzimmern"
+   },
+   "p": {
+    "en": "£5,500–5,700",
+    "th": "£5,500–5,700",
+    "my": "£5,500–5,700",
+    "zh": "£5,500–5,700",
+    "de": "£5,500–5,700"
+   },
+   "src": "https://www.pssremovals.com/container-shipping-to-thailand"
+  },
+  {
+   "t": {
+    "en": "UK to Thailand, 20-foot container, three-bed house, port to port (packing and collection in the UK not included)",
+    "th": "อังกฤษไปไทย ตู้ 20 ฟุต บ้านสามห้องนอน ท่าเรือถึงท่าเรือ (ไม่รวมแพ็กและรับของในอังกฤษ)",
+    "my": "UK မှ ထိုင်း၊ 20 ပေ ကွန်တိန်နာ၊ အိပ်ခန်းသုံးခန်းအိမ်၊ ဆိပ်ကမ်းမှ ဆိပ်ကမ်း (UK တွင် ထုပ်ပိုးခြင်းနှင့် လာယူခြင်း မပါ)",
+    "zh": "英国至泰国，20 英尺集装箱，三居室，港到港（不含英国打包和上门取件）",
+    "de": "Grossbritannien nach Thailand, 20-Fuss-Container, Haus mit drei Schlafzimmern, Hafen zu Hafen (ohne Packen und Abholung in Grossbritannien)"
+   },
+   "p": {
+    "en": "£4,119–5,724",
+    "th": "£4,119–5,724",
+    "my": "£4,119–5,724",
+    "zh": "£4,119–5,724",
+    "de": "£4,119–5,724"
+   },
+   "src": "https://shipit.co.uk/removals-to-thailand"
+  },
+  {
+   "t": {
+    "en": "UK to Thailand, shared container, one-bed flat, port to port",
+    "th": "อังกฤษไปไทย ตู้รวม แฟลตหนึ่งห้องนอน ท่าเรือถึงท่าเรือ",
+    "my": "UK မှ ထိုင်း၊ မျှဝေကွန်တိန်နာ၊ အိပ်ခန်းတစ်ခန်း တိုက်ခန်း၊ ဆိပ်ကမ်းမှ ဆိပ်ကမ်း",
+    "zh": "英国至泰国，拼箱，一居室公寓，港到港",
+    "de": "Grossbritannien nach Thailand, Sammelcontainer, Wohnung mit einem Schlafzimmer, Hafen zu Hafen"
+   },
+   "p": {
+    "en": "£2,122–3,050",
+    "th": "£2,122–3,050",
+    "my": "£2,122–3,050",
+    "zh": "£2,122–3,050",
+    "de": "£2,122–3,050"
+   },
+   "src": "https://shipit.co.uk/removals-to-thailand"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to ship household goods to Thailand?",
+    "th": "ส่งของใช้ในบ้านไปไทยราคาเท่าไร",
+    "my": "ထိုင်းသို့ အိမ်သုံးပစ္စည်းများ ပို့ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "把家当运到泰国要多少钱？",
+    "de": "Was kostet es, Hausrat nach Thailand zu verschicken?"
+   },
+   "a": {
+    "en": "PSS Removals, a UK mover, lists a shared container from around £1,250 and a three-bed house at £5,500–5,700. Taxes and import duties are extra.",
+    "th": "PSS Removals บริษัทขนย้ายในอังกฤษ ระบุตู้รวมเริ่มราว £1,250 และบ้านสามห้องนอน £5,500–5,700 ไม่รวมภาษีและอากรนำเข้า",
+    "my": "UK ရှိ ပစ္စည်းရွှေ့ပြောင်းကုမ္ပဏီ PSS Removals က မျှဝေကွန်တိန်နာကို £1,250 ခန့်မှစ၍ နှင့် အိပ်ခန်းသုံးခန်းအိမ်ကို £5,500–5,700 ဟု ဖော်ပြသည်။ အခွန်နှင့် တင်သွင်းကုန်အကောက်ခွန်များ ထပ်ပေးရသည်။",
+    "zh": "英国搬家公司 PSS Removals 列出：拼箱约 £1,250 起，三居室 £5,500–5,700。税款和进口关税另计。",
+    "de": "PSS Removals, ein Umzugsunternehmen aus Grossbritannien, nennt für einen Sammelcontainer ab etwa £1,250 und für ein Haus mit drei Schlafzimmern £5,500–5,700. Steuern und Einfuhrzölle kommen dazu."
+   },
+   "src": "https://www.pssremovals.com/container-shipping-to-thailand"
+  },
+  {
+   "q": {
+    "en": "Do I pay import duty on my household goods in Thailand?",
+    "th": "ของใช้ในบ้านของฉันต้องเสียอากรนำเข้าไหม",
+    "my": "ကျွန်ုပ်၏ အိမ်သုံးပစ္စည်းများအတွက် ထိုင်းတွင် တင်သွင်းကုန်အကောက်ခွန် ပေးရပါသလား။",
+    "zh": "我的家当进口要交关税吗？",
+    "de": "Zahle ich Einfuhrzoll auf meinen Hausrat in Thailand?"
+   },
+   "a": {
+    "en": "Used household goods you owned and used abroad come in duty-free in reasonable amounts, if they arrive from one month before to six months after you. The airport's customs page lists a draft import declaration, your passport, proof that your residence changed, the bill of lading, a packing list and an application for duty exemption.",
+    "th": "ของใช้ในบ้านที่ใช้แล้วซึ่งคุณเป็นเจ้าของและใช้ที่ต่างประเทศนำเข้าได้โดยไม่เสียอากรในปริมาณพอสมควร หากมาถึงระหว่างหนึ่งเดือนก่อนถึงหกเดือนหลังคุณมาถึง หน้าศุลกากรของท่าอากาศยานระบุเอกสารว่าได้แก่ร่างใบขนสินค้าขาเข้า หนังสือเดินทาง หลักฐานการเปลี่ยนที่อยู่อาศัย ใบตราส่ง บัญชีรายละเอียดบรรจุหีบห่อ และคำขอยกเว้นอากร",
+    "my": "ပြည်ပတွင် ပိုင်ဆိုင်သုံးစွဲခဲ့သော အိမ်သုံးပစ္စည်းများကို သင် မရောက်မီ တစ်လမှ ရောက်ပြီး ခြောက်လအတွင်း ရောက်လျှင် သင့်တင့်သော ပမာဏဖြင့် အခွန်ကင်း တင်သွင်းနိုင်သည်။ လေဆိပ်၏ အကောက်ခွန်စာမျက်နှာတွင် တင်သွင်းကုန်ကြေငြာစာ မူကြမ်း၊ ပတ်စပို့၊ နေထိုင်ရာပြောင်းကြောင်း အထောက်အထား၊ bill of lading၊ ထုပ်ပိုးစာရင်းနှင့် အခွန်ကင်းလွတ်ခွင့် လျှောက်လွှာတို့ကို ဖော်ပြထားသည်။",
+    "zh": "您在国外拥有并使用过的旧家庭用品，若在您抵达前一个月至抵达后六个月内运到，可在合理数量内免税进口。机场海关页面列出的文件有：进口申报单草稿、护照、居住地变更证明、提单、装箱单和免税申请。",
+    "de": "Gebrauchten Hausrat, den Sie im Ausland besessen und benutzt haben, führen Sie in angemessener Menge zollfrei ein, wenn er zwischen einem Monat vor und sechs Monaten nach Ihrer Ankunft eintrifft. Die Zollseite des Flughafens nennt einen Entwurf der Einfuhrdeklaration, den Reisepass, einen Beleg für den Wohnortwechsel, den Frachtbrief, eine Packliste und einen Antrag auf Zollbefreiung."
+   },
+   "src": "https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Household_Items_Import_Clearance_BKK"
+  },
+  {
+   "q": {
+    "en": "How long does shipping household goods from the UK to Thailand take?",
+    "th": "ส่งของใช้ในบ้านจากอังกฤษไปไทยใช้เวลานานแค่ไหน",
+    "my": "UK မှ ထိုင်းသို့ အိမ်သုံးပစ္စည်းများ ပို့ရန် ကြာချိန် ဘယ်လောက်လဲ။",
+    "zh": "家当从英国运到泰国要多久？",
+    "de": "Wie lange dauert der Versand von Hausrat von Grossbritannien nach Thailand?"
+   },
+   "a": {
+    "en": "PSS Removals gives 6 to 8 weeks to the port for a full container and 8 to 12 weeks for a shared one. Customs clearance and delivery come after.",
+    "th": "PSS Removals ระบุ 6–8 สัปดาห์ถึงท่าเรือสำหรับตู้เต็ม และ 8–12 สัปดาห์สำหรับตู้รวม การตรวจปล่อยและการส่งมอบใช้เวลาต่อจากนั้น",
+    "my": "PSS Removals က ကွန်တိန်နာအပြည့်ကို ဆိပ်ကမ်းအထိ 6 မှ 8 ပတ်၊ မျှဝေကွန်တိန်နာကို 8 မှ 12 ပတ် ဟု ဖော်ပြသည်။ အကောက်ခွန်ရှင်းလင်းခြင်းနှင့် ပို့ဆောင်ခြင်းသည် ထို့နောက် ဖြစ်သည်။",
+    "zh": "PSS Removals 给出：整箱海运到港 6 至 8 周，拼箱 8 至 12 周。清关和送货在此之后。",
+    "de": "PSS Removals nennt 6 bis 8 Wochen bis zum Hafen für einen ganzen Container und 8 bis 12 Wochen für einen Sammelcontainer. Zollabfertigung und Zustellung folgen danach."
+   },
+   "src": "https://www.pssremovals.com/container-shipping-to-thailand"
+  },
+  {
+   "q": {
+    "en": "What size container does a house need?",
+    "th": "บ้านหนึ่งหลังต้องใช้ตู้ขนาดไหน",
+    "my": "အိမ်တစ်လုံးအတွက် ကွန်တိန်နာ ဘယ်အရွယ် လိုသလဲ။",
+    "zh": "一栋房子的家当需要多大的集装箱？",
+    "de": "Welchen Container braucht ein Haushalt?"
+   },
+   "a": {
+    "en": "The Thaiger's relocation page says a 20-foot container suits a typical two- to three-bedroom home. A survey of the goods decides where a shared container stops costing less than a dedicated one.",
+    "th": "หน้าการย้ายถิ่นของ The Thaiger ระบุว่าตู้ 20 ฟุตเหมาะกับบ้านสองถึงสามห้องนอนทั่วไป การสำรวจสิ่งของเป็นตัวกำหนดว่าตู้รวมหยุดถูกกว่าตู้เหมาที่จุดไหน",
+    "my": "The Thaiger ၏ ပြောင်းရွှေ့ရေးစာမျက်နှာက 20 ပေ ကွန်တိန်နာသည် ပုံမှန် အိပ်ခန်းနှစ်ခန်း မှ သုံးခန်းအိမ်နှင့် ကိုက်ညီသည်ဟု ဆိုသည်။ မျှဝေကွန်တိန်နာက သီးသန့်ကွန်တိန်နာထက် ဘယ်နေရာတွင် မစျေးသက်သာတော့သည်ကို ပစ္စည်းစစ်တမ်းက ဆုံးဖြတ်ပေးသည်။",
+    "zh": "The Thaiger 的搬迁页面称，20 英尺集装箱适合一般两到三间卧室的住家。拼箱在哪个量上不再比整箱便宜，要靠对物品的勘察来定。",
+    "de": "Die Umzugsseite von The Thaiger sagt, ein 20-Fuss-Container passe zu einem üblichen Haus mit zwei bis drei Schlafzimmern. Eine Besichtigung der Güter entscheidet, ab wann ein Sammelcontainer nicht mehr günstiger ist als ein eigener."
+   },
+   "src": "https://thethaiger.com/relocation/shipping/"
+  },
+  {
+   "q": {
+    "en": "Can used household goods come by air?",
+    "th": "ส่งของใช้ในบ้านที่ใช้แล้วทางอากาศได้ไหม",
+    "my": "အသုံးပြုပြီး အိမ်သုံးပစ္စည်းများကို လေကြောင်းဖြင့် ပို့နိုင်ပါသလား။",
+    "zh": "旧家庭用品可以空运吗？",
+    "de": "Kann gebrauchter Hausrat per Luftfracht kommen?"
+   },
+   "a": {
+    "en": "FIDI's guide allows duty-free entry for one small air shipment and one sea shipment. The air waybill must read Used Personal Effects only.",
+    "th": "คู่มือของ FIDI ให้นำเข้าปลอดอากรได้หนึ่งครั้งทางอากาศขนาดเล็กและหนึ่งครั้งทางเรือ ใบตราส่งทางอากาศต้องระบุ Used Personal Effects เท่านั้น",
+    "my": "FIDI ၏ လမ်းညွှန်က လေကြောင်းဖြင့် အသေးစား တစ်ကြိမ်နှင့် ရေကြောင်းဖြင့် တစ်ကြိမ်ကို အခွန်ကင်း တင်သွင်းခွင့်ပြုသည်။ လေကြောင်း waybill တွင် Used Personal Effects ဟုသာ ရေးရမည်။",
+    "zh": "FIDI 的指南允许一次小批量空运和一次海运免税入境。空运单只能写 Used Personal Effects。",
+    "de": "Der Leitfaden von FIDI erlaubt zollfreie Einfuhr für eine kleine Luftfracht-Sendung und eine Seefracht-Sendung. Im Luftfrachtbrief darf nur Used Personal Effects stehen."
+   },
+   "src": "https://asiantigersgroup.com/wp-content/uploads/2025/07/import/THAILAND%20Import%20%20-%20FIDI%20Customs%20Guide.pdf"
+  }
+ ],
+ "related": [
+  "luggage",
+  "stay-rent",
+  "visas",
+  "retire",
+  "trades",
+  "form"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Suvarnabhumi Airport: clearing used household items through customs",
+    "th": "ท่าอากาศยานสุวรรณภูมิ: การตรวจปล่อยของใช้ในบ้านที่ใช้แล้ว",
+    "my": "ဆူဝဏ္ဏဘူမိလေဆိပ်: အသုံးပြုပြီး အိမ်သုံးပစ္စည်းများ အကောက်ခွန်ရှင်းလင်းခြင်း",
+    "zh": "素万那普机场：旧家庭用品清关",
+    "de": "Flughafen Suvarnabhumi: Zollabfertigung von gebrauchtem Hausrat"
+   },
+   "href": "https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Household_Items_Import_Clearance_BKK"
+  },
+  {
+   "t": {
+    "en": "FIDI and Asian Tigers: Thailand import customs guide",
+    "th": "FIDI และ Asian Tigers: คู่มือศุลกากรนำเข้าไทย",
+    "my": "FIDI နှင့် Asian Tigers: ထိုင်းတင်သွင်းကုန် အကောက်ခွန်လမ်းညွှန်",
+    "zh": "FIDI 与 Asian Tigers：泰国进口海关指南",
+    "de": "FIDI und Asian Tigers: Zollleitfaden für die Einfuhr nach Thailand"
+   },
+   "href": "https://asiantigersgroup.com/wp-content/uploads/2025/07/import/THAILAND%20Import%20%20-%20FIDI%20Customs%20Guide.pdf"
+  }
+ ],
+ "glyphs": [
+  "home",
+  "parcel",
+  "paper-boat"
+ ]
+}

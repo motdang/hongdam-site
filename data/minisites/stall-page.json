@@ -1,0 +1,309 @@
+{
+ "id": "stall-page",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A market stall meets many people for a few seconds each. A QR sign on the table opens the stall's page on the phone in their hand.",
+  "th": "แผงตลาดพบลูกค้าจำนวนมากแต่ละคนเพียงไม่กี่วินาที ป้ายคิวอาร์บนโต๊ะเปิดหน้าของแผงบนมือถือที่ลูกค้าถืออยู่",
+  "my": "ဈေးဆိုင်တစ်ခုသည် လူများစွာနှင့် တစ်ဦးလျှင် စက္ကန့်အနည်းငယ်သာ တွေ့ဆုံရသည်။ စားပွဲပေါ်က QR ဆိုင်းဘုတ်က သူတို့လက်ထဲရှိ ဖုန်းတွင် ဆိုင်၏စာမျက်နှာကို ဖွင့်ပေးသည်။",
+  "zh": "市场摊位每次只有几秒钟接触一个路人。桌上的二维码牌能在对方手机上打开摊位的页面。",
+  "de": "Ein Marktstand erreicht viele Leute nur für Sekunden. Ein QR-Schild auf dem Tisch öffnet die Seite des Stands auf dem Handy in ihrer Hand."
+ },
+ "n": {
+  "de": "Marktstand-Seite mit QR-Schild"
+ },
+ "l": {
+  "de": "Eine Seite für Ihren Stand und das Tischschild, das sie öffnet."
+ },
+ "steps": [
+  {
+   "db": "camera",
+   "t": {
+    "en": "You send what the stall sells and how to reach it.",
+    "th": "คุณส่งรายการสินค้าของแผงและช่องทางติดต่อ",
+    "my": "သင်က ဆိုင်ရောင်းသည့်ပစ္စည်းများနှင့် ဆက်သွယ်ရန်နည်းလမ်းကို ပို့သည်။",
+    "zh": "您发来摊位卖什么、怎么联系。",
+    "de": "Sie schicken, was der Stand verkauft und wie man ihn erreicht."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "A page for your stall is made.",
+    "th": "ทำหน้าเว็บสำหรับแผงของคุณ",
+    "my": "သင့်ဆိုင်အတွက် စာမျက်နှာတစ်ခု ပြုလုပ်သည်။",
+    "zh": "为您的摊位做一个页面。",
+    "de": "Für Ihren Stand entsteht eine Seite."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you send it",
+    "th": "หลังคุณส่งมา",
+    "my": "သင်ပို့ပြီးနောက်",
+    "zh": "收到资料后",
+    "de": "Nach Ihrer Sendung"
+   }
+  },
+  {
+   "db": "scan",
+   "t": {
+    "en": "A QR table sign that opens the page is made.",
+    "th": "ทำป้ายคิวอาร์ตั้งโต๊ะที่เปิดหน้านั้น",
+    "my": "ထိုစာမျက်နှာကို ဖွင့်ပေးသော QR စားပွဲဆိုင်းဘုတ် ပြုလုပ်သည်။",
+    "zh": "做一块能打开该页面的二维码桌牌。",
+    "de": "Ein QR-Tischschild, das die Seite öffnet, wird gemacht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the page",
+    "th": "พร้อมหน้าเว็บ",
+    "my": "စာမျက်နှာနှင့်အတူ",
+    "zh": "与页面同时",
+    "de": "Zusammen mit der Seite"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "On 28 February 2024 the Director-General of the Department of Internal Trade reminded vendors to post clear signs showing the quantity and price of products. Street-market food stalls and made-to-order restaurants were the main targets. The aim is that buyers know the price before they decide.",
+    "th": "เมื่อวันที่ 28 กุมภาพันธ์ 2567 อธิบดีกรมการค้าภายในแจ้งผู้ค้าให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน โดยเน้นร้านอาหารในตลาดนัดและร้านอาหารตามสั่ง เพื่อให้ผู้บริโภครู้ราคาก่อนตัดสินใจซื้อ",
+    "my": "2024 ဖေဖော်ဝါရီ 28 ရက်တွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာန ညွှန်ကြားရေးမှူးချုပ်က ကုန်ပစ္စည်းအရေအတွက်နှင့် ဈေးနှုန်းကို ရှင်းရှင်းလင်းလင်း ဆိုင်းဘုတ်တင်ပြရန် ရောင်းချသူများကို သတိပေးခဲ့သည်။ ဈေးတန်းရှိ အစားအစာဆိုင်များနှင့် မှာတိုင်းချက်ဆိုင်များကို အဓိကထားသည်။ ဝယ်သူက မဝယ်မီ ဈေးကို သိစေရန် ဖြစ်သည်။",
+    "zh": "2024 年 2 月 28 日，国内贸易厅厅长提醒商家清楚张贴商品数量和价格的牌子，主要针对街市里的小吃摊和点餐小馆。目的是让消费者先知道价格再决定买不买。",
+    "de": "Am 28. Februar 2024 mahnte der Generaldirektor des Department of Internal Trade die Händler, Schilder mit Menge und Preis der Waren deutlich anzubringen. Gemeint waren vor allem Essensstände auf Strassenmärkten und Restaurants, die auf Bestellung kochen. Käufer sollen den Preis kennen, bevor sie entscheiden."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "t": {
+    "en": "The Chiang Mai municipality's walking-street page lists a Sunday market on Ratchadamnoen and Phra Pokklao roads, from Tha Phae Gate toward Wat Phra Singh, and a Saturday market on Wua Lai Road. Its general information gives the hours as about 17:00 to 22:00.",
+    "th": "หน้าถนนคนเดินของเทศบาลนครเชียงใหม่ระบุตลาดวันอาทิตย์บนถนนราชดำเนินและถนนพระปกเกล้า จากประตูท่าแพไปทางวัดพระสิงห์ และตลาดวันเสาร์บนถนนวัวลาย ข้อมูลทั่วไปบอกเวลาประมาณ 17.00–22.00 น.",
+    "my": "ချင်းမိုင်မြို့တော်စည်ပင်၏ လမ်းလျှောက်လမ်း (walking street) စာမျက်နှာတွင် တနင်္ဂနွေဈေးကို ရာဇဒမ်နွန်လမ်း (Ratchadamnoen) နှင့် ဖရာပေါ့ကလောင်လမ်း (Phra Pokklao) ပေါ်တွင် ဒသာဖဲတံခါး (Tha Phae Gate) မှ ဝတ်ဖရာဆင်း (Wat Phra Singh) ဘက်သို့၊ စနေဈေးကို ဝူလိုင်းလမ်း (Wua Lai) ပေါ်တွင် ဖော်ပြထားသည်။ ယေဘုယျအချက်အလက်တွင် အချိန်ကို 17:00 မှ 22:00 ခန့်ဟု ပေးထားသည်။",
+    "zh": "清迈市政府的步行街页面列出：周日集市在拉差当能路和帕博格劳路，从塔佩门往帕辛寺方向；周六集市在瓦莱路。其基本资料给出的时间约为 17:00 至 22:00。",
+    "de": "Auf der Seite der Stadt Chiang Mai zu den Walking Streets steht ein Sonntagsmarkt an der Ratchadamnoen Road und der Phra Pokklao Road, vom Tha-Phae-Tor Richtung Wat Phra Singh, und ein Samstagsmarkt an der Wua Lai Road. Die allgemeinen Angaben nennen die Zeiten etwa 17:00 bis 22:00 Uhr."
+   },
+   "src": "https://www.cmcity.go.th/list/page/496/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A1%E0%B8%B2/"
+  },
+  {
+   "t": {
+    "en": "The Bank of Thailand says PromptPay has run since 2016 and moves money by citizen ID, mobile phone number or bank account number. With Thai QR Payment, the customer scans a QR code in a mobile banking app.",
+    "th": "ธนาคารแห่งประเทศไทยระบุว่าพร้อมเพย์เริ่มใช้ตั้งแต่ปี 2016 (พ.ศ. 2559) โอนเงินด้วยเลขบัตรประชาชน เบอร์โทรศัพท์มือถือ หรือเลขที่บัญชี ส่วน Thai QR Payment ลูกค้าสแกนคิวอาร์โค้ดในแอปธนาคาร",
+    "my": "ဘဏ်အောဖ်ထိုင်းလန်းက PromptPay ကို 2016 ကတည်းက အသုံးပြုနေပြီး နိုင်ငံသားမှတ်ပုံတင်နံပါတ်၊ မိုဘိုင်းဖုန်းနံပါတ် သို့မဟုတ် ဘဏ်စာရင်းနံပါတ်ဖြင့် ငွေလွှဲသည်ဟု ဆိုသည်။ Thai QR Payment တွင် ဖောက်သည်က မိုဘိုင်းဘဏ်အက်ပ်ထဲက QR ကုဒ်ကို စကင်ဖတ်သည်။",
+    "zh": "泰国央行写明，PromptPay 自 2016 年起运行，可凭身份证号、手机号或银行账号转账。用泰国二维码支付（Thai QR Payment）时，顾客在手机银行 App 里扫二维码。",
+    "de": "Die Bank of Thailand schreibt, dass PromptPay seit 2016 läuft und Geld über die Ausweisnummer, die Handynummer oder die Kontonummer bewegt. Bei Thai QR Payment scannt der Kunde einen QR-Code in der Mobile-Banking-App."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "t": {
+    "en": "SCB lists a mismatched sender name or time, or a QR that does not verify, as signs of a fake transfer slip.",
+    "th": "SCB ระบุว่าชื่อหรือเวลาผู้โอนไม่ตรง หรือคิวอาร์ตรวจไม่ผ่าน คือสัญญาณสลิปปลอม",
+    "my": "SCB က ပေးပို့သူအမည် သို့မဟုတ် အချိန် မကိုက်ညီခြင်း၊ QR မအတည်ပြုခြင်းကို အတုစလစ် လက္ခဏာဟု ဖော်ပြသည်။",
+    "zh": "SCB 指出转账人姓名或时间不符、二维码验证不通过，是假凭证的迹象。",
+    "de": "SCB nennt einen abweichenden Absendernamen oder Zeitpunkt oder einen QR-Code, der sich nicht prüfen lässt, als Zeichen eines gefälschten Überweisungsbelegs."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/tips-for-you/check-transfer-slip.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fee on a PromptPay payment (the Bank of Thailand's standard tiers)",
+    "th": "ค่าธรรมเนียมการโอนพร้อมเพย์ (ขั้นมาตรฐานของธนาคารแห่งประเทศไทย)",
+    "my": "PromptPay ငွေပေးချေမှုကြေး (ဘဏ်အောဖ်ထိုင်းလန်း၏ စံအဆင့်များ)",
+    "zh": "PromptPay 付款手续费（泰国央行的标准档）",
+    "de": "Gebühr für eine PromptPay-Zahlung (Standardstufen der Bank of Thailand)"
+   },
+   "p": {
+    "en": "฿0 up to ฿5,000; under ฿2 up to ฿30,000",
+    "th": "฿0 ไม่เกิน ฿5,000 ต่ำกว่า ฿2 ไม่เกิน ฿30,000",
+    "my": "฿5,000 အထိ ฿0၊ ฿30,000 အထိ ฿2 အောက်",
+    "zh": "฿5,000 以内 ฿0；฿30,000 以内低于 ฿2",
+    "de": "฿0 bis ฿5,000; unter ฿2 bis ฿30,000"
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "t": {
+    "en": "Table tents printed, 23 × 13 cm (Gogoprint)",
+    "th": "ป้ายตั้งโต๊ะ 23 x 13 ซม. พิมพ์ (Gogoprint)",
+    "my": "စားပွဲဆိုင်းဘုတ် (table tent) 23 x 13 စင်တီမီတာ ပုံနှိပ်ခြင်း (Gogoprint)",
+    "zh": "印刷桌牌 23 × 13 厘米（Gogoprint）",
+    "de": "Tischaufsteller gedruckt, 23 × 13 cm (Gogoprint)"
+   },
+   "p": {
+    "en": "฿2,225 for 100",
+    "th": "฿2,225 ต่อ 100 ชิ้น",
+    "my": "100 ခုလျှင် ฿2,225",
+    "zh": "100 张 ฿2,225",
+    "de": "฿2,225 für 100"
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  },
+  {
+   "t": {
+    "en": "One-page shop site from a Fastwork freelancer",
+    "th": "เว็บไซต์หน้าเดียวสำหรับขายของ จากฟรีแลนซ์บน Fastwork",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦးထံမှ စာမျက်နှာတစ်ခုတည်း ဆိုင်ဝက်ဘ်ဆိုက်",
+    "zh": "Fastwork 自由职业者的单页店铺网站",
+    "de": "Einseitige Shop-Website von einem Fastwork-Freelancer"
+   },
+   "p": {
+    "en": "฿4,900 in 7 days",
+    "th": "฿4,900 ใน 7 วัน",
+    "my": "7 ရက်အတွင်း ฿4,900",
+    "zh": "7 天，฿4,900",
+    "de": "฿4,900 in 7 Tagen"
+   },
+   "src": "https://fastwork.co/user/somchart/web-development-58452986"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Does a market stall need a price sign?",
+    "th": "แผงตลาดต้องมีป้ายราคาไหม",
+    "my": "ဈေးဆိုင်တွင် ဈေးနှုန်းဆိုင်းဘုတ် လိုသလား။",
+    "zh": "市场摊位需要价目牌吗？",
+    "de": "Braucht ein Marktstand ein Preisschild?"
+   },
+   "a": {
+    "en": "In February 2024 the Department of Internal Trade told vendors to post clear signs with the quantity and price of products. It named street-market food stalls and made-to-order restaurants as the main targets.",
+    "th": "เดือนกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ค้าให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน โดยเน้นร้านอาหารในตลาดนัดและร้านอาหารตามสั่ง",
+    "my": "2024 ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက ကုန်ပစ္စည်းအရေအတွက်နှင့် ဈေးနှုန်းကို ရှင်းရှင်းလင်းလင်း ဆိုင်းဘုတ်တင်ပြရန် ရောင်းချသူများကို ညွှန်ကြားခဲ့သည်။ ဈေးတန်းရှိ အစားအစာဆိုင်များနှင့် မှာတိုင်းချက်ဆိုင်များကို အဓိကထားသည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求商家清楚张贴商品数量和价格的牌子，主要针对街市里的小吃摊和点餐小馆。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade die Händler auf, Schilder mit Menge und Preis der Waren deutlich anzubringen. Genannt wurden vor allem Essensstände auf Strassenmärkten und Restaurants, die auf Bestellung kochen."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "q": {
+    "en": "How can a customer pay a stall by QR code?",
+    "th": "ลูกค้าจ่ายเงินให้แผงด้วยคิวอาร์โค้ดได้อย่างไร",
+    "my": "ဖောက်သည်က QR ကုဒ်ဖြင့် ဈေးဆိုင်ကို ဘယ်လိုပေးချေနိုင်သလဲ။",
+    "zh": "顾客怎样用二维码向摊位付款？",
+    "de": "Wie kann ein Kunde einen Stand per QR-Code bezahlen?"
+   },
+   "a": {
+    "en": "With Thai QR Payment, the customer scans the stall's QR code in a mobile banking app, and the money moves by PromptPay. The Bank of Thailand lists transfers up to ฿5,000 as free of fee.",
+    "th": "ด้วย Thai QR Payment ลูกค้าสแกนคิวอาร์โค้ดของแผงในแอปธนาคาร แล้วเงินโอนผ่านพร้อมเพย์ ธนาคารแห่งประเทศไทยระบุว่าการโอนไม่เกิน ฿5,000 ไม่มีค่าธรรมเนียม",
+    "my": "Thai QR Payment ဖြင့် ဖောက်သည်က မိုဘိုင်းဘဏ်အက်ပ်ထဲတွင် ဆိုင်၏ QR ကုဒ်ကို စကင်ဖတ်ပြီး ငွေကို PromptPay မှတစ်ဆင့် လွှဲသည်။ ဘဏ်အောဖ်ထိုင်းလန်းက ฿5,000 အထိ လွှဲမှုများတွင် ကြေးမရှိဟု ဖော်ပြသည်။",
+    "zh": "用泰国二维码支付时，顾客在手机银行 App 里扫摊位的二维码，钱通过 PromptPay 转出。泰国央行列明，฿5,000 以内的转账免手续费。",
+    "de": "Bei Thai QR Payment scannt der Kunde den QR-Code des Stands in einer Mobile-Banking-App, und das Geld läuft über PromptPay. Die Bank of Thailand führt Überweisungen bis ฿5,000 als gebührenfrei auf."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "q": {
+    "en": "How is a fake payment slip spotted?",
+    "th": "สลิปโอนเงินปลอมดูอย่างไร",
+    "my": "အတုပေးချေမှု ပြေစာကို ဘယ်လိုခွဲခြားသလဲ။",
+    "zh": "怎样识别假的转账凭证？",
+    "de": "Woran erkennt man einen gefälschten Zahlungsbeleg?"
+   },
+   "a": {
+    "en": "SCB lists letters or numbers in different fonts or thickness, a sender name or time that does not match, and a QR code that cannot be verified. Its SCB EASY app scans a slip's QR code.",
+    "th": "SCB ระบุว่าตัวอักษรหรือตัวเลขที่ใช้ฟอนต์หรือความหนาไม่เหมือนกัน ชื่อหรือเวลาผู้โอนที่ไม่ตรง และคิวอาร์โค้ดที่ตรวจไม่ผ่าน คือสัญญาณสลิปปลอม แอป SCB EASY สแกนคิวอาร์โค้ดบนสลิปได้",
+    "my": "SCB က ဖောင့် သို့မဟုတ် အထူ မတူသော စာလုံး၊ ဂဏန်းများ၊ မကိုက်ညီသော ပေးပို့သူအမည် သို့မဟုတ် အချိန်နှင့် အတည်မပြုနိုင်သော QR ကုဒ်တို့ကို ဖော်ပြသည်။ ၎င်း၏ SCB EASY အက်ပ်က ပြေစာပေါ်ရှိ QR ကုဒ်ကို စကင်ဖတ်နိုင်သည်။",
+    "zh": "SCB 列出：字母或数字的字体、粗细不一，转账人姓名或时间不符，二维码验证不通过。其 SCB EASY App 可扫描凭证上的二维码。",
+    "de": "SCB nennt Buchstaben oder Zahlen in unterschiedlicher Schrift oder Strichstärke, einen nicht passenden Absendernamen oder Zeitpunkt und einen QR-Code, der sich nicht prüfen lässt. Die App SCB EASY scannt den QR-Code eines Belegs."
+   },
+   "src": "https://www.scb.co.th/en/personal-banking/stories/tips-for-you/check-transfer-slip.html"
+  },
+  {
+   "q": {
+    "en": "When do the Chiang Mai walking streets run?",
+    "th": "ถนนคนเดินเชียงใหม่เปิดเมื่อไร",
+    "my": "ချင်းမိုင် လမ်းလျှောက်ဈေးများ ဘယ်အချိန် ဖွင့်သလဲ။",
+    "zh": "清迈步行街什么时候开？",
+    "de": "Wann sind die Walking Streets in Chiang Mai geöffnet?"
+   },
+   "a": {
+    "en": "The municipality's page lists the Sunday market and the Saturday market on Wua Lai Road, each from about 17:00 to 22:00. Its history section says the Sunday hours changed to 15:00–22:00.",
+    "th": "หน้าของเทศบาลระบุตลาดวันอาทิตย์และตลาดวันเสาร์บนถนนวัวลาย ประมาณ 17.00–22.00 น. ส่วนประวัติระบุว่าเวลาของวันอาทิตย์เปลี่ยนเป็น 15.00–22.00 น.",
+    "my": "စည်ပင်၏ စာမျက်နှာတွင် တနင်္ဂနွေဈေးနှင့် ဝူလိုင်းလမ်းပေါ်ရှိ စနေဈေးကို 17:00 မှ 22:00 ခန့်ဟု ဖော်ပြထားသည်။ ၎င်း၏ သမိုင်းကဏ္ဍတွင် တနင်္ဂနွေနေ့ အချိန်ကို 15:00–22:00 သို့ ပြောင်းလဲခဲ့သည်ဟု ဆိုသည်။",
+    "zh": "市政府页面列出周日集市和瓦莱路的周六集市，时间都约为 17:00 至 22:00。其历史部分写明，周日的时间改为 15:00–22:00。",
+    "de": "Die Seite der Stadt nennt den Sonntagsmarkt und den Samstagsmarkt an der Wua Lai Road, beide etwa von 17:00 bis 22:00 Uhr. Im Abschnitt zur Geschichte steht, dass die Zeiten am Sonntag auf 15:00–22:00 Uhr geändert wurden."
+   },
+   "src": "https://www.cmcity.go.th/list/page/496/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A1%E0%B8%B2/"
+  },
+  {
+   "q": {
+    "en": "How much does a QR table sign cost to print?",
+    "th": "ป้ายคิวอาร์ตั้งโต๊ะพิมพ์ราคาเท่าไร",
+    "my": "QR စားပွဲဆိုင်းဘုတ် ပုံနှိပ်ခ ဘယ်လောက်လဲ။",
+    "zh": "打印二维码桌牌多少钱？",
+    "de": "Was kostet es, ein QR-Tischschild drucken zu lassen?"
+   },
+   "a": {
+    "en": "Gogoprint lists table tents of 23 × 13 cm at ฿2,225 for 100 (฿22.25 each) and ฿14,600 for 1,000. Its design service starts from ฿200.",
+    "th": "Gogoprint ระบุป้ายตั้งโต๊ะ 23 x 13 ซม. ราคา ฿2,225 ต่อ 100 ชิ้น (ชิ้นละ ฿22.25) และ ฿14,600 ต่อ 1,000 ชิ้น บริการออกแบบเริ่มที่ ฿200",
+    "my": "Gogoprint တွင် 23 x 13 စင်တီမီတာ စားပွဲဆိုင်းဘုတ် 100 ခုလျှင် ฿2,225 (တစ်ခု ฿22.25) နှင့် 1,000 ခုလျှင် ฿14,600 ဟု ဖော်ပြထားသည်။ ဒီဇိုင်းဝန်ဆောင်မှုသည် ฿200 မှ စသည်။",
+    "zh": "Gogoprint 列出 23 × 13 厘米桌牌：100 张 ฿2,225（每张 ฿22.25），1,000 张 ฿14,600。设计服务 ฿200 起。",
+    "de": "Gogoprint führt Tischaufsteller von 23 × 13 cm mit ฿2,225 für 100 (฿22.25 pro Stück) und ฿14,600 für 1,000 auf. Der Designservice beginnt bei ฿200."
+   },
+   "src": "https://www.gogoprint.co.th/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0.html"
+  }
+ ],
+ "related": [
+  "print",
+  "signs",
+  "paybox",
+  "trade-photos",
+  "grab",
+  "online-shop"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Chiang Mai municipality: the walking streets, history and hours",
+    "th": "เทศบาลนครเชียงใหม่: ถนนคนเดิน ประวัติและเวลา",
+    "my": "ချင်းမိုင်မြို့တော်စည်ပင်: လမ်းလျှောက်ဈေးများ၊ သမိုင်းနှင့် အချိန်",
+    "zh": "清迈市政府：步行街的历史与时间",
+    "de": "Stadt Chiang Mai: die Walking Streets, Geschichte und Zeiten"
+   },
+   "href": "https://www.cmcity.go.th/list/page/496/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A1%E0%B8%B2/"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: PromptPay and Thai QR Payment",
+    "th": "ธนาคารแห่งประเทศไทย: พร้อมเพย์และ Thai QR Payment",
+    "my": "ဘဏ်အောဖ်ထိုင်းလန်း: PromptPay နှင့် Thai QR Payment",
+    "zh": "泰国央行：PromptPay 与泰国二维码支付",
+    "de": "Bank of Thailand: PromptPay und Thai QR Payment"
+   },
+   "href": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "glyphs": [
+  "scan",
+  "coin",
+  "lantern"
+ ]
+}
