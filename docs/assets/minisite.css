@@ -93,7 +93,7 @@
 .toy .ours { margin: 1rem 0 0; padding: .8rem .9rem; border-radius: var(--r); background: color-mix(in oklab, var(--tfg) 10%, transparent) }
 .toy .ours b { font-family: var(--font-num) }
 .toy .btn { background: var(--tfg); color: var(--tbg); box-shadow: 3px 3px 0 var(--line) }
-.toy .amt-us { color: #7DD3A3 }
+.toy .amt-us, .toy .amt-eu { color: inherit }   /* the toy is the page turned inside out, so the page's dollar and euro inks would sit on the wrong ground; amounts take the toy's own ink */
 
 /* ---------------------------------------------------------------- how it goes */
 .m-how .job.steps { margin: .4rem 0 4.2rem }
