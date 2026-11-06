@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/state-tracking-one-go-vs-written-steps",
+  "kicker": "Hongdam Studio · AI models · 6 November 2026",
+  "title": "32 changes: 0 of 10 in one go",
+  "th": "ยอดสะสมหลังเปลี่ยน 32 ครั้ง: ตอบรวดเดียวถูก 0 จาก 10 เขียนทีละขั้นถูก 10 จาก 10",
+  "sub": "10 of 10 when the model writes each step",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "68b84df339"
+ },
+ {
   "out": "og/studio/n/n8n-3-npm-ends-timeouts-no-way-back",
   "kicker": "Hongdam Studio · Automation · 5 November 2026",
   "title": "n8n 3.0: Docker only, 60 s Code nodes",
