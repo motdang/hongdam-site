@@ -4222,6 +4222,38 @@
    ]
   },
   {
+   "id": "web-dns",
+   "cat": "web",
+   "n": {
+    "en": "Move your domain's settings to Cloudflare",
+    "th": "ย้ายการตั้งค่าโดเมนไป Cloudflare",
+    "my": "ဒိုမိန်း ဆက်တင်များကို Cloudflare သို့ ရွှေ့ခြင်း",
+    "zh": "将域名设置迁到 Cloudflare",
+    "de": "Domain-Einstellungen zu Cloudflare umziehen"
+   },
+   "l": {
+    "en": "Free Cloudflare account in your name; email records checked before the switch.",
+    "th": "บัญชี Cloudflare ฟรีในชื่อคุณ ตรวจระเบียนอีเมลก่อนสลับ",
+    "my": "သင့်အမည်ဖြင့် Cloudflare အခမဲ့ အကောင့်၊ မပြောင်းမီ အီးမေးလ် မှတ်တမ်းများ စစ်ဆေးသည်။",
+    "zh": "以您名义开设的免费 Cloudflare 账户；切换前核对每条邮件记录。",
+    "de": "Kostenloses Cloudflare-Konto auf Ihren Namen; E-Mail-Einträge vor dem Wechsel geprüft."
+   },
+   "kw": "cloudflare dns nameservers domain move transfer dns hosting www ssl certificate cname flattening email records mx spf dkim cancel old hosting godaddy network solutions ย้ายโดเมน ย้าย dns คลาวด์แฟลร์ 域名 dns 迁移 cloudflare",
+   "act": "buy",
+   "opts": [
+    {
+     "i": "web-dns",
+     "n": {
+      "en": "Domain settings moved, email records checked",
+      "th": "ย้ายการตั้งค่าโดเมน ตรวจระเบียนอีเมล",
+      "my": "ဒိုမိန်း ဆက်တင် ရွှေ့ပြီး အီးမေးလ် မှတ်တမ်း စစ်ဆေးခြင်း",
+      "zh": "迁移域名设置并核对邮件记录",
+      "de": "Domain-Einstellungen umgezogen, E-Mail-Einträge geprüft"
+     }
+    }
+   ]
+  },
+  {
    "id": "web-license",
    "cat": "web",
    "n": {
