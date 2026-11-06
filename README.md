@@ -243,3 +243,10 @@ and work: `data/studio/studio.json`; a practice sells shop cards at the shop's p
 `python3 tools/build_studio.py` builds the pages, feeds, sitemap block and llms.txt section; `node tools/studio_cards.mjs`
 draws the link pictures; `tools/studio_publish.sh <note>` does all of it and publishes through pr-push. A scheduled task,
 studio-notes, writes a note each morning in a clean clone, `../studio-desk`.
+
+## Domain settings moved to Cloudflare (card web-dns, her yes 2026-11-06)
+
+฿2,000 on the monthly walk (floor ฿1,200, ceiling ฿4,000). Page: hongdam.net/web/web-dns/ in five languages, `data/minisites/web-dns.json`.
+`python3 tools/dns_move_check.py before <domain>` saves what the old nameservers answer (mail records, website names, DNSSEC);
+`compare <domain> <cloudflare ns>` asks Cloudflare's nameservers the same before the switch and exits 1 on a missing mail record;
+`after <domain>` repeats it through the public internet. Snapshots go to `dns-move/` (not in git).

@@ -2101,6 +2101,19 @@
      "slots": 6
     },
     {
+     "id": "web-dns",
+     "en": "Your domain's settings moved to Cloudflare",
+     "th": "ย้ายการตั้งค่าโดเมนไป Cloudflare",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "We move your domain's DNS (the settings that say where your website and email are) to a free Cloudflare account in your name. Before the switch, a check compares every email record on the old and new settings. Then your website opens with and without www, and you can cancel an old host you no longer use.",
+     "d_th": "ย้าย DNS ของโดเมน (การตั้งค่าที่บอกว่าเว็บและอีเมลอยู่ที่ไหน) ไปบัญชี Cloudflare ฟรีในชื่อของคุณ ก่อนสลับ เราตรวจระเบียนอีเมลทุกตัวว่าตรงกันทั้งที่เก่าและที่ใหม่ หลังจากนั้นเว็บเปิดได้ทั้งมีและไม่มี www และยกเลิกโฮสต์เก่าที่ไม่ได้ใช้แล้วได้",
+     "baht": 2000,
+     "floor": 1200,
+     "ceiling": 4000,
+     "slots": 8
+    },
+    {
      "id": "web-license",
      "kind": "web-license",
      "en": "A copy of a site for another city",

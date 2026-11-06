@@ -743,7 +743,7 @@
 "en": "Our team for one day, on a hard problem",
 "th": "ทีมหนึ่งวันกับโจทย์ยาก",
 "sub": "People bring a hard problem with many parts, and a crew of AI agents can work on the parts at the same time.",
-"price": "฿20,000",
+"price": "฿5,000",
 "stops": [
 "thinking",
 "clap",
@@ -1295,7 +1295,7 @@
 "en": "Grab, LINE MAN or ShopeeFood for your shop",
 "th": "Grab LINE MAN ShopeeFood สำหรับร้านของคุณ",
 "sub": "Shops list on delivery apps to sell to people who order food at home, and each app has its own sign-up, papers and review time.",
-"price": "from ฿1,500",
+"price": "from ฿1,000",
 "stops": [
 "scooter",
 "camera",
@@ -3219,6 +3219,29 @@
 "wrench",
 "bell",
 "save"
+]
+},
+{
+"id": "web-dns",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Move your domain's settings to Cloudflare",
+"th": "ย้ายการตั้งค่าโดเมนไป Cloudflare",
+"sub": "People move their domain's DNS to a free Cloudflare account, so the website opens with and without www and an old host can be cancelled.",
+"price": "฿2,000",
+"stops": [
+"laptop",
+"gears",
+"done"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"cloud",
+"key",
+"mailbox"
 ]
 },
 {

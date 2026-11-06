@@ -635,6 +635,20 @@ export const CARDS = {
    }
   ]
  },
+ "web-dns": {
+  "act": "buy",
+  "en": "Move your domain's settings to Cloudflare",
+  "opts": [
+   {
+    "id": "web-dns",
+    "price": {
+     "walk": true
+    },
+    "unit": false,
+    "max": 99
+   }
+  ]
+ },
  "web-license": {
   "act": "buy",
   "en": "Licence to use our website in your city",
