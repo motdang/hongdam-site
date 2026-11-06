@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/cloudflare-dns-scan-list-dkim-generated-names",
+  "kicker": "Hongdam Studio · Last mile · 7 November 2026",
+  "title": "What Cloudflare's DNS scan misses",
+  "th": "สแกนระเบียน DNS ของ Cloudflare ทำงานจากรายชื่อที่พบบ่อย ระเบียน DKIM ที่ชื่อถูกสร้างขึ้นจึงหลุดจากสแกน",
+  "sub": "Generated DKIM names, and a 92-query check",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "694816139b"
+ },
+ {
   "out": "og/studio/n/state-tracking-one-go-vs-written-steps",
   "kicker": "Hongdam Studio · AI models · 6 November 2026",
   "title": "32 changes: 0 of 10 in one go",
