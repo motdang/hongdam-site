@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/week-workers-ai-deprecations-node-gemini",
+  "kicker": "Hongdam Studio · Weekly summary · 8 November 2026",
+  "title": "The week: six notes, five dates",
+  "th": "สรุปสัปดาห์ 2 พฤศจิกายน: Workers AI เลิกให้บริการ 16 โมเดลวันที่ 20 พฤศจิกายน, Node.js ออกแพตช์ความปลอดภัย 11 พฤศจิกายน, Gemini 2.5 ถูกเปลี่ยนเส้นทางไปโมเดลอื่น",
+  "sub": "Workers AI 20 Nov · Node.js 11 Nov · Gemini 2.5 1 Dec",
+  "line": [
+   "typewriter",
+   "page",
+   "send"
+  ],
+  "hue": 322,
+  "hash": "3c6a179a44"
+ },
+ {
   "out": "og/studio/n/cloudflare-dns-scan-list-dkim-generated-names",
   "kicker": "Hongdam Studio · Last mile · 7 November 2026",
   "title": "What Cloudflare's DNS scan misses",
