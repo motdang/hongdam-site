@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/supabase-cli-v3-default-db-push-stops-in-ci",
+  "kicker": "Hongdam Studio · Last mile · 10 November 2026",
+  "title": "Supabase CLI v3: db push stops in CI",
+  "th": "Supabase CLI v3 เป็นค่าเริ่มต้นตั้งแต่ 2 พฤศจิกายน: db push ใน CI จะหยุดรอคำยืนยัน",
+  "sub": "Add --yes --remote, or pin v2.stable",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "666e39a5ac"
+ },
+ {
   "out": "og/studio/n/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured",
   "kicker": "Hongdam Studio · AI models · 9 November 2026",
   "title": "GLM-5.3 Flash's replacements, measured",
