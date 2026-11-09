@@ -1,0 +1,309 @@
+{
+ "id": "name-pick",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People look for a name for a baby, for themselves, for a shop or for a company. Sellers in Thailand work from the birth date and from numerology.",
+  "th": "คนหาชื่อให้ลูก ให้ตัวเอง ให้ร้าน หรือให้บริษัท ผู้ขายในไทยตั้งชื่อจากวันเกิดและหลักเลขศาสตร์",
+  "my": "လူတွေက ကလေး၊ မိမိကိုယ်တိုင်၊ ဆိုင် သို့မဟုတ် ကုမ္ပဏီအတွက် အမည်ရှာကြသည်။ ထိုင်းရှိ ရောင်းသူများက မွေးနေ့နှင့် ဂဏန်းဗေဒ (numerology) ကို အခြေခံ၍ အမည်ပေးကြသည်။",
+  "zh": "人们为婴儿、自己、店铺或公司找名字。泰国的卖家按生日和数字命理来取名。",
+  "de": "Man sucht einen Namen für ein Baby, für sich selbst, für ein Geschäft oder für eine Firma. Anbieter in Thailand arbeiten mit dem Geburtsdatum und mit Numerologie."
+ },
+ "n": {
+  "de": "Glückverheissender Name"
+ },
+ "l": {
+  "de": "Drei Namen mit ihrer Bedeutung, für eine Person oder ein Geschäft."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You say what the name is for: a baby, a name change, a shop or a company.",
+    "th": "คุณบอกว่าต้องการชื่อสำหรับอะไร ลูก การเปลี่ยนชื่อ ร้าน หรือบริษัท",
+    "my": "အမည်ကို ဘာအတွက် လိုသည်ကို သင်ပြောပြသည် - ကလေး၊ အမည်ပြောင်းခြင်း၊ ဆိုင် သို့မဟုတ် ကုမ္ပဏီ။",
+    "zh": "您说明名字用来做什么：婴儿、改名、店铺或公司。",
+    "de": "Sie sagen, wofür der Name gilt: ein Baby, eine Namensänderung, ein Geschäft oder eine Firma."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "After payment",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "We write three names.",
+    "th": "เขียนชื่อสามชื่อ",
+    "my": "အမည်သုံးခုကို ရေးပေးသည်။",
+    "zh": "写出三个名字。",
+    "de": "Wir schreiben drei Namen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "You get the three names with their meanings.",
+    "th": "คุณได้รับชื่อสามชื่อพร้อมความหมาย",
+    "my": "အမည်သုံးခုကို အဓိပ္ပာယ်နှင့်အတူ ရရှိသည်။",
+    "zh": "您收到三个名字和它们的含义。",
+    "de": "Sie erhalten die drei Namen mit ihren Bedeutungen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A person with Thai nationality has a given name and a surname, and may add a middle name. The Department of Provincial Administration says a given name may not match or look like a royal name or title, may not be a vulgar word or have a vulgar meaning, and may not be meant for fraud.",
+    "th": "คนสัญชาติไทยต้องมีชื่อตัวและชื่อสกุล และจะมีชื่อรองด้วยก็ได้ กรมการปกครองระบุว่าชื่อตัวต้องไม่พ้องหรือมุ่งหมายให้คล้ายพระปรมาภิไธย พระนามพระราชินี หรือราชทินนาม ต้องไม่เป็นคำหยาบหรือมีความหมายหยาบคาย และต้องไม่มีเจตนาในทางทุจริต",
+    "my": "ထိုင်းနိုင်ငံသားတစ်ဦးတွင် ကိုယ်ပိုင်အမည်နှင့် မျိုးရိုးအမည် ရှိရပြီး အလယ်အမည်လည်း ထည့်နိုင်သည်။ အုပ်ချုပ်ရေးဦးစီးဌာန (กรมการปกครอง) က ကိုယ်ပိုင်အမည်သည် ဘုရင်၏အမည်၊ ဘုရင်မ၏အမည် သို့မဟုတ် မင်းမျိုးမင်းနွယ်ဘွဲ့အမည်နှင့် တူခြင်း၊ ဆင်တူခြင်း မရှိရ၊ ရိုင်းစိုင်းသော စကားလုံး သို့မဟုတ် အဓိပ္ပာယ် မဖြစ်ရ၊ လိမ်လည်လိုသော ရည်ရွယ်ချက် မပါရဟု ဆိုသည်။",
+    "zh": "具泰国国籍的人有名和姓，也可以加中间名。内政部地方行政厅（กรมการปกครอง）规定，名不得与王室名号、王后名号或爵衔相同或相近，不得是粗俗的词或含粗俗的意思，也不得出于欺诈的目的。",
+    "de": "Eine Person mit thailändischer Staatsangehörigkeit hat einen Vornamen und einen Familiennamen und kann einen zweiten Namen hinzufügen. Die Provinzverwaltung (กรมการปกครอง) schreibt, ein Vorname dürfe nicht mit einem königlichen Namen oder Titel übereinstimmen oder ihm ähneln, kein vulgäres Wort sein oder eine vulgäre Bedeutung haben und nicht in betrügerischer Absicht gewählt werden."
+   },
+   "src": "https://stat.bora.dopa.go.th/callcenter1548/name1.htm"
+  },
+  {
+   "t": {
+    "en": "To change a given name, a person with Thai nationality files form ช.1 with the local registrar where the name is on the house registration. The registrar checks the request and issues a certificate of the change (form ช.3). The person then takes it to correct the house registration and asks for a new ID card.",
+    "th": "คนสัญชาติไทยที่ขอเปลี่ยนชื่อตัวยื่นคำขอแบบ ช.1 ต่อนายทะเบียนท้องที่ที่ตนมีชื่ออยู่ในทะเบียนบ้าน นายทะเบียนตรวจคำขอแล้วออกหนังสือสำคัญแสดงการเปลี่ยนชื่อตัว (แบบ ช.3) จากนั้นนำไปแก้ไขทะเบียนบ้านและขอเปลี่ยนบัตรประจำตัวประชาชน",
+    "my": "ကိုယ်ပိုင်အမည် ပြောင်းလိုသော ထိုင်းနိုင်ငံသားသည် မိမိအမည်ပါရှိသည့် အိမ်ထောင်စုစာရင်းရှိ ဒေသဆိုင်ရာ မှတ်ပုံတင်အရာရှိထံ ပုံစံ ช.1 ကို တင်သည်။ အရာရှိက တောင်းဆိုချက်ကို စစ်ဆေးပြီး အမည်ပြောင်းလဲမှု အထောက်အထား (ပုံစံ ช.3) ထုတ်ပေးသည်။ ထို့နောက် အိမ်ထောင်စုစာရင်းကို ပြင်ရန်နှင့် မှတ်ပုံတင်ကတ်အသစ် တောင်းရန် ထိုစာရွက်ကို ယူသွားသည်။",
+    "zh": "具泰国国籍的人要改名，须向户籍所在地的登记官提交 ช.1 表格。登记官审核后签发改名证书（ช.3 表格）。当事人再拿证书去更正户口簿，并申请新的身份证。",
+    "de": "Wer die thailändische Staatsangehörigkeit hat und einen Vornamen ändern will, reicht das Formular ช.1 beim örtlichen Registerbeamten ein, bei dem der Name im Haushaltsregister steht. Der Beamte prüft den Antrag und stellt eine Bescheinigung über die Änderung aus (Formular ช.3). Damit berichtigt die Person das Haushaltsregister und beantragt eine neue Identitätskarte."
+   },
+   "src": "https://stat.bora.dopa.go.th/callcenter1548/name1.htm"
+  },
+  {
+   "t": {
+    "en": "A new surname has no more than 10 consonants. It may not repeat a surname already registered, and it may not have a vulgar word or meaning.",
+    "th": "ชื่อสกุลใหม่ต้องมีพยัญชนะไม่เกิน 10 ตัว ต้องไม่ซ้ำกับชื่อสกุลที่จดทะเบียนไว้แล้ว และต้องไม่มีคำหรือความหมายหยาบคาย",
+    "my": "မျိုးရိုးအမည်အသစ်တွင် ဗျည်း 10 လုံးထက် မပိုရ။ မှတ်ပုံတင်ပြီးသား မျိုးရိုးအမည်နှင့် မတူရ၊ ရိုင်းစိုင်းသော စကားလုံး သို့မဟုတ် အဓိပ္ပာယ် မပါရ။",
+    "zh": "新姓氏的辅音不得超过 10 个，不得与已登记的姓氏重复，也不得含有粗俗的词或含义。",
+    "de": "Ein neuer Familienname hat höchstens 10 Konsonanten. Er darf keinen bereits eingetragenen Familiennamen wiederholen und kein vulgäres Wort und keine vulgäre Bedeutung haben."
+   },
+   "src": "https://stat.bora.dopa.go.th/callcenter1548/name1.htm"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller of names asks for the current name and the birth day, month and year. The seller reads names by numerology (เลขศาสตร์) and gives the correct English spelling and a time for the change.",
+    "th": "ผู้ขายบริการตั้งชื่อบน Fastwork ขอชื่อ-นามสกุลปัจจุบันและวัน เดือน ปีเกิด ตั้งชื่อตามหลักเลขศาสตร์ และให้การสะกดภาษาอังกฤษที่ถูกต้องกับฤกษ์เปลี่ยนชื่อ",
+    "my": "Fastwork ရှိ အမည်ပေးရောင်းသူတစ်ဦးက လက်ရှိအမည်နှင့် မွေးသက္ကရာဇ် (ရက်၊ လ၊ နှစ်) ကို တောင်းသည်။ ဂဏန်းဗေဒ (เลขศาสตร์) ဖြင့် အမည်ကို ဖတ်ပြီး မှန်ကန်သော အင်္ဂလိပ်စာလုံးပေါင်းနှင့် အမည်ပြောင်းရန် အချိန်ကို ပေးသည်။",
+    "zh": "Fastwork 上的一位起名卖家要求提供现用姓名和出生的日、月、年。卖家用数字命理（เลขศาสตร์）看名字，并给出正确的英文拼写和改名时机。",
+    "de": "Ein Namensanbieter auf Fastwork fragt nach dem heutigen Namen und nach Geburtstag, -monat und -jahr. Er liest Namen nach Numerologie (เลขศาสตร์) und gibt die richtige englische Schreibweise und einen Zeitpunkt für die Änderung."
+   },
+   "src": "https://fastwork.co/user/thepatriix/auspicious-name-34857291"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: 3 names for a person, with meanings and English spelling, in 2 days",
+    "th": "ผู้ขายบน Fastwork: ชื่อ 3 ชื่อสำหรับบุคคล พร้อมความหมายและการสะกดภาษาอังกฤษ ภายใน 2 วัน",
+    "my": "Fastwork ရောင်းသူ - လူတစ်ဦးအတွက် အမည် 3 ခု၊ အဓိပ္ပာယ်နှင့် အင်္ဂလိပ်စာလုံးပေါင်းပါ၊ 2 ရက်အတွင်း",
+    "zh": "Fastwork 卖家：为个人起 3 个名字，附含义和英文拼写，2 天交付",
+    "de": "Anbieter auf Fastwork: 3 Namen für eine Person, mit Bedeutung und englischer Schreibweise, in 2 Tagen"
+   },
+   "p": {
+    "en": "฿599–999",
+    "th": "฿599–999",
+    "my": "฿599–999",
+    "zh": "฿599–999",
+    "de": "฿599–999"
+   },
+   "src": "https://fastwork.co/user/thepatriix/auspicious-name-34857291"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: 3 company or business names, with a time to register, in 3 days",
+    "th": "ผู้ขายบน Fastwork: ชื่อบริษัทหรือธุรกิจ 3 ชื่อ พร้อมฤกษ์จดทะเบียน ภายใน 3 วัน",
+    "my": "Fastwork ရောင်းသူ - ကုမ္ပဏီ သို့မဟုတ် စီးပွားရေးအမည် 3 ခု၊ မှတ်ပုံတင်ရန် အချိန်ပါ၊ 3 ရက်အတွင်း",
+    "zh": "Fastwork 卖家：公司或商号名 3 个，附注册时机，3 天交付",
+    "de": "Anbieter auf Fastwork: 3 Firmen- oder Geschäftsnamen, mit einem Zeitpunkt für die Eintragung, in 3 Tagen"
+   },
+   "p": {
+    "en": "฿999",
+    "th": "฿999",
+    "my": "฿999",
+    "zh": "฿999",
+    "de": "฿999"
+   },
+   "src": "https://fastwork.co/user/thepatriix/auspicious-name-34857291"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: 2 names for a company, shop or brand, with meanings, in 1 day",
+    "th": "ผู้ขายบน Fastwork: ชื่อ 2 ชื่อสำหรับบริษัท ร้าน หรือแบรนด์ พร้อมความหมาย ภายใน 1 วัน",
+    "my": "Fastwork ရောင်းသူ - ကုမ္ပဏီ၊ ဆိုင် သို့မဟုတ် ကုန်အမှတ်တံဆိပ်အတွက် အမည် 2 ခု၊ အဓိပ္ပာယ်ပါ၊ 1 ရက်အတွင်း",
+    "zh": "Fastwork 卖家：为公司、店铺或品牌起 2 个名字，附含义，1 天交付",
+    "de": "Anbieter auf Fastwork: 2 Namen für eine Firma, ein Geschäft oder eine Marke, mit Bedeutung, in 1 Tag"
+   },
+   "p": {
+    "en": "฿1,000",
+    "th": "฿1,000",
+    "my": "฿1,000",
+    "zh": "฿1,000",
+    "de": "฿1,000"
+   },
+   "src": "https://fastwork.co/user/angoon/auspicious-name-43164446"
+  },
+  {
+   "t": {
+    "en": "District office: certificate of a given-name change (form ช.3)",
+    "th": "ที่ว่าการอำเภอหรือสำนักงานเขต: หนังสือสำคัญแสดงการเปลี่ยนชื่อตัว (แบบ ช.3)",
+    "my": "ခရိုင်ရုံး - ကိုယ်ပိုင်အမည်ပြောင်းလဲမှု အထောက်အထား (ပုံစံ ช.3)",
+    "zh": "县或区办事处：改名证书（ช.3 表格）",
+    "de": "Bezirksamt: Bescheinigung über eine Vornamensänderung (Formular ช.3)"
+   },
+   "p": {
+    "en": "฿50",
+    "th": "฿50",
+    "my": "฿50",
+    "zh": "฿50",
+    "de": "฿50"
+   },
+   "src": "https://stat.bora.dopa.go.th/callcenter1548/name1.htm"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Where do I get a new ID card after a name change?",
+    "th": "เปลี่ยนชื่อแล้วขอบัตรประชาชนใหม่ได้ที่ไหน",
+    "my": "အမည်ပြောင်းပြီးနောက် မှတ်ပုံတင်ကတ်အသစ်ကို ဘယ်မှာ တောင်းရသလဲ။",
+    "zh": "改名后在哪里办新身份证？",
+    "de": "Wo bekomme ich nach einer Namensänderung eine neue Identitätskarte?"
+   },
+   "a": {
+    "en": "The government service page lists district offices, municipal offices, mobile card units and Thai embassies and consulates. The fee is ฿100. The page lists no online channel.",
+    "th": "หน้าบริการของรัฐระบุที่ว่าการอำเภอ เทศบาล หน่วยบัตรเคลื่อนที่ และสถานทูตหรือสถานกงสุลไทย ค่าธรรมเนียม ฿100 และไม่มีช่องทางออนไลน์",
+    "my": "အစိုးရဝန်ဆောင်မှုစာမျက်နှာတွင် ခရိုင်ရုံးများ၊ မြူနီစီပါယ်ရုံးများ၊ လှည့်လည်ကတ်ဌာနများနှင့် ထိုင်းသံရုံးများ၊ ကောင်စစ်ဝန်ရုံးများကို ဖော်ပြထားသည်။ ကြေး ฿100 ဖြစ်သည်။ အွန်လိုင်းလမ်းကြောင်း မဖော်ပြထားပါ။",
+    "zh": "政府服务页面列出县政府办事处、市政厅、流动办证单位，以及泰国大使馆和领事馆。费用为 ฿100，页面没有列出网上渠道。",
+    "de": "Die Seite des Staates nennt Bezirksämter, Gemeindeämter, mobile Ausweisstellen sowie thailändische Botschaften und Konsulate. Die Gebühr beträgt ฿100. Einen Online-Weg nennt die Seite nicht."
+   },
+   "src": "https://info.go.th/procedure/94e56d28-4cac-49ca-a0be-f788a5ccb716/view?lat=&lng="
+  },
+  {
+   "q": {
+    "en": "What does the district office charge for a name change?",
+    "th": "ที่ว่าการอำเภอคิดค่าธรรมเนียมเปลี่ยนชื่อเท่าไร",
+    "my": "ခရိုင်ရုံးက အမည်ပြောင်းခြင်းအတွက် ဘယ်လောက် ကောက်သလဲ။",
+    "zh": "县或区办事处改名收多少钱？",
+    "de": "Was verlangt das Bezirksamt für eine Namensänderung?"
+   },
+   "a": {
+    "en": "The Department of Provincial Administration's page lists ฿50 when the local registrar issues the certificate of a given-name change (form ช.3).",
+    "th": "หน้าของกรมการปกครองระบุค่าธรรมเนียม ฿50 เมื่อนายทะเบียนท้องที่ออกหนังสือสำคัญแสดงการเปลี่ยนชื่อตัว (แบบ ช.3)",
+    "my": "အုပ်ချုပ်ရေးဦးစီးဌာန၏ စာမျက်နှာတွင် ဒေသဆိုင်ရာ မှတ်ပုံတင်အရာရှိက ကိုယ်ပိုင်အမည်ပြောင်းလဲမှု အထောက်အထား (ပုံစံ ช.3) ထုတ်ပေးသောအခါ ฿50 ကောက်ကြောင်း ဖော်ပြထားသည်။",
+    "zh": "地方行政厅的页面写明，当地登记官签发改名证书（ช.3 表格）时收取 ฿50。",
+    "de": "Auf der Seite der Provinzverwaltung steht: ฿50, wenn der örtliche Registerbeamte die Bescheinigung über die Änderung eines Vornamens (Formular ช.3) ausstellt."
+   },
+   "src": "https://stat.bora.dopa.go.th/callcenter1548/name1.htm"
+  },
+  {
+   "q": {
+    "en": "What does a seller give for a person's name?",
+    "th": "ผู้ขายให้อะไรบ้างสำหรับการตั้งชื่อบุคคล",
+    "my": "လူတစ်ဦး၏ အမည်အတွက် ရောင်းသူက ဘာပေးသလဲ။",
+    "zh": "卖家为个人起名会提供什么？",
+    "de": "Was liefert ein Anbieter für den Namen einer Person?"
+   },
+   "a": {
+    "en": "One Fastwork seller gives 3 name options, their meanings, the correct English spelling, a name analysis and a time for the change. It costs ฿599 for a given name, ฿799 for a surname and ฿999 for both, ready in 2 days with 1 revision.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ให้ชื่อ 3 ชื่อ ความหมาย การสะกดภาษาอังกฤษที่ถูกต้อง การวิเคราะห์ชื่อ และฤกษ์เปลี่ยนชื่อ ราคา ฿599 สำหรับชื่อตัว ฿799 สำหรับนามสกุล และ ฿999 สำหรับทั้งสอง ส่งภายใน 2 วัน แก้ไขได้ 1 ครั้ง",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက အမည် 3 ခု၊ ၎င်းတို့၏ အဓိပ္ပာယ်၊ မှန်ကန်သော အင်္ဂလိပ်စာလုံးပေါင်း၊ အမည်ခွဲခြမ်းစိတ်ဖြာချက်နှင့် အမည်ပြောင်းရန် အချိန်ကို ပေးသည်။ ကိုယ်ပိုင်အမည် ฿599၊ မျိုးရိုးအမည် ฿799၊ နှစ်ခုလုံး ฿999 ဖြစ်ပြီး 2 ရက်အတွင်း ရကာ ပြင်ဆင်မှု 1 ကြိမ် ပါသည်။",
+    "zh": "Fastwork 上一位卖家提供 3 个名字、含义、正确的英文拼写、名字分析和改名时机。名为 ฿599，姓为 ฿799，姓名一起 ฿999，2 天交付，可修改 1 次。",
+    "de": "Ein Anbieter auf Fastwork liefert 3 Namensvorschläge, ihre Bedeutungen, die richtige englische Schreibweise, eine Namensanalyse und einen Zeitpunkt für die Änderung. Das kostet ฿599 für einen Vornamen, ฿799 für einen Familiennamen und ฿999 für beide, in 2 Tagen und mit 1 Überarbeitung."
+   },
+   "src": "https://fastwork.co/user/thepatriix/auspicious-name-34857291"
+  },
+  {
+   "q": {
+    "en": "What does a seller give for a company name?",
+    "th": "ผู้ขายให้อะไรบ้างสำหรับการตั้งชื่อบริษัท",
+    "my": "ကုမ္ပဏီအမည်အတွက် ရောင်းသူက ဘာပေးသလဲ။",
+    "zh": "卖家为公司起名会提供什么？",
+    "de": "Was liefert ein Anbieter für den Namen einer Firma?"
+   },
+   "a": {
+    "en": "The same seller gives 3 company name options, the correct English spelling, a name analysis and a time to register the company, for ฿999 in 3 days with 1 revision.",
+    "th": "ผู้ขายรายเดียวกันให้ชื่อบริษัท 3 ชื่อ การสะกดภาษาอังกฤษที่ถูกต้อง การวิเคราะห์ชื่อ และฤกษ์จดทะเบียนบริษัท ราคา ฿999 ส่งภายใน 3 วัน แก้ไขได้ 1 ครั้ง",
+    "my": "ထိုရောင်းသူကပင် ကုမ္ပဏီအမည် 3 ခု၊ မှန်ကန်သော အင်္ဂလိပ်စာလုံးပေါင်း၊ အမည်ခွဲခြမ်းစိတ်ဖြာချက်နှင့် ကုမ္ပဏီမှတ်ပုံတင်ရန် အချိန်ကို ฿999 ဖြင့် 3 ရက်အတွင်း ပေးသည်။ ပြင်ဆင်မှု 1 ကြိမ် ပါသည်။",
+    "zh": "同一位卖家提供 3 个公司名、正确的英文拼写、名字分析和公司注册时机，价格 ฿999，3 天交付，可修改 1 次。",
+    "de": "Derselbe Anbieter liefert 3 Firmennamen, die richtige englische Schreibweise, eine Namensanalyse und einen Zeitpunkt für die Eintragung der Firma, für ฿999 in 3 Tagen und mit 1 Überarbeitung."
+   },
+   "src": "https://fastwork.co/user/thepatriix/auspicious-name-34857291"
+  }
+ ],
+ "related": [
+  "date-pick",
+  "lucky-number",
+  "pha-yant",
+  "romanise",
+  "tap-card",
+  "graphics"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Provincial Administration: changing a given name or a surname",
+    "th": "กรมการปกครอง: การเปลี่ยนชื่อตัวและการจดทะเบียนชื่อสกุล",
+    "my": "အုပ်ချုပ်ရေးဦးစီးဌာန - ကိုယ်ပိုင်အမည် သို့မဟုတ် မျိုးရိုးအမည် ပြောင်းလဲခြင်း",
+    "zh": "地方行政厅：更改名或姓",
+    "de": "Provinzverwaltung: einen Vornamen oder Familiennamen ändern"
+   },
+   "href": "https://stat.bora.dopa.go.th/callcenter1548/name1.htm"
+  },
+  {
+   "t": {
+    "en": "Government service page: a new ID card after a name change",
+    "th": "หน้าบริการของรัฐ: การขอเปลี่ยนบัตรประชาชนเมื่อเปลี่ยนชื่อ",
+    "my": "အစိုးရဝန်ဆောင်မှုစာမျက်နှာ - အမည်ပြောင်းပြီးနောက် မှတ်ပုံတင်ကတ်အသစ်",
+    "zh": "政府服务页面：改名后换领身份证",
+    "de": "Seite des Staates: neue Identitätskarte nach einer Namensänderung"
+   },
+   "href": "https://info.go.th/procedure/94e56d28-4cac-49ca-a0be-f788a5ccb716/view?lat=&lng="
+  }
+ ],
+ "glyphs": [
+  "nib",
+  "star",
+  "lotus"
+ ]
+}

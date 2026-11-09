@@ -1,6 +1,6 @@
-# Hongdam welcomes crawlers — people, search engines, and AI systems alike.
-# Nothing here is paywalled or cloaked; what a visitor sees, a robot sees.
-# A plain-language summary for AI systems lives at /llms.txt
+# hongdam.net — Hongdam หงส์ดำ, services from Chiang Rai, in English, Thai, Burmese and Chinese.
+# Every user agent below may read every path. A summary for AI systems: https://hongdam.net/llms.txt
+# The sitemap lists each page with its other languages.
 
 User-agent: *
 Allow: /

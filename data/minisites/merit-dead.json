@@ -1,0 +1,299 @@
+{
+ "id": "merit-dead",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People make merit for someone who has died on the 7th, 50th and 100th days, with monks invited to chant and eat.",
+  "th": "คนทำบุญอุทิศให้ผู้ล่วงลับในวันที่ 7 วันที่ 50 และวันที่ 100 โดยนิมนต์พระมาสวดมนต์และฉันภัตตาหาร",
+  "my": "လူများသည် ကွယ်လွန်သူအတွက် 7 ရက်၊ 50 ရက်နှင့် 100 ရက်မြောက်နေ့များတွင် ကုသိုလ်ပြုကြပြီး ဘုန်းကြီးများကို ပင့်ဆောင်၍ ပရိတ်ရွတ်စေကာ ဆွမ်းကပ်ကြသည်။",
+  "zh": "亲人去世后，人们会在第 7 天、第 50 天和第 100 天为亡者做功德，请僧人来诵经、用斋。",
+  "de": "Man macht für einen Verstorbenen am 7., 50. und 100. Tag Verdienst. Mönche werden eingeladen, zu rezitieren und zu essen."
+ },
+ "n": {
+  "de": "Verdienst für einen Verstorbenen"
+ },
+ "l": {
+  "de": "Am 7., 50. oder 100. Tag: Mönche eingeladen, Fotos geschickt."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "You choose the 7th, 50th or 100th day.",
+    "th": "คุณเลือกวันที่ 7 วันที่ 50 หรือวันที่ 100",
+    "my": "7 ရက်၊ 50 ရက် သို့မဟုတ် 100 ရက်မြောက်နေ့ကို သင်ရွေးချယ်သည်။",
+    "zh": "您选定第 7 天、第 50 天或第 100 天。",
+    "de": "Sie wählen den 7., 50. oder 100. Tag."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲနေ့မတိုင်မီ",
+    "zh": "活动日之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "wai",
+   "t": {
+    "en": "We invite the monks.",
+    "th": "นิมนต์พระมาร่วมพิธี",
+    "my": "ဘုန်းကြီးများကို ပင့်ဆောင်သည်။",
+    "zh": "邀请僧人。",
+    "de": "Wir laden die Mönche ein."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "ပွဲနေ့မတိုင်မီ",
+    "zh": "活动日之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "lotus",
+   "t": {
+    "en": "We arrange the rite. The monks' food and the money envelopes for the monks are paid at cost.",
+    "th": "จัดพิธี ค่าอาหารพระและซองปัจจัยถวายพระคิดตามจริง",
+    "my": "ပွဲကို စီစဉ်ပေးသည်။ ဘုန်းကြီးများ၏ ဆွမ်းနှင့် လှူဒါန်းငွေထည့်သော အိတ်များကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "安排仪式。僧人的斋饭和供养金信封按实际费用计。",
+    "de": "Wir richten die Zeremonie aus. Das Essen für die Mönche und die Geldumschläge für die Mönche werden zum Selbstkostenpreis berechnet."
+   },
+   "who": {
+    "en": "Hongdam and the monks",
+    "th": "หงส์ดำและพระสงฆ์",
+    "my": "ဟုန်ဒမ်နှင့် ဘုန်းကြီးများ",
+    "zh": "鸿丹和僧人",
+    "de": "Hongdam und die Mönche"
+   },
+   "time": {
+    "en": "On the day",
+    "th": "ในวันงาน",
+    "my": "ပွဲနေ့တွင်",
+    "zh": "当天",
+    "de": "Am Tag"
+   }
+  },
+  {
+   "db": "camera",
+   "t": {
+    "en": "We send you photos.",
+    "th": "ส่งรูปให้คุณ",
+    "my": "သင့်ထံ ဓာတ်ပုံများ ပို့ပေးသည်။",
+    "zh": "把照片发给您。",
+    "de": "Wir schicken Ihnen Fotos."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the rite",
+    "th": "หลังพิธี",
+    "my": "ပွဲပြီးနောက်",
+    "zh": "仪式之后",
+    "de": "Nach der Zeremonie"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Merit on the 7th, 50th and 100th days can fit into one day: the host invites 5, 7 or 9 monks to chant, then serves breakfast or lunch the same day. It can also take two days, with chanting in the evening and a meal the next day.",
+    "th": "การทำบุญ 7 วัน 50 วัน และ 100 วัน ทำในวันเดียวได้ เจ้าภาพนิมนต์พระ 5 รูป 7 รูป หรือ 9 รูปมาสวดมนต์ แล้วถวายอาหารเช้าหรือเพลในวันนั้น หรือจัดเป็นสองวัน โดยสวดมนต์ตอนเย็นและถวายอาหารในวันรุ่งขึ้น",
+    "my": "7 ရက်၊ 50 ရက်နှင့် 100 ရက်မြောက်နေ့ ကုသိုလ်ကို တစ်ရက်တည်းဖြင့် ပြုလုပ်နိုင်သည်။ အလှူရှင်က ဘုန်းကြီး 5၊ 7 သို့မဟုတ် 9 ပါးကို ပင့်ဆောင်၍ ပရိတ်ရွတ်စေပြီး ထိုနေ့တွင်ပင် နံနက်စာ သို့မဟုတ် နေ့လည်စာ ကပ်လှူသည်။ နှစ်ရက်ဖြင့်လည်း ပြုလုပ်နိုင်ပြီး ညနေတွင် ပရိတ်ရွတ်ကာ နောက်တစ်နေ့တွင် ဆွမ်းကပ်သည်။",
+    "zh": "第 7、50、100 天的功德法会可以一天办完：主家请 5、7 或 9 位僧人诵经，当天供应早斋或午斋。也可以分两天，第一天晚上诵经，第二天供斋。",
+    "de": "Die Feier am 7., 50. oder 100. Tag kann an einem Tag stattfinden: Der Gastgeber lädt 5, 7 oder 9 Mönche zum Rezitieren ein und serviert am selben Tag Frühstück oder Mittagessen. Es kann auch zwei Tage dauern: am Abend Rezitation, am nächsten Tag das Essen."
+   },
+   "src": "https://thailandfoundation.or.th/thai-funeral/"
+  },
+  {
+   "t": {
+    "en": "The family of the person who died decides whether to invite guests to the ceremony on these days.",
+    "th": "ครอบครัวของผู้ล่วงลับเป็นผู้ตัดสินใจว่าจะเชิญแขกมาร่วมพิธีในวันเหล่านี้หรือไม่",
+    "my": "ကွယ်လွန်သူ၏ မိသားစုက ထိုနေ့များ၏ အခမ်းအနားသို့ ဧည့်သည်များကို ဖိတ်မည် မဖိတ်မည်ကို ဆုံးဖြတ်သည်။",
+    "zh": "这几天的仪式是否邀请宾客，由亡者家属决定。",
+    "de": "Die Familie des Verstorbenen entscheidet, ob sie zur Feier an diesen Tagen Gäste einlädt."
+   },
+   "src": "https://thailandfoundation.or.th/thai-funeral/"
+  },
+  {
+   "t": {
+    "en": "Thai gives each day a name: สัตมวาร for the 7th, ปัญญาสมวาร for the 50th and ศตมวาร for the 100th. Merit is made and dedicated to the person who died, and monks are invited to chant and to eat the midday meal.",
+    "th": "แต่ละวันมีชื่อเรียก คือ สัตมวาร สำหรับวันที่ 7 ปัญญาสมวาร สำหรับวันที่ 50 และศตมวาร สำหรับวันที่ 100 ทำบุญอุทิศให้ผู้ล่วงลับ และอาราธนาพระให้สวดพระพุทธมนต์และฉันภัตตาหารเพล",
+    "my": "ထိုင်းဘာသာတွင် နေ့တစ်ခုစီ၏ အမည်ရှိသည်။ 7 ရက်မြောက်နေ့ကို สัตมวาร၊ 50 ရက်မြောက်နေ့ကို ปัญญาสมวาร၊ 100 ရက်မြောက်နေ့ကို ศตมวาร ဟု ခေါ်သည်။ ကုသိုလ်ပြု၍ ကွယ်လွန်သူထံ အမျှဝေပြီး ဘုန်းကြီးများကို ပင့်ကာ ပရိတ်ရွတ်စေပြီး နေ့လည်ဆွမ်း ကပ်သည်။",
+    "zh": "这三天各有名称：第 7 天叫 สัตมวาร，第 50 天叫 ปัญญาสมวาร，第 100 天叫 ศตมวาร。人们做功德并回向给亡者，请僧人诵经、用午斋。",
+    "de": "Auf Thai hat jeder Tag einen Namen: สัตมวาร für den 7., ปัญญาสมวาร für den 50. und ศตมวาร für den 100. Tag. Man macht Verdienst und widmet ihn dem Verstorbenen; Mönche werden eingeladen, zu rezitieren und die Mittagsmahlzeit zu essen."
+   },
+   "src": "https://www.trueplookpanya.com/dhamma/content/55440"
+  },
+  {
+   "t": {
+    "en": "Merit for the dead is made on the 7th, 50th and 100th days.",
+    "th": "ทำบุญอุทิศให้ผู้ล่วงลับในวันที่ 7 50 และ 100",
+    "my": "ကွယ်လွန်သူအတွက် ကုသိုလ်ကို 7၊ 50 နှင့် 100 ရက်မြောက်နေ့တွင် ပြုသည်။",
+    "zh": "为亡者做功德在第 7、50、100 天。",
+    "de": "Verdienst für Verstorbene wird am 7., 50. und 100. Tag erworben."
+   },
+   "src": "https://so06.tci-thaijo.org/index.php/JSC/article/view/278156"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Sangkhathan set (a set of everyday goods offered to monks), per set",
+    "th": "ชุดสังฆทาน (ชุดของใช้ที่ถวายพระ) ต่อชุด",
+    "my": "သင်္ဃဒါန် အစုံ (ဘုန်းကြီးများကို လှူသော နေ့စဉ်သုံးပစ္စည်းအစုံ)၊ တစ်စုံလျှင်",
+    "zh": "僧伽布施套装（供养僧人的日用品一套），每套",
+    "de": "Sangkhathan-Set (Alltagsgüter, die Mönchen dargebracht werden), pro Set"
+   },
+   "p": {
+    "en": "฿40–4,500",
+    "th": "฿40–4,500",
+    "my": "฿40–4,500",
+    "zh": "฿40–4,500",
+    "de": "฿40–4,500"
+   },
+   "src": "https://www.thairath.co.th/news/governmentpolicy/2948411"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "From which day do you count the 100 days?",
+    "th": "นับ 100 วันจากวันไหน",
+    "my": "100 ရက်ကို မည်သည့်နေ့မှ စတင်ရေတွက်ရသလဲ။",
+    "zh": "100 天从哪一天算起？",
+    "de": "Ab welchem Tag zählt man die 100 Tage?"
+   },
+   "a": {
+    "en": "KTC's page on the 100th-day merit counts the day of death as day 1. The merit falls on day 100.",
+    "th": "หน้าความรู้เรื่องทำบุญ 100 วันของ KTC นับวันที่เสียชีวิตเป็นวันที่ 1 และทำบุญในวันที่ 100",
+    "my": "KTC ၏ 100 ရက်မြောက်နေ့ ကုသိုလ်ဆိုင်ရာ စာမျက်နှာတွင် ကွယ်လွန်သည့်နေ့ကို ပထမနေ့အဖြစ် ရေတွက်သည်။ ကုသိုလ်ကို 100 ရက်မြောက်နေ့တွင် ပြုသည်။",
+    "zh": "KTC 关于百日功德的页面把去世当天算作第 1 天，功德在第 100 天举行。",
+    "de": "Die KTC-Seite zum Verdienst am 100. Tag zählt den Todestag als Tag 1. Der Verdienst fällt auf Tag 100."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/misc/100th-day-merit"
+  },
+  {
+   "q": {
+    "en": "How many monks are invited?",
+    "th": "นิมนต์พระกี่รูป",
+    "my": "ဘုန်းကြီး ဘယ်နှစ်ပါးကို ပင့်ကြသလဲ။",
+    "zh": "请几位僧人？",
+    "de": "Wie viele Mönche werden eingeladen?"
+   },
+   "a": {
+    "en": "The Thailand Foundation says the host invites 5, 7 or 9 monks. KTC's page says at least 5, in an odd number.",
+    "th": "Thailand Foundation ระบุว่าเจ้าภาพนิมนต์พระ 5 รูป 7 รูป หรือ 9 รูป ส่วนหน้าของ KTC ระบุว่าอย่างน้อย 5 รูป และเป็นเลขคี่",
+    "my": "Thailand Foundation က အလှူရှင်သည် ဘုန်းကြီး 5၊ 7 သို့မဟုတ် 9 ပါးကို ပင့်သည်ဟု ဖော်ပြသည်။ KTC ၏ စာမျက်နှာတွင် အနည်းဆုံး 5 ပါး၊ မကိန်း ဖြစ်ရမည်ဟု ဖော်ပြသည်။",
+    "zh": "Thailand Foundation 说主家请 5、7 或 9 位僧人。KTC 的页面说至少 5 位，并且是奇数。",
+    "de": "Die Thailand Foundation schreibt, der Gastgeber lade 5, 7 oder 9 Mönche ein. Die KTC-Seite nennt mindestens 5, in ungerader Zahl."
+   },
+   "src": "https://thailandfoundation.or.th/thai-funeral/"
+  },
+  {
+   "q": {
+    "en": "What is prepared for the 100th day?",
+    "th": "ทำบุญ 100 วันต้องเตรียมอะไรบ้าง",
+    "my": "100 ရက်မြောက်နေ့အတွက် ဘာတွေ ပြင်ဆင်ရသလဲ။",
+    "zh": "百日功德要准备什么？",
+    "de": "Was wird für den 100. Tag vorbereitet?"
+   },
+   "a": {
+    "en": "KTC's page lists a sangkhathan set (a set of everyday goods offered to monks), flowers, incense and candles, sacred string, a vessel for pouring water, food for the monks, rice for the Buddha, rice for the person who died, and a photo or the ashes. It says a temple can lend many of these items.",
+    "th": "หน้าของ KTC ระบุว่าเตรียมชุดสังฆทาน (ชุดของใช้ที่ถวายพระ) ดอกไม้ ธูปเทียน สายสิญจน์ ที่กรวดน้ำ อาหารสำหรับพระ ข้าวสำหรับถวายพระพุทธ ข้าวสำหรับผู้ล่วงลับ และรูปถ่ายหรืออัฐิ วัดสามารถให้ยืมของเหล่านี้ได้หลายอย่าง",
+    "my": "KTC ၏ စာမျက်နှာတွင် သင်္ဃဒါန် အစုံ (ဘုန်းကြီးများကို လှူသော နေ့စဉ်သုံးပစ္စည်းအစုံ)၊ ပန်း၊ ဒီပါနှင့် ဖယောင်းတိုင်၊ ကုသိုလ်ကြိုး၊ ရေလောင်းရန် ခွက်၊ ဘုန်းကြီးများအတွက် ဆွမ်း၊ ဘုရားအတွက် ထမင်း၊ ကွယ်လွန်သူအတွက် ထမင်းနှင့် ဓာတ်ပုံ သို့မဟုတ် အရိုးပြာတို့ကို ဖော်ပြသည်။ ဘုန်းကြီးကျောင်းက ဤပစ္စည်းများစွာကို ငှားပေးနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "KTC 的页面列出：僧伽布施套装（供养僧人的日用品一套）、鲜花、香和蜡烛、圣线、浇水用的器皿、供僧的食物、供佛的饭、给亡者的饭，以及照片或骨灰。页面说寺庙可以借出其中许多物品。",
+    "de": "Die KTC-Seite nennt ein Sangkhathan-Set (Alltagsgüter, die Mönchen dargebracht werden), Blumen, Räucherstäbchen und Kerzen, geweihten Faden, ein Gefäss zum Wasserausgiessen, Essen für die Mönche, Reis für den Buddha, Reis für den Verstorbenen sowie ein Foto oder die Asche. Ein Tempel kann viele dieser Dinge ausleihen."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/misc/100th-day-merit"
+  },
+  {
+   "q": {
+    "en": "Can the merit be made before or after day 100?",
+    "th": "ทำบุญ 100 วันก่อนหรือหลังวันครบได้ไหม",
+    "my": "100 ရက်မြောက်နေ့ မတိုင်မီ သို့မဟုတ် ကျော်လွန်၍ ကုသိုလ်ပြုနိုင်သလား။",
+    "zh": "百日功德可以提前或推后吗？",
+    "de": "Kann der Verdienst vor oder nach Tag 100 erworben werden?"
+   },
+   "a": {
+    "en": "KTC's page says the merit falls on day 100, with no day earlier and none later. It gives a belief about the person who died as the reason.",
+    "th": "หน้าของ KTC ระบุว่าทำบุญในวันที่ 100 ห้ามขาดและห้ามเกิน โดยอ้างความเชื่อเกี่ยวกับผู้ล่วงลับเป็นเหตุผล",
+    "my": "KTC ၏ စာမျက်နှာတွင် ကုသိုလ်ကို 100 ရက်မြောက်နေ့တွင် ပြုရမည်ဟုဆိုပြီး ယင်းထက် စောခြင်း၊ နောက်ကျခြင်း မဖြစ်ရဟု ဖော်ပြသည်။ အကြောင်းရင်းအဖြစ် ကွယ်လွန်သူနှင့်ဆိုင်သော ယုံကြည်မှုတစ်ခုကို ပြောထားသည်။",
+    "zh": "KTC 的页面说功德要在第 100 天做，不早也不晚，理由是一种关于亡者的信仰。",
+    "de": "Die KTC-Seite sagt, der Verdienst falle auf Tag 100, nicht früher und nicht später. Als Grund nennt sie einen Glauben über den Verstorbenen."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/misc/100th-day-merit"
+  },
+  {
+   "q": {
+    "en": "What colour do people wear?",
+    "th": "ใส่เสื้อสีอะไรไปทำบุญ 100 วัน",
+    "my": "ဘာအရောင် ဝတ်ကြသလဲ။",
+    "zh": "穿什么颜色的衣服？",
+    "de": "Welche Farbe trägt man?"
+   },
+   "a": {
+    "en": "KTC's page names muted colours such as cream, grey, dark navy or white. It says black or all white is not needed.",
+    "th": "หน้าของ KTC แนะนำสีสุภาพ เช่น ครีม เทา น้ำเงินเข้ม หรือขาว และระบุว่าไม่จำเป็นต้องใส่ชุดดำหรือขาวล้วน",
+    "my": "KTC ၏ စာမျက်နှာတွင် ခရင်မ်၊ မီးခိုး၊ အပြာရင့် သို့မဟုတ် အဖြူကဲ့သို့ ငြိမ်သက်သောအရောင်များကို ဖော်ပြသည်။ အနက် သို့မဟုတ် အဖြူရောင်သာ ဝတ်ရန် မလိုဟုလည်း ဆိုသည်။",
+    "zh": "KTC 的页面列出素雅的颜色，如米色、灰色、深蓝或白色，并说不一定要穿黑色或全白。",
+    "de": "Die KTC-Seite nennt gedeckte Farben wie Creme, Grau, Dunkelblau oder Weiss. Schwarz oder ganz in Weiss sei nicht nötig."
+   },
+   "src": "https://www.ktc.co.th/article/lifestyle/misc/100th-day-merit"
+  }
+ ],
+ "related": [
+  "merit-you",
+  "death-help",
+  "tribute",
+  "house-blessing",
+  "date-pick",
+  "spirit-house"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Foundation: Thai funerals, an overview guide",
+    "th": "Thailand Foundation: ภาพรวมงานศพไทย",
+    "my": "Thailand Foundation: ထိုင်းနာရေးအခမ်းအနားများ အကျဉ်းချုပ်လမ်းညွှန်",
+    "zh": "Thailand Foundation：泰国葬礼概览",
+    "de": "Thailand Foundation: Thailändische Trauerfeiern im Überblick"
+   },
+   "href": "https://thailandfoundation.or.th/thai-funeral/"
+  },
+  {
+   "t": {
+    "en": "KTC: before the 100th-day merit, what to prepare, what to wear, how to count",
+    "th": "KTC: ก่อนทำบุญ 100 วัน เตรียมอะไรบ้าง ใส่เสื้อสีอะไร นับจากวันไหน",
+    "my": "KTC: 100 ရက်မြောက်နေ့ ကုသိုလ်မပြုမီ ပြင်ဆင်ရန်၊ ဝတ်ရန်၊ ရက်ရေတွက်ပုံ",
+    "zh": "KTC：百日功德前要准备什么、穿什么、怎么算日子",
+    "de": "KTC: Vor dem Verdienst am 100. Tag – Vorbereitung, Kleidung, Zählweise"
+   },
+   "href": "https://www.ktc.co.th/article/lifestyle/misc/100th-day-merit"
+  }
+ ],
+ "glyphs": [
+  "lantern",
+  "wai",
+  "camera"
+ ]
+}

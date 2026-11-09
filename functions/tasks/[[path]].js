@@ -7,6 +7,7 @@
  *   /tasks/graph/          static, written by tools/build_tasks.py
  */
 import { TASK_CARDS } from '../_task_cards.js'
+import { LINKS, FRAME } from '../_frame.js'
 import {
   CAT, ROOTS, KIDS, ORGS, L, ORIGIN, LAYERS, layerOf, mix, baht, iso, rungOf, lineUrl, orgSays, shoup, catBaht,
   openTasks, answersFor, createTask, createAnswer, ownTask, ownerAct, readBody,
@@ -16,92 +17,27 @@ const e = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<'
 const BY = { robot: ['robot', 'บอท'], human: ['human', 'คน'], either: ['robot or human', 'บอทหรือคน'], both: ['robot or human', 'บอทหรือคน'] }
 const day = (s) => new Date(s).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'Asia/Bangkok' })
 
-const CSS = `
-.sub{display:block;font-family:"Thonburi","Noto Sans Thai",sans-serif;font-size:.42em;color:var(--gold-deep);font-weight:500;margin-top:8px}
-.go{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 22px}
-.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold-deep)}
-.btn.alt:hover{background:var(--lacquer-3);color:var(--cream)}
-form.post{background:var(--lacquer-2);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:12px;max-width:720px}
-form label{display:grid;gap:4px;font-size:14px;letter-spacing:.04em;color:var(--gold-deep)}
-form input,form textarea,form select{font:inherit;font-size:16px;color:var(--cream);background:var(--lacquer);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%}
-form textarea{min-height:84px;resize:vertical}
-form .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-form details{border-top:1px solid var(--line);padding-top:10px}
-form summary{cursor:pointer;color:var(--gold);font-size:15px}
-.chk{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--cream);letter-spacing:0}
-.chk input{width:auto;margin-top:5px}
-.chk small{display:block;color:var(--cream-dim)}
-.radios{display:flex;gap:16px;flex-wrap:wrap;font-size:15px;color:var(--cream)}
-.radios label{display:flex;gap:6px;align-items:center;color:var(--cream)} .radios input{width:auto}
-section.list{margin-top:44px}
-section.list>h2{margin-bottom:6px} section.list>p{color:var(--cream-dim);font-size:15px;margin-bottom:14px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.card{background:var(--lacquer-2);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
-.card h3{font-size:17px;line-height:1.35;color:var(--cream);font-weight:600}
-.card h3 a{color:inherit} .card .th{color:var(--cream-dim);font-size:15px}
-.tags{display:flex;gap:6px;flex-wrap:wrap;font-size:12px;letter-spacing:.06em}
-.tags span,.tags a{border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--cream-dim)}
-.tags .org{color:var(--gold);border-color:var(--gold-deep)}
-.tags .robot{color:var(--jade)} .tags .human{color:var(--verm)}
-.tags .layer{color:var(--lacquer);background:var(--gold);border-color:var(--gold);font-weight:600}
-p.about{max-width:720px;margin:6px 0 18px}
-.pay{font-family:Georgia,serif;font-size:26px;color:var(--gold);line-height:1.1}
-.pay small{font-family:inherit;font-size:14px;color:var(--cream-dim);margin-left:4px}
-.pay .mv{display:block;font-family:"Avenir Next",system-ui,sans-serif;font-size:12px;letter-spacing:.06em;color:var(--jade);margin-top:4px}
-.payline{font-size:14px;color:var(--cream-dim)}
-.card .acts{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
-.card .btn{font-size:14px;padding:8px 14px}
-.ans{list-style:none;display:grid;gap:4px;font-size:14px;color:var(--cream-dim)}
-.ans b{color:var(--gold);font-weight:600}
-.kinds{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
-.kinds a{display:block;background:var(--lacquer-2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--cream)}
-.kinds a span{display:block;color:var(--cream-dim);font-size:14px} .kinds a i{font-style:normal;color:var(--gold);font-size:13px}
-.kinds a:hover{border-color:var(--gold-deep)}
-details.fold{margin-top:28px;border-top:1px solid var(--line);padding-top:12px;max-width:720px}
-details.fold summary{cursor:pointer;color:var(--gold)} details.fold p,details.fold li{color:var(--cream-dim);font-size:15px;margin-top:8px}
-details.fold code{font-size:13px;color:var(--cream);word-break:break-all}
-.crumbs{font-size:14px;color:var(--cream-dim);margin-bottom:10px} .crumbs a{color:var(--gold-deep)}
-.what{white-space:pre-wrap;color:var(--cream);max-width:68ch;margin:14px 0}
-.what.th{color:var(--cream-dim)}
-.box{background:var(--lacquer-2);border:1px solid var(--line);border-radius:12px;padding:16px;margin:18px 0;max-width:720px}
-.box.own{border-color:var(--gold)}
-.box h2{font-size:19px;margin-bottom:8px}
-.box p{color:var(--cream-dim);font-size:15px}
-.answer{border-top:1px solid var(--line);padding:12px 0;display:grid;gap:6px}
-.answer:first-of-type{border-top:0}
-.answer .who{color:var(--gold);font-weight:600} .answer .note{white-space:pre-wrap;color:var(--cream-dim);font-size:15px}
-.answer .ok{color:var(--jade);font-size:13px}
-.steps{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px} .steps td,.steps th{border-top:1px solid var(--line);padding:5px 6px;text-align:left;color:var(--cream-dim)}
-.flash{background:var(--lacquer-3);border-left:3px solid var(--jade);padding:10px 14px;border-radius:6px;margin:12px 0;max-width:720px}
-.flash.err{border-left-color:var(--verm)}
-.inline{display:inline}
-footer{max-width:980px;margin:0 auto;padding:24px 16px 48px;color:var(--cream-dim);font-size:15px}
-@media (max-width:520px){.pay{font-size:23px} h1{font-size:34px}}
-`
+// The look: docs/assets/shop.css and pages.css (section "task board"), with the frame from functions/_frame.js (tools/pages.py).
 
 // /tasks and each group or kind of work (/tasks/c/<id>) have their own card; a single task keeps the shared one.
 function socialCard(path) {
   const kind = /^\/tasks\/c\/([a-z0-9-]+)$/.exec(path)?.[1]
-  const alt0 = path === '/tasks' ? 'Card: Tasks, งาน, post work for people or bots, Hongdam.' : kind && TASK_CARDS[kind]
-  const own = !!alt0
-  const img = `${ORIGIN}${path === '/tasks' ? '/og/tasks.jpg' : own ? `/og/tasks/${kind}.jpg` : '/assets/card.jpg'}`
-  const alt = alt0 || 'Hongdam หงส์ดำ, Chiang Rai'
-  return `<meta property="og:image" content="${img}">${own ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">' : ''}<meta property="og:image:alt" content="${e(alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${img}"><meta name="twitter:image:alt" content="${e(alt)}">`
+  const own = !!(kind && TASK_CARDS[kind])
+  const img = `${ORIGIN}${own ? `/og/tasks/${kind}.jpg` : '/og/tasks.jpg'}`
+  const alt = own ? TASK_CARDS[kind] : FRAME.tasks.alt
+  return `<meta property="og:image" content="${img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="${e(alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${img}"><meta name="twitter:image:alt" content="${e(alt)}">`
 }
 
 function page({ title, desc, path, body, noindex }) {
   return new Response(`<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${e(title)}</title><meta name="description" content="${e(desc)}">
 <meta property="og:type" content="website"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(desc)}">
 <meta property="og:url" content="${ORIGIN}${e(path)}">${socialCard(path)}
-<link rel="icon" href="/assets/favicon.svg"><link rel="canonical" href="${ORIGIN}${e(path)}">${noindex ? '<meta name="robots" content="noindex">' : ''}
+<link rel="canonical" href="${ORIGIN}${e(path)}">${noindex ? '<meta name="robots" content="noindex">' : ''}
 <link rel="alternate" type="application/json" href="/api/tasks">
-<link rel="stylesheet" href="/assets/rt.css"><style>${CSS}</style></head><body>
-<header class="top"><a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-<nav><a href="/events">Events</a><a href="/tasks"${path === '/tasks' ? ' aria-current="page"' : ''}>Tasks</a><a href="/tasks/graph/">Graph</a><a href="/translation/">Translation</a><a href="/own">Own</a></nav></header>
-<main>${body}</main>
-<footer><span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai · tasks answered by <a href="https://motdang.net/">Mot Dang</a>, <a href="/">Hongdam</a> and <a href="https://chiangmaivisadesk.com/">Chiang Mai Visa Desk</a> · <a href="/api/tasks">API</a> · <a href="/tasks/graph.json">graph.json</a></footer>
+${LINKS}</head>
+${FRAME.tasks.body}${FRAME.tasks.top}<main>${body}</main>
 <script>
 document.querySelectorAll('select[name=cat]').forEach(function (s) {
   var f = s.form, n = f.querySelector('.catnew');
@@ -109,7 +45,7 @@ document.querySelectorAll('select[name=cat]').forEach(function (s) {
   s.addEventListener('change', show); show();
 });
 </script>
-</body></html>`, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } })
+${FRAME.tasks.foot}`, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } })
 }
 
 // ── pieces ────────────────────────────────────────────────────────────────
@@ -196,7 +132,7 @@ async function board(db, now, flash) {
   return page({
     title: 'Tasks · งาน · Hongdam', path: '/tasks',
     desc: `Post work for people or bots. Mot Dang, Hongdam and Chiang Mai Visa Desk answer ${nKinds} kinds of work; pay can follow the market.`,
-    body: `<h1>Tasks <span class="sub">งาน · คนหรือบอท</span></h1>
+    body: `${FRAME.tasks.lead.replace('{{h1}}', 'Tasks').replace('{{sub}}', 'งาน · คนหรือบอท')}
 <p class="lede">Post work for people or bots. Mot Dang, Hongdam and Chiang Mai Visa Desk answer the ${nKinds} kinds they handle; anyone can answer.<br><span lang="th">ลงงานให้คนหรือบอททำ มดแดง หงส์ดำ และโต๊ะวีซ่าเชียงใหม่ตอบงาน ${nKinds} ประเภทที่รับ ใครก็ตอบได้</span></p>
 ${flash || ''}
 <div class="go"><a class="btn" href="#post">Post a task · ลงงาน</a><a class="btn alt" href="#ours">Take one of ours · รับงานของเรา</a>${LAYERS.map((l) => `<a class="btn alt" href="/tasks/c/${l.id}">${e(l.en)} · ${e(l.th)}</a>`).join('')}</div>
@@ -262,7 +198,7 @@ async function taskPage(db, now, t, { own, flash } = {}) {
       : '<p class="payline">The poster can hand this price to the market (Shoup) from their own link. · ผู้โพสต์เปลี่ยนเป็นราคาตลาดได้จากลิงก์ของตัวเอง</p>')
     : ''
   const ownBox = own ? `<div class="box own"><h2>Your page · หน้าของคุณ</h2><p>This link shows who answered and how to reach them. · ลิงก์นี้แสดงว่าใครตอบและติดต่อทางไหน</p>
-<p style="word-break:break-all;color:var(--cream)">${ORIGIN}/tasks/${t.id}/k/${e(t.token)}</p>
+<p style="word-break:break-all">${ORIGIN}/tasks/${t.id}/k/${e(t.token)}</p>
 <div class="go" style="margin:10px 0 0">${t.price_kind === 'shoup' ? '<form method="post" class="inline"><input type="hidden" name="do" value="fixed"><button class="btn alt">Fix the price here · ล็อกราคานี้</button></form>' : ''}
 <form method="post" class="inline"><input type="hidden" name="do" value="taken"><button>Done, someone took it · มีคนรับแล้ว</button></form>
 <form method="post" class="inline"><input type="hidden" name="do" value="close"><button class="btn alt">Close · ปิด</button></form></div>

@@ -1,0 +1,988 @@
+{
+"bank-account": [
+"chat",
+"heart",
+"home",
+"lightbulb",
+"passport",
+"pin",
+"stamp",
+"telephone",
+"thinking",
+"translate",
+"wai"
+],
+"wedding": [
+"abacus",
+"calendar",
+"check",
+"home",
+"page",
+"scooter",
+"stamp",
+"sundial",
+"translate",
+"wai"
+],
+"blood": [
+"chat",
+"wai"
+],
+"bride": [
+"calendar",
+"check",
+"clock",
+"crown",
+"page",
+"scissors",
+"scooter",
+"stamp",
+"sundial",
+"wai"
+],
+"care-visits": [
+"chat",
+"nib",
+"pencil",
+"wai"
+],
+"death-help": [
+"camera",
+"chat",
+"chedi",
+"laptop",
+"lightbulb",
+"scooter",
+"thinking",
+"wai"
+],
+"elder-care": [
+"abacus",
+"chat",
+"parcel",
+"wai"
+],
+"form": [
+"check",
+"passport",
+"typewriter"
+],
+"idme": [
+"flag",
+"heart",
+"laptop",
+"passport"
+],
+"lab-test": [
+"cart",
+"parcel",
+"scooter",
+"thinking",
+"wai"
+],
+"lanna-wedding": [
+"check",
+"clock",
+"crown",
+"lantern",
+"laptop",
+"page",
+"scooter",
+"stamp",
+"sundial"
+],
+"online-shop": [
+"abacus",
+"earth",
+"error",
+"lightbulb",
+"page",
+"robot",
+"save",
+"wrench"
+],
+"retire": [
+"chat",
+"check",
+"key",
+"sun",
+"wai"
+],
+"specialist": [
+"chat",
+"wai"
+],
+"thai-plan": [
+"check",
+"compass",
+"heart",
+"lotus",
+"passport",
+"pin"
+],
+"stay-rent": [
+"airplane",
+"angry",
+"chat",
+"eye",
+"parcel",
+"pencil",
+"pin",
+"smile",
+"stamp",
+"translate"
+],
+"proposal": [
+"abacus",
+"check",
+"passport",
+"stamp"
+],
+"accessible": [
+"pencil",
+"translate"
+],
+"ads-run": [
+"abacus",
+"nib",
+"page",
+"pencil",
+"play",
+"scissors"
+],
+"app": [
+"gear",
+"page",
+"pencil",
+"typewriter"
+],
+"article": [
+"bookmark",
+"chat",
+"thinking"
+],
+"awards": [
+"parcel",
+"thinking"
+],
+"books": [
+"telephone",
+"typewriter",
+"wave"
+],
+"call": [],
+"cartoons": [
+"chat",
+"check",
+"gift",
+"party",
+"wave"
+],
+"clean-air": [
+"laptop",
+"sun",
+"wai",
+"wrench"
+],
+"compare": [
+"abacus",
+"bell",
+"envelope"
+],
+"copy": [
+"chat",
+"check",
+"earth",
+"flag",
+"typewriter"
+],
+"directory": [
+"bookmark"
+],
+"dispute": [
+"camera"
+],
+"drawn": [
+"khao-soi",
+"pin",
+"songthaew",
+"warning"
+],
+"errand": [
+"parcel"
+],
+"exchange": [
+"camera",
+"copy",
+"link",
+"share"
+],
+"fb-care": [
+"nib",
+"page",
+"pencil",
+"save",
+"wrench"
+],
+"german": [
+"earth",
+"lightbulb",
+"thumbs-up"
+],
+"giving": [
+"page"
+],
+"grab": [
+"page",
+"telephone"
+],
+"grants": [
+"calendar",
+"copy",
+"page",
+"pencil",
+"rocket",
+"thinking",
+"thumbs-up",
+"translate"
+],
+"graphics": [
+"calendar",
+"cart",
+"chat",
+"earth",
+"flag",
+"gift",
+"heart",
+"share"
+],
+"guide-site": [
+"chedi",
+"clock",
+"pencil",
+"sparkle",
+"typewriter",
+"wave"
+],
+"help-page": [],
+"interactive": [
+"chat",
+"check",
+"eye",
+"link",
+"pin",
+"share",
+"sound"
+],
+"interp": [
+"calendar",
+"clock",
+"heart",
+"home",
+"mic",
+"passport",
+"telephone"
+],
+"interview": [
+"sound",
+"stamp",
+"wai"
+],
+"invoice": [
+"cart",
+"parcel"
+],
+"kh-books": [
+"stamp",
+"telephone",
+"translate",
+"typewriter",
+"wave"
+],
+"lang-leaves": [
+"calendar",
+"lightbulb",
+"orrery",
+"thinking"
+],
+"lang-pages": [
+"earth",
+"lightbulb",
+"robot"
+],
+"lang-shan": [
+"earth",
+"play",
+"thumbs-up"
+],
+"legalise": [
+"check",
+"heart",
+"lotus",
+"parcel",
+"passport"
+],
+"merchant": [
+"cart",
+"eye",
+"lock",
+"parcel"
+],
+"newsletter": [
+"chat",
+"link",
+"mailbox"
+],
+"ordering": [
+"link",
+"telephone"
+],
+"patterns": [
+"chat",
+"check",
+"flag",
+"heart",
+"lantern",
+"naga",
+"phuang-malai",
+"save",
+"wai"
+],
+"paybox": [
+"error",
+"eye",
+"telephone",
+"wrench"
+],
+"payouts": [
+"bell",
+"clap",
+"flag"
+],
+"restaurant-desk": [
+"abacus",
+"eye"
+],
+"romanise": [
+"camera",
+"earth",
+"lightbulb",
+"pin",
+"thumbs-up",
+"typewriter"
+],
+"signs": [
+"page",
+"pencil",
+"stamp"
+],
+"site": [
+"page",
+"pencil",
+"translate"
+],
+"staff-papers": [
+"lightbulb",
+"stamp",
+"telephone",
+"thinking",
+"translate",
+"wave"
+],
+"stay-booking": [
+"cart",
+"chat",
+"compass",
+"hot",
+"khao-soi",
+"mailbox",
+"pin",
+"robot",
+"sleepy",
+"star"
+],
+"stay-check": [
+"eye",
+"lightbulb",
+"pencil",
+"scooter",
+"stamp",
+"thinking",
+"translate"
+],
+"tap-card": [
+"page",
+"pencil",
+"sparkle"
+],
+"thai-lessons": [
+"calendar",
+"clock",
+"heart",
+"home",
+"passport",
+"telephone"
+],
+"there": [],
+"trade-photos": [
+"earth",
+"lightbulb",
+"page",
+"pencil",
+"sparkle"
+],
+"trades": [
+"airplane",
+"cloud",
+"gear",
+"leaf",
+"lightning",
+"parcel"
+],
+"translate": [
+"passport"
+],
+"vehicle": [
+"crossed-fingers",
+"parcel",
+"pin",
+"songthaew",
+"star"
+],
+"vibe": [
+"error",
+"gear",
+"lock",
+"page",
+"skull"
+],
+"video": [
+"cart",
+"chat",
+"gift"
+],
+"web-care": [
+"copy",
+"lock",
+"power",
+"refresh",
+"skull",
+"wave"
+],
+"web-license": [
+"copy",
+"translate"
+],
+"web-line": [
+"coffee",
+"home",
+"pencil",
+"scooter",
+"thumbs-up"
+],
+"web-mail": [
+"lock"
+],
+"web-move": [
+"copy",
+"lock",
+"power"
+],
+"web-search": [
+"page",
+"translate"
+],
+"web-sharecard": [
+"heart",
+"megaphone",
+"page",
+"pencil",
+"sparkle"
+],
+"widget": [
+"gear",
+"leaf",
+"moon",
+"sparkle"
+],
+"wp-api": [
+"copy",
+"home",
+"lock",
+"refresh"
+],
+"decks": [
+"stamp"
+],
+"web-found": [
+"megaphone",
+"page",
+"pencil",
+"thumbs-up",
+"wai"
+],
+"event-plan": [
+"abacus",
+"calendar",
+"chat",
+"clock",
+"home",
+"lotus",
+"mic",
+"translate",
+"wai"
+],
+"accident": [
+"angry",
+"chat",
+"key",
+"pin",
+"scooter",
+"smile",
+"wai"
+],
+"ai-batch": [
+"copy",
+"sparkle",
+"spider",
+"typewriter"
+],
+"almanac-widget": [
+"cloud",
+"earth",
+"lightbulb",
+"pencil"
+],
+"app-test": [
+"error",
+"lightbulb",
+"pencil",
+"rocket",
+"stamp",
+"thumbs-up",
+"translate",
+"wifi"
+],
+"assistant": [
+"cart",
+"eye",
+"parcel",
+"pencil",
+"robot",
+"scooter"
+],
+"calls-out": [
+"home",
+"save"
+],
+"checkin": [
+"clock",
+"laugh",
+"megaphone",
+"page",
+"pencil",
+"telephone"
+],
+"club-desk": [
+"envelope",
+"page",
+"robot",
+"thumbs-up"
+],
+"cs-desk": [
+"bookmark",
+"clock",
+"envelope",
+"heart",
+"link",
+"robot"
+],
+"data-crawl": [
+"check",
+"clock"
+],
+"demand-prices": [
+"calendar",
+"cart",
+"moon",
+"noodles",
+"party",
+"refresh",
+"sun"
+],
+"eink-clock": [
+"compass",
+"heart",
+"home",
+"khao-soi",
+"phuang-malai",
+"pin",
+"refresh"
+],
+"etsy": [
+"earth",
+"key",
+"nib",
+"page",
+"paper-boat"
+],
+"event-page": [
+"calendar",
+"chedi",
+"dice",
+"gift",
+"lantern",
+"laugh",
+"lightbulb",
+"page",
+"songthaew"
+],
+"house-blessing": [
+"bell",
+"check",
+"clock",
+"page",
+"songthaew",
+"stamp",
+"sundial",
+"translate",
+"wave"
+],
+"lantern": [
+"noodles"
+],
+"leads": [
+"chat",
+"envelope",
+"mailbox",
+"nib",
+"pencil",
+"smile",
+"telephone"
+],
+"line-memory": [
+"link",
+"share",
+"telephone"
+],
+"merit-dead": [
+"check",
+"lantern",
+"laptop",
+"page",
+"passport",
+"sundial"
+],
+"merit-you": [
+"check",
+"gift",
+"naga",
+"nib",
+"sundial"
+],
+"mirror": [
+"bell",
+"earth",
+"lightbulb",
+"parcel",
+"refresh",
+"save",
+"star"
+],
+"npa-homes": [
+"airplane",
+"envelope",
+"parcel",
+"pin",
+"stamp",
+"translate"
+],
+"photo-proof": [
+"cart",
+"clock",
+"eye",
+"save",
+"scooter"
+],
+"price-watch": [
+"calendar",
+"cart",
+"hot",
+"noodles",
+"sleepy",
+"wai"
+],
+"research": [
+"lightbulb",
+"nib",
+"pencil"
+],
+"sec-hacked": [
+"bell",
+"parcel",
+"save"
+],
+"sec-mail": [
+"bell",
+"calendar",
+"link",
+"mailbox",
+"parcel",
+"save"
+],
+"social": [
+"calendar",
+"chat",
+"heart",
+"link",
+"share"
+],
+"spirit-house": [
+"check",
+"page",
+"sundial",
+"telephone"
+],
+"street-survey": [
+"cart",
+"check",
+"gift",
+"stamp"
+],
+"su-khwan": [
+"chat",
+"frying-pan",
+"gift",
+"muscle",
+"translate"
+],
+"subtitles": [
+"camera",
+"scissors",
+"stamp",
+"star",
+"translate"
+],
+"traffic": [
+"save",
+"star",
+"wrench"
+],
+"tribute": [
+"calendar",
+"chat",
+"chedi",
+"link",
+"lotus",
+"page",
+"passport",
+"share"
+],
+"trip-plan": [
+"bookmark",
+"pin"
+],
+"typing": [
+"check",
+"eye",
+"pencil"
+],
+"voice": [
+"check",
+"eye",
+"gear",
+"pencil",
+"stamp",
+"translate"
+],
+"agency-sheet": [
+"link",
+"pencil",
+"robot"
+],
+"amulet": [
+"home",
+"lotus",
+"parcel",
+"pin"
+],
+"balloon": [
+"cloud",
+"sun"
+],
+"car-guide": [
+"chat",
+"home",
+"pin",
+"wai"
+],
+"crawl-pay": [
+"gear",
+"lock",
+"pin",
+"spider",
+"wave"
+],
+"crew": [
+"lightning"
+],
+"experience": [
+"chat",
+"wai"
+],
+"findable": [
+"copy",
+"link",
+"page",
+"pencil",
+"sparkle",
+"spider"
+],
+"lucky-number": [
+"dice",
+"envelope"
+],
+"luggage": [
+"cart",
+"clock",
+"eye",
+"pin",
+"scooter",
+"translate",
+"wai",
+"wave"
+],
+"map-archive": [
+"compass",
+"link",
+"page",
+"pencil",
+"songthaew",
+"sparkle",
+"warning"
+],
+"move": [
+"calendar",
+"check",
+"heart",
+"key",
+"page",
+"paper-boat",
+"passport",
+"pencil",
+"pin",
+"stamp",
+"telephone",
+"wrench"
+],
+"name-charm": [
+"home",
+"parcel",
+"pencil"
+],
+"partner": [
+"camera",
+"cart",
+"gift",
+"home",
+"laptop",
+"pencil",
+"songthaew",
+"stamp"
+],
+"rentals": [
+"clock",
+"pencil",
+"phuang-malai",
+"scooter",
+"songthaew",
+"translate",
+"wai",
+"warning",
+"wave"
+],
+"stall-page": [
+"lantern",
+"page"
+],
+"tour-3d": [
+"camera",
+"home",
+"naga"
+],
+"tour-day": [],
+"ai-assistant": [
+"calendar",
+"lightning",
+"mailbox",
+"nib",
+"smile",
+"telephone",
+"wave"
+],
+"bazi": [
+"dice",
+"stamp"
+],
+"date-pick": [
+"heart",
+"home",
+"lotus",
+"phuang-malai"
+],
+"name-pick": [
+"lightbulb",
+"lotus",
+"pencil",
+"smile"
+],
+"pha-yant": [
+"chedi",
+"lotus",
+"pencil",
+"smile"
+],
+"print": [
+"lightbulb",
+"page",
+"pencil",
+"sparkle",
+"typewriter"
+],
+"reading": [
+"leaf"
+],
+"sak-yant": [
+"chat",
+"pin",
+"wave"
+],
+"ai-automation": [
+"clock",
+"copy",
+"link",
+"pencil",
+"refresh",
+"spider",
+"wrench"
+],
+"ai-line": [
+"calendar",
+"cart",
+"coffee",
+"compass",
+"mailbox",
+"pencil",
+"refresh",
+"smile"
+],
+"event-kit": [
+"home",
+"page",
+"phuang-malai",
+"star"
+],
+"web-dns": [
+"lock"
+]
+}

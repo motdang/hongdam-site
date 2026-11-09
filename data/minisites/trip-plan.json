@@ -1,0 +1,336 @@
+{
+ "id": "trip-plan",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "In the north the sights lie hours apart by road, and the cool season runs from November to February.",
+  "th": "ในภาคเหนือสถานที่เที่ยวอยู่ห่างกันหลายชั่วโมงทางรถ และฤดูหนาวเย็นอยู่ในช่วงพฤศจิกายนถึงกุมภาพันธ์",
+  "my": "မြောက်ပိုင်းတွင် ခရီးထွက်စရာနေရာများသည် လမ်းကြောင်းအလိုက် နာရီပေါင်းများစွာ ကွာဝေးပြီး အေးသောရာသီသည် နိုဝင်ဘာမှ ဖေဖော်ဝါရီအထိ ဖြစ်သည်။",
+  "zh": "在北部，景点之间隔着几个小时的车程，凉季从 11 月到次年 2 月。",
+  "de": "Im Norden liegen die Sehenswürdigkeiten Stunden auseinander, und die kühle Jahreszeit dauert von November bis Februar."
+ },
+ "n": {
+  "de": "Reiseplan, für Sie gebucht"
+ },
+ "l": {
+  "de": "Tag für Tag; Fahrer, Zimmer und Tische auf Ihren Namen gebucht."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "A plan is written for you, day by day.",
+    "th": "เขียนแผนรายวันให้คุณ",
+    "my": "သင့်အတွက် နေ့စဉ်အစီအစဉ် ရေးဆွဲပေးသည်။",
+    "zh": "为您写好逐日行程。",
+    "de": "Ein Plan wird Tag für Tag für Sie geschrieben."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the trip",
+    "th": "ก่อนเดินทาง",
+    "my": "ခရီးမထွက်မီ",
+    "zh": "出发前",
+    "de": "Vor der Reise"
+   }
+  },
+  {
+   "db": "bookmark",
+   "t": {
+    "en": "Drivers, rooms, classes and tables are booked in your name.",
+    "th": "จองรถ ห้องพัก คลาส และร้านอาหารในชื่อของคุณ",
+    "my": "ယာဉ်မောင်း၊ အခန်း၊ သင်တန်းနှင့် စားပွဲများကို သင့်အမည်ဖြင့် ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "司机、房间、课程和餐桌，都以您的名字预订。",
+    "de": "Fahrer, Zimmer, Kurse und Tische werden auf Ihren Namen gebucht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the trip",
+    "th": "ก่อนเดินทาง",
+    "my": "ခရီးမထွက်မီ",
+    "zh": "出发前",
+    "de": "Vor der Reise"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "You pay each place directly.",
+    "th": "คุณจ่ายแต่ละที่โดยตรง",
+    "my": "နေရာတစ်ခုချင်းစီကို သင်ကိုယ်တိုင် တိုက်ရိုက်ပေးချေသည်။",
+    "zh": "各处的费用由您直接付给对方。",
+    "de": "Sie bezahlen jeden Ort direkt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "On the trip",
+    "th": "ระหว่างเดินทาง",
+    "my": "ခရီးအတွင်း",
+    "zh": "旅途中",
+    "de": "Auf der Reise"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "TUI's Mae Hong Son Loop self-drive tour takes 10 days and about 599 km of driving, through Chiang Mai, Pai, Mae Hong Son and Mae Sariang. It names November to February as the best travel period.",
+    "th": "ทัวร์ขับรถเที่ยวเส้นทางแม่ฮ่องสอนลูปของ TUI ใช้เวลา 10 วัน ขับรวมประมาณ 599 กม. ผ่านเชียงใหม่ ปาย แม่ฮ่องสอน และแม่สะเรียง และระบุว่าช่วงเดินทางที่ดีที่สุดคือพฤศจิกายนถึงกุมภาพันธ์",
+    "my": "TUI ၏ မဲဟောင်ဆွန်း လမ်းကြောင်း ကိုယ်တိုင်မောင်းခရီးစဉ်သည် 10 ရက်ကြာပြီး ချင်းမိုင်၊ ပိုင်၊ မဲဟောင်ဆွန်းနှင့် မဲဆရီယန်မှတစ်ဆင့် မောင်းရသည့် အကွာအဝေး 599 ကီလိုမီတာခန့် ရှိသည်။ အကောင်းဆုံးခရီးသွားကာလမှာ နိုဝင်ဘာမှ ဖေဖော်ဝါရီဟု ဖော်ပြထားသည်။",
+    "zh": "TUI 的夜丰颂环线（Mae Hong Son Loop）自驾行程为 10 天，驾驶里程约 599 公里，途经清迈、拜（Pai）、夜丰颂和湄萨良（Mae Sariang）。TUI 称 11 月到次年 2 月是最佳出行时段。",
+    "de": "Die Selbstfahrertour Mae Hong Son Loop von TUI dauert 10 Tage mit etwa 599 km Fahrt, über Chiang Mai, Pai, Mae Hong Son und Mae Sariang. TUI nennt November bis Februar als beste Reisezeit."
+   },
+   "src": "https://www.tui.co.uk/design-your-trip/tour/mae-hong-son-loop-thailands-most-scenic-self-drive"
+  },
+  {
+   "t": {
+    "en": "From Chiang Mai, a Chiang Rai day trip is a round trip of about 6 hours on the road. Doi Inthanon is about 2 hours by car.",
+    "th": "จากเชียงใหม่ ทริปเชียงรายแบบเช้าไปเย็นกลับใช้เวลาอยู่บนถนนไป-กลับประมาณ 6 ชั่วโมง ส่วนดอยอินทนนท์ใช้เวลาขับรถประมาณ 2 ชั่วโมง",
+    "my": "ချင်းမိုင်မှ ချင်းရိုင်သို့ တစ်ရက်တည်းခရီးသည် သွားပြန် လမ်းပေါ်တွင် 6 နာရီခန့် ကြာသည်။ ဒွိုင်အင်းသနွန်သို့ ကားဖြင့် 2 နာရီခန့် ကြာသည်။",
+    "zh": "从清迈出发，清莱一日游往返在路上约 6 小时；茵他侬山驾车约 2 小时。",
+    "de": "Ab Chiang Mai dauert ein Tagesausflug nach Chiang Rai hin und zurück etwa 6 Stunden auf der Strasse. Zum Doi Inthanon fährt man etwa 2 Stunden."
+   },
+   "src": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  },
+  {
+   "t": {
+    "en": "Thai Holiday Guide gives November to January as the best window in Chiang Mai: cool, stable air and clear views. February to April is the burning season, when smoke haze cuts visibility. June to October is rainy.",
+    "th": "Thai Holiday Guide ระบุว่าพฤศจิกายนถึงมกราคมเป็นช่วงที่ดีที่สุดในเชียงใหม่ อากาศเย็นนิ่ง ทัศนียภาพชัด กุมภาพันธ์ถึงเมษายนเป็นฤดูเผา ควันหมอกลดทัศนวิสัย และมิถุนายนถึงตุลาคมเป็นหน้าฝน",
+    "my": "Thai Holiday Guide က ချင်းမိုင်တွင် နိုဝင်ဘာမှ ဇန်နဝါရီသည် အကောင်းဆုံးကာလ (အေးပြီး လေငြိမ်၊ မြင်ကွင်းကြည်လင်) ဖြစ်သည်ဟု ဆိုသည်။ ဖေဖော်ဝါရီမှ ဧပြီအထိ မီးရှို့ရာသီဖြစ်ပြီး မီးခိုးမြူက မြင်ကွင်းကို လျော့စေသည်။ ဇွန်မှ အောက်တိုဘာအထိ မိုးရာသီဖြစ်သည်။",
+    "zh": "Thai Holiday Guide 称清迈 11 月到 1 月最好：凉爽、气流稳、视野清晰。2 月到 4 月是烧荒季，烟霾降低能见度。6 月到 10 月是雨季。",
+    "de": "Thai Holiday Guide nennt November bis Januar als beste Zeit in Chiang Mai: kühle, ruhige Luft und klare Sicht. Von Februar bis April ist Brandrodungszeit, und Rauchdunst nimmt die Sicht. Juni bis Oktober ist Regenzeit."
+   },
+   "src": "https://www.thaiholidayguide.com/flying-over-chiang-mai/"
+  },
+  {
+   "t": {
+    "en": "A tour operator in Thailand needs a valid licence to run tours. The Tourism Business and Guide Act B.E. 2551 (2008) and its amendments, Section 80 with Section 15, sets up to 2 years in prison, a fine of up to ฿500,000, or both.",
+    "th": "ผู้ประกอบการนำเที่ยวในไทยต้องมีใบอนุญาตที่ยังไม่หมดอายุจึงจะจัดทัวร์ได้ พ.ร.บ.ธุรกิจนำเที่ยวและมัคคุเทศก์ พ.ศ. 2551 และที่แก้ไขเพิ่มเติม มาตรา 80 ประกอบมาตรา 15 กำหนดโทษจำคุกไม่เกิน 2 ปี ปรับไม่เกิน ฿500,000 หรือทั้งจำทั้งปรับ",
+    "my": "ထိုင်းတွင် ခရီးစဉ်စီစဉ်သူသည် ခရီးစဉ်များ လုပ်ကိုင်ရန် တရားဝင်လိုင်စင် ရှိရမည်။ ခရီးသွားလုပ်ငန်းနှင့် ဧည့်လမ်းညွှန်ဥပဒေ (B.E. 2551၊ 2008) နှင့် ၎င်း၏ ပြင်ဆင်ချက်များ၊ ပုဒ်မ 80 နှင့် ပုဒ်မ 15 အရ ထောင်ဒဏ် 2 နှစ်အထိ၊ ဒဏ်ကြေး ฿500,000 အထိ၊ သို့မဟုတ် နှစ်မျိုးလုံး ချမှတ်နိုင်သည်။",
+    "zh": "在泰国经营旅游业务须持有有效执照。2008 年（佛历 2551 年）《旅游业务与导游法》及其修正案第 80 条结合第 15 条，规定最高监禁 2 年、罚款最高 ฿500,000，或两者并罚。",
+    "de": "Wer in Thailand Reisen anbietet, braucht eine gültige Lizenz. Das Gesetz über Tourismusbetriebe und Guides von 2008 (B.E. 2551) mit Änderungen, Artikel 80 zusammen mit Artikel 15, sieht bis zu 2 Jahre Haft, eine Busse von bis zu ฿500,000 oder beides vor."
+   },
+   "src": "https://www.thansettakij.com/business/tourism/667006"
+  },
+  {
+   "t": {
+    "en": "Loy Krathong falls on Tuesday 24 November 2026. Chiang Mai's city Yi Peng festival runs 23 to 25 November, with the main lantern nights on 24 and 25 November.",
+    "th": "ลอยกระทงปี 2569 ตรงกับวันอังคารที่ 24 พฤศจิกายน เทศกาลยี่เป็งของเมืองเชียงใหม่จัดวันที่ 23 ถึง 25 พฤศจิกายน โดยคืนโคมหลักคือวันที่ 24 และ 25 พฤศจิกายน",
+    "my": "2026 ခုနှစ် လွိုင်ကရသုံးပွဲသည် အင်္ဂါနေ့ နိုဝင်ဘာ 24 ရက်တွင် ကျရောက်သည်။ ချင်းမိုင်မြို့၏ ယီပေါင်ပွဲတော်သည် နိုဝင်ဘာ 23 ရက်မှ 25 ရက်အထိ ကျင်းပပြီး မီးအိမ်ညအဓိကများမှာ နိုဝင်ဘာ 24 နှင့် 25 ရက်ဖြစ်သည်။",
+    "zh": "2026 年水灯节在 11 月 24 日，星期二。清迈市的易鹏节从 11 月 23 日到 25 日，主要的灯夜是 11 月 24 日和 25 日。",
+    "de": "Loy Krathong fällt 2026 auf Dienstag, den 24. November. Das Yi-Peng-Fest der Stadt Chiang Mai dauert vom 23. bis 25. November, die Haupt-Laternennächte sind der 24. und 25. November."
+   },
+   "src": "https://www.thaiholidayguide.com/events/loy-krathong/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Private car with driver and fuel, about 9 hours, Chiang Mai to Chiang Rai (a Chiang Mai operator's page; entries and food are extra)",
+    "th": "เหมารถพร้อมคนขับและน้ำมัน ประมาณ 9 ชั่วโมง เชียงใหม่ไปเชียงราย (หน้าของผู้ให้บริการในเชียงใหม่ ค่าเข้าและอาหารไม่รวม)",
+    "my": "ဆက်ဆွယ်သူ ကားနှင့် ယာဉ်မောင်း၊ လောင်စာပါ၊ ချင်းမိုင်မှ ချင်းရိုင် 9 နာရီခန့် (ချင်းမိုင်ရှိ လုပ်ငန်းရှင်တစ်ဦး၏ စာမျက်နှာ၊ ဝင်ခွင့်ကြေးနှင့် အစားအသောက် မပါ)",
+    "zh": "包车含司机和油费，约 9 小时，清迈到清莱（清迈一家经营者的页面；门票和餐费另计）",
+    "de": "Privatauto mit Fahrer und Treibstoff, etwa 9 Stunden, Chiang Mai–Chiang Rai (Seite eines Anbieters in Chiang Mai; Eintritte und Essen extra)"
+   },
+   "p": {
+    "en": "฿4,200 a car for 1–3 people; ฿4,500 a van for 4–10 people",
+    "th": "฿4,200 ต่อรถเก๋ง 1–3 คน; ฿4,500 ต่อรถตู้ 4–10 คน",
+    "my": "ကား (1–3 ဦး) ฿4,200၊ ဗင်ကား (4–10 ဦး) ฿4,500",
+    "zh": "每辆车（1–3 人）฿4,200；每辆面包车（4–10 人）฿4,500",
+    "de": "฿4,200 pro Auto (1–3 Personen); ฿4,500 pro Van (4–10 Personen)"
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  },
+  {
+   "t": {
+    "en": "English-speaking guide added to that car, a day",
+    "th": "ไกด์พูดภาษาอังกฤษเพิ่มกับรถคันนั้น ต่อวัน",
+    "my": "ထိုကားနှင့်အတူ ထပ်ထည့်သော အင်္ဂလိပ်စကားပြော ဧည့်လမ်းညွှန်၊ တစ်ရက်",
+    "zh": "在该车之外加配英语导游，每天",
+    "de": "Englischsprachiger Guide zusätzlich zu diesem Auto, pro Tag"
+   },
+   "p": {
+    "en": "฿1,500",
+    "th": "฿1,500",
+    "my": "฿1,500",
+    "zh": "฿1,500",
+    "de": "฿1,500"
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  },
+  {
+   "t": {
+    "en": "Cooking class in Chiang Mai, half day (3–4 hours, 4 dishes)",
+    "th": "คลาสทำอาหารในเชียงใหม่ ครึ่งวัน (3–4 ชั่วโมง 4 เมนู)",
+    "my": "ချင်းမိုင်တွင် ချက်ပြုတ်သင်တန်း၊ နေ့တစ်ဝက် (3–4 နာရီ၊ ဟင်း 4 မျိုး)",
+    "zh": "清迈烹饪课，半天（3–4 小时，4 道菜）",
+    "de": "Kochkurs in Chiang Mai, halber Tag (3–4 Stunden, 4 Gerichte)"
+   },
+   "p": {
+    "en": "฿800–1,500",
+    "th": "฿800–1,500",
+    "my": "฿800–1,500",
+    "zh": "฿800–1,500",
+    "de": "฿800–1,500"
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "Hot air balloon, Chiang Mai, shared basket (Balloon Adventure Thailand, listed July 2026)",
+    "th": "บอลลูนเชียงใหม่ ตะกร้ารวม (Balloon Adventure Thailand ราคาที่ลงไว้กรกฎาคม 2569)",
+    "my": "ချင်းမိုင်တွင် လေပူဖောင်း၊ မျှဝေသော ခြင်းတောင်း (Balloon Adventure Thailand၊ 2026 ဇူလိုင်တွင် ဖော်ပြထားသောဈေး)",
+    "zh": "清迈热气球，共乘吊篮（Balloon Adventure Thailand，2026 年 7 月列价）",
+    "de": "Heissluftballon, Chiang Mai, gemeinsamer Korb (Balloon Adventure Thailand, Preis von Juli 2026)"
+   },
+   "p": {
+    "en": "฿8,800",
+    "th": "฿8,800",
+    "my": "฿8,800",
+    "zh": "฿8,800",
+    "de": "฿8,800"
+   },
+   "src": "https://www.thaiholidayguide.com/attraction/balloon-adventure-thailand/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a good 3-day Chiang Mai itinerary?",
+    "th": "แพลนเที่ยวเชียงใหม่ 3 วัน 2 คืน ไปไหนดี",
+    "my": "ချင်းမိုင် 3 ရက်ခရီးစဉ်ကောင်းတစ်ခုမှာ ဘာလဲ။",
+    "zh": "清迈三天行程怎么安排好？",
+    "de": "Wie sieht ein guter 3-Tage-Plan für Chiang Mai aus?"
+   },
+   "a": {
+    "en": "Thailand Highlights' 3-day plan gives day 1 to Old City temples or Doi Suthep at sunset, day 2 to an elephant camp programme with a cooking class or a waterfall as an add-on, and day 3 to Doi Inthanon National Park.",
+    "th": "แผน 3 วันของ Thailand Highlights ให้วันแรกเที่ยววัดในเมืองเก่าหรือชมพระอาทิตย์ตกที่ดอยสุเทพ วันที่สองเป็นโปรแกรมแคมป์ช้าง เพิ่มคลาสทำอาหารหรือน้ำตกได้ และวันที่สามเที่ยวอุทยานแห่งชาติดอยอินทนนท์",
+    "my": "Thailand Highlights ၏ 3 ရက်အစီအစဉ်တွင် ပထမနေ့ကို မြို့ဟောင်းဘုရားများ သို့မဟုတ် နေဝင်ချိန် ဒွိုင်ဆူးတက်၊ ဒုတိယနေ့ကို ဆင်စခန်းအစီအစဉ် (ချက်ပြုတ်သင်တန်း သို့မဟုတ် ရေတံခွန် ထပ်ထည့်နိုင်)၊ တတိယနေ့ကို ဒွိုင်အင်းသနွန် အမျိုးသားဥယျာဉ် သတ်မှတ်ထားသည်။",
+    "zh": "Thailand Highlights 的三天方案：第一天古城寺庙或素贴山日落，第二天大象营项目（可加烹饪课或瀑布），第三天茵他侬山国家公园。",
+    "de": "Der 3-Tage-Plan von Thailand Highlights legt Tag 1 auf Tempel der Altstadt oder den Doi Suthep bei Sonnenuntergang, Tag 2 auf ein Elefantencamp-Programm mit Kochkurs oder Wasserfall als Zusatz und Tag 3 auf den Doi-Inthanon-Nationalpark."
+   },
+   "src": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  },
+  {
+   "q": {
+    "en": "How long is a day trip to Chiang Rai from Chiang Mai?",
+    "th": "ไปเที่ยวเชียงรายเช้าไปเย็นกลับจากเชียงใหม่ใช้เวลานานแค่ไหน",
+    "my": "ချင်းမိုင်မှ ချင်းရိုင်သို့ တစ်ရက်တည်းခရီးသည် ဘယ်လောက်ကြာသလဲ။",
+    "zh": "从清迈去清莱一日游要多久？",
+    "de": "Wie lange dauert ein Tagesausflug von Chiang Mai nach Chiang Rai?"
+   },
+   "a": {
+    "en": "Thailand Highlights gives a round trip of about 6 hours on the road.",
+    "th": "Thailand Highlights ระบุว่าไป-กลับอยู่บนถนนประมาณ 6 ชั่วโมง",
+    "my": "Thailand Highlights က သွားပြန် လမ်းပေါ်တွင် 6 နာရီခန့် ကြာသည်ဟု ဆိုသည်။",
+    "zh": "Thailand Highlights 给出往返路上约 6 小时。",
+    "de": "Thailand Highlights nennt hin und zurück etwa 6 Stunden auf der Strasse."
+   },
+   "src": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  },
+  {
+   "q": {
+    "en": "When is the best time to visit northern Thailand?",
+    "th": "ช่วงไหนเหมาะกับการเที่ยวภาคเหนือที่สุด",
+    "my": "ထိုင်းမြောက်ပိုင်းကို ဘယ်အချိန်သွားရန် အကောင်းဆုံးလဲ။",
+    "zh": "什么时候去泰国北部最合适？",
+    "de": "Wann ist die beste Reisezeit für Nordthailand?"
+   },
+   "a": {
+    "en": "Thailand Highlights calls the dry season, about November to May, the best overall. June to October is the rainy season.",
+    "th": "Thailand Highlights ระบุว่าหน้าแล้ง ประมาณพฤศจิกายนถึงพฤษภาคม เหมาะที่สุดโดยรวม ส่วนมิถุนายนถึงตุลาคมเป็นหน้าฝน",
+    "my": "Thailand Highlights က ခြောက်သွေ့ရာသီ၊ နိုဝင်ဘာမှ မေလခန့်ကို စုစုပေါင်း အကောင်းဆုံးဟု ဆိုသည်။ ဇွန်မှ အောက်တိုဘာအထိ မိုးရာသီဖြစ်သည်။",
+    "zh": "Thailand Highlights 称旱季（约 11 月到 5 月）总体最好，6 月到 10 月是雨季。",
+    "de": "Thailand Highlights nennt die Trockenzeit, etwa November bis Mai, insgesamt die beste. Juni bis Oktober ist Regenzeit."
+   },
+   "src": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  },
+  {
+   "q": {
+    "en": "How long does the Mae Hong Son Loop take?",
+    "th": "เส้นทางแม่ฮ่องสอนลูปใช้เวลากี่วัน",
+    "my": "မဲဟောင်ဆွန်း လမ်းကြောင်းသည် ဘယ်နှစ်ရက်ကြာသလဲ။",
+    "zh": "夜丰颂环线要走几天？",
+    "de": "Wie lange dauert die Mae Hong Son Loop?"
+   },
+   "a": {
+    "en": "TUI's self-drive tour of the loop takes 10 days and about 599 km: Chiang Mai (days 1–3), Pai (3–5), Mae Hong Son (5–7), Mae Sariang (7–8), then back to Chiang Mai (8–10).",
+    "th": "ทัวร์ขับรถเที่ยวเส้นทางนี้ของ TUI ใช้เวลา 10 วัน ระยะทางประมาณ 599 กม. คือเชียงใหม่ (วันที่ 1–3) ปาย (3–5) แม่ฮ่องสอน (5–7) แม่สะเรียง (7–8) แล้วกลับเชียงใหม่ (8–10)",
+    "my": "TUI ၏ ကိုယ်တိုင်မောင်းခရီးစဉ်သည် 10 ရက်ကြာပြီး 599 ကီလိုမီတာခန့် ရှိသည်။ ချင်းမိုင် (ရက် 1–3)၊ ပိုင် (3–5)၊ မဲဟောင်ဆွန်း (5–7)၊ မဲဆရီယန် (7–8)၊ ထို့နောက် ချင်းမိုင်သို့ ပြန် (8–10)။",
+    "zh": "TUI 的自驾行程为 10 天、约 599 公里：清迈（第 1–3 天）、拜（3–5）、夜丰颂（5–7）、湄萨良（7–8），再回清迈（8–10）。",
+    "de": "Die Selbstfahrertour von TUI dauert 10 Tage und etwa 599 km: Chiang Mai (Tage 1–3), Pai (3–5), Mae Hong Son (5–7), Mae Sariang (7–8), dann zurück nach Chiang Mai (8–10)."
+   },
+   "src": "https://www.tui.co.uk/design-your-trip/tour/mae-hong-son-loop-thailands-most-scenic-self-drive"
+  },
+  {
+   "q": {
+    "en": "How much is a private car for a day trip in the north?",
+    "th": "เหมารถเที่ยวหนึ่งวันในภาคเหนือราคาเท่าไร",
+    "my": "မြောက်ပိုင်းတွင် တစ်ရက်ခရီးအတွက် ကိုယ်ပိုင်ကားငှားခ ဘယ်လောက်လဲ။",
+    "zh": "在北部包车一日游要多少钱？",
+    "de": "Was kostet ein Privatauto für einen Tagesausflug im Norden?"
+   },
+   "a": {
+    "en": "A Chiang Mai operator lists ฿4,200 a car for 1–3 people and ฿4,500 a van for 4–10 people, for a 9-hour Chiang Rai day with driver, fuel, insurance and hotel pickup. Entries and food are extra, and a guide is ฿1,500 a day.",
+    "th": "ผู้ให้บริการในเชียงใหม่รายหนึ่งระบุ ฿4,200 ต่อรถเก๋ง 1–3 คน และ ฿4,500 ต่อรถตู้ 4–10 คน สำหรับวันเชียงราย 9 ชั่วโมง รวมคนขับ น้ำมัน ประกัน และรับส่งโรงแรม ค่าเข้าและอาหารไม่รวม ไกด์เพิ่ม ฿1,500 ต่อวัน",
+    "my": "ချင်းမိုင်ရှိ လုပ်ငန်းရှင်တစ်ဦးက ချင်းရိုင် 9 နာရီခရီးအတွက် ယာဉ်မောင်း၊ လောင်စာ၊ အာမခံနှင့် ဟိုတယ်ကြိုပို့ ပါဝင်ပြီး ကား (1–3 ဦး) ฿4,200၊ ဗင်ကား (4–10 ဦး) ฿4,500 ဟု ဖော်ပြသည်။ ဝင်ခွင့်ကြေးနှင့် အစားအသောက် မပါပါ၊ ဧည့်လမ်းညွှန်ကို တစ်ရက် ฿1,500 ဖြင့် ထပ်ထည့်နိုင်သည်။",
+    "zh": "清迈一家经营者列出：清莱 9 小时一日游，含司机、油费、保险和酒店接送，每辆车（1–3 人）฿4,200，每辆面包车（4–10 人）฿4,500。门票和餐费另计，导游每天 ฿1,500。",
+    "de": "Ein Anbieter in Chiang Mai nennt ฿4,200 pro Auto (1–3 Personen) und ฿4,500 pro Van (4–10 Personen) für einen 9-Stunden-Tag nach Chiang Rai mit Fahrer, Treibstoff, Versicherung und Hotelabholung. Eintritte und Essen sind extra, ein Guide kostet ฿1,500 pro Tag."
+   },
+   "src": "https://mychiangmaitour.com/?p=13454"
+  }
+ ],
+ "related": [
+  "tour-day",
+  "tour-3d",
+  "car-guide",
+  "balloon",
+  "experience",
+  "lantern"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thailand Highlights: 3 days in Chiang Mai",
+    "th": "Thailand Highlights: เชียงใหม่ 3 วัน",
+    "my": "Thailand Highlights: ချင်းမိုင်တွင် 3 ရက်",
+    "zh": "Thailand Highlights：清迈三天",
+    "de": "Thailand Highlights: 3 Tage in Chiang Mai"
+   },
+   "href": "https://www.thailandhighlights.com/thailand/chiang-mai/3-day-itinerary"
+  },
+  {
+   "t": {
+    "en": "TUI: Mae Hong Son Loop self-drive tour",
+    "th": "TUI: ทัวร์ขับรถเที่ยวแม่ฮ่องสอนลูป",
+    "my": "TUI: မဲဟောင်ဆွန်း လမ်းကြောင်း ကိုယ်တိုင်မောင်းခရီးစဉ်",
+    "zh": "TUI：夜丰颂环线自驾游",
+    "de": "TUI: Selbstfahrertour Mae Hong Son Loop"
+   },
+   "href": "https://www.tui.co.uk/design-your-trip/tour/mae-hong-son-loop-thailands-most-scenic-self-drive"
+  }
+ ],
+ "glyphs": [
+  "calendar",
+  "compass",
+  "pin"
+ ]
+}

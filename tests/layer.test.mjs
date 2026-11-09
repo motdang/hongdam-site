@@ -35,9 +35,9 @@ const imp = new Set(raw.prepare("SELECT id FROM task WHERE cat LIKE 'imp-%'").al
 assert.ok(!imp.has(titles[0]) && imp.has(titles[2]), 'mixed in, not a block at the end')
 assert.equal((ours.match(/class="layer"/g) || []).length, 12, 'each one tagged')
 assert.match(ours, /Prayer, nam daeng, gratitude and \$100/)
-assert.match(board, /href="\/tasks\/c\/impossible">Impossible · เป็นไปไม่ได้/)
+assert.match(board, /href="\/tasks\/c\/impossible">Impossible problems · เป็นไปไม่ได้/)
 const group = await get('/tasks/c/impossible')
-assert.match(group, /Open to anyone, anywhere/)
+assert.match(group, /Anyone, anywhere can try/)
 assert.equal((group.match(/<article class="card">/g) || []).length, 12)
 const one = raw.prepare("SELECT id FROM task WHERE key = 'imp-lights'").get().id
 const page = await get('/tasks/' + one)

@@ -1,0 +1,326 @@
+{
+ "id": "ordering",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Customers can order from their phones while they sit or queue, and the order reaches the till the café already uses.",
+  "th": "ลูกค้าสั่งจากมือถือได้ทั้งตอนนั่งอยู่และตอนต่อคิว และออเดอร์เข้าระบบหน้าร้านที่คาเฟ่ใช้อยู่แล้ว",
+  "my": "ဖောက်သည်များသည် ထိုင်နေစဉ် သို့မဟုတ် တန်းစီနေစဉ် ဖုန်းမှ မှာယူနိုင်ပြီး မှာယူမှုသည် ကော်ဖီဆိုင်သုံးနေသော ရောင်းချမှုစနစ်သို့ ရောက်သည်။",
+  "zh": "顾客坐着或排队时用手机点单，订单进入咖啡店已在用的收银系统。",
+  "de": "Gäste bestellen am Platz oder in der Warteschlange mit dem Handy, und die Bestellung landet in der Kasse, die das Café schon benutzt."
+ },
+ "n": {
+  "de": "Online-Bestellung für Ihr Café"
+ },
+ "l": {
+  "de": "Bestellungen vom Handy, direkt an Ihre Kasse."
+ },
+ "steps": [
+  {
+   "db": "laptop",
+   "t": {
+    "en": "An ordering page that opens on a phone is made for your café.",
+    "th": "ทำหน้าสั่งอาหารที่เปิดบนมือถือให้คาเฟ่ของคุณ",
+    "my": "သင့်ကော်ဖီဆိုင်အတွက် ဖုန်းပေါ်တွင် ဖွင့်နိုင်သော မှာယူမှုစာမျက်နှာ ပြုလုပ်ပေးသည်။",
+    "zh": "为您的咖啡店做一个能在手机上打开的点单页。",
+    "de": "Für Ihr Café entsteht eine Bestellseite, die sich auf dem Handy öffnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "Orders from the page go to your point-of-sale, built for Clover.",
+    "th": "ออเดอร์จากหน้านี้เข้าระบบขายหน้าร้านของคุณ (ทำแล้วกับ Clover)",
+    "my": "စာမျက်နှာမှ မှာယူမှုများသည် သင့်ရောင်းချမှုစနစ်သို့ သွားသည် (Clover အတွက် ပြုလုပ်ပြီး)။",
+    "zh": "页面上的订单进入您的收银系统（已按 Clover 做好）。",
+    "de": "Bestellungen von der Seite gehen an Ihre Kasse (für Clover gebaut)."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before customers use it",
+    "th": "ก่อนลูกค้าใช้งาน",
+    "my": "ဖောက်သည်များ မသုံးမီ",
+    "zh": "顾客使用之前",
+    "de": "Bevor Gäste es nutzen"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "Customers order from their own phones.",
+    "th": "ลูกค้าสั่งจากมือถือของตัวเอง",
+    "my": "ဖောက်သည်များသည် မိမိတို့ဖုန်းမှ မှာယူသည်။",
+    "zh": "顾客用自己的手机点单。",
+    "de": "Gäste bestellen mit ihrem eigenen Handy."
+   },
+   "who": {
+    "en": "Your customers",
+    "th": "ลูกค้าของคุณ",
+    "my": "သင့်ဖောက်သည်များ",
+    "zh": "您的顾客",
+    "de": "Ihre Gäste"
+   },
+   "time": {
+    "en": "Once it is live",
+    "th": "เมื่อเปิดใช้งาน",
+    "my": "စတင်အသုံးပြုသည့်အခါ",
+    "zh": "上线之后",
+    "de": "Sobald es läuft"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A Thai café POS guide says its ordering is web-based, so guests scan a code and order without downloading an app. QR orders join the same ticket queue as counter orders, tagged by table.",
+    "th": "คู่มือระบบ POS คาเฟ่ของไทยฉบับหนึ่งระบุว่าการสั่งของระบบนั้นทำงานบนเว็บ ลูกค้าสแกนคิวอาร์แล้วสั่งได้โดยไม่ต้องโหลดแอป ออเดอร์จากคิวอาร์เข้าคิวบัตรเดียวกับออเดอร์ที่เคาน์เตอร์ โดยระบุโต๊ะ",
+    "my": "ထိုင်းကော်ဖီဆိုင် POS လမ်းညွှန်တစ်ခုတွင် ၎င်း၏ မှာယူမှုစနစ်သည် ဝဘ်အခြေပြုဖြစ်သဖြင့် ဧည့်သည်များသည် ကုဒ်ကို စကင်ဖတ်၍ အက်ပ်မဒေါင်းလုဒ်ဘဲ မှာယူနိုင်သည်ဟု ဆိုသည်။ QR မှာယူမှုများသည် ကောင်တာမှာယူမှုများနှင့် တူညီသော လက်မှတ်တန်းစီတွင် စားပွဲနံပါတ်ပါ၍ ဝင်သည်။",
+    "zh": "泰国一份咖啡店收银系统指南写明，其点单基于网页，顾客扫码即可点单，无需下载应用；扫码订单与柜台订单进入同一个单据队列，并标明桌号。",
+    "de": "Ein thailändischer Ratgeber für Café-Kassensysteme schreibt, die Bestellung laufe im Web: Gäste scannen einen Code und bestellen ohne App. QR-Bestellungen reihen sich in dieselbe Bonwarteschlange ein wie Bestellungen an der Theke, mit der Tischnummer."
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "t": {
+    "en": "The same guide says the system accepts PromptPay alongside cards, TrueMoney, LINE Pay and ShopeePay, and settles them into one end-of-day figure.",
+    "th": "คู่มือเดียวกันระบุว่าระบบรับพร้อมเพย์พร้อมบัตร TrueMoney LINE Pay และ ShopeePay และรวมเป็นยอดเดียวเมื่อปิดวัน",
+    "my": "ထိုလမ်းညွှန်တွင် စနစ်သည် ကတ်၊ TrueMoney၊ LINE Pay နှင့် ShopeePay တို့နှင့်အတူ PromptPay ကို လက်ခံပြီး နေ့ကုန်ချိန်တွင် ပမာဏတစ်ခုတည်းအဖြစ် ပေါင်းချုပ်သည်ဟု ဆိုသည်။",
+    "zh": "同一份指南写明，系统除银行卡、TrueMoney、LINE Pay 和 ShopeePay 外也收 PromptPay，并在日结时合并为一个数字。",
+    "de": "Derselbe Ratgeber schreibt, das System nehme PromptPay neben Karten, TrueMoney, LINE Pay und ShopeePay an und fasse alles zu einer Zahl am Tagesende zusammen."
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "t": {
+    "en": "The guide says Grab has a direct two-way link with the system. Orders from LINE MAN and ShopeeFood are reconciled on the same screen, and are not synced through a live link.",
+    "th": "คู่มือระบุว่า Grab เชื่อมกับระบบสองทางโดยตรง ส่วนออเดอร์จาก LINE MAN และ ShopeeFood ถูกกระทบยอดบนหน้าจอเดียวกัน ไม่ได้ซิงก์ผ่านการเชื่อมต่อสด",
+    "my": "လမ်းညွှန်တွင် Grab သည် စနစ်နှင့် နှစ်ဖက်တိုက်ရိုက်ချိတ်ဆက်ထားသည်ဟု ဆိုသည်။ LINE MAN နှင့် ShopeeFood မှ မှာယူမှုများကို ဖန်သားပြင်တစ်ခုတည်းတွင် ညှိနှိုင်းစစ်ဆေးပြီး တိုက်ရိုက်ချိတ်ဆက်မှုဖြင့် ထပ်တူမကျပါ။",
+    "zh": "指南写明，Grab 与系统有直接的双向连接；LINE MAN 和 ShopeeFood 的订单在同一块屏幕上对账，不通过实时连接同步。",
+    "de": "Laut Ratgeber ist Grab direkt in beide Richtungen mit dem System verbunden. Bestellungen von LINE MAN und ShopeeFood werden auf demselben Bildschirm abgeglichen und nicht über eine Live-Verbindung synchronisiert."
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "t": {
+    "en": "The Bank of Thailand describes Thai QR Payment as a payment made by scanning a QR code in a mobile banking app, and PromptPay for Corporate as a way for a business to register to receive money from customers.",
+    "th": "ธนาคารแห่งประเทศไทยอธิบาย Thai QR Payment ว่าเป็นการจ่ายเงินโดยสแกนคิวอาร์ในแอปธนาคาร และ PromptPay for Corporate ว่าเป็นช่องทางให้ธุรกิจลงทะเบียนรับเงินจากลูกค้า",
+    "my": "ဘဏ်အော့ဖ်ထိုင်းက Thai QR Payment ကို မိုဘိုင်းဘဏ်အက်ပ်တွင် QR ကုဒ် စကင်ဖတ်၍ ပေးချေခြင်းအဖြစ်လည်းကောင်း၊ PromptPay for Corporate ကို လုပ်ငန်းတစ်ခုက ဖောက်သည်များထံမှ ငွေလက်ခံရန် စာရင်းသွင်းနည်းအဖြစ်လည်းကောင်း ဖော်ပြသည်။",
+    "zh": "泰国央行把 Thai QR Payment 描述为在手机银行应用里扫二维码付款，把 PromptPay for Corporate 描述为企业登记后向客户收款的途径。",
+    "de": "Die Bank von Thailand beschreibt Thai QR Payment als Zahlung durch Scannen eines QR-Codes in einer Mobile-Banking-App und PromptPay for Corporate als Weg, wie sich ein Unternehmen registriert, um Geld von Kundschaft zu erhalten."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "QR ordering for a café, a Fastwork freelancer: a QR per table, an ordering page needing no app, orders listed by time",
+    "th": "ระบบสั่งอาหารผ่านคิวอาร์สำหรับคาเฟ่ โดยฟรีแลนซ์บน Fastwork: คิวอาร์ตามเลขโต๊ะ หน้าสั่งที่ไม่ต้องโหลดแอป รายการออเดอร์เรียงตามเวลา",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦးမှ ကော်ဖီဆိုင်အတွက် QR မှာယူမှုစနစ် — စားပွဲတစ်လုံးစီအတွက် QR၊ အက်ပ်မလိုသော မှာယူမှုစာမျက်နှာ၊ အချိန်အလိုက် မှာယူမှုစာရင်း",
+    "zh": "Fastwork 自由职业者为咖啡店做的扫码点单：每桌一个二维码、无需下载应用的点单页、按时间排列的订单列表",
+    "de": "QR-Bestellung für ein Café von einem Freelancer auf Fastwork: ein QR-Code je Tisch, eine Bestellseite ohne App, Bestellliste nach Zeit"
+   },
+   "p": {
+    "en": "฿3,500, 7 days, 2 revisions",
+    "th": "฿3,500 7 วัน แก้ไข 2 ครั้ง",
+    "my": "฿3,500၊ 7 ရက်၊ ပြင်ဆင်မှု 2 ကြိမ်",
+    "zh": "฿3,500，7 天，修改 2 次",
+    "de": "฿3,500, 7 Tage, 2 Überarbeitungen"
+   },
+   "src": "https://fastwork.co/user/earthyhk/web-development-48594823"
+  },
+  {
+   "t": {
+    "en": "The same freelancer's standard package: up to 20 tables and 60 menu items",
+    "th": "แพ็กเกจมาตรฐานของฟรีแลนซ์รายเดียวกัน: ไม่เกิน 20 โต๊ะ 60 รายการเมนู",
+    "my": "ထိုဖရီးလန်စာတစ်ဦးတည်း၏ စံအစီအစဉ် — စားပွဲ 20 နှင့် မီနူးပစ္စည်း 60 အထိ",
+    "zh": "同一位自由职业者的标准套餐：最多 20 张桌、60 个菜单项",
+    "de": "Das Standardpaket desselben Freelancers: bis zu 20 Tische und 60 Menüpunkte"
+   },
+   "p": {
+    "en": "฿5,000, 10 days, 2 revisions; adding items or tables later is a ฿1,500 add-on",
+    "th": "฿5,000 10 วัน แก้ไข 2 ครั้ง เพิ่มรายการหรือโต๊ะภายหลังเป็นส่วนเสริม ฿1,500",
+    "my": "฿5,000၊ 10 ရက်၊ ပြင်ဆင်မှု 2 ကြိမ်၊ နောက်မှ ပစ္စည်း သို့မဟုတ် စားပွဲထပ်ထည့်လျှင် ฿1,500 ထပ်ဆောင်း",
+    "zh": "฿5,000，10 天，修改 2 次；之后加菜单项或桌数为 ฿1,500 的附加项",
+    "de": "฿5,000, 10 Tage, 2 Überarbeitungen; spätere Ergänzungen von Positionen oder Tischen kosten ฿1,500 extra"
+   },
+   "src": "https://fastwork.co/user/earthyhk/web-development-48594823"
+  },
+  {
+   "t": {
+    "en": "A Thai café POS with web ordering (Papaya)",
+    "th": "ระบบ POS คาเฟ่ของไทยที่มีสั่งอาหารผ่านเว็บ (Papaya)",
+    "my": "ဝဘ်မှာယူမှုပါသော ထိုင်းကော်ဖီဆိုင် POS (Papaya)",
+    "zh": "带网页点单的泰国咖啡店收银系统（Papaya）",
+    "de": "Thailändisches Café-Kassensystem mit Web-Bestellung (Papaya)"
+   },
+   "p": {
+    "en": "฿1,490 (Starter) or ฿2,490 (Pro) a month per outlet",
+    "th": "฿1,490 (Starter) หรือ ฿2,490 (Pro) ต่อเดือนต่อสาขา",
+    "my": "ဆိုင်ခွဲတစ်ခုလျှင် လစဉ် ฿1,490 (Starter) သို့မဟုတ် ฿2,490 (Pro)",
+    "zh": "每个门店每月 ฿1,490（Starter）或 ฿2,490（Pro）",
+    "de": "฿1,490 (Starter) oder ฿2,490 (Pro) im Monat je Standort"
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "t": {
+    "en": "Payment gateway fee on a PromptPay QR payment (Omise)",
+    "th": "ค่าธรรมเนียมเกตเวย์ต่อการจ่ายผ่านพร้อมเพย์คิวอาร์ (Omise)",
+    "my": "PromptPay QR ငွေပေးချေမှုတစ်ခုချင်းရှိ ငွေပေးချေမှုဂိတ်ဝေကြေး (Omise)",
+    "zh": "PromptPay 二维码支付的支付网关费（Omise）",
+    "de": "Gateway-Gebühr für eine PromptPay-QR-Zahlung (Omise)"
+   },
+   "p": {
+    "en": "1.65% of each payment, plus 7% VAT",
+    "th": "1.65% ของการจ่ายแต่ละครั้ง บวก VAT 7%",
+    "my": "ငွေပေးချေမှုတစ်ခုလျှင် 1.65% နှင့် VAT 7% ထပ်ပေါင်း",
+    "zh": "每笔 1.65%，另加 7% 增值税",
+    "de": "1,65 % je Zahlung, plus 7 % MWST"
+   },
+   "src": "https://www.omise.co/pricing/thailand"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a QR ordering system for a café cost?",
+    "th": "ระบบสั่งอาหารผ่านคิวอาร์สำหรับคาเฟ่ราคาเท่าไร",
+    "my": "ကော်ဖီဆိုင်အတွက် QR မှာယူမှုစနစ် ဘယ်လောက်ကျသနည်း။",
+    "zh": "咖啡店的扫码点单系统多少钱？",
+    "de": "Was kostet ein QR-Bestellsystem für ein Café?"
+   },
+   "a": {
+    "en": "One Fastwork freelancer lists ฿3,500 for a basic system built in 7 days and ฿5,000 for a standard one built in 10 days. Hosting, a kitchen display screen and payment processing are not stated in the listing.",
+    "th": "ฟรีแลนซ์บน Fastwork รายหนึ่งระบุ ฿3,500 สำหรับระบบพื้นฐาน (7 วัน) และ ฿5,000 สำหรับระบบมาตรฐาน (10 วัน) รายการไม่ระบุค่าโฮสติ้ง จอครัว และการรับชำระเงิน",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦးသည် အခြေခံစနစ်အတွက် ฿3,500 (7 ရက်) နှင့် စံစနစ်အတွက် ฿5,000 (10 ရက်) ဟု ဖော်ပြသည်။ ထိုစာမျက်နှာတွင် ဟိုစ်တင်ကြေး၊ မီးဖိုချောင်မျက်နှာပြင်နှင့် ငွေပေးချေမှု လုပ်ဆောင်ခကို မဖော်ပြပါ။",
+    "zh": "一位 Fastwork 自由职业者标价：基础系统 ฿3,500（7 天），标准系统 ฿5,000（10 天）。该页面没有写主机托管费、后厨屏幕和收款处理。",
+    "de": "Ein Freelancer auf Fastwork führt ฿3,500 für ein Basissystem (7 Tage) und ฿5,000 für ein Standardsystem (10 Tage) auf. Hosting, ein Küchenbildschirm und die Zahlungsabwicklung sind in der Anzeige nicht angegeben."
+   },
+   "src": "https://fastwork.co/user/earthyhk/web-development-48594823"
+  },
+  {
+   "q": {
+    "en": "Does a customer have to download an app to order?",
+    "th": "ลูกค้าต้องโหลดแอปเพื่อสั่งอาหารหรือไม่",
+    "my": "မှာယူရန် ဖောက်သည်က အက်ပ်ဒေါင်းလုဒ်လုပ်ရပါသလား။",
+    "zh": "顾客点单需要下载应用吗？",
+    "de": "Muss ein Gast zum Bestellen eine App laden?"
+   },
+   "a": {
+    "en": "Papaya's guide says its ordering is web-based: guests scan a code and order without downloading an app, and QR orders join the same ticket queue as counter orders.",
+    "th": "คู่มือของ Papaya ระบุว่าระบบสั่งอาหารทำงานบนเว็บ ลูกค้าสแกนคิวอาร์แล้วสั่งได้โดยไม่ต้องโหลดแอป และออเดอร์จากคิวอาร์เข้าคิวเดียวกับออเดอร์ที่เคาน์เตอร์",
+    "my": "Papaya ၏ လမ်းညွှန်တွင် မှာယူမှုစနစ်သည် ဝဘ်အခြေပြုဖြစ်ကြောင်း၊ ဧည့်သည်များသည် ကုဒ်ကို စကင်ဖတ်၍ အက်ပ်မဒေါင်းလုဒ်ဘဲ မှာယူနိုင်ကြောင်းနှင့် QR မှာယူမှုများသည် ကောင်တာမှာယူမှုများနှင့် တူညီသော လက်မှတ်တန်းစီတွင် ဝင်ကြောင်း ဆိုသည်။",
+    "zh": "Papaya 的指南写明其点单基于网页，顾客扫码即可点单、无需下载应用，扫码订单与柜台订单进入同一个单据队列。",
+    "de": "Der Ratgeber von Papaya schreibt, die Bestellung laufe im Web: Gäste scannen einen Code und bestellen ohne App, und QR-Bestellungen reihen sich in dieselbe Bonwarteschlange ein wie Bestellungen an der Theke."
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "q": {
+    "en": "Can a QR ordering system take PromptPay?",
+    "th": "ระบบสั่งอาหารผ่านคิวอาร์รับพร้อมเพย์ได้ไหม",
+    "my": "QR မှာယူမှုစနစ်က PromptPay ကို လက်ခံနိုင်ပါသလား။",
+    "zh": "扫码点单系统能收 PromptPay 吗？",
+    "de": "Kann ein QR-Bestellsystem PromptPay annehmen?"
+   },
+   "a": {
+    "en": "Papaya's guide lists PromptPay with cards, TrueMoney, LINE Pay and ShopeePay, settled into one end-of-day figure. For QR ordering it gives no separate price.",
+    "th": "คู่มือของ Papaya ระบุพร้อมเพย์ร่วมกับบัตร TrueMoney LINE Pay และ ShopeePay โดยรวมเป็นยอดเดียวเมื่อปิดวัน คู่มือไม่ระบุราคาแยกสำหรับระบบสั่งอาหารผ่านคิวอาร์",
+    "my": "Papaya ၏ လမ်းညွှန်တွင် PromptPay ကို ကတ်၊ TrueMoney၊ LINE Pay နှင့် ShopeePay တို့နှင့်အတူ ဖော်ပြပြီး နေ့ကုန်ချိန်တွင် ပမာဏတစ်ခုတည်းအဖြစ် ပေါင်းချုပ်သည်။ QR မှာယူမှုအတွက် သီးသန့်စျေးနှုန်း မဖော်ပြပါ။",
+    "zh": "Papaya 的指南把 PromptPay 与银行卡、TrueMoney、LINE Pay 和 ShopeePay 并列，日结时合并为一个数字；指南没有给扫码点单单独标价。",
+    "de": "Der Ratgeber von Papaya nennt PromptPay neben Karten, TrueMoney, LINE Pay und ShopeePay, zusammengefasst zu einer Zahl am Tagesende. Für die QR-Bestellung nennt er keinen eigenen Preis."
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "q": {
+    "en": "Can orders from Grab and LINE MAN come into the same system?",
+    "th": "ออเดอร์จาก Grab และ LINE MAN เข้าระบบเดียวกันได้ไหม",
+    "my": "Grab နှင့် LINE MAN မှ မှာယူမှုများ စနစ်တစ်ခုတည်းသို့ ဝင်နိုင်ပါသလား။",
+    "zh": "Grab 和 LINE MAN 的订单能进同一个系统吗？",
+    "de": "Können Bestellungen von Grab und LINE MAN im selben System landen?"
+   },
+   "a": {
+    "en": "In Papaya's guide, Grab has a direct two-way link. Orders from LINE MAN and ShopeeFood are reconciled on the same screen and are not synced through a live link today.",
+    "th": "ในคู่มือของ Papaya Grab เชื่อมต่อสองทางโดยตรง ส่วนออเดอร์จาก LINE MAN และ ShopeeFood กระทบยอดบนหน้าจอเดียวกัน ไม่ได้ซิงก์ผ่านการเชื่อมต่อสดในปัจจุบัน",
+    "my": "Papaya ၏ လမ်းညွှန်တွင် Grab သည် နှစ်ဖက်တိုက်ရိုက်ချိတ်ဆက်ထားသည်။ LINE MAN နှင့် ShopeeFood မှ မှာယူမှုများကို ဖန်သားပြင်တစ်ခုတည်းတွင် ညှိနှိုင်းစစ်ဆေးပြီး ယခုအချိန်တွင် တိုက်ရိုက်ချိတ်ဆက်မှုဖြင့် ထပ်တူမကျပါ။",
+    "zh": "Papaya 的指南写明 Grab 有直接的双向连接；LINE MAN 和 ShopeeFood 的订单目前在同一块屏幕上对账，不通过实时连接同步。",
+    "de": "Im Ratgeber von Papaya ist Grab direkt in beide Richtungen verbunden. Bestellungen von LINE MAN und ShopeeFood werden auf demselben Bildschirm abgeglichen und derzeit nicht über eine Live-Verbindung synchronisiert."
+   },
+   "src": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "q": {
+    "en": "How many tables and menu items does a small QR package cover?",
+    "th": "แพ็กเกจคิวอาร์ขนาดเล็กรองรับกี่โต๊ะและกี่เมนู",
+    "my": "QR အစီအစဉ်သေးတစ်ခုက စားပွဲနှင့် မီနူးပစ္စည်း ဘယ်နှစ်ခု ပါဝင်သနည်း။",
+    "zh": "小型扫码点单套餐包含多少桌和菜单项？",
+    "de": "Wie viele Tische und Menüpunkte deckt ein kleines QR-Paket ab?"
+   },
+   "a": {
+    "en": "On the Fastwork listing, the ฿5,000 package covers up to 20 tables and 60 menu items, and the ฿3,500 package covers one branch and one system. Adding menu items or tables, changing the display or adding languages is a ฿1,500 add-on, priced before work starts.",
+    "th": "ในรายการบน Fastwork แพ็กเกจ ฿5,000 รองรับไม่เกิน 20 โต๊ะและ 60 รายการเมนู ส่วนแพ็กเกจ ฿3,500 รองรับ 1 สาขา 1 ระบบ การเพิ่มรายการเมนูหรือโต๊ะ ปรับหน้าจอ หรือเพิ่มภาษาเป็นส่วนเสริม ฿1,500 ประเมินราคาก่อนเริ่มงาน",
+    "my": "Fastwork စာမျက်နှာတွင် ฿5,000 အစီအစဉ်သည် စားပွဲ 20 နှင့် မီနူးပစ္စည်း 60 အထိ ပါဝင်ပြီး ฿3,500 အစီအစဉ်သည် ဆိုင်ခွဲ 1 ခု၊ စနစ် 1 ခုအတွက် ဖြစ်သည်။ မီနူးပစ္စည်း သို့မဟုတ် စားပွဲ ထပ်ထည့်ခြင်း၊ ပြသပုံပြောင်းခြင်း သို့မဟုတ် ဘာသာစကားထပ်ထည့်ခြင်းသည် ฿1,500 ထပ်ဆောင်းဖြစ်ပြီး အလုပ်မစမီ စျေးနှုန်းကို ခန့်မှန်းသည်။",
+    "zh": "在 Fastwork 页面上，฿5,000 套餐最多含 20 张桌和 60 个菜单项，฿3,500 套餐含 1 家分店、1 套系统。增加菜单项或桌数、调整显示或加语言，属 ฿1,500 的附加项，开工前先估价。",
+    "de": "In der Anzeige auf Fastwork deckt das Paket für ฿5,000 bis zu 20 Tische und 60 Menüpunkte ab, das Paket für ฿3,500 eine Filiale und ein System. Zusätzliche Menüpunkte oder Tische, eine geänderte Anzeige oder weitere Sprachen sind ein Zusatz für ฿1,500, der vor Arbeitsbeginn berechnet wird."
+   },
+   "src": "https://fastwork.co/user/earthyhk/web-development-48594823"
+  }
+ ],
+ "related": [
+  "online-shop",
+  "paybox",
+  "restaurant-desk",
+  "grab",
+  "print",
+  "signs"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Papaya: a Thai café POS guide (QR ordering, PromptPay, delivery apps)",
+    "th": "Papaya: คู่มือระบบ POS คาเฟ่ของไทย (สั่งผ่านคิวอาร์ พร้อมเพย์ แอปเดลิเวอรี่)",
+    "my": "Papaya: ထိုင်းကော်ဖီဆိုင် POS လမ်းညွှန် (QR မှာယူမှု၊ PromptPay၊ ပို့ဆောင်ရေးအက်ပ်များ)",
+    "zh": "Papaya：泰国咖啡店收银系统指南（扫码点单、PromptPay、外卖应用）",
+    "de": "Papaya: Ratgeber zu Café-Kassensystemen in Thailand (QR-Bestellung, PromptPay, Lieferdienst-Apps)"
+   },
+   "href": "https://www.papaya.co.th/blog/cafe-pos-system"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: PromptPay",
+    "th": "ธนาคารแห่งประเทศไทย: พร้อมเพย์",
+    "my": "ဘဏ်အော့ဖ်ထိုင်း: PromptPay",
+    "zh": "泰国央行：PromptPay",
+    "de": "Bank von Thailand: PromptPay"
+   },
+   "href": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "glyphs": [
+  "coffee",
+  "telephone",
+  "scan"
+ ]
+}

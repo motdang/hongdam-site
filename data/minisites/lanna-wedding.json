@@ -1,0 +1,888 @@
+{
+ "id": "lanna-wedding",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A Lanna wedding has several parts: monks, the khwan rite, Lanna dress and a running order. Someone else lines them up.",
+  "th": "งานแต่งล้านนามีหลายส่วน ได้แก่ พระสงฆ์ พิธีสู่ขวัญ ชุดล้านนา และลำดับพิธี บริการนี้จัดให้เข้าที่เข้าทาง",
+  "my": "လန်နာ မင်္ဂလာဆောင်တွင် ရဟန်းများ၊ ခွမ် အခမ်းအနား၊ လန်နာဝတ်စုံနှင့် အစီအစဉ်တို့ ပါဝင်သည်။ ဤဝန်ဆောင်မှုက ၎င်းတို့ကို စနစ်တကျ စီစဉ်ပေးသည်။",
+  "zh": "兰纳婚礼由几个部分组成：僧人、招魂礼、兰纳服饰和流程安排。这项服务把它们安排妥当。",
+  "de": "Eine Lanna-Hochzeit besteht aus mehreren Teilen: Mönche, Khwan-Ritus, Lanna-Tracht und ein Ablaufplan. Dieser Service bringt sie in Ordnung."
+ },
+ "n": {
+  "de": "Lanna-Hochzeitszeremonie"
+ },
+ "l": {
+  "de": "Mönche, Khwan-Ritus, Lanna-Tracht und Ablaufplan."
+ },
+ "steps": [
+  {
+   "db": "lotus",
+   "t": {
+    "en": "Monks invited",
+    "th": "นิมนต์พระสงฆ์",
+    "my": "ရဟန်းများကို ပင့်ဆောင်ခြင်း",
+    "zh": "邀请僧人",
+    "de": "Mönche werden eingeladen"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့ မတိုင်မီ",
+    "zh": "婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "sparkle",
+   "t": {
+    "en": "The khwan rite arranged",
+    "th": "จัดพิธีสู่ขวัญ",
+    "my": "ခွမ် အခမ်းအနား စီစဉ်ခြင်း",
+    "zh": "安排招魂礼",
+    "de": "Der Khwan-Ritus wird organisiert"
+   },
+   "who": {
+    "en": "Hongdam, with the family",
+    "th": "หงส์ดำ ร่วมกับครอบครัว",
+    "my": "ဟုန်ဒမ်နှင့် မိသားစု",
+    "zh": "鸿丹与家人",
+    "de": "Hongdam, mit der Familie"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့ မတိုင်မီ",
+    "zh": "婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "crown",
+   "t": {
+    "en": "Lanna dress fitted",
+    "th": "ลองชุดล้านนา",
+    "my": "လန်နာဝတ်စုံ ဝတ်စမ်းခြင်း",
+    "zh": "试穿兰纳服饰",
+    "de": "Lanna-Tracht wird anprobiert"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့ မတိုင်မီ",
+    "zh": "婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "The running order set",
+    "th": "กำหนดลำดับพิธี",
+    "my": "အစီအစဉ် သတ်မှတ်ခြင်း",
+    "zh": "确定流程",
+    "de": "Der Ablaufplan wird festgelegt"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့ မတိုင်မီ",
+    "zh": "婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Venue, food, photographer and envelopes, charged at cost",
+    "th": "ค่าสถานที่ อาหาร ช่างภาพ และซอง คิดตามจริง",
+    "my": "နေရာ၊ အစားအသောက်၊ ဓာတ်ပုံဆရာနှင့် ငွေထည့်စာအိတ်များကို အမှန်အတိုင်း ကောက်ခံခြင်း",
+    "zh": "场地、餐食、摄影师和红包按实际费用收取",
+    "de": "Ort, Essen, Fotograf und Umschläge werden zu den tatsächlichen Kosten verrechnet"
+   },
+   "who": {
+    "en": "Hongdam and the vendors",
+    "th": "หงส์ดำและผู้ให้บริการ",
+    "my": "ဟုန်ဒမ်နှင့် ဝန်ဆောင်သူများ",
+    "zh": "鸿丹与供应商",
+    "de": "Hongdam und die Dienstleister"
+   },
+   "time": {
+    "en": "Before the day",
+    "th": "ก่อนวันงาน",
+    "my": "မင်္ဂလာနေ့ မတိုင်မီ",
+    "zh": "婚礼当天之前",
+    "de": "Vor dem Tag"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "The legal marriage is registered at the district office (amphoe), apart from the ceremony",
+    "th": "จดทะเบียนสมรสที่อำเภอ แยกจากพิธี",
+    "my": "တရားဝင် လက်ထပ်မှတ်ပုံတင်ခြင်းကို အမ်ဖိုးရုံး (ခရိုင်ရုံး) တွင် ပြုလုပ်ပြီး အခမ်းအနားနှင့် သီးခြားဖြစ်သည်",
+    "zh": "法定结婚登记在县政府（amphoe）办理，与仪式分开",
+    "de": "Die rechtliche Eheschliessung wird beim Standesamt (Amphoe) eingetragen, getrennt von der Zeremonie"
+   },
+   "who": {
+    "en": "You and the district office",
+    "th": "คุณและอำเภอ",
+    "my": "သင်နှင့် အမ်ဖိုးရုံး",
+    "zh": "您与县政府",
+    "de": "Sie und das Standesamt"
+   },
+   "time": {
+    "en": "On a date set with the office",
+    "th": "ตามวันที่นัดกับอำเภอ",
+    "my": "ရုံးနှင့် သဘောတူသတ်မှတ်သည့်နေ့",
+    "zh": "与县政府约定的日期",
+    "de": "An einem mit dem Amt vereinbarten Datum"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "9",
+   "t": {
+    "en": "Monks Thai people usually invite to the Buddhist ceremony at a wedding",
+    "th": "จำนวนพระสงฆ์ที่คนไทยมักนิมนต์มาในพิธีสงฆ์ของงานแต่ง",
+    "my": "မင်္ဂလာဆောင်၏ ဗုဒ္ဓဘာသာ အခမ်းအနားသို့ ထိုင်းလူမျိုးများ များသောအားဖြင့် ပင့်ဆောင်သည့် ရဟန်းအရေအတွက်",
+    "zh": "泰国人在婚礼佛事上通常邀请的僧人人数",
+    "de": "Mönche, die Thailänderinnen und Thailänder meist zur buddhistischen Zeremonie einer Hochzeit einladen"
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "n": "฿170",
+   "t": {
+    "en": "Khantoke dinner: starting price per person at one Chiang Mai caterer",
+    "th": "ขันโตก ราคาเริ่มต้นต่อคน ของผู้รับจัดเลี้ยงรายหนึ่งในเชียงใหม่",
+    "my": "ခန်တုပ် ညစာ - ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူတစ်ဦး၏ တစ်ဦးလျှင် စတင်စျေး",
+    "zh": "康托克（khantoke）晚宴：清迈一家餐饮承办商的人均起步价",
+    "de": "Khantoke-Essen: Startpreis pro Person bei einem Caterer in Chiang Mai"
+   },
+   "src": "https://wiangpingcatering.com/"
+  },
+  {
+   "n": "฿350–1,650",
+   "t": {
+    "en": "Starting price per guest at five Chiang Mai wedding venues listed as Lanna in style or feel",
+    "th": "ราคาเริ่มต้นต่อแขก ของสถานที่จัดงานแต่ง 5 แห่งในเชียงใหม่ที่ระบุว่าเป็นสไตล์หรือบรรยากาศล้านนา",
+    "my": "လန်နာပုံစံ သို့မဟုတ် လန်နာအငွေ့အသက်ရှိဟု ဖော်ပြထားသော ချင်းမိုင် မင်္ဂလာဆောင်နေရာ 5 ခု၏ ဧည့်သည်တစ်ဦးလျှင် စတင်စျေး",
+    "zh": "清迈5个标为兰纳风格或兰纳氛围的婚礼场地，每位宾客的起步价",
+    "de": "Startpreis pro Gast an fünf Hochzeitsorten in Chiang Mai mit Lanna-Stil oder -Atmosphäre"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/venues/"
+  },
+  {
+   "n": "10–15",
+   "t": {
+    "en": "Minutes the mo khwan takes to call the khwan",
+    "th": "นาทีที่หมอขวัญใช้เรียกขวัญ",
+    "my": "မော်ခွမ်က ခွမ်ကို ခေါ်ရာတွင် ကြာမြင့်သည့် မိနစ်",
+    "zh": "摩坤（mo khwan）招魂所用的分钟数",
+    "de": "Minuten, die der Mo Khwan für den Ruf der Khwan braucht"
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  }
+ ],
+ "toy": {
+  "kind": "event",
+  "h": {
+   "en": "What your Lanna wedding costs",
+   "th": "พิธีแต่งงานล้านนาของคุณมีค่าใช้จ่ายเท่าไหร่",
+   "my": "သင့် လန်နာ မင်္ဂလာဆောင် ကုန်ကျစရိတ်",
+   "zh": "您的兰纳婚礼要花多少",
+   "de": "Was Ihre Lanna-Hochzeit kostet"
+  },
+  "noscript": {
+   "en": "The budget builder needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณงบต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ဘတ်ဂျက်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "预算计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Budgetrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "guests": {
+    "min": 10,
+    "max": 200,
+    "step": 10,
+    "start": 50
+   },
+   "venues": [
+    {
+     "id": "home",
+     "n": {
+      "en": "Family home, khantoke from a caterer",
+      "th": "ที่บ้าน ขันโตกจากผู้รับจัดเลี้ยง",
+      "my": "မိသားစုအိမ်၊ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူထံမှ ခန်တုပ်",
+      "zh": "在家，由餐饮承办商提供康托克（khantoke）",
+      "de": "Familienhaus, Khantoke vom Caterer"
+     },
+     "per_head": [
+      170,
+      200
+     ],
+     "src": "https://wiangpingcatering.com/"
+    },
+    {
+     "id": "lanna-house",
+     "n": {
+      "en": "Lanna-style garden or wooden house",
+      "th": "สวนหรือเรือนไม้สไตล์ล้านนา",
+      "my": "လန်နာပုံစံ ဥယျာဉ် သို့မဟုတ် သစ်သားအိမ်",
+      "zh": "兰纳风格的花园或木屋",
+      "de": "Garten oder Holzhaus im Lanna-Stil"
+     },
+     "per_head": [
+      350,
+      1650
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/venues/"
+    },
+    {
+     "id": "hotel",
+     "n": {
+      "en": "Hotel with a Lanna look",
+      "th": "โรงแรมบรรยากาศล้านนา",
+      "my": "လန်နာပုံစံ ဟိုတယ်",
+      "zh": "兰纳风格的酒店",
+      "de": "Hotel im Lanna-Stil"
+     },
+     "per_head": [
+      890,
+      980
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/venues/"
+    }
+   ],
+   "styles": [
+    {
+     "id": "rite",
+     "n": {
+      "en": "Morning khwan rite only",
+      "th": "เฉพาะพิธีสู่ขวัญตอนเช้า",
+      "my": "နံနက်ပိုင်း ခွမ် အခမ်းအနားသာ",
+      "zh": "仅晨间招魂礼",
+      "de": "Nur der Khwan-Ritus am Morgen"
+     },
+     "nofood": true
+    },
+    {
+     "id": "dinner",
+     "n": {
+      "en": "Rite and khantoke dinner",
+      "th": "พิธีสู่ขวัญและงานเลี้ยงขันโตก",
+      "my": "ခွမ် အခမ်းအနားနှင့် ခန်တုပ် ညစာ",
+      "zh": "招魂礼加康托克晚宴",
+      "de": "Ritus und Khantoke-Essen"
+     }
+    }
+   ],
+   "items": [
+    {
+     "id": "monks",
+     "n": {
+      "en": "Offering for nine monks",
+      "th": "เครื่องถวายพระสงฆ์ 9 รูป",
+      "my": "ရဟန်း 9 ပါးအတွက် လှူဒါန်းမှု",
+      "zh": "供养9位僧人",
+      "de": "Gaben für 9 Mönche"
+     },
+     "range": [
+      18000,
+      18000
+     ],
+     "styles": [
+      "rite",
+      "dinner"
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    },
+    {
+     "id": "dress",
+     "n": {
+      "en": "Thai dress hire for the couple, one or two outfits each",
+      "th": "เช่าชุดไทยสำหรับคู่บ่าวสาว คนละ 1–2 ชุด",
+      "my": "စုံတွဲအတွက် ထိုင်းဝတ်စုံ ငှားရမ်းခြင်း၊ တစ်ဦးလျှင် တစ်စုံ သို့မဟုတ် နှစ်စုံ",
+      "zh": "新人泰式礼服租赁，每人1至2套",
+      "de": "Miete thailändischer Tracht für das Paar, je 1 oder 2 Outfits"
+     },
+     "range": [
+      4900,
+      9900
+     ],
+     "styles": [
+      "rite",
+      "dinner"
+     ],
+     "src": "https://fastwork.co/user/nassyluxuryshop/clothing-rental-17420616"
+    },
+    {
+     "id": "photo",
+     "n": {
+      "en": "Photographer package",
+      "th": "แพ็กเกจช่างภาพ",
+      "my": "ဓာတ်ပုံဆရာ ပက်ကေ့ချ်",
+      "zh": "摄影套餐",
+      "de": "Fotografen-Paket"
+     },
+     "range": [
+      7000,
+      40000
+     ],
+     "styles": [
+      "rite",
+      "dinner"
+     ],
+     "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+    },
+    {
+     "id": "music",
+     "n": {
+      "en": "Traditional Thai music ensemble, three hours",
+      "th": "วงดนตรีไทยเดิม สามชั่วโมง",
+      "my": "ထိုင်းရိုးရာ ဂီတအဖွဲ့၊ သုံးနာရီ",
+      "zh": "泰国传统乐队，三小时",
+      "de": "Traditionelles thailändisches Musikensemble, drei Stunden"
+     },
+     "range": [
+      15000,
+      15000
+     ],
+     "styles": [
+      "dinner"
+     ],
+     "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+    }
+   ],
+   "months": [
+    {
+     "m": 1,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry: 0.7 rainy days",
+      "th": "เย็นและแห้ง: ฝนตก 0.7 วัน",
+      "my": "အေးပြီး ခြောက်သွေ့သည်။ မိုးရွာရက် 0.7 ရက်",
+      "zh": "凉爽干燥：雨天0.7天",
+      "de": "Kühl und trocken: 0.7 Regentage"
+     }
+    },
+    {
+     "m": 2,
+     "kind": "dry",
+     "t": {
+      "en": "Dry, getting warmer: 0.9 rainy days",
+      "th": "แห้ง อุ่นขึ้น: ฝนตก 0.9 วัน",
+      "my": "ခြောက်သွေ့ပြီး ပိုပူလာသည်။ မိုးရွာရက် 0.9 ရက်",
+      "zh": "干燥，渐渐变暖：雨天0.9天",
+      "de": "Trocken, wärmer werdend: 0.9 Regentage"
+     }
+    },
+    {
+     "m": 3,
+     "kind": "smoke",
+     "t": {
+      "en": "Smoky skies, the most polluted month in 2017–2021",
+      "th": "ท้องฟ้าหมอกควัน เป็นเดือนที่มลพิษสูงสุดในปี 2017–2021",
+      "my": "မီးခိုးမှုန်များ ဖုံးသောကောင်းကင်၊ 2017–2021 အတွင်း ညစ်ညမ်းဆုံးလ",
+      "zh": "烟霾天空，2017至2021年污染最重的月份",
+      "de": "Verrauchter Himmel, der am stärksten belastete Monat 2017–2021"
+     }
+    },
+    {
+     "m": 4,
+     "kind": "smoke",
+     "t": {
+      "en": "Hot and smoky: the smoke often lasts until Songkran",
+      "th": "ร้อนและควันมาก: ควันมักอยู่ถึงสงกรานต์",
+      "my": "ပူပြီး မီးခိုးများသည်။ မီးခိုးသည် သင်္ကြန်အထိ ကြာတတ်သည်",
+      "zh": "炎热有烟霾：烟霾常持续到宋干节",
+      "de": "Heiss und verraucht: der Rauch hält oft bis Songkran an"
+     }
+    },
+    {
+     "m": 5,
+     "kind": "rain",
+     "t": {
+      "en": "Rains begin: 15.0 rainy days",
+      "th": "ฝนเริ่มมา: ฝนตก 15.0 วัน",
+      "my": "မိုးစတင်ရွာသည်။ မိုးရွာရက် 15.0 ရက်",
+      "zh": "雨季开始：雨天15.0天",
+      "de": "Der Regen beginnt: 15.0 Regentage"
+     }
+    },
+    {
+     "m": 6,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days: 17.1 rainy days",
+      "th": "ฝนตกบ่อย: ฝนตก 17.1 วัน",
+      "my": "မိုးရွာသည့်ရက် များသည်။ မိုးရွာရက် 17.1 ရက်",
+      "zh": "多数日子有雨：雨天17.1天",
+      "de": "An den meisten Tagen Regen: 17.1 Regentage"
+     }
+    },
+    {
+     "m": 7,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days: 18.9 rainy days",
+      "th": "ฝนตกบ่อย: ฝนตก 18.9 วัน",
+      "my": "မိုးရွာသည့်ရက် များသည်။ မိုးရွာရက် 18.9 ရက်",
+      "zh": "多数日子有雨：雨天18.9天",
+      "de": "An den meisten Tagen Regen: 18.9 Regentage"
+     }
+    },
+    {
+     "m": 8,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days: 20.9 rainy days",
+      "th": "ฝนตกบ่อย: ฝนตก 20.9 วัน",
+      "my": "မိုးရွာသည့်ရက် များသည်။ မိုးရွာရက် 20.9 ရက်",
+      "zh": "多数日子有雨：雨天20.9天",
+      "de": "An den meisten Tagen Regen: 20.9 Regentage"
+     }
+    },
+    {
+     "m": 9,
+     "kind": "rain",
+     "t": {
+      "en": "Rain on most days: 17.8 rainy days",
+      "th": "ฝนตกบ่อย: ฝนตก 17.8 วัน",
+      "my": "မိုးရွာသည့်ရက် များသည်။ မိုးရွာရက် 17.8 ရက်",
+      "zh": "多数日子有雨：雨天17.8天",
+      "de": "An den meisten Tagen Regen: 17.8 Regentage"
+     }
+    },
+    {
+     "m": 10,
+     "kind": "rain",
+     "t": {
+      "en": "Rain easing: 11.7 rainy days",
+      "th": "ฝนเริ่มซา: ฝนตก 11.7 วัน",
+      "my": "မိုးနည်းလာသည်။ မိုးရွာရက် 11.7 ရက်",
+      "zh": "雨量减少：雨天11.7天",
+      "de": "Der Regen lässt nach: 11.7 Regentage"
+     }
+    },
+    {
+     "m": 11,
+     "kind": "dry",
+     "t": {
+      "en": "Cool, mostly dry: 4.9 rainy days",
+      "th": "เย็น ฝนน้อย: ฝนตก 4.9 วัน",
+      "my": "အေးပြီး မိုးနည်းသည်။ မိုးရွာရက် 4.9 ရက်",
+      "zh": "凉爽，雨少：雨天4.9天",
+      "de": "Kühl, meist trocken: 4.9 Regentage"
+     }
+    },
+    {
+     "m": 12,
+     "kind": "dry",
+     "t": {
+      "en": "Cool and dry: 1.4 rainy days",
+      "th": "เย็นและแห้ง: ฝนตก 1.4 วัน",
+      "my": "အေးပြီး ခြောက်သွေ့သည်။ မိုးရွာရက် 1.4 ရက်",
+      "zh": "凉爽干燥：雨天1.4天",
+      "de": "Kühl und trocken: 1.4 Regentage"
+     }
+    }
+   ],
+   "months_src": "https://www.chiangmai.net/weather",
+   "smoke_src": "https://www.iqair.com/newsroom/thailand-2021-burning-season",
+   "rain_src": "https://www.chiangmai.net/weather"
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "Khwan is the life essence a person is born with, and Lanna counts 32. A fright, an illness, a fall or a long journey can make it wander. The khwan rite calls it back.",
+    "th": "ขวัญคือสิ่งที่อยู่กับตัวคนมาแต่เกิด ชาวล้านนานับว่ามี 32 ขวัญ เมื่อตกใจ เจ็บป่วย หกล้ม หรือเดินทางไกล ขวัญอาจหนีหาย พิธีสู่ขวัญเรียกขวัญกลับมา",
+    "my": "ခွမ်ဆိုသည်မှာ လူတစ်ဦးက မွေးရာပါ ပါလာသော အသက်၏ အနှစ်သာရဖြစ်ပြီး လန်နာတွင် 32 ခု ရေတွက်သည်။ ကြောက်လန့်ခြင်း၊ ဖျားနာခြင်း၊ လဲကျခြင်း သို့မဟုတ် ခရီးရှည်သွားခြင်းတို့ကြောင့် ခွမ် ပျောက်ဆုံးသွားနိုင်သည်။ ခွမ် အခမ်းအနားက ၎င်းကို ပြန်ခေါ်သည်။",
+    "zh": "魂（khwan）是人与生俱来的生命精魂，兰纳传统数作32个。受到惊吓、生病、跌倒或长途旅行，都可能让魂走失。招魂礼把魂叫回来。",
+    "de": "Khwan ist die Lebenskraft, mit der ein Mensch geboren wird; die Lanna zählen 32. Ein Schreck, eine Krankheit, ein Sturz oder eine lange Reise können sie wandern lassen. Der Khwan-Ritus ruft sie zurück."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "A mo khwan calls the khwan: usually an older man who was ordained as a monk and left the robe. He reads the call over the finished tray, then ties white cotton thread on the wrists, left first. The thread stays on for about 3 days, until it greys.",
+    "th": "หมอขวัญเป็นผู้เรียกขวัญ มักเป็นชายสูงวัยที่เคยบวชเป็นพระแล้วลาสิกขา ท่านอ่านบทเรียกขวัญเหนือขันที่จัดเสร็จ แล้วผูกด้ายฝ้ายดิบสีขาวที่ข้อมือ เริ่มจากข้างซ้าย ด้ายอยู่บนข้อมือราว 3 วันจนออกเทา",
+    "my": "မော်ခွမ် (mo khwan) က ခွမ်ကို ခေါ်သည်။ များသောအားဖြင့် ရဟန်းဝတ်ခဲ့ဖူးပြီး လူထွက်လာသော အသက်ကြီးသူ ယောက်ျား ဖြစ်တတ်သည်။ ပြင်ဆင်ပြီးသော ဗန်းပေါ်တွင် ခေါ်စာကို ရွတ်ပြီးနောက် လက်ကောက်ဝတ်များတွင် ဝါဂွမ်းအဖြူချည်ကို ဘယ်ဘက်မှ စတင်ချည်ပေးသည်။ ချည်ကြိုးသည် မီးခိုးရောင်ဖြစ်သည်အထိ 3 ရက်ခန့် ရှိနေသည်။",
+    "zh": "招魂由“摩坤”（mo khwan）进行，通常是曾出家后还俗的年长男子。他对着布置好的供盘念诵招魂词，再把白色棉线系在手腕上，先系左手。棉线戴3天左右，直到变灰。",
+    "de": "Ein Mo Khwan ruft die Khwan: meist ein älterer Mann, der als Mönch ordiniert war und die Robe wieder abgelegt hat. Er liest den Ruf über dem fertigen Tablett und bindet dann weissen Baumwollfaden um die Handgelenke, zuerst links. Der Faden bleibt etwa 3 Tage, bis er grau wird."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "The northern wedding is called mat mue, tying hands. It opens with morning merit-making by the senior relatives of both families, then the families hold a bai si ritual. The couple's hands are tied, and coins of ฿9, ฿12, ฿21 or ฿99, by belief, go into individual bai si bowls.",
+    "th": "งานแต่งแบบภาคเหนือเรียกว่า “มัดมือ” (mat mue) เริ่มด้วยการทำบุญตอนเช้าโดยผู้อาวุโสของทั้งสองครอบครัว จากนั้นทั้งสองฝ่ายทำพิธีบายศรี มีการมัดมือคู่บ่าวสาว และใส่เหรียญ ฿9 ฿12 ฿21 หรือ ฿99 ตามความเชื่อ ลงในขันบายศรีของแต่ละคน",
+    "my": "မြောက်ပိုင်း မင်္ဂလာဆောင်ကို မတ်မွေ့ (mat mue) ဟု ခေါ်ပြီး လက်ချည်ခြင်းဟု အဓိပ္ပါယ်ရသည်။ မိသားစုနှစ်ဖက်၏ သက်ကြီးရွယ်အိုများက နံနက်ပိုင်း ကုသိုလ်ပြုခြင်းဖြင့် စတင်ပြီး နောက်တွင် မိသားစုများက ဘိုင်ဆီ (bai si) အခမ်းအနား ကျင်းပသည်။ စုံတွဲ၏ လက်များကို ချည်ပေးပြီး ယုံကြည်မှုအလိုက် ฿9၊ ฿12၊ ฿21 သို့မဟုတ် ฿99 တန် ဒင်္ဂါးများကို ဘိုင်ဆီပန်းကန်လေးများတွင် ထည့်သည်။",
+    "zh": "北方的婚礼叫 mat mue，意为系手。它先由双方家庭的长辈在清晨做功德，然后两家举行 bai si（祈福供盘）仪式：新人的手被系上线，按各自的信仰，把฿9、฿12、฿21 或฿99 的硬币放进各自的 bai si 碗里。",
+    "de": "Die nordthailändische Hochzeit heisst Mat Mue, «Hände binden». Sie beginnt mit einer Verdienstzeremonie am Morgen durch die Ältesten beider Familien, danach halten die Familien ein Bai-Si-Ritual ab. Dem Paar werden die Hände gebunden, und je nach Glauben kommen Münzen zu ฿9, ฿12, ฿21 oder ฿99 in einzelne Bai-Si-Schalen."
+   },
+   "src": "https://www.tatnews.org/four-regions-and-a-wedding-guide-to-weddings-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "The northern khwan tray, khan bai si, is a silver or lacquer bowl on a footed stand. It holds tiers of banana leaf folded into points, a ball of steamed sticky rice, a peeled boiled egg, a banana, flowers, incense, candles and white cotton thread for the wrists.",
+    "th": "ขันใบสีแบบล้านนาคือสะหลุง ซึ่งเป็นขันเงินหรือขันลงรักตั้งบนฐาน ใส่ใบตองพับเป็นปลายแหลมเรียงเป็นชั้น ข้าวเหนียวนึ่งปั้นเป็นก้อน ไข่ต้มปอกเปลือก กล้วย ดอกไม้ ธูป เทียน และด้ายฝ้ายดิบสีขาวสำหรับผูกข้อมือ",
+    "my": "မြောက်ပိုင်း ခွမ်ဗန်း ခန်ဘိုင်ဆီ (khan bai si) သည် ခြေထောက်ပါသော အောက်ခံပေါ်တွင် တင်ထားသည့် ငွေ သို့မဟုတ် ယွန်းထည်ပန်းကန် ဖြစ်သည်။ ထိုပန်းကန်ထဲတွင် ချွန်ချွန်ခေါက်ထားသော ငှက်ပျောရွက်အလွှာများ၊ ကောက်ညှင်းပေါင်းလုံး၊ အခွံခွာထားသော ကြက်ဉပြုတ်၊ ငှက်ပျောသီး၊ ပန်း၊ အမွှေးတိုင်၊ ဖယောင်းတိုင်နှင့် လက်ကောက်ဝတ်ချည်ရန် ဝါဂွမ်းအဖြူချည်တို့ ထည့်ထားသည်။",
+    "zh": "北方的招魂供盘叫 khan bai si，是放在底座上的银碗或漆碗，里面有层层折成尖角的香蕉叶、一团糯米饭、一个剥壳水煮蛋、一根香蕉、鲜花、香、蜡烛，以及系手腕用的白色棉线。",
+    "de": "Das nordthailändische Khwan-Tablett, Khan Bai Si, ist eine silberne oder lackierte Schale auf einem Fuss. Darin stehen gestufte, spitz gefaltete Bananenblätter, ein Ball gedämpfter Klebreis, ein geschältes gekochtes Ei, eine Banane, Blumen, Räucherstäbchen, Kerzen und weisser Baumwollfaden für die Handgelenke."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "Thai people usually invite nine monks to the Buddhist ceremony, the first part of the wedding morning. The couple offers the monks food. The monks bless the couple and pray over water that is used later in the ceremony.",
+    "th": "คนไทยมักนิมนต์พระสงฆ์ 9 รูปมาทำพิธีทางพุทธศาสนา ซึ่งเป็นช่วงแรกของพิธีเช้าวันแต่ง คู่บ่าวสาวถวายอาหารแก่พระ พระสงฆ์ให้พรและสวดมนต์เสกน้ำสำหรับใช้ในพิธีช่วงหลัง",
+    "my": "ထိုင်းလူမျိုးများသည် မင်္ဂလာဆောင်နံနက်၏ ပထမအပိုင်းဖြစ်သော ဗုဒ္ဓဘာသာ အခမ်းအနားသို့ ရဟန်း 9 ပါး ပင့်ဆောင်လေ့ရှိသည်။ စုံတွဲက ရဟန်းများကို အစားအစာ လှူသည်။ ရဟန်းများက ဆုမွန်ပေးပြီး နောက်ပိုင်း အခမ်းအနားတွင် သုံးမည့် ရေကို ရွတ်ဖတ်ပေးသည်။",
+    "zh": "泰国人通常邀请9位僧人主持佛事，这是婚礼清晨的第一部分。新人向僧人供养食物，僧人为新人祝福，并诵经加持后面仪式要用的水。",
+    "de": "Thailänderinnen und Thailänder laden zur buddhistischen Zeremonie, dem ersten Teil des Hochzeitsmorgens, meist 9 Mönche ein. Das Paar bietet den Mönchen Speisen an. Die Mönche segnen das Paar und sprechen Gebete über Wasser, das später in der Zeremonie verwendet wird."
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "t": {
+    "en": "Lanna dress for the bride is a silk tube skirt with a teen jok hem, the woven hem of a Lanna tube skirt. The groom wears a silk jacket and pha khao ma.",
+    "th": "ชุดล้านนาของเจ้าสาวคือผ้าซิ่นไหมที่มีตีนจก ซึ่งเป็นชายผ้าทอของซิ่นล้านนา เจ้าบ่าวสวมเสื้อไหมและนุ่งผ้าขาวม้า",
+    "my": "သတို့သမီး၏ လန်နာဝတ်စုံမှာ လန်နာထမီ၏ ရက်ထိုးအနားစဖြစ်သော တီးဂျုပ် (teen jok) ပါသည့် ပိုးထမီဖြစ်သည်။ သတို့သားက ပိုးအင်္ကျီနှင့် ဖာခါအိုးမား (pha khao ma) ဝတ်သည်။",
+    "zh": "新娘的兰纳服饰是丝质筒裙，裙摆缀有 teen jok（ตีนจก，兰纳筒裙的织花裙边）。新郎穿丝质上衣和 pha khao ma。",
+    "de": "Die Lanna-Tracht der Braut ist ein seidener Schlauchrock mit einem Teen-Jok-Saum, dem gewebten Saum eines Lanna-Rocks. Der Bräutigam trägt eine Seidenjacke und ein Pha Khao Ma."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "For a foreigner, registering at a district office (amphoe) takes an affirmation of freedom to marry from the embassy. The other way is to register at home and hold the rite in Thailand.",
+    "th": "ชาวต่างชาติที่จดทะเบียนสมรสที่อำเภอต้องมีหนังสือรับรองสถานภาพโสดจากสถานทูต อีกทางหนึ่งคือจดทะเบียนที่ประเทศของตนแล้วจัดพิธีที่ไทย",
+    "my": "နိုင်ငံခြားသားတစ်ဦးသည် အမ်ဖိုးရုံး (ခရိုင်ရုံး) တွင် မှတ်ပုံတင်ရန် မိမိသံရုံးမှ လက်ထပ်ခွင့်ရှိကြောင်း အတည်ပြုစာ လိုအပ်သည်။ အခြားနည်းမှာ မိမိနိုင်ငံတွင် မှတ်ပုံတင်ပြီး ထိုင်းတွင် အခမ်းအနား ကျင်းပခြင်း ဖြစ်သည်။",
+    "zh": "外国人到县政府（amphoe）登记，需要本国使馆出具的可自由结婚声明。另一种做法是在本国登记，再到泰国举行仪式。",
+    "de": "Für Ausländer braucht die Eintragung beim Standesamt (Amphoe) eine Bestätigung der Ehefähigkeit der eigenen Botschaft. Der andere Weg: zu Hause eintragen lassen und den Ritus in Thailand feiern."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Lanna costume hire at a Chiang Mai shop",
+    "th": "เช่าชุดล้านนาที่ร้านในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ ဆိုင်တစ်ဆိုင်တွင် လန်နာဝတ်စုံ ငှားရမ်းခြင်း",
+    "zh": "清迈一家店的兰纳服饰租赁",
+    "de": "Miete von Lanna-Tracht in einem Laden in Chiang Mai"
+   },
+   "p": {
+    "en": "From ฿280 an outfit; couple sets are priced on request",
+    "th": "เริ่มต้น ฿280 ต่อชุด ชุดคู่สอบถามราคาจากร้าน",
+    "my": "တစ်စုံလျှင် ฿280 မှ စတင်သည်၊ စုံတွဲစုံများကို တောင်းဆိုမှသာ စျေးပေးသည်",
+    "zh": "每套฿280起；情侣套装按询价",
+    "de": "Ab ฿280 pro Outfit; Paarsets auf Anfrage"
+   },
+   "src": "https://siphatsorncostume.com/"
+  },
+  {
+   "t": {
+    "en": "Thai wedding costume hire (Chiang Mai directory text)",
+    "th": "เช่าชุดไทยสำหรับงานแต่ง (ข้อความจากเว็บไดเรกทอรีเชียงใหม่)",
+    "my": "ထိုင်းမင်္ဂလာဆောင်ဝတ်စုံ ငှားရမ်းခြင်း (ချင်းမိုင် လမ်းညွှန်ဝက်ဘ်ဆိုက်ပါ စာသား)",
+    "zh": "泰式婚礼服饰租赁（清迈婚礼目录网站的文字）",
+    "de": "Miete thailändischer Hochzeitskleidung (Text eines Verzeichnisses für Chiang Mai)"
+   },
+   "p": {
+    "en": "Groom's costume from ฿800; bride's Thai costume from ฿1,200",
+    "th": "ชุดเจ้าบ่าวเริ่มต้น ฿800 ชุดไทยเจ้าสาวเริ่มต้น ฿1,200",
+    "my": "သတို့သားဝတ်စုံ ฿800 မှ၊ သတို့သမီး ထိုင်းဝတ်စုံ ฿1,200 မှ",
+    "zh": "新郎服饰฿800起；新娘泰式服饰฿1,200起",
+    "de": "Anzug des Bräutigams ab ฿800; thailändisches Kleid der Braut ab ฿1,200"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/salon/"
+  },
+  {
+   "t": {
+    "en": "Khantoke dinner from a Chiang Mai caterer, per person",
+    "th": "ขันโตกจากผู้รับจัดเลี้ยงในเชียงใหม่ ต่อคน",
+    "my": "ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူထံမှ ခန်တုပ်၊ တစ်ဦးလျှင်",
+    "zh": "清迈餐饮承办商的康托克晚宴，每人",
+    "de": "Khantoke-Essen vom Caterer in Chiang Mai, pro Person"
+   },
+   "p": {
+    "en": "From ฿170; a VIP set from ฿200; a buffet from ฿110",
+    "th": "เริ่มต้น ฿170 สำรับ VIP เริ่มต้น ฿200 บุฟเฟต์เริ่มต้น ฿110",
+    "my": "฿170 မှ၊ VIP အစုံ ฿200 မှ၊ ဘူဖေး ฿110 မှ",
+    "zh": "฿170起；VIP套餐฿200起；自助餐฿110起",
+    "de": "Ab ฿170; VIP-Set ab ฿200; Buffet ab ฿110"
+   },
+   "src": "https://wiangpingcatering.com/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai wedding venues listed as Lanna in style or feel, starting price per guest",
+    "th": "สถานที่จัดงานแต่งในเชียงใหม่ที่ระบุว่าเป็นสไตล์หรือบรรยากาศล้านนา ราคาเริ่มต้นต่อแขก",
+    "my": "လန်နာပုံစံ သို့မဟုတ် လန်နာအငွေ့အသက်ရှိဟု ဖော်ပြထားသော ချင်းမိုင် မင်္ဂလာဆောင်နေရာများ၊ ဧည့်သည်တစ်ဦးလျှင် စတင်စျေး",
+    "zh": "清迈标为兰纳风格或兰纳氛围的婚礼场地，每位宾客起步价",
+    "de": "Hochzeitsorte in Chiang Mai mit Lanna-Stil oder -Atmosphäre, Startpreis pro Gast"
+   },
+   "p": {
+    "en": "฿350 to ฿1,650; the ฿1,650 venue is a Lanna-style wooden house for Thai-Lanna weddings and khantoke dinners",
+    "th": "฿350 ถึง ฿1,650 แห่งที่ ฿1,650 เป็นเรือนไม้สไตล์ล้านนาสำหรับงานแต่งแบบไทย-ล้านนาและงานเลี้ยงขันโตก",
+    "my": "฿350 မှ ฿1,650 အထိ၊ ฿1,650 နေရာမှာ ထိုင်း-လန်နာ မင်္ဂလာဆောင်နှင့် ခန်တုပ် ညစာအတွက် လန်နာပုံစံ သစ်သားအိမ် ဖြစ်သည်",
+    "zh": "฿350至฿1,650；฿1,650的场地是适合泰式兰纳婚礼和康托克晚宴的兰纳风格木屋",
+    "de": "฿350 bis ฿1,650; die Location für ฿1,650 ist ein Holzhaus im Lanna-Stil für thailändisch-lannische Hochzeiten und Khantoke-Essen"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/venues/"
+  },
+  {
+   "t": {
+    "en": "Offering for nine monks, from one Chiang Mai resort's price list",
+    "th": "เครื่องถวายพระสงฆ์ 9 รูป จากรายการราคาของรีสอร์ตแห่งหนึ่งในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ ရီဆော့တစ်ခု၏ စျေးနှုန်းစာရင်းအရ ရဟန်း 9 ပါးအတွက် လှူဒါန်းမှု",
+    "zh": "清迈一家度假村价目表上的供养9位僧人",
+    "de": "Gaben für 9 Mönche laut Preisliste eines Resorts in Chiang Mai"
+   },
+   "p": {
+    "en": "฿18,000 (prices valid from April 2024)",
+    "th": "฿18,000 (ราคาใช้ได้ตั้งแต่เมษายน 2024)",
+    "my": "฿18,000 (စျေးနှုန်းများသည် 2024 ခုနှစ် ဧပြီလမှ စ၍ အသုံးဝင်သည်)",
+    "zh": "฿18,000（价格自2024年4月起有效）",
+    "de": "฿18,000 (Preise gültig ab April 2024)"
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  },
+  {
+   "t": {
+    "en": "Wedding photographer packages, Chiang Mai directory text",
+    "th": "แพ็กเกจช่างภาพงานแต่ง ข้อความจากเว็บไดเรกทอรีเชียงใหม่",
+    "my": "မင်္ဂလာဆောင် ဓာတ်ပုံဆရာ ပက်ကေ့ချ်များ - ချင်းမိုင် လမ်းညွှန်ဝက်ဘ်ဆိုက်ပါ စာသား",
+    "zh": "婚礼摄影套餐（清迈目录网站的文字）",
+    "de": "Hochzeitsfotograf-Pakete (Text eines Verzeichnisses für Chiang Mai)"
+   },
+   "p": {
+    "en": "Packages start between ฿7,000 and ฿40,000; full packages run from ฿40,000 into the hundreds of thousands",
+    "th": "แพ็กเกจเริ่มต้นระหว่าง ฿7,000 ถึง ฿40,000 แพ็กเกจครบวงจรตั้งแต่ ฿40,000 ไปจนถึงหลักแสน",
+    "my": "ပက်ကေ့ချ်များသည် ฿7,000 မှ ฿40,000 ကြား စတင်သည်၊ ပြည့်စုံသော ပက်ကေ့ချ်များသည် ฿40,000 မှ သိန်းချီအထိ ရှိသည်",
+    "zh": "套餐起步价在฿7,000至฿40,000之间；全包套餐฿40,000起，高至数十万",
+    "de": "Pakete beginnen zwischen ฿7,000 und ฿40,000; Komplettpakete reichen von ฿40,000 bis in die Hunderttausende"
+   },
+   "src": "https://www.centerwedding.com/chiang-mai/photographers/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a Lanna wedding ceremony?",
+    "th": "พิธีแต่งงานแบบล้านนาคืออะไร",
+    "my": "လန်နာ မင်္ဂလာဆောင် အခမ်းအနားဆိုတာ ဘာလဲ",
+    "zh": "兰纳婚礼仪式是什么",
+    "de": "Was ist eine Lanna-Hochzeitszeremonie?"
+   },
+   "a": {
+    "en": "TAT News calls the northern Thai wedding mat mue, tying hands, and describes it as a simple ceremony rooted in self-sufficiency. It starts with morning merit-making by the senior relatives of both families, then the families hold the bai si ritual. The site adds that younger couples now blend it with central Thai rituals.",
+    "th": "TAT News เรียกงานแต่งแบบภาคเหนือว่า “มัดมือ” และบรรยายว่าเป็นพิธีเรียบง่ายที่มีรากฐานจากการพึ่งตนเอง เริ่มด้วยการทำบุญตอนเช้าโดยผู้อาวุโสของทั้งสองครอบครัว จากนั้นทั้งสองฝ่ายทำพิธีบายศรี เว็บไซต์เดียวกันระบุว่าคู่บ่าวสาวรุ่นใหม่ผสมพิธีนี้กับพิธีแบบภาคกลาง",
+    "my": "TAT News က ထိုင်းမြောက်ပိုင်း မင်္ဂလာဆောင်ကို မတ်မွေ့ (mat mue) ဟု ခေါ်ပြီး ကိုယ်ပိုင်အားထားမှုအပေါ် အခြေခံသည့် ရိုးရှင်းသော အခမ်းအနားဟု ဖော်ပြသည်။ မိသားစုနှစ်ဖက်၏ သက်ကြီးရွယ်အိုများ နံနက်ပိုင်း ကုသိုလ်ပြုခြင်းဖြင့် စတင်ပြီး နောက်တွင် မိသားစုများက ဘိုင်ဆီ ဓလေ့ ကျင်းပသည်။ လူငယ်စုံတွဲများက ၎င်းကို ထိုင်းအလယ်ပိုင်း ဓလေ့များနှင့် ရောစပ်လာကြကြောင်း ထိုဆိုက်က ထပ်ဖော်ပြသည်။",
+    "zh": "TAT News 把泰国北部的婚礼称为 mat mue（系手），形容它是一种以自给自足为根基的简朴仪式。仪式先由双方家庭的长辈在清晨做功德，随后两家举行 bai si 仪式。该网站还提到，年轻一代现在把它与泰国中部的仪式混合在一起。",
+    "de": "TAT News nennt die nordthailändische Hochzeit Mat Mue, «Hände binden», und beschreibt sie als einfache Zeremonie, die in der Selbstversorgung wurzelt. Sie beginnt mit einer Verdienstzeremonie am Morgen durch die Ältesten beider Familien, danach halten die Familien das Bai-Si-Ritual ab. Die Seite ergänzt, dass jüngere Paare sie heute mit zentralthailändischen Ritualen mischen."
+   },
+   "src": "https://www.tatnews.org/four-regions-and-a-wedding-guide-to-weddings-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "What happens in the khwan rite?",
+    "th": "พิธีสู่ขวัญมีขั้นตอนอย่างไร",
+    "my": "ခွမ် အခမ်းအနားတွင် ဘာတွေ ဖြစ်သလဲ",
+    "zh": "招魂礼的过程是什么",
+    "de": "Was geschieht beim Khwan-Ritus?"
+   },
+   "a": {
+    "en": "A mo khwan calls the khwan of the bride and groom over the bai si tray, which takes about 10–15 minutes. White cotton thread is then tied on the wrists. Mot Dang describes it as a folk rite within Buddhist Thailand, not a Buddhist ordinance.",
+    "th": "หมอขวัญเรียกขวัญของเจ้าสาวและเจ้าบ่าวเหนือขันใบสี ใช้เวลาราว 10–15 นาที จากนั้นผูกด้ายฝ้ายดิบสีขาวที่ข้อมือ มดแดงบรรยายว่าเป็นพิธีของชาวบ้านในสังคมไทยพุทธ ไม่ใช่พิธีกรรมตามหลักพุทธศาสนา",
+    "my": "မော်ခွမ်က သတို့သားနှင့် သတို့သမီး၏ ခွမ်ကို ဘိုင်ဆီဗန်းပေါ်တွင် ခေါ်ပြီး မိနစ် 10–15 ခန့် ကြာသည်။ ထို့နောက် လက်ကောက်ဝတ်များတွင် ဝါဂွမ်းအဖြူချည်ကို ချည်ပေးသည်။ Mot Dang က ၎င်းကို ဗုဒ္ဓဘာသာ ထိုင်းနိုင်ငံအတွင်းရှိ ရိုးရာဓလေ့အခမ်းအနားတစ်ခုဟု ဖော်ပြပြီး ဗုဒ္ဓဘာသာ ပညတ်ချက် မဟုတ်ဟု ဆိုသည်။",
+    "zh": "摩坤（mo khwan）对着 bai si 供盘为新娘新郎招魂，大约需要10–15分钟，随后把白色棉线系在手腕上。Mot Dang 把它描述为泰国佛教社会中的民间仪式，而不是佛教的规定。",
+    "de": "Ein Mo Khwan ruft die Khwan von Braut und Bräutigam über dem Bai-Si-Tablett, das dauert etwa 10–15 Minuten. Danach wird weisser Baumwollfaden um die Handgelenke gebunden. Mot Dang beschreibt den Ritus als Volksbrauch im buddhistischen Thailand, nicht als buddhistische Vorschrift."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "q": {
+    "en": "What does Lanna dress hire cost?",
+    "th": "เช่าชุดล้านนาราคาเท่าไหร่",
+    "my": "လန်နာဝတ်စုံ ငှားရမ်းခ ဘယ်လောက်လဲ",
+    "zh": "租兰纳服饰要多少钱",
+    "de": "Was kostet die Miete von Lanna-Tracht?"
+   },
+   "a": {
+    "en": "One Chiang Mai shop lists hire from ฿280. Depending on the package, an outfit covers the shirt and tube skirt or trousers, plus a sash, belt and accessories. Couple sets are priced on request, and the final price depends on the outfit, the hire period and the accessories.",
+    "th": "ร้านเช่าชุดล้านนาแห่งหนึ่งในเชียงใหม่ระบุราคาเช่าเริ่มต้น ฿280 ตามแพ็กเกจ แต่ละชุดมีเสื้อ ผ้าซิ่นหรือกางเกง รวมถึงสไบ เข็มขัด และเครื่องประดับ ชุดคู่สอบถามราคากับร้าน ราคาสุดท้ายขึ้นกับแบบชุด ระยะเวลาเช่า และเครื่องประดับ",
+    "my": "ချင်းမိုင်ရှိ ဆိုင်တစ်ဆိုင်က ငှားရမ်းခကို ฿280 မှ စတင်ဖော်ပြသည်။ ပက်ကေ့ချ်အလိုက် ဝတ်စုံတစ်စုံတွင် အင်္ကျီ၊ ထမီ သို့မဟုတ် ဘောင်းဘီနှင့် ပခုံးတင်ပုဝါ၊ ခါးပတ်၊ အဆင်တန်ဆာများ ပါဝင်သည်။ စုံတွဲစုံများကို ဆိုင်ထံ စျေးမေးရပြီး နောက်ဆုံးစျေးမှာ ဝတ်စုံပုံစံ၊ ငှားသည့်ကာလနှင့် အဆင်တန်ဆာများပေါ် မူတည်သည်။",
+    "zh": "清迈一家店标出租金从฿280起。按套餐不同，一套包含上衣和筒裙或裤子，另配披肩、腰带和饰品。情侣套装按询价，最终价格取决于款式、租期和饰品。",
+    "de": "Ein Laden in Chiang Mai nennt Mietpreise ab ฿280. Je nach Paket gehören Hemd und Schlauchrock oder Hose dazu, dazu Schärpe, Gürtel und Schmuck. Paarsets werden auf Anfrage berechnet; der Endpreis hängt von Outfit, Mietdauer und Schmuck ab."
+   },
+   "src": "https://siphatsorncostume.com/"
+  },
+  {
+   "q": {
+    "en": "Why nine monks?",
+    "th": "ทำไมต้องนิมนต์พระ 9 รูป",
+    "my": "ရဟန်း 9 ပါး ဘာကြောင့်လဲ",
+    "zh": "为什么是9位僧人",
+    "de": "Warum 9 Mönche?"
+   },
+   "a": {
+    "en": "The Thailand Foundation writes that Thai people usually invite nine monks and does not say why. Thai Rath writes that nine is the highest lucky number in Thai belief, and that the word for nine, kao, sounds like kao, to step forward.",
+    "th": "Thailand Foundation ระบุว่าคนไทยมักนิมนต์พระสงฆ์ 9 รูป แต่ไม่ได้บอกเหตุผล ไทยรัฐเขียนว่าเลข 9 เป็นเลขมงคลสูงสุดในความเชื่อของคนไทย และคำว่า “เก้า” ออกเสียงคล้าย “ก้าว” ที่หมายถึงความก้าวหน้า",
+    "my": "Thailand Foundation က ထိုင်းလူမျိုးများ ရဟန်း 9 ပါး ပင့်လေ့ရှိကြောင်း ရေးပြီး အကြောင်းရင်းကို မဖော်ပြပါ။ Thai Rath က ထိုင်းယုံကြည်မှုတွင် 9 သည် ကံကောင်းသော ကိန်းအမြင့်ဆုံးဖြစ်ပြီး ကိုး (kao) ဟူသော စကားလုံးသည် ရှေ့သို့ခြေလှမ်းခြင်း (kao) နှင့် အသံတူကြောင်း ရေးသည်။",
+    "zh": "Thailand Foundation 写道，泰国人通常邀请9位僧人，但没有说明原因。《泰叻报》（Thai Rath）写道，在泰国人的信仰中，9是最吉利的数字，而“九”一词 kao 的发音与“迈步向前”的 kao 相近。",
+    "de": "Die Thailand Foundation schreibt, dass Thailänderinnen und Thailänder meist 9 Mönche einladen, und nennt keinen Grund. Thai Rath schreibt, dass die 9 im thailändischen Glauben die höchste Glückszahl ist und dass das Wort für neun, kao, wie kao klingt, «vorwärts schreiten»."
+   },
+   "src": "https://www.thairath.co.th/horoscope/belief/2946737"
+  },
+  {
+   "q": {
+    "en": "How is it different from a central Thai wedding?",
+    "th": "ต่างจากงานแต่งแบบภาคกลางอย่างไร",
+    "my": "ထိုင်းအလယ်ပိုင်း မင်္ဂလာဆောင်နှင့် ဘာကွာသလဲ",
+    "zh": "与泰国中部的婚礼有何不同",
+    "de": "Was unterscheidet sie von einer zentralthailändischen Hochzeit?"
+   },
+   "a": {
+    "en": "In the rod nam sang ceremony, guests pour water from a conch shell over the couple's hands while giving blessings and a money envelope. The Thailand Foundation writes that in the north, holy threads are bound around the couple's wrists as an alternative to the shell ceremony.",
+    "th": "ในพิธีรดน้ำสังข์ แขกรินน้ำจากสังข์รดมือคู่บ่าวสาวพร้อมอวยพรและมอบซอง Thailand Foundation ระบุว่าทางภาคเหนือมีการผูกด้ายมงคลที่ข้อมือคู่บ่าวสาวแทนพิธีสังข์",
+    "my": "ရော့နမ်ဆန်း (rod nam sang) အခမ်းအနားတွင် ဧည့်သည်များက ဆုမွန်ပေးကာ ငွေစာအိတ်ပေးရင်း စုံတွဲ၏ လက်ပေါ်သို့ ခရုခွံမှ ရေလောင်းသည်။ မြောက်ပိုင်းတွင် ခရုခွံအခမ်းအနားအစား စုံတွဲ၏ လက်ကောက်ဝတ်များတွင် မင်္ဂလာချည်ကြိုးများ ချည်ပေးကြောင်း Thailand Foundation က ရေးသည်။",
+    "zh": "在 rod nam sang（浇海螺水）仪式中，宾客一边送上祝福和红包，一边用海螺壳把圣水浇在新人手上。Thailand Foundation 写道，在北部，则是在新人手腕上系圣线，代替海螺仪式。",
+    "de": "Bei der Rod-Nam-Sang-Zeremonie giessen die Gäste Wasser aus einer Muschel über die Hände des Paares und geben dabei Segenswünsche und einen Geldumschlag. Die Thailand Foundation schreibt, dass im Norden stattdessen heilige Fäden um die Handgelenke des Paares gebunden werden."
+   },
+   "src": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "q": {
+    "en": "Does a Lanna ceremony make us legally married?",
+    "th": "พิธีแต่งงานล้านนาทำให้สมรสตามกฎหมายหรือไม่",
+    "my": "လန်နာ အခမ်းအနားဖြင့် တရားဝင် လက်ထပ်ပြီးသားဖြစ်သလား",
+    "zh": "兰纳仪式能让我们在法律上结婚吗",
+    "de": "Sind wir mit einer Lanna-Zeremonie rechtlich verheiratet?"
+   },
+   "a": {
+    "en": "No. Mot Dang's page states that a rite in Thailand is not a legal marriage. A marriage is legal when it is registered at a district office (amphoe). The registration is a separate step from the ceremony.",
+    "th": "ไม่ หน้าของมดแดงระบุว่าพิธีกรรมในไทยไม่ใช่การสมรสตามกฎหมาย การสมรสมีผลทางกฎหมายเมื่อจดทะเบียนที่อำเภอ การจดทะเบียนเป็นอีกขั้นตอนหนึ่งแยกจากพิธี",
+    "my": "မဟုတ်ပါ။ Mot Dang စာမျက်နှာအရ ထိုင်းနိုင်ငံရှိ ဓလေ့အခမ်းအနားသည် တရားဝင် လက်ထပ်ခြင်း မဟုတ်ပါ။ အမ်ဖိုးရုံး (ခရိုင်ရုံး) တွင် မှတ်ပုံတင်မှသာ လက်ထပ်မှု တရားဝင်သည်။ မှတ်ပုံတင်ခြင်းသည် အခမ်းအနားနှင့် သီးခြား အဆင့်တစ်ခု ဖြစ်သည်။",
+    "zh": "不能。Mot Dang 的页面指出，在泰国，仪式不是法律上的婚姻。婚姻要在县政府（amphoe）登记才具法律效力。登记是与仪式分开的另一步。",
+    "de": "Nein. Die Seite von Mot Dang hält fest, dass ein Ritus in Thailand keine rechtsgültige Ehe ist. Rechtsgültig wird eine Ehe mit der Eintragung beim Standesamt (Amphoe). Die Eintragung ist ein eigener Schritt neben der Zeremonie."
+   },
+   "src": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "q": {
+    "en": "What does a khantoke dinner cost?",
+    "th": "ขันโตกมื้อเย็นราคาเท่าไหร่",
+    "my": "ခန်တုပ် ညစာ ဘယ်လောက်ကျသလဲ",
+    "zh": "康托克晚宴要多少钱",
+    "de": "Was kostet ein Khantoke-Essen?"
+   },
+   "a": {
+    "en": "One Chiang Mai caterer lists a khantoke dinner, a Lanna-style banquet, from ฿170 a person. Its buffet starts at ฿110 and its VIP set at ฿200. Table, chair and tent hire is listed as a separate service.",
+    "th": "ผู้รับจัดเลี้ยงรายหนึ่งในเชียงใหม่ระบุขันโตก ซึ่งเป็นโต๊ะอาหารแบบล้านนา เริ่มต้นที่ ฿170 ต่อคน บุฟเฟต์เริ่มต้น ฿110 และสำรับ VIP เริ่มต้น ฿200 การเช่าโต๊ะ เก้าอี้ และเต็นท์แยกเป็นอีกบริการหนึ่ง",
+    "my": "ချင်းမိုင်ရှိ စားသောက်ဖွယ်ရာ ဝန်ဆောင်သူတစ်ဦးက လန်နာပုံစံ စားပွဲဖြစ်သော ခန်တုပ်ကို တစ်ဦးလျှင် ฿170 မှ စတင်ဖော်ပြသည်။ ဘူဖေးသည် ฿110 မှ၊ VIP အစုံသည် ฿200 မှ စတင်သည်။ စားပွဲ၊ ထိုင်ခုံနှင့် တဲ ငှားရမ်းခြင်းကို သီးခြားဝန်ဆောင်မှုအဖြစ် ဖော်ပြသည်။",
+    "zh": "清迈一家餐饮承办商标明，康托克（khantoke，兰纳式宴席）人均฿170起，自助餐฿110起，VIP套餐฿200起。桌椅和帐篷租赁另列为单独服务。",
+    "de": "Ein Caterer in Chiang Mai nennt ein Khantoke-Essen, ein Bankett im Lanna-Stil, ab ฿170 pro Person. Das Buffet beginnt bei ฿110, das VIP-Set bei ฿200. Miete von Tischen, Stühlen und Zelt wird als eigener Service geführt."
+   },
+   "src": "https://wiangpingcatering.com/"
+  },
+  {
+   "q": {
+    "en": "What does a Thai wedding ceremony package cost at a resort?",
+    "th": "แพ็กเกจพิธีแต่งงานแบบไทยที่รีสอร์ตราคาเท่าไหร่",
+    "my": "ရီဆော့တွင် ထိုင်းမင်္ဂလာဆောင် အခမ်းအနား ပက်ကေ့ချ် ဘယ်လောက်လဲ",
+    "zh": "度假村的泰式婚礼仪式套餐要多少钱",
+    "de": "Was kostet ein Paket für eine thailändische Hochzeitszeremonie im Resort?"
+   },
+   "a": {
+    "en": "Anantara Chiang Mai Resort lists a Thai wedding at ฿189,000. It includes a groom's procession with dancers and long drums, wrist binding, a Thai music ensemble, chairs for up to 100 guests and two nights in a suite for the couple. An offering for nine monks adds ฿18,000. The prices are valid from April 2024.",
+    "th": "รีสอร์ต Anantara เชียงใหม่ระบุพิธีแต่งงานแบบไทยที่ ฿189,000 รวมขบวนเจ้าบ่าวพร้อมนักรำและกลองยาว การผูกข้อมือ วงดนตรีไทย เก้าอี้สำหรับแขกไม่เกิน 100 คน และห้องสวีท 2 คืนสำหรับคู่บ่าวสาว เครื่องถวายพระสงฆ์ 9 รูปเพิ่ม ฿18,000 ราคาใช้ได้ตั้งแต่เมษายน 2024",
+    "my": "Anantara ချင်းမိုင် ရီဆော့က ထိုင်းမင်္ဂလာဆောင်ကို ฿189,000 ဖြင့် ဖော်ပြသည်။ အကသမားများနှင့် ဗုံရှည်ပါသော သတို့သား လာရောက်ပွဲ၊ လက်ကောက်ဝတ်ချည်ခြင်း၊ ထိုင်းဂီတအဖွဲ့၊ ဧည့်သည် 100 အထိ ထိုင်ခုံများနှင့် စုံတွဲအတွက် စွီးခန်း 2 ညတို့ ပါဝင်သည်။ ရဟန်း 9 ပါးအတွက် လှူဒါန်းမှုက ฿18,000 ထပ်တိုးသည်။ စျေးနှုန်းများသည် 2024 ခုနှစ် ဧပြီလမှ စ၍ အသုံးဝင်သည်။",
+    "zh": "清迈 Anantara 度假村标出泰式婚礼฿189,000，含新郎迎亲队伍（舞者和长鼓）、系腕线、泰国传统乐队、最多100位宾客的座椅，以及新人两晚套房。供养9位僧人另加฿18,000。价格自2024年4月起有效。",
+    "de": "Das Anantara Chiang Mai Resort nennt für eine thailändische Hochzeit ฿189,000. Darin sind ein Umzug des Bräutigams mit Tänzern und langen Trommeln, das Binden der Handgelenke, ein thailändisches Musikensemble, Stühle für bis zu 100 Gäste und zwei Nächte in einer Suite für das Paar enthalten. Gaben für 9 Mönche kosten ฿18,000 extra. Die Preise gelten ab April 2024."
+   },
+   "src": "https://www.anantara.com/uploads/minor/anantara/documents/anantara-chiang-mai-resort/wedding/achm_weddings_brochure_june-2024.pdf"
+  }
+ ],
+ "related": [
+  "su-khwan",
+  "wedding",
+  "bride",
+  "date-pick",
+  "legalise",
+  "tribute"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: a Lanna honeymoon with a su khwan rite and an optional Lanna wedding",
+    "th": "มดแดง: ฮันนีมูนล้านนา พร้อมพิธีสู่ขวัญ และงานแต่งล้านนาตามต้องการ",
+    "my": "Mot Dang - လန်နာ ဟန်နီမွန်း၊ စုခွမ်း ဓလေ့ပြုလုပ်ခြင်းနှင့် လိုလျှင် လန်နာမင်္ဂလာပွဲ",
+    "zh": "Mot Dang：兰纳蜜月，含素昆（su khwan）仪式，可加办兰纳婚礼",
+    "de": "Mot Dang: Lanna-Flitterwochen mit Su-Khwan-Ritual und auf Wunsch einer Lanna-Hochzeit"
+   },
+   "href": "https://motdang.net/sites/su-khwan"
+  },
+  {
+   "t": {
+    "en": "Thailand Foundation: a Thai wedding, from the morning ceremony to the water pouring",
+    "th": "Thailand Foundation: งานแต่งงานแบบไทย ตั้งแต่พิธีเช้าถึงพิธีรดน้ำสังข์",
+    "my": "Thailand Foundation - ထိုင်းမင်္ဂလာဆောင်၊ နံနက်ပိုင်း အခမ်းအနားမှ ရေလောင်းခြင်းအထိ",
+    "zh": "Thailand Foundation：泰式婚礼，从晨间仪式到浇水祝福",
+    "de": "Thailand Foundation: eine thailändische Hochzeit, von der Morgenzeremonie bis zum Wassergiessen"
+   },
+   "href": "https://thailandfoundation.or.th/thai-wedding/"
+  },
+  {
+   "t": {
+    "en": "TAT News: four regions and a wedding guide to weddings in Thailand",
+    "th": "TAT News: คู่มืองานแต่งงานในสี่ภาคของไทย",
+    "my": "TAT News - ထိုင်းနိုင်ငံ ဒေသလေးခု၏ မင်္ဂလာဆောင်လမ်းညွှန်",
+    "zh": "TAT News：泰国四个地区的婚礼指南",
+    "de": "TAT News: die vier Regionen Thailands und ein Hochzeitsführer"
+   },
+   "href": "https://www.tatnews.org/four-regions-and-a-wedding-guide-to-weddings-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Chiang Mai wedding venues and vendors, with starting prices",
+    "th": "สถานที่และผู้ให้บริการงานแต่งในเชียงใหม่ พร้อมราคาเริ่มต้น",
+    "my": "ချင်းမိုင် မင်္ဂလာဆောင်နေရာများနှင့် ဝန်ဆောင်သူများ၊ စတင်စျေးနှုန်းများနှင့်တကွ",
+    "zh": "清迈婚礼场地与供应商及起步价",
+    "de": "Hochzeitsorte und Dienstleister in Chiang Mai mit Startpreisen"
+   },
+   "href": "https://www.centerwedding.com/chiang-mai/"
+  }
+ ],
+ "glyphs": [
+  "phuang-malai",
+  "lantern",
+  "lotus"
+ ]
+}

@@ -1,0 +1,699 @@
+{
+ "id": "stay-booking",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Booking sites keep a share of each room they sell. On your own booking website, guests book and pay you directly.",
+  "th": "เว็บจองห้องพักหักส่วนแบ่งจากห้องที่ขายได้แต่ละห้อง บนเว็บจองของคุณเอง แขกจองและจ่ายตรงกับคุณ",
+  "my": "ဘွတ်ကင်ဝက်ဘ်ဆိုက်များသည် ရောင်းရသည့် အခန်းတစ်ခန်းစီမှ အချိုးတစ်ရပ်ကို ယူကြသည်။ သင့်ကိုယ်ပိုင် ဘွတ်ကင်ဝက်ဘ်ဆိုက်တွင် ဧည့်သည်များက ဘွတ်ကင်လုပ်ပြီး သင့်ထံ တိုက်ရိုက်ပေးချေကြသည်။",
+  "zh": "订房网站会从售出的每间客房中抽取一部分。在您自己的订房网站上，客人预订后直接付款给您。",
+  "de": "Buchungsportale behalten einen Teil jedes verkauften Zimmers. Auf Ihrer eigenen Buchungswebsite buchen die Gäste und zahlen direkt an Sie."
+ },
+ "n": {
+  "de": "Buchungswebsite für Ihr Hotel"
+ },
+ "l": {
+  "de": "Gäste buchen auf Ihrer Seite und zahlen direkt an Sie."
+ },
+ "steps": [
+  {
+   "db": "home",
+   "t": {
+    "en": "Your booking website is built for your hotel or rental",
+    "th": "สร้างเว็บรับจองสำหรับโรงแรมหรือที่พักให้เช่าของคุณ",
+    "my": "သင့်ဟိုတယ် သို့မဟုတ် ငှားရမ်းသည့်နေရာအတွက် ဘွတ်ကင်ဝက်ဘ်ဆိုက် တည်ဆောက်ခြင်း",
+    "zh": "为您的酒店或出租房搭建订房网站",
+    "de": "Ihre Buchungswebsite wird für Ihr Hotel oder Ihre Ferienunterkunft gebaut"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "Guests book on your own site",
+    "th": "แขกจองบนเว็บของคุณเอง",
+    "my": "ဧည့်သည်များ သင့်ကိုယ်ပိုင်ဆိုက်တွင် ဘွတ်ကင်လုပ်ခြင်း",
+    "zh": "客人在您自己的网站上预订",
+    "de": "Gäste buchen auf Ihrer eigenen Seite"
+   },
+   "who": {
+    "en": "Guests",
+    "th": "แขก",
+    "my": "ဧည့်သည်များ",
+    "zh": "客人",
+    "de": "Gäste"
+   },
+   "time": {
+    "en": "Once the site is up",
+    "th": "เมื่อเว็บพร้อมแล้ว",
+    "my": "ဝက်ဘ်ဆိုက်ပြီးစီးသည့်အခါ",
+    "zh": "网站上线后",
+    "de": "Sobald die Seite steht"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Guests pay you directly, by PromptPay",
+    "th": "แขกจ่ายตรงกับคุณด้วยพร้อมเพย์",
+    "my": "ဧည့်သည်များက PromptPay ဖြင့် သင့်ထံ တိုက်ရိုက်ပေးချေခြင်း",
+    "zh": "客人通过 PromptPay 直接付款给您",
+    "de": "Gäste zahlen direkt an Sie, per PromptPay"
+   },
+   "who": {
+    "en": "Guests",
+    "th": "แขก",
+    "my": "ဧည့်သည်များ",
+    "zh": "客人",
+    "de": "Gäste"
+   },
+   "time": {
+    "en": "At booking",
+    "th": "ตอนจอง",
+    "my": "ဘွတ်ကင်လုပ်ချိန်",
+    "zh": "预订时",
+    "de": "Bei der Buchung"
+   }
+  },
+  {
+   "db": "mailbox",
+   "t": {
+    "en": "Bookings arrive in your back office",
+    "th": "การจองเข้าระบบหลังบ้านของคุณ",
+    "my": "ဘွတ်ကင်များ သင့်နောက်ကွယ်စီမံခန့်ခွဲမှုစနစ်သို့ ဝင်လာခြင်း",
+    "zh": "预订进入您的后台",
+    "de": "Buchungen gehen in Ihrem Backoffice ein"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "As guests book",
+    "th": "เมื่อมีแขกจอง",
+    "my": "ဧည့်သည်ဘွတ်ကင်လုပ်သည့်အခါ",
+    "zh": "客人预订时",
+    "de": "Sobald Gäste buchen"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "15–30%+",
+   "t": {
+    "en": "What online travel agencies take of a booking, in one hotel-software company's account",
+    "th": "ส่วนที่เอเจนซีท่องเที่ยวออนไลน์หักจากการจอง ตามที่บริษัทซอฟต์แวร์โรงแรมแห่งหนึ่งระบุ",
+    "my": "ဟိုတယ်ဆော့ဖ်ဝဲကုမ္ပဏီတစ်ခု၏ ဖော်ပြချက်အရ အွန်လိုင်းခရီးသွားလုပ်ငန်းများက ဘွတ်ကင်တစ်ခုမှ ယူသည့်အချိုး",
+    "zh": "一家酒店软件公司所述，在线旅行社从每笔预订中抽取的比例",
+    "de": "Was Online-Reisebüros von einer Buchung nehmen, nach Angaben einer Hotel-Software-Firma"
+   },
+   "src": "https://www.cloudbeds.com/articles/online-travel-agencies/commissions/"
+  },
+  {
+   "n": "21.8% / 10.6%",
+   "t": {
+    "en": "Share of bookings cancelled in 2025: through online travel agencies, then direct",
+    "th": "สัดส่วนการจองที่ถูกยกเลิกในปี 2568: ผ่านเอเจนซีท่องเที่ยวออนไลน์ และจองตรง",
+    "my": "2025 ခုနှစ်တွင် ဖျက်သိမ်းခဲ့သည့် ဘွတ်ကင်အချိုး - အွန်လိုင်းခရီးသွားလုပ်ငန်းများမှ၊ ထို့နောက် တိုက်ရိုက်",
+    "zh": "2025 年被取消的预订占比：经在线旅行社的订单，以及直订订单",
+    "de": "Anteil der 2025 stornierten Buchungen: über Online-Reisebüros, dann direkt"
+   },
+   "src": "https://www.cloudbeds.com/articles/online-travel-agencies/commissions/"
+  },
+  {
+   "n": "1.65% / 3.65%",
+   "t": {
+    "en": "Omise's rate for PromptPay QR and for cards, before 7% VAT",
+    "th": "อัตราของ Omise สำหรับพร้อมเพย์คิวอาร์และสำหรับบัตร ก่อนภาษีมูลค่าเพิ่ม 7%",
+    "my": "Omise ၏ PromptPay QR နှင့် ကတ်အတွက် နှုန်းထား၊ VAT 7% မပါမီ",
+    "zh": "Omise 对 PromptPay 二维码和刷卡的费率，未含 7% 增值税",
+    "de": "Tarif von Omise für PromptPay-QR und für Karten, vor 7% Mehrwertsteuer"
+   },
+   "src": "https://www.omise.co/pricing/thailand"
+  },
+  {
+   "n": "€15.50",
+   "t": {
+    "en": "Beds24's starting price a month for a booking engine, with no commission on bookings",
+    "th": "ราคาเริ่มต้นต่อเดือนของ Beds24 สำหรับระบบจองห้องพัก ไม่มีค่าคอมมิชชันจากการจอง",
+    "my": "Beds24 ဘွတ်ကင်အင်ဂျင်၏ တစ်လ စတင်စျေးနှုန်း၊ ဘွတ်ကင်များအပေါ် ကော်မရှင်မရှိ",
+    "zh": "Beds24 订房引擎的月起步价，预订不收佣金",
+    "de": "Startpreis von Beds24 für eine Booking Engine im Monat, ohne Provision auf Buchungen"
+   },
+   "src": "https://beds24.com/pricing.html"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What do booking sites take in a month?",
+   "th": "เว็บจองห้องพักหักค่าคอมมิชชันเดือนละเท่าไหร่",
+   "my": "ဘွတ်ကင်ဝက်ဘ်ဆိုက်များက တစ်လလျှင် ကော်မရှင် မည်မျှ ယူသနည်း",
+   "zh": "订房网站一个月抽走多少佣金",
+   "de": "Was nehmen Buchungsportale in einem Monat?"
+  },
+  "noscript": {
+   "en": "The commission calculator needs JavaScript. The range each booking site charges is listed below.",
+   "th": "เครื่องคำนวณค่าคอมมิชชันต้องใช้ JavaScript ช่วงอัตราของเว็บจองแต่ละแห่งแสดงไว้ด้านล่าง",
+   "my": "ကော်မရှင်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ ဘွတ်ကင်ဝက်ဘ်ဆိုက်တစ်ခုစီ ကောက်ခံသည့် နှုန်းထားအကွာအဝေးကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "佣金计算器需要 JavaScript。各订房网站的费率范围列在下方。",
+   "de": "Der Provisionsrechner braucht JavaScript. Die Spanne jedes Buchungsportals steht weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "nights",
+     "n": {
+      "en": "Rooms sold a month through booking sites",
+      "th": "ห้องที่ขายผ่านเว็บจองต่อเดือน",
+      "my": "တစ်လလျှင် ဘွတ်ကင်ဝက်ဘ်ဆိုက်များမှတစ်ဆင့် ရောင်းရသည့် အခန်း",
+      "zh": "每月通过订房网站售出的客房",
+      "de": "Über Buchungsportale verkaufte Zimmer im Monat"
+     },
+     "min": 10,
+     "max": 600,
+     "step": 10,
+     "start": 100,
+     "unit": {
+      "en": "room nights",
+      "th": "ห้องคืน",
+      "my": "အခန်း-ည",
+      "zh": "间夜",
+      "de": "Zimmernächte"
+     },
+     "money": false
+    },
+    {
+     "id": "rate",
+     "n": {
+      "en": "Average room rate a night",
+      "th": "ราคาห้องเฉลี่ยต่อคืน",
+      "my": "တစ်ညလျှင် ပျမ်းမျှ အခန်းခ",
+      "zh": "平均每晚房价",
+      "de": "Durchschnittlicher Zimmerpreis pro Nacht"
+     },
+     "min": 500,
+     "max": 5000,
+     "step": 100,
+     "start": 1500,
+     "money": true
+    }
+   ],
+   "choices": [
+    {
+     "id": "site",
+     "n": {
+      "en": "Booking site",
+      "th": "เว็บจองห้องพัก",
+      "my": "ဘွတ်ကင်ဝက်ဘ်ဆိုက်",
+      "zh": "订房网站",
+      "de": "Buchungsportal"
+     },
+     "options": [
+      {
+       "id": "booking",
+       "n": {
+        "en": "Booking.com",
+        "th": "Booking.com",
+        "my": "Booking.com",
+        "zh": "Booking.com",
+        "de": "Booking.com"
+       }
+      },
+      {
+       "id": "agoda",
+       "n": {
+        "en": "Agoda",
+        "th": "Agoda",
+        "my": "Agoda",
+        "zh": "Agoda",
+        "de": "Agoda"
+       }
+      },
+      {
+       "id": "expedia",
+       "n": {
+        "en": "Expedia",
+        "th": "Expedia",
+        "my": "Expedia",
+        "zh": "Expedia",
+        "de": "Expedia"
+       }
+      }
+     ],
+     "start": "booking"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Booking.com commission, about 10% to 20% of a booking",
+      "th": "ค่าคอมมิชชันของ Booking.com ประมาณ 10% ถึง 20% ของการจอง",
+      "my": "Booking.com ကော်မရှင်၊ ဘွတ်ကင်၏ 10% မှ 20% ခန့်",
+      "zh": "Booking.com 佣金，约占预订额的 10% 至 20%",
+      "de": "Provision von Booking.com, etwa 10% bis 20% einer Buchung"
+     },
+     "pct": [
+      10,
+      20
+     ],
+     "per": [
+      "nights",
+      "rate"
+     ],
+     "when": {
+      "site": [
+       "booking"
+      ]
+     },
+     "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+    },
+    {
+     "n": {
+      "en": "Agoda commission, about 15% to 25% of a booking",
+      "th": "ค่าคอมมิชชันของ Agoda ประมาณ 15% ถึง 25% ของการจอง",
+      "my": "Agoda ကော်မရှင်၊ ဘွတ်ကင်၏ 15% မှ 25% ခန့်",
+      "zh": "Agoda 佣金，约占预订额的 15% 至 25%",
+      "de": "Provision von Agoda, etwa 15% bis 25% einer Buchung"
+     },
+     "pct": [
+      15,
+      25
+     ],
+     "per": [
+      "nights",
+      "rate"
+     ],
+     "when": {
+      "site": [
+       "agoda"
+      ]
+     },
+     "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+    },
+    {
+     "n": {
+      "en": "Expedia commission, about 15% to 30% of a booking",
+      "th": "ค่าคอมมิชชันของ Expedia ประมาณ 15% ถึง 30% ของการจอง",
+      "my": "Expedia ကော်မရှင်၊ ဘွတ်ကင်၏ 15% မှ 30% ခန့်",
+      "zh": "Expedia 佣金，约占预订额的 15% 至 30%",
+      "de": "Provision von Expedia, etwa 15% bis 30% einer Buchung"
+     },
+     "pct": [
+      15,
+      30
+     ],
+     "per": [
+      "nights",
+      "rate"
+     ],
+     "when": {
+      "site": [
+       "expedia"
+      ]
+     },
+     "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+    }
+   ],
+   "total": {
+    "en": "Commission paid in a month",
+    "th": "ค่าคอมมิชชันที่จ่ายในหนึ่งเดือน",
+    "my": "တစ်လအတွင်း ပေးရသော ကော်မရှင်",
+    "zh": "一个月付出的佣金",
+    "de": "Bezahlte Provision in einem Monat"
+   },
+   "note": {
+    "en": "The ranges are industry estimates from SmartOrder's guide; a property's own contract sets its rate. Bookings made on your own site pay a payment provider's fee instead of a commission. Omise's Thailand price list shows PromptPay QR at 1.65% and cards at 3.65%, before 7% VAT.",
+    "th": "ช่วงอัตราเป็นค่าประมาณของอุตสาหกรรมจากคู่มือของ SmartOrder อัตราของที่พักแต่ละแห่งกำหนดในสัญญาของที่พักนั้น การจองที่เกิดบนเว็บของคุณเองจ่ายค่าธรรมเนียมของผู้ให้บริการรับชำระเงินแทนค่าคอมมิชชัน ตารางราคาของ Omise ในประเทศไทยระบุพร้อมเพย์คิวอาร์ 1.65% และบัตร 3.65% ก่อนภาษีมูลค่าเพิ่ม 7%",
+    "my": "နှုန်းထားအကွာအဝေးများသည် SmartOrder ၏ လမ်းညွှန်ချက်မှ လုပ်ငန်းနယ်ပယ် ခန့်မှန်းချက်များ ဖြစ်သည်။ တည်းခိုရာနေရာတစ်ခုချင်း၏ နှုန်းထားကို ၎င်း၏ကိုယ်ပိုင်စာချုပ်က သတ်မှတ်သည်။ သင့်ကိုယ်ပိုင်ဆိုက်တွင် ဘွတ်ကင်လုပ်ပါက ကော်မရှင်အစား ငွေပေးချေမှုဝန်ဆောင်သူ၏ ကြေးကို ပေးရသည်။ Omise ၏ ထိုင်းစျေးနှုန်းစာရင်းတွင် PromptPay QR 1.65% နှင့် ကတ် 3.65% ကို VAT 7% မပါမီ ဖော်ပြထားသည်။",
+    "zh": "这些区间是 SmartOrder 指南给出的行业估计，各酒店的费率由其自己的合同确定。在自己网站上完成的预订，付的是支付服务商的手续费，不是佣金。Omise 泰国价目表列出 PromptPay 二维码 1.65%、刷卡 3.65%，均未含 7% 增值税。",
+    "de": "Die Spannen sind Branchenschätzungen aus dem Leitfaden von SmartOrder; den Satz einer Unterkunft legt ihr eigener Vertrag fest. Buchungen auf Ihrer eigenen Seite zahlen statt einer Provision die Gebühr eines Zahlungsanbieters. Die Thailand-Preisliste von Omise nennt PromptPay-QR mit 1.65% und Karten mit 3.65%, vor 7% Mehrwertsteuer."
+   },
+   "oursLine": {
+    "en": "Hongdam builds your booking website for:",
+    "th": "หงส์ดำสร้างเว็บรับจองของคุณในราคา:",
+    "my": "ဟုန်ဒမ်က သင့်ဘွတ်ကင်ဝက်ဘ်ဆိုက်ကို တည်ဆောက်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹为您搭建订房网站，价格：",
+    "de": "Hongdam baut Ihre Buchungswebsite für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "A hotel booking engine collects the reservation and card details from the guest and passes them to the hotel's systems, such as its property management system. Its booking flow sits on the hotel's own domain and not on a separate hosted page.",
+    "th": "ระบบจองห้องพักของโรงแรมรวบรวมรายละเอียดการจองและข้อมูลบัตรจากแขก แล้วส่งต่อไปยังระบบของโรงแรม เช่นระบบบริหารจัดการโรงแรม (PMS) ขั้นตอนการจองอยู่บนโดเมนของโรงแรมเอง ไม่ใช่หน้าที่โฮสต์แยกต่างหาก",
+    "my": "ဟိုတယ်ဘွတ်ကင်အင်ဂျင်သည် ဧည့်သည်ထံမှ ဘွတ်ကင်နှင့် ကတ်အချက်အလက်များကို စုဆောင်းပြီး ဟိုတယ်၏ စနစ်များ၊ ဥပမာ ဟိုတယ်စီမံခန့်ခွဲမှုစနစ် (PMS) သို့ ပို့ပေးသည်။ ဘွတ်ကင်လုပ်ငန်းစဉ်သည် ဟိုတယ်၏ ကိုယ်ပိုင်ဒိုမိန်းပေါ်တွင် ရှိပြီး သီးခြားလက်ခံထားသော စာမျက်နှာပေါ်တွင် မဟုတ်ပါ။",
+    "zh": "酒店订房引擎从客人那里收集预订和银行卡信息，再传给酒店的系统，例如物业管理系统。预订流程位于酒店自己的域名下，而不是单独托管的页面。",
+    "de": "Ein Hotel-Buchungssystem (Booking Engine) erfasst die Reservierung und die Kartendaten des Gastes und gibt sie an die Systeme des Hotels weiter, zum Beispiel an das Property-Management-System. Der Buchungsablauf liegt auf der eigenen Domain des Hotels und nicht auf einer getrennt gehosteten Seite."
+   },
+   "src": "https://www.cloudbeds.com/booking-engine/"
+  },
+  {
+   "t": {
+    "en": "Cloudbeds puts the commission of online travel agencies at 15% to 30% or more of each booking. A decade ago the average sat near 10%. Niche and regional agencies charge as little as 4%.",
+    "th": "Cloudbeds ระบุค่าคอมมิชชันของเอเจนซีท่องเที่ยวออนไลน์ที่ 15% ถึง 30% ขึ้นไปของการจองแต่ละรายการ เมื่อสิบปีก่อนค่าเฉลี่ยอยู่ราว 10% เอเจนซีเฉพาะกลุ่มและระดับภูมิภาคคิดต่ำสุดเพียง 4%",
+    "my": "Cloudbeds က အွန်လိုင်းခရီးသွားလုပ်ငန်းများ၏ ကော်မရှင်ကို ဘွတ်ကင်တစ်ခုစီ၏ 15% မှ 30% နှင့်အထက်ဟု ဖော်ပြသည်။ လွန်ခဲ့သော ဆယ်စုနှစ်တစ်ခုက ပျမ်းမျှမှာ 10% ခန့် ဖြစ်သည်။ အထူးကဏ္ဍနှင့် ဒေသဆိုင်ရာ အေဂျင်စီများသည် 4% ဖြင့်ပင် ကောက်ခံသည်။",
+    "zh": "Cloudbeds 给出的在线旅行社佣金是每笔预订的 15% 至 30% 或更高。十年前平均约为 10%。细分市场和区域性旅行社最低收 4%。",
+    "de": "Cloudbeds nennt für Online-Reisebüros eine Provision von 15% bis 30% oder mehr je Buchung. Vor zehn Jahren lag der Durchschnitt bei rund 10%. Nischen- und regionale Büros verlangen schon ab 4%."
+   },
+   "src": "https://www.cloudbeds.com/articles/online-travel-agencies/commissions/"
+  },
+  {
+   "t": {
+    "en": "Cloudbeds reports that 21.8% of online-agency bookings were cancelled in 2025, against 10.6% of direct bookings.",
+    "th": "Cloudbeds รายงานว่าในปี 2568 การจองผ่านเอเจนซีท่องเที่ยวออนไลน์ถูกยกเลิก 21.8% เทียบกับ 10.6% ของการจองตรง",
+    "my": "Cloudbeds အစီရင်ခံသည်မှာ 2025 ခုနှစ်တွင် အွန်လိုင်းခရီးသွားလုပ်ငန်းများမှ ဘွတ်ကင်၏ 21.8% ကို ဖျက်သိမ်းခဲ့ပြီး တိုက်ရိုက်ဘွတ်ကင်၏ 10.6% ကို ဖျက်သိမ်းခဲ့သည်။",
+    "zh": "Cloudbeds 报告称，2025 年经在线旅行社的预订有 21.8% 被取消，直订订单为 10.6%。",
+    "de": "Cloudbeds berichtet, dass 2025 21.8% der Buchungen über Online-Reisebüros storniert wurden, bei Direktbuchungen 10.6%."
+   },
+   "src": "https://www.cloudbeds.com/articles/online-travel-agencies/commissions/"
+  },
+  {
+   "t": {
+    "en": "Booking.com sets its commission as a percentage in the property's Accommodation Agreement. It can apply to nights, room price, rooms booked and eligible extras, and charged cancellations and no-shows can attract it too.",
+    "th": "Booking.com กำหนดค่าคอมมิชชันเป็นเปอร์เซ็นต์ไว้ในสัญญาที่พัก (Accommodation Agreement) คิดได้จากจำนวนคืน ราคาห้อง จำนวนห้องที่จอง และบริการเสริมที่เข้าเกณฑ์ การยกเลิกหรือไม่มาเข้าพักที่คิดเงินก็อาจถูกคิดค่าคอมมิชชันด้วย",
+    "my": "Booking.com သည် ကော်မရှင်ကို ရာခိုင်နှုန်းအဖြစ် တည်းခိုရာနေရာ၏ Accommodation Agreement တွင် သတ်မှတ်သည်။ ည အရေအတွက်၊ အခန်းစျေး၊ ဘွတ်ကင်လုပ်သည့် အခန်းအရေအတွက်နှင့် အရည်အချင်းပြည့်မီသည့် အပိုပစ္စည်းများအပေါ် ကျသင့်နိုင်ပြီး ကြေးယူသည့် ဖျက်သိမ်းမှုနှင့် မလာသည့်အခြေအနေတို့တွင်လည်း ကော်မရှင် ကျသင့်နိုင်သည်။",
+    "zh": "Booking.com 的佣金以百分比写在住宿方的《住宿协议》（Accommodation Agreement）中。计算依据可包括入住晚数、房价、预订房间数和符合条件的附加项目，收费的取消和未入住也可能被计佣。",
+    "de": "Booking.com legt die Provision als Prozentsatz im Unterkunftsvertrag (Accommodation Agreement) fest. Sie kann sich auf Nächte, Zimmerpreis, gebuchte Zimmer und berechtigte Extras beziehen; auch berechnete Stornierungen und Nichterscheinen können Provision auslösen."
+   },
+   "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+  },
+  {
+   "t": {
+    "en": "Agoda's compensation is either a percentage of the reference sell rate or a markup on the loaded rate. The property pays it, on conditions such as a confirmed stay. A property finds its rate in the Partner Portal under Finance, Contracted compensation.",
+    "th": "ค่าตอบแทนของ Agoda เป็นเปอร์เซ็นต์ของราคาขายอ้างอิง หรือเป็นส่วนบวกเพิ่มจากราคาที่โหลดไว้ ที่พักเป็นผู้จ่าย ภายใต้เงื่อนไข เช่น เมื่อมีการเข้าพักที่ยืนยันแล้ว ที่พักดูอัตราของตนได้ใน Partner Portal ที่เมนู Finance แล้ว Contracted compensation",
+    "my": "Agoda ၏ ကြေးသည် ရည်ညွှန်းရောင်းစျေး၏ ရာခိုင်နှုန်း သို့မဟုတ် တင်ထားသည့်စျေးအပေါ် ပေါင်းထည့်သည့် ပမာဏ ဖြစ်သည်။ တည်းခိုရာနေရာက ပေးရပြီး အတည်ပြုထားသည့် တည်းခိုမှုကဲ့သို့ အခြေအနေများပေါ် မူတည်သည်။ တည်းခိုရာနေရာသည် မိမိ၏နှုန်းထားကို Partner Portal ၏ Finance၊ Contracted compensation တွင် ကြည့်နိုင်သည်။",
+    "zh": "Agoda 的酬金要么是参考售价的一个百分比，要么是在已录入价格上的加价。由住宿方支付，条件包括已确认的入住等。住宿方可在 Partner Portal 的 Finance、Contracted compensation 中查看自己的费率。",
+    "de": "Die Vergütung von Agoda ist entweder ein Prozentsatz des Referenz-Verkaufspreises oder ein Aufschlag auf den hinterlegten Preis. Die Unterkunft zahlt sie, unter Bedingungen wie einem bestätigten Aufenthalt. Den eigenen Satz zeigt das Partner Portal unter Finance, Contracted compensation."
+   },
+   "src": "https://partnerhub.agoda.com/what-commission-do-i-pay-to-agoda/"
+  },
+  {
+   "t": {
+    "en": "In the unofficial English translation of the Hotel Act B.E. 2547 on the Department of Provincial Administration's site, no person operates a hotel business without a licence from the Registrar (section 15). A licence covers the hotel named in it and is valid for five years (section 19). The hotel's name shows in Thai letters, and foreign letters may follow it or sit below it (section 20).",
+    "th": "ในฉบับแปลภาษาอังกฤษที่ไม่เป็นทางการของพระราชบัญญัติโรงแรม พ.ศ. 2547 บนเว็บไซต์กรมการปกครอง ห้ามผู้ใดประกอบธุรกิจโรงแรมโดยไม่ได้รับใบอนุญาตจากนายทะเบียน (มาตรา 15) ใบอนุญาตใช้ได้กับโรงแรมที่ระบุไว้ในใบอนุญาตและมีอายุ 5 ปี (มาตรา 19) ชื่อโรงแรมต้องมีอักษรไทยที่เห็นได้ชัด และจะมีอักษรต่างประเทศตามหลังหรือไว้ข้างใต้ก็ได้ (มาตรา 20)",
+    "my": "ပြည်နယ်အုပ်ချုပ်ရေးဦးစီးဌာန (DOPA) ဝက်ဘ်ဆိုက်ပေါ်ရှိ ဟိုတယ်ဥပဒေ B.E. 2547 ၏ တရားဝင်မဟုတ်သော အင်္ဂလိပ်ဘာသာပြန်တွင် မှတ်ပုံတင်အရာရှိထံမှ လိုင်စင်မရဘဲ မည်သူမျှ ဟိုတယ်လုပ်ငန်း မလုပ်ကိုင်ရ (ပုဒ်မ 15)။ လိုင်စင်သည် ၎င်းတွင်ဖော်ပြထားသော ဟိုတယ်ကိုသာ အကျုံးဝင်ပြီး ငါးနှစ်သက်တမ်းရှိသည် (ပုဒ်မ 19)။ ဟိုတယ်အမည်ကို ထိုင်းစာလုံးဖြင့် ထင်ရှားစွာ ဖော်ပြရပြီး နိုင်ငံခြားစာလုံးကို နောက်တွင် သို့မဟုတ် အောက်တွင် ထည့်နိုင်သည် (ပုဒ်မ 20)။",
+    "zh": "在泰国地方行政厅网站上的《酒店法》B.E. 2547 非官方英译本中，未经登记官发给执照，任何人不得经营酒店业务（第 15 条）。执照只适用于其上载明的酒店，有效期五年（第 19 条）。酒店名称须以泰文清楚显示，外文可置于其后或其下（第 20 条）。",
+    "de": "In der inoffiziellen englischen Übersetzung des Hotel Act B.E. 2547 auf der Website des Department of Provincial Administration darf niemand ein Hotel betreiben, ohne eine Lizenz des Registrars zu haben (Abschnitt 15). Eine Lizenz gilt für das darin genannte Hotel und ist fünf Jahre gültig (Abschnitt 19). Der Name des Hotels erscheint gut sichtbar in thailändischer Schrift; fremde Schrift darf dahinter oder darunter stehen (Abschnitt 20)."
+   },
+   "src": "https://multi.dopa.go.th/tspd/official_letter/download/2663/EN"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Booking.com commission on a booking",
+    "th": "ค่าคอมมิชชันของ Booking.com ต่อการจอง",
+    "my": "ဘွတ်ကင်တစ်ခုအတွက် Booking.com ကော်မရှင်",
+    "zh": "Booking.com 每笔预订的佣金",
+    "de": "Provision von Booking.com je Buchung"
+   },
+   "p": {
+    "en": "About 10% to 20%; about 15% as a baseline for independent properties",
+    "th": "ประมาณ 10% ถึง 20% โดยราว 15% เป็นฐานสำหรับที่พักอิสระ",
+    "my": "10% မှ 20% ခန့်၊ လွတ်လပ်သော တည်းခိုရာနေရာများအတွက် 15% ခန့်ကို အခြေခံယူသည်",
+    "zh": "约 10% 至 20%；独立经营的住宿以约 15% 为基准",
+    "de": "Etwa 10% bis 20%; etwa 15% als Richtwert für unabhängige Unterkünfte"
+   },
+   "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+  },
+  {
+   "t": {
+    "en": "Agoda commission on a booking",
+    "th": "ค่าคอมมิชชันของ Agoda ต่อการจอง",
+    "my": "ဘွတ်ကင်တစ်ခုအတွက် Agoda ကော်မရှင်",
+    "zh": "Agoda 每笔预订的佣金",
+    "de": "Provision von Agoda je Buchung"
+   },
+   "p": {
+    "en": "About 15% to 25%, an industry estimate",
+    "th": "ประมาณ 15% ถึง 25% ตามการประมาณของอุตสาหกรรม",
+    "my": "15% မှ 25% ခန့်၊ လုပ်ငန်းနယ်ပယ် ခန့်မှန်းချက်",
+    "zh": "约 15% 至 25%，行业估计",
+    "de": "Etwa 15% bis 25%, eine Branchenschätzung"
+   },
+   "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+  },
+  {
+   "t": {
+    "en": "Expedia commission on a booking",
+    "th": "ค่าคอมมิชชันของ Expedia ต่อการจอง",
+    "my": "ဘွတ်ကင်တစ်ခုအတွက် Expedia ကော်မရှင်",
+    "zh": "Expedia 每笔预订的佣金",
+    "de": "Provision von Expedia je Buchung"
+   },
+   "p": {
+    "en": "About 15% to 30%, an industry estimate",
+    "th": "ประมาณ 15% ถึง 30% ตามการประมาณของอุตสาหกรรม",
+    "my": "15% မှ 30% ခန့်၊ လုပ်ငန်းနယ်ပယ် ခန့်မှန်းချက်",
+    "zh": "约 15% 至 30%，行业估计",
+    "de": "Etwa 15% bis 30%, eine Branchenschätzung"
+   },
+   "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+  },
+  {
+   "t": {
+    "en": "Hotel website from a Fastwork freelancer: three packages",
+    "th": "เว็บโรงแรมจากฟรีแลนซ์บน Fastwork: สามแพ็กเกจ",
+    "my": "Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ ဟိုတယ်ဝက်ဘ်ဆိုက်၊ ပက်ကေ့ချ် သုံးမျိုး",
+    "zh": "Fastwork 自由职业者的酒店网站：三个套餐",
+    "de": "Hotel-Website von Freelancern auf Fastwork: drei Pakete"
+   },
+   "p": {
+    "en": "฿3,500 with no booking system, ฿6,500 with online booking, ฿12,000 with a booking dashboard; 4, 6 and 7 days",
+    "th": "฿3,500 ไม่มีระบบจอง ฿6,500 พร้อมระบบจองออนไลน์ ฿12,000 พร้อมแดชบอร์ดการจอง ใช้เวลา 4 6 และ 7 วัน",
+    "my": "฿3,500 ဘွတ်ကင်စနစ်မပါ၊ ฿6,500 အွန်လိုင်းဘွတ်ကင်ပါ၊ ฿12,000 ဘွတ်ကင်ဒက်ရှ်ဘုတ်ပါ၊ 4 ရက်၊ 6 ရက်နှင့် 7 ရက်",
+    "zh": "฿3,500 不含订房系统；฿6,500 含在线订房；฿12,000 含订房后台；分别 4 天、6 天和 7 天",
+    "de": "฿3,500 ohne Buchungssystem, ฿6,500 mit Online-Buchung, ฿12,000 mit Buchungs-Dashboard; 4, 6 und 7 Tage"
+   },
+   "src": "https://fastwork.co/user/aomeasy/web-development-91555037"
+  },
+  {
+   "t": {
+    "en": "Hotel website with a room booking system from a Fastwork freelancer",
+    "th": "เว็บโรงแรมพร้อมระบบจองห้องพักจากฟรีแลนซ์บน Fastwork",
+    "my": "Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ အခန်းဘွတ်ကင်စနစ်ပါ ဟိုတယ်ဝက်ဘ်ဆိုက်",
+    "zh": "Fastwork 自由职业者的带订房系统的酒店网站",
+    "de": "Hotel-Website mit Zimmerbuchungssystem von einem Freelancer auf Fastwork"
+   },
+   "p": {
+    "en": "฿21,000 in 15 days",
+    "th": "฿21,000 ใน 15 วัน",
+    "my": "15 ရက်အတွင်း ฿21,000",
+    "zh": "15 天交付 ฿21,000",
+    "de": "฿21,000 in 15 Tagen"
+   },
+   "src": "https://fastwork.co/user/warasystem/web-development-87526253"
+  },
+  {
+   "t": {
+    "en": "Booking engine subscription (Beds24)",
+    "th": "ค่าสมาชิกระบบจองห้องพัก (Beds24)",
+    "my": "ဘွတ်ကင်အင်ဂျင် လစဉ်ကြေး (Beds24)",
+    "zh": "订房引擎订阅费（Beds24）",
+    "de": "Abonnement für eine Booking Engine (Beds24)"
+   },
+   "p": {
+    "en": "From €15.50 a month; €0.55 a month for each channel link; €19 a month for a private-label subdomain; no commission on bookings",
+    "th": "เริ่มที่ €15.50 ต่อเดือน; €0.55 ต่อเดือนสำหรับการเชื่อมช่องทางหนึ่งรายการ; €19 ต่อเดือนสำหรับซับโดเมนของตนเอง; ไม่มีค่าคอมมิชชันจากการจอง",
+    "my": "တစ်လ €15.50 မှစ၍၊ ချန်နယ်လင့်ခ်တစ်ခုလျှင် တစ်လ €0.55၊ ကိုယ်ပိုင်အမည်ဖြင့် ဆဘ်ဒိုမိန်းအတွက် တစ်လ €19၊ ဘွတ်ကင်များအပေါ် ကော်မရှင်မရှိ",
+    "zh": "每月 €15.50 起；每个渠道连接每月 €0.55；自有品牌子域名每月 €19；预订不收佣金",
+    "de": "Ab €15.50 im Monat; €0.55 im Monat je Kanalanbindung; €19 im Monat für eine eigene Subdomain; keine Provision auf Buchungen"
+   },
+   "src": "https://beds24.com/pricing.html"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a hotel booking engine?",
+    "th": "ระบบจองห้องพักของโรงแรม (booking engine) คืออะไร",
+    "my": "ဟိုတယ်ဘွတ်ကင်အင်ဂျင် ဆိုတာ ဘာလဲ",
+    "zh": "什么是酒店订房引擎",
+    "de": "Was ist eine Booking Engine für Hotels?"
+   },
+   "a": {
+    "en": "A booking engine is software that runs on the hotel's own website. Guests see current vacancies and rates for each room category, then reserve and pay, from any device, in a two-step booking process.",
+    "th": "ระบบจองห้องพักคือซอฟต์แวร์ที่ทำงานบนเว็บไซต์ของโรงแรมเอง แขกดูห้องว่างและราคาปัจจุบันของห้องแต่ละประเภท แล้วจองและชำระเงินได้จากทุกอุปกรณ์ในสองขั้นตอน",
+    "my": "ဘွတ်ကင်အင်ဂျင်သည် ဟိုတယ်၏ ကိုယ်ပိုင်ဝက်ဘ်ဆိုက်ပေါ်တွင် အလုပ်လုပ်သော ဆော့ဖ်ဝဲဖြစ်သည်။ ဧည့်သည်များသည် အခန်းအမျိုးအစားတစ်ခုစီ၏ လက်ရှိအခန်းလွတ်နှင့် စျေးနှုန်းကို ကြည့်ပြီး မည်သည့်စက်ပစ္စည်းမှမဆို အဆင့်နှစ်ဆင့်ဖြင့် ကြိုတင်ဘွတ်ကင်လုပ်ကာ ငွေပေးချေသည်။",
+    "zh": "订房引擎是运行在酒店自己网站上的软件。客人查看各房型当前的空房和价格，然后在任何设备上分两步完成预订和付款。",
+    "de": "Eine Booking Engine ist Software, die auf der eigenen Website des Hotels läuft. Gäste sehen die aktuelle Verfügbarkeit und die Preise jeder Zimmerkategorie, reservieren und zahlen, auf jedem Gerät, in zwei Schritten."
+   },
+   "src": "https://www.cloudbeds.com/booking-engine/"
+  },
+  {
+   "q": {
+    "en": "How much does a booking engine cost?",
+    "th": "ระบบจองห้องพักราคาเท่าไหร่",
+    "my": "ဘွတ်ကင်အင်ဂျင် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "订房引擎要多少钱",
+    "de": "Was kostet eine Booking Engine?"
+   },
+   "a": {
+    "en": "Beds24's price page starts at €15.50 a month, scaled to the number of rooms or units, and adds €0.55 a month for each channel link. It lists online bookings without commission as included at no extra charge. A private-label subdomain such as bookings.mywebsite.com costs €19 a month.",
+    "th": "หน้าราคาของ Beds24 เริ่มที่ €15.50 ต่อเดือน ปรับตามจำนวนห้องหรือยูนิต และบวก €0.55 ต่อเดือนสำหรับการเชื่อมช่องทางหนึ่งรายการ หน้านี้ระบุว่าการจองออนไลน์ที่ไม่มีค่าคอมมิชชันรวมอยู่แล้วโดยไม่คิดเพิ่ม ซับโดเมนของตนเอง เช่น bookings.mywebsite.com คิด €19 ต่อเดือน",
+    "my": "Beds24 ၏ စျေးနှုန်းစာမျက်နှာသည် တစ်လ €15.50 မှ စတင်ပြီး အခန်း သို့မဟုတ် ယူနစ်အရေအတွက်အလိုက် တိုးသည်။ ချန်နယ်လင့်ခ်တစ်ခုလျှင် တစ်လ €0.55 ထပ်တိုးသည်။ ကော်မရှင်မရှိသည့် အွန်လိုင်းဘွတ်ကင်များကို ထပ်ပေးစရာမလိုဘဲ ပါဝင်သည်ဟု ဖော်ပြထားသည်။ bookings.mywebsite.com ကဲ့သို့ ကိုယ်ပိုင်ဆဘ်ဒိုမိန်းအတွက် တစ်လ €19 ကျသင့်သည်။",
+    "zh": "Beds24 的价格页面从每月 €15.50 起，按房间或单元数量递增，每个渠道连接每月另加 €0.55。页面写明不收佣金的在线预订已包含在内，不另收费。像 bookings.mywebsite.com 这样的自有品牌子域名每月 €19。",
+    "de": "Die Preisseite von Beds24 beginnt bei €15.50 im Monat, gestaffelt nach der Zahl der Zimmer oder Einheiten, und rechnet €0.55 im Monat je Kanalanbindung dazu. Online-Buchungen ohne Provision sind laut Seite ohne Aufpreis enthalten. Eine eigene Subdomain wie bookings.mywebsite.com kostet €19 im Monat."
+   },
+   "src": "https://beds24.com/pricing.html"
+  },
+  {
+   "q": {
+    "en": "How much does a hotel website cost?",
+    "th": "ทำเว็บไซต์โรงแรมราคาเท่าไหร่",
+    "my": "ဟိုတယ်ဝက်ဘ်ဆိုက်တစ်ခု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "做一个酒店网站要多少钱",
+    "de": "Was kostet eine Hotel-Website?"
+   },
+   "a": {
+    "en": "One Fastwork listing prices a WordPress hotel website at ฿3,500 with no booking system, ฿6,500 with an online booking system and live room availability, and ฿12,000 with a booking dashboard and 30 days of support. Delivery takes 4, 6 and 7 days. The packages list a domain and hosting for 1 year.",
+    "th": "ลิสต์รายการหนึ่งบน Fastwork ตั้งราคาเว็บโรงแรม WordPress ที่ ฿3,500 เมื่อไม่มีระบบจอง ฿6,500 พร้อมระบบจองออนไลน์และห้องว่างแบบเรียลไทม์ และ ฿12,000 พร้อมแดชบอร์ดการจองและการดูแลหลังส่งมอบ 30 วัน ส่งมอบใน 4 6 และ 7 วัน แพ็กเกจระบุโดเมนและโฮสติ้ง 1 ปี",
+    "my": "Fastwork ပေါ်ရှိ စာရင်းတစ်ခုတွင် WordPress ဟိုတယ်ဝက်ဘ်ဆိုက်ကို ဘွတ်ကင်စနစ်မပါလျှင် ฿3,500၊ အွန်လိုင်းဘွတ်ကင်စနစ်နှင့် လက်ရှိအခန်းလွတ်ပါလျှင် ฿6,500၊ ဘွတ်ကင်ဒက်ရှ်ဘုတ်နှင့် ပေးပို့ပြီးနောက် 30 ရက် ပံ့ပိုးမှုပါလျှင် ฿12,000 ဟု သတ်မှတ်ထားသည်။ 4 ရက်၊ 6 ရက်နှင့် 7 ရက်အတွင်း ပို့ပေးသည်။ ပက်ကေ့ချ်များတွင် ဒိုမိန်းနှင့် ဟို့စ်တင် 1 နှစ် ပါသည်ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上有一个商品页给 WordPress 酒店网站定价：不含订房系统 ฿3,500；含在线订房系统和实时空房 ฿6,500；含订房后台和 30 天售后支持 ฿12,000。分别 4 天、6 天和 7 天交付。套餐列有 1 年的域名和托管。",
+    "de": "Ein Angebot auf Fastwork setzt eine WordPress-Hotel-Website bei ฿3,500 ohne Buchungssystem an, bei ฿6,500 mit Online-Buchungssystem und Zimmerverfügbarkeit in Echtzeit und bei ฿12,000 mit Buchungs-Dashboard und 30 Tagen Support nach der Lieferung. Die Lieferung dauert 4, 6 und 7 Tage. Die Pakete nennen Domain und Hosting für 1 Jahr."
+   },
+   "src": "https://fastwork.co/user/aomeasy/web-development-91555037"
+  },
+  {
+   "q": {
+    "en": "How much do booking sites take from a booking?",
+    "th": "เว็บจองห้องพักหักเงินจากการจองเท่าไหร่",
+    "my": "ဘွတ်ကင်ဝက်ဘ်ဆိုက်များက ဘွတ်ကင်တစ်ခုမှ ဘယ်လောက် ယူသလဲ",
+    "zh": "订房网站从一笔预订中抽多少",
+    "de": "Wie viel nehmen Buchungsportale von einer Buchung?"
+   },
+   "a": {
+    "en": "SmartOrder's guide puts Booking.com at about 10% to 20%, Agoda at about 15% to 25% and Expedia at about 15% to 30%, as industry estimates. The guide says Expedia's final rate varies by market, property, payment model and negotiated terms, and Booking.com's percentage is set in the Accommodation Agreement.",
+    "th": "คู่มือของ SmartOrder ประมาณว่า Booking.com อยู่ที่ราว 10% ถึง 20% Agoda ราว 15% ถึง 25% และ Expedia ราว 15% ถึง 30% ตามการประมาณของอุตสาหกรรม คู่มือระบุว่าอัตราสุดท้ายของ Expedia ต่างกันไปตามตลาด ที่พัก รูปแบบการชำระเงิน และเงื่อนไขที่เจรจา ส่วนเปอร์เซ็นต์ของ Booking.com กำหนดไว้ใน Accommodation Agreement",
+    "my": "SmartOrder ၏ လမ်းညွှန်ချက်သည် လုပ်ငန်းနယ်ပယ် ခန့်မှန်းချက်အဖြစ် Booking.com ကို 10% မှ 20% ခန့်၊ Agoda ကို 15% မှ 25% ခန့်နှင့် Expedia ကို 15% မှ 30% ခန့်ဟု ဖော်ပြသည်။ လမ်းညွှန်ချက်အရ Expedia ၏ နောက်ဆုံးနှုန်းထားသည် ဈေးကွက်၊ တည်းခိုရာနေရာ၊ ငွေပေးချေမှုပုံစံနှင့် ညှိနှိုင်းထားသည့် စည်းကမ်းချက်များအလိုက် ကွာခြားပြီး Booking.com ၏ ရာခိုင်နှုန်းကို Accommodation Agreement တွင် သတ်မှတ်သည်။",
+    "zh": "SmartOrder 的指南把 Booking.com 的行业估计定在约 10% 至 20%，Agoda 约 15% 至 25%，Expedia 约 15% 至 30%。指南称，Expedia 的最终费率因市场、住宿、付款模式和谈定的条款而异，Booking.com 的百分比写在《住宿协议》中。",
+    "de": "Der Leitfaden von SmartOrder nennt als Branchenschätzung für Booking.com etwa 10% bis 20%, für Agoda etwa 15% bis 25% und für Expedia etwa 15% bis 30%. Laut Leitfaden hängt der endgültige Satz von Expedia von Markt, Unterkunft, Zahlungsmodell und ausgehandelten Bedingungen ab, und der Prozentsatz von Booking.com steht im Accommodation Agreement."
+   },
+   "src": "https://www.smartorder.ai/resources/blog/the-complete-guide-to-ota-commission-rates/"
+  },
+  {
+   "q": {
+    "en": "Does Agoda's commission depend on where the hotel is?",
+    "th": "ค่าคอมมิชชันของ Agoda ขึ้นกับที่ตั้งของโรงแรมไหม",
+    "my": "Agoda ၏ ကော်မရှင်သည် ဟိုတယ်တည်နေရာပေါ် မူတည်ပါသလား",
+    "zh": "Agoda 的佣金与酒店所在地有关吗",
+    "de": "Hängt die Provision von Agoda vom Standort des Hotels ab?"
+   },
+   "a": {
+    "en": "Yes. Agoda's Partner Hub says compensation depends on the property's location and, in some cases, the payment model. It says rates reflect local marketing prices and expenses, so they cannot be standardized across locations.",
+    "th": "ใช่ Partner Hub ของ Agoda ระบุว่าค่าตอบแทนขึ้นกับที่ตั้งของที่พัก และในบางกรณีขึ้นกับรูปแบบการชำระเงิน โดยอัตราสะท้อนราคาการตลาดและค่าใช้จ่ายในท้องถิ่น จึงกำหนดให้เท่ากันทุกที่ไม่ได้",
+    "my": "မူတည်ပါသည်။ Agoda ၏ Partner Hub က ကြေးသည် တည်းခိုရာနေရာ၏ တည်နေရာပေါ်တွင်၊ အချို့အခြေအနေများတွင် ငွေပေးချေမှုပုံစံပေါ်တွင် မူတည်သည်ဟု ဆိုသည်။ နှုန်းထားများသည် ဒေသတွင်း ဈေးကွက်ရှာဖွေရေးစျေးနှုန်းနှင့် စရိတ်များကို ထင်ဟပ်သဖြင့် နေရာအားလုံးတွင် တူညီအောင် သတ်မှတ်၍ မရဟု ဆိုသည်။",
+    "zh": "有关。Agoda 的 Partner Hub 说，酬金取决于住宿所在地，有时还取决于付款模式。它说费率反映当地的营销价格和开支，因此无法在各地统一。",
+    "de": "Ja. Der Partner Hub von Agoda sagt, die Vergütung hängt vom Standort der Unterkunft ab und in manchen Fällen vom Zahlungsmodell. Die Sätze spiegeln örtliche Marketingpreise und Kosten wider und lassen sich deshalb nicht überall vereinheitlichen."
+   },
+   "src": "https://partnerhub.agoda.com/what-commission-do-i-pay-to-agoda/"
+  },
+  {
+   "q": {
+    "en": "What does it cost to take PromptPay and card payments on a website?",
+    "th": "การรับพร้อมเพย์และบัตรบนเว็บไซต์มีค่าใช้จ่ายเท่าไหร่",
+    "my": "ဝက်ဘ်ဆိုက်တွင် PromptPay နှင့် ကတ် လက်ခံရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在网站上收 PromptPay 和刷卡要多少费用",
+    "de": "Was kostet es, auf einer Website PromptPay und Karten anzunehmen?"
+   },
+   "a": {
+    "en": "Omise's Thailand price list shows PromptPay QR at 1.65% a payment, cards at 3.65% and mobile banking at ฿10, before 7% VAT. A transfer from the Omise account to a bank account costs ฿20 up to ฿2,000,000.",
+    "th": "ตารางราคาของ Omise ประเทศไทยระบุพร้อมเพย์คิวอาร์ 1.65% ต่อรายการ บัตร 3.65% และโมบายแบงก์กิ้ง ฿10 ก่อนภาษีมูลค่าเพิ่ม 7% การโอนจากบัญชี Omise เข้าบัญชีธนาคารคิด ฿20 สำหรับยอดไม่เกิน ฿2,000,000",
+    "my": "Omise ထိုင်းနိုင်ငံ၏ စျေးနှုန်းစာရင်းတွင် PromptPay QR သည် ငွေပေးချေမှုတစ်ခုလျှင် 1.65%၊ ကတ် 3.65% နှင့် မိုဘိုင်းဘဏ်ဝန်ဆောင်မှု ฿10 ဖြစ်ပြီး VAT 7% မပါမီဖြစ်သည်။ Omise အကောင့်မှ ဘဏ်အကောင့်သို့ ငွေလွှဲခြင်းသည် ฿2,000,000 အထိ ฿20 ကျသင့်သည်။",
+    "zh": "Omise 泰国价目表列出：PromptPay 二维码每笔 1.65%，刷卡 3.65%，手机银行 ฿10，均未含 7% 增值税。从 Omise 账户转入银行账户，不超过 ฿2,000,000 时每次 ฿20。",
+    "de": "Die Thailand-Preisliste von Omise nennt PromptPay-QR mit 1.65% je Zahlung, Karten mit 3.65% und Mobile Banking mit ฿10, vor 7% Mehrwertsteuer. Eine Überweisung vom Omise-Konto auf ein Bankkonto kostet ฿20 bis ฿2,000,000."
+   },
+   "src": "https://www.omise.co/pricing/thailand"
+  },
+  {
+   "q": {
+    "en": "Which stays count as a hotel under Thai law?",
+    "th": "ที่พักแบบไหนถือเป็นโรงแรมตามกฎหมายไทย",
+    "my": "ထိုင်းဥပဒေအရ ဘယ်လို တည်းခိုရာနေရာကို ဟိုတယ်ဟု သတ်မှတ်သလဲ",
+    "zh": "按泰国法律，什么样的住宿算酒店",
+    "de": "Welche Unterkünfte gelten nach thailändischem Recht als Hotel?"
+   },
+   "a": {
+    "en": "The Hotel Act B.E. 2547 defines a hotel as accommodation set up as a business to give travellers or others temporary lodging for payment. It leaves out lodging run by a state body, or for charity or education, not on a profit or income-sharing basis, lodging offered only at a monthly charge or upward, and other kinds a Ministerial Regulation names.",
+    "th": "พระราชบัญญัติโรงแรม พ.ศ. 2547 นิยามโรงแรมว่าเป็นสถานที่พักที่จัดตั้งขึ้นเพื่อประกอบธุรกิจให้บริการที่พักชั่วคราวแก่คนเดินทางหรือบุคคลอื่นโดยมีค่าตอบแทน ไม่รวมที่พักที่หน่วยงานรัฐดำเนินการ หรือที่จัดเพื่อการกุศลหรือการศึกษาโดยไม่แสวงหากำไรหรือแบ่งรายได้ ที่พักที่ให้บริการเฉพาะค่าบริการรายเดือนขึ้นไป และที่พักอื่นที่กำหนดในกฎกระทรวง",
+    "my": "ဟိုတယ်ဥပဒေ B.E. 2547 သည် ဟိုတယ်ကို ခရီးသွားများ သို့မဟုတ် အခြားသူများအား ငွေပေးချေမှုဖြင့် ယာယီတည်းခိုခွင့်ပေးရန် စီးပွားရေးအဖြစ် တည်ထောင်ထားသော တည်းခိုရာနေရာဟု အဓိပ္ပာယ်ဖွင့်သည်။ အစိုးရအဖွဲ့အစည်းက လုပ်ကိုင်သည့် တည်းခိုရာနေရာ၊ အကျိုးအမြတ် သို့မဟုတ် ဝင်ငွေခွဲဝေမှုမပါဘဲ ပရဟိတ သို့မဟုတ် ပညာရေးအတွက် တည်းခိုရာနေရာ၊ လစဉ်ကြေး သို့မဟုတ် ထို့ထက်သာ ပေးရသည့် တည်းခိုရာနေရာနှင့် ဝန်ကြီးဌာနစည်းမျဉ်းက သတ်မှတ်သည့် အခြားအမျိုးအစားများကို မပါဝင်စေပါ။",
+    "zh": "《酒店法》B.E. 2547 把酒店定义为为经营业务而设立、向旅客或其他人有偿提供临时住宿的场所。它不包括政府机构经营的住宿、非营利且不分成的慈善或教育用途住宿、仅按月或更长周期收费的住宿，以及部长条例另行规定的其他类型。",
+    "de": "Der Hotel Act B.E. 2547 definiert ein Hotel als Unterkunft, die als Geschäft eingerichtet ist, um Reisenden oder anderen gegen Entgelt vorübergehend Unterkunft zu bieten. Ausgenommen sind Unterkünfte staatlicher Stellen oder für wohltätige und Bildungszwecke ohne Gewinn- oder Einnahmenbeteiligung, Unterkünfte, die nur gegen monatliche Gebühr oder länger angeboten werden, und weitere Arten, die eine Ministerialverordnung nennt."
+   },
+   "src": "https://multi.dopa.go.th/tspd/official_letter/download/2663/EN"
+  }
+ ],
+ "related": [
+  "hotelpage",
+  "guide-site",
+  "demand-prices",
+  "paybox",
+  "web-found",
+  "web-line"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Provincial Administration: Hotel Act B.E. 2547, English translation",
+    "th": "กรมการปกครอง: พระราชบัญญัติโรงแรม พ.ศ. 2547 ฉบับแปลภาษาอังกฤษ",
+    "my": "ပြည်နယ်အုပ်ချုပ်ရေးဦးစီးဌာန (DOPA) - ဟိုတယ်ဥပဒေ B.E. 2547 အင်္ဂလိပ်ဘာသာပြန်",
+    "zh": "泰国地方行政厅：《酒店法》B.E. 2547 英译本",
+    "de": "Department of Provincial Administration: Hotel Act B.E. 2547, englische Übersetzung"
+   },
+   "href": "https://multi.dopa.go.th/tspd/official_letter/download/2663/EN"
+  },
+  {
+   "t": {
+    "en": "Agoda Partner Hub: what commission do I pay to Agoda?",
+    "th": "Agoda Partner Hub: ฉันจ่ายค่าคอมมิชชันอะไรให้ Agoda",
+    "my": "Agoda Partner Hub - Agoda သို့ ကော်မရှင် ဘာတွေ ပေးရသလဲ",
+    "zh": "Agoda Partner Hub：我要向 Agoda 付什么佣金",
+    "de": "Agoda Partner Hub: Welche Provision zahle ich an Agoda?"
+   },
+   "href": "https://partnerhub.agoda.com/what-commission-do-i-pay-to-agoda/"
+  },
+  {
+   "t": {
+    "en": "Omise: Thailand pricing",
+    "th": "Omise: ตารางราคาประเทศไทย",
+    "my": "Omise - ထိုင်းနိုင်ငံ စျေးနှုန်းစာရင်း",
+    "zh": "Omise：泰国价目表",
+    "de": "Omise: Preise für Thailand"
+   },
+   "href": "https://www.omise.co/pricing/thailand"
+  },
+  {
+   "t": {
+    "en": "Cloudbeds: what a hotel booking engine is",
+    "th": "Cloudbeds: ระบบจองห้องพักของโรงแรมคืออะไร",
+    "my": "Cloudbeds - ဟိုတယ်ဘွတ်ကင်အင်ဂျင်ဆိုတာ ဘာလဲ",
+    "zh": "Cloudbeds：什么是酒店订房引擎",
+    "de": "Cloudbeds: Was eine Booking Engine für Hotels ist"
+   },
+   "href": "https://www.cloudbeds.com/booking-engine/"
+  }
+ ],
+ "glyphs": [
+  "home",
+  "calendar",
+  "key"
+ ]
+}

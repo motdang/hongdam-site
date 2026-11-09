@@ -1,0 +1,282 @@
+{
+ "id": "signs",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A shop's menu or sign works for the customers and staff who can read its language, and a Thai, English or Burmese version reaches the rest.",
+  "th": "เมนูหรือป้ายของร้านใช้ได้กับลูกค้าและพนักงานที่อ่านภาษานั้นออก และฉบับภาษาไทย อังกฤษ หรือพม่าช่วยให้คนที่เหลืออ่านได้",
+  "my": "ဆိုင်၏ မီနူး သို့မဟုတ် ဆိုင်းဘုတ်သည် ထိုဘာသာစကားကို ဖတ်နိုင်သော ဖောက်သည်နှင့် ဝန်ထမ်းများအတွက် အသုံးဝင်ပြီး ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် မြန်မာဘာသာ ဗားရှင်းက ကျန်သူများထံ ရောက်စေသည်။",
+  "zh": "店里的菜单或招牌，看得懂那种文字的顾客和员工用得上；泰文、英文或缅文版本让其余的人也能读到。",
+  "de": "Speisekarte oder Schild eines Ladens nützen den Gästen und dem Personal, die die Sprache lesen, und eine thailändische, englische oder burmesische Fassung erreicht die übrigen."
+ },
+ "n": {
+  "de": "Schilder und Speisekarten übersetzt"
+ },
+ "l": {
+  "de": "Ins Thailändische, Englische oder Burmesische, für Kunden oder Personal."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You send the sign or menu page.",
+    "th": "คุณส่งป้ายหรือหน้าเมนูมา",
+    "my": "သင်က ဆိုင်းဘုတ် သို့မဟုတ် မီနူးစာမျက်နှာကို ပို့သည်။",
+    "zh": "您把招牌或菜单页发来。",
+    "de": "Sie schicken das Schild oder die Menüseite."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "It is translated into Thai, English or Burmese.",
+    "th": "แปลเป็นภาษาไทย อังกฤษ หรือพม่า",
+    "my": "ထိုင်း၊ အင်္ဂလိပ် သို့မဟုတ် မြန်မာဘာသာသို့ ဘာသာပြန်သည်။",
+    "zh": "译成泰文、英文或缅文。",
+    "de": "Es wird ins Thailändische, Englische oder Burmesische übersetzt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per sign or menu page",
+    "th": "ต่อป้ายหรือหน้าเมนู",
+    "my": "ဆိုင်းဘုတ် သို့မဟုတ် မီနူးစာမျက်နှာတစ်ခုလျှင်",
+    "zh": "每块招牌或每页菜单",
+    "de": "Je Schild oder Menüseite"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The text comes back for your customers or staff to read.",
+    "th": "ส่งข้อความที่แปลแล้วกลับมาให้ลูกค้าหรือพนักงานอ่าน",
+    "my": "ဖောက်သည် သို့မဟုတ် ဝန်ထမ်းများ ဖတ်ရန် ဘာသာပြန်စာသား ပြန်ရောက်သည်။",
+    "zh": "译文交还，供顾客或员工阅读。",
+    "de": "Der Text kommt zurück, damit Gäste oder Personal ihn lesen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When it is done",
+    "th": "เมื่อแปลเสร็จ",
+    "my": "ပြီးသည့်အခါ",
+    "zh": "完成时",
+    "de": "Wenn er fertig ist"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In February 2024 the Department of Internal Trade told food vendors to show the quantity and price of each product on a sign. The same article says restaurants may not raise food prices for visitors from abroad, and gives the hotline 1569.",
+    "th": "เมื่อกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ขายอาหารให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน บทความเดียวกันระบุว่าร้านอาหารห้ามปรับขึ้นราคาอาหารกับนักท่องเที่ยวชาวต่างชาติ และให้สายด่วน 1569",
+    "my": "2024 ခုနှစ် ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက အစားအစာရောင်းသူများကို ကုန်ပစ္စည်းတစ်ခုစီ၏ အရေအတွက်နှင့် စျေးနှုန်းကို ဆိုင်းဘုတ်ပေါ်တွင် ပြသရန် ပြောကြားခဲ့သည်။ ထိုဆောင်းပါးတွင် စားသောက်ဆိုင်များသည် နိုင်ငံခြားမှ လာသူများအတွက် အစားအစာစျေးကို မြှင့်၍မရဟုလည်း ဆိုပြီး ဟော့လိုင်း 1569 ကို ပေးထားသည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求食品摊贩用牌子清楚标明每种商品的数量和价格。同一篇报道写明，餐厅不得对外国游客抬高餐价，并给出热线 1569。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade Anbieter von Speisen auf, Menge und Preis jedes Produkts deutlich auf einem Schild anzugeben. Im selben Artikel steht, dass Restaurants die Essenspreise für Gäste aus dem Ausland nicht erhöhen dürfen; genannt wird die Hotline 1569."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "t": {
+    "en": "A Tourism Authority of Thailand release dated 16 October 2026 gives 23.4 million international arrivals from 1 January to 30 September 2026, and a forecast of 33 million for the year.",
+    "th": "ข่าวของการท่องเที่ยวแห่งประเทศไทยลงวันที่ 16 ตุลาคม 2569 ระบุว่ามีผู้เดินทางเข้าจากต่างประเทศ 23.4 ล้านคนในช่วง 1 มกราคมถึง 30 กันยายน 2569 และคาดการณ์ 33 ล้านคนตลอดปี",
+    "my": "ထိုင်းနိုင်ငံခရီးသွားလာရေးအာဏာပိုင်၏ 2026 ခုနှစ် အောက်တိုဘာ 16 ရက်စွဲ ကြေညာချက်တွင် 2026 ဇန်နဝါရီ 1 ရက်မှ စက်တင်ဘာ 30 ရက်အထိ နိုင်ငံတကာမှ ဝင်ရောက်သူ 23.4 သန်းနှင့် တစ်နှစ်လုံးအတွက် 33 သန်း ခန့်မှန်းချက် ပါသည်။",
+    "zh": "泰国旅游局 2026 年 10 月 16 日的新闻稿给出：2026 年 1 月 1 日至 9 月 30 日国际入境 2,340 万人次，全年预测 3,300 万。",
+    "de": "Eine Mitteilung der Tourism Authority of Thailand vom 16. Oktober 2026 nennt 23,4 Millionen internationale Ankünfte vom 1. Januar bis 30. September 2026 und eine Prognose von 33 Millionen für das Jahr."
+   },
+   "src": "https://www.tatnews.org/2026/10/tat-expands-asean-india-shoppers-in-thailand-2026-to-drive-tourism-spending/"
+  },
+  {
+   "t": {
+    "en": "Google Translate's camera mode translates text in images, such as signs or handwritten notes. Its help page says translation of small, unclear or stylized text may not be accurate, and clear, commonly used fonts work best.",
+    "th": "โหมดกล้องของ Google Translate แปลข้อความในรูปภาพ เช่น ป้ายหรือโน้ตที่เขียนด้วยมือ หน้าช่วยเหลือระบุว่าการแปลข้อความที่เล็ก ไม่ชัด หรือเป็นตัวอักษรตกแต่งอาจไม่แม่นยำ และฟอนต์ที่ชัดและใช้กันทั่วไปให้ผลดีที่สุด",
+    "my": "Google Translate ၏ ကင်မရာမုဒ်သည် ဆိုင်းဘုတ် သို့မဟုတ် လက်ရေးမှတ်စုကဲ့သို့ ပုံထဲရှိ စာသားကို ဘာသာပြန်သည်။ အကူအညီစာမျက်နှာတွင် သေးငယ်သော၊ မရှင်းလင်းသော သို့မဟုတ် ဒီဇိုင်းစာလုံးများကို ဘာသာပြန်ခြင်းသည် မမှန်ကန်နိုင်ကြောင်းနှင့် ရှင်းလင်းသော အများသုံးဖောင့်များက အကောင်းဆုံးဖြစ်ကြောင်း ဆိုသည်။",
+    "zh": "Google 翻译的相机模式可翻译图片里的文字，例如招牌或手写便条。其帮助页面写明，小号、不清晰或艺术字体的文字翻译可能不准确，清晰、常用的字体效果最好。",
+    "de": "Der Kameramodus von Google Übersetzer übersetzt Text in Bildern, etwa auf Schildern oder in handschriftlichen Notizen. Laut Hilfeseite kann die Übersetzung von kleinem, unscharfem oder stilisiertem Text ungenau sein, und klare, gebräuchliche Schriften funktionieren am besten."
+   },
+   "src": "https://support.google.com/translate/answer/6142483?hl=en&co=GENIE.Platform%3DAndroid"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Thai–English or English–Thai translation, a Fastwork translator who lists hotel, food and drink text",
+    "th": "แปลไทย–อังกฤษ หรืออังกฤษ–ไทย ฟรีแลนซ์บน Fastwork ที่ระบุงานด้านโรงแรม อาหาร เครื่องดื่ม",
+    "my": "ထိုင်း–အင်္ဂလိပ် သို့မဟုတ် အင်္ဂလိပ်–ထိုင်း ဘာသာပြန် — ဟိုတယ်၊ အစားအစာ၊ အဖျော်ယမကာ စာသားများကို ဖော်ပြထားသော Fastwork ဘာသာပြန်သူ",
+    "zh": "泰英或英泰翻译，Fastwork 译者，列有酒店、餐饮类文本",
+    "de": "Übersetzung Thai–Englisch oder Englisch–Thai, ein Übersetzer auf Fastwork, der Hotel-, Speise- und Getränketexte nennt"
+   },
+   "p": {
+    "en": "฿250 a package; 5 days, 1 revision",
+    "th": "฿250 ต่อแพ็กเกจ 5 วัน แก้ไข 1 ครั้ง",
+    "my": "အစီအစဉ်တစ်ခုလျှင် ฿250၊ 5 ရက်၊ ပြင်ဆင်မှု 1 ကြိမ်",
+    "zh": "每个套餐 ฿250；5 天，修改 1 次",
+    "de": "฿250 je Paket; 5 Tage, 1 Überarbeitung"
+   },
+   "src": "https://fastwork.co/user/bararel/translation-78266533"
+  },
+  {
+   "t": {
+    "en": "Thai–Chinese and English–Chinese translation, a Fastwork translator who lists food menus",
+    "th": "แปลไทย–จีน และอังกฤษ–จีน ฟรีแลนซ์บน Fastwork ที่ระบุแปลเมนูอาหาร",
+    "my": "ထိုင်း–တရုတ် နှင့် အင်္ဂလိပ်–တရုတ် ဘာသာပြန် — အစားအစာမီနူးများကို ဖော်ပြထားသော Fastwork ဘာသာပြန်သူ",
+    "zh": "泰中和英中翻译，Fastwork 译者，列有菜单翻译",
+    "de": "Übersetzung Thai–Chinesisch und Englisch–Chinesisch, ein Übersetzer auf Fastwork, der Speisekarten nennt"
+   },
+   "p": {
+    "en": "฿250 Thai–Chinese, ฿350 Chinese–Thai, ฿450 English–Chinese; 3 days each",
+    "th": "ไทย–จีน ฿250 จีน–ไทย ฿350 อังกฤษ–จีน ฿450 อย่างละ 3 วัน",
+    "my": "ထိုင်း–တရုတ် ฿250၊ တရုတ်–ထိုင်း ฿350၊ အင်္ဂလိပ်–တရုတ် ฿450၊ တစ်ခုစီ 3 ရက်",
+    "zh": "泰译中 ฿250，中译泰 ฿350，英译中 ฿450；各 3 天",
+    "de": "Thai–Chinesisch ฿250, Chinesisch–Thai ฿350, Englisch–Chinesisch ฿450; je 3 Tage"
+   },
+   "src": "https://fastwork.co/user/panyanatm/translation-18294643"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to translate a menu?",
+    "th": "แปลเมนูอาหารราคาเท่าไร",
+    "my": "မီနူးတစ်ခု ဘာသာပြန်ရန် ဘယ်လောက်ကျသနည်း။",
+    "zh": "翻译菜单多少钱？",
+    "de": "Was kostet die Übersetzung einer Speisekarte?"
+   },
+   "a": {
+    "en": "A Fastwork translator who lists hotel, food and drink text offers Thai–English and English–Thai at ฿250 for one package, with 5 days and 1 revision. The listing does not give a word or page count and does not mention menus by name.",
+    "th": "นักแปลบน Fastwork ที่ระบุงานด้านโรงแรม อาหาร เครื่องดื่ม เสนอแปลไทย–อังกฤษและอังกฤษ–ไทยแพ็กเกจเดียว ฿250 ใช้เวลา 5 วัน แก้ไข 1 ครั้ง รายการไม่ระบุจำนวนคำหรือหน้า และไม่ได้กล่าวถึงเมนูโดยตรง",
+    "my": "ဟိုတယ်၊ အစားအစာ၊ အဖျော်ယမကာ စာသားများကို ဖော်ပြထားသော Fastwork ဘာသာပြန်သူသည် ထိုင်း–အင်္ဂလိပ် နှင့် အင်္ဂလိပ်–ထိုင်းကို အစီအစဉ်တစ်ခု ฿250၊ 5 ရက်၊ ပြင်ဆင်မှု 1 ကြိမ်ဖြင့် ကမ်းလှမ်းသည်။ စာမျက်နှာတွင် စကားလုံးအရေအတွက် သို့မဟုတ် စာမျက်နှာအရေအတွက် မဖော်ပြဘဲ မီနူးကို အမည်တပ်၍ မဖော်ပြပါ။",
+    "zh": "一位列有酒店、餐饮文本的 Fastwork 译者提供泰译英和英译泰，一个套餐 ฿250，5 天，修改 1 次。页面没有给出字数或页数，也没有直接提到菜单。",
+    "de": "Ein Übersetzer auf Fastwork, der Hotel-, Speise- und Getränketexte nennt, bietet Thai–Englisch und Englisch–Thai für ฿250 je Paket an, mit 5 Tagen und 1 Überarbeitung. Die Anzeige nennt weder Wort- noch Seitenzahl und erwähnt Speisekarten nicht ausdrücklich."
+   },
+   "src": "https://fastwork.co/user/bararel/translation-78266533"
+  },
+  {
+   "q": {
+    "en": "Can a phone app translate a menu or sign?",
+    "th": "แอปในมือถือแปลเมนูหรือป้ายได้ไหม",
+    "my": "ဖုန်းအက်ပ်က မီနူး သို့မဟုတ် ဆိုင်းဘုတ်ကို ဘာသာပြန်နိုင်ပါသလား။",
+    "zh": "手机应用能翻译菜单或招牌吗？",
+    "de": "Kann eine Handy-App eine Speisekarte oder ein Schild übersetzen?"
+   },
+   "a": {
+    "en": "Google Translate's help page for Android says the camera can translate text found in front of it, such as signs or handwritten notes: point it at the text and tap the shutter. The page does not mention menus. It says small, unclear or stylized text may not be translated accurately.",
+    "th": "หน้าช่วยเหลือของ Google Translate สำหรับ Android ระบุว่ากล้องแปลข้อความที่อยู่ตรงหน้าได้ เช่น ป้ายหรือโน้ตที่เขียนด้วยมือ โดยชี้กล้องไปที่ข้อความแล้วกดชัตเตอร์ หน้านี้ไม่ได้กล่าวถึงเมนู และระบุว่าข้อความที่เล็ก ไม่ชัด หรือเป็นตัวอักษรตกแต่งอาจแปลไม่แม่นยำ",
+    "my": "Google Translate ၏ Android အကူအညီစာမျက်နှာတွင် ကင်မရာသည် ရှေ့ရှိ ဆိုင်းဘုတ် သို့မဟုတ် လက်ရေးမှတ်စုကဲ့သို့ စာသားကို ဘာသာပြန်နိုင်ကြောင်း — ကင်မရာကို စာသားဘက်သို့ ချိန်၍ ရှပ်တာကို နှိပ်ရန် — ဆိုသည်။ စာမျက်နှာတွင် မီနူးကို မဖော်ပြပါ။ သေးငယ်သော၊ မရှင်းလင်းသော သို့မဟုတ် ဒီဇိုင်းစာလုံးများကို မှန်ကန်စွာ ဘာသာမပြန်နိုင်ကြောင်း ဆိုသည်။",
+    "zh": "Google 翻译的 Android 帮助页面写明，相机可翻译眼前的文字，如招牌或手写便条：对准文字，点快门即可。页面没有提到菜单，并写明小号、不清晰或艺术字体的文字可能翻不准。",
+    "de": "Auf der Android-Hilfeseite von Google Übersetzer steht, dass die Kamera Text vor ihr übersetzen kann, etwa Schilder oder handschriftliche Notizen: auf den Text richten und den Auslöser drücken. Speisekarten erwähnt die Seite nicht. Kleiner, unscharfer oder stilisierter Text werde möglicherweise nicht genau übersetzt."
+   },
+   "src": "https://support.google.com/translate/answer/6142483?hl=en&co=GENIE.Platform%3DAndroid"
+  },
+  {
+   "q": {
+    "en": "Must a menu show prices?",
+    "th": "เมนูต้องมีราคาหรือไม่",
+    "my": "မီနူးတွင် စျေးနှုန်းများ ပြသရမည်လား။",
+    "zh": "菜单必须标价吗？",
+    "de": "Muss eine Speisekarte Preise zeigen?"
+   },
+   "a": {
+    "en": "In February 2024 the Department of Internal Trade told food vendors to show the quantity and price of each product on a sign, so a customer sees the price before buying. Its hotline is 1569.",
+    "th": "เมื่อกุมภาพันธ์ 2567 กรมการค้าภายในแจ้งผู้ขายอาหารให้ติดป้ายแสดงปริมาณและราคาสินค้าให้ชัดเจน เพื่อให้ลูกค้าเห็นราคาก่อนซื้อ สายด่วนของกรมคือ 1569",
+    "my": "2024 ခုနှစ် ဖေဖော်ဝါရီလတွင် ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာနက အစားအစာရောင်းသူများကို ဝယ်သူက မဝယ်မီ စျေးကြည့်နိုင်စေရန် ကုန်ပစ္စည်းတစ်ခုစီ၏ အရေအတွက်နှင့် စျေးနှုန်းကို ဆိုင်းဘုတ်ပေါ်တွင် ပြသရန် ပြောကြားခဲ့သည်။ ဦးစီးဌာန၏ ဟော့လိုင်းမှာ 1569 ဖြစ်သည်။",
+    "zh": "2024 年 2 月，国内贸易厅要求食品摊贩用牌子标明每种商品的数量和价格，让顾客在买之前看到价格。该厅热线为 1569。",
+    "de": "Im Februar 2024 forderte das Department of Internal Trade Anbieter von Speisen auf, Menge und Preis jedes Produkts auf einem Schild anzugeben, damit die Kundschaft den Preis vor dem Kauf sieht. Die Hotline des Amtes lautet 1569."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "q": {
+    "en": "Can a restaurant charge visitors from abroad more?",
+    "th": "ร้านอาหารคิดราคานักท่องเที่ยวต่างชาติแพงกว่าได้ไหม",
+    "my": "စားသောက်ဆိုင်က နိုင်ငံခြားမှလာသူများထံ စျေးပိုယူနိုင်ပါသလား။",
+    "zh": "餐厅能对外国游客收更高的价吗？",
+    "de": "Darf ein Lokal Gästen aus dem Ausland mehr berechnen?"
+   },
+   "a": {
+    "en": "The Department of Internal Trade's February 2024 notice, as reported by Manager Online, says restaurants may not raise food prices for foreign visitors. The department's hotline for reports is 1569.",
+    "th": "ประกาศของกรมการค้าภายในเมื่อกุมภาพันธ์ 2567 ตามที่ผู้จัดการออนไลน์รายงาน ระบุว่าร้านอาหารห้ามปรับขึ้นราคาอาหารกับนักท่องเที่ยวชาวต่างชาติ สายด่วนสำหรับแจ้งเรื่องของกรมคือ 1569",
+    "my": "ပြည်တွင်းကုန်သွယ်ရေးဦးစီးဌာန၏ 2024 ခုနှစ် ဖေဖော်ဝါရီ ကြေညာချက်ကို Manager Online က ဖော်ပြသည့်အတိုင်း စားသောက်ဆိုင်များသည် နိုင်ငံခြားမှ လာသူများအတွက် အစားအစာစျေးကို မြှင့်၍ မရဟု ဆိုသည်။ တိုင်ကြားရန် ဦးစီးဌာန၏ ဟော့လိုင်းမှာ 1569 ဖြစ်သည်။",
+    "zh": "据 Manager Online 报道，国内贸易厅 2024 年 2 月的通知写明，餐厅不得对外国游客抬高餐价。该厅的举报热线为 1569。",
+    "de": "Laut Manager Online besagt die Mitteilung des Department of Internal Trade vom Februar 2024, dass Restaurants die Essenspreise für Gäste aus dem Ausland nicht erhöhen dürfen. Die Meldehotline des Amtes lautet 1569."
+   },
+   "src": "https://mgronline.com/business/detail/9670000018103"
+  },
+  {
+   "q": {
+    "en": "How many visitors from abroad come to Thailand?",
+    "th": "มีผู้มาเยือนจากต่างประเทศเข้าไทยกี่คน",
+    "my": "နိုင်ငံခြားမှ ထိုင်းသို့ လာသူ ဘယ်နှစ်ယောက်ရှိသနည်း။",
+    "zh": "有多少海外游客来泰国？",
+    "de": "Wie viele Besucherinnen und Besucher aus dem Ausland kommen nach Thailand?"
+   },
+   "a": {
+    "en": "A release of the Tourism Authority of Thailand dated 16 October 2026 gives 23.4 million international arrivals from 1 January to 30 September 2026 and a forecast of 33 million for the year.",
+    "th": "ข่าวของการท่องเที่ยวแห่งประเทศไทยลงวันที่ 16 ตุลาคม 2569 ระบุว่ามีผู้เดินทางเข้าจากต่างประเทศ 23.4 ล้านคนในช่วง 1 มกราคมถึง 30 กันยายน 2569 และคาดการณ์ 33 ล้านคนตลอดปี",
+    "my": "ထိုင်းနိုင်ငံခရီးသွားလာရေးအာဏာပိုင်၏ 2026 ခုနှစ် အောက်တိုဘာ 16 ရက်စွဲ ကြေညာချက်တွင် 2026 ဇန်နဝါရီ 1 ရက်မှ စက်တင်ဘာ 30 ရက်အထိ နိုင်ငံတကာမှ ဝင်ရောက်သူ 23.4 သန်းနှင့် တစ်နှစ်လုံးအတွက် 33 သန်း ခန့်မှန်းချက် ပါသည်။",
+    "zh": "泰国旅游局 2026 年 10 月 16 日的新闻稿给出：2026 年 1 月 1 日至 9 月 30 日国际入境 2,340 万人次，全年预测 3,300 万。",
+    "de": "Eine Mitteilung der Tourism Authority of Thailand vom 16. Oktober 2026 nennt 23,4 Millionen internationale Ankünfte vom 1. Januar bis 30. September 2026 und eine Prognose von 33 Millionen für das Jahr."
+   },
+   "src": "https://www.tatnews.org/2026/10/tat-expands-asean-india-shoppers-in-thailand-2026-to-drive-tourism-spending/"
+  }
+ ],
+ "related": [
+  "print",
+  "grab",
+  "stall-page",
+  "restaurant-desk",
+  "ordering",
+  "translate"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Translate Help: translate images",
+    "th": "ความช่วยเหลือ Google Translate: แปลข้อความในรูปภาพ",
+    "my": "Google Translate အကူအညီ: ပုံများကို ဘာသာပြန်ခြင်း",
+    "zh": "Google 翻译帮助：翻译图片",
+    "de": "Google Übersetzer Hilfe: Bilder übersetzen"
+   },
+   "href": "https://support.google.com/translate/answer/6142483?hl=en&co=GENIE.Platform%3DAndroid"
+  },
+  {
+   "t": {
+    "en": "TAT Newsroom: international arrivals, January to September 2026",
+    "th": "TAT Newsroom: ผู้เดินทางเข้าจากต่างประเทศ มกราคมถึงกันยายน 2569",
+    "my": "TAT Newsroom: နိုင်ငံတကာမှ ဝင်ရောက်သူများ၊ ဇန်နဝါရီမှ စက်တင်ဘာ 2026",
+    "zh": "TAT 新闻中心：2026 年 1 月至 9 月国际入境",
+    "de": "TAT Newsroom: internationale Ankünfte, Januar bis September 2026"
+   },
+   "href": "https://www.tatnews.org/2026/10/tat-expands-asean-india-shoppers-in-thailand-2026-to-drive-tourism-spending/"
+  }
+ ],
+ "glyphs": [
+  "translate",
+  "noodles",
+  "pencil"
+ ]
+}

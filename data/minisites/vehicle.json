@@ -1,0 +1,813 @@
+{
+ "id": "vehicle",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A vehicle bought in Thailand is registered in the buyer's name at the Department of Land Transport. A foreign buyer shows a passport and a residence document or a work permit.",
+  "th": "รถที่ซื้อในไทยจดทะเบียนเป็นชื่อผู้ซื้อที่กรมการขนส่งทางบก ผู้ซื้อชาวต่างชาติแสดงหนังสือเดินทางและเอกสารแสดงที่พักอาศัยหรือใบอนุญาตทำงาน",
+  "my": "ထိုင်းနိုင်ငံတွင် ဝယ်ယူသော ယာဉ်ကို ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာနတွင် ဝယ်သူ၏အမည်ဖြင့် မှတ်ပုံတင်သည်။ နိုင်ငံခြားသား ဝယ်သူသည် ပတ်စပို့နှင့် နေထိုင်ကြောင်း စာရွက်စာတမ်း သို့မဟုတ် အလုပ်လုပ်ခွင့်ပါမစ်ကို ပြသရသည်။",
+  "zh": "在泰国买的车，要在陆路交通厅登记到买家名下。外国买家出示护照，以及居住证明文件或工作许可。",
+  "de": "Ein in Thailand gekauftes Fahrzeug wird beim Department of Land Transport auf den Namen des Käufers zugelassen. Ein ausländischer Käufer legt einen Pass und ein Wohnsitzdokument oder eine Arbeitserlaubnis vor."
+ },
+ "n": {
+  "de": "Auto oder Motorrad, mit Ihnen gekauft"
+ },
+ "l": {
+  "de": "Vorauswahl, Händlerbesuche, Probefahrten, die Zulassung auf Ihren Namen. Verhandeln kostet extra, nach Stunden."
+ },
+ "steps": [
+  {
+   "db": "search",
+   "t": {
+    "en": "A shortlist of cars, scooters or motorcycles is drawn up to your budget",
+    "th": "คัดรถยนต์ สกู๊ตเตอร์ หรือมอเตอร์ไซค์ตามงบของคุณ",
+    "my": "သင့်ဘတ်ဂျက်နှင့် ကိုက်ညီသော ကား၊ စကူတာ သို့မဟုတ် ဆိုင်ကယ် ရွေးချယ်စာရင်း ပြုစုခြင်း",
+    "zh": "按您的预算列出汽车、踏板车或摩托车的候选名单",
+    "de": "Eine Vorauswahl an Autos, Rollern oder Motorrädern nach Ihrem Budget wird erstellt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "Dealers and shops are visited with you",
+    "th": "พาไปดูรถที่ดีลเลอร์และร้าน",
+    "my": "အရောင်းဆိုင်များသို့ သင်နှင့်အတူ သွားရောက်ကြည့်ရှုခြင်း",
+    "zh": "陪您去车行和店铺看车",
+    "de": "Händler und Geschäfte werden mit Ihnen besucht"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "After the shortlist",
+    "th": "หลังคัดรถเสร็จ",
+    "my": "ရွေးချယ်စာရင်း ပြီးနောက်",
+    "zh": "名单确定后",
+    "de": "Nach der Vorauswahl"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "Test drives and test rides are booked",
+    "th": "นัดทดลองขับและทดลองขี่",
+    "my": "စမ်းမောင်းခြင်းနှင့် စမ်းစီးခြင်းကို ချိန်းဆိုခြင်း",
+    "zh": "预约试驾和试骑",
+    "de": "Probefahrten werden gebucht"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "After the visits",
+    "th": "หลังไปดูรถ",
+    "my": "သွားရောက်ကြည့်ရှုပြီးနောက်",
+    "zh": "看车之后",
+    "de": "Nach den Besuchen"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Haggling with the dealer is added by the hour",
+    "th": "เพิ่มการต่อรองราคากับดีลเลอร์ คิดรายชั่วโมง",
+    "my": "အရောင်းဆိုင်နှင့် စျေးဆစ်ခြင်းကို နာရီအလိုက် ထပ်ထည့်နိုင်သည်",
+    "zh": "可加订与车行砍价，按小时计费",
+    "de": "Das Verhandeln mit dem Händler kommt dazu, nach Stunden"
+   },
+   "who": {
+    "en": "Hongdam, if you add it",
+    "th": "หงส์ดำ ถ้าคุณเพิ่มบริการนี้",
+    "my": "ဟုန်ဒမ်၊ သင်ထပ်ထည့်လျှင်",
+    "zh": "鸿丹，如您加订",
+    "de": "Hongdam, wenn Sie es dazubuchen"
+   },
+   "time": {
+    "en": "At the dealer",
+    "th": "ที่ดีลเลอร์",
+    "my": "အရောင်းဆိုင်တွင်",
+    "zh": "在车行",
+    "de": "Beim Händler"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "A mechanic inspects a used vehicle",
+    "th": "ช่างตรวจรถมือสอง",
+    "my": "စက်ပြင်ဆရာက အသုံးပြုပြီးယာဉ်ကို စစ်ဆေးခြင်း",
+    "zh": "技师检查二手车",
+    "de": "Ein Mechaniker prüft ein gebrauchtes Fahrzeug"
+   },
+   "who": {
+    "en": "A mechanic; you pay at cost",
+    "th": "ช่าง คุณจ่ายตามจริง",
+    "my": "စက်ပြင်ဆရာ၊ သင်က ကုန်ကျစရိတ်အတိုင်း ပေးသည်",
+    "zh": "技师；您按实际费用支付",
+    "de": "Ein Mechaniker; Sie zahlen zum Selbstkostenpreis"
+   },
+   "time": {
+    "en": "Before you buy",
+    "th": "ก่อนซื้อ",
+    "my": "မဝယ်မီ",
+    "zh": "购买之前",
+    "de": "Vor dem Kauf"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "The registration is put in your name at the Department of Land Transport",
+    "th": "โอนทะเบียนเป็นชื่อคุณที่กรมการขนส่งทางบก",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာနတွင် သင့်အမည်ဖြင့် မှတ်ပုံတင်ခြင်း",
+    "zh": "在陆路交通厅办理登记，登记到您名下",
+    "de": "Die Zulassung wird beim Department of Land Transport auf Ihren Namen eingetragen"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "After you buy",
+    "th": "หลังซื้อ",
+    "my": "ဝယ်ပြီးနောက်",
+    "zh": "购买之后",
+    "de": "Nach dem Kauf"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "฿105",
+   "t": {
+    "en": "Fees at the Department of Land Transport for a transfer: ฿5 for the form and ฿100 for the transfer",
+    "th": "ค่าธรรมเนียมโอนรถที่กรมการขนส่งทางบก: ค่าคำขอ ฿5 และค่าโอน ฿100",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာနတွင် လွှဲပြောင်းရန် ကြေး - ဖောင်ကြေး ฿5 နှင့် လွှဲပြောင်းကြေး ฿100",
+    "zh": "在陆路交通厅过户的费用：申请费 ฿5，过户费 ฿100",
+    "de": "Gebühren beim Department of Land Transport für eine Umschreibung: ฿5 für das Formular und ฿100 für die Umschreibung"
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+  },
+  {
+   "n": "0.5%",
+   "t": {
+    "en": "Stamp duty on a vehicle sale that carries no VAT: ฿1 for every ฿200",
+    "th": "อากรแสตมป์ซื้อขายรถที่ไม่มีภาษีมูลค่าเพิ่ม: ทุก ฿200 เสีย ฿1",
+    "my": "VAT မပါသော ယာဉ်ရောင်းချမှုအတွက် တံဆိပ်ခေါင်းခွန် - ฿200 လျှင် ฿1",
+    "zh": "不含增值税的车辆买卖印花税：每 ฿200 收 ฿1",
+    "de": "Stempelabgabe auf einen Fahrzeugkauf ohne Mehrwertsteuer: ฿1 je ฿200"
+   },
+   "src": "https://www.rd.go.th/63777.html"
+  },
+  {
+   "n": "15 days",
+   "t": {
+    "en": "Time to tell the registry about a transfer, counted from the day of the sale",
+    "th": "เวลาที่ต้องแจ้งการโอนรถต่อนายทะเบียน นับจากวันโอน",
+    "my": "လွှဲပြောင်းမှုကို မှတ်ပုံတင်ရုံးသို့ အကြောင်းကြားရမည့် အချိန်၊ ရောင်းချသည့်နေ့မှ စတင်ရေတွက်",
+    "zh": "向登记处通报过户的期限，从过户当天算起",
+    "de": "Frist, um dem Zulassungsamt eine Umschreibung zu melden, ab dem Tag des Verkaufs"
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+  },
+  {
+   "n": "7 / 5 years",
+   "t": {
+    "en": "Registration age at which a private car (first number) and a motorcycle (second) need an inspection before the yearly tax",
+    "th": "อายุทะเบียนที่รถยนต์ส่วนบุคคล (ตัวเลขแรก) และรถจักรยานยนต์ (ตัวเลขหลัง) ต้องผ่านการตรวจสภาพก่อนเสียภาษีประจำปี",
+    "my": "နှစ်စဉ်အခွန်မပေးမီ ကိုယ်ပိုင်ကား (ပထမကိန်း) နှင့် ဆိုင်ကယ် (ဒုတိယကိန်း) တို့ ယာဉ်စစ်ဆေးခြင်း ခံရမည့် မှတ်ပုံတင်ပြီးနှစ်",
+    "zh": "私家车（前一个数字）和摩托车（后一个数字）登记满此年数后，缴年税前须先验车",
+    "de": "Zulassungsalter, ab dem ein Privatauto (erste Zahl) und ein Motorrad (zweite Zahl) vor der Jahressteuer zur Prüfung müssen"
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What do fees and taxes add to the price of a used vehicle?",
+   "th": "ค่าธรรมเนียมและภาษีทำให้ราคารถมือสองบวกเพิ่มเท่าไหร่",
+   "my": "အသုံးပြုပြီးယာဉ်တစ်စီး၏ စျေးနှုန်းအပေါ် ကြေးများနှင့် အခွန်များက မည်မျှ ထပ်ပေါင်းသနည်း",
+   "zh": "二手车的价格之外，手续费和税要加多少",
+   "de": "Was kommen zum Preis eines gebrauchten Fahrzeugs an Gebühren und Steuern dazu?"
+  },
+  "noscript": {
+   "en": "The calculator needs JavaScript. The fees and taxes it adds up are listed below.",
+   "th": "เครื่องคำนวณต้องใช้ JavaScript ค่าธรรมเนียมและภาษีที่นำมารวมแสดงไว้ด้านล่าง",
+   "my": "တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ ပေါင်းထည့်သည့် ကြေးများနှင့် အခွန်များကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "计算器需要 JavaScript。它合计的费用和税列在下方。",
+   "de": "Der Rechner braucht JavaScript. Die Gebühren und Steuern, die er zusammenzählt, stehen weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "price",
+     "n": {
+      "en": "Price of the vehicle",
+      "th": "ราคารถ",
+      "my": "ယာဉ်၏ စျေးနှုန်း",
+      "zh": "车价",
+      "de": "Preis des Fahrzeugs"
+     },
+     "min": 20000,
+     "max": 1000000,
+     "step": 10000,
+     "start": 60000,
+     "money": true
+    }
+   ],
+   "choices": [
+    {
+     "id": "what",
+     "n": {
+      "en": "Which vehicle",
+      "th": "รถประเภทใด",
+      "my": "ယာဉ်အမျိုးအစား",
+      "zh": "哪种车",
+      "de": "Welches Fahrzeug"
+     },
+     "options": [
+      {
+       "id": "scooter",
+       "n": {
+        "en": "Scooter",
+        "th": "สกู๊ตเตอร์",
+        "my": "စကူတာ",
+        "zh": "踏板车",
+        "de": "Roller"
+       }
+      },
+      {
+       "id": "bike",
+       "n": {
+        "en": "Big bike",
+        "th": "บิ๊กไบค์",
+        "my": "ဆိုင်ကယ်ကြီး",
+        "zh": "大排量摩托车",
+        "de": "Grosses Motorrad"
+       }
+      },
+      {
+       "id": "car",
+       "n": {
+        "en": "Car",
+        "th": "รถยนต์",
+        "my": "ကား",
+        "zh": "汽车",
+        "de": "Auto"
+       }
+      }
+     ],
+     "start": "scooter"
+    },
+    {
+     "id": "from",
+     "n": {
+      "en": "Bought from",
+      "th": "ซื้อจาก",
+      "my": "ဝယ်ယူသည့်နေရာ",
+      "zh": "向谁购买",
+      "de": "Gekauft von"
+     },
+     "options": [
+      {
+       "id": "private",
+       "n": {
+        "en": "A private seller",
+        "th": "เจ้าของรถรายบุคคล",
+        "my": "ပုဂ္ဂိုလ်ပိုင် ရောင်းသူ",
+        "zh": "个人卖家",
+        "de": "Einer Privatperson"
+       }
+      },
+      {
+       "id": "dealer",
+       "n": {
+        "en": "A dealer that charges VAT",
+        "th": "ดีลเลอร์ที่คิดภาษีมูลค่าเพิ่ม",
+        "my": "VAT ကောက်ခံသော အရောင်းဆိုင်",
+        "zh": "收取增值税的车行",
+        "de": "Einem Händler, der Mehrwertsteuer berechnet"
+       }
+      }
+     ],
+     "start": "private"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Transfer at the Department of Land Transport: ฿5 for the form, ฿100 for the transfer",
+      "th": "ค่าโอนรถที่กรมการขนส่งทางบก: ค่าคำขอ ฿5 ค่าโอน ฿100",
+      "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာနတွင် လွှဲပြောင်းခြင်း - ဖောင်ကြေး ฿5၊ လွှဲပြောင်းကြေး ฿100",
+      "zh": "在陆路交通厅过户：申请费 ฿5，过户费 ฿100",
+      "de": "Umschreibung beim Department of Land Transport: ฿5 für das Formular, ฿100 für die Umschreibung"
+     },
+     "range": [
+      105,
+      105
+     ],
+     "src": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+    },
+    {
+     "n": {
+      "en": "Stamp duty on a sale without VAT: ฿1 for every ฿200 of the price",
+      "th": "อากรแสตมป์ซื้อขายรถที่ไม่มีภาษีมูลค่าเพิ่ม: ทุก ฿200 เสีย ฿1",
+      "my": "VAT မပါသော ရောင်းချမှုအတွက် တံဆိပ်ခေါင်းခွန် - စျေးနှုန်း ฿200 လျှင် ฿1",
+      "zh": "不含增值税的买卖印花税：车价每 ฿200 收 ฿1",
+      "de": "Stempelabgabe auf einen Kauf ohne Mehrwertsteuer: ฿1 je ฿200 des Preises"
+     },
+     "pct": [
+      0.5,
+      0.5
+     ],
+     "per": [
+      "price"
+     ],
+     "when": {
+      "from": [
+       "private"
+      ]
+     },
+     "src": "https://www.rd.go.th/63777.html"
+    },
+    {
+     "n": {
+      "en": "Yearly tax on a motorcycle",
+      "th": "ภาษีรถจักรยานยนต์ประจำปี",
+      "my": "ဆိုင်ကယ်၏ နှစ်စဉ်အခွန်",
+      "zh": "摩托车年税",
+      "de": "Jahressteuer für ein Motorrad"
+     },
+     "range": [
+      100,
+      100
+     ],
+     "when": {
+      "what": [
+       "scooter",
+       "bike"
+      ]
+     },
+     "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+    },
+    {
+     "n": {
+      "en": "Yearly tax on a car of 1,200 cc to 2,000 cc",
+      "th": "ภาษีรถยนต์ประจำปี รถขนาด 1,200 ถึง 2,000 ซีซี",
+      "my": "1,200 မှ 2,000 စီစီရှိ ကားတစ်စီး၏ နှစ်စဉ်အခွန်",
+      "zh": "排量 1,200 至 2,000 cc 汽车的年税",
+      "de": "Jahressteuer für ein Auto mit 1,200 bis 2,000 cm³"
+     },
+     "range": [
+      1200,
+      2900
+     ],
+     "when": {
+      "what": [
+       "car"
+      ]
+     },
+     "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+    },
+    {
+     "n": {
+      "en": "Compulsory insurance (Por Ror Bor) for a year, motorcycle",
+      "th": "พ.ร.บ. รถจักรยานยนต์ต่อปี",
+      "my": "ဆိုင်ကယ်အတွက် မဖြစ်မနေ အာမခံ (Por Ror Bor) တစ်နှစ်",
+      "zh": "摩托车强制险（Por Ror Bor），每年",
+      "de": "Pflichtversicherung (Por Ror Bor) für ein Jahr, Motorrad"
+     },
+     "range": [
+      323.14,
+      645.21
+     ],
+     "when": {
+      "what": [
+       "scooter",
+       "bike"
+      ]
+     },
+     "src": "https://www.roojai.com/en/car-insurance/compulsory/"
+    },
+    {
+     "n": {
+      "en": "Compulsory insurance (Por Ror Bor) for a year, passenger car",
+      "th": "พ.ร.บ. รถยนต์นั่งต่อปี",
+      "my": "ခရီးသည်တင်ကားအတွက် မဖြစ်မနေ အာမခံ (Por Ror Bor) တစ်နှစ်",
+      "zh": "乘用车强制险（Por Ror Bor），每年",
+      "de": "Pflichtversicherung (Por Ror Bor) für ein Jahr, Personenwagen"
+     },
+     "range": [
+      645.21,
+      645.21
+     ],
+     "when": {
+      "what": [
+       "car"
+      ]
+     },
+     "src": "https://www.roojai.com/en/car-insurance/compulsory/"
+    }
+   ],
+   "total": {
+    "en": "Fees and taxes on top of the price",
+    "th": "ค่าธรรมเนียมและภาษีนอกเหนือจากราคารถ",
+    "my": "စျေးနှုန်းအပြင် ကြေးများနှင့် အခွန်များ",
+    "zh": "车价之外的费用和税",
+    "de": "Gebühren und Steuern zusätzlich zum Preis"
+   },
+   "note": {
+    "en": "The lines use the rates that the Department of Land Transport, the Revenue Department and one insurer publish. The car tax line runs from a 1,200 cc car to a 2,000 cc car, before the discount for cars registered more than five years. Voluntary insurance, inspection fees and the fee for a residence document are not counted.",
+    "th": "บรรทัดเหล่านี้ใช้อัตราที่กรมการขนส่งทางบก กรมสรรพากร และบริษัทประกันภัยหนึ่งแห่งเผยแพร่ บรรทัดภาษีรถยนต์ครอบคลุมรถ 1,200 ซีซีถึง 2,000 ซีซี ก่อนหักส่วนลดสำหรับรถที่จดทะเบียนเกินห้าปี ประกันภัยภาคสมัครใจ ค่าตรวจสภาพ และค่าเอกสารแสดงถิ่นที่อยู่ไม่ได้นับรวม",
+    "my": "ကြေးကြိုးများသည် ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန၊ ဝင်ငွေခွန်ဦးစီးဌာနနှင့် အာမခံကုမ္ပဏီတစ်ခုတို့ ထုတ်ပြန်ထားသော နှုန်းထားများကို သုံးထားသည်။ ကားအခွန်စာကြောင်းသည် 1,200 စီစီ ကားမှ 2,000 စီစီ ကားအထိ ဖြစ်ပြီး ငါးနှစ်ကျော် မှတ်ပုံတင်ထားသော ကားများအတွက် လျှော့စျေးမတွက်မီ ဖြစ်သည်။ ရွေးချယ်ခွင့်အာမခံ၊ စစ်ဆေးကြေးနှင့် နေထိုင်ကြောင်းစာရွက်စာတမ်း ကြေးတို့ကို မထည့်တွက်ပါ။",
+    "zh": "各行采用陆路交通厅、税务厅和一家保险公司公布的费率。汽车税一行从 1,200 cc 的车算到 2,000 cc 的车，未计登记满五年车辆的减税。自愿保险、验车费和居住证明文件的费用未计入。",
+    "de": "Die Zeilen verwenden die Sätze, die das Department of Land Transport, das Revenue Department und ein Versicherer veröffentlichen. Die Zeile für die Autosteuer reicht von einem Auto mit 1,200 cm³ bis zu einem mit 2,000 cm³, vor dem Nachlass für Autos, die mehr als fünf Jahre zugelassen sind. Freiwillige Versicherung, Prüfgebühren und die Gebühr für ein Wohnsitzdokument sind nicht eingerechnet."
+   },
+   "oursLine": {
+    "en": "Hongdam shortlists it, visits dealers with you and registers it in your name for:",
+    "th": "หงส์ดำคัดรถ พาไปดูที่ดีลเลอร์ และโอนทะเบียนเป็นชื่อคุณในราคา:",
+    "my": "ဟုန်ဒမ်က ရွေးချယ်စာရင်းပြုစုပြီး အရောင်းဆိုင်များသို့ သင်နှင့်အတူ လိုက်ပို့ကာ သင့်အမည်ဖြင့် မှတ်ပုံတင်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹为您筛选车辆、陪您看车行，并办理登记到您名下，价格：",
+    "de": "Hongdam trifft die Vorauswahl, besucht Händler mit Ihnen und lässt es auf Ihren Namen zu für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "For a foreign owner, the Department of Land Transport's registration rule asks for a passport (or an alien identity certificate) with a photo, and one of these: a certificate of residence under the immigration law, a document showing a home in Thailand issued by a Thai authority, a foreign government body or an international organisation, or a work permit with a photo.",
+    "th": "สำหรับเจ้าของรถที่เป็นคนต่างด้าว ระเบียบการจดทะเบียนรถของกรมการขนส่งทางบกให้ใช้หนังสือเดินทางหรือใบสำคัญประจำตัวคนต่างด้าวพร้อมภาพถ่าย และเอกสารอย่างใดอย่างหนึ่งต่อไปนี้ ได้แก่ ใบสำคัญถิ่นที่อยู่ตามกฎหมายว่าด้วยคนเข้าเมือง เอกสารแสดงที่พักอาศัยในราชอาณาจักรที่ทางราชการ หน่วยงานของรัฐบาลต่างประเทศ หรือองค์การระหว่างประเทศออกให้ หรือใบอนุญาตทำงานพร้อมภาพถ่าย",
+    "my": "နိုင်ငံခြားသား ပိုင်ရှင်အတွက် ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန၏ မှတ်ပုံတင်စည်းမျဉ်းတွင် ဓာတ်ပုံပါသော ပတ်စပို့ (သို့မဟုတ် နိုင်ငံခြားသား မှတ်ပုံတင်လက်မှတ်) နှင့် အောက်ပါတို့အနက် တစ်မျိုးကို တောင်းသည် - လူဝင်မှုကြီးကြပ်ရေးဥပဒေအရ နေထိုင်ကြောင်း လက်မှတ်၊ ထိုင်းအာဏာပိုင်၊ နိုင်ငံခြားအစိုးရအဖွဲ့ သို့မဟုတ် နိုင်ငံတကာအဖွဲ့အစည်းက ထုတ်ပေးသော ထိုင်းနိုင်ငံတွင် နေထိုင်ကြောင်း စာရွက်စာတမ်း၊ သို့မဟုတ် ဓာတ်ပုံပါသော အလုပ်လုပ်ခွင့်ပါမစ်။",
+    "zh": "对外国车主，陆路交通厅的登记规定要求提供带照片的护照（或外国人身份证明），以及下列之一：依移民法取得的居住证书；泰国主管机关、外国政府机构或国际组织出具的泰国住址证明文件；带照片的工作许可。",
+    "de": "Für ausländische Halter verlangt die Zulassungsregel des Department of Land Transport einen Pass (oder einen Ausländerausweis) mit Foto und eines von diesen: eine Wohnsitzbescheinigung nach dem Einwanderungsgesetz, ein Dokument über einen Wohnsitz in Thailand von einer thailändischen Behörde, einer ausländischen Regierungsstelle oder einer internationalen Organisation, oder eine Arbeitserlaubnis mit Foto."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "t": {
+    "en": "A foreign owner with no domicile in Thailand files at the registry for the place shown in the official residence document, and only there.",
+    "th": "เจ้าของรถที่เป็นคนต่างด้าวและไม่มีภูมิลำเนาในราชอาณาจักร ยื่นคำขอต่อนายทะเบียนในท้องที่ที่มีถิ่นที่อยู่ตามเอกสารแสดงถิ่นที่อยู่ที่ทางราชการออกให้เท่านั้น",
+    "my": "ထိုင်းနိုင်ငံတွင် အမြဲတမ်းနေရပ်မရှိသော နိုင်ငံခြားသား ပိုင်ရှင်သည် အစိုးရက ထုတ်ပေးသည့် နေထိုင်ကြောင်း စာရွက်စာတမ်းတွင် ပါသော ဒေသရှိ မှတ်ပုံတင်ရုံးတွင်သာ လျှောက်ထားရသည်။",
+    "zh": "在泰国没有住所的外国车主，只能向官方居住证明文件上所载地点的登记处提出申请。",
+    "de": "Ein ausländischer Halter ohne Wohnsitz in Thailand reicht den Antrag nur bei dem Zulassungsamt des Ortes ein, der im amtlichen Wohnsitzdokument steht."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "t": {
+    "en": "A transfer is notified to the registry within 15 days of the sale. Seller and buyer sign the transfer form, and the vehicle is brought in for inspection, except for a hire-purchase transfer. The vehicle carries no unpaid tax and no registry hold. The fees are ฿5 for the form and ฿100 for the transfer, and the service takes one working day.",
+    "th": "ต้องแจ้งการโอนรถต่อนายทะเบียนภายใน 15 วันนับแต่วันโอน ผู้โอนและผู้รับโอนลงนามในแบบคำขอโอนและรับโอน และต้องนำรถมาตรวจสอบ ยกเว้นการโอนตามสัญญาเช่าซื้อ รถต้องไม่ค้างชำระภาษีหรือถูกอายัดการดำเนินการทางทะเบียน ค่าธรรมเนียมคือค่าคำขอ ฿5 และค่าโอน ฿100 ใช้เวลารวม 1 วันทำการ",
+    "my": "လွှဲပြောင်းမှုကို ရောင်းချသည့်နေ့မှ 15 ရက်အတွင်း မှတ်ပုံတင်ရုံးသို့ အကြောင်းကြားရသည်။ ရောင်းသူနှင့် ဝယ်သူတို့ လွှဲပြောင်းလျှောက်လွှာတွင် လက်မှတ်ထိုးပြီး အရစ်ကျဝယ်ယူမှု (hire-purchase) အတွက် လွှဲပြောင်းမှုမှလွဲ၍ ယာဉ်ကို စစ်ဆေးရန် ယူလာရသည်။ ယာဉ်တွင် မပေးရသေးသော အခွန် မရှိရပါ၊ မှတ်ပုံတင်ရုံး၏ ပိတ်ပင်မှုလည်း မရှိရပါ။ ကြေးမှာ ဖောင်ကြေး ฿5 နှင့် လွှဲပြောင်းကြေး ฿100 ဖြစ်ပြီး ဝန်ဆောင်မှုသည် အလုပ်ရက် တစ်ရက် ကြာသည်။",
+    "zh": "过户须在转让之日起 15 天内向登记处通报。买卖双方在过户申请表上签字，车辆需送去查验，分期付款（租购）过户除外。车辆不得有欠缴的税款，也不得被登记处冻结。费用为申请费 ฿5 加过户费 ฿100，办理需一个工作日。",
+    "de": "Eine Umschreibung wird dem Zulassungsamt innert 15 Tagen nach dem Verkauf gemeldet. Verkäufer und Käufer unterschreiben das Umschreibungsformular, und das Fahrzeug wird zur Prüfung gebracht, ausser bei einer Umschreibung nach Ratenkauf. Das Fahrzeug hat keine offene Steuer und keine Sperre des Amtes. Die Gebühren betragen ฿5 für das Formular und ฿100 für die Umschreibung; die Bearbeitung dauert einen Arbeitstag."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+  },
+  {
+   "t": {
+    "en": "For a final sale the transfer needs the registration book, proof of the sale such as a receipt or a sale contract, and the ID of seller and buyer (for a foreigner, the alien identity certificate). The officer inspects the vehicle, confirms the stamp duty is paid, writes the transfer in the book and hands the book back.",
+    "th": "การโอนรถโดยการซื้อขายเสร็จเด็ดขาดใช้ใบคู่มือจดทะเบียนรถ หลักฐานการโอนกรรมสิทธิ์ เช่น ใบเสร็จรับเงินหรือสัญญาซื้อขาย และหลักฐานประจำตัวของผู้โอนและผู้รับโอน (คนต่างด้าวใช้ใบสำคัญประจำตัวคนต่างด้าว) เจ้าหน้าที่ตรวจรถและการเสียอากร บันทึกรายการโอนในใบคู่มือ แล้วจ่ายใบคู่มือคืน",
+    "my": "အပြီးအပိုင် ရောင်းချမှုအတွက် လွှဲပြောင်းရာတွင် ယာဉ်မှတ်ပုံတင်စာအုပ်၊ ပြေစာ သို့မဟုတ် ရောင်းဝယ်စာချုပ်ကဲ့သို့ ရောင်းချကြောင်း သက်သေနှင့် ရောင်းသူ ဝယ်သူတို့၏ မှတ်ပုံတင်စာရွက်စာတမ်း (နိုင်ငံခြားသားအတွက် နိုင်ငံခြားသား မှတ်ပုံတင်လက်မှတ်) တို့ လိုသည်။ အရာရှိက ယာဉ်နှင့် တံဆိပ်ခေါင်းခွန်ကို စစ်ဆေးပြီး လွှဲပြောင်းမှုကို စာအုပ်တွင် ရေးမှတ်ကာ စာအုပ်ကို ပြန်ပေးသည်။",
+    "zh": "一次性买卖的过户需要：车辆登记簿、买卖凭证（如收据或买卖合同），以及买卖双方的身份证件（外国人用外国人身份证明）。工作人员核查车辆和印花税，把过户记入登记簿，再把登记簿交还。",
+    "de": "Für einen endgültigen Verkauf braucht die Umschreibung das Fahrzeugbuch, einen Nachweis des Verkaufs wie eine Quittung oder einen Kaufvertrag und den Ausweis von Verkäufer und Käufer (bei Ausländern den Ausländerausweis). Der Beamte prüft das Fahrzeug und die Stempelabgabe, trägt die Umschreibung ins Buch ein und gibt das Buch zurück."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "t": {
+    "en": "The registration book (ใบคู่มือจดทะเบียนรถ, the green book) is where the registry writes each transfer and each change to the vehicle, such as colour, engine or fuel. It has a box for yearly tax payments; when the box is full, a new book is issued for a fee. With no book, the entry reads “no book used” and a certified print-out of the registry data costs ฿20.",
+    "th": "ใบคู่มือจดทะเบียนรถ (เล่มทะเบียน) คือที่ที่นายทะเบียนบันทึกการโอนแต่ละครั้งและการเปลี่ยนแปลงตัวรถ เช่น สี เครื่องยนต์ หรือเชื้อเพลิง มีช่องรายการเสียภาษีประจำปี เมื่อช่องเต็มจะออกเล่มใหม่โดยเก็บค่าธรรมเนียม ถ้าไม่มีเล่ม จะบันทึกว่า “ไม่ใช้ใบคู่มือ” และสำเนาข้อมูลทะเบียนที่รับรองถูกต้องคิดค่าธรรมเนียม ฿20",
+    "my": "ယာဉ်မှတ်ပုံတင်စာအုပ် (ใบคู่มือจดทะเบียนรถ၊ စိမ်းရောင်စာအုပ်) တွင် လွှဲပြောင်းမှုတစ်ခုချင်းနှင့် အရောင်၊ အင်ဂျင် သို့မဟုတ် လောင်စာကဲ့သို့ ယာဉ်ပြောင်းလဲမှုတစ်ခုချင်းကို မှတ်ပုံတင်ရုံးက ရေးမှတ်သည်။ နှစ်စဉ်အခွန်ပေးသွင်းမှုများအတွက် ကွက်လပ်တစ်ခု ပါပြီး ကွက်လပ်ပြည့်လျှင် ကြေးဖြင့် စာအုပ်အသစ် ထုတ်ပေးသည်။ စာအုပ်မရှိလျှင် “စာအုပ်မသုံး” ဟု မှတ်သားပြီး အတည်ပြုထားသော မှတ်ပုံတင်အချက်အလက် ပရင့်ထုတ်ခြင်းကို ฿20 ကောက်ခံသည်။",
+    "zh": "车辆登记簿（ใบคู่มือจดทะเบียนรถ，俗称绿皮书）上，登记处记录每一次过户，以及车辆的每项变更，如颜色、发动机或燃料。簿上有缴纳年税的记录栏；栏满后，收费换发新簿。没有登记簿时，记录写明“不使用登记簿”，经认证的登记资料打印件收费 ฿20。",
+    "de": "Im Fahrzeugbuch (ใบคู่มือจดทะเบียนรถ, das grüne Buch) trägt das Zulassungsamt jede Umschreibung und jede Änderung am Fahrzeug ein, etwa Farbe, Motor oder Treibstoff. Es hat ein Feld für die Jahressteuer; ist das Feld voll, wird gegen Gebühr ein neues Buch ausgestellt. Ohne Buch lautet der Eintrag „Buch nicht verwendet“, und ein beglaubigter Ausdruck der Registerdaten kostet ฿20."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "t": {
+    "en": "The yearly tax on a private motorcycle is ฿100. A private car of up to 7 seats pays by engine size: ฿0.50 a cc for the first 600 cc, ฿1.50 a cc from 601 to 1,800 cc and ฿4 a cc above 1,800 cc. From the sixth year of registration the tax falls by 10%, and by 50% in the tenth year.",
+    "th": "ภาษีประจำปีของรถจักรยานยนต์ส่วนบุคคลคือ ฿100 รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คนเสียภาษีตามขนาดเครื่องยนต์ 600 ซีซีแรกคิดซีซีละ ฿0.50 ส่วนที่เกิน 600 แต่ไม่เกิน 1,800 ซีซีคิดซีซีละ ฿1.50 และส่วนที่เกิน 1,800 ซีซีคิดซีซีละ ฿4 ตั้งแต่ปีที่หกของการจดทะเบียน ภาษีลดลง 10% และลดเป็น 50% ในปีที่สิบ",
+    "my": "ကိုယ်ပိုင်ဆိုင်ကယ်၏ နှစ်စဉ်အခွန်မှာ ฿100 ဖြစ်သည်။ ထိုင်ခုံ 7 ခုအထိရှိ ကိုယ်ပိုင်ကားသည် အင်ဂျင်အရွယ်အစားအလိုက် ပေးရသည် - ပထမ 600 စီစီအတွက် စီစီတစ်ခုလျှင် ฿0.50၊ 601 မှ 1,800 စီစီအထိ စီစီတစ်ခုလျှင် ฿1.50၊ 1,800 စီစီထက်ကျော်လျှင် စီစီတစ်ခုလျှင် ฿4။ မှတ်ပုံတင်သည့် ဆဋ္ဌမနှစ်မှစ၍ အခွန် 10% လျော့ပြီး ဒသမနှစ်တွင် 50% လျော့သည်။",
+    "zh": "私家摩托车的年税为 ฿100。7 座及以下的私家车按排量计税：前 600 cc 每 cc ฿0.50，601 至 1,800 cc 每 cc ฿1.50，超过 1,800 cc 每 cc ฿4。登记满五年后，从第六年起税额减 10%，第十年减 50%。",
+    "de": "Die Jahressteuer für ein privates Motorrad beträgt ฿100. Ein privates Auto bis 7 Plätze zahlt nach Hubraum: ฿0.50 je cm³ für die ersten 600 cm³, ฿1.50 je cm³ von 601 bis 1,800 cm³ und ฿4 je cm³ darüber. Ab dem sechsten Zulassungsjahr sinkt die Steuer um 10%, im zehnten Jahr um 50%."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+  },
+  {
+   "t": {
+    "en": "A car (sedan, van or pickup) registered for 7 years or more, and a motorcycle registered for 5 years or more, must pass an inspection at a private inspection station before the yearly tax. A private vehicle’s tax can be paid up to 90 days ahead, and proof of compulsory insurance goes with the payment.",
+    "th": "รถเก๋ง รถตู้ และรถปิกอัพที่จดทะเบียนตั้งแต่ 7 ปีขึ้นไป และรถจักรยานยนต์ที่จดทะเบียนตั้งแต่ 5 ปีขึ้นไป ต้องผ่านการตรวจสภาพจากสถานตรวจสภาพรถเอกชน (ตรอ.) ก่อนเสียภาษีประจำปี รถส่วนบุคคลชำระภาษีล่วงหน้าได้ 90 วัน และต้องมีหลักฐานการทำประกันภัย พ.ร.บ. มาประกอบ",
+    "my": "မှတ်ပုံတင်ပြီး 7 နှစ်နှင့်အထက်ရှိ ကား (ဆီဒန်၊ ဗင် သို့မဟုတ် ပစ်ကပ်) နှင့် 5 နှစ်နှင့်အထက်ရှိ ဆိုင်ကယ်တို့သည် နှစ်စဉ်အခွန်မပေးမီ ပုဂ္ဂလိက ယာဉ်စစ်ဆေးရေးဌာနတွင် စစ်ဆေးမှု အောင်မြင်ရမည်။ ကိုယ်ပိုင်ယာဉ်၏ အခွန်ကို 90 ရက်အလိုကပင် ပေးနိုင်ပြီး မဖြစ်မနေ အာမခံ အထောက်အထားကို ငွေပေးသွင်းမှုနှင့်အတူ တင်ပြရသည်။",
+    "zh": "登记满 7 年的汽车（轿车、厢式车或皮卡）和登记满 5 年的摩托车，缴年税前须先在私营验车站通过检验。私人车辆的税最多可提前 90 天缴纳，缴税时附上强制险的凭证。",
+    "de": "Ein Auto (Limousine, Van oder Pickup) mit 7 oder mehr Zulassungsjahren und ein Motorrad mit 5 oder mehr Zulassungsjahren müssen vor der Jahressteuer bei einer privaten Prüfstelle durch die Prüfung. Die Steuer für ein Privatfahrzeug lässt sich bis zu 90 Tage im Voraus zahlen, und der Nachweis der Pflichtversicherung gehört zur Zahlung."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Transfer at the Department of Land Transport",
+    "th": "ค่าโอนรถที่กรมการขนส่งทางบก",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာနတွင် လွှဲပြောင်းခြင်း",
+    "zh": "在陆路交通厅过户",
+    "de": "Umschreibung beim Department of Land Transport"
+   },
+   "p": {
+    "en": "฿5 for the form and ฿100 for the transfer",
+    "th": "ค่าคำขอ ฿5 และค่าโอน ฿100",
+    "my": "ဖောင်ကြေး ฿5 နှင့် လွှဲပြောင်းကြေး ฿100",
+    "zh": "申请费 ฿5，过户费 ฿100",
+    "de": "฿5 für das Formular und ฿100 für die Umschreibung"
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+  },
+  {
+   "t": {
+    "en": "Stamp duty on the sale of a registered vehicle",
+    "th": "อากรแสตมป์ซื้อขายยานพาหนะที่จดทะเบียน",
+    "my": "မှတ်ပုံတင်ထားသော ယာဉ်ရောင်းချမှုအတွက် တံဆိပ်ခေါင်းခွန်",
+    "zh": "已登记车辆买卖的印花税",
+    "de": "Stempelabgabe auf den Verkauf eines zugelassenen Fahrzeugs"
+   },
+   "p": {
+    "en": "฿1 for every ฿200 or part of ฿200; none where the receipt carries VAT",
+    "th": "ทุก ฿200 หรือเศษของ ฿200 เสีย ฿1 ไม่ต้องเสียถ้าใบรับต้องเสียภาษีมูลค่าเพิ่ม",
+    "my": "฿200 သို့မဟုတ် ฿200 ၏ အပိုင်းအစ တစ်ခုလျှင် ฿1၊ ပြေစာတွင် VAT ပါလျှင် မကောက်ပါ",
+    "zh": "每 ฿200 或不足 ฿200 的部分收 ฿1；收据含增值税的免收",
+    "de": "฿1 je ฿200 oder Teil von ฿200; entfällt, wenn die Quittung Mehrwertsteuer trägt"
+   },
+   "src": "https://www.rd.go.th/63777.html"
+  },
+  {
+   "t": {
+    "en": "Yearly vehicle tax",
+    "th": "ภาษีรถประจำปี",
+    "my": "နှစ်စဉ် ယာဉ်အခွန်",
+    "zh": "车辆年税",
+    "de": "Jährliche Fahrzeugsteuer"
+   },
+   "p": {
+    "en": "Motorcycle ฿100; a car by engine size, ฿1,200 for 1,200 cc and ฿2,900 for 2,000 cc",
+    "th": "รถจักรยานยนต์ ฿100 รถยนต์ตามขนาดเครื่องยนต์ ฿1,200 สำหรับ 1,200 ซีซี และ ฿2,900 สำหรับ 2,000 ซีซี",
+    "my": "ဆိုင်ကယ် ฿100၊ ကားမှာ အင်ဂျင်အရွယ်အစားအလိုက် - 1,200 စီစီအတွက် ฿1,200 နှင့် 2,000 စီစီအတွက် ฿2,900",
+    "zh": "摩托车 ฿100；汽车按排量，1,200 cc 为 ฿1,200，2,000 cc 为 ฿2,900",
+    "de": "Motorrad ฿100; Auto nach Hubraum, ฿1,200 für 1,200 cm³ und ฿2,900 für 2,000 cm³"
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+  },
+  {
+   "t": {
+    "en": "Compulsory third-party insurance (Por Ror Bor), a year",
+    "th": "ประกันภัยภาคบังคับ (พ.ร.บ.) ต่อปี",
+    "my": "မဖြစ်မနေ ပြင်ပလူအာမခံ (Por Ror Bor) တစ်နှစ်",
+    "zh": "第三者强制险（Por Ror Bor），每年",
+    "de": "Obligatorische Haftpflichtversicherung (Por Ror Bor), pro Jahr"
+   },
+   "p": {
+    "en": "Motorcycles ฿323.14 to ฿645.21; passenger cars ฿645.21",
+    "th": "รถจักรยานยนต์ ฿323.14 ถึง ฿645.21 รถยนต์นั่ง ฿645.21",
+    "my": "ဆိုင်ကယ် ฿323.14 မှ ฿645.21၊ ခရီးသည်တင်ကား ฿645.21",
+    "zh": "摩托车 ฿323.14 至 ฿645.21；乘用车 ฿645.21",
+    "de": "Motorräder ฿323.14 bis ฿645.21; Personenwagen ฿645.21"
+   },
+   "src": "https://www.roojai.com/en/car-insurance/compulsory/"
+  },
+  {
+   "t": {
+    "en": "Mechanic’s inspection of a used car by a Fastwork freelancer in Chiang Mai",
+    "th": "ตรวจสภาพรถมือสองจากฟรีแลนซ์ใน Fastwork ในเชียงใหม่",
+    "my": "ချင်းမိုင်ရှိ Fastwork ဖရီးလန်ဆာတစ်ဦးထံမှ အသုံးပြုပြီးကားကို စက်ပြင်ဆရာ စစ်ဆေးခြင်း",
+    "zh": "清迈 Fastwork 自由职业者的二手车检查",
+    "de": "Prüfung eines gebrauchten Autos durch einen Freelancer auf Fastwork in Chiang Mai"
+   },
+   "p": {
+    "en": "฿1,500 for a combustion or hybrid car, ฿2,200 for a luxury car; 1 day, report online",
+    "th": "฿1,500 สำหรับรถสันดาปหรือไฮบริด ฿2,200 สำหรับรถหรู ใช้เวลา 1 วัน รายงานออนไลน์",
+    "my": "ဆီအင်ဂျင် သို့မဟုတ် ဟိုက်ဘရစ်ကား ฿1,500၊ ဇိမ်ခံကား ฿2,200၊ 1 ရက်၊ အွန်လိုင်းအစီရင်ခံစာ",
+    "zh": "燃油或混动车 ฿1,500，豪华车 ฿2,200；1 天，在线报告",
+    "de": "฿1,500 für ein Auto mit Verbrenner oder Hybrid, ฿2,200 für ein Luxusauto; 1 Tag, Bericht online"
+   },
+   "src": "https://fastwork.co/user/carconfirm/car-inspection-45704564"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Can a foreigner buy a car in Thailand?",
+    "th": "ชาวต่างชาติซื้อรถในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦးက ထိုင်းနိုင်ငံတွင် ကားဝယ်နိုင်ပါသလား",
+    "zh": "外国人可以在泰国买车吗",
+    "de": "Kann ein Ausländer in Thailand ein Auto kaufen?"
+   },
+   "a": {
+    "en": "The Department of Land Transport’s registration rule has a clause for foreign owners. The owner gives a passport or alien identity certificate with a photo, and a certificate of residence under the immigration law, a document showing a home in Thailand from an authority or organisation, or a work permit.",
+    "th": "ระเบียบการจดทะเบียนรถของกรมการขนส่งทางบกมีข้อกำหนดสำหรับเจ้าของรถที่เป็นคนต่างด้าว เจ้าของรถแสดงหนังสือเดินทางหรือใบสำคัญประจำตัวคนต่างด้าวพร้อมภาพถ่าย และใบสำคัญถิ่นที่อยู่ตามกฎหมายว่าด้วยคนเข้าเมือง เอกสารแสดงที่พักอาศัยในราชอาณาจักรที่หน่วยงานออกให้ หรือใบอนุญาตทำงาน",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန၏ မှတ်ပုံတင်စည်းမျဉ်းတွင် နိုင်ငံခြားသား ပိုင်ရှင်များအတွက် ပုဒ်မတစ်ခု ပါသည်။ ပိုင်ရှင်သည် ဓာတ်ပုံပါသော ပတ်စပို့ သို့မဟုတ် နိုင်ငံခြားသား မှတ်ပုံတင်လက်မှတ်နှင့် လူဝင်မှုကြီးကြပ်ရေးဥပဒေအရ နေထိုင်ကြောင်း လက်မှတ်၊ အာဏာပိုင် သို့မဟုတ် အဖွဲ့အစည်းတစ်ခုက ထုတ်ပေးသော ထိုင်းနိုင်ငံတွင် နေထိုင်ကြောင်း စာရွက်စာတမ်း သို့မဟုတ် အလုပ်လုပ်ခွင့်ပါမစ်ကို ပြသသည်။",
+    "zh": "陆路交通厅的登记规定中有针对外国车主的条款。车主出示带照片的护照或外国人身份证明，以及依移民法取得的居住证书、主管机关或组织出具的泰国住址证明文件，或工作许可。",
+    "de": "Die Zulassungsregel des Department of Land Transport hat eine Bestimmung für ausländische Halter. Der Halter legt einen Pass oder Ausländerausweis mit Foto vor und eine Wohnsitzbescheinigung nach dem Einwanderungsgesetz, ein Dokument über einen Wohnsitz in Thailand von einer Behörde oder Organisation oder eine Arbeitserlaubnis."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "q": {
+    "en": "Can a short-stay visitor buy a car in Thailand?",
+    "th": "นักท่องเที่ยวซื้อรถในไทยได้ไหม",
+    "my": "ခရီးသွားဧည့်သည်တစ်ဦးက ထိုင်းနိုင်ငံတွင် ကားဝယ်နိုင်ပါသလား",
+    "zh": "游客可以在泰国买车吗",
+    "de": "Kann ein Besucher auf Kurzaufenthalt in Thailand ein Auto kaufen?"
+   },
+   "a": {
+    "en": "The rule lists documents and names no visa type. A foreign owner gives a passport with a photo and a residence document or a work permit, and files at the registry for the place shown in the residence document.",
+    "th": "ระเบียบระบุเอกสารและไม่ได้ระบุประเภทวีซ่า เจ้าของรถที่เป็นชาวต่างชาติแสดงหนังสือเดินทางพร้อมภาพถ่าย และเอกสารแสดงถิ่นที่อยู่หรือใบอนุญาตทำงาน แล้วยื่นคำขอที่นายทะเบียนในท้องที่ตามเอกสารแสดงถิ่นที่อยู่",
+    "my": "စည်းမျဉ်းသည် စာရွက်စာတမ်းများကို ဖော်ပြထားပြီး ဗီဇာအမျိုးအစားကို မဖော်ပြပါ။ နိုင်ငံခြားသား ပိုင်ရှင်သည် ဓာတ်ပုံပါသော ပတ်စပို့နှင့် နေထိုင်ကြောင်း စာရွက်စာတမ်း သို့မဟုတ် အလုပ်လုပ်ခွင့်ပါမစ်ကို ပြသပြီး နေထိုင်ကြောင်း စာရွက်စာတမ်းတွင် ပါသော ဒေသရှိ မှတ်ပုံတင်ရုံးတွင် လျှောက်ထားသည်။",
+    "zh": "规定列的是文件，没有写明签证类型。外国车主出示带照片的护照，以及居住证明文件或工作许可，并向居住证明文件所载地点的登记处申请。",
+    "de": "Die Regel nennt Dokumente und kein Visum. Ein ausländischer Halter legt einen Pass mit Foto und ein Wohnsitzdokument oder eine Arbeitserlaubnis vor und reicht den Antrag bei dem Zulassungsamt des Ortes ein, der im Wohnsitzdokument steht."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner buy a motorbike in Thailand?",
+    "th": "ชาวต่างชาติซื้อมอเตอร์ไซค์ในไทยได้ไหม",
+    "my": "နိုင်ငံခြားသားတစ်ဦးက ထိုင်းနိုင်ငံတွင် ဆိုင်ကယ်ဝယ်နိုင်ပါသလား",
+    "zh": "外国人可以在泰国买摩托车吗",
+    "de": "Kann ein Ausländer in Thailand ein Motorrad kaufen?"
+   },
+   "a": {
+    "en": "The registration rule lists the motorcycle as vehicle type 12 next to cars, and its clause for foreign owners sits in the general rule for registering a vehicle. A registration comes with proof of compulsory insurance that has not run out.",
+    "th": "ระเบียบการจดทะเบียนรถระบุรถจักรยานยนต์เป็นรถประเภท รย. 12 ควบคู่กับรถยนต์ และข้อกำหนดสำหรับคนต่างด้าวอยู่ในหลักเกณฑ์ทั่วไปของการจดทะเบียนรถ การจดทะเบียนต้องแนบหลักฐานการทำประกันภัย พ.ร.บ. ที่ยังไม่สิ้นสุดความคุ้มครอง",
+    "my": "မှတ်ပုံတင်စည်းမျဉ်းတွင် ဆိုင်ကယ်ကို ကားများနှင့်အတူ ယာဉ်အမျိုးအစား 12 အဖြစ် စာရင်းပြုထားပြီး နိုင်ငံခြားသား ပိုင်ရှင်များအတွက် ပုဒ်မသည် ယာဉ်မှတ်ပုံတင်ခြင်း၏ ယေဘုယျစည်းမျဉ်းတွင် ပါသည်။ မှတ်ပုံတင်ရာတွင် သက်တမ်းမကုန်သေးသော မဖြစ်မနေ အာမခံ အထောက်အထားကို တွဲပါရသည်။",
+    "zh": "登记规定把摩托车列为第 12 类车辆，与汽车并列，针对外国车主的条款在车辆登记的一般规定里。登记时须附上尚未过期的强制险凭证。",
+    "de": "Die Zulassungsregel führt das Motorrad als Fahrzeugtyp 12 neben den Autos auf, und die Bestimmung für ausländische Halter steht in der allgemeinen Regel für die Zulassung eines Fahrzeugs. Zur Zulassung gehört der Nachweis einer Pflichtversicherung, die noch läuft."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "q": {
+    "en": "What papers does a used car need?",
+    "th": "ซื้อรถมือสองต้องใช้เอกสารอะไรบ้าง",
+    "my": "အသုံးပြုပြီးကားတစ်စီးအတွက် ဘာစာရွက်စာတမ်းတွေ လိုသလဲ",
+    "zh": "买二手车需要哪些文件",
+    "de": "Welche Papiere braucht ein gebrauchtes Auto?"
+   },
+   "a": {
+    "en": "For a final sale the transfer needs the registration book, proof of the sale such as a receipt or a sale contract, and the ID of seller and buyer. For a hire-purchase car it needs the contract, the instalment receipts and the last tax invoice with a letter confirming full payment.",
+    "th": "การโอนรถโดยการซื้อขายเสร็จเด็ดขาดใช้ใบคู่มือจดทะเบียนรถ หลักฐานการโอนกรรมสิทธิ์ เช่น ใบเสร็จรับเงินหรือสัญญาซื้อขาย และหลักฐานประจำตัวของผู้โอนและผู้รับโอน ส่วนรถเช่าซื้อใช้สำเนาสัญญาเช่าซื้อ ใบเสร็จรับเงินค่าเช่าซื้อ และใบกำกับภาษีงวดสุดท้ายพร้อมหนังสือยืนยันการชำระเงินครบถ้วน",
+    "my": "အပြီးအပိုင် ရောင်းချမှုအတွက် လွှဲပြောင်းရာတွင် ယာဉ်မှတ်ပုံတင်စာအုပ်၊ ပြေစာ သို့မဟုတ် ရောင်းဝယ်စာချုပ်ကဲ့သို့ ရောင်းချကြောင်း သက်သေနှင့် ရောင်းသူ ဝယ်သူတို့၏ မှတ်ပုံတင်စာရွက်စာတမ်း လိုသည်။ အရစ်ကျဝယ်ထားသော ကားအတွက် စာချုပ်၊ အရစ်ကျငွေပြေစာများနှင့် ငွေအပြည့်ပေးပြီးကြောင်း အတည်ပြုစာပါသော နောက်ဆုံးအခွန်ဖြတ်ပိုင်း လိုသည်။",
+    "zh": "一次性买卖的过户需要车辆登记簿、买卖凭证（如收据或买卖合同），以及买卖双方的身份证件。分期付款（租购）的车需要合同、分期付款收据，以及附有款项付清确认函的最后一期税务发票。",
+    "de": "Für einen endgültigen Verkauf braucht die Umschreibung das Fahrzeugbuch, einen Nachweis des Verkaufs wie eine Quittung oder einen Kaufvertrag und den Ausweis von Verkäufer und Käufer. Bei einem Auto auf Ratenkauf braucht sie den Vertrag, die Ratenquittungen und die letzte Steuerrechnung mit einem Schreiben, das die vollständige Zahlung bestätigt."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "q": {
+    "en": "How is a used motorcycle transferred?",
+    "th": "ซื้อมอเตอร์ไซค์มือสอง โอนยังไง",
+    "my": "အသုံးပြုပြီးဆိုင်ကယ်ကို ဘယ်လို လွှဲပြောင်းသလဲ",
+    "zh": "二手摩托车怎么过户",
+    "de": "Wie wird ein gebrauchtes Motorrad umgeschrieben?"
+   },
+   "a": {
+    "en": "Seller and buyer sign the transfer form at the registry and bring the motorcycle for inspection. The fees are ฿5 for the form and ฿100 for the transfer, and the service takes one working day. The transfer is notified within 15 days of the sale.",
+    "th": "ผู้โอนและผู้รับโอนลงนามในแบบคำขอโอนที่สำนักงานขนส่งและนำรถมาตรวจสอบ ค่าธรรมเนียมคือค่าคำขอ ฿5 และค่าโอน ฿100 ใช้เวลารวม 1 วันทำการ ต้องแจ้งการโอนภายใน 15 วันนับแต่วันโอน",
+    "my": "ရောင်းသူနှင့် ဝယ်သူတို့ မှတ်ပုံတင်ရုံးတွင် လွှဲပြောင်းလျှောက်လွှာတွင် လက်မှတ်ထိုးပြီး ဆိုင်ကယ်ကို စစ်ဆေးရန် ယူလာကြသည်။ ကြေးမှာ ဖောင်ကြေး ฿5 နှင့် လွှဲပြောင်းကြေး ฿100 ဖြစ်ပြီး ဝန်ဆောင်မှုသည် အလုပ်ရက် တစ်ရက် ကြာသည်။ လွှဲပြောင်းမှုကို ရောင်းချသည့်နေ့မှ 15 ရက်အတွင်း အကြောင်းကြားရသည်။",
+    "zh": "买卖双方在登记处签署过户申请表，并把摩托车送去查验。费用为申请费 ฿5 加过户费 ฿100，办理需一个工作日。过户须在转让之日起 15 天内通报。",
+    "de": "Verkäufer und Käufer unterschreiben das Umschreibungsformular beim Zulassungsamt und bringen das Motorrad zur Prüfung. Die Gebühren betragen ฿5 für das Formular und ฿100 für die Umschreibung; die Bearbeitung dauert einen Arbeitstag. Die Umschreibung wird innert 15 Tagen nach dem Verkauf gemeldet."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+  },
+  {
+   "q": {
+    "en": "What does a used motorcycle need each year?",
+    "th": "มอเตอร์ไซค์มือสองต้องทำอะไรบ้างทุกปี",
+    "my": "အသုံးပြုပြီးဆိုင်ကယ်တစ်စီးအတွက် နှစ်စဉ် ဘာတွေ လိုသလဲ",
+    "zh": "二手摩托车每年需要办什么",
+    "de": "Was braucht ein gebrauchtes Motorrad jedes Jahr?"
+   },
+   "a": {
+    "en": "The yearly tax on a private motorcycle is ฿100, paid with proof of compulsory insurance that is still in force. A motorcycle registered for 5 years or more passes an inspection at a private inspection station first. The tax can be paid up to 90 days ahead.",
+    "th": "ภาษีประจำปีของรถจักรยานยนต์ส่วนบุคคลคือ ฿100 ชำระพร้อมหลักฐานการทำประกันภัย พ.ร.บ. ที่ยังคุ้มครองอยู่ รถจักรยานยนต์ที่จดทะเบียนตั้งแต่ 5 ปีขึ้นไปต้องผ่านการตรวจสภาพจากสถานตรวจสภาพรถเอกชนก่อน ชำระภาษีล่วงหน้าได้ 90 วัน",
+    "my": "ကိုယ်ပိုင်ဆိုင်ကယ်၏ နှစ်စဉ်အခွန်မှာ ฿100 ဖြစ်ပြီး သက်တမ်းမကုန်သေးသော မဖြစ်မနေ အာမခံ အထောက်အထားနှင့်အတူ ပေးသွင်းသည်။ မှတ်ပုံတင်ပြီး 5 နှစ်နှင့်အထက်ရှိ ဆိုင်ကယ်သည် ပထမဦးစွာ ပုဂ္ဂလိက ယာဉ်စစ်ဆေးရေးဌာနတွင် စစ်ဆေးမှု အောင်မြင်ရမည်။ အခွန်ကို 90 ရက်အလိုကပင် ပေးနိုင်သည်။",
+    "zh": "私家摩托车的年税为 ฿100，缴税时附上尚在有效期内的强制险凭证。登记满 5 年的摩托车须先在私营验车站通过检验。税款最多可提前 90 天缴纳。",
+    "de": "Die Jahressteuer für ein privates Motorrad beträgt ฿100 und wird mit dem Nachweis einer noch laufenden Pflichtversicherung bezahlt. Ein Motorrad mit 5 oder mehr Zulassungsjahren muss zuerst bei einer privaten Prüfstelle durch die Prüfung. Die Steuer lässt sich bis zu 90 Tage im Voraus zahlen."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+  },
+  {
+   "q": {
+    "en": "How much is the yearly tax on a used car?",
+    "th": "ภาษีรถยนต์มือสองประจำปีเท่าไหร่",
+    "my": "အသုံးပြုပြီးကားတစ်စီး၏ နှစ်စဉ်အခွန်မှာ ဘယ်လောက်လဲ",
+    "zh": "二手车的年税是多少",
+    "de": "Wie hoch ist die Jahressteuer für ein gebrauchtes Auto?"
+   },
+   "a": {
+    "en": "A private car of up to 7 seats pays ฿0.50 a cc for the first 600 cc, ฿1.50 a cc from 601 to 1,800 cc and ฿4 a cc above that. On those rates a 1,200 cc car pays ฿1,200 and a 2,000 cc car ฿2,900. From the sixth year of registration the tax falls by 10%, and by 50% in the tenth year.",
+    "th": "รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คนเสียภาษี 600 ซีซีแรกคิดซีซีละ ฿0.50 ส่วนที่เกิน 600 แต่ไม่เกิน 1,800 ซีซีคิดซีซีละ ฿1.50 และส่วนที่เกินนั้นคิดซีซีละ ฿4 ตามอัตรานี้ รถ 1,200 ซีซีเสีย ฿1,200 และรถ 2,000 ซีซีเสีย ฿2,900 ตั้งแต่ปีที่หกของการจดทะเบียน ภาษีลดลง 10% และลดเป็น 50% ในปีที่สิบ",
+    "my": "ထိုင်ခုံ 7 ခုအထိရှိ ကိုယ်ပိုင်ကားသည် ပထမ 600 စီစီအတွက် စီစီတစ်ခုလျှင် ฿0.50၊ 601 မှ 1,800 စီစီအထိ စီစီတစ်ခုလျှင် ฿1.50၊ ထိုထက်ကျော်လျှင် စီစီတစ်ခုလျှင် ฿4 ပေးရသည်။ ထိုနှုန်းထားများအရ 1,200 စီစီကားသည် ฿1,200 နှင့် 2,000 စီစီကားသည် ฿2,900 ပေးရသည်။ မှတ်ပုံတင်သည့် ဆဋ္ဌမနှစ်မှစ၍ အခွန် 10% လျော့ပြီး ဒသမနှစ်တွင် 50% လျော့သည်။",
+    "zh": "7 座及以下的私家车：前 600 cc 每 cc ฿0.50，601 至 1,800 cc 每 cc ฿1.50，超出部分每 cc ฿4。按此费率，1,200 cc 的车缴 ฿1,200，2,000 cc 的车缴 ฿2,900。登记满五年后，从第六年起税额减 10%，第十年减 50%。",
+    "de": "Ein privates Auto bis 7 Plätze zahlt ฿0.50 je cm³ für die ersten 600 cm³, ฿1.50 je cm³ von 601 bis 1,800 cm³ und ฿4 je cm³ darüber. Nach diesen Sätzen zahlt ein Auto mit 1,200 cm³ ฿1,200 und eines mit 2,000 cm³ ฿2,900. Ab dem sechsten Zulassungsjahr sinkt die Steuer um 10%, im zehnten Jahr um 50%."
+   },
+   "src": "https://www.chaiyaphumdlt.go.th/fileupload/9455766845.pdf"
+  },
+  {
+   "q": {
+    "en": "Is there stamp duty on a used car sale?",
+    "th": "ซื้อรถมือสองต้องเสียอากรแสตมป์ไหม",
+    "my": "အသုံးပြုပြီးကားရောင်းချမှုတွင် တံဆိပ်ခေါင်းခွန် ရှိပါသလား",
+    "zh": "买二手车要缴印花税吗",
+    "de": "Fällt bei einem Kauf eines gebrauchten Autos Stempelabgabe an?"
+   },
+   "a": {
+    "en": "The Revenue Department’s tariff for a receipt of sale or transfer of a registered vehicle is ฿1 for every ฿200 or part of ฿200 of the amount. A receipt for income that carries VAT or specific business tax is exempt.",
+    "th": "อัตราของกรมสรรพากรสำหรับใบรับการขายหรือโอนกรรมสิทธิ์ยานพาหนะที่จดทะเบียน คือทุก ฿200 หรือเศษของ ฿200 เสีย ฿1 ใบรับสำหรับรายรับที่ต้องเสียภาษีมูลค่าเพิ่มหรือภาษีธุรกิจเฉพาะได้รับยกเว้น",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန၏ မှတ်ပုံတင်ထားသော ယာဉ်ကို ရောင်းချခြင်း သို့မဟုတ် လွှဲပြောင်းခြင်း ပြေစာအတွက် နှုန်းထားမှာ ပမာဏ ฿200 သို့မဟုတ် ฿200 ၏ အပိုင်းအစ တစ်ခုလျှင် ฿1 ဖြစ်သည်။ VAT သို့မဟုတ် အထူးလုပ်ငန်းခွန် ပေးရသော ဝင်ငွေအတွက် ပြေစာကို ကင်းလွတ်ခွင့် ပေးသည်။",
+    "zh": "税务厅对已登记车辆买卖或转让收据的税率，是金额每 ฿200 或不足 ฿200 的部分收 ฿1。涉及增值税或特别营业税的收入所开收据免征。",
+    "de": "Der Tarif des Revenue Department für eine Quittung über Verkauf oder Übertragung eines zugelassenen Fahrzeugs beträgt ฿1 je ฿200 oder Teil von ฿200 des Betrags. Eine Quittung über Einnahmen, die der Mehrwertsteuer oder der besonderen Geschäftssteuer unterliegen, ist befreit."
+   },
+   "src": "https://www.rd.go.th/63777.html"
+  }
+ ],
+ "related": [
+  "dispute",
+  "compare",
+  "rentals",
+  "luggage",
+  "lucky-number",
+  "form"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Land Transport: citizen manual for a vehicle transfer",
+    "th": "กรมการขนส่งทางบก: คู่มือสำหรับประชาชน การโอนรถ",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန - ယာဉ်လွှဲပြောင်းခြင်းဆိုင်ရာ ပြည်သူ့လမ်းညွှန်",
+    "zh": "陆路交通厅：车辆过户市民办事手册",
+    "de": "Department of Land Transport: Bürgerhandbuch zur Fahrzeugumschreibung"
+   },
+   "href": "https://www.chaiyaphumdlt.go.th/fileupload/779966.pdf"
+  },
+  {
+   "t": {
+    "en": "Department of Land Transport: regulation on vehicle registration and tax (Royal Gazette, 4 October 2019)",
+    "th": "กรมการขนส่งทางบก: ระเบียบว่าด้วยทะเบียนและภาษีรถ (ราชกิจจานุเบกษา 4 ตุลาคม 2562)",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန - ယာဉ်မှတ်ပုံတင်ခြင်းနှင့် အခွန်ဆိုင်ရာ စည်းမျဉ်း (ထိုင်းတော်ဝင်ဂဇက် (Royal Gazette) 2019 အောက်တိုဘာ 4)",
+    "zh": "陆路交通厅：车辆登记与税务规定（2019 年 10 月 4 日政府公报）",
+    "de": "Department of Land Transport: Regelung zu Fahrzeugzulassung und Steuer (Royal Gazette, 4. Oktober 2019)"
+   },
+   "href": "https://www.chaiyaphumdlt.go.th/fileupload/39620.PDF"
+  },
+  {
+   "t": {
+    "en": "Revenue Department: how stamp duty is worked out",
+    "th": "กรมสรรพากร: การคำนวณอากรแสตมป์",
+    "my": "ဝင်ငွေခွန်ဦးစီးဌာန - တံဆိပ်ခေါင်းခွန် တွက်ချက်ပုံ",
+    "zh": "税务厅：印花税的计算",
+    "de": "Revenue Department: So wird die Stempelabgabe berechnet"
+   },
+   "href": "https://www.rd.go.th/63777.html"
+  },
+  {
+   "t": {
+    "en": "Roojai: compulsory motor insurance rates",
+    "th": "Roojai: อัตราเบี้ยประกันภัยภาคบังคับ (พ.ร.บ.)",
+    "my": "Roojai - မဖြစ်မနေ မော်တော်ယာဉ်အာမခံ နှုန်းထားများ",
+    "zh": "Roojai：车辆强制险费率",
+    "de": "Roojai: Tarife der obligatorischen Motorfahrzeugversicherung"
+   },
+   "href": "https://www.roojai.com/en/car-insurance/compulsory/"
+  }
+ ],
+ "glyphs": [
+  "scooter",
+  "key",
+  "stamp"
+ ]
+}

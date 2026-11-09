@@ -1,0 +1,670 @@
+{
+ "id": "web-line",
+ "tier": "big",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Many customers in Thailand are already in LINE. You get your LINE account set up with its menu and replies, and an app inside LINE for bookings, orders or member cards, with no password to remember.",
+  "th": "ลูกค้าในไทยจำนวนมากใช้ไลน์อยู่แล้ว คุณจะได้ไลน์ OA ที่ตั้งค่าพร้อมเมนูและข้อความตอบกลับ และแอปในไลน์สำหรับจอง สั่งของ หรือบัตรสมาชิก โดยไม่ต้องจำรหัสผ่าน",
+  "my": "ထိုင်းနိုင်ငံရှိ ဖောက်သည်များစွာသည် LINE ကို အသုံးပြုနေပြီးဖြစ်သည်။ သင့် LINE အကောင့်ကို မီနူးနှင့် ပြန်စာများပါ ပြင်ဆင်ပေးပြီး ဘွတ်ကင်၊ အော်ဒါ သို့မဟုတ် အဖွဲ့ဝင်ကတ်များအတွက် LINE ထဲတွင် အက်ပ်တစ်ခု ပါဝင်သည်။ မှတ်ထားရမည့် စကားဝှက် မရှိပါ။",
+  "zh": "泰国的许多顾客本来就在用 LINE。您会得到一个设置好菜单和回复的 LINE 账号，以及 LINE 里用于预订、下单或会员卡的应用，无需记密码。",
+  "de": "Viele Kundinnen und Kunden in Thailand nutzen LINE bereits. Sie erhalten Ihr LINE-Konto mit Menü und Antworten eingerichtet sowie eine App innerhalb von LINE für Buchungen, Bestellungen oder Mitgliedskarten, ohne dass ein Passwort zu merken ist."
+ },
+ "n": {
+  "de": "LINE-Shop- oder Buchungs-App"
+ },
+ "l": {
+  "de": "Ihr LINE-Konto eingerichtet, mit einer App innerhalb von LINE."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "Your LINE account is set up",
+    "th": "ตั้งค่าไลน์ OA ของคุณ",
+    "my": "သင့် LINE အကောင့်ကို ပြင်ဆင်ပေးခြင်း",
+    "zh": "设置您的 LINE 账号",
+    "de": "Ihr LINE-Konto wird eingerichtet"
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ် နှင့် သင်",
+    "zh": "鸿丹与您",
+    "de": "Hongdam, mit Ihnen"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "Its menu and replies are set up",
+    "th": "ตั้งค่าเมนูและข้อความตอบกลับ",
+    "my": "မီနူးနှင့် ပြန်စာများကို ပြင်ဆင်ပေးခြင်း",
+    "zh": "设置菜单和回复",
+    "de": "Menü und Antworten werden eingerichtet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "With the account",
+    "th": "ไปพร้อมกับบัญชี",
+    "my": "အကောင့်နှင့်အတူ",
+    "zh": "与账号一起",
+    "de": "Zusammen mit dem Konto"
+   }
+  },
+  {
+   "db": "gears",
+   "t": {
+    "en": "An app inside LINE is made for bookings, orders or member cards",
+    "th": "สร้างแอปในไลน์สำหรับจอง สั่งของ หรือบัตรสมาชิก",
+    "my": "ဘွတ်ကင်၊ အော်ဒါ သို့မဟုတ် အဖွဲ့ဝင်ကတ်များအတွက် LINE ထဲတွင် အက်ပ်တစ်ခု ပြုလုပ်ခြင်း",
+    "zh": "制作 LINE 内的应用，用于预订、下单或会员卡",
+    "de": "Eine App innerhalb von LINE für Buchungen, Bestellungen oder Mitgliedskarten wird erstellt"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the menu",
+    "th": "หลังตั้งค่าเมนู",
+    "my": "မီနူးပြီးနောက်",
+    "zh": "菜单之后",
+    "de": "Nach dem Menü"
+   }
+  },
+  {
+   "db": "key",
+   "t": {
+    "en": "Customers open the app inside LINE, with no password to remember",
+    "th": "ลูกค้าเปิดแอปในไลน์ได้ โดยไม่ต้องจำรหัสผ่าน",
+    "my": "ဖောက်သည်များသည် စကားဝှက် မှတ်ရန်မလိုဘဲ LINE ထဲတွင် အက်ပ်ကို ဖွင့်နိုင်သည်",
+    "zh": "顾客在 LINE 里打开应用，无需记密码",
+    "de": "Kundinnen und Kunden öffnen die App in LINE, ohne ein Passwort zu merken"
+   },
+   "who": {
+    "en": "Your customers",
+    "th": "ลูกค้าของคุณ",
+    "my": "သင့်ဖောက်သည်များ",
+    "zh": "您的顾客",
+    "de": "Ihre Kundschaft"
+   },
+   "time": {
+    "en": "When they open it",
+    "th": "เมื่อเปิดใช้",
+    "my": "ဖွင့်သည့်အခါ",
+    "zh": "打开时",
+    "de": "Beim Öffnen"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "54M",
+   "t": {
+    "en": "Monthly active LINE users in Thailand as of 31 March 2026, LY Corporation's figure",
+    "th": "ผู้ใช้ LINE รายเดือนในประเทศไทย ณ วันที่ 31 มีนาคม 2569 ตามตัวเลขของ LY Corporation",
+    "my": "2026 မတ်လ 31 ရက်အထိ ထိုင်းနိုင်ငံရှိ LINE လစဉ် တက်ကြွအသုံးပြုသူ၊ LY Corporation ၏ ကိန်းဂဏန်း",
+    "zh": "截至 2026 年 3 月 31 日泰国 LINE 月活跃用户，数字来自 LY Corporation",
+    "de": "Monatlich aktive LINE-Nutzende in Thailand per 31. März 2026, Zahl von LY Corporation"
+   },
+   "src": "https://www.lycorp.co.jp/en/company/global/"
+  },
+  {
+   "n": "฿0",
+   "t": {
+    "en": "A LINE Official Account's Free plan: 300 broadcast messages a month",
+    "th": "แพ็กเกจฟรีของ LINE Official Account: บรอดแคสต์ 300 ข้อความต่อเดือน",
+    "my": "LINE Official Account ၏ Free ပက်ကေ့ချ် - တစ်လလျှင် broadcast မက်ဆေ့ချ် 300",
+    "zh": "LINE 官方账号的 Free 套餐：每月 300 条群发消息",
+    "de": "Der Free-Tarif eines LINE Official Account: 300 Broadcast-Nachrichten im Monat"
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "n": "฿1,780",
+   "t": {
+    "en": "The Pro plan a month, plus 7% VAT: 35,000 broadcast messages",
+    "th": "แพ็กเกจโปรต่อเดือน บวก VAT 7%: บรอดแคสต์ 35,000 ข้อความ",
+    "my": "Pro ပက်ကေ့ချ် တစ်လလျှင် VAT 7% ထပ်ပေါင်း - broadcast မက်ဆေ့ချ် 35,000",
+    "zh": "Pro 套餐每月价格，另加 7% 增值税：35,000 条群发消息",
+    "de": "Der Pro-Tarif im Monat, plus 7% MwSt.: 35,000 Broadcast-Nachrichten"
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "n": "฿6,900–9,900",
+   "t": {
+    "en": "A year of a booking system inside LINE OA, by package, as one Fastwork seller prices it",
+    "th": "ระบบจองใน LINE OA ต่อปี ตามแพ็กเกจ ตามราคาของผู้ขายรายหนึ่งบน Fastwork",
+    "my": "LINE OA ထဲရှိ ဘွတ်ကင်စနစ် တစ်နှစ်စာ၊ ပက်ကေ့ချ်အလိုက်၊ Fastwork ရောင်းသူတစ်ဦး၏ စျေးနှုန်း",
+    "zh": "LINE OA 内预订系统一年的价格，按套餐不同，为 Fastwork 上一位卖家的标价",
+    "de": "Ein Jahr Buchungssystem im LINE OA, je nach Paket, so preist es ein Verkäufer auf Fastwork"
+   },
+   "src": "https://fastwork.co/user/biggiess/chatbot-27454366"
+  }
+ ],
+ "toy": {
+  "kind": "picker",
+  "h": {
+   "en": "Which LINE OA plan fits?",
+   "th": "แพ็กเกจ LINE OA ไหนเหมาะ",
+   "my": "LINE OA ပက်ကေ့ချ် ဘယ်ဟာ သင့်တော်သလဲ",
+   "zh": "哪个 LINE OA 套餐合适",
+   "de": "Welcher LINE-OA-Tarif passt?"
+  },
+  "noscript": {
+   "en": "The plan picker needs JavaScript. The plans and prices are in the answers below.",
+   "th": "ตัวเลือกแพ็กเกจต้องใช้ JavaScript แพ็กเกจและราคาอยู่ในคำตอบด้านล่าง",
+   "my": "ပက်ကေ့ချ်ရွေးချယ်ကိရိယာသည် JavaScript လိုအပ်သည်။ ပက်ကေ့ချ်များနှင့် စျေးနှုန်းများကို အောက်ပါအဖြေများတွင် ဖော်ပြထားသည်။",
+   "zh": "套餐选择器需要 JavaScript。套餐和价格见下方的解答。",
+   "de": "Die Tarifauswahl braucht JavaScript. Die Tarife und Preise stehen in den Antworten weiter unten."
+  },
+  "data": {
+   "q": {
+    "en": "Pick a plan to see its monthly price and message limit. Prices are for Thailand and exclude 7% VAT.",
+    "th": "เลือกแพ็กเกจเพื่อดูราคารายเดือนและจำนวนข้อความ ราคาเป็นของประเทศไทย ยังไม่รวม VAT 7%",
+    "my": "ပက်ကေ့ချ်တစ်ခု ရွေး၍ လစဉ်စျေးနှုန်းနှင့် မက်ဆေ့ချ်ကန့်သတ်ချက်ကို ကြည့်ပါ။ စျေးနှုန်းများသည် ထိုင်းနိုင်ငံအတွက်ဖြစ်ပြီး VAT 7% မပါ။",
+    "zh": "选一个套餐，看每月价格和消息上限。价格适用于泰国，不含 7% 增值税。",
+    "de": "Wählen Sie einen Tarif und sehen Sie Monatspreis und Nachrichtenlimit. Die Preise gelten für Thailand und verstehen sich ohne 7% MwSt."
+   },
+   "options": [
+    {
+     "id": "free",
+     "n": {
+      "en": "Free",
+      "th": "ฟรี",
+      "my": "အခမဲ့",
+      "zh": "免费",
+      "de": "Free"
+     },
+     "big": {
+      "en": "฿0",
+      "th": "฿0",
+      "my": "฿0",
+      "zh": "฿0",
+      "de": "฿0"
+     },
+     "t": {
+      "en": "The Free plan comes with a new official account. It sends 300 broadcast messages a month. The page lists no price for extra messages on this plan.",
+      "th": "แพ็กเกจฟรีมาพร้อมบัญชีทางการที่เปิดใหม่ ส่งบรอดแคสต์ได้ 300 ข้อความต่อเดือน หน้าราคาไม่ระบุค่าข้อความเพิ่มเติมของแพ็กเกจนี้",
+      "my": "Free ပက်ကေ့ချ်သည် အကောင့်အသစ် ဖွင့်လျှင် ပါလာသည်။ တစ်လလျှင် broadcast မက်ဆေ့ချ် 300 ပို့နိုင်သည်။ စျေးနှုန်းစာမျက်နှာတွင် ဤပက်ကေ့ချ်အတွက် အပိုမက်ဆေ့ချ်စျေး မဖော်ပြထားပါ။",
+      "zh": "Free 套餐随新开的官方账号附带，每月可发 300 条群发消息。价格页没有列出该套餐的额外消息价格。",
+      "de": "Der Free-Tarif gehört zu einem neu eröffneten Official Account. Er umfasst 300 Broadcast-Nachrichten im Monat. Für zusätzliche Nachrichten nennt die Preisseite in diesem Tarif keinen Preis."
+     },
+     "facts": [
+      {
+       "en": "MyCustomer | CRM, the member system for LINE OA, is listed at ฿369, plus 7% VAT.",
+       "th": "MyCustomer | CRM ระบบสมาชิกบน LINE OA ราคา ฿369 ยังไม่รวม VAT 7%",
+       "my": "LINE OA အတွက် အဖွဲ့ဝင်စနစ် MyCustomer | CRM ကို ฿369 ဟု ဖော်ပြထားပြီး VAT 7% မပါ။",
+       "zh": "LINE OA 的会员系统 MyCustomer | CRM 标价 ฿369，不含 7% 增值税。",
+       "de": "MyCustomer | CRM, das Mitgliedersystem für LINE OA, steht mit ฿369 auf der Seite, ohne 7% MwSt."
+      },
+      {
+       "en": "Orders completed through MyShop carry a fee under conditions LINE sets.",
+       "th": "ออเดอร์ที่สำเร็จผ่าน MyShop มีค่าธรรมเนียมตามเงื่อนไขที่ LINE กำหนด",
+       "my": "MyShop မှတစ်ဆင့် ပြီးစီးသော အော်ဒါများတွင် LINE သတ်မှတ်သည့် အခြေအနေများအရ ကြေးငွေ ကျသင့်သည်။",
+       "zh": "通过 MyShop 完成的订单，按 LINE 设定的条件收取费用。",
+       "de": "Über MyShop abgeschlossene Bestellungen kosten eine Gebühr nach den Bedingungen von LINE."
+      }
+     ],
+     "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "id": "basic",
+     "n": {
+      "en": "Basic",
+      "th": "เบสิก",
+      "my": "Basic",
+      "zh": "Basic",
+      "de": "Basic"
+     },
+     "big": {
+      "en": "฿1,280",
+      "th": "฿1,280",
+      "my": "฿1,280",
+      "zh": "฿1,280",
+      "de": "฿1,280"
+     },
+     "t": {
+      "en": "Basic is ฿1,280 a month, plus 7% VAT. It sends 15,000 broadcast messages a month. A message past that costs ฿0.1.",
+      "th": "เบสิกราคา ฿1,280 ต่อเดือน บวก VAT 7% ส่งบรอดแคสต์ได้ 15,000 ข้อความต่อเดือน ข้อความที่เกินคิดข้อความละ ฿0.1",
+      "my": "Basic သည် တစ်လ ฿1,280 ဖြစ်ပြီး VAT 7% ထပ်ပေါင်းသည်။ တစ်လလျှင် broadcast မက်ဆေ့ချ် 15,000 ပို့နိုင်သည်။ ထို့ထက်ကျော်သော မက်ဆေ့ချ် တစ်ခုလျှင် ฿0.1 ကျသည်။",
+      "zh": "Basic 每月 ฿1,280，另加 7% 增值税，每月可发 15,000 条群发消息。超出的每条 ฿0.1。",
+      "de": "Basic kostet ฿1,280 im Monat, plus 7% MwSt. Der Tarif umfasst 15,000 Broadcast-Nachrichten im Monat. Jede weitere Nachricht kostet ฿0.1."
+     },
+     "facts": [
+      {
+       "en": "Monthly plans cannot be bought on iOS. They are bought in LINE Official Account Manager at manager.line.biz.",
+       "th": "แพ็กเกจรายเดือนซื้อบน iOS ไม่ได้ ซื้อผ่าน LINE Official Account Manager ที่ manager.line.biz",
+       "my": "လစဉ်ပက်ကေ့ချ်များကို iOS တွင် မဝယ်နိုင်ပါ။ manager.line.biz ရှိ LINE Official Account Manager မှ ဝယ်ယူသည်။",
+       "zh": "月度套餐不能在 iOS 上购买，要在 manager.line.biz 的 LINE Official Account Manager 中购买。",
+       "de": "Monatstarife lassen sich nicht auf iOS kaufen. Sie werden im LINE Official Account Manager unter manager.line.biz gekauft."
+      },
+      {
+       "en": "At 20,000 messages in a month, Basic costs ฿1,280 + 5,000 × ฿0.1 = ฿1,780, the price of Pro.",
+       "th": "ถ้าส่ง 20,000 ข้อความในเดือนเดียว เบสิกเป็น ฿1,280 + 5,000 × ฿0.1 = ฿1,780 เท่ากับราคาโปร",
+       "my": "တစ်လတွင် မက်ဆေ့ချ် 20,000 ပို့လျှင် Basic သည် ฿1,280 + 5,000 × ฿0.1 = ฿1,780 ဖြစ်ပြီး Pro ၏ စျေးနှုန်းနှင့် တူသည်။",
+       "zh": "一个月发 20,000 条时，Basic 为 ฿1,280 + 5,000 × ฿0.1 = ฿1,780，与 Pro 的价格相同。",
+       "de": "Bei 20,000 Nachrichten in einem Monat kostet Basic ฿1,280 + 5,000 × ฿0.1 = ฿1,780, den Preis von Pro."
+      },
+      {
+       "en": "MyCustomer | CRM, the member system for LINE OA, is listed at ฿369, plus 7% VAT.",
+       "th": "MyCustomer | CRM ระบบสมาชิกบน LINE OA ราคา ฿369 ยังไม่รวม VAT 7%",
+       "my": "LINE OA အတွက် အဖွဲ့ဝင်စနစ် MyCustomer | CRM ကို ฿369 ဟု ဖော်ပြထားပြီး VAT 7% မပါ။",
+       "zh": "LINE OA 的会员系统 MyCustomer | CRM 标价 ฿369，不含 7% 增值税。",
+       "de": "MyCustomer | CRM, das Mitgliedersystem für LINE OA, steht mit ฿369 auf der Seite, ohne 7% MwSt."
+      }
+     ],
+     "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    },
+    {
+     "id": "pro",
+     "n": {
+      "en": "Pro",
+      "th": "โปร",
+      "my": "Pro",
+      "zh": "Pro",
+      "de": "Pro"
+     },
+     "big": {
+      "en": "฿1,780",
+      "th": "฿1,780",
+      "my": "฿1,780",
+      "zh": "฿1,780",
+      "de": "฿1,780"
+     },
+     "t": {
+      "en": "Pro is ฿1,780 a month, plus 7% VAT. It sends 35,000 broadcast messages a month. A message past that costs ฿0.06.",
+      "th": "โปรราคา ฿1,780 ต่อเดือน บวก VAT 7% ส่งบรอดแคสต์ได้ 35,000 ข้อความต่อเดือน ข้อความที่เกินคิดข้อความละ ฿0.06",
+      "my": "Pro သည် တစ်လ ฿1,780 ဖြစ်ပြီး VAT 7% ထပ်ပေါင်းသည်။ တစ်လလျှင် broadcast မက်ဆေ့ချ် 35,000 ပို့နိုင်သည်။ ထို့ထက်ကျော်သော မက်ဆေ့ချ် တစ်ခုလျှင် ฿0.06 ကျသည်။",
+      "zh": "Pro 每月 ฿1,780，另加 7% 增值税，每月可发 35,000 条群发消息。超出的每条 ฿0.06。",
+      "de": "Pro kostet ฿1,780 im Monat, plus 7% MwSt. Der Tarif umfasst 35,000 Broadcast-Nachrichten im Monat. Jede weitere Nachricht kostet ฿0.06."
+     },
+     "facts": [
+      {
+       "en": "MyCustomer | CRM, the member system for LINE OA, is included at no extra cost.",
+       "th": "MyCustomer | CRM ระบบสมาชิกบน LINE OA รวมอยู่ในแพ็กเกจ ไม่มีค่าใช้จ่ายเพิ่มเติม",
+       "my": "LINE OA အတွက် အဖွဲ့ဝင်စနစ် MyCustomer | CRM သည် ပက်ကေ့ချ်ထဲတွင် ပါဝင်ပြီး အပိုကုန်ကျစရိတ် မရှိပါ။",
+       "zh": "LINE OA 的会员系统 MyCustomer | CRM 包含在套餐内，不另收费。",
+       "de": "MyCustomer | CRM, das Mitgliedersystem für LINE OA, ist ohne Zusatzkosten enthalten."
+      },
+      {
+       "en": "10,000 messages past 35,000 cost ฿600 (10,000 × ฿0.06).",
+       "th": "ข้อความที่เกิน 35,000 อีก 10,000 ข้อความ คิดเป็น ฿600 (10,000 × ฿0.06)",
+       "my": "35,000 ထက်ကျော်၍ မက်ဆေ့ချ် 10,000 ပို့လျှင် ฿600 (10,000 × ฿0.06) ကျသည်။",
+       "zh": "超出 35,000 条之后再发 10,000 条，费用为 ฿600（10,000 × ฿0.06）。",
+       "de": "10,000 Nachrichten über die 35,000 hinaus kosten ฿600 (10,000 × ฿0.06)."
+      }
+     ],
+     "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+    }
+   ],
+   "start": "basic",
+   "oursLine": {
+    "en": "Hongdam sets up your LINE account and the app inside LINE for:",
+    "th": "หงส์ดำตั้งค่าไลน์ OA และแอปในไลน์ ในราคา:",
+    "my": "ဟုန်ဒမ်သည် သင့် LINE အကောင့်နှင့် LINE ထဲရှိ အက်ပ်ကို ပြင်ဆင်ပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹设置您的 LINE 账号和 LINE 内的应用，收费：",
+    "de": "Hongdam richtet Ihr LINE-Konto und die App innerhalb von LINE ein für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "LY Corporation, the company behind LINE, counts 54 million monthly active users of LINE in Thailand as of 31 March 2026. It puts this at 81.8% of the population, using a 2024 population of about 65.95 million from the Ministry of Interior.",
+    "th": "LY Corporation บริษัทเจ้าของ LINE ระบุผู้ใช้ LINE รายเดือนในประเทศไทย 54 ล้านคน ณ วันที่ 31 มีนาคม 2569 คิดเป็น 81.8% ของประชากร โดยใช้ตัวเลขประชากรปี 2567 ราว 65.95 ล้านคนจากกระทรวงมหาดไทย",
+    "my": "LINE ၏ မိခင်ကုမ္ပဏီ LY Corporation က 2026 မတ်လ 31 ရက်အထိ ထိုင်းနိုင်ငံရှိ LINE လစဉ်တက်ကြွအသုံးပြုသူ 54 သန်း ရှိသည်ဟု ဖော်ပြသည်။ ၎င်းကို လူဦးရေ၏ 81.8% ဟု ဆိုပြီး ပြည်ထဲရေးဝန်ကြီးဌာန ထုတ်ပြန်သော 2024 လူဦးရေ ခန့်မှန်း 65.95 သန်းကို အသုံးပြုသည်။",
+    "zh": "LY Corporation（LINE 背后的公司）统计，截至 2026 年 3 月 31 日，泰国 LINE 月活跃用户为 5,400 万，占人口的 81.8%，所依据的是内政部公布的 2024 年人口约 6,595 万。",
+    "de": "LY Corporation, das Unternehmen hinter LINE, zählt per 31. März 2026 in Thailand 54 Millionen monatlich aktive Nutzende. Es setzt das mit 81.8% der Bevölkerung gleich und rechnet mit einer Bevölkerung von rund 65.95 Millionen für 2024 laut Innenministerium."
+   },
+   "src": "https://www.lycorp.co.jp/en/company/global/"
+  },
+  {
+   "t": {
+    "en": "A LINE MINI App is a web application that runs on LINE. People open it from inside LINE, a permanent link, a LINE Official Account, the Home tab, search or a shared message.",
+    "th": "LINE MINI App คือเว็บแอปพลิเคชันที่ทำงานบน LINE เปิดได้จากในแอป LINE ลิงก์ถาวร LINE Official Account แท็บหน้าหลัก การค้นหา หรือข้อความที่แชร์",
+    "my": "LINE MINI App သည် LINE ပေါ်တွင် လည်ပတ်သော ဝက်ဘ်အက်ပ်ဖြစ်သည်။ LINE အတွင်းမှ၊ အမြဲတမ်းလင့်ခ်မှ၊ LINE Official Account မှ၊ Home tab မှ၊ ရှာဖွေမှုမှ သို့မဟုတ် မျှဝေထားသော မက်ဆေ့ချ်မှ ဖွင့်နိုင်သည်။",
+    "zh": "LINE MINI App 是运行在 LINE 上的网页应用。用户可以从 LINE 内部、固定链接、LINE 官方账号、首页标签、搜索或别人分享的消息中打开它。",
+    "de": "Eine LINE MINI App ist eine Web-Anwendung, die in LINE läuft. Man öffnet sie aus LINE heraus, über einen dauerhaften Link, ein LINE Official Account, den Home-Tab, die Suche oder eine geteilte Nachricht."
+   },
+   "src": "https://developers.line.biz/en/docs/line-mini-app/discover/introduction/"
+  },
+  {
+   "t": {
+    "en": "A new LINE MINI App channel starts as an unverified MINI App, with some features restricted. For a service in Thailand, only channels under a certified provider can apply for the verification review.",
+    "th": "แชนเนล LINE MINI App ที่สร้างใหม่เป็น MINI App ที่ยังไม่ผ่านการตรวจสอบ และบางฟีเจอร์ถูกจำกัด สำหรับบริการในประเทศไทย เฉพาะแชนเนลที่อยู่ภายใต้ผู้ให้บริการที่ได้รับการรับรอง (certified provider) เท่านั้นที่ยื่นขอตรวจสอบได้",
+    "my": "LINE MINI App channel အသစ်သည် စစ်ဆေးမှုမခံရသေးသော (unverified) MINI App အဖြစ် စတင်ပြီး လုပ်ဆောင်ချက် အချို့ကို ကန့်သတ်ထားသည်။ ထိုင်းနိုင်ငံအတွက် ဝန်ဆောင်မှုဖြစ်လျှင် certified provider အောက်ရှိ channel များသာ စစ်ဆေးမှု (verification review) အတွက် လျှောက်ထားနိုင်သည်။",
+    "zh": "新建的 LINE MINI App 频道起初是未认证的 MINI App，部分功能受限。面向泰国的服务，只有认证服务商（certified provider）名下的频道才能申请认证审核。",
+    "de": "Ein neuer LINE-MINI-App-Channel beginnt als nicht verifizierte MINI App, mit eingeschränkten Funktionen. Für einen Dienst in Thailand können nur Channels eines zertifizierten Anbieters (certified provider) die Verifizierungsprüfung beantragen."
+   },
+   "src": "https://developers.line.biz/en/docs/line-mini-app/submit/submission-guide/"
+  },
+  {
+   "t": {
+    "en": "LINE counts messages as the number of requests multiplied by the number of recipients. Reply messages are not counted toward a plan's message count, and messages to users who blocked the account are not counted either.",
+    "th": "LINE นับข้อความเป็นจำนวนคำขอคูณจำนวนผู้รับ ข้อความตอบกลับไม่นับรวมในจำนวนข้อความของแพ็กเกจ และข้อความที่ส่งถึงผู้ใช้ที่บล็อกบัญชีก็ไม่นับ",
+    "my": "LINE သည် မက်ဆေ့ချ်ကို တောင်းဆိုမှုအရေအတွက်ကို လက်ခံသူအရေအတွက်ဖြင့် မြှောက်၍ ရေတွက်သည်။ ပြန်စာ (reply) မက်ဆေ့ချ်များကို ပက်ကေ့ချ်၏ မက်ဆေ့ချ်အရေအတွက်တွင် မထည့်တွက်ပါ။ အကောင့်ကို ပိတ်ထားသော အသုံးပြုသူထံ ပို့သည့် မက်ဆေ့ချ်များကိုလည်း မရေတွက်ပါ။",
+    "zh": "LINE 按请求数乘以接收人数来计算消息。回复消息不计入套餐的消息数，发给已屏蔽该账号的用户的消息也不计入。",
+    "de": "LINE zählt Nachrichten als Anzahl der Anfragen mal Anzahl der Empfänger. Antwortnachrichten zählen nicht zur Nachrichtenzahl des Tarifs, ebenso wenig Nachrichten an Nutzende, die das Konto blockiert haben."
+   },
+   "src": "https://developers.line.biz/en/tips/2026/05/28/how-to-count-messages/"
+  },
+  {
+   "t": {
+    "en": "The Messaging API documentation says that past the monthly message limit, an error response is returned and the messages are not sent.",
+    "th": "เอกสาร Messaging API ระบุว่าเมื่อส่งเกินจำนวนข้อความต่อเดือน ระบบจะตอบกลับเป็นข้อผิดพลาดและข้อความจะไม่ถูกส่ง",
+    "my": "Messaging API စာတမ်းအရ လစဉ်မက်ဆေ့ချ်ကန့်သတ်ချက်ကို ကျော်လွန်လျှင် error တုံ့ပြန်ချက်ပြန်လာပြီး မက်ဆေ့ချ်များ မပို့ပါ။",
+    "zh": "Messaging API 文档说明，超过每月消息上限后，会返回错误响应，消息不会发出。",
+    "de": "Laut der Messaging-API-Dokumentation kommt nach Überschreiten des Monatslimits eine Fehlerantwort, und die Nachrichten werden nicht gesendet."
+   },
+   "src": "https://developers.line.biz/en/docs/messaging-api/pricing/"
+  },
+  {
+   "t": {
+    "en": "A LINE Official Account that passes LINE's review gets a Verified account badge. LINE accepts review applications in Japan, Taiwan and Thailand and issues no verified accounts in other countries or regions at this time.",
+    "th": "บัญชี LINE Official Account ที่ผ่านการพิจารณาของ LINE จะได้รับตรารับรอง (Verified account badge) ขณะนี้ LINE รับสมัครในญี่ปุ่น ไต้หวัน และไทย และไม่ออกบัญชีรับรองให้ประเทศหรือภูมิภาคอื่น",
+    "my": "LINE ၏ စစ်ဆေးမှုကို ကျော်ဖြတ်ပြီးသော LINE Official Account သည် Verified account badge ရသည်။ LINE သည် ဂျပန်၊ ထိုင်ဝမ်နှင့် ထိုင်းနိုင်ငံတို့တွင်သာ လျှောက်လွှာ လက်ခံပြီး အခြားနိုင်ငံများအတွက် ယခုအချိန်တွင် verified အကောင့် မထုတ်ပေးပါ။",
+    "zh": "LINE 官方账号通过 LINE 审核后，会获得认证标识（Verified account badge）。LINE 目前只在日本、台湾和泰国受理申请，其他国家或地区暂不发放认证账号。",
+    "de": "Ein LINE Official Account erhält nach bestandener Prüfung durch LINE ein Verified-Abzeichen (Verified account badge). LINE nimmt Anträge in Japan, Taiwan und Thailand an und stellt zurzeit in anderen Ländern oder Regionen keine verifizierten Konten aus."
+   },
+   "src": "https://help.line.me/official_account/web/categoryId/20010174/pc"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork seller: a new LINE OA with profile, greeting, auto-reply and a Rich Menu, with a short lesson (5 days)",
+    "th": "ผู้ขายบน Fastwork: เปิด LINE OA ใหม่ พร้อมโปรไฟล์ ข้อความทักทาย ข้อความตอบกลับอัตโนมัติ และริชเมนู พร้อมสอนใช้งาน (5 วัน)",
+    "my": "Fastwork ရောင်းသူ - ပရိုဖိုင်၊ နှုတ်ခွန်းဆက်စာ၊ အလိုအလျောက်ပြန်စာနှင့် Rich Menu ပါသော LINE OA အသစ်၊ အသုံးပြုနည်း သင်ကြားမှုပါ (5 ရက်)",
+    "zh": "Fastwork 卖家：新开 LINE OA，含资料页设计、欢迎消息、自动回复和 Rich Menu，附使用讲解（5 天）",
+    "de": "Verkäufer auf Fastwork: neues LINE OA mit Profil, Begrüssung, automatischer Antwort und Rich Menu, mit kurzer Einführung (5 Tage)"
+   },
+   "p": {
+    "en": "฿2,990; ฿4,990 (7 days) adds Rich Messages, card-style messages, tag training and a reward card",
+    "th": "฿2,990 หรือ ฿4,990 (7 วัน) เพิ่มริชเมสเสจ ข้อความแบบการ์ด สอนใช้แท็ก และบัตรสะสมคะแนน",
+    "my": "฿2,990၊ ၎င်းအပြင် ฿4,990 (7 ရက်) တွင် Rich Message၊ ကတ်ပုံစံ မက်ဆေ့ချ်၊ tag အသုံးပြုနည်း သင်ကြားမှုနှင့် ဆုအမှတ်ကတ် ထပ်ပါသည်",
+    "zh": "฿2,990；฿4,990（7 天）另含 Rich Message、卡片式消息、标签（Tag）使用讲解和积分卡",
+    "de": "฿2,990; ฿4,990 (7 Tage) ergänzt Rich Messages, Kartennachrichten, Schulung zu Tags und eine Punktekarte"
+   },
+   "src": "https://fastwork.co/user/arnontxdesign/rich-menu-68458657"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller: a LINE OA with LINE MyShop, up to 30 products, a coupon and a points card, with 30 days of help (5 days)",
+    "th": "ผู้ขายบน Fastwork: LINE OA พร้อม LINE MyShop ลงสินค้าไม่เกิน 30 รายการ คูปองและบัตรสะสมแต้ม พร้อมช่วยดูแล 30 วัน (5 วัน)",
+    "my": "Fastwork ရောင်းသူ - LINE MyShop ပါသော LINE OA၊ ကုန်ပစ္စည်း 30 ခုအထိ၊ ကူပွန်နှင့် အမှတ်ကတ်၊ 30 ရက် အကူအညီပါ (5 ရက်)",
+    "zh": "Fastwork 卖家：LINE OA 加 LINE MyShop，最多上架 30 件商品，含优惠券和积分卡，另有 30 天协助（5 天）",
+    "de": "Verkäufer auf Fastwork: LINE OA mit LINE MyShop, bis zu 30 Produkte, Gutschein und Punktekarte, mit 30 Tagen Unterstützung (5 Tage)"
+   },
+   "p": {
+    "en": "฿8,990; a Premium ID is bought by you, or ฿550 more if the seller buys it",
+    "th": "฿8,990 ลูกค้าซื้อ Premium ID เอง หรือเพิ่ม ฿550 หากให้ผู้ขายซื้อให้",
+    "my": "฿8,990၊ Premium ID ကို သင်ကိုယ်တိုင် ဝယ်ရသည်၊ ရောင်းသူက ဝယ်ပေးလျှင် ฿550 ပိုကျသည်",
+    "zh": "฿8,990；Premium ID 由您自己购买，若请卖家代买另加 ฿550",
+    "de": "฿8,990; die Premium ID kaufen Sie selbst, oder ฿550 mehr, wenn der Verkäufer sie kauft"
+   },
+   "src": "https://fastwork.co/user/qcuspame/shop-registration-and-listing-16536244"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller: a booking system inside LINE OA, with an admin calendar, customer records and reports (3 days)",
+    "th": "ผู้ขายบน Fastwork: ระบบจองใน LINE OA พร้อมปฏิทินสำหรับแอดมิน ข้อมูลลูกค้า และรายงาน (3 วัน)",
+    "my": "Fastwork ရောင်းသူ - LINE OA ထဲရှိ ဘွတ်ကင်စနစ်၊ အက်ဒမင်ပြက္ခဒိန်၊ ဖောက်သည်မှတ်တမ်းနှင့် အစီရင်ခံစာများပါ (3 ရက်)",
+    "zh": "Fastwork 卖家：LINE OA 内的预订系统，含管理员日历、客户记录和报表（3 天）",
+    "de": "Verkäufer auf Fastwork: Buchungssystem im LINE OA, mit Admin-Kalender, Kundendaten und Berichten (3 Tage)"
+   },
+   "p": {
+    "en": "฿6,900 a year (usually ฿9,900), or ฿17,900 for life plus ฿1,000 a year hosting from year 2; the top package is ฿9,900 a year or ฿29,900 for life",
+    "th": "฿6,900 ต่อปี (ปกติ ฿9,900) หรือ ฿17,900 แบบตลอดชีพ บวกค่าโฮสต์ ฿1,000 ต่อปีตั้งแต่ปีที่ 2 แพ็กเกจสูงสุด ฿9,900 ต่อปี หรือ ฿29,900 ตลอดชีพ",
+    "my": "တစ်နှစ် ฿6,900 (ပုံမှန် ฿9,900) သို့မဟုတ် တစ်သက်စာ ฿17,900 နှင့် ဒုတိယနှစ်မှစ၍ ဟို့စ်ကြေး တစ်နှစ် ฿1,000၊ အမြင့်ဆုံးပက်ကေ့ချ်မှာ တစ်နှစ် ฿9,900 သို့မဟုတ် တစ်သက်စာ ฿29,900",
+    "zh": "฿6,900 一年（通常 ฿9,900），或终身 ฿17,900，第 2 年起另付主机费每年 ฿1,000；最高档为每年 ฿9,900 或终身 ฿29,900",
+    "de": "฿6,900 pro Jahr (sonst ฿9,900) oder ฿17,900 auf Lebenszeit, dazu ab Jahr 2 ฿1,000 im Jahr Hosting; das oberste Paket kostet ฿9,900 im Jahr oder ฿29,900 auf Lebenszeit"
+   },
+   "src": "https://fastwork.co/user/biggiess/chatbot-27454366"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller: a LINE MINI App or LIFF for a business, such as booking, ordering, members, loyalty points or a dashboard",
+    "th": "ผู้ขายบน Fastwork: LINE MINI App หรือ LIFF สำหรับธุรกิจ เช่น จองคิว สั่งซื้อ สมาชิก สะสมแต้ม หรือแดชบอร์ด",
+    "my": "Fastwork ရောင်းသူ - ဘွတ်ကင်၊ အော်ဒါမှာခြင်း၊ အဖွဲ့ဝင်၊ အမှတ်စုခြင်း သို့မဟုတ် ဒက်ရှ်ဘုတ်ကဲ့သို့ လုပ်ငန်းတစ်ခုအတွက် LINE MINI App သို့မဟုတ် LIFF",
+    "zh": "Fastwork 卖家：为商家做 LINE MINI App 或 LIFF，如预订、下单、会员、积分或后台看板",
+    "de": "Verkäufer auf Fastwork: eine LINE MINI App oder LIFF für ein Unternehmen, etwa für Buchung, Bestellung, Mitglieder, Treuepunkte oder ein Dashboard"
+   },
+   "p": {
+    "en": "from ฿1,990; the price depends on pages, back-end functions, database and integrations",
+    "th": "เริ่มที่ ฿1,990 ราคาขึ้นอยู่กับจำนวนหน้า ฟังก์ชันหลังบ้าน ฐานข้อมูล และการเชื่อมต่อ",
+    "my": "฿1,990 မှစ၍၊ စျေးနှုန်းသည် စာမျက်နှာအရေအတွက်၊ နောက်ကွယ်လုပ်ဆောင်ချက်များ၊ ဒေတာဘေ့စ်နှင့် ချိတ်ဆက်မှုများပေါ် မူတည်သည်",
+    "zh": "฿1,990 起；价格取决于页面数、后端功能、数据库和对接项目",
+    "de": "ab ฿1,990; der Preis richtet sich nach Seitenzahl, Back-End-Funktionen, Datenbank und Anbindungen"
+   },
+   "src": "https://fastwork.co/user/ritthiart/web-development-20022243"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller: LIFF with chosen extras such as an SMS check at sign-up, image analysis, bank-slip check and reports (12 days)",
+    "th": "ผู้ขายบน Fastwork: LIFF พร้อมส่วนเสริมที่เลือกได้ เช่น ยืนยัน SMS ตอนลงทะเบียน วิเคราะห์รูปภาพ ตรวจสลิปโอนเงิน และระบบรายงาน (12 วัน)",
+    "my": "Fastwork ရောင်းသူ - စာရင်းသွင်းချိန် SMS အတည်ပြုခြင်း၊ ပုံခွဲခြမ်းစိတ်ဖြာခြင်း၊ ဘဏ်လွှဲစလစ်စစ်ဆေးခြင်းနှင့် အစီရင်ခံစာကဲ့သို့ ရွေးချယ်ထည့်သွင်းနိုင်သော အပိုများပါ LIFF (12 ရက်)",
+    "zh": "Fastwork 卖家：LIFF 加可选项目，如注册时短信验证、图片分析、转账凭证核对和报表（12 天）",
+    "de": "Verkäufer auf Fastwork: LIFF mit wählbaren Zusätzen wie SMS-Prüfung bei der Anmeldung, Bildanalyse, Prüfung von Überweisungsbelegen und Berichten (12 Tage)"
+   },
+   "p": {
+    "en": "฿55,000; the price of the report system rises or falls with its number and form",
+    "th": "฿55,000 ราคาระบบรายงานเพิ่มหรือลดตามจำนวนและรูปแบบ",
+    "my": "฿55,000၊ အစီရင်ခံစာစနစ်၏ စျေးနှုန်းသည် အရေအတွက်နှင့် ပုံစံအလိုက် တက်ချ ကျချ ရှိသည်",
+    "zh": "฿55,000；报表系统的价格随数量和形式增减",
+    "de": "฿55,000; der Preis des Berichtssystems steigt oder sinkt mit Anzahl und Form"
+   },
+   "src": "https://fastwork.co/user/owenhunter/chatbot-77592190"
+  },
+  {
+   "t": {
+    "en": "A digital agency in Bangkok, LINE OA service: graphics and banners; website, CRM and other integrations",
+    "th": "เอเจนซีดิจิทัลในกรุงเทพฯ บริการ LINE OA: กราฟิกและแบนเนอร์ งานเชื่อมต่อเว็บไซต์ CRM และฟีเจอร์อื่น",
+    "my": "ဘန်ကောက်ရှိ ဒစ်ဂျစ်တယ်အေဂျင်စီတစ်ခု၏ LINE OA ဝန်ဆောင်မှု - ဂရပ်ဖစ်နှင့် ဘန်နာများ၊ ဝက်ဘ်ဆိုက်၊ CRM နှင့် အခြား ချိတ်ဆက်မှုများ",
+    "zh": "曼谷一家数字营销公司的 LINE OA 服务：图形和横幅；网站、CRM 及其他对接",
+    "de": "Eine Digitalagentur in Bangkok, LINE-OA-Dienst: Grafiken und Banner; Website, CRM und weitere Anbindungen"
+   },
+   "p": {
+    "en": "graphics and banners from ฿1,000 an item; integrations are priced by complexity and business needs",
+    "th": "กราฟิกและแบนเนอร์เริ่มที่ ฿1,000 ต่อชิ้น งานเชื่อมต่อคิดตามความซับซ้อนและความต้องการของธุรกิจ",
+    "my": "ဂရပ်ဖစ်နှင့် ဘန်နာများ တစ်ခုလျှင် ฿1,000 မှစ၍၊ ချိတ်ဆက်မှုများကို ရှုပ်ထွေးမှုနှင့် လုပ်ငန်းလိုအပ်ချက်အလိုက် သတ်မှတ်သည်",
+    "zh": "图形和横幅每件 ฿1,000 起；对接项目按复杂程度和业务需求定价",
+    "de": "Grafiken und Banner ab ฿1,000 pro Stück; Anbindungen werden nach Aufwand und Bedarf des Betriebs berechnet"
+   },
+   "src": "https://digitalagencybangkok.com/line-oa-services-for-business/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What is a LINE Official Account?",
+    "th": "LINE Official Account คืออะไร",
+    "my": "LINE Official Account ဆိုသည်မှာ ဘာလဲ",
+    "zh": "什么是 LINE 官方账号",
+    "de": "Was ist ein LINE Official Account?"
+   },
+   "a": {
+    "en": "LINE Thailand describes it as a business's official account on LINE. A shop uses it to build a follower base and send customers news of sales and promotions. Its features include a greeting message, auto-reply, coupons and point cards, one-to-one chat and broadcasts.",
+    "th": "LINE ประเทศไทยอธิบายว่าเป็นบัญชีทางการของธุรกิจบน LINE ร้านค้าใช้สร้างฐานผู้ติดตามและส่งข้อมูลการขายหรือโปรโมชั่นถึงลูกค้า ฟีเจอร์มีข้อความทักทาย ข้อความตอบกลับอัตโนมัติ คูปองและบัตรสะสมแต้ม การแชท 1-1 และการบรอดแคสต์",
+    "my": "LINE Thailand က ၎င်းကို လုပ်ငန်းတစ်ခု၏ LINE ပေါ်ရှိ တရားဝင်အကောင့်ဟု ဖော်ပြသည်။ ဆိုင်များသည် နောက်လိုက်များ တည်ဆောက်ရန်နှင့် ဖောက်သည်များထံ ရောင်းချမှု၊ ပရိုမိုးရှင်း သတင်းများ ပို့ရန် အသုံးပြုသည်။ လုပ်ဆောင်ချက်များတွင် နှုတ်ခွန်းဆက်စာ၊ အလိုအလျောက်ပြန်စာ၊ ကူပွန်နှင့် အမှတ်ကတ်၊ တစ်ဦးချင်း စကားပြောခြင်းနှင့် broadcast များ ပါဝင်သည်။",
+    "zh": "LINE 泰国把它描述为企业在 LINE 上的官方账号。商店用它积累关注者，并向顾客发送促销和优惠信息。功能包括欢迎消息、自动回复、优惠券和积分卡、一对一聊天以及群发消息。",
+    "de": "LINE Thailand beschreibt es als offizielles Konto eines Unternehmens auf LINE. Ein Geschäft baut damit einen Kreis von Followern auf und schickt Kundinnen und Kunden Neuigkeiten zu Aktionen. Zu den Funktionen gehören Begrüssungsnachricht, automatische Antwort, Gutscheine und Punktekarten, Einzelchat und Broadcasts."
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "q": {
+    "en": "Does it cost money to make a LINE OA?",
+    "th": "ทำ LINE OA เสียเงินไหม",
+    "my": "LINE OA ဖွင့်ရန် ငွေကုန်ကျသလား",
+    "zh": "开通 LINE OA 要花钱吗",
+    "de": "Kostet ein LINE OA Geld?"
+   },
+   "a": {
+    "en": "Opening an official account gives 300 free messages a month. LINE Thailand sells two monthly plans on top: Basic at ฿1,280 for 15,000 messages and Pro at ฿1,780 for 35,000. Both prices exclude 7% VAT.",
+    "th": "เมื่อเปิดบัญชีทางการจะส่งข้อความฟรีได้ 300 ข้อความต่อเดือน LINE ประเทศไทยมีแพ็กเกจรายเดือนให้เลือกเพิ่มอีกสองแบบ คือ เบสิก ฿1,280 ได้ 15,000 ข้อความ และโปร ฿1,780 ได้ 35,000 ข้อความ ราคายังไม่รวม VAT 7%",
+    "my": "တရားဝင်အကောင့် ဖွင့်လျှင် တစ်လ မက်ဆေ့ချ် 300 အခမဲ့ ရသည်။ LINE Thailand က ထို့ပြင် လစဉ်ပက်ကေ့ချ် နှစ်မျိုး ရောင်းသည်။ Basic သည် ฿1,280 ဖြင့် မက်ဆေ့ချ် 15,000၊ Pro သည် ฿1,780 ဖြင့် 35,000 ဖြစ်သည်။ စျေးနှုန်း နှစ်ခုလုံးတွင် VAT 7% မပါ။",
+    "zh": "开通官方账号后，每月有 300 条免费消息。LINE 泰国另外出售两个月度套餐：Basic ฿1,280，含 15,000 条消息；Pro ฿1,780，含 35,000 条。两个价格都不含 7% 增值税。",
+    "de": "Mit der Eröffnung eines Official Account kommen 300 kostenlose Nachrichten im Monat. Dazu verkauft LINE Thailand zwei Monatstarife: Basic für ฿1,280 mit 15,000 Nachrichten und Pro für ฿1,780 mit 35,000. Beide Preise verstehen sich ohne 7% MwSt."
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "q": {
+    "en": "How do I log in to a LINE OA?",
+    "th": "ล็อกอิน LINE OA ทำอย่างไร",
+    "my": "LINE OA သို့ ဘယ်လို လော့ဂ်အင်ဝင်ရသလဲ",
+    "zh": "怎样登录 LINE OA",
+    "de": "Wie melde ich mich bei einem LINE OA an?"
+   },
+   "a": {
+    "en": "On a computer, LINE Official Account Manager is at manager.line.biz. On a phone, the Official Account app is the way in. Both log in with a LINE account or a business account.",
+    "th": "บนคอมพิวเตอร์ LINE Official Account Manager อยู่ที่ manager.line.biz บนมือถือใช้แอปพลิเคชัน Official Account ทั้งสองทางล็อกอินด้วยบัญชีไลน์หรือบัญชีธุรกิจ",
+    "my": "ကွန်ပျူတာတွင် LINE Official Account Manager သည် manager.line.biz တွင် ရှိသည်။ ဖုန်းတွင် Official Account အက်ပ်ဖြင့် ဝင်သည်။ နှစ်နည်းလုံးတွင် LINE အကောင့် သို့မဟုတ် စီးပွားရေးအကောင့်ဖြင့် လော့ဂ်အင်ဝင်သည်။",
+    "zh": "在电脑上，LINE Official Account Manager 的地址是 manager.line.biz；在手机上用 Official Account 应用。两种方式都用 LINE 账号或商务账号登录。",
+    "de": "Am Computer liegt der LINE Official Account Manager unter manager.line.biz. Auf dem Handy dient die App Official Account als Zugang. Beide Wege melden sich mit einem LINE-Konto oder einem Geschäftskonto an."
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "q": {
+    "en": "What is the difference between a LINE MINI App and LIFF?",
+    "th": "LINE MINI App ต่างจาก LIFF อย่างไร",
+    "my": "LINE MINI App နှင့် LIFF ကွာခြားချက် ဘာလဲ",
+    "zh": "LINE MINI App 和 LIFF 有什么区别",
+    "de": "Was unterscheidet eine LINE MINI App von LIFF?"
+   },
+   "a": {
+    "en": "LY Corporation says LIFF will eventually be brought into the LINE MINI App brand, and recommends creating new LIFF apps as LINE MINI Apps. Some LIFF features are missing from a MINI App: the action button cannot be hidden, Module Mode cannot be set, a channel holds one web app, and the screen size is fixed to Full.",
+    "th": "LY Corporation ระบุว่าในที่สุด LIFF จะรวมเข้ากับแบรนด์ LINE MINI App และสนับสนุนให้สร้างแอป LIFF ใหม่เป็น LINE MINI App ฟีเจอร์ LIFF บางอย่างไม่มีใน MINI App: ซ่อนปุ่มแอ็กชันไม่ได้ ตั้งค่า Module Mode ไม่ได้ หนึ่งแชนเนลมีเว็บแอปได้หนึ่งตัว และขนาดหน้าจอถูกกำหนดเป็น Full",
+    "my": "LY Corporation က နောက်ဆုံးတွင် LIFF ကို LINE MINI App brand ထဲ ပေါင်းထည့်မည်ဟု ဆိုပြီး LIFF အက်ပ်အသစ်များကို LINE MINI App အဖြစ် ဖန်တီးရန် အကြံပြုသည်။ LIFF လုပ်ဆောင်ချက် အချို့ MINI App တွင် မရှိပါ - action ခလုတ်ကို ဖျောက်၍ မရ၊ Module Mode ကို သတ်မှတ်၍ မရ၊ channel တစ်ခုတွင် ဝက်ဘ်အက်ပ် တစ်ခုသာ ထည့်နိုင်ပြီး မျက်နှာပြင်အရွယ်အစားကို Full ဖြင့် သတ်မှတ်ထားသည်။",
+    "zh": "LY Corporation 表示，LIFF 最终会并入 LINE MINI App 品牌，并推荐把新的 LIFF 应用做成 LINE MINI App。MINI App 少了几项 LIFF 功能：操作按钮不能隐藏，不能设置 Module Mode，一个频道只能放一个网页应用，屏幕尺寸固定为 Full。",
+    "de": "LY Corporation sagt, LIFF werde mit der Zeit in die Marke LINE MINI App überführt, und empfiehlt, neue LIFF-Apps als LINE MINI Apps anzulegen. In einer MINI App fehlen einige LIFF-Funktionen: Der Aktionsknopf lässt sich nicht ausblenden, der Module Mode lässt sich nicht einstellen, ein Channel enthält nur eine Web-App, und die Bildschirmgrösse ist auf Full festgelegt."
+   },
+   "src": "https://developers.line.biz/en/docs/line-mini-app/discover/introduction/"
+  },
+  {
+   "q": {
+    "en": "Who builds a LINE MINI App?",
+    "th": "ใครสร้าง LINE MINI App ได้",
+    "my": "LINE MINI App ကို ဘယ်သူ တည်ဆောက်ပေးသလဲ",
+    "zh": "LINE MINI App 由谁来做",
+    "de": "Wer baut eine LINE MINI App?"
+   },
+   "a": {
+    "en": "A developer. LINE Developers says a LINE MINI App channel is created with a LINE Developers Console account. The app is a web application that runs on LINE.",
+    "th": "นักพัฒนา LINE Developers ระบุว่าการสร้างแชนเนล LINE MINI App ต้องมีบัญชี LINE Developers Console ตัวแอปเป็นเว็บแอปพลิเคชันที่ทำงานบน LINE",
+    "my": "ဆော့ဖ်ဝဲရေးသားသူ (developer) တစ်ဦး။ LINE Developers က LINE MINI App channel ကို LINE Developers Console အကောင့်ဖြင့် ဖန်တီးရသည်ဟု ဆိုသည်။ အက်ပ်သည် LINE ပေါ်တွင် လည်ပတ်သော ဝက်ဘ်အက်ပ်ဖြစ်သည်။",
+    "zh": "由开发者来做。LINE Developers 说明，创建 LINE MINI App 频道需要 LINE Developers Console 账号。这个应用是运行在 LINE 上的网页应用。",
+    "de": "Eine Entwicklerin oder ein Entwickler. Laut LINE Developers wird ein LINE-MINI-App-Channel mit einem LINE-Developers-Console-Konto angelegt. Die App ist eine Web-Anwendung, die in LINE läuft."
+   },
+   "src": "https://developers.line.biz/en/docs/line-mini-app/discover/introduction/"
+  },
+  {
+   "q": {
+    "en": "Can a LINE OA run a shop?",
+    "th": "LINE OA ทำร้านค้าได้ไหม",
+    "my": "LINE OA ဖြင့် ဆိုင်ဖွင့်နိုင်သလား",
+    "zh": "LINE OA 能开店吗",
+    "de": "Kann ein LINE OA einen Shop betreiben?"
+   },
+   "a": {
+    "en": "LINE Thailand lists MyShop next to the plans as a tool that builds a storefront for a LINE OA and helps close sales. Orders completed through MyShop carry a fee under conditions LINE sets.",
+    "th": "LINE ประเทศไทยระบุ MyShop ไว้ข้างแพ็กเกจ เป็นเครื่องมือสร้างหน้าร้านและช่วยปิดการขายให้ LINE OA ออเดอร์ที่สำเร็จผ่าน MyShop มีค่าธรรมเนียมตามเงื่อนไขที่ LINE กำหนด",
+    "my": "LINE Thailand သည် MyShop ကို ပက်ကေ့ချ်များနှင့်အတူ ဖော်ပြထားပြီး LINE OA အတွက် ဆိုင်မျက်နှာစာ တည်ဆောက်ကာ ရောင်းချမှု ပြီးမြောက်စေရန် ကူညီသော ကိရိယာဖြစ်သည်။ MyShop မှတစ်ဆင့် ပြီးစီးသော အော်ဒါများတွင် LINE သတ်မှတ်သည့် အခြေအနေများအရ ကြေးငွေ ကျသင့်သည်။",
+    "zh": "LINE 泰国在套餐旁列出 MyShop，这是为 LINE OA 搭建店面、帮助成交的工具。通过 MyShop 完成的订单，按 LINE 设定的条件收取费用。",
+    "de": "LINE Thailand führt MyShop neben den Tarifen auf, als Werkzeug, das für ein LINE OA ein Schaufenster baut und beim Abschluss von Verkäufen hilft. Über MyShop abgeschlossene Bestellungen kosten eine Gebühr nach den Bedingungen von LINE."
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "q": {
+    "en": "Can customers book and pay a deposit inside LINE?",
+    "th": "ลูกค้าจองและจ่ายมัดจำในไลน์ได้ไหม",
+    "my": "ဖောက်သည်များ LINE ထဲတွင် ဘွတ်ကင်လုပ်ပြီး စပေါ်ငွေ ပေးနိုင်သလား",
+    "zh": "顾客能在 LINE 里预订并付订金吗",
+    "de": "Können Kundinnen und Kunden in LINE buchen und eine Anzahlung leisten?"
+   },
+   "a": {
+    "en": "Fastwork sellers list booking through a LINE OA. In one listing, the starter package takes bookings and sends booking notices to the LINE OA. The next adds a deposit with a slip upload and a fake-slip check. The top one adds reminders before the appointment, rescheduling and cancelling.",
+    "th": "ผู้ขายบน Fastwork มีบริการระบบจองผ่าน LINE OA ในประกาศหนึ่ง แพ็กเกจเริ่มต้นรับจองและส่งข้อมูลการจองไปยัง LINE OA แพ็กเกจถัดไปเพิ่มการชำระมัดจำพร้อมแนบสลิปและระบบตรวจสลิปปลอม แพ็กเกจสูงสุดเพิ่มข้อความแจ้งก่อนวันนัด การเลื่อนนัดและการยกเลิก",
+    "my": "Fastwork ရောင်းသူများက LINE OA မှတစ်ဆင့် ဘွတ်ကင်စနစ် ရောင်းချသည်။ ကြော်ငြာတစ်ခုတွင် စတင်ပက်ကေ့ချ်သည် ဘွတ်ကင် လက်ခံပြီး ဘွတ်ကင်အချက်အလက်ကို LINE OA သို့ ပို့သည်။ နောက်တစ်ဆင့်တွင် ငွေလွှဲစလစ်တင်၍ စပေါ်ငွေပေးခြင်းနှင့် အတုစလစ် စစ်ဆေးခြင်း ထပ်ပါသည်။ အမြင့်ဆုံးတွင် ချိန်းဆိုချိန်မတိုင်မီ အသိပေးစာ၊ ရက်ရွှေ့ခြင်းနှင့် ပယ်ဖျက်ခြင်း ထပ်ပါသည်။",
+    "zh": "Fastwork 上的卖家出售通过 LINE OA 预订的系统。在其中一个商品页里，入门套餐接受预订，并把预订通知发到 LINE OA；下一档加上附转账凭证的订金支付和假凭证检查；最高档再加上预约前的提醒、改期和取消。",
+    "de": "Verkäufer auf Fastwork bieten Buchungen über ein LINE OA an. In einem Angebot nimmt das Einstiegspaket Buchungen entgegen und schickt Buchungsmeldungen ans LINE OA. Das nächste fügt eine Anzahlung mit Beleg-Upload und Prüfung auf gefälschte Belege hinzu. Das oberste ergänzt Erinnerungen vor dem Termin, Verschieben und Absagen."
+   },
+   "src": "https://fastwork.co/user/biggiess/chatbot-27454366"
+  }
+ ],
+ "related": [
+  "online-shop",
+  "ordering",
+  "site",
+  "grab",
+  "tap-card",
+  "ai-line"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "LINE for Business Thailand: LINE Official Account plans and prices",
+    "th": "LINE for Business ประเทศไทย: แพ็กเกจและราคา LINE Official Account",
+    "my": "LINE for Business Thailand - LINE Official Account ပက်ကေ့ချ်များနှင့် စျေးနှုန်း",
+    "zh": "LINE for Business 泰国：LINE 官方账号套餐与价格",
+    "de": "LINE for Business Thailand: Tarife und Preise des LINE Official Account"
+   },
+   "href": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  },
+  {
+   "t": {
+    "en": "LINE Developers: Introducing LINE MINI App",
+    "th": "LINE Developers: แนะนำ LINE MINI App",
+    "my": "LINE Developers - LINE MINI App မိတ်ဆက်",
+    "zh": "LINE Developers：LINE MINI App 介绍",
+    "de": "LINE Developers: Einführung in die LINE MINI App"
+   },
+   "href": "https://developers.line.biz/en/docs/line-mini-app/discover/introduction/"
+  },
+  {
+   "t": {
+    "en": "LINE Developers: Submitting a LINE MINI App for review",
+    "th": "LINE Developers: การส่ง LINE MINI App เพื่อตรวจสอบ",
+    "my": "LINE Developers - LINE MINI App ကို စစ်ဆေးရန် တင်သွင်းခြင်း",
+    "zh": "LINE Developers：提交 LINE MINI App 审核",
+    "de": "LINE Developers: LINE MINI App zur Prüfung einreichen"
+   },
+   "href": "https://developers.line.biz/en/docs/line-mini-app/submit/submission-guide/"
+  },
+  {
+   "t": {
+    "en": "LINE Developers: how messages are counted (28 May 2026)",
+    "th": "LINE Developers: วิธีนับจำนวนข้อความ (28 พฤษภาคม 2569)",
+    "my": "LINE Developers - မက်ဆေ့ချ်ရေတွက်ပုံ (2026 မေ 28)",
+    "zh": "LINE Developers：消息如何计数（2026 年 5 月 28 日）",
+    "de": "LINE Developers: So werden Nachrichten gezählt (28. Mai 2026)"
+   },
+   "href": "https://developers.line.biz/en/tips/2026/05/28/how-to-count-messages/"
+  }
+ ],
+ "glyphs": [
+  "chat",
+  "cart",
+  "telephone"
+ ]
+}

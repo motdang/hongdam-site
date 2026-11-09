@@ -1,0 +1,385 @@
+/* hongdam.net: front page, category pages, Buy page, order tracker.
+   The look is Isotype (her pick 2026-10-23): paper, ink, flat colour, hard edges, riso dingbats.
+   A job is a line with stops: doodle dingbats on a coloured line, the black swan riding it. */
+
+/* an element marked hidden stays hidden whatever display its class gives it (the Buy page's count and add-on) */
+[hidden] { display: none !important }
+
+/* ---------------------------------------------------------------- shared tokens */
+:root {
+  color-scheme: light dark;
+  --sys: system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", Thonburi, "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, var(--sys);
+  --ease: cubic-bezier(.45, .05, .25, 1);
+  --rw: 2.4rem;
+  /* one hue per category line; each look sets the lightness (--lL) and chroma (--lC) */
+  --c-help: oklch(var(--lL) var(--lC) 32);
+  --c-care: oklch(var(--lL) var(--lC) 185);
+  --c-outsource: oklch(var(--lL) var(--lC) 242);
+  --c-translate: oklch(var(--lL) var(--lC) 88);
+  --c-shop: oklch(var(--lL) var(--lC) 128);
+  --c-stay: oklch(var(--lL) var(--lC) 160);
+  --c-tours: oklch(var(--lL) var(--lC) 112);
+  --c-events: oklch(var(--lL) var(--lC) 350);
+  --c-weddings: oklch(var(--lL) var(--lC) 350);
+  --c-luck: oklch(var(--lL) var(--lC) 72);
+  --c-merit: oklch(var(--lL) var(--lC) 58);
+  --c-web: oklch(var(--lL) var(--lC) 258);
+  --c-fix: oklch(var(--lL) var(--lC) 292);
+  --c-ai: oklch(var(--lL) var(--lC) 205);
+  --c-data: oklch(var(--lL) var(--lC) 225);
+  --c-design: oklch(var(--lL) var(--lC) 322);
+  --c-moving: oklch(var(--lL) var(--lC) 18);
+  --c-ship: oklch(var(--lL) var(--lC) 100);
+  --c-charity: oklch(var(--lL) var(--lC) 2);
+  --c-money: oklch(var(--lL) var(--lC) 145);
+  --c-visa: oklch(var(--lL) var(--lC) 275);
+}
+
+/* ---------------------------------------------------------------- isotype: paper, ink, flat colour, hard edges; riso dingbats */
+:root {
+  --bg: #F1EDE4; --bg2: #FFFDF8; --fg: #121212; --mut: #4A4640; --rule: #121212; --acc: #121212;
+  --btn: #121212; --btn-fg: #FFFDF8; --lL: .6; --lC: .17;
+  --font-d: "Futura", "Futura PT", "Jost", "Avenir Next", "Century Gothic", "URW Gothic", var(--sys);
+  --font-l: var(--font-d); --font-num: var(--font-d);
+  --hd-w: 700; --hd-track: -.025em; --r: 3px; --btn-r: 3px;
+  --card-bd: 2px solid var(--fg); --card-shadow: 5px 5px 0 var(--fg);
+  --label-case: uppercase; --label-track: .2em; --line-w: 5px;
+  --db-look: riso;
+  --page: none;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #141311; --bg2: #1D1B18; --fg: #F1EDE4; --mut: #BDB6A8; --rule: #F1EDE4; --acc: #F1EDE4;
+  --btn: #F1EDE4; --btn-fg: #121212; --lL: .76; --lC: .15; --db-look: ink;
+} }
+
+/* ---------------------------------------------------------------- page */
+*, *::before, *::after { box-sizing: border-box }
+html { background: var(--bg) }
+body { margin: 0 auto; max-width: 46rem; min-height: 100vh; overflow-x: clip; padding: 0 1rem 4rem; background: var(--page), var(--bg); color: var(--fg);
+  font: 400 1.0625rem/1.55 var(--sys); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility }
+:lang(th) { line-height: 1.7 }
+:lang(my) { line-height: 1.85 }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em }
+:focus-visible { outline: 3px solid var(--line, var(--acc)); outline-offset: 3px; border-radius: 4px }
+
+header.top { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; align-items: center; gap: .55rem .8rem; margin: 0 -1rem; padding: .65rem 1rem .7rem;
+  background: color-mix(in oklab, var(--bg) 92%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--rule); view-transition-name: top }
+.brand { display: flex; align-items: center; gap: .5rem; margin-right: auto; text-decoration: none }
+.brand .mark { font-size: 2.1rem; view-transition-name: swan }
+.wm { font: var(--hd-w) 1.35rem/1 var(--font-d); letter-spacing: var(--hd-track) }
+.wm-th { font: 500 .95rem/1 var(--sys); color: var(--mut) }
+a.line { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.5rem; padding: .4rem .95rem; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--fg); font-weight: 700; text-decoration: none }
+a.line::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; background: #06C755 }
+.langs { order: 3; display: flex; flex-wrap: wrap; gap: .35rem; width: 100% }
+.langs a { display: inline-flex; align-items: center; min-height: 2.4rem; padding: .3rem .85rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); text-decoration: none; font-size: .98rem }
+.langs a[aria-current] { background: var(--fg); color: var(--bg); box-shadow: none; font-weight: 700 }
+@media (min-width: 40rem) { .langs { order: 0; width: auto } }
+/* Folded on a phone (her ask 2026-10-24, "collapse to hamburger on first scroll"): shop.js adds .small once the page
+   scrolls, and .open while the menu button's panel shows the languages and the ฿ / $ / € switch. On a page with no
+   languages, shop.js puts the switch in .more, which takes no room of its own until it is the panel. */
+header.top .menu { display: none }
+header.top > .more { display: contents }
+@media (max-width: 39.99rem) {
+  header.top.small { padding-top: .4rem; padding-bottom: .4rem }
+  header.top.small .mark { font-size: 1.75rem }
+  header.top.small .wm-th, header.top.small > .langs, header.top.small > .more { display: none }
+  header.top.small.open > .langs, header.top.small.open > .more { display: flex; flex-wrap: wrap; gap: .35rem; position: absolute; top: 100%; left: 0; right: 0;
+    width: auto; padding: .7rem 1rem .85rem; background: var(--bg); border-bottom: 1px solid var(--rule) }
+  header.top.small .menu:not([hidden]) { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; padding: 0; border: 0; border-radius: 999px;
+    background: none; color: inherit; box-shadow: inset 0 0 0 1.5px var(--fg); cursor: pointer }
+  header.top.small.open .menu { background: var(--fg); color: var(--bg) }
+  header.top .menu i, header.top .menu i::before, header.top .menu i::after { display: block; width: 1.05rem; height: 2px; border-radius: 1px; background: currentColor }
+  header.top .menu i { position: relative }
+  header.top .menu i::before, header.top .menu i::after { content: ""; position: absolute; left: 0; top: -6px }
+  header.top .menu i::after { top: 6px }
+  header.top.open .menu i { background: transparent }
+  header.top.open .menu i::before { top: 0; transform: rotate(45deg) }
+  header.top.open .menu i::after { top: 0; transform: rotate(-45deg) }
+}
+@media (max-width: 22.5rem) { header.top.small .wm { font-size: 1.15rem } }
+
+h1 { margin: 1.7rem 0 1.3rem; font: var(--hd-w) clamp(2.15rem, 8.6vw, 3.5rem)/1.04 var(--font-d); letter-spacing: var(--hd-track); text-wrap: balance }
+:lang(th) h1, :lang(my) h1 { line-height: 1.3; letter-spacing: 0 }
+h2 { margin: 2.8rem 0 1rem; font: 700 .78rem/1.3 var(--font-l); letter-spacing: var(--label-track); text-transform: var(--label-case); color: var(--acc) }
+:lang(th) h2, :lang(my) h2, :lang(zh) h2 { font-size: .98rem; letter-spacing: .02em }
+/* German compounds (Aufenthaltsverlängerung) break at a syllable on a phone */
+:lang(de) main { -webkit-hyphens: auto; hyphens: auto }
+.back { margin: 1.2rem 0 0 } .back a { color: var(--mut); text-decoration: none; font-weight: 600 }
+.lede { margin: -.5rem 0 1.6rem; font-size: 1.18rem; color: var(--mut) }
+
+/* ---------------------------------------------------------------- dingbats hold their box before core.js draws them */
+doodle-dingbat { display: inline-block; width: 1em; height: 1em; vertical-align: middle }
+doodle-dingbat[name^="hongsa"], doodle-dingbat[name="laptop"], doodle-dingbat[name="translate"] { width: 1.2em }
+
+/* ---------------------------------------------------------------- the job line */
+.job { --stop: 2.55rem; --lineY: .62rem; --clear: 1.95rem; --pad: calc(var(--lineY) + var(--clear)); position: relative; padding-bottom: var(--pad) }
+.job ol { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-end; margin: 0; padding: 0; list-style: none }
+.job::before { content: ""; position: absolute; left: calc(var(--stop) / 2); right: calc(var(--stop) / 2); bottom: calc(var(--lineY) - var(--line-w) / 2); height: var(--line-w);
+  border-radius: var(--line-w); background: var(--line, var(--fg)) }
+.stop { position: relative; display: flex; flex-direction: column; align-items: center; width: var(--stop) }
+.stop .db { font-size: var(--stop); transition: transform .35s var(--ease) }
+.stop.hit .db { animation: hop .5s var(--ease) }
+@keyframes hop { 40% { transform: translateY(-14%) scale(1.06) } }
+.stop::after { content: ""; position: absolute; left: 50%; bottom: calc(var(--lineY) - var(--pad) - .43rem); width: .86rem; height: .86rem; margin-left: -.43rem; border-radius: 50%;
+  background: var(--bg2); box-shadow: 0 0 0 3px var(--line, var(--fg)); z-index: 2 }
+.stop::before { content: ""; position: absolute; left: 50%; bottom: calc(var(--lineY) - var(--pad) + .5rem); width: 1.5px; height: calc(var(--clear) - .75rem); margin-left: -.75px;
+  background: var(--line, var(--fg)); opacity: .45 }
+.cap { position: absolute; top: calc(100% + var(--pad) - var(--lineY) + .6rem); width: max-content; max-width: 6.5rem; text-align: center;
+  font: 700 .74rem/1.25 var(--font-l); letter-spacing: .06em; text-transform: var(--label-case); color: var(--mut) }
+:lang(th) .cap, :lang(my) .cap, :lang(zh) .cap { font-size: .86rem; letter-spacing: 0 }
+.cap b { color: var(--acc); margin-right: .15em }
+.rider { position: absolute; z-index: 3; left: 0; bottom: calc(var(--lineY) + var(--line-w) / 2 - .14rem); line-height: 0; transition: left var(--dur, 2.4s) var(--ease) }
+.rider .db { font-size: 2rem }
+.stop:first-child .cap { left: 0; text-align: left }
+.stop:last-child .cap { right: 0; text-align: right }
+.job.go .rider { left: calc((100% - var(--rw)) * var(--to, 1)) }
+.job.big { --stop: 3.3rem; --lineY: 2.35rem; margin: .6rem 0 1.4rem }
+.job.master { --stop: 3rem; --lineY: 2.4rem; --line: var(--acc); margin: 0 0 1.6rem }
+.job.master .cap { font-size: .95rem; letter-spacing: .02em; text-transform: none; color: var(--fg); max-width: 8rem }
+.job.master .cap b { font-family: var(--font-num) }
+/* the order's line (Buy page, tracker): Pick, Pay, then the job's stops; every other word a row lower, so five or six fit a phone */
+.job.order { margin-bottom: 3.2rem }
+.job.order .cap { max-width: 7rem; font-size: .8rem; letter-spacing: .01em; text-transform: none }
+.job.order .stop:nth-child(even) .cap { margin-top: 1.35rem }
+.job.order .cap b { font-family: var(--font-num) }
+.stop.hit::after { background: var(--line, var(--fg)); transition: background .3s }
+
+/* the swans at work (shop.js ride): walked stop by stop, a mate at the end of some lines, Dam behind on others */
+.job.riding .rider { transition-property: left }
+.rider.mate { left: calc(100% - var(--rw)); transform: scaleX(-1) }
+.rider.dam { z-index: 4; transition: left .6s linear .12s }
+.rider.dam .db { font-size: 1.9rem }
+.job.sim .rider, .job.sim .rider.dam { transition: none }
+/* a line that is water (shop.js way): waves under it; the swan swims in it, what is under the surface drawn faint so the
+   line shows through, its feet under the waves (lanna.js hongsa-go draws its ripples in --db-c) */
+.job.swim .rider { --db-c: var(--line, var(--fg)) }
+/* on a dark page the swans' outlines are light; at their size a full-weight outline turns a black wing or neck white */
+@media (prefers-color-scheme: dark) { .rider { --db-weight: .55 } }
+.job.swim::after { content: ""; position: absolute; z-index: 4; left: calc(var(--stop) / 2); right: calc(var(--stop) / 2); bottom: calc(var(--lineY) - var(--line-w) / 2 - .62rem); height: .5rem;
+  background: var(--line, var(--fg)); opacity: .5; pointer-events: none;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 8'%3E%3Cpath d='M0 2.2Q4 .4 8 2.2T16 2.2M-4 6.2Q0 4.4 4 6.2T12 6.2T20 6.2' fill='none' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E") 0 0 / 1rem .5rem repeat-x;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 8'%3E%3Cpath d='M0 2.2Q4 .4 8 2.2T16 2.2M-4 6.2Q0 4.4 4 6.2T12 6.2T20 6.2' fill='none' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E") 0 0 / 1rem .5rem repeat-x }
+/* a picture answers what the swan does under it */
+.stop .db { transform-origin: 50% 100% }
+.stop.fx-poke .db { animation: fx-poke .62s var(--ease) }
+.stop.fx-bump .db { animation: fx-bump .7s var(--ease) }
+.stop.fx-sway .db { animation: fx-sway 1.4s ease-out }
+.stop.fx-startle .db { animation: fx-startle .75s var(--ease) }
+.stop.fx-bow .db { animation: fx-bow 1.2s var(--ease) }
+.stop.fx-wink .db { animation: fx-wink .9s var(--ease) }
+@keyframes fx-poke { 12% { transform: translateY(-12%) rotate(-6deg) } 30% { transform: none } 52% { transform: translateY(-9%) rotate(5deg) } 70% { transform: none } }
+@keyframes fx-bump { 18% { transform: translateY(-22%) scale(1.05, .95) } 45% { transform: translateY(2%) scale(.96, 1.04) } 66% { transform: translateY(-4%) } }
+@keyframes fx-sway { 15% { transform: rotate(-12deg) } 35% { transform: rotate(9deg) } 55% { transform: rotate(-6deg) } 75% { transform: rotate(3deg) } }
+@keyframes fx-startle { 14% { transform: translateY(-16%) scale(1.14) } 30%, 52% { transform: translateY(-6%) rotate(-5deg) } 41%, 63% { transform: translateY(-6%) rotate(5deg) } 80% { transform: none } }
+@keyframes fx-bow { 30%, 66% { transform: rotate(14deg) translateY(3%) } }
+@keyframes fx-wink { 25% { transform: rotate(-7deg) scale(1.05) } 50% { transform: rotate(6deg) } 75% { transform: rotate(-3deg) } }
+/* a picture's name and its step, on hover or a tap: small, quiet, gone when the pointer leaves */
+.tip { position: absolute; z-index: 6; bottom: calc(100% + .3rem); left: 50%; width: max-content; max-width: 11rem; padding: .3rem .55rem .32rem; border-radius: 4px;
+  background: var(--fg); color: var(--bg2); font: 650 .8rem/1.2 var(--sys); text-align: center; pointer-events: none;
+  opacity: 0; transform: translate(-50%, .25rem); transition: opacity .16s, transform .16s var(--ease) }
+.tip::before { content: attr(data-n) }
+.tip small { display: block; margin-top: .1rem; font: 500 .7rem/1.2 var(--sys); opacity: .72 }
+.tip small::before { content: attr(data-s) }
+.tip::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -4px; border: 4px solid transparent; border-top-color: var(--fg) }
+.stop:first-child .tip { left: 0; transform: translate(0, .25rem) }
+.stop:first-child .tip::after { left: calc(var(--stop) / 2) }
+.stop:last-child .tip { left: auto; right: 0; transform: translate(0, .25rem) }
+.stop:last-child .tip::after { left: auto; right: calc(var(--stop) / 2 - 4px) }
+.stop.tip-on .tip { opacity: 1; transform: translate(-50%, 0) }
+.stop:first-child.tip-on .tip, .stop:last-child.tip-on .tip { transform: none }
+@media (hover: hover) {
+  .stop { cursor: help }
+  .stop:hover .tip { opacity: 1; transform: translate(-50%, 0) }
+  .stop:first-child:hover .tip, .stop:last-child:hover .tip { transform: none }
+}
+/* the job done: the card's button arrow steps forward twice */
+.card .btn::after { display: inline-block }
+.card .btn.nudge::after { animation: nudge .8s var(--ease) 2 }
+@keyframes nudge { 50% { transform: translateX(.35rem) } }
+
+/* ---------------------------------------------------------------- search */
+.field { display: block; margin: 1.5rem 0 .5rem; font-weight: 650 }
+.qwrap { position: relative }
+.qwrap .qi { position: absolute; z-index: 1; left: .95rem; top: 50%; transform: translateY(-50%); font-size: 1.55rem; line-height: 0; pointer-events: none }
+.q { display: block; width: 100%; padding: 1rem 1.1rem 1rem 3.2rem; border: 1.5px solid var(--fg); border-radius: var(--btn-r); background: var(--bg2); color: var(--fg); font: 500 1.15rem/1.3 var(--sys) }
+.q::placeholder { color: var(--mut) }
+#hits { margin-top: .8rem }
+
+/* ---------------------------------------------------------------- cards */
+.cards { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none }
+.card { display: grid; grid-template-columns: minmax(0, 1fr) auto; overflow-wrap: anywhere; column-gap: 1rem; align-items: start; padding: 1.2rem 1.15rem 1.15rem; border: var(--card-bd); border-radius: var(--r);
+  background: var(--bg2); box-shadow: var(--card-shadow) }
+.card .job { grid-column: 1 / -1; margin: 0 0 1.05rem }
+.card h3 { grid-column: 1; margin: 0; font: 680 1.14rem/1.3 var(--sys); letter-spacing: -.005em }
+.card h3 a { color: inherit; text-decoration: none }
+.card h3 a:hover, .card h3 a:focus-visible { text-decoration: underline; text-underline-offset: .18em }
+.card .price { grid-column: 2; max-width: 11rem; margin: 0; font: 700 1.14rem/1.3 var(--font-num); font-variant-numeric: tabular-nums; text-align: right; text-wrap: balance }
+.card .l { grid-column: 1 / -1; margin: .3rem 0 0; color: var(--mut) }
+.card > p:not(.price):not(.l) { grid-column: 1 / -1; margin: .3rem 0 0 }
+.card > ul { grid-column: 1 / -1; margin: .5rem 0 0; padding-left: 1.1rem }
+.card .ladder { grid-column: 1; align-self: center; margin-top: .9rem }
+.card .btn { grid-column: 2; justify-self: end; margin-top: .9rem }
+
+/* price ladder: the steps a price can take, today's lit; this month's bookings as dots */
+.ladder summary { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; list-style: none; cursor: pointer; font: 600 .82rem/1.2 var(--font-l); color: var(--mut) }
+.ladder summary::-webkit-details-marker { display: none }
+/* a ? says the meter opens; × closes it */
+.ladder summary::after { content: "?"; display: inline-grid; place-items: center; width: 1.1rem; height: 1.1rem; border-radius: 50%; box-shadow: inset 0 0 0 1.5px currentColor; font: 700 .72rem/1 var(--sys) }
+.ladder[open] summary::after { content: "×" }
+.ladder .bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 1.1rem }
+.ladder .bars i { width: 4px; border-radius: 1px; background: color-mix(in oklab, var(--fg) 20%, transparent) }
+.ladder .bars i.lo { background: color-mix(in oklab, var(--line, var(--fg)) 45%, transparent) }
+.ladder .bars i.on { background: var(--line, var(--fg)) }
+.ladder .slots { display: inline-flex; gap: 3px }
+.ladder .slots i { width: .5rem; height: .5rem; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--line, var(--fg)) }
+.ladder .slots i.b { background: var(--line, var(--fg)) }
+.ladder p { margin: .45rem 0 0; font-size: .92rem; color: var(--mut) }
+
+/* ---------------------------------------------------------------- doors */
+.doors { display: grid; grid-template-columns: repeat(2, 1fr); gap: .65rem; margin: 0; padding: 0; list-style: none }
+@media (min-width: 40rem) { .doors { grid-template-columns: repeat(4, 1fr) } }
+.doors a { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: .8rem; min-height: 7.4rem; padding: 1rem .9rem .9rem; overflow: hidden;
+  border: var(--card-bd); border-radius: var(--r); background: var(--bg2); box-shadow: var(--card-shadow); text-decoration: none; font-weight: 680; line-height: 1.25 }
+.doors a::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: var(--line-w); background: var(--line) }
+.doors .db { font-size: 2.7rem }
+.doors .dc { position: absolute; top: .8rem; right: .8rem; display: inline-flex; align-items: center; justify-content: center; min-width: 1.7rem; height: 1.7rem; padding: 0 .35rem;
+  border-radius: 999px; box-shadow: inset 0 0 0 2px var(--line); font: 700 .8rem/1 var(--font-num); font-variant-numeric: tabular-nums }
+.cat-h { display: flex; align-items: center; gap: .9rem }
+.cat-h .db { font-size: 1.2em; flex: none }
+
+/* ---------------------------------------------------------------- buttons and forms */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-width: 5.5rem; min-height: 2.9rem; padding: .6rem 1.3rem; border: 0; border-radius: var(--btn-r);
+  background: var(--btn); color: var(--btn-fg); font: 700 1rem/1.1 var(--sys); text-align: center; text-decoration: none; cursor: pointer; transition: transform .15s var(--ease) }
+.btn:active { transform: scale(.97) }
+.card .btn::after { content: "→"; font-weight: 400 }
+.btn.alt { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg) }
+.btn.big { width: 100%; min-height: 3.4rem; margin-top: 1.2rem; font-size: 1.15rem }
+.btn:disabled { opacity: .5 }
+fieldset { margin: 1.2rem 0; padding: 0; border: 0 }
+legend { margin-bottom: .4rem; font-weight: 700 }
+.opt { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; min-height: 3.1rem; margin: 0 0 .45rem; padding: .55rem .9rem; border-radius: var(--r); box-shadow: inset 0 0 0 1px var(--rule); background: var(--bg2) }
+.opt:has(input:checked) { box-shadow: inset 0 0 0 2px var(--line, var(--fg)) }
+.opt input { width: 1.3rem; height: 1.3rem; margin: 0; accent-color: var(--fg) }
+.opt b { margin-left: auto; font-family: var(--font-num); font-variant-numeric: tabular-nums }
+.qtyrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 }
+.qtyrow .lab { width: 100%; font-weight: 700 }
+.qtyrow input { width: 4.5rem; padding: .55rem; border: 1.5px solid var(--fg); border-radius: 10px; background: var(--bg2); color: var(--fg); font: inherit; font-size: 1.2rem; text-align: center }
+.step { width: 2.9rem; height: 2.9rem; border: 1.5px solid var(--fg); border-radius: 10px; background: var(--bg2); color: var(--fg); font: 700 1.4rem/1 var(--sys); cursor: pointer }
+.tot { display: flex; justify-content: space-between; align-items: baseline; margin: 1.2rem 0 .2rem; padding-top: .7rem; border-top: 2px solid var(--fg); font-size: 1.2rem }
+.tot b { font: 700 1.9rem/1 var(--font-num); font-variant-numeric: tabular-nums }
+.field input, .field textarea { display: block; width: 100%; margin-top: .35rem; padding: .7rem .8rem; border: 1.5px solid var(--fg); border-radius: 10px; background: var(--bg2); color: var(--fg); font: inherit }
+.way { margin: 1.4rem 0; padding: 1rem 1.1rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2) }
+.way h3 { margin: 0 0 .5rem }
+.qr svg { display: block; width: 240px; height: 240px; background: #fff; border-radius: 10px }
+.note { margin: .3rem 0 }
+.hp { position: absolute; left: -9999px }
+
+/* ---------------------------------------------------------------- order tracker */
+.kicker { margin: 1.4rem 0 0; font: 700 .8rem/1.3 var(--font-l); letter-spacing: var(--label-track); text-transform: var(--label-case); color: var(--acc) }
+.kicker b { font-family: var(--mono); letter-spacing: .04em; color: var(--fg) }
+:lang(th) .kicker, :lang(my) .kicker, :lang(zh) .kicker { font-size: .95rem; letter-spacing: 0 }
+.state { margin: 2.6rem 0 0; font: var(--hd-w) clamp(1.6rem, 6.5vw, 2.3rem)/1.15 var(--font-d); letter-spacing: var(--hd-track) }
+
+footer { margin-top: 3.5rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); color: var(--mut); font-size: .95rem }
+footer p { margin: .35rem 0 }
+
+/* ---------------------------------------------------------------- isotype details */
+.wm { text-transform: lowercase; letter-spacing: -.04em }
+h1 { text-transform: lowercase }
+/* lowercase German turns Sie (you) into sie (she, they) */
+:lang(de) h1 { text-transform: none }
+.btn:not(.alt) { box-shadow: 3px 3px 0 var(--line, var(--acc)) }
+.card, .doors a { transition: transform .15s var(--ease), box-shadow .15s var(--ease) }
+.doors a:hover, .card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--fg) }
+
+/* ---------------------------------------------------------------- moving between pages: one page morphs into the next */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto }
+  ::view-transition-group(*) { animation-duration: .38s; animation-timing-function: var(--ease) }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rider { transition: none }
+  .stop.hit .db, .stop[class*="fx-"] .db, .card .btn.nudge::after { animation: none }
+  .tip { transition: none }
+}
+
+/* ---------------------------------------------------------------- money marks
+   Her ask 2026-10-24: "baht symbol looks similar enough to dollar symbol, pls add flag dingbat for US and
+   Thailand, make the $ different color." A price element carries class "amt amt-th" (baht), "amt amt-us" (US$) or
+   "amt amt-eu" (€, the ฿ / $ / € switch, her ask 2026-10-24): a small flag before it, US$ in its own green, € in blue.
+   Built by tools/build_shop.py; docs/assets/cur.js shows them in the reader's currency. */
+:root { --usd: #1E6B43; --eur: #1F4A94 }
+@media (prefers-color-scheme: dark) { :root { --usd: #7DD3A3; --eur: #A9C1FF } }
+.amt { white-space: nowrap }
+.amt-th::before, .amt-us::before, .amt-eu::before { content: ""; display: inline-block; width: 1.1em; height: .74em; margin-right: .28em; vertical-align: -.04em;
+  border-radius: 1.5px; background: center / 100% 100% no-repeat; box-shadow: 0 0 0 1px color-mix(in oklab, var(--fg) 22%, transparent) }
+.amt-th::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23A51931' d='M0 0h9v6H0z'/%3E%3Cpath fill='%23F4F5F8' d='M0 1h9v4H0z'/%3E%3Cpath fill='%232D2A4A' d='M0 2h9v2H0z'/%3E%3C/svg%3E") }
+.amt-us::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 7' preserveAspectRatio='none'%3E%3Cpath fill='%23FFF' d='M0 0h10v7H0z'/%3E%3Cpath fill='%23B22234' d='M0 0h10v1H0zM0 2h10v1H0zM0 4h10v1H0zM0 6h10v1H0z'/%3E%3Cpath fill='%233C3B6E' d='M0 0h4.4v4H0z'/%3E%3Cg fill='%23FFF'%3E%3Ccircle cx='1.1' cy='1' r='.42'/%3E%3Ccircle cx='3.3' cy='1' r='.42'/%3E%3Ccircle cx='2.2' cy='2' r='.42'/%3E%3Ccircle cx='1.1' cy='3' r='.42'/%3E%3Ccircle cx='3.3' cy='3' r='.42'/%3E%3C/g%3E%3C/svg%3E") }
+.amt-us { color: var(--usd) }
+.amt-eu::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 10' preserveAspectRatio='none'%3E%3Cpath fill='%23039' d='M0 0h15v10H0z'/%3E%3Cg fill='%23FC0'%3E%3Ccircle cx='7.5' cy='1.9' r='.55'/%3E%3Ccircle cx='9.05' cy='2.32' r='.55'/%3E%3Ccircle cx='10.18' cy='3.45' r='.55'/%3E%3Ccircle cx='10.6' cy='5' r='.55'/%3E%3Ccircle cx='10.18' cy='6.55' r='.55'/%3E%3Ccircle cx='9.05' cy='7.68' r='.55'/%3E%3Ccircle cx='7.5' cy='8.1' r='.55'/%3E%3Ccircle cx='5.95' cy='7.68' r='.55'/%3E%3Ccircle cx='4.82' cy='6.55' r='.55'/%3E%3Ccircle cx='4.4' cy='5' r='.55'/%3E%3Ccircle cx='4.82' cy='3.45' r='.55'/%3E%3Ccircle cx='5.95' cy='2.32' r='.55'/%3E%3C/g%3E%3C/svg%3E") }
+.amt-eu { color: var(--eur) }
+/* on a button the price takes the button's colour; the flag still tells the currency */
+.btn .amt, button .amt { color: inherit }
+/* The switch: cur.js puts it at the end of the language row, pushed right; a flag and a sign on each button, the pick
+   filled like the language. On a wide screen that row goes under the name and LINE. */
+.curs { display: inline-flex; margin-left: auto; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--rule); overflow: hidden }
+.curs[hidden] { display: none }
+.curs button { display: inline-flex; align-items: center; min-height: 2.4rem; min-width: 2.75rem; padding: .3rem .6rem; border: 0; background: none;
+  color: inherit; font: 700 .98rem/1 var(--sys); cursor: pointer }
+.curs button i { font-size: .85rem }
+.curs button[aria-pressed="true"] { background: var(--fg); color: var(--bg) }
+@media (min-width: 40rem) { .langs:has(> .curs) { order: 3; width: 100% } }
+
+/* ---------------------------------------------------------------- our work: one row of thumbnails, a film opens over the page
+   Her asks 2026-10-24, from data/front_work.json (tools/build_shop.py work_band): the Rotary cartoon and Mot Dang's
+   videos, "smaller interface with thumbnails". A tap opens dialog.player (shop.js) with the film, its words and its
+   link; closing it stops the film. */
+.thumbs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin: 0; padding: 0; list-style: none }
+.thumb { position: relative; display: flex; flex-direction: column; gap: .3rem; width: 100%; padding: 0; border: 0; background: none; color: var(--fg); font: inherit; text-align: left; cursor: pointer }
+.thumb img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: var(--card-bd); border-radius: var(--r); background: var(--bg2);
+  box-shadow: 3px 3px 0 var(--line, var(--fg)); transition: transform .15s var(--ease), box-shadow .15s var(--ease) }
+.thumb::after { content: ""; position: absolute; left: .4rem; top: .4rem; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--fg) }
+.thumb::before { content: ""; position: absolute; z-index: 1; left: calc(.4rem + .6rem); top: calc(.4rem + .45rem); border-style: solid; border-width: .35rem 0 .35rem .55rem;
+  border-color: transparent transparent transparent var(--bg2) }
+.thumb .tn { font: 650 .82rem/1.25 var(--sys); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden }
+.thumb .ts { margin-top: -.15rem; font-size: .74rem; line-height: 1.25; color: var(--mut) }
+.thumb:hover img, .thumb:focus-visible img { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--line, var(--fg)) }
+.thumb:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; border-radius: var(--r) }
+.thumbs-go { margin: .8rem 0 0; font-weight: 700; font-size: .95rem }
+@media (min-width: 40rem) { .thumbs { gap: .9rem } .thumb .tn { font-size: .92rem } .thumb .ts { font-size: .82rem } }
+dialog.player { width: min(40rem, calc(100vw - 1.5rem)); max-height: calc(100dvh - 1.5rem); padding: 0; border: var(--card-bd); border-radius: var(--r);
+  background: var(--bg2); color: var(--fg); box-shadow: var(--card-shadow); overflow: auto }
+dialog.player::backdrop { background: rgb(0 0 0 / .62) }
+.player .bar { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .55rem .55rem .55rem 1rem }
+.player h3 { margin: 0; font: 680 1.05rem/1.3 var(--sys) }
+.player .x { flex: none; width: 2.75rem; height: 2.75rem; padding: 0; border: 0; border-radius: var(--btn-r); background: none; color: var(--fg); font: 400 1.9rem/1 var(--sys); cursor: pointer }
+.player .x:focus-visible { outline: 2px solid var(--fg) }
+.player .pv video { display: block; width: 100%; height: auto; max-height: 72dvh; background: #000; object-fit: contain }
+.player .pv iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000 }
+.player .desc { margin: .8rem 1rem 0; color: var(--mut) }
+.player .go { margin: .6rem 1rem 1rem; font-weight: 700 }
+/* the question crawl sits at the foot of the front page now (her word 2026-10-24) */
+.p-front .qs-crawl { margin: 2rem 0 .2rem }
+.says { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none }
+.says li { padding: 1.1rem 1.15rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2) }
+.says blockquote { margin: 0; font-size: 1.12rem; line-height: 1.45 }
+.says blockquote p { margin: 0 }
+.says blockquote p::before { content: "“" } .says blockquote p::after { content: "”" }
+.says .who { margin: .55rem 0 0; color: var(--mut); font-size: .95rem }
+
+/* Share (assets/share.js): a quiet button beside a card's Buy and on the page's back row, and its menu */
+.share { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.9rem; padding: .4rem .15rem; border: 0; background: none; color: var(--mut); font: 600 1rem/1.2 var(--sys); cursor: pointer; -webkit-tap-highlight-color: transparent }
+.share svg { width: 1.15em; height: 1.15em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+.share:hover span, .share:focus-visible span, .share[aria-expanded="true"] span { text-decoration: underline; text-underline-offset: .18em }
+.share:hover, .share[aria-expanded="true"] { color: var(--fg) }
+.card .share { grid-column: 1; justify-self: start; align-self: center; margin-top: .9rem }
+.back:has(.share) { display: flex; justify-content: space-between; align-items: center; gap: 1rem }
+.back .share { margin: -.7rem 0 }
+.share-row { margin: .2rem 0 0 }
+#share-menu { position: fixed; inset: auto; margin: 0; min-width: 12.5rem; padding: .35rem; border: var(--card-bd); border-radius: var(--r); background: var(--bg2); color: var(--fg); box-shadow: var(--card-shadow) }
+#share-menu[hidden] { display: none }
+#share-menu a, #share-menu button { display: flex; align-items: center; width: 100%; min-height: 2.75rem; padding: .4rem .8rem; border: 0; border-radius: var(--r); background: none; color: var(--fg); font: 600 1rem/1.2 var(--sys); text-align: start; text-decoration: none; cursor: pointer }
+#share-menu a:hover, #share-menu a:focus-visible, #share-menu button:hover, #share-menu button:focus-visible { background: color-mix(in oklab, var(--fg) 9%, transparent); outline: none }
+#share-menu :focus-visible { box-shadow: inset 0 0 0 2px var(--fg) }
+@media print { .share, #share-menu { display: none !important } }

@@ -1,0 +1,912 @@
+{
+ "id": "ai-automation",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A task done by hand week after week takes hours that add up. This service sets one such task to run itself in n8n, Make, Zapier or code.",
+  "th": "งานที่ต้องทำด้วยมือสัปดาห์แล้วสัปดาห์เล่ากินเวลาสะสมไปเรื่อย ๆ บริการนี้ตั้งให้งานหนึ่งอย่างทำงานเองใน n8n, Make, Zapier หรือโค้ด",
+  "my": "အပတ်စဉ် လက်ဖြင့် ထပ်ခါထပ်ခါ လုပ်ရသော အလုပ်သည် နာရီများ စုပုံသွားသည်။ ဤဝန်ဆောင်မှုက အလုပ်တစ်ခုကို n8n၊ Make၊ Zapier သို့မဟုတ် ကုဒ်ဖြင့် ကိုယ်တိုင် အလုပ်လုပ်စေရန် ပြင်ဆင်ပေးသည်။",
+  "zh": "每周反复靠手工做的任务，花掉的时间会越积越多。这项服务把一项这样的任务设置成在 n8n、Make、Zapier 或代码中自动运行。",
+  "de": "Eine Aufgabe, die Woche für Woche von Hand erledigt wird, kostet Stunden, die sich summieren. Dieser Service richtet eine solche Aufgabe so ein, dass sie in n8n, Make, Zapier oder Code von selbst läuft."
+ },
+ "n": {
+  "de": "Automatisierung"
+ },
+ "l": {
+  "de": "Eine Aufgabe, die von selbst läuft, in n8n, Make, Zapier oder Code."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "The task and the one thing that starts it are written down",
+    "th": "เขียนระบุงานและเหตุการณ์เดียวที่เริ่มงาน",
+    "my": "အလုပ်နှင့် ၎င်းကို စတင်စေသည့် အရာတစ်ခုကို ရေးမှတ်သည်",
+    "zh": "写下这项任务和唯一的启动条件",
+    "de": "Die Aufgabe und der eine Auslöser werden aufgeschrieben"
+   },
+   "who": {
+    "en": "You and Hongdam",
+    "th": "คุณและหงส์ดำ",
+    "my": "သင်နှင့် ဟုန်ဒမ်",
+    "zh": "您和鸿丹",
+    "de": "Sie und Hongdam"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มต้น",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "Up to 3 apps are connected",
+    "th": "เชื่อมต่อแอปไม่เกิน 3 แอป",
+    "my": "အက်ပ် 3 ခုအထိ ချိတ်ဆက်သည်",
+    "zh": "连接最多 3 个应用",
+    "de": "Bis zu 3 Apps werden verbunden"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the trigger is set",
+    "th": "หลังกำหนดจุดเริ่มแล้ว",
+    "my": "စတင်စေသည့်အရာ သတ်မှတ်ပြီးနောက်",
+    "zh": "设置好启动条件之后",
+    "de": "Nach dem Festlegen des Auslösers"
+   }
+  },
+  {
+   "db": "gears",
+   "t": {
+    "en": "The job is built in n8n, Make, Zapier or code",
+    "th": "สร้างงานใน n8n, Make, Zapier หรือโค้ด",
+    "my": "အလုပ်ကို n8n၊ Make၊ Zapier သို့မဟုတ် ကုဒ်ဖြင့် တည်ဆောက်သည်",
+    "zh": "在 n8n、Make、Zapier 或代码中搭建这项工作",
+    "de": "Die Aufgabe wird in n8n, Make, Zapier oder Code gebaut"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the apps are connected",
+    "th": "หลังเชื่อมต่อแอปแล้ว",
+    "my": "အက်ပ်များ ချိတ်ဆက်ပြီးနောက်",
+    "zh": "应用连接好之后",
+    "de": "Nach der Verbindung der Apps"
+   }
+  },
+  {
+   "db": "bell",
+   "t": {
+    "en": "An alert goes out when the job stops",
+    "th": "ส่งข้อความแจ้งเมื่องานหยุดทำงาน",
+    "my": "အလုပ် ရပ်သွားလျှင် သတိပေးချက် ပို့သည်",
+    "zh": "任务停止时会发出提醒",
+    "de": "Bei einem Stopp der Aufgabe geht ein Alarm raus"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Once the job is running",
+    "th": "เมื่องานเริ่มทำงานแล้ว",
+    "my": "အလုပ် စတင်လည်ပတ်ပြီးနောက်",
+    "zh": "任务开始运行之后",
+    "de": "Sobald die Aufgabe läuft"
+   }
+  },
+  {
+   "db": "wrench",
+   "t": {
+    "en": "Problems are fixed for 30 days",
+    "th": "แก้ปัญหาให้ 30 วัน",
+    "my": "ပြဿနာများကို ရက် 30 အတွင်း ပြင်ပေးသည်",
+    "zh": "30 天内修复出现的问题",
+    "de": "Probleme werden 30 Tage lang behoben"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "For 30 days",
+    "th": "30 วัน",
+    "my": "ရက် 30 အတွင်း",
+    "zh": "30 天内",
+    "de": "30 Tage lang"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The tools' own fees are charged at cost",
+    "th": "ค่าบริการของเครื่องมือคิดตามจริง",
+    "my": "ကိရိယာများ၏ ကိုယ်ပိုင်ကြေးကို ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်",
+    "zh": "各工具自己的费用按成本收取",
+    "de": "Die Gebühren der Werkzeuge werden zum Selbstkostenpreis verrechnet"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Apart from Hongdam's price",
+    "th": "แยกจากราคาของหงส์ดำ",
+    "my": "ဟုန်ဒမ်၏ စျေးနှုန်းနှင့် သီးခြား",
+    "zh": "不含在鸿丹的价格内",
+    "de": "Zusätzlich zum Preis von Hongdam"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "€20",
+   "t": {
+    "en": "A month on n8n Cloud's first plan, billed yearly. It allows 2,500 workflow runs a month.",
+    "th": "ค่าแผนแรกของ n8n Cloud ต่อเดือน เรียกเก็บรายปี รันเวิร์กโฟลว์ได้ 2,500 ครั้งต่อเดือน",
+    "my": "n8n Cloud ၏ ပထမအစီအစဉ် တစ်လစာ၊ တစ်နှစ်စာ ပေးချေရသည်။ တစ်လလျှင် workflow 2,500 ကြိမ် run နိုင်သည်။",
+    "zh": "n8n Cloud 第一档方案每月费用，按年付费。每月可运行工作流 2,500 次。",
+    "de": "Monatspreis des ersten Plans von n8n Cloud, jährlich abgerechnet. Er erlaubt 2,500 Durchläufe eines Workflows im Monat."
+   },
+   "src": "https://n8n.io/pricing/"
+  },
+  {
+   "n": "100,000",
+   "t": {
+    "en": "Requests a day that a Cloudflare Worker handles on the Free plan",
+    "th": "คำขอต่อวันที่ Cloudflare Worker รับได้ในแผนฟรี",
+    "my": "အခမဲ့အစီအစဉ်တွင် Cloudflare Worker က တစ်ရက်လျှင် လက်ခံနိုင်သော request အရေအတွက်",
+    "zh": "Cloudflare Worker 在免费方案下每天可处理的请求数",
+    "de": "Anfragen pro Tag, die ein Cloudflare Worker im Gratisplan bearbeitet"
+   },
+   "src": "https://developers.cloudflare.com/workers/platform/pricing/"
+  },
+  {
+   "n": "฿352",
+   "t": {
+    "en": "A day: the minimum wage in Chiang Rai since 1 July 2025",
+    "th": "ต่อวัน ค่าแรงขั้นต่ำในเชียงรายตั้งแต่ 1 กรกฎาคม 2568",
+    "my": "တစ်ရက်လျှင် — 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှစ၍ ချင်းရိုင်းရှိ အနည်းဆုံးလုပ်ခ",
+    "zh": "每天，自 2025 年 7 月 1 日起清莱的最低工资",
+    "de": "pro Tag: der Mindestlohn in Chiang Rai seit dem 1. Juli 2025"
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "n": "86",
+   "t": {
+    "en": "Times one automation listing on Fastwork has sold, at ฿7,500 for 5 days of work",
+    "th": "จำนวนครั้งที่บริการ automation รายการหนึ่งบน Fastwork ขายได้ ราคา ฿7,500 ทำงาน 5 วัน",
+    "my": "Fastwork ပေါ်ရှိ automation ဝန်ဆောင်မှု တစ်ခု ရောင်းရသည့် အကြိမ်ရေ — ฿7,500၊ လုပ်ငန်းကာလ 5 ရက်",
+    "zh": "Fastwork 上一项自动化服务的成交次数，价格 ฿7,500，工期 5 天",
+    "de": "Verkäufe eines Automatisierungsangebots auf Fastwork, zu ฿7,500 für 5 Tage Arbeit"
+   },
+   "src": "https://fastwork.co/user/box_automation/ai-automation-12079856"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What does the task cost you a month, by hand and automated?",
+   "th": "งานนี้ทำเองกับทำอัตโนมัติ เดือนละเท่าไหร่",
+   "my": "ဤအလုပ်ကို လက်ဖြင့်လုပ်ခြင်းနှင့် အလိုအလျောက်လုပ်ခြင်း တစ်လလျှင် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+   "zh": "这项任务每月的成本：人工做和自动化各是多少",
+   "de": "Was kostet die Aufgabe im Monat, von Hand und automatisch?"
+  },
+  "noscript": {
+   "en": "The cost calculator needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณค่าใช้จ่ายต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ကုန်ကျစရိတ်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "费用计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Kostenrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "hours",
+     "n": {
+      "en": "Hours a week spent on the task",
+      "th": "ชั่วโมงต่อสัปดาห์ที่ใช้กับงานนี้",
+      "my": "ဤအလုပ်အတွက် တစ်ပတ်လျှင် သုံးသည့် နာရီ",
+      "zh": "每周花在这项任务上的小时数",
+      "de": "Stunden pro Woche für die Aufgabe"
+     },
+     "min": 1,
+     "max": 40,
+     "step": 1,
+     "start": 5,
+     "unit": {
+      "en": "hours a week",
+      "th": "ชั่วโมงต่อสัปดาห์",
+      "my": "နာရီ/တစ်ပတ်",
+      "zh": "小时/周",
+      "de": "Stunden pro Woche"
+     },
+     "money": false
+    },
+    {
+     "id": "rate",
+     "n": {
+      "en": "What an hour of your own time costs",
+      "th": "ต้นทุนต่อชั่วโมงของเวลาคุณเอง",
+      "my": "သင့်ကိုယ်ပိုင်အချိန် တစ်နာရီ၏ တန်ဖိုး",
+      "zh": "您自己一小时的时间成本",
+      "de": "Was eine Stunde Ihrer eigenen Zeit kostet"
+     },
+     "min": 100,
+     "max": 1000,
+     "step": 50,
+     "start": 300,
+     "unit": {
+      "en": "an hour",
+      "th": "ต่อชั่วโมง",
+      "my": "တစ်နာရီလျှင်",
+      "zh": "每小时",
+      "de": "pro Stunde"
+     },
+     "money": true
+    }
+   ],
+   "choices": [
+    {
+     "id": "who",
+     "n": {
+      "en": "Who does the task today",
+      "th": "ปัจจุบันใครทำงานนี้",
+      "my": "ယခု ဤအလုပ်ကို ဘယ်သူလုပ်သလဲ",
+      "zh": "现在由谁做这项任务",
+      "de": "Wer die Aufgabe heute erledigt"
+     },
+     "options": [
+      {
+       "id": "you",
+       "n": {
+        "en": "You, at the hourly cost above",
+        "th": "คุณเอง ตามต้นทุนต่อชั่วโมงด้านบน",
+        "my": "သင်ကိုယ်တိုင်၊ အထက်ပါ တစ်နာရီတန်ဖိုးအတိုင်း",
+        "zh": "您自己，按上面的小时成本计",
+        "de": "Sie selbst, zum Stundensatz oben"
+       }
+      },
+      {
+       "id": "employee",
+       "n": {
+        "en": "A Thai employee on the minimum wage",
+        "th": "พนักงานชาวไทยค่าแรงขั้นต่ำ",
+        "my": "အနည်းဆုံးလုပ်ခရသော ထိုင်းဝန်ထမ်း",
+        "zh": "拿最低工资的泰国员工",
+        "de": "Eine Arbeitskraft in Thailand zum Mindestlohn"
+       }
+      },
+      {
+       "id": "assistant",
+       "n": {
+        "en": "An assistant abroad",
+        "th": "ผู้ช่วยในต่างประเทศ",
+        "my": "နိုင်ငံခြားရှိ လက်ထောက်",
+        "zh": "海外助理",
+        "de": "Eine Assistenz im Ausland"
+       }
+      }
+     ],
+     "start": "you"
+    },
+    {
+     "id": "tool",
+     "n": {
+      "en": "Where the automation runs",
+      "th": "ระบบอัตโนมัติรันที่ไหน",
+      "my": "အလိုအလျောက်စနစ်ကို ဘယ်မှာ လည်ပတ်စေမလဲ",
+      "zh": "自动化在哪里运行",
+      "de": "Wo die Automatisierung läuft"
+     },
+     "options": [
+      {
+       "id": "n8n",
+       "n": {
+        "en": "n8n Cloud",
+        "th": "n8n บนคลาวด์",
+        "my": "n8n Cloud ဝန်ဆောင်မှု",
+        "zh": "n8n 云端版",
+        "de": "n8n Cloud, gehostet"
+       }
+      },
+      {
+       "id": "zapier",
+       "n": {
+        "en": "Zapier",
+        "th": "Zapier",
+        "my": "Zapier",
+        "zh": "Zapier",
+        "de": "Zapier"
+       }
+      },
+      {
+       "id": "make",
+       "n": {
+        "en": "Make",
+        "th": "Make",
+        "my": "Make",
+        "zh": "Make",
+        "de": "Make"
+       }
+      },
+      {
+       "id": "worker",
+       "n": {
+        "en": "Code on a Cloudflare Worker",
+        "th": "โค้ดบน Cloudflare Worker",
+        "my": "Cloudflare Worker ပေါ်ရှိ ကုဒ်",
+        "zh": "Cloudflare Worker 上的代码",
+        "de": "Code auf einem Cloudflare Worker"
+       }
+      }
+     ],
+     "start": "n8n"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Your own hours by hand: hours a week × 52 ÷ 12 × your hourly cost (for comparison, the Chiang Rai minimum wage is ฿352 a day)",
+      "th": "ชั่วโมงที่คุณทำเอง: ชั่วโมงต่อสัปดาห์ × 52 ÷ 12 × ต้นทุนต่อชั่วโมงของคุณ (เทียบกับค่าแรงขั้นต่ำเชียงราย ฿352 ต่อวัน)",
+      "my": "သင်ကိုယ်တိုင် လက်ဖြင့်လုပ်သည့် နာရီများ — တစ်ပတ်နာရီ × 52 ÷ 12 × သင်၏ တစ်နာရီတန်ဖိုး (နှိုင်းယှဉ်ရန် ချင်းရိုင်း အနည်းဆုံးလုပ်ခမှာ တစ်ရက် ฿352)",
+      "zh": "您自己手工做的小时数：每周小时数 × 52 ÷ 12 × 您的小时成本（作比较：清莱最低工资为每天 ฿352）",
+      "de": "Ihre eigenen Stunden von Hand: Stunden pro Woche × 52 ÷ 12 × Ihr Stundensatz (zum Vergleich: Der Mindestlohn in Chiang Rai beträgt ฿352 am Tag)"
+     },
+     "range": [
+      4.3333,
+      4.3333
+     ],
+     "per": [
+      "hours",
+      "rate"
+     ],
+     "when": {
+      "who": [
+       "you"
+      ]
+     },
+     "save": true,
+     "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+    },
+    {
+     "n": {
+      "en": "A Thai employee on the Chiang Rai minimum wage, ฿352 a day over an 8-hour day (wage only)",
+      "th": "พนักงานไทยค่าแรงขั้นต่ำเชียงราย ฿352 ต่อวัน วันละ 8 ชั่วโมง (เฉพาะค่าจ้าง)",
+      "my": "ချင်းရိုင်း အနည်းဆုံးလုပ်ခဖြင့် ထိုင်းဝန်ထမ်း၊ တစ်ရက် ฿352၊ တစ်ရက် 8 နာရီ (လုပ်ခသာ)",
+      "zh": "按清莱最低工资计的泰国员工，每天 ฿352，每天 8 小时（仅工资）",
+      "de": "Eine Arbeitskraft in Thailand zum Mindestlohn von Chiang Rai, ฿352 pro 8-Stunden-Tag (nur der Lohn)"
+     },
+     "range": [
+      190.67,
+      190.67
+     ],
+     "per": [
+      "hours"
+     ],
+     "when": {
+      "who": [
+       "employee"
+      ]
+     },
+     "save": true,
+     "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+    },
+    {
+     "n": {
+      "en": "An assistant abroad, US$3 to US$12 an hour from beginner to expert (฿101 to ฿405 at ฿33.76 to the dollar)",
+      "th": "ผู้ช่วยในต่างประเทศ US$3 ถึง US$12 ต่อชั่วโมง ตั้งแต่มือใหม่ถึงผู้เชี่ยวชาญ (฿101 ถึง ฿405 ที่ ฿33.76 ต่อดอลลาร์)",
+      "my": "နိုင်ငံခြားရှိ လက်ထောက်၊ အစပျိုးသူမှ ကျွမ်းကျင်သူအထိ တစ်နာရီ US$3 မှ US$12 (ဒေါ်လာတစ်ဒေါ်လာလျှင် ฿33.76 ဖြင့် ฿101 မှ ฿405)",
+      "zh": "海外助理，从新手到专家每小时 US$3 至 US$12（按 1 美元 ฿33.76 计，为 ฿101 至 ฿405）",
+      "de": "Eine Assistenz im Ausland, US$3 bis US$12 pro Stunde vom Einsteiger bis zum Profi (฿101 bis ฿405 bei ฿33.76 je Dollar)"
+     },
+     "range": [
+      438.88,
+      1755.52
+     ],
+     "per": [
+      "hours"
+     ],
+     "when": {
+      "who": [
+       "assistant"
+      ]
+     },
+     "save": true,
+     "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+    },
+    {
+     "n": {
+      "en": "n8n Cloud, billed yearly: Starter €20 for 2,500 runs a month, Pro €50 for 10,000 (฿755 to ฿1,887 at ฿37.74 to the euro)",
+      "th": "n8n Cloud เรียกเก็บรายปี: Starter €20 รัน 2,500 ครั้งต่อเดือน, Pro €50 รัน 10,000 ครั้ง (฿755 ถึง ฿1,887 ที่ ฿37.74 ต่อยูโร)",
+      "my": "n8n Cloud၊ တစ်နှစ်စာ ပေးချေရန် — Starter €20 (တစ်လ 2,500 ကြိမ် run)၊ Pro €50 (10,000 ကြိမ်) (ယူရိုတစ်ယူရိုလျှင် ฿37.74 ဖြင့် ฿755 မှ ฿1,887)",
+      "zh": "n8n Cloud 按年付费：Starter €20，每月可运行 2,500 次；Pro €50，可运行 10,000 次（按 1 欧元 ฿37.74 计，为 ฿755 至 ฿1,887）",
+      "de": "n8n Cloud, jährlich abgerechnet: Starter €20 für 2,500 Durchläufe im Monat, Pro €50 für 10,000 (฿755 bis ฿1,887 bei ฿37.74 je Euro)"
+     },
+     "range": [
+      755,
+      1887
+     ],
+     "when": {
+      "tool": [
+       "n8n"
+      ]
+     },
+     "src": "https://n8n.io/pricing/"
+    },
+    {
+     "n": {
+      "en": "Zapier Professional: US$19.99 billed yearly or US$29.99 billed monthly, from 750 tasks a month (฿675 to ฿1,012 at ฿33.76 to the dollar)",
+      "th": "Zapier Professional: US$19.99 เรียกเก็บรายปี หรือ US$29.99 รายเดือน เริ่มที่ 750 งานต่อเดือน (฿675 ถึง ฿1,012 ที่ ฿33.76 ต่อดอลลาร์)",
+      "my": "Zapier Professional — တစ်နှစ်စာ US$19.99 သို့မဟုတ် တစ်လစာ US$29.99၊ တစ်လ task 750 မှ စတင် (ဒေါ်လာတစ်ဒေါ်လာလျှင် ฿33.76 ဖြင့် ฿675 မှ ฿1,012)",
+      "zh": "Zapier Professional：按年付费 US$19.99，按月付费 US$29.99，每月 750 个任务起（按 1 美元 ฿33.76 计，为 ฿675 至 ฿1,012）",
+      "de": "Zapier Professional: US$19.99 jährlich abgerechnet oder US$29.99 monatlich, ab 750 Tasks im Monat (฿675 bis ฿1,012 bei ฿33.76 je Dollar)"
+     },
+     "range": [
+      675,
+      1012
+     ],
+     "when": {
+      "tool": [
+       "zapier"
+      ]
+     },
+     "src": "https://zapier.com/pricing"
+    },
+    {
+     "n": {
+      "en": "Make Core: US$9 billed yearly or US$10.59 billed monthly, 10,000 credits a month (฿304 to ฿358 at ฿33.76 to the dollar)",
+      "th": "Make Core: US$9 เรียกเก็บรายปี หรือ US$10.59 รายเดือน 10,000 เครดิตต่อเดือน (฿304 ถึง ฿358 ที่ ฿33.76 ต่อดอลลาร์)",
+      "my": "Make Core — တစ်နှစ်စာ US$9 သို့မဟုတ် တစ်လစာ US$10.59၊ တစ်လ credit 10,000 (ဒေါ်လာတစ်ဒေါ်လာလျှင် ฿33.76 ဖြင့် ฿304 မှ ฿358)",
+      "zh": "Make Core：按年付费 US$9，按月付费 US$10.59，每月 10,000 个积分（按 1 美元 ฿33.76 计，为 ฿304 至 ฿358）",
+      "de": "Make Core: US$9 jährlich abgerechnet oder US$10.59 monatlich, 10,000 Credits im Monat (฿304 bis ฿358 bei ฿33.76 je Dollar)"
+     },
+     "range": [
+      304,
+      358
+     ],
+     "when": {
+      "tool": [
+       "make"
+      ]
+     },
+     "src": "https://hongdam.net/studio/notes/automation-cost-per-run/"
+    },
+    {
+     "n": {
+      "en": "A Cloudflare Worker: free up to 100,000 requests a day; the paid plan is US$5 a month (฿0 to ฿169 at ฿33.76 to the dollar)",
+      "th": "Cloudflare Worker: ฟรีถึง 100,000 คำขอต่อวัน แผนที่จ่ายเงิน US$5 ต่อเดือน (฿0 ถึง ฿169 ที่ ฿33.76 ต่อดอลลาร์)",
+      "my": "Cloudflare Worker — တစ်ရက် request 100,000 အထိ အခမဲ့၊ ငွေပေးအစီအစဉ်မှာ တစ်လ US$5 (ဒေါ်လာတစ်ဒေါ်လာလျှင် ฿33.76 ဖြင့် ฿0 မှ ฿169)",
+      "zh": "Cloudflare Worker：每天 100,000 个请求以内免费，付费方案每月 US$5（按 1 美元 ฿33.76 计，为 ฿0 至 ฿169）",
+      "de": "Ein Cloudflare Worker: bis 100,000 Anfragen pro Tag gratis, der bezahlte Plan kostet US$5 im Monat (฿0 bis ฿169 bei ฿33.76 je Dollar)"
+     },
+     "range": [
+      0,
+      169
+     ],
+     "when": {
+      "tool": [
+       "worker"
+      ]
+     },
+     "src": "https://developers.cloudflare.com/workers/platform/pricing/"
+    }
+   ],
+   "flip": true,
+   "total": {
+    "en": "Kept in a month, after the tool's fee",
+    "th": "เงินที่เหลือในหนึ่งเดือน หลังหักค่าเครื่องมือ",
+    "my": "တစ်လအတွင်း ကျန်ရစ်သည့်ငွေ၊ ကိရိယာကြေး နုတ်ပြီးနောက်",
+    "zh": "一个月省下的钱，扣除工具费用后",
+    "de": "Im Monat gespart, nach der Gebühr des Werkzeugs"
+   },
+   "note": {
+    "en": "The sum assumes the automation does the whole task. The tools' own fees are charged at cost, apart from the price below.",
+    "th": "ผลรวมคิดว่าระบบอัตโนมัติทำงานนี้ทั้งหมด ค่าบริการของเครื่องมือคิดตามจริง แยกจากราคาด้านล่าง",
+    "my": "ဤပေါင်းလဒ်သည် အလိုအလျောက်စနစ်က အလုပ်တစ်ခုလုံးကို လုပ်သည်ဟု ယူဆထားသည်။ ကိရိယာများ၏ ကိုယ်ပိုင်ကြေးကို အောက်ပါ စျေးနှုန်းနှင့် သီးခြား ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်။",
+    "zh": "合计假设整项任务都由自动化完成。各工具自己的费用按成本收取，不含在下面的价格内。",
+    "de": "Die Summe geht davon aus, dass die Automatisierung die ganze Aufgabe übernimmt. Die Gebühren der Werkzeuge werden zum Selbstkostenpreis verrechnet, zusätzlich zum Preis unten."
+   },
+   "oursLine": {
+    "en": "One automation built by Hongdam, with an alert when it stops and 30 days of fixes:",
+    "th": "หงส์ดำสร้างระบบอัตโนมัติหนึ่งงาน พร้อมแจ้งเมื่อหยุดและแก้ให้ 30 วัน:",
+    "my": "ဟုန်ဒမ်က အလိုအလျောက်စနစ်တစ်ခုကို တည်ဆောက်ပေးပြီး ရပ်သွားလျှင် သတိပေးကာ ရက် 30 အတွင်း ပြင်ပေးသည်:",
+    "zh": "鸿丹搭建一项自动化，任务停止时有提醒，并提供 30 天修复：",
+    "de": "Eine Automatisierung von Hongdam gebaut, mit Alarm bei einem Stopp und 30 Tagen Fehlerbehebung:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "n8n run on your own server, with no licence key added, is the free Community edition.",
+    "th": "n8n ที่รันบนเซิร์ฟเวอร์ของคุณเองโดยไม่ใส่คีย์ใบอนุญาต คือรุ่น Community ที่ใช้ฟรี",
+    "my": "သင့်ကိုယ်ပိုင် ဆာဗာပေါ်တွင် လိုင်စင်ကီး မထည့်ဘဲ လည်ပတ်စေသော n8n သည် အခမဲ့ Community အဆင့် ဖြစ်သည်။",
+    "zh": "在自己的服务器上运行、且未添加许可证密钥的 n8n，就是免费的 Community 版。",
+    "de": "n8n auf dem eigenen Server, ohne eingetragenen Lizenzschlüssel, ist die kostenlose Community-Edition."
+   },
+   "src": "https://docs.n8n.io/hosting/"
+  },
+  {
+   "t": {
+    "en": "n8n's licence allows use for your own internal business purposes or for non-commercial or personal use. It allows passing the software to others only free of charge and for non-commercial purposes.",
+    "th": "ใบอนุญาตของ n8n อนุญาตให้ใช้เพื่อกิจการภายในของคุณเอง หรือเพื่อการไม่แสวงหากำไรหรือส่วนตัว และอนุญาตให้ส่งต่อซอฟต์แวร์ให้ผู้อื่นเฉพาะแบบไม่คิดเงินและไม่ใช่เชิงพาณิชย์",
+    "my": "n8n ၏ လိုင်စင်သည် ကိုယ့်လုပ်ငန်း၏ အတွင်းပိုင်းအသုံးပြုမှု သို့မဟုတ် စီးပွားရေးမဟုတ်သော၊ ကိုယ်ရေးကိုယ်တာ အသုံးပြုမှုကို ခွင့်ပြုသည်။ ဆော့ဖ်ဝဲကို အခြားသူများသို့ ပေးရာတွင် အခမဲ့နှင့် စီးပွားရေးမဟုတ်သော ရည်ရွယ်ချက်အတွက်သာ ခွင့်ပြုသည်။",
+    "zh": "n8n 的许可证允许用于自己的内部业务，或非商业、个人用途。把软件交给他人，只允许免费且非商业的方式。",
+    "de": "Die Lizenz von n8n erlaubt die Nutzung für die eigenen internen Geschäftszwecke oder für nicht kommerzielle und private Zwecke. Die Weitergabe der Software an andere erlaubt sie nur unentgeltlich und für nicht kommerzielle Zwecke."
+   },
+   "src": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+  },
+  {
+   "t": {
+    "en": "Zapier's Free plan holds 100 tasks a month and only two-step Zaps: one trigger and one action.",
+    "th": "แผนฟรีของ Zapier ให้ 100 งาน (task) ต่อเดือน และเป็น Zap สองขั้นตอนเท่านั้น คือตัวเริ่ม 1 และการกระทำ 1",
+    "my": "Zapier ၏ အခမဲ့အစီအစဉ်တွင် တစ်လ task 100 ရပြီး Zap တစ်ခုတွင် အဆင့်နှစ်ဆင့် (trigger တစ်ခုနှင့် action တစ်ခု) သာ ပါနိုင်သည်။",
+    "zh": "Zapier 免费方案每月 100 个任务（task），只能建两步的 Zap：一个触发器和一个动作。",
+    "de": "Der Gratisplan von Zapier umfasst 100 Tasks im Monat und nur Zaps mit zwei Schritten: ein Auslöser und eine Aktion."
+   },
+   "src": "https://zapier.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Zapier counts one task for each successful action step. Triggers, Filter, Paths, Formatter and Delay steps, and steps that fail, use none.",
+    "th": "Zapier นับ 1 งานต่อขั้นตอนการกระทำที่สำเร็จแต่ละครั้ง ตัวเริ่ม ขั้นตอน Filter, Paths, Formatter, Delay และขั้นตอนที่ล้มเหลวไม่นับ",
+    "my": "Zapier သည် အောင်မြင်သော action အဆင့်တစ်ခုစီအတွက် task တစ်ခု ရေတွက်သည်။ trigger များ၊ Filter၊ Paths၊ Formatter၊ Delay အဆင့်များနှင့် မအောင်မြင်သော အဆင့်များကို မရေတွက်ပါ။",
+    "zh": "Zapier 对每个成功的动作步骤计 1 个任务。触发器、Filter、Paths、Formatter 和 Delay 步骤，以及失败的步骤，都不计。",
+    "de": "Zapier zählt für jeden erfolgreichen Aktionsschritt einen Task. Auslöser, die Schritte Filter, Paths, Formatter und Delay sowie fehlgeschlagene Schritte zählen nicht."
+   },
+   "src": "https://help.zapier.com/hc/en-us/articles/8496196837261-How-is-task-usage-measured-in-Zapier"
+  },
+  {
+   "t": {
+    "en": "Make's Free plan gives 1,000 credits a month and 1 MB of data storage in one data store.",
+    "th": "แผนฟรีของ Make ให้ 1,000 เครดิตต่อเดือน และพื้นที่เก็บข้อมูล 1 MB ใน data store หนึ่งชุด",
+    "my": "Make ၏ အခမဲ့အစီအစဉ်တွင် တစ်လ credit 1,000 နှင့် data store တစ်ခုအတွင်း ဒေတာသိမ်းဆည်းရန် 1 MB ရသည်။",
+    "zh": "Make 免费方案每月提供 1,000 个积分（credit），以及一个数据存储（data store）中的 1 MB 存储空间。",
+    "de": "Der Gratisplan von Make gibt 1,000 Credits im Monat und 1 MB Datenspeicher in einem Data Store."
+   },
+   "src": "https://www.make.com/en/pricing"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Workers Free allows 100,000 requests a day, with 10 ms of CPU time for each request. The paid plan costs US$5 a month and includes 10 million requests a month.",
+    "th": "Cloudflare Workers แผนฟรีให้ 100,000 คำขอต่อวัน และเวลา CPU 10 มิลลิวินาทีต่อคำขอ แผนที่จ่ายเงินราคา US$5 ต่อเดือน รวม 10 ล้านคำขอต่อเดือน",
+    "my": "Cloudflare Workers အခမဲ့အစီအစဉ်တွင် တစ်ရက် request 100,000 ရပြီး request တစ်ခုလျှင် CPU အချိန် 10 မီလီစက္ကန့် ရသည်။ ငွေပေးအစီအစဉ်သည် တစ်လ US$5 ဖြစ်ပြီး တစ်လ request သန်း 10 ပါဝင်သည်။",
+    "zh": "Cloudflare Workers 免费方案每天允许 100,000 个请求，每个请求 10 毫秒 CPU 时间。付费方案每月 US$5，含每月 1,000 万个请求。",
+    "de": "Cloudflare Workers Free erlaubt 100,000 Anfragen pro Tag, mit 10 ms CPU-Zeit je Anfrage. Der bezahlte Plan kostet US$5 im Monat und enthält 10 Millionen Anfragen im Monat."
+   },
+   "src": "https://developers.cloudflare.com/workers/platform/pricing/"
+  },
+  {
+   "t": {
+    "en": "Thai labour law sets ordinary work at no more than 8 hours a day and 48 hours a week (Labour Protection Act, Section 23).",
+    "th": "กฎหมายแรงงานไทยกำหนดเวลาทำงานปกติไม่เกิน 8 ชั่วโมงต่อวันและ 48 ชั่วโมงต่อสัปดาห์ (พ.ร.บ.คุ้มครองแรงงาน มาตรา 23)",
+    "my": "ထိုင်းအလုပ်သမားဥပဒေက ပုံမှန်အလုပ်ချိန်ကို တစ်ရက်လျှင် 8 နာရီနှင့် တစ်ပတ်လျှင် 48 နာရီထက် မပိုစေရဟု သတ်မှတ်သည် (အလုပ်သမားကာကွယ်ရေးဥပဒေ ပုဒ်မ 23)။",
+    "zh": "泰国劳动法规定，正常工作时间每天不超过 8 小时、每周不超过 48 小时（《劳工保护法》第 23 条）。",
+    "de": "Das thailändische Arbeitsrecht begrenzt die normale Arbeitszeit auf 8 Stunden pro Tag und 48 Stunden pro Woche (Labour Protection Act, Section 23)."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork listing: automation and AI built around a business's workflow",
+    "th": "บริการบน Fastwork: ระบบ automation และ AI ตามขั้นตอนงานของธุรกิจ",
+    "my": "Fastwork ဝန်ဆောင်မှု — လုပ်ငန်း၏ လုပ်ငန်းစဉ်နှင့် ကိုက်ညီသော automation နှင့် AI",
+    "zh": "Fastwork 上的服务：按企业工作流程搭建的自动化与 AI",
+    "de": "Angebot auf Fastwork: Automatisierung und KI, passend zum Arbeitsablauf eines Betriebs"
+   },
+   "p": {
+    "en": "฿7,500 for 5 days; fixes for 14 days after delivery; sold 86 times",
+    "th": "฿7,500 ทำงาน 5 วัน แก้ไขให้ 14 วันหลังส่งมอบ ขายได้ 86 ครั้ง",
+    "my": "฿7,500၊ 5 ရက်၊ ပို့ပြီး ရက် 14 အတွင်း ပြင်ပေးသည်၊ ရောင်းရပြီး 86 ကြိမ်",
+    "zh": "฿7,500，工期 5 天，交付后 14 天内修复，已售 86 次",
+    "de": "฿7,500 für 5 Tage; Fehlerbehebung 14 Tage nach der Lieferung; 86-mal verkauft"
+   },
+   "src": "https://fastwork.co/user/box_automation/ai-automation-12079856"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: workflow automation with AI, in three packages",
+    "th": "บริการบน Fastwork: วางระบบ workflow automation ด้วย AI มี 3 แพ็กเกจ",
+    "my": "Fastwork ဝန်ဆောင်မှု — AI ဖြင့် workflow automation စနစ်ချခြင်း၊ အထုပ် 3 မျိုး",
+    "zh": "Fastwork 上的服务：用 AI 搭建工作流自动化，分三档",
+    "de": "Angebot auf Fastwork: Workflow-Automatisierung mit KI, in drei Paketen"
+   },
+   "p": {
+    "en": "Starter ฿9,500 for 5 days with 7 days of care; Max ฿49,000 for 21 days with 30 days of care; sold 14 times",
+    "th": "Starter ฿9,500 ทำงาน 5 วัน ดูแลหลังติดตั้ง 7 วัน; Max ฿49,000 ทำงาน 21 วัน ดูแล 30 วัน; ขายได้ 14 ครั้ง",
+    "my": "Starter ฿9,500၊ 5 ရက်၊ တပ်ဆင်ပြီး ရက် 7 အတွင်း စောင့်ရှောက်မှု; Max ฿49,000၊ 21 ရက်၊ ရက် 30 စောင့်ရှောက်မှု; ရောင်းရပြီး 14 ကြိမ်",
+    "zh": "Starter ฿9,500，工期 5 天，安装后维护 7 天；Max ฿49,000，工期 21 天，维护 30 天；已售 14 次",
+    "de": "Starter ฿9,500 für 5 Tage mit 7 Tagen Betreuung; Max ฿49,000 für 21 Tage mit 30 Tagen Betreuung; 14-mal verkauft"
+   },
+   "src": "https://fastwork.co/user/sarunjade/ai-automation-44921584"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: AI workflow automation with n8n",
+    "th": "บริการบน Fastwork: AI Workflow Automation ด้วย n8n",
+    "my": "Fastwork ဝန်ဆောင်မှု — n8n ဖြင့် AI workflow automation",
+    "zh": "Fastwork 上的服务：用 n8n 搭建 AI 工作流自动化",
+    "de": "Angebot auf Fastwork: KI-Workflow-Automatisierung mit n8n"
+   },
+   "p": {
+    "en": "฿1,000 for 3 days: one automation joining 2 to 3 systems, up to 3 revisions; sold 14 times",
+    "th": "฿1,000 ทำงาน 3 วัน: automation หนึ่งงานเชื่อม 2 ถึง 3 ระบบ แก้ไขได้ไม่เกิน 3 ครั้ง ขายได้ 14 ครั้ง",
+    "my": "฿1,000၊ 3 ရက်၊ စနစ် 2 မှ 3 ခု ချိတ်ဆက်သည့် automation တစ်ခု၊ ပြင်ဆင်မှု 3 ကြိမ်အထိ; ရောင်းရပြီး 14 ကြိမ်",
+    "zh": "฿1,000，工期 3 天：一项连接 2 至 3 个系统的自动化，最多修改 3 次；已售 14 次",
+    "de": "฿1,000 für 3 Tage: eine Automatisierung, die 2 bis 3 Systeme verbindet, bis zu 3 Überarbeitungen; 14-mal verkauft"
+   },
+   "src": "https://fastwork.co/user/gotzastory/ai-automation-35068461"
+  },
+  {
+   "t": {
+    "en": "n8n Cloud, the tool's own fee",
+    "th": "n8n Cloud ค่าบริการของเครื่องมือเอง",
+    "my": "n8n Cloud၊ ကိရိယာ၏ ကိုယ်ပိုင်ကြေး",
+    "zh": "n8n Cloud，工具自己的费用",
+    "de": "n8n Cloud, die Gebühr des Werkzeugs"
+   },
+   "p": {
+    "en": "€20 (Starter, 2,500 runs a month) to €50 (Pro, 10,000), billed yearly",
+    "th": "€20 (Starter รัน 2,500 ครั้งต่อเดือน) ถึง €50 (Pro รัน 10,000 ครั้ง) เรียกเก็บรายปี",
+    "my": "€20 (Starter၊ တစ်လ 2,500 ကြိမ် run) မှ €50 (Pro၊ 10,000 ကြိမ်) အထိ၊ တစ်နှစ်စာ ပေးချေရသည်",
+    "zh": "€20（Starter，每月可运行 2,500 次）至 €50（Pro，10,000 次），按年付费",
+    "de": "€20 (Starter, 2,500 Durchläufe im Monat) bis €50 (Pro, 10,000), jährlich abgerechnet"
+   },
+   "src": "https://n8n.io/pricing/"
+  },
+  {
+   "t": {
+    "en": "Zapier Professional, the tool's own fee",
+    "th": "Zapier Professional ค่าบริการของเครื่องมือเอง",
+    "my": "Zapier Professional၊ ကိရိယာ၏ ကိုယ်ပိုင်ကြေး",
+    "zh": "Zapier Professional，工具自己的费用",
+    "de": "Zapier Professional, die Gebühr des Werkzeugs"
+   },
+   "p": {
+    "en": "US$19.99 a month billed yearly, US$29.99 billed monthly; from 750 tasks",
+    "th": "US$19.99 ต่อเดือน เรียกเก็บรายปี หรือ US$29.99 รายเดือน เริ่มที่ 750 งาน",
+    "my": "တစ်နှစ်စာ ပေးချေလျှင် တစ်လ US$19.99၊ တစ်လစီ ပေးလျှင် US$29.99; task 750 မှ စတင်",
+    "zh": "按年付费每月 US$19.99，按月付费 US$29.99；每月 750 个任务起",
+    "de": "US$19.99 im Monat bei Jahresabrechnung, US$29.99 bei Monatsabrechnung; ab 750 Tasks"
+   },
+   "src": "https://zapier.com/pricing"
+  },
+  {
+   "t": {
+    "en": "A Cloudflare Worker, the tool's own fee",
+    "th": "Cloudflare Worker ค่าบริการของเครื่องมือเอง",
+    "my": "Cloudflare Worker၊ ကိရိယာ၏ ကိုယ်ပိုင်ကြေး",
+    "zh": "Cloudflare Worker，工具自己的费用",
+    "de": "Ein Cloudflare Worker, die Gebühr des Werkzeugs"
+   },
+   "p": {
+    "en": "Free up to 100,000 requests a day; US$5 a month on the paid plan",
+    "th": "ฟรีถึง 100,000 คำขอต่อวัน แผนที่จ่ายเงิน US$5 ต่อเดือน",
+    "my": "တစ်ရက် request 100,000 အထိ အခမဲ့; ငွေပေးအစီအစဉ်တွင် တစ်လ US$5",
+    "zh": "每天 100,000 个请求以内免费；付费方案每月 US$5",
+    "de": "Gratis bis 100,000 Anfragen pro Tag; US$5 im Monat im bezahlten Plan"
+   },
+   "src": "https://developers.cloudflare.com/workers/platform/pricing/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Is n8n automation free or paid?",
+    "th": "n8n automation ฟรีหรือเสียเงิน",
+    "my": "n8n automation သည် အခမဲ့လား၊ ငွေပေးရလား",
+    "zh": "n8n 自动化是免费的还是付费的？",
+    "de": "Ist n8n-Automatisierung kostenlos oder kostenpflichtig?"
+   },
+   "a": {
+    "en": "n8n Cloud, the hosted version, is paid. Starter is €20 a month billed yearly, with 2,500 runs a month, and Pro is €50 with 10,000. A trial allows 1,000 runs. A standard self-hosted version is also on GitHub.",
+    "th": "n8n Cloud ซึ่งเป็นรุ่นที่โฮสต์ให้ ต้องเสียเงิน แผน Starter €20 ต่อเดือน เรียกเก็บรายปี รันได้ 2,500 ครั้งต่อเดือน ส่วน Pro €50 รันได้ 10,000 ครั้ง ช่วงทดลองใช้รันได้ 1,000 ครั้ง และมีรุ่นติดตั้งเองบน GitHub ด้วย",
+    "my": "n8n Cloud သည် ဆာဗာဘက်မှ ကိုင်တွယ်ပေးသော ဗားရှင်းဖြစ်ပြီး ငွေပေးရသည်။ Starter သည် တစ်နှစ်စာ ပေးချေလျှင် တစ်လ €20 ဖြစ်ပြီး တစ်လ 2,500 ကြိမ် run နိုင်သည်။ Pro သည် €50 ဖြစ်ပြီး 10,000 ကြိမ် run နိုင်သည်။ စမ်းသုံးကာလတွင် 1,000 ကြိမ် run နိုင်သည်။ ကိုယ်တိုင်တပ်ဆင်သုံးနိုင်သော စံဗားရှင်းကိုလည်း GitHub တွင် ရနိုင်သည်။",
+    "zh": "托管版的 n8n Cloud 是收费的。Starter 方案按年付费，每月 €20，每月可运行 2,500 次；Pro 方案 €50，可运行 10,000 次。试用期可运行 1,000 次。标准的自托管版本也可在 GitHub 上获取。",
+    "de": "n8n Cloud, die gehostete Version, kostet Geld. Starter kostet €20 im Monat bei Jahresabrechnung und erlaubt 2,500 Durchläufe im Monat, Pro kostet €50 und erlaubt 10,000. Die Testphase erlaubt 1,000 Durchläufe. Eine Standardversion zum Selbsthosten gibt es ausserdem auf GitHub."
+   },
+   "src": "https://n8n.io/pricing/"
+  },
+  {
+   "q": {
+    "en": "Is Zapier automation free?",
+    "th": "Zapier automation ใช้ฟรีได้ไหม",
+    "my": "Zapier automation ကို အခမဲ့သုံးနိုင်သလား",
+    "zh": "Zapier 自动化可以免费用吗？",
+    "de": "Ist Zapier-Automatisierung kostenlos?"
+   },
+   "a": {
+    "en": "Partly. The Free plan stops at 100 tasks a month and two-step Zaps. Professional costs US$19.99 a month billed yearly, or US$29.99 billed monthly, from 750 tasks.",
+    "th": "ใช้ฟรีได้บางส่วน แผนฟรีจำกัดที่ 100 งานต่อเดือน และ Zap สองขั้นตอน แผน Professional ราคา US$19.99 ต่อเดือน เรียกเก็บรายปี หรือ US$29.99 รายเดือน เริ่มที่ 750 งาน",
+    "my": "တစ်စိတ်တစ်ပိုင်း ဖြစ်သည်။ အခမဲ့အစီအစဉ်သည် တစ်လ task 100 နှင့် အဆင့်နှစ်ဆင့်ပါ Zap များအထိသာ ဖြစ်သည်။ Professional သည် တစ်နှစ်စာ ပေးချေလျှင် တစ်လ US$19.99၊ တစ်လစီ ပေးလျှင် US$29.99 ဖြစ်ပြီး task 750 မှ စတင်သည်။",
+    "zh": "部分可以。免费方案限于每月 100 个任务和两步的 Zap。Professional 方案按年付费每月 US$19.99，按月付费 US$29.99，每月 750 个任务起。",
+    "de": "Teilweise. Der Gratisplan endet bei 100 Tasks im Monat und Zaps mit zwei Schritten. Professional kostet US$19.99 im Monat bei Jahresabrechnung oder US$29.99 bei Monatsabrechnung, ab 750 Tasks."
+   },
+   "src": "https://zapier.com/pricing"
+  },
+  {
+   "q": {
+    "en": "How do Zapier, Make, n8n and Cloudflare count what you use?",
+    "th": "Zapier, Make, n8n และ Cloudflare นับการใช้งานอย่างไร",
+    "my": "Zapier၊ Make၊ n8n နှင့် Cloudflare တို့က သုံးစွဲမှုကို ဘယ်လို ရေတွက်သလဲ",
+    "zh": "Zapier、Make、n8n 和 Cloudflare 怎样计算用量？",
+    "de": "Wie zählen Zapier, Make, n8n und Cloudflare Ihre Nutzung?"
+   },
+   "a": {
+    "en": "Zapier counts a task for each successful action. Make counts a credit for each module action. n8n counts one execution, one run of the whole workflow, whatever the number of steps. A Cloudflare Worker counts one request.",
+    "th": "Zapier นับ 1 งานต่อการกระทำที่สำเร็จ Make นับ 1 เครดิตต่อการทำงานของโมดูล n8n นับ 1 execution คือการรันเวิร์กโฟลว์ทั้งชุดหนึ่งรอบ ไม่ว่ากี่ขั้นตอน ส่วน Cloudflare Worker นับ 1 คำขอ",
+    "my": "Zapier သည် အောင်မြင်သော action တစ်ခုစီအတွက် task တစ်ခု ရေတွက်သည်။ Make သည် module action တစ်ခုစီအတွက် credit တစ်ခု ရေတွက်သည်။ n8n သည် အဆင့်ဘယ်လောက်ပါပါ workflow တစ်ခုလုံး တစ်ကြိမ် run ခြင်းကို execution တစ်ခုအဖြစ် ရေတွက်သည်။ Cloudflare Worker သည် request တစ်ခုအဖြစ် ရေတွက်သည်။",
+    "zh": "Zapier 对每个成功的动作计 1 个任务；Make 对每个模块动作计 1 个积分；n8n 把整个工作流运行一次计为 1 次执行，不管有几个步骤；Cloudflare Worker 则按 1 个请求计。",
+    "de": "Zapier zählt einen Task pro erfolgreicher Aktion. Make zählt einen Credit pro Modulaktion. n8n zählt eine Ausführung, also einen Durchlauf des ganzen Workflows, unabhängig von der Zahl der Schritte. Ein Cloudflare Worker zählt eine Anfrage."
+   },
+   "src": "https://hongdam.net/studio/notes/automation-cost-per-run/"
+  },
+  {
+   "q": {
+    "en": "How much does an automation cost to run each month?",
+    "th": "ระบบอัตโนมัติมีค่าใช้จ่ายในการรันเดือนละเท่าไหร่",
+    "my": "အလိုအလျောက်စနစ်တစ်ခု လည်ပတ်ရန် တစ်လ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "一项自动化每月运行要花多少钱？",
+    "de": "Was kostet der Betrieb einer Automatisierung im Monat?"
+   },
+   "a": {
+    "en": "A Hongdam Studio note prices one five-step order workflow, with prices read on 24 October 2026. At 300 runs a month: Zapier US$58.50, Make US$10.59, n8n Cloud €24. At 30,000 runs: Zapier US$1,149, Make US$116.47, n8n Cloud €144. A Cloudflare Worker is US$0 on the Free plan or US$5 on the paid plan at either volume.",
+    "th": "บันทึกของ หงส์ดำ Studio คิดราคาเวิร์กโฟลว์รับออเดอร์ 5 ขั้นตอนหนึ่งชุด โดยอ่านราคาเมื่อ 24 ตุลาคม 2569 ที่ 300 รอบต่อเดือน: Zapier US$58.50, Make US$10.59, n8n Cloud €24 ที่ 30,000 รอบ: Zapier US$1,149, Make US$116.47, n8n Cloud €144 ส่วน Cloudflare Worker ราคา US$0 ในแผนฟรี หรือ US$5 ในแผนที่จ่ายเงิน ทั้งสองปริมาณ",
+    "my": "ဟုန်ဒမ် Studio ၏ မှတ်စုတစ်ခုသည် အဆင့်ငါးဆင့်ပါ အော်ဒါလုပ်ငန်းစဉ်တစ်ခုကို စျေးနှုန်းတွက်ထားပြီး စျေးနှုန်းများကို 2026 ခုနှစ် အောက်တိုဘာ 24 ရက်တွင် ဖတ်ထားသည်။ တစ်လ 300 ကြိမ်တွင် Zapier US$58.50၊ Make US$10.59၊ n8n Cloud €24။ 30,000 ကြိမ်တွင် Zapier US$1,149၊ Make US$116.47၊ n8n Cloud €144။ Cloudflare Worker သည် နှစ်မျိုးလုံးတွင် အခမဲ့အစီအစဉ်၌ US$0၊ ငွေပေးအစီအစဉ်၌ US$5 ဖြစ်သည်။",
+    "zh": "鸿丹 Studio 的一篇笔记为一个五步的订单工作流定价，价格读取于 2026 年 10 月 24 日。每月 300 次运行：Zapier US$58.50，Make US$10.59，n8n Cloud €24。每月 30,000 次：Zapier US$1,149，Make US$116.47，n8n Cloud €144。Cloudflare Worker 在两种用量下，免费方案为 US$0，付费方案为 US$5。",
+    "de": "Eine Notiz von Hongdam Studio rechnet einen Bestell-Workflow mit fünf Schritten durch, mit Preisen vom 24. Oktober 2026. Bei 300 Durchläufen im Monat: Zapier US$58.50, Make US$10.59, n8n Cloud €24. Bei 30,000 Durchläufen: Zapier US$1,149, Make US$116.47, n8n Cloud €144. Ein Cloudflare Worker kostet bei beiden Mengen US$0 im Gratisplan oder US$5 im bezahlten Plan."
+   },
+   "src": "https://hongdam.net/studio/notes/automation-cost-per-run/"
+  },
+  {
+   "q": {
+    "en": "What does an AI step in an automation cost?",
+    "th": "ขั้นตอน AI ในระบบอัตโนมัติมีค่าใช้จ่ายเท่าไหร่",
+    "my": "အလိုအလျောက်စနစ်ထဲက AI အဆင့်တစ်ခု ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "自动化里加一个 AI 步骤要花多少？",
+    "de": "Was kostet ein KI-Schritt in einer Automatisierung?"
+   },
+   "a": {
+    "en": "The model charges by the token, a small piece of text, and prices are set per million tokens. Claude Haiku 5.5 costs US$0.10 per million input tokens and US$0.50 per million output tokens for prompts up to 100,000 tokens. Claude Sonnet 5.5 costs US$2 and US$10.",
+    "th": "โมเดลคิดเงินตามโทเค็น ซึ่งเป็นข้อความชิ้นเล็ก ๆ และตั้งราคาต่อโทเค็นหนึ่งล้านหน่วย Claude Haiku 5.5 ราคา US$0.10 ต่อโทเค็นอินพุตหนึ่งล้าน และ US$0.50 ต่อโทเค็นเอาต์พุตหนึ่งล้าน สำหรับพรอมต์ไม่เกิน 100,000 โทเค็น Claude Sonnet 5.5 ราคา US$2 และ US$10",
+    "my": "မော်ဒယ်သည် token (စာသားအပိုင်းအစငယ်) အလိုက် ကောက်ခံပြီး token တစ်သန်းလျှင် စျေးသတ်မှတ်သည်။ Claude Haiku 5.5 သည် prompt token 100,000 အထိအတွက် input token တစ်သန်းလျှင် US$0.10၊ output token တစ်သန်းလျှင် US$0.50 ဖြစ်သည်။ Claude Sonnet 5.5 သည် US$2 နှင့် US$10 ဖြစ်သည်။",
+    "zh": "模型按 token（很短的一段文字）计费，价格按每百万 token 标注。对于不超过 100,000 token 的提示，Claude Haiku 5.5 的输入为每百万 token US$0.10，输出为每百万 token US$0.50。Claude Sonnet 5.5 分别为 US$2 和 US$10。",
+    "de": "Das Modell rechnet nach Token ab, kleinen Textstücken, und die Preise gelten pro Million Token. Claude Haiku 5.5 kostet US$0.10 pro Million Eingabe-Token und US$0.50 pro Million Ausgabe-Token bei Prompts bis 100,000 Token. Claude Sonnet 5.5 kostet US$2 und US$10."
+   },
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  {
+   "q": {
+    "en": "What do Thai freelancers charge for automation work?",
+    "th": "ฟรีแลนซ์ไทยรับทำ automation ราคาเท่าไหร่",
+    "my": "ထိုင်းဖရီးလန်းဆာများ automation အလုပ်အတွက် ဘယ်လောက်ယူသလဲ",
+    "zh": "泰国自由职业者做自动化收多少钱？",
+    "de": "Was verlangen Freelancer in Thailand für Automatisierungsarbeit?"
+   },
+   "a": {
+    "en": "On Fastwork, one listing for automation and AI built around a business's workflow costs ฿7,500 for 5 days of work and has sold 86 times. It includes a design for the business, a user guide and fixes for 14 days after delivery.",
+    "th": "บน Fastwork บริการทำ automation และ AI ตามขั้นตอนงานของธุรกิจรายการหนึ่งราคา ฿7,500 ทำงาน 5 วัน และขายได้ 86 ครั้ง แพ็กเกจมีการออกแบบเฉพาะธุรกิจ คู่มือการใช้งาน และแก้ไขให้ 14 วันหลังส่งมอบ",
+    "my": "Fastwork ပေါ်တွင် လုပ်ငန်း၏ လုပ်ငန်းစဉ်အတိုင်း automation နှင့် AI ပြုလုပ်ပေးသည့် ဝန်ဆောင်မှုတစ်ခုသည် လုပ်ငန်းကာလ 5 ရက်အတွက် ฿7,500 ဖြစ်ပြီး 86 ကြိမ် ရောင်းရပြီးဖြစ်သည်။ လုပ်ငန်းအတွက် ဒီဇိုင်း၊ အသုံးပြုနည်းလက်စွဲနှင့် ပို့ပြီး ရက် 14 အတွင်း ပြင်ပေးမှု ပါဝင်သည်။",
+    "zh": "在 Fastwork 上，一项按企业工作流程搭建自动化与 AI 的服务收费 ฿7,500，工期 5 天，已售 86 次。内容包括针对该企业的设计、使用手册，以及交付后 14 天内的问题修复。",
+    "de": "Auf Fastwork kostet ein Angebot für Automatisierung und KI, passend zum Arbeitsablauf eines Betriebs, ฿7,500 für 5 Tage Arbeit und wurde 86-mal verkauft. Es enthält einen Entwurf für den Betrieb, eine Anleitung und Fehlerbehebung während 14 Tagen nach der Lieferung."
+   },
+   "src": "https://fastwork.co/user/box_automation/ai-automation-12079856"
+  },
+  {
+   "q": {
+    "en": "What does an assistant in the Philippines cost an hour?",
+    "th": "ผู้ช่วยในฟิลิปปินส์ชั่วโมงละเท่าไหร่",
+    "my": "ဖိလစ်ပိုင်ရှိ လက်ထောက်တစ်ဦး တစ်နာရီ ဘယ်လောက်လဲ",
+    "zh": "菲律宾的助理每小时多少钱？",
+    "de": "Was kostet eine Assistenz auf den Philippinen pro Stunde?"
+   },
+   "a": {
+    "en": "OnlineJobs.ph's guide to virtual assistant pay in the Philippines gives local rates of US$3 to US$5 an hour for beginners, US$6 to US$9 for intermediate and US$10 to US$12 for experts. It says the figures leave out banking and exchange fees.",
+    "th": "คู่มือค่าตอบแทนผู้ช่วยเสมือนในฟิลิปปินส์ของ OnlineJobs.ph ระบุอัตราในท้องถิ่น มือใหม่ US$3 ถึง US$5 ต่อชั่วโมง ระดับกลาง US$6 ถึง US$9 และผู้เชี่ยวชาญ US$10 ถึง US$12 โดยตัวเลขไม่รวมค่าธรรมเนียมธนาคารและค่าแลกเปลี่ยน",
+    "my": "OnlineJobs.ph ၏ ဖိလစ်ပိုင်ရှိ virtual assistant လစာလမ်းညွှန်တွင် ဒေသတွင်း နှုန်းထားအဖြစ် အစပျိုးသူ တစ်နာရီ US$3 မှ US$5၊ အလယ်အလတ် US$6 မှ US$9၊ ကျွမ်းကျင်သူ US$10 မှ US$12 ဟု ဖော်ပြထားသည်။ ဤကိန်းဂဏန်းများတွင် ဘဏ်ကြေးနှင့် ငွေလဲလှယ်ကြေး မပါဝင်ဟု ဆိုသည်။",
+    "zh": "OnlineJobs.ph 的菲律宾虚拟助理薪资指南列出当地费率：新手每小时 US$3 至 US$5，中级 US$6 至 US$9，专家 US$10 至 US$12。指南称这些数字不含银行费用和汇兑费用。",
+    "de": "Der Leitfaden von OnlineJobs.ph zu den Löhnen virtueller Assistenzen auf den Philippinen nennt lokale Sätze von US$3 bis US$5 pro Stunde für Einsteiger, US$6 bis US$9 für Fortgeschrittene und US$10 bis US$12 für Profis. Er hält fest, dass die Zahlen Bank- und Wechselgebühren nicht enthalten."
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  },
+  {
+   "q": {
+    "en": "What is the minimum wage in Chiang Rai?",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายเท่าไร",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခ ဘယ်လောက်လဲ။",
+    "zh": "清莱的最低工资是多少？",
+    "de": "Wie hoch ist der Mindestlohn in Chiang Rai?"
+   },
+   "a": {
+    "en": "The minimum wage in Chiang Rai is ฿352 a day, in force from 1 July 2025. Rates across Thailand run from ฿337 to ฿400.",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายคือ ฿352 ต่อวัน มีผลตั้งแต่ 1 กรกฎาคม 2568 ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခသည် တစ်ရက်လျှင် ฿352 ဖြစ်ပြီး 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှ စတင်သက်ရောက်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိ ရှိသည်။",
+    "zh": "清莱的最低工资是每天 ฿352，自 2025 年 7 月 1 日起实行。泰国各府的标准从 ฿337 到 ฿400 不等。",
+    "de": "Der Mindestlohn in Chiang Rai beträgt ฿352 pro Tag, gültig seit dem 1. Juli 2025. In Thailand liegen die Sätze zwischen ฿337 und ฿400."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  }
+ ],
+ "related": [
+  "price-watch",
+  "data-crawl",
+  "ai-assistant",
+  "ai-line",
+  "ai-batch",
+  "bots"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Hongdam Studio note: one workflow at 30,000 runs a month, tool by tool",
+    "th": "บันทึกของ หงส์ดำ Studio: เวิร์กโฟลว์เดียว 30,000 รอบต่อเดือน เทียบทีละเครื่องมือ",
+    "my": "ဟုန်ဒမ် Studio မှတ်စု — တစ်လ run 30,000 ဖြင့် workflow တစ်ခု၊ ကိရိယာအလိုက်",
+    "zh": "鸿丹 Studio 笔记：一个工作流每月运行 30,000 次，逐个工具对比",
+    "de": "Notiz von Hongdam Studio: ein Workflow bei 30,000 Durchläufen im Monat, Werkzeug für Werkzeug"
+   },
+   "href": "https://hongdam.net/studio/notes/automation-cost-per-run/"
+  },
+  {
+   "t": {
+    "en": "n8n: plans and pricing",
+    "th": "n8n: แผนและราคา",
+    "my": "n8n — အစီအစဉ်များနှင့် စျေးနှုန်းများ",
+    "zh": "n8n：方案与价格",
+    "de": "n8n: Pläne und Preise"
+   },
+   "href": "https://n8n.io/pricing/"
+  },
+  {
+   "t": {
+    "en": "Zapier: plans and pricing",
+    "th": "Zapier: แผนและราคา",
+    "my": "Zapier — အစီအစဉ်များနှင့် စျေးနှုန်းများ",
+    "zh": "Zapier：方案与价格",
+    "de": "Zapier: Pläne und Preise"
+   },
+   "href": "https://zapier.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Workers: pricing page",
+    "th": "Cloudflare Workers: หน้าราคา",
+    "my": "Cloudflare Workers — စျေးနှုန်းစာမျက်နှာ",
+    "zh": "Cloudflare Workers：价格页面",
+    "de": "Cloudflare Workers: Preisseite"
+   },
+   "href": "https://developers.cloudflare.com/workers/platform/pricing/"
+  }
+ ],
+ "glyphs": [
+  "gears",
+  "refresh",
+  "clock"
+ ]
+}

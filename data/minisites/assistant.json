@@ -1,0 +1,309 @@
+{
+ "id": "assistant",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People who live or run a business in Thailand need a Thai and English speaker to make calls, place orders, pick things up and handle paperwork.",
+  "th": "คนที่อยู่หรือทำธุรกิจในไทยต้องการผู้ช่วยพูดไทยและอังกฤษ เพื่อโทร สั่งของ รับของ และทำงานเอกสาร",
+  "my": "ထိုင်းတွင် နေထိုင်သူ သို့မဟုတ် စီးပွားရေးလုပ်သူများက ဖုန်းခေါ်ရန်၊ မှာယူရန်၊ ပစ္စည်းသွားယူရန်နှင့် စာရွက်စာတမ်းလုပ်ရန် ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာ ပြောတတ်သူကို လိုအပ်သည်။",
+  "zh": "在泰国生活或做生意的人，需要一位会说泰语和英语的人帮忙打电话、订货、取东西和办文书。",
+  "de": "Wer in Thailand lebt oder ein Geschäft führt, braucht jemanden, der Thai und Englisch spricht und Anrufe, Bestellungen, Abholungen und Papierkram übernimmt."
+ },
+ "n": {
+  "de": "Ihre Assistenz in Thailand"
+ },
+ "l": {
+  "de": "Eine Person, die Thai und Englisch spricht, im Monat gebucht."
+ },
+ "glyphs": [
+  "telephone",
+  "parcel",
+  "page"
+ ],
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "You list the tasks: calls, orders, pick-ups and paperwork.",
+    "th": "คุณแจ้งงานที่ต้องการ เช่น โทร สั่งของ รับของ และงานเอกสาร",
+    "my": "သင်က လုပ်စေလိုသော အလုပ်များကို ပြောပြသည် - ဖုန်းခေါ်ခြင်း၊ မှာယူခြင်း၊ ပစ္စည်းသွားယူခြင်းနှင့် စာရွက်စာတမ်းလုပ်ခြင်း။",
+    "zh": "您列出要办的事：打电话、订货、取东西和办文书。",
+    "de": "Sie nennen die Aufgaben: Anrufe, Bestellungen, Abholungen und Papierkram."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "A Thai and English speaker does them, 10 or 20 hours a week.",
+    "th": "ผู้ช่วยพูดไทยและอังกฤษทำงานให้ สัปดาห์ละ 10 หรือ 20 ชั่วโมง",
+    "my": "ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာ ပြောတတ်သူက တစ်ပတ်လျှင် 10 နာရီ သို့မဟုတ် 20 နာရီ လုပ်ဆောင်ပေးသည်။",
+    "zh": "一位会说泰语和英语的人来办，每周 10 或 20 小时。",
+    "de": "Eine Person, die Thai und Englisch spricht, erledigt sie, 10 oder 20 Stunden pro Woche."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "About 40 or 80 hours a month",
+    "th": "ประมาณ 40 หรือ 80 ชั่วโมงต่อเดือน",
+    "my": "တစ်လလျှင် 40 သို့မဟုတ် 80 နာရီခန့်",
+    "zh": "每月约 40 或 80 小时",
+    "de": "Etwa 40 oder 80 Stunden im Monat"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "Our operations lead reviews the work.",
+    "th": "หัวหน้าฝ่ายปฏิบัติการตรวจงาน",
+    "my": "ကျွန်ုပ်တို့၏ လုပ်ငန်းလည်ပတ်မှုအကြီးအကဲက အလုပ်ကို စစ်ဆေးသည်။",
+    "zh": "运营负责人审阅工作成果。",
+    "de": "Unser Betriebsleiter prüft die Arbeit."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly plan",
+    "th": "แพ็กเกจรายเดือน",
+    "my": "လစဉ်ပက်ကေ့ချ်",
+    "zh": "按月套餐",
+    "de": "Monatspaket"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The minimum wage in Chiang Rai is ฿352 a day, in force from 1 July 2025. Rates across Thailand run from ฿337 to ฿400.",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายคือ ฿352 ต่อวัน มีผลตั้งแต่ 1 กรกฎาคม 2568 ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခသည် တစ်ရက်လျှင် ฿352 ဖြစ်ပြီး 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှ စတင်သက်ရောက်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိ ရှိသည်။",
+    "zh": "清莱的最低工资是每天 ฿352，自 2025 年 7 月 1 日起实行。泰国各府的标准从 ฿337 到 ฿400 不等。",
+    "de": "Der Mindestlohn in Chiang Rai beträgt ฿352 pro Tag, gültig seit dem 1. Juli 2025. In Thailand liegen die Sätze zwischen ฿337 und ฿400."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "t": {
+    "en": "Thai labour law sets ordinary work at no more than 8 hours a day and 48 hours a week (Labour Protection Act, Section 23).",
+    "th": "กฎหมายแรงงานไทยกำหนดเวลาทำงานปกติไม่เกิน 8 ชั่วโมงต่อวันและ 48 ชั่วโมงต่อสัปดาห์ (พ.ร.บ.คุ้มครองแรงงาน มาตรา 23)",
+    "my": "ထိုင်းအလုပ်သမားဥပဒေက ပုံမှန်အလုပ်ချိန်ကို တစ်ရက်လျှင် 8 နာရီနှင့် တစ်ပတ်လျှင် 48 နာရီထက် မပိုစေရဟု သတ်မှတ်သည် (အလုပ်သမားကာကွယ်ရေးဥပဒေ ပုဒ်မ 23)။",
+    "zh": "泰国劳动法规定，正常工作时间每天不超过 8 小时、每周不超过 48 小时（《劳工保护法》第 23 条）。",
+    "de": "Das thailändische Arbeitsrecht begrenzt die normale Arbeitszeit auf 8 Stunden pro Tag und 48 Stunden pro Woche (Labour Protection Act, Section 23)."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "Overtime on a working day pays at least 1.5 times the hourly wage (Labour Protection Act, Section 61).",
+    "th": "ค่าล่วงเวลาในวันทำงานจ่ายไม่น้อยกว่า 1.5 เท่าของอัตราค่าจ้างต่อชั่วโมง (พ.ร.บ.คุ้มครองแรงงาน มาตรา 61)",
+    "my": "အလုပ်ရက်တွင် အချိန်ပိုလုပ်ခသည် တစ်နာရီလုပ်ခ၏ 1.5 ဆထက် မနည်းစေရ (အလုပ်သမားကာကွယ်ရေးဥပဒေ ပုဒ်မ 61)။",
+    "zh": "工作日加班费不低于小时工资的 1.5 倍（《劳工保护法》第 61 条）。",
+    "de": "Überstunden an einem Arbeitstag werden mit mindestens dem 1,5-Fachen des Stundenlohns bezahlt (Labour Protection Act, Section 61)."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "Under the Personal Data Protection Act (Section 40), a firm that handles personal data for a business acts on that business's instructions. The business prepares an agreement that controls what the firm does.",
+    "th": "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (มาตรา 40) ผู้ประมวลผลข้อมูลส่วนบุคคลให้ธุรกิจต้องทำตามคำสั่งของธุรกิจนั้น และธุรกิจต้องจัดทำข้อตกลงที่ควบคุมการดำเนินการของผู้ประมวลผล",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (ပုဒ်မ 40) အရ လုပ်ငန်းတစ်ခုအတွက် ကိုယ်ရေးအချက်အလက်ကို ကိုင်တွယ်သော ကုမ္ပဏီသည် ထိုလုပ်ငန်း၏ ညွှန်ကြားချက်အတိုင်း ဆောင်ရွက်ရသည်။ ထိုကုမ္ပဏီ၏ လုပ်ဆောင်ချက်ကို ထိန်းချုပ်သည့် သဘောတူညီချက်ကို လုပ်ငန်းက ပြင်ဆင်ရသည်။",
+    "zh": "按《个人数据保护法》（第 40 条），为企业处理个人数据的公司，依该企业的指示办事。企业订立协议，约束这家公司的做法。",
+    "de": "Nach dem Datenschutzgesetz PDPA (Section 40) handelt eine Firma, die personenbezogene Daten für ein Unternehmen verarbeitet, nach dessen Weisungen. Das Unternehmen setzt einen Vertrag auf, der regelt, was die Firma tut."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "OnlineJobs.ph guide: a virtual assistant in the Philippines, beginner to expert",
+    "th": "คู่มือ OnlineJobs.ph: ผู้ช่วยเสมือนในฟิลิปปินส์ ตั้งแต่ระดับเริ่มต้นถึงผู้เชี่ยวชาญ",
+    "my": "OnlineJobs.ph လမ်းညွှန် - ဖိလစ်ပိုင်ရှိ virtual assistant၊ အဆင့်စတင်မှ ကျွမ်းကျင်သူအထိ",
+    "zh": "OnlineJobs.ph 指南：菲律宾的虚拟助理，从入门到资深",
+    "de": "OnlineJobs.ph-Leitfaden: virtuelle Assistenz auf den Philippinen, vom Einsteiger bis zum Experten"
+   },
+   "p": {
+    "en": "US$3 to US$12 an hour; US$480 to US$2,000 a month",
+    "th": "US$3 ถึง US$12 ต่อชั่วโมง; US$480 ถึง US$2,000 ต่อเดือน",
+    "my": "တစ်နာရီလျှင် US$3 မှ US$12၊ တစ်လလျှင် US$480 မှ US$2,000",
+    "zh": "每小时 US$3 至 US$12；每月 US$480 至 US$2,000",
+    "de": "US$3 bis US$12 pro Stunde; US$480 bis US$2,000 im Monat"
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: a virtual assistant, contact 09:00 to 21:00",
+    "th": "ผู้ขายบน Fastwork: ผู้ช่วยเสมือน ติดต่อได้ 09:00 ถึง 21:00 น.",
+    "my": "Fastwork ရောင်းချသူ - virtual assistant၊ 09:00 မှ 21:00 အထိ ဆက်သွယ်နိုင်သည်",
+    "zh": "Fastwork 卖家：虚拟助理，联系时间 09:00 至 21:00",
+    "de": "Anbieter auf Fastwork: virtuelle Assistenz, erreichbar von 09:00 bis 21:00 Uhr"
+   },
+   "p": {
+    "en": "฿1,000 for 2 days; ฿4,500 for 7 days; ฿17,000 for 30 days",
+    "th": "฿1,000 ต่อ 2 วัน; ฿4,500 ต่อ 7 วัน; ฿17,000 ต่อ 30 วัน",
+    "my": "2 ရက်လျှင် ฿1,000၊ 7 ရက်လျှင် ฿4,500၊ 30 ရက်လျှင် ฿17,000",
+    "zh": "2 天 ฿1,000；7 天 ฿4,500；30 天 ฿17,000",
+    "de": "฿1,000 für 2 Tage; ฿4,500 für 7 Tage; ฿17,000 für 30 Tage"
+   },
+   "src": "https://fastwork.co/user/chanitac/secretary-21104967"
+  },
+  {
+   "t": {
+    "en": "Another Fastwork seller: an online task of 1 to 2 hours (calls, searches, typing, replies), phone costs included",
+    "th": "ผู้ขายอีกรายบน Fastwork: งานออนไลน์ 1 ถึง 2 ชั่วโมง (โทร ค้นหา พิมพ์ ตอบข้อความ) รวมค่าโทรศัพท์",
+    "my": "အခြား Fastwork ရောင်းချသူ - 1 မှ 2 နာရီကြာ အွန်လိုင်းအလုပ် (ဖုန်းခေါ်၊ ရှာဖွေ၊ စာရိုက်၊ စာပြန်)၊ ဖုန်းကုန်ကျစရိတ်ပါဝင်",
+    "zh": "另一位 Fastwork 卖家：1 到 2 小时的线上事务（打电话、查找、打字、回复），含电话费",
+    "de": "Ein anderer Anbieter auf Fastwork: eine Online-Aufgabe von 1 bis 2 Stunden (Anrufe, Suchen, Tippen, Antworten), Telefonkosten inbegriffen"
+   },
+   "p": {
+    "en": "from ฿600",
+    "th": "เริ่มที่ ฿600",
+    "my": "฿600 မှ စသည်",
+    "zh": "起价 ฿600",
+    "de": "ab ฿600"
+   },
+   "src": "https://fastwork.co/user/icanassist/secretary-30465824"
+  },
+  {
+   "t": {
+    "en": "A worker on the Chiang Rai minimum wage",
+    "th": "ลูกจ้างที่ได้ค่าจ้างขั้นต่ำในเชียงราย",
+    "my": "ချင်းရိုင်းအနည်းဆုံးလုပ်ခဖြင့် လုပ်သော အလုပ်သမား",
+    "zh": "按清莱最低工资标准的一名员工",
+    "de": "Eine Arbeitskraft zum Mindestlohn in Chiang Rai"
+   },
+   "p": {
+    "en": "฿352 a day",
+    "th": "฿352 ต่อวัน",
+    "my": "တစ်ရက်လျှင် ฿352",
+    "zh": "每天 ฿352",
+    "de": "฿352 pro Tag"
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a personal assistant cost in Thailand?",
+    "th": "ผู้ช่วยส่วนตัวในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် ကိုယ်ပိုင်လက်ထောက် ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国请私人助理要多少钱？",
+    "de": "Was kostet eine persönliche Assistenz in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists a virtual assistant at ฿1,000 for a 2-day job, ฿4,500 for 7 days and ฿17,000 for 30 days. The seller lists contact from 09:00 to 21:00.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคาผู้ช่วยเสมือน ฿1,000 สำหรับงาน 2 วัน ฿4,500 สำหรับ 7 วัน และ ฿17,000 สำหรับ 30 วัน ผู้ขายระบุเวลาติดต่อ 09:00 ถึง 21:00 น.",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက virtual assistant ကို 2 ရက်အလုပ်အတွက် ฿1,000၊ 7 ရက်အတွက် ฿4,500 နှင့် 30 ရက်အတွက် ฿17,000 ဟု ဖော်ပြထားသည်။ ရောင်းချသူက 09:00 မှ 21:00 အထိ ဆက်သွယ်နိုင်သည်ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位卖家把虚拟助理标价为：2 天的工作 ฿1,000，7 天 ฿4,500，30 天 ฿17,000。卖家标明联系时间为 09:00 至 21:00。",
+    "de": "Ein Anbieter auf Fastwork nennt für eine virtuelle Assistenz ฿1,000 für einen Einsatz von 2 Tagen, ฿4,500 für 7 Tage und ฿17,000 für 30 Tage. Der Anbieter ist von 09:00 bis 21:00 Uhr erreichbar."
+   },
+   "src": "https://fastwork.co/user/chanitac/secretary-21104967"
+  },
+  {
+   "q": {
+    "en": "What does a virtual assistant from the Philippines cost?",
+    "th": "ผู้ช่วยเสมือนจากฟิลิปปินส์ราคาเท่าไร",
+    "my": "ဖိလစ်ပိုင်မှ virtual assistant ဘယ်လောက်ကျသလဲ။",
+    "zh": "菲律宾的虚拟助理要多少钱？",
+    "de": "Was kostet eine virtuelle Assistenz von den Philippinen?"
+   },
+   "a": {
+    "en": "The OnlineJobs.ph pay guide, last updated 10 July 2026, lists US$3 to US$5 an hour for a beginner, US$6 to US$9 for intermediate level and US$10 to US$12 for an expert.",
+    "th": "คู่มืออัตราจ้างของ OnlineJobs.ph อัปเดตล่าสุด 10 กรกฎาคม 2569 ระบุ US$3 ถึง US$5 ต่อชั่วโมงสำหรับระดับเริ่มต้น US$6 ถึง US$9 สำหรับระดับกลาง และ US$10 ถึง US$12 สำหรับผู้เชี่ยวชาญ",
+    "my": "OnlineJobs.ph ၏ လုပ်ခလမ်းညွှန်ကို 2026 ဇူလိုင် 10 ရက်တွင် နောက်ဆုံးမွမ်းမံထားပြီး အဆင့်စတင်သူအတွက် တစ်နာရီလျှင် US$3 မှ US$5၊ အလယ်အလတ်အတွက် US$6 မှ US$9 နှင့် ကျွမ်းကျင်သူအတွက် US$10 မှ US$12 ဟု ဖော်ပြထားသည်။",
+    "zh": "OnlineJobs.ph 的薪酬指南最后更新于 2026 年 7 月 10 日，列出入门级每小时 US$3 至 US$5，中级 US$6 至 US$9，资深 US$10 至 US$12。",
+    "de": "Der Lohnleitfaden von OnlineJobs.ph, zuletzt am 10. Juli 2026 aktualisiert, nennt US$3 bis US$5 pro Stunde für Einsteiger, US$6 bis US$9 für die mittlere Stufe und US$10 bis US$12 für Experten."
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  },
+  {
+   "q": {
+    "en": "What does a short assistant job cost?",
+    "th": "งานผู้ช่วยสั้น ๆ ราคาเท่าไร",
+    "my": "တိုတောင်းသော လက်ထောက်အလုပ် ဘယ်လောက်ကျသလဲ။",
+    "zh": "一次短时的助理工作要多少钱？",
+    "de": "Was kostet ein kurzer Assistenz-Einsatz?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists ฿600 for an online job of about 1 to 2 hours, such as phone calls to book appointments, searches, typing and replies. Phone costs are included.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคา ฿600 สำหรับงานออนไลน์ประมาณ 1 ถึง 2 ชั่วโมง เช่น โทรนัดหมาย ค้นหาข้อมูล พิมพ์งาน และตอบข้อความ รวมค่าโทรศัพท์แล้ว",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက ချိန်းဆိုရန် ဖုန်းခေါ်ခြင်း၊ ရှာဖွေခြင်း၊ စာရိုက်ခြင်းနှင့် စာပြန်ခြင်းကဲ့သို့ 1 မှ 2 နာရီခန့်ကြာ အွန်လိုင်းအလုပ်အတွက် ฿600 ဟု ဖော်ပြထားသည်။ ဖုန်းကုန်ကျစရိတ် ပါဝင်သည်။",
+    "zh": "Fastwork 上一位卖家把约 1 到 2 小时的线上事务标价 ฿600，例如打电话约时间、查找、打字和回复。含电话费。",
+    "de": "Ein Anbieter auf Fastwork nennt ฿600 für eine Online-Aufgabe von etwa 1 bis 2 Stunden, zum Beispiel Anrufe für Termine, Suchen, Tippen und Antworten. Die Telefonkosten sind inbegriffen."
+   },
+   "src": "https://fastwork.co/user/icanassist/secretary-30465824"
+  },
+  {
+   "q": {
+    "en": "What is the lowest daily wage in Chiang Rai?",
+    "th": "ค่าจ้างขั้นต่ำรายวันในเชียงรายเท่าไร",
+    "my": "ချင်းရိုင်းတွင် နေ့စားအနည်းဆုံးလုပ်ခ ဘယ်လောက်လဲ။",
+    "zh": "清莱的最低日工资是多少？",
+    "de": "Wie hoch ist der tägliche Mindestlohn in Chiang Rai?"
+   },
+   "a": {
+    "en": "The minimum wage in Chiang Rai is ฿352 a day, in force from 1 July 2025. Rates across Thailand run from ฿337 to ฿400.",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายคือ ฿352 ต่อวัน มีผลตั้งแต่ 1 กรกฎาคม 2568 ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခသည် တစ်ရက်လျှင် ฿352 ဖြစ်ပြီး 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှ စတင်သက်ရောက်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိ ရှိသည်။",
+    "zh": "清莱的最低工资是每天 ฿352，自 2025 年 7 月 1 日起实行。泰国各府的标准从 ฿337 到 ฿400 不等。",
+    "de": "Der Mindestlohn in Chiang Rai beträgt ฿352 pro Tag, gültig seit dem 1. Juli 2025. In Thailand liegen die Sätze zwischen ฿337 und ฿400."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  }
+ ],
+ "related": [
+  "cs-desk",
+  "errand",
+  "call",
+  "typing",
+  "staff-papers",
+  "ai-assistant"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "OnlineJobs.ph: pay guide for virtual assistants in the Philippines",
+    "th": "OnlineJobs.ph: คู่มืออัตราจ้างผู้ช่วยเสมือนในฟิลิปปินส์",
+    "my": "OnlineJobs.ph - ဖိလစ်ပိုင်ရှိ virtual assistant များ၏ လုပ်ခလမ်းညွှန်",
+    "zh": "OnlineJobs.ph：菲律宾虚拟助理薪酬指南",
+    "de": "OnlineJobs.ph: Lohnleitfaden für virtuelle Assistenzen auf den Philippinen"
+   },
+   "href": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a virtual assistant seller's packages",
+    "th": "Fastwork: แพ็กเกจผู้ช่วยเสมือนของผู้ขายรายหนึ่ง",
+    "my": "Fastwork - virtual assistant ရောင်းချသူတစ်ဦး၏ ပက်ကေ့ချ်များ",
+    "zh": "Fastwork：一位虚拟助理卖家的套餐",
+    "de": "Fastwork: die Pakete eines Anbieters für virtuelle Assistenz"
+   },
+   "href": "https://fastwork.co/user/chanitac/secretary-21104967"
+  }
+ ]
+}

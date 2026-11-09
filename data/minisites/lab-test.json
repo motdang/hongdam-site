@@ -1,0 +1,309 @@
+{
+ "id": "lab-test",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People send a sample to a Thai lab to learn what is in their water, food or material, or how pure a compound is.",
+  "th": "คนส่งตัวอย่างให้ห้องแล็บในไทยตรวจ เพื่อรู้ว่าน้ำ อาหาร หรือวัสดุของตนมีอะไรปนอยู่ หรือสารมีความบริสุทธิ์เท่าใด",
+  "my": "လူတွေက မိမိတို့၏ ရေ၊ အစားအစာ သို့မဟုတ် ပစ္စည်းထဲတွင် ဘာပါသည်ကို သိရန်၊ သို့မဟုတ် ဒြပ်ပေါင်းတစ်ခု မည်မျှ သန့်စင်သည်ကို သိရန် နမူနာကို ထိုင်းဓာတ်ခွဲခန်းသို့ ပို့ကြသည်။",
+  "zh": "人们把样品送到泰国实验室，是想知道自己的水、食品或材料里有什么，或者某种化合物的纯度有多高。",
+  "de": "Man schickt eine Probe an ein thailändisches Labor, um zu erfahren, was in Wasser, Lebensmittel oder Material steckt oder wie rein eine Substanz ist."
+ },
+ "n": {
+  "de": "Labortest organisiert"
+ },
+ "l": {
+  "de": "Lebensmittel, Wasser, Materialien oder Substanzen, in einem thailändischen Labor; der Bericht übersetzt."
+ },
+ "glyphs": [
+  "dna",
+  "parcel",
+  "translate"
+ ],
+ "steps": [
+  {
+   "db": "parcel",
+   "t": {
+    "en": "We take your sample to a Thai lab.",
+    "th": "นำตัวอย่างของคุณไปส่งที่ห้องแล็บในไทย",
+    "my": "သင့်နမူနာကို ထိုင်းဓာတ်ခွဲခန်းသို့ ယူသွားပေးသည်။",
+    "zh": "把您的样品送到泰国实验室。",
+    "de": "Wir bringen Ihre Probe zu einem thailändischen Labor."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you order",
+    "th": "หลังสั่งบริการ",
+    "my": "မှာယူပြီးနောက်",
+    "zh": "下单之后",
+    "de": "Nach der Bestellung"
+   }
+  },
+  {
+   "db": "dna",
+   "t": {
+    "en": "The lab tests the sample and writes its report.",
+    "th": "ห้องแล็บตรวจตัวอย่างและเขียนรายงานผล",
+    "my": "ဓာတ်ခွဲခန်းက နမူနာကို စစ်ဆေးပြီး ကိုယ်ပိုင်အစီရင်ခံစာ ရေးသည်။",
+    "zh": "实验室检测样品，并出具自己的报告。",
+    "de": "Das Labor prüft die Probe und schreibt seinen Bericht."
+   },
+   "who": {
+    "en": "The lab",
+    "th": "ห้องแล็บ",
+    "my": "ဓာတ်ခွဲခန်း",
+    "zh": "实验室",
+    "de": "Das Labor"
+   },
+   "time": {
+    "en": "The lab sets the time",
+    "th": "ห้องแล็บเป็นผู้กำหนดเวลา",
+    "my": "ဓာတ်ခွဲခန်းက အချိန်သတ်မှတ်သည်",
+    "zh": "由实验室定时间",
+    "de": "Das Labor legt die Dauer fest"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "We translate the report.",
+    "th": "แปลรายงานผลให้",
+    "my": "အစီရင်ခံစာကို ဘာသာပြန်ပေးသည်။",
+    "zh": "翻译报告。",
+    "de": "Wir übersetzen den Bericht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When the report arrives",
+    "th": "เมื่อได้รับรายงาน",
+    "my": "အစီရင်ခံစာ ရောက်သည့်အခါ",
+    "zh": "报告到手后",
+    "de": "Wenn der Bericht eintrifft"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Bureau of Laboratory Accreditation at Thailand's Department of Science Service has accredited testing laboratories under ISO/IEC 17025 since 2003. It publishes a list of accredited testing laboratories, and lists of withdrawn and suspended ones.",
+    "th": "สำนักการรับรองห้องปฏิบัติการ กรมวิทยาศาสตร์บริการ รับรองห้องปฏิบัติการทดสอบตามมาตรฐาน ISO/IEC 17025 ตั้งแต่ ค.ศ. 2003 และเผยแพร่รายชื่อห้องปฏิบัติการทดสอบที่ได้รับการรับรอง รวมทั้งรายชื่อที่ถูกถอนและถูกพักการรับรอง",
+    "my": "ထိုင်းနိုင်ငံ သိပ္ပံဝန်ဆောင်မှုဦးစီးဌာန၏ ဓာတ်ခွဲခန်းအသိအမှတ်ပြုရေးဗျူရိုသည် 2003 ခုနှစ်မှစ၍ စမ်းသပ်ဓာတ်ခွဲခန်းများကို ISO/IEC 17025 အရ အသိအမှတ်ပြုလာသည်။ အသိအမှတ်ပြုထားသော စမ်းသပ်ဓာတ်ခွဲခန်းစာရင်းကို ထုတ်ပြန်ထားပြီး ရုပ်သိမ်းခံရသော၊ ယာယီရပ်ဆိုင်းခံရသော ဓာတ်ခွဲခန်းစာရင်းများလည်း ပါသည်။",
+    "zh": "泰国科学服务厅下设的实验室认可局，自 2003 年起按 ISO/IEC 17025 认可检测实验室。它公布获认可的检测实验室名单，也公布被撤销和被暂停认可的实验室名单。",
+    "de": "Das Büro für Laborakkreditierung des thailändischen Department of Science Service akkreditiert seit 2003 Prüflabore nach ISO/IEC 17025. Es veröffentlicht eine Liste der akkreditierten Prüflabore sowie Listen der zurückgezogenen und der ausgesetzten."
+   },
+   "src": "https://www.dss.go.th/eng/index.php/publications/26-structure/bureau-of-laboratory-accreditation/48-background-bla"
+  },
+  {
+   "t": {
+    "en": "The bureau has been a signatory of the APLAC mutual recognition arrangement since 22 May 2006 and of the ILAC arrangement since 23 August 2006.",
+    "th": "สำนักนี้เป็นภาคีข้อตกลงการยอมรับร่วมของ APLAC ตั้งแต่ 22 พฤษภาคม ค.ศ. 2006 และของ ILAC ตั้งแต่ 23 สิงหาคม ค.ศ. 2006",
+    "my": "ဤဗျူရိုသည် APLAC အပြန်အလှန်အသိအမှတ်ပြုမှု သဘောတူညီချက်ကို 2006 ခုနှစ် မေလ 22 ရက်မှစ၍၊ ILAC သဘောတူညီချက်ကို 2006 ခုနှစ် ဩဂုတ်လ 23 ရက်မှစ၍ လက်မှတ်ရေးထိုးထားသည်။",
+    "zh": "该局自 2006 年 5 月 22 日起是 APLAC 互认协议的签署方，自 2006 年 8 月 23 日起是 ILAC 互认协议的签署方。",
+    "de": "Das Büro ist seit dem 22. Mai 2006 Unterzeichner des APLAC-Abkommens zur gegenseitigen Anerkennung und seit dem 23. August 2006 des ILAC-Abkommens."
+   },
+   "src": "https://www.dss.go.th/eng/index.php/publications/26-structure/bureau-of-laboratory-accreditation/48-background-bla"
+  },
+  {
+   "t": {
+    "en": "A Thai university testing centre's quotation form for drinking water lists 16 lines, from colour and pH to E. coli, for ฿3,040 in total. It gives delivery within 30 days of the agreement and holds the price for 90 days.",
+    "th": "ใบเสนอราคาตรวจน้ำดื่มของศูนย์ทดสอบวิศวกรรมโยธา มหาวิทยาลัยนเรศวร มี 16 รายการ ตั้งแต่สีและพีเอชไปจนถึงอี.โคไล รวม ฿3,040 กำหนดส่งมอบภายใน 30 วันนับจากวันทำสัญญาหรือตกลงราคา และราคายืนอยู่ได้ 90 วัน",
+    "my": "တက္ကသိုလ်တစ်ခု၏ စမ်းသပ်ရေးစင်တာ၏ သောက်ရေအတွက် ဈေးနှုန်းတင်ပြစာတွင် အရောင်၊ pH မှ E. coli အထိ လိုင်း 16 ခု ပါပြီး စုစုပေါင်း ฿3,040 ဖြစ်သည်။ သဘောတူပြီး 30 ရက်အတွင်း ပို့ပေးမည်ဟု ဖော်ပြထားပြီး ဈေးနှုန်းကို 90 ရက် ထိန်းထားသည်။",
+    "zh": "泰国一所大学检测中心的饮用水报价单列有 16 项，从颜色、pH 到大肠杆菌，合计 ฿3,040。报价单写明在约定后 30 天内交付，价格有效期 90 天。",
+    "de": "Das Angebotsformular eines thailändischen Universitäts-Prüfzentrums für Trinkwasser führt 16 Positionen auf, von Farbe und pH bis E. coli, zusammen ฿3,040. Es nennt eine Lieferung innerhalb von 30 Tagen nach der Vereinbarung und hält den Preis 90 Tage."
+   },
+   "src": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  },
+  {
+   "t": {
+    "en": "The central research unit of Mahidol University's Faculty of Pharmacy offers NMR analysis to schools, government bodies, state enterprises and private clients. State enterprises and private clients pay more than government bodies and schools, and the solvent is charged on top.",
+    "th": "หน่วยวิจัยกลาง คณะเภสัชศาสตร์ มหาวิทยาลัยมหิดล เปิดบริการวิเคราะห์ด้วยเครื่อง NMR แก่สถาบันการศึกษา หน่วยงานราชการ รัฐวิสาหกิจ และเอกชน รัฐวิสาหกิจและเอกชนจ่ายอัตราสูงกว่าหน่วยงานราชการและสถาบันการศึกษา และค่าตัวทำละลายคิดแยก",
+    "my": "မဟီဒုံတက္ကသိုလ် ဆေးဝါးပညာဌာန၏ ဗဟိုသုတေသနယူနစ်သည် ကျောင်းများ၊ အစိုးရအဖွဲ့အစည်းများ၊ နိုင်ငံပိုင်လုပ်ငန်းများနှင့် ပုဂ္ဂလိကဖောက်သည်များအတွက် NMR ခွဲခြမ်းစိတ်ဖြာမှုကို ဝန်ဆောင်မှုပေးသည်။ နိုင်ငံပိုင်လုပ်ငန်းနှင့် ပုဂ္ဂလိကက အစိုးရအဖွဲ့အစည်းနှင့် ကျောင်းများထက် ပိုပေးရပြီး ဒြပ်ပျော်ရည်ခကို သီးခြားတွက်သည်။",
+    "zh": "玛希隆大学药学院的中央研究单位向学校、政府机构、国有企业和私人客户提供 NMR 分析。国企和私人客户的收费高于政府机构和学校，溶剂另计。",
+    "de": "Die zentrale Forschungseinheit der pharmazeutischen Fakultät der Mahidol-Universität bietet NMR-Analysen für Schulen, Behörden, Staatsbetriebe und private Kunden an. Staatsbetriebe und Private zahlen mehr als Behörden und Schulen, das Lösungsmittel kommt dazu."
+   },
+   "src": "https://pharmacy.mahidol.ac.th/th/img_service/service_NMR300.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Naresuan University Civil Engineering Testing Center, drinking water, 16 lines (quotation form of 12 September 2024)",
+    "th": "ศูนย์ทดสอบวิศวกรรมโยธา มหาวิทยาลัยนเรศวร ตรวจน้ำดื่ม 16 รายการ (ใบเสนอราคา 12 กันยายน ค.ศ. 2024)",
+    "my": "နရေဆွန်တက္ကသိုလ် ဆိုင်ရာ အရပ်ဘက်အင်ဂျင်နီယာစမ်းသပ်ရေးစင်တာ၊ သောက်ရေ လိုင်း 16 ခု (2024 ခုနှစ် စက်တင်ဘာ 12 ရက် ဈေးနှုန်းတင်ပြစာ)",
+    "zh": "纳黎宣大学土木工程检测中心，饮用水 16 项（2024 年 9 月 12 日报价单）",
+    "de": "Prüfzentrum für Bauingenieurwesen der Naresuan-Universität, Trinkwasser, 16 Positionen (Angebotsformular vom 12. September 2024)"
+   },
+   "p": {
+    "en": "฿3,040 in total",
+    "th": "รวม ฿3,040",
+    "my": "စုစုပေါင်း ฿3,040",
+    "zh": "合计 ฿3,040",
+    "de": "zusammen ฿3,040"
+   },
+   "src": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  },
+  {
+   "t": {
+    "en": "The same centre, single lines",
+    "th": "ศูนย์เดียวกัน ราคาแยกรายการ",
+    "my": "ထိုစင်တာ၏ တစ်လိုင်းချင်း ဈေးနှုန်း",
+    "zh": "同一中心的单项价格",
+    "de": "Dasselbe Zentrum, einzelne Positionen"
+   },
+   "p": {
+    "en": "pH ฿60; colour, turbidity or hardness ฿110 each; coliforms or E. coli ฿330 each",
+    "th": "พีเอช ฿60 สี ความขุ่น หรือความกระด้าง รายการละ ฿110 โคลิฟอร์มหรืออี.โคไล รายการละ ฿330",
+    "my": "pH ฿60၊ အရောင်၊ ရေနောက်ကျိမှု သို့မဟုတ် ရေမာမှု တစ်ခုလျှင် ฿110၊ coliform သို့မဟုတ် E. coli တစ်ခုလျှင် ฿330",
+    "zh": "pH ฿60；颜色、浊度或硬度每项 ฿110；大肠菌群或大肠杆菌每项 ฿330",
+    "de": "pH ฿60; Farbe, Trübung oder Härte je ฿110; Coliforme oder E. coli je ฿330"
+   },
+   "src": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  },
+  {
+   "t": {
+    "en": "Mahidol University Faculty of Pharmacy, 1H NMR at 300 MHz, one sample, private client (price sheet in a file made in 2014)",
+    "th": "คณะเภสัชศาสตร์ มหาวิทยาลัยมหิดล NMR 300 MHz แบบ 1H หนึ่งตัวอย่าง ลูกค้าเอกชน (ตารางราคาในไฟล์ที่สร้างปี ค.ศ. 2014)",
+    "my": "မဟီဒုံတက္ကသိုလ် ဆေးဝါးပညာဌာန၊ 300 MHz 1H NMR နမူနာတစ်ခု၊ ပုဂ္ဂလိကဖောက်သည် (2014 ခုနှစ်တွင် ပြုလုပ်ထားသော ဖိုင်ပါ ဈေးနှုန်းစာရင်း)",
+    "zh": "玛希隆大学药学院，300 MHz 1H NMR，一个样品，私人客户（价目表文件制作于 2014 年）",
+    "de": "Pharmazeutische Fakultät der Mahidol-Universität, 1H-NMR bei 300 MHz, eine Probe, privater Kunde (Preisblatt in einer Datei von 2014)"
+   },
+   "p": {
+    "en": "฿700 (฿400 for government bodies and schools); solvent from ฿100 extra",
+    "th": "฿700 (หน่วยงานราชการและสถาบันการศึกษา ฿400) ค่าตัวทำละลายเพิ่มตั้งแต่ ฿100",
+    "my": "฿700 (အစိုးရအဖွဲ့အစည်းနှင့် ကျောင်းများ ฿400)၊ ဒြပ်ပျော်ရည်ခ ฿100 မှစ၍ ထပ်ပေါင်း",
+    "zh": "฿700（政府机构和学校 ฿400）；溶剂另加，฿100 起",
+    "de": "฿700 (Behörden und Schulen ฿400); Lösungsmittel ab ฿100 zusätzlich"
+   },
+   "src": "https://pharmacy.mahidol.ac.th/th/img_service/service_NMR300.pdf"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a water test cost in Thailand?",
+    "th": "ตรวจน้ำในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် ရေစစ်ဆေးရန် ဈေးဘယ်လောက်လဲ။",
+    "zh": "在泰国检测水质要多少钱？",
+    "de": "Was kostet ein Wassertest in Thailand?"
+   },
+   "a": {
+    "en": "A Thai university testing centre quotes ฿3,040 for 16 lines on drinking water. Single lines run from ฿60 for pH to ฿330 for total coliforms or E. coli.",
+    "th": "ศูนย์ทดสอบของมหาวิทยาลัยแห่งหนึ่งในไทยเสนอราคา ฿3,040 สำหรับน้ำดื่ม 16 รายการ ราคาแยกรายการอยู่ที่ ฿60 สำหรับพีเอช ถึง ฿330 สำหรับโคลิฟอร์มรวมหรืออี.โคไล",
+    "my": "ထိုင်းတက္ကသိုလ်တစ်ခု၏ စမ်းသပ်ရေးစင်တာက သောက်ရေ လိုင်း 16 ခုအတွက် ฿3,040 ဟု ဈေးနှုန်းတင်ပြထားသည်။ တစ်လိုင်းချင်းမှာ pH ฿60 မှ coliform စုစုပေါင်း သို့မဟုတ် E. coli ฿330 အထိ ရှိသည်။",
+    "zh": "泰国一所大学的检测中心对饮用水 16 项报价 ฿3,040。单项从 pH 的 ฿60 到总大肠菌群或大肠杆菌的 ฿330 不等。",
+    "de": "Ein thailändisches Universitäts-Prüfzentrum bietet 16 Positionen für Trinkwasser zu ฿3,040 an. Einzelne Positionen kosten von ฿60 für den pH-Wert bis ฿330 für Coliforme insgesamt oder E. coli."
+   },
+   "src": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  },
+  {
+   "q": {
+    "en": "What does a drinking-water test cover?",
+    "th": "ตรวจน้ำดื่มตรวจอะไรบ้าง",
+    "my": "သောက်ရေစစ်ဆေးမှုတွင် ဘာတွေ ပါသလဲ။",
+    "zh": "饮用水检测包括哪些项目？",
+    "de": "Was umfasst ein Trinkwassertest?"
+   },
+   "a": {
+    "en": "The Naresuan University form lists colour, pH, turbidity, total hardness, total solids, suspended solids, dissolved solids, nitrate, chloride, fluoride, sulfate, manganese, iron, total coliforms and E. coli, with a sample digestion line.",
+    "th": "ใบเสนอราคาของมหาวิทยาลัยนเรศวรระบุสี พีเอช ความขุ่น ความกระด้างรวม ของแข็งทั้งหมด ของแข็งแขวนลอย ของแข็งละลายน้ำ ไนเตรต คลอไรด์ ฟลูออไรด์ ซัลเฟต แมงกานีส เหล็ก โคลิฟอร์มรวม และอี.โคไล พร้อมรายการย่อยตัวอย่างน้ำ",
+    "my": "နရေဆွန်တက္ကသိုလ်၏ ပုံစံတွင် အရောင်၊ pH၊ ရေနောက်ကျိမှု၊ ရေမာမှုစုစုပေါင်း၊ အစိုင်အခဲစုစုပေါင်း၊ ဆိုင်းလောင်းအစိုင်အခဲ၊ ပျော်ဝင်အစိုင်အခဲ၊ နိုက်ထရိတ်၊ ကလိုရိုက်၊ ဖလိုရိုက်၊ ဆာလဖိတ်၊ မန်းဂနိစ်၊ သံ၊ coliform စုစုပေါင်းနှင့် E. coli တို့ကို ဖော်ပြထားပြီး နမူနာ ပျော်ဝင်စေသည့် လိုင်းလည်း ပါသည်။",
+    "zh": "纳黎宣大学的报价单列有颜色、pH、浊度、总硬度、总固体、悬浮固体、溶解固体、硝酸盐、氯化物、氟化物、硫酸盐、锰、铁、总大肠菌群和大肠杆菌，另有水样消解一项。",
+    "de": "Das Formular der Naresuan-Universität führt Farbe, pH-Wert, Trübung, Gesamthärte, Gesamtfeststoffe, Schwebstoffe, gelöste Feststoffe, Nitrat, Chlorid, Fluorid, Sulfat, Mangan, Eisen, Coliforme insgesamt und E. coli auf, dazu eine Position für den Probenaufschluss."
+   },
+   "src": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  },
+  {
+   "q": {
+    "en": "How do I find an accredited lab in Thailand?",
+    "th": "จะหาห้องแล็บที่ได้รับการรับรองในไทยได้อย่างไร",
+    "my": "ထိုင်းနိုင်ငံတွင် အသိအမှတ်ပြုထားသော ဓာတ်ခွဲခန်းကို ဘယ်လိုရှာရမလဲ။",
+    "zh": "怎样找到泰国获认可的实验室？",
+    "de": "Wie finde ich in Thailand ein akkreditiertes Labor?"
+   },
+   "a": {
+    "en": "The Bureau of Laboratory Accreditation at the Department of Science Service publishes a list of accredited testing laboratories. It has accredited testing labs under ISO/IEC 17025 since 2003, and it lists withdrawn and suspended ones too.",
+    "th": "สำนักการรับรองห้องปฏิบัติการ กรมวิทยาศาสตร์บริการ เผยแพร่รายชื่อห้องปฏิบัติการทดสอบที่ได้รับการรับรอง โดยรับรองตามมาตรฐาน ISO/IEC 17025 ตั้งแต่ ค.ศ. 2003 และมีรายชื่อที่ถูกถอนและถูกพักการรับรองด้วย",
+    "my": "သိပ္ပံဝန်ဆောင်မှုဦးစီးဌာန၏ ဓာတ်ခွဲခန်းအသိအမှတ်ပြုရေးဗျူရိုက အသိအမှတ်ပြုထားသော စမ်းသပ်ဓာတ်ခွဲခန်းစာရင်းကို ထုတ်ပြန်ထားသည်။ 2003 ခုနှစ်မှစ၍ ISO/IEC 17025 အရ အသိအမှတ်ပြုလာပြီး ရုပ်သိမ်းခံရသော၊ ယာယီရပ်ဆိုင်းခံရသော ဓာတ်ခွဲခန်းများကိုလည်း စာရင်းပြုစုထားသည်။",
+    "zh": "科学服务厅下的实验室认可局公布获认可的检测实验室名单。它自 2003 年起按 ISO/IEC 17025 认可检测实验室，并同时列出被撤销和被暂停的实验室。",
+    "de": "Das Büro für Laborakkreditierung des Department of Science Service veröffentlicht eine Liste der akkreditierten Prüflabore. Es akkreditiert seit 2003 nach ISO/IEC 17025 und führt auch die zurückgezogenen und ausgesetzten Labore auf."
+   },
+   "src": "https://www.dss.go.th/eng/index.php/publications/26-structure/bureau-of-laboratory-accreditation/48-background-bla"
+  },
+  {
+   "q": {
+    "en": "How long does a lab test take?",
+    "th": "ตรวจแล็บใช้เวลานานเท่าไร",
+    "my": "ဓာတ်ခွဲခန်းစစ်ဆေးမှုက အချိန်ဘယ်လောက် ကြာသလဲ။",
+    "zh": "实验室检测要多久？",
+    "de": "Wie lange dauert ein Labortest?"
+   },
+   "a": {
+    "en": "It depends on the lab. The Naresuan University form gives delivery within 30 days of the agreement and holds its price for 90 days.",
+    "th": "ขึ้นกับห้องแล็บ ใบเสนอราคาของมหาวิทยาลัยนเรศวรกำหนดส่งมอบภายใน 30 วันนับจากวันตกลง และราคายืนอยู่ได้ 90 วัน",
+    "my": "ဓာတ်ခွဲခန်းပေါ် မူတည်သည်။ နရေဆွန်တက္ကသိုလ်၏ ပုံစံတွင် သဘောတူပြီး 30 ရက်အတွင်း ပို့ပေးမည်ဟု ဖော်ပြပြီး ဈေးနှုန်းကို 90 ရက် ထိန်းထားသည်။",
+    "zh": "因实验室而异。纳黎宣大学的报价单写明约定后 30 天内交付，价格有效期 90 天。",
+    "de": "Das hängt vom Labor ab. Das Formular der Naresuan-Universität nennt eine Lieferung innerhalb von 30 Tagen nach der Vereinbarung und hält den Preis 90 Tage."
+   },
+   "src": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  },
+  {
+   "q": {
+    "en": "What does it cost to test a compound's purity?",
+    "th": "ตรวจความบริสุทธิ์ของสารราคาเท่าไร",
+    "my": "ဒြပ်ပေါင်းတစ်ခု၏ သန့်စင်မှုကို စစ်ဆေးရန် ဈေးဘယ်လောက်လဲ။",
+    "zh": "检测化合物纯度要多少钱？",
+    "de": "Was kostet die Reinheitsprüfung einer Substanz?"
+   },
+   "a": {
+    "en": "At Mahidol University's Faculty of Pharmacy, one 1H NMR sample costs ฿700 for a private client and ฿400 for government bodies and schools, with the solvent extra. 13C NMR is ฿800 an hour for a private client. The price sheet is a file made in 2014.",
+    "th": "ที่คณะเภสัชศาสตร์ มหาวิทยาลัยมหิดล NMR แบบ 1H หนึ่งตัวอย่างคิด ฿700 สำหรับลูกค้าเอกชน และ ฿400 สำหรับหน่วยงานราชการและสถาบันการศึกษา ค่าตัวทำละลายคิดเพิ่ม 13C NMR คิดชั่วโมงละ ฿800 สำหรับเอกชน ตารางราคาเป็นไฟล์ที่สร้างปี ค.ศ. 2014",
+    "my": "မဟီဒုံတက္ကသိုလ် ဆေးဝါးပညာဌာနတွင် 1H NMR နမူနာတစ်ခုအတွက် ပုဂ္ဂလိကဖောက်သည် ฿700၊ အစိုးရအဖွဲ့အစည်းနှင့် ကျောင်းများ ฿400 ဖြစ်ပြီး ဒြပ်ပျော်ရည်ခ ထပ်ပေါင်းသည်။ 13C NMR သည် ပုဂ္ဂလိကအတွက် တစ်နာရီ ฿800 ဖြစ်သည်။ ဈေးနှုန်းစာရင်းမှာ 2014 ခုနှစ်တွင် ပြုလုပ်ထားသော ဖိုင်ဖြစ်သည်။",
+    "zh": "玛希隆大学药学院的 1H NMR，每个样品私人客户收 ฿700，政府机构和学校收 ฿400，溶剂另计。13C NMR 私人客户每小时 ฿800。价目表是 2014 年制作的文件。",
+    "de": "An der pharmazeutischen Fakultät der Mahidol-Universität kostet eine 1H-NMR-Probe ฿700 für private Kunden und ฿400 für Behörden und Schulen, das Lösungsmittel kommt dazu. 13C-NMR kostet private Kunden ฿800 pro Stunde. Das Preisblatt ist eine Datei von 2014."
+   },
+   "src": "https://pharmacy.mahidol.ac.th/th/img_service/service_NMR300.pdf"
+  }
+ ],
+ "related": [
+  "blood",
+  "translate",
+  "research",
+  "errand",
+  "there",
+  "compare"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Science Service: Bureau of Laboratory Accreditation",
+    "th": "กรมวิทยาศาสตร์บริการ: สำนักการรับรองห้องปฏิบัติการ",
+    "my": "သိပ္ပံဝန်ဆောင်မှုဦးစီးဌာန: ဓာတ်ခွဲခန်းအသိအမှတ်ပြုရေးဗျူရို",
+    "zh": "科学服务厅：实验室认可局",
+    "de": "Department of Science Service: Büro für Laborakkreditierung"
+   },
+   "href": "https://www.dss.go.th/eng/index.php/publications/26-structure/bureau-of-laboratory-accreditation/48-background-bla"
+  },
+  {
+   "t": {
+    "en": "Naresuan University Civil Engineering Testing Center: drinking-water quotation form (Thai)",
+    "th": "ศูนย์ทดสอบวิศวกรรมโยธา มหาวิทยาลัยนเรศวร: ใบเสนอราคาตรวจน้ำดื่ม",
+    "my": "နရေဆွန်တက္ကသိုလ် အရပ်ဘက်အင်ဂျင်နီယာစမ်းသပ်ရေးစင်တာ: သောက်ရေ ဈေးနှုန်းတင်ပြစာ (ထိုင်းဘာသာ)",
+    "zh": "纳黎宣大学土木工程检测中心：饮用水报价单（泰语）",
+    "de": "Prüfzentrum für Bauingenieurwesen der Naresuan-Universität: Angebotsformular Trinkwasser (Thai)"
+   },
+   "href": "https://civil.eng.nu.ac.th/cecentre/doc/price/update/2_%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B7%E0%B9%88%E0%B8%A1%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD_%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%8A%E0%B9%89.pdf"
+  }
+ ]
+}

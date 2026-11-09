@@ -1,0 +1,309 @@
+{
+ "id": "ads-run",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Shops pay for ads on Facebook, Instagram, TikTok or Google to reach people in Thailand, and each platform has its own budget rules, account and report.",
+  "th": "ร้านค้าจ่ายค่าโฆษณาบน Facebook, Instagram, TikTok หรือ Google เพื่อเข้าถึงคนในไทย และแต่ละแพลตฟอร์มมีกติกางบ บัญชี และรายงานของตัวเอง",
+  "my": "ဆိုင်များသည် ထိုင်းနိုင်ငံရှိ လူများထံ ရောက်ရန် Facebook၊ Instagram၊ TikTok သို့မဟုတ် Google တွင် ကြော်ငြာစရိတ်ပေးကြပြီး ပလက်ဖောင်းတစ်ခုစီတွင် ဘတ်ဂျက်စည်းကမ်း၊ အကောင့်နှင့် အစီရင်ခံစာ ကိုယ်စီရှိသည်။",
+  "zh": "商家在 Facebook、Instagram、TikTok 或 Google 上投放广告，触达泰国用户；每个平台有各自的预算规则、账户和报表。",
+  "de": "Läden bezahlen Anzeigen auf Facebook, Instagram, TikTok oder Google, um Leute in Thailand zu erreichen, und jede Plattform hat eigene Budgetregeln, ein eigenes Konto und eigene Berichte."
+ },
+ "n": {
+  "de": "Anzeigen für Sie geschaltet"
+ },
+ "l": {
+  "de": "Facebook, TikTok oder Google, in Ihrem Anzeigenkonto; Ausgaben zum Selbstkostenpreis."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "Ads are made for Facebook and Instagram, TikTok or Google.",
+    "th": "ทำโฆษณาสำหรับ Facebook และ Instagram, TikTok หรือ Google",
+    "my": "Facebook နှင့် Instagram၊ TikTok သို့မဟုတ် Google အတွက် ကြော်ငြာများ ပြုလုပ်သည်။",
+    "zh": "为 Facebook 和 Instagram、TikTok 或 Google 制作广告。",
+    "de": "Für Facebook und Instagram, TikTok oder Google werden Anzeigen gestaltet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Monatlich"
+   }
+  },
+  {
+   "db": "megaphone",
+   "t": {
+    "en": "The ads are run in your own ad account.",
+    "th": "ดูแลโฆษณาในบัญชีโฆษณาของคุณเอง",
+    "my": "ကြော်ငြာများကို သင့်ကိုယ်ပိုင်ကြော်ငြာအကောင့်တွင် စီမံသည်။",
+    "zh": "广告在您自己的广告账户里投放。",
+    "de": "Die Anzeigen laufen in Ihrem eigenen Anzeigenkonto."
+   },
+   "who": {
+    "en": "Hongdam, in your account",
+    "th": "หงส์ดำ ในบัญชีของคุณ",
+    "my": "ဟုန်ဒမ်၊ သင့်အကောင့်တွင်",
+    "zh": "鸿丹，在您的账户里",
+    "de": "Hongdam, in Ihrem Konto"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Monatlich"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "A report comes each month, and the ad spend is charged at cost.",
+    "th": "ส่งรายงานทุกเดือน และคิดค่าโฆษณาตามจริง",
+    "my": "လစဉ် အစီရင်ခံစာ ပေးပို့ပြီး ကြော်ငြာစရိတ်ကို အမှန်အတိုင်း ကောက်ခံသည်။",
+    "zh": "每月出报告，广告费按实际支出结算。",
+    "de": "Jeden Monat kommt ein Bericht, und die Ausgaben für die Anzeigen werden zum Selbstkostenpreis verrechnet."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "End of the month",
+    "th": "สิ้นเดือน",
+    "my": "လကုန်တွင်",
+    "zh": "月底",
+    "de": "Ende des Monats"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In a post dated 27 October 2025, Meta says advertisers whose ads reach Thailand and who meet its criteria must verify who benefits from and pays for their ads. The names show in the ad's Ad info and in the Ad Library. A notified advertiser has up to 7 days to finish, or its ads are not delivered to users in Thailand.",
+    "th": "Meta ระบุในโพสต์ลงวันที่ 27 ตุลาคม 2568 ว่าผู้ลงโฆษณาที่โฆษณาเข้าถึงผู้ใช้ในไทยและเข้าเกณฑ์ของ Meta ต้องยืนยันว่าใครได้ประโยชน์และใครจ่ายค่าโฆษณา ชื่อจะแสดงใน Ad info ของโฆษณาและใน Ad Library ผู้ลงโฆษณาที่ได้รับแจ้งมีเวลาไม่เกิน 7 วัน ไม่เช่นนั้นโฆษณาจะไม่แสดงต่อผู้ใช้ในไทย",
+    "my": "Meta က 2025 ခုနှစ် အောက်တိုဘာ 27 ရက်စွဲပို့စ်တွင် ထိုင်းနိုင်ငံရှိ အသုံးပြုသူများထံ ကြော်ငြာရောက်ပြီး Meta ၏ စံနှုန်းနှင့် ကိုက်ညီသော ကြော်ငြာရှင်များသည် ၎င်းတို့၏ကြော်ငြာမှ အကျိုးခံစားသူနှင့် ငွေပေးသူကို အတည်ပြုရမည်ဟု ဆိုသည်။ အမည်များသည် ကြော်ငြာ၏ Ad info တွင်နှင့် Ad Library တွင် ပေါ်သည်။ အကြောင်းကြားခံရသော ကြော်ငြာရှင်တွင် 7 ရက်အထိ ရှိပြီး မဟုတ်လျှင် ကြော်ငြာများကို ထိုင်းအသုံးပြုသူများထံ မပို့ပါ။",
+    "zh": "Meta 在 2025 年 10 月 27 日的文章中写明，广告触达泰国用户且符合 Meta 条件的广告主，须验证谁从广告中受益、谁为广告付款。名称显示在广告的 Ad info 和 Ad Library 中。收到通知的广告主有最多 7 天完成，否则广告不会投放给泰国用户。",
+    "de": "In einem Beitrag vom 27. Oktober 2025 schreibt Meta, dass Werbetreibende, deren Anzeigen Nutzende in Thailand erreichen und die Metas Kriterien erfüllen, verifizieren müssen, wer von den Anzeigen profitiert und wer sie bezahlt. Die Namen erscheinen unter «Ad info» der Anzeige und in der Ad Library. Wer benachrichtigt wird, hat bis zu 7 Tage Zeit, sonst werden die Anzeigen nicht an Nutzende in Thailand ausgeliefert."
+   },
+   "src": "https://developers.secure.facebook.com/blog/post/2025/10/27/advertiser-verification-transparency-thailand/"
+  },
+  {
+   "t": {
+    "en": "TikTok's budget page says a campaign's daily or lifetime budget must exceed US$50 and an ad group's daily budget must exceed US$20. An ad group's lifetime budget is US$20 times the days it runs.",
+    "th": "หน้างบประมาณของ TikTok ระบุว่างบรายวันหรือตลอดแคมเปญของแคมเปญต้องเกิน US$50 และงบรายวันของกลุ่มโฆษณาต้องเกิน US$20 งบตลอดแคมเปญของกลุ่มโฆษณาคือ US$20 คูณจำนวนวันที่ยิง",
+    "my": "TikTok ၏ ဘတ်ဂျက်စာမျက်နှာတွင် ကမ်ပိန်းတစ်ခု၏ နေ့စဉ် သို့မဟုတ် စုစုပေါင်းဘတ်ဂျက်သည် US$50 ထက် ပိုရမည်ဟုလည်းကောင်း၊ ကြော်ငြာအုပ်စုတစ်ခု၏ နေ့စဉ်ဘတ်ဂျက်သည် US$20 ထက် ပိုရမည်ဟုလည်းကောင်း ဆိုသည်။ ကြော်ငြာအုပ်စု၏ စုစုပေါင်းဘတ်ဂျက်မှာ US$20 ကို ကြော်ငြာပြသည့်ရက်အရေအတွက်နှင့် မြှောက်ထားသည်။",
+    "zh": "TikTok 的预算页面写明，广告系列的日预算或总预算须超过 US$50，广告组的日预算须超过 US$20；广告组的总预算为 US$20 乘以投放天数。",
+    "de": "Auf der Budgetseite von TikTok steht, dass das Tages- oder Gesamtbudget einer Kampagne über US$50 liegen muss und das Tagesbudget einer Anzeigengruppe über US$20. Das Gesamtbudget einer Anzeigengruppe ist US$20 mal die Laufzeit in Tagen."
+   },
+   "src": "https://ads.tiktok.com/resources/help/article/budget?lang=en"
+  },
+  {
+   "t": {
+    "en": "Google Ads treats the daily budget as an average. On any day it can charge up to two times the average daily budget for most campaigns, and in a month up to 30.4 times. A US$10 budget allows US$20 on a day and US$304 in a month.",
+    "th": "Google Ads ถือว่างบรายวันเป็นค่าเฉลี่ย ในแต่ละวันอาจเรียกเก็บสูงสุดสองเท่าของงบรายวันเฉลี่ยสำหรับแคมเปญส่วนใหญ่ และในหนึ่งเดือนสูงสุด 30.4 เท่า งบ US$10 เรียกเก็บได้ US$20 ในหนึ่งวันและ US$304 ในหนึ่งเดือน",
+    "my": "Google Ads သည် နေ့စဉ်ဘတ်ဂျက်ကို ပျမ်းမျှအဖြစ် သတ်မှတ်သည်။ ကမ်ပိန်းအများစုတွင် တစ်နေ့လျှင် ပျမ်းမျှနေ့စဉ်ဘတ်ဂျက်၏ နှစ်ဆအထိလည်းကောင်း၊ တစ်လလျှင် 30.4 ဆအထိလည်းကောင်း ကောက်ခံနိုင်သည်။ US$10 ဘတ်ဂျက်သည် တစ်နေ့ US$20 နှင့် တစ်လ US$304 အထိ ခွင့်ပြုသည်။",
+    "zh": "Google Ads 把日预算当作平均值。大多数广告系列某一天最多可扣到平均日预算的两倍，一个月最多扣到 30.4 倍。日预算 US$10 时，一天最多 US$20，一个月最多 US$304。",
+    "de": "Google Ads behandelt das Tagesbudget als Durchschnitt. Bei den meisten Kampagnen darf an einem Tag bis zum Doppelten des durchschnittlichen Tagesbudgets abgebucht werden und in einem Monat bis zum 30,4-Fachen. Ein Budget von US$10 erlaubt US$20 an einem Tag und US$304 im Monat."
+   },
+   "src": "https://support.google.com/google-ads/answer/6385083?hl=en"
+  },
+  {
+   "t": {
+    "en": "In late 2025 Facebook's ad reach in Thailand was 51.5 million people (71.9% of the population), TikTok's 56.6 million adults and Instagram's 20.6 million. DataReportal says these are advertising reach estimates, which may not match active user counts.",
+    "th": "ปลายปี 2568 โฆษณาบน Facebook เข้าถึงคนในไทย 51.5 ล้านคน (71.9% ของประชากร) TikTok 56.6 ล้านคนที่เป็นผู้ใหญ่ และ Instagram 20.6 ล้านคน DataReportal ระบุว่าเป็นตัวเลขประมาณการการเข้าถึงโฆษณา ซึ่งอาจไม่ตรงกับจำนวนผู้ใช้งานจริง",
+    "my": "2025 နှစ်ကုန်ပိုင်းတွင် ထိုင်းနိုင်ငံ၌ Facebook ကြော်ငြာ၏ ရောက်ရှိမှုမှာ လူ 51.5 သန်း (လူဦးရေ၏ 71.9%)၊ TikTok မှာ လူကြီး 56.6 သန်းနှင့် Instagram မှာ 20.6 သန်း ဖြစ်သည်။ ဤကိန်းဂဏန်းများသည် ကြော်ငြာရောက်ရှိမှု ခန့်မှန်းချက်များဖြစ်ပြီး တက်ကြွအသုံးပြုသူအရေအတွက်နှင့် မကိုက်ညီနိုင်ဟု DataReportal က ဆိုသည်။",
+    "zh": "2025 年末，Facebook 在泰国的广告触达为 5,150 万人（占人口 71.9%），TikTok 为 5,660 万成年人，Instagram 为 2,060 万。DataReportal 说明这些是广告触达的估算，可能与活跃用户数不一致。",
+    "de": "Ende 2025 erreichte Facebook-Werbung in Thailand 51,5 Millionen Menschen (71,9 % der Bevölkerung), TikTok 56,6 Millionen Erwachsene und Instagram 20,6 Millionen. DataReportal hält fest, dass dies Schätzungen der Anzeigenreichweite sind, die nicht mit den Zahlen aktiver Nutzender übereinstimmen müssen."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Thai agency, Facebook ads: service fee and ad spend listed as two lines",
+    "th": "เอเจนซี่ไทย โฆษณา Facebook: ค่าบริการและค่าโฆษณาแยกเป็นสองรายการ",
+    "my": "ထိုင်းအေဂျင်စီတစ်ခု၊ Facebook ကြော်ငြာ — ဝန်ဆောင်ခနှင့် ကြော်ငြာစရိတ်ကို နှစ်ကြောင်းခွဲဖော်ပြ",
+    "zh": "泰国代理机构的 Facebook 广告：服务费和广告费分两行列出",
+    "de": "Eine thailändische Agentur, Facebook-Anzeigen: Servicegebühr und Anzeigenbudget in zwei Zeilen"
+   },
+   "p": {
+    "en": "฿4,500 a month service fee, with ฿15,000 of ad spend listed; 7% VAT extra",
+    "th": "ค่าบริการ ฿4,500 ต่อเดือน พร้อมค่าโฆษณา ฿15,000 ที่ระบุไว้ ยังไม่รวม VAT 7%",
+    "my": "လစဉ် ဝန်ဆောင်ခ ฿4,500၊ ဖော်ပြထားသော ကြော်ငြာစရိတ် ฿15,000၊ VAT 7% ထပ်ဆောင်း",
+    "zh": "服务费每月 ฿4,500，另列广告费 ฿15,000；另加 7% 增值税",
+    "de": "Servicegebühr ฿4,500 im Monat, dazu ฿15,000 Anzeigenbudget; 7 % MWST extra"
+   },
+   "src": "https://www.smejump.co.th/facebook-ads-pricing/"
+  },
+  {
+   "t": {
+    "en": "Another Thai agency, Facebook ads: four packages, ad spend extra",
+    "th": "เอเจนซี่ไทยอีกราย โฆษณา Facebook: สี่แพ็กเกจ ไม่รวมค่าโฆษณา",
+    "my": "နောက်ထိုင်းအေဂျင်စီတစ်ခု၊ Facebook ကြော်ငြာ — အစီအစဉ်လေးခု၊ ကြော်ငြာစရိတ် ခြားနား",
+    "zh": "另一家泰国代理机构的 Facebook 广告：四档套餐，广告费另计",
+    "de": "Eine andere thailändische Agentur, Facebook-Anzeigen: vier Pakete, Anzeigenbudget extra"
+   },
+   "p": {
+    "en": "฿10,000, ฿15,000, ฿25,900 and ฿53,900 for 30 days; its FAQ gives ฿5,000–10,000 a month as a minimum ad spend",
+    "th": "฿10,000, ฿15,000, ฿25,900 และ ฿53,900 ต่อ 30 วัน คำถามที่พบบ่อยระบุงบโฆษณาขั้นต่ำ ฿5,000–10,000 ต่อเดือน",
+    "my": "30 ရက်လျှင် ฿10,000၊ ฿15,000၊ ฿25,900 နှင့် ฿53,900၊ FAQ တွင် အနည်းဆုံး ကြော်ငြာစရိတ် လစဉ် ฿5,000–10,000 ဟု ဆိုသည်",
+    "zh": "30 天 ฿10,000、฿15,000、฿25,900 和 ฿53,900；其常见问题给出的广告费下限为每月 ฿5,000–10,000",
+    "de": "฿10,000, ฿15,000, ฿25,900 und ฿53,900 für 30 Tage; die FAQ nennt ฿5,000–10,000 im Monat als Mindestbudget für Anzeigen"
+   },
+   "src": "https://www.myproads.com/facebook-ads.html"
+  },
+  {
+   "t": {
+    "en": "TikTok ad spend minimums",
+    "th": "ขั้นต่ำของงบโฆษณา TikTok",
+    "my": "TikTok ကြော်ငြာစရိတ် အနည်းဆုံး",
+    "zh": "TikTok 广告预算下限",
+    "de": "Mindestbudgets für TikTok-Anzeigen"
+   },
+   "p": {
+    "en": "More than US$50 for a campaign and more than US$20 a day for an ad group",
+    "th": "เกิน US$50 ต่อแคมเปญ และเกิน US$20 ต่อวันต่อกลุ่มโฆษณา",
+    "my": "ကမ်ပိန်းတစ်ခုလျှင် US$50 ထက်ပို၊ ကြော်ငြာအုပ်စုတစ်ခုလျှင် တစ်နေ့ US$20 ထက်ပို",
+    "zh": "广告系列须超过 US$50；广告组每天须超过 US$20",
+    "de": "Über US$50 je Kampagne und über US$20 am Tag je Anzeigengruppe"
+   },
+   "src": "https://ads.tiktok.com/resources/help/article/budget?lang=en"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to have someone run Facebook ads?",
+    "th": "จ้างคนยิงแอด Facebook ราคาเท่าไร",
+    "my": "Facebook ကြော်ငြာကို တစ်ယောက်ယောက်အား လုပ်ခိုင်းရန် ဘယ်လောက်ကျသနည်း။",
+    "zh": "请人投放 Facebook 广告要多少钱？",
+    "de": "Was kostet es, Facebook-Anzeigen von jemandem schalten zu lassen?"
+   },
+   "a": {
+    "en": "One Thai agency lists a service fee of ฿4,500 a month and ad spend of ฿15,000, both before 7% VAT, for promoting a post, a page or a website with remarketing. The page says unspent ad money carries over to the next month.",
+    "th": "เอเจนซี่ไทยรายหนึ่งระบุค่าบริการ ฿4,500 ต่อเดือน และค่าโฆษณา ฿15,000 ทั้งคู่ยังไม่รวม VAT 7% สำหรับโปรโมทโพสต์ โปรโมทเพจ หรือโปรโมทเว็บไซต์พร้อมรีมาร์เก็ตติ้ง หน้าเว็บระบุว่าเงินโฆษณาที่ใช้ไม่หมดยกไปเดือนถัดไป",
+    "my": "ထိုင်းအေဂျင်စီတစ်ခုသည် ပို့စ်၊ စာမျက်နှာ သို့မဟုတ် ဝဘ်ဆိုက်ကို remarketing ဖြင့် ပရိုမိုးလုပ်ရန် လစဉ်ဝန်ဆောင်ခ ฿4,500 နှင့် ကြော်ငြာစရိတ် ฿15,000 ကို VAT 7% မထည့်မီ ဖော်ပြသည်။ မသုံးရသေးသော ကြော်ငြာငွေကို နောက်လသို့ ပို့ထားနိုင်သည်ဟု စာမျက်နှာတွင် ဆိုသည်။",
+    "zh": "一家泰国代理机构为推广帖子、主页或网站（含再营销）列出服务费每月 ฿4,500、广告费 ฿15,000，均未含 7% 增值税。页面写明未用完的广告费可结转到下个月。",
+    "de": "Eine thailändische Agentur führt für das Bewerben eines Beitrags, einer Seite oder einer Website mit Remarketing eine Servicegebühr von ฿4,500 im Monat und ฿15,000 Anzeigenbudget auf, beides vor 7 % MWST. Laut Seite wird nicht ausgegebenes Anzeigengeld in den nächsten Monat übertragen."
+   },
+   "src": "https://www.smejump.co.th/facebook-ads-pricing/"
+  },
+  {
+   "q": {
+    "en": "Is the ad spend part of the agency's fee?",
+    "th": "ค่าโฆษณารวมอยู่ในค่าบริการของเอเจนซี่หรือไม่",
+    "my": "ကြော်ငြာစရိတ်သည် အေဂျင်စီ၏ ဝန်ဆောင်ခထဲတွင် ပါပါသလား။",
+    "zh": "广告费包含在代理机构的费用里吗？",
+    "de": "Gehört das Anzeigenbudget zur Gebühr der Agentur?"
+   },
+   "a": {
+    "en": "The four package fees on one Thai agency's page leave out the ad spend itself. Its FAQ gives ฿5,000–10,000 a month as a minimum ad spend. For a company, the price is the base price times 1.04 for withholding tax and VAT.",
+    "th": "ในหน้าเว็บของเอเจนซี่ไทยรายหนึ่ง ค่าบริการทั้งสี่แพ็กเกจไม่รวมค่าโฆษณา คำถามที่พบบ่อยระบุงบโฆษณาขั้นต่ำ ฿5,000–10,000 ต่อเดือน สำหรับนิติบุคคล ราคาคือราคาฐานคูณ 1.04 เพื่อรวมภาษีหัก ณ ที่จ่ายและ VAT",
+    "my": "ထိုင်းအေဂျင်စီတစ်ခု၏ စာမျက်နှာတွင် အစီအစဉ်လေးခု၏ ဝန်ဆောင်ခများသည် ကြော်ငြာစရိတ်ကို မပါဝင်ပါ။ ၎င်း၏ FAQ တွင် အနည်းဆုံး ကြော်ငြာစရိတ် လစဉ် ฿5,000–10,000 ဟု ဆိုသည်။ ကုမ္ပဏီတစ်ခုအတွက် စျေးနှုန်းမှာ နှုတ်ယူအခွန်နှင့် VAT အတွက် အခြေခံစျေး × 1.04 ဖြစ်သည်။",
+    "zh": "在一家泰国代理机构的页面上，四档套餐的费用都不含广告费本身。其常见问题给出的广告费下限为每月 ฿5,000–10,000。对公司，价格为基础价乘以 1.04，用来含预扣税和增值税。",
+    "de": "Auf der Seite einer thailändischen Agentur schliessen die Gebühren der vier Pakete das Anzeigenbudget selbst aus. Die FAQ nennt ฿5,000–10,000 im Monat als Mindestbudget für Anzeigen. Für eine Firma gilt der Grundpreis mal 1,04 wegen Quellensteuer und MWST."
+   },
+   "src": "https://www.myproads.com/facebook-ads.html"
+  },
+  {
+   "q": {
+    "en": "What is the minimum budget on TikTok ads?",
+    "th": "งบขั้นต่ำของโฆษณา TikTok เท่าไร",
+    "my": "TikTok ကြော်ငြာ၏ အနည်းဆုံးဘတ်ဂျက် ဘယ်လောက်လဲ။",
+    "zh": "TikTok 广告的最低预算是多少？",
+    "de": "Wie hoch ist das Mindestbudget für TikTok-Anzeigen?"
+   },
+   "a": {
+    "en": "TikTok's budget page says a campaign's daily budget or lifetime budget must exceed US$50, and an ad group's daily budget must exceed US$20. An ad group's lifetime budget is US$20 times the total days, past days included.",
+    "th": "หน้างบประมาณของ TikTok ระบุว่างบรายวันหรืองบตลอดแคมเปญของแคมเปญต้องเกิน US$50 และงบรายวันของกลุ่มโฆษณาต้องเกิน US$20 งบตลอดแคมเปญของกลุ่มโฆษณา คือ US$20 คูณจำนวนวันทั้งหมด รวมวันที่ผ่านมาแล้ว",
+    "my": "TikTok ၏ ဘတ်ဂျက်စာမျက်နှာတွင် ကမ်ပိန်းတစ်ခု၏ နေ့စဉ်ဘတ်ဂျက် သို့မဟုတ် စုစုပေါင်းဘတ်ဂျက်သည် US$50 ထက် ပိုရမည်၊ ကြော်ငြာအုပ်စုတစ်ခု၏ နေ့စဉ်ဘတ်ဂျက်သည် US$20 ထက် ပိုရမည်ဟု ဆိုသည်။ ကြော်ငြာအုပ်စု၏ စုစုပေါင်းဘတ်ဂျက်မှာ US$20 ကို ကျော်လွန်ခဲ့သောရက်များအပါအဝင် ရက်စုစုပေါင်းနှင့် မြှောက်ထားသည်။",
+    "zh": "TikTok 的预算页面写明，广告系列的日预算或总预算须超过 US$50，广告组的日预算须超过 US$20；广告组的总预算为 US$20 乘以总天数（含已过去的天数）。",
+    "de": "Auf der Budgetseite von TikTok steht, dass das Tages- oder Gesamtbudget einer Kampagne über US$50 liegen muss und das Tagesbudget einer Anzeigengruppe über US$20. Das Gesamtbudget einer Anzeigengruppe ist US$20 mal die Gesamtzahl der Tage, vergangene Tage eingerechnet."
+   },
+   "src": "https://ads.tiktok.com/resources/help/article/budget?lang=en"
+  },
+  {
+   "q": {
+    "en": "How does a Google Ads daily budget work?",
+    "th": "งบรายวันของ Google Ads ทำงานอย่างไร",
+    "my": "Google Ads နေ့စဉ်ဘတ်ဂျက် ဘယ်လို အလုပ်လုပ်သနည်း။",
+    "zh": "Google Ads 的日预算怎么运作？",
+    "de": "Wie funktioniert ein Tagesbudget bei Google Ads?"
+   },
+   "a": {
+    "en": "Google says the average daily budget is the planned daily spend, averaged over the month. Spend can run under it on some days and over it on others, up to two times the budget on a day and 30.4 times in a month for most campaigns. Dividing a monthly amount by 30.4 gives the daily figure.",
+    "th": "Google ระบุว่างบรายวันเฉลี่ยคือค่าใช้จ่ายรายวันที่วางแผนไว้ เฉลี่ยทั้งเดือน บางวันใช้ต่ำกว่า บางวันสูงกว่า สูงสุดสองเท่าของงบในหนึ่งวันและ 30.4 เท่าในหนึ่งเดือนสำหรับแคมเปญส่วนใหญ่ หารยอดรายเดือนด้วย 30.4 จะได้ตัวเลขรายวัน",
+    "my": "Google က ပျမ်းမျှနေ့စဉ်ဘတ်ဂျက်သည် လတစ်လအတွင်း ပျမ်းမျှထားသော စီစဉ်ထားသည့် နေ့စဉ်အသုံးစရိတ်ဖြစ်သည်ဟု ဆိုသည်။ တစ်ခါတစ်ရံ ထိုထက်နည်း၍ တစ်ခါတစ်ရံ ပိုသုံးနိုင်ပြီး ကမ်ပိန်းအများစုတွင် တစ်နေ့လျှင် ဘတ်ဂျက်၏ နှစ်ဆအထိ၊ တစ်လလျှင် 30.4 ဆအထိ ဖြစ်သည်။ လစဉ်ပမာဏကို 30.4 ဖြင့် စားလျှင် နေ့စဉ်ကိန်းဂဏန်း ရသည်။",
+    "zh": "Google 说明，平均日预算是计划的每日花费，按一个月取平均。有的日子花得少，有的日子花得多；大多数广告系列一天最多可到预算的两倍，一个月最多 30.4 倍。把月度金额除以 30.4 就得到日预算。",
+    "de": "Laut Google ist das durchschnittliche Tagesbudget die geplante tägliche Ausgabe, über den Monat gemittelt. An manchen Tagen liegt die Ausgabe darunter, an anderen darüber, bei den meisten Kampagnen bis zum Doppelten des Budgets an einem Tag und zum 30,4-Fachen im Monat. Ein Monatsbetrag geteilt durch 30,4 ergibt den Tageswert."
+   },
+   "src": "https://support.google.com/google-ads/answer/6385083?hl=en"
+  },
+  {
+   "q": {
+    "en": "Does Meta verify advertisers in Thailand?",
+    "th": "Meta ยืนยันตัวตนผู้ลงโฆษณาในไทยหรือไม่",
+    "my": "Meta က ထိုင်းနိုင်ငံရှိ ကြော်ငြာရှင်များကို အတည်ပြုပါသလား။",
+    "zh": "Meta 会在泰国核实广告主吗？",
+    "de": "Verifiziert Meta Werbetreibende in Thailand?"
+   },
+   "a": {
+    "en": "Meta's post of 27 October 2025 says advertisers whose ads reach Thailand and who meet its criteria must verify who benefits from and pays for their ads. The names appear in Ad info and the Ad Library. A notified advertiser has up to 7 days, and without verification its ads are not delivered to users in Thailand.",
+    "th": "โพสต์ของ Meta ลงวันที่ 27 ตุลาคม 2568 ระบุว่าผู้ลงโฆษณาที่โฆษณาเข้าถึงผู้ใช้ในไทยและเข้าเกณฑ์ของ Meta ต้องยืนยันว่าใครได้ประโยชน์และใครจ่ายค่าโฆษณา ชื่อแสดงใน Ad info และ Ad Library ผู้ที่ได้รับแจ้งมีเวลาไม่เกิน 7 วัน หากไม่ยืนยัน โฆษณาจะไม่แสดงต่อผู้ใช้ในไทย",
+    "my": "Meta ၏ 2025 ခုနှစ် အောက်တိုဘာ 27 ရက်စွဲပို့စ်တွင် ထိုင်းနိုင်ငံရှိ အသုံးပြုသူများထံ ကြော်ငြာရောက်ပြီး Meta ၏ စံနှုန်းနှင့် ကိုက်ညီသော ကြော်ငြာရှင်များသည် ကြော်ငြာမှ အကျိုးခံစားသူနှင့် ငွေပေးသူကို အတည်ပြုရမည်ဟု ဆိုသည်။ အမည်များသည် Ad info နှင့် Ad Library တွင် ပေါ်သည်။ အကြောင်းကြားခံရသူတွင် 7 ရက်အထိ ရှိပြီး အတည်မပြုလျှင် ကြော်ငြာများကို ထိုင်းအသုံးပြုသူများထံ မပို့ပါ။",
+    "zh": "Meta 2025 年 10 月 27 日的文章写明，广告触达泰国用户且符合 Meta 条件的广告主，须验证谁从广告中受益、谁为广告付款。名称显示在 Ad info 和 Ad Library。收到通知的广告主有最多 7 天；未通过验证，广告就不会投放给泰国用户。",
+    "de": "Im Beitrag von Meta vom 27. Oktober 2025 steht, dass Werbetreibende, deren Anzeigen Nutzende in Thailand erreichen und die Metas Kriterien erfüllen, verifizieren müssen, wer von den Anzeigen profitiert und wer sie bezahlt. Die Namen erscheinen in Ad info und in der Ad Library. Wer benachrichtigt wird, hat bis zu 7 Tage, und ohne Verifizierung werden die Anzeigen nicht an Nutzende in Thailand ausgeliefert."
+   },
+   "src": "https://developers.secure.facebook.com/blog/post/2025/10/27/advertiser-verification-transparency-thailand/"
+  }
+ ],
+ "related": [
+  "fb-care",
+  "restaurant-desk",
+  "grab",
+  "trade-photos",
+  "social",
+  "video"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Meta: advertiser verification for ads delivered to Thailand",
+    "th": "Meta: การยืนยันผู้ลงโฆษณาสำหรับโฆษณาที่แสดงในไทย",
+    "my": "Meta: ထိုင်းသို့ ပို့သော ကြော်ငြာများအတွက် ကြော်ငြာရှင်အတည်ပြုခြင်း",
+    "zh": "Meta：面向泰国投放广告的广告主验证",
+    "de": "Meta: Verifizierung von Werbetreibenden für Anzeigen in Thailand"
+   },
+   "href": "https://developers.secure.facebook.com/blog/post/2025/10/27/advertiser-verification-transparency-thailand/"
+  },
+  {
+   "t": {
+    "en": "Google Ads Help: about average daily budgets",
+    "th": "ความช่วยเหลือ Google Ads: งบรายวันเฉลี่ย",
+    "my": "Google Ads အကူအညီ: ပျမ်းမျှနေ့စဉ်ဘတ်ဂျက်များ",
+    "zh": "Google Ads 帮助：平均日预算",
+    "de": "Google Ads Hilfe: durchschnittliche Tagesbudgets"
+   },
+   "href": "https://support.google.com/google-ads/answer/6385083?hl=en"
+  }
+ ],
+ "glyphs": [
+  "megaphone",
+  "rocket",
+  "abacus"
+ ]
+}

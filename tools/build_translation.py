@@ -1,41 +1,54 @@
 #!/usr/bin/env python3
-"""Build the translation pages in three languages from one table.
+"""Build the translation pages in four languages from one table.
 
     python3 tools/build_translation.py
 
 Writes docs/translation/index.html (English), docs/translation/th/index.html
-(Thai) and docs/translation/my/index.html (Burmese). One source, so the three
-pages say the same thing.
+(Thai), docs/translation/my/index.html (Burmese) and docs/translation/de/index.html
+(German), in the shop's frame (tools/pages.py; the link cards are named in data/pages.json).
+One source, so the pages say the same thing.
 """
 
+import sys
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# Interpreting walks monthly with the services list (data/services.json, functions/_services.js);
+# the page shows the opening or last-built price and reads today's from /api/services.
+import json as _json
+_SVC = {it["id"]: it for s in _json.loads((ROOT / "data" / "services.json").read_text())["sections"] for it in s.get("items", [])}
+_LIVE = _json.loads((ROOT / "data" / "services.live.json").read_text()) if (ROOT / "data" / "services.live.json").exists() else {}
+def _p(i):
+    return _LIVE.get("services/" + i) or "฿{:,}".format(_SVC[i]["baht"])
+def _t(i):
+    return _LIVE.get("services/" + i + "#tail") or "฿{:,}".format(_SVC[i]["tail"])
+def _n(v):
+    return int(str(v).replace("฿", "").replace(",", ""))
+_BOX = {"new": [_n(_p("lang-new")), 5, _n(_t("lang-new"))], "check": [_n(_p("lang-check")), 5, _n(_t("lang-check"))], "stamp": _n(_p("lang-stamp"))}
 DOCS = ROOT / "docs"
 ORIGIN = "https://hongdam.net"
 
-PAGES = {"en": "/translation/", "th": "/translation/th/", "my": "/translation/my/"}
-SWITCH = [("en", "English"), ("th", "ไทย"), ("my", "မြန်မာ")]
+PAGES = {"en": "/translation/", "th": "/translation/th/", "my": "/translation/my/", "de": "/translation/de/"}
+SWITCH = [("en", "English"), ("th", "ไทย"), ("my", "မြန်မာ"), ("de", "Deutsch")]
 
 W = {
     "en": {
-        "card": "translation",
-        "card_alt": "Card: Translation between Thai, English and Burmese, Hongdam.",
         "title": "Translation — Thai, English, Burmese · Hongdam",
-        "desc": "Hongdam translates papers, business text and conversations between Thai, English and Burmese. Chiang Rai and Chiang Mai in person; by phone or video anywhere.",
+        "desc": "Hongdam translates documents, business text and conversations between Thai, English and Burmese. In person in Chiang Rai and Chiang Mai; by phone or video from anywhere.",
         "h1": "Translation",
         "sub": "Thai · English · Burmese",
-        "lede": "Papers, business text and conversations, between Thai, English and Burmese. In person in Chiang Rai and Chiang Mai; by phone or video anywhere.",
+        "lede": "Documents, business text and conversations, between Thai, English and Burmese. In person in Chiang Rai and Chiang Mai; by phone or video from anywhere.",
         "pairs_h": "Languages",
         "pairs": ["Thai ⇄ English", "Thai ⇄ Burmese", "English ⇄ Burmese"],
-        "pairs_note": "Burmese comes back in Unicode Myanmar script. A Zawgyi copy is there on request, for phones still set to it.",
-        "papers_h": "Papers",
+        "pairs_note": "We deliver Burmese in Unicode Myanmar script. On request we also give a Zawgyi copy, for phones that still use Zawgyi.",
+        "papers_h": "Documents",
         "papers": [
             "Passport and ID pages", "Pink card and Certificate of Identity (CI)",
             "House registration (tabien baan)", "Birth, marriage and divorce certificates",
             "Police clearance", "Bank letters and statements",
-            "Employment contracts and payslips", "Work-permit papers",
+            "Employment contracts and payslips", "Work-permit documents",
             "School transcripts and diplomas", "Medical records and certificates",
             "Leases and rental agreements", "Letters from offices, schools and hospitals",
         ],
@@ -43,7 +56,7 @@ W = {
         "biz": [
             "Menus, signs and price boards", "Product labels and packaging",
             "Staff notices, workplace rules and safety signs, for Burmese-speaking staff",
-            "Contracts set in two languages side by side", "Websites and apps, built or translated by the studio",
+            "Contracts with two languages side by side", "Websites and apps, built or translated by us",
             "LINE, Facebook and TikTok posts",
         ],
         "talk_h": "Interpreting",
@@ -56,28 +69,26 @@ W = {
             "Job interviews and staff training",
         ],
         "stamp_h": "The stamp",
-        "stamp": "A translated page carries the Hongdam stamp: the date, the translator's name, and a QR code that opens hongdam.net/services. We don't notarize. On request we confirm a translation is ours.",
+        "stamp": "A translated page carries the Hongdam stamp: the date, the translator's name, and a QR code that opens hongdam.net/services. We do not notarize (a notary is an official who certifies documents). If you ask, we confirm that a translation is ours.",
         "stamp_alt": "Round Hongdam translation stamp with blanks for the date and the translator's name, and a QR code.",
         "how_h": "How it works",
         "how": [
-            ("Photos", "A photo or a scan of each page. A phone photo works when every line can be read."),
-            ("Price", "From the table above, in writing before any work starts. Interpreting by quote."),
-            ("Delivery", "A PDF by email or LINE, and as stamped paper if you ask for it."),
+            ("Photos", "Send a photo or a scan of each page. A phone photo is fine if you can read every line."),
+            ("Price", "We take the price from the table above and send it in writing before any work starts."),
+            ("Delivery", "We send a PDF by email or LINE. If you ask, we also send stamped paper."),
         ],
         "form_h": "Contact",
-        "f_name": "Name", "f_email": "Email", "f_from": "From", "f_to": "Into",
-        "f_kind": "What it is", "f_kinds": ["Papers", "Checking a translation", "Business text", "Interpreting", "Something else"],
+        "f_name": "Name", "f_email": "Email", "f_from": "From language", "f_to": "Into language",
+        "f_kind": "Type of job", "f_kinds": ["Documents", "Checking a translation", "Business text", "Interpreting", "Something else"],
         "f_pages": "Pages, words or hours", "f_pages_ph": "For example: 3 pages",
-        "f_msg": "Anything else", "f_msg_ph": "What the papers are for, and the date you need them.",
+        "f_msg": "Anything else", "f_msg_ph": "What the documents are for, and the date you need them.",
         "f_send": "Send", "f_hp": "Leave this empty",
         "langs": ["Thai", "English", "Burmese"],
-        "s_need": "Email, please.", "s_sending": "Sending…",
-        "s_ok": "Sent. A price comes back to that address.", "s_err": "Could not send that just now. Email nan@motdang.net instead.",
+        "s_need": "Please enter your email address.", "s_sending": "Sending…",
+        "s_ok": "Sent. We send the price to that email address.", "s_err": "Your message was not sent. Email nan@motdang.net instead.",
         "or_mail": "Or email", "home": "hongdam.net",
     },
     "th": {
-        "card": "translation-th",
-        "card_alt": "การ์ด: แปลเอกสาร ไทย อังกฤษ พม่า, หงส์ดำ",
         "title": "แปลเอกสาร ไทย อังกฤษ พม่า · หงส์ดำ",
         "desc": "หงส์ดำแปลเอกสาร ข้อความธุรกิจ และล่ามสนทนา ระหว่างภาษาไทย อังกฤษ และพม่า ล่ามตัวจริงที่เชียงรายและเชียงใหม่ ทางโทรศัพท์หรือวิดีโอได้ทุกที่",
         "h1": "แปลภาษา",
@@ -99,7 +110,7 @@ W = {
         "biz": [
             "เมนู ป้าย และป้ายราคา", "ฉลากสินค้าและบรรจุภัณฑ์",
             "ประกาศพนักงาน กฎในที่ทำงาน และป้ายความปลอดภัย สำหรับพนักงานที่พูดพม่า",
-            "สัญญาสองภาษาเทียบกันในหน้าเดียว", "เว็บไซต์และแอป ที่สตูดิโอสร้างหรือแปล",
+            "สัญญาสองภาษาเทียบกันในหน้าเดียว", "เว็บไซต์และแอป ที่เราสร้างหรือแปล",
             "โพสต์ LINE, Facebook และ TikTok",
         ],
         "talk_h": "ล่าม",
@@ -117,7 +128,7 @@ W = {
         "how_h": "ขั้นตอน",
         "how": [
             ("รูปถ่าย", "รูปถ่ายหรือสแกนทุกหน้า รูปจากโทรศัพท์ใช้ได้ถ้าอ่านออกทุกบรรทัด"),
-            ("ราคา", "ตามตารางด้านบน เป็นลายลักษณ์อักษรก่อนเริ่มงาน ล่ามคิดตามใบเสนอราคา"),
+            ("ราคา", "ตามตารางด้านบน เป็นลายลักษณ์อักษรก่อนเริ่มงาน"),
             ("ส่งคืน", "เป็น PDF ทางอีเมลหรือ LINE และฉบับกระดาษประทับตราถ้าต้องการ"),
         ],
         "form_h": "ติดต่อ",
@@ -128,12 +139,10 @@ W = {
         "f_send": "ส่ง", "f_hp": "เว้นว่างช่องนี้",
         "langs": ["ไทย", "อังกฤษ", "พม่า"],
         "s_need": "ขออีเมลด้วย", "s_sending": "กำลังส่ง…",
-        "s_ok": "ส่งแล้ว ราคาจะส่งกลับไปที่อีเมลนั้น", "s_err": "ส่งไม่ได้ตอนนี้ อีเมลมาที่ nan@motdang.net แทนได้",
+        "s_ok": "ส่งแล้ว ราคาจะส่งกลับไปที่อีเมลนั้น", "s_err": "ส่งไม่สำเร็จ อีเมลมาที่ nan@motdang.net แทนได้",
         "or_mail": "หรืออีเมล", "home": "hongdam.net",
     },
     "my": {
-        "card": "translation-my",
-        "card_alt": "ကတ်: ဘာသာပြန် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ၊ Hongdam",
         "title": "ဘာသာပြန် — ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ · Hongdam",
         "desc": "Hongdam သည် ထိုင်း၊ အင်္ဂလိပ်နှင့် မြန်မာဘာသာများကြား စာရွက်စာတမ်း၊ လုပ်ငန်းသုံးစာနှင့် စကားပြန် လုပ်ပေးပါသည်။ ချင်းရိုင်နှင့် ချင်းမိုင်တွင် လူကိုယ်တိုင်၊ ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့် မည်သည့်နေရာမဆို။",
         "h1": "ဘာသာပြန်",
@@ -155,7 +164,7 @@ W = {
         "biz": [
             "မီနူး၊ ဆိုင်းဘုတ်နှင့် စျေးနှုန်းဘုတ်", "ပစ္စည်းတံဆိပ်နှင့် ထုပ်ပိုးမှု",
             "မြန်မာဝန်ထမ်းများအတွက် ဝန်ထမ်းကြေညာချက်၊ လုပ်ငန်းခွင်စည်းကမ်းနှင့် ဘေးကင်းရေး ဆိုင်းဘုတ်",
-            "ဘာသာနှစ်မျိုး ယှဉ်တွဲထားသော စာချုပ်", "စတူဒီယိုက တည်ဆောက် သို့မဟုတ် ဘာသာပြန်သော ဝက်ဘ်ဆိုက်နှင့် အက်ပ်",
+            "ဘာသာနှစ်မျိုး ယှဉ်တွဲထားသော စာချုပ်", "ကျွန်ုပ်တို့ တည်ဆောက် သို့မဟုတ် ဘာသာပြန်သော ဝက်ဘ်ဆိုက်နှင့် အက်ပ်",
             "LINE၊ Facebook နှင့် TikTok ပို့စ်များ",
         ],
         "talk_h": "စကားပြန်",
@@ -173,7 +182,7 @@ W = {
         "how_h": "လုပ်ပုံ",
         "how": [
             ("ဓာတ်ပုံ", "စာမျက်နှာတိုင်း၏ ဓာတ်ပုံ သို့မဟုတ် စကင်ဖိုင်။ စာကြောင်းတိုင်း ဖတ်၍ရလျှင် ဖုန်းဓာတ်ပုံဖြင့် ရပါသည်။"),
-            ("စျေးနှုန်း", "အထက်ပါ ဇယားအတိုင်း၊ အလုပ်မစမီ စာဖြင့်။ စကားပြန်ကို သီးခြား စျေးနှုန်းပေးပါသည်။"),
+            ("စျေးနှုန်း", "အထက်ပါ ဇယားအတိုင်း၊ အလုပ်မစမီ စာဖြင့်။"),
             ("ပြန်ပို့ခြင်း", "အီးမေးလ် သို့မဟုတ် LINE ဖြင့် PDF၊ တောင်းဆိုပါက တံဆိပ်တုံးထားသော စာရွက်မူ။"),
         ],
         "form_h": "ဆက်သွယ်ရန်",
@@ -184,67 +193,93 @@ W = {
         "f_send": "ပို့မည်", "f_hp": "ဤနေရာကို ဗလာထားပါ",
         "langs": ["ထိုင်း", "အင်္ဂလိပ်", "မြန်မာ"],
         "s_need": "အီးမေးလ် ထည့်ပေးပါ။", "s_sending": "ပို့နေသည်…",
-        "s_ok": "ပို့ပြီးပါပြီ။ စျေးနှုန်းကို ထိုအီးမေးလ်သို့ ပြန်ပို့ပါမည်။", "s_err": "ယခု မပို့နိုင်ပါ။ nan@motdang.net သို့ အီးမေးလ် ပို့ပါ။",
+        "s_ok": "ပို့ပြီးပါပြီ။ စျေးနှုန်းကို ထိုအီးမေးလ်သို့ ပြန်ပို့ပါမည်။", "s_err": "မပို့နိုင်ပါ။ nan@motdang.net သို့ အီးမေးလ် ပို့ပါ။",
         "or_mail": "သို့မဟုတ် အီးမေးလ်", "home": "hongdam.net",
+    },
+    "de": {
+        "title": "Übersetzung — Thai, Englisch, Burmesisch · Hongdam",
+        "desc": "Hongdam übersetzt Dokumente, Geschäftstexte und Gespräche zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.",
+        "h1": "Übersetzung",
+        "sub": "Thai · Englisch · Burmesisch",
+        "lede": "Dokumente, Geschäftstexte und Gespräche, zwischen Thai, Englisch und Burmesisch. Persönlich in Chiang Rai und Chiang Mai; per Telefon oder Video überall.",
+        "pairs_h": "Sprachen",
+        "pairs": ["Thai ⇄ Englisch", "Thai ⇄ Burmesisch", "Englisch ⇄ Burmesisch"],
+        "pairs_note": "Wir liefern Burmesisch in Unicode-Myanmar-Schrift. Auf Wunsch gibt es auch eine Zawgyi-Fassung, für Handys, die noch Zawgyi nutzen.",
+        "papers_h": "Dokumente",
+        "papers": [
+            "Reisepass- und Ausweisseiten", "Pink Card und Certificate of Identity (CI)",
+            "Hausregister (Tabien Baan)", "Geburts-, Heirats- und Scheidungsurkunden",
+            "Polizeiliches Führungszeugnis", "Bankschreiben und Kontoauszüge",
+            "Arbeitsverträge und Lohnabrechnungen", "Unterlagen zur Arbeitserlaubnis",
+            "Zeugnisse und Diplome", "Arztberichte und Atteste",
+            "Miet- und Pachtverträge", "Schreiben von Ämtern, Schulen und Krankenhäusern",
+        ],
+        "biz_h": "Geschäftliches",
+        "biz": [
+            "Speisekarten, Schilder und Preistafeln", "Produktetiketten und Verpackungen",
+            "Aushänge, Betriebsregeln und Sicherheitsschilder, für burmesischsprachiges Personal",
+            "Verträge in zwei Sprachen nebeneinander", "Websites und Apps, von uns gebaut oder übersetzt",
+            "Beiträge für LINE, Facebook und TikTok",
+        ],
+        "talk_h": "Dolmetschen",
+        "talk": [
+            "Per Telefon oder Video, von überall",
+            "Persönlich in Chiang Rai und Chiang Mai",
+            "Einwanderungsbehörde und Arbeitsamt der Provinz",
+            "Besuche in Krankenhaus und Klinik",
+            "Polizei, Vermieter und Schulen",
+            "Vorstellungsgespräche und Schulungen fürs Personal",
+        ],
+        "stamp_h": "Der Stempel",
+        "stamp": "Eine übersetzte Seite trägt den Hongdam-Stempel: das Datum, den Namen des Übersetzers und einen QR-Code, der hongdam.net/services öffnet. Wir beglaubigen nicht notariell. Auf Anfrage bestätigen wir, dass eine Übersetzung von uns ist.",
+        "stamp_alt": "Runder Übersetzungsstempel von Hongdam mit Feldern für Datum und Namen des Übersetzers und einem QR-Code.",
+        "how_h": "So funktioniert es",
+        "how": [
+            ("Fotos", "Ein Foto oder Scan jeder Seite. Ein Handyfoto genügt, wenn jede Zeile lesbar ist."),
+            ("Preis", "Der Preis steht in der Tabelle oben. Wir nennen ihn schriftlich, bevor die Arbeit beginnt."),
+            ("Lieferung", "Wir senden ein PDF per E-Mail oder LINE und auf Wunsch gestempeltes Papier."),
+        ],
+        "form_h": "Kontakt",
+        "f_name": "Name", "f_email": "E-Mail", "f_from": "Ausgangssprache", "f_to": "Zielsprache",
+        "f_kind": "Art des Auftrags", "f_kinds": ["Dokumente", "Prüfung einer Übersetzung", "Geschäftstext", "Dolmetschen", "Etwas anderes"],
+        "f_pages": "Seiten, Wörter oder Stunden", "f_pages_ph": "Zum Beispiel: 3 Seiten",
+        "f_msg": "Sonst noch etwas", "f_msg_ph": "Wofür die Dokumente sind und bis wann Sie sie brauchen.",
+        "f_send": "Senden", "f_hp": "Dieses Feld leer lassen",
+        "langs": ["Thai", "Englisch", "Burmesisch"],
+        "s_need": "Bitte eine E-Mail-Adresse.", "s_sending": "Wird gesendet…",
+        "s_ok": "Gesendet. Wir schicken den Preis an diese Adresse.", "s_err": "Die Nachricht wurde nicht gesendet. Schreiben Sie stattdessen an nan@motdang.net.",
+        "or_mail": "Oder per E-Mail", "home": "hongdam.net",
     },
 }
 
 
-PRICE_H = {"en": "Prices", "th": "ราคา", "my": "စျေးနှုန်း"}
+PRICE_H = {"en": "Prices", "th": "ราคา", "my": "စျေးနှုန်း", "de": "Preise"}
 PRICES = {
-    "en": [("New translation", "฿1,500", "Up to 5 pages; ฿500 a page after that."),
-           ("Checking an existing translation", "฿500", "Up to 5 pages; ฿150 a page after that."),
-           ("Stamp", "฿100", "A page."),
-           ("Interpreting", "Quote", "In writing, by the hour and the place.")],
-    "th": [("แปลใหม่", "฿1,500", "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿500"),
-           ("ตรวจงานแปลที่มีอยู่", "฿500", "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ ฿150"),
-           ("ตราประทับ", "฿100", "ต่อหน้า"),
-           ("ล่าม", "ใบเสนอราคา", "เป็นลายลักษณ์อักษร ตามชั่วโมงและสถานที่")],
-    "my": [("ဘာသာပြန်အသစ်", "฿1,500", "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် ฿500။"),
-           ("ရှိပြီးသား ဘာသာပြန်ကို စစ်ဆေးခြင်း", "฿500", "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် ฿150။"),
-           ("တံဆိပ်", "฿100", "တစ်မျက်နှာလျှင်။"),
-           ("စကားပြန်", "စျေးနှုန်း", "နာရီနှင့် နေရာအလိုက် စာဖြင့်။")],
+    "en": [("New translation", _p("lang-new"), "Up to 5 pages; {tail} a page after that.", "lang-new"),
+           ("Checking an existing translation", _p("lang-check"), "Up to 5 pages; {tail} a page after that.", "lang-check"),
+           ("Stamp", _p("lang-stamp"), "Per page.", "lang-stamp"),
+           ("Interpreting by phone or video", _p("interp-phone"), "Per 30 minutes.", "interp-phone"),
+           ("Interpreting in person", _p("interp-person"), "Up to 4 hours, in Chiang Rai or Chiang Mai.", "interp-person"),
+           ("Interpreting in person, full day", _p("interp-day"), "Up to 8 hours.", "interp-day")],
+    "th": [("แปลใหม่", _p("lang-new"), "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ {tail}", "lang-new"),
+           ("ตรวจงานแปลที่มีอยู่", _p("lang-check"), "ไม่เกิน 5 หน้า หน้าต่อไปหน้าละ {tail}", "lang-check"),
+           ("ตราประทับ", _p("lang-stamp"), "ต่อหน้า", "lang-stamp"),
+           ("ล่ามทางโทรศัพท์หรือวิดีโอ", _p("interp-phone"), "ต่อครึ่งชั่วโมง", "interp-phone"),
+           ("ล่ามไปด้วย", _p("interp-person"), "ไม่เกิน 4 ชั่วโมง ในเชียงรายหรือเชียงใหม่", "interp-person"),
+           ("ล่ามไปด้วยทั้งวัน", _p("interp-day"), "ไม่เกิน 8 ชั่วโมง", "interp-day")],
+    "my": [("ဘာသာပြန်အသစ်", _p("lang-new"), "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် {tail}။", "lang-new"),
+           ("ရှိပြီးသား ဘာသာပြန်ကို စစ်ဆေးခြင်း", _p("lang-check"), "၅ မျက်နှာအထိ၊ ထို့နောက် တစ်မျက်နှာလျှင် {tail}။", "lang-check"),
+           ("တံဆိပ်", _p("lang-stamp"), "တစ်မျက်နှာလျှင်။", "lang-stamp"),
+           ("စကားပြန်၊ ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့်", _p("interp-phone"), "မိနစ် ၃၀ လျှင်။", "interp-phone"),
+           ("စကားပြန်၊ လူကိုယ်တိုင်", _p("interp-person"), "၄ နာရီအထိ၊ ချင်းရိုင်နှင့် ချင်းမိုင်တွင်။", "interp-person"),
+           ("စကားပြန်၊ လူကိုယ်တိုင်၊ တစ်နေ့လုံး", _p("interp-day"), "၈ နာရီအထိ။", "interp-day")],
+    "de": [("Neue Übersetzung", _p("lang-new"), "Bis 5 Seiten; danach {tail} pro Seite.", "lang-new"),
+           ("Prüfung einer vorhandenen Übersetzung", _p("lang-check"), "Bis 5 Seiten; danach {tail} pro Seite.", "lang-check"),
+           ("Stempel", _p("lang-stamp"), "Pro Seite.", "lang-stamp"),
+           ("Dolmetschen per Telefon oder Video", _p("interp-phone"), "Pro 30 Minuten.", "interp-phone"),
+           ("Dolmetschen vor Ort", _p("interp-person"), "Bis 4 Stunden, in Chiang Rai oder Chiang Mai.", "interp-person"),
+           ("Dolmetschen vor Ort, ganzer Tag", _p("interp-day"), "Bis 8 Stunden.", "interp-day")],
 }
-
-CSS = """
-  .sub{display:block; font-family:"Avenir Next","Segoe UI",system-ui,"Thonburi","Noto Sans Thai","Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text",sans-serif; font-size:.42em; color:var(--gold-deep); font-weight:500; margin-top:10px; letter-spacing:.04em}
-  .switch{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 6px}
-  .switch a{border:1px solid var(--line); border-radius:999px; padding:6px 16px; font-size:16px}
-  .switch a[aria-current]{background:var(--gold); color:var(--lacquer); border-color:var(--gold)}
-  section{margin-top:52px}
-  h2{margin-bottom:16px}
-  .pairs{display:flex; flex-wrap:wrap; gap:12px}
-  .pairs span{background:var(--lacquer-2); border:1px solid var(--line); border-radius:10px; padding:12px 18px; font-size:20px; color:var(--gold)}
-  .prices{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; max-width:860px}
-  .prices div{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:18px}
-  .prices span{display:block; color:var(--cream); font-size:16px}
-  .prices b{display:block; font-family:Georgia,serif; font-size:30px; color:var(--gold); margin:4px 0}
-  .prices i{font-style:normal; color:var(--cream-dim); font-size:15px}
-  .note{margin-top:14px; max-width:62ch; color:var(--cream-dim); font-size:16px}
-  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
-  .col{background:var(--lacquer-2); border:1px solid var(--line); border-radius:12px; padding:20px}
-  .col h2{font-size:21px; color:var(--gold)}
-  .col ul{list-style:none}
-  .col li{padding:7px 0; border-top:1px solid var(--line); color:var(--cream-dim); font-size:16px}
-  .col li:first-child{border-top:0}
-  .stamp{display:grid; grid-template-columns:minmax(0,180px) 1fr; gap:24px; align-items:center; max-width:720px}
-  .stamp img{width:100%; height:auto; background:var(--cream); border-radius:50%; padding:6px}
-  .stamp p{color:var(--cream-dim)}
-  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; counter-reset:s}
-  .steps div{counter-increment:s; border-top:2px solid var(--gold-deep); padding-top:14px}
-  .steps b{display:block; color:var(--cream); font-size:18px}
-  .steps b::before{content:counter(s) ". "; color:var(--gold)}
-  .steps p{color:var(--cream-dim); font-size:16px; margin-top:4px}
-  form{max-width:640px; position:relative}
-  .row{display:grid; grid-template-columns:1fr 1fr; gap:0 16px}
-  .mail{margin-top:18px; font-size:16px; color:var(--cream-dim)}
-  footer{max-width:980px; margin:0 auto; padding:0 16px 48px; font-size:15px; color:var(--cream-dim)}
-  html[lang="my"] body{font-family:"Noto Sans Myanmar","Myanmar Sangam MN","Myanmar Text","Pyidaungsu",sans-serif; line-height:1.95; overflow-wrap:anywhere}
-  html[lang="my"] h1,html[lang="my"] h2{font-family:inherit; line-height:1.5}
-  html[lang="my"] label{text-transform:none; letter-spacing:0; font-size:15px}
-  @media (max-width:560px){.stamp{grid-template-columns:1fr}.stamp img{max-width:180px}.row{grid-template-columns:1fr}}
-"""
-
 
 def e(s):
     return escape(s, quote=True)
@@ -260,12 +295,13 @@ def page(lang):
         for k, n in SWITCH)
     lis = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
     opts = lambda xs: "".join(f"<option>{e(x)}</option>" for x in xs)
-    prices = "".join(f"<div><span>{e(a)}</span><b>{e(b)}</b><i>{e(c)}</i></div>" for a, b, c in PRICES[lang])
+    tailspan = lambda r: e(r[2]).replace("{tail}", f'<span class="amt amt-th" data-live="services/{r[3]}" data-part="tail">{e(_t(r[3]))}</span>') if len(r) > 3 and "{tail}" in r[2] else e(r[2])
+    prices = "".join(f"<div><span>{e(r[0])}</span><b class=\"amt amt-th\"{' data-live=' + chr(34) + 'services/' + r[3] + chr(34) if len(r) > 3 else ''}>{e(r[1])}</b><i>{tailspan(r)}</i></div>" for r in PRICES[lang])
     steps = "".join(f"<div><b>{e(h)}</b><p>{e(p)}</p></div>" for h, p in t["how"])
     pairs = "".join(f"<span>{e(p)}</span>" for p in t["pairs"])
     msgs = {k: t[k] for k in ("s_need", "s_sending", "s_ok", "s_err")}
     import json
-    ld = json.dumps({
+    ld = {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": t["title"],
@@ -276,98 +312,72 @@ def page(lang):
         "areaServed": ["Chiang Rai Province", "Chiang Mai Province", "Thailand"],
         "provider": {"@id": "https://hongdam.net/#org"},
         "isPartOf": {"@id": "https://hongdam.net/#site"},
-    }, ensure_ascii=False, indent=1)
+    }
     l0, l1, l2 = t["langs"]
-    return f"""<!DOCTYPE html>
-<html lang="{lang}" class="notranslate" translate="no">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(t["title"])}</title>
-<meta name="description" content="{e(t["desc"])}">
-<meta name="theme-color" content="#171009">
-<meta name="color-scheme" content="dark">
-<link rel="icon" href="/assets/favicon.svg">
-<link rel="canonical" href="{url}">
-{alts}
-<meta property="og:type" content="website">
-<meta property="og:url" content="{url}">
-<meta property="og:title" content="{e(t["title"])}">
-<meta property="og:description" content="{e(t["desc"])}">
-<meta property="og:image" content="https://hongdam.net/og/{t["card"]}.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="{e(t["card_alt"])}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/og/{t["card"]}.jpg"><meta name="twitter:image:alt" content="{e(t["card_alt"])}">
-<link rel="stylesheet" href="/assets/rt.css">
-<style>{CSS}</style>
-<meta name="google" content="notranslate">
-<meta name="robots" content="notranslate">
-<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
-<script type="application/ld+json">
-{ld}
-</script>
-</head>
-<body>
-<header class="top">
-  <a class="mark" href="/">HONGDAM <span lang="th">หงส์ดำ</span></a>
-  <nav><a href="/translation/" aria-current="page">Translation</a><a href="/own">Own</a><a href="/redteam">Red team</a><a href="/market">Market</a></nav>
-</header>
-<main>
-  <h1>{e(t["h1"])}<span class="sub">{e(t["sub"])}</span></h1>
-  <nav class="switch" aria-label="Language">{switch}</nav>
-  <p class="lede">{e(t["lede"])}</p>
+    sys.path.insert(0, str(ROOT / "tools"))
+    import pages as F
+    alts = {k: v.lstrip("/") for k, v in PAGES.items()}
+    langs = [(k, PAGES[k], n) for k, n in SWITCH]
+    main = f"""<main>
+{F.lead("translation", lang, h1=t["h1"], sub=t["sub"], sub_lang=lang).rstrip()}
+<p class="lede">{e(t["lede"])}</p>
+<div class="go"><a class="btn" href="#prices">{e(PRICE_H[lang])}</a> <a class="btn alt" href="#quote">{e(t["form_h"])}</a> <small>{e(PRICES[lang][0][0])} <span class="amt amt-th" data-live="services/{PRICES[lang][0][3]}">{e(PRICES[lang][0][1])}</span></small></div>
 
-  <section>
-    <h2>{e(t["pairs_h"])}</h2>
-    <div class="pairs">{pairs}</div>
-    <p class="note">{e(t["pairs_note"])}</p>
-  </section>
+<section>
+  <h2>{e(t["pairs_h"])}</h2>
+  <div class="pairs">{pairs}</div>
+  <p class="note">{e(t["pairs_note"])}</p>
+</section>
 
-  <section class="cols">
-    <div class="col"><h2>{e(t["papers_h"])}</h2><ul>{lis(t["papers"])}</ul></div>
-    <div class="col"><h2>{e(t["biz_h"])}</h2><ul>{lis(t["biz"])}</ul></div>
-    <div class="col"><h2>{e(t["talk_h"])}</h2><ul>{lis(t["talk"])}</ul></div>
-  </section>
+<section class="cols">
+  <div class="col"><h2>{e(t["papers_h"])}</h2><ul>{lis(t["papers"])}</ul></div>
+  <div class="col"><h2>{e(t["biz_h"])}</h2><ul>{lis(t["biz"])}</ul></div>
+  <div class="col"><h2>{e(t["talk_h"])}</h2><ul>{lis(t["talk"])}</ul></div>
+</section>
 
-  <section>
-    <h2>{e(PRICE_H[lang])}</h2>
-    <div class="prices">{prices}</div>
-  </section>
+<section id="prices">
+  <h2>{e(PRICE_H[lang])}</h2>
+  <div class="prices">{prices}</div>
+  <div data-paybox data-payee="0988239210" data-ref="HD-TR" data-lang="{lang}" data-verify="/api/pay/verify" data-line="@964yxgnk" data-prices='{_json.dumps(_BOX, separators=(",", ":"))}' data-live-prices="lang-new,lang-check,lang-stamp"></div>
+  <script type="module" src="/pay/paybox.js"></script>
+</section>
 
-  <section>
-    <h2>{e(t["stamp_h"])}</h2>
-    <div class="stamp">
-      <img src="/assets/stamp/hongdam-translation-stamp-red.svg" alt="{e(t["stamp_alt"])}" width="300" height="300" loading="lazy">
-      <p>{e(t["stamp"])}</p>
+<section>
+  <h2>{e(t["stamp_h"])}</h2>
+  <div class="stamp">
+    <img src="/assets/stamp/hongdam-translation-stamp-red.svg" alt="{e(t["stamp_alt"])}" width="300" height="300" loading="lazy">
+    <p>{e(t["stamp"])}</p>
+  </div>
+</section>
+
+<section>
+  <h2>{e(t["how_h"])}</h2>
+  <div class="steps">{steps}</div>
+</section>
+
+<section id="quote">
+  <h2>{e(t["form_h"])}</h2>
+  <form id="f" action="/api/contact" method="post" novalidate>
+    <div class="row">
+      <label>{e(t["f_name"])}<input name="name" type="text" autocomplete="name" maxlength="120"></label>
+      <label>{e(t["f_email"])}<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
     </div>
-  </section>
-
-  <section>
-    <h2>{e(t["how_h"])}</h2>
-    <div class="steps">{steps}</div>
-  </section>
-
-  <section id="quote">
-    <h2>{e(t["form_h"])}</h2>
-    <form id="f" action="/api/contact" method="post" novalidate>
-      <div class="row">
-        <label>{e(t["f_name"])}<input name="name" type="text" autocomplete="name" maxlength="120"></label>
-        <label>{e(t["f_email"])}<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
-      </div>
-      <div class="row">
-        <label>{e(t["f_from"])}<select name="from">{opts([l0, l1, l2])}</select></label>
-        <label>{e(t["f_to"])}<select name="to">{opts([l1, l0, l2])}</select></label>
-      </div>
-      <div class="row">
-        <label>{e(t["f_kind"])}<select name="kind">{opts(t["f_kinds"])}</select></label>
-        <label>{e(t["f_pages"])}<input name="size" type="text" maxlength="80" placeholder="{e(t["f_pages_ph"])}"></label>
-      </div>
-      <label>{e(t["f_msg"])}<textarea name="notes" maxlength="3000" placeholder="{e(t["f_msg_ph"])}"></textarea></label>
-      <div class="hp" aria-hidden="true"><label>{e(t["f_hp"])}<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
-      <button type="submit">{e(t["f_send"])}</button>
-      <p class="status" id="s" role="status" aria-live="polite"></p>
-    </form>
-    <p class="mail">{e(t["or_mail"])} <a href="mailto:nan@motdang.net?subject=Translation">nan@motdang.net</a></p>
-  </section>
+    <div class="row">
+      <label>{e(t["f_from"])}<select name="from">{opts([l0, l1, l2])}</select></label>
+      <label>{e(t["f_to"])}<select name="to">{opts([l1, l0, l2])}</select></label>
+    </div>
+    <div class="row">
+      <label>{e(t["f_kind"])}<select name="kind">{opts(t["f_kinds"])}</select></label>
+      <label>{e(t["f_pages"])}<input name="size" type="text" maxlength="80" placeholder="{e(t["f_pages_ph"])}"></label>
+    </div>
+    <label>{e(t["f_msg"])}<textarea name="notes" maxlength="3000" placeholder="{e(t["f_msg_ph"])}"></textarea></label>
+    <div class="hp" aria-hidden="true"><label>{e(t["f_hp"])}<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+    <button class="btn" type="submit">{e(t["f_send"])}</button>
+    <p class="status" id="s" role="status" aria-live="polite"></p>
+  </form>
+  <p class="mail">{e(t["or_mail"])} <a href="mailto:nan@motdang.net?subject=Translation">nan@motdang.net</a></p>
+</section>
 </main>
-<footer><span lang="th">หงส์ดำ</span> Hongdam · Chiang Rai · <a href="/">{e(t["home"])}</a></footer>
 <script>
 (function () {{
   var M = {json.dumps(msgs, ensure_ascii=False)};
@@ -389,10 +399,9 @@ def page(lang):
   }});
 }})();
 </script>
-<script src="/ticker.js" defer></script>
-</body>
-</html>
 """
+    return (F.head("translation", lang, t["title"], t["desc"], PAGES[lang].lstrip("/"), alternates=alts, ld=ld) +
+            F.body("translation") + F.top(lang, langs) + main + F.foot("translation", lang))
 
 
 def main():

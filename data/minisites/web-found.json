@@ -1,0 +1,770 @@
+{
+ "id": "web-found",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People ask Google or an AI assistant before they call or visit. The tools list pages they have found and read. This set-up adds the files and labels that help them find and read a site.",
+  "th": "ผู้คนถาม Google หรือผู้ช่วย AI ก่อนโทรหรือไปที่ร้าน เครื่องมือเหล่านี้แสดงหน้าเว็บที่พบและอ่านแล้ว การตั้งค่านี้เพิ่มไฟล์และป้ายกำกับที่ช่วยให้พบและอ่านเว็บไซต์ได้",
+  "my": "လူတွေက ဖုန်းမခေါ်ခင် သို့မဟုတ် မသွားခင် Google သို့မဟုတ် AI အကူအညီပေးသူကို မေးကြသည်။ ထိုကိရိယာများက သူတို့ ရှာတွေ့ပြီး ဖတ်ပြီးသော စာမျက်နှာများကို ဖော်ပြသည်။ ဤစနစ်ထည့်သွင်းမှုက ဝဘ်ဆိုက်ကို ရှာတွေ့ဖတ်နိုင်ရန် ကူညီသော ဖိုင်များနှင့် တဂ်များ ထည့်ပေးသည်။",
+  "zh": "人们在打电话或上门之前，会先问 Google 或 AI 助手。这些工具列出的，是它们已经找到并读过的页面。这项设置加上的文件和标签，帮助它们找到并读懂一个网站。",
+  "de": "Menschen fragen Google oder einen KI-Assistenten, bevor sie anrufen oder vorbeikommen. Die Werkzeuge listen Seiten auf, die sie gefunden und gelesen haben. Diese Einrichtung ergänzt die Dateien und Kennzeichnungen, die ihnen helfen, eine Website zu finden und zu lesen."
+ },
+ "n": {
+  "de": "Google- und KI-Einrichtung"
+ },
+ "l": {
+  "de": "Search Console, Sitemap, Seitentitel und llms.txt, eingerichtet."
+ },
+ "steps": [
+  {
+   "db": "link",
+   "t": {
+    "en": "You give the address of your site",
+    "th": "คุณแจ้งที่อยู่เว็บไซต์ของคุณ",
+    "my": "သင့်ဝဘ်ဆိုက်၏ လိပ်စာကို သင်ပေးသည်",
+    "zh": "您提供网站地址",
+    "de": "Sie geben die Adresse Ihrer Website an"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "search",
+   "t": {
+    "en": "Search Console is set up for the site",
+    "th": "ตั้งค่า Search Console ให้เว็บไซต์",
+    "my": "ဝဘ်ဆိုက်အတွက် Search Console ကို ပြင်ဆင်သည်",
+    "zh": "为网站设置 Search Console",
+    "de": "Search Console wird für die Website eingerichtet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The sitemap and the llms.txt file are set up",
+    "th": "ตั้งค่าแผนผังเว็บและไฟล์ llms.txt",
+    "my": "sitemap နှင့် llms.txt ဖိုင်ကို ပြင်ဆင်သည်",
+    "zh": "设置站点地图和 llms.txt 文件",
+    "de": "Sitemap und llms.txt-Datei werden eingerichtet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ပြီးနောက်",
+    "zh": "然后",
+    "de": "Dann"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "Page titles, descriptions and structured data are set up",
+    "th": "ตั้งค่าชื่อหน้า คำอธิบายหน้า และข้อมูลโครงสร้าง",
+    "my": "စာမျက်နှာခေါင်းစဉ်၊ ဖော်ပြချက်နှင့် structured data များကို ပြင်ဆင်သည်",
+    "zh": "设置页面标题、描述和结构化数据",
+    "de": "Seitentitel, Beschreibungen und strukturierte Daten werden eingerichtet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After that",
+    "th": "หลังจากนั้น",
+    "my": "ဆက်လက်၍",
+    "zh": "再往后",
+    "de": "Anschliessend"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "The set-up is checked",
+    "th": "ตรวจสอบการตั้งค่า",
+    "my": "ပြင်ဆင်ထားမှုကို စစ်ဆေးသည်",
+    "zh": "检查设置",
+    "de": "Die Einrichtung wird geprüft"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ท้ายสุด",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "27.6%",
+   "t": {
+    "en": "The first Google result's click-through rate, the share of times it is clicked when shown, in Backlinko's study (page updated 16 April 2025)",
+    "th": "อัตราการคลิก (CTR) ของผลลัพธ์อันดับแรกของ Google คือสัดส่วนครั้งที่ถูกคลิกเมื่อแสดงผล ในการศึกษาของ Backlinko (หน้าอัปเดต 16 เมษายน 2025)",
+    "my": "Backlinko ၏ လေ့လာမှုတွင် Google ၏ ပထမရလဒ်၏ click-through rate (ပြသသောအခါ နှိပ်ခံရသည့် အချိုး) (စာမျက်နှာကို 2025 ခုနှစ် ဧပြီလ 16 ရက်တွင် ပြင်ဆင်ခဲ့သည်)",
+    "zh": "Backlinko 研究中 Google 第一条结果的点击率，即它被展示时被点击的比例（页面更新于 2025 年 4 月 16 日）",
+    "de": "Klickrate des ersten Google-Ergebnisses, also der Anteil der Anzeigen, die zu einem Klick führen, in der Studie von Backlinko (Seite aktualisiert am 16. April 2025)"
+   },
+   "src": "https://backlinko.com/google-ctr-stats"
+  },
+  {
+   "n": "0.63%",
+   "t": {
+    "en": "Share of Google searchers who click something on the second page, in the same study",
+    "th": "สัดส่วนผู้ค้นหาบน Google ที่คลิกผลลัพธ์ในหน้าที่สอง ในการศึกษาเดียวกัน",
+    "my": "တူညီသော လေ့လာမှုတွင် Google ရှာဖွေသူများအနက် ဒုတိယစာမျက်နှာရှိ တစ်ခုခုကို နှိပ်သူများ၏ အချိုး",
+    "zh": "同一研究中，点击了 Google 第二页上某条结果的搜索者所占比例",
+    "de": "Anteil der Google-Suchenden, die auf der zweiten Seite etwas anklicken, in derselben Studie"
+   },
+   "src": "https://backlinko.com/google-ctr-stats"
+  },
+  {
+   "n": "500",
+   "t": {
+    "en": "Pages or fewer on a site that Google calls small; a small site that is well linked inside may not need a sitemap",
+    "th": "จำนวนหน้าไม่เกินที่ Google เรียกว่าเว็บไซต์ขนาดเล็ก เว็บไซต์เล็กที่เชื่อมโยงกันภายในดีอาจไม่ต้องมีแผนผังเว็บ",
+    "my": "Google က ဆိုက်အသေးဟု ခေါ်သော စာမျက်နှာအရေအတွက် (500 သို့မဟုတ် ထိုထက်နည်း)၊ အတွင်းလင့်ခ်ကောင်းစွာ ချိတ်ထားသော ဆိုက်သေးတွင် sitemap မလိုနိုင်",
+    "zh": "Google 所称“小型”网站的页面数上限；内部链接完善的小型网站可能不需要站点地图",
+    "de": "Seiten oder weniger bei einer Website, die Google klein nennt; eine kleine, intern gut verlinkte Website braucht vielleicht keine Sitemap"
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+  },
+  {
+   "n": "฿40,000",
+   "t": {
+    "en": "Monthly start for a fully managed SEO campaign, as one Bangkok agency states it (฿40,000 to ฿60,000)",
+    "th": "ราคาเริ่มต้นต่อเดือนของแคมเปญ SEO แบบดำเนินการเต็มรูปแบบ ตามที่เอเจนซี่ในกรุงเทพฯ แห่งหนึ่งระบุ (฿40,000 ถึง ฿60,000)",
+    "my": "ဘန်ကောက်အေဂျင်စီတစ်ခုက ဖော်ပြသည့် အပြည့်အဝ စီမံသော SEO ကမ်ပိန်း၏ လစဉ် စတင်စျေး (฿40,000 မှ ฿60,000)",
+    "zh": "曼谷一家机构所述，全程代管的 SEO 推广每月起步价（฿40,000 至 ฿60,000）",
+    "de": "Monatlicher Einstieg für eine voll betreute SEO-Kampagne laut einer Agentur in Bangkok (฿40,000 bis ฿60,000)"
+   },
+   "src": "https://www.relevantaudience.com/th/seo-thailand/"
+  }
+ ],
+ "toy": {
+  "kind": "checklist",
+  "h": {
+   "en": "What can Google and AI answers read on your site?",
+   "th": "Google และคำตอบจาก AI อ่านอะไรบนเว็บไซต์ของคุณได้บ้าง",
+   "my": "Google နှင့် AI အဖြေများက သင့်ဝဘ်ဆိုက်တွင် ဘာတွေ ဖတ်နိုင်သလဲ",
+   "zh": "Google 和 AI 回答能在您的网站上读到什么",
+   "de": "Was können Google und KI-Antworten auf Ihrer Website lesen?"
+  },
+  "noscript": {
+   "en": "The ticking needs JavaScript. The parts Google and AI tools read on a site are described in the facts below.",
+   "th": "การติ๊กต้องใช้ JavaScript ส่วนที่ Google และเครื่องมือ AI ใช้อ่านเว็บไซต์อธิบายไว้ในข้อเท็จจริงด้านล่าง",
+   "my": "အမှန်ခြစ်ရန် JavaScript လိုအပ်သည်။ Google နှင့် AI ကိရိယာများက ဝဘ်ဆိုက်တစ်ခုတွင် ဖတ်သော အပိုင်းများကို အောက်ပါ အချက်အလက်များတွင် ဖော်ပြထားသည်။",
+   "zh": "勾选功能需要 JavaScript。Google 和 AI 工具读取网站的各个部分，见下方的事实。",
+   "de": "Das Abhaken braucht JavaScript. Welche Teile Google und KI-Werkzeuge auf einer Website lesen, steht unten bei den Fakten."
+  },
+  "data": {
+   "items": [
+    {
+     "id": "titles",
+     "n": {
+      "en": "A clear, different title on each page",
+      "th": "ชื่อหน้าที่ชัดเจนและต่างกันในแต่ละหน้า",
+      "my": "စာမျက်နှာတိုင်းတွင် ရှင်းလင်းပြီး မတူသော ခေါင်းစဉ်",
+      "zh": "每个页面都有清楚且各不相同的标题",
+      "de": "Ein klarer, eigener Titel auf jeder Seite"
+     },
+     "why": {
+      "en": "Google builds a result's title from the title element of the page, its main title and other sources. Its page says a title should be descriptive and concise, and may be rewritten when it is half-empty, out of date, inaccurate or repeated on many pages.",
+      "th": "Google สร้างชื่อของผลการค้นหาจากองค์ประกอบ title ของหน้า ชื่อหลัก และแหล่งอื่น หน้าของ Google ระบุว่าชื่อที่ดีสื่อความและกระชับ ชื่อที่ว่างครึ่งหนึ่ง ล้าสมัย ไม่ถูกต้อง หรือซ้ำกันหลายหน้าอาจถูกเขียนใหม่",
+      "my": "Google က ရလဒ်၏ ခေါင်းစဉ်ကို စာမျက်နှာ၏ title element၊ အဓိကခေါင်းစဉ်နှင့် အခြားအရင်းအမြစ်များမှ တည်ဆောက်သည်။ ခေါင်းစဉ်သည် ဖော်ပြချက်ပြည့်စုံပြီး တိုတောင်းသင့်သည်ဟု ၎င်း၏ စာမျက်နှာက ဆိုပြီး တစ်ဝက်ဗလာ၊ ခေတ်နောက်ကျ၊ မမှန်ကန် သို့မဟုတ် စာမျက်နှာအများအပြားတွင် ထပ်နေလျှင် ပြန်ရေးခံရနိုင်သည်။",
+      "zh": "Google 用页面的 title 元素、主标题和其他来源生成结果标题。其页面说，标题应描述清楚、简洁；标题半空、过时、不准确或在多个页面上重复时，可能被改写。",
+      "de": "Google bildet den Titel eines Ergebnisses aus dem Title-Element der Seite, ihrem Haupttitel und anderen Quellen. Laut Google-Seite soll ein Titel aussagekräftig und knapp sein; er kann umgeschrieben werden, wenn er halb leer, veraltet, ungenau oder auf vielen Seiten wiederholt ist."
+     },
+     "src": "https://developers.google.com/search/docs/appearance/title-link"
+    },
+    {
+     "id": "sitemap",
+     "n": {
+      "en": "A sitemap file",
+      "th": "ไฟล์แผนผังเว็บ (sitemap)",
+      "my": "sitemap ဖိုင်",
+      "zh": "站点地图文件",
+      "de": "Eine Sitemap-Datei"
+     },
+     "why": {
+      "en": "A sitemap is a file that lists the pages and other files on a site. Google says it can help Google crawl a site more efficiently, and that it does not guarantee that the items in it are crawled and indexed.",
+      "th": "sitemap คือไฟล์ที่ระบุรายการหน้าและไฟล์อื่นบนเว็บไซต์ Google ระบุว่าช่วยให้ Google รวบรวมข้อมูลเว็บไซต์ได้มีประสิทธิภาพขึ้น และไม่ได้รับประกันว่ารายการในไฟล์จะถูกรวบรวมและจัดทำดัชนี",
+      "my": "sitemap ဆိုသည်မှာ ဝဘ်ဆိုက်ပေါ်ရှိ စာမျက်နှာများနှင့် အခြားဖိုင်များကို စာရင်းပြုစုထားသော ဖိုင်ဖြစ်သည်။ ၎င်းက Google ကို ဆိုက်ကို ပိုထိရောက်စွာ crawl လုပ်ရန် ကူညီနိုင်ပြီး ထဲရှိအရာများကို crawl နှင့် index လုပ်ခြင်းကိုမူ အာမခံမပေးဟု Google က ဆိုသည်။",
+      "zh": "站点地图是一份列出网站上页面和其他文件的文件。Google 说它能帮助 Google 更高效地抓取网站，但不保证其中的内容都会被抓取和收录。",
+      "de": "Eine Sitemap ist eine Datei, die die Seiten und anderen Dateien einer Website auflistet. Laut Google kann sie Google helfen, eine Website effizienter zu crawlen; sie garantiert aber nicht, dass ihre Einträge gecrawlt und indexiert werden."
+     },
+     "src": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+    },
+    {
+     "id": "robots",
+     "n": {
+      "en": "A robots.txt file",
+      "th": "ไฟล์ robots.txt",
+      "my": "robots.txt ဖိုင်",
+      "zh": "robots.txt 文件",
+      "de": "Eine robots.txt-Datei"
+     },
+     "why": {
+      "en": "robots.txt is a text file that tells crawlers which URLs they can access on a site. Google says it is used mainly to avoid overloading a site with requests, and is not a way to keep a page out of Google.",
+      "th": "robots.txt เป็นไฟล์ข้อความที่บอก crawler ว่าเข้า URL ใดบนเว็บไซต์ได้ Google ระบุว่าใช้เพื่อไม่ให้เว็บไซต์ถูกร้องขอมากเกินไปเป็นหลัก และไม่ใช่วิธีกันหน้าออกจาก Google",
+      "my": "robots.txt သည် crawler များအား ဝဘ်ဆိုက်ပေါ်ရှိ မည်သည့် URL များ ဝင်ကြည့်နိုင်သည်ကို ပြောပြသော စာသားဖိုင်ဖြစ်သည်။ ၎င်းကို တောင်းဆိုမှုများလွန်းခြင်းမှ ရှောင်ရန် အဓိကသုံးပြီး စာမျက်နှာကို Google မှ ဖယ်ထားရန် နည်းလမ်း မဟုတ်ဟု Google က ဆိုသည်။",
+      "zh": "robots.txt 是告诉爬虫可以访问网站上哪些网址的文本文件。Google 说它主要用来避免网站被请求压垮，不是让页面不出现在 Google 中的办法。",
+      "de": "Die robots.txt ist eine Textdatei, die Crawlern mitteilt, auf welche URLs einer Website sie zugreifen dürfen. Laut Google dient sie hauptsächlich dazu, eine Website nicht mit Anfragen zu überlasten, und ist kein Mittel, eine Seite aus Google herauszuhalten."
+     },
+     "src": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+    },
+    {
+     "id": "sd",
+     "n": {
+      "en": "Structured data on the pages",
+      "th": "ข้อมูลโครงสร้างบนหน้าเว็บ",
+      "my": "စာမျက်နှာများပေါ်ရှိ structured data",
+      "zh": "页面上的结构化数据",
+      "de": "Strukturierte Daten auf den Seiten"
+     },
+     "why": {
+      "en": "Structured data is a standard format that tells Google what a page is about. Google recommends the JSON-LD format and says adding structured data can enable search results that are more engaging to users.",
+      "th": "ข้อมูลโครงสร้างคือรูปแบบมาตรฐานที่บอก Google ว่าหน้าเกี่ยวกับอะไร Google แนะนำรูปแบบ JSON-LD และระบุว่าการเพิ่มข้อมูลโครงสร้างทำให้ผลการค้นหาน่าสนใจสำหรับผู้ใช้มากขึ้นได้",
+      "my": "structured data သည် စာမျက်နှာက ဘာအကြောင်းဖြစ်သည်ကို Google အား ပြောပြသော စံပုံစံဖြစ်သည်။ Google က JSON-LD ပုံစံကို အကြံပြုပြီး structured data ထည့်ခြင်းက အသုံးပြုသူများအတွက် ပိုဆွဲဆောင်မှုရှိသော ရှာဖွေမှုရလဒ်များ ဖြစ်စေနိုင်သည်ဟု ဆိုသည်။",
+      "zh": "结构化数据是一种标准格式，告诉 Google 页面讲的是什么。Google 推荐 JSON-LD 格式，并说添加结构化数据可以带来对用户更有吸引力的搜索结果。",
+      "de": "Strukturierte Daten sind ein Standardformat, das Google mitteilt, worum es auf einer Seite geht. Google empfiehlt das Format JSON-LD und sagt, strukturierte Daten können Suchergebnisse ermöglichen, die für Nutzer ansprechender sind."
+     },
+     "src": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+    },
+    {
+     "id": "gbp",
+     "n": {
+      "en": "A Google Business Profile on Google Maps",
+      "th": "Google Business Profile บน Google Maps",
+      "my": "Google Maps ပေါ်ရှိ Google Business Profile",
+      "zh": "Google 地图上的 Google 商家资料",
+      "de": "Ein Google-Unternehmensprofil auf Google Maps"
+     },
+     "why": {
+      "en": "Google's help page says a business can be added or claimed at no charge. Once it is added and verified, customers can find it on Search and Maps. Only businesses eligible for a Business Profile can add or claim a location.",
+      "th": "หน้าช่วยเหลือของ Google ระบุว่าเพิ่มหรือเคลมธุรกิจได้โดยไม่คิดค่าใช้จ่าย เมื่อเพิ่มและยืนยันแล้ว ลูกค้าหาธุรกิจพบได้ทั้งบน Search และ Maps เฉพาะธุรกิจที่มีสิทธิ์ใช้ Business Profile เท่านั้นที่เพิ่มหรือเคลมสถานที่ได้",
+      "my": "လုပ်ငန်းတစ်ခုကို ကုန်ကျစရိတ်မရှိဘဲ ထည့်သွင်းနိုင်သည် သို့မဟုတ် ပိုင်ဆိုင်မှုတောင်းဆိုနိုင်သည်ဟု Google ၏ အကူအညီစာမျက်နှာက ဆိုသည်။ ထည့်ပြီး အတည်ပြုပြီးနောက် ဖောက်သည်များက Search နှင့် Maps တွင် ရှာတွေ့နိုင်သည်။ Business Profile ရရန် အရည်အချင်းပြည့်မီသော လုပ်ငန်းများသာ တည်နေရာကို ထည့်သွင်း သို့မဟုတ် တောင်းဆိုနိုင်သည်။",
+      "zh": "Google 帮助页面说，添加或认领商家不收费。添加并验证后，客户可以在搜索和地图上找到该商家。只有符合商家资料资格的商家才能添加或认领地点。",
+      "de": "Laut Hilfeseite von Google lässt sich ein Unternehmen kostenlos hinzufügen oder beanspruchen. Nach dem Hinzufügen und Bestätigen finden Kunden es in der Suche und auf Maps. Nur Unternehmen, die für ein Unternehmensprofil infrage kommen, können einen Standort hinzufügen oder beanspruchen."
+     },
+     "src": "https://support.google.com/business/answer/2911778"
+    },
+    {
+     "id": "mobile",
+     "n": {
+      "en": "Pages that work on a phone",
+      "th": "หน้าเว็บที่ใช้งานบนโทรศัพท์ได้",
+      "my": "ဖုန်းပေါ်တွင် အသုံးပြုနိုင်သော စာမျက်နှာများ",
+      "zh": "能在手机上使用的页面",
+      "de": "Seiten, die auf dem Handy funktionieren"
+     },
+     "why": {
+      "en": "Google says it uses the mobile version of a site's content for indexing and ranking, and only content shown on the mobile site is used. It recommends responsive web design, where one page fits phone and desktop.",
+      "th": "Google ระบุว่าใช้เนื้อหาเวอร์ชันมือถือของเว็บไซต์ในการจัดทำดัชนีและจัดอันดับ และใช้เฉพาะเนื้อหาที่แสดงบนเว็บมือถือ Google แนะนำการออกแบบเว็บแบบ responsive ซึ่งหน้าเดียวพอดีทั้งโทรศัพท์และเดสก์ท็อป",
+      "my": "Google က ဝဘ်ဆိုက်၏ အကြောင်းအရာကို မိုဘိုင်းဗားရှင်းဖြင့် index လုပ်ရန်နှင့် အဆင့်သတ်မှတ်ရန် သုံးသည်ဟု ဆိုပြီး မိုဘိုင်းဆိုက်တွင် ပြသသော အကြောင်းအရာကိုသာ သုံးသည်။ ဖုန်းနှင့် ကွန်ပျူတာ နှစ်မျိုးလုံးနှင့် ကိုက်ညီသော စာမျက်နှာတစ်ခုဖြစ်သည့် responsive web design ကို အကြံပြုသည်။",
+      "zh": "Google 说，它用网站内容的手机版本来收录和排名，只有手机版上显示的内容才会被使用。它推荐响应式网页设计，即一个页面同时适配手机和电脑。",
+      "de": "Google sagt, es nutzt die mobile Version der Inhalte einer Website für Indexierung und Ranking, und nur Inhalte, die auf der mobilen Website gezeigt werden, zählen. Google empfiehlt responsives Webdesign, bei dem eine Seite zu Handy und Desktop passt."
+     },
+     "src": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing"
+    },
+    {
+     "id": "https",
+     "n": {
+      "en": "An address that starts with https",
+      "th": "ที่อยู่เว็บที่ขึ้นต้นด้วย https",
+      "my": "https ဖြင့် စသော လိပ်စာ",
+      "zh": "以 https 开头的网址",
+      "de": "Eine Adresse, die mit https beginnt"
+     },
+     "why": {
+      "en": "HTTPS is the secure form of a web address. The web.dev guide to HTTPS says Google uses HTTPS as a positive search quality indicator.",
+      "th": "HTTPS คือรูปแบบปลอดภัยของที่อยู่เว็บ คู่มือ HTTPS ของ web.dev ระบุว่า Google ใช้ HTTPS เป็นตัวบ่งชี้คุณภาพการค้นหาในทางบวก",
+      "my": "HTTPS သည် ဝဘ်လိပ်စာ၏ လုံခြုံသောပုံစံဖြစ်သည်။ web.dev ၏ HTTPS လမ်းညွှန်က Google သည် HTTPS ကို ရှာဖွေမှုအရည်အသွေး၏ အပြုသဘောညွှန်ပြချက်အဖြစ် သုံးသည်ဟု ဆိုသည်။",
+      "zh": "HTTPS 是网址的安全形式。web.dev 的 HTTPS 指南说，Google 把 HTTPS 当作一个正面的搜索质量指标。",
+      "de": "HTTPS ist die sichere Form einer Webadresse. Im HTTPS-Leitfaden von web.dev steht, Google nutze HTTPS als positiven Indikator für die Suchqualität."
+     },
+     "src": "https://web.dev/enable-https/"
+    },
+    {
+     "id": "llms",
+     "n": {
+      "en": "An llms.txt file",
+      "th": "ไฟล์ llms.txt",
+      "my": "llms.txt ဖိုင်",
+      "zh": "llms.txt 文件",
+      "de": "Eine llms.txt-Datei"
+     },
+     "why": {
+      "en": "The llmstxt.org proposal is a Markdown file at the site root that gives AI agents a short overview of the site, with links. The only required part is a first-level heading with the site name.",
+      "th": "ข้อเสนอที่ llmstxt.org คือไฟล์ Markdown ที่รากของเว็บไซต์ ให้ภาพรวมสั้น ๆ ของเว็บไซต์แก่ AI agent พร้อมลิงก์ ส่วนที่จำเป็นมีเพียงหัวข้อระดับแรกที่เป็นชื่อเว็บไซต์",
+      "my": "llmstxt.org ၏ အဆိုပြုချက်သည် ဝဘ်ဆိုက်အမြစ်ရှိ Markdown ဖိုင်ဖြစ်ပြီး AI agent များအား ဆိုက်၏ အကျဉ်းချုပ်ကို လင့်ခ်များနှင့်အတူ ပေးသည်။ မဖြစ်မနေလိုသော အပိုင်းမှာ ဆိုက်အမည်ပါသော ပထမအဆင့်ခေါင်းစီးတစ်ခုသာ ဖြစ်သည်။",
+      "zh": "llmstxt.org 的提案是在网站根目录放一个 Markdown 文件，给 AI 代理一份带链接的网站简介。唯一必需的部分是写有网站名称的一级标题。",
+      "de": "Der Vorschlag von llmstxt.org ist eine Markdown-Datei im Stammverzeichnis, die KI-Agenten einen kurzen Überblick über die Website mit Links gibt. Pflicht ist nur eine Überschrift erster Ebene mit dem Namen der Website."
+     },
+     "src": "https://llmstxt.org/"
+    },
+    {
+     "id": "aibots",
+     "n": {
+      "en": "AI search bots not blocked in robots.txt",
+      "th": "บอตค้นหา AI ที่ไม่ถูกบล็อกใน robots.txt",
+      "my": "robots.txt တွင် မပိတ်ထားသော AI ရှာဖွေရေး bot များ",
+      "zh": "robots.txt 中未被屏蔽的 AI 搜索机器人",
+      "de": "KI-Suchbots, die in der robots.txt nicht gesperrt sind"
+     },
+     "why": {
+      "en": "OpenAI says to use OAI-SearchBot in robots.txt for managing ChatGPT search, and GPTBot for content used in model training. A robots.txt change can take about 24 hours to reach its search systems.",
+      "th": "OpenAI ระบุให้ใช้ชื่อ OAI-SearchBot ใน robots.txt เพื่อจัดการการค้นหาของ ChatGPT และ GPTBot สำหรับเนื้อหาที่ใช้ฝึกโมเดล การเปลี่ยน robots.txt อาจใช้เวลาประมาณ 24 ชั่วโมงกว่าระบบค้นหาของ OpenAI จะปรับตาม",
+      "my": "OpenAI က ChatGPT search ကို စီမံရန် robots.txt တွင် OAI-SearchBot ကို သုံးရန်၊ မော်ဒယ်လေ့ကျင့်ရေးအတွက် အကြောင်းအရာအတွက် GPTBot ကို သုံးရန် ဆိုသည်။ robots.txt ပြောင်းလဲမှုက ၎င်း၏ ရှာဖွေရေးစနစ်များသို့ ရောက်ရန် 24 နာရီခန့် ကြာနိုင်သည်။",
+      "zh": "OpenAI 说，管理 ChatGPT 搜索时在 robots.txt 里用 OAI-SearchBot，管理用于模型训练的内容时用 GPTBot。robots.txt 的改动大约要 24 小时才会传到它的搜索系统。",
+      "de": "OpenAI sagt, in der robots.txt werde OAI-SearchBot für die ChatGPT-Suche verwendet und GPTBot für Inhalte, die ins Modelltraining einfliessen. Eine Änderung der robots.txt kann etwa 24 Stunden brauchen, bis sie die Suchsysteme erreicht."
+     },
+     "src": "https://developers.openai.com/api/docs/bots"
+    }
+   ],
+   "result": [
+    {
+     "min": 0,
+     "t": {
+      "en": "Nothing is ticked yet. These nine are the parts Google's and the AI companies' pages describe.",
+      "th": "ยังไม่ได้ติ๊กข้อใด เก้าข้อนี้คือส่วนที่หน้าของ Google และบริษัท AI อธิบายไว้",
+      "my": "မည်သည့်အချက်မျှ မခြစ်ရသေးပါ။ ဤကိုးချက်သည် Google နှင့် AI ကုမ္ပဏီများ၏ စာမျက်နှာများက ဖော်ပြထားသော အပိုင်းများဖြစ်သည်။",
+      "zh": "还没有勾选任何一项。这九项是 Google 和 AI 公司的页面所描述的部分。",
+      "de": "Noch nichts abgehakt. Diese neun Punkte sind die Teile, die die Seiten von Google und den KI-Firmen beschreiben."
+     }
+    },
+    {
+     "min": 1,
+     "t": {
+      "en": "Some parts are in place. The list shows the ones still missing.",
+      "th": "มีบางส่วนแล้ว รายการด้านบนแสดงส่วนที่ยังไม่มี",
+      "my": "အချို့အပိုင်းများ ရှိပြီးဖြစ်သည်။ မရှိသေးသော အပိုင်းများကို စာရင်းတွင် ပြထားသည်။",
+      "zh": "已有部分内容。清单列出了还缺的部分。",
+      "de": "Einige Teile sind da. Die Liste zeigt die, die noch fehlen."
+     }
+    },
+    {
+     "min": 4,
+     "t": {
+      "en": "Four to seven parts are ticked. The unticked parts are still missing.",
+      "th": "ติ๊กแล้ว 4 ถึง 7 ข้อ ส่วนที่ยังไม่ได้ติ๊กยังไม่มี",
+      "my": "4 ချက်မှ 7 ချက်အထိ ခြစ်ထားသည်။ မခြစ်ရသေးသော အပိုင်းများမှာ မရှိသေးပါ။",
+      "zh": "已勾选 4 到 7 项。没勾选的部分还缺。",
+      "de": "Vier bis sieben Teile sind abgehakt. Die nicht abgehakten Teile fehlen noch."
+     }
+    },
+    {
+     "min": 8,
+     "t": {
+      "en": "Eight or nine parts are ticked. Most of the nine are in place.",
+      "th": "ติ๊กแล้ว 8 หรือ 9 ข้อ ส่วนใหญ่ของทั้งเก้าข้อมีแล้ว",
+      "my": "8 ချက် သို့မဟုတ် 9 ချက် ခြစ်ထားသည်။ ကိုးချက်အနက် အများစု ရှိပြီးဖြစ်သည်။",
+      "zh": "已勾选 8 或 9 项。九项中的大部分已经具备。",
+      "de": "Acht oder neun Teile sind abgehakt. Die meisten der neun sind vorhanden."
+     }
+    }
+   ],
+   "oursLine": {
+    "en": "Hongdam sets up and checks Search Console, the sitemap, titles, structured data and llms.txt for:",
+    "th": "หงส์ดำตั้งค่าและตรวจ Search Console แผนผังเว็บ ชื่อหน้า ข้อมูลโครงสร้าง และ llms.txt ในราคา:",
+    "my": "ဟုန်ဒမ်က Search Console၊ sitemap၊ ခေါင်းစဉ်များ၊ structured data နှင့် llms.txt ကို ပြင်ဆင်ပြီး စစ်ဆေးပေးသည့် စျေးနှုန်း -",
+    "zh": "鸿丹设置并检查 Search Console、站点地图、标题、结构化数据和 llms.txt，价格：",
+    "de": "Hongdam richtet Search Console, Sitemap, Titel, strukturierte Daten und llms.txt ein und prüft sie, für:"
+   }
+  }
+ },
+ "facts": [
+  {
+   "t": {
+    "en": "Google's page on AI features says there are no additional requirements to appear in AI Overviews or AI Mode. It says a site does not need to create new machine-readable files, AI text files or markup. To appear as a supporting link, a page must be indexed (stored by Google) and eligible to show in Search with a snippet.",
+    "th": "หน้า AI features ของ Google ระบุว่าไม่มีข้อกำหนดเพิ่มเติมสำหรับการปรากฏใน AI Overviews หรือ AI Mode เว็บไซต์ไม่ต้องสร้างไฟล์ที่เครื่องอ่านได้ ไฟล์ข้อความสำหรับ AI หรือมาร์กอัปใหม่ หน้าที่จะปรากฏเป็นลิงก์สนับสนุนต้องถูกจัดทำดัชนี (Google เก็บไว้ในระบบ) และมีสิทธิ์แสดงในผลการค้นหาพร้อมสนิปเป็ต",
+    "my": "Google ၏ AI features စာမျက်နှာက AI Overviews သို့မဟုတ် AI Mode တွင် ပေါ်လာရန် အပိုလိုအပ်ချက် မရှိဟု ဆိုသည်။ ဝဘ်ဆိုက်က စက်ဖတ်နိုင်သော ဖိုင်အသစ်၊ AI စာသားဖိုင် သို့မဟုတ် markup မဖန်တီးရဟုလည်း ဆိုသည်။ ထောက်ခံလင့်ခ်အဖြစ် ပေါ်လာရန် စာမျက်နှာသည် index လုပ်ထားခြင်း (Google က သိမ်းထားခြင်း) ခံရပြီး snippet ဖြင့် Search တွင် ပြသခွင့်ရှိရမည်။",
+    "zh": "Google 关于 AI 功能的页面说，出现在 AI 概览（AI Overviews）或 AI 模式（AI Mode）中没有额外要求。网站不需要新建机器可读文件、AI 文本文件或标记。页面要作为支持链接出现，必须已被收录（由 Google 存入索引），并且有资格带摘要显示在搜索中。",
+    "de": "Auf der Google-Seite zu KI-Funktionen steht, dass es keine zusätzlichen Anforderungen gibt, um in AI Overviews oder im AI Mode zu erscheinen. Eine Website muss keine neuen maschinenlesbaren Dateien, KI-Textdateien oder Auszeichnungen anlegen. Als unterstützender Link erscheint eine Seite nur, wenn sie indexiert ist (von Google gespeichert) und mit einem Snippet in der Suche angezeigt werden darf."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/ai-features"
+  },
+  {
+   "t": {
+    "en": "Google's page on title links says Google builds the title of a search result from several sources. They include the title element of the page, its main visible title, headings such as h1 and og:title tags. The page says a title should be descriptive and concise, and different from page to page. Google may write a new title when one is half-empty, out of date, inaccurate or repeated on many pages.",
+    "th": "หน้า title link ของ Google ระบุว่า Google สร้างชื่อของผลการค้นหาจากหลายแหล่ง รวมถึงองค์ประกอบ title ของหน้า ชื่อหลักที่มองเห็นบนหน้า หัวข้อเช่น h1 และแท็ก og:title หน้านี้ระบุว่าชื่อที่ดีสื่อความ กระชับ และต่างกันไปในแต่ละหน้า Google อาจสร้างชื่อใหม่เมื่อชื่อเดิมว่างครึ่งหนึ่ง ล้าสมัย ไม่ถูกต้อง หรือซ้ำกันหลายหน้า",
+    "my": "Google ၏ title link စာမျက်နှာက ရှာဖွေမှုရလဒ်၏ ခေါင်းစဉ်ကို အရင်းအမြစ်များစွာမှ တည်ဆောက်သည်ဟု ဆိုသည်။ ၎င်းတို့တွင် စာမျက်နှာ၏ title element၊ မျက်နှာပြင်ပေါ်ရှိ အဓိကခေါင်းစဉ်၊ h1 ကဲ့သို့ ခေါင်းစီးများနှင့် og:title tag များ ပါဝင်သည်။ ခေါင်းစဉ်သည် ဖော်ပြချက်ပြည့်စုံပြီး တိုတောင်းကာ စာမျက်နှာချင်း မတူသင့်ကြောင်း ဆိုသည်။ ခေါင်းစဉ်က တစ်ဝက်ဗလာ၊ ခေတ်နောက်ကျ၊ မမှန်ကန် သို့မဟုတ် စာမျက်နှာအများအပြားတွင် ထပ်နေလျှင် Google က ခေါင်းစဉ်အသစ် ရေးနိုင်သည်။",
+    "zh": "Google 关于标题链接的页面说，搜索结果的标题由多个来源生成，包括页面的 title 元素、页面上最显眼的标题、h1 等标题标签和 og:title 标签。该页说，标题应当描述清楚、简洁，而且各页不同。标题半空、过时、不准确或在多个页面上重复时，Google 可能改写标题。",
+    "de": "Auf der Google-Seite zu Titellinks steht, dass Google den Titel eines Suchergebnisses aus mehreren Quellen bildet. Dazu gehören das Title-Element der Seite, ihr sichtbarer Haupttitel, Überschriften wie h1 und og:title-Tags. Ein Titel soll aussagekräftig und knapp sein und sich von Seite zu Seite unterscheiden. Google kann einen neuen Titel bilden, wenn einer halb leer, veraltet, ungenau oder auf vielen Seiten wiederholt ist."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/title-link"
+  },
+  {
+   "t": {
+    "en": "Google defines a sitemap as a file with information about the pages, videos and other files on a site. It says a sitemap does not guarantee that the items in it are crawled (visited by Google's program) and indexed. A site of about 500 pages or fewer that is well linked inside counts as small, and Google says such a site may not need one.",
+    "th": "Google ให้นิยาม sitemap ว่าเป็นไฟล์ที่ให้ข้อมูลเกี่ยวกับหน้า วิดีโอ และไฟล์อื่นบนเว็บไซต์ และระบุว่า sitemap ไม่ได้รับประกันว่ารายการในไฟล์จะถูกรวบรวม (โปรแกรมของ Google เข้าเยี่ยมชม) และจัดทำดัชนี เว็บไซต์ที่มีประมาณ 500 หน้าหรือน้อยกว่าและเชื่อมโยงกันเองภายในดี ถือว่าเล็ก และ Google ระบุว่าเว็บไซต์แบบนี้อาจไม่ต้องมี sitemap",
+    "my": "Google က sitemap ကို ဝဘ်ဆိုက်ပေါ်ရှိ စာမျက်နှာများ၊ ဗီဒီယိုများနှင့် အခြားဖိုင်များအကြောင်း အချက်အလက်ပါသော ဖိုင်ဟု အဓိပ္ပာယ်ဖွင့်သည်။ sitemap ထဲရှိ အရာများကို crawl လုပ်ခြင်း (Google ၏ ပရိုဂရမ်က လာကြည့်ခြင်း) နှင့် index လုပ်ခြင်းကို အာမခံမပေးဟု ဆိုသည်။ စာမျက်နှာ 500 ခန့် သို့မဟုတ် ထိုထက်နည်းပြီး အတွင်းလင့်ခ်ကောင်းစွာ ချိတ်ထားသော ဆိုက်ကို သေးငယ်သည်ဟု သတ်မှတ်ပြီး ထိုဆိုက်မျိုးတွင် sitemap မလိုနိုင်ဟု Google က ဆိုသည်။",
+    "zh": "Google 把站点地图定义为一份文件，提供网站上页面、视频和其他文件的信息。它说，站点地图不保证其中的内容都会被抓取（由 Google 的程序访问）和收录。页面约 500 个或更少、内部链接完善的网站算小型网站，Google 说这样的网站可能不需要站点地图。",
+    "de": "Google definiert eine Sitemap als Datei mit Angaben zu den Seiten, Videos und anderen Dateien einer Website. Eine Sitemap garantiert nicht, dass ihre Einträge gecrawlt, also vom Programm von Google besucht, und indexiert werden. Eine Website mit etwa 500 Seiten oder weniger, die intern gut verlinkt ist, gilt als klein, und Google sagt, eine solche Website braucht möglicherweise keine."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+  },
+  {
+   "t": {
+    "en": "A robots.txt file is a text file that tells crawlers, the programs that visit pages, which URLs they can access on a site. Google says it is used mainly to avoid overloading a site with requests and is not a way to keep a page out of Google. A page blocked in robots.txt can still be indexed if other sites link to it.",
+    "th": "ไฟล์ robots.txt เป็นไฟล์ข้อความที่บอก crawler (โปรแกรมที่เข้าเยี่ยมหน้าเว็บ) ว่าเข้า URL ใดบนเว็บไซต์ได้ Google ระบุว่าใช้เพื่อไม่ให้เว็บไซต์ถูกร้องขอมากเกินไปเป็นหลัก และไม่ใช่วิธีกันหน้าออกจาก Google หน้าที่ถูกบล็อกใน robots.txt ยังถูกจัดทำดัชนีได้ถ้ามีเว็บไซต์อื่นลิงก์มา",
+    "my": "robots.txt ဖိုင်သည် crawler များ (စာမျက်နှာများကို လာကြည့်သော ပရိုဂရမ်များ) ကို ဝဘ်ဆိုက်ပေါ်ရှိ မည်သည့် URL များ ဝင်ကြည့်နိုင်သည်ကို ပြောပြသော စာသားဖိုင်ဖြစ်သည်။ ၎င်းကို ဆိုက်သို့ တောင်းဆိုမှု များလွန်းခြင်းမှ ရှောင်ရန် အဓိကသုံးပြီး စာမျက်နှာတစ်ခုကို Google မှ ဖယ်ထားရန် နည်းလမ်း မဟုတ်ဟု Google က ဆိုသည်။ robots.txt တွင် ပိတ်ထားသော စာမျက်နှာကို အခြားဆိုက်များက လင့်ခ်ချိတ်ထားလျှင် index လုပ်ခံနိုင်ဆဲဖြစ်သည်။",
+    "zh": "robots.txt 是一个文本文件，告诉爬虫程序（访问网页的程序）可以访问网站上的哪些网址。Google 说，它主要用来避免网站被请求压垮，不是让页面不出现在 Google 中的办法。被 robots.txt 屏蔽的页面，如果有其他网站链接到它，仍可能被收录。",
+    "de": "Eine robots.txt ist eine Textdatei, die Crawlern, den Programmen, die Seiten besuchen, mitteilt, auf welche URLs einer Website sie zugreifen dürfen. Laut Google dient sie hauptsächlich dazu, eine Website nicht mit Anfragen zu überlasten, und ist kein Mittel, eine Seite aus Google herauszuhalten. Eine in der robots.txt gesperrte Seite kann trotzdem indexiert werden, wenn andere Websites auf sie verlinken."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  {
+   "t": {
+    "en": "OpenAI lists three crawlers. OAI-SearchBot is the name for managing how a site appears in ChatGPT search. GPTBot collects content that may be used to train its models. ChatGPT-User visits a page when a user asks, and OpenAI says robots.txt rules may not apply to it. A robots.txt change can take about 24 hours to reach OpenAI's search systems.",
+    "th": "OpenAI ระบุ crawler สามตัว OAI-SearchBot เป็นชื่อสำหรับจัดการการแสดงเว็บไซต์ในการค้นหาของ ChatGPT GPTBot เก็บเนื้อหาที่อาจใช้ฝึกโมเดลของ OpenAI ChatGPT-User เข้าเยี่ยมหน้าเมื่อผู้ใช้ขอ และ OpenAI ระบุว่ากฎ robots.txt อาจไม่ใช้กับตัวนี้ การเปลี่ยน robots.txt อาจใช้เวลาประมาณ 24 ชั่วโมงกว่าระบบค้นหาของ OpenAI จะปรับตาม",
+    "my": "OpenAI က crawler သုံးမျိုး ဖော်ပြသည်။ OAI-SearchBot သည် ChatGPT search တွင် ဝဘ်ဆိုက် ပေါ်ပုံကို စီမံရန် အမည်ဖြစ်သည်။ GPTBot သည် မော်ဒယ်များ လေ့ကျင့်ရန် သုံးနိုင်သော အကြောင်းအရာကို စုဆောင်းသည်။ ChatGPT-User သည် အသုံးပြုသူ တောင်းဆိုသောအခါ စာမျက်နှာကို လာကြည့်ပြီး robots.txt စည်းမျဉ်းများ ၎င်းအတွက် မသက်ဆိုင်နိုင်ဟု OpenAI က ဆိုသည်။ robots.txt ပြောင်းလဲမှုက OpenAI ၏ ရှာဖွေရေးစနစ်များသို့ ရောက်ရန် 24 နာရီခန့် ကြာနိုင်သည်။",
+    "zh": "OpenAI 列出三种爬虫。OAI-SearchBot 是用来管理网站在 ChatGPT 搜索中如何出现的名称。GPTBot 收集可能用于训练其模型的内容。ChatGPT-User 在用户提出请求时访问页面，OpenAI 说 robots.txt 规则可能不适用于它。robots.txt 的改动大约要 24 小时才会传到 OpenAI 的搜索系统。",
+    "de": "OpenAI nennt drei Crawler. OAI-SearchBot ist der Name, mit dem sich steuern lässt, wie eine Website in der ChatGPT-Suche erscheint. GPTBot sammelt Inhalte, die zum Training seiner Modelle dienen können. ChatGPT-User besucht eine Seite, wenn ein Nutzer darum bittet, und laut OpenAI gelten robots.txt-Regeln dafür möglicherweise nicht. Eine Änderung der robots.txt kann etwa 24 Stunden brauchen, bis sie die Suchsysteme von OpenAI erreicht."
+   },
+   "src": "https://developers.openai.com/api/docs/bots"
+  },
+  {
+   "t": {
+    "en": "Anthropic lists three bots. ClaudeBot collects web content that may contribute to model training. Claude-User fetches pages when a Claude user asks a question. Claude-SearchBot analyses content to improve search results. Anthropic says its bots follow robots.txt and support the non-standard Crawl-delay extension.",
+    "th": "Anthropic ระบุบอตสามตัว ClaudeBot เก็บเนื้อหาเว็บที่อาจใช้ฝึกโมเดล Claude-User ดึงหน้าเว็บเมื่อผู้ใช้ Claude ถามคำถาม Claude-SearchBot วิเคราะห์เนื้อหาเพื่อปรับปรุงผลการค้นหา Anthropic ระบุว่าบอตของตนทำตาม robots.txt และรองรับ Crawl-delay ซึ่งเป็นส่วนขยายที่ไม่ใช่มาตรฐาน",
+    "my": "Anthropic က bot သုံးမျိုး ဖော်ပြသည်။ ClaudeBot သည် မော်ဒယ်လေ့ကျင့်ရေးအတွက် အသုံးဝင်နိုင်သော ဝဘ်အကြောင်းအရာကို စုဆောင်းသည်။ Claude-User သည် Claude အသုံးပြုသူက မေးခွန်းမေးသောအခါ စာမျက်နှာများကို ယူသည်။ Claude-SearchBot သည် ရှာဖွေမှုရလဒ်များ ပိုကောင်းစေရန် အကြောင်းအရာကို ခွဲခြမ်းစိတ်ဖြာသည်။ ၎င်း၏ bot များသည် robots.txt ကို လိုက်နာပြီး စံမဟုတ်သော Crawl-delay တိုးချဲ့မှုကို ထောက်ပံ့သည်ဟု Anthropic က ဆိုသည်။",
+    "zh": "Anthropic 列出三种机器人。ClaudeBot 收集可能用于模型训练的网页内容。Claude-User 在 Claude 用户提问时获取页面。Claude-SearchBot 分析内容以改进搜索结果。Anthropic 说，它的机器人遵循 robots.txt，并支持非标准的 Crawl-delay 扩展。",
+    "de": "Anthropic nennt drei Bots. ClaudeBot sammelt Webinhalte, die zum Modelltraining beitragen können. Claude-User ruft Seiten ab, wenn ein Claude-Nutzer eine Frage stellt. Claude-SearchBot analysiert Inhalte, um Suchergebnisse zu verbessern. Laut Anthropic befolgen die Bots die robots.txt und unterstützen die nicht standardisierte Crawl-delay-Erweiterung."
+   },
+   "src": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler"
+  },
+  {
+   "t": {
+    "en": "The llms.txt page calls it a proposal to standardise a file named llms.txt that helps AI agents use a website. The file is written in Markdown, a plain-text format with simple marks, and sits at the site root or at a path within it. Only the first-level heading with the site name is required. A short summary and lists of links are optional parts.",
+    "th": "หน้า llms.txt เรียกสิ่งนี้ว่าข้อเสนอให้ใช้ไฟล์ชื่อ llms.txt เป็นมาตรฐานเพื่อช่วยให้ AI agent ใช้เว็บไซต์ได้ ไฟล์เขียนด้วย Markdown ซึ่งเป็นข้อความธรรมดาที่ใช้เครื่องหมายง่าย ๆ และวางไว้ที่รากของเว็บไซต์หรือที่พาธใดพาธหนึ่งในเว็บไซต์ ส่วนที่จำเป็นมีเพียงหัวข้อระดับแรกที่เป็นชื่อเว็บไซต์ บทสรุปสั้น ๆ และรายการลิงก์เป็นส่วนเสริม",
+    "my": "llms.txt စာမျက်နှာက ၎င်းကို AI agent များ ဝဘ်ဆိုက်ကို အသုံးပြုရာတွင် ကူညီသော llms.txt အမည်ရှိ ဖိုင်ကို စံသတ်မှတ်ရန် အဆိုပြုချက်ဟု ခေါ်သည်။ ဖိုင်ကို ရိုးရိုးသင်္ကေတများပါသော စာသားပုံစံ Markdown ဖြင့် ရေးပြီး ဝဘ်ဆိုက်၏ အမြစ် သို့မဟုတ် ၎င်းအတွင်းရှိ လမ်းကြောင်းတစ်ခုတွင် ထားသည်။ ဆိုက်အမည်ပါသော ပထမအဆင့် ခေါင်းစီးတစ်ခုသာ မဖြစ်မနေ လိုသည်။ အကျဉ်းချုပ်တိုတိုနှင့် လင့်ခ်စာရင်းများမှာ ရွေးချယ်စရာအပိုင်းများဖြစ်သည်။",
+    "zh": "llms.txt 页面称它是一项提案，建议把名为 llms.txt 的文件标准化，帮助 AI 代理使用网站。文件用 Markdown 书写，这是一种带简单标记的纯文本格式，放在网站根目录或其下的某个路径中。只有写有网站名称的一级标题是必需的。简短摘要和链接列表是可选部分。",
+    "de": "Die llms.txt-Seite nennt dies einen Vorschlag, eine Datei namens llms.txt zu standardisieren, die KI-Agenten bei der Nutzung einer Website hilft. Die Datei ist in Markdown geschrieben, einem Klartextformat mit einfachen Zeichen, und liegt im Stammverzeichnis der Website oder unter einem Pfad darin. Nur die Überschrift erster Ebene mit dem Namen der Website ist Pflicht. Eine kurze Zusammenfassung und Linklisten sind optional."
+   },
+   "src": "https://llmstxt.org/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "SEO in Thailand, the general range a Bangkok agency (Relevant Audience) states",
+    "th": "SEO ในประเทศไทย ช่วงราคาทั่วไปตามที่เอเจนซี่ในกรุงเทพฯ (Relevant Audience) ระบุ",
+    "my": "ထိုင်းနိုင်ငံရှိ SEO၊ ဘန်ကောက်အေဂျင်စီ (Relevant Audience) က ဖော်ပြသော ယေဘုယျစျေးနှုန်းအကွာအဝေး",
+    "zh": "泰国的 SEO，曼谷机构 Relevant Audience 所述的一般价格范围",
+    "de": "SEO in Thailand, die allgemeine Spanne laut einer Agentur in Bangkok (Relevant Audience)"
+   },
+   "p": {
+    "en": "฿20,000–150,000 or more a month",
+    "th": "฿20,000–150,000 ขึ้นไปต่อเดือน",
+    "my": "တစ်လလျှင် ฿20,000–150,000 သို့မဟုတ် ထို့ထက်ပို",
+    "zh": "每月 ฿20,000–150,000 或更多",
+    "de": "฿20,000–150,000 oder mehr im Monat"
+   },
+   "src": "https://www.relevantaudience.com/th/seo-thailand/"
+  },
+  {
+   "t": {
+    "en": "A fully managed SEO campaign, the same agency's usual start",
+    "th": "แคมเปญ SEO แบบดำเนินการเต็มรูปแบบ ราคาเริ่มต้นปกติของเอเจนซี่เดียวกัน",
+    "my": "အပြည့်အဝ စီမံသော SEO ကမ်ပိန်း၊ ထိုအေဂျင်စီ၏ ပုံမှန် စတင်စျေး",
+    "zh": "全程代管的 SEO 推广，同一机构通常的起步价",
+    "de": "Eine voll betreute SEO-Kampagne, der übliche Einstieg derselben Agentur"
+   },
+   "p": {
+    "en": "฿40,000–60,000 a month; the page names technical SEO, content, link building, local SEO and monthly reports",
+    "th": "฿40,000–60,000 ต่อเดือน หน้าเว็บระบุ SEO ด้านเทคนิค เนื้อหา การสร้างลิงก์ SEO ท้องถิ่น และรายงานรายเดือน",
+    "my": "တစ်လလျှင် ฿40,000–60,000၊ စာမျက်နှာတွင် နည်းပညာ SEO၊ အကြောင်းအရာ၊ လင့်ခ်တည်ဆောက်ခြင်း၊ ဒေသတွင်း SEO နှင့် လစဉ်အစီရင်ခံစာတို့ကို ဖော်ပြထားသည်",
+    "zh": "每月 ฿40,000–60,000；该页列出技术 SEO、内容、外链建设、本地 SEO 和月报",
+    "de": "฿40,000–60,000 im Monat; die Seite nennt technisches SEO, Inhalte, Linkaufbau, lokales SEO und Monatsberichte"
+   },
+   "src": "https://www.relevantaudience.com/th/seo-thailand/"
+  },
+  {
+   "t": {
+    "en": "SEO and AI-ranking work built on backlinks, from a Fastwork seller: package B",
+    "th": "งาน SEO และติดอันดับ AI ด้วยแบ็กลิงก์ จากผู้ขายบน Fastwork: แพ็กเกจ B",
+    "my": "Fastwork ရောင်းသူတစ်ဦးထံမှ backlink များအပေါ် အခြေခံသော SEO နှင့် AI အဆင့်တင်ခြင်းလုပ်ငန်း - ပက်ကေ့ချ် B",
+    "zh": "靠反向链接做 SEO 与 AI 排名，来自 Fastwork 卖家：套餐 B",
+    "de": "SEO- und KI-Ranking-Arbeit über Backlinks, von einem Fastwork-Verkäufer: Paket B"
+   },
+   "p": {
+    "en": "฿3,000 for 500–700 backlinks and a report of the links placed; the package card says 7 days; the listing shows 1.6K sales",
+    "th": "฿3,000 สำหรับแบ็กลิงก์ 500–700 รายการและรายงานลิงก์ที่วาง การ์ดแพ็กเกจระบุ 7 วัน ประกาศแสดงยอดขาย 1.6K ครั้ง",
+    "my": "backlink 500–700 နှင့် ထားသည့်လင့်ခ်များ၏ အစီရင်ခံစာအတွက် ฿3,000၊ ပက်ကေ့ချ်ကတ်တွင် 7 ရက်ဟု ဖော်ပြထားပြီး စာရင်းတွင် ရောင်းချမှု 1.6K ကြိမ် ပြထားသည်",
+    "zh": "฿3,000，含 500–700 条反向链接和一份已放置链接的报告；套餐卡写 7 天；该页显示售出 1.6K 次",
+    "de": "฿3,000 für 500–700 Backlinks und einen Bericht über die gesetzten Links; die Paketkarte nennt 7 Tage; das Angebot zeigt 1.6K Verkäufe"
+   },
+   "src": "https://fastwork.co/user/welike/seo-52325478"
+  },
+  {
+   "t": {
+    "en": "Appearing in Google's organic search results",
+    "th": "การปรากฏในผลการค้นหาแบบออร์แกนิกของ Google",
+    "my": "Google ၏ သဘာဝရှာဖွေမှုရလဒ်များတွင် ပေါ်လာခြင်း",
+    "zh": "出现在 Google 的自然搜索结果中",
+    "de": "Erscheinen in den organischen Suchergebnissen von Google"
+   },
+   "p": {
+    "en": "฿0; Google says it does not accept money to include or rank sites in them",
+    "th": "฿0 Google ระบุว่าไม่รับเงินเพื่อใส่หรือจัดอันดับเว็บไซต์ในผลเหล่านี้",
+    "my": "฿0၊ ထိုရလဒ်များတွင် ဝဘ်ဆိုက်များကို ထည့်သွင်းရန် သို့မဟုတ် အဆင့်သတ်မှတ်ရန် ငွေမယူကြောင်း Google က ဆိုသည်",
+    "zh": "฿0；Google 说它不收钱来收录或排名网站",
+    "de": "฿0; Google sagt, es nimmt kein Geld, um Websites in diese Ergebnisse aufzunehmen oder zu ranken"
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+  },
+  {
+   "t": {
+    "en": "A Google Business Profile",
+    "th": "Google Business Profile (โปรไฟล์ธุรกิจ)",
+    "my": "Google Business Profile စာမျက်နှာ",
+    "zh": "Google 商家资料（Business Profile）",
+    "de": "Ein Google-Unternehmensprofil (Business Profile)"
+   },
+   "p": {
+    "en": "฿0; Google's help page says a business can be added or claimed at no charge",
+    "th": "฿0 หน้าช่วยเหลือของ Google ระบุว่าเพิ่มหรือเคลมธุรกิจได้โดยไม่คิดค่าใช้จ่าย",
+    "my": "฿0၊ ကုန်ကျစရိတ်မရှိဘဲ လုပ်ငန်းကို ထည့်သွင်းခြင်း သို့မဟုတ် ပိုင်ဆိုင်မှုတောင်းဆိုခြင်း ပြုလုပ်နိုင်ကြောင်း Google ၏ အကူအညီစာမျက်နှာက ဆိုသည်",
+    "zh": "฿0；Google 帮助页面说，添加或认领商家不收费",
+    "de": "฿0; laut Hilfeseite von Google lässt sich ein Unternehmen kostenlos hinzufügen oder beanspruchen"
+   },
+   "src": "https://support.google.com/business/answer/2911778"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does SEO cost in Thailand?",
+    "th": "รับทำ SEO ในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် SEO ဘယ်လောက်ကုန်သလဲ",
+    "zh": "在泰国做 SEO 要多少钱",
+    "de": "Was kostet SEO in Thailand?"
+   },
+   "a": {
+    "en": "A Bangkok agency, Relevant Audience, says SEO in Thailand generally runs about ฿20,000 to ฿150,000 or more a month. It gives ฿40,000 to ฿60,000 a month as the usual start for a fully managed campaign. Its page lists technical SEO, content, link building, local SEO and monthly reports as parts of the service.",
+    "th": "เอเจนซี่ในกรุงเทพฯ ชื่อ Relevant Audience ระบุว่าค่าบริการ SEO ในไทยโดยทั่วไปอยู่ที่ประมาณ ฿20,000 ถึง ฿150,000 ขึ้นไปต่อเดือน และระบุ ฿40,000 ถึง ฿60,000 ต่อเดือนเป็นราคาเริ่มต้นปกติของแคมเปญแบบดำเนินการเต็มรูปแบบ หน้าเว็บระบุ SEO ด้านเทคนิค เนื้อหา การสร้างลิงก์ SEO ท้องถิ่น และรายงานรายเดือนเป็นส่วนของบริการ",
+    "my": "ဘန်ကောက်အေဂျင်စီ Relevant Audience က ထိုင်းနိုင်ငံတွင် SEO ဝန်ဆောင်ခသည် ယေဘုယျအားဖြင့် တစ်လလျှင် ฿20,000 မှ ฿150,000 သို့မဟုတ် ထို့ထက်ပို ရှိသည်ဟု ဆိုသည်။ အပြည့်အဝ စီမံသော ကမ်ပိန်းအတွက် ပုံမှန် စတင်စျေးမှာ တစ်လလျှင် ฿40,000 မှ ฿60,000 ဟု ဖော်ပြသည်။ ၎င်း၏ စာမျက်နှာတွင် နည်းပညာ SEO၊ အကြောင်းအရာ၊ လင့်ခ်တည်ဆောက်ခြင်း၊ ဒေသတွင်း SEO နှင့် လစဉ်အစီရင်ခံစာတို့ကို ဝန်ဆောင်မှု၏ အစိတ်အပိုင်းများအဖြစ် ဖော်ပြထားသည်။",
+    "zh": "曼谷机构 Relevant Audience 说，泰国的 SEO 服务一般每月约 ฿20,000 到 ฿150,000 或更多。它给出的全程代管推广的通常起步价是每月 ฿40,000 到 ฿60,000。该机构的页面把技术 SEO、内容、外链建设、本地 SEO 和月报列为服务的组成部分。",
+    "de": "Die Agentur Relevant Audience in Bangkok sagt, SEO in Thailand koste im Allgemeinen etwa ฿20,000 bis ฿150,000 oder mehr im Monat. Für eine voll betreute Kampagne nennt sie ฿40,000 bis ฿60,000 im Monat als üblichen Einstieg. Auf ihrer Seite gehören technisches SEO, Inhalte, Linkaufbau, lokales SEO und Monatsberichte zum Angebot."
+   },
+   "src": "https://www.relevantaudience.com/th/seo-thailand/"
+  },
+  {
+   "q": {
+    "en": "What does SEO cost on Fastwork?",
+    "th": "รับทำ SEO บน Fastwork ราคาเท่าไร",
+    "my": "Fastwork တွင် SEO ဘယ်လောက်ကျသလဲ",
+    "zh": "在 Fastwork 上做 SEO 多少钱",
+    "de": "Was kostet SEO auf Fastwork?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists SEO and AI-ranking work built on backlinks, which are links to a site from other sites. Package B costs ฿3,000 for 500–700 backlinks and a report of the links placed. The package card says 7 days. The listing shows 1.6K sales, a 4.9 rating and a 100% completion rate. Only package B shows a price on the page.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork เสนองาน SEO และติดอันดับ AI ด้วยแบ็กลิงก์ คือลิงก์จากเว็บไซต์อื่นมายังเว็บไซต์ แพ็กเกจ B ราคา ฿3,000 ได้แบ็กลิงก์ 500–700 รายการและรายงานลิงก์ที่วาง การ์ดแพ็กเกจระบุ 7 วัน ประกาศแสดงยอดขาย 1.6K ครั้ง คะแนน 4.9 และอัตราการทำงานสำเร็จ 100% มีเฉพาะแพ็กเกจ B ที่แสดงราคาบนหน้านี้",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက backlink (အခြားဆိုက်များမှ ဆိုက်တစ်ခုသို့ လင့်ခ်များ) အပေါ် အခြေခံသော SEO နှင့် AI အဆင့်တင်ခြင်းလုပ်ငန်းကို တင်ထားသည်။ ပက်ကေ့ချ် B သည် backlink 500–700 နှင့် ထားသည့်လင့်ခ်များ၏ အစီရင်ခံစာအတွက် ฿3,000 ဖြစ်သည်။ ပက်ကေ့ချ်ကတ်တွင် 7 ရက်ဟု ရေးထားသည်။ စာရင်းတွင် ရောင်းချမှု 1.6K ကြိမ်၊ အဆင့် 4.9 နှင့် ပြီးစီးမှုနှုန်း 100% ပြထားသည်။ စာမျက်နှာပေါ်တွင် ပက်ကေ့ချ် B သာ စျေးနှုန်းပြသည်။",
+    "zh": "Fastwork 上一位卖家挂出靠反向链接（其他网站指向某网站的链接）做 SEO 与 AI 排名的服务。套餐 B 收 ฿3,000，含 500–700 条反向链接和一份已放置链接的报告。套餐卡写 7 天。该页显示售出 1.6K 次、评分 4.9、完成率 100%。页面上只有套餐 B 标了价格。",
+    "de": "Ein Verkäufer auf Fastwork bietet SEO- und KI-Ranking-Arbeit über Backlinks an, also Links von anderen Websites auf eine Website. Paket B kostet ฿3,000 für 500–700 Backlinks und einen Bericht über die gesetzten Links. Auf der Paketkarte stehen 7 Tage. Das Angebot zeigt 1.6K Verkäufe, eine Bewertung von 4.9 und eine Abschlussquote von 100%. Nur Paket B hat auf der Seite einen Preis."
+   },
+   "src": "https://fastwork.co/user/welike/seo-52325478"
+  },
+  {
+   "q": {
+    "en": "Does it cost money to appear in Google's results?",
+    "th": "การปรากฏในผลการค้นหา Google ต้องจ่ายเงินไหม",
+    "my": "Google ရလဒ်များတွင် ပေါ်လာရန် ငွေပေးရပါသလား",
+    "zh": "出现在 Google 搜索结果中要花钱吗",
+    "de": "Kostet es Geld, in den Google-Ergebnissen zu erscheinen?"
+   },
+   "a": {
+    "en": "Google's page on hiring an SEO says appearing in Google's organic search results is free. It also says Google does not accept money to include or rank sites in those results.",
+    "th": "หน้าของ Google เรื่องการจ้าง SEO ระบุว่าการปรากฏในผลการค้นหาแบบออร์แกนิกของ Google ไม่เสียค่าใช้จ่าย และระบุว่า Google ไม่รับเงินเพื่อใส่หรือจัดอันดับเว็บไซต์ในผลเหล่านั้น",
+    "my": "SEO ကို ငှားရမ်းခြင်းအကြောင်း Google ၏ စာမျက်နှာက Google ၏ သဘာဝရှာဖွေမှုရလဒ်များတွင် ပေါ်လာခြင်းသည် အခမဲ့ဖြစ်သည်ဟု ဆိုသည်။ ထိုရလဒ်များတွင် ဝဘ်ဆိုက်များကို ထည့်သွင်းရန် သို့မဟုတ် အဆင့်သတ်မှတ်ရန် Google က ငွေမယူကြောင်းလည်း ဆိုသည်။",
+    "zh": "Google 关于聘请 SEO 的页面说，出现在 Google 的自然搜索结果中是免费的。它还说，Google 不收钱来收录或排名网站。",
+    "de": "Auf der Google-Seite zur Beauftragung eines SEO steht, dass das Erscheinen in den organischen Suchergebnissen von Google kostenlos ist. Dort steht auch, dass Google kein Geld nimmt, um Websites in diese Ergebnisse aufzunehmen oder zu ranken."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+  },
+  {
+   "q": {
+    "en": "Can anyone guarantee first place on Google?",
+    "th": "มีใครการันตีอันดับหนึ่งบน Google ได้ไหม",
+    "my": "Google တွင် အမှတ်စဉ် 1 ကို မည်သူမဆို အာမခံနိုင်ပါသလား",
+    "zh": "有人能保证排在 Google 第一位吗",
+    "de": "Kann jemand Platz eins bei Google garantieren?"
+   },
+   "a": {
+    "en": "Google states that no one can guarantee a #1 ranking on Google. It describes an SEO audit as about giving estimates of improvement that match what can be done.",
+    "th": "Google ระบุว่าไม่มีใครรับประกันอันดับ 1 บน Google ได้ และอธิบายว่าการตรวจ SEO เป็นการให้ค่าประมาณการปรับปรุงที่ตรงกับสิ่งที่ทำได้จริง",
+    "my": "Google ပေါ်တွင် အမှတ်စဉ် 1 ကို မည်သူမျှ အာမခံ၍မရဟု Google က ဆိုသည်။ SEO စစ်ဆေးမှုသည် ဖြစ်နိုင်သည့်အတိုင်း တိုးတက်မှု ခန့်မှန်းချက်များ ပေးသင့်သည်ဟု ဖော်ပြသည်။",
+    "zh": "Google 表示，没有人能保证在 Google 上排第一。它说，SEO 审计给出的改进估计应当符合实际能做到的程度。",
+    "de": "Google erklärt, niemand könne Platz 1 bei Google garantieren. Ein SEO-Audit soll laut Google Schätzungen der Verbesserung liefern, die dem entsprechen, was machbar ist."
+   },
+   "src": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+  },
+  {
+   "q": {
+    "en": "How many searchers click the first Google result?",
+    "th": "คนค้นหากี่คนคลิกผลลัพธ์แรกของ Google",
+    "my": "ရှာဖွေသူ ဘယ်လောက်က Google ၏ ပထမရလဒ်ကို နှိပ်သလဲ",
+    "zh": "有多少搜索者会点 Google 的第一条结果",
+    "de": "Wie viele Suchende klicken das erste Google-Ergebnis an?"
+   },
+   "a": {
+    "en": "In Backlinko's study the first Google result has a click-through rate of 27.6%. The top three results get 54.4% of all clicks. Only 0.63% of searchers click something on the second page. Backlinko's page was last updated on 16 April 2025.",
+    "th": "ในการศึกษาของ Backlinko ผลลัพธ์อันดับแรกของ Google มีอัตราการคลิก 27.6% สามอันดับแรกได้รับ 54.4% ของการคลิกทั้งหมด มีผู้ค้นหาเพียง 0.63% ที่คลิกผลลัพธ์ในหน้าที่สอง หน้าของ Backlinko อัปเดตล่าสุดเมื่อ 16 เมษายน 2025",
+    "my": "Backlinko ၏ လေ့လာမှုတွင် Google ၏ ပထမရလဒ်၏ click-through rate သည် 27.6% ဖြစ်သည်။ ထိပ်ဆုံးရလဒ်သုံးခုက နှိပ်မှုအားလုံး၏ 54.4% ရသည်။ ရှာဖွေသူ 0.63% သာ ဒုတိယစာမျက်နှာရှိ တစ်ခုခုကို နှိပ်သည်။ Backlinko ၏ စာမျက်နှာကို 2025 ခုနှစ် ဧပြီလ 16 ရက်တွင် နောက်ဆုံးပြင်ဆင်ခဲ့သည်။",
+    "zh": "在 Backlinko 的研究中，Google 第一条结果的点击率是 27.6%。前三条结果拿走全部点击的 54.4%。只有 0.63% 的搜索者点击了第二页上的内容。Backlinko 的页面最近一次更新是 2025 年 4 月 16 日。",
+    "de": "In der Studie von Backlinko hat das erste Google-Ergebnis eine Klickrate von 27.6%. Die ersten drei Ergebnisse erhalten 54.4% aller Klicks. Nur 0.63% der Suchenden klicken auf der zweiten Seite etwas an. Die Seite von Backlinko wurde zuletzt am 16. April 2025 aktualisiert."
+   },
+   "src": "https://backlinko.com/google-ctr-stats"
+  },
+  {
+   "q": {
+    "en": "Does a site need an AI text file to appear in Google's AI answers?",
+    "th": "เว็บไซต์ต้องมีไฟล์ข้อความสำหรับ AI เพื่อปรากฏในคำตอบ AI ของ Google ไหม",
+    "my": "Google ၏ AI အဖြေများတွင် ပေါ်လာရန် ဝဘ်ဆိုက်တွင် AI စာသားဖိုင် လိုပါသလား",
+    "zh": "网站需要 AI 文本文件才能出现在 Google 的 AI 回答里吗",
+    "de": "Braucht eine Website eine KI-Textdatei, um in den KI-Antworten von Google zu erscheinen?"
+   },
+   "a": {
+    "en": "Google's page on AI features says a site does not need to create new machine-readable files, AI text files or markup to appear in AI Overviews or AI Mode. A page must be indexed and eligible to show in Search with a snippet. The same page names robots.txt rules for Googlebot as the way site owners control access.",
+    "th": "หน้า AI features ของ Google ระบุว่าเว็บไซต์ไม่ต้องสร้างไฟล์ที่เครื่องอ่านได้ ไฟล์ข้อความสำหรับ AI หรือมาร์กอัปใหม่ เพื่อปรากฏใน AI Overviews หรือ AI Mode หน้าต้องถูกจัดทำดัชนีและมีสิทธิ์แสดงในผลการค้นหาพร้อมสนิปเป็ต หน้าเดียวกันระบุกฎ robots.txt สำหรับ Googlebot เป็นวิธีที่เจ้าของเว็บไซต์ควบคุมการเข้าถึง",
+    "my": "Google ၏ AI features စာမျက်နှာက AI Overviews သို့မဟုတ် AI Mode တွင် ပေါ်လာရန် ဝဘ်ဆိုက်က စက်ဖတ်နိုင်သော ဖိုင်အသစ်၊ AI စာသားဖိုင် သို့မဟုတ် markup မဖန်တီးရဟု ဆိုသည်။ စာမျက်နှာသည် index လုပ်ထားခြင်းခံရပြီး snippet ဖြင့် Search တွင် ပြသခွင့်ရှိရမည်။ ထိုစာမျက်နှာကပင် ဝဘ်ဆိုက်ပိုင်ရှင်များက ဝင်ရောက်မှုကို ထိန်းချုပ်ပုံအဖြစ် Googlebot အတွက် robots.txt စည်းမျဉ်းများကို ဖော်ပြသည်။",
+    "zh": "Google 关于 AI 功能的页面说，网站不需要新建机器可读文件、AI 文本文件或标记，就能出现在 AI 概览或 AI 模式中。页面必须已被收录，并有资格带摘要显示在搜索中。同一页面把针对 Googlebot 的 robots.txt 规则列为网站所有者控制访问的方式。",
+    "de": "Auf der Google-Seite zu KI-Funktionen steht, dass eine Website keine neuen maschinenlesbaren Dateien, KI-Textdateien oder Auszeichnungen anlegen muss, um in AI Overviews oder im AI Mode zu erscheinen. Eine Seite muss indexiert sein und mit einem Snippet in der Suche angezeigt werden dürfen. Dieselbe Seite nennt robots.txt-Regeln für Googlebot als Weg, wie Website-Betreiber den Zugriff steuern."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/ai-features"
+  },
+  {
+   "q": {
+    "en": "Does a small site need a sitemap?",
+    "th": "เว็บไซต์เล็กต้องมี sitemap ไหม",
+    "my": "ဆိုက်သေးတစ်ခုတွင် sitemap လိုပါသလား",
+    "zh": "小网站需要站点地图吗",
+    "de": "Braucht eine kleine Website eine Sitemap?"
+   },
+   "a": {
+    "en": "Google says a site of about 500 pages or fewer that is well linked inside may not need one. A new site with few links from other sites can need one, because Googlebot may not find pages that no other site links to. Google also says a sitemap does not guarantee that its items are crawled and indexed.",
+    "th": "Google ระบุว่าเว็บไซต์ที่มีประมาณ 500 หน้าหรือน้อยกว่าและเชื่อมโยงกันเองภายในดีอาจไม่ต้องมี sitemap เว็บไซต์ใหม่ที่มีลิงก์จากเว็บอื่นน้อยอาจต้องมี เพราะ Googlebot อาจไม่พบหน้าที่ไม่มีเว็บอื่นลิงก์มา Google ยังระบุว่า sitemap ไม่ได้รับประกันว่ารายการจะถูกรวบรวมและจัดทำดัชนี",
+    "my": "စာမျက်နှာ 500 ခန့် သို့မဟုတ် ထိုထက်နည်းပြီး အတွင်းလင့်ခ်ကောင်းစွာ ချိတ်ထားသော ဆိုက်တွင် sitemap မလိုနိုင်ဟု Google က ဆိုသည်။ အခြားဆိုက်များမှ လင့်ခ် နည်းသော ဆိုက်အသစ်တွင် လိုနိုင်သည်၊ အခြားဆိုက်က လင့်ခ်မချိတ်သော စာမျက်နှာများကို Googlebot မတွေ့နိုင်ပါ။ sitemap ထဲရှိ အရာများကို crawl နှင့် index လုပ်ခြင်းကို အာမခံမပေးဟုလည်း Google က ဆိုသည်။",
+    "zh": "Google 说，页面约 500 个或更少、内部链接完善的网站可能不需要站点地图。来自其他网站的链接很少的新网站可能需要，因为 Googlebot 可能找不到没有其他网站链接的页面。Google 还说，站点地图不保证其中的内容会被抓取和收录。",
+    "de": "Google sagt, eine Website mit etwa 500 Seiten oder weniger, die intern gut verlinkt ist, braucht möglicherweise keine Sitemap. Eine neue Website mit wenigen Links von anderen Websites kann eine brauchen, weil Googlebot Seiten, auf die keine andere Website verlinkt, vielleicht nicht findet. Google sagt auch, eine Sitemap garantiere nicht, dass ihre Einträge gecrawlt und indexiert werden."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+  },
+  {
+   "q": {
+    "en": "Does Google read the phone version or the desktop version of a page?",
+    "th": "Google อ่านหน้าเว็บเวอร์ชันโทรศัพท์หรือเดสก์ท็อป",
+    "my": "Google က စာမျက်နှာ၏ ဖုန်းဗားရှင်း သို့မဟုတ် ကွန်ပျူတာဗားရှင်းကို ဖတ်သလဲ",
+    "zh": "Google 读的是页面的手机版还是电脑版",
+    "de": "Liest Google die Handy- oder die Desktop-Version einer Seite?"
+   },
+   "a": {
+    "en": "Google says it uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking. Only the content shown on the mobile site is used for indexing. Google recommends responsive web design, where the content and the metadata are the same on phone and desktop.",
+    "th": "Google ระบุว่าใช้เนื้อหาเวอร์ชันมือถือของเว็บไซต์ ที่เก็บด้วย smartphone agent ในการจัดทำดัชนีและจัดอันดับ และใช้เฉพาะเนื้อหาที่แสดงบนเว็บมือถือในการจัดทำดัชนี Google แนะนำการออกแบบเว็บแบบ responsive ซึ่งเนื้อหาและเมทาดาทาเหมือนกันทั้งบนโทรศัพท์และเดสก์ท็อป",
+    "my": "Google က ဝဘ်ဆိုက်၏ အကြောင်းအရာကို smartphone agent ဖြင့် crawl လုပ်ထားသော မိုဘိုင်းဗားရှင်းဖြင့် index လုပ်ရန်နှင့် အဆင့်သတ်မှတ်ရန် သုံးသည်ဟု ဆိုသည်။ မိုဘိုင်းဆိုက်တွင် ပြသသော အကြောင်းအရာကိုသာ index လုပ်ရာတွင် သုံးသည်။ အကြောင်းအရာနှင့် metadata သည် ဖုန်းနှင့် ကွန်ပျူတာတွင် တူညီသော responsive web design ကို Google က အကြံပြုသည်။",
+    "zh": "Google 说，它用以智能手机爬虫抓取的网站内容手机版本来收录和排名。收录时只使用手机版上显示的内容。Google 推荐响应式网页设计，即内容和元数据在手机与电脑上相同。",
+    "de": "Google sagt, es nutzt für Indexierung und Ranking die mobile Version der Inhalte einer Website, mit dem Smartphone-Agenten gecrawlt. Für die Indexierung zählen nur Inhalte, die auf der mobilen Website gezeigt werden. Google empfiehlt responsives Webdesign, bei dem Inhalt und Metadaten auf Handy und Desktop gleich sind."
+   },
+   "src": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing"
+  }
+ ],
+ "related": [
+  "web-line",
+  "web-search",
+  "web-mail",
+  "compare",
+  "proposal",
+  "ads-run"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Search Central: Google's AI features and your website",
+    "th": "Google Search Central: ฟีเจอร์ AI ของ Google และเว็บไซต์ของคุณ",
+    "my": "Google Search Central - Google ၏ AI features နှင့် သင့်ဝဘ်ဆိုက်",
+    "zh": "Google Search Central：Google 的 AI 功能与您的网站",
+    "de": "Google Search Central: Googles KI-Funktionen und Ihre Website"
+   },
+   "href": "https://developers.google.com/search/docs/appearance/ai-features"
+  },
+  {
+   "t": {
+    "en": "Google Search Central: do you need an SEO?",
+    "th": "Google Search Central: คุณต้องจ้าง SEO หรือไม่",
+    "my": "Google Search Central - SEO ငှားရန် လိုအပ်ပါသလား",
+    "zh": "Google Search Central：您需要聘请 SEO 吗",
+    "de": "Google Search Central: Brauchen Sie einen SEO?"
+   },
+   "href": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+  },
+  {
+   "t": {
+    "en": "OpenAI: its crawlers and robots.txt",
+    "th": "OpenAI: crawler ของ OpenAI และ robots.txt",
+    "my": "OpenAI - ၎င်း၏ crawler များနှင့် robots.txt",
+    "zh": "OpenAI：其爬虫与 robots.txt",
+    "de": "OpenAI: seine Crawler und die robots.txt"
+   },
+   "href": "https://developers.openai.com/api/docs/bots"
+  },
+  {
+   "t": {
+    "en": "llmstxt.org: the llms.txt proposal",
+    "th": "llmstxt.org: ข้อเสนอไฟล์ llms.txt",
+    "my": "llmstxt.org - llms.txt အဆိုပြုချက်",
+    "zh": "llmstxt.org：llms.txt 提案",
+    "de": "llmstxt.org: der Vorschlag für llms.txt"
+   },
+   "href": "https://llmstxt.org/"
+  }
+ ],
+ "glyphs": [
+  "search",
+  "robot",
+  "pin"
+ ]
+}

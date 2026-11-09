@@ -1,0 +1,299 @@
+{
+ "id": "fb-care",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A shop's Facebook page needs posts and replies week after week, and the owner is busy with the shop.",
+  "th": "เพจ Facebook ของร้านต้องมีโพสต์และการตอบกลับต่อเนื่องทุกสัปดาห์ ขณะที่เจ้าของร้านยุ่งอยู่กับการขาย",
+  "my": "ဆိုင်၏ Facebook စာမျက်နှာတွင် ပို့စ်များနှင့် ပြန်ကြားချက်များ အပတ်စဉ် လိုအပ်ပြီး ပိုင်ရှင်သည် ဆိုင်အလုပ်တွင် အလုပ်များနေသည်။",
+  "zh": "店铺的 Facebook 主页每周都需要发帖和回复，而店主要忙店里的事。",
+  "de": "Die Facebook-Seite eines Ladens braucht Woche für Woche Beiträge und Antworten, während die Inhaberin oder der Inhaber im Laden gebraucht wird."
+ },
+ "n": {
+  "de": "Facebook-Seitenpflege"
+ },
+ "l": {
+  "de": "12 Beiträge pro Monat, Kommentare und Posteingang an Werktagen beantwortet."
+ },
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "12 posts with pictures and captions are made each month.",
+    "th": "ทำโพสต์ 12 โพสต์พร้อมภาพและแคปชันทุกเดือน",
+    "my": "လစဉ် ပုံနှင့် ခေါင်းစဉ်ပါ ပို့စ် 12 ခု ပြုလုပ်သည်။",
+    "zh": "每月做 12 条带图片和文案的帖子。",
+    "de": "Pro Monat entstehen 12 Beiträge mit Bildern und Texten."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Monatlich"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "Comments and the inbox are answered on weekdays.",
+    "th": "ตอบคอมเมนต์และกล่องข้อความวันทำการ",
+    "my": "ရုံးရက်များတွင် comment နှင့် inbox များကို ပြန်ဖြေသည်။",
+    "zh": "工作日回复评论和私信。",
+    "de": "Kommentare und Posteingang werden an Werktagen beantwortet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Weekdays",
+    "th": "วันทำการ",
+    "my": "ရုံးရက်များ",
+    "zh": "工作日",
+    "de": "Werktags"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "A report comes at the end of the month.",
+    "th": "ส่งรายงานเมื่อสิ้นเดือน",
+    "my": "လကုန်တွင် အစီရင်ခံစာ ပေးပို့သည်။",
+    "zh": "月底出报告。",
+    "de": "Am Monatsende kommt ein Bericht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "End of the month",
+    "th": "สิ้นเดือน",
+    "my": "လကုန်တွင်",
+    "zh": "月底",
+    "de": "Ende des Monats"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "In late 2025 Facebook's ad reach in Thailand was 51.5 million people (71.9% of the population) and Instagram's 20.6 million. LINE had 56 million monthly users, and 67.8 million people in Thailand used the internet (94.7%) in October 2025.",
+    "th": "ปลายปี 2568 โฆษณาบน Facebook เข้าถึงคนในไทย 51.5 ล้านคน (71.9% ของประชากร) และ Instagram 20.6 ล้านคน LINE มีผู้ใช้รายเดือน 56 ล้านคน และคนไทยใช้อินเทอร์เน็ต 67.8 ล้านคน (94.7%) ในเดือนตุลาคม 2568",
+    "my": "2025 နှစ်ကုန်ပိုင်းတွင် ထိုင်းနိုင်ငံ၌ Facebook ကြော်ငြာ၏ ရောက်ရှိမှုမှာ လူ 51.5 သန်း (လူဦးရေ၏ 71.9%) နှင့် Instagram မှာ 20.6 သန်း ဖြစ်သည်။ LINE တွင် လစဉ်အသုံးပြုသူ 56 သန်းရှိပြီး 2025 ခုနှစ် အောက်တိုဘာတွင် ထိုင်းနိုင်ငံရှိ လူ 67.8 သန်း (94.7%) အင်တာနက်သုံးခဲ့သည်။",
+    "zh": "2025 年末，Facebook 在泰国的广告触达为 5,150 万人（占人口 71.9%），Instagram 为 2,060 万。LINE 有 5,600 万月活用户；2025 年 10 月泰国有 6,780 万人上网（94.7%）。",
+    "de": "Ende 2025 erreichte Facebook-Werbung in Thailand 51,5 Millionen Menschen (71,9 % der Bevölkerung) und Instagram 20,6 Millionen. LINE hatte 56 Millionen monatlich Nutzende, und im Oktober 2025 waren 67,8 Millionen Menschen in Thailand online (94,7 %)."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "A Wongnai page dated 20 May 2020 lists sizes for Facebook posts: horizontal 1200 × 800 pixels (4:3), square 1040 × 1040 and vertical 960 × 1200 (4:5). For Instagram it lists 1200 × 628 horizontal, 1040 × 1040 square and 960 × 1200 or 1080 × 1350 vertical.",
+    "th": "หน้าของ Wongnai ลงวันที่ 20 พฤษภาคม 2563 ระบุขนาดรูปโพสต์ Facebook แนวนอน 1200 x 800 พิกเซล (4:3) จัตุรัส 1040 x 1040 และแนวตั้ง 960 x 1200 (4:5) ส่วน Instagram แนวนอน 1200 x 628 จัตุรัส 1040 x 1040 และแนวตั้ง 960 x 1200 หรือ 1080 x 1350",
+    "my": "2020 ခုနှစ် မေလ 20 ရက်စွဲ Wongnai စာမျက်နှာတွင် Facebook ပို့စ်ပုံအရွယ်အစားများကို ဖော်ပြသည် — အလျားလိုက် 1200 × 800 ပီဇယ် (4:3)၊ လေးထောင့်ပုံ 1040 × 1040 နှင့် ဒေါင်လိုက် 960 × 1200 (4:5)။ Instagram အတွက် အလျားလိုက် 1200 × 628၊ လေးထောင့်ပုံ 1040 × 1040 နှင့် ဒေါင်လိုက် 960 × 1200 သို့မဟုတ် 1080 × 1350 ဖော်ပြသည်။",
+    "zh": "Wongnai 一页（日期为 2020 年 5 月 20 日）列出 Facebook 帖子图尺寸：横版 1200 × 800 像素（4:3）、方形 1040 × 1040、竖版 960 × 1200（4:5）；Instagram 为横版 1200 × 628、方形 1040 × 1040、竖版 960 × 1200 或 1080 × 1350。",
+    "de": "Eine Wongnai-Seite vom 20. Mai 2020 nennt für Facebook-Beiträge: quer 1200 × 800 Pixel (4:3), quadratisch 1040 × 1040 und hoch 960 × 1200 (4:5). Für Instagram nennt sie quer 1200 × 628, quadratisch 1040 × 1040 und hoch 960 × 1200 oder 1080 × 1350."
+   },
+   "src": "https://www.wongnai.com/business-owners/picture-size-social-media-platform"
+  },
+  {
+   "t": {
+    "en": "An article by Legal500 says e-commerce transactions, the sale or purchase of goods or services over the Internet, are subject to registration under the Commercial Registration Act, and a registered company holding a commercial registration certificate needs no separate e-commerce licence.",
+    "th": "บทความของ Legal500 ระบุว่าการซื้อขายสินค้าหรือบริการผ่านอินเทอร์เน็ตอยู่ภายใต้การจดทะเบียนตามพระราชบัญญัติทะเบียนพาณิชย์ และนิติบุคคลที่จดทะเบียนและมีหนังสือรับรองไม่ต้องขอใบอนุญาตอีคอมเมิร์ซแยก",
+    "my": "Legal500 ၏ ဆောင်းပါးတွင် အင်တာနက်ပေါ်မှ ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှု ရောင်းဝယ်ခြင်း (e-commerce) သည် ကုန်သွယ်မှတ်ပုံတင်ဥပဒေအရ မှတ်ပုံတင်ရမည့်အရာဖြစ်ပြီး ကုန်သွယ်မှတ်ပုံတင်လက်မှတ်ရှိသော မှတ်ပုံတင်ကုမ္ပဏီသည် သီးခြား e-commerce လိုင်စင် မလိုဟု ဆိုသည်။",
+    "zh": "Legal500 的一篇文章写明，通过互联网买卖商品或服务的电子商务交易须按《商业登记法》登记；已注册并持有商业登记证的公司无需另办电商许可。",
+    "de": "Ein Artikel von Legal500 schreibt, E-Commerce, also der Kauf und Verkauf von Waren oder Dienstleistungen über das Internet, unterliege der Registrierung nach dem Commercial Registration Act, und eine eingetragene Firma mit Handelsregisterzertifikat brauche keine eigene E-Commerce-Lizenz."
+   },
+   "src": "https://www.legal500.com/developments/thought-leadership/thailand-updates-e-commerce-regulations-what-you-need-to-know/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork page admin: comments and inbox answered, sales closed, 10:00–20:00",
+    "th": "แอดมินเพจบน Fastwork: ตอบคอมเมนต์และอินบ็อกซ์ ปิดการขาย 10:00–20:00",
+    "my": "Fastwork စာမျက်နှာ အက်ဒမင် — comment နှင့် inbox ဖြေခြင်း၊ ရောင်းချမှုပိတ်ပေးခြင်း၊ 10:00–20:00",
+    "zh": "Fastwork 页面管理员：回复评论和私信、促成成交，10:00–20:00",
+    "de": "Seitenbetreuung auf Fastwork: Kommentare und Posteingang beantwortet, Verkäufe abgeschlossen, 10:00–20:00"
+   },
+   "p": {
+    "en": "฿6,000 for 30 days",
+    "th": "฿6,000 ต่อ 30 วัน",
+    "my": "30 ရက်လျှင် ฿6,000",
+    "zh": "30 天 ฿6,000",
+    "de": "฿6,000 für 30 Tage"
+   },
+   "src": "https://fastwork.co/user/nookkiee/shop-and-page-admin-18445507"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer: 8–10 graphics with captions a month, posts scheduled on Facebook and Instagram twice a week, a monthly content plan",
+    "th": "ฟรีแลนซ์บน Fastwork: กราฟิกพร้อมแคปชัน 8–10 ชิ้นต่อเดือน ตั้งเวลาโพสต์ Facebook และ Instagram สัปดาห์ละสองครั้ง แผนคอนเทนต์รายเดือน",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး — လစဉ် ခေါင်းစဉ်ပါ ဂရပ်ဖစ် 8–10 ခု၊ Facebook နှင့် Instagram တွင် အပတ်စဉ်နှစ်ကြိမ် ချိန်ဆိုင်းပို့စ်တင်ခြင်း၊ လစဉ် အကြောင်းအရာအစီအစဉ်",
+    "zh": "Fastwork 自由职业者：每月 8–10 张带文案的图、Facebook 和 Instagram 每周定时发两次、月度内容计划",
+    "de": "Freelancer auf Fastwork: 8–10 Grafiken mit Texten im Monat, geplante Beiträge auf Facebook und Instagram zweimal pro Woche, ein monatlicher Inhaltsplan"
+   },
+   "p": {
+    "en": "฿9,590 for 30 days; 3 revisions",
+    "th": "฿9,590 ต่อ 30 วัน แก้ไข 3 ครั้ง",
+    "my": "30 ရက်လျှင် ฿9,590၊ ပြင်ဆင်မှု 3 ကြိမ်",
+    "zh": "30 天 ฿9,590，修改 3 次",
+    "de": "฿9,590 für 30 Tage; 3 Überarbeitungen"
+   },
+   "src": "https://fastwork.co/user/laongnam/content-marketing-92388909"
+  },
+  {
+   "t": {
+    "en": "The same freelancer's starter package: 4 graphics with captions and a content plan of 4 topics",
+    "th": "แพ็กเกจเริ่มต้นของฟรีแลนซ์รายเดียวกัน: กราฟิกพร้อมแคปชัน 4 ชิ้น และแผนคอนเทนต์ 4 หัวข้อ",
+    "my": "ထိုဖရီးလန်စာတစ်ဦးတည်း၏ စတင်အစီအစဉ် — ခေါင်းစဉ်ပါ ဂရပ်ဖစ် 4 ခုနှင့် ခေါင်းစဉ် 4 ခုပါ အကြောင်းအရာအစီအစဉ်",
+    "zh": "同一位自由职业者的入门套餐：4 张带文案的图和 4 个主题的内容计划",
+    "de": "Das Einstiegspaket desselben Freelancers: 4 Grafiken mit Texten und ein Inhaltsplan mit 4 Themen"
+   },
+   "p": {
+    "en": "฿4,500 for 14 days; 2 revisions",
+    "th": "฿4,500 ต่อ 14 วัน แก้ไข 2 ครั้ง",
+    "my": "14 ရက်လျှင် ฿4,500၊ ပြင်ဆင်မှု 2 ကြိမ်",
+    "zh": "14 天 ฿4,500，修改 2 次",
+    "de": "฿4,500 für 14 Tage; 2 Überarbeitungen"
+   },
+   "src": "https://fastwork.co/user/laongnam/content-marketing-92388909"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to have someone look after a Facebook page?",
+    "th": "จ้างคนดูแลเพจ Facebook ราคาเท่าไร",
+    "my": "Facebook စာမျက်နှာကို တစ်ယောက်ယောက်အား ထိန်းသိမ်းခိုင်းရန် ဘယ်လောက်ကျသနည်း။",
+    "zh": "请人打理 Facebook 主页要多少钱？",
+    "de": "Was kostet es, eine Facebook-Seite betreuen zu lassen?"
+   },
+   "a": {
+    "en": "One Fastwork page admin lists ฿6,000 for 30 days: comments, inbox and closing sales on a Facebook page and LINE@, 10:00–20:00. A day package is ฿300 a day or ฿800 for 3 days. The listing does not state a number of posts.",
+    "th": "แอดมินเพจบน Fastwork รายหนึ่งระบุ ฿6,000 ต่อ 30 วัน ตอบคอมเมนต์ อินบ็อกซ์ และปิดการขายบนเพจ Facebook และ LINE@ เวลา 10:00–20:00 แพ็กเกจรายวัน ฿300 ต่อวัน หรือ ฿800 สำหรับ 3 วัน รายการไม่ระบุจำนวนโพสต์",
+    "my": "Fastwork စာမျက်နှာအက်ဒမင်တစ်ဦးသည် Facebook စာမျက်နှာနှင့် LINE@ ပေါ်ရှိ comment၊ inbox နှင့် ရောင်းချမှုပိတ်ခြင်းကို 10:00–20:00 အတွက် 30 ရက်လျှင် ฿6,000 ဟု ဖော်ပြသည်။ တစ်ရက်အစီအစဉ်မှာ တစ်ရက် ฿300 သို့မဟုတ် 3 ရက် ฿800 ဖြစ်သည်။ ပို့စ်အရေအတွက်ကို မဖော်ပြပါ။",
+    "zh": "一位 Fastwork 页面管理员标价 30 天 ฿6,000：回复 Facebook 主页和 LINE@ 的评论和私信并促成成交，10:00–20:00。按天套餐为每天 ฿300 或 3 天 ฿800。页面没有写发帖数量。",
+    "de": "Ein Seitenbetreuer auf Fastwork führt ฿6,000 für 30 Tage auf: Kommentare, Posteingang und Verkaufsabschlüsse auf einer Facebook-Seite und LINE@, 10:00–20:00. Ein Tagespaket kostet ฿300 pro Tag oder ฿800 für 3 Tage. Die Anzahl der Beiträge ist nicht angegeben."
+   },
+   "src": "https://fastwork.co/user/nookkiee/shop-and-page-admin-18445507"
+  },
+  {
+   "q": {
+    "en": "What do page-care packages include?",
+    "th": "แพ็กเกจดูแลเพจมีอะไรบ้าง",
+    "my": "စာမျက်နှာစောင့်ရှောက်မှုအစီအစဉ်များတွင် ဘာတွေပါဝင်သနည်း။",
+    "zh": "主页代运营套餐包含什么？",
+    "de": "Was enthalten Pakete zur Seitenpflege?"
+   },
+   "a": {
+    "en": "On one Fastwork listing, the ฿4,500 starter covers 14 days: 4 graphics with captions, a plan of 4 topics, posts scheduled twice a week on Facebook and Instagram, and a page statistics summary. The ฿9,590 package covers 30 days with 8–10 graphics, a monthly plan and a 2–3 minute video summary of the results. Video editing and TikTok are excluded.",
+    "th": "ในรายการบน Fastwork รายการหนึ่ง แพ็กเกจเริ่มต้น ฿4,500 ครอบคลุม 14 วัน ได้กราฟิกพร้อมแคปชัน 4 ชิ้น แผน 4 หัวข้อ ตั้งเวลาโพสต์ Facebook และ Instagram สัปดาห์ละสองครั้ง และสรุปสถิติเพจ แพ็กเกจ ฿9,590 ครอบคลุม 30 วัน กราฟิก 8–10 ชิ้น แผนรายเดือน และวิดีโอสรุปผล 2–3 นาที ไม่รวมตัดต่อวิดีโอและ TikTok",
+    "my": "Fastwork စာမျက်နှာတစ်ခုတွင် ฿4,500 စတင်အစီအစဉ်သည် 14 ရက်ကို အကျုံးဝင်ပြီး ခေါင်းစဉ်ပါ ဂရပ်ဖစ် 4 ခု၊ ခေါင်းစဉ် 4 ခုပါ အစီအစဉ်၊ Facebook နှင့် Instagram တွင် အပတ်စဉ်နှစ်ကြိမ် ချိန်ဆိုင်းပို့စ်တင်ခြင်းနှင့် စာမျက်နှာစာရင်းအင်းအကျဉ်းချုပ် ပါဝင်သည်။ ฿9,590 အစီအစဉ်သည် 30 ရက်ကို အကျုံးဝင်ပြီး ဂရပ်ဖစ် 8–10 ခု၊ လစဉ်အစီအစဉ်နှင့် ရလဒ်ကို 2–3 မိနစ်ဗီဒီယိုဖြင့် အကျဉ်းချုပ်ပေးခြင်း ပါဝင်သည်။ ဗီဒီယိုတည်းဖြတ်ခြင်းနှင့် TikTok မပါပါ။",
+    "zh": "在一份 Fastwork 页面上，฿4,500 入门套餐含 14 天：4 张带文案的图、4 个主题的计划、Facebook 和 Instagram 每周定时发两次，以及主页数据摘要。฿9,590 套餐含 30 天：8–10 张图、月度计划和 2–3 分钟的成果视频摘要。不含视频剪辑和 TikTok。",
+    "de": "In einer Anzeige auf Fastwork deckt das Einstiegspaket für ฿4,500 14 Tage ab: 4 Grafiken mit Texten, einen Plan mit 4 Themen, geplante Beiträge zweimal pro Woche auf Facebook und Instagram und eine Zusammenfassung der Seitenstatistik. Das Paket für ฿9,590 deckt 30 Tage ab, mit 8–10 Grafiken, einem Monatsplan und einer Video-Zusammenfassung der Ergebnisse von 2–3 Minuten. Videoschnitt und TikTok sind ausgeschlossen."
+   },
+   "src": "https://fastwork.co/user/laongnam/content-marketing-92388909"
+  },
+  {
+   "q": {
+    "en": "What size should Facebook post pictures be?",
+    "th": "รูปโพสต์ Facebook ใช้ขนาดเท่าไร",
+    "my": "Facebook ပို့စ်ပုံ အရွယ်အစား ဘယ်လောက်လဲ။",
+    "zh": "Facebook 帖子的图片要多大？",
+    "de": "Wie gross sind Bilder für Facebook-Beiträge?"
+   },
+   "a": {
+    "en": "A Wongnai page dated 20 May 2020 lists horizontal 1200 × 800 pixels (4:3), square 1040 × 1040 and vertical 960 × 1200 (4:5) for a Facebook post, and 800 × 800 or 1040 × 1040 for photos inside an album.",
+    "th": "หน้าของ Wongnai ลงวันที่ 20 พฤษภาคม 2563 ระบุโพสต์ Facebook แนวนอน 1200 x 800 พิกเซล (4:3) จัตุรัส 1040 x 1040 และแนวตั้ง 960 x 1200 (4:5) และรูปในอัลบั้ม 800 x 800 หรือ 1040 x 1040",
+    "my": "2020 ခုနှစ် မေလ 20 ရက်စွဲ Wongnai စာမျက်နှာတွင် Facebook ပို့စ်အတွက် အလျားလိုက် 1200 × 800 ပီဇယ် (4:3)၊ လေးထောင့်ပုံ 1040 × 1040 နှင့် ဒေါင်လိုက် 960 × 1200 (4:5) ကိုလည်းကောင်း၊ အယ်လ်ဘမ်အတွင်းပုံများအတွက် 800 × 800 သို့မဟုတ် 1040 × 1040 ကိုလည်းကောင်း ဖော်ပြသည်။",
+    "zh": "Wongnai 一页（日期为 2020 年 5 月 20 日）给出 Facebook 帖子的尺寸：横版 1200 × 800 像素（4:3）、方形 1040 × 1040、竖版 960 × 1200（4:5）；相册内照片为 800 × 800 或 1040 × 1040。",
+    "de": "Eine Wongnai-Seite vom 20. Mai 2020 nennt für einen Facebook-Beitrag quer 1200 × 800 Pixel (4:3), quadratisch 1040 × 1040 und hoch 960 × 1200 (4:5) sowie 800 × 800 oder 1040 × 1040 für Fotos in einem Album."
+   },
+   "src": "https://www.wongnai.com/business-owners/picture-size-social-media-platform"
+  },
+  {
+   "q": {
+    "en": "How many people in Thailand use Facebook?",
+    "th": "คนไทยใช้ Facebook กี่คน",
+    "my": "ထိုင်းနိုင်ငံတွင် Facebook သုံးသူ ဘယ်နှစ်ယောက်ရှိသနည်း။",
+    "zh": "泰国有多少人用 Facebook？",
+    "de": "Wie viele Menschen in Thailand nutzen Facebook?"
+   },
+   "a": {
+    "en": "DataReportal's Digital 2026 report for Thailand gives Facebook an ad reach of 51.5 million people in late 2025, 71.9% of the population. It says reach figures are advertising estimates and may not match active user counts.",
+    "th": "รายงาน Digital 2026 ประเทศไทยของ DataReportal ระบุว่าโฆษณาบน Facebook เข้าถึงคน 51.5 ล้านคนในปลายปี 2568 หรือ 71.9% ของประชากร และระบุว่าเป็นตัวเลขประมาณการการเข้าถึงโฆษณา ซึ่งอาจไม่ตรงกับจำนวนผู้ใช้งานจริง",
+    "my": "DataReportal ၏ Digital 2026 ထိုင်းနိုင်ငံအစီရင်ခံစာတွင် Facebook ကြော်ငြာ၏ ရောက်ရှိမှုမှာ 2025 နှစ်ကုန်ပိုင်းတွင် လူ 51.5 သန်း၊ လူဦးရေ၏ 71.9% ဖြစ်သည်ဟု ဖော်ပြသည်။ ရောက်ရှိမှုကိန်းဂဏန်းများသည် ကြော်ငြာခန့်မှန်းချက်များဖြစ်ပြီး တက်ကြွအသုံးပြုသူအရေအတွက်နှင့် မကိုက်ညီနိုင်ကြောင်းလည်း ဆိုသည်။",
+    "zh": "DataReportal 的《Digital 2026：泰国》给出，2025 年末 Facebook 的广告触达为 5,150 万人，占人口 71.9%；并说明触达数字是广告估算，可能与活跃用户数不一致。",
+    "de": "Der Bericht Digital 2026 zu Thailand von DataReportal nennt für Facebook eine Anzeigenreichweite von 51,5 Millionen Menschen Ende 2025, also 71,9 % der Bevölkerung. Er hält fest, dass Reichweitenzahlen Schätzungen für Werbung sind und nicht mit aktiven Nutzenden übereinstimmen müssen."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "q": {
+    "en": "Does a page that sells need to be registered?",
+    "th": "เพจที่ขายของต้องจดทะเบียนหรือไม่",
+    "my": "ရောင်းချသော စာမျက်နှာကို မှတ်ပုံတင်ရပါသလား။",
+    "zh": "卖东西的主页需要登记吗？",
+    "de": "Muss eine Seite, die verkauft, registriert sein?"
+   },
+   "a": {
+    "en": "Legal500 reports that e-commerce transactions, the sale or purchase of goods or services over the Internet, are subject to registration under the Commercial Registration Act B.E. 2499. A registered company needs no separate commercial licence, since its registration counts as the e-commerce licence. The article does not name Facebook or LINE sellers.",
+    "th": "Legal500 รายงานว่าการซื้อขายสินค้าหรือบริการผ่านอินเทอร์เน็ตอยู่ภายใต้การจดทะเบียนตามพระราชบัญญัติทะเบียนพาณิชย์ พ.ศ. 2499 นิติบุคคลที่จดทะเบียนแล้วไม่ต้องขอใบอนุญาตพาณิชย์แยก เพราะการจดทะเบียนถือเท่ากับใบอนุญาตอีคอมเมิร์ซ บทความไม่ได้ระบุถึงผู้ขายบน Facebook หรือ LINE",
+    "my": "Legal500 က အင်တာနက်ပေါ်မှ ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှု ရောင်းဝယ်ခြင်းသည် ကုန်သွယ်မှတ်ပုံတင်ဥပဒေ ဗုဒ္ဓသက္ကရာဇ် 2499 အရ မှတ်ပုံတင်ရမည်ဟု အစီရင်ခံသည်။ မှတ်ပုံတင်ထားသော ကုမ္ပဏီသည် သီးခြား ကုန်သွယ်လိုင်စင် မလိုပါ၊ ၎င်း၏ မှတ်ပုံတင်ခြင်းသည် e-commerce လိုင်စင်နှင့် ညီမျှသောကြောင့် ဖြစ်သည်။ ဆောင်းပါးတွင် Facebook သို့မဟုတ် LINE ရောင်းသူများကို အမည်ဖော်ပြထားခြင်း မရှိပါ။",
+    "zh": "Legal500 报道，通过互联网买卖商品或服务的电子商务交易，须按佛历 2499 年《商业登记法》登记。已登记的公司无需另申请商业许可，因为其登记相当于电商许可。文章没有点名 Facebook 或 LINE 上的卖家。",
+    "de": "Legal500 berichtet, E-Commerce, also der Kauf und Verkauf von Waren oder Dienstleistungen über das Internet, unterliege der Registrierung nach dem Commercial Registration Act B.E. 2499. Eine eingetragene Firma braucht keine eigene Handelsbewilligung, da ihre Eintragung einer E-Commerce-Lizenz gleichkommt. Der Artikel nennt keine Verkäufer auf Facebook oder LINE."
+   },
+   "src": "https://www.legal500.com/developments/thought-leadership/thailand-updates-e-commerce-regulations-what-you-need-to-know/"
+  }
+ ],
+ "related": [
+  "ads-run",
+  "social",
+  "grab",
+  "trade-photos",
+  "stall-page",
+  "web-care"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "DataReportal: Digital 2026, Thailand",
+    "th": "DataReportal: Digital 2026 ประเทศไทย",
+    "my": "DataReportal: Digital 2026 ထိုင်းနိုင်ငံ",
+    "zh": "DataReportal：Digital 2026 泰国",
+    "de": "DataReportal: Digital 2026, Thailand"
+   },
+   "href": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "Wongnai: picture sizes for LINE MAN, Facebook and Instagram",
+    "th": "Wongnai: ขนาดรูปสำหรับ LINE MAN, Facebook และ Instagram",
+    "my": "Wongnai: LINE MAN၊ Facebook နှင့် Instagram အတွက် ပုံအရွယ်အစားများ",
+    "zh": "Wongnai：LINE MAN、Facebook 和 Instagram 的图片尺寸",
+    "de": "Wongnai: Bildgrössen für LINE MAN, Facebook und Instagram"
+   },
+   "href": "https://www.wongnai.com/business-owners/picture-size-social-media-platform"
+  }
+ ],
+ "glyphs": [
+  "thumbs-up",
+  "chat",
+  "calendar"
+ ]
+}

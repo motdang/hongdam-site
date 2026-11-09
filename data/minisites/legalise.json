@@ -1,0 +1,309 @@
+{
+ "id": "legalise",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People need the Ministry of Foreign Affairs seal, or a notary, on a document that another office has asked to see sealed, and someone has to take it to the counter and bring it back.",
+  "th": "คนต้องให้เอกสารมีตรารับรองของกระทรวงการต่างประเทศ หรือผ่านโนตารี เมื่อหน่วยงานอื่นขอให้รับรองเอกสาร และต้องมีคนนำไปยื่นที่เคาน์เตอร์แล้วรับกลับมา",
+  "my": "အခြားရုံးတစ်ခုက တံဆိပ်တုံးရိုက်ထားသော စာရွက်စာတမ်း တောင်းသောအခါ နိုင်ငံခြားရေးဝန်ကြီးဌာန တံဆိပ် သို့မဟုတ် နိုတာရီ လိုအပ်ပြီး စာရွက်ကို ကောင်တာသို့ သယ်သွားကာ ပြန်ယူလာပေးမည့်သူ လိုသည်။",
+  "zh": "另一个机构要求文件加盖外交部认证章或经公证时，人们需要有人把文件送到柜台，再取回来。",
+  "de": "Man braucht das Siegel des Aussenministeriums oder einen Notar auf einem Dokument, wenn eine andere Stelle es beglaubigt sehen will, und jemand muss es zum Schalter bringen und wieder abholen."
+ },
+ "n": {
+  "de": "Dokument legalisiert"
+ },
+ "l": {
+  "de": "Siegel des Aussenministeriums oder ein Notar, hingebracht und abgeholt."
+ },
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You hand over the document.",
+    "th": "คุณส่งเอกสารให้เรา",
+    "my": "စာရွက်စာတမ်းကို သင်က ပေးအပ်သည်။",
+    "zh": "您把文件交给我们。",
+    "de": "Sie übergeben uns das Dokument."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "We take it for the Ministry of Foreign Affairs seal, or to a notary. Government fees are charged at cost.",
+    "th": "เรานำไปรับรองที่กระทรวงการต่างประเทศ หรือที่โนตารี ค่าธรรมเนียมราชการคิดตามจริง",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာန တံဆိပ်အတွက် သို့မဟုတ် နိုတာရီထံ ယူသွားသည်။ အစိုးရကြေးများကို ကုန်ကျငွေအတိုင်း ကောက်ခံသည်။",
+    "zh": "我们送去办外交部认证，或交给公证人。政府规费按实收取。",
+    "de": "Wir bringen es für das Siegel des Aussenministeriums oder zu einem Notar. Staatliche Gebühren werden zum Selbstkostenpreis verrechnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The trip",
+    "th": "ช่วงนำไปยื่น",
+    "my": "သယ်သွားချိန်",
+    "zh": "送办期间",
+    "de": "Der Gang"
+   }
+  },
+  {
+   "db": "parcel",
+   "t": {
+    "en": "We bring it back.",
+    "th": "เรารับกลับมาให้",
+    "my": "ပြန်ယူလာပေးသည်။",
+    "zh": "我们取回来交给您。",
+    "de": "Wir bringen es zurück."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "The return",
+    "th": "ตอนส่งคืน",
+    "my": "ပြန်လည်ပေးအပ်ချိန်",
+    "zh": "取回时",
+    "de": "Die Rückgabe"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Department of Consular Affairs legalises documents by post for ฿200 each.",
+    "th": "กรมการกงสุลรับรองเอกสารทางไปรษณีย์ ฉบับละ ฿200",
+    "my": "ကောင်စစ်ဝန်ရေးရာဌာနက စာတိုက်မှတစ်ဆင့် စာရွက်စာတမ်းကို တစ်စောင် ฿200 ဖြင့် အတည်ပြုသည်။",
+    "zh": "泰国领事司通过邮寄认证文件，每份 ฿200。",
+    "de": "Das Department of Consular Affairs legalisiert Dokumente per Post für ฿200 pro Stück."
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "t": {
+    "en": "The postal service asks for the application form, the original document and a copy, a copy of the owner's ID or passport photo page, a translation certified by the translator, a money order for the fee, and a prepaid EMS return envelope. A power of attorney is added when someone sends it for the owner.",
+    "th": "บริการทางไปรษณีย์ขอแบบคำขอ เอกสารต้นฉบับพร้อมสำเนา สำเนาบัตรประชาชนหรือหน้าหนังสือเดินทางของเจ้าของเอกสาร คำแปลที่ผู้แปลรับรอง ธนาณัติค่าธรรมเนียม และซองส่งกลับ EMS ที่ติดแสตมป์ครบ หากมีผู้อื่นส่งแทนเจ้าของเอกสารต้องมีหนังสือมอบอำนาจเพิ่ม",
+    "my": "စာတိုက်ဝန်ဆောင်မှုက လျှောက်လွှာပုံစံ၊ မူရင်းစာရွက်စာတမ်းနှင့် မိတ္တူ၊ ပိုင်ရှင်၏ မှတ်ပုံတင် သို့မဟုတ် ပတ်စပို့ဓာတ်ပုံစာမျက်နှာ မိတ္တူ၊ ဘာသာပြန်သူက အတည်ပြုထားသော ဘာသာပြန်၊ ကြေးအတွက် ငွေလွှဲလက်မှတ် (money order) နှင့် ကြိုတင်ပေးချေထားသော EMS ပြန်ပို့စာအိတ်တို့ကို တောင်းသည်။ ပိုင်ရှင်ကိုယ်စား တစ်ဦးဦးက ပို့လျှင် ကိုယ်စားလှယ်လွှဲစာ ထပ်လိုသည်။",
+    "zh": "邮寄办理需要：申请表、文件原件和复印件、所有人的身份证或护照照片页复印件、经译者确认的译文、缴费汇票，以及已付邮资的 EMS 回邮信封。他人代寄时另需授权委托书。",
+    "de": "Der Postdienst verlangt das Antragsformular, das Originaldokument samt Kopie, eine Kopie des Ausweises oder der Passfotoseite der Eigentümerin oder des Eigentümers, eine vom Übersetzer bestätigte Übersetzung, eine Zahlungsanweisung für die Gebühr und ein frankiertes EMS-Rückcouvert. Schickt eine andere Person es für den Eigentümer, kommt eine Vollmacht dazu."
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "t": {
+    "en": "According to a Chiang Mai agent's guide, the Legalization Division in Chiang Mai sits at the Government Complex in Maerim. The guide lists ฿200 a document and counts a birth certificate and its translation as two documents.",
+    "th": "ตามคู่มือของตัวแทนในเชียงใหม่ กองนิติกรณ์ตั้งอยู่ที่ศูนย์ราชการจังหวัดเชียงใหม่ อำเภอแม่ริม คู่มือระบุ ฿200 ต่อฉบับ และนับสูติบัตรกับคำแปลเป็นสองฉบับ",
+    "my": "ချင်းမိုင်ကိုယ်စားလှယ်တစ်ဦး၏ လမ်းညွှန်အရ ချင်းမိုင်ရှိ Legalization Division သည် မဲရင်းရှိ ပြည်နယ်အစိုးရရုံးစုတွင် ရှိသည်။ လမ်းညွှန်တွင် စာတစ်စောင်လျှင် ฿200 ဟု ဖော်ပြပြီး မွေးစာရင်းလက်မှတ်နှင့် ၎င်း၏ ဘာသာပြန်ကို စာရွက်စာတမ်းနှစ်စောင်အဖြစ် ရေတွက်သည်။",
+    "zh": "据清迈一家代办机构的指南，清迈的认证处设在美里县的府政综合办公区。指南列出每份 ฿200，并把出生证明和它的译文算作两份文件。",
+    "de": "Laut dem Leitfaden eines Vermittlers in Chiang Mai liegt die Legalisierungsabteilung im Regierungskomplex der Provinz in Maerim. Der Leitfaden nennt ฿200 pro Dokument und zählt eine Geburtsurkunde und ihre Übersetzung als zwei Dokumente."
+   },
+   "src": "https://www.chiangmailocator.com/wiki-legalizing-thai-documents-for-use-abroad-p209"
+  },
+  {
+   "t": {
+    "en": "Thailand deposited its instrument of accession to the Apostille Convention on 30 June 2026. The Department of Consular Affairs says the accession takes full effect on 28 February 2027.",
+    "th": "ไทยยื่นภาคยานุวัติสารเข้าร่วมอนุสัญญา Apostille เมื่อวันที่ 30 มิถุนายน 2569 (ค.ศ. 2026) กรมการกงสุลระบุว่าการเข้าร่วมมีผลสมบูรณ์วันที่ 28 กุมภาพันธ์ 2570 (ค.ศ. 2027)",
+    "my": "ထိုင်းနိုင်ငံသည် Apostille ကွန်ဗင်းရှင်းသို့ ဝင်ရောက်သည့် စာရွက်စာတမ်းကို 2026 ခုနှစ် ဇွန်လ 30 ရက်တွင် အပ်နှံခဲ့သည်။ ကောင်စစ်ဝန်ရေးရာဌာနက ဝင်ရောက်မှုသည် 2027 ခုနှစ် ဖေဖော်ဝါရီလ 28 ရက်တွင် အပြည့်အဝ အာဏာတည်သည်ဟု ဆိုသည်။",
+    "zh": "泰国于 2026 年 6 月 30 日交存加入《海牙认证公约》（Apostille）的文书。领事司表示，加入将于 2027 年 2 月 28 日完全生效。",
+    "de": "Thailand hinterlegte seine Beitrittsurkunde zum Apostille-Übereinkommen am 30. Juni 2026. Das Konsularamt (Department of Consular Affairs) schreibt, der Beitritt werde am 28. Februar 2027 vollständig wirksam."
+   },
+   "src": "https://consular.mfa.go.th/th/content/1-7-69"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Legalisation by post",
+    "th": "รับรองเอกสารทางไปรษณีย์",
+    "my": "စာတိုက်ဖြင့် အတည်ပြုခြင်း",
+    "zh": "邮寄认证",
+    "de": "Legalisierung per Post"
+   },
+   "p": {
+    "en": "฿200 a document, plus return EMS",
+    "th": "ฉบับละ ฿200 บวกค่า EMS ส่งกลับ",
+    "my": "တစ်စောင် ฿200 နှင့် EMS ပြန်ပို့ခ",
+    "zh": "每份 ฿200，另加 EMS 回邮",
+    "de": "฿200 pro Dokument, plus EMS-Rückversand"
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "t": {
+    "en": "Filing at the Consular Department and at embassies, by a Bangkok legal-services seller on Fastwork (official fees not included)",
+    "th": "ยื่นรับรองที่กรมการกงสุลและสถานทูตโดยผู้ขายบริการด้านกฎหมายในกรุงเทพฯ บน Fastwork (ไม่รวมค่าธรรมเนียมราชการ)",
+    "my": "Fastwork ပေါ်ရှိ ဘန်ကောက်ဥပဒေဝန်ဆောင်မှုရောင်းချသူက ကောင်စစ်ဝန်ရေးရာဌာနနှင့် သံရုံးများတွင် လျှောက်ထားပေးခြင်း (အစိုးရကြေးများ မပါ)",
+    "zh": "Fastwork 上曼谷法律服务卖家代办领事司和使馆认证（不含官方规费）",
+    "de": "Einreichung beim Konsularamt und bei Botschaften durch einen Rechtsdienst-Anbieter in Bangkok auf Fastwork (amtliche Gebühren nicht inbegriffen)"
+   },
+   "p": {
+    "en": "Consular Department ฿1,500 (3 working days) · embassy ฿2,500 · pulling documents at the district office ฿700",
+    "th": "กรมการกงสุล ฿1,500 (3 วันทำการ) · สถานทูต ฿2,500 · คัดเอกสารที่สำนักงานเขต ฿700",
+    "my": "ကောင်စစ်ဝန်ရေးရာဌာန ฿1,500 (အလုပ်ရက် 3 ရက်) · သံရုံး ฿2,500 · ခရိုင်ရုံးတွင် စာရွက်ထုတ်ယူခြင်း ฿700",
+    "zh": "领事司 ฿1,500（3 个工作日）· 使馆 ฿2,500 · 在区政府调取文件 ฿700",
+    "de": "Konsularamt ฿1,500 (3 Arbeitstage) · Botschaft ฿2,500 · Dokumente beim Bezirksamt holen ฿700"
+   },
+   "src": "https://fastwork.co/user/brivelegal/representative-23506212"
+  },
+  {
+   "t": {
+    "en": "Notarial service by a law office on Fastwork",
+    "th": "บริการรับรองเอกสารโดยโนตารีจากสำนักงานกฎหมายบน Fastwork",
+    "my": "Fastwork ပေါ်ရှိ ဥပဒေရုံးတစ်ခု၏ နိုတာရီဝန်ဆောင်မှု",
+    "zh": "Fastwork 上律师事务所提供的公证服务",
+    "de": "Notardienst einer Anwaltskanzlei auf Fastwork"
+   },
+   "p": {
+    "en": "฿1,000 · with translation and notarisation ฿2,500",
+    "th": "฿1,000 · พร้อมแปลและรับรอง ฿2,500",
+    "my": "฿1,000 · ဘာသာပြန်နှင့် နိုတာရီအတည်ပြုချက်နှင့်အတူ ฿2,500",
+    "zh": "฿1,000 · 含翻译与公证 ฿2,500",
+    "de": "฿1,000 · mit Übersetzung und Beglaubigung ฿2,500"
+   },
+   "src": "https://fastwork.co/user/chotepipat/lawyer-95673082"
+  },
+  {
+   "t": {
+    "en": "Translation agency before legalisation, per page (Chiang Mai agent's guide)",
+    "th": "สำนักงานแปลเอกสารก่อนนำไปรับรอง (ตามคู่มือของตัวแทนในเชียงใหม่)",
+    "my": "တရားဝင်အတည်ပြုမီ ဘာသာပြန်အေဂျင်စီ၊ စာမျက်နှာတစ်မျက်နှာလျှင် (ချင်းမိုင်ကိုယ်စားလှယ်၏ လမ်းညွှန်)",
+    "zh": "认证前的翻译社，按页计价（清迈代办机构的指南）",
+    "de": "Übersetzungsbüro vor der Legalisierung, pro Seite (Leitfaden eines Vermittlers in Chiang Mai)"
+   },
+   "p": {
+    "en": "฿500 to ฿1,000 a page",
+    "th": "หน้าละ ฿500 ถึง ฿1,000",
+    "my": "စာမျက်နှာတစ်ခုလျှင် ฿500 မှ ฿1,000",
+    "zh": "每页 ฿500 至 ฿1,000",
+    "de": "฿500 bis ฿1,000 pro Seite"
+   },
+   "src": "https://www.chiangmailocator.com/wiki-legalizing-thai-documents-for-use-abroad-p209"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does legalisation cost in Thailand?",
+    "th": "รับรองเอกสารที่กรมการกงสุลราคาเท่าไร",
+    "my": "ထိုင်းတွင် စာရွက်စာတမ်း အတည်ပြုရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "在泰国办文件认证要多少钱？",
+    "de": "Was kostet die Legalisierung in Thailand?"
+   },
+   "a": {
+    "en": "The Department of Consular Affairs' postal service charges ฿200 a document, paid by money order. The return goes by EMS, with the postage paid in advance in stamps.",
+    "th": "บริการทางไปรษณีย์ของกรมการกงสุลคิดนิติกรณ์ละ ฿200 ชำระด้วยธนาณัติ ส่งกลับทาง EMS โดยชำระค่าส่งล่วงหน้าเป็นแสตมป์",
+    "my": "ကောင်စစ်ဝန်ရေးရာဌာန၏ စာတိုက်ဝန်ဆောင်မှုသည် စာတစ်စောင်လျှင် ฿200 ကို ငွေလွှဲလက်မှတ် (money order) ဖြင့် ကောက်ခံသည်။ ပြန်ပို့ခြင်းကို EMS ဖြင့် ပြုလုပ်ပြီး ပို့ဆောင်ခကို စာတိုက်ခေါင်းတံဆိပ်များဖြင့် ကြိုတင်ပေးချေထားရသည်။",
+    "zh": "领事司的邮寄服务每份文件收 ฿200，用汇票支付。回邮走 EMS，邮资以邮票预先付清。",
+    "de": "Der Postdienst des Konsularamts verlangt ฿200 pro Dokument, zu zahlen per Zahlungsanweisung. Der Rückversand läuft per EMS, das Porto wird vorab in Briefmarken bezahlt."
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "q": {
+    "en": "Does Thailand issue apostilles?",
+    "th": "ไทยออก Apostille ได้หรือยัง",
+    "my": "ထိုင်းက Apostille ထုတ်ပေးပါသလား။",
+    "zh": "泰国签发 Apostille 吗？",
+    "de": "Stellt Thailand Apostillen aus?"
+   },
+   "a": {
+    "en": "Thailand deposited its accession to the Apostille Convention on 30 June 2026. After an 8-month period for objections from member states, the Department of Consular Affairs gives 28 February 2027 as the date it takes full effect, and expects joining to simplify legalisation.",
+    "th": "ไทยยื่นภาคยานุวัติสารเข้าร่วมอนุสัญญา Apostille เมื่อวันที่ 30 มิถุนายน 2569 (ค.ศ. 2026) หลังช่วง 8 เดือนที่รัฐภาคีรับฟังข้อขัดข้อง กรมการกงสุลระบุว่าการเข้าร่วมมีผลสมบูรณ์วันที่ 28 กุมภาพันธ์ 2570 (ค.ศ. 2027) และคาดว่าจะทำให้การรับรองเอกสารง่ายขึ้น",
+    "my": "ထိုင်းနိုင်ငံသည် Apostille ကွန်ဗင်းရှင်းသို့ ဝင်ရောက်သည့် စာရွက်ကို 2026 ခုနှစ် ဇွန်လ 30 ရက်တွင် အပ်နှံခဲ့သည်။ အဖွဲ့ဝင်နိုင်ငံများက ကန့်ကွက်ချက်ပေးနိုင်သော 8 လကာလအပြီး ကောင်စစ်ဝန်ရေးရာဌာနက 2027 ခုနှစ် ဖေဖော်ဝါရီလ 28 ရက်တွင် အပြည့်အဝ အာဏာတည်မည်ဟု ဆိုပြီး စာရွက်စာတမ်းအတည်ပြုခြင်း ပိုလွယ်လာမည်ဟု မျှော်မှန်းသည်။",
+    "zh": "泰国于 2026 年 6 月 30 日交存加入《海牙认证公约》的文书。经过 8 个月的缔约国异议期，领事司给出的完全生效日期是 2027 年 2 月 28 日，并预期加入后认证会更简便。",
+    "de": "Thailand hinterlegte seinen Beitritt zum Apostille-Übereinkommen am 30. Juni 2026. Nach einer Frist von 8 Monaten für Einwände der Vertragsstaaten nennt das Konsularamt den 28. Februar 2027 als Datum der vollen Wirkung und erwartet, dass der Beitritt die Legalisierung vereinfacht."
+   },
+   "src": "https://consular.mfa.go.th/th/content/1-7-69"
+  },
+  {
+   "q": {
+    "en": "Can someone else send my document for legalisation?",
+    "th": "ให้คนอื่นยื่นรับรองเอกสารแทนได้ไหม",
+    "my": "ကျွန်ုပ်စာရွက်စာတမ်းကို အခြားသူက အတည်ပြုရန် ပို့ပေးနိုင်ပါသလား။",
+    "zh": "能让别人代送我的文件去认证吗？",
+    "de": "Kann jemand anderes mein Dokument zur Legalisierung einreichen?"
+   },
+   "a": {
+    "en": "Yes. The postal service lists a power of attorney for someone sending on the owner's behalf. For foreigners it asks for copies of the ID or passport and the latest Thai entry visa, for both the person giving the power and the person holding it.",
+    "th": "ได้ บริการทางไปรษณีย์ระบุหนังสือมอบอำนาจสำหรับผู้ยื่นแทนเจ้าของเอกสาร กรณีชาวต่างชาติขอสำเนาบัตรหรือหนังสือเดินทางและวีซ่าที่ใช้เข้าไทยล่าสุดของทั้งผู้มอบอำนาจและผู้รับมอบอำนาจ",
+    "my": "ရသည်။ စာတိုက်ဝန်ဆောင်မှုက ပိုင်ရှင်ကိုယ်စား ပို့သူအတွက် ကိုယ်စားလှယ်လွှဲစာကို ဖော်ပြထားသည်။ နိုင်ငံခြားသားများအတွက် မှတ်ပုံတင် သို့မဟုတ် ပတ်စပို့မိတ္တူနှင့် နောက်ဆုံးထိုင်းဝင်ခွင့်ဗီဇာမိတ္တူကို လွှဲအပ်သူနှင့် လွှဲအပ်ခံရသူ နှစ်ဦးစလုံးထံမှ တောင်းသည်။",
+    "zh": "可以。邮寄办理列有代他人寄送所需的授权委托书。对外国人，要求授权人和受托人双方的身份证件或护照复印件，以及最近一次的泰国入境签证复印件。",
+    "de": "Ja. Der Postdienst nennt eine Vollmacht für jemanden, der im Namen des Eigentümers einsendet. Für Ausländer verlangt er Kopien des Ausweises oder Passes und des letzten thailändischen Einreisevisums, von der vollmachtgebenden und der bevollmächtigten Person."
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "q": {
+    "en": "Is a translation needed for legalisation?",
+    "th": "ต้องแปลเอกสารก่อนรับรองไหม",
+    "my": "အတည်ပြုမီ ဘာသာပြန်ရန် လိုပါသလား။",
+    "zh": "认证前需要翻译吗？",
+    "de": "Braucht es vor der Legalisierung eine Übersetzung?"
+   },
+   "a": {
+    "en": "The postal checklist includes an English or Thai translation certified as correct by the translator. From 10 February 2026, translators also attach a copy of a valid government-issued ID.",
+    "th": "รายการเอกสารทางไปรษณีย์มีคำแปลภาษาอังกฤษหรือภาษาไทยที่ผู้แปลรับรองว่าถูกต้อง ตั้งแต่ 10 กุมภาพันธ์ 2569 (ค.ศ. 2026) ผู้แปลต้องแนบสำเนาบัตรประจำตัวที่ทางราชการออกให้ที่ยังไม่หมดอายุด้วย",
+    "my": "စာတိုက်စစ်ဆေးစာရင်းတွင် ဘာသာပြန်သူက မှန်ကန်ကြောင်း အတည်ပြုထားသော အင်္ဂလိပ် သို့မဟုတ် ထိုင်းဘာသာပြန် ပါဝင်သည်။ 2026 ခုနှစ် ဖေဖော်ဝါရီလ 10 ရက်မှစ၍ ဘာသာပြန်သူများက သက်တမ်းရှိ အစိုးရထုတ် မှတ်ပုံတင်မိတ္တူလည်း တွဲပေးရသည်။",
+    "zh": "邮寄清单中有一份经译者确认无误的英文或泰文译文。自 2026 年 2 月 10 日起，译者还需附上有效政府签发证件的复印件。",
+    "de": "Die Checkliste für den Postweg enthält eine englische oder thailändische Übersetzung, die der Übersetzer als richtig bestätigt. Seit dem 10. Februar 2026 legen Übersetzer zudem eine Kopie eines gültigen amtlichen Ausweises bei."
+   },
+   "src": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  }
+ ],
+ "related": [
+  "translate",
+  "visas",
+  "form",
+  "death-help",
+  "retire",
+  "errand"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Consular Affairs: legalisation by post",
+    "th": "กรมการกงสุล: บริการรับรองเอกสารทางไปรษณีย์",
+    "my": "ကောင်စစ်ဝန်ရေးရာဌာန: စာတိုက်ဖြင့် စာရွက်စာတမ်း အတည်ပြုခြင်း",
+    "zh": "领事司：邮寄认证服务",
+    "de": "Konsularamt: Legalisierung auf dem Postweg"
+   },
+   "href": "https://consular.mfa.go.th/th/publicservice/บริการรับรองเอกสารทางไปรษณีย์"
+  },
+  {
+   "t": {
+    "en": "Department of Consular Affairs: Thailand's accession to the Apostille Convention",
+    "th": "กรมการกงสุล: การเข้าร่วมอนุสัญญา Apostille ของไทย",
+    "my": "ကောင်စစ်ဝန်ရေးရာဌာန: ထိုင်းနိုင်ငံ၏ Apostille ကွန်ဗင်းရှင်း ဝင်ရောက်မှု",
+    "zh": "领事司：泰国加入《海牙认证公约》",
+    "de": "Konsularamt: Thailands Beitritt zum Apostille-Übereinkommen"
+   },
+   "href": "https://consular.mfa.go.th/th/content/1-7-69"
+  }
+ ],
+ "glyphs": [
+  "stamp",
+  "passport",
+  "parcel"
+ ]
+}

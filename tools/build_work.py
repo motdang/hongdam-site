@@ -357,11 +357,14 @@ def main():
     bench = build_bench(counts, when, data)
 
     page = open(PAGE, encoding="utf-8").read()
-    page = splice(page, "<!-- WORK:START -->", "<!-- WORK:END -->", work)
-    page = splice(page, "<!-- BENCH:START -->", "<!-- BENCH:END -->", bench)
-    page = splice(page, "<!-- SHOP:START -->", "<!-- SHOP:END -->",
-                  build_shop(data, counts))
-    open(PAGE, "w", encoding="utf-8").write(page)
+    if "<!-- WORK:START -->" in page:
+        page = splice(page, "<!-- WORK:START -->", "<!-- WORK:END -->", work)
+        page = splice(page, "<!-- BENCH:START -->", "<!-- BENCH:END -->", bench)
+        page = splice(page, "<!-- SHOP:START -->", "<!-- SHOP:END -->",
+                      build_shop(data, counts))
+        open(PAGE, "w", encoding="utf-8").write(page)
+    else:
+        warnings.append("docs/index.html is the services list (tools/build_services.py) — portfolio not written there")
     if os.path.exists(LLMS):
         txt = open(LLMS, encoding="utf-8").read()
         if "<!-- WORK:START -->" in txt:

@@ -1,0 +1,309 @@
+{
+ "id": "help-page",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A tow, roadside or delivery firm gives a person in trouble one page that shows where the firm is and how far, with a help card in three languages.",
+  "th": "บริษัทรถลาก ช่วยเหลือข้างทาง หรือขนส่ง ให้คนที่มีปัญหาเปิดหน้าเดียวแล้วเห็นว่าบริษัทอยู่ตรงไหน ห่างเท่าไร พร้อมการ์ดช่วยเหลือสามภาษา",
+  "my": "ဆွဲယာဉ်၊ လမ်းဘေးအကူအညီ သို့မဟုတ် ပို့ဆောင်ရေးကုမ္ပဏီက ပြဿနာကြုံနေသူအား ကုမ္ပဏီ ဘယ်မှာရှိပြီး ဘယ်လောက်ဝေးသည်ကို ပြသည့် စာမျက်နှာတစ်ခုနှင့် ဘာသာစကားသုံးမျိုးဖြင့် အကူအညီကတ်တစ်ခု ပေးသည်။",
+  "zh": "拖车、道路救援或配送公司给遇到麻烦的人一个页面：显示公司在哪里、有多远，另有三种语言的求助卡。",
+  "de": "Ein Abschlepp-, Pannen- oder Lieferdienst gibt einer Person in Not eine Seite, die zeigt, wo die Firma ist und wie weit sie entfernt ist, dazu eine Hilfekarte in drei Sprachen."
+ },
+ "n": {
+  "de": "Hilfeseite mit Live-Karte"
+ },
+ "l": {
+  "de": "Für Abschlepp-, Pannen- oder Lieferdienste, in drei Sprachen."
+ },
+ "glyphs": [
+  "songthaew",
+  "pin",
+  "telephone"
+ ],
+ "steps": [
+  {
+   "db": "pin",
+   "t": {
+    "en": "A page with a live map is built for your firm.",
+    "th": "ทำหน้าเว็บพร้อมแผนที่สดสำหรับบริษัทของคุณ",
+    "my": "သင့်ကုမ္ပဏီအတွက် တိုက်ရိုက်မြေပုံပါ စာမျက်နှာတစ်ခု တည်ဆောက်သည်။",
+    "zh": "为您的公司做一个带实时地图的页面。",
+    "de": "Für Ihre Firma wird eine Seite mit Live-Karte erstellt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "compass",
+   "t": {
+    "en": "The page shows the distance to the visitor.",
+    "th": "หน้าเว็บแสดงระยะทางถึงผู้เข้าชม",
+    "my": "စာမျက်နှာက ဧည့်သည်ထံ အကွာအဝေးကို ပြသည်။",
+    "zh": "页面显示到访客的距离。",
+    "de": "Die Seite zeigt die Entfernung zum Besucher."
+   },
+   "who": {
+    "en": "The page",
+    "th": "หน้าเว็บ",
+    "my": "စာမျက်နှာ",
+    "zh": "页面",
+    "de": "Die Seite"
+   },
+   "time": {
+    "en": "When it is opened",
+    "th": "เมื่อเปิดหน้า",
+    "my": "စာမျက်နှာကို ဖွင့်သည့်အခါ",
+    "zh": "打开页面时",
+    "de": "Beim Öffnen"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "A help card in three languages is added.",
+    "th": "เพิ่มการ์ดช่วยเหลือสามภาษา",
+    "my": "ဘာသာစကားသုံးမျိုးဖြင့် အကူအညီကတ်တစ်ခု ထည့်သည်။",
+    "zh": "加上三种语言的求助卡。",
+    "de": "Eine Hilfekarte in drei Sprachen kommt dazu."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A page reads a visitor's position only in a secure context (HTTPS), and the browser asks the visitor for explicit permission first.",
+    "th": "หน้าเว็บอ่านตำแหน่งของผู้เข้าชมได้เฉพาะในบริบทที่ปลอดภัย (HTTPS) และเบราว์เซอร์ต้องขออนุญาตอย่างชัดเจนจากผู้เข้าชมก่อน",
+    "my": "စာမျက်နှာတစ်ခုသည် လုံခြုံသော ပတ်ဝန်းကျင် (HTTPS) တွင်သာ ဧည့်သည်၏ တည်နေရာကို ဖတ်နိုင်ပြီး ဘရောက်ဇာက ဧည့်သည်ထံ ပြတ်သားသော ခွင့်ပြုချက်ကို အရင်တောင်းသည်။",
+    "zh": "网页只能在安全环境（HTTPS）下读取访客的位置，浏览器会先明确征求访客的许可。",
+    "de": "Eine Seite kann den Standort eines Besuchers nur in einem sicheren Kontext (HTTPS) lesen, und der Browser holt vorher ausdrücklich die Erlaubnis des Besuchers ein."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+  },
+  {
+   "t": {
+    "en": "The tel URI scheme (RFC 3966, December 2004) describes resources identified by telephone numbers.",
+    "th": "รูปแบบ URI แบบ tel (RFC 3966 ธันวาคม 2004) อธิบายทรัพยากรที่ระบุด้วยหมายเลขโทรศัพท์",
+    "my": "tel URI စနစ် (RFC 3966၊ 2004 ဒီဇင်ဘာ) သည် ဖုန်းနံပါတ်ဖြင့် သတ်မှတ်ထားသော အရင်းအမြစ်များကို ဖော်ပြသည်။",
+    "zh": "tel URI 方案（RFC 3966，2004 年 12 月）描述以电话号码标识的资源。",
+    "de": "Das tel-URI-Schema (RFC 3966, Dezember 2004) beschreibt Ressourcen, die durch Telefonnummern bezeichnet werden."
+   },
+   "src": "https://www.rfc-editor.org/rfc/rfc3966"
+  },
+  {
+   "t": {
+    "en": "LINE counts broadcast messages once per person reached; replies do not count toward the monthly quota.",
+    "th": "LINE นับข้อความบรอดแคสต์ต่อคนที่ได้รับ ข้อความตอบกลับไม่นับในโควตา",
+    "my": "LINE သည် broadcast မက်ဆေ့ချ်ကို လက်ခံသူ တစ်ဦးလျှင် တစ်ကြိမ် ရေတွက်သည်; ပြန်စာများ လစဉ်ကိုတာတွင် မပါ။",
+    "zh": "LINE 广播消息按接收人数计；回复消息不计入每月额度。",
+    "de": "LINE zählt Broadcast-Nachrichten einmal pro erreichter Person; Antworten zählen nicht zum Monatskontingent."
+   },
+   "src": "https://developers.line.biz/en/tips/2026/05/28/how-to-count-messages/"
+  },
+  {
+   "t": {
+    "en": "Maps URLs build a cross-platform link that launches Google Maps for a search, directions, a map or Street View. The page says no Google API key is needed.",
+    "th": "Maps URLs สร้างลิงก์ข้ามแพลตฟอร์มเพื่อเปิด Google Maps ไปยังการค้นหา เส้นทาง แผนที่ หรือ Street View หน้านั้นระบุว่าไม่ต้องมี Google API key",
+    "my": "Maps URL များက ရှာဖွေခြင်း၊ လမ်းညွှန်ချက်၊ မြေပုံ သို့မဟုတ် Street View အတွက် Google Maps ကို ဖွင့်ပေးသည့် ပလက်ဖောင်းစုံသုံး လင့်ခ်တစ်ခု တည်ဆောက်ပေးသည်။ Google API key မလိုကြောင်း စာမျက်နှာတွင် ဖော်ပြထားသည်။",
+    "zh": "Maps URLs 生成跨平台链接，可打开 Google 地图的搜索、路线、地图或街景。该页面写明不需要 Google API 密钥。",
+    "de": "Maps URLs erzeugen einen plattformübergreifenden Link, der Google Maps für eine Suche, eine Route, eine Karte oder Street View öffnet. Die Seite hält fest, dass kein Google-API-Schlüssel nötig ist."
+   },
+   "src": "https://developers.google.com/maps/documentation/urls/get-started"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Towbook, towing dispatch software",
+    "th": "Towbook ซอฟต์แวร์จัดส่งรถลาก",
+    "my": "Towbook - ဆွဲယာဉ် စီမံခန့်ခွဲရေး ဆော့ဖ်ဝဲ",
+    "zh": "Towbook 拖车调度软件",
+    "de": "Towbook, Disposition für Abschleppdienste"
+   },
+   "p": {
+    "en": "US$109 to US$429 a month for 250 to 1,500 calls; US$149 per 1,000 extra calls",
+    "th": "US$109 ถึง US$429 ต่อเดือน สำหรับ 250 ถึง 1,500 งาน (calls) งานส่วนเกิน 1,000 ละ US$149",
+    "my": "တစ်လ US$109 မှ US$429၊ ခေါ်ဆိုမှု (calls) 250 မှ 1,500 အတွက်၊ ပိုလာသော 1,000 လျှင် US$149",
+    "zh": "每月 US$109 至 US$429，含 250 至 1,500 个呼叫（calls）；超出部分每 1,000 个 US$149",
+    "de": "US$109 bis US$429 im Monat für 250 bis 1,500 Einsätze (calls); US$149 pro 1,000 zusätzliche"
+   },
+   "src": "https://www.towbook.com/pricing"
+  },
+  {
+   "t": {
+    "en": "One-page website, Fastwork listing",
+    "th": "เว็บไซต์หน้าเดียว รายการบน Fastwork",
+    "my": "Fastwork စာရင်း - စာမျက်နှာတစ်ခုတည်း ဝက်ဘ်ဆိုက်",
+    "zh": "Fastwork 上的单页网站",
+    "de": "Einseitige Website, Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "฿3,800 without domain and hosting; ฿5,500 with them",
+    "th": "฿3,800 ไม่รวมโดเมนและโฮสติ้ง ฿5,500 รวมทั้งสองอย่าง",
+    "my": "ဒိုမိန်းနှင့် ဟို့စ်တင်းမပါ ฿3,800၊ ပါလျှင် ฿5,500",
+    "zh": "不含域名和主机 ฿3,800；含两者 ฿5,500",
+    "de": "฿3,800 ohne Domain und Hosting; ฿5,500 mit beidem"
+   },
+   "src": "https://fastwork.co/user/tichawil/web-development-82000048"
+  },
+  {
+   "t": {
+    "en": "Google Maps, map and routes on your page",
+    "th": "Google Maps แผนที่และเส้นทางบนหน้าเว็บ",
+    "my": "Google Maps - သင့်စာမျက်နှာပေါ်ရှိ မြေပုံနှင့် လမ်းကြောင်းများ",
+    "zh": "Google 地图：网页上的地图和路线",
+    "de": "Google Maps, Karte und Routen auf Ihrer Seite"
+   },
+   "p": {
+    "en": "10,000 map loads and 10,000 route requests a month free; then US$7 and US$5 per 1,000",
+    "th": "โหลดแผนที่และขอเส้นทางอย่างละ 10,000 ครั้งต่อเดือนฟรี หลังจากนั้น 1,000 ครั้งละ US$7 และ US$5 ตามลำดับ",
+    "my": "တစ်လ မြေပုံဖွင့်ခြင်း 10,000 နှင့် လမ်းကြောင်းတောင်းခံမှု 10,000 အခမဲ့၊ ထို့နောက် 1,000 လျှင် အသီးသီး US$7 နှင့် US$5",
+    "zh": "每月 10,000 次地图加载和 10,000 次路线请求免费，之后每 1,000 次分别为 US$7 和 US$5",
+    "de": "10,000 Kartenladungen und 10,000 Routenanfragen im Monat kostenlos; danach US$7 bzw. US$5 pro 1,000"
+   },
+   "src": "https://developers.google.com/maps/billing-and-pricing/pricing"
+  },
+  {
+   "t": {
+    "en": "LINE Official Account",
+    "th": "LINE Official Account",
+    "my": "LINE Official Account",
+    "zh": "LINE 官方账号",
+    "de": "LINE Official Account"
+   },
+   "p": {
+    "en": "free; ฿1,280 or ฿1,780 a month, plus VAT",
+    "th": "ฟรี หรือเดือนละ ฿1,280 หรือ ฿1,780 บวก VAT",
+    "my": "အခမဲ့; တစ်လ ฿1,280 သို့မဟုတ် ฿1,780၊ VAT ထပ်",
+    "zh": "免费；每月 ฿1,280 或 ฿1,780，另加增值税",
+    "de": "kostenlos; ฿1,280 oder ฿1,780 im Monat, zzgl. MwSt."
+   },
+   "src": "https://www.lineforbusiness.com/th/service/line-oa-features/broadcast-message"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How does a page know where the customer is?",
+    "th": "หน้าเว็บรู้ได้อย่างไรว่าลูกค้าอยู่ที่ไหน",
+    "my": "စာမျက်နှာက ဖောက်သည် ဘယ်မှာရှိသည်ကို ဘယ်လိုသိသလဲ။",
+    "zh": "页面怎样知道客户在哪里？",
+    "de": "Woher weiss eine Seite, wo der Kunde ist?"
+   },
+   "a": {
+    "en": "The browser can give the page the visitor's position. It does so only on HTTPS pages and only after the visitor allows it in a prompt.",
+    "th": "เบราว์เซอร์ส่งตำแหน่งของผู้เข้าชมให้หน้าเว็บได้ เฉพาะหน้า HTTPS และหลังจากผู้เข้าชมอนุญาตในหน้าต่างที่ขึ้นมา",
+    "my": "ဘရောက်ဇာက ဧည့်သည်၏ တည်နေရာကို စာမျက်နှာထံ ပေးနိုင်သည်။ HTTPS စာမျက်နှာများတွင်သာဖြစ်ပြီး ဧည့်သည်က မေးခွန်းပေါ်တွင် ခွင့်ပြုပြီးမှသာ ဖြစ်သည်။",
+    "zh": "浏览器可以把访客的位置交给页面，但仅限 HTTPS 页面，且须访客在弹出的提示中允许。",
+    "de": "Der Browser kann der Seite den Standort des Besuchers geben, aber nur auf HTTPS-Seiten und erst, wenn der Besucher in einer Abfrage zustimmt."
+   },
+   "src": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+  },
+  {
+   "q": {
+    "en": "What does a live map on a roadside website cost?",
+    "th": "แผนที่สดบนเว็บช่วยเหลือข้างทางราคาเท่าไร",
+    "my": "လမ်းဘေးအကူအညီဝက်ဘ်ဆိုက်ပေါ်ရှိ တိုက်ရိုက်မြေပုံသည် ဘယ်လောက်ကျသလဲ။",
+    "zh": "道路救援网站上的实时地图要多少钱？",
+    "de": "Was kostet eine Live-Karte auf der Website eines Pannendienstes?"
+   },
+   "a": {
+    "en": "Google Maps Platform gives 10,000 free map loads and 10,000 free route requests a month. After that a map load costs US$7 per 1,000 and a route request US$5 per 1,000. The page was last updated on 2026-10-21.",
+    "th": "Google Maps Platform ให้โหลดแผนที่ฟรี 10,000 ครั้งและขอเส้นทางฟรี 10,000 ครั้งต่อเดือน หลังจากนั้นโหลดแผนที่ 1,000 ครั้งละ US$7 และขอเส้นทาง 1,000 ครั้งละ US$5 หน้านี้อัปเดตล่าสุดเมื่อ 2026-10-21",
+    "my": "Google Maps Platform သည် တစ်လလျှင် မြေပုံဖွင့်ခြင်း 10,000 နှင့် လမ်းကြောင်းတောင်းခံမှု 10,000 ကို အခမဲ့ပေးသည်။ ထို့နောက် မြေပုံဖွင့်ခြင်း 1,000 လျှင် US$7၊ လမ်းကြောင်းတောင်းခံမှု 1,000 လျှင် US$5 ဖြစ်သည်။ စာမျက်နှာကို 2026-10-21 တွင် နောက်ဆုံးပြင်ဆင်ခဲ့သည်။",
+    "zh": "Google Maps Platform 每月提供 10,000 次免费地图加载和 10,000 次免费路线请求。之后地图加载每 1,000 次 US$7，路线请求每 1,000 次 US$5。该页面最后更新于 2026-10-21。",
+    "de": "Google Maps Platform gibt im Monat 10,000 kostenlose Kartenladungen und 10,000 kostenlose Routenanfragen. Danach kostet eine Kartenladung US$7 pro 1,000 und eine Routenanfrage US$5 pro 1,000. Die Seite wurde zuletzt am 2026-10-21 aktualisiert."
+   },
+   "src": "https://developers.google.com/maps/billing-and-pricing/pricing"
+  },
+  {
+   "q": {
+    "en": "Is there software made for tow companies?",
+    "th": "มีซอฟต์แวร์ที่ทำมาสำหรับบริษัทรถลากไหม",
+    "my": "ဆွဲယာဉ်ကုမ္ပဏီများအတွက် ပြုလုပ်ထားသော ဆော့ဖ်ဝဲ ရှိပါသလား။",
+    "zh": "有专为拖车公司做的软件吗？",
+    "de": "Gibt es Software für Abschleppunternehmen?"
+   },
+   "a": {
+    "en": "Towbook sells towing dispatch software at US$109 to US$429 a month for 250 to 1,500 calls. Extra calls cost US$149 per 1,000.",
+    "th": "Towbook ขายซอฟต์แวร์จัดส่งรถลากในราคา US$109 ถึง US$429 ต่อเดือน สำหรับ 250 ถึง 1,500 งาน งานส่วนเกิน 1,000 ละ US$149",
+    "my": "Towbook က ဆွဲယာဉ် စီမံခန့်ခွဲရေး ဆော့ဖ်ဝဲကို ခေါ်ဆိုမှု 250 မှ 1,500 အတွက် တစ်လ US$109 မှ US$429 ဖြင့် ရောင်းသည်။ ပိုလာသော ခေါ်ဆိုမှု 1,000 လျှင် US$149 ဖြစ်သည်။",
+    "zh": "Towbook 出售拖车调度软件，每月 US$109 至 US$429，含 250 至 1,500 个呼叫。超出的呼叫每 1,000 个 US$149。",
+    "de": "Towbook verkauft Dispositionssoftware für Abschleppdienste zu US$109 bis US$429 im Monat für 250 bis 1,500 Einsätze. Zusätzliche Einsätze kosten US$149 pro 1,000."
+   },
+   "src": "https://www.towbook.com/pricing"
+  },
+  {
+   "q": {
+    "en": "Do replies on LINE use up my message quota?",
+    "th": "การตอบกลับใน LINE นับเป็นโควตาข้อความไหม",
+    "my": "LINE ပေါ်ရှိ ပြန်စာများသည် ကျွန်ုပ်၏ မက်ဆေ့ချ်ကိုတာကို သုံးစွဲသလား။",
+    "zh": "在 LINE 上回复会占用我的消息额度吗？",
+    "de": "Verbrauchen Antworten auf LINE mein Nachrichtenkontingent?"
+   },
+   "a": {
+    "en": "LINE counts broadcast messages once per person reached. Replies do not count toward the monthly quota.",
+    "th": "LINE นับข้อความบรอดแคสต์ต่อคนที่ได้รับ ข้อความตอบกลับไม่นับในโควตารายเดือน",
+    "my": "LINE သည် broadcast မက်ဆေ့ချ်ကို လက်ခံသူ တစ်ဦးလျှင် တစ်ကြိမ် ရေတွက်သည်။ ပြန်စာများ လစဉ်ကိုတာတွင် မပါ။",
+    "zh": "LINE 广播消息按接收人数计；回复消息不计入每月额度。",
+    "de": "LINE zählt Broadcast-Nachrichten einmal pro erreichter Person; Antworten zählen nicht zum Monatskontingent."
+   },
+   "src": "https://developers.line.biz/en/tips/2026/05/28/how-to-count-messages/"
+  }
+ ],
+ "related": [
+  "directory",
+  "guide-site",
+  "tap-card",
+  "web-line",
+  "map-archive",
+  "web-care"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: a page for a shared location, with tap-to-call emergency numbers",
+    "th": "มดแดง: หน้าตำแหน่งที่แชร์ พร้อมเบอร์ฉุกเฉินแตะโทรได้",
+    "my": "Mot Dang - မျှဝေထားသော တည်နေရာစာမျက်နှာ၊ နှိပ်၍ခေါ်နိုင်သော အရေးပေါ်နံပါတ်များပါ",
+    "zh": "Mot Dang：共享位置页面，附可点击拨打的紧急号码",
+    "de": "Mot Dang: eine Seite für einen geteilten Standort, mit Notrufnummern zum Antippen"
+   },
+   "href": "https://motdang.net/live"
+  },
+  {
+   "t": {
+    "en": "Google: Maps URLs, one link that opens a map or directions",
+    "th": "Google: Maps URLs ลิงก์เดียวที่เปิดแผนที่หรือเส้นทาง",
+    "my": "Google - Maps URL များ၊ မြေပုံ သို့မဟုတ် လမ်းညွှန်ချက်ကို ဖွင့်ပေးသော လင့်ခ်တစ်ခု",
+    "zh": "Google：Maps URLs，一条链接打开地图或路线",
+    "de": "Google: Maps URLs, ein Link, der eine Karte oder Route öffnet"
+   },
+   "href": "https://developers.google.com/maps/documentation/urls/get-started"
+  }
+ ]
+}

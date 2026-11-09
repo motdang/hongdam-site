@@ -1,0 +1,302 @@
+{
+ "id": "directory",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "The businesses and makers in a trade or region are spread over many sites; a directory puts them in one list, with sources, a map and a plain-text copy for AI tools.",
+  "th": "วงการหรือพื้นที่หนึ่งมีธุรกิจและช่างกระจายอยู่ตามเว็บต่าง ๆ สารบบรวมไว้ในรายการเดียว พร้อมแหล่งที่มา แผนที่ และสำเนาข้อความสำหรับเครื่องมือ AI",
+  "my": "လုပ်ငန်းနယ်ပယ် သို့မဟုတ် ဒေသတစ်ခုတွင် လုပ်ငန်းများနှင့် လက်မှုပညာသည်များ ဝက်ဘ်ဆိုက်အမျိုးမျိုးတွင် ပြန့်ကျဲနေသည်။ လမ်းညွှန်က ၎င်းတို့ကို ရင်းမြစ်၊ မြေပုံနှင့် AI ကိရိယာများအတွက် စာသားမိတ္တူတို့နှင့်အတူ စာရင်းတစ်ခုတည်းတွင် စုထားသည်။",
+  "zh": "一个行业或地区的企业和匠人散落在许多网站上，名录把他们收在一份清单里，附来源、地图和供 AI 工具读取的纯文本副本。",
+  "de": "Die Betriebe und Hersteller einer Branche oder Region sind über viele Websites verstreut; ein Verzeichnis führt sie in einer Liste zusammen, mit Quellen, einer Karte und einer Textkopie für KI-Werkzeuge."
+ },
+ "n": {
+  "de": "Verzeichnis Ihres Fachgebiets"
+ },
+ "l": {
+  "de": "Ihre Branche oder Region, recherchiert, kartiert, von KI lesbar."
+ },
+ "glyphs": [
+  "pin",
+  "compass",
+  "bookmark"
+ ],
+ "steps": [
+  {
+   "db": "bookmark",
+   "t": {
+    "en": "The businesses or makers in your trade or region are listed, with their sources.",
+    "th": "รวบรวมธุรกิจหรือช่างในวงการหรือพื้นที่ของคุณ พร้อมแหล่งที่มา",
+    "my": "သင့်လုပ်ငန်းနယ်ပယ် သို့မဟုတ် ဒေသရှိ လုပ်ငန်းများ သို့မဟုတ် လက်မှုပညာသည်များကို ရင်းမြစ်များနှင့်အတူ စာရင်းပြုစုသည်။",
+    "zh": "把您行业或地区的企业或匠人列成清单，并附来源。",
+    "de": "Die Betriebe oder Hersteller Ihrer Branche oder Region werden mit ihren Quellen aufgelistet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "เริ่มแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "pin",
+   "t": {
+    "en": "They are placed on a map.",
+    "th": "ปักหมุดบนแผนที่",
+    "my": "၎င်းတို့ကို မြေပုံပေါ်တွင် နေရာချပေးသည်။",
+    "zh": "把它们标在地图上。",
+    "de": "Sie werden auf einer Karte eingetragen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接下来",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "robot",
+   "t": {
+    "en": "A plain-text copy is made for AI tools to read.",
+    "th": "ทำสำเนาข้อความธรรมดาให้เครื่องมือ AI อ่าน",
+    "my": "AI ကိရိယာများ ဖတ်နိုင်ရန် စာသားသက်သက် မိတ္တူတစ်ခု ပြုလုပ်သည်။",
+    "zh": "做一份供 AI 工具读取的纯文本副本。",
+    "de": "Eine reine Textkopie wird für KI-Werkzeuge erstellt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "สุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zuletzt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google states pages need no extra files or markup to appear in its AI answers.",
+    "th": "Google ระบุว่าหน้าเว็บไม่ต้องมีไฟล์หรือโค้ดพิเศษเพื่อขึ้นในคำตอบ AI",
+    "my": "Google က ၎င်း၏ AI အဖြေများတွင် ပေါ်ရန် အပိုဖိုင် သို့မဟုတ် markup မလိုဟု ဆိုသည်။",
+    "zh": "Google 表示网页无需额外文件或标记即可出现在其 AI 回答中。",
+    "de": "Laut Google brauchen Seiten keine zusätzlichen Dateien oder Auszeichnungen, um in seinen KI-Antworten zu erscheinen."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/ai-features"
+  },
+  {
+   "t": {
+    "en": "The llms.txt proposal, written by Jeremy Howard and first published on 3 September 2024, asks sites to publish a Markdown file called llms.txt that gives AI agents a short guide to the site.",
+    "th": "ข้อเสนอ llms.txt เขียนโดย Jeremy Howard เผยแพร่ครั้งแรกเมื่อ 3 กันยายน 2024 ขอให้เว็บเผยแพร่ไฟล์ Markdown ชื่อ llms.txt เป็นคู่มือสั้น ๆ ของเว็บสำหรับเอเจนต์ AI",
+    "my": "Jeremy Howard ရေးသားပြီး 2024 စက်တင်ဘာ 3 တွင် ပထမဆုံး ထုတ်ပြန်ခဲ့သော llms.txt အဆိုပြုချက်က ဝက်ဘ်ဆိုက်များကို AI အေးဂျင့်များအတွက် ဆိုက်၏ အတိုချုပ်လမ်းညွှန်ဖြစ်သည့် llms.txt အမည်ရှိ Markdown ဖိုင် ထုတ်ဝေရန် တောင်းဆိုသည်။",
+    "zh": "llms.txt 提案由 Jeremy Howard 撰写，2024 年 9 月 3 日首次发布，建议网站发布一个名为 llms.txt 的 Markdown 文件，为 AI 代理提供网站的简短指南。",
+    "de": "Der Vorschlag llms.txt stammt von Jeremy Howard und wurde am 3. September 2024 erstmals veröffentlicht; er bittet Websites, eine Markdown-Datei namens llms.txt bereitzustellen, die KI-Agenten einen kurzen Leitfaden zur Seite gibt."
+   },
+   "src": "https://llmstxt.org/"
+  },
+  {
+   "t": {
+    "en": "Google's LocalBusiness markup requires a name and an address. It lists geo coordinates, opening hours, telephone and URL as recommended.",
+    "th": "มาร์กอัป LocalBusiness ของ Google กำหนดให้มีชื่อและที่อยู่ และแนะนำพิกัด เวลาเปิดทำการ โทรศัพท์ และ URL",
+    "my": "Google ၏ LocalBusiness markup တွင် အမည်နှင့် လိပ်စာ လိုအပ်သည်။ ပထဝီကိုဩဒိနိတ်၊ ဖွင့်ချိန်၊ ဖုန်းနှင့် URL တို့ကို အကြံပြုထားသည်။",
+    "zh": "Google 的 LocalBusiness 标记要求提供名称和地址，并建议提供坐标、营业时间、电话和网址。",
+    "de": "Das LocalBusiness-Markup von Google verlangt Namen und Adresse. Koordinaten, Öffnungszeiten, Telefon und URL sind als empfohlen aufgeführt."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/structured-data/local-business"
+  },
+  {
+   "t": {
+    "en": "Google Maps' terms bar copying business names, addresses or reviews out of Maps.",
+    "th": "ข้อกำหนดของ Google Maps ห้ามคัดลอกชื่อธุรกิจ ที่อยู่ หรือรีวิวออกจากแผนที่",
+    "my": "Google Maps စည်းမျဉ်းက လုပ်ငန်းအမည်၊ လိပ်စာ သို့မဟုတ် သုံးသပ်ချက်များကို ကူးယူခြင်းကို တားမြစ်သည်။",
+    "zh": "Google 地图条款禁止从地图复制商家名称、地址或评价。",
+    "de": "Die Nutzungsbedingungen von Google Maps verbieten es, Firmennamen, Adressen oder Bewertungen aus Maps zu kopieren."
+   },
+   "src": "https://cloud.google.com/maps-platform/terms"
+  },
+  {
+   "t": {
+    "en": "On 24 October 2026 Mot Dang had opened 13,487 official-site links from its directory: of the 11,956 that are websites, 4,609 do not open (39%).",
+    "th": "เมื่อ 24 ตุลาคม 2026 มดแดงลองเปิดลิงก์เว็บทางการ 13,487 ลิงก์ในสารบัญ ในจำนวนที่เป็นเว็บไซต์ 11,956 แห่ง เปิดไม่ได้ 4,609 แห่ง (39%)",
+    "my": "2026 အောက်တိုဘာ 24 တွင် Mot Dang သည် ၎င်း၏ လမ်းညွှန်ပါ တရားဝင်ဝက်ဘ်လင့်ခ် 13,487 ခုကို ဖွင့်ကြည့်ခဲ့သည်။ ဝက်ဘ်ဆိုက်ဖြစ်သော 11,956 ခုအနက် 4,609 ခု မပွင့်ပါ (39%)။",
+    "zh": "2026 年 10 月 24 日，Mot Dang 打开了其名录中的 13,487 个官方网站链接：其中 11,956 个是网站，有 4,609 个打不开（39%）。",
+    "de": "Am 24. Oktober 2026 hatte Mot Dang die 13,487 offiziellen Website-Links seines Verzeichnisses geöffnet: Von den 11,956, die Websites sind, lassen sich 4,609 nicht öffnen (39%)."
+   },
+   "src": "https://motdang.net/reach"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Business Directory Plugin for WordPress",
+    "th": "ปลั๊กอิน Business Directory สำหรับ WordPress",
+    "my": "WordPress အတွက် Business Directory Plugin",
+    "zh": "WordPress 的 Business Directory 插件",
+    "de": "Business Directory Plugin für WordPress"
+   },
+   "p": {
+    "en": "introductory US$99, US$149 or US$249 a year; regular US$149, US$249 or US$349",
+    "th": "ช่วงโปรโมชัน US$99, US$149 หรือ US$249 ต่อปี ราคาปกติ US$149, US$249 หรือ US$349",
+    "my": "စတင်ကာလ တစ်နှစ် US$99၊ US$149 သို့မဟုတ် US$249၊ ပုံမှန်ဈေး US$149၊ US$249 သို့မဟုတ် US$349",
+    "zh": "首年优惠价每年 US$99、US$149 或 US$249；正常价 US$149、US$249 或 US$349",
+    "de": "Einführungspreis US$99, US$149 oder US$249 im Jahr; regulär US$149, US$249 oder US$349"
+   },
+   "src": "https://businessdirectoryplugin.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Website design and development by WordPress experts, Codeable",
+    "th": "ออกแบบและพัฒนาเว็บไซต์โดยผู้เชี่ยวชาญ WordPress ของ Codeable",
+    "my": "Codeable WordPress ကျွမ်းကျင်သူများ၏ ဝက်ဘ်ဆိုက်ဒီဇိုင်းနှင့် ဖန်တီးမှု",
+    "zh": "Codeable 的 WordPress 专家做网站设计与开发",
+    "de": "Website-Gestaltung und -Entwicklung durch WordPress-Experten, Codeable"
+   },
+   "p": {
+    "en": "from US$2,500; experts bill US$80–120 an hour",
+    "th": "เริ่ม US$2,500 ผู้เชี่ยวชาญคิดชั่วโมงละ US$80–120",
+    "my": "US$2,500 မှစ၍၊ ကျွမ်းကျင်သူများက တစ်နာရီ US$80–120 ကောက်ခံသည်",
+    "zh": "US$2,500 起；专家每小时收费 US$80–120",
+    "de": "ab US$2,500; Experten rechnen US$80–120 pro Stunde ab"
+   },
+   "src": "https://www.codeable.io/pricing/"
+  },
+  {
+   "t": {
+    "en": ".co.th domain",
+    "th": ".co.th โดเมน",
+    "my": ".co.th ဒိုမိန်း",
+    "zh": ".co.th 域名",
+    "de": ".co.th-Domain"
+   },
+   "p": {
+    "en": "from ฿856 a year",
+    "th": "เริ่มปีละ ฿856",
+    "my": "တစ်နှစ် ฿856 မှစ၍",
+    "zh": "每年 ฿856 起",
+    "de": "ab ฿856 im Jahr"
+   },
+   "src": "https://www.thnic.co.th/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How do I make a business directory website?",
+    "th": "ทำเว็บสารบบธุรกิจอย่างไร",
+    "my": "စီးပွားရေးလုပ်ငန်းလမ်းညွှန် ဝက်ဘ်ဆိုက်ကို ဘယ်လိုလုပ်ရမလဲ။",
+    "zh": "怎样做商家名录网站？",
+    "de": "Wie erstelle ich eine Website mit Firmenverzeichnis?"
+   },
+   "a": {
+    "en": "On WordPress, a directory plugin is one way. Business Directory Plugin has a free version on WordPress.org and paid plans from US$99 for the first year.",
+    "th": "บน WordPress ปลั๊กอินสารบบเป็นวิธีหนึ่ง Business Directory Plugin มีรุ่นฟรีบน WordPress.org และแผนเสียเงินเริ่ม US$99 สำหรับปีแรก",
+    "my": "WordPress တွင် လမ်းညွှန်ပလပ်ဂင်သည် နည်းလမ်းတစ်ခုဖြစ်သည်။ Business Directory Plugin တွင် WordPress.org ပေါ်၌ အခမဲ့ဗားရှင်းရှိပြီး ပထမနှစ်အတွက် US$99 မှစသော ငွေပေးအစီအစဉ်များ ရှိသည်။",
+    "zh": "在 WordPress 上，目录插件是一种办法。Business Directory Plugin 在 WordPress.org 上有免费版，付费方案首年 US$99 起。",
+    "de": "Auf WordPress ist ein Verzeichnis-Plugin ein Weg. Das Business Directory Plugin hat eine kostenlose Version auf WordPress.org und kostenpflichtige Pläne ab US$99 im ersten Jahr."
+   },
+   "src": "https://businessdirectoryplugin.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "Can I copy business details from Google Maps?",
+    "th": "คัดลอกข้อมูลธุรกิจจาก Google Maps ได้ไหม",
+    "my": "Google Maps မှ လုပ်ငန်းအချက်အလက်များကို ကူးယူနိုင်ပါသလား။",
+    "zh": "能从 Google 地图复制商家信息吗？",
+    "de": "Darf ich Firmendaten aus Google Maps kopieren?"
+   },
+   "a": {
+    "en": "Google Maps Platform's terms bar copying business names, addresses or reviews out of Maps.",
+    "th": "ข้อกำหนดของ Google Maps Platform ห้ามคัดลอกชื่อธุรกิจ ที่อยู่ หรือรีวิวออกจากแผนที่",
+    "my": "Google Maps Platform စည်းမျဉ်းက လုပ်ငန်းအမည်၊ လိပ်စာ သို့မဟုတ် သုံးသပ်ချက်များကို Maps မှ ကူးယူခြင်းကို တားမြစ်သည်။",
+    "zh": "Google Maps Platform 条款禁止从地图复制商家名称、地址或评价。",
+    "de": "Die Bedingungen von Google Maps Platform verbieten es, Firmennamen, Adressen oder Bewertungen aus Maps zu kopieren."
+   },
+   "src": "https://cloud.google.com/maps-platform/terms"
+  },
+  {
+   "q": {
+    "en": "What does Google need to show a business in search?",
+    "th": "Google ต้องการข้อมูลอะไรเพื่อแสดงธุรกิจในผลค้นหา",
+    "my": "ရှာဖွေမှုတွင် လုပ်ငန်းတစ်ခုကို ပြရန် Google က ဘာလိုအပ်သလဲ။",
+    "zh": "Google 需要哪些信息才能在搜索中显示一家商家？",
+    "de": "Welche Angaben braucht Google, um einen Betrieb in der Suche zu zeigen?"
+   },
+   "a": {
+    "en": "Google's LocalBusiness structured data requires the business name and address. Geo coordinates, opening hours, telephone and URL are recommended, and the page shows its examples in JSON-LD.",
+    "th": "ข้อมูลโครงสร้าง LocalBusiness ของ Google กำหนดให้มีชื่อและที่อยู่ธุรกิจ แนะนำพิกัด เวลาเปิดทำการ โทรศัพท์ และ URL และหน้านั้นแสดงตัวอย่างเป็น JSON-LD",
+    "my": "Google ၏ LocalBusiness structured data တွင် လုပ်ငန်းအမည်နှင့် လိပ်စာ လိုအပ်သည်။ ပထဝီကိုဩဒိနိတ်၊ ဖွင့်ချိန်၊ ဖုန်းနှင့် URL တို့ကို အကြံပြုပြီး ထိုစာမျက်နှာက ဥပမာများကို JSON-LD ဖြင့် ပြထားသည်။",
+    "zh": "Google 的 LocalBusiness 结构化数据要求提供商家名称和地址，建议提供坐标、营业时间、电话和网址，页面的示例采用 JSON-LD。",
+    "de": "Die strukturierten Daten LocalBusiness von Google verlangen Namen und Adresse des Betriebs. Koordinaten, Öffnungszeiten, Telefon und URL sind empfohlen, und die Seite zeigt ihre Beispiele in JSON-LD."
+   },
+   "src": "https://developers.google.com/search/docs/appearance/structured-data/local-business"
+  },
+  {
+   "q": {
+    "en": "What is llms.txt?",
+    "th": "llms.txt คืออะไร",
+    "my": "llms.txt ဆိုတာ ဘာလဲ။",
+    "zh": "llms.txt 是什么？",
+    "de": "Was ist llms.txt?"
+   },
+   "a": {
+    "en": "llms.txt is a proposal for a Markdown file at the site root, or any path in it, that guides AI agents through a site. It has a required H1 with the site name, an optional summary, and sections of link lists.",
+    "th": "llms.txt เป็นข้อเสนอให้มีไฟล์ Markdown ที่รากของเว็บหรือพาธใดก็ได้ เพื่อนำทางเอเจนต์ AI ในเว็บ ไฟล์ต้องมีหัวข้อ H1 เป็นชื่อเว็บ มีสรุปสั้น ๆ ได้ และมีส่วนที่เป็นรายการลิงก์",
+    "my": "llms.txt သည် ဆိုက်၏ root သို့မဟုတ် ၎င်းအတွင်းရှိ မည်သည့် path တွင်မဆို AI အေးဂျင့်များကို ဆိုက်အတွင်း လမ်းညွှန်ပေးသည့် Markdown ဖိုင်အတွက် အဆိုပြုချက်ဖြစ်သည်။ ဆိုက်အမည်ပါသော H1 လိုအပ်ပြီး အကျဉ်းချုပ်ကို ထည့်ချင်လျှင်ထည့်နိုင်ကာ လင့်ခ်စာရင်းအပိုင်းများ ပါသည်။",
+    "zh": "llms.txt 是一项提案，建议在网站根目录或其下任意路径放一个 Markdown 文件，为 AI 代理指引站点。它须有写明站点名称的 H1，可附简介，其余是链接列表的小节。",
+    "de": "llms.txt ist ein Vorschlag für eine Markdown-Datei im Stammverzeichnis einer Website oder in einem beliebigen Pfad darin, die KI-Agenten durch die Seite führt. Sie hat eine Pflicht-Überschrift H1 mit dem Namen der Seite, eine optionale Zusammenfassung und Abschnitte mit Linklisten."
+   },
+   "src": "https://llmstxt.org/"
+  }
+ ],
+ "related": [
+  "web-search",
+  "guide-site",
+  "wp-api",
+  "web-found",
+  "map-archive",
+  "help-page"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Mot Dang: a Thai and English guide to Chiang Mai and Chiang Rai, with maps, a public API and raw data",
+    "th": "มดแดง: คู่มือเชียงใหม่และเชียงราย ไทยและอังกฤษ มีแผนที่ API สาธารณะ และข้อมูลดิบ",
+    "my": "Mot Dang - ချင်းမိုင်နှင့် ချင်းရိုင် ထိုင်းနှင့် အင်္ဂလိပ်လမ်းညွှန်၊ မြေပုံ၊ အများသုံး API နှင့် ဒေတာအကြမ်း",
+    "zh": "Mot Dang：清迈和清莱的泰英双语指南，附地图、公开 API 和原始数据",
+    "de": "Mot Dang: ein Führer für Chiang Mai und Chiang Rai auf Thai und Englisch, mit Karten, öffentlicher API und Rohdaten"
+   },
+   "href": "https://motdang.net/"
+  },
+  {
+   "t": {
+    "en": "Google: LocalBusiness structured data",
+    "th": "Google: ข้อมูลโครงสร้าง LocalBusiness",
+    "my": "Google - LocalBusiness structured data",
+    "zh": "Google：LocalBusiness 结构化数据",
+    "de": "Google: strukturierte Daten LocalBusiness"
+   },
+   "href": "https://developers.google.com/search/docs/appearance/structured-data/local-business"
+  }
+ ]
+}

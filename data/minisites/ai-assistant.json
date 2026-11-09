@@ -1,0 +1,878 @@
+{
+ "id": "ai-assistant",
+ "tier": "big",
+ "read": "2026-11-04",
+ "why": {
+  "en": "Visitors ask the same questions again and again, and a person has to answer each one. An assistant on your site answers from your own pages, under your name.",
+  "th": "ผู้เข้าชมถามคำถามเดิมซ้ำแล้วซ้ำอีก และต้องมีคนตอบทีละข้อ ผู้ช่วยบนเว็บไซต์ของคุณตอบจากหน้าเว็บของคุณเอง ในชื่อของคุณ",
+  "my": "ဝင်ကြည့်သူများက တူညီသော မေးခွန်းများကို ထပ်ခါထပ်ခါ မေးကြပြီး လူတစ်ယောက်က တစ်ခုချင်း ဖြေပေးရသည်။ သင့်ဝက်ဘ်ဆိုက်ပေါ်ရှိ လက်ထောက်က သင့်ကိုယ်ပိုင် စာမျက်နှာများမှ သင့်အမည်ဖြင့် ဖြေပေးသည်။",
+  "zh": "访客一遍又一遍地问同样的问题，每个问题都要有人回答。您网站上的助手根据您自己的网页，以您的名义作答。",
+  "de": "Besucher stellen immer wieder dieselben Fragen, und jemand muss jede beantworten. Ein Assistent auf Ihrer Website antwortet aus Ihren eigenen Seiten, unter Ihrem Namen."
+ },
+ "n": {
+  "de": "KI-Assistent unter Ihrem Namen"
+ },
+ "l": {
+  "de": "Antworten aus Ihren Seiten, mit Zugängen für Ihr Personal."
+ },
+ "glyphs": [
+  "robot",
+  "chat",
+  "laptop"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "Your pages are loaded in as what the assistant answers from",
+    "th": "นำหน้าเว็บของคุณเข้าไปเป็นแหล่งที่ผู้ช่วยใช้ตอบ",
+    "my": "သင့်စာမျက်နှာများကို လက်ထောက် ဖြေရာတွင် အသုံးပြုမည့် အရင်းအမြစ်အဖြစ် ထည့်သွင်းသည်",
+    "zh": "把您的网页载入，作为助手回答的依据",
+    "de": "Ihre Seiten werden als Quelle der Antworten eingelesen"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "nib",
+   "t": {
+    "en": "Your name goes on the assistant",
+    "th": "ใส่ชื่อของคุณบนผู้ช่วย",
+    "my": "လက်ထောက်ပေါ်တွင် သင့်အမည်ကို ထည့်သည်",
+    "zh": "把您的名字放在助手上",
+    "de": "Ihr Name kommt auf den Assistenten"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After your pages are in",
+    "th": "หลังนำหน้าเว็บเข้าแล้ว",
+    "my": "စာမျက်နှာများ ထည့်ပြီးနောက်",
+    "zh": "网页载入之后",
+    "de": "Nachdem Ihre Seiten eingelesen sind"
+   }
+  },
+  {
+   "db": "key",
+   "t": {
+    "en": "Seats are made for your staff",
+    "th": "จัดที่นั่งให้ทีมงานของคุณ",
+    "my": "သင့်ဝန်ထမ်းများအတွက် နေရာများ ပြင်ဆင်ပေးသည်",
+    "zh": "为您的员工设置席位",
+    "de": "Für Ihr Personal werden Zugänge eingerichtet"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Next",
+    "th": "ถัดมา",
+    "my": "နောက်တစ်ဆင့်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "laptop",
+   "t": {
+    "en": "The assistant sits on your site",
+    "th": "ผู้ช่วยอยู่บนเว็บไซต์ของคุณ",
+    "my": "လက်ထောက်ကို သင့်ဝက်ဘ်ဆိုက်ပေါ်တွင် ထားသည်",
+    "zh": "助手放在您的网站上",
+    "de": "Der Assistent steht auf Ihrer Website"
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When the seats are ready",
+    "th": "เมื่อที่นั่งพร้อม",
+    "my": "နေရာများ အဆင်သင့်ဖြစ်သောအခါ",
+    "zh": "席位准备好之后",
+    "de": "Wenn die Zugänge bereit sind"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Set-up is paid once, or the same assistant is paid by the month with no set-up fee",
+    "th": "จ่ายค่าติดตั้งครั้งเดียว หรือจ่ายรายเดือนสำหรับผู้ช่วยตัวเดียวกันโดยไม่มีค่าติดตั้ง",
+    "my": "တပ်ဆင်ခကို တစ်ကြိမ်တည်း ပေးသည်၊ သို့မဟုတ် တပ်ဆင်ခမပါဘဲ လစဉ်ပေးသည်",
+    "zh": "安装费一次付清，或者同一个助手按月付费、不收安装费",
+    "de": "Die Einrichtung wird einmal bezahlt, oder derselbe Assistent monatlich ohne Einrichtungsgebühr"
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Your choice",
+    "th": "คุณเลือก",
+    "my": "သင်ရွေးချယ်သည်",
+    "zh": "由您选择",
+    "de": "Ihre Wahl"
+   }
+  }
+ ],
+ "slab": [
+  {
+   "n": "US$0.99",
+   "t": {
+    "en": "Intercom's price for each outcome its Fin assistant delivers, such as a conversation the customer confirms is resolved",
+    "th": "ราคาที่ Intercom คิดต่อผลลัพธ์หนึ่งครั้งของผู้ช่วย Fin เช่น บทสนทนาที่ลูกค้ายืนยันว่าแก้ปัญหาแล้ว",
+    "my": "Intercom ၏ Fin လက်ထောက်က ရလဒ်တစ်ခု ပေးသည့်အခါ (ဥပမာ ဖောက်သည်က ပြဿနာပြေလည်ပြီဟု အတည်ပြုသော စကားဝိုင်း) တစ်ခုလျှင် ကောက်ခံသည့် စျေးနှုန်း",
+    "zh": "Intercom 的 Fin 助手每产生一个结果收取的费用，例如客户确认问题已解决的一次对话",
+    "de": "Was Intercom für jedes Ergebnis seines Assistenten Fin verlangt, etwa ein Gespräch, das der Kunde als gelöst bestätigt"
+   },
+   "src": "https://www.intercom.com/pricing"
+  },
+  {
+   "n": "10,000",
+   "t": {
+    "en": "Neurons a day that Cloudflare Workers AI gives at no charge",
+    "th": "จำนวน Neurons ต่อวันที่ Cloudflare Workers AI ให้ใช้ฟรี",
+    "my": "Cloudflare Workers AI က တစ်နေ့လျှင် အခမဲ့ပေးသော Neurons အရေအတွက်",
+    "zh": "Cloudflare Workers AI 每天免费提供的 Neurons 数量",
+    "de": "Neurons pro Tag, die Cloudflare Workers AI kostenlos gibt"
+   },
+   "src": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
+  {
+   "n": "฿352",
+   "t": {
+    "en": "A day's minimum wage in Chiang Rai since 1 July 2025",
+    "th": "ค่าแรงขั้นต่ำต่อวันในเชียงรายตั้งแต่ 1 กรกฎาคม 2568",
+    "my": "2025 ဇူလိုင် 1 ရက်နေ့မှစ၍ ချင်းရိုင်တွင် တစ်ရက်လျှင် အနည်းဆုံးလုပ်ခ",
+    "zh": "自2025年7月1日起清莱的每日最低工资",
+    "de": "Der Mindestlohn pro Tag in Chiang Rai seit dem 1. Juli 2025"
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "n": "฿4,800",
+   "t": {
+    "en": "One Fastwork listing for a ChatGPT chatbot on LINE, Facebook and Instagram: made in 3 days, sold 29 times",
+    "th": "ประกาศบน Fastwork สำหรับแชตบอท ChatGPT บน LINE, Facebook และ Instagram ใช้เวลาทำ 3 วัน ขายได้ 29 ครั้ง",
+    "my": "LINE၊ Facebook နှင့် Instagram ပေါ်ရှိ ChatGPT ချတ်ဘော့အတွက် Fastwork စာရင်းတစ်ခု - 3 ရက်အတွင်း ပြုလုပ်ပေးပြီး 29 ကြိမ် ရောင်းချခဲ့သည်",
+    "zh": "Fastwork 上一条 LINE、Facebook、Instagram 上的 ChatGPT 聊天机器人服务：3 天完成，已售出 29 次",
+    "de": "Ein Fastwork-Angebot für einen ChatGPT-Chatbot auf LINE, Facebook und Instagram: in 3 Tagen fertig, 29-mal verkauft"
+   },
+   "src": "https://fastwork.co/user/donald/chatbot-69678893"
+  }
+ ],
+ "toy": {
+  "kind": "bill",
+  "h": {
+   "en": "What do answers cost a month, by a person and by an AI assistant?",
+   "th": "คำตอบเดือนละเท่าไหร่ เมื่อคนตอบ และเมื่อผู้ช่วย AI ตอบ",
+   "my": "လူက ဖြေသည့်အခါနှင့် AI လက်ထောက်က ဖြေသည့်အခါ တစ်လစာ အဖြေများ ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+   "zh": "一个月的回答，由人答和由 AI 助手答，各要花多少",
+   "de": "Was kosten die Antworten im Monat, wenn eine Person antwortet und wenn ein KI-Assistent antwortet?"
+  },
+  "noscript": {
+   "en": "The cost calculator needs JavaScript. What others charge is listed below.",
+   "th": "เครื่องคำนวณค่าใช้จ่ายต้องใช้ JavaScript ราคาที่ผู้อื่นเรียกเก็บแสดงไว้ด้านล่าง",
+   "my": "ကုန်ကျစရိတ်တွက်ချက်ကိရိယာသည် JavaScript လိုအပ်သည်။ အခြားသူများ ကောက်ခံသည့် စျေးနှုန်းများကို အောက်တွင် ဖော်ပြထားသည်။",
+   "zh": "费用计算器需要 JavaScript。其他机构的收费列在下方。",
+   "de": "Der Kostenrechner braucht JavaScript. Was andere verlangen, steht weiter unten."
+  },
+  "data": {
+   "sliders": [
+    {
+     "id": "questions",
+     "n": {
+      "en": "Questions a month",
+      "th": "คำถามต่อเดือน",
+      "my": "တစ်လအတွင်း မေးခွန်းများ",
+      "zh": "每月的提问数",
+      "de": "Fragen im Monat"
+     },
+     "min": 100,
+     "max": 5000,
+     "step": 100,
+     "start": 1000,
+     "unit": {
+      "en": "questions",
+      "th": "คำถาม",
+      "my": "မေးခွန်း",
+      "zh": "个提问",
+      "de": "Fragen"
+     },
+     "money": false
+    },
+    {
+     "id": "minutes",
+     "n": {
+      "en": "Minutes a person spends on one answer",
+      "th": "นาทีที่คนใช้ตอบหนึ่งคำถาม",
+      "my": "လူတစ်ယောက်က အဖြေတစ်ခုအတွက် သုံးသော မိနစ်",
+      "zh": "一个人回答一个问题用的分钟数",
+      "de": "Minuten, die eine Person für eine Antwort braucht"
+     },
+     "min": 2,
+     "max": 15,
+     "step": 1,
+     "start": 5,
+     "unit": {
+      "en": "minutes",
+      "th": "นาที",
+      "my": "မိနစ်",
+      "zh": "分钟",
+      "de": "Minuten"
+     },
+     "money": false
+    },
+    {
+     "id": "share",
+     "n": {
+      "en": "Questions the AI assistant answers on its own",
+      "th": "คำถามที่ผู้ช่วย AI ตอบได้เอง",
+      "my": "AI လက်ထောက်က ကိုယ်တိုင် ဖြေနိုင်သော မေးခွန်းများ",
+      "zh": "AI 助手能自行回答的提问",
+      "de": "Fragen, die der KI-Assistent allein beantwortet"
+     },
+     "min": 10,
+     "max": 90,
+     "step": 10,
+     "start": 50,
+     "unit": {
+      "en": "%",
+      "th": "%",
+      "my": "%",
+      "zh": "%",
+      "de": "%"
+     },
+     "money": false
+    }
+   ],
+   "choices": [
+    {
+     "id": "who",
+     "n": {
+      "en": "Who answers today",
+      "th": "ใครตอบอยู่ตอนนี้",
+      "my": "ယခု ဘယ်သူက ဖြေနေသလဲ",
+      "zh": "现在由谁回答",
+      "de": "Wer heute antwortet"
+     },
+     "options": [
+      {
+       "id": "you",
+       "n": {
+        "en": "You or a family member",
+        "th": "คุณเองหรือคนในครอบครัว",
+        "my": "သင် သို့မဟုတ် မိသားစုဝင်",
+        "zh": "您自己或家人",
+        "de": "Sie selbst oder ein Familienmitglied"
+       }
+      },
+      {
+       "id": "thai",
+       "n": {
+        "en": "A Thai employee at minimum wage",
+        "th": "พนักงานชาวไทยที่ได้ค่าแรงขั้นต่ำ",
+        "my": "အနည်းဆုံးလုပ်ခရသော ထိုင်းဝန်ထမ်း",
+        "zh": "拿最低工资的泰国员工",
+        "de": "Ein Angestellter in Thailand zum Mindestlohn"
+       }
+      },
+      {
+       "id": "abroad",
+       "n": {
+        "en": "An assistant abroad",
+        "th": "ผู้ช่วยในต่างประเทศ",
+        "my": "ပြည်ပရှိ လက်ထောက်",
+        "zh": "海外的助理",
+        "de": "Eine Assistenz im Ausland"
+       }
+      }
+     ],
+     "start": "thai"
+    },
+    {
+     "id": "pay",
+     "n": {
+      "en": "Pay Hongdam",
+      "th": "จ่ายให้หงส์ดำ",
+      "my": "ဟုန်ဒမ်သို့ ပေးချေမှု",
+      "zh": "付给鸿丹",
+      "de": "Bezahlung an Hongdam"
+     },
+     "options": [
+      {
+       "id": "month",
+       "n": {
+        "en": "By the month, no set-up",
+        "th": "รายเดือน ไม่มีค่าติดตั้ง",
+        "my": "လစဉ်၊ တပ်ဆင်ခမဲ့",
+        "zh": "按月，无安装费",
+        "de": "Monatlich, ohne Einrichtung"
+       }
+      },
+      {
+       "id": "once",
+       "n": {
+        "en": "Set-up, once",
+        "th": "ค่าติดตั้งครั้งเดียว",
+        "my": "တပ်ဆင်ခ တစ်ကြိမ်",
+        "zh": "一次性安装费",
+        "de": "Einrichtung, einmalig"
+       }
+      }
+     ],
+     "start": "month"
+    }
+   ],
+   "lines": [
+    {
+     "n": {
+      "en": "Your own time, at Chiang Rai's minimum wage of ฿352 a day over 8 hours (฿44 an hour), for the questions the AI assistant answers",
+      "th": "เวลาของคุณเอง คิดตามค่าแรงขั้นต่ำของเชียงราย ฿352 ต่อวัน ใน 8 ชั่วโมง (฿44 ต่อชั่วโมง) สำหรับคำถามที่ผู้ช่วย AI ตอบ",
+      "my": "သင့်ကိုယ်ပိုင်အချိန်၊ ချင်းရိုင်၏ တစ်ရက် ฿352 အနည်းဆုံးလုပ်ခကို 8 နာရီဖြင့် တွက်ထားသည် (တစ်နာရီ ฿44)၊ AI လက်ထောက်က ဖြေသော မေးခွန်းများအတွက်",
+      "zh": "您自己的时间，按清莱每天 ฿352 的最低工资、每天 8 小时折算（每小时 ฿44），对应 AI 助手回答的那部分提问",
+      "de": "Ihre eigene Zeit, zum Mindestlohn von Chiang Rai, ฿352 am Tag bei 8 Stunden (฿44 pro Stunde), für die Fragen, die der KI-Assistent beantwortet"
+     },
+     "range": [
+      0.00733333,
+      0.00733333
+     ],
+     "per": [
+      "questions",
+      "minutes",
+      "share"
+     ],
+     "when": {
+      "who": [
+       "you"
+      ]
+     },
+     "save": true,
+     "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+    },
+    {
+     "n": {
+      "en": "A Thai employee at the minimum wage, ฿337 to ฿400 a day by province over 8 hours (฿42 to ฿50 an hour), for the questions the AI assistant answers",
+      "th": "พนักงานชาวไทยที่ได้ค่าแรงขั้นต่ำ ฿337 ถึง ฿400 ต่อวันตามจังหวัด ใน 8 ชั่วโมง (฿42 ถึง ฿50 ต่อชั่วโมง) สำหรับคำถามที่ผู้ช่วย AI ตอบ",
+      "my": "အနည်းဆုံးလုပ်ခရသော ထိုင်းဝန်ထမ်း၊ ပြည်နယ်အလိုက် တစ်ရက် ฿337 မှ ฿400 ကို 8 နာရီဖြင့် တွက်ထားသည် (တစ်နာရီ ฿42 မှ ฿50)၊ AI လက်ထောက်က ဖြေသော မေးခွန်းများအတွက်",
+      "zh": "拿最低工资的泰国员工，按府不同每天 ฿337 至 ฿400、每天 8 小时折算（每小时 ฿42 至 ฿50），对应 AI 助手回答的那部分提问",
+      "de": "Ein Angestellter in Thailand zum Mindestlohn, ฿337 bis ฿400 am Tag je nach Provinz, bei 8 Stunden (฿42 bis ฿50 pro Stunde), für die Fragen, die der KI-Assistent beantwortet"
+     },
+     "range": [
+      0.00702083,
+      0.00833333
+     ],
+     "per": [
+      "questions",
+      "minutes",
+      "share"
+     ],
+     "when": {
+      "who": [
+       "thai"
+      ]
+     },
+     "save": true,
+     "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+    },
+    {
+     "n": {
+      "en": "A person abroad as a customer-service assistant on OnlineJobs.ph, intermediate level: US$4 to US$7 an hour (฿135 to ฿236 at ฿33.71 to the dollar), for the questions the AI assistant answers",
+      "th": "ผู้ช่วยฝ่ายบริการลูกค้าจากต่างประเทศบน OnlineJobs.ph ระดับกลาง: US$4 ถึง US$7 ต่อชั่วโมง (฿135 ถึง ฿236 ที่ ฿33.71 ต่อดอลลาร์) สำหรับคำถามที่ผู้ช่วย AI ตอบ",
+      "my": "OnlineJobs.ph တွင် ပြည်ပရှိ ဖောက်သည်ဝန်ဆောင်မှု လက်ထောက် (အလယ်အလတ်အဆင့်)၊ တစ်နာရီ US$4 မှ US$7 (ဒေါ်လာတစ်ခုလျှင် ฿33.71 ဖြင့် ฿135 မှ ฿236)၊ AI လက်ထောက်က ဖြေသော မေးခွန်းများအတွက်",
+      "zh": "OnlineJobs.ph 上海外的中级客服助理：每小时 US$4 至 US$7（按每美元 ฿33.71 折合 ฿135 至 ฿236），对应 AI 助手回答的那部分提问",
+      "de": "Eine Person im Ausland als Kundendienst-Assistenz auf OnlineJobs.ph, mittleres Niveau: US$4 bis US$7 pro Stunde (฿135 bis ฿236 bei ฿33.71 pro Dollar), für die Fragen, die der KI-Assistent beantwortet"
+     },
+     "range": [
+      0.02247333,
+      0.03932833
+     ],
+     "per": [
+      "questions",
+      "minutes",
+      "share"
+     ],
+     "when": {
+      "who": [
+       "abroad"
+      ]
+     },
+     "save": true,
+     "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+    },
+    {
+     "n": {
+      "en": "The AI assistant's model fees: 3,000 tokens in and 300 tokens out per question, at Claude Haiku 5.5 (US$0.10 and US$0.50 per million tokens) up to Claude Sonnet 5.5 (US$2 and US$10); ฿0.015 to ฿0.30 a question at ฿33.71 to the dollar",
+      "th": "ค่าโมเดลของผู้ช่วย AI: 3,000 โทเคนขาเข้าและ 300 โทเคนขาออกต่อหนึ่งคำถาม ตั้งแต่ Claude Haiku 5.5 (US$0.10 และ US$0.50 ต่อ 1 ล้านโทเคน) ถึง Claude Sonnet 5.5 (US$2 และ US$10) เท่ากับ ฿0.015 ถึง ฿0.30 ต่อคำถาม ที่ ฿33.71 ต่อดอลลาร์",
+      "my": "AI လက်ထောက်၏ မော်ဒယ်ကြေး - မေးခွန်းတစ်ခုလျှင် input tokens 3,000 နှင့် output tokens 300၊ Claude Haiku 5.5 (tokens တစ်သန်းလျှင် US$0.10 နှင့် US$0.50) မှ Claude Sonnet 5.5 (US$2 နှင့် US$10) အထိ၊ ဒေါ်လာတစ်ခုလျှင် ฿33.71 ဖြင့် မေးခွန်းတစ်ခုလျှင် ฿0.015 မှ ฿0.30",
+      "zh": "AI 助手的模型费用：每个提问 3,000 个输入 token 和 300 个输出 token，从 Claude Haiku 5.5（每百万 token US$0.10 和 US$0.50）到 Claude Sonnet 5.5（US$2 和 US$10）；按每美元 ฿33.71 折合，每个提问 ฿0.015 至 ฿0.30",
+      "de": "Modellgebühren des KI-Assistenten: 3,000 Eingabe-Tokens und 300 Ausgabe-Tokens pro Frage, von Claude Haiku 5.5 (US$0.10 und US$0.50 pro Million Tokens) bis Claude Sonnet 5.5 (US$2 und US$10); ฿0.015 bis ฿0.30 pro Frage bei ฿33.71 pro Dollar"
+     },
+     "range": [
+      0.0151695,
+      0.30339
+     ],
+     "per": [
+      "questions"
+     ],
+     "save": false,
+     "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+    }
+   ],
+   "flip": true,
+   "total": {
+    "en": "Kept a month: time saved, less model fees",
+    "th": "เงินที่เก็บได้ต่อเดือน: เวลาที่ประหยัด หักค่าโมเดล",
+    "my": "တစ်လတွင် ကျန်ရစ်သည့်ငွေ - ချွေတာရသော အချိန် နုတ်၍ မော်ဒယ်ကြေး",
+    "zh": "每月留下的钱：节省的时间减去模型费用",
+    "de": "Pro Monat gespart: gesparte Zeit abzüglich Modellgebühren"
+   },
+   "note": {
+    "en": "Model fees are charged on all the month's questions, whether the AI assistant answers them or not. This calculator assumes 3,000 tokens in and 300 tokens out for each question, and an 8-hour day for a wage. A token is a small piece of a word. Prices were read on 4 November 2026.",
+    "th": "ค่าโมเดลคิดจากคำถามทั้งเดือน ไม่ว่าผู้ช่วย AI จะตอบได้หรือไม่ เครื่องคำนวณนี้สมมติว่าแต่ละคำถามใช้ 3,000 โทเคนขาเข้าและ 300 โทเคนขาออก และวันทำงาน 8 ชั่วโมงสำหรับค่าแรง โทเคนคือชิ้นส่วนเล็ก ๆ ของคำ อ่านราคาเมื่อวันที่ 4 พฤศจิกายน 2569",
+    "my": "မော်ဒယ်ကြေးကို လတစ်လစာ မေးခွန်းအားလုံးအတွက် ကောက်ခံပြီး AI လက်ထောက်က ဖြေနိုင်သည်ဖြစ်စေ မဖြေနိုင်သည်ဖြစ်စေ ကောက်ခံသည်။ ဤတွက်ချက်ကိရိယာက မေးခွန်းတစ်ခုစီအတွက် input tokens 3,000 နှင့် output tokens 300 ဟု ယူဆပြီး လုပ်ခအတွက် တစ်ရက် 8 နာရီ ယူဆထားသည်။ Token ဆိုသည်မှာ စကားလုံး၏ အစိတ်အပိုင်းငယ် ဖြစ်သည်။ စျေးနှုန်းများကို 2026 နိုဝင်ဘာ 4 ရက်နေ့တွင် ဖတ်ထားသည်။",
+    "zh": "模型费用按整月的所有提问计算，不论 AI 助手是否答得出。本计算器假设每个提问用 3,000 个输入 token 和 300 个输出 token，工资按每天 8 小时折算。token 是词的一小段。价格读取于 2026 年 11 月 4 日。",
+    "de": "Modellgebühren fallen für alle Fragen des Monats an, ob der KI-Assistent sie beantwortet oder nicht. Der Rechner nimmt für jede Frage 3,000 Eingabe-Tokens und 300 Ausgabe-Tokens an und für den Lohn einen Arbeitstag von 8 Stunden. Ein Token ist ein kleines Stück eines Wortes. Die Preise wurden am 4. November 2026 gelesen."
+   },
+   "oursLine": {
+    "en": "Hongdam builds it from your pages and keeps it answering, by the month, for:",
+    "th": "หงส์ดำสร้างจากหน้าเว็บของคุณและดูแลให้ตอบต่อไป รายเดือน ในราคา:",
+    "my": "ဟုန်ဒမ်က သင့်စာမျက်နှာများမှ တည်ဆောက်ပေးပြီး လစဉ် ဆက်လက်ဖြေနေစေသည်၊ စျေးနှုန်း -",
+    "zh": "鸿丹根据您的网页搭建并让它持续作答，按月计费：",
+    "de": "Hongdam baut ihn aus Ihren Seiten und hält ihn am Antworten, monatlich, für:"
+   },
+   "oursFor": {
+    "pay": {
+     "month": "ai-monthly",
+     "once": "ai-whitelabel"
+    }
+   },
+   "oursLineFor": {
+    "pay": {
+     "once": {
+      "en": "Hongdam builds it from your pages, with seats for your staff, for a one-time set-up of:",
+      "th": "หงส์ดำสร้างจากหน้าเว็บของคุณ พร้อมที่นั่งให้ทีมงาน ค่าติดตั้งครั้งเดียว:",
+      "my": "ဟုန်ဒမ်က သင့်စာမျက်နှာများမှ ဝန်ထမ်းများအတွက် နေရာများနှင့်အတူ တည်ဆောက်ပေးသည်၊ တပ်ဆင်ခ တစ်ကြိမ်တည်း -",
+      "zh": "鸿丹根据您的网页搭建，并为员工设置席位，一次性安装费：",
+      "de": "Hongdam baut ihn aus Ihren Seiten, mit Zugängen für Ihr Personal, für eine einmalige Einrichtung von:"
+     }
+    }
+   }
+  }
+ },
+ "proof": [
+  {
+   "t": {
+    "en": "White-label AI: a branded assistant for a small team, with seats by invite link and answers that cite the team's documents (ai.motdang.net)",
+    "th": "White-label AI: ผู้ช่วยแชตในชื่อของทีมเล็ก ๆ เข้าใช้ผ่านลิงก์เชิญ และคำตอบอ้างอิงเอกสารของทีม (ai.motdang.net)",
+    "my": "White-label AI - အဖွဲ့ငယ်တစ်ခုအတွက် အမည်တပ် လက်ထောက်၊ ဖိတ်စာလင့်ခ်ဖြင့် နေရာရယူပြီး အဖွဲ့၏ စာရွက်စာတမ်းများကို ကိုးကားဖြေသည် (ai.motdang.net)",
+    "zh": "White-label AI：以小团队名义使用的助手，通过邀请链接入座，回答会引用团队的文件（ai.motdang.net）",
+    "de": "White-label AI: ein Assistent unter dem Namen eines kleinen Teams, Zugang per Einladungslink, Antworten mit Verweis auf die Dokumente des Teams (ai.motdang.net)"
+   },
+   "href": "/portfolio/",
+   "img": "/assets/screens/aimotdang.webp"
+  },
+  {
+   "t": {
+    "en": "Ask Mot Dang: a public assistant that answers from the directory's places and cites them (ask.motdang.net)",
+    "th": "ถามมดแดง: ผู้ช่วยสาธารณะที่ตอบจากสถานที่ในไดเรกทอรีและอ้างอิงที่มา (ask.motdang.net)",
+    "my": "Ask Mot Dang - လမ်းညွှန်ရှိ နေရာများမှ ဖြေပြီး ကိုးကားပေးသော အများသုံး လက်ထောက် (ask.motdang.net)",
+    "zh": "问 Mot Dang：根据名录中的地点作答并注明出处的公开助手（ask.motdang.net）",
+    "de": "Ask Mot Dang: ein öffentlicher Assistent, der aus den Orten des Verzeichnisses antwortet und sie angibt (ask.motdang.net)"
+   },
+   "href": "https://ask.motdang.net/",
+   "img": "/assets/screens/askmotdang.webp"
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Claude Haiku 5.5 costs US$0.10 per million input tokens and US$0.50 per million output tokens for prompts up to 100,000 tokens. Claude Sonnet 5.5 costs US$2 and US$10.",
+    "th": "Claude Haiku 5.5 คิด US$0.10 ต่อ 1 ล้านโทเคนขาเข้า และ US$0.50 ต่อ 1 ล้านโทเคนขาออก สำหรับพรอมต์ไม่เกิน 100,000 โทเคน ส่วน Claude Sonnet 5.5 คิด US$2 และ US$10",
+    "my": "Claude Haiku 5.5 သည် prompt tokens 100,000 အထိအတွက် input tokens တစ်သန်းလျှင် US$0.10 နှင့် output tokens တစ်သန်းလျှင် US$0.50 ကျသည်။ Claude Sonnet 5.5 မှာ US$2 နှင့် US$10 ဖြစ်သည်။",
+    "zh": "Claude Haiku 5.5 在提示词不超过 100,000 个 token 时，每百万输入 token 收费 US$0.10，每百万输出 token 收费 US$0.50。Claude Sonnet 5.5 分别是 US$2 和 US$10。",
+    "de": "Claude Haiku 5.5 kostet bei Prompts bis 100,000 Tokens US$0.10 pro Million Eingabe-Tokens und US$0.50 pro Million Ausgabe-Tokens. Claude Sonnet 5.5 kostet US$2 und US$10."
+   },
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  {
+   "t": {
+    "en": "OpenAI lists gpt-5-nano at US$0.05 per million input tokens and US$0.40 per million output tokens, and gpt-5.4-mini at US$0.75 and US$4.50.",
+    "th": "OpenAI ระบุราคา gpt-5-nano ที่ US$0.05 ต่อ 1 ล้านโทเคนขาเข้า และ US$0.40 ต่อ 1 ล้านโทเคนขาออก ส่วน gpt-5.4-mini ที่ US$0.75 และ US$4.50",
+    "my": "OpenAI က gpt-5-nano ကို input tokens တစ်သန်းလျှင် US$0.05 နှင့် output tokens တစ်သန်းလျှင် US$0.40 ဟု ဖော်ပြပြီး gpt-5.4-mini ကို US$0.75 နှင့် US$4.50 ဟု ဖော်ပြသည်။",
+    "zh": "OpenAI 标明 gpt-5-nano 每百万输入 token US$0.05、每百万输出 token US$0.40，gpt-5.4-mini 分别是 US$0.75 和 US$4.50。",
+    "de": "OpenAI nennt für gpt-5-nano US$0.05 pro Million Eingabe-Tokens und US$0.40 pro Million Ausgabe-Tokens, für gpt-5.4-mini US$0.75 und US$4.50."
+   },
+   "src": "https://developers.openai.com/api/docs/pricing"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Workers AI gives 10,000 Neurons a day at no charge, then charges US$0.011 per 1,000 Neurons on the Workers Paid plan. Llama 3.1 8B costs US$0.282 per million input tokens and US$0.827 per million output tokens.",
+    "th": "Cloudflare Workers AI ให้ใช้ฟรี 10,000 Neurons ต่อวัน หลังจากนั้นคิด US$0.011 ต่อ 1,000 Neurons ในแผน Workers Paid โมเดล Llama 3.1 8B คิด US$0.282 ต่อ 1 ล้านโทเคนขาเข้า และ US$0.827 ต่อ 1 ล้านโทเคนขาออก",
+    "my": "Cloudflare Workers AI က တစ်နေ့လျှင် Neurons 10,000 ကို အခမဲ့ပေးပြီး Workers Paid အစီအစဉ်တွင် ထို့နောက် Neurons 1,000 လျှင် US$0.011 ကောက်ခံသည်။ Llama 3.1 8B မှာ input tokens တစ်သန်းလျှင် US$0.282 နှင့် output tokens တစ်သန်းလျှင် US$0.827 ကျသည်။",
+    "zh": "Cloudflare Workers AI 每天免费提供 10,000 个 Neurons，超出部分在 Workers Paid 方案下每 1,000 个 Neurons 收费 US$0.011。Llama 3.1 8B 每百万输入 token 收费 US$0.282，每百万输出 token 收费 US$0.827。",
+    "de": "Cloudflare Workers AI gibt 10,000 Neurons pro Tag kostenlos und verlangt danach im Tarif Workers Paid US$0.011 pro 1,000 Neurons. Llama 3.1 8B kostet US$0.282 pro Million Eingabe-Tokens und US$0.827 pro Million Ausgabe-Tokens."
+   },
+   "src": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
+  {
+   "t": {
+    "en": "The daily minimum wage is ฿352 in Chiang Rai, ฿380 in Mueang Chiang Mai district and ฿357 in the rest of Chiang Mai province. Across Thailand it runs from ฿337 to ฿400 and has applied since 1 July 2025.",
+    "th": "ค่าแรงขั้นต่ำต่อวันคือ ฿352 ในเชียงราย ฿380 ในอำเภอเมืองเชียงใหม่ และ ฿357 ในพื้นที่อื่นของจังหวัดเชียงใหม่ ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400 ใช้ตั้งแต่ 1 กรกฎาคม 2568",
+    "my": "နေ့စဉ် အနည်းဆုံးလုပ်ခမှာ ချင်းရိုင်တွင် ฿352၊ ချင်းမိုင် Mueang ခရိုင်တွင် ฿380 နှင့် ချင်းမိုင်ပြည်နယ်၏ ကျန်ဒေသတွင် ฿357 ဖြစ်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိရှိပြီး 2025 ဇူလိုင် 1 ရက်နေ့မှစ၍ အသုံးပြုသည်။",
+    "zh": "每日最低工资：清莱 ฿352，清迈府城区（Mueang）฿380，清迈府其余地区 ฿357。全泰国从 ฿337 到 ฿400，自 2025 年 7 月 1 日起实行。",
+    "de": "Der Mindestlohn pro Tag beträgt in Chiang Rai ฿352, im Bezirk Mueang Chiang Mai ฿380 und im übrigen Gebiet der Provinz Chiang Mai ฿357. In ganz Thailand reicht er von ฿337 bis ฿400 und gilt seit dem 1. Juli 2025."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "t": {
+    "en": "On 3 November 2026, US$1 was worth ฿33.71 (the rate listed for 17:00 UTC).",
+    "th": "วันที่ 3 พฤศจิกายน 2569 US$1 มีค่า ฿33.71 (อัตราที่แสดงเวลา 17:00 UTC)",
+    "my": "2026 နိုဝင်ဘာ 3 ရက်နေ့တွင် US$1 သည် ฿33.71 တန်ဖိုးရှိသည် (UTC 17:00 အတွက် ဖော်ပြထားသော နှုန်း)။",
+    "zh": "2026 年 11 月 3 日，US$1 兑 ฿33.71（页面列出的 UTC 17:00 汇率）。",
+    "de": "Am 3. November 2026 war US$1 ฿33.71 wert (Kurs für 17:00 UTC)."
+   },
+   "src": "https://www.x-rates.com/historical/?from=USD&amount=1&date=2026-11-03"
+  },
+  {
+   "t": {
+    "en": "Intercom counts a Fin outcome when the customer confirms the issue is resolved, stops asking for help after Fin replies, or Fin completes a workflow. With an existing helpdesk, a minimum monthly commitment applies.",
+    "th": "Intercom นับผลลัพธ์ของ Fin เมื่อลูกค้ายืนยันว่าแก้ปัญหาแล้ว เมื่อลูกค้าเลิกขอความช่วยเหลือหลังจาก Fin ตอบ หรือเมื่อ Fin ทำเวิร์กโฟลว์เสร็จ หากใช้กับระบบช่วยเหลือลูกค้าเดิมจะมีข้อผูกมัดขั้นต่ำรายเดือน",
+    "my": "Intercom သည် ဖောက်သည်က ပြဿနာပြေလည်ပြီဟု အတည်ပြုသည့်အခါ၊ Fin ဖြေပြီးနောက် ဖောက်သည်က အကူအညီ ထပ်မတောင်းတော့သည့်အခါ သို့မဟုတ် Fin က workflow တစ်ခု ပြီးမြောက်သည့်အခါ Fin ရလဒ်တစ်ခုအဖြစ် ရေတွက်သည်။ လက်ရှိ helpdesk နှင့် သုံးပါက လစဉ် အနည်းဆုံး ကတိကဝတ် ရှိသည်။",
+    "zh": "Intercom 在客户确认问题已解决、Fin 回复后客户不再求助、或 Fin 完成一个工作流时，记为一个 Fin 结果。与现有客服系统（helpdesk）搭配使用时，设有每月最低承诺量。",
+    "de": "Intercom zählt ein Fin-Ergebnis, wenn der Kunde bestätigt, dass das Problem gelöst ist, nach Fins Antwort nicht mehr um Hilfe bittet oder Fin einen Workflow abschliesst. Bei Nutzung mit einem bestehenden Helpdesk gilt eine monatliche Mindestverpflichtung."
+   },
+   "src": "https://www.intercom.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Zendesk's Support Team and Suite Team plans include 5 automated resolutions per agent a month, and Suite Professional includes 10.",
+    "th": "แผน Support Team และ Suite Team ของ Zendesk รวมการแก้ปัญหาอัตโนมัติ 5 ครั้งต่อเอเจนต์ต่อเดือน และ Suite Professional รวม 10 ครั้ง",
+    "my": "Zendesk ၏ Support Team နှင့် Suite Team အစီအစဉ်များတွင် agent တစ်ဦးလျှင် တစ်လကို အလိုအလျောက် ဖြေရှင်းမှု 5 ကြိမ် ပါဝင်ပြီး Suite Professional တွင် 10 ကြိမ် ပါဝင်သည်။",
+    "zh": "Zendesk 的 Support Team 和 Suite Team 方案每位客服每月含 5 次自动解决，Suite Professional 含 10 次。",
+    "de": "Die Tarife Support Team und Suite Team von Zendesk enthalten 5 automatische Lösungen pro Agent und Monat, Suite Professional 10."
+   },
+   "src": "https://www.zendesk.com/pricing/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Intercom, Fin assistant (seats start at US$19 a month each)",
+    "th": "Intercom ผู้ช่วย Fin (ที่นั่งเริ่มที่ US$19 ต่อเดือนต่อที่นั่ง)",
+    "my": "Intercom၊ Fin လက်ထောက် (နေရာတစ်ခုလျှင် တစ်လ US$19 မှ စသည်)",
+    "zh": "Intercom 的 Fin 助手（每个席位每月 US$19 起）",
+    "de": "Intercom, Assistent Fin (Zugänge ab US$19 pro Monat und Platz)"
+   },
+   "p": {
+    "en": "US$0.99 an outcome",
+    "th": "US$0.99 ต่อผลลัพธ์",
+    "my": "ရလဒ်တစ်ခုလျှင် US$0.99",
+    "zh": "每个结果 US$0.99",
+    "de": "US$0.99 pro Ergebnis"
+   },
+   "src": "https://www.intercom.com/pricing"
+  },
+  {
+   "t": {
+    "en": "Zendesk, AI agents (US$1.50 on a committed plan, US$2.00 pay as you go)",
+    "th": "Zendesk ผู้ช่วย AI (US$1.50 ในแผนผูกมัด US$2.00 จ่ายตามการใช้)",
+    "my": "Zendesk၊ AI agents (ကတိကဝတ်ပါ အစီအစဉ်တွင် US$1.50၊ အသုံးပြုသလောက်ပေးလျှင် US$2.00)",
+    "zh": "Zendesk 的 AI 客服（承诺用量方案 US$1.50，按用量付费 US$2.00）",
+    "de": "Zendesk, KI-Agenten (US$1.50 im Tarif mit Zusage, US$2.00 nach Verbrauch)"
+   },
+   "p": {
+    "en": "US$1.50–2.00 an automated resolution",
+    "th": "US$1.50–2.00 ต่อการแก้ปัญหาอัตโนมัติ",
+    "my": "အလိုအလျောက် ဖြေရှင်းမှုတစ်ခုလျှင် US$1.50–2.00",
+    "zh": "每次自动解决 US$1.50–2.00",
+    "de": "US$1.50–2.00 pro automatischer Lösung"
+   },
+   "src": "https://www.zendesk.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "Chatbase, plans Hobby, Basic and Business, billed yearly. Removing its \"Powered By\" label costs US$99 a month extra.",
+    "th": "Chatbase แผน Hobby, Basic และ Business จ่ายรายปี การเอาป้าย \"Powered By\" ออกคิดเพิ่ม US$99 ต่อเดือน",
+    "my": "Chatbase၊ Hobby၊ Basic နှင့် Business အစီအစဉ်များ၊ နှစ်စဉ်ငွေပေးချေမှု။ \"Powered By\" တံဆိပ်ကို ဖယ်ရှားရန် တစ်လ US$99 ထပ်ကျသည်။",
+    "zh": "Chatbase 的 Hobby、Basic、Business 方案，按年付费。去掉 \"Powered By\" 标识每月另加 US$99。",
+    "de": "Chatbase, Tarife Hobby, Basic und Business, jährlich abgerechnet. Das Entfernen des Hinweises \"Powered By\" kostet US$99 im Monat extra."
+   },
+   "p": {
+    "en": "US$32–400 a month, plus US$99 for the label",
+    "th": "US$32–400 ต่อเดือน บวก US$99 สำหรับเอาป้ายออก",
+    "my": "တစ်လ US$32–400၊ တံဆိပ်ဖယ်ရှားရန် US$99 ထပ်",
+    "zh": "每月 US$32–400，另加去除标识 US$99",
+    "de": "US$32–400 im Monat, dazu US$99 für das Entfernen des Hinweises"
+   },
+   "src": "https://www.chatbase.co/pricing"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: a LINE Official Account chatbot that answers FAQs and hands over to a person (Starter, Advanced and Operation packages, 5 to 12 days, sold 36 times)",
+    "th": "ประกาศบน Fastwork: แชตบอท LINE Official Account ตอบคำถามที่พบบ่อยและส่งต่อให้คน (แพ็กเกจ Starter, Advanced และ Operation ใช้เวลา 5 ถึง 12 วัน ขายได้ 36 ครั้ง)",
+    "my": "Fastwork စာရင်း - မေးလေ့ရှိသော မေးခွန်းများကို ဖြေပြီး လူသားထံ လွှဲပေးသော LINE Official Account ချတ်ဘော့ (Starter၊ Advanced နှင့် Operation အထုပ်များ၊ 5 ရက်မှ 12 ရက်၊ 36 ကြိမ် ရောင်းချပြီး)",
+    "zh": "Fastwork 上的服务：LINE 官方账号聊天机器人，回答常见问题并转给真人（Starter、Advanced、Operation 三个套餐，5 至 12 天，已售出 36 次）",
+    "de": "Fastwork-Angebot: Chatbot für ein LINE Official Account, der häufige Fragen beantwortet und an eine Person übergibt (Pakete Starter, Advanced und Operation, 5 bis 12 Tage, 36-mal verkauft)"
+   },
+   "p": {
+    "en": "฿15,000–30,000",
+    "th": "฿15,000–30,000",
+    "my": "฿15,000–30,000",
+    "zh": "฿15,000–30,000",
+    "de": "฿15,000–30,000"
+   },
+   "src": "https://fastwork.co/user/mos_lazyhardwork/chatbot-57678051"
+  },
+  {
+   "t": {
+    "en": "Fastwork listing: a chatbot connected to your own database, on a LINE Official Account (฿5,000) or on your website (฿5,500), 14 days",
+    "th": "ประกาศบน Fastwork: แชตบอทที่เชื่อมกับฐานข้อมูลของคุณเอง บน LINE Official Account (฿5,000) หรือบนเว็บไซต์ของคุณ (฿5,500) ใช้เวลา 14 วัน",
+    "my": "Fastwork စာရင်း - သင့်ကိုယ်ပိုင် ဒေတာဘေ့စ်နှင့် ချိတ်ဆက်ထားသော ချတ်ဘော့၊ LINE Official Account ပေါ်တွင် (฿5,000) သို့မဟုတ် သင့်ဝက်ဘ်ဆိုက်ပေါ်တွင် (฿5,500)၊ 14 ရက်",
+    "zh": "Fastwork 上的服务：连接您自己数据库的聊天机器人，放在 LINE 官方账号（฿5,000）或您的网站（฿5,500）上，14 天",
+    "de": "Fastwork-Angebot: ein Chatbot, der an Ihre eigene Datenbank angeschlossen ist, auf einem LINE Official Account (฿5,000) oder auf Ihrer Website (฿5,500), 14 Tage"
+   },
+   "p": {
+    "en": "฿5,000–5,500",
+    "th": "฿5,000–5,500",
+    "my": "฿5,000–5,500",
+    "zh": "฿5,000–5,500",
+    "de": "฿5,000–5,500"
+   },
+   "src": "https://fastwork.co/user/kasap_ai_dev/chatbot-65926364"
+  },
+  {
+   "t": {
+    "en": "OnlineJobs.ph guide: a customer-service assistant in the Philippines at intermediate level (1 to 5 years of experience)",
+    "th": "คู่มือของ OnlineJobs.ph: ผู้ช่วยฝ่ายบริการลูกค้าในฟิลิปปินส์ ระดับกลาง (ประสบการณ์ 1 ถึง 5 ปี)",
+    "my": "OnlineJobs.ph လမ်းညွှန် - ဖိလစ်ပိုင်ရှိ ဖောက်သည်ဝန်ဆောင်မှု လက်ထောက်၊ အလယ်အလတ်အဆင့် (အတွေ့အကြုံ 1 နှစ်မှ 5 နှစ်)",
+    "zh": "OnlineJobs.ph 的指南：菲律宾中级客服助理（1 至 5 年经验）",
+    "de": "Leitfaden von OnlineJobs.ph: eine Kundendienst-Assistenz auf den Philippinen, mittleres Niveau (1 bis 5 Jahre Erfahrung)"
+   },
+   "p": {
+    "en": "US$460–750 a month",
+    "th": "US$460–750 ต่อเดือน",
+    "my": "တစ်လ US$460–750",
+    "zh": "每月 US$460–750",
+    "de": "US$460–750 im Monat"
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a chatbot tool cost a month?",
+    "th": "เครื่องมือแชตบอทคิดเดือนละเท่าไหร่",
+    "my": "ချတ်ဘော့ကိရိယာ တစ်လ ဘယ်လောက်ကျသလဲ",
+    "zh": "聊天机器人工具每月收多少钱",
+    "de": "Was kostet ein Chatbot-Werkzeug im Monat?"
+   },
+   "a": {
+    "en": "Tidio's Lyro AI agent starts at US$32.50 a month for 50 Lyro conversations. Tidio's Starter plan, for 100 billable conversations, is US$24.17 a month. Its Free plan costs US$0.",
+    "th": "Lyro ผู้ช่วย AI ของ Tidio เริ่มที่ US$32.50 ต่อเดือนสำหรับ 50 บทสนทนา แผน Starter ของ Tidio สำหรับ 100 บทสนทนาที่คิดเงินคือ US$24.17 ต่อเดือน แผน Free คือ US$0",
+    "my": "Tidio ၏ Lyro AI လက်ထောက်သည် Lyro စကားဝိုင်း 50 အတွက် တစ်လ US$32.50 မှ စသည်။ Tidio ၏ Starter အစီအစဉ်သည် ငွေကောက်ခံသော စကားဝိုင်း 100 အတွက် တစ်လ US$24.17 ဖြစ်သည်။ Free အစီအစဉ်မှာ US$0 ဖြစ်သည်။",
+    "zh": "Tidio 的 Lyro AI 助手每月 US$32.50 起，含 50 次 Lyro 对话。Tidio 的 Starter 方案含 100 次计费对话，每月 US$24.17。Free 方案为 US$0。",
+    "de": "Tidios KI-Agent Lyro beginnt bei US$32.50 im Monat für 50 Lyro-Gespräche. Der Tarif Starter mit 100 abrechenbaren Gesprächen kostet US$24.17 im Monat. Der Tarif Free kostet US$0."
+   },
+   "src": "https://www.tidio.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "How much does it cost to have an AI chatbot made in Thailand?",
+    "th": "จ้างทำแชตบอท AI ในไทยราคาเท่าไหร่",
+    "my": "ထိုင်းနိုင်ငံတွင် AI ချတ်ဘော့ ပြုလုပ်ခိုင်းရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在泰国请人做 AI 聊天机器人要多少钱",
+    "de": "Was kostet ein KI-Chatbot, der in Thailand gebaut wird?"
+   },
+   "a": {
+    "en": "One Fastwork seller offers a ChatGPT chatbot for LINE, Facebook Messenger and Instagram for ฿4,800. It takes 3 days, includes 1 revision and has sold 29 times.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork เสนอแชตบอท ChatGPT สำหรับ LINE, Facebook Messenger และ Instagram ในราคา ฿4,800 ใช้เวลา 3 วัน แก้ไขได้ 1 ครั้ง และขายได้แล้ว 29 ครั้ง",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက LINE၊ Facebook Messenger နှင့် Instagram အတွက် ChatGPT ချတ်ဘော့ကို ฿4,800 ဖြင့် ရောင်းသည်။ 3 ရက်ကြာပြီး ပြင်ဆင်မှု 1 ကြိမ် ပါဝင်ကာ 29 ကြိမ် ရောင်းချပြီးဖြစ်သည်။",
+    "zh": "Fastwork 上有一位卖家提供适用于 LINE、Facebook Messenger 和 Instagram 的 ChatGPT 聊天机器人，价格 ฿4,800。需要 3 天，含 1 次修改，已售出 29 次。",
+    "de": "Ein Anbieter auf Fastwork verkauft einen ChatGPT-Chatbot für LINE, Facebook Messenger und Instagram für ฿4,800. Er braucht 3 Tage, enthält 1 Überarbeitung und wurde 29-mal verkauft."
+   },
+   "src": "https://fastwork.co/user/donald/chatbot-69678893"
+  },
+  {
+   "q": {
+    "en": "Can a chatbot answer on LINE?",
+    "th": "แชตบอทตอบในไลน์ได้ไหม",
+    "my": "ချတ်ဘော့က LINE တွင် ဖြေနိုင်သလား",
+    "zh": "聊天机器人能在 LINE 上回答吗",
+    "de": "Kann ein Chatbot auf LINE antworten?"
+   },
+   "a": {
+    "en": "Yes. Fastwork sellers build chatbots for a LINE Official Account. In one listing the Starter package, ฿15,000 in 5 days, answers questions about FAQs, menus and prices and passes the chat to a person when the bot cannot answer.",
+    "th": "ได้ ผู้ขายบน Fastwork ทำแชตบอทสำหรับบัญชี LINE Official Account ในประกาศหนึ่ง แพ็กเกจ Starter ราคา ฿15,000 ใช้เวลา 5 วัน ตอบคำถามที่พบบ่อย เมนู และราคาอัตโนมัติ และส่งต่อแชตให้แอดมินที่เป็นคนเมื่อบอทตอบไม่ได้",
+    "my": "ရသည်။ Fastwork ရောင်းချသူများက LINE Official Account အတွက် ချတ်ဘော့များ ပြုလုပ်ပေးသည်။ စာရင်းတစ်ခုတွင် Starter အထုပ်သည် ฿15,000 ဖြင့် 5 ရက်ကြာပြီး မေးလေ့ရှိသော မေးခွန်းများ၊ မီနူးများနှင့် စျေးနှုန်းများကို အလိုအလျောက်ဖြေကာ ဘော့က မဖြေနိုင်သည့်အခါ ချတ်ကို လူသားထံ လွှဲပေးသည်။",
+    "zh": "可以。Fastwork 上的卖家会为 LINE 官方账号（LINE Official Account）制作聊天机器人。其中一个服务的 Starter 套餐 ฿15,000、5 天完成，自动回答常见问题、菜单和价格，机器人答不了时转给真人管理员。",
+    "de": "Ja. Verkäufer auf Fastwork bauen Chatbots für ein LINE Official Account. Im Starter-Paket eines Angebots, ฿15,000 in 5 Tagen, beantwortet der Bot häufige Fragen, Menüs und Preise und übergibt den Chat an eine Person, wenn er nicht antworten kann."
+   },
+   "src": "https://fastwork.co/user/mos_lazyhardwork/chatbot-57678051"
+  },
+  {
+   "q": {
+    "en": "How much does one answer cost in model fees?",
+    "th": "ค่าโมเดลต่อหนึ่งคำตอบเท่าไหร่",
+    "my": "အဖြေတစ်ခုလျှင် မော်ဒယ်ကြေး ဘယ်လောက်လဲ",
+    "zh": "模型费用每个回答多少钱",
+    "de": "Was kostet eine Antwort an Modellgebühren?"
+   },
+   "a": {
+    "en": "Take 3,000 tokens in and 300 tokens out for one answer. Claude Haiku 5.5 charges US$0.00045 for that, and Claude Sonnet 5.5 charges US$0.009. At ฿33.71 to the dollar, that is ฿0.015 and ฿0.30.",
+    "th": "สมมติหนึ่งคำตอบใช้ 3,000 โทเคนขาเข้าและ 300 โทเคนขาออก Claude Haiku 5.5 คิด US$0.00045 และ Claude Sonnet 5.5 คิด US$0.009 ที่ ฿33.71 ต่อดอลลาร์ เท่ากับ ฿0.015 และ ฿0.30",
+    "my": "အဖြေတစ်ခုအတွက် input tokens 3,000 နှင့် output tokens 300 ဟု ယူဆပါ။ Claude Haiku 5.5 က US$0.00045 နှင့် Claude Sonnet 5.5 က US$0.009 ကောက်ခံသည်။ ဒေါ်လာတစ်ခုလျှင် ฿33.71 ဖြင့် ฿0.015 နှင့် ฿0.30 ဖြစ်သည်။",
+    "zh": "假设一个回答用 3,000 个输入 token、300 个输出 token。Claude Haiku 5.5 收费 US$0.00045，Claude Sonnet 5.5 收费 US$0.009。按每美元 ฿33.71 折算，分别是 ฿0.015 和 ฿0.30。",
+    "de": "Angenommen, eine Antwort braucht 3,000 Eingabe-Tokens und 300 Ausgabe-Tokens. Claude Haiku 5.5 verlangt dafür US$0.00045, Claude Sonnet 5.5 US$0.009. Bei ฿33.71 pro Dollar sind das ฿0.015 und ฿0.30."
+   },
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  {
+   "q": {
+    "en": "Does any model run free?",
+    "th": "มีโมเดลที่ใช้ฟรีไหม",
+    "my": "အခမဲ့ အသုံးပြုနိုင်သော မော်ဒယ် ရှိသလား",
+    "zh": "有没有可以免费运行的模型",
+    "de": "Gibt es ein Modell, das gratis läuft?"
+   },
+   "a": {
+    "en": "Cloudflare Workers AI gives 10,000 Neurons a day at no charge. Above that, it charges US$0.011 per 1,000 Neurons on the Workers Paid plan.",
+    "th": "Cloudflare Workers AI ให้ใช้ฟรี 10,000 Neurons ต่อวัน ส่วนที่เกินคิด US$0.011 ต่อ 1,000 Neurons ในแผน Workers Paid",
+    "my": "Cloudflare Workers AI က တစ်နေ့လျှင် Neurons 10,000 ကို အခမဲ့ပေးသည်။ ထိုထက်ကျော်လျှင် Workers Paid အစီအစဉ်တွင် Neurons 1,000 လျှင် US$0.011 ကောက်ခံသည်။",
+    "zh": "Cloudflare Workers AI 每天免费提供 10,000 个 Neurons。超出部分在 Workers Paid 方案下每 1,000 个 Neurons 收费 US$0.011。",
+    "de": "Cloudflare Workers AI gibt 10,000 Neurons pro Tag kostenlos. Darüber verlangt es im Tarif Workers Paid US$0.011 pro 1,000 Neurons."
+   },
+   "src": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
+  {
+   "q": {
+    "en": "What does a white-label chatbot cost on other tools?",
+    "th": "แชตบอทแบบ white-label ในเครื่องมืออื่นราคาเท่าไหร่",
+    "my": "အခြားကိရိယာများတွင် white-label ချတ်ဘော့ ဘယ်လောက်ကျသလဲ",
+    "zh": "其他工具上的白标聊天机器人要多少钱",
+    "de": "Was kostet ein White-Label-Chatbot bei anderen Werkzeugen?"
+   },
+   "a": {
+    "en": "White-label means the tool shows your name, not the maker's. Chatbase charges US$99 a month to remove its \"Powered By Chatbase\" label on its Hobby, Basic and Business plans. It lists white-labelling as an Enterprise feature.",
+    "th": "White-label คือเครื่องมือแสดงชื่อของคุณ ไม่ใช่ชื่อของผู้ทำ Chatbase คิด US$99 ต่อเดือนเพื่อเอาป้าย \"Powered By Chatbase\" ออกในแผน Hobby, Basic และ Business และระบุ white-label เป็นฟีเจอร์ของแผน Enterprise",
+    "my": "White-label ဆိုသည်မှာ ကိရိယာက ပြုလုပ်သူ၏အမည်အစား သင့်အမည်ကို ပြခြင်း ဖြစ်သည်။ Chatbase သည် Hobby၊ Basic နှင့် Business အစီအစဉ်များတွင် \"Powered By Chatbase\" တံဆိပ်ကို ဖယ်ရှားရန် တစ်လ US$99 ကောက်ခံသည်။ White-label ကို Enterprise လုပ်ဆောင်ချက်အဖြစ် ဖော်ပြထားသည်။",
+    "zh": "白标（white-label）是指工具显示您的名字，而不是制作者的名字。Chatbase 在 Hobby、Basic、Business 方案上去掉 \"Powered By Chatbase\" 标识每月收费 US$99，并把白标列为 Enterprise 功能。",
+    "de": "White-Label heisst, das Werkzeug zeigt Ihren Namen statt den des Herstellers. Chatbase verlangt US$99 im Monat, um den Hinweis \"Powered By Chatbase\" in den Tarifen Hobby, Basic und Business zu entfernen. White-Label führt es als Funktion des Tarifs Enterprise."
+   },
+   "src": "https://www.chatbase.co/pricing"
+  },
+  {
+   "q": {
+    "en": "How does Zendesk charge for AI answers?",
+    "th": "Zendesk คิดค่าคำตอบของ AI อย่างไร",
+    "my": "Zendesk က AI အဖြေများအတွက် ဘယ်လို ကောက်ခံသလဲ",
+    "zh": "Zendesk 怎样为 AI 回答收费",
+    "de": "Wie rechnet Zendesk KI-Antworten ab?"
+   },
+   "a": {
+    "en": "Zendesk charges US$1.50 for each automated resolution on a committed plan and US$2.00 pay as you go. Its Suite Team plan costs US$55 per agent a month, billed yearly.",
+    "th": "Zendesk คิด US$1.50 ต่อการแก้ปัญหาอัตโนมัติหนึ่งครั้งในแผนผูกมัด และ US$2.00 แบบจ่ายตามการใช้ แผน Suite Team คิด US$55 ต่อเอเจนต์ต่อเดือน จ่ายรายปี",
+    "my": "Zendesk သည် ကတိကဝတ်ပါ အစီအစဉ်တွင် အလိုအလျောက် ဖြေရှင်းမှုတစ်ခုလျှင် US$1.50 နှင့် အသုံးပြုသလောက်ပေးလျှင် US$2.00 ကောက်ခံသည်။ Suite Team အစီအစဉ်သည် agent တစ်ဦးလျှင် တစ်လ US$55 ဖြစ်ပြီး နှစ်စဉ်ပေးချေရသည်။",
+    "zh": "Zendesk 在承诺用量方案下每次自动解决收费 US$1.50，按用量付费为 US$2.00。Suite Team 方案每位客服每月 US$55，按年付费。",
+    "de": "Zendesk verlangt US$1.50 pro automatischer Lösung im Tarif mit Zusage und US$2.00 nach Verbrauch. Der Tarif Suite Team kostet US$55 pro Agent und Monat, jährlich abgerechnet."
+   },
+   "src": "https://www.zendesk.com/pricing/"
+  },
+  {
+   "q": {
+    "en": "What does a person cost to answer messages?",
+    "th": "จ้างคนตอบข้อความราคาเท่าไหร่",
+    "my": "မက်ဆေ့ခ်ျများ ဖြေရန် လူတစ်ယောက်ကို ငှားလျှင် ဘယ်လောက်ကျသလဲ",
+    "zh": "请人回复消息要多少钱",
+    "de": "Was kostet eine Person, die Nachrichten beantwortet?"
+   },
+   "a": {
+    "en": "An OnlineJobs.ph guide lists customer-service assistants in the Philippines at US$3–5 an hour at the start, US$4–7 with 1 to 5 years of experience and US$6–8 with more than 5 years. Monthly, that is US$400–600, US$460–750 and US$700–900.",
+    "th": "คู่มือของ OnlineJobs.ph ระบุผู้ช่วยฝ่ายบริการลูกค้าในฟิลิปปินส์ที่ US$3–5 ต่อชั่วโมงสำหรับผู้เริ่มต้น US$4–7 สำหรับประสบการณ์ 1 ถึง 5 ปี และ US$6–8 สำหรับเกิน 5 ปี ต่อเดือนคือ US$400–600, US$460–750 และ US$700–900",
+    "my": "OnlineJobs.ph လမ်းညွှန်က ဖိလစ်ပိုင်ရှိ ဖောက်သည်ဝန်ဆောင်မှု လက်ထောက်များကို စတင်သူအတွက် တစ်နာရီ US$3–5၊ အတွေ့အကြုံ 1 နှစ်မှ 5 နှစ်အတွက် US$4–7 နှင့် 5 နှစ်ကျော်အတွက် US$6–8 ဟု ဖော်ပြသည်။ တစ်လလျှင် US$400–600၊ US$460–750 နှင့် US$700–900 ဖြစ်သည်။",
+    "zh": "OnlineJobs.ph 的指南列出菲律宾客服助理的时薪：入门 US$3–5，1 至 5 年经验 US$4–7，5 年以上 US$6–8。月薪分别是 US$400–600、US$460–750 和 US$700–900。",
+    "de": "Ein Leitfaden von OnlineJobs.ph nennt für Kundendienst-Assistenzen auf den Philippinen US$3–5 pro Stunde am Anfang, US$4–7 mit 1 bis 5 Jahren Erfahrung und US$6–8 mit mehr als 5 Jahren. Im Monat sind das US$400–600, US$460–750 und US$700–900."
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  }
+ ],
+ "related": [
+  "ai-line",
+  "bots",
+  "ai-own",
+  "cs-desk",
+  "assistant",
+  "redteam"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Ask Mot Dang, a public assistant",
+    "th": "ถามมดแดง ผู้ช่วยสาธารณะ",
+    "my": "Ask Mot Dang၊ အများသုံး လက်ထောက်",
+    "zh": "问 Mot Dang，一个公开的助手",
+    "de": "Ask Mot Dang, ein öffentlicher Assistent"
+   },
+   "href": "https://ask.motdang.net/"
+  },
+  {
+   "t": {
+    "en": "Anthropic's model pricing page",
+    "th": "หน้าราคาโมเดลของ Anthropic",
+    "my": "Anthropic ၏ မော်ဒယ်စျေးနှုန်း စာမျက်နှာ",
+    "zh": "Anthropic 的模型价格页",
+    "de": "Die Preisseite von Anthropic für Modelle"
+   },
+   "href": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  {
+   "t": {
+    "en": "Cloudflare's Workers AI pricing page",
+    "th": "หน้าราคา Workers AI ของ Cloudflare",
+    "my": "Cloudflare ၏ Workers AI စျေးနှုန်း စာမျက်နှာ",
+    "zh": "Cloudflare 的 Workers AI 价格页",
+    "de": "Die Preisseite von Cloudflare für Workers AI"
+   },
+   "href": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
+  {
+   "t": {
+    "en": "Intercom's pricing page",
+    "th": "หน้าราคาของ Intercom",
+    "my": "Intercom ၏ စျေးနှုန်း စာမျက်နှာ",
+    "zh": "Intercom 的价格页",
+    "de": "Die Preisseite von Intercom"
+   },
+   "href": "https://www.intercom.com/pricing"
+  }
+ ]
+}

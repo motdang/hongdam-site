@@ -1,0 +1,316 @@
+{
+ "id": "trade-photos",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "Customers choose from pictures on Grab, Shopee and shop pages, and each place asks for its own size and background.",
+  "th": "ลูกค้าเลือกซื้อจากรูปบน Grab, Shopee และหน้าร้าน และแต่ละที่กำหนดขนาดและพื้นหลังของตัวเอง",
+  "my": "ဖောက်သည်များသည် Grab၊ Shopee နှင့် ဆိုင်စာမျက်နှာများပေါ်ရှိ ပုံများကို ကြည့်၍ ရွေးကြပြီး နေရာတစ်ခုစီတွင် ပုံအရွယ်အစားနှင့် နောက်ခံ ကိုယ်စီသတ်မှတ်ထားသည်။",
+  "zh": "顾客看 Grab、Shopee 和店铺页面上的图片来挑选，而每个平台对尺寸和背景各有要求。",
+  "de": "Kundinnen und Kunden wählen auf Grab, Shopee und Shop-Seiten nach den Bildern aus, und jeder Ort stellt eigene Anforderungen an Grösse und Hintergrund."
+ },
+ "n": {
+  "de": "Produktfotos"
+ },
+ "l": {
+  "de": "Drei Bilder pro Artikel, für Grab, Shopee oder Ihre Website."
+ },
+ "steps": [
+  {
+   "db": "camera",
+   "t": {
+    "en": "Each item is photographed on a plain background.",
+    "th": "ถ่ายรูปสินค้าแต่ละชิ้นบนพื้นหลังเรียบ",
+    "my": "ကုန်ပစ္စည်းတစ်ခုချင်းကို ရိုးရိုးနောက်ခံပေါ်တွင် ဓာတ်ပုံရိုက်သည်။",
+    "zh": "每件商品在素色背景上拍摄。",
+    "de": "Jeder Artikel wird auf einem schlichten Hintergrund fotografiert."
+   },
+   "who": {
+    "en": "Hongdam, with you",
+    "th": "หงส์ดำ ร่วมกับคุณ",
+    "my": "ဟုန်ဒမ်၊ သင်နှင့်အတူ",
+    "zh": "鸿丹，与您一起",
+    "de": "Hongdam, gemeinsam mit Ihnen"
+   },
+   "time": {
+    "en": "Per item",
+    "th": "ชิ้นละ",
+    "my": "ပစ္စည်းတစ်ခုလျှင်",
+    "zh": "每件",
+    "de": "Je Artikel"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "Three pictures are made of each item.",
+    "th": "ทำรูปสามรูปต่อสินค้าหนึ่งชิ้น",
+    "my": "ပစ္စည်းတစ်ခုစီအတွက် ပုံသုံးပုံ ပြုလုပ်သည်။",
+    "zh": "每件商品做出三张图。",
+    "de": "Von jedem Artikel entstehen drei Bilder."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per item",
+    "th": "ชิ้นละ",
+    "my": "ပစ္စည်းတစ်ခုလျှင်",
+    "zh": "每件",
+    "de": "Je Artikel"
+   }
+  },
+  {
+   "db": "earth",
+   "t": {
+    "en": "The pictures are ready for Grab, Shopee, Etsy, eBay or your own site.",
+    "th": "รูปพร้อมลงบน Grab, Shopee, Etsy, eBay หรือเว็บของคุณ",
+    "my": "ပုံများသည် Grab၊ Shopee၊ Etsy၊ eBay သို့မဟုတ် သင့်ကိုယ်ပိုင်ဝဘ်ဆိုက်တွင် တင်ရန် အဆင်သင့်ဖြစ်သည်။",
+    "zh": "图片可直接用于 Grab、Shopee、Etsy、eBay 或您自己的网站。",
+    "de": "Die Bilder sind bereit für Grab, Shopee, Etsy, eBay oder Ihre eigene Seite."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When the items are done",
+    "th": "เมื่อถ่ายครบทุกชิ้น",
+    "my": "ပစ္စည်းများ ပြီးသည့်အခါ",
+    "zh": "全部拍完后",
+    "de": "Wenn die Artikel fertig sind"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Shopee's ads help page says product images are at least 1024 × 1024 pixels and square, with a clean cover picture on a white background, and the product fills more than half the image. Images that are too dark, watermarks, added text and parts that are not for sale are on its list of things to leave out.",
+    "th": "หน้าช่วยเหลือโฆษณาของ Shopee ระบุขนาดรูปสินค้าไม่ต่ำกว่า 1024 x 1024 พิกเซล เป็นรูปสี่เหลี่ยมจัตุรัส ภาพปกสะอาดตาบนพื้นหลังสีขาว และให้สินค้าใหญ่กว่า 50% ของภาพ รูปที่มืดเกินไป ลายน้ำ ตัวหนังสือที่ใส่เพิ่ม และชิ้นส่วนที่ไม่เกี่ยวกับการขาย อยู่ในรายการสิ่งที่เว้นไว้",
+    "my": "Shopee ၏ ကြော်ငြာအကူအညီစာမျက်နှာတွင် ကုန်ပစ္စည်းပုံများသည် အနည်းဆုံး 1024 × 1024 ပီဇယ်ရှိပြီး လေးထောင့်ပုံစံဖြစ်ရမည်၊ မျက်နှာဖုံးပုံသည် အဖြူနောက်ခံဖြင့် သန့်ရှင်းရမည်ဟု ဆိုသည်။ ကုန်ပစ္စည်းသည် ပုံ၏ တစ်ဝက်ထက် ပိုကျယ်ရမည်။ မှောင်လွန်းသောပုံ၊ ရေစာလုံး၊ ထပ်ထည့်သောစာသားနှင့် မရောင်းသော အစိတ်အပိုင်းများကို ချန်ထားရမည့်စာရင်းတွင် ဖော်ပြသည်။",
+    "zh": "Shopee 广告帮助页面写明，商品图至少 1024 × 1024 像素、为正方形，封面图干净、白底，商品占画面一半以上。页面把太暗的图、水印、额外加的文字和不属于商品的部件列为不用的内容。",
+    "de": "Die Anzeigen-Hilfeseite von Shopee nennt für Produktbilder mindestens 1024 × 1024 Pixel und ein quadratisches Format, ein sauberes Titelbild auf weissem Hintergrund und ein Produkt, das mehr als die Hälfte des Bildes füllt. Zu dunkle Bilder, Wasserzeichen, zusätzlicher Text und nicht zum Verkauf gehörende Teile stehen auf der Liste dessen, was wegbleibt."
+   },
+   "src": "https://ads.shopee.co.th/learn/faq/73/59"
+  },
+  {
+   "t": {
+    "en": "Grab's guide to setting up a menu says that the better and more appealing the food photos are, the more they affect a customer's choice, and that creating menu items is essential to selling food on the app.",
+    "th": "คู่มือตั้งค่าเมนูของ Grab ระบุว่ายิ่งมีรูปอาหารที่ดีและน่าสนใจมาก ก็ยิ่งส่งผลต่อการตัดสินใจเลือกซื้อของลูกค้า และการสร้างรายการอาหารเป็นสิ่งสำคัญอย่างยิ่งสำหรับการขายอาหารบนแอป",
+    "my": "Grab ၏ မီနူးသတ်မှတ်ခြင်းလမ်းညွှန်တွင် ကောင်းမွန်ဆွဲဆောင်မှုရှိသော အစားအစာပုံများ ပိုများလေ ဖောက်သည်၏ ရွေးချယ်မှုကို ပိုသက်ရောက်လေဖြစ်ပြီး မီနူးပစ္စည်းများ ဖန်တီးခြင်းသည် အက်ပ်ပေါ်တွင် အစားအစာရောင်းရန် မရှိမဖြစ် လိုအပ်သည်ဟု ဆိုသည်။",
+    "zh": "Grab 的菜单设置指南写明，菜单上好看、有吸引力的食物照片越多，对顾客的选择影响越大；建立菜单项是在应用上卖餐食的必要一步。",
+    "de": "Die Anleitung von Grab zum Einrichten einer Speisekarte schreibt, je besser und ansprechender die Essensfotos seien, desto stärker beeinflussten sie die Wahl der Gäste, und das Anlegen der Menüpunkte sei für den Verkauf von Essen in der App unerlässlich."
+   },
+   "src": "https://merchant.grab.com/th-th/guides/step-2-manage-your-store/setup-your-menu"
+  },
+  {
+   "t": {
+    "en": "A Wongnai page dated 20 May 2020 lists 1000 × 1000 pixels for a menu item photo on LINE MAN and 1200 × 600 pixels for a LINE MAN restaurant cover.",
+    "th": "หน้าของ Wongnai ลงวันที่ 20 พฤษภาคม 2563 ระบุรูปเมนูบน LINE MAN ขนาด 1000 x 1000 พิกเซล และภาพปกร้านบน LINE MAN ขนาด 1200 x 600 พิกเซล",
+    "my": "2020 ခုနှစ် မေလ 20 ရက်စွဲ Wongnai စာမျက်နှာတွင် LINE MAN ပေါ်ရှိ မီနူးပစ္စည်းပုံအတွက် 1000 × 1000 ပီဇယ်နှင့် LINE MAN ဆိုင်မျက်နှာဖုံးအတွက် 1200 × 600 ပီဇယ် ဖော်ပြသည်။",
+    "zh": "Wongnai 一页（日期为 2020 年 5 月 20 日）列出：LINE MAN 上菜品照片 1000 × 1000 像素，LINE MAN 餐厅封面 1200 × 600 像素。",
+    "de": "Eine Wongnai-Seite vom 20. Mai 2020 nennt für ein Menüfoto auf LINE MAN 1000 × 1000 Pixel und für das Titelbild eines Lokals auf LINE MAN 1200 × 600 Pixel."
+   },
+   "src": "https://www.wongnai.com/business-owners/picture-size-social-media-platform"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Product photos on a white or coloured background, 10 photos, from a Fastwork photographer",
+    "th": "รูปสินค้าพื้นหลังขาวหรือสี 10 รูป จากช่างภาพบน Fastwork",
+    "my": "Fastwork ဓာတ်ပုံဆရာတစ်ဦးထံမှ အဖြူ သို့မဟုတ် အရောင်နောက်ခံ ကုန်ပစ္စည်းပုံ 10 ပုံ",
+    "zh": "Fastwork 摄影师的白底或彩色背景商品图，10 张",
+    "de": "Produktfotos auf weissem oder farbigem Hintergrund, 10 Fotos, von einem Fotografen auf Fastwork"
+   },
+   "p": {
+    "en": "฿1,590, 5 days, 2 revisions; ฿2,990 with simple props",
+    "th": "฿1,590 5 วัน แก้ไข 2 ครั้ง; ฿2,990 พร้อมพร็อพง่ายๆ",
+    "my": "฿1,590၊ 5 ရက်၊ ပြင်ဆင်မှု 2 ကြိမ်၊ ရိုးရိုးပစ္စည်းများပါလျှင် ฿2,990",
+    "zh": "฿1,590，5 天，修改 2 次；加简单道具 ฿2,990",
+    "de": "฿1,590, 5 Tage, 2 Überarbeitungen; mit einfachen Requisiten ฿2,990"
+   },
+   "src": "https://fastwork.co/user/jamesxo55/photography-63270323"
+  },
+  {
+   "t": {
+    "en": "Product photos, 15 to 30 photos, another Fastwork photographer",
+    "th": "รูปสินค้า 15–30 รูป จากช่างภาพอีกรายบน Fastwork",
+    "my": "နောက် Fastwork ဓာတ်ပုံဆရာတစ်ဦးထံမှ ကုန်ပစ္စည်းပုံ 15 မှ 30 ပုံ",
+    "zh": "另一位 Fastwork 摄影师的商品图，15 至 30 张",
+    "de": "Produktfotos, 15 bis 30 Fotos, ein anderer Fotograf auf Fastwork"
+   },
+   "p": {
+    "en": "฿1,500 for 15, ฿1,900 for 20, ฿2,500 for 30; props extra; 3 days",
+    "th": "15 รูป ฿1,500 20 รูป ฿1,900 30 รูป ฿2,500 พร็อพคิดเพิ่ม 3 วัน",
+    "my": "15 ပုံ ฿1,500၊ 20 ပုံ ฿1,900၊ 30 ပုံ ฿2,500၊ ပစ္စည်းများ ထပ်ဆောင်း၊ 3 ရက်",
+    "zh": "15 张 ฿1,500，20 张 ฿1,900，30 张 ฿2,500；道具另计；3 天",
+    "de": "฿1,500 für 15, ฿1,900 für 20, ฿2,500 für 30; Requisiten extra; 3 Tage"
+   },
+   "src": "https://fastwork.co/user/alihona/photography-61297533"
+  },
+  {
+   "t": {
+    "en": "Menu photos edited: lighting, colour, retouching and cropping of 5 photos",
+    "th": "แต่งรูปเมนู 5 รูป: แสง สี รีทัช และครอป",
+    "my": "မီနူးပုံ 5 ပုံ ပြင်ဆင်ခြင်း — အလင်း၊ အရောင်၊ ပြုပြင်ခြင်းနှင့် ဖြတ်တောက်ခြင်း",
+    "zh": "修 5 张菜单照片：光线、色彩、修图和裁剪",
+    "de": "Menüfotos bearbeitet: Licht, Farbe, Retusche und Zuschnitt von 5 Fotos"
+   },
+   "p": {
+    "en": "฿999, 2 days",
+    "th": "฿999 2 วัน",
+    "my": "฿999၊ 2 ရက်",
+    "zh": "฿999，2 天",
+    "de": "฿999, 2 Tage"
+   },
+   "src": "https://fastwork.co/user/nawaaek/shop-registration-and-listing-63891112"
+  },
+  {
+   "t": {
+    "en": "A photographer on location: product, food or fashion, with studio lights and a stylist",
+    "th": "ช่างภาพนอกสถานที่: สินค้า อาหาร หรือแฟชั่น พร้อมไฟสตูดิโอและสไตลิสต์",
+    "my": "ဓာတ်ပုံဆရာ နေရာတွင် — ကုန်ပစ္စည်း၊ အစားအစာ သို့မဟုတ် ဖက်ရှင်၊ စတူဒီယိုမီးများနှင့် စတိုင်လစ်ပါ",
+    "zh": "摄影师上门拍摄：商品、食物或服饰，带影棚灯和造型师",
+    "de": "Fotograf vor Ort: Produkt, Essen oder Mode, mit Studiolicht und Stylist"
+   },
+   "p": {
+    "en": "฿8,900 for a half day (4–5 hours), ฿14,900 for a full day",
+    "th": "฿8,900 ครึ่งวัน (4–5 ชั่วโมง) ฿14,900 เต็มวัน",
+    "my": "တစ်ဝက်နေ့ (4–5 နာရီ) ฿8,900၊ တစ်နေ့လုံး ฿14,900",
+    "zh": "半天（4–5 小时）฿8,900；全天 ฿14,900",
+    "de": "฿8,900 für einen halben Tag (4–5 Stunden), ฿14,900 für einen ganzen Tag"
+   },
+   "src": "https://fastwork.co/user/alihona/photography-61297533"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What size should product pictures be for Shopee?",
+    "th": "รูปสินค้าบน Shopee ใช้ขนาดเท่าไร",
+    "my": "Shopee အတွက် ကုန်ပစ္စည်းပုံ အရွယ်အစား ဘယ်လောက်လဲ။",
+    "zh": "Shopee 的商品图要多大？",
+    "de": "Wie gross sind Produktbilder für Shopee?"
+   },
+   "a": {
+    "en": "Shopee's ads help page lists at least 1024 × 1024 pixels in a square, with the cover picture on a white background and the product filling more than half the frame. The page carries only a 2021 copyright line and no date for the guide.",
+    "th": "หน้าช่วยเหลือโฆษณาของ Shopee ระบุอย่างน้อย 1024 x 1024 พิกเซลแบบสี่เหลี่ยมจัตุรัส ภาพปกบนพื้นหลังสีขาว และสินค้าใหญ่กว่าครึ่งของภาพ หน้านี้มีเพียงบรรทัดลิขสิทธิ์ปี 2564 และไม่ระบุวันที่ของคู่มือ",
+    "my": "Shopee ၏ ကြော်ငြာအကူအညီစာမျက်နှာတွင် အနည်းဆုံး 1024 × 1024 ပီဇယ် လေးထောင့်ပုံစံ၊ မျက်နှာဖုံးပုံကို အဖြူနောက်ခံပေါ်တွင်နှင့် ကုန်ပစ္စည်းသည် ပုံ၏ တစ်ဝက်ထက်ပို ကျယ်ရမည်ဟု ဖော်ပြသည်။ စာမျက်နှာတွင် 2021 မူပိုင်ခွင့်စာကြောင်းသာ ပါပြီး လမ်းညွှန်၏ ရက်စွဲ မပါပါ။",
+    "zh": "Shopee 广告帮助页面写明至少 1024 × 1024 像素的正方形，封面图用白底，商品占画面一半以上。该页面只有 2021 年的版权行，没有注明指南的日期。",
+    "de": "Die Anzeigen-Hilfeseite von Shopee nennt mindestens 1024 × 1024 Pixel im Quadrat, das Titelbild auf weissem Hintergrund und das Produkt mit mehr als dem halben Bild. Die Seite trägt nur eine Copyright-Zeile von 2021 und kein Datum für die Anleitung."
+   },
+   "src": "https://ads.shopee.co.th/learn/faq/73/59"
+  },
+  {
+   "q": {
+    "en": "What size are menu photos for LINE MAN?",
+    "th": "รูปเมนูบน LINE MAN ขนาดเท่าไร",
+    "my": "LINE MAN အတွက် မီနူးပုံ အရွယ်အစား ဘယ်လောက်လဲ။",
+    "zh": "LINE MAN 的菜单照片尺寸是多少？",
+    "de": "Wie gross sind Menüfotos für LINE MAN?"
+   },
+   "a": {
+    "en": "A Wongnai page dated 20 May 2020 lists 1000 × 1000 pixels for a menu item photo on LINE MAN and 1200 × 600 pixels for the restaurant's cover. The same page gives sizes for Facebook and Instagram posts.",
+    "th": "หน้าของ Wongnai ลงวันที่ 20 พฤษภาคม 2563 ระบุรูปเมนูบน LINE MAN ขนาด 1000 x 1000 พิกเซล และภาพปกร้านขนาด 1200 x 600 พิกเซล หน้าเดียวกันยังให้ขนาดรูปโพสต์บน Facebook และ Instagram",
+    "my": "2020 ခုနှစ် မေလ 20 ရက်စွဲ Wongnai စာမျက်နှာတွင် LINE MAN ပေါ်ရှိ မီနူးပစ္စည်းပုံအတွက် 1000 × 1000 ပီဇယ်နှင့် ဆိုင်မျက်နှာဖုံးအတွက် 1200 × 600 ပီဇယ် ဖော်ပြသည်။ ထိုစာမျက်နှာတွင် Facebook နှင့် Instagram ပို့စ်များအတွက် အရွယ်အစားများလည်း ပါသည်။",
+    "zh": "Wongnai 一页（日期为 2020 年 5 月 20 日）列出：LINE MAN 上菜品照片 1000 × 1000 像素，餐厅封面 1200 × 600 像素。同一页还给出 Facebook 和 Instagram 帖子的尺寸。",
+    "de": "Eine Wongnai-Seite vom 20. Mai 2020 nennt für ein Menüfoto auf LINE MAN 1000 × 1000 Pixel und für das Titelbild des Lokals 1200 × 600 Pixel. Dieselbe Seite gibt Grössen für Beiträge auf Facebook und Instagram an."
+   },
+   "src": "https://www.wongnai.com/business-owners/picture-size-social-media-platform"
+  },
+  {
+   "q": {
+    "en": "How much does a product photographer charge on Fastwork?",
+    "th": "ช่างภาพสินค้าบน Fastwork คิดราคาเท่าไร",
+    "my": "Fastwork ရှိ ကုန်ပစ္စည်းဓာတ်ပုံဆရာက ဘယ်လောက်ယူသနည်း။",
+    "zh": "Fastwork 上的商品摄影师收多少钱？",
+    "de": "Was verlangt ein Produktfotograf auf Fastwork?"
+   },
+   "a": {
+    "en": "One Fastwork photographer lists 10 photos on a white or coloured background for ฿1,590 in 5 days, with 2 revisions and retouched JPG files. Simple props make it ฿2,990, and custom props and lighting start at ฿4,990 in 7 days.",
+    "th": "ช่างภาพบน Fastwork รายหนึ่งระบุรูป 10 รูปบนพื้นหลังขาวหรือสี ฿1,590 ใน 5 วัน แก้ไข 2 ครั้ง ไฟล์ JPG รีทัชแล้ว พร็อพง่ายๆ เป็น ฿2,990 และพร็อพกับไฟแบบกำหนดเองเริ่ม ฿4,990 ใน 7 วัน",
+    "my": "Fastwork ဓာတ်ပုံဆရာတစ်ဦးသည် အဖြူ သို့မဟုတ် အရောင်နောက်ခံပေါ်ရှိ ပုံ 10 ပုံကို 5 ရက်အတွင်း ฿1,590၊ ပြင်ဆင်မှု 2 ကြိမ်နှင့် ပြုပြင်ပြီး JPG ဖိုင်များဖြင့် ဖော်ပြသည်။ ရိုးရိုးပစ္စည်းများပါလျှင် ฿2,990 ဖြစ်ပြီး စိတ်ကြိုက်ပစ္စည်းနှင့် အလင်းရောင်မှာ 7 ရက်အတွင်း ฿4,990 မှ စသည်။",
+    "zh": "一位 Fastwork 摄影师为白底或彩色背景的 10 张照片标价 ฿1,590，5 天交付，含 2 次修改和修过的 JPG 文件。加简单道具为 ฿2,990，定制道具和灯光 ฿4,990 起，7 天。",
+    "de": "Ein Fotograf auf Fastwork führt 10 Fotos auf weissem oder farbigem Hintergrund für ฿1,590 in 5 Tagen auf, mit 2 Überarbeitungen und retuschierten JPG-Dateien. Mit einfachen Requisiten sind es ฿2,990, und individuelle Requisiten mit Beleuchtung beginnen bei ฿4,990 in 7 Tagen."
+   },
+   "src": "https://fastwork.co/user/jamesxo55/photography-63270323"
+  },
+  {
+   "q": {
+    "en": "Do food photos matter on Grab?",
+    "th": "รูปอาหารสำคัญบน Grab หรือไม่",
+    "my": "Grab တွင် အစားအစာပုံများ အရေးပါပါသလား။",
+    "zh": "食物照片在 Grab 上重要吗？",
+    "de": "Spielen Essensfotos auf Grab eine Rolle?"
+   },
+   "a": {
+    "en": "Grab's guide to setting up a menu says the better and more appealing the food photos are, the more they affect what customers choose. It adds that creating menu items is essential for selling food on the app.",
+    "th": "คู่มือตั้งค่าเมนูของ Grab ระบุว่ายิ่งรูปอาหารดีและน่าสนใจ ก็ยิ่งส่งผลต่อการตัดสินใจเลือกซื้อของลูกค้า และระบุว่าการสร้างรายการอาหารเป็นสิ่งสำคัญอย่างยิ่งสำหรับการขายอาหารบนแอป",
+    "my": "Grab ၏ မီနူးသတ်မှတ်ခြင်းလမ်းညွှန်တွင် အစားအစာပုံများ ပိုကောင်းပြီး ပိုဆွဲဆောင်မှုရှိလေ ဖောက်သည်များ၏ ရွေးချယ်မှုကို ပိုသက်ရောက်လေဖြစ်သည်ဟု ဆိုသည်။ မီနူးပစ္စည်းများ ဖန်တီးခြင်းသည် အက်ပ်ပေါ်တွင် အစားအစာရောင်းရန် မရှိမဖြစ်လိုအပ်ကြောင်းလည်း ထပ်ဆိုသည်။",
+    "zh": "Grab 的菜单设置指南写明，食物照片越好、越有吸引力，对顾客的选择影响越大；并说建立菜单项是在应用上卖餐食的必要一步。",
+    "de": "Die Anleitung von Grab zum Einrichten einer Speisekarte schreibt, je besser und ansprechender die Essensfotos seien, desto stärker beeinflussten sie, was die Gäste wählen. Das Anlegen der Menüpunkte sei für den Verkauf von Essen in der App unerlässlich."
+   },
+   "src": "https://merchant.grab.com/th-th/guides/step-2-manage-your-store/setup-your-menu"
+  },
+  {
+   "q": {
+    "en": "Can someone edit the photos I already have?",
+    "th": "แต่งรูปที่มีอยู่แล้วได้ไหม",
+    "my": "ကျွန်ုပ်တွင် ရှိပြီးသား ပုံများကို တစ်ယောက်ယောက်က ပြင်ပေးနိုင်ပါသလား။",
+    "zh": "已有的照片能找人修吗？",
+    "de": "Kann jemand Fotos bearbeiten, die ich schon habe?"
+   },
+   "a": {
+    "en": "A Fastwork listing for delivery-app shops offers a menu photo package: 5 menu photos edited for lighting, colour, retouching and cropping, delivered as JPG or PNG for ฿999 in 2 days.",
+    "th": "ฟรีแลนซ์บน Fastwork ที่รับเปิดร้านบนแอปเดลิเวอรี่มีแพ็กเกจรูปเมนู แต่ง 5 รูปเรื่องแสง สี รีทัช และครอป ส่งเป็น JPG หรือ PNG ราคา ฿999 ใน 2 วัน",
+    "my": "ပို့ဆောင်ရေးအက်ပ်ဆိုင်များအတွက် Fastwork စာမျက်နှာတစ်ခုတွင် မီနူးပုံအစီအစဉ်ရှိသည် — မီနူးပုံ 5 ပုံကို အလင်း၊ အရောင်၊ ပြုပြင်ခြင်းနှင့် ဖြတ်တောက်ခြင်း ပြင်ပြီး JPG သို့မဟုတ် PNG ဖြင့် 2 ရက်အတွင်း ฿999 ဖြင့် ပို့သည်။",
+    "zh": "Fastwork 上一个面向外卖应用店铺的服务有菜单照片套餐：修 5 张菜单照片的光线、色彩、修图和裁剪，以 JPG 或 PNG 交付，฿999，2 天。",
+    "de": "Eine Anzeige auf Fastwork für Läden auf Lieferdienst-Apps bietet ein Menüfoto-Paket: 5 Menüfotos mit bearbeitetem Licht, bearbeiteter Farbe, Retusche und Zuschnitt, als JPG oder PNG für ฿999 in 2 Tagen."
+   },
+   "src": "https://fastwork.co/user/nawaaek/shop-registration-and-listing-63891112"
+  }
+ ],
+ "related": [
+  "grab",
+  "etsy",
+  "online-shop",
+  "fb-care",
+  "ads-run",
+  "graphics"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Grab: setting up your menu and its photos",
+    "th": "Grab: การตั้งค่าเมนูและรูปอาหาร",
+    "my": "Grab: မီနူးနှင့် ၎င်း၏ပုံများ သတ်မှတ်ခြင်း",
+    "zh": "Grab：设置菜单和菜单照片",
+    "de": "Grab: Speisekarte und Fotos einrichten"
+   },
+   "href": "https://merchant.grab.com/th-th/guides/step-2-manage-your-store/setup-your-menu"
+  },
+  {
+   "t": {
+    "en": "Shopee: product picture guide for ads",
+    "th": "Shopee: คู่มือรูปสินค้าสำหรับโฆษณา",
+    "my": "Shopee: ကြော်ငြာအတွက် ကုန်ပစ္စည်းပုံ လမ်းညွှန်",
+    "zh": "Shopee：广告商品图指南",
+    "de": "Shopee: Leitfaden für Produktbilder in Anzeigen"
+   },
+   "href": "https://ads.shopee.co.th/learn/faq/73/59"
+  }
+ ],
+ "glyphs": [
+  "camera",
+  "parcel",
+  "cart"
+ ]
+}

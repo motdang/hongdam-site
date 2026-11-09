@@ -1,0 +1,313 @@
+{
+ "id": "staff-papers",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "An employer taking on one person or a team wants a written contract and a monthly payslip, in Thai for the staff and English for the owner.",
+  "th": "นายจ้างที่จ้างพนักงานหนึ่งคนหรือทั้งทีมอยากได้สัญญาจ้างเป็นลายลักษณ์อักษรและสลิปเงินเดือนทุกเดือน เป็นภาษาไทยสำหรับพนักงานและภาษาอังกฤษสำหรับเจ้าของ",
+  "my": "တစ်ဦး သို့မဟုတ် အဖွဲ့လိုက် ခန့်အပ်သော အလုပ်ရှင်သည် ဝန်ထမ်းအတွက် ထိုင်းဘာသာ၊ ပိုင်ရှင်အတွက် အင်္ဂလိပ်ဘာသာဖြင့် စာချုပ်နှင့် လစဉ်လစာစလစ်ကို ရေးသားထားစေလိုသည်။",
+  "zh": "雇一个人或一支团队的雇主，想要一份书面合同和每月的工资单，泰文给员工看，英文给老板看。",
+  "de": "Wer eine Person oder ein Team anstellt, möchte einen schriftlichen Vertrag und monatliche Lohnabrechnungen, auf Thai für die Mitarbeitenden und auf Englisch für den Inhaber."
+ },
+ "glyphs": [
+  "stamp",
+  "page",
+  "coin"
+ ],
+ "steps": [
+  {
+   "db": "pencil",
+   "t": {
+    "en": "We fill in the contract template for one employee, in Thai and English.",
+    "th": "กรอกแม่แบบสัญญาจ้างสำหรับพนักงานหนึ่งคน เป็นภาษาไทยและอังกฤษ",
+    "my": "ဝန်ထမ်းတစ်ဦးအတွက် စာချုပ်နမူနာပုံစံကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ဖြည့်သွင်းပေးသည်။",
+    "zh": "按模板为一名员工填好泰英双语合同。",
+    "de": "Wir füllen die Vertragsvorlage für einen Mitarbeiter aus, auf Thai und Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you pay",
+    "th": "หลังชำระเงิน",
+    "my": "ငွေပေးချေပြီးနောက်",
+    "zh": "付款之后",
+    "de": "Nach der Zahlung"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "We make a payslip for each person each month, in Thai and English.",
+    "th": "ทำสลิปเงินเดือนของแต่ละคนทุกเดือน เป็นภาษาไทยและอังกฤษ",
+    "my": "လစဉ် တစ်ဦးချင်းစီအတွက် လစာစလစ်ကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ပြုလုပ်ပေးသည်။",
+    "zh": "每月为每人做一份泰英双语工资单。",
+    "de": "Wir erstellen jeden Monat für jede Person eine Lohnabrechnung, auf Thai und Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Each month",
+    "th": "ทุกเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Jeden Monat"
+   }
+  },
+  {
+   "db": "stamp",
+   "t": {
+    "en": "A lawyer's review of the contract is separate.",
+    "th": "การตรวจสัญญาโดยทนายแยกต่างหาก",
+    "my": "ရှေ့နေ၏ စာချုပ်သုံးသပ်ချက်ကို သီးခြားလုပ်ဆောင်သည်။",
+    "zh": "律师审阅合同另算。",
+    "de": "Die Prüfung des Vertrags durch einen Anwalt ist getrennt."
+   },
+   "who": {
+    "en": "A lawyer",
+    "th": "ทนาย",
+    "my": "ရှေ့နေ",
+    "zh": "律师",
+    "de": "Ein Anwalt"
+   },
+   "time": {
+    "en": "If you want one",
+    "th": "ถ้าต้องการ",
+    "my": "လိုလျှင်",
+    "zh": "需要时",
+    "de": "Wenn Sie möchten"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Labor Protection Act (Council of State translation, 2008) defines an employment contract as a contract made in writing or orally in which a person agrees to work for another, who agrees to pay wages for the work.",
+    "th": "พระราชบัญญัติคุ้มครองแรงงาน (ฉบับแปลของสำนักงานคณะกรรมการกฤษฎีกา ปี 2551) นิยามสัญญาจ้างว่าเป็นสัญญาที่ทำเป็นหนังสือหรือด้วยวาจา ซึ่งบุคคลหนึ่งตกลงทำงานให้อีกฝ่าย และอีกฝ่ายตกลงจ่ายค่าจ้างเป็นการตอบแทน",
+    "my": "အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေ (ဥပဒေကောင်စီ Council of State ၏ 2008 ဘာသာပြန်) က အလုပ်ခန့်အပ်စာချုပ်ကို စာဖြင့်ဖြစ်စေ နှုတ်ဖြင့်ဖြစ်စေ ပြုလုပ်သည့် စာချုပ်အဖြစ် အဓိပ္ပာယ်ဖွင့်ဆိုထားပြီး တစ်ဦးက အခြားတစ်ဦးအတွက် အလုပ်လုပ်ရန်နှင့် အခြားတစ်ဦးက လုပ်အားခပေးရန် သဘောတူသည်။",
+    "zh": "《劳动保护法》（国务委员会 Council of State 2008 年英译本）把雇佣合同界定为书面或口头订立的合同：一方同意为另一方工作，另一方同意为此支付工资。",
+    "de": "Das Labor Protection Act (Gesetz zum Schutz der Arbeitnehmer, englische Übersetzung des Council of State, 2008) definiert den Arbeitsvertrag als schriftlich oder mündlich geschlossenen Vertrag, in dem eine Person zusagt, für eine andere zu arbeiten, und diese zusagt, dafür Lohn zu zahlen."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "Tilleke & Gibbins writes that Thai law does not require a written employment contract or one in Thai. It mentions bilingual provisions as an option for a Thai employee who reads English poorly.",
+    "th": "Tilleke & Gibbins ระบุว่ากฎหมายไทยไม่บังคับให้สัญญาจ้างต้องเป็นลายลักษณ์อักษรหรือเป็นภาษาไทย บทความกล่าวถึงข้อความสองภาษาเป็นทางเลือกสำหรับลูกจ้างไทยที่อ่านอังกฤษได้ไม่ดี",
+    "my": "Tilleke & Gibbins က ထိုင်းဥပဒေသည် အလုပ်ခန့်အပ်စာချုပ်ကို စာဖြင့်ရေးရန် သို့မဟုတ် ထိုင်းဘာသာဖြင့်ရေးရန် မလိုအပ်ကြောင်း ရေးသားသည်။ အင်္ဂလိပ်စာ ကောင်းစွာမဖတ်တတ်သော ထိုင်းဝန်ထမ်းအတွက် နှစ်ဘာသာပါဝင်သော စာပိုဒ်များကို ရွေးချယ်စရာအဖြစ် ဖော်ပြသည်။",
+    "zh": "Tilleke & Gibbins 写道，泰国法律不要求雇佣合同必须是书面的，也不要求用泰文。文章提到，对英文读得不好的泰国员工，可以采用双语条款。",
+    "de": "Tilleke & Gibbins schreibt, das thailändische Recht verlange weder einen schriftlichen Arbeitsvertrag noch einen auf Thai. Der Beitrag nennt zweisprachige Klauseln als Möglichkeit für thailändische Angestellte mit schwachem Englisch."
+   },
+   "src": "https://www.tilleke.com/insights/important-considerations-employment-contracts-under-thai-law/"
+  },
+  {
+   "t": {
+    "en": "In the Labor Protection Act, a contract with a set period ends when the period ends, with no notice. With no set period, either side ends it by written notice given on or before a pay date, to end at the next pay date, with notice of no more than three months.",
+    "th": "ตามพระราชบัญญัติคุ้มครองแรงงาน สัญญาที่กำหนดระยะเวลาไว้สิ้นสุดเมื่อครบกำหนดโดยไม่ต้องบอกกล่าว สัญญาที่ไม่กำหนดระยะเวลา ทั้งสองฝ่ายเลิกได้ด้วยการบอกกล่าวล่วงหน้าเป็นหนังสือ ในหรือก่อนวันจ่ายค่าจ้าง เพื่อเลิกในวันจ่ายค่าจ้างถัดไป โดยบอกล่วงหน้าไม่เกินสามเดือน",
+    "my": "အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေအရ သတ်မှတ်ကာလရှိသော စာချုပ်သည် ကာလပြည့်သည့်အခါ အသိပေးခြင်းမလိုဘဲ ပြီးဆုံးသည်။ ကာလမသတ်မှတ်ထားလျှင် နှစ်ဖက်လုံးက လစာပေးရက်တွင် သို့မဟုတ် ၎င်းမတိုင်မီ စာဖြင့် ကြိုတင်အသိပေးကာ နောက်လစာပေးရက်တွင် ပြီးဆုံးစေနိုင်ပြီး ကြိုတင်အသိပေးချိန်သည် သုံးလထက် မပိုရ။",
+    "zh": "依《劳动保护法》，有固定期限的合同到期即止，无需通知。没有固定期限的，任何一方可在发薪日当天或之前书面通知，在下一个发薪日终止，通知期不超过三个月。",
+    "de": "Nach dem Labor Protection Act endet ein befristeter Vertrag mit Ablauf der Frist, ohne Kündigung. Ohne feste Frist beenden ihn beide Seiten durch schriftliche Kündigung am Zahltag oder davor, zum nächsten Zahltag, mit höchstens drei Monaten Frist."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "In the Act, wages calculated by the month, day, hour or piece are paid at least once a month, unless otherwise agreed for the employee's benefit.",
+    "th": "ตามพระราชบัญญัติ ค่าจ้างที่คิดเป็นรายเดือน รายวัน รายชั่วโมง หรือตามผลงาน จ่ายอย่างน้อยเดือนละหนึ่งครั้ง เว้นแต่ตกลงกันเป็นอย่างอื่นเพื่อประโยชน์ของลูกจ้าง",
+    "my": "အက်ဥပဒေအရ လစဉ်၊ နေ့စဉ်၊ နာရီအလိုက် သို့မဟုတ် လုပ်ငန်းခွဲအလိုက် တွက်ချက်သော လုပ်ခကို အနည်းဆုံး တစ်လတစ်ကြိမ် ပေးရပြီး ဝန်ထမ်းအကျိုးအတွက် အခြားနည်းဖြင့် သဘောတူထားလျှင် ချွင်းချက်ဖြစ်သည်။",
+    "zh": "依该法，按月、日、小时或计件计算的工资，至少每月支付一次，但为员工利益另有约定的除外。",
+    "de": "Nach dem Gesetz wird Lohn, der nach Monat, Tag, Stunde oder Stück berechnet wird, mindestens einmal im Monat gezahlt, sofern nichts anderes zugunsten des Arbeitnehmers vereinbart ist."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "From 1 January 2026, social security takes 5% each from employer and employee on wages up to ฿17,500.",
+    "th": "ตั้งแต่ 1 มกราคม 2569 ประกันสังคมหักฝ่ายละ 5% จากค่าจ้างไม่เกิน ฿17,500",
+    "my": "2026 ဇန်နဝါရီ 1 မှစ၍ လူမှုဖူလုံရေးသည် ฿17,500 အထိ လုပ်ခမှ အလုပ်ရှင်နှင့် ဝန်ထမ်းထံ 5% စီ ယူသည်။",
+    "zh": "自 2026 年 1 月 1 日起，社保按工资（上限 ฿17,500）雇主和雇员各扣 5%。",
+    "de": "Ab 1. Januar 2026 erhebt die Sozialversicherung je 5 % von Arbeitgeber und Arbeitnehmer auf Löhne bis ฿17,500."
+   },
+   "src": "https://austchamthailand.com/resources/news/hlb-thailand-social-security-contribution-changes-2026"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Thai law firm's fixed fees (ThaiLawOnline): a contract written for your case, and a review of one you have",
+    "th": "ค่าบริการคงที่ของสำนักงานกฎหมายไทย (ThaiLawOnline): ร่างสัญญาตามกรณีของคุณ และตรวจสัญญาที่คุณมี",
+    "my": "ထိုင်းဥပဒေကုမ္ပဏီတစ်ခု၏ ပုံသေကြေးများ (ThaiLawOnline) - သင့်ကိစ္စအတွက် ရေးသားသောစာချုပ်နှင့် သင့်လက်ထဲရှိစာချုပ်ကို သုံးသပ်ခြင်း",
+    "zh": "泰国一家律所的固定收费（ThaiLawOnline）：按您的情况起草合同，以及审阅您已有的合同",
+    "de": "Festpreise einer thailändischen Kanzlei (ThaiLawOnline): ein auf Ihren Fall geschriebener Vertrag und die Prüfung eines vorhandenen"
+   },
+   "p": {
+    "en": "฿20,000 to write, ฿9,000 to review",
+    "th": "฿20,000 ร่างสัญญา ฿9,000 ตรวจสัญญา",
+    "my": "ရေးသားရန် ฿20,000၊ သုံးသပ်ရန် ฿9,000",
+    "zh": "起草 ฿20,000，审阅 ฿9,000",
+    "de": "฿20,000 für das Schreiben, ฿9,000 für die Prüfung"
+   },
+   "src": "https://www.thailawonline.com/pricing/"
+  },
+  {
+   "t": {
+    "en": "A Fastwork lawyer: a contract in Thai, or in Thai and English",
+    "th": "ทนายบน Fastwork: ร่างสัญญาภาษาไทย หรือไทยและอังกฤษ",
+    "my": "Fastwork ရှေ့နေတစ်ဦး - ထိုင်းဘာသာဖြင့်ဖြစ်စေ၊ ထိုင်းနှင့် အင်္ဂလိပ်ဖြင့်ဖြစ်စေ စာချုပ်",
+    "zh": "Fastwork 上的律师：泰文合同，或泰英双语合同",
+    "de": "Ein Anwalt auf Fastwork: ein Vertrag auf Thai oder auf Thai und Englisch"
+   },
+   "p": {
+    "en": "From ฿2,000 in Thai, from ฿3,500 in Thai and English, 2 days",
+    "th": "เริ่ม ฿2,000 ภาษาไทย เริ่ม ฿3,500 ไทยและอังกฤษ 2 วัน",
+    "my": "ထိုင်းဘာသာ ฿2,000 မှစ၊ ထိုင်းနှင့် အင်္ဂလိပ် ฿3,500 မှစ၊ ရက် 2",
+    "zh": "泰文 ฿2,000 起，泰英双语 ฿3,500 起，2 天",
+    "de": "Ab ฿2,000 auf Thai, ab ฿3,500 auf Thai und Englisch, 2 Tage"
+   },
+   "src": "https://fastwork.co/user/budsarac/legal-66132768"
+  },
+  {
+   "t": {
+    "en": "A Fastwork HR consultant's monthly payroll: payslips, an Excel pay file, social security and PND 1 filing",
+    "th": "เงินเดือนรายเดือนจากที่ปรึกษา HR บน Fastwork: สลิปเงินเดือน ไฟล์ Excel คำนวณเงินเดือน ยื่นประกันสังคมและ ภ.ง.ด.1",
+    "my": "Fastwork HR အကြံပေးတစ်ဦး၏ လစဉ်လစာဝန်ဆောင်မှု - လစာစလစ်၊ Excel လစာဖိုင်၊ လူမှုဖူလုံရေးနှင့် PND 1 တင်သွင်းခြင်း",
+    "zh": "Fastwork 上 HR 顾问的月度薪资服务：工资单、Excel 算薪文件、社保和 PND 1 申报",
+    "de": "Monatliche Lohnabrechnung einer HR-Beraterin auf Fastwork: Lohnabrechnungen, Excel-Datei, Sozialversicherung und PND-1-Meldung"
+   },
+   "p": {
+    "en": "฿1,000 a month",
+    "th": "฿1,000 ต่อเดือน",
+    "my": "တစ်လလျှင် ฿1,000",
+    "zh": "每月 ฿1,000",
+    "de": "฿1,000 pro Monat"
+   },
+   "src": "https://fastwork.co/user/sa2ov3wu/payroll-outsourcing-17075301"
+  },
+  {
+   "t": {
+    "en": "A Fastwork accountant's payroll service with payslips",
+    "th": "บริการเงินเดือนพร้อมสลิปของนักบัญชีบน Fastwork",
+    "my": "Fastwork စာရင်းကိုင်တစ်ဦး၏ လစာစလစ်ပါ လစာဝန်ဆောင်မှု",
+    "zh": "Fastwork 上会计的薪资服务，含工资单",
+    "de": "Lohnabrechnungsdienst eines Buchhalters auf Fastwork mit Lohnabrechnungen"
+   },
+   "p": {
+    "en": "฿1,500–2,000 a month for up to 5 employees, ฿2,500–3,500 for up to 10",
+    "th": "฿1,500–2,000 ต่อเดือน พนักงานไม่เกิน 5 คน ฿2,500–3,500 ไม่เกิน 10 คน",
+    "my": "တစ်လလျှင် ဝန်ထမ်း 5 ဦးအထိ ฿1,500–2,000၊ 10 ဦးအထိ ฿2,500–3,500",
+    "zh": "每月：最多 5 名员工 ฿1,500–2,000，最多 10 名 ฿2,500–3,500",
+    "de": "฿1,500–2,000 pro Monat für bis zu 5 Mitarbeitende, ฿2,500–3,500 für bis zu 10"
+   },
+   "src": "https://fastwork.co/user/thanawonp/accounting-and-finance-97479026"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Must an employment contract in Thailand be in writing?",
+    "th": "สัญญาจ้างงานในไทยต้องทำเป็นลายลักษณ์อักษรไหม",
+    "my": "ထိုင်းနိုင်ငံတွင် အလုပ်ခန့်အပ်စာချုပ်ကို စာဖြင့် ရေးရမလား",
+    "zh": "在泰国，雇佣合同必须是书面的吗？",
+    "de": "Muss ein Arbeitsvertrag in Thailand schriftlich sein?"
+   },
+   "a": {
+    "en": "No. Tilleke & Gibbins writes that Thai law has no requirement that an employment contract be in writing, and the Labor Protection Act counts a contract made in writing or orally.",
+    "th": "ไม่ต้อง Tilleke & Gibbins ระบุว่ากฎหมายไทยไม่มีข้อกำหนดให้สัญญาจ้างต้องเป็นลายลักษณ์อักษร และพระราชบัญญัติคุ้มครองแรงงานนับสัญญาที่ทำเป็นหนังสือหรือด้วยวาจา",
+    "my": "မလိုပါ။ Tilleke & Gibbins က ထိုင်းဥပဒေတွင် အလုပ်ခန့်အပ်စာချုပ်ကို စာဖြင့်ရေးရမည်ဟူသော လိုအပ်ချက် မရှိဟု ရေးသားပြီး အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေက စာဖြင့်ဖြစ်စေ နှုတ်ဖြင့်ဖြစ်စေ ပြုလုပ်သော စာချုပ်ကို ရေတွက်သည်။",
+    "zh": "不必。Tilleke & Gibbins 写道，泰国法律没有雇佣合同必须是书面的要求，《劳动保护法》也认可书面或口头订立的合同。",
+    "de": "Nein. Tilleke & Gibbins schreibt, das thailändische Recht kenne keine Pflicht zur Schriftform des Arbeitsvertrags, und das Labor Protection Act kennt Verträge, die schriftlich oder mündlich geschlossen werden."
+   },
+   "src": "https://www.tilleke.com/insights/important-considerations-employment-contracts-under-thai-law/"
+  },
+  {
+   "q": {
+    "en": "Can a Thai employment contract be in English?",
+    "th": "สัญญาจ้างงานในไทยทำเป็นภาษาอังกฤษได้ไหม",
+    "my": "ထိုင်းအလုပ်ခန့်အပ်စာချုပ်ကို အင်္ဂလိပ်ဘာသာဖြင့် ရေးနိုင်သလား",
+    "zh": "泰国的雇佣合同可以用英文吗？",
+    "de": "Darf ein thailändischer Arbeitsvertrag auf Englisch sein?"
+   },
+   "a": {
+    "en": "Tilleke & Gibbins says a contract in Thai is not mandatory. It mentions Thai or bilingual provisions as an option for a Thai employee who cannot read English well.",
+    "th": "Tilleke & Gibbins ระบุว่าไม่บังคับให้สัญญาเป็นภาษาไทย บทความกล่าวถึงข้อความภาษาไทยหรือสองภาษาเป็นทางเลือกสำหรับลูกจ้างไทยที่อ่านภาษาอังกฤษได้ไม่ดี",
+    "my": "Tilleke & Gibbins က စာချုပ်ကို ထိုင်းဘာသာဖြင့် ရေးရန် မလိုအပ်ကြောင်း ဆိုသည်။ အင်္ဂလိပ်စာ ကောင်းစွာမဖတ်တတ်သော ထိုင်းဝန်ထမ်းအတွက် ထိုင်းဘာသာ သို့မဟုတ် နှစ်ဘာသာပါ စာပိုဒ်များကို ရွေးချယ်စရာအဖြစ် ဖော်ပြသည်။",
+    "zh": "Tilleke & Gibbins 称，合同不必用泰文。文章提到，对英文读得不好的泰国员工，可以采用泰文或双语条款。",
+    "de": "Tilleke & Gibbins sagt, ein Vertrag auf Thai sei nicht vorgeschrieben. Der Beitrag nennt Klauseln auf Thai oder zweisprachig als Möglichkeit für thailändische Angestellte, die schlecht Englisch lesen."
+   },
+   "src": "https://www.tilleke.com/insights/important-considerations-employment-contracts-under-thai-law/"
+  },
+  {
+   "q": {
+    "en": "What happens when a fixed-term contract ends?",
+    "th": "สัญญาจ้างแบบมีกำหนดเวลาสิ้นสุดแล้วเป็นอย่างไร",
+    "my": "သတ်မှတ်ကာလစာချုပ် ပြီးဆုံးသောအခါ ဘာဖြစ်သနည်း",
+    "zh": "固定期限合同到期后会怎样？",
+    "de": "Was geschieht, wenn ein befristeter Vertrag endet?"
+   },
+   "a": {
+    "en": "It ends at the end of the period with no advance notice. Tilleke & Gibbins adds that if the employee keeps working and the employer keeps paying after the end date, the contract becomes open-ended.",
+    "th": "สัญญาสิ้นสุดเมื่อครบกำหนดโดยไม่ต้องบอกกล่าวล่วงหน้า Tilleke & Gibbins เสริมว่าหากลูกจ้างยังทำงานและนายจ้างยังจ่ายค่าจ้างต่อหลังวันสิ้นสุด สัญญาจะกลายเป็นสัญญาที่ไม่มีกำหนดเวลา",
+    "my": "ကာလပြည့်သည့်အခါ ကြိုတင်အသိပေးခြင်းမလိုဘဲ ပြီးဆုံးသည်။ ပြီးဆုံးရက်နောက်ပိုင်း ဝန်ထမ်းက ဆက်လုပ်ပြီး အလုပ်ရှင်က ဆက်ပေးလျှင် စာချုပ်သည် ကာလမသတ်မှတ်သော စာချုပ်ဖြစ်သွားသည်ဟု Tilleke & Gibbins က ထပ်ဆိုသည်။",
+    "zh": "期满即止，无需提前通知。Tilleke & Gibbins 补充说，若到期后员工继续工作、雇主继续付薪，合同就变成无固定期限合同。",
+    "de": "Er endet mit Ablauf der Frist, ohne Vorankündigung. Tilleke & Gibbins fügt an, dass der Vertrag unbefristet wird, wenn der Angestellte nach dem Enddatum weiterarbeitet und der Arbeitgeber weiterzahlt."
+   },
+   "src": "https://www.tilleke.com/insights/important-considerations-employment-contracts-under-thai-law/"
+  },
+  {
+   "q": {
+    "en": "What does an employment contract cover?",
+    "th": "สัญญาจ้างงานครอบคลุมเรื่องอะไรบ้าง",
+    "my": "အလုပ်ခန့်အပ်စာချုပ်တွင် ဘာတွေ ပါဝင်သနည်း",
+    "zh": "雇佣合同包含哪些内容？",
+    "de": "Was regelt ein Arbeitsvertrag?"
+   },
+   "a": {
+    "en": "Tilleke & Gibbins lists the date and parties, the start date, the end date for a fixed term, probation, duties, wages and benefits, working days, hours and holidays, the workplace, confidentiality and termination.",
+    "th": "Tilleke & Gibbins ระบุวันที่และคู่สัญญา วันเริ่มงาน วันสิ้นสุดสำหรับสัญญามีกำหนด ช่วงทดลองงาน หน้าที่ ค่าจ้างและสวัสดิการ วันทำงาน เวลา และวันหยุด สถานที่ทำงาน การรักษาความลับ และการเลิกจ้าง",
+    "my": "Tilleke & Gibbins က ရက်စွဲနှင့် ပါဝင်သူများ၊ စတင်သည့်ရက်၊ သတ်မှတ်ကာလစာချုပ်၏ ပြီးဆုံးရက်၊ စမ်းသပ်ကာလ၊ တာဝန်များ၊ လုပ်ခနှင့် ခံစားခွင့်များ၊ အလုပ်ရက်၊ နာရီနှင့် အလုပ်ပိတ်ရက်များ၊ အလုပ်ခွင်၊ လျှို့ဝှက်ချက်နှင့် အလုပ်ရပ်စဲခြင်းတို့ကို စာရင်းပြုထားသည်။",
+    "zh": "Tilleke & Gibbins 列出：订立日期和双方、起始日期、固定期限合同的终止日期、试用期、职责、工资和福利、工作日、工时和假期、工作地点、保密以及终止。",
+    "de": "Tilleke & Gibbins nennt Datum und Parteien, Beginn, bei Befristung das Ende, Probezeit, Aufgaben, Lohn und Leistungen, Arbeitstage, -zeiten und Feiertage, den Arbeitsort, Vertraulichkeit und die Beendigung."
+   },
+   "src": "https://www.tilleke.com/insights/important-considerations-employment-contracts-under-thai-law/"
+  }
+ ],
+ "related": [
+  "payouts",
+  "books",
+  "translate",
+  "form",
+  "assistant",
+  "thai-plan"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Tilleke & Gibbins: employment contracts under Thai law",
+    "th": "Tilleke & Gibbins: สัญญาจ้างตามกฎหมายไทย",
+    "my": "Tilleke & Gibbins - ထိုင်းဥပဒေအရ အလုပ်ခန့်အပ်စာချုပ်များ",
+    "zh": "Tilleke & Gibbins：泰国法律下的雇佣合同",
+    "de": "Tilleke & Gibbins: Arbeitsverträge nach thailändischem Recht"
+   },
+   "href": "https://www.tilleke.com/insights/important-considerations-employment-contracts-under-thai-law/"
+  },
+  {
+   "t": {
+    "en": "Labor Protection Act B.E. 2541, English translation",
+    "th": "พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. 2541 ฉบับแปลภาษาอังกฤษ",
+    "my": "အလုပ်သမားကာကွယ်ရေးအက်ဥပဒေ B.E. 2541 အင်္ဂလိပ်ဘာသာပြန်",
+    "zh": "《劳动保护法》B.E. 2541 英译本",
+    "de": "Labor Protection Act B.E. 2541, englische Übersetzung"
+   },
+   "href": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  }
+ ]
+}

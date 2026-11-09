@@ -1,0 +1,336 @@
+{
+ "id": "lucky-number",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People ask whether a phone number or a car plate is lucky. Some plate numbers go to auction with starting prices of ฿500,000 or more.",
+  "th": "คนอยากรู้ว่าเบอร์โทรหรือทะเบียนรถเป็นเลขมงคลไหม ทะเบียนบางเลขนำออกประมูลโดยเริ่มต้นที่ ฿500,000 ขึ้นไป",
+  "my": "လူတွေက ဖုန်းနံပါတ် သို့မဟုတ် ကားနံပါတ်ပြားက ကံကောင်းသလားဟု မေးကြသည်။ ကားနံပါတ်အချို့ကို စတင်စျေး ฿500,000 နှင့်အထက်ဖြင့် လေလံတင်သည်။",
+  "zh": "人们想知道手机号或车牌是否吉利。有些车牌号码拍卖的起拍价就在 ฿500,000 以上。",
+  "de": "Man fragt, ob eine Telefonnummer oder ein Kennzeichen Glück bringt. Manche Kennzeichen-Nummern kommen mit einem Startpreis von ฿500,000 oder mehr in die Versteigerung."
+ },
+ "n": {
+  "de": "Glückstelefonnummer oder Kennzeichen"
+ },
+ "l": {
+  "de": "Eine Nummer gedeutet oder drei für Sie ausgewählt."
+ },
+ "steps": [
+  {
+   "db": "telephone",
+   "t": {
+    "en": "You say what the number is for, a phone or a car plate, and send the one to read or what you want picked.",
+    "th": "คุณบอกว่าเป็นเลขสำหรับเบอร์โทรหรือทะเบียนรถ แล้วส่งเลขที่ให้อ่าน หรือบอกสิ่งที่ต้องการให้คัด",
+    "my": "နံပါတ်က ဖုန်းအတွက်လား ကားနံပါတ်ပြားအတွက်လား ပြောပြီး ဖတ်ပေးစေလိုသော နံပါတ်ကို ပို့သည်၊ သို့မဟုတ် ရွေးပေးစေလိုသည်ကို ပြောသည်။",
+    "zh": "您说明号码是用于手机还是车牌，并发来要解读的号码，或说明想选什么样的。",
+    "de": "Sie sagen, wofür die Nummer ist, Telefon oder Kennzeichen, und senden die Nummer zum Deuten oder sagen, was ausgewählt werden soll."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ก่อนเริ่มทำ",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "dice",
+   "t": {
+    "en": "Hongdam reads the one number, or picks three candidates.",
+    "th": "หงส์ดำอ่านเลขหนึ่งชุด หรือคัดให้สามชุด",
+    "my": "ဟုန်ဒမ်က နံပါတ်တစ်ခုကို ဖတ်ပေးသည်၊ သို့မဟုတ် ရွေးချယ်စရာ သုံးခု ရွေးပေးသည်။",
+    "zh": "鸿丹解读这一个号码，或挑出三个备选。",
+    "de": "Hongdam deutet die eine Nummer oder wählt drei Kandidaten aus."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After you send",
+    "th": "หลังคุณส่งเลข",
+    "my": "သင်ပို့ပြီးနောက်",
+    "zh": "您发来之后",
+    "de": "Nach Ihrer Zusendung"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "You get the reading or the three candidates. The choice is yours.",
+    "th": "คุณได้รับผลที่อ่านหรือเลขสามชุด การเลือกเป็นของคุณ",
+    "my": "သင်က ဖတ်ထားသည့်ရလဒ် သို့မဟုတ် ရွေးချယ်စရာ သုံးခုကို ရသည်။ ရွေးချယ်မှုမှာ သင့်အပိုင် ဖြစ်သည်။",
+    "zh": "您拿到解读结果或三个备选号码，选哪个由您定。",
+    "de": "Sie erhalten die Deutung oder die drei Kandidaten. Die Wahl liegt bei Ihnen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Am Ende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Department of Land Transport's plate auction on 20 December 2025 (round 12) set four starting prices: ฿1,500,000 for 8888 and 9999; ฿1,000,000 for 1111 to 7777; ฿800,000 for single, double and triple digits; ฿500,000 for round thousands, runs like 1234 and pairs like 1122.",
+    "th": "การประมูลทะเบียนรถของกรมการขนส่งทางบกวันที่ 20 ธันวาคม 2568 (ครั้งที่ 12) ตั้งราคาเริ่มต้นสี่ระดับ: ฿1,500,000 สำหรับ 8888 และ 9999 ฿1,000,000 สำหรับ 1111 ถึง 7777 ฿800,000 สำหรับเลขตัวเดียว เลขสองตัวเหมือน และสามตัวเหมือน ฿500,000 สำหรับเลขหลักพัน เลขเรียง เช่น 1234 และเลขคู่ เช่น 1122",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန၏ 2025 ဒီဇင်ဘာ 20 ရက် (အကြိမ်ရေ 12) ကားနံပါတ်ပြား လေလံတွင် စတင်စျေး လေးမျိုး သတ်မှတ်သည်။ 8888 နှင့် 9999 အတွက် ฿1,500,000၊ 1111 မှ 7777 အတွက် ฿1,000,000၊ တစ်လုံး၊ နှစ်လုံးတူ၊ သုံးလုံးတူ အတွက် ฿800,000၊ ထောင်ပြည့်ဂဏန်း၊ 1234 ကဲ့သို့ အစဉ်လိုက်ဂဏန်းနှင့် 1122 ကဲ့သို့ စုံတွဲဂဏန်း အတွက် ฿500,000။",
+    "zh": "陆路交通厅 2025 年 12 月 20 日（第 12 轮）的车牌拍卖定了四档起拍价：8888 和 9999 为 ฿1,500,000；1111 至 7777 为 ฿1,000,000；单个数字、两个相同和三个相同的数字为 ฿800,000；整千数、1234 这样的顺子和 1122 这样的对子为 ฿500,000。",
+    "de": "Die Versteigerung des Landverkehrsamts am 20. Dezember 2025 (Runde 12) setzte vier Startpreise: ฿1,500,000 für 8888 und 9999; ฿1,000,000 für 1111 bis 7777; ฿800,000 für einzelne Ziffern sowie zwei und drei gleiche Ziffern; ฿500,000 für runde Tausender, Folgen wie 1234 und Paare wie 1122."
+   },
+   "src": "https://www.autospinn.com/2025/12/special-license-plate-146846"
+  },
+  {
+   "t": {
+    "en": "A plate number goes to auction only when more than 2 people register and bid on it. Bids are made on the internet at tabienrod.com, in advance or live, or by voice in person.",
+    "th": "เลขทะเบียนจะนำออกประมูลเมื่อมีผู้ลงทะเบียนและเสนอราคามากกว่า 2 ราย เสนอราคาทางอินเทอร์เน็ตที่ tabienrod.com ได้ทั้งล่วงหน้าและแบบเรียลไทม์ หรือประมูลทางวาจาด้วยตนเอง",
+    "my": "နံပါတ်ပြားတစ်ခုကို စာရင်းသွင်းပြီး ဈေးကမ်းသူ 2 ဦးထက်ပိုမှသာ လေလံတင်သည်။ ဈေးကမ်းခြင်းကို tabienrod.com တွင် အင်တာနက်ဖြင့် ကြိုတင်၍ဖြစ်စေ တိုက်ရိုက်ဖြစ်စေ၊ သို့မဟုတ် ကိုယ်တိုင်လာ၍ ပါးစပ်ဖြင့် ပြုလုပ်နိုင်သည်။",
+    "zh": "一个车牌号码要有超过 2 人登记并出价才会拍卖。出价可在 tabienrod.com 上网进行，提前或实时均可，也可亲自到场口头出价。",
+    "de": "Eine Kennzeichen-Nummer kommt nur dann in die Versteigerung, wenn sich mehr als 2 Personen anmelden und bieten. Geboten wird im Internet auf tabienrod.com, im Voraus oder live, oder mündlich vor Ort."
+   },
+   "src": "https://www.autospinn.com/2025/12/special-license-plate-146846"
+  },
+  {
+   "t": {
+    "en": "On the auction site, bidding in Bangkok runs by voice, on the internet or by phone. In the provinces it runs by voice or on the internet, on dates set in each year's plan.",
+    "th": "ตามเว็บไซต์ประมูล ในกรุงเทพฯ ประมูลได้ทางวาจา ทางอินเทอร์เน็ต หรือทางโทรศัพท์ ส่วนในต่างจังหวัดประมูลทางวาจาหรือทางอินเทอร์เน็ต ตามวันที่กำหนดในแผนประจำปี",
+    "my": "လေလံဝက်ဘ်ဆိုက်အရ ဘန်ကောက်တွင် ပါးစပ်ဖြင့်၊ အင်တာနက်ဖြင့် သို့မဟုတ် တယ်လီဖုန်းဖြင့် လေလံဆွဲနိုင်သည်။ ပြည်နယ်များတွင် ပါးစပ်ဖြင့် သို့မဟုတ် အင်တာနက်ဖြင့် ဖြစ်ပြီး နေ့ရက်များကို နှစ်စဉ်အစီအစဉ်တွင် သတ်မှတ်သည်။",
+    "zh": "按拍卖网站所述，曼谷可用口头、网上或电话出价；各府可用口头或网上出价，日期由每年的计划定。",
+    "de": "Laut der Auktionswebsite wird in Bangkok mündlich, im Internet oder per Telefon geboten. In den Provinzen geht es mündlich oder im Internet, an Terminen aus dem Jahresplan."
+   },
+   "src": "https://tabienrod.com/auction"
+  },
+  {
+   "t": {
+    "en": "AIS lists lucky-number SIMs on its page, mostly at ฿199 and some at ฿99.",
+    "th": "AIS ลงซิมเบอร์มงคลไว้ในหน้าเว็บ ส่วนใหญ่ราคา ฿199 และบางซิม ฿99",
+    "my": "AIS က ၎င်း၏ စာမျက်နှာတွင် ကံကောင်းနံပါတ် ဆင်းမ်ကတ်များကို စာရင်းပြုထားသည်။ အများစုမှာ ฿199 ဖြစ်ပြီး အချို့မှာ ฿99 ဖြစ်သည်။",
+    "zh": "AIS 在页面上列出吉祥号码 SIM 卡，多数 ฿199，有些 ฿99。",
+    "de": "AIS führt auf seiner Seite SIM-Karten mit Glücksnummern auf, meist zu ฿199, einige zu ฿99."
+   },
+   "src": "https://www.ais.th/consumers/package/postpaid/lucky-number"
+  },
+  {
+   "t": {
+    "en": "AIS has a tool that predicts a phone number, or finds a lucky number, from a birth date. It explains the meaning for money, work, love and health.",
+    "th": "AIS มีเครื่องมือทำนายเบอร์โทรศัพท์หรือค้นหาเบอร์มงคลจากวันเกิด พร้อมอธิบายความหมายด้านการเงิน การงาน ความรัก และสุขภาพ",
+    "my": "AIS တွင် မွေးနေ့မှ ဖုန်းနံပါတ်ကို ခန့်မှန်းပေးသော သို့မဟုတ် ကံကောင်းနံပါတ် ရှာပေးသော ကိရိယာ ရှိသည်။ ငွေကြေး၊ အလုပ်၊ အချစ်နှင့် ကျန်းမာရေး၏ အဓိပ္ပာယ်ကို ရှင်းပြသည်။",
+    "zh": "AIS 有一个工具，可按出生日期预测手机号码或查找吉祥号码，并解释它在财运、事业、爱情和健康方面的含义。",
+    "de": "AIS hat ein Werkzeug, das eine Telefonnummer deutet oder anhand des Geburtsdatums eine Glücksnummer sucht. Es erklärt die Bedeutung für Geld, Arbeit, Liebe und Gesundheit."
+   },
+   "src": "https://www.ais.th/consumers/package/postpaid/lucky-number"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Department of Land Transport plate auction, starting prices for special numbers",
+    "th": "การประมูลทะเบียนรถของกรมการขนส่งทางบก ราคาเริ่มต้นของเลขพิเศษ",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန၏ ကားနံပါတ်ပြား လေလံ၊ အထူးနံပါတ်များ၏ စတင်စျေး",
+    "zh": "陆路交通厅车牌拍卖，特殊号码的起拍价",
+    "de": "Kennzeichen-Versteigerung des Landverkehrsamts, Startpreise für besondere Nummern"
+   },
+   "p": {
+    "en": "฿500,000 to ฿1,500,000",
+    "th": "฿500,000 ถึง ฿1,500,000",
+    "my": "฿500,000 မှ ฿1,500,000",
+    "zh": "฿500,000 至 ฿1,500,000",
+    "de": "฿500,000 bis ฿1,500,000"
+   },
+   "src": "https://www.autospinn.com/2025/12/special-license-plate-146846"
+  },
+  {
+   "t": {
+    "en": "AIS lucky-number SIM",
+    "th": "ซิมเบอร์มงคลของ AIS",
+    "my": "AIS ကံကောင်းနံပါတ် ဆင်းမ်ကတ်",
+    "zh": "AIS 吉祥号码 SIM 卡",
+    "de": "AIS-SIM-Karte mit Glücksnummer"
+   },
+   "p": {
+    "en": "฿99 to ฿199 a SIM",
+    "th": "฿99 ถึง ฿199 ต่อซิม",
+    "my": "ဆင်းမ်တစ်ကတ် ฿99 မှ ฿199",
+    "zh": "每张 SIM 卡 ฿99 至 ฿199",
+    "de": "฿99 bis ฿199 pro SIM"
+   },
+   "src": "https://www.ais.th/consumers/package/postpaid/lucky-number"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller reads one phone number, in 1 to 2 days",
+    "th": "ผู้ขายบน Fastwork วิเคราะห์เบอร์โทรหนึ่งเบอร์ ใน 1 ถึง 2 วัน",
+    "my": "Fastwork ရှိ ရောင်းချသူတစ်ဦးက ဖုန်းနံပါတ်တစ်ခုကို 1 မှ 2 ရက်အတွင်း ဖတ်ပေးသည်",
+    "zh": "Fastwork 上的卖家在 1 至 2 天内解读一个手机号",
+    "de": "Ein Verkäufer auf Fastwork deutet eine Telefonnummer in 1 bis 2 Tagen"
+   },
+   "p": {
+    "en": "฿659",
+    "th": "฿659",
+    "my": "฿659",
+    "zh": "฿659",
+    "de": "฿659"
+   },
+   "src": "https://fastwork.co/user/zarntastic/auspicious-number-39482714"
+  },
+  {
+   "t": {
+    "en": "Another Fastwork seller: reads a number or plate, adds its meaning and a score, or finds a new number",
+    "th": "ผู้ขายอีกรายบน Fastwork: อ่านเบอร์หรือทะเบียน เพิ่มความหมายและคะแนน หรือค้นหาเบอร์ใหม่",
+    "my": "Fastwork ရှိ အခြားရောင်းချသူ၊ နံပါတ် သို့မဟုတ် ကားနံပါတ်ပြားကို ဖတ်ပေးသည်၊ အဓိပ္ပာယ်နှင့် ရမှတ် ထည့်ပေးသည်၊ သို့မဟုတ် နံပါတ်အသစ် ရှာပေးသည်",
+    "zh": "Fastwork 上另一位卖家：解读号码或车牌，加上含义和评分，或寻找新号码",
+    "de": "Ein anderer Verkäufer auf Fastwork: deutet eine Nummer oder ein Kennzeichen, fügt Bedeutung und Punktzahl hinzu oder sucht eine neue Nummer"
+   },
+   "p": {
+    "en": "฿799, ฿1,499 or ฿2,889",
+    "th": "฿799, ฿1,499 หรือ ฿2,889",
+    "my": "฿799၊ ฿1,499 သို့မဟုတ် ฿2,889",
+    "zh": "฿799、฿1,499 或 ฿2,889",
+    "de": "฿799, ฿1,499 oder ฿2,889"
+   },
+   "src": "https://fastwork.co/user/tunbecool/auspicious-number-47281935"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How can I find out whether a phone number is lucky?",
+    "th": "จะเช็กว่าเบอร์โทรเป็นเบอร์มงคลไหมได้อย่างไร",
+    "my": "ဖုန်းနံပါတ်က ကံကောင်းမကောင်း ဘယ်လိုစစ်နိုင်သလဲ။",
+    "zh": "怎样查一个手机号是否吉利？",
+    "de": "Wie prüft man, ob eine Telefonnummer Glück bringt?"
+   },
+   "a": {
+    "en": "AIS has a tool on its lucky-number page that predicts a phone number, or finds a lucky one, from your birth date. It explains the meaning for money, work, love and health.",
+    "th": "AIS มีเครื่องมือในหน้าเบอร์มงคลที่ทำนายเบอร์โทรหรือค้นหาเบอร์มงคลจากวันเกิด พร้อมอธิบายความหมายด้านการเงิน การงาน ความรัก และสุขภาพ",
+    "my": "AIS ၏ ကံကောင်းနံပါတ် စာမျက်နှာတွင် မွေးနေ့မှ ဖုန်းနံပါတ်ကို ခန့်မှန်းပေးသော သို့မဟုတ် ကံကောင်းနံပါတ် ရှာပေးသော ကိရိယာ ရှိသည်။ ငွေကြေး၊ အလုပ်၊ အချစ်နှင့် ကျန်းမာရေး၏ အဓိပ္ပာယ်ကို ရှင်းပြသည်။",
+    "zh": "AIS 的吉祥号码页面上有一个工具，可按出生日期预测手机号或查找吉祥号码，并解释在财运、事业、爱情和健康方面的含义。",
+    "de": "AIS hat auf seiner Seite für Glücksnummern ein Werkzeug, das eine Telefonnummer deutet oder anhand des Geburtsdatums eine Glücksnummer sucht. Es erklärt die Bedeutung für Geld, Arbeit, Liebe und Gesundheit."
+   },
+   "src": "https://www.ais.th/consumers/package/postpaid/lucky-number"
+  },
+  {
+   "q": {
+    "en": "How much does a lucky SIM cost?",
+    "th": "ซิมเบอร์มงคลราคาเท่าไร",
+    "my": "ကံကောင်းနံပါတ် ဆင်းမ်ကတ်ရဲ့ စျေးက ဘယ်လောက်လဲ။",
+    "zh": "吉祥号码 SIM 卡多少钱？",
+    "de": "Was kostet eine SIM-Karte mit Glücksnummer?"
+   },
+   "a": {
+    "en": "AIS lists its lucky-number SIMs at ฿99 or ฿199 a SIM. Names on the list include ซิมเศรษฐีราชาโชค, ซิมเบอร์เรียง ผลรวมดี and ซิมเลขเบิ้ล ผลรวมดี.",
+    "th": "AIS ลงซิมเบอร์มงคลราคา ฿99 หรือ ฿199 ต่อซิม รายชื่อมี เช่น ซิมเศรษฐีราชาโชค ซิมเบอร์เรียง ผลรวมดี และซิมเลขเบิ้ล ผลรวมดี",
+    "my": "AIS က ၎င်း၏ ကံကောင်းနံပါတ် ဆင်းမ်ကတ်များကို တစ်ကတ် ฿99 သို့မဟုတ် ฿199 ဖြင့် စာရင်းပြုထားသည်။ စာရင်းတွင် ซิมเศรษฐีราชาโชค၊ ซิมเบอร์เรียง ผลรวมดี နှင့် ซิมเลขเบิ้ล ผลรวมดี တို့ ပါသည်။",
+    "zh": "AIS 列出的吉祥号码 SIM 卡每张 ฿99 或 ฿199。名单里有 ซิมเศรษฐีราชาโชค、ซิมเบอร์เรียง ผลรวมดี 和 ซิมเลขเบิ้ล ผลรวมดี 等。",
+    "de": "AIS führt seine SIM-Karten mit Glücksnummern zu ฿99 oder ฿199 pro SIM auf. In der Liste stehen unter anderem ซิมเศรษฐีราชาโชค, ซิมเบอร์เรียง ผลรวมดี und ซิมเลขเบิ้ล ผลรวมดี."
+   },
+   "src": "https://www.ais.th/consumers/package/postpaid/lucky-number"
+  },
+  {
+   "q": {
+    "en": "Can I buy a lucky plate number?",
+    "th": "ซื้อทะเบียนรถเลขมงคลได้ไหม",
+    "my": "ကံကောင်းသော ကားနံပါတ်ပြားကို ဝယ်နိုင်ပါသလား။",
+    "zh": "可以买吉祥车牌号码吗？",
+    "de": "Kann ich ein Glückskennzeichen kaufen?"
+   },
+   "a": {
+    "en": "Special plate numbers are sold at auction by the Department of Land Transport. In its 20 December 2025 round the starting prices ran from ฿500,000 to ฿1,500,000, for plates of private cars with up to seven seats.",
+    "th": "กรมการขนส่งทางบกนำเลขทะเบียนพิเศษออกประมูล รอบวันที่ 20 ธันวาคม 2568 ราคาเริ่มต้นอยู่ที่ ฿500,000 ถึง ฿1,500,000 สำหรับรถยนต์นั่งส่วนบุคคลไม่เกินเจ็ดคน",
+    "my": "အထူးကားနံပါတ်ပြားများကို ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာနက လေလံတင်ရောင်းသည်။ 2025 ဒီဇင်ဘာ 20 ရက် အကြိမ်တွင် ခုနစ်ယောက်အထိ စီးနိုင်သော ကိုယ်ပိုင်ကားများအတွက် စတင်စျေးမှာ ฿500,000 မှ ฿1,500,000 အထိ ဖြစ်သည်။",
+    "zh": "特殊车牌号码由陆路交通厅拍卖。2025 年 12 月 20 日这一轮，针对不超过七座的私家车牌，起拍价从 ฿500,000 到 ฿1,500,000。",
+    "de": "Besondere Kennzeichen-Nummern versteigert das Landverkehrsamt. In der Runde vom 20. Dezember 2025 reichten die Startpreise für Kennzeichen privater Autos mit bis zu sieben Sitzen von ฿500,000 bis ฿1,500,000."
+   },
+   "src": "https://www.autospinn.com/2025/12/special-license-plate-146846"
+  },
+  {
+   "q": {
+    "en": "How do I bid for a plate number?",
+    "th": "ต้องทำอย่างไรจึงจะประมูลเลขทะเบียน",
+    "my": "ကားနံပါတ်ပြားအတွက် ဘယ်လို ဈေးကမ်းရသလဲ။",
+    "zh": "怎样竞拍车牌号码？",
+    "de": "Wie biete ich auf ein Kennzeichen?"
+   },
+   "a": {
+    "en": "Registration takes a form and an ID card, at the Road Safety Fund office or on tabienrod.com. A company adds its registration certificate, proof of payment and a bank account page. A bid deposit is paid at a bank or in cash. Bids then go in by voice or on the internet on auction day.",
+    "th": "ลงทะเบียนด้วยใบลงทะเบียนและบัตรประจำตัวประชาชนที่สำนักงานกองทุนเพื่อความปลอดภัยในการใช้รถใช้ถนน หรือที่ tabienrod.com นิติบุคคลเพิ่มหนังสือรับรอง หลักฐานการชำระเงิน และหน้าบัญชีธนาคาร ชำระค่าหลักประกันการประมูลผ่านธนาคารหรือเงินสด แล้วเสนอราคาทางวาจาหรือทางอินเทอร์เน็ตในวันประมูล",
+    "my": "Road Safety Fund ရုံး သို့မဟုတ် tabienrod.com တွင် စာရင်းသွင်းပုံစံနှင့် မှတ်ပုံတင်ကတ်ဖြင့် စာရင်းသွင်းသည်။ ကုမ္ပဏီက မှတ်ပုံတင်လက်မှတ်၊ ငွေပေးချေမှုအထောက်အထားနှင့် ဘဏ်စာရင်းစာမျက်နှာ ထပ်ထည့်သည်။ ဈေးကမ်းရန် အာမခံငွေကို ဘဏ်တွင် သို့မဟုတ် ငွေသားဖြင့် ပေးသည်။ ထို့နောက် လေလံနေ့တွင် ပါးစပ်ဖြင့် သို့မဟုတ် အင်တာနက်ဖြင့် ဈေးကမ်းသည်။",
+    "zh": "凭登记表和身份证，在道路安全基金办公室或 tabienrod.com 登记。公司另需公司注册证明、付款凭证和银行账户页。竞拍保证金在银行或以现金缴付。拍卖当天用口头或网上出价。",
+    "de": "Man meldet sich mit einem Formular und einem Ausweis an, im Büro des Strassenverkehrssicherheitsfonds oder auf tabienrod.com. Eine Firma fügt ihre Registrierungsbescheinigung, einen Zahlungsnachweis und eine Kontoseite hinzu. Die Bietkaution wird bei einer Bank oder bar bezahlt. Am Auktionstag wird mündlich oder im Internet geboten."
+   },
+   "src": "https://www.autospinn.com/2025/12/special-license-plate-146846"
+  },
+  {
+   "q": {
+    "en": "Can I bid for a plate online now?",
+    "th": "ตอนนี้ประมูลทะเบียนออนไลน์ได้ไหม",
+    "my": "အခု အွန်လိုင်းမှာ ကားနံပါတ်ပြား လေလံဆွဲနိုင်ပါသလား။",
+    "zh": "现在可以在网上竞拍车牌吗？",
+    "de": "Kann ich jetzt online auf ein Kennzeichen bieten?"
+   },
+   "a": {
+    "en": "On 4 November 2026 the online auction page at car.tabienrod.com shows a notice. It says the online auction and registration system is closed for maintenance until the site announces that it has reopened.",
+    "th": "วันที่ 4 พฤศจิกายน 2569 หน้าประมูลออนไลน์ที่ car.tabienrod.com แสดงประกาศว่าระบบประมูลออนไลน์และระบบลงทะเบียนปิดปรับปรุงชั่วคราว จนกว่าเว็บไซต์จะประกาศเปิดใหม่",
+    "my": "2026 နိုဝင်ဘာ 4 ရက်တွင် car.tabienrod.com ၏ အွန်လိုင်းလေလံစာမျက်နှာတွင် အသိပေးချက် တစ်ခု ပြထားသည်။ အွန်လိုင်းလေလံနှင့် စာရင်းသွင်းစနစ်သည် ပြုပြင်ရန် ပိတ်ထားပြီး ဆိုက်က ပြန်ဖွင့်ကြောင်း ကြေညာသည်အထိ ဖြစ်သည်ဟု ဆိုသည်။",
+    "zh": "2026 年 11 月 4 日，car.tabienrod.com 的网上拍卖页面显示一则通知：网上拍卖和登记系统因维护暂停，待网站宣布重新开放。",
+    "de": "Am 4. November 2026 zeigt die Online-Auktionsseite car.tabienrod.com eine Mitteilung. Danach ist das Online-Auktions- und Anmeldesystem wegen Wartung geschlossen, bis die Website die Wiedereröffnung bekannt gibt."
+   },
+   "src": "https://car.tabienrod.com/"
+  }
+ ],
+ "related": [
+  "name-pick",
+  "amulet",
+  "reading",
+  "date-pick",
+  "vehicle",
+  "name-charm"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Department of Land Transport plate auction: how the auction runs",
+    "th": "ประมูลเลขทะเบียนรถ กรมการขนส่งทางบก: ขั้นตอนการประมูล",
+    "my": "ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန ကားနံပါတ်ပြားလေလံ: လေလံ လုပ်ဆောင်ပုံ",
+    "zh": "陆路交通厅车牌拍卖：拍卖如何进行",
+    "de": "Kennzeichen-Versteigerung des Landverkehrsamts: Ablauf der Auktion"
+   },
+   "href": "https://tabienrod.com/auction"
+  },
+  {
+   "t": {
+    "en": "AIS: lucky-number SIMs and the birth-date number tool",
+    "th": "AIS: ซิมเบอร์มงคลและเครื่องมือทำนายเบอร์จากวันเกิด",
+    "my": "AIS: ကံကောင်းနံပါတ် ဆင်းမ်ကတ်များနှင့် မွေးနေ့မှ နံပါတ်ကိရိယာ",
+    "zh": "AIS：吉祥号码 SIM 卡与按生日查号码的工具",
+    "de": "AIS: SIM-Karten mit Glücksnummern und das Werkzeug nach Geburtsdatum"
+   },
+   "href": "https://www.ais.th/consumers/package/postpaid/lucky-number"
+  }
+ ],
+ "glyphs": [
+  "telephone",
+  "dice",
+  "star"
+ ]
+}

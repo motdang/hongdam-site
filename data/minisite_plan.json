@@ -1,0 +1,303 @@
+{
+ "about": "Her word 2026-10-24: build the 25 big pages (five at a time) and the modest pages on the sample template; the sheet goes to her before anything is published. ai-own keeps its own page (/own/), so proposal (rank 26) is big.",
+ "big": [
+  {
+   "id": "wedding",
+   "kind": "event",
+   "rank": 1
+  },
+  {
+   "id": "elder-care",
+   "kind": "bill",
+   "rank": 2
+  },
+  {
+   "id": "bride",
+   "kind": "bill",
+   "rank": 3
+  },
+  {
+   "id": "retire",
+   "kind": "bill",
+   "rank": 4
+  },
+  {
+   "id": "lanna-wedding",
+   "kind": "event",
+   "rank": 5
+  },
+  {
+   "id": "online-shop",
+   "kind": "bill",
+   "rank": 6
+  },
+  {
+   "id": "stay-check",
+   "kind": "picker",
+   "rank": 7
+  },
+  {
+   "id": "graphics",
+   "kind": "bill",
+   "rank": 8
+  },
+  {
+   "id": "stay-rent",
+   "kind": "picker",
+   "rank": 9
+  },
+  {
+   "id": "giving",
+   "kind": "bill",
+   "rank": 10
+  },
+  {
+   "id": "stay-booking",
+   "kind": "bill",
+   "rank": 11
+  },
+  {
+   "id": "web-line",
+   "kind": "picker",
+   "rank": 12
+  },
+  {
+   "id": "grants",
+   "kind": "picker",
+   "rank": 13
+  },
+  {
+   "id": "vehicle",
+   "kind": "bill",
+   "rank": 14
+  },
+  {
+   "id": "app",
+   "kind": "bill",
+   "rank": 15
+  },
+  {
+   "id": "proposal",
+   "kind": "checklist",
+   "rank": 26
+  },
+  {
+   "id": "decks",
+   "kind": "checklist",
+   "rank": 17
+  },
+  {
+   "id": "web-found",
+   "kind": "checklist",
+   "rank": 18
+  },
+  {
+   "id": "event-plan",
+   "kind": "event",
+   "rank": 19
+  },
+  {
+   "id": "house-blessing",
+   "kind": "event",
+   "rank": 20
+  },
+  {
+   "id": "accident",
+   "kind": "picker",
+   "rank": 21
+  },
+  {
+   "id": "ai-automation",
+   "kind": "bill",
+   "rank": 22
+  },
+  {
+   "id": "event-kit",
+   "kind": "event",
+   "rank": 23
+  },
+  {
+   "id": "ai-assistant",
+   "kind": "bill",
+   "rank": 24
+  },
+  {
+   "id": "ai-line",
+   "kind": "bill",
+   "rank": 25
+  }
+ ],
+ "modest_by_category": {
+  "care": [
+   "lab-test",
+   "death-help",
+   "blood",
+   "specialist",
+   "care-visits",
+   "clean-air"
+  ],
+  "fix": [
+   "sec-mail",
+   "sec-hacked",
+   "mirror",
+   "app-test"
+  ],
+  "money": [
+   "merchant",
+   "invoice",
+   "books",
+   "bank-account",
+   "staff-papers",
+   "payouts",
+   "kh-books",
+   "exchange"
+  ],
+  "web": [
+   "web-mail",
+   "accessible",
+   "vibe",
+   "site",
+   "web-move",
+   "web-dns",
+   "web-license",
+   "web-care",
+   "web-sharecard",
+   "widget",
+   "web-search",
+   "directory",
+   "guide-site",
+   "wp-api",
+   "help-page",
+   "tap-card"
+  ],
+  "stay": [
+   "npa-homes",
+   "rentals",
+   "agency-sheet"
+  ],
+  "ai": [
+   "demand-prices",
+   "ai-batch",
+   "crawl-pay",
+   "crew"
+  ],
+  "moving": [
+   "move",
+   "luggage"
+  ],
+  "design": [
+   "awards",
+   "copy",
+   "video",
+   "drawn",
+   "interactive",
+   "patterns",
+   "article",
+   "newsletter",
+   "interview",
+   "cartoons",
+   "social"
+  ],
+  "charity": [
+   "line-memory",
+   "checkin",
+   "photo-proof",
+   "club-desk",
+   "findable",
+   "map-archive"
+  ],
+  "help": [
+   "thai-plan",
+   "idme",
+   "form",
+   "call",
+   "legalise",
+   "there",
+   "trades",
+   "compare",
+   "dispute",
+   "errand"
+  ],
+  "luck": [
+   "date-pick",
+   "name-pick",
+   "pha-yant",
+   "reading",
+   "bazi",
+   "almanac-widget",
+   "eink-clock",
+   "lucky-number",
+   "amulet",
+   "name-charm",
+   "sak-yant"
+  ],
+  "translate": [
+   "german",
+   "translate",
+   "interp",
+   "lang-pages",
+   "lang-shan",
+   "romanise",
+   "thai-lessons",
+   "lang-leaves"
+  ],
+  "shop": [
+   "ordering",
+   "paybox",
+   "ads-run",
+   "restaurant-desk",
+   "grab",
+   "trade-photos",
+   "fb-care",
+   "signs",
+   "stall-page",
+   "print",
+   "etsy"
+  ],
+  "ship": [
+   "partner"
+  ],
+  "data": [
+   "data-crawl",
+   "leads",
+   "price-watch",
+   "research",
+   "traffic",
+   "street-survey"
+  ],
+  "merit": [
+   "merit-dead",
+   "spirit-house",
+   "merit-you",
+   "su-khwan"
+  ],
+  "tours": [
+   "lantern",
+   "trip-plan",
+   "balloon",
+   "experience",
+   "tour-day",
+   "tour-3d",
+   "car-guide"
+  ],
+  "outsource": [
+   "voice",
+   "calls-out",
+   "typing",
+   "cs-desk",
+   "assistant",
+   "subtitles"
+  ],
+  "weddings": [
+   "event-page",
+   "tribute"
+  ]
+ },
+ "own_pages": [
+  "ai-own",
+  "bots",
+  "github",
+  "php",
+  "redteam"
+ ]
+}

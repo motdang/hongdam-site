@@ -1,0 +1,336 @@
+{
+ "id": "experience",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People book a class to try muay thai, Thai cooking, silver work or weaving, and a translator is there so the teacher is understood.",
+  "th": "คนจองคลาสเพื่อลองมวยไทย ทำอาหารไทย เครื่องเงิน หรือทอผ้า และมีล่ามอยู่ด้วยเพื่อให้เข้าใจครู",
+  "my": "လူတွေက မွေထိုင်း၊ ထိုင်းအစားအစာချက်ပြုတ်ခြင်း၊ ငွေထည်လုပ်ငန်း သို့မဟုတ် ရက်ကန်းလုပ်ခြင်းကို စမ်းသပ်ရန် သင်တန်းဘွတ်ကင်လုပ်ကြပြီး ဆရာ့စကားကို နားလည်ရန် စကားပြန် ရှိသည်။",
+  "zh": "人们订课，是为了体验泰拳、泰式烹饪、银器或织布，有翻译在场，听得懂老师。",
+  "de": "Man bucht einen Kurs, um Muay Thai, thailändisches Kochen, Silberarbeit oder Weben auszuprobieren, und ein Dolmetscher ist dabei, damit man die Lehrperson versteht."
+ },
+ "n": {
+  "de": "Kurs oder Workshop, mit Dolmetscher"
+ },
+ "l": {
+  "de": "Muay Thai, Kochen, Silber oder Weben, für bis zu 4 Personen gebucht."
+ },
+ "steps": [
+  {
+   "db": "calendar",
+   "t": {
+    "en": "A class or workshop is booked for up to 4 people.",
+    "th": "จองคลาสหรือเวิร์กช็อปให้ไม่เกิน 4 คน",
+    "my": "သင်တန်း သို့မဟုတ် အလုပ်ရုံကို 4 ဦးအထိ ဘွတ်ကင်လုပ်ပေးသည်။",
+    "zh": "为最多 4 人预订课程或手作。",
+    "de": "Ein Kurs oder Workshop wird für bis zu 4 Personen gebucht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Before the class",
+    "th": "ก่อนคลาส",
+    "my": "သင်တန်းမတက်မီ",
+    "zh": "上课前",
+    "de": "Vor dem Kurs"
+   }
+  },
+  {
+   "db": "translate",
+   "t": {
+    "en": "A translator goes with you.",
+    "th": "ล่ามไปกับคุณ",
+    "my": "စကားပြန်တစ်ဦး သင်နှင့်အတူ လိုက်ပါသည်။",
+    "zh": "翻译陪您一起去。",
+    "de": "Ein Dolmetscher begleitet Sie."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the class",
+    "th": "ที่คลาส",
+    "my": "သင်တန်းတွင်",
+    "zh": "在课上",
+    "de": "Im Kurs"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "The venue's price is passed on at cost.",
+    "th": "ค่าสถานที่คิดตามจริง",
+    "my": "နေရာ၏ ကောက်ခံကြေးကို ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်။",
+    "zh": "场地费用按实际收费。",
+    "de": "Der Preis des Veranstaltungsorts wird zum Selbstkostenpreis weitergegeben."
+   },
+   "who": {
+    "en": "The venue",
+    "th": "สถานที่",
+    "my": "နေရာ",
+    "zh": "场地",
+    "de": "Der Veranstaltungsort"
+   },
+   "time": {
+    "en": "At the class",
+    "th": "ที่คลาส",
+    "my": "သင်တန်းတွင်",
+    "zh": "在课上",
+    "de": "Im Kurs"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A half-day cooking class in Chiang Mai is 3 to 4 hours and 4 dishes, with no market tour. A full-day class is 6 to 8 hours and 5 to 6 dishes, with a market tour.",
+    "th": "คลาสทำอาหารครึ่งวันในเชียงใหม่ใช้เวลา 3 ถึง 4 ชั่วโมง ได้ 4 เมนู ไม่มีทัวร์ตลาด ส่วนคลาสเต็มวันใช้เวลา 6 ถึง 8 ชั่วโมง ได้ 5 ถึง 6 เมนู และมีทัวร์ตลาด",
+    "my": "ချင်းမိုင်ရှိ နေ့တစ်ဝက် ချက်ပြုတ်သင်တန်းသည် 3 မှ 4 နာရီကြာပြီး ဟင်း 4 မျိုး ပါကာ ဈေးလှည့်လည်ခြင်း မပါပါ။ တစ်နေ့လုံးသင်တန်းသည် 6 မှ 8 နာရီကြာပြီး ဟင်း 5 မှ 6 မျိုးနှင့် ဈေးလှည့်လည်ခြင်း ပါသည်။",
+    "zh": "清迈的半天烹饪课为 3 到 4 小时、4 道菜，不含逛市场。全天课为 6 到 8 小时、5 到 6 道菜，含逛市场。",
+    "de": "Ein halbtägiger Kochkurs in Chiang Mai dauert 3 bis 4 Stunden mit 4 Gerichten, ohne Marktbesuch. Ein ganztägiger Kurs dauert 6 bis 8 Stunden mit 5 bis 6 Gerichten und einem Marktbesuch."
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "Most cooking schools include hotel pickup and provide aprons, knives, woks and burners. Classes usually have 4 to 12 students.",
+    "th": "โรงเรียนสอนทำอาหารส่วนใหญ่รวมรถรับส่งโรงแรม และมีผ้ากันเปื้อน มีด กระทะ และเตาให้ ชั้นเรียนมักมีนักเรียน 4 ถึง 12 คน",
+    "my": "ချက်ပြုတ်ရေးကျောင်းအများစုတွင် ဟိုတယ်ကြိုပို့ ပါဝင်ပြီး ရှေ့ခံအင်္ကျီ၊ ဓား၊ ဒယ်အိုးနှင့် မီးဖိုများ ပေးထားသည်။ အတန်းတစ်ခုတွင် ကျောင်းသား 4 မှ 12 ဦးခန့် ရှိတတ်သည်။",
+    "zh": "多数烹饪学校含酒店接送，并提供围裙、刀、炒锅和炉灶。一个班通常有 4 到 12 名学员。",
+    "de": "Die meisten Kochschulen schliessen den Hotelabholdienst ein und stellen Schürzen, Messer, Woks und Kocher. Klassen haben meist 4 bis 12 Teilnehmende."
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "The guide says vegetarian and vegan versions are available in the class formats it covers. Dietary needs go in at booking, at least 48 hours ahead.",
+    "th": "คู่มือระบุว่ามีเมนูมังสวิรัติและวีแกนในรูปแบบคลาสที่กล่าวถึง และแจ้งข้อจำกัดด้านอาหารตอนจอง อย่างน้อย 48 ชั่วโมงล่วงหน้า",
+    "my": "လမ်းညွှန်က ဖော်ပြထားသော သင်တန်းပုံစံများတွင် သတ်သတ်လွတ်နှင့် ဗီဂန်ဟင်းများ ရနိုင်သည်ဟု ဆိုသည်။ အစားအသောက်ကန့်သတ်ချက်များကို ဘွတ်ကင်လုပ်ချိန်တွင် အနည်းဆုံး 48 နာရီ ကြိုတင်ပြောရသည်။",
+    "zh": "该指南称，所列课程形式都有素食和纯素版本。饮食需求在预订时提出，至少提前 48 小时。",
+    "de": "Der Leitfaden schreibt, dass vegetarische und vegane Varianten in den genannten Kursformaten möglich sind. Ernährungswünsche werden bei der Buchung angegeben, mindestens 48 Stunden vorher."
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "At Dang Muay Thai in Chiang Mai, a group class runs about 1.5 hours and a private class an hour.",
+    "th": "ที่ Dang Muay Thai ในเชียงใหม่ คลาสกลุ่มใช้เวลาราว 1.5 ชั่วโมง และคลาสส่วนตัวหนึ่งชั่วโมง",
+    "my": "ချင်းမိုင်ရှိ Dang Muay Thai တွင် အုပ်စုလိုက်သင်တန်းသည် 1.5 နာရီခန့် ကြာပြီး သီးသန့်သင်တန်းသည် တစ်နာရီ ကြာသည်။",
+    "zh": "清迈的 Dang Muay Thai 拳馆，团体课约 1.5 小时，私教课 1 小时。",
+    "de": "Im Dang Muay Thai in Chiang Mai dauert eine Gruppenstunde etwa 1,5 Stunden, eine Privatstunde eine Stunde."
+   },
+   "src": "https://fightersvault.com/blog/dang-muay-thai-review"
+  },
+  {
+   "t": {
+    "en": "NOVA Artlab in Chiang Mai teaches a full-day silver workshop at 179 Tha Phae Road. Students make a silver ring or pendant by piercing, sawing, filing and polishing.",
+    "th": "NOVA Artlab ในเชียงใหม่สอนเวิร์กช็อปเครื่องเงินเต็มวันที่ 179 ถนนท่าแพ ผู้เรียนทำแหวนหรือจี้เงินด้วยการเจาะ เลื่อย ตะไบ และขัด",
+    "my": "ချင်းမိုင်ရှိ NOVA Artlab သည် Tha Phae လမ်း 179 တွင် တစ်နေ့လုံး ငွေထည်အလုပ်ရုံ သင်ပေးသည်။ သင်ယူသူများသည် ဖောက်ခြင်း၊ လွှဖြင့်ဖြတ်ခြင်း၊ တုံးတိုက်ခြင်းနှင့် တောက်ပအောင်တိုက်ခြင်းဖြင့် ငွေလက်စွပ် သို့မဟုတ် ဆွဲပြားကို လုပ်ကြသည်။",
+    "zh": "清迈的 NOVA Artlab 在塔佩路 179 号开设全天银饰工作坊，学员通过钻孔、锯、锉和抛光，做出一枚银戒指或吊坠。",
+    "de": "Das NOVA Artlab in Chiang Mai bietet an der Tha Phae Road 179 einen ganztägigen Silber-Workshop an. Die Teilnehmenden fertigen durch Bohren, Sägen, Feilen und Polieren einen Silberring oder Anhänger."
+   },
+   "src": "https://www.timeout.com/chiang-mai/things-to-do/nova-artlab"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Cooking class in Chiang Mai, half day",
+    "th": "คลาสทำอาหารในเชียงใหม่ ครึ่งวัน",
+    "my": "ချင်းမိုင်တွင် ချက်ပြုတ်သင်တန်း၊ နေ့တစ်ဝက်",
+    "zh": "清迈烹饪课，半天",
+    "de": "Kochkurs in Chiang Mai, halber Tag"
+   },
+   "p": {
+    "en": "฿800–1,500",
+    "th": "฿800–1,500",
+    "my": "฿800–1,500",
+    "zh": "฿800–1,500",
+    "de": "฿800–1,500"
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "Cooking class in Chiang Mai, full day, market tour included",
+    "th": "คลาสทำอาหารในเชียงใหม่ เต็มวัน รวมทัวร์ตลาด",
+    "my": "ချင်းမိုင်တွင် ချက်ပြုတ်သင်တန်း၊ တစ်နေ့လုံး၊ ဈေးလှည့်လည်ခြင်းပါ",
+    "zh": "清迈烹饪课，全天，含逛市场",
+    "de": "Kochkurs in Chiang Mai, ganzer Tag, mit Marktbesuch"
+   },
+   "p": {
+    "en": "฿1,500–2,500",
+    "th": "฿1,500–2,500",
+    "my": "฿1,500–2,500",
+    "zh": "฿1,500–2,500",
+    "de": "฿1,500–2,500"
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "Muay thai, one group class at Dang Muay Thai, Chiang Mai",
+    "th": "มวยไทย คลาสกลุ่มหนึ่งครั้ง ที่ Dang Muay Thai เชียงใหม่",
+    "my": "မွေထိုင်း၊ Dang Muay Thai ချင်းမိုင်တွင် အုပ်စုလိုက်သင်တန်း တစ်ခါ",
+    "zh": "泰拳，清迈 Dang Muay Thai 团体课一节",
+    "de": "Muay Thai, eine Gruppenstunde im Dang Muay Thai, Chiang Mai"
+   },
+   "p": {
+    "en": "฿350",
+    "th": "฿350",
+    "my": "฿350",
+    "zh": "฿350",
+    "de": "฿350"
+   },
+   "src": "https://fightersvault.com/blog/dang-muay-thai-review"
+  },
+  {
+   "t": {
+    "en": "Silver workshop, NOVA Artlab, Chiang Mai",
+    "th": "เวิร์กช็อปเครื่องเงิน NOVA Artlab เชียงใหม่",
+    "my": "ငွေထည်အလုပ်ရုံ၊ NOVA Artlab၊ ချင်းမိုင်",
+    "zh": "银饰工作坊，NOVA Artlab，清迈",
+    "de": "Silber-Workshop, NOVA Artlab, Chiang Mai"
+   },
+   "p": {
+    "en": "From ฿3,500 a person",
+    "th": "เริ่ม ฿3,500 ต่อคน",
+    "my": "တစ်ဦး ฿3,500 မှစ၍",
+    "zh": "每人 ฿3,500 起",
+    "de": "Ab ฿3,500 pro Person"
+   },
+   "src": "https://www.timeout.com/chiang-mai/things-to-do/nova-artlab"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much is a cooking class in Chiang Mai?",
+    "th": "เรียนทำอาหารไทยที่เชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် ချက်ပြုတ်သင်တန်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "清迈的烹饪课多少钱？",
+    "de": "Was kostet ein Kochkurs in Chiang Mai?"
+   },
+   "a": {
+    "en": "The byklo guide lists ฿800 to 1,500 for a half day and ฿1,500 to 2,500 for a full day with a market tour. It says booking directly with a school is 15–30% cheaper than booking through Klook or Viator.",
+    "th": "คู่มือ byklo ระบุ ฿800 ถึง 1,500 สำหรับครึ่งวัน และ ฿1,500 ถึง 2,500 สำหรับเต็มวันพร้อมทัวร์ตลาด และระบุว่าจองกับโรงเรียนโดยตรงถูกกว่าจองผ่าน Klook หรือ Viator 15–30%",
+    "my": "byklo လမ်းညွှန်က နေ့တစ်ဝက်အတွက် ฿800 မှ 1,500၊ ဈေးလှည့်လည်ခြင်းပါ တစ်နေ့လုံးအတွက် ฿1,500 မှ 2,500 ဟု ဖော်ပြသည်။ ကျောင်းသို့ တိုက်ရိုက်ဘွတ်ကင်လုပ်ခြင်းသည် Klook သို့မဟုတ် Viator မှ ဘွတ်ကင်လုပ်ခြင်းထက် 15–30% ပိုသက်သာသည်ဟု ဆိုသည်။",
+    "zh": "byklo 指南列出：半天 ฿800 到 1,500，全天含逛市场 ฿1,500 到 2,500。指南称直接向学校订，比通过 Klook 或 Viator 便宜 15–30%。",
+    "de": "Der byklo-Leitfaden nennt ฿800 bis 1,500 für einen halben Tag und ฿1,500 bis 2,500 für einen ganzen Tag mit Marktbesuch. Direkt bei der Schule zu buchen sei 15–30% günstiger als über Klook oder Viator."
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "q": {
+    "en": "Is there a cooking class in the evening in Chiang Mai?",
+    "th": "มีคลาสทำอาหารช่วงเย็นในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်တွင် ညနေချက်ပြုတ်သင်တန်း ရှိပါသလား။",
+    "zh": "清迈有晚上的烹饪课吗？",
+    "de": "Gibt es in Chiang Mai einen Kochkurs am Abend?"
+   },
+   "a": {
+    "en": "Yes. The byklo guide lists Smart Cook with a class from 16:30 to 20:30 at ฿800 to 1,200.",
+    "th": "มี คู่มือ byklo ระบุ Smart Cook เปิดคลาส 16:30 ถึง 20:30 น. ราคา ฿800 ถึง 1,200",
+    "my": "ရှိသည်။ byklo လမ်းညွှန်က Smart Cook ၏ 16:30 မှ 20:30 အထိ သင်တန်းကို ฿800 မှ 1,200 ဟု ဖော်ပြသည်။",
+    "zh": "有。byklo 指南列出 Smart Cook 的课程，16:30 到 20:30，฿800 到 1,200。",
+    "de": "Ja. Der byklo-Leitfaden nennt Smart Cook mit einem Kurs von 16:30 bis 20:30 Uhr zu ฿800 bis 1,200."
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "q": {
+    "en": "Are there vegetarian cooking classes in Chiang Mai?",
+    "th": "มีคลาสทำอาหารมังสวิรัติในเชียงใหม่ไหม",
+    "my": "ချင်းမိုင်တွင် သတ်သတ်လွတ် ချက်ပြုတ်သင်တန်းများ ရှိပါသလား။",
+    "zh": "清迈有素食烹饪课吗？",
+    "de": "Gibt es in Chiang Mai vegetarische Kochkurse?"
+   },
+   "a": {
+    "en": "Yes. The byklo guide says vegetarian and vegan versions are available, and that Smile Organic and Khom Loy specialise in plant-based menus. Tofu, mushroom and tempeh can replace fish sauce and shrimp paste.",
+    "th": "มี คู่มือ byklo ระบุว่ามีเมนูมังสวิรัติและวีแกน และ Smile Organic กับ Khom Loy เน้นเมนูจากพืช โดยใช้เต้าหู้ เห็ด และเทมเป้แทนน้ำปลาและกะปิได้",
+    "my": "ရှိသည်။ byklo လမ်းညွှန်က သတ်သတ်လွတ်နှင့် ဗီဂန်ဟင်းများ ရနိုင်ပြီး Smile Organic နှင့် Khom Loy တို့က အပင်အခြေခံ မီနူးများ အထူးပြုသည်ဟု ဆိုသည်။ ငါးငံပြာရည်နှင့် ငပိအစား တိုဖူး၊ မို့မှုနှင့် တမ်ပေးကို သုံးနိုင်သည်။",
+    "zh": "有。byklo 指南说有素食和纯素版本，Smile Organic 和 Khom Loy 专做植物性菜单，可用豆腐、蘑菇和天贝代替鱼露和虾酱。",
+    "de": "Ja. Der byklo-Leitfaden schreibt, es gebe vegetarische und vegane Varianten, und Smile Organic und Khom Loy seien auf pflanzliche Menüs spezialisiert. Tofu, Pilze und Tempeh können Fischsauce und Garnelenpaste ersetzen."
+   },
+   "src": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "q": {
+    "en": "How much is a muay thai class in Chiang Mai?",
+    "th": "เรียนมวยไทยที่เชียงใหม่ราคาเท่าไร",
+    "my": "ချင်းမိုင်တွင် မွေထိုင်းသင်တန်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "清迈上一节泰拳课多少钱？",
+    "de": "Was kostet eine Muay-Thai-Stunde in Chiang Mai?"
+   },
+   "a": {
+    "en": "Dang Muay Thai in Chiang Mai lists a single group class at ฿350. A group class runs about 1.5 hours.",
+    "th": "Dang Muay Thai ในเชียงใหม่ระบุคลาสกลุ่มหนึ่งครั้ง ฿350 คลาสกลุ่มใช้เวลาราว 1.5 ชั่วโมง",
+    "my": "ချင်းမိုင်ရှိ Dang Muay Thai က အုပ်စုလိုက်သင်တန်း တစ်ခါကို ฿350 ဟု ဖော်ပြသည်။ အုပ်စုလိုက်သင်တန်းသည် 1.5 နာရီခန့် ကြာသည်။",
+    "zh": "清迈的 Dang Muay Thai 团体课单节 ฿350，约 1.5 小时。",
+    "de": "Das Dang Muay Thai in Chiang Mai nennt eine einzelne Gruppenstunde zu ฿350. Eine Gruppenstunde dauert etwa 1,5 Stunden."
+   },
+   "src": "https://fightersvault.com/blog/dang-muay-thai-review"
+  },
+  {
+   "q": {
+    "en": "Can a beginner join a muay thai class in Chiang Mai?",
+    "th": "มือใหม่เรียนมวยไทยที่เชียงใหม่ได้ไหม",
+    "my": "စတင်သူတစ်ဦး ချင်းမိုင်တွင် မွေထိုင်းသင်တန်း တက်နိုင်ပါသလား။",
+    "zh": "初学者可以在清迈上泰拳课吗？",
+    "de": "Kann eine Anfängerin in Chiang Mai an einer Muay-Thai-Stunde teilnehmen?"
+   },
+   "a": {
+    "en": "Yes. Visit Thailand Today calls The Bear Fight Club in Chiang Mai a small, friendly gym and a beginner favorite, with group classes from about ฿300.",
+    "th": "ได้ Visit Thailand Today เรียก The Bear Fight Club ในเชียงใหม่ว่าเป็นยิมเล็กๆ บรรยากาศเป็นมิตร และเป็นที่โปรดของมือใหม่ คลาสกลุ่มเริ่มประมาณ ฿300",
+    "my": "နိုင်သည်။ Visit Thailand Today က ချင်းမိုင်ရှိ The Bear Fight Club ကို သေးငယ်ပြီး ဖော်ရွေသော အားကစားခန်းဟု ဖော်ပြကာ စတင်သူများ နှစ်သက်ရာဟု ဆိုသည်။ အုပ်စုလိုက်သင်တန်းကို ฿300 ခန့်မှ စတင်သည်။",
+    "zh": "可以。Visit Thailand Today 称清迈的 The Bear Fight Club 是一家小而友好的拳馆，深受初学者欢迎，团体课约 ฿300 起。",
+    "de": "Ja. Visit Thailand Today nennt den The Bear Fight Club in Chiang Mai ein kleines, freundliches Gym und einen Liebling der Anfänger, mit Gruppenstunden ab etwa ฿300."
+   },
+   "src": "https://www.visitthailandtoday.com/activities-tours/chiang-mai/the-bear-fight-club-chiang-mai"
+  }
+ ],
+ "related": [
+  "balloon",
+  "trip-plan",
+  "lantern",
+  "tour-day",
+  "car-guide",
+  "interp"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "byklo: Chiang Mai cooking class guide",
+    "th": "byklo: คู่มือคลาสทำอาหารเชียงใหม่",
+    "my": "byklo: ချင်းမိုင် ချက်ပြုတ်သင်တန်း လမ်းညွှန်",
+    "zh": "byklo：清迈烹饪课指南",
+    "de": "byklo: Leitfaden zu Kochkursen in Chiang Mai"
+   },
+   "href": "https://byklo.rent/en/blog/chiang-mai-cooking-class-guide/"
+  },
+  {
+   "t": {
+    "en": "Time Out Chiang Mai: NOVA Artlab silver workshop",
+    "th": "Time Out เชียงใหม่: เวิร์กช็อปเครื่องเงิน NOVA Artlab",
+    "my": "Time Out ချင်းမိုင်: NOVA Artlab ငွေထည်အလုပ်ရုံ",
+    "zh": "Time Out 清迈：NOVA Artlab 银饰工作坊",
+    "de": "Time Out Chiang Mai: Silber-Workshop im NOVA Artlab"
+   },
+   "href": "https://www.timeout.com/chiang-mai/things-to-do/nova-artlab"
+  }
+ ],
+ "glyphs": [
+  "frying-pan",
+  "muscle",
+  "translate"
+ ]
+}

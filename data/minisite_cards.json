@@ -1,0 +1,3477 @@
+[
+{
+"id": "accessible",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Website easier to read",
+"th": "อ่านง่ายขึ้น",
+"sub": "Readers with low vision, older readers and people who use a screen reader (software that reads a page aloud) need pages built so they can read them.",
+"price": "฿15,000",
+"stops": [
+"eye",
+"sound",
+"check"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"eye",
+"sound",
+"laptop"
+]
+},
+{
+"id": "accident",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "big",
+"en": "After an accident",
+"th": "หลังเกิดอุบัติเหตุ",
+"sub": "After a crash in Thailand, the police report, the insurer and the rental shop use Thai. The compulsory insurance pays up to ฿30,000 a person for treatment before fault is decided.",
+"price": "฿8,000",
+"stops": [
+"warning",
+"translate",
+"page"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"scooter",
+"page",
+"telephone"
+]
+},
+{
+"id": "ads-run",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Ads run for you",
+"th": "ทำและลงโฆษณาให้",
+"sub": "Shops pay for ads on Facebook, Instagram, TikTok or Google to reach people in Thailand, and each platform has its own budget rules, account and report.",
+"price": "฿8,000 / month",
+"stops": [
+"megaphone",
+"coin",
+"rocket"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"megaphone",
+"rocket",
+"abacus"
+]
+},
+{
+"id": "agency-sheet",
+"cat": "stay",
+"catn": "Hotels & homes",
+"tier": "modest",
+"en": "Listing sheet for a property agency",
+"th": "ตารางประกาศสำหรับนายหน้า",
+"sub": "An agency's listings change often. A home that is sold or let stays on the list until someone removes it, and callers ask about homes that are gone.",
+"price": "฿2,500 / month",
+"stops": [
+"home",
+"copy",
+"refresh"
+],
+"door": "home",
+"pic": null,
+"draw": null,
+"glyphs": [
+"page",
+"refresh",
+"home"
+]
+},
+{
+"id": "ai-assistant",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "big",
+"en": "AI assistant with your name on it",
+"th": "ผู้ช่วย AI ในชื่อของคุณ",
+"sub": "Visitors ask the same questions again and again, and a person has to answer each one. An assistant on your site answers from your own pages, under your name.",
+"price": "from ฿20,000",
+"stops": [
+"page",
+"robot",
+"chat"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"robot",
+"chat",
+"laptop"
+]
+},
+{
+"id": "ai-automation",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "big",
+"en": "Automation",
+"th": "ระบบอัตโนมัติ",
+"sub": "A task done by hand week after week takes hours that add up. This service sets one such task to run itself in n8n, Make, Zapier or code.",
+"price": "฿8,000 / automated task",
+"stops": [
+"gears",
+"robot",
+"done"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"gears",
+"refresh",
+"clock"
+]
+},
+{
+"id": "ai-batch",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "modest",
+"en": "Clean or sort a big file with AI",
+"th": "ทำความสะอาดหรือจัดไฟล์ใหญ่ด้วย AI",
+"sub": "People have files with thousands of rows to clean, sort or summarise, and AI companies run bulk jobs at half the usual price.",
+"price": "฿1,000",
+"stops": [
+"abacus",
+"robot",
+"check"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"robot",
+"page",
+"sparkle"
+]
+},
+{
+"id": "ai-line",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "big",
+"en": "One LINE account for many shops",
+"th": "ไลน์เดียวหลายร้าน",
+"sub": "A shop with its own LINE account has its own inbox and its own plan fee. One LINE Official Account can answer for several shops, hotels or branches, and chats get the replies of the right one.",
+"price": "฿20,000",
+"stops": [
+"home",
+"chat",
+"robot"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"chat",
+"compass",
+"home"
+]
+},
+{
+"id": "almanac-widget",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Calendar or fortune calculator for your website",
+"th": "ปฏิทินหรือเครื่องคำนวณดวงบนเว็บ",
+"sub": "People put a Lanna calendar or a fortune calculator on a site so visitors can look up a day or a reading there. The north keeps its own months and its own good and bad days.",
+"price": "฿10,000",
+"stops": [
+"moon",
+"laptop",
+"sparkle"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"calendar",
+"moon",
+"laptop"
+]
+},
+{
+"id": "amulet",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Thai Buddhist amulets",
+"th": "พระเครื่อง",
+"sub": "Amulets are small sacred objects that people wear for protection or luck. The price of one depends on its maker, age and scarcity, and forgeries are common.",
+"price": "from ฿500",
+"stops": [
+"camera",
+"eye",
+"coin"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lotus",
+"camera",
+"search"
+]
+},
+{
+"id": "app-test",
+"cat": "fix",
+"catn": "Security & tech fixes",
+"tier": "modest",
+"en": "App tested on Thai phones",
+"th": "ทดสอบแอปบนมือถือคนไทย",
+"sub": "People want to know what breaks when Thai speakers use their app on the phones sold in Thailand, before customers find out.",
+"price": "฿5,000",
+"stops": [
+"gear",
+"eye",
+"page"
+],
+"door": "lock",
+"pic": null,
+"draw": null,
+"glyphs": [
+"manicule",
+"error",
+"thumbs-up"
+]
+},
+{
+"id": "app",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "big",
+"en": "Phone app",
+"th": "แอปมือถือ",
+"sub": "A web app installs from the browser and an Android app from a file, so no store takes a registration fee or a share of sales. Either opens and saves with no signal.",
+"price": "from ฿8,000",
+"stops": [
+"lightbulb",
+"gears",
+"wifi"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"wifi",
+"gear"
+]
+},
+{
+"id": "article",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Article",
+"th": "บทความ",
+"sub": "An article that names its sources lets a reader check it, and a website or blog needs its articles written.",
+"price": "฿3,000",
+"stops": [
+"search",
+"nib",
+"page"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"nib",
+"bookmark",
+"search"
+]
+},
+{
+"id": "assistant",
+"cat": "outsource",
+"catn": "Staff & office tasks",
+"tier": "modest",
+"en": "Your assistant in Thailand",
+"th": "ผู้ช่วยส่วนตัวในไทย",
+"sub": "People who live or run a business in Thailand need a Thai and English speaker to make calls, place orders, pick things up and handle paperwork.",
+"price": "from ฿15,000",
+"stops": [
+"wave",
+"telephone",
+"calendar"
+],
+"door": "typewriter",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"parcel",
+"page"
+]
+},
+{
+"id": "awards",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Cyber-security award application",
+"th": "เอกสารส่งประกวดรางวัล",
+"sub": "A cyber-security award is decided from a written entry, so the entry has to say what the work was and show the evidence.",
+"price": "฿30,000",
+"stops": [
+"page",
+"nib",
+"crown"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"star",
+"nib",
+"crown"
+]
+},
+{
+"id": "balloon",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Hot-air balloon or paramotor (motor paraglider) flight",
+"th": "บินบอลลูนหรือพารามอเตอร์",
+"sub": "Balloons fly in Chiang Mai only from November to February, and paramotors fly at dawn and late afternoon, when the air is calm.",
+"price": "from ฿4,000",
+"stops": [
+"songthaew",
+"balloon",
+"star-struck"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"balloon",
+"sun",
+"cloud"
+]
+},
+{
+"id": "bank-account",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Thai bank account opened",
+"th": "เปิดบัญชีธนาคารไทย",
+"sub": "People open a Thai account for rent, bills, pay or the ฿800,000 retirement deposit, and banks set their own rules for foreigners.",
+"price": "฿4,000",
+"stops": [
+"coin",
+"gears",
+"done"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"passport",
+"chat"
+]
+},
+{
+"id": "bazi",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Bazi or I Ching reading",
+"th": "ปาจื้อหรืออี้จิง",
+"sub": "People ask for a Bazi chart, which is worked out from the year, month, day and hour of birth, or for an I Ching reading of one question.",
+"price": "from ฿2,000",
+"stops": [
+"calendar",
+"coin",
+"nib"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"dice",
+"moon"
+]
+},
+{
+"id": "blood",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "modest",
+"en": "Blood test or checkup booked",
+"th": "จองตรวจเลือดหรือตรวจสุขภาพ",
+"sub": "People book a blood test or a health check-up in Thailand, and Thai hospitals sell the check-up as a package with a price, a list of tests and an end date.",
+"price": "from ฿1,500",
+"stops": [
+"heart",
+"gears",
+"done"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"heart",
+"calendar",
+"translate"
+]
+},
+{
+"id": "books",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Bookkeeping in Thai and English",
+"th": "ทำบัญชีไทยและอังกฤษ",
+"sub": "People running a business in Thailand want each month's income and costs recorded in Thai for the accountant and in English for themselves.",
+"price": "฿4,000 / month",
+"stops": [
+"page",
+"abacus",
+"check"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"abacus",
+"pencil",
+"calendar"
+]
+},
+{
+"id": "bride",
+"cat": "weddings",
+"catn": "Weddings & events",
+"tier": "big",
+"en": "Bride concierge",
+"th": "ผู้ช่วยเจ้าสาว",
+"sub": "A bride's day has a dress, hair and makeup, fittings, a photographer and a schedule. Someone else books and arranges them.",
+"price": "฿12,000",
+"stops": [
+"phuang-malai",
+"gears",
+"done"
+],
+"door": "phuang-malai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"sparkle",
+"scissors",
+"camera"
+]
+},
+{
+"id": "call",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Phone call in Thai",
+"th": "โทรแทนคุณ",
+"sub": "People ask for a call in Thai when they need an answer from a shop, clinic, office or landlord and would rather have it written down.",
+"price": "฿300 / call",
+"stops": [
+"telephone",
+"chat",
+"nib"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"chat",
+"translate"
+]
+},
+{
+"id": "calls-out",
+"cat": "outsource",
+"catn": "Staff & office tasks",
+"tier": "modest",
+"en": "Phone calls made for you",
+"th": "โทรออกแทนคุณ",
+"sub": "People want a list of names called in Thai or English, to sell something or to book appointments. Each result goes into a sheet.",
+"price": "฿5,000 / 10 hours",
+"stops": [
+"copy",
+"telephone",
+"abacus"
+],
+"door": "typewriter",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"calendar",
+"page"
+]
+},
+{
+"id": "car-guide",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Car, driver or guide for a day",
+"th": "รถ คนขับ หรือไกด์หนึ่งวัน",
+"sub": "People hire a car and driver to get around the north without driving, or a licensed guide to explain the sights in their own language.",
+"price": "from ฿3,000",
+"stops": [
+"songthaew",
+"wave",
+"clock"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"songthaew",
+"compass",
+"pin"
+]
+},
+{
+"id": "care-visits",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "modest",
+"en": "Visits to an older person",
+"th": "ไปเยี่ยมผู้สูงอายุ",
+"sub": "People with an older parent in Thailand want to know how the parent is, and a visitor can tell the family what was seen.",
+"price": "from ฿1,200",
+"stops": [
+"wave",
+"eye",
+"envelope"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"wai",
+"pencil"
+]
+},
+{
+"id": "cartoons",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Campaign cartoons",
+"th": "การ์ตูนสำหรับแคมเปญ",
+"sub": "A health, charity or public campaign uses drawn panels to carry its message in pictures.",
+"price": "฿5,000",
+"stops": [
+"pencil",
+"laugh",
+"megaphone"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"laugh",
+"pencil",
+"megaphone"
+]
+},
+{
+"id": "checkin",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "modest",
+"en": "Volunteer sign-up and check-in",
+"th": "ลงชื่อและเช็กอินอาสาสมัคร",
+"sub": "A volunteer programme needs a list of who signed up and who came, and the list can start on the volunteer's phone.",
+"price": "฿10,000",
+"stops": [
+"wave",
+"scan",
+"check"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"scan",
+"page"
+]
+},
+{
+"id": "clean-air",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "modest",
+"en": "Clean air at home",
+"th": "อากาศสะอาดในบ้าน",
+"sub": "Chiang Mai's air is worst from about February to April, and people want a sensor that shows indoor PM2.5 and a purifier that fits the room.",
+"price": "฿2,500",
+"stops": [
+"cloud",
+"gear",
+"leaf"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"cloud",
+"home",
+"leaf"
+]
+},
+{
+"id": "club-desk",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "modest",
+"en": "Admin help for a club",
+"th": "ผู้ช่วยธุรการสำหรับชมรม",
+"sub": "A club's mail, receipts and donations land on one volunteer, and the work comes back month after month.",
+"price": "฿8,000 / month",
+"stops": [
+"mailbox",
+"abacus",
+"check"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"envelope",
+"page",
+"coin"
+]
+},
+{
+"id": "compare",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Price comparison",
+"th": "เทียบราคาให้",
+"sub": "People set quotes side by side before they buy insurance, internet, a car, an appliance, a school place or a hospital package.",
+"price": "from ฿1,500",
+"stops": [
+"wai",
+"gears",
+"done"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"abacus",
+"coin",
+"search"
+]
+},
+{
+"id": "copy",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Words for your website",
+"th": "เนื้อหาเว็บไซต์",
+"sub": "A website in Thai and English needs the words for each page written in both languages.",
+"price": "฿4,000",
+"stops": [
+"nib",
+"translate",
+"laptop"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"typewriter",
+"translate",
+"laptop"
+]
+},
+{
+"id": "crawl-pay",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "modest",
+"en": "Charge AI bots for reading your site",
+"th": "เก็บเงินบอท AI",
+"sub": "AI companies send bots to read websites, and Cloudflare lets a site owner set a price for each read.",
+"price": "฿5,000",
+"stops": [
+"robot",
+"eye",
+"coin"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"spider",
+"coin",
+"lock"
+]
+},
+{
+"id": "crew",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "modest",
+"en": "Our team for one day, on a hard problem",
+"th": "ทีมหนึ่งวันกับโจทย์ยาก",
+"sub": "People bring a hard problem with many parts, and a crew of AI agents can work on the parts at the same time.",
+"price": "฿5,000",
+"stops": [
+"thinking",
+"clap",
+"lightbulb"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"robot",
+"gears",
+"lightbulb"
+]
+},
+{
+"id": "cs-desk",
+"cat": "outsource",
+"catn": "Staff & office tasks",
+"tier": "modest",
+"en": "Customer service in Thai",
+"th": "แอดมินตอบแชทภาษาไทย",
+"sub": "A shop or office gets chats on LINE, Messenger or email, and needs them answered in Thai and English on working days.",
+"price": "฿12,000 / month",
+"stops": [
+"mailbox",
+"chat",
+"smile"
+],
+"door": "typewriter",
+"pic": null,
+"draw": null,
+"glyphs": [
+"chat",
+"envelope",
+"clock"
+]
+},
+{
+"id": "data-crawl",
+"cat": "data",
+"catn": "Data & research",
+"tier": "modest",
+"en": "Data collector",
+"th": "โปรแกรมเก็บข้อมูล",
+"sub": "People want a data collector when a website or a set of files holds numbers they need in a table, and copying by hand takes too long.",
+"price": "฿6,000",
+"stops": [
+"laptop",
+"spider",
+"copy"
+],
+"door": "abacus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"spider",
+"laptop",
+"page"
+]
+},
+{
+"id": "date-pick",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Auspicious (lucky) date",
+"th": "หาฤกษ์",
+"sub": "People choose a date for a wedding, a move, an opening or a new car. In Thailand an astrologer often picks it from birth dates and a lunar calendar.",
+"price": "from ฿2,000",
+"stops": [
+"calendar",
+"sundial",
+"check"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"calendar",
+"moon",
+"sparkle"
+]
+},
+{
+"id": "death-help",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "modest",
+"en": "When someone dies in Thailand",
+"th": "เมื่อมีคนเสียชีวิตในไทย",
+"sub": "When someone dies in Thailand, the family needs the death registered, papers for the embassy, and a funeral home for a cremation or the flight home.",
+"price": "฿15,000",
+"stops": [
+"page",
+"passport",
+"lotus"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lotus",
+"stamp",
+"airplane"
+]
+},
+{
+"id": "decks",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "big",
+"en": "Presentation slides",
+"th": "สไลด์นำเสนอ",
+"sub": "An investor, a buyer or a grant panel looks through your slides before it replies. A pitch deck is that set of slides, in Thai or English.",
+"price": "฿6,000",
+"stops": [
+"lightbulb",
+"copy",
+"rocket"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"laptop",
+"rocket",
+"lightbulb"
+]
+},
+{
+"id": "demand-prices",
+"cat": "ai",
+"catn": "AI & bots",
+"tier": "modest",
+"en": "Prices that follow demand",
+"th": "ราคาที่ขยับตามความต้องการ",
+"sub": "People who sell rooms, meals or tickets want the price to go up when it is busy and down when it is quiet, as San Francisco does for parking.",
+"price": "฿20,000",
+"stops": [
+"hot",
+"coin",
+"sleepy"
+],
+"door": "robot",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"sun",
+"moon"
+]
+},
+{
+"id": "directory",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Directory website for your trade or region",
+"th": "สารบบของวงการคุณ",
+"sub": "The businesses and makers in a trade or region are spread over many sites; a directory puts them in one list, with sources, a map and a plain-text copy for AI tools.",
+"price": "from ฿20,000",
+"stops": [
+"search",
+"pin",
+"robot"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"pin",
+"compass",
+"bookmark"
+]
+},
+{
+"id": "dispute",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Help with bargaining and disputes",
+"th": "เพื่อนช่วยต่อรอง",
+"sub": "People ask for a Thai speaker to bargain or settle with a dealer, a seller, a landlord, a repairer or a neighbour, because the talk is in Thai and money is at stake.",
+"price": "฿800 / hour",
+"stops": [
+"angry",
+"chat",
+"smile"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"chat",
+"wai"
+]
+},
+{
+"id": "drawn",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Drawn map or picture",
+"th": "แผนที่หรือภาพวาด",
+"sub": "People ask for a drawn map or picture when a photograph or a paragraph does not show a place or an idea.",
+"price": "from ฿1,000",
+"stops": [
+"pencil",
+"compass",
+"sparkle"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"compass",
+"pencil",
+"pin"
+]
+},
+{
+"id": "eink-clock",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Lanna calendar clock",
+"th": "นาฬิกาปฏิทินล้านนา",
+"sub": "A clock that shows the Lanna day gives a temple, a hotel or a home the northern date at a glance.",
+"price": "฿12,000",
+"stops": [
+"sun",
+"clock",
+"moon"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"clock",
+"sun",
+"calendar"
+]
+},
+{
+"id": "elder-care",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "big",
+"en": "Care home or caregiver",
+"th": "บ้านพักหรือผู้ดูแลผู้สูงอายุ",
+"sub": "Finding a care home or a caregiver takes calls, visits and comparing. Someone else shortlists, visits and compares the homes, or finds a caregiver, interviews with you and hires one.",
+"price": "from ฿12,000",
+"stops": [
+"search",
+"home",
+"heart"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"heart",
+"home",
+"wai"
+]
+},
+{
+"id": "errand",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Errand",
+"th": "วิ่งธุระ",
+"sub": "People ask for an errand to be run when the counter, the queue or the shop is across town and they would rather send someone.",
+"price": "฿300 / hour",
+"stops": [
+"cart",
+"scooter",
+"done"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"parcel",
+"scooter",
+"cart"
+]
+},
+{
+"id": "etsy",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Etsy or eBay shop",
+"th": "ร้าน Etsy หรือ eBay",
+"sub": "People sell crafts and other goods to buyers abroad on Etsy or eBay. Each site has its own fees.",
+"price": "from ฿5,000",
+"stops": [
+"camera",
+"cart",
+"airplane"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"cart",
+"parcel",
+"earth"
+]
+},
+{
+"id": "event-kit",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "big",
+"en": "Charity event kit",
+"th": "ชุดจัดงานการกุศล",
+"sub": "A fundraiser for a club, school or charity needs a page with the details, QR codes for tickets or a raffle, a list of sponsors and thank-yous. This kit is those four.",
+"price": "฿10,000",
+"stops": [
+"party",
+"scan",
+"gift"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"party",
+"gift",
+"scan"
+]
+},
+{
+"id": "event-page",
+"cat": "weddings",
+"catn": "Weddings & events",
+"tier": "modest",
+"en": "Event page with tickets",
+"th": "หน้างานพร้อมขายบัตร",
+"sub": "A workshop, concert or festival needs seats paid before the day and a way to let people in.",
+"price": "฿8,000",
+"stops": [
+"laptop",
+"scan",
+"party"
+],
+"door": "phuang-malai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"party",
+"scan",
+"calendar"
+]
+},
+{
+"id": "event-plan",
+"cat": "weddings",
+"catn": "Weddings & events",
+"tier": "big",
+"en": "Event planning",
+"th": "วางแผนจัดงาน",
+"sub": "A party, launch, company dinner or retreat is a budget, a venue, food, sound and a running order. Someone else keeps them in order and runs the day.",
+"price": "฿20,000",
+"stops": [
+"phuang-malai",
+"gears",
+"done"
+],
+"door": "phuang-malai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"mic",
+"party",
+"calendar"
+]
+},
+{
+"id": "exchange",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Exchange-rate page",
+"th": "หน้าอัตราแลกเปลี่ยน",
+"sub": "People who run a money changer want customers to see today's buy and sell rates before they walk in.",
+"price": "฿5,000",
+"stops": [
+"coin",
+"refresh",
+"laptop"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"earth",
+"refresh"
+]
+},
+{
+"id": "experience",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Class or workshop, with a translator",
+"th": "คลาสหรือเวิร์กช็อปพร้อมล่าม",
+"sub": "People book a class to try muay thai, Thai cooking, silver work or weaving, and a translator is there so the teacher is understood.",
+"price": "฿1,500",
+"stops": [
+"muscle",
+"frying-pan",
+"translate"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"frying-pan",
+"muscle",
+"translate"
+]
+},
+{
+"id": "fb-care",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Facebook page management",
+"th": "ดูแลเพจ Facebook",
+"sub": "A shop's Facebook page needs posts and replies week after week, and the owner is busy with the shop.",
+"price": "฿8,000 / month",
+"stops": [
+"chat",
+"calendar",
+"heart"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"thumbs-up",
+"chat",
+"calendar"
+]
+},
+{
+"id": "findable",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "modest",
+"en": "Your collection easy to find online",
+"th": "ทำให้คอลเลกชันค้นเจอ",
+"sub": "A search engine reads the description, the credit and the labels of a photo, and a collection without them gives it little to read.",
+"price": "฿50,000 / 100 items",
+"stops": [
+"camera",
+"nib",
+"search"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"camera",
+"pencil",
+"search"
+]
+},
+{
+"id": "form",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Thai form filled in for you",
+"th": "กรอกฟอร์มให้",
+"sub": "Government and bank forms come in Thai, and people want them filled in with the English written beside the boxes.",
+"price": "฿400 / form",
+"stops": [
+"page",
+"pencil",
+"done"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"pencil",
+"page",
+"typewriter"
+]
+},
+{
+"id": "german",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Web pages in German, Swiss spelling",
+"th": "หน้าเว็บภาษาเยอรมัน แบบสวิส",
+"sub": "People put a web page into German for guests and buyers, and Swiss spelling writes ss where Germany writes ß.",
+"price": "฿1,200 / page",
+"stops": [
+"page",
+"translate",
+"flag"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"translate",
+"page",
+"flag"
+]
+},
+{
+"id": "giving",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "big",
+"en": "Giving page for your charity",
+"th": "หน้ารับบริจาค",
+"sub": "A gift can reach a charity by card, PayPal, Wise or bank transfer, and the fees differ by route. A giving page puts the routes side by side for the donor's country and amount.",
+"price": "from ฿30,000",
+"stops": [
+"earth",
+"heart",
+"gift"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"gift",
+"heart",
+"coin"
+]
+},
+{
+"id": "grab",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Grab, LINE MAN or ShopeeFood for your shop",
+"th": "Grab LINE MAN ShopeeFood สำหรับร้านของคุณ",
+"sub": "Shops list on delivery apps to sell to people who order food at home, and each app has its own sign-up, papers and review time.",
+"price": "from ฿1,000",
+"stops": [
+"scooter",
+"camera",
+"thumbs-up"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"scooter",
+"noodles",
+"telephone"
+]
+},
+{
+"id": "grants",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "big",
+"en": "Grants and large donations",
+"th": "ทุนและเงินบริจาคก้อนใหญ่",
+"sub": "Funders ask for different forms and set different dates. You get applications written to the funder's form, a case for support in English and Thai, and a calendar of funder deadlines.",
+"price": "from ฿8,000",
+"stops": [
+"lightbulb",
+"nib",
+"coin"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"page",
+"calendar",
+"gift"
+]
+},
+{
+"id": "graphics",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "big",
+"en": "Logo and brand look",
+"th": "โลโก้และภาพลักษณ์แบรนด์",
+"sub": "A name on a sign, a post and a page reads as one business when the logo and colours match.",
+"price": "฿6,000",
+"stops": [
+"lightbulb",
+"pencil",
+"sparkle"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"pencil",
+"sparkle",
+"flag"
+]
+},
+{
+"id": "guide-site",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Guide site for your town or hotel",
+"th": "เว็บไกด์สำหรับเมืองหรือโรงแรม",
+"sub": "A town, a hotel or a guesthouse gives visitors a page of where to go, eat and walk, with a route they follow on their own.",
+"price": "฿20,000",
+"stops": [
+"pin",
+"khao-soi",
+"compass"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"compass",
+"chedi",
+"pin"
+]
+},
+{
+"id": "help-page",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Help page with a live map",
+"th": "หน้าช่วยเหลือพร้อมแผนที่สด",
+"sub": "A tow, roadside or delivery firm gives a person in trouble one page that shows where the firm is and how far, with a help card in three languages.",
+"price": "from ฿10,000",
+"stops": [
+"warning",
+"pin",
+"songthaew"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"songthaew",
+"pin",
+"telephone"
+]
+},
+{
+"id": "house-blessing",
+"cat": "merit",
+"catn": "Buddhist merit & blessings",
+"tier": "big",
+"en": "House or shop blessing",
+"th": "ทำบุญบ้านหรือเปิดร้าน",
+"sub": "A house or shop blessing has several parts: monks, an altar, a ceremony master, offerings and a meal that ends by noon. Someone else lines them up.",
+"price": "฿8,000",
+"stops": [
+"home",
+"wai",
+"lotus"
+],
+"door": "lotus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"wai",
+"lotus"
+]
+},
+{
+"id": "idme",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "ID.me, VA or SSA sign-in help",
+"th": "ช่วยเข้าระบบ ID.me VA SSA",
+"sub": "US veterans and their families in Thailand can sign in to VA.gov through ID.me, which asks for identity documents and a video call.",
+"price": "฿1,500",
+"stops": [
+"lock",
+"key",
+"thumbs-up"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"laptop",
+"passport",
+"flag"
+]
+},
+{
+"id": "interactive",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Interactive page or game",
+"th": "หน้าเว็บโต้ตอบหรือเกม",
+"sub": "People ask for an interactive page when a subject is hard to explain in text, or when an event or a brand wants a game.",
+"price": "from ฿10,000",
+"stops": [
+"lightbulb",
+"dice",
+"laugh"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"dice",
+"gears",
+"laptop"
+]
+},
+{
+"id": "interp",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Interpreter",
+"th": "ล่าม",
+"sub": "People bring an interpreter when the officer, the doctor or the bank speaks a language they do not.",
+"price": "from ฿400",
+"stops": [
+"chat",
+"translate",
+"wai"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"mic",
+"chat",
+"telephone"
+]
+},
+{
+"id": "interview",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Recorded interview",
+"th": "บันทึกบทสัมภาษณ์",
+"sub": "A maker or an elder knows things that are not written down, and an interview records them with the person's consent.",
+"price": "฿15,000",
+"stops": [
+"mic",
+"scissors",
+"star"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"mic",
+"camera",
+"wai"
+]
+},
+{
+"id": "invoice",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Invoice page for PayPal or Wise",
+"th": "หน้าใบแจ้งหนี้ PayPal Wise",
+"sub": "A customer abroad needs an invoice they can open and pay online, and PayPal and Wise each take that payment their own way.",
+"price": "฿1,000",
+"stops": [
+"page",
+"earth",
+"coin"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"page",
+"earth",
+"coin"
+]
+},
+{
+"id": "kh-books",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Bookkeeping in Khmer and English",
+"th": "ทำบัญชีภาษาเขมรและอังกฤษ",
+"sub": "People who own a company in Cambodia want each month's income and costs recorded in Khmer for the tax office and in English for themselves.",
+"price": "US$149 / month",
+"stops": [
+"coin",
+"gears",
+"done"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"abacus",
+"translate",
+"earth"
+]
+},
+{
+"id": "lab-test",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "modest",
+"en": "Lab test arranged",
+"th": "ส่งตรวจห้องแล็บให้",
+"sub": "People send a sample to a Thai lab to learn what is in their water, food or material, or how pure a compound is.",
+"price": "from ฿2,500",
+"stops": [
+"dna",
+"page",
+"translate"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"dna",
+"parcel",
+"translate"
+]
+},
+{
+"id": "lang-leaves",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Lanna (northern Thai) palm-leaf manuscript read",
+"th": "ปริวรรตใบลานล้านนา",
+"sub": "Palm-leaf and folded-paper manuscripts in Tai Tham script, also called Lanna script, come out as text in Thai letters that more people can read.",
+"price": "฿500 / palm leaf",
+"stops": [
+"leaf",
+"eye",
+"page"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"leaf",
+"nib",
+"page"
+]
+},
+{
+"id": "lang-pages",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Website translation checked",
+"th": "ตรวจคำแปลหน้าเว็บ",
+"sub": "People have a Thai or English page read by a second pair of eyes for spelling, grammar and word order before it goes up.",
+"price": "฿400 / page",
+"stops": [
+"laptop",
+"pencil",
+"check"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"page",
+"pencil",
+"eye"
+]
+},
+{
+"id": "lang-shan",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Shan translation",
+"th": "แปลภาษาไทใหญ่",
+"sub": "People put notices, forms and letters into Shan for readers who use it: an estimated 3.2 million speakers in Shan State.",
+"price": "฿800 / page",
+"stops": [
+"page",
+"translate",
+"done"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"translate",
+"nib",
+"earth"
+]
+},
+{
+"id": "lanna-wedding",
+"cat": "merit",
+"catn": "Buddhist merit & blessings",
+"tier": "big",
+"en": "Lanna (northern Thai) wedding ceremony",
+"th": "พิธีแต่งงานแบบล้านนา",
+"sub": "A Lanna wedding has several parts: monks, the khwan rite, Lanna dress and a running order. Someone else lines them up.",
+"price": "฿25,000",
+"stops": [
+"heart",
+"phuang-malai",
+"wai"
+],
+"door": "lotus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"phuang-malai",
+"lantern",
+"lotus"
+]
+},
+{
+"id": "lantern",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Lantern festival night in Lamphun",
+"th": "คืนโคมแสนดวงที่ลำพูน",
+"sub": "In November people go to Wat Phra That Hariphunchai in Lamphun for the lantern lights, and Chiang Mai sets rules on where sky lanterns can fly.",
+"price": "฿4,000 / seat",
+"stops": [
+"songthaew",
+"chedi",
+"lantern"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lantern",
+"moon",
+"chedi"
+]
+},
+{
+"id": "leads",
+"cat": "data",
+"catn": "Data & research",
+"tier": "modest",
+"en": "List of possible customers",
+"th": "รายชื่อลูกค้าเป้าหมาย",
+"sub": "Teams that call or write to businesses start from a list: who fits, how to reach them, and where each name came from.",
+"price": "from ฿2,500",
+"stops": [
+"search",
+"home",
+"copy"
+],
+"door": "abacus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"envelope",
+"pin"
+]
+},
+{
+"id": "legalise",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Document legalised",
+"th": "รับรองเอกสาร",
+"sub": "People need the Ministry of Foreign Affairs seal, or a notary, on a document that another office has asked to see sealed, and someone has to take it to the counter and bring it back.",
+"price": "฿1,500 / document",
+"stops": [
+"page",
+"scooter",
+"stamp"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"stamp",
+"passport",
+"parcel"
+]
+},
+{
+"id": "line-memory",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "modest",
+"en": "Chat memory for your LINE group",
+"th": "ความจำสำหรับกลุ่มไลน์",
+"sub": "A person who joins a LINE group later cannot see the chat messages sent before, so the group answers the same questions again.",
+"price": "฿15,000",
+"stops": [
+"chat",
+"bookmark",
+"smile"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"chat",
+"search",
+"bookmark"
+]
+},
+{
+"id": "lucky-number",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Lucky phone number or car license plate",
+"th": "เบอร์หรือทะเบียนมงคล",
+"sub": "People ask whether a phone number or a car plate is lucky. Some plate numbers go to auction with starting prices of ฿500,000 or more.",
+"price": "฿600",
+"stops": [
+"telephone",
+"crossed-fingers",
+"star"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"telephone",
+"dice",
+"star"
+]
+},
+{
+"id": "luggage",
+"cat": "moving",
+"catn": "Moving house to or from Thailand",
+"tier": "modest",
+"en": "Luggage or scooter sent",
+"th": "ส่งกระเป๋าหรือมอเตอร์ไซค์",
+"sub": "People send a suitcase or a scooter to another city so they can travel without it. Couriers, Thailand Post and the State Railway each set their own weight and price.",
+"price": "฿800",
+"stops": [
+"parcel",
+"songthaew",
+"home"
+],
+"door": "songthaew",
+"pic": null,
+"draw": null,
+"glyphs": [
+"parcel",
+"scooter",
+"send"
+]
+},
+{
+"id": "map-archive",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "modest",
+"en": "Map of your projects or places",
+"th": "แผนที่โครงการของคุณ",
+"sub": "A charity with projects in many places can show them on one map. A tap on a place opens its page, with a link to give or to get in touch.",
+"price": "฿30,000",
+"stops": [
+"camera",
+"pin",
+"laptop"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"pin",
+"compass",
+"earth"
+]
+},
+{
+"id": "merchant",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Unfuck my merchant services",
+"th": "แก้ระบบรับชำระเงิน",
+"sub": "People look for this when a checkout will not take a payment, a payout is held, or PayPal or Stripe limits an account.",
+"price": "from ฿5,000",
+"stops": [
+"error",
+"wrench",
+"coin"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"wrench",
+"lock"
+]
+},
+{
+"id": "merit-dead",
+"cat": "merit",
+"catn": "Buddhist merit & blessings",
+"tier": "modest",
+"en": "Merit (Buddhist good deeds) for someone who died",
+"th": "ทำบุญอุทิศผู้ล่วงลับ",
+"sub": "People make merit for someone who has died on the 7th, 50th and 100th days, with monks invited to chant and eat.",
+"price": "฿3,000",
+"stops": [
+"calendar",
+"chedi",
+"camera"
+],
+"door": "lotus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lantern",
+"wai",
+"camera"
+]
+},
+{
+"id": "merit-you",
+"cat": "merit",
+"catn": "Buddhist merit & blessings",
+"tier": "modest",
+"en": "Merit (Buddhist good deeds) made for you",
+"th": "ทำบุญแทนคุณ",
+"sub": "People have merit made in their name at a wat when they live far away or cannot go, and they get photos or a video.",
+"price": "from ฿300",
+"stops": [
+"chedi",
+"lotus",
+"camera"
+],
+"door": "lotus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lotus",
+"wai",
+"camera"
+]
+},
+{
+"id": "mirror",
+"cat": "fix",
+"catn": "Security & tech fixes",
+"tier": "modest",
+"en": "Spare copy of your website",
+"th": "สำเนาสำรองของเว็บ",
+"sub": "When a host goes down, the site goes down with it, and visitors see an error page until the host is back.",
+"price": "฿5,000",
+"stops": [
+"server",
+"copy",
+"power"
+],
+"door": "lock",
+"pic": null,
+"draw": null,
+"glyphs": [
+"server",
+"copy",
+"power"
+]
+},
+{
+"id": "move",
+"cat": "moving",
+"catn": "Moving house to or from Thailand",
+"tier": "modest",
+"en": "Moving house into or out of Thailand",
+"th": "ย้ายบ้านเข้าหรือออกประเทศไทย",
+"sub": "People who move house into or out of Thailand deal with movers, freight forwarders, an inventory of the goods and customs papers, some of them in Thai.",
+"price": "from ฿8,000",
+"stops": [
+"home",
+"parcel",
+"airplane"
+],
+"door": "songthaew",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"parcel",
+"paper-boat"
+]
+},
+{
+"id": "name-charm",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Name charm",
+"th": "เครื่องรางเขียนชื่อ",
+"sub": "A name charm is a small protective piece with a person's own name written on it. In the north, the yant on such pieces is written in Lan Na script.",
+"price": "US$59",
+"stops": [
+"nib",
+"sparkle",
+"camera"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"nib",
+"camera",
+"parcel"
+]
+},
+{
+"id": "name-pick",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Auspicious (lucky) name",
+"th": "ตั้งชื่อมงคล",
+"sub": "People look for a name for a baby, for themselves, for a shop or for a company. Sellers in Thailand work from the birth date and from numerology.",
+"price": "from ฿1,500",
+"stops": [
+"thinking",
+"nib",
+"star"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"nib",
+"star",
+"lotus"
+]
+},
+{
+"id": "newsletter",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Newsletter",
+"th": "จดหมายข่าว",
+"sub": "A newsletter goes to a list, and each issue has to be written and laid out before it is sent.",
+"price": "฿2,000 / newsletter issue",
+"stops": [
+"nib",
+"envelope",
+"send"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"envelope",
+"mailbox",
+"send"
+]
+},
+{
+"id": "npa-homes",
+"cat": "stay",
+"catn": "Hotels & homes",
+"tier": "modest",
+"en": "Homes that banks are selling, found for you",
+"th": "หาบ้านและที่ดินที่ธนาคารขาย",
+"sub": "Banks in Thailand sell homes, condos and land they took over from borrowers, and each bank sets its own way to bid.",
+"price": "฿5,000",
+"stops": [
+"home",
+"gears",
+"done"
+],
+"door": "home",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"coin",
+"key"
+]
+},
+{
+"id": "online-shop",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "big",
+"en": "Online shop",
+"th": "ร้านค้าออนไลน์",
+"sub": "Shopee, Lazada and TikTok Shop keep a share of each sale. An own shop on your own domain takes PromptPay and cards, and the fees come from the payment provider.",
+"price": "฿25,000",
+"stops": [
+"laptop",
+"cart",
+"parcel"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"cart",
+"parcel",
+"coin"
+]
+},
+{
+"id": "ordering",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Online ordering for your café",
+"th": "สั่งออนไลน์สำหรับคาเฟ่",
+"sub": "Customers can order from their phones while they sit or queue, and the order reaches the till the café already uses.",
+"price": "฿10,000",
+"stops": [
+"coffee",
+"scan",
+"bell"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coffee",
+"telephone",
+"scan"
+]
+},
+{
+"id": "partner",
+"cat": "ship",
+"catn": "Shipping for business partners",
+"tier": "modest",
+"en": "Become a Hongdam shipping partner",
+"th": "เป็นพาร์ทเนอร์ขนส่งของหงส์ดำ",
+"sub": "A seller who ships crafts and small parcels out of Thailand needs an agreement with a shipping partner, a product list with tariff codes, and carrier accounts.",
+"price": "฿10,000",
+"stops": [
+"page",
+"parcel",
+"paper-boat"
+],
+"door": "parcel",
+"pic": null,
+"draw": null,
+"glyphs": [
+"parcel",
+"stamp",
+"coin"
+]
+},
+{
+"id": "patterns",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Lanna pattern files",
+"th": "ไฟล์ลายล้านนา",
+"sub": "Lanna and Thai ornament is drawn by hand, and a printer, a laser cutter, a sign maker or a tattoo artist needs it as a file.",
+"price": "฿2,000",
+"stops": [
+"pencil",
+"lotus",
+"copy"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lotus",
+"naga",
+"lantern"
+]
+},
+{
+"id": "paybox",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Accept PromptPay payments",
+"th": "รับเงินพร้อมเพย์",
+"sub": "Sellers on LINE or a web page take PromptPay transfers, and each transfer slip is read by a person unless a machine reads it.",
+"price": "฿4,000",
+"stops": [
+"scan",
+"coin",
+"done"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"scan",
+"telephone"
+]
+},
+{
+"id": "payouts",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Monthly pay list for your team",
+"th": "สรุปเงินเดือนทีม",
+"sub": "People who pay a team by the job want one list on the 1st of what each person is owed, and a way to pay each one.",
+"price": "฿2,000 / month",
+"stops": [
+"calendar",
+"abacus",
+"scan"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"calendar",
+"scan"
+]
+},
+{
+"id": "pha-yant",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Pha yant (sacred cloth) drawn for you",
+"th": "ผ้ายันต์เขียนให้",
+"sub": "A yant is a sacred design. It is tattooed on skin, and it also appears on cloth, on metal amulets and above doorways.",
+"price": "฿5,000",
+"stops": [
+"nib",
+"wai",
+"naga"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"nib",
+"lotus",
+"wai"
+]
+},
+{
+"id": "photo-proof",
+"cat": "charity",
+"catn": "Charities & clubs",
+"tier": "modest",
+"en": "Photo proof from the project site",
+"th": "หลักฐานรูปจากพื้นที่",
+"sub": "A funder or a board asks for proof that work happened, and a photo with a time and a place is proof they can look at.",
+"price": "฿30,000",
+"stops": [
+"camera",
+"stamp",
+"check"
+],
+"door": "gift",
+"pic": null,
+"draw": null,
+"glyphs": [
+"camera",
+"pin",
+"eye"
+]
+},
+{
+"id": "price-watch",
+"cat": "data",
+"catn": "Data & research",
+"tier": "modest",
+"en": "Price watch",
+"th": "ติดตามราคา",
+"sub": "Shops watch competitors' prices and stock to set their own, and opening each page by hand every day takes time.",
+"price": "฿1,500 / month",
+"stops": [
+"eye",
+"coin",
+"bell"
+],
+"door": "abacus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"coin",
+"eye",
+"cart"
+]
+},
+{
+"id": "print",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Signs and QR stands to print",
+"th": "ป้ายและป้ายคิวอาร์พร้อมพิมพ์",
+"sub": "A print shop works from a file, and the file fixes the size, the text and the QR code on the sign.",
+"price": "฿800 / piece",
+"stops": [
+"scan",
+"copy",
+"check"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"page",
+"scan",
+"typewriter"
+]
+},
+{
+"id": "proposal",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "big",
+"en": "Proposal or business plan",
+"th": "ข้อเสนอหรือแผนธุรกิจ",
+"sub": "A buyer, a partner, a bank, an investor or a visa office reads a document before it answers. A proposal or a business plan is that document, in Thai or English.",
+"price": "from ฿6,000",
+"stops": [
+"lightbulb",
+"page",
+"thumbs-up"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"page",
+"lightbulb",
+"coin"
+]
+},
+{
+"id": "reading",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Horoscope reading",
+"th": "ดูดวง",
+"sub": "People ask for a reading of their birth chart. A Thai chart is worked out from the date and time of birth.",
+"price": "from ฿2,500",
+"stops": [
+"calendar",
+"orrery",
+"page"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"orrery",
+"moon",
+"star"
+]
+},
+{
+"id": "rentals",
+"cat": "stay",
+"catn": "Hotels & homes",
+"tier": "modest",
+"en": "Rentals arranged",
+"th": "จัดหาของเช่าให้",
+"sub": "People rent a car or scooter for a trip or a stay, and equipment or a venue for an event. Each shop or supplier sets its own price and terms.",
+"price": "from ฿800",
+"stops": [
+"home",
+"gears",
+"done"
+],
+"door": "home",
+"pic": null,
+"draw": null,
+"glyphs": [
+"scooter",
+"key",
+"calendar"
+]
+},
+{
+"id": "research",
+"cat": "data",
+"catn": "Data & research",
+"tier": "modest",
+"en": "A question researched",
+"th": "ค้นคว้าคำถามให้",
+"sub": "People bring a question when they need facts with sources in writing and do not have days to look for them.",
+"price": "฿1,200 / question",
+"stops": [
+"thinking",
+"search",
+"page"
+],
+"door": "abacus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"search",
+"page",
+"lightbulb"
+]
+},
+{
+"id": "restaurant-desk",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Weekly help for your restaurant",
+"th": "ผู้ช่วยร้านอาหารรายสัปดาห์",
+"sub": "Prices on delivery apps and new reviews come in week after week, and an owner who runs a kitchen has little time to read them.",
+"price": "฿6,000 / month",
+"stops": [
+"noodles",
+"search",
+"calendar"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"noodles",
+"abacus",
+"chat"
+]
+},
+{
+"id": "retire",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "big",
+"en": "Retire in Thailand with our help",
+"th": "เกษียณในไทย เราจัดการให้",
+"sub": "Retiring in Thailand is a home, a bank account, a phone, a hospital and insurance, each at its own office. This service sets them up in order and leaves you one person to call.",
+"price": "from ฿25,000",
+"stops": [
+"passport",
+"home",
+"heart",
+"telephone"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"passport",
+"home",
+"sun"
+]
+},
+{
+"id": "romanise",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Thai names in English letters",
+"th": "ชื่อไทยเป็นอักษรอังกฤษ",
+"sub": "A set of Thai names needs one English spelling, and the Royal Institute's system writes the sound of each Thai word, not its letters.",
+"price": "฿500 / 100 names",
+"stops": [
+"translate",
+"nib",
+"check"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"pin",
+"typewriter",
+"page"
+]
+},
+{
+"id": "sak-yant",
+"cat": "luck",
+"catn": "Horoscopes & lucky charms",
+"tier": "modest",
+"en": "Sak yant (sacred tattoo) in a less-visited place",
+"th": "พาไปสักยันต์กับอาจารย์ในพื้นที่",
+"sub": "To Thais a sak yant carries protection, luck or charm. Visitors who want one from a master in the north have an interpreter beside them.",
+"price": "฿4,000",
+"stops": [
+"songthaew",
+"translate",
+"naga"
+],
+"door": "star",
+"pic": null,
+"draw": null,
+"glyphs": [
+"wai",
+"pin",
+"translate"
+]
+},
+{
+"id": "sec-hacked",
+"cat": "fix",
+"catn": "Security & tech fixes",
+"tier": "modest",
+"en": "Hacked site cleanup",
+"th": "กู้เว็บที่ถูกแฮก",
+"sub": "A hacked site can send visitors to spam pages, and Google can put “This site may be hacked” under it in search results.",
+"price": "฿5,000 / site",
+"stops": [
+"skull",
+"wrench",
+"lock"
+],
+"door": "lock",
+"pic": null,
+"draw": null,
+"glyphs": [
+"skull",
+"wrench",
+"lock"
+]
+},
+{
+"id": "sec-mail",
+"cat": "fix",
+"catn": "Security & tech fixes",
+"tier": "modest",
+"en": "Stop fake emails in your name",
+"th": "กันอีเมลปลอมในชื่อคุณ",
+"sub": "Fake emails can carry your domain's name in the From line. SPF, DKIM and DMARC are the three records a receiving mail server uses to tell your mail from a fake.",
+"price": "from ฿1,500",
+"stops": [
+"envelope",
+"warning",
+"lock"
+],
+"door": "lock",
+"pic": null,
+"draw": null,
+"glyphs": [
+"envelope",
+"lock",
+"scan"
+]
+},
+{
+"id": "signs",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Signs and menus translated",
+"th": "แปลป้ายและเมนู",
+"sub": "A shop's menu or sign works for the customers and staff who can read its language, and a Thai, English or Burmese version reaches the rest.",
+"price": "฿250 / sign or menu page",
+"stops": [
+"flag",
+"translate",
+"thumbs-up"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"translate",
+"noodles",
+"pencil"
+]
+},
+{
+"id": "site",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Website",
+"th": "เว็บไซต์",
+"sub": "People want a website in Thai and English, on an address of their own.",
+"price": "from ฿10,000",
+"stops": [
+"lightbulb",
+"laptop",
+"earth"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"laptop",
+"translate",
+"link"
+]
+},
+{
+"id": "social",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Social media posts",
+"th": "โพสต์โซเชียล",
+"sub": "A business that posts on Facebook, Instagram, TikTok or LINE needs words and a picture for a post.",
+"price": "฿500 / post",
+"stops": [
+"camera",
+"nib",
+"megaphone"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"share",
+"camera",
+"thumbs-up"
+]
+},
+{
+"id": "specialist",
+"cat": "care",
+"catn": "Retirement & health care",
+"tier": "modest",
+"en": "We go with you to a dentist, clinic or specialist",
+"th": "พาไปหาหมอฟัน คลินิก หรือแพทย์เฉพาะทาง",
+"sub": "People looking for a dentist, clinic or specialist in Chiang Mai want English at the appointment, a price before the visit and a booking that fits their insurance.",
+"price": "from ฿800",
+"stops": [
+"search",
+"calendar",
+"translate"
+],
+"door": "heart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"heart",
+"chat",
+"calendar"
+]
+},
+{
+"id": "spirit-house",
+"cat": "merit",
+"catn": "Buddhist merit & blessings",
+"tier": "modest",
+"en": "Spirit house (small shrine) installed",
+"th": "ตั้งศาลพระภูมิ",
+"sub": "People set up a spirit house when they move into a new home or open a shop. A ceremony, usually led by a Brahman priest, invites the spirits to live in it.",
+"price": "฿3,000",
+"stops": [
+"search",
+"spirit-house",
+"lotus"
+],
+"door": "lotus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"spirit-house",
+"home",
+"sparkle"
+]
+},
+{
+"id": "staff-papers",
+"cat": "money",
+"catn": "Money & accounting",
+"tier": "modest",
+"en": "Staff contract and payslips",
+"th": "สัญญาจ้างและสลิปเงินเดือน",
+"sub": "An employer taking on one person or a team wants a written contract and a monthly payslip, in Thai for the staff and English for the owner.",
+"price": "from ฿150",
+"stops": [
+"page",
+"nib",
+"coin"
+],
+"door": "coin",
+"pic": null,
+"draw": null,
+"glyphs": [
+"stamp",
+"page",
+"coin"
+]
+},
+{
+"id": "stall-page",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Market stall page with a QR sign",
+"th": "หน้าแผงตลาดพร้อมป้ายคิวอาร์",
+"sub": "A market stall meets many people for a few seconds each. A QR sign on the table opens the stall's page on the phone in their hand.",
+"price": "฿3,000",
+"stops": [
+"flag",
+"scan",
+"laptop"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"scan",
+"coin",
+"lantern"
+]
+},
+{
+"id": "stay-booking",
+"cat": "stay",
+"catn": "Hotels & homes",
+"tier": "big",
+"en": "Booking website for your hotel",
+"th": "เว็บรับจองสำหรับโรงแรม",
+"sub": "Booking sites keep a share of each room they sell. On your own booking website, guests book and pay you directly.",
+"price": "from ฿30,000",
+"stops": [
+"laptop",
+"calendar",
+"key"
+],
+"door": "home",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"calendar",
+"key"
+]
+},
+{
+"id": "stay-check",
+"cat": "stay",
+"catn": "Hotels & homes",
+"tier": "big",
+"en": "House or land checked before you buy",
+"th": "ตรวจบ้านหรือที่ดินก่อนซื้อ",
+"sub": "The paper that comes with land in Thailand records one of three things: ownership, a right of possession, or a permit to use the land. The land office charges its 2% transfer fee on an assessed price, a second number next to the asking price.",
+"price": "฿8,000",
+"stops": [
+"home",
+"search",
+"page"
+],
+"door": "home",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"page",
+"stamp"
+]
+},
+{
+"id": "stay-rent",
+"cat": "stay",
+"catn": "Hotels & homes",
+"tier": "big",
+"en": "A place to rent, found for you",
+"th": "หาที่พักเช่าให้",
+"sub": "Listings sit on portals and in Facebook groups, and a lease can be in Thai. You get a shortlist, up to 5 viewings, the lease read in English and the deposit terms checked.",
+"price": "฿6,000",
+"stops": [
+"search",
+"home",
+"key"
+],
+"door": "home",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"key",
+"pin"
+]
+},
+{
+"id": "street-survey",
+"cat": "data",
+"catn": "Data & research",
+"tier": "modest",
+"en": "Street photo survey",
+"th": "สำรวจถนนด้วยภาพ",
+"sub": "People ask for a street or a market to be listed shop by shop: the sign, the name and the place on a map.",
+"price": "฿5,000",
+"stops": [
+"scooter",
+"camera",
+"pin"
+],
+"door": "abacus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"camera",
+"pin",
+"eye"
+]
+},
+{
+"id": "su-khwan",
+"cat": "merit",
+"catn": "Buddhist merit & blessings",
+"tier": "modest",
+"en": "Su khwan ceremony (spirit blessing)",
+"th": "พิธีสู่ขวัญ",
+"sub": "People hold a su khwan to call the khwan, a person's life essence, back after a fright, an illness or a long journey.",
+"price": "฿3,000",
+"stops": [
+"phuang-malai",
+"wai",
+"sparkle"
+],
+"door": "lotus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"lotus",
+"phuang-malai",
+"wai"
+]
+},
+{
+"id": "subtitles",
+"cat": "outsource",
+"catn": "Staff & office tasks",
+"tier": "modest",
+"en": "Subtitles and transcripts",
+"th": "ซับไตเติลและถอดความ",
+"sub": "People want the spoken words of a video in writing, or on the screen as subtitles, in Thai, English or Burmese.",
+"price": "฿500 / 10 minutes",
+"stops": [
+"play",
+"nib",
+"page"
+],
+"door": "typewriter",
+"pic": null,
+"draw": null,
+"glyphs": [
+"sound",
+"typewriter",
+"play"
+]
+},
+{
+"id": "tap-card",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Contact card on a QR code",
+"th": "นามบัตรบนคิวอาร์",
+"sub": "A person hands out a code instead of a card, and whoever scans it gets the name, numbers and links on one page.",
+"price": "฿500",
+"stops": [
+"scan",
+"telephone",
+"smile"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"scan",
+"telephone",
+"envelope"
+]
+},
+{
+"id": "thai-lessons",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Thai lessons",
+"th": "เรียนภาษาไทย",
+"sub": "People learn Thai for daily life and work, and a short course in Thai is one of the studies the ED visa covers.",
+"price": "฿600 / hour",
+"stops": [
+"chat",
+"pencil",
+"star"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"wai",
+"chat",
+"laptop"
+]
+},
+{
+"id": "thai-plan",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "A written plan for a hard problem in Thailand",
+"th": "แผนสำหรับเรื่องยากในไทย",
+"sub": "People ask for a written plan when a bank, a visa, a property or a death in the family needs steps, offices and papers in the right order.",
+"price": "฿2,000",
+"stops": [
+"thinking",
+"lightbulb",
+"page"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"compass",
+"page",
+"pin"
+]
+},
+{
+"id": "there",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Someone at your place",
+"th": "คนไปอยู่ด้วยที่หน้างาน",
+"sub": "People ask for someone at their place when a tradesperson, a landlord or a delivery comes and they want a Thai speaker there who knows the price that was agreed.",
+"price": "฿600 / hour",
+"stops": [
+"home",
+"translate",
+"eye"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"home",
+"eye",
+"translate"
+]
+},
+{
+"id": "tour-3d",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Three days in northern Thailand",
+"th": "สามวันในภาคเหนือ",
+"sub": "People book three days in the north to see Chiang Rai's temples, Doi Tung and the Mekong in one trip, with one car and one guide.",
+"price": "฿20,000 / person",
+"stops": [
+"songthaew",
+"chedi",
+"moon"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"chedi",
+"naga",
+"camera"
+]
+},
+{
+"id": "tour-day",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Private day tour",
+"th": "ทัวร์ส่วนตัวหนึ่งวัน",
+"sub": "People hire a car and a guide for the day to reach the White Temple, Doi Inthanon and other sights that lie hours from town.",
+"price": "from ฿8,000",
+"stops": [
+"songthaew",
+"chedi",
+"khao-soi"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"songthaew",
+"chedi",
+"compass"
+]
+},
+{
+"id": "trade-photos",
+"cat": "shop",
+"catn": "Shops & restaurants",
+"tier": "modest",
+"en": "Product photos",
+"th": "ถ่ายรูปสินค้า",
+"sub": "Customers choose from pictures on Grab, Shopee and shop pages, and each place asks for its own size and background.",
+"price": "฿400 / item",
+"stops": [
+"gift",
+"camera",
+"cart"
+],
+"door": "cart",
+"pic": null,
+"draw": null,
+"glyphs": [
+"camera",
+"parcel",
+"cart"
+]
+},
+{
+"id": "trades",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "modest",
+"en": "Plumber, electrician or air-conditioning worker, booked",
+"th": "หาช่างประปา ช่างไฟ ช่างแอร์",
+"sub": "People look for a plumber, an electrician or an air-con cleaner in Thai, and want the price before the work starts.",
+"price": "฿500 / job",
+"stops": [
+"home",
+"telephone",
+"wrench",
+"calendar"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"wrench",
+"lightning",
+"key"
+]
+},
+{
+"id": "traffic",
+"cat": "data",
+"catn": "Data & research",
+"tier": "modest",
+"en": "Website visitors: people and bots",
+"th": "นับผู้เข้าชม คนและบอท",
+"sub": "Site owners want to know how many visits come from people and how many from bots.",
+"price": "฿1,200 / month",
+"stops": [
+"eye",
+"wave",
+"robot"
+],
+"door": "abacus",
+"pic": null,
+"draw": null,
+"glyphs": [
+"eye",
+"robot",
+"earth"
+]
+},
+{
+"id": "translate",
+"cat": "translate",
+"catn": "Translation",
+"tier": "modest",
+"en": "Document translation",
+"th": "แปลเอกสาร",
+"sub": "People translate passports, contracts and certificates for visas, banks and weddings, and offices set their own rules for the translation they accept.",
+"price": "from ฿500",
+"stops": [
+"page",
+"translate",
+"stamp"
+],
+"door": "translate",
+"pic": null,
+"draw": null,
+"glyphs": [
+"translate",
+"page",
+"stamp"
+]
+},
+{
+"id": "tribute",
+"cat": "weddings",
+"catn": "Weddings & events",
+"tier": "modest",
+"en": "Web page for a wedding, a monk ordination or a memorial",
+"th": "หน้าเว็บงานแต่ง บวช หรืองานรำลึก",
+"sub": "A wedding, an ordination or a memorial brings people together, and one page can hold the photos, video, times and map.",
+"price": "from ฿5,000",
+"stops": [
+"camera",
+"laptop",
+"heart"
+],
+"door": "phuang-malai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"phuang-malai",
+"lotus",
+"chat"
+]
+},
+{
+"id": "trip-plan",
+"cat": "tours",
+"catn": "Tours & trips",
+"tier": "modest",
+"en": "Trip plan, booked for you",
+"th": "วางแผนเที่ยวและจองให้",
+"sub": "In the north the sights lie hours apart by road, and the cool season runs from November to February.",
+"price": "฿3,000",
+"stops": [
+"compass",
+"tuk-tuk",
+"calendar"
+],
+"door": "tuk-tuk",
+"pic": null,
+"draw": null,
+"glyphs": [
+"calendar",
+"compass",
+"pin"
+]
+},
+{
+"id": "typing",
+"cat": "outsource",
+"catn": "Staff & office tasks",
+"tier": "modest",
+"en": "Paper forms typed into a spreadsheet",
+"th": "พิมพ์ฟอร์มกระดาษ",
+"sub": "People hold paper forms and receipts in Thai or English handwriting, and need the names and numbers in a sheet they can sort and add up.",
+"price": "฿1,000 / 100 forms",
+"stops": [
+"page",
+"typewriter",
+"laptop"
+],
+"door": "typewriter",
+"pic": null,
+"draw": null,
+"glyphs": [
+"typewriter",
+"page",
+"eye"
+]
+},
+{
+"id": "vehicle",
+"cat": "help",
+"catn": "Thai-language help",
+"tier": "big",
+"en": "Car or motorcycle bought with you",
+"th": "ซื้อรถยนต์หรือมอเตอร์ไซค์ไปด้วยกัน",
+"sub": "A vehicle bought in Thailand is registered in the buyer's name at the Department of Land Transport. A foreign buyer shows a passport and a residence document or a work permit.",
+"price": "from ฿4,000",
+"stops": [
+"wai",
+"gears",
+"done"
+],
+"door": "wai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"scooter",
+"key",
+"stamp"
+]
+},
+{
+"id": "vibe",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Finish my vibe code",
+"th": "ทำโค้ดที่เขียนด้วย AI ให้เสร็จ",
+"sub": "People start an app or site with an AI tool (Lovable, Bolt, Replit, Cursor) and want it read through, fixed and published.",
+"price": "from ฿5,000",
+"stops": [
+"robot",
+"wrench",
+"rocket"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"robot",
+"wrench",
+"rocket"
+]
+},
+{
+"id": "video",
+"cat": "design",
+"catn": "Design & writing",
+"tier": "modest",
+"en": "Short video",
+"th": "คลิปสั้น",
+"sub": "A business on TikTok, Reels or Shorts needs short vertical videos, and each one has to be cut and finished.",
+"price": "฿2,000 / video",
+"stops": [
+"camera",
+"scissors",
+"play"
+],
+"door": "pencil",
+"pic": null,
+"draw": null,
+"glyphs": [
+"play",
+"camera",
+"scissors"
+]
+},
+{
+"id": "voice",
+"cat": "outsource",
+"catn": "Staff & office tasks",
+"tier": "modest",
+"en": "Thai voice recording",
+"th": "บันทึกเสียงภาษาไทย",
+"sub": "People need Thai lines spoken for an app, a video or a phone message. Sellers price them by the second, the minute or the word.",
+"price": "฿1,000 / minute",
+"stops": [
+"page",
+"mic",
+"sound"
+],
+"door": "typewriter",
+"pic": null,
+"draw": null,
+"glyphs": [
+"mic",
+"sound",
+"play"
+]
+},
+{
+"id": "web-care",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Website maintenance",
+"th": "ดูแลเว็บไซต์",
+"sub": "A site needs updates and backups, and someone told when it goes down.",
+"price": "฿3,000 / month",
+"stops": [
+"save",
+"wrench",
+"bell"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"wrench",
+"bell",
+"save"
+]
+},
+{
+"id": "web-dns",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Move your domain's settings to Cloudflare",
+"th": "ย้ายการตั้งค่าโดเมนไป Cloudflare",
+"sub": "People move their domain's DNS to a free Cloudflare account, so the website opens with and without www and an old host can be cancelled.",
+"price": "฿2,000",
+"stops": [
+"laptop",
+"gears",
+"done"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"cloud",
+"key",
+"mailbox"
+]
+},
+{
+"id": "web-found",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "big",
+"en": "Be found on Google and AI search",
+"th": "ตั้งค่า Google และ AI",
+"sub": "People ask Google or an AI assistant before they call or visit. The tools list pages they have found and read. This set-up adds the files and labels that help them find and read a site.",
+"price": "฿5,000",
+"stops": [
+"search",
+"robot",
+"star"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"search",
+"robot",
+"pin"
+]
+},
+{
+"id": "web-license",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Licence to use our website in your city",
+"th": "เว็บของเรา สำหรับเมืองของคุณ",
+"sub": "People in another city or province want one of these sites for their own place.",
+"price": "฿50,000",
+"stops": [
+"laptop",
+"key",
+"pin"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"copy",
+"compass",
+"key"
+]
+},
+{
+"id": "web-line",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "big",
+"en": "LINE shop or booking app",
+"th": "แอปในไลน์ ร้านหรือจอง",
+"sub": "Many customers in Thailand are already in LINE. You get your LINE account set up with its menu and replies, and an app inside LINE for bookings, orders or member cards, with no password to remember.",
+"price": "฿25,000",
+"stops": [
+"chat",
+"cart",
+"calendar"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"chat",
+"cart",
+"telephone"
+]
+},
+{
+"id": "web-mail",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Email with your own web address",
+"th": "อีเมลชื่อของคุณเอง",
+"sub": "People want mail from their own name, like you@yourshop.com, delivered to the inbox they already use.",
+"price": "from ฿1,500",
+"stops": [
+"envelope",
+"link",
+"mailbox"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"envelope",
+"mailbox",
+"link"
+]
+},
+{
+"id": "web-move",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Move your website to a new host",
+"th": "ย้ายโฮสติ้ง",
+"sub": "People move a site from Wix, WordPress or another host to a new one, and the domain and mail move too.",
+"price": "฿5,000",
+"stops": [
+"server",
+"parcel",
+"check"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"parcel",
+"server",
+"link"
+]
+},
+{
+"id": "web-search",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Search box for your site",
+"th": "ช่องค้นหาสำหรับเว็บ",
+"sub": "A site with many pages needs a way to find one page, and Thai text has no spaces between words.",
+"price": "฿5,000",
+"stops": [
+"laptop",
+"search",
+"check"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"search",
+"translate",
+"page"
+]
+},
+{
+"id": "web-sharecard",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Link preview picture",
+"th": "ภาพตัวอย่างลิงก์",
+"sub": "When a link is posted on LINE, Facebook, X, Bluesky or Mastodon, the picture and title next to it are what people see.",
+"price": "฿800 / page",
+"stops": [
+"link",
+"camera",
+"share"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"share",
+"camera",
+"link"
+]
+},
+{
+"id": "wedding",
+"cat": "weddings",
+"catn": "Weddings & events",
+"tier": "big",
+"en": "Wedding planning",
+"th": "วางแผนงานแต่งงาน",
+"sub": "A wedding is a budget, a timeline, vendors and a registration at the district office. Someone else keeps them in order and runs the day.",
+"price": "from ฿20,000",
+"stops": [
+"phuang-malai",
+"gears",
+"done"
+],
+"door": "phuang-malai",
+"pic": null,
+"draw": null,
+"glyphs": [
+"phuang-malai",
+"heart",
+"party"
+]
+},
+{
+"id": "widget",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Weather, air quality or events box for your site",
+"th": "กล่องอากาศ ฝุ่น หรืองาน",
+"sub": "A business in Chiang Mai or Chiang Rai puts the weather, the PM2.5 number or this week's events on its own page, so visitors read them without leaving.",
+"price": "฿4,000",
+"stops": [
+"sun",
+"cloud",
+"laptop"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"sun",
+"cloud",
+"calendar"
+]
+},
+{
+"id": "wp-api",
+"cat": "web",
+"catn": "Websites & apps",
+"tier": "modest",
+"en": "Let partners and AI read your WordPress",
+"th": "ให้ AI อ่าน WordPress ของคุณ",
+"sub": "A site with listings on WordPress gives partners and AI tools a way to pull them as data, so nobody copies pages by hand.",
+"price": "฿10,000",
+"stops": [
+"laptop",
+"link",
+"robot"
+],
+"door": "laptop",
+"pic": null,
+"draw": null,
+"glyphs": [
+"gears",
+"link",
+"robot"
+]
+}
+]

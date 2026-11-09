@@ -1,3 +1,10 @@
+/* Who is asking for the page — User-Agent → {category, agent}.
+ *
+ * PROVENANCE: a copy of mot-dang/publish/classify.js (its commit f4c765e89e), taken 2026-10-24, with mot-dang PRs #45 and #46 (2026-11-02),
+ * which is itself traffic-eye/src/classify.js plus the network tells (cloud ASNs, a Chrome string
+ * with no Sec-Fetch-Mode) and the Bluesky and Mastodon card fetchers. Used by _middleware.js for the
+ * edge count and by api/hit for the page events. Keep the copies in step.
+ */
 /**
  * Who is asking for the page.
  *
@@ -29,6 +36,15 @@ const SIGNATURES = [
   ['ai', 'ChatGPT-User', /ChatGPT-User/i],
   ['ai', 'OAI-SearchBot', /OAI-SearchBot/i],
   ['ai', 'PerplexityBot', /PerplexityBot/i],
+  // Exa: a search engine whose readers are AI programs; it answers their
+  // questions from what this bot reads (first seen here 6 Oct 2026).
+  ['ai', 'ExaSearchBot', /\bExa(Search)?Bot\b/i],
+  // Named on their own bot pages, read 2026-11-02: Keenable's index answers AI
+  // agents (keenable.ai/bot); Reflection AI's crawler builds its models
+  // (reflection.ai/bot); ElevenLabs' may train its models (elevenlabs.io/docs/bots).
+  ['ai', 'KeenableBot', /KeenableBot/i],
+  ['ai', 'Reflectionbot', /Reflectionbot/i],
+  ['ai', 'ElevenlabsCrawler', /ElevenlabsCrawler/i],
   ['ai', 'Perplexity-User', /Perplexity-User/i],
   ['ai', 'Google-Extended', /Google-Extended/i],
   ['ai', 'Applebot-Extended', /Applebot-Extended/i],
@@ -81,6 +97,10 @@ const SIGNATURES = [
   ['social', 'redditbot', /redditbot/i],
   ['social', 'Skype', /SkypeUriPreview/i],
   ['social', 'VK', /vkShare/i],
+  // Bluesky's card fetcher wears a Chrome string from AWS; Mastodon servers
+  // fetch as http.rb from wherever the instance is hosted.
+  ['social', 'Bluesky', /Bluesky Cardyb/i],
+  ['social', 'Mastodon', /\(Mastodon\/[\d.]/],
 
   // ---- SEO / market-intelligence crawlers: mostly pure cost ---------------
   ['seo', 'AhrefsBot', /AhrefsBot/i],
@@ -136,12 +156,116 @@ const BROWSERS = [
 /** Catches self-identifying crawlers that are not on the list above. */
 const GENERIC_BOT = /bot\b|crawler|spider|crawl(ing|er)|\bfetch(er)?\b|scrape|feed(fetcher|parser)|monitor|preview/i;
 
+/*
+ * A browser's User-Agent from a network where nobody sits at a browser.
+ *
+ * Added 2026-09-27 for the Singapore scraper: from mid-September it asked
+ * motdang.net for ~2,300 pages an hour from Tencent Cloud (AS132203), wearing
+ * rotating stock Chrome strings and a forged "Referer: www.google.com", and
+ * every one of those rows was filed as a person. The strings rotate, so they
+ * cannot be listed; the network they come from does not.
+ *
+ * Cloud and hosting networks only. Deliberately NOT here: Cloudflare (13335 —
+ * WARP users), Akamai (36183 — iCloud Private Relay), Google's own 15169. A
+ * person on a VPN that exits through one of these is filed as a machine;
+ * that is the cost, and it is small next to a scraper filed as a crowd.
+ */
+const HOSTING_ASNS = new Map([
+  [132203, 'Tencent Cloud'], [45090, 'Tencent Cloud'],
+  [45102, 'Alibaba Cloud'], [37963, 'Alibaba Cloud'],
+  [136907, 'Huawei Cloud'], [55990, 'Huawei Cloud'],
+  [150436, 'BytePlus'], [396986, 'ByteDance'],
+  [16509, 'AWS'], [14618, 'AWS'],
+  [396982, 'Google Cloud'],
+  [8075, 'Microsoft Azure'],
+  [31898, 'Oracle Cloud'],
+  [32934, 'Meta'],
+  [14061, 'DigitalOcean'],
+  [63949, 'Linode'],
+  [20473, 'Vultr'],
+  [24940, 'Hetzner'],
+  [16276, 'OVH'],
+  [51167, 'Contabo'],
+  [12876, 'Scaleway'],
+  [60781, 'Leaseweb'], [28753, 'Leaseweb'],
+  [9009, 'M247'],
+]);
+
+/*
+ * A request made by code running on Cloudflare, not by a reader.
+ *
+ * Added 2026-11-02. From 26 Oct a client on Cloudflare's own network asked
+ * motdang.net /search and /suggest up to 54,010 times a day with stock Chrome
+ * strings and the Sec-Fetch headers a browser sends, so every row was filed as
+ * a person. AS13335 cannot be listed (WARP users share it), but Cloudflare marks
+ * these requests itself: a Worker's fetch() carries CF-Worker (the zone that
+ * owns the Worker) and, from another zone, CF-Connecting-IP 2a06:98c0:3600::103;
+ * Browser Rendering adds cf-brapi-* and cf-biso-devtools. Source:
+ * developers.cloudflare.com/fundamentals/reference/http-headers/ and
+ * /browser-rendering/reference/automatic-request-headers/, read 2026-11-02.
+ */
+const WORKER_IP = '2a06:98c0:3600::103';
+const BROWSER_RUN = ['cf-brapi-request-id', 'cf-brapi-devtools', 'cf-biso-devtools'];
+
+function cloudflareMade(headers) {
+  if (!headers) return null;
+  const zone = headers.get('cf-worker');
+  if (zone) return `Cloudflare Worker · ${zone.slice(0, 40)}`;
+  if (BROWSER_RUN.some((k) => headers.has(k))) return 'Cloudflare Browser Rendering';
+  if (headers.get('cf-connecting-ip') === WORKER_IP) return 'Cloudflare Worker';
+  return null;
+}
+
+/*
+ * Our own looking, filed apart so it leaves the people count (2026-11-02):
+ * a test tool that sends X-Nanobot-Test, a browser of ours carrying the
+ * nb_ours=1 cookie, or a preview page on one of our machines (a localhost
+ * referrer).
+ */
+const LOCAL_REF = /^https?:\/\/(localhost|127\.0\.0\.1|\[::1\]|[^/?#]*\.localhost)(:\d+)?(\/|$)/i;
+
+function ours(headers) {
+  if (!headers) return null;
+  if (headers.has('x-nanobot-test')) return 'test tool';
+  if (/(?:^|;\s*)nb_ours=1(?:;|$)/.test(headers.get('cookie') || '')) return 'marked browser';
+  if (LOCAL_REF.test(headers.get('referer') || '')) return 'local preview';
+  return null;
+}
+
+/**
+ * A browser-shaped request that is not a browser, or null.
+ *
+ * Two tells, both about the request rather than the string:
+ *  - it comes from a cloud network (HOSTING_ASNS);
+ *  - it claims Chrome 80 or later and has no Sec-Fetch-Mode header. Every
+ *    Chromium browser has sent Sec-Fetch-* on every HTTPS request since
+ *    Chrome 76; a script that copied Chrome's string did not copy those.
+ *    Chrome on iOS (CriOS) is WebKit underneath and is left out.
+ */
+function dressedAsBrowser(ua, seen) {
+  if (!seen) return null;
+  const made = cloudflareMade(seen.headers);
+  if (made) return made;
+  const net = HOSTING_ASNS.get(Number(seen.asn));
+  if (net) return `data centre · ${net}`;
+  const chrome = ua.match(/\bChrome\/(\d+)/);
+  if (chrome && Number(chrome[1]) >= 80 && !/CriOS/.test(ua) &&
+      seen.headers && !seen.headers.has('sec-fetch-mode')) {
+    return 'Chrome string, no Chrome';
+  }
+  return null;
+}
+
 /**
  * @param {string} ua raw User-Agent header
+ * @param {{asn?: number, headers?: Headers}} [seen] what else the edge saw.
+ *   Optional: with the User-Agent alone the answer is what it always was.
  * @returns {{category: string, agent: string}}
- *   category: ai | search | social | seo | monitor | tool | other | human | none
+ *   category: ai | search | social | seo | monitor | tool | other | human | none | ours
  */
-export function classify(ua) {
+export function classify(ua, seen) {
+  const mine = ours(seen?.headers);
+  if (mine) return { category: 'ours', agent: mine };
   if (!ua || !ua.trim()) return { category: 'none', agent: '(no user-agent)' };
 
   for (const [category, agent, re] of SIGNATURES) {
@@ -155,6 +279,8 @@ export function classify(ua) {
   }
 
   if (/^Mozilla\//.test(ua)) {
+    const dressed = dressedAsBrowser(ua, seen);
+    if (dressed) return { category: 'other', agent: dressed };
     for (const [name, re] of BROWSERS) {
       if (re.test(ua)) return { category: 'human', agent: name };
     }
@@ -176,4 +302,4 @@ export function isHuman(category) {
   return category === 'human';
 }
 
-export const CATEGORIES = ['human', 'ai', 'search', 'social', 'seo', 'monitor', 'tool', 'other', 'none'];
+export const CATEGORIES = ['human', 'ai', 'search', 'social', 'seo', 'monitor', 'tool', 'other', 'none', 'ours'];

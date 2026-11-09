@@ -1,0 +1,302 @@
+{
+ "id": "video",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "A business on TikTok, Reels or Shorts needs short vertical videos, and each one has to be cut and finished.",
+  "th": "ธุรกิจที่อยู่บน TikTok, Reels หรือ Shorts ต้องมีคลิปสั้นแนวตั้ง และต้องมีคนตัดต่อให้เสร็จทีละคลิป",
+  "my": "TikTok၊ Reels သို့မဟုတ် Shorts ပေါ်ရှိ လုပ်ငန်းတစ်ခုသည် ဒေါင်လိုက် ဗီဒီယိုတိုများ လိုအပ်ပြီး တစ်ခုချင်းစီကို ဖြတ်တောက်၍ အပြီးသတ်ရသည်။",
+  "zh": "在 TikTok、Reels 或 Shorts 上经营的商家需要竖屏短视频，每一条都要剪辑完成。",
+  "de": "Wer auf TikTok, Reels oder Shorts auftritt, braucht kurze Videos im Hochformat, und jedes muss geschnitten und fertiggestellt werden."
+ },
+ "n": {
+  "de": "Kurzvideo"
+ },
+ "l": {
+  "de": "Hochformat, für TikTok, Reels oder Shorts."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You say what the video is about.",
+    "th": "คุณบอกว่าคลิปเกี่ยวกับอะไร",
+    "my": "ဗီဒီယိုက ဘာအကြောင်းလဲဆိုသည်ကို သင်ပြောပြသည်။",
+    "zh": "您说明视频的主题。",
+    "de": "Sie sagen, worum es im Video geht."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "scissors",
+   "t": {
+    "en": "A short vertical video is made.",
+    "th": "ทำคลิปสั้นแนวตั้งหนึ่งคลิป",
+    "my": "ဒေါင်လိုက် ဗီဒီယိုတိုတစ်ခု ပြုလုပ်သည်။",
+    "zh": "制作一条竖屏短视频。",
+    "de": "Ein kurzes Video im Hochformat entsteht."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "接着",
+    "de": "Danach"
+   }
+  },
+  {
+   "db": "send",
+   "t": {
+    "en": "The video goes to you, for TikTok, Reels or Shorts.",
+    "th": "ส่งคลิปให้คุณ สำหรับ TikTok, Reels หรือ Shorts",
+    "my": "ဗီဒီယိုကို TikTok၊ Reels သို့မဟုတ် Shorts အတွက် သင့်ထံ ပို့ပေးသည်။",
+    "zh": "视频交给您，用于 TikTok、Reels 或 Shorts。",
+    "de": "Das Video geht an Sie, für TikTok, Reels oder Shorts."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "YouTube's help page says a Short can be up to 3 minutes long.",
+    "th": "หน้าช่วยเหลือของ YouTube ระบุว่า Shorts ยาวได้ถึง 3 นาที",
+    "my": "YouTube ၏ အကူအညီစာမျက်နှာတွင် Short တစ်ခုသည် 3 မိနစ်အထိ ရှည်နိုင်သည်ဟု ဖော်ပြထားသည်။",
+    "zh": "YouTube 帮助页面说明，一条 Short 最长可达 3 分钟。",
+    "de": "Die Hilfeseite von YouTube sagt, ein Short darf bis zu 3 Minuten lang sein."
+   },
+   "src": "https://support.google.com/youtube/answer/10059070"
+  },
+  {
+   "t": {
+    "en": "TikTok's Commercial Music Library holds more than 600,000 tracks cleared for branded content and ads. It is reached from a Business Account.",
+    "th": "คลังเพลงเพื่อการพาณิชย์ของ TikTok มีเพลงมากกว่า 600,000 เพลงที่ได้รับอนุญาตสำหรับเนื้อหาของแบรนด์และโฆษณา เข้าถึงได้จากบัญชีธุรกิจ",
+    "my": "TikTok ၏ စီးပွားရေးသုံး တေးဂီတ စာကြည့်တိုက်တွင် အမှတ်တံဆိပ်အကြောင်းအရာနှင့် ကြော်ငြာအတွက် ခွင့်ပြုထားသော သီချင်း 600,000 ကျော် ရှိသည်။ စီးပွားရေးအကောင့်မှ ဝင်ရောက်သုံးစွဲနိုင်သည်။",
+    "zh": "TikTok 的商用音乐库收有 60 万首以上已获品牌内容和广告使用授权的曲目，需通过商业账号进入。",
+    "de": "Die Commercial Music Library von TikTok enthält mehr als 600,000 Titel, die für Markeninhalte und Werbung freigegeben sind. Man erreicht sie über ein Business-Konto."
+   },
+   "src": "https://ads.tiktok.com/business/en-US/blog/audio-library-royalty-free-music"
+  },
+  {
+   "t": {
+    "en": "TikTok says songs in its General Music Library are not cleared for content from a brand.",
+    "th": "TikTok ระบุว่าเพลงในคลังเพลงทั่วไปไม่ได้รับอนุญาตสำหรับเนื้อหาของแบรนด์",
+    "my": "TikTok က ၎င်း၏ အထွေထွေ တေးဂီတ စာကြည့်တိုက်ရှိ သီချင်းများကို အမှတ်တံဆိပ်အကြောင်းအရာအတွက် ခွင့်မပြုရသေးဟု ဆိုသည်။",
+    "zh": "TikTok 表示，其通用音乐库中的歌曲未获准用于品牌内容。",
+    "de": "TikTok sagt, die Songs der General Music Library seien für Inhalte von Marken nicht freigegeben."
+   },
+   "src": "https://ads.tiktok.com/business/en-US/blog/audio-library-royalty-free-music"
+  },
+  {
+   "t": {
+    "en": "DataReportal puts TikTok's advertising reach in Thailand at 56.6 million adults, 96.3 percent of those aged 18 and over (end of 2025).",
+    "th": "DataReportal ระบุว่า TikTok เข้าถึงผู้ชมโฆษณาในไทยที่เป็นผู้ใหญ่ 56.6 ล้านคน หรือ 96.3 เปอร์เซ็นต์ของผู้ที่อายุ 18 ปีขึ้นไป (ปลายปี 2025)",
+    "my": "DataReportal က ထိုင်းနိုင်ငံ၌ TikTok ၏ ကြော်ငြာအမြင်ရောက်မှုကို အသက် 18 နှစ်နှင့်အထက် လူကြီး 56.6 သန်း၊ ထိုအုပ်စု၏ 96.3 ရာခိုင်နှုန်း ဟု ဖော်ပြသည် (2025 ခုနှစ်ကုန်)။",
+    "zh": "DataReportal 给出 TikTok 在泰国的广告触达为 5660 万成年人，占 18 岁及以上人群的 96.3%（2025 年底）。",
+    "de": "DataReportal beziffert die Werbereichweite von TikTok in Thailand auf 56.6 Millionen Erwachsene, 96.3 Prozent der Personen ab 18 Jahren (Ende 2025)."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  },
+  {
+   "t": {
+    "en": "Thai copyright in an audiovisual work lasts 50 years from creation or first publication, and an assignment of copyright must be in writing.",
+    "th": "ลิขสิทธิ์ของงานโสตทัศนวัสดุในไทยคุ้มครอง 50 ปีนับจากสร้างสรรค์หรือเผยแพร่ครั้งแรก และการโอนลิขสิทธิ์ต้องทำเป็นหนังสือ",
+    "my": "ထိုင်းတွင် အသံနှင့်ရုပ်ပုံ လက်ရာ၏ မူပိုင်ခွင့်သည် ဖန်တီးသည့်နေ့ သို့မဟုတ် ပထမဆုံး ထုတ်ဝေသည့်နေ့မှ 50 နှစ် ခံပြီး မူပိုင်ခွင့်လွှဲပြောင်းမှုကို စာဖြင့် ရေးရမည်။",
+    "zh": "在泰国，视听作品的版权自创作或首次发表起保护 50 年，版权转让必须采用书面形式。",
+    "de": "Das Urheberrecht an einem audiovisuellen Werk gilt in Thailand 50 Jahre ab Entstehung oder Erstveröffentlichung, und eine Abtretung muss schriftlich erfolgen."
+   },
+   "src": "https://www.tilleke.com/wp-content/uploads/2025/11/Tilleke-Asia-IP-ASEAN-Guide-to-IP-Protection-2025-Thailand.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Short-video editing from a Fastwork seller with 462 orders",
+    "th": "ตัดต่อคลิปสั้นจากผู้ขายบน Fastwork ที่มี 462 ออเดอร์",
+    "my": "အော်ဒါ 462 ခုရှိသော Fastwork ရောင်းသူထံမှ ဗီဒီယိုတို တည်းဖြတ်ခြင်း",
+    "zh": "Fastwork 上有 462 笔订单的卖家的短视频剪辑",
+    "de": "Kurzvideo-Schnitt von einem Fastwork-Anbieter mit 462 Bestellungen"
+   },
+   "p": {
+    "en": "฿1,000 for one clip of 1–2 minutes, 1 day; ฿8,000 a month for 10 clips",
+    "th": "฿1,000 ต่อหนึ่งคลิปยาว 1–2 นาที 1 วัน ฿8,000 ต่อเดือนสำหรับ 10 คลิป",
+    "my": "ဗီဒီယို 1–2 မိနစ် တစ်ခုလျှင် ฿1,000 (1 ရက်)၊ 10 ခုအတွက် တစ်လ ฿8,000",
+    "zh": "一条 1–2 分钟的视频 ฿1,000，1 天；每月 10 条 ฿8,000",
+    "de": "฿1,000 für einen Clip von 1–2 Minuten, 1 Tag; ฿8,000 im Monat für 10 Clips"
+   },
+   "src": "https://fastwork.co/user/mimimira/video-editing-97505537"
+  },
+  {
+   "t": {
+    "en": "Filming and editing from a Fastwork videographer with 64 orders",
+    "th": "ถ่ายและตัดต่อจากช่างวิดีโอบน Fastwork ที่มี 64 ออเดอร์",
+    "my": "အော်ဒါ 64 ခုရှိသော Fastwork ဗီဒီယိုရိုက်ကူးသူထံမှ ရိုက်ကူးခြင်းနှင့် တည်းဖြတ်ခြင်း",
+    "zh": "Fastwork 上有 64 笔订单的摄像师的拍摄与剪辑",
+    "de": "Dreh und Schnitt von einem Fastwork-Videografen mit 64 Bestellungen"
+   },
+   "p": {
+    "en": "฿2,500 to edit one clip of up to a minute; ฿19,000 to film and edit 5 clips; ฿29,000 for 10",
+    "th": "฿2,500 ตัดต่อหนึ่งคลิปไม่เกินหนึ่งนาที ฿19,000 ถ่ายและตัดต่อ 5 คลิป ฿29,000 สำหรับ 10 คลิป",
+    "my": "တစ်မိနစ်အထိ ဗီဒီယိုတစ်ခု တည်းဖြတ်ရန် ฿2,500၊ 5 ခု ရိုက်ကူးတည်းဖြတ်ရန် ฿19,000၊ 10 ခုအတွက် ฿29,000",
+    "zh": "剪辑一条不超过一分钟的视频 ฿2,500；拍摄并剪辑 5 条 ฿19,000；10 条 ฿29,000",
+    "de": "฿2,500 für den Schnitt eines Clips bis zu einer Minute; ฿19,000 für Dreh und Schnitt von 5 Clips; ฿29,000 für 10"
+   },
+   "src": "https://fastwork.co/user/theeyezee/videography-67681344"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does it cost to have a TikTok video edited?",
+    "th": "ค่าตัดต่อคลิป TikTok เท่าไร",
+    "my": "TikTok ဗီဒီယိုတစ်ခု တည်းဖြတ်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "剪辑一条 TikTok 视频要多少钱？",
+    "de": "Was kostet der Schnitt eines TikTok-Videos?"
+   },
+   "a": {
+    "en": "One Fastwork seller with 462 orders lists ฿1,000 for one clip of 1 to 2 minutes, delivered in 1 day with 3 changes. A voiceover is ฿300 more. A monthly package is ฿8,000 for 10 clips.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งที่มี 462 ออเดอร์ลงราคา ฿1,000 ต่อหนึ่งคลิปยาว 1 ถึง 2 นาที ส่งใน 1 วัน แก้ไข 3 ครั้ง เสียงพากย์เพิ่ม ฿300 แพ็กเกจรายเดือน ฿8,000 สำหรับ 10 คลิป",
+    "my": "အော်ဒါ 462 ခုရှိသော Fastwork ရောင်းသူတစ်ဦးက 1 မှ 2 မိနစ် ဗီဒီယိုတစ်ခုလျှင် ฿1,000၊ 1 ရက်အတွင်း ပို့ပေးပြီး ပြင်ဆင်မှု 3 ကြိမ်ပါသည်ဟု စာရင်းပြုထားသည်။ အသံသွင်းလျှင် ฿300 ထပ်ပေါင်းသည်။ လစဉ်ပက်ကေ့ချ်မှာ 10 ခုအတွက် ฿8,000 ဖြစ်သည်။",
+    "zh": "Fastwork 上一位有 462 笔订单的卖家标价：一条 1 至 2 分钟的视频 ฿1,000，1 天交付，含 3 次修改；配音另加 ฿300；每月套餐 10 条 ฿8,000。",
+    "de": "Ein Fastwork-Anbieter mit 462 Bestellungen nennt ฿1,000 für einen Clip von 1 bis 2 Minuten, geliefert in 1 Tag mit 3 Änderungen. Eine Sprachaufnahme kostet ฿300 mehr. Ein Monatspaket mit 10 Clips kostet ฿8,000."
+   },
+   "src": "https://fastwork.co/user/mimimira/video-editing-97505537"
+  },
+  {
+   "q": {
+    "en": "What does it cost to film and edit short videos?",
+    "th": "ค่าถ่ายและตัดต่อคลิปสั้นเท่าไร",
+    "my": "ဗီဒီယိုတိုများကို ရိုက်ကူးတည်းဖြတ်ရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "拍摄并剪辑短视频要多少钱？",
+    "de": "Was kostet es, kurze Videos zu drehen und zu schneiden?"
+   },
+   "a": {
+    "en": "One Fastwork videographer with 64 orders lists ฿19,000 to film, light and edit 5 clips under a minute each in 7 days, and ฿29,000 for 10 clips in 14 days. The listing says the price can move up or down with the size of the job.",
+    "th": "ช่างวิดีโอบน Fastwork รายหนึ่งที่มี 64 ออเดอร์ลงราคา ฿19,000 สำหรับถ่าย จัดแสง และตัดต่อ 5 คลิป คลิปละไม่ถึงหนึ่งนาที ใน 7 วัน และ ฿29,000 สำหรับ 10 คลิปใน 14 วัน รายการระบุว่าราคาปรับขึ้นลงตามขนาดงานได้",
+    "my": "အော်ဒါ 64 ခုရှိသော Fastwork ဗီဒီယိုရိုက်ကူးသူတစ်ဦးက တစ်ခုလျှင် တစ်မိနစ်အောက် ဗီဒီယို 5 ခုကို ရိုက်ကူး၊ အလင်းပေး၊ တည်းဖြတ်ရန် 7 ရက်အတွင်း ฿19,000 နှင့် 10 ခုကို 14 ရက်အတွင်း ฿29,000 ဟု စာရင်းပြုထားသည်။ အလုပ်အရွယ်အစားအလိုက် ဈေးနှုန်း အတက်အကျ ရှိနိုင်သည်ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位有 64 笔订单的摄像师标价：拍摄、布光并剪辑 5 条不足一分钟的视频 ฿19,000，7 天；10 条 ฿29,000，14 天。页面说明价格会随工作量上下调整。",
+    "de": "Ein Fastwork-Videograf mit 64 Bestellungen nennt ฿19,000 für Dreh, Licht und Schnitt von 5 Clips unter einer Minute in 7 Tagen und ฿29,000 für 10 Clips in 14 Tagen. Laut Angebot kann der Preis je nach Umfang steigen oder sinken."
+   },
+   "src": "https://fastwork.co/user/theeyezee/videography-67681344"
+  },
+  {
+   "q": {
+    "en": "How long can a YouTube Short be?",
+    "th": "YouTube Shorts ยาวได้เท่าไร",
+    "my": "YouTube Short တစ်ခု ဘယ်လောက်ရှည်နိုင်သလဲ။",
+    "zh": "YouTube Shorts 最长可以多长？",
+    "de": "Wie lang darf ein YouTube Short sein?"
+   },
+   "a": {
+    "en": "YouTube's help page says Shorts can be up to 3 minutes long.",
+    "th": "หน้าช่วยเหลือของ YouTube ระบุว่า Shorts ยาวได้ถึง 3 นาที",
+    "my": "YouTube ၏ အကူအညီစာမျက်နှာတွင် Shorts များသည် 3 မိနစ်အထိ ရှည်နိုင်သည်ဟု ဖော်ပြထားသည်။",
+    "zh": "YouTube 帮助页面说明，Shorts 最长可达 3 分钟。",
+    "de": "Die Hilfeseite von YouTube sagt, Shorts dürfen bis zu 3 Minuten lang sein."
+   },
+   "src": "https://support.google.com/youtube/answer/10059070"
+  },
+  {
+   "q": {
+    "en": "Can a business use any song in a TikTok video?",
+    "th": "ธุรกิจใช้เพลงใดก็ได้ในคลิป TikTok ไหม",
+    "my": "လုပ်ငန်းတစ်ခုက TikTok ဗီဒီယိုတွင် မည်သည့်သီချင်းကိုမဆို သုံးနိုင်ပါသလား။",
+    "zh": "商家可以在 TikTok 视频里用任何歌曲吗？",
+    "de": "Darf ein Unternehmen in einem TikTok-Video jeden Song verwenden?"
+   },
+   "a": {
+    "en": "TikTok says no. Songs in its General Music Library are not cleared for content from a brand. The Commercial Music Library, reached from a Business Account, holds more than 600,000 tracks cleared for branded content and ads.",
+    "th": "TikTok ระบุว่าไม่ได้ เพลงในคลังเพลงทั่วไปไม่ได้รับอนุญาตสำหรับเนื้อหาของแบรนด์ ส่วนคลังเพลงเพื่อการพาณิชย์ซึ่งเข้าถึงได้จากบัญชีธุรกิจ มีเพลงมากกว่า 600,000 เพลงที่ได้รับอนุญาตสำหรับเนื้อหาของแบรนด์และโฆษณา",
+    "my": "TikTok က မရဟု ဆိုသည်။ အထွေထွေ တေးဂီတ စာကြည့်တိုက်ရှိ သီချင်းများကို အမှတ်တံဆိပ်အကြောင်းအရာအတွက် ခွင့်မပြုထားပါ။ စီးပွားရေးအကောင့်မှ ဝင်ရသော စီးပွားရေးသုံး တေးဂီတ စာကြည့်တိုက်တွင် အမှတ်တံဆိပ်အကြောင်းအရာနှင့် ကြော်ငြာအတွက် ခွင့်ပြုထားသော သီချင်း 600,000 ကျော် ရှိသည်။",
+    "zh": "TikTok 的说法是不可以。通用音乐库里的歌曲未获准用于品牌内容。通过商业账号进入的商用音乐库收有 60 万首以上已获品牌内容和广告使用授权的曲目。",
+    "de": "TikTok sagt nein. Songs der General Music Library sind für Inhalte von Marken nicht freigegeben. Die Commercial Music Library, erreichbar über ein Business-Konto, enthält mehr als 600,000 für Markeninhalte und Werbung freigegebene Titel."
+   },
+   "src": "https://ads.tiktok.com/business/en-US/blog/audio-library-royalty-free-music"
+  },
+  {
+   "q": {
+    "en": "How many people in Thailand are on TikTok?",
+    "th": "มีคนไทยใช้ TikTok กี่คน",
+    "my": "ထိုင်းနိုင်ငံတွင် TikTok သုံးသူ ဘယ်နှစ်ယောက် ရှိသလဲ။",
+    "zh": "泰国有多少人使用 TikTok？",
+    "de": "Wie viele Menschen in Thailand nutzen TikTok?"
+   },
+   "a": {
+    "en": "DataReportal puts TikTok's advertising reach in Thailand at 56.6 million adults at the end of 2025, 96.3 percent of those aged 18 and over. It notes that this is an advertising reach estimate, not a count of monthly active users.",
+    "th": "DataReportal ระบุว่าปลายปี 2025 TikTok เข้าถึงผู้ชมโฆษณาในไทยที่เป็นผู้ใหญ่ 56.6 ล้านคน หรือ 96.3 เปอร์เซ็นต์ของผู้ที่อายุ 18 ปีขึ้นไป และระบุว่าเป็นตัวเลขประมาณการการเข้าถึงโฆษณา ไม่ใช่จำนวนผู้ใช้งานรายเดือน",
+    "my": "DataReportal က 2025 ခုနှစ်ကုန်တွင် ထိုင်းနိုင်ငံ၌ TikTok ၏ ကြော်ငြာအမြင်ရောက်မှုကို လူကြီး 56.6 သန်း၊ အသက် 18 နှစ်နှင့်အထက်၏ 96.3 ရာခိုင်နှုန်း ဟု ဖော်ပြပြီး ၎င်းသည် ကြော်ငြာအမြင်ရောက်မှု ခန့်မှန်းချက်ဖြစ်ကာ လစဉ်အသုံးပြုသူ အရေအတွက် မဟုတ်ဟု မှတ်ချက်ပြုသည်။",
+    "zh": "DataReportal 给出 2025 年底 TikTok 在泰国的广告触达为 5660 万成年人，占 18 岁及以上人群的 96.3%，并注明这是广告触达的估计值，不是月活跃用户数。",
+    "de": "DataReportal beziffert die Werbereichweite von TikTok in Thailand Ende 2025 auf 56.6 Millionen Erwachsene, 96.3 Prozent der Personen ab 18 Jahren. Es merkt an, dass dies eine Schätzung der Werbereichweite ist und keine Zahl der monatlich aktiven Nutzer."
+   },
+   "src": "https://datareportal.com/reports/digital-2026-thailand"
+  }
+ ],
+ "related": [
+  "social",
+  "interview",
+  "graphics",
+  "subtitles",
+  "ads-run",
+  "trade-photos"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "YouTube Help: Shorts",
+    "th": "YouTube Help: Shorts",
+    "my": "YouTube အကူအညီ - Shorts",
+    "zh": "YouTube 帮助：Shorts",
+    "de": "YouTube-Hilfe: Shorts"
+   },
+   "href": "https://support.google.com/youtube/answer/10059070"
+  },
+  {
+   "t": {
+    "en": "TikTok: the Commercial Music Library",
+    "th": "TikTok: คลังเพลงเพื่อการพาณิชย์",
+    "my": "TikTok - စီးပွားရေးသုံး တေးဂီတ စာကြည့်တိုက်",
+    "zh": "TikTok：商用音乐库",
+    "de": "TikTok: die Commercial Music Library"
+   },
+   "href": "https://ads.tiktok.com/business/en-US/blog/audio-library-royalty-free-music"
+  }
+ ],
+ "glyphs": [
+  "play",
+  "camera",
+  "scissors"
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "langs": ["en", "th"],
+ "kinds": {
+  "life": {"en": "Everyday life", "th": "ชีวิตประจำวัน"},
+  "basilisk": {"en": "Living with AI", "th": "ชีวิตกับ AI"},
+  "practical": {"en": "How-to guides", "th": "วิธีทำ"}
+ },
+ "ui": {
+  "en": {
+   "name": "Ask Nan",
+   "title": "Ask Nan · Hongdam",
+   "desc": "A toilet hose that floods the floor, a water pump that clicks at night, a bot that wants to be paid. Nan Peacock, who runs Hongdam in Chiang Rai, Thailand, answers one letter in each column, with sources and one thing to do next.",
+   "kicker": "Hongdam · Chiang Rai, Thailand",
+   "lede": "Your 7-Eleven meal says press 5. Your water pump clicks at night. A bot wants to be paid. Write to Nan. She runs Hongdam, a small service company in Chiang Rai, Thailand, and answers one letter in each column: life in Thailand, living with AI, and how to get things done.",
+   "basilisk": "Nan calls life with AI \"the basilisk era\". The name comes from Roko's basilisk, an idea posted online in 2010 about a future AI that punishes people who knew about it and did not help to build it.",
+   "origin": "The letters are written from questions Hongdam has already answered on its own pages and on Mot Dang, its directory of places in Chiang Mai and Chiang Rai. Each column links to that work and to its sources. Letters sent with the form at the bottom of the page go to Nan.",
+   "count": "{n} columns",
+   "all": "All",
+   "no": "Column {n}",
+   "by": "Nan Peacock, who runs Hongdam",
+   "dear": "Dear Nan,",
+   "read": "Read the newest column",
+   "minRead": "{n} minutes to read",
+   "thsum": "สรุปภาษาไทย",
+   "sources": "Sources",
+   "does": "Hongdam does this for you",
+   "older": "Older",
+   "newer": "Newer",
+   "allCols": "All columns",
+   "askH": "Ask Nan a question",
+   "askL": "In any language. Questions go to Nan.",
+   "askWhat": "Your question",
+   "langNote": "Columns are in English, with the headline, the letter and a summary in Thai."
+  },
+  "th": {
+   "name": "ถามแนน",
+   "title": "ถามแนน · หงส์ดำ",
+   "desc": "สายฉีดชำระที่ทำพื้นเปียก ปั๊มน้ำที่ติดเองตอนกลางคืน บอตที่ขอค่าจ้าง แนน ผู้ดูแลหงส์ดำในเชียงราย ตอบจดหมายคอลัมน์ละหนึ่งฉบับ มีแหล่งที่มา และมีสิ่งที่ทำต่อได้ทันที",
+   "kicker": "หงส์ดำ · เชียงราย",
+   "lede": "ข้าวกล่องเซเว่นเขียนว่ากด 5 ปั๊มน้ำติดเองตอนกลางคืน บอตมาขอค่าจ้าง เขียนมาถามแนนได้เลย แนนดูแลหงส์ดำ บริษัทบริการขนาดเล็กในเชียงราย และตอบจดหมายคอลัมน์ละหนึ่งฉบับ เรื่องชีวิตในไทย การอยู่กับ AI และวิธีทำเรื่องต่าง ๆ ให้สำเร็จ",
+   "basilisk": "แนนเรียกชีวิตที่อยู่กับ AI ว่า \"ยุคบาซิลิสก์\" ชื่อนี้มาจาก Roko's basilisk ความคิดที่โพสต์ออนไลน์ในปี 2010 เกี่ยวกับ AI ในอนาคตที่ลงโทษคนที่รู้เรื่องมันแต่ไม่ได้ช่วยสร้างมัน",
+   "origin": "จดหมายในคอลัมน์เขียนจากคำถามที่หงส์ดำเคยตอบไว้แล้วในหน้าของตัวเองและใน มดแดง เว็บรวมสถานที่ในเชียงใหม่และเชียงรายของหงส์ดำ แต่ละคอลัมน์ลิงก์ไปยังงานนั้นและแหล่งที่มา จดหมายที่ส่งผ่านแบบฟอร์มท้ายหน้าจะถึงแนนโดยตรง",
+   "count": "{n} คอลัมน์",
+   "all": "ทั้งหมด",
+   "no": "ฉบับที่ {n}",
+   "by": "แนน",
+   "dear": "ถึงแนน",
+   "read": "อ่านคอลัมน์ล่าสุด",
+   "minRead": "อ่าน {n} นาที",
+   "thsum": "สรุปภาษาไทย",
+   "sources": "แหล่งที่มา",
+   "does": "หงส์ดำทำเรื่องนี้ให้คุณ",
+   "older": "ก่อนหน้า",
+   "newer": "ถัดไป",
+   "allCols": "คอลัมน์ทั้งหมด",
+   "askH": "ส่งคำถามถึงแนน",
+   "askL": "ภาษาใดก็ได้ คำถามส่งถึงแนนโดยตรง",
+   "askWhat": "คำถามของคุณ",
+   "langNote": "ตัวคอลัมน์เป็นภาษาอังกฤษ มีหัวเรื่อง จดหมาย และสรุปเป็นภาษาไทย"
+  }
+ },
+ "band": {
+  "en": {"name": "Ask Nan", "line": "Stuck? Write to Nan, who runs Hongdam. Letters about life in Thailand, living with AI, and how to get things done."},
+  "th": {"name": "ถามแนน", "line": "ติดปัญหาอยู่ใช่ไหม เขียนมาถามแนน ผู้ดูแลหงส์ดำ เรื่องชีวิตในไทย การอยู่กับ AI และวิธีทำเรื่องต่าง ๆ ให้สำเร็จ"},
+  "my": {"name": "Ask Nan", "line": "ထိုင်းနိုင်ငံမှာ နေထိုင်ရေး၊ AI နဲ့အတူနေထိုင်ရေး၊ လုပ်နည်းလမ်းညွှန်တွေအကြောင်း မေးခွန်းတွေကို Hongdam ကို စီမံသူ Nan က ဖြေပေးပါတယ်။ အင်္ဂလိပ်နဲ့ ထိုင်းဘာသာဖြင့်။"},
+  "zh": {"name": "Ask Nan", "line": "遇到难题？写信给经营 Hongdam 的 Nan：泰国生活、与 AI 共处、怎样把事情办成。英文和泰文。"},
+  "de": {"name": "Ask Nan", "line": "Nicht weiter? Schreib an Nan, die Hongdam leitet: Briefe über das Leben in Thailand, das Leben mit KI und wie man Dinge erledigt. Auf Englisch und Thai."}
+ }
+}

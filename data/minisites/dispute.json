@@ -1,0 +1,275 @@
+{
+ "id": "dispute",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People ask for a Thai speaker to bargain or settle with a dealer, a seller, a landlord, a repairer or a neighbour, because the talk is in Thai and money is at stake.",
+  "th": "คนขอให้มีคนพูดไทยช่วยต่อรองหรือเจรจากับดีลเลอร์ ผู้ขาย เจ้าของบ้าน ช่างซ่อม หรือเพื่อนบ้าน เพราะต้องคุยกันเป็นภาษาไทยและมีเงินเกี่ยวข้อง",
+  "my": "စျေးကိစ္စပါဝင်ပြီး စကားပြောရသည်မှာ ထိုင်းလိုဖြစ်သဖြင့် အရောင်းဆိုင်၊ ရောင်းသူ၊ အိမ်ရှင်၊ ပြင်သူ သို့မဟုတ် အိမ်နီးချင်းနှင့် စျေးဆစ်ရန် သို့မဟုတ် ဖြေရှင်းရန် ထိုင်းစကားပြောသူကို လူတွေက တောင်းကြသည်။",
+  "zh": "与车行、卖家、房东、修理工或邻居讨价还价、协商解决时，对话用泰语，又牵涉到钱，所以人们请一位会说泰语的人出面。",
+  "de": "Man bittet eine thailändisch sprechende Person, mit einem Händler, einer Verkäuferin, einem Vermieter, einem Handwerker oder einem Nachbarn zu verhandeln oder eine Lösung zu finden, weil auf Thai gesprochen wird und es um Geld geht."
+ },
+ "n": {
+  "de": "Feilsch-Begleiter"
+ },
+ "l": {
+  "de": "Ein Händler, ein Amulettverkäufer, eine Kaution, eine Reparatur, eine Rechnung oder ein Nachbar: Wir reden mit ihnen auf Thai."
+ },
+ "steps": [
+  {
+   "db": "chat",
+   "t": {
+    "en": "You tell us the case.",
+    "th": "คุณเล่าเรื่องให้เรา",
+    "my": "ကိစ္စကို သင်က ပြောပြသည်။",
+    "zh": "您把事情告诉我们。",
+    "de": "Sie schildern uns den Fall."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่ม",
+    "my": "အစတွင်",
+    "zh": "开始时",
+    "de": "Am Anfang"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "We bargain or settle for you in Thai, by phone or in person.",
+    "th": "เราต่อรองหรือเจรจาแทนคุณเป็นภาษาไทย ทางโทรศัพท์หรือไปพบ",
+    "my": "ဖုန်းဖြင့် သို့မဟုတ် ကိုယ်တိုင်တွေ့၍ သင့်ကိုယ်စား ထိုင်းလို စျေးဆစ်သည် သို့မဟုတ် ဖြေရှင်းသည်။",
+    "zh": "我们用泰语替您讨价还价或协商解决，电话或当面均可。",
+    "de": "Wir verhandeln oder regeln es für Sie auf Thai, am Telefon oder persönlich."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "By the hour",
+    "th": "คิดเป็นรายชั่วโมง",
+    "my": "နာရီအလိုက်",
+    "zh": "按小时",
+    "de": "Stundenweise"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "We write you the answers.",
+    "th": "เราส่งสรุปคำตอบให้คุณ",
+    "my": "ရလာသော အဖြေများကို သင့်အတွက် ရေးပေးသည်။",
+    "zh": "我们把对方的答复写给您。",
+    "de": "Wir schreiben Ihnen die Antworten auf."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the talk",
+    "th": "หลังเจรจา",
+    "my": "ဆွေးနွေးပြီးနောက်",
+    "zh": "谈完之后",
+    "de": "Nach dem Gespräch"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Consumer Protection Board takes advice and complaints on 1166, through its OCPB Connect app and website, and at the provincial hall or Damrongdhama Center of a province.",
+    "th": "สำนักงานคณะกรรมการคุ้มครองผู้บริโภครับปรึกษาและร้องเรียนที่สายด่วน 1166 ผ่านแอป OCPB Connect และเว็บไซต์ และที่ศาลากลางจังหวัดหรือศูนย์ดำรงธรรมของจังหวัด",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့က အကြံဉာဏ်နှင့် တိုင်ကြားမှုများကို 1166၊ OCPB Connect အက်ပ်နှင့် ဝက်ဘ်ဆိုက်မှတစ်ဆင့်လည်းကောင်း၊ ပြည်နယ်ခရိုင်ခန်းမ သို့မဟုတ် ဒမ်ရောင်ဒမ်မာစင်တာတွင်လည်းကောင်း လက်ခံသည်။",
+    "zh": "消费者保护委员会通过热线 1166、OCPB Connect 应用和网站受理咨询与投诉，各府的府政厅或 Damrongdhama 中心也可受理。",
+    "de": "Der Konsumentenschutzrat nimmt Beratung und Beschwerden unter 1166, über die App OCPB Connect und die Website sowie bei der Provinzverwaltung oder dem Damrongdhama-Zentrum einer Provinz entgegen."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "t": {
+    "en": "The English section of the same page says a foreigner can submit a complaint personally at the OCPB Complaint Center in Bangkok, online or by post.",
+    "th": "ส่วนภาษาอังกฤษของหน้าเดียวกันระบุว่า ชาวต่างชาติยื่นเรื่องร้องเรียนด้วยตนเองที่ศูนย์รับเรื่องร้องเรียนของ สคบ. ในกรุงเทพฯ ทางออนไลน์ หรือทางไปรษณีย์ได้",
+    "my": "တူညီသောစာမျက်နှာ၏ အင်္ဂလိပ်ဘာသာပိုင်းတွင် နိုင်ငံခြားသားသည် ဘန်ကောက်ရှိ OCPB တိုင်ကြားမှုစင်တာတွင် ကိုယ်တိုင်၊ အွန်လိုင်း သို့မဟုတ် စာပို့ဖြင့် တိုင်ကြားနိုင်သည်ဟု ဆိုသည်။",
+    "zh": "同一页面的英文部分写明，外国人可以到曼谷的 OCPB 投诉中心亲自提交，也可在线或邮寄提交。",
+    "de": "Der englische Teil derselben Seite besagt, dass ein Ausländer eine Beschwerde persönlich im OCPB-Beschwerdezentrum in Bangkok, online oder per Post einreichen kann."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "t": {
+    "en": "A 2025 notification of the Consumer Protection Board's contract committee (B.E. 2568) covers residential building leasing. It says water and electricity charges must not exceed the rates set by the state, and the Board suggested landlords keep electricity to ฿4.88 a unit.",
+    "th": "ประกาศคณะกรรมการว่าด้วยสัญญาของ สคบ. เรื่อง ธุรกิจการให้เช่าอาคารเพื่ออยู่อาศัย พ.ศ. 2568 (ค.ศ. 2025) ระบุว่าค่าน้ำและค่าไฟต้องไม่เกินอัตราที่หน่วยงานรัฐกำหนด และ สคบ. เสนอให้ผู้ให้เช่าเก็บค่าไฟไม่เกิน ฿4.88 ต่อหน่วย",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့၏ စာချုပ်ကော်မတီ၏ 2025 (ဗုဒ္ဓသက္ကရာဇ် 2568) ကြေညာချက်သည် နေထိုင်ရန် အဆောက်အအုံ ငှားရမ်းခြင်းကို အကျုံးဝင်သည်။ ရေနှင့် မီးခကို နိုင်ငံတော်သတ်မှတ်ထားသော နှုန်းထက် မကျော်ရဟု ဆိုပြီး အိမ်ရှင်များက မီးခကို တစ်ယူနစ်လျှင် ฿4.88 အထိ ထားရှိရန် ဘုတ်အဖွဲ့က အကြံပြုသည်။",
+    "zh": "消费者保护委员会合同委员会 2025 年（佛历 2568）的公告涉及居住用建筑的出租。公告规定水电费不得超过国家规定的费率，该委员会还建议房东把电费控制在每度 ฿4.88。",
+    "de": "Eine Bekanntmachung des Vertragsausschusses des Konsumentenschutzrates von 2025 (B.E. 2568) betrifft die Vermietung von Wohngebäuden. Danach dürfen Wasser- und Stromgebühren die staatlich festgesetzten Sätze nicht übersteigen, und der Rat schlug Vermietern vor, den Strom bei ฿4.88 pro Einheit zu halten."
+   },
+   "src": "https://www.ocpb.go.th/news_view.php?nid=17393"
+  },
+  {
+   "t": {
+    "en": "The Ministry of Foreign Affairs lists 1155 for the “Tourist Police”.",
+    "th": "กระทรวงการต่างประเทศระบุเบอร์ 1155 สำหรับตำรวจท่องเที่ยว",
+    "my": "နိုင်ငံခြားရေးဝန်ကြီးဌာနက “Tourist Police” (ခရီးသွားရဲ) အတွက် 1155 ကို ဖော်ပြထားသည်။",
+    "zh": "外交部把 1155 列为“Tourist Police”（旅游警察）的号码。",
+    "de": "Das Aussenministerium nennt 1155 für die «Tourist Police»."
+   },
+   "src": "https://www.mfa.go.th/en/content/eq2"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Contract review on Fastwork: the other side's contract read, with its advantages and drawbacks and suggested changes (2 days)",
+    "th": "ตรวจสัญญาบน Fastwork: อ่านสัญญาจากอีกฝ่าย ชี้ข้อดีข้อเสียและเสนอการแก้ไข (2 วัน)",
+    "my": "Fastwork ပေါ်ရှိ စာချုပ်စစ်ဆေးခြင်း: တစ်ဖက်မှ စာချုပ်ကို ဖတ်၍ အားသာချက်၊ အားနည်းချက်နှင့် ပြင်ဆင်ရန်အကြံပြုချက်များ (2 ရက်)",
+    "zh": "Fastwork 上的合同审阅：阅读对方给的合同，指出利弊并提出修改建议（2 天）",
+    "de": "Vertragsprüfung auf Fastwork: der Vertrag der Gegenseite wird gelesen, mit Vor- und Nachteilen und Änderungsvorschlägen (2 Tage)"
+   },
+   "p": {
+    "en": "Thai ฿800 · English ฿1,000",
+    "th": "ภาษาไทย ฿800 · ภาษาอังกฤษ ฿1,000",
+    "my": "ထိုင်းဘာသာ ฿800 · အင်္ဂလိပ်ဘာသာ ฿1,000",
+    "zh": "泰文 ฿800 · 英文 ฿1,000",
+    "de": "Thai ฿800 · Englisch ฿1,000"
+   },
+   "src": "https://fastwork.co/user/ssclaws/legal-51060329"
+  },
+  {
+   "t": {
+    "en": "Legal consultation on Fastwork, one day",
+    "th": "ปรึกษากฎหมายบน Fastwork ใช้เวลา 1 วัน",
+    "my": "Fastwork ပေါ်တွင် ဥပဒေအကြံဉာဏ်တောင်းခံမှု၊ 1 ရက်",
+    "zh": "Fastwork 上的法律咨询，1 天",
+    "de": "Rechtsberatung auf Fastwork, ein Tag"
+   },
+   "p": {
+    "en": "฿500",
+    "th": "฿500",
+    "my": "฿500",
+    "zh": "฿500",
+    "de": "฿500"
+   },
+   "src": "https://fastwork.co/user/ssclaws/legal-51060329"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Where can I complain about a shop or a seller in Thailand?",
+    "th": "ร้องเรียนร้านค้าหรือผู้ขายในไทยได้ที่ไหน",
+    "my": "ထိုင်းတွင် ဆိုင် သို့မဟုတ် ရောင်းသူကို ဘယ်မှာ တိုင်ကြားနိုင်သလဲ။",
+    "zh": "在泰国可以向哪里投诉商店或卖家？",
+    "de": "Wo kann man sich in Thailand über ein Geschäft oder einen Verkäufer beschweren?"
+   },
+   "a": {
+    "en": "The Consumer Protection Board's FAQ page lists the hotline 1166, the OCPB Connect app, www.ocpb.go.th, and the provincial hall or Damrongdhama Center of a province.",
+    "th": "หน้าคำถามที่พบบ่อยของสำนักงานคณะกรรมการคุ้มครองผู้บริโภคระบุสายด่วน 1166 แอป OCPB Connect เว็บไซต์ www.ocpb.go.th และศาลากลางจังหวัดหรือศูนย์ดำรงธรรมของจังหวัด",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာတွင် 1166 ဟော့လိုင်း၊ OCPB Connect အက်ပ်၊ www.ocpb.go.th နှင့် ပြည်နယ်ခရိုင်ခန်းမ သို့မဟုတ် ဒမ်ရောင်ဒမ်မာစင်တာတို့ကို ဖော်ပြထားသည်။",
+    "zh": "消费者保护委员会的常见问题页列出热线 1166、OCPB Connect 应用、网站 www.ocpb.go.th，以及府政厅或 Damrongdhama 中心。",
+    "de": "Die FAQ-Seite des Konsumentenschutzrates nennt die Hotline 1166, die App OCPB Connect, die Website www.ocpb.go.th sowie die Provinzverwaltung oder das Damrongdhama-Zentrum einer Provinz."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "q": {
+    "en": "Can a foreigner complain to the Consumer Protection Board?",
+    "th": "ชาวต่างชาติร้องเรียน สคบ. ได้ไหม",
+    "my": "နိုင်ငံခြားသားက စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့သို့ တိုင်ကြားနိုင်ပါသလား။",
+    "zh": "外国人可以向消费者保护委员会投诉吗？",
+    "de": "Kann ein Ausländer beim Konsumentenschutzrat Beschwerde einreichen?"
+   },
+   "a": {
+    "en": "Yes. The English section of the OCPB's FAQ page says a foreigner can submit a complaint personally at the Complaint Center in Bangkok, online or by post. It lists 1166 for consultation.",
+    "th": "ได้ ส่วนภาษาอังกฤษของหน้าคำถามที่พบบ่อยของ สคบ. ระบุว่า ชาวต่างชาติยื่นเรื่องด้วยตนเองที่ศูนย์รับเรื่องร้องเรียนในกรุงเทพฯ ทางออนไลน์ หรือทางไปรษณีย์ได้ และระบุสายด่วน 1166 สำหรับขอคำปรึกษา",
+    "my": "ရသည်။ OCPB ၏ မေးလေ့ရှိသောမေးခွန်းစာမျက်နှာ၏ အင်္ဂလိပ်ဘာသာပိုင်းတွင် နိုင်ငံခြားသားသည် ဘန်ကောက်ရှိ တိုင်ကြားမှုစင်တာတွင် ကိုယ်တိုင်၊ အွန်လိုင်း သို့မဟုတ် စာပို့ဖြင့် တိုင်ကြားနိုင်သည်ဟု ဆိုသည်။ အကြံဉာဏ်တောင်းရန် 1166 ကိုလည်း ဖော်ပြထားသည်။",
+    "zh": "可以。OCPB 常见问题页的英文部分写明，外国人可以到曼谷的投诉中心亲自提交，也可在线或邮寄提交，咨询电话列为 1166。",
+    "de": "Ja. Der englische Teil der FAQ-Seite des OCPB besagt, dass ein Ausländer eine Beschwerde persönlich im Beschwerdezentrum in Bangkok, online oder per Post einreichen kann. Für Beratung nennt er 1166."
+   },
+   "src": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "q": {
+    "en": "Can a landlord charge any price for electricity and water?",
+    "th": "เจ้าของบ้านคิดค่าน้ำค่าไฟเท่าไรก็ได้หรือไม่",
+    "my": "အိမ်ရှင်က မီးခ၊ ရေခကို စျေးမည်မျှမဆို ကောက်နိုင်ပါသလား။",
+    "zh": "房东可以随意收水电费吗？",
+    "de": "Darf eine Vermieterin für Strom und Wasser jeden Preis verlangen?"
+   },
+   "a": {
+    "en": "The Consumer Protection Board's 2025 notification on residential leases says water and electricity charges must not exceed the rates set by the state. The Board suggested ฿4.88 a unit as the electricity cap.",
+    "th": "ประกาศของ สคบ. พ.ศ. 2568 (ค.ศ. 2025) เรื่องการเช่าอาคารเพื่ออยู่อาศัยระบุว่า ค่าน้ำและค่าไฟต้องไม่เกินอัตราที่รัฐกำหนด และ สคบ. เสนอให้ค่าไฟไม่เกิน ฿4.88 ต่อหน่วย",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့၏ 2025 နေထိုင်ရန်ငှားရမ်းခြင်း ကြေညာချက်က ရေနှင့် မီးခသည် နိုင်ငံတော်သတ်မှတ်ထားသော နှုန်းထက် မကျော်ရဟု ဆိုသည်။ မီးခကန့်သတ်ချက်အဖြစ် တစ်ယူနစ်လျှင် ฿4.88 ကို ဘုတ်အဖွဲ့က အကြံပြုသည်။",
+    "zh": "消费者保护委员会 2025 年关于居住用房出租的公告写明，水电费不得超过国家规定的费率，并建议电费上限为每度 ฿4.88。",
+    "de": "Die Bekanntmachung des Konsumentenschutzrates von 2025 zur Wohnungsmiete besagt, dass Wasser- und Stromgebühren die staatlich festgesetzten Sätze nicht übersteigen dürfen. Als Obergrenze für Strom schlug der Rat ฿4.88 pro Einheit vor."
+   },
+   "src": "https://www.ocpb.go.th/news_view.php?nid=17393"
+  },
+  {
+   "q": {
+    "en": "What does a contract check cost?",
+    "th": "ตรวจสัญญาราคาเท่าไร",
+    "my": "စာချုပ်စစ်ဆေးခြင်း ကုန်ကျစရိတ် ဘယ်လောက်လဲ။",
+    "zh": "审阅合同要多少钱？",
+    "de": "Was kostet eine Vertragsprüfung?"
+   },
+   "a": {
+    "en": "One Fastwork law seller lists a contract review at ฿800 in Thai and ฿1,000 in English, taking 2 days, and a legal consultation at ฿500. The page says prices depend on the type and amount of work.",
+    "th": "ผู้ขายด้านกฎหมายรายหนึ่งบน Fastwork ระบุตรวจสัญญาภาษาไทย ฿800 ภาษาอังกฤษ ฿1,000 ใช้เวลา 2 วัน และปรึกษากฎหมาย ฿500 หน้าเว็บระบุว่าราคาขึ้นอยู่กับประเภทและจำนวนงาน",
+    "my": "Fastwork ရှိ ဥပဒေရောင်းချသူတစ်ဦးက စာချုပ်စစ်ဆေးခြင်းကို ထိုင်းဘာသာ ฿800၊ အင်္ဂလိပ်ဘာသာ ฿1,000 (2 ရက်) နှင့် ဥပဒေအကြံဉာဏ် ฿500 ဟု ဖော်ပြထားသည်။ စျေးနှုန်းသည် အလုပ်အမျိုးအစားနှင့် ပမာဏပေါ် မူတည်သည်ဟု စာမျက်နှာက ဆိုသည်။",
+    "zh": "Fastwork 上一位法律服务卖家列价：合同审阅泰文 ฿800、英文 ฿1,000，需 2 天；法律咨询 ฿500。页面写明价格取决于工作类型和数量。",
+    "de": "Ein Rechtsdienst-Anbieter auf Fastwork nennt für die Vertragsprüfung ฿800 auf Thai und ฿1,000 auf Englisch bei 2 Tagen Dauer sowie ฿500 für eine Rechtsberatung. Laut Seite hängen die Preise von Art und Umfang der Arbeit ab."
+   },
+   "src": "https://fastwork.co/user/ssclaws/legal-51060329"
+  }
+ ],
+ "related": [
+  "vehicle",
+  "call",
+  "there",
+  "trades",
+  "amulet",
+  "form"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Consumer Protection Board: frequently asked questions and complaint channels",
+    "th": "สคบ.: คำถามที่พบบ่อยและช่องทางร้องเรียน",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့: မေးလေ့ရှိသောမေးခွန်းများနှင့် တိုင်ကြားနည်းလမ်းများ",
+    "zh": "消费者保护委员会：常见问题与投诉渠道",
+    "de": "Konsumentenschutzrat: häufige Fragen und Beschwerdewege"
+   },
+   "href": "https://www.ocpb.go.th/faqs.php"
+  },
+  {
+   "t": {
+    "en": "Consumer Protection Board: residential lease rules",
+    "th": "สคบ.: เกณฑ์การเช่าที่พักอาศัย",
+    "my": "စားသုံးသူအကာအကွယ်ပေးရေးဘုတ်အဖွဲ့: နေထိုင်ရန်ငှားရမ်းခြင်းစည်းမျဉ်း",
+    "zh": "消费者保护委员会：住宅租赁规则",
+    "de": "Konsumentenschutzrat: Regeln zur Wohnungsmiete"
+   },
+   "href": "https://www.ocpb.go.th/news_view.php?nid=17393"
+  }
+ ],
+ "glyphs": [
+  "coin",
+  "chat",
+  "wai"
+ ]
+}

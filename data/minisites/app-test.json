@@ -1,0 +1,319 @@
+{
+ "id": "app-test",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People want to know what breaks when Thai speakers use their app on the phones sold in Thailand, before customers find out.",
+  "th": "คนอยากรู้ว่าอะไรเสียเมื่อคนไทยใช้แอปบนมือถือที่ขายในไทย ก่อนที่ลูกค้าจะเจอเอง",
+  "my": "ထိုင်းလူမျိုးများက ထိုင်းနိုင်ငံတွင် ရောင်းသော ဖုန်းများပေါ်တွင် အက်ပ်ကို သုံးသောအခါ ဘာတွေ ချွတ်ယွင်းသလဲဆိုတာကို ဖောက်သည်များ မတွေ့မီ သိလိုကြသည်။",
+  "zh": "人们想在客户发现之前，知道泰国人在泰国售卖的手机上使用这个应用时，什么会出问题。",
+  "de": "Man möchte wissen, was kaputtgeht, wenn Thai sprechende Personen die App auf in Thailand verkauften Handys nutzen, bevor Kundinnen und Kunden es merken."
+ },
+ "n": {
+  "de": "App auf thailändischen Handys getestet"
+ },
+ "l": {
+  "de": "Thailändisch sprechende Personen nutzen sie und schreiben auf, was nicht funktioniert."
+ },
+ "glyphs": [
+  "manicule",
+  "error",
+  "thumbs-up"
+ ],
+ "steps": [
+  {
+   "db": "send",
+   "t": {
+    "en": "You send your app.",
+    "th": "คุณส่งแอปของคุณ",
+    "my": "သင့်အက်ပ်ကို သင်က ပို့သည်။",
+    "zh": "您把应用发过来。",
+    "de": "Sie senden Ihre App."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "manicule",
+   "t": {
+    "en": "Thai speakers use it on the phones people in Thailand own.",
+    "th": "คนไทยใช้แอปบนมือถือรุ่นที่คนในไทยใช้",
+    "my": "ထိုင်းလူမျိုးများက ထိုင်းနိုင်ငံရှိ လူတွေ ပိုင်ဆိုင်သော ဖုန်းများပေါ်တွင် အက်ပ်ကို သုံးသည်။",
+    "zh": "泰国人在泰国人常用的手机上使用这个应用。",
+    "de": "Thai sprechende Personen nutzen sie auf Handys, die in Thailand verbreitet sind."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "In the round",
+    "th": "ในรอบการทดสอบ",
+    "my": "စမ်းသပ်မှုအကြိမ်အတွင်း",
+    "zh": "测试期间",
+    "de": "In der Testrunde"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "They write up what breaks.",
+    "th": "พวกเขาเขียนรายงานจุดที่เสีย",
+    "my": "ချွတ်ယွင်းသည့်အချက်များကို ၎င်းတို့ ရေးသားတင်ပြသည်။",
+    "zh": "他们写下哪里出了问题。",
+    "de": "Sie schreiben auf, was nicht funktioniert."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the end of the round",
+    "th": "ตอนจบรอบการทดสอบ",
+    "my": "စမ်းသပ်မှုအကြိမ် ပြီးဆုံးချိန်",
+    "zh": "测试结束时",
+    "de": "Am Ende der Runde"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Google Play asks a personal developer account created after November 13, 2023 to run a closed test before it applies for production access. The test needs at least 12 testers opted in for 14 days in a row.",
+    "th": "Google Play กำหนดให้บัญชีนักพัฒนาส่วนบุคคลที่สร้างหลัง 13 พฤศจิกายน 2023 ทดสอบแบบปิดก่อนขอเผยแพร่จริง การทดสอบต้องมีผู้ทดสอบอย่างน้อย 12 คนที่เข้าร่วมต่อเนื่อง 14 วัน",
+    "my": "Google Play က 2023 ခုနှစ် နိုဝင်ဘာ 13 ရက်နောက်ပိုင်း ဖွင့်ထားသော ကိုယ်ပိုင်ဒီဗလပ်ပါအကောင့်များသည် ထုတ်လုပ်မှုဖြန့်ချိခွင့် မလျှောက်မီ ပိတ်ထားသော စမ်းသပ်မှု (closed test) လုပ်ရမည်ဟု သတ်မှတ်သည်။ စမ်းသပ်သူ အနည်းဆုံး 12 ဦးသည် 14 ရက် ဆက်တိုက် ပါဝင်ထားရမည်။",
+    "zh": "Google Play 要求 2023 年 11 月 13 日之后创建的个人开发者账号，在申请正式发布权限前先做封闭测试。测试至少要有 12 名测试员连续参与 14 天。",
+    "de": "Google Play verlangt von persönlichen Entwicklerkonten, die nach dem 13. November 2023 erstellt wurden, vor dem Antrag auf Produktionszugang einen geschlossenen Test. Er braucht mindestens 12 Testende, die 14 Tage in Folge angemeldet sind."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/14151465"
+  },
+  {
+   "t": {
+    "en": "Google Play's pre-launch report installs the app on test devices and reports stability, Android compatibility, performance and accessibility issues. The devices run Android 9 and above and are located in the United States.",
+    "th": "รายงานก่อนเปิดตัว (pre-launch report) ของ Google Play ติดตั้งแอปบนเครื่องทดสอบ แล้วรายงานปัญหาเรื่องเสถียรภาพ ความเข้ากันได้กับ Android ประสิทธิภาพ และการเข้าถึง เครื่องทดสอบใช้ Android 9 ขึ้นไป และอยู่ในสหรัฐอเมริกา",
+    "my": "Google Play ၏ pre-launch report သည် စမ်းသပ်ကိရိယာများပေါ်တွင် အက်ပ်ကို ထည့်သွင်းပြီး တည်ငြိမ်မှု၊ Android နှင့် ကိုက်ညီမှု၊ စွမ်းဆောင်ရည်နှင့် အသုံးပြုရလွယ်ကူမှု ပြဿနာများကို အစီရင်ခံသည်။ ကိရိယာများသည် Android 9 နှင့်အထက် ဖြစ်ပြီး အမေရိကန်ပြည်ထောင်စုတွင် တည်ရှိသည်။",
+    "zh": "Google Play 的预发布报告（pre-launch report）把应用装到测试设备上，报告稳定性、Android 兼容性、性能和无障碍方面的问题。测试设备运行 Android 9 及以上，位于美国。",
+    "de": "Der Pre-Launch-Bericht von Google Play installiert die App auf Testgeräten und meldet Probleme bei Stabilität, Android-Kompatibilität, Leistung und Barrierefreiheit. Die Geräte laufen mit Android 9 oder höher und stehen in den USA."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/9842757"
+  },
+  {
+   "t": {
+    "en": "The pre-launch crawler taps, types and swipes for several minutes. Results usually come within an hour of upload, and sometimes take several hours.",
+    "th": "ตัวสำรวจของรายงานก่อนเปิดตัวแตะ พิมพ์ และปัดอยู่หลายนาที ผลมักออกภายในหนึ่งชั่วโมงหลังอัปโหลด และบางครั้งใช้เวลาหลายชั่วโมง",
+    "my": "pre-launch crawler သည် မိနစ်အတော်ကြာ နှိပ်ခြင်း၊ ရိုက်ခြင်းနှင့် ပွတ်ဆွဲခြင်း လုပ်သည်။ ရလဒ်များကို အပ်လုဒ်တင်ပြီး တစ်နာရီအတွင်း များသောအားဖြင့် ရပြီး တစ်ခါတစ်ရံ နာရီအတော်ကြာသည်။",
+    "zh": "预发布爬虫会点按、输入和滑动几分钟。结果通常在上传后一小时内出来，有时要几个小时。",
+    "de": "Der Pre-Launch-Crawler tippt, schreibt und wischt einige Minuten lang. Ergebnisse kommen meist innerhalb einer Stunde nach dem Hochladen, manchmal dauert es mehrere Stunden."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/9842757"
+  },
+  {
+   "t": {
+    "en": "Apple's TestFlight takes up to 10,000 external testers and up to 100 internal testers, who are members of the developer's team.",
+    "th": "TestFlight ของ Apple รองรับผู้ทดสอบภายนอกได้ถึง 10,000 คน และผู้ทดสอบภายในได้ถึง 100 คน ซึ่งเป็นสมาชิกทีมของผู้พัฒนา",
+    "my": "Apple ၏ TestFlight သည် ပြင်ပစမ်းသပ်သူ 10,000 အထိနှင့် ဒီဗလပ်ပါအဖွဲ့ဝင်ဖြစ်သော ပြည်တွင်းစမ်းသပ်သူ 100 အထိ လက်ခံသည်။",
+    "zh": "Apple 的 TestFlight 最多可有 10,000 名外部测试员，以及最多 100 名内部测试员（开发者团队成员）。",
+    "de": "Apples TestFlight nimmt bis zu 10,000 externe Testende und bis zu 100 interne Testende auf, die zum Team der Entwickler gehören."
+   },
+   "src": "https://developer.apple.com/testflight/"
+  },
+  {
+   "t": {
+    "en": "A TestFlight build can be tested for up to 90 days. For external testers, the first build of an app in a group goes to App Review first.",
+    "th": "บิลด์บน TestFlight ทดสอบได้นานถึง 90 วัน สำหรับผู้ทดสอบภายนอก บิลด์แรกของแอปในกลุ่มต้องผ่าน App Review ก่อน",
+    "my": "TestFlight build တစ်ခုကို 90 ရက်အထိ စမ်းသပ်နိုင်သည်။ ပြင်ပစမ်းသပ်သူများအတွက် အုပ်စုတစ်ခုတွင် အက်ပ်၏ ပထမဆုံး build ကို App Review သို့ အရင်ပို့သည်။",
+    "zh": "TestFlight 的一个构建版本最长可测试 90 天。对外部测试员，应用在某个分组里的第一个构建版本要先送 App Review。",
+    "de": "Ein TestFlight-Build lässt sich bis zu 90 Tage testen. Bei externen Testenden geht der erste Build einer App in einer Gruppe zuerst zum App Review."
+   },
+   "src": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "A Fastwork seller's Google Play closed test: 15 testers for 14 days, with a tester feedback report",
+    "th": "ผู้ขายบน Fastwork จัดทดสอบแบบปิดบน Google Play: ผู้ทดสอบ 15 คน 14 วัน พร้อมรายงานความเห็นผู้ทดสอบ",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ Google Play closed test၊ စမ်းသပ်သူ 15 ဦး 14 ရက်၊ စမ်းသပ်သူ ထင်မြင်ချက်အစီရင်ခံစာပါ",
+    "zh": "Fastwork 上一位卖家的 Google Play 封闭测试：15 名测试员、14 天，含测试员反馈报告",
+    "de": "Geschlossener Test bei Google Play durch eine Verkäuferperson auf Fastwork: 15 Testende über 14 Tage, mit Bericht"
+   },
+   "p": {
+    "en": "฿1,790; with 25 testers and a store-page report, ฿2,490",
+    "th": "฿1,790 · ผู้ทดสอบ 25 คนพร้อมรายงานหน้าร้านแอป ฿2,490",
+    "my": "฿1,790၊ စမ်းသပ်သူ 25 ဦးနှင့် စတိုးစာမျက်နှာ အစီရင်ခံစာပါလျှင် ฿2,490",
+    "zh": "฿1,790；25 名测试员加商店页面报告为 ฿2,490",
+    "de": "฿1,790; mit 25 Testenden und Bericht zur Store-Seite ฿2,490"
+   },
+   "src": "https://fastwork.co/user/appreadyth/quality-assurance-48647260"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller's manual test of a web or mobile app, with a test case document and a bug report (1 day)",
+    "th": "ผู้ขายบน Fastwork ทดสอบแอปเว็บหรือมือถือด้วยมือ พร้อมเอกสาร test case และรายงานบั๊ก (1 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ ဝက်ဘ် သို့မဟုတ် မိုဘိုင်းအက်ပ် လက်ဖြင့်စမ်းသပ်မှု၊ test case စာရွက်နှင့် bug အစီရင်ခံစာပါ (1 ရက်)",
+    "zh": "Fastwork 上一位卖家对网页或手机应用做的手动测试，含测试用例文档和缺陷报告（1 天）",
+    "de": "Manueller Test einer Web- oder Mobil-App durch eine Verkäuferperson auf Fastwork, mit Testfall-Dokument und Fehlerbericht (1 Tag)"
+   },
+   "p": {
+    "en": "From ฿1,500",
+    "th": "เริ่มที่ ฿1,500",
+    "my": "฿1,500 မှစသည်",
+    "zh": "฿1,500 起",
+    "de": "Ab ฿1,500"
+   },
+   "src": "https://fastwork.co/user/nicha_sa/quality-assurance-12479115"
+  },
+  {
+   "t": {
+    "en": "A Fastwork seller's test of a mobile app (iOS or Android): 2 to 4 functions, test documents and a retest of fixes (5 days)",
+    "th": "ผู้ขายบน Fastwork ทดสอบแอปมือถือ (iOS หรือ Android) 2 ถึง 4 ฟังก์ชัน พร้อมเอกสารทดสอบและทดสอบซ้ำหลังแก้ (5 วัน)",
+    "my": "Fastwork ရောင်းသူတစ်ဦး၏ မိုဘိုင်းအက်ပ် (iOS သို့မဟုတ် Android) စမ်းသပ်မှု၊ လုပ်ဆောင်ချက် 2 မှ 4 ခု၊ စမ်းသပ်စာရွက်များနှင့် ပြင်ပြီးနောက် ပြန်စမ်းသပ်မှုပါ (5 ရက်)",
+    "zh": "Fastwork 上一位卖家对手机应用（iOS 或 Android）的测试：2 到 4 项功能，含测试文档和修复后的复测（5 天）",
+    "de": "Test einer Mobil-App (iOS oder Android) durch eine Verkäuferperson auf Fastwork: 2 bis 4 Funktionen, Testdokumente und ein erneuter Test nach den Korrekturen (5 Tage)"
+   },
+   "p": {
+    "en": "฿4,000",
+    "th": "฿4,000",
+    "my": "฿4,000",
+    "zh": "฿4,000",
+    "de": "฿4,000"
+   },
+   "src": "https://fastwork.co/user/yawong/quality-assurance-70462019"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How many testers does Google Play ask for before release?",
+    "th": "Google Play ต้องมีผู้ทดสอบกี่คนก่อนเผยแพร่",
+    "my": "ထုတ်ဝေမီ Google Play က စမ်းသပ်သူ ဘယ်နှစ်ဦး တောင်းသလဲ။",
+    "zh": "Google Play 发布前要求多少名测试员？",
+    "de": "Wie viele Testende verlangt Google Play vor der Veröffentlichung?"
+   },
+   "a": {
+    "en": "For a personal developer account created after November 13, 2023, at least 12 testers, opted in for 14 days in a row, in a closed test.",
+    "th": "สำหรับบัญชีนักพัฒนาส่วนบุคคลที่สร้างหลัง 13 พฤศจิกายน 2023 ต้องมีผู้ทดสอบอย่างน้อย 12 คน ที่เข้าร่วมต่อเนื่อง 14 วัน ในการทดสอบแบบปิด",
+    "my": "2023 ခုနှစ် နိုဝင်ဘာ 13 ရက်နောက်ပိုင်း ဖွင့်ထားသော ကိုယ်ပိုင်ဒီဗလပ်ပါအကောင့်အတွက် closed test တွင် စမ်းသပ်သူ အနည်းဆုံး 12 ဦး၊ 14 ရက် ဆက်တိုက် ပါဝင်ထားရမည်။",
+    "zh": "对 2023 年 11 月 13 日之后创建的个人开发者账号：封闭测试中至少 12 名测试员，连续参与 14 天。",
+    "de": "Für ein persönliches Entwicklerkonto, das nach dem 13. November 2023 erstellt wurde: mindestens 12 Testende in einem geschlossenen Test, 14 Tage in Folge angemeldet."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/14151465"
+  },
+  {
+   "q": {
+    "en": "What does Google's pre-launch report test?",
+    "th": "รายงานก่อนเปิดตัวของ Google ทดสอบอะไร",
+    "my": "Google ၏ pre-launch report က ဘာတွေ စမ်းသပ်သလဲ။",
+    "zh": "Google 的预发布报告测试什么？",
+    "de": "Was testet der Pre-Launch-Bericht von Google?"
+   },
+   "a": {
+    "en": "It lists stability, Android compatibility, performance and accessibility issues, found on test devices that run Android 9 and above. The devices are located in the United States.",
+    "th": "รายงานแสดงปัญหาเรื่องเสถียรภาพ ความเข้ากันได้กับ Android ประสิทธิภาพ และการเข้าถึง ที่พบบนเครื่องทดสอบที่ใช้ Android 9 ขึ้นไป เครื่องทดสอบอยู่ในสหรัฐอเมริกา",
+    "my": "Android 9 နှင့်အထက် သုံးသော စမ်းသပ်ကိရိယာများပေါ်တွင် တွေ့ရသော တည်ငြိမ်မှု၊ Android နှင့် ကိုက်ညီမှု၊ စွမ်းဆောင်ရည်နှင့် အသုံးပြုရလွယ်ကူမှု ပြဿနာများကို စာရင်းပြုစုသည်။ ကိရိယာများသည် အမေရိကန်ပြည်ထောင်စုတွင် တည်ရှိသည်။",
+    "zh": "它列出在运行 Android 9 及以上的测试设备上发现的稳定性、Android 兼容性、性能和无障碍问题。这些设备位于美国。",
+    "de": "Er listet Probleme bei Stabilität, Android-Kompatibilität, Leistung und Barrierefreiheit auf, gefunden auf Testgeräten mit Android 9 oder höher. Die Geräte stehen in den USA."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/9842757"
+  },
+  {
+   "q": {
+    "en": "How long does the pre-launch report take?",
+    "th": "รายงานก่อนเปิดตัวใช้เวลานานเท่าไร",
+    "my": "pre-launch report ကို ဘယ်လောက်ကြာသလဲ။",
+    "zh": "预发布报告要多久出结果？",
+    "de": "Wie lange dauert der Pre-Launch-Bericht?"
+   },
+   "a": {
+    "en": "Google says results usually come within an hour of uploading the app bundle. In some cases they take several hours.",
+    "th": "Google ระบุว่าผลมักออกภายในหนึ่งชั่วโมงหลังอัปโหลดแอปบันเดิล บางกรณีใช้เวลาหลายชั่วโมง",
+    "my": "အက်ပ်ဘန်ဒယ် အပ်လုဒ်တင်ပြီး တစ်နာရီအတွင်း ရလဒ်များ များသောအားဖြင့် ရသည်ဟု Google က ဆိုသည်။ အချို့ကိစ္စတွင် နာရီအတော်ကြာသည်။",
+    "zh": "Google 说，上传应用包后一般一小时内出结果，有些情况要几个小时。",
+    "de": "Laut Google kommen die Ergebnisse meist innerhalb einer Stunde nach dem Hochladen des App-Bundles. In manchen Fällen dauert es mehrere Stunden."
+   },
+   "src": "https://support.google.com/googleplay/android-developer/answer/9842757"
+  },
+  {
+   "q": {
+    "en": "How many people can test an iPhone app before release?",
+    "th": "ทดสอบแอป iPhone ก่อนเผยแพร่ได้กี่คน",
+    "my": "ထုတ်ဝေမီ iPhone အက်ပ်ကို လူဘယ်နှစ်ဦး စမ်းသပ်နိုင်သလဲ။",
+    "zh": "iPhone 应用发布前最多可以有多少人测试？",
+    "de": "Wie viele Personen können eine iPhone-App vor der Veröffentlichung testen?"
+   },
+   "a": {
+    "en": "TestFlight takes up to 10,000 external testers and up to 100 internal testers. The page also says testers can use available builds on up to 30 devices.",
+    "th": "TestFlight รองรับผู้ทดสอบภายนอกได้ถึง 10,000 คน และผู้ทดสอบภายในได้ถึง 100 คน หน้าเว็บยังระบุว่าผู้ทดสอบใช้บิลด์ที่มีได้บนอุปกรณ์ถึง 30 เครื่อง",
+    "my": "TestFlight သည် ပြင်ပစမ်းသပ်သူ 10,000 အထိနှင့် ပြည်တွင်းစမ်းသပ်သူ 100 အထိ လက်ခံသည်။ စမ်းသပ်သူများသည် ရနိုင်သော build များကို စက် 30 လုံးအထိ သုံးနိုင်သည်ဟုလည်း စာမျက်နှာတွင် ဆိုသည်။",
+    "zh": "TestFlight 最多可有 10,000 名外部测试员和 100 名内部测试员。页面还写明，测试员可在最多 30 台设备上使用可用的构建版本。",
+    "de": "TestFlight nimmt bis zu 10,000 externe und bis zu 100 interne Testende auf. Die Seite sagt auch, dass Testende verfügbare Builds auf bis zu 30 Geräten nutzen können."
+   },
+   "src": "https://developer.apple.com/testflight/"
+  },
+  {
+   "q": {
+    "en": "What does a Google Play closed test cost on Fastwork?",
+    "th": "ทดสอบแบบปิดบน Google Play ที่ Fastwork ราคาเท่าไร",
+    "my": "Fastwork တွင် Google Play closed test ဈေးဘယ်လောက်လဲ။",
+    "zh": "在 Fastwork 上做 Google Play 封闭测试要多少钱？",
+    "de": "Was kostet ein geschlossener Google-Play-Test auf Fastwork?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists a closed test with 15 testers over 14 days for ฿1,790, and with 25 testers and a store-page report for ฿2,490. The listing shows 6 sold.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคาทดสอบแบบปิดผู้ทดสอบ 15 คน 14 วัน ที่ ฿1,790 และผู้ทดสอบ 25 คนพร้อมรายงานหน้าร้านแอปที่ ฿2,490 ขายแล้ว 6 ครั้ง",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက စမ်းသပ်သူ 15 ဦး 14 ရက် closed test ကို ฿1,790၊ စမ်းသပ်သူ 25 ဦးနှင့် စတိုးစာမျက်နှာ အစီရင်ခံစာပါလျှင် ฿2,490 ဟု သတ်မှတ်ထားသည်။ 6 ကြိမ် ရောင်းပြီးဖြစ်သည်။",
+    "zh": "Fastwork 上有一位卖家，15 名测试员、14 天的封闭测试标价 ฿1,790；25 名测试员加商店页面报告标价 ฿2,490。已售 6 次。",
+    "de": "Eine Verkäuferperson auf Fastwork nennt ฿1,790 für einen geschlossenen Test mit 15 Testenden über 14 Tage und ฿2,490 mit 25 Testenden und Bericht zur Store-Seite. Das Angebot zeigt 6 Verkäufe."
+   },
+   "src": "https://fastwork.co/user/appreadyth/quality-assurance-48647260"
+  }
+ ],
+ "related": [
+  "app",
+  "vibe",
+  "lang-pages",
+  "redteam",
+  "mirror",
+  "translate"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Google Play Console Help: testing requirements for new personal accounts",
+    "th": "ความช่วยเหลือ Google Play Console: ข้อกำหนดการทดสอบสำหรับบัญชีส่วนบุคคลใหม่",
+    "my": "Google Play Console အကူအညီ: ကိုယ်ပိုင်အကောင့်အသစ်များအတွက် စမ်းသပ်မှုလိုအပ်ချက်များ",
+    "zh": "Google Play Console 帮助：新个人账号的测试要求",
+    "de": "Google Play Console Hilfe: Testanforderungen für neue persönliche Konten"
+   },
+   "href": "https://support.google.com/googleplay/android-developer/answer/14151465"
+  },
+  {
+   "t": {
+    "en": "Apple: TestFlight overview",
+    "th": "Apple: ภาพรวม TestFlight",
+    "my": "Apple: TestFlight အကျဉ်းချုပ်",
+    "zh": "Apple：TestFlight 概述",
+    "de": "Apple: TestFlight im Überblick"
+   },
+   "href": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview/"
+  }
+ ]
+}

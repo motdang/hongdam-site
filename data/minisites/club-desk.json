@@ -1,0 +1,333 @@
+{
+ "id": "club-desk",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A club's mail, receipts and donations land on one volunteer, and the work comes back month after month.",
+  "th": "อีเมล ใบเสร็จ และเงินบริจาคของชมรมมาตกอยู่กับอาสาสมัครคนเดียว และงานนี้วนกลับมาทุกเดือน",
+  "my": "အသင်း၏ မေးလ်၊ ပြေစာနှင့် လှူငွေများသည် စေတနာ့ဝန်ထမ်းတစ်ဦးထံသို့ ရောက်လာပြီး ထိုအလုပ်သည် လပြီးလ ပြန်ဖြစ်နေသည်။",
+  "zh": "社团的邮件、收据和捐款都落在一位志愿者手上，这些事月月都有。",
+  "de": "Post, Quittungen und Spenden eines Vereins landen bei einer freiwilligen Person, und die Arbeit kommt Monat für Monat wieder."
+ },
+ "n": {
+  "de": "Verwaltung für einen Verein"
+ },
+ "l": {
+  "de": "Post und Quittungen abgelegt, Umfragen durchgeführt, Spenden zugeordnet."
+ },
+ "steps": [
+  {
+   "db": "envelope",
+   "t": {
+    "en": "You forward the club's mail and the handwritten receipts.",
+    "th": "คุณส่งต่ออีเมลของชมรมและใบเสร็จลายมือ",
+    "my": "သင်က အသင်း၏ မေးလ်များနှင့် လက်ရေးပြေစာများကို ပေးပို့သည်။",
+    "zh": "您转发社团的邮件和手写收据。",
+    "de": "Sie leiten die Post des Vereins und die handschriftlichen Quittungen weiter."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Through the month",
+    "th": "ตลอดเดือน",
+    "my": "တစ်လတာအတွင်း",
+    "zh": "整个月",
+    "de": "Im Lauf des Monats"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The mail and the receipts are filed.",
+    "th": "เก็บอีเมลและใบเสร็จเข้าแฟ้ม",
+    "my": "မေးလ်များနှင့် ပြေစာများကို ဖိုင်တွဲသည်။",
+    "zh": "邮件和收据归档。",
+    "de": "Die Post und die Quittungen werden abgelegt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Through the month",
+    "th": "ตลอดเดือน",
+    "my": "တစ်လတာအတွင်း",
+    "zh": "整个月",
+    "de": "Im Lauf des Monats"
+   }
+  },
+  {
+   "db": "thumbs-up",
+   "t": {
+    "en": "Polls are run for the club.",
+    "th": "ทำโพลให้ชมรม",
+    "my": "အသင်းအတွက် မဲပေးစစ်တမ်း (poll) ပြုလုပ်ပေးသည်။",
+    "zh": "为社团做投票。",
+    "de": "Für den Verein werden Umfragen durchgeführt."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "When the club asks",
+    "th": "เมื่อชมรมขอ",
+    "my": "အသင်းက တောင်းသည့်အခါ",
+    "zh": "社团提出时",
+    "de": "Auf Wunsch des Vereins"
+   }
+  },
+  {
+   "db": "coin",
+   "t": {
+    "en": "Invoices are matched to PromptPay donations.",
+    "th": "จับคู่ใบแจ้งหนี้กับเงินบริจาคทางพร้อมเพย์",
+    "my": "ငွေတောင်းခံလွှာများကို PromptPay လှူငွေများနှင့် တိုက်ဆိုင်စစ်ဆေးသည်။",
+    "zh": "把发票与 PromptPay 捐款对上。",
+    "de": "Rechnungen werden den PromptPay-Spenden zugeordnet."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "As donations arrive",
+    "th": "เมื่อมีเงินบริจาคเข้า",
+    "my": "လှူငွေဝင်လာသည့်အခါ",
+    "zh": "捐款到账时",
+    "de": "Wenn Spenden eingehen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A Thai foundation registers at the district office of its principal office: the khet office in Bangkok, the amphoe office elsewhere.",
+    "th": "มูลนิธิไทยยื่นจดทะเบียนที่ที่ทำการในเขตที่ตั้งสำนักงานใหญ่ ในกรุงเทพฯ คือสำนักงานเขต ที่อื่นคือที่ว่าการอำเภอ",
+    "my": "ထိုင်းဖောင်ဒေးရှင်းသည် ရုံးအကြီးရှိရာ ခရိုင်အဆင့်ရုံးတွင် မှတ်ပုံတင်သည်။ ဘန်ကောက်တွင် khet ရုံး၊ အခြားနေရာများတွင် amphoe ရုံး ဖြစ်သည်။",
+    "zh": "泰国基金会到主要办事处所在的区级机关登记：曼谷是区办事处（khet），其他地方是县政府（amphoe）。",
+    "de": "Eine thailändische Stiftung wird beim Bezirksamt ihres Hauptsitzes eingetragen: in Bangkok beim Khet-Amt, sonst beim Amphoe-Amt."
+   },
+   "src": "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "By the end of March each year, a foundation files an activity report, a balance sheet and an income and expenditure account certified by an authorised auditor, and the minutes of the board meetings held that year.",
+    "th": "ภายในสิ้นเดือนมีนาคมของทุกปี มูลนิธิยื่นรายงานกิจกรรมของปีที่ผ่านมา งบดุลและบัญชีรายรับรายจ่ายที่ผู้สอบบัญชีที่ได้รับอนุญาตรับรอง และรายงานการประชุมคณะกรรมการที่จัดในปีนั้น",
+    "my": "ဖောင်ဒေးရှင်းသည် နှစ်စဉ် မတ်လကုန်ရောက်မီ လုပ်ငန်းဆောင်ရွက်ချက်အစီရင်ခံစာ၊ ခွင့်ပြုချက်ရ စာရင်းစစ်က အတည်ပြုထားသော ချိန်ခွင်လျှာစာရင်းနှင့် ဝင်ငွေ-ထွက်ငွေစာရင်း၊ ထိုနှစ်တွင် ကျင်းပခဲ့သော ဘုတ်အဖွဲ့အစည်းအဝေးမှတ်တမ်းများကို တင်သွင်းသည်။",
+    "zh": "基金会每年 3 月底前提交：上一年的活动报告、经授权审计师认证的资产负债表和收支账目，以及当年理事会会议的记录。",
+    "de": "Bis Ende März jedes Jahres reicht eine Stiftung einen Tätigkeitsbericht, eine von einer zugelassenen Revisionsstelle bestätigte Bilanz samt Einnahmen-und-Ausgaben-Rechnung und die Protokolle der Vorstandssitzungen des Jahres ein."
+   },
+   "src": "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "A foundation keeps detailed financial records. It gets a tax ID within 60 days of registering or of starting business, whichever is later.",
+    "th": "มูลนิธิเก็บบันทึกทางการเงินอย่างละเอียด และขอเลขประจำตัวผู้เสียภาษีภายใน 60 วันนับจากวันจดทะเบียนหรือวันเริ่มดำเนินกิจการ แล้วแต่วันใดจะช้ากว่า",
+    "my": "ဖောင်ဒေးရှင်းသည် ငွေကြေးမှတ်တမ်းများကို အသေးစိတ်ထားရှိသည်။ မှတ်ပုံတင်ပြီးနောက် သို့မဟုတ် လုပ်ငန်းစတင်ပြီးနောက် ရက် 60 အတွင်း (နောက်ကျသည့်ရက်ကို ယူ) အခွန်ကိုယ်စားပြုနံပါတ် ရယူသည်။",
+    "zh": "基金会保存详细的财务记录。自登记或开始运作之日起 60 天内（以较晚者为准）取得税号。",
+    "de": "Eine Stiftung führt ausführliche Finanzunterlagen. Die Steuernummer erhält sie innert 60 Tagen nach der Eintragung oder dem Beginn der Tätigkeit, je nachdem, was später liegt."
+   },
+   "src": "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "For tax year 2569, a donor deducts only cash gifts made through e-Donation, up to 10% of income after expenses and allowances. The recipient records the gift, or the donor scans the recipient's QR code.",
+    "th": "ปีภาษี 2569 ผู้บริจาคลดหย่อนได้เฉพาะเงินสดที่บริจาคผ่าน e-Donation ไม่เกิน 10% ของเงินได้หลังหักค่าใช้จ่ายและค่าลดหย่อน ผู้รับบันทึกการบริจาค หรือผู้บริจาคสแกน QR code ของผู้รับ",
+    "my": "2569 အခွန်နှစ်အတွက် လှူဒါန်းသူက e-Donation မှတစ်ဆင့် လှူသော ငွေသားကိုသာ ကုန်ကျစရိတ်နှင့် ခွင့်ပြုနုတ်ယူငွေများ နုတ်ပြီးနောက် ဝင်ငွေ၏ 10% အထိ နုတ်ယူနိုင်သည်။ လက်ခံသူက လှူငွေကို မှတ်တမ်းတင်သည်၊ သို့မဟုတ် လှူသူက လက်ခံသူ၏ QR ကုဒ်ကို စကင်ဖတ်သည်။",
+    "zh": "2569 纳税年度，捐款人只能抵扣通过 e-Donation 的现金捐款，上限为扣除费用和免税额后收入的 10%。由接收方登记捐款，或由捐款人扫描接收方的二维码。",
+    "de": "Im Steuerjahr 2569 setzt eine spendende Person nur Geldspenden über e-Donation ab, bis 10 % des Einkommens nach Auslagen und Freibeträgen. Die Empfängerseite erfasst die Spende, oder die spendende Person scannt den QR-Code der Empfängerseite."
+   },
+   "src": "https://www.thairath.co.th/money/personal_finance/financial_planning/2920015"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "An online assistant for admin and document work, a Fastwork listing",
+    "th": "ผู้ช่วยออนไลน์สำหรับงานแอดมินและเอกสาร ประกาศบน Fastwork",
+    "my": "စီမံခန့်ခွဲရေးနှင့် စာရွက်စာတမ်းအလုပ်အတွက် အွန်လိုင်းအကူ၊ Fastwork စာရင်းတစ်ခု",
+    "zh": "负责行政和文书工作的线上助理，Fastwork 上的一则服务",
+    "de": "Online-Assistenz für Verwaltung und Dokumente, ein Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "฿1,000 for one day of about 6 hours; ฿2,500 for three days",
+    "th": "฿1,000 ต่อ 1 วัน ประมาณ 6 ชั่วโมง; ฿2,500 สำหรับ 3 วัน",
+    "my": "တစ်ရက် (ခန့်မှန်း ၆ နာရီ) ฿1,000; သုံးရက် ฿2,500",
+    "zh": "一天约 6 小时 ฿1,000；三天 ฿2,500",
+    "de": "฿1,000 für einen Tag von etwa 6 Stunden; ฿2,500 für drei Tage"
+   },
+   "src": "https://fastwork.co/user/kornrawan/secretary-23723075"
+  },
+  {
+   "t": {
+    "en": "Monthly bookkeeping and online tax filing for companies and foundations, a Fastwork listing, priced by receipts a month",
+    "th": "ทำบัญชีรายเดือนและยื่นภาษีออนไลน์สำหรับบริษัทและมูลนิธิ ประกาศบน Fastwork คิดราคาตามจำนวนใบเสร็จต่อเดือน",
+    "my": "ကုမ္ပဏီများနှင့် ဖောင်ဒေးရှင်းများအတွက် လစဉ်စာရင်းကိုင်နှင့် အွန်လိုင်းအခွန်တင်ခြင်း၊ Fastwork စာရင်းတစ်ခု၊ တစ်လလျှင် ပြေစာအရေအတွက်ဖြင့် စျေးနှုန်းသတ်မှတ်",
+    "zh": "公司和基金会的月度记账与线上报税，Fastwork 上的一则服务，按每月收据数量计价",
+    "de": "Monatliche Buchhaltung und Online-Steuermeldung für Firmen und Stiftungen, ein Angebot auf Fastwork, nach Belegen pro Monat berechnet"
+   },
+   "p": {
+    "en": "฿1,000 a month for up to 10 receipts; ฿2,000 for 11 to 30; ฿2,500 for 31 to 50; ฿3,000 for 51 to 100",
+    "th": "฿1,000 ต่อเดือน ไม่เกิน 10 ใบ; ฿2,000 สำหรับ 11–30 ใบ; ฿2,500 สำหรับ 31–50 ใบ; ฿3,000 สำหรับ 51–100 ใบ",
+    "my": "တစ်လ ပြေစာ 10 စောင်အထိ ฿1,000; 11 မှ 30 အတွက် ฿2,000; 31 မှ 50 အတွက် ฿2,500; 51 မှ 100 အတွက် ฿3,000",
+    "zh": "每月最多 10 张收据 ฿1,000；11 至 30 张 ฿2,000；31 至 50 张 ฿2,500；51 至 100 张 ฿3,000",
+    "de": "฿1,000 im Monat für bis zu 10 Belege; ฿2,000 für 11 bis 30; ฿2,500 für 31 bis 50; ฿3,000 für 51 bis 100"
+   },
+   "src": "https://fastwork.co/user/mindy2122/accounting-and-finance-20058562"
+  },
+  {
+   "t": {
+    "en": "An online form in Google Forms or Microsoft Forms, built for you, a Fastwork listing",
+    "th": "แบบฟอร์มออนไลน์ใน Google Forms หรือ Microsoft Forms ที่ทำให้ ประกาศบน Fastwork",
+    "my": "Google Forms သို့မဟုတ် Microsoft Forms ဖြင့် ပြုလုပ်ပေးသော အွန်လိုင်းဖောင်၊ Fastwork စာရင်းတစ်ခု",
+    "zh": "用 Google Forms 或 Microsoft Forms 代做的在线表单，Fastwork 上的一则服务",
+    "de": "Online-Formular in Google Forms oder Microsoft Forms, für Sie erstellt, ein Angebot auf Fastwork"
+   },
+   "p": {
+    "en": "฿400 for up to 20 questions",
+    "th": "฿400 ไม่เกิน 20 คำถาม",
+    "my": "မေးခွန်း 20 အထိ ฿400",
+    "zh": "最多 20 个问题 ฿400",
+    "de": "฿400 für bis zu 20 Fragen"
+   },
+   "src": "https://fastwork.co/user/boomlittle/questionnaire-20628740"
+  },
+  {
+   "t": {
+    "en": "PromptPay transfer, the Bank of Thailand's standard fee table",
+    "th": "โอนพร้อมเพย์ ตารางค่าธรรมเนียมมาตรฐานของธนาคารแห่งประเทศไทย",
+    "my": "PromptPay ငွေလွှဲ၊ ဘဏ်အော့ဖ်ထိုင်းလန်၏ စံအခကြေးဇယား",
+    "zh": "PromptPay 转账，泰国央行的标准费率表",
+    "de": "PromptPay-Überweisung, die Standardgebührentabelle der Bank of Thailand"
+   },
+   "p": {
+    "en": "Free to ฿5,000; under ฿2 to ฿30,000; under ฿5 to ฿100,000; under ฿10 above that",
+    "th": "ฟรีไม่เกิน ฿5,000; ไม่ถึง ฿2 ถึง ฿30,000; ไม่ถึง ฿5 ถึง ฿100,000; ไม่ถึง ฿10 เกินจากนั้น",
+    "my": "฿5,000 အထိ အခမဲ့; ฿30,000 အထိ ฿2 အောက်; ฿100,000 အထိ ฿5 အောက်; ထိုထက်ကျော်လျှင် ฿10 အောက်",
+    "zh": "฿5,000 以内免费；至 ฿30,000 低于 ฿2；至 ฿100,000 低于 ฿5；再往上低于 ฿10",
+    "de": "Gratis bis ฿5,000; unter ฿2 bis ฿30,000; unter ฿5 bis ฿100,000; unter ฿10 darüber"
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What does a Thai foundation file each year?",
+    "th": "มูลนิธิไทยต้องยื่นอะไรทุกปี",
+    "my": "ထိုင်းဖောင်ဒေးရှင်းတစ်ခုက နှစ်စဉ် ဘာတွေ တင်သွင်းရသလဲ။",
+    "zh": "泰国基金会每年要提交什么？",
+    "de": "Was reicht eine thailändische Stiftung jedes Jahr ein?"
+   },
+   "a": {
+    "en": "By the end of March it files an activity report, a balance sheet and an income and expenditure account certified by an authorised auditor, and the minutes of the board meetings held that year. It also keeps detailed financial records.",
+    "th": "ภายในสิ้นเดือนมีนาคม มูลนิธิยื่นรายงานกิจกรรม งบดุลและบัญชีรายรับรายจ่ายที่ผู้สอบบัญชีที่ได้รับอนุญาตรับรอง และรายงานการประชุมคณะกรรมการที่จัดในปีนั้น และเก็บบันทึกทางการเงินอย่างละเอียด",
+    "my": "မတ်လကုန်ရောက်မီ လုပ်ငန်းဆောင်ရွက်ချက်အစီရင်ခံစာ၊ ခွင့်ပြုချက်ရ စာရင်းစစ်က အတည်ပြုထားသော ချိန်ခွင်လျှာစာရင်းနှင့် ဝင်ငွေ-ထွက်ငွေစာရင်း၊ ထိုနှစ်ကျင်းပခဲ့သော ဘုတ်အဖွဲ့အစည်းအဝေးမှတ်တမ်းများကို တင်သွင်းသည်။ ငွေကြေးမှတ်တမ်းများကိုလည်း အသေးစိတ်ထားရှိသည်။",
+    "zh": "3 月底前提交活动报告、经授权审计师认证的资产负债表和收支账目，以及当年理事会会议记录。基金会还要保存详细的财务记录。",
+    "de": "Bis Ende März reicht sie einen Tätigkeitsbericht, eine von einer zugelassenen Revisionsstelle bestätigte Bilanz samt Einnahmen-und-Ausgaben-Rechnung und die Protokolle der Vorstandssitzungen des Jahres ein. Ausserdem führt sie ausführliche Finanzunterlagen."
+   },
+   "src": "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/"
+  },
+  {
+   "q": {
+    "en": "Which gifts can a donor deduct from tax for 2569?",
+    "th": "ปีภาษี 2569 เงินบริจาคแบบไหนลดหย่อนภาษีได้",
+    "my": "2569 အခွန်နှစ်တွင် မည်သည့်လှူငွေကို အခွန်မှ နုတ်ယူနိုင်သလဲ။",
+    "zh": "2569 纳税年度，哪些捐款可以抵税？",
+    "de": "Welche Spenden kann man für 2569 von der Steuer absetzen?"
+   },
+   "a": {
+    "en": "Thairath reports that an individual deducts only cash gifts, to recipients recognised under Thai law such as temples, state schools, state hospitals and certified charities, and that the gift must go through e-Donation. The total is capped at 10% of income after expenses and allowances.",
+    "th": "ไทยรัฐรายงานว่า บุคคลธรรมดาลดหย่อนได้เฉพาะเงินสด ที่บริจาคให้ผู้รับที่กฎหมายไทยรับรอง เช่น วัด โรงเรียนรัฐ โรงพยาบาลรัฐ และองค์กรการกุศลที่ได้รับรอง และต้องบริจาคผ่าน e-Donation รวมกันไม่เกิน 10% ของเงินได้หลังหักค่าใช้จ่ายและค่าลดหย่อน",
+    "my": "ထိုင်းရတ် (Thairath) က တစ်ဦးချင်းသည် ထိုင်းဥပဒေအရ အသိအမှတ်ပြုထားသော ဘုရားကျောင်း၊ ပြည်သူ့ကျောင်း၊ ပြည်သူ့ဆေးရုံနှင့် အသိအမှတ်ပြု ပရဟိတအဖွဲ့ကဲ့သို့ လက်ခံသူများထံ ငွေသားလှူမှသာ နုတ်ယူနိုင်ပြီး e-Donation မှတစ်ဆင့် လှူရမည်ဟု ဖော်ပြသည်။ စုစုပေါင်းကို ကုန်ကျစရိတ်နှင့် ခွင့်ပြုနုတ်ယူငွေများ နုတ်ပြီးနောက် ဝင်ငွေ၏ 10% အထိ ကန့်သတ်ထားသည်။",
+    "zh": "《泰叻报》（Thairath）报道：个人只能抵扣现金捐款，接收方须是泰国法律认可的对象，如寺庙、公立学校、公立医院和获认证的慈善机构，且捐款必须通过 e-Donation。总额上限为扣除费用和免税额后收入的 10%。",
+    "de": "Thairath berichtet, dass eine Einzelperson nur Geldspenden absetzt, und zwar an nach thailändischem Recht anerkannte Empfänger wie Tempel, staatliche Schulen, staatliche Spitäler und zertifizierte Hilfswerke, und dass die Spende über e-Donation laufen muss. Die Summe ist auf 10 % des Einkommens nach Auslagen und Freibeträgen begrenzt."
+   },
+   "src": "https://www.thairath.co.th/money/personal_finance/financial_planning/2920015"
+  },
+  {
+   "q": {
+    "en": "What does PromptPay cost for a club that takes donations?",
+    "th": "ชมรมที่รับบริจาคทางพร้อมเพย์เสียค่าธรรมเนียมเท่าไร",
+    "my": "အလှူခံသော အသင်းတစ်ခုအတွက် PromptPay က ဘယ်လောက်ကျသလဲ။",
+    "zh": "接收捐款的社团用 PromptPay 要付多少费用？",
+    "de": "Was kostet PromptPay für einen Verein, der Spenden entgegennimmt?"
+   },
+   "a": {
+    "en": "The Bank of Thailand's standard table lists a transfer of up to ฿5,000 as free. Above that the fee is under ฿2 up to ฿30,000, under ฿5 up to ฿100,000 and under ฿10 beyond.",
+    "th": "ตารางมาตรฐานของธนาคารแห่งประเทศไทยระบุว่า การโอนไม่เกิน ฿5,000 ไม่มีค่าธรรมเนียม เกินจากนั้นไม่ถึง ฿2 ถึง ฿30,000 ไม่ถึง ฿5 ถึง ฿100,000 และไม่ถึง ฿10 สำหรับยอดที่เกิน",
+    "my": "ဘဏ်အော့ဖ်ထိုင်းလန်၏ စံဇယားတွင် ฿5,000 အထိ လွှဲခြင်းကို အခမဲ့အဖြစ် ဖော်ပြထားသည်။ ထိုထက်ကျော်လျှင် ฿30,000 အထိ ฿2 အောက်၊ ฿100,000 အထိ ฿5 အောက်၊ ထိုထက်ပိုလျှင် ฿10 အောက် ကျသည်။",
+    "zh": "泰国央行的标准费率表把 ฿5,000 以内的转账列为免费。超过后，至 ฿30,000 低于 ฿2，至 ฿100,000 低于 ฿5，再往上低于 ฿10。",
+    "de": "Die Standardtabelle der Bank of Thailand führt eine Überweisung bis ฿5,000 als gratis auf. Darüber liegt die Gebühr bis ฿30,000 unter ฿2, bis ฿100,000 unter ฿5 und darüber unter ฿10."
+   },
+   "src": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  },
+  {
+   "q": {
+    "en": "What does an online assistant for admin work cost in Thailand?",
+    "th": "ผู้ช่วยออนไลน์สำหรับงานแอดมินในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် စီမံခန့်ခွဲရေးအလုပ်အတွက် အွန်လိုင်းအကူ ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国，请线上助理做行政工作要多少钱？",
+    "de": "Was kostet in Thailand eine Online-Assistenz für Verwaltungsarbeit?"
+   },
+   "a": {
+    "en": "One Fastwork listing for a virtual assistant asks ฿1,000 for one day of about 6 hours and ฿2,500 for three days. The work named is document preparation such as quotations, invoices and receipts, appointment scheduling and coordination with partners.",
+    "th": "ประกาศหนึ่งบน Fastwork สำหรับผู้ช่วยส่วนตัวออนไลน์ ตั้งราคา ฿1,000 ต่อ 1 วัน ประมาณ 6 ชั่วโมง และ ฿2,500 สำหรับ 3 วัน งานที่ระบุคือจัดทำเอกสาร เช่น ใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จ นัดหมาย และประสานงานกับพันธมิตร",
+    "my": "Fastwork ရှိ အွန်လိုင်းအကူစာရင်းတစ်ခုက တစ်ရက် (ခန့်မှန်း ၆ နာရီ) အတွက် ฿1,000 နှင့် သုံးရက်အတွက် ฿2,500 တောင်းသည်။ ဖော်ပြထားသော အလုပ်များမှာ စျေးနှုန်းလွှာ၊ ငွေတောင်းခံလွှာ၊ ပြေစာကဲ့သို့ စာရွက်စာတမ်းပြင်ဆင်ခြင်း၊ ရက်ချိန်းစီမံခြင်းနှင့် လုပ်ဖော်ကိုင်ဖက်များနှင့် ညှိနှိုင်းခြင်းတို့ ဖြစ်သည်။",
+    "zh": "Fastwork 上一则线上助理服务，一天约 6 小时要价 ฿1,000，三天 ฿2,500。所列工作是起草报价单、发票、收据等文件，安排预约，以及与合作方协调。",
+    "de": "Ein Angebot auf Fastwork für eine virtuelle Assistenz verlangt ฿1,000 für einen Tag von etwa 6 Stunden und ฿2,500 für drei Tage. Genannt sind Dokumente wie Offerten, Rechnungen und Quittungen, Terminplanung und Abstimmung mit Partnern."
+   },
+   "src": "https://fastwork.co/user/kornrawan/secretary-23723075"
+  }
+ ],
+ "related": [
+  "line-memory",
+  "giving",
+  "photo-proof",
+  "directory",
+  "bots",
+  "cs-desk"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Thai Law Online: setting up a foundation in Thailand",
+    "th": "Thai Law Online: การจัดตั้งมูลนิธิในประเทศไทย",
+    "my": "Thai Law Online: ထိုင်းနိုင်ငံတွင် ဖောင်ဒေးရှင်း တည်ထောင်ခြင်း",
+    "zh": "Thai Law Online：在泰国设立基金会",
+    "de": "Thai Law Online: eine Stiftung in Thailand gründen"
+   },
+   "href": "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/"
+  },
+  {
+   "t": {
+    "en": "Bank of Thailand: PromptPay",
+    "th": "ธนาคารแห่งประเทศไทย: พร้อมเพย์",
+    "my": "ဘဏ်အော့ဖ်ထိုင်းလန်: PromptPay",
+    "zh": "泰国央行：PromptPay",
+    "de": "Bank of Thailand: PromptPay"
+   },
+   "href": "https://www.bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html"
+  }
+ ],
+ "glyphs": [
+  "envelope",
+  "page",
+  "coin"
+ ]
+}

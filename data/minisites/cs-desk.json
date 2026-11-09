@@ -1,0 +1,309 @@
+{
+ "id": "cs-desk",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "A shop or office gets chats on LINE, Messenger or email, and needs them answered in Thai and English on working days.",
+  "th": "ร้านหรือสำนักงานได้รับแชตทางไลน์ Messenger หรืออีเมล และต้องการให้ตอบเป็นภาษาไทยและอังกฤษในวันทำการ",
+  "my": "ဆိုင် သို့မဟုတ် ရုံးတစ်ခုက LINE၊ Messenger သို့မဟုတ် အီးမေးလ်ဖြင့် ချက်တင်များ ရရှိပြီး အလုပ်ရက်များတွင် ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ပြန်ဖြေပေးစေလိုသည်။",
+  "zh": "商店或公司在 LINE、Messenger 或邮件上收到咨询，需要在工作日用泰语和英语回复。",
+  "de": "Ein Geschäft oder Büro bekommt Nachrichten über LINE, Messenger oder E-Mail und braucht Antworten auf Thai und Englisch an Werktagen."
+ },
+ "n": {
+  "de": "Thailändischer Kundenservice"
+ },
+ "l": {
+  "de": "Ihre LINE-Nachrichten, Messenger-Chats oder E-Mails werden an Werktagen beantwortet, monatlich abgerechnet."
+ },
+ "glyphs": [
+  "chat",
+  "envelope",
+  "clock"
+ ],
+ "steps": [
+  {
+   "db": "link",
+   "t": {
+    "en": "You pick two channels: your LINE OA, Messenger or email.",
+    "th": "คุณเลือกสองช่องทางจาก LINE OA, Messenger หรืออีเมล",
+    "my": "သင်က LINE OA၊ Messenger သို့မဟုတ် အီးမေးလ်တို့အနက် လမ်းကြောင်းနှစ်ခု ရွေးသည်။",
+    "zh": "您从 LINE OA、Messenger 或邮件中选两个渠道。",
+    "de": "Sie wählen zwei Kanäle: Ihr LINE OA, Messenger oder E-Mail."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "chat",
+   "t": {
+    "en": "We answer your chats in Thai and English on weekdays, 9 to 5.",
+    "th": "ตอบแชทของคุณเป็นภาษาไทยและอังกฤษ วันธรรมดา 9 โมงถึง 5 โมงเย็น",
+    "my": "ရုံးဖွင့်ရက်များ၊ 9 နာရီမှ 5 နာရီအထိ သင့်ချက်တင်များကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် ဖြေပေးသည်။",
+    "zh": "工作日 9 点到 5 点，用泰语和英语回复您的咨询。",
+    "de": "Wir beantworten Ihre Chats an Werktagen von 9 bis 17 Uhr auf Thai und Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Weekdays, 9 to 5",
+    "th": "วันธรรมดา 9 โมงถึง 5 โมงเย็น",
+    "my": "ရုံးဖွင့်ရက်၊ 9 နာရီမှ 5 နာရီ",
+    "zh": "工作日 9:00 至 17:00",
+    "de": "Werktage, 9 bis 17 Uhr"
+   }
+  },
+  {
+   "db": "calendar",
+   "t": {
+    "en": "The desk takes up to 600 chats a month. You pay by the month.",
+    "th": "รับแชตได้ไม่เกิน 600 แชตต่อเดือน คิดราคารายเดือน",
+    "my": "ဝန်ဆောင်မှုဌာနက တစ်လလျှင် ချက်တင် 600 အထိ လက်ခံသည်။ လစဉ် ပေးချေရသည်။",
+    "zh": "每月最多处理 600 个对话，按月付费。",
+    "de": "Der Kundenservice bearbeitet bis zu 600 Chats im Monat. Sie zahlen monatlich."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Monthly",
+    "th": "รายเดือน",
+    "my": "လစဉ်",
+    "zh": "按月",
+    "de": "Monatlich"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thai labour law sets ordinary work at no more than 8 hours a day and 48 hours a week (Labour Protection Act, Section 23).",
+    "th": "กฎหมายแรงงานไทยกำหนดเวลาทำงานปกติไม่เกิน 8 ชั่วโมงต่อวันและ 48 ชั่วโมงต่อสัปดาห์ (พ.ร.บ.คุ้มครองแรงงาน มาตรา 23)",
+    "my": "ထိုင်းအလုပ်သမားဥပဒေက ပုံမှန်အလုပ်ချိန်ကို တစ်ရက်လျှင် 8 နာရီနှင့် တစ်ပတ်လျှင် 48 နာရီထက် မပိုစေရဟု သတ်မှတ်သည် (အလုပ်သမားကာကွယ်ရေးဥပဒေ ပုဒ်မ 23)။",
+    "zh": "泰国劳动法规定，正常工作时间每天不超过 8 小时、每周不超过 48 小时（《劳工保护法》第 23 条）。",
+    "de": "Das thailändische Arbeitsrecht begrenzt die normale Arbeitszeit auf 8 Stunden pro Tag und 48 Stunden pro Woche (Labour Protection Act, Section 23)."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "Overtime on a working day pays at least 1.5 times the hourly wage (Labour Protection Act, Section 61).",
+    "th": "ค่าล่วงเวลาในวันทำงานจ่ายไม่น้อยกว่า 1.5 เท่าของอัตราค่าจ้างต่อชั่วโมง (พ.ร.บ.คุ้มครองแรงงาน มาตรา 61)",
+    "my": "အလုပ်ရက်တွင် အချိန်ပိုလုပ်ခသည် တစ်နာရီလုပ်ခ၏ 1.5 ဆထက် မနည်းစေရ (အလုပ်သမားကာကွယ်ရေးဥပဒေ ပုဒ်မ 61)။",
+    "zh": "工作日加班费不低于小时工资的 1.5 倍（《劳工保护法》第 61 条）。",
+    "de": "Überstunden an einem Arbeitstag werden mit mindestens dem 1,5-Fachen des Stundenlohns bezahlt (Labour Protection Act, Section 61)."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "The minimum wage in Chiang Rai is ฿352 a day, in force from 1 July 2025. Rates across Thailand run from ฿337 to ฿400.",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายคือ ฿352 ต่อวัน มีผลตั้งแต่ 1 กรกฎาคม 2568 ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခသည် တစ်ရက်လျှင် ฿352 ဖြစ်ပြီး 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှ စတင်သက်ရောက်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိ ရှိသည်။",
+    "zh": "清莱的最低工资是每天 ฿352，自 2025 年 7 月 1 日起实行。泰国各府的标准从 ฿337 到 ฿400 不等。",
+    "de": "Der Mindestlohn in Chiang Rai beträgt ฿352 pro Tag, gültig seit dem 1. Juli 2025. In Thailand liegen die Sätze zwischen ฿337 und ฿400."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "t": {
+    "en": "Under the Personal Data Protection Act (Section 40), a firm that handles personal data for a business acts on that business's instructions. The business prepares an agreement that controls what the firm does.",
+    "th": "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (มาตรา 40) ผู้ประมวลผลข้อมูลส่วนบุคคลให้ธุรกิจต้องทำตามคำสั่งของธุรกิจนั้น และธุรกิจต้องจัดทำข้อตกลงที่ควบคุมการดำเนินการของผู้ประมวลผล",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (ပုဒ်မ 40) အရ လုပ်ငန်းတစ်ခုအတွက် ကိုယ်ရေးအချက်အလက်ကို ကိုင်တွယ်သော ကုမ္ပဏီသည် ထိုလုပ်ငန်း၏ ညွှန်ကြားချက်အတိုင်း ဆောင်ရွက်ရသည်။ ထိုကုမ္ပဏီ၏ လုပ်ဆောင်ချက်ကို ထိန်းချုပ်သည့် သဘောတူညီချက်ကို လုပ်ငန်းက ပြင်ဆင်ရသည်။",
+    "zh": "按《个人数据保护法》（第 40 条），为企业处理个人数据的公司，依该企业的指示办事。企业订立协议，约束这家公司的做法。",
+    "de": "Nach dem Datenschutzgesetz PDPA (Section 40) handelt eine Firma, die personenbezogene Daten für ein Unternehmen verarbeitet, nach dessen Weisungen. Das Unternehmen setzt einen Vertrag auf, der regelt, was die Firma tut."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: chat admin on Facebook, LINE@ and Instagram, evenings from 18:00, 30 days",
+    "th": "ผู้ขายบน Fastwork: แอดมินตอบแชท Facebook, LINE@ และ Instagram ช่วงเย็นตั้งแต่ 18:00 น. 30 วัน",
+    "my": "Fastwork ရောင်းချသူ - Facebook၊ LINE@ နှင့် Instagram ချက်တင်ဖြေသူ၊ ညနေ 18:00 မှ၊ 30 ရက်",
+    "zh": "Fastwork 卖家：Facebook、LINE@ 和 Instagram 的客服管理员，晚上 18:00 起，30 天",
+    "de": "Anbieter auf Fastwork: Chat-Betreuung für Facebook, LINE@ und Instagram, abends ab 18:00 Uhr, 30 Tage"
+   },
+   "p": {
+    "en": "฿6,500",
+    "th": "฿6,500",
+    "my": "฿6,500",
+    "zh": "฿6,500",
+    "de": "฿6,500"
+   },
+   "src": "https://fastwork.co/user/natwaree/page-admin-21650242"
+  },
+  {
+   "t": {
+    "en": "Fastwork seller: Facebook page and LINE@ chat replies with order confirmation, 30 days",
+    "th": "ผู้ขายบน Fastwork: ตอบแชทเพจ Facebook และ LINE@ พร้อมยืนยันออเดอร์ 30 วัน",
+    "my": "Fastwork ရောင်းချသူ - Facebook စာမျက်နှာနှင့် LINE@ ချက်တင်ဖြေခြင်းနှင့် အော်ဒါအတည်ပြုခြင်း၊ 30 ရက်",
+    "zh": "Fastwork 卖家：回复 Facebook 主页和 LINE@ 的咨询并确认订单，30 天",
+    "de": "Anbieter auf Fastwork: Antworten auf Facebook-Seite und LINE@ mit Auftragsbestätigung, 30 Tage"
+   },
+   "p": {
+    "en": "from ฿15,000",
+    "th": "เริ่มที่ ฿15,000",
+    "my": "฿15,000 မှ စသည်",
+    "zh": "起价 ฿15,000",
+    "de": "ab ฿15,000"
+   },
+   "src": "https://fastwork.co/user/phumrawit/telesale-78054453"
+  },
+  {
+   "t": {
+    "en": "OnlineJobs.ph guide: a customer service worker in the Philippines, beginner to expert",
+    "th": "คู่มือ OnlineJobs.ph: พนักงานบริการลูกค้าในฟิลิปปินส์ ตั้งแต่ระดับเริ่มต้นถึงผู้เชี่ยวชาญ",
+    "my": "OnlineJobs.ph လမ်းညွှန် - ဖိလစ်ပိုင်ရှိ ဖောက်သည်ဝန်ဆောင်မှုဝန်ထမ်း၊ အဆင့်စတင်မှ ကျွမ်းကျင်သူအထိ",
+    "zh": "OnlineJobs.ph 指南：菲律宾的客服人员，从入门到资深",
+    "de": "OnlineJobs.ph-Leitfaden: Kundenservice-Mitarbeiter auf den Philippinen, vom Einsteiger bis zum Experten"
+   },
+   "p": {
+    "en": "US$3 to US$8 an hour; US$400 to US$900 a month",
+    "th": "US$3 ถึง US$8 ต่อชั่วโมง; US$400 ถึง US$900 ต่อเดือน",
+    "my": "တစ်နာရီလျှင် US$3 မှ US$8၊ တစ်လလျှင် US$400 မှ US$900",
+    "zh": "每小时 US$3 至 US$8；每月 US$400 至 US$900",
+    "de": "US$3 bis US$8 pro Stunde; US$400 bis US$900 im Monat"
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  },
+  {
+   "t": {
+    "en": "A worker on the Chiang Rai minimum wage",
+    "th": "ลูกจ้างที่ได้ค่าจ้างขั้นต่ำในเชียงราย",
+    "my": "ချင်းရိုင်းအနည်းဆုံးလုပ်ခဖြင့် လုပ်သော အလုပ်သမား",
+    "zh": "按清莱最低工资标准的一名员工",
+    "de": "Eine Arbeitskraft zum Mindestlohn in Chiang Rai"
+   },
+   "p": {
+    "en": "฿352 a day",
+    "th": "฿352 ต่อวัน",
+    "my": "တစ်ရက်လျှင် ฿352",
+    "zh": "每天 ฿352",
+    "de": "฿352 pro Tag"
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a chat admin cost in Thailand?",
+    "th": "แอดมินตอบแชทในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် ချက်တင်ဖြေသူ ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国请人回复客户消息要多少钱？",
+    "de": "Was kostet eine Person für Kunden-Chats in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists an evening chat admin for Facebook, LINE@ and Instagram at ฿6,500 for 30 days. The same seller lists a 15-day trial at ฿3,500.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคาแอดมินตอบแชทช่วงเย็นสำหรับ Facebook, LINE@ และ Instagram ที่ ฿6,500 ต่อ 30 วัน และแพ็กเกจทดลอง 15 วันที่ ฿3,500",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက Facebook၊ LINE@ နှင့် Instagram အတွက် ညနေပိုင်း ချက်တင်ဖြေသူကို 30 ရက်လျှင် ฿6,500 ဟု ဖော်ပြထားသည်။ ထိုရောင်းချသူက 15 ရက် စမ်းသပ်ပက်ကေ့ချ်ကို ฿3,500 ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位卖家把 Facebook、LINE@ 和 Instagram 的晚班客服管理员标价为 30 天 ฿6,500，并提供 15 天试用套餐 ฿3,500。",
+    "de": "Ein Anbieter auf Fastwork nennt für eine abendliche Chat-Betreuung von Facebook, LINE@ und Instagram ฿6,500 für 30 Tage und ein Testpaket von 15 Tagen für ฿3,500."
+   },
+   "src": "https://fastwork.co/user/natwaree/page-admin-21650242"
+  },
+  {
+   "q": {
+    "en": "How many hours can a chat admin work in Thailand?",
+    "th": "แอดมินตอบแชททำงานได้กี่ชั่วโมงตามกฎหมายไทย",
+    "my": "ထိုင်းဥပဒေအရ ချက်တင်ဖြေသူ ဘယ်နှစ်နာရီ လုပ်နိုင်သလဲ။",
+    "zh": "按泰国法律，客服管理员每天最多能工作几小时？",
+    "de": "Wie lange darf eine Chat-Kraft in Thailand arbeiten?"
+   },
+   "a": {
+    "en": "Ordinary work is at most 8 hours a day and 48 hours a week (Section 23 of the Labour Protection Act). Overtime on a working day pays at least 1.5 times the hourly wage (Section 61).",
+    "th": "เวลาทำงานปกติไม่เกิน 8 ชั่วโมงต่อวันและ 48 ชั่วโมงต่อสัปดาห์ (มาตรา 23 พ.ร.บ.คุ้มครองแรงงาน) ค่าล่วงเวลาในวันทำงานจ่ายไม่น้อยกว่า 1.5 เท่าของค่าจ้างต่อชั่วโมง (มาตรา 61)",
+    "my": "ပုံမှန်အလုပ်ချိန်သည် တစ်ရက်လျှင် 8 နာရီနှင့် တစ်ပတ်လျှင် 48 နာရီထက် မပိုစေရ (အလုပ်သမားကာကွယ်ရေးဥပဒေ ပုဒ်မ 23)။ အလုပ်ရက်တွင် အချိန်ပိုလုပ်ခသည် တစ်နာရီလုပ်ခ၏ 1.5 ဆထက် မနည်းစေရ (ပုဒ်မ 61)။",
+    "zh": "正常工作时间每天不超过 8 小时、每周不超过 48 小时（《劳工保护法》第 23 条）。工作日加班费不低于小时工资的 1.5 倍（第 61 条）。",
+    "de": "Die normale Arbeitszeit beträgt höchstens 8 Stunden pro Tag und 48 Stunden pro Woche (Section 23 des Labour Protection Act). Überstunden an einem Arbeitstag werden mit mindestens dem 1,5-Fachen des Stundenlohns bezahlt (Section 61)."
+   },
+   "src": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "q": {
+    "en": "What is the minimum wage in Chiang Rai?",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายเท่าไร",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခ ဘယ်လောက်လဲ။",
+    "zh": "清莱的最低工资是多少？",
+    "de": "Wie hoch ist der Mindestlohn in Chiang Rai?"
+   },
+   "a": {
+    "en": "The minimum wage in Chiang Rai is ฿352 a day, in force from 1 July 2025. Rates across Thailand run from ฿337 to ฿400.",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายคือ ฿352 ต่อวัน มีผลตั้งแต่ 1 กรกฎาคม 2568 ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခသည် တစ်ရက်လျှင် ฿352 ဖြစ်ပြီး 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှ စတင်သက်ရောက်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိ ရှိသည်။",
+    "zh": "清莱的最低工资是每天 ฿352，自 2025 年 7 月 1 日起实行。泰国各府的标准从 ฿337 到 ฿400 不等。",
+    "de": "Der Mindestlohn in Chiang Rai beträgt ฿352 pro Tag, gültig seit dem 1. Juli 2025. In Thailand liegen die Sätze zwischen ฿337 und ฿400."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "q": {
+    "en": "Does a chat desk need a data agreement?",
+    "th": "บริการตอบแชทต้องมีข้อตกลงเรื่องข้อมูลหรือไม่",
+    "my": "ချက်တင်ဖြေဝန်ဆောင်မှုအတွက် ဒေတာသဘောတူညီချက် လိုသလား။",
+    "zh": "客服外包需要数据协议吗？",
+    "de": "Braucht ein Chat-Service eine Datenvereinbarung?"
+   },
+   "a": {
+    "en": "Under the Personal Data Protection Act (Section 40), a firm that handles personal data for a business acts on that business's instructions. The business prepares an agreement that controls what the firm does.",
+    "th": "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (มาตรา 40) ผู้ประมวลผลข้อมูลส่วนบุคคลให้ธุรกิจต้องทำตามคำสั่งของธุรกิจนั้น และธุรกิจต้องจัดทำข้อตกลงที่ควบคุมการดำเนินการของผู้ประมวลผล",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (ပုဒ်မ 40) အရ လုပ်ငန်းတစ်ခုအတွက် ကိုယ်ရေးအချက်အလက်ကို ကိုင်တွယ်သော ကုမ္ပဏီသည် ထိုလုပ်ငန်း၏ ညွှန်ကြားချက်အတိုင်း ဆောင်ရွက်ရသည်။ ထိုကုမ္ပဏီ၏ လုပ်ဆောင်ချက်ကို ထိန်းချုပ်သည့် သဘောတူညီချက်ကို လုပ်ငန်းက ပြင်ဆင်ရသည်။",
+    "zh": "按《个人数据保护法》（第 40 条），为企业处理个人数据的公司，依该企业的指示办事。企业订立协议，约束这家公司的做法。",
+    "de": "Nach dem Datenschutzgesetz PDPA (Section 40) handelt eine Firma, die personenbezogene Daten für ein Unternehmen verarbeitet, nach dessen Weisungen. Das Unternehmen setzt einen Vertrag auf, der regelt, was die Firma tut."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "related": [
+  "assistant",
+  "calls-out",
+  "fb-care",
+  "ai-assistant",
+  "line-memory",
+  "voice"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Labour Protection Act, English text",
+    "th": "พ.ร.บ.คุ้มครองแรงงาน ฉบับภาษาอังกฤษ",
+    "my": "အလုပ်သမားကာကွယ်ရေးဥပဒေ အင်္ဂလိပ်စာ",
+    "zh": "《劳工保护法》英文本",
+    "de": "Labour Protection Act, englischer Text"
+   },
+   "href": "https://mekongmigration.org/labourlaw/images/labourlaw/pdf/thailand/8%20Labour%20Protection%20Act%20of%20Thailand%201998.pdf"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a chat-admin seller's packages",
+    "th": "Fastwork: แพ็กเกจแอดมินตอบแชทของผู้ขายรายหนึ่ง",
+    "my": "Fastwork - ချက်တင်ဖြေရောင်းချသူတစ်ဦး၏ ပက်ကေ့ချ်များ",
+    "zh": "Fastwork：一位客服管理员卖家的套餐",
+    "de": "Fastwork: die Pakete eines Anbieters für Chat-Betreuung"
+   },
+   "href": "https://fastwork.co/user/natwaree/page-admin-21650242"
+  }
+ ]
+}

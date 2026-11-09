@@ -1,0 +1,282 @@
+{
+ "id": "typing",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People hold paper forms and receipts in Thai or English handwriting, and need the names and numbers in a sheet they can sort and add up.",
+  "th": "คนมีฟอร์มและใบเสร็จกระดาษลายมือไทยหรืออังกฤษ และต้องการชื่อกับตัวเลขในตารางที่เรียงและรวมยอดได้",
+  "my": "လူတွေမှာ ထိုင်း သို့မဟုတ် အင်္ဂလိပ်လက်ရေး စက္ကူဖောင်များနှင့် ပြေစာများ ရှိပြီး အမည်များနှင့် ဂဏန်းများကို စီပြီး ပေါင်းနိုင်သော ဇယားတစ်ခုတွင် လိုချင်ကြသည်။",
+  "zh": "有人手里有泰文或英文手写的纸质表格和收据，想把姓名和数字录入一张可以排序、求和的表格。",
+  "de": "Man hat Papierformulare und Quittungen in thailändischer oder englischer Handschrift und braucht Namen und Zahlen in einer Tabelle, die sich sortieren und zusammenzählen lässt."
+ },
+ "n": {
+  "de": "Papierformulare abgetippt"
+ },
+ "l": {
+  "de": "Handschrift auf Thai oder Englisch, in eine Tabelle übertragen."
+ },
+ "glyphs": [
+  "typewriter",
+  "page",
+  "eye"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send the paper forms and receipts.",
+    "th": "คุณส่งฟอร์มกระดาษและใบเสร็จ",
+    "my": "သင်က စက္ကူဖောင်များနှင့် ပြေစာများကို ပို့သည်။",
+    "zh": "您把纸质表格和收据发过来。",
+    "de": "Sie senden die Papierformulare und Quittungen."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "eye",
+   "t": {
+    "en": "We read the handwriting, Thai or English.",
+    "th": "อ่านลายมือไทยหรืออังกฤษ",
+    "my": "ထိုင်း သို့မဟုတ် အင်္ဂလိပ် လက်ရေးကို ဖတ်သည်။",
+    "zh": "辨认泰文或英文手写字。",
+    "de": "Wir lesen die Handschrift, Thai oder Englisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per 100 forms",
+    "th": "ต่อ 100 ฟอร์ม",
+    "my": "ဖောင် 100 လျှင်",
+    "zh": "每 100 份表格",
+    "de": "Pro 100 Formulare"
+   }
+  },
+  {
+   "db": "typewriter",
+   "t": {
+    "en": "We type it into a spreadsheet and you get the sheet.",
+    "th": "พิมพ์ลงตาราง แล้วส่งตารางให้คุณ",
+    "my": "စာရင်းဇယားထဲ ရိုက်ထည့်ပြီး ဇယားကို သင့်ထံ ပို့ပေးသည်။",
+    "zh": "录入表格，把表格交给您。",
+    "de": "Wir tippen es in eine Tabelle, und Sie erhalten die Tabelle."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the reading",
+    "th": "หลังอ่านเสร็จ",
+    "my": "ဖတ်ပြီးနောက်",
+    "zh": "读完之后",
+    "de": "Nach dem Lesen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "The Personal Data Protection Act defines personal data as any information about a person that identifies the person, directly or indirectly (Section 6).",
+    "th": "พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคลให้นิยามข้อมูลส่วนบุคคลว่า ข้อมูลใด ๆ เกี่ยวกับบุคคลที่ทำให้ระบุตัวบุคคลนั้นได้ ทั้งทางตรงและทางอ้อม (มาตรา 6)",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေက ကိုယ်ရေးအချက်အလက်ကို လူတစ်ဦးကို တိုက်ရိုက်ဖြစ်စေ သွယ်ဝိုက်၍ဖြစ်စေ ဖော်ထုတ်နိုင်သော လူတစ်ဦးနှင့်ဆိုင်သည့် အချက်အလက်ဟု အဓိပ္ပာယ်ဖွင့်ဆိုသည် (ပုဒ်မ 6)။",
+    "zh": "《个人数据保护法》把个人数据定义为与某人有关、能直接或间接识别该人的任何信息（第 6 条）。",
+    "de": "Das Datenschutzgesetz PDPA definiert personenbezogene Daten als jede Information über eine Person, die diese Person direkt oder indirekt erkennbar macht (Section 6)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "A business collects, uses or discloses personal data only with the person's consent, given before or at the time, unless the Act or another law allows it (Section 19).",
+    "th": "ธุรกิจเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลได้เมื่อเจ้าของข้อมูลให้ความยินยอมก่อนหรือในขณะนั้น เว้นแต่ พ.ร.บ.นี้หรือกฎหมายอื่นอนุญาต (มาตรา 19)",
+    "my": "လုပ်ငန်းတစ်ခုသည် ကိုယ်ရေးအချက်အလက်ကို ပုဂ္ဂိုလ်၏ ခွင့်ပြုချက်ဖြင့်သာ စုဆောင်း၊ အသုံးပြု၊ ထုတ်ဖော်နိုင်သည်။ ခွင့်ပြုချက်ကို ထိုအချိန်မတိုင်မီ သို့မဟုတ် ထိုအချိန်၌ ပေးရပြီး ဤဥပဒေ သို့မဟုတ် အခြားဥပဒေက ခွင့်ပြုထားလျှင် ခြွင်းချက်ဖြစ်သည် (ပုဒ်မ 19)။",
+    "zh": "企业收集、使用或披露个人数据，须有本人事先或当时给予的同意，除非本法或其他法律允许（第 19 条）。",
+    "de": "Ein Unternehmen erhebt, nutzt oder legt personenbezogene Daten nur mit der Einwilligung der Person offen, die vorher oder zu diesem Zeitpunkt vorliegt, ausser dieses oder ein anderes Gesetz erlaubt es (Section 19)."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Under the Personal Data Protection Act (Section 40), a firm that handles personal data for a business acts on that business's instructions. The business prepares an agreement that controls what the firm does.",
+    "th": "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (มาตรา 40) ผู้ประมวลผลข้อมูลส่วนบุคคลให้ธุรกิจต้องทำตามคำสั่งของธุรกิจนั้น และธุรกิจต้องจัดทำข้อตกลงที่ควบคุมการดำเนินการของผู้ประมวลผล",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (ပုဒ်မ 40) အရ လုပ်ငန်းတစ်ခုအတွက် ကိုယ်ရေးအချက်အလက်ကို ကိုင်တွယ်သော ကုမ္ပဏီသည် ထိုလုပ်ငန်း၏ ညွှန်ကြားချက်အတိုင်း ဆောင်ရွက်ရသည်။ ထိုကုမ္ပဏီ၏ လုပ်ဆောင်ချက်ကို ထိန်းချုပ်သည့် သဘောတူညီချက်ကို လုပ်ငန်းက ပြင်ဆင်ရသည်။",
+    "zh": "按《个人数据保护法》（第 40 条），为企业处理个人数据的公司，依该企业的指示办事。企业订立协议，约束这家公司的做法。",
+    "de": "Nach dem Datenschutzgesetz PDPA (Section 40) handelt eine Firma, die personenbezogene Daten für ein Unternehmen verarbeitet, nach dessen Weisungen. Das Unternehmen setzt einen Vertrag auf, der regelt, was die Firma tut."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: typing and data entry into Word, Excel or PowerPoint, 0 to 30 pages, 3 days",
+    "th": "ผู้ขายบน Fastwork: พิมพ์งานและคีย์ข้อมูลลง Word, Excel หรือ PowerPoint 0 ถึง 30 หน้า ใช้เวลา 3 วัน",
+    "my": "Fastwork ရောင်းချသူ - Word၊ Excel သို့မဟုတ် PowerPoint သို့ စာရိုက်ခြင်းနှင့် ဒေတာထည့်ခြင်း၊ စာမျက်နှာ 0 မှ 30၊ 3 ရက်",
+    "zh": "Fastwork 卖家：打字和数据录入到 Word、Excel 或 PowerPoint，0 到 30 页，3 天",
+    "de": "Anbieter auf Fastwork: Tippen und Dateneingabe in Word, Excel oder PowerPoint, 0 bis 30 Seiten, 3 Tage"
+   },
+   "p": {
+    "en": "฿250",
+    "th": "฿250",
+    "my": "฿250",
+    "zh": "฿250",
+    "de": "฿250"
+   },
+   "src": "https://fastwork.co/user/nareee/typing-and-data-entry-62585702"
+  },
+  {
+   "t": {
+    "en": "Another Fastwork seller: typing into Word, Excel or PowerPoint from Thai or English originals, two packages",
+    "th": "ผู้ขายอีกรายบน Fastwork: พิมพ์ลง Word, Excel หรือ PowerPoint จากต้นฉบับภาษาไทยหรืออังกฤษ สองแพ็กเกจ",
+    "my": "အခြား Fastwork ရောင်းချသူ - ထိုင်း သို့မဟုတ် အင်္ဂလိပ် မူရင်းမှ Word၊ Excel သို့မဟုတ် PowerPoint သို့ ရိုက်ခြင်း၊ ပက်ကေ့ချ်နှစ်မျိုး",
+    "zh": "另一位 Fastwork 卖家：把泰文或英文原件录入 Word、Excel 或 PowerPoint，两个套餐",
+    "de": "Ein anderer Anbieter auf Fastwork: Tippen in Word, Excel oder PowerPoint nach thailändischen oder englischen Vorlagen, zwei Pakete"
+   },
+   "p": {
+    "en": "฿250 and ฿350",
+    "th": "฿250 และ ฿350",
+    "my": "฿250 နှင့် ฿350",
+    "zh": "฿250 和 ฿350",
+    "de": "฿250 und ฿350"
+   },
+   "src": "https://fastwork.co/user/handhell/typing-and-data-entry-96832975"
+  },
+  {
+   "t": {
+    "en": "A worker on the Chiang Rai minimum wage",
+    "th": "ลูกจ้างที่ได้ค่าจ้างขั้นต่ำในเชียงราย",
+    "my": "ချင်းရိုင်းအနည်းဆုံးလုပ်ခဖြင့် လုပ်သော အလုပ်သမား",
+    "zh": "按清莱最低工资标准的一名员工",
+    "de": "Eine Arbeitskraft zum Mindestlohn in Chiang Rai"
+   },
+   "p": {
+    "en": "฿352 a day",
+    "th": "฿352 ต่อวัน",
+    "my": "တစ်ရက်လျှင် ฿352",
+    "zh": "每天 ฿352",
+    "de": "฿352 pro Tag"
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does data entry cost in Thailand?",
+    "th": "บริการคีย์ข้อมูลในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် ဒေတာထည့်သွင်းခြင်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国找人录入数据要多少钱？",
+    "de": "Was kostet Dateneingabe in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller charges ฿250 for 0 to 30 pages typed into Word, Excel or PowerPoint, with delivery in 3 days. The price is the same for the three programs.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork คิด ฿250 สำหรับพิมพ์ 0 ถึง 30 หน้าลง Word, Excel หรือ PowerPoint ส่งงานใน 3 วัน ราคาเท่ากันทั้งสามโปรแกรม",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက Word၊ Excel သို့မဟုတ် PowerPoint သို့ စာမျက်နှာ 0 မှ 30 ရိုက်ပေးရန် ฿250 ကောက်ခံပြီး 3 ရက်အတွင်း ပို့ပေးသည်။ ပရိုဂရမ်သုံးမျိုးလုံး ဈေးတူသည်။",
+    "zh": "Fastwork 上一位卖家把 0 到 30 页录入 Word、Excel 或 PowerPoint 收费 ฿250，3 天交付。三种软件价格相同。",
+    "de": "Ein Anbieter auf Fastwork verlangt ฿250 für 0 bis 30 Seiten in Word, Excel oder PowerPoint, Lieferung in 3 Tagen. Der Preis ist für die drei Programme gleich."
+   },
+   "src": "https://fastwork.co/user/nareee/typing-and-data-entry-62585702"
+  },
+  {
+   "q": {
+    "en": "What does a typing price include?",
+    "th": "ราคาพิมพ์งานรวมอะไรบ้าง",
+    "my": "စာရိုက်ခ ဈေးနှုန်းတွင် ဘာတွေ ပါဝင်သလဲ။",
+    "zh": "打字的价格包含哪些内容？",
+    "de": "Was ist im Preis fürs Tippen enthalten?"
+   },
+   "a": {
+    "en": "The same Fastwork listing names typing, report formatting and page layout, data entry into Word, Excel or PowerPoint, and research help for reports. It lists 2 to 3 days.",
+    "th": "รายการเดียวกันบน Fastwork ระบุการพิมพ์งาน การจัดรูปแบบรายงานและหน้ากระดาษ การคีย์ข้อมูลลง Word, Excel หรือ PowerPoint และการช่วยหาข้อมูลทำรายงาน ใช้เวลา 2 ถึง 3 วัน",
+    "my": "ထိုနေရာတူ Fastwork စာရင်းတွင် စာရိုက်ခြင်း၊ အစီရင်ခံစာပုံစံနှင့် စာမျက်နှာဖော်ပြပုံ ပြင်ဆင်ခြင်း၊ Word၊ Excel သို့မဟုတ် PowerPoint သို့ ဒေတာထည့်ခြင်းနှင့် အစီရင်ခံစာအတွက် သတင်းအချက်အလက်ရှာဖွေရာတွင် ကူညီခြင်းတို့ကို ဖော်ပြထားသည်။ ကြာချိန် 2 ရက်မှ 3 ရက်ဟု ဖော်ပြထားသည်။",
+    "zh": "同一条 Fastwork 商品写明的内容有：打字、报告排版和页面布局、录入 Word、Excel 或 PowerPoint，以及协助查找报告资料。交付时间为 2 到 3 天。",
+    "de": "Dasselbe Angebot auf Fastwork nennt Tippen, Formatierung und Seitenlayout von Berichten, Dateneingabe in Word, Excel oder PowerPoint und Recherchehilfe für Berichte. Es nennt 2 bis 3 Tage."
+   },
+   "src": "https://fastwork.co/user/nareee/typing-and-data-entry-62585702"
+  },
+  {
+   "q": {
+    "en": "What is the minimum wage in Chiang Rai?",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายเท่าไร",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခ ဘယ်လောက်လဲ။",
+    "zh": "清莱的最低工资是多少？",
+    "de": "Wie hoch ist der Mindestlohn in Chiang Rai?"
+   },
+   "a": {
+    "en": "The minimum wage in Chiang Rai is ฿352 a day, in force from 1 July 2025. Rates across Thailand run from ฿337 to ฿400.",
+    "th": "ค่าจ้างขั้นต่ำในเชียงรายคือ ฿352 ต่อวัน มีผลตั้งแต่ 1 กรกฎาคม 2568 ทั่วประเทศอยู่ระหว่าง ฿337 ถึง ฿400",
+    "my": "ချင်းရိုင်းတွင် အနည်းဆုံးလုပ်ခသည် တစ်ရက်လျှင် ฿352 ဖြစ်ပြီး 2025 ခုနှစ် ဇူလိုင် 1 ရက်မှ စတင်သက်ရောက်သည်။ ထိုင်းတစ်နိုင်ငံလုံးတွင် ฿337 မှ ฿400 အထိ ရှိသည်။",
+    "zh": "清莱的最低工资是每天 ฿352，自 2025 年 7 月 1 日起实行。泰国各府的标准从 ฿337 到 ฿400 不等。",
+    "de": "Der Mindestlohn in Chiang Rai beträgt ฿352 pro Tag, gültig seit dem 1. Juli 2025. In Thailand liegen die Sätze zwischen ฿337 und ฿400."
+   },
+   "src": "https://www.dlapiper.com/en-ca/insights/publications/2025/07/thailand-increases-minimum-wage-across-all-provinces"
+  },
+  {
+   "q": {
+    "en": "What happens if form data leaks?",
+    "th": "ถ้าข้อมูลในฟอร์มรั่วไหลจะเป็นอย่างไร",
+    "my": "ဖောင်ထဲက ဒေတာ ပေါက်ကြားလျှင် ဘာဖြစ်မလဲ။",
+    "zh": "表格里的数据泄露了会怎样？",
+    "de": "Was gilt, wenn Daten aus den Formularen verloren gehen?"
+   },
+   "a": {
+    "en": "The business that controls the data tells the Office of the Personal Data Protection Committee without delay, and where feasible within 72 hours of learning of the breach (Section 37). No notice is needed when the breach is unlikely to affect people's rights and freedoms.",
+    "th": "ธุรกิจที่เป็นผู้ควบคุมข้อมูลแจ้งสำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลโดยไม่ชักช้า และหากทำได้ภายใน 72 ชั่วโมงนับแต่ทราบเหตุ (มาตรา 37) ไม่ต้องแจ้งหากเหตุนั้นไม่น่าจะกระทบสิทธิและเสรีภาพของบุคคล",
+    "my": "ဒေတာကို ထိန်းချုပ်သော လုပ်ငန်းသည် နောက်မကျဘဲ၊ ဖြစ်နိုင်လျှင် ပေါက်ကြားမှုကို သိရှိပြီး 72 နာရီအတွင်း ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးကော်မတီရုံးသို့ အကြောင်းကြားရသည် (ပုဒ်မ 37)။ ထိုပေါက်ကြားမှုက လူများ၏ အခွင့်အရေးနှင့် လွတ်လပ်ခွင့်ကို မထိခိုက်နိုင်ပါက အကြောင်းကြားရန် မလိုပါ။",
+    "zh": "掌控数据的企业应毫不拖延地通报个人数据保护委员会办公室，可行时在得知泄露后 72 小时内通报（第 37 条）。如果泄露不太可能影响个人的权利和自由，则无需通报。",
+    "de": "Das Unternehmen, das die Daten kontrolliert, meldet es unverzüglich dem Büro des Datenschutzkomitees, wenn möglich innerhalb von 72 Stunden nach Kenntnis der Panne (Section 37). Die Meldung entfällt, wenn die Panne die Rechte und Freiheiten von Personen voraussichtlich nicht berührt."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "related": [
+  "assistant",
+  "books",
+  "form",
+  "subtitles",
+  "calls-out",
+  "staff-papers"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Personal Data Protection Act, English text",
+    "th": "พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล ฉบับภาษาอังกฤษ",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ အင်္ဂလိပ်စာ",
+    "zh": "《个人数据保护法》英文本",
+    "de": "Datenschutzgesetz PDPA, englischer Text"
+   },
+   "href": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  },
+  {
+   "t": {
+    "en": "Fastwork: a typing and data-entry seller's package",
+    "th": "Fastwork: แพ็กเกจพิมพ์งานและคีย์ข้อมูลของผู้ขายรายหนึ่ง",
+    "my": "Fastwork - စာရိုက်ခြင်းနှင့် ဒေတာထည့်ခြင်း ရောင်းချသူတစ်ဦး၏ ပက်ကေ့ချ်",
+    "zh": "Fastwork：一位打字和数据录入卖家的套餐",
+    "de": "Fastwork: das Paket eines Anbieters für Tippen und Dateneingabe"
+   },
+   "href": "https://fastwork.co/user/nareee/typing-and-data-entry-62585702"
+  }
+ ]
+}

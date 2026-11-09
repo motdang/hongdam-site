@@ -1,0 +1,319 @@
+{
+ "id": "calls-out",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "People want a list of names called in Thai or English, to sell something or to book appointments. Each result goes into a sheet.",
+  "th": "คนต้องการให้มีคนโทรหารายชื่อเป็นภาษาไทยหรืออังกฤษ เพื่อขายของหรือนัดหมาย โดยผลของแต่ละสายอยู่ในตาราง",
+  "my": "လူတွေက စာရင်းထဲက အမည်များကို ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် ဖုန်းခေါ်ပြီး ပစ္စည်းရောင်းရန် သို့မဟုတ် ချိန်းဆိုရန် လိုချင်ကြသည်။ ခေါ်ဆိုမှုတစ်ခုချင်းစီ၏ ရလဒ်ကို ဇယားတစ်ခုတွင် ထည့်ထားသည်။",
+  "zh": "有人想让别人用泰语或英语给名单上的人打电话，推销产品或约时间，并把每通电话的结果记在表格里。",
+  "de": "Man möchte, dass eine Liste auf Thai oder Englisch angerufen wird, um etwas zu verkaufen oder Termine zu vereinbaren. Das Ergebnis jedes Anrufs steht in einer Tabelle."
+ },
+ "n": {
+  "de": "Ausgehende Anrufe"
+ },
+ "l": {
+  "de": "Ihre Liste wird auf Thai oder Englisch angerufen, die Ergebnisse stehen in einer Tabelle."
+ },
+ "glyphs": [
+  "telephone",
+  "calendar",
+  "page"
+ ],
+ "steps": [
+  {
+   "db": "page",
+   "t": {
+    "en": "You send your list of names and your offer.",
+    "th": "คุณส่งรายชื่อและข้อเสนอของคุณ",
+    "my": "သင့်အမည်စာရင်းနှင့် သင့်ကမ်းလှမ်းချက်ကို သင်ပို့သည်။",
+    "zh": "您把名单和推销内容发过来。",
+    "de": "Sie senden Ihre Namensliste und Ihr Angebot."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "telephone",
+   "t": {
+    "en": "We call the list in Thai or English, to sell or to book appointments.",
+    "th": "โทรหารายชื่อเป็นภาษาไทยหรืออังกฤษ เพื่อขายหรือนัดหมาย",
+    "my": "စာရင်းထဲက လူများကို ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် ဖုန်းခေါ်ပြီး ရောင်းချရန် သို့မဟုတ် ချိန်းဆိုရန် ဆောင်ရွက်သည်။",
+    "zh": "用泰语或英语给名单上的人打电话，推销或约时间。",
+    "de": "Wir rufen die Liste auf Thai oder Englisch an, um zu verkaufen oder Termine zu vereinbaren."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Per 10 hours of calling",
+    "th": "ต่อการโทร 10 ชั่วโมง",
+    "my": "ခေါ်ဆိုချိန် 10 နာရီလျှင်",
+    "zh": "每 10 小时通话",
+    "de": "Pro 10 Stunden Anrufe"
+   }
+  },
+  {
+   "db": "save",
+   "t": {
+    "en": "The result of each call goes into a sheet.",
+    "th": "ผลของแต่ละสายลงในตาราง",
+    "my": "ခေါ်ဆိုမှုတစ်ခုချင်းစီ၏ ရလဒ်ကို ဇယားတစ်ခုတွင် ထည့်သွင်းသည်။",
+    "zh": "每通电话的结果记入表格。",
+    "de": "Das Ergebnis jedes Anrufs kommt in eine Tabelle."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the calls",
+    "th": "หลังโทรเสร็จ",
+    "my": "ဖုန်းခေါ်ပြီးနောက်",
+    "zh": "通话结束后",
+    "de": "Nach den Anrufen"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Thai law treats a person's phone number as personal data. A marketing call to a person needs the person's consent, unless another legal basis applies, and the person can withdraw consent at any time.",
+    "th": "กฎหมายไทยถือว่าหมายเลขโทรศัพท์ของบุคคลเป็นข้อมูลส่วนบุคคล การโทรขายถึงบุคคลต้องได้รับความยินยอมจากผู้นั้น เว้นแต่มีฐานทางกฎหมายอื่น และผู้นั้นถอนความยินยอมได้ทุกเมื่อ",
+    "my": "ထိုင်းဥပဒေက လူတစ်ဦး၏ ဖုန်းနံပါတ်ကို ကိုယ်ရေးအချက်အလက်အဖြစ် သတ်မှတ်သည်။ လူတစ်ဦးထံ ရောင်းချရေးဖုန်းခေါ်ရန် ထိုသူ၏ ခွင့်ပြုချက် လိုအပ်သည်၊ အခြားဥပဒေအခြေခံ မရှိလျှင် ထိုသို့ဖြစ်သည်။ ထိုသူက ခွင့်ပြုချက်ကို အချိန်မရွေး ပြန်ရုပ်သိမ်းနိုင်သည်။",
+    "zh": "泰国法律把个人的电话号码视为个人数据。向个人打营销电话需要本人同意，除非另有法律依据；本人也可以随时撤回同意。",
+    "de": "Das thailändische Recht behandelt die Telefonnummer einer Person als personenbezogene Daten. Ein Werbeanruf bei einer Person braucht deren Einwilligung, ausser eine andere Rechtsgrundlage gilt, und die Person kann die Einwilligung jederzeit widerrufen."
+   },
+   "src": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "t": {
+    "en": "A 2023 guide by the law firm Formichella & Sritawat says business-to-business marketing calls to a company's main telephone number need no prior consent.",
+    "th": "คู่มือปี 2023 ของสำนักงานกฎหมาย Formichella & Sritawat ระบุว่า การโทรขายระหว่างธุรกิจถึงเบอร์โทรศัพท์หลักของบริษัทไม่ต้องได้รับความยินยอมล่วงหน้า",
+    "my": "ဥပဒေကုမ္ပဏီ Formichella & Sritawat ၏ 2023 လမ်းညွှန်က ကုမ္ပဏီတစ်ခု၏ အဓိကဖုန်းနံပါတ်သို့ လုပ်ငန်းချင်းဆက်သွယ်သည့် ရောင်းချရေးဖုန်းခေါ်ဆိုမှုများအတွက် ကြိုတင်ခွင့်ပြုချက် မလိုဟု ဆိုသည်။",
+    "zh": "律师事务所 Formichella & Sritawat 2023 年的指南称，企业对企业的营销电话打到公司总机号码，无需事先同意。",
+    "de": "Ein Leitfaden der Kanzlei Formichella & Sritawat von 2023 sagt, Werbeanrufe von Firma zu Firma an die Hauptnummer eines Unternehmens brauchen keine vorherige Einwilligung."
+   },
+   "src": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "t": {
+    "en": "The Direct Sales and Direct Marketing Act (Section 27) says a direct-marketing operator registers with the Office of the Consumer Protection Board (OCPB).",
+    "th": "พ.ร.บ.ขายตรงและตลาดแบบตรง (มาตรา 27) กำหนดให้ผู้ประกอบธุรกิจตลาดแบบตรงจดทะเบียนกับสำนักงานคณะกรรมการคุ้มครองผู้บริโภค (สคบ.)",
+    "my": "တိုက်ရိုက်ရောင်းချမှုနှင့် တိုက်ရိုက်စျေးကွက်ရှာဖွေမှုဥပဒေ (ပုဒ်မ 27) အရ တိုက်ရိုက်စျေးကွက်လုပ်ငန်းလုပ်သူသည် စားသုံးသူအကာအကွယ်ရေးရုံး (OCPB) တွင် မှတ်ပုံတင်ရသည်။",
+    "zh": "《直销与直接营销法》（第 27 条）规定，直接营销经营者须向消费者保护委员会办公室（OCPB）登记。",
+    "de": "Nach dem Gesetz über Direktverkauf und Direktmarketing (Section 27) registriert sich ein Direktmarketing-Betreiber beim Amt für Verbraucherschutz (OCPB)."
+   },
+   "src": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "t": {
+    "en": "Under the Consumer Protection Act (Section 23), marketing calls must not harm health or disturb consumers.",
+    "th": "ตาม พ.ร.บ.คุ้มครองผู้บริโภค (มาตรา 23) การโทรขายต้องไม่เป็นอันตรายต่อสุขภาพและไม่รบกวนผู้บริโภค",
+    "my": "စားသုံးသူကာကွယ်ရေးဥပဒေ (ပုဒ်မ 23) အရ ရောင်းချရေးဖုန်းခေါ်ဆိုမှုများသည် ကျန်းမာရေးကို မထိခိုက်စေရ၊ စားသုံးသူများကို မနှောင့်ယှက်ရ။",
+    "zh": "按《消费者保护法》（第 23 条），营销电话不得损害健康，也不得打扰消费者。",
+    "de": "Nach dem Verbraucherschutzgesetz (Section 23) dürfen Werbeanrufe weder die Gesundheit schädigen noch Verbraucher stören."
+   },
+   "src": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "t": {
+    "en": "Under the Personal Data Protection Act (Section 40), a firm that handles personal data for a business acts on that business's instructions. The business prepares an agreement that controls what the firm does.",
+    "th": "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (มาตรา 40) ผู้ประมวลผลข้อมูลส่วนบุคคลให้ธุรกิจต้องทำตามคำสั่งของธุรกิจนั้น และธุรกิจต้องจัดทำข้อตกลงที่ควบคุมการดำเนินการของผู้ประมวลผล",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (ပုဒ်မ 40) အရ လုပ်ငန်းတစ်ခုအတွက် ကိုယ်ရေးအချက်အလက်ကို ကိုင်တွယ်သော ကုမ္ပဏီသည် ထိုလုပ်ငန်း၏ ညွှန်ကြားချက်အတိုင်း ဆောင်ရွက်ရသည်။ ထိုကုမ္ပဏီ၏ လုပ်ဆောင်ချက်ကို ထိန်းချုပ်သည့် သဘောတူညီချက်ကို လုပ်ငန်းက ပြင်ဆင်ရသည်။",
+    "zh": "按《个人数据保护法》（第 40 条），为企业处理个人数据的公司，依该企业的指示办事。企业订立协议，约束这家公司的做法。",
+    "de": "Nach dem Datenschutzgesetz PDPA (Section 40) handelt eine Firma, die personenbezogene Daten für ein Unternehmen verarbeitet, nach dessen Weisungen. Das Unternehmen setzt einen Vertrag auf, der regelt, was die Firma tut."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Fastwork seller: calls to 18 new business contacts, results in a Google Sheet, 1 day",
+    "th": "ผู้ขายบน Fastwork: โทรหาลูกค้าธุรกิจใหม่ 18 รายชื่อ ผลในตาราง Google Sheet ใช้เวลา 1 วัน",
+    "my": "Fastwork ရောင်းချသူ - လုပ်ငန်းဖောက်သည်သစ် 18 ဦးကို ဖုန်းခေါ်၊ ရလဒ်ကို Google Sheet တွင် ထည့်၊ 1 ရက်",
+    "zh": "Fastwork 卖家：给 18 个新的企业客户打电话，结果记入 Google 表格，1 天",
+    "de": "Anbieter auf Fastwork: Anrufe bei 18 neuen Geschäftskontakten, Ergebnis in einem Google Sheet, 1 Tag"
+   },
+   "p": {
+    "en": "฿720",
+    "th": "฿720",
+    "my": "฿720",
+    "zh": "฿720",
+    "de": "฿720"
+   },
+   "src": "https://fastwork.co/user/phumrawit/telesale-78054453"
+  },
+  {
+   "t": {
+    "en": "Same seller: a week of calls, Monday to Friday, 20 to 40 contacts a day",
+    "th": "ผู้ขายรายเดียวกัน: โทรหนึ่งสัปดาห์ จันทร์ถึงศุกร์ วันละ 20 ถึง 40 รายชื่อ",
+    "my": "ထိုရောင်းချသူ - တနင်္လာမှ သောကြာအထိ တစ်ပတ်စာ ဖုန်းခေါ်၊ တစ်နေ့ ဆက်သွယ်ရသူ 20 မှ 40",
+    "zh": "同一卖家：一周电话，周一至周五，每天 20 到 40 个联系人",
+    "de": "Derselbe Anbieter: eine Woche Anrufe, Montag bis Freitag, 20 bis 40 Kontakte pro Tag"
+   },
+   "p": {
+    "en": "฿4,500",
+    "th": "฿4,500",
+    "my": "฿4,500",
+    "zh": "฿4,500",
+    "de": "฿4,500"
+   },
+   "src": "https://fastwork.co/user/phumrawit/telesale-78054453"
+  },
+  {
+   "t": {
+    "en": "Same seller: a monthly plan of calls",
+    "th": "ผู้ขายรายเดียวกัน: แพ็กเกจโทรรายเดือน",
+    "my": "ထိုရောင်းချသူ - လစဉ်ဖုန်းခေါ်ဆိုမှုပက်ကေ့ချ်",
+    "zh": "同一卖家：按月电话套餐",
+    "de": "Derselbe Anbieter: Monatspaket mit Anrufen"
+   },
+   "p": {
+    "en": "from ฿18,000",
+    "th": "เริ่มที่ ฿18,000",
+    "my": "฿18,000 မှ စသည်",
+    "zh": "起价 ฿18,000",
+    "de": "ab ฿18,000"
+   },
+   "src": "https://fastwork.co/user/phumrawit/telesale-78054453"
+  },
+  {
+   "t": {
+    "en": "OnlineJobs.ph guide: a beginner sales representative in the Philippines",
+    "th": "คู่มือ OnlineJobs.ph: พนักงานขายระดับเริ่มต้นในฟิลิปปินส์",
+    "my": "OnlineJobs.ph လမ်းညွှန် - ဖိလစ်ပိုင်ရှိ အဆင့်စတင် ရောင်းချရေးကိုယ်စားလှယ်",
+    "zh": "OnlineJobs.ph 指南：菲律宾入门级销售代表",
+    "de": "OnlineJobs.ph-Leitfaden: Einsteiger im Vertrieb auf den Philippinen"
+   },
+   "p": {
+    "en": "US$3.50 to US$8 an hour; US$400 to US$800 a month",
+    "th": "US$3.50 ถึง US$8 ต่อชั่วโมง; US$400 ถึง US$800 ต่อเดือน",
+    "my": "တစ်နာရီလျှင် US$3.50 မှ US$8၊ တစ်လလျှင် US$400 မှ US$800",
+    "zh": "每小时 US$3.50 至 US$8；每月 US$400 至 US$800",
+    "de": "US$3.50 bis US$8 pro Stunde; US$400 bis US$800 im Monat"
+   },
+   "src": "https://blog.onlinejobs.ph/comprehensive-guide-to-virtual-assistant-salaries-in-the-philippines"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Is telemarketing legal in Thailand?",
+    "th": "การโทรขายถูกกฎหมายในไทยหรือไม่",
+    "my": "ထိုင်းတွင် ဖုန်းဖြင့်ရောင်းချခြင်း တရားဝင်သလား။",
+    "zh": "在泰国打电话推销合法吗？",
+    "de": "Ist Telefonwerbung in Thailand erlaubt?"
+   },
+   "a": {
+    "en": "Yes, under rules. A 2023 law-firm guide says a marketing operator registers with the OCPB. It says a call to a person needs consent unless another legal basis applies, and a business call to a company's main number needs no prior consent.",
+    "th": "ทำได้ภายใต้กฎ คู่มือของสำนักงานกฎหมายปี 2023 ระบุว่าผู้ประกอบธุรกิจตลาดแบบตรงจดทะเบียนกับ สคบ. การโทรหาบุคคลต้องได้รับความยินยอม เว้นแต่มีฐานทางกฎหมายอื่น ส่วนการโทรเพื่อธุรกิจถึงเบอร์หลักของบริษัทไม่ต้องขอความยินยอมล่วงหน้า",
+    "my": "ဟုတ်ကဲ့၊ စည်းကမ်းများအောက်တွင် ဖြစ်သည်။ 2023 ဥပဒေကုမ္ပဏီလမ်းညွှန်တစ်ခုက ရောင်းချရေးလုပ်ငန်းလုပ်သူသည် OCPB တွင် မှတ်ပုံတင်ရသည်ဟု ဆိုသည်။ လူတစ်ဦးထံ ဖုန်းခေါ်လျှင် အခြားဥပဒေအခြေခံမရှိပါက ခွင့်ပြုချက်လိုပြီး ကုမ္ပဏီ၏ အဓိကနံပါတ်သို့ လုပ်ငန်းဖုန်းခေါ်ရန် ကြိုတင်ခွင့်ပြုချက် မလိုဟု ဆိုသည်။",
+    "zh": "合法，但有规则。一份 2023 年律所指南称，营销经营者须向 OCPB 登记。向个人打电话需要同意，除非另有法律依据；打到公司总机的商务电话无需事先同意。",
+    "de": "Ja, mit Regeln. Ein Kanzlei-Leitfaden von 2023 sagt, ein Marketing-Betreiber registriert sich beim OCPB. Ein Anruf bei einer Person braucht Einwilligung, ausser eine andere Rechtsgrundlage gilt, und ein Geschäftsanruf an die Hauptnummer einer Firma braucht keine vorherige Einwilligung."
+   },
+   "src": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "q": {
+    "en": "Does Thailand have a Do Not Call list?",
+    "th": "ไทยมีบัญชีรายชื่อห้ามโทรหรือไม่",
+    "my": "ထိုင်းတွင် ဖုန်းမခေါ်ရစာရင်း ရှိသလား။",
+    "zh": "泰国有“拒接电话名单”吗？",
+    "de": "Gibt es in Thailand eine Do-Not-Call-Liste?"
+   },
+   "a": {
+    "en": "A 2023 law-firm guide says Thailand does not run a national opt-out list for telemarketing. It says a person can withdraw consent for their phone number at any time.",
+    "th": "คู่มือของสำนักงานกฎหมายปี 2023 ระบุว่าไทยไม่มีบัญชีปฏิเสธการรับโทรศัพท์ขายของระดับประเทศ และบุคคลถอนความยินยอมเรื่องหมายเลขโทรศัพท์ได้ทุกเมื่อ",
+    "my": "2023 ဥပဒေကုမ္ပဏီလမ်းညွှန်တစ်ခုက ထိုင်းတွင် တယ်လီမားကတ်တင်း မခံလိုသူ နိုင်ငံအဆင့်စာရင်း မရှိဟု ဆိုသည်။ လူတစ်ဦးသည် မိမိဖုန်းနံပါတ်အတွက် ခွင့်ပြုချက်ကို အချိန်မရွေး ပြန်ရုပ်သိမ်းနိုင်သည်ဟုလည်း ဆိုသည်။",
+    "zh": "一份 2023 年律所指南称，泰国没有全国性的电话营销拒接名单。指南还称，个人可以随时撤回对其电话号码的同意。",
+    "de": "Ein Kanzlei-Leitfaden von 2023 sagt, Thailand führt keine nationale Sperrliste für Telefonwerbung. Eine Person kann die Einwilligung für ihre Telefonnummer jederzeit widerrufen."
+   },
+   "src": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "q": {
+    "en": "How much does outbound calling cost in Thailand?",
+    "th": "บริการโทรออกแทนในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် ဖုန်းထွက်ခေါ်ပေးခြင်း ဘယ်လောက်ကျသလဲ။",
+    "zh": "在泰国找人外呼电话要多少钱？",
+    "de": "Was kosten ausgehende Anrufe in Thailand?"
+   },
+   "a": {
+    "en": "One Fastwork seller lists ฿720 for 18 names with results in a Google Sheet, ฿4,500 for a week of calls, and a monthly plan from ฿18,000.",
+    "th": "ผู้ขายรายหนึ่งบน Fastwork ตั้งราคา ฿720 สำหรับ 18 รายชื่อ ผลอยู่ใน Google Sheet ฿4,500 สำหรับโทรหนึ่งสัปดาห์ และแพ็กเกจรายเดือนเริ่มที่ ฿18,000",
+    "my": "Fastwork ရောင်းချသူတစ်ဦးက အမည် 18 ခုအတွက် ฿720 (ရလဒ်ကို Google Sheet တွင်)၊ တစ်ပတ်စာ ဖုန်းခေါ်ဆိုမှုအတွက် ฿4,500 နှင့် လစဉ်ပက်ကေ့ချ် ฿18,000 မှ စတင်သည်ဟု ဖော်ပြထားသည်။",
+    "zh": "Fastwork 上一位卖家的标价是：18 个名单 ฿720（结果记入 Google 表格），一周电话 ฿4,500，按月套餐 ฿18,000 起。",
+    "de": "Ein Anbieter auf Fastwork nennt ฿720 für 18 Namen mit Ergebnissen in einem Google Sheet, ฿4,500 für eine Woche Anrufe und ein Monatspaket ab ฿18,000."
+   },
+   "src": "https://fastwork.co/user/phumrawit/telesale-78054453"
+  },
+  {
+   "q": {
+    "en": "Does calling my list need an agreement with the caller?",
+    "th": "การโทรหารายชื่อของฉันต้องมีข้อตกลงกับผู้โทรหรือไม่",
+    "my": "ကျွန်ုပ်၏စာရင်းကို ဖုန်းခေါ်ရာတွင် ခေါ်ဆိုသူနှင့် သဘောတူညီချက် လိုသလား။",
+    "zh": "请人给我的名单打电话，要和对方签协议吗？",
+    "de": "Braucht das Anrufen meiner Liste einen Vertrag mit dem Anrufer?"
+   },
+   "a": {
+    "en": "Under the Personal Data Protection Act (Section 40), a firm that handles personal data for a business acts on that business's instructions. The business prepares an agreement that controls what the firm does.",
+    "th": "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล (มาตรา 40) ผู้ประมวลผลข้อมูลส่วนบุคคลให้ธุรกิจต้องทำตามคำสั่งของธุรกิจนั้น และธุรกิจต้องจัดทำข้อตกลงที่ควบคุมการดำเนินการของผู้ประมวลผล",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ (ပုဒ်မ 40) အရ လုပ်ငန်းတစ်ခုအတွက် ကိုယ်ရေးအချက်အလက်ကို ကိုင်တွယ်သော ကုမ္ပဏီသည် ထိုလုပ်ငန်း၏ ညွှန်ကြားချက်အတိုင်း ဆောင်ရွက်ရသည်။ ထိုကုမ္ပဏီ၏ လုပ်ဆောင်ချက်ကို ထိန်းချုပ်သည့် သဘောတူညီချက်ကို လုပ်ငန်းက ပြင်ဆင်ရသည်။",
+    "zh": "按《个人数据保护法》（第 40 条），为企业处理个人数据的公司，依该企业的指示办事。企业订立协议，约束这家公司的做法。",
+    "de": "Nach dem Datenschutzgesetz PDPA (Section 40) handelt eine Firma, die personenbezogene Daten für ein Unternehmen verarbeitet, nach dessen Weisungen. Das Unternehmen setzt einen Vertrag auf, der regelt, was die Firma tut."
+   },
+   "src": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ],
+ "related": [
+  "assistant",
+  "cs-desk",
+  "typing",
+  "leads",
+  "call",
+  "subtitles"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Legal 500: Thai telemarketing, consent and the Direct Sales and Direct Marketing Act",
+    "th": "Legal 500: การโทรขายในไทย ความยินยอม และ พ.ร.บ.ขายตรงและตลาดแบบตรง",
+    "my": "Legal 500 - ထိုင်းဖုန်းဖြင့်ရောင်းချခြင်း၊ ခွင့်ပြုချက်နှင့် တိုက်ရိုက်ရောင်းချမှုဥပဒေ",
+    "zh": "Legal 500：泰国电话营销、同意与《直销与直接营销法》",
+    "de": "Legal 500: Telefonwerbung in Thailand, Einwilligung und das Direktmarketing-Gesetz"
+   },
+   "href": "https://www.legal500.com/intelligence/thailand/media-telecoms-it-entertainment/e-commerce-law-direct-sales-and-marketing-act-consumer-protection-act-and-personal-data-act-thailand-part-3-of-a-3-part-series"
+  },
+  {
+   "t": {
+    "en": "Personal Data Protection Act, English text",
+    "th": "พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล ฉบับภาษาอังกฤษ",
+    "my": "ကိုယ်ရေးအချက်အလက်ကာကွယ်ရေးဥပဒေ အင်္ဂလိပ်စာ",
+    "zh": "《个人数据保护法》英文本",
+    "de": "Datenschutzgesetz PDPA, englischer Text"
+   },
+   "href": "https://cc.kmutt.ac.th/Files/Act%20Eng/personal-data-protection-act-2019-en.pdf"
+  }
+ ]
+}

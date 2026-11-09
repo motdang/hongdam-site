@@ -1,0 +1,319 @@
+{
+ "id": "death-help",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "When someone dies in Thailand, the family needs the death registered, papers for the embassy, and a funeral home for a cremation or the flight home.",
+  "th": "เมื่อมีคนเสียชีวิตในไทย ครอบครัวต้องแจ้งการเสียชีวิต เตรียมเอกสารสำหรับสถานทูต และติดต่อบริษัทจัดงานศพเพื่อฌาปนกิจหรือส่งร่างกลับ",
+  "my": "ထိုင်းနိုင်ငံတွင် တစ်ဦးဦး ကွယ်လွန်သောအခါ မိသားစုက သေဆုံးမှုကို မှတ်ပုံတင်ရန်၊ သံရုံးအတွက် စာရွက်စာတမ်းများ ပြင်ဆင်ရန်၊ မီးသင်္ဂြိုဟ်ရန် သို့မဟုတ် နိုင်ငံသို့ ပြန်ပို့ရန် အသုဘကုမ္ပဏီတစ်ခုနှင့် ဆက်သွယ်ရန် လိုသည်။",
+  "zh": "有人在泰国离世时，家属要办理死亡登记、准备使馆文件，并找殡仪公司办理火化或运送遗体回国。",
+  "de": "Stirbt jemand in Thailand, braucht die Familie die Registrierung des Todesfalls, Papiere für die Botschaft und ein Bestattungsunternehmen für die Einäscherung oder den Flug nach Hause."
+ },
+ "n": {
+  "de": "Wenn hier jemand stirbt"
+ },
+ "l": {
+  "de": "Registrierung, Papiere der Botschaft, Einäscherung oder Rückführung organisiert."
+ },
+ "glyphs": [
+  "lotus",
+  "stamp",
+  "airplane"
+ ],
+ "steps": [
+  {
+   "db": "stamp",
+   "t": {
+    "en": "We register the death.",
+    "th": "แจ้งการเสียชีวิต",
+    "my": "သေဆုံးမှုကို မှတ်ပုံတင်ပေးသည်။",
+    "zh": "办理死亡登记。",
+    "de": "Wir melden den Todesfall an."
+   },
+   "who": {
+    "en": "Hongdam and the district office (amphur)",
+    "th": "หงส์ดำ และที่ว่าการอำเภอ",
+    "my": "ဟုန်ဒမ် နှင့် ခရိုင်ရုံး (အမ်ဖာ)",
+    "zh": "鸿丹 和区政府（amphur）",
+    "de": "Hongdam und das Bezirksamt (Amphur)"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမဆုံး",
+    "zh": "最先",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "envelope",
+   "t": {
+    "en": "We prepare the embassy papers.",
+    "th": "เตรียมเอกสารสำหรับสถานทูต",
+    "my": "သံရုံးအတွက် စာရွက်စာတမ်းများ ပြင်ဆင်ပေးသည်။",
+    "zh": "准备使馆文件。",
+    "de": "Wir bereiten die Papiere für die Botschaft vor."
+   },
+   "who": {
+    "en": "Hongdam and the embassy",
+    "th": "หงส์ดำ และสถานทูต",
+    "my": "ဟုန်ဒမ် နှင့် သံရုံး",
+    "zh": "鸿丹 和使馆",
+    "de": "Hongdam und die Botschaft"
+   },
+   "time": {
+    "en": "After registration",
+    "th": "หลังแจ้งการเสียชีวิต",
+    "my": "မှတ်ပုံတင်ပြီးနောက်",
+    "zh": "登记之后",
+    "de": "Nach der Registrierung"
+   }
+  },
+  {
+   "db": "lotus",
+   "t": {
+    "en": "We arrange a cremation or repatriation with a funeral home.",
+    "th": "จัดการฌาปนกิจหรือส่งร่างกลับกับบริษัทจัดงานศพ",
+    "my": "အသုဘကုမ္ပဏီနှင့် မီးသင်္ဂြိုဟ်ခြင်း သို့မဟုတ် နိုင်ငံသို့ ပြန်ပို့ခြင်းကို စီစဉ်ပေးသည်။",
+    "zh": "与殡仪公司安排火化或遗体运回。",
+    "de": "Wir organisieren mit einem Bestattungsunternehmen die Einäscherung oder die Rückführung."
+   },
+   "who": {
+    "en": "Hongdam and the funeral home",
+    "th": "หงส์ดำ และบริษัทจัดงานศพ",
+    "my": "ဟုန်ဒမ် နှင့် အသုဘကုမ္ပဏီ",
+    "zh": "鸿丹 和殡仪公司",
+    "de": "Hongdam und das Bestattungsunternehmen"
+   },
+   "time": {
+    "en": "After the papers",
+    "th": "หลังเอกสารพร้อม",
+    "my": "စာရွက်စာတမ်းများပြီးနောက်",
+    "zh": "文件备好后",
+    "de": "Nach den Papieren"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A death outside a hospital is reported to the local police as soon as possible. The police report is needed to register the death at the district office (amphur).",
+    "th": "การเสียชีวิตนอกโรงพยาบาลต้องแจ้งตำรวจท้องที่โดยเร็ว รายงานของตำรวจใช้ประกอบการแจ้งการเสียชีวิตที่ที่ว่าการอำเภอ",
+    "my": "ဆေးရုံပြင်ပတွင် သေဆုံးပါက ဒေသခံရဲကို ဖြစ်နိုင်သမျှ အမြန်ဆုံး အကြောင်းကြားရသည်။ ခရိုင်ရုံး (အမ်ဖာ)တွင် သေဆုံးမှု မှတ်ပုံတင်ရန် ရဲ၏ အစီရင်ခံစာ လိုသည်။",
+    "zh": "在医院以外离世的，应尽快报告当地警方。到区政府（amphur）办理死亡登记，需要警方的报告。",
+    "de": "Ein Todesfall ausserhalb eines Spitals wird so bald wie möglich der örtlichen Polizei gemeldet. Für die Registrierung im Bezirksamt (Amphur) braucht es den Polizeibericht."
+   },
+   "src": "https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-thailand"
+  },
+  {
+   "t": {
+    "en": "A hospital's confirmation of death is not an official death certificate. The amphur writes the certificate in Thai and issues one original to the person who reports the death.",
+    "th": "หนังสือรับรองการเสียชีวิตจากโรงพยาบาลไม่ใช่ใบมรณบัตร อำเภอออกใบมรณบัตรเป็นภาษาไทย และออกต้นฉบับให้ผู้แจ้งเพียงหนึ่งฉบับ",
+    "my": "ဆေးရုံ၏ သေဆုံးကြောင်း အတည်ပြုစာသည် တရားဝင် သေဆုံးမှုလက်မှတ် မဟုတ်ပါ။ ခရိုင်ရုံးက သေဆုံးမှုလက်မှတ်ကို ထိုင်းဘာသာဖြင့် ရေးပြီး သေဆုံးမှုကို အကြောင်းကြားသူတစ်ဦးအား မူရင်းတစ်စောင်သာ ထုတ်ပေးသည်။",
+    "zh": "医院出具的死亡确认不是正式的死亡证明。区政府用泰文开具死亡证明，只向报告死亡的人签发一份原件。",
+    "de": "Die Todesbestätigung eines Spitals ist keine amtliche Sterbeurkunde. Das Amphur stellt die Urkunde auf Thai aus und gibt dem Meldenden ein einziges Original ab."
+   },
+   "src": "https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-thailand"
+  },
+  {
+   "t": {
+    "en": "After a death outside a hospital or by accident, the police investigate and may ask for an autopsy. The Australian Embassy says the autopsy report can take at least 6 to 8 weeks.",
+    "th": "เมื่อเสียชีวิตนอกโรงพยาบาลหรือจากอุบัติเหตุ ตำรวจสอบสวนและอาจขอให้ชันสูตรศพ สถานทูตออสเตรเลียระบุว่ารายงานชันสูตรอาจใช้เวลาอย่างน้อย 6 ถึง 8 สัปดาห์",
+    "my": "ဆေးရုံပြင်ပတွင် သို့မဟုတ် မတော်တဆမှုကြောင့် သေဆုံးပါက ရဲက စုံစမ်းပြီး အလောင်းစစ်ဆေးမှု တောင်းနိုင်သည်။ သေဆုံးမှုအလောင်းစစ်ဆေးချက် အစီရင်ခံစာသည် အနည်းဆုံး 6 ပတ်မှ 8 ပတ်ကြာနိုင်သည်ဟု ဩစတြေးလျသံရုံးက ဆိုသည်။",
+    "zh": "在医院以外或因意外离世的，警方会调查，并可能要求尸检。澳大利亚使馆称，尸检报告至少需要 6 至 8 周。",
+    "de": "Nach einem Todesfall ausserhalb eines Spitals oder durch einen Unfall ermittelt die Polizei und kann eine Autopsie verlangen. Die australische Botschaft schreibt, der Autopsiebericht könne mindestens 6 bis 8 Wochen dauern."
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "t": {
+    "en": "The German Embassy in Bangkok says preparing the flight home for a body or an urn takes about 1 to 3 weeks, and that cremation is usual in Thailand for cultural reasons.",
+    "th": "สถานทูตเยอรมนีในกรุงเทพฯ ระบุว่าการเตรียมส่งร่างหรือกระดูกกลับทางอากาศใช้เวลาราว 1 ถึง 3 สัปดาห์ และการฌาปนกิจเป็นเรื่องปกติในไทยด้วยเหตุผลทางวัฒนธรรม",
+    "my": "ဘန်ကောက်ရှိ ဂျာမန်သံရုံးက ရုပ်အလောင်း သို့မဟုတ် အရိုးပြာအိုးကို လေကြောင်းဖြင့် ပြန်ပို့ရန် ပြင်ဆင်ရာတွင် ခန့်မှန်း 1 ပတ်မှ 3 ပတ်ကြာပြီး ယဉ်ကျေးမှုအကြောင်းများကြောင့် ထိုင်းတွင် မီးသင်္ဂြိုဟ်ခြင်း အများအားဖြင့် ပြုလုပ်ကြသည်ဟု ဆိုသည်။",
+    "zh": "德国驻曼谷使馆称，遗体或骨灰盒空运回国的准备工作约需 1 至 3 周，而出于文化原因，泰国通常火化。",
+    "de": "Die Deutsche Botschaft Bangkok schreibt, die Vorbereitung der Überführung eines Leichnams oder einer Urne auf dem Luftweg dauere in der Regel etwa 1 bis 3 Wochen, und in Thailand sei eine Einäscherung aus kulturellen Gründen üblich."
+   },
+   "src": "https://bangkok.diplo.de/resource/blob/2380082/6dd773a67bd119cf5f88814fc3adfcd4/merkblatt-sterbefaelle-data.pdf"
+  },
+  {
+   "t": {
+    "en": "The Australian Embassy gives next of kin a letter to release the remains from the hospital and cancels the passport. It does not investigate deaths, and it does not provide or certify translations.",
+    "th": "สถานทูตออสเตรเลียออกหนังสือให้ญาติรับร่างจากโรงพยาบาลและยกเลิกหนังสือเดินทาง สถานทูตไม่สอบสวนการเสียชีวิต และไม่จัดทำหรือรับรองคำแปล",
+    "my": "ဩစတြေးလျသံရုံးက ဆွေမျိုးအနီးကပ်ဆုံးသူအား ဆေးရုံမှ ရုပ်အလောင်း လွှဲယူရန် စာထုတ်ပေးပြီး ပတ်စပို့ကို ပယ်ဖျက်သည်။ သေဆုံးမှုကို မစုံစမ်းပါ။ ဘာသာပြန်ကိုလည်း မပြုလုပ်၊ မထောက်ခံပါ။",
+    "zh": "澳大利亚使馆向近亲出具从医院领取遗体的信函，并注销护照。使馆不调查死亡，也不提供或认证翻译。",
+    "de": "Die australische Botschaft stellt den nächsten Angehörigen ein Schreiben zur Freigabe der sterblichen Überreste aus dem Spital aus und entwertet den Pass. Sie ermittelt nicht zu Todesfällen und liefert oder beglaubigt keine Übersetzungen."
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Cremation in Thailand, ashes released (three funeral firms on the Australian Embassy's list, Bangkok estimates of January 2026; regional areas may cost more)",
+    "th": "ฌาปนกิจในไทย ลอยอังคาร (บริษัทจัดงานศพสามแห่งในรายชื่อของสถานทูตออสเตรเลีย ประมาณการในกรุงเทพฯ เดือนมกราคม ค.ศ. 2026 ต่างจังหวัดอาจแพงกว่า)",
+    "my": "ထိုင်းတွင် မီးသင်္ဂြိုဟ်၊ အရိုးပြာ ဖြန့်ခြင်း (ဩစတြေးလျသံရုံးစာရင်းပါ အသုဘကုမ္ပဏီ သုံးခု၊ 2026 ခုနှစ် ဇန်နဝါရီ ဘန်ကောက် ခန့်မှန်းဈေး၊ ဒေသအလိုက် ပိုကုန်နိုင်သည်)",
+    "zh": "在泰国火化并撒骨灰（澳大利亚使馆名单上的三家殡仪公司，2026 年 1 月曼谷估价；外地可能更贵）",
+    "de": "Einäscherung in Thailand, Asche verstreut (drei Bestattungsfirmen auf der Liste der australischen Botschaft, Schätzungen für Bangkok vom Januar 2026; in den Regionen kann es mehr kosten)"
+   },
+   "p": {
+    "en": "฿31,000–41,000 (one firm adds 7% VAT)",
+    "th": "฿31,000–41,000 (บริษัทหนึ่งบวก VAT 7%)",
+    "my": "฿31,000–41,000 (ကုမ္ပဏီတစ်ခုက VAT 7% ထပ်ပေါင်း)",
+    "zh": "฿31,000–41,000（一家另加 7% 增值税）",
+    "de": "฿31,000–41,000 (eine Firma rechnet 7% MwSt. dazu)"
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "t": {
+    "en": "Cremation in Thailand, ashes flown to Australia",
+    "th": "ฌาปนกิจในไทย ส่งอัฐิกลับออสเตรเลีย",
+    "my": "ထိုင်းတွင် မီးသင်္ဂြိုဟ်၊ အရိုးပြာကို ဩစတြေးလျသို့ ပို့ခြင်း",
+    "zh": "在泰国火化，骨灰运回澳大利亚",
+    "de": "Einäscherung in Thailand, Asche nach Australien geflogen"
+   },
+   "p": {
+    "en": "฿35,815–55,000",
+    "th": "฿35,815–55,000",
+    "my": "฿35,815–55,000",
+    "zh": "฿35,815–55,000",
+    "de": "฿35,815–55,000"
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "t": {
+    "en": "Body flown to Australia",
+    "th": "ส่งร่างกลับออสเตรเลีย",
+    "my": "ရုပ်အလောင်းကို ဩစတြေးလျသို့ လေကြောင်းဖြင့် ပို့ခြင်း",
+    "zh": "遗体空运回澳大利亚",
+    "de": "Leichnam nach Australien geflogen"
+   },
+   "p": {
+    "en": "฿100,000–125,000",
+    "th": "฿100,000–125,000",
+    "my": "฿100,000–125,000",
+    "zh": "฿100,000–125,000",
+    "de": "฿100,000–125,000"
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What happens first when someone dies in Thailand?",
+    "th": "เมื่อมีคนเสียชีวิตในไทย ต้องทำอะไรก่อน",
+    "my": "ထိုင်းနိုင်ငံတွင် တစ်ဦးဦး သေဆုံးသောအခါ ဘာကို ဦးစွာ လုပ်ရသလဲ။",
+    "zh": "有人在泰国离世，首先要做什么？",
+    "de": "Was geschieht zuerst, wenn jemand in Thailand stirbt?"
+   },
+   "a": {
+    "en": "A hospital usually gives the family a notice of death. The family registers the death and receives the certificate at the district office (amphur or tedsaban). After a death outside a hospital or by accident, the police investigate and may ask for an autopsy. The Australian Embassy suggests the family engage a funeral director.",
+    "th": "โรงพยาบาลมักออกหนังสือแจ้งการเสียชีวิตให้ครอบครัว ครอบครัวแจ้งการเสียชีวิตและรับใบมรณบัตรที่ที่ว่าการอำเภอหรือเทศบาล หากเสียชีวิตนอกโรงพยาบาลหรือจากอุบัติเหตุ ตำรวจสอบสวนและอาจขอให้ชันสูตรศพ สถานทูตออสเตรเลียระบุว่าญาติว่าจ้างบริษัทจัดงานศพมาช่วยจัดการ",
+    "my": "ဆေးရုံက မိသားစုအား သေဆုံးကြောင်း အသိပေးစာ ပုံမှန်ထုတ်ပေးသည်။ မိသားစုက ခရိုင်ရုံး (အမ်ဖာ သို့မဟုတ် တက်ဆဘန်)တွင် သေဆုံးမှုကို မှတ်ပုံတင်ပြီး သေဆုံးမှုလက်မှတ် ရယူသည်။ ဆေးရုံပြင်ပတွင် သို့မဟုတ် မတော်တဆမှုကြောင့် သေဆုံးပါက ရဲက စုံစမ်းပြီး အလောင်းစစ်ဆေးမှု တောင်းနိုင်သည်။ ဩစတြေးလျသံရုံးက မိသားစုအား အသုဘကုမ္ပဏီတစ်ခု ငှားရန် အကြံပြုသည်။",
+    "zh": "医院通常会给家属一份死亡通知。家属到区政府（amphur 或 tedsaban）登记死亡并领取死亡证明。在医院以外或因意外离世的，警方会调查，并可能要求尸检。澳大利亚使馆建议家属请一家殡仪公司协助。",
+    "de": "Ein Spital gibt der Familie in der Regel eine Todesmeldung. Die Familie meldet den Todesfall im Bezirksamt (Amphur oder Tedsaban) an und erhält dort die Urkunde. Nach einem Todesfall ausserhalb eines Spitals oder durch einen Unfall ermittelt die Polizei und kann eine Autopsie verlangen. Die australische Botschaft empfiehlt der Familie, ein Bestattungsunternehmen beizuziehen."
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "q": {
+    "en": "How much does it cost to send a body home from Thailand?",
+    "th": "ส่งร่างกลับประเทศจากไทยราคาเท่าไร",
+    "my": "ထိုင်းမှ ရုပ်အလောင်းကို နိုင်ငံသို့ ပြန်ပို့ရန် ဈေးဘယ်လောက်လဲ။",
+    "zh": "从泰国运送遗体回国要多少钱？",
+    "de": "Was kostet die Überführung eines Leichnams aus Thailand?"
+   },
+   "a": {
+    "en": "Three funeral firms on the Australian Embassy's list estimate ฿100,000 to ฿125,000 to fly a body to Australia, against ฿31,000 to ฿41,000 for a cremation in Thailand with the ashes released. The figures date from January 2026.",
+    "th": "บริษัทจัดงานศพสามแห่งในรายชื่อของสถานทูตออสเตรเลียประมาณการค่าส่งร่างไปออสเตรเลียที่ ฿100,000 ถึง ฿125,000 เทียบกับ ฿31,000 ถึง ฿41,000 สำหรับการฌาปนกิจในไทยและลอยอังคาร ตัวเลขเป็นของเดือนมกราคม ค.ศ. 2026",
+    "my": "ဩစတြေးလျသံရုံးစာရင်းပါ အသုဘကုမ္ပဏီ သုံးခုက ရုပ်အလောင်းကို ဩစတြေးလျသို့ လေကြောင်းဖြင့် ပို့ရန် ฿100,000 မှ ฿125,000 အထိ ခန့်မှန်းပြီး ထိုင်းတွင် မီးသင်္ဂြိုဟ်၍ အရိုးပြာ ဖြန့်ပါက ฿31,000 မှ ฿41,000 ဟု ဆိုသည်။ ဤကိန်းဂဏန်းများမှာ 2026 ခုနှစ် ဇန်နဝါရီ၏ ဖြစ်သည်။",
+    "zh": "澳大利亚使馆名单上的三家殡仪公司估计，将遗体空运到澳大利亚需 ฿100,000 至 ฿125,000；在泰国火化并撒骨灰为 ฿31,000 至 ฿41,000。数字为 2026 年 1 月的。",
+    "de": "Drei Bestattungsfirmen auf der Liste der australischen Botschaft schätzen die Überführung eines Leichnams nach Australien auf ฿100,000 bis ฿125,000, eine Einäscherung in Thailand mit verstreuter Asche auf ฿31,000 bis ฿41,000. Die Zahlen stammen vom Januar 2026."
+   },
+   "src": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "q": {
+    "en": "Does insurance pay for sending a body home?",
+    "th": "ประกันจ่ายค่าส่งร่างกลับไหม",
+    "my": "အာမခံက ရုပ်အလောင်း ပြန်ပို့ခကို ပေးသလား။",
+    "zh": "保险会支付遗体运回的费用吗？",
+    "de": "Zahlt eine Versicherung die Überführung?"
+   },
+   "a": {
+    "en": "The German Embassy says that if the person was insured for a death abroad, the insurer pays, under its terms, either for a burial in Thailand or for the return of the body or urn, and appoints a funeral firm. The family tells the insurer which it wants. Without cover, the family contacts a funeral firm itself and usually pays the costs.",
+    "th": "สถานทูตเยอรมนีระบุว่า หากผู้เสียชีวิตทำประกันกรณีเสียชีวิตในต่างประเทศไว้ ประกันจะจ่ายตามเงื่อนไข ไม่ว่าจะเป็นการจัดงานศพในไทยหรือส่งร่างหรืออัฐิกลับ และจะมอบหมายบริษัทจัดงานศพ ครอบครัวแจ้งประกันว่าต้องการแบบใด หากไม่มีประกัน ครอบครัวติดต่อบริษัทจัดงานศพเองและมักเป็นผู้จ่ายค่าใช้จ่าย",
+    "my": "ဂျာမန်သံရုံးက သေဆုံးသူသည် ပြည်ပတွင် သေဆုံးမှုအတွက် အာမခံထားပါက အာမခံကုမ္ပဏီက စည်းကမ်းချက်အရ ထိုင်းတွင် သင်္ဂြိုဟ်ခြင်း သို့မဟုတ် ရုပ်အလောင်း၊ အရိုးပြာအိုး ပြန်ပို့ခြင်းအတွက် ပေးချေပြီး အသုဘကုမ္ပဏီတစ်ခုကို တာဝန်ပေးသည်ဟု ဆိုသည်။ မိသားစုက မည်သည့်နည်းလမ်းကို လိုချင်သည်ကို အာမခံကုမ္ပဏီအား ပြောရသည်။ အာမခံမရှိပါက မိသားစုကိုယ်တိုင် အသုဘကုမ္ပဏီကို ဆက်သွယ်ပြီး ကုန်ကျစရိတ်ကို အများအားဖြင့် ကိုယ်တိုင်ပေးရသည်။",
+    "zh": "德国使馆说，如果逝者投保了海外身故保险，保险公司按条款支付在泰国安葬或遗体、骨灰运回的费用，并指定殡仪公司。家属告知保险公司想要哪种方式。没有保险的，家属自己联系殡仪公司，费用通常由家属承担。",
+    "de": "Die Deutsche Botschaft schreibt: War die verstorbene Person für den Todesfall im Ausland versichert, übernimmt die Versicherung nach ihren Bedingungen entweder eine Bestattung in Thailand oder die Rückführung des Leichnams oder der Urne und beauftragt ein Bestattungsunternehmen. Die Angehörigen teilen der Versicherung ihren Wunsch mit. Ohne Versicherung beauftragen die Angehörigen das Unternehmen selbst und tragen die Kosten im Regelfall selbst."
+   },
+   "src": "https://bangkok.diplo.de/resource/blob/2380082/6dd773a67bd119cf5f88814fc3adfcd4/merkblatt-sterbefaelle-data.pdf"
+  },
+  {
+   "q": {
+    "en": "How long does it take to send a body home?",
+    "th": "ส่งร่างกลับประเทศใช้เวลานานเท่าไร",
+    "my": "ရုပ်အလောင်းကို နိုင်ငံသို့ ပြန်ပို့ရန် အချိန်ဘယ်လောက်ကြာသလဲ။",
+    "zh": "运送遗体回国要多久？",
+    "de": "Wie lange dauert die Überführung eines Leichnams?"
+   },
+   "a": {
+    "en": "The German Embassy puts the preparation at about 1 to 3 weeks. It says the funeral at home is set only after the funeral firms in Thailand and in Germany have confirmed the transfer dates.",
+    "th": "สถานทูตเยอรมนีระบุว่าการเตรียมใช้เวลาราว 1 ถึง 3 สัปดาห์ และกำหนดวันงานศพที่ประเทศบ้านเกิดหลังจากบริษัทจัดงานศพในไทยและในเยอรมนียืนยันวันส่งแล้วเท่านั้น",
+    "my": "ဂျာမန်သံရုံးက ပြင်ဆင်ချိန် ခန့်မှန်း 1 ပတ်မှ 3 ပတ်ဟု ဆိုသည်။ ထိုင်းနှင့် ဂျာမနီရှိ အသုဘကုမ္ပဏီများက ပို့ဆောင်မည့်ရက်ကို အတည်ပြုပြီးမှသာ နိုင်ငံပြန်ရောက်ပြီးနောက် သင်္ဂြိုဟ်မည့်ရက်ကို သတ်မှတ်ရန် ဆိုသည်။",
+    "zh": "德国使馆称，准备工作约需 1 至 3 周。使馆说，要等泰国和德国的殡仪公司确认转运日期后，再定回国后的葬礼日期。",
+    "de": "Die Deutsche Botschaft nennt für die Vorbereitung etwa 1 bis 3 Wochen. Sie schreibt, ein Bestattungstermin in Deutschland solle erst angesetzt werden, wenn die Bestattungsunternehmen in Thailand und in Deutschland die Überführungsdaten bestätigt haben."
+   },
+   "src": "https://bangkok.diplo.de/resource/blob/2380082/6dd773a67bd119cf5f88814fc3adfcd4/merkblatt-sterbefaelle-data.pdf"
+  },
+  {
+   "q": {
+    "en": "Is the Thai death certificate in English?",
+    "th": "ใบมรณบัตรไทยเป็นภาษาอังกฤษไหม",
+    "my": "ထိုင်းသေဆုံးမှုလက်မှတ်သည် အင်္ဂလိပ်ဘာသာနှင့် ဖြစ်သလား။",
+    "zh": "泰国的死亡证明有英文版吗？",
+    "de": "Ist die thailändische Sterbeurkunde auf Englisch?"
+   },
+   "a": {
+    "en": "No. The amphur writes it in Thai and issues one original to the person who reports the death. For use in the UK it needs translating, and the UK government page suggests certification by the Thai Ministry of Foreign Affairs.",
+    "th": "ไม่ใช่ อำเภอออกใบมรณบัตรเป็นภาษาไทยและออกต้นฉบับให้ผู้แจ้งหนึ่งฉบับ หากใช้ในสหราชอาณาจักรต้องแปล และหน้าเว็บของรัฐบาลอังกฤษกล่าวถึงการรับรองคำแปลโดยกระทรวงการต่างประเทศของไทย",
+    "my": "မဟုတ်ပါ။ ခရိုင်ရုံးက ထိုင်းဘာသာဖြင့် ရေးပြီး သေဆုံးမှုကို အကြောင်းကြားသူအား မူရင်းတစ်စောင် ထုတ်ပေးသည်။ ယူကေတွင် သုံးရန် ဘာသာပြန်ရမည်ဖြစ်ပြီး ယူကေအစိုးရစာမျက်နှာက ထိုင်းနိုင်ငံ နိုင်ငံခြားရေးဝန်ကြီးဌာနက ထောက်ခံပေးရန် အကြံပြုထားသည်။",
+    "zh": "没有。区政府用泰文开具，只向报告死亡的人签发一份原件。在英国使用需要翻译，英国政府页面建议再由泰国外交部认证。",
+    "de": "Nein. Das Amphur stellt sie auf Thai aus und gibt dem Meldenden ein einziges Original ab. Für die Verwendung in Grossbritannien muss sie übersetzt werden, und die Seite der britischen Regierung empfiehlt eine Beglaubigung durch das thailändische Aussenministerium."
+   },
+   "src": "https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-thailand"
+  }
+ ],
+ "related": [
+  "legalise",
+  "translate",
+  "thai-plan",
+  "interp",
+  "merit-dead",
+  "tribute"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Australian Embassy: when someone dies in Thailand",
+    "th": "สถานทูตออสเตรเลีย: เมื่อมีคนเสียชีวิตในไทย",
+    "my": "ဩစတြေးလျသံရုံး: ထိုင်းတွင် တစ်ဦးဦး သေဆုံးသည့်အခါ",
+    "zh": "澳大利亚使馆：有人在泰国离世时",
+    "de": "Australische Botschaft: Wenn jemand in Thailand stirbt"
+   },
+   "href": "https://thailand.embassy.gov.au/bkok/When_Someone_Dies_in_Thailand.html"
+  },
+  {
+   "t": {
+    "en": "UK government: what to do after a British person dies in Thailand",
+    "th": "รัฐบาลอังกฤษ: เมื่อชาวอังกฤษเสียชีวิตในไทย",
+    "my": "ယူကေအစိုးရ: ထိုင်းတွင် ဗြိတိန်လူမျိုး သေဆုံးပါက လုပ်ရမည့်အရာများ",
+    "zh": "英国政府：英国人在泰国去世后怎么办",
+    "de": "Britische Regierung: Was nach dem Tod einer britischen Person in Thailand zu tun ist"
+   },
+   "href": "https://www.gov.uk/guidance/what-to-do-after-a-british-person-dies-in-thailand"
+  }
+ ]
+}

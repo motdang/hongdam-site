@@ -1,0 +1,285 @@
+{
+ "id": "mirror",
+ "tier": "modest",
+ "read": "2026-11-04",
+ "why": {
+  "en": "When a host goes down, the site goes down with it, and visitors see an error page until the host is back.",
+  "th": "เมื่อโฮสต์ล่ม เว็บก็ล่มไปด้วย ผู้เข้าชมจะเห็นหน้าข้อผิดพลาดจนกว่าโฮสต์จะกลับมา",
+  "my": "ဟို့စ်ကျသွားသောအခါ ဆိုက်ပါ ကျသွားပြီး ဟို့စ် ပြန်လည်အလုပ်လုပ်သည်အထိ ဧည့်သည်များက အမှားစာမျက်နှာကို တွေ့ရသည်။",
+  "zh": "主机宕机时，网站也跟着打不开，访客会看到错误页面，直到主机恢复。",
+  "de": "Fällt der Host aus, ist auch die Website nicht erreichbar, und Besucher sehen eine Fehlerseite, bis er wieder läuft."
+ },
+ "n": {
+  "de": "Standby-Kopie Ihrer Website"
+ },
+ "l": {
+  "de": "Auf einem zweiten Host, zum Umschalten, wenn Ihrer ausfällt."
+ },
+ "glyphs": [
+  "server",
+  "copy",
+  "power"
+ ],
+ "steps": [
+  {
+   "db": "copy",
+   "t": {
+    "en": "We copy your site to a second host.",
+    "th": "เราคัดลอกเว็บของคุณไปไว้บนโฮสต์ที่สอง",
+    "my": "သင့်ဆိုက်ကို ဒုတိယဟို့စ်သို့ ကျွန်ုပ်တို့ ကူးယူသည်။",
+    "zh": "我们把您的网站复制到第二台主机上。",
+    "de": "Wir kopieren Ihre Website auf einen zweiten Host."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "At the start",
+    "th": "ตอนเริ่มงาน",
+    "my": "အစပိုင်း",
+    "zh": "开始时",
+    "de": "Zu Beginn"
+   }
+  },
+  {
+   "db": "server",
+   "t": {
+    "en": "The copy is kept on the second host.",
+    "th": "สำเนาเก็บไว้บนโฮสต์ที่สอง",
+    "my": "မိတ္တူကို ဒုတိယဟို့စ်ပေါ်တွင် သိမ်းထားသည်။",
+    "zh": "副本保存在第二台主机上。",
+    "de": "Die Kopie liegt auf dem zweiten Host."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "After the first copy",
+    "th": "หลังคัดลอกครั้งแรก",
+    "my": "ပထမမိတ္တူကူးပြီးနောက်",
+    "zh": "首次复制之后",
+    "de": "Nach der ersten Kopie"
+   }
+  },
+  {
+   "db": "refresh",
+   "t": {
+    "en": "If your host goes down, you switch to the copy.",
+    "th": "ถ้าโฮสต์ของคุณล่ม คุณสลับไปใช้สำเนา",
+    "my": "သင့်ဟို့စ် ကျသွားပါက သင်က မိတ္တူသို့ ပြောင်းသုံးသည်။",
+    "zh": "如果您的主机宕机，您切换到副本。",
+    "de": "Fällt Ihr Host aus, wechseln Sie zur Kopie."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "When your site is down",
+    "th": "เมื่อเว็บล่ม",
+    "my": "သင့်ဆိုက် ကျသွားသောအခါ",
+    "zh": "网站打不开时",
+    "de": "Wenn Ihre Website ausfällt"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "When a host cannot be reached, Cloudflare's Always Online serves a saved copy from Cloudflare's cache. If there is none, it takes static pages from the Internet Archive's Wayback Machine.",
+    "th": "เมื่อติดต่อโฮสต์ไม่ได้ Always Online ของ Cloudflare แสดงสำเนาที่เก็บไว้ในแคชของ Cloudflare ถ้าไม่มี จะดึงหน้าแบบคงที่จาก Wayback Machine ของ Internet Archive",
+    "my": "ဟို့စ်ကို ဆက်သွယ်မရသောအခါ Cloudflare ၏ Always Online က Cloudflare cache ထဲရှိ သိမ်းထားသော မိတ္တူကို ပြသည်။ မရှိလျှင် Internet Archive ၏ Wayback Machine မှ တည်ငြိမ်သော စာမျက်နှာများကို ယူသည်။",
+    "zh": "主机连不上时，Cloudflare 的 Always Online 提供 Cloudflare 缓存里保存的副本；没有的话，从 Internet Archive 的 Wayback Machine 取静态页面。",
+    "de": "Ist ein Host nicht erreichbar, liefert Always Online von Cloudflare eine gespeicherte Kopie aus dem Cache von Cloudflare. Gibt es keine, holt es statische Seiten aus der Wayback Machine des Internet Archive."
+   },
+   "src": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  },
+  {
+   "t": {
+    "en": "Always Online cannot serve dynamic content while the host is offline. Shopping carts and comment boxes show errors.",
+    "th": "Always Online แสดงเนื้อหาแบบไดนามิกไม่ได้ขณะโฮสต์ออฟไลน์ ตะกร้าสินค้าและช่องความคิดเห็นจะแสดงข้อผิดพลาด",
+    "my": "Always Online သည် ဟို့စ် အော့ဖ်လိုင်းဖြစ်နေစဉ် ပြောင်းလဲနေသော အကြောင်းအရာကို မပြနိုင်ပါ။ ဈေးဝယ်ခြင်းတောင်းနှင့် မှတ်ချက်ဘောက်စ်များတွင် အမှားပြသည်။",
+    "zh": "主机离线时，Always Online 无法提供动态内容。购物车和评论框会显示错误。",
+    "de": "Always Online kann dynamische Inhalte nicht ausliefern, solange der Host offline ist. Warenkörbe und Kommentarfelder zeigen Fehler."
+   },
+   "src": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  },
+  {
+   "t": {
+    "en": "Always Online is on the Free, Pro, Business and Enterprise plans. Its archive crawl runs every 30 days on Free, every 15 days on Pro and every 5 days on Business and Enterprise.",
+    "th": "Always Online มีในแพ็กเกจ Free, Pro, Business และ Enterprise การเก็บหน้าลงคลังทำทุก 30 วันใน Free ทุก 15 วันใน Pro และทุก 5 วันใน Business และ Enterprise",
+    "my": "Always Online သည် Free၊ Pro၊ Business နှင့် Enterprise အစီအစဉ်များတွင် ရှိသည်။ မှတ်တမ်းသိမ်းဆည်းမှု crawl ကို Free တွင် 30 ရက်တစ်ကြိမ်၊ Pro တွင် 15 ရက်တစ်ကြိမ်၊ Business နှင့် Enterprise တွင် 5 ရက်တစ်ကြိမ် လုပ်သည်။",
+    "zh": "Always Online 适用于 Free、Pro、Business 和 Enterprise 套餐。存档抓取频率：Free 每 30 天一次，Pro 每 15 天一次，Business 和 Enterprise 每 5 天一次。",
+    "de": "Always Online gibt es in den Tarifen Free, Pro, Business und Enterprise. Der Archiv-Crawl läuft bei Free alle 30 Tage, bei Pro alle 15 Tage und bei Business und Enterprise alle 5 Tage."
+   },
+   "src": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Load Balancing runs health checks on each endpoint at set intervals. An endpoint fails if it does not answer, answers too slowly, or returns unexpected codes or content.",
+    "th": "Cloudflare Load Balancing ตรวจสุขภาพของแต่ละปลายทางตามช่วงเวลาที่ตั้งไว้ ปลายทางจะล้มเหลวถ้าไม่ตอบ ตอบช้าเกินไป หรือส่งรหัสหรือเนื้อหาที่ไม่คาดไว้",
+    "my": "Cloudflare Load Balancing သည် သတ်မှတ်ထားသော အချိန်ကွာများတွင် endpoint တစ်ခုချင်းစီကို ကျန်းမာရေးစစ်ဆေးမှု လုပ်သည်။ endpoint က မတုံ့ပြန်လျှင်၊ ဖြေချိန်ကြာလွန်းလျှင်၊ မမျှော်လင့်ထားသော ကုဒ် သို့မဟုတ် အကြောင်းအရာ ပြန်လျှင် မအောင်မြင်ဟု သတ်မှတ်သည်။",
+    "zh": "Cloudflare Load Balancing 按设定的间隔对每个端点做健康检查。端点不响应、响应太慢，或返回意外的状态码或内容，就算失败。",
+    "de": "Cloudflare Load Balancing prüft jeden Endpunkt in festen Abständen. Ein Endpunkt fällt durch, wenn er nicht antwortet, zu langsam antwortet oder unerwartete Codes oder Inhalte liefert."
+   },
+   "src": "https://developers.cloudflare.com/load-balancing/understand-basics/health-details/"
+  },
+  {
+   "t": {
+    "en": "In Cloudflare Load Balancing, a pool that falls below its health threshold stops receiving traffic, and the traffic goes to the other pools.",
+    "th": "ใน Cloudflare Load Balancing พูลที่ต่ำกว่าเกณฑ์สุขภาพจะไม่ได้รับทราฟฟิก และทราฟฟิกไปที่พูลอื่น",
+    "my": "Cloudflare Load Balancing တွင် ကျန်းမာရေးသတ်မှတ်ချက်အောက် ကျသွားသော pool သည် traffic မရတော့ဘဲ traffic ကို အခြား pool များသို့ ပို့သည်။",
+    "zh": "在 Cloudflare Load Balancing 中，低于健康阈值的资源池不再接收流量，流量转到其他资源池。",
+    "de": "Bei Cloudflare Load Balancing erhält ein Pool unter seinem Gesundheitsschwellenwert keinen Verkehr mehr; der Verkehr geht an die anderen Pools."
+   },
+   "src": "https://developers.cloudflare.com/load-balancing/understand-basics/health-details/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Cloudflare R2, storage for a standby copy",
+    "th": "Cloudflare R2 พื้นที่เก็บสำหรับสำเนาสำรอง",
+    "my": "အရန်မိတ္တူအတွက် Cloudflare R2 သိုလှောင်မှု",
+    "zh": "Cloudflare R2，备用副本的存储",
+    "de": "Cloudflare R2, Speicher für eine Standby-Kopie"
+   },
+   "p": {
+    "en": "US$0.015 a GB a month, first 10 GB free",
+    "th": "US$0.015 ต่อ GB ต่อเดือน 10 GB แรกฟรี",
+    "my": "တစ်လ GB လျှင် US$0.015၊ ပထမ 10 GB အခမဲ့",
+    "zh": "每 GB 每月 US$0.015，前 10 GB 免费",
+    "de": "US$0.015 pro GB und Monat, die ersten 10 GB frei"
+   },
+   "src": "https://developers.cloudflare.com/r2/pricing/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Always Online, a saved copy shown when your host is down",
+    "th": "Cloudflare Always Online แสดงสำเนาที่เก็บไว้เมื่อโฮสต์ล่ม",
+    "my": "Cloudflare Always Online၊ သင့်ဟို့စ် ကျသောအခါ သိမ်းထားသော မိတ္တူကို ပြသည်",
+    "zh": "Cloudflare Always Online，主机宕机时显示已保存的副本",
+    "de": "Cloudflare Always Online, eine gespeicherte Kopie, wenn Ihr Host ausfällt"
+   },
+   "p": {
+    "en": "Available on the Free plan",
+    "th": "มีให้ในแพ็กเกจ Free",
+    "my": "Free အစီအစဉ်တွင် ရနိုင်သည်",
+    "zh": "Free 套餐即可使用",
+    "de": "Im Tarif Free verfügbar"
+   },
+   "src": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "What do visitors see if my host is down?",
+    "th": "ถ้าโฮสต์ล่ม ผู้เข้าชมเห็นอะไร",
+    "my": "ကျွန်ုပ်၏ဟို့စ် ကျသွားလျှင် ဧည့်သည်များ ဘာတွေ့ရသလဲ။",
+    "zh": "主机宕机时，访客会看到什么？",
+    "de": "Was sehen Besucher, wenn mein Host ausfällt?"
+   },
+   "a": {
+    "en": "With Cloudflare Always Online, they see a saved copy of the page. A banner says it is an archived version, with a Refresh button. If a page has no saved copy, they see the host's error page.",
+    "th": "เมื่อใช้ Always Online ของ Cloudflare ผู้เข้าชมเห็นสำเนาที่เก็บไว้ของหน้านั้น มีแบนเนอร์บอกว่าเป็นเวอร์ชันที่เก็บถาวร พร้อมปุ่ม Refresh ถ้าหน้านั้นไม่มีสำเนาที่เก็บไว้ จะเห็นหน้าข้อผิดพลาดของโฮสต์",
+    "my": "Cloudflare Always Online ဖြင့် ဧည့်သည်များက စာမျက်နှာ၏ သိမ်းထားသော မိတ္တူကို တွေ့ရသည်။ သိမ်းဆည်းထားသော ဗားရှင်းဖြစ်ကြောင်း ဘန်နာတစ်ခုနှင့် Refresh ခလုတ် ပါသည်။ စာမျက်နှာတစ်ခုတွင် သိမ်းထားသော မိတ္တူ မရှိလျှင် ဟို့စ်၏ အမှားစာမျက်နှာကို တွေ့ရသည်။",
+    "zh": "用 Cloudflare Always Online 时，访客看到页面的已保存副本，上面有一条横幅，说明这是存档版本，并带有 Refresh 按钮。页面没有已保存的副本的话，看到的是主机的错误页面。",
+    "de": "Mit Cloudflare Always Online sehen sie eine gespeicherte Kopie der Seite. Ein Banner sagt, dass es eine archivierte Version ist, mit einer Schaltfläche Refresh. Gibt es zu einer Seite keine gespeicherte Kopie, sehen sie die Fehlerseite des Hosts."
+   },
+   "src": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  },
+  {
+   "q": {
+    "en": "Does a saved copy work for a shop or a form?",
+    "th": "สำเนาที่เก็บไว้ใช้กับร้านค้าหรือแบบฟอร์มได้ไหม",
+    "my": "သိမ်းထားသော မိတ္တူသည် ဈေးဆိုင် သို့မဟုတ် ဖောင်အတွက် အလုပ်လုပ်ပါသလား။",
+    "zh": "已保存的副本能用于网店或表单吗？",
+    "de": "Funktioniert eine gespeicherte Kopie für einen Shop oder ein Formular?"
+   },
+   "a": {
+    "en": "Not with Always Online. Cloudflare says it cannot serve dynamic content while the host is offline, and visitors on shopping carts or comment boxes see errors.",
+    "th": "ไม่ได้กับ Always Online Cloudflare ระบุว่าแสดงเนื้อหาแบบไดนามิกไม่ได้ขณะโฮสต์ออฟไลน์ และผู้เข้าชมที่ใช้ตะกร้าสินค้าหรือช่องความคิดเห็นจะเห็นข้อผิดพลาด",
+    "my": "Always Online ဖြင့် မရပါ။ ဟို့စ် အော့ဖ်လိုင်းဖြစ်နေစဉ် ပြောင်းလဲနေသော အကြောင်းအရာကို မပြနိုင်ဟု Cloudflare က ဆိုပြီး ဈေးဝယ်ခြင်းတောင်း သို့မဟုတ် မှတ်ချက်ဘောက်စ်ကို သုံးသော ဧည့်သည်များ အမှားတွေ့ရသည်။",
+    "zh": "Always Online 做不到。Cloudflare 说，主机离线时它无法提供动态内容，用购物车或评论框的访客会看到错误。",
+    "de": "Mit Always Online nicht. Cloudflare sagt, es könne dynamische Inhalte nicht ausliefern, solange der Host offline ist, und Besucher bei Warenkörben oder Kommentarfeldern sehen Fehler."
+   },
+   "src": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  },
+  {
+   "q": {
+    "en": "How does a load balancer know a host is down?",
+    "th": "ตัวกระจายโหลดรู้ได้อย่างไรว่าโฮสต์ล่ม",
+    "my": "load balancer က ဟို့စ် ကျသွားသည်ကို ဘယ်လိုသိသလဲ။",
+    "zh": "负载均衡器怎么知道主机宕机了？",
+    "de": "Woher weiss ein Load Balancer, dass ein Host ausgefallen ist?"
+   },
+   "a": {
+    "en": "Cloudflare's monitors send health check requests at set intervals. Each selected region runs checks from three data centers, and an endpoint is healthy if most regions are healthy.",
+    "th": "ตัวตรวจสอบของ Cloudflare ส่งคำขอตรวจสุขภาพตามช่วงเวลาที่ตั้งไว้ แต่ละภูมิภาคที่เลือกตรวจจากศูนย์ข้อมูลสามแห่ง และปลายทางถือว่าปกติถ้าภูมิภาคส่วนใหญ่ปกติ",
+    "my": "Cloudflare ၏ monitor များက သတ်မှတ်ထားသော အချိန်ကွာများတွင် ကျန်းမာရေးစစ်ဆေးမှု တောင်းဆိုချက်များ ပို့သည်။ ရွေးထားသော ဒေသတစ်ခုချင်းစီက ဒေတာစင်တာ သုံးခုမှ စစ်ဆေးပြီး ဒေသအများစု ကောင်းလျှင် endpoint ကောင်းသည်ဟု သတ်မှတ်သည်။",
+    "zh": "Cloudflare 的监控按设定的间隔发送健康检查请求。每个所选区域从三个数据中心检查，多数区域健康，端点就算健康。",
+    "de": "Die Monitore von Cloudflare senden Health-Check-Anfragen in festen Abständen. Jede gewählte Region prüft von drei Rechenzentren aus, und ein Endpunkt gilt als gesund, wenn die meisten Regionen gesund sind."
+   },
+   "src": "https://developers.cloudflare.com/load-balancing/understand-basics/health-details/"
+  },
+  {
+   "q": {
+    "en": "What does storage for a backup copy cost?",
+    "th": "พื้นที่เก็บสำเนาสำรองราคาเท่าไร",
+    "my": "အရန်မိတ္တူအတွက် သိုလှောင်မှု ဈေးဘယ်လောက်လဲ။",
+    "zh": "存放备份副本的存储要多少钱？",
+    "de": "Was kostet Speicher für eine Sicherungskopie?"
+   },
+   "a": {
+    "en": "Cloudflare R2 lists US$0.015 a GB a month, with the first 10 GB a month free. Sending data out of R2 through its APIs costs nothing.",
+    "th": "Cloudflare R2 ตั้งราคา US$0.015 ต่อ GB ต่อเดือน 10 GB แรกต่อเดือนฟรี การส่งข้อมูลออกจาก R2 ผ่าน API ไม่คิดเงิน",
+    "my": "Cloudflare R2 က တစ်လ GB လျှင် US$0.015 ဟု သတ်မှတ်ပြီး တစ်လလျှင် ပထမ 10 GB အခမဲ့ ဖြစ်သည်။ R2 မှ API များဖြင့် ဒေတာထုတ်ပို့ခြင်းအတွက် ကုန်ကျစရိတ် မရှိပါ။",
+    "zh": "Cloudflare R2 标价每 GB 每月 US$0.015，每月前 10 GB 免费。通过其 API 把数据传出 R2 不收费。",
+    "de": "Cloudflare R2 nennt US$0.015 pro GB und Monat, die ersten 10 GB im Monat sind frei. Daten über die APIs aus R2 zu senden kostet nichts."
+   },
+   "src": "https://developers.cloudflare.com/r2/pricing/"
+  }
+ ],
+ "related": [
+  "web-care",
+  "sec-hacked",
+  "web-move",
+  "php",
+  "site",
+  "web-found"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Cloudflare: Always Online, a saved copy when the host is down",
+    "th": "Cloudflare: Always Online สำเนาที่เก็บไว้เมื่อโฮสต์ล่ม",
+    "my": "Cloudflare: Always Online၊ ဟို့စ်ကျချိန်တွင် သိမ်းထားသော မိတ္တူ",
+    "zh": "Cloudflare：Always Online，主机宕机时的已保存副本",
+    "de": "Cloudflare: Always Online, eine gespeicherte Kopie bei Hostausfall"
+   },
+   "href": "https://developers.cloudflare.com/cache/how-to/always-online/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare: R2 storage prices",
+    "th": "Cloudflare: ราคาพื้นที่เก็บ R2",
+    "my": "Cloudflare: R2 သိုလှောင်မှု ဈေးနှုန်းများ",
+    "zh": "Cloudflare：R2 存储价格",
+    "de": "Cloudflare: Preise für R2-Speicher"
+   },
+   "href": "https://developers.cloudflare.com/r2/pricing/"
+  }
+ ]
+}

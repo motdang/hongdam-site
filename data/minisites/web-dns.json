@@ -1,0 +1,303 @@
+{
+ "id": "web-dns",
+ "tier": "modest",
+ "read": "2026-11-06",
+ "why": {
+  "en": "People move their domain's DNS to a free Cloudflare account, so the website opens with and without www and an old host can be cancelled.",
+  "th": "หลายคนย้าย DNS ของโดเมนไปบัญชี Cloudflare ฟรี ให้เว็บเปิดได้ทั้งมีและไม่มี www และยกเลิกโฮสต์เก่าได้",
+  "my": "လူများသည် ဒိုမိန်း DNS ကို Cloudflare အခမဲ့ အကောင့်သို့ ရွှေ့ကြသည်။ www ပါသည်ဖြစ်စေ မပါသည်ဖြစ်စေ ဝက်ဘ်ဆိုက် ပွင့်ပြီး ဟို့စ် အဟောင်းကို ရပ်စဲနိုင်သည်။",
+  "zh": "很多人把域名的 DNS 迁到免费的 Cloudflare 账户，网站带不带 www 都能打开，旧主机也可以停掉。",
+  "de": "Viele ziehen die DNS ihrer Domain zu einem kostenlosen Cloudflare-Konto um: Die Website öffnet mit und ohne www, und ein altes Hosting lässt sich kündigen."
+ },
+ "steps": [
+  {
+   "db": "key",
+   "t": {
+    "en": "You sign in to your domain's registrar (the company you pay for the domain) with us on a call.",
+    "th": "คุณเข้าสู่ระบบผู้รับจดโดเมน (บริษัทที่คุณจ่ายค่าโดเมน) พร้อมเราทางวิดีโอคอล",
+    "my": "သင်သည် ဒိုမိန်း မှတ်ပုံတင်သူ (ဒိုမိန်းအတွက် ငွေပေးသော ကုမ္ပဏီ) သို့ ကျွန်ုပ်တို့နှင့်အတူ ဖုန်းခေါ်ဆိုမှုဖြင့် ဝင်ရောက်သည်။",
+    "zh": "您和我们通话时登录域名注册商（您支付域名费用的公司）。",
+    "de": "Sie melden sich mit uns im Videoanruf bei Ihrem Registrar an (der Firma, der Sie die Domain bezahlen)."
+   },
+   "who": {
+    "en": "You and Hongdam",
+    "th": "คุณและหงส์ดำ",
+    "my": "သင်နှင့် ဟုန်ဒမ်",
+    "zh": "您和鸿丹",
+    "de": "Sie und Hongdam"
+   },
+   "time": {
+    "en": "First",
+    "th": "ขั้นแรก",
+    "my": "ပထမ",
+    "zh": "第一步",
+    "de": "Zuerst"
+   }
+  },
+  {
+   "db": "cloud",
+   "t": {
+    "en": "A free Cloudflare account in your name copies the settings, and our check compares every email record.",
+    "th": "บัญชี Cloudflare ฟรีในชื่อคุณคัดลอกการตั้งค่า และเราตรวจระเบียนอีเมลทุกตัว",
+    "my": "သင့်အမည်ဖြင့် Cloudflare အခမဲ့ အကောင့်က ဆက်တင်များကို ကူးယူပြီး ကျွန်ုပ်တို့က အီးမေးလ် မှတ်တမ်းတိုင်းကို နှိုင်းယှဉ်စစ်ဆေးသည်။",
+    "zh": "以您名义开设的免费 Cloudflare 账户复制设置，我们核对每一条邮件记录。",
+    "de": "Ein kostenloses Cloudflare-Konto auf Ihren Namen übernimmt die Einstellungen, und unsere Prüfung vergleicht jeden E-Mail-Eintrag."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "然后",
+    "de": "Dann"
+   }
+  },
+  {
+   "db": "link",
+   "t": {
+    "en": "The nameservers change at the registrar. Cloudflare says this can take up to 24 hours.",
+    "th": "เปลี่ยนเนมเซิร์ฟเวอร์ที่ผู้รับจดโดเมน Cloudflare บอกว่าอาจใช้เวลาถึง 24 ชั่วโมง",
+    "my": "မှတ်ပုံတင်သူထံတွင် nameserver များ ပြောင်းသည်။ ၂၄ နာရီအထိ ကြာနိုင်သည်ဟု Cloudflare ကဆိုသည်။",
+    "zh": "在注册商处更换域名服务器。Cloudflare 说最长可能需要 24 小时。",
+    "de": "Die Nameserver werden beim Registrar geändert. Laut Cloudflare kann das bis zu 24 Stunden dauern."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Then",
+    "th": "จากนั้น",
+    "my": "ထို့နောက်",
+    "zh": "然后",
+    "de": "Dann"
+   }
+  },
+  {
+   "db": "check",
+   "t": {
+    "en": "The website, with and without www, and the email records are checked again.",
+    "th": "ตรวจเว็บทั้งมีและไม่มี www และระเบียนอีเมลอีกครั้ง",
+    "my": "www ပါ၊ မပါ ဝက်ဘ်ဆိုက်နှင့် အီးမေးလ် မှတ်တမ်းများကို ထပ်မံ စစ်ဆေးသည်။",
+    "zh": "再次检查带和不带 www 的网站以及邮件记录。",
+    "de": "Website mit und ohne www sowie die E-Mail-Einträge werden noch einmal geprüft."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Last",
+    "th": "ขั้นสุดท้าย",
+    "my": "နောက်ဆုံး",
+    "zh": "最后",
+    "de": "Zum Schluss"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Cloudflare can scan for a domain's existing DNS records and add them, but its page says the scan is not guaranteed to find them all, and the records for the domain itself, www and email need a review.",
+    "th": "Cloudflare สแกนหาระเบียน DNS เดิมของโดเมนแล้วเพิ่มให้ได้ แต่หน้าของ Cloudflare บอกว่าการสแกนอาจหาไม่ครบ ต้องตรวจระเบียนของโดเมนเอง www และอีเมล",
+    "my": "Cloudflare သည် ဒိုမိန်း၏ ရှိပြီးသား DNS မှတ်တမ်းများကို ရှာဖွေထည့်ပေးနိုင်သည်။ သို့သော် အားလုံးကို တွေ့မည်ဟု အာမမခံကြောင်း၊ ဒိုမိန်းကိုယ်တိုင်၊ www နှင့် အီးမေးလ် မှတ်တမ်းများကို ပြန်စစ်ရမည်ဟု ၎င်း၏ စာမျက်နှာက ဆိုသည်။",
+    "zh": "Cloudflare 可以扫描域名现有的 DNS 记录并自动添加，但其页面说扫描不保证找全，需要核对根域名、www 和邮件记录。",
+    "de": "Cloudflare kann die vorhandenen DNS-Einträge einer Domain suchen und übernehmen. Laut seiner Seite findet der Scan nicht sicher alle; die Einträge für die Domain selbst, www und E-Mail sind zu prüfen."
+   },
+   "src": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare's page says to wait up to 24 hours while the registrar updates the nameservers.",
+    "th": "หน้าของ Cloudflare บอกให้รอได้ถึง 24 ชั่วโมงระหว่างที่ผู้รับจดโดเมนอัปเดตเนมเซิร์ฟเวอร์",
+    "my": "မှတ်ပုံတင်သူက nameserver များကို အပ်ဒိတ်လုပ်နေစဉ် ၂၄ နာရီအထိ စောင့်ရန် Cloudflare ၏ စာမျက်နှာက ဆိုသည်။",
+    "zh": "Cloudflare 的页面说，注册商更新域名服务器期间最长需等待 24 小时。",
+    "de": "Laut Cloudflare kann es bis zu 24 Stunden dauern, bis der Registrar die Nameserver aktualisiert."
+   },
+   "src": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare says DNSSEC is turned off at the registrar before the nameservers change, because changing them while it is on can make the domain unreachable.",
+    "th": "Cloudflare บอกให้ปิด DNSSEC ที่ผู้รับจดโดเมนก่อนเปลี่ยนเนมเซิร์ฟเวอร์ เพราะถ้าเปลี่ยนตอนเปิดอยู่ โดเมนอาจเข้าไม่ได้",
+    "my": "nameserver မပြောင်းမီ မှတ်ပုံတင်သူထံတွင် DNSSEC ကို ပိတ်ရမည်ဟု Cloudflare ကဆိုသည်။ ဖွင့်ထားစဉ် ပြောင်းလျှင် ဒိုမိန်းကို ဝင်မရနိုင်ပါ။",
+    "zh": "Cloudflare 说更换域名服务器前要先在注册商处关闭 DNSSEC，否则域名可能无法访问。",
+    "de": "Laut Cloudflare wird DNSSEC beim Registrar vor dem Nameserver-Wechsel ausgeschaltet; ein Wechsel bei eingeschaltetem DNSSEC kann die Domain unerreichbar machen."
+   },
+   "src": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  },
+  {
+   "t": {
+    "en": "On every Cloudflare plan, a CNAME record on the domain itself (yourshop.com, without www) is flattened by default, so it works where many other DNS hosts refuse it.",
+    "th": "ทุกแพ็กเกจของ Cloudflare ระเบียน CNAME บนโดเมนเอง (yourshop.com ไม่มี www) ถูก flatten โดยค่าเริ่มต้น จึงใช้ได้ ในขณะที่ผู้ให้บริการ DNS อื่นหลายรายไม่รับ",
+    "my": "Cloudflare အစီအစဉ်တိုင်းတွင် ဒိုမိန်းကိုယ်တိုင် (www မပါသော yourshop.com) ပေါ်ရှိ CNAME မှတ်တမ်းကို မူလအတိုင်း flatten လုပ်ပေးသဖြင့် အခြား DNS ဝန်ဆောင်မှုများ လက်မခံသည့်နေရာတွင်ပင် အလုပ်လုပ်သည်။",
+    "zh": "在所有 Cloudflare 套餐上，根域名（不带 www 的 yourshop.com）的 CNAME 记录默认会被展平，因此可用，而很多其他 DNS 服务商不接受。",
+    "de": "Auf jedem Cloudflare-Tarif wird ein CNAME-Eintrag auf der Domain selbst (yourshop.com ohne www) standardmässig aufgelöst; er funktioniert dort, wo viele andere DNS-Anbieter ihn ablehnen."
+   },
+   "src": "https://developers.cloudflare.com/dns/cname-flattening/set-up-cname-flattening/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Email Routing, on the Free plan, sends incoming mail for addresses on the domain to an inbox you already use. It handles incoming mail only.",
+    "th": "Cloudflare Email Routing ในแพ็กเกจฟรี ส่งอีเมลขาเข้าของที่อยู่บนโดเมนไปยังกล่องที่คุณใช้อยู่ ใช้ได้กับอีเมลขาเข้าเท่านั้น",
+    "my": "Free အစီအစဉ်ရှိ Cloudflare Email Routing သည် ဒိုမိန်းပေါ်ရှိ လိပ်စာများသို့ ဝင်လာသော မေးလ်ကို သင်သုံးနေသော inbox သို့ ပို့ပေးသည်။ ဝင်လာသော မေးလ်အတွက်သာ ဖြစ်သည်။",
+    "zh": "免费套餐的 Cloudflare Email Routing 会把发到该域名地址的来信转到您常用的邮箱。它只处理来信。",
+    "de": "Cloudflare Email Routing im kostenlosen Tarif leitet eingehende Mail an Adressen der Domain in ein Postfach weiter, das Sie schon nutzen. Es behandelt nur eingehende Mail."
+   },
+   "src": "https://developers.cloudflare.com/email-routing/"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Cloudflare Free plan, with free SSL certificates",
+    "th": "Cloudflare แพ็กเกจฟรี พร้อมใบรับรอง SSL ฟรี",
+    "my": "Cloudflare Free အစီအစဉ်၊ SSL လက်မှတ် အခမဲ့",
+    "zh": "Cloudflare 免费套餐，含免费 SSL 证书",
+    "de": "Cloudflare Free-Tarif, mit kostenlosen SSL-Zertifikaten"
+   },
+   "p": {
+    "en": "Free",
+    "th": "ฟรี",
+    "my": "အခမဲ့",
+    "zh": "免费",
+    "de": "Kostenlos"
+   },
+   "src": "https://www.cloudflare.com/plans/free/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare Registrar, if the domain itself moves too",
+    "th": "Cloudflare Registrar ถ้าย้ายตัวโดเมนด้วย",
+    "my": "ဒိုမိန်းကိုပါ ရွှေ့လျှင် Cloudflare Registrar",
+    "zh": "Cloudflare Registrar（如果域名本身也转入）",
+    "de": "Cloudflare Registrar, falls auch die Domain selbst umzieht"
+   },
+   "p": {
+    "en": "The registry's price, no markup",
+    "th": "ราคาของ registry ไม่บวกเพิ่ม",
+    "my": "registry ၏ ဈေးနှုန်း၊ အမြတ်မတင်",
+    "zh": "注册局价格，不加价",
+    "de": "Preis der Registry, ohne Aufschlag"
+   },
+   "src": "https://developers.cloudflare.com/registrar/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "Will my email stop working?",
+    "th": "อีเมลของฉันจะใช้ไม่ได้ไหม",
+    "my": "ကျွန်ုပ်၏ အီးမေးလ် ရပ်သွားမလား",
+    "zh": "我的邮箱会停用吗？",
+    "de": "Funktioniert meine E-Mail danach noch?"
+   },
+   "a": {
+    "en": "Cloudflare says its scan may miss records and that mail values depend on your email provider. Our check compares every email record on the old and new settings before the switch, and again after.",
+    "th": "Cloudflare บอกว่าการสแกนอาจตกหล่น และค่าของอีเมลขึ้นกับผู้ให้บริการอีเมลของคุณ เราตรวจระเบียนอีเมลทุกตัวทั้งที่เก่าและที่ใหม่ก่อนสลับ และตรวจอีกครั้งหลังสลับ",
+    "my": "၎င်း၏ scan သည် မှတ်တမ်းအချို့ လွတ်သွားနိုင်ပြီး မေးလ်တန်ဖိုးများသည် သင့် အီးမေးလ် ဝန်ဆောင်မှုပေါ် မူတည်သည်ဟု Cloudflare ကဆိုသည်။ ကျွန်ုပ်တို့၏ စစ်ဆေးမှုသည် မပြောင်းမီနှင့် ပြောင်းပြီးနောက် အဟောင်းနှင့် အသစ်ရှိ အီးမေးလ် မှတ်တမ်းတိုင်းကို နှိုင်းယှဉ်သည်။",
+    "zh": "Cloudflare 说扫描可能遗漏记录，邮件记录的值取决于您的邮件服务商。我们在切换前后都会对比新旧设置中的每一条邮件记录。",
+    "de": "Laut Cloudflare kann der Scan Einträge übersehen, und die Mail-Werte hängen von Ihrem E-Mail-Anbieter ab. Unsere Prüfung vergleicht jeden E-Mail-Eintrag der alten und neuen Einstellungen vor dem Wechsel und noch einmal danach."
+   },
+   "src": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  },
+  {
+   "q": {
+    "en": "How long does the switch take?",
+    "th": "สลับใช้เวลานานแค่ไหน",
+    "my": "ပြောင်းရန် ဘယ်လောက်ကြာသလဲ",
+    "zh": "切换需要多长时间？",
+    "de": "Wie lange dauert der Wechsel?"
+   },
+   "a": {
+    "en": "Cloudflare's page says up to 24 hours while the registrar updates the nameservers.",
+    "th": "หน้าของ Cloudflare บอกว่าถึง 24 ชั่วโมงระหว่างที่ผู้รับจดโดเมนอัปเดตเนมเซิร์ฟเวอร์",
+    "my": "မှတ်ပုံတင်သူက nameserver များ အပ်ဒိတ်လုပ်နေစဉ် ၂၄ နာရီအထိဟု Cloudflare ၏ စာမျက်နှာက ဆိုသည်။",
+    "zh": "Cloudflare 的页面说，注册商更新域名服务器最长需要 24 小时。",
+    "de": "Laut Cloudflare bis zu 24 Stunden, während der Registrar die Nameserver aktualisiert."
+   },
+   "src": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  },
+  {
+   "q": {
+    "en": "Does the domain itself move?",
+    "th": "ตัวโดเมนย้ายด้วยไหม",
+    "my": "ဒိုမိန်းကိုယ်တိုင် ရွှေ့သလား",
+    "zh": "域名本身也会转走吗？",
+    "de": "Zieht die Domain selbst auch um?"
+   },
+   "a": {
+    "en": "No. The domain stays with your registrar; only its nameservers change there. Cloudflare Registrar can take the domain too, at the registry's price.",
+    "th": "ไม่ โดเมนยังอยู่กับผู้รับจดโดเมนเดิม เปลี่ยนแค่เนมเซิร์ฟเวอร์ ถ้าต้องการ Cloudflare Registrar รับโดเมนได้ในราคาของ registry",
+    "my": "မရွှေ့ပါ။ ဒိုမိန်းသည် သင့် မှတ်ပုံတင်သူထံတွင် ဆက်ရှိပြီး nameserver များသာ ပြောင်းသည်။ Cloudflare Registrar က registry ဈေးနှုန်းဖြင့် ဒိုမိန်းကိုပါ လက်ခံနိုင်သည်။",
+    "zh": "不会。域名仍在原注册商处，只在那里更换域名服务器。如需要，Cloudflare Registrar 也可以按注册局价格接管域名。",
+    "de": "Nein. Die Domain bleibt bei Ihrem Registrar; dort ändern sich nur die Nameserver. Cloudflare Registrar kann auch die Domain übernehmen, zum Preis der Registry."
+   },
+   "src": "https://developers.cloudflare.com/registrar/"
+  },
+  {
+   "q": {
+    "en": "Does Cloudflare charge for this?",
+    "th": "Cloudflare เก็บเงินไหม",
+    "my": "Cloudflare က ငွေကောက်သလား",
+    "zh": "Cloudflare 收费吗？",
+    "de": "Kostet das bei Cloudflare etwas?"
+   },
+   "a": {
+    "en": "The Free plan has no charge and includes free SSL certificates.",
+    "th": "แพ็กเกจฟรีไม่เสียเงิน และมีใบรับรอง SSL ฟรี",
+    "my": "Free အစီအစဉ်သည် အခမဲ့ဖြစ်ပြီး SSL လက်မှတ် အခမဲ့ ပါဝင်သည်။",
+    "zh": "免费套餐不收费，并包含免费 SSL 证书。",
+    "de": "Der Free-Tarif kostet nichts und enthält kostenlose SSL-Zertifikate."
+   },
+   "src": "https://www.cloudflare.com/plans/free/"
+  }
+ ],
+ "related": [
+  "web-mail",
+  "web-move",
+  "site",
+  "web-care",
+  "sec-mail",
+  "web-found"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Cloudflare: change your nameservers",
+    "th": "Cloudflare: เปลี่ยนเนมเซิร์ฟเวอร์",
+    "my": "Cloudflare: nameserver ပြောင်းခြင်း",
+    "zh": "Cloudflare：更换域名服务器",
+    "de": "Cloudflare: Nameserver ändern"
+   },
+   "href": "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/"
+  },
+  {
+   "t": {
+    "en": "Cloudflare: Email Routing",
+    "th": "Cloudflare: ส่งต่ออีเมล (Email Routing)",
+    "my": "Cloudflare: အီးမေးလ် လမ်းကြောင်းပေးခြင်း (Email Routing)",
+    "zh": "Cloudflare：邮件路由（Email Routing）",
+    "de": "Cloudflare: E-Mail-Weiterleitung (Email Routing)"
+   },
+   "href": "https://developers.cloudflare.com/email-routing/"
+  }
+ ],
+ "glyphs": [
+  "cloud",
+  "key",
+  "mailbox"
+ ]
+}

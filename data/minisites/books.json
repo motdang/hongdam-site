@@ -1,0 +1,293 @@
+{
+ "id": "books",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People running a business in Thailand want each month's income and costs recorded in Thai for the accountant and in English for themselves.",
+  "th": "คนที่ทำธุรกิจในไทยอยากให้รายรับรายจ่ายรายเดือนบันทึกเป็นภาษาไทยสำหรับนักบัญชี และเป็นภาษาอังกฤษสำหรับตัวเอง",
+  "my": "ထိုင်းနိုင်ငံတွင် လုပ်ငန်းလုပ်ကိုင်သူများက လစဉ်ဝင်ငွေနှင့် ကုန်ကျစရိတ်ကို စာရင်းကိုင်အတွက် ထိုင်းဘာသာဖြင့်ရော မိမိအတွက် အင်္ဂလိပ်ဘာသာဖြင့်ပါ မှတ်တမ်းတင်စေလိုကြသည်။",
+  "zh": "在泰国经营生意的人，希望每月收支用泰文记一份给会计，用英文记一份给自己看。",
+  "de": "Wer in Thailand ein Geschäft führt, möchte die monatlichen Einnahmen und Ausgaben auf Thai für den Buchhalter und auf Englisch für sich selbst festgehalten haben."
+ },
+ "glyphs": [
+  "abacus",
+  "pencil",
+  "calendar"
+ ],
+ "steps": [
+  {
+   "db": "send",
+   "t": {
+    "en": "You send the month's receipts, invoices and bank lines.",
+    "th": "คุณส่งใบเสร็จ ใบแจ้งหนี้ และรายการเดินบัญชีของเดือน",
+    "my": "သင်က လအတွက် ပြေစာများ၊ ငွေတောင်းခံလွှာများနှင့် ဘဏ်စာရင်းမှတ်တမ်းများ ပို့သည်။",
+    "zh": "您把当月的收据、发票和银行流水发来。",
+    "de": "Sie schicken die Belege, Rechnungen und Bankzeilen des Monats."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "Each month",
+    "th": "ทุกเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Jeden Monat"
+   }
+  },
+  {
+   "db": "pencil",
+   "t": {
+    "en": "We record the month's income and costs in Thai and English, up to 100 entries.",
+    "th": "บันทึกรายรับรายจ่ายของเดือนเป็นภาษาไทยและอังกฤษ ไม่เกิน 100 รายการ",
+    "my": "လအတွက် ဝင်ငွေနှင့် ကုန်ကျစရိတ်ကို ထိုင်းနှင့် အင်္ဂလိပ်ဘာသာဖြင့် စာရင်းသွင်းသည်၊ စာရင်း 100 ခုအထိ။",
+    "zh": "用泰文和英文记录当月收支，最多 100 笔。",
+    "de": "Wir erfassen Einnahmen und Ausgaben des Monats auf Thai und Englisch, bis zu 100 Buchungen."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "Each month",
+    "th": "ทุกเดือน",
+    "my": "လစဉ်",
+    "zh": "每月",
+    "de": "Jeden Monat"
+   }
+  },
+  {
+   "db": "page",
+   "t": {
+    "en": "The books are ready for your accountant.",
+    "th": "บัญชีพร้อมส่งให้นักบัญชีของคุณ",
+    "my": "စာရင်းများကို သင့်စာရင်းကိုင်ထံ ပို့ရန် အဆင်သင့်ဖြစ်သည်။",
+    "zh": "账册备好，交给您的会计。",
+    "de": "Die Bücher liegen für Ihren Buchhalter bereit."
+   },
+   "who": {
+    "en": "Hongdam and your accountant",
+    "th": "หงส์ดำและนักบัญชีของคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင့်စာရင်းကိုင်",
+    "zh": "鸿丹和您的会计",
+    "de": "Hongdam und Ihr Buchhalter"
+   },
+   "time": {
+    "en": "After the month ends",
+    "th": "หลังจบเดือน",
+    "my": "လကုန်ပြီးနောက်",
+    "zh": "每月结束后",
+    "de": "Nach Monatsende"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "A business registers for VAT within 30 days after its turnover passes ฿1.8 million.",
+    "th": "ธุรกิจต้องจดภาษีมูลค่าเพิ่มภายใน 30 วันหลังรายได้เกิน ฿1.8 ล้าน",
+    "my": "ဝင်ငွေ ฿1.8 သန်း ကျော်ပြီး ရက် 30 အတွင်း လုပ်ငန်းသည် VAT မှတ်ပုံတင်ရသည်။",
+    "zh": "营业额超过 ฿180 万后 30 天内须登记增值税。",
+    "de": "Ein Unternehmen meldet sich binnen 30 Tagen zur Mehrwertsteuer an, wenn sein Umsatz ฿1.8 Millionen übersteigt."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  },
+  {
+   "t": {
+    "en": "A Thai VAT registrant's tax invoice shows the words \"Tax invoice\", the seller's name, address and tax ID, the buyer's name and address, a description with value and quantity, the VAT amount and the date.",
+    "th": "ใบกำกับภาษีของผู้ประกอบการที่จดภาษีมูลค่าเพิ่มในไทยมีคำว่า \"ใบกำกับภาษี\" ชื่อ ที่อยู่ และเลขประจำตัวผู้เสียภาษีของผู้ขาย ชื่อและที่อยู่ของผู้ซื้อ รายการพร้อมมูลค่าและจำนวน ภาษีมูลค่าเพิ่ม และวันที่ออก",
+    "my": "VAT မှတ်ပုံတင်ထားသော ထိုင်းလုပ်ငန်းတစ်ခု၏ အခွန်ငွေတောင်းခံလွှာတွင် \"Tax invoice\" စာလုံး၊ ရောင်းသူ၏ အမည်၊ လိပ်စာ၊ အခွန်အိုင်ဒီ၊ ဝယ်သူ၏ အမည်၊ လိပ်စာ၊ တန်ဖိုးနှင့် အရေအတွက်ပါသော ဖော်ပြချက်၊ VAT ပမာဏနှင့် ရက်စွဲတို့ ပါသည်။",
+    "zh": "泰国增值税登记商户开具的税务发票载明“Tax invoice”字样、卖方的名称、地址和税号、买方的名称和地址、含金额和数量的品名、增值税额以及日期。",
+    "de": "Die Steuerrechnung eines in Thailand mehrwertsteuerpflichtigen Unternehmens trägt die Worte «Tax invoice», Name, Adresse und Steuernummer des Verkäufers, Name und Adresse des Käufers, eine Beschreibung mit Wert und Menge, den Mehrwertsteuerbetrag und das Datum."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  },
+  {
+   "t": {
+    "en": "A person whose income is not only from employment files a PND 90 return from 1 January to 31 March after the tax year. The Revenue Department's guide for tax year 2024 gives 31 March 2025, and 8 April 2025 for filing online.",
+    "th": "ผู้มีเงินได้ที่ไม่ได้มาจากการจ้างงานอย่างเดียวยื่น ภ.ง.ด.90 ระหว่าง 1 มกราคมถึง 31 มีนาคมของปีถัดจากปีภาษี คู่มือของกรมสรรพากรสำหรับปีภาษี 2567 ระบุ 31 มีนาคม 2568 และ 8 เมษายน 2568 สำหรับการยื่นออนไลน์",
+    "my": "အလုပ်ခန့်ထားမှုမှ ရသော ဝင်ငွေတစ်ခုတည်း မဟုတ်သူသည် အခွန်နှစ်ပြီးနောက် ဇန်နဝါရီ 1 မှ မတ်လ 31 အတွင်း ภ.ง.ด.90 (PND 90) ပြန်တမ်းတင်သည်။ ထိုင်းအခွန်ဦးစီးဌာန၏ 2024 အခွန်နှစ်လမ်းညွှန်တွင် 2025 မတ်လ 31 နှင့် အွန်လိုင်းတင်ပါက 2025 ဧပြီလ 8 ဟု ဖော်ပြသည်။",
+    "zh": "收入不只来自受雇的人，在纳税年度结束后的 1 月 1 日至 3 月 31 日提交 PND 90 申报表。税务局 2024 纳税年度的指南写明截止日为 2025 年 3 月 31 日，网上申报为 2025 年 4 月 8 日。",
+    "de": "Wer Einkommen nicht nur aus Anstellung hat, reicht nach dem Steuerjahr vom 1. Januar bis 31. März die Erklärung PND 90 ein. Der Leitfaden der Steuerbehörde für das Steuerjahr 2024 nennt den 31. März 2025, online den 8. April 2025."
+   },
+   "src": "https://www.rd.go.th/fileadmin/download/english_form/2024/GUIDE_90_67_Complete.pdf"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "VAT",
+    "th": "ภาษีมูลค่าเพิ่ม",
+    "my": "VAT",
+    "zh": "增值税",
+    "de": "MwSt."
+   },
+   "p": {
+    "en": "7%, until 30 September 2027",
+    "th": "7% ถึง 30 กันยายน 2570",
+    "my": "7%၊ 2027 စက်တင်ဘာ 30 အထိ",
+    "zh": "7%，至 2027 年 9 月 30 日",
+    "de": "7 %, bis 30. September 2027"
+   },
+   "src": "https://taxsummaries.pwc.com/thailand/corporate/other-taxes"
+  },
+  {
+   "t": {
+    "en": "A Fastwork accountant's monthly packages: basic, standard (adds payroll and social security), premium (adds advice)",
+    "th": "แพ็กเกจรายเดือนของนักบัญชีบน Fastwork: พื้นฐาน มาตรฐาน (เพิ่มเงินเดือนและประกันสังคม) พรีเมียม (เพิ่มคำปรึกษา)",
+    "my": "Fastwork စာရင်းကိုင်တစ်ဦး၏ လစဉ်ပက်ကေ့ချ်များ - အခြေခံ၊ စံ (လစာနှင့် လူမှုဖူလုံရေး ထပ်ပါ)၊ ပရီမီယံ (အကြံဉာဏ် ထပ်ပါ)",
+    "zh": "Fastwork 上一位会计的月度套餐：基础、标准（含工资和社保）、高级（含咨询）",
+    "de": "Monatspakete eines Buchhalters auf Fastwork: Basis, Standard (mit Lohn und Sozialversicherung), Premium (mit Beratung)"
+   },
+   "p": {
+    "en": "฿3,500–4,500 · ฿5,500–7,500 · ฿9,000–15,000 a month",
+    "th": "฿3,500–4,500 · ฿5,500–7,500 · ฿9,000–15,000 ต่อเดือน",
+    "my": "တစ်လလျှင် ฿3,500–4,500 · ฿5,500–7,500 · ฿9,000–15,000",
+    "zh": "每月 ฿3,500–4,500 · ฿5,500–7,500 · ฿9,000–15,000",
+    "de": "฿3,500–4,500 · ฿5,500–7,500 · ฿9,000–15,000 pro Monat"
+   },
+   "src": "https://fastwork.co/user/thanawonp/accounting-and-finance-97479026"
+  },
+  {
+   "t": {
+    "en": "A Fastwork freelancer: books, tax forms and year-end closing for a small company, up to 150 transactions a month",
+    "th": "ฟรีแลนซ์ Fastwork: ทำบัญชี แบบภาษี และปิดงบ สำหรับบริษัทขนาดเล็ก ไม่เกิน 150 รายการต่อเดือน",
+    "my": "Fastwork ဖရီးလန်စာတစ်ဦး - ကုမ္ပဏီသေးသေးလေးအတွက် စာရင်းကိုင်၊ အခွန်ပုံစံများနှင့် နှစ်ကုန်စာရင်းပိတ်၊ တစ်လလျှင် 150 ကြောင်းအထိ",
+    "zh": "Fastwork 自由职业者：小公司记账、报税表格和年终结账，每月最多 150 笔",
+    "de": "Ein Fastwork-Freelancer: Buchhaltung, Steuerformulare und Jahresabschluss für eine kleine Firma, bis zu 150 Buchungen im Monat"
+   },
+   "p": {
+    "en": "฿3,000 for a 30-day job",
+    "th": "฿3,000 ต่องาน 30 วัน",
+    "my": "ရက် 30 အလုပ်တစ်ခုလျှင် ฿3,000",
+    "zh": "30 天一单 ฿3,000",
+    "de": "฿3,000 für einen 30-Tage-Auftrag"
+   },
+   "src": "https://fastwork.co/user/chupxss/accounting-and-finance-85871307"
+  },
+  {
+   "t": {
+    "en": "A company-setup agency for foreign owners: monthly accounting and tax reporting",
+    "th": "บริษัทที่ช่วยจัดตั้งธุรกิจให้ชาวต่างชาติ: ทำบัญชีและรายงานภาษีรายเดือน",
+    "my": "နိုင်ငံခြားသားပိုင်ရှင်များအတွက် ကုမ္ပဏီဖွဲ့စည်းပေးသော အေဂျင်စီ - လစဉ်စာရင်းကိုင်နှင့် အခွန်အစီရင်ခံခြင်း",
+    "zh": "为外国股东设立公司的代理机构：每月记账和税务申报",
+    "de": "Eine Agentur für die Firmengründung ausländischer Inhaber: monatliche Buchhaltung und Steuermeldungen"
+   },
+   "p": {
+    "en": "฿8,000–15,000 a month",
+    "th": "฿8,000–15,000 ต่อเดือน",
+    "my": "တစ်လလျှင် ฿8,000–15,000",
+    "zh": "每月 ฿8,000–15,000",
+    "de": "฿8,000–15,000 pro Monat"
+   },
+   "src": "https://unionspace.co.th/doing-business-living-bangkok/average-cost-of-running-a-business-in-thailand/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does a monthly accountant cost in Thailand?",
+    "th": "จ้างนักบัญชีรายเดือนในไทยราคาเท่าไร",
+    "my": "ထိုင်းနိုင်ငံတွင် လစဉ်စာရင်းကိုင်ငှားရန် ကုန်ကျစရိတ် ဘယ်လောက်လဲ",
+    "zh": "在泰国请会计做月度记账要多少钱？",
+    "de": "Was kostet ein monatlicher Buchhalter in Thailand?"
+   },
+   "a": {
+    "en": "One accountant on Fastwork lists a basic package at ฿3,500–4,500 a month, a standard package at ฿5,500–7,500 that adds payroll and social security, and a premium package at ฿9,000–15,000 that adds advice and analysis.",
+    "th": "นักบัญชีรายหนึ่งบน Fastwork ระบุแพ็กเกจพื้นฐาน ฿3,500–4,500 ต่อเดือน แพ็กเกจมาตรฐาน ฿5,500–7,500 ที่เพิ่มเงินเดือนและประกันสังคม และแพ็กเกจพรีเมียม ฿9,000–15,000 ที่เพิ่มคำปรึกษาและการวิเคราะห์",
+    "my": "Fastwork ပေါ်ရှိ စာရင်းကိုင်တစ်ဦးက အခြေခံပက်ကေ့ချ်ကို တစ်လလျှင် ฿3,500–4,500၊ လစာနှင့် လူမှုဖူလုံရေး ထပ်ပါသော စံပက်ကေ့ချ်ကို ฿5,500–7,500၊ အကြံဉာဏ်နှင့် ခွဲခြမ်းစိတ်ဖြာမှု ထပ်ပါသော ပရီမီယံပက်ကေ့ချ်ကို ฿9,000–15,000 ဟု ဖော်ပြသည်။",
+    "zh": "Fastwork 上一位会计列出：基础套餐每月 ฿3,500–4,500；标准套餐每月 ฿5,500–7,500，含工资和社保；高级套餐每月 ฿9,000–15,000，含咨询和分析。",
+    "de": "Ein Buchhalter auf Fastwork nennt ein Basispaket für ฿3,500–4,500 im Monat, ein Standardpaket für ฿5,500–7,500 mit Lohn und Sozialversicherung und ein Premiumpaket für ฿9,000–15,000 mit Beratung und Analyse."
+   },
+   "src": "https://fastwork.co/user/thanawonp/accounting-and-finance-97479026"
+  },
+  {
+   "q": {
+    "en": "When does a business register for VAT in Thailand?",
+    "th": "ธุรกิจต้องจดภาษีมูลค่าเพิ่มในไทยเมื่อไร",
+    "my": "ထိုင်းနိုင်ငံတွင် လုပ်ငန်းတစ်ခုသည် VAT ကို ဘယ်အချိန် မှတ်ပုံတင်ရသနည်း",
+    "zh": "在泰国，企业什么时候要登记增值税？",
+    "de": "Wann meldet sich ein Unternehmen in Thailand zur Mehrwertsteuer an?"
+   },
+   "a": {
+    "en": "Within 30 days after its turnover passes ฿1.8 million. The rate is 7%, and a registered business issues a tax invoice every time a transaction is made.",
+    "th": "ภายใน 30 วันหลังรายได้เกิน ฿1.8 ล้าน อัตราภาษี 7% และผู้ประกอบการที่จดทะเบียนออกใบกำกับภาษีทุกครั้งที่มีรายการซื้อขาย",
+    "my": "ဝင်ငွေ ฿1.8 သန်း ကျော်ပြီး ရက် 30 အတွင်း ဖြစ်သည်။ နှုန်းထားမှာ 7% ဖြစ်ပြီး မှတ်ပုံတင်ထားသော လုပ်ငန်းက ကိစ္စတစ်ခုလုပ်သည့်အခါတိုင်း အခွန်ငွေတောင်းခံလွှာ ထုတ်ပေးသည်။",
+    "zh": "营业额超过 ฿180 万后 30 天内。税率为 7%，登记的企业每发生一笔交易就开具一张税务发票。",
+    "de": "Binnen 30 Tagen, nachdem sein Umsatz ฿1.8 Millionen übersteigt. Der Satz beträgt 7 %, und ein registriertes Unternehmen stellt bei jedem Geschäftsvorfall eine Steuerrechnung aus."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  },
+  {
+   "q": {
+    "en": "Does a freelancer file a tax return in Thailand?",
+    "th": "ฟรีแลนซ์ต้องยื่นแบบภาษีในไทยไหม",
+    "my": "ဖရီးလန်စာတစ်ဦးသည် ထိုင်းနိုင်ငံတွင် အခွန်ပြန်တမ်း တင်ရသလား",
+    "zh": "自由职业者在泰国要报税吗？",
+    "de": "Reicht ein Freelancer in Thailand eine Steuererklärung ein?"
+   },
+   "a": {
+    "en": "A person whose income is not only from employment files a PND 90 return from 1 January to 31 March after the tax year. Filing online adds eight days to the deadline.",
+    "th": "ผู้มีเงินได้ที่ไม่ได้มาจากการจ้างงานอย่างเดียวยื่น ภ.ง.ด.90 ระหว่าง 1 มกราคมถึง 31 มีนาคมของปีถัดจากปีภาษี การยื่นออนไลน์ขยายเวลาออกไปแปดวัน",
+    "my": "အလုပ်ခန့်ထားမှုမှ ရသော ဝင်ငွေတစ်ခုတည်း မဟုတ်သူသည် အခွန်နှစ်ပြီးနောက် ဇန်နဝါရီ 1 မှ မတ်လ 31 အတွင်း PND 90 ပြန်တမ်းတင်သည်။ အွန်လိုင်းတင်ပါက နောက်ဆုံးရက်ကို ရှစ်ရက် တိုးပေးသည်။",
+    "zh": "收入不只来自受雇的人，在纳税年度结束后的 1 月 1 日至 3 月 31 日提交 PND 90 申报表。网上申报的截止日顺延八天。",
+    "de": "Wer Einkommen nicht nur aus Anstellung hat, reicht nach dem Steuerjahr vom 1. Januar bis 31. März die Erklärung PND 90 ein. Bei der Online-Einreichung verlängert sich die Frist um acht Tage."
+   },
+   "src": "https://www.rd.go.th/fileadmin/download/english_form/2024/GUIDE_90_67_Complete.pdf"
+  },
+  {
+   "q": {
+    "en": "What does a Thai tax invoice show?",
+    "th": "ใบกำกับภาษีไทยมีรายการอะไรบ้าง",
+    "my": "ထိုင်းအခွန်ငွေတောင်းခံလွှာတွင် ဘာတွေ ပါသနည်း",
+    "zh": "泰国税务发票上有哪些内容？",
+    "de": "Was steht auf einer thailändischen Steuerrechnung?"
+   },
+   "a": {
+    "en": "The words \"Tax invoice\", the seller's name, address and tax ID, the buyer's name and address, a description with value and quantity, the VAT amount and the date.",
+    "th": "คำว่า \"ใบกำกับภาษี\" ชื่อ ที่อยู่ และเลขประจำตัวผู้เสียภาษีของผู้ขาย ชื่อและที่อยู่ของผู้ซื้อ รายการพร้อมมูลค่าและจำนวน ภาษีมูลค่าเพิ่ม และวันที่ออก",
+    "my": "\"Tax invoice\" စာလုံး၊ ရောင်းသူ၏ အမည်၊ လိပ်စာ၊ အခွန်အိုင်ဒီ၊ ဝယ်သူ၏ အမည်၊ လိပ်စာ၊ တန်ဖိုးနှင့် အရေအတွက်ပါသော ဖော်ပြချက်၊ VAT ပမာဏနှင့် ရက်စွဲတို့ ဖြစ်သည်။",
+    "zh": "“Tax invoice”字样、卖方的名称、地址和税号、买方的名称和地址、含金额和数量的品名、增值税额以及日期。",
+    "de": "Die Worte «Tax invoice», Name, Adresse und Steuernummer des Verkäufers, Name und Adresse des Käufers, eine Beschreibung mit Wert und Menge, der Mehrwertsteuerbetrag und das Datum."
+   },
+   "src": "https://www.rd.go.th/english/6043.html"
+  }
+ ],
+ "related": [
+  "staff-papers",
+  "payouts",
+  "invoice",
+  "kh-books",
+  "typing",
+  "assistant"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Revenue Department: VAT in Thailand",
+    "th": "กรมสรรพากร: ภาษีมูลค่าเพิ่มในไทย",
+    "my": "ထိုင်းအခွန်ဦးစီးဌာန - ထိုင်းနိုင်ငံ VAT",
+    "zh": "泰国税务局：增值税",
+    "de": "Steuerbehörde Thailands: Mehrwertsteuer"
+   },
+   "href": "https://www.rd.go.th/english/6043.html"
+  },
+  {
+   "t": {
+    "en": "Revenue Department: guide to the PND 90 personal income tax return",
+    "th": "กรมสรรพากร: คู่มือแบบ ภ.ง.ด.90",
+    "my": "ထိုင်းအခွန်ဦးစီးဌာန - PND 90 ပုဂ္ဂိုလ်ရေးဝင်ငွေခွန်ပြန်တမ်း လမ်းညွှန်",
+    "zh": "泰国税务局：PND 90 个人所得税申报指南",
+    "de": "Steuerbehörde Thailands: Leitfaden zur Einkommensteuererklärung PND 90"
+   },
+   "href": "https://www.rd.go.th/fileadmin/download/english_form/2024/GUIDE_90_67_Complete.pdf"
+  }
+ ]
+}

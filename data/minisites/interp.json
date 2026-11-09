@@ -1,0 +1,265 @@
+{
+ "id": "interp",
+ "tier": "modest",
+ "read": "2026-10-24",
+ "why": {
+  "en": "People bring an interpreter when the officer, the doctor or the bank speaks a language they do not.",
+  "th": "คนพาล่ามไปเมื่อเจ้าหน้าที่ แพทย์ หรือธนาคารใช้ภาษาที่ตนไม่รู้",
+  "my": "အရာရှိ၊ ဆရာဝန် သို့မဟုတ် ဘဏ်က မိမိမသိသော ဘာသာစကားကို သုံးသောအခါ လူတို့က စကားပြန်ခေါ်သွားကြသည်။",
+  "zh": "官员、医生或银行说的语言自己不会时，人们会带上口译。",
+  "de": "Man nimmt einen Dolmetscher mit, wenn die Beamtin, der Arzt oder die Bank eine Sprache spricht, die man selbst nicht spricht."
+ },
+ "n": {
+  "de": "Dolmetscher"
+ },
+ "l": {
+  "de": "Per Telefon, oder mit Ihnen bei der Einwanderungsbehörde, im Krankenhaus oder auf der Bank."
+ },
+ "steps": [
+  {
+   "db": "telephone",
+   "t": {
+    "en": "You choose a call by phone or video, or an interpreter who goes with you in Chiang Rai or Chiang Mai.",
+    "th": "คุณเลือกล่ามทางโทรศัพท์หรือวิดีโอ หรือล่ามที่ไปด้วยในเชียงรายหรือเชียงใหม่",
+    "my": "ဖုန်း သို့မဟုတ် ဗီဒီယိုစကားပြန်ကို ရွေးသည်၊ သို့မဟုတ် ချင်းရိုင်/ချင်းမိုင်တွင် အတူလိုက်မည့် စကားပြန်ကို ရွေးသည်။",
+    "zh": "您选择电话或视频口译，或在清莱、清迈陪同您的口译。",
+    "de": "Sie wählen Telefon oder Video, oder eine Person, die in Chiang Rai oder Chiang Mai mitkommt."
+   },
+   "who": {
+    "en": "You",
+    "th": "คุณ",
+    "my": "သင်",
+    "zh": "您",
+    "de": "Sie"
+   },
+   "time": {
+    "en": "At the order",
+    "th": "ตอนสั่งซื้อ",
+    "my": "မှာယူသည့်အချိန်",
+    "zh": "下单时",
+    "de": "Bei der Bestellung"
+   }
+  },
+  {
+   "db": "mic",
+   "t": {
+    "en": "The interpreter speaks between you and the other side, in Thai, English, Burmese or Chinese.",
+    "th": "ล่ามแปลระหว่างคุณกับอีกฝ่าย เป็นภาษาไทย อังกฤษ พม่า หรือจีน",
+    "my": "စကားပြန်က သင်နှင့် တစ်ဖက်လူအကြား ထိုင်း၊ အင်္ဂလိပ်၊ မြန်မာ သို့မဟုတ် တရုတ်ဘာသာဖြင့် ပြန်ပေးသည်။",
+    "zh": "口译在您和对方之间用泰、英、缅、中语传话。",
+    "de": "Der Dolmetscher vermittelt zwischen Ihnen und der Gegenseite, auf Thai, Englisch, Burmesisch oder Chinesisch."
+   },
+   "who": {
+    "en": "Hongdam",
+    "th": "หงส์ดำ",
+    "my": "ဟုန်ဒမ်",
+    "zh": "鸿丹",
+    "de": "Hongdam"
+   },
+   "time": {
+    "en": "During the call or visit",
+    "th": "ระหว่างโทรหรือไปพบ",
+    "my": "ဖုန်းခေါ်ဆိုစဉ် သို့မဟုတ် သွားရောက်စဉ်",
+    "zh": "通话或到场期间",
+    "de": "Während des Anrufs oder Besuchs"
+   }
+  },
+  {
+   "db": "clock",
+   "t": {
+    "en": "Time runs in blocks: 30 minutes by phone, up to 4 hours or a full day with you. In town, travel is included; further, at cost.",
+    "th": "เวลาคิดเป็นช่วง ทางโทรศัพท์ครึ่งชั่วโมง ส่วนไปด้วยไม่เกิน 4 ชั่วโมงหรือทั้งวัน ในเมืองรวมค่าเดินทาง นอกเมืองคิดตามจริง",
+    "my": "အချိန်ကို အပိုင်းလိုက် တွက်သည်၊ ဖုန်းဖြင့် 30 မိနစ်၊ အတူလိုက်လျှင် 4 နာရီအထိ သို့မဟုတ် တစ်နေ့လုံး။ မြို့တွင်း ခရီးစရိတ်ပါပြီး ပိုဝေးလျှင် ကုန်ကျစရိတ်အတိုင်း။",
+    "zh": "按时段计时：电话每 30 分钟，陪同为 4 小时以内或全天。市内交通费已含，更远按实计。",
+    "de": "Die Zeit läuft in Blöcken: 30 Minuten am Telefon, bis 4 Stunden oder ein ganzer Tag vor Ort. In der Stadt ist die Anfahrt inbegriffen, weiter weg wird sie zum Selbstkostenpreis verrechnet."
+   },
+   "who": {
+    "en": "Hongdam and you",
+    "th": "หงส์ดำและคุณ",
+    "my": "ဟုန်ဒမ်နှင့် သင်",
+    "zh": "鸿丹和您",
+    "de": "Hongdam und Sie"
+   },
+   "time": {
+    "en": "In blocks",
+    "th": "เป็นช่วงเวลา",
+    "my": "အပိုင်းလိုက်",
+    "zh": "按时段",
+    "de": "In Blöcken"
+   }
+  }
+ ],
+ "facts": [
+  {
+   "t": {
+    "en": "Section 13 of the Thai Criminal Procedure Code, in an English translation its host marks as not yet verified, says that when the injured person, the alleged offender, the defendant or a witness cannot speak or understand Thai and no interpreter is there, the inquiry official, public prosecutor or court provides one without delay. The Thai original governs.",
+    "th": "มาตรา 13 แห่งประมวลกฎหมายวิธีพิจารณาความอาญา ในคำแปลภาษาอังกฤษที่เว็บไซต์ผู้เผยแพร่ระบุว่ายังไม่ได้ตรวจยืนยัน ระบุว่าเมื่อผู้เสียหาย ผู้ต้องหา จำเลย หรือพยานพูดหรือเข้าใจภาษาไทยไม่ได้และไม่มีล่าม พนักงานสอบสวน พนักงานอัยการ หรือศาลต้องจัดหาล่ามให้โดยไม่ชักช้า ฉบับภาษาไทยเป็นฉบับที่ใช้ยึดถือ",
+    "my": "ထိုင်းရာဇဝတ်ကျင့်ထုံးဥပဒေ ပုဒ်မ 13 ၏ အင်္ဂလိပ်ဘာသာပြန် (ထုတ်ဝေသည့် ဝက်ဘ်ဆိုက်က မစစ်ဆေးရသေးဟု ဖော်ပြထားသည်) တွင် ထိခိုက်ခံရသူ၊ စွပ်စွဲခံရသူ၊ တရားခံ သို့မဟုတ် သက်သေသည် ထိုင်းစကားကို မပြောတတ်၊ မနားလည်ဘဲ စကားပြန်မရှိလျှင် စုံစမ်းရေးအရာရှိ၊ အစိုးရရှေ့နေ သို့မဟုတ် တရားရုံးက နှောင့်နှေးမှုမရှိဘဲ စကားပြန်ကို ထောက်ပံ့ပေးရမည်ဟု ဆိုသည်။ ထိုင်းမူရင်းသာ အတည်ဖြစ်သည်။",
+    "zh": "《泰国刑事诉讼法》第 13 条的英文译本（发布网站注明尚未核实）写道：当被害人、嫌疑人、被告或证人不会说、听不懂泰语且没有口译时，侦查官、检察官或法院应立即提供口译。以泰文原文为准。",
+    "de": "Artikel 13 der thailändischen Strafprozessordnung besagt in einer englischen Übersetzung, die die Betreiberseite als noch nicht verifiziert kennzeichnet: Können die geschädigte Person, die beschuldigte Person, die angeklagte Person oder ein Zeuge kein Thai sprechen oder verstehen und ist keine Dolmetscherin da, stellt die Untersuchungsbeamtin, die Staatsanwaltschaft oder das Gericht unverzüglich eine. Massgebend ist das thailändische Original."
+   },
+   "src": "https://www.thailawonline.com/thai-criminal-procedure-code/section-13/"
+  },
+  {
+   "t": {
+    "en": "The same section has the interpreter take an oath or affirmation to act in good faith, and the authority pays the interpreter's allowance and travel and accommodation costs.",
+    "th": "มาตราเดียวกันกำหนดให้ล่ามสาบานหรือปฏิญาณว่าจะปฏิบัติหน้าที่โดยสุจริต และหน่วยงานจ่ายค่าตอบแทนล่ามรวมทั้งค่าเดินทางและที่พัก",
+    "my": "ထိုပုဒ်မတွင်ပင် စကားပြန်သည် ရိုးသားစွာ ဆောင်ရွက်မည်ဟု ကျမ်းသစ္စာဆိုရမည်ဖြစ်ပြီး စကားပြန်၏ ခွင့်ပြုကြေး၊ ခရီးစရိတ်နှင့် တည်းခိုစရိတ်ကို ဌာနက ပေးသည်။",
+    "zh": "同一条规定口译须宣誓或郑重声明忠实履职，口译津贴及差旅住宿费由有关机关支付。",
+    "de": "Derselbe Artikel verlangt von der Dolmetscherin einen Eid oder ein Gelöbnis, nach Treu und Glauben zu handeln, und die Behörde zahlt Entschädigung sowie Reise- und Unterkunftskosten."
+   },
+   "src": "https://www.thailawonline.com/thai-criminal-procedure-code/section-13/"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Rai's page for international patients names help in Chinese and Myanmar and phone support in 24 other languages around the clock.",
+    "th": "หน้าสำหรับผู้ป่วยต่างชาติของโรงพยาบาลกรุงเทพเชียงราย ระบุความช่วยเหลือภาษาจีนและพม่า และบริการทางโทรศัพท์อีก 24 ภาษาตลอด 24 ชั่วโมง",
+    "my": "ဘန်ကောက်ဆေးရုံ ချင်းရိုင်၏ နိုင်ငံခြားလူနာစာမျက်နှာတွင် တရုတ်နှင့် မြန်မာဘာသာ အကူအညီနှင့် အခြားဘာသာစကား 24 မျိုးအတွက် ဖုန်းအကူအညီကို တစ်နေ့ 24 နာရီ ဖော်ပြထားသည်။",
+    "zh": "清莱曼谷医院的国际患者页面列出中文和缅甸语协助，以及另外 24 种语言的 24 小时电话支持。",
+    "de": "Die Seite des Bangkok Hospital Chiang Rai für internationale Patienten nennt Hilfe auf Chinesisch und Myanmar und Telefonunterstützung in 24 weiteren Sprachen rund um die Uhr."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangrai/page/international-1-bcr"
+  }
+ ],
+ "costs": [
+  {
+   "t": {
+    "en": "Online interpreter, a Fastwork seller (Thai, English, Chinese, Japanese)",
+    "th": "ล่ามออนไลน์ ผู้ขายบน Fastwork (ไทย อังกฤษ จีน ญี่ปุ่น)",
+    "my": "အွန်လိုင်းစကားပြန်၊ Fastwork ရောင်းသူတစ်ဦး (ထိုင်း၊ အင်္ဂလိပ်၊ တရုတ်၊ ဂျပန်)",
+    "zh": "在线口译，Fastwork 卖家（泰、英、中、日）",
+    "de": "Online-Dolmetschen, ein Anbieter auf Fastwork (Thai, Englisch, Chinesisch, Japanisch)"
+   },
+   "p": {
+    "en": "฿1,000 an hour, ฿800 an hour for several hours; ฿2,500 up to 4 hours; ฿5,000 up to 8 hours",
+    "th": "ชั่วโมงละ ฿1,000 หลายชั่วโมงชั่วโมงละ ฿800 ไม่เกิน 4 ชั่วโมง ฿2,500 ไม่เกิน 8 ชั่วโมง ฿5,000",
+    "my": "တစ်နာရီ ฿1,000၊ နာရီများစွာလျှင် တစ်နာရီ ฿800၊ 4 နာရီအထိ ฿2,500၊ 8 နာရီအထိ ฿5,000",
+    "zh": "每小时 ฿1,000，多小时每小时 ฿800；4 小时内 ฿2,500；8 小时内 ฿5,000",
+    "de": "฿1,000 pro Stunde, bei mehreren Stunden ฿800 pro Stunde; bis 4 Stunden ฿2,500; bis 8 Stunden ฿5,000"
+   },
+   "src": "https://fastwork.co/user/gridfb/translator-16388642"
+  },
+  {
+   "t": {
+    "en": "In-person consecutive interpreter in Bangkok, per interpreter (a conference-translation vendor's guide)",
+    "th": "ล่ามแปลสลับไปด้วยในกรุงเทพฯ ต่อคน (คู่มือของผู้ให้บริการแปลงานประชุม)",
+    "my": "ဘန်ကောက်တွင် အတူလိုက်သော အလှည့်ကျစကားပြန်၊ တစ်ဦးလျှင် (အစည်းအဝေး ဘာသာပြန်ဝန်ဆောင်မှုလုပ်ငန်းတစ်ခု၏ လမ်းညွှန်)",
+    "zh": "曼谷现场交替传译，每位口译（会议翻译服务商的指南）",
+    "de": "Konsekutivdolmetschen vor Ort in Bangkok, pro Person (Leitfaden eines Konferenz-Übersetzungsanbieters)"
+   },
+   "p": {
+    "en": "฿4,000–7,000 a half day; ฿6,000–12,000 a full day",
+    "th": "ครึ่งวัน ฿4,000–7,000 ทั้งวัน ฿6,000–12,000",
+    "my": "တစ်ဝက်နေ့ ฿4,000–7,000၊ တစ်နေ့လုံး ฿6,000–12,000",
+    "zh": "半天 ฿4,000–7,000；全天 ฿6,000–12,000",
+    "de": "฿4,000–7,000 pro halben Tag; ฿6,000–12,000 pro ganzen Tag"
+   },
+   "src": "https://web.snapsight.com/language-translator/thai-translator/"
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "How much does an interpreter cost in Thailand?",
+    "th": "จ้างล่ามในไทยราคาเท่าไร",
+    "my": "ထိုင်းတွင် စကားပြန်ငှားရမ်းခ ဘယ်လောက်လဲ။",
+    "zh": "在泰国请口译要多少钱？",
+    "de": "Was kostet ein Dolmetscher in Thailand?"
+   },
+   "a": {
+    "en": "A Fastwork seller lists online interpreting at ฿1,000 an hour, ฿800 an hour for several hours, ฿2,500 up to 4 hours and ฿5,000 up to 8 hours. The same seller takes in-person work only in Bangkok and the nearby provinces.",
+    "th": "ผู้ขายบน Fastwork รายหนึ่งตั้งราคาล่ามออนไลน์ชั่วโมงละ ฿1,000 หลายชั่วโมงชั่วโมงละ ฿800 ไม่เกิน 4 ชั่วโมง ฿2,500 และไม่เกิน 8 ชั่วโมง ฿5,000 ส่วนงานนอกสถานที่รับเฉพาะกรุงเทพฯ และปริมณฑล",
+    "my": "Fastwork ရောင်းသူတစ်ဦးက အွန်လိုင်းစကားပြန်ကို တစ်နာရီ ฿1,000၊ နာရီများစွာလျှင် တစ်နာရီ ฿800၊ 4 နာရီအထိ ฿2,500 နှင့် 8 နာရီအထိ ฿5,000 ဟု သတ်မှတ်သည်။ ထိုရောင်းသူက လူကိုယ်တိုင်လိုက်သည့်အလုပ်ကို ဘန်ကောက်နှင့် အနီးအနားဒေသများတွင်သာ လက်ခံသည်။",
+    "zh": "Fastwork 上一位卖家的在线口译标价为每小时 ฿1,000，多小时每小时 ฿800，4 小时内 ฿2,500，8 小时内 ฿5,000。该卖家的到场口译只接曼谷及周边。",
+    "de": "Ein Anbieter auf Fastwork verlangt für Online-Dolmetschen ฿1,000 pro Stunde, bei mehreren Stunden ฿800 pro Stunde, bis 4 Stunden ฿2,500 und bis 8 Stunden ฿5,000. Einsätze vor Ort übernimmt er nur in Bangkok und Umgebung."
+   },
+   "src": "https://fastwork.co/user/gridfb/translator-16388642"
+  },
+  {
+   "q": {
+    "en": "Does the police provide an interpreter?",
+    "th": "ตำรวจจัดหาล่ามให้ไหม",
+    "my": "ရဲက စကားပြန် ထောက်ပံ့ပေးပါသလား။",
+    "zh": "警方会提供口译吗？",
+    "de": "Stellt die Polizei einen Dolmetscher?"
+   },
+   "a": {
+    "en": "In a criminal case, Section 13 of the Criminal Procedure Code says the inquiry official, public prosecutor or court provides an interpreter without delay when the injured person, the alleged offender, the defendant or a witness cannot speak or understand Thai, and the authority pays the interpreter's allowance and expenses. The site marks its English text as not yet verified; the Thai original governs.",
+    "th": "ในคดีอาญา มาตรา 13 แห่งประมวลกฎหมายวิธีพิจารณาความอาญาระบุว่า เมื่อผู้เสียหาย ผู้ต้องหา จำเลย หรือพยานพูดหรือเข้าใจภาษาไทยไม่ได้ พนักงานสอบสวน พนักงานอัยการ หรือศาลต้องจัดหาล่ามให้โดยไม่ชักช้า และหน่วยงานเป็นผู้จ่ายค่าตอบแทนและค่าใช้จ่ายของล่าม เว็บไซต์ระบุว่าข้อความภาษาอังกฤษยังไม่ได้ตรวจยืนยัน ให้ยึดฉบับภาษาไทย",
+    "my": "ရာဇဝတ်မှုတွင် ရာဇဝတ်ကျင့်ထုံးဥပဒေ ပုဒ်မ 13 အရ ထိခိုက်ခံရသူ၊ စွပ်စွဲခံရသူ၊ တရားခံ သို့မဟုတ် သက်သေသည် ထိုင်းစကားကို မပြောတတ်၊ မနားလည်လျှင် စုံစမ်းရေးအရာရှိ၊ အစိုးရရှေ့နေ သို့မဟုတ် တရားရုံးက နှောင့်နှေးမှုမရှိဘဲ စကားပြန်ထောက်ပံ့ပေးပြီး စကားပြန်၏ ခွင့်ပြုကြေးနှင့် စရိတ်များကို ဌာနက ပေးသည်။ ဝက်ဘ်ဆိုက်က ၎င်း၏ အင်္ဂလိပ်စာသားကို မစစ်ဆေးရသေးဟု ဖော်ပြထားပြီး ထိုင်းမူရင်းသာ အတည်ဖြစ်သည်။",
+    "zh": "刑事案件中，《刑事诉讼法》第 13 条规定，被害人、嫌疑人、被告或证人不会说或听不懂泰语时，侦查官、检察官或法院应立即提供口译，口译津贴和费用由有关机关支付。该网站注明其英文文本尚未核实，以泰文原文为准。",
+    "de": "In einem Strafverfahren sieht Artikel 13 der Strafprozessordnung vor, dass die Untersuchungsbeamtin, die Staatsanwaltschaft oder das Gericht unverzüglich eine Dolmetscherin stellt, wenn die geschädigte Person, die beschuldigte Person, die angeklagte Person oder ein Zeuge kein Thai spricht oder versteht; die Behörde zahlt die Entschädigung und die Auslagen der Dolmetscherin. Die Seite kennzeichnet ihren englischen Text als noch nicht verifiziert, massgebend ist das thailändische Original."
+   },
+   "src": "https://www.thailawonline.com/thai-criminal-procedure-code/section-13/"
+  },
+  {
+   "q": {
+    "en": "Can an interpreter work by phone or video?",
+    "th": "ล่ามทำงานทางโทรศัพท์หรือวิดีโอได้ไหม",
+    "my": "စကားပြန်က ဖုန်း သို့မဟုတ် ဗီဒီယိုဖြင့် လုပ်ဆောင်နိုင်ပါသလား။",
+    "zh": "口译可以通过电话或视频进行吗？",
+    "de": "Kann eine Dolmetscherin per Telefon oder Video arbeiten?"
+   },
+   "a": {
+    "en": "Yes. A Fastwork seller sells online interpreting by the hour, for a half day of up to 4 hours and for a full day of up to 8 hours, in Thai, English, Chinese and Japanese.",
+    "th": "ได้ ผู้ขายบน Fastwork รายหนึ่งขายล่ามออนไลน์เป็นรายชั่วโมง ครึ่งวันไม่เกิน 4 ชั่วโมง และเต็มวันไม่เกิน 8 ชั่วโมง ในภาษาไทย อังกฤษ จีน และญี่ปุ่น",
+    "my": "ဖြစ်နိုင်သည်။ Fastwork ရောင်းသူတစ်ဦးက အွန်လိုင်းစကားပြန်ကို နာရီအလိုက်၊ 4 နာရီအထိ တစ်ဝက်နေ့နှင့် 8 နာရီအထိ တစ်နေ့လုံးအဖြစ် ထိုင်း၊ အင်္ဂလိပ်၊ တရုတ်နှင့် ဂျပန်ဘာသာဖြင့် ရောင်းချသည်။",
+    "zh": "可以。Fastwork 上一位卖家按小时、4 小时内的半天和 8 小时内的全天出售在线口译，语种为泰、英、中、日。",
+    "de": "Ja. Ein Anbieter auf Fastwork verkauft Online-Dolmetschen stundenweise, für einen halben Tag bis 4 Stunden und für einen ganzen Tag bis 8 Stunden, auf Thai, Englisch, Chinesisch und Japanisch."
+   },
+   "src": "https://fastwork.co/user/gridfb/translator-16388642"
+  },
+  {
+   "q": {
+    "en": "Do hospitals in Chiang Rai have interpreters?",
+    "th": "โรงพยาบาลในเชียงรายมีล่ามไหม",
+    "my": "ချင်းရိုင်ရှိ ဆေးရုံများတွင် စကားပြန်ရှိပါသလား။",
+    "zh": "清莱的医院有口译吗？",
+    "de": "Haben Spitäler in Chiang Rai Dolmetscher?"
+   },
+   "a": {
+    "en": "Bangkok Hospital Chiang Rai lists help in Chinese and Myanmar, and phone support in 24 other languages around the clock. Its customer service line is +66 (0) 52-051-990.",
+    "th": "โรงพยาบาลกรุงเทพเชียงรายระบุความช่วยเหลือภาษาจีนและพม่า และบริการทางโทรศัพท์อีก 24 ภาษาตลอด 24 ชั่วโมง สายงานบริการลูกค้าคือ +66 (0) 52-051-990",
+    "my": "ဘန်ကောက်ဆေးရုံ ချင်းရိုင်က တရုတ်နှင့် မြန်မာဘာသာ အကူအညီနှင့် အခြားဘာသာစကား 24 မျိုးအတွက် ဖုန်းအကူအညီကို တစ်နေ့ 24 နာရီ ဖော်ပြထားသည်။ ဖောက်သည်ဝန်ဆောင်မှုလိုင်းမှာ +66 (0) 52-051-990 ဖြစ်သည်။",
+    "zh": "清莱曼谷医院列出中文和缅甸语协助，以及另外 24 种语言的 24 小时电话支持。客服电话是 +66 (0) 52-051-990。",
+    "de": "Das Bangkok Hospital Chiang Rai nennt Hilfe auf Chinesisch und Myanmar sowie Telefonunterstützung in 24 weiteren Sprachen rund um die Uhr. Die Kundendienst-Nummer lautet +66 (0) 52-051-990."
+   },
+   "src": "https://www.bangkokhospital.com/en/chiangrai/page/international-1-bcr"
+  }
+ ],
+ "related": [
+  "translate",
+  "thai-lessons",
+  "lang-shan",
+  "retire",
+  "specialist",
+  "bank-account"
+ ],
+ "out": [
+  {
+   "t": {
+    "en": "Criminal Procedure Code, Section 13 (English text, not yet verified)",
+    "th": "ประมวลกฎหมายวิธีพิจารณาความอาญา มาตรา 13 (ฉบับภาษาอังกฤษ ยังไม่ได้ตรวจยืนยัน)",
+    "my": "ရာဇဝတ်ကျင့်ထုံးဥပဒေ ပုဒ်မ 13 (အင်္ဂလိပ်စာသား၊ မစစ်ဆေးရသေး)",
+    "zh": "《刑事诉讼法》第 13 条（英文文本，尚未核实）",
+    "de": "Strafprozessordnung, Artikel 13 (englischer Text, noch nicht verifiziert)"
+   },
+   "href": "https://www.thailawonline.com/thai-criminal-procedure-code/section-13/"
+  },
+  {
+   "t": {
+    "en": "Bangkok Hospital Chiang Rai: international patients",
+    "th": "โรงพยาบาลกรุงเทพเชียงราย: ผู้ป่วยต่างชาติ",
+    "my": "ဘန်ကောက်ဆေးရုံ ချင်းရိုင်: နိုင်ငံခြားလူနာများ",
+    "zh": "清莱曼谷医院：国际患者",
+    "de": "Bangkok Hospital Chiang Rai: internationale Patienten"
+   },
+   "href": "https://www.bangkokhospital.com/en/chiangrai/page/international-1-bcr"
+  }
+ ],
+ "glyphs": [
+  "mic",
+  "chat",
+  "telephone"
+ ]
+}

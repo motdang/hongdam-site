@@ -1,0 +1,37 @@
+# Contrast gate (her word 2026-10-22): every page under docs/, phone and desktop,
+# light and dark, English and Thai, must meet WCAG AA. pr-push waits for checks named
+# "gate: …" before merging; the server's deploy holds a commit on main until it passes.
+name: gate
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+# Read-only (CodeRabbit on #56): the check runs the PR's own code and needs no Git credentials.
+permissions:
+  contents: read
+# Split sixteen ways (her word 2026-10-24: "Split the contrast check into parallel jobs so all 116 pages are
+# checked within the limit; same coverage."; her pick 2026-11-05, with 750 service pages added: sixteen jobs,
+# same coverage): each job takes every sixteenth page; together, every page.
+jobs:
+  contrast:
+    name: "gate: contrast ${{ matrix.shard }}/16"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Every page, every mode
+        env:
+          CHROME: /usr/bin/google-chrome
+          SHARD: "${{ matrix.shard }}/16"
+        run: node tools/contrast/run.mjs
