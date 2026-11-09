@@ -631,6 +631,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-11-09 · GLM-5.3 Flash's replacements: Gemma 4 26B costs less per task, Qwen3.8 27B 3.6 times more — https://hongdam.net/studio/notes/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured/
 - 2026-11-08 · The week: 16 Workers AI models end 20 November, Node.js patch day, Gemini 2.5 rerouted — https://hongdam.net/studio/notes/week-workers-ai-deprecations-node-gemini/
 - 2026-11-07 · Cloudflare's DNS scan is a list of common names; generated DKIM names fall outside it — https://hongdam.net/studio/notes/cloudflare-dns-scan-list-dkim-generated-names/
 - 2026-11-06 · Running totals over 32 changes: 0 of 10 in one go, 10 of 10 writing each step — https://hongdam.net/studio/notes/state-tracking-one-go-vs-written-steps/
@@ -642,7 +643,6 @@ JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the 
 - 2026-10-31 · Link cards: each Mastodon server fetches your page, Bluesky freezes the card — https://hongdam.net/studio/notes/link-cards-mastodon-bluesky/
 - 2026-10-30 · Same text, Thai or English: 1.46 times the tokens on DeepSeek, 2.94 times on GLM-5.3 — https://hongdam.net/studio/notes/thai-tokens-cost-by-model/
 - 2026-10-29 · GitHub Agentic Workflows: the default spending cap is US$50 a day per workflow — https://hongdam.net/studio/notes/github-agentic-workflows-default-cap/
-- 2026-10-28 · Magento PolyShell joins CISA's exploited list, seven months after the first attacks — https://hongdam.net/studio/notes/magento-polyshell-on-cisa-kev/
 
 ## The work
 
