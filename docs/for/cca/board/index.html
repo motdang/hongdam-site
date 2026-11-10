@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>CCA Board, 12 November</title>
+<meta name="description" content="Interactive deck for the Cultural Crossroads Asia board, Thursday 12 November 2026, in English and Thai: the British Museum grant in numbers, what can be lost, questions answered with numbers, four services.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CCA board deck, 12 Nov 2026 · สไลด์สำหรับคณะกรรมการ CCA">
+<meta property="og:description" content="A song recorded in 2005 cannot be recorded again. The British Museum grant in numbers, what can be lost, and four services at Thai-friendly rates.">
+<meta property="og:url" content="https://hongdam.net/for/cca/board/">
+<meta property="og:image" content="https://hongdam.net/for/cca/board/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Card: the board brief for CCA, made for the CCA board by Hongdam">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hongdam.net/for/cca/board/og.png"><meta name="twitter:image:alt" content="Card: the board brief for CCA, made for the CCA board by Hongdam">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Serif+Thai:wght@600;700&display=swap">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
-</head>
-<body>
 <style>
-/* One screen, no page scroll. A slide = heading + one tappable board + one line of cost. Indigo cloth, a thread of gold. */
+/* One screen, no page scroll. Each slide: a finding as the heading, the number that proves it, the decision it asks for. Indigo cloth, a thread of gold, red for what can be lost. */
 :root{
   --bg:#f3f4f8; --fg:#1a2140; --muted:#5b628a; --line:#cdd2e4; --card:#ffffff;
   --indigo:#2b3a8c; --indigo-ink:#ffffff; --red:#b0232e; --gold:#e9b949; --gold-ink:#141414;
@@ -19,7 +23,7 @@
   --body:"Noto Sans","Noto Sans Thai","Helvetica Neue",Arial,sans-serif;
   --display-th:"Noto Serif Thai","Fraunces",Georgia,serif;
   --body-th:"Noto Sans Thai","Noto Sans",Arial,sans-serif;
-  --fs:clamp(17px,1.55vw,26px);
+  --fs:clamp(17px,1.5vw,25px);
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --bg:#10131f; --fg:#e8eaf4; --muted:#a3abcc; --line:#2c3252; --card:#181c2e;
@@ -29,7 +33,7 @@
   --bg:#10131f; --fg:#e8eaf4; --muted:#a3abcc; --line:#2c3252; --card:#181c2e;
   --indigo:#93a2ff; --indigo-ink:#0f1326; --red:#ff8f8f; --gold:#e9b949; --gold-ink:#141414;
   --fill:#93a2ff; --track:#262c48; color-scheme:dark }
-@media (max-height:780px){:root{--fs:clamp(15px,1.25vw,21px)}}
+@media (max-height:780px){:root{--fs:clamp(15px,1.2vw,20px)}}
 
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:var(--fs);line-height:1.45;
@@ -40,8 +44,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-
 :root[data-lang="th"] body{font-family:var(--body-th);line-height:1.6}
 :root[data-lang="th"] h1,:root[data-lang="th"] h2,:root[data-lang="th"] .big{font-family:var(--display-th)}
 h1,h2,.big{font-family:var(--display);font-weight:600;letter-spacing:-.01em;text-wrap:balance;margin:0}
-h1{font-size:clamp(30px,4.6vw,70px);line-height:1.08}
-h2{font-size:clamp(24px,3.1vw,46px);line-height:1.12}
+h1{font-size:clamp(30px,4.4vw,66px);line-height:1.08}
+h2{font-size:clamp(24px,3vw,44px);line-height:1.12}
 p{margin:0}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
@@ -53,11 +57,11 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
 .langbtn{border:2px solid var(--line);border-radius:999px;padding:.35em 1em;letter-spacing:.06em;text-transform:none;font-weight:600;color:var(--fg)}
 .langbtn:hover{border-color:var(--indigo)}
 .slide{display:none;min-height:0;overflow:auto;padding-block:.2em .6em}
-.slide.on{display:grid;align-content:start;gap:.9em}
+.slide.on{display:grid;align-content:start;gap:.8em}
 .slide.tight{gap:.5em;font-size:.92em}
 .tight h2{font-size:clamp(22px,2.6vw,38px)}
-.tight .lede{font-size:1em;max-width:44em}
-.lede{max-width:34em;font-size:1.05em}
+.lede{max-width:40em;font-size:1.02em}
+.tight .lede{font-size:1em;max-width:46em}
 .muted{color:var(--muted)}
 .small{font-size:.78em}
 .kicker{font-size:.72em;letter-spacing:.1em;text-transform:uppercase;color:var(--indigo);font-weight:700}
@@ -69,17 +73,39 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
 .nav button{border:2px solid var(--line);border-radius:999px;padding:.3em 1.1em;font-weight:700;color:var(--fg)}
 .nav button.go{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
 .nav button:disabled{opacity:.35;cursor:default}
+.num{font-family:var(--display);font-size:2em;line-height:1;font-weight:700;color:var(--indigo);font-variant-numeric:tabular-nums}
+:root[data-lang="th"] .num{font-family:var(--display-th)}
+.num.red{color:var(--red)}
 
-/* cover: three lines */
-.three{display:grid;gap:.7em;max-width:32em}
-.three .it{display:grid;grid-template-columns:auto 1fr;gap:.8em;align-items:baseline;font-size:1.3em;line-height:1.3}
+/* cover: the hook, then three decisions */
+.three{display:grid;gap:.6em;max-width:36em}
+.three .it{display:grid;grid-template-columns:auto 1fr;gap:.8em;align-items:baseline;font-size:1.18em;line-height:1.3}
 .three .n{font-family:var(--display);font-size:1.6em;font-weight:700;color:var(--indigo);line-height:1}
 :root[data-lang="th"] .three .n{font-family:var(--display-th)}
 
-/* grant: three facts, four decisions */
-.facts{display:grid;gap:.6em;grid-template-columns:repeat(auto-fit,minmax(min(100%,10em),1fr));max-width:40em}
-.fact{display:grid;gap:.1em;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.6em .9em;align-content:start}
+/* tiles that stay open */
+.tiles{display:grid;gap:.7em;grid-template-columns:repeat(auto-fit,minmax(min(100%,13em),1fr))}
+.tile{display:grid;gap:.35em;align-content:start;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.8em .95em}
+.tile q{font-style:italic;quotes:"\201C" "\201D"}
+.tile .who{font-size:.78em;color:var(--muted)}
+.rule{border-left:10px solid var(--gold);padding:.6em 1em;background:var(--card);border-radius:0 12px 12px 0;max-width:46em}
+.rule.red{border-left-color:var(--red)}
+
+/* grant: bars drawn to one scale */
+.bars{display:grid;gap:.45em;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.8em 1em}
+.bar{display:grid;grid-template-columns:minmax(7em,11em) minmax(0,1fr);gap:.8em;align-items:center}
+.bar .lab{font-size:.85em;font-weight:600}
+.bar .lab b{display:block;font-family:var(--display);font-size:1.15em;color:var(--indigo);font-variant-numeric:tabular-nums}
+:root[data-lang="th"] .bar .lab b{font-family:var(--display-th)}
+.bar .tr{height:1.3em;background:var(--track);border-radius:999px;overflow:hidden}
+.bar .tr i{display:block;height:100%;background:var(--fill);border-radius:999px;min-width:.5em}
+.bar.gold .tr i{background:var(--gold)}
+@media (max-width:560px){.bar{grid-template-columns:1fr}}
+.facts{display:grid;gap:.6em;grid-template-columns:repeat(auto-fit,minmax(min(100%,11em),1fr))}
+.fact{display:grid;gap:.15em;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.6em .9em;align-content:start}
 .fact .num{font-size:1.7em}
+
+/* four decisions */
 .decs{display:grid;gap:.45em}
 @media (min-width:900px){.decs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .dec{display:grid;grid-template-columns:auto 1fr;gap:.8em;align-items:start;background:var(--card);border:2px solid var(--line);border-left:10px solid var(--gold);border-radius:12px;padding:.5em .9em .55em}
@@ -93,34 +119,65 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
 .opt:hover{border-color:var(--indigo)}
 .opt[aria-pressed="true"]{background:var(--indigo);color:var(--indigo-ink);border-color:var(--indigo)}
 
-/* cards that open on a tap */
-.grid{display:grid;gap:.8em;grid-template-columns:repeat(auto-fit,minmax(min(100%,15em),1fr))}
-.card{display:grid;gap:.4em;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.9em 1em;align-content:start}
-.card:hover{border-color:var(--indigo)}
-.card .ttl{font-weight:700;font-size:1.05em;display:flex;justify-content:space-between;gap:.6em;align-items:baseline}
+/* what can be lost */
+.losses{display:grid;gap:.7em;grid-template-columns:repeat(auto-fit,minmax(min(100%,17em),1fr))}
+.loss{display:grid;gap:.35em;align-content:start;background:var(--card);border:2px solid var(--line);border-top:8px solid var(--red);border-radius:14px;padding:.75em .95em}
+.loss .lab{font-weight:700}
+.loss .src{font-size:.72em;color:var(--muted)}
+.loss .fix{border-top:1px solid var(--line);padding-top:.4em;font-size:.9em}
+.loss .fix b{color:var(--indigo)}
+
+/* questions that open on a tap */
+.qhead{display:flex;flex-wrap:wrap;gap:.8em;align-items:end;justify-content:space-between}
+.openall{border:2px solid var(--indigo);border-radius:999px;padding:.3em 1em;font-weight:700;color:var(--indigo);font-size:.85em}
+.grid{display:grid;gap:.7em;grid-template-columns:repeat(auto-fit,minmax(min(100%,16em),1fr))}
+.card{display:grid;gap:.35em;text-align:left;background:var(--card);border:2px solid var(--line);border-left:10px solid var(--gold);border-radius:14px;padding:.65em .9em;align-content:start}
+.card:hover{border-color:var(--indigo);border-left-color:var(--gold)}
+.card .ttl{font-weight:700;font-size:1.02em;display:flex;justify-content:space-between;gap:.6em;align-items:baseline}
 .card .ttl::after{content:"+";color:var(--indigo);font-weight:700;font-family:var(--body)}
 .card.open .ttl::after{content:"–"}
-.card .more{display:none;color:var(--fg)}
+.card .more{display:none;color:var(--fg);font-size:.86em}
+.card.open{border-left-color:var(--indigo)}
 .card.open .more{display:grid;gap:.35em}
-.card.gap{border-left:10px solid var(--red)}
-.card.has{border-left:10px solid var(--indigo)}
-.card .fix{border-top:1px solid var(--line);padding-top:.35em}
-.card .fix b{color:var(--indigo)}
-.num{font-family:var(--display);font-size:2em;line-height:1;font-weight:700;color:var(--indigo);font-variant-numeric:tabular-nums}
-:root[data-lang="th"] .num{font-family:var(--display-th)}
+.card .more .num{font-size:1.5em}
 
-/* ladder */
-.ladder{display:grid;gap:.6em;grid-template-columns:repeat(auto-fit,minmax(min(100%,12em),1fr))}
-.rung{display:grid;gap:.25em;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.8em 1em}
-.rung.on{border-color:var(--indigo);box-shadow:inset 0 0 0 2px var(--indigo)}
-.rung .cost{font-family:var(--display);font-size:1.6em;font-weight:700;color:var(--indigo);line-height:1.05}
-:root[data-lang="th"] .rung .cost{font-family:var(--display-th)}
-.rung .when{color:var(--muted);font-size:.85em}
-.items{display:grid;gap:.45em;background:var(--card);border:2px solid var(--indigo);border-radius:14px;padding:.9em 1.1em}
-.items .it{display:grid;grid-template-columns:auto 1fr auto;gap:.8em;align-items:baseline;padding:.25em 0;border-top:1px solid var(--line)}
+/* board: chairs and what the gifts buy */
+.boardwrap{display:grid;gap:.9em;grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
+@media (max-width:820px){.boardwrap{grid-template-columns:1fr}}
+.chairs{display:grid;grid-template-columns:repeat(6,1fr);gap:.5em}
+@media (max-width:640px){.chairs{grid-template-columns:repeat(3,1fr)}}
+.chair{display:grid;gap:.3em;justify-items:center;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.6em .3em}
+.chair:hover{border-color:var(--indigo)}
+.chair svg{width:60%;height:auto;display:block}
+.chair .seat{fill:var(--track)}
+.chair.give .seat{fill:var(--fill)}
+.chair.get .seat{fill:var(--gold)}
+.chair .st{font-size:.78em;font-weight:700;text-align:center;min-height:2.4em;font-variant-numeric:tabular-nums}
+.meter{display:grid;gap:.4em;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.8em 1em;align-content:start}
+.track{height:1.1em;background:var(--track);border-radius:999px;overflow:hidden}
+.fill{height:100%;width:0;background:var(--fill);border-radius:999px;transition:width .3s}
+@media (prefers-reduced-motion: reduce){.fill{transition:none}}
+.meter .tot{font-family:var(--display);font-size:1.5em;font-weight:700;color:var(--indigo);font-variant-numeric:tabular-nums;line-height:1.1}
+:root[data-lang="th"] .meter .tot{font-family:var(--display-th)}
+.buys{display:grid;gap:.25em;font-size:.85em}
+.buys .b{display:grid;grid-template-columns:1.2em auto 1fr;gap:.5em;align-items:baseline;color:var(--muted)}
+.buys .b .k{width:1em;height:1em;border:2px solid var(--line);border-radius:4px;display:inline-grid;place-items:center;font-size:.8em;font-weight:700}
+.buys .b.ok{color:var(--fg)}
+.buys .b.ok .k{background:var(--indigo);border-color:var(--indigo);color:var(--indigo-ink)}
+.buys .b.ok .k::after{content:"✓"}
+.buys .b .amt{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* services */
+.items{display:grid;gap:.4em;background:var(--card);border:2px solid var(--indigo);border-radius:14px;padding:.8em 1.05em}
+.items .it{display:grid;grid-template-columns:auto 1fr auto;gap:.8em;align-items:baseline;padding:.3em 0;border-top:1px solid var(--line)}
 .items .it:first-child{border-top:0}
 .items .n{font-weight:700;color:var(--indigo);font-variant-numeric:tabular-nums}
-.items .price{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.items .what b{display:block}
+.items .what span.r{color:var(--muted);font-size:.9em}
+.items .price{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.1em}
+.order{display:flex;flex-wrap:wrap;gap:.6em 1em;align-items:center;background:var(--gold);color:var(--gold-ink);border-radius:14px;padding:.7em 1.05em;font-weight:600}
+.order code{font-family:var(--body);font-weight:700;font-size:1.05em;user-select:all}
+.order .copy{background:var(--gold-ink);color:var(--gold)}
 
 /* calendar */
 .months{display:grid;grid-template-columns:repeat(4,1fr);gap:.5em}
@@ -134,29 +191,9 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
 .agenda .it:first-child{border-top:0}
 .agenda .d{font-weight:700;color:var(--indigo);white-space:nowrap;font-variant-numeric:tabular-nums}
 
-/* board: chairs and the dry-room bar */
-.boardwrap{display:grid;gap:.9em;grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
-@media (max-width:820px){.boardwrap{grid-template-columns:1fr}}
-.chairs{display:grid;grid-template-columns:repeat(6,1fr);gap:.5em}
-@media (max-width:640px){.chairs{grid-template-columns:repeat(3,1fr)}}
-.chair{display:grid;gap:.3em;justify-items:center;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.6em .3em}
-.chair:hover{border-color:var(--indigo)}
-.chair svg{width:60%;height:auto;display:block}
-.chair .seat{fill:var(--track)}
-.chair.give .seat{fill:var(--fill)}
-.chair.get .seat{fill:var(--gold)}
-.chair .st{font-size:.78em;font-weight:700;text-align:center;min-height:2.4em;font-variant-numeric:tabular-nums}
-.meter{display:grid;gap:.4em;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:.9em 1.1em;align-content:start}
-.track{height:1.1em;background:var(--track);border-radius:999px;overflow:hidden}
-.fill{height:100%;width:0;background:var(--fill);border-radius:999px;transition:width .3s}
-@media (prefers-reduced-motion: reduce){.fill{transition:none}}
-.meter .tot{font-family:var(--display);font-size:1.5em;font-weight:700;color:var(--indigo);font-variant-numeric:tabular-nums;line-height:1.1}
-:root[data-lang="th"] .meter .tot{font-family:var(--display-th)}
-.rule{border-left:10px solid var(--gold);padding:.6em 1em;background:var(--card);border-radius:0 12px 12px 0;max-width:46em}
-
 /* asks */
-.asks{display:grid;gap:.45em}
-.ask{display:grid;grid-template-columns:auto 1fr;gap:.9em;align-items:start;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.45em .9em;font-size:.95em}
+.asks{display:grid;gap:.4em}
+.ask{display:grid;grid-template-columns:auto 1fr;gap:.9em;align-items:start;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:.42em .9em;font-size:.93em}
 .ask .box{width:1.4em;height:1.4em;border:3px solid var(--indigo);border-radius:6px;margin-top:.15em;display:grid;place-items:center;color:var(--indigo-ink);font-weight:700}
 .ask.done .box{background:var(--indigo)}
 .ask.done .box::after{content:"✓"}
@@ -165,44 +202,77 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
 .mail code{font-family:var(--body);font-weight:700;font-size:1.05em;user-select:all}
 .copy{background:var(--gold);color:var(--gold-ink);border-radius:999px;padding:.25em .9em;font-weight:700;font-size:.85em}
 .links{display:grid;gap:.4em;font-size:1.05em}
-.srcs{font-size:.7em;color:var(--muted);max-width:60em}
+.srcs{font-size:.68em;color:var(--muted);max-width:64em}
 </style>
-
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
 <div class="deck">
   <div class="top">
     <span class="org"><span lang="en">Cultural Crossroads Asia · Board · Thu 12 Nov 2026 · 17:00 · Zoom</span><span lang="th">Cultural Crossroads Asia · คณะกรรมการ · พฤ. 12 พ.ย. 2569 · 17:00 · Zoom</span></span>
     <button class="langbtn" id="langbtn" type="button" aria-label="Switch language"><span lang="en">ไทย</span><span lang="th">English</span></button>
   </div>
 
-  <!-- 1 cover -->
+  <!-- 1 cover: the why, then three decisions -->
   <section class="slide on" id="cover" data-name="cover">
     <p class="kicker"><span lang="en">From Hongdam: NaN and Michael</span><span lang="th">จาก Hongdam: NaN และ Michael</span></p>
-    <h1><span lang="en">Three decisions today</span><span lang="th">สามข้อตัดสินใจวันนี้</span></h1>
+    <h1><span lang="en">A song recorded in 2005 cannot be recorded again.</span><span lang="th">เพลงที่บันทึกไว้ในปี 2548 บันทึกใหม่ไม่ได้อีกแล้ว</span></h1>
+    <p class="lede"><span lang="en">The culture of the highland peoples is alive and changes every year. CCA has twenty years of its record: how it sounded, how it was made, who played it. In this meeting the board decides three things.</span><span lang="th">วัฒนธรรมของกลุ่มชาติพันธุ์บนที่สูงยังมีชีวิต และเปลี่ยนไปทุกปี CCA มีบันทึกยี่สิบปี: เสียงเป็นอย่างไร ทำอย่างไร ใครเล่น ในที่ประชุมนี้ คณะกรรมการตัดสินใจสามเรื่อง</span></p>
     <div class="three">
-      <div class="it"><span class="n">1</span><span><span lang="en">The British Museum grant: who hosts, who leads, which grant, who writes.</span><span lang="th">ทุนบริติชมิวเซียม: ใครเป็นเจ้าภาพ ใครเป็นหัวหน้า ขอทุนใด ใครเขียน</span></span></div>
-      <div class="it"><span class="n">2</span><span><span lang="en">Eleven low-cost tasks: which start this month.</span><span lang="th">สิบเอ็ดงานต้นทุนต่ำ: งานใดเริ่มเดือนนี้</span></span></div>
-      <div class="it"><span class="n">3</span><span><span lang="en">Each director gives money or brings a donor by 30 November.</span><span lang="th">กรรมการแต่ละคนให้เงิน หรือพาผู้บริจาคมา ภายใน 30 พ.ย.</span></span></div>
+      <div class="it"><span class="n">1</span><span><span lang="en">The British Museum grant: about ฿900,000 to film the Akha makers. Four choices.</span><span lang="th">ทุนบริติชมิวเซียม: ราว 900,000 บาท เพื่อถ่ายทำช่างครูอาข่า สี่ทางเลือก</span></span></div>
+      <div class="it"><span class="n">2</span><span><span lang="en">Protect the archive: ฿20,000 this week buys a dehumidifier and two drives, against damp and a failed hard drive.</span><span lang="th">ปกป้องคลังบันทึก: 20,000 บาทในสัปดาห์นี้ ซื้อเครื่องลดความชื้นและฮาร์ดดิสก์สองลูก กันความชื้นและฮาร์ดดิสก์เสีย</span></span></div>
+      <div class="it"><span class="n">3</span><span><span lang="en">The board gives first: six gifts of ฿10,000 pay for both.</span><span lang="th">คณะกรรมการให้ก่อน: หกคน คนละ 10,000 บาท พอจ่ายทั้งสองเรื่อง</span></span></div>
     </div>
-    <p class="muted small"><span lang="en">Tap → or press the right arrow. Tap any card to open it. ไทย switches the language.</span><span lang="th">แตะ → หรือกดลูกศรขวา แตะการ์ดเพื่อเปิด ปุ่ม English สลับภาษา</span></p>
+    <p class="muted small"><span lang="en">Tap → or press the right arrow. Tap a question to open it. ไทย switches the language.</span><span lang="th">แตะ → หรือกดลูกศรขวา แตะคำถามเพื่อเปิด ปุ่ม English สลับภาษา</span></p>
   </section>
 
-  <!-- 2 the grant -->
+  <!-- 2 why CCA -->
+  <section class="slide" id="why" data-name="why">
+    <div>
+      <p class="kicker"><span lang="en">Why CCA</span><span lang="th">ทำไมต้อง CCA</span></p>
+      <h2><span lang="en">A living culture, and twenty years of its record</span><span lang="th">วัฒนธรรมที่มีชีวิต และบันทึกยี่สิบปีของวัฒนธรรมนั้น</span></h2>
+    </div>
+    <p class="lede"><span lang="en">The six highland peoples learn their culture by doing: from a master, in the village. It changes with each generation that plays, sews and sings. Google, museums and AI see little of it. CCA has recorded it in the villages since 2005.</span><span lang="th">หกกลุ่มชาติพันธุ์บนที่สูงเรียนวัฒนธรรมด้วยการลงมือทำ จากครู ในหมู่บ้าน และวัฒนธรรมเปลี่ยนไปตามคนแต่ละรุ่นที่เล่น เย็บ และร้อง Google พิพิธภัณฑ์ และ AI เห็นได้น้อยมาก CCA บันทึกในหมู่บ้านมาตั้งแต่ พ.ศ. 2548</span></p>
+    <div class="tiles">
+      <div class="tile"><span class="num">20</span><span><span lang="en">years, six peoples: films, sound, photos, and hundreds of textiles and instruments.</span><span lang="th">ปี หกกลุ่มชาติพันธุ์: ภาพยนตร์ เสียง ภาพถ่าย ผ้าและเครื่องดนตรีหลายร้อยชิ้น</span></span></div>
+      <div class="tile"><span class="num">91</span><span><span lang="en">instruments online with photos, sound, maker and player. Lahu, Akha and Lisu come next.</span><span lang="th">เครื่องดนตรีออนไลน์ พร้อมภาพ เสียง ผู้ทำ และผู้เล่น ลาหู่ อาข่า ลีซู ตามมา</span></span>
+        <span class="small"><q lang="en">will quickly be recognized as the premier source</q><q lang="th">จะได้รับการยอมรับในไม่ช้าว่าเป็นแหล่งข้อมูลชั้นนำ</q></span><span class="who"><span lang="en">Colin Pearson, Curator for Asian Art, Phoenix Art Museum</span><span lang="th">Colin Pearson ภัณฑารักษ์ศิลปะเอเชีย Phoenix Art Museum</span></span></div>
+      <div class="tile"><span class="num">2023</span><span><span lang="en">Akha Oral Tradition School, Ban Saen Suk: masters teach Akha youth. The first four years end July 2027.</span><span lang="th">โรงเรียนประเพณีมุขปาฐะอาข่า บ้านแสนสุข: ครูสอนเยาวชนอาข่า สี่ปีแรกจบ ก.ค. 2570</span></span></div>
+      <div class="tile"><span class="num">6 + 2</span><span><span lang="en">A new board of six, two advisers from the communities, three interns.</span><span lang="th">กรรมการใหม่หกคน ที่ปรึกษาจากชุมชนสองคน นักศึกษาฝึกงานสามคน</span></span></div>
+    </div>
+    <div class="rule red"><span lang="en">The culture will go on changing. What can be lost is the record: twenty years of it, in one hot room and on a few hard drives.</span><span lang="th">วัฒนธรรมจะเปลี่ยนต่อไป สิ่งที่สูญหายได้คือบันทึก: ยี่สิบปี ในห้องร้อนห้องเดียว และบนฮาร์ดดิสก์ไม่กี่ลูก</span></div>
+  </section>
+
+  <!-- 3 the grant, in numbers -->
   <section class="slide tight" id="grant" data-name="grant">
     <div>
-      <p class="kicker">EMKP · Endangered Material Knowledge Programme</p>
-      <h2><span lang="en">The British Museum grant</span><span lang="th">ทุนบริติชมิวเซียม</span></h2>
+      <p class="kicker">EMKP · Endangered Material Knowledge Programme · British Museum</p>
+      <h2><span lang="en">฿33,000 of work for a chance at ฿900,000</span><span lang="th">งาน 33,000 บาท เพื่อโอกาสรับทุน 900,000 บาท</span></h2>
     </div>
-    <p class="lede"><span lang="en">Film the Akha master makers at work. The knowledge lives in their hands and changes with them. The films give it a second home, paid for by the British Museum: travel, equipment, pay for the makers and helpers.</span><span lang="th">ถ่ายทำช่างครูอาข่าขณะทำงาน ความรู้อยู่ในมือของพวกเขาและเปลี่ยนไปพร้อมกับพวกเขา ภาพยนตร์ให้บ้านหลังที่สองแก่ความรู้นั้น บริติชมิวเซียมออกค่าใช้จ่าย: เดินทาง อุปกรณ์ ค่าตอบแทนช่างและผู้ช่วย</span></p>
+    <p class="lede"><span lang="en">Film the Akha master makers at work. The knowledge lives in their hands and changes with them. The British Museum pays for travel, equipment, and the makers' and helpers' time.</span><span lang="th">ถ่ายทำช่างครูอาข่าขณะทำงาน ความรู้อยู่ในมือของพวกเขาและเปลี่ยนไปพร้อมกับพวกเขา บริติชมิวเซียมจ่ายค่าเดินทาง อุปกรณ์ และค่าตอบแทนช่างและผู้ช่วย</span></p>
+    <div class="bars" role="img" aria-label="Draft about 33,400 baht; small grant about 898,000 baht; both grants about 1,796,000 baht">
+      <div class="bar gold"><span class="lab"><span lang="en">Hongdam's draft</span><span lang="th">ร่างของ Hongdam</span><b>฿33,400</b></span><span class="tr"><i style="width:1.9%"></i></span></div>
+      <div class="bar"><span class="lab"><span lang="en">Small grant, £20,000</span><span lang="th">ทุนเล็ก 20,000 ปอนด์</span><b>฿898,000</b></span><span class="tr"><i style="width:50%"></i></span></div>
+      <div class="bar"><span class="lab"><span lang="en">Plus Legacy Digitisation</span><span lang="th">บวก Legacy Digitisation</span><b>฿1,796,000</b></span><span class="tr"><i style="width:100%"></i></span></div>
+    </div>
     <div class="facts">
-      <div class="fact"><span class="num">£20,000</span><span class="small muted"><span lang="en">small grant, about ฿900,000</span><span lang="th">ทุนเล็ก ราว 900,000 บาท</span></span></div>
-      <div class="fact"><span class="num"><span lang="en">1 year</span><span lang="th">1 ปี</span></span><span class="small muted"><span lang="en">of filming and writing up</span><span lang="th">ถ่ายทำและเรียบเรียง</span></span></div>
-      <div class="fact"><span class="num"><span lang="en">1 Dec</span><span lang="th">1 ธ.ค.</span></span><span class="small muted"><span lang="en">19:00 Thai time (12:00 London)</span><span lang="th">19:00 น. เวลาไทย (12:00 ลอนดอน)</span></span></div>
+      <div class="fact"><span class="num">27×</span><span class="small"><span lang="en">The small grant is 27 times the draft. The draft pays for itself if one application in 27 wins.</span><span lang="th">ทุนเล็กมีค่า 27 เท่าของค่าร่าง ร่างคุ้มทุนถ้าชนะหนึ่งในยี่สิบเจ็ดใบสมัคร</span></span></div>
+      <div class="fact"><span class="num">19</span><span class="small"><span lang="en">days from this meeting to the deadline: 1 December, 19:00 Thai time (12:00 London).</span><span lang="th">วันจากที่ประชุมนี้ถึงกำหนดส่ง: 1 ธ.ค. 19:00 น. เวลาไทย (12:00 ลอนดอน)</span></span></div>
+      <div class="fact"><span class="num">฿16,700</span><span class="small"><span lang="en">in cash. Half the draft can be paid in kind: in goods, not cash.</span><span lang="th">เป็นเงินสด ค่าร่างครึ่งหนึ่งจ่ายเป็นสิ่งของแทนเงินสดได้</span></span></div>
     </div>
-    <p class="kicker"><span lang="en">Four decisions, in this meeting. Tap what the board picks.</span><span lang="th">สี่ข้อตัดสินใจ ในที่ประชุมนี้ แตะสิ่งที่คณะกรรมการเลือก</span></p>
+    <p class="small muted"><span lang="en">A US grant writer charges US$1,500–5,000 for a standard proposal (GrantWatch, October 2026). £1 = ฿44.90 and US$1 = ฿33.37 on 10 November 2026.</span><span lang="th">นักเขียนขอทุนในสหรัฐคิด 1,500–5,000 ดอลลาร์ต่อใบสมัครทั่วไป (GrantWatch ต.ค. 2569) 1 ปอนด์ = 44.90 บาท และ 1 ดอลลาร์ = 33.37 บาท วันที่ 10 พ.ย. 2569</span></p>
+  </section>
+
+  <!-- 4 four decisions -->
+  <section class="slide tight" id="decide" data-name="decide">
+    <div>
+      <p class="kicker"><span lang="en">The British Museum grant · tap what the board picks</span><span lang="th">ทุนบริติชมิวเซียม · แตะสิ่งที่คณะกรรมการเลือก</span></p>
+      <h2><span lang="en">Four decisions, in this meeting</span><span lang="th">สี่ข้อตัดสินใจ ในที่ประชุมนี้</span></h2>
+    </div>
     <div class="decs">
       <div class="dec"><span class="n">1</span><div>
         <p class="q"><span lang="en">Who hosts?</span><span lang="th">ใครเป็นเจ้าภาพ?</span></p>
-        <p class="def"><span lang="en">The host signs the contract and watches the money, apart from the applicant. A university or an NGO can host.</span><span lang="th">เจ้าภาพลงนามสัญญาและดูแลเงิน แยกจากผู้สมัคร มหาวิทยาลัยหรือองค์กรพัฒนาเอกชนเป็นเจ้าภาพได้</span></p>
+        <p class="def"><span lang="en">The host signs the contract and oversees the money, apart from the applicant. A university host answers the first question every funder asks: who checks the money?</span><span lang="th">เจ้าภาพลงนามสัญญาและกำกับดูแลเงิน แยกจากผู้สมัคร เจ้าภาพที่เป็นมหาวิทยาลัยตอบคำถามแรกของผู้ให้ทุนทุกราย: ใครตรวจเงิน?</span></p>
         <div class="opts" data-one>
           <button class="opt" type="button" aria-pressed="false"><span lang="en">Chiang Mai University, through Ajahn Thitipol</span><span lang="th">มช. ผ่านอาจารย์ฐิติพล</span></button>
           <button class="opt" type="button" aria-pressed="false"><span lang="en">The CCA Foundation</span><span lang="th">มูลนิธิ CCA</span></button>
@@ -215,14 +285,14 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
         </div></div></div>
       <div class="dec"><span class="n">3</span><div>
         <p class="q"><span lang="en">Which grant?</span><span lang="th">ขอทุนใด?</span></p>
-        <p class="def"><span lang="en">Both can go in on the same day, on the same topic.</span><span lang="th">ส่งทั้งสองได้ในวันเดียวกัน หัวข้อเดียวกัน</span></p>
+        <p class="def"><span lang="en">Both can go in on the same day, on the same topic: two chances instead of one.</span><span lang="th">ส่งทั้งสองได้ในวันเดียวกัน หัวข้อเดียวกัน: สองโอกาสแทนหนึ่ง</span></p>
         <div class="opts">
           <button class="opt" type="button" aria-pressed="false"><span lang="en">Small grant, £20,000, one year: film the makers</span><span lang="th">ทุนเล็ก 20,000 ปอนด์ หนึ่งปี: ถ่ายทำช่างครู</span></button>
           <button class="opt" type="button" aria-pressed="false"><span lang="en">Plus Legacy Digitisation, £20,000: CCA's old footage</span><span lang="th">บวก Legacy Digitisation 20,000 ปอนด์: ฟุตเทจเก่าของ CCA</span></button>
         </div></div></div>
       <div class="dec"><span class="n">4</span><div>
         <p class="q"><span lang="en">Who writes?</span><span lang="th">ใครเขียน?</span></p>
-        <p class="def"><span lang="en">Draft to the board 24 November. In the portal by 1 December.</span><span lang="th">ร่างถึงคณะกรรมการ 24 พ.ย. ส่งในระบบภายใน 1 ธ.ค.</span></p>
+        <p class="def"><span lang="en">Draft to the board 24 November, in the portal by 1 December. Each day before the order is one day less to write.</span><span lang="th">ร่างถึงคณะกรรมการ 24 พ.ย. ส่งในระบบภายใน 1 ธ.ค. ทุกวันที่รอสั่งงาน คือเวลาเขียนที่หายไปหนึ่งวัน</span></p>
         <div class="opts" data-one>
           <button class="opt" type="button" aria-pressed="false"><span lang="en">Hongdam, US$1,000, half in kind</span><span lang="th">Hongdam 1,000 ดอลลาร์ จ่ายครึ่งหนึ่งเป็นสิ่งของได้</span></button>
           <button class="opt" type="button" aria-pressed="false"><span lang="en">Someone else</span><span lang="th">คนอื่น</span></button>
@@ -231,88 +301,119 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
     <p class="small muted"><span lang="en">The films go online for anyone to use, not to sell (CC BY-NC-SA). A copy stays in Thailand. Sacred or private parts stay offline if the makers ask. The Akha makers say yes first.</span><span lang="th">ภาพยนตร์ขึ้นออนไลน์ให้ทุกคนใช้ได้ ห้ามขาย (CC BY-NC-SA) สำเนาหนึ่งชุดอยู่ในไทย ส่วนที่ศักดิ์สิทธิ์หรือเป็นส่วนตัวไม่ขึ้นออนไลน์ หากช่างครูขอ ช่างครูอาข่าตอบตกลงก่อน</span></p>
   </section>
 
-  <!-- 3 what CCA has -->
-  <section class="slide" id="has" data-name="has">
-    <h2><span lang="en">What CCA has</span><span lang="th">สิ่งที่ CCA มี</span></h2>
+  <!-- 5 what can be lost -->
+  <section class="slide tight" id="lost" data-name="lost">
+    <h2><span lang="en">What can be lost, in numbers</span><span lang="th">สิ่งที่สูญหายได้ เป็นตัวเลข</span></h2>
+    <p class="lede"><span lang="en">Churches with budgets reach the villages every week. CCA reaches them with Victoria's time, and everything she brings back is in the archive.</span><span lang="th">โบสถ์ที่มีงบประมาณเข้าถึงหมู่บ้านทุกสัปดาห์ CCA เข้าถึงด้วยเวลาของวิกตอเรีย และทุกอย่างที่เธอนำกลับมาอยู่ในคลังบันทึก</span></p>
+    <div class="losses">
+      <div class="loss">
+        <span class="lab"><span lang="en">Hard drives</span><span lang="th">ฮาร์ดดิสก์</span></span>
+        <span class="num red"><span lang="en">1 in 8</span><span lang="th">1 ใน 8</span></span>
+        <span><span lang="en">chance of losing a file on one drive over ten years. Three copies in two places: about 1 in 400,000 a year.</span><span lang="th">โอกาสที่ไฟล์บนฮาร์ดดิสก์ลูกเดียวจะหายในสิบปี สามสำเนาในสองที่: ราว 1 ใน 400,000 ต่อปี</span></span>
+        <span class="src"><span lang="en">Backblaze, 2025: 1.36% of drives fail each year, in cooled data centres.</span><span lang="th">Backblaze ปี 2568: ฮาร์ดดิสก์เสีย 1.36% ต่อปี ในศูนย์ข้อมูลที่มีแอร์</span></span>
+        <span class="fix"><b><span lang="en">Fix</span><span lang="th">ทางแก้</span></b> · <span lang="en">two drives and a cloud account, about ฿10,000. Hongdam sets them up and checks them twice a year, US$700.</span><span lang="th">ฮาร์ดดิสก์สองลูกและบัญชีคลาวด์ ราว 10,000 บาท Hongdam ตั้งระบบและตรวจปีละสองครั้ง 700 ดอลลาร์</span></span>
+      </div>
+      <div class="loss">
+        <span class="lab"><span lang="en">Damp</span><span lang="th">ความชื้น</span></span>
+        <span class="num red">65%</span>
+        <span><span lang="en">humidity: above it, mould grows on cloth, wood and leather. Chiang Mai's rainy months average about 80%. The room has no air conditioning.</span><span lang="th">ความชื้นสัมพัทธ์: สูงกว่านี้ เชื้อราขึ้นบนผ้า ไม้ และหนัง เดือนหน้าฝนของเชียงใหม่เฉลี่ยราว 80% ห้องไม่มีแอร์</span></span>
+        <span class="src"><span lang="en">US National Park Service, Conserve O Gram 3/4; chiangmai.net monthly averages.</span><span lang="th">กรมอุทยานแห่งชาติสหรัฐ Conserve O Gram 3/4; ค่าเฉลี่ยรายเดือน chiangmai.net</span></span>
+        <span class="fix"><b><span lang="en">Fix</span><span lang="th">ทางแก้</span></b> · <span lang="en">a dehumidifier and meter this week, under ฿10,000. A dry room by January, ฿50,000–100,000: under ฿500 a piece for hundreds of pieces. Now is the dry season, before the May rains.</span><span lang="th">เครื่องลดความชื้นและเครื่องวัดสัปดาห์นี้ ไม่เกิน 10,000 บาท ห้องแห้งภายใน ม.ค. 50,000–100,000 บาท: ไม่ถึงชิ้นละ 500 บาท สำหรับของหลายร้อยชิ้น ตอนนี้เป็นหน้าแล้ง ก่อนฝนเดือนพฤษภาคม</span></span>
+      </div>
+      <div class="loss">
+        <span class="lab"><span lang="en">Found online</span><span lang="th">ค้นเจอออนไลน์</span></span>
+        <span class="num red"><span lang="en">0 of 9</span><span lang="th">0 จาก 9</span></span>
+        <span><span lang="en">instrument searches with CCA in the top ten. The six peoples' Wikipedia pages: about 840,000 views a year. A search that ends elsewhere is a donor CCA does not meet.</span><span lang="th">การค้นชื่อเครื่องดนตรีที่ CCA ติดสิบอันดับแรก หน้า Wikipedia ของหกกลุ่มชาติพันธุ์: ราว 840,000 ครั้งต่อปี การค้นที่ไปจบที่อื่น คือผู้บริจาคที่ CCA ไม่ได้พบ</span></span>
+        <span class="src"><span lang="en">Searches: 23 October 2026. Wikipedia: 138,755 views in 60 days.</span><span lang="th">การค้น: 23 ต.ค. 2569 Wikipedia: 138,755 ครั้งใน 60 วัน</span></span>
+        <span class="fix"><b><span lang="en">Fix</span><span lang="th">ทางแก้</span></b> · <span lang="en">the 91 instrument pages titled, labelled and credited, US$1,500: US$16 a page.</span><span lang="th">หน้าเครื่องดนตรี 91 หน้า ตั้งชื่อ ติดป้าย ใส่เครดิต 1,500 ดอลลาร์: หน้าละ 16 ดอลลาร์</span></span>
+      </div>
+      <div class="loss">
+        <span class="lab"><span lang="en">Ways to give</span><span lang="th">ช่องทางการให้</span></span>
+        <span class="num red">1</span>
+        <span><span lang="en">way to give: US donors only, 8% fee. Thai donors get no tax deduction.</span><span lang="th">ช่องทาง: เฉพาะผู้บริจาคสหรัฐ ค่าธรรมเนียม 8% ผู้บริจาคไทยลดหย่อนภาษีไม่ได้</span></span>
+        <span class="src"><span lang="en">Fractured Atlas, the US charity that takes gifts for CCA.</span><span lang="th">Fractured Atlas องค์กรการกุศลสหรัฐที่รับเงินแทน CCA</span></span>
+        <span class="fix"><b><span lang="en">Fix</span><span lang="th">ทางแก้</span></b> · <span lang="en">free: the giving desk with CCA's Thai QR, and the Thai Revenue Department listing with our coordinator Beer.</span><span lang="th">ฟรี: โต๊ะรับบริจาคพร้อม QR ไทยของ CCA และขึ้นทะเบียนกับกรมสรรพากร โดยเบียร์ ผู้ประสานงานของเรา</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 questions, answered with numbers -->
+  <section class="slide tight" id="questions" data-name="questions">
+    <div class="qhead">
+      <h2><span lang="en">Questions the board may ask, answered with numbers</span><span lang="th">คำถามที่คณะกรรมการอาจถาม ตอบด้วยตัวเลข</span></h2>
+      <button class="openall" id="openall" type="button" aria-pressed="false"><span lang="en">Open all</span><span lang="th">เปิดทั้งหมด</span></button>
+    </div>
     <div class="grid">
-      <button class="card has" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">An archive online</span><span lang="th">คลังเครื่องดนตรีออนไลน์</span></span>
-        <span class="more"><span class="num">91</span><span><span lang="en">instruments online: Karen, Hmong, Iu Mien. Lahu, Akha and Lisu come next. Photos, sound, who made it, who plays it.</span><span lang="th">เครื่องดนตรีออนไลน์: กะเหรี่ยง ม้ง เมี่ยน ลาหู่ อาข่า ลีซู ตามมา มีภาพ เสียง ใครทำ ใครเล่น</span></span></span>
+      <button class="card" type="button" aria-expanded="false">
+        <span class="ttl"><span lang="en">We have no money for this.</span><span lang="th">เราไม่มีเงินสำหรับเรื่องนี้</span></span>
+        <span class="more"><span class="num">฿48,400</span><span><span lang="en">Six gifts of ฿10,000 make ฿60,000. Dehumidifier ฿10,000 + drives ฿10,000 + grant draft ฿16,700 + safe copies ฿11,700 (the cash halves) = ฿48,400. ฿11,600 is left for the dry room.</span><span lang="th">หกคน คนละ 10,000 บาท ได้ 60,000 บาท เครื่องลดความชื้น 10,000 + ฮาร์ดดิสก์ 10,000 + ร่างทุน 16,700 + สำเนาที่ปลอดภัย 11,700 (ส่วนเงินสด) = 48,400 บาท เหลือ 11,600 บาทสำหรับห้องแห้ง</span></span></span>
       </button>
-      <button class="card has" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">Twenty years of recordings</span><span lang="th">บันทึกยี่สิบปี</span></span>
-        <span class="more"><span class="num">6</span><span><span lang="en">peoples since 2005. Films, sound, photos. Hundreds of textiles and instruments.</span><span lang="th">กลุ่มชาติพันธุ์ ตั้งแต่ พ.ศ. 2548 ภาพยนตร์ เสียง ภาพถ่าย ผ้าและเครื่องดนตรีหลายร้อยชิ้น</span></span></span>
+      <button class="card" type="button" aria-expanded="false">
+        <span class="ttl"><span lang="en">Why pay before the work starts?</span><span lang="th">ทำไมต้องจ่ายก่อนเริ่มงาน?</span></span>
+        <span class="more"><span class="num"><span lang="en">11 or 4</span><span lang="th">11 หรือ 4</span></span><span><span lang="en">days to write. The draft reaches the board 24 November. Paid Friday 13 November: 11 days. Paid a week later: 4 days. Each day of waiting is a day taken from the draft.</span><span lang="th">วันในการเขียน ร่างถึงคณะกรรมการ 24 พ.ย. จ่ายศุกร์ 13 พ.ย.: 11 วัน จ่ายช้าไปหนึ่งสัปดาห์: 4 วัน ทุกวันที่รอ คือวันที่หายไปจากการเขียน</span></span></span>
       </button>
-      <button class="card has" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">A school since 2023</span><span lang="th">โรงเรียนตั้งแต่ พ.ศ. 2566</span></span>
-        <span class="more"><span class="num">2023</span><span><span lang="en">Akha Oral Tradition School, Ban Saen Suk. The first four years end July 2027.</span><span lang="th">โรงเรียนประเพณีมุขปาฐะอาข่า บ้านแสนสุข สี่ปีแรกจบ ก.ค. 2570</span></span></span>
+      <button class="card" type="button" aria-expanded="false">
+        <span class="ttl"><span lang="en">We give our time. Why money too?</span><span lang="th">เราให้เวลาแล้ว ทำไมต้องให้เงินด้วย?</span></span>
+        <span class="more"><span class="num">100%</span><span><span lang="en">Funders ask first whether every director gives. If the people closest do not give, a stranger asks why. 68% of US nonprofits ask each director for a yearly gift (BoardSource). With every director giving, each application can say 100%. Indigenous members and the Ethnic Advisory Council give advice, not money.</span><span lang="th">ผู้ให้ทุนถามก่อนว่ากรรมการทุกคนให้หรือไม่ ถ้าคนที่ใกล้ที่สุดไม่ให้ คนแปลกหน้าจะถามว่าทำไม องค์กรไม่แสวงกำไรในสหรัฐ 68% ขอให้กรรมการทุกคนบริจาคทุกปี (BoardSource) เมื่อกรรมการให้ทุกคน ทุกใบสมัครเขียนได้ว่า 100% สมาชิกชนพื้นเมืองและสภาที่ปรึกษาชาติพันธุ์ให้คำปรึกษา ไม่ใช่เงิน</span></span></span>
       </button>
-      <button class="card has" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">A new board</span><span lang="th">คณะกรรมการชุดใหม่</span></span>
-        <span class="more"><span class="num">6 + 2</span><span><span lang="en">Six directors, two advisers from the communities, three interns.</span><span lang="th">กรรมการหกคน ที่ปรึกษาจากชุมชนสองคน นักศึกษาฝึกงานสามคน</span></span></span>
+      <button class="card" type="button" aria-expanded="false">
+        <span class="ttl"><span lang="en">Who checks the money?</span><span lang="th">ใครตรวจเงิน?</span></span>
+        <span class="more"><span class="num"><span lang="en">1 job</span><span lang="th">1 งาน</span></span><span><span lang="en">Each baht has one job, one price and one date. The British Museum money goes through the host, apart from CCA. The giving desk shows the fee on each route. A treasurer and one page of numbers by 31 January.</span><span lang="th">ทุกบาทมีงานเดียว ราคาเดียว วันเดียว เงินบริติชมิวเซียมผ่านเจ้าภาพ แยกจาก CCA โต๊ะรับบริจาคแสดงค่าธรรมเนียมทุกช่องทาง เหรัญญิกหนึ่งคนและตัวเลขหนึ่งหน้าภายใน 31 ม.ค.</span></span></span>
       </button>
-    </div>
-  </section>
-
-  <!-- 4 what CCA lacks, and the fix -->
-  <section class="slide" id="lacks" data-name="lacks">
-    <h2><span lang="en">Four gaps, and Hongdam's fix for each</span><span lang="th">สี่ช่องว่าง และทางแก้ของ Hongdam</span></h2>
-    <p class="lede muted"><span lang="en">The culture is alive in the villages and changing. The recordings are what can be lost: twenty years on a few hard drives. Churches with budgets reach the villages every week. CCA reaches them with Victoria's time.</span><span lang="th">วัฒนธรรมยังมีชีวิตในหมู่บ้านและเปลี่ยนแปลงอยู่ สิ่งที่สูญหายได้คือบันทึก: ยี่สิบปีบนฮาร์ดดิสก์ไม่กี่ลูก โบสถ์ที่มีงบประมาณเข้าถึงหมู่บ้านทุกสัปดาห์ CCA เข้าถึงด้วยเวลาของวิกตอเรีย</span></p>
-    <div class="grid">
-      <button class="card gap" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">Cool, dry air</span><span lang="th">อากาศเย็นและแห้ง</span></span>
-        <span class="more"><span><span lang="en">Cloth, wood and leather sit in a hot, damp room. Mould and insects come in the rains.</span><span lang="th">ผ้า ไม้ และหนังอยู่ในห้องร้อนชื้น เชื้อราและแมลงมาตอนหน้าฝน</span></span>
-        <span class="fix"><b>Hongdam</b> · <span lang="en">This week: a dehumidifier, under ฿10,000. By January: a dry room, the board's ฿50,000–100,000.</span><span lang="th">สัปดาห์นี้: เครื่องลดความชื้น ไม่เกิน 10,000 บาท ภายใน ม.ค.: ห้องแห้ง คณะกรรมการออกเงิน 50,000–100,000 บาท</span></span></span>
+      <button class="card" type="button" aria-expanded="false">
+        <span class="ttl"><span lang="en">Why not the Heritage Center first?</span><span lang="th">ทำไมไม่สร้างศูนย์มรดกวัฒนธรรมก่อน?</span></span>
+        <span class="more"><span class="num">900×</span><span><span lang="en">The land asks about US$4 million, ฿133 million. Protecting the collection costs about ฿145,000: the land costs 900 times more. A center needs a collection worth visiting. Protect the collection now; the building can follow.</span><span lang="th">ที่ดินตั้งราคาราว 4 ล้านดอลลาร์ หรือ 133 ล้านบาท การปกป้องคอลเลกชันใช้ราว 145,000 บาท: ที่ดินแพงกว่า 900 เท่า ศูนย์ต้องมีคอลเลกชันที่คุ้มค่าแก่การมาชม ปกป้องคอลเลกชันตอนนี้ อาคารตามมาได้</span></span></span>
       </button>
-      <button class="card gap" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">Safe copies</span><span lang="th">สำเนาที่ปลอดภัย</span></span>
-        <span class="more"><span><span lang="en">Twenty years of files sit on a few hard drives. Hard drives fail.</span><span lang="th">ไฟล์ยี่สิบปีอยู่บนฮาร์ดดิสก์ไม่กี่ลูก ฮาร์ดดิสก์พังได้</span></span>
-        <span class="fix"><b>Hongdam</b> · <span lang="en">Three copies: two drives and a cloud, one outside Chiang Mai. We do this for 56 projects.</span><span lang="th">สามสำเนา: สองฮาร์ดดิสก์และคลาวด์ หนึ่งชุดนอกเชียงใหม่ เราทำแบบนี้ให้ 56 โครงการ</span></span></span>
-      </button>
-      <button class="card gap" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">Found online</span><span lang="th">ค้นเจอออนไลน์</span></span>
-        <span class="more"><span><span lang="en">The knowledge is in the villages, not online. Search nine instrument names: CCA is not in the top ten. No CCA name inside the files.</span><span lang="th">ความรู้อยู่ในหมู่บ้าน ไม่ได้อยู่ออนไลน์ ค้นชื่อเครื่องดนตรีเก้าชื่อ: CCA ไม่อยู่ในสิบอันดับแรก ไม่มีชื่อ CCA ในไฟล์</span></span>
-        <span class="fix"><b>Hongdam</b> · <span lang="en">Fix the titles, labels and credits, as we do for Mot Dang.</span><span lang="th">แก้ชื่อหน้า ป้ายข้อมูล และเครดิต แบบที่เราทำให้ Mot Dang</span></span></span>
-      </button>
-      <button class="card gap" type="button" aria-expanded="false">
-        <span class="ttl"><span lang="en">Ways to give</span><span lang="th">ช่องทางการให้</span></span>
-        <span class="more"><span><span lang="en">One way, US donors only, 8% fee. Thai donors get no tax deduction.</span><span lang="th">มีทางเดียว เฉพาะผู้บริจาคสหรัฐ ค่าธรรมเนียม 8% ผู้บริจาคไทยลดหย่อนภาษีไม่ได้</span></span>
-        <span class="fix"><b>Hongdam</b> · <span lang="en">The giving desk is live at hongdam.net/for/cca/give/. Add CCA's Thai QR. File the Thai tax listing.</span><span lang="th">โต๊ะรับบริจาคเปิดแล้วที่ hongdam.net/for/cca/give/ เพิ่ม QR ไทยของ CCA ยื่นขึ้นทะเบียนกับกรมสรรพากร</span></span></span>
+      <button class="card" type="button" aria-expanded="false">
+        <span class="ttl"><span lang="en">Why pay Hongdam? Interns could do it.</span><span lang="th">ทำไมต้องจ้าง Hongdam? นักศึกษาฝึกงานทำได้</span></span>
+        <span class="more"><span class="num">US$1,000</span><span><span lang="en">for the draft, half in kind; a US grant writer charges US$1,500–5,000. Interns leave when the semester ends; the copies need checking every year. Since 17 October Hongdam has given CCA, free: the giving desk, a land study, a village map sketch, a website check, a plan to July, and this brief.</span><span lang="th">สำหรับร่าง จ่ายครึ่งหนึ่งเป็นสิ่งของได้ นักเขียนขอทุนในสหรัฐคิด 1,500–5,000 ดอลลาร์ นักศึกษาฝึกงานไปเมื่อจบภาคเรียน สำเนาต้องตรวจทุกปี ตั้งแต่ 17 ต.ค. Hongdam ให้ CCA ฟรี: โต๊ะรับบริจาค การศึกษาที่ดิน ภาพร่างแผนที่หมู่บ้าน การตรวจเว็บไซต์ แผนถึงกรกฎาคม และสรุปฉบับนี้</span></span></span>
       </button>
     </div>
   </section>
 
-  <!-- 5 the moves, by cost -->
-  <section class="slide" id="moves" data-name="moves">
-    <h2><span lang="en">What each task costs</span><span lang="th">ต้นทุนของแต่ละงาน</span></h2>
-    <div class="ladder" id="ladder">
-      <button class="rung on" type="button" data-rung="free"><span class="cost"><span lang="en">Free</span><span lang="th">ฟรี</span></span><span class="when"><span lang="en">this month · 4 tasks</span><span lang="th">เดือนนี้ · 4 งาน</span></span></button>
-      <button class="rung" type="button" data-rung="small"><span class="cost">฿10,000</span><span class="when"><span lang="en">or less · this week · 2 tasks</span><span lang="th">หรือน้อยกว่า · สัปดาห์นี้ · 2 งาน</span></span></button>
-      <button class="rung" type="button" data-rung="paid"><span class="cost">US$700–1,500</span><span class="when"><span lang="en">Hongdam · half in kind · 4 tasks</span><span lang="th">Hongdam · จ่ายครึ่งหนึ่งเป็นสิ่งของได้ · 4 งาน</span></span></button>
-      <button class="rung" type="button" data-rung="board"><span class="cost">฿50–100k</span><span class="when"><span lang="en">the board together · by January · 1 task</span><span lang="th">คณะกรรมการร่วมกัน · ภายใน ม.ค. · 1 งาน</span></span></button>
+  <!-- 7 the board gives first -->
+  <section class="slide" id="board" data-name="board">
+    <h2><span lang="en">The board gives first</span><span lang="th">คณะกรรมการให้ก่อน</span></h2>
+    <p class="lede"><span lang="en">Tap a seat as each director decides: give ฿10,000, give ฿20,000, or get: bring three donors. The list shows what the gifts buy.</span><span lang="th">แตะที่นั่งเมื่อกรรมการแต่ละคนตัดสินใจ: ให้ 10,000 บาท ให้ 20,000 บาท หรือหา: พาผู้บริจาคมาสามราย รายการแสดงสิ่งที่เงินซื้อได้</span></p>
+    <div class="boardwrap">
+      <div style="display:grid;gap:.6em;align-content:start">
+        <div class="chairs" id="chairs"></div>
+        <p class="small muted"><span lang="en">A picture for the meeting; the seats reset when the page reloads.</span><span lang="th">เป็นภาพให้ที่ประชุม ที่นั่งรีเซ็ตเมื่อโหลดหน้าใหม่</span></p>
+      </div>
+      <div class="meter">
+        <p class="kicker"><span lang="en">Gifts so far</span><span lang="th">เงินที่ให้แล้ว</span></p>
+        <p class="tot" id="tot">฿0</p>
+        <div class="track"><div class="fill" id="fill"></div></div>
+        <div class="buys" id="buys">
+          <div class="b" data-at="10000"><span class="k"></span><span class="amt">฿10,000</span><span><span lang="en">Dehumidifier and meter</span><span lang="th">เครื่องลดความชื้นและเครื่องวัด</span></span></div>
+          <div class="b" data-at="20000"><span class="k"></span><span class="amt">฿20,000</span><span><span lang="en">Two drives and a cloud account</span><span lang="th">ฮาร์ดดิสก์สองลูกและบัญชีคลาวด์</span></span></div>
+          <div class="b" data-at="36700"><span class="k"></span><span class="amt">฿36,700</span><span><span lang="en">British Museum draft, cash half</span><span lang="th">ร่างทุนบริติชมิวเซียม ส่วนเงินสด</span></span></div>
+          <div class="b" data-at="48400"><span class="k"></span><span class="amt">฿48,400</span><span><span lang="en">Safe copies, cash half</span><span lang="th">สำเนาที่ปลอดภัย ส่วนเงินสด</span></span></div>
+          <div class="b" data-at="98400"><span class="k"></span><span class="amt">฿98,400</span><span><span lang="en">A dry room, ฿50,000</span><span lang="th">ห้องแห้ง 50,000 บาท</span></span></div>
+        </div>
+        <p class="kicker"><span lang="en">Donors introduced</span><span lang="th">ผู้บริจาคที่แนะนำ</span></p>
+        <p class="tot" id="doors">0</p>
+      </div>
     </div>
-    <div class="items" data-for="free">
-      <div class="it"><span class="n">1</span><span><span lang="en">Donate page: name Fractured Atlas, the US charity that takes gifts for CCA. Tim, ten minutes.</span><span lang="th">หน้าบริจาค: ระบุชื่อ Fractured Atlas องค์กรการกุศลสหรัฐที่รับเงินแทน CCA ทิม สิบนาที</span></span><span class="price">฿0</span></div>
-      <div class="it"><span class="n">2</span><span><span lang="en">The giving desk goes live with CCA's Thai QR. Victoria says yes.</span><span lang="th">โต๊ะรับบริจาคเปิดใช้พร้อม QR ไทยของ CCA วิกตอเรียตอบตกลง</span></span><span class="price">฿0</span></div>
-      <div class="it"><span class="n">3</span><span><span lang="en">A page for the school and its concerts on Mot Dang, Thai and English.</span><span lang="th">หน้าโรงเรียนและคอนเสิร์ตบน Mot Dang ไทยและอังกฤษ</span></span><span class="price">฿0</span></div>
-      <div class="it"><span class="n">4</span><span><span lang="en">Register CCA with the Thai Revenue Department, with Beer, so Thai donors can deduct gifts. November to February.</span><span lang="th">ขึ้นทะเบียน CCA กับกรมสรรพากร เบียร์ช่วย ให้ผู้บริจาคไทยลดหย่อนได้ พ.ย.–ก.พ.</span></span><span class="price">฿0</span></div>
-    </div>
-    <div class="items" data-for="small" hidden>
-      <div class="it"><span class="n">5</span><span><span lang="en">A dehumidifier and a humidity meter. Textiles and instruments off the floor, out of plastic bags.</span><span lang="th">เครื่องลดความชื้นและเครื่องวัด ยกผ้าและเครื่องดนตรีขึ้นจากพื้น ออกจากถุงพลาสติก</span></span><span class="price">&lt; ฿10,000</span></div>
-      <div class="it"><span class="n">6</span><span><span lang="en">Two drives and a cloud account in CCA's name: three copies.</span><span lang="th">ฮาร์ดดิสก์สองลูกและบัญชีคลาวด์ในชื่อ CCA: สามสำเนา</span></span><span class="price">≈ ฿10,000</span></div>
-    </div>
-    <div class="items" data-for="paid" hidden>
-      <div class="it"><span class="n">7</span><span><span lang="en">Safe copies set up, and checked twice a year.</span><span lang="th">สำเนาที่ปลอดภัย ตั้งระบบและตรวจปีละสองครั้ง</span></span><span class="price">US$700</span></div>
-      <div class="it"><span class="n">8</span><span><span lang="en">The British Museum application, drafted (slide 2).</span><span lang="th">ร่างใบสมัครบริติชมิวเซียม (สไลด์ 2)</span></span><span class="price">US$1,000</span></div>
-      <div class="it"><span class="n">9</span><span><span lang="en">A village map: tap a village, hear it, open its CCA pages.</span><span lang="th">แผนที่หมู่บ้าน: แตะหมู่บ้าน ฟังเสียง เปิดหน้า CCA</span></span><span class="price">US$1,000</span></div>
-      <div class="it"><span class="n">10</span><span><span lang="en">The 91 instrument pages titled, labelled and credited so Google finds them.</span><span lang="th">หน้าเครื่องดนตรี 91 หน้า ตั้งชื่อ ติดป้ายข้อมูล และใส่เครดิต ให้ Google ค้นเจอ</span></span><span class="price">US$1,500</span></div>
-    </div>
-    <div class="items" data-for="board" hidden>
-      <div class="it"><span class="n">11</span><span><span lang="en">A dry room: air conditioning, dehumidifier, archive boxes. Six directors at ฿10,000–20,000 each.</span><span lang="th">ห้องแห้ง: แอร์ เครื่องลดความชื้น กล่องจดหมายเหตุ กรรมการหกคน คนละ 10,000–20,000 บาท</span></span><span class="price">฿50,000–100,000</span></div>
-    </div>
+    <div class="rule"><span lang="en">Hongdam's free work goes on while every non-indigenous director gives or gets. Indigenous members and the Ethnic Advisory Council give advice, not money. A director who can do neither can make room for a member from the business world.</span><span lang="th">Hongdam ทำงานฟรีต่อ ตราบที่กรรมการที่ไม่ใช่ชนพื้นเมืองทุกคนให้หรือหา สมาชิกชนพื้นเมืองและสภาที่ปรึกษาชาติพันธุ์ให้คำปรึกษา ไม่ใช่เงิน กรรมการที่ทำไม่ได้ทั้งสองอย่าง เปิดที่ให้สมาชิกจากภาคธุรกิจได้</span></div>
   </section>
 
-  <!-- 6 calendar -->
+  <!-- 8 buy today -->
+  <section class="slide tight" id="buy" data-name="buy">
+    <h2><span lang="en">Four services at Thai-friendly rates</span><span lang="th">บริการสี่อย่าง ในราคาที่เป็นมิตรกับไทย</span></h2>
+    <p class="lede"><span lang="en">Priced for a Thai foundation. Half can be paid in kind. Work starts when payment arrives, so the day CCA pays sets the day the work is done.</span><span lang="th">ราคาสำหรับมูลนิธิไทย จ่ายครึ่งหนึ่งเป็นสิ่งของได้ งานเริ่มเมื่อได้รับเงิน วันที่ CCA จ่ายจึงกำหนดวันที่งานเสร็จ</span></p>
+    <div class="items">
+      <div class="it"><span class="n">1</span><span class="what"><b><span lang="en">British Museum draft</span><span lang="th">ร่างทุนบริติชมิวเซียม</span></b><span class="r"><span lang="en">A chance at ฿898,000, 27 times the price. Order by Friday 13 November for the 24 November draft.</span><span lang="th">โอกาสรับ 898,000 บาท 27 เท่าของราคา สั่งภายในศุกร์ 13 พ.ย. เพื่อร่าง 24 พ.ย.</span></span></span><span class="price">US$1,000</span></div>
+      <div class="it"><span class="n">2</span><span class="what"><b><span lang="en">Safe copies, checked twice a year</span><span lang="th">สำเนาที่ปลอดภัย ตรวจปีละสองครั้ง</span></b><span class="r"><span lang="en">The chance of losing a file falls from 1 in 8 a decade to about 1 in 400,000 a year.</span><span lang="th">โอกาสที่ไฟล์จะหายลดจาก 1 ใน 8 ต่อสิบปี เหลือราว 1 ใน 400,000 ต่อปี</span></span></span><span class="price">US$700</span></div>
+      <div class="it"><span class="n">3</span><span class="what"><b><span lang="en">The 91 instrument pages, found online</span><span lang="th">หน้าเครื่องดนตรี 91 หน้า ให้ค้นเจอ</span></b><span class="r"><span lang="en">Titled, labelled and credited, so people searching reach CCA. US$16 a page.</span><span lang="th">ตั้งชื่อ ติดป้าย ใส่เครดิต ให้คนที่ค้นหามาถึง CCA หน้าละ 16 ดอลลาร์</span></span></span><span class="price">US$1,500</span></div>
+      <div class="it"><span class="n">4</span><span class="what"><b><span lang="en">The village map</span><span lang="th">แผนที่หมู่บ้าน</span></b><span class="r"><span lang="en">A donor taps a village, hears it, and opens its CCA page: 19 recordings, 14 places.</span><span lang="th">ผู้บริจาคแตะหมู่บ้าน ฟังเสียง และเปิดหน้า CCA: 19 บันทึก 14 แห่ง</span></span></span><span class="price">US$1,000</span></div>
+    </div>
+    <p class="small"><span lang="en">All four: US$4,200, about ฿140,000. With half in kind, about ฿70,000 in cash.</span><span lang="th">ทั้งสี่อย่าง: 4,200 ดอลลาร์ ราว 140,000 บาท จ่ายครึ่งหนึ่งเป็นสิ่งของ เงินสดราว 70,000 บาท</span></p>
+    <div class="order"><span><span lang="en">To order, email the word “order” to</span><span lang="th">สั่งงาน: อีเมลคำว่า “order” ถึง</span></span> <code>nan@motdang.net</code> <button class="copy" type="button" data-copy="nan@motdang.net"><span lang="en">Copy</span><span lang="th">คัดลอก</span></button> <span><span lang="en">The invoice follows.</span><span lang="th">ใบแจ้งหนี้จะตามไป</span></span></div>
+    <p class="small muted"><span lang="en">Free from Hongdam: the giving desk with CCA's Thai QR, a Mot Dang page for the school and its concerts, and help with the Thai tax listing.</span><span lang="th">ฟรีจาก Hongdam: โต๊ะรับบริจาคพร้อม QR ไทยของ CCA หน้า Mot Dang สำหรับโรงเรียนและคอนเสิร์ต และความช่วยเหลือเรื่องขึ้นทะเบียนภาษี</span></p>
+  </section>
+
+  <!-- 9 calendar -->
   <section class="slide" id="calendar" data-name="calendar">
     <h2><span lang="en">November to July</span><span lang="th">พฤศจิกายนถึงกรกฎาคม</span></h2>
     <div class="months" id="months">
@@ -323,8 +424,9 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
     </div>
     <div class="agenda" data-for="nov">
       <div class="it"><span class="d"><span lang="en">This week</span><span lang="th">สัปดาห์นี้</span></span><span><span lang="en">Dehumidifier. Two drives. Donate page wording.</span><span lang="th">เครื่องลดความชื้น ฮาร์ดดิสก์สองลูก แก้หน้าบริจาค</span></span></div>
+      <div class="it"><span class="d">13 Nov</span><span><span lang="en">Grant draft ordered and paid: 11 days to write.</span><span lang="th">สั่งและจ่ายค่าร่างทุน: มีเวลาเขียน 11 วัน</span></span></div>
       <div class="it"><span class="d">24 Nov</span><span><span lang="en">Grant draft to the board.</span><span lang="th">ร่างใบสมัครถึงคณะกรรมการ</span></span></div>
-      <div class="it"><span class="d">30 Nov</span><span><span lang="en">Every director has given money or brought a donor.</span><span lang="th">กรรมการทุกคนให้เงินแล้ว หรือพาผู้บริจาคมาแล้ว</span></span></div>
+      <div class="it"><span class="d">30 Nov</span><span><span lang="en">Every non-indigenous director has given or brought donors.</span><span lang="th">กรรมการที่ไม่ใช่ชนพื้นเมืองทุกคนให้แล้ว หรือพาผู้บริจาคมาแล้ว</span></span></div>
     </div>
     <div class="agenda" data-for="dec" hidden>
       <div class="it"><span class="d">1 Dec</span><span><span lang="en">Grant in, before 19:00 Thai time.</span><span lang="th">ส่งใบสมัคร ก่อน 19:00 น. เวลาไทย</span></span></div>
@@ -332,7 +434,7 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
       <div class="it"><span class="d"><span lang="en">Dec</span><span lang="th">ธ.ค.</span></span><span><span lang="en">Sponsor evening at Melodies and Motifs, City Craft Space, before it closes on 10 January.</span><span lang="th">งานผู้สนับสนุนที่นิทรรศการ Melodies and Motifs, City Craft Space ก่อนปิด 10 ม.ค.</span></span></div>
     </div>
     <div class="agenda" data-for="jan" hidden>
-      <div class="it"><span class="d"><span lang="en">Jan</span><span lang="th">ม.ค.</span></span><span><span lang="en">The dry room, the board's gift.</span><span lang="th">ห้องแห้ง ของขวัญจากคณะกรรมการ</span></span></div>
+      <div class="it"><span class="d"><span lang="en">Jan</span><span lang="th">ม.ค.</span></span><span><span lang="en">The dry room, the board's gift, before the May rains.</span><span lang="th">ห้องแห้ง ของขวัญจากคณะกรรมการ ก่อนฝนเดือนพฤษภาคม</span></span></div>
       <div class="it"><span class="d">15 Jan</span><span><span lang="en">Firebird grant: Akha oral literature, with the school's Akha leaders.</span><span lang="th">ทุน Firebird: วรรณกรรมมุขปาฐะอาข่า ร่วมกับผู้นำอาข่าของโรงเรียน</span></span></div>
       <div class="it"><span class="d">31 Jan</span><span><span lang="en">A treasurer. Two seats for people who give or bring gifts. One page of numbers: what the school costs a year.</span><span lang="th">เหรัญญิกหนึ่งคน สองที่นั่งสำหรับผู้ให้หรือพาเงินเข้ามา ตัวเลขหนึ่งหน้า: โรงเรียนใช้เงินเท่าใดต่อปี</span></span></div>
     </div>
@@ -343,42 +445,21 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
     </div>
   </section>
 
-  <!-- 7 the board gives first -->
-  <section class="slide" id="board" data-name="board">
-    <h2><span lang="en">Give, get, or step aside</span><span lang="th">ให้ หา หรือถอยให้คนอื่น</span></h2>
-    <p class="lede"><span lang="en">Give money, get donors, or leave the seat. On American boards every director gives each year, and American donors ask about this first. BoardSource: 68% of nonprofits ask every board member for a yearly gift.</span><span lang="th">ให้เงิน หาผู้บริจาค หรือสละที่นั่ง ในคณะกรรมการแบบอเมริกัน กรรมการทุกคนให้ทุกปี และผู้บริจาคอเมริกันถามเรื่องนี้ก่อน BoardSource: องค์กรไม่แสวงกำไร 68% ขอให้กรรมการทุกคนบริจาคทุกปี</span></p>
-    <div class="boardwrap">
-      <div style="display:grid;gap:.6em;align-content:start">
-        <p class="small muted"><span lang="en">Six seats. Tap a seat as each director decides: give ฿10,000, give ฿20,000, or get: introduce three donors. A picture for the meeting; the counts reset when the page reloads.</span><span lang="th">หกที่นั่ง แตะเมื่อกรรมการแต่ละคนตัดสินใจ: ให้ 10,000 บาท ให้ 20,000 บาท หรือหา: แนะนำผู้บริจาคสามราย เป็นภาพให้ที่ประชุม ตัวเลขรีเซ็ตเมื่อโหลดหน้าใหม่</span></p>
-        <div class="chairs" id="chairs"></div>
-      </div>
-      <div class="meter">
-        <p class="kicker"><span lang="en">The dry room, ฿100,000</span><span lang="th">ห้องแห้ง 100,000 บาท</span></p>
-        <div class="track"><div class="fill" id="fill"></div></div>
-        <p class="tot" id="tot">฿0</p>
-        <p class="kicker"><span lang="en">Donors introduced</span><span lang="th">ผู้บริจาคที่แนะนำ</span></p>
-        <p class="tot" id="doors">0</p>
-        <p class="small muted"><span lang="en">Three each: a sponsor, a venue, a company.</span><span lang="th">คนละสามราย: ผู้สนับสนุน สถานที่จัดงาน บริษัท</span></p>
-      </div>
-    </div>
-    <div class="rule"><span lang="en">Hongdam works free while every non-indigenous director gives money or brings donors. Indigenous members and the Ethnic Advisory Council: we ask for advice, not money.</span><span lang="th">Hongdam ทำงานฟรีต่อ ตราบที่กรรมการที่ไม่ใช่ชนพื้นเมืองทุกคนให้เงินหรือพาผู้บริจาคมา สมาชิกชนพื้นเมืองและสภาที่ปรึกษาชาติพันธุ์: เราขอคำปรึกษา ไม่ขอเงิน</span></div>
-  </section>
-
-  <!-- 8 decisions -->
-  <section class="slide" id="asks" data-name="asks">
+  <!-- 10 decisions -->
+  <section class="slide tight" id="asks" data-name="asks">
     <h2><span lang="en">Decisions today</span><span lang="th">ข้อตัดสินใจวันนี้</span></h2>
-    <p class="mail"><span class="small muted"><span lang="en">Tap to tick as the board decides. Questions and decisions by email:</span><span lang="th">แตะเพื่อติ๊กเมื่อคณะกรรมการตัดสินใจ คำถามและข้อตัดสินใจทางอีเมล:</span></span> <code id="mail1">nan@motdang.net</code> <button class="copy" type="button" data-copy="nan@motdang.net"><span lang="en">Copy</span><span lang="th">คัดลอก</span></button></p>
+    <p class="mail"><span class="small muted"><span lang="en">Tap to tick as the board decides. Questions and decisions by email:</span><span lang="th">แตะเพื่อติ๊กเมื่อคณะกรรมการตัดสินใจ คำถามและข้อตัดสินใจทางอีเมล:</span></span> <code>nan@motdang.net</code> <button class="copy" type="button" data-copy="nan@motdang.net"><span lang="en">Copy</span><span lang="th">คัดลอก</span></button></p>
     <div class="asks">
       <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">British Museum grant: host, lead, grant and writer named today. Draft 24 November. In by 1 December.</span><span lang="th">ทุนบริติชมิวเซียม: เจ้าภาพ หัวหน้า ทุน และผู้เขียน ระบุวันนี้ ร่าง 24 พ.ย. ส่ง 1 ธ.ค.</span></span></button>
-      <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">Every non-indigenous director gives money or brings a donor by 30 November.</span><span lang="th">กรรมการที่ไม่ใช่ชนพื้นเมืองทุกคนให้เงินหรือพาผู้บริจาคมา ภายใน 30 พ.ย.</span></span></button>
-      <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">The board pays for the dry room together, ฿50,000–100,000, by January.</span><span lang="th">คณะกรรมการร่วมกันออกเงินห้องแห้ง 50,000–100,000 บาท ภายใน ม.ค.</span></span></button>
+      <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">Order the services, paid by Friday 13 November: grant draft US$1,000, safe copies US$700, instruments online US$1,500, village map US$1,000. Half in kind.</span><span lang="th">สั่งบริการ จ่ายภายในศุกร์ 13 พ.ย.: ร่างทุน 1,000 ดอลลาร์ สำเนาที่ปลอดภัย 700 เครื่องดนตรีค้นเจอ 1,500 แผนที่หมู่บ้าน 1,000 จ่ายครึ่งหนึ่งเป็นสิ่งของได้</span></span></button>
+      <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">Every non-indigenous director gives ฿10,000–20,000 or brings three donors by 30 November.</span><span lang="th">กรรมการที่ไม่ใช่ชนพื้นเมืองทุกคนให้ 10,000–20,000 บาท หรือพาผู้บริจาคสามราย ภายใน 30 พ.ย.</span></span></button>
+      <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">This week: the dehumidifier and two drives, ฿20,000, from the first two gifts. The dry room by January, ฿50,000–100,000.</span><span lang="th">สัปดาห์นี้: เครื่องลดความชื้นและฮาร์ดดิสก์สองลูก 20,000 บาท จากเงินสองก้อนแรก ห้องแห้งภายใน ม.ค. 50,000–100,000 บาท</span></span></button>
       <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">Victoria: CCA's Thai QR goes on the giving desk. The donate page names Fractured Atlas.</span><span lang="th">วิกตอเรีย: QR ไทยของ CCA ขึ้นโต๊ะรับบริจาค หน้าบริจาคระบุชื่อ Fractured Atlas</span></span></button>
       <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">A treasurer, two giving seats and one page of numbers by 31 January.</span><span lang="th">เหรัญญิกหนึ่งคน สองที่นั่งผู้ให้ และตัวเลขหนึ่งหน้า ภายใน 31 ม.ค.</span></span></button>
-      <button class="ask" type="button" aria-pressed="false"><span class="box"></span><span><span lang="en">Buy four services at Thai-friendly rates: safe copies US$700, British Museum draft US$1,000, village map US$1,000, instruments found online US$1,500. Half in kind. Work starts when payment arrives.</span><span lang="th">ซื้อบริการสี่อย่างในราคาที่เป็นมิตรกับไทย: สำเนาที่ปลอดภัย 700 ดอลลาร์ ร่างทุนบริติชมิวเซียม 1,000 แผนที่หมู่บ้าน 1,000 เครื่องดนตรีค้นเจอ 1,500 จ่ายครึ่งหนึ่งเป็นสิ่งของได้ งานเริ่มเมื่อได้รับเงิน</span></span></button>
     </div>
   </section>
 
-  <!-- 9 end -->
+  <!-- 11 end -->
   <section class="slide" id="end" data-name="end">
     <h1><span lang="en">Twenty years of work deserve a long life.</span><span lang="th">งานยี่สิบปีสมกับอายุที่ยืนยาว</span></h1>
     <div class="links">
@@ -388,7 +469,7 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
       <a href="https://culturalcrossroadsasia.org/instruments-by-ethnic-group/" target="_blank" rel="noopener">culturalcrossroadsasia.org/instruments-by-ethnic-group/</a>
       <p class="mail"><code>nan@motdang.net</code> <button class="copy" type="button" data-copy="nan@motdang.net"><span lang="en">Copy</span><span lang="th">คัดลอก</span></button></p>
     </div>
-    <p class="srcs"><span lang="en">Counts: culturalcrossroadsasia.org, 9 November 2026 (91 collection entries; 23 October search of nine instrument names). Grant: emkp.org, 2026/27 call and FAQs, read 9 November 2026. Board giving: BoardSource, "Board Members' Personal Contributions", via Bridgespan. Plan sent to the board 29 October 2026. Prepared by Hongdam, Chiang Rai.</span><span lang="th">ตัวเลข: culturalcrossroadsasia.org 9 พ.ย. 2569 (91 รายการ; ค้นชื่อเครื่องดนตรีเก้าชื่อ 23 ต.ค.) ทุน: emkp.org รอบ 2026/27 และคำถามที่พบบ่อย อ่าน 9 พ.ย. 2569 การให้ของกรรมการ: BoardSource ผ่าน Bridgespan แผนส่งถึงคณะกรรมการ 29 ต.ค. 2569 จัดทำโดย Hongdam เชียงราย</span></p>
+    <p class="srcs"><span lang="en">Exchange: x-rates.com, 10 Nov 2026 (US$1 = ฿33.37, £1 = ฿44.90). Drives: Backblaze Drive Stats 2025, 1.36% a year; three copies counted as failing apart. Mould: US National Park Service, Conserve O Gram 3/4, 65%. Humidity: chiangmai.net monthly averages. Grant writers: GrantWatch, 28 Oct 2026. Searches: nine instrument names, 23 Oct 2026; Wikipedia: Wikimedia page views, 60 days to 23 Oct 2026. Counts: culturalcrossroadsasia.org, 9 Nov 2026. Quote: Colin Pearson, in CCA's letter of 7 Nov 2026. Grant: emkp.org, 2026/27 call and FAQs. Board giving: BoardSource via Bridgespan. Land: CCA, 23 Oct 2026. Prepared by Hongdam, Chiang Rai.</span><span lang="th">อัตราแลกเปลี่ยน: x-rates.com 10 พ.ย. 2569 (1 ดอลลาร์ = 33.37 บาท 1 ปอนด์ = 44.90 บาท) ฮาร์ดดิสก์: Backblaze Drive Stats 2025 เสีย 1.36% ต่อปี สามสำเนาคิดแบบเสียแยกกัน เชื้อรา: กรมอุทยานแห่งชาติสหรัฐ Conserve O Gram 3/4, 65% ความชื้น: ค่าเฉลี่ยรายเดือน chiangmai.net นักเขียนขอทุน: GrantWatch 28 ต.ค. 2569 การค้น: ชื่อเครื่องดนตรีเก้าชื่อ 23 ต.ค. 2569 Wikipedia: ยอดเปิดหน้า Wikimedia 60 วันถึง 23 ต.ค. 2569 ตัวเลข: culturalcrossroadsasia.org 9 พ.ย. 2569 คำกล่าว: Colin Pearson ในจดหมาย CCA 7 พ.ย. 2569 ทุน: emkp.org รอบ 2026/27 และคำถามที่พบบ่อย การให้ของกรรมการ: BoardSource ผ่าน Bridgespan ที่ดิน: CCA 23 ต.ค. 2569 จัดทำโดย Hongdam เชียงราย</span></p>
   </section>
 
   <div class="bottom">
@@ -412,7 +493,6 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
   var lang='en';
   try{ lang=localStorage.getItem('cca-deck-lang')||'en' }catch(e){}
   function setLang(l){ lang=l; root.setAttribute('data-lang',l); root.lang=l; try{localStorage.setItem('cca-deck-lang',l)}catch(e){} renderBoard(); }
-  setLang(lang);
   document.getElementById('langbtn').addEventListener('click',function(){ setLang(lang==='en'?'th':'en') });
 
   // slides
@@ -439,21 +519,28 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
     else if(e.key==='l'||e.key==='L'){setLang(lang==='en'?'th':'en')}
   });
 
-  // cards that open
-  [].forEach.call(document.querySelectorAll('.card'),function(c){
-    c.addEventListener('click',function(){ var o=c.classList.toggle('open'); c.setAttribute('aria-expanded',o?'true':'false') });
+  // questions: open one, or all
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  function setCard(c,o){ c.classList.toggle('open',o); c.setAttribute('aria-expanded',o?'true':'false') }
+  cards.forEach(function(c){ c.addEventListener('click',function(){ setCard(c,!c.classList.contains('open')) }) });
+  var openall=document.getElementById('openall');
+  openall.addEventListener('click',function(){
+    var o=openall.getAttribute('aria-pressed')!=='true';
+    openall.setAttribute('aria-pressed',o?'true':'false');
+    openall.querySelector('[lang="en"]').textContent=o?'Close all':'Open all';
+    openall.querySelector('[lang="th"]').textContent=o?'ปิดทั้งหมด':'เปิดทั้งหมด';
+    cards.forEach(function(c){ setCard(c,o) });
   });
-  // ladder rungs and months
-  function picker(btnSel,panelSel,attr){
-    var btns=[].slice.call(document.querySelectorAll(btnSel));
-    var panels=[].slice.call(document.querySelectorAll(panelSel));
+
+  // months
+  (function(){
+    var btns=[].slice.call(document.querySelectorAll('.mo'));
+    var panels=[].slice.call(document.querySelectorAll('.agenda'));
     btns.forEach(function(b){ b.addEventListener('click',function(){
       btns.forEach(function(x){x.classList.toggle('on',x===b)});
-      panels.forEach(function(p){ p.hidden=p.dataset.for!==b.dataset[attr] });
+      panels.forEach(function(p){ p.hidden=p.dataset.for!==b.dataset.mo });
     })});
-  }
-  picker('.rung','.items','rung');
-  picker('.mo','.agenda','mo');
+  })();
 
   // grant decisions: options; data-one = pick one
   [].forEach.call(document.querySelectorAll('.opts'),function(g){
@@ -480,9 +567,11 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
     });
   });
 
-  // board: six chairs, tap to cycle
+  // board: six chairs, tap to cycle; the list ticks what the gifts buy
   var states=[0,0,0,0,0,0]; // 0 none, 1 gives 10k, 2 gives 20k, 3 gets
+  var MAX=120000;
   var chairs=document.getElementById('chairs');
+  var buys=[].slice.call(document.querySelectorAll('#buys .b'));
   var svg='<svg viewBox="0 0 64 64" aria-hidden="true"><rect class="seat" x="12" y="8" width="40" height="28" rx="6"/><rect class="seat" x="8" y="36" width="48" height="12" rx="4"/><rect class="seat" x="12" y="48" width="6" height="10"/><rect class="seat" x="46" y="48" width="6" height="10"/></svg>';
   function label(s){
     if(lang==='th') return ['—','ให้ 10,000','ให้ 20,000','พา 3 ราย'][s];
@@ -494,17 +583,18 @@ a{color:var(--indigo);text-decoration:underline;text-underline-offset:.18em}
     var gifts=0,doors=0;
     states.forEach(function(s,k){
       var b=document.createElement('button'); b.type='button'; b.className='chair'+(s===1||s===2?' give':s===3?' get':'');
-      b.setAttribute('aria-label',(lang==='th'?'ที่นั่ง ':'Seat ')+(k+1));
+      b.setAttribute('aria-label',(lang==='th'?'ที่นั่ง ':'Seat ')+(k+1)+': '+label(s));
       b.innerHTML=svg+'<span class="st">'+label(s)+'</span>';
       b.addEventListener('click',function(){ states[k]=(states[k]+1)%4; renderBoard() });
       chairs.appendChild(b);
       if(s===1)gifts+=10000; if(s===2)gifts+=20000; if(s===3)doors+=3;
     });
-    document.getElementById('fill').style.width=Math.min(100,gifts/1000)+'%';
+    document.getElementById('fill').style.width=Math.min(100,gifts/MAX*100)+'%';
     document.getElementById('tot').textContent='฿'+gifts.toLocaleString('en-US');
     document.getElementById('doors').textContent=String(doors);
+    buys.forEach(function(r){ r.classList.toggle('ok',gifts>=Number(r.dataset.at)) });
   }
-  renderBoard();
+  setLang(lang);
   fromHash();
 })();
 </script>
