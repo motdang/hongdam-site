@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/llama-cpp-1-0-0-removed-calls-fp8-kv-cache",
+  "kicker": "Hongdam Studio · AI models · 13 November 2026",
+  "title": "llama.cpp 1.0.0: what breaks, what it adds",
+  "th": "llama.cpp 1.0.0: ตัดฟังก์ชันเก่า 36 ตัว ถอด --defrag-thold และเพิ่ม KV cache แบบ FP8 บน CUDA",
+  "sub": "36 calls removed · FP8 KV cache · server locks down · 13 November 2026",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "28b8e826a5"
+ },
+ {
   "out": "og/studio/n/supabase-cli-v3-default-db-push-stops-in-ci",
   "kicker": "Hongdam Studio · Last mile · 10 November 2026",
   "title": "Supabase CLI v3: db push stops in CI",
