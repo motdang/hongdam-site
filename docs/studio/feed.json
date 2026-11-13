@@ -15,6 +15,109 @@
  ],
  "items": [
   {
+   "id": "https://hongdam.net/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/",
+   "url": "https://hongdam.net/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/",
+   "title": "llama.cpp 1.0.0: 36 deprecated calls removed, --defrag-thold gone, FP8 KV cache on CUDA",
+   "summary": "Out 13 November 2026, 10:20 UTC. Code on the old names stops compiling, a preset with defrag-thold stops the router, and -ctk f8_e4m3 halves the KV cache on NVIDIA GPUs. Homebrew still gives 0.9.0.",
+   "content_html": "<p>llama.cpp, the program that runs open-weight language models on your own computer, published version 1.0.0 on 13 November 2026 at 10:20 UTC <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. The release page itself says one line, that a new version is out, with a note promising more at 15:00 CET; the notes are in the pull request that bumped the version, merged at 09:06 UTC <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. It is the first major version, and under the versioning rules proposed in the project's own discussion a major number means a break in the public library interface or the server's inference endpoints <sup class=\"ref\"><a href=\"#s19\" aria-label=\"source 19\">19</a></sup>. Both happen here.</p>\n<h2 id=\"36-functions-and-one-flag-are-gone-from-the-head\">36 functions and one flag are gone from the header</h2>\n<p>The notes list the removal of <code>llama_set_warmup</code>, 35 deprecated functions, the <code>defrag_thold</code> field of the context parameters and the <code>--defrag-thold</code> command-line option <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup><sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. We read the two tagged headers on 13 November 2026: <code>llama.h</code> at v0.9.0 marks 36 functions <code>DEPRECATED</code> <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>; at v1.0.0 none is marked and none of the 36 is declared <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. A deprecated function is one that still works but carries a warning naming its replacement; since 1.0.0 the compiler reports the old name as undeclared instead.</p>\n<p>The 36 fall into five families, each with the replacement the v0.9.0 header names <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>:</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Removed, v0.9.0 header</th><th scope=\"col\">Replacement</th></tr></thead><tbody><tr><th scope=\"row\"><code>llama_load_model_from_file</code>, <code>llama_free_model</code>, <code>llama_new_context_with_model</code></th><td data-h=\"Replacement\"><code>llama_model_load_from_file</code>, <code>llama_model_free</code>, <code>llama_init_from_model</code></td></tr><tr><th scope=\"row\"><code>llama_n_ctx_train</code>, <code>llama_n_embd</code>, <code>llama_n_layer</code>, <code>llama_n_head</code>, <code>llama_n_vocab</code></th><td data-h=\"Replacement\"><code>llama_model_n_ctx_train</code>, <code>llama_model_n_embd</code>, <code>llama_model_n_layer</code>, <code>llama_model_n_head</code>, <code>llama_vocab_n_tokens</code></td></tr><tr><th scope=\"row\"><code>llama_get_state_size</code>, <code>llama_copy_state_data</code>, <code>llama_set_state_data</code>, <code>llama_load_session_file</code>, <code>llama_save_session_file</code></th><td data-h=\"Replacement\"><code>llama_state_get_size</code>, <code>llama_state_get_data</code>, <code>llama_state_set_data</code>, <code>llama_state_load_file</code>, <code>llama_state_save_file</code></td></tr><tr><th scope=\"row\"><code>llama_token_get_text</code>, <code>llama_token_get_score</code>, <code>llama_token_get_attr</code>, <code>llama_token_is_eog</code>, <code>llama_token_is_control</code>, <code>llama_token_bos</code>, <code>llama_token_eos</code>, <code>llama_token_eot</code>, <code>llama_token_cls</code>, <code>llama_token_sep</code>, <code>llama_token_nl</code>, <code>llama_token_pad</code>, <code>llama_add_bos_token</code>, <code>llama_add_eos_token</code>, the six <code>llama_token_fim_*</code>, <code>llama_vocab_cls</code></th><td data-h=\"Replacement\">the same name with <code>llama_vocab_</code> in place of <code>llama_token_</code>; <code>llama_vocab_get_add_bos</code>, <code>llama_vocab_get_add_eos</code></td></tr><tr><th scope=\"row\"><code>llama_set_warmup</code>, <code>llama_sampler_init_grammar_lazy</code></th><td data-h=\"Replacement\">warm-up runs in your own code; <code>llama_sampler_init_grammar_lazy_patterns</code></td></tr></tbody></table></div>\n<p>One grep finds every one of them in a code base:</p>\n<div class=\"code\"><pre data-lang=\"sh\"><code>grep -rnE &#x27;llama_(load_model_from_file|free_model|new_context_with_model|n_(ctx_train|embd|layer|head|vocab)|(get_state_size|copy_state_data|set_state_data|load_session_file|save_session_file)|token_(get_text|get_score|get_attr|is_eog|is_control|bos|eos|eot|cls|sep|nl|pad|fim_(pre|suf|mid|pad|rep|sep))|add_(bos|eos)_token|vocab_cls|set_warmup|sampler_init_grammar_lazy)\\s*\\(&#x27; .</code></pre></div>\n<p>The same change promotes the NextN and speculative-decoding functions, 18 of them, from the private <code>llama-ext.h</code> into <code>llama.h</code>, and renames <code>llama_set_embd_state_src</code> to <code>llama_set_ctx_state_src</code> <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup><sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. Speculative decoding is the trick of letting a small draft model guess several tokens that the big model then checks in one pass.</p>\n<p><code>--defrag-thold</code> matters beyond C code. The server's router rejects a key it does not know in a <code>--models-preset</code> file, so a preset that still sets <code>defrag-thold</code> stops the router at start-up with an \"option not recognized\" error, as a comment on the pull request reports <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<p>What stays: the <code>llama_batch</code> family. The v1.0.0 header still declares <code>llama_batch_init</code>, <code>llama_batch_get_one</code>, <code>llama_decode</code> and <code>llama_encode</code> next to the newer <code>llama_batch_ext</code> calls <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. A migration guide for it is an open pull request, and a reviewer there asked for a deprecation period before any removal <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</p>\n<h2 id=\"who-is-on-the-old-header-today\">Who is on the old header today</h2>\n<p>Anything compiled against <code>llama.h</code> by its old names: a C or C++ app, a Go, Rust, Dart or Swift binding, or a Python wheel that bundles the library. llama-cpp-python's newest wheel is 0.3.36 of 1 October 2026 <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>, and its main branch pins llama.cpp at a commit of 8 November 2026, four days before the prune merged <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>, so it builds and runs today; the break arrives the day it moves its pin. Homebrew's formula is at 0.9.0 on 13 November 2026 <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>, which is the version <code>brew install llama.cpp</code> gives.</p>\n<h2 id=\"fp8-kv-cache-8-bits-a-value-the-same-perplexity-\">FP8 KV cache: 8 bits a value, the same perplexity as 8-bit blocks, CUDA for now</h2>\n<p>The KV cache is the model's memory of the conversation so far, so that each new token is compared against the old ones without rereading them; at long contexts it is the biggest thing in the GPU after the weights. Version 1.0.0 adds an FP8 cache, chosen with <code>-ctk f8_e4m3 -ctv f8_e4m3</code>, with optional static per-tensor scales <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup><sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>. FP8 E4M3 is an 8-bit floating-point number with one sign bit, four exponent bits and three bits of mantissa. The list of cache types in <code>common/arg.cpp</code> at v1.0.0 now reads f32, f16, bf16, f8_e4m3, q8_0, q4_0, q4_1, iq4_nl, q5_0 and q5_1 <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>.</p>\n<figure class=\"chart\"><table><caption>Bits per cached value <span class=\"lo\">· lower is better</span></caption><tbody><tr><th scope=\"row\">f16</th><td><span class=\"bar\" style=\"--w:100.0%\"></span><span class=\"v\">16 bits</span></td></tr><tr><th scope=\"row\">q8_0</th><td><span class=\"bar\" style=\"--w:53.1%\"></span><span class=\"v\">8.5 bits</span></td></tr><tr><th scope=\"row\">f8_e4m3</th><td><span class=\"bar\" style=\"--w:50.0%\"></span><span class=\"v\">8 bits</span></td></tr><tr><th scope=\"row\">q4_0</th><td><span class=\"bar\" style=\"--w:28.1%\"></span><span class=\"v\">4.5 bits</span></td></tr></tbody></table><figcaption>From the block definitions in ggml-common.h at v1.0.0: q8_0 and q4_0 store a 16-bit scale per block of 32 values, half a bit each. f8_e4m3 stores one byte per value and no block scale.</figcaption></figure>\n<p>The <code>q8_0</code> block is 32 signed bytes and one 16-bit scale, 8.5 bits a value; <code>q4_0</code> is 32 four-bit values and the same scale, 4.5 bits <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>. So FP8 saves 6% over <code>q8_0</code> and half over <code>f16</code>, and what it buys is a format the GPU's tensor cores read directly rather than one the kernel has to decode first. The CUDA kernels came in on 11 November 2026, tested on an RTX PRO 4500, a Blackwell card <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. The author's quality table on that pull request, Wikitext-2 perplexity, where lower means the model predicts text better <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>:</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Model, 11 November 2026</th><th scope=\"col\">BF16 cache</th><th scope=\"col\">q8_0 cache</th><th scope=\"col\">FP8 E4M3 cache</th></tr></thead><tbody><tr><th scope=\"row\">NVFP4_fp8</th><td data-h=\"BF16 cache\">5.4527</td><td data-h=\"q8_0 cache\">5.4491</td><td data-h=\"FP8 E4M3 cache\">5.4550</td></tr><tr><th scope=\"row\">NVFP4_fp8_q8</th><td data-h=\"BF16 cache\">5.4727</td><td data-h=\"q8_0 cache\">5.4641</td><td data-h=\"FP8 E4M3 cache\">5.4812</td></tr></tbody></table></div>\n<p>The three columns sit within 0.02 of each other. The notes name FP8 kernels for CUDA and say nothing about FP8 on Metal, Apple's GPU, so what <code>-ctk f8_e4m3</code> does on a Mac is not in the release notes and not measured here. For an NVIDIA box serving long contexts, the move is one flag, and the memory comes back at the next restart.</p>\n<h2 id=\"the-server-refuses-more-by-default\">The server refuses more by default</h2>\n<p>Four changes land for <code>llama-server</code>, the HTTP server most apps talk to <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>:</p>\n<ul><li>With <code>--tools</code> or <code>--agent</code>, the web UI works on localhost by name or by its loopback number; any other host name on a loopback connection gets a 403. Behind a reverse proxy, <code>--agent</code> now needs <code>--cors-origins</code> set to the public origin, or the UI gets a 403. The fix closes DNS rebinding, where a page whose host name resolves to the loopback address could call <code>/tools</code> on a local server <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>.</li><li>Tools or MCP on a <code>--host</code> that is not loopback, with no API key, refuse to start unless <code>--allow-unauthenticated-tools</code> is passed <sup class=\"ref\"><a href=\"#s15\" aria-label=\"source 15\">15</a></sup>.</li><li>The CORS proxy no longer reaches local addresses at all, and a media URL on the LAN, a photo on a NAS for instance, needs <code>--media-allow-private-urls</code> <sup class=\"ref\"><a href=\"#s16\" aria-label=\"source 16\">16</a></sup>.</li><li><code>HF_TOKEN</code> goes only to huggingface.co hosts; a <code>--model-url</code> elsewhere no longer carries it, and <code>MODEL_ENDPOINT</code> is the explicit way to trust another host <sup class=\"ref\"><a href=\"#s17\" aria-label=\"source 17\">17</a></sup>.</li></ul>\n<h2 id=\"a-cache-for-mixture-of-experts-models-with-one-g\">A cache for mixture-of-experts models with one GPU</h2>\n<p>A mixture-of-experts model uses a small part of itself for each token. When the experts do not fit in the GPU, 1.0.0 leaves them in system RAM, caches some on the GPU, and computes a share of the misses on the CPU instead of copying them over, set with <code>--moe-cache-mib</code> and <code>--moe-cache-cpu-share</code>; <code>scripts/moe-cache-tune.py</code> runs the server at several settings and prints the ones that fit the machine <sup class=\"ref\"><a href=\"#s18\" aria-label=\"source 18\">18</a></sup>. The author's desktop example in the description runs at about 24 tokens a second with a 6,464 MiB cache and no CPU share, and at 83 with the recommended 24,000 MiB cache <sup class=\"ref\"><a href=\"#s18\" aria-label=\"source 18\">18</a></sup>; commenters with other cards report smaller gains, and some report that a high CPU share slows a machine with slow RAM, so the script's numbers for your own box are the ones that count.</p>\n<h2 id=\"getting-it\">Getting it</h2>\n<p>The release page links the nightly build b12359 for binaries; the macOS arm64 archive is 16.9 MB <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. From source: clone, <code>cmake -B build</code>, <code>cmake --build build --config Release</code>, with Metal on by default on a Mac <sup class=\"ref\"><a href=\"#s20\" aria-label=\"source 20\">20</a></sup>. The project's versioning discussion of 7 August 2026 describes weekly releases and semantic versioning, under which the next break of this size is a 2.0.0 <sup class=\"ref\"><a href=\"#s19\" aria-label=\"source 19\">19</a></sup>. Hongdam installs a local model and the server on a customer's own computer and pins the version that was tested <sup class=\"ref\"><a href=\"#s21\" aria-label=\"source 21\">21</a></sup>.</p>",
+   "date_published": "2026-11-13T06:00:00+07:00",
+   "tags": [
+    "models"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/studio/n/llama-cpp-1-0-0-removed-calls-fp8-kv-cache.jpg",
+   "_hongdam": {
+    "title_th": "llama.cpp 1.0.0: ตัดฟังก์ชันเก่า 36 ตัว ถอด --defrag-thold และเพิ่ม KV cache แบบ FP8 บน CUDA",
+    "summary_th": "ออกวันที่ 13 พฤศจิกายน 2569 เวลา 10:20 UTC โค้ดที่เรียกชื่อฟังก์ชันเก่าจะคอมไพล์ไม่ผ่าน พรีเซ็ตเซิร์ฟเวอร์ที่ยังมี defrag-thold จะทำให้ router ไม่สตาร์ต และ -ctk f8_e4m3 ลดขนาด KV cache ลงครึ่งหนึ่งบนการ์ด NVIDIA ส่วน Homebrew ยังให้เวอร์ชัน 0.9.0",
+    "sources": [
+     {
+      "t": "Release v1.0.0 · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0"
+     },
+     {
+      "t": "llama.cpp : bump version to 1.0.0 (#32190) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/32190"
+     },
+     {
+      "t": "llama : prune (#30565) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/30565"
+     },
+     {
+      "t": "include/llama.h at v0.9.0 · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/blob/v0.9.0/include/llama.h"
+     },
+     {
+      "t": "include/llama.h at v1.0.0 · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/blob/v1.0.0/include/llama.h"
+     },
+     {
+      "t": "docs: add migration guide for llama_batch (#32163) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/32163"
+     },
+     {
+      "t": "llama-cpp-python · PyPI",
+      "u": "https://pypi.org/project/llama-cpp-python/"
+     },
+     {
+      "t": "vendor · abetlen/llama-cpp-python",
+      "u": "https://github.com/abetlen/llama-cpp-python/tree/main/vendor"
+     },
+     {
+      "t": "llama.cpp · Homebrew Formulae",
+      "u": "https://formulae.brew.sh/formula/llama.cpp"
+     },
+     {
+      "t": "Add FP8 KV-cache support (#28392) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/28392"
+     },
+     {
+      "t": "CUDA: Add OCP FP8 support (#28413) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/28413"
+     },
+     {
+      "t": "common/arg.cpp at v1.0.0 · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/blob/v1.0.0/common/arg.cpp"
+     },
+     {
+      "t": "ggml/src/ggml-common.h at v1.0.0 · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/blob/v1.0.0/ggml/src/ggml-common.h"
+     },
+     {
+      "t": "server: fix --cors-origins handling + protect against DNS rebinding (#32098) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/32098"
+     },
+     {
+      "t": "server: explicit opt-in tools via non-loopback addr, check cors host port (#32113) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/32113"
+     },
+     {
+      "t": "server: disallow reaching local addresses from CORS proxy and media URLs (#32115) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/32115"
+     },
+     {
+      "t": "common : restrict HF token to huggingface.co hosts (#31730) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/31730"
+     },
+     {
+      "t": "llama_moe_cache: run missed experts on CPU, add tuning script (#30966) · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/pull/30966"
+     },
+     {
+      "t": "Releases and versioning of ggml-org projects · ggml-org/ggml discussion #1579",
+      "u": "https://github.com/ggml-org/ggml/discussions/1579"
+     },
+     {
+      "t": "Build llama.cpp locally · docs/build.md · ggml-org/llama.cpp",
+      "u": "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md"
+     },
+     {
+      "t": "Buy · Hongdam",
+      "u": "https://hongdam.net/buy/?c=ai-own"
+     }
+    ]
+   }
+  },
+  {
    "id": "https://hongdam.net/studio/notes/supabase-cli-v3-default-db-push-stops-in-ci/",
    "url": "https://hongdam.net/studio/notes/supabase-cli-v3-default-db-push-stops-in-ci/",
    "title": "Supabase CLI v3 is the default since 2 November: a CI db push now stops for a yes",

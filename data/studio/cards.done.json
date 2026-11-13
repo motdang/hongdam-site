@@ -19,5 +19,6 @@
  "og/studio/n/cloudflare-dns-scan-list-dkim-generated-names": "694816139b",
  "og/studio/n/week-workers-ai-deprecations-node-gemini": "3c6a179a44",
  "og/studio/n/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured": "dfc8bdd021",
- "og/studio/n/supabase-cli-v3-default-db-push-stops-in-ci": "666e39a5ac"
+ "og/studio/n/supabase-cli-v3-default-db-push-stops-in-ci": "666e39a5ac",
+ "og/studio/n/llama-cpp-1-0-0-removed-calls-fp8-kv-cache": "28b8e826a5"
 }
