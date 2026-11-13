@@ -15,6 +15,121 @@
  ],
  "items": [
   {
+   "id": "https://hongdam.net/studio/notes/ai-crawler-names-address-lists-reverse-dns/",
+   "url": "https://hongdam.net/studio/notes/ai-crawler-names-address-lists-reverse-dns/",
+   "title": "16 of 31 AI crawler names publish an address list, one signs; reverse DNS names 3 of 12",
+   "summary": "A user agent is a claim. Behind the 31 AI crawler names our traffic dashboard knows: 16 have a published address list, Exa signs, 6 give a name only. Reverse DNS fails on the AI companies' addresses. A 37-line checker.",
+   "content_html": "<p>Every request to a website carries a user agent, a line of text in which the program asking names itself. Our traffic dashboard, traffic-eye, sorts visitors by that line; its classifier knows 31 AI crawler names, from ClaudeBot to MistralAI-User <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Its README says what that is: a claim, since anyone can type Googlebot into the line <sup class=\"ref\"><a href=\"#s24\" aria-label=\"source 24\">24</a></sup>. Today we read the operator page behind each of the 31 names to see which claims can be checked, and measured the two ways of checking.</p>\n<h2 id=\"16-names-have-a-published-address-list-one-has-a\">16 names have a published address list, one has a signature, six have a name only</h2>\n<p>An address list is a file the operator publishes with the network ranges its crawler sends from, each range a prefix (a block of addresses written as a start and a size). Google publishes one for Googlebot. Read today, 14 November 2026, the AI operators have followed:</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Name in the classifier</th><th scope=\"col\">Operator's page says</th><th scope=\"col\">Prefixes in the list</th><th scope=\"col\">List dated</th></tr></thead><tbody><tr><th scope=\"row\">ClaudeBot, Claude-User, Claude-SearchBot</th><td data-h=\"Operator&#x27;s page says\">one list for the three; an address on it \"indicates that the crawler is coming from Anthropic\" <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup></td><td data-h=\"Prefixes in the list\">14</td><td data-h=\"List dated\">20 October 2026</td></tr><tr><th scope=\"row\">GPTBot</th><td data-h=\"Operator&#x27;s page says\">list <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup></td><td data-h=\"Prefixes in the list\">18</td><td data-h=\"List dated\">22 September 2026</td></tr><tr><th scope=\"row\">ChatGPT-User</th><td data-h=\"Operator&#x27;s page says\">list <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup></td><td data-h=\"Prefixes in the list\">237</td><td data-h=\"List dated\">6 November 2026</td></tr><tr><th scope=\"row\">OAI-SearchBot</th><td data-h=\"Operator&#x27;s page says\">list <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup></td><td data-h=\"Prefixes in the list\">39</td><td data-h=\"List dated\">2 January 2026</td></tr><tr><th scope=\"row\">Google-Extended</th><td data-h=\"Operator&#x27;s page says\">a robots.txt token, not a crawler; Googlebot's list applies <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup></td><td data-h=\"Prefixes in the list\">317</td><td data-h=\"List dated\">13 November 2026</td></tr><tr><th scope=\"row\">Applebot-Extended</th><td data-h=\"Operator&#x27;s page says\">the same, for Applebot; list and reverse DNS under applebot.apple.com <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup></td><td data-h=\"Prefixes in the list\">24</td><td data-h=\"List dated\">15 September 2026</td></tr><tr><th scope=\"row\">PerplexityBot, Perplexity-User</th><td data-h=\"Operator&#x27;s page says\">a list each <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup></td><td data-h=\"Prefixes in the list\">13, 10</td><td data-h=\"List dated\">28 October 2026</td></tr><tr><th scope=\"row\">DuckAssistBot</th><td data-h=\"Operator&#x27;s page says\">list <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup></td><td data-h=\"Prefixes in the list\">486</td><td data-h=\"List dated\">1 September 2026</td></tr><tr><th scope=\"row\">CCBot</th><td data-h=\"Operator&#x27;s page says\">list, and reverse DNS under crawl.commoncrawl.org <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup></td><td data-h=\"Prefixes in the list\">5</td><td data-h=\"List dated\">11 August 2026</td></tr><tr><th scope=\"row\">Amazonbot</th><td data-h=\"Operator&#x27;s page says\">list <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup></td><td data-h=\"Prefixes in the list\">1,292 single addresses</td><td data-h=\"List dated\">8 September 2026</td></tr><tr><th scope=\"row\">MistralAI-User</th><td data-h=\"Operator&#x27;s page says\">list; MistralAI-Training has none <sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup></td><td data-h=\"Prefixes in the list\">4</td><td data-h=\"List dated\">19 February 2025</td></tr><tr><th scope=\"row\">Reflectionbot</th><td data-h=\"Operator&#x27;s page says\">list, and reverse DNS under reflection.ai <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup></td><td data-h=\"Prefixes in the list\">2</td><td data-h=\"List dated\">22 September 2026</td></tr><tr><th scope=\"row\">KeenableBot</th><td data-h=\"Operator&#x27;s page says\">list; \"check the address, not the signature\" <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup></td><td data-h=\"Prefixes in the list\">30</td><td data-h=\"List dated\">9 October 2026</td></tr><tr><th scope=\"row\">ExaSearchBot</th><td data-h=\"Operator&#x27;s page says\">no list; every request signed, keys published <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup></td><td data-h=\"Prefixes in the list\">–</td><td data-h=\"List dated\">–</td></tr><tr><th scope=\"row\">meta-externalagent</th><td data-h=\"Operator&#x27;s page says\">names the user agents; says addresses are \"more secure\" but lists none <sup class=\"ref\"><a href=\"#s15\" aria-label=\"source 15\">15</a></sup></td><td data-h=\"Prefixes in the list\">–</td><td data-h=\"List dated\">–</td></tr><tr><th scope=\"row\">cohere-ai</th><td data-h=\"Operator&#x27;s page says\">the page's crawler table reads N/A: no crawler at present, no list <sup class=\"ref\"><a href=\"#s16\" aria-label=\"source 16\">16</a></sup></td><td data-h=\"Prefixes in the list\">–</td><td data-h=\"List dated\">–</td></tr><tr><th scope=\"row\">AI2Bot</th><td data-h=\"Operator&#x27;s page says\">user agent only <sup class=\"ref\"><a href=\"#s17\" aria-label=\"source 17\">17</a></sup></td><td data-h=\"Prefixes in the list\">–</td><td data-h=\"List dated\">–</td></tr><tr><th scope=\"row\">ElevenlabsCrawler</th><td data-h=\"Operator&#x27;s page says\">user agent only <sup class=\"ref\"><a href=\"#s18\" aria-label=\"source 18\">18</a></sup></td><td data-h=\"Prefixes in the list\">–</td><td data-h=\"List dated\">–</td></tr><tr><th scope=\"row\">Claude-Web, anthropic-ai</th><td data-h=\"Operator&#x27;s page says\">older names, absent from Anthropic's page today <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup></td><td data-h=\"Prefixes in the list\">–</td><td data-h=\"List dated\">–</td></tr></tbody></table></div>\n<p>That is 16 names an address list covers, one that signs, six with a user agent and nothing to check it against. The eight remaining names (Bytespider, Diffbot, YouBot, Timpibot, Omgilibot, ImagesiftBot, Kangaroo Bot, Webzio) have no operator page we read today; their status is unknown.</p>\n<p>Two things in the table are worth a second look. Bing's list carries a creation date of 3 January 2024, read from the file itself <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>; it is the oldest. And DuckDuckGo's DuckAssistBot list is byte-for-byte the DuckDuckBot list, 486 addresses, same date; the two bots share addresses.</p>\n<h2 id=\"reverse-dns-names-the-operator-for-3-lists-of-12\">Reverse DNS names the operator for 3 lists of 12</h2>\n<p>The older check, the one Google documents, is reverse DNS: ask the address for its name, confirm the name ends in the operator's domain, then ask the name for its address and confirm it matches <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. We ran that on three addresses from each of 12 lists, the first host of the first, middle and last prefix, measured today from Chiang Rai:</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">List</th><th scope=\"col\">Name the address gives back</th><th scope=\"col\">Operator named</th></tr></thead><tbody><tr><th scope=\"row\">Googlebot</th><td data-h=\"Name the address gives back\"><code>crawl-…googlebot.com</code>, all three <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup></td><td data-h=\"Operator named\">yes</td></tr><tr><th scope=\"row\">bingbot</th><td data-h=\"Name the address gives back\"><code>msnbot-…search.msn.com</code>, all three</td><td data-h=\"Operator named\">yes</td></tr><tr><th scope=\"row\">CCBot</th><td data-h=\"Name the address gives back\"><code>…crawl.commoncrawl.org</code>, all three <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup></td><td data-h=\"Operator named\">yes</td></tr><tr><th scope=\"row\">Applebot</th><td data-h=\"Name the address gives back\"><code>…applebot.apple.com</code> for one of three, none for two <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup></td><td data-h=\"Operator named\">partly</td></tr><tr><th scope=\"row\">DuckDuckBot</th><td data-h=\"Name the address gives back\"><code>…crawl.duckduckgo.com</code> for one of three, none for two</td><td data-h=\"Operator named\">partly</td></tr><tr><th scope=\"row\">Anthropic</th><td data-h=\"Name the address gives back\">Google Cloud's generic <code>…googleusercontent.com</code> for two, none for one</td><td data-h=\"Operator named\">no</td></tr><tr><th scope=\"row\">PerplexityBot, Perplexity-User</th><td data-h=\"Name the address gives back\">Amazon's generic <code>ec2-…amazonaws.com</code>, all three</td><td data-h=\"Operator named\">no</td></tr><tr><th scope=\"row\">Amazonbot</th><td data-h=\"Name the address gives back\">the same Amazon names</td><td data-h=\"Operator named\">no</td></tr><tr><th scope=\"row\">GPTBot, ChatGPT-User, OAI-SearchBot</th><td data-h=\"Name the address gives back\">no name at all, nine of nine</td><td data-h=\"Operator named\">no</td></tr></tbody></table></div>\n<p>The AI companies crawl from rented cloud addresses, and the cloud's reverse DNS names the cloud, not the tenant. A name under <code>amazonaws.com</code> says Amazon rents the address to someone; it does not say who. For ClaudeBot, GPTBot and PerplexityBot, the published list is the only check there is. Reflection's page says its addresses resolve under reflection.ai <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>; its two prefixes were not in our sample.</p>\n<h2 id=\"the-list-check-costs-under-a-millisecond-the-dns\">The list check costs under a millisecond, the DNS check 47</h2>\n<figure class=\"chart\"><table><caption>Milliseconds to check one address <span class=\"lo\">· lower is better</span></caption><tbody><tr><th scope=\"row\">Match, address on a list</th><td><span class=\"bar\" style=\"--w:0.3%\"></span><span class=\"v\">0.12 ms</span></td></tr><tr><th scope=\"row\">Match, address on no list</th><td><span class=\"bar\" style=\"--w:0.9%\"></span><span class=\"v\">0.41 ms</span></td></tr><tr><th scope=\"row\">Reverse DNS lookup</th><td><span class=\"bar\" style=\"--w:100.0%\"></span><span class=\"v\">47 ms</span></td></tr></tbody></table><figcaption>Median of 20 runs each, 14 November 2026, from Chiang Rai. The match is a plain scan over the 1,714 prefixes in the checker's 15 lists, in Python; a tree would be faster.</figcaption></figure>\n<p>The classifier's own comment explains why it stops at the user agent: reverse DNS \"costs a lookup on every request\" <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. The list check does not. The 15 lists the checker below reads are 1,714 prefixes and 105 kilobytes together, fetched once a day and loaded into memory; the match is arithmetic. For a Cloudflare Worker that means one scheduled fetch into KV (Cloudflare's key-value store) and a lookup per request that costs no network call.</p>\n<p>This is the checker, 37 lines, tested today against Googlebot's and Anthropic's lists. Amazonbot is missing from it: Amazon's list is embedded in a web page, with no file address to fetch <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>.</p>\n<div class=\"code\"><pre data-lang=\"python\"><code>#!/usr/bin/env python3\n&quot;&quot;&quot;Is this request from the crawler it claims to be?  crawler_check.py &lt;ip&gt; &quot;&lt;user-agent&gt;&quot; &quot;&quot;&quot;\nimport ipaddress, json, re, sys, urllib.request\n\nLISTS = {  # user-agent token -&gt; the operator&#x27;s published address list\n    r&quot;ClaudeBot|Claude-User|Claude-SearchBot&quot;: &quot;https://claude.com/crawling/bots.json&quot;,\n    r&quot;GPTBot&quot;: &quot;https://openai.com/gptbot.json&quot;,\n    r&quot;ChatGPT-User&quot;: &quot;https://openai.com/chatgpt-user.json&quot;,\n    r&quot;OAI-SearchBot&quot;: &quot;https://openai.com/searchbot.json&quot;,\n    r&quot;Googlebot|Google-Extended&quot;: &quot;https://developers.google.com/static/crawling/ipranges/common-crawlers.json&quot;,\n    r&quot;bingbot&quot;: &quot;https://www.bing.com/toolbox/bingbot.json&quot;,\n    r&quot;Applebot&quot;: &quot;https://search.developer.apple.com/applebot.json&quot;,\n    r&quot;PerplexityBot&quot;: &quot;https://www.perplexity.com/perplexitybot.json&quot;,\n    r&quot;Perplexity-User&quot;: &quot;https://www.perplexity.com/perplexity-user.json&quot;,\n    r&quot;DuckDuckBot&quot;: &quot;https://duckduckgo.com/duckduckbot.json&quot;,\n    r&quot;DuckAssistBot&quot;: &quot;https://duckduckgo.com/duckassistbot.json&quot;,\n    r&quot;CCBot&quot;: &quot;https://index.commoncrawl.org/ccbot.json&quot;,\n    r&quot;MistralAI-User&quot;: &quot;https://mistral.ai/mistralai-user-ips.json&quot;,\n    r&quot;Reflectionbot&quot;: &quot;https://reflection.ai/bot/ips.json&quot;,\n    r&quot;KeenableBot&quot;: &quot;https://app.keenable.ai/bot/keenablebot.json&quot;,\n}\n\ndef prefixes(url):\n    req = urllib.request.Request(url, headers={&quot;User-Agent&quot;: &quot;crawler-check/1.0&quot;})\n    with urllib.request.urlopen(req, timeout=20) as r:\n        data = json.load(r)\n    return [ipaddress.ip_network(p.get(&quot;ipv4Prefix&quot;) or p.get(&quot;ipv6Prefix&quot;), strict=False) for p in data[&quot;prefixes&quot;]]\n\ndef check(ip, ua):\n    ip = ipaddress.ip_address(ip)\n    for pat, url in LISTS.items():\n        m = re.search(pat, ua, re.I)\n        if m:\n            hit = any(ip in n for n in prefixes(url))\n            return &quot;verified&quot; if hit else &quot;claims %s, address not on its list&quot; % m.group(0)\n    return &quot;no published list for this user agent&quot;\n\nif __name__ == &quot;__main__&quot;:\n    print(check(sys.argv[1], sys.argv[2]))</code></pre></div>\n<p>A request that says Googlebot from an address outside Google's list is the case the check exists for: on a shop's logs that is a scraper wearing a costume, and the costume is the reason it gets past a robots.txt that blocks scrapers by name. A request that says meta-externalagent cannot be checked this way at all; Meta's page offers no list <sup class=\"ref\"><a href=\"#s15\" aria-label=\"source 15\">15</a></sup>.</p>\n<h2 id=\"the-signature-route-two-key-directories-answer-t\">The signature route: two key directories answer today, the draft that defines them has expired</h2>\n<p>Web Bot Auth is the newer idea: the crawler signs each request with a private key and names, in a <code>Signature-Agent</code> header, the site where its public key is published, at a fixed path, <code>/.well-known/http-message-signatures-directory</code> <sup class=\"ref\"><a href=\"#s19\" aria-label=\"source 19\">19</a></sup>. The site receiving the request fetches the key once and checks the signature; the address the request came from no longer matters. Exa's page says its crawler does this and that user-agent strings \"can be spoofed, so don't trust the string alone\" <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>. Fetched today, Exa's directory answers with one Ed25519 key (a signature algorithm) and is itself signed; so does the directory at chatgpt.com, one key, with a <code>purpose</code> field reading <code>ai</code> and an expiry a week out. Keenable's page says its requests carry no signature yet <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>.</p>\n<p>The protocol document is draft-meunier-webbotauth-httpsig-protocol, version 02 of 18 August 2026, an individual submission, expired and archived on the IETF's tracker <sup class=\"ref\"><a href=\"#s20\" aria-label=\"source 20\">20</a></sup>. The keys are live; the standard that would make them portable is not finished. Cloudflare validates these signatures for sites behind its proxy and accepts either a signature or an address list as the proof for its verified-bots directory <sup class=\"ref\"><a href=\"#s21\" aria-label=\"source 21\">21</a></sup>. The yes-or-no field that exposes the result to your own rules, <code>cf.bot_management.verified_bot</code>, \"Requires a Cloudflare Enterprise plan with Bot Management enabled\" <sup class=\"ref\"><a href=\"#s22\" aria-label=\"source 22\">22</a></sup>. What every plan gets is AI Crawl Control, a dashboard of AI crawler activity, \"Available on all plans\" <sup class=\"ref\"><a href=\"#s23\" aria-label=\"source 23\">23</a></sup>; the page does not say how it separates a verified crawler from a costume, so for a Worker of your own, the lists above are the check you can run.</p>\n<h2 id=\"what-to-do-with-a-crawler-log-this-week\">What to do with a crawler log this week</h2>\n<ol><li>For each AI name in your logs, find it in the first table. A name with a list gets the checker; a name without one is a claim and stays labelled as one.</li><li>Fetch the lists once a day. Five of the lists in the first table carry a date inside the last four weeks (Anthropic, ChatGPT-User, Perplexity's two, Googlebot's on 13 November); a list a month old misses new ranges and flags the crawler itself as a costume.</li><li>Read the reverse DNS result only for Google, Bing, Common Crawl and the two partials; for the AI companies' addresses it says Amazon or Google Cloud, which is not an answer.</li><li>A <code>Signature-Agent</code> header in a request is worth logging now, before it is common: today it names Exa or chatgpt.com, and the count of signed requests on your site is a number nobody has for you.</li></ol>",
+   "date_published": "2026-11-14T06:00:00+07:00",
+   "tags": [
+    "security"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/studio/n/ai-crawler-names-address-lists-reverse-dns.jpg",
+   "_hongdam": {
+    "title_th": "ชื่อบอท AI 31 ชื่อ มี 16 ชื่อที่เจ้าของประกาศรายการ IP และ 1 ชื่อที่เซ็นคำขอ ส่วน reverse DNS บอกเจ้าของได้แค่ 3 จาก 12 รายการ",
+    "summary_th": "ชื่อ user agent เป็นแค่คำกล่าวอ้าง เราอ่านหน้าทางการของบอท AI ทั้ง 31 ชื่อที่แดชบอร์ดนับผู้เข้าชมของเรารู้จัก: 16 ชื่อมีรายการ IP ที่เจ้าของประกาศ Exa เซ็นคำขอด้วยกุญแจ ส่วนอีก 6 ชื่อให้แค่ชื่อ reverse DNS แบบที่ใช้ตรวจ Googlebot ใช้กับ IP ของบริษัท AI ไม่ได้ พร้อมสคริปต์ตรวจ 37 บรรทัด",
+    "sources": [
+     {
+      "t": "src/classify.js · motdang/traffic-eye",
+      "u": "https://github.com/motdang/traffic-eye/blob/main/src/classify.js"
+     },
+     {
+      "t": "Does Anthropic crawl data from the web, and how can site owners block the crawler? · Claude Help Center",
+      "u": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler"
+     },
+     {
+      "t": "Overview of OpenAI Crawlers · OpenAI Developers",
+      "u": "https://developers.openai.com/api/docs/bots"
+     },
+     {
+      "t": "Verifying Googlebot and Other Google Crawlers · Google Search Central",
+      "u": "https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot"
+     },
+     {
+      "t": "bingbot.json · Bing",
+      "u": "https://www.bing.com/toolbox/bingbot.json"
+     },
+     {
+      "t": "About Applebot · Apple Support",
+      "u": "https://support.apple.com/en-us/119829"
+     },
+     {
+      "t": "Perplexity Crawlers · Perplexity docs",
+      "u": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+     },
+     {
+      "t": "DuckAssistBot · DuckDuckGo Help Pages",
+      "u": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/"
+     },
+     {
+      "t": "Frequently Asked Questions · Common Crawl",
+      "u": "https://commoncrawl.org/faq"
+     },
+     {
+      "t": "Amazonbot · Amazon Developer",
+      "u": "https://developer.amazon.com/amazonbot"
+     },
+     {
+      "t": "Mistral AI Robots · Mistral docs",
+      "u": "https://docs.mistral.ai/robots"
+     },
+     {
+      "t": "Reflectionbot · Reflection AI",
+      "u": "https://reflection.ai/legal/reflectionbot"
+     },
+     {
+      "t": "KeenableBot · Keenable",
+      "u": "https://app.keenable.ai/bot"
+     },
+     {
+      "t": "Exa Search Crawler",
+      "u": "https://crawler.exa.ai/"
+     },
+     {
+      "t": "Meta Web Crawlers · Meta for Developers",
+      "u": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/"
+     },
+     {
+      "t": "Cohere Web Crawlers · Cohere docs",
+      "u": "https://docs.cohere.com/docs/cohere-web-crawlers"
+     },
+     {
+      "t": "AI2 crawler · Allen Institute for AI",
+      "u": "https://allenai.org/crawler"
+     },
+     {
+      "t": "Bots · ElevenLabs docs",
+      "u": "https://elevenlabs.io/docs/bots"
+     },
+     {
+      "t": "Web Bot Auth · Cloudflare Bots docs",
+      "u": "https://developers.cloudflare.com/bots/concepts/bot/verified-bots/web-bot-auth/"
+     },
+     {
+      "t": "draft-meunier-webbotauth-httpsig-protocol · IETF Datatracker",
+      "u": "https://datatracker.ietf.org/doc/draft-meunier-webbotauth-httpsig-protocol/"
+     },
+     {
+      "t": "Verified bots · Cloudflare Bots docs",
+      "u": "https://developers.cloudflare.com/bots/concepts/bot/verified-bots/"
+     },
+     {
+      "t": "cf.bot_management.verified_bot · Cloudflare Ruleset Engine docs",
+      "u": "https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.bot_management.verified_bot/"
+     },
+     {
+      "t": "AI Crawl Control · Cloudflare docs",
+      "u": "https://developers.cloudflare.com/ai-crawl-control/"
+     },
+     {
+      "t": "README · motdang/traffic-eye",
+      "u": "https://github.com/motdang/traffic-eye/blob/main/README.md"
+     }
+    ]
+   }
+  },
+  {
    "id": "https://hongdam.net/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/",
    "url": "https://hongdam.net/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/",
    "title": "llama.cpp 1.0.0: 36 deprecated calls removed, --defrag-thold gone, FP8 KV cache on CUDA",
