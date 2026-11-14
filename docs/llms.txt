@@ -631,6 +631,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-11-14 · 16 of 31 AI crawler names publish an address list, one signs; reverse DNS names 3 of 12 — https://hongdam.net/studio/notes/ai-crawler-names-address-lists-reverse-dns/
 - 2026-11-13 · llama.cpp 1.0.0: 36 deprecated calls removed, --defrag-thold gone, FP8 KV cache on CUDA — https://hongdam.net/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/
 - 2026-11-10 · Supabase CLI v3 is the default since 2 November: a CI db push now stops for a yes — https://hongdam.net/studio/notes/supabase-cli-v3-default-db-push-stops-in-ci/
 - 2026-11-09 · GLM-5.3 Flash's replacements: Gemma 4 26B costs less per task, Qwen3.8 27B 3.6 times more — https://hongdam.net/studio/notes/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured/
@@ -642,7 +643,6 @@ JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the 
 - 2026-11-03 · Vercel now blocks bad npm packages; the npm in every Node LTS still runs install scripts — https://hongdam.net/studio/notes/npm-install-scripts-before-vercel/
 - 2026-11-02 · GLM-5.3 on Workers AI sent 155 replies with other customers' text, all with HTTP 200 — https://hongdam.net/studio/notes/glm-5-3-leak-canary-test/
 - 2026-11-01 · The week: Supabase stops exposing new tables, Brotli exploited, Mistral Large 4 weights — https://hongdam.net/studio/notes/week-supabase-grants-brotli-mistral/
-- 2026-10-31 · Link cards: each Mastodon server fetches your page, Bluesky freezes the card — https://hongdam.net/studio/notes/link-cards-mastodon-bluesky/
 
 ## The work
 

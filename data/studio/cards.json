@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/ai-crawler-names-address-lists-reverse-dns",
+  "kicker": "Hongdam Studio · Security · 14 November 2026",
+  "title": "Which AI crawler is it, really?",
+  "th": "ชื่อบอท AI 31 ชื่อ มี 16 ชื่อที่เจ้าของประกาศรายการ IP และ 1 ชื่อที่เซ็นคำขอ ส่วน reverse DNS บอกเจ้าของได้แค่ 3 จาก 12 รายการ",
+  "sub": "16 address lists, one signature, a check under 1 ms",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "474baf0df7"
+ },
+ {
   "out": "og/studio/n/llama-cpp-1-0-0-removed-calls-fp8-kv-cache",
   "kicker": "Hongdam Studio · AI models · 13 November 2026",
   "title": "llama.cpp 1.0.0: what breaks, what it adds",
