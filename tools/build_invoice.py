@@ -9,6 +9,7 @@ Each page is unlisted (random slug, noindex) and carries its own pay links. It w
 A baht invoice ("currency": "THB", "promptpay": "<id>") shows a PromptPay QR for the exact amount and takes
 the payment slip; /api/pay/invoice asks SlipOK about it, with the amount read from
 functions/_invoices_data.js, which this build writes (her ask 2026-11-05, FERC's HD-FERC-2026-01).
+"paid": "<words>" shows the words in place of the pay links and leaves the invoice out of the slip check.
 """
 import html, json, pathlib, segno, io
 
@@ -93,7 +94,9 @@ def page(inv):
         for i in inv["items"])
     bill = "<br>".join(e(l) for l in inv["bill_to"])
     notes = "".join(f"<p>{e(n)}</p>" for n in inv.get("notes", []))
-    if CUR == "THB":
+    if inv.get("paid"):
+        ways = [f'<div class="way"><h3>Paid</h3><p>{e(inv["paid"])}</p></div>']
+    elif CUR == "THB":
         ways = baht_ways(inv, total)
     else:
         ways = [f'<div class="way"><p><a class="btn big" href="{PAYPAL}" target="_blank" rel="noopener">Pay with PayPal</a></p>'
@@ -131,7 +134,7 @@ def page(inv):
 <p class="note">Reference <code>{e(inv["number"])}</code></p>
 </section>
 </main>
-<script>{SLIP_JS if CUR == "THB" else ""}
+<script>{SLIP_JS if CUR == "THB" and not inv.get("paid") else ""}
 document.querySelectorAll('button[data-copy]').forEach(b=>b.onclick=()=>{{
   navigator.clipboard.writeText(b.dataset.copy).then(()=>{{b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1500)}});
 }});
@@ -148,7 +151,7 @@ FROM_THB = "motdang.net Co., Ltd., trading as Hongdam · juristic person no. 057
 def main():
     invs = json.loads(DATA.read_text())
     thb = {i["slug"]: {"number": i["number"], "baht": sum(x["amount"] for x in i["items"]), "mail": i.get("mail", "")}
-           for i in invs if i.get("currency") == "THB"}
+           for i in invs if i.get("currency") == "THB" and not i.get("paid")}
     (ROOT / "functions" / "_invoices_data.js").write_text(
         "// Written by tools/build_invoice.py from data/invoices.json: baht invoices the slip check knows.\n"
         f"export const INVOICES = {json.dumps(thb, indent=2, ensure_ascii=False)}\n")

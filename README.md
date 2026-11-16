@@ -250,3 +250,7 @@ studio-notes, writes a note each morning in a clean clone, `../studio-desk`.
 `python3 tools/dns_move_check.py before <domain>` saves what the old nameservers answer (mail records, website names, DNSSEC);
 `compare <domain> <cloudflare ns>` asks Cloudflare's nameservers the same before the switch and exits 1 on a missing mail record;
 `after <domain>` repeats it through the public internet. Snapshots go to `dns-move/` (not in git).
+
+## Agreements: read, sign and pay on one page
+
+`hongdam.net/agreement/<slug>/` (her ask 2026-11-16, FERC's Myriad exit, ฿9,000 paid half and half). Words in `data/agreements.json`; `python3 tools/build_agreement.py` writes the pages and `functions/_agreements_data.js` (each agreement's plain text and its SHA-256); `--txt <slug> <out.txt>` writes the same words as plain text. The client presses Sign (`POST /api/agree`, `functions/api/agree.js`); the first signature goes in `agree_sign` in D1 `hongdam-tasks` (`migrations/0013_agree.sql`) with the hash of the words signed, and is mailed with the words to the agreement's `mail` list. `DELETE /api/agree?slug=…` with `Bearer TASKS_ADMIN` undoes a signature made by mistake. The page's pay box is the agreement's invoice in `data/invoices.json` (PromptPay QR + SlipOK); an invoice with `"paid"` shows the words in place of the pay links. `node tests/agree.test.mjs`.
