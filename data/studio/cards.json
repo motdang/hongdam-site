@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/supabase-cbc-ciphers-removed-9-of-163-clients-fail",
+  "kicker": "Hongdam Studio · Last mile · 17 November 2026",
+  "title": "Supabase: four TLS ciphers are off",
+  "th": "Supabase ปิด cipher ของ TLS 1.2 สี่ชุดแล้ว: ไคลเอนต์ที่บันทึกไว้ 9 จาก 163 ตัวเชื่อมต่อไม่ได้",
+  "sub": "9 of 163 recorded clients now fail",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "d9179dd99b"
+ },
+ {
   "out": "og/studio/n/inkling-2-small-reasoning-effort-none-still-thinks",
   "kicker": "Hongdam Studio · AI models · 16 November 2026",
   "title": "reasoning_effort none still thinks",
