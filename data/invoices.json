@@ -31,8 +31,8 @@
     "slug": "hd-ferc-2026-01-dc3800dd",
     "number": "HD-FERC-2026-01",
     "currency": "THB",
-    "issued": "The day the agreement is signed",
-    "due": "14 days after that",
+    "issued": "November 2026",
+    "due": "Paid",
     "bill_to": [
       "Foundation for the Education of Rural Children (FERC)",
       "Chiang Mai, Thailand",
@@ -40,9 +40,35 @@
     ],
     "items": [
       {
-        "name": "Closing FERC's accounts with Myriad USA, Myriad Australia and every.org",
-        "detail": "And bringing the balances home. Service agreement with motdang.net Co., Ltd., trading as Hongdam. Paid once.",
-        "amount": 9000
+        "name": "Closing FERC's accounts with Myriad USA, Myriad Australia and every.org: first half",
+        "detail": "Half of the ฿9,000 fee in the service agreement between FERC and motdang.net Co., Ltd., trading as Hongdam.",
+        "amount": 4500
+      }
+    ],
+    "notes": [
+      "The second half, ฿4,500, is invoice HD-FERC-2026-02, due when the work is finished.",
+      "If FERC withholds tax on this payment, please send the withholding certificate (50 Tawi) to beer@motdang.net."
+    ],
+    "promptpay": "0988239210",
+    "mail": "beer@motdang.net",
+    "paid": "Paid. Thank you."
+  },
+  {
+    "slug": "hd-ferc-2026-02-55c68250",
+    "number": "HD-FERC-2026-02",
+    "currency": "THB",
+    "issued": "16 November 2026",
+    "due": "14 days after Hongdam emails that the work is finished",
+    "bill_to": [
+      "Foundation for the Education of Rural Children (FERC)",
+      "Chiang Mai, Thailand",
+      "Attn: Alberto Cosi, Treasurer"
+    ],
+    "items": [
+      {
+        "name": "Closing FERC's accounts with Myriad USA, Myriad Australia and every.org: second half",
+        "detail": "Half of the ฿9,000 fee in the service agreement between FERC and motdang.net Co., Ltd., trading as Hongdam. The first half, invoice HD-FERC-2026-01, is paid.",
+        "amount": 4500
       }
     ],
     "notes": [

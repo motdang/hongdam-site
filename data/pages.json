@@ -368,6 +368,23 @@
      "sub": "Jede Frage öffnet ihren Service."
     }
    }
+  },
+  "agreement": {
+   "path": null,
+   "lang": "en",
+   "cat": null,
+   "mark": "coin",
+   "stops": [
+    "page",
+    "coin",
+    "done"
+   ],
+   "card": {
+    "og": "og/agreement.jpg",
+    "big": "agreement",
+    "small": "สัญญา",
+    "sub": "Hongdam · Chiang Rai, Thailand"
+   }
   }
  },
  "task_groups_about": "The link card of each group and kind of work on /tasks/c/ (tools/build_task_cards.py): the shop category whose line colour it takes, its mark and its stops.",

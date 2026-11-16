@@ -85,7 +85,7 @@ def check():
             s = open(path, encoding="utf-8", errors="replace").read()
             head = s.split("</head>")[0]
             say = lambda m: problems.append("%s: %s" % (rel, m))
-            noindex = bool(re.search(r'<meta name="robots" content="[^"]*noindex', head)) or rel.startswith(("for/", "invoice/"))
+            noindex = bool(re.search(r'<meta name="robots" content="[^"]*noindex', head)) or rel.startswith(("for/", "invoice/", "agreement/"))
             if not noindex:
                 for what, pat in (("title", r"<title>[^<]+</title>"), ("description", r'<meta name="description" content="[^"]+"'), ("canonical", r'<link rel="canonical" href="https://')):
                     if not re.search(pat, head):
