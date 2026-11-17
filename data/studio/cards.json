@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/openssh-10-6p2-alpine-musl-password-bypass-fixed",
+  "kicker": "Hongdam Studio · Security · 18 November 2026",
+  "title": "Alpine: a 300-byte password got in",
+  "th": "OpenSSH 10.6p2 ปิดช่องรหัสผ่าน 300 ไบต์ที่ล็อกอิน sshd บน Alpine ได้: แก้แล้วทุกสาขา",
+  "sub": "OpenSSH 10.6p2 fixes the musl crypt bypass",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "f514adb563"
+ },
+ {
   "out": "og/studio/n/supabase-cbc-ciphers-removed-9-of-163-clients-fail",
   "kicker": "Hongdam Studio · Last mile · 17 November 2026",
   "title": "Supabase: four TLS ciphers are off",
