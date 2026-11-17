@@ -11,6 +11,7 @@
 import { KINDS, prices, counts, slotWeek, weekStart, walk, OPENED } from '../../_bots.js'
 import { checkSlip } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { spamWhy } from '../../_spam.js'
 import { wheelOrTell, pageDraft } from '../../_wheel.js'
 
 // its ticket on the Team Wheel (functions/_wheel.js)
@@ -56,13 +57,15 @@ async function book(ctx, b, now) {
   const week = slotWeek(kind, c, now)
   const ref = 'NB-' + crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6, '0').slice(-6)
   const pct = price.unit === '%' ? price.price : null
-  await db.prepare('INSERT INTO bot_order (ref, kind, site, contact, note, baht, usd, pct, week, created_at, ip) VALUES (?,?,?,?,?,?,?,?,?,?,?)')
-    .bind(ref, kind, site, contact, note, price.baht, price.usd, pct, week, new Date(now).toISOString(), ip).run()
+  // spam: stored void (no slot taken), told to no one
+  const spam = spamWhy({ what: `${site}\n${note}`, name: contact })
+  await db.prepare('INSERT INTO bot_order (ref, kind, site, contact, note, baht, usd, pct, week, created_at, ip, state) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)')
+    .bind(ref, kind, site, contact, note, price.baht, price.usd, pct, week, new Date(now).toISOString(), ip, spam ? 'void' : 'bought').run()
   const starts = Math.max(now, weekStart(week))
   const cost = pct ? `${pct}% of what it earns, first year, nothing to pay in advance` : `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}${price.monthly ? ' a month' : ''}`
   const lines = [`${KINDS[kind].en} for ${site}`, cost,
     `Slot from ${new Date(starts).toISOString().slice(0, 10)}`, `Contact: ${contact}`, note && `Note: ${note}`, `Ref ${ref}`].filter(Boolean)
-  ctx.waitUntil(Promise.all([wheelOrTell(env, `Bots ${ref} · ${KINDS[kind].en}`, lines, botDraft({ ref, kind, site, baht: price.baht, usd: price.usd, cost, contact, note, slot: new Date(starts).toISOString().slice(0, 10) })), mail(env, `Bots purchase ${ref} — ${KINDS[kind].en}`, lines.join('\n'), contact)]))
+  if (!spam) ctx.waitUntil(Promise.all([wheelOrTell(env, `Bots ${ref} · ${KINDS[kind].en}`, lines, botDraft({ ref, kind, site, baht: price.baht, usd: price.usd, cost, contact, note, slot: new Date(starts).toISOString().slice(0, 10) })), mail(env, `Bots purchase ${ref} — ${KINDS[kind].en}`, lines.join('\n'), contact)]))
   return json({ ok: true, ref, kind, site, baht: price.baht, usd: price.usd, pct, monthly: price.monthly, slot_from: new Date(starts).toISOString(),
     pay: pct ? { line: PAY.line } : { ...PAY, paypal: `${PAY.paypal}/${price.usd}USD` } })
 }

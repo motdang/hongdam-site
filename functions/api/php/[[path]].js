@@ -14,6 +14,7 @@ import { KINDS, allCounts, pricesFrom, prices, slotWeek, RULE } from '../../_php
 import { weekStart, bkk } from '../../_github.js'
 import { checkSlip } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { spamWhy } from '../../_spam.js'
 import { wheelOrTell, pageDraft } from '../../_wheel.js'
 
 // its ticket on the Team Wheel (functions/_wheel.js)
@@ -79,12 +80,14 @@ async function book(ctx, b, now) {
   const cs = await allCounts(db, now)
   const price = pricesFrom(cs, now).find((p) => p.id === kind)
   const week = slotWeek(kind, cs[kind], now)
+  // spam: stored void (no slot taken), told to no one
+  const spam = spamWhy({ what: `${site}\n${note}`, name: contact })
   let ref = ''
   for (let i = 0; i < 3 && !ref; i++) {
     const r = newRef()
     try {
-      await db.prepare('INSERT INTO php_order (ref, kind, site, php, contact, note, baht, usd, week, created_at, ip) VALUES (?,?,?,?,?,?,?,?,?,?,?)')
-        .bind(r, kind, site, php || null, contact, note, price.baht, price.usd, week, new Date(now).toISOString(), null).run()
+      await db.prepare('INSERT INTO php_order (ref, kind, site, php, contact, note, baht, usd, week, created_at, ip, state) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)')
+        .bind(r, kind, site, php || null, contact, note, price.baht, price.usd, week, new Date(now).toISOString(), null, spam ? 'void' : 'booked').run()
       ref = r
     } catch { /* a ref taken, or the database busy: try another */ }
   }
@@ -92,7 +95,7 @@ async function book(ctx, b, now) {
   const starts = Math.max(now, weekStart(week))
   const lines = [`${KINDS[kind].en}: ${site}`, php && `PHP reported: ${php}`, `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}`,
     `Slot from ${bkk(starts)}`, `Contact: ${code(contact)}`, note && `Note: ${code(note)}`, `Ref ${ref}`].filter(Boolean)
-  ctx.waitUntil(Promise.all([wheelOrTell(env, `PHP ${ref} · ${site}`, lines, phpDraft({ ref, kind, site, php, baht: price.baht, usd: price.usd, contact, note, slot: bkk(starts) })), mail(env, `PHP fix booking ${ref} — ${site}`, lines.join('\n'), contact)]))
+  if (!spam) ctx.waitUntil(Promise.all([wheelOrTell(env, `PHP ${ref} · ${site}`, lines, phpDraft({ ref, kind, site, php, baht: price.baht, usd: price.usd, contact, note, slot: bkk(starts) })), mail(env, `PHP fix booking ${ref} — ${site}`, lines.join('\n'), contact)]))
   return json({ ok: true, ref, kind, site, baht: price.baht, usd: price.usd, slot_from: new Date(starts).toISOString(),
     pay: { ...PAY, paypal: `${PAY.paypal}/${price.usd}USD` } })
 }
