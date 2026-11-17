@@ -632,6 +632,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-11-17 · Supabase turned off four TLS 1.2 ciphers: 9 of 163 recorded clients now fail to connect — https://hongdam.net/studio/notes/supabase-cbc-ciphers-removed-9-of-163-clients-fail/
 - 2026-11-16 · Inkling 2 Small on Workers AI: reasoning_effort none still thinks, and bills for it — https://hongdam.net/studio/notes/inkling-2-small-reasoning-effort-none-still-thinks/
 - 2026-11-15 · The week: a Workers spending limit, Node.js fixes 16 flaws, GitHub's brownout on Monday — https://hongdam.net/studio/notes/week-workers-spend-limits-node-fixes-brownout/
 - 2026-11-14 · 16 of 31 AI crawler names publish an address list, one signs; reverse DNS names 3 of 12 — https://hongdam.net/studio/notes/ai-crawler-names-address-lists-reverse-dns/
@@ -643,7 +644,6 @@ JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the 
 - 2026-11-06 · Running totals over 32 changes: 0 of 10 in one go, 10 of 10 writing each step — https://hongdam.net/studio/notes/state-tracking-one-go-vs-written-steps/
 - 2026-11-05 · n8n 3.0: npm installs end, Code nodes time out at a minute, no way back to 2.x — https://hongdam.net/studio/notes/n8n-3-npm-ends-timeouts-no-way-back/
 - 2026-11-04 · WordPress's upgrade-window flaw: partial updates carry no installer, full ones do — https://hongdam.net/studio/notes/wordpress-upgrade-window-partial-vs-full/
-- 2026-11-03 · Vercel now blocks bad npm packages; the npm in every Node LTS still runs install scripts — https://hongdam.net/studio/notes/npm-install-scripts-before-vercel/
 
 ## The work
 
