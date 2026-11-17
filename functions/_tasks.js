@@ -20,6 +20,7 @@
  * under 60%: down, fewer than three answers: no change).
  */
 import { GRAPH } from './api/_taskgraph.js'
+import { spamWhy, defang } from './_spam.js'
 
 export const L = GRAPH.ladder
 export const ORGS = GRAPH.orgs
@@ -207,10 +208,11 @@ function token() {
 
 export async function tell(env, title, lines) {
   if (!env.DISCORD_TASKS) return
-  const body = { username: 'Hongdam tasks', content: lines.join('\n').slice(0, 1900), thread_name: title.slice(0, 95), allowed_mentions: { parse: [] } }
+  // flags 4: no link previews in the note
+  const body = { username: 'Hongdam tasks', content: lines.join('\n').slice(0, 1900), thread_name: title.slice(0, 95), allowed_mentions: { parse: [] }, flags: 4 }
   try {
     const r = await fetch(env.DISCORD_TASKS + '?wait=false', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })
-    if (!r.ok) await fetch(env.DISCORD_TASKS, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ username: body.username, content: body.content, allowed_mentions: { parse: [] } }) })
+    if (!r.ok) await fetch(env.DISCORD_TASKS, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ username: body.username, content: body.content, allowed_mentions: { parse: [] }, flags: 4 }) })
   } catch { /* the post stands without the note */ }
 }
 
@@ -220,6 +222,7 @@ export async function createTask(ctx, b) {
   const title = clean(b.title, LIM.title), what = cleanBody(b.what, LIM.what)
   const contact = clean(b.contact, LIM.contact)
   let cat = clean(b.cat, 40)
+  const known = !!CAT[cat]
   const catNew = clean(b.cat_new, LIM.cat_new)
   const up = clean(b.up, 40)
   if (title.length < 3) return { status: 400, error: 'A title, 3 to 120 characters · ชื่องาน 3–120 ตัวอักษร' }
@@ -239,7 +242,8 @@ export async function createTask(ctx, b) {
   let kind = 'none', price = null
   if (wantsShoup) { kind = 'shoup'; price = L[rungOf(named ?? catB ?? 500)] }
   else if (named) { kind = 'fixed'; price = Math.round(named * 100) / 100 }
-  const held = await looksUnsafe(env, `${title}\n${what}\n${catNew}`)
+  const spam = spamWhy({ title, what, name: clean(b.name, LIM.name), catNew, known })
+  const held = !!spam || await looksUnsafe(env, `${title}\n${what}\n${catNew}`)
   const tok = token()
   const r = await db.prepare(`INSERT INTO task (src, poster, cat, cat_new, by, title, what, place, contact, price_kind, baht, unit, slots, token, state, created_at, shoup_at, ip)
     VALUES ('user', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 3, ?, ?, ?, ?, ?)`).bind(
@@ -251,8 +255,13 @@ export async function createTask(ctx, b) {
     await db.prepare(`INSERT INTO answer (task_id, org, kind, name, baht, created_at) VALUES (?, ?, 'offer', ?, ?, ?)`)
       .bind(id, org, ORGS[org].en, catB, iso(now)).run()
   }
-  ctx.waitUntil(tell(env, `#${id} ${title}`, [
-    `${held ? 'HELD · ' : ''}New task #${id} · ${CAT[cat].en}${catNew ? ` · named: ${catNew}` : ''}`,
+  if (spam) { /* stored held, no note */ }
+  else if (held) ctx.waitUntil(tell(env, `#${id} held by the safety check`, [
+    `HELD · New task #${id} · ${CAT[cat].en}${catNew ? ` · named: ${defang(catNew)}` : ''}`,
+    defang(title), what ? defang(what).slice(0, 300) : '', `Contact: ${defang(contact)}`,
+  ].filter(Boolean)))
+  else ctx.waitUntil(tell(env, `#${id} ${title}`, [
+    `New task #${id} · ${CAT[cat].en}${catNew ? ` · named: ${catNew}` : ''}`,
     `${title}`, what ? what.slice(0, 600) : '', `Pay: ${kind === 'shoup' ? `Shoup from ${baht(price)}` : kind === 'fixed' ? baht(price) : 'asks for quotes'}`,
     `Contact: ${contact}`, `Answered by: ${who.map((o) => ORGS[o].en).join(', ')}`, `${ORIGIN}/tasks/${id}`,
   ].filter(Boolean)))
@@ -271,11 +280,15 @@ export async function createAnswer(ctx, id, b) {
   if (!(await spend(env, ip, 'a', LIM.answersPerDay, now))) return { status: 429, error: `${LIM.answersPerDay} answers a day` }
   const kind = t.src === 'ours' ? 'take' : 'offer'
   const named = Number(String(b.baht ?? '').replace(/[^\d.]/g, '')) || null
-  const held = await looksUnsafe(env, `${name}\n${note}`)
+  const spam = spamWhy({ what: note, name })
+  const held = !!spam || await looksUnsafe(env, `${name}\n${note}`)
   const r = await db.prepare(`INSERT INTO answer (task_id, kind, name, note, baht, contact, state, created_at, ip) VALUES (?,?,?,?,?,?,?,?,?)`)
     .bind(id, kind, name, note || null, kind === 'offer' ? named : null, contact, held ? 'held' : 'up', iso(now), ip).run()
-  ctx.waitUntil(tell(env, `#${id} ${t.title}`, [
-    `${held ? 'HELD · ' : ''}${kind === 'take' ? 'Taken' : 'Answer'} on #${id} by ${name}${named ? ` at ${baht(named)}` : ''}`,
+  if (!spam) ctx.waitUntil(tell(env, `#${id} ${t.title}`, held ? [
+    `HELD · ${kind === 'take' ? 'Taken' : 'Answer'} on #${id} by ${defang(name)}`,
+    note ? defang(note).slice(0, 300) : '', `Contact: ${defang(contact)}`,
+  ].filter(Boolean) : [
+    `${kind === 'take' ? 'Taken' : 'Answer'} on #${id} by ${name}${named ? ` at ${baht(named)}` : ''}`,
     note ? note.slice(0, 500) : '', `Contact: ${contact}`, `${ORIGIN}/tasks/${id}`,
   ].filter(Boolean)))
   return { status: 201, id: r.meta.last_row_id, kind, held }
