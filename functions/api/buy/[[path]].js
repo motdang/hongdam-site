@@ -39,6 +39,7 @@ import { quote, walkedPrices, payLinks } from '../../_shop.js'
 import { record, whoHash } from '../../_services.js'
 import { checkSlip, slipOn } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { spamWhy } from '../../_spam.js'
 import { tryOnce, sweep } from '../../_tries.js'
 import { rates, conv, CURS } from '../../_fx.js'
 import { cardOn, startCard, finishCard } from '../../_paypal.js'
@@ -149,12 +150,14 @@ async function order(ctx, b, now) {
   if (!db) return json({ ok: false, why: 'off' }, 503)
   const p = await payIn(env, q, CURS.includes(b.pay) ? b.pay : q.cur)
   const payCol = p.cur !== q.cur || p.thb !== (q.cur === 'THB' ? q.due : 0) ? JSON.stringify(p) : null
+  // spam: stored void, no demand counted, told to no one
+  const spam = spamWhy({ what: note, name: contact })
   let ref = '', cols = !!payCol
   for (let i = 0; i < 4 && !ref; i++) {
     const r = newRef()
     try {
-      await db.prepare(`INSERT INTO svc_buy (ref, card, opt, qty, addon, total, due, cur, contact, note, lang, created_at${cols ? ', pay' : ''}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?${cols ? ',?' : ''})`)
-        .bind(r, card, q.opt, q.qty, q.addon || 0, q.total, q.due, q.cur, contact, note || null, lang, new Date(now).toISOString(), ...(cols ? [payCol] : [])).run()
+      await db.prepare(`INSERT INTO svc_buy (ref, card, opt, qty, addon, total, due, cur, contact, note, lang, created_at, state${cols ? ', pay' : ''}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?${cols ? ',?' : ''})`)
+        .bind(r, card, q.opt, q.qty, q.addon || 0, q.total, q.due, q.cur, contact, note || null, lang, new Date(now).toISOString(), spam ? 'void' : 'booked', ...(cols ? [payCol] : [])).run()
       ref = r
     } catch (e) {
       if (cols && /pay/.test(String(e && e.message))) cols = false   // 0011 not applied yet: the order without the column
@@ -163,7 +166,7 @@ async function order(ctx, b, now) {
   }
   if (!ref) return json({ ok: false, why: 'off' }, 500)
   const o = { ref, card, ...q, contact, note, lang, pay: payCol }
-  ctx.waitUntil(Promise.all([
+  if (!spam) ctx.waitUntil(Promise.all([
     record(db, q.opt, await whoHash(contact), 'buy', now),
     q.addon && record(db, CARDS[card].add.id, await whoHash(contact), 'buy', now),
     notify(env, card, `Order ${ref} · ${CARDS[card].en}`, ['New order, not paid yet', ...lineOf(o)], `Order ${ref} — ${CARDS[card].en} — ${money(p.due, p.cur)} due`, contact, wheelOf(o)),

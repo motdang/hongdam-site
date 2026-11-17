@@ -12,6 +12,7 @@
  */
 import { whoHash } from '../_services.js'
 import { tell } from '../_tasks.js'
+import { spamWhy } from '../_spam.js'
 import { tryOnce } from '../_tries.js'
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
@@ -45,7 +46,7 @@ export async function onRequestPost(ctx) {
     await env.TASKS.prepare('INSERT INTO svc_rate (page, lang, score, text, who, created_at) VALUES (?, ?, ?, ?, ?, ?)')
       .bind(page, lang, score, text || null, ip ? await whoHash(ip) : null, new Date(now).toISOString()).run()
   } catch { stored = false }   // svc_rate not on this database yet: the note to #help-desk still goes
-  if (score === 'better' || text || !stored) {
+  if (!spamWhy({ what: text }) && (score === 'better' || text || !stored)) {
     ctx.waitUntil(tell(env, `Translation · ${LANGS[lang]} · ${page}`.slice(0, 95), [
       score === 'better' && `A reader of the ${LANGS[lang]} page ${page} says the translation could be better.`,
       score === 'good' ? `A reader of the ${LANGS[lang]} page ${page} says the translation is good.` : text ? `Their correction: ${code(text)}` : 'No correction written.',

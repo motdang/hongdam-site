@@ -11,6 +11,7 @@
 import { KINDS, prices, counts, slotWeek, weekStart, walk, OPENED } from '../../_github.js'
 import { checkSlip } from '../pay/_verify.js'
 import { tell } from '../../_tasks.js'
+import { spamWhy } from '../../_spam.js'
 import { wheelOrTell, pageDraft } from '../../_wheel.js'
 
 // its ticket on the Team Wheel (functions/_wheel.js)
@@ -56,12 +57,14 @@ async function book(ctx, b, now) {
   const price = walk(kind, c, OPENED, now)
   const week = slotWeek(kind, c, now)
   const ref = 'GH-' + crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6, '0').slice(-6)
-  await db.prepare('INSERT INTO gh_order (ref, kind, login, contact, note, baht, usd, week, created_at, ip) VALUES (?,?,?,?,?,?,?,?,?,?)')
-    .bind(ref, kind, login, contact, note, price.baht, price.usd, week, new Date(now).toISOString(), ip).run()
+  // spam: stored void (no slot taken), told to no one
+  const spam = spamWhy({ what: `${login}\n${note}`, name: contact })
+  await db.prepare('INSERT INTO gh_order (ref, kind, login, contact, note, baht, usd, week, created_at, ip, state) VALUES (?,?,?,?,?,?,?,?,?,?,?)')
+    .bind(ref, kind, login, contact, note, price.baht, price.usd, week, new Date(now).toISOString(), ip, spam ? 'void' : 'booked').run()
   const starts = Math.max(now, weekStart(week))
   const lines = [`${KINDS[kind].en} for github.com/${login}`, `฿${price.baht.toLocaleString('en-US')} · US$${price.usd}`,
     `Slot from ${new Date(starts).toISOString().slice(0, 10)}`, `Contact: ${contact}`, note && `Note: ${note}`, `Ref ${ref}`].filter(Boolean)
-  ctx.waitUntil(Promise.all([wheelOrTell(env, `GitHub ${ref} · ${login}`, lines, ghDraft({ ref, kind, login, baht: price.baht, usd: price.usd, contact, note, slot: new Date(starts).toISOString().slice(0, 10) })), mail(env, `GitHub booking ${ref} — ${login}`, lines.join('\n'), contact)]))
+  if (!spam) ctx.waitUntil(Promise.all([wheelOrTell(env, `GitHub ${ref} · ${login}`, lines, ghDraft({ ref, kind, login, baht: price.baht, usd: price.usd, contact, note, slot: new Date(starts).toISOString().slice(0, 10) })), mail(env, `GitHub booking ${ref} — ${login}`, lines.join('\n'), contact)]))
   return json({ ok: true, ref, kind, login, baht: price.baht, usd: price.usd, slot_from: new Date(starts).toISOString(),
     pay: { ...PAY, paypal: `${PAY.paypal}/${price.usd}USD` } })
 }
