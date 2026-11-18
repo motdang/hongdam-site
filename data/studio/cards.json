@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/n8n-global-credential-runs-stop-blanking",
+  "kicker": "Hongdam Studio · Automation · 19 November 2026",
+  "title": "Your n8n run went blank?",
+  "th": "n8n 2.48.4 และ 2.47.7 เลิกปิดบังหน้าดูผลการรันของ workflow ที่ใช้ credential ส่วนกลาง",
+  "sub": "What 2.48.4 and 2.47.7 bring back",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "794ba5b9f4"
+ },
+ {
   "out": "og/studio/n/openssh-10-6p2-alpine-musl-password-bypass-fixed",
   "kicker": "Hongdam Studio · Security · 18 November 2026",
   "title": "Alpine: a 300-byte password got in",
