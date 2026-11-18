@@ -91,11 +91,11 @@
   {
    "db": "coin",
    "t": {
-    "en": "You pay the ajarn for the yant and the offering directly. Transport is at cost.",
-    "th": "คุณจ่ายค่ายันต์และเครื่องไหว้ครูให้อาจารย์โดยตรง ค่าเดินทางคิดตามจริง",
-    "my": "သင်က ယန္တရားနှင့် ပူဇော်ပစ္စည်းအတွက် ဆရာကို တိုက်ရိုက် ပေးသည်။ ခရီးစရိတ်မှာ အရင်းအတိုင်း ဖြစ်သည်။",
-    "zh": "符的费用和供养直接付给法师。交通费按实际计。",
-    "de": "Sie bezahlen den Ajarn für das Yant und die Opfergabe direkt. Der Transport wird zum Selbstkostenpreis berechnet."
+    "en": "Not in our fee: you pay the ajarn for the yant and the offering, on the day. Transport is at the price we pay.",
+    "th": "ไม่รวมในค่าบริการของเรา: ค่ายันต์และเครื่องไหว้ครู คุณจ่ายให้อาจารย์โดยตรงในวันสัก ค่าเดินทางคิดตามราคาจริงที่เราจ่าย",
+    "my": "ကျွန်ုပ်တို့ ဝန်ဆောင်ခတွင် မပါ — ယန္တရားနှင့် ပူဇော်ပစ္စည်းအတွက် ထိုးသည့်နေ့တွင် ဆရာကို သင် တိုက်ရိုက် ပေးသည်။ ခရီးစရိတ်ကို ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ယူသည်။",
+    "zh": "不含在我们的服务费内：刺符费用和供品，当天由您直接付给法师。交通费按实付价格。",
+    "de": "Nicht in unserer Gebühr: Den Yant und die Opfergabe bezahlen Sie am Tag direkt an den Ajarn. Die Fahrt kostet, was wir dafür zahlen."
    },
    "who": {
     "en": "You",

@@ -650,7 +650,9 @@ function ladders(root = document) {
 }
 
 // Search, on any page that has the box: every language's words, whatever the page's language.
-const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${(c.page || c.go) ? `<a href="${esc(c.page || c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
+// "Not in our fee: …" with its label in bold (the label runs to the first colon, ":" or "：")
+const exHtml = (t) => { const m = /^([^:：]*[:：])(.*)$/s.exec(t || ''); return m ? `<b>${esc(m[1])}</b>${esc(m[2])}` : esc(t || '') }
+const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${(c.page || c.go) ? `<a href="${esc(c.page || c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>${c.ex ? `<p class="ex">${exHtml(c.ex)}</p>` : ''}` +
   (c.walk ? `<details class="ladder" data-svc="${esc(c.walk)}" hidden></details>` : '') +
   (c.go ? shareHtml(c) + `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
 // the card's Share button, as tools/build_shop.py share_btn() writes it; assets/share.js does the sharing
@@ -769,7 +771,8 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
   const addN = () => Math.max(1, Math.min(card.add.max || 8, parseInt(f.elements.addonQty.value, 10) || 1))
   const n = () => (opt.unit ? Math.max(1, Math.min(opt.max || 99, parseInt(qty.value, 10) || 1)) : 1)
   function redraw() {
-    $('#odesc', root).textContent = opt.d || ''
+    // what the option is, then what its price does not cover (her word 2026-11-18)
+    $('#odesc', root).innerHTML = esc(opt.d || '') + (opt.ex ? `<span class="ex">${exHtml(opt.ex)}</span>` : '')
     $('.qtyrow', root).hidden = !opt.unit
     const ad = $('.addon', root), on = !!addOn(opt)
     if (ad) { ad.hidden = !on; if (!on) f.elements.addon.checked = false }

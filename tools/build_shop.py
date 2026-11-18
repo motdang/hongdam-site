@@ -327,6 +327,36 @@ def share_btn(lang, href="", title="", need=""):
         ' data-need="%s"' % need if need else "", SHARE_ICON, E(word))
 
 
+END = {"en": ".", "de": ".", "zh": "。", "my": "။", "th": ""}
+
+
+def ex_text(item, lang):
+    """What a price does not cover (data/services.json "ex"), as one line after its label: "Not in our fee: the
+    clinic's fees, paid to the clinic." (her word 2026-11-18: our fee must say plainly what it does not include)."""
+    ex = (ITEMS.get(item) or {}).get("ex")
+    if not ex:
+        return ""
+    t = tr(ex, lang)
+    return "%s %s%s" % (SHOP["ui"][lang]["notFee"], t, "" if t.endswith((".", "。", "။")) else END.get(lang, "."))
+
+
+def ex_html(text, lang):
+    """The same line for a page: its label in bold, the rest with its prices marked."""
+    lab = SHOP["ui"][lang]["notFee"]
+    if not text.startswith(lab):
+        return mark_money(E(text))
+    return "<b>%s</b>%s" % (E(lab), mark_money(E(text[len(lab):])))
+
+
+def card_ex(c, lang):
+    """The card's line on what its price does not cover: its first option that has one."""
+    for o in c.get("opts", []):
+        t = ex_text(o["i"], lang)
+        if t:
+            return t
+    return ""
+
+
 def card_html(c, lang):
     go, btn = go_of(c, lang)
     pic = pic_of(c)
@@ -335,6 +365,8 @@ def card_html(c, lang):
     name = '<a href="%s">%s</a>' % (E(to), E(tr(c["n"], lang))) if to else E(tr(c["n"], lang))
     out = '<li class="card" id="%s" style="--line:var(--c-%s)">%s<h3>%s</h3><p class="price">%s</p><p class="l">%s</p>' % (
         E(c["id"]), E(c["cat"]), job(pic, lang, name="job-" + c["id"]) if pic else "", name, card_price(c, lang), E(tr(c["l"], lang)))
+    if card_ex(c, lang):
+        out += '<p class="ex">%s</p>' % ex_html(card_ex(c, lang), lang)
     if walks(c):
         out += '<details class="ladder" data-svc="%s" hidden></details>' % E(walks(c))
     if c["act"] == "list":
@@ -382,9 +414,13 @@ def client_cards(lang):
                       "per": (" / " + unit_one(o.get("u"), lang)) if o.get("u") else ""}
                 if it.get("d_" + lang):
                     od["d"] = it["d_" + lang]
+                if ex_text(o["i"], lang):
+                    od["ex"] = ex_text(o["i"], lang)
                 d["opts"].append(od)
             if c.get("add"):
                 d["add"] = add_rule(c, lang)
+        if card_ex(c, lang):
+            d["ex"] = card_ex(c, lang)
         d["cat"] = c["cat"]
         if pic_of(c):
             d["pic"] = pic_of(c)

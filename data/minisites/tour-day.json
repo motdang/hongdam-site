@@ -19,7 +19,7 @@
   {
    "db": "calendar",
    "t": {
-    "en": "The car and a licensed guide are booked for the day; fuel is paid at cost.",
+    "en": "The car and a licensed guide are booked for the day; fuel is paid at the price we pay.",
     "th": "จองรถและไกด์ที่มีใบอนุญาตสำหรับหนึ่งวัน ค่าน้ำมันคิดตามจริง",
     "my": "ကားနှင့် လိုင်စင်ရ ဧည့်လမ်းညွှန်ကို တစ်ရက်စာ ဘွတ်ကင်လုပ်ပေးသည်။ လောင်စာဆီကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
     "zh": "为这一天订好车和持证导游；油费按实际费用支付。",
@@ -67,7 +67,7 @@
   {
    "db": "coin",
    "t": {
-    "en": "Entries, boat and lunch are paid at cost.",
+    "en": "Entries, boat and lunch are paid at the price we pay.",
     "th": "ค่าเข้า ค่าเรือ และอาหารกลางวันคิดตามจริง",
     "my": "ဝင်ခွင့်ကြေး၊ လှေခနှင့် နေ့လည်စာကို ကုန်ကျစရိတ်အတိုင်း ပေးချေရသည်။",
     "zh": "门票、船费和午餐按实际费用结算。",

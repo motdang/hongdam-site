@@ -313,6 +313,8 @@ def llms_block(data, graph, live):
         for it in s["items"]:
             p = it["p_en"].replace("{price}", live.get(it.get("live") or "services/" + it["id"], "")).replace("{tail}", live.get("services/" + it["id"] + "#tail", ""))
             line = "- %s — %s. %s" % (it["en"], p, it["d_en"])
+            if it.get("ex"):
+                line += " Not in our fee: %s." % it["ex"]["en"]
             if it.get("href"):
                 href = it["href"] if it["href"].startswith("http") else SITE + it["href"]
                 line += " " + href

@@ -125,7 +125,8 @@
    "offrampt": "Crypto to baht",
    "buyAgain": "Order again",
    "askedRef": "Your request number: {ref}",
-   "payRest": "The rest, paid when the work is done"
+   "payRest": "The rest, paid when the work is done",
+   "notFee": "Not in our fee:"
   },
   "th": {
    "title": "หงส์ดำ — เราทำงานให้คุณ · เชียงราย",
@@ -238,7 +239,8 @@
    "offrampt": "คริปโตเป็นเงินบาท",
    "buyAgain": "สั่งอีกครั้ง",
    "askedRef": "หมายเลขคำขอของคุณ: {ref}",
-   "payRest": "ส่วนที่เหลือ จ่ายเมื่องานเสร็จ"
+   "payRest": "ส่วนที่เหลือ จ่ายเมื่องานเสร็จ",
+   "notFee": "ไม่รวมในค่าบริการของเรา:"
   },
   "my": {
    "title": "Hongdam — သင့်အတွက် အလုပ်လုပ်ပေးပါသည် · ချင်းရိုင်",
@@ -351,7 +353,8 @@
    "offrampt": "Crypto မှ ဘတ်သို့",
    "buyAgain": "ထပ်မှာရန်",
    "askedRef": "သင့်တောင်းဆိုချက်နံပါတ်: {ref}",
-   "payRest": "ကျန်ငွေ၊ အလုပ်ပြီးမှ ပေးရန်"
+   "payRest": "ကျန်ငွေ၊ အလုပ်ပြီးမှ ပေးရန်",
+   "notFee": "ကျွန်ုပ်တို့ ဝန်ဆောင်ခတွင် မပါ:"
   },
   "zh": {
    "title": "Hongdam — 我们替您办事 · 清莱",
@@ -464,7 +467,8 @@
    "offrampt": "加密货币换泰铢",
    "buyAgain": "再订一次",
    "askedRef": "您的请求编号：{ref}",
-   "payRest": "余款，完工后支付"
+   "payRest": "余款，完工后支付",
+   "notFee": "不含在我们的服务费内："
   },
   "de": {
    "title": "Hongdam — wir erledigen die Arbeit für Sie · Chiang Rai",
@@ -577,7 +581,8 @@
    "offrampt": "Krypto in Baht",
    "buyAgain": "Nochmal bestellen",
    "askedRef": "Ihre Anfragenummer: {ref}",
-   "payRest": "Der Rest, bezahlt nach getaner Arbeit"
+   "payRest": "Der Rest, bezahlt nach getaner Arbeit",
+   "notFee": "Nicht in unserer Gebühr:"
   }
  },
  "units": {

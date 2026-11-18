@@ -275,8 +275,10 @@ def job_page(job, lang):
         it = B.ITEMS.get(o["i"], {})
         d = it.get("d_" + lang, "")
         name = tr(o["n"], lang) if o.get("n") else tr(c["n"], lang)
-        lis.append('<li class="card" style="--line:var(--c-%s)"><h3>%s</h3><p class="price">%s</p>%s<a class="btn" href="%s">%s</a></li>' % (
-            c["cat"], E(name), B.opt_price(o, lang)[0], '<p class="l">%s</p>' % E(d) if d else "", go, E(su["buy"])))
+        x = B.ex_text(o["i"], lang)
+        lis.append('<li class="card" style="--line:var(--c-%s)"><h3>%s</h3><p class="price">%s</p>%s%s<a class="btn" href="%s">%s</a></li>' % (
+            c["cat"], E(name), B.opt_price(o, lang)[0], '<p class="l">%s</p>' % E(d) if d else "",
+            '<p class="ex">%s</p>' % B.ex_html(x, lang) if x else "", go, E(su["buy"])))
     out += '<h2>%s</h2>\n<ul class="cards opts">%s</ul>\n' % (E(ui(lang, "optsH")), "".join(lis))
     out += '<h2 id="details">%s</h2>\n<p class="lede">%s</p>\n%s\n' % (E(ui(lang, "askH")), E(ui(lang, "askL")), form(job, lang))
     out += research(job, lang)
