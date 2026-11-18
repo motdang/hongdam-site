@@ -19,11 +19,11 @@
   {
    "db": "calendar",
    "t": {
-    "en": "The car, fuel and a licensed guide are booked for the day.",
-    "th": "จองรถ น้ำมัน และไกด์ที่มีใบอนุญาตสำหรับหนึ่งวัน",
-    "my": "ကား၊ လောင်စာနှင့် လိုင်စင်ရ ဧည့်လမ်းညွှန်ကို တစ်ရက်စာ ဘွတ်ကင်လုပ်ပေးသည်။",
-    "zh": "为这一天订好车、油费和持证导游。",
-    "de": "Auto, Treibstoff und ein lizenzierter Guide werden für den Tag gebucht."
+    "en": "The car and a licensed guide are booked for the day; fuel is paid at cost.",
+    "th": "จองรถและไกด์ที่มีใบอนุญาตสำหรับหนึ่งวัน ค่าน้ำมันคิดตามจริง",
+    "my": "ကားနှင့် လိုင်စင်ရ ဧည့်လမ်းညွှန်ကို တစ်ရက်စာ ဘွတ်ကင်လုပ်ပေးသည်။ လောင်စာဆီကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "为这一天订好车和持证导游；油费按实际费用支付。",
+    "de": "Auto und ein lizenzierter Guide werden für den Tag gebucht; Benzin zum Selbstkostenpreis."
    },
    "who": {
     "en": "Hongdam",

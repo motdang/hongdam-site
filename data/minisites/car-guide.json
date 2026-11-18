@@ -67,11 +67,11 @@
   {
    "db": "songthaew",
    "t": {
-    "en": "Your day runs nine hours with the driver, fuel and tolls included, or eight with the guide. Overtime and parking, or the guide's meals and entries, are paid at cost.",
-    "th": "วันของคุณยาวเก้าชั่วโมงกับคนขับ รวมน้ำมันและทางด่วน หรือแปดชั่วโมงกับไกด์ ค่าล่วงเวลาและที่จอด หรือค่าอาหารและค่าเข้าของไกด์ คิดตามจริง",
-    "my": "သင့်နေ့သည် ယာဉ်မောင်းနှင့် ကိုးနာရီ (လောင်စာဆီနှင့် လမ်းကြေးပါ) သို့မဟုတ် ဧည့်လမ်းညွှန်နှင့် ရှစ်နာရီ ဖြစ်သည်။ အချိန်ပိုကြေး၊ ကားရပ်ကြေး၊ သို့မဟုတ် ဧည့်လမ်းညွှန်၏ အစားအသောက်နှင့် ဝင်ကြေးကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
-    "zh": "一天为司机 9 小时（含油费和过路费），或导游 8 小时。超时费、停车费，或导游的餐费和门票，按实际费用支付。",
-    "de": "Ihr Tag dauert neun Stunden mit Fahrer, Benzin und Maut inklusive, oder acht mit Guide. Überstunden und Parkgebühren, oder Essen und Eintritte des Guides, werden zum Selbstkostenpreis bezahlt."
+    "en": "Your day runs nine hours with the driver, or eight with the guide. Fuel, tolls, overtime and parking, or the guide's meals and entries, are paid at cost.",
+    "th": "วันของคุณยาวเก้าชั่วโมงกับคนขับ หรือแปดชั่วโมงกับไกด์ ค่าน้ำมัน ทางด่วน ค่าล่วงเวลาและที่จอด หรือค่าอาหารและค่าเข้าของไกด์ คิดตามจริง",
+    "my": "သင့်နေ့သည် ယာဉ်မောင်းနှင့် ကိုးနာရီ သို့မဟုတ် ဧည့်လမ်းညွှန်နှင့် ရှစ်နာရီ ဖြစ်သည်။ လောင်စာဆီ၊ လမ်းကြေး၊ အချိန်ပိုကြေး၊ ကားရပ်ကြေး၊ သို့မဟုတ် ဧည့်လမ်းညွှန်၏ အစားအသောက်နှင့် ဝင်ကြေးကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
+    "zh": "一天为司机 9 小时，或导游 8 小时。油费、过路费、超时费、停车费，或导游的餐费和门票，按实际费用支付。",
+    "de": "Ihr Tag dauert neun Stunden mit Fahrer oder acht mit Guide. Benzin, Maut, Überstunden und Parkgebühren, oder Essen und Eintritte des Guides, werden zum Selbstkostenpreis bezahlt."
    },
    "who": {
     "en": "Driver or guide",

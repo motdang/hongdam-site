@@ -381,11 +381,11 @@
     "de": "Spediteur finden und buchen, und das Zollformular."
    },
    "sep": {
-    "en": "Packing materials, pickup, carriage, and any duty or tax set at the border: each on its own line of the quote, at the price we pay.",
-    "th": "วัสดุแพ็ก ค่ารับของ ค่าขนส่ง และภาษีหรืออากรที่ด่านกำหนด แยกเป็นบรรทัดในใบเสนอราคา ตามราคาจริงที่เราจ่าย",
-    "my": "ထုပ်ပိုးပစ္စည်း၊ လာယူခ၊ သယ်ယူခနှင့် နယ်စပ်တွင် သတ်မှတ်သော အခွန်များ — စျေးနှုန်းစာရင်းတွင် တစ်ကြောင်းစီ၊ ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း။",
-    "zh": "包装材料、取件、运费，以及边境核定的关税或税费：报价单上各列一行，按我们实付的价格。",
-    "de": "Verpackung, Abholung, Fracht und Zoll oder Steuern, die an der Grenze festgesetzt werden: je eine eigene Zeile im Angebot, zu dem Preis, den wir zahlen."
+    "en": "Abroad: packing materials, pickup, carriage, and any duty or tax set at the border: each on its own line of the quote, at the price we pay.",
+    "th": "ส่งต่างประเทศ: วัสดุแพ็ก ค่ารับของ ค่าขนส่ง และภาษีหรืออากรที่ด่านกำหนด แยกเป็นบรรทัดในใบเสนอราคา ตามราคาจริงที่เราจ่าย",
+    "my": "နိုင်ငံခြားသို့ — ထုပ်ပိုးပစ္စည်း၊ လာယူခ၊ သယ်ယူခနှင့် နယ်စပ်တွင် သတ်မှတ်သော အခွန်များ — စျေးနှုန်းစာရင်းတွင် တစ်ကြောင်းစီ၊ ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "寄往国外：包装材料、取件、运费，以及边境核定的关税或税费：报价单上各列一行，按我们实付的价格。",
+    "de": "Ins Ausland: Verpackung, Abholung, Fracht und Zoll oder Steuern, die an der Grenze festgesetzt werden: je eine eigene Zeile im Angebot, zu dem Preis, den wir zahlen."
    },
    "done": {
     "en": "Your quote says where our part ends: when the carrier takes the parcel, when you have its tracking number, or when it is delivered.",
@@ -957,32 +957,32 @@
     "de": "Einen Fahrer organisieren"
    },
    "l": {
-    "en": "A car and driver for one trip or a whole day. You see the fare, our fee, tolls and waiting time before you say yes.",
-    "th": "รถพร้อมคนขับ เที่ยวเดียวหรือทั้งวัน คุณเห็นค่ารถ ค่าบริการของเรา ค่าทางด่วน และค่ารอ ก่อนตกลง",
-    "my": "ခရီးတစ်ခေါက် သို့မဟုတ် တစ်နေ့လုံးအတွက် ကားနှင့် ယာဉ်မောင်း။ သဘောမတူမီ ကားခ၊ ဝန်ဆောင်ခ၊ လမ်းကြေးနှင့် စောင့်ချိန်ခကို မြင်ရသည်။",
-    "zh": "单程或包一天的车和司机。您同意之前，就能看到车费、我们的服务费、过路费和等候费。",
-    "de": "Auto mit Fahrer für eine Fahrt oder einen ganzen Tag. Fahrpreis, unsere Gebühr, Maut und Wartezeit sehen Sie, bevor Sie zusagen."
+    "en": "A car and driver for one trip or a whole day. You see the fare, our fee, fuel, tolls and waiting time before you say yes.",
+    "th": "รถพร้อมคนขับ เที่ยวเดียวหรือทั้งวัน คุณเห็นค่ารถ ค่าบริการของเรา ค่าน้ำมัน ค่าทางด่วน และค่ารอ ก่อนตกลง",
+    "my": "ခရီးတစ်ခေါက် သို့မဟုတ် တစ်နေ့လုံးအတွက် ကားနှင့် ယာဉ်မောင်း။ သဘောမတူမီ ကားခ၊ ဝန်ဆောင်ခ၊ ဆီဖိုး၊ လမ်းကြေးနှင့် စောင့်ချိန်ခကို မြင်ရသည်။",
+    "zh": "单程或包一天的车和司机。您同意之前，就能看到车费、我们的服务费、油费、过路费和等候费。",
+    "de": "Auto mit Fahrer für eine Fahrt oder einen ganzen Tag. Fahrpreis, unsere Gebühr, Benzin, Maut und Wartezeit sehen Sie, bevor Sie zusagen."
    },
    "fee": {
-    "en": "A whole day: {p:driver-day}, 9 hours, fuel and road tolls included. One trip: quoted, with the fare, our fee, waiting time, tolls and stops each on its own line.",
-    "th": "ทั้งวัน: {p:driver-day} 9 ชั่วโมง รวมน้ำมันและทางด่วน เที่ยวเดียว: แจ้งราคาก่อน แยกค่ารถ ค่าบริการของเรา ค่ารอ ค่าทางด่วน และจุดแวะ เป็นบรรทัด",
-    "my": "တစ်နေ့လုံး: {p:driver-day}၊ ၉ နာရီ၊ ဆီနှင့် လမ်းကြေး ပါဝင်သည်။ ခရီးတစ်ခေါက်: စျေးနှုန်းပြောမည် — ကားခ၊ ဝန်ဆောင်ခ၊ စောင့်ချိန်၊ လမ်းကြေးနှင့် ရပ်နားမှုများ တစ်ကြောင်းစီ။",
-    "zh": "包一天：{p:driver-day}，9 小时，含油费和过路费。单程：先报价，车费、我们的服务费、等候、过路费和停靠点各列一行。",
-    "de": "Ein ganzer Tag: {p:driver-day}, 9 Stunden, Benzin und Maut inbegriffen. Eine Fahrt: mit Angebot, Fahrpreis, unsere Gebühr, Wartezeit, Maut und Stopps je in einer eigenen Zeile."
+    "en": "A whole day: {p:driver-day} for the car and driver, 9 hours. One trip: quoted, with the fare, our fee, fuel, waiting time, tolls and stops each on its own line.",
+    "th": "ทั้งวัน: {p:driver-day} สำหรับรถและคนขับ 9 ชั่วโมง เที่ยวเดียว: แจ้งราคาก่อน แยกค่ารถ ค่าบริการของเรา ค่าน้ำมัน ค่ารอ ค่าทางด่วน และจุดแวะ เป็นบรรทัด",
+    "my": "တစ်နေ့လုံး: ကားနှင့် ယာဉ်မောင်း {p:driver-day}၊ ၉ နာရီ။ ခရီးတစ်ခေါက်: စျေးနှုန်းပြောမည် — ကားခ၊ ဝန်ဆောင်ခ၊ ဆီဖိုး၊ စောင့်ချိန်၊ လမ်းကြေးနှင့် ရပ်နားမှုများ တစ်ကြောင်းစီ။",
+    "zh": "包一天：车和司机 {p:driver-day}，9 小时。单程：先报价，车费、我们的服务费、油费、等候、过路费和停靠点各列一行。",
+    "de": "Ein ganzer Tag: {p:driver-day} für Auto und Fahrer, 9 Stunden. Eine Fahrt: mit Angebot, Fahrpreis, unsere Gebühr, Benzin, Wartezeit, Maut und Stopps je in einer eigenen Zeile."
    },
    "inc": {
-    "en": "A whole day: the car, the driver, fuel and road tolls for 9 hours.",
-    "th": "ทั้งวัน: รถ คนขับ น้ำมัน และทางด่วน 9 ชั่วโมง",
-    "my": "တစ်နေ့လုံး — ကား၊ ယာဉ်မောင်း၊ ဆီနှင့် လမ်းကြေး ၉ နာရီ။",
-    "zh": "包一天：车、司机、油费和过路费，9 小时。",
-    "de": "Ganzer Tag: Auto, Fahrer, Benzin und Maut für 9 Stunden."
+    "en": "A whole day: the car and the driver for 9 hours.",
+    "th": "ทั้งวัน: รถและคนขับ 9 ชั่วโมง",
+    "my": "တစ်နေ့လုံး — ကားနှင့် ယာဉ်မောင်း ၉ နာရီ။",
+    "zh": "包一天：车和司机，9 小时。",
+    "de": "Ganzer Tag: Auto und Fahrer für 9 Stunden."
    },
    "sep": {
-    "en": "A whole day: hours after the first 9, and parking, at the price we pay.",
-    "th": "ทั้งวัน: ชั่วโมงที่เกิน 9 ชั่วโมงแรก และค่าที่จอด ตามราคาจริงที่เราจ่าย",
-    "my": "တစ်နေ့လုံး — ပထမ ၉ နာရီ ကျော်သော နာရီများနှင့် ကားပါကင်ခ၊ ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း။",
-    "zh": "包一天：超过 9 小时的部分和停车费，按我们实付的价格。",
-    "de": "Ganzer Tag: Stunden nach den ersten 9 und Parken, zu dem Preis, den wir zahlen."
+    "en": "A whole day: fuel, road tolls, parking, and hours after the first 9, at the price we pay.",
+    "th": "ทั้งวัน: ค่าน้ำมัน ทางด่วน ที่จอด และชั่วโมงที่เกิน 9 ชั่วโมงแรก ตามราคาจริงที่เราจ่าย",
+    "my": "တစ်နေ့လုံး — ဆီဖိုး၊ လမ်းကြေး၊ ကားပါကင်ခနှင့် ပထမ ၉ နာရီ ကျော်သော နာရီများ၊ ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "包一天：油费、过路费、停车费和超过 9 小时的部分，按我们实付的价格。",
+    "de": "Ganzer Tag: Benzin, Maut, Parken und Stunden nach den ersten 9, zu dem Preis, den wir zahlen."
    },
    "time": {
     "en": "A whole day: 9 hours.",
