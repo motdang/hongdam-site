@@ -1,0 +1,1002 @@
+route	lang	file	mark	template	service	kind	ready	action	to	sitemap	canonical	langs	note
+/	en	docs/index.html	p-front	tools/build_shop.py front()				Get something handled	#jobs	yes	/	de,en,my,th,zh	
+/404.html	en	docs/404.html	-	docs/404.html (the swan game, by hand)				Home page · หน้าแรก	/	noindex			
+/agreement/ferc-myriad-acd5424e/	en	docs/agreement/ferc-myriad-acd5424e/index.html	-	tools/build_agreement.py						noindex			
+/ai/	en	docs/ai/index.html	p-cat	tools/build_shop.py category()	ai	category		Buy	/buy/?c=ai-assistant	yes	/ai/	de,en,my,th,zh	
+/ai/ai-assistant/	en	docs/ai/ai-assistant/index.html	p-m	tools/build_minisites.py	ai-assistant	card	buy	Buy	/buy/?c=ai-assistant	yes	/ai/ai-assistant/	de,en,my,th,zh	
+/ai/ai-automation/	en	docs/ai/ai-automation/index.html	p-m	tools/build_minisites.py	ai-automation	card	buy	Buy	/buy/?c=ai-automation	yes	/ai/ai-automation/	de,en,my,th,zh	
+/ai/ai-batch/	en	docs/ai/ai-batch/index.html	p-m	tools/build_minisites.py	ai-batch	card	buy	Buy	/buy/?c=ai-batch	yes	/ai/ai-batch/	de,en,my,th,zh	
+/ai/ai-line/	en	docs/ai/ai-line/index.html	p-m	tools/build_minisites.py	ai-line	card	buy	Buy	/buy/?c=ai-line	yes	/ai/ai-line/	de,en,my,th,zh	
+/ai/crawl-pay/	en	docs/ai/crawl-pay/index.html	p-m	tools/build_minisites.py	crawl-pay	card	buy	Buy	/buy/?c=crawl-pay	yes	/ai/crawl-pay/	de,en,my,th,zh	
+/ai/crew/	en	docs/ai/crew/index.html	p-m	tools/build_minisites.py	crew	card	book	Book	/bots/	yes	/ai/crew/	de,en,my,th,zh	
+/ai/demand-prices/	en	docs/ai/demand-prices/index.html	p-m	tools/build_minisites.py	demand-prices	card	buy	Buy	/buy/?c=demand-prices	yes	/ai/demand-prices/	de,en,my,th,zh	
+/arrange/appointment/	en	docs/arrange/appointment/index.html	p-job	tools/build_arrange.py	appointment	job	buy	Buy	/buy/?c=specialist&o=specialist-book	yes	/arrange/appointment/	de,en,my,th,zh	
+/arrange/driver/	en	docs/arrange/driver/index.html	p-job	tools/build_arrange.py	driver	job	buy	Buy	/buy/?c=car-guide&o=driver-day	yes	/arrange/driver/	de,en,my,th,zh	
+/arrange/home-service/	en	docs/arrange/home-service/index.html	p-job	tools/build_arrange.py	home-service	job	buy	Buy	/buy/?c=trades&o=trades	yes	/arrange/home-service/	de,en,my,th,zh	
+/arrange/parcel/	en	docs/arrange/parcel/index.html	p-job	tools/build_arrange.py	parcel	job	quote	Buy	/buy/?c=luggage&o=luggage	yes	/arrange/parcel/	de,en,my,th,zh	
+/arrange/shop-for-me/	en	docs/arrange/shop-for-me/index.html	p-job	tools/build_arrange.py	shop-for-me	job	buy	Buy	/buy/?c=errand&o=errand	yes	/arrange/shop-for-me/	de,en,my,th,zh	
+/ask-nan/	en	docs/ask-nan/index.html	asknan	tools/build_asknan.py				Ask Nan a question	#ask	yes	/ask-nan/	en,th	
+/ask-nan/ai-built-my-app-whats-left/	en	docs/ask-nan/ai-built-my-app-whats-left/index.html	asknan	tools/build_asknan.py				Run the two-minute check	https://hongdam.net/studio/notes/supabase-public-key-open-tables/	yes	/ask-nan/ai-built-my-app-whats-left/		
+/ask-nan/can-i-pay-in-art/	en	docs/ask-nan/can-i-pay-in-art/index.html	asknan	tools/build_asknan.py				See the art trades	https://motdang.net/sites/paid-in-art/	yes	/ask-nan/can-i-pay-in-art/		
+/ask-nan/gas-means-lpg-in-thailand/	en	docs/ask-nan/gas-means-lpg-in-thailand/index.html	asknan	tools/build_asknan.py				Open Gas and Diesel	https://motdang.net/sites/gas-and-diesel/	yes	/ask-nan/gas-means-lpg-in-thailand/		
+/ask-nan/how-to-use-a-bum-gun/	en	docs/ask-nan/how-to-use-a-bum-gun/index.html	asknan	tools/build_asknan.py				Open the bum gun page	https://motdang.net/sites/bum-gun/	yes	/ask-nan/how-to-use-a-bum-gun/		
+/ask-nan/if-my-ai-goes-away/	en	docs/ask-nan/if-my-ai-goes-away/index.html	asknan	tools/build_asknan.py				Plan your move	https://nanobotco.github.io/moving-day/	yes	/ask-nan/if-my-ai-goes-away/		
+/ask-nan/most-of-my-readers-are-robots/	en	docs/ask-nan/most-of-my-readers-are-robots/index.html	asknan	tools/build_asknan.py				Read What Bots Craaave	https://nanobotco.github.io/bots-crave/	yes	/ask-nan/most-of-my-readers-are-robots/		
+/ask-nan/sending-things-across-thailand/	en	docs/ask-nan/sending-things-across-thailand/index.html	asknan	tools/build_asknan.py				Choose what and where to send	https://motdang.net/sites/send-it/	yes	/ask-nan/sending-things-across-thailand/		
+/ask-nan/seven-eleven-at-home/	en	docs/ask-nan/seven-eleven-at-home/index.html	asknan	tools/build_asknan.py				Find my microwave time	https://motdang.net/sites/wave-at-home/	yes	/ask-nan/seven-eleven-at-home/		
+/ask-nan/should-i-pay-a-bot/	en	docs/ask-nan/should-i-pay-a-bot/index.html	asknan	tools/build_asknan.py				See the bot bounty	https://motdang.net/anthill/bounty	yes	/ask-nan/should-i-pay-a-bot/		
+/ask-nan/two-drums-means-8pm/	en	docs/ask-nan/two-drums-means-8pm/index.html	asknan	tools/build_asknan.py				Open Telling Time in Thai	https://nanobotco.github.io/thai-time/	yes	/ask-nan/two-drums-means-8pm/		
+/ask-nan/va-sign-in-from-thailand/	en	docs/ask-nan/va-sign-in-from-thailand/index.html	asknan	tools/build_asknan.py				Getting In, in Thai	https://nanobotco.github.io/getting-in/th/	yes	/ask-nan/va-sign-in-from-thailand/		
+/ask-nan/water-pump-clicking/	en	docs/ask-nan/water-pump-clicking/index.html	asknan	tools/build_asknan.py				Open Pump, Filter, Drain	https://motdang.net/sites/pump-filter-drain/	yes	/ask-nan/water-pump-clicking/		
+/ask-nan/what-should-i-charge/	en	docs/ask-nan/what-should-i-charge/index.html	asknan	tools/build_asknan.py				Buy · Prices that follow demand	/buy/?c=demand-prices	yes	/ask-nan/what-should-i-charge/		
+/ask-nan/will-the-robots-remember-me/	en	docs/ask-nan/will-the-robots-remember-me/index.html	asknan	tools/build_asknan.py				Open wichaa's dharma page	https://wichaa.net/dharma/	yes	/ask-nan/will-the-robots-remember-me/		
+/ask/	en	docs/ask/index.html	p-ask	tools/build_shop.py ask_page() + assets/shop.js				Message us on LINE @964yxgnk	https://line.me/R/ti/p/@964yxgnk	noindex	/ask/	de,en,my,th,zh	
+/bots/	en	docs/bots/index.html	-	tools/pages.py				Buy · ซื้อ	#buy	yes	/bots/		
+/buy/	en	docs/buy/index.html	p-buy	tools/build_shop.py buy_page() + assets/shop.js				Message us on LINE	https://line.me/R/ti/p/@964yxgnk	noindex	/buy/	de,en,my,th,zh	
+/care/	en	docs/care/index.html	p-cat	tools/build_shop.py category()	care	category		Buy	/buy/?c=retire	yes	/care/	de,en,my,th,zh	
+/care/accident/	en	docs/care/accident/index.html	p-m	tools/build_minisites.py	accident	card	buy	Buy	/buy/?c=accident	yes	/care/accident/	de,en,my,th,zh	
+/care/blood/	en	docs/care/blood/index.html	p-m	tools/build_minisites.py	blood	card	buy	Buy	/buy/?c=blood	yes	/care/blood/	de,en,my,th,zh	
+/care/care-visits/	en	docs/care/care-visits/index.html	p-m	tools/build_minisites.py	care-visits	card	buy	Buy	/buy/?c=care-visits	yes	/care/care-visits/	de,en,my,th,zh	
+/care/clean-air/	en	docs/care/clean-air/index.html	p-m	tools/build_minisites.py	clean-air	card	buy	Buy	/buy/?c=clean-air	yes	/care/clean-air/	de,en,my,th,zh	
+/care/death-help/	en	docs/care/death-help/index.html	p-m	tools/build_minisites.py	death-help	card	buy	Buy	/buy/?c=death-help	yes	/care/death-help/	de,en,my,th,zh	
+/care/elder-care/	en	docs/care/elder-care/index.html	p-m	tools/build_minisites.py	elder-care	card	buy	Buy	/buy/?c=elder-care	yes	/care/elder-care/	de,en,my,th,zh	
+/care/lab-test/	en	docs/care/lab-test/index.html	p-m	tools/build_minisites.py	lab-test	card	buy	Buy	/buy/?c=lab-test	yes	/care/lab-test/	de,en,my,th,zh	
+/care/retire/	en	docs/care/retire/index.html	p-m	tools/build_minisites.py	retire	card	buy	Buy	/buy/?c=retire	yes	/care/retire/	de,en,my,th,zh	
+/care/specialist/	en	docs/care/specialist/index.html	p-m	tools/build_minisites.py	specialist	card	buy	Buy	/buy/?c=specialist	yes	/care/specialist/	de,en,my,th,zh	
+/charity/	en	docs/charity/index.html	p-cat	tools/build_shop.py category()	charity	category		Buy	/buy/?c=giving	yes	/charity/	de,en,my,th,zh	
+/charity/checkin/	en	docs/charity/checkin/index.html	p-m	tools/build_minisites.py	checkin	card	buy	Buy	/buy/?c=checkin	yes	/charity/checkin/	de,en,my,th,zh	
+/charity/club-desk/	en	docs/charity/club-desk/index.html	p-m	tools/build_minisites.py	club-desk	card	buy	Buy	/buy/?c=club-desk	yes	/charity/club-desk/	de,en,my,th,zh	
+/charity/event-kit/	en	docs/charity/event-kit/index.html	p-m	tools/build_minisites.py	event-kit	card	buy	Buy	/buy/?c=event-kit	yes	/charity/event-kit/	de,en,my,th,zh	
+/charity/findable/	en	docs/charity/findable/index.html	p-m	tools/build_minisites.py	findable	card	buy	Buy	/buy/?c=findable	yes	/charity/findable/	de,en,my,th,zh	
+/charity/giving/	en	docs/charity/giving/index.html	p-m	tools/build_minisites.py	giving	card	buy	Buy	/buy/?c=giving	yes	/charity/giving/	de,en,my,th,zh	
+/charity/grants/	en	docs/charity/grants/index.html	p-m	tools/build_minisites.py	grants	card	buy	Buy	/buy/?c=grants	yes	/charity/grants/	de,en,my,th,zh	
+/charity/line-memory/	en	docs/charity/line-memory/index.html	p-m	tools/build_minisites.py	line-memory	card	buy	Buy	/buy/?c=line-memory	yes	/charity/line-memory/	de,en,my,th,zh	
+/charity/map-archive/	en	docs/charity/map-archive/index.html	p-m	tools/build_minisites.py	map-archive	card	buy	Buy	/buy/?c=map-archive	yes	/charity/map-archive/	de,en,my,th,zh	
+/charity/photo-proof/	en	docs/charity/photo-proof/index.html	p-m	tools/build_minisites.py	photo-proof	card	buy	Buy	/buy/?c=photo-proof	yes	/charity/photo-proof/	de,en,my,th,zh	
+/data/	en	docs/data/index.html	p-cat	tools/build_shop.py category()	data	category		Buy	/buy/?c=data-crawl	yes	/data/	de,en,my,th,zh	
+/data/data-crawl/	en	docs/data/data-crawl/index.html	p-m	tools/build_minisites.py	data-crawl	card	buy	Buy	/buy/?c=data-crawl	yes	/data/data-crawl/	de,en,my,th,zh	
+/data/leads/	en	docs/data/leads/index.html	p-m	tools/build_minisites.py	leads	card	buy	Buy	/buy/?c=leads	yes	/data/leads/	de,en,my,th,zh	
+/data/price-watch/	en	docs/data/price-watch/index.html	p-m	tools/build_minisites.py	price-watch	card	buy	Buy	/buy/?c=price-watch	yes	/data/price-watch/	de,en,my,th,zh	
+/data/research/	en	docs/data/research/index.html	p-m	tools/build_minisites.py	research	card	buy	Buy	/buy/?c=research	yes	/data/research/	de,en,my,th,zh	
+/data/street-survey/	en	docs/data/street-survey/index.html	p-m	tools/build_minisites.py	street-survey	card	buy	Buy	/buy/?c=street-survey	yes	/data/street-survey/	de,en,my,th,zh	
+/data/traffic/	en	docs/data/traffic/index.html	p-m	tools/build_minisites.py	traffic	card	buy	Buy	/buy/?c=traffic	yes	/data/traffic/	de,en,my,th,zh	
+/de/	de	docs/de/index.html	p-front	tools/build_shop.py front()				Etwas erledigen lassen	#jobs	yes	/de/	de,en,my,th,zh	
+/de/ai/	de	docs/de/ai/index.html	p-cat	tools/build_shop.py category()	ai	category		Kaufen	/de/buy/?c=ai-assistant	yes	/de/ai/	de,en,my,th,zh	
+/de/ai/ai-assistant/	de	docs/de/ai/ai-assistant/index.html	p-m	tools/build_minisites.py	ai-assistant	card	buy	Kaufen	/de/buy/?c=ai-assistant	yes	/de/ai/ai-assistant/	de,en,my,th,zh	
+/de/ai/ai-automation/	de	docs/de/ai/ai-automation/index.html	p-m	tools/build_minisites.py	ai-automation	card	buy	Kaufen	/de/buy/?c=ai-automation	yes	/de/ai/ai-automation/	de,en,my,th,zh	
+/de/ai/ai-batch/	de	docs/de/ai/ai-batch/index.html	p-m	tools/build_minisites.py	ai-batch	card	buy	Kaufen	/de/buy/?c=ai-batch	yes	/de/ai/ai-batch/	de,en,my,th,zh	
+/de/ai/ai-line/	de	docs/de/ai/ai-line/index.html	p-m	tools/build_minisites.py	ai-line	card	buy	Kaufen	/de/buy/?c=ai-line	yes	/de/ai/ai-line/	de,en,my,th,zh	
+/de/ai/crawl-pay/	de	docs/de/ai/crawl-pay/index.html	p-m	tools/build_minisites.py	crawl-pay	card	buy	Kaufen	/de/buy/?c=crawl-pay	yes	/de/ai/crawl-pay/	de,en,my,th,zh	
+/de/ai/crew/	de	docs/de/ai/crew/index.html	p-m	tools/build_minisites.py	crew	card	book	Buchen	/bots/	yes	/de/ai/crew/	de,en,my,th,zh	
+/de/ai/demand-prices/	de	docs/de/ai/demand-prices/index.html	p-m	tools/build_minisites.py	demand-prices	card	buy	Kaufen	/de/buy/?c=demand-prices	yes	/de/ai/demand-prices/	de,en,my,th,zh	
+/de/arrange/appointment/	de	docs/de/arrange/appointment/index.html	p-job	tools/build_arrange.py	appointment	job	buy	Kaufen	/de/buy/?c=specialist&o=specialist-book	yes	/de/arrange/appointment/	de,en,my,th,zh	
+/de/arrange/driver/	de	docs/de/arrange/driver/index.html	p-job	tools/build_arrange.py	driver	job	buy	Kaufen	/de/buy/?c=car-guide&o=driver-day	yes	/de/arrange/driver/	de,en,my,th,zh	
+/de/arrange/home-service/	de	docs/de/arrange/home-service/index.html	p-job	tools/build_arrange.py	home-service	job	buy	Kaufen	/de/buy/?c=trades&o=trades	yes	/de/arrange/home-service/	de,en,my,th,zh	
+/de/arrange/parcel/	de	docs/de/arrange/parcel/index.html	p-job	tools/build_arrange.py	parcel	job	quote	Kaufen	/de/buy/?c=luggage&o=luggage	yes	/de/arrange/parcel/	de,en,my,th,zh	
+/de/arrange/shop-for-me/	de	docs/de/arrange/shop-for-me/index.html	p-job	tools/build_arrange.py	shop-for-me	job	buy	Kaufen	/de/buy/?c=errand&o=errand	yes	/de/arrange/shop-for-me/	de,en,my,th,zh	
+/de/ask/	de	docs/de/ask/index.html	p-ask	tools/build_shop.py ask_page() + assets/shop.js				Schreiben Sie uns auf LINE @964yxgnk	https://line.me/R/ti/p/@964yxgnk	noindex	/de/ask/	de,en,my,th,zh	
+/de/buy/	de	docs/de/buy/index.html	p-buy	tools/build_shop.py buy_page() + assets/shop.js				Schreiben Sie uns auf LINE	https://line.me/R/ti/p/@964yxgnk	noindex	/de/buy/	de,en,my,th,zh	
+/de/care/	de	docs/de/care/index.html	p-cat	tools/build_shop.py category()	care	category		Kaufen	/de/buy/?c=retire	yes	/de/care/	de,en,my,th,zh	
+/de/care/accident/	de	docs/de/care/accident/index.html	p-m	tools/build_minisites.py	accident	card	buy	Kaufen	/de/buy/?c=accident	yes	/de/care/accident/	de,en,my,th,zh	
+/de/care/blood/	de	docs/de/care/blood/index.html	p-m	tools/build_minisites.py	blood	card	buy	Kaufen	/de/buy/?c=blood	yes	/de/care/blood/	de,en,my,th,zh	
+/de/care/care-visits/	de	docs/de/care/care-visits/index.html	p-m	tools/build_minisites.py	care-visits	card	buy	Kaufen	/de/buy/?c=care-visits	yes	/de/care/care-visits/	de,en,my,th,zh	
+/de/care/clean-air/	de	docs/de/care/clean-air/index.html	p-m	tools/build_minisites.py	clean-air	card	buy	Kaufen	/de/buy/?c=clean-air	yes	/de/care/clean-air/	de,en,my,th,zh	
+/de/care/death-help/	de	docs/de/care/death-help/index.html	p-m	tools/build_minisites.py	death-help	card	buy	Kaufen	/de/buy/?c=death-help	yes	/de/care/death-help/	de,en,my,th,zh	
+/de/care/elder-care/	de	docs/de/care/elder-care/index.html	p-m	tools/build_minisites.py	elder-care	card	buy	Kaufen	/de/buy/?c=elder-care	yes	/de/care/elder-care/	de,en,my,th,zh	
+/de/care/lab-test/	de	docs/de/care/lab-test/index.html	p-m	tools/build_minisites.py	lab-test	card	buy	Kaufen	/de/buy/?c=lab-test	yes	/de/care/lab-test/	de,en,my,th,zh	
+/de/care/retire/	de	docs/de/care/retire/index.html	p-m	tools/build_minisites.py	retire	card	buy	Kaufen	/de/buy/?c=retire	yes	/de/care/retire/	de,en,my,th,zh	
+/de/care/specialist/	de	docs/de/care/specialist/index.html	p-m	tools/build_minisites.py	specialist	card	buy	Kaufen	/de/buy/?c=specialist	yes	/de/care/specialist/	de,en,my,th,zh	
+/de/charity/	de	docs/de/charity/index.html	p-cat	tools/build_shop.py category()	charity	category		Kaufen	/de/buy/?c=giving	yes	/de/charity/	de,en,my,th,zh	
+/de/charity/checkin/	de	docs/de/charity/checkin/index.html	p-m	tools/build_minisites.py	checkin	card	buy	Kaufen	/de/buy/?c=checkin	yes	/de/charity/checkin/	de,en,my,th,zh	
+/de/charity/club-desk/	de	docs/de/charity/club-desk/index.html	p-m	tools/build_minisites.py	club-desk	card	buy	Kaufen	/de/buy/?c=club-desk	yes	/de/charity/club-desk/	de,en,my,th,zh	
+/de/charity/event-kit/	de	docs/de/charity/event-kit/index.html	p-m	tools/build_minisites.py	event-kit	card	buy	Kaufen	/de/buy/?c=event-kit	yes	/de/charity/event-kit/	de,en,my,th,zh	
+/de/charity/findable/	de	docs/de/charity/findable/index.html	p-m	tools/build_minisites.py	findable	card	buy	Kaufen	/de/buy/?c=findable	yes	/de/charity/findable/	de,en,my,th,zh	
+/de/charity/giving/	de	docs/de/charity/giving/index.html	p-m	tools/build_minisites.py	giving	card	buy	Kaufen	/de/buy/?c=giving	yes	/de/charity/giving/	de,en,my,th,zh	
+/de/charity/grants/	de	docs/de/charity/grants/index.html	p-m	tools/build_minisites.py	grants	card	buy	Kaufen	/de/buy/?c=grants	yes	/de/charity/grants/	de,en,my,th,zh	
+/de/charity/line-memory/	de	docs/de/charity/line-memory/index.html	p-m	tools/build_minisites.py	line-memory	card	buy	Kaufen	/de/buy/?c=line-memory	yes	/de/charity/line-memory/	de,en,my,th,zh	
+/de/charity/map-archive/	de	docs/de/charity/map-archive/index.html	p-m	tools/build_minisites.py	map-archive	card	buy	Kaufen	/de/buy/?c=map-archive	yes	/de/charity/map-archive/	de,en,my,th,zh	
+/de/charity/photo-proof/	de	docs/de/charity/photo-proof/index.html	p-m	tools/build_minisites.py	photo-proof	card	buy	Kaufen	/de/buy/?c=photo-proof	yes	/de/charity/photo-proof/	de,en,my,th,zh	
+/de/data/	de	docs/de/data/index.html	p-cat	tools/build_shop.py category()	data	category		Kaufen	/de/buy/?c=data-crawl	yes	/de/data/	de,en,my,th,zh	
+/de/data/data-crawl/	de	docs/de/data/data-crawl/index.html	p-m	tools/build_minisites.py	data-crawl	card	buy	Kaufen	/de/buy/?c=data-crawl	yes	/de/data/data-crawl/	de,en,my,th,zh	
+/de/data/leads/	de	docs/de/data/leads/index.html	p-m	tools/build_minisites.py	leads	card	buy	Kaufen	/de/buy/?c=leads	yes	/de/data/leads/	de,en,my,th,zh	
+/de/data/price-watch/	de	docs/de/data/price-watch/index.html	p-m	tools/build_minisites.py	price-watch	card	buy	Kaufen	/de/buy/?c=price-watch	yes	/de/data/price-watch/	de,en,my,th,zh	
+/de/data/research/	de	docs/de/data/research/index.html	p-m	tools/build_minisites.py	research	card	buy	Kaufen	/de/buy/?c=research	yes	/de/data/research/	de,en,my,th,zh	
+/de/data/street-survey/	de	docs/de/data/street-survey/index.html	p-m	tools/build_minisites.py	street-survey	card	buy	Kaufen	/de/buy/?c=street-survey	yes	/de/data/street-survey/	de,en,my,th,zh	
+/de/data/traffic/	de	docs/de/data/traffic/index.html	p-m	tools/build_minisites.py	traffic	card	buy	Kaufen	/de/buy/?c=traffic	yes	/de/data/traffic/	de,en,my,th,zh	
+/de/design/	de	docs/de/design/index.html	p-cat	tools/build_shop.py category()	design	category		Kaufen	/de/buy/?c=awards	yes	/de/design/	de,en,my,th,zh	
+/de/design/article/	de	docs/de/design/article/index.html	p-m	tools/build_minisites.py	article	card	buy	Kaufen	/de/buy/?c=article	yes	/de/design/article/	de,en,my,th,zh	
+/de/design/awards/	de	docs/de/design/awards/index.html	p-m	tools/build_minisites.py	awards	card	buy	Kaufen	/de/buy/?c=awards	yes	/de/design/awards/	de,en,my,th,zh	
+/de/design/cartoons/	de	docs/de/design/cartoons/index.html	p-m	tools/build_minisites.py	cartoons	card	buy	Kaufen	/de/buy/?c=cartoons	yes	/de/design/cartoons/	de,en,my,th,zh	
+/de/design/copy/	de	docs/de/design/copy/index.html	p-m	tools/build_minisites.py	copy	card	buy	Kaufen	/de/buy/?c=copy	yes	/de/design/copy/	de,en,my,th,zh	
+/de/design/decks/	de	docs/de/design/decks/index.html	p-m	tools/build_minisites.py	decks	card	buy	Kaufen	/de/buy/?c=decks	yes	/de/design/decks/	de,en,my,th,zh	
+/de/design/drawn/	de	docs/de/design/drawn/index.html	p-m	tools/build_minisites.py	drawn	card	buy	Kaufen	/de/buy/?c=drawn	yes	/de/design/drawn/	de,en,my,th,zh	
+/de/design/graphics/	de	docs/de/design/graphics/index.html	p-m	tools/build_minisites.py	graphics	card	buy	Kaufen	/de/buy/?c=graphics	yes	/de/design/graphics/	de,en,my,th,zh	
+/de/design/interactive/	de	docs/de/design/interactive/index.html	p-m	tools/build_minisites.py	interactive	card	buy	Kaufen	/de/buy/?c=interactive	yes	/de/design/interactive/	de,en,my,th,zh	
+/de/design/interview/	de	docs/de/design/interview/index.html	p-m	tools/build_minisites.py	interview	card	buy	Kaufen	/de/buy/?c=interview	yes	/de/design/interview/	de,en,my,th,zh	
+/de/design/newsletter/	de	docs/de/design/newsletter/index.html	p-m	tools/build_minisites.py	newsletter	card	buy	Kaufen	/de/buy/?c=newsletter	yes	/de/design/newsletter/	de,en,my,th,zh	
+/de/design/patterns/	de	docs/de/design/patterns/index.html	p-m	tools/build_minisites.py	patterns	card	buy	Kaufen	/de/buy/?c=patterns	yes	/de/design/patterns/	de,en,my,th,zh	
+/de/design/proposal/	de	docs/de/design/proposal/index.html	p-m	tools/build_minisites.py	proposal	card	buy	Kaufen	/de/buy/?c=proposal	yes	/de/design/proposal/	de,en,my,th,zh	
+/de/design/social/	de	docs/de/design/social/index.html	p-m	tools/build_minisites.py	social	card	buy	Kaufen	/de/buy/?c=social	yes	/de/design/social/	de,en,my,th,zh	
+/de/design/video/	de	docs/de/design/video/index.html	p-m	tools/build_minisites.py	video	card	buy	Kaufen	/de/buy/?c=video	yes	/de/design/video/	de,en,my,th,zh	
+/de/fix/	de	docs/de/fix/index.html	p-cat	tools/build_shop.py category()	fix	category		Buchen	/php/	yes	/de/fix/	de,en,my,th,zh	
+/de/fix/app-test/	de	docs/de/fix/app-test/index.html	p-m	tools/build_minisites.py	app-test	card	buy	Kaufen	/de/buy/?c=app-test	yes	/de/fix/app-test/	de,en,my,th,zh	
+/de/fix/mirror/	de	docs/de/fix/mirror/index.html	p-m	tools/build_minisites.py	mirror	card	buy	Kaufen	/de/buy/?c=mirror	yes	/de/fix/mirror/	de,en,my,th,zh	
+/de/fix/sec-hacked/	de	docs/de/fix/sec-hacked/index.html	p-m	tools/build_minisites.py	sec-hacked	card	buy	Kaufen	/de/buy/?c=sec-hacked	yes	/de/fix/sec-hacked/	de,en,my,th,zh	
+/de/fix/sec-mail/	de	docs/de/fix/sec-mail/index.html	p-m	tools/build_minisites.py	sec-mail	card	buy	Kaufen	/de/buy/?c=sec-mail	yes	/de/fix/sec-mail/	de,en,my,th,zh	
+/de/help/	de	docs/de/help/index.html	p-cat	tools/build_shop.py category()	help	category		Kaufen	/de/buy/?c=thai-plan	yes	/de/help/	de,en,my,th,zh	
+/de/help/call/	de	docs/de/help/call/index.html	p-m	tools/build_minisites.py	call	card	buy	Kaufen	/de/buy/?c=call	yes	/de/help/call/	de,en,my,th,zh	
+/de/help/compare/	de	docs/de/help/compare/index.html	p-m	tools/build_minisites.py	compare	card	buy	Kaufen	/de/buy/?c=compare	yes	/de/help/compare/	de,en,my,th,zh	
+/de/help/dispute/	de	docs/de/help/dispute/index.html	p-m	tools/build_minisites.py	dispute	card	buy	Kaufen	/de/buy/?c=dispute	yes	/de/help/dispute/	de,en,my,th,zh	
+/de/help/errand/	de	docs/de/help/errand/index.html	p-m	tools/build_minisites.py	errand	card	buy	Kaufen	/de/buy/?c=errand	yes	/de/help/errand/	de,en,my,th,zh	
+/de/help/form/	de	docs/de/help/form/index.html	p-m	tools/build_minisites.py	form	card	buy	Kaufen	/de/buy/?c=form	yes	/de/help/form/	de,en,my,th,zh	
+/de/help/idme/	de	docs/de/help/idme/index.html	p-m	tools/build_minisites.py	idme	card	buy	Kaufen	/de/buy/?c=idme	yes	/de/help/idme/	de,en,my,th,zh	
+/de/help/legalise/	de	docs/de/help/legalise/index.html	p-m	tools/build_minisites.py	legalise	card	buy	Kaufen	/de/buy/?c=legalise	yes	/de/help/legalise/	de,en,my,th,zh	
+/de/help/thai-plan/	de	docs/de/help/thai-plan/index.html	p-m	tools/build_minisites.py	thai-plan	card	buy	Kaufen	/de/buy/?c=thai-plan	yes	/de/help/thai-plan/	de,en,my,th,zh	
+/de/help/there/	de	docs/de/help/there/index.html	p-m	tools/build_minisites.py	there	card	buy	Kaufen	/de/buy/?c=there	yes	/de/help/there/	de,en,my,th,zh	
+/de/help/trades/	de	docs/de/help/trades/index.html	p-m	tools/build_minisites.py	trades	card	buy	Kaufen	/de/buy/?c=trades	yes	/de/help/trades/	de,en,my,th,zh	
+/de/help/vehicle/	de	docs/de/help/vehicle/index.html	p-m	tools/build_minisites.py	vehicle	card	buy	Kaufen	/de/buy/?c=vehicle	yes	/de/help/vehicle/	de,en,my,th,zh	
+/de/luck/	de	docs/de/luck/index.html	p-cat	tools/build_shop.py category()	luck	category		Kaufen	/de/buy/?c=date-pick	yes	/de/luck/	de,en,my,th,zh	
+/de/luck/almanac-widget/	de	docs/de/luck/almanac-widget/index.html	p-m	tools/build_minisites.py	almanac-widget	card	buy	Kaufen	/de/buy/?c=almanac-widget	yes	/de/luck/almanac-widget/	de,en,my,th,zh	
+/de/luck/amulet/	de	docs/de/luck/amulet/index.html	p-m	tools/build_minisites.py	amulet	card	buy	Kaufen	/de/buy/?c=amulet	yes	/de/luck/amulet/	de,en,my,th,zh	
+/de/luck/bazi/	de	docs/de/luck/bazi/index.html	p-m	tools/build_minisites.py	bazi	card	buy	Kaufen	/de/buy/?c=bazi	yes	/de/luck/bazi/	de,en,my,th,zh	
+/de/luck/date-pick/	de	docs/de/luck/date-pick/index.html	p-m	tools/build_minisites.py	date-pick	card	buy	Kaufen	/de/buy/?c=date-pick	yes	/de/luck/date-pick/	de,en,my,th,zh	
+/de/luck/eink-clock/	de	docs/de/luck/eink-clock/index.html	p-m	tools/build_minisites.py	eink-clock	card	buy	Kaufen	/de/buy/?c=eink-clock	yes	/de/luck/eink-clock/	de,en,my,th,zh	
+/de/luck/lucky-number/	de	docs/de/luck/lucky-number/index.html	p-m	tools/build_minisites.py	lucky-number	card	buy	Kaufen	/de/buy/?c=lucky-number	yes	/de/luck/lucky-number/	de,en,my,th,zh	
+/de/luck/name-charm/	de	docs/de/luck/name-charm/index.html	p-m	tools/build_minisites.py	name-charm	card	buy	Kaufen	/de/buy/?c=name-charm	yes	/de/luck/name-charm/	de,en,my,th,zh	
+/de/luck/name-pick/	de	docs/de/luck/name-pick/index.html	p-m	tools/build_minisites.py	name-pick	card	buy	Kaufen	/de/buy/?c=name-pick	yes	/de/luck/name-pick/	de,en,my,th,zh	
+/de/luck/pha-yant/	de	docs/de/luck/pha-yant/index.html	p-m	tools/build_minisites.py	pha-yant	card	buy	Kaufen	/de/buy/?c=pha-yant	yes	/de/luck/pha-yant/	de,en,my,th,zh	
+/de/luck/reading/	de	docs/de/luck/reading/index.html	p-m	tools/build_minisites.py	reading	card	buy	Kaufen	/de/buy/?c=reading	yes	/de/luck/reading/	de,en,my,th,zh	
+/de/luck/sak-yant/	de	docs/de/luck/sak-yant/index.html	p-m	tools/build_minisites.py	sak-yant	card	buy	Kaufen	/de/buy/?c=sak-yant	yes	/de/luck/sak-yant/	de,en,my,th,zh	
+/de/merit/	de	docs/de/merit/index.html	p-cat	tools/build_shop.py category()	merit	category		Kaufen	/de/buy/?c=merit-dead	yes	/de/merit/	de,en,my,th,zh	
+/de/merit/house-blessing/	de	docs/de/merit/house-blessing/index.html	p-m	tools/build_minisites.py	house-blessing	card	buy	Kaufen	/de/buy/?c=house-blessing	yes	/de/merit/house-blessing/	de,en,my,th,zh	
+/de/merit/lanna-wedding/	de	docs/de/merit/lanna-wedding/index.html	p-m	tools/build_minisites.py	lanna-wedding	card	buy	Kaufen	/de/buy/?c=lanna-wedding	yes	/de/merit/lanna-wedding/	de,en,my,th,zh	
+/de/merit/merit-dead/	de	docs/de/merit/merit-dead/index.html	p-m	tools/build_minisites.py	merit-dead	card	buy	Kaufen	/de/buy/?c=merit-dead	yes	/de/merit/merit-dead/	de,en,my,th,zh	
+/de/merit/merit-you/	de	docs/de/merit/merit-you/index.html	p-m	tools/build_minisites.py	merit-you	card	buy	Kaufen	/de/buy/?c=merit-you	yes	/de/merit/merit-you/	de,en,my,th,zh	
+/de/merit/spirit-house/	de	docs/de/merit/spirit-house/index.html	p-m	tools/build_minisites.py	spirit-house	card	buy	Kaufen	/de/buy/?c=spirit-house	yes	/de/merit/spirit-house/	de,en,my,th,zh	
+/de/merit/su-khwan/	de	docs/de/merit/su-khwan/index.html	p-m	tools/build_minisites.py	su-khwan	card	buy	Kaufen	/de/buy/?c=su-khwan	yes	/de/merit/su-khwan/	de,en,my,th,zh	
+/de/money/	de	docs/de/money/index.html	p-cat	tools/build_shop.py category()	money	category		Kaufen	/de/buy/?c=merchant	yes	/de/money/	de,en,my,th,zh	
+/de/money/bank-account/	de	docs/de/money/bank-account/index.html	p-m	tools/build_minisites.py	bank-account	card	buy	Kaufen	/de/buy/?c=bank-account	yes	/de/money/bank-account/	de,en,my,th,zh	
+/de/money/books/	de	docs/de/money/books/index.html	p-m	tools/build_minisites.py	books	card	buy	Kaufen	/de/buy/?c=books	yes	/de/money/books/	de,en,my,th,zh	
+/de/money/exchange/	de	docs/de/money/exchange/index.html	p-m	tools/build_minisites.py	exchange	card	buy	Kaufen	/de/buy/?c=exchange	yes	/de/money/exchange/	de,en,my,th,zh	
+/de/money/invoice/	de	docs/de/money/invoice/index.html	p-m	tools/build_minisites.py	invoice	card	buy	Kaufen	/de/buy/?c=invoice	yes	/de/money/invoice/	de,en,my,th,zh	
+/de/money/kh-books/	de	docs/de/money/kh-books/index.html	p-m	tools/build_minisites.py	kh-books	card	buy	Kaufen	/de/buy/?c=kh-books	yes	/de/money/kh-books/	de,en,my,th,zh	
+/de/money/merchant/	de	docs/de/money/merchant/index.html	p-m	tools/build_minisites.py	merchant	card	buy	Kaufen	/de/buy/?c=merchant	yes	/de/money/merchant/	de,en,my,th,zh	
+/de/money/payouts/	de	docs/de/money/payouts/index.html	p-m	tools/build_minisites.py	payouts	card	buy	Kaufen	/de/buy/?c=payouts	yes	/de/money/payouts/	de,en,my,th,zh	
+/de/money/staff-papers/	de	docs/de/money/staff-papers/index.html	p-m	tools/build_minisites.py	staff-papers	card	buy	Kaufen	/de/buy/?c=staff-papers	yes	/de/money/staff-papers/	de,en,my,th,zh	
+/de/moving/	de	docs/de/moving/index.html	p-cat	tools/build_shop.py category()	moving	category		Kaufen	/de/buy/?c=move	yes	/de/moving/	de,en,my,th,zh	
+/de/moving/luggage/	de	docs/de/moving/luggage/index.html	p-m	tools/build_minisites.py	luggage	card	buy	Kaufen	/de/buy/?c=luggage	yes	/de/moving/luggage/	de,en,my,th,zh	
+/de/moving/move/	de	docs/de/moving/move/index.html	p-m	tools/build_minisites.py	move	card	buy	Kaufen	/de/buy/?c=move	yes	/de/moving/move/	de,en,my,th,zh	
+/de/outsource/	de	docs/de/outsource/index.html	p-cat	tools/build_shop.py category()	outsource	category		Kaufen	/de/buy/?c=voice	yes	/de/outsource/	de,en,my,th,zh	
+/de/outsource/assistant/	de	docs/de/outsource/assistant/index.html	p-m	tools/build_minisites.py	assistant	card	buy	Kaufen	/de/buy/?c=assistant	yes	/de/outsource/assistant/	de,en,my,th,zh	
+/de/outsource/calls-out/	de	docs/de/outsource/calls-out/index.html	p-m	tools/build_minisites.py	calls-out	card	buy	Kaufen	/de/buy/?c=calls-out	yes	/de/outsource/calls-out/	de,en,my,th,zh	
+/de/outsource/cs-desk/	de	docs/de/outsource/cs-desk/index.html	p-m	tools/build_minisites.py	cs-desk	card	buy	Kaufen	/de/buy/?c=cs-desk	yes	/de/outsource/cs-desk/	de,en,my,th,zh	
+/de/outsource/subtitles/	de	docs/de/outsource/subtitles/index.html	p-m	tools/build_minisites.py	subtitles	card	buy	Kaufen	/de/buy/?c=subtitles	yes	/de/outsource/subtitles/	de,en,my,th,zh	
+/de/outsource/typing/	de	docs/de/outsource/typing/index.html	p-m	tools/build_minisites.py	typing	card	buy	Kaufen	/de/buy/?c=typing	yes	/de/outsource/typing/	de,en,my,th,zh	
+/de/outsource/voice/	de	docs/de/outsource/voice/index.html	p-m	tools/build_minisites.py	voice	card	buy	Kaufen	/de/buy/?c=voice	yes	/de/outsource/voice/	de,en,my,th,zh	
+/de/questions/	de	docs/de/questions/index.html	-	tools/build_questions.py				Schreiben Sie uns auf LINE	https://line.me/R/ti/p/@964yxgnk	yes	/de/questions/	de,en,my,th,zh	
+/de/ship/	de	docs/de/ship/index.html	p-cat	tools/build_shop.py category()	ship	category		Kaufen	/de/buy/?c=partner	yes	/de/ship/	de,en,my,th,zh	
+/de/ship/partner/	de	docs/de/ship/partner/index.html	p-m	tools/build_minisites.py	partner	card	buy	Kaufen	/de/buy/?c=partner	yes	/de/ship/partner/	de,en,my,th,zh	
+/de/shop/	de	docs/de/shop/index.html	p-cat	tools/build_shop.py category()	shop	category		Kaufen	/de/buy/?c=online-shop	yes	/de/shop/	de,en,my,th,zh	
+/de/shop/ads-run/	de	docs/de/shop/ads-run/index.html	p-m	tools/build_minisites.py	ads-run	card	buy	Kaufen	/de/buy/?c=ads-run	yes	/de/shop/ads-run/	de,en,my,th,zh	
+/de/shop/etsy/	de	docs/de/shop/etsy/index.html	p-m	tools/build_minisites.py	etsy	card	buy	Kaufen	/de/buy/?c=etsy	yes	/de/shop/etsy/	de,en,my,th,zh	
+/de/shop/fb-care/	de	docs/de/shop/fb-care/index.html	p-m	tools/build_minisites.py	fb-care	card	buy	Kaufen	/de/buy/?c=fb-care	yes	/de/shop/fb-care/	de,en,my,th,zh	
+/de/shop/grab/	de	docs/de/shop/grab/index.html	p-m	tools/build_minisites.py	grab	card	buy	Kaufen	/de/buy/?c=grab	yes	/de/shop/grab/	de,en,my,th,zh	
+/de/shop/online-shop/	de	docs/de/shop/online-shop/index.html	p-m	tools/build_minisites.py	online-shop	card	buy	Kaufen	/de/buy/?c=online-shop	yes	/de/shop/online-shop/	de,en,my,th,zh	
+/de/shop/ordering/	de	docs/de/shop/ordering/index.html	p-m	tools/build_minisites.py	ordering	card	buy	Kaufen	/de/buy/?c=ordering	yes	/de/shop/ordering/	de,en,my,th,zh	
+/de/shop/paybox/	de	docs/de/shop/paybox/index.html	p-m	tools/build_minisites.py	paybox	card	buy	Kaufen	/de/buy/?c=paybox	yes	/de/shop/paybox/	de,en,my,th,zh	
+/de/shop/print/	de	docs/de/shop/print/index.html	p-m	tools/build_minisites.py	print	card	buy	Kaufen	/de/buy/?c=print	yes	/de/shop/print/	de,en,my,th,zh	
+/de/shop/restaurant-desk/	de	docs/de/shop/restaurant-desk/index.html	p-m	tools/build_minisites.py	restaurant-desk	card	buy	Kaufen	/de/buy/?c=restaurant-desk	yes	/de/shop/restaurant-desk/	de,en,my,th,zh	
+/de/shop/signs/	de	docs/de/shop/signs/index.html	p-m	tools/build_minisites.py	signs	card	buy	Kaufen	/de/buy/?c=signs	yes	/de/shop/signs/	de,en,my,th,zh	
+/de/shop/stall-page/	de	docs/de/shop/stall-page/index.html	p-m	tools/build_minisites.py	stall-page	card	buy	Kaufen	/de/buy/?c=stall-page	yes	/de/shop/stall-page/	de,en,my,th,zh	
+/de/shop/trade-photos/	de	docs/de/shop/trade-photos/index.html	p-m	tools/build_minisites.py	trade-photos	card	buy	Kaufen	/de/buy/?c=trade-photos	yes	/de/shop/trade-photos/	de,en,my,th,zh	
+/de/software/	de	docs/de/software/index.html	p-soft	tools/build_arrange.py software				So funktioniert es (öffnet pm.nanobotco.workers.dev, die eig	https://pm.nanobotco.workers.dev/about/	yes	/de/software/	de,en,my,th,zh	
+/de/stay/	de	docs/de/stay/index.html	p-cat	tools/build_shop.py category()	stay	category		Kaufen	/de/buy/?c=stay-check	yes	/de/stay/	de,en,my,th,zh	
+/de/stay/agency-sheet/	de	docs/de/stay/agency-sheet/index.html	p-m	tools/build_minisites.py	agency-sheet	card	buy	Kaufen	/de/buy/?c=agency-sheet	yes	/de/stay/agency-sheet/	de,en,my,th,zh	
+/de/stay/npa-homes/	de	docs/de/stay/npa-homes/index.html	p-m	tools/build_minisites.py	npa-homes	card	buy	Kaufen	/de/buy/?c=npa-homes	yes	/de/stay/npa-homes/	de,en,my,th,zh	
+/de/stay/rentals/	de	docs/de/stay/rentals/index.html	p-m	tools/build_minisites.py	rentals	card	buy	Kaufen	/de/buy/?c=rentals	yes	/de/stay/rentals/	de,en,my,th,zh	
+/de/stay/stay-booking/	de	docs/de/stay/stay-booking/index.html	p-m	tools/build_minisites.py	stay-booking	card	buy	Kaufen	/de/buy/?c=stay-booking	yes	/de/stay/stay-booking/	de,en,my,th,zh	
+/de/stay/stay-check/	de	docs/de/stay/stay-check/index.html	p-m	tools/build_minisites.py	stay-check	card	buy	Kaufen	/de/buy/?c=stay-check	yes	/de/stay/stay-check/	de,en,my,th,zh	
+/de/stay/stay-rent/	de	docs/de/stay/stay-rent/index.html	p-m	tools/build_minisites.py	stay-rent	card	buy	Kaufen	/de/buy/?c=stay-rent	yes	/de/stay/stay-rent/	de,en,my,th,zh	
+/de/studio/	de	docs/de/studio/index.html	studio	tools/build_studio.py						yes	/de/studio/	de,en,my,th,zh	
+/de/studio/black-swan/	de	docs/de/studio/black-swan/index.html	studio	tools/build_studio.py						yes	/de/studio/black-swan/	de,en,my,th,zh	
+/de/studio/black-swan/one/	de	docs/de/studio/black-swan/one/index.html	studio	tools/build_studio.py						no			
+/de/studio/crypto-safety/	de	docs/de/studio/crypto-safety/index.html	studio	tools/build_studio.py						yes	/de/studio/crypto-safety/	de,en,my,th,zh	
+/de/tours/	de	docs/de/tours/index.html	p-cat	tools/build_shop.py category()	tours	category		Kaufen	/de/buy/?c=lantern	yes	/de/tours/	de,en,my,th,zh	
+/de/tours/balloon/	de	docs/de/tours/balloon/index.html	p-m	tools/build_minisites.py	balloon	card	buy	Kaufen	/de/buy/?c=balloon	yes	/de/tours/balloon/	de,en,my,th,zh	
+/de/tours/car-guide/	de	docs/de/tours/car-guide/index.html	p-m	tools/build_minisites.py	car-guide	card	buy	Kaufen	/de/buy/?c=car-guide	yes	/de/tours/car-guide/	de,en,my,th,zh	
+/de/tours/experience/	de	docs/de/tours/experience/index.html	p-m	tools/build_minisites.py	experience	card	buy	Kaufen	/de/buy/?c=experience	yes	/de/tours/experience/	de,en,my,th,zh	
+/de/tours/lantern/	de	docs/de/tours/lantern/index.html	p-m	tools/build_minisites.py	lantern	card	buy	Kaufen	/de/buy/?c=lantern	yes	/de/tours/lantern/	de,en,my,th,zh	
+/de/tours/tour-3d/	de	docs/de/tours/tour-3d/index.html	p-m	tools/build_minisites.py	tour-3d	card	buy	Kaufen	/de/buy/?c=tour-3d	yes	/de/tours/tour-3d/	de,en,my,th,zh	
+/de/tours/tour-day/	de	docs/de/tours/tour-day/index.html	p-m	tools/build_minisites.py	tour-day	card	buy	Kaufen	/de/buy/?c=tour-day	yes	/de/tours/tour-day/	de,en,my,th,zh	
+/de/tours/trip-plan/	de	docs/de/tours/trip-plan/index.html	p-m	tools/build_minisites.py	trip-plan	card	buy	Kaufen	/de/buy/?c=trip-plan	yes	/de/tours/trip-plan/	de,en,my,th,zh	
+/de/translate/	de	docs/de/translate/index.html	p-cat	tools/build_shop.py category()	translate	category		Kaufen	/de/buy/?c=german	yes	/de/translate/	de,en,my,th,zh	
+/de/translate/german/	de	docs/de/translate/german/index.html	p-m	tools/build_minisites.py	german	card	buy	Kaufen	/de/buy/?c=german	yes	/de/translate/german/	de,en,my,th,zh	
+/de/translate/interp/	de	docs/de/translate/interp/index.html	p-m	tools/build_minisites.py	interp	card	buy	Kaufen	/de/buy/?c=interp	yes	/de/translate/interp/	de,en,my,th,zh	
+/de/translate/lang-leaves/	de	docs/de/translate/lang-leaves/index.html	p-m	tools/build_minisites.py	lang-leaves	card	buy	Kaufen	/de/buy/?c=lang-leaves	yes	/de/translate/lang-leaves/	de,en,my,th,zh	
+/de/translate/lang-pages/	de	docs/de/translate/lang-pages/index.html	p-m	tools/build_minisites.py	lang-pages	card	buy	Kaufen	/de/buy/?c=lang-pages	yes	/de/translate/lang-pages/	de,en,my,th,zh	
+/de/translate/lang-shan/	de	docs/de/translate/lang-shan/index.html	p-m	tools/build_minisites.py	lang-shan	card	buy	Kaufen	/de/buy/?c=lang-shan	yes	/de/translate/lang-shan/	de,en,my,th,zh	
+/de/translate/romanise/	de	docs/de/translate/romanise/index.html	p-m	tools/build_minisites.py	romanise	card	buy	Kaufen	/de/buy/?c=romanise	yes	/de/translate/romanise/	de,en,my,th,zh	
+/de/translate/thai-lessons/	de	docs/de/translate/thai-lessons/index.html	p-m	tools/build_minisites.py	thai-lessons	card	buy	Kaufen	/de/buy/?c=thai-lessons	yes	/de/translate/thai-lessons/	de,en,my,th,zh	
+/de/translate/translate/	de	docs/de/translate/translate/index.html	p-m	tools/build_minisites.py	translate	card	buy	Kaufen	/de/buy/?c=translate	yes	/de/translate/translate/	de,en,my,th,zh	
+/de/visa/	de	docs/de/visa/index.html	p-cat	tools/build_shop.py category()	visa	category		Zur Seite	https://chiangmaivisadesk.com/	yes	/de/visa/	de,en,my,th,zh	
+/de/web/	de	docs/de/web/index.html	p-cat	tools/build_shop.py category()	web	category		Kaufen	/de/buy/?c=web-mail	yes	/de/web/	de,en,my,th,zh	
+/de/web/accessible/	de	docs/de/web/accessible/index.html	p-m	tools/build_minisites.py	accessible	card	buy	Kaufen	/de/buy/?c=accessible	yes	/de/web/accessible/	de,en,my,th,zh	
+/de/web/app/	de	docs/de/web/app/index.html	p-m	tools/build_minisites.py	app	card	buy	Kaufen	/de/buy/?c=app	yes	/de/web/app/	de,en,my,th,zh	
+/de/web/directory/	de	docs/de/web/directory/index.html	p-m	tools/build_minisites.py	directory	card	buy	Kaufen	/de/buy/?c=directory	yes	/de/web/directory/	de,en,my,th,zh	
+/de/web/guide-site/	de	docs/de/web/guide-site/index.html	p-m	tools/build_minisites.py	guide-site	card	buy	Kaufen	/de/buy/?c=guide-site	yes	/de/web/guide-site/	de,en,my,th,zh	
+/de/web/help-page/	de	docs/de/web/help-page/index.html	p-m	tools/build_minisites.py	help-page	card	buy	Kaufen	/de/buy/?c=help-page	yes	/de/web/help-page/	de,en,my,th,zh	
+/de/web/site/	de	docs/de/web/site/index.html	p-m	tools/build_minisites.py	site	card	buy	Kaufen	/de/buy/?c=site	yes	/de/web/site/	de,en,my,th,zh	
+/de/web/tap-card/	de	docs/de/web/tap-card/index.html	p-m	tools/build_minisites.py	tap-card	card	buy	Kaufen	/de/buy/?c=tap-card	yes	/de/web/tap-card/	de,en,my,th,zh	
+/de/web/vibe/	de	docs/de/web/vibe/index.html	p-m	tools/build_minisites.py	vibe	card	buy	Kaufen	/de/buy/?c=vibe	yes	/de/web/vibe/	de,en,my,th,zh	
+/de/web/web-care/	de	docs/de/web/web-care/index.html	p-m	tools/build_minisites.py	web-care	card	buy	Kaufen	/de/buy/?c=web-care	yes	/de/web/web-care/	de,en,my,th,zh	
+/de/web/web-dns/	de	docs/de/web/web-dns/index.html	p-m	tools/build_minisites.py	web-dns	card	buy	Kaufen	/de/buy/?c=web-dns	yes	/de/web/web-dns/	de,en,my,th,zh	
+/de/web/web-found/	de	docs/de/web/web-found/index.html	p-m	tools/build_minisites.py	web-found	card	buy	Kaufen	/de/buy/?c=web-found	yes	/de/web/web-found/	de,en,my,th,zh	
+/de/web/web-license/	de	docs/de/web/web-license/index.html	p-m	tools/build_minisites.py	web-license	card	buy	Kaufen	/de/buy/?c=web-license	yes	/de/web/web-license/	de,en,my,th,zh	
+/de/web/web-line/	de	docs/de/web/web-line/index.html	p-m	tools/build_minisites.py	web-line	card	buy	Kaufen	/de/buy/?c=web-line	yes	/de/web/web-line/	de,en,my,th,zh	
+/de/web/web-mail/	de	docs/de/web/web-mail/index.html	p-m	tools/build_minisites.py	web-mail	card	buy	Kaufen	/de/buy/?c=web-mail	yes	/de/web/web-mail/	de,en,my,th,zh	
+/de/web/web-move/	de	docs/de/web/web-move/index.html	p-m	tools/build_minisites.py	web-move	card	buy	Kaufen	/de/buy/?c=web-move	yes	/de/web/web-move/	de,en,my,th,zh	
+/de/web/web-search/	de	docs/de/web/web-search/index.html	p-m	tools/build_minisites.py	web-search	card	buy	Kaufen	/de/buy/?c=web-search	yes	/de/web/web-search/	de,en,my,th,zh	
+/de/web/web-sharecard/	de	docs/de/web/web-sharecard/index.html	p-m	tools/build_minisites.py	web-sharecard	card	buy	Kaufen	/de/buy/?c=web-sharecard	yes	/de/web/web-sharecard/	de,en,my,th,zh	
+/de/web/widget/	de	docs/de/web/widget/index.html	p-m	tools/build_minisites.py	widget	card	buy	Kaufen	/de/buy/?c=widget	yes	/de/web/widget/	de,en,my,th,zh	
+/de/web/wp-api/	de	docs/de/web/wp-api/index.html	p-m	tools/build_minisites.py	wp-api	card	buy	Kaufen	/de/buy/?c=wp-api	yes	/de/web/wp-api/	de,en,my,th,zh	
+/de/weddings/	de	docs/de/weddings/index.html	p-cat	tools/build_shop.py category()	weddings	category		Kaufen	/de/buy/?c=event-page	yes	/de/weddings/	de,en,my,th,zh	
+/de/weddings/bride/	de	docs/de/weddings/bride/index.html	p-m	tools/build_minisites.py	bride	card	buy	Kaufen	/de/buy/?c=bride	yes	/de/weddings/bride/	de,en,my,th,zh	
+/de/weddings/event-page/	de	docs/de/weddings/event-page/index.html	p-m	tools/build_minisites.py	event-page	card	buy	Kaufen	/de/buy/?c=event-page	yes	/de/weddings/event-page/	de,en,my,th,zh	
+/de/weddings/event-plan/	de	docs/de/weddings/event-plan/index.html	p-m	tools/build_minisites.py	event-plan	card	buy	Kaufen	/de/buy/?c=event-plan	yes	/de/weddings/event-plan/	de,en,my,th,zh	
+/de/weddings/tribute/	de	docs/de/weddings/tribute/index.html	p-m	tools/build_minisites.py	tribute	card	buy	Kaufen	/de/buy/?c=tribute	yes	/de/weddings/tribute/	de,en,my,th,zh	
+/de/weddings/wedding/	de	docs/de/weddings/wedding/index.html	p-m	tools/build_minisites.py	wedding	card	buy	Kaufen	/de/buy/?c=wedding	yes	/de/weddings/wedding/	de,en,my,th,zh	
+/design/	en	docs/design/index.html	p-cat	tools/build_shop.py category()	design	category		Buy	/buy/?c=awards	yes	/design/	de,en,my,th,zh	
+/design/article/	en	docs/design/article/index.html	p-m	tools/build_minisites.py	article	card	buy	Buy	/buy/?c=article	yes	/design/article/	de,en,my,th,zh	
+/design/awards/	en	docs/design/awards/index.html	p-m	tools/build_minisites.py	awards	card	buy	Buy	/buy/?c=awards	yes	/design/awards/	de,en,my,th,zh	
+/design/cartoons/	en	docs/design/cartoons/index.html	p-m	tools/build_minisites.py	cartoons	card	buy	Buy	/buy/?c=cartoons	yes	/design/cartoons/	de,en,my,th,zh	
+/design/copy/	en	docs/design/copy/index.html	p-m	tools/build_minisites.py	copy	card	buy	Buy	/buy/?c=copy	yes	/design/copy/	de,en,my,th,zh	
+/design/decks/	en	docs/design/decks/index.html	p-m	tools/build_minisites.py	decks	card	buy	Buy	/buy/?c=decks	yes	/design/decks/	de,en,my,th,zh	
+/design/drawn/	en	docs/design/drawn/index.html	p-m	tools/build_minisites.py	drawn	card	buy	Buy	/buy/?c=drawn	yes	/design/drawn/	de,en,my,th,zh	
+/design/graphics/	en	docs/design/graphics/index.html	p-m	tools/build_minisites.py	graphics	card	buy	Buy	/buy/?c=graphics	yes	/design/graphics/	de,en,my,th,zh	
+/design/interactive/	en	docs/design/interactive/index.html	p-m	tools/build_minisites.py	interactive	card	buy	Buy	/buy/?c=interactive	yes	/design/interactive/	de,en,my,th,zh	
+/design/interview/	en	docs/design/interview/index.html	p-m	tools/build_minisites.py	interview	card	buy	Buy	/buy/?c=interview	yes	/design/interview/	de,en,my,th,zh	
+/design/newsletter/	en	docs/design/newsletter/index.html	p-m	tools/build_minisites.py	newsletter	card	buy	Buy	/buy/?c=newsletter	yes	/design/newsletter/	de,en,my,th,zh	
+/design/patterns/	en	docs/design/patterns/index.html	p-m	tools/build_minisites.py	patterns	card	buy	Buy	/buy/?c=patterns	yes	/design/patterns/	de,en,my,th,zh	
+/design/proposal/	en	docs/design/proposal/index.html	p-m	tools/build_minisites.py	proposal	card	buy	Buy	/buy/?c=proposal	yes	/design/proposal/	de,en,my,th,zh	
+/design/social/	en	docs/design/social/index.html	p-m	tools/build_minisites.py	social	card	buy	Buy	/buy/?c=social	yes	/design/social/	de,en,my,th,zh	
+/design/video/	en	docs/design/video/index.html	p-m	tools/build_minisites.py	video	card	buy	Buy	/buy/?c=video	yes	/design/video/	de,en,my,th,zh	
+/fix/	en	docs/fix/index.html	p-cat	tools/build_shop.py category()	fix	category		Book	/php/	yes	/fix/	de,en,my,th,zh	
+/fix/app-test/	en	docs/fix/app-test/index.html	p-m	tools/build_minisites.py	app-test	card	buy	Buy	/buy/?c=app-test	yes	/fix/app-test/	de,en,my,th,zh	
+/fix/mirror/	en	docs/fix/mirror/index.html	p-m	tools/build_minisites.py	mirror	card	buy	Buy	/buy/?c=mirror	yes	/fix/mirror/	de,en,my,th,zh	
+/fix/sec-hacked/	en	docs/fix/sec-hacked/index.html	p-m	tools/build_minisites.py	sec-hacked	card	buy	Buy	/buy/?c=sec-hacked	yes	/fix/sec-hacked/	de,en,my,th,zh	
+/fix/sec-mail/	en	docs/fix/sec-mail/index.html	p-m	tools/build_minisites.py	sec-mail	card	buy	Buy	/buy/?c=sec-mail	yes	/fix/sec-mail/	de,en,my,th,zh	
+/for/cca/	en	docs/for/cca/index.html	-	docs/for/ (client pages, by hand)				Open the interactive deckเปิดสไลด์แบบโต้ตอบ	board/	noindex			
+/for/cca/board/	en	docs/for/cca/board/index.html	-	docs/for/ (client pages, by hand)						noindex			
+/for/cca/give/	en	docs/for/cca/give/index.html	-	docs/for/ (client pages, by hand)						noindex			
+/for/cca/land/	en	docs/for/cca/land/index.html	-	docs/for/ (client pages, by hand)				← The board's page← หน้าของคณะกรรมการ	../	noindex			
+/for/eveline/	en	docs/for/eveline/index.html	-	docs/for/ (client pages, by hand)					https://fercthailand.org/how-to-donate/	noindex			
+/for/eveline/demo/	en	docs/for/eveline/demo/index.html	-	docs/for/ (client pages, by hand)					https://fercthailand.org/how-to-donate/	noindex			
+/for/joe/	en	docs/for/joe/index.html	-	docs/for/ (client pages, by hand)						noindex			
+/for/mooney/	en	docs/for/mooney/index.html	-	docs/for/ (client pages, by hand)						noindex			
+/for/pim/	en	docs/for/pim/index.html	-	docs/for/ (client pages, by hand)						noindex			
+/for/sallo/	en	docs/for/sallo/index.html	-	docs/for/ (client pages, by hand)				'+esc(t.giveBtn)+'	'+GIVE+'	noindex			
+/for/sanya/	en	docs/for/sanya/index.html	-	docs/for/ (client pages, by hand)						noindex			
+/github/	en	docs/github/index.html	-	tools/pages.py				Book a slot · จองคิว	#book	no	/github/		
+/help/	en	docs/help/index.html	p-cat	tools/build_shop.py category()	help	category		Buy	/buy/?c=thai-plan	yes	/help/	de,en,my,th,zh	
+/help/call/	en	docs/help/call/index.html	p-m	tools/build_minisites.py	call	card	buy	Buy	/buy/?c=call	yes	/help/call/	de,en,my,th,zh	
+/help/compare/	en	docs/help/compare/index.html	p-m	tools/build_minisites.py	compare	card	buy	Buy	/buy/?c=compare	yes	/help/compare/	de,en,my,th,zh	
+/help/dispute/	en	docs/help/dispute/index.html	p-m	tools/build_minisites.py	dispute	card	buy	Buy	/buy/?c=dispute	yes	/help/dispute/	de,en,my,th,zh	
+/help/errand/	en	docs/help/errand/index.html	p-m	tools/build_minisites.py	errand	card	buy	Buy	/buy/?c=errand	yes	/help/errand/	de,en,my,th,zh	
+/help/form/	en	docs/help/form/index.html	p-m	tools/build_minisites.py	form	card	buy	Buy	/buy/?c=form	yes	/help/form/	de,en,my,th,zh	
+/help/idme/	en	docs/help/idme/index.html	p-m	tools/build_minisites.py	idme	card	buy	Buy	/buy/?c=idme	yes	/help/idme/	de,en,my,th,zh	
+/help/legalise/	en	docs/help/legalise/index.html	p-m	tools/build_minisites.py	legalise	card	buy	Buy	/buy/?c=legalise	yes	/help/legalise/	de,en,my,th,zh	
+/help/thai-plan/	en	docs/help/thai-plan/index.html	p-m	tools/build_minisites.py	thai-plan	card	buy	Buy	/buy/?c=thai-plan	yes	/help/thai-plan/	de,en,my,th,zh	
+/help/there/	en	docs/help/there/index.html	p-m	tools/build_minisites.py	there	card	buy	Buy	/buy/?c=there	yes	/help/there/	de,en,my,th,zh	
+/help/trades/	en	docs/help/trades/index.html	p-m	tools/build_minisites.py	trades	card	buy	Buy	/buy/?c=trades	yes	/help/trades/	de,en,my,th,zh	
+/help/vehicle/	en	docs/help/vehicle/index.html	p-m	tools/build_minisites.py	vehicle	card	buy	Buy	/buy/?c=vehicle	yes	/help/vehicle/	de,en,my,th,zh	
+/invoice/hd-ferc-2026-01-dc3800dd/	en	docs/invoice/hd-ferc-2026-01-dc3800dd/index.html	-	tools/build_invoice.py						noindex			
+/invoice/hd-ferc-2026-02-55c68250/	en	docs/invoice/hd-ferc-2026-02-55c68250/index.html	-	tools/build_invoice.py						noindex			
+/invoice/rtp-002-1f629c8c/	en	docs/invoice/rtp-002-1f629c8c/index.html	-	tools/build_invoice.py				Pay with PayPal	https://www.paypal.me/pfauhaus	noindex			
+/luck/	en	docs/luck/index.html	p-cat	tools/build_shop.py category()	luck	category		Buy	/buy/?c=date-pick	yes	/luck/	de,en,my,th,zh	
+/luck/almanac-widget/	en	docs/luck/almanac-widget/index.html	p-m	tools/build_minisites.py	almanac-widget	card	buy	Buy	/buy/?c=almanac-widget	yes	/luck/almanac-widget/	de,en,my,th,zh	
+/luck/amulet/	en	docs/luck/amulet/index.html	p-m	tools/build_minisites.py	amulet	card	buy	Buy	/buy/?c=amulet	yes	/luck/amulet/	de,en,my,th,zh	
+/luck/bazi/	en	docs/luck/bazi/index.html	p-m	tools/build_minisites.py	bazi	card	buy	Buy	/buy/?c=bazi	yes	/luck/bazi/	de,en,my,th,zh	
+/luck/date-pick/	en	docs/luck/date-pick/index.html	p-m	tools/build_minisites.py	date-pick	card	buy	Buy	/buy/?c=date-pick	yes	/luck/date-pick/	de,en,my,th,zh	
+/luck/eink-clock/	en	docs/luck/eink-clock/index.html	p-m	tools/build_minisites.py	eink-clock	card	buy	Buy	/buy/?c=eink-clock	yes	/luck/eink-clock/	de,en,my,th,zh	
+/luck/lucky-number/	en	docs/luck/lucky-number/index.html	p-m	tools/build_minisites.py	lucky-number	card	buy	Buy	/buy/?c=lucky-number	yes	/luck/lucky-number/	de,en,my,th,zh	
+/luck/name-charm/	en	docs/luck/name-charm/index.html	p-m	tools/build_minisites.py	name-charm	card	buy	Buy	/buy/?c=name-charm	yes	/luck/name-charm/	de,en,my,th,zh	
+/luck/name-pick/	en	docs/luck/name-pick/index.html	p-m	tools/build_minisites.py	name-pick	card	buy	Buy	/buy/?c=name-pick	yes	/luck/name-pick/	de,en,my,th,zh	
+/luck/pha-yant/	en	docs/luck/pha-yant/index.html	p-m	tools/build_minisites.py	pha-yant	card	buy	Buy	/buy/?c=pha-yant	yes	/luck/pha-yant/	de,en,my,th,zh	
+/luck/reading/	en	docs/luck/reading/index.html	p-m	tools/build_minisites.py	reading	card	buy	Buy	/buy/?c=reading	yes	/luck/reading/	de,en,my,th,zh	
+/luck/sak-yant/	en	docs/luck/sak-yant/index.html	p-m	tools/build_minisites.py	sak-yant	card	buy	Buy	/buy/?c=sak-yant	yes	/luck/sak-yant/	de,en,my,th,zh	
+/market/	en	docs/market/index.html	-	tools/build_market.py				Run packs · ทดสอบ	/redteam/	yes	/market/		
+/merit/	en	docs/merit/index.html	p-cat	tools/build_shop.py category()	merit	category		Buy	/buy/?c=merit-dead	yes	/merit/	de,en,my,th,zh	
+/merit/house-blessing/	en	docs/merit/house-blessing/index.html	p-m	tools/build_minisites.py	house-blessing	card	buy	Buy	/buy/?c=house-blessing	yes	/merit/house-blessing/	de,en,my,th,zh	
+/merit/lanna-wedding/	en	docs/merit/lanna-wedding/index.html	p-m	tools/build_minisites.py	lanna-wedding	card	buy	Buy	/buy/?c=lanna-wedding	yes	/merit/lanna-wedding/	de,en,my,th,zh	
+/merit/merit-dead/	en	docs/merit/merit-dead/index.html	p-m	tools/build_minisites.py	merit-dead	card	buy	Buy	/buy/?c=merit-dead	yes	/merit/merit-dead/	de,en,my,th,zh	
+/merit/merit-you/	en	docs/merit/merit-you/index.html	p-m	tools/build_minisites.py	merit-you	card	buy	Buy	/buy/?c=merit-you	yes	/merit/merit-you/	de,en,my,th,zh	
+/merit/spirit-house/	en	docs/merit/spirit-house/index.html	p-m	tools/build_minisites.py	spirit-house	card	buy	Buy	/buy/?c=spirit-house	yes	/merit/spirit-house/	de,en,my,th,zh	
+/merit/su-khwan/	en	docs/merit/su-khwan/index.html	p-m	tools/build_minisites.py	su-khwan	card	buy	Buy	/buy/?c=su-khwan	yes	/merit/su-khwan/	de,en,my,th,zh	
+/money/	en	docs/money/index.html	p-cat	tools/build_shop.py category()	money	category		Buy	/buy/?c=merchant	yes	/money/	de,en,my,th,zh	
+/money/bank-account/	en	docs/money/bank-account/index.html	p-m	tools/build_minisites.py	bank-account	card	buy	Buy	/buy/?c=bank-account	yes	/money/bank-account/	de,en,my,th,zh	
+/money/books/	en	docs/money/books/index.html	p-m	tools/build_minisites.py	books	card	buy	Buy	/buy/?c=books	yes	/money/books/	de,en,my,th,zh	
+/money/exchange/	en	docs/money/exchange/index.html	p-m	tools/build_minisites.py	exchange	card	buy	Buy	/buy/?c=exchange	yes	/money/exchange/	de,en,my,th,zh	
+/money/invoice/	en	docs/money/invoice/index.html	p-m	tools/build_minisites.py	invoice	card	buy	Buy	/buy/?c=invoice	yes	/money/invoice/	de,en,my,th,zh	
+/money/kh-books/	en	docs/money/kh-books/index.html	p-m	tools/build_minisites.py	kh-books	card	buy	Buy	/buy/?c=kh-books	yes	/money/kh-books/	de,en,my,th,zh	
+/money/merchant/	en	docs/money/merchant/index.html	p-m	tools/build_minisites.py	merchant	card	buy	Buy	/buy/?c=merchant	yes	/money/merchant/	de,en,my,th,zh	
+/money/payouts/	en	docs/money/payouts/index.html	p-m	tools/build_minisites.py	payouts	card	buy	Buy	/buy/?c=payouts	yes	/money/payouts/	de,en,my,th,zh	
+/money/staff-papers/	en	docs/money/staff-papers/index.html	p-m	tools/build_minisites.py	staff-papers	card	buy	Buy	/buy/?c=staff-papers	yes	/money/staff-papers/	de,en,my,th,zh	
+/moving/	en	docs/moving/index.html	p-cat	tools/build_shop.py category()	moving	category		Buy	/buy/?c=move	yes	/moving/	de,en,my,th,zh	
+/moving/luggage/	en	docs/moving/luggage/index.html	p-m	tools/build_minisites.py	luggage	card	buy	Buy	/buy/?c=luggage	yes	/moving/luggage/	de,en,my,th,zh	
+/moving/move/	en	docs/moving/move/index.html	p-m	tools/build_minisites.py	move	card	buy	Buy	/buy/?c=move	yes	/moving/move/	de,en,my,th,zh	
+/my/	my	docs/my/index.html	p-front	tools/build_shop.py front()				အလုပ်တစ်ခု အပ်ရန်	#jobs	yes	/my/	de,en,my,th,zh	
+/my/ai/	my	docs/my/ai/index.html	p-cat	tools/build_shop.py category()	ai	category		ဝယ်ရန်	/my/buy/?c=ai-assistant	yes	/my/ai/	de,en,my,th,zh	
+/my/ai/ai-assistant/	my	docs/my/ai/ai-assistant/index.html	p-m	tools/build_minisites.py	ai-assistant	card	buy	ဝယ်ရန်	/my/buy/?c=ai-assistant	yes	/my/ai/ai-assistant/	de,en,my,th,zh	
+/my/ai/ai-automation/	my	docs/my/ai/ai-automation/index.html	p-m	tools/build_minisites.py	ai-automation	card	buy	ဝယ်ရန်	/my/buy/?c=ai-automation	yes	/my/ai/ai-automation/	de,en,my,th,zh	
+/my/ai/ai-batch/	my	docs/my/ai/ai-batch/index.html	p-m	tools/build_minisites.py	ai-batch	card	buy	ဝယ်ရန်	/my/buy/?c=ai-batch	yes	/my/ai/ai-batch/	de,en,my,th,zh	
+/my/ai/ai-line/	my	docs/my/ai/ai-line/index.html	p-m	tools/build_minisites.py	ai-line	card	buy	ဝယ်ရန်	/my/buy/?c=ai-line	yes	/my/ai/ai-line/	de,en,my,th,zh	
+/my/ai/crawl-pay/	my	docs/my/ai/crawl-pay/index.html	p-m	tools/build_minisites.py	crawl-pay	card	buy	ဝယ်ရန်	/my/buy/?c=crawl-pay	yes	/my/ai/crawl-pay/	de,en,my,th,zh	
+/my/ai/crew/	my	docs/my/ai/crew/index.html	p-m	tools/build_minisites.py	crew	card	book	ကြိုတင်မှာရန်	/bots/	yes	/my/ai/crew/	de,en,my,th,zh	
+/my/ai/demand-prices/	my	docs/my/ai/demand-prices/index.html	p-m	tools/build_minisites.py	demand-prices	card	buy	ဝယ်ရန်	/my/buy/?c=demand-prices	yes	/my/ai/demand-prices/	de,en,my,th,zh	
+/my/arrange/appointment/	my	docs/my/arrange/appointment/index.html	p-job	tools/build_arrange.py	appointment	job	buy	ဝယ်ရန်	/my/buy/?c=specialist&o=specialist-book	yes	/my/arrange/appointment/	de,en,my,th,zh	
+/my/arrange/driver/	my	docs/my/arrange/driver/index.html	p-job	tools/build_arrange.py	driver	job	buy	ဝယ်ရန်	/my/buy/?c=car-guide&o=driver-day	yes	/my/arrange/driver/	de,en,my,th,zh	
+/my/arrange/home-service/	my	docs/my/arrange/home-service/index.html	p-job	tools/build_arrange.py	home-service	job	buy	ဝယ်ရန်	/my/buy/?c=trades&o=trades	yes	/my/arrange/home-service/	de,en,my,th,zh	
+/my/arrange/parcel/	my	docs/my/arrange/parcel/index.html	p-job	tools/build_arrange.py	parcel	job	quote	ဝယ်ရန်	/my/buy/?c=luggage&o=luggage	yes	/my/arrange/parcel/	de,en,my,th,zh	
+/my/arrange/shop-for-me/	my	docs/my/arrange/shop-for-me/index.html	p-job	tools/build_arrange.py	shop-for-me	job	buy	ဝယ်ရန်	/my/buy/?c=errand&o=errand	yes	/my/arrange/shop-for-me/	de,en,my,th,zh	
+/my/ask/	my	docs/my/ask/index.html	p-ask	tools/build_shop.py ask_page() + assets/shop.js				LINE ဖြင့် ဆက်သွယ်ရန် @964yxgnk	https://line.me/R/ti/p/@964yxgnk	noindex	/my/ask/	de,en,my,th,zh	
+/my/buy/	my	docs/my/buy/index.html	p-buy	tools/build_shop.py buy_page() + assets/shop.js				LINE ဖြင့် ဆက်သွယ်ရန်	https://line.me/R/ti/p/@964yxgnk	noindex	/my/buy/	de,en,my,th,zh	
+/my/care/	my	docs/my/care/index.html	p-cat	tools/build_shop.py category()	care	category		ဝယ်ရန်	/my/buy/?c=retire	yes	/my/care/	de,en,my,th,zh	
+/my/care/accident/	my	docs/my/care/accident/index.html	p-m	tools/build_minisites.py	accident	card	buy	ဝယ်ရန်	/my/buy/?c=accident	yes	/my/care/accident/	de,en,my,th,zh	
+/my/care/blood/	my	docs/my/care/blood/index.html	p-m	tools/build_minisites.py	blood	card	buy	ဝယ်ရန်	/my/buy/?c=blood	yes	/my/care/blood/	de,en,my,th,zh	
+/my/care/care-visits/	my	docs/my/care/care-visits/index.html	p-m	tools/build_minisites.py	care-visits	card	buy	ဝယ်ရန်	/my/buy/?c=care-visits	yes	/my/care/care-visits/	de,en,my,th,zh	
+/my/care/clean-air/	my	docs/my/care/clean-air/index.html	p-m	tools/build_minisites.py	clean-air	card	buy	ဝယ်ရန်	/my/buy/?c=clean-air	yes	/my/care/clean-air/	de,en,my,th,zh	
+/my/care/death-help/	my	docs/my/care/death-help/index.html	p-m	tools/build_minisites.py	death-help	card	buy	ဝယ်ရန်	/my/buy/?c=death-help	yes	/my/care/death-help/	de,en,my,th,zh	
+/my/care/elder-care/	my	docs/my/care/elder-care/index.html	p-m	tools/build_minisites.py	elder-care	card	buy	ဝယ်ရန်	/my/buy/?c=elder-care	yes	/my/care/elder-care/	de,en,my,th,zh	
+/my/care/lab-test/	my	docs/my/care/lab-test/index.html	p-m	tools/build_minisites.py	lab-test	card	buy	ဝယ်ရန်	/my/buy/?c=lab-test	yes	/my/care/lab-test/	de,en,my,th,zh	
+/my/care/retire/	my	docs/my/care/retire/index.html	p-m	tools/build_minisites.py	retire	card	buy	ဝယ်ရန်	/my/buy/?c=retire	yes	/my/care/retire/	de,en,my,th,zh	
+/my/care/specialist/	my	docs/my/care/specialist/index.html	p-m	tools/build_minisites.py	specialist	card	buy	ဝယ်ရန်	/my/buy/?c=specialist	yes	/my/care/specialist/	de,en,my,th,zh	
+/my/charity/	my	docs/my/charity/index.html	p-cat	tools/build_shop.py category()	charity	category		ဝယ်ရန်	/my/buy/?c=giving	yes	/my/charity/	de,en,my,th,zh	
+/my/charity/checkin/	my	docs/my/charity/checkin/index.html	p-m	tools/build_minisites.py	checkin	card	buy	ဝယ်ရန်	/my/buy/?c=checkin	yes	/my/charity/checkin/	de,en,my,th,zh	
+/my/charity/club-desk/	my	docs/my/charity/club-desk/index.html	p-m	tools/build_minisites.py	club-desk	card	buy	ဝယ်ရန်	/my/buy/?c=club-desk	yes	/my/charity/club-desk/	de,en,my,th,zh	
+/my/charity/event-kit/	my	docs/my/charity/event-kit/index.html	p-m	tools/build_minisites.py	event-kit	card	buy	ဝယ်ရန်	/my/buy/?c=event-kit	yes	/my/charity/event-kit/	de,en,my,th,zh	
+/my/charity/findable/	my	docs/my/charity/findable/index.html	p-m	tools/build_minisites.py	findable	card	buy	ဝယ်ရန်	/my/buy/?c=findable	yes	/my/charity/findable/	de,en,my,th,zh	
+/my/charity/giving/	my	docs/my/charity/giving/index.html	p-m	tools/build_minisites.py	giving	card	buy	ဝယ်ရန်	/my/buy/?c=giving	yes	/my/charity/giving/	de,en,my,th,zh	
+/my/charity/grants/	my	docs/my/charity/grants/index.html	p-m	tools/build_minisites.py	grants	card	buy	ဝယ်ရန်	/my/buy/?c=grants	yes	/my/charity/grants/	de,en,my,th,zh	
+/my/charity/line-memory/	my	docs/my/charity/line-memory/index.html	p-m	tools/build_minisites.py	line-memory	card	buy	ဝယ်ရန်	/my/buy/?c=line-memory	yes	/my/charity/line-memory/	de,en,my,th,zh	
+/my/charity/map-archive/	my	docs/my/charity/map-archive/index.html	p-m	tools/build_minisites.py	map-archive	card	buy	ဝယ်ရန်	/my/buy/?c=map-archive	yes	/my/charity/map-archive/	de,en,my,th,zh	
+/my/charity/photo-proof/	my	docs/my/charity/photo-proof/index.html	p-m	tools/build_minisites.py	photo-proof	card	buy	ဝယ်ရန်	/my/buy/?c=photo-proof	yes	/my/charity/photo-proof/	de,en,my,th,zh	
+/my/data/	my	docs/my/data/index.html	p-cat	tools/build_shop.py category()	data	category		ဝယ်ရန်	/my/buy/?c=data-crawl	yes	/my/data/	de,en,my,th,zh	
+/my/data/data-crawl/	my	docs/my/data/data-crawl/index.html	p-m	tools/build_minisites.py	data-crawl	card	buy	ဝယ်ရန်	/my/buy/?c=data-crawl	yes	/my/data/data-crawl/	de,en,my,th,zh	
+/my/data/leads/	my	docs/my/data/leads/index.html	p-m	tools/build_minisites.py	leads	card	buy	ဝယ်ရန်	/my/buy/?c=leads	yes	/my/data/leads/	de,en,my,th,zh	
+/my/data/price-watch/	my	docs/my/data/price-watch/index.html	p-m	tools/build_minisites.py	price-watch	card	buy	ဝယ်ရန်	/my/buy/?c=price-watch	yes	/my/data/price-watch/	de,en,my,th,zh	
+/my/data/research/	my	docs/my/data/research/index.html	p-m	tools/build_minisites.py	research	card	buy	ဝယ်ရန်	/my/buy/?c=research	yes	/my/data/research/	de,en,my,th,zh	
+/my/data/street-survey/	my	docs/my/data/street-survey/index.html	p-m	tools/build_minisites.py	street-survey	card	buy	ဝယ်ရန်	/my/buy/?c=street-survey	yes	/my/data/street-survey/	de,en,my,th,zh	
+/my/data/traffic/	my	docs/my/data/traffic/index.html	p-m	tools/build_minisites.py	traffic	card	buy	ဝယ်ရန်	/my/buy/?c=traffic	yes	/my/data/traffic/	de,en,my,th,zh	
+/my/design/	my	docs/my/design/index.html	p-cat	tools/build_shop.py category()	design	category		ဝယ်ရန်	/my/buy/?c=awards	yes	/my/design/	de,en,my,th,zh	
+/my/design/article/	my	docs/my/design/article/index.html	p-m	tools/build_minisites.py	article	card	buy	ဝယ်ရန်	/my/buy/?c=article	yes	/my/design/article/	de,en,my,th,zh	
+/my/design/awards/	my	docs/my/design/awards/index.html	p-m	tools/build_minisites.py	awards	card	buy	ဝယ်ရန်	/my/buy/?c=awards	yes	/my/design/awards/	de,en,my,th,zh	
+/my/design/cartoons/	my	docs/my/design/cartoons/index.html	p-m	tools/build_minisites.py	cartoons	card	buy	ဝယ်ရန်	/my/buy/?c=cartoons	yes	/my/design/cartoons/	de,en,my,th,zh	
+/my/design/copy/	my	docs/my/design/copy/index.html	p-m	tools/build_minisites.py	copy	card	buy	ဝယ်ရန်	/my/buy/?c=copy	yes	/my/design/copy/	de,en,my,th,zh	
+/my/design/decks/	my	docs/my/design/decks/index.html	p-m	tools/build_minisites.py	decks	card	buy	ဝယ်ရန်	/my/buy/?c=decks	yes	/my/design/decks/	de,en,my,th,zh	
+/my/design/drawn/	my	docs/my/design/drawn/index.html	p-m	tools/build_minisites.py	drawn	card	buy	ဝယ်ရန်	/my/buy/?c=drawn	yes	/my/design/drawn/	de,en,my,th,zh	
+/my/design/graphics/	my	docs/my/design/graphics/index.html	p-m	tools/build_minisites.py	graphics	card	buy	ဝယ်ရန်	/my/buy/?c=graphics	yes	/my/design/graphics/	de,en,my,th,zh	
+/my/design/interactive/	my	docs/my/design/interactive/index.html	p-m	tools/build_minisites.py	interactive	card	buy	ဝယ်ရန်	/my/buy/?c=interactive	yes	/my/design/interactive/	de,en,my,th,zh	
+/my/design/interview/	my	docs/my/design/interview/index.html	p-m	tools/build_minisites.py	interview	card	buy	ဝယ်ရန်	/my/buy/?c=interview	yes	/my/design/interview/	de,en,my,th,zh	
+/my/design/newsletter/	my	docs/my/design/newsletter/index.html	p-m	tools/build_minisites.py	newsletter	card	buy	ဝယ်ရန်	/my/buy/?c=newsletter	yes	/my/design/newsletter/	de,en,my,th,zh	
+/my/design/patterns/	my	docs/my/design/patterns/index.html	p-m	tools/build_minisites.py	patterns	card	buy	ဝယ်ရန်	/my/buy/?c=patterns	yes	/my/design/patterns/	de,en,my,th,zh	
+/my/design/proposal/	my	docs/my/design/proposal/index.html	p-m	tools/build_minisites.py	proposal	card	buy	ဝယ်ရန်	/my/buy/?c=proposal	yes	/my/design/proposal/	de,en,my,th,zh	
+/my/design/social/	my	docs/my/design/social/index.html	p-m	tools/build_minisites.py	social	card	buy	ဝယ်ရန်	/my/buy/?c=social	yes	/my/design/social/	de,en,my,th,zh	
+/my/design/video/	my	docs/my/design/video/index.html	p-m	tools/build_minisites.py	video	card	buy	ဝယ်ရန်	/my/buy/?c=video	yes	/my/design/video/	de,en,my,th,zh	
+/my/fix/	my	docs/my/fix/index.html	p-cat	tools/build_shop.py category()	fix	category		ကြိုတင်မှာရန်	/php/	yes	/my/fix/	de,en,my,th,zh	
+/my/fix/app-test/	my	docs/my/fix/app-test/index.html	p-m	tools/build_minisites.py	app-test	card	buy	ဝယ်ရန်	/my/buy/?c=app-test	yes	/my/fix/app-test/	de,en,my,th,zh	
+/my/fix/mirror/	my	docs/my/fix/mirror/index.html	p-m	tools/build_minisites.py	mirror	card	buy	ဝယ်ရန်	/my/buy/?c=mirror	yes	/my/fix/mirror/	de,en,my,th,zh	
+/my/fix/sec-hacked/	my	docs/my/fix/sec-hacked/index.html	p-m	tools/build_minisites.py	sec-hacked	card	buy	ဝယ်ရန်	/my/buy/?c=sec-hacked	yes	/my/fix/sec-hacked/	de,en,my,th,zh	
+/my/fix/sec-mail/	my	docs/my/fix/sec-mail/index.html	p-m	tools/build_minisites.py	sec-mail	card	buy	ဝယ်ရန်	/my/buy/?c=sec-mail	yes	/my/fix/sec-mail/	de,en,my,th,zh	
+/my/help/	my	docs/my/help/index.html	p-cat	tools/build_shop.py category()	help	category		ဝယ်ရန်	/my/buy/?c=thai-plan	yes	/my/help/	de,en,my,th,zh	
+/my/help/call/	my	docs/my/help/call/index.html	p-m	tools/build_minisites.py	call	card	buy	ဝယ်ရန်	/my/buy/?c=call	yes	/my/help/call/	de,en,my,th,zh	
+/my/help/compare/	my	docs/my/help/compare/index.html	p-m	tools/build_minisites.py	compare	card	buy	ဝယ်ရန်	/my/buy/?c=compare	yes	/my/help/compare/	de,en,my,th,zh	
+/my/help/dispute/	my	docs/my/help/dispute/index.html	p-m	tools/build_minisites.py	dispute	card	buy	ဝယ်ရန်	/my/buy/?c=dispute	yes	/my/help/dispute/	de,en,my,th,zh	
+/my/help/errand/	my	docs/my/help/errand/index.html	p-m	tools/build_minisites.py	errand	card	buy	ဝယ်ရန်	/my/buy/?c=errand	yes	/my/help/errand/	de,en,my,th,zh	
+/my/help/form/	my	docs/my/help/form/index.html	p-m	tools/build_minisites.py	form	card	buy	ဝယ်ရန်	/my/buy/?c=form	yes	/my/help/form/	de,en,my,th,zh	
+/my/help/idme/	my	docs/my/help/idme/index.html	p-m	tools/build_minisites.py	idme	card	buy	ဝယ်ရန်	/my/buy/?c=idme	yes	/my/help/idme/	de,en,my,th,zh	
+/my/help/legalise/	my	docs/my/help/legalise/index.html	p-m	tools/build_minisites.py	legalise	card	buy	ဝယ်ရန်	/my/buy/?c=legalise	yes	/my/help/legalise/	de,en,my,th,zh	
+/my/help/thai-plan/	my	docs/my/help/thai-plan/index.html	p-m	tools/build_minisites.py	thai-plan	card	buy	ဝယ်ရန်	/my/buy/?c=thai-plan	yes	/my/help/thai-plan/	de,en,my,th,zh	
+/my/help/there/	my	docs/my/help/there/index.html	p-m	tools/build_minisites.py	there	card	buy	ဝယ်ရန်	/my/buy/?c=there	yes	/my/help/there/	de,en,my,th,zh	
+/my/help/trades/	my	docs/my/help/trades/index.html	p-m	tools/build_minisites.py	trades	card	buy	ဝယ်ရန်	/my/buy/?c=trades	yes	/my/help/trades/	de,en,my,th,zh	
+/my/help/vehicle/	my	docs/my/help/vehicle/index.html	p-m	tools/build_minisites.py	vehicle	card	buy	ဝယ်ရန်	/my/buy/?c=vehicle	yes	/my/help/vehicle/	de,en,my,th,zh	
+/my/luck/	my	docs/my/luck/index.html	p-cat	tools/build_shop.py category()	luck	category		ဝယ်ရန်	/my/buy/?c=date-pick	yes	/my/luck/	de,en,my,th,zh	
+/my/luck/almanac-widget/	my	docs/my/luck/almanac-widget/index.html	p-m	tools/build_minisites.py	almanac-widget	card	buy	ဝယ်ရန်	/my/buy/?c=almanac-widget	yes	/my/luck/almanac-widget/	de,en,my,th,zh	
+/my/luck/amulet/	my	docs/my/luck/amulet/index.html	p-m	tools/build_minisites.py	amulet	card	buy	ဝယ်ရန်	/my/buy/?c=amulet	yes	/my/luck/amulet/	de,en,my,th,zh	
+/my/luck/bazi/	my	docs/my/luck/bazi/index.html	p-m	tools/build_minisites.py	bazi	card	buy	ဝယ်ရန်	/my/buy/?c=bazi	yes	/my/luck/bazi/	de,en,my,th,zh	
+/my/luck/date-pick/	my	docs/my/luck/date-pick/index.html	p-m	tools/build_minisites.py	date-pick	card	buy	ဝယ်ရန်	/my/buy/?c=date-pick	yes	/my/luck/date-pick/	de,en,my,th,zh	
+/my/luck/eink-clock/	my	docs/my/luck/eink-clock/index.html	p-m	tools/build_minisites.py	eink-clock	card	buy	ဝယ်ရန်	/my/buy/?c=eink-clock	yes	/my/luck/eink-clock/	de,en,my,th,zh	
+/my/luck/lucky-number/	my	docs/my/luck/lucky-number/index.html	p-m	tools/build_minisites.py	lucky-number	card	buy	ဝယ်ရန်	/my/buy/?c=lucky-number	yes	/my/luck/lucky-number/	de,en,my,th,zh	
+/my/luck/name-charm/	my	docs/my/luck/name-charm/index.html	p-m	tools/build_minisites.py	name-charm	card	buy	ဝယ်ရန်	/my/buy/?c=name-charm	yes	/my/luck/name-charm/	de,en,my,th,zh	
+/my/luck/name-pick/	my	docs/my/luck/name-pick/index.html	p-m	tools/build_minisites.py	name-pick	card	buy	ဝယ်ရန်	/my/buy/?c=name-pick	yes	/my/luck/name-pick/	de,en,my,th,zh	
+/my/luck/pha-yant/	my	docs/my/luck/pha-yant/index.html	p-m	tools/build_minisites.py	pha-yant	card	buy	ဝယ်ရန်	/my/buy/?c=pha-yant	yes	/my/luck/pha-yant/	de,en,my,th,zh	
+/my/luck/reading/	my	docs/my/luck/reading/index.html	p-m	tools/build_minisites.py	reading	card	buy	ဝယ်ရန်	/my/buy/?c=reading	yes	/my/luck/reading/	de,en,my,th,zh	
+/my/luck/sak-yant/	my	docs/my/luck/sak-yant/index.html	p-m	tools/build_minisites.py	sak-yant	card	buy	ဝယ်ရန်	/my/buy/?c=sak-yant	yes	/my/luck/sak-yant/	de,en,my,th,zh	
+/my/merit/	my	docs/my/merit/index.html	p-cat	tools/build_shop.py category()	merit	category		ဝယ်ရန်	/my/buy/?c=merit-dead	yes	/my/merit/	de,en,my,th,zh	
+/my/merit/house-blessing/	my	docs/my/merit/house-blessing/index.html	p-m	tools/build_minisites.py	house-blessing	card	buy	ဝယ်ရန်	/my/buy/?c=house-blessing	yes	/my/merit/house-blessing/	de,en,my,th,zh	
+/my/merit/lanna-wedding/	my	docs/my/merit/lanna-wedding/index.html	p-m	tools/build_minisites.py	lanna-wedding	card	buy	ဝယ်ရန်	/my/buy/?c=lanna-wedding	yes	/my/merit/lanna-wedding/	de,en,my,th,zh	
+/my/merit/merit-dead/	my	docs/my/merit/merit-dead/index.html	p-m	tools/build_minisites.py	merit-dead	card	buy	ဝယ်ရန်	/my/buy/?c=merit-dead	yes	/my/merit/merit-dead/	de,en,my,th,zh	
+/my/merit/merit-you/	my	docs/my/merit/merit-you/index.html	p-m	tools/build_minisites.py	merit-you	card	buy	ဝယ်ရန်	/my/buy/?c=merit-you	yes	/my/merit/merit-you/	de,en,my,th,zh	
+/my/merit/spirit-house/	my	docs/my/merit/spirit-house/index.html	p-m	tools/build_minisites.py	spirit-house	card	buy	ဝယ်ရန်	/my/buy/?c=spirit-house	yes	/my/merit/spirit-house/	de,en,my,th,zh	
+/my/merit/su-khwan/	my	docs/my/merit/su-khwan/index.html	p-m	tools/build_minisites.py	su-khwan	card	buy	ဝယ်ရန်	/my/buy/?c=su-khwan	yes	/my/merit/su-khwan/	de,en,my,th,zh	
+/my/money/	my	docs/my/money/index.html	p-cat	tools/build_shop.py category()	money	category		ဝယ်ရန်	/my/buy/?c=merchant	yes	/my/money/	de,en,my,th,zh	
+/my/money/bank-account/	my	docs/my/money/bank-account/index.html	p-m	tools/build_minisites.py	bank-account	card	buy	ဝယ်ရန်	/my/buy/?c=bank-account	yes	/my/money/bank-account/	de,en,my,th,zh	
+/my/money/books/	my	docs/my/money/books/index.html	p-m	tools/build_minisites.py	books	card	buy	ဝယ်ရန်	/my/buy/?c=books	yes	/my/money/books/	de,en,my,th,zh	
+/my/money/exchange/	my	docs/my/money/exchange/index.html	p-m	tools/build_minisites.py	exchange	card	buy	ဝယ်ရန်	/my/buy/?c=exchange	yes	/my/money/exchange/	de,en,my,th,zh	
+/my/money/invoice/	my	docs/my/money/invoice/index.html	p-m	tools/build_minisites.py	invoice	card	buy	ဝယ်ရန်	/my/buy/?c=invoice	yes	/my/money/invoice/	de,en,my,th,zh	
+/my/money/kh-books/	my	docs/my/money/kh-books/index.html	p-m	tools/build_minisites.py	kh-books	card	buy	ဝယ်ရန်	/my/buy/?c=kh-books	yes	/my/money/kh-books/	de,en,my,th,zh	
+/my/money/merchant/	my	docs/my/money/merchant/index.html	p-m	tools/build_minisites.py	merchant	card	buy	ဝယ်ရန်	/my/buy/?c=merchant	yes	/my/money/merchant/	de,en,my,th,zh	
+/my/money/payouts/	my	docs/my/money/payouts/index.html	p-m	tools/build_minisites.py	payouts	card	buy	ဝယ်ရန်	/my/buy/?c=payouts	yes	/my/money/payouts/	de,en,my,th,zh	
+/my/money/staff-papers/	my	docs/my/money/staff-papers/index.html	p-m	tools/build_minisites.py	staff-papers	card	buy	ဝယ်ရန်	/my/buy/?c=staff-papers	yes	/my/money/staff-papers/	de,en,my,th,zh	
+/my/moving/	my	docs/my/moving/index.html	p-cat	tools/build_shop.py category()	moving	category		ဝယ်ရန်	/my/buy/?c=move	yes	/my/moving/	de,en,my,th,zh	
+/my/moving/luggage/	my	docs/my/moving/luggage/index.html	p-m	tools/build_minisites.py	luggage	card	buy	ဝယ်ရန်	/my/buy/?c=luggage	yes	/my/moving/luggage/	de,en,my,th,zh	
+/my/moving/move/	my	docs/my/moving/move/index.html	p-m	tools/build_minisites.py	move	card	buy	ဝယ်ရန်	/my/buy/?c=move	yes	/my/moving/move/	de,en,my,th,zh	
+/my/outsource/	my	docs/my/outsource/index.html	p-cat	tools/build_shop.py category()	outsource	category		ဝယ်ရန်	/my/buy/?c=voice	yes	/my/outsource/	de,en,my,th,zh	
+/my/outsource/assistant/	my	docs/my/outsource/assistant/index.html	p-m	tools/build_minisites.py	assistant	card	buy	ဝယ်ရန်	/my/buy/?c=assistant	yes	/my/outsource/assistant/	de,en,my,th,zh	
+/my/outsource/calls-out/	my	docs/my/outsource/calls-out/index.html	p-m	tools/build_minisites.py	calls-out	card	buy	ဝယ်ရန်	/my/buy/?c=calls-out	yes	/my/outsource/calls-out/	de,en,my,th,zh	
+/my/outsource/cs-desk/	my	docs/my/outsource/cs-desk/index.html	p-m	tools/build_minisites.py	cs-desk	card	buy	ဝယ်ရန်	/my/buy/?c=cs-desk	yes	/my/outsource/cs-desk/	de,en,my,th,zh	
+/my/outsource/subtitles/	my	docs/my/outsource/subtitles/index.html	p-m	tools/build_minisites.py	subtitles	card	buy	ဝယ်ရန်	/my/buy/?c=subtitles	yes	/my/outsource/subtitles/	de,en,my,th,zh	
+/my/outsource/typing/	my	docs/my/outsource/typing/index.html	p-m	tools/build_minisites.py	typing	card	buy	ဝယ်ရန်	/my/buy/?c=typing	yes	/my/outsource/typing/	de,en,my,th,zh	
+/my/outsource/voice/	my	docs/my/outsource/voice/index.html	p-m	tools/build_minisites.py	voice	card	buy	ဝယ်ရန်	/my/buy/?c=voice	yes	/my/outsource/voice/	de,en,my,th,zh	
+/my/questions/	my	docs/my/questions/index.html	-	tools/build_questions.py				LINE ဖြင့် ဆက်သွယ်ရန်	https://line.me/R/ti/p/@964yxgnk	yes	/my/questions/	de,en,my,th,zh	
+/my/ship/	my	docs/my/ship/index.html	p-cat	tools/build_shop.py category()	ship	category		ဝယ်ရန်	/my/buy/?c=partner	yes	/my/ship/	de,en,my,th,zh	
+/my/ship/partner/	my	docs/my/ship/partner/index.html	p-m	tools/build_minisites.py	partner	card	buy	ဝယ်ရန်	/my/buy/?c=partner	yes	/my/ship/partner/	de,en,my,th,zh	
+/my/shop/	my	docs/my/shop/index.html	p-cat	tools/build_shop.py category()	shop	category		ဝယ်ရန်	/my/buy/?c=online-shop	yes	/my/shop/	de,en,my,th,zh	
+/my/shop/ads-run/	my	docs/my/shop/ads-run/index.html	p-m	tools/build_minisites.py	ads-run	card	buy	ဝယ်ရန်	/my/buy/?c=ads-run	yes	/my/shop/ads-run/	de,en,my,th,zh	
+/my/shop/etsy/	my	docs/my/shop/etsy/index.html	p-m	tools/build_minisites.py	etsy	card	buy	ဝယ်ရန်	/my/buy/?c=etsy	yes	/my/shop/etsy/	de,en,my,th,zh	
+/my/shop/fb-care/	my	docs/my/shop/fb-care/index.html	p-m	tools/build_minisites.py	fb-care	card	buy	ဝယ်ရန်	/my/buy/?c=fb-care	yes	/my/shop/fb-care/	de,en,my,th,zh	
+/my/shop/grab/	my	docs/my/shop/grab/index.html	p-m	tools/build_minisites.py	grab	card	buy	ဝယ်ရန်	/my/buy/?c=grab	yes	/my/shop/grab/	de,en,my,th,zh	
+/my/shop/online-shop/	my	docs/my/shop/online-shop/index.html	p-m	tools/build_minisites.py	online-shop	card	buy	ဝယ်ရန်	/my/buy/?c=online-shop	yes	/my/shop/online-shop/	de,en,my,th,zh	
+/my/shop/ordering/	my	docs/my/shop/ordering/index.html	p-m	tools/build_minisites.py	ordering	card	buy	ဝယ်ရန်	/my/buy/?c=ordering	yes	/my/shop/ordering/	de,en,my,th,zh	
+/my/shop/paybox/	my	docs/my/shop/paybox/index.html	p-m	tools/build_minisites.py	paybox	card	buy	ဝယ်ရန်	/my/buy/?c=paybox	yes	/my/shop/paybox/	de,en,my,th,zh	
+/my/shop/print/	my	docs/my/shop/print/index.html	p-m	tools/build_minisites.py	print	card	buy	ဝယ်ရန်	/my/buy/?c=print	yes	/my/shop/print/	de,en,my,th,zh	
+/my/shop/restaurant-desk/	my	docs/my/shop/restaurant-desk/index.html	p-m	tools/build_minisites.py	restaurant-desk	card	buy	ဝယ်ရန်	/my/buy/?c=restaurant-desk	yes	/my/shop/restaurant-desk/	de,en,my,th,zh	
+/my/shop/signs/	my	docs/my/shop/signs/index.html	p-m	tools/build_minisites.py	signs	card	buy	ဝယ်ရန်	/my/buy/?c=signs	yes	/my/shop/signs/	de,en,my,th,zh	
+/my/shop/stall-page/	my	docs/my/shop/stall-page/index.html	p-m	tools/build_minisites.py	stall-page	card	buy	ဝယ်ရန်	/my/buy/?c=stall-page	yes	/my/shop/stall-page/	de,en,my,th,zh	
+/my/shop/trade-photos/	my	docs/my/shop/trade-photos/index.html	p-m	tools/build_minisites.py	trade-photos	card	buy	ဝယ်ရန်	/my/buy/?c=trade-photos	yes	/my/shop/trade-photos/	de,en,my,th,zh	
+/my/software/	my	docs/my/software/index.html	p-soft	tools/build_arrange.py software				အလုပ်လုပ်ပုံ ကြည့်ရန် (pm.nanobotco.workers.dev ကို ဖွင့်သည်	https://pm.nanobotco.workers.dev/about/	yes	/my/software/	de,en,my,th,zh	
+/my/stay/	my	docs/my/stay/index.html	p-cat	tools/build_shop.py category()	stay	category		ဝယ်ရန်	/my/buy/?c=stay-check	yes	/my/stay/	de,en,my,th,zh	
+/my/stay/agency-sheet/	my	docs/my/stay/agency-sheet/index.html	p-m	tools/build_minisites.py	agency-sheet	card	buy	ဝယ်ရန်	/my/buy/?c=agency-sheet	yes	/my/stay/agency-sheet/	de,en,my,th,zh	
+/my/stay/npa-homes/	my	docs/my/stay/npa-homes/index.html	p-m	tools/build_minisites.py	npa-homes	card	buy	ဝယ်ရန်	/my/buy/?c=npa-homes	yes	/my/stay/npa-homes/	de,en,my,th,zh	
+/my/stay/rentals/	my	docs/my/stay/rentals/index.html	p-m	tools/build_minisites.py	rentals	card	buy	ဝယ်ရန်	/my/buy/?c=rentals	yes	/my/stay/rentals/	de,en,my,th,zh	
+/my/stay/stay-booking/	my	docs/my/stay/stay-booking/index.html	p-m	tools/build_minisites.py	stay-booking	card	buy	ဝယ်ရန်	/my/buy/?c=stay-booking	yes	/my/stay/stay-booking/	de,en,my,th,zh	
+/my/stay/stay-check/	my	docs/my/stay/stay-check/index.html	p-m	tools/build_minisites.py	stay-check	card	buy	ဝယ်ရန်	/my/buy/?c=stay-check	yes	/my/stay/stay-check/	de,en,my,th,zh	
+/my/stay/stay-rent/	my	docs/my/stay/stay-rent/index.html	p-m	tools/build_minisites.py	stay-rent	card	buy	ဝယ်ရန်	/my/buy/?c=stay-rent	yes	/my/stay/stay-rent/	de,en,my,th,zh	
+/my/studio/	my	docs/my/studio/index.html	studio	tools/build_studio.py						yes	/my/studio/	de,en,my,th,zh	
+/my/studio/black-swan/	my	docs/my/studio/black-swan/index.html	studio	tools/build_studio.py						yes	/my/studio/black-swan/	de,en,my,th,zh	
+/my/studio/black-swan/one/	my	docs/my/studio/black-swan/one/index.html	studio	tools/build_studio.py						no			
+/my/studio/crypto-safety/	my	docs/my/studio/crypto-safety/index.html	studio	tools/build_studio.py						yes	/my/studio/crypto-safety/	de,en,my,th,zh	
+/my/tours/	my	docs/my/tours/index.html	p-cat	tools/build_shop.py category()	tours	category		ဝယ်ရန်	/my/buy/?c=lantern	yes	/my/tours/	de,en,my,th,zh	
+/my/tours/balloon/	my	docs/my/tours/balloon/index.html	p-m	tools/build_minisites.py	balloon	card	buy	ဝယ်ရန်	/my/buy/?c=balloon	yes	/my/tours/balloon/	de,en,my,th,zh	
+/my/tours/car-guide/	my	docs/my/tours/car-guide/index.html	p-m	tools/build_minisites.py	car-guide	card	buy	ဝယ်ရန်	/my/buy/?c=car-guide	yes	/my/tours/car-guide/	de,en,my,th,zh	
+/my/tours/experience/	my	docs/my/tours/experience/index.html	p-m	tools/build_minisites.py	experience	card	buy	ဝယ်ရန်	/my/buy/?c=experience	yes	/my/tours/experience/	de,en,my,th,zh	
+/my/tours/lantern/	my	docs/my/tours/lantern/index.html	p-m	tools/build_minisites.py	lantern	card	buy	ဝယ်ရန်	/my/buy/?c=lantern	yes	/my/tours/lantern/	de,en,my,th,zh	
+/my/tours/tour-3d/	my	docs/my/tours/tour-3d/index.html	p-m	tools/build_minisites.py	tour-3d	card	buy	ဝယ်ရန်	/my/buy/?c=tour-3d	yes	/my/tours/tour-3d/	de,en,my,th,zh	
+/my/tours/tour-day/	my	docs/my/tours/tour-day/index.html	p-m	tools/build_minisites.py	tour-day	card	buy	ဝယ်ရန်	/my/buy/?c=tour-day	yes	/my/tours/tour-day/	de,en,my,th,zh	
+/my/tours/trip-plan/	my	docs/my/tours/trip-plan/index.html	p-m	tools/build_minisites.py	trip-plan	card	buy	ဝယ်ရန်	/my/buy/?c=trip-plan	yes	/my/tours/trip-plan/	de,en,my,th,zh	
+/my/translate/	my	docs/my/translate/index.html	p-cat	tools/build_shop.py category()	translate	category		ဝယ်ရန်	/my/buy/?c=german	yes	/my/translate/	de,en,my,th,zh	
+/my/translate/german/	my	docs/my/translate/german/index.html	p-m	tools/build_minisites.py	german	card	buy	ဝယ်ရန်	/my/buy/?c=german	yes	/my/translate/german/	de,en,my,th,zh	
+/my/translate/interp/	my	docs/my/translate/interp/index.html	p-m	tools/build_minisites.py	interp	card	buy	ဝယ်ရန်	/my/buy/?c=interp	yes	/my/translate/interp/	de,en,my,th,zh	
+/my/translate/lang-leaves/	my	docs/my/translate/lang-leaves/index.html	p-m	tools/build_minisites.py	lang-leaves	card	buy	ဝယ်ရန်	/my/buy/?c=lang-leaves	yes	/my/translate/lang-leaves/	de,en,my,th,zh	
+/my/translate/lang-pages/	my	docs/my/translate/lang-pages/index.html	p-m	tools/build_minisites.py	lang-pages	card	buy	ဝယ်ရန်	/my/buy/?c=lang-pages	yes	/my/translate/lang-pages/	de,en,my,th,zh	
+/my/translate/lang-shan/	my	docs/my/translate/lang-shan/index.html	p-m	tools/build_minisites.py	lang-shan	card	buy	ဝယ်ရန်	/my/buy/?c=lang-shan	yes	/my/translate/lang-shan/	de,en,my,th,zh	
+/my/translate/romanise/	my	docs/my/translate/romanise/index.html	p-m	tools/build_minisites.py	romanise	card	buy	ဝယ်ရန်	/my/buy/?c=romanise	yes	/my/translate/romanise/	de,en,my,th,zh	
+/my/translate/thai-lessons/	my	docs/my/translate/thai-lessons/index.html	p-m	tools/build_minisites.py	thai-lessons	card	buy	ဝယ်ရန်	/my/buy/?c=thai-lessons	yes	/my/translate/thai-lessons/	de,en,my,th,zh	
+/my/translate/translate/	my	docs/my/translate/translate/index.html	p-m	tools/build_minisites.py	translate	card	buy	ဝယ်ရန်	/my/buy/?c=translate	yes	/my/translate/translate/	de,en,my,th,zh	
+/my/visa/	my	docs/my/visa/index.html	p-cat	tools/build_shop.py category()	visa	category		သွားရန်	https://chiangmaivisadesk.com/	yes	/my/visa/	de,en,my,th,zh	
+/my/web/	my	docs/my/web/index.html	p-cat	tools/build_shop.py category()	web	category		ဝယ်ရန်	/my/buy/?c=web-mail	yes	/my/web/	de,en,my,th,zh	
+/my/web/accessible/	my	docs/my/web/accessible/index.html	p-m	tools/build_minisites.py	accessible	card	buy	ဝယ်ရန်	/my/buy/?c=accessible	yes	/my/web/accessible/	de,en,my,th,zh	
+/my/web/app/	my	docs/my/web/app/index.html	p-m	tools/build_minisites.py	app	card	buy	ဝယ်ရန်	/my/buy/?c=app	yes	/my/web/app/	de,en,my,th,zh	
+/my/web/directory/	my	docs/my/web/directory/index.html	p-m	tools/build_minisites.py	directory	card	buy	ဝယ်ရန်	/my/buy/?c=directory	yes	/my/web/directory/	de,en,my,th,zh	
+/my/web/guide-site/	my	docs/my/web/guide-site/index.html	p-m	tools/build_minisites.py	guide-site	card	buy	ဝယ်ရန်	/my/buy/?c=guide-site	yes	/my/web/guide-site/	de,en,my,th,zh	
+/my/web/help-page/	my	docs/my/web/help-page/index.html	p-m	tools/build_minisites.py	help-page	card	buy	ဝယ်ရန်	/my/buy/?c=help-page	yes	/my/web/help-page/	de,en,my,th,zh	
+/my/web/site/	my	docs/my/web/site/index.html	p-m	tools/build_minisites.py	site	card	buy	ဝယ်ရန်	/my/buy/?c=site	yes	/my/web/site/	de,en,my,th,zh	
+/my/web/tap-card/	my	docs/my/web/tap-card/index.html	p-m	tools/build_minisites.py	tap-card	card	buy	ဝယ်ရန်	/my/buy/?c=tap-card	yes	/my/web/tap-card/	de,en,my,th,zh	
+/my/web/vibe/	my	docs/my/web/vibe/index.html	p-m	tools/build_minisites.py	vibe	card	buy	ဝယ်ရန်	/my/buy/?c=vibe	yes	/my/web/vibe/	de,en,my,th,zh	
+/my/web/web-care/	my	docs/my/web/web-care/index.html	p-m	tools/build_minisites.py	web-care	card	buy	ဝယ်ရန်	/my/buy/?c=web-care	yes	/my/web/web-care/	de,en,my,th,zh	
+/my/web/web-dns/	my	docs/my/web/web-dns/index.html	p-m	tools/build_minisites.py	web-dns	card	buy	ဝယ်ရန်	/my/buy/?c=web-dns	yes	/my/web/web-dns/	de,en,my,th,zh	
+/my/web/web-found/	my	docs/my/web/web-found/index.html	p-m	tools/build_minisites.py	web-found	card	buy	ဝယ်ရန်	/my/buy/?c=web-found	yes	/my/web/web-found/	de,en,my,th,zh	
+/my/web/web-license/	my	docs/my/web/web-license/index.html	p-m	tools/build_minisites.py	web-license	card	buy	ဝယ်ရန်	/my/buy/?c=web-license	yes	/my/web/web-license/	de,en,my,th,zh	
+/my/web/web-line/	my	docs/my/web/web-line/index.html	p-m	tools/build_minisites.py	web-line	card	buy	ဝယ်ရန်	/my/buy/?c=web-line	yes	/my/web/web-line/	de,en,my,th,zh	
+/my/web/web-mail/	my	docs/my/web/web-mail/index.html	p-m	tools/build_minisites.py	web-mail	card	buy	ဝယ်ရန်	/my/buy/?c=web-mail	yes	/my/web/web-mail/	de,en,my,th,zh	
+/my/web/web-move/	my	docs/my/web/web-move/index.html	p-m	tools/build_minisites.py	web-move	card	buy	ဝယ်ရန်	/my/buy/?c=web-move	yes	/my/web/web-move/	de,en,my,th,zh	
+/my/web/web-search/	my	docs/my/web/web-search/index.html	p-m	tools/build_minisites.py	web-search	card	buy	ဝယ်ရန်	/my/buy/?c=web-search	yes	/my/web/web-search/	de,en,my,th,zh	
+/my/web/web-sharecard/	my	docs/my/web/web-sharecard/index.html	p-m	tools/build_minisites.py	web-sharecard	card	buy	ဝယ်ရန်	/my/buy/?c=web-sharecard	yes	/my/web/web-sharecard/	de,en,my,th,zh	
+/my/web/widget/	my	docs/my/web/widget/index.html	p-m	tools/build_minisites.py	widget	card	buy	ဝယ်ရန်	/my/buy/?c=widget	yes	/my/web/widget/	de,en,my,th,zh	
+/my/web/wp-api/	my	docs/my/web/wp-api/index.html	p-m	tools/build_minisites.py	wp-api	card	buy	ဝယ်ရန်	/my/buy/?c=wp-api	yes	/my/web/wp-api/	de,en,my,th,zh	
+/my/weddings/	my	docs/my/weddings/index.html	p-cat	tools/build_shop.py category()	weddings	category		ဝယ်ရန်	/my/buy/?c=event-page	yes	/my/weddings/	de,en,my,th,zh	
+/my/weddings/bride/	my	docs/my/weddings/bride/index.html	p-m	tools/build_minisites.py	bride	card	buy	ဝယ်ရန်	/my/buy/?c=bride	yes	/my/weddings/bride/	de,en,my,th,zh	
+/my/weddings/event-page/	my	docs/my/weddings/event-page/index.html	p-m	tools/build_minisites.py	event-page	card	buy	ဝယ်ရန်	/my/buy/?c=event-page	yes	/my/weddings/event-page/	de,en,my,th,zh	
+/my/weddings/event-plan/	my	docs/my/weddings/event-plan/index.html	p-m	tools/build_minisites.py	event-plan	card	buy	ဝယ်ရန်	/my/buy/?c=event-plan	yes	/my/weddings/event-plan/	de,en,my,th,zh	
+/my/weddings/tribute/	my	docs/my/weddings/tribute/index.html	p-m	tools/build_minisites.py	tribute	card	buy	ဝယ်ရန်	/my/buy/?c=tribute	yes	/my/weddings/tribute/	de,en,my,th,zh	
+/my/weddings/wedding/	my	docs/my/weddings/wedding/index.html	p-m	tools/build_minisites.py	wedding	card	buy	ဝယ်ရန်	/my/buy/?c=wedding	yes	/my/weddings/wedding/	de,en,my,th,zh	
+/outsource/	en	docs/outsource/index.html	p-cat	tools/build_shop.py category()	outsource	category		Buy	/buy/?c=voice	yes	/outsource/	de,en,my,th,zh	
+/outsource/assistant/	en	docs/outsource/assistant/index.html	p-m	tools/build_minisites.py	assistant	card	buy	Buy	/buy/?c=assistant	yes	/outsource/assistant/	de,en,my,th,zh	
+/outsource/calls-out/	en	docs/outsource/calls-out/index.html	p-m	tools/build_minisites.py	calls-out	card	buy	Buy	/buy/?c=calls-out	yes	/outsource/calls-out/	de,en,my,th,zh	
+/outsource/cs-desk/	en	docs/outsource/cs-desk/index.html	p-m	tools/build_minisites.py	cs-desk	card	buy	Buy	/buy/?c=cs-desk	yes	/outsource/cs-desk/	de,en,my,th,zh	
+/outsource/subtitles/	en	docs/outsource/subtitles/index.html	p-m	tools/build_minisites.py	subtitles	card	buy	Buy	/buy/?c=subtitles	yes	/outsource/subtitles/	de,en,my,th,zh	
+/outsource/typing/	en	docs/outsource/typing/index.html	p-m	tools/build_minisites.py	typing	card	buy	Buy	/buy/?c=typing	yes	/outsource/typing/	de,en,my,th,zh	
+/outsource/voice/	en	docs/outsource/voice/index.html	p-m	tools/build_minisites.py	voice	card	buy	Buy	/buy/?c=voice	yes	/outsource/voice/	de,en,my,th,zh	
+/own/	en	docs/own/index.html	-	tools/pages.py				Buy · ซื้อ	/buy/?c=ai-own	yes	/own/		
+/php/	en	docs/php/index.html	-	tools/pages.py				Book · จอง	#book	yes	/php/		
+/portfolio/	en	docs/portfolio/index.html	-	tools/build_work.py (data/work.json)				Hongdam Studio	/studio/	yes	/portfolio/		
+/questions/	en	docs/questions/index.html	-	tools/build_questions.py				Message us on LINE	https://line.me/R/ti/p/@964yxgnk	yes	/questions/	de,en,my,th,zh	
+/redteam/	en	docs/redteam/index.html	-	tools/pages.py				Buy · ซื้อ	/buy/?c=redteam	yes	/redteam/		
+/retreat/	en	docs/retreat/index.html	-	tools/build_retreat.py						yes	/retreat/	en,th	
+/ship/	en	docs/ship/index.html	p-cat	tools/build_shop.py category()	ship	category		Buy	/buy/?c=partner	yes	/ship/	de,en,my,th,zh	
+/ship/partner/	en	docs/ship/partner/index.html	p-m	tools/build_minisites.py	partner	card	buy	Buy	/buy/?c=partner	yes	/ship/partner/	de,en,my,th,zh	
+/shop/	en	docs/shop/index.html	p-cat	tools/build_shop.py category()	shop	category		Buy	/buy/?c=online-shop	yes	/shop/	de,en,my,th,zh	
+/shop/ads-run/	en	docs/shop/ads-run/index.html	p-m	tools/build_minisites.py	ads-run	card	buy	Buy	/buy/?c=ads-run	yes	/shop/ads-run/	de,en,my,th,zh	
+/shop/etsy/	en	docs/shop/etsy/index.html	p-m	tools/build_minisites.py	etsy	card	buy	Buy	/buy/?c=etsy	yes	/shop/etsy/	de,en,my,th,zh	
+/shop/fb-care/	en	docs/shop/fb-care/index.html	p-m	tools/build_minisites.py	fb-care	card	buy	Buy	/buy/?c=fb-care	yes	/shop/fb-care/	de,en,my,th,zh	
+/shop/grab/	en	docs/shop/grab/index.html	p-m	tools/build_minisites.py	grab	card	buy	Buy	/buy/?c=grab	yes	/shop/grab/	de,en,my,th,zh	
+/shop/online-shop/	en	docs/shop/online-shop/index.html	p-m	tools/build_minisites.py	online-shop	card	buy	Buy	/buy/?c=online-shop	yes	/shop/online-shop/	de,en,my,th,zh	
+/shop/ordering/	en	docs/shop/ordering/index.html	p-m	tools/build_minisites.py	ordering	card	buy	Buy	/buy/?c=ordering	yes	/shop/ordering/	de,en,my,th,zh	
+/shop/paybox/	en	docs/shop/paybox/index.html	p-m	tools/build_minisites.py	paybox	card	buy	Buy	/buy/?c=paybox	yes	/shop/paybox/	de,en,my,th,zh	
+/shop/print/	en	docs/shop/print/index.html	p-m	tools/build_minisites.py	print	card	buy	Buy	/buy/?c=print	yes	/shop/print/	de,en,my,th,zh	
+/shop/restaurant-desk/	en	docs/shop/restaurant-desk/index.html	p-m	tools/build_minisites.py	restaurant-desk	card	buy	Buy	/buy/?c=restaurant-desk	yes	/shop/restaurant-desk/	de,en,my,th,zh	
+/shop/signs/	en	docs/shop/signs/index.html	p-m	tools/build_minisites.py	signs	card	buy	Buy	/buy/?c=signs	yes	/shop/signs/	de,en,my,th,zh	
+/shop/stall-page/	en	docs/shop/stall-page/index.html	p-m	tools/build_minisites.py	stall-page	card	buy	Buy	/buy/?c=stall-page	yes	/shop/stall-page/	de,en,my,th,zh	
+/shop/trade-photos/	en	docs/shop/trade-photos/index.html	p-m	tools/build_minisites.py	trade-photos	card	buy	Buy	/buy/?c=trade-photos	yes	/shop/trade-photos/	de,en,my,th,zh	
+/software/	en	docs/software/index.html	p-soft	tools/build_arrange.py software				See how it works (opens pm.nanobotco.workers.dev, its own si	https://pm.nanobotco.workers.dev/about/	yes	/software/	de,en,my,th,zh	
+/stats/	en	docs/stats/index.html	-	docs/stats/ (by hand; reads /api/hit)						noindex			
+/stay/	en	docs/stay/index.html	p-cat	tools/build_shop.py category()	stay	category		Buy	/buy/?c=stay-check	yes	/stay/	de,en,my,th,zh	
+/stay/agency-sheet/	en	docs/stay/agency-sheet/index.html	p-m	tools/build_minisites.py	agency-sheet	card	buy	Buy	/buy/?c=agency-sheet	yes	/stay/agency-sheet/	de,en,my,th,zh	
+/stay/npa-homes/	en	docs/stay/npa-homes/index.html	p-m	tools/build_minisites.py	npa-homes	card	buy	Buy	/buy/?c=npa-homes	yes	/stay/npa-homes/	de,en,my,th,zh	
+/stay/rentals/	en	docs/stay/rentals/index.html	p-m	tools/build_minisites.py	rentals	card	buy	Buy	/buy/?c=rentals	yes	/stay/rentals/	de,en,my,th,zh	
+/stay/stay-booking/	en	docs/stay/stay-booking/index.html	p-m	tools/build_minisites.py	stay-booking	card	buy	Buy	/buy/?c=stay-booking	yes	/stay/stay-booking/	de,en,my,th,zh	
+/stay/stay-check/	en	docs/stay/stay-check/index.html	p-m	tools/build_minisites.py	stay-check	card	buy	Buy	/buy/?c=stay-check	yes	/stay/stay-check/	de,en,my,th,zh	
+/stay/stay-rent/	en	docs/stay/stay-rent/index.html	p-m	tools/build_minisites.py	stay-rent	card	buy	Buy	/buy/?c=stay-rent	yes	/stay/stay-rent/	de,en,my,th,zh	
+/studio/	en	docs/studio/index.html	studio	tools/build_studio.py						yes	/studio/	de,en,my,th,zh	
+/studio/black-swan/	en	docs/studio/black-swan/index.html	studio	tools/build_studio.py						yes	/studio/black-swan/	de,en,my,th,zh	
+/studio/black-swan/one/	en	docs/studio/black-swan/one/index.html	studio	tools/build_studio.py						no			
+/studio/crypto-safety/	en	docs/studio/crypto-safety/index.html	studio	tools/build_studio.py						yes	/studio/crypto-safety/	de,en,my,th,zh	
+/studio/dj/	en	docs/studio/dj/index.html	studio	tools/build_studio.py						noindex	/studio/dj/	en,th	
+/studio/notes/	en	docs/studio/notes/index.html	studio	tools/build_studio.py						yes	/studio/notes/	en,th	
+/studio/notes/ai-crawler-names-address-lists-reverse-dns/	en	docs/studio/notes/ai-crawler-names-address-lists-reverse-dns/index.html	studio	tools/build_studio.py						yes	/studio/notes/ai-crawler-names-address-lists-reverse-dns/		
+/studio/notes/automation-cost-per-run/	en	docs/studio/notes/automation-cost-per-run/index.html	studio	tools/build_studio.py						yes	/studio/notes/automation-cost-per-run/		
+/studio/notes/cloudflare-dns-scan-list-dkim-generated-names/	en	docs/studio/notes/cloudflare-dns-scan-list-dkim-generated-names/index.html	studio	tools/build_studio.py						yes	/studio/notes/cloudflare-dns-scan-list-dkim-generated-names/		
+/studio/notes/deepseek-flash-1017-faster-not-shorter/	en	docs/studio/notes/deepseek-flash-1017-faster-not-shorter/index.html	studio	tools/build_studio.py						yes	/studio/notes/deepseek-flash-1017-faster-not-shorter/		
+/studio/notes/github-agentic-workflows-default-cap/	en	docs/studio/notes/github-agentic-workflows-default-cap/index.html	studio	tools/build_studio.py						yes	/studio/notes/github-agentic-workflows-default-cap/		
+/studio/notes/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured/	en	docs/studio/notes/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured/index.html	studio	tools/build_studio.py						yes	/studio/notes/glm-5-3-flash-replacements-gemma-4-qwen-3-8-measured/		
+/studio/notes/glm-5-3-leak-canary-test/	en	docs/studio/notes/glm-5-3-leak-canary-test/index.html	studio	tools/build_studio.py						yes	/studio/notes/glm-5-3-leak-canary-test/		
+/studio/notes/inkling-2-small-reasoning-effort-none-still-thinks/	en	docs/studio/notes/inkling-2-small-reasoning-effort-none-still-thinks/index.html	studio	tools/build_studio.py						yes	/studio/notes/inkling-2-small-reasoning-effort-none-still-thinks/		
+/studio/notes/link-cards-mastodon-bluesky/	en	docs/studio/notes/link-cards-mastodon-bluesky/index.html	studio	tools/build_studio.py						yes	/studio/notes/link-cards-mastodon-bluesky/		
+/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/	en	docs/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/index.html	studio	tools/build_studio.py						yes	/studio/notes/llama-cpp-1-0-0-removed-calls-fp8-kv-cache/		
+/studio/notes/lovable-agent-tools-no-rate-limit/	en	docs/studio/notes/lovable-agent-tools-no-rate-limit/index.html	studio	tools/build_studio.py						yes	/studio/notes/lovable-agent-tools-no-rate-limit/		
+/studio/notes/magento-polyshell-on-cisa-kev/	en	docs/studio/notes/magento-polyshell-on-cisa-kev/index.html	studio	tools/build_studio.py						yes	/studio/notes/magento-polyshell-on-cisa-kev/		
+/studio/notes/n8n-3-npm-ends-timeouts-no-way-back/	en	docs/studio/notes/n8n-3-npm-ends-timeouts-no-way-back/index.html	studio	tools/build_studio.py						yes	/studio/notes/n8n-3-npm-ends-timeouts-no-way-back/		
+/studio/notes/npm-install-scripts-before-vercel/	en	docs/studio/notes/npm-install-scripts-before-vercel/index.html	studio	tools/build_studio.py						yes	/studio/notes/npm-install-scripts-before-vercel/		
+/studio/notes/openssh-10-6p2-alpine-musl-password-bypass-fixed/	en	docs/studio/notes/openssh-10-6p2-alpine-musl-password-bypass-fixed/index.html	studio	tools/build_studio.py						yes	/studio/notes/openssh-10-6p2-alpine-musl-password-bypass-fixed/		
+/studio/notes/php2shell-fixed-releases-and-restart/	en	docs/studio/notes/php2shell-fixed-releases-and-restart/index.html	studio	tools/build_studio.py						yes	/studio/notes/php2shell-fixed-releases-and-restart/		
+/studio/notes/state-tracking-one-go-vs-written-steps/	en	docs/studio/notes/state-tracking-one-go-vs-written-steps/index.html	studio	tools/build_studio.py						yes	/studio/notes/state-tracking-one-go-vs-written-steps/		
+/studio/notes/supabase-cbc-ciphers-removed-9-of-163-clients-fail/	en	docs/studio/notes/supabase-cbc-ciphers-removed-9-of-163-clients-fail/index.html	studio	tools/build_studio.py						yes	/studio/notes/supabase-cbc-ciphers-removed-9-of-163-clients-fail/		
+/studio/notes/supabase-cli-v3-default-db-push-stops-in-ci/	en	docs/studio/notes/supabase-cli-v3-default-db-push-stops-in-ci/index.html	studio	tools/build_studio.py						yes	/studio/notes/supabase-cli-v3-default-db-push-stops-in-ci/		
+/studio/notes/supabase-public-key-open-tables/	en	docs/studio/notes/supabase-public-key-open-tables/index.html	studio	tools/build_studio.py						yes	/studio/notes/supabase-public-key-open-tables/		
+/studio/notes/thai-tokens-cost-by-model/	en	docs/studio/notes/thai-tokens-cost-by-model/index.html	studio	tools/build_studio.py						yes	/studio/notes/thai-tokens-cost-by-model/		
+/studio/notes/week-supabase-grants-brotli-mistral/	en	docs/studio/notes/week-supabase-grants-brotli-mistral/index.html	studio	tools/build_studio.py						yes	/studio/notes/week-supabase-grants-brotli-mistral/		
+/studio/notes/week-workers-ai-deprecations-node-gemini/	en	docs/studio/notes/week-workers-ai-deprecations-node-gemini/index.html	studio	tools/build_studio.py						yes	/studio/notes/week-workers-ai-deprecations-node-gemini/		
+/studio/notes/week-workers-spend-limits-node-fixes-brownout/	en	docs/studio/notes/week-workers-spend-limits-node-fixes-brownout/index.html	studio	tools/build_studio.py						yes	/studio/notes/week-workers-spend-limits-node-fixes-brownout/		
+/studio/notes/wordpress-upgrade-window-partial-vs-full/	en	docs/studio/notes/wordpress-upgrade-window-partial-vs-full/index.html	studio	tools/build_studio.py						yes	/studio/notes/wordpress-upgrade-window-partial-vs-full/		
+/tasks/graph/	en	docs/tasks/graph/index.html	-	tools/build_tasks.py				Post a task · ลงงาน	/tasks#post	yes	/tasks/graph/		
+/th/	th	docs/th/index.html	p-front	tools/build_shop.py front()				ให้เราจัดการให้	#jobs	yes	/th/	de,en,my,th,zh	
+/th/ai/	th	docs/th/ai/index.html	p-cat	tools/build_shop.py category()	ai	category		ซื้อ	/th/buy/?c=ai-assistant	yes	/th/ai/	de,en,my,th,zh	
+/th/ai/ai-assistant/	th	docs/th/ai/ai-assistant/index.html	p-m	tools/build_minisites.py	ai-assistant	card	buy	ซื้อ	/th/buy/?c=ai-assistant	yes	/th/ai/ai-assistant/	de,en,my,th,zh	
+/th/ai/ai-automation/	th	docs/th/ai/ai-automation/index.html	p-m	tools/build_minisites.py	ai-automation	card	buy	ซื้อ	/th/buy/?c=ai-automation	yes	/th/ai/ai-automation/	de,en,my,th,zh	
+/th/ai/ai-batch/	th	docs/th/ai/ai-batch/index.html	p-m	tools/build_minisites.py	ai-batch	card	buy	ซื้อ	/th/buy/?c=ai-batch	yes	/th/ai/ai-batch/	de,en,my,th,zh	
+/th/ai/ai-line/	th	docs/th/ai/ai-line/index.html	p-m	tools/build_minisites.py	ai-line	card	buy	ซื้อ	/th/buy/?c=ai-line	yes	/th/ai/ai-line/	de,en,my,th,zh	
+/th/ai/crawl-pay/	th	docs/th/ai/crawl-pay/index.html	p-m	tools/build_minisites.py	crawl-pay	card	buy	ซื้อ	/th/buy/?c=crawl-pay	yes	/th/ai/crawl-pay/	de,en,my,th,zh	
+/th/ai/crew/	th	docs/th/ai/crew/index.html	p-m	tools/build_minisites.py	crew	card	book	จอง	/bots/	yes	/th/ai/crew/	de,en,my,th,zh	
+/th/ai/demand-prices/	th	docs/th/ai/demand-prices/index.html	p-m	tools/build_minisites.py	demand-prices	card	buy	ซื้อ	/th/buy/?c=demand-prices	yes	/th/ai/demand-prices/	de,en,my,th,zh	
+/th/arrange/appointment/	th	docs/th/arrange/appointment/index.html	p-job	tools/build_arrange.py	appointment	job	buy	ซื้อ	/th/buy/?c=specialist&o=specialist-book	yes	/th/arrange/appointment/	de,en,my,th,zh	
+/th/arrange/driver/	th	docs/th/arrange/driver/index.html	p-job	tools/build_arrange.py	driver	job	buy	ซื้อ	/th/buy/?c=car-guide&o=driver-day	yes	/th/arrange/driver/	de,en,my,th,zh	
+/th/arrange/home-service/	th	docs/th/arrange/home-service/index.html	p-job	tools/build_arrange.py	home-service	job	buy	ซื้อ	/th/buy/?c=trades&o=trades	yes	/th/arrange/home-service/	de,en,my,th,zh	
+/th/arrange/parcel/	th	docs/th/arrange/parcel/index.html	p-job	tools/build_arrange.py	parcel	job	quote	ซื้อ	/th/buy/?c=luggage&o=luggage	yes	/th/arrange/parcel/	de,en,my,th,zh	
+/th/arrange/shop-for-me/	th	docs/th/arrange/shop-for-me/index.html	p-job	tools/build_arrange.py	shop-for-me	job	buy	ซื้อ	/th/buy/?c=errand&o=errand	yes	/th/arrange/shop-for-me/	de,en,my,th,zh	
+/th/ask-nan/	th	docs/th/ask-nan/index.html	asknan	tools/build_asknan.py				ส่งคำถามถึงแนน	#ask	yes	/th/ask-nan/	en,th	
+/th/ask/	th	docs/th/ask/index.html	p-ask	tools/build_shop.py ask_page() + assets/shop.js				ทักไลน์ @964yxgnk	https://line.me/R/ti/p/@964yxgnk	noindex	/th/ask/	de,en,my,th,zh	
+/th/buy/	th	docs/th/buy/index.html	p-buy	tools/build_shop.py buy_page() + assets/shop.js				ทักไลน์	https://line.me/R/ti/p/@964yxgnk	noindex	/th/buy/	de,en,my,th,zh	
+/th/care/	th	docs/th/care/index.html	p-cat	tools/build_shop.py category()	care	category		ซื้อ	/th/buy/?c=retire	yes	/th/care/	de,en,my,th,zh	
+/th/care/accident/	th	docs/th/care/accident/index.html	p-m	tools/build_minisites.py	accident	card	buy	ซื้อ	/th/buy/?c=accident	yes	/th/care/accident/	de,en,my,th,zh	
+/th/care/blood/	th	docs/th/care/blood/index.html	p-m	tools/build_minisites.py	blood	card	buy	ซื้อ	/th/buy/?c=blood	yes	/th/care/blood/	de,en,my,th,zh	
+/th/care/care-visits/	th	docs/th/care/care-visits/index.html	p-m	tools/build_minisites.py	care-visits	card	buy	ซื้อ	/th/buy/?c=care-visits	yes	/th/care/care-visits/	de,en,my,th,zh	
+/th/care/clean-air/	th	docs/th/care/clean-air/index.html	p-m	tools/build_minisites.py	clean-air	card	buy	ซื้อ	/th/buy/?c=clean-air	yes	/th/care/clean-air/	de,en,my,th,zh	
+/th/care/death-help/	th	docs/th/care/death-help/index.html	p-m	tools/build_minisites.py	death-help	card	buy	ซื้อ	/th/buy/?c=death-help	yes	/th/care/death-help/	de,en,my,th,zh	
+/th/care/elder-care/	th	docs/th/care/elder-care/index.html	p-m	tools/build_minisites.py	elder-care	card	buy	ซื้อ	/th/buy/?c=elder-care	yes	/th/care/elder-care/	de,en,my,th,zh	
+/th/care/lab-test/	th	docs/th/care/lab-test/index.html	p-m	tools/build_minisites.py	lab-test	card	buy	ซื้อ	/th/buy/?c=lab-test	yes	/th/care/lab-test/	de,en,my,th,zh	
+/th/care/retire/	th	docs/th/care/retire/index.html	p-m	tools/build_minisites.py	retire	card	buy	ซื้อ	/th/buy/?c=retire	yes	/th/care/retire/	de,en,my,th,zh	
+/th/care/specialist/	th	docs/th/care/specialist/index.html	p-m	tools/build_minisites.py	specialist	card	buy	ซื้อ	/th/buy/?c=specialist	yes	/th/care/specialist/	de,en,my,th,zh	
+/th/charity/	th	docs/th/charity/index.html	p-cat	tools/build_shop.py category()	charity	category		ซื้อ	/th/buy/?c=giving	yes	/th/charity/	de,en,my,th,zh	
+/th/charity/checkin/	th	docs/th/charity/checkin/index.html	p-m	tools/build_minisites.py	checkin	card	buy	ซื้อ	/th/buy/?c=checkin	yes	/th/charity/checkin/	de,en,my,th,zh	
+/th/charity/club-desk/	th	docs/th/charity/club-desk/index.html	p-m	tools/build_minisites.py	club-desk	card	buy	ซื้อ	/th/buy/?c=club-desk	yes	/th/charity/club-desk/	de,en,my,th,zh	
+/th/charity/event-kit/	th	docs/th/charity/event-kit/index.html	p-m	tools/build_minisites.py	event-kit	card	buy	ซื้อ	/th/buy/?c=event-kit	yes	/th/charity/event-kit/	de,en,my,th,zh	
+/th/charity/findable/	th	docs/th/charity/findable/index.html	p-m	tools/build_minisites.py	findable	card	buy	ซื้อ	/th/buy/?c=findable	yes	/th/charity/findable/	de,en,my,th,zh	
+/th/charity/giving/	th	docs/th/charity/giving/index.html	p-m	tools/build_minisites.py	giving	card	buy	ซื้อ	/th/buy/?c=giving	yes	/th/charity/giving/	de,en,my,th,zh	
+/th/charity/grants/	th	docs/th/charity/grants/index.html	p-m	tools/build_minisites.py	grants	card	buy	ซื้อ	/th/buy/?c=grants	yes	/th/charity/grants/	de,en,my,th,zh	
+/th/charity/line-memory/	th	docs/th/charity/line-memory/index.html	p-m	tools/build_minisites.py	line-memory	card	buy	ซื้อ	/th/buy/?c=line-memory	yes	/th/charity/line-memory/	de,en,my,th,zh	
+/th/charity/map-archive/	th	docs/th/charity/map-archive/index.html	p-m	tools/build_minisites.py	map-archive	card	buy	ซื้อ	/th/buy/?c=map-archive	yes	/th/charity/map-archive/	de,en,my,th,zh	
+/th/charity/photo-proof/	th	docs/th/charity/photo-proof/index.html	p-m	tools/build_minisites.py	photo-proof	card	buy	ซื้อ	/th/buy/?c=photo-proof	yes	/th/charity/photo-proof/	de,en,my,th,zh	
+/th/data/	th	docs/th/data/index.html	p-cat	tools/build_shop.py category()	data	category		ซื้อ	/th/buy/?c=data-crawl	yes	/th/data/	de,en,my,th,zh	
+/th/data/data-crawl/	th	docs/th/data/data-crawl/index.html	p-m	tools/build_minisites.py	data-crawl	card	buy	ซื้อ	/th/buy/?c=data-crawl	yes	/th/data/data-crawl/	de,en,my,th,zh	
+/th/data/leads/	th	docs/th/data/leads/index.html	p-m	tools/build_minisites.py	leads	card	buy	ซื้อ	/th/buy/?c=leads	yes	/th/data/leads/	de,en,my,th,zh	
+/th/data/price-watch/	th	docs/th/data/price-watch/index.html	p-m	tools/build_minisites.py	price-watch	card	buy	ซื้อ	/th/buy/?c=price-watch	yes	/th/data/price-watch/	de,en,my,th,zh	
+/th/data/research/	th	docs/th/data/research/index.html	p-m	tools/build_minisites.py	research	card	buy	ซื้อ	/th/buy/?c=research	yes	/th/data/research/	de,en,my,th,zh	
+/th/data/street-survey/	th	docs/th/data/street-survey/index.html	p-m	tools/build_minisites.py	street-survey	card	buy	ซื้อ	/th/buy/?c=street-survey	yes	/th/data/street-survey/	de,en,my,th,zh	
+/th/data/traffic/	th	docs/th/data/traffic/index.html	p-m	tools/build_minisites.py	traffic	card	buy	ซื้อ	/th/buy/?c=traffic	yes	/th/data/traffic/	de,en,my,th,zh	
+/th/design/	th	docs/th/design/index.html	p-cat	tools/build_shop.py category()	design	category		ซื้อ	/th/buy/?c=awards	yes	/th/design/	de,en,my,th,zh	
+/th/design/article/	th	docs/th/design/article/index.html	p-m	tools/build_minisites.py	article	card	buy	ซื้อ	/th/buy/?c=article	yes	/th/design/article/	de,en,my,th,zh	
+/th/design/awards/	th	docs/th/design/awards/index.html	p-m	tools/build_minisites.py	awards	card	buy	ซื้อ	/th/buy/?c=awards	yes	/th/design/awards/	de,en,my,th,zh	
+/th/design/cartoons/	th	docs/th/design/cartoons/index.html	p-m	tools/build_minisites.py	cartoons	card	buy	ซื้อ	/th/buy/?c=cartoons	yes	/th/design/cartoons/	de,en,my,th,zh	
+/th/design/copy/	th	docs/th/design/copy/index.html	p-m	tools/build_minisites.py	copy	card	buy	ซื้อ	/th/buy/?c=copy	yes	/th/design/copy/	de,en,my,th,zh	
+/th/design/decks/	th	docs/th/design/decks/index.html	p-m	tools/build_minisites.py	decks	card	buy	ซื้อ	/th/buy/?c=decks	yes	/th/design/decks/	de,en,my,th,zh	
+/th/design/drawn/	th	docs/th/design/drawn/index.html	p-m	tools/build_minisites.py	drawn	card	buy	ซื้อ	/th/buy/?c=drawn	yes	/th/design/drawn/	de,en,my,th,zh	
+/th/design/graphics/	th	docs/th/design/graphics/index.html	p-m	tools/build_minisites.py	graphics	card	buy	ซื้อ	/th/buy/?c=graphics	yes	/th/design/graphics/	de,en,my,th,zh	
+/th/design/interactive/	th	docs/th/design/interactive/index.html	p-m	tools/build_minisites.py	interactive	card	buy	ซื้อ	/th/buy/?c=interactive	yes	/th/design/interactive/	de,en,my,th,zh	
+/th/design/interview/	th	docs/th/design/interview/index.html	p-m	tools/build_minisites.py	interview	card	buy	ซื้อ	/th/buy/?c=interview	yes	/th/design/interview/	de,en,my,th,zh	
+/th/design/newsletter/	th	docs/th/design/newsletter/index.html	p-m	tools/build_minisites.py	newsletter	card	buy	ซื้อ	/th/buy/?c=newsletter	yes	/th/design/newsletter/	de,en,my,th,zh	
+/th/design/patterns/	th	docs/th/design/patterns/index.html	p-m	tools/build_minisites.py	patterns	card	buy	ซื้อ	/th/buy/?c=patterns	yes	/th/design/patterns/	de,en,my,th,zh	
+/th/design/proposal/	th	docs/th/design/proposal/index.html	p-m	tools/build_minisites.py	proposal	card	buy	ซื้อ	/th/buy/?c=proposal	yes	/th/design/proposal/	de,en,my,th,zh	
+/th/design/social/	th	docs/th/design/social/index.html	p-m	tools/build_minisites.py	social	card	buy	ซื้อ	/th/buy/?c=social	yes	/th/design/social/	de,en,my,th,zh	
+/th/design/video/	th	docs/th/design/video/index.html	p-m	tools/build_minisites.py	video	card	buy	ซื้อ	/th/buy/?c=video	yes	/th/design/video/	de,en,my,th,zh	
+/th/fix/	th	docs/th/fix/index.html	p-cat	tools/build_shop.py category()	fix	category		จอง	/php/	yes	/th/fix/	de,en,my,th,zh	
+/th/fix/app-test/	th	docs/th/fix/app-test/index.html	p-m	tools/build_minisites.py	app-test	card	buy	ซื้อ	/th/buy/?c=app-test	yes	/th/fix/app-test/	de,en,my,th,zh	
+/th/fix/mirror/	th	docs/th/fix/mirror/index.html	p-m	tools/build_minisites.py	mirror	card	buy	ซื้อ	/th/buy/?c=mirror	yes	/th/fix/mirror/	de,en,my,th,zh	
+/th/fix/sec-hacked/	th	docs/th/fix/sec-hacked/index.html	p-m	tools/build_minisites.py	sec-hacked	card	buy	ซื้อ	/th/buy/?c=sec-hacked	yes	/th/fix/sec-hacked/	de,en,my,th,zh	
+/th/fix/sec-mail/	th	docs/th/fix/sec-mail/index.html	p-m	tools/build_minisites.py	sec-mail	card	buy	ซื้อ	/th/buy/?c=sec-mail	yes	/th/fix/sec-mail/	de,en,my,th,zh	
+/th/help/	th	docs/th/help/index.html	p-cat	tools/build_shop.py category()	help	category		ซื้อ	/th/buy/?c=thai-plan	yes	/th/help/	de,en,my,th,zh	
+/th/help/call/	th	docs/th/help/call/index.html	p-m	tools/build_minisites.py	call	card	buy	ซื้อ	/th/buy/?c=call	yes	/th/help/call/	de,en,my,th,zh	
+/th/help/compare/	th	docs/th/help/compare/index.html	p-m	tools/build_minisites.py	compare	card	buy	ซื้อ	/th/buy/?c=compare	yes	/th/help/compare/	de,en,my,th,zh	
+/th/help/dispute/	th	docs/th/help/dispute/index.html	p-m	tools/build_minisites.py	dispute	card	buy	ซื้อ	/th/buy/?c=dispute	yes	/th/help/dispute/	de,en,my,th,zh	
+/th/help/errand/	th	docs/th/help/errand/index.html	p-m	tools/build_minisites.py	errand	card	buy	ซื้อ	/th/buy/?c=errand	yes	/th/help/errand/	de,en,my,th,zh	
+/th/help/form/	th	docs/th/help/form/index.html	p-m	tools/build_minisites.py	form	card	buy	ซื้อ	/th/buy/?c=form	yes	/th/help/form/	de,en,my,th,zh	
+/th/help/idme/	th	docs/th/help/idme/index.html	p-m	tools/build_minisites.py	idme	card	buy	ซื้อ	/th/buy/?c=idme	yes	/th/help/idme/	de,en,my,th,zh	
+/th/help/legalise/	th	docs/th/help/legalise/index.html	p-m	tools/build_minisites.py	legalise	card	buy	ซื้อ	/th/buy/?c=legalise	yes	/th/help/legalise/	de,en,my,th,zh	
+/th/help/thai-plan/	th	docs/th/help/thai-plan/index.html	p-m	tools/build_minisites.py	thai-plan	card	buy	ซื้อ	/th/buy/?c=thai-plan	yes	/th/help/thai-plan/	de,en,my,th,zh	
+/th/help/there/	th	docs/th/help/there/index.html	p-m	tools/build_minisites.py	there	card	buy	ซื้อ	/th/buy/?c=there	yes	/th/help/there/	de,en,my,th,zh	
+/th/help/trades/	th	docs/th/help/trades/index.html	p-m	tools/build_minisites.py	trades	card	buy	ซื้อ	/th/buy/?c=trades	yes	/th/help/trades/	de,en,my,th,zh	
+/th/help/vehicle/	th	docs/th/help/vehicle/index.html	p-m	tools/build_minisites.py	vehicle	card	buy	ซื้อ	/th/buy/?c=vehicle	yes	/th/help/vehicle/	de,en,my,th,zh	
+/th/luck/	th	docs/th/luck/index.html	p-cat	tools/build_shop.py category()	luck	category		ซื้อ	/th/buy/?c=date-pick	yes	/th/luck/	de,en,my,th,zh	
+/th/luck/almanac-widget/	th	docs/th/luck/almanac-widget/index.html	p-m	tools/build_minisites.py	almanac-widget	card	buy	ซื้อ	/th/buy/?c=almanac-widget	yes	/th/luck/almanac-widget/	de,en,my,th,zh	
+/th/luck/amulet/	th	docs/th/luck/amulet/index.html	p-m	tools/build_minisites.py	amulet	card	buy	ซื้อ	/th/buy/?c=amulet	yes	/th/luck/amulet/	de,en,my,th,zh	
+/th/luck/bazi/	th	docs/th/luck/bazi/index.html	p-m	tools/build_minisites.py	bazi	card	buy	ซื้อ	/th/buy/?c=bazi	yes	/th/luck/bazi/	de,en,my,th,zh	
+/th/luck/date-pick/	th	docs/th/luck/date-pick/index.html	p-m	tools/build_minisites.py	date-pick	card	buy	ซื้อ	/th/buy/?c=date-pick	yes	/th/luck/date-pick/	de,en,my,th,zh	
+/th/luck/eink-clock/	th	docs/th/luck/eink-clock/index.html	p-m	tools/build_minisites.py	eink-clock	card	buy	ซื้อ	/th/buy/?c=eink-clock	yes	/th/luck/eink-clock/	de,en,my,th,zh	
+/th/luck/lucky-number/	th	docs/th/luck/lucky-number/index.html	p-m	tools/build_minisites.py	lucky-number	card	buy	ซื้อ	/th/buy/?c=lucky-number	yes	/th/luck/lucky-number/	de,en,my,th,zh	
+/th/luck/name-charm/	th	docs/th/luck/name-charm/index.html	p-m	tools/build_minisites.py	name-charm	card	buy	ซื้อ	/th/buy/?c=name-charm	yes	/th/luck/name-charm/	de,en,my,th,zh	
+/th/luck/name-pick/	th	docs/th/luck/name-pick/index.html	p-m	tools/build_minisites.py	name-pick	card	buy	ซื้อ	/th/buy/?c=name-pick	yes	/th/luck/name-pick/	de,en,my,th,zh	
+/th/luck/pha-yant/	th	docs/th/luck/pha-yant/index.html	p-m	tools/build_minisites.py	pha-yant	card	buy	ซื้อ	/th/buy/?c=pha-yant	yes	/th/luck/pha-yant/	de,en,my,th,zh	
+/th/luck/reading/	th	docs/th/luck/reading/index.html	p-m	tools/build_minisites.py	reading	card	buy	ซื้อ	/th/buy/?c=reading	yes	/th/luck/reading/	de,en,my,th,zh	
+/th/luck/sak-yant/	th	docs/th/luck/sak-yant/index.html	p-m	tools/build_minisites.py	sak-yant	card	buy	ซื้อ	/th/buy/?c=sak-yant	yes	/th/luck/sak-yant/	de,en,my,th,zh	
+/th/merit/	th	docs/th/merit/index.html	p-cat	tools/build_shop.py category()	merit	category		ซื้อ	/th/buy/?c=merit-dead	yes	/th/merit/	de,en,my,th,zh	
+/th/merit/house-blessing/	th	docs/th/merit/house-blessing/index.html	p-m	tools/build_minisites.py	house-blessing	card	buy	ซื้อ	/th/buy/?c=house-blessing	yes	/th/merit/house-blessing/	de,en,my,th,zh	
+/th/merit/lanna-wedding/	th	docs/th/merit/lanna-wedding/index.html	p-m	tools/build_minisites.py	lanna-wedding	card	buy	ซื้อ	/th/buy/?c=lanna-wedding	yes	/th/merit/lanna-wedding/	de,en,my,th,zh	
+/th/merit/merit-dead/	th	docs/th/merit/merit-dead/index.html	p-m	tools/build_minisites.py	merit-dead	card	buy	ซื้อ	/th/buy/?c=merit-dead	yes	/th/merit/merit-dead/	de,en,my,th,zh	
+/th/merit/merit-you/	th	docs/th/merit/merit-you/index.html	p-m	tools/build_minisites.py	merit-you	card	buy	ซื้อ	/th/buy/?c=merit-you	yes	/th/merit/merit-you/	de,en,my,th,zh	
+/th/merit/spirit-house/	th	docs/th/merit/spirit-house/index.html	p-m	tools/build_minisites.py	spirit-house	card	buy	ซื้อ	/th/buy/?c=spirit-house	yes	/th/merit/spirit-house/	de,en,my,th,zh	
+/th/merit/su-khwan/	th	docs/th/merit/su-khwan/index.html	p-m	tools/build_minisites.py	su-khwan	card	buy	ซื้อ	/th/buy/?c=su-khwan	yes	/th/merit/su-khwan/	de,en,my,th,zh	
+/th/money/	th	docs/th/money/index.html	p-cat	tools/build_shop.py category()	money	category		ซื้อ	/th/buy/?c=merchant	yes	/th/money/	de,en,my,th,zh	
+/th/money/bank-account/	th	docs/th/money/bank-account/index.html	p-m	tools/build_minisites.py	bank-account	card	buy	ซื้อ	/th/buy/?c=bank-account	yes	/th/money/bank-account/	de,en,my,th,zh	
+/th/money/books/	th	docs/th/money/books/index.html	p-m	tools/build_minisites.py	books	card	buy	ซื้อ	/th/buy/?c=books	yes	/th/money/books/	de,en,my,th,zh	
+/th/money/exchange/	th	docs/th/money/exchange/index.html	p-m	tools/build_minisites.py	exchange	card	buy	ซื้อ	/th/buy/?c=exchange	yes	/th/money/exchange/	de,en,my,th,zh	
+/th/money/invoice/	th	docs/th/money/invoice/index.html	p-m	tools/build_minisites.py	invoice	card	buy	ซื้อ	/th/buy/?c=invoice	yes	/th/money/invoice/	de,en,my,th,zh	
+/th/money/kh-books/	th	docs/th/money/kh-books/index.html	p-m	tools/build_minisites.py	kh-books	card	buy	ซื้อ	/th/buy/?c=kh-books	yes	/th/money/kh-books/	de,en,my,th,zh	
+/th/money/merchant/	th	docs/th/money/merchant/index.html	p-m	tools/build_minisites.py	merchant	card	buy	ซื้อ	/th/buy/?c=merchant	yes	/th/money/merchant/	de,en,my,th,zh	
+/th/money/payouts/	th	docs/th/money/payouts/index.html	p-m	tools/build_minisites.py	payouts	card	buy	ซื้อ	/th/buy/?c=payouts	yes	/th/money/payouts/	de,en,my,th,zh	
+/th/money/staff-papers/	th	docs/th/money/staff-papers/index.html	p-m	tools/build_minisites.py	staff-papers	card	buy	ซื้อ	/th/buy/?c=staff-papers	yes	/th/money/staff-papers/	de,en,my,th,zh	
+/th/moving/	th	docs/th/moving/index.html	p-cat	tools/build_shop.py category()	moving	category		ซื้อ	/th/buy/?c=move	yes	/th/moving/	de,en,my,th,zh	
+/th/moving/luggage/	th	docs/th/moving/luggage/index.html	p-m	tools/build_minisites.py	luggage	card	buy	ซื้อ	/th/buy/?c=luggage	yes	/th/moving/luggage/	de,en,my,th,zh	
+/th/moving/move/	th	docs/th/moving/move/index.html	p-m	tools/build_minisites.py	move	card	buy	ซื้อ	/th/buy/?c=move	yes	/th/moving/move/	de,en,my,th,zh	
+/th/outsource/	th	docs/th/outsource/index.html	p-cat	tools/build_shop.py category()	outsource	category		ซื้อ	/th/buy/?c=voice	yes	/th/outsource/	de,en,my,th,zh	
+/th/outsource/assistant/	th	docs/th/outsource/assistant/index.html	p-m	tools/build_minisites.py	assistant	card	buy	ซื้อ	/th/buy/?c=assistant	yes	/th/outsource/assistant/	de,en,my,th,zh	
+/th/outsource/calls-out/	th	docs/th/outsource/calls-out/index.html	p-m	tools/build_minisites.py	calls-out	card	buy	ซื้อ	/th/buy/?c=calls-out	yes	/th/outsource/calls-out/	de,en,my,th,zh	
+/th/outsource/cs-desk/	th	docs/th/outsource/cs-desk/index.html	p-m	tools/build_minisites.py	cs-desk	card	buy	ซื้อ	/th/buy/?c=cs-desk	yes	/th/outsource/cs-desk/	de,en,my,th,zh	
+/th/outsource/subtitles/	th	docs/th/outsource/subtitles/index.html	p-m	tools/build_minisites.py	subtitles	card	buy	ซื้อ	/th/buy/?c=subtitles	yes	/th/outsource/subtitles/	de,en,my,th,zh	
+/th/outsource/typing/	th	docs/th/outsource/typing/index.html	p-m	tools/build_minisites.py	typing	card	buy	ซื้อ	/th/buy/?c=typing	yes	/th/outsource/typing/	de,en,my,th,zh	
+/th/outsource/voice/	th	docs/th/outsource/voice/index.html	p-m	tools/build_minisites.py	voice	card	buy	ซื้อ	/th/buy/?c=voice	yes	/th/outsource/voice/	de,en,my,th,zh	
+/th/questions/	th	docs/th/questions/index.html	-	tools/build_questions.py				ทักไลน์	https://line.me/R/ti/p/@964yxgnk	yes	/th/questions/	de,en,my,th,zh	
+/th/retreat/	th	docs/th/retreat/index.html	-	tools/build_retreat.py						yes	/th/retreat/	en,th	
+/th/ship/	th	docs/th/ship/index.html	p-cat	tools/build_shop.py category()	ship	category		ซื้อ	/th/buy/?c=partner	yes	/th/ship/	de,en,my,th,zh	
+/th/ship/partner/	th	docs/th/ship/partner/index.html	p-m	tools/build_minisites.py	partner	card	buy	ซื้อ	/th/buy/?c=partner	yes	/th/ship/partner/	de,en,my,th,zh	
+/th/shop/	th	docs/th/shop/index.html	p-cat	tools/build_shop.py category()	shop	category		ซื้อ	/th/buy/?c=online-shop	yes	/th/shop/	de,en,my,th,zh	
+/th/shop/ads-run/	th	docs/th/shop/ads-run/index.html	p-m	tools/build_minisites.py	ads-run	card	buy	ซื้อ	/th/buy/?c=ads-run	yes	/th/shop/ads-run/	de,en,my,th,zh	
+/th/shop/etsy/	th	docs/th/shop/etsy/index.html	p-m	tools/build_minisites.py	etsy	card	buy	ซื้อ	/th/buy/?c=etsy	yes	/th/shop/etsy/	de,en,my,th,zh	
+/th/shop/fb-care/	th	docs/th/shop/fb-care/index.html	p-m	tools/build_minisites.py	fb-care	card	buy	ซื้อ	/th/buy/?c=fb-care	yes	/th/shop/fb-care/	de,en,my,th,zh	
+/th/shop/grab/	th	docs/th/shop/grab/index.html	p-m	tools/build_minisites.py	grab	card	buy	ซื้อ	/th/buy/?c=grab	yes	/th/shop/grab/	de,en,my,th,zh	
+/th/shop/online-shop/	th	docs/th/shop/online-shop/index.html	p-m	tools/build_minisites.py	online-shop	card	buy	ซื้อ	/th/buy/?c=online-shop	yes	/th/shop/online-shop/	de,en,my,th,zh	
+/th/shop/ordering/	th	docs/th/shop/ordering/index.html	p-m	tools/build_minisites.py	ordering	card	buy	ซื้อ	/th/buy/?c=ordering	yes	/th/shop/ordering/	de,en,my,th,zh	
+/th/shop/paybox/	th	docs/th/shop/paybox/index.html	p-m	tools/build_minisites.py	paybox	card	buy	ซื้อ	/th/buy/?c=paybox	yes	/th/shop/paybox/	de,en,my,th,zh	
+/th/shop/print/	th	docs/th/shop/print/index.html	p-m	tools/build_minisites.py	print	card	buy	ซื้อ	/th/buy/?c=print	yes	/th/shop/print/	de,en,my,th,zh	
+/th/shop/restaurant-desk/	th	docs/th/shop/restaurant-desk/index.html	p-m	tools/build_minisites.py	restaurant-desk	card	buy	ซื้อ	/th/buy/?c=restaurant-desk	yes	/th/shop/restaurant-desk/	de,en,my,th,zh	
+/th/shop/signs/	th	docs/th/shop/signs/index.html	p-m	tools/build_minisites.py	signs	card	buy	ซื้อ	/th/buy/?c=signs	yes	/th/shop/signs/	de,en,my,th,zh	
+/th/shop/stall-page/	th	docs/th/shop/stall-page/index.html	p-m	tools/build_minisites.py	stall-page	card	buy	ซื้อ	/th/buy/?c=stall-page	yes	/th/shop/stall-page/	de,en,my,th,zh	
+/th/shop/trade-photos/	th	docs/th/shop/trade-photos/index.html	p-m	tools/build_minisites.py	trade-photos	card	buy	ซื้อ	/th/buy/?c=trade-photos	yes	/th/shop/trade-photos/	de,en,my,th,zh	
+/th/software/	th	docs/th/software/index.html	p-soft	tools/build_arrange.py software				ดูว่าใช้งานอย่างไร (เปิด pm.nanobotco.workers.dev เว็บของแอป	https://pm.nanobotco.workers.dev/about/	yes	/th/software/	de,en,my,th,zh	
+/th/stay/	th	docs/th/stay/index.html	p-cat	tools/build_shop.py category()	stay	category		ซื้อ	/th/buy/?c=stay-check	yes	/th/stay/	de,en,my,th,zh	
+/th/stay/agency-sheet/	th	docs/th/stay/agency-sheet/index.html	p-m	tools/build_minisites.py	agency-sheet	card	buy	ซื้อ	/th/buy/?c=agency-sheet	yes	/th/stay/agency-sheet/	de,en,my,th,zh	
+/th/stay/npa-homes/	th	docs/th/stay/npa-homes/index.html	p-m	tools/build_minisites.py	npa-homes	card	buy	ซื้อ	/th/buy/?c=npa-homes	yes	/th/stay/npa-homes/	de,en,my,th,zh	
+/th/stay/rentals/	th	docs/th/stay/rentals/index.html	p-m	tools/build_minisites.py	rentals	card	buy	ซื้อ	/th/buy/?c=rentals	yes	/th/stay/rentals/	de,en,my,th,zh	
+/th/stay/stay-booking/	th	docs/th/stay/stay-booking/index.html	p-m	tools/build_minisites.py	stay-booking	card	buy	ซื้อ	/th/buy/?c=stay-booking	yes	/th/stay/stay-booking/	de,en,my,th,zh	
+/th/stay/stay-check/	th	docs/th/stay/stay-check/index.html	p-m	tools/build_minisites.py	stay-check	card	buy	ซื้อ	/th/buy/?c=stay-check	yes	/th/stay/stay-check/	de,en,my,th,zh	
+/th/stay/stay-rent/	th	docs/th/stay/stay-rent/index.html	p-m	tools/build_minisites.py	stay-rent	card	buy	ซื้อ	/th/buy/?c=stay-rent	yes	/th/stay/stay-rent/	de,en,my,th,zh	
+/th/studio/	th	docs/th/studio/index.html	studio	tools/build_studio.py						yes	/th/studio/	de,en,my,th,zh	
+/th/studio/black-swan/	th	docs/th/studio/black-swan/index.html	studio	tools/build_studio.py						yes	/th/studio/black-swan/	de,en,my,th,zh	
+/th/studio/black-swan/one/	th	docs/th/studio/black-swan/one/index.html	studio	tools/build_studio.py						no			
+/th/studio/crypto-safety/	th	docs/th/studio/crypto-safety/index.html	studio	tools/build_studio.py						yes	/th/studio/crypto-safety/	de,en,my,th,zh	
+/th/studio/dj/	th	docs/th/studio/dj/index.html	studio	tools/build_studio.py						noindex	/th/studio/dj/	en,th	
+/th/studio/notes/	th	docs/th/studio/notes/index.html	studio	tools/build_studio.py						yes	/th/studio/notes/	en,th	
+/th/tours/	th	docs/th/tours/index.html	p-cat	tools/build_shop.py category()	tours	category		ซื้อ	/th/buy/?c=lantern	yes	/th/tours/	de,en,my,th,zh	
+/th/tours/balloon/	th	docs/th/tours/balloon/index.html	p-m	tools/build_minisites.py	balloon	card	buy	ซื้อ	/th/buy/?c=balloon	yes	/th/tours/balloon/	de,en,my,th,zh	
+/th/tours/car-guide/	th	docs/th/tours/car-guide/index.html	p-m	tools/build_minisites.py	car-guide	card	buy	ซื้อ	/th/buy/?c=car-guide	yes	/th/tours/car-guide/	de,en,my,th,zh	
+/th/tours/experience/	th	docs/th/tours/experience/index.html	p-m	tools/build_minisites.py	experience	card	buy	ซื้อ	/th/buy/?c=experience	yes	/th/tours/experience/	de,en,my,th,zh	
+/th/tours/lantern/	th	docs/th/tours/lantern/index.html	p-m	tools/build_minisites.py	lantern	card	buy	ซื้อ	/th/buy/?c=lantern	yes	/th/tours/lantern/	de,en,my,th,zh	
+/th/tours/tour-3d/	th	docs/th/tours/tour-3d/index.html	p-m	tools/build_minisites.py	tour-3d	card	buy	ซื้อ	/th/buy/?c=tour-3d	yes	/th/tours/tour-3d/	de,en,my,th,zh	
+/th/tours/tour-day/	th	docs/th/tours/tour-day/index.html	p-m	tools/build_minisites.py	tour-day	card	buy	ซื้อ	/th/buy/?c=tour-day	yes	/th/tours/tour-day/	de,en,my,th,zh	
+/th/tours/trip-plan/	th	docs/th/tours/trip-plan/index.html	p-m	tools/build_minisites.py	trip-plan	card	buy	ซื้อ	/th/buy/?c=trip-plan	yes	/th/tours/trip-plan/	de,en,my,th,zh	
+/th/translate/	th	docs/th/translate/index.html	p-cat	tools/build_shop.py category()	translate	category		ซื้อ	/th/buy/?c=german	yes	/th/translate/	de,en,my,th,zh	
+/th/translate/german/	th	docs/th/translate/german/index.html	p-m	tools/build_minisites.py	german	card	buy	ซื้อ	/th/buy/?c=german	yes	/th/translate/german/	de,en,my,th,zh	
+/th/translate/interp/	th	docs/th/translate/interp/index.html	p-m	tools/build_minisites.py	interp	card	buy	ซื้อ	/th/buy/?c=interp	yes	/th/translate/interp/	de,en,my,th,zh	
+/th/translate/lang-leaves/	th	docs/th/translate/lang-leaves/index.html	p-m	tools/build_minisites.py	lang-leaves	card	buy	ซื้อ	/th/buy/?c=lang-leaves	yes	/th/translate/lang-leaves/	de,en,my,th,zh	
+/th/translate/lang-pages/	th	docs/th/translate/lang-pages/index.html	p-m	tools/build_minisites.py	lang-pages	card	buy	ซื้อ	/th/buy/?c=lang-pages	yes	/th/translate/lang-pages/	de,en,my,th,zh	
+/th/translate/lang-shan/	th	docs/th/translate/lang-shan/index.html	p-m	tools/build_minisites.py	lang-shan	card	buy	ซื้อ	/th/buy/?c=lang-shan	yes	/th/translate/lang-shan/	de,en,my,th,zh	
+/th/translate/romanise/	th	docs/th/translate/romanise/index.html	p-m	tools/build_minisites.py	romanise	card	buy	ซื้อ	/th/buy/?c=romanise	yes	/th/translate/romanise/	de,en,my,th,zh	
+/th/translate/thai-lessons/	th	docs/th/translate/thai-lessons/index.html	p-m	tools/build_minisites.py	thai-lessons	card	buy	ซื้อ	/th/buy/?c=thai-lessons	yes	/th/translate/thai-lessons/	de,en,my,th,zh	
+/th/translate/translate/	th	docs/th/translate/translate/index.html	p-m	tools/build_minisites.py	translate	card	buy	ซื้อ	/th/buy/?c=translate	yes	/th/translate/translate/	de,en,my,th,zh	
+/th/visa/	th	docs/th/visa/index.html	p-cat	tools/build_shop.py category()	visa	category		ไป	https://chiangmaivisadesk.com/	yes	/th/visa/	de,en,my,th,zh	
+/th/web/	th	docs/th/web/index.html	p-cat	tools/build_shop.py category()	web	category		ซื้อ	/th/buy/?c=web-mail	yes	/th/web/	de,en,my,th,zh	
+/th/web/accessible/	th	docs/th/web/accessible/index.html	p-m	tools/build_minisites.py	accessible	card	buy	ซื้อ	/th/buy/?c=accessible	yes	/th/web/accessible/	de,en,my,th,zh	
+/th/web/app/	th	docs/th/web/app/index.html	p-m	tools/build_minisites.py	app	card	buy	ซื้อ	/th/buy/?c=app	yes	/th/web/app/	de,en,my,th,zh	
+/th/web/directory/	th	docs/th/web/directory/index.html	p-m	tools/build_minisites.py	directory	card	buy	ซื้อ	/th/buy/?c=directory	yes	/th/web/directory/	de,en,my,th,zh	
+/th/web/guide-site/	th	docs/th/web/guide-site/index.html	p-m	tools/build_minisites.py	guide-site	card	buy	ซื้อ	/th/buy/?c=guide-site	yes	/th/web/guide-site/	de,en,my,th,zh	
+/th/web/help-page/	th	docs/th/web/help-page/index.html	p-m	tools/build_minisites.py	help-page	card	buy	ซื้อ	/th/buy/?c=help-page	yes	/th/web/help-page/	de,en,my,th,zh	
+/th/web/site/	th	docs/th/web/site/index.html	p-m	tools/build_minisites.py	site	card	buy	ซื้อ	/th/buy/?c=site	yes	/th/web/site/	de,en,my,th,zh	
+/th/web/tap-card/	th	docs/th/web/tap-card/index.html	p-m	tools/build_minisites.py	tap-card	card	buy	ซื้อ	/th/buy/?c=tap-card	yes	/th/web/tap-card/	de,en,my,th,zh	
+/th/web/vibe/	th	docs/th/web/vibe/index.html	p-m	tools/build_minisites.py	vibe	card	buy	ซื้อ	/th/buy/?c=vibe	yes	/th/web/vibe/	de,en,my,th,zh	
+/th/web/web-care/	th	docs/th/web/web-care/index.html	p-m	tools/build_minisites.py	web-care	card	buy	ซื้อ	/th/buy/?c=web-care	yes	/th/web/web-care/	de,en,my,th,zh	
+/th/web/web-dns/	th	docs/th/web/web-dns/index.html	p-m	tools/build_minisites.py	web-dns	card	buy	ซื้อ	/th/buy/?c=web-dns	yes	/th/web/web-dns/	de,en,my,th,zh	
+/th/web/web-found/	th	docs/th/web/web-found/index.html	p-m	tools/build_minisites.py	web-found	card	buy	ซื้อ	/th/buy/?c=web-found	yes	/th/web/web-found/	de,en,my,th,zh	
+/th/web/web-license/	th	docs/th/web/web-license/index.html	p-m	tools/build_minisites.py	web-license	card	buy	ซื้อ	/th/buy/?c=web-license	yes	/th/web/web-license/	de,en,my,th,zh	
+/th/web/web-line/	th	docs/th/web/web-line/index.html	p-m	tools/build_minisites.py	web-line	card	buy	ซื้อ	/th/buy/?c=web-line	yes	/th/web/web-line/	de,en,my,th,zh	
+/th/web/web-mail/	th	docs/th/web/web-mail/index.html	p-m	tools/build_minisites.py	web-mail	card	buy	ซื้อ	/th/buy/?c=web-mail	yes	/th/web/web-mail/	de,en,my,th,zh	
+/th/web/web-move/	th	docs/th/web/web-move/index.html	p-m	tools/build_minisites.py	web-move	card	buy	ซื้อ	/th/buy/?c=web-move	yes	/th/web/web-move/	de,en,my,th,zh	
+/th/web/web-search/	th	docs/th/web/web-search/index.html	p-m	tools/build_minisites.py	web-search	card	buy	ซื้อ	/th/buy/?c=web-search	yes	/th/web/web-search/	de,en,my,th,zh	
+/th/web/web-sharecard/	th	docs/th/web/web-sharecard/index.html	p-m	tools/build_minisites.py	web-sharecard	card	buy	ซื้อ	/th/buy/?c=web-sharecard	yes	/th/web/web-sharecard/	de,en,my,th,zh	
+/th/web/widget/	th	docs/th/web/widget/index.html	p-m	tools/build_minisites.py	widget	card	buy	ซื้อ	/th/buy/?c=widget	yes	/th/web/widget/	de,en,my,th,zh	
+/th/web/wp-api/	th	docs/th/web/wp-api/index.html	p-m	tools/build_minisites.py	wp-api	card	buy	ซื้อ	/th/buy/?c=wp-api	yes	/th/web/wp-api/	de,en,my,th,zh	
+/th/weddings/	th	docs/th/weddings/index.html	p-cat	tools/build_shop.py category()	weddings	category		ซื้อ	/th/buy/?c=event-page	yes	/th/weddings/	de,en,my,th,zh	
+/th/weddings/bride/	th	docs/th/weddings/bride/index.html	p-m	tools/build_minisites.py	bride	card	buy	ซื้อ	/th/buy/?c=bride	yes	/th/weddings/bride/	de,en,my,th,zh	
+/th/weddings/event-page/	th	docs/th/weddings/event-page/index.html	p-m	tools/build_minisites.py	event-page	card	buy	ซื้อ	/th/buy/?c=event-page	yes	/th/weddings/event-page/	de,en,my,th,zh	
+/th/weddings/event-plan/	th	docs/th/weddings/event-plan/index.html	p-m	tools/build_minisites.py	event-plan	card	buy	ซื้อ	/th/buy/?c=event-plan	yes	/th/weddings/event-plan/	de,en,my,th,zh	
+/th/weddings/tribute/	th	docs/th/weddings/tribute/index.html	p-m	tools/build_minisites.py	tribute	card	buy	ซื้อ	/th/buy/?c=tribute	yes	/th/weddings/tribute/	de,en,my,th,zh	
+/th/weddings/wedding/	th	docs/th/weddings/wedding/index.html	p-m	tools/build_minisites.py	wedding	card	buy	ซื้อ	/th/buy/?c=wedding	yes	/th/weddings/wedding/	de,en,my,th,zh	
+/tours/	en	docs/tours/index.html	p-cat	tools/build_shop.py category()	tours	category		Buy	/buy/?c=lantern	yes	/tours/	de,en,my,th,zh	
+/tours/balloon/	en	docs/tours/balloon/index.html	p-m	tools/build_minisites.py	balloon	card	buy	Buy	/buy/?c=balloon	yes	/tours/balloon/	de,en,my,th,zh	
+/tours/car-guide/	en	docs/tours/car-guide/index.html	p-m	tools/build_minisites.py	car-guide	card	buy	Buy	/buy/?c=car-guide	yes	/tours/car-guide/	de,en,my,th,zh	
+/tours/experience/	en	docs/tours/experience/index.html	p-m	tools/build_minisites.py	experience	card	buy	Buy	/buy/?c=experience	yes	/tours/experience/	de,en,my,th,zh	
+/tours/lantern/	en	docs/tours/lantern/index.html	p-m	tools/build_minisites.py	lantern	card	buy	Buy	/buy/?c=lantern	yes	/tours/lantern/	de,en,my,th,zh	
+/tours/tour-3d/	en	docs/tours/tour-3d/index.html	p-m	tools/build_minisites.py	tour-3d	card	buy	Buy	/buy/?c=tour-3d	yes	/tours/tour-3d/	de,en,my,th,zh	
+/tours/tour-day/	en	docs/tours/tour-day/index.html	p-m	tools/build_minisites.py	tour-day	card	buy	Buy	/buy/?c=tour-day	yes	/tours/tour-day/	de,en,my,th,zh	
+/tours/trip-plan/	en	docs/tours/trip-plan/index.html	p-m	tools/build_minisites.py	trip-plan	card	buy	Buy	/buy/?c=trip-plan	yes	/tours/trip-plan/	de,en,my,th,zh	
+/translate/	en	docs/translate/index.html	p-cat	tools/build_shop.py category()	translate	category		Buy	/buy/?c=german	yes	/translate/	de,en,my,th,zh	
+/translate/german/	en	docs/translate/german/index.html	p-m	tools/build_minisites.py	german	card	buy	Buy	/buy/?c=german	yes	/translate/german/	de,en,my,th,zh	
+/translate/interp/	en	docs/translate/interp/index.html	p-m	tools/build_minisites.py	interp	card	buy	Buy	/buy/?c=interp	yes	/translate/interp/	de,en,my,th,zh	
+/translate/lang-leaves/	en	docs/translate/lang-leaves/index.html	p-m	tools/build_minisites.py	lang-leaves	card	buy	Buy	/buy/?c=lang-leaves	yes	/translate/lang-leaves/	de,en,my,th,zh	
+/translate/lang-pages/	en	docs/translate/lang-pages/index.html	p-m	tools/build_minisites.py	lang-pages	card	buy	Buy	/buy/?c=lang-pages	yes	/translate/lang-pages/	de,en,my,th,zh	
+/translate/lang-shan/	en	docs/translate/lang-shan/index.html	p-m	tools/build_minisites.py	lang-shan	card	buy	Buy	/buy/?c=lang-shan	yes	/translate/lang-shan/	de,en,my,th,zh	
+/translate/romanise/	en	docs/translate/romanise/index.html	p-m	tools/build_minisites.py	romanise	card	buy	Buy	/buy/?c=romanise	yes	/translate/romanise/	de,en,my,th,zh	
+/translate/thai-lessons/	en	docs/translate/thai-lessons/index.html	p-m	tools/build_minisites.py	thai-lessons	card	buy	Buy	/buy/?c=thai-lessons	yes	/translate/thai-lessons/	de,en,my,th,zh	
+/translate/translate/	en	docs/translate/translate/index.html	p-m	tools/build_minisites.py	translate	card	buy	Buy	/buy/?c=translate	yes	/translate/translate/	de,en,my,th,zh	
+/translation/	en	docs/translation/index.html	-	tools/build_translation.py				Prices	#prices	yes	/translation/	de,en,my,th	
+/translation/de/	en	docs/translation/de/index.html	-	tools/build_translation.py				Preise	#prices	no	/translation/de/	de,en,my,th	
+/translation/my/	en	docs/translation/my/index.html	-	tools/build_translation.py				စျေးနှုန်း	#prices	yes	/translation/my/	de,en,my,th	
+/translation/th/	en	docs/translation/th/index.html	-	tools/build_translation.py				ราคา	#prices	yes	/translation/th/	de,en,my,th	
+/visa/	en	docs/visa/index.html	p-cat	tools/build_shop.py category()	visa	category		Go to site	https://chiangmaivisadesk.com/	yes	/visa/	de,en,my,th,zh	
+/web/	en	docs/web/index.html	p-cat	tools/build_shop.py category()	web	category		Buy	/buy/?c=web-mail	yes	/web/	de,en,my,th,zh	
+/web/accessible/	en	docs/web/accessible/index.html	p-m	tools/build_minisites.py	accessible	card	buy	Buy	/buy/?c=accessible	yes	/web/accessible/	de,en,my,th,zh	
+/web/app/	en	docs/web/app/index.html	p-m	tools/build_minisites.py	app	card	buy	Buy	/buy/?c=app	yes	/web/app/	de,en,my,th,zh	
+/web/directory/	en	docs/web/directory/index.html	p-m	tools/build_minisites.py	directory	card	buy	Buy	/buy/?c=directory	yes	/web/directory/	de,en,my,th,zh	
+/web/guide-site/	en	docs/web/guide-site/index.html	p-m	tools/build_minisites.py	guide-site	card	buy	Buy	/buy/?c=guide-site	yes	/web/guide-site/	de,en,my,th,zh	
+/web/help-page/	en	docs/web/help-page/index.html	p-m	tools/build_minisites.py	help-page	card	buy	Buy	/buy/?c=help-page	yes	/web/help-page/	de,en,my,th,zh	
+/web/site/	en	docs/web/site/index.html	p-m	tools/build_minisites.py	site	card	buy	Buy	/buy/?c=site	yes	/web/site/	de,en,my,th,zh	
+/web/tap-card/	en	docs/web/tap-card/index.html	p-m	tools/build_minisites.py	tap-card	card	buy	Buy	/buy/?c=tap-card	yes	/web/tap-card/	de,en,my,th,zh	
+/web/vibe/	en	docs/web/vibe/index.html	p-m	tools/build_minisites.py	vibe	card	buy	Buy	/buy/?c=vibe	yes	/web/vibe/	de,en,my,th,zh	
+/web/web-care/	en	docs/web/web-care/index.html	p-m	tools/build_minisites.py	web-care	card	buy	Buy	/buy/?c=web-care	yes	/web/web-care/	de,en,my,th,zh	
+/web/web-dns/	en	docs/web/web-dns/index.html	p-m	tools/build_minisites.py	web-dns	card	buy	Buy	/buy/?c=web-dns	yes	/web/web-dns/	de,en,my,th,zh	
+/web/web-found/	en	docs/web/web-found/index.html	p-m	tools/build_minisites.py	web-found	card	buy	Buy	/buy/?c=web-found	yes	/web/web-found/	de,en,my,th,zh	
+/web/web-license/	en	docs/web/web-license/index.html	p-m	tools/build_minisites.py	web-license	card	buy	Buy	/buy/?c=web-license	yes	/web/web-license/	de,en,my,th,zh	
+/web/web-line/	en	docs/web/web-line/index.html	p-m	tools/build_minisites.py	web-line	card	buy	Buy	/buy/?c=web-line	yes	/web/web-line/	de,en,my,th,zh	
+/web/web-mail/	en	docs/web/web-mail/index.html	p-m	tools/build_minisites.py	web-mail	card	buy	Buy	/buy/?c=web-mail	yes	/web/web-mail/	de,en,my,th,zh	
+/web/web-move/	en	docs/web/web-move/index.html	p-m	tools/build_minisites.py	web-move	card	buy	Buy	/buy/?c=web-move	yes	/web/web-move/	de,en,my,th,zh	
+/web/web-search/	en	docs/web/web-search/index.html	p-m	tools/build_minisites.py	web-search	card	buy	Buy	/buy/?c=web-search	yes	/web/web-search/	de,en,my,th,zh	
+/web/web-sharecard/	en	docs/web/web-sharecard/index.html	p-m	tools/build_minisites.py	web-sharecard	card	buy	Buy	/buy/?c=web-sharecard	yes	/web/web-sharecard/	de,en,my,th,zh	
+/web/widget/	en	docs/web/widget/index.html	p-m	tools/build_minisites.py	widget	card	buy	Buy	/buy/?c=widget	yes	/web/widget/	de,en,my,th,zh	
+/web/wp-api/	en	docs/web/wp-api/index.html	p-m	tools/build_minisites.py	wp-api	card	buy	Buy	/buy/?c=wp-api	yes	/web/wp-api/	de,en,my,th,zh	
+/weddings/	en	docs/weddings/index.html	p-cat	tools/build_shop.py category()	weddings	category		Buy	/buy/?c=event-page	yes	/weddings/	de,en,my,th,zh	
+/weddings/bride/	en	docs/weddings/bride/index.html	p-m	tools/build_minisites.py	bride	card	buy	Buy	/buy/?c=bride	yes	/weddings/bride/	de,en,my,th,zh	
+/weddings/event-page/	en	docs/weddings/event-page/index.html	p-m	tools/build_minisites.py	event-page	card	buy	Buy	/buy/?c=event-page	yes	/weddings/event-page/	de,en,my,th,zh	
+/weddings/event-plan/	en	docs/weddings/event-plan/index.html	p-m	tools/build_minisites.py	event-plan	card	buy	Buy	/buy/?c=event-plan	yes	/weddings/event-plan/	de,en,my,th,zh	
+/weddings/tribute/	en	docs/weddings/tribute/index.html	p-m	tools/build_minisites.py	tribute	card	buy	Buy	/buy/?c=tribute	yes	/weddings/tribute/	de,en,my,th,zh	
+/weddings/wedding/	en	docs/weddings/wedding/index.html	p-m	tools/build_minisites.py	wedding	card	buy	Buy	/buy/?c=wedding	yes	/weddings/wedding/	de,en,my,th,zh	
+/zh/	zh	docs/zh/index.html	p-front	tools/build_shop.py front()				请我们办事	#jobs	yes	/zh/	de,en,my,th,zh	
+/zh/ai/	zh	docs/zh/ai/index.html	p-cat	tools/build_shop.py category()	ai	category		购买	/zh/buy/?c=ai-assistant	yes	/zh/ai/	de,en,my,th,zh	
+/zh/ai/ai-assistant/	zh	docs/zh/ai/ai-assistant/index.html	p-m	tools/build_minisites.py	ai-assistant	card	buy	购买	/zh/buy/?c=ai-assistant	yes	/zh/ai/ai-assistant/	de,en,my,th,zh	
+/zh/ai/ai-automation/	zh	docs/zh/ai/ai-automation/index.html	p-m	tools/build_minisites.py	ai-automation	card	buy	购买	/zh/buy/?c=ai-automation	yes	/zh/ai/ai-automation/	de,en,my,th,zh	
+/zh/ai/ai-batch/	zh	docs/zh/ai/ai-batch/index.html	p-m	tools/build_minisites.py	ai-batch	card	buy	购买	/zh/buy/?c=ai-batch	yes	/zh/ai/ai-batch/	de,en,my,th,zh	
+/zh/ai/ai-line/	zh	docs/zh/ai/ai-line/index.html	p-m	tools/build_minisites.py	ai-line	card	buy	购买	/zh/buy/?c=ai-line	yes	/zh/ai/ai-line/	de,en,my,th,zh	
+/zh/ai/crawl-pay/	zh	docs/zh/ai/crawl-pay/index.html	p-m	tools/build_minisites.py	crawl-pay	card	buy	购买	/zh/buy/?c=crawl-pay	yes	/zh/ai/crawl-pay/	de,en,my,th,zh	
+/zh/ai/crew/	zh	docs/zh/ai/crew/index.html	p-m	tools/build_minisites.py	crew	card	book	预订	/bots/	yes	/zh/ai/crew/	de,en,my,th,zh	
+/zh/ai/demand-prices/	zh	docs/zh/ai/demand-prices/index.html	p-m	tools/build_minisites.py	demand-prices	card	buy	购买	/zh/buy/?c=demand-prices	yes	/zh/ai/demand-prices/	de,en,my,th,zh	
+/zh/arrange/appointment/	zh	docs/zh/arrange/appointment/index.html	p-job	tools/build_arrange.py	appointment	job	buy	购买	/zh/buy/?c=specialist&o=specialist-book	yes	/zh/arrange/appointment/	de,en,my,th,zh	
+/zh/arrange/driver/	zh	docs/zh/arrange/driver/index.html	p-job	tools/build_arrange.py	driver	job	buy	购买	/zh/buy/?c=car-guide&o=driver-day	yes	/zh/arrange/driver/	de,en,my,th,zh	
+/zh/arrange/home-service/	zh	docs/zh/arrange/home-service/index.html	p-job	tools/build_arrange.py	home-service	job	buy	购买	/zh/buy/?c=trades&o=trades	yes	/zh/arrange/home-service/	de,en,my,th,zh	
+/zh/arrange/parcel/	zh	docs/zh/arrange/parcel/index.html	p-job	tools/build_arrange.py	parcel	job	quote	购买	/zh/buy/?c=luggage&o=luggage	yes	/zh/arrange/parcel/	de,en,my,th,zh	
+/zh/arrange/shop-for-me/	zh	docs/zh/arrange/shop-for-me/index.html	p-job	tools/build_arrange.py	shop-for-me	job	buy	购买	/zh/buy/?c=errand&o=errand	yes	/zh/arrange/shop-for-me/	de,en,my,th,zh	
+/zh/ask/	zh	docs/zh/ask/index.html	p-ask	tools/build_shop.py ask_page() + assets/shop.js				LINE 联系我们 @964yxgnk	https://line.me/R/ti/p/@964yxgnk	noindex	/zh/ask/	de,en,my,th,zh	
+/zh/buy/	zh	docs/zh/buy/index.html	p-buy	tools/build_shop.py buy_page() + assets/shop.js				LINE 联系我们	https://line.me/R/ti/p/@964yxgnk	noindex	/zh/buy/	de,en,my,th,zh	
+/zh/care/	zh	docs/zh/care/index.html	p-cat	tools/build_shop.py category()	care	category		购买	/zh/buy/?c=retire	yes	/zh/care/	de,en,my,th,zh	
+/zh/care/accident/	zh	docs/zh/care/accident/index.html	p-m	tools/build_minisites.py	accident	card	buy	购买	/zh/buy/?c=accident	yes	/zh/care/accident/	de,en,my,th,zh	
+/zh/care/blood/	zh	docs/zh/care/blood/index.html	p-m	tools/build_minisites.py	blood	card	buy	购买	/zh/buy/?c=blood	yes	/zh/care/blood/	de,en,my,th,zh	
+/zh/care/care-visits/	zh	docs/zh/care/care-visits/index.html	p-m	tools/build_minisites.py	care-visits	card	buy	购买	/zh/buy/?c=care-visits	yes	/zh/care/care-visits/	de,en,my,th,zh	
+/zh/care/clean-air/	zh	docs/zh/care/clean-air/index.html	p-m	tools/build_minisites.py	clean-air	card	buy	购买	/zh/buy/?c=clean-air	yes	/zh/care/clean-air/	de,en,my,th,zh	
+/zh/care/death-help/	zh	docs/zh/care/death-help/index.html	p-m	tools/build_minisites.py	death-help	card	buy	购买	/zh/buy/?c=death-help	yes	/zh/care/death-help/	de,en,my,th,zh	
+/zh/care/elder-care/	zh	docs/zh/care/elder-care/index.html	p-m	tools/build_minisites.py	elder-care	card	buy	购买	/zh/buy/?c=elder-care	yes	/zh/care/elder-care/	de,en,my,th,zh	
+/zh/care/lab-test/	zh	docs/zh/care/lab-test/index.html	p-m	tools/build_minisites.py	lab-test	card	buy	购买	/zh/buy/?c=lab-test	yes	/zh/care/lab-test/	de,en,my,th,zh	
+/zh/care/retire/	zh	docs/zh/care/retire/index.html	p-m	tools/build_minisites.py	retire	card	buy	购买	/zh/buy/?c=retire	yes	/zh/care/retire/	de,en,my,th,zh	
+/zh/care/specialist/	zh	docs/zh/care/specialist/index.html	p-m	tools/build_minisites.py	specialist	card	buy	购买	/zh/buy/?c=specialist	yes	/zh/care/specialist/	de,en,my,th,zh	
+/zh/charity/	zh	docs/zh/charity/index.html	p-cat	tools/build_shop.py category()	charity	category		购买	/zh/buy/?c=giving	yes	/zh/charity/	de,en,my,th,zh	
+/zh/charity/checkin/	zh	docs/zh/charity/checkin/index.html	p-m	tools/build_minisites.py	checkin	card	buy	购买	/zh/buy/?c=checkin	yes	/zh/charity/checkin/	de,en,my,th,zh	
+/zh/charity/club-desk/	zh	docs/zh/charity/club-desk/index.html	p-m	tools/build_minisites.py	club-desk	card	buy	购买	/zh/buy/?c=club-desk	yes	/zh/charity/club-desk/	de,en,my,th,zh	
+/zh/charity/event-kit/	zh	docs/zh/charity/event-kit/index.html	p-m	tools/build_minisites.py	event-kit	card	buy	购买	/zh/buy/?c=event-kit	yes	/zh/charity/event-kit/	de,en,my,th,zh	
+/zh/charity/findable/	zh	docs/zh/charity/findable/index.html	p-m	tools/build_minisites.py	findable	card	buy	购买	/zh/buy/?c=findable	yes	/zh/charity/findable/	de,en,my,th,zh	
+/zh/charity/giving/	zh	docs/zh/charity/giving/index.html	p-m	tools/build_minisites.py	giving	card	buy	购买	/zh/buy/?c=giving	yes	/zh/charity/giving/	de,en,my,th,zh	
+/zh/charity/grants/	zh	docs/zh/charity/grants/index.html	p-m	tools/build_minisites.py	grants	card	buy	购买	/zh/buy/?c=grants	yes	/zh/charity/grants/	de,en,my,th,zh	
+/zh/charity/line-memory/	zh	docs/zh/charity/line-memory/index.html	p-m	tools/build_minisites.py	line-memory	card	buy	购买	/zh/buy/?c=line-memory	yes	/zh/charity/line-memory/	de,en,my,th,zh	
+/zh/charity/map-archive/	zh	docs/zh/charity/map-archive/index.html	p-m	tools/build_minisites.py	map-archive	card	buy	购买	/zh/buy/?c=map-archive	yes	/zh/charity/map-archive/	de,en,my,th,zh	
+/zh/charity/photo-proof/	zh	docs/zh/charity/photo-proof/index.html	p-m	tools/build_minisites.py	photo-proof	card	buy	购买	/zh/buy/?c=photo-proof	yes	/zh/charity/photo-proof/	de,en,my,th,zh	
+/zh/data/	zh	docs/zh/data/index.html	p-cat	tools/build_shop.py category()	data	category		购买	/zh/buy/?c=data-crawl	yes	/zh/data/	de,en,my,th,zh	
+/zh/data/data-crawl/	zh	docs/zh/data/data-crawl/index.html	p-m	tools/build_minisites.py	data-crawl	card	buy	购买	/zh/buy/?c=data-crawl	yes	/zh/data/data-crawl/	de,en,my,th,zh	
+/zh/data/leads/	zh	docs/zh/data/leads/index.html	p-m	tools/build_minisites.py	leads	card	buy	购买	/zh/buy/?c=leads	yes	/zh/data/leads/	de,en,my,th,zh	
+/zh/data/price-watch/	zh	docs/zh/data/price-watch/index.html	p-m	tools/build_minisites.py	price-watch	card	buy	购买	/zh/buy/?c=price-watch	yes	/zh/data/price-watch/	de,en,my,th,zh	
+/zh/data/research/	zh	docs/zh/data/research/index.html	p-m	tools/build_minisites.py	research	card	buy	购买	/zh/buy/?c=research	yes	/zh/data/research/	de,en,my,th,zh	
+/zh/data/street-survey/	zh	docs/zh/data/street-survey/index.html	p-m	tools/build_minisites.py	street-survey	card	buy	购买	/zh/buy/?c=street-survey	yes	/zh/data/street-survey/	de,en,my,th,zh	
+/zh/data/traffic/	zh	docs/zh/data/traffic/index.html	p-m	tools/build_minisites.py	traffic	card	buy	购买	/zh/buy/?c=traffic	yes	/zh/data/traffic/	de,en,my,th,zh	
+/zh/design/	zh	docs/zh/design/index.html	p-cat	tools/build_shop.py category()	design	category		购买	/zh/buy/?c=awards	yes	/zh/design/	de,en,my,th,zh	
+/zh/design/article/	zh	docs/zh/design/article/index.html	p-m	tools/build_minisites.py	article	card	buy	购买	/zh/buy/?c=article	yes	/zh/design/article/	de,en,my,th,zh	
+/zh/design/awards/	zh	docs/zh/design/awards/index.html	p-m	tools/build_minisites.py	awards	card	buy	购买	/zh/buy/?c=awards	yes	/zh/design/awards/	de,en,my,th,zh	
+/zh/design/cartoons/	zh	docs/zh/design/cartoons/index.html	p-m	tools/build_minisites.py	cartoons	card	buy	购买	/zh/buy/?c=cartoons	yes	/zh/design/cartoons/	de,en,my,th,zh	
+/zh/design/copy/	zh	docs/zh/design/copy/index.html	p-m	tools/build_minisites.py	copy	card	buy	购买	/zh/buy/?c=copy	yes	/zh/design/copy/	de,en,my,th,zh	
+/zh/design/decks/	zh	docs/zh/design/decks/index.html	p-m	tools/build_minisites.py	decks	card	buy	购买	/zh/buy/?c=decks	yes	/zh/design/decks/	de,en,my,th,zh	
+/zh/design/drawn/	zh	docs/zh/design/drawn/index.html	p-m	tools/build_minisites.py	drawn	card	buy	购买	/zh/buy/?c=drawn	yes	/zh/design/drawn/	de,en,my,th,zh	
+/zh/design/graphics/	zh	docs/zh/design/graphics/index.html	p-m	tools/build_minisites.py	graphics	card	buy	购买	/zh/buy/?c=graphics	yes	/zh/design/graphics/	de,en,my,th,zh	
+/zh/design/interactive/	zh	docs/zh/design/interactive/index.html	p-m	tools/build_minisites.py	interactive	card	buy	购买	/zh/buy/?c=interactive	yes	/zh/design/interactive/	de,en,my,th,zh	
+/zh/design/interview/	zh	docs/zh/design/interview/index.html	p-m	tools/build_minisites.py	interview	card	buy	购买	/zh/buy/?c=interview	yes	/zh/design/interview/	de,en,my,th,zh	
+/zh/design/newsletter/	zh	docs/zh/design/newsletter/index.html	p-m	tools/build_minisites.py	newsletter	card	buy	购买	/zh/buy/?c=newsletter	yes	/zh/design/newsletter/	de,en,my,th,zh	
+/zh/design/patterns/	zh	docs/zh/design/patterns/index.html	p-m	tools/build_minisites.py	patterns	card	buy	购买	/zh/buy/?c=patterns	yes	/zh/design/patterns/	de,en,my,th,zh	
+/zh/design/proposal/	zh	docs/zh/design/proposal/index.html	p-m	tools/build_minisites.py	proposal	card	buy	购买	/zh/buy/?c=proposal	yes	/zh/design/proposal/	de,en,my,th,zh	
+/zh/design/social/	zh	docs/zh/design/social/index.html	p-m	tools/build_minisites.py	social	card	buy	购买	/zh/buy/?c=social	yes	/zh/design/social/	de,en,my,th,zh	
+/zh/design/video/	zh	docs/zh/design/video/index.html	p-m	tools/build_minisites.py	video	card	buy	购买	/zh/buy/?c=video	yes	/zh/design/video/	de,en,my,th,zh	
+/zh/fix/	zh	docs/zh/fix/index.html	p-cat	tools/build_shop.py category()	fix	category		预订	/php/	yes	/zh/fix/	de,en,my,th,zh	
+/zh/fix/app-test/	zh	docs/zh/fix/app-test/index.html	p-m	tools/build_minisites.py	app-test	card	buy	购买	/zh/buy/?c=app-test	yes	/zh/fix/app-test/	de,en,my,th,zh	
+/zh/fix/mirror/	zh	docs/zh/fix/mirror/index.html	p-m	tools/build_minisites.py	mirror	card	buy	购买	/zh/buy/?c=mirror	yes	/zh/fix/mirror/	de,en,my,th,zh	
+/zh/fix/sec-hacked/	zh	docs/zh/fix/sec-hacked/index.html	p-m	tools/build_minisites.py	sec-hacked	card	buy	购买	/zh/buy/?c=sec-hacked	yes	/zh/fix/sec-hacked/	de,en,my,th,zh	
+/zh/fix/sec-mail/	zh	docs/zh/fix/sec-mail/index.html	p-m	tools/build_minisites.py	sec-mail	card	buy	购买	/zh/buy/?c=sec-mail	yes	/zh/fix/sec-mail/	de,en,my,th,zh	
+/zh/help/	zh	docs/zh/help/index.html	p-cat	tools/build_shop.py category()	help	category		购买	/zh/buy/?c=thai-plan	yes	/zh/help/	de,en,my,th,zh	
+/zh/help/call/	zh	docs/zh/help/call/index.html	p-m	tools/build_minisites.py	call	card	buy	购买	/zh/buy/?c=call	yes	/zh/help/call/	de,en,my,th,zh	
+/zh/help/compare/	zh	docs/zh/help/compare/index.html	p-m	tools/build_minisites.py	compare	card	buy	购买	/zh/buy/?c=compare	yes	/zh/help/compare/	de,en,my,th,zh	
+/zh/help/dispute/	zh	docs/zh/help/dispute/index.html	p-m	tools/build_minisites.py	dispute	card	buy	购买	/zh/buy/?c=dispute	yes	/zh/help/dispute/	de,en,my,th,zh	
+/zh/help/errand/	zh	docs/zh/help/errand/index.html	p-m	tools/build_minisites.py	errand	card	buy	购买	/zh/buy/?c=errand	yes	/zh/help/errand/	de,en,my,th,zh	
+/zh/help/form/	zh	docs/zh/help/form/index.html	p-m	tools/build_minisites.py	form	card	buy	购买	/zh/buy/?c=form	yes	/zh/help/form/	de,en,my,th,zh	
+/zh/help/idme/	zh	docs/zh/help/idme/index.html	p-m	tools/build_minisites.py	idme	card	buy	购买	/zh/buy/?c=idme	yes	/zh/help/idme/	de,en,my,th,zh	
+/zh/help/legalise/	zh	docs/zh/help/legalise/index.html	p-m	tools/build_minisites.py	legalise	card	buy	购买	/zh/buy/?c=legalise	yes	/zh/help/legalise/	de,en,my,th,zh	
+/zh/help/thai-plan/	zh	docs/zh/help/thai-plan/index.html	p-m	tools/build_minisites.py	thai-plan	card	buy	购买	/zh/buy/?c=thai-plan	yes	/zh/help/thai-plan/	de,en,my,th,zh	
+/zh/help/there/	zh	docs/zh/help/there/index.html	p-m	tools/build_minisites.py	there	card	buy	购买	/zh/buy/?c=there	yes	/zh/help/there/	de,en,my,th,zh	
+/zh/help/trades/	zh	docs/zh/help/trades/index.html	p-m	tools/build_minisites.py	trades	card	buy	购买	/zh/buy/?c=trades	yes	/zh/help/trades/	de,en,my,th,zh	
+/zh/help/vehicle/	zh	docs/zh/help/vehicle/index.html	p-m	tools/build_minisites.py	vehicle	card	buy	购买	/zh/buy/?c=vehicle	yes	/zh/help/vehicle/	de,en,my,th,zh	
+/zh/luck/	zh	docs/zh/luck/index.html	p-cat	tools/build_shop.py category()	luck	category		购买	/zh/buy/?c=date-pick	yes	/zh/luck/	de,en,my,th,zh	
+/zh/luck/almanac-widget/	zh	docs/zh/luck/almanac-widget/index.html	p-m	tools/build_minisites.py	almanac-widget	card	buy	购买	/zh/buy/?c=almanac-widget	yes	/zh/luck/almanac-widget/	de,en,my,th,zh	
+/zh/luck/amulet/	zh	docs/zh/luck/amulet/index.html	p-m	tools/build_minisites.py	amulet	card	buy	购买	/zh/buy/?c=amulet	yes	/zh/luck/amulet/	de,en,my,th,zh	
+/zh/luck/bazi/	zh	docs/zh/luck/bazi/index.html	p-m	tools/build_minisites.py	bazi	card	buy	购买	/zh/buy/?c=bazi	yes	/zh/luck/bazi/	de,en,my,th,zh	
+/zh/luck/date-pick/	zh	docs/zh/luck/date-pick/index.html	p-m	tools/build_minisites.py	date-pick	card	buy	购买	/zh/buy/?c=date-pick	yes	/zh/luck/date-pick/	de,en,my,th,zh	
+/zh/luck/eink-clock/	zh	docs/zh/luck/eink-clock/index.html	p-m	tools/build_minisites.py	eink-clock	card	buy	购买	/zh/buy/?c=eink-clock	yes	/zh/luck/eink-clock/	de,en,my,th,zh	
+/zh/luck/lucky-number/	zh	docs/zh/luck/lucky-number/index.html	p-m	tools/build_minisites.py	lucky-number	card	buy	购买	/zh/buy/?c=lucky-number	yes	/zh/luck/lucky-number/	de,en,my,th,zh	
+/zh/luck/name-charm/	zh	docs/zh/luck/name-charm/index.html	p-m	tools/build_minisites.py	name-charm	card	buy	购买	/zh/buy/?c=name-charm	yes	/zh/luck/name-charm/	de,en,my,th,zh	
+/zh/luck/name-pick/	zh	docs/zh/luck/name-pick/index.html	p-m	tools/build_minisites.py	name-pick	card	buy	购买	/zh/buy/?c=name-pick	yes	/zh/luck/name-pick/	de,en,my,th,zh	
+/zh/luck/pha-yant/	zh	docs/zh/luck/pha-yant/index.html	p-m	tools/build_minisites.py	pha-yant	card	buy	购买	/zh/buy/?c=pha-yant	yes	/zh/luck/pha-yant/	de,en,my,th,zh	
+/zh/luck/reading/	zh	docs/zh/luck/reading/index.html	p-m	tools/build_minisites.py	reading	card	buy	购买	/zh/buy/?c=reading	yes	/zh/luck/reading/	de,en,my,th,zh	
+/zh/luck/sak-yant/	zh	docs/zh/luck/sak-yant/index.html	p-m	tools/build_minisites.py	sak-yant	card	buy	购买	/zh/buy/?c=sak-yant	yes	/zh/luck/sak-yant/	de,en,my,th,zh	
+/zh/merit/	zh	docs/zh/merit/index.html	p-cat	tools/build_shop.py category()	merit	category		购买	/zh/buy/?c=merit-dead	yes	/zh/merit/	de,en,my,th,zh	
+/zh/merit/house-blessing/	zh	docs/zh/merit/house-blessing/index.html	p-m	tools/build_minisites.py	house-blessing	card	buy	购买	/zh/buy/?c=house-blessing	yes	/zh/merit/house-blessing/	de,en,my,th,zh	
+/zh/merit/lanna-wedding/	zh	docs/zh/merit/lanna-wedding/index.html	p-m	tools/build_minisites.py	lanna-wedding	card	buy	购买	/zh/buy/?c=lanna-wedding	yes	/zh/merit/lanna-wedding/	de,en,my,th,zh	
+/zh/merit/merit-dead/	zh	docs/zh/merit/merit-dead/index.html	p-m	tools/build_minisites.py	merit-dead	card	buy	购买	/zh/buy/?c=merit-dead	yes	/zh/merit/merit-dead/	de,en,my,th,zh	
+/zh/merit/merit-you/	zh	docs/zh/merit/merit-you/index.html	p-m	tools/build_minisites.py	merit-you	card	buy	购买	/zh/buy/?c=merit-you	yes	/zh/merit/merit-you/	de,en,my,th,zh	
+/zh/merit/spirit-house/	zh	docs/zh/merit/spirit-house/index.html	p-m	tools/build_minisites.py	spirit-house	card	buy	购买	/zh/buy/?c=spirit-house	yes	/zh/merit/spirit-house/	de,en,my,th,zh	
+/zh/merit/su-khwan/	zh	docs/zh/merit/su-khwan/index.html	p-m	tools/build_minisites.py	su-khwan	card	buy	购买	/zh/buy/?c=su-khwan	yes	/zh/merit/su-khwan/	de,en,my,th,zh	
+/zh/money/	zh	docs/zh/money/index.html	p-cat	tools/build_shop.py category()	money	category		购买	/zh/buy/?c=merchant	yes	/zh/money/	de,en,my,th,zh	
+/zh/money/bank-account/	zh	docs/zh/money/bank-account/index.html	p-m	tools/build_minisites.py	bank-account	card	buy	购买	/zh/buy/?c=bank-account	yes	/zh/money/bank-account/	de,en,my,th,zh	
+/zh/money/books/	zh	docs/zh/money/books/index.html	p-m	tools/build_minisites.py	books	card	buy	购买	/zh/buy/?c=books	yes	/zh/money/books/	de,en,my,th,zh	
+/zh/money/exchange/	zh	docs/zh/money/exchange/index.html	p-m	tools/build_minisites.py	exchange	card	buy	购买	/zh/buy/?c=exchange	yes	/zh/money/exchange/	de,en,my,th,zh	
+/zh/money/invoice/	zh	docs/zh/money/invoice/index.html	p-m	tools/build_minisites.py	invoice	card	buy	购买	/zh/buy/?c=invoice	yes	/zh/money/invoice/	de,en,my,th,zh	
+/zh/money/kh-books/	zh	docs/zh/money/kh-books/index.html	p-m	tools/build_minisites.py	kh-books	card	buy	购买	/zh/buy/?c=kh-books	yes	/zh/money/kh-books/	de,en,my,th,zh	
+/zh/money/merchant/	zh	docs/zh/money/merchant/index.html	p-m	tools/build_minisites.py	merchant	card	buy	购买	/zh/buy/?c=merchant	yes	/zh/money/merchant/	de,en,my,th,zh	
+/zh/money/payouts/	zh	docs/zh/money/payouts/index.html	p-m	tools/build_minisites.py	payouts	card	buy	购买	/zh/buy/?c=payouts	yes	/zh/money/payouts/	de,en,my,th,zh	
+/zh/money/staff-papers/	zh	docs/zh/money/staff-papers/index.html	p-m	tools/build_minisites.py	staff-papers	card	buy	购买	/zh/buy/?c=staff-papers	yes	/zh/money/staff-papers/	de,en,my,th,zh	
+/zh/moving/	zh	docs/zh/moving/index.html	p-cat	tools/build_shop.py category()	moving	category		购买	/zh/buy/?c=move	yes	/zh/moving/	de,en,my,th,zh	
+/zh/moving/luggage/	zh	docs/zh/moving/luggage/index.html	p-m	tools/build_minisites.py	luggage	card	buy	购买	/zh/buy/?c=luggage	yes	/zh/moving/luggage/	de,en,my,th,zh	
+/zh/moving/move/	zh	docs/zh/moving/move/index.html	p-m	tools/build_minisites.py	move	card	buy	购买	/zh/buy/?c=move	yes	/zh/moving/move/	de,en,my,th,zh	
+/zh/outsource/	zh	docs/zh/outsource/index.html	p-cat	tools/build_shop.py category()	outsource	category		购买	/zh/buy/?c=voice	yes	/zh/outsource/	de,en,my,th,zh	
+/zh/outsource/assistant/	zh	docs/zh/outsource/assistant/index.html	p-m	tools/build_minisites.py	assistant	card	buy	购买	/zh/buy/?c=assistant	yes	/zh/outsource/assistant/	de,en,my,th,zh	
+/zh/outsource/calls-out/	zh	docs/zh/outsource/calls-out/index.html	p-m	tools/build_minisites.py	calls-out	card	buy	购买	/zh/buy/?c=calls-out	yes	/zh/outsource/calls-out/	de,en,my,th,zh	
+/zh/outsource/cs-desk/	zh	docs/zh/outsource/cs-desk/index.html	p-m	tools/build_minisites.py	cs-desk	card	buy	购买	/zh/buy/?c=cs-desk	yes	/zh/outsource/cs-desk/	de,en,my,th,zh	
+/zh/outsource/subtitles/	zh	docs/zh/outsource/subtitles/index.html	p-m	tools/build_minisites.py	subtitles	card	buy	购买	/zh/buy/?c=subtitles	yes	/zh/outsource/subtitles/	de,en,my,th,zh	
+/zh/outsource/typing/	zh	docs/zh/outsource/typing/index.html	p-m	tools/build_minisites.py	typing	card	buy	购买	/zh/buy/?c=typing	yes	/zh/outsource/typing/	de,en,my,th,zh	
+/zh/outsource/voice/	zh	docs/zh/outsource/voice/index.html	p-m	tools/build_minisites.py	voice	card	buy	购买	/zh/buy/?c=voice	yes	/zh/outsource/voice/	de,en,my,th,zh	
+/zh/questions/	zh	docs/zh/questions/index.html	-	tools/build_questions.py				LINE 联系我们	https://line.me/R/ti/p/@964yxgnk	yes	/zh/questions/	de,en,my,th,zh	
+/zh/ship/	zh	docs/zh/ship/index.html	p-cat	tools/build_shop.py category()	ship	category		购买	/zh/buy/?c=partner	yes	/zh/ship/	de,en,my,th,zh	
+/zh/ship/partner/	zh	docs/zh/ship/partner/index.html	p-m	tools/build_minisites.py	partner	card	buy	购买	/zh/buy/?c=partner	yes	/zh/ship/partner/	de,en,my,th,zh	
+/zh/shop/	zh	docs/zh/shop/index.html	p-cat	tools/build_shop.py category()	shop	category		购买	/zh/buy/?c=online-shop	yes	/zh/shop/	de,en,my,th,zh	
+/zh/shop/ads-run/	zh	docs/zh/shop/ads-run/index.html	p-m	tools/build_minisites.py	ads-run	card	buy	购买	/zh/buy/?c=ads-run	yes	/zh/shop/ads-run/	de,en,my,th,zh	
+/zh/shop/etsy/	zh	docs/zh/shop/etsy/index.html	p-m	tools/build_minisites.py	etsy	card	buy	购买	/zh/buy/?c=etsy	yes	/zh/shop/etsy/	de,en,my,th,zh	
+/zh/shop/fb-care/	zh	docs/zh/shop/fb-care/index.html	p-m	tools/build_minisites.py	fb-care	card	buy	购买	/zh/buy/?c=fb-care	yes	/zh/shop/fb-care/	de,en,my,th,zh	
+/zh/shop/grab/	zh	docs/zh/shop/grab/index.html	p-m	tools/build_minisites.py	grab	card	buy	购买	/zh/buy/?c=grab	yes	/zh/shop/grab/	de,en,my,th,zh	
+/zh/shop/online-shop/	zh	docs/zh/shop/online-shop/index.html	p-m	tools/build_minisites.py	online-shop	card	buy	购买	/zh/buy/?c=online-shop	yes	/zh/shop/online-shop/	de,en,my,th,zh	
+/zh/shop/ordering/	zh	docs/zh/shop/ordering/index.html	p-m	tools/build_minisites.py	ordering	card	buy	购买	/zh/buy/?c=ordering	yes	/zh/shop/ordering/	de,en,my,th,zh	
+/zh/shop/paybox/	zh	docs/zh/shop/paybox/index.html	p-m	tools/build_minisites.py	paybox	card	buy	购买	/zh/buy/?c=paybox	yes	/zh/shop/paybox/	de,en,my,th,zh	
+/zh/shop/print/	zh	docs/zh/shop/print/index.html	p-m	tools/build_minisites.py	print	card	buy	购买	/zh/buy/?c=print	yes	/zh/shop/print/	de,en,my,th,zh	
+/zh/shop/restaurant-desk/	zh	docs/zh/shop/restaurant-desk/index.html	p-m	tools/build_minisites.py	restaurant-desk	card	buy	购买	/zh/buy/?c=restaurant-desk	yes	/zh/shop/restaurant-desk/	de,en,my,th,zh	
+/zh/shop/signs/	zh	docs/zh/shop/signs/index.html	p-m	tools/build_minisites.py	signs	card	buy	购买	/zh/buy/?c=signs	yes	/zh/shop/signs/	de,en,my,th,zh	
+/zh/shop/stall-page/	zh	docs/zh/shop/stall-page/index.html	p-m	tools/build_minisites.py	stall-page	card	buy	购买	/zh/buy/?c=stall-page	yes	/zh/shop/stall-page/	de,en,my,th,zh	
+/zh/shop/trade-photos/	zh	docs/zh/shop/trade-photos/index.html	p-m	tools/build_minisites.py	trade-photos	card	buy	购买	/zh/buy/?c=trade-photos	yes	/zh/shop/trade-photos/	de,en,my,th,zh	
+/zh/software/	zh	docs/zh/software/index.html	p-soft	tools/build_arrange.py software				看看怎么用 (打开 pm.nanobotco.workers.dev（它自己的网站）)	https://pm.nanobotco.workers.dev/about/	yes	/zh/software/	de,en,my,th,zh	
+/zh/stay/	zh	docs/zh/stay/index.html	p-cat	tools/build_shop.py category()	stay	category		购买	/zh/buy/?c=stay-check	yes	/zh/stay/	de,en,my,th,zh	
+/zh/stay/agency-sheet/	zh	docs/zh/stay/agency-sheet/index.html	p-m	tools/build_minisites.py	agency-sheet	card	buy	购买	/zh/buy/?c=agency-sheet	yes	/zh/stay/agency-sheet/	de,en,my,th,zh	
+/zh/stay/npa-homes/	zh	docs/zh/stay/npa-homes/index.html	p-m	tools/build_minisites.py	npa-homes	card	buy	购买	/zh/buy/?c=npa-homes	yes	/zh/stay/npa-homes/	de,en,my,th,zh	
+/zh/stay/rentals/	zh	docs/zh/stay/rentals/index.html	p-m	tools/build_minisites.py	rentals	card	buy	购买	/zh/buy/?c=rentals	yes	/zh/stay/rentals/	de,en,my,th,zh	
+/zh/stay/stay-booking/	zh	docs/zh/stay/stay-booking/index.html	p-m	tools/build_minisites.py	stay-booking	card	buy	购买	/zh/buy/?c=stay-booking	yes	/zh/stay/stay-booking/	de,en,my,th,zh	
+/zh/stay/stay-check/	zh	docs/zh/stay/stay-check/index.html	p-m	tools/build_minisites.py	stay-check	card	buy	购买	/zh/buy/?c=stay-check	yes	/zh/stay/stay-check/	de,en,my,th,zh	
+/zh/stay/stay-rent/	zh	docs/zh/stay/stay-rent/index.html	p-m	tools/build_minisites.py	stay-rent	card	buy	购买	/zh/buy/?c=stay-rent	yes	/zh/stay/stay-rent/	de,en,my,th,zh	
+/zh/studio/	zh	docs/zh/studio/index.html	studio	tools/build_studio.py						yes	/zh/studio/	de,en,my,th,zh	
+/zh/studio/black-swan/	zh	docs/zh/studio/black-swan/index.html	studio	tools/build_studio.py						yes	/zh/studio/black-swan/	de,en,my,th,zh	
+/zh/studio/black-swan/one/	zh	docs/zh/studio/black-swan/one/index.html	studio	tools/build_studio.py						no			
+/zh/studio/crypto-safety/	zh	docs/zh/studio/crypto-safety/index.html	studio	tools/build_studio.py						yes	/zh/studio/crypto-safety/	de,en,my,th,zh	
+/zh/tours/	zh	docs/zh/tours/index.html	p-cat	tools/build_shop.py category()	tours	category		购买	/zh/buy/?c=lantern	yes	/zh/tours/	de,en,my,th,zh	
+/zh/tours/balloon/	zh	docs/zh/tours/balloon/index.html	p-m	tools/build_minisites.py	balloon	card	buy	购买	/zh/buy/?c=balloon	yes	/zh/tours/balloon/	de,en,my,th,zh	
+/zh/tours/car-guide/	zh	docs/zh/tours/car-guide/index.html	p-m	tools/build_minisites.py	car-guide	card	buy	购买	/zh/buy/?c=car-guide	yes	/zh/tours/car-guide/	de,en,my,th,zh	
+/zh/tours/experience/	zh	docs/zh/tours/experience/index.html	p-m	tools/build_minisites.py	experience	card	buy	购买	/zh/buy/?c=experience	yes	/zh/tours/experience/	de,en,my,th,zh	
+/zh/tours/lantern/	zh	docs/zh/tours/lantern/index.html	p-m	tools/build_minisites.py	lantern	card	buy	购买	/zh/buy/?c=lantern	yes	/zh/tours/lantern/	de,en,my,th,zh	
+/zh/tours/tour-3d/	zh	docs/zh/tours/tour-3d/index.html	p-m	tools/build_minisites.py	tour-3d	card	buy	购买	/zh/buy/?c=tour-3d	yes	/zh/tours/tour-3d/	de,en,my,th,zh	
+/zh/tours/tour-day/	zh	docs/zh/tours/tour-day/index.html	p-m	tools/build_minisites.py	tour-day	card	buy	购买	/zh/buy/?c=tour-day	yes	/zh/tours/tour-day/	de,en,my,th,zh	
+/zh/tours/trip-plan/	zh	docs/zh/tours/trip-plan/index.html	p-m	tools/build_minisites.py	trip-plan	card	buy	购买	/zh/buy/?c=trip-plan	yes	/zh/tours/trip-plan/	de,en,my,th,zh	
+/zh/translate/	zh	docs/zh/translate/index.html	p-cat	tools/build_shop.py category()	translate	category		购买	/zh/buy/?c=german	yes	/zh/translate/	de,en,my,th,zh	
+/zh/translate/german/	zh	docs/zh/translate/german/index.html	p-m	tools/build_minisites.py	german	card	buy	购买	/zh/buy/?c=german	yes	/zh/translate/german/	de,en,my,th,zh	
+/zh/translate/interp/	zh	docs/zh/translate/interp/index.html	p-m	tools/build_minisites.py	interp	card	buy	购买	/zh/buy/?c=interp	yes	/zh/translate/interp/	de,en,my,th,zh	
+/zh/translate/lang-leaves/	zh	docs/zh/translate/lang-leaves/index.html	p-m	tools/build_minisites.py	lang-leaves	card	buy	购买	/zh/buy/?c=lang-leaves	yes	/zh/translate/lang-leaves/	de,en,my,th,zh	
+/zh/translate/lang-pages/	zh	docs/zh/translate/lang-pages/index.html	p-m	tools/build_minisites.py	lang-pages	card	buy	购买	/zh/buy/?c=lang-pages	yes	/zh/translate/lang-pages/	de,en,my,th,zh	
+/zh/translate/lang-shan/	zh	docs/zh/translate/lang-shan/index.html	p-m	tools/build_minisites.py	lang-shan	card	buy	购买	/zh/buy/?c=lang-shan	yes	/zh/translate/lang-shan/	de,en,my,th,zh	
+/zh/translate/romanise/	zh	docs/zh/translate/romanise/index.html	p-m	tools/build_minisites.py	romanise	card	buy	购买	/zh/buy/?c=romanise	yes	/zh/translate/romanise/	de,en,my,th,zh	
+/zh/translate/thai-lessons/	zh	docs/zh/translate/thai-lessons/index.html	p-m	tools/build_minisites.py	thai-lessons	card	buy	购买	/zh/buy/?c=thai-lessons	yes	/zh/translate/thai-lessons/	de,en,my,th,zh	
+/zh/translate/translate/	zh	docs/zh/translate/translate/index.html	p-m	tools/build_minisites.py	translate	card	buy	购买	/zh/buy/?c=translate	yes	/zh/translate/translate/	de,en,my,th,zh	
+/zh/visa/	zh	docs/zh/visa/index.html	p-cat	tools/build_shop.py category()	visa	category		前往	https://chiangmaivisadesk.com/	yes	/zh/visa/	de,en,my,th,zh	
+/zh/web/	zh	docs/zh/web/index.html	p-cat	tools/build_shop.py category()	web	category		购买	/zh/buy/?c=web-mail	yes	/zh/web/	de,en,my,th,zh	
+/zh/web/accessible/	zh	docs/zh/web/accessible/index.html	p-m	tools/build_minisites.py	accessible	card	buy	购买	/zh/buy/?c=accessible	yes	/zh/web/accessible/	de,en,my,th,zh	
+/zh/web/app/	zh	docs/zh/web/app/index.html	p-m	tools/build_minisites.py	app	card	buy	购买	/zh/buy/?c=app	yes	/zh/web/app/	de,en,my,th,zh	
+/zh/web/directory/	zh	docs/zh/web/directory/index.html	p-m	tools/build_minisites.py	directory	card	buy	购买	/zh/buy/?c=directory	yes	/zh/web/directory/	de,en,my,th,zh	
+/zh/web/guide-site/	zh	docs/zh/web/guide-site/index.html	p-m	tools/build_minisites.py	guide-site	card	buy	购买	/zh/buy/?c=guide-site	yes	/zh/web/guide-site/	de,en,my,th,zh	
+/zh/web/help-page/	zh	docs/zh/web/help-page/index.html	p-m	tools/build_minisites.py	help-page	card	buy	购买	/zh/buy/?c=help-page	yes	/zh/web/help-page/	de,en,my,th,zh	
+/zh/web/site/	zh	docs/zh/web/site/index.html	p-m	tools/build_minisites.py	site	card	buy	购买	/zh/buy/?c=site	yes	/zh/web/site/	de,en,my,th,zh	
+/zh/web/tap-card/	zh	docs/zh/web/tap-card/index.html	p-m	tools/build_minisites.py	tap-card	card	buy	购买	/zh/buy/?c=tap-card	yes	/zh/web/tap-card/	de,en,my,th,zh	
+/zh/web/vibe/	zh	docs/zh/web/vibe/index.html	p-m	tools/build_minisites.py	vibe	card	buy	购买	/zh/buy/?c=vibe	yes	/zh/web/vibe/	de,en,my,th,zh	
+/zh/web/web-care/	zh	docs/zh/web/web-care/index.html	p-m	tools/build_minisites.py	web-care	card	buy	购买	/zh/buy/?c=web-care	yes	/zh/web/web-care/	de,en,my,th,zh	
+/zh/web/web-dns/	zh	docs/zh/web/web-dns/index.html	p-m	tools/build_minisites.py	web-dns	card	buy	购买	/zh/buy/?c=web-dns	yes	/zh/web/web-dns/	de,en,my,th,zh	
+/zh/web/web-found/	zh	docs/zh/web/web-found/index.html	p-m	tools/build_minisites.py	web-found	card	buy	购买	/zh/buy/?c=web-found	yes	/zh/web/web-found/	de,en,my,th,zh	
+/zh/web/web-license/	zh	docs/zh/web/web-license/index.html	p-m	tools/build_minisites.py	web-license	card	buy	购买	/zh/buy/?c=web-license	yes	/zh/web/web-license/	de,en,my,th,zh	
+/zh/web/web-line/	zh	docs/zh/web/web-line/index.html	p-m	tools/build_minisites.py	web-line	card	buy	购买	/zh/buy/?c=web-line	yes	/zh/web/web-line/	de,en,my,th,zh	
+/zh/web/web-mail/	zh	docs/zh/web/web-mail/index.html	p-m	tools/build_minisites.py	web-mail	card	buy	购买	/zh/buy/?c=web-mail	yes	/zh/web/web-mail/	de,en,my,th,zh	
+/zh/web/web-move/	zh	docs/zh/web/web-move/index.html	p-m	tools/build_minisites.py	web-move	card	buy	购买	/zh/buy/?c=web-move	yes	/zh/web/web-move/	de,en,my,th,zh	
+/zh/web/web-search/	zh	docs/zh/web/web-search/index.html	p-m	tools/build_minisites.py	web-search	card	buy	购买	/zh/buy/?c=web-search	yes	/zh/web/web-search/	de,en,my,th,zh	
+/zh/web/web-sharecard/	zh	docs/zh/web/web-sharecard/index.html	p-m	tools/build_minisites.py	web-sharecard	card	buy	购买	/zh/buy/?c=web-sharecard	yes	/zh/web/web-sharecard/	de,en,my,th,zh	
+/zh/web/widget/	zh	docs/zh/web/widget/index.html	p-m	tools/build_minisites.py	widget	card	buy	购买	/zh/buy/?c=widget	yes	/zh/web/widget/	de,en,my,th,zh	
+/zh/web/wp-api/	zh	docs/zh/web/wp-api/index.html	p-m	tools/build_minisites.py	wp-api	card	buy	购买	/zh/buy/?c=wp-api	yes	/zh/web/wp-api/	de,en,my,th,zh	
+/zh/weddings/	zh	docs/zh/weddings/index.html	p-cat	tools/build_shop.py category()	weddings	category		购买	/zh/buy/?c=event-page	yes	/zh/weddings/	de,en,my,th,zh	
+/zh/weddings/bride/	zh	docs/zh/weddings/bride/index.html	p-m	tools/build_minisites.py	bride	card	buy	购买	/zh/buy/?c=bride	yes	/zh/weddings/bride/	de,en,my,th,zh	
+/zh/weddings/event-page/	zh	docs/zh/weddings/event-page/index.html	p-m	tools/build_minisites.py	event-page	card	buy	购买	/zh/buy/?c=event-page	yes	/zh/weddings/event-page/	de,en,my,th,zh	
+/zh/weddings/event-plan/	zh	docs/zh/weddings/event-plan/index.html	p-m	tools/build_minisites.py	event-plan	card	buy	购买	/zh/buy/?c=event-plan	yes	/zh/weddings/event-plan/	de,en,my,th,zh	
+/zh/weddings/tribute/	zh	docs/zh/weddings/tribute/index.html	p-m	tools/build_minisites.py	tribute	card	buy	购买	/zh/buy/?c=tribute	yes	/zh/weddings/tribute/	de,en,my,th,zh	
+/zh/weddings/wedding/	zh	docs/zh/weddings/wedding/index.html	p-m	tools/build_minisites.py	wedding	card	buy	购买	/zh/buy/?c=wedding	yes	/zh/weddings/wedding/	de,en,my,th,zh	

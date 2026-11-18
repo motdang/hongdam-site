@@ -1,0 +1,22 @@
+route	file	what
+/api/agree	functions/api/agree.js	GET    /api/agree?slug=…                     {ok, signed, name, title, at} POST   /api/agree {slug, name, title, agree=yes}   signs the agre
+/api/bots/*	functions/api/bots/[[path]].js	/api/bots — purchases and Shoup prices for hongdam.net/bots (and its copies on GitHub Pages).  GET  /api/bots                       prices n
+/api/buy/*	functions/api/buy/[[path]].js	/api/buy — orders from the Buy button on hongdam.net's service cards.  GET  /api/buy                                               {slip: tr
+/api/contact	functions/api/contact.js	POST /api/contact — relays the order form on hongdam.net/ (and /th/, /translation/), the Ask page and the request form on each job page (/ar
+/api/fx	functions/api/fx.js	GET /api/fx — baht per US dollar and per euro, for the ฿ / $ / € switch (docs/assets/cur.js). {base: "THB", rates: {USD, EUR}, at, src, stal
+/api/github/*	functions/api/github/[[path]].js	/api/github — bookings and Shoup prices for hongdam.net/github.  GET  /api/github                      prices now, slots this week, the walk
+/api/hit/*	functions/api/hit/[[path]].js	/api/hit — what people do on hongdam.net's pages, for Nan's /stats/ page.  POST /api/hit {s, ev: [{k, p, l, d, n, r, w}]}   from /assets/hd.
+/api/order	functions/api/order.js	POST /api/order — relays an order from hongdam.net/cyber-awards to Beer.  The page builds the order text itself; this endpoint caps it, tags
+/api/page/*	functions/api/page/[[path]].js	Words a page's owner changes on the page itself (the /for/ demos).  GET  /api/page/:page                      {edits: {lang: {key: text}}} P
+/api/pay/invoice	functions/api/pay/invoice.js	GET  /api/pay/invoice?slug=…   is the slip check on for this invoice POST /api/pay/invoice {slug, slip}   asks SlipOK about the slip, for th
+/api/pay/verify	functions/api/pay/verify.js	GET/POST /api/pay/verify — the translation payment box's slip check (nanobotco-pay, Nan 2026-10-12). Secrets on the Pages project: SLIPOK_KE
+/api/php/*	functions/api/php/[[path]].js	/api/php — bookings and Shoup prices for hongdam.net/php (PHP fix after PHP2Shell).  GET  /api/php                                         p
+/api/rate	functions/api/rate.js	/api/rate — "How is this translation?" on hongdam.net's Burmese and Chinese pages (her word 2026-10-24: "publish now with a 'rate my transla
+/api/redteam	functions/api/redteam.js	POST /api/redteam — runs a batch of probes from one pack against a bot the visitor describes by its system prompt.  Body: { pack, probes: [i
+/api/services/*	functions/api/services/[[path]].js	/api/services — Shoup prices for the services list at hongdam.net/ and /th/.  GET  /api/services                       every walking service
+/api/swan/*	functions/api/swan/[[path]].js	/api/swan — the predictions on hongdam.net/studio/black-swan/ (her ask 2026-10-24: "Give it toys and prediction storage").  POST /api/swan {
+/api/tasks/*	functions/api/tasks/[[path]].js	/api/tasks — the task board for bots and scripts.  GET  /api/tasks[?cat=&src=user|ours|elsewhere]   open tasks POST /api/tasks {title, what,
+/events/	functions/events/index.js	hongdam.net/events — tech and AI events in Chiang Mai and Chiang Rai, rendered on the server from motdang.net/tech/events.json, which motdan
+/swan/:id	functions/swan/[id].js	hongdam.net/swan/<id> — one prediction from Black Swan Event? (functions/api/swan/), with its own link preview: the prediction as the title,
+/swan/	functions/swan/index.js	
+/tasks/*	functions/tasks/[[path]].js	hongdam.net/tasks — the task board, rendered on the server so it reads with no script. /tasks                 post, take, answer /tasks/c/:k

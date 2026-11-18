@@ -1,0 +1,295 @@
+{
+ "taken": "2026-11-18",
+ "source": "GET https://hongdam.net/api/hit/stats?days=30 (hd.js events, people only; browsers driven by test tools are not counted; staff visits are counted)",
+ "from": "2026-10-20",
+ "days": 30,
+ "funnel": {
+  "visits": 141,
+  "tapped": 20,
+  "ordered": 0
+ },
+ "views": 371,
+ "visits_by_day": 151,
+ "langs": [
+  {
+   "l": "en",
+   "views": 344
+  },
+  {
+   "l": "de",
+   "views": 9
+  },
+  {
+   "l": "my",
+   "views": 8
+  },
+  {
+   "l": "th",
+   "views": 7
+  },
+  {
+   "l": "zh",
+   "views": 3
+  }
+ ],
+ "countries": [
+  {
+   "c": "TH",
+   "visits": 119
+  },
+  {
+   "c": "US",
+   "visits": 11
+  },
+  {
+   "c": "SG",
+   "visits": 3
+  },
+  {
+   "c": "MY",
+   "visits": 2
+  },
+  {
+   "c": "LA",
+   "visits": 2
+  },
+  {
+   "c": "PH",
+   "visits": 1
+  },
+  {
+   "c": "MM",
+   "visits": 1
+  },
+  {
+   "c": "GB",
+   "visits": 1
+  },
+  {
+   "c": "AU",
+   "visits": 1
+  }
+ ],
+ "widths": [
+  {
+   "kind": "phone",
+   "visits": 84
+  },
+  {
+   "kind": "computer",
+   "visits": 51
+  },
+  {
+   "kind": "tablet",
+   "visits": 13
+  }
+ ],
+ "pages_top": [
+  {
+   "p": "/",
+   "views": 156,
+   "visits": 84
+  },
+  {
+   "p": "/buy/",
+   "views": 40,
+   "visits": 28
+  },
+  {
+   "p": "/studio/",
+   "views": 18,
+   "visits": 7
+  },
+  {
+   "p": "/for/sallo/",
+   "views": 12,
+   "visits": 10
+  },
+  {
+   "p": "/events",
+   "views": 10,
+   "visits": 5
+  },
+  {
+   "p": "/retreat/",
+   "views": 8,
+   "visits": 2
+  },
+  {
+   "p": "/care/",
+   "views": 8,
+   "visits": 6
+  },
+  {
+   "p": "/studio/dj/",
+   "views": 6,
+   "visits": 2
+  },
+  {
+   "p": "/th/buy/",
+   "views": 5,
+   "visits": 4
+  },
+  {
+   "p": "/help/",
+   "views": 5,
+   "visits": 3
+  },
+  {
+   "p": "/de/",
+   "views": 5,
+   "visits": 4
+  },
+  {
+   "p": "/ask-nan/",
+   "views": 5,
+   "visits": 4
+  },
+  {
+   "p": "/web/",
+   "views": 4,
+   "visits": 4
+  },
+  {
+   "p": "/my/",
+   "views": 4,
+   "visits": 4
+  },
+  {
+   "p": "/ask-nan/should-i-pay-a-bot/",
+   "views": 4,
+   "visits": 3
+  }
+ ],
+ "taps": [
+  {
+   "d": "buy:retire",
+   "times": 4,
+   "visits": 4
+  },
+  {
+   "d": "go:ask-nan:/ask-nan/",
+   "times": 3,
+   "visits": 2
+  },
+  {
+   "d": "buy:merchant",
+   "times": 2,
+   "visits": 2
+  },
+  {
+   "d": "swan:fab",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "go:visas:chiangmaivisadesk.com/",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "go:studio:/de/studio/",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "go:hotelpage:sites.motdang.net/make",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "go:doctor:defiant.to/",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:web-mail",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:voice",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:tour-3d",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:subtitles",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:graphics",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:elder-care",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:awards",
+   "times": 1,
+   "visits": 1
+  },
+  {
+   "d": "buy:assistant",
+   "times": 1,
+   "visits": 1
+  }
+ ],
+ "referrers": [
+  {
+   "r": "lm.facebook.com",
+   "visits": 21
+  },
+  {
+   "r": "facebook.com",
+   "visits": 19
+  },
+  {
+   "r": "teams.public.onecdn.static.microsoft",
+   "visits": 4
+  },
+  {
+   "r": "www.google.com",
+   "visits": 2
+  },
+  {
+   "r": "pm.nanobotco.workers.dev",
+   "visits": 2
+  },
+  {
+   "r": "l.facebook.com",
+   "visits": 2
+  },
+  {
+   "r": "www.facebook.com",
+   "visits": 1
+  },
+  {
+   "r": "m.facebook.com",
+   "visits": 1
+  },
+  {
+   "r": "com.slack",
+   "visits": 1
+  },
+  {
+   "r": "chiangmaivisadesk.com",
+   "visits": 1
+  }
+ ],
+ "searches": 9,
+ "searches_empty": 2,
+ "orders": {
+  "states": [],
+  "recent": []
+ },
+ "rollback": "d9a916556e476de74881819650dbf735040048fa (origin/main before this work)"
+}

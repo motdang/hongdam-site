@@ -1,0 +1,83 @@
+{
+ "pages": 1001,
+ "by_language": {
+  "en": 257,
+  "de": 185,
+  "my": 185,
+  "th": 189,
+  "zh": 185
+ },
+ "by_template": {
+  "tools/build_minisites.py": 755,
+  "tools/build_shop.py category()": 100,
+  "tools/build_studio.py": 49,
+  "tools/build_arrange.py": 25,
+  "tools/build_asknan.py": 16,
+  "docs/for/ (client pages, by hand)": 11,
+  "tools/build_shop.py front()": 5,
+  "tools/build_shop.py ask_page() + assets/shop.js": 5,
+  "tools/pages.py": 5,
+  "tools/build_shop.py buy_page() + assets/shop.js": 5,
+  "tools/build_questions.py": 5,
+  "tools/build_arrange.py software": 5,
+  "tools/build_translation.py": 4,
+  "tools/build_invoice.py": 3,
+  "tools/build_retreat.py": 2,
+  "docs/404.html (the swan game, by hand)": 1,
+  "tools/build_agreement.py": 1,
+  "tools/build_market.py": 1,
+  "tools/build_work.py (data/work.json)": 1,
+  "docs/stats/ (by hand; reads /api/hit)": 1,
+  "tools/build_tasks.py": 1
+ },
+ "service_pages_by_readiness": {
+  "buy": 770,
+  "book": 5,
+  "quote": 5
+ },
+ "sitemap_addresses": 967,
+ "redirects": [
+  "/services / 301",
+  "/services/ / 301"
+ ],
+ "function_routes": 21,
+ "search": {
+  "en": {
+   "cards": 185,
+   "not_in_search": []
+  },
+  "th": {
+   "cards": 185,
+   "not_in_search": []
+  },
+  "my": {
+   "cards": 185,
+   "not_in_search": []
+  },
+  "zh": {
+   "cards": 185,
+   "not_in_search": []
+  },
+  "de": {
+   "cards": 185,
+   "not_in_search": []
+  }
+ },
+ "problems": [],
+ "payment": [
+  "functions/api/buy/[[path]].js (order, PromptPay slip by SlipOK, PayPal card, Lightning, claims, tracker, team moves)",
+  "functions/_shop.js (quote: the total is worked out on the server; half now from ฿10,000 / US$300)",
+  "functions/api/pay/ (invoice and agreement payments)",
+  "functions/_fx.js (฿ / $ / € at the day's rate)"
+ ],
+ "work_queue": [
+  "functions/_wheel.js → Team Wheel Hand out › Orders (pm.nanobotco.workers.dev/api/shop/order)",
+  "functions/_tasks.js tell() → Discord #help-desk when the wheel does not take it",
+  "Resend mail to ORDER_TO / CONTACT_TO"
+ ],
+ "analytics": [
+  "docs/assets/hd.js → /api/hit (functions/api/hit) → /stats/",
+  "functions/_middleware.js → Analytics Engine traffic_eye",
+  "Cloudflare Web Analytics beacon (people only, functions/_middleware.js keepOffBeacon)"
+ ]
+}
