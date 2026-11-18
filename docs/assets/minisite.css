@@ -125,6 +125,7 @@
 .m-costs th, .m-costs td { padding: .7rem 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; font-weight: 400 }
 .m-costs td { width: 45%; padding-left: 1rem; text-align: right; overflow-wrap: anywhere; font-family: var(--font-num); font-variant-numeric: tabular-nums }
 .m-costs td .src { display: block; font-family: var(--sys) }
+.m-costs th .kind { display: block; margin-bottom: .15rem; color: var(--mut); font: 700 .74rem/1.4 var(--sys); letter-spacing: .04em; text-transform: uppercase }
 .p-m .src { white-space: normal } .p-m .src, .m-costs th { overflow-wrap: anywhere }   /* a long source host (digitalagencybangkok.com) wraps instead of widening the page */
 .m-costs tr.ours th, .m-costs tr.ours td { font-weight: 700; border-bottom: 3px solid var(--line) }
 .m-faq details { border-top: 1px solid var(--rule) }

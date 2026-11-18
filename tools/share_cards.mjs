@@ -71,8 +71,21 @@ for(let k=1;k>=.7;k-=.05){set(64*k,40*k,30*k);if(fits())return}})</script>`
 const svcPage = (c) => page(c.n.en, c.n.th || '', c.l.en, pic(c), HUE[c.cat] ?? 32, LOOKS.doors[c.cat] || 'hongsa', c.cat) + FIT
 const ui = SHOP.ui
 const only = process.argv.slice(2)
+// The five job pages and the software page (data/arrange.json, tools/build_arrange.py): docs/og/arrange/<id>.jpg, and
+// the front page's card asks the front page's question. `node tools/share_cards.mjs arrange` draws only these and the front.
+const AR_F = path.join(ROOT, 'data/arrange.json')
+const AR = fs.existsSync(AR_F) ? JSON.parse(fs.readFileSync(AR_F, 'utf8')) : null
+if (!only.length || only.includes('arrange')) {
+  await shoot('front', page('hongdam', 'หงส์ดำ · ' + (AR ? AR.ui.th.h1 : 'เราทำให้'), AR ? AR.ui.en.h1 : ui.en.tagline, LOOKS.master.map((m) => m.db), 32, 'hongsa', 'front'))
+}
+if (AR && (!only.length || only.includes('arrange'))) {
+  const dir = path.join(DOCS, 'og/arrange')
+  fs.mkdirSync(dir, { recursive: true })
+  for (const j of AR.jobs) await shoot(j.id, page(j.n.en, j.n.th, j.l.en, j.pic, HUE[j.line] ?? 32, 'hongsa', 'p-arrange') + FIT, dir)
+  await shoot('software', page(AR.ui.en.softTitle, AR.ui.th.softTitle, AR.ui.en.softL, ['check', 'chat', 'page', 'coin'], HUE.web ?? 258, 'hongsa', 'p-arrange') + FIT, dir)
+  console.log(AR.jobs.length + 1, 'cards in docs/og/arrange/')
+}
 if (!only.length) {
-  await shoot('front', page('hongdam', 'หงส์ดำ · เราทำให้', ui.en.tagline, LOOKS.master.map((m) => m.db), 32, 'hongsa', 'front'))
   for (const cat of SHOP.cats) {
     const first = SHOP.cards.find((c) => c.cat === cat.id)
     await shoot(cat.id, page(cat.n.en, cat.n.th, cat.l.en, first ? pic(first) : LOOKS.master.map((m) => m.db), HUE[cat.id] ?? 32, LOOKS.doors[cat.id] || 'hongsa', cat.id))

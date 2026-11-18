@@ -369,7 +369,10 @@
      "baht": 5000,
      "floor": 3000,
      "ceiling": 10000,
-     "slots": 20
+     "slots": 20,
+     "d_my": "ဆက်သွယ်ရန် လူတစ်ဦး၊ တစ်လလျှင် အကူအညီ ၄ နာရီ၊ သက်တမ်းတိုးရက်တိုင်း မတိုင်မီ သတိပေးချက်။",
+     "d_zh": "一位专人对接，每月 4 小时的帮助，每次续签日期前提醒您。",
+     "d_de": "Eine Ansprechperson, 4 Stunden Hilfe im Monat und eine Erinnerung vor jedem Verlängerungstermin."
     },
     {
      "id": "retire-hour",
@@ -382,7 +385,10 @@
      "baht": 600,
      "floor": 500,
      "ceiling": 1000,
-     "slots": 40
+     "slots": 40,
+     "d_my": "တစ်လ ၄ နာရီ ကျော်လျှင် နာရီအလိုက် ပေးရသည်။",
+     "d_zh": "每月 4 小时用完后，按小时付费。",
+     "d_de": "Nach den vier Stunden im Monat, pro Stunde bezahlt."
     },
     {
      "id": "care-placement",
