@@ -367,11 +367,11 @@
     "de": "Wir organisieren Verpackung, Abholung und Spediteur und nennen Ihnen jeden Kostenpunkt, bevor es losgeht."
    },
    "fee": {
-    "en": "Quoted before we start. Inside Thailand, luggage or a scooter: {p:luggage}, plus the courier at its price. Up to 10 boxes moved abroad: {p:move-boxes}.",
-    "th": "แจ้งราคาก่อนเริ่มงาน ส่งกระเป๋าหรือมอเตอร์ไซค์ในประเทศ: {p:luggage} บวกค่าขนส่งตามจริง ย้ายไม่เกิน 10 กล่องไปต่างประเทศ: {p:move-boxes}",
-    "my": "မစမီ စျေးနှုန်းပြောပါမည်။ ထိုင်းနိုင်ငံအတွင်း ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာ: {p:luggage} နှင့် ပို့ဆောင်ခ အမှန်အတိုင်း။ နိုင်ငံခြားသို့ သေတ္တာ ၁၀ လုံးအထိ: {p:move-boxes}။",
-    "zh": "开始前报价。泰国境内寄行李或摩托车：{p:luggage}，快递费按实际。最多 10 箱寄往国外：{p:move-boxes}。",
-    "de": "Preis vor dem Start. Innerhalb Thailands, Gepäck oder ein Roller: {p:luggage}, dazu der Kurier zu seinem Preis. Bis zu 10 Kisten ins Ausland: {p:move-boxes}."
+    "en": "Quoted before we start. Inside Thailand, luggage or a scooter: {p:luggage}, plus pickup, packing and the courier at the price we pay. Up to 10 boxes moved abroad: {p:move-boxes}.",
+    "th": "แจ้งราคาก่อนเริ่มงาน ส่งกระเป๋าหรือมอเตอร์ไซค์ในประเทศ: {p:luggage} บวกค่ารับของ ค่าแพ็ก และค่าขนส่งตามจริง ย้ายไม่เกิน 10 กล่องไปต่างประเทศ: {p:move-boxes}",
+    "my": "မစမီ စျေးနှုန်းပြောပါမည်။ ထိုင်းနိုင်ငံအတွင်း ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာ: {p:luggage} နှင့် လာယူခ၊ ထုပ်ပိုးခ၊ ပို့ဆောင်ခ အမှန်အတိုင်း။ နိုင်ငံခြားသို့ သေတ္တာ ၁၀ လုံးအထိ: {p:move-boxes}။",
+    "zh": "开始前报价。泰国境内寄行李或摩托车：{p:luggage}，取件、打包和快递费按实付价格。最多 10 箱寄往国外：{p:move-boxes}。",
+    "de": "Preis vor dem Start. Innerhalb Thailands, Gepäck oder ein Roller: {p:luggage}, dazu Abholung, Verpackung und Kurier zu dem Preis, den wir zahlen. Bis zu 10 Kisten ins Ausland: {p:move-boxes}."
    },
    "inc": {
     "en": "Finding and booking the carrier, and the customs form.",
