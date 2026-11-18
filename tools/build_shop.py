@@ -121,7 +121,9 @@ def page_of(c, lang):
 
 # Changes when the shop data or the set of service pages changes, so a phone fetches the new card list.
 import hashlib
-VERSION = hashlib.sha1(json.dumps([SHOP, LIVE, LOOKS, sorted(MINI)], sort_keys=True).encode()).hexdigest()[:8]
+_ARR_F = os.path.join(HERE, "data", "arrange.json")   # the five jobs ride in the search list too (tools/build_arrange.py)
+_ARR_D = json.load(open(_ARR_F, encoding="utf-8")) if os.path.exists(_ARR_F) else None
+VERSION = hashlib.sha1(json.dumps([SHOP, LIVE, LOOKS, sorted(MINI), _ARR_D], sort_keys=True).encode()).hexdigest()[:8]
 _CSS = os.path.join(DOCS, "assets", "shop.css")
 CSS_V = hashlib.sha1(open(_CSS, "rb").read()).hexdigest()[:8] if os.path.exists(_CSS) else "0"
 # shop.js gets its own, so a browser holding yesterday's copy (kept 4 h) fetches the new one at once.
