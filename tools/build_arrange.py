@@ -98,6 +98,18 @@ def job_card(job, lang):
                 job_price(job, lang), E(tr(job["l"], lang)), B.share_btn(lang, to, tr(job["n"], lang)), to, E(ui(lang, "details"))))
 
 
+def search_cards(lang):
+    """The five jobs in the site's search (docs/assets/shop-<lang>.json), first, found by their names in every language
+    and the words customers type (kw: dentist, taxi, plumber, ส่งของ, 代购 …)."""
+    out = []
+    for j in JOBS:
+        words = [j.get("kw", ""), j["id"]] + [tr(j["n"], l) for l in LANGS] + [tr(j["l"], l) for l in LANGS]
+        to = path(lang, j)
+        out.append({"id": "job-" + j["id"], "act": "open", "n": tr(j["n"], lang), "l": tr(j["l"], lang), "ph": job_price(j, lang),
+                    "go": to, "btn": ui(lang, "details"), "kw": " ".join(words).lower(), "page": to, "cat": j["line"], "pic": j["pic"]})
+    return out
+
+
 # ---------------------------------------------------------------- the front page's parts (tools/build_shop.py front())
 
 def hero(lang):
@@ -174,7 +186,7 @@ def head(lang, title, desc, p, og):
 
 def strings(lang):
     """The words arrange.js needs, beside the shop's own (#shop)."""
-    keys = ("gotRef", "notYet", "again", "lineRef", "errSend", "errMail", "sendReq")
+    keys = ("gotRef", "notYet", "again", "lineRef", "errSend", "errMail", "sendReq", "errMissing")
     d = {k: ui(lang, k) for k in keys}
     d["errContact"] = B.SHOP["ui"][lang]["err"]["contact"]
     d["sending"] = B.SHOP["ui"][lang]["sending"]
@@ -192,7 +204,7 @@ def form(job, lang):
         name = 'name="f_%s" data-en="%s"' % (f["k"], E(tr(f["n"], "en")))
         if f.get("t") == "select":
             opts = "".join('<option value="%s">%s</option>' % (E(tr(o, "en")), E(tr(o, lang))) for o in f["o"])
-            out.append('<label class="field">%s<select %s%s><option value="">%s</option>%s</select></label>' % (lab, name, req, E(ui(lang, "pick")), opts))
+            out.append('<label class="field">%s<select %s aria-label="%s"%s><option value="">%s</option>%s</select></label>' % (lab, name, lab, req, E(ui(lang, "pick")), opts))
         elif f.get("t") == "area":
             out.append('<label class="field">%s<textarea %s rows="3" maxlength="600"%s></textarea></label>' % (lab, name, req))
         else:

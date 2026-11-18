@@ -51,7 +51,12 @@ if (f) {
     f.querySelectorAll('[aria-invalid]').forEach((el) => el.removeAttribute('aria-invalid'))
     const miss = fields().filter((el) => el.required && !el.value.trim())
     const contact = f.elements.contact.value.trim(), r = reply()
-    if (miss.length) { miss.forEach((el) => el.setAttribute('aria-invalid', 'true')); miss[0].focus(); return }
+    if (miss.length) {
+      miss.forEach((el) => el.setAttribute('aria-invalid', 'true'))
+      const names = miss.map((el) => (el.closest('label') ? el.closest('label').firstChild.textContent.trim() : el.name))
+      say(`<p>${esc((T.errMissing || '') + ': ' + names.join(', '))}</p>`)
+      miss[0].focus(); return
+    }
     if (contact.length < 3) { f.elements.contact.setAttribute('aria-invalid', 'true'); say(`<p>${esc(T.errContact)}</p>`); f.elements.contact.focus(); return }
     if (r === 'email' && !mailOk(contact)) { f.elements.contact.setAttribute('aria-invalid', 'true'); say(`<p>${esc(T.errMail)}</p>`); f.elements.contact.focus(); return }
     // the request in English labels for the team, whatever the page's language; the answers as typed
@@ -74,7 +79,7 @@ if (f) {
     }
     store(draftKey, null)
     if (window.hd) window.hd('ask', 'job:' + job)
-    say(`<p class="ref">${esc(T.gotRef.replace('{ref}', j.ref))}</p><p>${esc(T.notYet)}</p>` +
+    say(`<p class="ref">${esc(T.gotRef).replace('{ref}', `<span class="nw">${esc(j.ref)}</span>`)}</p><p>${esc(T.notYet)}</p>` +
       `<p><a class="btn alt" href="${esc(lineHref(j.ref))}">${esc(T.lineRef.replace('{ref}', j.ref))}</a> <button class="btn alt" type="button" data-again>${esc(T.again)}</button></p>`, true)
     btn.hidden = true
   })

@@ -666,12 +666,15 @@ if (q) {
     const hits = cards.filter((c) => words.every((w) => c.kw.includes(w))).slice(0, 12)
     out.hidden = false
     out.innerHTML = hits.length ? hits.map(cardHtml).join('')
-      : `<li class="card"><p>${esc(T.noresult)}</p><a class="btn" href="${esc(D.lineUrl)}">${esc(T.msgUs)}</a></li>`
+      : `<li class="card"><p>${esc(T.noresult)}</p><a class="btn" href="${esc(D.lineUrl)}">${esc(T.msgUs)}</a> <a class="btn alt" href="${esc(D.home)}ask/" data-carry>${esc(T.askBtn)}</a></li>`
     ladders(out)
     glyphs(...new Set(hits.map((c) => c.cat)))
   }
   q.addEventListener('input', run)
   if (q.value) run()
+  // a search with nothing found becomes a question on the Ask page, the words already in it; carried in this tab's
+  // storage, not in the address (Hongdam-AI-Brief HD-17)
+  out.addEventListener('click', (e) => { if (e.target.closest('[data-carry]')) { try { sessionStorage.setItem('hd-ask-q', q.value.trim()) } catch { /* the page opens empty */ } } })
 }
 
 // One line from the order to the job done: Pick and Pay, then the job's own stops, one swan at where the order is.
@@ -936,6 +939,7 @@ function lightning(j, box) {
 
 // The ask form: one contact box (email or LINE ID, phone) and what they need.
 const af = $('#af')
+if (af) { try { const w = sessionStorage.getItem('hd-ask-q'); if (w && !af.elements.message.value) af.elements.message.value = w; sessionStorage.removeItem('hd-ask-q') } catch { /* nothing carried */ } }
 if (af) af.addEventListener('submit', async (e) => {
   e.preventDefault()
   const m = $('#amsg'), c = af.elements.contact.value.trim(), what = af.elements.message.value.trim()

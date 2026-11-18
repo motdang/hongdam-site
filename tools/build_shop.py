@@ -794,7 +794,10 @@ def main():
         write(pre(lang) + "buy/index.html", buy_page(lang)); n += 1
         write(pre(lang) + "ask/index.html", ask_page(lang)); n += 1
     for lang in LANGS:
-        write("assets/shop-%s.json" % lang, json.dumps(client_cards(lang), ensure_ascii=False, separators=(",", ":")))
+        cards = client_cards(lang)
+        if ARR:
+            cards = ARR.search_cards(lang) + cards
+        write("assets/shop-%s.json" % lang, json.dumps(cards, ensure_ascii=False, separators=(",", ":")))
     open(os.path.join(HERE, "functions", "_shop_data.js"), "w", encoding="utf-8").write(shop_js_data())
     open(os.path.join(HERE, "functions", "_share_data.js"), "w", encoding="utf-8").write(share_data_js())
     import build_wheel; build_wheel.main()
