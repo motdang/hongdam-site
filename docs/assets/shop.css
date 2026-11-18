@@ -383,3 +383,7 @@ dialog.player::backdrop { background: rgb(0 0 0 / .62) }
 #share-menu a:hover, #share-menu a:focus-visible, #share-menu button:hover, #share-menu button:focus-visible { background: color-mix(in oklab, var(--fg) 9%, transparent); outline: none }
 #share-menu :focus-visible { box-shadow: inset 0 0 0 2px var(--fg) }
 @media print { .share, #share-menu { display: none !important } }
+
+/* what a price does not cover (data/services.json "ex"): its own line under the card's words and the Buy page's option (her word 2026-11-18) */
+.card .ex { grid-column: 1 / -1; margin: .4rem 0 0; color: var(--mut); font-size: .96rem }
+#odesc .ex { display: block; margin-top: .45rem; color: var(--mut) }

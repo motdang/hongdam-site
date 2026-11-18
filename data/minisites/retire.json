@@ -91,11 +91,11 @@
   {
    "db": "home",
    "t": {
-    "en": "A housing shortlist, with rent at cost",
-    "th": "รายการที่พักให้เลือก ค่าเช่าคิดตามจริง",
-    "my": "နေအိမ်ရွေးချယ်စရာစာရင်း၊ အိမ်လခကို ကုန်ကျစရိတ်အတိုင်း",
-    "zh": "住处候选清单，房租按实收取",
-    "de": "Eine Kurzliste für die Wohnung, die Miete zu den tatsächlichen Kosten"
+    "en": "A housing shortlist; the rent is paid to the landlord",
+    "th": "รายการที่พักให้เลือก ค่าเช่าจ่ายให้เจ้าของโดยตรง",
+    "my": "နေအိမ်ရွေးချယ်စရာစာရင်း၊ အိမ်လခကို အိမ်ရှင်ထံ ပေးရသည်",
+    "zh": "住处候选清单，房租直接付给房东",
+    "de": "Eine Kurzliste für die Wohnung; die Miete geht an den Vermieter"
    },
    "who": {
     "en": "Hongdam and you",

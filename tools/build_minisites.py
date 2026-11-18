@@ -234,7 +234,9 @@ def options(lang, cid):
             continue
         it = B.ITEMS.get(o["i"], {})
         d = it.get("d_" + lang, "")
-        rows.append('<li><span class="on">%s</span><b>%s</b>%s</li>' % (E(t(o.get("n") or c["n"], lang)), ph, '<span class="d">%s</span>' % E(d) if d else ""))
+        x = B.ex_text(o["i"], lang)
+        rows.append('<li><span class="on">%s</span><b>%s</b>%s%s</li>' % (E(t(o.get("n") or c["n"], lang)), ph, '<span class="d">%s</span>' % E(d) if d else "",
+                                                                       '<span class="d ex">%s</span>' % B.ex_html(x, lang) if x else ""))
     walk = '<details class="ladder" data-svc="%s" hidden></details>' % E(B.walks(c)) if B.walks(c) else ""
     return '<section class="m-get"><h2>%s</h2><ul class="opts">%s</ul>%s%s</section>\n' % (E(mu(lang, "get")), "".join(rows), walk, buttons(lang, cid))
 
