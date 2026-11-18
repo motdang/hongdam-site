@@ -67,11 +67,11 @@
   {
    "db": "clock",
    "t": {
-    "en": "Time runs in blocks: 30 minutes by phone, up to 4 hours or a full day with you. In town, travel is included; further, at the price we pay.",
-    "th": "เวลาคิดเป็นช่วง ทางโทรศัพท์ครึ่งชั่วโมง ส่วนไปด้วยไม่เกิน 4 ชั่วโมงหรือทั้งวัน ในเมืองรวมค่าเดินทาง นอกเมืองคิดตามจริง",
-    "my": "အချိန်ကို အပိုင်းလိုက် တွက်သည်၊ ဖုန်းဖြင့် 30 မိနစ်၊ အတူလိုက်လျှင် 4 နာရီအထိ သို့မဟုတ် တစ်နေ့လုံး။ မြို့တွင်း ခရီးစရိတ်ပါပြီး ပိုဝေးလျှင် ကုန်ကျစရိတ်အတိုင်း။",
-    "zh": "按时段计时：电话每 30 分钟，陪同为 4 小时以内或全天。市内交通费已含，更远按实计。",
-    "de": "Die Zeit läuft in Blöcken: 30 Minuten am Telefon, bis 4 Stunden oder ein ganzer Tag vor Ort. In der Stadt ist die Anfahrt inbegriffen, weiter weg wird sie zum Selbstkostenpreis verrechnet."
+    "en": "Time runs in blocks: 30 minutes by phone, up to 4 hours or a full day with you. Travel is at the price we pay.",
+    "th": "เวลาคิดเป็นช่วง ทางโทรศัพท์ครึ่งชั่วโมง ส่วนไปด้วยไม่เกิน 4 ชั่วโมงหรือทั้งวัน ค่าเดินทางคิดตามราคาจริงที่เราจ่าย",
+    "my": "အချိန်ကို အပိုင်းလိုက် တွက်သည်၊ ဖုန်းဖြင့် 30 မိနစ်၊ အတူလိုက်လျှင် 4 နာရီအထိ သို့မဟုတ် တစ်နေ့လုံး။ ခရီးစရိတ်ကို ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ယူသည်။",
+    "zh": "按时段计时：电话每 30 分钟，陪同为 4 小时以内或全天。交通费按实付价格。",
+    "de": "Die Zeit läuft in Blöcken: 30 Minuten am Telefon, bis 4 Stunden oder ein ganzer Tag vor Ort. Die Anfahrt kostet, was wir dafür zahlen."
    },
    "who": {
     "en": "Hongdam and you",

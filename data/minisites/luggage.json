@@ -19,11 +19,11 @@
   {
    "db": "scooter",
    "t": {
-    "en": "We pick up your luggage or scooter.",
-    "th": "รับกระเป๋าหรือมอเตอร์ไซค์ของคุณ",
-    "my": "သင့်ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာကို လာယူသည်။",
-    "zh": "上门取您的行李或摩托车。",
-    "de": "Wir holen Ihr Gepäck oder Ihren Roller ab."
+    "en": "Your luggage or scooter is picked up, at the price we pay.",
+    "th": "รับกระเป๋าหรือมอเตอร์ไซค์ของคุณ ค่ารับของตามราคาจริงที่เราจ่าย",
+    "my": "သင့်ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာကို လာယူသည်၊ ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "上门取您的行李或摩托车，取件费按实付价格。",
+    "de": "Ihr Gepäck oder Roller wird abgeholt, zu dem Preis, den wir zahlen."
    },
    "who": {
     "en": "Hongdam",
@@ -43,11 +43,11 @@
   {
    "db": "parcel",
    "t": {
-    "en": "We pack it and book a courier or the train. You pay the postage at the price we pay.",
-    "th": "แพ็กและจองขนส่งหรือรถไฟ คุณจ่ายค่าส่งตามจริง",
-    "my": "ထုပ်ပိုးပြီး ကူရီယာ သို့မဟုတ် ရထားကို ကြိုတင်မှာပေးသည်။ စာပို့ခကို ကုန်ကျစရိတ်အတိုင်း သင်ပေးရသည်။",
-    "zh": "打包并订快递或火车。邮费按实际费用由您支付。",
-    "de": "Wir packen es ein und buchen einen Kurier oder den Zug. Das Porto zahlen Sie zum Selbstkostenpreis."
+    "en": "It is packed and we book a courier or the train. Packing and the postage are at the price we pay.",
+    "th": "แพ็กของและจองขนส่งหรือรถไฟ ค่าแพ็กและค่าส่งตามราคาจริงที่เราจ่าย",
+    "my": "ထုပ်ပိုးပြီး ကူရီယာ သို့မဟုတ် ရထားကို ကြိုတင်မှာပေးသည်။ ထုပ်ပိုးခနှင့် စာပို့ခကို ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ယူသည်။",
+    "zh": "打包并订快递或火车。打包费和邮费按实付价格。",
+    "de": "Es wird verpackt, und wir buchen einen Kurier oder den Zug. Verpackung und Porto kosten, was wir dafür zahlen."
    },
    "who": {
     "en": "Hongdam",

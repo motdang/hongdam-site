@@ -785,14 +785,14 @@
      "slots": 10,
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We pick up your luggage or scooter, pack it, book a delivery company or the train, and track it until it arrives.",
-     "d_th": "รับ แพ็ก และจองขนส่งหรือรถไฟ ติดตามจนถึงปลายทาง",
+     "d_en": "We book a delivery company or the train for your luggage or scooter, and track it until it arrives.",
+     "d_th": "จองขนส่งหรือรถไฟให้กระเป๋าหรือมอเตอร์ไซค์ของคุณ และติดตามจนถึงปลายทาง",
      "ex": {
-      "en": "the courier or train fare, at the price we pay",
-      "th": "ค่าขนส่งหรือค่ารถไฟ ตามราคาจริงที่เราจ่าย",
-      "my": "ပို့ဆောင်ခ သို့မဟုတ် ရထားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
-      "zh": "快递费或火车运费，按实付价格",
-      "de": "Kurier- oder Bahnfracht, zu dem Preis, den wir zahlen"
+      "en": "pickup, packing and the courier or train fare, at the price we pay",
+      "th": "ค่ารับของ ค่าแพ็ก และค่าขนส่งหรือรถไฟ ตามราคาจริงที่เราจ่าย",
+      "my": "လာယူခ၊ ထုပ်ပိုးခနှင့် ပို့ဆောင်ခ သို့မဟုတ် ရထားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "取件、打包和快递或火车运费，按实付价格",
+      "de": "Abholung, Verpackung und Kurier- oder Bahnfracht, zu dem Preis, den wir zahlen"
      }
     }
    ]
@@ -1020,18 +1020,18 @@
      "th": "สามวันในภาคเหนือ",
      "p_en": "{price} a person, sharing",
      "p_th": "คนละ {price} พักคู่",
-     "d_en": "Two nights in a twin room (two beds), a car, a guide, breakfasts and two lunches.",
-     "d_th": "พักห้องคู่สองคืน รถ ไกด์ อาหารเช้า และอาหารกลางวันสองมื้อ",
+     "d_en": "Three days in northern Thailand: we plan the days and book two nights in a twin room (two beds), a car and a guide.",
+     "d_th": "สามวันในภาคเหนือ เราวางแผนและจองห้องคู่สองคืน รถ และไกด์ให้",
      "baht": 20000,
      "floor": 15000,
      "ceiling": 30000,
      "slots": 4,
      "ex": {
-      "en": "entry fees and dinners, at the price we pay",
-      "th": "ค่าเข้าและอาหารเย็น ตามราคาจริงที่เราจ่าย",
-      "my": "ဝင်ကြေးနှင့် ညစာ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
-      "zh": "门票和晚餐，按实付价格",
-      "de": "Eintritte und Abendessen, zu dem Preis, den wir zahlen"
+      "en": "the room, the car and its fuel, the guide, every meal and entry fees, at the price we pay",
+      "th": "ค่าห้องพัก ค่ารถและค่าน้ำมัน ค่าไกด์ อาหารทุกมื้อ และค่าเข้า ตามราคาจริงที่เราจ่าย",
+      "my": "အခန်းခ၊ ကားခနှင့် ဆီဖိုး၊ ဧည့်လမ်းညွှန်ခ၊ အစားအသောက်တိုင်းနှင့် ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "房费、车费和油费、导游费、每顿饭和门票，按实付价格",
+      "de": "Zimmer, Auto und Benzin, Guide, jede Mahlzeit und Eintritte, zu dem Preis, den wir zahlen"
      }
     },
     {
@@ -1120,12 +1120,19 @@
      "th": "คืนโคมแสนดวงที่ลำพูน",
      "p_en": "{price} a seat",
      "p_th": "ที่นั่งละ {price}",
-     "d_en": "A lantern festival night in November at Wat Phra That Hariphunchai (a temple in Lamphun): transport from Chiang Mai, dinner and a guide.",
-     "d_th": "คืนโคมแสนดวงที่วัดพระธาตุหริภุญชัยในเดือนพฤศจิกายน รถจากเชียงใหม่ อาหารเย็น และไกด์",
+     "d_en": "A seat at the lantern festival night in November at Wat Phra That Hariphunchai (a temple in Lamphun), booked for you.",
+     "d_th": "ที่นั่งงานคืนโคมที่วัดพระธาตุหริภุญชัยในเดือนพฤศจิกายน จองให้",
      "baht": 4000,
      "floor": 3000,
      "ceiling": 6000,
-     "slots": 24
+     "slots": 24,
+     "ex": {
+      "en": "transport from Chiang Mai, dinner and a guide, at the price we pay",
+      "th": "ค่ารถจากเชียงใหม่ อาหารเย็น และไกด์ ตามราคาจริงที่เราจ่าย",
+      "my": "ချင်းမိုင်မှ ကားခ၊ ညစာနှင့် ဧည့်လမ်းညွှန် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "从清迈出发的交通、晚餐和导游，按实付价格",
+      "de": "Fahrt ab Chiang Mai, Abendessen und ein Guide, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "balloon-cr",
@@ -1133,18 +1140,18 @@
      "th": "บินบอลลูน เชียงราย",
      "p_en": "{price} a person",
      "p_th": "คนละ {price}",
-     "d_en": "A place in a shared hot-air balloon basket in the balloon season, booked for you, with transport there and back.",
-     "d_th": "บอลลูนตะกร้ารวมในฤดูบอลลูน จองพร้อมรถรับส่ง",
+     "d_en": "A place in a shared hot-air balloon basket in the balloon season, booked for you.",
+     "d_th": "บอลลูนตะกร้ารวมในฤดูบอลลูน จองให้",
      "baht": 12000,
      "floor": 10000,
      "ceiling": 15000,
      "slots": 8,
      "ex": {
-      "en": "festival entry, at the price we pay",
-      "th": "ค่าเข้างานเทศกาล ตามราคาจริงที่เราจ่าย",
-      "my": "ပွဲတော်ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
-      "zh": "节庆门票，按实付价格",
-      "de": "Eintritt zum Festival, zu dem Preis, den wir zahlen"
+      "en": "transport there and back and festival entry, at the price we pay",
+      "th": "ค่ารถรับส่งและค่าเข้างานเทศกาล ตามราคาจริงที่เราจ่าย",
+      "my": "အသွားအပြန် ကားခနှင့် ပွဲတော်ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "往返接送和节庆门票，按实付价格",
+      "de": "Hin- und Rückfahrt und Eintritt zum Festival, zu dem Preis, den wir zahlen"
      }
     },
     {
@@ -1153,12 +1160,19 @@
      "th": "บินบอลลูน เชียงใหม่",
      "p_en": "{price} a person",
      "p_th": "คนละ {price}",
-     "d_en": "A place in a shared hot-air balloon basket from November to February, booked for you, with transport there and back.",
-     "d_th": "บอลลูนตะกร้ารวม พฤศจิกายนถึงกุมภาพันธ์ จองพร้อมรถรับส่ง",
+     "d_en": "A place in a shared hot-air balloon basket from November to February, booked for you.",
+     "d_th": "บอลลูนตะกร้ารวม พฤศจิกายนถึงกุมภาพันธ์ จองให้",
      "baht": 10000,
      "floor": 8000,
      "ceiling": 12000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "transport there and back, at the price we pay",
+      "th": "ค่ารถรับส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "အသွားအပြန် ကားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "往返接送，按实付价格",
+      "de": "Hin- und Rückfahrt, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "paramotor",
@@ -1166,12 +1180,19 @@
      "th": "บินพารามอเตอร์",
      "p_en": "{price} a person",
      "p_th": "คนละ {price}",
-     "d_en": "A flight in a paramotor (a paraglider with an engine), flying together with a pilot. We book it, with transport there and back.",
-     "d_th": "บินคู่กับนักบิน จองพร้อมรถรับส่ง",
+     "d_en": "A flight in a paramotor (a paraglider with an engine), flying together with a pilot, booked for you.",
+     "d_th": "บินคู่กับนักบิน จองให้",
      "baht": 4000,
      "floor": 3000,
      "ceiling": 5000,
-     "slots": 12
+     "slots": 12,
+     "ex": {
+      "en": "transport there and back, at the price we pay",
+      "th": "ค่ารถรับส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "အသွားအပြန် ကားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "往返接送，按实付价格",
+      "de": "Hin- und Rückfahrt, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -1248,18 +1269,18 @@
      "th": "ล่ามไปด้วย",
      "p_en": "{price} up to 4 hours",
      "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
-     "d_en": "In Chiang Rai or Chiang Mai: the immigration office, the employment office, hospitals, police stations, banks, job interviews and staff training. Travel inside the city is included.",
-     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่ ตม. สำนักงานจัดหางาน โรงพยาบาล สถานีตำรวจ ธนาคาร สัมภาษณ์งาน และอบรมพนักงาน รวมค่าเดินทางในเมือง",
+     "d_en": "In Chiang Rai or Chiang Mai: the immigration office, the employment office, hospitals, police stations, banks, job interviews and staff training.",
+     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่ ตม. สำนักงานจัดหางาน โรงพยาบาล สถานีตำรวจ ธนาคาร สัมภาษณ์งาน และอบรมพนักงาน",
      "baht": 3000,
      "floor": 2000,
      "ceiling": 5000,
      "slots": 8,
      "ex": {
-      "en": "travel outside the city, at the price we pay",
-      "th": "ค่าเดินทางนอกเมือง ตามราคาจริงที่เราจ่าย",
-      "my": "မြို့ပြင် ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
-      "zh": "城外的交通费，按实付价格",
-      "de": "Fahrten außerhalb der Stadt, zu dem Preis, den wir zahlen"
+      "en": "travel, at the price we pay",
+      "th": "ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "交通费，按实付价格",
+      "de": "die Anfahrt, zu dem Preis, den wir zahlen"
      }
     },
     {
@@ -1276,11 +1297,11 @@
      "d_en": "In-person interpreting in Chiang Rai or Chiang Mai, like the 4-hour option, but for a whole day. Examples: a factory visit, a trade fair, a hospital stay or a day of meetings.",
      "d_th": "ล่ามไปกับคุณในเชียงรายหรือเชียงใหม่ เหมือนตัวเลือก 4 ชั่วโมง แต่ทั้งวัน เช่น ดูโรงงาน งานแสดงสินค้า อยู่โรงพยาบาล หรือประชุมทั้งวัน",
      "ex": {
-      "en": "travel outside the city, at the price we pay",
-      "th": "ค่าเดินทางนอกเมือง ตามราคาจริงที่เราจ่าย",
-      "my": "မြို့ပြင် ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
-      "zh": "城外的交通费，按实付价格",
-      "de": "Fahrten außerhalb der Stadt, zu dem Preis, den wir zahlen"
+      "en": "travel, at the price we pay",
+      "th": "ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "交通费，按实付价格",
+      "de": "die Anfahrt, zu dem Preis, den wir zahlen"
      }
     },
     {
@@ -1319,14 +1340,14 @@
      "slots": 6,
      "p_en": "{price} up to 4 hours",
      "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
-     "d_en": "In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings. Travel inside the city is included.",
-     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่หน่วยงาน โรงพยาบาล โรงงาน ร้านค้า และการประชุม รวมค่าเดินทางในเมือง",
+     "d_en": "In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings.",
+     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่หน่วยงาน โรงพยาบาล โรงงาน ร้านค้า และการประชุม",
      "ex": {
-      "en": "travel outside the city, at the price we pay",
-      "th": "ค่าเดินทางนอกเมือง ตามราคาจริงที่เราจ่าย",
-      "my": "မြို့ပြင် ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
-      "zh": "城外的交通费，按实付价格",
-      "de": "Fahrten außerhalb der Stadt, zu dem Preis, den wir zahlen"
+      "en": "travel, at the price we pay",
+      "th": "ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "交通费，按实付价格",
+      "de": "die Anfahrt, zu dem Preis, den wir zahlen"
      }
     },
     {
@@ -2281,7 +2302,14 @@
      "baht": 300,
      "floor": 150,
      "ceiling": 600,
-     "slots": 100
+     "slots": 100,
+     "ex": {
+      "en": "the food for the monks, at the price we pay",
+      "th": "ค่าอาหารใส่บาตร ตามราคาจริงที่เราจ่าย",
+      "my": "ဘုန်းကြီးများအတွက် ဆွမ်း — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "供僧的食物，按实付价格",
+      "de": "das Essen für die Mönche, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-set",
@@ -2294,7 +2322,14 @@
      "baht": 800,
      "floor": 500,
      "ceiling": 3000,
-     "slots": 60
+     "slots": 60,
+     "ex": {
+      "en": "the sangkhathan set itself, at the price we pay",
+      "th": "ค่าชุดสังฆทาน ตามราคาจริงที่เราจ่าย",
+      "my": "သင်္ဃဒါန်းအစုံ ကိုယ်တိုင် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "僧伽供品套装本身，按实付价格",
+      "de": "das Sangkhathan-Set selbst, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-gift",
@@ -2327,7 +2362,14 @@
      "baht": 500,
      "floor": 300,
      "ceiling": 1200,
-     "slots": 30
+     "slots": 30,
+     "ex": {
+      "en": "the fish, at the price we pay",
+      "th": "ค่าปลา ตามราคาจริงที่เราจ่าย",
+      "my": "ငါးဖိုး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "鱼的费用，按实付价格",
+      "de": "die Fische, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-dead",
