@@ -57,7 +57,8 @@
    "sHelp": "Help",
    "sSetup": "Setting up",
    "sOpens": "opens {site}, its own site",
-   "quoted": "Quote first"
+   "quoted": "Quote first",
+   "errMissing": "Please fill in"
   },
   "th": {
    "h1": "ให้เราจัดการอะไรให้คุณดี",
@@ -115,7 +116,8 @@
    "sHelp": "ช่วยเหลือ",
    "sSetup": "การตั้งค่า",
    "sOpens": "เปิด {site} เว็บของแอปเอง",
-   "quoted": "แจ้งราคาก่อน"
+   "quoted": "แจ้งราคาก่อน",
+   "errMissing": "กรุณากรอก"
   },
   "my": {
    "h1": "ကျွန်ုပ်တို့ ဘာစီစဉ်ပေးရမလဲ",
@@ -173,7 +175,8 @@
    "sHelp": "အကူအညီ",
    "sSetup": "စတင်ပြင်ဆင်ခြင်း",
    "sOpens": "{site} ကို ဖွင့်သည် (၎င်း၏ ကိုယ်ပိုင်ဆိုက်)",
-   "quoted": "စျေးနှုန်း ဦးစွာပြော"
+   "quoted": "စျေးနှုန်း ဦးစွာပြော",
+   "errMissing": "ကျေးဇူးပြု၍ ဖြည့်ပါ"
   },
   "zh": {
    "h1": "需要我们帮您安排什么？",
@@ -231,7 +234,8 @@
    "sHelp": "帮助",
    "sSetup": "设置",
    "sOpens": "打开 {site}（它自己的网站）",
-   "quoted": "先报价"
+   "quoted": "先报价",
+   "errMissing": "请填写"
   },
   "de": {
    "h1": "Was dürfen wir für Sie erledigen?",
@@ -289,7 +293,8 @@
    "sHelp": "Hilfe",
    "sSetup": "Einrichtung",
    "sOpens": "öffnet {site}, die eigene Seite",
-   "quoted": "Erst ein Angebot"
+   "quoted": "Erst ein Angebot",
+   "errMissing": "Bitte ausfüllen"
   }
  },
  "people": {
@@ -459,7 +464,8 @@
     "luggage",
     "move",
     "partner"
-   ]
+   ],
+   "kw": "parcel package box post office ems dhl fedex ups courier send abroad overseas international ship shipping border laos myanmar ส่งของ ไปรษณีย์ พัสดุ ส่งต่างประเทศ ပါဆယ် စာပို့ 寄 快递 包裹 国际快递 paket post versand ausland"
   },
   {
    "id": "appointment",
@@ -645,7 +651,8 @@
     "my": "ချိန်းဆိုခ {p:specialist-book}",
     "zh": "预约 {p:specialist-book}",
     "de": "Buchung {p:specialist-book}"
-   }
+   },
+   "kw": "dentist dental teeth tooth clinic doctor physio physiotherapy chiropractor chiropractic back pain appointment book booking hospital reschedule interpreter defiant หมอฟัน ทันตกรรม คลินิก นัดหมอ กายภาพ သွားဆရာဝန် ဆေးခန်း 牙医 牙科 预约 诊所 理疗 zahnarzt termin physiotherapie praxis"
   },
   {
    "id": "home-service",
@@ -765,7 +772,8 @@
     "my": "တစ်ခုလျှင် {p:trades}",
     "zh": "每单 {p:trades}",
     "de": "{p:trades} pro Auftrag"
-   }
+   },
+   "kw": "plumber leak pipe electrician electric aircon air con ac cleaning repair fix broken locksmith key internet wifi pest termite cleaner maid handyman ช่าง ช่างประปา ช่างไฟ ล้างแอร์ ซ่อม ช่างกุญแจ ပြင် ရေပိုက် 修理 水管工 电工 空调 handwerker klempner elektriker reparatur"
   },
   {
    "id": "shop-for-me",
@@ -928,7 +936,8 @@
     "my": "တစ်နာရီ {p:errand}",
     "zh": "每小时 {p:errand}",
     "de": "{p:errand} pro Stunde"
-   }
+   },
+   "kw": "buy shopping groceries pick up errand deliver delivery market 7-eleven pharmacy medicine gift ซื้อของ ฝากซื้อ วิ่งธุระ ဈေးဝယ် 代购 买东西 跑腿 einkaufen besorgung"
   },
   {
    "id": "driver",
@@ -1083,7 +1092,8 @@
     "my": "တစ်နေ့ {p:driver-day} · ခရီးတစ်ခေါက် စျေးနှုန်းပြော",
     "zh": "每天 {p:driver-day} · 单程先报价",
     "de": "{p:driver-day} pro Tag · Fahrten mit Angebot"
-   }
+   },
+   "kw": "driver taxi car transfer airport pickup chauffeur van ride trip day trip grab rental car with driver รถ คนขับ รถรับส่ง สนามบิน เหมารถ ယာဉ်မောင်း ကား 司机 包车 接机 fahrer taxi flughafen transfer"
   }
  ],
  "software": [
