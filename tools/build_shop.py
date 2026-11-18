@@ -547,8 +547,9 @@ def work_band(lang):
                     E(thumb(poster)), E(n), '<span class="ts">%s</span>' % E(sub) if sub else ""))
     out = '<h2>%s</h2>\n<ul class="thumbs">' % E(wu["work"])
     for g in WORK["groups"]:
-        if g.get("drive"):
-            out += item("drive", g["drive"], tr(g["n"], lang), wu["play"], g, g["poster"], g["w"], g["h"], g["go"])
+        # one film for the group: an .mp4 in docs/media (Drive's player spins for viewers signed out of Google, 11/18), or a Drive file
+        if g.get("mp4") or g.get("drive"):
+            out += item("mp4" if g.get("mp4") else "drive", g.get("mp4") or g["drive"], tr(g["n"], lang), wu["play"], g, g["poster"], g["w"], g["h"], g["go"])
         for v in g.get("videos", []):
             out += item("mp4", v["src"], tr(v["n"], lang), tr(v["by"], lang), g, v["poster"], v["w"], v["h"], v.get("go") or g["go"])
     out += '</ul>\n<p class="thumbs-go">%s</p>\n' % " · ".join(
