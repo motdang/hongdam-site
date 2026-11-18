@@ -699,7 +699,8 @@ async function track(root, ref, note = '') {
     `<p class="state" role="status">${esc(said[o.state] || T.tOrdered)}</p>` +
     orderLine(card, at, [word(T.how[0]), word(T.how[1])]) +
     (note ? `<p class="note" role="alert">${esc(note)}</p>` : '') +
-    `<p class="note">${esc(T.trackKeep)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(o.ref)}</a></p>`
+    `<p class="note">${esc(T.trackKeep)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(o.ref)}</a>` +
+    (o.state === 'done' && T.buyAgain ? ` <a class="btn" href="${esc(location.pathname)}?c=${encodeURIComponent(o.card)}&o=${encodeURIComponent(o.opt)}">${esc(T.buyAgain)}</a>` : '') + '</p>'
   glyphs(card.cat)
 }
 // Back from PayPal's page (/buy/?ref=HD-…&pp=back&token=…): the server captures and checks it, then the tracker.
@@ -841,8 +842,12 @@ function pay(j) {
   const ln = T.lnH ? `<section class="way" id="lnway" hidden><h3>${esc(T.lnH)}</h3><p>${esc(T.lnNote)}</p>
 <p><button class="btn big" type="button" id="lnbtn">${esc(T.lnBtn).replace('{amount}', amount)}</button></p><div id="lnbill" hidden></div>
 <p id="lmsg" role="status"></p><p class="note"><a href="${offrampt}" target="_blank" rel="noopener">${esc(T.lnMore)}</a></p></section>` : ''
+  // half now from ฿10,000 / US$300 (functions/_shop.js): the total, now and the rest, each from the server's numbers in the
+  // currency paid, so now + rest = total
+  const split = j.half && s.total > s.due ? `<p class="tot"><span>${esc(T.total)}</span> <b>${amtH(s.total, s.cur, true)}</b></p>` : ''
+  const rest = j.half && s.total > s.due && T.payRest ? `<p class="tot"><span>${esc(T.payRest)}</span> <b>${amtH(s.total - s.due, s.cur, true)}</b></p>` : ''
   box.innerHTML = `<h2>${esc(T.order)} ${esc(j.ref)}</h2>
-<p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>
+${split}<p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>${rest}
 ${s.cur === 'THB' ? pp + card + ln + away : card + ln + away + pp}
 <p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(j.ref)}</a></p>`
   fetch('/api/buy').then((r) => r.json()).then((s) => {
@@ -939,8 +944,11 @@ if (af) af.addEventListener('submit', async (e) => {
   m.textContent = T.sending
   const email = /@/.test(c) ? c : '', line = email ? '' : c
   let r
-  try { r = await (await fetch('/api/contact', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, line, message: what, service: 'Ask', website: af.elements.website.value, page: location.pathname }) })).json() } catch { r = { ok: false } }
-  m.textContent = r.ok ? T.asked : (r.error || T.err.service)
+  // the service the page was opened for (/ask/?about=<card>), so the question reaches the team with it
+  const about = new URLSearchParams(location.search).get('about') || ''
+  const sc = about && (await cardsP).find((x) => x.id === about)
+  try { r = await (await fetch('/api/contact', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, line, message: what, service: sc ? sc.n : about ? 'Ask: ' + about : 'Ask', lang: D.lang, website: af.elements.website.value, page: location.pathname }) })).json() } catch { r = { ok: false } }
+  m.textContent = r.ok ? T.asked + (r.ref && T.askedRef ? ' ' + T.askedRef.replace('{ref}', r.ref) : '') : (r.error || T.err.service)
   if (r.ok) af.reset()
 })
 

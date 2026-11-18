@@ -122,7 +122,10 @@
    "lnWait": "Waiting for the payment…",
    "lnOld": "This bill ran out. Press the button for a new one.",
    "lnMore": "Bitcoin and baht in Thailand: offrampt.net",
-   "offrampt": "Crypto to baht"
+   "offrampt": "Crypto to baht",
+   "buyAgain": "Order again",
+   "askedRef": "Your request number: {ref}",
+   "payRest": "The rest, paid when the work is done"
   },
   "th": {
    "title": "หงส์ดำ — เราทำงานให้คุณ · เชียงราย",
@@ -232,7 +235,10 @@
    "lnWait": "กำลังรอการชำระเงิน…",
    "lnOld": "บิลนี้หมดเวลาแล้ว กดปุ่มเพื่อออกบิลใหม่",
    "lnMore": "บิตคอยน์กับเงินบาทในไทย: offrampt.net",
-   "offrampt": "คริปโตเป็นเงินบาท"
+   "offrampt": "คริปโตเป็นเงินบาท",
+   "buyAgain": "สั่งอีกครั้ง",
+   "askedRef": "หมายเลขคำขอของคุณ: {ref}",
+   "payRest": "ส่วนที่เหลือ จ่ายเมื่องานเสร็จ"
   },
   "my": {
    "title": "Hongdam — သင့်အတွက် အလုပ်လုပ်ပေးပါသည် · ချင်းရိုင်",
@@ -342,7 +348,10 @@
    "lnWait": "ငွေပေးချေမှုကို စောင့်နေသည်…",
    "lnOld": "ဤငွေတောင်းခံလွှာ သက်တမ်းကုန်သွားပြီ။ အသစ်ရယူရန် ခလုတ်ကို နှိပ်ပါ။",
    "lnMore": "ထိုင်းနိုင်ငံရှိ bitcoin နှင့် ဘတ်: offrampt.net",
-   "offrampt": "Crypto မှ ဘတ်သို့"
+   "offrampt": "Crypto မှ ဘတ်သို့",
+   "buyAgain": "ထပ်မှာရန်",
+   "askedRef": "သင့်တောင်းဆိုချက်နံပါတ်: {ref}",
+   "payRest": "ကျန်ငွေ၊ အလုပ်ပြီးမှ ပေးရန်"
   },
   "zh": {
    "title": "Hongdam — 我们替您办事 · 清莱",
@@ -452,7 +461,10 @@
    "lnWait": "等待付款…",
    "lnOld": "这张账单已过期。按按钮生成新账单。",
    "lnMore": "泰国的比特币与泰铢：offrampt.net",
-   "offrampt": "加密货币换泰铢"
+   "offrampt": "加密货币换泰铢",
+   "buyAgain": "再订一次",
+   "askedRef": "您的请求编号：{ref}",
+   "payRest": "余款，完工后支付"
   },
   "de": {
    "title": "Hongdam — wir erledigen die Arbeit für Sie · Chiang Rai",
@@ -562,7 +574,10 @@
    "lnWait": "Warten auf die Zahlung…",
    "lnOld": "Diese Rechnung ist abgelaufen. Drücken Sie den Knopf für eine neue.",
    "lnMore": "Bitcoin und Baht in Thailand: offrampt.net",
-   "offrampt": "Krypto in Baht"
+   "offrampt": "Krypto in Baht",
+   "buyAgain": "Nochmal bestellen",
+   "askedRef": "Ihre Anfragenummer: {ref}",
+   "payRest": "Der Rest, bezahlt nach getaner Arbeit"
   }
  },
  "units": {

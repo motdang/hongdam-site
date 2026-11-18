@@ -125,7 +125,7 @@ if (fm) fm.addEventListener('submit', async (e) => {
   } catch { r = { ok: false } }
   btn.disabled = false
   if (r && r.ok) {
-    m.textContent = U.sent
+    m.textContent = U.sent + (r.ref ? ' · ' + r.ref : '')
     const b = btn.getBoundingClientRect(); burst(b.left + b.width / 2, b.top, 10)
   } else { m.textContent = U.fail; m.classList.add('bad') }
 })

@@ -233,7 +233,7 @@ def options(lang, cid):
         except SystemExit:
             continue
         it = B.ITEMS.get(o["i"], {})
-        d = it.get("d_" + lang) if lang in ("en", "th") else ""
+        d = it.get("d_" + lang, "")
         rows.append('<li><span class="on">%s</span><b>%s</b>%s</li>' % (E(t(o.get("n") or c["n"], lang)), ph, '<span class="d">%s</span>' % E(d) if d else ""))
     walk = '<details class="ladder" data-svc="%s" hidden></details>' % E(B.walks(c)) if B.walks(c) else ""
     return '<section class="m-get"><h2>%s</h2><ul class="opts">%s</ul>%s%s</section>\n' % (E(mu(lang, "get")), "".join(rows), walk, buttons(lang, cid))
@@ -262,10 +262,20 @@ def facts(lang, p):
         E(B.SHOP["ui"][lang].get("know") or B.SHOP["ui"]["en"]["know"]), "".join("<li>%s%s</li>" % (text(t(f["t"], lang)), src_link(f["src"], lang)) for f in p["facts"]))
 
 
+# What a row in "What others charge" is (Hongdam-AI-Brief HD-02): a cost paid to someone else as part of the job, the
+# price of a similar service elsewhere, or background research. A row without "kind" shows no label.
+KIND = {
+    "third": {"en": "You pay them", "th": "คุณจ่ายให้เขา", "my": "သင် သူတို့ကို ပေးရသည်", "zh": "您付给对方", "de": "Sie zahlen dort"},
+    "like": {"en": "A similar service elsewhere", "th": "บริการคล้ายกันที่อื่น", "my": "အခြားနေရာရှိ ဆင်တူဝန်ဆောင်မှု", "zh": "别家的类似服务", "de": "Ähnlicher Dienst anderswo"},
+    "research": {"en": "Background", "th": "ข้อมูลประกอบ", "my": "နောက်ခံအချက်အလက်", "zh": "背景资料", "de": "Hintergrund"},
+}
+
+
 def costs(lang, cid, p):
     if not p.get("costs"):
         return ""
-    rows = "".join('<tr><th scope="row">%s</th><td>%s%s</td></tr>' % (text(t(k["t"], lang)), text(t(k["p"], lang)), src_link(k["src"], lang)) for k in p["costs"])
+    kind = lambda k: '<span class="kind">%s</span>' % E(t(KIND[k["kind"]], lang)) if k.get("kind") in KIND else ""
+    rows = "".join('<tr><th scope="row">%s%s</th><td>%s%s</td></tr>' % (kind(k), text(t(k["t"], lang)), text(t(k["p"], lang)), src_link(k["src"], lang)) for k in p["costs"])
     rows += '<tr class="ours"><th scope="row">%s · %s</th><td>%s</td></tr>' % (E(mu(lang, "ours")), E(name(cid, lang)), B.card_price(CARDS[cid], lang))
     return '<section class="m-costs"><h2>%s</h2><table>%s</table></section>\n' % (E(mu(lang, "others")), rows)
 

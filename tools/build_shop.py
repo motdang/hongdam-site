@@ -73,12 +73,23 @@ def money_h(n, cur="THB"):
     return '<span class="%s">%s</span>' % (amt_cls(cur), E(money(n, cur)))
 
 
-MONEY_RE = _re.compile(r"(US\$|฿)(\d[\d,]*(?:\.\d+)?)")
+MONEY_RE = _re.compile(r"(US\$|฿)(\d[\d,]*(?:\.\d+)?)(?:([–-])(\d[\d,]*(?:\.\d+)?)(?![\d,]))?")
+
+
+def _num(s):
+    return s.replace(",", "")
 
 
 def mark_money(html):
-    """฿ and US$ amounts in escaped running text, each in its mark."""
-    return MONEY_RE.sub(lambda m: '<span class="%s">%s%s</span>' % (amt_cls("USD" if m.group(1) == "US$" else "THB"), m.group(1), m.group(2)), html)
+    """฿ and US$ amounts in escaped running text, each in its mark. A range written with one sign (฿8,000–15,000)
+    is one mark carrying both ends (data-n, data-n2), so cur.js converts each end once (Hongdam-AI-Brief HD-07)."""
+    def one(m):
+        cls = amt_cls("USD" if m.group(1) == "US$" else "THB")
+        if m.group(4):
+            return '<span class="%s" data-n="%s" data-n2="%s" data-c="%s">%s%s–%s</span>' % (
+                cls, _num(m.group(2)), _num(m.group(4)), "USD" if m.group(1) == "US$" else "THB", m.group(1), m.group(2), m.group(4))
+        return '<span class="%s">%s%s</span>' % (cls, m.group(1), m.group(2))
+    return MONEY_RE.sub(one, html)
 
 
 def tr(d, lang):
@@ -367,7 +378,7 @@ def client_cards(lang):
                       "unit": bool(o.get("u")), "max": o.get("max", 99),
                       "unitMany": tr(SHOP["units"][o["u"]]["many"], lang) if o.get("u") else "",
                       "per": (" / " + unit_one(o.get("u"), lang)) if o.get("u") else ""}
-                if lang in ("en", "th") and it.get("d_" + lang):
+                if it.get("d_" + lang):
                     od["d"] = it["d_" + lang]
                 d["opts"].append(od)
             if c.get("add"):
@@ -456,12 +467,22 @@ def not_here(lang):
 
 
 def front(lang):
+    """The front page (Hongdam-AI-Brief 2026-11-18): the question and two opening actions with where we work; the five
+    jobs, each with its page; who handles a request, with work we finished; one purchase at a set fee; software; then
+    search, the full list by topic, and a way to ask about anything else. The parts from data/arrange.json come from
+    tools/build_arrange.py; without that file the page is the shop's list as before."""
     ui = SHOP["ui"][lang]
     out = head(lang, ui["title"], ui["desc"], "")
-    # under the tagline: where Hongdam works, then what it does, the first sentence of the site's description
-    # (her asks 2026-10-24: where "here" is; "everything should be fully self-explanatory")
-    out += '<body class="p-front">\n' + top(lang, "") + '<main>\n<h1>%s</h1>\n' % E(ui["tagline"])
-    out += '<p class="lede">%s</p>\n' % "<br>".join(E(ui[k]) for k in ("place", "lede") if ui.get(k))
+    if ARR:
+        out = out.replace("</head>\n", ARR.CSS + "</head>\n")
+    out += '<body class="p-front">\n' + top(lang, "") + '<main>\n'
+    if ARR:
+        out += ARR.hero(lang)
+    else:
+        # under the tagline: where Hongdam works, then what it does, the first sentence of the site's description
+        # (her asks 2026-10-24: where "here" is; "everything should be fully self-explanatory")
+        out += '<h1>%s</h1>\n' % E(ui["tagline"])
+        out += '<p class="lede">%s</p>\n' % "<br>".join(E(ui[k]) for k in ("place", "lede") if ui.get(k))
     out += '<p class="share-row">%s</p>\n' % share_btn(lang)
     if LOOKS["master"]:
         caps = []
@@ -471,12 +492,22 @@ def front(lang):
         out += job([m["db"] for m in LOOKS["master"]], lang, caps=caps, cls="master") + "\n"
     else:
         out += '<ol class="steps3">%s</ol>\n' % "".join("<li>%s</li>" % E(s) for s in ui["how"])
-    out += search_box(lang)
     pop = sorted((c for c in SHOP["cards"] if c.get("pop")), key=lambda c: c["pop"])
-    out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
-    out += studio_band(lang)
-    out += work_band(lang)
-    out += asknan_band(lang)
+    if ARR:
+        out += ARR.jobs_band(lang)
+        out += ARR.who_band(lang)
+        out += work_band(lang)
+        out += ARR.first_band(lang)
+        out += ARR.soft_band(lang)
+        out += studio_band(lang)
+        out += '<h2 id="find">%s</h2>\n' % E(ARR.ui(lang, "findH"))
+        out += search_box(lang)
+        out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
+    else:
+        out += search_box(lang)
+        out += '<h2>%s</h2>\n<ul class="cards">%s</ul>\n' % (E(ui["popular"]), "".join(card_html(c, lang) for c in pop))
+        out += studio_band(lang)
+        out += work_band(lang)
     count = {}
     for c in SHOP["cards"]:
         count[c["cat"]] = count.get(c["cat"], 0) + 1
@@ -486,6 +517,7 @@ def front(lang):
             db(LOOKS["doors"][c["id"]], play="hover") if LOOKS["doors"].get(c["id"]) else '<span class="e" aria-hidden="true">%s</span>' % c["emoji"],
             E(tr(c["n"], lang)), count.get(c["id"], 0))
         for c in SHOP["cats"]))
+    out += asknan_band(lang)
     # the questions people asked, at the foot of the page above "can't find it?" (her word 2026-10-24: "the question
     # crawl should be at the bottom not the top")
     out += questions_band(lang)
@@ -553,7 +585,8 @@ def work_band(lang):
         for v in g.get("videos", []):
             out += item("mp4", v["src"], tr(v["n"], lang), tr(v["by"], lang), g, v["poster"], v["w"], v["h"], v.get("go") or g["go"])
     out += '</ul>\n<p class="thumbs-go">%s</p>\n' % " · ".join(
-        '<a href="%s">%s →</a>' % (E(g["go"]), E(tr(g["goN"], lang))) for g in WORK["groups"])
+        '<a href="%s">%s →</a>%s' % (E(g["go"]), E(tr(g["goN"], lang)), ' <span class="tag">%s</span>' % E(tr(g["tag"], lang)) if g.get("tag") else "")
+        for g in WORK["groups"])
     out += ('<dialog class="player" aria-labelledby="player-h"><div class="bar"><h3 id="player-h"></h3>'
             '<button type="button" class="x" aria-label="%s">×</button></div><div class="pv"></div>'
             '<p class="desc"></p><p class="go"><a href=""></a></p></dialog>\n' % E(wu["close"]))
@@ -734,11 +767,20 @@ def write(path, text):
     open(full, "w", encoding="utf-8").write(text)
 
 
+# The front page's first half and the job pages (data/arrange.json, tools/build_arrange.py); imported once this
+# module is loaded, since build_arrange reads it.
+ARR = None
+
+
 def ready(c):
     return all(o["i"] in ITEMS or o.get("price") for o in c.get("opts", []))
 
 
 def main():
+    global ARR
+    if os.path.exists(os.path.join(HERE, "data", "arrange.json")):
+        sys.modules.setdefault("build_shop", sys.modules[__name__])
+        import build_arrange as ARR
     waiting = [c["id"] for c in SHOP["cards"] if not ready(c)]
     SHOP["cards"] = [c for c in SHOP["cards"] if ready(c)]
     on_cards = {o["i"] for c in SHOP["cards"] for o in c.get("opts", [])} | {c["add"]["i"] for c in SHOP["cards"] if c.get("add")}
@@ -756,6 +798,8 @@ def main():
     open(os.path.join(HERE, "functions", "_shop_data.js"), "w", encoding="utf-8").write(shop_js_data())
     open(os.path.join(HERE, "functions", "_share_data.js"), "w", encoding="utf-8").write(share_data_js())
     import build_wheel; build_wheel.main()
+    if ARR:
+        ARR.main()
     sitemap()
     print("%d pages · %d cards in %d categories · %d languages" % (n, len(SHOP["cards"]), len(SHOP["cats"]), len(LANGS)))
     if left:

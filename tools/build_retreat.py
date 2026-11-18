@@ -354,7 +354,7 @@ def llms():
     block = ("<!-- RETREAT:START -->\n## Board retreat: five nights near Chiang Rai\n\n"
              "- [%s](%s%s): %s Days: %s. Prices for one board: %s for nonprofits and foundations, %s for companies; "
              "the pilot board pays %s or %s. Rooms and meals are billed by the resort, about %s a person for five nights. "
-             "No retreats in the smoke season (March to May). Hold dates or ask: LINE %s, %s, or the form on the page. Also: %s\n<!-- RETREAT:END -->" % (
+             "No retreats in the smoke season (March to May). Discuss a retreat or ask: LINE %s, %s, or the form on the page. Also: %s\n<!-- RETREAT:END -->" % (
                  u["title"], SITE, B.url("en", PATH), u["desc"], days, baht(pr["np"]), baht(pr["co"]), baht(pr["np_pilot"]),
                  baht(pr["co_pilot"]), baht(pr["hotel_pp"]), D["oa"], B.MAIL,
                  " · ".join("%s %s%s" % (B.SHOP["lang_names"][l], SITE, B.url(l, PATH)) for l in LANGS[1:])))

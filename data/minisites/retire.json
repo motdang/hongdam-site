@@ -477,7 +477,8 @@
     "zh": "50 岁以下：฿3,900 至 ฿11,900；51–60 岁：฿6,000 至 ฿19,300；61–70 岁：฿7,700 至 ฿26,400；71–80 岁：฿11,400 至 ฿39,600",
     "de": "Bis 50: ฿3,900 bis ฿11,900. 51–60 Jahre: ฿6,000 bis ฿19,300. 61–70 Jahre: ฿7,700 bis ฿26,400. 71–80 Jahre: ฿11,400 bis ฿39,600"
    },
-   "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf"
+   "src": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/th-th/cl/long-stay-visa/long-stay-visa.pdf",
+   "kind": "third"
   },
   {
    "t": {
@@ -494,15 +495,16 @@
     "zh": "฿399（通话 100 分钟、流量 20 GB）至 ฿699（通话 300 分钟、流量 60 GB）；不限量 5G 套餐从 ฿1,199 起",
     "de": "Von ฿399 (100 Minuten, 20 GB) bis ฿699 (300 Minuten, 60 GB); unbegrenztes 5G ab ฿1,199"
    },
-   "src": "https://www.true.th/en/postpaid/package/5g-super-max"
+   "src": "https://www.true.th/en/postpaid/package/5g-super-max",
+   "kind": "third"
   },
   {
    "t": {
-    "en": "Rent for a 1-bedroom in Chiang Mai, a month (Numbeo, from its contributors' entries)",
-    "th": "ค่าเช่าห้องนอนเดียวในเชียงใหม่ ต่อเดือน (Numbeo จากข้อมูลที่ผู้ร่วมกรอก)",
-    "my": "ချင်းမိုင်တွင် အိပ်ခန်းတစ်ခန်း အိမ်လခ တစ်လ (Numbeo၊ ပါဝင်ရေးသူများ၏ အချက်အလက်)",
-    "zh": "清迈一居室月租（Numbeo，来自用户填报）",
-    "de": "Miete für eine Wohnung mit einem Schlafzimmer in Chiang Mai, pro Monat (Numbeo, aus Einträgen seiner Nutzer)"
+    "en": "Rent for a 1-bedroom in Chiang Mai, a month (Numbeo, from its contributors' entries; living on your own, not in a care home)",
+    "th": "ค่าเช่าห้องนอนเดียวในเชียงใหม่ ต่อเดือน (Numbeo จากข้อมูลที่ผู้ร่วมกรอก สำหรับอยู่เอง ไม่ใช่บ้านพักผู้สูงอายุ)",
+    "my": "ချင်းမိုင်တွင် အိပ်ခန်းတစ်ခန်း အိမ်လခ တစ်လ (Numbeo၊ ပါဝင်ရေးသူများ၏ အချက်အလက်၊ ကိုယ်တိုင်နေထိုင်ရန်၊ သက်ကြီးရွယ်အိုစောင့်ရှောက်ရေးဂေဟာ မဟုတ်)",
+    "zh": "清迈一居室月租（Numbeo，来自用户填报；自己住，不是养老院）",
+    "de": "Miete für eine Wohnung mit einem Schlafzimmer in Chiang Mai, pro Monat (Numbeo, aus Einträgen seiner Nutzer; für eigenes Wohnen, nicht im Pflegeheim)"
    },
    "p": {
     "en": "Outside the centre ฿8,000 to ฿15,000; in the centre ฿12,000 to ฿24,000",
@@ -511,7 +513,8 @@
     "zh": "市中心以外 ฿8,000 至 ฿15,000；市中心 ฿12,000 至 ฿24,000",
     "de": "Ausserhalb des Zentrums ฿8,000 bis ฿15,000; im Zentrum ฿12,000 bis ฿24,000"
    },
-   "src": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+   "src": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
+   "kind": "third"
   },
   {
    "t": {
@@ -528,7 +531,8 @@
     "zh": "协助费 ฿800，居住证明 ฿500，ATM 卡 ฿300",
     "de": "฿800 Betreuung, ฿500 Wohnsitzbestätigung, ฿300 ATM-Karte"
    },
-   "src": "https://www.chiangmailocator.com/wiki-open-a-bank-account-in-thailand-p179"
+   "src": "https://www.chiangmailocator.com/wiki-open-a-bank-account-in-thailand-p179",
+   "kind": "like"
   }
  ],
  "faq": [

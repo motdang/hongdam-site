@@ -1,0 +1,1303 @@
+{
+ "read": "The front page's first half and the five job pages (Hongdam-AI-Brief, 2026-11-18: headline, two opening actions, five jobs each with a page, who handles a request, a first purchase at a set fee, software, then search, the full list and a general question). tools/build_arrange.py writes docs/<lang>/arrange/<job>/ and docs/<lang>/software/; tools/build_shop.py front() draws the front page from it. {p:<item>} is that item's price this month from data/services.json, with its live mark.",
+ "ui": {
+  "en": {
+   "h1": "What can we arrange for you?",
+   "act1": "Get something handled",
+   "act2": "Explore our software",
+   "jobsH": "Five jobs we arrange",
+   "details": "Details",
+   "whoH": "Who handles your request",
+   "beer": "Our coordinator Beer arranges these jobs with our team in Chiang Rai and Chiang Mai.",
+   "nan": "NaN, who runs Hongdam, looks after Hongdam Studio, the software side.",
+   "firstH": "Start with one phone call",
+   "softH": "Software for teams anywhere",
+   "softL": "Web apps made by Hongdam Studio in Chiang Rai, Thailand. They work in a browser.",
+   "softAll": "All about our software",
+   "studioMore": "More from Hongdam Studio",
+   "findH": "Something else?",
+   "fee": "Our fee",
+   "inc": "Included",
+   "sep": "Paid separately",
+   "time": "Time",
+   "who": "Who",
+   "where": "Where",
+   "done": "Done when",
+   "needs": "You give us",
+   "after": "After you pay",
+   "whoAll": "Our coordinator Beer",
+   "feeNote": "Prices this month. Each one is checked on the 1st.",
+   "optsH": "Set prices",
+   "askH": "Send us the details",
+   "askL": "We reply with what it costs before any work starts.",
+   "replyBy": "Reply to me by",
+   "rLine": "LINE",
+   "rMail": "Email",
+   "rPhone": "Phone",
+   "name": "Your name (optional)",
+   "more": "Anything else?",
+   "sendReq": "Send request",
+   "gotRef": "We have your request {ref}.",
+   "notYet": "This is your request number. Nothing is booked yet: we reply first.",
+   "again": "Send another like this",
+   "orLine": "Or message us on LINE",
+   "lineRef": "Message us on LINE · {ref}",
+   "errSend": "That did not send. Your words are still here: try again, or message us on LINE.",
+   "errMail": "That email address does not look right.",
+   "research": "Background",
+   "researchL": "Our service pages, with the facts and other people's prices we found.",
+   "otherJobs": "The other jobs",
+   "pick": "Choose…",
+   "softTitle": "Software from Hongdam Studio",
+   "sFor": "For",
+   "sSteps": "How it goes",
+   "sFirst": "First thing to try",
+   "sAccess": "Access",
+   "sPrice": "Price",
+   "sHelp": "Help",
+   "sSetup": "Setting up",
+   "sOpens": "opens {site}, its own site",
+   "quoted": "Quote first"
+  },
+  "th": {
+   "h1": "ให้เราจัดการอะไรให้คุณดี",
+   "act1": "ให้เราจัดการให้",
+   "act2": "ดูซอฟต์แวร์ของเรา",
+   "jobsH": "ห้างานที่เราจัดการให้",
+   "details": "ดูรายละเอียด",
+   "whoH": "ใครดูแลคำขอของคุณ",
+   "beer": "คุณเบียร์ ผู้ประสานงานของเรา จัดการงานเหล่านี้กับทีมของเราในเชียงรายและเชียงใหม่",
+   "nan": "คุณแนน ผู้ดูแลหงส์ดำ ดูแล Hongdam Studio ฝั่งซอฟต์แวร์",
+   "firstH": "เริ่มจากโทรหนึ่งครั้ง",
+   "softH": "ซอฟต์แวร์สำหรับทีมทุกที่",
+   "softL": "เว็บแอปจาก Hongdam Studio ที่เชียงราย ใช้งานในเบราว์เซอร์",
+   "softAll": "ซอฟต์แวร์ทั้งหมดของเรา",
+   "studioMore": "ดูเพิ่มที่ Hongdam Studio",
+   "findH": "ต้องการอย่างอื่น?",
+   "fee": "ค่าบริการของเรา",
+   "inc": "รวมอยู่แล้ว",
+   "sep": "จ่ายแยก",
+   "time": "เวลา",
+   "who": "ใครดูแล",
+   "where": "ที่ไหน",
+   "done": "เสร็จเมื่อ",
+   "needs": "สิ่งที่คุณให้เรา",
+   "after": "หลังจ่ายเงิน",
+   "whoAll": "คุณเบียร์ ผู้ประสานงานของเรา",
+   "feeNote": "ราคาเดือนนี้ ตรวจทุกวันที่ 1 ของเดือน",
+   "optsH": "ราคาที่กำหนด",
+   "askH": "ส่งรายละเอียดให้เรา",
+   "askL": "เราตอบกลับพร้อมราคาก่อนเริ่มงาน",
+   "replyBy": "ตอบกลับทาง",
+   "rLine": "LINE",
+   "rMail": "อีเมล",
+   "rPhone": "โทรศัพท์",
+   "name": "ชื่อของคุณ (ไม่บังคับ)",
+   "more": "มีอะไรอีกไหม",
+   "sendReq": "ส่งคำขอ",
+   "gotRef": "เราได้รับคำขอ {ref} แล้ว",
+   "notYet": "นี่คือหมายเลขคำขอ ยังไม่ได้จองอะไร เราจะตอบกลับก่อน",
+   "again": "ส่งอีกครั้งแบบเดียวกัน",
+   "orLine": "หรือทักเราทาง LINE",
+   "lineRef": "ทักเราทาง LINE · {ref}",
+   "errSend": "ส่งไม่สำเร็จ ข้อความของคุณยังอยู่ ลองอีกครั้ง หรือทักเราทาง LINE",
+   "errMail": "อีเมลนี้ดูไม่ถูกต้อง",
+   "research": "ข้อมูลประกอบ",
+   "researchL": "หน้าบริการของเรา พร้อมข้อเท็จจริงและราคาของที่อื่นที่เราค้นมา",
+   "otherJobs": "งานอื่น",
+   "pick": "เลือก…",
+   "softTitle": "ซอฟต์แวร์จาก Hongdam Studio",
+   "sFor": "เหมาะกับ",
+   "sSteps": "ใช้อย่างไร",
+   "sFirst": "ลองอย่างแรก",
+   "sAccess": "การเข้าใช้",
+   "sPrice": "ราคา",
+   "sHelp": "ช่วยเหลือ",
+   "sSetup": "การตั้งค่า",
+   "sOpens": "เปิด {site} เว็บของแอปเอง",
+   "quoted": "แจ้งราคาก่อน"
+  },
+  "my": {
+   "h1": "ကျွန်ုပ်တို့ ဘာစီစဉ်ပေးရမလဲ",
+   "act1": "အလုပ်တစ်ခု အပ်ရန်",
+   "act2": "ကျွန်ုပ်တို့၏ ဆော့ဖ်ဝဲများ",
+   "jobsH": "ကျွန်ုပ်တို့ စီစဉ်ပေးသော အလုပ်ငါးမျိုး",
+   "details": "အသေးစိတ်",
+   "whoH": "သင့်တောင်းဆိုချက်ကို ဘယ်သူ ကိုင်တွယ်မလဲ",
+   "beer": "ကျွန်ုပ်တို့၏ ညှိနှိုင်းရေးမှူး Beer သည် ချင်းရိုင်နှင့် ချင်းမိုင်ရှိ ကျွန်ုပ်တို့အဖွဲ့နှင့်အတူ ဤအလုပ်များကို စီစဉ်ပေးသည်။",
+   "nan": "Hongdam ကို ဦးစီးသူ NaN သည် ဆော့ဖ်ဝဲဘက်ဖြစ်သော Hongdam Studio ကို ကြည့်ရှုသည်။",
+   "firstH": "ဖုန်းတစ်ခေါက်ဖြင့် စတင်ပါ",
+   "softH": "မည်သည့်နေရာရှိ အဖွဲ့များအတွက်မဆို ဆော့ဖ်ဝဲ",
+   "softL": "ထိုင်းနိုင်ငံ ချင်းရိုင်ရှိ Hongdam Studio က ပြုလုပ်သော ဝဘ်အက်ပ်များ။ ဘရောက်ဆာတွင် အသုံးပြုနိုင်သည်။",
+   "softAll": "ကျွန်ုပ်တို့၏ ဆော့ဖ်ဝဲ အားလုံး",
+   "studioMore": "Hongdam Studio မှ နောက်ထပ်",
+   "findH": "အခြား တစ်ခုခု လိုပါသလား",
+   "fee": "ကျွန်ုပ်တို့၏ ဝန်ဆောင်ခ",
+   "inc": "ပါဝင်သည်",
+   "sep": "သီးခြားပေးရန်",
+   "time": "အချိန်",
+   "who": "တာဝန်ခံ",
+   "where": "နေရာ",
+   "done": "ပြီးဆုံးချိန်",
+   "needs": "သင်ပေးရမည့်အရာ",
+   "after": "ငွေပေးပြီးနောက်",
+   "whoAll": "ကျွန်ုပ်တို့၏ ညှိနှိုင်းရေးမှူး Beer",
+   "feeNote": "ဤလ၏ စျေးနှုန်းများ။ လစဉ် ၁ ရက်နေ့တွင် ပြန်စစ်သည်။",
+   "optsH": "သတ်မှတ်စျေးများ",
+   "askH": "အသေးစိတ်ကို ပို့ပါ",
+   "askL": "အလုပ်မစမီ ကုန်ကျစရိတ်ကို ပြန်ကြားပါမည်။",
+   "replyBy": "ပြန်ကြားရန် နည်းလမ်း",
+   "rLine": "LINE",
+   "rMail": "အီးမေးလ်",
+   "rPhone": "ဖုန်း",
+   "name": "သင့်အမည် (မဖြည့်လည်းရ)",
+   "more": "အခြား ဘာရှိသေးလဲ",
+   "sendReq": "တောင်းဆိုချက် ပို့ရန်",
+   "gotRef": "သင့်တောင်းဆိုချက် {ref} ကို ရရှိပါပြီ။",
+   "notYet": "ဤသည်မှာ တောင်းဆိုချက်နံပါတ် ဖြစ်သည်။ ဘာမျှ မမှာရသေးပါ၊ ကျွန်ုပ်တို့ ဦးစွာ ပြန်ကြားပါမည်။",
+   "again": "ဒီလို နောက်တစ်ခု ပို့ရန်",
+   "orLine": "သို့မဟုတ် LINE မှ စာပို့ပါ",
+   "lineRef": "LINE မှ စာပို့ရန် · {ref}",
+   "errSend": "မပို့နိုင်ပါ။ သင်ရေးထားသည်များ ဤနေရာတွင် ရှိနေဆဲ၊ ထပ်စမ်းပါ သို့မဟုတ် LINE မှ စာပို့ပါ။",
+   "errMail": "ဤအီးမေးလ်လိပ်စာ မမှန်ပုံရသည်။",
+   "research": "နောက်ခံအချက်အလက်",
+   "researchL": "ကျွန်ုပ်တို့ ရှာဖွေထားသော အချက်အလက်များနှင့် အခြားသူများ၏ စျေးနှုန်းများပါသော ဝန်ဆောင်မှုစာမျက်နှာများ။",
+   "otherJobs": "အခြားအလုပ်များ",
+   "pick": "ရွေးပါ…",
+   "softTitle": "Hongdam Studio ၏ ဆော့ဖ်ဝဲ",
+   "sFor": "သင့်တော်သူ",
+   "sSteps": "အသုံးပြုပုံ",
+   "sFirst": "ပထမဆုံး စမ်းရန်",
+   "sAccess": "ဝင်ရောက်ခွင့်",
+   "sPrice": "စျေးနှုန်း",
+   "sHelp": "အကူအညီ",
+   "sSetup": "စတင်ပြင်ဆင်ခြင်း",
+   "sOpens": "{site} ကို ဖွင့်သည် (၎င်း၏ ကိုယ်ပိုင်ဆိုက်)",
+   "quoted": "စျေးနှုန်း ဦးစွာပြော"
+  },
+  "zh": {
+   "h1": "需要我们帮您安排什么？",
+   "act1": "请我们办事",
+   "act2": "看看我们的软件",
+   "jobsH": "我们安排的五类事",
+   "details": "详情",
+   "whoH": "谁来处理您的请求",
+   "beer": "我们的协调员 Beer 和我们在清莱、清迈的团队一起安排这些事。",
+   "nan": "Hongdam 的负责人 NaN 负责软件部分 Hongdam Studio。",
+   "firstH": "先从一通电话开始",
+   "softH": "适合各地团队的软件",
+   "softL": "泰国清莱 Hongdam Studio 制作的网页应用，在浏览器里使用。",
+   "softAll": "我们的全部软件",
+   "studioMore": "更多 Hongdam Studio 作品",
+   "findH": "需要别的？",
+   "fee": "我们的服务费",
+   "inc": "包含",
+   "sep": "另付",
+   "time": "时间",
+   "who": "负责人",
+   "where": "地点",
+   "done": "完成标准",
+   "needs": "您需要提供",
+   "after": "付款以后",
+   "whoAll": "我们的协调员 Beer",
+   "feeNote": "本月价格，每月 1 日检查一次。",
+   "optsH": "固定价格",
+   "askH": "把详情发给我们",
+   "askL": "开始之前，我们会先回复费用。",
+   "replyBy": "回复方式",
+   "rLine": "LINE",
+   "rMail": "邮件",
+   "rPhone": "电话",
+   "name": "您的名字（可不填）",
+   "more": "还有别的吗？",
+   "sendReq": "发送请求",
+   "gotRef": "我们已收到您的请求 {ref}。",
+   "notYet": "这是您的请求编号，还没有预订任何东西，我们会先回复您。",
+   "again": "再发一个同样的请求",
+   "orLine": "或者在 LINE 上联系我们",
+   "lineRef": "在 LINE 上联系我们 · {ref}",
+   "errSend": "没有发送成功。您写的内容还在：请再试一次，或在 LINE 上联系我们。",
+   "errMail": "这个邮箱地址看起来不对。",
+   "research": "背景资料",
+   "researchL": "我们的服务页面，附有我们查到的资料和别家的价格。",
+   "otherJobs": "其他事项",
+   "pick": "请选择…",
+   "softTitle": "Hongdam Studio 的软件",
+   "sFor": "适合",
+   "sSteps": "怎么用",
+   "sFirst": "先试这个",
+   "sAccess": "使用权限",
+   "sPrice": "价格",
+   "sHelp": "帮助",
+   "sSetup": "设置",
+   "sOpens": "打开 {site}（它自己的网站）",
+   "quoted": "先报价"
+  },
+  "de": {
+   "h1": "Was dürfen wir für Sie erledigen?",
+   "act1": "Etwas erledigen lassen",
+   "act2": "Unsere Software ansehen",
+   "jobsH": "Fünf Aufgaben, die wir erledigen",
+   "details": "Details",
+   "whoH": "Wer sich um Ihre Anfrage kümmert",
+   "beer": "Unsere Koordinatorin Beer erledigt diese Aufgaben mit unserem Team in Chiang Rai und Chiang Mai.",
+   "nan": "NaN, die Hongdam leitet, kümmert sich um Hongdam Studio, die Software-Seite.",
+   "firstH": "Fangen Sie mit einem Anruf an",
+   "softH": "Software für Teams überall",
+   "softL": "Web-Apps von Hongdam Studio in Chiang Rai, Thailand. Sie laufen im Browser.",
+   "softAll": "Unsere ganze Software",
+   "studioMore": "Mehr von Hongdam Studio",
+   "findH": "Etwas anderes?",
+   "fee": "Unsere Gebühr",
+   "inc": "Inbegriffen",
+   "sep": "Separat bezahlt",
+   "time": "Zeit",
+   "who": "Wer",
+   "where": "Wo",
+   "done": "Fertig, wenn",
+   "needs": "Sie geben uns",
+   "after": "Nach der Zahlung",
+   "whoAll": "Unsere Koordinatorin Beer",
+   "feeNote": "Preise diesen Monat. Jeder wird am 1. geprüft.",
+   "optsH": "Feste Preise",
+   "askH": "Schicken Sie uns die Details",
+   "askL": "Vor Beginn der Arbeit antworten wir mit dem Preis.",
+   "replyBy": "Antwort per",
+   "rLine": "LINE",
+   "rMail": "E-Mail",
+   "rPhone": "Telefon",
+   "name": "Ihr Name (freiwillig)",
+   "more": "Sonst noch etwas?",
+   "sendReq": "Anfrage senden",
+   "gotRef": "Ihre Anfrage {ref} ist bei uns.",
+   "notYet": "Das ist Ihre Anfragenummer. Gebucht ist noch nichts: Wir antworten zuerst.",
+   "again": "Noch eine solche Anfrage",
+   "orLine": "Oder schreiben Sie uns auf LINE",
+   "lineRef": "Auf LINE schreiben · {ref}",
+   "errSend": "Das hat nicht geklappt. Ihr Text ist noch da: Bitte noch einmal, oder schreiben Sie uns auf LINE.",
+   "errMail": "Diese E-Mail-Adresse sieht nicht richtig aus.",
+   "research": "Hintergrund",
+   "researchL": "Unsere Serviceseiten, mit den Fakten und Preisen anderer, die wir gefunden haben.",
+   "otherJobs": "Die anderen Aufgaben",
+   "pick": "Bitte wählen…",
+   "softTitle": "Software von Hongdam Studio",
+   "sFor": "Für",
+   "sSteps": "So läuft es",
+   "sFirst": "Zuerst ausprobieren",
+   "sAccess": "Zugang",
+   "sPrice": "Preis",
+   "sHelp": "Hilfe",
+   "sSetup": "Einrichtung",
+   "sOpens": "öffnet {site}, die eigene Seite",
+   "quoted": "Erst ein Angebot"
+  }
+ },
+ "people": {
+  "pic": "/media/rotary-lice.jpg",
+  "w": 960,
+  "h": 540
+ },
+ "first": {
+  "card": "call",
+  "opt": "call",
+  "scope": {
+   "en": "We call one shop, office, clinic, landlord or anyone else for you, in Thai or English.",
+   "th": "เราโทรหาร้าน หน่วยงาน คลินิก เจ้าของบ้าน หรือใครก็ได้แทนคุณ เป็นภาษาไทยหรืออังกฤษ",
+   "my": "ဆိုင်၊ ရုံး၊ ဆေးခန်း၊ အိမ်ရှင် သို့မဟုတ် မည်သူ့ကိုမဆို သင့်ကိုယ်စား ထိုင်း သို့မဟုတ် အင်္ဂလိပ်ဘာသာဖြင့် ဖုန်းဆက်ပေးသည်။",
+   "zh": "我们用泰语或英语替您给商店、机构、诊所、房东或任何人打电话。",
+   "de": "Wir rufen für Sie ein Geschäft, ein Amt, eine Klinik, den Vermieter oder sonst jemanden an, auf Thai oder Englisch."
+  },
+  "fee": {
+   "en": "{p:call} a call, up to 15 minutes",
+   "th": "ครั้งละ {p:call} ไม่เกิน 15 นาที",
+   "my": "တစ်ခေါက်လျှင် {p:call}၊ ၁၅ မိနစ်အထိ",
+   "zh": "每通 {p:call}，最长 15 分钟",
+   "de": "{p:call} pro Anruf, bis 15 Minuten"
+  },
+  "needs": {
+   "en": "The name and number to call, and what to ask.",
+   "th": "ชื่อและเบอร์ที่จะโทร และสิ่งที่อยากถาม",
+   "my": "ဖုန်းဆက်ရမည့် အမည်နှင့် နံပါတ်၊ မေးလိုသည့်အရာ။",
+   "zh": "要打给谁、电话号码，以及要问的问题。",
+   "de": "Name und Nummer, die wir anrufen, und Ihre Frage."
+  },
+  "done": {
+   "en": "You have our note of what they said.",
+   "th": "คุณได้รับข้อความสรุปว่าเขาพูดอะไร",
+   "my": "သူတို့ပြောသည့်အရာကို ကျွန်ုပ်တို့ရေးထားသော မှတ်စုကို သင်ရရှိသည်။",
+   "zh": "您收到我们写下的对方回复。",
+   "de": "Sie haben unsere Notiz, was gesagt wurde."
+  },
+  "after": {
+   "en": "An order number, and a page that shows where your order stands.",
+   "th": "หมายเลขคำสั่งซื้อ และหน้าที่แสดงว่างานถึงไหนแล้ว",
+   "my": "အော်ဒါနံပါတ်နှင့် သင့်အော်ဒါ ဘယ်အဆင့်ရောက်နေသည်ကို ပြသော စာမျက်နှာ။",
+   "zh": "一个订单号，以及一个显示订单进度的页面。",
+   "de": "Eine Bestellnummer und eine Seite, die zeigt, wo Ihre Bestellung steht."
+  }
+ },
+ "jobs": [
+  {
+   "id": "parcel",
+   "rule": "quote",
+   "line": "moving",
+   "pic": [
+    "parcel",
+    "airplane",
+    "mailbox"
+   ],
+   "main": "luggage",
+   "n": {
+    "en": "Send a parcel across a border",
+    "th": "ส่งพัสดุข้ามประเทศ",
+    "my": "နိုင်ငံခြားသို့ ပါဆယ်ပို့ရန်",
+    "zh": "跨境寄包裹",
+    "de": "Ein Paket über die Grenze schicken"
+   },
+   "l": {
+    "en": "We arrange the packing, pickup and carrier, and tell you every cost before it goes.",
+    "th": "เราจัดการแพ็ก รับของ และหาขนส่ง แล้วแจ้งทุกค่าใช้จ่ายก่อนส่ง",
+    "my": "ထုပ်ပိုးခြင်း၊ လာယူခြင်းနှင့် သယ်ယူပို့ဆောင်သူကို စီစဉ်ပေးပြီး မပို့မီ ကုန်ကျစရိတ်အားလုံးကို ပြောပြပါမည်။",
+    "zh": "我们安排打包、上门取件和承运商，寄出前告诉您每一笔费用。",
+    "de": "Wir organisieren Verpackung, Abholung und Spediteur und nennen Ihnen jeden Kostenpunkt, bevor es losgeht."
+   },
+   "fee": {
+    "en": "Quoted before we start. Inside Thailand, luggage or a scooter: {p:luggage}, plus the courier at its price. Up to 10 boxes moved abroad: {p:move-boxes}.",
+    "th": "แจ้งราคาก่อนเริ่มงาน ส่งกระเป๋าหรือมอเตอร์ไซค์ในประเทศ: {p:luggage} บวกค่าขนส่งตามจริง ย้ายไม่เกิน 10 กล่องไปต่างประเทศ: {p:move-boxes}",
+    "my": "မစမီ စျေးနှုန်းပြောပါမည်။ ထိုင်းနိုင်ငံအတွင်း ခရီးဆောင်အိတ် သို့မဟုတ် စကူတာ: {p:luggage} နှင့် ပို့ဆောင်ခ အမှန်အတိုင်း။ နိုင်ငံခြားသို့ သေတ္တာ ၁၀ လုံးအထိ: {p:move-boxes}။",
+    "zh": "开始前报价。泰国境内寄行李或摩托车：{p:luggage}，快递费按实际。最多 10 箱寄往国外：{p:move-boxes}。",
+    "de": "Preis vor dem Start. Innerhalb Thailands, Gepäck oder ein Roller: {p:luggage}, dazu der Kurier zu seinem Preis. Bis zu 10 Kisten ins Ausland: {p:move-boxes}."
+   },
+   "inc": {
+    "en": "Finding and booking the carrier, and the customs form.",
+    "th": "หาและจองบริษัทขนส่ง และเอกสารศุลกากร",
+    "my": "သယ်ယူပို့ဆောင်သူကို ရှာဖွေ ကြိုတင်မှာယူခြင်းနှင့် အကောက်ခွန်ပုံစံ။",
+    "zh": "寻找并预订承运商，以及海关表格。",
+    "de": "Spediteur finden und buchen, und das Zollformular."
+   },
+   "sep": {
+    "en": "Packing materials, pickup, carriage, and any duty or tax set at the border: each on its own line of the quote, at the price we pay.",
+    "th": "วัสดุแพ็ก ค่ารับของ ค่าขนส่ง และภาษีหรืออากรที่ด่านกำหนด แยกเป็นบรรทัดในใบเสนอราคา ตามราคาจริงที่เราจ่าย",
+    "my": "ထုပ်ပိုးပစ္စည်း၊ လာယူခ၊ သယ်ယူခနှင့် နယ်စပ်တွင် သတ်မှတ်သော အခွန်များ — စျေးနှုန်းစာရင်းတွင် တစ်ကြောင်းစီ၊ ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "包装材料、取件、运费，以及边境核定的关税或税费：报价单上各列一行，按我们实付的价格。",
+    "de": "Verpackung, Abholung, Fracht und Zoll oder Steuern, die an der Grenze festgesetzt werden: je eine eigene Zeile im Angebot, zu dem Preis, den wir zahlen."
+   },
+   "done": {
+    "en": "Your quote says where our part ends: when the carrier takes the parcel, when you have its tracking number, or when it is delivered.",
+    "th": "ใบเสนอราคาบอกว่างานของเราจบตรงไหน: ตอนส่งของให้ขนส่ง ตอนคุณได้เลขติดตามพัสดุ หรือตอนของถึงปลายทาง",
+    "my": "ကျွန်ုပ်တို့အလုပ် ဘယ်မှာ ပြီးသည်ကို စျေးနှုန်းစာရင်းတွင် ဖော်ပြသည် — ပို့ဆောင်သူ လက်ခံချိန်၊ ခြေရာခံနံပါတ် ရချိန် သို့မဟုတ် ရောက်ရှိချိန်။",
+    "zh": "报价单写明我们的工作在哪里结束：承运商收件时、您拿到追踪号时，或包裹送达时。",
+    "de": "Ihr Angebot sagt, wo unser Teil endet: wenn der Spediteur das Paket nimmt, wenn Sie die Sendungsnummer haben, oder bei der Zustellung."
+   },
+   "form": [
+    {
+     "k": "from",
+     "n": {
+      "en": "From (town and country)",
+      "th": "ส่งจาก (เมืองและประเทศ)",
+      "my": "မှ (မြို့နှင့် နိုင်ငံ)",
+      "zh": "寄出地（城市和国家）",
+      "de": "Von (Ort und Land)"
+     },
+     "req": true
+    },
+    {
+     "k": "to",
+     "n": {
+      "en": "To (town and country)",
+      "th": "ส่งถึง (เมืองและประเทศ)",
+      "my": "သို့ (မြို့နှင့် နိုင်ငံ)",
+      "zh": "目的地（城市和国家）",
+      "de": "Nach (Ort und Land)"
+     },
+     "req": true
+    },
+    {
+     "k": "contents",
+     "n": {
+      "en": "What is inside",
+      "th": "ข้างในมีอะไร",
+      "my": "အထဲတွင် ဘာပါသလဲ",
+      "zh": "里面是什么",
+      "de": "Was ist drin"
+     },
+     "req": true
+    },
+    {
+     "k": "size",
+     "n": {
+      "en": "Weight or size, roughly",
+      "th": "น้ำหนักหรือขนาดโดยประมาณ",
+      "my": "အလေးချိန် သို့မဟုတ် အရွယ်အစား (ခန့်မှန်း)",
+      "zh": "大概的重量或尺寸",
+      "de": "Gewicht oder Größe, ungefähr"
+     }
+    },
+    {
+     "k": "date",
+     "t": "date",
+     "n": {
+      "en": "When should it go?",
+      "th": "อยากส่งวันไหน",
+      "my": "ဘယ်နေ့ ပို့ချင်သလဲ",
+      "zh": "希望哪天寄出？",
+      "de": "Wann soll es los?"
+     }
+    }
+   ],
+   "opts": [
+    {
+     "c": "luggage",
+     "o": "luggage"
+    },
+    {
+     "c": "move",
+     "o": "move-boxes"
+    }
+   ],
+   "research": [
+    "luggage",
+    "move",
+    "partner"
+   ]
+  },
+  {
+   "id": "appointment",
+   "rule": "buy",
+   "line": "care",
+   "pic": [
+    "calendar",
+    "translate",
+    "check"
+   ],
+   "main": "specialist",
+   "brand": "Defiant",
+   "n": {
+    "en": "Book or manage an appointment",
+    "th": "จองหรือจัดการนัดหมาย",
+    "my": "ချိန်းဆိုမှု ယူရန် သို့မဟုတ် စီမံရန်",
+    "zh": "预约或管理就诊",
+    "de": "Einen Termin buchen oder verwalten"
+   },
+   "l": {
+    "en": "Physio, chiropractic or dental: we find the clinic and book the visit, and an interpreter can go with you.",
+    "th": "กายภาพบำบัด ไคโรแพรคติก หรือทันตกรรม: เราหาคลินิกและจองให้ มีล่ามไปด้วยได้",
+    "my": "ကိုယ်ကာယကုထုံး၊ ကိုင်ရိုပရက်တစ် သို့မဟုတ် သွားဘက်ဆိုင်ရာ — ဆေးခန်းရှာပြီး ချိန်းဆိုပေးသည်၊ စကားပြန်လည်း လိုက်ပါနိုင်သည်။",
+    "zh": "物理治疗、脊椎矫正或牙科：我们找诊所、预约，也可以派翻译陪您去。",
+    "de": "Physiotherapie, Chiropraktik oder Zahnarzt: Wir finden die Praxis und buchen den Termin; eine Dolmetscherin kann mitkommen."
+   },
+   "brandL": {
+    "en": "Defiant (defiant.to) is the medical-visit service that NaN, who runs Hongdam, set up in Chiang Mai. Appointments you ask for here are booked through Defiant.",
+    "th": "Defiant (defiant.to) คือบริการพาไปหาหมอในเชียงใหม่ที่คุณแนน ผู้ดูแลหงส์ดำ ตั้งขึ้น นัดหมายที่ขอที่นี่จะจองผ่าน Defiant",
+    "my": "Defiant (defiant.to) သည် Hongdam ကို ဦးစီးသူ NaN က ချင်းမိုင်တွင် တည်ထောင်ထားသော ဆေးကုသမှု ချိန်းဆိုဝန်ဆောင်မှု ဖြစ်သည်။ ဤနေရာတွင် တောင်းဆိုသော ချိန်းဆိုမှုများကို Defiant မှတစ်ဆင့် ယူပေးသည်။",
+    "zh": "Defiant（defiant.to）是 Hongdam 的负责人 NaN 在清迈创办的就医陪同服务。您在这里提出的预约，经由 Defiant 办理。",
+    "de": "Defiant (defiant.to) ist der Arztbesuch-Service, den NaN, die Hongdam leitet, in Chiang Mai aufgebaut hat. Termine, die Sie hier anfragen, bucht Defiant."
+   },
+   "where": {
+    "en": "Chiang Mai",
+    "th": "เชียงใหม่",
+    "my": "ချင်းမိုင်",
+    "zh": "清迈",
+    "de": "Chiang Mai"
+   },
+   "fee": {
+    "en": "Booking only: {p:specialist-book}. With an interpreter who goes with you: {p:specialist}, up to 4 hours, then {p:specialist-hour} an hour.",
+    "th": "จองอย่างเดียว: {p:specialist-book} พร้อมล่ามไปด้วย: {p:specialist} ไม่เกิน 4 ชั่วโมง จากนั้นชั่วโมงละ {p:specialist-hour}",
+    "my": "ချိန်းဆိုရုံသာ: {p:specialist-book}။ စကားပြန် လိုက်ပါလျှင်: {p:specialist}၊ ၄ နာရီအထိ၊ ထို့နောက် တစ်နာရီ {p:specialist-hour}။",
+    "zh": "仅预约：{p:specialist-book}。翻译陪同：{p:specialist}，最长 4 小时，之后每小时 {p:specialist-hour}。",
+    "de": "Nur Buchung: {p:specialist-book}. Mit Dolmetscherin, die mitkommt: {p:specialist}, bis 4 Stunden, danach {p:specialist-hour} pro Stunde."
+   },
+   "inc": {
+    "en": "Finding the clinic and booking the visit. With the interpreter: the interpreter at the visit.",
+    "th": "หาคลินิกและจองนัด หากเลือกแบบมีล่าม: ล่ามไปกับคุณ",
+    "my": "ဆေးခန်းရှာခြင်းနှင့် ချိန်းဆိုခြင်း။ စကားပြန်ပါလျှင် — ဆေးခန်းတွင် စကားပြန်။",
+    "zh": "找诊所并预约。选翻译陪同的：就诊时有翻译在场。",
+    "de": "Praxis finden und Termin buchen. Mit Dolmetscherin: die Dolmetscherin beim Termin."
+   },
+   "sep": {
+    "en": "The clinic's fees, paid to the clinic at its own price.",
+    "th": "ค่ารักษาของคลินิก จ่ายให้คลินิกตามราคาของคลินิก",
+    "my": "ဆေးခန်းခ — ဆေးခန်း၏ စျေးအတိုင်း ဆေးခန်းသို့ ပေးရသည်။",
+    "zh": "诊所的费用，按诊所的价格直接付给诊所。",
+    "de": "Die Kosten der Praxis, zu ihrem Preis an die Praxis bezahlt."
+   },
+   "time": {
+    "en": "The interpreter: up to 4 hours, then by the hour.",
+    "th": "ล่าม: ไม่เกิน 4 ชั่วโมง เกินคิดเป็นชั่วโมง",
+    "my": "စကားပြန် — ၄ နာရီအထိ၊ ထို့နောက် နာရီအလိုက်။",
+    "zh": "翻译：最长 4 小时，超出按小时计。",
+    "de": "Dolmetscherin: bis 4 Stunden, danach nach Stunden."
+   },
+   "done": {
+    "en": "We send you the date, time and address the clinic confirmed, and how to change the date. The clinic gets your name, the kind of visit and your dates.",
+    "th": "เราส่งวัน เวลา และที่อยู่ที่คลินิกยืนยันให้คุณ พร้อมวิธีเลื่อนนัด คลินิกได้รับชื่อของคุณ ประเภทการรักษา และวันที่คุณสะดวก",
+    "my": "ဆေးခန်းက အတည်ပြုသော ရက်၊ အချိန်၊ လိပ်စာနှင့် ရက်ပြောင်းနည်းကို ပို့ပေးသည်။ ဆေးခန်းသည် သင့်အမည်၊ ကုသမှုအမျိုးအစားနှင့် သင်အဆင်ပြေသောရက်များကို ရရှိသည်။",
+    "zh": "我们把诊所确认的日期、时间、地址和改期方法发给您。诊所会收到您的名字、就诊类型和您方便的日期。",
+    "de": "Wir schicken Ihnen Datum, Uhrzeit und Adresse, die die Praxis bestätigt hat, und wie Sie den Termin verschieben. Die Praxis erhält Ihren Namen, die Art des Termins und Ihre Wunschtage."
+   },
+   "notYet": {
+    "en": "This is your request number, not an appointment. You have an appointment once we send you the time the clinic confirmed.",
+    "th": "นี่คือหมายเลขคำขอ ยังไม่ใช่นัดหมาย คุณมีนัดเมื่อเราส่งเวลาที่คลินิกยืนยันให้แล้ว",
+    "my": "ဤသည်မှာ တောင်းဆိုချက်နံပါတ်ဖြစ်ပြီး ချိန်းဆိုမှု မဟုတ်သေးပါ။ ဆေးခန်းက အတည်ပြုသော အချိန်ကို ကျွန်ုပ်တို့ ပို့ပြီးမှ ချိန်းဆိုမှု ရှိပါမည်။",
+    "zh": "这是您的请求编号，还不是预约。我们把诊所确认的时间发给您之后，预约才算成立。",
+    "de": "Das ist Ihre Anfragenummer, kein Termin. Einen Termin haben Sie, sobald wir Ihnen die von der Praxis bestätigte Zeit schicken."
+   },
+   "form": [
+    {
+     "k": "kind",
+     "t": "select",
+     "req": true,
+     "n": {
+      "en": "Kind of visit",
+      "th": "ประเภทการรักษา",
+      "my": "ကုသမှု အမျိုးအစား",
+      "zh": "就诊类型",
+      "de": "Art des Termins"
+     },
+     "o": [
+      {
+       "en": "Physio",
+       "th": "กายภาพบำบัด",
+       "my": "ကိုယ်ကာယကုထုံး",
+       "zh": "物理治疗",
+       "de": "Physiotherapie"
+      },
+      {
+       "en": "Chiropractic",
+       "th": "ไคโรแพรคติก",
+       "my": "ကိုင်ရိုပရက်တစ်",
+       "zh": "脊椎矫正",
+       "de": "Chiropraktik"
+      },
+      {
+       "en": "Dental",
+       "th": "ทันตกรรม",
+       "my": "သွားဘက်ဆိုင်ရာ",
+       "zh": "牙科",
+       "de": "Zahnarzt"
+      },
+      {
+       "en": "Something else",
+       "th": "อื่นๆ",
+       "my": "အခြား",
+       "zh": "其他",
+       "de": "Etwas anderes"
+      }
+     ]
+    },
+    {
+     "k": "city",
+     "n": {
+      "en": "City",
+      "th": "เมือง",
+      "my": "မြို့",
+      "zh": "城市",
+      "de": "Stadt"
+     },
+     "v": {
+      "en": "Chiang Mai",
+      "th": "เชียงใหม่",
+      "my": "ချင်းမိုင်",
+      "zh": "清迈",
+      "de": "Chiang Mai"
+     }
+    },
+    {
+     "k": "dates",
+     "n": {
+      "en": "Days and times that suit you",
+      "th": "วันและเวลาที่สะดวก",
+      "my": "အဆင်ပြေသော ရက်နှင့် အချိန်",
+      "zh": "您方便的日期和时间",
+      "de": "Tage und Zeiten, die Ihnen passen"
+     },
+     "req": true
+    },
+    {
+     "k": "lang",
+     "n": {
+      "en": "Your language at the visit",
+      "th": "ภาษาที่คุณใช้ตอนพบหมอ",
+      "my": "ဆေးခန်းတွင် သင်ပြောမည့် ဘာသာစကား",
+      "zh": "就诊时您用的语言",
+      "de": "Ihre Sprache beim Termin"
+     }
+    }
+   ],
+   "opts": [
+    {
+     "c": "specialist",
+     "o": "specialist-book"
+    },
+    {
+     "c": "specialist",
+     "o": "specialist"
+    }
+   ],
+   "research": [
+    "specialist",
+    "doctor",
+    "interp"
+   ],
+   "card": {
+    "en": "Booking {p:specialist-book}",
+    "th": "จอง {p:specialist-book}",
+    "my": "ချိန်းဆိုခ {p:specialist-book}",
+    "zh": "预约 {p:specialist-book}",
+    "de": "Buchung {p:specialist-book}"
+   }
+  },
+  {
+   "id": "home-service",
+   "rule": "buy",
+   "line": "help",
+   "pic": [
+    "telephone",
+    "wrench",
+    "calendar"
+   ],
+   "main": "trades",
+   "n": {
+    "en": "Call and arrange a home service",
+    "th": "โทรนัดช่างหรือบริการที่บ้าน",
+    "my": "အိမ်ဝန်ဆောင်မှုကို ဖုန်းဆက် စီစဉ်ပေးရန်",
+    "zh": "打电话安排上门服务",
+    "de": "Einen Handwerker anrufen und bestellen"
+   },
+   "l": {
+    "en": "Plumber, electrician, air-conditioner cleaner, locksmith or cleaner: we call in Thai, get the price before work starts, and book a time.",
+    "th": "ช่างประปา ช่างไฟ ล้างแอร์ ช่างกุญแจ หรือแม่บ้าน: เราโทรเป็นภาษาไทย ขอราคาก่อนเริ่มงาน และนัดเวลาให้",
+    "my": "ရေပိုက်ဆရာ၊ လျှပ်စစ်ဆရာ၊ လေအေးပေးစက် သန့်ရှင်းရေး၊ သော့ဆရာ သို့မဟုတ် သန့်ရှင်းရေးဝန်ထမ်း — ထိုင်းလို ဖုန်းဆက်၊ အလုပ်မစမီ စျေးမေးပြီး အချိန်ချိန်းပေးသည်။",
+    "zh": "水管工、电工、空调清洗、锁匠或清洁工：我们用泰语打电话，开工前问好价格，并约好时间。",
+    "de": "Klempner, Elektriker, Klimaanlagen-Reinigung, Schlüsseldienst oder Putzhilfe: Wir rufen auf Thai an, erfragen den Preis vor Arbeitsbeginn und buchen einen Termin."
+   },
+   "fee": {
+    "en": "Booking a worker: {p:trades} a job. One phone call in Thai: {p:call}, up to 15 minutes. Someone from our team at your place: {p:there} an hour.",
+    "th": "หาช่างและนัดให้: งานละ {p:trades} โทรแทนหนึ่งครั้ง: {p:call} ไม่เกิน 15 นาที คนของเราไปอยู่ด้วยที่บ้าน: ชั่วโมงละ {p:there}",
+    "my": "အလုပ်သမား ချိန်းပေးခြင်း: တစ်ခုလျှင် {p:trades}။ ထိုင်းလို ဖုန်းတစ်ခေါက်: {p:call}၊ ၁၅ မိနစ်အထိ။ ကျွန်ုပ်တို့အဖွဲ့မှ တစ်ဦး သင့်နေရာတွင်: တစ်နာရီ {p:there}။",
+    "zh": "预约工人：每单 {p:trades}。泰语电话一次：{p:call}，最长 15 分钟。我们的人到您家陪同：每小时 {p:there}。",
+    "de": "Handwerker buchen: {p:trades} pro Auftrag. Ein Anruf auf Thai: {p:call}, bis 15 Minuten. Jemand aus unserem Team bei Ihnen: {p:there} pro Stunde."
+   },
+   "inc": {
+    "en": "Explaining the job in Thai, asking the price before work starts, booking a time, and following the job until it is done.",
+    "th": "อธิบายงานเป็นภาษาไทย ขอราคาก่อนเริ่มงาน นัดเวลา และติดตามจนงานเสร็จ",
+    "my": "အလုပ်ကို ထိုင်းလို ရှင်းပြခြင်း၊ မစမီ စျေးမေးခြင်း၊ အချိန်ချိန်းခြင်းနှင့် အလုပ်ပြီးသည်အထိ စောင့်ကြည့်ခြင်း။",
+    "zh": "用泰语说明工作内容、开工前问价、约时间，并跟进到完工。",
+    "de": "Den Auftrag auf Thai erklären, den Preis vor Beginn erfragen, einen Termin buchen und dranbleiben, bis die Arbeit fertig ist."
+   },
+   "sep": {
+    "en": "The worker's labour, travel and materials, paid to the worker.",
+    "th": "ค่าแรง ค่าเดินทาง และค่าวัสดุของช่าง จ่ายให้ช่างโดยตรง",
+    "my": "အလုပ်သမား၏ လုပ်အားခ၊ ခရီးစရိတ်နှင့် ပစ္စည်းခ — အလုပ်သမားထံ တိုက်ရိုက်ပေးရသည်။",
+    "zh": "工人的人工费、路费和材料费，直接付给工人。",
+    "de": "Arbeitszeit, Anfahrt und Material des Handwerkers, direkt an ihn bezahlt."
+   },
+   "time": {
+    "en": "A phone call: up to 15 minutes. At your place: by the hour.",
+    "th": "โทร: ไม่เกิน 15 นาที อยู่ด้วยที่บ้าน: คิดเป็นชั่วโมง",
+    "my": "ဖုန်း — ၁၅ မိနစ်အထိ။ သင့်နေရာတွင် — နာရီအလိုက်။",
+    "zh": "电话：最长 15 分钟。上门陪同：按小时计。",
+    "de": "Ein Anruf: bis 15 Minuten. Bei Ihnen: nach Stunden."
+   },
+   "done": {
+    "en": "You get the worker's name and the booked time, and we follow the job until the work is done.",
+    "th": "คุณได้ชื่อช่างและเวลานัด และเราติดตามจนงานเสร็จ",
+    "my": "အလုပ်သမား၏ အမည်နှင့် ချိန်းထားသော အချိန်ကို ရရှိပြီး အလုပ်ပြီးသည်အထိ ကျွန်ုပ်တို့ စောင့်ကြည့်သည်။",
+    "zh": "您会拿到工人的名字和约好的时间，我们跟进到完工。",
+    "de": "Sie bekommen den Namen des Handwerkers und den Termin, und wir bleiben dran, bis die Arbeit fertig ist."
+   },
+   "form": [
+    {
+     "k": "work",
+     "n": {
+      "en": "What needs doing",
+      "th": "ต้องทำอะไร",
+      "my": "ဘာလုပ်ရမလဲ",
+      "zh": "需要做什么",
+      "de": "Was zu tun ist"
+     },
+     "req": true
+    },
+    {
+     "k": "area",
+     "n": {
+      "en": "Area (town and district is enough)",
+      "th": "ย่าน (บอกอำเภอหรือตำบลก็พอ)",
+      "my": "နေရာ (မြို့နှင့် ရပ်ကွက် လုံလောက်သည်)",
+      "zh": "区域（城市和区即可）",
+      "de": "Gegend (Ort und Viertel reichen)"
+     },
+     "req": true
+    },
+    {
+     "k": "when",
+     "n": {
+      "en": "When suits you",
+      "th": "สะดวกเมื่อไร",
+      "my": "ဘယ်အချိန် အဆင်ပြေလဲ",
+      "zh": "什么时间方便",
+      "de": "Wann es Ihnen passt"
+     }
+    }
+   ],
+   "opts": [
+    {
+     "c": "trades",
+     "o": "trades"
+    },
+    {
+     "c": "call",
+     "o": "call"
+    },
+    {
+     "c": "there",
+     "o": "there"
+    }
+   ],
+   "research": [
+    "trades",
+    "call",
+    "there"
+   ],
+   "card": {
+    "en": "Booking {p:trades} a job",
+    "th": "งานละ {p:trades}",
+    "my": "တစ်ခုလျှင် {p:trades}",
+    "zh": "每单 {p:trades}",
+    "de": "{p:trades} pro Auftrag"
+   }
+  },
+  {
+   "id": "shop-for-me",
+   "rule": "buy",
+   "line": "shop",
+   "pic": [
+    "cart",
+    "scooter",
+    "done"
+   ],
+   "main": "errand",
+   "n": {
+    "en": "Shop locally for me",
+    "th": "ช่วยซื้อของให้หน่อย",
+    "my": "ကျွန်ုပ်အတွက် ဒေသတွင်း ဈေးဝယ်ပေးပါ",
+    "zh": "帮我在当地买东西",
+    "de": "Für mich vor Ort einkaufen"
+   },
+   "l": {
+    "en": "We buy what you need in Chiang Rai or Chiang Mai and bring it to you, with the receipt.",
+    "th": "เราซื้อของที่คุณต้องการในเชียงรายหรือเชียงใหม่ แล้วนำมาให้ พร้อมใบเสร็จ",
+    "my": "ချင်းရိုင် သို့မဟုတ် ချင်းမိုင်တွင် သင်လိုသည်ကို ဝယ်ပြီး ပြေစာနှင့်အတူ ယူလာပေးသည်။",
+    "zh": "我们在清莱或清迈买您需要的东西，连同收据一起送到您手上。",
+    "de": "Wir kaufen in Chiang Rai oder Chiang Mai, was Sie brauchen, und bringen es Ihnen, mit Beleg."
+   },
+   "where": {
+    "en": "Chiang Rai or Chiang Mai",
+    "th": "เชียงรายหรือเชียงใหม่",
+    "my": "ချင်းရိုင် သို့မဟုတ် ချင်းမိုင်",
+    "zh": "清莱或清迈",
+    "de": "Chiang Rai oder Chiang Mai"
+   },
+   "fee": {
+    "en": "{p:errand} an hour, for the shopping and the trip.",
+    "th": "ชั่วโมงละ {p:errand} รวมเวลาซื้อและเดินทาง",
+    "my": "ဈေးဝယ်ခြင်းနှင့် ခရီးအတွက် တစ်နာရီ {p:errand}။",
+    "zh": "每小时 {p:errand}，含采购和路上时间。",
+    "de": "{p:errand} pro Stunde, für Einkauf und Weg."
+   },
+   "inc": {
+    "en": "Finding the item, buying it, and handing it over.",
+    "th": "หาของ ซื้อ และส่งมอบให้คุณ",
+    "my": "ပစ္စည်းရှာခြင်း၊ ဝယ်ခြင်းနှင့် လက်ထဲ အပ်ခြင်း။",
+    "zh": "找到东西、买下、交到您手上。",
+    "de": "Die Sache finden, kaufen und Ihnen übergeben."
+   },
+   "sep": {
+    "en": "The goods, at the price we pay, with the receipt.",
+    "th": "ค่าสินค้า ตามราคาจริงที่เราจ่าย พร้อมใบเสร็จ",
+    "my": "ပစ္စည်းဖိုး — ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း၊ ပြေစာနှင့်။",
+    "zh": "商品费用，按我们实付的价格，附收据。",
+    "de": "Die Ware, zu dem Preis, den wir zahlen, mit Beleg."
+   },
+   "time": {
+    "en": "By the hour.",
+    "th": "คิดเป็นชั่วโมง",
+    "my": "နာရီအလိုက်။",
+    "zh": "按小时计。",
+    "de": "Nach Stunden."
+   },
+   "done": {
+    "en": "Over your budget, or a different item than you asked for: we message you and wait for your yes. You get the goods and the receipt.",
+    "th": "เกินงบ หรือเป็นของคนละอย่างกับที่ขอ: เราทักไปถามและรอคุณตอบตกลงก่อน คุณได้รับของพร้อมใบเสร็จ",
+    "my": "ဘတ်ဂျက်ကျော်လျှင် သို့မဟုတ် တောင်းထားသည်နှင့် မတူသော ပစ္စည်းဖြစ်လျှင် — စာပို့ပြီး သင်သဘောတူသည်အထိ စောင့်သည်။ ပစ္စည်းနှင့် ပြေစာကို ရရှိသည်။",
+    "zh": "超出预算，或和您要的东西不一样：我们先发消息问您，等您同意。您收到东西和收据。",
+    "de": "Über Ihrem Budget oder eine andere Sache als gewünscht: Wir fragen Sie und warten auf Ihr Ja. Sie bekommen die Ware und den Beleg."
+   },
+   "form": [
+    {
+     "k": "items",
+     "t": "area",
+     "n": {
+      "en": "What to buy: an item or a list",
+      "th": "จะซื้ออะไร: ของหนึ่งอย่างหรือเป็นรายการ",
+      "my": "ဘာဝယ်ရမလဲ — ပစ္စည်းတစ်ခု သို့မဟုတ် စာရင်း",
+      "zh": "买什么：一样东西或一份清单",
+      "de": "Was kaufen: eine Sache oder eine Liste"
+     },
+     "req": true
+    },
+    {
+     "k": "area",
+     "n": {
+      "en": "Area (town and district is enough)",
+      "th": "ย่าน (บอกอำเภอหรือตำบลก็พอ)",
+      "my": "နေရာ (မြို့နှင့် ရပ်ကွက် လုံလောက်သည်)",
+      "zh": "区域（城市和区即可）",
+      "de": "Gegend (Ort und Viertel reichen)"
+     },
+     "req": true
+    },
+    {
+     "k": "by",
+     "n": {
+      "en": "By when",
+      "th": "ต้องการภายในวันไหน",
+      "my": "ဘယ်နေ့အထိ",
+      "zh": "最晚什么时候要",
+      "de": "Bis wann"
+     }
+    },
+    {
+     "k": "budget",
+     "n": {
+      "en": "Budget for the goods",
+      "th": "งบค่าสินค้า",
+      "my": "ပစ္စည်းဖိုး ဘတ်ဂျက်",
+      "zh": "商品预算",
+      "de": "Budget für die Ware"
+     }
+    },
+    {
+     "k": "swap",
+     "t": "select",
+     "n": {
+      "en": "If it is not there",
+      "th": "ถ้าไม่มีของ",
+      "my": "မရှိလျှင်",
+      "zh": "如果没有货",
+      "de": "Wenn es das nicht gibt"
+     },
+     "o": [
+      {
+       "en": "Only with my OK",
+       "th": "เฉพาะเมื่อฉันตกลง",
+       "my": "ကျွန်ုပ် သဘောတူမှသာ",
+       "zh": "须经我同意",
+       "de": "Nur mit meinem OK"
+      },
+      {
+       "en": "A close match is fine",
+       "th": "ของใกล้เคียงก็ได้",
+       "my": "နီးစပ်သော ပစ္စည်း ရပါသည်",
+       "zh": "相近的也可以",
+       "de": "Etwas Ähnliches ist gut"
+      },
+      {
+       "en": "No other item",
+       "th": "ไม่เอาของอื่น",
+       "my": "အခြားပစ္စည်း မယူပါ",
+       "zh": "不要别的",
+       "de": "Nichts anderes"
+      }
+     ]
+    }
+   ],
+   "opts": [
+    {
+     "c": "errand",
+     "o": "errand"
+    }
+   ],
+   "research": [
+    "errand",
+    "compare"
+   ],
+   "card": {
+    "en": "{p:errand} an hour",
+    "th": "ชั่วโมงละ {p:errand}",
+    "my": "တစ်နာရီ {p:errand}",
+    "zh": "每小时 {p:errand}",
+    "de": "{p:errand} pro Stunde"
+   }
+  },
+  {
+   "id": "driver",
+   "rule": "buy",
+   "line": "tours",
+   "pic": [
+    "songthaew",
+    "pin",
+    "clock"
+   ],
+   "main": "car-guide",
+   "n": {
+    "en": "Arrange a driver",
+    "th": "หาคนขับรถให้",
+    "my": "ယာဉ်မောင်း စီစဉ်ပေးရန်",
+    "zh": "安排司机",
+    "de": "Einen Fahrer organisieren"
+   },
+   "l": {
+    "en": "A car and driver for one trip or a whole day. You see the fare, our fee, tolls and waiting time before you say yes.",
+    "th": "รถพร้อมคนขับ เที่ยวเดียวหรือทั้งวัน คุณเห็นค่ารถ ค่าบริการของเรา ค่าทางด่วน และค่ารอ ก่อนตกลง",
+    "my": "ခရီးတစ်ခေါက် သို့မဟုတ် တစ်နေ့လုံးအတွက် ကားနှင့် ယာဉ်မောင်း။ သဘောမတူမီ ကားခ၊ ဝန်ဆောင်ခ၊ လမ်းကြေးနှင့် စောင့်ချိန်ခကို မြင်ရသည်။",
+    "zh": "单程或包一天的车和司机。您同意之前，就能看到车费、我们的服务费、过路费和等候费。",
+    "de": "Auto mit Fahrer für eine Fahrt oder einen ganzen Tag. Fahrpreis, unsere Gebühr, Maut und Wartezeit sehen Sie, bevor Sie zusagen."
+   },
+   "fee": {
+    "en": "A whole day: {p:driver-day}, 9 hours, fuel and road tolls included. One trip: quoted, with the fare, our fee, waiting time, tolls and stops each on its own line.",
+    "th": "ทั้งวัน: {p:driver-day} 9 ชั่วโมง รวมน้ำมันและทางด่วน เที่ยวเดียว: แจ้งราคาก่อน แยกค่ารถ ค่าบริการของเรา ค่ารอ ค่าทางด่วน และจุดแวะ เป็นบรรทัด",
+    "my": "တစ်နေ့လုံး: {p:driver-day}၊ ၉ နာရီ၊ ဆီနှင့် လမ်းကြေး ပါဝင်သည်။ ခရီးတစ်ခေါက်: စျေးနှုန်းပြောမည် — ကားခ၊ ဝန်ဆောင်ခ၊ စောင့်ချိန်၊ လမ်းကြေးနှင့် ရပ်နားမှုများ တစ်ကြောင်းစီ။",
+    "zh": "包一天：{p:driver-day}，9 小时，含油费和过路费。单程：先报价，车费、我们的服务费、等候、过路费和停靠点各列一行。",
+    "de": "Ein ganzer Tag: {p:driver-day}, 9 Stunden, Benzin und Maut inbegriffen. Eine Fahrt: mit Angebot, Fahrpreis, unsere Gebühr, Wartezeit, Maut und Stopps je in einer eigenen Zeile."
+   },
+   "inc": {
+    "en": "A whole day: the car, the driver, fuel and road tolls for 9 hours.",
+    "th": "ทั้งวัน: รถ คนขับ น้ำมัน และทางด่วน 9 ชั่วโมง",
+    "my": "တစ်နေ့လုံး — ကား၊ ယာဉ်မောင်း၊ ဆီနှင့် လမ်းကြေး ၉ နာရီ။",
+    "zh": "包一天：车、司机、油费和过路费，9 小时。",
+    "de": "Ganzer Tag: Auto, Fahrer, Benzin und Maut für 9 Stunden."
+   },
+   "sep": {
+    "en": "A whole day: hours after the first 9, and parking, at the price we pay.",
+    "th": "ทั้งวัน: ชั่วโมงที่เกิน 9 ชั่วโมงแรก และค่าที่จอด ตามราคาจริงที่เราจ่าย",
+    "my": "တစ်နေ့လုံး — ပထမ ၉ နာရီ ကျော်သော နာရီများနှင့် ကားပါကင်ခ၊ ကျွန်ုပ်တို့ ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "包一天：超过 9 小时的部分和停车费，按我们实付的价格。",
+    "de": "Ganzer Tag: Stunden nach den ersten 9 und Parken, zu dem Preis, den wir zahlen."
+   },
+   "time": {
+    "en": "A whole day: 9 hours.",
+    "th": "ทั้งวัน: 9 ชั่วโมง",
+    "my": "တစ်နေ့လုံး — ၉ နာရီ။",
+    "zh": "包一天：9 小时。",
+    "de": "Ganzer Tag: 9 Stunden."
+   },
+   "done": {
+    "en": "Once a driver accepts, we send you the booking and where to meet. Book the same trip again from this page.",
+    "th": "เมื่อคนขับรับงาน เราส่งรายละเอียดการจองและจุดนัดพบให้ จองเที่ยวเดิมอีกครั้งได้จากหน้านี้",
+    "my": "ယာဉ်မောင်း လက်ခံပြီးသည်နှင့် ကြိုတင်မှာယူမှုနှင့် တွေ့ဆုံရမည့်နေရာကို ပို့ပေးသည်။ ဤစာမျက်နှာမှ ခရီးစဉ်အတူတူကို ထပ်မှာနိုင်သည်။",
+    "zh": "司机接单后，我们把预订信息和碰面地点发给您。同一趟车可以在本页再订一次。",
+    "de": "Sobald ein Fahrer zusagt, schicken wir Ihnen die Buchung und den Treffpunkt. Dieselbe Fahrt buchen Sie auf dieser Seite wieder."
+   },
+   "form": [
+    {
+     "k": "from",
+     "n": {
+      "en": "Pickup area",
+      "th": "จุดรับ",
+      "my": "လာကြိုရမည့်နေရာ",
+      "zh": "上车地点",
+      "de": "Abholort"
+     },
+     "req": true
+    },
+    {
+     "k": "to",
+     "n": {
+      "en": "Where to",
+      "th": "ไปที่ไหน",
+      "my": "ဘယ်ကို",
+      "zh": "去哪里",
+      "de": "Wohin"
+     },
+     "req": true
+    },
+    {
+     "k": "date",
+     "t": "date",
+     "n": {
+      "en": "Date",
+      "th": "วันที่",
+      "my": "ရက်စွဲ",
+      "zh": "日期",
+      "de": "Datum"
+     },
+     "req": true
+    },
+    {
+     "k": "time",
+     "t": "time",
+     "n": {
+      "en": "Pickup time",
+      "th": "เวลารับ",
+      "my": "လာကြိုချိန်",
+      "zh": "上车时间",
+      "de": "Abholzeit"
+     }
+    },
+    {
+     "k": "people",
+     "t": "number",
+     "n": {
+      "en": "People",
+      "th": "จำนวนคน",
+      "my": "လူဦးရေ",
+      "zh": "人数",
+      "de": "Personen"
+     }
+    },
+    {
+     "k": "bags",
+     "n": {
+      "en": "Luggage",
+      "th": "สัมภาระ",
+      "my": "ခရီးဆောင်ပစ္စည်း",
+      "zh": "行李",
+      "de": "Gepäck"
+     }
+    },
+    {
+     "k": "stops",
+     "n": {
+      "en": "Stops on the way",
+      "th": "จุดแวะระหว่างทาง",
+      "my": "လမ်းတွင် ရပ်နားမည့်နေရာများ",
+      "zh": "途中停靠点",
+      "de": "Stopps unterwegs"
+     }
+    }
+   ],
+   "opts": [
+    {
+     "c": "car-guide",
+     "o": "driver-day"
+    }
+   ],
+   "research": [
+    "car-guide",
+    "tour-day"
+   ],
+   "card": {
+    "en": "{p:driver-day} a day · trips quoted",
+    "th": "วันละ {p:driver-day} · เที่ยวเดียวแจ้งราคาก่อน",
+    "my": "တစ်နေ့ {p:driver-day} · ခရီးတစ်ခေါက် စျေးနှုန်းပြော",
+    "zh": "每天 {p:driver-day} · 单程先报价",
+    "de": "{p:driver-day} pro Tag · Fahrten mit Angebot"
+   }
+  }
+ ],
+ "software": [
+  {
+   "id": "team-wheel",
+   "line": "web",
+   "pic": [
+    "check",
+    "chat",
+    "done"
+   ],
+   "n": {
+    "en": "Team Wheel",
+    "th": "Team Wheel",
+    "my": "Team Wheel",
+    "zh": "Team Wheel",
+    "de": "Team Wheel"
+   },
+   "l": {
+    "en": "A task board that looks like a wheel of big buttons. Each person sees their own work in their own language.",
+    "th": "บอร์ดงานหน้าตาเป็นวงล้อปุ่มใหญ่ แต่ละคนเห็นงานของตัวเองเป็นภาษาของตัวเอง",
+    "my": "ခလုတ်ကြီးများပါသော ဘီးပုံစံ အလုပ်ဘုတ်။ လူတိုင်း ကိုယ့်အလုပ်ကို ကိုယ့်ဘာသာစကားဖြင့် မြင်ရသည်။",
+    "zh": "一个长得像大按钮轮盘的任务板。每个人用自己的语言看到自己的工作。",
+    "de": "Eine Aufgabentafel, die aussieht wie ein Rad aus großen Knöpfen. Jede Person sieht ihre eigene Arbeit in ihrer eigenen Sprache."
+   },
+   "for": {
+    "en": "Teams, clubs and charities that hand out jobs, in any of 16 languages.",
+    "th": "ทีม ชมรม และองค์กรการกุศลที่แจกงานกัน ใช้ได้ 16 ภาษา",
+    "my": "အလုပ်ခွဲဝေသော အဖွဲ့များ၊ အသင်းများနှင့် ပရဟိတအဖွဲ့များ၊ ဘာသာစကား ၁၆ မျိုး။",
+    "zh": "需要分派工作的团队、俱乐部和慈善机构，支持 16 种语言。",
+    "de": "Teams, Vereine und Hilfswerke, die Aufgaben verteilen, in 16 Sprachen."
+   },
+   "steps": [
+    {
+     "en": "Write a job: what, why, and what done means.",
+     "th": "เขียนงาน: ทำอะไร ทำไม และเสร็จแปลว่าอะไร",
+     "my": "အလုပ်ရေးပါ — ဘာ၊ ဘာကြောင့်၊ ပြီးဆုံးခြင်းဆိုသည်မှာ ဘာလဲ။",
+     "zh": "写一项工作：做什么、为什么、怎样算完成。",
+     "de": "Eine Aufgabe schreiben: was, warum, und was fertig heißt."
+    },
+    {
+     "en": "Give it to a person. It shows on their wheel, in their language.",
+     "th": "มอบให้คนหนึ่งคน งานขึ้นบนวงล้อของเขา เป็นภาษาของเขา",
+     "my": "လူတစ်ဦးကို ပေးပါ။ ၎င်းတို့၏ ဘီးပေါ်တွင် ၎င်းတို့ ဘာသာစကားဖြင့် ပေါ်လာသည်။",
+     "zh": "交给一个人。它会用对方的语言出现在对方的轮盘上。",
+     "de": "Einer Person geben. Sie erscheint auf deren Rad, in deren Sprache."
+    },
+    {
+     "en": "They press I'm on it, then Finished.",
+     "th": "เขากด กำลังทำ แล้วกด เสร็จแล้ว",
+     "my": "၎င်းတို့က လုပ်နေပြီ ကို နှိပ်ပြီး နောက် ပြီးပြီ ကို နှိပ်သည်။",
+     "zh": "对方先按“我在做”，再按“完成”。",
+     "de": "Die Person drückt „Ich mache es“, dann „Fertig“."
+    },
+    {
+     "en": "You check it and close it.",
+     "th": "คุณตรวจแล้วปิดงาน",
+     "my": "သင် စစ်ဆေးပြီး ပိတ်သည်။",
+     "zh": "您检查后关闭。",
+     "de": "Sie prüfen und schließen sie."
+    }
+   ],
+   "first": {
+    "en": "Write one job and give it to one person.",
+    "th": "เขียนงานหนึ่งงาน แล้วมอบให้คนหนึ่งคน",
+    "my": "အလုပ်တစ်ခု ရေးပြီး လူတစ်ဦးကို ပေးပါ။",
+    "zh": "写一项工作，交给一个人。",
+    "de": "Eine Aufgabe schreiben und einer Person geben."
+   },
+   "access": {
+    "en": "Each team gets its own wheel, requested on Team Wheel's page. Sign-in is with LINE.",
+    "th": "แต่ละทีมได้วงล้อของตัวเอง ขอได้ที่หน้า Team Wheel เข้าใช้ด้วย LINE",
+    "my": "အဖွဲ့တိုင်း ကိုယ်ပိုင်ဘီး ရသည်။ Team Wheel စာမျက်နှာတွင် တောင်းပါ၊ LINE ဖြင့် ဝင်ပါ။",
+    "zh": "每个团队都有自己的轮盘。在 Team Wheel 页面申请；用 LINE 登录。",
+    "de": "Jedes Team bekommt sein eigenes Rad. Fragen Sie auf der Seite von Team Wheel danach; Anmeldung mit LINE."
+   },
+   "price": {
+    "en": "Free while we test it.",
+    "th": "ฟรีระหว่างช่วงทดสอบ",
+    "my": "စမ်းသပ်နေစဉ် အခမဲ့။",
+    "zh": "测试期间免费。",
+    "de": "Kostenlos, solange wir es testen."
+   },
+   "help": {
+    "en": "The Help spoke on the wheel, or LINE @964yxgnk.",
+    "th": "ปุ่มช่วยเหลือบนวงล้อ หรือ LINE @964yxgnk",
+    "my": "ဘီးပေါ်ရှိ အကူအညီ ခလုတ်၊ သို့မဟုတ် LINE @964yxgnk။",
+    "zh": "轮盘上的“帮助”，或 LINE @964yxgnk。",
+    "de": "Die Hilfe-Speiche am Rad, oder LINE @964yxgnk."
+   },
+   "setup": {
+    "en": "Moving in from Trello or Asana is built in.",
+    "th": "ย้ายงานมาจาก Trello หรือ Asana ได้ในตัว",
+    "my": "Trello သို့မဟုတ် Asana မှ ပြောင်းရွှေ့ခြင်း ပါဝင်ပြီးဖြစ်သည်။",
+    "zh": "内置从 Trello 或 Asana 搬入的功能。",
+    "de": "Der Umzug aus Trello oder Asana ist eingebaut."
+   },
+   "site": "pm.nanobotco.workers.dev",
+   "try": {
+    "href": "https://pm.nanobotco.workers.dev/about/",
+    "n": {
+     "en": "See how it works",
+     "th": "ดูว่าใช้งานอย่างไร",
+     "my": "အလုပ်လုပ်ပုံ ကြည့်ရန်",
+     "zh": "看看怎么用",
+     "de": "So funktioniert es"
+    }
+   },
+   "get": {
+    "href": "https://pm.nanobotco.workers.dev/",
+    "n": {
+     "en": "A wheel for your team",
+     "th": "Team Wheel สำหรับทีมของคุณ",
+     "my": "သင့်အဖွဲ့အတွက် ဘီး",
+     "zh": "您团队的轮盘",
+     "de": "Ein Rad für Ihr Team"
+    }
+   }
+  },
+  {
+   "id": "wholesale-desk",
+   "line": "money",
+   "pic": [
+    "parcel",
+    "page",
+    "coin"
+   ],
+   "n": {
+    "en": "Wholesale Desk",
+    "th": "Wholesale Desk",
+    "my": "Wholesale Desk",
+    "zh": "Wholesale Desk",
+    "de": "Wholesale Desk"
+   },
+   "l": {
+    "en": "Products, wholesale price lists and invoices, for a business that sells to shops.",
+    "th": "สินค้า ราคาขายส่ง และใบแจ้งหนี้ สำหรับธุรกิจที่ขายให้ร้านค้า",
+    "my": "ဆိုင်များသို့ ရောင်းသော လုပ်ငန်းအတွက် ကုန်ပစ္စည်းများ၊ လက်ကားစျေးနှုန်းစာရင်းနှင့် ငွေတောင်းခံလွှာများ။",
+    "zh": "为向商店供货的企业准备的产品、批发价目和发票。",
+    "de": "Produkte, Großhandelspreise und Rechnungen, für ein Geschäft, das an Läden verkauft."
+   },
+   "for": {
+    "en": "A small trading business with a product list and wholesale buyers.",
+    "th": "ธุรกิจค้าขายขนาดเล็กที่มีรายการสินค้าและลูกค้าขายส่ง",
+    "my": "ကုန်ပစ္စည်းစာရင်းနှင့် လက်ကားဝယ်သူများရှိသော ကုန်သွယ်ရေးလုပ်ငန်းငယ်။",
+    "zh": "有产品清单和批发客户的小型贸易企业。",
+    "de": "Ein kleiner Handelsbetrieb mit Produktliste und Großhandelskunden."
+   },
+   "steps": [
+    {
+     "en": "Add your products, each with its SKU (stock code) and price.",
+     "th": "ใส่สินค้า แต่ละชิ้นมี SKU (รหัสสินค้า) และราคา",
+     "my": "ကုန်ပစ္စည်းများ ထည့်ပါ၊ တစ်ခုစီတွင် SKU (ကုန်ပစ္စည်းကုဒ်) နှင့် စျေးနှုန်း။",
+     "zh": "录入产品，每个都有 SKU（库存编码）和价格。",
+     "de": "Produkte anlegen, jedes mit SKU (Artikelnummer) und Preis."
+    },
+    {
+     "en": "Write an invoice. VAT is added when you switch it on, and a wholesale line under the minimum order is refused.",
+     "th": "เขียนใบแจ้งหนี้ เปิด VAT แล้วระบบบวกให้ และไม่รับรายการขายส่งที่ต่ำกว่าขั้นต่ำ",
+     "my": "ငွေတောင်းခံလွှာ ရေးပါ။ VAT ဖွင့်ထားလျှင် ပေါင်းပေးပြီး အနည်းဆုံးမှာယူမှုအောက် လက်ကားစာကြောင်းကို ငြင်းသည်။",
+     "zh": "开发票。打开增值税后自动加上；低于起订量的批发行会被拒绝。",
+     "de": "Eine Rechnung schreiben. Die MwSt. kommt dazu, wenn Sie sie einschalten, und eine Großhandelszeile unter der Mindestmenge wird abgelehnt."
+    },
+    {
+     "en": "Issue it. An issued invoice can no longer be changed.",
+     "th": "ออกใบแจ้งหนี้ เมื่อออกแล้วแก้ไขไม่ได้",
+     "my": "ထုတ်ပြန်ပါ။ ထုတ်ပြီးသော ငွေတောင်းခံလွှာကို ပြင်၍ မရတော့ပါ။",
+     "zh": "开出。已开出的发票不能再修改。",
+     "de": "Ausstellen. Eine ausgestellte Rechnung lässt sich nicht mehr ändern."
+    },
+    {
+     "en": "Add payments as they come in. Each save is logged with who made it.",
+     "th": "บันทึกการชำระเงินเมื่อได้รับ ทุกการบันทึกมีชื่อคนที่บันทึก",
+     "my": "ငွေရောက်သည့်အခါ ငွေပေးချေမှု ထည့်ပါ။ သိမ်းဆည်းမှုတိုင်းကို ပြုလုပ်သူနှင့်အတူ မှတ်တမ်းတင်သည်။",
+     "zh": "收到款项就记一笔。每次保存都记下是谁操作的。",
+     "de": "Zahlungen eintragen, wenn sie eingehen. Jedes Speichern wird mit Namen protokolliert."
+    }
+   ],
+   "first": {
+    "en": "Add one product and write one invoice.",
+    "th": "ใส่สินค้าหนึ่งชิ้น แล้วเขียนใบแจ้งหนี้หนึ่งใบ",
+    "my": "ကုန်ပစ္စည်းတစ်ခု ထည့်ပြီး ငွေတောင်းခံလွှာတစ်စောင် ရေးပါ။",
+    "zh": "录入一个产品，开一张发票。",
+    "de": "Ein Produkt anlegen und eine Rechnung schreiben."
+   },
+   "access": {
+    "en": "One private copy for each business, signed in with the email addresses you name. Access on request.",
+    "th": "แต่ละธุรกิจได้ชุดส่วนตัวหนึ่งชุด เข้าใช้ด้วยอีเมลที่คุณระบุ ขอสิทธิ์เข้าใช้จากเรา",
+    "my": "လုပ်ငန်းတစ်ခုစီအတွက် သီးသန့်မိတ္တူတစ်ခု၊ သင်သတ်မှတ်သော အီးမေးလ်များဖြင့်သာ ဝင်ရသည်။ ဝင်ရောက်ခွင့် တောင်းပါ။",
+    "zh": "每家企业一份私有副本，只有您指定的邮箱能登录。向我们申请使用。",
+    "de": "Eine eigene Kopie für jedes Geschäft, Anmeldung mit den E-Mail-Adressen, die Sie nennen. Fragen Sie uns nach Zugang."
+   },
+   "price": {
+    "en": "On request.",
+    "th": "สอบถามราคา",
+    "my": "တောင်းဆိုမှ ပြောမည်။",
+    "zh": "价格请询问。",
+    "de": "Auf Anfrage."
+   },
+   "help": {
+    "en": "LINE @964yxgnk.",
+    "th": "LINE @964yxgnk",
+    "my": "LINE @964yxgnk။",
+    "zh": "LINE @964yxgnk。",
+    "de": "LINE @964yxgnk."
+   },
+   "setup": {
+    "en": "We set up your private copy.",
+    "th": "เราตั้งค่าชุดส่วนตัวให้คุณ",
+    "my": "သင့်သီးသန့်မိတ္တူကို ကျွန်ုပ်တို့ ပြင်ဆင်ပေးသည်။",
+    "zh": "我们为您设置私有副本。",
+    "de": "Wir richten Ihre eigene Kopie ein."
+   },
+   "ask": "wholesale-desk"
+  }
+ ]
+}
