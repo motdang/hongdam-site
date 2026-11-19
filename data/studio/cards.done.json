@@ -25,5 +25,6 @@
  "og/studio/n/week-workers-spend-limits-node-fixes-brownout": "057c4610af",
  "og/studio/n/inkling-2-small-reasoning-effort-none-still-thinks": "e246b71d75",
  "og/studio/n/supabase-cbc-ciphers-removed-9-of-163-clients-fail": "d9179dd99b",
- "og/studio/n/openssh-10-6p2-alpine-musl-password-bypass-fixed": "f514adb563"
+ "og/studio/n/openssh-10-6p2-alpine-musl-password-bypass-fixed": "f514adb563",
+ "og/studio/n/n8n-global-credential-runs-stop-blanking": "794ba5b9f4"
 }

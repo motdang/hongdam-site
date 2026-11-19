@@ -5,9 +5,58 @@
 <link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/"/>
 <link rel="self" href="https://hongdam.net/studio/feed.xml"/>
 <id>https://hongdam.net/studio/notes/</id>
-<updated>2026-11-18T06:00:00+07:00</updated>
+<updated>2026-11-19T06:00:00+07:00</updated>
 <icon>https://hongdam.net/assets/favicon.svg</icon>
 <author><name>Hongdam Studio</name><uri>https://hongdam.net/studio/</uri></author>
+<entry>
+<title>n8n 2.48.4 and 2.47.7 stop blanking the execution page for a global credential</title>
+<link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/n8n-global-credential-runs-stop-blanking/"/>
+<id>tag:hongdam.net,2026-11-19:studio/n8n-global-credential-runs-stop-blanking</id>
+<published>2026-11-19T06:00:00+07:00</published>
+<updated>2026-11-19T06:00:00+07:00</updated>
+<category term="automation" label="Automation"/>
+<summary>An execution that used a global credential came back as &#x27;Data redacted&#x27; with no reveal button, even for the user who ran it. Fixed in 2.48.4 and 2.47.7 on 13 November, 2.49.0 on 17 November.</summary>
+<content type="html">&lt;p&gt;n8n 2.48.4 and 2.47.7 shipped a single bug fix on 13 November 2026: &quot;Stop redacting executions that use global credentials&quot; &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s1&quot; aria-label=&quot;source 1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s2&quot; aria-label=&quot;source 2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The same change landed on master on 10 November &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s3&quot; aria-label=&quot;source 3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;; the 2.49.0 pre-release carried it forward on 17 November &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s8&quot; aria-label=&quot;source 8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;. One block removed in one file does the work &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s7&quot; aria-label=&quot;source 7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;a-redacted-run-that-you-cannot-un-redact&quot;&gt;A redacted run that you cannot un-redact&lt;/h2&gt;
+&lt;p&gt;n8n has an execution-data redaction feature. The docs set two triggers: a per-workflow toggle (&quot;Redact production execution data&quot; and &quot;Redact manual execution data&quot;) and an instance-level policy a license can enforce &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s6&quot; aria-label=&quot;source 6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;. When redaction fires, the execution page shows node names, status and timing, and replaces each payload with a &quot;Data redacted&quot; indicator and a shredder icon. A user with &lt;code&gt;execution:reveal&lt;/code&gt; — instance owners, admins and project admins by default — can press &lt;strong&gt;Reveal data&lt;/strong&gt;, confirm an audit warning, and read the payload for that session &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s6&quot; aria-label=&quot;source 6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;There is a second redaction path the docs do not describe: the credential check. When you view an execution, n8n also asks whether you can use every credential the workflow referenced. If you cannot, the payload is blanked and the reveal button is hidden. The PR puts the case plainly &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s3&quot; aria-label=&quot;source 3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Redaction hides execution data from a viewer who cannot use a credential that the workflow references.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;That check ignored the instance-wide &lt;code&gt;credential:use&lt;/code&gt; scope of owners and admins, and it left out global credentials — the kind every user on the installation may use. An execution that touched a global credential came back blanked for every viewer, with no reveal button to recover it.&lt;/p&gt;
+&lt;h2 id=&quot;the-shape-of-the-blank&quot;&gt;The shape of the blank&lt;/h2&gt;
+&lt;p&gt;The PR&#x27;s integration test seeds a project with a credential marked &lt;code&gt;isGlobal: true&lt;/code&gt;, runs a workflow that reads it, and views the execution as a plain member &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s3&quot; aria-label=&quot;source 3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Before the fix: &lt;code&gt;redactionInfo&lt;/code&gt; was &lt;code&gt;{reason: &amp;#x27;credential_inaccessible&amp;#x27;, canReveal: false}&lt;/code&gt; — no payload, no reveal button. After: &lt;code&gt;redactionInfo&lt;/code&gt; is &lt;code&gt;undefined&lt;/code&gt;, and the JSON output appears as it did on the run itself. A second test covers the opposite case, a non-global credential the member cannot use: redacted as before, reveal still denied.&lt;/p&gt;
+&lt;p&gt;The changed file is &lt;code&gt;packages/@n8n/backend-services/src/credentials/credentials-finder.service.ts&lt;/code&gt; &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s7&quot; aria-label=&quot;source 7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;. The function at the centre is &lt;code&gt;findCredentialIdsWithScopeForUser&lt;/code&gt;, called by three paths that answer &quot;as if this user had no instance-wide &lt;code&gt;credential:use&lt;/code&gt;&quot;: the redaction check, a team-project run check, and a publish check. The diff removes the enclosing &lt;code&gt;if (!options.ignoreGlobalOverride)&lt;/code&gt; so the global-credentials lookup runs regardless of that option.&lt;/p&gt;
+&lt;div class=&quot;code&quot;&gt;&lt;pre data-lang=&quot;diff&quot;&gt;&lt;code&gt;-        // Also include global credentials if scopes allow read-only access.
+-        if (!options.ignoreGlobalOverride) {
+-            if (this.hasGlobalReadOnlyAccess(scopes)) {
+-                const globalIds = await this.credentialAccessRepository.findGlobalProjectCredentialIds(
+-                    credentialIds,
+-                    false,
+-                );
+-                for (const id of globalIds) result.add(id);
+-            } else if (this.hasGlobalConnectAccess(scopes)) {
+-                // ...connect access branch...
+-            }
+-        }
++        // Also include global credentials if scopes allow read-only access. Every user
++        // may use a global credential, so this applies even when the instance-wide
++        // override is ignored.
++        if (this.hasGlobalReadOnlyAccess(scopes)) {
++            const globalIds = await this.credentialAccessRepository.findGlobalProjectCredentialIds(
++                credentialIds,
++                false,
++            );
++            for (const id of globalIds) result.add(id);
++        } else if (this.hasGlobalConnectAccess(scopes)) {
++            // ...connect access branch...
++        }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Measured 19 November 2026 from GitHub&#x27;s &lt;code&gt;/pulls/43223/files&lt;/code&gt; endpoint: +18 and -17 lines in the finder, +27 and -1 in its unit test, +131 and -0 in a new integration test. One block removed; &lt;code&gt;ignoreGlobalOverride&lt;/code&gt; no longer suppresses the global-credentials lookup.&lt;/p&gt;
+&lt;h2 id=&quot;which-versions-carry-it&quot;&gt;Which versions carry it&lt;/h2&gt;
+&lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Release line&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Version&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Date&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;PR&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;master&lt;/th&gt;&lt;td data-h=&quot;Version&quot;&gt;the merge on 10 Nov 2026&lt;/td&gt;&lt;td data-h=&quot;Date&quot;&gt;10 Nov&lt;/td&gt;&lt;td data-h=&quot;PR&quot;&gt;#43223 &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s3&quot; aria-label=&quot;source 3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;2.48.x&lt;/th&gt;&lt;td data-h=&quot;Version&quot;&gt;2.48.4&lt;/td&gt;&lt;td data-h=&quot;Date&quot;&gt;13 Nov&lt;/td&gt;&lt;td data-h=&quot;PR&quot;&gt;#43775 &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s4&quot; aria-label=&quot;source 4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;2.47.x&lt;/th&gt;&lt;td data-h=&quot;Version&quot;&gt;2.47.7&lt;/td&gt;&lt;td data-h=&quot;Date&quot;&gt;13 Nov&lt;/td&gt;&lt;td data-h=&quot;PR&quot;&gt;#43776 &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s5&quot; aria-label=&quot;source 5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;2.49.x pre-release&lt;/th&gt;&lt;td data-h=&quot;Version&quot;&gt;2.49.0&lt;/td&gt;&lt;td data-h=&quot;Date&quot;&gt;17 Nov&lt;/td&gt;&lt;td data-h=&quot;PR&quot;&gt;&lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s8&quot; aria-label=&quot;source 8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;2.48.5 (18 November) and the 2.49.1 beta (18 November) include the same fix with later patches on top &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s8&quot; aria-label=&quot;source 8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;what-a-viewer-sees-after-upgrading&quot;&gt;What a viewer sees after upgrading&lt;/h2&gt;
+&lt;p&gt;An execution whose workflow used a global credential, viewed under the upgraded installation, shows its node payloads with no &quot;Data redacted&quot; indicator for viewers with read access to the workflow. An execution that used a credential the viewer cannot use is redacted as before, with the reveal button for admins. The fix narrows what the credential check covers; the per-workflow redaction toggles, the instance policy and the reveal audit trail do not change &lt;sup class=&quot;ref&quot;&gt;&lt;a href=&quot;#s6&quot; aria-label=&quot;source 6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;For a team running n8n in Docker, the upgrade path is &lt;code&gt;docker pull n8nio/n8n:2.48.4&lt;/code&gt; (or &lt;code&gt;:2.47.7&lt;/code&gt;) and a container restart. &lt;code&gt;GET /rest/settings&lt;/code&gt; returns the running version in &lt;code&gt;versionCli&lt;/code&gt;.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>OpenSSH 10.6p2 shut the 300-byte password bypass on Alpine sshd: fixed in every branch</title>
 <link rel="alternate" type="text/html" href="https://hongdam.net/studio/notes/openssh-10-6p2-alpine-musl-password-bypass-fixed/"/>
