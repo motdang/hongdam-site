@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/order-tickets-symbol-codes-186-of-660-wrong-json-46",
+  "kicker": "Hongdam Studio · AI models · 20 November 2026",
+  "title": "Valid ticket, wrong order",
+  "th": "ใบสั่งเครื่องดื่มจากโมเดลโอเพนเวตสี่ตัว: แบบรหัสสัญลักษณ์ผิดแบบเงียบ 186 จาก 660 ใบ แบบ JSON 46 ใบ",
+  "sub": "Symbol codes 186 of 660, JSON 46",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "1d6d2db497"
+ },
+ {
   "out": "og/studio/n/n8n-global-credential-runs-stop-blanking",
   "kicker": "Hongdam Studio · Automation · 19 November 2026",
   "title": "Your n8n run went blank?",
