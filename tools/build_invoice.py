@@ -10,8 +10,12 @@ A baht invoice ("currency": "THB", "promptpay": "<id>") shows a PromptPay QR for
 the payment slip; /api/pay/invoice asks SlipOK about it, with the amount read from
 functions/_invoices_data.js, which this build writes (her ask 2026-11-05, FERC's HD-FERC-2026-01).
 "paid": "<words>" shows the words in place of the pay links and leaves the invoice out of the slip check.
+
+Numbers (her ask 2026-11-23, one numbering for invoices and receipts): a new invoice carries the next number of the
+company's run, HD-INV-2026-0001, taken with ~/.claude/bin/docno (the run is on the Team Wheel, Money > Numbers).
+The build refuses any other number unless it is one issued before the run (EARLIER).
 """
-import html, json, pathlib, segno, io
+import html, json, pathlib, re, segno, io
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "invoices.json"
@@ -22,6 +26,10 @@ BTC = "bc1qtgkvch2dgf9q5dwl2xfuseckyv6cqd2mlefjzz"
 WISE = "https://wise.com/pay/me/annikahonorahp"
 
 e = html.escape
+
+# SELLER-KIND-YEAR-NUMBER; HD is motdang.net Co., Ltd., trading as Hongdam
+NUMBER = re.compile(r"^[A-Z][A-Z0-9]{1,3}-INV-\d{4}-\d{4,6}$")
+EARLIER = {"RTP-001", "RTP-002", "HD-FERC-2026-01", "HD-FERC-2026-02"}  # issued before the run, kept as they were
 
 
 def qr_svg(data):
@@ -150,6 +158,9 @@ FROM_THB = "motdang.net Co., Ltd., trading as Hongdam · juristic person no. 057
 
 def main():
     invs = json.loads(DATA.read_text())
+    bad = [i.get("number", "") for i in invs if not (NUMBER.match(i.get("number", "")) or i.get("number") in EARLIER)]
+    if bad:
+        raise SystemExit("build_invoice: take the number with ~/.claude/bin/docno take INV …, not " + ", ".join(map(repr, bad)))
     thb = {i["slug"]: {"number": i["number"], "baht": sum(x["amount"] for x in i["items"]), "mail": i.get("mail", "")}
            for i in invs if i.get("currency") == "THB" and not i.get("paid")}
     (ROOT / "functions" / "_invoices_data.js").write_text(
