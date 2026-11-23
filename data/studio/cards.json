@@ -29,6 +29,21 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/vercel-20-mib-bodies-4-gb-memory-server-actions-1-mb",
+  "kicker": "Hongdam Studio · Last mile · 24 November 2026",
+  "title": "20 MiB uploads on Vercel",
+  "th": "Vercel Functions รับไฟล์ได้ถึง 20 MiB แล้ว แต่ต้องตั้งหน่วยความจำ 4 GB และ Server Actions ยังหยุดที่ 1 MB",
+  "sub": "Three switches, 4 GB memory, Next.js limits apart",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "4dd44d3037"
+ },
+ {
   "out": "og/studio/n/workers-ai-retired-models-14-answer-410-two-still-reply",
   "kicker": "Hongdam Studio · AI models · 23 November 2026",
   "title": "14 answer 410, two still reply",
