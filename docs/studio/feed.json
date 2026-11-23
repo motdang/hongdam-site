@@ -15,6 +15,65 @@
  ],
  "items": [
   {
+   "id": "https://hongdam.net/studio/notes/vercel-20-mib-bodies-4-gb-memory-server-actions-1-mb/",
+   "url": "https://hongdam.net/studio/notes/vercel-20-mib-bodies-4-gb-memory-server-actions-1-mb/",
+   "title": "Vercel's 20 MiB uploads need 4 GB of memory; Next.js Server Actions still stop at 1 MB",
+   "summary": "Vercel raised the request body limit from 4.5 MB to 20 MiB on 20 November, in beta. It takes three switches and a paid plan, and the Edge runtime keeps the old limit. A photo sent as base64 JSON loses a quarter of the room.",
+   "content_html": "<p>An upload form on a Vercel app fails above 4.5 MB with a 413, the HTTP code for \"payload too large\". On 20 November 2026 Vercel raised that ceiling to 20 MiB (20,971,520 bytes) as a public beta <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. The new limit is off until a project turns on three settings, one of them only on paid plans, and it does nothing for the 1 MB limits that Next.js sets on its own.</p>\n<h2 id=\"three-switches-and-the-hobby-plan-has-no-way-in\">Three switches, and the Hobby plan has no way in</h2>\n<p>Vercel's limits page, read today, lists the steps <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>:</p>\n<ol><li>Fluid compute on. Fluid compute is Vercel's newer way of running functions, where one instance serves several requests at once. It is on by default for projects created since 23 April 2025 <sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>; older projects turn it on in Settings or with <code>&quot;fluid&quot;: true</code> in <code>vercel.json</code>.</li><li>Function memory set to Performance, 4 GB with 2 vCPUs. The memory page says this is set in the dashboard under Settings, Functions, and not in <code>vercel.json</code> <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</li><li>An environment variable, then a redeploy:</li></ol>\n<div class=\"code\"><pre data-lang=\"bash\"><code>vercel env add VERCEL_SUPPORT_LARGE_REQUEST_BODY preview\n# value: 1\nvercel deploy</code></pre></div>\n<p>The variable works per environment, so Preview can try it before Production <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>.</p>\n<p>The limits page gives Hobby a maximum of 2 GB of memory; Pro and Enterprise go to 4 GB <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. A Hobby project cannot meet step 2, so it stays at 4.5 MB.</p>\n<p>The beta covers the Node.js, Python and Bun runtimes <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. A function or Routing Middleware on the Edge runtime stays at 4.5 MB and answers 413; the changelog's fix is <code>runtime: &#x27;nodejs&#x27;</code> on the route <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Responses stay at 4.5 MB unless streamed <sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>.</p>\n<h2 id=\"middleware-stops-seeing-the-body\">Middleware stops seeing the body</h2>\n<p>With the variable set, Routing Middleware (code that runs before every request reaches its route) receives the headers and no body, for the whole project <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Vercel's reason is to avoid sending a 20 MiB body twice <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup>. Middleware that reads the body, such as a webhook signature check or a bot filter that inspects a form, stops working on the first deploy with the flag. The check moves into the route handler, which still gets the full body.</p>\n<h2 id=\"performance-memory-doubles-one-line-of-the-bill\">Performance memory doubles one line of the bill</h2>\n<p>Vercel bills functions on fluid compute by Active CPU, Provisioned Memory and invocations <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. Provisioned Memory is charged per GB-hour while an instance is up. The pricing page's rate for the Washington D.C. region, read today, is US$0.0106 per GB-hour <sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. At 2 GB an instance-hour costs US$0.0212 in memory; at 4 GB, US$0.0424. The setting applies to every function in the project, not only the upload route <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>. Twice the CPU can shorten CPU-bound work, which offsets part of it <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup>.</p>\n<h2 id=\"a-base64-json-upload-fits-3-37-mb-multipart-fits\">A base64 JSON upload fits 3.37 MB, multipart fits 4.50 MB</h2>\n<p>The limit counts the request body, not the file. Apps that AI tools write often read the file in the browser, turn it into base64 text (a way of writing bytes as letters, which takes 4 characters for every 3 bytes) and post it inside JSON. A multipart form, the browser's own way of sending a file, adds a few hundred bytes.</p>\n<p>Measured 24 November 2026 on a local server that reports each body's length: random files from 1 MB to 16 MB, posted with curl once as multipart (<code>-F file=@…</code>) and once as JSON carrying a <code>data:image/jpeg;base64,…</code> string. Every multipart body was the file plus 195 bytes. Every JSON body was 1.3333 times the file plus 52 bytes.</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">File</th><th scope=\"col\">Multipart body</th><th scope=\"col\">Base64 JSON body</th><th scope=\"col\">Under 4.5 MB?</th><th scope=\"col\">Under 20 MiB?</th></tr></thead><tbody><tr><th scope=\"row\">3,000,000 bytes</th><td data-h=\"Multipart body\">3,000,195</td><td data-h=\"Base64 JSON body\">4,000,052</td><td data-h=\"Under 4.5 MB?\">both</td><td data-h=\"Under 20 MiB?\">both</td></tr><tr><th scope=\"row\">3,400,000 bytes</th><td data-h=\"Multipart body\">3,400,195</td><td data-h=\"Base64 JSON body\">4,533,388</td><td data-h=\"Under 4.5 MB?\">multipart only</td><td data-h=\"Under 20 MiB?\">both</td></tr><tr><th scope=\"row\">4,400,000 bytes</th><td data-h=\"Multipart body\">4,400,195</td><td data-h=\"Base64 JSON body\">5,866,720</td><td data-h=\"Under 4.5 MB?\">multipart only</td><td data-h=\"Under 20 MiB?\">both</td></tr><tr><th scope=\"row\">15,000,000 bytes</th><td data-h=\"Multipart body\">15,000,195</td><td data-h=\"Base64 JSON body\">20,000,052</td><td data-h=\"Under 4.5 MB?\">neither</td><td data-h=\"Under 20 MiB?\">both</td></tr><tr><th scope=\"row\">16,000,000 bytes</th><td data-h=\"Multipart body\">16,000,195</td><td data-h=\"Base64 JSON body\">21,333,388</td><td data-h=\"Under 4.5 MB?\">neither</td><td data-h=\"Under 20 MiB?\">multipart only</td></tr></tbody></table></div>\n<p>From those overheads, the largest file each way fits:</p>\n<figure class=\"chart\"><table><caption>Largest file that fits, in MB</caption><tbody><tr><th scope=\"row\">Base64 JSON, 4.5 MB limit</th><td><span class=\"bar\" style=\"--w:16.1%\"></span><span class=\"v\">3.37 MB</span></td></tr><tr><th scope=\"row\">Multipart, 4.5 MB limit</th><td><span class=\"bar\" style=\"--w:21.5%\"></span><span class=\"v\">4.5 MB</span></td></tr><tr><th scope=\"row\">Base64 JSON, 20 MiB limit</th><td><span class=\"bar\" style=\"--w:75.0%\"></span><span class=\"v\">15.73 MB</span></td></tr><tr><th scope=\"row\">Multipart, 20 MiB limit</th><td><span class=\"bar\" style=\"--w:100.0%\"></span><span class=\"v\">20.97 MB</span></td></tr></tbody></table><figcaption>Measured 24 November 2026: 8 file sizes, curl, local server, 1 run each (body sizes are exact). 4.5 MB taken as 4,500,000 bytes; Vercel's page does not say which.</figcaption></figure>\n<p>Sending the file as multipart (<code>FormData</code> in the browser) buys a third more room under either limit, with no Vercel setting changed.</p>\n<h2 id=\"next-js-sets-1-mb-of-its-own\">Next.js sets 1 MB of its own</h2>\n<p>Vercel's limit is the outer wall. Next.js has two inner ones, from its docs read today:</p>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Where the upload lands</th><th scope=\"col\">Next.js default</th><th scope=\"col\">Raised with</th></tr></thead><tbody><tr><th scope=\"row\">A Server Action (a function the form calls directly, App Router)</th><td data-h=\"Next.js default\">1 MB <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup></td><td data-h=\"Raised with\"><code>experimental.serverActions.bodySizeLimit</code> in <code>next.config.js</code></td></tr><tr><th scope=\"row\">A Pages Router API route</th><td data-h=\"Next.js default\">1 MB <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup></td><td data-h=\"Raised with\"><code>export const config = { api: { bodyParser: { sizeLimit: &#x27;20mb&#x27; } } }</code></td></tr></tbody></table></div>\n<div class=\"code\"><pre data-lang=\"js\"><code>// next.config.js\nmodule.exports = {\n  experimental: {\n    serverActions: { bodySizeLimit: &#x27;20mb&#x27; },\n  },\n}</code></pre></div>\n<p>The Server Actions page counts multipart boundaries in the limit and suggests 10 to 20 KB of room over the largest file <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>. An app that sets Vercel's flag and leaves these alone fails at 1 MB with a Next.js error, not Vercel's 413.</p>\n<h2 id=\"larger-files-skip-the-function\">Larger files skip the function</h2>\n<p>Vercel's error page for <code>FUNCTION_PAYLOAD_TOO_LARGE</code> lists the other routes: compress, split, or upload straight to storage <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. With Vercel Blob, <code>upload()</code> from <code>@vercel/blob/client</code> sends the file from the browser to the store, and a small route running <code>handleUpload()</code> hands out the token <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>. The body never passes through a function, so neither limit applies. The client-upload page says the route that issues tokens has to check who is asking, or anyone can fill the store <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<h2 id=\"which-to-use\">Which to use</h2>\n<ul><li>Under 3.37 MB as JSON or 4.5 MB as multipart: nothing to change.</li><li>Up to 20 MiB, on Pro, with no body-reading middleware: the three switches, plus the Next.js limit raised to match.</li><li>On Hobby, past 20 MiB, or with middleware that reads bodies: upload to storage from the browser.</li></ul>\n<p>Finding which of these an AI-written app needs, and wiring it, is part of the last-mile work we sell <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup>.</p>",
+   "date_published": "2026-11-24T06:00:00+07:00",
+   "tags": [
+    "last-mile"
+   ],
+   "language": "en",
+   "image": "https://hongdam.net/og/studio/n/vercel-20-mib-bodies-4-gb-memory-server-actions-1-mb.jpg",
+   "_hongdam": {
+    "title_th": "Vercel Functions รับไฟล์ได้ถึง 20 MiB แล้ว แต่ต้องตั้งหน่วยความจำ 4 GB และ Server Actions ยังหยุดที่ 1 MB",
+    "summary_th": "Vercel ขยายขนาด request body จาก 4.5 MB เป็น 20 MiB เมื่อ 20 พฤศจิกายน (ยังเป็นเบต้า) ต้องเปิดสามอย่าง ใช้แพ็กเกจแบบเสียเงิน และ Edge runtime ยังจำกัดที่เดิม ส่วนรูปที่ส่งเป็น JSON แบบ base64 เสียพื้นที่ไปหนึ่งในสี่",
+    "sources": [
+     {
+      "t": "Vercel Functions now support request bodies up to 20MiB · Vercel changelog",
+      "u": "https://vercel.com/changelog/vercel-functions-now-support-request-bodies-up-to-20mib"
+     },
+     {
+      "t": "Vercel Functions Limits",
+      "u": "https://vercel.com/docs/functions/limitations"
+     },
+     {
+      "t": "Configuring Memory and CPU for Vercel Functions",
+      "u": "https://vercel.com/docs/functions/configuring-functions/memory"
+     },
+     {
+      "t": "Usage and pricing for Vercel Functions",
+      "u": "https://vercel.com/docs/functions/usage-and-pricing"
+     },
+     {
+      "t": "FUNCTION_PAYLOAD_TOO_LARGE",
+      "u": "https://vercel.com/docs/errors/function_payload_too_large"
+     },
+     {
+      "t": "next.config.js: serverActions | Next.js",
+      "u": "https://nextjs.org/docs/app/api-reference/config/next-config-js/serverActions"
+     },
+     {
+      "t": "API Routes | Next.js",
+      "u": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes"
+     },
+     {
+      "t": "Client Uploads with Vercel Blob",
+      "u": "https://vercel.com/docs/vercel-blob/client-upload"
+     },
+     {
+      "t": "Fluid compute",
+      "u": "https://vercel.com/docs/fluid-compute"
+     },
+     {
+      "t": "Finish an app an AI tool wrote · Hongdam",
+      "u": "https://hongdam.net/web/vibe/"
+     }
+    ]
+   }
+  },
+  {
    "id": "https://hongdam.net/studio/notes/workers-ai-retired-models-14-answer-410-two-still-reply/",
    "url": "https://hongdam.net/studio/notes/workers-ai-retired-models-14-answer-410-two-still-reply/",
    "title": "Workers AI retired 16 models on 20 November: 14 answer 410, two still reply",
@@ -1697,101 +1756,6 @@
      {
       "t": "PHP: Supported Versions",
       "u": "https://www.php.net/supported-versions.php"
-     }
-    ]
-   }
-  },
-  {
-   "id": "https://hongdam.net/studio/notes/automation-cost-per-run/",
-   "url": "https://hongdam.net/studio/notes/automation-cost-per-run/",
-   "title": "One workflow, 30,000 runs a month: Zapier US$1,149, Make US$116, Cloudflare Workers US$5",
-   "summary": "Zapier charges per action, Make per module, n8n per run. One order workflow at 30,000 runs a month costs US$1,149 on Zapier, US$116.47 on Make, €144 on n8n and US$5 as code on Cloudflare Workers. Prices as of 24 October 2026.",
-   "content_html": "<p>One order workflow costs US$5 a month on Cloudflare Workers and US$1,149 on Zapier at 30,000 runs. A workflow is a chain of automatic steps, and a run is one pass through it; Zapier, Make and n8n are tools for building workflows. The workflow is the same; each platform counts a run in a different unit, and the unit decides the price.</p>\n<h2 id=\"the-example-run-is-one-trigger-and-four-actions-\">The example run is one trigger and four actions across three apps</h2>\n<p>In the example, a web form posts each order to a webhook, a web address that passes the order's data to the workflow. The workflow finds the customer in a Google Sheet, writes the order as a row, emails a confirmation from Gmail and posts a message in Slack. Volumes are 300, 3,000 and 30,000 runs a month, or 10, 100 and 1,000 a day. Prices are list prices taken from each vendor's pages on 24 October 2026, for the lowest plan or tier that covers the volume, not including the fees of Google, Slack or an email provider. Euro prices are converted to US dollars where compared, at the European Central Bank reference rate of 23 October 2026, EUR 1 = US$1.1193 <sup class=\"ref\"><a href=\"#s17\" aria-label=\"source 17\">17</a></sup>.</p>\n<h2 id=\"one-run-is-4-tasks-5-credits-1-execution-1-reque\">One run is 4 tasks, 5 credits, 1 execution, 1 request or 1 minute</h2>\n<ul><li>Zapier counts a task for each successful action. The trigger and built-in steps (Filter, Formatter, Paths, Delay) count 0 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s2\" aria-label=\"source 2\">2</a></sup>. The run is <strong>4 tasks</strong>.</li><li>Make counts a credit for each module action, and reading an incoming webhook is one of them. Router and error-handler modules count 0 <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s4\" aria-label=\"source 4\">4</a></sup>. The run is <strong>5 credits</strong>. Make's pricing page dates the switch to credits as its billing unit to 27 August; its help pages say operations.</li><li>n8n counts a run of the whole workflow at any number of steps: \"An execution is a single run of your entire workflow.\" <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup> The run is <strong>1 execution</strong>.</li><li>Cloudflare Workers is code that Cloudflare runs for each incoming request, so you rent no server. It bills requests, and calls the code makes outward are free. The paid Standard plan also bills CPU time, the processor time the code uses; waiting on the network does not count <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup><sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. The run is <strong>1 request</strong>.</li><li>GitHub Actions bills minutes on its runners, with each job rounded up to a whole minute <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup><sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup>. A job that ends in seconds is <strong>1 minute</strong>.</li></ul>\n<p>Per-step counting grows with the workflow. One more action moves Zapier from 4 to 5 tasks (a quarter more) and Make from 5 to 6 credits (a fifth more). n8n stays at 1 execution, and a Worker adds milliseconds of CPU time, which fall within the 30 million included at these volumes <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup>.</p>\n<h2 id=\"at-30-000-runs-zapier-costs-about-10-times-make-\">At 30,000 runs, Zapier costs about 10 times Make and 230 times Cloudflare Workers</h2>\n<div class=\"tbl\"><table><thead><tr><th scope=\"col\">Platform and plan</th><th scope=\"col\">A run counts as</th><th scope=\"col\">300 runs</th><th scope=\"col\">3,000 runs</th><th scope=\"col\">30,000 runs</th></tr></thead><tbody><tr><th scope=\"row\">Zapier, Professional <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup></th><td data-h=\"A run counts as\">4 tasks</td><td data-h=\"300 runs\">US$58.50 (1,500-task tier)</td><td data-h=\"3,000 runs\">US$283.50 (20,000-task tier)</td><td data-h=\"30,000 runs\">US$1,149 (200,000-task tier)</td></tr><tr><th scope=\"row\">Make, Core <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup></th><td data-h=\"A run counts as\">5 credits</td><td data-h=\"300 runs\">US$10.59 (10,000-credit tier)</td><td data-h=\"3,000 runs\">US$18.82 (20,000-credit tier)</td><td data-h=\"30,000 runs\">US$116.47 (150,000-credit tier)</td></tr><tr><th scope=\"row\">n8n Cloud, Starter then Pro <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup></th><td data-h=\"A run counts as\">1 execution</td><td data-h=\"300 runs\">€24 (Starter, 2,500 executions)</td><td data-h=\"3,000 runs\">€60 (Pro, 10,000)</td><td data-h=\"30,000 runs\">€144 (Pro, 50,000)</td></tr><tr><th scope=\"row\">n8n self-hosted, Community Edition <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup><sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup><sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup></th><td data-h=\"A run counts as\">1 execution</td><td data-h=\"300 runs\">€5.99 to €26.99 server, plus update hours</td><td data-h=\"3,000 runs\">€5.99 to €26.99 server, plus update hours</td><td data-h=\"30,000 runs\">€5.99 to €26.99 server, plus update hours</td></tr><tr><th scope=\"row\">Cloudflare Workers, Free or Standard <sup class=\"ref\"><a href=\"#s6\" aria-label=\"source 6\">6</a></sup><sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup></th><td data-h=\"A run counts as\">1 request</td><td data-h=\"300 runs\">US$0 on Free, US$5 on Standard</td><td data-h=\"3,000 runs\">US$0 on Free, US$5 on Standard</td><td data-h=\"30,000 runs\">US$0 on Free, US$5 on Standard</td></tr><tr><th scope=\"row\">GitHub Actions, Linux 2-core, private repository <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup><sup class=\"ref\"><a href=\"#s9\" aria-label=\"source 9\">9</a></sup></th><td data-h=\"A run counts as\">1 job minute</td><td data-h=\"300 runs\">US$0 (300 of 2,000 free minutes)</td><td data-h=\"3,000 runs\">US$6.00 (1,000 minutes over)</td><td data-h=\"30,000 runs\">US$168.00 (28,000 minutes over)</td></tr></tbody></table></div>\n<p>Annual billing lowers Zapier to US$39, US$189 and US$769, Make to US$9, US$16 and US$99, and n8n Cloud to €20, €50 and €120 <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. The Free plans do not cover the example run: Zapier's Free plan allows two-step Zaps and 100 tasks, Make's Free plan covers 200 runs in its 1,000 credits, and n8n Cloud starts with a trial limited to 1,000 executions <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. GitHub Actions starts a job from an event, which an outside form can send with a repository_dispatch call <sup class=\"ref\"><a href=\"#s18\" aria-label=\"source 18\">18</a></sup>; standard runners in a public repository cost nothing <sup class=\"ref\"><a href=\"#s8\" aria-label=\"source 8\">8</a></sup>.</p>\n<p>Workers Free limits each request to 10 ms of CPU time. Cloudflare reports about 2.2 ms for the average Worker and 10 to 20 ms for heavier ones, such as authentication or large payloads <sup class=\"ref\"><a href=\"#s7\" aria-label=\"source 7\">7</a></sup>. The example run's CPU time is not measured here, so the table shows both plans.</p>\n<figure class=\"chart\"><table><caption>Monthly cost of 30,000 runs, US dollars <span class=\"lo\">· lower is better</span></caption><tbody><tr><th scope=\"row\">Zapier Professional</th><td><span class=\"bar\" style=\"--w:100.0%\"></span><span class=\"v\">1,149 USD</span></td></tr><tr><th scope=\"row\">GitHub Actions, 28,000 billed minutes</th><td><span class=\"bar\" style=\"--w:14.6%\"></span><span class=\"v\">168 USD</span></td></tr><tr><th scope=\"row\">n8n Cloud Pro, €144</th><td><span class=\"bar\" style=\"--w:14.0%\"></span><span class=\"v\">161.18 USD</span></td></tr><tr><th scope=\"row\">Make Core</th><td><span class=\"bar\" style=\"--w:10.1%\"></span><span class=\"v\">116.47 USD</span></td></tr><tr><th scope=\"row\">n8n self-hosted, 2 vCPU 4 GB server in Singapore, €26.99</th><td><span class=\"bar\" style=\"--w:2.6%\"></span><span class=\"v\">30.21 USD</span></td></tr><tr><th scope=\"row\">n8n self-hosted, 2 vCPU 4 GB server at NBG1 or HEL1, €5.99</th><td><span class=\"bar\" style=\"--w:0.6%\"></span><span class=\"v\">6.7 USD</span></td></tr><tr><th scope=\"row\">Cloudflare Workers Standard</th><td><span class=\"bar\" style=\"--w:0.4%\"></span><span class=\"v\">5 USD</span></td></tr></tbody></table><figcaption>Monthly billing, list prices as of 24 October 2026, euro prices at EUR 1 = US$1.1193. The n8n self-hosted bars show the server cost only, without update hours.</figcaption></figure>\n<h2 id=\"n8n-self-hosted-a-5-99-to-26-99-server-plus-upda\">n8n self-hosted: a €5.99 to €26.99 server plus update hours</h2>\n<p>Self-hosting means running n8n's free Community Edition on a server you rent and update yourself <sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>. Hetzner lists a 2 vCPU (virtual processor core), 4 GB server at €5.99 a month excluding VAT at its NBG1 and HEL1 locations (CX23), and a 2 vCPU, 4 GB AMD server at €19.99 at those locations and €26.99 at SIN1 in Singapore (CPX22) <sup class=\"ref\"><a href=\"#s10\" aria-label=\"source 10\">10</a></sup><sup class=\"ref\"><a href=\"#s11\" aria-label=\"source 11\">11</a></sup>. The order line on both pages read \"currently unavailable\" on 24 October 2026. n8n's Hetzner guide asks for at least 4 GB and 2 vCPU once its Assistant feature is added <sup class=\"ref\"><a href=\"#s12\" aria-label=\"source 12\">12</a></sup>. The load is small: n8n's benchmark puts one instance at up to 220 executions a second, and 30,000 runs a month average 0.012 a second <sup class=\"ref\"><a href=\"#s13\" aria-label=\"source 13\">13</a></sup>.</p>\n<p>The server price is the smaller part. An update is three commands, <code>docker compose pull</code>, <code>docker compose down</code> and <code>docker compose up -d</code> <sup class=\"ref\"><a href=\"#s14\" aria-label=\"source 14\">14</a></sup>. Read from GitHub on 24 October 2026, n8n published 26 releases, on 17 different days, in the 30 days to that date, and 29 security advisories on two days: 14 on 30 September and 15 on 14 October, 15 medium and 14 high severity <sup class=\"ref\"><a href=\"#s15\" aria-label=\"source 15\">15</a></sup><sup class=\"ref\"><a href=\"#s16\" aria-label=\"source 16\">16</a></sup>. At one hour per update window (time to update and test the workflow), those two days come to 2 hours a month. The hour is an assumption, not a measurement; no source times it.</p>\n<h2 id=\"with-more-steps-make-costs-more-than-n8n-cloud\">With more steps, Make costs more than n8n Cloud</h2>\n<ul><li>A ten-credit run (a trigger and nine actions) at 30,000 runs needs 300,000 Make credits, US$214.31 a month on Core, while n8n Cloud Pro stays at €144 (US$161.18) <sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</li><li>Up to 200 runs a month, Make's Free plan covers the example workflow at US$0. At 300 runs the lowest paid tiers are Make US$10.59, n8n Cloud €24 (US$26.86) and Zapier US$58.50.</li><li>A daily job such as a price check is 30 runs a month. Zapier's lowest Professional tier (750 tasks, US$29.99), Make's lowest Core tier (US$10.59) and n8n Starter (€24) each cover it <sup class=\"ref\"><a href=\"#s1\" aria-label=\"source 1\">1</a></sup><sup class=\"ref\"><a href=\"#s3\" aria-label=\"source 3\">3</a></sup><sup class=\"ref\"><a href=\"#s5\" aria-label=\"source 5\">5</a></sup>.</li><li>Code on Cloudflare Workers or GitHub Actions has no per-step unit; its cost is the time to build and maintain it. Hongdam's price is ฿8,000 a workflow: one trigger, up to three apps, an alert when it stops and 30 days of fixes, in n8n, Make, Zapier or code, with the tool's own fees charged at the price we pay <sup class=\"ref\"><a href=\"#s19\" aria-label=\"source 19\">19</a></sup>.</li></ul>",
-   "date_published": "2026-10-24T06:00:00+07:00",
-   "tags": [
-    "automation"
-   ],
-   "language": "en",
-   "image": "https://hongdam.net/og/studio/n/automation-cost-per-run.jpg",
-   "_hongdam": {
-    "title_th": "เวิร์กโฟลว์รับออเดอร์เดียวกัน 30,000 รอบต่อเดือน: Zapier 1,149 ดอลลาร์ Make 116 ดอลลาร์ Cloudflare Workers 5 ดอลลาร์",
-    "summary_th": "Zapier คิดเงินต่อ action, Make คิดต่อโมดูล, n8n คิดต่อรอบ เวิร์กโฟลว์รับออเดอร์ 5 ขั้นตอนเดียวกันจึงมีค่าใช้จ่ายที่ 30,000 รอบต่อเดือนตั้งแต่ 5 ดอลลาร์ (โค้ดบน Cloudflare Worker) ถึง 1,149 ดอลลาร์ (Zapier) อ่านราคาจากหน้าของผู้ให้บริการเมื่อ 24 ตุลาคม 2569",
-    "sources": [
-     {
-      "t": "Plans & Pricing | Zapier",
-      "u": "https://zapier.com/pricing"
-     },
-     {
-      "t": "Zapier Tasks Explained: Plans, Limits, Zaps, MCP & More | Zapier",
-      "u": "https://zapier.com/pricing/rates"
-     },
-     {
-      "t": "Pricing & Subscription Packages | Make",
-      "u": "https://www.make.com/en/pricing"
-     },
-     {
-      "t": "Operations - Help Center (Make)",
-      "u": "https://help.make.com/operations"
-     },
-     {
-      "t": "n8n Plans and Pricing - n8n.io",
-      "u": "https://n8n.io/pricing/"
-     },
-     {
-      "t": "Pricing · Cloudflare Workers docs",
-      "u": "https://developers.cloudflare.com/workers/platform/pricing/"
-     },
-     {
-      "t": "Limits · Cloudflare Workers docs",
-      "u": "https://developers.cloudflare.com/workers/platform/limits/"
-     },
-     {
-      "t": "GitHub Actions billing - GitHub Docs",
-      "u": "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions"
-     },
-     {
-      "t": "Actions runner pricing - GitHub Docs",
-      "u": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
-     },
-     {
-      "t": "Cheap cloud-hosting – low vps prices for developers (Hetzner, Cost-Optimized)",
-      "u": "https://www.hetzner.com/cloud/cost-optimized/"
-     },
-     {
-      "t": "Hetzner Virtual Private Server: Best Price-Performance Ratio",
-      "u": "https://www.hetzner.com/cloud/regular-performance/"
-     },
-     {
-      "t": "Deploy to Hetzner | Deploy | n8n Docs",
-      "u": "https://docs.n8n.io/deploy/host-n8n/install-options/use-a-cloud-provider/deploy-to-hetzner"
-     },
-     {
-      "t": "Measure performance | Deploy | n8n Docs",
-      "u": "https://docs.n8n.io/deploy/host-n8n/configure-n8n/scaling/measure-performance"
-     },
-     {
-      "t": "Install with Docker | Deploy | n8n Docs",
-      "u": "https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker"
-     },
-     {
-      "t": "Security Advisories · n8n-io/n8n · GitHub",
-      "u": "https://github.com/n8n-io/n8n/security/advisories"
-     },
-     {
-      "t": "Releases · n8n-io/n8n · GitHub",
-      "u": "https://github.com/n8n-io/n8n/releases"
-     },
-     {
-      "t": "Euro foreign exchange reference rates",
-      "u": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-     },
-     {
-      "t": "REST API endpoints for repositories - GitHub Docs",
-      "u": "https://docs.github.com/en/rest/repos/repos"
-     },
-     {
-      "t": "Buy · Hongdam",
-      "u": "https://hongdam.net/buy/?c=ai-automation"
      }
     ]
    }
