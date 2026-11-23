@@ -49,21 +49,27 @@ export function amtH(n, c = 'THB', keep = false) {
 /** Set a price element to n in c, shown in the reader's currency. */
 export function setAmt(el, n, c = 'THB') { el.dataset.n = n; el.dataset.c = c; delete el.dataset.shown; paintOne(el) }
 
-const READ = /(US\$|฿|€)\s?(\d[\d,]*(?:\.\d+)?)/
+// A range written with one sign (฿8,000–15,000) is one price with two ends, data-n and data-n2: each end is
+// converted once, and the range has its one sign (Hongdam-AI-Brief HD-07).
+const READ = /(US\$|฿|€)\s?(\d[\d,]*(?:\.\d+)?)(?:\s?[–-]\s?(\d[\d,]*(?:\.\d+)?))?/
+const both = (a, b, c) => fmt(a, c) + (b != null ? '–' + Number(b).toLocaleString('en-US') : '')
 function paintOne(el) {
   const t = el.textContent.trim()
   if (!el.dataset.n || (el.dataset.shown && t !== el.dataset.shown)) {   // first look, or another script wrote it
     const m = READ.exec(t)
     if (!m) return
     el.dataset.n = m[2].replace(/,/g, '')
+    if (m[3]) el.dataset.n2 = m[3].replace(/,/g, ''); else delete el.dataset.n2
     el.dataset.c = m[1] === 'US$' ? 'USD' : m[1] === '€' ? 'EUR' : 'THB'
   }
   if (el.hasAttribute('data-keep')) { el.dataset.shown = t; return }
-  const n = Number(el.dataset.n), c = el.dataset.c, [v, to] = shown(n, c), s = fmt(v, to)
+  const n = Number(el.dataset.n), c = el.dataset.c, [v, to] = shown(n, c)
+  const n2 = el.dataset.n2 ? Number(el.dataset.n2) : null, v2 = n2 == null ? null : to === c ? n2 : conv(n2, c, to)
+  const s = both(v, v2, to)
   if (t !== s) el.textContent = s
   el.dataset.shown = s
   for (const k of Object.values(MARK)) el.classList.toggle(k, k === MARK[to])
-  if (to !== c) el.title = fmt(n, c); else el.removeAttribute('title')
+  if (to !== c) el.title = both(n, n2, c); else el.removeAttribute('title')
 }
 export function paint(root = document) {
   if (root.nodeType === 1 && root.classList.contains('amt')) paintOne(root)

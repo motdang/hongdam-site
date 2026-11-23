@@ -19,11 +19,11 @@
   {
    "db": "songthaew",
    "t": {
-    "en": "Transport takes you from Chiang Mai to Lamphun.",
-    "th": "รถพาคุณจากเชียงใหม่ไปลำพูน",
-    "my": "သင့်ကို ချင်းမိုင်မှ လမ်ဖွန်းသို့ ယာဉ်ဖြင့် ပို့ပေးသည်။",
-    "zh": "车从清迈把您送到南奔。",
-    "de": "Die Fahrt bringt Sie von Chiang Mai nach Lamphun."
+    "en": "Transport takes you from Chiang Mai to Lamphun, at the price we pay.",
+    "th": "รถพาคุณจากเชียงใหม่ไปลำพูน ค่ารถตามราคาจริงที่เราจ่าย",
+    "my": "သင့်ကို ချင်းမိုင်မှ လမ်ဖွန်းသို့ ယာဉ်ဖြင့် ပို့ပေးသည်၊ ကားခကို ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "车从清迈把您送到南奔，车费按实付价格。",
+    "de": "Die Fahrt bringt Sie von Chiang Mai nach Lamphun, zu dem Preis, den wir zahlen."
    },
    "who": {
     "en": "Hongdam",
@@ -43,11 +43,11 @@
   {
    "db": "chedi",
    "t": {
-    "en": "A guide goes with you at Wat Phra That Hariphunchai.",
-    "th": "ไกด์ไปกับคุณที่วัดพระธาตุหริภุญชัย",
-    "my": "ဝပ်ဖရတတ်ဟရိဖွန်ချိုင်တွင် ဧည့်လမ်းညွှန်တစ်ဦး သင်နှင့်အတူ လိုက်ပါသည်။",
-    "zh": "在哈里奔猜佛塔寺，有导游陪您同行。",
-    "de": "Im Wat Phra That Hariphunchai begleitet Sie ein Guide."
+    "en": "A guide goes with you at Wat Phra That Hariphunchai, at the price we pay.",
+    "th": "ไกด์ไปกับคุณที่วัดพระธาตุหริภุญชัย ค่าไกด์ตามราคาจริงที่เราจ่าย",
+    "my": "ဝပ်ဖရတတ်ဟရိဖွန်ချိုင်တွင် ဧည့်လမ်းညွှန်တစ်ဦး သင်နှင့်အတူ လိုက်ပါသည်၊ ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း။",
+    "zh": "在哈里奔猜佛塔寺，有导游陪您同行，导游费按实付价格。",
+    "de": "Im Wat Phra That Hariphunchai begleitet Sie ein Guide, zu dem Preis, den wir zahlen."
    },
    "who": {
     "en": "Hongdam and a guide",
@@ -67,11 +67,11 @@
   {
    "db": "noodles",
    "t": {
-    "en": "Dinner is part of the seat.",
-    "th": "อาหารเย็นรวมอยู่ในราคาที่นั่ง",
-    "my": "ညစာသည် ထိုင်ခုံကြေးထဲတွင် ပါဝင်သည်။",
-    "zh": "晚餐包含在座位费里。",
-    "de": "Das Abendessen gehört zum Platz."
+    "en": "Dinner is at the price we pay.",
+    "th": "อาหารเย็นคิดตามราคาจริงที่เราจ่าย",
+    "my": "ညစာကို ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ယူသည်။",
+    "zh": "晚餐按实付价格。",
+    "de": "Das Abendessen kostet, was wir dafür zahlen."
    },
    "who": {
     "en": "Hongdam",

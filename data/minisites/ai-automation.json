@@ -139,7 +139,7 @@
   {
    "db": "coin",
    "t": {
-    "en": "The tools' own fees are charged at cost",
+    "en": "The tools' own fees are charged at the price we pay",
     "th": "ค่าบริการของเครื่องมือคิดตามจริง",
     "my": "ကိရိယာများ၏ ကိုယ်ပိုင်ကြေးကို ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်",
     "zh": "各工具自己的费用按成本收取",
@@ -525,7 +525,7 @@
     "de": "Im Monat gespart, nach der Gebühr des Werkzeugs"
    },
    "note": {
-    "en": "The sum assumes the automation does the whole task. The tools' own fees are charged at cost, apart from the price below.",
+    "en": "The sum assumes the automation does the whole task. The tools' own fees are charged at the price we pay, apart from the price below.",
     "th": "ผลรวมคิดว่าระบบอัตโนมัติทำงานนี้ทั้งหมด ค่าบริการของเครื่องมือคิดตามจริง แยกจากราคาด้านล่าง",
     "my": "ဤပေါင်းလဒ်သည် အလိုအလျောက်စနစ်က အလုပ်တစ်ခုလုံးကို လုပ်သည်ဟု ယူဆထားသည်။ ကိရိယာများ၏ ကိုယ်ပိုင်ကြေးကို အောက်ပါ စျေးနှုန်းနှင့် သီးခြား ကုန်ကျစရိတ်အတိုင်း ကောက်ခံသည်။",
     "zh": "合计假设整项任务都由自动化完成。各工具自己的费用按成本收取，不含在下面的价格内。",

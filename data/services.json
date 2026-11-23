@@ -189,12 +189,19 @@
      "th": "หาช่างและนัดให้",
      "p_en": "{price} a job",
      "p_th": "งานละ {price}",
-     "d_en": "We find a plumber, electrician, air-conditioner cleaner, pest-control worker, locksmith, internet installer, mover or cleaner. We explain the job in Thai, ask the price before work starts, book a time, and follow the job until it is done. You pay the worker directly.",
-     "d_th": "ช่างประปา ช่างไฟ ล้างแอร์ กำจัดปลวกและแมลง ช่างกุญแจ ติดตั้งอินเทอร์เน็ต ขนย้าย หรือทำความสะอาด เราหาช่าง อธิบายงาน ขอราคาก่อนเริ่มงาน นัดเวลา และติดตามจนเสร็จ ค่าช่างคุณจ่ายให้ช่างโดยตรง",
+     "d_en": "We find a plumber, electrician, air-conditioner cleaner, pest-control worker, locksmith, internet installer, mover or cleaner. We explain the job in Thai, ask the price before work starts, book a time, and follow the job until it is done.",
+     "d_th": "ช่างประปา ช่างไฟ ล้างแอร์ กำจัดปลวกและแมลง ช่างกุญแจ ติดตั้งอินเทอร์เน็ต ขนย้าย หรือทำความสะอาด เราหาช่าง อธิบายงาน ขอราคาก่อนเริ่มงาน นัดเวลา และติดตามจนเสร็จ",
      "baht": 500,
      "floor": 300,
      "ceiling": 1000,
-     "slots": 20
+     "slots": 20,
+     "ex": {
+      "en": "the worker's labour, travel and materials, paid to the worker",
+      "th": "ค่าแรง ค่าเดินทาง และค่าวัสดุของช่าง จ่ายให้ช่างโดยตรง",
+      "my": "အလုပ်သမား၏ လုပ်အားခ၊ ခရီးစရိတ်နှင့် ပစ္စည်းခ — အလုပ်သမားထံ တိုက်ရိုက်ပေးရသည်",
+      "zh": "工人的人工费、路费和材料费，直接付给工人",
+      "de": "Arbeitszeit, Anfahrt und Material des Handwerkers, direkt an ihn bezahlt"
+     }
     },
     {
      "id": "there",
@@ -207,7 +214,14 @@
      "baht": 600,
      "floor": 400,
      "ceiling": 1000,
-     "slots": 20
+     "slots": 20,
+     "ex": {
+      "en": "what the worker, landlord or delivery person charges, paid to them",
+      "th": "ค่าใช้จ่ายของช่าง เจ้าของบ้าน หรือคนส่งของ จ่ายให้เขาโดยตรง",
+      "my": "အလုပ်သမား၊ အိမ်ရှင် သို့မဟုတ် ပို့ဆောင်သူ တောင်းသောငွေ — သူတို့ထံ ပေးရသည်",
+      "zh": "工人、房东或送货员的收费，直接付给他们",
+      "de": "was Handwerker, Vermieter oder Lieferant verlangen, direkt an sie bezahlt"
+     }
     },
     {
      "id": "errand",
@@ -215,12 +229,19 @@
      "th": "วิ่งธุระ",
      "p_en": "{price} an hour",
      "p_th": "ชั่วโมงละ {price}",
-     "d_en": "In Chiang Rai or Chiang Mai, we collect things, deliver things, buy things, wait in line, or pay a bill for you in person. What we buy for you is charged at the price we pay, with the receipt.",
-     "d_th": "ในเชียงรายหรือเชียงใหม่ รับของ ส่งของ ซื้อของ ต่อคิว หรือจ่ายบิลที่เคาน์เตอร์ ของที่ซื้อให้คิดตามราคาจริงพร้อมใบเสร็จ",
+     "d_en": "In Chiang Rai or Chiang Mai, we collect things, deliver things, buy things, wait in line, or pay a bill for you in person.",
+     "d_th": "ในเชียงรายหรือเชียงใหม่ รับของ ส่งของ ซื้อของ ต่อคิว หรือจ่ายบิลที่เคาน์เตอร์",
      "baht": 300,
      "floor": 200,
      "ceiling": 500,
-     "slots": 30
+     "slots": 30,
+     "ex": {
+      "en": "what we buy or pay for you, at the price we pay, with the receipt",
+      "th": "ค่าของหรือบิลที่เราซื้อหรือจ่ายแทน ตามราคาจริงที่เราจ่าย พร้อมใบเสร็จ",
+      "my": "သင့်အတွက် ဝယ်ပေး သို့မဟုတ် ပေးချေပေးသည့်ငွေ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း၊ ပြေစာနှင့်",
+      "zh": "我们替您买的东西或付的账，按实付价格，附收据",
+      "de": "was wir für Sie kaufen oder bezahlen, zu dem Preis, den wir zahlen, mit Beleg"
+     }
     },
     {
      "id": "form",
@@ -283,8 +304,15 @@
      "slots": 10,
      "p_en": "{price} a document",
      "p_th": "ฉบับละ {price}",
-     "d_en": "We take your document to the Ministry of Foreign Affairs for an official seal, or to a notary (a person who certifies papers), and bring it back. Government fees are charged at the price we pay.",
-     "d_th": "นำเอกสารไปรับรองที่กระทรวงการต่างประเทศ หรือโนตารี แล้วรับกลับมาให้ ค่าธรรมเนียมราชการคิดตามจริง"
+     "d_en": "We take your document to the Ministry of Foreign Affairs for an official seal, or to a notary (a person who certifies papers), and bring it back.",
+     "d_th": "นำเอกสารไปรับรองที่กระทรวงการต่างประเทศ หรือโนตารี แล้วรับกลับมาให้",
+     "ex": {
+      "en": "the ministry's and the notary's fees, at the price we pay",
+      "th": "ค่าธรรมเนียมกระทรวงและโนตารี ตามราคาจริงที่เราจ่าย",
+      "my": "ဝန်ကြီးဌာနနှင့် နိုတာရီ၏ အခကြေးငွေ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "外交部和公证人的费用，按实付价格",
+      "de": "Gebühren des Ministeriums und des Notars, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "idme",
@@ -310,7 +338,14 @@
      "baht": 1500,
      "floor": 800,
      "ceiling": 4000,
-     "slots": 10
+     "slots": 10,
+     "ex": {
+      "en": "what you buy, paid to the seller",
+      "th": "ค่าสินค้าที่คุณซื้อ จ่ายให้ผู้ขาย",
+      "my": "သင်ဝယ်သည့်အရာ — ရောင်းသူထံ ပေးရသည်",
+      "zh": "您所买的东西，付给卖家",
+      "de": "was Sie kaufen, an den Verkäufer bezahlt"
+     }
     },
     {
      "id": "car-buy",
@@ -322,8 +357,15 @@
      "slots": 4,
      "p_en": "{price} a car",
      "p_th": "คันละ {price}",
-     "d_en": "We choose cars that fit your budget, go to dealers with you, and book test drives. We put the registration in your name at Thailand's Department of Land Transport. Bargaining costs extra, by the hour. The car, and a mechanic's check of a used car, are charged at the price we pay.",
-     "d_th": "คัดรถตามงบ พาไปดูรถที่ดีลเลอร์และนัดทดลองขับ และโอนทะเบียนเป็นชื่อคุณที่กรมการขนส่งทางบก การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
+     "d_en": "We choose cars that fit your budget, go to dealers with you, and book test drives. We put the registration in your name at Thailand's Department of Land Transport.",
+     "d_th": "คัดรถตามงบ พาไปดูรถที่ดีลเลอร์และนัดทดลองขับ และโอนทะเบียนเป็นชื่อคุณที่กรมการขนส่งทางบก",
+     "ex": {
+      "en": "the car, a mechanic's check of a used car and the Department of Land Transport's fees, at the price we pay; bargaining, by the hour",
+      "th": "ค่ารถ ค่าช่างตรวจรถมือสอง และค่าธรรมเนียมกรมการขนส่งทางบก ตามราคาจริงที่เราจ่าย ค่าต่อรองราคาคิดเป็นชั่วโมง",
+      "my": "ကား၊ အသုံးပြုပြီးကားကို စက်ပြင်ဆရာ စစ်ဆေးခနှင့် ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန အခကြေးငွေ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း၊ စျေးဆစ်ခြင်း — နာရီအလိုက်",
+      "zh": "车款、二手车的技师检查费和陆路运输厅的费用，按实付价格；讲价按小时计",
+      "de": "das Auto, die Prüfung eines Gebrauchtwagens durch einen Mechaniker und die Gebühren des Department of Land Transport, zu dem Preis, den wir zahlen; Verhandeln nach Stunden"
+     }
     },
     {
      "id": "moto-buy",
@@ -335,8 +377,15 @@
      "slots": 8,
      "p_en": "{price} a motorcycle",
      "p_th": "คันละ {price}",
-     "d_en": "We pick scooters and motorcycles for you to look at, go to shops with you, and book test rides. We put the registration in your name. Bargaining costs extra, by the hour. The motorcycle, and a mechanic's check of a used one, are charged at the price we pay.",
-     "d_th": "คัดสกู๊ตเตอร์และมอเตอร์ไซค์ พาไปดูที่ร้านและนัดทดลองขี่ และโอนทะเบียนเป็นชื่อคุณ การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่ารถและค่าช่างตรวจรถมือสองคิดตามจริง"
+     "d_en": "We pick scooters and motorcycles for you to look at, go to shops with you, and book test rides. We put the registration in your name.",
+     "d_th": "คัดสกู๊ตเตอร์และมอเตอร์ไซค์ พาไปดูที่ร้านและนัดทดลองขี่ และโอนทะเบียนเป็นชื่อคุณ",
+     "ex": {
+      "en": "the motorcycle, a mechanic's check of a used one and the Department of Land Transport's fees, at the price we pay; bargaining, by the hour",
+      "th": "ค่ารถ ค่าช่างตรวจรถมือสอง และค่าธรรมเนียมกรมการขนส่งทางบก ตามราคาจริงที่เราจ่าย ค่าต่อรองราคาคิดเป็นชั่วโมง",
+      "my": "ဆိုင်ကယ်၊ အသုံးပြုပြီးဆိုင်ကယ်ကို စက်ပြင်ဆရာ စစ်ဆေးခနှင့် ကုန်းလမ်းပို့ဆောင်ရေးဦးစီးဌာန အခကြေးငွေ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း၊ စျေးဆစ်ခြင်း — နာရီအလိုက်",
+      "zh": "摩托车车款、二手车的技师检查费和陆路运输厅的费用，按实付价格；讲价按小时计",
+      "de": "das Motorrad, die Prüfung eines gebrauchten durch einen Mechaniker und die Gebühren des Department of Land Transport, zu dem Preis, den wir zahlen; Verhandeln nach Stunden"
+     }
     }
    ]
   },
@@ -351,12 +400,19 @@
      "th": "เกษียณในไทย: เริ่มต้น",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "One plan for the visa (applied for through Chiang Mai Visa Desk), bank account, phone, a short list of homes, hospital registration, and insurance prices from a licensed broker. You pay government fees and rent at their own price.",
-     "d_th": "แผนเดียวสำหรับวีซ่า (ยื่นผ่านโต๊ะวีซ่าเชียงใหม่) บัญชีธนาคาร โทรศัพท์ รายการที่พัก ลงทะเบียนโรงพยาบาล และใบเสนอราคาประกันจากนายหน้าที่มีใบอนุญาต ค่าธรรมเนียมราชการและค่าเช่าคิดตามจริง",
+     "d_en": "One plan for the visa (applied for through Chiang Mai Visa Desk), bank account, phone, a short list of homes, hospital registration, and insurance prices from a licensed broker.",
+     "d_th": "แผนเดียวสำหรับวีซ่า (ยื่นผ่านโต๊ะวีซ่าเชียงใหม่) บัญชีธนาคาร โทรศัพท์ รายการที่พัก ลงทะเบียนโรงพยาบาล และใบเสนอราคาประกันจากนายหน้าที่มีใบอนุญาต",
      "baht": 25000,
      "floor": 15000,
      "ceiling": 50000,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "the visa's fees (Chiang Mai Visa Desk's and the government's), rent, insurance and bank charges, paid to each of them",
+      "th": "ค่าวีซ่า (ของโต๊ะวีซ่าเชียงใหม่และของราชการ) ค่าเช่า ค่าประกัน และค่าธรรมเนียมธนาคาร จ่ายให้แต่ละที่",
+      "my": "ဗီဇာခ (Chiang Mai Visa Desk နှင့် အစိုးရ)၊ အိမ်လခ၊ အာမခံနှင့် ဘဏ်အခကြေးငွေ — တစ်ခုစီထံ ပေးရသည်",
+      "zh": "签证费用（清迈签证服务台和政府的）、房租、保险和银行费用，分别付给各方",
+      "de": "die Visagebühren (von Chiang Mai Visa Desk und vom Staat), Miete, Versicherung und Bankgebühren, an jeden direkt bezahlt"
+     }
     },
     {
      "id": "retire-month",
@@ -369,7 +425,10 @@
      "baht": 5000,
      "floor": 3000,
      "ceiling": 10000,
-     "slots": 20
+     "slots": 20,
+     "d_my": "ဆက်သွယ်ရန် လူတစ်ဦး၊ တစ်လလျှင် အကူအညီ ၄ နာရီ၊ သက်တမ်းတိုးရက်တိုင်း မတိုင်မီ သတိပေးချက်။",
+     "d_zh": "一位专人对接，每月 4 小时的帮助，每次续签日期前提醒您。",
+     "d_de": "Eine Ansprechperson, 4 Stunden Hilfe im Monat und eine Erinnerung vor jedem Verlängerungstermin."
     },
     {
      "id": "retire-hour",
@@ -382,7 +441,10 @@
      "baht": 600,
      "floor": 500,
      "ceiling": 1000,
-     "slots": 40
+     "slots": 40,
+     "d_my": "တစ်လ ၄ နာရီ ကျော်လျှင် နာရီအလိုက် ပေးရသည်။",
+     "d_zh": "每月 4 小时用完后，按小时付费。",
+     "d_de": "Nach den vier Stunden im Monat, pro Stunde bezahlt."
     },
     {
      "id": "care-placement",
@@ -390,12 +452,19 @@
      "th": "หาบ้านพักผู้สูงอายุ",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We choose a short list of care homes, visit and compare them, and arrange the move. You pay the home for the care itself.",
-     "d_th": "คัดและไปดูบ้านพักผู้สูงอายุ เทียบราคา และจัดการย้าย ค่าดูแลจ่ายให้สถานที่โดยตรง",
+     "d_en": "We choose a short list of care homes, visit and compare them, and arrange the move.",
+     "d_th": "คัดและไปดูบ้านพักผู้สูงอายุ เทียบราคา และจัดการย้าย",
      "baht": 20000,
      "floor": 12000,
      "ceiling": 40000,
-     "slots": 3
+     "slots": 3,
+     "ex": {
+      "en": "the care home's own fees, paid to the home",
+      "th": "ค่าบริการของบ้านพักผู้สูงอายุ จ่ายให้บ้านพักโดยตรง",
+      "my": "သက်ကြီးစောင့်ရှောက်ရေးဂေဟာ၏ အခကြေးငွေ — ဂေဟာထံ ပေးရသည်",
+      "zh": "养老院自己的费用，直接付给养老院",
+      "de": "die Kosten des Pflegeheims, direkt an das Heim bezahlt"
+     }
     },
     {
      "id": "care-visit",
@@ -429,12 +498,19 @@
      "th": "พบแพทย์เฉพาะทางพร้อมล่าม",
      "p_en": "{price}, up to 4 hours",
      "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
-     "d_en": "We find and book a clinic or specialist, and an interpreter goes with you. You pay the clinic's fees at the clinic's own price.",
-     "d_th": "หาและจองคลินิกหรือแพทย์เฉพาะทาง พร้อมล่ามไปด้วย ค่ารักษาคิดตามจริง",
+     "d_en": "We find and book a clinic or specialist, and an interpreter goes with you.",
+     "d_th": "หาและจองคลินิกหรือแพทย์เฉพาะทาง พร้อมล่ามไปด้วย",
      "baht": 3000,
      "floor": 1500,
      "ceiling": 6000,
-     "slots": 16
+     "slots": 16,
+     "ex": {
+      "en": "the clinic's fees, paid to the clinic",
+      "th": "ค่ารักษาของคลินิก จ่ายให้คลินิกโดยตรง",
+      "my": "ဆေးခန်းခ — ဆေးခန်းထံ ပေးရသည်",
+      "zh": "诊所的费用，直接付给诊所",
+      "de": "die Kosten der Praxis, direkt an die Praxis bezahlt"
+     }
     },
     {
      "id": "specialist-book",
@@ -447,7 +523,14 @@
      "baht": 800,
      "floor": 500,
      "ceiling": 1500,
-     "slots": 30
+     "slots": 30,
+     "ex": {
+      "en": "the clinic's fees, paid to the clinic",
+      "th": "ค่ารักษาของคลินิก จ่ายให้คลินิกโดยตรง",
+      "my": "ဆေးခန်းခ — ဆေးခန်းထံ ပေးရသည်",
+      "zh": "诊所的费用，直接付给诊所",
+      "de": "die Kosten der Praxis, direkt an die Praxis bezahlt"
+     }
     },
     {
      "id": "death-help",
@@ -455,38 +538,59 @@
      "th": "เมื่อมีคนเสียชีวิตในไทย",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We register the death, prepare embassy papers, and arrange cremation or sending the body to your home country with a funeral home. You pay the funeral home, embassy and translation fees at the price we pay.",
-     "d_th": "แจ้งการเสียชีวิต เตรียมเอกสารสถานทูต และจัดการฌาปนกิจหรือส่งร่างกลับประเทศกับบริษัทจัดงานศพ ค่าบริษัท สถานทูต และการแปลคิดตามจริง",
+     "d_en": "We register the death, prepare embassy papers, and arrange cremation or sending the body to your home country with a funeral home.",
+     "d_th": "แจ้งการเสียชีวิต เตรียมเอกสารสถานทูต และจัดการฌาปนกิจหรือส่งร่างกลับประเทศกับบริษัทจัดงานศพ",
      "baht": 15000,
      "floor": 10000,
      "ceiling": 30000,
-     "slots": 2
+     "slots": 2,
+     "ex": {
+      "en": "the funeral home's, embassy and translation fees, at the price we pay",
+      "th": "ค่าบริษัทจัดงานศพ ค่าธรรมเนียมสถานทูต และค่าแปล ตามราคาจริงที่เราจ่าย",
+      "my": "အသုဘဝန်ဆောင်မှု၊ သံရုံးနှင့် ဘာသာပြန်ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "殡仪馆、大使馆和翻译的费用，按实付价格",
+      "de": "Bestattungsunternehmen, Botschaft und Übersetzung, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "lab-test",
      "en": "Lab test arranged",
      "th": "ส่งตรวจห้องแล็บให้",
-     "p_en": "{price}, lab at cost",
-     "p_th": "{price} ค่าแล็บตามจริง",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "We take a sample to a Thai lab and translate the report.",
      "d_th": "นำตัวอย่างส่งห้องแล็บในไทย และแปลผล",
      "baht": 2500,
      "floor": 1500,
      "ceiling": 5000,
-     "slots": 12
+     "slots": 12,
+     "ex": {
+      "en": "the lab's fee, at the price we pay",
+      "th": "ค่าตรวจของแล็บ ตามราคาจริงที่เราจ่าย",
+      "my": "ဓာတ်ခွဲခန်းခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "实验室的费用，按实付价格",
+      "de": "die Gebühr des Labors, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "clean-air",
      "en": "Clean air at home",
      "th": "อากาศสะอาดในบ้าน",
-     "p_en": "{price}, equipment at cost",
-     "p_th": "{price} ค่าเครื่องตามจริง",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "We choose and place a PM2.5 (fine dust) sensor and an air purifier that fit up to 3 rooms, and plan your filter changes.",
      "d_th": "เครื่องวัด PM2.5 และเครื่องฟอกอากาศขนาดเหมาะกับไม่เกิน 3 ห้อง จัดวางให้ พร้อมแผนเปลี่ยนไส้กรอง",
      "baht": 2500,
      "floor": 1500,
      "ceiling": 5000,
-     "slots": 10
+     "slots": 10,
+     "ex": {
+      "en": "the sensor, the air purifier and its filters, at the price we pay",
+      "th": "ค่าเครื่องวัด เครื่องฟอกอากาศ และไส้กรอง ตามราคาจริงที่เราจ่าย",
+      "my": "အာရုံခံကိရိယာ၊ လေသန့်စင်စက်နှင့် စစ်ထုတ်ကိရိယာများ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "传感器、空气净化器和滤网，按实付价格",
+      "de": "Sensor, Luftreiniger und Filter, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "accident",
@@ -494,12 +598,19 @@
      "th": "หลังเกิดอุบัติเหตุ",
      "p_en": "{price} a case",
      "p_th": "เรื่องละ {price}",
-     "d_en": "We go with you to the police station, translate the report, and talk to the insurer or rental shop in Thai. A lawyer, if you need one, is not included.",
-     "d_th": "ไปด้วยที่สถานีตำรวจ แปลบันทึก และคุยกับประกันหรือร้านเช่าเป็นภาษาไทย ทนายความถ้าจำเป็นแยกต่างหาก",
+     "d_en": "We go with you to the police station, translate the report, and talk to the insurer or rental shop in Thai.",
+     "d_th": "ไปด้วยที่สถานีตำรวจ แปลบันทึก และคุยกับประกันหรือร้านเช่าเป็นภาษาไทย",
      "baht": 8000,
      "floor": 5000,
      "ceiling": 15000,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "a lawyer, if you need one, and any fine, repair or charge you owe, paid to them",
+      "th": "ค่าทนายความถ้าต้องใช้ และค่าปรับ ค่าซ่อม หรือค่าใช้จ่ายที่คุณต้องจ่าย จ่ายให้ผู้เกี่ยวข้องโดยตรง",
+      "my": "လိုအပ်ပါက ရှေ့နေခ၊ ဒဏ်ငွေ၊ ပြုပြင်ခ သို့မဟုတ် သင်ပေးရမည့်ငွေ — သက်ဆိုင်ရာထံ ပေးရသည်",
+      "zh": "需要时的律师费，以及您应付的罚款、修理费或其他费用，直接付给对方",
+      "de": "ein Anwalt, falls nötig, und Bußgelder, Reparaturen oder andere Forderungen, direkt an diese bezahlt"
+     }
     },
     {
      "id": "caregiver-hire",
@@ -507,12 +618,19 @@
      "th": "หาและจ้างผู้ดูแล",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We find a caregiver, interview them with you and hire them. The family pays the wage.",
-     "d_th": "หาผู้ดูแล สัมภาษณ์ด้วยกัน และจ้าง ค่าจ้างครอบครัวจ่ายเอง",
+     "d_en": "We find a caregiver, interview them with you and hire them.",
+     "d_th": "หาผู้ดูแล สัมภาษณ์ด้วยกัน และจ้าง",
      "baht": 12000,
      "floor": 8000,
      "ceiling": 25000,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "the caregiver's wage, paid by the family",
+      "th": "ค่าจ้างผู้ดูแล ครอบครัวจ่ายเอง",
+      "my": "စောင့်ရှောက်သူ၏ လုပ်ခ — မိသားစုက ပေးရသည်",
+      "zh": "看护的工资，由家属支付",
+      "de": "der Lohn der Betreuungskraft, von der Familie bezahlt"
+     }
     },
     {
      "id": "lab-compound",
@@ -520,12 +638,19 @@
      "th": "ส่งตรวจสารที่ห้องแล็บ",
      "p_en": "{price}, up to 3 samples",
      "p_th": "{price} ไม่เกิน 3 ตัวอย่าง",
-     "d_en": "Purity or identity tests by HPLC, GC-MS or NMR (lab methods) at a Thai university or private lab, for compounds that are legal to hold in Thailand. You pay the lab fee and courier at the price we pay. The report is the lab's own.",
-     "d_th": "ตรวจความบริสุทธิ์หรือชนิดสารด้วย HPLC GC-MS หรือ NMR ที่แล็บมหาวิทยาลัยหรือเอกชนในไทย สำหรับสารที่ครอบครองได้ตามกฎหมายไทย ค่าแล็บและค่าส่งคิดตามจริง ผลเป็นของห้องแล็บ",
+     "d_en": "Purity or identity tests by HPLC, GC-MS or NMR (lab methods) at a Thai university or private lab, for compounds that are legal to hold in Thailand. The report is the lab's own.",
+     "d_th": "ตรวจความบริสุทธิ์หรือชนิดสารด้วย HPLC GC-MS หรือ NMR ที่แล็บมหาวิทยาลัยหรือเอกชนในไทย สำหรับสารที่ครอบครองได้ตามกฎหมายไทย ผลเป็นของห้องแล็บ",
      "baht": 3000,
      "floor": 1500,
      "ceiling": 8000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "the lab's fee and the courier, at the price we pay",
+      "th": "ค่าแล็บและค่าขนส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "ဓာတ်ခွဲခန်းခနှင့် ပို့ဆောင်ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "实验室费用和快递费，按实付价格",
+      "de": "die Gebühr des Labors und der Kurier, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "blood-basic",
@@ -533,12 +658,19 @@
      "th": "จองตรวจเลือด: พื้นฐาน",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We book it at a licensed lab or hospital, which takes and tests the blood. We translate the report. You pay the lab's fee at the price we pay.",
-     "d_th": "จองที่แล็บหรือโรงพยาบาลที่มีใบอนุญาต ซึ่งเจาะและอ่านผลเลือด แปลผลให้ ค่าแล็บคิดตามจริง",
+     "d_en": "We book it at a licensed lab or hospital, which takes and tests the blood. We translate the report.",
+     "d_th": "จองที่แล็บหรือโรงพยาบาลที่มีใบอนุญาต ซึ่งเจาะและอ่านผลเลือด แปลผลให้",
      "baht": 1500,
      "floor": 800,
      "ceiling": 3000,
-     "slots": 30
+     "slots": 30,
+     "ex": {
+      "en": "the lab's fee, at the price we pay",
+      "th": "ค่าตรวจของแล็บ ตามราคาจริงที่เราจ่าย",
+      "my": "ဓာတ်ခွဲခန်းခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "实验室的费用，按实付价格",
+      "de": "die Gebühr des Labors, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "blood-full",
@@ -546,12 +678,19 @@
      "th": "จองตรวจสุขภาพ",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We book a full checkup at a hospital, go with you on the day, and translate the report. You pay the hospital's fee at the price we pay.",
-     "d_th": "จองตรวจสุขภาพที่โรงพยาบาล มีคนไปด้วยในวันตรวจ แปลผลให้ ค่าโรงพยาบาลคิดตามจริง",
+     "d_en": "We book a full checkup at a hospital, go with you on the day, and translate the report.",
+     "d_th": "จองตรวจสุขภาพที่โรงพยาบาล มีคนไปด้วยในวันตรวจ แปลผลให้",
      "baht": 3000,
      "floor": 1500,
      "ceiling": 6000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "the hospital's fee, at the price we pay",
+      "th": "ค่าบริการของโรงพยาบาล ตามราคาจริงที่เราจ่าย",
+      "my": "ဆေးရုံခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "医院的费用，按实付价格",
+      "de": "die Gebühr des Krankenhauses, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "specialist-hour",
@@ -587,7 +726,14 @@
      "p_th": "ครั้งละ {price}",
      "d_en": "Moving house into or out of Thailand in a 20-foot shipping container. We find and compare moving companies and shipping agents, get written quotes, and book packing and pickup. We prepare the goods list and customs papers for household goods, make the calls in Thai, and track the shipment until it arrives.",
      "d_th": "เข้าหรือออกจากประเทศไทยด้วยตู้ 20 ฟุต หาและเทียบบริษัทขนย้ายและตัวแทนขนส่ง ใบเสนอราคาเป็นลายลักษณ์อักษร นัดวันแพ็กและรับของ ทำรายการสิ่งของและเอกสารศุลกากรของใช้ในบ้าน โทรประสานงานภาษาไทย และติดตามจนถึงหน้าบ้าน",
-     "href": "https://motdang.net/sites/ship-to-thailand/"
+     "href": "https://motdang.net/sites/ship-to-thailand/",
+     "ex": {
+      "en": "the moving company, packing, shipping, insurance and any import duty, at the price on their quote",
+      "th": "ค่าบริษัทขนย้าย ค่าแพ็ก ค่าขนส่ง ค่าประกัน และภาษีนำเข้าถ้ามี ตามใบเสนอราคาของแต่ละราย",
+      "my": "အိမ်ပြောင်းကုမ္ပဏီ၊ ထုပ်ပိုးခ၊ သယ်ယူပို့ဆောင်ခ၊ အာမခံနှင့် သွင်းကုန်ခွန် — သူတို့ စျေးနှုန်းစာရင်းအတိုင်း",
+      "zh": "搬家公司、打包、运输、保险和进口关税，按各家报价",
+      "de": "Umzugsfirma, Verpackung, Transport, Versicherung und Einfuhrzoll, zum Preis ihres Angebots"
+     }
     },
     {
      "id": "move-room",
@@ -600,7 +746,14 @@
      "p_en": "{price} a move",
      "p_th": "ครั้งละ {price}",
      "d_en": "The same service as moving a whole house, for one room: about 5 to 10 cubic metres in a container shared with other customers.",
-     "d_th": "บริการเหมือนการย้ายบ้านทั้งหลัง แต่สำหรับของหนึ่งห้อง ประมาณ 5 ถึง 10 ลูกบาศก์เมตร ในตู้รวม"
+     "d_th": "บริการเหมือนการย้ายบ้านทั้งหลัง แต่สำหรับของหนึ่งห้อง ประมาณ 5 ถึง 10 ลูกบาศก์เมตร ในตู้รวม",
+     "ex": {
+      "en": "the moving company, packing, shipping, insurance and any import duty, at the price on their quote",
+      "th": "ค่าบริษัทขนย้าย ค่าแพ็ก ค่าขนส่ง ค่าประกัน และภาษีนำเข้าถ้ามี ตามใบเสนอราคาของแต่ละราย",
+      "my": "အိမ်ပြောင်းကုမ္ပဏီ၊ ထုပ်ပိုးခ၊ သယ်ယူပို့ဆောင်ခ၊ အာမခံနှင့် သွင်းကုန်ခွန် — သူတို့ စျေးနှုန်းစာရင်းအတိုင်း",
+      "zh": "搬家公司、打包、运输、保险和进口关税，按各家报价",
+      "de": "Umzugsfirma, Verpackung, Transport, Versicherung und Einfuhrzoll, zum Preis ihres Angebots"
+     }
     },
     {
      "id": "move-boxes",
@@ -613,7 +766,14 @@
      "p_en": "{price} a move",
      "p_th": "ครั้งละ {price}",
      "d_en": "The same service as moving a whole house, for up to 10 boxes, sent by air or in a container shared with other customers.",
-     "d_th": "บริการเหมือนการย้ายบ้านทั้งหลัง แต่สำหรับไม่เกิน 10 กล่อง ทางอากาศหรือในตู้รวม"
+     "d_th": "บริการเหมือนการย้ายบ้านทั้งหลัง แต่สำหรับไม่เกิน 10 กล่อง ทางอากาศหรือในตู้รวม",
+     "ex": {
+      "en": "the moving company, packing, shipping, insurance and any import duty, at the price on their quote",
+      "th": "ค่าบริษัทขนย้าย ค่าแพ็ก ค่าขนส่ง ค่าประกัน และภาษีนำเข้าถ้ามี ตามใบเสนอราคาของแต่ละราย",
+      "my": "အိမ်ပြောင်းကုမ္ပဏီ၊ ထုပ်ပိုးခ၊ သယ်ယူပို့ဆောင်ခ၊ အာမခံနှင့် သွင်းကုန်ခွန် — သူတို့ စျေးနှုန်းစာရင်းအတိုင်း",
+      "zh": "搬家公司、打包、运输、保险和进口关税，按各家报价",
+      "de": "Umzugsfirma, Verpackung, Transport, Versicherung und Einfuhrzoll, zum Preis ihres Angebots"
+     }
     },
     {
      "id": "luggage",
@@ -623,10 +783,17 @@
      "floor": 500,
      "ceiling": 1500,
      "slots": 10,
-     "p_en": "{price}, courier at cost",
-     "p_th": "{price} ค่าขนส่งคิดตามจริง",
-     "d_en": "We pick up your luggage or scooter, pack it, book a delivery company or the train, and track it until it arrives.",
-     "d_th": "รับ แพ็ก และจองขนส่งหรือรถไฟ ติดตามจนถึงปลายทาง"
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "We book a delivery company or the train for your luggage or scooter, and track it until it arrives.",
+     "d_th": "จองขนส่งหรือรถไฟให้กระเป๋าหรือมอเตอร์ไซค์ของคุณ และติดตามจนถึงปลายทาง",
+     "ex": {
+      "en": "pickup, packing and the courier or train fare, at the price we pay",
+      "th": "ค่ารับของ ค่าแพ็ก และค่าขนส่งหรือรถไฟ ตามราคาจริงที่เราจ่าย",
+      "my": "လာယူခ၊ ထုပ်ပိုးခနှင့် ပို့ဆောင်ခ သို့မဟုတ် ရထားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "取件、打包和快递或火车运费，按实付价格",
+      "de": "Abholung, Verpackung und Kurier- oder Bahnfracht, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -646,7 +813,14 @@
      "p_en": "{price}",
      "p_th": "{price}",
      "d_en": "A shortlist of places that match what you need. We book up to 5 visits to see places and go with you. We explain the lease in English and check the deposit terms.",
-     "d_th": "คัดรายการตามที่คุณต้องการ นัดและไปดูด้วยไม่เกิน 5 แห่ง อ่านสัญญาเช่าเป็นภาษาอังกฤษ และตรวจเงื่อนไขเงินมัดจำ"
+     "d_th": "คัดรายการตามที่คุณต้องการ นัดและไปดูด้วยไม่เกิน 5 แห่ง อ่านสัญญาเช่าเป็นภาษาอังกฤษ และตรวจเงื่อนไขเงินมัดจำ",
+     "ex": {
+      "en": "rent, deposit and any agent's fee, paid to the landlord or agent",
+      "th": "ค่าเช่า เงินประกัน และค่านายหน้าถ้ามี จ่ายให้เจ้าของหรือนายหน้า",
+      "my": "အိမ်လခ၊ စပေါ်ငွေနှင့် ပွဲစားခ — အိမ်ရှင် သို့မဟုတ် ပွဲစားထံ ပေးရသည်",
+      "zh": "房租、押金和中介费（如有），付给房东或中介",
+      "de": "Miete, Kaution und eine Maklergebühr, an Vermieter oder Makler bezahlt"
+     }
     },
     {
      "id": "stay-check",
@@ -658,8 +832,15 @@
      "slots": 4,
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We read the Thai land office record, compare the official value with the asking price, look at the street and neighbours, and write a report. A lawyer's check of the title deed is separate.",
-     "d_th": "อ่านข้อมูลที่สำนักงานที่ดิน เทียบราคาประเมินกับราคาขาย ดูถนนและเพื่อนบ้าน พร้อมรายงาน การตรวจโฉนดโดยทนายแยกต่างหาก"
+     "d_en": "We read the Thai land office record, compare the official value with the asking price, look at the street and neighbours, and write a report.",
+     "d_th": "อ่านข้อมูลที่สำนักงานที่ดิน เทียบราคาประเมินกับราคาขาย ดูถนนและเพื่อนบ้าน พร้อมรายงาน",
+     "ex": {
+      "en": "a lawyer's check of the title deed, and land office fees",
+      "th": "ค่าทนายตรวจโฉนด และค่าธรรมเนียมสำนักงานที่ดิน",
+      "my": "ရှေ့နေက ပိုင်ဆိုင်မှုစာချုပ် စစ်ဆေးခနှင့် မြေယာရုံး အခကြေးငွေ",
+      "zh": "律师审核地契的费用，以及土地局的费用",
+      "de": "die Prüfung der Besitzurkunde durch einen Anwalt und Gebühren des Grundbuchamts"
+     }
     },
     {
      "id": "stay-booking",
@@ -706,12 +887,19 @@
      "th": "จัดหารถหรือมอเตอร์ไซค์เช่า",
      "p_en": "{price} a rental",
      "p_th": "ครั้งละ {price}",
-     "d_en": "We find, compare and book a car or scooter for your dates. The rental fee, deposit and insurance follow the rental shop's terms, and you pay the shop.",
-     "d_th": "หา เทียบ และจองตามวันที่ของคุณ ค่าเช่า มัดจำ และประกันตามเงื่อนไขของร้าน จ่ายให้ร้านโดยตรง",
+     "d_en": "We find, compare and book a car or scooter for your dates.",
+     "d_th": "หา เทียบ และจองตามวันที่ของคุณ",
      "baht": 800,
      "floor": 500,
      "ceiling": 1500,
-     "slots": 20
+     "slots": 20,
+     "ex": {
+      "en": "the rental fee, deposit and insurance, paid to the rental shop",
+      "th": "ค่าเช่า เงินมัดจำ และประกัน จ่ายให้ร้านเช่าโดยตรง",
+      "my": "ငှားခ၊ စပေါ်ငွေနှင့် အာမခံ — ငှားရမ်းဆိုင်ထံ ပေးရသည်",
+      "zh": "租金、押金和保险，付给租车行",
+      "de": "Mietpreis, Kaution und Versicherung, an den Verleih bezahlt"
+     }
     },
     {
      "id": "rent-event",
@@ -719,12 +907,19 @@
      "th": "จัดหาอุปกรณ์หรือสถานที่เช่า",
      "p_en": "{price} a rental",
      "p_th": "ครั้งละ {price}",
-     "d_en": "We find, compare and book sound equipment, tents, tables or a place for an event. You pay the rental fee to the supplier.",
-     "d_th": "เครื่องเสียง เต็นท์ โต๊ะ หรือสถานที่ หา เทียบ และจองให้ ค่าเช่าจ่ายให้ผู้ให้เช่าโดยตรง",
+     "d_en": "We find, compare and book sound equipment, tents, tables or a place for an event.",
+     "d_th": "เครื่องเสียง เต็นท์ โต๊ะ หรือสถานที่ หา เทียบ และจองให้",
      "baht": 3000,
      "floor": 2000,
      "ceiling": 8000,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "the rental fee, paid to the supplier",
+      "th": "ค่าเช่า จ่ายให้ผู้ให้เช่าโดยตรง",
+      "my": "ငှားခ — ပေးသွင်းသူထံ ပေးရသည်",
+      "zh": "租金，付给供应商",
+      "de": "die Miete, an den Anbieter bezahlt"
+     }
     },
     {
      "id": "let-find",
@@ -750,7 +945,14 @@
      "pct": 10,
      "floor": 8,
      "ceiling": 12,
-     "slots": 15
+     "slots": 15,
+     "ex": {
+      "en": "the cost of repairs",
+      "th": "ค่าซ่อม",
+      "my": "ပြုပြင်ခ",
+      "zh": "维修费用",
+      "de": "die Kosten für Reparaturen"
+     }
     },
     {
      "id": "npa-homes",
@@ -778,12 +980,19 @@
      "th": "เที่ยวเชียงรายหนึ่งวัน ส่วนตัว",
      "p_en": "{price} a car, up to 3",
      "p_th": "คันละ {price} ไม่เกิน 3 คน",
-     "d_en": "A car, fuel and a licensed guide to White Temple, Blue Temple, Black House, the Golden Triangle or Mae Salong. Entry fees, boat and lunch are charged at the price we pay.",
-     "d_th": "รถ น้ำมัน และไกด์ที่มีใบอนุญาต วัดร่องขุ่น วัดร่องเสือเต้น บ้านดำ สามเหลี่ยมทองคำ หรือดอยแม่สลอง ค่าเข้า เรือ และอาหารกลางวันคิดตามจริง",
+     "d_en": "A car and a licensed guide to White Temple, Blue Temple, Black House, the Golden Triangle or Mae Salong.",
+     "d_th": "รถและไกด์ที่มีใบอนุญาต วัดร่องขุ่น วัดร่องเสือเต้น บ้านดำ สามเหลี่ยมทองคำ หรือดอยแม่สลอง",
      "baht": 8000,
      "floor": 6000,
      "ceiling": 12000,
-     "slots": 16
+     "slots": 16,
+     "ex": {
+      "en": "fuel, entry fees, boat and lunch, at the price we pay",
+      "th": "ค่าน้ำมัน ค่าเข้า เรือ และอาหารกลางวัน ตามราคาจริงที่เราจ่าย",
+      "my": "ဆီဖိုး၊ ဝင်ကြေး၊ လှေခနှင့် နေ့လယ်စာ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "油费、门票、船费和午餐，按实付价格",
+      "de": "Benzin, Eintritte, Boot und Mittagessen, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "tour-cm",
@@ -791,12 +1000,19 @@
      "th": "เที่ยวเชียงใหม่หนึ่งวัน ส่วนตัว",
      "p_en": "{price} a car, up to 3",
      "p_th": "คันละ {price} ไม่เกิน 3 คน",
-     "d_en": "A car, fuel and a licensed guide to Doi Suthep and the old city, Doi Inthanon or Mae Kampong. Park fees and lunch are charged at the price we pay.",
-     "d_th": "รถ น้ำมัน และไกด์ที่มีใบอนุญาต ดอยสุเทพและเมืองเก่า ดอยอินทนนท์ หรือแม่กำปอง ค่าอุทยานและอาหารกลางวันคิดตามจริง",
+     "d_en": "A car and a licensed guide to Doi Suthep and the old city, Doi Inthanon or Mae Kampong.",
+     "d_th": "รถและไกด์ที่มีใบอนุญาต ดอยสุเทพและเมืองเก่า ดอยอินทนนท์ หรือแม่กำปอง",
      "baht": 8000,
      "floor": 6000,
      "ceiling": 12000,
-     "slots": 12
+     "slots": 12,
+     "ex": {
+      "en": "fuel, park fees and lunch, at the price we pay",
+      "th": "ค่าน้ำมัน ค่าอุทยาน และอาหารกลางวัน ตามราคาจริงที่เราจ่าย",
+      "my": "ဆီဖိုး၊ ပန်းခြံဝင်ကြေးနှင့် နေ့လယ်စာ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "油费、公园门票和午餐，按实付价格",
+      "de": "Benzin, Parkgebühren und Mittagessen, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "tour-3d",
@@ -804,12 +1020,19 @@
      "th": "สามวันในภาคเหนือ",
      "p_en": "{price} a person, sharing",
      "p_th": "คนละ {price} พักคู่",
-     "d_en": "Two nights in a twin room (two beds), a car, a guide, breakfasts and two lunches. Entry fees and dinners are charged at the price we pay.",
-     "d_th": "พักห้องคู่สองคืน รถ ไกด์ อาหารเช้า และอาหารกลางวันสองมื้อ ค่าเข้าและอาหารเย็นคิดตามจริง",
+     "d_en": "Three days in northern Thailand: we plan the days and book two nights in a twin room (two beds), a car and a guide.",
+     "d_th": "สามวันในภาคเหนือ เราวางแผนและจองห้องคู่สองคืน รถ และไกด์ให้",
      "baht": 20000,
      "floor": 15000,
      "ceiling": 30000,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "the room, the car and its fuel, the guide, every meal and entry fees, at the price we pay",
+      "th": "ค่าห้องพัก ค่ารถและค่าน้ำมัน ค่าไกด์ อาหารทุกมื้อ และค่าเข้า ตามราคาจริงที่เราจ่าย",
+      "my": "အခန်းခ၊ ကားခနှင့် ဆီဖိုး၊ ဧည့်လမ်းညွှန်ခ၊ အစားအသောက်တိုင်းနှင့် ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "房费、车费和油费、导游费、每顿饭和门票，按实付价格",
+      "de": "Zimmer, Auto und Benzin, Guide, jede Mahlzeit und Eintritte, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "driver-day",
@@ -817,12 +1040,19 @@
      "th": "รถพร้อมคนขับหนึ่งวัน",
      "p_en": "{price}, 9 hours",
      "p_th": "{price} 9 ชั่วโมง",
-     "d_en": "Fuel and road tolls are included. Extra hours after the first 9 and parking are charged at the price we pay.",
-     "d_th": "รวมน้ำมันและทางด่วน ค่าล่วงเวลาและที่จอดคิดตามจริง",
+     "d_en": "A car and driver for 9 hours.",
+     "d_th": "รถพร้อมคนขับ 9 ชั่วโมง",
      "baht": 4000,
      "floor": 3000,
      "ceiling": 5000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "fuel, road tolls, parking and hours after the first 9, at the price we pay",
+      "th": "ค่าน้ำมัน ทางด่วน ที่จอด และชั่วโมงที่เกิน 9 ชั่วโมงแรก ตามราคาจริงที่เราจ่าย",
+      "my": "ဆီဖိုး၊ လမ်းကြေး၊ ကားပါကင်ခနှင့် ပထမ ၉ နာရီ ကျော်သော နာရီများ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "油费、过路费、停车费和超过 9 小时的部分，按实付价格",
+      "de": "Benzin, Maut, Parken und Stunden nach den ersten 9, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "guide-day",
@@ -830,12 +1060,19 @@
      "th": "ไกด์ที่มีใบอนุญาตหนึ่งวัน ภาษาอังกฤษ",
      "p_en": "{price}, 8 hours",
      "p_th": "{price} 8 ชั่วโมง",
-     "d_en": "The guide's meals and entry fees are charged at the price we pay.",
-     "d_th": "ค่าอาหารและค่าเข้าของไกด์คิดตามจริง",
+     "d_en": "A licensed guide who speaks English, for 8 hours.",
+     "d_th": "ไกด์ที่มีใบอนุญาต พูดภาษาอังกฤษ 8 ชั่วโมง",
      "baht": 3000,
      "floor": 2500,
      "ceiling": 4000,
-     "slots": 10
+     "slots": 10,
+     "ex": {
+      "en": "the guide's meals and entry fees, at the price we pay",
+      "th": "ค่าอาหารและค่าเข้าของไกด์ ตามราคาจริงที่เราจ่าย",
+      "my": "ဧည့်လမ်းညွှန်၏ အစားအသောက်နှင့် ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "导游的餐费和门票，按实付价格",
+      "de": "Essen und Eintritte des Guides, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "guide-day-other",
@@ -843,12 +1080,19 @@
      "th": "ไกด์ที่มีใบอนุญาตหนึ่งวัน ภาษาอื่น",
      "p_en": "{price}, 8 hours",
      "p_th": "{price} 8 ชั่วโมง",
-     "d_en": "A guide who speaks Chinese, Japanese, Korean or another language. The guide's meals and entry fees are charged at the price we pay.",
-     "d_th": "จีน ญี่ปุ่น เกาหลี หรือภาษาอื่น ค่าอาหารและค่าเข้าของไกด์คิดตามจริง",
+     "d_en": "A guide who speaks Chinese, Japanese, Korean or another language.",
+     "d_th": "จีน ญี่ปุ่น เกาหลี หรือภาษาอื่น",
      "baht": 4000,
      "floor": 3000,
      "ceiling": 5000,
-     "slots": 6
+     "slots": 6,
+     "ex": {
+      "en": "the guide's meals and entry fees, at the price we pay",
+      "th": "ค่าอาหารและค่าเข้าของไกด์ ตามราคาจริงที่เราจ่าย",
+      "my": "ဧည့်လမ်းညွှန်၏ အစားအသောက်နှင့် ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "导游的餐费和门票，按实付价格",
+      "de": "Essen und Eintritte des Guides, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "experience",
@@ -856,12 +1100,19 @@
      "th": "จองคลาสหรือเวิร์กช็อปพร้อมล่าม",
      "p_en": "{price} a booking, up to 4",
      "p_th": "{price} ต่อการจอง ไม่เกิน 4 คน",
-     "d_en": "Muay thai (Thai boxing), cooking, silver-making or weaving, with a translator beside you. The class fee is charged at the price we pay.",
-     "d_th": "มวยไทย ทำอาหาร เครื่องเงิน หรือทอผ้า พร้อมล่ามไปด้วย ค่าสถานที่คิดตามจริง",
+     "d_en": "Muay thai (Thai boxing), cooking, silver-making or weaving, with a translator beside you.",
+     "d_th": "มวยไทย ทำอาหาร เครื่องเงิน หรือทอผ้า พร้อมล่ามไปด้วย",
      "baht": 1500,
      "floor": 1000,
      "ceiling": 2500,
-     "slots": 20
+     "slots": 20,
+     "ex": {
+      "en": "the class fee, at the price we pay",
+      "th": "ค่าเรียนหรือค่าสถานที่ ตามราคาจริงที่เราจ่าย",
+      "my": "သင်တန်းခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "课程费，按实付价格",
+      "de": "die Kursgebühr, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "lantern-seat",
@@ -869,12 +1120,19 @@
      "th": "คืนโคมแสนดวงที่ลำพูน",
      "p_en": "{price} a seat",
      "p_th": "ที่นั่งละ {price}",
-     "d_en": "A lantern festival night in November at Wat Phra That Hariphunchai (a temple in Lamphun): transport from Chiang Mai, dinner and a guide.",
-     "d_th": "คืนโคมแสนดวงที่วัดพระธาตุหริภุญชัยในเดือนพฤศจิกายน รถจากเชียงใหม่ อาหารเย็น และไกด์",
+     "d_en": "A seat at the lantern festival night in November at Wat Phra That Hariphunchai (a temple in Lamphun), booked for you.",
+     "d_th": "ที่นั่งงานคืนโคมที่วัดพระธาตุหริภุญชัยในเดือนพฤศจิกายน จองให้",
      "baht": 4000,
      "floor": 3000,
      "ceiling": 6000,
-     "slots": 24
+     "slots": 24,
+     "ex": {
+      "en": "transport from Chiang Mai, dinner and a guide, at the price we pay",
+      "th": "ค่ารถจากเชียงใหม่ อาหารเย็น และไกด์ ตามราคาจริงที่เราจ่าย",
+      "my": "ချင်းမိုင်မှ ကားခ၊ ညစာနှင့် ဧည့်လမ်းညွှန် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "从清迈出发的交通、晚餐和导游，按实付价格",
+      "de": "Fahrt ab Chiang Mai, Abendessen und ein Guide, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "balloon-cr",
@@ -882,12 +1140,19 @@
      "th": "บินบอลลูน เชียงราย",
      "p_en": "{price} a person",
      "p_th": "คนละ {price}",
-     "d_en": "A place in a shared hot-air balloon basket in the balloon season, booked for you, with transport there and back. Festival entry is charged at the price we pay.",
-     "d_th": "บอลลูนตะกร้ารวมในฤดูบอลลูน จองพร้อมรถรับส่ง ค่าเข้างานคิดตามจริง",
+     "d_en": "A place in a shared hot-air balloon basket in the balloon season, booked for you.",
+     "d_th": "บอลลูนตะกร้ารวมในฤดูบอลลูน จองให้",
      "baht": 12000,
      "floor": 10000,
      "ceiling": 15000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "transport there and back and festival entry, at the price we pay",
+      "th": "ค่ารถรับส่งและค่าเข้างานเทศกาล ตามราคาจริงที่เราจ่าย",
+      "my": "အသွားအပြန် ကားခနှင့် ပွဲတော်ဝင်ကြေး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "往返接送和节庆门票，按实付价格",
+      "de": "Hin- und Rückfahrt und Eintritt zum Festival, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "balloon-cm",
@@ -895,12 +1160,19 @@
      "th": "บินบอลลูน เชียงใหม่",
      "p_en": "{price} a person",
      "p_th": "คนละ {price}",
-     "d_en": "A place in a shared hot-air balloon basket from November to February, booked for you, with transport there and back.",
-     "d_th": "บอลลูนตะกร้ารวม พฤศจิกายนถึงกุมภาพันธ์ จองพร้อมรถรับส่ง",
+     "d_en": "A place in a shared hot-air balloon basket from November to February, booked for you.",
+     "d_th": "บอลลูนตะกร้ารวม พฤศจิกายนถึงกุมภาพันธ์ จองให้",
      "baht": 10000,
      "floor": 8000,
      "ceiling": 12000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "transport there and back, at the price we pay",
+      "th": "ค่ารถรับส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "အသွားအပြန် ကားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "往返接送，按实付价格",
+      "de": "Hin- und Rückfahrt, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "paramotor",
@@ -908,12 +1180,19 @@
      "th": "บินพารามอเตอร์",
      "p_en": "{price} a person",
      "p_th": "คนละ {price}",
-     "d_en": "A flight in a paramotor (a paraglider with an engine), flying together with a pilot. We book it, with transport there and back.",
-     "d_th": "บินคู่กับนักบิน จองพร้อมรถรับส่ง",
+     "d_en": "A flight in a paramotor (a paraglider with an engine), flying together with a pilot, booked for you.",
+     "d_th": "บินคู่กับนักบิน จองให้",
      "baht": 4000,
      "floor": 3000,
      "ceiling": 5000,
-     "slots": 12
+     "slots": 12,
+     "ex": {
+      "en": "transport there and back, at the price we pay",
+      "th": "ค่ารถรับส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "အသွားအပြန် ကားခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "往返接送，按实付价格",
+      "de": "Hin- und Rückfahrt, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -990,12 +1269,19 @@
      "th": "ล่ามไปด้วย",
      "p_en": "{price} up to 4 hours",
      "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
-     "d_en": "In Chiang Rai or Chiang Mai: the immigration office, the employment office, hospitals, police stations, banks, job interviews and staff training. Travel inside the city is included; farther away is charged at the price we pay.",
-     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่ ตม. สำนักงานจัดหางาน โรงพยาบาล สถานีตำรวจ ธนาคาร สัมภาษณ์งาน และอบรมพนักงาน รวมค่าเดินทางในเมือง นอกเมืองคิดตามจริง",
+     "d_en": "In Chiang Rai or Chiang Mai: the immigration office, the employment office, hospitals, police stations, banks, job interviews and staff training.",
+     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่ ตม. สำนักงานจัดหางาน โรงพยาบาล สถานีตำรวจ ธนาคาร สัมภาษณ์งาน และอบรมพนักงาน",
      "baht": 3000,
      "floor": 2000,
      "ceiling": 5000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "travel, at the price we pay",
+      "th": "ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "交通费，按实付价格",
+      "de": "die Anfahrt, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "interp-day",
@@ -1009,7 +1295,14 @@
      "p_en": "{price} up to 8 hours",
      "p_th": "{price} ไม่เกิน 8 ชั่วโมง",
      "d_en": "In-person interpreting in Chiang Rai or Chiang Mai, like the 4-hour option, but for a whole day. Examples: a factory visit, a trade fair, a hospital stay or a day of meetings.",
-     "d_th": "ล่ามไปกับคุณในเชียงรายหรือเชียงใหม่ เหมือนตัวเลือก 4 ชั่วโมง แต่ทั้งวัน เช่น ดูโรงงาน งานแสดงสินค้า อยู่โรงพยาบาล หรือประชุมทั้งวัน"
+     "d_th": "ล่ามไปกับคุณในเชียงรายหรือเชียงใหม่ เหมือนตัวเลือก 4 ชั่วโมง แต่ทั้งวัน เช่น ดูโรงงาน งานแสดงสินค้า อยู่โรงพยาบาล หรือประชุมทั้งวัน",
+     "ex": {
+      "en": "travel, at the price we pay",
+      "th": "ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "交通费，按实付价格",
+      "de": "die Anfahrt, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "zh-translate",
@@ -1047,8 +1340,15 @@
      "slots": 6,
      "p_en": "{price} up to 4 hours",
      "p_th": "{price} ไม่เกิน 4 ชั่วโมง",
-     "d_en": "In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings. Travel inside the city is included; farther away is charged at the price we pay.",
-     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่หน่วยงาน โรงพยาบาล โรงงาน ร้านค้า และการประชุม รวมค่าเดินทางในเมือง นอกเมืองคิดตามจริง"
+     "d_en": "In Chiang Rai or Chiang Mai: offices, hospitals, factories, shops and meetings.",
+     "d_th": "ในเชียงรายหรือเชียงใหม่ ที่หน่วยงาน โรงพยาบาล โรงงาน ร้านค้า และการประชุม",
+     "ex": {
+      "en": "travel, at the price we pay",
+      "th": "ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "交通费，按实付价格",
+      "de": "die Anfahrt, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "lang-pages",
@@ -1137,7 +1437,14 @@
      "floor": 2000,
      "ceiling": 5000,
      "slots": 10,
-     "walk": "desk"
+     "walk": "desk",
+     "ex": {
+      "en": "Grab's own fees and commission, paid to Grab",
+      "th": "ค่าธรรมเนียมและค่าคอมมิชชันของ Grab จ่ายให้ Grab",
+      "my": "Grab ၏ အခကြေးငွေနှင့် ကော်မရှင် — Grab ထံ ပေးရသည်",
+      "zh": "Grab 自己的费用和佣金，付给 Grab",
+      "de": "Gebühren und Provision von Grab, an Grab bezahlt"
+     }
     },
     {
      "id": "grab-menu",
@@ -1215,12 +1522,19 @@
      "th": "กล่องรับเงิน",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "A PromptPay QR code for the exact amount, on your website or in LINE (a chat app). A program checks each bank transfer slip (a customer's proof of payment). SlipOK's fee, if any, is yours.",
-     "d_th": "คิวอาร์พร้อมเพย์ยอดตรงบนเว็บหรือไลน์ของคุณ ตรวจสลิปอัตโนมัติ ค่าบริการ SlipOK ถ้ามี คุณจ่ายเอง",
+     "d_en": "A PromptPay QR code for the exact amount, on your website or in LINE (a chat app). A program checks each bank transfer slip (a customer's proof of payment).",
+     "d_th": "คิวอาร์พร้อมเพย์ยอดตรงบนเว็บหรือไลน์ของคุณ ตรวจสลิปอัตโนมัติ",
      "baht": 4000,
      "floor": 2000,
      "ceiling": 8000,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "SlipOK's fee, if there is one, paid by you",
+      "th": "ค่าบริการ SlipOK ถ้ามี คุณจ่ายเอง",
+      "my": "SlipOK ၏ အခကြေးငွေ ရှိလျှင် — သင်ပေးရသည်",
+      "zh": "SlipOK 的费用（如有），由您支付",
+      "de": "die Gebühr von SlipOK, falls es eine gibt, von Ihnen bezahlt"
+     }
     },
     {
      "id": "ownpage",
@@ -1258,7 +1572,14 @@
      "p_en": "{price}",
      "p_th": "{price}",
      "d_en": "Customers order on their phones, and the orders go to your cash register system (point-of-sale). It is built for Clover.",
-     "d_th": "ลูกค้าสั่งจากมือถือ ออเดอร์เข้าระบบขายหน้าร้านของคุณ (ทำแล้วกับ Clover)"
+     "d_th": "ลูกค้าสั่งจากมือถือ ออเดอร์เข้าระบบขายหน้าร้านของคุณ (ทำแล้วกับ Clover)",
+     "ex": {
+      "en": "Clover's own fees",
+      "th": "ค่าบริการของ Clover",
+      "my": "Clover ၏ အခကြေးငွေ",
+      "zh": "Clover 自己的费用",
+      "de": "die Gebühren von Clover"
+     }
     },
     {
      "id": "etsy-open",
@@ -1271,7 +1592,14 @@
      "p_en": "{price}",
      "p_th": "{price}",
      "d_en": "We open your account and add your first product listings with photos and English text. We also prepare shipping and payment settings.",
-     "d_th": "สมัครบัญชี ลงสินค้าชุดแรกพร้อมรูปและคำบรรยายภาษาอังกฤษ ตั้งค่าการส่งและการรับเงิน"
+     "d_th": "สมัครบัญชี ลงสินค้าชุดแรกพร้อมรูปและคำบรรยายภาษาอังกฤษ ตั้งค่าการส่งและการรับเงิน",
+     "ex": {
+      "en": "Etsy's or eBay's listing and sales fees, paid to them",
+      "th": "ค่าลงสินค้าและค่าธรรมเนียมการขายของ Etsy หรือ eBay จ่ายให้แพลตฟอร์ม",
+      "my": "Etsy သို့မဟုတ် eBay ၏ စာရင်းတင်ခနှင့် ရောင်းချခ — သူတို့ထံ ပေးရသည်",
+      "zh": "Etsy 或 eBay 的上架费和销售费，付给平台",
+      "de": "Einstell- und Verkaufsgebühren von Etsy oder eBay, an diese bezahlt"
+     }
     },
     {
      "id": "etsy-run",
@@ -1284,7 +1612,14 @@
      "p_en": "{price} a month",
      "p_th": "เดือนละ {price}",
      "d_en": "We manage your product listings, customer messages and orders each month.",
-     "d_th": "ดูแลสินค้า ข้อความ และออเดอร์ทุกเดือน"
+     "d_th": "ดูแลสินค้า ข้อความ และออเดอร์ทุกเดือน",
+     "ex": {
+      "en": "Etsy's or eBay's listing and sales fees, paid to them",
+      "th": "ค่าลงสินค้าและค่าธรรมเนียมการขายของ Etsy หรือ eBay จ่ายให้แพลตฟอร์ม",
+      "my": "Etsy သို့မဟုတ် eBay ၏ စာရင်းတင်ခနှင့် ရောင်းချခ — သူတို့ထံ ပေးရသည်",
+      "zh": "Etsy 或 eBay 的上架费和销售费，付给平台",
+      "de": "Einstell- und Verkaufsgebühren von Etsy oder eBay, an diese bezahlt"
+     }
     },
     {
      "id": "online-shop",
@@ -1296,8 +1631,15 @@
      "slots": 3,
      "p_en": "{price}, up to 30 products",
      "p_th": "{price} ไม่เกิน 30 สินค้า",
-     "d_en": "Your own online shop at your own web address, in Thai and English. Customers pay by PromptPay or card and choose a delivery option. You pay the fees of the shop and payment services.",
-     "d_th": "ร้านของคุณเองบนโดเมนของคุณ ภาษาไทยและอังกฤษ รับพร้อมเพย์และบัตร พร้อมตัวเลือกการส่ง ค่าแพลตฟอร์มและค่าธรรมเนียมรับเงินคุณจ่ายเอง"
+     "d_en": "Your own online shop at your own web address, in Thai and English. Customers pay by PromptPay or card and choose a delivery option.",
+     "d_th": "ร้านของคุณเองบนโดเมนของคุณ ภาษาไทยและอังกฤษ รับพร้อมเพย์และบัตร พร้อมตัวเลือกการส่ง",
+     "ex": {
+      "en": "the shop platform's and payment services' fees, and your web address, paid to them",
+      "th": "ค่าแพลตฟอร์มร้านค้า ค่าธรรมเนียมรับเงิน และค่าโดเมน จ่ายให้ผู้ให้บริการ",
+      "my": "ဆိုင်ပလက်ဖောင်း၊ ငွေပေးချေမှုဝန်ဆောင်မှု အခကြေးငွေနှင့် ဝဘ်လိပ်စာခ — သူတို့ထံ ပေးရသည်",
+      "zh": "店铺平台和支付服务的费用，以及域名费，付给服务商",
+      "de": "Gebühren der Shop-Plattform und der Zahlungsdienste sowie Ihre Webadresse, an diese bezahlt"
+     }
     },
     {
      "id": "lineman-start",
@@ -1310,7 +1652,14 @@
      "p_en": "{price} a platform",
      "p_th": "แพลตฟอร์มละ {price}",
      "d_en": "We register your shop with you on LINE MAN or ShopeeFood (food-delivery apps): your documents, your first menu of up to 40 items, photos, and menu names in Thai and English.",
-     "d_th": "สมัครร้านของคุณไปด้วยกัน เอกสาร เมนูแรกไม่เกิน 40 รายการ รูป ชื่อเมนูไทยและอังกฤษ"
+     "d_th": "สมัครร้านของคุณไปด้วยกัน เอกสาร เมนูแรกไม่เกิน 40 รายการ รูป ชื่อเมนูไทยและอังกฤษ",
+     "ex": {
+      "en": "the app's own fees and commission, paid to it",
+      "th": "ค่าธรรมเนียมและค่าคอมมิชชันของแอป จ่ายให้แอปนั้น",
+      "my": "အက်ပ်၏ အခကြေးငွေနှင့် ကော်မရှင် — အက်ပ်ထံ ပေးရသည်",
+      "zh": "外卖平台自己的费用和佣金，付给平台",
+      "de": "Gebühren und Provision der App, an die App bezahlt"
+     }
     },
     {
      "id": "fb-care",
@@ -1335,8 +1684,15 @@
      "slots": 8,
      "p_en": "{price} a month a platform",
      "p_th": "แพลตฟอร์มละ เดือนละ {price}",
-     "d_en": "We make ads and run them on Facebook and Instagram, TikTok or Google, in your own ad account. We report each month. Ad money is charged at the price we pay.",
-     "d_th": "Facebook และ Instagram, TikTok หรือ Google ทำโฆษณา ดูแล และรายงานทุกเดือน ในบัญชีโฆษณาของคุณเอง ค่าโฆษณาคิดตามจริง"
+     "d_en": "We make ads and run them on Facebook and Instagram, TikTok or Google, in your own ad account. We report each month.",
+     "d_th": "Facebook และ Instagram, TikTok หรือ Google ทำโฆษณา ดูแล และรายงานทุกเดือน ในบัญชีโฆษณาของคุณเอง",
+     "ex": {
+      "en": "the ad money, at the price we pay",
+      "th": "ค่าโฆษณา ตามราคาจริงที่เราจ่าย",
+      "my": "ကြော်ငြာငွေ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "广告费，按实付价格",
+      "de": "das Werbebudget, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "stall-page",
@@ -1371,7 +1727,14 @@
      "p_en": "{price}",
      "p_th": "{price}",
      "d_en": "The agreement with Hongdam, your product list with tariff codes (the customs numbers for each type of goods), packing instructions, export paperwork templates and courier accounts.",
-     "d_th": "ข้อตกลง รายการสินค้าพร้อมพิกัดศุลกากร มาตรฐานการแพ็ก แม่แบบเอกสารส่งออก และบัญชีขนส่ง"
+     "d_th": "ข้อตกลง รายการสินค้าพร้อมพิกัดศุลกากร มาตรฐานการแพ็ก แม่แบบเอกสารส่งออก และบัญชีขนส่ง",
+     "ex": {
+      "en": "courier charges and customs duties, paid when you ship",
+      "th": "ค่าขนส่งและภาษีศุลกากร จ่ายเมื่อส่งของ",
+      "my": "ပို့ဆောင်ခနှင့် အကောက်ခွန် — ပို့သည့်အခါ ပေးရသည်",
+      "zh": "快递费和关税，发货时支付",
+      "de": "Kurierkosten und Zölle, beim Versand bezahlt"
+     }
     },
     {
      "id": "trade-dropship",
@@ -1384,7 +1747,14 @@
      "p_en": "{price} an order",
      "p_th": "ออเดอร์ละ {price}",
      "d_en": "Your buyer orders from you; we pick, wrap, label and hand it to the carrier, and send the buyer the tracking.",
-     "d_th": "ลูกค้าสั่งกับคุณ เราหยิบ ห่อ ติดฉลาก ส่งให้ขนส่ง และส่งเลขพัสดุให้ลูกค้า"
+     "d_th": "ลูกค้าสั่งกับคุณ เราหยิบ ห่อ ติดฉลาก ส่งให้ขนส่ง และส่งเลขพัสดุให้ลูกค้า",
+     "ex": {
+      "en": "postage, at the price we pay",
+      "th": "ค่าส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "စာတိုက်ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "邮费，按实付价格",
+      "de": "Porto, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "trade-shelf",
@@ -1410,7 +1780,14 @@
      "p_en": "{price} of the goods' value, at least ฿500 an order",
      "p_th": "{price} ของมูลค่าสินค้า ขั้นต่ำออเดอร์ละ ฿500",
      "d_en": "Textiles, silver, woodwork, ceramics, coffee and hill-tribe crafts from northern Thailand: found, ordered, checked and collected.",
-     "d_th": "ผ้า เครื่องเงิน งานไม้ เซรามิก กาแฟ และงานฝีมือชาติพันธุ์จากภาคเหนือ หา สั่ง ตรวจ และรับของให้"
+     "d_th": "ผ้า เครื่องเงิน งานไม้ เซรามิก กาแฟ และงานฝีมือชาติพันธุ์จากภาคเหนือ หา สั่ง ตรวจ และรับของให้",
+     "ex": {
+      "en": "the goods themselves, at the price we pay",
+      "th": "ค่าสินค้า ตามราคาจริงที่เราจ่าย",
+      "my": "ကုန်ပစ္စည်းဖိုး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "货品本身，按实付价格",
+      "de": "die Ware selbst, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "trade-qc",
@@ -1435,8 +1812,15 @@
      "slots": 30,
      "p_en": "{price} a shipment",
      "p_th": "ครั้งละ {price}",
-     "d_en": "Commercial invoice, packing list and export declaration. A certificate of origin, where one is needed, at cost.",
-     "d_th": "อินวอยซ์ แพ็กกิ้งลิสต์ และใบขนสินค้าขาออก ใบรับรองถิ่นกำเนิดสินค้าคิดตามจริงถ้าต้องใช้"
+     "d_en": "Commercial invoice, packing list and export declaration.",
+     "d_th": "อินวอยซ์ แพ็กกิ้งลิสต์ และใบขนสินค้าขาออก",
+     "ex": {
+      "en": "a certificate of origin, where one is needed, at the price we pay",
+      "th": "ใบรับรองถิ่นกำเนิดสินค้าถ้าต้องใช้ ตามราคาจริงที่เราจ่าย",
+      "my": "လိုအပ်ပါက မူလနိုင်ငံ အထောက်အထား — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "原产地证书（需要时），按实付价格",
+      "de": "ein Ursprungszeugnis, wo nötig, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "trade-import",
@@ -1449,7 +1833,14 @@
      "p_en": "{price} a shipment",
      "p_th": "ครั้งละ {price}",
      "d_en": "Small parcels into Thailand for a partner, cleared through customs.",
-     "d_th": "พัสดุขนาดเล็กเข้าไทยสำหรับพาร์ทเนอร์ ผ่านพิธีการศุลกากรให้"
+     "d_th": "พัสดุขนาดเล็กเข้าไทยสำหรับพาร์ทเนอร์ ผ่านพิธีการศุลกากรให้",
+     "ex": {
+      "en": "import duty, tax and the courier, at the price we pay",
+      "th": "ภาษีนำเข้า ภาษีอื่น และค่าขนส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "သွင်းကုန်ခွန်၊ အခွန်နှင့် ပို့ဆောင်ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "进口关税、税费和快递费，按实付价格",
+      "de": "Einfuhrzoll, Steuern und Kurier, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -1468,8 +1859,15 @@
      "slots": 8,
      "p_en": "{price} a trip",
      "p_th": "ทริปละ {price}",
-     "d_en": "A plan for each day of your trip. We book drivers, rooms, classes and restaurant tables in your name, and you pay each place directly.",
-     "d_th": "แผนรายวัน จองรถ ห้องพัก คลาส และร้านอาหารในชื่อของคุณ คุณจ่ายแต่ละที่โดยตรง"
+     "d_en": "A plan for each day of your trip. We book drivers, rooms, classes and restaurant tables in your name.",
+     "d_th": "แผนรายวัน จองรถ ห้องพัก คลาส และร้านอาหารในชื่อของคุณ",
+     "ex": {
+      "en": "drivers, rooms, classes and tables, paid to each place",
+      "th": "ค่ารถ ที่พัก คลาส และร้านอาหาร จ่ายให้แต่ละที่โดยตรง",
+      "my": "ယာဉ်မောင်း၊ အခန်း၊ သင်တန်းနှင့် စားပွဲ — နေရာတစ်ခုစီထံ ပေးရသည်",
+      "zh": "司机、住宿、课程和餐位的费用，分别付给各家",
+      "de": "Fahrer, Zimmer, Kurse und Tische, an jeden Anbieter direkt bezahlt"
+     }
     },
     {
      "id": "event-page",
@@ -1531,10 +1929,17 @@
      "floor": 2000,
      "ceiling": 6000,
      "slots": 4,
-     "p_en": "{price}, house and ceremony at cost",
-     "p_th": "{price} ค่าศาลและพิธีคิดตามจริง",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "For a new home or shop: we choose the spirit house (a small shrine) with you and book the maker and the person who leads the ceremony. We arrange the day.",
-     "d_th": "สำหรับบ้านหรือร้านใหม่ เลือกศาลด้วยกัน จองช่างและผู้ทำพิธี จัดวันให้"
+     "d_th": "สำหรับบ้านหรือร้านใหม่ เลือกศาลด้วยกัน จองช่างและผู้ทำพิธี จัดวันให้",
+     "ex": {
+      "en": "the spirit house, the ceremony leader's gift and the offerings, at the price we pay",
+      "th": "ค่าศาลพระภูมิ ค่าครูของผู้ทำพิธี และเครื่องเซ่นไหว้ ตามราคาจริงที่เราจ่าย",
+      "my": "နတ်စင်၊ အခမ်းအနားဦးဆောင်သူ၏ ဆရာကန်တော့ခနှင့် ပူဇော်ပစ္စည်း — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "土地神龛、主持仪式者的谢礼和供品，按实付价格",
+      "de": "das Geisterhaus, die Gabe für den Zeremonienleiter und die Opfergaben, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "sak-yant",
@@ -1546,8 +1951,15 @@
      "slots": 8,
      "p_en": "{price} a visit",
      "p_th": "ครั้งละ {price}",
-     "d_en": "We find an ajarn (master) or monk near you in northern Thailand and ask for a sak yant (sacred tattoo) for you. We arrange the visit, with an interpreter beside you for up to 4 hours. The ajarn chooses the yant (design) and may say no. You pay the ajarn directly for the yant and offering. Transport is charged at the price we pay.",
-     "d_th": "หาอาจารย์หรือพระในพื้นที่ภาคเหนือใกล้ที่คุณอยู่ ติดต่อขอให้ นัดวัน และมีล่ามอยู่ด้วยไม่เกิน 4 ชั่วโมง อาจารย์เป็นผู้เลือกยันต์และอาจไม่รับ ค่ายันต์และเครื่องไหว้ครูจ่ายให้อาจารย์โดยตรง ค่าเดินทางคิดตามจริง"
+     "d_en": "We find an ajarn (master) or monk near you in northern Thailand and ask for a sak yant (sacred tattoo) for you. We arrange the visit, with an interpreter beside you for up to 4 hours. The ajarn chooses the yant (design) and may say no.",
+     "d_th": "หาอาจารย์หรือพระในพื้นที่ภาคเหนือใกล้ที่คุณอยู่ ติดต่อขอให้ นัดวัน และมีล่ามอยู่ด้วยไม่เกิน 4 ชั่วโมง อาจารย์เป็นผู้เลือกยันต์และอาจไม่รับ",
+     "ex": {
+      "en": "the ajarn's price for the yant and the offering, paid to the ajarn on the day; transport, at the price we pay",
+      "th": "ค่ายันต์และเครื่องไหว้ครู จ่ายให้อาจารย์โดยตรงในวันสัก ค่าเดินทาง ตามราคาจริงที่เราจ่าย",
+      "my": "ယန္တရားအတွက် ဆရာ၏ အခနှင့် ပူဇော်ပစ္စည်း — ထိုးသည့်နေ့တွင် ဆရာထံ တိုက်ရိုက်ပေးရသည်၊ ခရီးစရိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "法师的刺符费用和供品，当天直接付给法师；交通费按实付价格",
+      "de": "der Preis des Ajarn für den Yant und die Opfergabe, am Tag direkt an den Ajarn bezahlt; die Fahrt, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "wed-full",
@@ -1555,12 +1967,19 @@
      "th": "วางแผนงานแต่งงานครบวงจร",
      "p_en": "{price} a wedding",
      "p_th": "งานละ {price}",
-     "d_en": "We plan the place, suppliers, budget and schedule, and run the day. Suppliers are charged at the price we pay. The legal marriage is registered at the district office.",
-     "d_th": "สถานที่ ผู้ให้บริการ งบประมาณ และกำหนดการ พร้อมดูแลในวันงาน ค่าผู้ให้บริการคิดตามจริง การจดทะเบียนสมรสทำที่อำเภอ",
+     "d_en": "We plan the place, suppliers, budget and schedule, and run the day. The legal marriage is registered at the district office.",
+     "d_th": "สถานที่ ผู้ให้บริการ งบประมาณ และกำหนดการ พร้อมดูแลในวันงาน การจดทะเบียนสมรสทำที่อำเภอ",
      "baht": 60000,
      "floor": 40000,
      "ceiling": 150000,
-     "slots": 1
+     "slots": 1,
+     "ex": {
+      "en": "the suppliers (the place, food, photographer and the rest), at the price we pay",
+      "th": "ค่าผู้ให้บริการต่างๆ (สถานที่ อาหาร ช่างภาพ และอื่นๆ) ตามราคาจริงที่เราจ่าย",
+      "my": "ပေးသွင်းသူများ (နေရာ၊ အစားအသောက်၊ ဓာတ်ပုံဆရာ စသည်) — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "各供应商（场地、餐饮、摄影师等），按实付价格",
+      "de": "die Dienstleister (Ort, Essen, Fotograf und andere), zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "wed-partial",
@@ -1568,12 +1987,19 @@
      "th": "วางแผนงานแต่งงานบางส่วน",
      "p_en": "{price} a wedding",
      "p_th": "งานละ {price}",
-     "d_en": "You have the place for the wedding. We find the suppliers, make the schedule and run the wedding day. Suppliers are charged at the price we pay.",
-     "d_th": "คุณมีสถานที่แล้ว เราหาผู้ให้บริการ ทำกำหนดการ และดูแลในวันงาน ค่าผู้ให้บริการคิดตามจริง",
+     "d_en": "You have the place for the wedding. We find the suppliers, make the schedule and run the wedding day.",
+     "d_th": "คุณมีสถานที่แล้ว เราหาผู้ให้บริการ ทำกำหนดการ และดูแลในวันงาน",
      "baht": 30000,
      "floor": 20000,
      "ceiling": 80000,
-     "slots": 1
+     "slots": 1,
+     "ex": {
+      "en": "the suppliers (the place, food, photographer and the rest), at the price we pay",
+      "th": "ค่าผู้ให้บริการต่างๆ (สถานที่ อาหาร ช่างภาพ และอื่นๆ) ตามราคาจริงที่เราจ่าย",
+      "my": "ပေးသွင်းသူများ (နေရာ၊ အစားအသောက်၊ ဓာတ်ပုံဆရာ စသည်) — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "各供应商（场地、餐饮、摄影师等），按实付价格",
+      "de": "die Dienstleister (Ort, Essen, Fotograf und andere), zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "wed-day",
@@ -1586,7 +2012,14 @@
      "baht": 20000,
      "floor": 12000,
      "ceiling": 40000,
-     "slots": 2
+     "slots": 2,
+     "ex": {
+      "en": "the suppliers, paid by you",
+      "th": "ค่าผู้ให้บริการต่างๆ คุณจ่ายเอง",
+      "my": "ပေးသွင်းသူများ — သင်ပေးရသည်",
+      "zh": "各供应商的费用，由您支付",
+      "de": "die Dienstleister, von Ihnen bezahlt"
+     }
     },
     {
      "id": "bride-concierge",
@@ -1594,12 +2027,19 @@
      "th": "ผู้ช่วยเจ้าสาว",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "Help with your dress, hair and makeup, dress fittings, the photographer and your schedule on the wedding day. Each supplier's fees are charged at the price we pay.",
-     "d_th": "ชุด ทำผมแต่งหน้า ลองชุด ช่างภาพ และตารางของคุณในวันงาน ค่าบริการของแต่ละที่คิดตามจริง",
+     "d_en": "Help with your dress, hair and makeup, dress fittings, the photographer and your schedule on the wedding day.",
+     "d_th": "ชุด ทำผมแต่งหน้า ลองชุด ช่างภาพ และตารางของคุณในวันงาน",
      "baht": 12000,
      "floor": 8000,
      "ceiling": 25000,
-     "slots": 2
+     "slots": 2,
+     "ex": {
+      "en": "each supplier's fees, at the price we pay",
+      "th": "ค่าบริการของแต่ละร้าน ตามราคาจริงที่เราจ่าย",
+      "my": "ပေးသွင်းသူတစ်ဦးစီ၏ အခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "各供应商的费用，按实付价格",
+      "de": "die Kosten jedes Dienstleisters, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "event-plan",
@@ -1607,12 +2047,19 @@
      "th": "วางแผนจัดงาน",
      "p_en": "{price} an event",
      "p_th": "งานละ {price}",
-     "d_en": "We plan and run a party, a launch event, a company dinner or a team trip. The place, food and sound equipment are charged at the price we pay.",
-     "d_th": "ปาร์ตี้ งานเปิดตัว งานเลี้ยงบริษัท หรือสัมมนานอกสถานที่ วางแผนและดูแลให้ ค่าสถานที่ อาหาร และเครื่องเสียงคิดตามจริง",
+     "d_en": "We plan and run a party, a launch event, a company dinner or a team trip.",
+     "d_th": "ปาร์ตี้ งานเปิดตัว งานเลี้ยงบริษัท หรือสัมมนานอกสถานที่ วางแผนและดูแลให้",
      "baht": 20000,
      "floor": 10000,
      "ceiling": 60000,
-     "slots": 2
+     "slots": 2,
+     "ex": {
+      "en": "the place, food and sound equipment, at the price we pay",
+      "th": "ค่าสถานที่ อาหาร และเครื่องเสียง ตามราคาจริงที่เราจ่าย",
+      "my": "နေရာ၊ အစားအသောက်နှင့် အသံစနစ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "场地、餐饮和音响设备，按实付价格",
+      "de": "Ort, Essen und Tontechnik, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -1744,12 +2191,19 @@
      "th": "เครื่องรางเขียนชื่อ",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "A small charm drawn with your name, with a photo taken at its blessing. Shipping costs extra.",
-     "d_th": "เครื่องรางเล็กที่เขียนชื่อของคุณ พร้อมรูปตอนปลุกเสก ค่าส่งแยก",
+     "d_en": "A small charm drawn with your name, with a photo taken at its blessing.",
+     "d_th": "เครื่องรางเล็กที่เขียนชื่อของคุณ พร้อมรูปตอนปลุกเสก",
      "usd": 59,
      "floor": 29,
      "ceiling": 99,
-     "slots": 25
+     "slots": 25,
+     "ex": {
+      "en": "shipping, at the price we pay",
+      "th": "ค่าส่ง ตามราคาจริงที่เราจ่าย",
+      "my": "ပို့ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "运费，按实付价格",
+      "de": "Versand, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "pha-yant",
@@ -1757,12 +2211,19 @@
      "th": "ผ้ายันต์เขียนให้",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "A yant (sacred design) cloth, about 55 by 45 cm, drawn by an ajarn (master) with your name and birth date. Any khan khru (gift to the teacher) is charged at the price we pay.",
-     "d_th": "ผ้ายันต์ขนาดประมาณ 55×45 ซม. อาจารย์เขียนพร้อมชื่อและวันเกิดของคุณ ค่าขันครูถ้ามีคิดตามจริง",
+     "d_en": "A yant (sacred design) cloth, about 55 by 45 cm, drawn by an ajarn (master) with your name and birth date.",
+     "d_th": "ผ้ายันต์ขนาดประมาณ 55×45 ซม. อาจารย์เขียนพร้อมชื่อและวันเกิดของคุณ",
      "baht": 5000,
      "floor": 3000,
      "ceiling": 10000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "any khan khru (gift to the teacher), at the price we pay",
+      "th": "ค่าขันครูถ้ามี ตามราคาจริงที่เราจ่าย",
+      "my": "ခန်ခရူး (ဆရာကန်တော့ပွဲ) ရှိလျှင် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "拜师礼（如有），按实付价格",
+      "de": "ein Khan Khru (Gabe an den Lehrer), falls nötig, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "amulet-check",
@@ -1781,14 +2242,21 @@
      "id": "amulet-buy",
      "en": "Amulet found for you",
      "th": "เช่าพระให้ที่ตลาด",
-     "p_en": "{price}, amulet at cost",
-     "p_th": "{price} ค่าเช่าพระตามจริง",
-     "d_en": "We find an amulet at a market in Chiang Mai or Chiang Rai and send you photos before you pay. Asking the seller for a lower price is extra, charged by the hour. Shipping is extra.",
-     "d_th": "หาและเช่าพระที่ตลาดในเชียงใหม่หรือเชียงราย ส่งรูปให้ดูก่อนจ่าย การต่อรองราคาคิดเพิ่มรายชั่วโมง ค่าส่งแยก",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "We find an amulet at a market in Chiang Mai or Chiang Rai and send you photos before you pay.",
+     "d_th": "หาและเช่าพระที่ตลาดในเชียงใหม่หรือเชียงราย ส่งรูปให้ดูก่อนจ่าย",
      "baht": 1000,
      "floor": 600,
      "ceiling": 2500,
-     "slots": 20
+     "slots": 20,
+     "ex": {
+      "en": "the amulet itself and shipping, at the price we pay; bargaining with the seller, by the hour",
+      "th": "ค่าเช่าพระและค่าส่ง ตามราคาจริงที่เราจ่าย ค่าต่อรองราคาคิดเป็นชั่วโมง",
+      "my": "ဆောင်ဖွယ်ကိုယ်တိုင်နှင့် ပို့ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း၊ ရောင်းသူနှင့် စျေးဆစ်ခြင်း — နာရီအလိုက်",
+      "zh": "护身符本身和运费，按实付价格；与卖家讲价按小时计",
+      "de": "das Amulett selbst und der Versand, zu dem Preis, den wir zahlen; Verhandeln mit dem Verkäufer nach Stunden"
+     }
     },
     {
      "id": "almanac-widget",
@@ -1834,7 +2302,14 @@
      "baht": 300,
      "floor": 150,
      "ceiling": 600,
-     "slots": 100
+     "slots": 100,
+     "ex": {
+      "en": "the food for the monks, at the price we pay",
+      "th": "ค่าอาหารใส่บาตร ตามราคาจริงที่เราจ่าย",
+      "my": "ဘုန်းကြီးများအတွက် ဆွမ်း — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "供僧的食物，按实付价格",
+      "de": "das Essen für die Mönche, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-set",
@@ -1847,20 +2322,34 @@
      "baht": 800,
      "floor": 500,
      "ceiling": 3000,
-     "slots": 60
+     "slots": 60,
+     "ex": {
+      "en": "the sangkhathan set itself, at the price we pay",
+      "th": "ค่าชุดสังฆทาน ตามราคาจริงที่เราจ่าย",
+      "my": "သင်္ဃဒါန်းအစုံ ကိုယ်တိုင် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "僧伽供品套装本身，按实付价格",
+      "de": "das Sangkhathan-Set selbst, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-gift",
      "en": "Robes, an image or a donation offered for you",
      "th": "ถวายผ้าไตร พระพุทธรูป หรือปัจจัยแทนคุณ",
-     "p_en": "{price}, the item at cost",
-     "p_th": "{price} ค่าของคิดตามจริง",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "We offer robes for monks, a Buddha image (statue) or a money donation at a wat (temple) in your name, and send you photos.",
      "d_th": "ถวายผ้าไตร พระพุทธรูป หรือปัจจัยที่วัดในชื่อของคุณ พร้อมรูป",
      "baht": 500,
      "floor": 300,
      "ceiling": 1000,
-     "slots": 40
+     "slots": 40,
+     "ex": {
+      "en": "the robes, statue or donation itself, at the price we pay",
+      "th": "ค่าผ้าไตร พระพุทธรูป หรือปัจจัย ตามราคาจริงที่เราจ่าย",
+      "my": "သင်္ကန်း၊ ဆင်းတု သို့မဟုတ် လှူငွေ ကိုယ်တိုင် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "僧袍、佛像或捐款本身，按实付价格",
+      "de": "Roben, Statue oder Spende selbst, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-fish",
@@ -1873,33 +2362,54 @@
      "baht": 500,
      "floor": 300,
      "ceiling": 1200,
-     "slots": 30
+     "slots": 30,
+     "ex": {
+      "en": "the fish, at the price we pay",
+      "th": "ค่าปลา ตามราคาจริงที่เราจ่าย",
+      "my": "ငါးဖိုး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "鱼的费用，按实付价格",
+      "de": "die Fische, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "merit-dead",
      "en": "Merit for someone who died",
      "th": "ทำบุญอุทิศให้ผู้ล่วงลับ",
-     "p_en": "{price}, monks' food and envelopes at cost",
-     "p_th": "{price} ค่าภัตตาหารและปัจจัยตามจริง",
+     "p_en": "{price}",
+     "p_th": "{price}",
      "d_en": "Merit (Buddhist good deeds) on the 7th, 50th or 100th day after the death: we invite monks, arrange the ceremony and send you photos.",
      "d_th": "ทำบุญ 7 วัน 50 วัน หรือ 100 วัน นิมนต์พระ จัดพิธี ส่งรูปให้",
      "baht": 3000,
      "floor": 2000,
      "ceiling": 6000,
-     "slots": 6
+     "slots": 6,
+     "ex": {
+      "en": "monks' food and envelopes, at the price we pay",
+      "th": "ค่าภัตตาหารพระและซองปัจจัย ตามราคาจริงที่เราจ่าย",
+      "my": "ဘုန်းကြီးများ၏ ဆွမ်းနှင့် လှူငွေစာအိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "僧人的斋饭和红包，按实付价格",
+      "de": "Essen und Umschläge für die Mönche, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "house-blessing",
      "en": "House or shop blessing",
      "th": "ทำบุญบ้านหรือเปิดร้าน",
-     "p_en": "{price}, food and offerings at cost",
-     "p_th": "{price} อาหารและเครื่องไทยธรรมตามจริง",
-     "d_en": "We invite nine monks and arrange the ceremony: the person who leads it, the altar table, seats and a translator. Monks' food, gifts for the monks, donation envelopes and guests' food are charged at the price we pay.",
-     "d_th": "นิมนต์พระเก้ารูป พิธีกร โต๊ะหมู่ ที่นั่ง และล่าม ค่าภัตตาหาร เครื่องไทยธรรม ปัจจัย และอาหารแขกคิดตามจริง",
+     "p_en": "{price}",
+     "p_th": "{price}",
+     "d_en": "We invite nine monks and arrange the ceremony: the person who leads it, the altar table, seats and a translator.",
+     "d_th": "นิมนต์พระเก้ารูป พิธีกร โต๊ะหมู่ ที่นั่ง และล่าม",
      "baht": 8000,
      "floor": 5000,
      "ceiling": 15000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "monks' food, gifts for the monks, donation envelopes and guests' food, at the price we pay",
+      "th": "ค่าภัตตาหารพระ เครื่องไทยธรรม ซองปัจจัย และอาหารแขก ตามราคาจริงที่เราจ่าย",
+      "my": "ဘုန်းကြီးများ၏ ဆွမ်း၊ လှူဖွယ်၊ လှူငွေစာအိတ်နှင့် ဧည့်သည်အစားအသောက် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "僧人的斋饭、供僧礼品、红包和宾客餐食，按实付价格",
+      "de": "Essen und Gaben für die Mönche, Spendenumschläge und Essen für die Gäste, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "su-khwan-arr",
@@ -1907,12 +2417,19 @@
      "th": "จัดพิธีสู่ขวัญ",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We find a mo khwan (who leads the rite) and arrange the su khwan ceremony (a spirit blessing), with a translator. The bai si tray (flowers for the rite), offerings and the mo khwan's khan khru (gift to the teacher) are charged at the price we pay.",
-     "d_th": "หาหมอขวัญและจัดพิธีสู่ขวัญ พร้อมล่าม ค่าบายศรี เครื่องบูชา และขันครูคิดตามจริง",
+     "d_en": "We find a mo khwan (who leads the rite) and arrange the su khwan ceremony (a spirit blessing), with a translator.",
+     "d_th": "หาหมอขวัญและจัดพิธีสู่ขวัญ พร้อมล่าม",
      "baht": 3000,
      "floor": 2000,
      "ceiling": 6000,
-     "slots": 12
+     "slots": 12,
+     "ex": {
+      "en": "the bai si tray, the offerings and the mo khwan's khan khru (gift to the teacher), at the price we pay",
+      "th": "ค่าบายศรี เครื่องบูชา และขันครูของหมอขวัญ ตามราคาจริงที่เราจ่าย",
+      "my": "ဘိုင်ဆီဗန်း၊ ပူဇော်ပစ္စည်းနှင့် မော်ခွမ်၏ ခန်ခရူး — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "拜席盘、供品和主持人的拜师礼，按实付价格",
+      "de": "das Bai-Si-Gesteck, die Opfergaben und das Khan Khru des Mo Khwan, zu dem Preis, den wir zahlen"
+     }
     },
     {
      "id": "lanna-wedding",
@@ -1920,12 +2437,19 @@
      "th": "จัดพิธีแต่งงานแบบล้านนา",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We arrange monks, a khwan rite (spirit blessing), a fitting for Lanna (northern Thai) dress and the schedule. The place, food, photographer and money envelopes are charged at the price we pay. The legal marriage is registered at the district office.",
-     "d_th": "นิมนต์พระ พิธีสู่ขวัญ ลองชุดล้านนา และลำดับพิธี ค่าสถานที่ อาหาร ช่างภาพ และซองคิดตามจริง การจดทะเบียนสมรสทำที่อำเภอ",
+     "d_en": "We arrange monks, a khwan rite (spirit blessing), a fitting for Lanna (northern Thai) dress and the schedule. The legal marriage is registered at the district office.",
+     "d_th": "นิมนต์พระ พิธีสู่ขวัญ ลองชุดล้านนา และลำดับพิธี การจดทะเบียนสมรสทำที่อำเภอ",
      "baht": 25000,
      "floor": 15000,
      "ceiling": 60000,
-     "slots": 2
+     "slots": 2,
+     "ex": {
+      "en": "the place, food, photographer and money envelopes, at the price we pay",
+      "th": "ค่าสถานที่ อาหาร ช่างภาพ และซอง ตามราคาจริงที่เราจ่าย",
+      "my": "နေရာ၊ အစားအသောက်၊ ဓာတ်ပုံဆရာနှင့် ငွေစာအိတ် — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "场地、餐饮、摄影师和红包，按实付价格",
+      "de": "Ort, Essen, Fotograf und Geldumschläge, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -1946,7 +2470,14 @@
      "baht": 10000,
      "floor": 6000,
      "ceiling": 15000,
-     "slots": 6
+     "slots": 6,
+     "ex": {
+      "en": "your web address's yearly fee, paid to the registrar",
+      "th": "ค่าโดเมนรายปี จ่ายให้ผู้ให้บริการจดโดเมน",
+      "my": "ဝဘ်လိပ်စာ နှစ်စဉ်ကြေး — မှတ်ပုံတင်သူထံ ပေးရသည်",
+      "zh": "域名年费，付给注册商",
+      "de": "die Jahresgebühr Ihrer Webadresse, an den Registrar bezahlt"
+     }
     },
     {
      "id": "web-site",
@@ -1961,7 +2492,14 @@
      "baht": 30000,
      "floor": 20000,
      "ceiling": 50000,
-     "slots": 3
+     "slots": 3,
+     "ex": {
+      "en": "your web address's yearly fee, paid to the registrar",
+      "th": "ค่าโดเมนรายปี จ่ายให้ผู้ให้บริการจดโดเมน",
+      "my": "ဝဘ်လိပ်စာ နှစ်စဉ်ကြေး — မှတ်ပုံတင်သူထံ ပေးရသည်",
+      "zh": "域名年费，付给注册商",
+      "de": "die Jahresgebühr Ihrer Webadresse, an den Registrar bezahlt"
+     }
     },
     {
      "id": "vibe-check",
@@ -2290,8 +2828,15 @@
      "slots": 8,
      "p_en": "{price}, up to 5 mailboxes",
      "p_th": "{price} ไม่เกิน 5 กล่องจดหมาย",
-     "d_en": "We verify your domain, create the mailboxes, move old mail and set up phones. You pay the licences at the price we pay, on your own account.",
-     "d_th": "ยืนยันโดเมน สร้างกล่องจดหมาย ย้ายอีเมลเก่า และตั้งค่าบนมือถือ ค่าไลเซนส์คิดตามจริงบนบัญชีของคุณเอง"
+     "d_en": "We verify your domain, create the mailboxes, move old mail and set up phones.",
+     "d_th": "ยืนยันโดเมน สร้างกล่องจดหมาย ย้ายอีเมลเก่า และตั้งค่าบนมือถือ",
+     "ex": {
+      "en": "the mailbox licences, at the price we pay, on your own account",
+      "th": "ค่าไลเซนส์กล่องอีเมล ตามราคาจริงที่เราจ่าย บนบัญชีของคุณเอง",
+      "my": "မေးလ်ဘောက်စ် လိုင်စင်ခ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း၊ သင့်ကိုယ်ပိုင်အကောင့်ပေါ်တွင်",
+      "zh": "邮箱授权费，按实付价格，记在您自己的账户上",
+      "de": "die Postfach-Lizenzen, zu dem Preis, den wir zahlen, auf Ihrem eigenen Konto"
+     }
     },
     {
      "id": "help-page",
@@ -2578,7 +3123,14 @@
      "ceiling": 50000,
      "slots": 2,
      "tail": 25000,
-     "tail_usd": true
+     "tail_usd": true,
+     "ex": {
+      "en": "the fees of your own GitHub, Cloudflare and AI-model accounts",
+      "th": "ค่าบริการบัญชี GitHub, Cloudflare และโมเดล AI ของคุณเอง",
+      "my": "သင့်ကိုယ်ပိုင် GitHub၊ Cloudflare နှင့် AI မော်ဒယ် အကောင့်များ၏ အခကြေးငွေ",
+      "zh": "您自己的 GitHub、Cloudflare 和 AI 模型账户的费用",
+      "de": "die Gebühren Ihrer eigenen Konten bei GitHub, Cloudflare und für das KI-Modell"
+     }
     },
     {
      "id": "ai-whitelabel",
@@ -2743,8 +3295,15 @@
      "slots": 6,
      "p_en": "{price} a workflow",
      "p_th": "งานละ {price}",
-     "d_en": "A task that runs by itself, built with n8n, Make, Zapier or code. It has one trigger (the event that starts it), up to 3 apps, an alert when it stops, and 30 days of fixes. You pay those services' fees at the price we pay.",
-     "d_th": "งานที่ทำเองอัตโนมัติด้วย n8n, Make, Zapier หรือโค้ด หนึ่งจุดเริ่ม ไม่เกิน 3 แอป แจ้งเมื่อหยุดทำงาน และแก้ให้ 30 วัน ค่าบริการของแอปคิดตามจริง"
+     "d_en": "A task that runs by itself, built with n8n, Make, Zapier or code. It has one trigger (the event that starts it), up to 3 apps, an alert when it stops, and 30 days of fixes.",
+     "d_th": "งานที่ทำเองอัตโนมัติด้วย n8n, Make, Zapier หรือโค้ด หนึ่งจุดเริ่ม ไม่เกิน 3 แอป แจ้งเมื่อหยุดทำงาน และแก้ให้ 30 วัน",
+     "ex": {
+      "en": "the fees of n8n, Make, Zapier or the apps it uses, at the price we pay",
+      "th": "ค่าบริการ n8n, Make, Zapier หรือแอปที่ใช้ ตามราคาจริงที่เราจ่าย",
+      "my": "n8n၊ Make၊ Zapier သို့မဟုတ် အသုံးပြုသော အက်ပ်များ၏ အခကြေးငွေ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+      "zh": "n8n、Make、Zapier 或所用应用的费用，按实付价格",
+      "de": "Gebühren von n8n, Make, Zapier oder den genutzten Apps, zu dem Preis, den wir zahlen"
+     }
     }
    ]
   },
@@ -2887,7 +3446,14 @@
      "baht": 8000,
      "floor": 4000,
      "ceiling": 25000,
-     "slots": 3
+     "slots": 3,
+     "ex": {
+      "en": "what you buy, paid to the seller",
+      "th": "ค่าสินค้าที่คุณซื้อ จ่ายให้ผู้ขาย",
+      "my": "သင်ဝယ်သည့်အရာ — ရောင်းသူထံ ပေးရသည်",
+      "zh": "您所买的东西，付给卖家",
+      "de": "was Sie kaufen, an den Verkäufer bezahlt"
+     }
     }
    ]
   },
@@ -3134,7 +3700,14 @@
      "baht": 30000,
      "floor": 15000,
      "ceiling": 80000,
-     "slots": 2
+     "slots": 2,
+     "ex": {
+      "en": "the award's own entry fee, paid to the organiser",
+      "th": "ค่าสมัครของรางวัล จ่ายให้ผู้จัด",
+      "my": "ဆုကိုယ်တိုင်၏ ဝင်ရောက်ကြေး — စီစဉ်သူထံ ပေးရသည်",
+      "zh": "奖项本身的报名费，付给主办方",
+      "de": "die Teilnahmegebühr des Preises, an den Veranstalter bezahlt"
+     }
     }
    ]
   },
@@ -3195,7 +3768,14 @@
      "baht": 4000,
      "floor": 2500,
      "ceiling": 8000,
-     "slots": 6
+     "slots": 6,
+     "ex": {
+      "en": "your accountant's fee",
+      "th": "ค่าบริการของนักบัญชีของคุณ",
+      "my": "သင့်စာရင်းကိုင်၏ အခ",
+      "zh": "您会计的费用",
+      "de": "das Honorar Ihres Buchhalters"
+     }
     },
     {
      "id": "money-payouts",
@@ -3231,12 +3811,19 @@
      "th": "สัญญาจ้างพนักงาน ไทยและอังกฤษ",
      "p_en": "{price}",
      "p_th": "{price}",
-     "d_en": "We fill in an employment contract from a template for one employee. A lawyer's review is not part of this price.",
-     "d_th": "สัญญาจ้างจากแม่แบบ กรอกสำหรับพนักงานหนึ่งคน การตรวจโดยทนายแยกต่างหาก",
+     "d_en": "We fill in an employment contract from a template for one employee.",
+     "d_th": "สัญญาจ้างจากแม่แบบ กรอกสำหรับพนักงานหนึ่งคน",
      "baht": 2500,
      "floor": 1500,
      "ceiling": 5000,
-     "slots": 6
+     "slots": 6,
+     "ex": {
+      "en": "a lawyer's review",
+      "th": "ค่าทนายตรวจสัญญา",
+      "my": "ရှေ့နေ စစ်ဆေးခ",
+      "zh": "律师审阅费",
+      "de": "die Prüfung durch einen Anwalt"
+     }
     },
     {
      "id": "payslips",
@@ -3262,7 +3849,14 @@
      "baht": 4000,
      "floor": 2500,
      "ceiling": 8000,
-     "slots": 8
+     "slots": 8,
+     "ex": {
+      "en": "the bank's opening deposit and card fees, paid to the bank",
+      "th": "เงินฝากเปิดบัญชีและค่าบัตร จ่ายให้ธนาคาร",
+      "my": "ဘဏ်အကောင့်ဖွင့် အပ်ငွေနှင့် ကတ်ခ — ဘဏ်ထံ ပေးရသည်",
+      "zh": "开户存款和银行卡费用，付给银行",
+      "de": "Ersteinzahlung und Kartengebühren, an die Bank bezahlt"
+     }
     },
     {
      "id": "kh-books",
@@ -3275,7 +3869,14 @@
      "usd": 149,
      "floor": 99,
      "ceiling": 299,
-     "slots": 4
+     "slots": 4,
+     "ex": {
+      "en": "your accountant's fee",
+      "th": "ค่าบริการของนักบัญชีของคุณ",
+      "my": "သင့်စာရင်းကိုင်၏ အခ",
+      "zh": "您会计的费用",
+      "de": "das Honorar Ihres Buchhalters"
+     }
     }
    ]
   },

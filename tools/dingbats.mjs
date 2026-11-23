@@ -104,6 +104,17 @@ if (fs.existsSync(RT_F)) {
   groups['p-retreat'] = [...always, 'kratip', ...gs]
 }
 
+// The five jobs, the first purchase and the software (tools/build_arrange.py, data/arrange.json): each one's line, on the
+// front page and on the job and software pages (group p-arrange)
+const AR_F = path.join(ROOT, 'data/arrange.json')
+if (fs.existsSync(AR_F)) {
+  const ar = JSON.parse(fs.readFileSync(AR_F, 'utf8'))
+  const byId = Object.fromEntries(SHOP.cards.map((c) => [c.id, c]))
+  const gs = [...ar.jobs, ...ar.software].flatMap((j) => j.pic).concat(byId[ar.first.card] ? pic(byId[ar.first.card]) : [])
+  groups.front.push(...gs)
+  groups['p-arrange'] = [...always, ...gs]
+}
+
 fs.mkdirSync(OUT, { recursive: true })
 for (const f of fs.readdirSync(OUT)) fs.unlinkSync(path.join(OUT, f))
 const core = minify(fs.readFileSync(path.join(SRC, 'core.js'), 'utf8'))

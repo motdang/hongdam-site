@@ -67,11 +67,11 @@
   {
    "db": "page",
    "t": {
-    "en": "A report comes each month, and the ad spend is charged at cost.",
-    "th": "ส่งรายงานทุกเดือน และคิดค่าโฆษณาตามจริง",
-    "my": "လစဉ် အစီရင်ခံစာ ပေးပို့ပြီး ကြော်ငြာစရိတ်ကို အမှန်အတိုင်း ကောက်ခံသည်။",
-    "zh": "每月出报告，广告费按实际支出结算。",
-    "de": "Jeden Monat kommt ein Bericht, und die Ausgaben für die Anzeigen werden zum Selbstkostenpreis verrechnet."
+    "en": "A report comes each month. The ad money is not in our fee: it is charged at the price we pay.",
+    "th": "ส่งรายงานทุกเดือน ค่าโฆษณาไม่รวมในค่าบริการของเรา คิดตามราคาจริงที่เราจ่าย",
+    "my": "လစဉ် အစီရင်ခံစာ ပေးပို့သည်။ ကြော်ငြာငွေသည် ကျွန်ုပ်တို့ ဝန်ဆောင်ခတွင် မပါ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ကောက်ခံသည်။",
+    "zh": "每月出报告。广告费不含在我们的服务费内，按实付价格结算。",
+    "de": "Jeden Monat kommt ein Bericht. Das Werbebudget ist nicht in unserer Gebühr: Es kostet, was wir dafür zahlen."
    },
    "who": {
     "en": "Hongdam and you",

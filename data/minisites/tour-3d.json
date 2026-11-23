@@ -19,11 +19,11 @@
   {
    "db": "calendar",
    "t": {
-    "en": "Your three days are set: dates, two nights in a twin room, a car and a guide.",
-    "th": "กำหนดสามวันของคุณ ทั้งวันที่ พักห้องคู่สองคืน รถ และไกด์",
-    "my": "သင်၏ သုံးရက်ကို သတ်မှတ်ပေးသည်၊ ရက်စွဲ၊ အိပ်ယာနှစ်လုံးပါ အခန်းတွင် နှစ်ညအိပ်ခြင်း၊ ကားနှင့် ဧည့်လမ်းညွှန်။",
-    "zh": "定下三天行程：日期、两晚双人间、车和导游。",
-    "de": "Ihre drei Tage stehen: Daten, zwei Nächte im Zweibettzimmer, ein Auto und ein Guide."
+    "en": "Your three days are set: dates, two nights in a twin room, a car and a guide, booked for you.",
+    "th": "กำหนดสามวันของคุณ ทั้งวันที่ จองห้องคู่สองคืน รถ และไกด์ให้",
+    "my": "သင်၏ သုံးရက်ကို သတ်မှတ်ပေးသည် — ရက်စွဲ၊ အိပ်ယာနှစ်လုံးပါ အခန်းတွင် နှစ်ည၊ ကားနှင့် ဧည့်လမ်းညွှန်ကို ဘွတ်ကင်ပေးသည်။",
+    "zh": "定下三天行程：日期，并为您预订两晚双人间、车和导游。",
+    "de": "Ihre drei Tage stehen: Daten, zwei Nächte im Zweibettzimmer, ein Auto und ein Guide, für Sie gebucht."
    },
    "who": {
     "en": "Hongdam",
@@ -43,11 +43,11 @@
   {
    "db": "compass",
    "t": {
-    "en": "You travel three days by car with a guide. Breakfasts and two lunches are in the price.",
-    "th": "คุณเดินทางสามวันด้วยรถพร้อมไกด์ ราคารวมอาหารเช้าและอาหารกลางวันสองมื้อ",
-    "my": "သင်သည် ကားဖြင့် ဧည့်လမ်းညွှန်နှင့်အတူ သုံးရက် ခရီးသွားသည်။ နံနက်စာနှင့် နေ့လည်စာ နှစ်နပ်ကို ဈေးထဲတွင် ထည့်ထားသည်။",
-    "zh": "您乘车、带导游走三天。早餐和两顿午餐含在价格里。",
-    "de": "Sie reisen drei Tage mit dem Auto und einem Guide. Frühstück und zwei Mittagessen sind im Preis."
+    "en": "You travel three days by car with a guide. The room, the car and its fuel, the guide and every meal are at the price we pay.",
+    "th": "คุณเดินทางสามวันด้วยรถพร้อมไกด์ ค่าห้อง ค่ารถและน้ำมัน ค่าไกด์ และอาหารทุกมื้อ ตามราคาจริงที่เราจ่าย",
+    "my": "သင်သည် ကားဖြင့် ဧည့်လမ်းညွှန်နှင့်အတူ သုံးရက် ခရီးသွားသည်။ အခန်းခ၊ ကားခနှင့် ဆီဖိုး၊ ဧည့်လမ်းညွှန်ခနှင့် အစားအသောက်တိုင်းကို ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ယူသည်။",
+    "zh": "您乘车、带导游走三天。房费、车费和油费、导游费和每顿饭，按实付价格。",
+    "de": "Sie reisen drei Tage mit dem Auto und einem Guide. Zimmer, Auto und Benzin, Guide und jede Mahlzeit kosten, was wir dafür zahlen."
    },
    "who": {
     "en": "Guide",
@@ -67,11 +67,11 @@
   {
    "db": "coin",
    "t": {
-    "en": "Entry fees and dinners are paid at cost.",
-    "th": "ค่าเข้าและอาหารเย็นคิดตามจริง",
-    "my": "ဝင်ကြေးနှင့် ညစာကို ကုန်ကျစရိတ်အတိုင်း ပေးရသည်။",
-    "zh": "门票和晚餐按实际费用支付。",
-    "de": "Eintritte und Abendessen werden zum Selbstkostenpreis bezahlt."
+    "en": "Entry fees are at the price we pay too.",
+    "th": "ค่าเข้าก็คิดตามราคาจริงที่เราจ่ายเช่นกัน",
+    "my": "ဝင်ကြေးကိုလည်း ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း ပေးရသည်။",
+    "zh": "门票也按实付价格。",
+    "de": "Auch die Eintritte kosten, was wir dafür zahlen."
    },
    "who": {
     "en": "You",

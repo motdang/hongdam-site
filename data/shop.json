@@ -122,7 +122,11 @@
    "lnWait": "Waiting for the payment…",
    "lnOld": "This bill ran out. Press the button for a new one.",
    "lnMore": "Bitcoin and baht in Thailand: offrampt.net",
-   "offrampt": "Crypto to baht"
+   "offrampt": "Crypto to baht",
+   "buyAgain": "Order again",
+   "askedRef": "Your request number: {ref}",
+   "payRest": "The rest, paid when the work is done",
+   "notFee": "Not in our fee:"
   },
   "th": {
    "title": "หงส์ดำ — เราทำงานให้คุณ · เชียงราย",
@@ -232,7 +236,11 @@
    "lnWait": "กำลังรอการชำระเงิน…",
    "lnOld": "บิลนี้หมดเวลาแล้ว กดปุ่มเพื่อออกบิลใหม่",
    "lnMore": "บิตคอยน์กับเงินบาทในไทย: offrampt.net",
-   "offrampt": "คริปโตเป็นเงินบาท"
+   "offrampt": "คริปโตเป็นเงินบาท",
+   "buyAgain": "สั่งอีกครั้ง",
+   "askedRef": "หมายเลขคำขอของคุณ: {ref}",
+   "payRest": "ส่วนที่เหลือ จ่ายเมื่องานเสร็จ",
+   "notFee": "ไม่รวมในค่าบริการของเรา:"
   },
   "my": {
    "title": "Hongdam — သင့်အတွက် အလုပ်လုပ်ပေးပါသည် · ချင်းရိုင်",
@@ -342,7 +350,11 @@
    "lnWait": "ငွေပေးချေမှုကို စောင့်နေသည်…",
    "lnOld": "ဤငွေတောင်းခံလွှာ သက်တမ်းကုန်သွားပြီ။ အသစ်ရယူရန် ခလုတ်ကို နှိပ်ပါ။",
    "lnMore": "ထိုင်းနိုင်ငံရှိ bitcoin နှင့် ဘတ်: offrampt.net",
-   "offrampt": "Crypto မှ ဘတ်သို့"
+   "offrampt": "Crypto မှ ဘတ်သို့",
+   "buyAgain": "ထပ်မှာရန်",
+   "askedRef": "သင့်တောင်းဆိုချက်နံပါတ်: {ref}",
+   "payRest": "ကျန်ငွေ၊ အလုပ်ပြီးမှ ပေးရန်",
+   "notFee": "ကျွန်ုပ်တို့ ဝန်ဆောင်ခတွင် မပါ:"
   },
   "zh": {
    "title": "Hongdam — 我们替您办事 · 清莱",
@@ -452,7 +464,11 @@
    "lnWait": "等待付款…",
    "lnOld": "这张账单已过期。按按钮生成新账单。",
    "lnMore": "泰国的比特币与泰铢：offrampt.net",
-   "offrampt": "加密货币换泰铢"
+   "offrampt": "加密货币换泰铢",
+   "buyAgain": "再订一次",
+   "askedRef": "您的请求编号：{ref}",
+   "payRest": "余款，完工后支付",
+   "notFee": "不含在我们的服务费内："
   },
   "de": {
    "title": "Hongdam — wir erledigen die Arbeit für Sie · Chiang Rai",
@@ -562,7 +578,11 @@
    "lnWait": "Warten auf die Zahlung…",
    "lnOld": "Diese Rechnung ist abgelaufen. Drücken Sie den Knopf für eine neue.",
    "lnMore": "Bitcoin und Baht in Thailand: offrampt.net",
-   "offrampt": "Krypto in Baht"
+   "offrampt": "Krypto in Baht",
+   "buyAgain": "Nochmal bestellen",
+   "askedRef": "Ihre Anfragenummer: {ref}",
+   "payRest": "Der Rest, bezahlt nach getaner Arbeit",
+   "notFee": "Nicht in unserer Gebühr:"
   }
  },
  "units": {
@@ -8209,11 +8229,11 @@
     "de": "Laternennacht in Lamphun"
    },
    "l": {
-    "en": "In November at the temple Wat Phra That Hariphunchai: transport from Chiang Mai, dinner, a guide.",
-    "th": "พฤศจิกายน ที่วัดพระธาตุหริภุญชัย รถรับส่งจากเชียงใหม่ อาหารเย็น ไกด์",
-    "my": "နိုဝင်ဘာ၊ ဝပ်ဖရာထတ် ဟာရီဖွန်ချိုင်: ချင်းမိုင်မှ သယ်ယူ၊ ညစာ၊ ဧည့်လမ်းညွှန်။",
-    "zh": "十一月在哈里奔猜寺：从清迈出发的交通、晚餐、导游。",
-    "de": "Im November am Tempel Wat Phra That Hariphunchai: Transport ab Chiang Mai, Abendessen, ein Guide."
+    "en": "In November at the temple Wat Phra That Hariphunchai: a seat booked for you; transport, dinner and a guide at the price we pay.",
+    "th": "พฤศจิกายน ที่วัดพระธาตุหริภุญชัย จองที่นั่งให้ ค่ารถ อาหารเย็น และไกด์ตามจริง",
+    "my": "နိုဝင်ဘာ၊ ဝပ်ဖရာထတ် ဟာရီဖွန်ချိုင်: ထိုင်ခုံ ဘွတ်ကင်ပေးသည်၊ ကားခ၊ ညစာနှင့် ဧည့်လမ်းညွှန် အမှန်အတိုင်း။",
+    "zh": "十一月在哈里奔猜寺：为您订座；交通、晚餐和导游实报。",
+    "de": "Im November am Tempel Wat Phra That Hariphunchai: ein Platz für Sie gebucht; Fahrt, Abendessen und Guide zum Selbstkostenpreis."
    },
    "kw": "lantern festival yi peng loy krathong lamphun november lanterns ยี่เป็ง ลอยกระทง โคมแสนดวง ลำพูน 水灯节 天灯节 灯会",
    "act": "buy",
@@ -8263,11 +8283,11 @@
     "de": "Heissluftballon- oder Paramotorflug (Gleitschirm mit Motor)"
    },
    "l": {
-    "en": "Booked for you, with transport there and back; price per person.",
-    "th": "จองพร้อมรถรับส่ง ต่อคน",
-    "my": "ကားကြိုပို့နှင့် ဘွတ်ကင်၊ တစ်ဦးလျှင်။",
-    "zh": "含接送预订，按人计。",
-    "de": "Mit Transfer gebucht, pro Person."
+    "en": "Booked for you; transport there and back at the price we pay; price per person.",
+    "th": "จองให้ ค่ารถรับส่งตามจริง ต่อคน",
+    "my": "ဘွတ်ကင်ပေးသည်၊ အသွားအပြန် ကားခ အမှန်အတိုင်း၊ တစ်ဦးလျှင်။",
+    "zh": "为您预订；往返接送实报，按人计。",
+    "de": "Für Sie gebucht; Hin- und Rückfahrt zum Selbstkostenpreis, pro Person."
    },
    "kw": "hot air balloon balloon festival singha park paramotor flight sunrise บอลลูน พารามอเตอร์ สิงห์ปาร์ค 热气球 动力伞",
    "act": "buy",
@@ -8346,11 +8366,11 @@
     "de": "Private Tagestour"
    },
    "l": {
-    "en": "Car, fuel and a licensed guide; entry fees and lunch at the price we pay.",
-    "th": "รถ น้ำมัน ไกด์มีใบอนุญาต ค่าเข้าและอาหารตามจริง",
-    "my": "ကား၊ ဆီ၊ လိုင်စင်ရ ဧည့်လမ်းညွှန်၊ ဝင်ကြေးနှင့် နေ့လယ်စာ အမှန်အတိုင်း။",
-    "zh": "含车、油费和持证导游；门票午餐实报。",
-    "de": "Auto, Benzin und ein lizenzierter Guide; Eintritte und Mittagessen zum Selbstkostenpreis."
+    "en": "Car and a licensed guide; fuel, entry fees and lunch at the price we pay.",
+    "th": "รถ ไกด์มีใบอนุญาต ค่าน้ำมัน ค่าเข้าและอาหารตามจริง",
+    "my": "ကားနှင့် လိုင်စင်ရ ဧည့်လမ်းညွှန်၊ ဆီဖိုး၊ ဝင်ကြေးနှင့် နေ့လယ်စာ အမှန်အတိုင်း။",
+    "zh": "含车和持证导游；油费、门票、午餐实报。",
+    "de": "Auto und ein lizenzierter Guide; Benzin, Eintritte und Mittagessen zum Selbstkostenpreis."
    },
    "kw": "tour day tour private tour chiang rai white temple blue temple black house golden triangle doi suthep doi inthanon ทัวร์ เที่ยว วัดร่องขุ่น สามเหลี่ยมทองคำ ดอยสุเทพ 一日游 白庙 金三角 素贴山 包车",
    "act": "buy",
@@ -8388,11 +8408,11 @@
     "de": "Drei Tage im Norden Thailands"
    },
    "l": {
-    "en": "Two nights, car, guide, breakfasts and two lunches; price per person.",
-    "th": "สองคืน รถ ไกด์ อาหารเช้า อาหารกลางวันสองมื้อ ต่อคน",
-    "my": "နှစ်ည၊ ကား၊ ဧည့်လမ်းညွှန်၊ မနက်စာနှင့် နေ့လယ်စာ နှစ်ကြိမ်၊ တစ်ဦးလျှင်။",
-    "zh": "两晚住宿、包车、导游、早餐和两顿午餐，按人计。",
-    "de": "Zwei Nächte, Auto, Guide, Frühstück und zwei Mittagessen, pro Person."
+    "en": "Two nights, a car and a guide, booked for you; rooms, car, guide and meals at the price we pay.",
+    "th": "สองคืน รถ และไกด์ จองให้ ค่าห้อง รถ ไกด์ และอาหารตามจริง",
+    "my": "နှစ်ည၊ ကားနှင့် ဧည့်လမ်းညွှန် ဘွတ်ကင်ပေးသည်၊ အခန်း၊ ကား၊ ဧည့်လမ်းညွှန်နှင့် အစားအသောက် အမှန်အတိုင်း။",
+    "zh": "为您预订两晚住宿、车和导游；房费、车费、导游和餐费实报。",
+    "de": "Zwei Nächte, Auto und Guide für Sie gebucht; Zimmer, Auto, Guide und Essen zum Selbstkostenpreis."
    },
    "kw": "package tour multi day 3 days 2 nights mae hong son loop north thailand ทัวร์ 3 วัน 2 คืน แพ็กเกจ 三天两夜 跟团 套餐",
    "act": "buy",

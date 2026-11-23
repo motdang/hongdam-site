@@ -29,6 +29,91 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/workers-ai-retired-models-14-answer-410-two-still-reply",
+  "kicker": "Hongdam Studio · AI models · 23 November 2026",
+  "title": "14 answer 410, two still reply",
+  "th": "Workers AI เลิกให้บริการ 16 โมเดลเมื่อ 20 พฤศจิกายน: 14 โมเดลตอบ HTTP 410 ภายใน 0.15 วินาที อีกสองโมเดลยังตอบตามปกติ",
+  "sub": "Workers AI's 16 retired models, called 23 November 2026",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "4adb1ec6ad"
+ },
+ {
+  "out": "og/studio/n/week-ruby-seven-fixes-versions-30-days-merge-token",
+  "kicker": "Hongdam Studio · Weekly summary · 22 November 2026",
+  "title": "The week: six notes, five items",
+  "th": "สรุปสัปดาห์ 16 พฤศจิกายน: Ruby แก้ช่องโหว่หน่วยความจำเจ็ดรายการ Cloudflare ลบเวอร์ชันที่เก่ากว่า 30 วัน และการ merge branch ของ Supabase ต้องใช้โทเค็นสิทธิ์ production",
+  "sub": "Ruby 7 fixes · versions 30 days · merge token",
+  "line": [
+   "typewriter",
+   "page",
+   "send"
+  ],
+  "hue": 322,
+  "hash": "f630d1c5ba"
+ },
+ {
+  "out": "og/studio/n/domain-move-one-pages-line-147-urls-posts-become-get",
+  "kicker": "Hongdam Studio · Last mile · 21 November 2026",
+  "title": "A domain moved with one line",
+  "th": "ย้ายทั้งโดเมนด้วยบรรทัดเดียวใน Cloudflare Pages: 147 จาก 147 URL ถึงปลายทางในฮอปเดียว ส่วน POST ของฟอร์มกลายเป็น GET",
+  "sub": "147 of 147 URLs in one hop; forms need their own fix",
+  "line": [
+   "robot",
+   "laptop",
+   "wrench",
+   "send"
+  ],
+  "hue": 258,
+  "hash": "73590fe0d5"
+ },
+ {
+  "out": "og/studio/n/order-tickets-symbol-codes-186-of-660-wrong-json-46",
+  "kicker": "Hongdam Studio · AI models · 20 November 2026",
+  "title": "Valid ticket, wrong order",
+  "th": "ใบสั่งเครื่องดื่มจากโมเดลโอเพนเวตสี่ตัว: แบบรหัสสัญลักษณ์ผิดแบบเงียบ 186 จาก 660 ใบ แบบ JSON 46 ใบ",
+  "sub": "Symbol codes 186 of 660, JSON 46",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "1d6d2db497"
+ },
+ {
+  "out": "og/studio/n/n8n-global-credential-runs-stop-blanking",
+  "kicker": "Hongdam Studio · Automation · 19 November 2026",
+  "title": "Your n8n run went blank?",
+  "th": "n8n 2.48.4 และ 2.47.7 เลิกปิดบังหน้าดูผลการรันของ workflow ที่ใช้ credential ส่วนกลาง",
+  "sub": "What 2.48.4 and 2.47.7 bring back",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "794ba5b9f4"
+ },
+ {
+  "out": "og/studio/n/openssh-10-6p2-alpine-musl-password-bypass-fixed",
+  "kicker": "Hongdam Studio · Security · 18 November 2026",
+  "title": "Alpine: a 300-byte password got in",
+  "th": "OpenSSH 10.6p2 ปิดช่องรหัสผ่าน 300 ไบต์ที่ล็อกอิน sshd บน Alpine ได้: แก้แล้วทุกสาขา",
+  "sub": "OpenSSH 10.6p2 fixes the musl crypt bypass",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "f514adb563"
+ },
+ {
   "out": "og/studio/n/supabase-cbc-ciphers-removed-9-of-163-clients-fail",
   "kicker": "Hongdam Studio · Last mile · 17 November 2026",
   "title": "Supabase: four TLS ciphers are off",

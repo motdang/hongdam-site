@@ -9,7 +9,7 @@
   },
   "groups": [
     {
-      "id": "rotary",
+      "id": "rotary", "tag": {"en": "Made for the Chiang Mai International Rotary Club", "th": "ทำให้สโมสรโรตารีเชียงใหม่อินเตอร์เนชั่นแนล", "my": "Chiang Mai International Rotary Club အတွက် ပြုလုပ်သည်", "zh": "为清迈国际扶轮社制作", "de": "Für den Chiang Mai International Rotary Club gemacht"},
       "line": "charity",
       "n": {
         "en": "Lice can't swim. You can!",
@@ -25,7 +25,7 @@
         "zh": "为我们画画的 Marcus 为清迈国际扶轮社儿童游泳课制作的四分钟动画：虱子是什么、怎么检查，然后大家一起下水。",
         "de": "Ein vierminütiger Zeichentrickfilm von Marcus, der für uns zeichnet, für den Kinder-Schwimmunterricht des Chiang Mai International Rotary Club: was eine Laus ist, wie man nachschaut, dann gehen alle ins Becken."
       },
-      "drive": "https://drive.google.com/file/d/1hsinVGuEZQDoQ3_IE1OJLBpmBZ0vuKGP/preview",
+      "mp4": "/media/rotary-lice.mp4",
       "poster": "/media/rotary-lice.jpg", "w": 960, "h": 540,
       "alt": {
         "en": "Two of our team as cartoon dolls on a golden swan float in a pool: NaN, who runs Hongdam, and our coordinator Beer.",
@@ -38,7 +38,7 @@
       "goN": {"en": "The swim program", "th": "โครงการสอนว่ายน้ำ", "my": "ရေကူးသင်တန်း", "zh": "游泳项目", "de": "Das Schwimmprogramm"}
     },
     {
-      "id": "motdang",
+      "id": "motdang", "tag": {"en": "Our own: Mot Dang, our online directory of places in Chiang Mai and Chiang Rai", "th": "งานของเราเอง: มดแดง ไดเรกทอรีออนไลน์ของสถานที่ในเชียงใหม่และเชียงราย", "my": "ကျွန်ုပ်တို့ကိုယ်ပိုင် — Mot Dang၊ ချင်းမိုင်နှင့် ချင်းရိုင်ရှိ နေရာများ၏ အွန်လိုင်းလမ်းညွှန်", "zh": "我们自己的：Mot Dang，清迈和清莱的在线地点名录", "de": "Unser eigenes: Mot Dang, unser Online-Verzeichnis für Orte in Chiang Mai und Chiang Rai"},
       "line": "shop",
       "n": {"en": "Mot Dang", "th": "มดแดง", "my": "Mot Dang", "zh": "Mot Dang", "de": "Mot Dang"},
       "l": {

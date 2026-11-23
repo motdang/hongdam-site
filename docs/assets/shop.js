@@ -650,7 +650,9 @@ function ladders(root = document) {
 }
 
 // Search, on any page that has the box: every language's words, whatever the page's language.
-const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${(c.page || c.go) ? `<a href="${esc(c.page || c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>` +
+// "Not in our fee: …" with its label in bold (the label runs to the first colon, ":" or "：")
+const exHtml = (t) => { const m = /^([^:：]*[:：])(.*)$/s.exec(t || ''); return m ? `<b>${esc(m[1])}</b>${esc(m[2])}` : esc(t || '') }
+const cardHtml = (c) => `<li class="card" style="--line:var(--c-${esc(c.cat)})">${c.pic ? jobHtml(c.pic) : ''}<h3>${(c.page || c.go) ? `<a href="${esc(c.page || c.go)}">${esc(c.n)}</a>` : esc(c.n)}</h3><p class="price">${c.ph}</p><p class="l">${esc(c.l)}</p>${c.ex ? `<p class="ex">${exHtml(c.ex)}</p>` : ''}` +
   (c.walk ? `<details class="ladder" data-svc="${esc(c.walk)}" hidden></details>` : '') +
   (c.go ? shareHtml(c) + `<a class="btn" href="${esc(c.go)}">${esc(c.btn)}</a>` : '') + '</li>'
 // the card's Share button, as tools/build_shop.py share_btn() writes it; assets/share.js does the sharing
@@ -666,12 +668,15 @@ if (q) {
     const hits = cards.filter((c) => words.every((w) => c.kw.includes(w))).slice(0, 12)
     out.hidden = false
     out.innerHTML = hits.length ? hits.map(cardHtml).join('')
-      : `<li class="card"><p>${esc(T.noresult)}</p><a class="btn" href="${esc(D.lineUrl)}">${esc(T.msgUs)}</a></li>`
+      : `<li class="card"><p>${esc(T.noresult)}</p><a class="btn" href="${esc(D.lineUrl)}">${esc(T.msgUs)}</a> <a class="btn alt" href="${esc(D.home)}ask/" data-carry>${esc(T.askBtn)}</a></li>`
     ladders(out)
     glyphs(...new Set(hits.map((c) => c.cat)))
   }
   q.addEventListener('input', run)
   if (q.value) run()
+  // a search with nothing found becomes a question on the Ask page, the words already in it; carried in this tab's
+  // storage, not in the address (Hongdam-AI-Brief HD-17)
+  out.addEventListener('click', (e) => { if (e.target.closest('[data-carry]')) { try { sessionStorage.setItem('hd-ask-q', q.value.trim()) } catch { /* the page opens empty */ } } })
 }
 
 // One line from the order to the job done: Pick and Pay, then the job's own stops, one swan at where the order is.
@@ -699,7 +704,8 @@ async function track(root, ref, note = '') {
     `<p class="state" role="status">${esc(said[o.state] || T.tOrdered)}</p>` +
     orderLine(card, at, [word(T.how[0]), word(T.how[1])]) +
     (note ? `<p class="note" role="alert">${esc(note)}</p>` : '') +
-    `<p class="note">${esc(T.trackKeep)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(o.ref)}</a></p>`
+    `<p class="note">${esc(T.trackKeep)}</p><p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(o.ref)}</a>` +
+    (o.state === 'done' && T.buyAgain ? ` <a class="btn" href="${esc(location.pathname)}?c=${encodeURIComponent(o.card)}&o=${encodeURIComponent(o.opt)}">${esc(T.buyAgain)}</a>` : '') + '</p>'
   glyphs(card.cat)
 }
 // Back from PayPal's page (/buy/?ref=HD-…&pp=back&token=…): the server captures and checks it, then the tracker.
@@ -765,7 +771,8 @@ ${card.add ? `<label class="opt addon"><input type="checkbox" name="addon"> <spa
   const addN = () => Math.max(1, Math.min(card.add.max || 8, parseInt(f.elements.addonQty.value, 10) || 1))
   const n = () => (opt.unit ? Math.max(1, Math.min(opt.max || 99, parseInt(qty.value, 10) || 1)) : 1)
   function redraw() {
-    $('#odesc', root).textContent = opt.d || ''
+    // what the option is, then what its price does not cover (her word 2026-11-18)
+    $('#odesc', root).innerHTML = esc(opt.d || '') + (opt.ex ? `<span class="ex">${exHtml(opt.ex)}</span>` : '')
     $('.qtyrow', root).hidden = !opt.unit
     const ad = $('.addon', root), on = !!addOn(opt)
     if (ad) { ad.hidden = !on; if (!on) f.elements.addon.checked = false }
@@ -841,8 +848,12 @@ function pay(j) {
   const ln = T.lnH ? `<section class="way" id="lnway" hidden><h3>${esc(T.lnH)}</h3><p>${esc(T.lnNote)}</p>
 <p><button class="btn big" type="button" id="lnbtn">${esc(T.lnBtn).replace('{amount}', amount)}</button></p><div id="lnbill" hidden></div>
 <p id="lmsg" role="status"></p><p class="note"><a href="${offrampt}" target="_blank" rel="noopener">${esc(T.lnMore)}</a></p></section>` : ''
+  // half now from ฿10,000 / US$300 (functions/_shop.js): the total, now and the rest, each from the server's numbers in the
+  // currency paid, so now + rest = total
+  const split = j.half && s.total > s.due ? `<p class="tot"><span>${esc(T.total)}</span> <b>${amtH(s.total, s.cur, true)}</b></p>` : ''
+  const rest = j.half && s.total > s.due && T.payRest ? `<p class="tot"><span>${esc(T.payRest)}</span> <b>${amtH(s.total - s.due, s.cur, true)}</b></p>` : ''
   box.innerHTML = `<h2>${esc(T.order)} ${esc(j.ref)}</h2>
-<p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>
+${split}<p class="tot"><span>${esc(j.half ? T.payHalf : T.payNow)}</span> <b>${amount}</b></p>${rest}
 ${s.cur === 'THB' ? pp + card + ln + away : card + ln + away + pp}
 <p><a class="btn alt" href="${esc(D.lineUrl)}">${esc(T.msgUs)} · ${esc(j.ref)}</a></p>`
   fetch('/api/buy').then((r) => r.json()).then((s) => {
@@ -931,6 +942,7 @@ function lightning(j, box) {
 
 // The ask form: one contact box (email or LINE ID, phone) and what they need.
 const af = $('#af')
+if (af) { try { const w = sessionStorage.getItem('hd-ask-q'); if (w && !af.elements.message.value) af.elements.message.value = w; sessionStorage.removeItem('hd-ask-q') } catch { /* nothing carried */ } }
 if (af) af.addEventListener('submit', async (e) => {
   e.preventDefault()
   const m = $('#amsg'), c = af.elements.contact.value.trim(), what = af.elements.message.value.trim()
@@ -939,8 +951,11 @@ if (af) af.addEventListener('submit', async (e) => {
   m.textContent = T.sending
   const email = /@/.test(c) ? c : '', line = email ? '' : c
   let r
-  try { r = await (await fetch('/api/contact', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, line, message: what, service: 'Ask', website: af.elements.website.value, page: location.pathname }) })).json() } catch { r = { ok: false } }
-  m.textContent = r.ok ? T.asked : (r.error || T.err.service)
+  // the service the page was opened for (/ask/?about=<card>), so the question reaches the team with it
+  const about = new URLSearchParams(location.search).get('about') || ''
+  const sc = about && (await cardsP).find((x) => x.id === about)
+  try { r = await (await fetch('/api/contact', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, line, message: what, service: sc ? sc.n : about ? 'Ask: ' + about : 'Ask', lang: D.lang, website: af.elements.website.value, page: location.pathname }) })).json() } catch { r = { ok: false } }
+  m.textContent = r.ok ? T.asked + (r.ref && T.askedRef ? ' ' + T.askedRef.replace('{ref}', r.ref) : '') : (r.error || T.err.service)
   if (r.ok) af.reset()
 })
 

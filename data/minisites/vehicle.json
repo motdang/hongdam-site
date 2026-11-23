@@ -122,11 +122,11 @@
     "de": "Ein Mechaniker prüft ein gebrauchtes Fahrzeug"
    },
    "who": {
-    "en": "A mechanic; you pay at cost",
-    "th": "ช่าง คุณจ่ายตามจริง",
-    "my": "စက်ပြင်ဆရာ၊ သင်က ကုန်ကျစရိတ်အတိုင်း ပေးသည်",
-    "zh": "技师；您按实际费用支付",
-    "de": "Ein Mechaniker; Sie zahlen zum Selbstkostenpreis"
+    "en": "A mechanic, at the price we pay",
+    "th": "ช่าง ตามราคาจริงที่เราจ่าย",
+    "my": "စက်ပြင်ဆရာ — ကျွန်ုပ်တို့ပေးရသည့်စျေးအတိုင်း",
+    "zh": "技师，按实付价格",
+    "de": "Ein Mechaniker, zu dem Preis, den wir zahlen"
    },
    "time": {
     "en": "Before you buy",
