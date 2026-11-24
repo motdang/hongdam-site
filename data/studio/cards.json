@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/drupal-install-php-exploited-four-changes-exact-match-misses",
+  "kicker": "Hongdam Studio · Security · 25 November 2026",
+  "title": "Drupal install.php: block it, then update",
+  "th": "ช่องโหว่ install.php ของ Drupal ถูกใช้โจมตีจริงแล้ว และกฎบล็อกแบบตรงตัวยังปล่อย /install.php/foo ผ่าน",
+  "sub": "An exact-match rule let /install.php/foo through",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "a687b57804"
+ },
+ {
   "out": "og/studio/n/vercel-20-mib-bodies-4-gb-memory-server-actions-1-mb",
   "kicker": "Hongdam Studio · Last mile · 24 November 2026",
   "title": "20 MiB uploads on Vercel",
