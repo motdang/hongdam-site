@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/n8n-trigger-retries-25-in-72-hours-crash-shutoff-off",
+  "kicker": "Hongdam Studio · Automation · 26 November 2026",
+  "title": "n8n trigger down after an outage?",
+  "th": "n8n รุ่นถัดไปลองเปิด trigger ที่ล้มเหลวใหม่ 25 ครั้งใน 72 ชั่วโมง ส่วนระบบหยุด workflow ที่ทำให้เครื่องล่มยังปิดไว้เป็นค่าเริ่มต้น",
+  "sub": "25 retries in 72 hours, from 2.50.0",
+  "line": [
+   "gears",
+   "robot",
+   "done"
+  ],
+  "hue": 225,
+  "hash": "a0f1221c50"
+ },
+ {
   "out": "og/studio/n/drupal-install-php-exploited-four-changes-exact-match-misses",
   "kicker": "Hongdam Studio · Security · 25 November 2026",
   "title": "Drupal install.php: block it, then update",
