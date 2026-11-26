@@ -135,10 +135,38 @@ async function record(context, response, ms) {
       String(response.status),
       refHost,
       request.method,
+      '', '', '', '', '', '',         // 9–14 empty on a request row (motdang's search and share rows use them)
+      ...wireSense(request),          // 15–20 the caller's network and connection
     ],
-    doubles: [1, response.status, ms],
+    doubles: [1, response.status, ms, 0, 0, ...wireCount(request)],
     indexes: [url.host],
   });
+}
+
+/* The caller's network and connection, in motdang.net's positions (publish/edge_gate.js
+ * wireSense; Nan, 2026-11-26: "Network + TLS, everyone"), so Voight-Kampff reads both
+ * sites with one query: blob15 ASN · 16 its owner · 17 Cloudflare data centre ·
+ * 18 HTTP version, TLS version, cipher · 19 SHA-1 of the client's cipher list ·
+ * 20 SHA-1 of its TLS extensions; double6 round-trip ms, double7 TLS hello bytes. */
+function wireSense(request) {
+  const cf = request.cf || {};
+  const conn = [cf.httpProtocol, cf.tlsVersion, cf.tlsCipher].filter(Boolean).join(' ');
+  return [
+    cf.asn ? String(cf.asn) : '',
+    String(cf.asOrganization || '').slice(0, 64),
+    String(cf.colo || ''),
+    conn.slice(0, 64),
+    String(cf.tlsClientCiphersSha1 || '').slice(0, 64),
+    String(cf.tlsClientExtensionsSha1 || '').slice(0, 64),
+  ];
+}
+
+function wireCount(request) {
+  const cf = request.cf || {};
+  const rtt = Number.isFinite(cf.clientTcpRtt) ? cf.clientTcpRtt
+    : Number.isFinite(cf.clientQuicRtt) ? cf.clientQuicRtt : -1;
+  const hello = Number(cf.tlsClientHelloLength);
+  return [rtt, Number.isFinite(hello) && hello > 0 ? hello : -1];
 }
 
 function trimPath(pathname) {
