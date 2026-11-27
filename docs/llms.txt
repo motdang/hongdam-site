@@ -648,6 +648,7 @@ Prices are the prices in Hongdam's shop and change when the shop changes them.
 Notes on our work, newest first: https://hongdam.net/studio/notes/ · Atom https://hongdam.net/studio/feed.xml ·
 JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the end.
 
+- 2026-11-27 · Llama 3.3 and gpt-oss on Workers AI get a date you did not send, a day behind in Thailand — https://hongdam.net/studio/notes/workers-ai-hidden-date-llama-3-3-gpt-oss-day-behind/
 - 2026-11-26 · n8n 2.50 retries a failed trigger 25 times in 72 hours; its crash shut-off is off — https://hongdam.net/studio/notes/n8n-trigger-retries-25-in-72-hours-crash-shutoff-off/
 - 2026-11-25 · Drupal's install.php flaw is exploited; an exact-match block let /install.php/foo through — https://hongdam.net/studio/notes/drupal-install-php-exploited-four-changes-exact-match-misses/
 - 2026-11-24 · Vercel's 20 MiB uploads need 4 GB of memory; Next.js Server Actions still stop at 1 MB — https://hongdam.net/studio/notes/vercel-20-mib-bodies-4-gb-memory-server-actions-1-mb/
@@ -659,7 +660,6 @@ JSON Feed https://hongdam.net/studio/feed.json. A note lists its sources at the 
 - 2026-11-18 · OpenSSH 10.6p2 shut the 300-byte password bypass on Alpine sshd: fixed in every branch — https://hongdam.net/studio/notes/openssh-10-6p2-alpine-musl-password-bypass-fixed/
 - 2026-11-17 · Supabase turned off four TLS 1.2 ciphers: 9 of 163 recorded clients now fail to connect — https://hongdam.net/studio/notes/supabase-cbc-ciphers-removed-9-of-163-clients-fail/
 - 2026-11-16 · Inkling 2 Small on Workers AI: reasoning_effort none still thinks, and bills for it — https://hongdam.net/studio/notes/inkling-2-small-reasoning-effort-none-still-thinks/
-- 2026-11-15 · The week: a Workers spending limit, Node.js fixes 16 flaws, GitHub's brownout on Monday — https://hongdam.net/studio/notes/week-workers-spend-limits-node-fixes-brownout/
 
 ## The work
 
