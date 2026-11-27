@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/workers-ai-hidden-date-llama-3-3-gpt-oss-day-behind",
+  "kicker": "Hongdam Studio · AI models · 27 November 2026",
+  "title": "The date you did not send",
+  "th": "Llama 3.3 และ gpt-oss บน Workers AI ได้รับวันที่ที่เราไม่ได้ส่งไป และช้ากว่าวันที่ในไทยหนึ่งวัน",
+  "sub": "Llama 3.3 and gpt-oss read UTC",
+  "line": [
+   "page",
+   "robot",
+   "chat"
+  ],
+  "hue": 205,
+  "hash": "03d96218b6"
+ },
+ {
   "out": "og/studio/n/n8n-trigger-retries-25-in-72-hours-crash-shutoff-off",
   "kicker": "Hongdam Studio · Automation · 26 November 2026",
   "title": "n8n trigger down after an outage?",
