@@ -29,6 +29,20 @@
   "hash": "4aecbf3521"
  },
  {
+  "out": "og/studio/n/secrets-scanner-wore-16-ai-crawler-names",
+  "kicker": "Hongdam Studio · Security · 28 November 2026",
+  "title": "A scanner in crawler clothes",
+  "th": "สแกนเนอร์ล่าคีย์ปลอมตัวเป็นบอท AI 16 ชื่อ: ขอไฟล์ .env และไฟล์ตั้งค่า 358 ครั้ง ไม่ขอหน้าเว็บเลยสักหน้า",
+  "sub": "16 names, 84 secret paths, one network",
+  "line": [
+   "error",
+   "wrench",
+   "lock"
+  ],
+  "hue": 292,
+  "hash": "8287b2566a"
+ },
+ {
   "out": "og/studio/n/workers-ai-hidden-date-llama-3-3-gpt-oss-day-behind",
   "kicker": "Hongdam Studio · AI models · 27 November 2026",
   "title": "The date you did not send",
